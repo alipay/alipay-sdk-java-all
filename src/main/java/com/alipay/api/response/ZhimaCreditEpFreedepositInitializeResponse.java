@@ -1,0 +1,30 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: zhima.credit.ep.freedeposit.initialize response.
+ * 
+ * @author auto create
+ * @since 1.0, 2018-04-27 10:05:00
+ */
+public class ZhimaCreditEpFreedepositInitializeResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 3247142779163284818L;
+
+	/** 
+	 * 免押额度业务流水号，每次业务唯一。
+	 */
+	@ApiField("order_no")
+	private String orderNo;
+
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
+	}
+	public String getOrderNo( ) {
+		return this.orderNo;
+	}
+
+}
