@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建凤蝶H5应用
  *
  * @author auto create
- * @since 1.0, 2017-09-27 11:32:18
+ * @since 1.0, 2018-07-02 10:31:23
  */
 public class AlipayMarketingToolFengdieActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1459752299481739816L;
+	private static final long serialVersionUID = 1197365979842366689L;
 
 	/**
 	 * H5应用初始化数据

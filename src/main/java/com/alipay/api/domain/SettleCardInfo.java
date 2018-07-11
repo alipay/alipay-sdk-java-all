@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算卡信息
  *
  * @author auto create
- * @since 1.0, 2018-03-14 16:12:02
+ * @since 1.0, 2018-06-05 19:28:13
  */
 public class SettleCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1827845777197412288L;
+	private static final long serialVersionUID = 2899259873839723836L;
 
 	/**
 	 * 开户支行名
@@ -62,6 +62,12 @@ public class SettleCardInfo extends AlipayObject {
 	 */
 	@ApiField("account_type")
 	private String accountType;
+
+	/**
+	 * 联行号
+	 */
+	@ApiField("bank_code")
+	private String bankCode;
 
 	/**
 	 * 账号使用类型
@@ -125,6 +131,13 @@ public class SettleCardInfo extends AlipayObject {
 	}
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
+	}
+
+	public String getBankCode() {
+		return this.bankCode;
+	}
+	public void setBankCode(String bankCode) {
+		this.bankCode = bankCode;
 	}
 
 	public String getUsageType() {

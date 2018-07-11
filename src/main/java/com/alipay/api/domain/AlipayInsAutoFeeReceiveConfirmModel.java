@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车险向行业平台收费确认
  *
  * @author auto create
- * @since 1.0, 2017-07-13 17:29:25
+ * @since 1.0, 2018-06-20 20:32:18
  */
 public class AlipayInsAutoFeeReceiveConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1337517942487676323L;
+	private static final long serialVersionUID = 2446498371567362992L;
 
 	/**
 	 * 外部业务单号，幂等字段，必填。和保险公司交互时同收单系统的outTradeNo

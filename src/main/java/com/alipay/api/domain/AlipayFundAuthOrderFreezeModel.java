@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2018-03-13 11:00:37
+ * @since 1.0, 2018-06-15 11:12:07
  */
 public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1772966932484496736L;
+	private static final long serialVersionUID = 5132351336833562874L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -88,6 +88,18 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	@ApiField("product_code")
 	private String productCode;
 
+	/**
+	 * 商户指定的结算币种。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
+	 */
+	@ApiField("settle_currency")
+	private String settleCurrency;
+
+	/**
+	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
+	 */
+	@ApiField("trans_currency")
+	private String transCurrency;
+
 	public String getAmount() {
 		return this.amount;
 	}
@@ -163,6 +175,20 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSettleCurrency() {
+		return this.settleCurrency;
+	}
+	public void setSettleCurrency(String settleCurrency) {
+		this.settleCurrency = settleCurrency;
+	}
+
+	public String getTransCurrency() {
+		return this.transCurrency;
+	}
+	public void setTransCurrency(String transCurrency) {
+		this.transCurrency = transCurrency;
 	}
 
 }

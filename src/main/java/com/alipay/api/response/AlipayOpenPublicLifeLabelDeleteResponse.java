@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.life.label.delete response.
  * 
  * @author auto create
- * @since 1.0, 2017-08-02 13:55:21
+ * @since 1.0, 2018-05-11 19:07:19
  */
 public class AlipayOpenPublicLifeLabelDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3211713835678284691L;
+	private static final long serialVersionUID = 5239759571855766528L;
 
 	
 

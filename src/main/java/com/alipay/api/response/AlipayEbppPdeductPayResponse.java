@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.pdeduct.pay response.
  * 
  * @author auto create
- * @since 1.0, 2017-04-07 16:45:48
+ * @since 1.0, 2018-05-18 17:15:00
  */
 public class AlipayEbppPdeductPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2246746872326849637L;
+	private static final long serialVersionUID = 5293932149994956269L;
 
 	/** 
 	 * 支付宝代扣协议ID
@@ -37,6 +37,18 @@ public class AlipayEbppPdeductPayResponse extends AlipayResponse {
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/** 
+	 * 针对于支付失败时，给的对应错误明细，如果判断外围的错误码是INVOKE_PAYACCEPTANCE_EXCEPTION需要近一步再结合着结果模型中的result_code, result_msg来判断
+	 */
+	@ApiField("result_code")
+	private String resultCode;
+
+	/** 
+	 * 针对于支付失败时，给的对应错误明细，如果判断外围的错误码是INVOKE_PAYACCEPTANCE_EXCEPTION需要近一步再结合着结果模型中的result_code, result_msg来判断
+	 */
+	@ApiField("result_msg")
+	private String resultMsg;
 
 	/** 
 	 * 订单支付状态。
@@ -73,6 +85,20 @@ public class AlipayEbppPdeductPayResponse extends AlipayResponse {
 	}
 	public String getOutOrderNo( ) {
 		return this.outOrderNo;
+	}
+
+	public void setResultCode(String resultCode) {
+		this.resultCode = resultCode;
+	}
+	public String getResultCode( ) {
+		return this.resultCode;
+	}
+
+	public void setResultMsg(String resultMsg) {
+		this.resultMsg = resultMsg;
+	}
+	public String getResultMsg( ) {
+		return this.resultMsg;
 	}
 
 	public void setResultStatus(String resultStatus) {

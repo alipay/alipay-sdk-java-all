@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改车型信息接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:39
+ * @since 1.0, 2018-06-25 14:52:20
  */
 public class AlipayEcoMycarCarmodelModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7659865689454311121L;
+	private static final long serialVersionUID = 7728889329759328983L;
 
 	/**
 	 * 支付宝车型库品牌背景图片，尺寸750 x 448（modify_type参数的值为brand时此参数必填）图片url可以通过【通用图片上传接口】alipay.eco.mycar.image.upload 上传完成后获取, 图片url需要进行URLencode进行转码

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 公租房申请进度同步
  *
  * @author auto create
- * @since 1.0, 2018-04-26 14:41:36
+ * @since 1.0, 2018-06-25 14:49:09
  */
 public class AlipayEcoRenthousePublicrentApplyscheduleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2372871586825228817L;
+	private static final long serialVersionUID = 4818999493729659569L;
 
 	/**
 	 * 申请单进度列表

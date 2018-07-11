@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * pos订单信息上传接口
  *
  * @author auto create
- * @since 1.0, 2018-03-08 10:35:41
+ * @since 1.0, 2018-05-13 11:23:21
  */
 public class KoubeiCateringPosOrderUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2718363799966781462L;
+	private static final long serialVersionUID = 4544867363559195352L;
 
 	/**
 	 * 设备商回流的设备信息列表
@@ -31,7 +31,7 @@ public class KoubeiCateringPosOrderUploadModel extends AlipayObject {
 	private List<PosOrderInfoVO> posOrderInfos;
 
 	/**
-	 * source_type+pos订单设备信息来源类型枚举+(isv回流数据: ISV, 设备商数据: META)
+	 * source_type+pos订单设备信息来源类型枚举+(isv回流数据: ISV, 设备商数据: MEMA)
 	 */
 	@ApiField("source_type")
 	private String sourceType;

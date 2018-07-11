@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取指定抬头的发票要素列表
  *
  * @author auto create
- * @since 1.0, 2018-04-23 13:16:48
+ * @since 1.0, 2018-06-29 14:46:49
  */
 public class AlipayEbppInvoiceTitleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8435997247196481935L;
+	private static final long serialVersionUID = 3899331464982318438L;
 
 	/**
 	 * 查询起始时间，精确到天（按开票日期查询）
@@ -26,6 +26,13 @@ start_invoice_date和end_invoice_date传值要求
 	 */
 	@ApiField("end_invoice_date")
 	private String endInvoiceDate;
+
+	/**
+	 * 发票报销状态的查询条件，为空的情况下，查询所有状态的发票；可选值WAIT_EXPENSE:待报销状态；EXPENSE_PROCESSING:报销中；EXPENSE_FINISHED:已报销
+	 */
+	@ApiListField("expense_status_list")
+	@ApiField("string")
+	private List<String> expenseStatusList;
 
 	/**
 	 * 查询票种列表
@@ -76,6 +83,13 @@ start_invoice_date和end_invoice_date传值要求
 	}
 	public void setEndInvoiceDate(String endInvoiceDate) {
 		this.endInvoiceDate = endInvoiceDate;
+	}
+
+	public List<String> getExpenseStatusList() {
+		return this.expenseStatusList;
+	}
+	public void setExpenseStatusList(List<String> expenseStatusList) {
+		this.expenseStatusList = expenseStatusList;
 	}
 
 	public List<String> getInvoiceKindList() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.newscene.tag.query request
  * 
  * @author auto create
- * @since 1.0, 2018-03-14 17:14:17
+ * @since 1.0, 2018-06-25 11:10:00
  */
 public class AlipayUserNewsceneTagQueryRequest implements AlipayRequest<AlipayUserNewsceneTagQueryResponse> {
 

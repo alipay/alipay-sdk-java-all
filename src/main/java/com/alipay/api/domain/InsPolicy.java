@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保单
  *
  * @author auto create
- * @since 1.0, 2017-09-06 17:36:35
+ * @since 1.0, 2018-06-27 11:36:09
  */
 public class InsPolicy extends AlipayObject {
 
-	private static final long serialVersionUID = 8257483114998697449L;
+	private static final long serialVersionUID = 7397985982336443486L;
 
 	/**
 	 * 保单邮寄地址
@@ -86,6 +86,18 @@ public class InsPolicy extends AlipayObject {
 	 */
 	@ApiField("out_policy_no")
 	private String outPolicyNo;
+
+	/**
+	 * 终缴时间，用于健康险、寿险等场景，用户需要按期缴费使用
+	 */
+	@ApiField("pay_end_time")
+	private Date payEndTime;
+
+	/**
+	 * 缴至时间，用于健康险、寿险等场景，用户需要按期缴费使用
+	 */
+	@ApiField("pay_to_time")
+	private Date payToTime;
 
 	/**
 	 * 保单凭证号;蚂蚁保险平台生成的保单凭证号,用户可以通过此单号去保险公司查询保单信息.
@@ -204,6 +216,20 @@ public class InsPolicy extends AlipayObject {
 	}
 	public void setOutPolicyNo(String outPolicyNo) {
 		this.outPolicyNo = outPolicyNo;
+	}
+
+	public Date getPayEndTime() {
+		return this.payEndTime;
+	}
+	public void setPayEndTime(Date payEndTime) {
+		this.payEndTime = payEndTime;
+	}
+
+	public Date getPayToTime() {
+		return this.payToTime;
+	}
+	public void setPayToTime(Date payToTime) {
+		this.payToTime = payToTime;
 	}
 
 	public String getPolicyNo() {

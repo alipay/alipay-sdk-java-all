@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建或更新服务信息接口
  *
  * @author auto create
- * @since 1.0, 2017-03-17 17:48:10
+ * @since 1.0, 2018-06-26 14:23:36
  */
 public class AlipayDaoweiServiceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8752252614481254554L;
+	private static final long serialVersionUID = 5528452738622793631L;
 
 	/**
 	 * 服务保障描述

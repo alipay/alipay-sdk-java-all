@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.community.create response.
  * 
  * @author auto create
- * @since 1.0, 2017-03-30 20:48:59
+ * @since 1.0, 2018-06-09 20:16:18
  */
 public class AlipayEcoCplifeCommunityCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4845496622634585639L;
+	private static final long serialVersionUID = 6317342591598244971L;
 
 	/** 
 	 * 若小区创建成功，则返回支付宝社区物业平台中的小区统一编号。

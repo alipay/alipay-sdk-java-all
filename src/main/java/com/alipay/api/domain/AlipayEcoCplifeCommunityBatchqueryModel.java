@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询支付宝小区编号
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:36:39
+ * @since 1.0, 2018-06-09 20:14:53
  */
 public class AlipayEcoCplifeCommunityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2167694143467931164L;
+	private static final long serialVersionUID = 7474442338277238351L;
 
 	/**
 	 * 分页查询的当前页码数，分页从1开始计数。

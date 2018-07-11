@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.verification.result.send request
  * 
  * @author auto create
- * @since 1.0, 2018-04-13 17:45:00
+ * @since 1.0, 2018-05-07 15:10:00
  */
 public class AlipayDataDataserviceVerificationResultSendRequest implements AlipayRequest<AlipayDataDataserviceVerificationResultSendResponse> {
 

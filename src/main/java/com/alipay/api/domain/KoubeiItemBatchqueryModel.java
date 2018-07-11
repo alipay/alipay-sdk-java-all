@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商品查询
  *
  * @author auto create
- * @since 1.0, 2018-03-09 00:23:41
+ * @since 1.0, 2018-06-15 08:34:59
  */
 public class KoubeiItemBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6784517249754845453L;
+	private static final long serialVersionUID = 8326119186183332932L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；

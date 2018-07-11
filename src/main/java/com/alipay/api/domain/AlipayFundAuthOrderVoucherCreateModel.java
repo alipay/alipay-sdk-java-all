@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金授权发码接口
  *
  * @author auto create
- * @since 1.0, 2018-03-13 11:01:09
+ * @since 1.0, 2018-06-15 11:11:56
  */
 public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1568891519389977128L;
+	private static final long serialVersionUID = 5678132258831194938L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -21,7 +21,11 @@ public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式
+	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 
+1.间联模式必须传入二级商户ID，key为secondaryMerchantId;
+2. 当面资金授权业务对应的类目，key为category，value由支付宝分配，酒店业务传 "HOTEL"(信用预授权场景下必传)；
+3. 外部商户的门店编号，key为outStoreCode，可选；
+4. 外部商户的门店简称，key为outStoreAlias，可选。
 	 */
 	@ApiField("extra_param")
 	private String extraParam;
@@ -70,6 +74,18 @@ public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 商户指定的结算币种。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
+	 */
+	@ApiField("settle_currency")
+	private String settleCurrency;
+
+	/**
+	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
+	 */
+	@ApiField("trans_currency")
+	private String transCurrency;
 
 	public String getAmount() {
 		return this.amount;
@@ -132,6 +148,20 @@ public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSettleCurrency() {
+		return this.settleCurrency;
+	}
+	public void setSettleCurrency(String settleCurrency) {
+		this.settleCurrency = settleCurrency;
+	}
+
+	public String getTransCurrency() {
+		return this.transCurrency;
+	}
+	public void setTransCurrency(String transCurrency) {
+		this.transCurrency = transCurrency;
 	}
 
 }

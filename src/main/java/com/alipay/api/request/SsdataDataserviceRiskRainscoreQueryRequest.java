@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.risk.rainscore.query request
  * 
  * @author auto create
- * @since 1.0, 2017-12-12 09:58:59
+ * @since 1.0, 2018-06-08 14:08:19
  */
 public class SsdataDataserviceRiskRainscoreQueryRequest implements AlipayRequest<SsdataDataserviceRiskRainscoreQueryResponse> {
 

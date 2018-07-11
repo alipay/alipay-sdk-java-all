@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店摘要信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-02-17 14:20:04
+ * @since 1.0, 2018-05-09 13:39:45
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4593525479561715518L;
+	private static final long serialVersionUID = 4331814855925538458L;
 
 	/**
 	 * 表示接口业务的调用方身份：ISV、 服务商身份标识。传入ISV代表系统集成商身份。传入PROVIDER代表服务商。

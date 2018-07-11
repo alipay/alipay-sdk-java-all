@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商家中心员工管理的部门组织对象
  *
  * @author auto create
- * @since 1.0, 2018-03-23 11:32:03
+ * @since 1.0, 2018-05-31 20:28:57
  */
 public class DepartmentDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1489173259681558243L;
+	private static final long serialVersionUID = 6574541859596918232L;
 
 	/**
 	 * 业务类型KOUBEI_OPERATOR
@@ -36,6 +36,18 @@ public class DepartmentDTO extends AlipayObject {
 	 */
 	@ApiField("dept_path")
 	private String deptPath;
+
+	/**
+	 * 人员组织场景的部门标签码
+	 */
+	@ApiField("label_code")
+	private String labelCode;
+
+	/**
+	 * 人员组织场景的部门标签名称
+	 */
+	@ApiField("label_name")
+	private String labelName;
 
 	/**
 	 * 上级组织部门id
@@ -81,6 +93,20 @@ public class DepartmentDTO extends AlipayObject {
 	}
 	public void setDeptPath(String deptPath) {
 		this.deptPath = deptPath;
+	}
+
+	public String getLabelCode() {
+		return this.labelCode;
+	}
+	public void setLabelCode(String labelCode) {
+		this.labelCode = labelCode;
+	}
+
+	public String getLabelName() {
+		return this.labelName;
+	}
+	public void setLabelName(String labelName) {
+		this.labelName = labelName;
 	}
 
 	public String getParentDeptId() {

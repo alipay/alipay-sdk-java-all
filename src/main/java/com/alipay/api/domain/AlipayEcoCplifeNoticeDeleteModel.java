@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除物业社区通知通告
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:49
+ * @since 1.0, 2018-06-09 20:18:24
  */
 public class AlipayEcoCplifeNoticeDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2511451388476519443L;
+	private static final long serialVersionUID = 3391698655241544586L;
 
 	/**
 	 * 待删除通知的支付宝小区ID，如果为空，则在所有小区下线该通知.

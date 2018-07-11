@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险代扣协议签约
  *
  * @author auto create
- * @since 1.0, 2018-01-10 12:04:47
+ * @since 1.0, 2018-06-08 13:38:58
  */
 public class AlipayInsSceneProductSignConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8542934236656586771L;
+	private static final long serialVersionUID = 3296993623879395895L;
 
 	/**
 	 * 产品编码

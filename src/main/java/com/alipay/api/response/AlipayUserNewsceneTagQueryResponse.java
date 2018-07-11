@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.newscene.tag.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-14 17:14:17
+ * @since 1.0, 2018-06-25 11:10:00
  */
 public class AlipayUserNewsceneTagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6222453543889748728L;
+	private static final long serialVersionUID = 7278226572816842672L;
 
 	/** 
 	 * 对于传入的tag进行输出，格式为json，true表示是 fasle表示否，invalid表示无法判断，例如传入的账号不存在

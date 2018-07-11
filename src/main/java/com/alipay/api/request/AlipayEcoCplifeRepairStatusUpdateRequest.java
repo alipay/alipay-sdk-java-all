@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cplife.repair.status.update request
  * 
  * @author auto create
- * @since 1.0, 2016-07-14 19:53:30
+ * @since 1.0, 2018-06-09 20:19:57
  */
 public class AlipayEcoCplifeRepairStatusUpdateRequest implements AlipayRequest<AlipayEcoCplifeRepairStatusUpdateResponse> {
 

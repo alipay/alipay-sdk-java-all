@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业免押额度申请初始化
  *
  * @author auto create
- * @since 1.0, 2018-04-27 10:01:16
+ * @since 1.0, 2018-06-28 17:55:31
  */
 public class ZhimaCreditEpFreedepositInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2437357718877457996L;
+	private static final long serialVersionUID = 8677233971139943616L;
 
 	/**
 	 * 业务场景，生活号：SHENGHUOHAO
@@ -80,6 +80,12 @@ NATIONAL_LEGAL_MERGE---社会统一信用代码
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 外部请求号，用作关联使用，该号可以是前置业务产生传递给商户，需要商户验签后解析使用
+	 */
+	@ApiField("out_request_no")
+	private String outRequestNo;
 
 	/**
 	 * 企业免押额度申请产品码
@@ -168,6 +174,13 @@ NATIONAL_LEGAL_MERGE---社会统一信用代码
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOutRequestNo() {
+		return this.outRequestNo;
+	}
+	public void setOutRequestNo(String outRequestNo) {
+		this.outRequestNo = outRequestNo;
 	}
 
 	public String getProductCode() {

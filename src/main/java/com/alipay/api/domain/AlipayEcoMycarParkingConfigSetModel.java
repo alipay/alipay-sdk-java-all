@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停车ISV系统配置接口
  *
  * @author auto create
- * @since 1.0, 2017-07-20 09:54:35
+ * @since 1.0, 2018-06-25 14:52:49
  */
 public class AlipayEcoMycarParkingConfigSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7746173282518662746L;
+	private static final long serialVersionUID = 7218826127794197259L;
 
 	/**
 	 * 签约支付宝账号

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品下单购买
  *
  * @author auto create
- * @since 1.0, 2018-02-08 10:32:44
+ * @since 1.0, 2018-05-07 11:23:55
  */
 public class KoubeiTradeItemorderBuyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3315632798799271756L;
+	private static final long serialVersionUID = 7858465792182699694L;
 
 	/**
 	 * 业务产品
@@ -46,6 +46,12 @@ public class KoubeiTradeItemorderBuyModel extends AlipayObject {
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/**
+	 * 商户传入营销信息，具体值要和口碑约定，格式为json格式
+	 */
+	@ApiField("promo_params")
+	private String promoParams;
 
 	/**
 	 * 门店ID
@@ -104,6 +110,13 @@ public class KoubeiTradeItemorderBuyModel extends AlipayObject {
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getPromoParams() {
+		return this.promoParams;
+	}
+	public void setPromoParams(String promoParams) {
+		this.promoParams = promoParams;
 	}
 
 	public String getShopId() {

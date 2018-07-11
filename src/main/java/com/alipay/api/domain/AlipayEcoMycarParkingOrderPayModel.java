@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车缴费代扣接口API
  *
  * @author auto create
- * @since 1.0, 2018-01-17 19:25:12
+ * @since 1.0, 2018-06-27 11:12:55
  */
 public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2497372344643974366L;
+	private static final long serialVersionUID = 6794412638964649683L;
 
 	/**
 	 * 代扣返佣的支付宝用户号。
@@ -19,6 +19,12 @@ public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 	 */
 	@ApiField("agent_id")
 	private String agentId;
+
+	/**
+	 * 订单描述
+	 */
+	@ApiField("body")
+	private String body;
 
 	/**
 	 * 车牌，需要进行停车缴费代扣的车辆牌照
@@ -53,7 +59,7 @@ public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 	/**
 	 * 卖家支付宝用户号
 卖家支付宝账号对应的支付宝唯一用户号。
-以2088开头的纯16位数。与seller_logon_id不能同时为空
+以2088开头的纯16位数。
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
@@ -82,6 +88,13 @@ public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 	}
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
+	}
+
+	public String getBody() {
+		return this.body;
+	}
+	public void setBody(String body) {
+		this.body = body;
 	}
 
 	public String getCarNumber() {

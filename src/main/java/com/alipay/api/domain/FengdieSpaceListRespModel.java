@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 云凤蝶空间列表查询接口返回值，包含分页信息，空间信息的列表。
  *
  * @author auto create
- * @since 1.0, 2018-02-02 11:00:25
+ * @since 1.0, 2018-05-17 16:01:04
  */
 public class FengdieSpaceListRespModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5749699659525769243L;
+	private static final long serialVersionUID = 7722859266714449515L;
 
 	/**
 	 * 当前VIP用户下面所有的空间详情列表

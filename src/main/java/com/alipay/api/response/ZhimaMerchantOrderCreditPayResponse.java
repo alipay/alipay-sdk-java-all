@@ -9,17 +9,29 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.order.credit.pay response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-20 17:01:19
+ * @since 1.0, 2018-06-22 14:10:00
  */
 public class ZhimaMerchantOrderCreditPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4574351439625957938L;
+	private static final long serialVersionUID = 5348245127944183774L;
 
 	/** 
 	 * 支付宝生成的资金流水号，用于商户与支付宝进行对账，无支付行为时为空
 	 */
 	@ApiField("alipay_fund_order_no")
 	private String alipayFundOrderNo;
+
+	/** 
+	 * 此字段来源于商户创建订单时传入的值，帮助商户定位订单来源
+	 */
+	@ApiField("channel")
+	private String channel;
+
+	/** 
+	 * 支付失败原因描述
+	 */
+	@ApiField("message")
+	private String message;
 
 	/** 
 	 * 外部订单号
@@ -62,6 +74,20 @@ public class ZhimaMerchantOrderCreditPayResponse extends AlipayResponse {
 	}
 	public String getAlipayFundOrderNo( ) {
 		return this.alipayFundOrderNo;
+	}
+
+	public void setChannel(String channel) {
+		this.channel = channel;
+	}
+	public String getChannel( ) {
+		return this.channel;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public String getMessage( ) {
+		return this.message;
 	}
 
 	public void setOutOrderNo(String outOrderNo) {

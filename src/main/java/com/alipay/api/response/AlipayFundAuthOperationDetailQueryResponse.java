@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-13 11:00:50
+ * @since 1.0, 2018-06-18 19:10:34
  */
 public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5734323879532416894L;
+	private static final long serialVersionUID = 5642969936985882898L;
 
 	/** 
 	 * 该笔资金操作流水opertion_id对应的操作金额，单位为：元（人民币）
@@ -133,6 +133,12 @@ CLOSED：关闭
 	 */
 	@ApiField("total_pay_amount")
 	private String totalPayAmount;
+
+	/** 
+	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
+	 */
+	@ApiField("trans_currency")
+	private String transCurrency;
 
 	public void setAmount(String amount) {
 		this.amount = amount;
@@ -258,6 +264,13 @@ CLOSED：关闭
 	}
 	public String getTotalPayAmount( ) {
 		return this.totalPayAmount;
+	}
+
+	public void setTransCurrency(String transCurrency) {
+		this.transCurrency = transCurrency;
+	}
+	public String getTransCurrency( ) {
+		return this.transCurrency;
 	}
 
 }

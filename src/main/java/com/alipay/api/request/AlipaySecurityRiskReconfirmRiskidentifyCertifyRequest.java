@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.reconfirm.riskidentify.certify request
  * 
  * @author auto create
- * @since 1.0, 2018-04-23 15:08:07
+ * @since 1.0, 2018-05-04 10:40:00
  */
 public class AlipaySecurityRiskReconfirmRiskidentifyCertifyRequest implements AlipayRequest<AlipaySecurityRiskReconfirmRiskidentifyCertifyResponse> {
 

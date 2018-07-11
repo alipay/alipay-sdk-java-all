@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户信息
  *
  * @author auto create
- * @since 1.0, 2018-04-11 17:02:43
+ * @since 1.0, 2018-06-28 17:02:29
  */
 public class MerchantModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8188182772158229658L;
+	private static final long serialVersionUID = 2489288192759215738L;
 
 	/**
 	 * 商户别名
@@ -36,6 +36,12 @@ public class MerchantModel extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 商户或者isv的pid
+	 */
+	@ApiField("pid")
+	private String pid;
 
 	public String getAliasName() {
 		return this.aliasName;
@@ -63,6 +69,13 @@ public class MerchantModel extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getPid() {
+		return this.pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
 	}
 
 }

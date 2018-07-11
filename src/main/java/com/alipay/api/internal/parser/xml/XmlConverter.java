@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.alipay.api.Decryptor;
 import org.w3c.dom.Element;
 
 import com.alipay.api.AlipayApiException;
@@ -18,7 +19,6 @@ import com.alipay.api.SignItem;
 import com.alipay.api.internal.mapping.Converter;
 import com.alipay.api.internal.mapping.Converters;
 import com.alipay.api.internal.mapping.Reader;
-import com.alipay.api.internal.util.AlipayEncrypt;
 import com.alipay.api.internal.util.StringUtils;
 import com.alipay.api.internal.util.XmlUtils;
 
@@ -200,11 +200,8 @@ public class XmlConverter implements Converter {
         return body.substring(signDataStartIndex, signDataEndIndex);
     }
 
-    /** 
-     * @see com.alipay.api.internal.mapping.Converter#encryptSourceData(com.alipay.api.AlipayRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
-     */
-    public String encryptSourceData(AlipayRequest<?> request, String body, String format,
-                                    String encryptType, String encryptKey, String charset)
+    public String decryptSourceData(AlipayRequest<?> request, String body, String format,
+                                    Decryptor decryptor, String encryptType, String charset)
                                                                                           throws AlipayApiException {
 
         ResponseParseItem respSignSourceData = getXMLSignSourceData(request, body);
@@ -213,8 +210,8 @@ public class XmlConverter implements Converter {
         String bodyEndContent = body.substring(respSignSourceData.getEndIndex());
 
         return bodyIndexContent
-               + AlipayEncrypt.decryptContent(respSignSourceData.getEncryptContent(), encryptType,
-                   encryptKey, charset) + bodyEndContent;
+               + decryptor.decrypt(respSignSourceData.getEncryptContent(), encryptType, charset)
+               + bodyEndContent;
     }
 
     /**

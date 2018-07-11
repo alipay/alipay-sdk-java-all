@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租客查询支付宝授权状态
  *
  * @author auto create
- * @since 1.0, 2018-03-27 15:37:07
+ * @since 1.0, 2018-06-25 14:49:18
  */
 public class AlipayEcoRenthouseRenterIdinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8689645424126696584L;
+	private static final long serialVersionUID = 6189979759644935747L;
 
 	/**
 	 * 身份证号

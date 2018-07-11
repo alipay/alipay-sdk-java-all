@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑零售商品类目信息查询
  *
  * @author auto create
- * @since 1.0, 2018-04-25 11:00:54
+ * @since 1.0, 2018-06-05 10:58:54
  */
 public class KoubeiRetailWmsCategoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3411785576611189647L;
+	private static final long serialVersionUID = 3362719962588334476L;
 
 	/**
 	 * 根据类目ID查询

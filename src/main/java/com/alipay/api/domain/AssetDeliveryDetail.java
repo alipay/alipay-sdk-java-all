@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配送完成反馈详情
  *
  * @author auto create
- * @since 1.0, 2017-09-15 11:25:06
+ * @since 1.0, 2018-06-26 14:21:29
  */
 public class AssetDeliveryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6895667179319984324L;
+	private static final long serialVersionUID = 2899278419917889129L;
 
 	/**
 	 * 配送数量
@@ -27,6 +27,12 @@ public class AssetDeliveryDetail extends AlipayObject {
 	 */
 	@ApiField("assign_item_id")
 	private String assignItemId;
+
+	/**
+	 * 由供应商自定义的分批反馈批次号，用于保持幂等，此值不传则需要按整批反馈.(由字母,数字,下划线组成)
+	 */
+	@ApiField("batch_no")
+	private String batchNo;
 
 	/**
 	 * 物流单信息
@@ -47,6 +53,13 @@ public class AssetDeliveryDetail extends AlipayObject {
 	}
 	public void setAssignItemId(String assignItemId) {
 		this.assignItemId = assignItemId;
+	}
+
+	public String getBatchNo() {
+		return this.batchNo;
+	}
+	public void setBatchNo(String batchNo) {
+		this.batchNo = batchNo;
 	}
 
 	public List<LogisticsInfo> getLogisticsInfos() {

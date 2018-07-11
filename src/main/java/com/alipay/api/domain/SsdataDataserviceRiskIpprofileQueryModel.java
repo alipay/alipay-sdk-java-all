@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * “蚁盾”智能IP检测服务
  *
  * @author auto create
- * @since 1.0, 2017-12-12 09:59:21
+ * @since 1.0, 2018-06-08 14:08:06
  */
 public class SsdataDataserviceRiskIpprofileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7413843324894615132L;
+	private static final long serialVersionUID = 5226233495631888582L;
 
 	/**
 	 * 身份证号码

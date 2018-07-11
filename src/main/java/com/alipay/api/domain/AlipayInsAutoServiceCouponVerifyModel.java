@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁车险服务核销
  *
  * @author auto create
- * @since 1.0, 2018-04-12 17:36:32
+ * @since 1.0, 2018-06-20 20:32:32
  */
 public class AlipayInsAutoServiceCouponVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4299159985924765783L;
+	private static final long serialVersionUID = 6564651713685256851L;
 
 	/**
 	 * 业务扩展数据,根据核销服务类型不同，业务相关扩展数据以json格式返回,蚂蚁根据json格式解析。

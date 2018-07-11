@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 确认入库通知单
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:32:27
+ * @since 1.0, 2018-06-01 17:20:40
  */
 public class KoubeiRetailWmsInboundorderConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8758862811862342135L;
+	private static final long serialVersionUID = 5559126852867568422L;
 
 	/**
 	 * 入库通知单号

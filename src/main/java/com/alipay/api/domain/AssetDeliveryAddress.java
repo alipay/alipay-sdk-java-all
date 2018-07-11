@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 配送地址
  *
  * @author auto create
- * @since 1.0, 2017-09-15 11:24:36
+ * @since 1.0, 2018-06-14 12:56:23
  */
 public class AssetDeliveryAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 6121271543223486646L;
+	private static final long serialVersionUID = 5193371313933558461L;
 
 	/**
 	 * 详细地址
@@ -48,6 +48,18 @@ public class AssetDeliveryAddress extends AlipayObject {
 	 */
 	@ApiField("province")
 	private String province;
+
+	/**
+	 * 仓库id
+	 */
+	@ApiField("warehouse_id")
+	private String warehouseId;
+
+	/**
+	 * 供应商的仓库名称
+	 */
+	@ApiField("warehouse_name")
+	private String warehouseName;
 
 	/**
 	 * 邮编
@@ -95,6 +107,20 @@ public class AssetDeliveryAddress extends AlipayObject {
 	}
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public String getWarehouseId() {
+		return this.warehouseId;
+	}
+	public void setWarehouseId(String warehouseId) {
+		this.warehouseId = warehouseId;
+	}
+
+	public String getWarehouseName() {
+		return this.warehouseName;
+	}
+	public void setWarehouseName(String warehouseName) {
+		this.warehouseName = warehouseName;
 	}
 
 	public String getZipCode() {

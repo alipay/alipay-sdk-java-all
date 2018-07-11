@@ -4,6 +4,7 @@ import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayParser;
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.AlipayResponse;
+import com.alipay.api.Decryptor;
 import com.alipay.api.SignItem;
 import com.alipay.api.internal.mapping.Converter;
 
@@ -30,9 +31,6 @@ public class ObjectJsonParser<T extends AlipayResponse> implements AlipayParser<
         return clazz;
     }
 
-    /** 
-     * @see com.alipay.api.AlipayParser#getSignItem(com.alipay.api.AlipayRequest, String)
-     */
     public SignItem getSignItem(AlipayRequest<?> request, String responseBody)
                                                                               throws AlipayApiException {
 
@@ -41,17 +39,13 @@ public class ObjectJsonParser<T extends AlipayResponse> implements AlipayParser<
         return converter.getSignItem(request, responseBody);
     }
 
-    /** 
-     * @see com.alipay.api.AlipayParser#encryptSourceData(com.alipay.api.AlipayRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
-     */
-    public String encryptSourceData(AlipayRequest<?> request, String body, String format,
-                                       String encryptType, String encryptKey, String charset)
-                                                                                             throws AlipayApiException {
+    public String decryptSourceData(AlipayRequest<?> request, String body, String format,
+                                    Decryptor decryptor, String encryptType, String charset)
+            throws AlipayApiException {
 
         Converter converter = new JsonConverter();
 
-        return converter.encryptSourceData(request, body, format, encryptType, encryptKey,
-            charset);
+        return converter.decryptSourceData(request, body, format, decryptor, encryptType, charset);
     }
 
 }

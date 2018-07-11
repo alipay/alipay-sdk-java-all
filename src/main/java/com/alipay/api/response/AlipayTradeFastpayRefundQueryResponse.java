@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.RefundRoyaltyResult;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-01 11:45:00
+ * @since 1.0, 2018-06-20 17:15:31
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1465157349384728649L;
+	private static final long serialVersionUID = 2159338928375791899L;
 
 	/** 
 	 * 退款失败错误码。只在使用异步退款接口情况下才会返回该字段
@@ -67,6 +70,13 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_reason")
 	private String refundReason;
+
+	/** 
+	 * 退分账明细信息
+	 */
+	@ApiListField("refund_royaltys")
+	@ApiField("refund_royalty_result")
+	private List<RefundRoyaltyResult> refundRoyaltys;
 
 	/** 
 	 * 只在使用异步退款接口情况下才返回该字段。REFUND_PROCESSING 退款处理中；REFUND_SUCCESS 退款处理成功；REFUND_FAIL 退款失败;
@@ -147,6 +157,13 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	}
 	public String getRefundReason( ) {
 		return this.refundReason;
+	}
+
+	public void setRefundRoyaltys(List<RefundRoyaltyResult> refundRoyaltys) {
+		this.refundRoyaltys = refundRoyaltys;
+	}
+	public List<RefundRoyaltyResult> getRefundRoyaltys( ) {
+		return this.refundRoyaltys;
 	}
 
 	public void setRefundStatus(String refundStatus) {

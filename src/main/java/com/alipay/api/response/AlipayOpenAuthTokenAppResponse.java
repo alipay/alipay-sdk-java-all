@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.AppTokenExchangeSubElement;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.auth.token.app response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-23 18:38:53
+ * @since 1.0, 2018-06-29 18:00:00
  */
 public class AlipayOpenAuthTokenAppResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7183592463878759694L;
+	private static final long serialVersionUID = 4259411236546235988L;
 
 	/** 
 	 * 应用授权令牌
@@ -43,6 +46,13 @@ public class AlipayOpenAuthTokenAppResponse extends AlipayResponse {
 	 */
 	@ApiField("re_expires_in")
 	private String reExpiresIn;
+
+	/** 
+	 * 批量授权换码访问令牌列表
+	 */
+	@ApiListField("tokens")
+	@ApiField("app_token_exchange_sub_element")
+	private List<AppTokenExchangeSubElement> tokens;
 
 	/** 
 	 * 授权商户的user_id
@@ -83,6 +93,13 @@ public class AlipayOpenAuthTokenAppResponse extends AlipayResponse {
 	}
 	public String getReExpiresIn( ) {
 		return this.reExpiresIn;
+	}
+
+	public void setTokens(List<AppTokenExchangeSubElement> tokens) {
+		this.tokens = tokens;
+	}
+	public List<AppTokenExchangeSubElement> getTokens( ) {
+		return this.tokens;
 	}
 
 	public void setUserId(String userId) {

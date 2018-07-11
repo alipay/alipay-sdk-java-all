@@ -78,6 +78,9 @@ public abstract class AtsUtils {
 			Enumeration<?> entries = zf.entries();
 			while (entries.hasMoreElements()) {
 				ZipEntry entry = (ZipEntry) entries.nextElement();
+				if (!pathSecurityCheck(entry.getName())) {
+					continue;
+				}
 				if (entry.isDirectory()) {
 					new File(toDir, entry.getName()).mkdirs();
 					continue;
@@ -241,6 +244,16 @@ public abstract class AtsUtils {
 		} catch (IOException ioe) {
 			// ignore
 		}
+	}
+
+	public static boolean pathSecurityCheck(String path) {
+		if (path == null) {
+			return false;
+		}
+		if (path.contains("..") && (path.contains("/") || path.contains("\\"))) {
+			return false;
+		}
+		return true;
 	}
 
 }

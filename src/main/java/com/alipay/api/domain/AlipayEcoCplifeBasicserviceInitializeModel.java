@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 初始化小区物业基础服务
  *
  * @author auto create
- * @since 1.0, 2017-03-24 11:43:21
+ * @since 1.0, 2018-06-09 20:17:43
  */
 public class AlipayEcoCplifeBasicserviceInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6257738955784879859L;
+	private static final long serialVersionUID = 3182766365724458848L;
 
 	/**
 	 * 若服务类型为物业缴费账单模式，每个小区默认的收款帐号为授权物业的支付宝账号，默认不用传该参数。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 房源上下架
  *
  * @author auto create
- * @since 1.0, 2017-08-04 14:14:41
+ * @since 1.0, 2018-06-25 14:53:38
  */
 public class AlipayEcoRenthouseRoomStateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4451883187428255878L;
+	private static final long serialVersionUID = 1852686188935241192L;
 
 	/**
 	 * 房源类型（1:分散式 2：集中式）

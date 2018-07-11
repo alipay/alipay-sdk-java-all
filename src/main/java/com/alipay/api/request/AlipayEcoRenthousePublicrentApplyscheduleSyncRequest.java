@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.renthouse.publicrent.applyschedule.sync request
  * 
  * @author auto create
- * @since 1.0, 2018-04-26 14:45:00
+ * @since 1.0, 2018-06-25 14:49:09
  */
 public class AlipayEcoRenthousePublicrentApplyscheduleSyncRequest implements AlipayRequest<AlipayEcoRenthousePublicrentApplyscheduleSyncResponse> {
 

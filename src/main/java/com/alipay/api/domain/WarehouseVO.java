@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 仓库模型
  *
  * @author auto create
- * @since 1.0, 2018-04-20 18:48:00
+ * @since 1.0, 2018-05-09 10:13:13
  */
 public class WarehouseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3829862157686162351L;
+	private static final long serialVersionUID = 2752766566947834835L;
 
 	/**
 	 * 仓库详细地址
@@ -24,6 +24,12 @@ public class WarehouseVO extends AlipayObject {
 	 */
 	@ApiField("area_code")
 	private String areaCode;
+
+	/**
+	 * 区域名称
+	 */
+	@ApiField("area_name")
+	private String areaName;
 
 	/**
 	 * 仓库的状态，EFFECTIVE：生效，INVALID：失效。
@@ -42,6 +48,12 @@ public class WarehouseVO extends AlipayObject {
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 市的名称
+	 */
+	@ApiField("city_name")
+	private String cityName;
 
 	/**
 	 * 联系人
@@ -78,6 +90,12 @@ public class WarehouseVO extends AlipayObject {
 	 */
 	@ApiField("province_code")
 	private String provinceCode;
+
+	/**
+	 * 省的名称
+	 */
+	@ApiField("province_name")
+	private String provinceName;
 
 	/**
 	 * 对应的门店ID
@@ -117,6 +135,13 @@ public class WarehouseVO extends AlipayObject {
 		this.areaCode = areaCode;
 	}
 
+	public String getAreaName() {
+		return this.areaName;
+	}
+	public void setAreaName(String areaName) {
+		this.areaName = areaName;
+	}
+
 	public String getBizStatus() {
 		return this.bizStatus;
 	}
@@ -136,6 +161,13 @@ public class WarehouseVO extends AlipayObject {
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public String getCityName() {
+		return this.cityName;
+	}
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
 	}
 
 	public String getContact() {
@@ -178,6 +210,13 @@ public class WarehouseVO extends AlipayObject {
 	}
 	public void setProvinceCode(String provinceCode) {
 		this.provinceCode = provinceCode;
+	}
+
+	public String getProvinceName() {
+		return this.provinceName;
+	}
+	public void setProvinceName(String provinceName) {
+		this.provinceName = provinceName;
 	}
 
 	public String getShopId() {

@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自助售货机入驻申请
  *
  * @author auto create
- * @since 1.0, 2018-01-23 14:19:23
+ * @since 1.0, 2018-06-22 15:45:40
  */
 public class AntMerchantExpandAutomatApplyUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1197526195282989617L;
+	private static final long serialVersionUID = 7489136221413468149L;
+
+	/**
+	 * 自助售卖机合作伙伴信息
+	 */
+	@ApiField("associate")
+	private SmartAutomatAssociate associate;
 
 	/**
 	 * 机具发货地址信息
@@ -77,6 +83,12 @@ public class AntMerchantExpandAutomatApplyUploadModel extends AlipayObject {
 	private String productUserId;
 
 	/**
+	 * 自助售卖机场景信息
+	 */
+	@ApiField("scene")
+	private SmartAutomatScene scene;
+
+	/**
 	 * 机具终端ID，由开发者生成，并需保证在开发者端不重复
 	 */
 	@ApiField("terminal_id")
@@ -87,6 +99,13 @@ public class AntMerchantExpandAutomatApplyUploadModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public SmartAutomatAssociate getAssociate() {
+		return this.associate;
+	}
+	public void setAssociate(SmartAutomatAssociate associate) {
+		this.associate = associate;
+	}
 
 	public SmartAddressInfo getDeliveryAddress() {
 		return this.deliveryAddress;
@@ -149,6 +168,13 @@ public class AntMerchantExpandAutomatApplyUploadModel extends AlipayObject {
 	}
 	public void setProductUserId(String productUserId) {
 		this.productUserId = productUserId;
+	}
+
+	public SmartAutomatScene getScene() {
+		return this.scene;
+	}
+	public void setScene(SmartAutomatScene scene) {
+		this.scene = scene;
 	}
 
 	public String getTerminalId() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易创建
  *
  * @author auto create
- * @since 1.0, 2018-02-08 14:11:13
+ * @since 1.0, 2018-06-06 13:51:27
  */
 public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7665578167653648173L;
+	private static final long serialVersionUID = 7717888527363348846L;
 
 	/**
 	 * 买家会员信息

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步发票申请结果
  *
  * @author auto create
- * @since 1.0, 2017-10-19 15:50:51
+ * @since 1.0, 2018-06-21 14:42:28
  */
 public class AlipayEbppInvoiceApplyResultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2745895351874215181L;
+	private static final long serialVersionUID = 8869217748542997292L;
 
 	/**
-	 * 支付宝发起发票申请的id,该id具有唯一性，该字段由支付宝向税控发起申请的时候带过去，作为支付宝向税控开票申请的唯一标志
+	 * 支付宝发起开票申请的id，该id具有唯一性，该字段由支付宝向税控发起申请的时候带过去，作为支付宝向税控开票申请的唯一标志
 	 */
 	@ApiField("apply_id")
 	private String applyId;
@@ -45,6 +45,7 @@ SUCCESS:成功;FAIL:失败
 
 	/**
 	 * 该字段是税控商或ISV收到支付宝开票请求后生成的申请id，由税控商或isv自己生成，该id具有唯一性
+当ISV接入时是按照tax_apply_id来查询发票信息时，该字段必填。
 	 */
 	@ApiField("tax_apply_id")
 	private String taxApplyId;

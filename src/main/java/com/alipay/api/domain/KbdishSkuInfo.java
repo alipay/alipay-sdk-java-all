@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜品sku模型
  *
  * @author auto create
- * @since 1.0, 2018-03-20 16:49:20
+ * @since 1.0, 2018-05-08 15:09:30
  */
 public class KbdishSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2273854696252794424L;
+	private static final long serialVersionUID = 8325765346546799595L;
 
 	/**
 	 * 餐盒费用

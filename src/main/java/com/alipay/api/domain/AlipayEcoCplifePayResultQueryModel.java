@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询单笔物业费交易关联账单详情
  *
  * @author auto create
- * @since 1.0, 2017-09-08 11:37:41
+ * @since 1.0, 2018-06-09 20:11:05
  */
 public class AlipayEcoCplifePayResultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2446543627522557531L;
+	private static final long serialVersionUID = 5196592515536761179L;
 
 	/**
 	 * 查询令牌，部分模式下用户缴物业费成功后由支付宝通过异步通知给到开发者系统，和trade_no二者传其一即可。

@@ -13,12 +13,12 @@ import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayConstants;
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.AlipayResponse;
+import com.alipay.api.Decryptor;
 import com.alipay.api.ResponseParseItem;
 import com.alipay.api.SignItem;
 import com.alipay.api.internal.mapping.Converter;
 import com.alipay.api.internal.mapping.Converters;
 import com.alipay.api.internal.mapping.Reader;
-import com.alipay.api.internal.util.AlipayEncrypt;
 import com.alipay.api.internal.util.StringUtils;
 import com.alipay.api.internal.util.json.ExceptionErrorListener;
 import com.alipay.api.internal.util.json.JSONReader;
@@ -56,7 +56,7 @@ public class JsonConverter implements Converter {
      * @param json JSON格式的数据
      * @param clazz 泛型领域类型
      * @return 领域对象
-     * @throws TopException
+     * @throws AlipayApiException
      */
     public <T> T fromJson(final Map<?, ?> json, Class<T> clazz) throws AlipayApiException {
         return Converters.convert(clazz, new Reader() {
@@ -233,11 +233,9 @@ public class JsonConverter implements Converter {
         return (String) rootJson.get(AlipayConstants.SIGN);
     }
 
-    /** 
-     * @see com.alipay.api.internal.mapping.Converter#encryptSourceData(com.alipay.api.AlipayRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
-     */
-    public String encryptSourceData(AlipayRequest<?> request, String body, String format,
-                                    String encryptType, String encryptKey, String charset)
+
+    public String decryptSourceData(AlipayRequest<?> request, String body, String format,
+                                    Decryptor decryptor, String encryptType, String charset)
                                                                                           throws AlipayApiException {
 
         ResponseParseItem respSignSourceData = getJSONSignSourceData(request, body);
@@ -246,8 +244,8 @@ public class JsonConverter implements Converter {
         String bodyEndContent = body.substring(respSignSourceData.getEndIndex());
 
         return bodyIndexContent
-               + AlipayEncrypt.decryptContent(respSignSourceData.getEncryptContent(), encryptType,
-                   encryptKey, charset) + bodyEndContent;
+               + decryptor.decrypt(respSignSourceData.getEncryptContent(), encryptType, charset)
+               + bodyEndContent;
 
     }
 

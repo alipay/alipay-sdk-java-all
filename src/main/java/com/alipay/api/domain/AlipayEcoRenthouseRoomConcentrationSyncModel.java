@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 集中式房源同步
  *
  * @author auto create
- * @since 1.0, 2018-03-27 15:45:09
+ * @since 1.0, 2018-06-20 10:37:58
  */
 public class AlipayEcoRenthouseRoomConcentrationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3166153515724249387L;
+	private static final long serialVersionUID = 5174187541733689842L;
 
 	/**
 	 * 阿里短号

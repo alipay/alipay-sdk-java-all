@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.confirm request
  * 
  * @author auto create
- * @since 1.0, 2018-02-01 22:45:48
+ * @since 1.0, 2018-06-15 11:24:58
  */
 public class AlipayOpenAgentConfirmRequest implements AlipayRequest<AlipayOpenAgentConfirmResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加油站门店信息查询接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:18
+ * @since 1.0, 2018-06-25 14:51:44
  */
 public class AlipayEcoMycarFuellingShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7625762569412983229L;
+	private static final long serialVersionUID = 2121538717756641735L;
 
 	/**
 	 * 外部门店编号系统唯一，该值添加后不可修改，与字段shop_id不能同时为空

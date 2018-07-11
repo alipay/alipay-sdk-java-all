@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 理赔反欺诈查询服务
  *
  * @author auto create
- * @since 1.0, 2018-04-12 16:01:02
+ * @since 1.0, 2018-05-25 11:02:22
  */
 public class AlipayInsDataAutoFraudQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3591415787248691622L;
+	private static final long serialVersionUID = 5418521545485777769L;
 
 	/**
 	 * 出险城市，六位国标码

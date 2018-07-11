@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑权益发放接口
  *
  * @author auto create
- * @since 1.0, 2017-09-29 15:08:05
+ * @since 1.0, 2018-06-12 20:04:26
  */
 public class KoubeiMarketingCampaignBenefitSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6411848136289617698L;
+	private static final long serialVersionUID = 3182136275761166879L;
 
 	/**
 	 * 领券渠道
@@ -20,13 +20,13 @@ public class KoubeiMarketingCampaignBenefitSendModel extends AlipayObject {
 	private String channel;
 
 	/**
-	 * 优惠类型
+	 * 优惠类型，CAMPAIGN：活动，ITEM：商品
 	 */
 	@ApiField("discount_type")
 	private String discountType;
 
 	/**
-	 * 触发权益的优惠id，当discount_type是ITEM的时候这个内容是商品id
+	 * 触发权益的优惠id，当discount_type是ITEM的时候这个内容是商品id，当discount_type是CAMPAIGN的时候这个内容是活动id
 	 */
 	@ApiField("item_id")
 	private String itemId;

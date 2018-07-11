@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务订单明细实施项单项取消
  *
  * @author auto create
- * @since 1.0, 2016-08-25 11:11:54
+ * @since 1.0, 2018-07-06 14:51:53
  */
 public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1774341223678259135L;
+	private static final long serialVersionUID = 2136294649164552126L;
 
 	/**
 	 * 当前门店区域不支持实施
@@ -26,7 +26,13 @@ public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 	private String commodityOrderId;
 
 	/**
-	 * 订购服务门店ID
+	 * 商家订购服务选择的某一小程序的APPID，如果该订单为蚂蚁服务市场发布的小程序插件服务所产生的订单，则此字段必填
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
+
+	/**
+	 * 商家订购服务选择的某一门店的ID，如果该订单为口碑服务市场发布的服务所产生的订单，则此字段必填
 	 */
 	@ApiField("shop_id")
 	private String shopId;
@@ -43,6 +49,13 @@ public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 	}
 	public void setCommodityOrderId(String commodityOrderId) {
 		this.commodityOrderId = commodityOrderId;
+	}
+
+	public String getMiniAppId() {
+		return this.miniAppId;
+	}
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
 	}
 
 	public String getShopId() {

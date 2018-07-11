@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.ticketcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-08-29 14:16:18
+ * @since 1.0, 2018-06-15 14:45:00
  */
 public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8362541834588928866L;
+	private static final long serialVersionUID = 6225117261756819226L;
+
+	/** 
+	 * 次卡场景，可用核销份数。仅当次卡场景有值
+	 */
+	@ApiField("available_quantity")
+	private String availableQuantity;
 
 	/** 
 	 * 用户购买时商品的现价
@@ -97,10 +103,23 @@ public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 	private List<TicketTransInfo> ticketTransInfoList;
 
 	/** 
+	 * 是否次卡。是次卡场景值为true，反之为false
+	 */
+	@ApiField("time_cards")
+	private String timeCards;
+
+	/** 
 	 * 券码对应的凭证资产id
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
+
+	public void setAvailableQuantity(String availableQuantity) {
+		this.availableQuantity = availableQuantity;
+	}
+	public String getAvailableQuantity( ) {
+		return this.availableQuantity;
+	}
 
 	public void setCurrentPrice(String currentPrice) {
 		this.currentPrice = currentPrice;
@@ -177,6 +196,13 @@ public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 	}
 	public List<TicketTransInfo> getTicketTransInfoList( ) {
 		return this.ticketTransInfoList;
+	}
+
+	public void setTimeCards(String timeCards) {
+		this.timeCards = timeCards;
+	}
+	public String getTimeCards( ) {
+		return this.timeCards;
 	}
 
 	public void setVoucherId(String voucherId) {

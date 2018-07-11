@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.servicemarket.order.item.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2018-02-05 17:44:40
+ * @since 1.0, 2018-07-09 11:11:40
  */
 public class AlipayOpenServicemarketOrderItemConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8424851777223477242L;
+	private static final long serialVersionUID = 3395543357952171418L;
 
 	
 

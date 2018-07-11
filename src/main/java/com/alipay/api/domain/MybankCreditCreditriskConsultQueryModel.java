@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 咨询各个场景是否准入
  *
  * @author auto create
- * @since 1.0, 2018-02-08 14:50:07
+ * @since 1.0, 2018-06-05 20:10:26
  */
 public class MybankCreditCreditriskConsultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2636981482226972228L;
+	private static final long serialVersionUID = 6511966624411996171L;
 
 	/**
 	 * 关联实体，咨询者可以添加一些关联实体比方说一个企业、一个会员账号、一个自然人等来作为咨询材料辅助咨询判断

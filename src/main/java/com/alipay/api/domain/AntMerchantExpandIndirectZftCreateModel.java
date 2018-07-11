@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户创建
  *
  * @author auto create
- * @since 1.0, 2018-04-13 11:37:35
+ * @since 1.0, 2018-06-08 14:34:21
  */
 public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7151577617238668226L;
+	private static final long serialVersionUID = 8267163179358882464L;
 
 	/**
 	 * 商户别名
@@ -23,13 +23,13 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String aliasName;
 
 	/**
-	 * 商户支付宝账号（如果有）
+	 * 商户支付宝账号，用作结算账号。与银行卡对象字段二选一必填
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
 
 	/**
-	 * 商户结算卡信息。本业务当前只允许传入一张结算卡
+	 * 商户结算卡信息。本业务当前只允许传入一张结算卡。与支付宝账号字段二选一必填
 	 */
 	@ApiListField("biz_cards")
 	@ApiField("settle_card_info")
@@ -48,13 +48,25 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String certImage;
 
 	/**
+	 * 证件反面图片。目前只有当主证件为身份证时才需填写
+	 */
+	@ApiField("cert_image_back")
+	private String certImageBack;
+
+	/**
+	 * 目前只有个体工商户商户类型要求填入本字段，填写值为个体工商户营业执照上的名称
+	 */
+	@ApiField("cert_name")
+	private String certName;
+
+	/**
 	 * 商户证件编号（企业或者个体工商户提供营业执照，事业单位提供事证号）
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 商户证件类型，取值范围：201：营业执照；2011:营业执照(多证合一)；218：事业单位法人证书
+	 * 商户证件类型，取值范围：201：营业执照；2011:营业执照(统一社会信用代码)；218：事业单位法人证书
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -71,6 +83,12 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	 */
 	@ApiField("external_id")
 	private String externalId;
+
+	/**
+	 * 开票资料信息
+	 */
+	@ApiField("invoice_info")
+	private MerchantInvoiceInfo invoiceInfo;
 
 	/**
 	 * 法人身份证反面url，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。本业务接口中，如果是特殊行业必填
@@ -109,7 +127,7 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String mcc;
 
 	/**
-	 * 商家类型：01：企业；02：事业单位
+	 * 商家类型：01：企业；02：事业单位；07：个体工商户
 	 */
 	@ApiField("merchant_type")
 	private String merchantType;
@@ -201,6 +219,20 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 		this.certImage = certImage;
 	}
 
+	public String getCertImageBack() {
+		return this.certImageBack;
+	}
+	public void setCertImageBack(String certImageBack) {
+		this.certImageBack = certImageBack;
+	}
+
+	public String getCertName() {
+		return this.certName;
+	}
+	public void setCertName(String certName) {
+		this.certName = certName;
+	}
+
 	public String getCertNo() {
 		return this.certNo;
 	}
@@ -227,6 +259,13 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	}
 	public void setExternalId(String externalId) {
 		this.externalId = externalId;
+	}
+
+	public MerchantInvoiceInfo getInvoiceInfo() {
+		return this.invoiceInfo;
+	}
+	public void setInvoiceInfo(MerchantInvoiceInfo invoiceInfo) {
+		this.invoiceInfo = invoiceInfo;
 	}
 
 	public String getLegalCertBackImage() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮pos业务订单优惠咨询
  *
  * @author auto create
- * @since 1.0, 2018-03-23 13:27:34
+ * @since 1.0, 2018-05-28 13:31:03
  */
 public class KoubeiCateringOrderPayConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1297496814396537512L;
+	private static final long serialVersionUID = 3178551543475523229L;
 
 	/**
 	 * 用户设备信息,通过钱包容器提供的JSAPI接口获取，

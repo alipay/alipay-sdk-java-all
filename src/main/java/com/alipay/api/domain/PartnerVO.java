@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户档案信息
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:29:52
+ * @since 1.0, 2018-05-08 11:28:59
  */
 public class PartnerVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3282688572946489688L;
+	private static final long serialVersionUID = 6656197979812191658L;
 
 	/**
 	 * 生效状态，EFFECTIVE：生效，INVALID：失效。
@@ -30,6 +30,12 @@ public class PartnerVO extends AlipayObject {
 	 */
 	@ApiField("partner_name")
 	private String partnerName;
+
+	/**
+	 * 商户简码
+	 */
+	@ApiField("short_code")
+	private String shortCode;
 
 	public String getBizStatus() {
 		return this.bizStatus;
@@ -50,6 +56,13 @@ public class PartnerVO extends AlipayObject {
 	}
 	public void setPartnerName(String partnerName) {
 		this.partnerName = partnerName;
+	}
+
+	public String getShortCode() {
+		return this.shortCode;
+	}
+	public void setShortCode(String shortCode) {
+		this.shortCode = shortCode;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户部门信息修改
  *
  * @author auto create
- * @since 1.0, 2018-03-23 13:52:04
+ * @since 1.0, 2018-05-31 20:27:02
  */
 public class KoubeiMerchantDepartmentModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2115422579382316517L;
+	private static final long serialVersionUID = 6868713463159758538L;
 
 	/**
 	 * isv回传的auth_code，通过auth_code校验当前操作人与商户的关系
@@ -30,6 +30,12 @@ public class KoubeiMerchantDepartmentModifyModel extends AlipayObject {
 	 */
 	@ApiField("dept_name")
 	private String deptName;
+
+	/**
+	 * 人员组织场景，组织部门属性标签，现在支持PROCESSING_ROOM, DELIVER_CENTRE, CENTRAL_KITCHEN三种
+	 */
+	@ApiField("label_code")
+	private String labelCode;
 
 	/**
 	 * 当前部门对应的上级部门id
@@ -56,6 +62,13 @@ public class KoubeiMerchantDepartmentModifyModel extends AlipayObject {
 	}
 	public void setDeptName(String deptName) {
 		this.deptName = deptName;
+	}
+
+	public String getLabelCode() {
+		return this.labelCode;
+	}
+	public void setLabelCode(String labelCode) {
+		this.labelCode = labelCode;
 	}
 
 	public String getParentDeptId() {

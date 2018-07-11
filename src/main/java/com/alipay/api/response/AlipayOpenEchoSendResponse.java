@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.MyObjectDdd;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.echo.send response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-17 19:35:00
+ * @since 1.0, 2018-06-11 14:10:00
  */
 public class AlipayOpenEchoSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2218875218148849553L;
+	private static final long serialVersionUID = 1519467923226182949L;
+
+	/** 
+	 * DDDD
+	 */
+	@ApiField("obj")
+	private MyObjectDdd obj;
 
 	/** 
 	 * hello world
@@ -37,6 +44,13 @@ public class AlipayOpenEchoSendResponse extends AlipayResponse {
 	 */
 	@ApiField("word")
 	private String word;
+
+	public void setObj(MyObjectDdd obj) {
+		this.obj = obj;
+	}
+	public MyObjectDdd getObj( ) {
+		return this.obj;
+	}
 
 	public void setOutA(String outA) {
 		this.outA = outA;

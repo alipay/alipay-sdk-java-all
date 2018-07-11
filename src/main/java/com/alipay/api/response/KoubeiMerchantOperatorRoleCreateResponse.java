@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.operator.role.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-23 13:08:26
+ * @since 1.0, 2018-05-30 15:42:55
  */
 public class KoubeiMerchantOperatorRoleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3135687793716234336L;
+	private static final long serialVersionUID = 5148235656461513987L;
 
 	/** 
 	 * 新增返回角色roleId,修改则返回修改的roleId.

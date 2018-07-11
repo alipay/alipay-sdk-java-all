@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ka服务地址注册
  *
  * @author auto create
- * @since 1.0, 2017-07-28 10:37:23
+ * @since 1.0, 2018-06-25 14:53:15
  */
 public class AlipayEcoRenthouseKaServiceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6761425589911492975L;
+	private static final long serialVersionUID = 8814192773383915539L;
 
 	/**
 	 * 地址-对应在网关注册时候的接口标识

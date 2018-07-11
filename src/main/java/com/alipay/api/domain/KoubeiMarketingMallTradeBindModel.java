@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 绑定用户与商圈对应的授权关系
  *
  * @author auto create
- * @since 1.0, 2018-03-29 16:45:54
+ * @since 1.0, 2018-05-25 15:22:07
  */
 public class KoubeiMarketingMallTradeBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3682435911829856992L;
+	private static final long serialVersionUID = 1133978269297517913L;
 
 	/**
 	 * 用户的授权动作：auth授权，unAuth取消授权

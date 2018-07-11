@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云凤蝶空间域名信息
  *
  * @author auto create
- * @since 1.0, 2018-02-02 11:00:25
+ * @since 1.0, 2018-05-17 16:01:04
  */
 public class FengdieSpaceDomains extends AlipayObject {
 
-	private static final long serialVersionUID = 2521624678941641379L;
+	private static final long serialVersionUID = 8227133456872467231L;
 
 	/**
 	 * 发布的域名，在云凤蝶上创建的站点发布时采用的 url 域名

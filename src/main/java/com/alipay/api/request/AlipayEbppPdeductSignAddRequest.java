@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.pdeduct.sign.add request
  * 
  * @author auto create
- * @since 1.0, 2017-10-10 14:30:21
+ * @since 1.0, 2018-05-16 11:50:00
  */
 public class AlipayEbppPdeductSignAddRequest implements AlipayRequest<AlipayEbppPdeductSignAddResponse> {
 
@@ -40,6 +40,7 @@ JF：缴水、电、燃气、固话宽带、有线电视、交通罚款费用
 WUYE：缴物业费
 HK：信用卡还款
 TX：手机充值
+IND: 保险
 	 */
 	private String bizType;
 
@@ -49,9 +50,27 @@ TX：手机充值
 	private String chargeInst;
 
 	/** 
+	* 代扣产品码, 由技术同学分配。 目前在缴费业务场景中，传入INST_DIRECT_DEDUCT; 在保险业务场景中, 传入INSURANCE_MERCHANT_DEDUCT
+	 */
+	private String deductProdCode;
+
+	/** 
 	* 签约类型可为空
 	 */
 	private String deductType;
+
+	/** 
+	* 外部用户实名认证相关信息, 用于做签约时的实名校验。 
+注： 
+
+name: 姓名
+cert_type: 身份证：IDENTITY_CARD、护照：PASSPORT、军官证：OFFICER_CARD、士兵证：SOLDIER_CARD、户口本：HOKOU等
+cert_no: 证件号码
+need_check_info取值 T/F，只有为T时才做强制校验。
+mobile:手机号，目前暂不使用此字段做校验
+min_age: 允许的最小买家年龄,min_age为整数，必须大于等于0.
+	 */
+	private String extUserInfo;
 
 	/** 
 	* 扩展字段
@@ -104,6 +123,9 @@ TRAFFIC：缴交通罚款
 WUYE：缴物业费
 HK：信用卡还款
 CZ：手机充值
+CAR：车险 
+LIFE：寿险 
+HEALTH：健康险
 	 */
 	private String subBizType;
 
@@ -147,11 +169,25 @@ CZ：手机充值
 		return this.chargeInst;
 	}
 
+	public void setDeductProdCode(String deductProdCode) {
+		this.deductProdCode = deductProdCode;
+	}
+	public String getDeductProdCode() {
+		return this.deductProdCode;
+	}
+
 	public void setDeductType(String deductType) {
 		this.deductType = deductType;
 	}
 	public String getDeductType() {
 		return this.deductType;
+	}
+
+	public void setExtUserInfo(String extUserInfo) {
+		this.extUserInfo = extUserInfo;
+	}
+	public String getExtUserInfo() {
+		return this.extUserInfo;
 	}
 
 	public void setExtendField(String extendField) {
@@ -290,7 +326,9 @@ CZ：手机充值
 		txtParams.put("bill_key", this.billKey);
 		txtParams.put("biz_type", this.bizType);
 		txtParams.put("charge_inst", this.chargeInst);
+		txtParams.put("deduct_prod_code", this.deductProdCode);
 		txtParams.put("deduct_type", this.deductType);
+		txtParams.put("ext_user_info", this.extUserInfo);
 		txtParams.put("extend_field", this.extendField);
 		txtParams.put("notify_config", this.notifyConfig);
 		txtParams.put("out_agreement_id", this.outAgreementId);

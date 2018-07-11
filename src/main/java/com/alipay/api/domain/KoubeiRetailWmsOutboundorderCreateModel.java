@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建出库通知单
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:39:41
+ * @since 1.0, 2018-06-01 17:19:09
  */
 public class KoubeiRetailWmsOutboundorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4146216219625749712L;
+	private static final long serialVersionUID = 2364919552369124495L;
 
 	/**
 	 * 操作人信息

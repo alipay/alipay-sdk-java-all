@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppInvoiceTaxnoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8527624736314381934L;
+	private static final long serialVersionUID = 8121994676282187248L;
 
 	/**
 	 * 查询结束时间，精确到天（按开票日期查询）

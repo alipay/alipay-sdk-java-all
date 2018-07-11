@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询账单业务户号
  *
  * @author auto create
- * @since 1.0, 2018-04-26 13:53:27
+ * @since 1.0, 2018-05-10 14:50:17
  */
 public class AlipayEbppCommonBillkeyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8689492749973823426L;
+	private static final long serialVersionUID = 6659386582665976723L;
 
 	/**
 	 * 业务类型缩写：
@@ -21,7 +21,7 @@ JF-缴费
 	private String bizType;
 
 	/**
-	 * 出账机构缩写
+	 * 出账机构缩写, 多个出账机构请用分隔符英文逗号(,)隔开（多出账机构传入的上限限制为200个，出账机构支持输入归属机构）
 	 */
 	@ApiField("charge_inst")
 	private String chargeInst;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单明细
  *
  * @author auto create
- * @since 1.0, 2017-09-27 19:44:40
+ * @since 1.0, 2018-07-06 14:47:25
  */
 public class OrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4781952722871954142L;
+	private static final long serialVersionUID = 8271585778123656529L;
 
 	/**
 	 * 店铺所在具体位置
@@ -80,6 +80,18 @@ public class OrderItem extends AlipayObject {
 	private String merchantPid;
 
 	/**
+	 * 小程序APPID，订购实体为小程序的场景该字段必填
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
+
+	/**
+	 * 小程序应用名称，订购实体为小程序的场景该字段必填
+	 */
+	@ApiField("mini_app_name")
+	private String miniAppName;
+
+	/**
 	 * 上架时间
 	 */
 	@ApiField("online_time")
@@ -104,13 +116,13 @@ public class OrderItem extends AlipayObject {
 	private String province;
 
 	/**
-	 * 店铺ID
+	 * 店铺ID，订购实体为口碑门店的场景该字段必填
 	 */
 	@ApiField("shop_id")
 	private String shopId;
 
 	/**
-	 * 店铺名称
+	 * 店铺名称，订购实体为口碑门店的场景该字段必填
 	 */
 	@ApiField("shop_name")
 	private String shopName;
@@ -202,6 +214,20 @@ public class OrderItem extends AlipayObject {
 	}
 	public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
+	}
+
+	public String getMiniAppId() {
+		return this.miniAppId;
+	}
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
+	}
+
+	public String getMiniAppName() {
+		return this.miniAppName;
+	}
+	public void setMiniAppName(String miniAppName) {
+		this.miniAppName = miniAppName;
 	}
 
 	public String getOnlineTime() {

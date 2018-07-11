@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 松贤测试xxx
  *
  * @author auto create
- * @since 1.0, 2018-04-17 19:33:41
+ * @since 1.0, 2018-06-11 14:04:01
  */
 public class AlipayOpenEchoSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8451416781646512973L;
+	private static final long serialVersionUID = 1469119213829122164L;
 
 	/**
 	 * xxx

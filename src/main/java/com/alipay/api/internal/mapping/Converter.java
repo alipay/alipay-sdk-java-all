@@ -3,6 +3,7 @@ package com.alipay.api.internal.mapping;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.AlipayResponse;
+import com.alipay.api.Decryptor;
 import com.alipay.api.SignItem;
 
 /**
@@ -20,7 +21,7 @@ public interface Converter {
      * @param rsp 响应字符串
      * @param clazz 领域类型
      * @return 响应对象
-     * @throws TopException
+     * @throws AlipayApiException
      */
     public <T extends AlipayResponse> T toResponse(String rsp, Class<T> clazz)
                                                                               throws AlipayApiException;
@@ -42,14 +43,14 @@ public interface Converter {
      * @param request
      * @param body
      * @param format
+     * @param decryptor
      * @param encryptType
-     * @param encryptKey
      * @param charset
      * @return
      * @throws AlipayApiException
      */
-    public String encryptSourceData(AlipayRequest<?> request, String body, String format,
-                                       String encryptType, String encryptKey, String charset)
-                                                                                             throws AlipayApiException;
+    public String decryptSourceData(AlipayRequest<?> request, String body, String format,
+                                    Decryptor decryptor, String encryptType, String charset)
+            throws AlipayApiException;
 
 }

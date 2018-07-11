@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 判断云凤蝶请求的接口成功与否
  *
  * @author auto create
- * @since 1.0, 2018-02-02 11:00:31
+ * @since 1.0, 2018-05-17 16:01:09
  */
 public class FengdieSuccessRespModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6442733277688627435L;
+	private static final long serialVersionUID = 4726756729995764351L;
 
 	/**
 	 * 判断请求操作是否成功，值为 true 或者 false

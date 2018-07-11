@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链金融-预付申请单创建
  *
  * @author auto create
- * @since 1.0, 2018-02-08 14:25:50
+ * @since 1.0, 2018-06-06 13:52:09
  */
 public class MybankCreditSupplychainPrepaymentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2667739711922331312L;
+	private static final long serialVersionUID = 3282853485949542629L;
 
 	/**
 	 * 买家身份信息。

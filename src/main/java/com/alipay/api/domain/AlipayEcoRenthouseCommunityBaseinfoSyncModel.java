@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小区大楼信息同步
  *
  * @author auto create
- * @since 1.0, 2017-07-28 10:37:32
+ * @since 1.0, 2018-06-25 14:53:23
  */
 public class AlipayEcoRenthouseCommunityBaseinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3547815219278453751L;
+	private static final long serialVersionUID = 3665372964737315562L;
 
 	/**
 	 * 商圈编码

@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户券模板创建接口
  *
  * @author auto create
- * @since 1.0, 2018-01-30 22:41:18
+ * @since 1.0, 2018-05-22 10:08:14
  */
 public class AlipayMarketingCashlessvoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5837632184847351758L;
+	private static final long serialVersionUID = 1273629611773769346L;
 
 	/**
-	 * 面额。每张代金券可以抵扣的金额。币种为人民币，单位为元。该数值不能小于0，小数点以后最多保留两位。代金券必填，兑换券不能填
+	 * 面额。每张代金券可以抵扣的金额。币种为人民币，单位为元。该数值有效范围为1~999，小数点以后最多保留两位。代金券必填，兑换券不能填
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -71,6 +71,12 @@ public class AlipayMarketingCashlessvoucherTemplateCreateModel extends AlipayObj
 	private String ruleConf;
 
 	/**
+	 * 券总金额（仅用于不定额券）。币种为人民币，单位为元。该数值需大于等于1，小于等于10,000,000，小数点以后最多保留两位。voucher_type为CASHLESS_RANDOM_VOUCHER时必填。
+	 */
+	@ApiField("total_amount")
+	private String totalAmount;
+
+	/**
 	 * 券可用时段，JSON数组字符串，空数组即[]，表示不限制，指定每周时间段示例：[{"day_rule": "1,2,3,4,5", "time_begin": "09:00:00", "time_end": "22:00:00"}, {"day_rule": "6,7", "time_begin": "08:00:00", "time_end": "23:00:00"}]，数组中每个元素都包含三个key：day_rule, time_begin, time_end，其中day_rule表示周几，取值范围[1, 2, 3, 4, 5, 6, 7]（周7表示星期日），多个值使用英文逗号隔开；time_begin和time_end分别表示生效起始时间和结束时间，格式为HH:mm:ss。另外，数组中各个时间规则是或关系。例如，[{"day_rule": "1,2,3,4,5", "time_begin": "09:00:00", "time_end": "22:00:00"}, {"day_rule": "6,7", "time_begin": "08:00:00", "time_end": "23:00:00"}]表示在每周的一，二，三，四，五的早上9点到晚上10点券可用或者每周的星期六和星期日的早上8点到晚上11点券可用。 仅支持代金券
 	 */
 	@ApiField("voucher_available_time")
@@ -83,13 +89,15 @@ public class AlipayMarketingCashlessvoucherTemplateCreateModel extends AlipayObj
 	private String voucherDescription;
 
 	/**
-	 * 拟发行券的数量。单位为张。该数值必须是大于0的整数。
+	 * 拟发行券的数量。单位为张。该数值必须是大于0的整数。voucher_type为CASHLESS_FIX_VOUCHER时必填。
 	 */
 	@ApiField("voucher_quantity")
 	private Long voucherQuantity;
 
 	/**
-	 * 券类型，取值范围  代金券：CASHLESS_FIX_VOUCHER；兑换券（暂不支持）：EXCHANGE_VOUCHER；
+	 * 券类型，取值范围为：
+1. 定额代金券：CASHLESS_FIX_VOUCHER；
+2. 不定额代金券 CASHLESS_RANDOM_VOUCHER；
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
@@ -161,6 +169,13 @@ public class AlipayMarketingCashlessvoucherTemplateCreateModel extends AlipayObj
 	}
 	public void setRuleConf(String ruleConf) {
 		this.ruleConf = ruleConf;
+	}
+
+	public String getTotalAmount() {
+		return this.totalAmount;
+	}
+	public void setTotalAmount(String totalAmount) {
+		this.totalAmount = totalAmount;
 	}
 
 	public String getVoucherAvailableTime() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ka基础信息维护
  *
  * @author auto create
- * @since 1.0, 2017-07-28 10:37:11
+ * @since 1.0, 2018-06-25 14:48:00
  */
 public class AlipayEcoRenthouseKaBaseinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5511524472274927779L;
+	private static final long serialVersionUID = 2727778856763668164L;
 
 	/**
 	 * 返回kaCode唯一标识,如果有该值则表示更新信息(新增的时候kaCode字段不是必填的,修改的时候必填)

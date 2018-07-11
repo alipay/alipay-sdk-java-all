@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑凭证码核销
  *
  * @author auto create
- * @since 1.0, 2018-04-27 22:32:51
+ * @since 1.0, 2018-06-15 14:43:50
  */
 public class KoubeiTradeTicketTicketcodeUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3451522498962915894L;
+	private static final long serialVersionUID = 6311954661915814198L;
 
 	/**
-	 * INTERNAL_CODE(券码),EXTERNAL_CODE(外部券码),默认INTERNAL_CODE
+	 * 凭证码类型,INTERNAL_CODE(内部凭证码),EXTERNAL_CODE(外部凭证码),默认INTERNAL_CODE,外部券场景必填
 	 */
 	@ApiField("code_type")
 	private String codeType;
@@ -28,13 +28,13 @@ public class KoubeiTradeTicketTicketcodeUseModel extends AlipayObject {
 	private Date gmtBiz;
 
 	/**
-	 * 口碑订单号，使用外部券码取消时必填
+	 * 口碑订单号，使用外部凭证码核销时必填
 	 */
 	@ApiField("order_no")
 	private String orderNo;
 
 	/**
-	 * 核销份数，目前仅次卡业务使用
+	 * 核销份数，次卡业务必填;非次卡业务不能填写
 	 */
 	@ApiField("quantity")
 	private String quantity;
@@ -52,13 +52,13 @@ public class KoubeiTradeTicketTicketcodeUseModel extends AlipayObject {
 	private String shopId;
 
 	/**
-	 * INTERNAL_SHOP(内部店铺id),EXTERNAL_SHOP(外部店铺id),默认INTERNAL_SHOP
+	 * 门店id类型,INTERNAL_SHOP(内部店铺id),EXTERNAL_SHOP(外部店铺id),默认INTERNAL_SHOP
 	 */
 	@ApiField("shop_type")
 	private String shopType;
 
 	/**
-	 * 券码，包括内部券码和外部券码，内部券码为12位，纯数字，且唯一不重复
+	 * 凭证码，包括内部凭证码和外部凭证码，内部凭证码为12位，纯数字，且唯一不重复
 	 */
 	@ApiField("ticket_code")
 	private String ticketCode;

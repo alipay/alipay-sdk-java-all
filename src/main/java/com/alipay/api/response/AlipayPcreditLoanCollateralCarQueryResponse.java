@@ -8,11 +8,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.collateral.car.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-19 15:51:52
+ * @since 1.0, 2018-05-03 21:05:00
  */
 public class AlipayPcreditLoanCollateralCarQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6838652344431522894L;
+	private static final long serialVersionUID = 6832495381126391766L;
+
+	/** 
+	 * 用户常住地，参考标准的行政区域编号（http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/），如：
+330100表示杭州市
+	 */
+	@ApiField("address")
+	private String address;
 
 	/** 
 	 * 业务流水号，即用户授信申请的单号，每次授信申请由借呗平台生成的唯一编号，通知估值时给到机构
@@ -109,6 +116,13 @@ IDENTITY_CARD-身份证
 	 */
 	@ApiField("name")
 	private String name;
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getAddress( ) {
+		return this.address;
+	}
 
 	public void setApplyNo(String applyNo) {
 		this.applyNo = applyNo;

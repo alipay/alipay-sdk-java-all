@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑仓库的商品信息查询
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:30:02
+ * @since 1.0, 2018-06-05 10:56:10
  */
 public class KoubeiRetailWmsGoodsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1584315439151396464L;
+	private static final long serialVersionUID = 5271165778455338913L;
 
 	/**
 	 * 根据状态查询货品
@@ -56,6 +56,12 @@ INVALID ：无效
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 生产厂商ID
+	 */
+	@ApiField("producer_id")
+	private String producerId;
 
 	/**
 	 * 供应商ID
@@ -110,6 +116,13 @@ INVALID ：无效
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getProducerId() {
+		return this.producerId;
+	}
+	public void setProducerId(String producerId) {
+		this.producerId = producerId;
 	}
 
 	public String getSupplierId() {

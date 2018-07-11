@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.group.crowd.query request
  * 
  * @author auto create
- * @since 1.0, 2017-11-10 15:32:41
+ * @since 1.0, 2018-05-11 19:06:43
  */
 public class AlipayOpenPublicGroupCrowdQueryRequest implements AlipayRequest<AlipayOpenPublicGroupCrowdQueryResponse> {
 

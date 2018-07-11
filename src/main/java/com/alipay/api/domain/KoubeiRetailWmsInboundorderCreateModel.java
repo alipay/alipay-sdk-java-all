@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建入库通知单
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:33:41
+ * @since 1.0, 2018-06-01 17:19:34
  */
 public class KoubeiRetailWmsInboundorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1872373917227985954L;
+	private static final long serialVersionUID = 2199823369458864772L;
 
 	/**
 	 * 入库通知单主体

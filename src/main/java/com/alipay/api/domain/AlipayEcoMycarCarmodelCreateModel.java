@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新增车型信息接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:49
+ * @since 1.0, 2018-06-25 14:52:34
  */
 public class AlipayEcoMycarCarmodelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4796994979529776892L;
+	private static final long serialVersionUID = 6883453361215497271L;
 
 	/**
 	 * 新增车型数据类型，接口通过此参数判断本次请求是增加品牌信息还是车型信息等，brand（品牌），company（厂商），serie（车系），model（车型）

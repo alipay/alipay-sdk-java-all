@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑操作员角色新增或者修改
  *
  * @author auto create
- * @since 1.0, 2018-03-23 13:07:38
+ * @since 1.0, 2018-05-30 15:42:52
  */
 public class KoubeiMerchantOperatorRoleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1571615319133188556L;
+	private static final long serialVersionUID = 8875661269214122986L;
 
 	/**
 	 * 操作员ID

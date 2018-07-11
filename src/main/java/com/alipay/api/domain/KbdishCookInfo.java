@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜谱模型
  *
  * @author auto create
- * @since 1.0, 2018-03-20 16:49:07
+ * @since 1.0, 2018-05-08 15:09:42
  */
 public class KbdishCookInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5269551293376894478L;
+	private static final long serialVersionUID = 7527423272438716675L;
 
 	/**
 	 * 区域

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.title.dynamic.get response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-15 20:22:29
+ * @since 1.0, 2018-07-02 10:30:28
  */
 public class AlipayEbppInvoiceTitleDynamicGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7289971513658223717L;
+	private static final long serialVersionUID = 7394384934848839611L;
 
 	/** 
 	 * 发票抬头

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社区物业平台待修改的物业费账单数据集合
  *
  * @author auto create
- * @since 1.0, 2017-01-18 16:45:48
+ * @since 1.0, 2018-06-09 20:15:11
  */
 public class CPBillModifySet extends AlipayObject {
 
-	private static final long serialVersionUID = 2692451591579447367L;
+	private static final long serialVersionUID = 7663291147864871988L;
 
 	/**
 	 * 若账期需修改，则传入。账期用于缴费明细页归类和展示，可以使用不超过16个字符的有业务含义的字符串。

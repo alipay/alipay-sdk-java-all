@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * “蚁盾”智能IP检测服务（定向接口）
  *
  * @author auto create
- * @since 1.0, 2017-12-12 10:00:41
+ * @since 1.0, 2018-06-08 14:07:36
  */
 public class AlipaySecurityRiskDirectionalIpprofileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8879565658134859815L;
+	private static final long serialVersionUID = 2397278234256365199L;
 
 	/**
 	 * 身份证号码，非必填参数，用于查询"身份证持有人使用当前IP的概率"属性

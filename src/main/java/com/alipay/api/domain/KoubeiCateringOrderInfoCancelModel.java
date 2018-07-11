@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 餐饮pos业务订单关闭
  *
  * @author auto create
- * @since 1.0, 2018-03-23 13:40:54
+ * @since 1.0, 2018-05-28 13:30:27
  */
 public class KoubeiCateringOrderInfoCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4124451557243632626L;
+	private static final long serialVersionUID = 2462828646221668226L;
 
 	/**
 	 * 关单时间,格式yyyy-mm-dd

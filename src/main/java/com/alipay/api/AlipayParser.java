@@ -37,14 +37,14 @@ public interface AlipayParser<T extends AlipayResponse> {
      * @param request
      * @param body
      * @param format
+     * @param decryptor
      * @param encryptType
-     * @param encryptKey
      * @param charset
      * @return
      * @throws AlipayApiException
      */
-    public String encryptSourceData(AlipayRequest<?> request, String body, String format,
-                                    String encryptType, String encryptKey, String charset)
+    public String decryptSourceData(AlipayRequest<?> request, String body, String format,
+                                    Decryptor decryptor, String encryptType, String charset)
                                                                                           throws AlipayApiException;
 
 }

@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-27 19:30:00
+ * @since 1.0, 2018-07-02 13:58:14
  */
 public class KoubeiCateringOrderInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4759824783959978864L;
+	private static final long serialVersionUID = 2384463393927689932L;
 
 	/** 
 	 * 应收金额，以元为单位，精确到分
@@ -59,7 +59,7 @@ TO_GO("TO_GO", "外带"),
 	private List<KbPosOrderDishDetail> dishDetails;
 
 	/** 
-	 * 扩展信息，使用Map<String,String> extInfo = JSONObject.parseObject(ext_info,Map.class)转换
+	 * 扩展信息，使用Map<String,String> extInfo = JSONObject.parseObject(ext_info,Map.class)转换，包含核销模式(key为settleMode，value为RECEIPT接单打款/VERIFY核销打款)
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
@@ -162,7 +162,7 @@ TO_GO("TO_GO", "外带"),
 	private String takeNo;
 
 	/** 
-	 * 取餐类型：TABLE-桌号，NO-取餐号
+	 * 取餐类型：TABLE-桌号，NO-取餐号，NO_BOOK-取餐号（预约）
 	 */
 	@ApiField("take_style")
 	private String takeStyle;

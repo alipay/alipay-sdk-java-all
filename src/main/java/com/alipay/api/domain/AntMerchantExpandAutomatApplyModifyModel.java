@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户自助设备信息修改
  *
  * @author auto create
- * @since 1.0, 2018-02-02 11:02:18
+ * @since 1.0, 2018-06-22 15:45:57
  */
 public class AntMerchantExpandAutomatApplyModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1479721245733129498L;
+	private static final long serialVersionUID = 1562692196459561465L;
 
 	/**
 	 * 机具发货地址信息
@@ -62,6 +62,12 @@ public class AntMerchantExpandAutomatApplyModifyModel extends AlipayObject {
 	 */
 	@ApiField("point_position")
 	private SmartAddressInfo pointPosition;
+
+	/**
+	 * 自助售卖机场景信息
+	 */
+	@ApiField("scene")
+	private SmartAutomatScene scene;
 
 	/**
 	 * 机具终端ID，由开发者生成，并需保证在开发者端不重复
@@ -123,6 +129,13 @@ public class AntMerchantExpandAutomatApplyModifyModel extends AlipayObject {
 	}
 	public void setPointPosition(SmartAddressInfo pointPosition) {
 		this.pointPosition = pointPosition;
+	}
+
+	public SmartAutomatScene getScene() {
+		return this.scene;
+	}
+	public void setScene(SmartAutomatScene scene) {
+		this.scene = scene;
 	}
 
 	public String getTerminalId() {

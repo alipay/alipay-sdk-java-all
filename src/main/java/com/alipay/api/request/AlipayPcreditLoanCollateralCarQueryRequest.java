@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.collateral.car.query request
  * 
  * @author auto create
- * @since 1.0, 2018-01-19 15:51:52
+ * @since 1.0, 2018-05-03 21:05:00
  */
 public class AlipayPcreditLoanCollateralCarQueryRequest implements AlipayRequest<AlipayPcreditLoanCollateralCarQueryResponse> {
 

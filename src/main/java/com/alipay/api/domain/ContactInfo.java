@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 联系人信息
  *
  * @author auto create
- * @since 1.0, 2018-02-26 15:27:53
+ * @since 1.0, 2018-06-05 19:28:19
  */
 public class ContactInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1455785741382645263L;
+	private static final long serialVersionUID = 7742687915229143116L;
 
 	/**
 	 * 电子邮箱
@@ -29,7 +29,7 @@ public class ContactInfo extends AlipayObject {
 	private String idCardNo;
 
 	/**
-	 * 手机号
+	 * 手机号。必填与否参见外层对象描述，无特别说明认为是非必填
 	 */
 	@ApiField("mobile")
 	private String mobile;

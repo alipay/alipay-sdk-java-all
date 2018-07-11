@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料配送指令对象, 包括物料配送的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 数量, 收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2018-02-08 14:12:22
+ * @since 1.0, 2018-06-14 12:56:23
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4788391179664693699L;
+	private static final long serialVersionUID = 5348328335642253493L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -86,10 +86,29 @@ public class AssetDeliveryItem extends AlipayObject {
 	private String memo;
 
 	/**
+	 * 1. 如果该物料是套组的子物料, 那么该值为套组物料id;
+2, 其他情况和物料id(即, item_id)一致或者为空.
+	 */
+	@ApiField("parent_item_id")
+	private String parentItemId;
+
+	/**
 	 * 面单信息
 	 */
 	@ApiField("print_data")
 	private String printData;
+
+	/**
+	 * 生产调拨对应的生产指令.
+	 */
+	@ApiField("produce_order_item_id")
+	private String produceOrderItemId;
+
+	/**
+	 * TO_CUSTOMER : 到客户的配送指令; INTERIM : 中转配送指令. 可选值详见openApi文档.
+	 */
+	@ApiField("record_type")
+	private String recordType;
 
 	/**
 	 * 对应供应商pid
@@ -193,11 +212,32 @@ public class AssetDeliveryItem extends AlipayObject {
 		this.memo = memo;
 	}
 
+	public String getParentItemId() {
+		return this.parentItemId;
+	}
+	public void setParentItemId(String parentItemId) {
+		this.parentItemId = parentItemId;
+	}
+
 	public String getPrintData() {
 		return this.printData;
 	}
 	public void setPrintData(String printData) {
 		this.printData = printData;
+	}
+
+	public String getProduceOrderItemId() {
+		return this.produceOrderItemId;
+	}
+	public void setProduceOrderItemId(String produceOrderItemId) {
+		this.produceOrderItemId = produceOrderItemId;
+	}
+
+	public String getRecordType() {
+		return this.recordType;
+	}
+	public void setRecordType(String recordType) {
+		this.recordType = recordType;
 	}
 
 	public String getSupplierId() {

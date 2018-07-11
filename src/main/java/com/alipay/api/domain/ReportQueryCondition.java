@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报表查询条件
  *
  * @author auto create
- * @since 1.0, 2018-01-12 11:03:38
+ * @since 1.0, 2018-05-03 09:41:08
  */
 public class ReportQueryCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 7763873556521526549L;
+	private static final long serialVersionUID = 3471452816687478464L;
 
 	/**
 	 * 字段名称

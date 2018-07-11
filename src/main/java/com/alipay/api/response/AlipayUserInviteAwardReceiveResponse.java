@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.invite.award.receive response.
  * 
  * @author auto create
- * @since 1.0, 2018-02-08 16:07:49
+ * @since 1.0, 2018-06-19 16:31:34
  */
 public class AlipayUserInviteAwardReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1836623671776417357L;
+	private static final long serialVersionUID = 2713552427634117433L;
 
 	/** 
 	 * 支付宝老用户手机号绑定的脱敏后的账户名 ，多个账号用英文","分割

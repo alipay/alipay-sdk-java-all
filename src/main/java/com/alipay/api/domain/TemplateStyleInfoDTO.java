@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡模板样式信息
  *
  * @author auto create
- * @since 1.0, 2018-03-26 18:55:13
+ * @since 1.0, 2018-05-04 15:36:49
  */
 public class TemplateStyleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1762286263564989466L;
+	private static final long serialVersionUID = 2329849364373222336L;
 
 	/**
 	 * 背景图片Id，通过接口（alipay.offline.material.image.upload）上传图片

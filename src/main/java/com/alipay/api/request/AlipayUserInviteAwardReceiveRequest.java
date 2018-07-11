@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.invite.award.receive request
  * 
  * @author auto create
- * @since 1.0, 2018-02-08 16:07:49
+ * @since 1.0, 2018-06-19 16:31:34
  */
 public class AlipayUserInviteAwardReceiveRequest implements AlipayRequest<AlipayUserInviteAwardReceiveResponse> {
 

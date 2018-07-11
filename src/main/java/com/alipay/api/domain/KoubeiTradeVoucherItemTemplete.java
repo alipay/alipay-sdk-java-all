@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑商品交易凭证模板
  *
  * @author auto create
- * @since 1.0, 2018-03-09 00:23:41
+ * @since 1.0, 2018-06-15 08:34:59
  */
 public class KoubeiTradeVoucherItemTemplete extends AlipayObject {
 
-	private static final long serialVersionUID = 3711611496218312743L;
+	private static final long serialVersionUID = 5149153966884782915L;
+
+	/**
+	 * 商品可用时间段
+	 */
+	@ApiListField("available_time_info_list")
+	@ApiField("available_time_info")
+	private List<AvailableTimeInfo> availableTimeInfoList;
 
 	/**
 	 * 购买须知，列表类型，最多10项
@@ -28,6 +35,13 @@ public class KoubeiTradeVoucherItemTemplete extends AlipayObject {
 	 */
 	@ApiField("support_book")
 	private String supportBook;
+
+	/**
+	 * 不可用日期
+	 */
+	@ApiListField("un_available_time_info_list")
+	@ApiField("un_available_time_info")
+	private List<UnAvailableTimeInfo> unAvailableTimeInfoList;
 
 	/**
 	 * 购买有效期：商品自购买起多长时间内有效，取值范围 7-360，单位天。举例，如果是7的话，是到第七天晚上23:59:59失效。商品购买后，没有在有效期内核销，则自动退款给用户。举例：买了一个高级造型师洗剪吹的商品，有效期一个月，如果一个月之后，用户没有使用商品来进行洗剪吹的服务，则自动退款给用户。
@@ -68,6 +82,13 @@ public class KoubeiTradeVoucherItemTemplete extends AlipayObject {
 	@ApiField("verify_frequency")
 	private String verifyFrequency;
 
+	public List<AvailableTimeInfo> getAvailableTimeInfoList() {
+		return this.availableTimeInfoList;
+	}
+	public void setAvailableTimeInfoList(List<AvailableTimeInfo> availableTimeInfoList) {
+		this.availableTimeInfoList = availableTimeInfoList;
+	}
+
 	public List<KoubeiItemDescription> getBuyerNotes() {
 		return this.buyerNotes;
 	}
@@ -80,6 +101,13 @@ public class KoubeiTradeVoucherItemTemplete extends AlipayObject {
 	}
 	public void setSupportBook(String supportBook) {
 		this.supportBook = supportBook;
+	}
+
+	public List<UnAvailableTimeInfo> getUnAvailableTimeInfoList() {
+		return this.unAvailableTimeInfoList;
+	}
+	public void setUnAvailableTimeInfoList(List<UnAvailableTimeInfo> unAvailableTimeInfoList) {
+		this.unAvailableTimeInfoList = unAvailableTimeInfoList;
 	}
 
 	public String getValidityPeriod() {

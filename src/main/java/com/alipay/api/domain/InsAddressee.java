@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单邮寄地址
  *
  * @author auto create
- * @since 1.0, 2016-11-14 13:50:08
+ * @since 1.0, 2018-06-28 20:24:40
  */
 public class InsAddressee extends AlipayObject {
 
-	private static final long serialVersionUID = 1795823445152417578L;
+	private static final long serialVersionUID = 7748327225348612967L;
 
 	/**
 	 * 收件人详细地址
@@ -36,6 +36,12 @@ public class InsAddressee extends AlipayObject {
 	 */
 	@ApiField("city")
 	private String city;
+
+	/**
+	 * 邮箱
+	 */
+	@ApiField("email")
+	private String email;
 
 	/**
 	 * 联系方式(mobile登录号)
@@ -93,6 +99,13 @@ public class InsAddressee extends AlipayObject {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getMobile() {

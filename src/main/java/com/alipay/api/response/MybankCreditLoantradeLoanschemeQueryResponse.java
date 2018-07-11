@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.loanscheme.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-02-08 15:09:01
+ * @since 1.0, 2018-06-13 11:20:00
  */
 public class MybankCreditLoantradeLoanschemeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1139481788997211622L;
+	private static final long serialVersionUID = 6674398786821254969L;
 
 	/** 
 	 * 收款账号
@@ -26,6 +26,12 @@ public class MybankCreditLoantradeLoanschemeQueryResponse extends AlipayResponse
 	@ApiListField("account_vo")
 	@ApiField("my_bk_account_v_o")
 	private List<MyBkAccountVO> accountVo;
+
+	/** 
+	 * 警戒额度，单位元
+	 */
+	@ApiField("alert_amt")
+	private String alertAmt;
 
 	/** 
 	 * 费用列表
@@ -106,11 +112,24 @@ public class MybankCreditLoantradeLoanschemeQueryResponse extends AlipayResponse
 	@ApiField("sale_pd_code")
 	private String salePdCode;
 
+	/** 
+	 * 水位额度，单位元
+	 */
+	@ApiField("water_amt")
+	private String waterAmt;
+
 	public void setAccountVo(List<MyBkAccountVO> accountVo) {
 		this.accountVo = accountVo;
 	}
 	public List<MyBkAccountVO> getAccountVo( ) {
 		return this.accountVo;
+	}
+
+	public void setAlertAmt(String alertAmt) {
+		this.alertAmt = alertAmt;
+	}
+	public String getAlertAmt( ) {
+		return this.alertAmt;
 	}
 
 	public void setChargeInfoList(List<LoanChargeInfo> chargeInfoList) {
@@ -202,6 +221,13 @@ public class MybankCreditLoantradeLoanschemeQueryResponse extends AlipayResponse
 	}
 	public String getSalePdCode( ) {
 		return this.salePdCode;
+	}
+
+	public void setWaterAmt(String waterAmt) {
+		this.waterAmt = waterAmt;
+	}
+	public String getWaterAmt( ) {
+		return this.waterAmt;
 	}
 
 }

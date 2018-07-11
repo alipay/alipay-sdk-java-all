@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.kbcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-09-05 16:47:58
+ * @since 1.0, 2018-06-08 10:35:00
  */
 public class KoubeiCateringKbcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8253754149819516679L;
+	private static final long serialVersionUID = 2557242964686827741L;
 
 	/** 
 	 * 口碑码信息列表

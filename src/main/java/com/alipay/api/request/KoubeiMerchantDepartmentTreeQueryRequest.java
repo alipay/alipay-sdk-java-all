@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.department.tree.query request
  * 
  * @author auto create
- * @since 1.0, 2018-03-23 14:35:46
+ * @since 1.0, 2018-05-31 20:35:00
  */
 public class KoubeiMerchantDepartmentTreeQueryRequest implements AlipayRequest<KoubeiMerchantDepartmentTreeQueryResponse> {
 

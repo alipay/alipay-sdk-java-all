@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户分组修改接口
  *
  * @author auto create
- * @since 1.0, 2017-11-10 16:17:32
+ * @since 1.0, 2018-05-11 19:06:21
  */
 public class AlipayOpenPublicGroupModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4898296762735659682L;
+	private static final long serialVersionUID = 7724185163726193623L;
 
 	/**
 	 * 分组ID，整型值

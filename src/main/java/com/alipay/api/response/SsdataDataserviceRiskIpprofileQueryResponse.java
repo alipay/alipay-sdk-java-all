@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.ipprofile.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-12-12 09:59:21
+ * @since 1.0, 2018-06-08 14:08:06
  */
 public class SsdataDataserviceRiskIpprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3428773492938289644L;
+	private static final long serialVersionUID = 1142173459424546561L;
 
 	/** 
 	 * IP上用户活跃度分值（分值越高活跃度越高）

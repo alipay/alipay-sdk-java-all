@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataFindataQxLinkQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2164646252247524747L;
+	private static final long serialVersionUID = 7167769113198111566L;
 
 	/** 
 	 * 系统生成的业务唯一标识，用于标识商户的一笔业务

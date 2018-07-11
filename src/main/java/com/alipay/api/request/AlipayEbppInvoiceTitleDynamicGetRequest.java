@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.title.dynamic.get request
  * 
  * @author auto create
- * @since 1.0, 2018-03-15 20:22:29
+ * @since 1.0, 2018-07-02 10:30:28
  */
 public class AlipayEbppInvoiceTitleDynamicGetRequest implements AlipayRequest<AlipayEbppInvoiceTitleDynamicGetResponse> {
 

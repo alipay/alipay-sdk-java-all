@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑仓库信息查询
  *
  * @author auto create
- * @since 1.0, 2018-04-20 18:48:00
+ * @since 1.0, 2018-06-05 10:59:17
  */
 public class KoubeiRetailWmsWarehouseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8484761274894285859L;
+	private static final long serialVersionUID = 1419577563643418451L;
 
 	/**
 	 * 城市编码，国标码，与归属人ID查询配合使用

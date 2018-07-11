@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 触发现金红包活动
  *
  * @author auto create
- * @since 1.0, 2017-11-17 12:12:37
+ * @since 1.0, 2018-05-10 22:53:50
  */
 public class AlipayMarketingCampaignCashTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1784561716443589978L;
+	private static final long serialVersionUID = 2664877785168713378L;
 
 	/**
 	 * 现金活动号
@@ -26,7 +26,7 @@ public class AlipayMarketingCampaignCashTriggerModel extends AlipayObject {
 	private String loginId;
 
 	/**
-	 * 发奖金额
+	 * 此字段如果传入金额，就忽略prize_type算法，按照传入的金额发奖。如果不传或者小于等于0，则按照活动创建时指定的prize_type为fixed或者random算法发奖
 	 */
 	@ApiField("order_price")
 	private String orderPrice;

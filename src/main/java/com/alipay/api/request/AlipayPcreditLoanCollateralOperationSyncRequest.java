@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.collateral.operation.sync request
  * 
  * @author auto create
- * @since 1.0, 2017-10-26 10:50:32
+ * @since 1.0, 2018-05-09 16:25:03
  */
 public class AlipayPcreditLoanCollateralOperationSyncRequest implements AlipayUploadRequest<AlipayPcreditLoanCollateralOperationSyncResponse> {
 

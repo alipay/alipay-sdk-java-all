@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.std.public.message.matcher.send request
  * 
  * @author auto create
- * @since 1.0, 2017-06-15 11:44:27
+ * @since 1.0, 2018-06-21 19:00:00
  */
 public class AlipayMobileStdPublicMessageMatcherSendRequest implements AlipayRequest<AlipayMobileStdPublicMessageMatcherSendResponse> {
 

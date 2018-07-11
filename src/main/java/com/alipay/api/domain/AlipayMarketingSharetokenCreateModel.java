@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝吱口令发放接口
  *
  * @author auto create
- * @since 1.0, 2017-03-03 21:08:21
+ * @since 1.0, 2018-06-14 11:34:21
  */
 public class AlipayMarketingSharetokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1882346899153247589L;
+	private static final long serialVersionUID = 4572177341367173452L;
 
 	/**
 	 * 业务标识，类似于业务主键，诸如pid、uid、门店id

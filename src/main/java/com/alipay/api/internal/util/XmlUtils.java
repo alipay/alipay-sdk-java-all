@@ -66,7 +66,10 @@ public final class XmlUtils {
         Document doc = null;
 
         try {
-            doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+            documentBuilderFactory.setExpandEntityReferences(false);
+            documentBuilderFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
+            doc = documentBuilderFactory.newDocumentBuilder().newDocument();
         } catch (ParserConfigurationException e) {
             throw new AlipayApiException(e);
         }
@@ -97,8 +100,10 @@ public final class XmlUtils {
         Document doc = null;
 
         try {
-            DocumentBuilder builder = DocumentBuilderFactory.newInstance()
-                    .newDocumentBuilder();
+            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+            documentBuilderFactory.setExpandEntityReferences(false);
+            documentBuilderFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
+            DocumentBuilder builder = documentBuilderFactory.newDocumentBuilder();
             doc = builder.parse(in);
         } catch (ParserConfigurationException e) {
             throw new AlipayApiException(e);

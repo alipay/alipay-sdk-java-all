@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 餐饮pos业务订单支付申请
  *
  * @author auto create
- * @since 1.0, 2018-04-04 16:38:16
+ * @since 1.0, 2018-05-28 13:29:45
  */
 public class KoubeiCateringOrderPayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6351948759457332236L;
+	private static final long serialVersionUID = 4687811881821398734L;
 
 	/**
 	 * 是否享受会员价。如果为 true,菜明细里面会按照会员 价(没有改价情况下)作为单 品价格咨询单品券优惠

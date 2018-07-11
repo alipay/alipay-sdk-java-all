@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-09-27 11:31:51
+ * @since 1.0, 2018-07-02 10:31:37
  */
 public class AlipayMarketingToolFengdieTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2569656827239992415L;
+	private static final long serialVersionUID = 8349519882697987185L;
 
 	/** 
 	 * 开发者开发上传的H5模板列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.ticketcode.use response.
  * 
  * @author auto create
- * @since 1.0, 2018-05-02 15:10:00
+ * @since 1.0, 2018-06-15 14:50:00
  */
 public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2285215665884533791L;
+	private static final long serialVersionUID = 5854363632346479144L;
 
 	/** 
 	 * 该字段用于描述本次返回中的业务属性，现有：BIZ_ALREADY_SUCCESS（幂等业务码）
@@ -63,7 +63,7 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	private String koubeiSubsidyAmount;
 
 	/** 
-	 * 券码所属的订单id
+	 * 凭证码所属的订单id
 	 */
 	@ApiField("order_no")
 	private String orderNo;
@@ -117,7 +117,7 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	private String useShopName;
 
 	/** 
-	 * 券码对应的凭证资产id
+	 * 凭证码对应的凭证资产id
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;

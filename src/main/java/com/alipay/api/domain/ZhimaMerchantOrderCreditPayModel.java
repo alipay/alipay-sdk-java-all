@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用支付
  *
  * @author auto create
- * @since 1.0, 2018-01-17 10:37:06
+ * @since 1.0, 2018-06-22 14:08:20
  */
 public class ZhimaMerchantOrderCreditPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6791698387862643523L;
+	private static final long serialVersionUID = 1593624199569588814L;
 
 	/**
-	 * 订单操作类型，包括取消(CANCEL)、完结(FINISH)
+	 * CANCEL，FINISH, INSTALLMENT  订单完结类型，目前包括取消(CANCEL)、完结(FINISH) 分期扣款(INSTALLMENT)
 	 */
 	@ApiField("order_operate_type")
 	private String orderOperateType;

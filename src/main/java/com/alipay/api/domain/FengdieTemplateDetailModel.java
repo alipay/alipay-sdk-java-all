@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 云凤蝶模板详情模式
  *
  * @author auto create
- * @since 1.0, 2018-02-02 11:00:20
+ * @since 1.0, 2018-05-17 16:00:59
  */
 public class FengdieTemplateDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3754435731693668326L;
+	private static final long serialVersionUID = 2346422989281931135L;
 
 	/**
 	 * 模板 id

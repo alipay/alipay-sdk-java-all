@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟卡信息同步
  *
  * @author auto create
- * @since 1.0, 2017-09-01 14:47:45
+ * @since 1.0, 2018-05-30 15:36:20
  */
 public class AlipayCommerceTransportOfflinepayVirtualcardSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1145924461621773652L;
+	private static final long serialVersionUID = 4862814695455489437L;
 
 	/**
 	 * 虚拟卡信息同步动作
@@ -73,6 +73,14 @@ CARD_OVERDUE ---- 欠费，CARD_REVOKING ---- 退卡中
 	 */
 	@ApiField("last_update_time")
 	private String lastUpdateTime;
+
+	/**
+	 * 交易场景，标示卡当前的支付模式，如为空，则默认PCREDIT。
+PCREDIT ---- 先享后付
+EXTRA_PREPAY ---- 域外储值卡
+	 */
+	@ApiField("trade_scene")
+	private String tradeScene;
 
 	/**
 	 * 支付宝用户id
@@ -148,6 +156,13 @@ CARD_OVERDUE ---- 欠费，CARD_REVOKING ---- 退卡中
 	}
 	public void setLastUpdateTime(String lastUpdateTime) {
 		this.lastUpdateTime = lastUpdateTime;
+	}
+
+	public String getTradeScene() {
+		return this.tradeScene;
+	}
+	public void setTradeScene(String tradeScene) {
+		this.tradeScene = tradeScene;
 	}
 
 	public String getUserId() {

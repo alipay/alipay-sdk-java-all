@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.renthouse.renter.idinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2018-03-27 15:38:59
+ * @since 1.0, 2018-06-25 14:49:18
  */
 public class AlipayEcoRenthouseRenterIdinfoQueryRequest implements AlipayRequest<AlipayEcoRenthouseRenterIdinfoQueryResponse> {
 

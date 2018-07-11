@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.operator.freeze request
  * 
  * @author auto create
- * @since 1.0, 2018-03-23 14:58:36
+ * @since 1.0, 2018-05-30 15:42:08
  */
 public class KoubeiMerchantOperatorFreezeRequest implements AlipayRequest<KoubeiMerchantOperatorFreezeResponse> {
 

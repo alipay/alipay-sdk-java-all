@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.renthouse.ka.baseinfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2017-07-28 10:37:12
+ * @since 1.0, 2018-06-25 14:48:00
  */
 public class AlipayEcoRenthouseKaBaseinfoSyncRequest implements AlipayRequest<AlipayEcoRenthouseKaBaseinfoSyncResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.auto.fraud.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-12 16:05:00
+ * @since 1.0, 2018-05-25 11:05:00
  */
 public class AlipayInsDataAutoFraudQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7762661457659789713L;
+	private static final long serialVersionUID = 2637789647445685915L;
 
 	/** 
 	 * 案件欺诈名单类型：

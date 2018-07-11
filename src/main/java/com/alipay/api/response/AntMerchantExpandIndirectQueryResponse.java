@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-30 11:35:00
+ * @since 1.0, 2018-07-06 17:50:00
  */
 public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7814584396482595919L;
+	private static final long serialVersionUID = 4429568954646339442L;
 
 	/** 
 	 * 商户地址信息
@@ -52,7 +52,7 @@ public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 	private String businessLicenseType;
 
 	/** 
-	 * 商户经营类目，参考文档：https://doc.open.alipay.com/doc2/detail?&docType=1&articleId=105444
+	 * 商户经营类目，参考文档：https://doc.open.alipay.com/doc2/detail?&docType=1&articleId=105444。
 	 */
 	@ApiField("category_id")
 	private String categoryId;
@@ -84,6 +84,12 @@ public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 	private List<String> logonId;
 
 	/** 
+	 * 标准商户类别码，例如5976表示“专业销售-药品医疗-康复和身体辅助用品”。银联、网联进件的商户有该值。
+	 */
+	@ApiField("mcc")
+	private String mcc;
+
+	/** 
 	 * 商户备注信息，可填写额外信息
 	 */
 	@ApiField("memo")
@@ -94,6 +100,12 @@ public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/** 
+	 * 收单机构(例如银行）在支付宝的pid。银联、网联进件的商户有该值。
+	 */
+	@ApiField("org_pid")
+	private String orgPid;
 
 	/** 
 	 * 受理商户的固定二维码链接地址（即一码多付页面地址，用于后续支付宝营销活动）
@@ -111,7 +123,7 @@ public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 	private String servicePhone;
 
 	/** 
-	 * 商户来源机构标识，填写机构在支付宝的pid
+	 * 间连受理商户的推荐组织。如果是银行自有商户入驻，则推荐组织为银行，如果是ISV推广的商户，那么商户推荐组织为ISV，如果是第三方支付机构的自有商户，则推荐组织为第三方支付机构。
 	 */
 	@ApiField("source")
 	private String source;
@@ -192,6 +204,13 @@ public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 		return this.logonId;
 	}
 
+	public void setMcc(String mcc) {
+		this.mcc = mcc;
+	}
+	public String getMcc( ) {
+		return this.mcc;
+	}
+
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
@@ -204,6 +223,13 @@ public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 	}
 	public String getName( ) {
 		return this.name;
+	}
+
+	public void setOrgPid(String orgPid) {
+		this.orgPid = orgPid;
+	}
+	public String getOrgPid( ) {
+		return this.orgPid;
 	}
 
 	public void setPayCodeInfo(List<String> payCodeInfo) {

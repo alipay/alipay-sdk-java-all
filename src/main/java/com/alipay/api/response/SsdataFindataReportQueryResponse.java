@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataFindataReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1869281886619285497L;
+	private static final long serialVersionUID = 4656368526979495741L;
 
 	/** 
 	 * 查询的报告

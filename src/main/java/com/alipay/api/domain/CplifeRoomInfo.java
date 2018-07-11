@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业社区平台小区房屋信息
  *
  * @author auto create
- * @since 1.0, 2016-11-18 16:09:00
+ * @since 1.0, 2018-06-09 20:16:50
  */
 public class CplifeRoomInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2684757446867571771L;
+	private static final long serialVersionUID = 3524963415964251195L;
 
 	/**
 	 * 房间的完整门牌地址

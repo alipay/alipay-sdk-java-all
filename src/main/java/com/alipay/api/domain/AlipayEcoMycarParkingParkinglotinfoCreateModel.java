@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车生活停车平台录入停车场信息
  *
  * @author auto create
- * @since 1.0, 2018-01-25 08:38:17
+ * @since 1.0, 2018-06-28 10:28:44
  */
 public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5635375668148262447L;
+	private static final long serialVersionUID = 3868973513919985866L;
+
+	/**
+	 * 服务商ID（2088开头的16位纯数字），由服务商提供给ISV
+	 */
+	@ApiField("agent_id")
+	private String agentId;
 
 	/**
 	 * 该参数废弃
@@ -98,7 +104,7 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 	private String parkingFeeDescription;
 
 	/**
-	 * 停车场类型，1为小区停车场、2为商圈停车场、3为路面停车场、4为园区停车场、5为写字楼停车场、6为私人停车场
+	 * 停车场类型，1为居民小区、2为商圈停车场（购物中心商业广场商场等）、3为路侧停车、4为公园景点（景点乐园公园老街古镇等）、5为商务楼宇（酒店写字楼商务楼园区等）、6为其他、7为交通枢纽（机场火车站汽车站码头港口等）、8为市政设施（体育场博物图书馆医院学校等）
 	 */
 	@ApiField("parking_lot_type")
 	private String parkingLotType;
@@ -162,6 +168,13 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 	 */
 	@ApiField("time_out")
 	private String timeOut;
+
+	public String getAgentId() {
+		return this.agentId;
+	}
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
+	}
 
 	public String getCityId() {
 		return this.cityId;

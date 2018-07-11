@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.sharetoken.create request
  * 
  * @author auto create
- * @since 1.0, 2017-03-03 21:08:21
+ * @since 1.0, 2018-06-14 11:34:21
  */
 public class AlipayMarketingSharetokenCreateRequest implements AlipayRequest<AlipayMarketingSharetokenCreateResponse> {
 

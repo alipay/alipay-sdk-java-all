@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安全策略确认服务输出
  *
  * @author auto create
- * @since 1.0, 2017-09-12 14:11:27
+ * @since 1.0, 2018-05-10 14:28:05
  */
 public class AlipaySecurityRiskPolicyConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6235459281361471611L;
+	private static final long serialVersionUID = 7638178815547699757L;
 
 	/**
 	 * 二次确认参数，防止篡改

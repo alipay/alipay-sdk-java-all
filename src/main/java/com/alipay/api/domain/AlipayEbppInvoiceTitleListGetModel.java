@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁电子发票平台用户发票抬头列表获取
  *
  * @author auto create
- * @since 1.0, 2018-03-15 20:20:05
+ * @since 1.0, 2018-07-02 10:28:56
  */
 public class AlipayEbppInvoiceTitleListGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4872568249774684432L;
+	private static final long serialVersionUID = 2244321353757294981L;
 
 	/**
 	 * 支付宝用户id

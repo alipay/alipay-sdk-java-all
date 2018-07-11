@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发布物业通知公告
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:39
+ * @since 1.0, 2018-06-09 20:18:37
  */
 public class AlipayEcoCplifeNoticePublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1472976327772359184L;
+	private static final long serialVersionUID = 8888929241581181781L;
 
 	/**
 	 * 待发布通知的目标物业小区ID列表，使用支付宝平台统一的小区ID编码。

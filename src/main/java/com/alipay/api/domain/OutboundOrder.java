@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出库通知单
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:39:41
+ * @since 1.0, 2018-06-01 17:19:09
  */
 public class OutboundOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1799316125996939619L;
+	private static final long serialVersionUID = 6835438647575956591L;
 
 	/**
 	 * 扩展字段，json格式
@@ -44,7 +44,7 @@ public class OutboundOrder extends AlipayObject {
 	private String remark;
 
 	/**
-	 * 发货人信息（商家采购必传，其他订单类型非必须传）
+	 * 发货人信息
 	 */
 	@ApiField("sender_info_vo")
 	private SenderInfoVO senderInfoVo;

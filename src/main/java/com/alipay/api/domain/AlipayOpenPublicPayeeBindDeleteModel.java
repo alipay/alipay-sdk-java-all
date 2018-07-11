@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicPayeeBindDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5416252669516493924L;
+	private static final long serialVersionUID = 4181917681641185473L;
 
 	/**
 	 * 收款账号，需要解除绑定的收款支付宝账号，跟pid不要同时传

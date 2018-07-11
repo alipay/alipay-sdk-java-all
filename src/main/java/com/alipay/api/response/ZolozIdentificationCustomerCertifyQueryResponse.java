@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.customer.certify.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-09-04 11:18:44
+ * @since 1.0, 2018-07-06 21:20:00
  */
 public class ZolozIdentificationCustomerCertifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5197335654135939353L;
+	private static final long serialVersionUID = 4617474736431341679L;
+
+	/** 
+	 * 是否为攻击
+	 */
+	@ApiField("attack")
+	private Boolean attack;
 
 	/** 
 	 * 业务单据号，用于核对和排查
@@ -26,6 +32,19 @@ public class ZolozIdentificationCustomerCertifyQueryResponse extends AlipayRespo
 	@ApiField("img_str")
 	private String imgStr;
 
+	/** 
+	 * 比对结果
+	 */
+	@ApiField("result")
+	private Boolean result;
+
+	public void setAttack(Boolean attack) {
+		this.attack = attack;
+	}
+	public Boolean getAttack( ) {
+		return this.attack;
+	}
+
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
@@ -38,6 +57,13 @@ public class ZolozIdentificationCustomerCertifyQueryResponse extends AlipayRespo
 	}
 	public String getImgStr( ) {
 		return this.imgStr;
+	}
+
+	public void setResult(Boolean result) {
+		this.result = result;
+	}
+	public Boolean getResult( ) {
+		return this.result;
 	}
 
 }

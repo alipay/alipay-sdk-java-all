@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料生产指令对象, 包括物料生产的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 物料图片Url, 数量,  申请日期,收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2017-11-02 20:59:35
+ * @since 1.0, 2018-06-14 12:55:54
  */
 public class AssetProduceItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1524442819929718712L;
+	private static final long serialVersionUID = 5796962628591192228L;
 
 	/**
 	 * 申请日期，格式yyyy-MM-dd HH：mm:ss
@@ -105,10 +105,22 @@ public class AssetProduceItem extends AlipayObject {
 	private String memo;
 
 	/**
+	 * 1. 如果该物料是套组的子物料, 那么该值为套组物料id; 2, 其他情况和物料id(即, item_id)一致或者为空.
+	 */
+	@ApiField("parent_template_id")
+	private String parentTemplateId;
+
+	/**
 	 * 收件人地址邮编; 收钱码吊牌和贴纸类型不为空
 	 */
 	@ApiField("postcode")
 	private String postcode;
+
+	/**
+	 * 面单打印信息
+	 */
+	@ApiField("print_data")
+	private String printData;
 
 	/**
 	 * 生产单号
@@ -263,11 +275,25 @@ public class AssetProduceItem extends AlipayObject {
 		this.memo = memo;
 	}
 
+	public String getParentTemplateId() {
+		return this.parentTemplateId;
+	}
+	public void setParentTemplateId(String parentTemplateId) {
+		this.parentTemplateId = parentTemplateId;
+	}
+
 	public String getPostcode() {
 		return this.postcode;
 	}
 	public void setPostcode(String postcode) {
 		this.postcode = postcode;
+	}
+
+	public String getPrintData() {
+		return this.printData;
+	}
+	public void setPrintData(String printData) {
+		this.printData = printData;
 	}
 
 	public String getProduceOrder() {

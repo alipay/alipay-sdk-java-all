@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.fuelling.shop.create request
  * 
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:01
+ * @since 1.0, 2018-06-25 14:51:10
  */
 public class AlipayEcoMycarFuellingShopCreateRequest implements AlipayRequest<AlipayEcoMycarFuellingShopCreateResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收件人信息
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:39:41
+ * @since 1.0, 2018-06-01 17:19:09
  */
 public class ReceiverInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8535841758219399269L;
+	private static final long serialVersionUID = 2225324515257348271L;
 
 	/**
 	 * 区域
@@ -20,7 +20,7 @@ public class ReceiverInfoVO extends AlipayObject {
 	private String area;
 
 	/**
-	 * 城市
+	 * 城市编码
 	 */
 	@ApiField("city")
 	private String city;
@@ -44,7 +44,7 @@ public class ReceiverInfoVO extends AlipayObject {
 	private String name;
 
 	/**
-	 * 省份
+	 * 省份编码
 	 */
 	@ApiField("province")
 	private String province;

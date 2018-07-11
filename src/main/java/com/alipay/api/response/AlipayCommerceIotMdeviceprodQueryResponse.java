@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.mdeviceprod.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-11 17:05:00
+ * @since 1.0, 2018-07-06 14:10:00
  */
 public class AlipayCommerceIotMdeviceprodQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7633179414181766312L;
+	private static final long serialVersionUID = 2787555465792668913L;
 
 	/** 
 	 * 设备激活时间
@@ -33,6 +33,12 @@ public class AlipayCommerceIotMdeviceprodQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("device_name")
 	private String deviceName;
+
+	/** 
+	 * 机具序列号
+	 */
+	@ApiField("device_sn")
+	private String deviceSn;
 
 	/** 
 	 * 机具图片信息
@@ -89,6 +95,13 @@ public class AlipayCommerceIotMdeviceprodQueryResponse extends AlipayResponse {
 	}
 	public String getDeviceName( ) {
 		return this.deviceName;
+	}
+
+	public void setDeviceSn(String deviceSn) {
+		this.deviceSn = deviceSn;
+	}
+	public String getDeviceSn( ) {
+		return this.deviceSn;
 	}
 
 	public void setImgUrl(String imgUrl) {

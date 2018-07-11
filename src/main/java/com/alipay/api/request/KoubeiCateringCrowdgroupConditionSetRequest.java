@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.crowdgroup.condition.set request
  * 
  * @author auto create
- * @since 1.0, 2018-04-04 15:20:00
+ * @since 1.0, 2018-06-22 14:29:19
  */
 public class KoubeiCateringCrowdgroupConditionSetRequest implements AlipayRequest<KoubeiCateringCrowdgroupConditionSetResponse> {
 

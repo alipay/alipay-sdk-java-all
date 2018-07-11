@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车型信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:45
+ * @since 1.0, 2018-06-25 14:52:28
  */
 public class AlipayEcoMycarCarmodelBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1478538762843242846L;
+	private static final long serialVersionUID = 8267568458613513571L;
 
 	/**
 	 * 支付宝车型库品牌编号（系统唯一）

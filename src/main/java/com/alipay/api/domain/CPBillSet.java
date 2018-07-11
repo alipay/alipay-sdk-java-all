@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社区物业平台物业费账单数据集合
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:37:38
+ * @since 1.0, 2018-06-09 20:14:19
  */
 public class CPBillSet extends AlipayObject {
 
-	private static final long serialVersionUID = 8162795938414197389L;
+	private static final long serialVersionUID = 7156229833864741278L;
 
 	/**
 	 * 明细条目所归属的账期，用于归类和向用户展示，具体参数值由物业系统自行定义，除参数最大长度外支付宝不做限定。

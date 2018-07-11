@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 异步单发消息
  *
  * @author auto create
- * @since 1.0, 2017-03-27 10:56:03
+ * @since 1.0, 2018-06-01 10:32:50
  */
 public class AlipayOpenPublicMessageCustomSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7352313348982766939L;
+	private static final long serialVersionUID = 5599588455637856893L;
 
 	/**
 	 * 图文消息，当msg_type为image-text时，必须存在相对应的值
@@ -28,6 +28,12 @@ public class AlipayOpenPublicMessageCustomSendModel extends AlipayObject {
 	 */
 	@ApiField("chat")
 	private String chat;
+
+	/**
+	 * 触发消息的事件类型，默认为空。代表商户未改造。如果是follow，代表关注消息。click代表菜单点击，enter_ppchat代表进入事件；请注意事件类型的大小写
+	 */
+	@ApiField("event_type")
+	private String eventType;
 
 	/**
 	 * 消息类型，text：文本消息，image-text：图文消息
@@ -59,6 +65,13 @@ public class AlipayOpenPublicMessageCustomSendModel extends AlipayObject {
 	}
 	public void setChat(String chat) {
 		this.chat = chat;
+	}
+
+	public String getEventType() {
+		return this.eventType;
+	}
+	public void setEventType(String eventType) {
+		this.eventType = eventType;
 	}
 
 	public String getMsgType() {

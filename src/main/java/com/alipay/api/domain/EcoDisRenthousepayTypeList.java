@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 付款方式列表，包括上述单独传递的付款方式。如果2种都传递，默认覆盖单独传递的付款方式。
  *
  * @author auto create
- * @since 1.0, 2018-03-27 15:36:47
+ * @since 1.0, 2018-06-25 14:48:52
  */
 public class EcoDisRenthousepayTypeList extends AlipayObject {
 
-	private static final long serialVersionUID = 3478665643847712853L;
+	private static final long serialVersionUID = 6784287913375584327L;
 
 	/**
 	 * 押金

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户修改
  *
  * @author auto create
- * @since 1.0, 2018-03-22 14:00:04
+ * @since 1.0, 2018-05-18 16:52:53
  */
 public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1281386737775732397L;
+	private static final long serialVersionUID = 8586589271626915978L;
 
 	/**
 	 * 商户别名
@@ -53,6 +53,12 @@ public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 	 */
 	@ApiField("external_id")
 	private String externalId;
+
+	/**
+	 * 开票资料信息
+	 */
+	@ApiField("invoice_info")
+	private MerchantInvoiceInfo invoiceInfo;
 
 	/**
 	 * 法人身份证反面url，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。本业务接口中，如果是特殊行业必填
@@ -190,6 +196,13 @@ public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 	}
 	public void setExternalId(String externalId) {
 		this.externalId = externalId;
+	}
+
+	public MerchantInvoiceInfo getInvoiceInfo() {
+		return this.invoiceInfo;
+	}
+	public void setInvoiceInfo(MerchantInvoiceInfo invoiceInfo) {
+		this.invoiceInfo = invoiceInfo;
 	}
 
 	public String getLegalCertBackImage() {

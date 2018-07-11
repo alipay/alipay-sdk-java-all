@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货品信息模型
  *
  * @author auto create
- * @since 1.0, 2018-04-20 18:47:39
+ * @since 1.0, 2018-05-30 14:49:13
  */
 public class GoodsVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8578338957857332739L;
+	private static final long serialVersionUID = 7622994597545467636L;
 
 	/**
 	 * 商品的附加描述,BOX_LONG:箱的长度(CM),BOX_WIDTH:箱的宽度(CM),BOX_HIGH:箱的高度(CM),BOX_WEIGHT:箱的重量(KG),BOX_LONG:货的长度(CM),BOX_WIDTH:货的宽度(CM),BOX_HIGH:货的高度(CM),BOX_WEIGHT:货的重量(KG),FORBIDDEN_RECEIVE_DAYS:禁收天数,FORBIDDEN_SALE_WEIGHT:禁售天数,EXPIRE_DAYS:到期天数,SPECIFICATION:规格,SPECIFICATION_DESC:规格描述,IMG_URL:图片地址,SALE_AREA:销售区域,ORIGIN_AREA:原产地,TARGET_AREA:发货地,PRODUCTION_PROCESSING:生产工艺,COMPOSITION:成分组成,SAFETY_NO:食品安全证号,USE_CONDITION:使用须知,STORAGE_TIME_TYPE:保质期类型
@@ -82,16 +82,34 @@ public class GoodsVO extends AlipayObject {
 	private String lastOperator;
 
 	/**
-	 * 商品的原始价格，单位元
+	 * 商品的原始价格（含税），单位元
 	 */
 	@ApiField("origin_price")
 	private String originPrice;
 
 	/**
-	 * 商品的现价，单位元
+	 * 商品的现价（含税），单位元
 	 */
 	@ApiField("price")
 	private String price;
+
+	/**
+	 * 出厂价，单位元
+	 */
+	@ApiField("produce_price")
+	private String producePrice;
+
+	/**
+	 * 生产厂商名称
+	 */
+	@ApiField("producer_id")
+	private String producerId;
+
+	/**
+	 * 生产厂商名称
+	 */
+	@ApiField("producer_name")
+	private String producerName;
 
 	/**
 	 * 起售件数
@@ -116,6 +134,12 @@ public class GoodsVO extends AlipayObject {
 	 */
 	@ApiField("supplier_id")
 	private String supplierId;
+
+	/**
+	 * 税率值，单位%
+	 */
+	@ApiField("tax_rate")
+	private String taxRate;
 
 	public String getAdditionDesc() {
 		return this.additionDesc;
@@ -208,6 +232,27 @@ public class GoodsVO extends AlipayObject {
 		this.price = price;
 	}
 
+	public String getProducePrice() {
+		return this.producePrice;
+	}
+	public void setProducePrice(String producePrice) {
+		this.producePrice = producePrice;
+	}
+
+	public String getProducerId() {
+		return this.producerId;
+	}
+	public void setProducerId(String producerId) {
+		this.producerId = producerId;
+	}
+
+	public String getProducerName() {
+		return this.producerName;
+	}
+	public void setProducerName(String producerName) {
+		this.producerName = producerName;
+	}
+
 	public Long getSaleLimit() {
 		return this.saleLimit;
 	}
@@ -234,6 +279,13 @@ public class GoodsVO extends AlipayObject {
 	}
 	public void setSupplierId(String supplierId) {
 		this.supplierId = supplierId;
+	}
+
+	public String getTaxRate() {
+		return this.taxRate;
+	}
+	public void setTaxRate(String taxRate) {
+		this.taxRate = taxRate;
 	}
 
 }

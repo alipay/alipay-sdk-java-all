@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜谱价格
  *
  * @author auto create
- * @since 1.0, 2018-03-20 15:05:44
+ * @since 1.0, 2018-05-08 15:09:42
  */
 public class KbdishCookPriceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6683692638889664769L;
+	private static final long serialVersionUID = 7829278859515328964L;
 
 	/**
 	 * 菜单id

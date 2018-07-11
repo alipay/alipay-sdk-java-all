@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑pos账单菜明细
  *
  * @author auto create
- * @since 1.0, 2018-03-23 13:36:48
+ * @since 1.0, 2018-05-28 13:30:38
  */
 public class KbPosBillDishDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1878857583569539488L;
+	private static final long serialVersionUID = 7673492455515714137L;
 
 	/**
 	 * pos本地订单菜明细流水号

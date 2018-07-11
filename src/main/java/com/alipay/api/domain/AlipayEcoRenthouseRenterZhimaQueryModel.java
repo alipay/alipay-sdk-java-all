@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询芝麻信用等级
  *
  * @author auto create
- * @since 1.0, 2018-03-27 15:38:35
+ * @since 1.0, 2018-06-25 14:48:31
  */
 public class AlipayEcoRenthouseRenterZhimaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5775463132872543717L;
+	private static final long serialVersionUID = 1646581861996734297L;
 
 	/**
 	 * 身份证号

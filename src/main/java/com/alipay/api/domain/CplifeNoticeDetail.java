@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业社区通知通告详细信息.
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:39
+ * @since 1.0, 2018-06-09 20:18:37
  */
 public class CplifeNoticeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4656756219682531329L;
+	private static final long serialVersionUID = 8735558736892437492L;
 
 	/**
 	 * 通告公告的具体内容

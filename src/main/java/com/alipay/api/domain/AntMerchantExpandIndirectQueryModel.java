@@ -7,20 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连商户查询
  *
  * @author auto create
- * @since 1.0, 2017-10-27 14:19:54
+ * @since 1.0, 2018-07-06 15:33:18
  */
 public class AntMerchantExpandIndirectQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1633695999424627977L;
+	private static final long serialVersionUID = 3435917878529124191L;
 
 	/**
-	 * 商户编号，由机构定义，需要保证在机构下唯一，与sub_merchant_id二选一
+	 * 商户编号，由机构定义，需要保证在机构下唯一，如果未传sub_merchant_id ，则必传 external_id 和 org_pid
 	 */
 	@ApiField("external_id")
 	private String externalId;
 
 	/**
-	 * 商户在支付宝入驻成功后，生成的支付宝内全局唯一的商户编号，与external_id二选一必传
+	 * 机构pid，根据org_pid + external_id 可以唯一确定商户，如果未传sub_merchant_id ，则必传 external_id 和 org_pid
+	 */
+	@ApiField("org_pid")
+	private String orgPid;
+
+	/**
+	 * 商户在支付宝入驻成功后，生成的支付宝内全局唯一的商户编号，如果未传 external_id 和 org_pid，则必传sub_merchant_id
 	 */
 	@ApiField("sub_merchant_id")
 	private String subMerchantId;
@@ -30,6 +36,13 @@ public class AntMerchantExpandIndirectQueryModel extends AlipayObject {
 	}
 	public void setExternalId(String externalId) {
 		this.externalId = externalId;
+	}
+
+	public String getOrgPid() {
+		return this.orgPid;
+	}
+	public void setOrgPid(String orgPid) {
+		this.orgPid = orgPid;
 	}
 
 	public String getSubMerchantId() {

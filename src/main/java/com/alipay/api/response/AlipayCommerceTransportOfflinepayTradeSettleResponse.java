@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.offlinepay.trade.settle response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-04 15:05:44
+ * @since 1.0, 2018-05-07 17:49:12
  */
 public class AlipayCommerceTransportOfflinepayTradeSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1332462887138928111L;
+	private static final long serialVersionUID = 7885248758598121147L;
 
 	/** 
 	 * 支付宝脱机交易处理结果列表

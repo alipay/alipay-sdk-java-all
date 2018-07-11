@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮pos业务订单创建
  *
  * @author auto create
- * @since 1.0, 2018-03-23 13:35:29
+ * @since 1.0, 2018-05-28 13:30:55
  */
 public class KoubeiCateringOrderInfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7564326732373718679L;
+	private static final long serialVersionUID = 5325937525227717968L;
 
 	/**
 	 * 商户业务类型：DINNER-正餐、SNACK-快餐

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 产品模型创建接口
  *
  * @author auto create
- * @since 1.0, 2018-04-26 13:55:21
+ * @since 1.0, 2018-06-14 11:54:13
  */
 public class AlipayEbppIsvProdmodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8314563552596164996L;
+	private static final long serialVersionUID = 5373811836263834853L;
 
 	/**
 	 * 参数内容包含：ISV录入产品模型相关信息，具体分类如下：1.销账机构信息

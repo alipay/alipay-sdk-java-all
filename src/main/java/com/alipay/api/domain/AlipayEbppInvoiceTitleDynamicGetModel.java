@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据条形码获取抬头
  *
  * @author auto create
- * @since 1.0, 2018-03-15 20:19:41
+ * @since 1.0, 2018-07-02 10:30:28
  */
 public class AlipayEbppInvoiceTitleDynamicGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8581579163933311428L;
+	private static final long serialVersionUID = 1898273165546649143L;
 
 	/**
 	 * 抬头动态码

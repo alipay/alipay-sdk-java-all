@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户分组创建接口
  *
  * @author auto create
- * @since 1.0, 2017-11-10 16:17:41
+ * @since 1.0, 2018-05-11 19:05:47
  */
 public class AlipayOpenPublicGroupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5592658533713739393L;
+	private static final long serialVersionUID = 3213865492862877252L;
 
 	/**
 	 * 标签规则，满足该规则的粉丝将被圈定，标签id不能重复

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑的菜品模型  包含基本信息 suku 套餐明细
  *
  * @author auto create
- * @since 1.0, 2018-03-20 16:49:12
+ * @since 1.0, 2018-05-08 15:09:30
  */
 public class KbdishInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7638595536886539229L;
+	private static final long serialVersionUID = 1493912244281512479L;
 
 	/**
 	 * 分类字典大类的id

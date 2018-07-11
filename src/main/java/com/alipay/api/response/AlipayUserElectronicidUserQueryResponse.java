@@ -8,11 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.electronicid.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-12 14:10:00
+ * @since 1.0, 2018-06-25 15:30:00
  */
 public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1551872272873389745L;
+	private static final long serialVersionUID = 1358611142238798452L;
+
+	/** 
+	 * 地址。用机构的AES加密后值。
+	 */
+	@ApiField("address")
+	private String address;
+
+	/** 
+	 * 出生年月日(yyyyMMdd)。用机构的AES加密后值。
+	 */
+	@ApiField("birthday")
+	private String birthday;
 
 	/** 
 	 * 18位身份证号。用机构的AES加密后值。
@@ -21,10 +33,22 @@ public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 	private String certNo;
 
 	/** 
+	 * 性别(男，女)。用机构的AES加密后值。
+	 */
+	@ApiField("gender")
+	private String gender;
+
+	/** 
 	 * 姓名。用机构的AES加密后值。
 	 */
 	@ApiField("name")
 	private String name;
+
+	/** 
+	 * 民族。用机构的AES加密后值。
+	 */
+	@ApiField("nation")
+	private String nation;
 
 	/** 
 	 * 当前人脸照片。base64。用机构的AES加密后值。
@@ -38,6 +62,38 @@ public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 	@ApiField("secret_key")
 	private String secretKey;
 
+	/** 
+	 * 签发机关。用机构的AES加密后值。
+	 */
+	@ApiField("sign_org")
+	private String signOrg;
+
+	/** 
+	 * 有效期开始(yyyyMMdd)。用机构的AES加密后值。
+	 */
+	@ApiField("valid_begin_date")
+	private String validBeginDate;
+
+	/** 
+	 * 有效期截止(yyyyMMdd)。用机构的AES加密后值。
+	 */
+	@ApiField("valid_end_date")
+	private String validEndDate;
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getAddress( ) {
+		return this.address;
+	}
+
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+	public String getBirthday( ) {
+		return this.birthday;
+	}
+
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
@@ -45,11 +101,25 @@ public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 		return this.certNo;
 	}
 
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getGender( ) {
+		return this.gender;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
 	public String getName( ) {
 		return this.name;
+	}
+
+	public void setNation(String nation) {
+		this.nation = nation;
+	}
+	public String getNation( ) {
+		return this.nation;
 	}
 
 	public void setPicture(String picture) {
@@ -64,6 +134,27 @@ public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 	}
 	public String getSecretKey( ) {
 		return this.secretKey;
+	}
+
+	public void setSignOrg(String signOrg) {
+		this.signOrg = signOrg;
+	}
+	public String getSignOrg( ) {
+		return this.signOrg;
+	}
+
+	public void setValidBeginDate(String validBeginDate) {
+		this.validBeginDate = validBeginDate;
+	}
+	public String getValidBeginDate( ) {
+		return this.validBeginDate;
+	}
+
+	public void setValidEndDate(String validEndDate) {
+		this.validEndDate = validEndDate;
+	}
+	public String getValidEndDate( ) {
+		return this.validEndDate;
 	}
 
 }

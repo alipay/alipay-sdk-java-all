@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.basicservice.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2017-03-24 11:43:21
+ * @since 1.0, 2018-06-09 20:17:43
  */
 public class AlipayEcoCplifeBasicserviceInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6652226899932324449L;
+	private static final long serialVersionUID = 4846985681397963757L;
 
 	/** 
 	 * 若初始化的服务类型为物业缴费账单上传模式，并且对应的物业账号事前未完成对支付宝平台代创建缴费交易的授权，接口除了返回对应错误码，会通过本参数返回授权URL。请开发者发给物业人员用对应的物业支付宝账号登录完成第三方授权。

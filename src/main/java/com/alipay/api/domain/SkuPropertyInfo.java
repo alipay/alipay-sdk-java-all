@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部商家sku属性详情
  *
  * @author auto create
- * @since 1.0, 2017-03-17 17:48:10
+ * @since 1.0, 2018-06-26 14:23:36
  */
 public class SkuPropertyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1682816649898891199L;
+	private static final long serialVersionUID = 4826391127511582486L;
 
 	/**
 	 * sku属性key值,可发邮件到lei.mao@antfin.com,联系支付宝获取已支持的key.支付宝在收到邮件后三个工作日内回复

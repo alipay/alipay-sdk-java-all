@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易退款接口
  *
  * @author auto create
- * @since 1.0, 2018-03-22 17:12:24
+ * @since 1.0, 2018-07-09 16:38:29
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7492867727797291316L;
+	private static final long serialVersionUID = 3421418964693684331L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -59,6 +59,13 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	 */
 	@ApiField("refund_reason")
 	private String refundReason;
+
+	/**
+	 * 退分账明细信息
+	 */
+	@ApiListField("refund_royalty_parameters")
+	@ApiField("open_api_royalty_detail_info_pojo")
+	private List<OpenApiRoyaltyDetailInfoPojo> refundRoyaltyParameters;
 
 	/**
 	 * 商户的门店编号
@@ -125,6 +132,13 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	}
 	public void setRefundReason(String refundReason) {
 		this.refundReason = refundReason;
+	}
+
+	public List<OpenApiRoyaltyDetailInfoPojo> getRefundRoyaltyParameters() {
+		return this.refundRoyaltyParameters;
+	}
+	public void setRefundRoyaltyParameters(List<OpenApiRoyaltyDetailInfoPojo> refundRoyaltyParameters) {
+		this.refundRoyaltyParameters = refundRoyaltyParameters;
 	}
 
 	public String getStoreId() {
