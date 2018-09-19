@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.data.info.ipaddrinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2018-03-30 16:30:00
+ * @since 1.0, 2018-09-18 21:15:00
  */
 public class AlipaySecurityDataInfoIpaddrinfoQueryRequest implements AlipayRequest<AlipaySecurityDataInfoIpaddrinfoQueryResponse> {
 
@@ -21,7 +21,19 @@ public class AlipaySecurityDataInfoIpaddrinfoQueryRequest implements AlipayReque
 	/** 
 	* 根据IP地址查询省、市相关信息
 	 */
+	private String bizContent;
+
+	/** 
+	* 根据IP地址查询省、市相关信息
+	 */
 	private String ipAddr;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 
 	public void setIpAddr(String ipAddr) {
 		this.ipAddr = ipAddr;
@@ -91,6 +103,7 @@ public class AlipaySecurityDataInfoIpaddrinfoQueryRequest implements AlipayReque
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		txtParams.put("ip_addr", this.ipAddr);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);

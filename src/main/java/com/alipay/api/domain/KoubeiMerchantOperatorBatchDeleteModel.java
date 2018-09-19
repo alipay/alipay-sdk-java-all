@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * POS机-员工管理批量删除操作员接口
  *
  * @author auto create
- * @since 1.0, 2018-03-23 14:23:23
+ * @since 1.0, 2018-08-16 19:00:44
  */
 public class KoubeiMerchantOperatorBatchDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4799382643113842755L;
+	private static final long serialVersionUID = 6833857684781469823L;
 
 	/**
 	 * 授权码

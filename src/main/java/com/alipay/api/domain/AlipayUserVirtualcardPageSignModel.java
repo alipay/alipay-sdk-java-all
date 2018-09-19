@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人虚拟卡页面签约接口
  *
  * @author auto create
- * @since 1.0, 2018-01-26 18:48:29
+ * @since 1.0, 2018-07-17 18:53:38
  */
 public class AlipayUserVirtualcardPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3598348968167978469L;
+	private static final long serialVersionUID = 5164759773131279588L;
 
 	/**
 	 * 用户虚拟卡余额信息，单位为元，可精确到分。后付费卡不需要。

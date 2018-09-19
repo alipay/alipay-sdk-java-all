@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑零售生产厂商信息查询
  *
  * @author auto create
- * @since 1.0, 2018-06-05 10:56:36
+ * @since 1.0, 2018-08-22 11:17:39
  */
 public class KoubeiRetailWmsProducerQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4862177395315146126L;
+	private static final long serialVersionUID = 4535154894526435891L;
 
 	/**
 	 * 页码，分页参数，默认1。

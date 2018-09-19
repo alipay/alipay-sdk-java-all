@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-18 19:10:34
+ * @since 1.0, 2018-07-26 17:20:00
  */
 public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5642969936985882898L;
+	private static final long serialVersionUID = 8557397361126967156L;
 
 	/** 
 	 * 该笔资金操作流水opertion_id对应的操作金额，单位为：元（人民币）
@@ -28,10 +28,22 @@ public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 	private String authNo;
 
 	/** 
+	 * 该笔资金操作流水opertion_id对应的操作信用金额
+	 */
+	@ApiField("credit_amount")
+	private String creditAmount;
+
+	/** 
 	 * 商户请求创建预授权订单时传入的扩展参数，仅返回商户自定义的扩展信息（merchantExt）
 	 */
 	@ApiField("extra_param")
 	private String extraParam;
+
+	/** 
+	 * 该笔资金操作流水opertion_id对应的操作自有资金金额
+	 */
+	@ApiField("fund_amount")
+	private String fundAmount;
 
 	/** 
 	 * 资金授权单据操作流水创建时间，
@@ -113,6 +125,18 @@ PAY：支付
 	private String restAmount;
 
 	/** 
+	 * 剩余冻结信用金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("rest_credit_amount")
+	private String restCreditAmount;
+
+	/** 
+	 * 剩余冻结自有资金金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("rest_fund_amount")
+	private String restFundAmount;
+
+	/** 
 	 * 资金操作流水的状态，
 目前支持： 
 INIT：初始
@@ -129,10 +153,34 @@ CLOSED：关闭
 	private String totalFreezeAmount;
 
 	/** 
+	 * 累计冻结信用金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("total_freeze_credit_amount")
+	private String totalFreezeCreditAmount;
+
+	/** 
+	 * 累计冻结自有资金金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("total_freeze_fund_amount")
+	private String totalFreezeFundAmount;
+
+	/** 
 	 * 订单累计用于支付的金额，单位为：元（人民币）
 	 */
 	@ApiField("total_pay_amount")
 	private String totalPayAmount;
+
+	/** 
+	 * 累计支付信用金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("total_pay_credit_amount")
+	private String totalPayCreditAmount;
+
+	/** 
+	 * 累计支付自有资金金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("total_pay_fund_amount")
+	private String totalPayFundAmount;
 
 	/** 
 	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
@@ -154,11 +202,25 @@ CLOSED：关闭
 		return this.authNo;
 	}
 
+	public void setCreditAmount(String creditAmount) {
+		this.creditAmount = creditAmount;
+	}
+	public String getCreditAmount( ) {
+		return this.creditAmount;
+	}
+
 	public void setExtraParam(String extraParam) {
 		this.extraParam = extraParam;
 	}
 	public String getExtraParam( ) {
 		return this.extraParam;
+	}
+
+	public void setFundAmount(String fundAmount) {
+		this.fundAmount = fundAmount;
+	}
+	public String getFundAmount( ) {
+		return this.fundAmount;
 	}
 
 	public void setGmtCreate(Date gmtCreate) {
@@ -245,6 +307,20 @@ CLOSED：关闭
 		return this.restAmount;
 	}
 
+	public void setRestCreditAmount(String restCreditAmount) {
+		this.restCreditAmount = restCreditAmount;
+	}
+	public String getRestCreditAmount( ) {
+		return this.restCreditAmount;
+	}
+
+	public void setRestFundAmount(String restFundAmount) {
+		this.restFundAmount = restFundAmount;
+	}
+	public String getRestFundAmount( ) {
+		return this.restFundAmount;
+	}
+
 	public void setStatus(String status) {
 		this.status = status;
 	}
@@ -259,11 +335,39 @@ CLOSED：关闭
 		return this.totalFreezeAmount;
 	}
 
+	public void setTotalFreezeCreditAmount(String totalFreezeCreditAmount) {
+		this.totalFreezeCreditAmount = totalFreezeCreditAmount;
+	}
+	public String getTotalFreezeCreditAmount( ) {
+		return this.totalFreezeCreditAmount;
+	}
+
+	public void setTotalFreezeFundAmount(String totalFreezeFundAmount) {
+		this.totalFreezeFundAmount = totalFreezeFundAmount;
+	}
+	public String getTotalFreezeFundAmount( ) {
+		return this.totalFreezeFundAmount;
+	}
+
 	public void setTotalPayAmount(String totalPayAmount) {
 		this.totalPayAmount = totalPayAmount;
 	}
 	public String getTotalPayAmount( ) {
 		return this.totalPayAmount;
+	}
+
+	public void setTotalPayCreditAmount(String totalPayCreditAmount) {
+		this.totalPayCreditAmount = totalPayCreditAmount;
+	}
+	public String getTotalPayCreditAmount( ) {
+		return this.totalPayCreditAmount;
+	}
+
+	public void setTotalPayFundAmount(String totalPayFundAmount) {
+		this.totalPayFundAmount = totalPayFundAmount;
+	}
+	public String getTotalPayFundAmount( ) {
+		return this.totalPayFundAmount;
 	}
 
 	public void setTransCurrency(String transCurrency) {

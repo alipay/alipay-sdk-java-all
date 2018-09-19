@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 热脸入库
  *
  * @author auto create
- * @since 1.0, 2018-01-16 19:21:52
+ * @since 1.0, 2018-07-27 17:30:29
  */
 public class ZolozAuthenticationCustomerFacemanageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7716727252185452496L;
+	private static final long serialVersionUID = 4659486656956655857L;
 
 	/**
 	 * 地域编码
 	 */
 	@ApiField("areacode")
 	private String areacode;
+
+	/**
+	 * 人脸产品能力
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * 业务量规模
@@ -45,6 +51,10 @@ public class ZolozAuthenticationCustomerFacemanageCreateModel extends AlipayObje
 
 	/**
 	 * 入库类型
+IDCARD:身份证
+ALIPAY_USER:支付宝用户id,
+ALIPAY_TEL:手机号入库
+CUSTOMER:自定义
 	 */
 	@ApiField("facetype")
 	private String facetype;
@@ -78,6 +88,13 @@ public class ZolozAuthenticationCustomerFacemanageCreateModel extends AlipayObje
 	}
 	public void setAreacode(String areacode) {
 		this.areacode = areacode;
+	}
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
 	}
 
 	public String getBizscale() {

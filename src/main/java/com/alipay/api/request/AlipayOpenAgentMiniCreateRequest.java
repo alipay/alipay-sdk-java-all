@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.mini.create request
  * 
  * @author auto create
- * @since 1.0, 2018-01-31 17:53:02
+ * @since 1.0, 2018-07-12 18:50:00
  */
 public class AlipayOpenAgentMiniCreateRequest implements AlipayUploadRequest<AlipayOpenAgentMiniCreateResponse> {
 
@@ -27,7 +27,7 @@ public class AlipayOpenAgentMiniCreateRequest implements AlipayUploadRequest<Ali
 	private String appCategoryIds;
 
 	/** 
-	* 商户小程序描述信息，简要描述小程序主要功能（20-500个字），例：xx小程序提供了xx功能，主要解决了XX问题。
+	* 商家小程序描述信息，简要描述小程序主要功能（20-200个字），例：xx小程序提供了xx功能，主要解决了XX问题。
 	 */
 	private String appDesc;
 
@@ -37,34 +37,34 @@ public class AlipayOpenAgentMiniCreateRequest implements AlipayUploadRequest<Ali
 	private String appEnglishName;
 
 	/** 
-	* 商户小程序应用图标，最大256KB，LOGO不允许涉及政治敏感与色情；图片格式必须为：png、jpeg、jpg，建议上传像素为180*180，LOGO核心图形建议在白色160PX范围内
+	* 商家小程序应用图标，最大256KB，LOGO不允许涉及政治敏感与色情；图片格式必须为：png、jpeg、jpg，建议上传像素为180*180，LOGO核心图形建议在白色160PX范围内
 	 */
 	private FileItem appLogo;
 
 	/** 
-	* 代商户创建的小程序应用名称。名称可以由中文、数字、英文及下划线组成，长度在3-20个字符之间，一个中文字等于2个字符，更多名称规则见：https://docs.alipay.com/mini/operation/name
+	* 代商家创建的小程序应用名称。名称可以由中文、数字、英文及下划线组成，长度在3-20个字符之间，一个中文字等于2个字符，更多名称规则见：https://docs.alipay.com/mini/operation/name
 	 */
 	private String appName;
 
 	/** 
-	* 代商户创建的小程序的简介，请用一句话简要描述小程序提供的服务；应用上架后一个自然月可修改5次（10~32个字符）
+	* 代商家创建的小程序的简介，请用一句话简要描述小程序提供的服务；应用上架后一个自然月可修改5次（10~32个字符）
 	 */
 	private String appSlogan;
 
 	/** 
-	* ISV 代商户操作事务编号，通过事务开启接口alipay.open.agent.create调用返回。
+	* ISV 代商家操作事务编号，通过事务开启接口alipay.open.agent.create调用返回。
 	 */
 	private String batchNo;
 
 	/** 
-	* 商户小程序客服邮箱
-商户小程序客服电话和邮箱，可以二选一填写，但不能同时为空
+	* 商家小程序客服邮箱
+商家小程序客服电话和邮箱，可以二选一填写，但不能同时为空
 	 */
 	private String serviceEmail;
 
 	/** 
-	* 商户小程序的客服电话，推荐填写
-商户小程序客服电话和邮箱，可以二选一填写，但不能同时为空
+	* 商家小程序的客服电话，推荐填写
+商家小程序客服电话和邮箱，可以二选一填写，但不能同时为空
 	 */
 	private String servicePhone;
 

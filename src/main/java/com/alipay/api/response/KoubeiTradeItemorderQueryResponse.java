@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.itemorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-02-08 11:32:33
+ * @since 1.0, 2018-08-19 23:35:00
  */
 public class KoubeiTradeItemorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4243739618482239726L;
+	private static final long serialVersionUID = 4753362127396345468L;
 
 	/** 
 	 * 业务产品
@@ -29,6 +29,12 @@ public class KoubeiTradeItemorderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/** 
+	 * 卖家实收金额，单笔订单中给打款给卖家的金额
+	 */
+	@ApiField("deliver_seller_real_amount")
+	private String deliverSellerRealAmount;
 
 	/** 
 	 * 优惠金额
@@ -121,6 +127,13 @@ public class KoubeiTradeItemorderQueryResponse extends AlipayResponse {
 	}
 	public String getBuyerId( ) {
 		return this.buyerId;
+	}
+
+	public void setDeliverSellerRealAmount(String deliverSellerRealAmount) {
+		this.deliverSellerRealAmount = deliverSellerRealAmount;
+	}
+	public String getDeliverSellerRealAmount( ) {
+		return this.deliverSellerRealAmount;
 	}
 
 	public void setDiscountAmount(String discountAmount) {

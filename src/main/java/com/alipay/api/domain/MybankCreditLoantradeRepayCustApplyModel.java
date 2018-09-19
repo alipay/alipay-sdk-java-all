@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 客户主动还款申请
  *
  * @author auto create
- * @since 1.0, 2017-09-01 16:50:47
+ * @since 1.0, 2018-07-26 14:22:55
  */
 public class MybankCreditLoantradeRepayCustApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6428473861744757374L;
+	private static final long serialVersionUID = 7121917728942411432L;
 
 	/**
 	 * 申请还款费用（提前还款费除外）
@@ -76,6 +76,18 @@ public class MybankCreditLoantradeRepayCustApplyModel extends AlipayObject {
 	@ApiListField("prom_tools")
 	@ApiField("string")
 	private List<String> promTools;
+
+	/**
+	 * 还款账户
+	 */
+	@ApiField("repay_account")
+	private MyBkAccountVO repayAccount;
+
+	/**
+	 * 还款类型，CUSTOMER_ACTIVE_REPAY：提前还款-客户主动还款；CUSTOMER_PASSIVE_REPAY：提前还款-系统触发还款
+	 */
+	@ApiField("repay_type")
+	private String repayType;
 
 	/**
 	 * 请求流水号，用于幂等控制.以"ipRoleId_"开头
@@ -151,6 +163,20 @@ public class MybankCreditLoantradeRepayCustApplyModel extends AlipayObject {
 	}
 	public void setPromTools(List<String> promTools) {
 		this.promTools = promTools;
+	}
+
+	public MyBkAccountVO getRepayAccount() {
+		return this.repayAccount;
+	}
+	public void setRepayAccount(MyBkAccountVO repayAccount) {
+		this.repayAccount = repayAccount;
+	}
+
+	public String getRepayType() {
+		return this.repayType;
+	}
+	public void setRepayType(String repayType) {
+		this.repayType = repayType;
 	}
 
 	public String getRequestId() {

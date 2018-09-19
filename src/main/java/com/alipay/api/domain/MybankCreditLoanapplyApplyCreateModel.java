@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机构代客户申贷
  *
  * @author auto create
- * @since 1.0, 2018-06-07 19:04:10
+ * @since 1.0, 2018-08-01 20:15:55
  */
 public class MybankCreditLoanapplyApplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8613891366624512577L;
+	private static final long serialVersionUID = 2343868368751926578L;
 
 	/**
-	 * 客户的支付宝ID
+	 * 客户的支付宝ID，注意：如果site为ALIPAY，此参数login_id和参数alipay_id至少有一个不能为空。
 	 */
 	@ApiField("alipay_id")
 	private String alipayId;
@@ -54,13 +54,13 @@ public class MybankCreditLoanapplyApplyCreateModel extends AlipayObject {
 	private String bizTag;
 
 	/**
-	 * 客户的身份证号码
+	 * 客户的身份证号码，如果参数biz_scene_no为1，则为必填
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 证件类型，01:身份证
+	 * 证件类型，01:身份证，如果参数biz_scene_no为1，则为必填
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -90,7 +90,7 @@ public class MybankCreditLoanapplyApplyCreateModel extends AlipayObject {
 	private String ipRoleId;
 
 	/**
-	 * 会员的登录账号，比如支付宝登录账号，一般为手机号或邮箱
+	 * 会员的登录账号，比如支付宝登录账号，一般为手机号或邮箱，注意：如果site为ALIPAY，此参数login_id和参数alipay_id至少有一个不能为空。
 	 */
 	@ApiField("login_id")
 	private String loginId;
@@ -102,13 +102,13 @@ public class MybankCreditLoanapplyApplyCreateModel extends AlipayObject {
 	private String mobile;
 
 	/**
-	 * 客户姓名
+	 * 客户姓名，如果参数biz_scene_no为1，则为必填
 	 */
 	@ApiField("name")
 	private String name;
 
 	/**
-	 * 运营产品码
+	 * 运营产品码，平台大数贷机构无须填写
 	 */
 	@ApiField("op_pd_code")
 	private String opPdCode;
@@ -118,6 +118,12 @@ public class MybankCreditLoanapplyApplyCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_mem_id")
 	private String outMemId;
+
+	/**
+	 * 外部统一编码，外部机构与网商合作的方案产品标识，用于标识所属的合作业务，op_pd_code为空时该字段必传。
+	 */
+	@ApiField("out_uni_code")
+	private String outUniCode;
 
 	/**
 	 * 外部流水号,唯一标识客户的一笔贷款申请。格式：日期(8位)+序列号(8位）,序列号是数字，如00000001（必须是16位且符合该格式）。
@@ -257,6 +263,13 @@ TAOBAO：淘宝
 	}
 	public void setOutMemId(String outMemId) {
 		this.outMemId = outMemId;
+	}
+
+	public String getOutUniCode() {
+		return this.outUniCode;
+	}
+	public void setOutUniCode(String outUniCode) {
+		this.outUniCode = outUniCode;
 	}
 
 	public String getRequestId() {

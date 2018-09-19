@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.applyflow.query request
  * 
  * @author auto create
- * @since 1.0, 2018-04-08 15:59:40
+ * @since 1.0, 2018-07-17 15:14:14
  */
 public class AlipayEbppIndustryApplyflowQueryRequest implements AlipayRequest<AlipayEbppIndustryApplyflowQueryResponse> {
 

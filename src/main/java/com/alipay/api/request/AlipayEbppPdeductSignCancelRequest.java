@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.pdeduct.sign.cancel request
  * 
  * @author auto create
- * @since 1.0, 2017-08-04 11:19:20
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEbppPdeductSignCancelRequest implements AlipayRequest<AlipayEbppPdeductSignCancelResponse> {
 

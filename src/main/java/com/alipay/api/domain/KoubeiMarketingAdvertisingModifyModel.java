@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改广告接口
  *
  * @author auto create
- * @since 1.0, 2018-05-10 13:53:00
+ * @since 1.0, 2018-08-31 13:06:40
  */
 public class KoubeiMarketingAdvertisingModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1845227128137976857L;
+	private static final long serialVersionUID = 1761837197952583611L;
 
 	/**
 	 * 行为地址。用户点击广告后，跳转URL地址, 协议必须为HTTPS。广告类型为PIC时，需要设置该值。

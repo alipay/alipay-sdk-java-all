@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.sites.delete response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-26 10:13:20
+ * @since 1.0, 2018-08-19 16:17:44
  */
 public class AlipayMarketingToolFengdieSitesDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5817439183285449767L;
+	private static final long serialVersionUID = 5123522238711867727L;
 
 	/** 
 	 * 返回删除云凤蝶站点成功与失败的结果

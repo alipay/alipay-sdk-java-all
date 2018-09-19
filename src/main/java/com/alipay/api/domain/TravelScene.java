@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 出行营销场景
  *
  * @author auto create
- * @since 1.0, 2018-06-03 13:09:18
+ * @since 1.0, 2018-08-17 10:19:02
  */
 public class TravelScene extends AlipayObject {
 
-	private static final long serialVersionUID = 4384183889695374919L;
+	private static final long serialVersionUID = 8793376399498692342L;
 
 	/**
 	 * 出行场景，综合体入参列表

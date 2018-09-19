@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 费率模型
  *
  * @author auto create
- * @since 1.0, 2018-06-26 17:37:02
+ * @since 1.0, 2018-07-13 14:09:58
  */
 public class FeeValue extends AlipayObject {
 
-	private static final long serialVersionUID = 6424157192743562547L;
+	private static final long serialVersionUID = 4511862782291654796L;
 
 	/**
 	 * 保底费率

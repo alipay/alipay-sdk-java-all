@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部商业平台合作-查询可贷款方案
  *
  * @author auto create
- * @since 1.0, 2018-06-13 11:17:26
+ * @since 1.0, 2018-07-26 14:21:58
  */
 public class MybankCreditLoantradeLoanschemeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5621283584468277724L;
+	private static final long serialVersionUID = 6274563387642919814L;
 
 	/**
 	 * 授信编号
@@ -50,13 +50,19 @@ public class MybankCreditLoantradeLoanschemeQueryModel extends AlipayObject {
 	private String loanPolicyCode;
 
 	/**
+	 * 外部产品码，外部机构与网商合作的方案产品码，用于标识所属的合作业务，pd_code为空是必传。
+	 */
+	@ApiField("out_uni_code")
+	private String outUniCode;
+
+	/**
 	 * 金融云产品码
 	 */
 	@ApiField("sale_pd_code")
 	private String salePdCode;
 
 	/**
-	 * 基于哪个场景查询授信方案(FIXED_CREDIT:固化授信；PROD：产品；APPLY：申请；BL:保理；TYZBL：通用自保理；DYNAMIC：动态授信)
+	 * 基于哪个场景查询授信方案(FIXED_CREDIT:固化授信；PROD：产品；APPLY：申请；BL:保理；TYZBL：通用自保理；DYNAMIC：动态授信；CREDIT_LIST_FILTER：列表过滤授信方案)
 	 */
 	@ApiField("scen")
 	private String scen;
@@ -101,6 +107,13 @@ public class MybankCreditLoantradeLoanschemeQueryModel extends AlipayObject {
 	}
 	public void setLoanPolicyCode(String loanPolicyCode) {
 		this.loanPolicyCode = loanPolicyCode;
+	}
+
+	public String getOutUniCode() {
+		return this.outUniCode;
+	}
+	public void setOutUniCode(String outUniCode) {
+		this.outUniCode = outUniCode;
 	}
 
 	public String getSalePdCode() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户的已绑定卡数据
  *
  * @author auto create
- * @since 1.0, 2017-08-11 19:29:28
+ * @since 1.0, 2018-09-12 16:46:51
  */
 public class ExtendMedicalCard extends AlipayObject {
 
-	private static final long serialVersionUID = 5891787953343181646L;
+	private static final long serialVersionUID = 1636126348319673831L;
 
 	/**
 	 * 签约状态为成功绑定为不可空
@@ -67,6 +67,18 @@ public class ExtendMedicalCard extends AlipayObject {
 	 */
 	@ApiField("medical_card_type")
 	private String medicalCardType;
+
+	/**
+	 * 医保卡持卡人证件号码(脱敏)
+	 */
+	@ApiField("out_user_card_no")
+	private String outUserCardNo;
+
+	/**
+	 * 医保卡持有人姓名( 脱敏)
+	 */
+	@ApiField("out_user_name")
+	private String outUserName;
 
 	/**
 	 * 绑定状态
@@ -130,6 +142,20 @@ public class ExtendMedicalCard extends AlipayObject {
 	}
 	public void setMedicalCardType(String medicalCardType) {
 		this.medicalCardType = medicalCardType;
+	}
+
+	public String getOutUserCardNo() {
+		return this.outUserCardNo;
+	}
+	public void setOutUserCardNo(String outUserCardNo) {
+		this.outUserCardNo = outUserCardNo;
+	}
+
+	public String getOutUserName() {
+		return this.outUserName;
+	}
+	public void setOutUserName(String outUserName) {
+		this.outUserName = outUserName;
 	}
 
 	public String getSignStatus() {

@@ -4,20 +4,26 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 物料生产订单处理结果
+ * 物料生产/配送订单处理结果
  *
  * @author auto create
- * @since 1.0, 2017-06-30 10:14:58
+ * @since 1.0, 2018-08-14 13:52:26
  */
 public class AssetResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4293894321879999865L;
+	private static final long serialVersionUID = 8171176747742864487L;
 
 	/**
 	 * 订单明细ID
 	 */
 	@ApiField("assign_item_id")
 	private String assignItemId;
+
+	/**
+	 * 批次号，分批反馈时用
+	 */
+	@ApiField("batch_no")
+	private String batchNo;
 
 	/**
 	 * 错误码
@@ -42,6 +48,13 @@ public class AssetResult extends AlipayObject {
 	}
 	public void setAssignItemId(String assignItemId) {
 		this.assignItemId = assignItemId;
+	}
+
+	public String getBatchNo() {
+		return this.batchNo;
+	}
+	public void setBatchNo(String batchNo) {
+		this.batchNo = batchNo;
 	}
 
 	public String getErrorCode() {

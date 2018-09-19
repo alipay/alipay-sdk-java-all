@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链金融-预付申请单创建
  *
  * @author auto create
- * @since 1.0, 2018-06-06 13:52:09
+ * @since 1.0, 2018-07-28 01:10:56
  */
 public class MybankCreditSupplychainPrepaymentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3282853485949542629L;
+	private static final long serialVersionUID = 3531652948686877246L;
 
 	/**
 	 * 买家身份信息。
 	 */
 	@ApiField("buyer")
 	private Member buyer;
+
+	/**
+	 * 扩展字段
+	 */
+	@ApiField("ext_data")
+	private String extData;
 
 	/**
 	 * 贷款支付金额，单位人民币元。
@@ -48,6 +54,13 @@ public class MybankCreditSupplychainPrepaymentApplyModel extends AlipayObject {
 	}
 	public void setBuyer(Member buyer) {
 		this.buyer = buyer;
+	}
+
+	public String getExtData() {
+		return this.extData;
+	}
+	public void setExtData(String extData) {
+		this.extData = extData;
 	}
 
 	public String getLoanPayAmount() {

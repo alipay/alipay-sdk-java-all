@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.group.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2018-05-11 19:08:16
+ * @since 1.0, 2018-07-25 13:51:51
  */
 public class AlipayOpenPublicGroupBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2364234489469444837L;
+	private static final long serialVersionUID = 7497237413458298546L;
 
 	/** 
 	 * 用户分组列表，包含每个分组的id、name、以及规则模型

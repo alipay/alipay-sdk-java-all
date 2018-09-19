@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 松贤测试xxx
  *
  * @author auto create
- * @since 1.0, 2018-06-11 14:04:01
+ * @since 1.0, 2018-08-09 22:08:42
  */
 public class AlipayOpenEchoSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1469119213829122164L;
+	private static final long serialVersionUID = 5854458977669425233L;
+
+	/**
+	 * city
+	 */
+	@ApiField("city")
+	private String city;
 
 	/**
 	 * xxx
 	 */
 	@ApiField("name")
 	private String name;
+
+	public String getCity() {
+		return this.city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
 
 	public String getName() {
 		return this.name;

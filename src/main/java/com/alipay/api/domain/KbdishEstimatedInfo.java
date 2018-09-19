@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品估清模型
  *
  * @author auto create
- * @since 1.0, 2018-04-18 19:42:32
+ * @since 1.0, 2018-09-11 15:27:09
  */
 public class KbdishEstimatedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1564921235184271399L;
+	private static final long serialVersionUID = 6336382828258947676L;
 
 	/**
 	 * 估清的菜品dishid或者skuid,该值对应的类型由dsType指定。目前暂时只支持dishid
@@ -22,13 +22,15 @@ public class KbdishEstimatedInfo extends AlipayObject {
 	/**
 	 * skuid:sku维度估清
 dishid:菜品维度估清
+materialid:加料维度沽清
 	 */
 	@ApiField("ds_type")
 	private String dsType;
 
 	/**
 	 * 估清后临时库存.大于等于0的数字。
-status=open必须要传一个数
+status=open必须要传一个数。
+在沽清类型为加料的时候，该项强制为0。
 	 */
 	@ApiField("inventory")
 	private String inventory;
@@ -40,7 +42,7 @@ status=open必须要传一个数
 	private String shopId;
 
 	/**
-	 * 状态。open:启用;stop:停用
+	 * 状态。open:估清;stop:取消估清
 	 */
 	@ApiField("status")
 	private String status;

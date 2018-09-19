@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.dishdiagnosetype.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-10 19:25:38
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMarketingDataDishdiagnosetypeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7571782194882828246L;
+	private static final long serialVersionUID = 6464486259759296597L;
 
 	/** 
 	 * 菜品类型list

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻认证材料认证
  *
  * @author auto create
- * @since 1.0, 2017-12-19 19:10:07
+ * @since 1.0, 2018-08-29 14:41:05
  */
 public class ZhimaCustomerCertificationMaterialCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1528149287315193549L;
+	private static final long serialVersionUID = 4414674141564874516L;
 
 	/**
 	 * 认证场景码，常用的场景码有：FACE_API，入参支持的认证场景码和商户签约的认证场景相关，详见芝麻认证快速接入文档

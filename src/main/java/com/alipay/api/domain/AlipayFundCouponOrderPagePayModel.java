@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 受托pc支付接口
  *
  * @author auto create
- * @since 1.0, 2018-05-21 16:49:46
+ * @since 1.0, 2018-08-13 12:40:02
  */
 public class AlipayFundCouponOrderPagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6758143667414164168L;
+	private static final long serialVersionUID = 1665372399823369843L;
 
 	/**
 	 * 需要支付的金额，单位为：元（人民币），精确到小数点后两位

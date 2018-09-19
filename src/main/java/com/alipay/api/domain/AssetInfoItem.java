@@ -7,17 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料信息
  *
  * @author auto create
- * @since 1.0, 2018-07-09 14:42:23
+ * @since 1.0, 2018-09-18 09:09:30
  */
 public class AssetInfoItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1553111352598236214L;
+	private static final long serialVersionUID = 8176385817677653118L;
 
 	/**
 	 * 配送或者生产指令id.
 	 */
 	@ApiField("assign_item_id")
 	private String assignItemId;
+
+	/**
+	 * 由供应商自定义的分批反馈批次号，用于保持幂等，此值不传则需要按整批反馈.(由字母,数字,下划线组成)
+	 */
+	@ApiField("batch_no")
+	private String batchNo;
+
+	/**
+	 * 物流公司code
+	 */
+	@ApiField("logistics_code")
+	private String logisticsCode;
+
+	/**
+	 * 物流单号
+	 */
+	@ApiField("logistics_no")
+	private String logisticsNo;
 
 	/**
 	 * 机具序列号
@@ -42,6 +60,27 @@ public class AssetInfoItem extends AlipayObject {
 	}
 	public void setAssignItemId(String assignItemId) {
 		this.assignItemId = assignItemId;
+	}
+
+	public String getBatchNo() {
+		return this.batchNo;
+	}
+	public void setBatchNo(String batchNo) {
+		this.batchNo = batchNo;
+	}
+
+	public String getLogisticsCode() {
+		return this.logisticsCode;
+	}
+	public void setLogisticsCode(String logisticsCode) {
+		this.logisticsCode = logisticsCode;
+	}
+
+	public String getLogisticsNo() {
+		return this.logisticsNo;
+	}
+	public void setLogisticsNo(String logisticsNo) {
+		this.logisticsNo = logisticsNo;
 	}
 
 	public String getSubType() {

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.cash.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-17 12:15:33
+ * @since 1.0, 2018-07-19 14:27:35
  */
 public class AlipayMarketingCampaignCashDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1469526594452277236L;
+	private static final long serialVersionUID = 6665795977479133869L;
 
 	/** 
 	 * 活动状态，CREATED: 已创建未打款

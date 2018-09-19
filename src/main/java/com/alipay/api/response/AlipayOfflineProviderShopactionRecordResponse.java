@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.shopaction.record response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-23 22:32:27
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOfflineProviderShopactionRecordResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2212511652175767556L;
+	private static final long serialVersionUID = 3641715865722885952L;
 
 	
 

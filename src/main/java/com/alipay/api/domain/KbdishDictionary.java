@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品数据字典模型
  *
  * @author auto create
- * @since 1.0, 2018-05-16 16:48:34
+ * @since 1.0, 2018-08-03 17:45:25
  */
 public class KbdishDictionary extends AlipayObject {
 
-	private static final long serialVersionUID = 3299257568851345145L;
+	private static final long serialVersionUID = 5513961689549917146L;
 
 	/**
 	 * 商家门店的操作小二,创建数据的人
@@ -26,7 +26,7 @@ public class KbdishDictionary extends AlipayObject {
 	private String dictionaryId;
 
 	/**
-	 * 字典的扩展json，根据不同的biz_type,设置商家的自定义字典表key以及value。如果字典类型为catetory, key：cateSort，cateType，level,parentCatetoryId ;如果字典类型为spec, key：specSort.
+	 * 字典的扩展json，根据不同的biz_type,设置商家的自定义字典表key以及value。如果字典类型为catetory,  key为cateSort，cateType，level,parentCatetoryId（level传数字，cateType为dish或cook） ;如果字典类型为spec, key为specSort.。注意：如果是字符串拼接的方式，转移符\要替换为\\\ 。
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

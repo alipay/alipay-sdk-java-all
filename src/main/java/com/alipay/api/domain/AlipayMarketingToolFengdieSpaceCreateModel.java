@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建空间
  *
  * @author auto create
- * @since 1.0, 2018-04-26 10:13:38
+ * @since 1.0, 2018-08-19 16:17:32
  */
 public class AlipayMarketingToolFengdieSpaceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5741988369696826763L;
+	private static final long serialVersionUID = 5553432855589874561L;
 
 	/**
 	 * 欲创建的空间名称。应注意云凤蝶中每个空间有唯一的空间名称，尽量使用自己平台的前缀。另外空间名称只允许是中英文字符数字下划线组成的字符串。

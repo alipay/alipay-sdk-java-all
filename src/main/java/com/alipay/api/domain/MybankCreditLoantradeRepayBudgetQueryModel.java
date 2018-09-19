@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户主动还款试算
  *
  * @author auto create
- * @since 1.0, 2017-08-02 16:11:25
+ * @since 1.0, 2018-07-26 14:23:34
  */
 public class MybankCreditLoantradeRepayBudgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4576542365494522541L;
+	private static final long serialVersionUID = 2196864883732128982L;
 
 	/**
-	 * 申请还款本金
+	 * 申请还款金额，如果budget_type为TOTAL_AMT，则填写还款总金额，如果为PRIN_AMT则填写还款本金
 	 */
 	@ApiField("apply_repay_prin")
 	private String applyRepayPrin;
+
+	/**
+	 * TOTAL_AMT：总额还款，PRIN_AMT：本金还款，如果为空，默认为本金还款
+	 */
+	@ApiField("budget_type")
+	private String budgetType;
+
+	/**
+	 * 可为空，默认需要判断是否可还款，false为不需要判断是否可还款，其他为需要判断是否可还款
+	 */
+	@ApiField("can_repay_flag")
+	private Boolean canRepayFlag;
 
 	/**
 	 * 扩展字段
@@ -48,6 +60,20 @@ public class MybankCreditLoantradeRepayBudgetQueryModel extends AlipayObject {
 	}
 	public void setApplyRepayPrin(String applyRepayPrin) {
 		this.applyRepayPrin = applyRepayPrin;
+	}
+
+	public String getBudgetType() {
+		return this.budgetType;
+	}
+	public void setBudgetType(String budgetType) {
+		this.budgetType = budgetType;
+	}
+
+	public Boolean getCanRepayFlag() {
+		return this.canRepayFlag;
+	}
+	public void setCanRepayFlag(Boolean canRepayFlag) {
+		this.canRepayFlag = canRepayFlag;
 	}
 
 	public String getExtData() {

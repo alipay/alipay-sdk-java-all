@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 广告内容查询
  *
  * @author auto create
- * @since 1.0, 2018-01-10 14:43:22
+ * @since 1.0, 2018-07-31 20:47:25
  */
 public class KoubeiAdvertDeliveryDiscountAuthwebBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5722144341547423543L;
+	private static final long serialVersionUID = 3814752555464267122L;
 
 	/**
 	 * 分配的固定的渠道CODE，需要找运营申请

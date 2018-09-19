@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.auth.info.authquery response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-19 18:38:54
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class ZhimaAuthInfoAuthqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8895347132873837232L;
+	private static final long serialVersionUID = 8475245953654647949L;
 
 	/** 
 	 * 是否已经授权,已授权:true,未授权:false

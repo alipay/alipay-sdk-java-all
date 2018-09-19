@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.data.deer.insight.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-16 20:21:44
+ * @since 1.0, 2018-08-19 16:18:21
  */
 public class AlipayMarketingDataDeerInsightQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3383974656819252921L;
+	private static final long serialVersionUID = 7336399962997675594L;
 
 	/** 
 	 * 凤蝶洞察信息

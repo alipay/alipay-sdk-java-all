@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDaoweiOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8454943657116311853L;
+	private static final long serialVersionUID = 5425433167399729813L;
 
 	/** 
 	 * 到位业务定义的订单买家id，全局唯一，商户可以根据该ID唯一确定买家的信息

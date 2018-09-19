@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 余额宝资产端数据录入
  *
  * @author auto create
- * @since 1.0, 2016-12-22 21:53:37
+ * @since 1.0, 2018-08-24 10:54:36
  */
 public class AlipayDataDataserviceYuebaoassetDetailSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5595728228969858689L;
+	private static final long serialVersionUID = 2458885825885273352L;
 
 	/**
 	 * 资产负债报表数据列表

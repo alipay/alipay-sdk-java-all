@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资产负债报表数据
  *
  * @author auto create
- * @since 1.0, 2016-12-02 14:48:05
+ * @since 1.0, 2018-08-24 10:54:36
  */
 public class AlmReportData extends AlipayObject {
 
-	private static final long serialVersionUID = 6711266257446698884L;
+	private static final long serialVersionUID = 6411838761995798283L;
 
 	/**
 	 * 数据大类

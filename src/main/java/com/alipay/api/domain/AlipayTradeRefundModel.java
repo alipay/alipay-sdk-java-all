@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易退款接口
  *
  * @author auto create
- * @since 1.0, 2018-07-09 16:38:29
+ * @since 1.0, 2018-09-14 11:46:14
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3421418964693684331L;
+	private static final long serialVersionUID = 4263326298159429392L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -29,6 +29,13 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	 */
 	@ApiField("operator_id")
 	private String operatorId;
+
+	/**
+	 * 银行间联模式下有用，其它场景请不要使用；
+双联通过该参数指定需要退款的交易所属收单机构的pid;
+	 */
+	@ApiField("org_pid")
+	private String orgPid;
 
 	/**
 	 * 标识一次退款请求，同一笔交易多次退款需要保证唯一，如需部分退款，则此参数必传。
@@ -97,6 +104,13 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	}
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
+	}
+
+	public String getOrgPid() {
+		return this.orgPid;
+	}
+	public void setOrgPid(String orgPid) {
+		this.orgPid = orgPid;
 	}
 
 	public String getOutRequestNo() {

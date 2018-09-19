@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.template.message.get request
  * 
  * @author auto create
- * @since 1.0, 2017-08-02 17:37:08
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayMobilePublicTemplateMessageGetRequest implements AlipayRequest<AlipayMobilePublicTemplateMessageGetResponse> {
 

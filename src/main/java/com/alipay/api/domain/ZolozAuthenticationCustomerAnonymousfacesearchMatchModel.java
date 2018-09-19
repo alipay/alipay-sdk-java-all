@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸搜索
  *
  * @author auto create
- * @since 1.0, 2018-03-07 11:49:37
+ * @since 1.0, 2018-09-04 10:46:33
  */
 public class ZolozAuthenticationCustomerAnonymousfacesearchMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4275763684427352571L;
+	private static final long serialVersionUID = 4424932332785571872L;
+
+	/**
+	 * 防攻击能力参数
+	 */
+	@ApiField("antiattack")
+	private String antiattack;
 
 	/**
 	 * 地域编码
@@ -24,6 +30,12 @@ public class ZolozAuthenticationCustomerAnonymousfacesearchMatchModel extends Al
 	 */
 	@ApiField("authimg")
 	private String authimg;
+
+	/**
+	 * 代表业务方接入编号
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * 业务量规模
@@ -44,6 +56,12 @@ public class ZolozAuthenticationCustomerAnonymousfacesearchMatchModel extends Al
 	private String devicenum;
 
 	/**
+	 * 拓展参数
+	 */
+	@ApiField("extinfo")
+	private String extinfo;
+
+	/**
 	 * 群组
 	 */
 	@ApiField("group")
@@ -61,6 +79,13 @@ public class ZolozAuthenticationCustomerAnonymousfacesearchMatchModel extends Al
 	@ApiField("validtimes")
 	private String validtimes;
 
+	public String getAntiattack() {
+		return this.antiattack;
+	}
+	public void setAntiattack(String antiattack) {
+		this.antiattack = antiattack;
+	}
+
 	public String getAreacode() {
 		return this.areacode;
 	}
@@ -73,6 +98,13 @@ public class ZolozAuthenticationCustomerAnonymousfacesearchMatchModel extends Al
 	}
 	public void setAuthimg(String authimg) {
 		this.authimg = authimg;
+	}
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
 	}
 
 	public String getBizscale() {
@@ -94,6 +126,13 @@ public class ZolozAuthenticationCustomerAnonymousfacesearchMatchModel extends Al
 	}
 	public void setDevicenum(String devicenum) {
 		this.devicenum = devicenum;
+	}
+
+	public String getExtinfo() {
+		return this.extinfo;
+	}
+	public void setExtinfo(String extinfo) {
+		this.extinfo = extinfo;
 	}
 
 	public String getGroup() {

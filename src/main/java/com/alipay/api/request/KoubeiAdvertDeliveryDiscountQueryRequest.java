@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.advert.delivery.discount.query request
  * 
  * @author auto create
- * @since 1.0, 2018-03-27 14:40:35
+ * @since 1.0, 2018-07-31 20:47:52
  */
 public class KoubeiAdvertDeliveryDiscountQueryRequest implements AlipayRequest<KoubeiAdvertDeliveryDiscountQueryResponse> {
 

@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.dsb.estimate.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-02-28 19:13:12
+ * @since 1.0, 2018-09-05 22:35:00
  */
 public class AlipayInsDataDsbEstimateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8325367838281627894L;
+	private static final long serialVersionUID = 2571618543679683237L;
+
+	/** 
+	 * 定损结果置信度，小数，取值范围为0到1
+	 */
+	@ApiField("confidence")
+	private String confidence;
 
 	/** 
 	 * 核损详情对象列表
@@ -59,6 +65,13 @@ public class AlipayInsDataDsbEstimateQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("total_remain_value")
 	private String totalRemainValue;
+
+	public void setConfidence(String confidence) {
+		this.confidence = confidence;
+	}
+	public String getConfidence( ) {
+		return this.confidence;
+	}
 
 	public void setEstimateDetailList(List<InsDataDsbEstimateResultDetail> estimateDetailList) {
 		this.estimateDetailList = estimateDetailList;

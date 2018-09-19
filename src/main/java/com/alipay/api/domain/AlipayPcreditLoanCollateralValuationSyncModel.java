@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送机构押品估值信息
  *
  * @author auto create
- * @since 1.0, 2017-10-26 10:50:04
+ * @since 1.0, 2018-08-20 10:03:39
  */
 public class AlipayPcreditLoanCollateralValuationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6659974752225533438L;
+	private static final long serialVersionUID = 1814571672457415818L;
 
 	/**
 	 * 业务流水号，即用户授信申请的单号，每次授信申请由借呗平台生成的唯一编号，通知估值时给到机构
@@ -24,6 +24,13 @@ public class AlipayPcreditLoanCollateralValuationSyncModel extends AlipayObject 
 	 */
 	@ApiField("eval_time")
 	private String evalTime;
+
+	/**
+	 * JSON格式的扩展信息，具体操作和机构约定具体的扩展信息。
+{"annualIncome":"200000.00","downPayment":"30000.00","installmentNum":"12","installmentOrg":"0","isInstallment":"1","isLocal":"1","isMortgaged":"1","monthlyPayment":"11000.00","paidNum":"3","serviceProvider":"杭州服务商","totalAmount":"150000.00","unpaidAmount":"99000.00"}
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 机构请求流水号，请求的幂等字段，作为业务幂等性控制
@@ -76,6 +83,13 @@ public class AlipayPcreditLoanCollateralValuationSyncModel extends AlipayObject 
 	}
 	public void setEvalTime(String evalTime) {
 		this.evalTime = evalTime;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getOutRequestNo() {

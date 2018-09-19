@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppConfigProvinceSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8423485434582296864L;
+	private static final long serialVersionUID = 1668793587171977519L;
 
 	/** 
 	 * 接口主要输出参数列表: AreaInfoResult{List{ areaInfo：{province, cityList<String>}} }

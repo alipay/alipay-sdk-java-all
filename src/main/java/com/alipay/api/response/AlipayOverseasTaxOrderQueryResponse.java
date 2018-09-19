@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-05 10:33:29
+ * @since 1.0, 2018-08-14 20:15:25
  */
 public class AlipayOverseasTaxOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5273527158845751451L;
+	private static final long serialVersionUID = 4296948634338854265L;
 
 	/** 
 	 * 用于识别用户支付宝账号的号码，由identify_account_type指定类型:

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.order.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-21 12:18:28
+ * @since 1.0, 2018-07-23 11:40:00
  */
 public class AlipayFundAuthOrderUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1576726871759472677L;
+	private static final long serialVersionUID = 4791274641647172319L;
 
 	/** 
 	 * 本次操作解冻的金额，单位为：元（人民币），精确到小数点后两位，取值范围：[0.01,100000000.00]
@@ -26,6 +26,18 @@ public class AlipayFundAuthOrderUnfreezeResponse extends AlipayResponse {
 	 */
 	@ApiField("auth_no")
 	private String authNo;
+
+	/** 
+	 * 本次解冻操作中信用解冻金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("credit_amount")
+	private String creditAmount;
+
+	/** 
+	 * 本次解冻操作中自有资金解冻金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("fund_amount")
+	private String fundAmount;
 
 	/** 
 	 * 授权资金解冻成功时间，格式：YYYY-MM-DD HH:MM:SS
@@ -72,6 +84,20 @@ CLOSED：关闭
 	}
 	public String getAuthNo( ) {
 		return this.authNo;
+	}
+
+	public void setCreditAmount(String creditAmount) {
+		this.creditAmount = creditAmount;
+	}
+	public String getCreditAmount( ) {
+		return this.creditAmount;
+	}
+
+	public void setFundAmount(String fundAmount) {
+		this.fundAmount = fundAmount;
+	}
+	public String getFundAmount( ) {
+		return this.fundAmount;
 	}
 
 	public void setGmtTrans(Date gmtTrans) {

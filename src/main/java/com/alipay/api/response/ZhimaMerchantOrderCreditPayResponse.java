@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.order.credit.pay response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-22 14:10:00
+ * @since 1.0, 2018-07-27 09:35:00
  */
 public class ZhimaMerchantOrderCreditPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5348245127944183774L;
+	private static final long serialVersionUID = 1848286819184876832L;
 
 	/** 
 	 * 支付宝生成的资金流水号，用于商户与支付宝进行对账，无支付行为时为空

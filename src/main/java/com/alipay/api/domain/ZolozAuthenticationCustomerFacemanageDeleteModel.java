@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * zoloz.authentication.customer.facemanage.delete
  *
  * @author auto create
- * @since 1.0, 2018-01-16 19:35:39
+ * @since 1.0, 2018-07-27 17:31:20
  */
 public class ZolozAuthenticationCustomerFacemanageDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4595824275249593231L;
+	private static final long serialVersionUID = 6171216773113541971L;
 
 	/**
 	 * 地域编码
@@ -20,13 +20,19 @@ public class ZolozAuthenticationCustomerFacemanageDeleteModel extends AlipayObje
 	private String areacode;
 
 	/**
+	 * 人脸产品能力
+	 */
+	@ApiField("biz_type")
+	private String bizType;
+
+	/**
 	 * 业务量
 	 */
 	@ApiField("bizscale")
 	private String bizscale;
 
 	/**
-	 * 品牌
+	 * 商户品牌
 	 */
 	@ApiField("brandcode")
 	private String brandcode;
@@ -45,6 +51,10 @@ public class ZolozAuthenticationCustomerFacemanageDeleteModel extends AlipayObje
 
 	/**
 	 * 入库类型
+IDCARD:身份证
+ALIPAY_USER:支付宝用户id,
+ALIPAY_TEL:手机号入库
+CUSTOMER:自定义
 	 */
 	@ApiField("facetype")
 	private String facetype;
@@ -78,6 +88,13 @@ public class ZolozAuthenticationCustomerFacemanageDeleteModel extends AlipayObje
 	}
 	public void setAreacode(String areacode) {
 		this.areacode = areacode;
+	}
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
 	}
 
 	public String getBizscale() {

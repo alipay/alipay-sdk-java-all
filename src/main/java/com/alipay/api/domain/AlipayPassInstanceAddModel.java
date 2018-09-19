@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass新建卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2017-03-31 15:33:20
+ * @since 1.0, 2018-07-23 15:36:44
  */
 public class AlipayPassInstanceAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1272738965216749168L;
+	private static final long serialVersionUID = 2358739642712936361L;
 
 	/**
 	 * 支付宝用户识别信息：

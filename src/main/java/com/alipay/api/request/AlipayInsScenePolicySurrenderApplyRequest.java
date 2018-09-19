@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.policy.surrender.apply request
  * 
  * @author auto create
- * @since 1.0, 2018-04-03 11:28:31
+ * @since 1.0, 2018-07-11 15:25:00
  */
 public class AlipayInsScenePolicySurrenderApplyRequest implements AlipayRequest<AlipayInsScenePolicySurrenderApplyResponse> {
 

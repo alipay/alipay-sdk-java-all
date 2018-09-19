@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商银行融资平台协议签署接口
  *
  * @author auto create
- * @since 1.0, 2018-06-08 18:08:42
+ * @since 1.0, 2018-08-01 20:15:36
  */
 public class MybankCreditLoanapplyArrangementCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4828118385196872216L;
+	private static final long serialVersionUID = 6565536184152788353L;
 
 	/**
-	 * 产品代码，标识网商银行具体的产品，由网商银行预先分配好，接入方按网商银行的要求送。
+	 * 产品代码，scene字段为空时必填，标识网商银行具体的产品，由网商银行预先分配好，接入方按网商银行的要求送。
 	 */
 	@ApiField("ar_pd_code")
 	private String arPdCode;
@@ -26,7 +26,7 @@ public class MybankCreditLoanapplyArrangementCreateModel extends AlipayObject {
 	private String extData;
 
 	/**
-	 * 客户id，网商银行唯一标识一个客户的id。此客户id是通过客户创建接口返回的。即调用此接口前必须先调用客户创建接口。
+	 * 客户id，网商银行唯一标识一个客户的id。scene值为ENTRUST_ACCOUNT时可空，其他场景必填，此客户id是通过客户创建接口返回的。即调用此接口前必须先调用客户创建接口。
 	 */
 	@ApiField("ip_id")
 	private String ipId;
@@ -36,6 +36,16 @@ public class MybankCreditLoanapplyArrangementCreateModel extends AlipayObject {
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
+
+	/**
+	 * 签约场景码，ar_pd_code为空时必填，例如：
+ENTRUST_ACCOUNT：受托账户签约；
+CREDIT_AUTH：征信授权签约；
+INVESTIGATION_AUTH：信息调查授权；
+SUPPLYCHAIN_BUYER：供应链买家协议；
+	 */
+	@ApiField("scene")
+	private String scene;
 
 	/**
 	 * 站点类型，当前只支持ALIPAY。后续扩展可以支持TAOBAO等。目前这个字段必须传递ALIPAY。
@@ -75,6 +85,13 @@ public class MybankCreditLoanapplyArrangementCreateModel extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getScene() {
+		return this.scene;
+	}
+	public void setScene(String scene) {
+		this.scene = scene;
 	}
 
 	public String getSite() {

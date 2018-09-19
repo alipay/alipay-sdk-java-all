@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-31 21:39:01
+ * @since 1.0, 2018-07-12 18:45:00
  */
 public class AlipayOpenAgentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6156717351278465889L;
+	private static final long serialVersionUID = 4179816468389655121L;
 
 	/** 
 	 * 代理创建的应用ID，如果有代理商户创建应用，商户确认成功后，才返回应用ID，否则不返回。
 	 */
 	@ApiField("agent_app_id")
 	private String agentAppId;
+
+	/** 
+	 * 只有申请单状态在MERCHANT_CONFIRM状态下，才会返回商户确认签约链接
+	 */
+	@ApiField("confirm_url")
+	private String confirmUrl;
 
 	/** 
 	 * 商户pid
@@ -49,6 +55,13 @@ MERCHANT_APPLY_ORDER_CANCELED=审核失败或商户拒绝，申请信息审核�
 	}
 	public String getAgentAppId( ) {
 		return this.agentAppId;
+	}
+
+	public void setConfirmUrl(String confirmUrl) {
+		this.confirmUrl = confirmUrl;
+	}
+	public String getConfirmUrl( ) {
+		return this.confirmUrl;
 	}
 
 	public void setMerchantPid(String merchantPid) {

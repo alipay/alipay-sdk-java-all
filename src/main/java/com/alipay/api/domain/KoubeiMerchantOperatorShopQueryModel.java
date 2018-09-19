@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 操作员关联门店查询
  *
  * @author auto create
- * @since 1.0, 2018-05-30 15:42:36
+ * @since 1.0, 2018-07-13 20:42:55
  */
 public class KoubeiMerchantOperatorShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5452574689163887152L;
+	private static final long serialVersionUID = 7188362722112446868L;
 
 	/**
 	 * 授权码

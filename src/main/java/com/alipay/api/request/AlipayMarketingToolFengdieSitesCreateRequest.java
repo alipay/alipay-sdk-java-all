@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.tool.fengdie.sites.create request
  * 
  * @author auto create
- * @since 1.0, 2018-04-26 10:13:04
+ * @since 1.0, 2018-08-19 16:17:55
  */
 public class AlipayMarketingToolFengdieSitesCreateRequest implements AlipayRequest<AlipayMarketingToolFengdieSitesCreateResponse> {
 

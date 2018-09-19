@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.loan.modify response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-23 11:57:58
+ * @since 1.0, 2018-07-31 10:40:00
  */
 public class MybankCreditSceneprodLoanModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2711674323362459169L;
+	private static final long serialVersionUID = 1319936492721882766L;
+
+	/** 
+	 * 在特定状态修改完毕后的返回内容，里面包含合作机构推进流程的信息。
+	 */
+	@ApiField("result_content")
+	private String resultContent;
 
 	/** 
 	 * 是否重试
@@ -25,6 +31,13 @@ public class MybankCreditSceneprodLoanModifyResponse extends AlipayResponse {
 	 */
 	@ApiField("trace_id")
 	private String traceId;
+
+	public void setResultContent(String resultContent) {
+		this.resultContent = resultContent;
+	}
+	public String getResultContent( ) {
+		return this.resultContent;
+	}
 
 	public void setRetry(String retry) {
 		this.retry = retry;

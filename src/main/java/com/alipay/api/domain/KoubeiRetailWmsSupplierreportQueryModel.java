@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供货商盘点单分页查询
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:29:58
+ * @since 1.0, 2018-08-22 11:18:22
  */
 public class KoubeiRetailWmsSupplierreportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8268331478627715963L;
+	private static final long serialVersionUID = 3173427944678515551L;
 
 	/**
 	 * 下单时间上区间

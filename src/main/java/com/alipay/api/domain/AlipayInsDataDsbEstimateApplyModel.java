@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 定损宝提交车险图像定损请求
  *
  * @author auto create
- * @since 1.0, 2017-08-07 17:31:18
+ * @since 1.0, 2018-09-05 22:21:56
  */
 public class AlipayInsDataDsbEstimateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4498672523566237185L;
+	private static final long serialVersionUID = 5525878266372754185L;
+
+	/**
+	 * 事发地区编码，取值参考提供的统一编码标准文档
+	 */
+	@ApiField("accident_area_id")
+	private String accidentAreaId;
 
 	/**
 	 * 车辆属性，json格式
@@ -65,6 +71,15 @@ public class AlipayInsDataDsbEstimateApplyModel extends AlipayObject {
 	private String frameNo;
 
 	/**
+	 * 修理厂类型，枚举如下
+
+4S－4S店
+GENERAL－综合修理厂
+	 */
+	@ApiField("garage_type")
+	private String garageType;
+
+	/**
 	 * 车损图片信息列表
 	 */
 	@ApiListField("image_list")
@@ -82,6 +97,12 @@ public class AlipayInsDataDsbEstimateApplyModel extends AlipayObject {
 	 */
 	@ApiField("model_brand")
 	private String modelBrand;
+
+	/**
+	 * 新车购置价，单位为元。
+	 */
+	@ApiField("new_car_price")
+	private String newCarPrice;
 
 	/**
 	 * 维修企业属性，json字符串格式，目前key值有：type(企业类型/等级）、name（企业名称）、address（地址）、code（维修企业编码）等
@@ -106,6 +127,13 @@ public class AlipayInsDataDsbEstimateApplyModel extends AlipayObject {
 	 */
 	@ApiField("survey_no")
 	private String surveyNo;
+
+	public String getAccidentAreaId() {
+		return this.accidentAreaId;
+	}
+	public void setAccidentAreaId(String accidentAreaId) {
+		this.accidentAreaId = accidentAreaId;
+	}
 
 	public String getCarProperties() {
 		return this.carProperties;
@@ -163,6 +191,13 @@ public class AlipayInsDataDsbEstimateApplyModel extends AlipayObject {
 		this.frameNo = frameNo;
 	}
 
+	public String getGarageType() {
+		return this.garageType;
+	}
+	public void setGarageType(String garageType) {
+		this.garageType = garageType;
+	}
+
 	public List<AlipayInsDataDsbRequestImageInfo> getImageList() {
 		return this.imageList;
 	}
@@ -182,6 +217,13 @@ public class AlipayInsDataDsbEstimateApplyModel extends AlipayObject {
 	}
 	public void setModelBrand(String modelBrand) {
 		this.modelBrand = modelBrand;
+	}
+
+	public String getNewCarPrice() {
+		return this.newCarPrice;
+	}
+	public void setNewCarPrice(String newCarPrice) {
+		this.newCarPrice = newCarPrice;
 	}
 
 	public String getRepairCorpProperties() {

@@ -8,11 +8,37 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.inventory.out.consult response.
  * 
  * @author auto create
- * @since 1.0, 2018-02-08 14:45:12
+ * @since 1.0, 2018-07-28 01:11:33
  */
 public class MybankCreditSupplychainInventoryOutConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3518597714185655963L;
+	private static final long serialVersionUID = 6448182962768732273L;
+
+	/** 
+	 * 警戒额度
+	 */
+	@ApiField("alert_amt")
+	private String alertAmt;
+
+	/** 
+	 * 标识客户的当前贷款状态
+	 */
+	@ApiField("arg_status")
+	private String argStatus;
+
+	/** 
+	 * CONTROL 可以出库
+BAN 禁止出库
+WARNING 达到警戒比例（此时也可以出库）
+	 */
+	@ApiField("controll_status")
+	private String controllStatus;
+
+	/** 
+	 * 授信额度
+	 */
+	@ApiField("credit_amt")
+	private String creditAmt;
 
 	/** 
 	 * 待还正常利息
@@ -45,10 +71,44 @@ public class MybankCreditSupplychainInventoryOutConsultResponse extends AlipayRe
 	private String prinAmt;
 
 	/** 
-	 * 实际待还款总金额=水位差+所有利息(正常利息+逾期利息+逾期本金罚息+逾期利息罚息)，水位差 ＝ 正常本金-水位额度
+	 * 实际待还款总金额=待还款本金+所有利息(正常利息+逾期利息+逾期本金罚息+逾期利息罚息)
 	 */
 	@ApiField("repay_amt")
 	private String repayAmt;
+
+	/** 
+	 * 水位额度
+	 */
+	@ApiField("water_level_amt")
+	private String waterLevelAmt;
+
+	public void setAlertAmt(String alertAmt) {
+		this.alertAmt = alertAmt;
+	}
+	public String getAlertAmt( ) {
+		return this.alertAmt;
+	}
+
+	public void setArgStatus(String argStatus) {
+		this.argStatus = argStatus;
+	}
+	public String getArgStatus( ) {
+		return this.argStatus;
+	}
+
+	public void setControllStatus(String controllStatus) {
+		this.controllStatus = controllStatus;
+	}
+	public String getControllStatus( ) {
+		return this.controllStatus;
+	}
+
+	public void setCreditAmt(String creditAmt) {
+		this.creditAmt = creditAmt;
+	}
+	public String getCreditAmt( ) {
+		return this.creditAmt;
+	}
 
 	public void setNormalIntAmt(String normalIntAmt) {
 		this.normalIntAmt = normalIntAmt;
@@ -90,6 +150,13 @@ public class MybankCreditSupplychainInventoryOutConsultResponse extends AlipayRe
 	}
 	public String getRepayAmt( ) {
 		return this.repayAmt;
+	}
+
+	public void setWaterLevelAmt(String waterLevelAmt) {
+		this.waterLevelAmt = waterLevelAmt;
+	}
+	public String getWaterLevelAmt( ) {
+		return this.waterLevelAmt;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票要素模型
  *
  * @author auto create
- * @since 1.0, 2018-06-11 16:17:24
+ * @since 1.0, 2018-08-24 14:52:47
  */
 public class InvoiceElementModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6493335113166811287L;
+	private static final long serialVersionUID = 3338445441182244697L;
 
 	/**
 	 * 发票报销状态
@@ -87,6 +87,18 @@ EXPIRED－已失效
 	 */
 	@ApiField("invoice_status")
 	private String invoiceStatus;
+
+	/**
+	 * logo地址
+	 */
+	@ApiField("logo_url")
+	private String logoUrl;
+
+	/**
+	 * 商户全称
+	 */
+	@ApiField("m_name")
+	private String mName;
 
 	/**
 	 * 销方名称
@@ -180,6 +192,20 @@ EXPIRED－已失效
 	}
 	public void setInvoiceStatus(String invoiceStatus) {
 		this.invoiceStatus = invoiceStatus;
+	}
+
+	public String getLogoUrl() {
+		return this.logoUrl;
+	}
+	public void setLogoUrl(String logoUrl) {
+		this.logoUrl = logoUrl;
+	}
+
+	public String getmName() {
+		return this.mName;
+	}
+	public void setmName(String mName) {
+		this.mName = mName;
 	}
 
 	public String getPayeeName() {

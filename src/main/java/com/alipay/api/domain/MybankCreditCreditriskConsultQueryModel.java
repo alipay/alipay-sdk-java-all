@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 咨询各个场景是否准入
  *
  * @author auto create
- * @since 1.0, 2018-06-05 20:10:26
+ * @since 1.0, 2018-08-01 20:15:46
  */
 public class MybankCreditCreditriskConsultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6511966624411996171L;
+	private static final long serialVersionUID = 6499254342745389563L;
 
 	/**
 	 * 关联实体，咨询者可以添加一些关联实体比方说一个企业、一个会员账号、一个自然人等来作为咨询材料辅助咨询判断
@@ -42,14 +42,20 @@ public class MybankCreditCreditriskConsultQueryModel extends AlipayObject {
 	private String ipRoleId;
 
 	/**
-	 * 产品码，授信前准入咨询则为运营产品码，支用准入时可不用传
+	 * 外部统一编码，外部机构与网商合作的方案产品码，用于标识所属的合作业务，pd_code为空时该字段必传。
+	 */
+	@ApiField("out_uni_code")
+	private String outUniCode;
+
+	/**
+	 * 产品码，授信前准入咨询则为运营产品码，支用准入时可不用传，out_uni_code不为空时，该字段可空
 	 */
 	@ApiField("pd_code")
 	private String pdCode;
 
 	/**
 	 * 场景码，表示本次查询应用于哪个场景。目前已有枚举以及对应场景：
-1：授信申请前准入判断，2：支用申请准入，3：产品层可贷额度查询
+1：授信申请前准入判断，2：支用申请准入，3：产品层可贷额度查询，4：预付方案查询，5：授信可贷额度咨询，6.营销额度咨询
 	 */
 	@ApiField("scen")
 	private String scen;
@@ -98,6 +104,13 @@ public class MybankCreditCreditriskConsultQueryModel extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getOutUniCode() {
+		return this.outUniCode;
+	}
+	public void setOutUniCode(String outUniCode) {
+		this.outUniCode = outUniCode;
 	}
 
 	public String getPdCode() {

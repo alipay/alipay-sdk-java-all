@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.data.smartactivity.config request
  * 
  * @author auto create
- * @since 1.0, 2018-04-25 17:30:48
+ * @since 1.0, 2018-07-26 14:02:41
  */
 public class KoubeiMarketingDataSmartactivityConfigRequest implements AlipayRequest<KoubeiMarketingDataSmartactivityConfigResponse> {
 

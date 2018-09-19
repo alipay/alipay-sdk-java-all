@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.tool.points.update request
  * 
  * @author auto create
- * @since 1.0, 2016-11-15 18:49:47
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMarketingToolPointsUpdateRequest implements AlipayRequest<KoubeiMarketingToolPointsUpdateResponse> {
 

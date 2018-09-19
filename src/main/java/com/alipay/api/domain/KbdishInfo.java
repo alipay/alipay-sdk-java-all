@@ -7,17 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 口碑的菜品模型  包含基本信息 suku 套餐明细
+ * 口碑的菜品模型,包含基本信息,sku,套餐明细
  *
  * @author auto create
- * @since 1.0, 2018-05-08 15:09:30
+ * @since 1.0, 2018-09-11 15:26:51
  */
 public class KbdishInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1493912244281512479L;
+	private static final long serialVersionUID = 3416225721388322969L;
 
 	/**
-	 * 分类字典大类的id
+	 * 分类字典大类的id, 如果操作的是菜品，则比输入，如果操作的是sku信息，可不输入
 	 */
 	@ApiField("catetory_big_id")
 	private String catetoryBigId;
@@ -41,13 +41,26 @@ public class KbdishInfo extends AlipayObject {
 	private String curPriceFlag;
 
 	/**
+	 * 是否开台必点菜 Y是  N否，默认否；暂废弃，后续针对开台菜提供新api
+	 */
+	@ApiField("default_in_carts")
+	private String defaultInCarts;
+
+	/**
+	 * 开台菜点餐方式:如果是按数量点,直接输入数量例如2,；如果是按照就餐人数点，则输入countOnDiner这个固定的字符串
+暂废弃，后续针对开台菜提供新api
+	 */
+	@ApiField("default_in_carts_detail")
+	private String defaultInCartsDetail;
+
+	/**
 	 * 菜系,商家自定义
 	 */
 	@ApiField("dish_cuisine")
 	private String dishCuisine;
 
 	/**
-	 * 口碑的菜品id,新增的时候可以为空
+	 * 口碑的菜品id, 新增操作可以为空,修改的时候必传
 	 */
 	@ApiField("dish_id")
 	private String dishId;
@@ -97,10 +110,17 @@ public class KbdishInfo extends AlipayObject {
 	private String extContent;
 
 	/**
-	 * 口碑的商品id,用于营销透传
+	 * 口碑的商品id,用于营销透传,可不传
 	 */
 	@ApiField("goods_id")
 	private String goodsId;
+
+	/**
+	 * 菜品加料信息
+	 */
+	@ApiListField("material_binding_info_list")
+	@ApiField("kbdish_material_binding_info")
+	private List<KbdishMaterialBindingInfo> materialBindingInfoList;
 
 	/**
 	 * 商家id
@@ -109,10 +129,16 @@ public class KbdishInfo extends AlipayObject {
 	private String merchantId;
 
 	/**
-	 * 起点分数
+	 * 起点份数
 	 */
 	@ApiField("min_serving")
 	private String minServing;
+
+	/**
+	 * 最小点菜数量, 用户点餐一次加多少,不填默认为1
+	 */
+	@ApiField("mini_add_num")
+	private String miniAddNum;
 
 	/**
 	 * 数字助记码
@@ -121,16 +147,48 @@ public class KbdishInfo extends AlipayObject {
 	private String nbRememberCode;
 
 	/**
+	 * Y：不参与优惠计算  N: 参与优惠,不设置默认为N
+	 */
+	@ApiField("not_count_threshold")
+	private String notCountThreshold;
+
+	/**
+	 * 外部菜品id
+	 */
+	@ApiField("out_dish_id")
+	private String outDishId;
+
+	/**
+	 * 菜品销售属性，如辣度、加冰等，最多四个
+	 */
+	@ApiListField("property_info_list")
+	@ApiField("kbdish_property_info")
+	private List<KbdishPropertyInfo> propertyInfoList;
+
+	/**
 	 * 菜品的描述
 	 */
 	@ApiField("remarks")
 	private String remarks;
 
 	/**
+	 * 门店菜品id. 如果存门店菜品库，设置此值
+	 */
+	@ApiField("shop_id")
+	private String shopId;
+
+	/**
 	 * open 启动 stop 停用
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 菜品标签json串，key =spicy标示辣度, value=0标示不辣；1微辣；2中辣;3中辣。
+key=recommend标示推荐指数,value=0标示不设定;1标示推荐;2十分推荐;3强烈推荐。key=special标识特色标签；value=0标示不设定;1招牌；2新品
+	 */
+	@ApiField("tags")
+	private String tags;
 
 	/**
 	 * 口碑枚举定义 single:单品;packages：套餐
@@ -182,6 +240,20 @@ public class KbdishInfo extends AlipayObject {
 	}
 	public void setCurPriceFlag(String curPriceFlag) {
 		this.curPriceFlag = curPriceFlag;
+	}
+
+	public String getDefaultInCarts() {
+		return this.defaultInCarts;
+	}
+	public void setDefaultInCarts(String defaultInCarts) {
+		this.defaultInCarts = defaultInCarts;
+	}
+
+	public String getDefaultInCartsDetail() {
+		return this.defaultInCartsDetail;
+	}
+	public void setDefaultInCartsDetail(String defaultInCartsDetail) {
+		this.defaultInCartsDetail = defaultInCartsDetail;
 	}
 
 	public String getDishCuisine() {
@@ -254,6 +326,13 @@ public class KbdishInfo extends AlipayObject {
 		this.goodsId = goodsId;
 	}
 
+	public List<KbdishMaterialBindingInfo> getMaterialBindingInfoList() {
+		return this.materialBindingInfoList;
+	}
+	public void setMaterialBindingInfoList(List<KbdishMaterialBindingInfo> materialBindingInfoList) {
+		this.materialBindingInfoList = materialBindingInfoList;
+	}
+
 	public String getMerchantId() {
 		return this.merchantId;
 	}
@@ -268,11 +347,39 @@ public class KbdishInfo extends AlipayObject {
 		this.minServing = minServing;
 	}
 
+	public String getMiniAddNum() {
+		return this.miniAddNum;
+	}
+	public void setMiniAddNum(String miniAddNum) {
+		this.miniAddNum = miniAddNum;
+	}
+
 	public String getNbRememberCode() {
 		return this.nbRememberCode;
 	}
 	public void setNbRememberCode(String nbRememberCode) {
 		this.nbRememberCode = nbRememberCode;
+	}
+
+	public String getNotCountThreshold() {
+		return this.notCountThreshold;
+	}
+	public void setNotCountThreshold(String notCountThreshold) {
+		this.notCountThreshold = notCountThreshold;
+	}
+
+	public String getOutDishId() {
+		return this.outDishId;
+	}
+	public void setOutDishId(String outDishId) {
+		this.outDishId = outDishId;
+	}
+
+	public List<KbdishPropertyInfo> getPropertyInfoList() {
+		return this.propertyInfoList;
+	}
+	public void setPropertyInfoList(List<KbdishPropertyInfo> propertyInfoList) {
+		this.propertyInfoList = propertyInfoList;
 	}
 
 	public String getRemarks() {
@@ -282,11 +389,25 @@ public class KbdishInfo extends AlipayObject {
 		this.remarks = remarks;
 	}
 
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
+	}
+
 	public String getStatus() {
 		return this.status;
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getTags() {
+		return this.tags;
+	}
+	public void setTags(String tags) {
+		this.tags = tags;
 	}
 
 	public String getTypeBig() {

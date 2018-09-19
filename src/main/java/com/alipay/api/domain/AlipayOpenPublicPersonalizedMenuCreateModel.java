@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 个性化菜单创建
  *
  * @author auto create
- * @since 1.0, 2018-03-27 14:33:32
+ * @since 1.0, 2018-07-25 13:54:12
  */
 public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3531898499618162879L;
+	private static final long serialVersionUID = 7724153692519954988L;
 
 	/**
 	 * 一级菜单列表。如果是文本菜单，最多有4个一级菜单，若开发者在后台打开了"咨询反馈"的开关，则只能有3个一级菜单；如果是 ICON 菜单信息，最多有80个一级菜单(忽略二级菜单)

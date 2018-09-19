@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品中心菜谱同步api
  *
  * @author auto create
- * @since 1.0, 2018-06-29 18:01:39
+ * @since 1.0, 2018-08-03 17:44:51
  */
 public class KoubeiCateringDishCookSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4749126388786878325L;
+	private static final long serialVersionUID = 4767611433935915917L;
 
 	/**
 	 * cook：操作菜谱信息 ; shop:全量覆盖门店; detail;操作菜谱明细以及价格

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自定义数据报表列表分页查询接口
  *
  * @author auto create
- * @since 1.0, 2018-04-25 17:35:21
+ * @since 1.0, 2018-07-26 14:04:05
  */
 public class KoubeiMarketingDataCustomreportBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4874853483473317577L;
+	private static final long serialVersionUID = 7615779885538766971L;
 
 	/**
 	 * 当前页号，默认为1

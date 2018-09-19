@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询场景下内容列表信息
  *
  * @author auto create
- * @since 1.0, 2018-01-30 17:00:47
+ * @since 1.0, 2018-09-13 20:49:08
  */
 public class AlipaySocialBaseSceneContentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4664532354222745156L;
+	private static final long serialVersionUID = 3196236522543529291L;
 
 	/**
 	 * 城市id

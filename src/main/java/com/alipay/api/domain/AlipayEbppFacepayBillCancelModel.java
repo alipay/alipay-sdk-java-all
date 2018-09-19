@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 当面付撤消订单
  *
  * @author auto create
- * @since 1.0, 2017-04-24 15:50:15
+ * @since 1.0, 2018-07-30 22:11:53
  */
 public class AlipayEbppFacepayBillCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2351885433927525495L;
+	private static final long serialVersionUID = 8215172765489354948L;
 
 	/**
 	 * 支付宝交易流水号(和user_identity_code、user_id三者至少传一个)

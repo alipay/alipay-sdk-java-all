@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-08-11 19:29:28
+ * @since 1.0, 2018-09-12 16:50:00
  */
 public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2249671879631675582L;
+	private static final long serialVersionUID = 3382951957322192826L;
 
 	/** 
 	 * 签约协议号
@@ -96,6 +96,18 @@ public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("medical_card_type")
 	private String medicalCardType;
+
+	/** 
+	 * 医保卡持卡人证件号码(脱敏)
+	 */
+	@ApiField("out_user_card_no")
+	private String outUserCardNo;
+
+	/** 
+	 * 医保卡持有人姓名( 脱敏)
+	 */
+	@ApiField("out_user_name")
+	private String outUserName;
 
 	/** 
 	 * 绑定状态
@@ -187,6 +199,20 @@ public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 	}
 	public String getMedicalCardType( ) {
 		return this.medicalCardType;
+	}
+
+	public void setOutUserCardNo(String outUserCardNo) {
+		this.outUserCardNo = outUserCardNo;
+	}
+	public String getOutUserCardNo( ) {
+		return this.outUserCardNo;
+	}
+
+	public void setOutUserName(String outUserName) {
+		this.outUserName = outUserName;
+	}
+	public String getOutUserName( ) {
+		return this.outUserName;
 	}
 
 	public void setSignStatus(String signStatus) {

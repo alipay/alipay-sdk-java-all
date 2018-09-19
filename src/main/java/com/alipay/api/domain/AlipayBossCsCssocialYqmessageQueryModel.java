@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 舆情数据通用搜索
  *
  * @author auto create
- * @since 1.0, 2018-05-29 18:42:27
+ * @since 1.0, 2018-08-01 12:18:33
  */
 public class AlipayBossCsCssocialYqmessageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5413878712833629885L;
+	private static final long serialVersionUID = 7873699876756542349L;
 
 	/**
 	 * 搜索条件字符串：搜索请求的JSON字符串，JSON字符串中:

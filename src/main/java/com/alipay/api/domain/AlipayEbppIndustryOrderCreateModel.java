@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业业务订单创建
  *
  * @author auto create
- * @since 1.0, 2018-04-02 12:34:20
+ * @since 1.0, 2018-07-17 15:13:37
  */
 public class AlipayEbppIndustryOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2737175428874654328L;
+	private static final long serialVersionUID = 1748133422639575115L;
 
 	/**
 	 * 能力码是由支付宝分配的标识code

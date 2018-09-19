@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.echo.send request
  * 
  * @author auto create
- * @since 1.0, 2018-06-11 14:10:00
+ * @since 1.0, 2018-08-09 22:10:00
  */
 public class AlipayOpenEchoSendRequest implements AlipayRequest<AlipayOpenEchoSendResponse> {
 

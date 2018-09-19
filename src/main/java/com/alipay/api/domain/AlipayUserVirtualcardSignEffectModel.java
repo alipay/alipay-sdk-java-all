@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人虚拟卡生效接口
  *
  * @author auto create
- * @since 1.0, 2018-01-26 18:49:29
+ * @since 1.0, 2018-07-17 18:53:23
  */
 public class AlipayUserVirtualcardSignEffectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4495283625483543111L;
+	private static final long serialVersionUID = 6611429123948729982L;
 
 	/**
 	 * hex格式表示的虚拟卡数据，卡数据将在虚拟卡二维码中透传。

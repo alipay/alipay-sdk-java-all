@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 现金活动详情查询
  *
  * @author auto create
- * @since 1.0, 2017-11-17 12:12:56
+ * @since 1.0, 2018-07-19 14:27:35
  */
 public class AlipayMarketingCampaignCashDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4774283146691924827L;
+	private static final long serialVersionUID = 3446991139955765534L;
 
 	/**
 	 * 要查询的现金红包活动号

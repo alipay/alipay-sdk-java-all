@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 现金活动列表查询
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:33
+ * @since 1.0, 2018-07-19 14:27:01
  */
 public class AlipayMarketingCampaignCashListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3586363324559388925L;
+	private static final long serialVersionUID = 4539591353192951965L;
 
 	/**
 	 * 要查询的活动状态,不填默认返回所有类型。

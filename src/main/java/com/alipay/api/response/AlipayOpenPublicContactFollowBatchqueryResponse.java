@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.contact.follow.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2016-12-08 11:56:17
+ * @since 1.0, 2018-08-21 11:05:00
  */
 public class AlipayOpenPublicContactFollowBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3178988963746916946L;
+	private static final long serialVersionUID = 6674421826491215488L;
 
 	/** 
 	 * 联系人关注者列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权单笔操作明细查询接口
  *
  * @author auto create
- * @since 1.0, 2018-06-18 19:10:34
+ * @since 1.0, 2018-07-23 11:33:01
  */
 public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5143623651533716284L;
+	private static final long serialVersionUID = 4547524777684636855L;
 
 	/**
 	 * 支付宝授权资金订单号，与商户的授权资金订单号不能同时为空，二者都存在时，以支付宝资金授权订单号为准，该参数与支付宝授权资金操作流水号配对使用。

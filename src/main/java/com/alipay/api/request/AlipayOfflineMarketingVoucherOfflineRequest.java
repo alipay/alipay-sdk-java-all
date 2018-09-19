@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.marketing.voucher.offline request
  * 
  * @author auto create
- * @since 1.0, 2018-01-12 10:56:10
+ * @since 1.0, 2018-08-22 11:32:14
  */
 public class AlipayOfflineMarketingVoucherOfflineRequest implements AlipayRequest<AlipayOfflineMarketingVoucherOfflineResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻认证开始认证
  *
  * @author auto create
- * @since 1.0, 2017-11-29 11:56:13
+ * @since 1.0, 2018-08-29 14:42:03
  */
 public class ZhimaCustomerCertificationCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5288778428991573937L;
+	private static final long serialVersionUID = 2625856525854168971L;
 
 	/**
 	 * 一次认证的唯一标识，在完成芝麻认证初始化后可以获取

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCplifePayResultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5196592515536761179L;
+	private static final long serialVersionUID = 8589612673475184132L;
 
 	/**
 	 * 查询令牌，部分模式下用户缴物业费成功后由支付宝通过异步通知给到开发者系统，和trade_no二者传其一即可。

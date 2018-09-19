@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.roominfo.upload response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-09 20:16:50
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeRoominfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3772698188717731627L;
+	private static final long serialVersionUID = 4511241634567398169L;
 
 	/** 
 	 * 业主所在物业小区ID(支付宝平台唯一小区ID标示)

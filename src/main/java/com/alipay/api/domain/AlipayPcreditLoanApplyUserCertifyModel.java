@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授信申请用户认证
  *
  * @author auto create
- * @since 1.0, 2017-10-26 10:49:55
+ * @since 1.0, 2018-07-18 10:47:21
  */
 public class AlipayPcreditLoanApplyUserCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2719966373833122166L;
+	private static final long serialVersionUID = 4797973343861812297L;
 
 	/**
 	 * 业务流水号，即用户授信申请的单号，每次授信申请由借呗平台生成的唯一编号，通知估值时给到机构

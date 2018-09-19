@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自定义数据报表删除接口
  *
  * @author auto create
- * @since 1.0, 2018-04-25 17:21:14
+ * @since 1.0, 2018-07-26 14:04:26
  */
 public class KoubeiMarketingDataCustomreportDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2134626177432858333L;
+	private static final long serialVersionUID = 7187277435515331188L;
 
 	/**
 	 * 自定义报表规则的KEY

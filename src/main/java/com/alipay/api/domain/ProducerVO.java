@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生产厂商信息
  *
  * @author auto create
- * @since 1.0, 2018-06-05 10:54:54
+ * @since 1.0, 2018-08-17 10:43:45
  */
 public class ProducerVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7274445116958249512L;
+	private static final long serialVersionUID = 3458437158648145166L;
 
 	/**
 	 * 业务状态，EFFECTIVE:有效、INVALID:无效

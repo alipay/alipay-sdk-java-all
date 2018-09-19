@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单笔转账到支付宝账户接口
  *
  * @author auto create
- * @since 1.0, 2017-11-14 18:46:52
+ * @since 1.0, 2018-08-14 14:00:22
  */
 public class AlipayFundTransToaccountTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1513933521328162475L;
+	private static final long serialVersionUID = 3631229856384684689L;
 
 	/**
 	 * 转账金额，单位：元。
@@ -22,8 +22,7 @@ public class AlipayFundTransToaccountTransferModel extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 扩展参数，json字符串格式，目前仅支持的key：order_title：收款方转账账单标题。
-用于商户的特定业务信息的传递，只有商户与支付宝约定了传递此参数且约定了参数含义，此参数才有效。
+	 * 扩展参数，json字符串格式，目前仅支持的key=order_title，表示收款方的转账账单标题，value可以根据自己的业务定制。
 	 */
 	@ApiField("ext_param")
 	private String extParam;

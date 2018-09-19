@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户批量入驻申请接口
  *
  * @author auto create
- * @since 1.0, 2018-01-19 10:21:21
+ * @since 1.0, 2018-07-20 14:21:27
  */
 public class AlipayEbppInvoiceMerchantlistEnterApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3315793711369433655L;
+	private static final long serialVersionUID = 2591416658512474667L;
 
 	/**
 	 * 商户品牌信息

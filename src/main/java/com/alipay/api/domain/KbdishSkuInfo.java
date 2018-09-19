@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜品sku模型
  *
  * @author auto create
- * @since 1.0, 2018-05-08 15:09:30
+ * @since 1.0, 2018-09-11 15:26:51
  */
 public class KbdishSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8325765346546799595L;
+	private static final long serialVersionUID = 5192242123394624186L;
 
 	/**
 	 * 餐盒费用
@@ -46,6 +46,12 @@ public class KbdishSkuInfo extends AlipayObject {
 	 */
 	@ApiField("member_price")
 	private String memberPrice;
+
+	/**
+	 * 外部的菜品skuId, isv自己的skuId
+	 */
+	@ApiField("out_sku_id")
+	private String outSkuId;
 
 	/**
 	 * 售卖价格
@@ -141,6 +147,13 @@ public class KbdishSkuInfo extends AlipayObject {
 	}
 	public void setMemberPrice(String memberPrice) {
 		this.memberPrice = memberPrice;
+	}
+
+	public String getOutSkuId() {
+		return this.outSkuId;
+	}
+	public void setOutSkuId(String outSkuId) {
+		this.outSkuId = outSkuId;
 	}
 
 	public String getSellPrice() {

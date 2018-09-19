@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户修改
  *
  * @author auto create
- * @since 1.0, 2018-05-18 16:52:53
+ * @since 1.0, 2018-09-07 20:01:54
  */
 public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8586589271626915978L;
+	private static final long serialVersionUID = 3416458975721688882L;
 
 	/**
 	 * 商户别名
@@ -23,10 +23,16 @@ public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 	private String aliasName;
 
 	/**
-	 * 商户支付宝账号（如果有）
+	 * 商户支付宝账号，用作结算账号。与银行卡对象字段二选一必填。本字段要求与商户名称name同名，且是实名认证支付宝账户
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
+
+	/**
+	 * 二级商户支付宝账户，用于协议确认。目前商业场景（除医疗、中小学教育等）下必填。本字段要求与商户名称name同名，且是实名认证支付宝账户。如果已确认过协议，修改时本信息项不允许变更，可以传空
+	 */
+	@ApiField("binding_alipay_logon_id")
+	private String bindingAlipayLogonId;
 
 	/**
 	 * 商户结算卡信息。本业务当前只允许传入一张结算卡
@@ -168,6 +174,13 @@ public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 	}
 	public void setAlipayLogonId(String alipayLogonId) {
 		this.alipayLogonId = alipayLogonId;
+	}
+
+	public String getBindingAlipayLogonId() {
+		return this.bindingAlipayLogonId;
+	}
+	public void setBindingAlipayLogonId(String bindingAlipayLogonId) {
+		this.bindingAlipayLogonId = bindingAlipayLogonId;
 	}
 
 	public List<SettleCardInfo> getBizCards() {

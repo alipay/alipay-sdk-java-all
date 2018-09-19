@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询申请单状态
  *
  * @author auto create
- * @since 1.0, 2017-12-29 11:04:16
+ * @since 1.0, 2018-07-11 15:35:16
  */
 public class AlipayOpenAgentOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3179482829546229936L;
+	private static final long serialVersionUID = 7322615333748739876L;
 
 	/**
 	 * ISV 代商户操作事务编号，通过事务开启接口alipay.open.agent.create调用返回。

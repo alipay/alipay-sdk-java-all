@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定损宝车险图像定损请求中的图像信息
  *
  * @author auto create
- * @since 1.0, 2017-08-07 17:31:18
+ * @since 1.0, 2018-09-05 22:21:56
  */
 public class AlipayInsDataDsbRequestImageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3373144861325519642L;
+	private static final long serialVersionUID = 7577253557435595626L;
 
 	/**
 	 * 图像文件名称

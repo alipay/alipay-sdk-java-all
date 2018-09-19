@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 徐伟波测试用
  *
  * @author auto create
- * @since 1.0, 2018-04-17 18:00:37
+ * @since 1.0, 2018-08-09 19:45:02
  */
 public class AlipaySecurityProdXwbtestprodQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8579936534477128417L;
+	private static final long serialVersionUID = 8147992413594788565L;
+
+	/**
+	 * Stop
+	 */
+	@ApiField("in_a")
+	private String inA;
 
 	/**
 	 * 省份编码，国标码
@@ -24,6 +30,13 @@ public class AlipaySecurityProdXwbtestprodQueryModel extends AlipayObject {
 	 */
 	@ApiField("qwe_dfgfd")
 	private String qweDfgfd;
+
+	public String getInA() {
+		return this.inA;
+	}
+	public void setInA(String inA) {
+		this.inA = inA;
+	}
 
 	public String getProvinceCode() {
 		return this.provinceCode;

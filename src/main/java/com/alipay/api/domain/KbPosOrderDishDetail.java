@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑pos订单菜明细
  *
  * @author auto create
- * @since 1.0, 2018-03-23 13:27:34
+ * @since 1.0, 2018-09-04 11:54:26
  */
 public class KbPosOrderDishDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5321795826944738518L;
+	private static final long serialVersionUID = 3855791432411673574L;
 
 	/**
 	 * 改价（单价），以元为单位，精度到分
@@ -136,7 +136,7 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	private String outDetailNo;
 
 	/**
-	 * 做法信息，格式按照：做法=做法加价（单价）。价格以元为单位，精度到分
+	 * 做法信息，格式按照：做法1,做法2，对于有一般销售属性的菜会拼接一般销售属性信息，格式为：做法1,做法2,销售属性1,销售属性2
 	 */
 	@ApiField("practice_info")
 	private String practiceInfo;
@@ -166,6 +166,12 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	private Long remindTime;
 
 	/**
+	 * 销售属性，使用Map<String,List<String>> salesProperties = JSONObject.parseObject(sales_properties,Map.class)转换
+	 */
+	@ApiField("sales_properties")
+	private String salesProperties;
+
+	/**
 	 * 售价（单价），以元为单位，精度到分
 	 */
 	@ApiField("sell_price")
@@ -188,6 +194,12 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	 */
 	@ApiField("spec_name")
 	private String specName;
+
+	/**
+	 * 菜明细类型，SINGLE(单品)/SIDE(加料)/COMBO(套餐)/SINGLE_COMBO(套餐内单品)
+	 */
+	@ApiField("type")
+	private String type;
 
 	/**
 	 * 用户身份标识：手机号码、userId等等。如果是支付宝扫码点菜的，就是用户userId
@@ -376,6 +388,13 @@ public class KbPosOrderDishDetail extends AlipayObject {
 		this.remindTime = remindTime;
 	}
 
+	public String getSalesProperties() {
+		return this.salesProperties;
+	}
+	public void setSalesProperties(String salesProperties) {
+		this.salesProperties = salesProperties;
+	}
+
 	public String getSellPrice() {
 		return this.sellPrice;
 	}
@@ -402,6 +421,13 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	}
 	public void setSpecName(String specName) {
 		this.specName = specName;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getUserIdentity() {

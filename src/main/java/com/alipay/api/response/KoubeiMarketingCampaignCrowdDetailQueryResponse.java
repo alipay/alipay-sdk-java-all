@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.crowd.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-25 17:18:27
+ * @since 1.0, 2018-07-26 14:05:09
  */
 public class KoubeiMarketingCampaignCrowdDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5715811823462799276L;
+	private static final long serialVersionUID = 5532263227558319525L;
 
 	/** 
 	 * op:表示操作符，目前支持的有EQ相等,GT大于,GTEQ大于等于,LT小于,LTEQ小于等于,NEQ不等,LIKE模糊匹配,IN在枚举范围内,NOTIN不在枚举范围内,BETWEEN范围比较,LEFTDAYS几天以内,RIGHTDAYS几天以外,LOCATE地理位置比较,LBS地图位置数据

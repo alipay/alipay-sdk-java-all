@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.market.item.state request
  * 
  * @author auto create
- * @since 1.0, 2017-04-20 15:17:50
+ * @since 1.0, 2018-07-12 12:22:37
  */
 public class AlipayOfflineMarketItemStateRequest implements AlipayRequest<AlipayOfflineMarketItemStateResponse> {
 

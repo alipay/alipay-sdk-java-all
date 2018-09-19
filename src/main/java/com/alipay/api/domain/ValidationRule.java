@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ValidationRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2495561344838815474L;
+	private static final long serialVersionUID = 4595133461643835249L;
 
 	/**
 	 * 规则校验对应的错误提示 如：户号必须为10位数字

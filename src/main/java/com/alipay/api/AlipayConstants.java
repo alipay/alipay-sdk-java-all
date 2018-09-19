@@ -78,7 +78,7 @@ public class AlipayConstants {
     public static final String FORMAT_XML                     = "xml";
 
     /** SDK版本号 */
-    public static final String SDK_VERSION                    = "alipay-sdk-java-3.3.4.ALL";
+    public static final String SDK_VERSION                    = "alipay-sdk-java-3.3.87.ALL";
 
     public static final String PROD_CODE                      = "prod_code";
 

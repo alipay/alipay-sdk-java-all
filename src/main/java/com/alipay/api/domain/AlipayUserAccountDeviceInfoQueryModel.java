@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询设备是否支付宝新用户
  *
  * @author auto create
- * @since 1.0, 2018-06-15 19:33:47
+ * @since 1.0, 2018-07-14 11:10:03
  */
 public class AlipayUserAccountDeviceInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4493638596995377313L;
+	private static final long serialVersionUID = 5485287552756278836L;
 
 	/**
 	 * idfa或者imei号数组。同一笔请求中，数组中只能是idfa或者imei,不能既有imei，又有idfa
@@ -46,12 +46,6 @@ public class AlipayUserAccountDeviceInfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("request_from")
 	private String requestFrom;
-
-	/**
-	 * 目标人群类型,切记，如需要使用该字段，请跟支付宝技术支持联系
-	 */
-	@ApiField("target_crowd_type")
-	private String targetCrowdType;
 
 	public List<String> getDeviceIds() {
 		return this.deviceIds;
@@ -86,13 +80,6 @@ public class AlipayUserAccountDeviceInfoQueryModel extends AlipayObject {
 	}
 	public void setRequestFrom(String requestFrom) {
 		this.requestFrom = requestFrom;
-	}
-
-	public String getTargetCrowdType() {
-		return this.targetCrowdType;
-	}
-	public void setTargetCrowdType(String targetCrowdType) {
-		this.targetCrowdType = targetCrowdType;
 	}
 
 }

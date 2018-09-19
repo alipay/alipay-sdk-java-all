@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-02 13:58:14
+ * @since 1.0, 2018-09-18 16:34:28
  */
 public class KoubeiCateringOrderInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2384463393927689932L;
+	private static final long serialVersionUID = 6876333427981745484L;
 
 	/** 
 	 * 应收金额，以元为单位，精确到分
@@ -89,7 +89,8 @@ TO_GO("TO_GO", "外带"),
 	private String orderId;
 
 	/** 
-	 * 点餐方式：B2C点餐
+	 * 下单方式：
+PLATFORM——线上点，SCAN——扫码点
 	 */
 	@ApiField("order_style")
 	private String orderStyle;
@@ -162,7 +163,7 @@ TO_GO("TO_GO", "外带"),
 	private String takeNo;
 
 	/** 
-	 * 取餐类型：TABLE-桌号，NO-取餐号，NO_BOOK-取餐号（预约）
+	 * 取餐类型：TABLE-桌号，NO-取餐号，NO_BOOK-取餐号（预约），TABLE_BOOK-预约桌号
 	 */
 	@ApiField("take_style")
 	private String takeStyle;

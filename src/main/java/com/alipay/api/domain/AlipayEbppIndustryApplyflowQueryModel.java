@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公服业务通用办理流水查询
  *
  * @author auto create
- * @since 1.0, 2018-04-02 12:33:34
+ * @since 1.0, 2018-07-17 15:14:14
  */
 public class AlipayEbppIndustryApplyflowQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4331683843244659654L;
+	private static final long serialVersionUID = 2351774949123443259L;
 
 	/**
 	 * 支付宝办理流水号，支持幂等，和外部办理流水号之间必须传一个

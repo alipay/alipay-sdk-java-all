@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.loanscheme.full.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-09-25 21:10:00
+ * @since 1.0, 2018-07-26 14:22:36
  */
 public class MybankCreditLoantradeLoanschemeFullQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3897899761479652592L;
+	private static final long serialVersionUID = 6758117169189278456L;
 
 	/** 
 	 * 贷款支用时涉及的合约列表
@@ -37,6 +37,12 @@ public class MybankCreditLoantradeLoanschemeFullQueryResponse extends AlipayResp
 	 */
 	@ApiField("loan_scheme")
 	private LoanScheme loanScheme;
+
+	/** 
+	 * 还款账户
+	 */
+	@ApiField("repay_account")
+	private MyBkAccountVO repayAccount;
 
 	/** 
 	 * 收款账号信息
@@ -63,6 +69,13 @@ public class MybankCreditLoantradeLoanschemeFullQueryResponse extends AlipayResp
 	}
 	public LoanScheme getLoanScheme( ) {
 		return this.loanScheme;
+	}
+
+	public void setRepayAccount(MyBkAccountVO repayAccount) {
+		this.repayAccount = repayAccount;
+	}
+	public MyBkAccountVO getRepayAccount( ) {
+		return this.repayAccount;
 	}
 
 	public void setTransInAccount(MyBkAccountVO transInAccount) {

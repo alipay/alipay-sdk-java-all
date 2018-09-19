@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.order.app.freeze response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-20 22:11:06
+ * @since 1.0, 2018-07-26 10:05:00
  */
 public class AlipayFundAuthOrderAppFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6443254538819178464L;
+	private static final long serialVersionUID = 8113872859787762961L;
 
 	/** 
 	 * 本次操作冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -26,6 +26,18 @@ public class AlipayFundAuthOrderAppFreezeResponse extends AlipayResponse {
 	 */
 	@ApiField("auth_no")
 	private String authNo;
+
+	/** 
+	 * 本次冻结操作中信用冻结金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("credit_amount")
+	private String creditAmount;
+
+	/** 
+	 * 本次冻结操作中自有资金冻结金额，单位为：元（人民币），精确到小数点后两位
+	 */
+	@ApiField("fund_amount")
+	private String fundAmount;
 
 	/** 
 	 * 资金授权成功时间
@@ -87,6 +99,20 @@ CLOSED：关闭
 	}
 	public String getAuthNo( ) {
 		return this.authNo;
+	}
+
+	public void setCreditAmount(String creditAmount) {
+		this.creditAmount = creditAmount;
+	}
+	public String getCreditAmount( ) {
+		return this.creditAmount;
+	}
+
+	public void setFundAmount(String fundAmount) {
+		this.fundAmount = fundAmount;
+	}
+	public String getFundAmount( ) {
+		return this.fundAmount;
 	}
 
 	public void setGmtTrans(Date gmtTrans) {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.trade.habbit.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-25 17:35:38
+ * @since 1.0, 2018-07-26 14:04:58
  */
 public class KoubeiMarketingDataTradeHabbitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6442143385882861696L;
+	private static final long serialVersionUID = 1734315111449667147L;
 
 	/** 
 	 * biz_date: 业务日期  格式:yyyyMMdd

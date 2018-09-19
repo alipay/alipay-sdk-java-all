@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 抬头信息
  *
  * @author auto create
- * @since 1.0, 2018-05-28 10:43:20
+ * @since 1.0, 2018-07-16 09:27:40
  */
 public class InvoiceTitleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1265991555638215599L;
+	private static final long serialVersionUID = 4849576486294263543L;
 
 	/**
 	 * 是否为用户设置默认抬头
@@ -45,6 +45,12 @@ true（默认抬头）
 	 */
 	@ApiField("tax_register_no")
 	private String taxRegisterNo;
+
+	/**
+	 * 用户私人手机号
+	 */
+	@ApiField("tele_phone_no")
+	private String telePhoneNo;
 
 	/**
 	 * 抬头名称
@@ -118,6 +124,13 @@ CORPORATION（单位）
 	}
 	public void setTaxRegisterNo(String taxRegisterNo) {
 		this.taxRegisterNo = taxRegisterNo;
+	}
+
+	public String getTelePhoneNo() {
+		return this.telePhoneNo;
+	}
+	public void setTelePhoneNo(String telePhoneNo) {
+		this.telePhoneNo = telePhoneNo;
 	}
 
 	public String getTitleName() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 仓库模型
  *
  * @author auto create
- * @since 1.0, 2018-05-09 10:13:13
+ * @since 1.0, 2018-08-21 20:34:20
  */
 public class WarehouseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2752766566947834835L;
+	private static final long serialVersionUID = 8714337281312366163L;
 
 	/**
 	 * 仓库详细地址

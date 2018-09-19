@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机构代客户签署合约并放款
  *
  * @author auto create
- * @since 1.0, 2018-02-08 14:34:40
+ * @since 1.0, 2018-07-26 14:23:16
  */
 public class MybankCreditLoantradeLoanarCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6421469662578488544L;
+	private static final long serialVersionUID = 4628352152151851214L;
 
 	/**
 	 * 收款账号外标
@@ -88,6 +88,12 @@ OUT_BANK（外部银行）
 	private String bsnNo;
 
 	/**
+	 * 此字段主要是为了兼容新老逻辑，原来的签约并放款是由bkloanfront自己做了两阶段提交事务一致性处理，后面统一交给bkloantrade系统，如果为NEW则代表走bkloantrade去签约并放款，为空或者其他则保持原来逻辑不变
+	 */
+	@ApiField("bsn_type")
+	private String bsnType;
+
+	/**
 	 * 本次支用的授信编号，网商银行审批通过后回传给外部机构，然后由外部机构传入
 	 */
 	@ApiField("credit_no")
@@ -151,7 +157,13 @@ D：日
 	private String loanTermUnit;
 
 	/**
-	 * 是否需要签署合同
+	 * 是否需要校验同名账户，默认是校验
+	 */
+	@ApiField("need_check_account_same_name")
+	private Boolean needCheckAccountSameName;
+
+	/**
+	 * 是否需要签署合同，默认是签署
 	 */
 	@ApiField("need_sign_contract")
 	private Boolean needSignContract;
@@ -174,6 +186,12 @@ D：日
 	@ApiListField("promo_tools")
 	@ApiField("string")
 	private List<String> promoTools;
+
+	/**
+	 * 还款账户
+	 */
+	@ApiField("repay_account")
+	private MyBkAccountVO repayAccount;
 
 	/**
 	 * 还款方式，枚举值如下：
@@ -276,6 +294,13 @@ D：日
 		this.bsnNo = bsnNo;
 	}
 
+	public String getBsnType() {
+		return this.bsnType;
+	}
+	public void setBsnType(String bsnType) {
+		this.bsnType = bsnType;
+	}
+
 	public String getCreditNo() {
 		return this.creditNo;
 	}
@@ -339,6 +364,13 @@ D：日
 		this.loanTermUnit = loanTermUnit;
 	}
 
+	public Boolean getNeedCheckAccountSameName() {
+		return this.needCheckAccountSameName;
+	}
+	public void setNeedCheckAccountSameName(Boolean needCheckAccountSameName) {
+		this.needCheckAccountSameName = needCheckAccountSameName;
+	}
+
 	public Boolean getNeedSignContract() {
 		return this.needSignContract;
 	}
@@ -365,6 +397,13 @@ D：日
 	}
 	public void setPromoTools(List<String> promoTools) {
 		this.promoTools = promoTools;
+	}
+
+	public MyBkAccountVO getRepayAccount() {
+		return this.repayAccount;
+	}
+	public void setRepayAccount(MyBkAccountVO repayAccount) {
+		this.repayAccount = repayAccount;
 	}
 
 	public String getRepayMode() {

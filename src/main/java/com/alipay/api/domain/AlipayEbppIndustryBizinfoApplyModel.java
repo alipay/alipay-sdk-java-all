@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公服行业通用业务办理
  *
  * @author auto create
- * @since 1.0, 2018-04-02 12:32:45
+ * @since 1.0, 2018-07-17 15:15:05
  */
 public class AlipayEbppIndustryBizinfoApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2228272963988586372L;
+	private static final long serialVersionUID = 6392947174477291995L;
 
 	/**
 	 * 业务能力码，标识业务场景

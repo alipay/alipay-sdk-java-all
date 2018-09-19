@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出行场景，获取综合体及店铺信息入参
  *
  * @author auto create
- * @since 1.0, 2018-06-03 13:09:18
+ * @since 1.0, 2018-08-17 10:19:02
  */
 public class TravelMallRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4882423875525451983L;
+	private static final long serialVersionUID = 2429223266491535615L;
 
 	/**
 	 * 目的地距目标综合体的距离(单位:米)

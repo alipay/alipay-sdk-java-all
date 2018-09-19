@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝打赏订单查询接口，返回打赏订单明细及状态
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:18
+ * @since 1.0, 2018-09-13 19:52:55
  */
 public class AlipayFundTransThirdpartyRewardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1575926549783165123L;
+	private static final long serialVersionUID = 2532194486989196334L;
 
 	/**
 	 * 场景码，接入时找业务方分配

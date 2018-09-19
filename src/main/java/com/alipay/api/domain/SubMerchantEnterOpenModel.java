@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户门店信息模型
  *
  * @author auto create
- * @since 1.0, 2018-01-19 10:21:21
+ * @since 1.0, 2018-07-20 14:21:27
  */
 public class SubMerchantEnterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7564587387286245413L;
+	private static final long serialVersionUID = 4419864997754717168L;
+
+	/**
+	 * 开票商户pid，入驻支付即开票场景的时候，该字段必传
+	 */
+	@ApiField("pid")
+	private String pid;
 
 	/**
 	 * 商户门店税号。
@@ -30,6 +36,13 @@ public class SubMerchantEnterOpenModel extends AlipayObject {
 	 */
 	@ApiField("sub_m_short_name")
 	private String subMShortName;
+
+	public String getPid() {
+		return this.pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
+	}
 
 	public String getRegisterNo() {
 		return this.registerNo;

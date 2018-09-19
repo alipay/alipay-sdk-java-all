@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2018-06-14 17:32:05
+ * @since 1.0, 2018-09-11 16:43:18
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7157434954149229544L;
+	private static final long serialVersionUID = 6853832658241559845L;
 
 	/**
 	 * 支付宝的店铺编号
@@ -90,6 +90,12 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private List<GoodsDetail> goodsDetail;
 
 	/**
+	 * 物流信息
+	 */
+	@ApiField("logistics_detail")
+	private LogisticsDetail logisticsDetail;
+
+	/**
 	 * 商户原始订单号，最大长度限制32位
 	 */
 	@ApiField("merchant_order_no")
@@ -106,6 +112,12 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 收货人及地址信息
+	 */
+	@ApiField("receiver_address_info")
+	private ReceiverAddressInfo receiverAddressInfo;
 
 	/**
 	 * 描述分账信息，json格式。
@@ -248,6 +260,13 @@ public class AlipayTradeCreateModel extends AlipayObject {
 		this.goodsDetail = goodsDetail;
 	}
 
+	public LogisticsDetail getLogisticsDetail() {
+		return this.logisticsDetail;
+	}
+	public void setLogisticsDetail(LogisticsDetail logisticsDetail) {
+		this.logisticsDetail = logisticsDetail;
+	}
+
 	public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
@@ -267,6 +286,13 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public ReceiverAddressInfo getReceiverAddressInfo() {
+		return this.receiverAddressInfo;
+	}
+	public void setReceiverAddressInfo(ReceiverAddressInfo receiverAddressInfo) {
+		this.receiverAddressInfo = receiverAddressInfo;
 	}
 
 	public RoyaltyInfo getRoyaltyInfo() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 个性化扩展区创建接口
  *
  * @author auto create
- * @since 1.0, 2018-05-11 19:08:24
+ * @since 1.0, 2018-07-25 13:51:40
  */
 public class AlipayOpenPublicPersonalizedExtensionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3346557123456947689L;
+	private static final long serialVersionUID = 1469465532676164739L;
 
 	/**
 	 * 扩展区列表，最大条数为3

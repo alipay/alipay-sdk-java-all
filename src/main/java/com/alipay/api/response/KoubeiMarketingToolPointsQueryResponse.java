@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.tool.points.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-10-09 11:45:18
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class KoubeiMarketingToolPointsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3399656389933985335L;
+	private static final long serialVersionUID = 7578824363832727966L;
 
 	/** 
 	 * 可用集点

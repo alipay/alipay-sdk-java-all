@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.community.details.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-09 20:14:02
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayEcoCplifeCommunityDetailsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6313788289677636597L;
+	private static final long serialVersionUID = 6863644462912492142L;
 
 	/** 
 	 * 开发者关联的高德地图中住宅、住宿或地名地址等小区相关类型的POI（地图兴趣点）ID列表和POI名称，中间用"|"分隔。

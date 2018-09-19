@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容风险识别结果查询接口服务
  *
  * @author auto create
- * @since 1.0, 2016-10-31 17:32:43
+ * @since 1.0, 2018-08-08 10:36:23
  */
 public class AlipaySecurityRiskContentResultGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1254418598546616139L;
+	private static final long serialVersionUID = 6337189517459516668L;
 
 	/**
 	 * 应用场景
@@ -25,6 +25,12 @@ public class AlipaySecurityRiskContentResultGetModel extends AlipayObject {
 	@ApiField("app_scene_data_id")
 	private String appSceneDataId;
 
+	/**
+	 * 内容检测事件id，根据此id查询异步检测结果
+	 */
+	@ApiField("event_id")
+	private String eventId;
+
 	public String getAppScene() {
 		return this.appScene;
 	}
@@ -37,6 +43,13 @@ public class AlipaySecurityRiskContentResultGetModel extends AlipayObject {
 	}
 	public void setAppSceneDataId(String appSceneDataId) {
 		this.appSceneDataId = appSceneDataId;
+	}
+
+	public String getEventId() {
+		return this.eventId;
+	}
+	public void setEventId(String eventId) {
+		this.eventId = eventId;
 	}
 
 }

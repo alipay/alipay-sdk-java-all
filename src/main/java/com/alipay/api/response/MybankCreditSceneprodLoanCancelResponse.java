@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.loan.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-23 11:50:33
+ * @since 1.0, 2018-07-31 10:38:45
  */
 public class MybankCreditSceneprodLoanCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1621857829716887428L;
+	private static final long serialVersionUID = 5849594124443416598L;
 
 	/** 
 	 * 是否可重试

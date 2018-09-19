@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.DeviceResultInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -10,18 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.device.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-20 14:16:05
+ * @since 1.0, 2018-08-13 10:35:00
  */
 public class AlipayUserAccountDeviceInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8625916885366479146L;
+	private static final long serialVersionUID = 4599384534185484799L;
 
 	/** 
-	 * 满足条件的设备id列表，如无满足条件的，则为空
+	 * 满足投放条件的简要设备信息
 	 */
-	@ApiListField("device_ids")
-	@ApiField("string")
-	private List<String> deviceIds;
+	@ApiListField("device_infos")
+	@ApiField("device_result_info")
+	private List<DeviceResultInfo> deviceInfos;
 
 	/** 
 	 * 设备类型，如：IDFA、IMEI、MOBILE等
@@ -41,11 +42,11 @@ public class AlipayUserAccountDeviceInfoQueryResponse extends AlipayResponse {
 	@ApiField("result_code")
 	private String resultCode;
 
-	public void setDeviceIds(List<String> deviceIds) {
-		this.deviceIds = deviceIds;
+	public void setDeviceInfos(List<DeviceResultInfo> deviceInfos) {
+		this.deviceInfos = deviceInfos;
 	}
-	public List<String> getDeviceIds( ) {
-		return this.deviceIds;
+	public List<DeviceResultInfo> getDeviceInfos( ) {
+		return this.deviceInfos;
 	}
 
 	public void setDeviceType(String deviceType) {

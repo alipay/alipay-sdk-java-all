@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.operator.freeze response.
  * 
  * @author auto create
- * @since 1.0, 2018-05-30 15:42:08
+ * @since 1.0, 2018-07-13 20:43:19
  */
 public class KoubeiMerchantOperatorFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8729941671782443884L;
+	private static final long serialVersionUID = 5122577874793853615L;
 
 	/** 
 	 * 操作结果 true:success, false: failed

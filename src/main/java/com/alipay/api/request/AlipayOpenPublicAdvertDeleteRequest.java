@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.advert.delete request
  * 
  * @author auto create
- * @since 1.0, 2017-11-07 10:29:27
+ * @since 1.0, 2018-07-13 17:18:06
  */
 public class AlipayOpenPublicAdvertDeleteRequest implements AlipayRequest<AlipayOpenPublicAdvertDeleteResponse> {
 

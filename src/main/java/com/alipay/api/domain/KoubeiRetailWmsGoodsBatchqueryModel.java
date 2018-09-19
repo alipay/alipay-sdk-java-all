@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑零售货品信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2018-06-05 10:59:06
+ * @since 1.0, 2018-08-22 11:16:42
  */
 public class KoubeiRetailWmsGoodsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2599226296613695797L;
+	private static final long serialVersionUID = 1863816685361517661L;
 
 	/**
 	 * 货品编码，限制批量查询100个

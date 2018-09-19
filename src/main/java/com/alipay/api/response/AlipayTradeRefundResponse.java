@@ -5,6 +5,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TradeFundBill;
+import com.alipay.api.domain.PresetPayToolInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-09 16:40:00
+ * @since 1.0, 2018-09-14 12:00:21
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8146489167758294583L;
+	private static final long serialVersionUID = 7178383685532584977L;
 
 	/** 
 	 * 用户的登录id
@@ -90,6 +91,12 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_fee")
 	private String refundFee;
+
+	/** 
+	 * 退回的前置资产列表
+	 */
+	@ApiField("refund_preset_paytool_list")
+	private PresetPayToolInfo refundPresetPaytoolList;
 
 	/** 
 	 * 本次商户实际退回金额
@@ -192,6 +199,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	}
 	public String getRefundFee( ) {
 		return this.refundFee;
+	}
+
+	public void setRefundPresetPaytoolList(PresetPayToolInfo refundPresetPaytoolList) {
+		this.refundPresetPaytoolList = refundPresetPaytoolList;
+	}
+	public PresetPayToolInfo getRefundPresetPaytoolList( ) {
+		return this.refundPresetPaytoolList;
 	}
 
 	public void setSendBackFee(String sendBackFee) {

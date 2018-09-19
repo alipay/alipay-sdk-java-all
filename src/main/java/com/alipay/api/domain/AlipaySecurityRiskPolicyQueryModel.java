@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安全策略咨询服务输出
  *
  * @author auto create
- * @since 1.0, 2018-05-10 14:28:19
+ * @since 1.0, 2018-09-18 10:50:24
  */
 public class AlipaySecurityRiskPolicyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3356472136537736357L;
+	private static final long serialVersionUID = 1834635843295942741L;
 
 	/**
 	 * 风险类型：表示风险处理或风险咨询——process/advice

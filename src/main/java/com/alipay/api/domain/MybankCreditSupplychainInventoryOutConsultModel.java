@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 供应链金融-交易出库咨询
  *
  * @author auto create
- * @since 1.0, 2018-02-08 14:44:32
+ * @since 1.0, 2018-07-28 01:11:28
  */
 public class MybankCreditSupplychainInventoryOutConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4593481853286916381L;
+	private static final long serialVersionUID = 3711886819279733313L;
 
 	/**
 	 * 贷款合约编号
@@ -36,6 +36,12 @@ public class MybankCreditSupplychainInventoryOutConsultModel extends AlipayObjec
 	private Member customer;
 
 	/**
+	 * 扩展字段，在特定场景下必填
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
+
+	/**
 	 * 外部订单号，格式：机构ipRoleId_外部订单号
 	 */
 	@ApiField("out_order_no")
@@ -48,7 +54,7 @@ public class MybankCreditSupplychainInventoryOutConsultModel extends AlipayObjec
 	private String salePdCode;
 
 	/**
-	 * FACTORING：保理，PREPAYMENT：预付融资，CREDITPAY：信任付
+	 * FACTORING：保理，PREPAYMENT：预付融资，CREDITPAY：信任付，UN_TRADE_SCENE：非交易出库
 	 */
 	@ApiField("trade_type")
 	private String tradeType;
@@ -72,6 +78,13 @@ public class MybankCreditSupplychainInventoryOutConsultModel extends AlipayObjec
 	}
 	public void setCustomer(Member customer) {
 		this.customer = customer;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getOutOrderNo() {

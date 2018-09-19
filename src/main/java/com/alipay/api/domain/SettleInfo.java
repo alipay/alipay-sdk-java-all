@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 描述结算信息，json格式。
  *
  * @author auto create
- * @since 1.0, 2018-04-04 18:19:51
+ * @since 1.0, 2018-07-16 12:29:53
  */
 public class SettleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1169381641364899383L;
+	private static final long serialVersionUID = 8162373931236827853L;
 
 	/**
 	 * 结算详细信息，json数组，目前只支持一条。

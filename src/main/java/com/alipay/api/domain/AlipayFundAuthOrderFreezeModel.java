@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2018-06-15 11:12:07
+ * @since 1.0, 2018-07-20 17:13:54
  */
 public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5132351336833562874L;
+	private static final long serialVersionUID = 3118617165275442421L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -32,6 +32,12 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	 */
 	@ApiField("auth_code_type")
 	private String authCodeType;
+
+	/**
+	 * 商户可用该参数指定用户可使用的支付渠道，本期支持商户可支持三种支付渠道，余额宝（MONEY_FUND）、花呗（PCREDIT_PAY）以及芝麻信用（CREDITZHIMA）。商户可设置一种支付渠道，也可设置多种支付渠道。
+	 */
+	@ApiField("enable_pay_channels")
+	private String enablePayChannels;
 
 	/**
 	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 
@@ -119,6 +125,13 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	}
 	public void setAuthCodeType(String authCodeType) {
 		this.authCodeType = authCodeType;
+	}
+
+	public String getEnablePayChannels() {
+		return this.enablePayChannels;
+	}
+	public void setEnablePayChannels(String enablePayChannels) {
+		this.enablePayChannels = enablePayChannels;
 	}
 
 	public String getExtraParam() {

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.echo.send response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-11 14:10:00
+ * @since 1.0, 2018-08-09 22:10:00
  */
 public class AlipayOpenEchoSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1519467923226182949L;
+	private static final long serialVersionUID = 6766657681437198122L;
 
 	/** 
 	 * DDDD
@@ -38,6 +38,12 @@ public class AlipayOpenEchoSendResponse extends AlipayResponse {
 	 */
 	@ApiField("out_c")
 	private String outC;
+
+	/** 
+	 * xxx
+	 */
+	@ApiField("out_d")
+	private String outD;
 
 	/** 
 	 * hello world
@@ -71,6 +77,13 @@ public class AlipayOpenEchoSendResponse extends AlipayResponse {
 	}
 	public String getOutC( ) {
 		return this.outC;
+	}
+
+	public void setOutD(String outD) {
+		this.outD = outD;
+	}
+	public String getOutD( ) {
+		return this.outD;
 	}
 
 	public void setWord(String word) {

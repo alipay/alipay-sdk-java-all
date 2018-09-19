@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融订单关闭
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:49:53
+ * @since 1.0, 2018-07-31 10:38:42
  */
 public class MybankCreditSceneprodLoanCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2597623185274673699L;
+	private static final long serialVersionUID = 2426555725879969451L;
+
+	/**
+	 * 关闭订单的原因
+	 */
+	@ApiField("cancel_reason")
+	private String cancelReason;
 
 	/**
 	 * 机构编码，机构接入场景金融平台时分配，固定值
@@ -42,6 +48,13 @@ public class MybankCreditSceneprodLoanCancelModel extends AlipayObject {
 	 */
 	@ApiField("site_user_id")
 	private String siteUserId;
+
+	public String getCancelReason() {
+		return this.cancelReason;
+	}
+	public void setCancelReason(String cancelReason) {
+		this.cancelReason = cancelReason;
+	}
 
 	public String getOrgCode() {
 		return this.orgCode;

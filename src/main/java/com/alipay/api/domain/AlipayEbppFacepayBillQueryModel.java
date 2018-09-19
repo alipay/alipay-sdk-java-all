@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费当面付账单状态查询接口
  *
  * @author auto create
- * @since 1.0, 2017-12-08 15:03:09
+ * @since 1.0, 2018-07-30 22:11:37
  */
 public class AlipayEbppFacepayBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8422875389444474167L;
+	private static final long serialVersionUID = 8255666365394495779L;
 
 	/**
 	 * 支付宝交易流水号(和user_id、user_identity_code三者至少传一个) 

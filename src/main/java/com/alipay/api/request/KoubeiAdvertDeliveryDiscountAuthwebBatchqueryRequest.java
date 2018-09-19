@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.advert.delivery.discount.authweb.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2018-01-30 11:51:23
+ * @since 1.0, 2018-07-31 20:47:25
  */
 public class KoubeiAdvertDeliveryDiscountAuthwebBatchqueryRequest implements AlipayRequest<KoubeiAdvertDeliveryDiscountAuthwebBatchqueryResponse> {
 

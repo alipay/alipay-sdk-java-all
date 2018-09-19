@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * ddd
  *
  * @author auto create
- * @since 1.0, 2018-06-11 14:04:01
+ * @since 1.0, 2018-08-08 21:56:22
  */
 public class MyObjectDdd extends AlipayObject {
 
-	private static final long serialVersionUID = 8321387338275588932L;
+	private static final long serialVersionUID = 8528973221972267434L;
+
+	/**
+	 * xx
+	 */
+	@ApiField("item")
+	private String item;
 
 	/**
 	 * xxx
 	 */
 	@ApiField("param")
 	private String param;
+
+	public String getItem() {
+		return this.item;
+	}
+	public void setItem(String item) {
+		this.item = item;
+	}
 
 	public String getParam() {
 		return this.param;

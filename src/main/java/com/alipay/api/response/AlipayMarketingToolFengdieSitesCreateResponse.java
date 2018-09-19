@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.sites.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-26 10:13:04
+ * @since 1.0, 2018-08-19 16:17:55
  */
 public class AlipayMarketingToolFengdieSitesCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1365844558446152961L;
+	private static final long serialVersionUID = 6522992364444451374L;
 
 	/** 
 	 * 创建站点的返回值模型

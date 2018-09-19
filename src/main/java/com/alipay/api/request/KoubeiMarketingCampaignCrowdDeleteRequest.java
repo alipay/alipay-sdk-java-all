@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.crowd.delete request
  * 
  * @author auto create
- * @since 1.0, 2018-04-25 17:17:50
+ * @since 1.0, 2018-07-26 14:04:50
  */
 public class KoubeiMarketingCampaignCrowdDeleteRequest implements AlipayRequest<KoubeiMarketingCampaignCrowdDeleteResponse> {
 

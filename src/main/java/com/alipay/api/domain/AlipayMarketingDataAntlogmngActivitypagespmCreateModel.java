@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凤蝶H5应用申请SPM
  *
  * @author auto create
- * @since 1.0, 2018-01-10 15:10:51
+ * @since 1.0, 2018-08-19 16:18:07
  */
 public class AlipayMarketingDataAntlogmngActivitypagespmCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6244513435537188675L;
+	private static final long serialVersionUID = 6167191784369999349L;
 
 	/**
 	 * 活动Id

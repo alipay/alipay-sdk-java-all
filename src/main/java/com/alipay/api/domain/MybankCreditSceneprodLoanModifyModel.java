@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融订单状态修改
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:57:18
+ * @since 1.0, 2018-07-31 10:38:20
  */
 public class MybankCreditSceneprodLoanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5414597891551431318L;
+	private static final long serialVersionUID = 7257763668543688781L;
 
 	/**
 	 * 业务订单扩展字段，根据机构不同填入的参数会有区别
 	 */
 	@ApiField("ext_param")
 	private String extParam;
+
+	/**
+	 * 扩展字段实体，规范了通用的扩展字段内的信息，便于调用方使用，与ext_param作用相同。与ext_param有同名字段冲突时以ext_param_info内容为准。
+	 */
+	@ApiField("ext_param_info")
+	private SceneExtParam extParamInfo;
 
 	/**
 	 * 出资机构在网商的角色号（ipRoleId）, 不需要更改可以不填
@@ -78,6 +84,13 @@ public class MybankCreditSceneprodLoanModifyModel extends AlipayObject {
 	}
 	public void setExtParam(String extParam) {
 		this.extParam = extParam;
+	}
+
+	public SceneExtParam getExtParamInfo() {
+		return this.extParamInfo;
+	}
+	public void setExtParamInfo(SceneExtParam extParamInfo) {
+		this.extParamInfo = extParamInfo;
 	}
 
 	public String getFinanceInstIproleId() {

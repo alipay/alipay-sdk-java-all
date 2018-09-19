@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.mdeviceprod.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-06 14:10:00
+ * @since 1.0, 2018-07-31 17:10:00
  */
 public class AlipayCommerceIotMdeviceprodQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2787555465792668913L;
+	private static final long serialVersionUID = 6527478733568897533L;
 
 	/** 
 	 * 设备激活时间
@@ -23,10 +23,22 @@ public class AlipayCommerceIotMdeviceprodQueryResponse extends AlipayResponse {
 	private Date activateTime;
 
 	/** 
+	 * 地址信息
+	 */
+	@ApiField("addr_info")
+	private String addrInfo;
+
+	/** 
 	 * 业务类型
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/** 
+	 * 机具唯一id
+	 */
+	@ApiField("device_id")
+	private String deviceId;
 
 	/** 
 	 * 机具名称
@@ -59,6 +71,24 @@ public class AlipayCommerceIotMdeviceprodQueryResponse extends AlipayResponse {
 	private MerchantModel merchant;
 
 	/** 
+	 * 店铺地址
+	 */
+	@ApiField("shop_address")
+	private String shopAddress;
+
+	/** 
+	 * 店铺id
+	 */
+	@ApiField("shop_id")
+	private String shopId;
+
+	/** 
+	 * xxx店铺
+	 */
+	@ApiField("shop_name")
+	private String shopName;
+
+	/** 
 	 * 机具状态code
 	 */
 	@ApiField("status")
@@ -83,11 +113,25 @@ public class AlipayCommerceIotMdeviceprodQueryResponse extends AlipayResponse {
 		return this.activateTime;
 	}
 
+	public void setAddrInfo(String addrInfo) {
+		this.addrInfo = addrInfo;
+	}
+	public String getAddrInfo( ) {
+		return this.addrInfo;
+	}
+
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 	public String getBizType( ) {
 		return this.bizType;
+	}
+
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
+	}
+	public String getDeviceId( ) {
+		return this.deviceId;
 	}
 
 	public void setDeviceName(String deviceName) {
@@ -123,6 +167,27 @@ public class AlipayCommerceIotMdeviceprodQueryResponse extends AlipayResponse {
 	}
 	public MerchantModel getMerchant( ) {
 		return this.merchant;
+	}
+
+	public void setShopAddress(String shopAddress) {
+		this.shopAddress = shopAddress;
+	}
+	public String getShopAddress( ) {
+		return this.shopAddress;
+	}
+
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
+	}
+	public String getShopId( ) {
+		return this.shopId;
+	}
+
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+	public String getShopName( ) {
+		return this.shopName;
 	}
 
 	public void setStatus(String status) {

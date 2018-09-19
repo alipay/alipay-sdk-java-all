@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.prodarrangement.contracttext.query request
  * 
  * @author auto create
- * @since 1.0, 2017-09-29 12:17:25
+ * @since 1.0, 2018-07-23 18:58:45
  */
 public class MybankCreditProdarrangementContracttextQueryRequest implements AlipayRequest<MybankCreditProdarrangementContracttextQueryResponse> {
 

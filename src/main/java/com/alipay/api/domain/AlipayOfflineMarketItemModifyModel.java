@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户可以通过此接口对商品进行库存等信息的修改（库存修改值只能大于当前值）
  *
  * @author auto create
- * @since 1.0, 2017-04-20 15:18:01
+ * @since 1.0, 2018-07-12 12:22:31
  */
 public class AlipayOfflineMarketItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8778672292935635864L;
+	private static final long serialVersionUID = 3896968815118963469L;
 
 	/**
 	 * 审核规则。支付宝内部使用，外部商户不需填写此字段。

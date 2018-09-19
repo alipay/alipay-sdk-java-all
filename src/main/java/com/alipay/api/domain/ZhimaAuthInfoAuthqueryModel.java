@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaAuthInfoAuthqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7173175631844138376L;
+	private static final long serialVersionUID = 7353178424359334318L;
 
 	/**
 	 * json格式的内容,包含userId,userId为支付宝用户id,用户授权后商户可以拿到这个支付宝userId

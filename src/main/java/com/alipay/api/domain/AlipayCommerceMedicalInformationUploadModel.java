@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业挂号报备接口
  *
  * @author auto create
- * @since 1.0, 2017-08-11 19:29:11
+ * @since 1.0, 2018-09-12 16:58:43
  */
 public class AlipayCommerceMedicalInformationUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6496379186549436278L;
+	private static final long serialVersionUID = 4224158318433763175L;
 
 	/**
 	 * 支付授权码
@@ -72,6 +72,12 @@ public class AlipayCommerceMedicalInformationUploadModel extends AlipayObject {
 	 */
 	@ApiField("is_insurance")
 	private String isInsurance;
+
+	/**
+	 * 医保卡卡机构内部ID号
+	 */
+	@ApiField("medical_card_id")
+	private String medicalCardId;
 
 	/**
 	 * 医保机构的编号
@@ -212,6 +218,13 @@ public class AlipayCommerceMedicalInformationUploadModel extends AlipayObject {
 	}
 	public void setIsInsurance(String isInsurance) {
 		this.isInsurance = isInsurance;
+	}
+
+	public String getMedicalCardId() {
+		return this.medicalCardId;
+	}
+	public void setMedicalCardId(String medicalCardId) {
+		this.medicalCardId = medicalCardId;
 	}
 
 	public String getMedicalCardInstId() {

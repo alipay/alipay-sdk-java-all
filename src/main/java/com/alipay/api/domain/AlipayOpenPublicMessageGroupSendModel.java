@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分组消息发送接口
  *
  * @author auto create
- * @since 1.0, 2018-05-11 19:07:35
+ * @since 1.0, 2018-07-25 13:53:43
  */
 public class AlipayOpenPublicMessageGroupSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6315887717141193889L;
+	private static final long serialVersionUID = 5724639357236279448L;
 
 	/**
 	 * 图文消息，当msg_type为image-text，该值必须设置，图文消息中的图片建议尺寸 750 x 350px，小于3M，图片支持jpg、png格式

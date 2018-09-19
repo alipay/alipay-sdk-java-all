@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多保单投保申请
  *
  * @author auto create
- * @since 1.0, 2017-09-28 17:22:49
+ * @since 1.0, 2018-07-09 17:45:36
  */
 public class AlipayInsSceneApplicationGroupApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284671181426328366L;
+	private static final long serialVersionUID = 2416344465683452185L;
 
 	/**
 	 * 收件人
@@ -42,6 +42,19 @@ public class AlipayInsSceneApplicationGroupApplyModel extends AlipayObject {
 	private String billTitle;
 
 	/**
+	 * 权益，可选不唯一，优惠使用，优惠决策时产生。
+	 */
+	@ApiListField("coupons")
+	@ApiField("ins_coupon")
+	private List<InsCoupon> coupons;
+
+	/**
+	 * 优惠单号，可选不唯一，优惠使用，优惠决策时产生。
+	 */
+	@ApiField("discount_id")
+	private String discountId;
+
+	/**
 	 * 商户生成的外部投保业务号,必须保证唯一
 	 */
 	@ApiField("out_biz_no")
@@ -52,6 +65,12 @@ public class AlipayInsSceneApplicationGroupApplyModel extends AlipayObject {
 	 */
 	@ApiField("prod_code")
 	private String prodCode;
+
+	/**
+	 * 报价单号，可选不唯一，用于指定投保订单对应的报价单，报价时产生。
+	 */
+	@ApiField("quote_biz_id")
+	private String quoteBizId;
 
 	/**
 	 * 渠道来源
@@ -87,6 +106,20 @@ public class AlipayInsSceneApplicationGroupApplyModel extends AlipayObject {
 		this.billTitle = billTitle;
 	}
 
+	public List<InsCoupon> getCoupons() {
+		return this.coupons;
+	}
+	public void setCoupons(List<InsCoupon> coupons) {
+		this.coupons = coupons;
+	}
+
+	public String getDiscountId() {
+		return this.discountId;
+	}
+	public void setDiscountId(String discountId) {
+		this.discountId = discountId;
+	}
+
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
@@ -99,6 +132,13 @@ public class AlipayInsSceneApplicationGroupApplyModel extends AlipayObject {
 	}
 	public void setProdCode(String prodCode) {
 		this.prodCode = prodCode;
+	}
+
+	public String getQuoteBizId() {
+		return this.quoteBizId;
+	}
+	public void setQuoteBizId(String quoteBizId) {
+		this.quoteBizId = quoteBizId;
 	}
 
 	public String getSource() {

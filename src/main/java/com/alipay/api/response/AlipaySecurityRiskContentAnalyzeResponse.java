@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.content.analyze response.
  * 
  * @author auto create
- * @since 1.0, 2016-10-28 09:34:57
+ * @since 1.0, 2018-08-08 10:40:00
  */
 public class AlipaySecurityRiskContentAnalyzeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5219351174578144846L;
+	private static final long serialVersionUID = 4434421673252192481L;
 
 	/** 
 	 * 内容ID，用于查询异步识别结果时作为查询ID
 	 */
 	@ApiField("app_scene_data_id")
 	private String appSceneDataId;
+
+	/** 
+	 * 内容安全同步检测返回的事件id，用于异步获取检测结果
+	 */
+	@ApiField("event_id")
+	private String eventId;
 
 	/** 
 	 * 命中结果详情
@@ -62,6 +68,13 @@ RECOVER("恢复数据，将误判断的内容，恢复回来")
 	}
 	public String getAppSceneDataId( ) {
 		return this.appSceneDataId;
+	}
+
+	public void setEventId(String eventId) {
+		this.eventId = eventId;
+	}
+	public String getEventId( ) {
+		return this.eventId;
 	}
 
 	public void setHitDetectItems(List<InfoSecHitDetectItem> hitDetectItems) {

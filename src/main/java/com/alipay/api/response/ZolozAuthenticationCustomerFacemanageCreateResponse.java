@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.facemanage.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-17 15:29:07
+ * @since 1.0, 2018-07-27 17:35:00
  */
 public class ZolozAuthenticationCustomerFacemanageCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6626497881558784347L;
+	private static final long serialVersionUID = 8839967984356312986L;
 
 	/** 
 	 * 业务结果
@@ -27,10 +27,22 @@ public class ZolozAuthenticationCustomerFacemanageCreateResponse extends AlipayR
 	private String retcode;
 
 	/** 
+	 * 返回详细码
+	 */
+	@ApiField("retcodesub")
+	private String retcodesub;
+
+	/** 
 	 * 返回信息
 	 */
 	@ApiField("retmessage")
 	private String retmessage;
+
+	/** 
+	 * 返回详细信息
+	 */
+	@ApiField("retmessagesub")
+	private String retmessagesub;
 
 	public void setResult(String result) {
 		this.result = result;
@@ -46,11 +58,25 @@ public class ZolozAuthenticationCustomerFacemanageCreateResponse extends AlipayR
 		return this.retcode;
 	}
 
+	public void setRetcodesub(String retcodesub) {
+		this.retcodesub = retcodesub;
+	}
+	public String getRetcodesub( ) {
+		return this.retcodesub;
+	}
+
 	public void setRetmessage(String retmessage) {
 		this.retmessage = retmessage;
 	}
 	public String getRetmessage( ) {
 		return this.retmessage;
+	}
+
+	public void setRetmessagesub(String retmessagesub) {
+		this.retmessagesub = retmessagesub;
+	}
+	public String getRetmessagesub( ) {
+		return this.retmessagesub;
 	}
 
 }

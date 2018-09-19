@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜谱模型
  *
  * @author auto create
- * @since 1.0, 2018-05-08 15:09:42
+ * @since 1.0, 2018-09-14 14:32:11
  */
 public class KbdishCookInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7527423272438716675L;
+	private static final long serialVersionUID = 4384325522911489869L;
 
 	/**
 	 * 区域
@@ -23,7 +23,7 @@ public class KbdishCookInfo extends AlipayObject {
 	private String area;
 
 	/**
-	 * 渠道    eatin堂食，takeout外卖,paipai 扫码
+	 * 渠道    eatin堂食，takeout外卖,paipai 扫码,kbb2c 口碑点餐
 	 */
 	@ApiField("cook_channel")
 	private String cookChannel;
@@ -71,6 +71,18 @@ public class KbdishCookInfo extends AlipayObject {
 	private String endTime;
 
 	/**
+	 * 数据的创建时间
+	 */
+	@ApiField("gmt_create")
+	private String gmtCreate;
+
+	/**
+	 * 数据的修改时间
+	 */
+	@ApiField("gmt_modified")
+	private String gmtModified;
+
+	/**
 	 * 口碑菜谱明细
 	 */
 	@ApiListField("kb_cook_detail_list")
@@ -84,7 +96,8 @@ public class KbdishCookInfo extends AlipayObject {
 	private String merchantId;
 
 	/**
-	 * 时间约束类型 forever:永久;  week:按周，每周周几 month:按月,每月几号
+	 * 时间约束类型 forever:永久;  week:按周，每周周几 month:按月,每月几号.
+如果操作的是菜谱，非空必传。如果是操作门店或者挂明细，可为空
 	 */
 	@ApiField("period_type")
 	private String periodType;
@@ -199,6 +212,20 @@ public class KbdishCookInfo extends AlipayObject {
 	}
 	public void setEndTime(String endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getGmtCreate() {
+		return this.gmtCreate;
+	}
+	public void setGmtCreate(String gmtCreate) {
+		this.gmtCreate = gmtCreate;
+	}
+
+	public String getGmtModified() {
+		return this.gmtModified;
+	}
+	public void setGmtModified(String gmtModified) {
+		this.gmtModified = gmtModified;
 	}
 
 	public List<KbdishCookDetailInfo> getKbCookDetailList() {

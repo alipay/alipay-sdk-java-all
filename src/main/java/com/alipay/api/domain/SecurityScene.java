@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安全场景
  *
  * @author auto create
- * @since 1.0, 2018-05-10 14:28:19
+ * @since 1.0, 2018-09-18 10:50:24
  */
 public class SecurityScene extends AlipayObject {
 
-	private static final long serialVersionUID = 4834887767938347168L;
+	private static final long serialVersionUID = 3251222656771229793L;
 
 	/**
 	 * 接入渠道

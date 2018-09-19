@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用支付
  *
  * @author auto create
- * @since 1.0, 2018-06-22 14:08:20
+ * @since 1.0, 2018-07-27 09:31:06
  */
 public class ZhimaMerchantOrderCreditPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1593624199569588814L;
+	private static final long serialVersionUID = 7114649385625692324L;
+
+	/**
+	 * 优惠券金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]，无支付行为时为空，例如订单取消或者支付金额为0
+	 */
+	@ApiField("coupon_amount")
+	private String couponAmount;
 
 	/**
 	 * CANCEL，FINISH, INSTALLMENT  订单完结类型，目前包括取消(CANCEL)、完结(FINISH) 分期扣款(INSTALLMENT)
@@ -44,10 +50,23 @@ public class ZhimaMerchantOrderCreditPayModel extends AlipayObject {
 	private String remark;
 
 	/**
+	 * 是否使用优惠券，默认为false，可选值：true或false，字符串形式，目前仅针对回收行业生效
+	 */
+	@ApiField("use_coupon")
+	private String useCoupon;
+
+	/**
 	 * 芝麻订单号
 	 */
 	@ApiField("zm_order_no")
 	private String zmOrderNo;
+
+	public String getCouponAmount() {
+		return this.couponAmount;
+	}
+	public void setCouponAmount(String couponAmount) {
+		this.couponAmount = couponAmount;
+	}
 
 	public String getOrderOperateType() {
 		return this.orderOperateType;
@@ -82,6 +101,13 @@ public class ZhimaMerchantOrderCreditPayModel extends AlipayObject {
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+
+	public String getUseCoupon() {
+		return this.useCoupon;
+	}
+	public void setUseCoupon(String useCoupon) {
+		this.useCoupon = useCoupon;
 	}
 
 	public String getZmOrderNo() {

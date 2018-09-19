@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝跨境退税
  *
  * @author auto create
- * @since 1.0, 2018-03-05 10:30:46
+ * @since 1.0, 2018-09-06 11:06:28
  */
 public class AlipayOverseasTaxOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4448172144827847466L;
+	private static final long serialVersionUID = 5889479817258265573L;
 
 	/**
 	 * 退税数据有效天数，15到30天，超过指定天数未处理的退税单会过期而退税失败
@@ -64,21 +64,22 @@ public class AlipayOverseasTaxOrderPayModel extends AlipayObject {
 	private String docId;
 
 	/**
-	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式
+	 * 业务扩展参数，用于商户的特定业务信息的传递,json格式.当identify_account_type为uid,退税公司必须传递支付宝钱包付款码，退税公司通过扫描用户支付宝钱包付款码获取,17位到32位的数字.格式为{"barcodeNo":"barcodeNo"}
 	 */
 	@ApiField("extend_param")
 	private String extendParam;
 
 	/**
 	 * 支付宝账号标识号，由identify_account_type指定类型:
-identify_account_type为barcode表示支付宝钱包付款码，退税公司通过扫描用户支付宝钱包付款码获取，17位到32位的数字
+identify_account_type为barcode表示支付宝钱包付款码，退税公司通过扫描用户支付宝钱包付款码获取，17位到32位的数字.
+identify_account_type为uid表示支付宝用户Id,退税公司通过调用alipay.overseas.tax.userinfo.query接口获取
 	 */
 	@ApiField("identify_account_no")
 	private String identifyAccountNo;
 
 	/**
 	 * 支付宝账号标识类型，
-条码退税，取值：barcode
+条码退税，取值：barcode,uid
 	 */
 	@ApiField("identify_account_type")
 	private String identifyAccountType;

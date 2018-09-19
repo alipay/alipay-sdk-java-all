@@ -8,17 +8,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.loanar.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-02-08 14:35:20
+ * @since 1.0, 2018-07-26 14:23:20
  */
 public class MybankCreditLoantradeLoanarCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6569657937576963852L;
+	private static final long serialVersionUID = 2726155138675518453L;
+
+	/** 
+	 * 事件流水号
+	 */
+	@ApiField("ev_seq_no")
+	private String evSeqNo;
 
 	/** 
 	 * 贷款合约号
 	 */
 	@ApiField("loan_ar_no")
 	private String loanArNo;
+
+	public void setEvSeqNo(String evSeqNo) {
+		this.evSeqNo = evSeqNo;
+	}
+	public String getEvSeqNo( ) {
+		return this.evSeqNo;
+	}
 
 	public void setLoanArNo(String loanArNo) {
 		this.loanArNo = loanArNo;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.electronicid.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-25 15:30:00
+ * @since 1.0, 2018-08-22 14:30:01
  */
 public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1358611142238798452L;
+	private static final long serialVersionUID = 4449749427648118843L;
 
 	/** 
 	 * 地址。用机构的AES加密后值。
@@ -51,7 +51,7 @@ public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 	private String nation;
 
 	/** 
-	 * 当前人脸照片。base64。用机构的AES加密后值。
+	 * 当前人脸照片。base64。用机构的AES加密后值。敏感生物特征默认不输出，如特需请提供相应书面政策法规内容由BD向法务审批。
 	 */
 	@ApiField("picture")
 	private String picture;

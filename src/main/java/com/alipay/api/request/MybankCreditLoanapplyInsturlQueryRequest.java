@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.insturl.query request
  * 
  * @author auto create
- * @since 1.0, 2018-06-12 18:57:14
+ * @since 1.0, 2018-09-17 18:00:00
  */
 public class MybankCreditLoanapplyInsturlQueryRequest implements AlipayRequest<MybankCreditLoanapplyInsturlQueryResponse> {
 
