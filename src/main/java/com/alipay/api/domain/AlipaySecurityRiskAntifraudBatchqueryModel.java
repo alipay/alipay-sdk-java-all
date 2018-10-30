@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反舞弊风险批量查询
  *
  * @author auto create
- * @since 1.0, 2017-07-20 10:50:29
+ * @since 1.0, 2018-10-22 17:53:22
  */
 public class AlipaySecurityRiskAntifraudBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7523123332556953465L;
+	private static final long serialVersionUID = 5734444782225799622L;
 
 	/**
 	 * company_list+传入的一批待检查的企业名单+用户传入+还可以传入{"creditCode":"企业信用代码"}或者{"regNo":"企业工商注册号"}

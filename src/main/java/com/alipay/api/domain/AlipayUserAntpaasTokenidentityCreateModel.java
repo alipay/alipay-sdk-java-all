@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 基于识别创建蚂蚁通行证，即创建匿名用户Id
  *
  * @author auto create
- * @since 1.0, 2018-08-20 12:05:23
+ * @since 1.0, 2018-10-15 15:12:29
  */
 public class AlipayUserAntpaasTokenidentityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1387939532911492665L;
+	private static final long serialVersionUID = 8513142561472457328L;
 
 	/**
 	 * 业务Id，如新零售场景下创建匿名淘宝账户时的品牌商Id。

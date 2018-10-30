@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取推荐商圈商品券接口
  *
  * @author auto create
- * @since 1.0, 2018-07-05 14:11:16
+ * @since 1.0, 2018-10-24 17:29:51
  */
 public class KoubeiMarketingDataMallRecommendGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7669451222919824822L;
+	private static final long serialVersionUID = 2492225968697166662L;
 
 	/**
 	 * 获取几条数据，最大值传入50，默认值10

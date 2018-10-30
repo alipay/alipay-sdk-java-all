@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.cook.condition.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2018-09-11 14:18:24
+ * @since 1.0, 2018-10-09 14:12:15
  */
 public class KoubeiCateringCookConditionBatchqueryRequest implements AlipayRequest<KoubeiCateringCookConditionBatchqueryResponse> {
 

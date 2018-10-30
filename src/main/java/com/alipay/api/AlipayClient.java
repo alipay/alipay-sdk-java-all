@@ -83,4 +83,12 @@ public interface AlipayClient {
      */
     public <TR extends AlipayResponse, T extends AlipayRequest<TR>> TR parseAppSyncResult(Map<String, String> result,
                                                                                           Class<T> requsetClazz) throws AlipayApiException;
+
+    /**
+     * 批量调用
+     * @param request
+     * @return
+     * @throws AlipayApiException
+     */
+    public BatchAlipayResponse execute(BatchAlipayRequest request) throws AlipayApiException;
 }

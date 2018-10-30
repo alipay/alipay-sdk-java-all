@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退款解冻信息
  *
  * @author auto create
- * @since 1.0, 2016-11-21 12:06:39
+ * @since 1.0, 2018-09-25 17:13:11
  */
 public class RefundUnfreezeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8846676267822966694L;
+	private static final long serialVersionUID = 2232756663516227716L;
 
 	/**
 	 * 冻结单号

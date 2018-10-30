@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.material.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-05 19:48:30
+ * @since 1.0, 2018-10-12 15:32:56
  */
 public class KoubeiCateringDishMaterialQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7443682424875944146L;
+	private static final long serialVersionUID = 3511883937477963289L;
 
 	/** 
 	 * 加料模型
@@ -24,11 +24,63 @@ public class KoubeiCateringDishMaterialQueryResponse extends AlipayResponse {
 	@ApiField("kbdish_material_info")
 	private List<KbdishMaterialInfo> kbDishMaterialInfoList;
 
+	/** 
+	 * 表示当前页码
+	 */
+	@ApiField("page_no")
+	private String pageNo;
+
+	/** 
+	 * 表示每页条数
+	 */
+	@ApiField("page_size")
+	private String pageSize;
+
+	/** 
+	 * 数据总条数
+	 */
+	@ApiField("total_count")
+	private String totalCount;
+
+	/** 
+	 * 总页数
+	 */
+	@ApiField("total_page")
+	private String totalPage;
+
 	public void setKbDishMaterialInfoList(List<KbdishMaterialInfo> kbDishMaterialInfoList) {
 		this.kbDishMaterialInfoList = kbDishMaterialInfoList;
 	}
 	public List<KbdishMaterialInfo> getKbDishMaterialInfoList( ) {
 		return this.kbDishMaterialInfoList;
+	}
+
+	public void setPageNo(String pageNo) {
+		this.pageNo = pageNo;
+	}
+	public String getPageNo( ) {
+		return this.pageNo;
+	}
+
+	public void setPageSize(String pageSize) {
+		this.pageSize = pageSize;
+	}
+	public String getPageSize( ) {
+		return this.pageSize;
+	}
+
+	public void setTotalCount(String totalCount) {
+		this.totalCount = totalCount;
+	}
+	public String getTotalCount( ) {
+		return this.totalCount;
+	}
+
+	public void setTotalPage(String totalPage) {
+		this.totalPage = totalPage;
+	}
+	public String getTotalPage( ) {
+		return this.totalPage;
 	}
 
 }

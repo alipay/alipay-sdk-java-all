@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.FaceAttrInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.customer.certifyzhub.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-16 10:03:19
+ * @since 1.0, 2018-09-20 17:55:00
  */
 public class ZolozIdentificationCustomerCertifyzhubQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8848456357477213511L;
+	private static final long serialVersionUID = 2814625585584585222L;
 
 	/** 
 	 * 业务单据号，用于核对和排查
 	 */
 	@ApiField("biz_id")
 	private String bizId;
+
+	/** 
+	 * 人脸属性信息，提供对人脸base64图片的额外描述，包括不限于人脸矩形框。目前仅为矩形框，无需脱敏。
+	 */
+	@ApiField("face_attr_info")
+	private FaceAttrInfo faceAttrInfo;
 
 	/** 
 	 * 图片字节数组进行Base64编码后的字符串
@@ -43,6 +50,13 @@ public class ZolozIdentificationCustomerCertifyzhubQueryResponse extends AlipayR
 	}
 	public String getBizId( ) {
 		return this.bizId;
+	}
+
+	public void setFaceAttrInfo(FaceAttrInfo faceAttrInfo) {
+		this.faceAttrInfo = faceAttrInfo;
+	}
+	public FaceAttrInfo getFaceAttrInfo( ) {
+		return this.faceAttrInfo;
 	}
 
 	public void setImgStr(String imgStr) {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.jfexport.instbill.query request
  * 
  * @author auto create
- * @since 1.0, 2018-05-02 15:06:35
+ * @since 1.0, 2018-10-19 10:38:30
  */
 public class AlipayEbppJfexportInstbillQueryRequest implements AlipayRequest<AlipayEbppJfexportInstbillQueryResponse> {
 

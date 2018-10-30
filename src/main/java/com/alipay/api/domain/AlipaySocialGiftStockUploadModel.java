@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 送礼平台库存导入接口
  *
  * @author auto create
- * @since 1.0, 2018-09-04 16:32:23
+ * @since 1.0, 2018-10-11 21:12:36
  */
 public class AlipaySocialGiftStockUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3446767181343514939L;
+	private static final long serialVersionUID = 4294421898293576657L;
 
 	/**
-	 * 券码列表，商户体系内可兑换使用的券码(大小写不敏感)
+	 * 券码列表，商户体系内可兑换使用的券码(大小写不敏感)。注意数量必须大于0，同时系统会默认trim处理。库存导入接口，主要就是导入这些卡码。对于同一批次的幂等。卡码不会重复导入。
 	 */
 	@ApiListField("entity_list")
 	@ApiField("string")

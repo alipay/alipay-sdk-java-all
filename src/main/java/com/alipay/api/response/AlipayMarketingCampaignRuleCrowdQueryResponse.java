@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.rule.crowd.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-12-19 15:27:43
+ * @since 1.0, 2018-10-17 14:07:17
  */
 public class AlipayMarketingCampaignRuleCrowdQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5725453853353441895L;
+	private static final long serialVersionUID = 8636251685796851225L;
 
 	/** 
 	 * tagCode：标签别名，指定标签类型，如城市、年龄等，如pubsrv_city_code为城市标签，创建时必填，可传入多组标签

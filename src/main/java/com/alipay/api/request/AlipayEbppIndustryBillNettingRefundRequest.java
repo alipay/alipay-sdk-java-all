@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.bill.netting.refund request
  * 
  * @author auto create
- * @since 1.0, 2018-09-14 14:30:01
+ * @since 1.0, 2018-09-27 14:46:11
  */
 public class AlipayEbppIndustryBillNettingRefundRequest implements AlipayRequest<AlipayEbppIndustryBillNettingRefundResponse> {
 

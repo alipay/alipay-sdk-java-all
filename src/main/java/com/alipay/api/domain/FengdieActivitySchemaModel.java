@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * fengdie schema 数据
  *
  * @author auto create
- * @since 1.0, 2018-05-17 14:44:09
+ * @since 1.0, 2018-10-22 16:59:38
  */
 public class FengdieActivitySchemaModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7347856227833483581L;
+	private static final long serialVersionUID = 2284667633384122473L;
 
 	/**
 	 * 指定 schema 具体数据， 格式为 schema 数据 JSON 序列化后字符串，参照模板包中 schema_path 同名的 json 文件

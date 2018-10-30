@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2018-09-11 16:42:52
+ * @since 1.0, 2018-10-26 17:18:01
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2751487184996738468L;
+	private static final long serialVersionUID = 8692453343912527135L;
 
 	/**
 	 * 代扣业务需要传入协议相关信息
@@ -121,6 +121,12 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 优惠明细参数，通过此属性补充营销参数
+	 */
+	@ApiField("promo_params")
+	private PromoParam promoParams;
 
 	/**
 	 * 描述分账信息，json格式，其它说明详见分账说明
@@ -327,6 +333,13 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public PromoParam getPromoParams() {
+		return this.promoParams;
+	}
+	public void setPromoParams(PromoParam promoParams) {
+		this.promoParams = promoParams;
 	}
 
 	public RoyaltyInfo getRoyaltyInfo() {

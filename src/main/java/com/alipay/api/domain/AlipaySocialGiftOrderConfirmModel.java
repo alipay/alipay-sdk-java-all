@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户订单激活确认接口
  *
  * @author auto create
- * @since 1.0, 2018-09-04 16:32:53
+ * @since 1.0, 2018-10-11 21:12:50
  */
 public class AlipaySocialGiftOrderConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5548566946235496574L;
+	private static final long serialVersionUID = 5268446962681338224L;
 
 	/**
-	 * 卡生效截止时间，可用于卡包中卡展示
+	 * 商户通过该接口落卡包后，其支付宝卡包中对应实体（卡、券）的失效时间。该值可以选填。【注意：如果不填写，默认为生效时间后3年】。其时间规则可以在商户后台进行配置。
 	 */
 	@ApiField("end_date")
 	private Date endDate;
@@ -34,13 +34,13 @@ public class AlipaySocialGiftOrderConfirmModel extends AlipayObject {
 	private String orderId;
 
 	/**
-	 * 卡码的有效起始时间，可用于卡包展示
+	 * 商户通过该接口落卡包后，其支付宝卡包中对应实体（卡、券）的生效时间。该值可以选填。默认生效时间为当前时间。其规则可以在商户后台进行配置。
 	 */
 	@ApiField("start_date")
 	private Date startDate;
 
 	/**
-	 * 卡的金额字段，可用于在支付宝进行显示（比如卡包中卡金额）
+	 * 订单确认金额，用户可选填，如果不填则使用SKU票面价值。如果填写则使用该填写的价格在卡包中展示（如果后台配置为落卡包）。注意支付宝端不会校验该金额的有效性（但会校验是否不小于零），需要商户自行保证。
 	 */
 	@ApiField("total_price")
 	private String totalPrice;

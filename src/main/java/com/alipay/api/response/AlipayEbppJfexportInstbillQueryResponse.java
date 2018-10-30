@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.jfexport.instbill.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-05-02 15:06:35
+ * @since 1.0, 2018-10-19 10:38:30
  */
 public class AlipayEbppJfexportInstbillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8352529493944742184L;
+	private static final long serialVersionUID = 3252697912527296197L;
 
 	/** 
 	 * 户号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应商同步的发货信息和物流信息对象
  *
  * @author auto create
- * @since 1.0, 2017-11-21 17:40:07
+ * @since 1.0, 2018-09-25 11:42:57
  */
 public class AccessPurchaseOrderSend extends AlipayObject {
 
-	private static final long serialVersionUID = 4343634287993851724L;
+	private static final long serialVersionUID = 6799327246977311786L;
 
 	/**
 	 * 申请单明细号

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取云凤蝶站点页面预览数据返回值模型
  *
  * @author auto create
- * @since 1.0, 2018-05-17 16:00:41
+ * @since 1.0, 2018-10-22 16:59:00
  */
 public class FengdiePreviewQueryRespModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1229523352815885128L;
+	private static final long serialVersionUID = 8825647983952295658L;
 
 	/**
 	 * 云凤蝶页面预览数据列表

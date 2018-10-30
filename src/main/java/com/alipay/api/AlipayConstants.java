@@ -78,7 +78,7 @@ public class AlipayConstants {
     public static final String FORMAT_XML                     = "xml";
 
     /** SDK版本号 */
-    public static final String SDK_VERSION                    = "alipay-sdk-java-3.3.87.ALL";
+    public static final String SDK_VERSION                    = "alipay-sdk-java-3.4.27.ALL";
 
     public static final String PROD_CODE                      = "prod_code";
 
@@ -90,5 +90,8 @@ public class AlipayConstants {
 
     /** 加密后XML返回报文的节点名字 */
     public static final String RESPONSE_XML_ENCRYPT_NODE_NAME = "response_encrypted";
+
+    /** 批量请求id **/
+    public static final String BATCH_REQUEST_ID               = "batch_request_id";
 
 }

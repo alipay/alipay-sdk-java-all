@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.paygrowth.payability.query request
  * 
  * @author auto create
- * @since 1.0, 2018-07-16 21:05:00
+ * @since 1.0, 2018-10-22 14:15:01
  */
 public class AlipayTradePaygrowthPayabilityQueryRequest implements AlipayRequest<AlipayTradePaygrowthPayabilityQueryResponse> {
 

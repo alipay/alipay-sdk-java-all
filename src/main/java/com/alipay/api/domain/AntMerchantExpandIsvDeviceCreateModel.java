@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ISV机具申请
  *
  * @author auto create
- * @since 1.0, 2018-08-23 19:58:01
+ * @since 1.0, 2018-10-09 11:55:09
  */
 public class AntMerchantExpandIsvDeviceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8726222951653711326L;
+	private static final long serialVersionUID = 5463118767389397192L;
 
 	/**
 	 * 机具使用的业务场景：目前只支持团餐：CATERING_DEVICE

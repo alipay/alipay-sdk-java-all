@@ -11,14 +11,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.ticketcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-08-30 20:01:01
+ * @since 1.0, 2018-09-29 01:10:00
  */
 public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3246419833418697452L;
+	private static final long serialVersionUID = 2312568728266422272L;
 
 	/** 
-	 * 次卡场景，可用核销份数。仅当次卡场景有值
+	 * 非次卡场景，表示同一订单下同类凭证的可核销份数； 次卡场景，表示可用核销份数。
 	 */
 	@ApiField("available_quantity")
 	private String availableQuantity;
@@ -107,6 +107,12 @@ public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("time_cards")
 	private String timeCards;
+
+	/** 
+	 * 非次卡场景，表示同一订单下同类凭证的总份数；次卡场景，表示次卡原始总份数
+	 */
+	@ApiField("total_quantity")
+	private String totalQuantity;
 
 	/** 
 	 * 券码对应的凭证资产id
@@ -203,6 +209,13 @@ public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 	}
 	public String getTimeCards( ) {
 		return this.timeCards;
+	}
+
+	public void setTotalQuantity(String totalQuantity) {
+		this.totalQuantity = totalQuantity;
+	}
+	public String getTotalQuantity( ) {
+		return this.totalQuantity;
 	}
 
 	public void setVoucherId(String voucherId) {

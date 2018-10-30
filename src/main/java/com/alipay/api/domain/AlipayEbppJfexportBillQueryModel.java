@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支付宝缴费订单
  *
  * @author auto create
- * @since 1.0, 2018-05-02 14:57:29
+ * @since 1.0, 2018-10-19 10:38:53
  */
 public class AlipayEbppJfexportBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4677334541553715999L;
+	private static final long serialVersionUID = 3475477783795361577L;
 
 	/**
 	 * 支付宝的业务订单号，具有唯一性和幂等性

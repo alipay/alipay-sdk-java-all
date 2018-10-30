@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.agentcreate.query request
  * 
  * @author auto create
- * @since 1.0, 2017-10-10 11:16:11
+ * @since 1.0, 2018-09-29 20:23:27
  */
 public class AlipayOpenPublicLifeAgentcreateQueryRequest implements AlipayRequest<AlipayOpenPublicLifeAgentcreateQueryResponse> {
 

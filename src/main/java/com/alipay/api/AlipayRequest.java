@@ -141,5 +141,4 @@ public interface AlipayRequest<T extends AlipayResponse> {
      * @param bizModel
      */
     public void setBizModel(AlipayObject bizModel);
-
 }

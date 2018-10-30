@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询外部商户订单
  *
  * @author auto create
- * @since 1.0, 2018-05-02 17:55:29
+ * @since 1.0, 2018-10-19 10:38:11
  */
 public class AlipayEbppJfexportMerchantbillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7785543731123235156L;
+	private static final long serialVersionUID = 2797349517892254867L;
 
 	/**
 	 * 业务类型英文名称 ，固定传JF，表示缴费

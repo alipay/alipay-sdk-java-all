@@ -7,23 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退分润结果
  *
  * @author auto create
- * @since 1.0, 2016-11-21 12:06:39
+ * @since 1.0, 2018-09-25 17:38:11
  */
 public class RefundRoyaltyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4142476646327327248L;
+	private static final long serialVersionUID = 7359788127179755663L;
 
 	/**
-	 * 退分润金额
+	 * 退分账金额
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
 
 	/**
-	 * 退分润结果码
+	 * 退分账结果码
 	 */
 	@ApiField("result_code")
 	private String resultCode;
+
+	/**
+	 * 分账类型.
+普通分账为：transfer;
+补差为：replenish;
+为空默认为分账transfer;
+	 */
+	@ApiField("royalty_type")
+	private String royaltyType;
 
 	/**
 	 * 转入人支付宝账号对应用户ID
@@ -61,6 +70,13 @@ public class RefundRoyaltyResult extends AlipayObject {
 	}
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
+	}
+
+	public String getRoyaltyType() {
+		return this.royaltyType;
+	}
+	public void setRoyaltyType(String royaltyType) {
+		this.royaltyType = royaltyType;
 	}
 
 	public String getTransIn() {

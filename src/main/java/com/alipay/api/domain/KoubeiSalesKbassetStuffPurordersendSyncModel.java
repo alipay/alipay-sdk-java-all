@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 采购单发货通知接口
  *
  * @author auto create
- * @since 1.0, 2017-11-21 17:40:07
+ * @since 1.0, 2018-09-25 11:42:57
  */
 public class KoubeiSalesKbassetStuffPurordersendSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3689866425381832231L;
+	private static final long serialVersionUID = 1475559654269918321L;
 
 	/**
 	 * 供应商同步的发货信息及物流信息记录（最多100条）

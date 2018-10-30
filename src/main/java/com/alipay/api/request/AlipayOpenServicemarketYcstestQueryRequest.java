@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.ycstest.query request
  * 
  * @author auto create
- * @since 1.0, 2018-08-06 15:35:23
+ * @since 1.0, 2018-10-18 18:56:08
  */
 public class AlipayOpenServicemarketYcstestQueryRequest implements AlipayRequest<AlipayOpenServicemarketYcstestQueryResponse> {
 

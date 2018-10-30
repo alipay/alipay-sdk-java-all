@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝&淘宝拼团成团成功后查询发奖
  *
  * @author auto create
- * @since 1.0, 2018-09-12 16:51:20
+ * @since 1.0, 2018-10-13 11:45:16
  */
 public class AlipayUserGroupshoppingBenefitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1895452631443819289L;
+	private static final long serialVersionUID = 8842748953362967914L;
 
 	/**
 	 * 支付宝淘宝拼团的组团id

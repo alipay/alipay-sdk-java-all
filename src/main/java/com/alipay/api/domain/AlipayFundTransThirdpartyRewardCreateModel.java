@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部商户可通过此接口创建支付宝用户的打赏订单，而后通过支付宝快捷支付对此订单进行支付完成打赏。（不支持企业用户）
  *
  * @author auto create
- * @since 1.0, 2018-09-18 15:50:21
+ * @since 1.0, 2018-09-25 22:23:37
  */
 public class AlipayFundTransThirdpartyRewardCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5133694991584775113L;
+	private static final long serialVersionUID = 4456111663967272453L;
 
 	/**
 	 * 打赏金额，单位：人民币分

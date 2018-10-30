@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户商户发起退款
  *
  * @author auto create
- * @since 1.0, 2018-09-04 16:32:47
+ * @since 1.0, 2018-10-11 21:12:42
  */
 public class AlipaySocialGiftOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7271877155223146312L;
+	private static final long serialVersionUID = 4688784275344374379L;
 
 	/**
 	 * 商户再送礼平台的唯一ID，用于标识具体的调用业务方，需要先在送礼平台进行业务类型的分配之后才看使用。
@@ -26,7 +26,7 @@ public class AlipaySocialGiftOrderRefundModel extends AlipayObject {
 	private String orderId;
 
 	/**
-	 * 部分退款金额
+	 * 部分退款金额，该金额当退款类型为部分退款的时候，是必填的。部分退款以为这退部分金额。注意目前该接口只支持单次退款，即只允许单笔订单退一次。
 	 */
 	@ApiField("refund_price")
 	private String refundPrice;
@@ -35,6 +35,7 @@ public class AlipaySocialGiftOrderRefundModel extends AlipayObject {
 	 * 退款类型：
 REFUND_ALL：全额退款， 取订单金额进行全额退款
 REFUND_PARTLY：部分退款
+默认为：REFUND_ALL
 	 */
 	@ApiField("refund_type")
 	private String refundType;

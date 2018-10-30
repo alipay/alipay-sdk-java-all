@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 优惠规则
  *
  * @author auto create
- * @since 1.0, 2017-03-03 16:47:49
+ * @since 1.0, 2018-10-22 17:53:22
  */
 public class DstCampRuleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1125259162576872875L;
+	private static final long serialVersionUID = 5289469143218563465L;
 
 	/**
 	 * 支付宝收银台:PC端:PC   安全支付端:WIRELESS_CLIENT   无线WAP端:WIRELESS_WAP   协议支付;AGREEMENTPAY

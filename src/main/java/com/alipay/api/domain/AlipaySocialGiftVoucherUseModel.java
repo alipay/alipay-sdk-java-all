@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 送礼平台商户进行核销调用
  *
  * @author auto create
- * @since 1.0, 2018-09-04 16:32:42
+ * @since 1.0, 2018-10-11 21:13:15
  */
 public class AlipaySocialGiftVoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6487571777614891345L;
+	private static final long serialVersionUID = 1566787557843796899L;
 
 	/**
-	 * 失效时间
+	 * 商户通过该接口落卡包后，其支付宝卡包中对应实体（卡、券）的失效时间。该值可以选填。【注意：如果不填写，默认为生效时间后3年】。其时间规则可以在商户后台进行配置。
 	 */
 	@ApiField("end_date")
 	private Date endDate;
@@ -34,25 +34,25 @@ public class AlipaySocialGiftVoucherUseModel extends AlipayObject {
 	private String orderId;
 
 	/**
-	 * 当前金额，注意这个金额是核销后的当前金额。use_price是核销金额
+	 * 当前用户剩余的金额，该金额会作为剩余金额显示到卡包中。注意，需要由商户自行保证该金额的正确性。平台不会存这个剩余金额，也不会做相关校验（除了必须不能小于零外）
 	 */
 	@ApiField("price")
 	private String price;
 
 	/**
-	 * 生效时间
+	 * 商户通过该接口落卡包后，其支付宝卡包中对应实体（卡、券）的生效时间。该值可以选填。默认生效时间为当前时间。其规则可以在商户后台进行配置。
 	 */
 	@ApiField("start_date")
 	private Date startDate;
 
 	/**
-	 * 核销金额
+	 * 核销金额，即本次用户消费的金额。
 	 */
 	@ApiField("use_price")
 	private String usePrice;
 
 	/**
-	 * 卡码code
+	 * 卡码code，改id为商户上传到平台的id。
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;

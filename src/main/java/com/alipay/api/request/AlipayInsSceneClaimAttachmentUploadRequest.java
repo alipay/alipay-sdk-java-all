@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.claim.attachment.upload request
  * 
  * @author auto create
- * @since 1.0, 2017-07-19 16:56:49
+ * @since 1.0, 2018-10-10 14:55:31
  */
 public class AlipayInsSceneClaimAttachmentUploadRequest implements AlipayUploadRequest<AlipayInsSceneClaimAttachmentUploadResponse> {
 

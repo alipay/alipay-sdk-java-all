@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.order.rating.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-08-24 15:25:00
+ * @since 1.0, 2018-10-18 15:45:01
  */
 public class ZhimaCreditEpOrderRatingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3298289518856621954L;
+	private static final long serialVersionUID = 4529778614471692843L;
 
 	/** 
 	 * 评估额度;
@@ -20,6 +20,12 @@ public class ZhimaCreditEpOrderRatingQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("amount")
 	private Long amount;
+
+	/** 
+	 * 用户的信用层级；部分行业场景输出，使用前请先跟对接BD沟通该行业场景下是否会输出该信用层级以及层级的值范围。
+	 */
+	@ApiField("credit_level")
+	private String creditLevel;
 
 	/** 
 	 * 风控决策结果：
@@ -83,6 +89,13 @@ SCORE_REJECT ：分数不准入
 	}
 	public Long getAmount( ) {
 		return this.amount;
+	}
+
+	public void setCreditLevel(String creditLevel) {
+		this.creditLevel = creditLevel;
+	}
+	public String getCreditLevel( ) {
+		return this.creditLevel;
 	}
 
 	public void setDecision(String decision) {

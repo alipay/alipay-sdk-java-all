@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 前置支付资产信息
  *
  * @author auto create
- * @since 1.0, 2018-08-18 10:42:53
+ * @since 1.0, 2018-10-09 17:40:15
  */
 public class PresetPayToolInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8528787463499168437L;
+	private static final long serialVersionUID = 2811732148824949981L;
 
 	/**
 	 * 前置资产金额

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.life.agentcreate.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-10 11:16:11
+ * @since 1.0, 2018-09-29 20:23:27
  */
 public class AlipayOpenPublicLifeAgentcreateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5559334385177941846L;
+	private static final long serialVersionUID = 3362931381544339985L;
 
 	/** 
 	 * 只有审核通过，且商户在支付宝发送的授权邮件中确认授权，此时生活号才会正式创建，查询才会返回该值

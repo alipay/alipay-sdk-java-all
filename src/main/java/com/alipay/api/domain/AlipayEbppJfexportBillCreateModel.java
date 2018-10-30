@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建支付宝缴费订单
  *
  * @author auto create
- * @since 1.0, 2018-05-02 14:57:46
+ * @since 1.0, 2018-10-19 10:38:41
  */
 public class AlipayEbppJfexportBillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2231731936494583886L;
+	private static final long serialVersionUID = 4742638156733634685L;
 
 	/**
 	 * 支付金额,单位为：RMB 元。

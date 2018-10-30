@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 物料生产/配送订单处理结果
  *
  * @author auto create
- * @since 1.0, 2018-08-14 13:52:26
+ * @since 1.0, 2018-09-19 14:08:09
  */
 public class AssetResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8171176747742864487L;
+	private static final long serialVersionUID = 8616957395979211812L;
 
 	/**
 	 * 订单明细ID
@@ -36,6 +39,13 @@ public class AssetResult extends AlipayObject {
 	 */
 	@ApiField("error_desc")
 	private String errorDesc;
+
+	/**
+	 * AssetSubFeedbackInfo 列表
+	 */
+	@ApiListField("sub_feedback_infos")
+	@ApiField("asset_sub_feedback_info")
+	private List<AssetSubFeedbackInfo> subFeedbackInfos;
 
 	/**
 	 * 是否处理成功
@@ -69,6 +79,13 @@ public class AssetResult extends AlipayObject {
 	}
 	public void setErrorDesc(String errorDesc) {
 		this.errorDesc = errorDesc;
+	}
+
+	public List<AssetSubFeedbackInfo> getSubFeedbackInfos() {
+		return this.subFeedbackInfos;
+	}
+	public void setSubFeedbackInfos(List<AssetSubFeedbackInfo> subFeedbackInfos) {
+		this.subFeedbackInfos = subFeedbackInfos;
 	}
 
 	public Boolean getSuccess() {

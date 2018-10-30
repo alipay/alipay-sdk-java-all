@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.rule.crowd.query request
  * 
  * @author auto create
- * @since 1.0, 2016-12-19 15:27:43
+ * @since 1.0, 2018-10-17 14:07:17
  */
 public class AlipayMarketingCampaignRuleCrowdQueryRequest implements AlipayRequest<AlipayMarketingCampaignRuleCrowdQueryResponse> {
 

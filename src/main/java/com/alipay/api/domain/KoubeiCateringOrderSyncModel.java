@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单同步
  *
  * @author auto create
- * @since 1.0, 2018-09-12 14:26:46
+ * @since 1.0, 2018-10-24 19:03:34
  */
 public class KoubeiCateringOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2768473914857272255L;
+	private static final long serialVersionUID = 3525441883459777474L;
 
 	/**
 	 * 订单向下调整金额

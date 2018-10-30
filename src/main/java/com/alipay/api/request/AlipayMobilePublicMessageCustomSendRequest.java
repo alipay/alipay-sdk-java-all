@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.message.custom.send request
  * 
  * @author auto create
- * @since 1.0, 2018-08-15 10:15:00
+ * @since 1.0, 2018-10-27 21:22:31
  */
 public class AlipayMobilePublicMessageCustomSendRequest implements AlipayRequest<AlipayMobilePublicMessageCustomSendResponse> {
 

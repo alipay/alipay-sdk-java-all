@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.groupshopping.benefit.query request
  * 
  * @author auto create
- * @since 1.0, 2018-09-12 16:55:00
+ * @since 1.0, 2018-10-13 11:50:01
  */
 public class AlipayUserGroupshoppingBenefitQueryRequest implements AlipayRequest<AlipayUserGroupshoppingBenefitQueryResponse> {
 

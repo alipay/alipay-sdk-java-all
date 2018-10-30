@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-14 12:00:21
+ * @since 1.0, 2018-10-26 17:21:44
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7178383685532584977L;
+	private static final long serialVersionUID = 2858894497886745892L;
 
 	/** 
 	 * 用户的登录id
@@ -74,6 +74,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private String presentRefundMdiscountAmount;
 
 	/** 
+	 * 本次退款针对收款方的退收费金额；
+默认不返回该信息，需与支付宝约定后配置返回；
+	 */
+	@ApiField("refund_charge_amount")
+	private String refundChargeAmount;
+
+	/** 
 	 * 退款币种信息
 	 */
 	@ApiField("refund_currency")
@@ -97,6 +104,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_preset_paytool_list")
 	private PresetPayToolInfo refundPresetPaytoolList;
+
+	/** 
+	 * 退款清算编号，用于清算对账使用；
+只在银行间联交易场景下返回该信息；
+	 */
+	@ApiField("refund_settlement_id")
+	private String refundSettlementId;
 
 	/** 
 	 * 本次商户实际退回金额
@@ -180,6 +194,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 		return this.presentRefundMdiscountAmount;
 	}
 
+	public void setRefundChargeAmount(String refundChargeAmount) {
+		this.refundChargeAmount = refundChargeAmount;
+	}
+	public String getRefundChargeAmount( ) {
+		return this.refundChargeAmount;
+	}
+
 	public void setRefundCurrency(String refundCurrency) {
 		this.refundCurrency = refundCurrency;
 	}
@@ -206,6 +227,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	}
 	public PresetPayToolInfo getRefundPresetPaytoolList( ) {
 		return this.refundPresetPaytoolList;
+	}
+
+	public void setRefundSettlementId(String refundSettlementId) {
+		this.refundSettlementId = refundSettlementId;
+	}
+	public String getRefundSettlementId( ) {
+		return this.refundSettlementId;
 	}
 
 	public void setSendBackFee(String sendBackFee) {

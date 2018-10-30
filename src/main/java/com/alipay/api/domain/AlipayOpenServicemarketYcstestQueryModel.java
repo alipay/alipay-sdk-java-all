@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 时劼的测试api
  *
  * @author auto create
- * @since 1.0, 2018-08-06 15:21:00
+ * @since 1.0, 2018-10-18 18:56:08
  */
 public class AlipayOpenServicemarketYcstestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8528773849939392855L;
+	private static final long serialVersionUID = 3453988922291694839L;
 
 	/**
 	 * aaaa

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.request.batch.send request
  * 
  * @author auto create
- * @since 1.0, 2018-09-17 14:35:00
+ * @since 1.0, 2018-09-27 20:56:30
  */
 public class AlipayOpenRequestBatchSendRequest implements AlipayRequest<AlipayOpenRequestBatchSendResponse> {
 

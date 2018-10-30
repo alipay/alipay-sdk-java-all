@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.KbTicketUseDetail;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.ticketcode.use response.
  * 
  * @author auto create
- * @since 1.0, 2018-08-30 20:00:21
+ * @since 1.0, 2018-09-28 22:25:00
  */
 public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7134232262458825576L;
+	private static final long serialVersionUID = 7635458218146264311L;
 
 	/** 
 	 * 该字段用于描述本次返回中的业务属性，现有：BIZ_ALREADY_SUCCESS（幂等业务码）
@@ -21,7 +24,7 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	private String bizCode;
 
 	/** 
-	 * 用户购买券的时候实际支付的金额，单位为元，精确到小数点后两位
+	 * 用户购买券的时候实际支付的金额，单位为元，精确到小数点后两位，一次性核销多份券场景，返回总实际支付金额
 	 */
 	@ApiField("buyer_pay_amount")
 	private String buyerPayAmount;
@@ -33,13 +36,13 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	private String currentPrice;
 
 	/** 
-	 * 商家优惠金额，单位为元，精确到小数点后两位
+	 * 商家优惠金额，单位为元，精确到小数点后两位，一次性核销多份券场景，返回总商家优惠金额
 	 */
 	@ApiField("discount_amount")
 	private String discountAmount;
 
 	/** 
-	 * 交易中可给用户开具发票的金额，单位为元，精确到小数点后两位
+	 * 交易中可给用户开具发票的金额，单位为元，精确到小数点后两位，一次性核销多份券场景，返回总开票金额
 	 */
 	@ApiField("invoice_amount")
 	private String invoiceAmount;
@@ -57,7 +60,7 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	private String itemName;
 
 	/** 
-	 * 口碑补贴金额，单位为元，精确到小数点后两位
+	 * 口碑补贴金额，单位为元，精确到小数点后两位，一次性核销多份券场景，返回总口碑补贴金额
 	 */
 	@ApiField("koubei_subsidy_amount")
 	private String koubeiSubsidyAmount;
@@ -75,7 +78,7 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	private String originalPrice;
 
 	/** 
-	 * 商家实收金额，单位为元，精确到小数点后两位
+	 * 商家实收金额，单位为元，精确到小数点后两位，一次性核销多份券场景，返回总商家实收金额
 	 */
 	@ApiField("receipt_amount")
 	private String receiptAmount;
@@ -97,6 +100,13 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	 */
 	@ApiField("ticket_trans_id")
 	private String ticketTransId;
+
+	/** 
+	 * 非次卡一次性核销多份场景，被核销的凭证明细信息
+	 */
+	@ApiListField("ticket_use_details")
+	@ApiField("kb_ticket_use_detail")
+	private List<KbTicketUseDetail> ticketUseDetails;
 
 	/** 
 	 * 券核销时间
@@ -218,6 +228,13 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	}
 	public String getTicketTransId( ) {
 		return this.ticketTransId;
+	}
+
+	public void setTicketUseDetails(List<KbTicketUseDetail> ticketUseDetails) {
+		this.ticketUseDetails = ticketUseDetails;
+	}
+	public List<KbTicketUseDetail> getTicketUseDetails( ) {
+		return this.ticketUseDetails;
 	}
 
 	public void setUseDate(String useDate) {

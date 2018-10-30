@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 圈人标签查询
  *
  * @author auto create
- * @since 1.0, 2016-12-19 15:27:21
+ * @since 1.0, 2018-10-17 14:07:55
  */
 public class AlipayMarketingCampaignRuleTagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8346776594457476785L;
+	private static final long serialVersionUID = 5733978979693994828L;
 
 	/**
 	 * 签约商户下属机构唯一编号

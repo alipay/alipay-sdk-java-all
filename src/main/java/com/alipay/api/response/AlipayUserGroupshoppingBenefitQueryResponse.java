@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.groupshopping.benefit.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-12 16:55:00
+ * @since 1.0, 2018-10-13 11:50:01
  */
 public class AlipayUserGroupshoppingBenefitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6742155551652646222L;
+	private static final long serialVersionUID = 6814498821892614413L;
 
 	/** 
 	 * 拼团支付宝权益透出金额

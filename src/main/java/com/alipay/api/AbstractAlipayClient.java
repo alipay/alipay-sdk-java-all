@@ -8,8 +8,10 @@ import java.io.IOException;
 import java.security.Security;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
 
@@ -50,6 +52,9 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         //清除安全设置
         Security.setProperty("jdk.certpath.disabledAlgorithms", "");
     }
+
+    /** 批量API默认分隔符 **/
+    private static final String BATCH_API_DEFAULT_SPLIT = "#S#";
 
     public AbstractAlipayClient(String serverUrl, String appId, String format,
                                 String charset, String signType) {
@@ -101,6 +106,233 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         }
 
         return _execute(request, parser, accessToken, appAuthToken);
+    }
+
+    public BatchAlipayResponse execute(BatchAlipayRequest request) throws AlipayApiException {
+
+        long beginTime = System.currentTimeMillis();
+
+        //发送请求
+        Map<String, Object> rt = doPost(request);
+        if (rt == null) {
+            return null;
+        }
+        Map<String, Long> costTimeMap = new HashMap<String, Long>();
+        if (rt.containsKey("prepareTime")) {
+            costTimeMap.put("prepareCostTime", (Long)(rt.get("prepareTime")) - beginTime);
+            if (rt.containsKey("requestTime")) {
+                costTimeMap.put("requestCostTime", (Long)(rt.get("requestTime")) - (Long)(rt.get("prepareTime")));
+            }
+        }
+
+        AlipayParser<BatchAlipayResponse> parser = null;
+        if (AlipayConstants.FORMAT_XML.equals(this.format)) {
+            parser = new ObjectXmlParser<BatchAlipayResponse>(request.getResponseClass());
+        } else {
+            parser = new ObjectJsonParser<BatchAlipayResponse>(request.getResponseClass());
+        }
+
+        BatchAlipayResponse batchAlipayResponse = null;
+        try {
+
+            // 若需要解密则先解密
+            ResponseEncryptItem responseItem = decryptResponse(request, rt, parser);
+
+            // 解析实际串
+            batchAlipayResponse = parser.parse(responseItem.getRealContent());
+            batchAlipayResponse.setBody(responseItem.getRealContent());
+
+            // 验签是对请求返回原始串
+            checkResponseSign(request, parser, responseItem.getRespContent(), batchAlipayResponse.isSuccess());
+
+            if (costTimeMap.containsKey("requestCostTime")) {
+                costTimeMap.put("postCostTime", System.currentTimeMillis() - (Long)(rt.get("requestTime")));
+            }
+
+            // 构造响应解释器
+            List<AlipayParser<?>> parserList = new ArrayList<AlipayParser<?>>();
+            List<AlipayRequestWrapper> requestList = request.getRequestList();
+            if (AlipayConstants.FORMAT_XML.equals(this.format)) {
+                for (int i = 0; i < requestList.size(); i++) {
+                    parserList.add(new ObjectXmlParser(requestList.get(i).getAlipayRequest().getResponseClass()));
+                }
+            } else {
+                for (int i = 0; i < requestList.size(); i++) {
+                    parserList.add(new ObjectJsonParser(requestList.get(i).getAlipayRequest().getResponseClass()));
+                }
+            }
+
+            //批量调用失败，直接返回
+            if (!batchAlipayResponse.isSuccess()) {
+                return batchAlipayResponse;
+            }
+            String[] responseArray = batchAlipayResponse.getResponseBody().split(BATCH_API_DEFAULT_SPLIT);
+            //循环解析业务API响应
+            for (int index = 0; index < responseArray.length; index++) {
+                AlipayResponse alipayResponse = parserList.get(index).parse(responseArray[index]);
+                alipayResponse.setBody(responseArray[index]);
+                batchAlipayResponse.addResponse(alipayResponse);
+            }
+            AlipayLogger.logBizDebug((String) rt.get("rsp"));
+            return batchAlipayResponse;
+        } catch (RuntimeException e) {
+
+            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap);
+            throw e;
+        } catch (AlipayApiException e) {
+
+            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap);
+            throw new AlipayApiException(e);
+        }
+    }
+
+    /**
+     * @param request
+     * @return
+     * @throws AlipayApiException
+     */
+    private Map<String, Object> doPost(BatchAlipayRequest request) throws AlipayApiException {
+
+        Map<String, Object> result = new HashMap<String, Object>();
+        RequestParametersHolder requestHolder = getRequestHolderWithSign(request);
+
+        String url = getRequestUrl(requestHolder);
+
+        // 打印完整请求报文
+        if (AlipayLogger.isBizDebugEnabled()) {
+            AlipayLogger.logBizDebug(getRedirectUrl(requestHolder));
+        }
+        result.put("prepareTime", System.currentTimeMillis());
+
+        String rsp = null;
+        try {
+            rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
+                connectTimeout, readTimeout, proxyHost, proxyPort);
+        } catch (IOException e) {
+            throw new AlipayApiException(e);
+        }
+        result.put("requestTime", System.currentTimeMillis());
+        result.put("rsp", rsp);
+        result.put("textParams", requestHolder.getApplicationParams());
+        result.put("protocalMustParams", requestHolder.getProtocalMustParams());
+        result.put("protocalOptParams", requestHolder.getProtocalOptParams());
+        result.put("url", url);
+        return result;
+    }
+
+    /**
+     * 组装批量请求接口参数，处理加密、签名逻辑
+     *
+     * @param request
+     * @return
+     * @throws AlipayApiException
+     */
+    private <T extends AlipayResponse> RequestParametersHolder getRequestHolderWithSign(BatchAlipayRequest request) throws AlipayApiException {
+
+        List<AlipayRequestWrapper> requestList = request.getRequestList();
+        //校验接口列表非空
+        if (requestList == null || requestList.isEmpty()) {
+            throw new AlipayApiException("40", "client-error:api request list is empty");
+        }
+
+        RequestParametersHolder requestHolder = new RequestParametersHolder();
+
+        //添加协议必须参数
+        AlipayHashMap protocalMustParams = new AlipayHashMap();
+        protocalMustParams.put(AlipayConstants.METHOD, request.getApiMethodName());
+        protocalMustParams.put(AlipayConstants.APP_ID, this.appId);
+        protocalMustParams.put(AlipayConstants.SIGN_TYPE, this.signType);
+        protocalMustParams.put(AlipayConstants.CHARSET, charset);
+        protocalMustParams.put(AlipayConstants.VERSION, request.getApiVersion());
+
+        if (request.isNeedEncrypt()) {
+            protocalMustParams.put(AlipayConstants.ENCRYPT_TYPE, this.encryptType);
+        }
+
+        //添加协议可选参数
+        AlipayHashMap protocalOptParams = new AlipayHashMap();
+        protocalOptParams.put(AlipayConstants.FORMAT, format);
+        protocalOptParams.put(AlipayConstants.ALIPAY_SDK, AlipayConstants.SDK_VERSION);
+        requestHolder.setProtocalOptParams(protocalOptParams);
+
+        Long timestamp = System.currentTimeMillis();
+        DateFormat df = new SimpleDateFormat(AlipayConstants.DATE_TIME_FORMAT);
+        df.setTimeZone(TimeZone.getTimeZone(AlipayConstants.DATE_TIMEZONE));
+        protocalMustParams.put(AlipayConstants.TIMESTAMP, df.format(new Date(timestamp)));
+        requestHolder.setProtocalMustParams(protocalMustParams);
+
+        //设置业务参数
+        AlipayHashMap appParams = new AlipayHashMap();
+
+        //构造请求主题
+        StringBuilder requestBody = new StringBuilder();
+        // 组装每个API的请求参数
+        for (int index = 0; index < requestList.size(); index++) {
+            AlipayRequestWrapper alipayRequestWrapper = requestList.get(index);
+            AlipayRequest alipayRequest = alipayRequestWrapper.getAlipayRequest();
+            Map<String, Object> apiParams = alipayRequest.getTextParams();
+            apiParams.put(AlipayConstants.METHOD, alipayRequest.getApiMethodName());
+            apiParams.put(AlipayConstants.APP_AUTH_TOKEN, alipayRequestWrapper.getAppAuthToken());
+            apiParams.put(AlipayConstants.ACCESS_TOKEN, alipayRequestWrapper.getAccessToken());
+            apiParams.put(AlipayConstants.PROD_CODE, alipayRequest.getProdCode());
+            apiParams.put(AlipayConstants.NOTIFY_URL, alipayRequest.getNotifyUrl());
+            apiParams.put(AlipayConstants.RETURN_URL, alipayRequest.getReturnUrl());
+            apiParams.put(AlipayConstants.TERMINAL_INFO, alipayRequest.getTerminalInfo());
+            apiParams.put(AlipayConstants.TERMINAL_TYPE, alipayRequest.getTerminalType());
+            apiParams.put(AlipayConstants.BATCH_REQUEST_ID, String.valueOf(index));
+
+            // 仅当API包含biz_content参数且值为空时，序列化bizModel填充bizContent
+            try {
+                if (alipayRequest.getClass().getMethod("getBizContent") != null
+                    && StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))
+                    && alipayRequest.getBizModel() != null) {
+                    apiParams.put(AlipayConstants.BIZ_CONTENT_KEY,
+                        new JSONWriter().write(alipayRequest.getBizModel(), true));
+                }
+            } catch (NoSuchMethodException e) {
+                // 找不到getBizContent则什么都不做
+            } catch (SecurityException e) {
+                AlipayLogger.logBizError(e);
+            }
+            requestBody.append(new JSONWriter().write(apiParams, false));
+            if (index != requestList.size() - 1) {
+                requestBody.append(BATCH_API_DEFAULT_SPLIT);
+            }
+        }
+        appParams.put(AlipayConstants.BIZ_CONTENT_KEY, requestBody.toString());
+
+        // 只有新接口和设置密钥才能支持加密
+        if (request.isNeedEncrypt()) {
+
+            if (StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))) {
+
+                throw new AlipayApiException("当前API不支持加密请求");
+            }
+
+            // 需要加密必须设置密钥和加密算法
+            if (StringUtils.isEmpty(this.encryptType) || getEncryptor() == null) {
+
+                throw new AlipayApiException("API请求要求加密，则必须设置密钥类型和加密器");
+            }
+
+            String encryptContent = getEncryptor().encrypt(
+                appParams.get(AlipayConstants.BIZ_CONTENT_KEY), this.encryptType, this.charset);
+
+            appParams.put(AlipayConstants.BIZ_CONTENT_KEY, encryptContent);
+        }
+
+        requestHolder.setApplicationParams(appParams);
+
+        if (!StringUtils.isEmpty(this.signType)) {
+
+            String signContent = AlipaySignature.getSignatureContent(requestHolder);
+            protocalMustParams.put(AlipayConstants.SIGN,
+                getSigner().sign(signContent, this.signType, charset));
+
+        } else {
+            protocalMustParams.put(AlipayConstants.SIGN, "");
+        }
+        return requestHolder;
     }
 
     public <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request) throws AlipayApiException {

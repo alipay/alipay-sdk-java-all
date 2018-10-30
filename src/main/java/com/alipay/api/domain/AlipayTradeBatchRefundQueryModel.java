@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即时到账批量退款查询接口
  *
  * @author auto create
- * @since 1.0, 2016-11-21 12:06:39
+ * @since 1.0, 2018-09-25 17:11:01
  */
 public class AlipayTradeBatchRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3378492769642196641L;
+	private static final long serialVersionUID = 3453325982398799157L;
 
 	/**
 	 * 商户请求批量退款时传递的批次号。

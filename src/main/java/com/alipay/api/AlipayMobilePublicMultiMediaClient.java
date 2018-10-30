@@ -494,6 +494,11 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         return null;
     }
 
+    @Override
+    public BatchAlipayResponse execute(BatchAlipayRequest request) throws AlipayApiException {
+        return null;
+    }
+
     public <T extends AlipayResponse> T sdkExecute(AlipayRequest<T> request) throws AlipayApiException {
         return null;
     }

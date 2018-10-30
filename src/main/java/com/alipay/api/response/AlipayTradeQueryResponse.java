@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-18 19:56:32
+ * @since 1.0, 2018-10-26 17:21:39
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8883755937835161658L;
+	private static final long serialVersionUID = 6851197689816417859L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -54,6 +54,22 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("buyer_user_type")
 	private String buyerUserType;
+
+	/** 
+	 * 该笔交易针对收款方的收费金额；
+默认不返回该信息，需与支付宝约定后配置返回；
+	 */
+	@ApiField("charge_amount")
+	private String chargeAmount;
+
+	/** 
+	 * 费率活动标识，当交易享受活动优惠费率时，返回该活动的标识；
+默认不返回该信息，需与支付宝约定后配置返回；
+可能的返回值列表：
+蓝海活动标识：bluesea_1
+	 */
+	@ApiField("charge_flags")
+	private String chargeFlags;
 
 	/** 
 	 * 平台优惠金额
@@ -153,6 +169,13 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	private String settleTransRate;
 
 	/** 
+	 * 支付清算编号，用于清算对账使用；
+只在银行间联交易场景下返回该信息；
+	 */
+	@ApiField("settlement_id")
+	private String settlementId;
+
+	/** 
 	 * 商户门店编号
 	 */
 	@ApiField("store_id")
@@ -247,6 +270,20 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	}
 	public String getBuyerUserType( ) {
 		return this.buyerUserType;
+	}
+
+	public void setChargeAmount(String chargeAmount) {
+		this.chargeAmount = chargeAmount;
+	}
+	public String getChargeAmount( ) {
+		return this.chargeAmount;
+	}
+
+	public void setChargeFlags(String chargeFlags) {
+		this.chargeFlags = chargeFlags;
+	}
+	public String getChargeFlags( ) {
+		return this.chargeFlags;
 	}
 
 	public void setDiscountAmount(String discountAmount) {
@@ -359,6 +396,13 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	}
 	public String getSettleTransRate( ) {
 		return this.settleTransRate;
+	}
+
+	public void setSettlementId(String settlementId) {
+		this.settlementId = settlementId;
+	}
+	public String getSettlementId( ) {
+		return this.settlementId;
 	}
 
 	public void setStoreId(String storeId) {

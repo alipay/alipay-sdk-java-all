@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2018-08-18 15:29:19
+ * @since 1.0, 2018-10-16 20:52:17
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2191472498699654289L;
+	private static final long serialVersionUID = 2456321182761243574L;
 
 	/**
 	 * 经营地址。地址对象中省、市、区、地址必填，其余选填
@@ -54,7 +54,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String certType;
 
 	/**
-	 * 联系人信息。如果填写，其中xxxx必填
+	 * 联系人信息。如果填写，其中名称必填，手机、固话、email三选一必填
 	 */
 	@ApiListField("contact_infos")
 	@ApiField("contact_info")

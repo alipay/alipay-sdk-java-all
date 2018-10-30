@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-11 16:42:52
+ * @since 1.0, 2018-10-26 17:25:01
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1824561791137946894L;
+	private static final long serialVersionUID = 8156315365557914468L;
 
 	/** 
 	 * 异步支付模式，先享后付业务会返回该参数，目前有三种值：
@@ -71,6 +71,22 @@ SYNC_DIRECT_PAY(同步直接扣款);
 	 */
 	@ApiField("card_balance")
 	private String cardBalance;
+
+	/** 
+	 * 该笔交易针对收款方的收费金额；
+默认不返回该信息，需与支付宝约定后配置返回；
+	 */
+	@ApiField("charge_amount")
+	private String chargeAmount;
+
+	/** 
+	 * 费率活动标识，当交易享受活动优惠费率时，返回该活动的标识；
+默认不返回该信息，需与支付宝约定后配置返回；
+可能的返回值列表：
+蓝海活动标识：bluesea_1
+	 */
+	@ApiField("charge_flags")
+	private String chargeFlags;
 
 	/** 
 	 * 平台优惠金额
@@ -164,6 +180,13 @@ SYNC_DIRECT_PAY(同步直接扣款);
 	private String settleTransRate;
 
 	/** 
+	 * 支付清算编号，用于清算对账使用；
+只在银行间联交易场景下返回该信息；
+	 */
+	@ApiField("settlement_id")
+	private String settlementId;
+
+	/** 
 	 * 发生支付交易的商户门店名称
 	 */
 	@ApiField("store_name")
@@ -254,6 +277,20 @@ SYNC_DIRECT_PAY(同步直接扣款);
 	}
 	public String getCardBalance( ) {
 		return this.cardBalance;
+	}
+
+	public void setChargeAmount(String chargeAmount) {
+		this.chargeAmount = chargeAmount;
+	}
+	public String getChargeAmount( ) {
+		return this.chargeAmount;
+	}
+
+	public void setChargeFlags(String chargeFlags) {
+		this.chargeFlags = chargeFlags;
+	}
+	public String getChargeFlags( ) {
+		return this.chargeFlags;
 	}
 
 	public void setDiscountAmount(String discountAmount) {
@@ -359,6 +396,13 @@ SYNC_DIRECT_PAY(同步直接扣款);
 	}
 	public String getSettleTransRate( ) {
 		return this.settleTransRate;
+	}
+
+	public void setSettlementId(String settlementId) {
+		this.settlementId = settlementId;
+	}
+	public String getSettlementId( ) {
+		return this.settlementId;
 	}
 
 	public void setStoreName(String storeName) {

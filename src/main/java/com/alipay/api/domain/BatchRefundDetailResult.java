@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量退款明细结果
  *
  * @author auto create
- * @since 1.0, 2016-11-21 12:06:39
+ * @since 1.0, 2018-09-29 19:06:25
  */
 public class BatchRefundDetailResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6413256218862261196L;
+	private static final long serialVersionUID = 6385969465165666667L;
 
 	/**
 	 * 商户请求批量退款时传递的批次号。
@@ -51,6 +51,12 @@ public class BatchRefundDetailResult extends AlipayObject {
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
+
+	/**
+	 * 退款银行名称
+	 */
+	@ApiField("refund_bank_name")
+	private String refundBankName;
 
 	/**
 	 * 退分润信息列表
@@ -135,6 +141,13 @@ public class BatchRefundDetailResult extends AlipayObject {
 	}
 	public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
+	}
+
+	public String getRefundBankName() {
+		return this.refundBankName;
+	}
+	public void setRefundBankName(String refundBankName) {
+		this.refundBankName = refundBankName;
 	}
 
 	public List<RefundRoyaltyResult> getRefundRoyaltys() {

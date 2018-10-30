@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用互查申请
  *
  * @author auto create
- * @since 1.0, 2018-09-03 20:53:43
+ * @since 1.0, 2018-10-25 11:42:44
  */
 public class ZhimaCustomerAuthMutualviewApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5785157315175661333L;
+	private static final long serialVersionUID = 4593667276931377799L;
 
 	/**
 	 * 当前业务操作是查询自己还是查询别人的芝麻分，接口提供方分配的值：
@@ -45,10 +45,16 @@ other ： 标识需要查询别人的分数
 certType:证件类型固定为身份证，传入IDENTITY_CARD；
 name:用户姓名，如张三
 certNo:身份证号码
-userId:此值为查询时的必要入参，此值的来源为授权完成后返回的mutual_view_id字段，可以参见接口返回值中的出参
+userId:此值为查询时的必要入参，此值的来源为授权完成后返回的auth_id字段，可以参见接口返回值中的出参
 	 */
 	@ApiField("identity_param")
 	private String identityParam;
+
+	/**
+	 * 当前业务产品的产品码，接口提供方分配，填写的值即是示例值中的值
+	 */
+	@ApiField("product_param")
+	private String productParam;
 
 	public String getBizType() {
 		return this.bizType;
@@ -76,6 +82,13 @@ userId:此值为查询时的必要入参，此值的来源为授权完成后返�
 	}
 	public void setIdentityParam(String identityParam) {
 		this.identityParam = identityParam;
+	}
+
+	public String getProductParam() {
+		return this.productParam;
+	}
+	public void setProductParam(String productParam) {
+		this.productParam = productParam;
 	}
 
 }

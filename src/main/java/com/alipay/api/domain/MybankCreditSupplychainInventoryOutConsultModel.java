@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 供应链金融-交易出库咨询
  *
  * @author auto create
- * @since 1.0, 2018-07-28 01:11:28
+ * @since 1.0, 2018-10-09 11:17:39
  */
 public class MybankCreditSupplychainInventoryOutConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3711886819279733313L;
+	private static final long serialVersionUID = 3361326778179142546L;
 
 	/**
 	 * 贷款合约编号

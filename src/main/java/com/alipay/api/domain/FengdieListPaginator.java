@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凤蝶分页数据模型
  *
  * @author auto create
- * @since 1.0, 2018-05-17 16:01:04
+ * @since 1.0, 2018-10-22 16:58:45
  */
 public class FengdieListPaginator extends AlipayObject {
 
-	private static final long serialVersionUID = 6865717183182449545L;
+	private static final long serialVersionUID = 8765513225882813525L;
 
 	/**
 	 * 总页数

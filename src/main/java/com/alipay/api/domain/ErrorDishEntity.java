@@ -1,0 +1,42 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 异常分配档口菜品对象
+ *
+ * @author auto create
+ * @since 1.0, 2018-10-23 22:12:38
+ */
+public class ErrorDishEntity extends AlipayObject {
+
+	private static final long serialVersionUID = 7411722457957458271L;
+
+	/**
+	 * 菜品id
+	 */
+	@ApiField("dish_id")
+	private String dishId;
+
+	/**
+	 * 菜品名称
+	 */
+	@ApiField("dish_name")
+	private String dishName;
+
+	public String getDishId() {
+		return this.dishId;
+	}
+	public void setDishId(String dishId) {
+		this.dishId = dishId;
+	}
+
+	public String getDishName() {
+		return this.dishName;
+	}
+	public void setDishName(String dishName) {
+		this.dishName = dishName;
+	}
+
+}

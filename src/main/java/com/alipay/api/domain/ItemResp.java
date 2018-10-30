@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商圈商品券结构
  *
  * @author auto create
- * @since 1.0, 2018-07-05 14:11:05
+ * @since 1.0, 2018-10-24 09:30:17
  */
 public class ItemResp extends AlipayObject {
 
-	private static final long serialVersionUID = 7389557694654951993L;
+	private static final long serialVersionUID = 6363556271992846281L;
 
 	/**
 	 * 内容分类
@@ -50,10 +50,22 @@ public class ItemResp extends AlipayObject {
 	private String meaning;
 
 	/**
+	 * 商品原价
+	 */
+	@ApiField("org_price")
+	private String orgPrice;
+
+	/**
 	 * 商品价格或折扣
 	 */
 	@ApiField("price")
 	private String price;
+
+	/**
+	 * 店铺id
+	 */
+	@ApiField("shop_id")
+	private String shopId;
 
 	/**
 	 * 简要描述
@@ -133,11 +145,25 @@ public class ItemResp extends AlipayObject {
 		this.meaning = meaning;
 	}
 
+	public String getOrgPrice() {
+		return this.orgPrice;
+	}
+	public void setOrgPrice(String orgPrice) {
+		this.orgPrice = orgPrice;
+	}
+
 	public String getPrice() {
 		return this.price;
 	}
 	public void setPrice(String price) {
 		this.price = price;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 	public String getSummary() {
