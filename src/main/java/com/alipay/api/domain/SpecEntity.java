@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 规格类型
  *
  * @author auto create
- * @since 1.0, 2018-10-24 23:13:47
+ * @since 1.0, 2018-11-16 17:26:31
  */
 public class SpecEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 8576399138279782122L;
+	private static final long serialVersionUID = 5181634872844828863L;
 
 	/**
 	 * 新增不用传，修改必须传

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 桌台二维码关联
  *
  * @author auto create
- * @since 1.0, 2018-10-24 22:43:17
+ * @since 1.0, 2018-11-16 17:21:08
  */
 public class QrcodeEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 3743939297938273461L;
+	private static final long serialVersionUID = 5148318235496972996L;
 
 	/**
 	 * 桌台ID

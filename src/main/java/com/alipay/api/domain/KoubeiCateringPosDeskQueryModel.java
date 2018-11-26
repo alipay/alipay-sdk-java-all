@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据门店ID查询桌位
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:20:34
+ * @since 1.0, 2018-11-16 17:19:55
  */
 public class KoubeiCateringPosDeskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8218122385595395448L;
+	private static final long serialVersionUID = 7827547469692175737L;
 
 	/**
 	 * 门店ID

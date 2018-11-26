@@ -7,11 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店摘要信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2018-07-11 16:20:25
+ * @since 1.0, 2018-11-19 10:09:45
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1118698743133425294L;
+	private static final long serialVersionUID = 2154115237125515436L;
+
+	/**
+	 * 品牌名
+	 */
+	@ApiField("brand_name")
+	private String brandName;
+
+	/**
+	 * 城市编码，国标码，如：120100表示天津市
+	 */
+	@ApiField("city_code")
+	private String cityCode;
+
+	/**
+	 * 区域编码，如：120104表示南开区
+	 */
+	@ApiField("district_code")
+	private String districtCode;
 
 	/**
 	 * 表示接口业务的调用方身份：ISV、 服务商身份标识。传入ISV代表系统集成商身份。传入PROVIDER代表服务商。
@@ -30,6 +48,12 @@ public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject 
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 省份编码，国标码，如：120000表示天津
+	 */
+	@ApiField("province_code")
+	private String provinceCode;
 
 	/**
 	 * 门店数据查询类型，根据类型可以返回指定的门店数据，目前支持的类型如下：
@@ -61,6 +85,27 @@ KB_PROMOTER：口碑客推广者
 	@ApiField("shop_status")
 	private String shopStatus;
 
+	public String getBrandName() {
+		return this.brandName;
+	}
+	public void setBrandName(String brandName) {
+		this.brandName = brandName;
+	}
+
+	public String getCityCode() {
+		return this.cityCode;
+	}
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
+	}
+
+	public String getDistrictCode() {
+		return this.districtCode;
+	}
+	public void setDistrictCode(String districtCode) {
+		this.districtCode = districtCode;
+	}
+
 	public String getOpRole() {
 		return this.opRole;
 	}
@@ -80,6 +125,13 @@ KB_PROMOTER：口碑客推广者
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getProvinceCode() {
+		return this.provinceCode;
+	}
+	public void setProvinceCode(String provinceCode) {
+		this.provinceCode = provinceCode;
 	}
 
 	public String getQueryType() {

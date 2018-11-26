@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活号素材内容落库接口
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:37:58
+ * @since 1.0, 2018-11-14 17:25:39
  */
 public class AlipayOpenPublicContentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6299514996215276533L;
+	private static final long serialVersionUID = 8113754588617799889L;
 
 	/**
 	 * action_url 文章地址url，用于文章列表显示，用户点击后的跳转地址。

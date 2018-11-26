@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户信用能力评估
  *
  * @author auto create
- * @since 1.0, 2018-10-12 11:19:11
+ * @since 1.0, 2018-11-16 13:59:17
  */
 public class ZhimaCreditEpRatingInnerInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5641929515922184815L;
+	private static final long serialVersionUID = 2897448531333211261L;
 
 	/**
 	 * 企业信用类目，支持以下值：
@@ -28,6 +28,12 @@ ZMSCCO_6_2_1:省(交易成本)-保证金保险-免保证金
 	 */
 	@ApiField("m_category")
 	private String mCategory;
+
+	/**
+	 * 企业会员类型，支持的类型为ENTERPRISE和INDIVIDUAL_BUSINESS。可空，不传按照默认行为，即INDIVIDUAL_BUSINESS商家身份。
+	 */
+	@ApiField("member_type")
+	private String memberType;
 
 	/**
 	 * 商户请求的唯一标志，64位长度的字母数字下划线组合。该标识作为对账的关键信息，商户要保证其唯一性。
@@ -53,6 +59,13 @@ ZMSCCO_6_2_1:省(交易成本)-保证金保险-免保证金
 	}
 	public void setmCategory(String mCategory) {
 		this.mCategory = mCategory;
+	}
+
+	public String getMemberType() {
+		return this.memberType;
+	}
+	public void setMemberType(String memberType) {
+		this.memberType = memberType;
 	}
 
 	public String getOutOrderNo() {

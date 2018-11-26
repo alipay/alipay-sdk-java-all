@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改支付方式排序
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:22:09
+ * @since 1.0, 2018-11-16 17:30:03
  */
 public class KoubeiCateringPosPaymodesortModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2149724946593856817L;
+	private static final long serialVersionUID = 8195588114117534524L;
 
 	/**
 	 * 支付方式名称列表

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCreditCreditriskDashboardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1582648768375447867L;
+	private static final long serialVersionUID = 1685518831267111842L;
 
 	/** 
 	 * 信用贷款额度

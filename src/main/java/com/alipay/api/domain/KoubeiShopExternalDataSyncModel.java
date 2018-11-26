@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺外部数据同步
  *
  * @author auto create
- * @since 1.0, 2018-10-17 11:43:54
+ * @since 1.0, 2018-11-15 17:10:29
  */
 public class KoubeiShopExternalDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2147772433199213318L;
+	private static final long serialVersionUID = 5463166323696229393L;
 
 	/**
 	 * 操作类型：Bind:建立口碑门店和饿了么外卖关系
@@ -25,6 +25,7 @@ sync：同步门店营业时间、营业状态、店铺状态
 	 * shop_status:OPEN（生效）||CLOSE（失效） ，饿了么签约状态
 business_time：08：00-11：30,13：00-20：30，营业时间，多个逗号分隔
 business_status：OPEN（营业）||CLOSE（歇业）  饿了么营业状态。
+ext_info：map结构, 记录bindType-绑定类型: ELE_LEADS(饿了么leads开店)、KB_ELE_OPEN_SHOP_ONLINE(口碑在线开饿了么门店)、KB_ELE_BIND_ONLINE(口碑接饿了么在线修改绑定关系)、ELE_ALGO_CALC(饿了么算法计算)、ELE_OPERATION(饿了么运营操作); bindRelation-绑定关系:STRONG(强)、WEAK(弱)
 	 */
 	@ApiField("content")
 	private String content;

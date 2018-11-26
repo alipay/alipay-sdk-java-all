@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 配料列表返回对象
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:23:03
+ * @since 1.0, 2018-11-21 14:21:03
  */
 public class MaterialEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 3687386121834782938L;
+	private static final long serialVersionUID = 4548968151996299886L;
 
 	/**
 	 * 配料id

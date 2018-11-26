@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料配送指令对象, 包括物料配送的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 数量, 收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2018-06-14 12:56:23
+ * @since 1.0, 2018-11-16 17:18:42
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7339484512895795983L;
+	private static final long serialVersionUID = 2733774427212643754L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)

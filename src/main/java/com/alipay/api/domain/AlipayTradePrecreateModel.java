@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2018-10-26 17:18:15
+ * @since 1.0, 2018-11-16 17:16:34
  */
 public class AlipayTradePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5441811158712314589L;
+	private static final long serialVersionUID = 6248158813984934414L;
 
 	/**
 	 * 支付宝店铺的门店ID
@@ -83,6 +83,12 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail")
 	private List<GoodsDetail> goodsDetail;
+
+	/**
+	 * 商户原始订单号，最大长度限制32位
+	 */
+	@ApiField("merchant_order_no")
+	private String merchantOrderNo;
 
 	/**
 	 * 商户操作员编号
@@ -230,6 +236,13 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	}
 	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
+	}
+
+	public String getMerchantOrderNo() {
+		return this.merchantOrderNo;
+	}
+	public void setMerchantOrderNo(String merchantOrderNo) {
+		this.merchantOrderNo = merchantOrderNo;
 	}
 
 	public String getOperatorId() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * pos账单支付渠道信息
  *
  * @author auto create
- * @since 1.0, 2018-10-23 17:23:19
+ * @since 1.0, 2018-11-16 10:37:53
  */
 public class PosBillPayChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 5682837938286353236L;
+	private static final long serialVersionUID = 3474511949233559225L;
 
 	/**
 	 * 支付渠道类型:
@@ -73,6 +73,12 @@ WECHAT：WECHAT外部渠道支付
 	 */
 	@ApiField("receipt_amount")
 	private String receiptAmount;
+
+	/**
+	 * 支付渠道交易号，对于支付宝是支付宝交易号，对于微信是微信交易号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	/**
 	 * 用户身份标识：手机号码、userId等
@@ -141,6 +147,13 @@ WECHAT：WECHAT外部渠道支付
 	}
 	public void setReceiptAmount(String receiptAmount) {
 		this.receiptAmount = receiptAmount;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
 	}
 
 	public String getUserIdentity() {

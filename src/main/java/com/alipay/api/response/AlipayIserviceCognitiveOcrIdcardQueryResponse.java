@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.ocr.idcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-05-09 14:55:00
+ * @since 1.0, 2018-11-13 14:00:00
  */
 public class AlipayIserviceCognitiveOcrIdcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1669842696544129428L;
+	private static final long serialVersionUID = 3419172611842867896L;
 
 	/** 
 	 * 地址
@@ -27,10 +27,22 @@ public class AlipayIserviceCognitiveOcrIdcardQueryResponse extends AlipayRespons
 	private String birth;
 
 	/** 
+	 * 有效期截止时间
+	 */
+	@ApiField("end_date")
+	private String endDate;
+
+	/** 
 	 * 信息抽取失败后详细错误原因
 	 */
 	@ApiField("error_content")
 	private String errorContent;
+
+	/** 
+	 * 公安局分案
+	 */
+	@ApiField("issue")
+	private String issue;
 
 	/** 
 	 * 民族
@@ -55,6 +67,12 @@ public class AlipayIserviceCognitiveOcrIdcardQueryResponse extends AlipayRespons
 	 */
 	@ApiField("sex")
 	private String sex;
+
+	/** 
+	 * 有效期开始时间
+	 */
+	@ApiField("start_date")
+	private String startDate;
 
 	/** 
 	 * true: 解析成功
@@ -83,11 +101,25 @@ false: 解析失败
 		return this.birth;
 	}
 
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
+	}
+	public String getEndDate( ) {
+		return this.endDate;
+	}
+
 	public void setErrorContent(String errorContent) {
 		this.errorContent = errorContent;
 	}
 	public String getErrorContent( ) {
 		return this.errorContent;
+	}
+
+	public void setIssue(String issue) {
+		this.issue = issue;
+	}
+	public String getIssue( ) {
+		return this.issue;
 	}
 
 	public void setNationality(String nationality) {
@@ -116,6 +148,13 @@ false: 解析失败
 	}
 	public String getSex( ) {
 		return this.sex;
+	}
+
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+	public String getStartDate( ) {
+		return this.startDate;
 	}
 
 	public void setSuccess(Boolean success) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 打印机Model
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:22:38
+ * @since 1.0, 2018-11-21 14:21:33
  */
 public class PrintModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7722939469568287137L;
+	private static final long serialVersionUID = 1222878598224358554L;
 
 	/**
 	 * 设备ID

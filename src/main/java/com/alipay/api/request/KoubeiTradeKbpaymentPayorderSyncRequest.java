@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.trade.kbpayment.payorder.sync request
  * 
  * @author auto create
- * @since 1.0, 2018-10-09 13:45:00
+ * @since 1.0, 2018-11-14 12:45:01
  */
 public class KoubeiTradeKbpaymentPayorderSyncRequest implements AlipayRequest<KoubeiTradeKbpaymentPayorderSyncResponse> {
 

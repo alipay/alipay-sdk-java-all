@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.creditrisk.consult.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-08-01 20:15:46
+ * @since 1.0, 2018-11-13 16:27:16
  */
 public class MybankCreditCreditriskConsultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2142252934782839755L;
+	private static final long serialVersionUID = 5862957263457725757L;
 
 	/** 
 	 * 可贷额度，单位元
@@ -28,10 +28,16 @@ public class MybankCreditCreditriskConsultQueryResponse extends AlipayResponse {
 	private String consultResultCode;
 
 	/** 
-	 * 咨询结果的描述信息
+	 * 咨询结果的描述信息。reason_code_list：不准入原因,can_manual_review:是否人工审核
 	 */
 	@ApiField("consult_result_msg")
 	private String consultResultMsg;
+
+	/** 
+	 * 授信额度，单位元
+	 */
+	@ApiField("creditlmt_amt")
+	private String creditlmtAmt;
 
 	public void setAvailableAmt(String availableAmt) {
 		this.availableAmt = availableAmt;
@@ -52,6 +58,13 @@ public class MybankCreditCreditriskConsultQueryResponse extends AlipayResponse {
 	}
 	public String getConsultResultMsg( ) {
 		return this.consultResultMsg;
+	}
+
+	public void setCreditlmtAmt(String creditlmtAmt) {
+		this.creditlmtAmt = creditlmtAmt;
+	}
+	public String getCreditlmtAmt( ) {
+		return this.creditlmtAmt;
 	}
 
 }

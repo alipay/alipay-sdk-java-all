@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 异常分配菜品集合模型
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:21:43
+ * @since 1.0, 2018-11-21 14:21:57
  */
 public class ErrorDishStallEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 8149263133647995117L;
+	private static final long serialVersionUID = 3436644935299151326L;
 
 	/**
 	 * 未关联档口菜品集合

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量添加配菜
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:21:12
+ * @since 1.0, 2018-11-16 17:24:16
  */
 public class KoubeiCateringPosSidedishbatchSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4329646664793396927L;
+	private static final long serialVersionUID = 4517998356653832447L;
 
 	/**
 	 * 需要添加配菜的菜品ID

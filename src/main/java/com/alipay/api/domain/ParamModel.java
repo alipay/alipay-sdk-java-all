@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店参数model
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:24:13
+ * @since 1.0, 2018-11-21 14:20:39
  */
 public class ParamModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4145674887442222311L;
+	private static final long serialVersionUID = 6254971325446332163L;
 
 	/**
 	 * 账单金额位数

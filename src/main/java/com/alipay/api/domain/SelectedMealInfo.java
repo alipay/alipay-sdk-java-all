@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 套餐信息
  *
  * @author auto create
- * @since 1.0, 2018-09-07 20:26:16
+ * @since 1.0, 2018-11-19 17:57:23
  */
 public class SelectedMealInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1477416263575368234L;
+	private static final long serialVersionUID = 6336764138844112746L;
+
+	/**
+	 * 套餐的加价.仅当type=COMBO时有效
+	 */
+	@ApiField("add_price")
+	private String addPrice;
 
 	/**
 	 * 菜品ID
@@ -85,6 +91,13 @@ public class SelectedMealInfo extends AlipayObject {
 	 */
 	@ApiField("unit")
 	private String unit;
+
+	public String getAddPrice() {
+		return this.addPrice;
+	}
+	public void setAddPrice(String addPrice) {
+		this.addPrice = addPrice;
+	}
 
 	public String getDishId() {
 		return this.dishId;

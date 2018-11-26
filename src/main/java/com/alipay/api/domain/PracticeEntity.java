@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 做法模型
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:22:57
+ * @since 1.0, 2018-11-21 14:21:15
  */
 public class PracticeEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 3566373525797699586L;
+	private static final long serialVersionUID = 5274925347489119746L;
 
 	/**
 	 * 做法id

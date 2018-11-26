@@ -9,11 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询钉钉企业零钱账单
  *
  * @author auto create
- * @since 1.0, 2018-10-18 16:01:22
+ * @since 1.0, 2018-11-16 19:59:30
  */
 public class AlipayDataDataserviceBillDingstaffbizorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1376932565323174837L;
+	private static final long serialVersionUID = 4549343493665761441L;
+
+	/**
+	 * 钉钉业务单据号
+	 */
+	@ApiField("biz_trans_id")
+	private String bizTransId;
+
+	/**
+	 * 业务类型标识。支持类型有：0100-群收款，0101-报销，0102-支付，0103-收款，0104-转账，0105-工资
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * 资金流向。S表示收入，B表示支出
@@ -64,6 +76,20 @@ public class AlipayDataDataserviceBillDingstaffbizorderQueryModel extends Alipay
 	 */
 	@ApiField("virtual_user_id")
 	private String virtualUserId;
+
+	public String getBizTransId() {
+		return this.bizTransId;
+	}
+	public void setBizTransId(String bizTransId) {
+		this.bizTransId = bizTransId;
+	}
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
+	}
 
 	public String getDirection() {
 		return this.direction;

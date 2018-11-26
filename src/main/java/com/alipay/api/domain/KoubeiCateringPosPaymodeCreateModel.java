@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新增支付方式
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:22:15
+ * @since 1.0, 2018-11-16 17:29:49
  */
 public class KoubeiCateringPosPaymodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7367195646992982615L;
+	private static final long serialVersionUID = 1347941556487244262L;
 
 	/**
 	 * 固定面额

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 班次信息
  *
  * @author auto create
- * @since 1.0, 2018-10-24 22:43:22
+ * @since 1.0, 2018-11-16 17:20:56
  */
 public class ShopPosSchedule extends AlipayObject {
 
-	private static final long serialVersionUID = 3585366432113296157L;
+	private static final long serialVersionUID = 3576894246962456385L;
 
 	/**
 	 * 早班结束时间

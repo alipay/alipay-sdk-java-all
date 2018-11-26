@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自建盒子可选套餐的模型
  *
  * @author auto create
- * @since 1.0, 2018-10-24 18:38:27
+ * @since 1.0, 2018-11-21 14:17:40
  */
 public class PosChooseDishGroupModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6382364758433272389L;
+	private static final long serialVersionUID = 6134546349792225983L;
 
 	/**
 	 * 组合菜的ID，如果套餐有组合菜，必传

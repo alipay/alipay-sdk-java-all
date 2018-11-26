@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.order.refund request
  * 
  * @author auto create
- * @since 1.0, 2018-09-12 14:47:39
+ * @since 1.0, 2018-11-02 15:35:00
  */
 public class KoubeiCateringOrderRefundRequest implements AlipayRequest<KoubeiCateringOrderRefundResponse> {
 

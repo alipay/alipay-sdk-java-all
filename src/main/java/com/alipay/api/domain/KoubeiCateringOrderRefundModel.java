@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑点餐订单后付商户退款
  *
  * @author auto create
- * @since 1.0, 2018-09-03 17:18:37
+ * @since 1.0, 2018-11-02 15:30:22
  */
 public class KoubeiCateringOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4893387928251768795L;
+	private static final long serialVersionUID = 1456438167143937375L;
 
 	/**
 	 * 退款金额

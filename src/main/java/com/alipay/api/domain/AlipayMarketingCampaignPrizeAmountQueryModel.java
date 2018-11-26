@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 奖品剩余数量查询
  *
  * @author auto create
- * @since 1.0, 2018-10-17 14:15:33
+ * @since 1.0, 2018-11-13 10:36:36
  */
 public class AlipayMarketingCampaignPrizeAmountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4781681454672522169L;
+	private static final long serialVersionUID = 6253674299243222825L;
 
 	/**
 	 * 活动id

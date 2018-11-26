@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 桌位排序参数
  *
  * @author auto create
- * @since 1.0, 2018-10-24 22:43:12
+ * @since 1.0, 2018-11-16 17:25:22
  */
 public class SortDeskParam extends AlipayObject {
 
-	private static final long serialVersionUID = 7376226451112141445L;
+	private static final long serialVersionUID = 5133193337554316218L;
 
 	/**
 	 * 区域ID

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.menu.modify request
  * 
  * @author auto create
- * @since 1.0, 2018-07-16 17:18:31
+ * @since 1.0, 2018-11-05 19:08:54
  */
 public class AlipayOpenPublicMenuModifyRequest implements AlipayRequest<AlipayOpenPublicMenuModifyResponse> {
 

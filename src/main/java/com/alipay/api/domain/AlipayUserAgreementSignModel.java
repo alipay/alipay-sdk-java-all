@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议签约接口
  *
  * @author auto create
- * @since 1.0, 2018-10-15 19:31:18
+ * @since 1.0, 2018-11-16 11:44:52
  */
 public class AlipayUserAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8535213557987331783L;
+	private static final long serialVersionUID = 2135328416697764192L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。
@@ -131,6 +131,12 @@ sub_merchant_service_description (子商户服务描述)
 	 */
 	@ApiField("third_party_type")
 	private String thirdPartyType;
+
+	/**
+	 * 商户希望限制的签约用户的年龄范围，min表示可签该协议的用户年龄下限，max表示年龄上限。如{"min": "18","max": "30"}表示18=<年龄<=30的用户可以签约该协议。
+	 */
+	@ApiField("user_age_range")
+	private String userAgeRange;
 
 	/**
 	 * 校验信息，针对双因子校验逻辑，如果logonId为email时，必须传入证件号后4位信息。Json格式。
@@ -254,6 +260,13 @@ sub_merchant_service_description (子商户服务描述)
 	}
 	public void setThirdPartyType(String thirdPartyType) {
 		this.thirdPartyType = thirdPartyType;
+	}
+
+	public String getUserAgeRange() {
+		return this.userAgeRange;
+	}
+	public void setUserAgeRange(String userAgeRange) {
+		this.userAgeRange = userAgeRange;
 	}
 
 	public VerifyParams getVerifyParams() {

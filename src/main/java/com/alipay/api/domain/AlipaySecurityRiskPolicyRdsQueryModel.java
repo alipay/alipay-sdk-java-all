@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskPolicyRdsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8447762614168475518L;
+	private static final long serialVersionUID = 8793551283721969246L;
 
 	/**
 	 * 参数名称：RDS采集的行为数据；非唯一；参数作用：RDS系统通过行为数据做人机识别；如何获取：客户端集成RDS的SDK后自动会获取到该数据。

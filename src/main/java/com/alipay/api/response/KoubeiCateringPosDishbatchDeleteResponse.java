@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.pos.dishbatch.delete response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-26 01:21:09
+ * @since 1.0, 2018-11-16 17:27:05
  */
 public class KoubeiCateringPosDishbatchDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6783588682261843999L;
+	private static final long serialVersionUID = 4677487599582766573L;
 
 	/** 
 	 * 删除成功的ID

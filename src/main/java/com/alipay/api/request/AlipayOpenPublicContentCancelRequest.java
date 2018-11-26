@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.content.cancel request
  * 
  * @author auto create
- * @since 1.0, 2017-07-14 11:38:07
+ * @since 1.0, 2018-11-14 17:25:32
  */
 public class AlipayOpenPublicContentCancelRequest implements AlipayRequest<AlipayOpenPublicContentCancelResponse> {
 

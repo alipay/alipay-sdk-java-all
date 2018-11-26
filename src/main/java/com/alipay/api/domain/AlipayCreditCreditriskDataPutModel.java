@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业融资数据采集平台对外的数据提交接口
  *
  * @author auto create
- * @since 1.0, 2017-08-15 09:11:01
+ * @since 1.0, 2018-11-14 16:41:37
  */
 public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6651689478627893474L;
+	private static final long serialVersionUID = 7248483254953737698L;
 
 	/**
 	 * 数据类别,ISV注册成为网商银行的会员，达成数据合作服务，约定数据模型，由网商分配给ISV的数据模型的类别
@@ -54,6 +54,12 @@ public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 	 */
 	@ApiField("objectcontent")
 	private String objectcontent;
+
+	/**
+	 * 采集任务ID
+	 */
+	@ApiField("taskid")
+	private String taskid;
 
 	public String getCategory() {
 		return this.category;
@@ -102,6 +108,13 @@ public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 	}
 	public void setObjectcontent(String objectcontent) {
 		this.objectcontent = objectcontent;
+	}
+
+	public String getTaskid() {
+		return this.taskid;
+	}
+	public void setTaskid(String taskid) {
+		this.taskid = taskid;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 盒子自建菜品查询时返回的模型
  *
  * @author auto create
- * @since 1.0, 2018-10-24 22:52:13
+ * @since 1.0, 2018-11-21 14:30:03
  */
 public class PosDishQryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2898519465642845711L;
+	private static final long serialVersionUID = 8245792775529389962L;
 
 	/**
 	 * 菜品类别

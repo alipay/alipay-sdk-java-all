@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.inneraccount.pid.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-02-26 15:54:10
+ * @since 1.0, 2018-11-01 17:44:14
  */
 public class AlipayOpenMiniInneraccountPidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8155764253976745563L;
+	private static final long serialVersionUID = 6325789665695854321L;
 
 	/** 
 	 * 虚拟PID

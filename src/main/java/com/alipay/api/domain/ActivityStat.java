@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动统计信息
  *
  * @author auto create
- * @since 1.0, 2018-10-18 18:01:41
+ * @since 1.0, 2018-11-16 11:01:30
  */
 public class ActivityStat extends AlipayObject {
 
-	private static final long serialVersionUID = 5892412546678467969L;
+	private static final long serialVersionUID = 5351224535519772227L;
 
 	/**
 	 * 活动总参与人次, 即活动总共签署合约数
@@ -26,13 +26,19 @@ public class ActivityStat extends AlipayObject {
 	private Long finishedCount;
 
 	/**
+	 * 已失效的合约数(人次)
+	 */
+	@ApiField("lose_efficacy_count")
+	private Long loseEfficacyCount;
+
+	/**
 	 * 活动总参与人数
 	 */
 	@ApiField("participator_count")
 	private Long participatorCount;
 
 	/**
-	 * 正在守约中的合约数(人次)
+	 * 待守约的合约数(人次)
 	 */
 	@ApiField("promising_count")
 	private Long promisingCount;
@@ -44,7 +50,7 @@ public class ActivityStat extends AlipayObject {
 	private Long tradeCount;
 
 	/**
-	 * 未守约的合约数(人次)
+	 * 已逾期的合约数(人次)
 	 */
 	@ApiField("violated_count")
 	private Long violatedCount;
@@ -61,6 +67,13 @@ public class ActivityStat extends AlipayObject {
 	}
 	public void setFinishedCount(Long finishedCount) {
 		this.finishedCount = finishedCount;
+	}
+
+	public Long getLoseEfficacyCount() {
+		return this.loseEfficacyCount;
+	}
+	public void setLoseEfficacyCount(Long loseEfficacyCount) {
+		this.loseEfficacyCount = loseEfficacyCount;
 	}
 
 	public Long getParticipatorCount() {

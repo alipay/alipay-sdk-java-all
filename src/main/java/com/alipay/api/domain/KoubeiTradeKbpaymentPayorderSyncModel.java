@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑外部支付回执
  *
  * @author auto create
- * @since 1.0, 2018-10-09 13:40:12
+ * @since 1.0, 2018-11-14 12:40:36
  */
 public class KoubeiTradeKbpaymentPayorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4831296197498144535L;
+	private static final long serialVersionUID = 5364386495482935224L;
 
 	/**
 	 * 附加数据，在查询API和支付通知中原样返回，该字段主要用于第三方系统携带订单的自定义数据

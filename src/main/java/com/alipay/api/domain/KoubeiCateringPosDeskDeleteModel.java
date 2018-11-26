@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除桌台
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:20:18
+ * @since 1.0, 2018-11-16 17:25:38
  */
 public class KoubeiCateringPosDeskDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1556819497896915759L;
+	private static final long serialVersionUID = 5474582691156935526L;
 
 	/**
 	 * 桌位Id

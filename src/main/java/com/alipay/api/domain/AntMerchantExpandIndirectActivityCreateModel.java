@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1883359168525146267L;
+	private static final long serialVersionUID = 8125729959125387559L;
 
 	/**
 	 * 活动类型，间联商户报名的支付宝活动类型。

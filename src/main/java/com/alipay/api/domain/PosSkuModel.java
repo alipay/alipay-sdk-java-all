@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自建盒子的sku的模型
  *
  * @author auto create
- * @since 1.0, 2018-10-24 14:06:06
+ * @since 1.0, 2018-11-21 14:30:03
  */
 public class PosSkuModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6659899975137357346L;
+	private static final long serialVersionUID = 7363731782774859626L;
 
 	/**
 	 * 餐盒费，除了删除，其他情况必传

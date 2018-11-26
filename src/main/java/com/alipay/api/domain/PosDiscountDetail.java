@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * pos优惠明细信息
  *
  * @author auto create
- * @since 1.0, 2018-10-23 11:21:37
+ * @since 1.0, 2018-11-13 11:09:02
  */
 public class PosDiscountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1325817789989649918L;
+	private static final long serialVersionUID = 6148992437542576552L;
 
 	/**
 	 * 优惠名称

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自建盒子菜品中的配菜的模型
  *
  * @author auto create
- * @since 1.0, 2018-10-24 14:06:06
+ * @since 1.0, 2018-11-21 14:30:03
  */
 public class PosDishMaterialModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4431434546856994659L;
+	private static final long serialVersionUID = 1324194638994881224L;
 
 	/**
 	 * 配菜的ID

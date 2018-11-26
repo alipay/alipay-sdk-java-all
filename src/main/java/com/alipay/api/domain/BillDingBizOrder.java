@@ -9,17 +9,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收支明细
  *
  * @author auto create
- * @since 1.0, 2018-10-18 16:01:23
+ * @since 1.0, 2018-11-14 11:46:59
  */
 public class BillDingBizOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 5611583967942633428L;
+	private static final long serialVersionUID = 8589345899669527663L;
 
 	/**
 	 * 收支金额,收入为正,支出为负
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 钉钉业务单据号
+	 */
+	@ApiField("biz_trans_id")
+	private String bizTransId;
+
+	/**
+	 * 业务类型标识。支持类型有：0100-群收款，0101-报销，0102-支付，0103-收款，0104-转账，0105-工资
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * 资金流向。S表示收入，B表示支出
@@ -86,6 +98,20 @@ public class BillDingBizOrder extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getBizTransId() {
+		return this.bizTransId;
+	}
+	public void setBizTransId(String bizTransId) {
+		this.bizTransId = bizTransId;
+	}
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
 	}
 
 	public String getDirection() {

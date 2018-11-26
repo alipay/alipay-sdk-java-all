@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自建盒子二维码同步
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:19:25
+ * @since 1.0, 2018-11-16 17:21:07
  */
 public class KoubeiCateringPosQrcodeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2656783748152653788L;
+	private static final long serialVersionUID = 6246511912379781145L;
 
 	/**
 	 * 需要同步的桌台与二维码信息

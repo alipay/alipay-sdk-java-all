@@ -10,17 +10,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 云凤蝶站点页面数据模型
  *
  * @author auto create
- * @since 1.0, 2018-10-22 16:57:36
+ * @since 1.0, 2018-11-08 16:15:57
  */
 public class FengdieSitesPageModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1231842981191287199L;
+	private static final long serialVersionUID = 8436467567222426554L;
 
 	/**
 	 * 站点页面别名
 	 */
 	@ApiField("alias")
 	private String alias;
+
+	/**
+	 * 是否为首页
+	 */
+	@ApiField("is_home_page")
+	private Boolean isHomePage;
+
+	/**
+	 * 首页原始 url，仅在 isHomePage = true 时候才存在
+	 */
+	@ApiField("origin_url")
+	private String originUrl;
 
 	/**
 	 * 活动页面 schema 数据
@@ -46,6 +58,20 @@ public class FengdieSitesPageModel extends AlipayObject {
 	}
 	public void setAlias(String alias) {
 		this.alias = alias;
+	}
+
+	public Boolean getIsHomePage() {
+		return this.isHomePage;
+	}
+	public void setIsHomePage(Boolean isHomePage) {
+		this.isHomePage = isHomePage;
+	}
+
+	public String getOriginUrl() {
+		return this.originUrl;
+	}
+	public void setOriginUrl(String originUrl) {
+		this.originUrl = originUrl;
 	}
 
 	public List<FengdieActivitySchemaModel> getSchema() {

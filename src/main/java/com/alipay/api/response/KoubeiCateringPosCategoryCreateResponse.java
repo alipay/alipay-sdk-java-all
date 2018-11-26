@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.pos.category.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-26 11:51:02
+ * @since 1.0, 2018-11-16 16:50:32
  */
 public class KoubeiCateringPosCategoryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3578446925854221745L;
+	private static final long serialVersionUID = 3411276384197789348L;
 
 	/** 
 	 * 新建菜类ID

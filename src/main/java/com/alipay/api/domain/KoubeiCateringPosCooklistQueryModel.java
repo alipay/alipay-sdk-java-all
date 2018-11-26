@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询门店菜谱
  *
  * @author auto create
- * @since 1.0, 2018-10-26 11:50:54
+ * @since 1.0, 2018-11-16 16:51:44
  */
 public class KoubeiCateringPosCooklistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8886647852861684149L;
+	private static final long serialVersionUID = 8483772574248789789L;
 
 	/**
 	 * 菜谱业务类型

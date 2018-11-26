@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付方式对象
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:22:22
+ * @since 1.0, 2018-11-21 14:21:46
  */
 public class PayModeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5381295213482971322L;
+	private static final long serialVersionUID = 7146291644664317593L;
 
 	/**
 	 * 是否记账（false:否；true:是）

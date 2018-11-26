@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店查询摘要信息接口模型
  *
  * @author auto create
- * @since 1.0, 2017-02-17 14:20:04
+ * @since 1.0, 2018-11-20 10:06:10
  */
 public class ShopSummaryQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5449611454652121318L;
+	private static final long serialVersionUID = 3256169461527397476L;
 
 	/**
 	 * 门店地址
@@ -94,6 +94,12 @@ public class ShopSummaryQueryResponse extends AlipayObject {
 	 */
 	@ApiField("main_shop_name")
 	private String mainShopName;
+
+	/**
+	 * 人均价格。单位是分。例如：2000，表示20元
+	 */
+	@ApiField("per_pay")
+	private String perPay;
 
 	/**
 	 * 图片集，是map转化成的json串，key是图片id,value是图片url
@@ -220,6 +226,13 @@ public class ShopSummaryQueryResponse extends AlipayObject {
 	}
 	public void setMainShopName(String mainShopName) {
 		this.mainShopName = mainShopName;
+	}
+
+	public String getPerPay() {
+		return this.perPay;
+	}
+	public void setPerPay(String perPay) {
+		this.perPay = perPay;
 	}
 
 	public String getPicColl() {

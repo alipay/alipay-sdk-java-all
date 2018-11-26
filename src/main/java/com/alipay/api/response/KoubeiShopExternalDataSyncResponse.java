@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.shop.external.data.sync response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-17 11:43:54
+ * @since 1.0, 2018-11-15 17:15:00
  */
 public class KoubeiShopExternalDataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6245225144384512598L;
+	private static final long serialVersionUID = 8297775637355777823L;
 
 	/** 
 	 * 流水结果描述

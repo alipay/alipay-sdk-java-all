@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量起售/停售菜品
  *
  * @author auto create
- * @since 1.0, 2018-10-26 11:50:45
+ * @since 1.0, 2018-11-16 17:19:10
  */
 public class KoubeiCateringPosDishstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2276257331961262689L;
+	private static final long serialVersionUID = 5323682687759249528L;
 
 	/**
 	 * 需要改售卖状态的菜品id集合

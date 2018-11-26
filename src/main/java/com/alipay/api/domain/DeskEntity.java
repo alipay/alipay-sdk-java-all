@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 桌台信息
  *
  * @author auto create
- * @since 1.0, 2018-10-24 22:43:26
+ * @since 1.0, 2018-11-16 17:24:47
  */
 public class DeskEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 5546345776419367142L;
+	private static final long serialVersionUID = 5298396389635913942L;
 
 	/**
 	 * 餐区ID

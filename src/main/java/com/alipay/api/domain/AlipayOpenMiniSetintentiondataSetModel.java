@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开发者配置意图数据
  *
  * @author auto create
- * @since 1.0, 2018-08-21 16:56:24
+ * @since 1.0, 2018-11-06 14:59:17
  */
 public class AlipayOpenMiniSetintentiondataSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2353515192445552287L;
+	private static final long serialVersionUID = 5257295253257665425L;
 
 	/**
 	 * 本次更新动作类型,put:新增或覆盖,remove:删除

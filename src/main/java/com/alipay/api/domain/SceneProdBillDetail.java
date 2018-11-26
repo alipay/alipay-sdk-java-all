@@ -7,17 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融账单信息
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:53:48
+ * @since 1.0, 2018-11-20 15:03:45
  */
 public class SceneProdBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7277563684923832847L;
+	private static final long serialVersionUID = 4792685998581426781L;
 
 	/**
 	 * 账单类型，包括：正常，手续费，保证金 等类型，根据机构需求可以进行扩展。非必填，不填默认为正常。
 	 */
 	@ApiField("bill_type")
 	private String billType;
+
+	/**
+	 * 结清日，时间格式为yyyy-MM-dd，如果为空，系统默认会以将账单改为已结清或者已处置状态的日期作为结清日
+	 */
+	@ApiField("clear_date")
+	private String clearDate;
+
+	/**
+	 * 货币类型， 不填写默认是人民币（156）
+	 */
+	@ApiField("currency")
+	private String currency;
+
+	/**
+	 * 贴息金额，单位：分
+	 */
+	@ApiField("discount_amt")
+	private String discountAmt;
 
 	/**
 	 * 到期日，时间格式为yyyy-MM-dd
@@ -32,13 +50,49 @@ public class SceneProdBillDetail extends AlipayObject {
 	private String intAmt;
 
 	/**
+	 * 其它收费项，单位分
+	 */
+	@ApiField("other_amt")
+	private String otherAmt;
+
+	/**
 	 * 逾期天数，只能为数字，无逾期传0
 	 */
 	@ApiField("overdue_days")
 	private String overdueDays;
 
 	/**
-	 * 应还罚息
+	 * 已还的利息金额，单位：分
+	 */
+	@ApiField("paid_int_amt")
+	private String paidIntAmt;
+
+	/**
+	 * 已还的其他收费项，单位：分
+	 */
+	@ApiField("paid_other_amt")
+	private String paidOtherAmt;
+
+	/**
+	 * 已还的罚息金额，单位：分
+	 */
+	@ApiField("paid_pen_amt")
+	private String paidPenAmt;
+
+	/**
+	 * 已还的本金金额，单位：分
+	 */
+	@ApiField("paid_prin_amt")
+	private String paidPrinAmt;
+
+	/**
+	 * 已还的总金额，单位：分
+	 */
+	@ApiField("paid_total_amt")
+	private String paidTotalAmt;
+
+	/**
+	 * 应还罚息，单位：分
 	 */
 	@ApiField("pen_amt")
 	private String penAmt;
@@ -48,6 +102,12 @@ public class SceneProdBillDetail extends AlipayObject {
 	 */
 	@ApiField("prin_amt")
 	private String prinAmt;
+
+	/**
+	 * 实际还款日（仅修复数据时使用）
+	 */
+	@ApiField("real_repay_date")
+	private String realRepayDate;
 
 	/**
 	 * 账单备注信息
@@ -80,6 +140,27 @@ public class SceneProdBillDetail extends AlipayObject {
 		this.billType = billType;
 	}
 
+	public String getClearDate() {
+		return this.clearDate;
+	}
+	public void setClearDate(String clearDate) {
+		this.clearDate = clearDate;
+	}
+
+	public String getCurrency() {
+		return this.currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
+
+	public String getDiscountAmt() {
+		return this.discountAmt;
+	}
+	public void setDiscountAmt(String discountAmt) {
+		this.discountAmt = discountAmt;
+	}
+
 	public String getDueDate() {
 		return this.dueDate;
 	}
@@ -94,11 +175,53 @@ public class SceneProdBillDetail extends AlipayObject {
 		this.intAmt = intAmt;
 	}
 
+	public String getOtherAmt() {
+		return this.otherAmt;
+	}
+	public void setOtherAmt(String otherAmt) {
+		this.otherAmt = otherAmt;
+	}
+
 	public String getOverdueDays() {
 		return this.overdueDays;
 	}
 	public void setOverdueDays(String overdueDays) {
 		this.overdueDays = overdueDays;
+	}
+
+	public String getPaidIntAmt() {
+		return this.paidIntAmt;
+	}
+	public void setPaidIntAmt(String paidIntAmt) {
+		this.paidIntAmt = paidIntAmt;
+	}
+
+	public String getPaidOtherAmt() {
+		return this.paidOtherAmt;
+	}
+	public void setPaidOtherAmt(String paidOtherAmt) {
+		this.paidOtherAmt = paidOtherAmt;
+	}
+
+	public String getPaidPenAmt() {
+		return this.paidPenAmt;
+	}
+	public void setPaidPenAmt(String paidPenAmt) {
+		this.paidPenAmt = paidPenAmt;
+	}
+
+	public String getPaidPrinAmt() {
+		return this.paidPrinAmt;
+	}
+	public void setPaidPrinAmt(String paidPrinAmt) {
+		this.paidPrinAmt = paidPrinAmt;
+	}
+
+	public String getPaidTotalAmt() {
+		return this.paidTotalAmt;
+	}
+	public void setPaidTotalAmt(String paidTotalAmt) {
+		this.paidTotalAmt = paidTotalAmt;
 	}
 
 	public String getPenAmt() {
@@ -113,6 +236,13 @@ public class SceneProdBillDetail extends AlipayObject {
 	}
 	public void setPrinAmt(String prinAmt) {
 		this.prinAmt = prinAmt;
+	}
+
+	public String getRealRepayDate() {
+		return this.realRepayDate;
+	}
+	public void setRealRepayDate(String realRepayDate) {
+		this.realRepayDate = realRepayDate;
 	}
 
 	public String getRemark() {

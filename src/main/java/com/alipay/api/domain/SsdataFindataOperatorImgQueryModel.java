@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataFindataOperatorImgQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5534683131635149522L;
+	private static final long serialVersionUID = 6488781736154538574L;
 
 	/**
 	 * 系统业务流水号，在提交用户信息时获得

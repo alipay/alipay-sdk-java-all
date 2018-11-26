@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicContentlibDatacollectSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2662847891514887528L;
+	private static final long serialVersionUID = 7354893794729833196L;
 
 	/**
 	 * 爬虫平台推送数据，为json字符串，bizNo 为推送流水号，taskName为任务名，业务数据包含在bizData中

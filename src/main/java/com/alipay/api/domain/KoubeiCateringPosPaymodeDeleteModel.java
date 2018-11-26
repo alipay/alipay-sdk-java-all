@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除支付方式
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:22:04
+ * @since 1.0, 2018-11-16 17:30:18
  */
 public class KoubeiCateringPosPaymodeDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5756322931777129958L;
+	private static final long serialVersionUID = 5848748985125437384L;
 
 	/**
 	 * 支付方式名称

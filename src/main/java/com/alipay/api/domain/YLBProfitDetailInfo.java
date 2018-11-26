@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YLBProfitDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5796545236244117986L;
+	private static final long serialVersionUID = 8764287254249728154L;
 
 	/**
 	 * 近1日收益，单位为元

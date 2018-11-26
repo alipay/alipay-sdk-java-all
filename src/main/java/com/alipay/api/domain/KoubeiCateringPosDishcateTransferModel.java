@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自建盒子批量转移菜品分类
  *
  * @author auto create
- * @since 1.0, 2018-10-26 11:50:23
+ * @since 1.0, 2018-11-16 16:50:01
  */
 public class KoubeiCateringPosDishcateTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3139293126678342211L;
+	private static final long serialVersionUID = 4117335281148595879L;
 
 	/**
 	 * 菜类ID

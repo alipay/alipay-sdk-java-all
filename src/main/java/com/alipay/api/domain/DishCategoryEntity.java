@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品菜类
  *
  * @author auto create
- * @since 1.0, 2018-10-26 11:37:08
+ * @since 1.0, 2018-11-16 16:49:43
  */
 public class DishCategoryEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 3833841799632186939L;
+	private static final long serialVersionUID = 7736187461128927597L;
 
 	/**
 	 * 分类ID

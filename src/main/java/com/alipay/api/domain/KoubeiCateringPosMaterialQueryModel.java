@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 配料列表查询
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:23:03
+ * @since 1.0, 2018-11-16 17:23:42
  */
 public class KoubeiCateringPosMaterialQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4845739535661297599L;
+	private static final long serialVersionUID = 5214621974315347213L;
 
 	/**
 	 * 门店id

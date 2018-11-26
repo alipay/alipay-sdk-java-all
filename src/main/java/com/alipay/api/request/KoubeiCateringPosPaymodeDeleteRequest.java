@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.pos.paymode.delete request
  * 
  * @author auto create
- * @since 1.0, 2018-10-26 01:22:06
+ * @since 1.0, 2018-11-16 17:30:18
  */
 public class KoubeiCateringPosPaymodeDeleteRequest implements AlipayRequest<KoubeiCateringPosPaymodeDeleteResponse> {
 

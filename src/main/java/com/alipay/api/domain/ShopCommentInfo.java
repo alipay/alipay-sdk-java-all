@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店评分信息模型
  *
  * @author auto create
- * @since 1.0, 2017-09-14 18:45:53
+ * @since 1.0, 2018-11-20 10:06:10
  */
 public class ShopCommentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5146862483389823671L;
+	private static final long serialVersionUID = 8245447742575479583L;
 
 	/**
 	 * 店铺30天平均人气值

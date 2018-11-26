@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询菜谱下菜品时候的菜类模型
  *
  * @author auto create
- * @since 1.0, 2018-10-24 14:06:00
+ * @since 1.0, 2018-11-21 14:30:25
  */
 public class PosCookDishCateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4362481649462521621L;
+	private static final long serialVersionUID = 7514634955467336729L;
 
 	/**
 	 * 菜类下的菜品数量

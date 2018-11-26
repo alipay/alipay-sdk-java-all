@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 受理单据撤销接口
  *
  * @author auto create
- * @since 1.0, 2017-11-29 16:52:35
+ * @since 1.0, 2018-11-15 16:07:55
  */
 public class AlipayEbppBillRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6876592451181527157L;
+	private static final long serialVersionUID = 6284291142157375696L;
 
 	/**
 	 * 支付宝流水号。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * hellobike月卡智能定价
  *
  * @author auto create
- * @since 1.0, 2018-09-07 14:03:18
+ * @since 1.0, 2018-11-19 11:37:53
  */
 public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6816598594348552124L;
+	private static final long serialVersionUID = 5592176846188788951L;
 
 	/**
 	 * 月卡售卖原价，单位为分，该参数取值为hellobike调用方自身的业务参数。

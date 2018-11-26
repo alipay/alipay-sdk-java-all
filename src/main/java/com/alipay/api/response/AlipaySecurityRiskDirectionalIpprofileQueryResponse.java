@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityRiskDirectionalIpprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8499311138732631865L;
+	private static final long serialVersionUID = 3198794267364977429L;
 
 	/** 
 	 * IP地址

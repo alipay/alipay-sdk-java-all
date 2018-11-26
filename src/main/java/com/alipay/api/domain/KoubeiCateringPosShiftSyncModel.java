@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 班次同步接口
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:20:59
+ * @since 1.0, 2018-11-16 17:20:56
  */
 public class KoubeiCateringPosShiftSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1384974832663274546L;
+	private static final long serialVersionUID = 1623185361989655371L;
 
 	/**
 	 * 班次信息

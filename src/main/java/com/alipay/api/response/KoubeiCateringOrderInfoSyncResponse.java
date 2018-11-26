@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.info.sync response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-22 14:30:15
+ * @since 1.0, 2018-11-13 11:05:00
  */
 public class KoubeiCateringOrderInfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5293271989686343252L;
+	private static final long serialVersionUID = 4277653363385567734L;
 
 	/** 
 	 * json结构化对象，部分退款场景：refund_amount=入参请求的退款金额，out_refund_no=入参请求的外部退款单号，buyer_real_amount=买家实际退金额，refund_real_amount=商家实际退款金额。

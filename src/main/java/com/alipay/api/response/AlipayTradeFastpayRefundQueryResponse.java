@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-26 17:20:00
+ * @since 1.0, 2018-11-16 17:17:28
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6643584265976257646L;
+	private static final long serialVersionUID = 2449638975169275722L;
 
 	/** 
 	 * 退款失败错误码。只在使用异步退款接口情况下才会返回该字段
@@ -85,8 +85,9 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	 * 本次退款使用的资金渠道；
 默认不返回该信息，需与支付宝约定后配置返回；
 	 */
-	@ApiField("refund_detail_item_list")
-	private TradeFundBill refundDetailItemList;
+	@ApiListField("refund_detail_item_list")
+	@ApiField("trade_fund_bill")
+	private List<TradeFundBill> refundDetailItemList;
 
 	/** 
 	 * 发起退款时，传入的退款原因
@@ -203,10 +204,10 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 		return this.refundChargeAmount;
 	}
 
-	public void setRefundDetailItemList(TradeFundBill refundDetailItemList) {
+	public void setRefundDetailItemList(List<TradeFundBill> refundDetailItemList) {
 		this.refundDetailItemList = refundDetailItemList;
 	}
-	public TradeFundBill getRefundDetailItemList( ) {
+	public List<TradeFundBill> getRefundDetailItemList( ) {
 		return this.refundDetailItemList;
 	}
 

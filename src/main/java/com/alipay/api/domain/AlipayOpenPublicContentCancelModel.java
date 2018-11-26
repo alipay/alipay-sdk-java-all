@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活号素材内容撤回接口
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:38:07
+ * @since 1.0, 2018-11-14 17:25:32
  */
 public class AlipayOpenPublicContentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6858398266247318445L;
+	private static final long serialVersionUID = 8314421678476923641L;
 
 	/**
 	 * message_id 是发布接口调用之后拿到的返回值，用来撤回已经发布的对应内容

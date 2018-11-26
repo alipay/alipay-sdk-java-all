@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修复档口异常菜品
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:23:36
+ * @since 1.0, 2018-11-16 17:22:13
  */
 public class KoubeiCateringPosStallrepairModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3355953389868382634L;
+	private static final long serialVersionUID = 7658636462676573756L;
 
 	/**
 	 * 菜品id

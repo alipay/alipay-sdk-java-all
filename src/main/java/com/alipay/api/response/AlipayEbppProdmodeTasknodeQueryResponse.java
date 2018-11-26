@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
@@ -8,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.prodmode.tasknode.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-26 13:55:32
+ * @since 1.0, 2018-11-15 19:45:01
  */
 public class AlipayEbppProdmodeTasknodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5594265316447426693L;
+	private static final long serialVersionUID = 7135132561759195587L;
+
+	/** 
+	 * 当前任务最新更新时间
+	 */
+	@ApiField("gmt_modified")
+	private Date gmtModified;
 
 	/** 
 	 * 是否可以编辑所有
@@ -49,6 +56,13 @@ public class AlipayEbppProdmodeTasknodeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("reject_time")
 	private String rejectTime;
+
+	public void setGmtModified(Date gmtModified) {
+		this.gmtModified = gmtModified;
+	}
+	public Date getGmtModified( ) {
+		return this.gmtModified;
+	}
 
 	public void setIsEditAll(String isEditAll) {
 		this.isEditAll = isEditAll;

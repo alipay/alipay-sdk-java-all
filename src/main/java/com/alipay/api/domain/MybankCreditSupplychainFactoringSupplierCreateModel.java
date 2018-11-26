@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链金融-自保理-创建供应商
  *
  * @author auto create
- * @since 1.0, 2018-10-29 11:45:54
+ * @since 1.0, 2018-11-12 10:09:59
  */
 public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1878215732163349942L;
+	private static final long serialVersionUID = 7123282548866156282L;
 
 	/**
 	 * 采购商网商银行参与者会员ID
@@ -42,6 +42,12 @@ public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayO
 	 */
 	@ApiField("seller_bank_acc")
 	private String sellerBankAcc;
+
+	/**
+	 * 供应商收款银行账户名
+	 */
+	@ApiField("seller_bank_acc_name")
+	private String sellerBankAccName;
 
 	/**
 	 * 供应商支行联行号-外标(企业时必填)
@@ -112,6 +118,13 @@ public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayO
 	}
 	public void setSellerBankAcc(String sellerBankAcc) {
 		this.sellerBankAcc = sellerBankAcc;
+	}
+
+	public String getSellerBankAccName() {
+		return this.sellerBankAccName;
+	}
+	public void setSellerBankAccName(String sellerBankAccName) {
+		this.sellerBankAccName = sellerBankAccName;
 	}
 
 	public String getSellerBankBranchUnionCode() {

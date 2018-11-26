@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自建盒子菜品同步接口
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:23:52
+ * @since 1.0, 2018-11-21 10:38:55
  */
 public class KoubeiCateringPosDishSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1879719646377199919L;
+	private static final long serialVersionUID = 7281531794742541236L;
 
 	/**
 	 * 自建盒子菜品的模型

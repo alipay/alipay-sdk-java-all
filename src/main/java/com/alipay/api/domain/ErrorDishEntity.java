@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 异常分配档口菜品对象
  *
  * @author auto create
- * @since 1.0, 2018-10-23 22:12:38
+ * @since 1.0, 2018-11-21 14:21:58
  */
 public class ErrorDishEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 7411722457957458271L;
+	private static final long serialVersionUID = 1645389386341226478L;
 
 	/**
 	 * 菜品id

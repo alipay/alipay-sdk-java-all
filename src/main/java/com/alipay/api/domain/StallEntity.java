@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 档口详情entity
  *
  * @author auto create
- * @since 1.0, 2018-10-26 01:21:24
+ * @since 1.0, 2018-11-21 14:22:40
  */
 public class StallEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 6269712996751195857L;
+	private static final long serialVersionUID = 5693372324521584251L;
 
 	/**
 	 * 档口下菜品集合

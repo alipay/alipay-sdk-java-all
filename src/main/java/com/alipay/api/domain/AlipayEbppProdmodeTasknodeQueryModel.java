@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 审批任务节点状态API
  *
  * @author auto create
- * @since 1.0, 2018-04-26 13:55:32
+ * @since 1.0, 2018-11-15 19:43:07
  */
 public class AlipayEbppProdmodeTasknodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1211368347623637919L;
+	private static final long serialVersionUID = 2775277979473354486L;
 
 	/**
 	 * 任务编号

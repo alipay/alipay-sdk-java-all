@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品明细信息
  *
  * @author auto create
- * @since 1.0, 2018-09-03 17:15:56
+ * @since 1.0, 2018-11-20 21:05:09
  */
 public class DishList extends AlipayObject {
 
-	private static final long serialVersionUID = 7586541882857554794L;
+	private static final long serialVersionUID = 2528295512856596388L;
 
 	/**
 	 * 总价
@@ -90,9 +90,9 @@ public class DishList extends AlipayObject {
 	 * "菜品的其他信息，包括但不限于：sku、规格，做法等信息;
 为Map结构的json格式，key的枚举定义：
 (1)PRACTICE:""红烧""   做法
-(2PRACTICE_PRICE:""10.0"" 做法加价
-(2)SALES_PROPERTY: {""甜度"":[""五分甜"",""三分甜""],""冰量"":[""少冰""]} 一般销售属性
-(3)SPECIFICATION:""大""  规格"
+(2)PRACTICE_PRICE:""10.0"" 做法加价
+(3)SALES_PROPERTY: {""甜度"":[""五分甜"",""三分甜""],""冰量"":[""少冰""]} 一般销售属性
+(4)SPECIFICATION:""大""  规格"
 	 */
 	@ApiField("out_dish_infos")
 	private String outDishInfos;
@@ -123,18 +123,18 @@ public class DishList extends AlipayObject {
 	private String skuId;
 
 	/**
-	 * "菜品状态：
+	 * 菜品状态：
 可枚举：
 (1)INIT:加菜
 (2)SUCCESS:接单
-(2)REFUND:退菜
-(2)CLOSE:拒单"
+(3)REFUND:退菜
+(4)CLOSE:拒单
 	 */
 	@ApiField("status")
 	private String status;
 
 	/**
-	 * 是否临时车：
+	 * 是否临时菜：
 可枚举：
 (1)Y
 (2)N
