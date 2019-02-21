@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.fund.fund.fixedprofit.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-30 14:15:24
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayFinanceFundFundFixedprofitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3741517312333565724L;
+	private static final long serialVersionUID = 4713593226672622895L;
 
 	/** 
 	 * 过去5年定投收益率

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pai.proxy.redirect response.
  * 
  * @author auto create
- * @since 1.0, 2014-06-12 17:16:12
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayPaiProxyRedirectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1233369842288916991L;
+	private static final long serialVersionUID = 5367289973975273422L;
 
 	/** 
 	 * 测试返回数据，页面级接口此项没用

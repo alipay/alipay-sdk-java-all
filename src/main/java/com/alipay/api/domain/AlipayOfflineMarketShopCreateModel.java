@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统商需要通过该接口在口碑平台帮助商户创建门店信息。
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:55:33
+ * @since 1.0, 2018-12-07 14:02:14
  */
 public class AlipayOfflineMarketShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1387374352418435146L;
+	private static final long serialVersionUID = 5447696212781264295L;
 
 	/**
 	 * 门店详细地址，地址字符长度在4-50个字符，注：不含省市区。门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层，“四川北路1552号欢乐广场1楼”。
@@ -30,12 +30,6 @@ public class AlipayOfflineMarketShopCreateModel extends AlipayObject {
 	 */
 	@ApiField("auth_letter")
 	private String authLetter;
-
-	/**
-	 * 人均消费价格，最少1元，最大不超过99999元，请按实际情况填写；单位元，不需填写单位。
-	 */
-	@ApiField("avg_price")
-	private String avgPrice;
 
 	/**
 	 * 店铺接口业务版本号，新接入的ISV，请统一传入2.0。
@@ -92,7 +86,7 @@ public class AlipayOfflineMarketShopCreateModel extends AlipayObject {
 	private String categoryId;
 
 	/**
-	 * 城市编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
+	 * 城市编码，国标码，详见国家统计局数据 <a href="https://gw.alipayobjects.com/os/basement_prod/92d874c4-39a9-4977-b710-d55dad374b7f.csv">点此下载</a>。
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -110,7 +104,7 @@ public class AlipayOfflineMarketShopCreateModel extends AlipayObject {
 	private String creator;
 
 	/**
-	 * 区县编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
+	 * 区县编码，国标码，详见国家统计局数据 <a href="https://gw.alipayobjects.com/os/basement_prod/92d874c4-39a9-4977-b710-d55dad374b7f.csv">点此下载</a>。
 	 */
 	@ApiField("district_code")
 	private String districtCode;
@@ -261,7 +255,7 @@ online_pay：在线买单。ISV不可以指定此字段，ISV泛行业开店默�
 	private String payType;
 
 	/**
-	 * 省份编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
+	 * 省份编码，国标码，详见国家统计局数据 <a href="https://gw.alipayobjects.com/os/basement_prod/92d874c4-39a9-4977-b710-d55dad374b7f.csv">点此下载</a>。
 	 */
 	@ApiField("province_code")
 	private String provinceCode;
@@ -321,13 +315,6 @@ online_pay：在线买单。ISV不可以指定此字段，ISV泛行业开店默�
 	}
 	public void setAuthLetter(String authLetter) {
 		this.authLetter = authLetter;
-	}
-
-	public String getAvgPrice() {
-		return this.avgPrice;
-	}
-	public void setAvgPrice(String avgPrice) {
-		this.avgPrice = avgPrice;
 	}
 
 	public String getBizVersion() {

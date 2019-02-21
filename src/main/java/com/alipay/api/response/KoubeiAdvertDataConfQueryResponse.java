@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.data.conf.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-03-03 10:41:20
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiAdvertDataConfQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3453211487714984651L;
+	private static final long serialVersionUID = 2747791341435176561L;
 
 	/** 
 	 * 渠道类型配置

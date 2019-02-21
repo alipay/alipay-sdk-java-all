@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.prodmode.tasknode.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-15 19:45:01
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEbppProdmodeTasknodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7135132561759195587L;
+	private static final long serialVersionUID = 8631471951932136386L;
 
 	/** 
 	 * 当前任务最新更新时间

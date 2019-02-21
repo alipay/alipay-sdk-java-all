@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 组合菜详情的复杂类型
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:30:03
+ * @since 1.0, 2018-12-20 11:37:52
  */
 public class PosDishGroupDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7277816266242252385L;
+	private static final long serialVersionUID = 4512531841986391927L;
 
 	/**
 	 * 详情菜的加价

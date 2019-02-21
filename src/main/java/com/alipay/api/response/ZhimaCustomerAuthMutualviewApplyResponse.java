@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.auth.mutualview.apply response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-26 09:35:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaCustomerAuthMutualviewApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3325774678375182913L;
+	private static final long serialVersionUID = 8473989974671321815L;
 
 	/** 
 	 * 查询用户信用状态的id

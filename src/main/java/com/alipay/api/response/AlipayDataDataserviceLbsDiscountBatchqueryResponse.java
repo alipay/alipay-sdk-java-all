@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.lbs.discount.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-03 16:59:45
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayDataDataserviceLbsDiscountBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8721161655749774974L;
+	private static final long serialVersionUID = 3165773967386561616L;
 
 	/** 
 	 * 广告投放出去的商品信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜谱下的菜品的详情对象
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:30:25
+ * @since 1.0, 2018-12-21 17:36:22
  */
 public class PosCookDishQryDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8296465757191896179L;
+	private static final long serialVersionUID = 3483386126697925221L;
 
 	/**
 	 * 菜品对应的售卖类别的ID
@@ -36,6 +36,12 @@ public class PosCookDishQryDetailModel extends AlipayObject {
 	 */
 	@ApiField("dish_name")
 	private String dishName;
+
+	/**
+	 * 菜品和档口的关系（多个档口以逗号,分隔）
+	 */
+	@ApiField("dish_stall_ref")
+	private String dishStallRef;
 
 	/**
 	 * 菜品的最低售卖价格
@@ -105,6 +111,13 @@ public class PosCookDishQryDetailModel extends AlipayObject {
 	}
 	public void setDishName(String dishName) {
 		this.dishName = dishName;
+	}
+
+	public String getDishStallRef() {
+		return this.dishStallRef;
+	}
+	public void setDishStallRef(String dishStallRef) {
+		this.dishStallRef = dishStallRef;
 	}
 
 	public String getMinPrice() {

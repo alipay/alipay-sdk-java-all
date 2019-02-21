@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.facepay.verify request
  * 
  * @author auto create
- * @since 1.0, 2017-03-04 14:23:39
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityProdFacepayVerifyRequest implements AlipayRequest<AlipaySecurityProdFacepayVerifyResponse> {
 

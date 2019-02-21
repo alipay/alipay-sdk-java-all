@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.acceptance.task.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-22 11:45:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoAcceptanceTaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3362544133215828723L;
+	private static final long serialVersionUID = 1894344373989455528L;
 
 	/** 
 	 * 创建的任务ID

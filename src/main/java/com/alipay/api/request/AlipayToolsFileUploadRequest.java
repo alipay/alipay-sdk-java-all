@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.tools.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2016-01-14 17:15:39
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayToolsFileUploadRequest implements AlipayUploadRequest<AlipayToolsFileUploadResponse> {
 

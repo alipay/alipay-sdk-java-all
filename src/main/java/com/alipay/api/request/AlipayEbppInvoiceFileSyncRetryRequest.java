@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.file.sync.retry request
  * 
  * @author auto create
- * @since 1.0, 2017-09-22 11:13:38
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEbppInvoiceFileSyncRetryRequest implements AlipayRequest<AlipayEbppInvoiceFileSyncRetryResponse> {
 

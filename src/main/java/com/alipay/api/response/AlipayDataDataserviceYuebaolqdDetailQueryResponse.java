@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.yuebaolqd.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-22 10:50:26
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayDataDataserviceYuebaolqdDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7887425477636451158L;
+	private static final long serialVersionUID = 6824885596161825261L;
 
 	/** 
 	 * 余额宝清算日预测申赎数据

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.violation.city.push response.
  * 
  * @author auto create
- * @since 1.0, 2017-09-15 16:30:11
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoMycarViolationCityPushResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5872912796413651315L;
+	private static final long serialVersionUID = 3484229869164843954L;
 
 	
 

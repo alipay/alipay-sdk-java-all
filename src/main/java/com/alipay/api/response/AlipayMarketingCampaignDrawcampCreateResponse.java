@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.drawcamp.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-17 14:15:59
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMarketingCampaignDrawcampCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6566467341167784423L;
+	private static final long serialVersionUID = 1674524372573654352L;
 
 	/** 
 	 * 抽奖活动id

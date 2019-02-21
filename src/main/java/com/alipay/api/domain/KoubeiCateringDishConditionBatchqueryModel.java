@@ -7,11 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据商户id分页查询菜品信息
  *
  * @author auto create
- * @since 1.0, 2018-08-14 17:24:54
+ * @since 1.0, 2019-01-07 17:44:13
  */
 public class KoubeiCateringDishConditionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2114341267938282358L;
+	private static final long serialVersionUID = 6252881974844727169L;
+
+	/**
+	 * 分类字典大类的id
+	 */
+	@ApiField("catetory_big_id")
+	private String catetoryBigId;
+
+	/**
+	 * 小类,商家自定义配置表例如 肉，酒水，素菜
+	 */
+	@ApiField("catetory_small_id")
+	private String catetorySmallId;
+
+	/**
+	 * 菜品id
+	 */
+	@ApiField("dish_id")
+	private String dishId;
+
+	/**
+	 * 菜名
+	 */
+	@ApiField("dish_name")
+	private String dishName;
 
 	/**
 	 * 商户的支付宝user_id. 商户授权后,isv能获得
@@ -30,6 +54,40 @@ public class KoubeiCateringDishConditionBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("page_size")
 	private String pageSize;
+
+	/**
+	 * 门店id
+	 */
+	@ApiField("shop_id")
+	private String shopId;
+
+	public String getCatetoryBigId() {
+		return this.catetoryBigId;
+	}
+	public void setCatetoryBigId(String catetoryBigId) {
+		this.catetoryBigId = catetoryBigId;
+	}
+
+	public String getCatetorySmallId() {
+		return this.catetorySmallId;
+	}
+	public void setCatetorySmallId(String catetorySmallId) {
+		this.catetorySmallId = catetorySmallId;
+	}
+
+	public String getDishId() {
+		return this.dishId;
+	}
+	public void setDishId(String dishId) {
+		this.dishId = dishId;
+	}
+
+	public String getDishName() {
+		return this.dishName;
+	}
+	public void setDishName(String dishName) {
+		this.dishName = dishName;
+	}
 
 	public String getMerchantId() {
 		return this.merchantId;
@@ -50,6 +108,13 @@ public class KoubeiCateringDishConditionBatchqueryModel extends AlipayObject {
 	}
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 }

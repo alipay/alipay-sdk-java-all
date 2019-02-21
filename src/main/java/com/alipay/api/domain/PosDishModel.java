@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自建盒子的菜品的模型
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:17:40
+ * @since 1.0, 2018-12-21 17:36:25
  */
 public class PosDishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2273616478777537468L;
+	private static final long serialVersionUID = 3631753156567845595L;
 
 	/**
 	 * 菜品大类的ID，除了删除，其他情况必传
@@ -81,11 +81,23 @@ public class PosDishModel extends AlipayObject {
 	private List<PosFixedDishGroupModel> fixedDishGroupList;
 
 	/**
+	 * 制作时长，单位：秒
+	 */
+	@ApiField("making_time")
+	private Long makingTime;
+
+	/**
 	 * 配料的ID列表
 	 */
 	@ApiListField("material_list")
 	@ApiField("pos_dish_material_model")
 	private List<PosDishMaterialModel> materialList;
+
+	/**
+	 * 单次最大制作份数
+	 */
+	@ApiField("max_copies_per_time")
+	private Long maxCopiesPerTime;
 
 	/**
 	 * 最低起点份数，除了删除，其他情况必传
@@ -245,11 +257,25 @@ public class PosDishModel extends AlipayObject {
 		this.fixedDishGroupList = fixedDishGroupList;
 	}
 
+	public Long getMakingTime() {
+		return this.makingTime;
+	}
+	public void setMakingTime(Long makingTime) {
+		this.makingTime = makingTime;
+	}
+
 	public List<PosDishMaterialModel> getMaterialList() {
 		return this.materialList;
 	}
 	public void setMaterialList(List<PosDishMaterialModel> materialList) {
 		this.materialList = materialList;
+	}
+
+	public Long getMaxCopiesPerTime() {
+		return this.maxCopiesPerTime;
+	}
+	public void setMaxCopiesPerTime(Long maxCopiesPerTime) {
+		this.maxCopiesPerTime = maxCopiesPerTime;
 	}
 
 	public Long getMinServing() {

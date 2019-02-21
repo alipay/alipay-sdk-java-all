@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.auth.gettoken request
  * 
  * @author auto create
- * @since 1.0, 2017-08-02 17:36:19
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayMobilePublicAuthGettokenRequest implements AlipayRequest<AlipayMobilePublicAuthGettokenResponse> {
 

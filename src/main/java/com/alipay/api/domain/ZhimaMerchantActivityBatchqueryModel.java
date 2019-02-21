@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信用承诺消费活动分页查询接口
  *
  * @author auto create
- * @since 1.0, 2018-10-25 15:24:06
+ * @since 1.0, 2018-12-27 15:49:12
  */
 public class ZhimaMerchantActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8778788269932189192L;
+	private static final long serialVersionUID = 8564167646579727324L;
+
+	/**
+	 * 活动号，来自活动创建接口[zhima.merchant.activity.create]
+	 */
+	@ApiField("activity_no")
+	private String activityNo;
 
 	/**
 	 * 当前页数，从1开始。
@@ -37,6 +43,13 @@ END - 活动结束
 	@ApiListField("status_list")
 	@ApiField("string")
 	private List<String> statusList;
+
+	public String getActivityNo() {
+		return this.activityNo;
+	}
+	public void setActivityNo(String activityNo) {
+		this.activityNo = activityNo;
+	}
 
 	public Long getPageNo() {
 		return this.pageNo;

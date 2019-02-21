@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dpc.alisis.olapprocessor request
  * 
  * @author auto create
- * @since 1.0, 2016-02-02 15:30:56
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayDataDpcAlisisOlapprocessorRequest implements AlipayRequest<AlipayDataDpcAlisisOlapprocessorResponse> {
 

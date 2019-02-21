@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商户人群组详情查询接口
  *
  * @author auto create
- * @since 1.0, 2018-07-26 14:05:09
+ * @since 1.0, 2018-12-18 10:23:33
  */
 public class KoubeiMarketingCampaignCrowdDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8254351192416885332L;
+	private static final long serialVersionUID = 5356254149925539971L;
 
 	/**
 	 * 人群组ID，人群组创建成功时返回的ID

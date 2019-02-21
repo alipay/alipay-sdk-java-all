@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.credit.autofinance.data.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-17 17:33:41
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCreditAutofinanceDataBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8225446631616636477L;
+	private static final long serialVersionUID = 1168413774885791469L;
 
 	/** 
 	 * 订单数据查询的返回值。通过列表方式批量返回机构的订单查询数据。通过系统控制返回的数据中不包含客户的敏感信息。

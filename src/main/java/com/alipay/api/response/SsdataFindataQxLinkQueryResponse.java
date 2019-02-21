@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.findata.qx.link.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-30 20:09:26
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class SsdataFindataQxLinkQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8294344949994473469L;
+	private static final long serialVersionUID = 1664254293845963713L;
 
 	/** 
 	 * 系统生成的业务唯一标识，用于标识商户的一笔业务

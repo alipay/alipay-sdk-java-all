@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无线转账支付接口
  *
  * @author auto create
- * @since 1.0, 2018-11-08 12:13:13
+ * @since 1.0, 2019-01-11 12:07:30
  */
 public class AlipayFundTransAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7797211277227157363L;
+	private static final long serialVersionUID = 1635255382842251496L;
 
 	/**
 	 * 描述特定的业务场景，比如对党费缴纳场景需走党费专户
@@ -60,6 +60,12 @@ public class AlipayFundTransAppPayModel extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 退款超时时间，格式yyyy-MM-dd HH:mm。到指定时间后，系统会自动触发退款，并原路退回到付款账户。如果指定了退款时间，必须早于销售方案里设置的最晚退款时间。
+	 */
+	@ApiField("refund_time_expire")
+	private String refundTimeExpire;
 
 	/**
 	 * 转账备注
@@ -133,6 +139,13 @@ public class AlipayFundTransAppPayModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getRefundTimeExpire() {
+		return this.refundTimeExpire;
+	}
+	public void setRefundTimeExpire(String refundTimeExpire) {
+		this.refundTimeExpire = refundTimeExpire;
 	}
 
 	public String getRemark() {

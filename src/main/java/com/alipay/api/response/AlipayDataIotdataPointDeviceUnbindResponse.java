@@ -1,0 +1,20 @@
+package com.alipay.api.response;
+
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.data.iotdata.point.device.unbind response.
+ * 
+ * @author auto create
+ * @since 1.0, 2019-01-23 12:00:00
+ */
+public class AlipayDataIotdataPointDeviceUnbindResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 4746628494797121565L;
+
+	
+
+	
+
+}

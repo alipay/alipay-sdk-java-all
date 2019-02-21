@@ -35,7 +35,7 @@ import com.alipay.api.FileItem;
 
 /**
  * 网络工具类。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Sep 12, 2009
  */
@@ -70,7 +70,7 @@ public abstract class WebUtils {
         try {
             ctx = SSLContext.getInstance("TLS");
             ctx.init(new KeyManager[0], new TrustManager[] { new DefaultTrustManager() },
-                new SecureRandom());
+                    new SecureRandom());
 
             ctx.getClientSessionContext().setSessionTimeout(15);
             ctx.getClientSessionContext().setSessionCacheSize(1000);
@@ -93,7 +93,7 @@ public abstract class WebUtils {
 
     /**
      * 执行HTTP POST请求，可使用代理proxy。
-     * 
+     *
      * @param url 请求地址
      * @param params 请求参数
      * @param charset 字符集，如UTF-8, GBK, GB2312
@@ -118,7 +118,7 @@ public abstract class WebUtils {
 
     /**
      * 执行HTTP POST请求。
-     * 
+     *
      * @param url 请求地址
      * @param ctype 请求类型
      * @param content 请求字节数组
@@ -174,7 +174,7 @@ public abstract class WebUtils {
 
     /**
      * 执行带文件上传的HTTP POST请求。
-     * 
+     *
      * @param url 请求地址
      * @param params 文本请求参数
      * @param fileParams 文件请求参数
@@ -224,7 +224,7 @@ public abstract class WebUtils {
                 Set<Entry<String, String>> textEntrySet = params.entrySet();
                 for (Entry<String, String> textEntry : textEntrySet) {
                     byte[] textBytes = getTextEntry(textEntry.getKey(), textEntry.getValue(),
-                        charset);
+                            charset);
                     out.write(entryBoundaryBytes);
                     out.write(textBytes);
                 }
@@ -234,7 +234,7 @@ public abstract class WebUtils {
                 for (Entry<String, FileItem> fileEntry : fileEntrySet) {
                     FileItem fileItem = fileEntry.getValue();
                     byte[] fileBytes = getFileEntry(fileEntry.getKey(), fileItem.getFileName(),
-                        fileItem.getMimeType(), charset);
+                            fileItem.getMimeType(), charset);
                     out.write(entryBoundaryBytes);
                     out.write(fileBytes);
                     out.write(fileItem.getContent());
@@ -287,7 +287,7 @@ public abstract class WebUtils {
 
     /**
      * 执行HTTP GET请求。
-     * 
+     *
      * @param url 请求地址
      * @param params 请求参数
      * @return 响应字符串
@@ -299,7 +299,7 @@ public abstract class WebUtils {
 
     /**
      * 执行HTTP GET请求。
-     * 
+     *
      * @param url 请求地址
      * @param params 请求参数
      * @param charset 字符集，如UTF-8, GBK, GB2312
@@ -339,12 +339,12 @@ public abstract class WebUtils {
         return rsp;
     }
 
-    private static HttpURLConnection getConnection(URL url, String method, String ctype) throws IOException {
+    public static HttpURLConnection getConnection(URL url, String method, String ctype) throws IOException {
         return getConnection(url, method, ctype, null);
     }
 
-    private static HttpURLConnection getConnection(URL url, String method, String ctype,
-                                                   String proxyHost, int proxyPort) throws IOException {
+    public static HttpURLConnection getConnection(URL url, String method, String ctype,
+                                                  String proxyHost, int proxyPort) throws IOException {
         Proxy proxy = new Proxy(Type.HTTP, new InetSocketAddress(proxyHost, proxyPort));
         return getConnection(url, method, ctype, proxy);
     }
@@ -373,7 +373,7 @@ public abstract class WebUtils {
         conn.setRequestMethod(method);
         conn.setDoInput(true);
         conn.setDoOutput(true);
-        conn.setRequestProperty("Accept", "text/xml,text/javascript,text/html");
+        conn.setRequestProperty("Accept", "text/plain,text/xml,text/javascript,text/html");
         conn.setRequestProperty("User-Agent", "aop-sdk-java");
         conn.setRequestProperty("Content-Type", ctype);
         return conn;
@@ -487,7 +487,7 @@ public abstract class WebUtils {
 
     /**
      * 使用默认的UTF-8字符集反编码请求参数值。
-     * 
+     *
      * @param value 参数值
      * @return 反编码后的参数值
      */
@@ -497,7 +497,7 @@ public abstract class WebUtils {
 
     /**
      * 使用默认的UTF-8字符集编码请求参数值。
-     * 
+     *
      * @param value 参数值
      * @return 编码后的参数值
      */
@@ -507,7 +507,7 @@ public abstract class WebUtils {
 
     /**
      * 使用指定的字符集反编码请求参数值。
-     * 
+     *
      * @param value 参数值
      * @param charset 字符集
      * @return 反编码后的参数值
@@ -526,7 +526,7 @@ public abstract class WebUtils {
 
     /**
      * 使用指定的字符集编码请求参数值。
-     * 
+     *
      * @param value 参数值
      * @param charset 字符集
      * @return 编码后的参数值
@@ -556,7 +556,7 @@ public abstract class WebUtils {
 
     /**
      * 从URL中提取所有的参数。
-     * 
+     *
      * @param query URL地址
      * @return 参数映射
      */

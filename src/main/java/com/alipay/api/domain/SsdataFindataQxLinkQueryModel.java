@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataFindataQxLinkQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4682188487121318858L;
+	private static final long serialVersionUID = 7518711937883157753L;
 
 	/**
 	 * 预留扩展

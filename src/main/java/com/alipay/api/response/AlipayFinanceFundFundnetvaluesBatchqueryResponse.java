@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.fund.fundnetvalues.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-02 18:06:11
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayFinanceFundFundnetvaluesBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1338911419816321236L;
+	private static final long serialVersionUID = 6551691891746829352L;
 
 	/** 
 	 * 基金代码

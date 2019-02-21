@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2018-08-13 12:41:13
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayFundCouponOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5522336566925734678L;
+	private static final long serialVersionUID = 1199938332933632487L;
 
 	/** 
 	 * 本次操作退款的金额，单位为：元（人民币），精确到小数点后两位，取值范围：[0.01,100000000.00]

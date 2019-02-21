@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.zcb.endowmentorder.detail.query request
  * 
  * @author auto create
- * @since 1.0, 2017-07-27 16:58:09
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayFinanceZcbEndowmentorderDetailQueryRequest implements AlipayRequest<AlipayFinanceZcbEndowmentorderDetailQueryResponse> {
 

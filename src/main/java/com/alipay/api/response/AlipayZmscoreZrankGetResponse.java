@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.zmscore.zrank.get response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-22 10:27:38
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayZmscoreZrankGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6469797211165941239L;
+	private static final long serialVersionUID = 5269435635628285138L;
 
 	/** 
 	 * 芝麻分分段

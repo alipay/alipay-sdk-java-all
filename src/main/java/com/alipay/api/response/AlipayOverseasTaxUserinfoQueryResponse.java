@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.userinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-13 17:15:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOverseasTaxUserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4519181616388928112L;
+	private static final long serialVersionUID = 6346144962547917237L;
 
 	/** 
 	 * 支付宝登录账号

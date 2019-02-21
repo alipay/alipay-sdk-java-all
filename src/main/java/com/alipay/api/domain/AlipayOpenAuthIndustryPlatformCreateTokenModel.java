@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业平台获取授权码
  *
  * @author auto create
- * @since 1.0, 2018-02-09 11:39:27
+ * @since 1.0, 2018-12-13 11:05:35
  */
 public class AlipayOpenAuthIndustryPlatformCreateTokenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3143182252376639941L;
+	private static final long serialVersionUID = 4878942675514257694L;
 
 	/**
 	 * isv的appid

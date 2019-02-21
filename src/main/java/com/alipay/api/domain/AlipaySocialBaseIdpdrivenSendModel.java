@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数据驱动-外部触发事件
  *
  * @author auto create
- * @since 1.0, 2018-04-16 15:26:04
+ * @since 1.0, 2018-12-12 11:50:21
  */
 public class AlipaySocialBaseIdpdrivenSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4839366569782638877L;
+	private static final long serialVersionUID = 1575517839473358456L;
 
 	/**
 	 * 参数名：asset_id
@@ -27,6 +27,7 @@ public class AlipaySocialBaseIdpdrivenSendModel extends AlipayObject {
 是否唯一：不唯一
 应用场景：用于数据触发的参数信息，具体参数内容与开发小二约定
 如何获取：商户的触发事件业务信息，通过文档约定字段
+文档见：https://yuque.antfin-inc.com/docs/share/4adf7d94-1386-4102-a825-e78065853302
 	 */
 	@ApiField("data")
 	private String data;

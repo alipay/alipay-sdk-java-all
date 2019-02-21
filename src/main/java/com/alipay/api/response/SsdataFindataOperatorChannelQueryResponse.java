@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.findata.operator.channel.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-30 20:07:05
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class SsdataFindataOperatorChannelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7722417772924115687L;
+	private static final long serialVersionUID = 4246486587432998133L;
 
 	/** 
 	 * 运营商渠道信息，其中item_status枚举：ENABLE（可用），DISABLE(不可用)。

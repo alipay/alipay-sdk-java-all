@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.promotion.cpainfo.create request
  * 
  * @author auto create
- * @since 1.0, 2016-03-04 10:56:52
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMsaasPromotionCpainfoCreateRequest implements AlipayRequest<AlipayMsaasPromotionCpainfoCreateResponse> {
 

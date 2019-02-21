@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.edu.jz.post.publish response.
  * 
  * @author auto create
- * @since 1.0, 2016-12-15 00:03:56
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoEduJzPostPublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7591766788337558777L;
+	private static final long serialVersionUID = 5213959457353796117L;
 
 	/** 
 	 * 职位编号

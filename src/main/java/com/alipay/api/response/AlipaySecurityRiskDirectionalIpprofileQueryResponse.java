@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.directional.ipprofile.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-08 14:07:36
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityRiskDirectionalIpprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3198794267364977429L;
+	private static final long serialVersionUID = 1642726524275825392L;
 
 	/** 
 	 * IP地址

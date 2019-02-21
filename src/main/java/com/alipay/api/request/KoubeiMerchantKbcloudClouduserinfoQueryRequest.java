@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.kbcloud.clouduserinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2018-11-19 18:09:40
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiMerchantKbcloudClouduserinfoQueryRequest implements AlipayRequest<KoubeiMerchantKbcloudClouduserinfoQueryResponse> {
 

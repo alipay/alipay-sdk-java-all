@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 操作人信息
  *
  * @author auto create
- * @since 1.0, 2017-10-20 11:04:38
+ * @since 1.0, 2019-01-03 10:34:53
  */
 public class PortfolioOperatorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5374632287683445738L;
+	private static final long serialVersionUID = 2616138392783982222L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.portfolio.opus.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-20 11:05:07
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiServindustryPortfolioOpusBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4372987678289255162L;
+	private static final long serialVersionUID = 3888717379166688328L;
 
 	/** 
 	 * 素材列表

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.test.practice response.
  * 
  * @author auto create
- * @since 1.0, 2016-03-30 10:16:33
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaMerchantTestPracticeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2542991756418649263L;
+	private static final long serialVersionUID = 1182157562784794644L;
 
 	/** 
 	 * xxxx

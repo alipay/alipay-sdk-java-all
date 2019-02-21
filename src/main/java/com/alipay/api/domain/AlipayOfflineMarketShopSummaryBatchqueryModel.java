@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店摘要信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2018-11-19 10:09:45
+ * @since 1.0, 2018-11-23 15:50:08
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2154115237125515436L;
+	private static final long serialVersionUID = 2365176699467324626L;
 
 	/**
 	 * 品牌名

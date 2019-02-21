@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.claim.report.modify request
  * 
  * @author auto create
- * @since 1.0, 2017-09-19 10:00:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayInsSceneClaimReportModifyRequest implements AlipayRequest<AlipayInsSceneClaimReportModifyResponse> {
 

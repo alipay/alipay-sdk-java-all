@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手艺人子评分项
  *
  * @author auto create
- * @since 1.0, 2017-10-26 10:35:48
+ * @since 1.0, 2019-01-03 10:34:49
  */
 public class CraftsmanSubAssessment extends AlipayObject {
 
-	private static final long serialVersionUID = 7227145748215188147L;
+	private static final long serialVersionUID = 7296894193441144188L;
 
 	/**
 	 * 子评分

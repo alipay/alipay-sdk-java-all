@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.deployorder.result.send request
  * 
  * @author auto create
- * @since 1.0, 2018-01-22 10:50:53
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayDataDataserviceDeployorderResultSendRequest implements AlipayRequest<AlipayDataDataserviceDeployorderResultSendResponse> {
 

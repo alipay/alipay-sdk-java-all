@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑健身会籍删除
  *
  * @author auto create
- * @since 1.0, 2018-11-16 14:47:07
+ * @since 1.0, 2019-01-03 10:29:12
  */
 public class KoubeiServindustryExerciseMemberDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7828695138783366765L;
+	private static final long serialVersionUID = 6899725362187376667L;
 
 	/**
 	 * 口碑的会籍ID

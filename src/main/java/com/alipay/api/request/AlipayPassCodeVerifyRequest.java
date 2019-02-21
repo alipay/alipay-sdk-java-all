@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pass.code.verify request
  * 
  * @author auto create
- * @since 1.0, 2014-06-12 17:16:11
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayPassCodeVerifyRequest implements AlipayRequest<AlipayPassCodeVerifyResponse> {
 

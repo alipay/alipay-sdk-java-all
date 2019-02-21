@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑pos订单菜明细
  *
  * @author auto create
- * @since 1.0, 2018-09-04 11:54:26
+ * @since 1.0, 2018-11-26 20:16:50
  */
 public class KbPosOrderDishDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6185133955196425233L;
+	private static final long serialVersionUID = 3286741145274775853L;
 
 	/**
 	 * 改价（单价），以元为单位，精度到分
@@ -196,7 +196,7 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	private String specName;
 
 	/**
-	 * 菜明细类型，SINGLE(单品)/SIDE(加料)/COMBO(套餐)/SINGLE_COMBO(套餐内单品)
+	 * 菜明细类型，SINGLE(单品)/SIDE(加料)/COMBO(套餐)/COMBO(套餐内单品)
 	 */
 	@ApiField("type")
 	private String type;

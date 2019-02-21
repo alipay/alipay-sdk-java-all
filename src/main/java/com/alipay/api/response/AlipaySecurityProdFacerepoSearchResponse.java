@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.facerepo.search response.
  * 
  * @author auto create
- * @since 1.0, 2016-06-30 08:29:21
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityProdFacerepoSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4862458498462777848L;
+	private static final long serialVersionUID = 7687197654274828871L;
 
 	/** 
 	 * 扩展参数

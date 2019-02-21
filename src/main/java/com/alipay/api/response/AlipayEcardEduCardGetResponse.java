@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ecard.edu.card.get response.
  * 
  * @author auto create
- * @since 1.0, 2014-06-12 17:16:45
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayEcardEduCardGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7413394878847342523L;
+	private static final long serialVersionUID = 7631994827785561293L;
 
 	/** 
 	 * 用户是否首次充值标记

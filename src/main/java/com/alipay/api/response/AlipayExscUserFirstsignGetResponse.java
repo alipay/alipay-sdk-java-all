@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.exsc.user.firstsign.get response.
  * 
  * @author auto create
- * @since 1.0, 2017-03-29 17:13:27
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayExscUserFirstsignGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1645455311532698927L;
+	private static final long serialVersionUID = 5247466578612279226L;
 
 	/** 
 	 * 返回结果的业务类型。首次快捷绑卡业务类型 （first_sign）

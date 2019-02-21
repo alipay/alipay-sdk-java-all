@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mdata.tag.get response.
  * 
  * @author auto create
- * @since 1.0, 2015-03-11 14:09:56
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayMdataTagGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6529428839558395971L;
+	private static final long serialVersionUID = 5182991827291369555L;
 
 	/** 
 	 * 查询到的标签值, JSON字符串

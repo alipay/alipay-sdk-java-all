@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.submerchant.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-09-23 20:46:10
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayBossProdSubmerchantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3861132249558775977L;
+	private static final long serialVersionUID = 1466966755651265833L;
 
 	/** 
 	 * 受理商户详细经营地址

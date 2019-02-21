@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.device.crashinfo.upload request
  * 
  * @author auto create
- * @since 1.0, 2018-08-24 17:07:27
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiMerchantDeviceCrashinfoUploadRequest implements AlipayRequest<KoubeiMerchantDeviceCrashinfoUploadResponse> {
 

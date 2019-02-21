@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trust.user.riskidentify.get response.
  * 
  * @author auto create
- * @since 1.0, 2016-01-04 10:16:04
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayTrustUserRiskidentifyGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6477169745521384119L;
+	private static final long serialVersionUID = 4514234293641526924L;
 
 	/** 
 	 * 行业关注名单识别结果

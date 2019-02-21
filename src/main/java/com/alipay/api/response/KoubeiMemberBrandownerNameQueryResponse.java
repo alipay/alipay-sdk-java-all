@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.member.brandowner.name.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-07-06 10:48:20
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiMemberBrandownerNameQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8775343937411129431L;
+	private static final long serialVersionUID = 6734738474167698328L;
 
 	/** 
 	 * 品牌商名称

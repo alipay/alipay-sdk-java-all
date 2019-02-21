@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.face.match response.
  * 
  * @author auto create
- * @since 1.0, 2017-09-04 17:58:43
+ * @since 1.0, 2019-02-14 16:29:41
  */
 public class AlipayCommerceLogisticsFaceMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3262427658661457356L;
+	private static final long serialVersionUID = 5749496513953713991L;
 
 	/** 
 	 * 返回业务唯一标识 , 用于在人脸匹配到目标后，根据这个业务唯一标识做后续业务j校验以及操作.比如针对刷脸开柜场景，商户需要根据返回的这个业务唯一标识来判断当前业务单的状态，来决定是否进行开柜操作 .

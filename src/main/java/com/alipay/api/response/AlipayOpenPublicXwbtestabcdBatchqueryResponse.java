@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.xwbtestabcd.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2017-12-21 18:51:53
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOpenPublicXwbtestabcdBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1271575762677344353L;
+	private static final long serialVersionUID = 6392834685555383673L;
 
 	/** 
 	 * 1111

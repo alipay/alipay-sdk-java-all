@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.matchuser.follow.query request
  * 
  * @author auto create
- * @since 1.0, 2017-11-07 14:06:28
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOpenPublicMatchuserFollowQueryRequest implements AlipayRequest<AlipayOpenPublicMatchuserFollowQueryResponse> {
 

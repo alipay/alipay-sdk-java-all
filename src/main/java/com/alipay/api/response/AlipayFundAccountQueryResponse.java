@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-10 21:27:30
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayFundAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7128335264119523846L;
+	private static final long serialVersionUID = 2438162234778452738L;
 
 	/** 
 	 * 可用余额。可用于支付或提现的余额。

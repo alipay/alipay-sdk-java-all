@@ -8,14 +8,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 芝麻承诺消费活动模型
+ * 芝麻信用承诺消费-活动模型
  *
  * @author auto create
- * @since 1.0, 2018-10-19 10:54:17
+ * @since 1.0, 2018-11-28 16:23:08
  */
 public class Activity extends AlipayObject {
 
-	private static final long serialVersionUID = 2212273797851216219L;
+	private static final long serialVersionUID = 1633531315468537181L;
 
 	/**
 	 * 活动名称，用于展示和区分活动，可重名
@@ -68,6 +68,14 @@ END - 活动结束
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 消费维度，用于核销判断，必须在如下枚举中：
+MERCHANT - 商户维度
+SHOP - 门店维度
+	 */
+	@ApiField("fulfil_dimension")
+	private String fulfilDimension;
 
 	/**
 	 * 商户外部活动号。需确保同一个商户Id下外部活动号唯一。
@@ -157,6 +165,13 @@ CONSUME_TIMES为"消费次数"。
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getFulfilDimension() {
+		return this.fulfilDimension;
+	}
+	public void setFulfilDimension(String fulfilDimension) {
+		this.fulfilDimension = fulfilDimension;
 	}
 
 	public String getOutActivityNo() {

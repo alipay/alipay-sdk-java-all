@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.commission.mission.search response.
  * 
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:12
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiAdvertCommissionMissionSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4425231579218393656L;
+	private static final long serialVersionUID = 7863477895794127998L;
 
 	/** 
 	 * 业务结果-任务列表

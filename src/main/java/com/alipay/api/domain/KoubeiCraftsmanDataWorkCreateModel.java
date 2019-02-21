@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手艺人作品发布接口
  *
  * @author auto create
- * @since 1.0, 2017-10-11 20:36:00
+ * @since 1.0, 2018-12-06 16:52:48
  */
 public class KoubeiCraftsmanDataWorkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7743334111452484115L;
+	private static final long serialVersionUID = 6425491495463116237L;
 
 	/**
-	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数
+	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为 koubei.member.data.oauth.query 中的 auth_code，默认有效期24小时；ISV自身角色操作的时候，无需传该参数
 	 */
 	@ApiField("auth_code")
 	private String authCode;

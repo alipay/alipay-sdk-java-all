@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单推单回执接口
  *
  * @author auto create
- * @since 1.0, 2018-09-03 17:16:07
+ * @since 1.0, 2019-01-18 15:26:33
  */
 public class KoubeiCateringOrderPushSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5159626733372141169L;
+	private static final long serialVersionUID = 2295942932789781163L;
 
 	/**
 	 * 口碑推单批次号，口碑推单时传入；
@@ -61,6 +61,12 @@ public class KoubeiCateringOrderPushSignModel extends AlipayObject {
 (4) 店铺已打烊：SHOP_CLOSE
 (5) 菜品售完：SELL_OUT
 (6) 其他原因：OTHER_REASON
+(7) LOW_VERSION 收银系统版本过低
+(8) SHOP_NOT_CONNECTED 没有门店绑定关系
+(9) MERCHANT_NOT_AUTHORIZED 商户没有授权
+(10) POS_UNCONNECTED POS关机或未联网
+(11) DISH_REASON 菜品原因
+(12) ACCEPT_REFUND 协商退款
 	 */
 	@ApiField("reject_reason_code")
 	private String rejectReasonCode;

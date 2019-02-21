@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.renthouse.ka.service.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-08-17 21:22:27
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoRenthouseKaServiceCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2459854933561924952L;
+	private static final long serialVersionUID = 5241654734915421624L;
 
 	
 

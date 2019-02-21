@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.commission.role.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-02-10 14:26:07
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiAdvertCommissionRoleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4331589926974882596L;
+	private static final long serialVersionUID = 4798787793857838899L;
 
 	/** 
 	 * 角色拥有信息，无论是否拥有角色，都会返回“角色拥有信息”，如果没有，则返回没有开通。同时需要通过role_code ，查找对应角色的开通情况

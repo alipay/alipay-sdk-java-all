@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.collateral.car.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-18 10:47:04
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayPcreditLoanCollateralCarQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2513972553562553853L;
+	private static final long serialVersionUID = 7699598157983419583L;
 
 	/** 
 	 * 用户常住地，参考标准的行政区域编号（http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/），如：

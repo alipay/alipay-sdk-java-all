@@ -10,20 +10,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手艺人信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-10-11 20:36:09
+ * @since 1.0, 2018-12-06 18:07:21
  */
 public class KoubeiCraftsmanDataProviderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4516172167544151845L;
+	private static final long serialVersionUID = 6229852543478473883L;
 
 	/**
-	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数
+	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为 koubei.member.data.oauth.query 中的 auth_code，默认有效期24小时；ISV自身角色操作的时候，无需传该参数
 	 */
 	@ApiField("auth_code")
 	private String authCode;
 
 	/**
-	 * 手艺人id  （如果传入craftsman_ids，会忽略其他参数：注意，不能与shop_id同时为空）
+	 * 手艺人id (如果传入craftsman_ids，会忽略其他参数：注意，不能与shop_id同时为空),以数组方式传值
 	 */
 	@ApiListField("craftsman_ids")
 	@ApiField("string")

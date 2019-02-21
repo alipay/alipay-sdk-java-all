@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 档口详情entity
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:22:40
+ * @since 1.0, 2018-12-21 17:36:37
  */
 public class StallEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 5693372324521584251L;
+	private static final long serialVersionUID = 7128996431146146523L;
 
 	/**
 	 * 档口下菜品集合
@@ -28,6 +28,13 @@ public class StallEntity extends AlipayObject {
 	 */
 	@ApiField("id")
 	private String id;
+
+	/**
+	 * 档口和kds的绑定信息
+	 */
+	@ApiListField("kds_list")
+	@ApiField("stall_kds_entity")
+	private List<StallKdsEntity> kdsList;
 
 	/**
 	 * 商户id
@@ -89,6 +96,13 @@ public class StallEntity extends AlipayObject {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public List<StallKdsEntity> getKdsList() {
+		return this.kdsList;
+	}
+	public void setKdsList(List<StallKdsEntity> kdsList) {
+		this.kdsList = kdsList;
 	}
 
 	public String getMerchantId() {

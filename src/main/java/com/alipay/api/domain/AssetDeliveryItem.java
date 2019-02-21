@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料配送指令对象, 包括物料配送的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 数量, 收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2018-11-16 17:18:42
+ * @since 1.0, 2019-01-16 13:56:09
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2733774427212643754L;
+	private static final long serialVersionUID = 2871694451717163716L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -24,6 +24,13 @@ public class AssetDeliveryItem extends AlipayObject {
 	 */
 	@ApiField("amount")
 	private Long amount;
+
+	/**
+	 * 订单申请日期, 格式:
+yyyy-MM-dd HH：mm:ss
+	 */
+	@ApiField("apply_order_date")
+	private String applyOrderDate;
 
 	/**
 	 * 申请单id
@@ -48,6 +55,12 @@ public class AssetDeliveryItem extends AlipayObject {
 	 */
 	@ApiField("biz_tag")
 	private String bizTag;
+
+	/**
+	 * 用于线下供应商区分业务流程，目前采用双方约定方
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * 发送地址
@@ -84,6 +97,24 @@ public class AssetDeliveryItem extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 公司主体代码
+	 */
+	@ApiField("ou_code")
+	private String ouCode;
+
+	/**
+	 * 公司主体名
+	 */
+	@ApiField("ou_name")
+	private String ouName;
+
+	/**
+	 * 外部业务单号，例如淘宝订单号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 1. 如果该物料是套组的子物料, 那么该值为套组物料id;
@@ -142,6 +173,13 @@ public class AssetDeliveryItem extends AlipayObject {
 		this.amount = amount;
 	}
 
+	public String getApplyOrderDate() {
+		return this.applyOrderDate;
+	}
+	public void setApplyOrderDate(String applyOrderDate) {
+		this.applyOrderDate = applyOrderDate;
+	}
+
 	public String getApplyOrderId() {
 		return this.applyOrderId;
 	}
@@ -168,6 +206,13 @@ public class AssetDeliveryItem extends AlipayObject {
 	}
 	public void setBizTag(String bizTag) {
 		this.bizTag = bizTag;
+	}
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
 	}
 
 	public AssetDeliveryAddress getFromAddress() {
@@ -210,6 +255,27 @@ public class AssetDeliveryItem extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOuCode() {
+		return this.ouCode;
+	}
+	public void setOuCode(String ouCode) {
+		this.ouCode = ouCode;
+	}
+
+	public String getOuName() {
+		return this.ouName;
+	}
+	public void setOuName(String ouName) {
+		this.ouName = ouName;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public String getParentItemId() {

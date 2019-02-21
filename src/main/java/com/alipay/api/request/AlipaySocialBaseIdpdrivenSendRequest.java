@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.idpdriven.send request
  * 
  * @author auto create
- * @since 1.0, 2018-11-07 17:55:00
+ * @since 1.0, 2019-01-10 14:35:00
  */
 public class AlipaySocialBaseIdpdrivenSendRequest implements AlipayRequest<AlipaySocialBaseIdpdrivenSendResponse> {
 

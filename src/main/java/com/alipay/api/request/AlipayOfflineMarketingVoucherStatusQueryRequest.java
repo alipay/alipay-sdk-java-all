@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.marketing.voucher.status.query request
  * 
  * @author auto create
- * @since 1.0, 2018-08-22 11:31:38
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOfflineMarketingVoucherStatusQueryRequest implements AlipayRequest<AlipayOfflineMarketingVoucherStatusQueryResponse> {
 

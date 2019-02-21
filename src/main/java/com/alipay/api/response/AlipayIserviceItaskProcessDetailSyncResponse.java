@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.itask.process.detail.sync response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-14 20:35:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayIserviceItaskProcessDetailSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3864993889745145491L;
+	private static final long serialVersionUID = 6318951751894988466L;
 
 	/** 
 	 * 蚂蚁工单编号

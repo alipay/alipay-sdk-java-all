@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.acquire.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2014-06-12 17:17:06
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayAcquireCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2467726674256365317L;
+	private static final long serialVersionUID = 7656386812165783124L;
 
 	/** 
 	 * 对返回响应码进行原因说明，当result_code响应码为SUCCESS时，不返回该参数

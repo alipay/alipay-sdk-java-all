@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序灰度上架
  *
  * @author auto create
- * @since 1.0, 2017-12-22 10:06:19
+ * @since 1.0, 2018-12-25 14:16:49
  */
 public class AlipayOpenMiniVersionGrayOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4399265295996484359L;
+	private static final long serialVersionUID = 2638836545713427887L;
 
 	/**
 	 * 小程序版本号

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.delivery.discount.get response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-01 15:55:54
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiAdvertDeliveryDiscountGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5895561482466642414L;
+	private static final long serialVersionUID = 3132521445921437649L;
 
 	/** 
 	 * 广告推荐的商品信息列表，个数小于等于请求中参数“size”个数

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.edu.kt.parent.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-31 17:30:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoEduKtParentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2477426139599584588L;
+	private static final long serialVersionUID = 7752174697662558672L;
 
 	/** 
 	 * 如果用户已经添加过这个孩子，则返回SUCCESS ， 失败返回FAIL。

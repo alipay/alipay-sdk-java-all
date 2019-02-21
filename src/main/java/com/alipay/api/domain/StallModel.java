@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 档口model
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:22:27
+ * @since 1.0, 2018-12-21 17:36:41
  */
 public class StallModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1324241767981868712L;
+	private static final long serialVersionUID = 5322456553373397285L;
 
 	/**
 	 * 档口下菜品集合
@@ -28,6 +28,13 @@ public class StallModel extends AlipayObject {
 	 */
 	@ApiField("id")
 	private String id;
+
+	/**
+	 * kds详情信息
+	 */
+	@ApiListField("kds_list")
+	@ApiField("stall_kds_entity")
+	private List<StallKdsEntity> kdsList;
 
 	/**
 	 * 打印机id
@@ -77,6 +84,13 @@ public class StallModel extends AlipayObject {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public List<StallKdsEntity> getKdsList() {
+		return this.kdsList;
+	}
+	public void setKdsList(List<StallKdsEntity> kdsList) {
+		this.kdsList = kdsList;
 	}
 
 	public String getPrinterId() {

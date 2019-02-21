@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 后台运营操作风险识别
  *
  * @author auto create
- * @since 1.0, 2018-05-04 10:38:08
+ * @since 1.0, 2019-01-16 17:20:20
  */
 public class AlipaySecurityRiskReconfirmRiskidentifyCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6127999436655961549L;
+	private static final long serialVersionUID = 5429167261822529292L;
 
 	/**
 	 * 登录对应的账号名

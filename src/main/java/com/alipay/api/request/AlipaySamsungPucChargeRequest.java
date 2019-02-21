@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.samsung.puc.charge request
  * 
  * @author auto create
- * @since 1.0, 2018-04-26 13:55:58
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipaySamsungPucChargeRequest implements AlipayRequest<AlipaySamsungPucChargeResponse> {
 

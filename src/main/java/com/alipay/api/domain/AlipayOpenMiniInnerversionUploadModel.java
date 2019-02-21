@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建构建任务
  *
  * @author auto create
- * @since 1.0, 2018-10-26 23:37:11
+ * @since 1.0, 2018-12-17 19:24:42
  */
 public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7516588482135436864L;
+	private static final long serialVersionUID = 3556253466594658843L;
 
 	/**
 	 * IDE开发打包类型
@@ -60,6 +60,12 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	 */
 	@ApiField("build_qcloud_info")
 	private String buildQcloudInfo;
+
+	/**
+	 * 源码包大小
+	 */
+	@ApiField("build_source_pkg_size")
+	private String buildSourcePkgSize;
 
 	/**
 	 * 源码包地址
@@ -145,6 +151,13 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	}
 	public void setBuildQcloudInfo(String buildQcloudInfo) {
 		this.buildQcloudInfo = buildQcloudInfo;
+	}
+
+	public String getBuildSourcePkgSize() {
+		return this.buildSourcePkgSize;
+	}
+	public void setBuildSourcePkgSize(String buildSourcePkgSize) {
+		this.buildSourcePkgSize = buildSourcePkgSize;
 	}
 
 	public String getBuildSourcePkgUrl() {

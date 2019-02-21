@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.delivery.discount.send response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-31 20:48:04
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiAdvertDeliveryDiscountSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7553745374455781351L;
+	private static final long serialVersionUID = 4374946611789292962L;
 
 	/** 
 	 * 权益详细信息：

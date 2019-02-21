@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑健身会籍修改
  *
  * @author auto create
- * @since 1.0, 2018-11-16 14:47:11
+ * @since 1.0, 2019-01-03 10:29:19
  */
 public class KoubeiServindustryExerciseMemberModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2452998599842585357L;
+	private static final long serialVersionUID = 4169255358335914855L;
 
 	/**
 	 * 会籍的到期时间 注：name与会籍的到期时间两个可选字段至少传一个

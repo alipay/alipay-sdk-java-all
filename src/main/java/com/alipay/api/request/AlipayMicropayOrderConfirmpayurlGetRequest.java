@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.micropay.order.confirmpayurl.get request
  * 
  * @author auto create
- * @since 1.0, 2016-06-06 17:53:18
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayMicropayOrderConfirmpayurlGetRequest implements AlipayRequest<AlipayMicropayOrderConfirmpayurlGetResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.portfolio.opus.create response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-20 11:05:02
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiServindustryPortfolioOpusCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3299543814245632414L;
+	private static final long serialVersionUID = 7596243274224135793L;
 
 	/** 
 	 * 作品列表

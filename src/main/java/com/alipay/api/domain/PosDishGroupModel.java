@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 组合菜的对象
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:30:03
+ * @since 1.0, 2018-12-20 11:37:52
  */
 public class PosDishGroupModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2784719166524675792L;
+	private static final long serialVersionUID = 5352231261499991862L;
 
 	/**
 	 * 创建的用户名，请输入有效的用户ID，类型是新增时候，必填

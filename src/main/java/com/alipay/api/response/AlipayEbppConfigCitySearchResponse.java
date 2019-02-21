@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.config.city.search response.
  * 
  * @author auto create
- * @since 1.0, 2017-04-07 17:14:34
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayEbppConfigCitySearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7383131646337328693L;
+	private static final long serialVersionUID = 5593998562418911322L;
 
 	/** 
 	 * 接口主要输出参数列表: AreaInfoResult{List{ areaInfo：{province, cityList<String>}} }

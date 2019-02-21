@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商户营销报表查询
  *
  * @author auto create
- * @since 1.0, 2016-05-30 22:29:14
+ * @since 1.0, 2018-12-20 11:22:55
  */
 public class KoubeiMarketingDataActivityReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3318746661144183593L;
+	private static final long serialVersionUID = 1794446377659151248L;
 
 	/**
 	 * 查询报表数据的业务日期列表，精确到天，格式为yyyymmdd，支持列表格式，数据按天返回

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.mindv.answers.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2018-10-10 20:10:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayIserviceMindvAnswersBatchqueryRequest implements AlipayRequest<AlipayIserviceMindvAnswersBatchqueryResponse> {
 

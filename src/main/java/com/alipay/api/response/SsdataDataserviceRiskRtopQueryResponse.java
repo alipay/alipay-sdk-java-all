@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.rtop.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-05-09 13:25:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class SsdataDataserviceRiskRtopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4552389343393286149L;
+	private static final long serialVersionUID = 3187275496897663762L;
 
 	/** 
 	 * 查询结果+蚁盾风控大脑，监管科技平台查询后端ssdataprod应用的返回数据

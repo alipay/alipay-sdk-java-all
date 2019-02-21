@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收支明细
  *
  * @author auto create
- * @since 1.0, 2018-11-14 11:46:59
+ * @since 1.0, 2018-12-21 14:31:04
  */
 public class BillDingBizOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8589345899669527663L;
+	private static final long serialVersionUID = 1121356178573535394L;
 
 	/**
 	 * 收支金额,收入为正,支出为负
@@ -28,10 +28,28 @@ public class BillDingBizOrder extends AlipayObject {
 	private String bizTransId;
 
 	/**
-	 * 业务类型标识。支持类型有：0100-群收款，0101-报销，0102-支付，0103-收款，0104-转账，0105-工资
+	 * 业务类型标识。支持类型有：0000-充值到零钱，0100-群收款，0101-报销，0102-支付，0103-收款，0104-转账，0105-工资，0106-发红包，0107-领红包，0201-提现，0301-红包退款
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 类型中文
+	 */
+	@ApiField("biz_type_desc")
+	private String bizTypeDesc;
+
+	/**
+	 * 账单详情状态
+	 */
+	@ApiField("detail_state_desc")
+	private String detailStateDesc;
+
+	/**
+	 * 账单详情显示的头部内容
+	 */
+	@ApiField("detail_title")
+	private String detailTitle;
 
 	/**
 	 * 资金流向。S表示收入，B表示支出
@@ -50,6 +68,12 @@ public class BillDingBizOrder extends AlipayObject {
 	 */
 	@ApiField("id")
 	private String id;
+
+	/**
+	 * 账单列表页显示的缩略内容
+	 */
+	@ApiField("list_title")
+	private String listTitle;
 
 	/**
 	 * 脱敏后的对方支付宝账号
@@ -82,7 +106,7 @@ public class BillDingBizOrder extends AlipayObject {
 	private String outOrderNo;
 
 	/**
-	 * 业务类型, 有合作伙伴进行业务处理是传入,这里再透传回去
+	 * (Deprecated)非标准字段，不建议使用。业务类型, 有合作伙伴进行业务处理是传入,这里再透传回去
 	 */
 	@ApiField("sub_biz_scene")
 	private String subBizScene;
@@ -114,6 +138,27 @@ public class BillDingBizOrder extends AlipayObject {
 		this.bizType = bizType;
 	}
 
+	public String getBizTypeDesc() {
+		return this.bizTypeDesc;
+	}
+	public void setBizTypeDesc(String bizTypeDesc) {
+		this.bizTypeDesc = bizTypeDesc;
+	}
+
+	public String getDetailStateDesc() {
+		return this.detailStateDesc;
+	}
+	public void setDetailStateDesc(String detailStateDesc) {
+		this.detailStateDesc = detailStateDesc;
+	}
+
+	public String getDetailTitle() {
+		return this.detailTitle;
+	}
+	public void setDetailTitle(String detailTitle) {
+		this.detailTitle = detailTitle;
+	}
+
 	public String getDirection() {
 		return this.direction;
 	}
@@ -133,6 +178,13 @@ public class BillDingBizOrder extends AlipayObject {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public String getListTitle() {
+		return this.listTitle;
+	}
+	public void setListTitle(String listTitle) {
+		this.listTitle = listTitle;
 	}
 
 	public String getOppLoginId() {

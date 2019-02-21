@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 间连商户地址信息
+ * 商户地址信息
  *
  * @author auto create
- * @since 1.0, 2018-02-26 15:27:53
+ * @since 1.0, 2018-12-27 11:22:05
  */
 public class AddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4468846591435164583L;
+	private static final long serialVersionUID = 8271173885143525418L;
 
 	/**
 	 * 地址。商户详细经营地址或人员所在地点
@@ -46,6 +46,12 @@ http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * 高德poiid
+	 */
+	@ApiField("poiid")
+	private String poiid;
 
 	/**
 	 * 省份编码，
@@ -95,6 +101,13 @@ http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getPoiid() {
+		return this.poiid;
+	}
+	public void setPoiid(String poiid) {
+		this.poiid = poiid;
 	}
 
 	public String getProvinceCode() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.content.count.sync response.
  * 
  * @author auto create
- * @since 1.0, 2017-12-04 11:12:08
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOverseasTravelContentCountSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2414919431898344799L;
+	private static final long serialVersionUID = 2412488455695846251L;
 
 	/** 
 	 * 详细错误码。可选，当code=40004，sub_code=BUSINESS_ERROR，不为为空

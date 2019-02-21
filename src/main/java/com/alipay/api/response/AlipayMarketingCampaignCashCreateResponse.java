@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.cash.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-19 14:27:27
+ * @since 1.0, 2019-01-15 14:55:00
  */
 public class AlipayMarketingCampaignCashCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5213558647179453762L;
+	private static final long serialVersionUID = 8894388712961639746L;
 
 	/** 
 	 * 生成的现金红包活动号
@@ -27,7 +27,7 @@ public class AlipayMarketingCampaignCashCreateResponse extends AlipayResponse {
 	private String originCrowdNo;
 
 	/** 
-	 * 活动创建后的付款链接，返回的是urlencode编码后的字符串。需要先进行urldecode解码，然后在浏览器中进行访问，会先进行支付宝登录引导，然后商户进行付款。
+	 * 活动创建后的付款链接，返回的是urlencode编码后的字符串。需要先进行urldecode解码，然后在浏览器中进行访问，会先进行支付宝登录引导，然后商户进行付款，付款有效期24小时。
 	 */
 	@ApiField("pay_url")
 	private String payUrl;

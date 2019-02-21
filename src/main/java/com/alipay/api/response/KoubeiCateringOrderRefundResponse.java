@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.RefundDescriptionDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-02 15:35:00
+ * @since 1.0, 2019-01-25 10:41:35
  */
 public class KoubeiCateringOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8421444933155675238L;
+	private static final long serialVersionUID = 7722399959636877791L;
 
 	/** 
 	 * 扩展信息，json对象格式，key和value都为字符串
@@ -31,6 +34,13 @@ public class KoubeiCateringOrderRefundResponse extends AlipayResponse {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/** 
+	 * 退款明细列表
+	 */
+	@ApiListField("refund_description_list")
+	@ApiField("refund_description_d_t_o")
+	private List<RefundDescriptionDTO> refundDescriptionList;
 
 	/** 
 	 * 口碑退款单id
@@ -63,6 +73,13 @@ public class KoubeiCateringOrderRefundResponse extends AlipayResponse {
 	}
 	public String getOutBizNo( ) {
 		return this.outBizNo;
+	}
+
+	public void setRefundDescriptionList(List<RefundDescriptionDTO> refundDescriptionList) {
+		this.refundDescriptionList = refundDescriptionList;
+	}
+	public List<RefundDescriptionDTO> getRefundDescriptionList( ) {
+		return this.refundDescriptionList;
 	}
 
 	public void setRefundId(String refundId) {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.lottery.presentlist.query request
  * 
  * @author auto create
- * @since 1.0, 2018-03-30 15:00:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceLotteryPresentlistQueryRequest implements AlipayRequest<AlipayCommerceLotteryPresentlistQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.consume.sync response.
  * 
  * @author auto create
- * @since 1.0, 2017-06-23 14:51:37
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMarketingCardConsumeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8754468866837222424L;
+	private static final long serialVersionUID = 3528799566277226537L;
 
 	/** 
 	 * 外部卡号

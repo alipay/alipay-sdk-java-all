@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部商户券码券核销
  *
  * @author auto create
- * @since 1.0, 2017-11-08 16:26:31
+ * @since 1.0, 2019-01-14 21:12:55
  */
 public class AlipayMarketingVoucherStockUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2811746867344955622L;
+	private static final long serialVersionUID = 6737366926953966775L;
 
 	/**
 	 * 券码，也就是商户在创建外部券码模板时，上传的文件中的内容

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.renthouse.bill.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-08 10:54:24
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoRenthouseBillOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8238514712331184718L;
+	private static final long serialVersionUID = 5852661899459533653L;
 
 	/** 
 	 * billNo-账单编号

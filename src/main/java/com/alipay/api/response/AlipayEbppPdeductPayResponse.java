@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.pdeduct.pay response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-29 15:55:47
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEbppPdeductPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4525993836717874721L;
+	private static final long serialVersionUID = 4161853917648319855L;
 
 	/** 
 	 * 支付宝代扣协议ID

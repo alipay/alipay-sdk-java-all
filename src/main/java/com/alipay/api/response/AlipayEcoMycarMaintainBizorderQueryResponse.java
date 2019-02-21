@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.maintain.bizorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-04-12 11:48:53
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoMycarMaintainBizorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1575419951144296122L;
+	private static final long serialVersionUID = 4811952969531533154L;
 
 	/** 
 	 * 预约确认时间yyyy-MM-dd HH:mm:ss。门店确认预约时间。门店确认后，预约流程生效，用户可到店服务。

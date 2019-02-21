@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.mcomment.student.query request
  * 
  * @author auto create
- * @since 1.0, 2016-10-21 15:38:29
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySocialBaseMcommentStudentQueryRequest implements AlipayRequest<AlipaySocialBaseMcommentStudentQueryResponse> {
 

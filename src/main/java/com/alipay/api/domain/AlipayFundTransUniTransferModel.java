@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝转账支付接口
  *
  * @author auto create
- * @since 1.0, 2018-11-13 12:31:53
+ * @since 1.0, 2019-01-11 13:45:38
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6127645751342547182L;
+	private static final long serialVersionUID = 8482178935367955591L;
 
 	/**
 	 * 描述特定的业务场景，比如对党费缴纳场景需走党费专户
@@ -32,10 +32,22 @@ public class AlipayFundTransUniTransferModel extends AlipayObject {
 	private String orderTitle;
 
 	/**
+	 * 原单号。比如抢红包的时候，传红包支付时返回的支付宝单号。
+	 */
+	@ApiField("original_order_id")
+	private String originalOrderId;
+
+	/**
 	 * 商户端的唯一订单号，对于同一笔转账请求，商户需保证该订单号唯一。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 公用回传参数，如果请求时传递了该参数，则异步通知商户时会回传该参数。
+	 */
+	@ApiField("passback_params")
+	private String passbackParams;
 
 	/**
 	 * 收款方信息
@@ -88,11 +100,25 @@ public class AlipayFundTransUniTransferModel extends AlipayObject {
 		this.orderTitle = orderTitle;
 	}
 
+	public String getOriginalOrderId() {
+		return this.originalOrderId;
+	}
+	public void setOriginalOrderId(String originalOrderId) {
+		this.originalOrderId = originalOrderId;
+	}
+
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getPassbackParams() {
+		return this.passbackParams;
+	}
+	public void setPassbackParams(String passbackParams) {
+		this.passbackParams = passbackParams;
 	}
 
 	public Participant getPayeeInfo() {

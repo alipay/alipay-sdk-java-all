@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.content.create response.
  * 
  * @author auto create
- * @since 1.0, 2017-12-21 11:09:50
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOverseasTravelContentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5612593514768651341L;
+	private static final long serialVersionUID = 7138861737735516655L;
 
 	/** 
 	 * 可选，仅当请求中的modified_date等于已落地内容的modified_date并且内容状态一致，认为幂等成功，返回Success

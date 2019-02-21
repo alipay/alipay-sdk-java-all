@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.transfer.thirdparty.bill.create request
  * 
  * @author auto create
- * @since 1.0, 2014-06-25 17:00:56
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayTransferThirdpartyBillCreateRequest implements AlipayRequest<AlipayTransferThirdpartyBillCreateResponse> {
 

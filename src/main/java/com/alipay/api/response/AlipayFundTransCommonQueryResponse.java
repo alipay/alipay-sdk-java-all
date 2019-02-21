@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-27 11:10:10
+ * @since 1.0, 2019-01-18 16:04:34
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8574939417128675519L;
+	private static final long serialVersionUID = 2164581732348716766L;
 
 	/** 
 	 * 查询到的订单状态为FAIL失败或REFUND退票时，返回错误代码

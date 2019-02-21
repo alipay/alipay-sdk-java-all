@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.dsb.image.upload response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-10 14:37:15
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayInsDataDsbImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3243558735579423849L;
+	private static final long serialVersionUID = 5313414828364794293L;
 
 	/** 
 	 * 图像文件在oss存储上的路径

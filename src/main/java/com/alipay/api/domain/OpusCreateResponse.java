@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作品查询信息
  *
  * @author auto create
- * @since 1.0, 2017-10-20 11:05:02
+ * @since 1.0, 2019-01-03 10:35:20
  */
 public class OpusCreateResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2342792155831435144L;
+	private static final long serialVersionUID = 6513679457848967635L;
 
 	/**
 	 * 作品外部id

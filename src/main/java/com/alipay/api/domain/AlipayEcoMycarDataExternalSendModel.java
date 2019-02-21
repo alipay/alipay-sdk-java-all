@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业平台写请求
  *
  * @author auto create
- * @since 1.0, 2018-02-09 12:02:34
+ * @since 1.0, 2018-12-13 11:04:40
  */
 public class AlipayEcoMycarDataExternalSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6477177553893152299L;
+	private static final long serialVersionUID = 7721928914974331535L;
 
 	/**
 	 * external_system_name

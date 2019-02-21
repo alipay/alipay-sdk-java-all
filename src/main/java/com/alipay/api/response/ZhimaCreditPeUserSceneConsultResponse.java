@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.scene.consult response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-12 11:04:04
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaCreditPeUserSceneConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6118854124639677394L;
+	private static final long serialVersionUID = 8214133399266215896L;
 
 	/** 
 	 * 展示给C看的文案，json格式字符串
@@ -61,6 +61,12 @@ public class ZhimaCreditPeUserSceneConsultResponse extends AlipayResponse {
 	 */
 	@ApiField("top_goods_count")
 	private Long topGoodsCount;
+
+	/** 
+	 * 芝麻分等级,比如L1表示芝麻分大于750小于850, 可按场景自定义配置
+	 */
+	@ApiField("zm_score_level")
+	private String zmScoreLevel;
 
 	public void setDisplayMsg(String displayMsg) {
 		this.displayMsg = displayMsg;
@@ -116,6 +122,13 @@ public class ZhimaCreditPeUserSceneConsultResponse extends AlipayResponse {
 	}
 	public Long getTopGoodsCount( ) {
 		return this.topGoodsCount;
+	}
+
+	public void setZmScoreLevel(String zmScoreLevel) {
+		this.zmScoreLevel = zmScoreLevel;
+	}
+	public String getZmScoreLevel( ) {
+		return this.zmScoreLevel;
 	}
 
 }

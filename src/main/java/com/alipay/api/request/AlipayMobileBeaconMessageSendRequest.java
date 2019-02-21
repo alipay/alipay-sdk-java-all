@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.beacon.message.send request
  * 
  * @author auto create
- * @since 1.0, 2017-02-28 11:13:19
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMobileBeaconMessageSendRequest implements AlipayRequest<AlipayMobileBeaconMessageSendResponse> {
 

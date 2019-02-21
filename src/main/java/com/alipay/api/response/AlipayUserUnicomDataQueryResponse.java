@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.unicom.data.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-03 12:30:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserUnicomDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6714981162133228944L;
+	private static final long serialVersionUID = 8142934679814367428L;
 
 	/** 
 	 * 蚂蚁宝卡流量余额，单位M

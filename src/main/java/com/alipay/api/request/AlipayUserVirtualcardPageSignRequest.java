@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.virtualcard.page.sign request
  * 
  * @author auto create
- * @since 1.0, 2018-07-17 18:53:38
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserVirtualcardPageSignRequest implements AlipayRequest<AlipayUserVirtualcardPageSignResponse> {
 

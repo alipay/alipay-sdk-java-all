@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trust.user.score.get request
  * 
  * @author auto create
- * @since 1.0, 2016-01-04 10:16:11
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayTrustUserScoreGetRequest implements AlipayRequest<AlipayTrustUserScoreGetResponse> {
 

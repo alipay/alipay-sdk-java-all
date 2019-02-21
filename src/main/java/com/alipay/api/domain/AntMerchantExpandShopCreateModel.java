@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2018-10-16 20:52:17
+ * @since 1.0, 2018-11-28 15:17:33
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8663569892439515376L;
+	private static final long serialVersionUID = 6392771192356245624L;
+
+	/**
+	 * 品牌id
+	 */
+	@ApiField("brand_id")
+	private String brandId;
 
 	/**
 	 * 经营地址。地址对象中省、市、区、地址必填，其余选填
@@ -117,6 +123,12 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private List<IndustryQualificationInfo> qualifications;
 
 	/**
+	 * 场景
+	 */
+	@ApiField("scene")
+	private String scene;
+
+	/**
 	 * 结算支付宝账号的登录号
 	 */
 	@ApiField("settle_alipay_logon_id")
@@ -145,6 +157,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	 */
 	@ApiField("store_id")
 	private String storeId;
+
+	public String getBrandId() {
+		return this.brandId;
+	}
+	public void setBrandId(String brandId) {
+		this.brandId = brandId;
+	}
 
 	public AddressInfo getBusinessAddress() {
 		return this.businessAddress;
@@ -256,6 +275,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	}
 	public void setQualifications(List<IndustryQualificationInfo> qualifications) {
 		this.qualifications = qualifications;
+	}
+
+	public String getScene() {
+		return this.scene;
+	}
+	public void setScene(String scene) {
+		this.scene = scene;
 	}
 
 	public String getSettleAlipayLogonId() {

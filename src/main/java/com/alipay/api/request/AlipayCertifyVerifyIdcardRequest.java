@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.certify.verify.idcard request
  * 
  * @author auto create
- * @since 1.0, 2017-07-05 16:00:47
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayCertifyVerifyIdcardRequest implements AlipayRequest<AlipayCertifyVerifyIdcardResponse> {
 

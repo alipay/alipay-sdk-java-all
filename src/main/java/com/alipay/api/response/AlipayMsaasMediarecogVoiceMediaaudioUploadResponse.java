@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.voice.mediaaudio.upload response.
  * 
  * @author auto create
- * @since 1.0, 2016-05-28 22:41:09
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMsaasMediarecogVoiceMediaaudioUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7249989442181548857L;
+	private static final long serialVersionUID = 6168932611537323872L;
 
 	/** 
 	 * 扩展字段

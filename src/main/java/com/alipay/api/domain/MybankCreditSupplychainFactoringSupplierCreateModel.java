@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链金融-自保理-创建供应商
  *
  * @author auto create
- * @since 1.0, 2018-11-12 10:09:59
+ * @since 1.0, 2018-12-21 15:34:32
  */
 public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7123282548866156282L;
+	private static final long serialVersionUID = 4354783352817623317L;
 
 	/**
 	 * 采购商网商银行参与者会员ID
@@ -38,13 +38,19 @@ public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayO
 	private String buyerSiteUserId;
 
 	/**
+	 * 收款渠道
+	 */
+	@ApiField("rcv_account_type")
+	private String rcvAccountType;
+
+	/**
 	 * 供应商收款银行卡号
 	 */
 	@ApiField("seller_bank_acc")
 	private String sellerBankAcc;
 
 	/**
-	 * 供应商收款银行账户名
+	 * 供应商账户名
 	 */
 	@ApiField("seller_bank_acc_name")
 	private String sellerBankAccName;
@@ -111,6 +117,13 @@ public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayO
 	}
 	public void setBuyerSiteUserId(String buyerSiteUserId) {
 		this.buyerSiteUserId = buyerSiteUserId;
+	}
+
+	public String getRcvAccountType() {
+		return this.rcvAccountType;
+	}
+	public void setRcvAccountType(String rcvAccountType) {
+		this.rcvAccountType = rcvAccountType;
 	}
 
 	public String getSellerBankAcc() {

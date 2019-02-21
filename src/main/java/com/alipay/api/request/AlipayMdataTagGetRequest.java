@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mdata.tag.get request
  * 
  * @author auto create
- * @since 1.0, 2015-03-11 14:09:56
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayMdataTagGetRequest implements AlipayRequest<AlipayMdataTagGetResponse> {
 

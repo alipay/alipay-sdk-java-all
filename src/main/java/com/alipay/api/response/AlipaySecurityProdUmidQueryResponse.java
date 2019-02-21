@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.umid.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-29 11:15:43
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityProdUmidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1842945746614764947L;
+	private static final long serialVersionUID = 2563519438641332449L;
 
 	/** 
 	 * umid:客户端对应的UMID值，从UMID系统获取。

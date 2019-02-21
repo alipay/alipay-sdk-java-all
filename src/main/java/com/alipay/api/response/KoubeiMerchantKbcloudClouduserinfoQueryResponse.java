@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.kbcloud.clouduserinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-19 18:09:40
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiMerchantKbcloudClouduserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7119148466476219438L;
+	private static final long serialVersionUID = 3156549682692211799L;
 
 	/** 
 	 * 口碑云主账号数据列表

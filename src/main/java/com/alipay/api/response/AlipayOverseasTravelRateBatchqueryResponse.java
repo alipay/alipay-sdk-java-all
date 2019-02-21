@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.rate.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-02 16:35:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOverseasTravelRateBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5463633749458298331L;
+	private static final long serialVersionUID = 1863561635436436465L;
 
 	/** 
 	 * 汇率描述

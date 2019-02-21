@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.userid.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2016-06-06 21:37:53
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayUserAccountUseridBatchqueryRequest implements AlipayRequest<AlipayUserAccountUseridBatchqueryResponse> {
 

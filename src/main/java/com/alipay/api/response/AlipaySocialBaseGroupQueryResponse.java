@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.group.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-08-25 10:46:49
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySocialBaseGroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1611322214717491999L;
+	private static final long serialVersionUID = 2426655874551931787L;
 
 	/** 
 	 * 群id

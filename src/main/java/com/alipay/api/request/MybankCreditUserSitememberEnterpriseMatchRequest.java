@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.user.sitemember.enterprise.match request
  * 
  * @author auto create
- * @since 1.0, 2018-09-06 14:20:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class MybankCreditUserSitememberEnterpriseMatchRequest implements AlipayRequest<MybankCreditUserSitememberEnterpriseMatchResponse> {
 

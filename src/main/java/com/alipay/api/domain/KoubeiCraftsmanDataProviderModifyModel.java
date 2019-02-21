@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改手艺人信息接口
  *
  * @author auto create
- * @since 1.0, 2017-10-11 20:36:17
+ * @since 1.0, 2018-12-06 18:06:24
  */
 public class KoubeiCraftsmanDataProviderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8137993687629298592L;
+	private static final long serialVersionUID = 6527487543138588184L;
 
 	/**
-	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数
+	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为 koubei.member.data.oauth.query 中的 auth_code，默认有效期24小时；ISV自身角色操作的时候，无需传该参数
 	 */
 	@ApiField("auth_code")
 	private String authCode;
@@ -73,8 +73,7 @@ public class KoubeiCraftsmanDataProviderModifyModel extends AlipayObject {
 	private List<CraftsmanShopRelationOpenModel> shopRelations;
 
 	/**
-	 * 描述手艺人擅长的技术（如烫染、二分式剪法、足疗、中医推拿、刮痧、火疗、拔罐、婚纱、儿童、写真...）。最多6个标签
-每个标签字段上限10个字。
+	 * 描述手艺人擅长的技术（如烫染、二分式剪法、足疗、中医推拿、刮痧、火疗、拔罐、婚纱、儿童、写真...）。最多6个标签,最大长度指每个标签字段上限10个字。
 	 */
 	@ApiListField("specialities")
 	@ApiField("string")

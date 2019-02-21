@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.fuelling.shop.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-25 14:51:10
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoMycarFuellingShopCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7355497975967985169L;
+	private static final long serialVersionUID = 7723625422918311728L;
 
 	/** 
 	 * 车主平台内部门店编号,系统唯一，ISV应保存好该标识

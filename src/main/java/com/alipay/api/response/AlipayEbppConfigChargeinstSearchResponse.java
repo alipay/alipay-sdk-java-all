@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.config.chargeinst.search response.
  * 
  * @author auto create
- * @since 1.0, 2017-04-07 17:15:27
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayEbppConfigChargeinstSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8178562185533977973L;
+	private static final long serialVersionUID = 5226678712517975942L;
 
 	/** 
 	 * 接口输出参数列表 ChargeInstResult{ List<ChargeInstMode>}对象

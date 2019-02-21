@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.deposit.query response.
  * 
  * @author auto create
- * @since 1.0, 2015-12-15 11:37:56
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceCityfacilitatorDepositQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7169355674125227631L;
+	private static final long serialVersionUID = 3648536865653276127L;
 
 	/** 
 	 * 待圈存明细

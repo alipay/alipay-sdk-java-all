@@ -7,11 +7,28 @@ import com.alipay.api.internal.mapping.ApiField;
  * pos优惠明细信息
  *
  * @author auto create
- * @since 1.0, 2018-11-13 11:09:02
+ * @since 1.0, 2019-01-03 22:26:59
  */
 public class PosDiscountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6148992437542576552L;
+	private static final long serialVersionUID = 2865522442263727157L;
+
+	/**
+	 * 活动id
+	 */
+	@ApiField("activity_id")
+	private String activityId;
+
+	/**
+	 * 活动类型，可枚举的类型
+(1)itemDiscount 商品级优惠
+(2) buyItem 购买商品
+(3) fullDiscountCamp 全场折活动
+(4) fullCutCamp 全场满减活动
+(5) fullCutVoucher 全场满减券
+	 */
+	@ApiField("activity_type")
+	private String activityType;
 
 	/**
 	 * 优惠名称
@@ -26,7 +43,13 @@ public class PosDiscountDetail extends AlipayObject {
 	private String discountType;
 
 	/**
-	 * 扩展信息，存储优惠的详细模型。json对象格式，key和value都为字符串
+	 * 菜品id
+	 */
+	@ApiField("dish_id")
+	private String dishId;
+
+	/**
+	 * 扩展信息，存储优惠的详细模型。json对象格式，key和value都为字符串，其中DISH_ID为菜品id，USER_ITEM_ID为被核销商品id
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
@@ -43,6 +66,32 @@ public class PosDiscountDetail extends AlipayObject {
 	@ApiField("rt_discount")
 	private String rtDiscount;
 
+	/**
+	 * 人群要求(会员)，可枚举的类型(1)member 会员(2) normal 普通
+	 */
+	@ApiField("target_user_type")
+	private String targetUserType;
+
+	/**
+	 * 被核销的商品id
+	 */
+	@ApiField("used_item_id")
+	private String usedItemId;
+
+	public String getActivityId() {
+		return this.activityId;
+	}
+	public void setActivityId(String activityId) {
+		this.activityId = activityId;
+	}
+
+	public String getActivityType() {
+		return this.activityType;
+	}
+	public void setActivityType(String activityType) {
+		this.activityType = activityType;
+	}
+
 	public String getDiscountName() {
 		return this.discountName;
 	}
@@ -55,6 +104,13 @@ public class PosDiscountDetail extends AlipayObject {
 	}
 	public void setDiscountType(String discountType) {
 		this.discountType = discountType;
+	}
+
+	public String getDishId() {
+		return this.dishId;
+	}
+	public void setDishId(String dishId) {
+		this.dishId = dishId;
 	}
 
 	public String getExtInfo() {
@@ -76,6 +132,20 @@ public class PosDiscountDetail extends AlipayObject {
 	}
 	public void setRtDiscount(String rtDiscount) {
 		this.rtDiscount = rtDiscount;
+	}
+
+	public String getTargetUserType() {
+		return this.targetUserType;
+	}
+	public void setTargetUserType(String targetUserType) {
+		this.targetUserType = targetUserType;
+	}
+
+	public String getUsedItemId() {
+		return this.usedItemId;
+	}
+	public void setUsedItemId(String usedItemId) {
+		this.usedItemId = usedItemId;
 	}
 
 }

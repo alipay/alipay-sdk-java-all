@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.contract.userstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-27 18:10:15
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaCreditPeContractUserstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1636995244698973138L;
+	private static final long serialVersionUID = 7839238511869967688L;
 
 	/** 
 	 * 对于用户状态2和3情况会返回用户最近签署的合约信息

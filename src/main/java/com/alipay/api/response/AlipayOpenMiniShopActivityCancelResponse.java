@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.shop.activity.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-25 16:02:37
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOpenMiniShopActivityCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5598351818623331781L;
+	private static final long serialVersionUID = 6174717872325976118L;
 
 	/** 
 	 * 返回传入的业务处理流水号

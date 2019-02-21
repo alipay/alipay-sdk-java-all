@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.reconfirm.verificatecallback.send response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-23 15:07:57
+ * @since 1.0, 2019-01-16 17:20:04
  */
 public class AlipaySecurityRiskReconfirmVerificatecallbackSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4278518114358293421L;
+	private static final long serialVersionUID = 6386328947941597745L;
 
 	/** 
 	 * 额外返回信息

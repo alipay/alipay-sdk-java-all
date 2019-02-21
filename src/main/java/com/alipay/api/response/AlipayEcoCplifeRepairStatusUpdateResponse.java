@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.repair.status.update response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-09 20:19:57
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoCplifeRepairStatusUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7837487181514131316L;
+	private static final long serialVersionUID = 6727668468916517689L;
 
 	
 

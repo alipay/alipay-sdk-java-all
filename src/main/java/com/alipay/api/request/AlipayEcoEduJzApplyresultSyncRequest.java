@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.edu.jz.applyresult.sync request
  * 
  * @author auto create
- * @since 1.0, 2016-09-08 16:00:33
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoEduJzApplyresultSyncRequest implements AlipayRequest<AlipayEcoEduJzApplyresultSyncResponse> {
 

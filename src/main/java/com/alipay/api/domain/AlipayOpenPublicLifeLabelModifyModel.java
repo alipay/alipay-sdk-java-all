@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标签修改接口
  *
  * @author auto create
- * @since 1.0, 2018-08-22 11:32:33
+ * @since 1.0, 2018-12-24 10:49:02
  */
 public class AlipayOpenPublicLifeLabelModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7282282327483946842L;
+	private static final long serialVersionUID = 7278625294667745245L;
 
 	/**
 	 * 标签id，调用创建标签接口后由支付宝返回 ，只支持生活号自定义标签

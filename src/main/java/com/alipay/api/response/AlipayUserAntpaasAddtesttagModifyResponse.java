@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antpaas.addtesttag.modify response.
  * 
  * @author auto create
- * @since 1.0, 2017-06-30 11:13:29
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserAntpaasAddtesttagModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6114238515366991834L;
+	private static final long serialVersionUID = 7639343767531383734L;
 
 	/** 
 	 * 返回是否有标记或者是否达标成功，success，msg

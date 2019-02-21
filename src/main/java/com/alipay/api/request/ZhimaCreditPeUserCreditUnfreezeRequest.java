@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.pe.user.credit.unfreeze request
  * 
  * @author auto create
- * @since 1.0, 2018-10-12 11:06:49
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaCreditPeUserCreditUnfreezeRequest implements AlipayRequest<ZhimaCreditPeUserCreditUnfreezeResponse> {
 

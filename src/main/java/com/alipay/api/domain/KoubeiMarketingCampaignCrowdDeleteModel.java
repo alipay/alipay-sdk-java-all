@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商户人群组删除接口
  *
  * @author auto create
- * @since 1.0, 2018-07-26 14:04:50
+ * @since 1.0, 2018-12-18 10:23:07
  */
 public class KoubeiMarketingCampaignCrowdDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3729467436712868581L;
+	private static final long serialVersionUID = 3244883827184285276L;
 
 	/**
 	 * 人群组的唯一标识ID

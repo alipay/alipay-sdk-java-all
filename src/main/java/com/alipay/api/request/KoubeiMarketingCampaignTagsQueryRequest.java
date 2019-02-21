@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.tags.query request
  * 
  * @author auto create
- * @since 1.0, 2018-07-26 14:03:55
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiMarketingCampaignTagsQueryRequest implements AlipayRequest<KoubeiMarketingCampaignTagsQueryResponse> {
 

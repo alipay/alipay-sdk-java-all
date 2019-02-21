@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费学校信息录入接口
  *
  * @author auto create
- * @since 1.0, 2017-08-18 12:27:03
+ * @since 1.0, 2019-01-03 14:16:50
  */
 public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7288875585971277786L;
+	private static final long serialVersionUID = 7366391125772656952L;
 
 	/**
 	 * 与浙江网商交易见证平台有交互ISV输入网商交易异步通知回调URL，教育缴费同步账单信息给网商，网商会回调此url，ISV即可获取网商相关的参数，根据教育缴费平台账单发送接口返回的 order_no和网商返回的outer_trade_no来对应账单信息。
@@ -26,7 +26,7 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String bankPartnerId;
 
 	/**
-	 * 与浙江网商交易见证平台有交互的ISV在创建账户获得的member_id，由网商分配
+	 * 与浙江网商交易见证平台有交互的ISV在创建账户时的uid，也就是ISV平台上的用户ID（字母或数字）
 	 */
 	@ApiField("bank_uid")
 	private String bankUid;
@@ -36,6 +36,18 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	 */
 	@ApiField("bankcard_no")
 	private String bankcardNo;
+
+	/**
+	 * 集团收单模式：分账批次号，支付宝配置后提供的银行卡批次号
+	 */
+	@ApiField("batch_no")
+	private String batchNo;
+
+	/**
+	 * 学校开通直付通卡编号，smid与card_alias_no必须同时填写
+	 */
+	@ApiField("card_alias_no")
+	private String cardAliasNo;
 
 	/**
 	 * 城市的国家编码（国家统计局出版的行政区划代码 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/）
@@ -50,6 +62,12 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String cityName;
 
 	/**
+	 * 集团收单模式：BD批量上传银行卡信息后，支付宝系统分配给ISV的每个卡分配的唯一标识
+	 */
+	@ApiField("corporate_branch_pid")
+	private String corporateBranchPid;
+
+	/**
 	 * 区县的国家编码（国家统计局出版的行政区划代码 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/）
 	 */
 	@ApiField("district_code")
@@ -62,7 +80,7 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String districtName;
 
 	/**
-	 * 商家名称，每个接入教育缴费的ISV商家名称，由ISV自己提供
+	 * ISV公司名称 ， 会在账单详情页面展示给用户
 	 */
 	@ApiField("isv_name")
 	private String isvName;
@@ -76,13 +94,13 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String isvNo;
 
 	/**
-	 * 此通知地址是为了保持教育缴费平台与ISV商户支付状态一致性。用户支付成功后，支付宝会根据本isv_notify_url，通过POST请求的形式将支付结果作为参数通知到商户系统，ISV商户可以根据返回的参数更新账单状态。
+	 * 此通知地址是为了保持教育缴费平台与ISV商户支付状态一致性。用户支付成功后，支付宝会根据本isv_notify_url(异步通知说明https://docs.open.alipay.com/203/105286/)，通过POST请求的形式将支付结果作为参数通知到商户系统，ISV商户可以根据返回的参数更新账单状态。
 	 */
 	@ApiField("isv_notify_url")
 	private String isvNotifyUrl;
 
 	/**
-	 * ISV联系电话,用于账单详情页面显示
+	 * ISV的联系方式 ， 会在账单详情页面展示给用户，用户有问题可以直接联系此电话获取帮助
 	 */
 	@ApiField("isv_phone")
 	private String isvPhone;
@@ -125,7 +143,7 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String schoolName;
 
 	/**
-	 * 学校用来签约支付宝教育缴费的支付宝PID
+	 * 学校签约支付宝教育缴费支付宝pid,如果是直付通学校，填写直付通返回的smid
 	 */
 	@ApiField("school_pid")
 	private String schoolPid;
@@ -144,6 +162,18 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	 */
 	@ApiField("school_type")
 	private String schoolType;
+
+	/**
+	 * 学校开通直付通返回的二级商户id，smid与card_alias_no必须同时填写
+	 */
+	@ApiField("smid")
+	private String smid;
+
+	/**
+	 * 集团收单模式：分账批次号，支付宝配置后提供的银行卡批次号
+	 */
+	@ApiField("trans_in")
+	private String transIn;
 
 	/**
 	 * 与浙江网商交易见证平台有交互的ISV,由网商分配给ISV的渠道参数
@@ -179,6 +209,20 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 		this.bankcardNo = bankcardNo;
 	}
 
+	public String getBatchNo() {
+		return this.batchNo;
+	}
+	public void setBatchNo(String batchNo) {
+		this.batchNo = batchNo;
+	}
+
+	public String getCardAliasNo() {
+		return this.cardAliasNo;
+	}
+	public void setCardAliasNo(String cardAliasNo) {
+		this.cardAliasNo = cardAliasNo;
+	}
+
 	public String getCityCode() {
 		return this.cityCode;
 	}
@@ -191,6 +235,13 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	}
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
+	}
+
+	public String getCorporateBranchPid() {
+		return this.corporateBranchPid;
+	}
+	public void setCorporateBranchPid(String corporateBranchPid) {
+		this.corporateBranchPid = corporateBranchPid;
 	}
 
 	public String getDistrictCode() {
@@ -296,6 +347,20 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	}
 	public void setSchoolType(String schoolType) {
 		this.schoolType = schoolType;
+	}
+
+	public String getSmid() {
+		return this.smid;
+	}
+	public void setSmid(String smid) {
+		this.smid = smid;
+	}
+
+	public String getTransIn() {
+		return this.transIn;
+	}
+	public void setTransIn(String transIn) {
+		this.transIn = transIn;
 	}
 
 	public String getWhiteChannelCode() {

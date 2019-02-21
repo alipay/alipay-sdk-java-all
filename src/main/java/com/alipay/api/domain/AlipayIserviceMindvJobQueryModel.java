@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小蚁触角_问卷查询接口
  *
  * @author auto create
- * @since 1.0, 2018-09-19 16:54:34
+ * @since 1.0, 2019-01-03 11:30:33
  */
 public class AlipayIserviceMindvJobQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8136264973665862635L;
+	private static final long serialVersionUID = 5736249596772164397L;
 
 	/**
 	 * 问卷id_系统内唯一_根据问卷id查询问卷相关信息

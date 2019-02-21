@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步发票申请结果
  *
  * @author auto create
- * @since 1.0, 2018-06-21 14:42:28
+ * @since 1.0, 2018-12-17 16:21:35
  */
 public class AlipayEbppInvoiceApplyResultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5368339176258291651L;
+	private static final long serialVersionUID = 4737157213257134939L;
 
 	/**
 	 * 支付宝发起开票申请的id，该id具有唯一性，该字段由支付宝向税控发起申请的时候带过去，作为支付宝向税控开票申请的唯一标志

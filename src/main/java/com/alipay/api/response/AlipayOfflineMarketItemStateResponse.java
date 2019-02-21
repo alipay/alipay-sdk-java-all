@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.item.state response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-12 12:22:37
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOfflineMarketItemStateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2691688672853798555L;
+	private static final long serialVersionUID = 7243345638473185247L;
 
 	/** 
 	 * 口碑体系内部商品的唯一标识

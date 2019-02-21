@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.label.user.delete request
  * 
  * @author auto create
- * @since 1.0, 2016-07-29 19:58:34
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMobilePublicLabelUserDeleteRequest implements AlipayRequest<AlipayMobilePublicLabelUserDeleteResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.cdp.recommend.query request
  * 
  * @author auto create
- * @since 1.0, 2017-08-18 15:36:04
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMarketingCdpRecommendQueryRequest implements AlipayRequest<AlipayMarketingCdpRecommendQueryResponse> {
 

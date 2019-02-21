@@ -7,20 +7,22 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自助售卖机地址信息
  *
  * @author auto create
- * @since 1.0, 2018-08-10 11:46:58
+ * @since 1.0, 2018-12-13 10:35:02
  */
 public class SmartAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7185122817789339177L;
+	private static final long serialVersionUID = 5356574721338463517L;
 
 	/**
-	 * 行政区代码-区，使用国家行政区划代码，可参考http://preview.www.mca.gov.cn/article/sj/xzqh/2018/201805/20180506280855.html
+	 * 行政区代码-区，使用蚂蚁标准行政区划代码，可参考
+https://render.alipay.com/p/f/fd-jp40xpc9/index.html
 	 */
 	@ApiField("area_code")
 	private Long areaCode;
 
 	/**
-	 * 行政区代码-市，使用国家行政区划代码，可参考http://preview.www.mca.gov.cn/article/sj/xzqh/2018/201805/20180506280855.html
+	 * 行政区代码-市，使用蚂蚁标准行政区划代码，可参考
+https://render.alipay.com/p/f/fd-jp40xpc9/index.html
 	 */
 	@ApiField("city_code")
 	private Long cityCode;
@@ -32,7 +34,8 @@ public class SmartAddressInfo extends AlipayObject {
 	private String machineAddress;
 
 	/**
-	 * 行政区代码-省，使用国家行政区划代码，可参考http://preview.www.mca.gov.cn/article/sj/xzqh/2018/201805/20180506280855.html
+	 * 行政区代码-省，使用蚂蚁标准行政区划代码，可参考
+https://render.alipay.com/p/f/fd-jp40xpc9/index.html
 	 */
 	@ApiField("province_code")
 	private Long provinceCode;

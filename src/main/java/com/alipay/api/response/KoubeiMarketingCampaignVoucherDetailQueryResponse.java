@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.voucher.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-03 14:54:26
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiMarketingCampaignVoucherDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6532415414685551816L;
+	private static final long serialVersionUID = 1135849126314543872L;
 
 	/** 
 	 * 券状态列表如下：

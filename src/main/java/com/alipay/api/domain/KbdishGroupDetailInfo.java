@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 组明细
  *
  * @author auto create
- * @since 1.0, 2018-09-14 15:09:11
+ * @since 1.0, 2019-01-08 15:32:48
  */
 public class KbdishGroupDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7291715668772411276L;
+	private static final long serialVersionUID = 4494226826262621451L;
 
 	/**
 	 * 组下明细的加价单价 例如加2元 加3元
@@ -32,13 +32,13 @@ public class KbdishGroupDetailInfo extends AlipayObject {
 	private String detailDishId;
 
 	/**
-	 * 组下面的菜品是否默认 Y/N
+	 * 组下面的菜品是否默认 Y/N，该字段目前废弃
 	 */
 	@ApiField("detail_is_default")
 	private String detailIsDefault;
 
 	/**
-	 * 分组下包含的明细菜品的dish_code
+	 * 分组下包含的明细菜品的sku_id
 	 */
 	@ApiField("detail_sku_id")
 	private String detailSkuId;

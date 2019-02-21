@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.ocr.driverlicense.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-05-09 12:25:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayIserviceCognitiveOcrDriverlicenseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1797688367847516374L;
+	private static final long serialVersionUID = 7434542923362877584L;
 
 	/** 
 	 * 地址

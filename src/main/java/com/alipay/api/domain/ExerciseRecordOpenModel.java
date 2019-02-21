@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 健身记录
  *
  * @author auto create
- * @since 1.0, 2018-11-13 23:08:16
+ * @since 1.0, 2019-01-03 10:32:54
  */
 public class ExerciseRecordOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2171737534792169199L;
+	private static final long serialVersionUID = 6156357821488929268L;
 
 	/**
 	 * 运动计划类型。枚举：运动项目(ITEM),或课程(COURSE)

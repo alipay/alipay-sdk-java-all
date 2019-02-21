@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.mobileactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-06-15 13:55:46
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityRiskMobileactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4495892973373537388L;
+	private static final long serialVersionUID = 7767918126643583626L;
 
 	/** 
 	 * 是否有风险

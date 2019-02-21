@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.version.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-25 00:18:29
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1665558143236333838L;
+	private static final long serialVersionUID = 8324845981879365894L;
 
 	/** 
 	 * 小程序应用描述
@@ -119,7 +119,7 @@ public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 	private String rejectReason;
 
 	/** 
-	 * 安全扫描结果，HAS_RISK-安全扫描不通过，APPROVED-安全扫描通过，SCANNING-正在扫描
+	 * 安全扫描结果，True-安全扫描通过，False-安全扫描不通过，NAN-扫描中
 	 */
 	@ApiField("scan_result")
 	private String scanResult;

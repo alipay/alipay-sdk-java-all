@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.config.province.search request
  * 
  * @author auto create
- * @since 1.0, 2017-04-07 17:12:01
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayEbppConfigProvinceSearchRequest implements AlipayRequest<AlipayEbppConfigProvinceSearchResponse> {
 

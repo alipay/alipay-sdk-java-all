@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.contract.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-12 11:03:02
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaCreditPeUserContractUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6736567745631112255L;
+	private static final long serialVersionUID = 8834783653418924462L;
 
 	/** 
 	 * 解约时间，格式：yyyy-MM-dd hh:mm:ss

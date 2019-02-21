@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.acquire.query request
  * 
  * @author auto create
- * @since 1.0, 2018-04-18 17:54:57
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayAcquireQueryRequest implements AlipayRequest<AlipayAcquireQueryResponse> {
 

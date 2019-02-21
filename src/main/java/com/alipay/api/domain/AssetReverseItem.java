@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消订单或者退货所需复杂类型。
  *
  * @author auto create
- * @since 1.0, 2018-09-19 14:05:16
+ * @since 1.0, 2019-01-04 17:19:32
  */
 public class AssetReverseItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3133253598849627536L;
+	private static final long serialVersionUID = 3127244738885369861L;
 
 	/**
 	 * 行为类型
@@ -84,6 +84,18 @@ public class AssetReverseItem extends AlipayObject {
 	 */
 	@ApiField("original_record_type")
 	private String originalRecordType;
+
+	/**
+	 * 公司主体代码
+	 */
+	@ApiField("ou_code")
+	private String ouCode;
+
+	/**
+	 * 公司主体名
+	 */
+	@ApiField("ou_name")
+	private String ouName;
 
 	/**
 	 * 逆向类型
@@ -173,6 +185,20 @@ public class AssetReverseItem extends AlipayObject {
 	}
 	public void setOriginalRecordType(String originalRecordType) {
 		this.originalRecordType = originalRecordType;
+	}
+
+	public String getOuCode() {
+		return this.ouCode;
+	}
+	public void setOuCode(String ouCode) {
+		this.ouCode = ouCode;
+	}
+
+	public String getOuName() {
+		return this.ouName;
+	}
+	public void setOuName(String ouName) {
+		this.ouName = ouName;
 	}
 
 	public String getReverseType() {

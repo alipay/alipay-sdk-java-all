@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.freeze.get response.
  * 
  * @author auto create
- * @since 1.0, 2016-08-11 15:48:05
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserAccountFreezeGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1227648753847673289L;
+	private static final long serialVersionUID = 8887884916341339216L;
 
 	/** 
 	 * 冻结金额列表

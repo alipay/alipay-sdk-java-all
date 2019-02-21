@@ -6,14 +6,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 开放接口用户参加活动模型
+ * 芝麻承诺消费-用户参加活动模型
  *
  * @author auto create
- * @since 1.0, 2018-11-16 11:01:41
+ * @since 1.0, 2018-11-28 17:52:20
  */
 public class ActivityParticipation extends AlipayObject {
 
-	private static final long serialVersionUID = 6179724723272299167L;
+	private static final long serialVersionUID = 6167125258146683829L;
 
 	/**
 	 * 承诺消费活动模型
@@ -46,20 +46,50 @@ public class ActivityParticipation extends AlipayObject {
 	private String contractNo;
 
 	/**
-	 * 对外透出的合约状态，在下列值中：
-PROMISING - 待守约
-VIOLATED - 已逾期
-LOSE_EFFICACY - 已失效
-FINISHED - 已完成
+	 * 合约状态，在下列值中：
+ACT_EFFECTIVE - 生效中
+ACT_PENDING_PAY - 到期未完成待支付
+ACT_CANCELLED_PENDING_PAY - 用户取消合约等待支付
+ACT_FINISH_NOT_EXPIRE - 已守约未到期
+ACT_OVERDUE - 到期未完成已逾期
+E_UNFINISH_PAID - 到期未完成已支付
+E_FINISHED - 已守约
+E_CANCELLED - 未到期取消
 	 */
 	@ApiField("contract_status")
 	private String contractStatus;
+
+	/**
+	 * 合约状态描述
+生效中 - ACT_EFFECTIVE
+到期未完成待支付 - ACT_PENDING_PAY
+用户取消合约等待支付 - ACT_CANCELLED_PENDING_PAY
+已守约未到期 - ACT_FINISH_NOT_EXPIRE
+到期未完成已逾期 - ACT_OVERDUE
+到期未完成已支付 - E_UNFINISH_PAID
+已守约 - E_FINISHED
+未到期取消 - E_CANCELLED
+	 */
+	@ApiField("contract_status_desc")
+	private String contractStatusDesc;
+
+	/**
+	 * 合约状态标签，用于展示
+	 */
+	@ApiField("contract_status_tag")
+	private ContractStatusTag contractStatusTag;
 
 	/**
 	 * 合约已优惠总金额,只支持两位小数点的正数
 	 */
 	@ApiField("discount_amount")
 	private String discountAmount;
+
+	/**
+	 * 用户参加活动，即合约生效时间，标准格式：2018-12-12 00:00:00
+	 */
+	@ApiField("effective_time")
+	private Date effectiveTime;
 
 	/**
 	 * 用户参加活动逾期时间, 标准格式yyyy-MM-dd HH:mm:ss
@@ -121,11 +151,32 @@ FINISHED - 已完成
 		this.contractStatus = contractStatus;
 	}
 
+	public String getContractStatusDesc() {
+		return this.contractStatusDesc;
+	}
+	public void setContractStatusDesc(String contractStatusDesc) {
+		this.contractStatusDesc = contractStatusDesc;
+	}
+
+	public ContractStatusTag getContractStatusTag() {
+		return this.contractStatusTag;
+	}
+	public void setContractStatusTag(ContractStatusTag contractStatusTag) {
+		this.contractStatusTag = contractStatusTag;
+	}
+
 	public String getDiscountAmount() {
 		return this.discountAmount;
 	}
 	public void setDiscountAmount(String discountAmount) {
 		this.discountAmount = discountAmount;
+	}
+
+	public Date getEffectiveTime() {
+		return this.effectiveTime;
+	}
+	public void setEffectiveTime(Date effectiveTime) {
+		this.effectiveTime = effectiveTime;
 	}
 
 	public Date getExpireTime() {

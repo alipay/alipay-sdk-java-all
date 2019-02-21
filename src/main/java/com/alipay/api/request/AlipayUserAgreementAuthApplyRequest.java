@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.agreement.auth.apply request
  * 
  * @author auto create
- * @since 1.0, 2017-10-25 14:00:54
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserAgreementAuthApplyRequest implements AlipayRequest<AlipayUserAgreementAuthApplyResponse> {
 

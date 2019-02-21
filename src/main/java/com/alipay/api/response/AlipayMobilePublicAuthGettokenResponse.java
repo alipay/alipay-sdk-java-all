@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.public.auth.gettoken response.
  * 
  * @author auto create
- * @since 1.0, 2017-08-02 17:36:19
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayMobilePublicAuthGettokenResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4162678644972683299L;
+	private static final long serialVersionUID = 1822269757625632623L;
 
 	/** 
 	 * 返回码。处理成功：200；处理失败：请参考返回码。

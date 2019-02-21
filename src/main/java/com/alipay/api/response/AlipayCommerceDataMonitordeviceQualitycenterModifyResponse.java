@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.data.monitordevice.qualitycenter.modify response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-11 10:40:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceDataMonitordeviceQualitycenterModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5874678348739944957L;
+	private static final long serialVersionUID = 3265951981172857553L;
 
 	/** 
 	 * error_detail，出错的情况下返回，包含具体信息。

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店参数model
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:20:39
+ * @since 1.0, 2018-12-21 17:36:34
  */
 public class ParamModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6254971325446332163L;
+	private static final long serialVersionUID = 4538365478964135399L;
+
+	/**
+	 * 是否开启取餐柜（false：否，true：是）
+	 */
+	@ApiField("cabinet_enabled")
+	private Boolean cabinetEnabled;
 
 	/**
 	 * 账单金额位数
@@ -27,6 +33,30 @@ foodDelivery：送餐模式
 	 */
 	@ApiField("dining_mode")
 	private String diningMode;
+
+	/**
+	 * KDS显示模式（singleDish：单菜，mergingOrder：并单）
+	 */
+	@ApiField("kds_display_mode")
+	private String kdsDisplayMode;
+
+	/**
+	 * 是否开启KDS（false：否，true：是）
+	 */
+	@ApiField("kds_enabled")
+	private Boolean kdsEnabled;
+
+	/**
+	 * 是否开启KDS语音叫号（false：否，true：是）
+	 */
+	@ApiField("kds_voice_call_enabled")
+	private Boolean kdsVoiceCallEnabled;
+
+	/**
+	 * 是否支持一单多柜（false：否，true：是）
+	 */
+	@ApiField("multi_cabinet_per_order_allowed")
+	private Boolean multiCabinetPerOrderAllowed;
 
 	/**
 	 * 是否开通饿了么（false：否；true：是）
@@ -74,6 +104,13 @@ cent：分（默认）
 	@ApiField("takeout_auto_receipt")
 	private Boolean takeoutAutoReceipt;
 
+	public Boolean getCabinetEnabled() {
+		return this.cabinetEnabled;
+	}
+	public void setCabinetEnabled(Boolean cabinetEnabled) {
+		this.cabinetEnabled = cabinetEnabled;
+	}
+
 	public String getCarryRule() {
 		return this.carryRule;
 	}
@@ -86,6 +123,34 @@ cent：分（默认）
 	}
 	public void setDiningMode(String diningMode) {
 		this.diningMode = diningMode;
+	}
+
+	public String getKdsDisplayMode() {
+		return this.kdsDisplayMode;
+	}
+	public void setKdsDisplayMode(String kdsDisplayMode) {
+		this.kdsDisplayMode = kdsDisplayMode;
+	}
+
+	public Boolean getKdsEnabled() {
+		return this.kdsEnabled;
+	}
+	public void setKdsEnabled(Boolean kdsEnabled) {
+		this.kdsEnabled = kdsEnabled;
+	}
+
+	public Boolean getKdsVoiceCallEnabled() {
+		return this.kdsVoiceCallEnabled;
+	}
+	public void setKdsVoiceCallEnabled(Boolean kdsVoiceCallEnabled) {
+		this.kdsVoiceCallEnabled = kdsVoiceCallEnabled;
+	}
+
+	public Boolean getMultiCabinetPerOrderAllowed() {
+		return this.multiCabinetPerOrderAllowed;
+	}
+	public void setMultiCabinetPerOrderAllowed(Boolean multiCabinetPerOrderAllowed) {
+		this.multiCabinetPerOrderAllowed = multiCabinetPerOrderAllowed;
 	}
 
 	public Boolean getOpenEle() {

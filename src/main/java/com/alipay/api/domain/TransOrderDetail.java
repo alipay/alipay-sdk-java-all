@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合并转账时的单笔转账单据详情
  *
  * @author auto create
- * @since 1.0, 2018-11-09 14:35:40
+ * @since 1.0, 2019-01-30 11:09:04
  */
 public class TransOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1121396878128752178L;
+	private static final long serialVersionUID = 2516148271444271178L;
 
 	/**
 	 * JSON格式，传递业务扩展参数，使用前请与支付宝工程师联系！
@@ -31,6 +31,12 @@ sub_biz_scene: 子业务场景，取值：BAOXIAO\TRANSFER\...
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * JSON格式，传递业务扩展参数，使用前请与支付宝工程师联系！
+	 */
+	@ApiField("passback_params")
+	private String passbackParams;
 
 	/**
 	 * 收款方信息
@@ -69,6 +75,13 @@ sub_biz_scene: 子业务场景，取值：BAOXIAO\TRANSFER\...
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getPassbackParams() {
+		return this.passbackParams;
+	}
+	public void setPassbackParams(String passbackParams) {
+		this.passbackParams = passbackParams;
 	}
 
 	public Participant getPayeeInfo() {

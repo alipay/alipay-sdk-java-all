@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜谱价格
  *
  * @author auto create
- * @since 1.0, 2018-09-11 14:28:14
+ * @since 1.0, 2019-01-08 15:32:42
  */
 public class KbdishCookPriceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7852755865741411249L;
+	private static final long serialVersionUID = 7781188993358278296L;
 
 	/**
 	 * 菜单id
@@ -26,7 +26,7 @@ public class KbdishCookPriceInfo extends AlipayObject {
 	private String dishId;
 
 	/**
-	 * 会员价
+	 * 会员价，目前已废弃
 	 */
 	@ApiField("member_price")
 	private String memberPrice;

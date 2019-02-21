@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.findata.qx.operator.upload request
  * 
  * @author auto create
- * @since 1.0, 2017-10-30 20:08:20
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class SsdataFindataQxOperatorUploadRequest implements AlipayUploadRequest<SsdataFindataQxOperatorUploadResponse> {
 

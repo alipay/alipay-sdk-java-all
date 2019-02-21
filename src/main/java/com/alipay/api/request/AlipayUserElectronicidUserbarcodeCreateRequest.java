@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.electronicid.userbarcode.create request
  * 
  * @author auto create
- * @since 1.0, 2018-07-16 10:20:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserElectronicidUserbarcodeCreateRequest implements AlipayRequest<AlipayUserElectronicidUserbarcodeCreateResponse> {
 

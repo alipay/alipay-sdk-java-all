@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.marketing.discount.decision response.
  * 
  * @author auto create
- * @since 1.0, 2017-07-19 16:55:52
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayInsMarketingDiscountDecisionResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1738595529571325876L;
+	private static final long serialVersionUID = 3742456115412743623L;
 
 	/** 
 	 * 该订单可以享受的事后权益

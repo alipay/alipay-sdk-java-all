@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 唤起凤蝶H5编辑器
  *
  * @author auto create
- * @since 1.0, 2018-08-19 16:15:43
+ * @since 1.0, 2018-11-26 17:37:19
  */
 public class AlipayMarketingToolFengdieEditorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5455275516177312423L;
+	private static final long serialVersionUID = 7517894412584599239L;
 
 	/**
 	 * 凤蝶H5应用唯一id，通过alipay.marketing.tool.fengdie.activity.create接口时自动生成

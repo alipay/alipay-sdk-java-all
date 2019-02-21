@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户创建
  *
  * @author auto create
- * @since 1.0, 2018-09-07 20:02:49
+ * @since 1.0, 2019-01-07 21:33:24
  */
 public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6474735369358532834L;
+	private static final long serialVersionUID = 6229273446248927332L;
 
 	/**
 	 * 商户别名
@@ -54,7 +54,7 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String certImage;
 
 	/**
-	 * 证件反面图片。目前只有当主证件为身份证时才需填写
+	 * 证件反面图片。目前只有当商户类型是个人商户，主证件为身份证时才需填写
 	 */
 	@ApiField("cert_image_back")
 	private String certImageBack;
@@ -72,7 +72,7 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 商户证件类型，取值范围：201：营业执照；2011:营业执照(统一社会信用代码)；218：事业单位法人证书
+	 * 商户证件类型，取值范围：201：营业执照；2011:营业执照(统一社会信用代码)；204：民办非企业登记证书；206：社会团体法人登记证书；218：事业单位法人证书；219：党政机关批准设立文件/行政执法主体资格证；100：个人商户身份证
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -115,6 +115,12 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String legalCertNo;
 
 	/**
+	 * 默认可不填，认为legal_cert_no是大陆身份证。类型包括：100 大陆身份证；105 港澳居民往来内地通行证；106 台湾同胞往来大陆通行证；108 外国人居留证
+	 */
+	@ApiField("legal_cert_type")
+	private String legalCertType;
+
+	/**
 	 * 法人名称
 	 */
 	@ApiField("legal_name")
@@ -127,13 +133,13 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String licenseAuthLetterImage;
 
 	/**
-	 * 商户类别码mcc，参见附件描述中的“类目code”  https://mif-pub.alipayobjects.com/AlipayMCC.xlsx
+	 * 商户类别码mcc，参见附件描述中的“类目code”  https://gw.alipayobjects.com/os/basement_prod/82cb70f7-abbd-417a-91ba-73c1849f07ea.xlsx  如果要求资质一栏不为空，表明是特殊行业，会有人工审核。注：文档更新可能有滞后性，以实际为准
 	 */
 	@ApiField("mcc")
 	private String mcc;
 
 	/**
-	 * 商家类型：01：企业；02：事业单位；07：个体工商户
+	 * 商家类型：01：企业；02：事业单位；03：民办非企业组织；04：社会团体；05：党政及国家机关；06：个人商户；07：个体工商户
 	 */
 	@ApiField("merchant_type")
 	private String merchantType;
@@ -145,7 +151,7 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String name;
 
 	/**
-	 * 外部业务号。比如某种业务标准外部订单号,比如交易外部订单号，代表服务商端自己订单号。用于做并发控制，防止一笔外部订单发起两次进件。如果没有可不用传入。
+	 * 外部业务号。比如某种业务标准外部订单号,比如交易外部订单号，代表服务商端自己订单号。用于做并发控制，防止一笔外部订单发起两次进件。非必要场景禁止传入本字段，如要使用务必理清场景及字段生成规则，与蚂蚁金服对接人咨询。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -300,6 +306,13 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	}
 	public void setLegalCertNo(String legalCertNo) {
 		this.legalCertNo = legalCertNo;
+	}
+
+	public String getLegalCertType() {
+		return this.legalCertType;
+	}
+	public void setLegalCertType(String legalCertType) {
+		this.legalCertType = legalCertType;
 	}
 
 	public String getLegalName() {

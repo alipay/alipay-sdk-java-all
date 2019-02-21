@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.air.xfg.dsg.modify response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-18 15:28:48
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceAirXfgDsgModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7557267721819381549L;
+	private static final long serialVersionUID = 8646482733525874559L;
 
 	/** 
 	 * 用户级别

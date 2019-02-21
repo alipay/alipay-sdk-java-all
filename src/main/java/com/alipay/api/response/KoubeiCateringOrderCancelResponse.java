@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.RefundDescriptionDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-02 15:30:33
+ * @since 1.0, 2019-01-25 10:50:01
  */
 public class KoubeiCateringOrderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1682232288638627515L;
+	private static final long serialVersionUID = 1252944697545369337L;
 
 	/** 
 	 * 扩展信息，json对象格式，key和value都为字符串
@@ -31,6 +32,12 @@ public class KoubeiCateringOrderCancelResponse extends AlipayResponse {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/** 
+	 * 退款明细列表
+	 */
+	@ApiField("refund_description_list")
+	private RefundDescriptionDTO refundDescriptionList;
 
 	/** 
 	 * 是否需要重试，true-需要，false-不需要
@@ -57,6 +64,13 @@ public class KoubeiCateringOrderCancelResponse extends AlipayResponse {
 	}
 	public String getOutBizNo( ) {
 		return this.outBizNo;
+	}
+
+	public void setRefundDescriptionList(RefundDescriptionDTO refundDescriptionList) {
+		this.refundDescriptionList = refundDescriptionList;
+	}
+	public RefundDescriptionDTO getRefundDescriptionList( ) {
+		return this.refundDescriptionList;
 	}
 
 	public void setRetry(Boolean retry) {

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.product.search response.
  * 
  * @author auto create
- * @since 1.0, 2017-04-07 17:10:21
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayEbppProductSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1475364423771477333L;
+	private static final long serialVersionUID = 5377684345649664131L;
 
 	/** 
 	 * 产品(学校)模型列表

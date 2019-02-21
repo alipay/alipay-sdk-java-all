@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户信用能力评估
  *
  * @author auto create
- * @since 1.0, 2018-11-16 13:59:17
+ * @since 1.0, 2019-01-03 16:09:34
  */
 public class ZhimaCreditEpRatingInnerInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2897448531333211261L;
+	private static final long serialVersionUID = 5186255334762114562L;
 
 	/**
 	 * 企业信用类目，支持以下值：
@@ -22,6 +22,18 @@ ZMSCCO_6_2_1:省(交易成本)-保证金保险-免保证金
 	 */
 	@ApiField("credit_category")
 	private String creditCategory;
+
+	/**
+	 * 企业证件号，如果MemberType=ENTERPRISE,支持传入企业证件号来指定企业认证
+	 */
+	@ApiField("ep_cert_no")
+	private String epCertNo;
+
+	/**
+	 * 企业名称，如果MemberType=ENTERPRISE,支持传入企业名称进行指定企业认证
+	 */
+	@ApiField("ep_name")
+	private String epName;
 
 	/**
 	 * 客户经营行业分类
@@ -52,6 +64,20 @@ ZMSCCO_6_2_1:省(交易成本)-保证金保险-免保证金
 	}
 	public void setCreditCategory(String creditCategory) {
 		this.creditCategory = creditCategory;
+	}
+
+	public String getEpCertNo() {
+		return this.epCertNo;
+	}
+	public void setEpCertNo(String epCertNo) {
+		this.epCertNo = epCertNo;
+	}
+
+	public String getEpName() {
+		return this.epName;
+	}
+	public void setEpName(String epName) {
+		this.epName = epName;
 	}
 
 	public String getmCategory() {

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.activity.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-25 15:24:10
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaMerchantActivityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4691238737697455756L;
+	private static final long serialVersionUID = 4745781246482842218L;
 
 	/** 
 	 * 芝麻承诺消费开放模式活动模型列表

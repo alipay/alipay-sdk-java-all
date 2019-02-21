@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ecapiprod.drawndn.paymentschedule.get response.
  * 
  * @author auto create
- * @since 1.0, 2016-03-29 11:34:20
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayEcapiprodDrawndnPaymentscheduleGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5117883363763489442L;
+	private static final long serialVersionUID = 3568896813793411195L;
 
 	/** 
 	 * 返回的支用还款计划集合

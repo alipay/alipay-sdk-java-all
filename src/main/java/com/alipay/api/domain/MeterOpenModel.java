@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计量信息模型
  *
  * @author auto create
- * @since 1.0, 2018-11-13 21:12:40
+ * @since 1.0, 2019-01-03 10:33:00
  */
 public class MeterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4371547684937944859L;
+	private static final long serialVersionUID = 4565412126964337632L;
 
 	/**
 	 * 平均速度，数字字符串，保留1位小数。type=AVG_SPEED_KM_PER_HOUR时必填

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序删除域白名单
  *
  * @author auto create
- * @since 1.0, 2017-12-20 11:21:26
+ * @since 1.0, 2018-12-25 14:14:34
  */
 public class AlipayOpenMiniSafedomainDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4289795244492137556L;
+	private static final long serialVersionUID = 6244897827511382594L;
 
 	/**
 	 * httpRequest域白名单

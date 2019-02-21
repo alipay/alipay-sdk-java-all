@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.rule.tag.create response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-17 14:06:48
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMarketingCampaignRuleTagCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4159222141518583444L;
+	private static final long serialVersionUID = 6246454334225523597L;
 
 	/** 
 	 * 自定义标签id（创建自定义规则时提供）

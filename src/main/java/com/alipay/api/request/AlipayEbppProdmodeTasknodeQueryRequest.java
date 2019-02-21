@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.prodmode.tasknode.query request
  * 
  * @author auto create
- * @since 1.0, 2018-11-15 19:45:01
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEbppProdmodeTasknodeQueryRequest implements AlipayRequest<AlipayEbppProdmodeTasknodeQueryResponse> {
 

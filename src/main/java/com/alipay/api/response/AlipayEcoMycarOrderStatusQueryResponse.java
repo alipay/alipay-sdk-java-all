@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.order.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-09-15 16:29:09
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoMycarOrderStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4818864545255914232L;
+	private static final long serialVersionUID = 8617686598868371216L;
 
 	/** 
 	 * 支付宝交易流水号订单

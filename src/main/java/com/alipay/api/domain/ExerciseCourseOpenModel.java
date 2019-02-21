@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 课程模型
  *
  * @author auto create
- * @since 1.0, 2018-11-13 21:12:26
+ * @since 1.0, 2019-01-03 10:33:00
  */
 public class ExerciseCourseOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8816593127614135375L;
+	private static final long serialVersionUID = 8473842177753785221L;
 
 	/**
 	 * 课程类型：团课(CLASS),私教(PRIVATE_LESSON)

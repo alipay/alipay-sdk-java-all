@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.data.morse.operate.sync response.
  * 
  * @author auto create
- * @since 1.0, 2018-01-17 10:34:23
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaDataMorseOperateSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5177458126319282498L;
+	private static final long serialVersionUID = 5249813923437183412L;
 
 	/** 
 	 * 交易流水号，一次交易的唯一标识

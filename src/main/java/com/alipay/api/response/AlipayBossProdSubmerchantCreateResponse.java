@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.submerchant.create response.
  * 
  * @author auto create
- * @since 1.0, 2017-09-23 20:46:27
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayBossProdSubmerchantCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5128227211762583931L;
+	private static final long serialVersionUID = 7522616341513371113L;
 
 	/** 
 	 * 受理商户在支付宝入驻成功后，生成的支付宝内全局唯一的商户编号

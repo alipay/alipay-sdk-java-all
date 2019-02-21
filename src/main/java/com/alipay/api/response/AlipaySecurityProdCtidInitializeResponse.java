@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.ctid.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-07 09:21:42
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityProdCtidInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1685273481831479636L;
+	private static final long serialVersionUID = 2371226844255636312L;
 
 	/** 
 	 * 随机数，用于生成authcode

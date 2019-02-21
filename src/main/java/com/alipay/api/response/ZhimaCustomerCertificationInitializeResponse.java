@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.certification.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-05 14:22:01
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaCustomerCertificationInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6882825572988589186L;
+	private static final long serialVersionUID = 5695145733751593794L;
 
 	/** 
 	 * 本次认证的唯一标识，商户需要记录，后续的操作都需要用到

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataexchange.sfasdf response.
  * 
  * @author auto create
- * @since 1.0, 2016-03-18 20:58:13
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayDataDataexchangeSfasdfResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6779597348547755288L;
+	private static final long serialVersionUID = 6249639451488528335L;
 
 	/** 
 	 * dsfagshdj

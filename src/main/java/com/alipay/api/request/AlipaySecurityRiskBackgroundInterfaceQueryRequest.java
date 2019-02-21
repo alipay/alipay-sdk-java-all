@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.background.interface.query request
  * 
  * @author auto create
- * @since 1.0, 2017-05-31 19:27:48
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityRiskBackgroundInterfaceQueryRequest implements AlipayRequest<AlipaySecurityRiskBackgroundInterfaceQueryResponse> {
 

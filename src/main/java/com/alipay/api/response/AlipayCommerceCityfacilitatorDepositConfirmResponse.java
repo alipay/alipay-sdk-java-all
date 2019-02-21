@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.deposit.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2015-12-18 21:36:24
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceCityfacilitatorDepositConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5713173867653813689L;
+	private static final long serialVersionUID = 6312627464989252595L;
 
 	
 

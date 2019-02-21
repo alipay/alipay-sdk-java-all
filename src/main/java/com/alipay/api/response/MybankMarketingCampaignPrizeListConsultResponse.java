@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.campaign.prize.list.consult response.
  * 
  * @author auto create
- * @since 1.0, 2018-02-07 12:01:42
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class MybankMarketingCampaignPrizeListConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4128784175283756493L;
+	private static final long serialVersionUID = 4496477858933962792L;
 
 	/** 
 	 * 可用的奖品列表

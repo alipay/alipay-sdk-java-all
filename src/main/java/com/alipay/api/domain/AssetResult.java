@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 物料生产/配送订单处理结果
+ * 物料生产/配送/更正处理结果
  *
  * @author auto create
- * @since 1.0, 2018-09-19 14:08:09
+ * @since 1.0, 2019-01-09 20:29:52
  */
 public class AssetResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1847266794911939732L;
+	private static final long serialVersionUID = 2317241434832415255L;
 
 	/**
 	 * 订单明细ID
@@ -39,6 +39,12 @@ public class AssetResult extends AlipayObject {
 	 */
 	@ApiField("error_desc")
 	private String errorDesc;
+
+	/**
+	 * openapi 请求id
+	 */
+	@ApiField("request_id")
+	private String requestId;
 
 	/**
 	 * AssetSubFeedbackInfo 列表
@@ -79,6 +85,13 @@ public class AssetResult extends AlipayObject {
 	}
 	public void setErrorDesc(String errorDesc) {
 		this.errorDesc = errorDesc;
+	}
+
+	public String getRequestId() {
+		return this.requestId;
+	}
+	public void setRequestId(String requestId) {
+		this.requestId = requestId;
 	}
 
 	public List<AssetSubFeedbackInfo> getSubFeedbackInfos() {

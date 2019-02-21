@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.deposit.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2015-12-18 21:35:58
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceCityfacilitatorDepositCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3348199256363763977L;
+	private static final long serialVersionUID = 2513852622458529664L;
 
 	
 

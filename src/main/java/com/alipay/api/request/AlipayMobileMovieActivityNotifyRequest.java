@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.movie.activity.notify request
  * 
  * @author auto create
- * @since 1.0, 2014-09-04 14:18:47
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayMobileMovieActivityNotifyRequest implements AlipayRequest<AlipayMobileMovieActivityNotifyResponse> {
 

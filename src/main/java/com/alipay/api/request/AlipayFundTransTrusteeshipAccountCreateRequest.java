@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.trusteeship.account.create request
  * 
  * @author auto create
- * @since 1.0, 2018-09-27 11:10:06
+ * @since 1.0, 2019-02-16 10:01:49
  */
 public class AlipayFundTransTrusteeshipAccountCreateRequest implements AlipayRequest<AlipayFundTransTrusteeshipAccountCreateResponse> {
 

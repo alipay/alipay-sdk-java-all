@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.findata.operator.userinfo.certify response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-02 20:44:05
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class SsdataFindataOperatorUserinfoCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5559567633274177587L;
+	private static final long serialVersionUID = 6555371229486379591L;
 
 	/** 
 	 * 系统业务流水号

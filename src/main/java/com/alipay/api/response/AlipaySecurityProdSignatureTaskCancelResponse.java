@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.signature.task.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2017-12-20 15:25:04
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityProdSignatureTaskCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3846671245311958154L;
+	private static final long serialVersionUID = 5486844421447557899L;
 
 	/** 
 	 * 是否更新成功

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 编辑档口
  *
  * @author auto create
- * @since 1.0, 2018-11-16 17:27:24
+ * @since 1.0, 2018-11-23 19:45:49
  */
 public class KoubeiCateringPosStallModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4821444892674468536L;
+	private static final long serialVersionUID = 3313554416122791578L;
 
 	/**
 	 * 菜品id列表

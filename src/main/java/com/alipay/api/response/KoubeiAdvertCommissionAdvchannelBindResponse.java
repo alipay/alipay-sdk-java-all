@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.commission.advchannel.bind response.
  * 
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:28
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiAdvertCommissionAdvchannelBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6656731488185973556L;
+	private static final long serialVersionUID = 1683499272842131485L;
 
 	
 

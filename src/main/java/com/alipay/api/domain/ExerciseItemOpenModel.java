@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健身项目开放模型
  *
  * @author auto create
- * @since 1.0, 2018-11-13 22:59:03
+ * @since 1.0, 2019-01-03 10:33:00
  */
 public class ExerciseItemOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6668326589532826819L;
+	private static final long serialVersionUID = 6262963148735285788L;
 
 	/**
 	 * 健身项目描述

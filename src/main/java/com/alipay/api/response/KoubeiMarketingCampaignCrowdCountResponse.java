@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.crowd.count response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-13 17:18:06
+ * @since 1.0, 2019-01-31 20:56:26
  */
 public class KoubeiMarketingCampaignCrowdCountResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2451425723184762284L;
+	private static final long serialVersionUID = 7473726292418745284L;
 
 	/** 
 	 * 各个细分维度的值，label为标签code，value为该标签各个标签值对应的统计信息，本示例表示pam_gender这个标签的男有100人，女有1000人满足入参指定的圈人条件

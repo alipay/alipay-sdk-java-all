@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用承诺消费活动免除退回优惠接口
  *
  * @author auto create
- * @since 1.0, 2018-10-25 15:23:42
+ * @since 1.0, 2018-11-22 22:03:15
  */
 public class ZhimaMerchantActivityParticipationCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5232683878699255829L;
+	private static final long serialVersionUID = 5658417612418733273L;
 
 	/**
 	 * 承诺消费合约号

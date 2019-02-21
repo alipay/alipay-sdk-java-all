@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.assetinfo.produce.sync request
  * 
  * @author auto create
- * @since 1.0, 2018-08-10 21:05:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AntMerchantExpandAssetinfoProduceSyncRequest implements AlipayRequest<AntMerchantExpandAssetinfoProduceSyncResponse> {
 

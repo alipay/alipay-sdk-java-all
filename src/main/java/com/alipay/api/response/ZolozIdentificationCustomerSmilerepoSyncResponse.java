@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.customer.smilerepo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-16 12:40:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZolozIdentificationCustomerSmilerepoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1657317327884749227L;
+	private static final long serialVersionUID = 7681442736475334895L;
 
 	
 

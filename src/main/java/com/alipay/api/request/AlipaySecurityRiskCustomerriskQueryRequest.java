@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.customerrisk.query request
  * 
  * @author auto create
- * @since 1.0, 2018-10-29 21:55:51
+ * @since 1.0, 2019-01-22 14:51:14
  */
 public class AlipaySecurityRiskCustomerriskQueryRequest implements AlipayRequest<AlipaySecurityRiskCustomerriskQueryResponse> {
 

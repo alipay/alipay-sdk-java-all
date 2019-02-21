@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退保受理
  *
  * @author auto create
- * @since 1.0, 2018-07-11 15:22:40
+ * @since 1.0, 2019-01-07 16:01:27
  */
 public class AlipayInsScenePolicySurrenderApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1694939971186972576L;
+	private static final long serialVersionUID = 3256373865537289411L;
 
 	/**
 	 * 退保扩展参数 ;标准json格式

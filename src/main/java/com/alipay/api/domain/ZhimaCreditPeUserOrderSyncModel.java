@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用受理订单信息同步
  *
  * @author auto create
- * @since 1.0, 2018-10-10 10:59:45
+ * @since 1.0, 2019-01-15 09:33:19
  */
 public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6298868385547348182L;
+	private static final long serialVersionUID = 8856452359389178695L;
 
 	/**
 	 * 买家的支付宝用户id
@@ -50,7 +50,7 @@ public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 	private String subOutOrderNo;
 
 	/**
-	 * 交易号，一个商家订单号(out_order_no)可以包含多个交易号
+	 * 支付宝交易号
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

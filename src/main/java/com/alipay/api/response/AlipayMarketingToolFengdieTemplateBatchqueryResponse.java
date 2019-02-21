@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.template.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2018-08-19 16:17:06
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMarketingToolFengdieTemplateBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7721698847723356313L;
+	private static final long serialVersionUID = 3184931897123279931L;
 
 	/** 
 	 * 模板详情列表

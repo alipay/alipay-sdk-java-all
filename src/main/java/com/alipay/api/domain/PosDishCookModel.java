@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜谱模型
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:30:17
+ * @since 1.0, 2018-12-20 11:37:02
  */
 public class PosDishCookModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7727777533266816678L;
+	private static final long serialVersionUID = 1771939375513496378L;
 
 	/**
 	 * 渠道    eatin堂食，takeout外卖,paipai 扫码,kbb2c 口碑点餐

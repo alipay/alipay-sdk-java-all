@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连商户查询
  *
  * @author auto create
- * @since 1.0, 2018-07-06 15:33:18
+ * @since 1.0, 2018-12-12 17:46:20
  */
 public class AntMerchantExpandIndirectQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4328244349364467935L;
+	private static final long serialVersionUID = 8378589726633237678L;
 
 	/**
 	 * 商户编号，由机构定义，需要保证在机构下唯一，如果未传sub_merchant_id ，则必传 external_id 和 org_pid

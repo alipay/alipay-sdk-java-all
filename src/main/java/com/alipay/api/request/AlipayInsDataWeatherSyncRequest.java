@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.data.weather.sync request
  * 
  * @author auto create
- * @since 1.0, 2017-07-19 16:54:47
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayInsDataWeatherSyncRequest implements AlipayRequest<AlipayInsDataWeatherSyncResponse> {
 

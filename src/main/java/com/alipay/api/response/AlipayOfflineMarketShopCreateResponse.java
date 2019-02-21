@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.shop.create response.
  * 
  * @author auto create
- * @since 1.0, 2017-07-19 16:55:33
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOfflineMarketShopCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5124716168619793746L;
+	private static final long serialVersionUID = 8317384646945775862L;
 
 	/** 
 	 * 开店请求受理成功后返回的支付宝流水ID，根据此ID调用接口
@@ -44,6 +44,12 @@ alipay.offline.market.applyorder.batchquery，能够获取当前开店请求审�
 	 */
 	@ApiField("is_show")
 	private String isShow;
+
+	/** 
+	 * 门店费率值，指定的ISV可用。创建门店时，为符合情况的门店，进行费率单独设置。若费率不符合门店类目的设置，则会创建门店失败。
+	 */
+	@ApiField("rate")
+	private String rate;
 
 	/** 
 	 * 开店请求结果码：
@@ -92,6 +98,13 @@ WAIT_MERCHANT_CONFIRM：等待商户确认
 	}
 	public String getIsShow( ) {
 		return this.isShow;
+	}
+
+	public void setRate(String rate) {
+		this.rate = rate;
+	}
+	public String getRate( ) {
+		return this.rate;
 	}
 
 	public void setResultCode(String resultCode) {

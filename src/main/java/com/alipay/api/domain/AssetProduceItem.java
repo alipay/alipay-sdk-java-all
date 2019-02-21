@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料生产指令对象, 包括物料生产的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 物料图片Url, 数量,  申请日期,收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2018-11-16 17:24:19
+ * @since 1.0, 2019-01-16 13:56:16
  */
 public class AssetProduceItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5677486988778323675L;
+	private static final long serialVersionUID = 6629778217884997539L;
 
 	/**
 	 * 申请日期，格式yyyy-MM-dd HH：mm:ss
@@ -49,6 +49,12 @@ public class AssetProduceItem extends AlipayObject {
 	 */
 	@ApiField("biz_tag")
 	private String bizTag;
+
+	/**
+	 * 线下供应商区分业务流
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * city
@@ -105,6 +111,18 @@ public class AssetProduceItem extends AlipayObject {
 	private String memo;
 
 	/**
+	 * 公司主体代码
+	 */
+	@ApiField("ou_code")
+	private String ouCode;
+
+	/**
+	 * 公司主体名
+	 */
+	@ApiField("ou_name")
+	private String ouName;
+
+	/**
 	 * 1. 如果该物料是套组的子物料, 那么该值为套组物料id; 2, 其他情况和物料id(即, item_id)一致或者为空.
 	 */
 	@ApiField("parent_template_id")
@@ -127,6 +145,12 @@ public class AssetProduceItem extends AlipayObject {
 	 */
 	@ApiField("produce_order")
 	private String produceOrder;
+
+	/**
+	 * 生产模式类型，用于供应商区分业务是：直发生产还是备货生产
+	 */
+	@ApiField("produce_type")
+	private String produceType;
 
 	/**
 	 * 省
@@ -212,6 +236,13 @@ public class AssetProduceItem extends AlipayObject {
 		this.bizTag = bizTag;
 	}
 
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
+	}
+
 	public String getCity() {
 		return this.city;
 	}
@@ -275,6 +306,20 @@ public class AssetProduceItem extends AlipayObject {
 		this.memo = memo;
 	}
 
+	public String getOuCode() {
+		return this.ouCode;
+	}
+	public void setOuCode(String ouCode) {
+		this.ouCode = ouCode;
+	}
+
+	public String getOuName() {
+		return this.ouName;
+	}
+	public void setOuName(String ouName) {
+		this.ouName = ouName;
+	}
+
 	public String getParentTemplateId() {
 		return this.parentTemplateId;
 	}
@@ -301,6 +346,13 @@ public class AssetProduceItem extends AlipayObject {
 	}
 	public void setProduceOrder(String produceOrder) {
 		this.produceOrder = produceOrder;
+	}
+
+	public String getProduceType() {
+		return this.produceType;
+	}
+	public void setProduceType(String produceType) {
+		this.produceType = produceType;
 	}
 
 	public String getProvince() {

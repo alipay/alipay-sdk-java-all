@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通知内容模板
  *
  * @author auto create
- * @since 1.0, 2018-11-13 21:12:37
+ * @since 1.0, 2019-01-03 10:33:05
  */
 public class NoticeTemplateArgs extends AlipayObject {
 
-	private static final long serialVersionUID = 4139934266794785786L;
+	private static final long serialVersionUID = 7135258221815164475L;
 
 	/**
 	 * 课程开始时间

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.group.create response.
  * 
  * @author auto create
- * @since 1.0, 2016-08-25 10:46:34
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySocialBaseGroupCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8324521899572122776L;
+	private static final long serialVersionUID = 7139985313982252185L;
 
 	/** 
 	 * 群id

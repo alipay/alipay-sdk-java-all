@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票要素模型
  *
  * @author auto create
- * @since 1.0, 2018-11-16 15:23:35
+ * @since 1.0, 2018-12-05 11:00:26
  */
 public class InvoiceElementModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6634264623399436584L;
+	private static final long serialVersionUID = 4518755798241637896L;
 
 	/**
 	 * 发票报销状态
@@ -69,6 +69,7 @@ SPECIAL：增值税专用发票
 PLAIN_INVOICE:增值税普通发票
 PAPER_INVOICE:增值税普通发票（卷式）
 SALSE_INVOICE:机动车销售统一发票
+财政电子票据：FINANCIAL_ELECTRONIC_BILL
 	 */
 	@ApiField("invoice_kind")
 	private String invoiceKind;
@@ -87,6 +88,18 @@ EXPIRED－已失效
 	 */
 	@ApiField("invoice_status")
 	private String invoiceStatus;
+
+	/**
+	 * 服务商联系方式
+	 */
+	@ApiField("isv_contact")
+	private String isvContact;
+
+	/**
+	 * 服务商名称
+	 */
+	@ApiField("isv_name")
+	private String isvName;
 
 	/**
 	 * logo地址
@@ -123,6 +136,12 @@ EXPIRED－已失效
 	 */
 	@ApiField("payer_tax_no")
 	private String payerTaxNo;
+
+	/**
+	 * PDF的下载链接
+	 */
+	@ApiField("pdf_url")
+	private String pdfUrl;
 
 	public String getExpenseStatus() {
 		return this.expenseStatus;
@@ -194,6 +213,20 @@ EXPIRED－已失效
 		this.invoiceStatus = invoiceStatus;
 	}
 
+	public String getIsvContact() {
+		return this.isvContact;
+	}
+	public void setIsvContact(String isvContact) {
+		this.isvContact = isvContact;
+	}
+
+	public String getIsvName() {
+		return this.isvName;
+	}
+	public void setIsvName(String isvName) {
+		this.isvName = isvName;
+	}
+
 	public String getLogoUrl() {
 		return this.logoUrl;
 	}
@@ -234,6 +267,13 @@ EXPIRED－已失效
 	}
 	public void setPayerTaxNo(String payerTaxNo) {
 		this.payerTaxNo = payerTaxNo;
+	}
+
+	public String getPdfUrl() {
+		return this.pdfUrl;
+	}
+	public void setPdfUrl(String pdfUrl) {
+		this.pdfUrl = pdfUrl;
 	}
 
 }

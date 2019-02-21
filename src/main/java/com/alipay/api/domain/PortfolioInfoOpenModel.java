@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作品集信息
  *
  * @author auto create
- * @since 1.0, 2017-10-20 11:04:55
+ * @since 1.0, 2019-01-03 10:35:05
  */
 public class PortfolioInfoOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3213895261223292831L;
+	private static final long serialVersionUID = 3116472699289197158L;
 
 	/**
 	 * 头图素材id

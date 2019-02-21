@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.gka.campprize.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-22 16:34:45
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOverseasTravelGkaCampprizeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3319456366417489441L;
+	private static final long serialVersionUID = 5618589289353955351L;
 
 	/** 
 	 * 奖品信息列表，一定不为null，但是size可以为0

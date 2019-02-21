@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.vendorpay.devicedata.upload response.
  * 
  * @author auto create
- * @since 1.0, 2016-12-08 00:51:39
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayTradeVendorpayDevicedataUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6652989611965672866L;
+	private static final long serialVersionUID = 1469545962879397771L;
 
 	
 

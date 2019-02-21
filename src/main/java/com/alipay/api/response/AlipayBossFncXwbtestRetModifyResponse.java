@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.xwbtest.ret.modify response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-17 11:35:26
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayBossFncXwbtestRetModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7467916758535362342L;
+	private static final long serialVersionUID = 6824696613796124427L;
 
 	
 

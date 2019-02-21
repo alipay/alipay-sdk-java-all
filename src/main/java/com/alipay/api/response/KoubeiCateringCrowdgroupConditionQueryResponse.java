@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.crowdgroup.condition.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-22 14:35:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiCateringCrowdgroupConditionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7517971539764265695L;
+	private static final long serialVersionUID = 6669332243445269476L;
 
 	/** 
 	 * isv创建的用户规则分组描述

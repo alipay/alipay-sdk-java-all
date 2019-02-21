@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.antdac.easyservice.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-11 18:57:11
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayDataDataserviceAntdacEasyserviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2271853158572294778L;
+	private static final long serialVersionUID = 7715186739863553842L;
 
 	/** 
 	 * 方法返回值＋json字符串格式

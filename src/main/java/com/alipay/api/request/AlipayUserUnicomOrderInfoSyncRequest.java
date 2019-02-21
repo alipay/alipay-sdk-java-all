@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.unicom.order.info.sync request
  * 
  * @author auto create
- * @since 1.0, 2017-08-03 10:23:33
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserUnicomOrderInfoSyncRequest implements AlipayRequest<AlipayUserUnicomOrderInfoSyncResponse> {
 

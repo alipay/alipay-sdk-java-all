@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.drawcamp.trigger response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-14 11:12:12
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2431388858389859222L;
+	private static final long serialVersionUID = 3754568164624922499L;
 
 	/** 
 	 * 活动id
@@ -39,6 +39,12 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 	private String extendField;
 
 	/** 
+	 * 外部奖品id，如果为券，则为券id。如果没有，则为空
+	 */
+	@ApiField("out_prize_id")
+	private String outPrizeId;
+
+	/** 
 	 * 奖品唯一标识
 	 */
 	@ApiField("prize_flag")
@@ -55,6 +61,12 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 	 */
 	@ApiField("prize_name")
 	private String prizeName;
+
+	/** 
+	 * 是否幂等，如果为true，代表此次请求幂等，返回的结果为幂等结果。如果为false,代表此次请求是新请求，返回结果为此次触发结果
+	 */
+	@ApiField("repeat_trigger_flag")
+	private String repeatTriggerFlag;
 
 	/** 
 	 * 是否中奖结果状态，如果为true时返回的结果中的其他字段非空，否则返回的其他字段为空
@@ -90,6 +102,13 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 		return this.extendField;
 	}
 
+	public void setOutPrizeId(String outPrizeId) {
+		this.outPrizeId = outPrizeId;
+	}
+	public String getOutPrizeId( ) {
+		return this.outPrizeId;
+	}
+
 	public void setPrizeFlag(String prizeFlag) {
 		this.prizeFlag = prizeFlag;
 	}
@@ -109,6 +128,13 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 	}
 	public String getPrizeName( ) {
 		return this.prizeName;
+	}
+
+	public void setRepeatTriggerFlag(String repeatTriggerFlag) {
+		this.repeatTriggerFlag = repeatTriggerFlag;
+	}
+	public String getRepeatTriggerFlag( ) {
+		return this.repeatTriggerFlag;
 	}
 
 	public void setTriggerResult(Boolean triggerResult) {

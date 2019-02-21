@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.item.category.children.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-19 14:25:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiItemCategoryChildrenBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2616165396122981351L;
+	private static final long serialVersionUID = 2214354874627275293L;
 
 	/** 
 	 * 口碑标准后台类目信息列表

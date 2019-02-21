@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.edu.campus.job.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2017-08-07 18:02:53
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoEduCampusJobCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1273659248134818389L;
+	private static final long serialVersionUID = 8353485566675122639L;
 
 	/** 
 	 * 备注问题，或者异常

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.vendorpay.devicedata.upload request
  * 
  * @author auto create
- * @since 1.0, 2016-12-08 00:51:39
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayTradeVendorpayDevicedataUploadRequest implements AlipayRequest<AlipayTradeVendorpayDevicedataUploadResponse> {
 

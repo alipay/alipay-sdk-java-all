@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.finrisk.giriskrequest.create request
  * 
  * @author auto create
- * @since 1.0, 2018-10-18 21:36:19
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayAccountFinriskGiriskrequestCreateRequest implements AlipayRequest<AlipayAccountFinriskGiriskrequestCreateResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.smsg.data.set request
  * 
  * @author auto create
- * @since 1.0, 2018-03-09 11:16:20
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOpenSmsgDataSetRequest implements AlipayRequest<AlipayOpenSmsgDataSetResponse> {
 

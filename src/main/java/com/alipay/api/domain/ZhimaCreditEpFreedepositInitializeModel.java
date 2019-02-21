@@ -7,14 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业免押额度申请初始化
  *
  * @author auto create
- * @since 1.0, 2018-06-28 17:55:31
+ * @since 1.0, 2019-01-17 17:06:47
  */
 public class ZhimaCreditEpFreedepositInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3671834882267835739L;
+	private static final long serialVersionUID = 8597178582888648537L;
 
 	/**
-	 * 业务场景，生活号：SHENGHUOHAO
+	 * 业务场景，
+生活号：SHENGHUOHAO
+小程序:XIAOCHENGXU
 	 */
 	@ApiField("biz_channel")
 	private String bizChannel;
@@ -68,6 +70,12 @@ NATIONAL_LEGAL_MERGE---社会统一信用代码
 	 */
 	@ApiField("goto_url")
 	private String gotoUrl;
+
+	/**
+	 * 企业会员类型，支持的类型为ENTERPRISE和INDIVIDUAL_BUSINESS。可空，不传按照默认行为，即企业身份。
+	 */
+	@ApiField("member_type")
+	private String memberType;
 
 	/**
 	 * 商户业务流水号，确保每次业务唯一。
@@ -160,6 +168,13 @@ NATIONAL_LEGAL_MERGE---社会统一信用代码
 	}
 	public void setGotoUrl(String gotoUrl) {
 		this.gotoUrl = gotoUrl;
+	}
+
+	public String getMemberType() {
+		return this.memberType;
+	}
+	public void setMemberType(String memberType) {
+		this.memberType = memberType;
 	}
 
 	public String getMerchantOrderNo() {

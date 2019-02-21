@@ -17,7 +17,7 @@ import com.alipay.api.internal.util.json.JSONValidatingReader;
 
 /**
  * 系统工具类。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Sep 12, 2009
  */
@@ -29,7 +29,7 @@ public abstract class AlipayUtils {
 
     /**
      * 获取文件的真实后缀名。目前只支持JPG, GIF, PNG, BMP四种图片文件。
-     * 
+     *
      * @param bytes 文件字节流
      * @return JPG, GIF, PNG or null
      */
@@ -53,7 +53,7 @@ public abstract class AlipayUtils {
 
     /**
      * 获取文件的真实媒体类型。目前只支持JPG, GIF, PNG, BMP四种图片文件。
-     * 
+     *
      * @param bytes 文件字节流
      * @return 媒体类型(MEME-TYPE)
      */
@@ -78,7 +78,7 @@ public abstract class AlipayUtils {
 
     /**
      * 清除字典中值为空的项。
-     * 
+     *
      * @param <V> 泛型
      * @param map 待清除的字典
      * @return 清除后的字典
@@ -102,7 +102,7 @@ public abstract class AlipayUtils {
 
     /**
      * 把JSON字符串转化为Map结构。
-     * 
+     *
      * @param body JSON字符串
      * @return Map结构
      */
@@ -118,14 +118,14 @@ public abstract class AlipayUtils {
 
     /**
      * 把JSON字符串解释为对象结构。
-     * 
+     *
      * @param <T> API响应类型
      * @param json JSON字符串
      * @param clazz API响应类
      * @return API响应对象
      */
     public static <T extends AlipayResponse> T parseResponse(String json, Class<T> clazz)
-                                                                                         throws AlipayApiException {
+            throws AlipayApiException {
         ObjectJsonParser<T> parser = new ObjectJsonParser<T>(clazz);
         return parser.parse(json);
     }
@@ -168,4 +168,46 @@ public abstract class AlipayUtils {
         return localIp;
     }
 
+    private static String RADIX_62_CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+    /**
+     * 将数字转为62进制
+     *
+     * @param num    Long 型数字
+     * @param length 转换后的字符串长度，不足则左侧补0
+     * @return 62进制字符串
+     */
+    public static String toRadix62Str(long num, int length) {
+        StringBuilder sb = new StringBuilder();
+        int remainder = 0;
+
+        while (num >= 62) {
+            remainder = Long.valueOf(num % 62).intValue();
+            sb.append(RADIX_62_CHARS.charAt(remainder));
+
+            num = num / 62;
+        }
+
+        sb.append(RADIX_62_CHARS.charAt(Long.valueOf(num).intValue()));
+        String value = sb.reverse().toString();
+        return StringUtils.leftPad(value, length, '0');
+    }
+
+    /**
+     * 62进制字符串转为数字
+     *
+     * @param str 编码后的62进制字符串
+     * @return 解码后的 10 进制字符串
+     */
+    public static long fromRadix62Str(String str) {
+        str = str.replace("^0*", "");
+        long num = 0;
+        int index = 0;
+        for (int i = 0; i < str.length(); i++) {
+            index = RADIX_62_CHARS.indexOf(str.charAt(i));
+            num += (long) (index * (Math.pow(62, str.length() - i - 1)));
+        }
+
+        return num;
+    }
 }

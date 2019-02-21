@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手艺人创建
  *
  * @author auto create
- * @since 1.0, 2017-10-11 20:36:24
+ * @since 1.0, 2018-12-06 18:06:45
  */
 public class KoubeiCraftsmanDataProviderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7129591946142189836L;
+	private static final long serialVersionUID = 4351617391512798165L;
 
 	/**
 	 * 手艺人账户名，仅支持小写字母和数字。上限12个小写字母或者数字。举例，若商户在口碑商家的登录账号为 testaop01@alipay.com,手艺人账号名为zhangsan，则手艺人登录口碑商家的账号名为 testaop01@alipay.com#zhangsan，获取登录密码需要扫商户app的员工激活码。从口碑商家app的员工管理进入员工详情页获取登录密码。
@@ -23,7 +23,7 @@ public class KoubeiCraftsmanDataProviderCreateModel extends AlipayObject {
 	private String account;
 
 	/**
-	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数
+	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为 koubei.member.data.oauth.query 中的 auth_code，默认有效期24小时；ISV自身角色操作的时候，无需传该参数
 	 */
 	@ApiField("auth_code")
 	private String authCode;
@@ -79,12 +79,11 @@ public class KoubeiCraftsmanDataProviderCreateModel extends AlipayObject {
 	private List<CraftsmanShopRelationOpenModel> shopRelations;
 
 	/**
-	 * 描述手艺人擅长的技术（如烫染、二分式剪法、足疗、中医推拿、刮痧、火疗、拔罐、婚纱、儿童、写真...）。最多6个标签
-每个标签字段上限10个字。
+	 * 描述手艺人擅长的技术（如烫染、二分式剪法、足疗、中医推拿、刮痧、火疗、拔罐、婚纱、儿童、写真...）。最多6个标签,
+最大长度指每个标签字段上限10个字。
 	 */
-	@ApiListField("specialities")
-	@ApiField("string")
-	private List<String> specialities;
+	@ApiField("specialities")
+	private String specialities;
 
 	/**
 	 * 手艺人的手机号，在商家端和用户端展示，不支持座机
@@ -168,10 +167,10 @@ public class KoubeiCraftsmanDataProviderCreateModel extends AlipayObject {
 		this.shopRelations = shopRelations;
 	}
 
-	public List<String> getSpecialities() {
+	public String getSpecialities() {
 		return this.specialities;
 	}
-	public void setSpecialities(List<String> specialities) {
+	public void setSpecialities(String specialities) {
 		this.specialities = specialities;
 	}
 

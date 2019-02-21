@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 初始化凤蝶应用时传入的默认数据
  *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:11
+ * @since 1.0, 2019-01-02 11:20:19
  */
 public class FengdieActivitySchemaData extends AlipayObject {
 
-	private static final long serialVersionUID = 8653719221365468969L;
+	private static final long serialVersionUID = 2489178363992562674L;
 
 	/**
 	 * 默认数据的内容，内容格式参考模板开发过程中自动生成的mock数据（与schema文件同名的json文件）。

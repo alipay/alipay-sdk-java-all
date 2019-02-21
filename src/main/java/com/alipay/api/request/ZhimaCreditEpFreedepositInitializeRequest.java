@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.freedeposit.initialize request
  * 
  * @author auto create
- * @since 1.0, 2018-06-28 18:00:00
+ * @since 1.0, 2019-01-17 17:15:01
  */
 public class ZhimaCreditEpFreedepositInitializeRequest implements AlipayRequest<ZhimaCreditEpFreedepositInitializeResponse> {
 

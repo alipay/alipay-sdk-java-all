@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.sceneprod.loan.cancel request
  * 
  * @author auto create
- * @since 1.0, 2018-07-31 10:38:45
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class MybankCreditSceneprodLoanCancelRequest implements AlipayRequest<MybankCreditSceneprodLoanCancelResponse> {
 

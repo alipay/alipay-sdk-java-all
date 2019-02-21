@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.prodmode.agreement.upload request
  * 
  * @author auto create
- * @since 1.0, 2018-04-26 13:56:07
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEbppProdmodeAgreementUploadRequest implements AlipayUploadRequest<AlipayEbppProdmodeAgreementUploadResponse> {
 

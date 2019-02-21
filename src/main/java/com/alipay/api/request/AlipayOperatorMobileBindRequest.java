@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.operator.mobile.bind request
  * 
  * @author auto create
- * @since 1.0, 2018-09-13 13:55:27
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayOperatorMobileBindRequest implements AlipayRequest<AlipayOperatorMobileBindResponse> {
 

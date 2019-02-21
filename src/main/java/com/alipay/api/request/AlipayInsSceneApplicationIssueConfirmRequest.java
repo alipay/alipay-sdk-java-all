@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.application.issue.confirm request
  * 
  * @author auto create
- * @since 1.0, 2018-04-03 11:29:12
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayInsSceneApplicationIssueConfirmRequest implements AlipayRequest<AlipayInsSceneApplicationIssueConfirmResponse> {
 

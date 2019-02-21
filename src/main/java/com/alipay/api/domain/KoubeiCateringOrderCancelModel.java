@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑点餐订单后付商户冲正
  *
  * @author auto create
- * @since 1.0, 2018-11-02 15:30:29
+ * @since 1.0, 2019-01-25 10:41:09
  */
 public class KoubeiCateringOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4214528148944922836L;
+	private static final long serialVersionUID = 3385279841925288967L;
 
 	/**
 	 * 扩展信息，json对象格式，key和value都为字符串
@@ -32,7 +32,7 @@ public class KoubeiCateringOrderCancelModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * BUSY(店铺太忙，无法接待)/DUPLICATE_ORDER(重复订单)/SHOP_CLOSE(店铺已打烊)/SELL_OUT(菜品售完)/OTHER_REASON(其他原因)/TABLE_NOT_EXIST(桌号不存在)
+	 * BUSY(店铺太忙，无法接待)/DUPLICATE_ORDER(重复订单)/SHOP_CLOSE(店铺已打烊)/SELL_OUT(菜品售完)/OTHER_REASON(其他原因)/TABLE_NOT_EXIST(桌号不存在)/RECEIVE_TIMEOUT(超时未接单)/ACCEPT_REFUND(协商退款)/LOW_VERSION(收银系统版本过低)/SHOP_NOT_CONNECTED("没有门店绑定关系")/MERCHANT_NOT_AUTHORIZED(商户没有授权)/POS_UNCONNECTED(POS关机或未联网)/DISH_REASON(菜品原因)
 	 */
 	@ApiField("reason")
 	private String reason;

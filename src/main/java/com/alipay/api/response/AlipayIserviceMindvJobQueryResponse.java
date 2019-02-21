@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.mindv.job.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-19 17:00:01
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayIserviceMindvJobQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2479745616686929985L;
+	private static final long serialVersionUID = 6541375694948293647L;
 
 	/** 
 	 * 任务创建时间_显示任务的创建时间_通过检索结果返回
@@ -52,6 +52,18 @@ HEMAOS(3, "surveys.hemaos.com");
 	@ApiField("status")
 	private String status;
 
+	/** 
+	 * 已阅卷过的问卷数量
+	 */
+	@ApiField("submit_complete_count")
+	private Long submitCompleteCount;
+
+	/** 
+	 * 试卷总的提交量
+	 */
+	@ApiField("total_submit_count")
+	private Long totalSubmitCount;
+
 	public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
@@ -85,6 +97,20 @@ HEMAOS(3, "surveys.hemaos.com");
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setSubmitCompleteCount(Long submitCompleteCount) {
+		this.submitCompleteCount = submitCompleteCount;
+	}
+	public Long getSubmitCompleteCount( ) {
+		return this.submitCompleteCount;
+	}
+
+	public void setTotalSubmitCount(Long totalSubmitCount) {
+		this.totalSubmitCount = totalSubmitCount;
+	}
+	public Long getTotalSubmitCount( ) {
+		return this.totalSubmitCount;
 	}
 
 }

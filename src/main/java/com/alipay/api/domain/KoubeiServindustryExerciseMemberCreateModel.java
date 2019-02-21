@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑健身会籍创建
  *
  * @author auto create
- * @since 1.0, 2018-11-16 14:47:15
+ * @since 1.0, 2019-01-03 10:29:43
  */
 public class KoubeiServindustryExerciseMemberCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8413935998286916424L;
+	private static final long serialVersionUID = 2767828968357996173L;
 
 	/**
 	 * 外部会籍id

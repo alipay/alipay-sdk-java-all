@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑的菜品模型,包含基本信息,sku,套餐明细
  *
  * @author auto create
- * @since 1.0, 2018-09-11 15:26:51
+ * @since 1.0, 2019-01-09 17:33:53
  */
 public class KbdishInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7197378495639814938L;
+	private static final long serialVersionUID = 2589253897599681717L;
 
 	/**
 	 * 分类字典大类的id, 如果操作的是菜品，则比输入，如果操作的是sku信息，可不输入
@@ -35,7 +35,7 @@ public class KbdishInfo extends AlipayObject {
 	private String createUser;
 
 	/**
-	 * 是否是价 Y:是 N否
+	 * 是否时价 Y:是 N否 目前口碑点餐暂不支持时价菜
 	 */
 	@ApiField("cur_price_flag")
 	private String curPriceFlag;
@@ -184,8 +184,8 @@ public class KbdishInfo extends AlipayObject {
 	private String status;
 
 	/**
-	 * 菜品标签json串，key =spicy标示辣度, value=0标示不辣；1微辣；2中辣;3中辣。
-key=recommend标示推荐指数,value=0标示不设定;1标示推荐;2十分推荐;3强烈推荐。key=special标识特色标签；value=0标示不设定;1招牌；2新品
+	 * 菜品标签json串，key =spicy标示辣度, value=0标示不辣；1微辣；2中辣;3重辣。
+key=special标识特色标签；value=0标示不设定;1招牌；2新品
 	 */
 	@ApiField("tags")
 	private String tags;
@@ -203,7 +203,7 @@ key=recommend标示推荐指数,value=0标示不设定;1标示推荐;2十分推�
 	private String typeSmall;
 
 	/**
-	 * 单位id 字典的id
+	 * 单位id 字典的id，数据来源接口为口碑菜品字典查询koubei.catering.dish.dictionary.query
 	 */
 	@ApiField("unit_id")
 	private String unitId;

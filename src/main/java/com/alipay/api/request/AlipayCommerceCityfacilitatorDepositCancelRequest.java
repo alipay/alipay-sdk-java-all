@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.cityfacilitator.deposit.cancel request
  * 
  * @author auto create
- * @since 1.0, 2015-12-18 21:35:58
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceCityfacilitatorDepositCancelRequest implements AlipayRequest<AlipayCommerceCityfacilitatorDepositCancelResponse> {
 

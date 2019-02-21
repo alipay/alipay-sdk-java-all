@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ecard.edu.public.bind request
  * 
  * @author auto create
- * @since 1.0, 2014-06-12 17:16:41
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayEcardEduPublicBindRequest implements AlipayRequest<AlipayEcardEduPublicBindResponse> {
 

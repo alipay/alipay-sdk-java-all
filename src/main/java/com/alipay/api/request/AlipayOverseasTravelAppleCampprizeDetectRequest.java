@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.apple.campprize.detect request
  * 
  * @author auto create
- * @since 1.0, 2018-08-17 17:40:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOverseasTravelAppleCampprizeDetectRequest implements AlipayRequest<AlipayOverseasTravelAppleCampprizeDetectResponse> {
 

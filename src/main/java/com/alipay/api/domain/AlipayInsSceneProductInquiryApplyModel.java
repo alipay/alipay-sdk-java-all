@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险产品询价申请
  *
  * @author auto create
- * @since 1.0, 2018-11-18 18:31:05
+ * @since 1.0, 2018-11-30 21:08:46
  */
 public class AlipayInsSceneProductInquiryApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5691645793436428947L;
+	private static final long serialVersionUID = 5553424274136332452L;
 
 	/**
 	 * 保险产品的投保人,当产品价格和投保人有关时候需传值
@@ -27,6 +27,12 @@ public class AlipayInsSceneProductInquiryApplyModel extends AlipayObject {
 	 */
 	@ApiField("biz_data")
 	private String bizData;
+
+	/**
+	 * 份数
+	 */
+	@ApiField("copies_count")
+	private String copiesCount;
 
 	/**
 	 * 保险被保人,产品价格和被保人相关时传值。
@@ -77,6 +83,13 @@ public class AlipayInsSceneProductInquiryApplyModel extends AlipayObject {
 	}
 	public void setBizData(String bizData) {
 		this.bizData = bizData;
+	}
+
+	public String getCopiesCount() {
+		return this.copiesCount;
+	}
+	public void setCopiesCount(String copiesCount) {
+		this.copiesCount = copiesCount;
 	}
 
 	public List<InsPerson> getInsureds() {

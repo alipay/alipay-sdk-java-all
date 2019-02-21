@@ -7,21 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品估清模型
  *
  * @author auto create
- * @since 1.0, 2018-09-11 15:27:09
+ * @since 1.0, 2019-01-07 17:45:44
  */
 public class KbdishEstimatedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7899482161984329125L;
+	private static final long serialVersionUID = 1115764682733583133L;
 
 	/**
-	 * 估清的菜品dishid或者skuid,该值对应的类型由dsType指定。目前暂时只支持dishid
+	 * 估清的菜品dishid或者materialId,该值对应的类型由dsType指定。
 	 */
 	@ApiField("ds_id")
 	private String dsId;
 
 	/**
-	 * skuid:sku维度估清
-dishid:菜品维度估清
+	 * dishid:菜品维度估清
 materialid:加料维度沽清
 	 */
 	@ApiField("ds_type")

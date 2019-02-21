@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.commission.channel.create response.
  * 
  * @author auto create
- * @since 1.0, 2017-03-03 10:40:48
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiAdvertCommissionChannelCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1846661289878571976L;
+	private static final long serialVersionUID = 6732968193974823621L;
 
 	/** 
 	 * 新增渠道接口，需要记录渠道ID

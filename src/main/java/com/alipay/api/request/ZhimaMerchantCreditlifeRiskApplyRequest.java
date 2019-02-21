@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.creditlife.risk.apply request
  * 
  * @author auto create
- * @since 1.0, 2017-11-20 13:41:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaMerchantCreditlifeRiskApplyRequest implements AlipayRequest<ZhimaMerchantCreditlifeRiskApplyResponse> {
 

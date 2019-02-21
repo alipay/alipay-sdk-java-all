@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.facerepo.search request
  * 
  * @author auto create
- * @since 1.0, 2016-06-30 08:29:21
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityProdFacerepoSearchRequest implements AlipayRequest<AlipaySecurityProdFacerepoSearchResponse> {
 

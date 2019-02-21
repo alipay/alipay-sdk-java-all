@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.renthouse.renter.zhima.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-25 14:48:31
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoRenthouseRenterZhimaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8142813415673928242L;
+	private static final long serialVersionUID = 4767347683956129334L;
 
 	/** 
 	 * 状态值（等级值、未授权、未知）

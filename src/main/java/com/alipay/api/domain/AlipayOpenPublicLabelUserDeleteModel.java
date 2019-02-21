@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公众号标签管理-删除用户标签
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:14
+ * @since 1.0, 2018-12-25 17:14:41
  */
 public class AlipayOpenPublicLabelUserDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8339313117292969166L;
+	private static final long serialVersionUID = 5232358253415732684L;
 
 	/**
 	 * 标签id

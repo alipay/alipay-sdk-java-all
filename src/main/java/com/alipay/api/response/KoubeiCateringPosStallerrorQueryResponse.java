@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.pos.stallerror.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-16 17:28:43
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiCateringPosStallerrorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7666476519456844895L;
+	private static final long serialVersionUID = 2161417195747671661L;
 
 	/** 
 	 * 档口异常菜品集合模型

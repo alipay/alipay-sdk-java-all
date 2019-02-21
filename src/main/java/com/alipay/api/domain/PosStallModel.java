@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 盒子档口模型
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:30:03
+ * @since 1.0, 2018-12-20 11:37:52
  */
 public class PosStallModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8222794665433537282L;
+	private static final long serialVersionUID = 4632156439237592694L;
 
 	/**
 	 * 菜品下档口的排序号

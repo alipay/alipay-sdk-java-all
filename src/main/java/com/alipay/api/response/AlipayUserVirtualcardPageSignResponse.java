@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.virtualcard.page.sign response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-17 18:53:38
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserVirtualcardPageSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3369365289851668858L;
+	private static final long serialVersionUID = 3825894857961879848L;
 
 	/** 
 	 * 商户定义的卡号，card_type+card_no要控制唯一性

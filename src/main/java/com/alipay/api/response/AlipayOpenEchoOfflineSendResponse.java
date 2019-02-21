@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.echo.offline.send response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-15 17:50:00
+ * @since 1.0, 2019-01-18 14:24:54
  */
 public class AlipayOpenEchoOfflineSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1262662948187323661L;
+	private static final long serialVersionUID = 6388838445593312552L;
 
 	/** 
 	 * 10000

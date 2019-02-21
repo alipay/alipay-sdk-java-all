@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个性化菜单删除
  *
  * @author auto create
- * @since 1.0, 2018-07-25 13:53:26
+ * @since 1.0, 2018-12-24 10:48:55
  */
 public class AlipayOpenPublicPersonalizedMenuDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5713658968714489434L;
+	private static final long serialVersionUID = 2623846495782174425L;
 
 	/**
 	 * 要删除的个性化菜单key

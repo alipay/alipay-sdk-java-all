@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.edu.campus.job.cancel request
  * 
  * @author auto create
- * @since 1.0, 2017-08-07 18:02:53
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoEduCampusJobCancelRequest implements AlipayRequest<AlipayEcoEduCampusJobCancelResponse> {
 

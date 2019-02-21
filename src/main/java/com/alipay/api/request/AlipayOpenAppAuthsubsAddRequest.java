@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.authsubs.add request
  * 
  * @author auto create
- * @since 1.0, 2015-07-29 17:11:25
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayOpenAppAuthsubsAddRequest implements AlipayRequest<AlipayOpenAppAuthsubsAddResponse> {
 

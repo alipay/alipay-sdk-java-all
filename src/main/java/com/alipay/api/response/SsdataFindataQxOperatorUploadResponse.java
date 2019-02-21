@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.findata.qx.operator.upload response.
  * 
  * @author auto create
- * @since 1.0, 2017-10-30 20:08:20
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class SsdataFindataQxOperatorUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6489989345659643572L;
+	private static final long serialVersionUID = 1724855956115542333L;
 
 	/** 
 	 * 系统业务流水号

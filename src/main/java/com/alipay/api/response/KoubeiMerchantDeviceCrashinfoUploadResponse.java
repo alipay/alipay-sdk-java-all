@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.device.crashinfo.upload response.
  * 
  * @author auto create
- * @since 1.0, 2018-08-24 17:07:27
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiMerchantDeviceCrashinfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6872352856896893899L;
+	private static final long serialVersionUID = 3574484613923648121L;
 
 	/** 
 	 * 系统错误码

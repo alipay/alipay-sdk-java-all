@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸服务初始化(一体化)
  *
  * @author auto create
- * @since 1.0, 2018-10-25 14:33:47
+ * @since 1.0, 2018-12-07 21:25:14
  */
 public class ZolozIdentificationCustomerCertifyzhubInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7538165591567956874L;
+	private static final long serialVersionUID = 7525852887546263282L;
 
 	/**
 	 * 设备token
@@ -48,6 +48,12 @@ public class ZolozIdentificationCustomerCertifyzhubInitializeModel extends Alipa
 	 */
 	@ApiField("biz_scene_name")
 	private String bizSceneName;
+
+	/**
+	 * 用于区分不同的业务场景，默认情况下不用填写，目前定义biz_type=3代表实人认证小程序
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * 实人信息：证件名字
@@ -149,6 +155,13 @@ public class ZolozIdentificationCustomerCertifyzhubInitializeModel extends Alipa
 	}
 	public void setBizSceneName(String bizSceneName) {
 		this.bizSceneName = bizSceneName;
+	}
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
 	}
 
 	public String getCertName() {

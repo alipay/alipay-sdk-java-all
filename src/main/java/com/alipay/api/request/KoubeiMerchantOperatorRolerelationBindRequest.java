@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.operator.rolerelation.bind request
  * 
  * @author auto create
- * @since 1.0, 2018-03-23 13:53:35
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiMerchantOperatorRolerelationBindRequest implements AlipayRequest<KoubeiMerchantOperatorRolerelationBindResponse> {
 

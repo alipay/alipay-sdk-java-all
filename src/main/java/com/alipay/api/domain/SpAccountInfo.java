@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构专户信息模型
  *
  * @author auto create
- * @since 1.0, 2018-01-17 17:16:36
+ * @since 1.0, 2019-01-17 17:41:27
  */
 public class SpAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1571219332794373966L;
+	private static final long serialVersionUID = 5363546798632276342L;
 
 	/**
 	 * 机构专户开户银行名称
@@ -24,6 +24,18 @@ public class SpAccountInfo extends AlipayObject {
 	 */
 	@ApiField("account_name")
 	private String accountName;
+
+	/**
+	 * 开户银行的分支行完整名称
+	 */
+	@ApiField("inst_branch_name")
+	private String instBranchName;
+
+	/**
+	 * 开户行所在省市信息
+	 */
+	@ApiField("inst_location")
+	private String instLocation;
 
 	/**
 	 * 机构专户账号
@@ -43,6 +55,20 @@ public class SpAccountInfo extends AlipayObject {
 	}
 	public void setAccountName(String accountName) {
 		this.accountName = accountName;
+	}
+
+	public String getInstBranchName() {
+		return this.instBranchName;
+	}
+	public void setInstBranchName(String instBranchName) {
+		this.instBranchName = instBranchName;
+	}
+
+	public String getInstLocation() {
+		return this.instLocation;
+	}
+	public void setInstLocation(String instLocation) {
+		this.instLocation = instLocation;
 	}
 
 	public String getSpAccountNo() {

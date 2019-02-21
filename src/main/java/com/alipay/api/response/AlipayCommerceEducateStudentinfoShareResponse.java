@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.studentinfo.share response.
  * 
  * @author auto create
- * @since 1.0, 2016-07-19 14:49:22
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceEducateStudentinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5739924383517698914L;
+	private static final long serialVersionUID = 3353561354632547978L;
 
 	/** 
 	 * 学生信息

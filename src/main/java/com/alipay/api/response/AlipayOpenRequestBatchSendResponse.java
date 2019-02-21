@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.request.batch.send response.
  * 
  * @author auto create
- * @since 1.0, 2018-09-27 20:56:30
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOpenRequestBatchSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3529572962924269576L;
+	private static final long serialVersionUID = 5527136967583725321L;
 
 	/** 
 	 * 批量请求中子业务接口的响应拼接报文:

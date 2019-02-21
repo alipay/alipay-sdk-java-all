@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.findata.operator.img.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-02 20:44:31
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class SsdataFindataOperatorImgQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1163952926741594874L;
+	private static final long serialVersionUID = 2843344835593788427L;
 
 	/** 
 	 * 系统业务流水号

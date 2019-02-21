@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.public.account.delete response.
  * 
  * @author auto create
- * @since 1.0, 2016-01-04 10:45:37
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMobilePublicAccountDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6887584121416415891L;
+	private static final long serialVersionUID = 4348127648576196858L;
 
 	/** 
 	 * 结果码

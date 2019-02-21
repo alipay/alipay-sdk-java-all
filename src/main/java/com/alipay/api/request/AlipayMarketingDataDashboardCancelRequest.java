@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.data.dashboard.cancel request
  * 
  * @author auto create
- * @since 1.0, 2017-01-18 22:20:19
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMarketingDataDashboardCancelRequest implements AlipayRequest<AlipayMarketingDataDashboardCancelResponse> {
 

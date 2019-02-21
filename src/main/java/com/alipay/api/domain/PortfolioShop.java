@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作品集－门店
  *
  * @author auto create
- * @since 1.0, 2017-10-20 11:04:46
+ * @since 1.0, 2019-01-03 10:35:00
  */
 public class PortfolioShop extends AlipayObject {
 
-	private static final long serialVersionUID = 1233179186829179552L;
+	private static final long serialVersionUID = 6334169213827311394L;
 
 	/**
 	 * 展示权重；必须大于等于0；排序规则：权重倒叙

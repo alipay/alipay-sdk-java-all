@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品字典数据查询
  *
  * @author auto create
- * @since 1.0, 2018-08-03 17:46:01
+ * @since 1.0, 2019-01-07 17:48:06
  */
 public class KoubeiCateringDishDictionaryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3158561831861716242L;
+	private static final long serialVersionUID = 4378245994733861652L;
 
 	/**
-	 * 业务字典类型.  定义如下: catetory 分类 ;unit 单位;spec 规格;group 套餐项目组
+	 * 业务字典类型.  定义如下: catetory 分类 ;unit 单位;spec 规格。
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -26,7 +26,7 @@ public class KoubeiCateringDishDictionaryQueryModel extends AlipayObject {
 	private String dictionaryId;
 
 	/**
-	 * 字典的扩展json，根据不同的biz_type,设置商家的自定义字典表key以及value。如果字典类型为catetory, key：sort，cate_type，level,parent_catetory_id ;如果字典类型为spec, key：sort. 如果字典类型为group,key:dish_sku_array 项目里明细sku_code的集合
+	 * 字典的扩展json，根据不同的biz_type,设置商家的自定义字典表key以及value。如果字典类型为catetory,  key为cateSort，cateType，level,parentCatetoryId（level传数字，cateType为dish或cook） ;如果字典类型为spec, key为specSort.。注意：如果是字符串拼接的方式，转移符\要替换为\\\ 。
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

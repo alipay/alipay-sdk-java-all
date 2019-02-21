@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.contentlib.newsflash.send response.
  * 
  * @author auto create
- * @since 1.0, 2018-05-14 14:15:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySocialBaseContentlibNewsflashSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1519119913721276539L;
+	private static final long serialVersionUID = 1223913761921922396L;
 
 	
 

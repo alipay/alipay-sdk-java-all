@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自建盒子套餐内固定菜的模型
  *
  * @author auto create
- * @since 1.0, 2018-11-21 14:30:03
+ * @since 1.0, 2018-12-20 11:37:52
  */
 public class PosFixedDishGroupModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5617956125844558524L;
+	private static final long serialVersionUID = 5833485747192348623L;
 
 	/**
 	 * 固定菜的数量，有固定菜时必传

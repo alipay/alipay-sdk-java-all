@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.scene.cooperation.consult response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-17 11:10:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserSceneCooperationConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7716214981871379194L;
+	private static final long serialVersionUID = 7675735316745253938L;
 
 	/** 
 	 * true表示该用户运营有价值；false表示没有价值

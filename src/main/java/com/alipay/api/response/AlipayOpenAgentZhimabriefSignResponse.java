@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.zhimabrief.sign response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-19 18:25:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOpenAgentZhimabriefSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2661587967897363576L;
+	private static final long serialVersionUID = 5383769711694336374L;
 
 	
 

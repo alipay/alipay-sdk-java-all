@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.entity.monitor.upload request
  * 
  * @author auto create
- * @since 1.0, 2018-03-22 19:37:19
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaCreditEpEntityMonitorUploadRequest implements AlipayRequest<ZhimaCreditEpEntityMonitorUploadResponse> {
 

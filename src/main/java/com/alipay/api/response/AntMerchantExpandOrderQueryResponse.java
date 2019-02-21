@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-08 14:40:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AntMerchantExpandOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1796368421442167492L;
+	private static final long serialVersionUID = 1281929583723172311L;
 
 	/** 
 	 * 申请单创建时间
 	 */
 	@ApiField("apply_time")
 	private Date applyTime;
+
+	/** 
+	 * 返回申请单相关参数。当前返回内容有cardAliasNo，smid
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/** 
 	 * 商户角色id。审核通过后生成。间连商户或平台商二级商户业务中，本字段表示smid
@@ -47,6 +53,13 @@ public class AntMerchantExpandOrderQueryResponse extends AlipayResponse {
 	}
 	public Date getApplyTime( ) {
 		return this.applyTime;
+	}
+
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+	public String getExtInfo( ) {
+		return this.extInfo;
 	}
 
 	public void setIpRoleId(List<String> ipRoleId) {

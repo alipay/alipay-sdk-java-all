@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.findata.operator.sms.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-02 20:44:23
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class SsdataFindataOperatorSmsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7799314717756262624L;
+	private static final long serialVersionUID = 7899626681367133982L;
 
 	/** 
 	 * 系统业务流水号

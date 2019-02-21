@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户增加标签接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:14
+ * @since 1.0, 2018-12-25 17:14:51
  */
 public class AlipayOpenPublicLabelUserCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7338485777217139648L;
+	private static final long serialVersionUID = 3183596551564898436L;
 
 	/**
 	 * 要绑定的标签Id

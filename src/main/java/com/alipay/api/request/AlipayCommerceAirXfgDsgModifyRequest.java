@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.air.xfg.dsg.modify request
  * 
  * @author auto create
- * @since 1.0, 2018-01-18 15:28:48
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceAirXfgDsgModifyRequest implements AlipayRequest<AlipayCommerceAirXfgDsgModifyResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁档案人脸视图对象
  *
  * @author auto create
- * @since 1.0, 2018-03-27 17:44:19
+ * @since 1.0, 2018-11-27 13:58:58
  */
 public class ArchiveFaceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4476161965624549838L;
+	private static final long serialVersionUID = 4289748261196115714L;
 
 	/**
 	 * 人脸图片BASE64转换后字符串,大小限制为2M
@@ -21,17 +21,14 @@ public class ArchiveFaceInfo extends AlipayObject {
 
 	/**
 	 * 人脸图片类型,取值范围:
-FACE 活体人脸图片
 COMMERCIAL_PS_WITH_MASK 商业公安网带网纹人脸图片
-RESIDENT 居民身份证图片
-PS_RM_MASK_ENHANCED 公安网去网纹照片
 HMT_PS 港澳台公安网
 	 */
 	@ApiField("type")
 	private String type;
 
 	/**
-	 * 图片可用性.true表示可用,false表示不可用
+	 * 废弃
 	 */
 	@ApiField("usable")
 	private Boolean usable;

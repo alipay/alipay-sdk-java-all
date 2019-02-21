@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.hide.deviceid.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-06-17 15:05:08
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityRiskHideDeviceidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2794216583272426329L;
+	private static final long serialVersionUID = 2736297496422762765L;
 
 	/** 
 	 * 设备指纹的apdid

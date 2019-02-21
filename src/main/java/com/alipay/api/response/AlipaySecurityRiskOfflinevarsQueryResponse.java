@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.offlinevars.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-23 20:30:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityRiskOfflinevarsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5567389434649163494L;
+	private static final long serialVersionUID = 8818241445435629137L;
 
 	/** 
 	 * 查询结果，包含所有维度的结果数据，两层json格式

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.item.extitem.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-07-06 10:47:56
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiItemExtitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4323565377911599932L;
+	private static final long serialVersionUID = 8243691915881765435L;
 
 	/** 
 	 * 商品信息

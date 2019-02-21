@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 套餐信息
  *
  * @author auto create
- * @since 1.0, 2018-11-19 17:57:23
+ * @since 1.0, 2019-02-14 13:36:17
  */
 public class SelectedMealInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6336764138844112746L;
+	private static final long serialVersionUID = 4195621915135683766L;
 
 	/**
 	 * 套餐的加价.仅当type=COMBO时有效
@@ -36,6 +39,13 @@ public class SelectedMealInfo extends AlipayObject {
 	 */
 	@ApiField("ext_infos")
 	private String extInfos;
+
+	/**
+	 * 套餐子明细的加料信息列表
+	 */
+	@ApiListField("meal_side_list")
+	@ApiField("selected_meal_side_info")
+	private List<SelectedMealSideInfo> mealSideList;
 
 	/**
 	 * 数量
@@ -118,6 +128,13 @@ public class SelectedMealInfo extends AlipayObject {
 	}
 	public void setExtInfos(String extInfos) {
 		this.extInfos = extInfos;
+	}
+
+	public List<SelectedMealSideInfo> getMealSideList() {
+		return this.mealSideList;
+	}
+	public void setMealSideList(List<SelectedMealSideInfo> mealSideList) {
+		this.mealSideList = mealSideList;
 	}
 
 	public String getNum() {

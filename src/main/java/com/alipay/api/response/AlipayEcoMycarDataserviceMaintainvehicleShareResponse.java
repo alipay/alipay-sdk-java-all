@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.dataservice.maintainvehicle.share response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-25 14:53:46
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoMycarDataserviceMaintainvehicleShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6583744265612558764L;
+	private static final long serialVersionUID = 4663131785782926567L;
 
 	/** 
 	 * 车辆详细信息

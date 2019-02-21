@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询使用ISV模板的托管小程序列表
  *
  * @author auto create
- * @since 1.0, 2018-01-24 23:51:50
+ * @since 1.0, 2018-12-24 16:50:57
  */
 public class AlipayOpenMiniTemplateUsageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6824729989622835565L;
+	private static final long serialVersionUID = 8757814744347254854L;
 
 	/**
 	 * 查询的页数，默认第一页

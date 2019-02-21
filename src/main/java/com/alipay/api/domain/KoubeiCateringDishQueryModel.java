@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品查询
  *
  * @author auto create
- * @since 1.0, 2018-08-03 17:52:11
+ * @since 1.0, 2019-01-17 16:55:27
  */
 public class KoubeiCateringDishQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8761843261934464988L;
+	private static final long serialVersionUID = 1894718454585736343L;
 
 	/**
 	 * 分类字典大类的id
@@ -66,6 +66,12 @@ public class KoubeiCateringDishQueryModel extends AlipayObject {
 	 */
 	@ApiField("nb_remember_code")
 	private String nbRememberCode;
+
+	/**
+	 * 门店id
+	 */
+	@ApiField("shop_id")
+	private String shopId;
 
 	/**
 	 * sku的id 口碑生成
@@ -134,6 +140,13 @@ public class KoubeiCateringDishQueryModel extends AlipayObject {
 	}
 	public void setNbRememberCode(String nbRememberCode) {
 		this.nbRememberCode = nbRememberCode;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 	public String getSkuId() {

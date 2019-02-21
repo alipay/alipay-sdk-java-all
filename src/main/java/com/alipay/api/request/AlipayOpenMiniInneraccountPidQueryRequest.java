@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.inneraccount.pid.query request
  * 
  * @author auto create
- * @since 1.0, 2018-11-01 17:44:14
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOpenMiniInneraccountPidQueryRequest implements AlipayRequest<AlipayOpenMiniInneraccountPidQueryResponse> {
 

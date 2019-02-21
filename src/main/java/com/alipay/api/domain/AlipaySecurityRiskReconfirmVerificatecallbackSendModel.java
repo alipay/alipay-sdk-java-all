@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 核身结果同步
  *
  * @author auto create
- * @since 1.0, 2018-04-23 15:07:57
+ * @since 1.0, 2019-01-16 17:20:04
  */
 public class AlipaySecurityRiskReconfirmVerificatecallbackSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8217144829921617559L;
+	private static final long serialVersionUID = 4842273913298933143L;
 
 	/**
 	 * 账号名

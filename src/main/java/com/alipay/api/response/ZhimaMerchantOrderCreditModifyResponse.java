@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.order.credit.modify response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-01 10:10:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaMerchantOrderCreditModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2515925927828652238L;
+	private static final long serialVersionUID = 5525294689397972416L;
 
 	/** 
 	 * 被修改订单的外部订单号

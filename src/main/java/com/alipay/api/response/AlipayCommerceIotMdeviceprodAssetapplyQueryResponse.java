@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.mdeviceprod.assetapply.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-10-30 14:46:04
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceIotMdeviceprodAssetapplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5341427188876548644L;
+	private static final long serialVersionUID = 6875589698259313136L;
 
 	/** 
 	 * 申请的服务商名称；
@@ -61,6 +61,30 @@ public class AlipayCommerceIotMdeviceprodAssetapplyQueryResponse extends AlipayR
 	@ApiField("apply_person_name")
 	private String applyPersonName;
 
+	/** 
+	 * 扩展字段: 内部接口，给供应商系统调用
+	 */
+	@ApiField("detail_info")
+	private String detailInfo;
+
+	/** 
+	 * 首次申请标识: 内部接口，给供应商系统调用
+	 */
+	@ApiField("first_apply")
+	private Boolean firstApply;
+
+	/** 
+	 * 申请店铺id: 内部接口，给供应商系统调用
+	 */
+	@ApiField("shop_id")
+	private String shopId;
+
+	/** 
+	 * 申请店铺名: 内部接口，给供应商系统调用
+	 */
+	@ApiField("shop_name")
+	private String shopName;
+
 	public void setApplyIsvName(String applyIsvName) {
 		this.applyIsvName = applyIsvName;
 	}
@@ -108,6 +132,34 @@ public class AlipayCommerceIotMdeviceprodAssetapplyQueryResponse extends AlipayR
 	}
 	public String getApplyPersonName( ) {
 		return this.applyPersonName;
+	}
+
+	public void setDetailInfo(String detailInfo) {
+		this.detailInfo = detailInfo;
+	}
+	public String getDetailInfo( ) {
+		return this.detailInfo;
+	}
+
+	public void setFirstApply(Boolean firstApply) {
+		this.firstApply = firstApply;
+	}
+	public Boolean getFirstApply( ) {
+		return this.firstApply;
+	}
+
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
+	}
+	public String getShopId( ) {
+		return this.shopId;
+	}
+
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+	public String getShopName( ) {
+		return this.shopName;
 	}
 
 }

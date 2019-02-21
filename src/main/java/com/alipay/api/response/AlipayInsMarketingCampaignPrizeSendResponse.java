@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.marketing.campaign.prize.send response.
  * 
  * @author auto create
- * @since 1.0, 2017-12-14 18:04:02
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayInsMarketingCampaignPrizeSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3552812912786781332L;
+	private static final long serialVersionUID = 8547858439684283243L;
 
 	/** 
 	 * 资产Id，如单品券权益类型，则对应的资产Id即为券Id

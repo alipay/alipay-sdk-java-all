@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.amlrisk.query response.
  * 
  * @author auto create
- * @since 1.0, 2016-02-02 15:48:33
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipaySecurityProdAmlriskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4433999169147336917L;
+	private static final long serialVersionUID = 6547732812367647964L;
 
 	/** 
 	 * 事件ID，由入参得来

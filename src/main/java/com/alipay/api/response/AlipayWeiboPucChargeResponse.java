@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.weibo.puc.charge response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-26 13:54:38
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayWeiboPucChargeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2618631911983961183L;
+	private static final long serialVersionUID = 3529213682628777614L;
 
 	/** 
 	 * 返回页面内容

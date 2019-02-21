@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mpointprod.benefit.detail.get request
  * 
  * @author auto create
- * @since 1.0, 2015-01-29 15:46:36
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipayMpointprodBenefitDetailGetRequest implements AlipayRequest<AlipayMpointprodBenefitDetailGetResponse> {
 

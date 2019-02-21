@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trust.user.score.get response.
  * 
  * @author auto create
- * @since 1.0, 2016-01-04 10:16:11
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayTrustUserScoreGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7835852336653923559L;
+	private static final long serialVersionUID = 5743627914565381443L;
 
 	/** 
 	 * 芝麻信用通过模型计算出的该用户的芝麻信用评分

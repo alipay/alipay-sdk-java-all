@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.order.push.sign request
  * 
  * @author auto create
- * @since 1.0, 2018-09-10 18:35:00
+ * @since 1.0, 2019-01-18 15:35:00
  */
 public class KoubeiCateringOrderPushSignRequest implements AlipayRequest<KoubeiCateringOrderPushSignResponse> {
 

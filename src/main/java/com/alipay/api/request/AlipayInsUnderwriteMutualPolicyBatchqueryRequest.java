@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.underwrite.mutual.policy.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2018-05-30 11:25:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayInsUnderwriteMutualPolicyBatchqueryRequest implements AlipayRequest<AlipayInsUnderwriteMutualPolicyBatchqueryResponse> {
 

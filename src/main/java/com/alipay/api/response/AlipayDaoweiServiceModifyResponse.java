@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.daowei.service.modify response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-26 14:23:36
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayDaoweiServiceModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6287348566199482845L;
+	private static final long serialVersionUID = 8774142994925945481L;
 
 	
 

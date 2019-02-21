@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 苹果外部活动参加
  *
  * @author auto create
- * @since 1.0, 2018-11-22 16:34:30
+ * @since 1.0, 2018-12-03 16:00:37
  */
 public class AlipayOverseasTravelGkaCampaignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1471398799747544237L;
+	private static final long serialVersionUID = 5286986133782692564L;
 
 	/**
 	 * 活动id，获取方式：联系支付宝运营同学获取（适用于支付宝平台活动，由合作伙伴调用触发）
@@ -30,6 +30,12 @@ public class AlipayOverseasTravelGkaCampaignApplyModel extends AlipayObject {
 	 */
 	@ApiField("device_info")
 	private String deviceInfo;
+
+	/**
+	 * 外部传入的扩展信息，支付宝回调外部平台时会将其回传，方便外部作业务处理
+	 */
+	@ApiField("extend_info")
+	private String extendInfo;
 
 	/**
 	 * rds嵌入页面的js收集的用户行为数据
@@ -68,6 +74,13 @@ public class AlipayOverseasTravelGkaCampaignApplyModel extends AlipayObject {
 	}
 	public void setDeviceInfo(String deviceInfo) {
 		this.deviceInfo = deviceInfo;
+	}
+
+	public String getExtendInfo() {
+		return this.extendInfo;
+	}
+	public void setExtendInfo(String extendInfo) {
+		this.extendInfo = extendInfo;
 	}
 
 	public String getJsonUa() {

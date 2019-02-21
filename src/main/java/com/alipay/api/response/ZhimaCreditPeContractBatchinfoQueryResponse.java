@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.contract.batchinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-27 18:15:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class ZhimaCreditPeContractBatchinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8136239893423827551L;
+	private static final long serialVersionUID = 7367739914448697144L;
 
 	/** 
 	 * 本批次记录条数

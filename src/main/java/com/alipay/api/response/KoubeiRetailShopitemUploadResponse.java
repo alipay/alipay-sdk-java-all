@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.retail.shopitem.upload response.
  * 
  * @author auto create
- * @since 1.0, 2017-04-14 18:10:01
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class KoubeiRetailShopitemUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6856559278223942456L;
+	private static final long serialVersionUID = 4218521652261483534L;
 
 	
 

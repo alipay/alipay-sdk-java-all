@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.drawcamp.status.update request
  * 
  * @author auto create
- * @since 1.0, 2018-10-17 14:15:09
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMarketingCampaignDrawcampStatusUpdateRequest implements AlipayRequest<AlipayMarketingCampaignDrawcampStatusUpdateResponse> {
 

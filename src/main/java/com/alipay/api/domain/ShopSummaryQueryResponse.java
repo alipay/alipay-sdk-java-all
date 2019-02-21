@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店查询摘要信息接口模型
  *
  * @author auto create
- * @since 1.0, 2018-11-20 10:06:10
+ * @since 1.0, 2018-11-23 15:50:09
  */
 public class ShopSummaryQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3256169461527397476L;
+	private static final long serialVersionUID = 4729553968699735131L;
 
 	/**
 	 * 门店地址
@@ -58,6 +58,16 @@ public class ShopSummaryQueryResponse extends AlipayObject {
 	 */
 	@ApiField("district_code")
 	private String districtCode;
+
+	/**
+	 * json 字符串表示额外信息;
+
+order_biz_mode: 点餐营业模式, REGULAR-正餐、LIGHT_FAST-轻快餐;
+pre_order: 预点餐服务可用状态, 1-服务可用、0-服务不可用
+order: 到店点餐服务可用状态：1-服务可用、0-服务不可用
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 创建时间
@@ -184,6 +194,13 @@ public class ShopSummaryQueryResponse extends AlipayObject {
 	}
 	public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getGmtCreate() {

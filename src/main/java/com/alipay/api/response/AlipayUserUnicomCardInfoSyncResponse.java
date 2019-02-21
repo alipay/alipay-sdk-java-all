@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.unicom.card.info.sync response.
  * 
  * @author auto create
- * @since 1.0, 2017-01-13 12:34:33
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserUnicomCardInfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8771712929652529688L;
+	private static final long serialVersionUID = 1562168733359296714L;
 
 	/** 
 	 * 业务处理结果 （成功: SUCCESS, 失败: FAIL, 重试: RETRY）

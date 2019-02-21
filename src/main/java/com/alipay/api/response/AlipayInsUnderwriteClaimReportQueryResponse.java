@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.underwrite.claim.report.query response.
  * 
  * @author auto create
- * @since 1.0, 2017-03-13 17:30:37
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayInsUnderwriteClaimReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8531373786194585488L;
+	private static final long serialVersionUID = 5532341215636283253L;
 
 	/** 
 	 * 案件信息

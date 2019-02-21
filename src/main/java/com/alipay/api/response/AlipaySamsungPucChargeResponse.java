@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.samsung.puc.charge response.
  * 
  * @author auto create
- * @since 1.0, 2018-04-26 13:55:58
+ * @since 1.0, 2019-01-21 19:52:08
  */
 public class AlipaySamsungPucChargeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2866969581494792526L;
+	private static final long serialVersionUID = 1533419733359865819L;
 
 	/** 
 	 * zhijiefanhui yemian

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.car.save response.
  * 
  * @author auto create
- * @since 1.0, 2016-05-18 15:27:46
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayInsAutoCarSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8367392232927357858L;
+	private static final long serialVersionUID = 8345767266951817988L;
 
 	/** 
 	 * 车牌号

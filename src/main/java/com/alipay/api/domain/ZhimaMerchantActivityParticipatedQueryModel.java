@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用承诺消费用户已参加活动查询
  *
  * @author auto create
- * @since 1.0, 2018-10-25 15:24:23
+ * @since 1.0, 2018-11-22 22:03:03
  */
 public class ZhimaMerchantActivityParticipatedQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6688433621638313461L;
+	private static final long serialVersionUID = 8434856225863477764L;
 
 	/**
 	 * 支付宝用户ID，唯一键标识用户身份。

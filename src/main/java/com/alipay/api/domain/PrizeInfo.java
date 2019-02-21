@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 奖品信息
  *
  * @author auto create
- * @since 1.0, 2018-11-16 14:12:48
+ * @since 1.0, 2018-12-25 15:38:50
  */
 public class PrizeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1162658133498318338L;
+	private static final long serialVersionUID = 4316278878743849166L;
 
 	/**
 	 * 奖品使用地址
 	 */
 	@ApiField("activity_url")
 	private String activityUrl;
+
+	/**
+	 * 脱敏后的支付宝登陆账号
+	 */
+	@ApiField("alipay_logon_id")
+	private String alipayLogonId;
 
 	/**
 	 * 奖品金额,单位为元
@@ -66,6 +72,13 @@ public class PrizeInfo extends AlipayObject {
 	}
 	public void setActivityUrl(String activityUrl) {
 		this.activityUrl = activityUrl;
+	}
+
+	public String getAlipayLogonId() {
+		return this.alipayLogonId;
+	}
+	public void setAlipayLogonId(String alipayLogonId) {
+		this.alipayLogonId = alipayLogonId;
 	}
 
 	public String getAmount() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antpaas.tokenidentity.create request
  * 
  * @author auto create
- * @since 1.0, 2018-10-15 15:12:29
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayUserAntpaasTokenidentityCreateRequest implements AlipayRequest<AlipayUserAntpaasTokenidentityCreateResponse> {
 

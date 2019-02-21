@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.rule.crowd.delete request
  * 
  * @author auto create
- * @since 1.0, 2018-10-17 14:08:05
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMarketingCampaignRuleCrowdDeleteRequest implements AlipayRequest<AlipayMarketingCampaignRuleCrowdDeleteResponse> {
 

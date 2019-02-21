@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lottery.presentlist.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-03-30 15:00:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayCommerceLotteryPresentlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3685912278996692325L;
+	private static final long serialVersionUID = 3251881381673633268L;
 
 	/** 
 	 * 列表内容

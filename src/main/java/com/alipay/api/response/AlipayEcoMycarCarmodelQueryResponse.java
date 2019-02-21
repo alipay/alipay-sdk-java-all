@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.carmodel.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-06-25 14:52:12
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoMycarCarmodelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4826745958488588554L;
+	private static final long serialVersionUID = 4815527193989178194L;
 
 	/** 
 	 * 支付宝车型库品牌背景图片链接地址

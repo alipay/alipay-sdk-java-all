@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.collateral.car.modify response.
  * 
  * @author auto create
- * @since 1.0, 2018-07-18 10:46:32
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayPcreditLoanCollateralCarModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2366252227911289617L;
+	private static final long serialVersionUID = 5824584976243248854L;
 
 	
 

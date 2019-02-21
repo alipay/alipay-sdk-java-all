@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.gka.campaign.apply response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-22 16:34:33
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayOverseasTravelGkaCampaignApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7512577593365242773L;
+	private static final long serialVersionUID = 6354151775251492534L;
 
 	/** 
 	 * 奖品信息，发奖成功时返回
@@ -22,7 +22,7 @@ public class AlipayOverseasTravelGkaCampaignApplyResponse extends AlipayResponse
 	private PrizeInfo prizeInfo;
 
 	/** 
-	 * 结果码，枚举值，目前支持TRIGGER_SUCCESS（发奖成功）、FREQ_OR_COUNT_LIMIT（频率或次数超限）、RULE_NOT_PASS（不满足活动规则）
+	 * 结果码，枚举值，目前支持TRIGGER_SUCCESS（发奖成功）、FREQ_OR_COUNT_LIMIT（频率或次数超限）、RULE_NOT_PASS（不满足活动规则）、CAMP_NOT_VALID（活动未生效）、NOT_WIN（未中奖）
 	 */
 	@ApiField("result_code")
 	private String resultCode;

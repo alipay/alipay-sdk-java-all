@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.findata.qx.userinfo.upload response.
  * 
  * @author auto create
- * @since 1.0, 2017-11-02 20:44:13
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class SsdataFindataQxUserinfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3624275573889656976L;
+	private static final long serialVersionUID = 6311586623644174965L;
 
 	/** 
 	 * 系统生成的业务唯一标识，用于标识商户的一笔业务

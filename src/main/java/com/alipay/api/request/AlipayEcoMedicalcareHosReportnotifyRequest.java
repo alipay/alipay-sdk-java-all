@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.medicalcare.hos.reportnotify request
  * 
  * @author auto create
- * @since 1.0, 2016-10-12 10:10:14
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayEcoMedicalcareHosReportnotifyRequest implements AlipayRequest<AlipayEcoMedicalcareHosReportnotifyResponse> {
 

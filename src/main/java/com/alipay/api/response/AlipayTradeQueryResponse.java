@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2018-11-16 17:20:00
+ * @since 1.0, 2019-01-28 18:02:56
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3638688138276932763L;
+	private static final long serialVersionUID = 7724976497846196812L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -26,10 +26,24 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	private String alipayStoreId;
 
 	/** 
+	 * 间连商户在支付宝端的商户编号；
+只在间连场景下返回；
+	 */
+	@ApiField("alipay_sub_merchant_id")
+	private String alipaySubMerchantId;
+
+	/** 
 	 * 预授权支付模式，该参数仅在信用预授权支付场景下返回。信用预授权支付：CREDIT_PREAUTH_PAY
 	 */
 	@ApiField("auth_trade_pay_mode")
 	private String authTradePayMode;
+
+	/** 
+	 * 订单描述;
+只在间连场景下返回；
+	 */
+	@ApiField("body")
+	private String body;
 
 	/** 
 	 * 买家支付宝账号
@@ -196,6 +210,13 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	private String storeName;
 
 	/** 
+	 * 订单标题；
+只在间连场景下返回；
+	 */
+	@ApiField("subject")
+	private String subject;
+
+	/** 
 	 * 商户机具终端编号
 	 */
 	@ApiField("terminal_id")
@@ -245,11 +266,25 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 		return this.alipayStoreId;
 	}
 
+	public void setAlipaySubMerchantId(String alipaySubMerchantId) {
+		this.alipaySubMerchantId = alipaySubMerchantId;
+	}
+	public String getAlipaySubMerchantId( ) {
+		return this.alipaySubMerchantId;
+	}
+
 	public void setAuthTradePayMode(String authTradePayMode) {
 		this.authTradePayMode = authTradePayMode;
 	}
 	public String getAuthTradePayMode( ) {
 		return this.authTradePayMode;
+	}
+
+	public void setBody(String body) {
+		this.body = body;
+	}
+	public String getBody( ) {
+		return this.body;
 	}
 
 	public void setBuyerLogonId(String buyerLogonId) {
@@ -432,6 +467,13 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	}
 	public String getStoreName( ) {
 		return this.storeName;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	public String getSubject( ) {
+		return this.subject;
 	}
 
 	public void setTerminalId(String terminalId) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运动单日汇总信息
  *
  * @author auto create
- * @since 1.0, 2018-11-13 21:12:33
+ * @since 1.0, 2019-01-03 10:32:54
  */
 public class ExerciseDailySummaryOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5239383787118246344L;
+	private static final long serialVersionUID = 4138683812658856539L;
 
 	/**
 	 * 时长：单位秒
