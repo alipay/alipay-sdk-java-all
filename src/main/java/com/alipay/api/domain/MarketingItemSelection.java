@@ -1,0 +1,29 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 选中的营销项目信息，主要包括id、类型等信息。
+ *
+ * @author auto create
+ * @since 1.0, 2019-02-27 20:23:01
+ */
+public class MarketingItemSelection extends AlipayObject {
+
+	private static final long serialVersionUID = 4785387666661648475L;
+
+	/**
+	 * 营销项目ID
+	 */
+	@ApiField("id")
+	private String id;
+
+	public String getId() {
+		return this.id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+
+}
