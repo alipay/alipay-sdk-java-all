@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoEduKtStudentModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5293638382128192286L;
+	private static final long serialVersionUID = 7266512363543225675L;
 
 	/**
 	 * 修改后的学生姓名

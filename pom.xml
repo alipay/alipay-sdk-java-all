@@ -4,7 +4,7 @@
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <version>3.6.0.ALL</version>
+    <version>3.7.4.ALL</version>
     <name>alipay-sdk-java</name>
     <url>https://open.alipay.com</url>
     <description>Alipay openapi SDK for Java

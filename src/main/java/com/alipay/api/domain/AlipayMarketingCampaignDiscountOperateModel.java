@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝营销优惠立减活动操作
  *
  * @author auto create
- * @since 1.0, 2018-10-22 17:53:22
+ * @since 1.0, 2019-02-22 17:05:04
  */
 public class AlipayMarketingCampaignDiscountOperateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8848749631747492711L;
+	private static final long serialVersionUID = 2595338919198564137L;
 
 	/**
 	 * 幂等控制code,控制重复新增，修改时候可以不设置。

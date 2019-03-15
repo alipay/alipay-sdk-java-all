@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCognitiveOcrCarvinQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1634625268683158234L;
+	private static final long serialVersionUID = 6435266157781426875L;
 
 	/**
 	 * 汽车VIN 图片base64 encode内容

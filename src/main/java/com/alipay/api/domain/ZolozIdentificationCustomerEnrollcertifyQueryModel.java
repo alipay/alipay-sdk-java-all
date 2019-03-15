@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸注册或者认证的结果查询
  *
  * @author auto create
- * @since 1.0, 2018-04-03 16:46:06
+ * @since 1.0, 2019-03-14 16:18:17
  */
 public class ZolozIdentificationCustomerEnrollcertifyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2741576179813736516L;
+	private static final long serialVersionUID = 6439652898531375155L;
 
 	/**
 	 * 业务单据号，用于核对和排查
@@ -24,6 +24,12 @@ public class ZolozIdentificationCustomerEnrollcertifyQueryModel extends AlipayOb
 	 */
 	@ApiField("face_type")
 	private Long faceType;
+
+	/**
+	 * 是否需要返回人脸照片
+	 */
+	@ApiField("need_img")
+	private Boolean needImg;
 
 	/**
 	 * zimId，用于查询认证结果
@@ -43,6 +49,13 @@ public class ZolozIdentificationCustomerEnrollcertifyQueryModel extends AlipayOb
 	}
 	public void setFaceType(Long faceType) {
 		this.faceType = faceType;
+	}
+
+	public Boolean getNeedImg() {
+		return this.needImg;
+	}
+	public void setNeedImg(Boolean needImg) {
+		this.needImg = needImg;
 	}
 
 	public String getZimId() {

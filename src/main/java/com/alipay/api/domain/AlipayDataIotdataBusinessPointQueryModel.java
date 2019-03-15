@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务点位查询
  *
  * @author auto create
- * @since 1.0, 2019-01-23 11:54:09
+ * @since 1.0, 2019-02-25 09:20:33
  */
 public class AlipayDataIotdataBusinessPointQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7895583674866656346L;
+	private static final long serialVersionUID = 2616879187747184486L;
 
 	/**
 	 * 业务id

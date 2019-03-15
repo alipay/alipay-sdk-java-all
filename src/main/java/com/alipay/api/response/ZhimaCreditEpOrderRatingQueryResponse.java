@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.order.rating.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-04 11:44:18
  */
 public class ZhimaCreditEpOrderRatingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4665434557676545894L;
+	private static final long serialVersionUID = 5586294474229526445L;
 
 	/** 
 	 * 评估额度;
@@ -37,11 +37,8 @@ REVIEW:无法评估；
 	private String decision;
 
 	/** 
-	 * 订单查询返回扩展信息，根据特定场景下允许传回法人三要素和企业三要素；
-name:法人姓名,
-cert_no：法人证件号,
-cert_type：法人身份类型，目前只支持IDENTITY_CARD；
-ep_name：企业名称,
+	 * 订单查询返回扩展信息，根据特定场景下允许传回企业三要素：
+ep_name：企业名称；
 ep_cert_type：企业证件类型，目前支持：NATIONAL_LEGAL---工商注册号
 ,NATIONAL_LEGAL_MERGE---社会统一信用代码;
 ep_cert_no：企业证件号

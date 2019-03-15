@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 账单同步接口
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:53:48
+ * @since 1.0, 2019-02-28 17:16:08
  */
 public class MybankCreditSceneprodBillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7212675927837264959L;
+	private static final long serialVersionUID = 4544312495646729113L;
 
 	/**
 	 * 账单列表

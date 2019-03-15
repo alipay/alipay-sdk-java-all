@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户卡信息
  *
  * @author auto create
- * @since 1.0, 2017-08-16 14:49:19
+ * @since 1.0, 2019-03-12 12:07:28
  */
 public class MerchantCard extends AlipayObject {
 
-	private static final long serialVersionUID = 2748157973134949819L;
+	private static final long serialVersionUID = 6466755822711397289L;
 
 	/**
 	 * 资金卡余额，单位：元，精确到小数点后两位。
@@ -68,13 +68,13 @@ public class MerchantCard extends AlipayObject {
 
 	/**
 	 * 商户动态码回传信息：
-只用于当write_off_type核销类型为mdbarcode或mdqrcode时，商户调用卡更新接口回传动态码。
+只用于当write_off_type核销类型为mdbarcode或mdqrcode时，商户调用卡更新接口回传动态码。如需使用商户动态码，请联系支付宝技术支持获取相关文档。
 	 */
 	@ApiField("mdcode_info")
 	private MdCodeInfoDTO mdcodeInfo;
 
 	/**
-	 * 会员卡开卡时间，格式为yyyy-MM-dd HH:mm:ss
+	 * 会员卡开卡时间，格式为yyyy-MM-dd HH:mm:ss。会员卡更新时，该时间不支持修改，请传入调用开卡接口时传入的card_ext_info.open_date时间。
 	 */
 	@ApiField("open_date")
 	private Date openDate;
@@ -92,7 +92,7 @@ public class MerchantCard extends AlipayObject {
 	private String templateId;
 
 	/**
-	 * 会员卡有效期
+	 * 会员卡有效期，格式为yyyy-MM-dd HH:mm:ss。会员卡更新时，该时间不支持修改，请传入调用开卡接口时传入的card_ext_info.valid_date时间。
 	 */
 	@ApiField("valid_date")
 	private String validDate;

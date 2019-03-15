@@ -17,6 +17,7 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -80,6 +81,34 @@ public class AlipaySignature {
             }
         }
         return content.toString();
+    }
+
+    public static String extractSignContent(String str, int begin) {
+        if (str == null) {
+            return null;
+        }
+        int end = -1;
+        int size = str.length();
+        int j = begin;
+        while (j < size && str.charAt(j) != '{') {
+            ++j;
+        }
+        if (j >= size) {
+            return null;
+        }
+        LinkedList<String> braces = new LinkedList<String>();
+        for (int i = j; i < size; ++i) {
+            if (str.charAt(i) == '{') {
+                braces.push("{");
+            } else if (str.charAt(i) == '}') {
+                braces.pop();
+                if (braces.isEmpty()) {
+                    end = i + 1;
+                    break;
+                }
+            }
+        }
+        return str.substring(j, end);
     }
 
     /**

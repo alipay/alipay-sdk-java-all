@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡模板修改
  *
  * @author auto create
- * @since 1.0, 2018-03-14 10:51:39
+ * @since 1.0, 2019-03-12 15:09:00
  */
 public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5631186577665612691L;
+	private static final long serialVersionUID = 2193387272172553431L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -121,7 +121,6 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 (1) 静态码
 qrcode: 二维码，扫码得商户开卡传入的external_card_no
 barcode: 条形码，扫码得商户开卡传入的external_card_no
-text: 当前不再推荐使用，text的展示效果目前等价于barcode+qrcode，同时出现条形码和二维码 
 
 (2) 动态码-支付宝生成码值(动态码会在2分钟左右后过期)
 dqrcode: 动态二维码，扫码得到的码值可配合会员卡查询接口使用
@@ -129,7 +128,8 @@ dbarcode: 动态条形码，扫码得到的码值可配合会员卡查询接口�
 
 (3) 动态码-商家自主生成码值（码值、时效性都由商户控制）
 mdqrcode: 商户动态二维码，扫码得商户自主传入的码值
-mdbarcode: 商户动态条码，扫码得商户自主传入的码值
+mdbarcode: 商户动态条码，扫码得商户自主传入的码值。
+如需使用商户动态码，请联系支付宝技术支持获取相关文档。
 	 */
 	@ApiField("write_off_type")
 	private String writeOffType;

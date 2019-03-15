@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗额度授权解冻接口
  *
  * @author auto create
- * @since 1.0, 2018-10-26 18:12:34
+ * @since 1.0, 2019-02-20 22:09:52
  */
 public class AlipayPcreditHuabeiAuthOrderUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7317134821726452746L;
+	private static final long serialVersionUID = 7423288768915289964L;
 
 	/**
-	 * 支付宝系统中用以唯一标识用户签约记录的编号。
+	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -38,7 +38,7 @@ public class AlipayPcreditHuabeiAuthOrderUnfreezeModel extends AlipayObject {
 	private String orderTitle;
 
 	/**
-	 * 商户本次操作的请求流水号，用于标示请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。
+	 * 商户本次操作的请求流水号，用于标识请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

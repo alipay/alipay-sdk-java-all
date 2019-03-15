@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易支付的渠道属性
  *
  * @author auto create
- * @since 1.0, 2018-06-07 15:14:51
+ * @since 1.0, 2019-02-27 23:31:50
  */
 public class TradeFundBill extends AlipayObject {
 
-	private static final long serialVersionUID = 2697966857477279576L;
+	private static final long serialVersionUID = 3359967638274192329L;
 
 	/**
 	 * 该支付工具类型所使用的金额
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 银行卡支付时的银行代码
+	 */
+	@ApiField("bank_code")
+	private String bankCode;
 
 	/**
 	 * 交易使用的资金渠道，详见 <a href="https://doc.open.alipay.com/doc2/detail?treeId=26&articleId=103259&docType=1">支付渠道列表</a>
@@ -42,6 +48,13 @@ public class TradeFundBill extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getBankCode() {
+		return this.bankCode;
+	}
+	public void setBankCode(String bankCode) {
+		this.bankCode = bankCode;
 	}
 
 	public String getFundChannel() {

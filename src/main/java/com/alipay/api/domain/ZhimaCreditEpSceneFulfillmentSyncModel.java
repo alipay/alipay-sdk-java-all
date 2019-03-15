@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用服务履约同步
  *
  * @author auto create
- * @since 1.0, 2019-01-04 16:46:10
+ * @since 1.0, 2019-03-04 15:01:11
  */
 public class ZhimaCreditEpSceneFulfillmentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5398357784719644255L;
+	private static final long serialVersionUID = 7454747411817839713L;
 
 	/**
 	 * 业务时间，日期格式为 yyyy-MM-dd HH:mm:ss

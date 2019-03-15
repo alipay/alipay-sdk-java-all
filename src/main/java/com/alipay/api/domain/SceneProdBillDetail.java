@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融账单信息
  *
  * @author auto create
- * @since 1.0, 2018-11-20 15:03:45
+ * @since 1.0, 2019-02-28 19:04:45
  */
 public class SceneProdBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8797696188587648421L;
+	private static final long serialVersionUID = 7115239949887569332L;
 
 	/**
 	 * 账单类型，包括：正常，手续费，保证金 等类型，根据机构需求可以进行扩展。非必填，不填默认为正常。
@@ -126,6 +126,18 @@ public class SceneProdBillDetail extends AlipayObject {
 	 */
 	@ApiField("term")
 	private String term;
+
+	/**
+	 * 期次结束日
+	 */
+	@ApiField("term_end_date")
+	private String termEndDate;
+
+	/**
+	 * 期次开始日
+	 */
+	@ApiField("term_start_date")
+	private String termStartDate;
 
 	/**
 	 * 应还总金额，单位分
@@ -264,6 +276,20 @@ public class SceneProdBillDetail extends AlipayObject {
 	}
 	public void setTerm(String term) {
 		this.term = term;
+	}
+
+	public String getTermEndDate() {
+		return this.termEndDate;
+	}
+	public void setTermEndDate(String termEndDate) {
+		this.termEndDate = termEndDate;
+	}
+
+	public String getTermStartDate() {
+		return this.termStartDate;
+	}
+	public void setTermStartDate(String termStartDate) {
+		this.termStartDate = termStartDate;
 	}
 
 	public String getTotalAmt() {

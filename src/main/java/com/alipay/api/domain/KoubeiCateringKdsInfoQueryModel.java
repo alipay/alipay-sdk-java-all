@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * kds详情查询
  *
  * @author auto create
- * @since 1.0, 2018-12-25 11:19:05
+ * @since 1.0, 2019-03-05 15:48:56
  */
 public class KoubeiCateringKdsInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6597542449666866464L;
+	private static final long serialVersionUID = 2393812677265982847L;
 
 	/**
 	 * kdsID

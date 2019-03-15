@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜品项目组
  *
  * @author auto create
- * @since 1.0, 2019-01-03 15:08:00
+ * @since 1.0, 2019-03-05 17:03:16
  */
 public class KbdishGroupInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7347621762488152625L;
+	private static final long serialVersionUID = 8685421448456284858L;
 
 	/**
 	 * 操作员
@@ -58,6 +58,12 @@ public class KbdishGroupInfo extends AlipayObject {
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
+
+	/**
+	 * 最少可选份数，不为0，最大不能大于unit_count_limit
+	 */
+	@ApiField("min_count_limit")
+	private String minCountLimit;
 
 	/**
 	 * open 启动 stop 停用
@@ -124,6 +130,13 @@ public class KbdishGroupInfo extends AlipayObject {
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public String getMinCountLimit() {
+		return this.minCountLimit;
+	}
+	public void setMinCountLimit(String minCountLimit) {
+		this.minCountLimit = minCountLimit;
 	}
 
 	public String getStatus() {

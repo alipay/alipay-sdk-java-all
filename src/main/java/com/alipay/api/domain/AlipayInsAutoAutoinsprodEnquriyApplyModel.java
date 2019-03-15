@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 询价接口
  *
  * @author auto create
- * @since 1.0, 2018-01-09 11:36:15
+ * @since 1.0, 2019-03-14 22:07:23
  */
 public class AlipayInsAutoAutoinsprodEnquriyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4426673527985963917L;
+	private static final long serialVersionUID = 3391118592473536424L;
 
 	/**
 	 * 代理人身份信息
 	 */
 	@ApiField("agent")
 	private InsPerson agent;
+
+	/**
+	 * 中介(经办)组织信息
+	 */
+	@ApiField("agent_organization")
+	private AgentOrganization agentOrganization;
+
+	/**
+	 * 技术对接主体组织信息,技术isv
+	 */
+	@ApiField("agent_tech_organization")
+	private AgentOrganization agentTechOrganization;
 
 	/**
 	 * 代理人userId
@@ -66,6 +78,20 @@ public class AlipayInsAutoAutoinsprodEnquriyApplyModel extends AlipayObject {
 	}
 	public void setAgent(InsPerson agent) {
 		this.agent = agent;
+	}
+
+	public AgentOrganization getAgentOrganization() {
+		return this.agentOrganization;
+	}
+	public void setAgentOrganization(AgentOrganization agentOrganization) {
+		this.agentOrganization = agentOrganization;
+	}
+
+	public AgentOrganization getAgentTechOrganization() {
+		return this.agentTechOrganization;
+	}
+	public void setAgentTechOrganization(AgentOrganization agentTechOrganization) {
+		this.agentTechOrganization = agentTechOrganization;
 	}
 
 	public String getAgentUserId() {

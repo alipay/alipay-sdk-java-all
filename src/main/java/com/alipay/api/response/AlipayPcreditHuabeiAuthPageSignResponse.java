@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.page.sign response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-05 13:45:44
  */
 public class AlipayPcreditHuabeiAuthPageSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4198196737397341911L;
+	private static final long serialVersionUID = 1534413991224492115L;
 
 	/** 
-	 * 支付宝系统中用以唯一标识用户签约记录的编号。（只有签约成功时才会返回）
+	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号。只有签约成功时才会返回。后续涉及到用户已冻结额度的操作，都需要传入该协议号。请妥善保存，并在系统内建立好如下关联关系：(商户自有用户id, 支付宝用户alipay_user_id, 花呗先享协议号)
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -34,7 +34,7 @@ public class AlipayPcreditHuabeiAuthPageSignResponse extends AlipayResponse {
 	private String alipayUserId;
 
 	/** 
-	 * 支付宝侧花呗授权操作单据id
+	 * 支付宝侧花呗冻结解冻操作单据id
 	 */
 	@ApiField("auth_opt_id")
 	private String authOptId;
@@ -46,7 +46,7 @@ public class AlipayPcreditHuabeiAuthPageSignResponse extends AlipayResponse {
 	private String authScene;
 
 	/** 
-	 * 用户在商户网站的登录账号，用于在签约页面展示，如果为空，则不展示
+	 * 用户在商户网站的登录账号，用于在签约页面展示，如果为空，则不展示。由商户传入，最终返回给商户。返回结果会做内容脱敏。
 	 */
 	@ApiField("external_logon_id")
 	private String externalLogonId;
@@ -70,13 +70,13 @@ public class AlipayPcreditHuabeiAuthPageSignResponse extends AlipayResponse {
 	private Date gmtTrans;
 
 	/** 
-	 * 商户本次操作的请求流水号，用于标示请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。
+	 * 商户本次操作的请求流水号，用于标识请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。由商户传入，最终返回给商户。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
 	/** 
-	 * 外部签约号，由商户提供，花呗先享协议中标示用户的唯一签约号（确保在商户系统中唯一）。
+	 * 外部签约号，由商户提供，花呗先享协议中标识用户的唯一签约号（确保在商户系统中唯一）。由商户传入，最终返回给商户。
 	 */
 	@ApiField("out_sign_no")
 	private String outSignNo;
@@ -94,7 +94,7 @@ public class AlipayPcreditHuabeiAuthPageSignResponse extends AlipayResponse {
 	private String sellerId;
 
 	/** 
-	 * 业务操作状态，Y表示成功；N或者其它值均表示失败
+	 * 业务操作状态，Y表示成功结束；N表示失败结束；I表示进行中。
 	 */
 	@ApiField("trans_status")
 	private String transStatus;

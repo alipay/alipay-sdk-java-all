@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.servindustry.exercise.notice.create request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-02-22 13:05:00
  */
 public class KoubeiServindustryExerciseNoticeCreateRequest implements AlipayRequest<KoubeiServindustryExerciseNoticeCreateResponse> {
 

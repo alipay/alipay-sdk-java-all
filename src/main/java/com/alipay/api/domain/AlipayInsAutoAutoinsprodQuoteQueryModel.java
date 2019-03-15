@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询报价详情接口
  *
  * @author auto create
- * @since 1.0, 2018-01-09 11:33:25
+ * @since 1.0, 2019-02-18 21:36:50
  */
 public class AlipayInsAutoAutoinsprodQuoteQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3217145562193288391L;
+	private static final long serialVersionUID = 7647753681254382781L;
 
 	/**
 	 * 询价ID

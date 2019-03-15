@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass更新卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2018-01-09 22:28:38
+ * @since 1.0, 2019-03-12 17:20:56
  */
 public class AlipayPassInstanceUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8623377398154473174L;
+	private static final long serialVersionUID = 5594971936888592835L;
 
 	/**
 	 * 代理商代替商户发放卡券后，再代替商户更新卡券时，此值为商户的pid/appid
@@ -38,13 +38,13 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	private String tplParams;
 
 	/**
-	 * 核销码串值【当状态变更为USED时，建议传】
+	 * 核销码串值【当状态变更为USED时，建议传】。该值正常为模板中核销区域（Operation）对应的message值。
 	 */
 	@ApiField("verify_code")
 	private String verifyCode;
 
 	/**
-	 * 核销方式，目前支持：wave（声波方式）、qrcode（二维码方式）、barcode（条码方式）、input（文本方式，即手工输入方式）。verify_code和verify_type需同时传入
+	 * 核销方式，该值正常为模板中核销区域（Operation）对应的format值。verify_code和verify_type需同时传入。
 	 */
 	@ApiField("verify_type")
 	private String verifyType;

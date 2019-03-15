@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 报价申请接口
  *
  * @author auto create
- * @since 1.0, 2018-01-09 11:32:37
+ * @since 1.0, 2019-03-14 21:47:32
  */
 public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2676458328739943358L;
+	private static final long serialVersionUID = 3876628823434764679L;
 
 	/**
 	 * 商业险产品信息
@@ -42,6 +45,13 @@ public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 	 */
 	@ApiField("company_id")
 	private String companyId;
+
+	/**
+	 * 此次报价，机构id列表
+	 */
+	@ApiListField("company_ids")
+	@ApiField("string")
+	private List<String> companyIds;
 
 	/**
 	 * 车险询价申请号
@@ -94,6 +104,13 @@ public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 	}
 	public void setCompanyId(String companyId) {
 		this.companyId = companyId;
+	}
+
+	public List<String> getCompanyIds() {
+		return this.companyIds;
+	}
+	public void setCompanyIds(List<String> companyIds) {
+		this.companyIds = companyIds;
 	}
 
 	public String getEnquiryBizId() {

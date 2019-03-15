@@ -9,17 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券账单信息
  *
  * @author auto create
- * @since 1.0, 2017-09-25 10:26:02
+ * @since 1.0, 2019-03-08 16:35:23
  */
 public class VoucherBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6785877799573965845L;
+	private static final long serialVersionUID = 2755494239845279938L;
 
 	/**
-	 * 券核销/退款金额
+	 * 券核销/退款金额(元)
 	 */
 	@ApiField("amount")
-	private Long amount;
+	private String amount;
 
 	/**
 	 * 账单类型(V_USE:支付,V_REFUND:退款)
@@ -57,10 +57,10 @@ public class VoucherBillDetail extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public Long getAmount() {
+	public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(Long amount) {
+	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 

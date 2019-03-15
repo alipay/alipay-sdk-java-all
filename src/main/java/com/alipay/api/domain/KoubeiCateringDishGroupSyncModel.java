@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品项目组数据同步
  *
  * @author auto create
- * @since 1.0, 2018-10-31 14:18:42
+ * @since 1.0, 2019-03-05 19:19:04
  */
 public class KoubeiCateringDishGroupSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8259981352929375862L;
+	private static final long serialVersionUID = 8449915961825785146L;
 
 	/**
 	 * 口碑菜品套餐项目组

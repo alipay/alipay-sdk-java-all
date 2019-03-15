@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.order.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-02-20 22:09:56
  */
 public class AlipayPcreditHuabeiAuthOrderUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8418544551411674965L;
+	private static final long serialVersionUID = 5214381583952111622L;
 
 	/** 
-	 * 支付宝系统中用以唯一标识用户签约记录的编号。
+	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -34,7 +34,7 @@ public class AlipayPcreditHuabeiAuthOrderUnfreezeResponse extends AlipayResponse
 	private String alipayUserId;
 
 	/** 
-	 * 支付宝侧花呗授权操作单据id
+	 * 支付宝侧花呗冻结解冻操作单据id
 	 */
 	@ApiField("auth_opt_id")
 	private String authOptId;
@@ -46,7 +46,7 @@ public class AlipayPcreditHuabeiAuthOrderUnfreezeResponse extends AlipayResponse
 	private Date gmtTrans;
 
 	/** 
-	 * 商户本次操作的请求流水号，用于标示请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。
+	 * 商户本次操作的请求流水号，用于标识请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。由商户传入，最终返回给商户。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -64,7 +64,7 @@ public class AlipayPcreditHuabeiAuthOrderUnfreezeResponse extends AlipayResponse
 	private String sellerId;
 
 	/** 
-	 * 业务操作状态，Y表示成功；N或者其它值均表示失败
+	 * 业务操作状态，Y表示成功；N表示失败。
 	 */
 	@ApiField("trans_status")
 	private String transStatus;

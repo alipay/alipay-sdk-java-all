@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询报关详细信息
  *
  * @author auto create
- * @since 1.0, 2018-03-02 14:37:16
+ * @since 1.0, 2019-03-13 16:37:17
  */
 public class AlipayTradeCustomsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3311356671855998481L;
+	private static final long serialVersionUID = 3429234982248937652L;
 
 	/**
 	 * 报关请求号。需要查询的商户端报关请求号，支持批量查询，

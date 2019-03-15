@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass新建卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2018-07-23 15:36:44
+ * @since 1.0, 2019-03-12 15:09:19
  */
 public class AlipayPassInstanceAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8662256136435736393L;
+	private static final long serialVersionUID = 2464573435987826414L;
 
 	/**
 	 * 支付宝用户识别信息：
@@ -27,7 +27,7 @@ public class AlipayPassInstanceAddModel extends AlipayObject {
 	private String recognitionType;
 
 	/**
-	 * 支付宝pass模版ID
+	 * 支付宝pass模版ID，即调用模板创建接口时返回的tpl_id。
 	 */
 	@ApiField("tpl_id")
 	private String tplId;

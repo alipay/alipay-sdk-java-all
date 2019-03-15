@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2018-11-28 15:17:33
+ * @since 1.0, 2019-02-27 12:10:19
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6392771192356245624L;
+	private static final long serialVersionUID = 6814348568937423196L;
 
 	/**
 	 * 品牌id
@@ -77,6 +77,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
+
+	/**
+	 * 扩展信息列表。key值需要向对应行业的bd进行申请。
+	 */
+	@ApiListField("ext_infos")
+	@ApiField("shop_ext_info")
+	private List<ShopExtInfo> extInfos;
 
 	/**
 	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid
@@ -226,6 +233,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	}
 	public void setContactPhone(String contactPhone) {
 		this.contactPhone = contactPhone;
+	}
+
+	public List<ShopExtInfo> getExtInfos() {
+		return this.extInfos;
+	}
+	public void setExtInfos(List<ShopExtInfo> extInfos) {
+		this.extInfos = extInfos;
 	}
 
 	public String getIpRoleId() {

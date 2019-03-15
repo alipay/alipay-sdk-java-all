@@ -10,11 +10,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员模板模型
  *
  * @author auto create
- * @since 1.0, 2018-11-29 22:09:28
+ * @since 1.0, 2019-02-20 19:41:18
  */
 public class MerchantMemberTemplateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3514735377225234295L;
+	private static final long serialVersionUID = 1245144525544723287L;
+
+	/**
+	 * 会员模板支持的端信息，
+目前有两种koubei,wechat，
+默认支持koubei端
+	 */
+	@ApiListField("client_channels")
+	@ApiField("string")
+	private List<String> clientChannels;
 
 	/**
 	 * 会员模板的描述信息
@@ -90,6 +99,13 @@ barcode: 条形码，扫码得商户开卡传入的external_card_no
 	 */
 	@ApiField("write_off_type")
 	private String writeOffType;
+
+	public List<String> getClientChannels() {
+		return this.clientChannels;
+	}
+	public void setClientChannels(List<String> clientChannels) {
+		this.clientChannels = clientChannels;
+	}
 
 	public String getDesc() {
 		return this.desc;

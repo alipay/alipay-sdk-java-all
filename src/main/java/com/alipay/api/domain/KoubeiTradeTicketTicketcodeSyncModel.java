@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑凭证码同步
  *
  * @author auto create
- * @since 1.0, 2018-08-29 11:25:35
+ * @since 1.0, 2019-03-12 11:13:18
  */
 public class KoubeiTradeTicketTicketcodeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6716539234948228227L;
+	private static final long serialVersionUID = 3377622267279495554L;
 
 	/**
 	 * 凭证码类型,INTERNAL_CODE(内部凭证码),EXTERNAL_CODE(外部凭证码),默认INTERNAL_CODE,外部券场景必填
@@ -44,6 +44,12 @@ public class KoubeiTradeTicketTicketcodeSyncModel extends AlipayObject {
 	 */
 	@ApiField("request_id")
 	private String requestId;
+
+	/**
+	 * 凭证状态变更操作发生的门店id
+	 */
+	@ApiField("sync_shop_id")
+	private String syncShopId;
 
 	/**
 	 * 凭证码，包括内部凭证码和外部凭证码，内部凭证码为12位，纯数字，且唯一不重复
@@ -84,6 +90,13 @@ public class KoubeiTradeTicketTicketcodeSyncModel extends AlipayObject {
 	}
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
+	}
+
+	public String getSyncShopId() {
+		return this.syncShopId;
+	}
+	public void setSyncShopId(String syncShopId) {
+		this.syncShopId = syncShopId;
 	}
 
 	public String getTicketCode() {

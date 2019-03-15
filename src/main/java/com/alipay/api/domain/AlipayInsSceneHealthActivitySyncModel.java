@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构同步健康检测产品信息
  *
  * @author auto create
- * @since 1.0, 2017-09-13 10:12:33
+ * @since 1.0, 2019-02-26 17:19:27
  */
 public class AlipayInsSceneHealthActivitySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1693175997599542635L;
+	private static final long serialVersionUID = 5323978292123418831L;
 
 	/**
 	 * 活动编号参数，比如01

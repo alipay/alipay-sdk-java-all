@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用人脸能力所需要等拓展参数信息
  *
  * @author auto create
- * @since 1.0, 2018-11-27 19:32:32
+ * @since 1.0, 2019-03-14 18:53:12
  */
 public class FaceAbilityExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7469214884582959289L;
+	private static final long serialVersionUID = 4124265999832143371L;
 
 	/**
 	 * 年龄
@@ -42,6 +42,20 @@ public class FaceAbilityExtInfo extends AlipayObject {
 	 */
 	@ApiField("channel")
 	private String channel;
+
+	/**
+	 * maxRule:选择最大脸规则；
+centerRule：选择中心脸规则；
+默认空字符串表示不进行选脸
+	 */
+	@ApiField("choose_face_rule")
+	private String chooseFaceRule;
+
+	/**
+	 * 2D或者3D，默认2D
+	 */
+	@ApiField("face_data_type")
+	private String faceDataType;
 
 	/**
 	 * 人脸加密后的特征
@@ -112,6 +126,20 @@ public class FaceAbilityExtInfo extends AlipayObject {
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
+	}
+
+	public String getChooseFaceRule() {
+		return this.chooseFaceRule;
+	}
+	public void setChooseFaceRule(String chooseFaceRule) {
+		this.chooseFaceRule = chooseFaceRule;
+	}
+
+	public String getFaceDataType() {
+		return this.faceDataType;
+	}
+	public void setFaceDataType(String faceDataType) {
+		this.faceDataType = faceDataType;
 	}
 
 	public String getFeature() {

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataFindataOperatorUserinfoCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6555371229486379591L;
+	private static final long serialVersionUID = 1721592418672593717L;
 
 	/** 
 	 * 系统业务流水号

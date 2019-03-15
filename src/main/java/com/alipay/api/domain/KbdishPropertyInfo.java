@@ -10,11 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜品销售属性模型
  *
  * @author auto create
- * @since 1.0, 2018-12-27 14:36:27
+ * @since 1.0, 2019-03-05 17:03:21
  */
 public class KbdishPropertyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8736115657925383786L;
+	private static final long serialVersionUID = 6298741364526149161L;
+
+	/**
+	 * “属性最多可选数”，默认为1，与“属性最少可选数”同时为空或同时非空，不能为0，数值不能大于销售属性值的数量，即property_value_info_list的长度
+	 */
+	@ApiField("max_count_limit")
+	private String maxCountLimit;
+
+	/**
+	 * “属性最少可选数”，默认为1，与“属性最多可选数”同时为空或同时非空，不能为0，数值不能大于“属性最多可选数”
+	 */
+	@ApiField("min_count_limit")
+	private String minCountLimit;
 
 	/**
 	 * 菜品属性名称
@@ -34,6 +46,20 @@ public class KbdishPropertyInfo extends AlipayObject {
 	 */
 	@ApiField("sort")
 	private String sort;
+
+	public String getMaxCountLimit() {
+		return this.maxCountLimit;
+	}
+	public void setMaxCountLimit(String maxCountLimit) {
+		this.maxCountLimit = maxCountLimit;
+	}
+
+	public String getMinCountLimit() {
+		return this.minCountLimit;
+	}
+	public void setMinCountLimit(String minCountLimit) {
+		this.minCountLimit = minCountLimit;
+	}
 
 	public String getPropertyName() {
 		return this.propertyName;

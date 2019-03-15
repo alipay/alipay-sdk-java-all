@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.card.benefit.delete request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-06 14:41:35
  */
 public class AlipayMarketingCardBenefitDeleteRequest implements AlipayRequest<AlipayMarketingCardBenefitDeleteResponse> {
 

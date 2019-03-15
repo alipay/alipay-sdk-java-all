@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 所有需要报价机构对应的精友码
  *
  * @author auto create
- * @since 1.0, 2017-10-24 17:03:38
+ * @since 1.0, 2019-03-14 12:35:51
  */
 public class VehicleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6488978127641164656L;
+	private static final long serialVersionUID = 3585237143481493571L;
 
 	/**
 	 * 保险公司ID
@@ -25,6 +25,12 @@ public class VehicleInfo extends AlipayObject {
 	@ApiField("vehicle_code")
 	private String vehicleCode;
 
+	/**
+	 * 精友码提供者在精友的主体编码
+	 */
+	@ApiField("vehicle_subject_code")
+	private String vehicleSubjectCode;
+
 	public String getCompanyId() {
 		return this.companyId;
 	}
@@ -37,6 +43,13 @@ public class VehicleInfo extends AlipayObject {
 	}
 	public void setVehicleCode(String vehicleCode) {
 		this.vehicleCode = vehicleCode;
+	}
+
+	public String getVehicleSubjectCode() {
+		return this.vehicleSubjectCode;
+	}
+	public void setVehicleSubjectCode(String vehicleSubjectCode) {
+		this.vehicleSubjectCode = vehicleSubjectCode;
 	}
 
 }

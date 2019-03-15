@@ -12,17 +12,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-11 14:35:00
  */
 public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7364997542538575184L;
+	private static final long serialVersionUID = 6828158578226291778L;
 
 	/** 
 	 * 券余额(元)
 	 */
 	@ApiField("available_amount")
-	private Long availableAmount;
+	private String availableAmount;
 
 	/** 
 	 * 券交易账单信息(核销交易信息、交易退款信息等可能存在多条)
@@ -77,7 +77,7 @@ public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 	 * 券面额(元)
 	 */
 	@ApiField("total_amount")
-	private Long totalAmount;
+	private String totalAmount;
 
 	/** 
 	 * 券所属用户ID
@@ -91,10 +91,10 @@ public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 	@ApiField("voucher_id")
 	private String voucherId;
 
-	public void setAvailableAmount(Long availableAmount) {
+	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
-	public Long getAvailableAmount( ) {
+	public String getAvailableAmount( ) {
 		return this.availableAmount;
 	}
 
@@ -154,10 +154,10 @@ public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 		return this.templateId;
 	}
 
-	public void setTotalAmount(Long totalAmount) {
+	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public Long getTotalAmount( ) {
+	public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 

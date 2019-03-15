@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantActivityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4745781246482842218L;
+	private static final long serialVersionUID = 3789792857599346554L;
 
 	/** 
 	 * 芝麻承诺消费开放模式活动模型列表

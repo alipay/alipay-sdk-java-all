@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡查询
  *
  * @author auto create
- * @since 1.0, 2018-01-31 17:43:09
+ * @since 1.0, 2019-03-12 15:08:16
  */
 public class AlipayMarketingCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1885645425339374876L;
+	private static final long serialVersionUID = 7457798215242812239L;
 
 	/**
 	 * 用户信息 填写则作为附加条件查询
@@ -27,7 +27,7 @@ public class AlipayMarketingCardQueryModel extends AlipayObject {
 
 	/**
 	 * 操作卡号。
-target_card_no为业务卡号，由开卡流程中，支付宝返回的业务卡号
+若target_card_no_type为BIZ_CARD，则该值为业务卡号（即开卡接口返回结果中的card_info.biz_card_no）；若target_card_no_type为D_QR_CODE或D_BAR_CODE，则该值为动态码值
 	 */
 	@ApiField("target_card_no")
 	private String targetCardNo;
@@ -37,7 +37,6 @@ target_card_no为业务卡号，由开卡流程中，支付宝返回的业务卡
 BIZ_CARD：支付宝卡号
 D_QR_CODE：动态二维码（业务卡号对应的）
 D_BAR_CODE：动态条码（业务卡号对应的）
-如果卡号不空，则类型不能为空
 	 */
 	@ApiField("target_card_no_type")
 	private String targetCardNoType;

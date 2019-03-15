@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付支付接口
  *
  * @author auto create
- * @since 1.0, 2019-01-07 10:51:01
+ * @since 1.0, 2019-02-25 19:19:36
  */
 public class MybankPaymentTradeNormalpayOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7747195522768539986L;
+	private static final long serialVersionUID = 7269841877951274868L;
 
 	/**
 	 * 支付金额

@@ -6,6 +6,7 @@ import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AddressInfo;
 import com.alipay.api.domain.ShopBusinessTime;
 import com.alipay.api.domain.ContactInfo;
+import com.alipay.api.domain.ShopExtInfo;
 import com.alipay.api.domain.IndustryQualificationInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -14,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-02-27 12:10:44
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2815152167979811546L;
+	private static final long serialVersionUID = 1638725135228661428L;
 
 	/** 
 	 * 品牌id
@@ -81,6 +82,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
+
+	/** 
+	 * 扩展信息列表。key值需要向对应行业的bd进行申请。
+	 */
+	@ApiListField("ext_infos")
+	@ApiField("shop_ext_info")
+	private List<ShopExtInfo> extInfos;
 
 	/** 
 	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，是商户pid；对于间连开店场景（线上、线下、直付通），是商户smid
@@ -236,6 +244,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	}
 	public String getContactPhone( ) {
 		return this.contactPhone;
+	}
+
+	public void setExtInfos(List<ShopExtInfo> extInfos) {
+		this.extInfos = extInfos;
+	}
+	public List<ShopExtInfo> getExtInfos( ) {
+		return this.extInfos;
 	}
 
 	public void setIpRoleId(String ipRoleId) {

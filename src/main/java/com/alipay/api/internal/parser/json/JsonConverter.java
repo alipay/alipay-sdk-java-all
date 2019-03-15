@@ -19,6 +19,7 @@ import com.alipay.api.SignItem;
 import com.alipay.api.internal.mapping.Converter;
 import com.alipay.api.internal.mapping.Converters;
 import com.alipay.api.internal.mapping.Reader;
+import com.alipay.api.internal.util.AlipaySignature;
 import com.alipay.api.internal.util.StringUtils;
 import com.alipay.api.internal.util.json.ExceptionErrorListener;
 import com.alipay.api.internal.util.json.JSONReader;
@@ -212,10 +213,7 @@ public class JsonConverter implements Converter {
             return null;
         }
 
-        // 签名前-逗号
-        int signDataEndIndex = indexOfSign - 1;
-
-        return body.substring(signDataStartIndex, signDataEndIndex);
+        return AlipaySignature.extractSignContent(body, signDataStartIndex);
     }
 
     /**

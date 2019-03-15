@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trust.user.auth.send response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-21 19:52:08
+ * @since 1.0, 2019-03-08 15:29:11
  */
 public class AlipayTrustUserAuthSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3768297689177141887L;
+	private static final long serialVersionUID = 8447694738843479719L;
 
 	/** 
 	 * 当授权通知发送成功时，为T；否则用业务错误码表示

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2164581732348716766L;
+	private static final long serialVersionUID = 3217737363817616776L;
 
 	/** 
 	 * 查询到的订单状态为FAIL失败或REFUND退票时，返回错误代码

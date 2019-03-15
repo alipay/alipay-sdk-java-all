@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑权益发放接口
  *
  * @author auto create
- * @since 1.0, 2019-01-29 16:50:34
+ * @since 1.0, 2019-03-03 15:08:52
  */
 public class KoubeiMarketingCampaignBenefitSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6242811824316246299L;
+	private static final long serialVersionUID = 7865649893353852239L;
+
+	/**
+	 * 身份证号码
+	 */
+	@ApiField("card_no")
+	private String cardNo;
 
 	/**
 	 * 领券渠道
@@ -26,10 +32,22 @@ public class KoubeiMarketingCampaignBenefitSendModel extends AlipayObject {
 	private String discountType;
 
 	/**
+	 * 是否需要控制发奖幂等
+	 */
+	@ApiField("idem_camp_trigger")
+	private Boolean idemCampTrigger;
+
+	/**
 	 * 触发权益的优惠id，当discount_type是ITEM的时候这个内容是商品id，当discount_type是CAMPAIGN的时候这个内容是活动id
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 支付宝的登陆账号，可以为邮箱、手机号等。
+	 */
+	@ApiField("logon_id")
+	private String logonId;
 
 	/**
 	 * 外部流水号，用于控制幂等
@@ -49,6 +67,13 @@ public class KoubeiMarketingCampaignBenefitSendModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	public String getCardNo() {
+		return this.cardNo;
+	}
+	public void setCardNo(String cardNo) {
+		this.cardNo = cardNo;
+	}
+
 	public String getChannel() {
 		return this.channel;
 	}
@@ -63,11 +88,25 @@ public class KoubeiMarketingCampaignBenefitSendModel extends AlipayObject {
 		this.discountType = discountType;
 	}
 
+	public Boolean getIdemCampTrigger() {
+		return this.idemCampTrigger;
+	}
+	public void setIdemCampTrigger(Boolean idemCampTrigger) {
+		this.idemCampTrigger = idemCampTrigger;
+	}
+
 	public String getItemId() {
 		return this.itemId;
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getLogonId() {
+		return this.logonId;
+	}
+	public void setLogonId(String logonId) {
+		this.logonId = logonId;
 	}
 
 	public String getOutBizNo() {

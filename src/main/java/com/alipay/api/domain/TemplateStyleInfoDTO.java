@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡模板样式信息
  *
  * @author auto create
- * @since 1.0, 2018-05-04 15:36:49
+ * @since 1.0, 2019-03-12 12:07:09
  */
 public class TemplateStyleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8542917153695123389L;
+	private static final long serialVersionUID = 6155893841596434178L;
 
 	/**
 	 * 背景图片Id，通过接口（alipay.offline.material.image.upload）上传图片
@@ -39,7 +39,7 @@ public class TemplateStyleInfoDTO extends AlipayObject {
 	private String bannerUrl;
 
 	/**
-	 * 背景色
+	 * 字体颜色（非背景色），只影响卡详情中部信息区域字体颜色
 	 */
 	@ApiField("bg_color")
 	private String bgColor;

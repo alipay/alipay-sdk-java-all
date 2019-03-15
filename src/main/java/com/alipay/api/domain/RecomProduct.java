@@ -7,11 +7,47 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推荐产品对象
  *
  * @author auto create
- * @since 1.0, 2018-11-23 17:26:55
+ * @since 1.0, 2019-03-12 13:09:39
  */
 public class RecomProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 7126297488799691589L;
+	private static final long serialVersionUID = 2868782572667742929L;
+
+	/**
+	 * 裸价
+	 */
+	@ApiField("base_premium")
+	private Long basePremium;
+
+	/**
+	 * 机构ID
+	 */
+	@ApiField("company_id")
+	private String companyId;
+
+	/**
+	 * 保险公司名称
+	 */
+	@ApiField("company_name")
+	private String companyName;
+
+	/**
+	 * 保险公司淘宝卖家ID
+	 */
+	@ApiField("company_seller_id")
+	private String companySellerId;
+
+	/**
+	 * 保险公司淘宝店铺名称
+	 */
+	@ApiField("company_seller_nick")
+	private String companySellerNick;
+
+	/**
+	 * 保险公司服务电话
+	 */
+	@ApiField("company_service_phone")
+	private String companyServicePhone;
 
 	/**
 	 * 最大允许购买份数
@@ -44,10 +80,58 @@ public class RecomProduct extends AlipayObject {
 	private String prodNo;
 
 	/**
+	 * 产品资源项列表
+	 */
+	@ApiField("resources")
+	private ProdResource resources;
+
+	/**
 	 * 推荐返回结果对象：1：保险产品，2：保险权益
 	 */
 	@ApiField("type")
 	private String type;
+
+	public Long getBasePremium() {
+		return this.basePremium;
+	}
+	public void setBasePremium(Long basePremium) {
+		this.basePremium = basePremium;
+	}
+
+	public String getCompanyId() {
+		return this.companyId;
+	}
+	public void setCompanyId(String companyId) {
+		this.companyId = companyId;
+	}
+
+	public String getCompanyName() {
+		return this.companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
+	public String getCompanySellerId() {
+		return this.companySellerId;
+	}
+	public void setCompanySellerId(String companySellerId) {
+		this.companySellerId = companySellerId;
+	}
+
+	public String getCompanySellerNick() {
+		return this.companySellerNick;
+	}
+	public void setCompanySellerNick(String companySellerNick) {
+		this.companySellerNick = companySellerNick;
+	}
+
+	public String getCompanyServicePhone() {
+		return this.companyServicePhone;
+	}
+	public void setCompanyServicePhone(String companyServicePhone) {
+		this.companyServicePhone = companyServicePhone;
+	}
 
 	public Long getMaxQuan() {
 		return this.maxQuan;
@@ -82,6 +166,13 @@ public class RecomProduct extends AlipayObject {
 	}
 	public void setProdNo(String prodNo) {
 		this.prodNo = prodNo;
+	}
+
+	public ProdResource getResources() {
+		return this.resources;
+	}
+	public void setResources(ProdResource resources) {
+		this.resources = resources;
 	}
 
 	public String getType() {

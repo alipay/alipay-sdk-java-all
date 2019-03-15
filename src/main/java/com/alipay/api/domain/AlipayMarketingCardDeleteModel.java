@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡删卡
  *
  * @author auto create
- * @since 1.0, 2018-01-16 19:03:12
+ * @since 1.0, 2019-03-12 15:06:13
  */
 public class AlipayMarketingCardDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4748289646524113587L;
+	private static final long serialVersionUID = 5796225823819894939L;
 
 	/**
 	 * 删卡扩展参数，json格式。
@@ -39,7 +39,7 @@ PRESENT：转赠（可以重新绑定）
 	private String reasonCode;
 
 	/**
-	 * 支付宝业务卡号，开卡接口中返回获取
+	 * 支付宝业务卡号。即开卡接口返回结果中的card_info.biz_card_no。
 	 */
 	@ApiField("target_card_no")
 	private String targetCardNo;

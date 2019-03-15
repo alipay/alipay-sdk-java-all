@@ -216,22 +216,7 @@ public class Message implements Serializable {
         if (!m.find()) {
             return null;
         }
-        int begin = m.end() - 1;
-        int end = -1;
-        int size = str.length();
-        boolean clean = true;
-        for (int i = begin + 1; i < size; ++i) {
-            if (str.charAt(i) == '{') {
-                clean = false;
-            } else if (str.charAt(i) == '}') {
-                if (clean) {
-                    end = i + 1;
-                    break;
-                }
-                clean = true;
-            }
-        }
-        return str.substring(begin, end);
+        return AlipaySignature.extractSignContent(str, m.end() - 1);
     }
 
     private static String genDataPart(Message message) {

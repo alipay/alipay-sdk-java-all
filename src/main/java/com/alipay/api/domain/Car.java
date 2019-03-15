@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车辆信息
  *
  * @author auto create
- * @since 1.0, 2017-10-24 17:03:38
+ * @since 1.0, 2019-03-14 12:35:51
  */
 public class Car extends AlipayObject {
 
-	private static final long serialVersionUID = 7689974716833198634L;
+	private static final long serialVersionUID = 7759131822144718311L;
 
 	/**
 	 * 发动机号
@@ -69,6 +69,12 @@ public class Car extends AlipayObject {
 	 */
 	@ApiField("transfer_date")
 	private String transferDate;
+
+	/**
+	 * 精友代码和精友主体编码
+	 */
+	@ApiField("vehicle_info")
+	private VehicleInfo vehicleInfo;
 
 	/**
 	 * 所有需要报价机构对应的精友码
@@ -144,6 +150,13 @@ public class Car extends AlipayObject {
 	}
 	public void setTransferDate(String transferDate) {
 		this.transferDate = transferDate;
+	}
+
+	public VehicleInfo getVehicleInfo() {
+		return this.vehicleInfo;
+	}
+	public void setVehicleInfo(VehicleInfo vehicleInfo) {
+		this.vehicleInfo = vehicleInfo;
 	}
 
 	public List<VehicleInfo> getVehicleInfoList() {

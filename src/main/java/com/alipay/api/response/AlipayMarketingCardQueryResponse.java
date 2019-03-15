@@ -9,17 +9,24 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-14 11:10:44
  */
 public class AlipayMarketingCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4831884425523837786L;
+	private static final long serialVersionUID = 8715489796111116182L;
 
 	/** 
 	 * 商户卡信息
 	 */
 	@ApiField("card_info")
 	private MerchantCard cardInfo;
+
+	/** 
+	 * 商户会员卡页面跳转到支付宝卡券详情页的pass_id，对应schema地址中的参数p，
+主要用于小程序跳往会员卡详情的链接拼接
+	 */
+	@ApiField("pass_id")
+	private String passId;
 
 	/** 
 	 * 商户会员卡页面跳转到支付宝卡券详情页面的schema地址
@@ -32,6 +39,13 @@ public class AlipayMarketingCardQueryResponse extends AlipayResponse {
 	}
 	public MerchantCard getCardInfo( ) {
 		return this.cardInfo;
+	}
+
+	public void setPassId(String passId) {
+		this.passId = passId;
+	}
+	public String getPassId( ) {
+		return this.passId;
 	}
 
 	public void setSchemaUrl(String schemaUrl) {

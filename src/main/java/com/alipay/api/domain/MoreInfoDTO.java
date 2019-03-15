@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模板栏位的扩展信息
  *
  * @author auto create
- * @since 1.0, 2017-08-21 19:55:26
+ * @since 1.0, 2019-03-12 12:07:38
  */
 public class MoreInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7813373148837599671L;
+	private static final long serialVersionUID = 4546583149466985434L;
 
 	/**
 	 * 选择opennative的时候必须填写descs的内容
@@ -30,7 +30,7 @@ public class MoreInfoDTO extends AlipayObject {
 	private String params;
 
 	/**
-	 * 二级页面标题
+	 * 二级页面标题，只有当operate_type为openNative时有效。
 	 */
 	@ApiField("title")
 	private String title;

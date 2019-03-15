@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单创建
  *
  * @author auto create
- * @since 1.0, 2019-02-02 11:19:03
+ * @since 1.0, 2019-03-01 17:54:48
  */
 public class AntMerchantExpandTradeorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3596595914333778487L;
+	private static final long serialVersionUID = 8768635252544647294L;
 
 	/**
 	 * 订单金额（单位：分）
@@ -65,6 +65,13 @@ public class AntMerchantExpandTradeorderSyncModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_type")
 	private String outBizType;
+
+	/**
+	 * 外部商户优惠信息列表
+	 */
+	@ApiListField("out_discount_infos")
+	@ApiField("out_discount_info")
+	private List<OutDiscountInfo> outDiscountInfos;
 
 	/**
 	 * 服务商、平台商在支付宝侧的商户id
@@ -156,6 +163,13 @@ public class AntMerchantExpandTradeorderSyncModel extends AlipayObject {
 	}
 	public void setOutBizType(String outBizType) {
 		this.outBizType = outBizType;
+	}
+
+	public List<OutDiscountInfo> getOutDiscountInfos() {
+		return this.outDiscountInfos;
+	}
+	public void setOutDiscountInfos(List<OutDiscountInfo> outDiscountInfos) {
+		this.outDiscountInfos = outDiscountInfos;
 	}
 
 	public String getPartnerId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡模板外部权益修改
  *
  * @author auto create
- * @since 1.0, 2018-03-13 20:26:40
+ * @since 1.0, 2019-03-06 14:41:58
  */
 public class AlipayMarketingCardBenefitModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5465685661913263769L;
+	private static final long serialVersionUID = 3855658279622537759L;
 
 	/**
 	 * 权益ID

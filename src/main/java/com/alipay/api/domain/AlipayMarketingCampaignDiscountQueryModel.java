@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 优惠活动查看
  *
  * @author auto create
- * @since 1.0, 2018-10-17 14:18:05
+ * @since 1.0, 2019-02-22 17:05:14
  */
 public class AlipayMarketingCampaignDiscountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8292197943281616278L;
+	private static final long serialVersionUID = 4821863115878883628L;
 
 	/**
 	 * 活动id

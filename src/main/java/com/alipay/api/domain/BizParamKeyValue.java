@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务参数的KeyValue键值对
  *
  * @author auto create
- * @since 1.0, 2018-01-31 22:13:25
+ * @since 1.0, 2019-03-06 21:29:49
  */
 public class BizParamKeyValue extends AlipayObject {
 
-	private static final long serialVersionUID = 1794956867233632381L;
+	private static final long serialVersionUID = 7131614785956862988L;
 
 	/**
 	 * 参数名key

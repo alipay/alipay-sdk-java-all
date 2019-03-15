@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RechargeBill extends AlipayObject {
 
-	private static final long serialVersionUID = 3237498127261219959L;
+	private static final long serialVersionUID = 1722572555762478147L;
 
 	/**
 	 * 用户充值金额，单位为元

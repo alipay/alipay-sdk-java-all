@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建业务点位
  *
  * @author auto create
- * @since 1.0, 2019-01-23 11:54:01
+ * @since 1.0, 2019-03-04 21:51:54
  */
 public class AlipayDataIotdataBusinessPointCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4199351964823635818L;
+	private static final long serialVersionUID = 3151851391244415445L;
 
 	/**
 	 * 业务id

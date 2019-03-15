@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPeUserRiskConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5557269793959578638L;
+	private static final long serialVersionUID = 7856139571833266625L;
 
 	/**
 	 * 业务action，由芝麻信用分配，目前只能取值：level_600 或者 level_650，分别对应芝麻分600分和650分的准入门槛。后续可能会有更多种取值选择，届时请联系技术支持

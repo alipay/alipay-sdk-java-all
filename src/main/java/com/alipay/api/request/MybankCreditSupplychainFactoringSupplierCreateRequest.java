@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.factoring.supplier.create request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-01 16:15:00
  */
 public class MybankCreditSupplychainFactoringSupplierCreateRequest implements AlipayRequest<MybankCreditSupplychainFactoringSupplierCreateResponse> {
 

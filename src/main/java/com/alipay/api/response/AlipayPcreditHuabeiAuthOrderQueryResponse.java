@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-02-20 22:09:49
  */
 public class AlipayPcreditHuabeiAuthOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3891116812748695171L;
+	private static final long serialVersionUID = 2265513799743943646L;
 
 	/** 
-	 * 支付宝系统中用以唯一标识用户签约记录的编号。
+	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号。
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -28,7 +28,7 @@ public class AlipayPcreditHuabeiAuthOrderQueryResponse extends AlipayResponse {
 	private String alipayUserId;
 
 	/** 
-	 * 支付宝侧花呗授权操作单据id
+	 * 支付宝侧花呗冻结解冻操作单据id
 	 */
 	@ApiField("auth_opt_id")
 	private String authOptId;
@@ -70,7 +70,7 @@ public class AlipayPcreditHuabeiAuthOrderQueryResponse extends AlipayResponse {
 	private String transAmount;
 
 	/** 
-	 * 业务操作状态，Y表示成功；N或者其它值均表示失败
+	 * 业务操作状态，Y表示成功结束；N表示失败结束；I表示进行中。
 	 */
 	@ApiField("trans_status")
 	private String transStatus;

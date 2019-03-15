@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡模板外部权益
  *
  * @author auto create
- * @since 1.0, 2017-08-21 19:55:52
+ * @since 1.0, 2019-03-12 12:07:21
  */
 public class McardTemplateBenefit extends AlipayObject {
 
-	private static final long serialVersionUID = 8674829167293154961L;
+	private static final long serialVersionUID = 4553913568291619353L;
 
 	/**
 	 * 权益描述信息
@@ -25,7 +25,8 @@ public class McardTemplateBenefit extends AlipayObject {
 	private List<String> benefitDesc;
 
 	/**
-	 * 权益结束时间
+	 * 权益结束时间。
+注：在权益开始时间和结束时间范围内的权益才会认为是有效权益进行展示。
 	 */
 	@ApiField("end_date")
 	private Date endDate;
