@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车辆信息
  *
  * @author auto create
- * @since 1.0, 2019-03-14 12:35:51
+ * @since 1.0, 2019-04-04 16:44:38
  */
 public class Car extends AlipayObject {
 
-	private static final long serialVersionUID = 7759131822144718311L;
+	private static final long serialVersionUID = 3442328653381345626L;
 
 	/**
 	 * 发动机号
@@ -57,6 +57,12 @@ public class Car extends AlipayObject {
 	 */
 	@ApiField("license_address")
 	private String licenseAddress;
+
+	/**
+	 * 座位数
+	 */
+	@ApiField("seat_number")
+	private String seatNumber;
 
 	/**
 	 * 是否过户车
@@ -136,6 +142,13 @@ public class Car extends AlipayObject {
 	}
 	public void setLicenseAddress(String licenseAddress) {
 		this.licenseAddress = licenseAddress;
+	}
+
+	public String getSeatNumber() {
+		return this.seatNumber;
+	}
+	public void setSeatNumber(String seatNumber) {
+		this.seatNumber = seatNumber;
 	}
 
 	public String getTransferCar() {

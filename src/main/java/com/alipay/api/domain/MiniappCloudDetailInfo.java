@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户金融云展示的小程序信息
  *
  * @author auto create
- * @since 1.0, 2018-10-23 14:49:08
+ * @since 1.0, 2019-04-08 20:01:02
  */
 public class MiniappCloudDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6619854363261994852L;
+	private static final long serialVersionUID = 6278482675783334392L;
 
 	/**
 	 * 小程序应用描述
@@ -48,6 +48,12 @@ public class MiniappCloudDetailInfo extends AlipayObject {
 	 */
 	@ApiField("category_names")
 	private String categoryNames;
+
+	/**
+	 * 小程序创建时间
+	 */
+	@ApiField("create_time")
+	private String createTime;
 
 	/**
 	 * 小程序应用的appid
@@ -95,6 +101,13 @@ public class MiniappCloudDetailInfo extends AlipayObject {
 	}
 	public void setCategoryNames(String categoryNames) {
 		this.categoryNames = categoryNames;
+	}
+
+	public String getCreateTime() {
+		return this.createTime;
+	}
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
 	}
 
 	public String getMiniAppid() {

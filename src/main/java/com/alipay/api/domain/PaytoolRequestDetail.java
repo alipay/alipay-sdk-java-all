@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单支付工具请求信息，支持现金、商户预付卡、支付宝、银行卡、其他第三方支付工具信息。
  *
  * @author auto create
- * @since 1.0, 2019-02-27 23:31:57
+ * @since 1.0, 2019-04-09 16:58:09
  */
 public class PaytoolRequestDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6863376587686836659L;
+	private static final long serialVersionUID = 3126319619454425296L;
 
 	/**
 	 * 支付工具金额。单位为元，精确到小数点后两位，取值范围[0.01,100000000]

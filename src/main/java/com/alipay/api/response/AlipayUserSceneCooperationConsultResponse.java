@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.MemberBenefitInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.scene.cooperation.consult response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-07 11:42:39
+ * @since 1.0, 2019-04-10 14:36:42
  */
 public class AlipayUserSceneCooperationConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6423383269622571458L;
+	private static final long serialVersionUID = 8663416279917444869L;
+
+	/** 
+	 * 脱敏后的支付宝登录号
+	 */
+	@ApiField("alipay_logon_id")
+	private String alipayLogonId;
+
+	/** 
+	 * 是否是新用户，true/false。
+	 */
+	@ApiField("app_new")
+	private Boolean appNew;
+
+	/** 
+	 * 会员权益信息列表
+	 */
+	@ApiListField("benefit_info_list")
+	@ApiField("member_benefit_info")
+	private List<MemberBenefitInfo> benefitInfoList;
 
 	/** 
 	 * true表示该用户运营有价值；false表示没有价值
@@ -25,6 +47,27 @@ public class AlipayUserSceneCooperationConsultResponse extends AlipayResponse {
 	 */
 	@ApiField("invite_result")
 	private Boolean inviteResult;
+
+	public void setAlipayLogonId(String alipayLogonId) {
+		this.alipayLogonId = alipayLogonId;
+	}
+	public String getAlipayLogonId( ) {
+		return this.alipayLogonId;
+	}
+
+	public void setAppNew(Boolean appNew) {
+		this.appNew = appNew;
+	}
+	public Boolean getAppNew( ) {
+		return this.appNew;
+	}
+
+	public void setBenefitInfoList(List<MemberBenefitInfo> benefitInfoList) {
+		this.benefitInfoList = benefitInfoList;
+	}
+	public List<MemberBenefitInfo> getBenefitInfoList( ) {
+		return this.benefitInfoList;
+	}
 
 	public void setConsultResult(Boolean consultResult) {
 		this.consultResult = consultResult;

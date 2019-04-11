@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.health.activity.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-02-26 17:19:27
+ * @since 1.0, 2019-04-09 09:31:19
  */
 public class AlipayInsSceneHealthActivitySyncRequest implements AlipayRequest<AlipayInsSceneHealthActivitySyncResponse> {
 

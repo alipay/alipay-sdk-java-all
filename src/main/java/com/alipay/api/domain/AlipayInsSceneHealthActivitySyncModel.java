@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneHealthActivitySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5323978292123418831L;
+	private static final long serialVersionUID = 7517487631427314296L;
 
 	/**
 	 * 活动编号参数，比如01

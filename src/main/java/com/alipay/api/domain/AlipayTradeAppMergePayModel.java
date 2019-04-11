@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * app合并支付接口
  *
  * @author auto create
- * @since 1.0, 2017-03-14 19:15:40
+ * @since 1.0, 2019-04-01 18:20:18
  */
 public class AlipayTradeAppMergePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7558251258194853916L;
+	private static final long serialVersionUID = 4848897279645864997L;
 
 	/**
 	 * 如果预创建成功，支付宝返回该预下单号，后续商户使用该预下单号请求支付宝支付接口

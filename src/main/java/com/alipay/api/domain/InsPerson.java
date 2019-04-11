@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险干系人
  *
  * @author auto create
- * @since 1.0, 2018-10-27 17:47:28
+ * @since 1.0, 2019-03-20 22:16:25
  */
 public class InsPerson extends AlipayObject {
 
-	private static final long serialVersionUID = 5578774197587796232L;
+	private static final long serialVersionUID = 3227437848137968531L;
 
 	/**
 	 * 地址
@@ -75,6 +75,12 @@ public class InsPerson extends AlipayObject {
 	 */
 	@ApiField("gender")
 	private String gender;
+
+	/**
+	 * 1:卖家；2:支付人;
+	 */
+	@ApiField("identity_type")
+	private String identityType;
 
 	/**
 	 * 国籍
@@ -168,6 +174,13 @@ public class InsPerson extends AlipayObject {
 	}
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+
+	public String getIdentityType() {
+		return this.identityType;
+	}
+	public void setIdentityType(String identityType) {
+		this.identityType = identityType;
 	}
 
 	public String getNationality() {

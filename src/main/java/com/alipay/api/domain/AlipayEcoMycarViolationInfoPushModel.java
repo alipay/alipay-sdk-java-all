@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV推送新违章信息
  *
  * @author auto create
- * @since 1.0, 2017-09-15 16:29:47
+ * @since 1.0, 2019-03-28 10:34:24
  */
 public class AlipayEcoMycarViolationInfoPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5735439371493948955L;
+	private static final long serialVersionUID = 5552467211329844443L;
 
 	/**
 	 * 1:可在线处理, 2:不可在线处理, 3:需查询确定

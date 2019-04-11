@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.cdp.advertise.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-19 12:04:02
  */
 public class AlipayMarketingCdpAdvertiseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5475426374364646893L;
+	private static final long serialVersionUID = 2637393251943256975L;
 
 	/** 
 	 * 用户点击广告后，跳转URL地址, 协议必须为HTTPS。广告类型为PIC时，需要设置该值。对于类型为URL不生效

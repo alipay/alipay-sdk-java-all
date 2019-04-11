@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提供给ISV和开发者查询广告的接口
  *
  * @author auto create
- * @since 1.0, 2017-08-18 15:36:18
+ * @since 1.0, 2019-03-19 12:04:02
  */
 public class AlipayMarketingCdpAdvertiseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1144193679352256145L;
+	private static final long serialVersionUID = 2283246311651299832L;
 
 	/**
 	 * 广告Id，唯一标识一条广告

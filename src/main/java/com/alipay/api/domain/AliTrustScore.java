@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AliTrustScore extends AlipayObject {
 
-	private static final long serialVersionUID = 4842291336775216649L;
+	private static final long serialVersionUID = 7889767985521271271L;
 
 	/**
 	 * 芝麻分

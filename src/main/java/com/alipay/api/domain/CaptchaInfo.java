@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CaptchaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4588743365166354119L;
+	private static final long serialVersionUID = 5595332375537771966L;
 
 	/**
 	 * 图片特殊描述信息

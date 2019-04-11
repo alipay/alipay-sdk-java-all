@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序版本信息
  *
  * @author auto create
- * @since 1.0, 2018-12-17 17:25:52
+ * @since 1.0, 2019-03-29 11:35:12
  */
 public class MiniAppVersionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1326497886758846382L;
+	private static final long serialVersionUID = 2683875556753878337L;
+
+	/**
+	 * Android客户端版本号信息
+	 */
+	@ApiField("android_client_version_info")
+	private MiniAppClientVersionInfo androidClientVersionInfo;
 
 	/**
 	 * 版本号
@@ -36,6 +42,12 @@ public class MiniAppVersionInfo extends AlipayObject {
 	 */
 	@ApiField("coverage_rate")
 	private Long coverageRate;
+
+	/**
+	 * iOS客户端版本号信息
+	 */
+	@ApiField("ios_client_version_info")
+	private MiniAppClientVersionInfo iosClientVersionInfo;
 
 	/**
 	 * 小程序预发包信息
@@ -66,6 +78,13 @@ OFFLINE:已下架
 	@ApiField("status")
 	private String status;
 
+	public MiniAppClientVersionInfo getAndroidClientVersionInfo() {
+		return this.androidClientVersionInfo;
+	}
+	public void setAndroidClientVersionInfo(MiniAppClientVersionInfo androidClientVersionInfo) {
+		this.androidClientVersionInfo = androidClientVersionInfo;
+	}
+
 	public String getAppVersion() {
 		return this.appVersion;
 	}
@@ -92,6 +111,13 @@ OFFLINE:已下架
 	}
 	public void setCoverageRate(Long coverageRate) {
 		this.coverageRate = coverageRate;
+	}
+
+	public MiniAppClientVersionInfo getIosClientVersionInfo() {
+		return this.iosClientVersionInfo;
+	}
+	public void setIosClientVersionInfo(MiniAppClientVersionInfo iosClientVersionInfo) {
+		this.iosClientVersionInfo = iosClientVersionInfo;
 	}
 
 	public MiniAppPackageInfo getPreonlinePackage() {

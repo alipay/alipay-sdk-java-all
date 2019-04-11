@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代理
  *
  * @author auto create
- * @since 1.0, 2019-03-14 12:36:12
+ * @since 1.0, 2019-04-04 11:16:09
  */
 public class AgentOrganization extends AlipayObject {
 
-	private static final long serialVersionUID = 2292735154432144733L;
+	private static final long serialVersionUID = 7259827829898479128L;
 
 	/**
 	 * 代理机构(ISV)蚂蚁编码，组织入驻蚂蚁生成的cid

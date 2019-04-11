@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单内容变更接口
  *
  * @author auto create
- * @since 1.0, 2017-09-15 16:27:00
+ * @since 1.0, 2019-03-28 10:41:56
  */
 public class AlipayEcoMycarMaintainBizorderUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6246598697722913464L;
+	private static final long serialVersionUID = 6753873913645767433L;
 
 	/**
 	 * 预约确认时间yyyy-MM-dd HH:mm:ss。门店确认预约时间。门店确认后，预约流程生效，用户可到店服务。

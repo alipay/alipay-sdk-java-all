@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主营销平台券核销结果通知
  *
  * @author auto create
- * @since 1.0, 2017-09-15 16:29:58
+ * @since 1.0, 2019-03-28 10:34:14
  */
 public class AlipayEcoMycarPromoTicketPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7439368717322978352L;
+	private static final long serialVersionUID = 4135695456515732923L;
 
 	/**
 	 * 核销流水

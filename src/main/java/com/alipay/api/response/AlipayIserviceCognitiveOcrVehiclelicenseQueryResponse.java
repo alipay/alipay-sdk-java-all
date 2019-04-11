@@ -8,11 +8,29 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.ocr.vehiclelicense.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-22 13:00:00
  */
 public class AlipayIserviceCognitiveOcrVehiclelicenseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4579172466372878411L;
+	private static final long serialVersionUID = 1876718285635295855L;
+
+	/** 
+	 * 核定载质量
+	 */
+	@ApiField("approved_load")
+	private String approvedLoad;
+
+	/** 
+	 * 核定载人数
+	 */
+	@ApiField("approved_passenger_capacity")
+	private String approvedPassengerCapacity;
+
+	/** 
+	 * 燃油类型
+	 */
+	@ApiField("energy_type")
+	private String energyType;
 
 	/** 
 	 * 发动机号码
@@ -27,6 +45,24 @@ public class AlipayIserviceCognitiveOcrVehiclelicenseQueryResponse extends Alipa
 	private String errorContent;
 
 	/** 
+	 * 档案编号
+	 */
+	@ApiField("file_no")
+	private String fileNo;
+
+	/** 
+	 * 总质量
+	 */
+	@ApiField("gross_mass")
+	private String grossMass;
+
+	/** 
+	 * 副页备注
+	 */
+	@ApiField("inspection_record")
+	private String inspectionRecord;
+
+	/** 
 	 * 发证时间
 	 */
 	@ApiField("issue_date")
@@ -37,6 +73,12 @@ public class AlipayIserviceCognitiveOcrVehiclelicenseQueryResponse extends Alipa
 	 */
 	@ApiField("model")
 	private String model;
+
+	/** 
+	 * 4587X1798X1463mm
+	 */
+	@ApiField("overall_dimension")
+	private String overallDimension;
 
 	/** 
 	 * 所有人
@@ -76,6 +118,12 @@ false:识别失败
 	private String traceId;
 
 	/** 
+	 * 1255kg
+	 */
+	@ApiField("unladen_mass")
+	private String unladenMass;
+
+	/** 
 	 * 使用性质
 	 */
 	@ApiField("use_character")
@@ -93,6 +141,27 @@ false:识别失败
 	@ApiField("vin")
 	private String vin;
 
+	public void setApprovedLoad(String approvedLoad) {
+		this.approvedLoad = approvedLoad;
+	}
+	public String getApprovedLoad( ) {
+		return this.approvedLoad;
+	}
+
+	public void setApprovedPassengerCapacity(String approvedPassengerCapacity) {
+		this.approvedPassengerCapacity = approvedPassengerCapacity;
+	}
+	public String getApprovedPassengerCapacity( ) {
+		return this.approvedPassengerCapacity;
+	}
+
+	public void setEnergyType(String energyType) {
+		this.energyType = energyType;
+	}
+	public String getEnergyType( ) {
+		return this.energyType;
+	}
+
 	public void setEngineNum(String engineNum) {
 		this.engineNum = engineNum;
 	}
@@ -107,6 +176,27 @@ false:识别失败
 		return this.errorContent;
 	}
 
+	public void setFileNo(String fileNo) {
+		this.fileNo = fileNo;
+	}
+	public String getFileNo( ) {
+		return this.fileNo;
+	}
+
+	public void setGrossMass(String grossMass) {
+		this.grossMass = grossMass;
+	}
+	public String getGrossMass( ) {
+		return this.grossMass;
+	}
+
+	public void setInspectionRecord(String inspectionRecord) {
+		this.inspectionRecord = inspectionRecord;
+	}
+	public String getInspectionRecord( ) {
+		return this.inspectionRecord;
+	}
+
 	public void setIssueDate(String issueDate) {
 		this.issueDate = issueDate;
 	}
@@ -119,6 +209,13 @@ false:识别失败
 	}
 	public String getModel( ) {
 		return this.model;
+	}
+
+	public void setOverallDimension(String overallDimension) {
+		this.overallDimension = overallDimension;
+	}
+	public String getOverallDimension( ) {
+		return this.overallDimension;
 	}
 
 	public void setOwner(String owner) {
@@ -161,6 +258,13 @@ false:识别失败
 	}
 	public String getTraceId( ) {
 		return this.traceId;
+	}
+
+	public void setUnladenMass(String unladenMass) {
+		this.unladenMass = unladenMass;
+	}
+	public String getUnladenMass( ) {
+		return this.unladenMass;
 	}
 
 	public void setUseCharacter(String useCharacter) {

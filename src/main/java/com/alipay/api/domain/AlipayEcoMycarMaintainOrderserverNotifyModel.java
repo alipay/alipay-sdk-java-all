@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单内容变更接口
  *
  * @author auto create
- * @since 1.0, 2017-09-15 16:27:48
+ * @since 1.0, 2019-03-28 10:40:31
  */
 public class AlipayEcoMycarMaintainOrderserverNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7116123959778568214L;
+	private static final long serialVersionUID = 8353586981846978252L;
 
 	/**
 	 * 更改金额。变更项影响金额。金额增加为正数，金额减少为负数。金额单位(元)，保留两位小数。

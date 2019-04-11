@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享支付接口
  *
  * @author auto create
- * @since 1.0, 2019-03-05 14:25:39
+ * @since 1.0, 2019-04-01 15:15:18
  */
 public class AlipayPcreditHuabeiAuthSettleApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6483921754266988863L;
+	private static final long serialVersionUID = 6377774471199163564L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。
@@ -30,6 +30,12 @@ public class AlipayPcreditHuabeiAuthSettleApplyModel extends AlipayObject {
 	 */
 	@ApiField("extend_params")
 	private ExtraParams extendParams;
+
+	/**
+	 * 该参数控制结算完成之后的操作，true或者不填代表解约，false代表不解约
+	 */
+	@ApiField("need_terminated")
+	private String needTerminated;
 
 	/**
 	 * 商户本次操作的请求流水号，用于标示请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。
@@ -68,6 +74,13 @@ public class AlipayPcreditHuabeiAuthSettleApplyModel extends AlipayObject {
 	}
 	public void setExtendParams(ExtraParams extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public String getNeedTerminated() {
+		return this.needTerminated;
+	}
+	public void setNeedTerminated(String needTerminated) {
+		this.needTerminated = needTerminated;
 	}
 
 	public String getOutRequestNo() {

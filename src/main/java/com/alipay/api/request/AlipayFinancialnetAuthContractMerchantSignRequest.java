@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.contract.merchant.sign request
  * 
  * @author auto create
- * @since 1.0, 2019-01-11 17:24:27
+ * @since 1.0, 2019-03-22 16:16:41
  */
 public class AlipayFinancialnetAuthContractMerchantSignRequest implements AlipayRequest<AlipayFinancialnetAuthContractMerchantSignResponse> {
 

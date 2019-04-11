@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员电子证件信息保存
  *
  * @author auto create
- * @since 1.0, 2017-11-23 17:08:26
+ * @since 1.0, 2019-03-21 16:25:37
  */
 public class AlipayUserCertdocSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7177428341292148512L;
+	private static final long serialVersionUID = 3719696958762185849L;
 
 	/**
 	 * 证件号
@@ -67,6 +67,12 @@ REAL_ESTATE_WARRANTS:不动产证;
 	private List<OpenCertPic> picList;
 
 	/**
+	 * 证件状态，T或者空代表正常，F代表删除。
+	 */
+	@ApiField("status")
+	private String status;
+
+	/**
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("user_id")
@@ -105,6 +111,13 @@ REAL_ESTATE_WARRANTS:不动产证;
 	}
 	public void setPicList(List<OpenCertPic> picList) {
 		this.picList = picList;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getUserId() {

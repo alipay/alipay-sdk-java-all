@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2019-01-22 21:13:49
+ * @since 1.0, 2019-04-03 12:13:21
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4221412994526257494L;
+	private static final long serialVersionUID = 6861465152879671278L;
+
+	/**
+	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
+	 */
+	@ApiField("advance_payment_type")
+	private String advancePaymentType;
 
 	/**
 	 * 代扣业务需要传入协议相关信息
@@ -58,7 +64,7 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	 * 商户传入业务信息，具体值要和支付宝约定，应用于安全，营销等参数直传场景，格式为json格式
 	 */
 	@ApiField("business_params")
-	private String businessParams;
+	private BusinessParams businessParams;
 
 	/**
 	 * 买家的支付宝用户id，如果为空，会从传入了码值信息中获取买家ID
@@ -216,6 +222,13 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;
 
+	public String getAdvancePaymentType() {
+		return this.advancePaymentType;
+	}
+	public void setAdvancePaymentType(String advancePaymentType) {
+		this.advancePaymentType = advancePaymentType;
+	}
+
 	public AgreementParams getAgreementParams() {
 		return this.agreementParams;
 	}
@@ -258,10 +271,10 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 		this.body = body;
 	}
 
-	public String getBusinessParams() {
+	public BusinessParams getBusinessParams() {
 		return this.businessParams;
 	}
-	public void setBusinessParams(String businessParams) {
+	public void setBusinessParams(BusinessParams businessParams) {
 		this.businessParams = businessParams;
 	}
 

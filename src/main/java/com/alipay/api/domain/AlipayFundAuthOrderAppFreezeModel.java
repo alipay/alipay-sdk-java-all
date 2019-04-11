@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上资金授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2019-01-15 13:37:52
+ * @since 1.0, 2019-03-23 23:13:16
  */
 public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2374455579317487495L;
+	private static final long serialVersionUID = 7331796284429613536L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -76,6 +76,24 @@ public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 场景码，用于区分预授权不同业务场景。如：当面预授权通用场景（O2O_AUTH_COMMON_SCENE）、支付宝预授权通用场景（ONLINE_AUTH_COMMON_SCENE）、境外当面预授权通用场景（OVERSEAS_O2O_AUTH_COMMON_SCENE）、境外支付预授权通用场景（OVERSEAS_ONLINE_AUTH_COMMON_SCENE）等
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
+
+	/**
+	 * 商户指定的结算币种。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
+	 */
+	@ApiField("settle_currency")
+	private String settleCurrency;
+
+	/**
+	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP, 人民币：CNY
+	 */
+	@ApiField("trans_currency")
+	private String transCurrency;
 
 	public String getAmount() {
 		return this.amount;
@@ -145,6 +163,27 @@ public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
+	}
+
+	public String getSettleCurrency() {
+		return this.settleCurrency;
+	}
+	public void setSettleCurrency(String settleCurrency) {
+		this.settleCurrency = settleCurrency;
+	}
+
+	public String getTransCurrency() {
+		return this.transCurrency;
+	}
+	public void setTransCurrency(String transCurrency) {
+		this.transCurrency = transCurrency;
 	}
 
 }

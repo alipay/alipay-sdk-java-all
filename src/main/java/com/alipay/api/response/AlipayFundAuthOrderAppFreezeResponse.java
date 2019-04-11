@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.order.app.freeze response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-15 13:37:52
+ * @since 1.0, 2019-03-25 11:25:00
  */
 public class AlipayFundAuthOrderAppFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2744693391787627867L;
+	private static final long serialVersionUID = 4632195585198875118L;
 
 	/** 
 	 * 本次操作冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -86,6 +86,12 @@ CLOSED：关闭
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP, 人民币：CNY
+	 */
+	@ApiField("trans_currency")
+	private String transCurrency;
 
 	public void setAmount(String amount) {
 		this.amount = amount;
@@ -162,6 +168,13 @@ CLOSED：关闭
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTransCurrency(String transCurrency) {
+		this.transCurrency = transCurrency;
+	}
+	public String getTransCurrency( ) {
+		return this.transCurrency;
 	}
 
 }

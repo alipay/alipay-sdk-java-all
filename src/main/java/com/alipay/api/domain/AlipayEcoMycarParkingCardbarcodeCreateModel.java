@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车卡生成二维码
  *
  * @author auto create
- * @since 1.0, 2017-08-25 17:10:39
+ * @since 1.0, 2019-03-28 10:39:17
  */
 public class AlipayEcoMycarParkingCardbarcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3728555977885886826L;
+	private static final long serialVersionUID = 1591278653914479679L;
 
 	/**
 	 * 设备商订单id

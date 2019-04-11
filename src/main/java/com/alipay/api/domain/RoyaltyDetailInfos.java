@@ -4,20 +4,20 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 分账明细
+ * 修复分账金额amount的类型，原来Number类型不合理，导致商户无法通过sdk集成，需改成Price类型
  *
  * @author auto create
- * @since 1.0, 2018-09-27 15:29:09
+ * @since 1.0, 2019-04-02 16:24:39
  */
 public class RoyaltyDetailInfos extends AlipayObject {
 
-	private static final long serialVersionUID = 7326459898675912462L;
+	private static final long serialVersionUID = 1464284272433389358L;
 
 	/**
 	 * 分账的金额，单位为元
 	 */
 	@ApiField("amount")
-	private Long amount;
+	private String amount;
 
 	/**
 	 * 分账的比例，值为20代表按20%的比例分账
@@ -84,10 +84,10 @@ storeId：分账到门店对应的银行卡编号。
 	@ApiField("trans_out_type")
 	private String transOutType;
 
-	public Long getAmount() {
+	public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(Long amount) {
+	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提供给ISV、开发者创建广告的接口，创建广告后投放渠道包括钱包APP，聚牛APP等，投放支持的APP应用
  *
  * @author auto create
- * @since 1.0, 2017-08-18 15:35:43
+ * @since 1.0, 2019-03-19 12:04:14
  */
 public class AlipayMarketingCdpAdvertiseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4412412884911344814L;
+	private static final long serialVersionUID = 7575532661624995656L;
 
 	/**
 	 * 用户点击广告后，跳转URL地址，必须为https协议。广告类型为PIC时，需要设置该值。对于类型为URL不生效。

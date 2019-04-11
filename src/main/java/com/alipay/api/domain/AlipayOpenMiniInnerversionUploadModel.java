@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建构建任务
  *
  * @author auto create
- * @since 1.0, 2018-12-17 19:24:42
+ * @since 1.0, 2019-04-10 13:57:37
  */
 public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5327299284453638775L;
+	private static final long serialVersionUID = 1771717544995439584L;
 
 	/**
 	 * IDE开发打包类型
@@ -36,6 +36,30 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	 */
 	@ApiField("build_main_url")
 	private String buildMainUrl;
+
+	/**
+	 * 最大Android客户端版本号
+	 */
+	@ApiField("build_max_android_client_version")
+	private String buildMaxAndroidClientVersion;
+
+	/**
+	 * 最大iOS客户单版本号
+	 */
+	@ApiField("build_max_ios_client_version")
+	private String buildMaxIosClientVersion;
+
+	/**
+	 * 最小Android客户端版本号
+	 */
+	@ApiField("build_min_android_client_version")
+	private String buildMinAndroidClientVersion;
+
+	/**
+	 * 最小iOS客户单版本号
+	 */
+	@ApiField("build_min_ios_client_version")
+	private String buildMinIosClientVersion;
 
 	/**
 	 * 源码包MD5
@@ -123,6 +147,34 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	}
 	public void setBuildMainUrl(String buildMainUrl) {
 		this.buildMainUrl = buildMainUrl;
+	}
+
+	public String getBuildMaxAndroidClientVersion() {
+		return this.buildMaxAndroidClientVersion;
+	}
+	public void setBuildMaxAndroidClientVersion(String buildMaxAndroidClientVersion) {
+		this.buildMaxAndroidClientVersion = buildMaxAndroidClientVersion;
+	}
+
+	public String getBuildMaxIosClientVersion() {
+		return this.buildMaxIosClientVersion;
+	}
+	public void setBuildMaxIosClientVersion(String buildMaxIosClientVersion) {
+		this.buildMaxIosClientVersion = buildMaxIosClientVersion;
+	}
+
+	public String getBuildMinAndroidClientVersion() {
+		return this.buildMinAndroidClientVersion;
+	}
+	public void setBuildMinAndroidClientVersion(String buildMinAndroidClientVersion) {
+		this.buildMinAndroidClientVersion = buildMinAndroidClientVersion;
+	}
+
+	public String getBuildMinIosClientVersion() {
+		return this.buildMinIosClientVersion;
+	}
+	public void setBuildMinIosClientVersion(String buildMinIosClientVersion) {
+		this.buildMinIosClientVersion = buildMinIosClientVersion;
 	}
 
 	public String getBuildPackageMd5() {

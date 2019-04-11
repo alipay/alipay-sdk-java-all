@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费直付通对账单下载接口
  *
  * @author auto create
- * @since 1.0, 2019-01-08 21:30:05
+ * @since 1.0, 2019-03-17 14:43:45
  */
 public class AlipayEcoEduKtDownloadurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5224216629121598582L;
+	private static final long serialVersionUID = 2573664172748589423L;
 
 	/**
 	 * 账单时间：日账单格式为yyyy-MM-dd

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询评论信息
  *
  * @author auto create
- * @since 1.0, 2017-09-15 16:28:11
+ * @since 1.0, 2019-03-28 10:36:59
  */
 public class AlipayEcoMycarMerchantshopCommentBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2875688659625326481L;
+	private static final long serialVersionUID = 2793551988427478232L;
 
 	/**
 	 * 当前页号（从1开始）

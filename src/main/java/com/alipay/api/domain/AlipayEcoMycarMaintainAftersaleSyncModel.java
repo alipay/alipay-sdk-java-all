@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV同步售后单状态
  *
  * @author auto create
- * @since 1.0, 2017-09-15 16:28:26
+ * @since 1.0, 2019-03-28 10:40:23
  */
 public class AlipayEcoMycarMaintainAftersaleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5498474287678692362L;
+	private static final long serialVersionUID = 6798793746698366611L;
 
 	/**
 	 * 车主平台售后编号

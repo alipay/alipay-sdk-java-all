@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingUserulePidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8466286499321985985L;
+	private static final long serialVersionUID = 7228958976472794526L;
 
 	/** 
 	 * 满足条件的所有pid，多个pid使用英文逗号隔开

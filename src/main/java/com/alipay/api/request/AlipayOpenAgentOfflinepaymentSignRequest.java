@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.offlinepayment.sign request
  * 
  * @author auto create
- * @since 1.0, 2019-02-27 16:20:01
+ * @since 1.0, 2019-03-26 21:45:00
  */
 public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadRequest<AlipayOpenAgentOfflinepaymentSignResponse> {
 
@@ -46,9 +46,8 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	private Boolean longTerm;
 
 	/** 
-	* 所属MCCCode，详情可参考
-<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1
-">商家经营类目</a> 中的“经营类目编码”
+	* 所属MCCCode，可参考
+<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1">商家经营类目</a> 中的“经营类目编码”
 	 */
 	private String mccCode;
 
@@ -64,8 +63,7 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 
 	/** 
 	* 企业特殊资质图片，可参考
-<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1
-">商家经营类目</a> 中的“需要的特殊资质证书”，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1">商家经营类目</a> 中的“需要的特殊资质证书”，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem specialLicensePic;
 

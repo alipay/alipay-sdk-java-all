@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketShopBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2836473746939394918L;
+	private static final long serialVersionUID = 2172259958691461624L;
 
 	/**
 	 * 页码，第一页传入"1"，默认500个结果为一页。此参数必须是大于0的正整数，为0时将查询报错。

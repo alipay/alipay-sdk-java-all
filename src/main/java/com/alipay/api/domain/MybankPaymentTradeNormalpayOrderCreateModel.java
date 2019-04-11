@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付创建订单
  *
  * @author auto create
- * @since 1.0, 2019-02-25 19:20:11
+ * @since 1.0, 2019-03-25 15:06:23
  */
 public class MybankPaymentTradeNormalpayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5424736897678254692L;
+	private static final long serialVersionUID = 5611238756435643748L;
 
 	/**
 	 * 订单金额
@@ -32,6 +32,12 @@ public class MybankPaymentTradeNormalpayOrderCreateModel extends AlipayObject {
 	private String bizNo;
 
 	/**
+	 * 用户的网商卡号
+	 */
+	@ApiField("card_no")
+	private String cardNo;
+
+	/**
 	 * 币种
 	 */
 	@ApiField("currency_value")
@@ -39,6 +45,8 @@ public class MybankPaymentTradeNormalpayOrderCreateModel extends AlipayObject {
 
 	/**
 	 * 扩展参数，内容是JSON格式，并用urlconde编码，按场景约定具体字段
+ETC场景：
+etc_corp：高速公司名称
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
@@ -92,6 +100,13 @@ public class MybankPaymentTradeNormalpayOrderCreateModel extends AlipayObject {
 	}
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
+	}
+
+	public String getCardNo() {
+		return this.cardNo;
+	}
+	public void setCardNo(String cardNo) {
+		this.cardNo = cardNo;
 	}
 
 	public String getCurrencyValue() {

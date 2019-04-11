@@ -7,17 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务市场订单同步
  *
  * @author auto create
- * @since 1.0, 2019-03-12 15:34:11
+ * @since 1.0, 2019-04-01 14:13:00
  */
 public class AlipayOpenServicemarketOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4282763485928824173L;
+	private static final long serialVersionUID = 8179887568676413559L;
+
+	/**
+	 * 实际支付金额，单位分
+	 */
+	@ApiField("actual_amount")
+	private Long actualAmount;
 
 	/**
 	 * 购买者uid
 	 */
 	@ApiField("consumer_uid")
 	private String consumerUid;
+
+	/**
+	 * 优惠券抵扣金额，单位分
+	 */
+	@ApiField("coupon_amount")
+	private Long couponAmount;
+
+	/**
+	 * 商品折扣金额，单位分
+	 */
+	@ApiField("discount_amount")
+	private Long discountAmount;
 
 	/**
 	 * 有业务含义的外部订单号，用做页面跳转等操作
@@ -56,16 +74,43 @@ public class AlipayOpenServicemarketOrderSyncModel extends AlipayObject {
 	private String orderType;
 
 	/**
+	 * 商品原始金额，单位分
+	 */
+	@ApiField("original_amount")
+	private Long originalAmount;
+
+	/**
 	 * 幂等参数，比如某种业务标准外部订单号,比如交易外部订单号，代表商户端自己订单号
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	public Long getActualAmount() {
+		return this.actualAmount;
+	}
+	public void setActualAmount(Long actualAmount) {
+		this.actualAmount = actualAmount;
+	}
 
 	public String getConsumerUid() {
 		return this.consumerUid;
 	}
 	public void setConsumerUid(String consumerUid) {
 		this.consumerUid = consumerUid;
+	}
+
+	public Long getCouponAmount() {
+		return this.couponAmount;
+	}
+	public void setCouponAmount(Long couponAmount) {
+		this.couponAmount = couponAmount;
+	}
+
+	public Long getDiscountAmount() {
+		return this.discountAmount;
+	}
+	public void setDiscountAmount(Long discountAmount) {
+		this.discountAmount = discountAmount;
 	}
 
 	public String getFinTechOrderNo() {
@@ -108,6 +153,13 @@ public class AlipayOpenServicemarketOrderSyncModel extends AlipayObject {
 	}
 	public void setOrderType(String orderType) {
 		this.orderType = orderType;
+	}
+
+	public Long getOriginalAmount() {
+		return this.originalAmount;
+	}
+	public void setOriginalAmount(Long originalAmount) {
+		this.originalAmount = originalAmount;
 	}
 
 	public String getOutBizNo() {

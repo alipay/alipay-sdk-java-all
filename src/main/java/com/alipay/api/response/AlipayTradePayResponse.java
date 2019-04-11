@@ -13,11 +13,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2019-04-03 15:00:01
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4837986548214161829L;
+	private static final long serialVersionUID = 5421729156895918733L;
+
+	/** 
+	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
+	 */
+	@ApiField("advance_amount")
+	private String advanceAmount;
 
 	/** 
 	 * 异步支付模式，先享后付业务会返回该参数，目前有三种值：
@@ -230,6 +236,13 @@ SYNC_DIRECT_PAY(同步直接扣款);
 	@ApiListField("voucher_detail_list")
 	@ApiField("voucher_detail")
 	private List<VoucherDetail> voucherDetailList;
+
+	public void setAdvanceAmount(String advanceAmount) {
+		this.advanceAmount = advanceAmount;
+	}
+	public String getAdvanceAmount( ) {
+		return this.advanceAmount;
+	}
 
 	public void setAsyncPaymentMode(String asyncPaymentMode) {
 		this.asyncPaymentMode = asyncPaymentMode;

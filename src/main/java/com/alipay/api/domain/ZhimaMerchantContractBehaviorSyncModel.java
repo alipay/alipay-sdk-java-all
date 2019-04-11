@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用承诺消费用户履约信息同步接口
  *
  * @author auto create
- * @since 1.0, 2018-12-27 15:43:29
+ * @since 1.0, 2019-03-21 20:37:48
  */
 public class ZhimaMerchantContractBehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4237412985193688953L;
+	private static final long serialVersionUID = 1617649272655796161L;
 
 	/**
 	 * 履约动作发生时间，如果重试需要保证为首次动作发生的时间
@@ -45,6 +45,12 @@ CANCEL - 取消履约
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	/**
+	 * 交易订单金额，单位为分，表示该次履约的订单金额，与trade_no配合使用
+	 */
+	@ApiField("trade_order_amount")
+	private String tradeOrderAmount;
 
 	/**
 	 * 蚂蚁统一会员ID，唯一键标识用户身份。
@@ -85,6 +91,13 @@ CANCEL - 取消履约
 	}
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
+	}
+
+	public String getTradeOrderAmount() {
+		return this.tradeOrderAmount;
+	}
+	public void setTradeOrderAmount(String tradeOrderAmount) {
+		this.tradeOrderAmount = tradeOrderAmount;
 	}
 
 	public String getUserId() {

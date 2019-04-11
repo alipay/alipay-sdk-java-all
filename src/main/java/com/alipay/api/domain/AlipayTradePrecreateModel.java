@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2019-02-18 17:28:32
+ * @since 1.0, 2019-04-03 12:13:12
  */
 public class AlipayTradePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4192257634353366967L;
+	private static final long serialVersionUID = 6338629917868831871L;
 
 	/**
 	 * 支付宝店铺的门店ID
@@ -33,7 +33,7 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	 * 商户传入业务信息，具体值要和支付宝约定，应用于安全，营销等参数直传场景，格式为json格式
 	 */
 	@ApiField("business_params")
-	private String businessParams;
+	private BusinessParams businessParams;
 
 	/**
 	 * 买家支付宝账号
@@ -101,6 +101,15 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 销售产品码。
+如果签约的是当面付快捷版，则传OFFLINE_PAYMENT;
+其它支付宝当面付产品传FACE_TO_FACE_PAYMENT；
+不传默认使用FACE_TO_FACE_PAYMENT；
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 该笔订单允许的最晚付款时间，逾期将关闭交易，从生成二维码开始计时。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
@@ -182,10 +191,10 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 		this.body = body;
 	}
 
-	public String getBusinessParams() {
+	public BusinessParams getBusinessParams() {
 		return this.businessParams;
 	}
-	public void setBusinessParams(String businessParams) {
+	public void setBusinessParams(BusinessParams businessParams) {
 		this.businessParams = businessParams;
 	}
 
@@ -257,6 +266,13 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getQrCodeTimeoutExpress() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单下单并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2018-09-07 18:15:00
+ * @since 1.0, 2019-03-22 14:52:33
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7313226573988323923L;
+	private static final long serialVersionUID = 6767879988472737855L;
 
 	/**
 	 * 签约参数，支付后签约场景使用
@@ -181,7 +181,7 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private String subject;
 
 	/**
-	 * 绝对超时时间，格式为yyyy-MM-dd HH:mm
+	 * 绝对超时时间，格式为yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("time_expire")
 	private String timeExpire;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景金融代收付申请
  *
  * @author auto create
- * @since 1.0, 2019-02-28 17:16:23
+ * @since 1.0, 2019-04-01 09:48:29
  */
 public class MybankCreditSceneprodPaymentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7448545973451996142L;
+	private static final long serialVersionUID = 8671419887897839287L;
 
 	/**
 	 * 业务金额，单位分
@@ -33,6 +33,18 @@ public class MybankCreditSceneprodPaymentApplyModel extends AlipayObject {
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 客户姓名
+	 */
+	@ApiField("cust_name")
+	private String custName;
+
+	/**
+	 * 支用号
+	 */
+	@ApiField("drawdown_no")
+	private String drawdownNo;
 
 	/**
 	 * 客户的身份证号，尾数是X的请使用大写字母
@@ -115,6 +127,20 @@ public class MybankCreditSceneprodPaymentApplyModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public String getCustName() {
+		return this.custName;
+	}
+	public void setCustName(String custName) {
+		this.custName = custName;
+	}
+
+	public String getDrawdownNo() {
+		return this.drawdownNo;
+	}
+	public void setDrawdownNo(String drawdownNo) {
+		this.drawdownNo = drawdownNo;
 	}
 
 	public String getIdCard() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketItemStateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6692164428724978593L;
+	private static final long serialVersionUID = 3159131284251154574L;
 
 	/** 
 	 * 口碑体系内部商品的唯一标识

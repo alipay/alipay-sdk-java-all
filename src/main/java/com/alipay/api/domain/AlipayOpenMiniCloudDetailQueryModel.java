@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部开放给金融云端用于查询pid下面所有小程序的详细信息
  *
  * @author auto create
- * @since 1.0, 2018-10-30 15:52:27
+ * @since 1.0, 2019-04-08 11:36:15
  */
 public class AlipayOpenMiniCloudDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1832356476572629614L;
+	private static final long serialVersionUID = 4854336942147953664L;
 
 	/**
 	 * 应用的appid。partner_id和mini_appid不能同时为空。

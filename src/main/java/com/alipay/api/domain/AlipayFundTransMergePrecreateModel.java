@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合并转账预下单接口
  *
  * @author auto create
- * @since 1.0, 2019-01-18 16:04:05
+ * @since 1.0, 2019-03-21 19:52:21
  */
 public class AlipayFundTransMergePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7273323415797621827L;
+	private static final long serialVersionUID = 8347997832973967185L;
 
 	/**
 	 * 业务场景。
@@ -43,7 +43,7 @@ merchant_op_id：商户所属的操作员id
 	private Participant payerInfo;
 
 	/**
-	 * 销售产品码，商家和支付宝签约的产品码
+	 * 合并付款的业务产品码
 	 */
 	@ApiField("product_code")
 	private String productCode;

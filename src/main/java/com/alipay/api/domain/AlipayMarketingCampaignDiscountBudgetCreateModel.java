@@ -7,17 +7,25 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销立减活动预算创建
  *
  * @author auto create
- * @since 1.0, 2017-11-17 11:19:16
+ * @since 1.0, 2019-04-01 15:14:35
  */
 public class AlipayMarketingCampaignDiscountBudgetCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1489977288457679558L;
+	private static final long serialVersionUID = 8369645931998222793L;
 
 	/**
 	 * 业务名称，和out_biz_no一起进行幂等控制
 	 */
 	@ApiField("biz_from")
 	private String bizFrom;
+
+	/**
+	 * 立减出资类型,默认集分宝:
+集分宝出资：POINT；
+支付宝余额出资：BALANCE
+	 */
+	@ApiField("fund_type")
+	private String fundType;
 
 	/**
 	 * 预算库使用结束时间，格式：yyyy-MM-dd mm:hh:ss
@@ -38,7 +46,7 @@ public class AlipayMarketingCampaignDiscountBudgetCreateModel extends AlipayObje
 	private String outBizNo;
 
 	/**
-	 * 积分预算库ID
+	 * 积分预算库ID,集分宝出资时必填
 	 */
 	@ApiField("out_budget_no")
 	private String outBudgetNo;
@@ -60,6 +68,13 @@ public class AlipayMarketingCampaignDiscountBudgetCreateModel extends AlipayObje
 	}
 	public void setBizFrom(String bizFrom) {
 		this.bizFrom = bizFrom;
+	}
+
+	public String getFundType() {
+		return this.fundType;
+	}
+	public void setFundType(String fundType) {
+		this.fundType = fundType;
 	}
 
 	public String getGmtEnd() {

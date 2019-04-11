@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用图片上传接口
  *
  * @author auto create
- * @since 1.0, 2017-09-15 16:28:18
+ * @since 1.0, 2019-03-28 10:41:31
  */
 public class AlipayEcoMycarImageUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7534776186184157663L;
+	private static final long serialVersionUID = 5495713954366733317L;
 
 	/**
 	 * 文件内容(图片字节数组做Base64转换后的字符串)

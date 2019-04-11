@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用企业征信产品码申请
  *
  * @author auto create
- * @since 1.0, 2019-01-15 18:55:48
+ * @since 1.0, 2019-03-21 09:18:32
  */
 public class ZhimaCreditEpProductCodeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4591933254181893399L;
+	private static final long serialVersionUID = 3116682172252212287L;
 
 	/**
 	 * 申请业务描述
@@ -32,7 +32,7 @@ public class ZhimaCreditEpProductCodeApplyModel extends AlipayObject {
 	private String orgBizNo;
 
 	/**
-	 * 聚沙塔定义的产品列表，对接前需要芝麻同学业务同步给商户，列表按逗号分隔
+	 * 聚沙塔定义的产品列表，对接前需要芝麻同学业务同步给商户，列表按逗号分隔，比如同时签约浦发银行和南京银行产品，传入:101_1001_spdb,101_1001_njcb
 	 */
 	@ApiField("product_list")
 	private String productList;

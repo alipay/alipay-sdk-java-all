@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园卡基本信息
  *
  * @author auto create
- * @since 1.0, 2019-02-27 19:30:44
+ * @since 1.0, 2019-03-25 09:13:17
  */
 public class SchoolCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5438351539969981325L;
+	private static final long serialVersionUID = 4656644151577622979L;
 
 	/**
 	 * 支付宝校园卡卡号
@@ -30,6 +30,18 @@ public class SchoolCardInfo extends AlipayObject {
 	 */
 	@ApiField("card_type")
 	private String cardType;
+
+	/**
+	 * 创建时间，格式"yyyy-MM-dd HH:mm:ss"
+	 */
+	@ApiField("create_time")
+	private String createTime;
+
+	/**
+	 * 展示码类型， 0:在线码；1:离线码
+	 */
+	@ApiField("display_code_type")
+	private String displayCodeType;
 
 	/**
 	 * 姓名
@@ -86,6 +98,20 @@ public class SchoolCardInfo extends AlipayObject {
 	}
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
+	}
+
+	public String getCreateTime() {
+		return this.createTime;
+	}
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
+
+	public String getDisplayCodeType() {
+		return this.displayCodeType;
+	}
+	public void setDisplayCodeType(String displayCodeType) {
+		this.displayCodeType = displayCodeType;
 	}
 
 	public String getName() {

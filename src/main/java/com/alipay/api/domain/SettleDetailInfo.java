@@ -4,20 +4,20 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 结算详细信息
+ * 修复结算金额amount的类型，原来Number类型不合理，导致商户无法通过sdk集成，需改成Price类型
  *
  * @author auto create
- * @since 1.0, 2018-08-23 12:34:39
+ * @since 1.0, 2019-04-02 16:24:40
  */
 public class SettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1875815733948924727L;
+	private static final long serialVersionUID = 3153495352489676368L;
 
 	/**
 	 * 结算的金额，单位为元。目前必须和交易金额相同
 	 */
 	@ApiField("amount")
-	private Long amount;
+	private String amount;
 
 	/**
 	 * 结算主体标识。当结算主体类型为SecondMerchant时，为二级商户的SecondMerchantID；当结算主体类型为Store时，为门店的外标。
@@ -35,13 +35,13 @@ public class SettleDetailInfo extends AlipayObject {
 	/**
 	 * 结算汇总维度，按照这个维度汇总成批次结算，由商户指定。
 
-目前需要和结算收款方账户类型为cardSerialNo配合使用
+目前需要和结算收款方账户类型为cardAliasNo配合使用
 	 */
 	@ApiField("summary_dimension")
 	private String summaryDimension;
 
 	/**
-	 * 结算收款方。当结算收款方类型是cardSerialNo时，本参数为用户在支付宝绑定的卡编号；结算收款方类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；当结算收款方类型是loginName时，本参数为用户的支付宝登录号
+	 * 结算收款方。当结算收款方类型是cardAliasNo时，本参数为用户在支付宝绑定的卡编号；结算收款方类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；当结算收款方类型是loginName时，本参数为用户的支付宝登录号
 	 */
 	@ApiField("trans_in")
 	private String transIn;
@@ -49,18 +49,17 @@ public class SettleDetailInfo extends AlipayObject {
 	/**
 	 * 结算收款方的账户类型。
 
-cardSerialNo：结算收款方的银行卡编号;
-
+cardAliasNo：结算收款方的银行卡编号;
 userId：表示是支付宝账号对应的支付宝唯一用户号;
 loginName：表示是支付宝登录号；
 	 */
 	@ApiField("trans_in_type")
 	private String transInType;
 
-	public Long getAmount() {
+	public String getAmount() {
 		return this.amount;
 	}
-	public void setAmount(Long amount) {
+	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 

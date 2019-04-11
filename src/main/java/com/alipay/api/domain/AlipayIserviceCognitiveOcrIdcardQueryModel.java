@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 身份证信息识别
  *
  * @author auto create
- * @since 1.0, 2019-02-26 11:42:04
+ * @since 1.0, 2019-03-20 20:23:39
  */
 public class AlipayIserviceCognitiveOcrIdcardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7726179288937168242L;
+	private static final long serialVersionUID = 5141369829857792138L;
 
 	/**
 	 * 身份证图片base64编码内容

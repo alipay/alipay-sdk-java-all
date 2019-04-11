@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投保受理
  *
  * @author auto create
- * @since 1.0, 2019-03-07 17:04:19
+ * @since 1.0, 2019-03-21 11:47:34
  */
 public class AlipayInsSceneApplicationApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6675819654927237934L;
+	private static final long serialVersionUID = 8861194399183488878L;
 
 	/**
 	 * 用户参与的活动ID
@@ -86,10 +86,23 @@ public class AlipayInsSceneApplicationApplyModel extends AlipayObject {
 	private String prodCode;
 
 	/**
+	 * 推荐流水号
+	 */
+	@ApiField("recom_flow_no")
+	private String recomFlowNo;
+
+	/**
 	 * 渠道来源
 	 */
 	@ApiField("source")
 	private String source;
+
+	/**
+	 * 跟保单相关的干系人
+	 */
+	@ApiListField("stake_holders")
+	@ApiField("ins_person")
+	private List<InsPerson> stakeHolders;
 
 	/**
 	 * 保额值,保额类型为枚举的时候是一个枚举值,当为金额类型时单位为分
@@ -174,11 +187,25 @@ public class AlipayInsSceneApplicationApplyModel extends AlipayObject {
 		this.prodCode = prodCode;
 	}
 
+	public String getRecomFlowNo() {
+		return this.recomFlowNo;
+	}
+	public void setRecomFlowNo(String recomFlowNo) {
+		this.recomFlowNo = recomFlowNo;
+	}
+
 	public String getSource() {
 		return this.source;
 	}
 	public void setSource(String source) {
 		this.source = source;
+	}
+
+	public List<InsPerson> getStakeHolders() {
+		return this.stakeHolders;
+	}
+	public void setStakeHolders(List<InsPerson> stakeHolders) {
+		this.stakeHolders = stakeHolders;
 	}
 
 	public Long getSumInsured() {

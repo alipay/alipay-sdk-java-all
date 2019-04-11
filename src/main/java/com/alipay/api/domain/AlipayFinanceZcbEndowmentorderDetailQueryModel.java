@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinanceZcbEndowmentorderDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6777662878839528294L;
+	private static final long serialVersionUID = 7437966991568669842L;
 
 	/**
 	 * 查询条件里时间区间的结束时间，格式为：YYYYMMDDHHMISS，采用左开右闭的方式

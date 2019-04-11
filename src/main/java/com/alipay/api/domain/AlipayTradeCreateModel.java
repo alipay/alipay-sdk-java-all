@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2018-10-26 17:17:49
+ * @since 1.0, 2019-04-03 12:13:18
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5562644843956315175L;
+	private static final long serialVersionUID = 5514136853818684727L;
 
 	/**
 	 * 支付宝的店铺编号
@@ -32,7 +32,7 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	 * 商户传入业务信息，具体值要和支付宝约定，应用于安全，营销等参数直传场景，格式为json格式
 	 */
 	@ApiField("business_params")
-	private String businessParams;
+	private BusinessParams businessParams;
 
 	/**
 	 * 买家的支付宝唯一用户号（2088开头的16位纯数字）
@@ -112,6 +112,15 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 销售产品码。
+如果签约的是当面付快捷版，则传OFFLINE_PAYMENT;
+其它支付宝当面付产品传FACE_TO_FACE_PAYMENT；
+不传默认使用FACE_TO_FACE_PAYMENT；
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 收货人及地址信息
@@ -197,10 +206,10 @@ public class AlipayTradeCreateModel extends AlipayObject {
 		this.body = body;
 	}
 
-	public String getBusinessParams() {
+	public BusinessParams getBusinessParams() {
 		return this.businessParams;
 	}
-	public void setBusinessParams(String businessParams) {
+	public void setBusinessParams(BusinessParams businessParams) {
 		this.businessParams = businessParams;
 	}
 
@@ -286,6 +295,13 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public ReceiverAddressInfo getReceiverAddressInfo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单报关接口
  *
  * @author auto create
- * @since 1.0, 2016-11-09 19:11:51
+ * @since 1.0, 2019-03-28 14:00:51
  */
 public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7691429698961373335L;
+	private static final long serialVersionUID = 8397349851192541677L;
 
 	/**
 	 * 报关金额，单位为人民币“元”，精确到小数点后2位。
@@ -30,6 +30,12 @@ public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 	 */
 	@ApiField("customs_place")
 	private String customsPlace;
+
+	/**
+	 * 报关模式，默认可空，1表示需要强校验买家和支付人的身份信息。
+	 */
+	@ApiField("declare_mode")
+	private Long declareMode;
 
 	/**
 	 * 商户控制本单是否拆单的报关参数。
@@ -88,6 +94,13 @@ public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 	}
 	public void setCustomsPlace(String customsPlace) {
 		this.customsPlace = customsPlace;
+	}
+
+	public Long getDeclareMode() {
+		return this.declareMode;
+	}
+	public void setDeclareMode(Long declareMode) {
+		this.declareMode = declareMode;
 	}
 
 	public String getIsSplit() {

@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 账单同步接口
  *
  * @author auto create
- * @since 1.0, 2019-02-28 17:16:08
+ * @since 1.0, 2019-04-01 09:48:52
  */
 public class MybankCreditSceneprodBillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4544312495646729113L;
+	private static final long serialVersionUID = 8813259313774355841L;
+
+	/**
+	 * 网商申请单号(必须S结尾)
+资产转让后资产持有人同步账单时必填
+	 */
+	@ApiField("app_seq_no")
+	private String appSeqNo;
 
 	/**
 	 * 账单列表
@@ -22,6 +29,27 @@ public class MybankCreditSceneprodBillSyncModel extends AlipayObject {
 	@ApiListField("bill_list")
 	@ApiField("scene_prod_bill_detail")
 	private List<SceneProdBillDetail> billList;
+
+	/**
+	 * 客户姓名
+资产转让后资产持有人同步账单时必填
+	 */
+	@ApiField("cert_name")
+	private String certName;
+
+	/**
+	 * 证件号码
+资产转让后资产持有人同步账单时必填
+	 */
+	@ApiField("cert_no")
+	private String certNo;
+
+	/**
+	 * 支用号
+资产转让后资产持有人同步账单时必填
+	 */
+	@ApiField("drawdown_no")
+	private String drawdownNo;
 
 	/**
 	 * 扩展字段，用于适配不同机构的特殊要求
@@ -59,11 +87,39 @@ public class MybankCreditSceneprodBillSyncModel extends AlipayObject {
 	@ApiField("site_user_id")
 	private String siteUserId;
 
+	public String getAppSeqNo() {
+		return this.appSeqNo;
+	}
+	public void setAppSeqNo(String appSeqNo) {
+		this.appSeqNo = appSeqNo;
+	}
+
 	public List<SceneProdBillDetail> getBillList() {
 		return this.billList;
 	}
 	public void setBillList(List<SceneProdBillDetail> billList) {
 		this.billList = billList;
+	}
+
+	public String getCertName() {
+		return this.certName;
+	}
+	public void setCertName(String certName) {
+		this.certName = certName;
+	}
+
+	public String getCertNo() {
+		return this.certNo;
+	}
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
+
+	public String getDrawdownNo() {
+		return this.drawdownNo;
+	}
+	public void setDrawdownNo(String drawdownNo) {
+		this.drawdownNo = drawdownNo;
 	}
 
 	public String getExtParam() {

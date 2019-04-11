@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2019-03-01 19:22:12
+ * @since 1.0, 2019-03-19 19:01:37
  */
 public class ExtraParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8689729168641533424L;
+	private static final long serialVersionUID = 3379631125397771944L;
 
 	/**
 	 * 轻会员场景下协议结算周期，由协议生效日期到失效日期拼接(yyyyMMddHHmmss-yyyyMMddHHmmss)，精确到秒。
