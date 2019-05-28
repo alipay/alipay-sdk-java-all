@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceFinancialBlockchainBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7273981189935438637L;
+	private static final long serialVersionUID = 3418225663667465423L;
 
 	/**
 	 * 证件号码的hash值，使用MD5算法获取的hash

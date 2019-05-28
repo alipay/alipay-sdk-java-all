@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiServindustryExerciseMemberModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7775882578257228984L;
+	private static final long serialVersionUID = 3815663886291347282L;
 
 	/**
 	 * 会籍的到期时间 注：name与会籍的到期时间两个可选字段至少传一个

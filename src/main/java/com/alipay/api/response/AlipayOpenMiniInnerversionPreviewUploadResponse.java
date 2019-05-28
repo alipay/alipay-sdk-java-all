@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerversion.preview.upload response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-05-13 11:00:27
  */
 public class AlipayOpenMiniInnerversionPreviewUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7311578131648775866L;
+	private static final long serialVersionUID = 7559251262689214887L;
 
 	/** 
 	 * 构建好的包地址
@@ -20,11 +20,24 @@ public class AlipayOpenMiniInnerversionPreviewUploadResponse extends AlipayRespo
 	@ApiField("build_package_url")
 	private String buildPackageUrl;
 
+	/** 
+	 * 部署版本号，一个应用、租户、端在应用中心唯一的一条发布记录版本号、
+	 */
+	@ApiField("deploy_version")
+	private String deployVersion;
+
 	public void setBuildPackageUrl(String buildPackageUrl) {
 		this.buildPackageUrl = buildPackageUrl;
 	}
 	public String getBuildPackageUrl( ) {
 		return this.buildPackageUrl;
+	}
+
+	public void setDeployVersion(String deployVersion) {
+		this.deployVersion = deployVersion;
+	}
+	public String getDeployVersion( ) {
+		return this.deployVersion;
 	}
 
 }

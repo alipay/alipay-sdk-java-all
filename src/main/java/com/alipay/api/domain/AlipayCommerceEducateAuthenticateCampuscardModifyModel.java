@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一卡通变更通知
  *
  * @author auto create
- * @since 1.0, 2019-03-25 17:22:11
+ * @since 1.0, 2019-05-24 22:22:25
  */
 public class AlipayCommerceEducateAuthenticateCampuscardModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3455482196328318188L;
+	private static final long serialVersionUID = 7358724433955956813L;
 
 	/**
 	 * 校区
@@ -99,6 +99,12 @@ public class AlipayCommerceEducateAuthenticateCampuscardModifyModel extends Alip
 	private String imageDate;
 
 	/**
+	 * 学生/教职工在学校唯一短号，由isv分配
+	 */
+	@ApiField("isv_short_code")
+	private String isvShortCode;
+
+	/**
 	 * 学生手机
 	 */
 	@ApiField("mobile_no")
@@ -129,7 +135,7 @@ public class AlipayCommerceEducateAuthenticateCampuscardModifyModel extends Alip
 	private String schoolStdcode;
 
 	/**
-	 * 学生/教职工在学校唯一短号
+	 * 学生/教职工在学校唯一短号，此字段废弃
 	 */
 	@ApiField("short_code")
 	private Long shortCode;
@@ -230,6 +236,13 @@ public class AlipayCommerceEducateAuthenticateCampuscardModifyModel extends Alip
 	}
 	public void setImageDate(String imageDate) {
 		this.imageDate = imageDate;
+	}
+
+	public String getIsvShortCode() {
+		return this.isvShortCode;
+	}
+	public void setIsvShortCode(String isvShortCode) {
+		this.isvShortCode = isvShortCode;
 	}
 
 	public String getMobileNo() {

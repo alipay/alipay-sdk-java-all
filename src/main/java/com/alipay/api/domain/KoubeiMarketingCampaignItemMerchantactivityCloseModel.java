@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户下架代金券
  *
  * @author auto create
- * @since 1.0, 2018-07-06 17:36:02
+ * @since 1.0, 2019-05-07 10:06:24
  */
 public class KoubeiMarketingCampaignItemMerchantactivityCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8694165984595268383L;
+	private static final long serialVersionUID = 1253564491379748851L;
 
 	/**
 	 * 活动id

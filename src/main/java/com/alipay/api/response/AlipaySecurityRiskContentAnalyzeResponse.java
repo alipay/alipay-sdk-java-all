@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.content.analyze response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-04-16 13:30:01
  */
 public class AlipaySecurityRiskContentAnalyzeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1153749574968276437L;
+	private static final long serialVersionUID = 6761236157141653648L;
 
 	/** 
 	 * 内容ID，用于查询异步识别结果时作为查询ID

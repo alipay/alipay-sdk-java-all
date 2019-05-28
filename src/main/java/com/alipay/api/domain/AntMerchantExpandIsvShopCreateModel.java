@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ISV代创建蚂蚁商户店铺
  *
  * @author auto create
- * @since 1.0, 2018-09-28 21:09:40
+ * @since 1.0, 2019-04-25 13:58:18
  */
 public class AntMerchantExpandIsvShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6881592368833317184L;
+	private static final long serialVersionUID = 5151655294642695864L;
 
 	/**
 	 * 地址。商户详细经营地址或人员所在地点
@@ -36,6 +36,12 @@ public class AntMerchantExpandIsvShopCreateModel extends AlipayObject {
 	private String attachmentList;
 
 	/**
+	 * 门店对应的业务类型，可以对应团餐业务：CATERING_DEVICE；
+	 */
+	@ApiField("biz_type")
+	private String bizType;
+
+	/**
 	 * 店铺经营时间。
 	 */
 	@ApiListField("business_time")
@@ -43,8 +49,13 @@ public class AntMerchantExpandIsvShopCreateModel extends AlipayObject {
 	private List<ShopBusinessTime> businessTime;
 
 	/**
+	 * 学校对应的商户PID
+	 */
+	@ApiField("campus_id")
+	private String campusId;
+
+	/**
 	 * 所选学校。指定门店类目下需要上传大学名称信息。
-学校信息，请参考
 	 */
 	@ApiField("campus_name")
 	private String campusName;
@@ -143,6 +154,12 @@ http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
 	@ApiField("shop_type")
 	private String shopType;
 
+	/**
+	 * 外部门店编号，由商户用户自己定义的外部门店编号，同一个商户下门店编号不能重复，否则会创建失败
+	 */
+	@ApiField("store_id")
+	private String storeId;
+
 	public String getAddress() {
 		return this.address;
 	}
@@ -164,11 +181,25 @@ http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
 		this.attachmentList = attachmentList;
 	}
 
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
+	}
+
 	public List<ShopBusinessTime> getBusinessTime() {
 		return this.businessTime;
 	}
 	public void setBusinessTime(List<ShopBusinessTime> businessTime) {
 		this.businessTime = businessTime;
+	}
+
+	public String getCampusId() {
+		return this.campusId;
+	}
+	public void setCampusId(String campusId) {
+		this.campusId = campusId;
 	}
 
 	public String getCampusName() {
@@ -281,6 +312,13 @@ http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
 	}
 	public void setShopType(String shopType) {
 		this.shopType = shopType;
+	}
+
+	public String getStoreId() {
+		return this.storeId;
+	}
+	public void setStoreId(String storeId) {
+		this.storeId = storeId;
 	}
 
 }

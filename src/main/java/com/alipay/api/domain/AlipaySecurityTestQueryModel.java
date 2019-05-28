@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预发验证openapi内部
  *
  * @author auto create
- * @since 1.0, 2019-02-21 14:07:28
+ * @since 1.0, 2019-04-16 14:57:45
  */
 public class AlipaySecurityTestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7891798443768227244L;
+	private static final long serialVersionUID = 6858161875181293142L;
 
 	/**
-	 * 纬度
+	 * 纬度1231
 	 */
 	@ApiField("latitude")
 	private String latitude;

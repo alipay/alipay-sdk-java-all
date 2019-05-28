@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-19 11:38:31
+ * @since 1.0, 2019-05-17 16:52:54
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4819629354413733143L;
+	private static final long serialVersionUID = 2568741547937224112L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -104,6 +104,13 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("discount_goods_detail")
 	private String discountGoodsDetail;
+
+	/** 
+	 * 交易额外信息，特殊场景下与支付宝约定返回。
+json格式。
+	 */
+	@ApiField("ext_infos")
+	private String extInfos;
 
 	/** 
 	 * 交易支付使用的资金渠道
@@ -348,6 +355,13 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	}
 	public String getDiscountGoodsDetail( ) {
 		return this.discountGoodsDetail;
+	}
+
+	public void setExtInfos(String extInfos) {
+		this.extInfos = extInfos;
+	}
+	public String getExtInfos( ) {
+		return this.extInfos;
 	}
 
 	public void setFundBillList(List<TradeFundBill> fundBillList) {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 源汇率查询
  *
  * @author auto create
- * @since 1.0, 2018-10-11 17:33:00
+ * @since 1.0, 2019-04-30 15:19:24
  */
 public class AlipayAccountExrateSourcerateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1442945767541135638L;
+	private static final long serialVersionUID = 6488161153525883986L;
 
 	/**
 	 * 查询截止报价生成时间

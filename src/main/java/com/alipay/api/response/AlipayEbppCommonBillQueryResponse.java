@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.common.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-05-10 10:30:41
  */
 public class AlipayEbppCommonBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5642137147632853912L;
+	private static final long serialVersionUID = 6433882913921142958L;
 
 	/** 
 	 * 户号
@@ -37,6 +37,12 @@ public class AlipayEbppCommonBillQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("chargeoff_inst")
 	private String chargeoffInst;
+
+	/** 
+	 * 订单扩展信息
+	 */
+	@ApiField("extend_field")
+	private String extendField;
 
 	/** 
 	 * 订单创建时间GMT，yyyyMMdd HH:mm:ss
@@ -82,6 +88,13 @@ public class AlipayEbppCommonBillQueryResponse extends AlipayResponse {
 	}
 	public String getChargeoffInst( ) {
 		return this.chargeoffInst;
+	}
+
+	public void setExtendField(String extendField) {
+		this.extendField = extendField;
+	}
+	public String getExtendField( ) {
+		return this.extendField;
 	}
 
 	public void setGmtCreate(String gmtCreate) {

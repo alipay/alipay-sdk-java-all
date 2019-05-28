@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享支付接口
  *
  * @author auto create
- * @since 1.0, 2019-04-01 15:15:18
+ * @since 1.0, 2019-05-09 21:30:20
  */
 public class AlipayPcreditHuabeiAuthSettleApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6377774471199163564L;
+	private static final long serialVersionUID = 5193138545587483981L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。

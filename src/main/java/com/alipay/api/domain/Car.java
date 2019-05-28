@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车辆信息
  *
  * @author auto create
- * @since 1.0, 2019-04-04 16:44:38
+ * @since 1.0, 2019-05-27 21:05:58
  */
 public class Car extends AlipayObject {
 
-	private static final long serialVersionUID = 3442328653381345626L;
+	private static final long serialVersionUID = 4481969397769265489L;
 
 	/**
 	 * 发动机号
@@ -51,6 +51,12 @@ public class Car extends AlipayObject {
 	 */
 	@ApiField("first_register_date")
 	private String firstRegisterDate;
+
+	/**
+	 * 是否新车
+	 */
+	@ApiField("is_new")
+	private String isNew;
 
 	/**
 	 * 天津地区行驶证地址
@@ -135,6 +141,13 @@ public class Car extends AlipayObject {
 	}
 	public void setFirstRegisterDate(String firstRegisterDate) {
 		this.firstRegisterDate = firstRegisterDate;
+	}
+
+	public String getIsNew() {
+		return this.isNew;
+	}
+	public void setIsNew(String isNew) {
+		this.isNew = isNew;
 	}
 
 	public String getLicenseAddress() {

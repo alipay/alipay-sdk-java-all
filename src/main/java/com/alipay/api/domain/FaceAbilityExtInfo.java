@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用人脸能力所需要等拓展参数信息
  *
  * @author auto create
- * @since 1.0, 2019-03-26 15:42:04
+ * @since 1.0, 2019-04-16 19:55:28
  */
 public class FaceAbilityExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4394429657755375993L;
+	private static final long serialVersionUID = 7111335653836993168L;
 
 	/**
 	 * 年龄
 	 */
 	@ApiField("age")
 	private String age;
+
+	/**
+	 * 算法的辅助因子如blur、pitch、yaw、roll值
+	 */
+	@ApiField("algfactors")
+	private String algfactors;
 
 	/**
 	 * 姓名信息
@@ -98,6 +104,13 @@ centerRule：选择中心脸规则；
 	}
 	public void setAge(String age) {
 		this.age = age;
+	}
+
+	public String getAlgfactors() {
+		return this.algfactors;
+	}
+	public void setAlgfactors(String algfactors) {
+		this.algfactors = algfactors;
 	}
 
 	public String getCertName() {

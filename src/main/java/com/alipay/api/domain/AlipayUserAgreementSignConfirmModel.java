@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议签约验证接口
  *
  * @author auto create
- * @since 1.0, 2018-01-08 15:35:38
+ * @since 1.0, 2019-05-15 10:45:13
  */
 public class AlipayUserAgreementSignConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5361257357466192596L;
+	private static final long serialVersionUID = 1316435882222873769L;
 
 	/**
 	 * 代扣签约申请时，支付宝返回的签约申请token，商户可利用该值完成签约的确认。

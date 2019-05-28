@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanCollateralValuationSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7278927975297865611L;
+	private static final long serialVersionUID = 8287283239799572342L;
 
 	
 

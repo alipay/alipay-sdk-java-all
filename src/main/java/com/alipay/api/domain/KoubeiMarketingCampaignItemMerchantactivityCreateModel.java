@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户创建商品代金券
  *
  * @author auto create
- * @since 1.0, 2018-07-06 17:37:06
+ * @since 1.0, 2019-05-07 10:06:16
  */
 public class KoubeiMarketingCampaignItemMerchantactivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2351327217689148819L;
+	private static final long serialVersionUID = 1669575814829111312L;
 
 	/**
 	 * 活动优惠次数限制

@@ -6,6 +6,7 @@ import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AddressInfo;
 import com.alipay.api.domain.BankCardInfo;
 import com.alipay.api.domain.ContactInfo;
+import com.alipay.api.domain.SiteInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -13,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-05-15 20:35:01
  */
 public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4772539126189452674L;
+	private static final long serialVersionUID = 1229389325298188871L;
 
 	/** 
 	 * 商户地址信息
@@ -117,10 +118,28 @@ public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 	private List<String> payCodeInfo;
 
 	/** 
+	 * 可用服务，列表返回
+PC：网站支付
+APP：无线支付
+F2F：当面付
+返回为空为不支持所有服务
+	 */
+	@ApiListField("service_codes")
+	@ApiField("string")
+	private List<String> serviceCodes;
+
+	/** 
 	 * 商户客服电话
 	 */
 	@ApiField("service_phone")
 	private String servicePhone;
+
+	/** 
+	 * 网站、APP信息
+	 */
+	@ApiListField("site_info")
+	@ApiField("site_info")
+	private List<SiteInfo> siteInfo;
 
 	/** 
 	 * 间连受理商户的推荐组织。如果是银行自有商户入驻，则推荐组织为银行，如果是ISV推广的商户，那么商户推荐组织为ISV，如果是第三方支付机构的自有商户，则推荐组织为第三方支付机构。
@@ -239,11 +258,25 @@ public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 		return this.payCodeInfo;
 	}
 
+	public void setServiceCodes(List<String> serviceCodes) {
+		this.serviceCodes = serviceCodes;
+	}
+	public List<String> getServiceCodes( ) {
+		return this.serviceCodes;
+	}
+
 	public void setServicePhone(String servicePhone) {
 		this.servicePhone = servicePhone;
 	}
 	public String getServicePhone( ) {
 		return this.servicePhone;
+	}
+
+	public void setSiteInfo(List<SiteInfo> siteInfo) {
+		this.siteInfo = siteInfo;
+	}
+	public List<SiteInfo> getSiteInfo( ) {
+		return this.siteInfo;
 	}
 
 	public void setSource(String source) {

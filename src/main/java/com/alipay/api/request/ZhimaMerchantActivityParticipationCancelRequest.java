@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.activity.participation.cancel request
  * 
  * @author auto create
- * @since 1.0, 2019-03-14 20:57:48
+ * @since 1.0, 2019-04-18 19:30:01
  */
 public class ZhimaMerchantActivityParticipationCancelRequest implements AlipayRequest<ZhimaMerchantActivityParticipationCancelResponse> {
 

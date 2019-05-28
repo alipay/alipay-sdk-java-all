@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝营销优惠立减活动操作
  *
  * @author auto create
- * @since 1.0, 2019-02-22 17:05:04
+ * @since 1.0, 2019-05-15 15:30:25
  */
 public class AlipayMarketingCampaignDiscountOperateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1132152183996799643L;
+	private static final long serialVersionUID = 8373737956964248715L;
 
 	/**
 	 * 幂等控制code,控制重复新增，修改时候可以不设置。
@@ -41,7 +41,11 @@ public class AlipayMarketingCampaignDiscountOperateModel extends AlipayObject {
 	private String campName;
 
 	/**
-	 * 用于账户立减优惠,渠道立减优惠活动时,在收银台页面显示给会员看,请根据收银台可展示的实际字数填写,最多48个字符，汉字、英文字母、数字都算一个，只可输入中文、英文、数字、下划线以及中英文的双引号、逗号、句号、横杠、空格。
+	 * 目前未开放该字段的定义,统一由支付宝后台配置，目前定义如下：
+DISCOUNT("discount", "支付宝立减")
+REDUCE("reduce", "支付宝立减")
+SINGLE("single", "支付宝立减")
+RANDOM_DISCOUNT("random", "支付宝随机立减")
 	 */
 	@ApiField("camp_slogan")
 	private String campSlogan;
@@ -53,7 +57,7 @@ public class AlipayMarketingCampaignDiscountOperateModel extends AlipayObject {
 	private DiscountDstCampPrizeModel discountDstCampPrizeModel;
 
 	/**
-	 * 立减规则模型
+	 * 立减规则模型，目前只支持账户立减"account"
 	 */
 	@ApiField("dst_camp_rule_model")
 	private DstCampRuleModel dstCampRuleModel;
@@ -84,15 +88,12 @@ public class AlipayMarketingCampaignDiscountOperateModel extends AlipayObject {
 	private String operateType;
 
 	/**
-	 * 奖品类型. 打折   满减   单笔减   阶梯优惠   抹零优惠    随机立减   订单金额减至 
-    折扣方式
-    DISCOUNT("discount", "折扣方式"),
-     REDUCE("reduce", "满立减"),
-     SINGLE("single", "单笔减"),
-     STAGED_DISCOUNT("staged_discount", "阶梯优惠"),
-    RESET_ZERO_DISCOUNT("reset_zero_discount", "抹零优惠"),
+	 * 奖品类型(支持4种):打折\满减\单笔减\随机立减
+折扣方式
+   DISCOUNT("discount", "折扣"),
+   REDUCE("reduce", "满立减"),
+   SINGLE("single", "单笔减"),
    RANDOM_DISCOUNT("random", "随机立减");
-    REDUCE_TO_DISCOUNT("reduce_to_discount","订单金额减至 ")
 	 */
 	@ApiField("prize_type")
 	private String prizeType;

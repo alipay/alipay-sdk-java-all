@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2019-03-07 20:59:04
+ * @since 1.0, 2019-05-15 15:58:54
  */
 public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2448932677492953753L;
+	private static final long serialVersionUID = 6799286585481547563L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -28,7 +28,7 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 
 	/**
 	 * 授权码类型
-目前仅支持"bar_code"
+目前支持"bar_code"和"security_code"，分别对应付款码和刷脸场景
 	 */
 	@ApiField("auth_code_type")
 	private String authCodeType;
@@ -95,10 +95,22 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	private String productCode;
 
 	/**
+	 * 场景码，预授权刷脸场景取值为HOTEL，其他不需填写
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
+
+	/**
 	 * 商户指定的结算币种。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
 	 */
 	@ApiField("settle_currency")
 	private String settleCurrency;
+
+	/**
+	 * 机具管控sdk加签参数，参数示例 "terminal_params":"{"terminalType":"IOT","signature":"QIIAX8DqbFbNf2oe97FI1RSLAycC/tU4GVjer3bN8K4qLtAB","apdidToken":"xPA3ptuArwYc3F6Va_pjVwv7Qx7Tg5TJdrA_Jb_moYte9AqGZgEAAA==","hardToken":"","time":"1539847253","bizCode":"11000200040004000121","bizTid":"010100F01i1XyacMgpOinHerfdBw1xA9dNDocctlnqhLD8lfODr1A7Q","signedKeys":"authCode,totalAmount,apdidToken,hardToken,time,bizCode,bizTid"}"
+	 */
+	@ApiField("terminal_params")
+	private String terminalParams;
 
 	/**
 	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP
@@ -190,11 +202,25 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 		this.productCode = productCode;
 	}
 
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
+	}
+
 	public String getSettleCurrency() {
 		return this.settleCurrency;
 	}
 	public void setSettleCurrency(String settleCurrency) {
 		this.settleCurrency = settleCurrency;
+	}
+
+	public String getTerminalParams() {
+		return this.terminalParams;
+	}
+	public void setTerminalParams(String terminalParams) {
+		this.terminalParams = terminalParams;
 	}
 
 	public String getTransCurrency() {

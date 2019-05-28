@@ -9,17 +9,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线下拉新结算明细数据模型
  *
  * @author auto create
- * @since 1.0, 2019-01-10 11:11:47
+ * @since 1.0, 2019-05-13 14:37:08
  */
 public class OfflineInviteNewerDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1566491478867681413L;
+	private static final long serialVersionUID = 8571516715752528521L;
+
+	/**
+	 * 城市
+	 */
+	@ApiField("city_name")
+	private String cityName;
 
 	/**
 	 * 被邀请手机号
 	 */
 	@ApiField("invited_phone")
 	private String invitedPhone;
+
+	/**
+	 * 地域系数
+	 */
+	@ApiField("lbs_rate")
+	private String lbsRate;
 
 	/**
 	 * 二级渠道
@@ -32,6 +44,12 @@ public class OfflineInviteNewerDetailInfo extends AlipayObject {
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * 省份
+	 */
+	@ApiField("province_name")
+	private String provinceName;
 
 	/**
 	 * 是否可结算核销用户
@@ -63,11 +81,25 @@ public class OfflineInviteNewerDetailInfo extends AlipayObject {
 	@ApiField("user_prize_time")
 	private Date userPrizeTime;
 
+	public String getCityName() {
+		return this.cityName;
+	}
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
 	public String getInvitedPhone() {
 		return this.invitedPhone;
 	}
 	public void setInvitedPhone(String invitedPhone) {
 		this.invitedPhone = invitedPhone;
+	}
+
+	public String getLbsRate() {
+		return this.lbsRate;
+	}
+	public void setLbsRate(String lbsRate) {
+		this.lbsRate = lbsRate;
 	}
 
 	public String getPartnerId() {
@@ -82,6 +114,13 @@ public class OfflineInviteNewerDetailInfo extends AlipayObject {
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public String getProvinceName() {
+		return this.provinceName;
+	}
+	public void setProvinceName(String provinceName) {
+		this.provinceName = provinceName;
 	}
 
 	public Boolean getSettled() {

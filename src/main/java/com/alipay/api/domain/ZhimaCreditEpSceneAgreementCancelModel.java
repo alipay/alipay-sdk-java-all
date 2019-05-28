@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消信用服务
  *
  * @author auto create
- * @since 1.0, 2019-03-04 11:09:43
+ * @since 1.0, 2019-04-18 17:15:41
  */
 public class ZhimaCreditEpSceneAgreementCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2858399528891639628L;
+	private static final long serialVersionUID = 4338931628727595474L;
 
 	/**
 	 * 业务取消时间，日期格式为 yyyy-MM-dd HH:mm:ss

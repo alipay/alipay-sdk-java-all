@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-05-08 16:59:45
  */
 public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6269534978213865912L;
+	private static final long serialVersionUID = 4425998916534471857L;
 
 	/** 
 	 * 类目Id列表
@@ -33,6 +34,12 @@ public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 	private String appEnglishName;
 
 	/** 
+	 * 手淘开放平台鉴权key，支付宝不需要
+	 */
+	@ApiField("app_key")
+	private String appKey;
+
+	/** 
 	 * 小程序应用logo图标
 	 */
 	@ApiField("app_logo")
@@ -49,6 +56,48 @@ public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("app_slogan")
 	private String appSlogan;
+
+	/** 
+	 * 小程序类型，TINYAPP_TEMPLATE，TINYAPP_NORMAL，TINYAPP_PLUGIN
+	 */
+	@ApiField("app_sub_type")
+	private String appSubType;
+
+	/** 
+	 * 小程序所属主体信息
+	 */
+	@ApiField("dev_id")
+	private String devId;
+
+	/** 
+	 * 小程序主体创建时间
+	 */
+	@ApiField("gmt_create")
+	private Date gmtCreate;
+
+	/** 
+	 * 小程序主体更新时间
+	 */
+	@ApiField("gmt_modified")
+	private Date gmtModified;
+
+	/** 
+	 * 小程序Id
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
+
+	/** 
+	 * 应用创建来源，alipay = 支付宝，taobao = 淘宝
+	 */
+	@ApiField("origin")
+	private String origin;
+
+	/** 
+	 * 小程序主体信息
+	 */
+	@ApiField("owner_entity")
+	private String ownerEntity;
 
 	/** 
 	 * 小程序客服邮箱
@@ -83,6 +132,13 @@ public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 		return this.appEnglishName;
 	}
 
+	public void setAppKey(String appKey) {
+		this.appKey = appKey;
+	}
+	public String getAppKey( ) {
+		return this.appKey;
+	}
+
 	public void setAppLogo(String appLogo) {
 		this.appLogo = appLogo;
 	}
@@ -102,6 +158,55 @@ public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 	}
 	public String getAppSlogan( ) {
 		return this.appSlogan;
+	}
+
+	public void setAppSubType(String appSubType) {
+		this.appSubType = appSubType;
+	}
+	public String getAppSubType( ) {
+		return this.appSubType;
+	}
+
+	public void setDevId(String devId) {
+		this.devId = devId;
+	}
+	public String getDevId( ) {
+		return this.devId;
+	}
+
+	public void setGmtCreate(Date gmtCreate) {
+		this.gmtCreate = gmtCreate;
+	}
+	public Date getGmtCreate( ) {
+		return this.gmtCreate;
+	}
+
+	public void setGmtModified(Date gmtModified) {
+		this.gmtModified = gmtModified;
+	}
+	public Date getGmtModified( ) {
+		return this.gmtModified;
+	}
+
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
+	}
+	public String getMiniAppId( ) {
+		return this.miniAppId;
+	}
+
+	public void setOrigin(String origin) {
+		this.origin = origin;
+	}
+	public String getOrigin( ) {
+		return this.origin;
+	}
+
+	public void setOwnerEntity(String ownerEntity) {
+		this.ownerEntity = ownerEntity;
+	}
+	public String getOwnerEntity( ) {
+		return this.ownerEntity;
 	}
 
 	public void setServiceEmail(String serviceEmail) {

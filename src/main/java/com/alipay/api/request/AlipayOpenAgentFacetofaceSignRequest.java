@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.facetoface.sign request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-04-29 15:55:01
  */
 public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest<AlipayOpenAgentFacetofaceSignResponse> {
 
@@ -21,7 +21,7 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	private String apiVersion="1.0";
 
 	/** 
-	* 代商户操作事务编号，通过alipay.open.isv.agent.create接口进行创建。
+	* 代商户操作事务编号，通过alipay.open.agent.create接口进行创建。
 	 */
 	private String batchNo;
 

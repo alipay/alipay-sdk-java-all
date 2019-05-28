@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报价申请接口
  *
  * @author auto create
- * @since 1.0, 2019-04-10 15:12:34
+ * @since 1.0, 2019-05-21 20:54:10
  */
 public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5714598615212753598L;
+	private static final long serialVersionUID = 6695476858447624275L;
 
 	/**
 	 * 商业险产品信息
@@ -64,6 +64,12 @@ public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 	 */
 	@ApiField("force_product")
 	private InsProduct forceProduct;
+
+	/**
+	 * 是否通融报价
+	 */
+	@ApiField("is_tong_rong")
+	private String isTongRong;
 
 	/**
 	 * 报价类型	1-微调，0-套餐
@@ -125,6 +131,13 @@ public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 	}
 	public void setForceProduct(InsProduct forceProduct) {
 		this.forceProduct = forceProduct;
+	}
+
+	public String getIsTongRong() {
+		return this.isTongRong;
+	}
+	public void setIsTongRong(String isTongRong) {
+		this.isTongRong = isTongRong;
 	}
 
 	public String getQuoteType() {

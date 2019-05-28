@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoMedicalcareSiDataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5444788548471341657L;
+	private static final long serialVersionUID = 4826921468825578485L;
 
 	/**
 	 * 场景标识

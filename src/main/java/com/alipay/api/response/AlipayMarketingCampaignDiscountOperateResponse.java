@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.discount.operate response.
  * 
  * @author auto create
- * @since 1.0, 2019-02-22 17:05:04
+ * @since 1.0, 2019-05-15 15:30:25
  */
 public class AlipayMarketingCampaignDiscountOperateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4381182644552118381L;
+	private static final long serialVersionUID = 8697964672417869699L;
 
 	/** 
 	 * 123

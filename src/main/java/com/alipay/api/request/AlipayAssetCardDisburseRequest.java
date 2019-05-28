@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.asset.card.disburse request
  * 
  * @author auto create
- * @since 1.0, 2019-04-08 10:44:21
+ * @since 1.0, 2019-04-28 14:37:51
  */
 public class AlipayAssetCardDisburseRequest implements AlipayRequest<AlipayAssetCardDisburseResponse> {
 

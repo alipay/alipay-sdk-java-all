@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2018-03-23 19:15:54
+ * @since 1.0, 2019-05-10 17:36:33
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3334386862535643487L;
+	private static final long serialVersionUID = 3444867283316156135L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -70,6 +70,12 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	 */
 	@ApiField("invoice_info")
 	private InvoiceInfo invoiceInfo;
+
+	/**
+	 * 商户原始订单号，最大长度限制32位
+	 */
+	@ApiField("merchant_order_no")
+	private String merchantOrderNo;
 
 	/**
 	 * 商户网站唯一订单号
@@ -225,6 +231,13 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	}
 	public void setInvoiceInfo(InvoiceInfo invoiceInfo) {
 		this.invoiceInfo = invoiceInfo;
+	}
+
+	public String getMerchantOrderNo() {
+		return this.merchantOrderNo;
+	}
+	public void setMerchantOrderNo(String merchantOrderNo) {
+		this.merchantOrderNo = merchantOrderNo;
 	}
 
 	public String getOutTradeNo() {

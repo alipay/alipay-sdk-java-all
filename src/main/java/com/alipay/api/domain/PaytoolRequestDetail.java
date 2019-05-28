@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单支付工具请求信息，支持现金、商户预付卡、支付宝、银行卡、其他第三方支付工具信息。
  *
  * @author auto create
- * @since 1.0, 2019-04-09 16:58:09
+ * @since 1.0, 2019-04-18 17:05:58
  */
 public class PaytoolRequestDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3126319619454425296L;
+	private static final long serialVersionUID = 4647814785652996859L;
 
 	/**
 	 * 支付工具金额。单位为元，精确到小数点后两位，取值范围[0.01,100000000]
@@ -24,6 +24,12 @@ public class PaytoolRequestDetail extends AlipayObject {
 	 */
 	@ApiField("payer_identity")
 	private UserIdentity payerIdentity;
+
+	/**
+	 * 定义为商户定制化的支付请求业务信息，由支付宝定义和管控，通常业务信息对于支付工具本身是弱依赖的。格式为json格式的字符串，需带上转移符。
+	 */
+	@ApiField("paytool_business_info")
+	private String paytoolBusinessInfo;
 
 	/**
 	 * 商户支付工具单据号。注：不同的请求需更换不同的paytool_request_no，否则视为幂等请求
@@ -50,6 +56,13 @@ public class PaytoolRequestDetail extends AlipayObject {
 	}
 	public void setPayerIdentity(UserIdentity payerIdentity) {
 		this.payerIdentity = payerIdentity;
+	}
+
+	public String getPaytoolBusinessInfo() {
+		return this.paytoolBusinessInfo;
+	}
+	public void setPaytoolBusinessInfo(String paytoolBusinessInfo) {
+		this.paytoolBusinessInfo = paytoolBusinessInfo;
 	}
 
 	public String getPaytoolRequestNo() {

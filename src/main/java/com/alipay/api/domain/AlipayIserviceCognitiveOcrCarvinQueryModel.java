@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * OCR服务：识别车辆Vin码服务
  *
  * @author auto create
- * @since 1.0, 2018-05-04 22:38:18
+ * @since 1.0, 2019-04-26 12:36:57
  */
 public class AlipayIserviceCognitiveOcrCarvinQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1682618125524593768L;
+	private static final long serialVersionUID = 5748297929864244745L;
 
 	/**
 	 * 汽车VIN 图片base64 encode内容

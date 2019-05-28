@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 间连商户文件上传
  *
  * @author auto create
- * @since 1.0, 2017-09-23 20:47:16
+ * @since 1.0, 2019-05-15 11:16:46
  */
 public class AntMerchantExpandIndirectAttachmentUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2786627118569352868L;
+	private static final long serialVersionUID = 1584148153634234519L;
 
 	/**
 	 * 商户附件信息

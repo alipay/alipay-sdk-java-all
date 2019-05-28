@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多端小程序-修改基本信息
  *
  * @author auto create
- * @since 1.0, 2018-12-17 17:27:09
+ * @since 1.0, 2019-05-06 10:46:53
  */
 public class AlipayOpenMiniInnerbaseinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3498298354898396543L;
+	private static final long serialVersionUID = 6126331497577881895L;
 
 	/**
 	 * 类目列表
@@ -32,6 +32,12 @@ public class AlipayOpenMiniInnerbaseinfoModifyModel extends AlipayObject {
 	private String appEnglishName;
 
 	/**
+	 * 手淘开放平台鉴权key，支付宝不需要
+	 */
+	@ApiField("app_key")
+	private String appKey;
+
+	/**
 	 * 小程序logo图标，建议上传像素为180*180
 	 */
 	@ApiField("app_logo")
@@ -48,6 +54,12 @@ public class AlipayOpenMiniInnerbaseinfoModifyModel extends AlipayObject {
 	 */
 	@ApiField("app_slogan")
 	private String appSlogan;
+
+	/**
+	 * 租户code，alipay 或是 taobao
+	 */
+	@ApiField("inst_code")
+	private String instCode;
 
 	/**
 	 * 小程序Id
@@ -88,6 +100,13 @@ public class AlipayOpenMiniInnerbaseinfoModifyModel extends AlipayObject {
 		this.appEnglishName = appEnglishName;
 	}
 
+	public String getAppKey() {
+		return this.appKey;
+	}
+	public void setAppKey(String appKey) {
+		this.appKey = appKey;
+	}
+
 	public String getAppLogo() {
 		return this.appLogo;
 	}
@@ -107,6 +126,13 @@ public class AlipayOpenMiniInnerbaseinfoModifyModel extends AlipayObject {
 	}
 	public void setAppSlogan(String appSlogan) {
 		this.appSlogan = appSlogan;
+	}
+
+	public String getInstCode() {
+		return this.instCode;
+	}
+	public void setInstCode(String instCode) {
+		this.instCode = instCode;
 	}
 
 	public String getMiniAppId() {

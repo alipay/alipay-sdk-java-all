@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 团体资金单据，包括收款资金单据以及付款资金单据
  *
  * @author auto create
- * @since 1.0, 2019-04-08 14:50:28
+ * @since 1.0, 2019-05-13 16:48:58
  */
 public class GroupFundBill extends AlipayObject {
 
-	private static final long serialVersionUID = 7461213368784258245L;
+	private static final long serialVersionUID = 2489471762344268814L;
 
 	/**
 	 * 实际待收待付金额，两位小数点的整数，单位元

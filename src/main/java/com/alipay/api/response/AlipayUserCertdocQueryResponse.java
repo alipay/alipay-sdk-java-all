@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certdoc.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-04-18 20:50:01
  */
 public class AlipayUserCertdocQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4349628739164723413L;
+	private static final long serialVersionUID = 3451338879972928428L;
 
 	/** 
 	 * 进行授权的用户本人的驾驶证信息

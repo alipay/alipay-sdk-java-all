@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多端小程序上架
  *
  * @author auto create
- * @since 1.0, 2018-12-17 19:24:30
+ * @since 1.0, 2019-05-06 10:47:36
  */
 public class AlipayOpenMiniInnerversionOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3161597635887175796L;
+	private static final long serialVersionUID = 5413866171332257718L;
 
 	/**
 	 * 下架版本
@@ -24,6 +24,18 @@ public class AlipayOpenMiniInnerversionOnlineModel extends AlipayObject {
 	 */
 	@ApiField("app_online_version")
 	private String appOnlineVersion;
+
+	/**
+	 * 一个端的标识，用于区分不同的客户端，每接入一个客户端，都需要向小程序应用中心申请bundelId入驻
+	 */
+	@ApiField("bundle_id")
+	private String bundleId;
+
+	/**
+	 * 租户code，alipay or taobao
+	 */
+	@ApiField("inst_code")
+	private String instCode;
 
 	/**
 	 * 小程序ID
@@ -43,6 +55,20 @@ public class AlipayOpenMiniInnerversionOnlineModel extends AlipayObject {
 	}
 	public void setAppOnlineVersion(String appOnlineVersion) {
 		this.appOnlineVersion = appOnlineVersion;
+	}
+
+	public String getBundleId() {
+		return this.bundleId;
+	}
+	public void setBundleId(String bundleId) {
+		this.bundleId = bundleId;
+	}
+
+	public String getInstCode() {
+		return this.instCode;
+	}
+	public void setInstCode(String instCode) {
+		this.instCode = instCode;
 	}
 
 	public String getMiniAppId() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体afts平台视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2018-07-13 10:34:44
+ * @since 1.0, 2019-05-14 20:11:58
  */
 public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8815662573718192856L;
+	private static final long serialVersionUID = 6547973845859485767L;
 
 	/**
 	 * 商品信息,列表
@@ -22,6 +22,12 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	@ApiListField("goods_infos")
 	@ApiField("good_info")
 	private List<GoodInfo> goodsInfos;
+
+	/**
+	 * 视觉货柜机型信息
+	 */
+	@ApiField("machine_type")
+	private String machineType;
 
 	/**
 	 * 标识是什么场景下的视觉识别请求
@@ -36,6 +42,12 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	private String terminalId;
 
 	/**
+	 * 视觉货柜设备总层数
+	 */
+	@ApiField("total_floors")
+	private Long totalFloors;
+
+	/**
 	 * 云平台请求唯一标示,保证用户请求的幂等性.
 	 */
 	@ApiField("transaction_id")
@@ -46,6 +58,13 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	}
 	public void setGoodsInfos(List<GoodInfo> goodsInfos) {
 		this.goodsInfos = goodsInfos;
+	}
+
+	public String getMachineType() {
+		return this.machineType;
+	}
+	public void setMachineType(String machineType) {
+		this.machineType = machineType;
 	}
 
 	public String getScene() {
@@ -60,6 +79,13 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	}
 	public void setTerminalId(String terminalId) {
 		this.terminalId = terminalId;
+	}
+
+	public Long getTotalFloors() {
+		return this.totalFloors;
+	}
+	public void setTotalFloors(Long totalFloors) {
+		this.totalFloors = totalFloors;
 	}
 
 	public String getTransactionId() {

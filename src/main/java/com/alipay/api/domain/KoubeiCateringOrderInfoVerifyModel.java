@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单核销
  *
  * @author auto create
- * @since 1.0, 2019-04-10 15:37:45
+ * @since 1.0, 2019-05-17 15:18:06
  */
 public class KoubeiCateringOrderInfoVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4431193142656131613L;
+	private static final long serialVersionUID = 8271542133173179754L;
 
 	/**
 	 * 店铺ID

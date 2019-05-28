@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融代收付交易方信息
  *
  * @author auto create
- * @since 1.0, 2018-01-23 16:41:03
+ * @since 1.0, 2019-05-21 16:18:21
  */
 public class SceneProdPaymentAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1539726741249868932L;
+	private static final long serialVersionUID = 2678854259935458577L;
 
 	/**
 	 * 账号外标，如支付宝登录号,网商银行卡卡号
@@ -60,6 +60,12 @@ public class SceneProdPaymentAccountInfo extends AlipayObject {
 	 */
 	@ApiField("card_holder_name")
 	private String cardHolderName;
+
+	/**
+	 * 资产工具为外部银行卡时可填，且为外部贷记卡模式下必须填写为CC，其余无需填写。
+	 */
+	@ApiField("ext_card_type")
+	private String extCardType;
 
 	/**
 	 * 扩展信息，map格式
@@ -145,6 +151,13 @@ public class SceneProdPaymentAccountInfo extends AlipayObject {
 	}
 	public void setCardHolderName(String cardHolderName) {
 		this.cardHolderName = cardHolderName;
+	}
+
+	public String getExtCardType() {
+		return this.extCardType;
+	}
+	public void setExtCardType(String extCardType) {
+		this.extCardType = extCardType;
 	}
 
 	public String getExtInfo() {

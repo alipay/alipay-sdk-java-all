@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 驾驶证信息识别
  *
  * @author auto create
- * @since 1.0, 2018-05-09 12:19:54
+ * @since 1.0, 2019-04-26 12:38:15
  */
 public class AlipayIserviceCognitiveOcrDriverlicenseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1535183487358924993L;
+	private static final long serialVersionUID = 4872661276126153139L;
 
 	/**
 	 * 驾驶证图片base64加密后内容，大小控制在1.5M以内

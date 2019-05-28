@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆的品牌型号
  *
  * @author auto create
- * @since 1.0, 2019-04-04 11:15:59
+ * @since 1.0, 2019-05-27 21:05:58
  */
 public class CarModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3789643515399133319L;
+	private static final long serialVersionUID = 6879693965325733124L;
 
 	/**
 	 * 品牌名称
@@ -54,6 +54,18 @@ public class CarModel extends AlipayObject {
 	 */
 	@ApiField("seat")
 	private String seat;
+
+	/**
+	 * 最大额定座位数
+	 */
+	@ApiField("seat_max")
+	private String seatMax;
+
+	/**
+	 * 最小额定座位数
+	 */
+	@ApiField("seat_min")
+	private String seatMin;
 
 	/**
 	 * 车辆类型编码
@@ -126,6 +138,20 @@ public class CarModel extends AlipayObject {
 	}
 	public void setSeat(String seat) {
 		this.seat = seat;
+	}
+
+	public String getSeatMax() {
+		return this.seatMax;
+	}
+	public void setSeatMax(String seatMax) {
+		this.seatMax = seatMax;
+	}
+
+	public String getSeatMin() {
+		return this.seatMin;
+	}
+	public void setSeatMin(String seatMin) {
+		this.seatMin = seatMin;
 	}
 
 	public String getVehicleClassCode() {

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntlbsKBDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4474543528726111126L;
+	private static final long serialVersionUID = 1316145713414359661L;
 
 	/**
 	 * 全场代金的门槛金额

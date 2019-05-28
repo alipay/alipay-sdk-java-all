@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.offlinepayment.sign request
  * 
  * @author auto create
- * @since 1.0, 2019-03-26 21:45:00
+ * @since 1.0, 2019-04-26 17:10:00
  */
 public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadRequest<AlipayOpenAgentOfflinepaymentSignResponse> {
 
@@ -21,7 +21,7 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	private String apiVersion="1.0";
 
 	/** 
-	* 代商户操作事务编号，通过alipay.open.isv.agent.create接口进行创建。
+	* 代商户操作事务编号，通过alipay.open.agent.create接口进行创建。
 	 */
 	private String batchNo;
 

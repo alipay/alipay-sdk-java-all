@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 子订单明细
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @since 1.0, 2019-05-09 11:43:10
  */
 public class OrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1894628796158744982L;
+	private static final long serialVersionUID = 5873931479949751783L;
 
 	/**
 	 * 订单明细的应用唯一标识（16位纯数字），指商家的app_id。
@@ -27,6 +27,12 @@ public class OrderDetail extends AlipayObject {
 	 */
 	@ApiField("body")
 	private String body;
+
+	/**
+	 * 业务扩展参数
+	 */
+	@ApiField("extend_params")
+	private ExtendParams extendParams;
 
 	/**
 	 * 订单包含的商品列表信息.Json格式.
@@ -68,10 +74,23 @@ public class OrderDetail extends AlipayObject {
 	private String sellerLogonId;
 
 	/**
+	 * 描述结算信息，json格式，详见结算参数说明;
+直付通场景下必传
+	 */
+	@ApiField("settle_info")
+	private SettleInfo settleInfo;
+
+	/**
 	 * 商品的展示地址
 	 */
 	@ApiField("show_url")
 	private String showUrl;
+
+	/**
+	 * 二级商户信息，当前只对直付通特定场景下使用此字段
+	 */
+	@ApiField("sub_merchant")
+	private SubMerchant subMerchant;
 
 	/**
 	 * 订单标题
@@ -97,6 +116,13 @@ public class OrderDetail extends AlipayObject {
 	}
 	public void setBody(String body) {
 		this.body = body;
+	}
+
+	public ExtendParams getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(ExtendParams extendParams) {
+		this.extendParams = extendParams;
 	}
 
 	public List<GoodsDetail> getGoodsDetail() {
@@ -141,11 +167,25 @@ public class OrderDetail extends AlipayObject {
 		this.sellerLogonId = sellerLogonId;
 	}
 
+	public SettleInfo getSettleInfo() {
+		return this.settleInfo;
+	}
+	public void setSettleInfo(SettleInfo settleInfo) {
+		this.settleInfo = settleInfo;
+	}
+
 	public String getShowUrl() {
 		return this.showUrl;
 	}
 	public void setShowUrl(String showUrl) {
 		this.showUrl = showUrl;
+	}
+
+	public SubMerchant getSubMerchant() {
+		return this.subMerchant;
+	}
+	public void setSubMerchant(SubMerchant subMerchant) {
+		this.subMerchant = subMerchant;
 	}
 
 	public String getSubject() {

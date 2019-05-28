@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.sharetoken.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-04-15 11:30:21
  */
 public class AlipayMarketingSharetokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5172582382893474537L;
+	private static final long serialVersionUID = 1855845263355836312L;
 
 	/** 
 	 * 吱口令失效时间，若为空则表示永久有效

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建构建任务
  *
  * @author auto create
- * @since 1.0, 2019-04-10 13:57:37
+ * @since 1.0, 2019-05-13 10:54:51
  */
 public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1771717544995439584L;
+	private static final long serialVersionUID = 3354768745612613723L;
 
 	/**
 	 * IDE开发打包类型
@@ -110,10 +110,22 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	private String buildVersion;
 
 	/**
+	 * 一个端的标识，用于区分不同的客户端，每接入一个客户端，都需要向小程序应用中心申请bundelId入驻
+	 */
+	@ApiField("bundle_id")
+	private String bundleId;
+
+	/**
 	 * 多端类型
 	 */
 	@ApiField("client_type")
 	private String clientType;
+
+	/**
+	 * 上传调试版的接入租户类型。
+	 */
+	@ApiField("inst_code")
+	private String instCode;
 
 	/**
 	 * 小程序ID
@@ -233,11 +245,25 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 		this.buildVersion = buildVersion;
 	}
 
+	public String getBundleId() {
+		return this.bundleId;
+	}
+	public void setBundleId(String bundleId) {
+		this.bundleId = bundleId;
+	}
+
 	public String getClientType() {
 		return this.clientType;
 	}
 	public void setClientType(String clientType) {
 		this.clientType = clientType;
+	}
+
+	public String getInstCode() {
+		return this.instCode;
+	}
+	public void setInstCode(String instCode) {
+		this.instCode = instCode;
 	}
 
 	public String getMiniAppId() {

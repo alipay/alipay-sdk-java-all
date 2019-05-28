@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 团体资金单据明细，详细描述每笔单据中的资金来源去向
  *
  * @author auto create
- * @since 1.0, 2019-04-08 14:30:58
+ * @since 1.0, 2019-05-13 16:48:58
  */
 public class GroupFundDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7542188834954259931L;
+	private static final long serialVersionUID = 8296269365915215569L;
 
 	/**
 	 * 明细金额

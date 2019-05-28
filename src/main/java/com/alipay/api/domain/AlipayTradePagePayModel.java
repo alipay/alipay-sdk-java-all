@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单下单并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2019-03-22 14:52:33
+ * @since 1.0, 2019-05-10 17:35:46
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6767879988472737855L;
+	private static final long serialVersionUID = 4857278579631913499L;
 
 	/**
 	 * 签约参数，支付后签约场景使用
@@ -91,6 +91,12 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	 */
 	@ApiField("invoice_info")
 	private InvoiceInfo invoiceInfo;
+
+	/**
+	 * 商户原始订单号，最大长度限制32位
+	 */
+	@ApiField("merchant_order_no")
+	private String merchantOrderNo;
 
 	/**
 	 * 商户订单号,64个字符以内、可包含字母、数字、下划线；需保证在商户端不重复
@@ -273,6 +279,13 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	}
 	public void setInvoiceInfo(InvoiceInfo invoiceInfo) {
 		this.invoiceInfo = invoiceInfo;
+	}
+
+	public String getMerchantOrderNo() {
+		return this.merchantOrderNo;
+	}
+	public void setMerchantOrderNo(String merchantOrderNo) {
+		this.merchantOrderNo = merchantOrderNo;
 	}
 
 	public String getOutTradeNo() {

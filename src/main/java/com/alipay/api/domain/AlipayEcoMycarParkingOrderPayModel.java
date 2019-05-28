@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车缴费代扣接口API
  *
  * @author auto create
- * @since 1.0, 2019-04-04 08:45:10
+ * @since 1.0, 2019-05-20 22:57:52
  */
 public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8111896547414516982L;
+	private static final long serialVersionUID = 5492238237357791366L;
 
 	/**
 	 * 代扣返佣的支付宝用户号。
@@ -37,6 +37,14 @@ public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 	 */
 	@ApiField("car_number_color")
 	private String carNumberColor;
+
+	/**
+	 * 车场服务商指定是否开启垫付功能（若需开启，须实现签约支付宝停车垫资协议）：
+true开启，
+false不开启(默认)
+	 */
+	@ApiField("is_advance")
+	private Boolean isAdvance;
 
 	/**
 	 * ISV停车场ID，由ISV定义的停车场标识，系统唯一，parking_id和out_parking_id不能同时为空
@@ -109,6 +117,13 @@ public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 	}
 	public void setCarNumberColor(String carNumberColor) {
 		this.carNumberColor = carNumberColor;
+	}
+
+	public Boolean getIsAdvance() {
+		return this.isAdvance;
+	}
+	public void setIsAdvance(Boolean isAdvance) {
+		this.isAdvance = isAdvance;
 	}
 
 	public String getOutParkingId() {

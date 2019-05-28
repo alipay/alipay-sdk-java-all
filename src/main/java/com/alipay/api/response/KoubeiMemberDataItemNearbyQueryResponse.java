@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMemberDataItemNearbyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3218682758138647676L;
+	private static final long serialVersionUID = 8422671278524236375L;
 
 	/** 
 	 * 附近优惠商品列表,前端根据其中的字段展示即可

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息
  *
  * @author auto create
- * @since 1.0, 2018-09-21 13:48:07
+ * @since 1.0, 2019-05-20 20:35:17
  */
 public class GoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2118322236841124463L;
+	private static final long serialVersionUID = 2568311143952439783L;
 
 	/**
 	 * 支付宝定义的统一商品编号

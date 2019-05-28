@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 团体资金流入明细
  *
  * @author auto create
- * @since 1.0, 2019-04-08 14:50:21
+ * @since 1.0, 2019-04-12 14:24:20
  */
 public class GroupFundsImcomeDetails extends AlipayObject {
 
-	private static final long serialVersionUID = 2668977972267431678L;
+	private static final long serialVersionUID = 2698937852384513319L;
 
 	/**
 	 * 待付款金额,只支持两位小数点的正数,单位元

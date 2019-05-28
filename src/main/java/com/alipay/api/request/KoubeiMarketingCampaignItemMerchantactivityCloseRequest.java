@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.item.merchantactivity.close request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-05-07 10:06:24
  */
 public class KoubeiMarketingCampaignItemMerchantactivityCloseRequest implements AlipayRequest<KoubeiMarketingCampaignItemMerchantactivityCloseResponse> {
 

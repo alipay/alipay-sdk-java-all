@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用服务履约同步
  *
  * @author auto create
- * @since 1.0, 2019-03-04 15:01:11
+ * @since 1.0, 2019-04-19 13:47:46
  */
 public class ZhimaCreditEpSceneFulfillmentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8774588523995736383L;
+	private static final long serialVersionUID = 2298164794392946371L;
+
+	/**
+	 * 特定业务场景传输的扩展参数，以JSON形式传输。具体业务场景需要传入参数请参考<a href="https://docs.open.alipay.com/11270#s3">业务场景传输的扩展参数</a>
+	 */
+	@ApiField("biz_ext_param")
+	private String bizExtParam;
 
 	/**
 	 * 业务时间，日期格式为 yyyy-MM-dd HH:mm:ss
@@ -22,16 +28,23 @@ public class ZhimaCreditEpSceneFulfillmentSyncModel extends AlipayObject {
 	private Date bizTime;
 
 	/**
-	 * 信用订单号
+	 * 信用订单号，即调用zhima.credit.ep.scene.agreement.use返回的信用订单号。
 	 */
 	@ApiField("credit_order_no")
 	private String creditOrderNo;
 
 	/**
-	 * 商户请求的唯一标志，64位长度的字母数字下划线组合。该标识作为对账的关键信息，商户要保证其唯一性。
+	 * 商户请求订单号，必须唯一。用于唯一标识商户的一笔履约调用。
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	public String getBizExtParam() {
+		return this.bizExtParam;
+	}
+	public void setBizExtParam(String bizExtParam) {
+		this.bizExtParam = bizExtParam;
+	}
 
 	public Date getBizTime() {
 		return this.bizTime;

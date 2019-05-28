@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营业执照信息识别
  *
  * @author auto create
- * @since 1.0, 2018-05-14 23:14:36
+ * @since 1.0, 2019-04-26 12:38:40
  */
 public class AlipayIserviceCognitiveOcrBusinesslicenseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8888656596365342451L;
+	private static final long serialVersionUID = 7485447548955131225L;
 
 	/**
 	 * 营业执照图片base64加密后内容

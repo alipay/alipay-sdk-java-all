@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户查询接口
  *
  * @author auto create
- * @since 1.0, 2017-09-23 20:46:10
+ * @since 1.0, 2019-05-15 11:16:30
  */
 public class AlipayBossProdSubmerchantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3294324725763822113L;
+	private static final long serialVersionUID = 2429415353795561856L;
 
 	/**
 	 * 受理商户在受理机构下的唯一标识，与sub_merchant_id二选一必传

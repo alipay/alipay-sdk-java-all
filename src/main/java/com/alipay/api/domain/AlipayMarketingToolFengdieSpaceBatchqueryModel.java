@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询空间列表
  *
  * @author auto create
- * @since 1.0, 2018-08-19 16:17:14
+ * @since 1.0, 2019-05-22 14:31:13
  */
 public class AlipayMarketingToolFengdieSpaceBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5635749518721343433L;
+	private static final long serialVersionUID = 3384264747681831884L;
 
 	/**
 	 * 当前页数，默认为1

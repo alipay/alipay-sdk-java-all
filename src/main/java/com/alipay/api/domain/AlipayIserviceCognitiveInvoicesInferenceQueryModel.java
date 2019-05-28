@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增值税发票内容识别
  *
  * @author auto create
- * @since 1.0, 2019-01-25 17:15:05
+ * @since 1.0, 2019-04-26 12:37:51
  */
 public class AlipayIserviceCognitiveInvoicesInferenceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6379292412669437381L;
+	private static final long serialVersionUID = 2192428629864938888L;
 
 	/**
 	 * 图片base64加密后的内容

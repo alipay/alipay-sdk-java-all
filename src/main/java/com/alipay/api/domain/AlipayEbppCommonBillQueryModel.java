@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ebpp通用订单查询
  *
  * @author auto create
- * @since 1.0, 2018-07-30 22:10:42
+ * @since 1.0, 2019-05-10 10:30:04
  */
 public class AlipayEbppCommonBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4784727212689146378L;
+	private static final long serialVersionUID = 4552377184325793622L;
 
 	/**
 	 * 支付宝账单流水号（取自创建账单接口返回的alipay_order_no字段）

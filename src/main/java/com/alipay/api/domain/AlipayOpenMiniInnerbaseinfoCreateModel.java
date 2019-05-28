@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序创建接口
  *
  * @author auto create
- * @since 1.0, 2018-12-17 19:24:37
+ * @since 1.0, 2019-05-06 10:48:05
  */
 public class AlipayOpenMiniInnerbaseinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7493637741586828555L;
+	private static final long serialVersionUID = 5883739786146311519L;
 
 	/**
 	 * 小程序应用名称
@@ -36,6 +36,12 @@ public class AlipayOpenMiniInnerbaseinfoCreateModel extends AlipayObject {
 	 */
 	@ApiField("app_english_name")
 	private String appEnglishName;
+
+	/**
+	 * 淘宝鉴权key
+	 */
+	@ApiField("app_key")
+	private String appKey;
 
 	/**
 	 * 小程序logo图标，建议上传像素为180*180
@@ -69,10 +75,24 @@ public class AlipayOpenMiniInnerbaseinfoCreateModel extends AlipayObject {
 	private String appSubType;
 
 	/**
+	 * 小程序类型，H5 or RN，区分于 app_sub_type
+	 */
+	@ApiField("app_type")
+	private String appType;
+
+	/**
 	 * 多端类型
 	 */
 	@ApiField("client_type")
 	private String clientType;
+
+	/**
+	 * 租户编码，不同租户下的数据是隔离的
+支付宝：alipay
+淘宝：taobao
+	 */
+	@ApiField("inst_code")
+	private String instCode;
 
 	/**
 	 * 需要同步的小程序ID
@@ -140,6 +160,13 @@ ALIBABA：阿里域内应用
 		this.appEnglishName = appEnglishName;
 	}
 
+	public String getAppKey() {
+		return this.appKey;
+	}
+	public void setAppKey(String appKey) {
+		this.appKey = appKey;
+	}
+
 	public String getAppLogo() {
 		return this.appLogo;
 	}
@@ -175,11 +202,25 @@ ALIBABA：阿里域内应用
 		this.appSubType = appSubType;
 	}
 
+	public String getAppType() {
+		return this.appType;
+	}
+	public void setAppType(String appType) {
+		this.appType = appType;
+	}
+
 	public String getClientType() {
 		return this.clientType;
 	}
 	public void setClientType(String clientType) {
 		this.clientType = clientType;
+	}
+
+	public String getInstCode() {
+		return this.instCode;
+	}
+	public void setInstCode(String instCode) {
+		this.instCode = instCode;
 	}
 
 	public String getMiniAppId() {

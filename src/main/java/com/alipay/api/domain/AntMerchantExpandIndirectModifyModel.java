@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 银行间连商户修改
  *
  * @author auto create
- * @since 1.0, 2018-12-12 17:46:06
+ * @since 1.0, 2019-05-13 15:13:12
  */
 public class AntMerchantExpandIndirectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6722943668148118655L;
+	private static final long serialVersionUID = 6622412741448756393L;
 
 	/**
 	 * 商户地址信息
@@ -108,10 +108,32 @@ public class AntMerchantExpandIndirectModifyModel extends AlipayObject {
 	private List<String> payCodeInfo;
 
 	/**
+	 * 申请服务，不传默认申请当面付服务。
+允许同时申请多个服务，各服务的准入验证相互独立，服务申请实时生效；若已生效服务不在本次申请的服务列表中，会取消当前生效服务;当前可用服务请关注出参service_codes字段。</br>
+目前支持三种类型</br>
+PC：网站支付</br>
+APP：无线支付</br>
+F2F：当面付</br>
+</br>
+PC和APP对应线上，F2F对应线下。
+	 */
+	@ApiListField("service_codes")
+	@ApiField("string")
+	private List<String> serviceCodes;
+
+	/**
 	 * 商户客服电话
 	 */
 	@ApiField("service_phone")
 	private String servicePhone;
+
+	/**
+	 * 仅支持网站、APP信息，site_type必传
+网站必传site_url，APP必传site_name。
+	 */
+	@ApiListField("site_info")
+	@ApiField("site_info")
+	private List<SiteInfo> siteInfo;
 
 	/**
 	 * 间连受理商户的推荐组织。如果是银行自有商户入驻，则推荐组织为银行，如果是ISV推广的商户，那么商户推荐组织为ISV，如果是第三方支付机构的自有商户，则推荐组织为第三方支付机构。
@@ -223,11 +245,25 @@ public class AntMerchantExpandIndirectModifyModel extends AlipayObject {
 		this.payCodeInfo = payCodeInfo;
 	}
 
+	public List<String> getServiceCodes() {
+		return this.serviceCodes;
+	}
+	public void setServiceCodes(List<String> serviceCodes) {
+		this.serviceCodes = serviceCodes;
+	}
+
 	public String getServicePhone() {
 		return this.servicePhone;
 	}
 	public void setServicePhone(String servicePhone) {
 		this.servicePhone = servicePhone;
+	}
+
+	public List<SiteInfo> getSiteInfo() {
+		return this.siteInfo;
+	}
+	public void setSiteInfo(List<SiteInfo> siteInfo) {
+		this.siteInfo = siteInfo;
 	}
 
 	public String getSource() {

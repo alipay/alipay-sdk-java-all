@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加入信用服务
  *
  * @author auto create
- * @since 1.0, 2019-01-04 16:46:18
+ * @since 1.0, 2019-04-18 17:15:20
  */
 public class ZhimaCreditEpSceneAgreementUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1711472164629122277L;
+	private static final long serialVersionUID = 1124834897829472931L;
+
+	/**
+	 * 特定业务场景传输的扩展参数，以JSON形式传输。具体业务场景需要传入参数请参考<a href="https://docs.open.alipay.com/11270#s3">业务场景传输的扩展参数</a>
+	 */
+	@ApiField("biz_ext_param")
+	private String bizExtParam;
 
 	/**
 	 * 业务时间，日期格式为 yyyy-MM-dd HH:mm:ss
@@ -22,22 +28,29 @@ public class ZhimaCreditEpSceneAgreementUseModel extends AlipayObject {
 	private Date bizTime;
 
 	/**
-	 * 商户请求的唯一标志，64位长度的字母数字下划线组合。该标识作为对账的关键信息，商户要保证其唯一性。
+	 * 商户请求订单号，必须唯一。用于唯一标识商户的一笔业务请求。
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
 
 	/**
-	 * 条款编码
+	 * 条款编码。请参考<a href="https://docs.open.alipay.com/11270#s1">条款编码</a>
 	 */
 	@ApiField("provision_code")
 	private String provisionCode;
 
 	/**
-	 * 评估订单号
+	 * 评估订单号。在用户完成信用评估后可以获取。信用评估流程关联接口见：zhima.credit.ep.scene.rating.initialize；zhima.credit.ep.scene.rating.apply。
 	 */
 	@ApiField("rating_order_no")
 	private String ratingOrderNo;
+
+	public String getBizExtParam() {
+		return this.bizExtParam;
+	}
+	public void setBizExtParam(String bizExtParam) {
+		this.bizExtParam = bizExtParam;
+	}
 
 	public Date getBizTime() {
 		return this.bizTime;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * hellobike用户参与月卡打折活动行为日志回流接口
  *
  * @author auto create
- * @since 1.0, 2018-11-19 11:38:37
+ * @since 1.0, 2019-04-18 11:24:37
  */
 public class AlipayDataDataserviceHellobikeLogSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8476132539929459331L;
+	private static final long serialVersionUID = 8658478396232551735L;
 
 	/**
 	 * 业务类型，表示用户在参与hellobike月卡打折活动中发生的业务操作（领券和购买月卡）；有两个枚举值：getvoucher:领券；pay:购买月卡；该参数由hellobike调用方所执行的业务操作确定取值。

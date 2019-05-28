@@ -8,11 +8,24 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.order.pay response.
  * 
  * @author auto create
- * @since 1.0, 2019-04-04 08:45:10
+ * @since 1.0, 2019-05-20 22:57:59
  */
 public class AlipayEcoMycarParkingOrderPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6224295385482243196L;
+	private static final long serialVersionUID = 4153322673922357958L;
+
+	/** 
+	 * 垫资金额，不返回表示没有走垫资非空表示垫资支付的金额
+	 */
+	@ApiField("advance_amount")
+	private String advanceAmount;
+
+	/** 
+	 * 如果垫资金额不为空，则返回支付宝停车平台用户主动还款链接。服务商引导用户点击链接时，会跳转到用户在支付宝停车平台的待还款页面。
+服务商可保存该链接作为用户还款入口地址。
+	 */
+	@ApiField("alipay_repayment_url")
+	private String alipayRepaymentUrl;
 
 	/** 
 	 * 本次交易使用的支付渠道信息。详见（支付渠道信息）
@@ -52,6 +65,20 @@ public class AlipayEcoMycarParkingOrderPayResponse extends AlipayResponse {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public void setAdvanceAmount(String advanceAmount) {
+		this.advanceAmount = advanceAmount;
+	}
+	public String getAdvanceAmount( ) {
+		return this.advanceAmount;
+	}
+
+	public void setAlipayRepaymentUrl(String alipayRepaymentUrl) {
+		this.alipayRepaymentUrl = alipayRepaymentUrl;
+	}
+	public String getAlipayRepaymentUrl( ) {
+		return this.alipayRepaymentUrl;
+	}
 
 	public void setFundBillList(String fundBillList) {
 		this.fundBillList = fundBillList;

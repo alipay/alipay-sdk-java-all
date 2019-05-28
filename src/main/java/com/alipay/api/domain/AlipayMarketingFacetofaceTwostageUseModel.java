@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 当面付二阶段
  *
  * @author auto create
- * @since 1.0, 2018-10-22 17:53:22
+ * @since 1.0, 2019-04-15 11:29:39
  */
 public class AlipayMarketingFacetofaceTwostageUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7669281874799348818L;
+	private static final long serialVersionUID = 7195956873715773123L;
 
 	/**
 	 * 业务场景码，外部商户在接入时需要进行分配

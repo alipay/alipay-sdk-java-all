@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑餐饮行业商品修改接口
  *
  * @author auto create
- * @since 1.0, 2018-11-22 11:32:29
+ * @since 1.0, 2019-05-09 22:41:51
  */
 public class KoubeiCateringItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2755946113116384341L;
+	private static final long serialVersionUID = 4519494889791357893L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数

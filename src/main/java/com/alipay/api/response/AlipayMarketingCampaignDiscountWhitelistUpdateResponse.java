@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.discount.whitelist.update response.
  * 
  * @author auto create
- * @since 1.0, 2019-02-22 17:05:31
+ * @since 1.0, 2019-05-15 15:30:43
  */
 public class AlipayMarketingCampaignDiscountWhitelistUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7698714666129847994L;
+	private static final long serialVersionUID = 8382553212488276523L;
 
 	
 

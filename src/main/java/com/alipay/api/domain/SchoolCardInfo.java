@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园卡基本信息
  *
  * @author auto create
- * @since 1.0, 2019-03-25 09:13:17
+ * @since 1.0, 2019-04-12 15:41:58
  */
 public class SchoolCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4656644151577622979L;
+	private static final long serialVersionUID = 8496567492431832651L;
 
 	/**
 	 * 支付宝校园卡卡号
@@ -24,6 +24,12 @@ public class SchoolCardInfo extends AlipayObject {
 	 */
 	@ApiField("auth_type")
 	private String authType;
+
+	/**
+	 * 学号
+	 */
+	@ApiField("campus_no")
+	private String campusNo;
 
 	/**
 	 * 支付宝校园卡类型，1:学生卡；2.教工卡
@@ -56,6 +62,12 @@ public class SchoolCardInfo extends AlipayObject {
 	private String physicalCardNumber;
 
 	/**
+	 * 支付宝学校编码
+	 */
+	@ApiField("school_id")
+	private String schoolId;
+
+	/**
 	 * 学校名称
 	 */
 	@ApiField("school_name")
@@ -66,6 +78,12 @@ public class SchoolCardInfo extends AlipayObject {
 	 */
 	@ApiField("school_stdcode")
 	private String schoolStdcode;
+
+	/**
+	 * isv分配的学生短码
+	 */
+	@ApiField("short_code")
+	private String shortCode;
 
 	/**
 	 * 支付宝校园卡状态，0:无效，1:有效
@@ -91,6 +109,13 @@ public class SchoolCardInfo extends AlipayObject {
 	}
 	public void setAuthType(String authType) {
 		this.authType = authType;
+	}
+
+	public String getCampusNo() {
+		return this.campusNo;
+	}
+	public void setCampusNo(String campusNo) {
+		this.campusNo = campusNo;
 	}
 
 	public String getCardType() {
@@ -128,6 +153,13 @@ public class SchoolCardInfo extends AlipayObject {
 		this.physicalCardNumber = physicalCardNumber;
 	}
 
+	public String getSchoolId() {
+		return this.schoolId;
+	}
+	public void setSchoolId(String schoolId) {
+		this.schoolId = schoolId;
+	}
+
 	public String getSchoolName() {
 		return this.schoolName;
 	}
@@ -140,6 +172,13 @@ public class SchoolCardInfo extends AlipayObject {
 	}
 	public void setSchoolStdcode(String schoolStdcode) {
 		this.schoolStdcode = schoolStdcode;
+	}
+
+	public String getShortCode() {
+		return this.shortCode;
+	}
+	public void setShortCode(String shortCode) {
+		this.shortCode = shortCode;
 	}
 
 	public String getStatus() {

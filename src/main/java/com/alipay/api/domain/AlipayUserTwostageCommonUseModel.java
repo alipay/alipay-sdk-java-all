@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用当面付二阶段接口
  *
  * @author auto create
- * @since 1.0, 2019-01-16 14:35:50
+ * @since 1.0, 2019-04-29 22:59:34
  */
 public class AlipayUserTwostageCommonUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8496597651812571691L;
+	private static final long serialVersionUID = 1172376364718579749L;
 
 	/**
 	 * 商户扫描用户的付款码值。
@@ -26,7 +26,7 @@ public class AlipayUserTwostageCommonUseModel extends AlipayObject {
 	private String payPid;
 
 	/**
-	 * 业务场景唯一编号，用于标识这笔请求，每次调用请勿使用相同的sence_no，每笔请求的sence_no必须不一样，支付时传递的DYNAMIC_TOKEN_OUT_BIZ_NO必须与调用开放平台传递的sence_no保持一致。
+	 * 此项为商户收单时的商户订单号,64个字符以内、可包含字母、数字、下划线；需保证在商户端不重复。（请参考alipay.trade.pay接口的out_trade_no字段）
 	 */
 	@ApiField("sence_no")
 	private String senceNo;

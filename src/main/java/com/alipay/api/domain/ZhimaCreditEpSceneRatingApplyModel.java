@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用客户信用评估申请
  *
  * @author auto create
- * @since 1.0, 2019-01-09 14:58:53
+ * @since 1.0, 2019-04-19 13:53:57
  */
 public class ZhimaCreditEpSceneRatingApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8212923284339269191L;
+	private static final long serialVersionUID = 3438661637126587139L;
 
 	/**
 	 * 发起申请的环境，支持以下值：

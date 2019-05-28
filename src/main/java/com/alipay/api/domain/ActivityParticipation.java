@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻承诺消费-用户参加活动模型
  *
  * @author auto create
- * @since 1.0, 2018-11-28 17:52:20
+ * @since 1.0, 2019-04-30 10:22:32
  */
 public class ActivityParticipation extends AlipayObject {
 
-	private static final long serialVersionUID = 6546364214633721315L;
+	private static final long serialVersionUID = 8772341438379358672L;
 
 	/**
 	 * 承诺消费活动模型
@@ -109,6 +109,18 @@ E_CANCELLED - 未到期取消
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * 合约违约金额
+	 */
+	@ApiField("violation_amount")
+	private String violationAmount;
+
+	/**
+	 * 内部资产平台券是否可用
+	 */
+	@ApiField("voucher_available")
+	private Boolean voucherAvailable;
+
 	public Activity getActivity() {
 		return this.activity;
 	}
@@ -198,6 +210,20 @@ E_CANCELLED - 未到期取消
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getViolationAmount() {
+		return this.violationAmount;
+	}
+	public void setViolationAmount(String violationAmount) {
+		this.violationAmount = violationAmount;
+	}
+
+	public Boolean getVoucherAvailable() {
+		return this.voucherAvailable;
+	}
+	public void setVoucherAvailable(Boolean voucherAvailable) {
+		this.voucherAvailable = voucherAvailable;
 	}
 
 }

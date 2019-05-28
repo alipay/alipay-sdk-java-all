@@ -1,8 +1,11 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.InsProduct;
 import com.alipay.api.domain.Car;
+import com.alipay.api.domain.CarModel;
 
 import com.alipay.api.AlipayResponse;
 
@@ -10,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoinsprod.quote.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-26 15:32:20
+ * @since 1.0, 2019-04-19 13:25:01
  */
 public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1358146977133731742L;
+	private static final long serialVersionUID = 3546768638967448381L;
 
 	/** 
 	 * 商业险保费
@@ -63,6 +66,13 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("com_name")
 	private String comName;
+
+	/** 
+	 * 正确车险信息
+	 */
+	@ApiListField("correct_car_models")
+	@ApiField("car_model")
+	private List<CarModel> correctCarModels;
 
 	/** 
 	 * 车险询价申请号
@@ -172,6 +182,13 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	}
 	public String getComName( ) {
 		return this.comName;
+	}
+
+	public void setCorrectCarModels(List<CarModel> correctCarModels) {
+		this.correctCarModels = correctCarModels;
+	}
+	public List<CarModel> getCorrectCarModels( ) {
+		return this.correctCarModels;
 	}
 
 	public void setEnquiryBizId(String enquiryBizId) {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻信用承诺消费-活动模型
  *
  * @author auto create
- * @since 1.0, 2018-11-28 16:23:08
+ * @since 1.0, 2019-04-29 19:06:14
  */
 public class Activity extends AlipayObject {
 
-	private static final long serialVersionUID = 6861281762288375664L;
+	private static final long serialVersionUID = 3144469995476959977L;
 
 	/**
 	 * 活动名称，用于展示和区分活动，可重名
@@ -76,6 +76,12 @@ SHOP - 门店维度
 	 */
 	@ApiField("fulfil_dimension")
 	private String fulfilDimension;
+
+	/**
+	 * 开放平台接口调用者appId
+	 */
+	@ApiField("invoke_app_id")
+	private String invokeAppId;
 
 	/**
 	 * 商户外部活动号。需确保同一个商户Id下外部活动号唯一。
@@ -172,6 +178,13 @@ CONSUME_TIMES为"消费次数"。
 	}
 	public void setFulfilDimension(String fulfilDimension) {
 		this.fulfilDimension = fulfilDimension;
+	}
+
+	public String getInvokeAppId() {
+		return this.invokeAppId;
+	}
+	public void setInvokeAppId(String invokeAppId) {
+		this.invokeAppId = invokeAppId;
 	}
 
 	public String getOutActivityNo() {

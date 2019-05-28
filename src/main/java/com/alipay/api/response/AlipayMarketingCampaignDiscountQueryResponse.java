@@ -19,11 +19,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.discount.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-02-22 17:05:14
+ * @since 1.0, 2019-05-15 15:30:59
  */
 public class AlipayMarketingCampaignDiscountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5355283312365144888L;
+	private static final long serialVersionUID = 8223119417744666939L;
 
 	/** 
 	 * 活动唯一标示

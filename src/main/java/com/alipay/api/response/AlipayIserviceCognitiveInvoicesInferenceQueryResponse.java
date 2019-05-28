@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.invoices.inference.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-25 17:25:00
+ * @since 1.0, 2019-04-26 12:37:51
  */
 public class AlipayIserviceCognitiveInvoicesInferenceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3186566556261832168L;
+	private static final long serialVersionUID = 6586929296822923285L;
 
 	/** 
 	 * 算法版本

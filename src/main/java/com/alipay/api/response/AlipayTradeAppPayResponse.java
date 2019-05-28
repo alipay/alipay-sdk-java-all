@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.app.pay response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-22 17:05:00
+ * @since 1.0, 2019-05-10 17:38:02
  */
 public class AlipayTradeAppPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6682166638353517837L;
+	private static final long serialVersionUID = 1328434588515224964L;
+
+	/** 
+	 * 商户原始订单号，最大长度限制32位
+	 */
+	@ApiField("merchant_order_no")
+	private String merchantOrderNo;
 
 	/** 
 	 * 商户网站唯一订单号
@@ -38,6 +44,13 @@ public class AlipayTradeAppPayResponse extends AlipayResponse {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public void setMerchantOrderNo(String merchantOrderNo) {
+		this.merchantOrderNo = merchantOrderNo;
+	}
+	public String getMerchantOrderNo( ) {
+		return this.merchantOrderNo;
+	}
 
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;

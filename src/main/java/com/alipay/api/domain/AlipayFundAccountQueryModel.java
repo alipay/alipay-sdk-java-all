@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝资金账户资产查询接口
  *
  * @author auto create
- * @since 1.0, 2018-10-10 21:27:26
+ * @since 1.0, 2019-04-22 17:50:01
  */
 public class AlipayFundAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3864378255157758612L;
+	private static final long serialVersionUID = 5546816193584382231L;
 
 	/**
 	 * 开户产品码。如果查询托管子户余额，必传且必须传入与开户时传入的值一致。
