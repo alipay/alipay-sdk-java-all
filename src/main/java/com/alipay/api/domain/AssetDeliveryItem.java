@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料配送指令对象, 包括物料配送的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 数量, 收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2019-01-16 13:56:09
+ * @since 1.0, 2019-06-04 15:11:20
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1774824223898421245L;
+	private static final long serialVersionUID = 6127597878132295621L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -61,6 +61,30 @@ yyyy-MM-dd HH：mm:ss
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 配送指令单据明细ID
+	 */
+	@ApiField("delivery_assign_order_item_id")
+	private String deliveryAssignOrderItemId;
+
+	/**
+	 * 送货单号
+	 */
+	@ApiField("delivery_process_no")
+	private String deliveryProcessNo;
+
+	/**
+	 * 调拨指令承运方pid
+	 */
+	@ApiField("delivery_process_supplier_id")
+	private String deliveryProcessSupplierId;
+
+	/**
+	 * 调拨承运方供应商名称
+	 */
+	@ApiField("delivery_process_supplier_name")
+	private String deliveryProcessSupplierName;
 
 	/**
 	 * 发送地址
@@ -213,6 +237,34 @@ yyyy-MM-dd HH：mm:ss
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public String getDeliveryAssignOrderItemId() {
+		return this.deliveryAssignOrderItemId;
+	}
+	public void setDeliveryAssignOrderItemId(String deliveryAssignOrderItemId) {
+		this.deliveryAssignOrderItemId = deliveryAssignOrderItemId;
+	}
+
+	public String getDeliveryProcessNo() {
+		return this.deliveryProcessNo;
+	}
+	public void setDeliveryProcessNo(String deliveryProcessNo) {
+		this.deliveryProcessNo = deliveryProcessNo;
+	}
+
+	public String getDeliveryProcessSupplierId() {
+		return this.deliveryProcessSupplierId;
+	}
+	public void setDeliveryProcessSupplierId(String deliveryProcessSupplierId) {
+		this.deliveryProcessSupplierId = deliveryProcessSupplierId;
+	}
+
+	public String getDeliveryProcessSupplierName() {
+		return this.deliveryProcessSupplierName;
+	}
+	public void setDeliveryProcessSupplierName(String deliveryProcessSupplierName) {
+		this.deliveryProcessSupplierName = deliveryProcessSupplierName;
 	}
 
 	public AssetDeliveryAddress getFromAddress() {

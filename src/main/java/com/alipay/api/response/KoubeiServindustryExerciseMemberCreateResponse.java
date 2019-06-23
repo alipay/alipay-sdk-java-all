@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.exercise.member.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-02-25 15:44:28
+ * @since 1.0, 2019-06-05 17:35:01
  */
 public class KoubeiServindustryExerciseMemberCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8545525173627271556L;
+	private static final long serialVersionUID = 2623534465976831744L;
 
 	/** 
 	 * 口碑用户健身唯一ID，和支付宝userId一一对应

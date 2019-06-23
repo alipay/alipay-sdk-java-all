@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoinsprod.quote.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-04-19 13:25:01
+ * @since 1.0, 2019-05-29 11:20:01
  */
 public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3546768638967448381L;
+	private static final long serialVersionUID = 2718146536432311543L;
 
 	/** 
 	 * 商业险保费
@@ -91,6 +91,13 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("force_product")
 	private InsProduct forceProduct;
+
+	/** 
+	 * 支持的物流配送方式
+	 */
+	@ApiListField("logistics_models")
+	@ApiField("string")
+	private List<String> logisticsModels;
 
 	/** 
 	 * 报价ID
@@ -210,6 +217,13 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	}
 	public InsProduct getForceProduct( ) {
 		return this.forceProduct;
+	}
+
+	public void setLogisticsModels(List<String> logisticsModels) {
+		this.logisticsModels = logisticsModels;
+	}
+	public List<String> getLogisticsModels( ) {
+		return this.logisticsModels;
 	}
 
 	public void setQuoteBizId(String quoteBizId) {

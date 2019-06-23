@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.auto.autoinsprod.common.consult request
  * 
  * @author auto create
- * @since 1.0, 2019-05-20 11:32:15
+ * @since 1.0, 2019-05-29 11:25:01
  */
 public class AlipayInsAutoAutoinsprodCommonConsultRequest implements AlipayRequest<AlipayInsAutoAutoinsprodCommonConsultResponse> {
 

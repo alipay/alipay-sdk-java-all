@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoRenthouseCommonImageUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6648717863899286816L;
+	private static final long serialVersionUID = 2793359779291859154L;
 
 	/**
 	 * 文件内容字节数组Base64字符串,最大支持上传5M的文件

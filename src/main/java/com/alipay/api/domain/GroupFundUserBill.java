@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 团体资金用户参与流水模型
  *
  * @author auto create
- * @since 1.0, 2019-04-08 14:50:09
+ * @since 1.0, 2019-06-05 15:10:22
  */
 public class GroupFundUserBill extends AlipayObject {
 
-	private static final long serialVersionUID = 2299642676758862443L;
+	private static final long serialVersionUID = 5394774552543485731L;
 
 	/**
 	 * 实际待收待付金额，两位小数点的整数，单位元
@@ -54,6 +54,12 @@ public class GroupFundUserBill extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 批次是否过期
+	 */
+	@ApiField("timeout")
+	private Boolean timeout;
 
 	/**
 	 * 单据所属的支付宝账户ID，对于收款单表示待付款用户ID，对于付款单标识待收款用户ID
@@ -108,6 +114,13 @@ public class GroupFundUserBill extends AlipayObject {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public Boolean getTimeout() {
+		return this.timeout;
+	}
+	public void setTimeout(Boolean timeout) {
+		this.timeout = timeout;
 	}
 
 	public String getUserId() {

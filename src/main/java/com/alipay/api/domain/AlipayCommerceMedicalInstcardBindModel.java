@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于支付宝用户通过医院服务窗绑定当地社保卡
  *
  * @author auto create
- * @since 1.0, 2017-09-27 13:28:10
+ * @since 1.0, 2019-06-05 12:17:53
  */
 public class AlipayCommerceMedicalInstcardBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3788574392446556173L;
+	private static final long serialVersionUID = 7639364418846182544L;
 
 	/**
 	 * 区域编码，使用国家行政区划代码，可参看
@@ -28,6 +28,12 @@ return_params:外部商户提交给支付宝处理的请求参数,支付宝在�
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
+
+	/**
+	 * 机构编号
+	 */
+	@ApiField("ins_code")
+	private String insCode;
 
 	/**
 	 * 支付宝处理完请求后，如验证成功，当前页面自动跳转到商户网站里指定页面的http路径。
@@ -47,6 +53,13 @@ return_params:外部商户提交给支付宝处理的请求参数,支付宝在�
 	}
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public String getInsCode() {
+		return this.insCode;
+	}
+	public void setInsCode(String insCode) {
+		this.insCode = insCode;
 	}
 
 	public String getReturnUrl() {

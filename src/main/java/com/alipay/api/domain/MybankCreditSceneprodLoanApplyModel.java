@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融下单接口
  *
  * @author auto create
- * @since 1.0, 2019-05-23 09:48:25
+ * @since 1.0, 2019-06-05 10:22:30
  */
 public class MybankCreditSceneprodLoanApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5689588875859597823L;
+	private static final long serialVersionUID = 6473691968948511876L;
 
 	/**
 	 * 支付宝版本号
@@ -84,6 +84,25 @@ public class MybankCreditSceneprodLoanApplyModel extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 新车车贷
+01023200002000002828
+二手车车贷
+01023200002000002931
+转分期回租租金贷
+01023200002000003090
+新车直租租金贷
+01023200002000003206
+新车回租租金贷
+01023200002000003394
+二手车直租租金贷
+01023200002000002932
+二手车回租租金贷
+01023200002000003531
+	 */
+	@ApiField("sales_product_code")
+	private String salesProductCode;
 
 	/**
 	 * 场景代码，用于区分后续业务流程
@@ -191,6 +210,13 @@ public class MybankCreditSceneprodLoanApplyModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSalesProductCode() {
+		return this.salesProductCode;
+	}
+	public void setSalesProductCode(String salesProductCode) {
+		this.salesProductCode = salesProductCode;
 	}
 
 	public String getScene() {

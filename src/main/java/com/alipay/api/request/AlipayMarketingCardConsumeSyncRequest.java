@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.card.consume.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-03-06 14:43:14
+ * @since 1.0, 2019-06-04 16:55:01
  */
 public class AlipayMarketingCardConsumeSyncRequest implements AlipayRequest<AlipayMarketingCardConsumeSyncResponse> {
 

@@ -7,18 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝开放认证初始化服务
  *
  * @author auto create
- * @since 1.0, 2018-10-26 19:03:13
+ * @since 1.0, 2019-06-05 18:25:06
  */
 public class AlipayUserCertifyOpenInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8253325982542785588L;
+	private static final long serialVersionUID = 6481897433423961575L;
 
 	/**
 	 * 认证场景码。入参支持的认证场景码和商户签约的认证场景相关，取值如下:
-CERT：多因子证照认证
 FACE：多因子人脸认证
-FACE_CERT ：多因子证照和人脸认证
-TRUSTED：多因子快捷认证
+CERT_PHOTO：多因子证照认证
+CERT_PHOTO_FACE ：多因子证照和人脸认证
+SMART_FACE：多因子快捷认证
 	 */
 	@ApiField("biz_code")
 	private String bizCode;

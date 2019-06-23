@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalSvTpCardActionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3879258343187886647L;
+	private static final long serialVersionUID = 1513317885313167438L;
 
 	/**
 	 * 模板消息中行动编码，动态参数信息

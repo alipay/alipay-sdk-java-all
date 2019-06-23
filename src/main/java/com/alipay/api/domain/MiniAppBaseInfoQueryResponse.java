@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序基本信息返回
  *
  * @author auto create
- * @since 1.0, 2019-04-25 17:42:55
+ * @since 1.0, 2019-05-30 14:07:34
  */
 public class MiniAppBaseInfoQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3629793925274899853L;
+	private static final long serialVersionUID = 4235884342416236971L;
 
 	/**
 	 * 小程序应用描述
@@ -82,10 +82,16 @@ public class MiniAppBaseInfoQueryResponse extends AlipayObject {
 	private String miniAppId;
 
 	/**
-	 * 应用创建来源，1 = 支付宝，2 = 淘宝
+	 * 应用创建来源，alipay = 支付宝，taobao = 淘宝
 	 */
 	@ApiField("origin")
 	private String origin;
+
+	/**
+	 * 1：表示上线状态 0：初始化状态 -1 下架状态
+	 */
+	@ApiField("status")
+	private String status;
 
 	public String getAppDesc() {
 		return this.appDesc;
@@ -169,6 +175,13 @@ public class MiniAppBaseInfoQueryResponse extends AlipayObject {
 	}
 	public void setOrigin(String origin) {
 		this.origin = origin;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }

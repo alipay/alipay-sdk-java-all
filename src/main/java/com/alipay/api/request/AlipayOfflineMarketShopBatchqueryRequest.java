@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.market.shop.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-06-03 11:48:23
  */
 public class AlipayOfflineMarketShopBatchqueryRequest implements AlipayRequest<AlipayOfflineMarketShopBatchqueryResponse> {
 

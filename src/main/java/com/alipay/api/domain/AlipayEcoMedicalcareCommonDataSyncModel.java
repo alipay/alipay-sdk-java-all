@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMedicalcareCommonDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3337127917437269258L;
+	private static final long serialVersionUID = 8252471223625722661L;
 
 	/**
 	 * 为了区分相同ISV不同应用的编码，数据来源是类目平台

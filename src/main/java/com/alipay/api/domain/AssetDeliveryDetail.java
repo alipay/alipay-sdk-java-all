@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配送完成反馈详情
  *
  * @author auto create
- * @since 1.0, 2018-07-30 13:46:40
+ * @since 1.0, 2019-06-04 15:11:18
  */
 public class AssetDeliveryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5263791259826353713L;
+	private static final long serialVersionUID = 7641382273653719727L;
 
 	/**
 	 * 配送数量
@@ -33,6 +33,12 @@ public class AssetDeliveryDetail extends AlipayObject {
 	 */
 	@ApiField("batch_no")
 	private String batchNo;
+
+	/**
+	 * JSON格式扩展信息
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 物流单信息
@@ -60,6 +66,13 @@ public class AssetDeliveryDetail extends AlipayObject {
 	}
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public List<LogisticsInfo> getLogisticsInfos() {
