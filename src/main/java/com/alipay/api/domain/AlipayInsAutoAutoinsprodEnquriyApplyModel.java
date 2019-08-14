@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 询价接口
  *
  * @author auto create
- * @since 1.0, 2019-06-04 09:54:56
+ * @since 1.0, 2019-07-16 19:36:13
  */
 public class AlipayInsAutoAutoinsprodEnquriyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4171526972468855689L;
+	private static final long serialVersionUID = 2114414887766576497L;
 
 	/**
 	 * 代理人身份信息
@@ -42,6 +42,12 @@ public class AlipayInsAutoAutoinsprodEnquriyApplyModel extends AlipayObject {
 	 */
 	@ApiField("applicant")
 	private InsPerson applicant;
+
+	/**
+	 * 机构投保业务归属地信息
+	 */
+	@ApiField("apply_business_city")
+	private ApplyBusinessCity applyBusinessCity;
 
 	/**
 	 * 车辆信息
@@ -106,6 +112,13 @@ public class AlipayInsAutoAutoinsprodEnquriyApplyModel extends AlipayObject {
 	}
 	public void setApplicant(InsPerson applicant) {
 		this.applicant = applicant;
+	}
+
+	public ApplyBusinessCity getApplyBusinessCity() {
+		return this.applyBusinessCity;
+	}
+	public void setApplyBusinessCity(ApplyBusinessCity applyBusinessCity) {
+		this.applyBusinessCity = applyBusinessCity;
 	}
 
 	public Car getCar() {

@@ -8,20 +8,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.refund response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-10 21:00:00
+ * @since 1.0, 2019-07-27 01:14:03
  */
 public class AlipayFundTransRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8845872245297489735L;
+	private static final long serialVersionUID = 6253211288573725937L;
 
 	/** 
-	 * 该笔支付在支付宝系统内部的单据ID
+	 * 发红包时支付宝返回的支付宝订单号order_id。
 	 */
 	@ApiField("order_id")
 	private String orderId;
 
 	/** 
-	 * 标识一次退款请求，一笔退款失败后重新提交，要采用原来的退款单号。总退款金额不能超过用户实际支付金额。
+	 * 标识一次资金退回请求，一笔资金退回失败后重新提交，要采用原来的资金退回单号。总退款金额不能超过用户实际支付金额。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -33,7 +33,7 @@ public class AlipayFundTransRefundResponse extends AlipayResponse {
 	private String refundAmount;
 
 	/** 
-	 * 退款完成时间
+	 * 退款资金退回
 	 */
 	@ApiField("refund_date")
 	private String refundDate;

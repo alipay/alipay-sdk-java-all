@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户种植树统计信息，按树种、是否合种分类统计
  *
  * @author auto create
- * @since 1.0, 2019-03-05 12:34:47
+ * @since 1.0, 2019-08-09 20:46:26
  */
 public class TreeData extends AlipayObject {
 
-	private static final long serialVersionUID = 4497646678473978968L;
+	private static final long serialVersionUID = 2696496574334487235L;
 
 	/**
 	 * 是否合种。true：是合种，false：不是合种

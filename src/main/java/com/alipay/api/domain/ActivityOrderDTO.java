@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 活动各阶段订单模型
  *
  * @author auto create
- * @since 1.0, 2017-09-30 11:20:54
+ * @since 1.0, 2019-06-25 19:48:28
  */
 public class ActivityOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8215845283643198655L;
+	private static final long serialVersionUID = 6664568437728911155L;
 
 	/**
 	 * 工单中的审核信息

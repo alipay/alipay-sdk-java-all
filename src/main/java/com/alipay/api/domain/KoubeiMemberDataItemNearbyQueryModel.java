@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询附近优惠商品信息
  *
  * @author auto create
- * @since 1.0, 2018-12-02 23:27:01
+ * @since 1.0, 2019-06-28 18:01:30
  */
 public class KoubeiMemberDataItemNearbyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7618829167157998135L;
+	private static final long serialVersionUID = 2112167877261237528L;
 
 	/**
 	 * 城市编码，国标码

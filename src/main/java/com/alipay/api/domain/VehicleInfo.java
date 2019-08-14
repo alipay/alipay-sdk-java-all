@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 所有需要报价机构对应的精友码
  *
  * @author auto create
- * @since 1.0, 2019-05-27 21:05:58
+ * @since 1.0, 2019-07-30 17:10:23
  */
 public class VehicleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6183451841663558581L;
+	private static final long serialVersionUID = 6857122545823246318L;
 
 	/**
 	 * 保险公司ID

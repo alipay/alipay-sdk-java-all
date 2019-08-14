@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板字段规则
  *
  * @author auto create
- * @since 1.0, 2019-03-06 21:30:26
+ * @since 1.0, 2019-08-08 20:05:35
  */
 public class TemplateFieldRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3631354263634911252L;
+	private static final long serialVersionUID = 1255795747357288835L;
 
 	/**
 	 * 字段名称，现在支持如下几个Key（暂不支持自定义）

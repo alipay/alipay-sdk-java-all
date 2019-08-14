@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡模板投放渠道
  *
  * @author auto create
- * @since 1.0, 2019-03-06 21:30:03
+ * @since 1.0, 2019-08-08 20:05:50
  */
 public class PubChannelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7895799928325736494L;
+	private static final long serialVersionUID = 1736635231746151753L;
 
 	/**
 	 * 扩展信息，无需配置

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用收单申请接口
  *
  * @author auto create
- * @since 1.0, 2018-04-27 09:38:27
+ * @since 1.0, 2019-07-26 13:56:45
  */
 public class ZhimaMerchantOrderCreditCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3872965993689445742L;
+	private static final long serialVersionUID = 3455398464587157745L;
 
 	/**
 	 * 该笔订单的资金总金额，取值范围[0.01,100000000]，精确到小数点后2位。

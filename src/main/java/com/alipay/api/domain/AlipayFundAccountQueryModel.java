@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝资金账户资产查询接口
  *
  * @author auto create
- * @since 1.0, 2019-04-22 17:50:01
+ * @since 1.0, 2019-07-19 14:56:09
  */
 public class AlipayFundAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1678262124392444533L;
+	private static final long serialVersionUID = 5212731965627435347L;
 
 	/**
 	 * 开户产品码。如果查询托管子户余额，必传且必须传入与开户时传入的值一致。
@@ -20,10 +20,28 @@ public class AlipayFundAccountQueryModel extends AlipayObject {
 	private String accountProductCode;
 
 	/**
+	 * 开户场景码，与开户产品码不可同时传递。
+	 */
+	@ApiField("account_scene_code")
+	private String accountSceneCode;
+
+	/**
+	 * 查询的账号类型，如查询托管账户值为TRUSTEESHIP_ACCOUNT，查询余额户值为ACCTRANS_ACCOUNT
+	 */
+	@ApiField("account_type")
+	private String accountType;
+
+	/**
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * JSON格式，传递业务扩展参数，使用前请与支付宝工程师联系！
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 商户会员的唯一标识。如果传入的user_id为虚拟账户userId，此字段必传并比对一致性。
@@ -38,11 +56,32 @@ public class AlipayFundAccountQueryModel extends AlipayObject {
 		this.accountProductCode = accountProductCode;
 	}
 
+	public String getAccountSceneCode() {
+		return this.accountSceneCode;
+	}
+	public void setAccountSceneCode(String accountSceneCode) {
+		this.accountSceneCode = accountSceneCode;
+	}
+
+	public String getAccountType() {
+		return this.accountType;
+	}
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
+
 	public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getMerchantUserId() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.comptest.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-13 18:25:00
+ * @since 1.0, 2019-06-16 12:16:25
  */
 public class AlipayOpenPublicComptestCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5645835947834637649L;
+	private static final long serialVersionUID = 3711197447253259693L;
 
 	/** 
 	 * 1
@@ -20,11 +20,24 @@ public class AlipayOpenPublicComptestCreateResponse extends AlipayResponse {
 	@ApiField("result")
 	private String result;
 
+	/** 
+	 * 2
+	 */
+	@ApiField("resulttwo")
+	private String resulttwo;
+
 	public void setResult(String result) {
 		this.result = result;
 	}
 	public String getResult( ) {
 		return this.result;
+	}
+
+	public void setResulttwo(String resulttwo) {
+		this.resulttwo = resulttwo;
+	}
+	public String getResulttwo( ) {
+		return this.resulttwo;
 	}
 
 }

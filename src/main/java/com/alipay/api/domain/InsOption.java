@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保额选项
  *
  * @author auto create
- * @since 1.0, 2019-05-27 21:05:58
+ * @since 1.0, 2019-07-30 17:11:17
  */
 public class InsOption extends AlipayObject {
 
-	private static final long serialVersionUID = 7563571284362449859L;
+	private static final long serialVersionUID = 5815471796947788634L;
 
 	/**
 	 * 保额key

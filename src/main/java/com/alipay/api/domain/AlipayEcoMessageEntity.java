@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 城服消息实体类型
  *
  * @author auto create
- * @since 1.0, 2019-05-23 15:05:44
+ * @since 1.0, 2019-06-14 13:25:03
  */
 public class AlipayEcoMessageEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 6235266688448271755L;
+	private static final long serialVersionUID = 2888897132158785384L;
 
 	/**
 	 * (certificate_type/certificate_number/用户名字) 或者 alipay_user_id  必须有一个不为空。两个都不为空则以alipay_user_id为准
@@ -27,6 +27,7 @@ public class AlipayEcoMessageEntity extends AlipayObject {
 
 	/**
 	 * 证件号码.(certificate_type/certificate_number/certificate_username) 或者 alipay_user_id 必须有一个不为空。两个都不为空则以alipay_user_id为准.
+该字段为敏感字段，须做md5处理后传输。示例中值的明文为310101198011110010.
 	 */
 	@ApiField("certificate_number")
 	private String certificateNumber;
@@ -50,7 +51,8 @@ public class AlipayEcoMessageEntity extends AlipayObject {
 	private String cityCode;
 
 	/**
-	 * 消息扩展信息，json格式字符串. 大部分情况下为空
+	 * 消息参数信息，json格式字符串. 
+该字段与msg_type对应，不同类型的消息需要传不同的参数信息，详情参考接口补充说明.
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
@@ -62,7 +64,8 @@ public class AlipayEcoMessageEntity extends AlipayObject {
 	private Long industryType;
 
 	/**
-	 * 消息类型. 1=动账.2=账单.3=缴费.4=办件进度.5=证件到期.6=违章提醒
+	 * 消息类型. 1=动账.2=账单.3=缴费.4=办件进度.5=证件到期.6=违章提醒.
+更多请参考接口补充说明
 	 */
 	@ApiField("msg_type")
 	private Long msgType;

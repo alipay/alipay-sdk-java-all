@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.forest.tree.query request
  * 
  * @author auto create
- * @since 1.0, 2019-05-21 20:07:15
+ * @since 1.0, 2019-08-13 12:30:01
  */
 public class AlipaySocialForestTreeQueryRequest implements AlipayRequest<AlipaySocialForestTreeQueryResponse> {
 

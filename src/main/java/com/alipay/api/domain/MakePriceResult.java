@@ -7,17 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定价推荐价格列表返回类型
  *
  * @author auto create
- * @since 1.0, 2019-05-31 13:10:44
+ * @since 1.0, 2019-06-18 09:58:53
  */
 public class MakePriceResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4648654831662447444L;
+	private static final long serialVersionUID = 5419694882189643224L;
 
 	/**
 	 * 定价对象原价
 	 */
 	@ApiField("base_price_cent")
-	private Long basePriceCent;
+	private String basePriceCent;
 
 	/**
 	 * 定价对象类型
@@ -29,12 +29,12 @@ public class MakePriceResult extends AlipayObject {
 	 * 定价对象推荐价格
 	 */
 	@ApiField("promo_price")
-	private Long promoPrice;
+	private String promoPrice;
 
-	public Long getBasePriceCent() {
+	public String getBasePriceCent() {
 		return this.basePriceCent;
 	}
-	public void setBasePriceCent(Long basePriceCent) {
+	public void setBasePriceCent(String basePriceCent) {
 		this.basePriceCent = basePriceCent;
 	}
 
@@ -45,10 +45,10 @@ public class MakePriceResult extends AlipayObject {
 		this.productType = productType;
 	}
 
-	public Long getPromoPrice() {
+	public String getPromoPrice() {
 		return this.promoPrice;
 	}
-	public void setPromoPrice(Long promoPrice) {
+	public void setPromoPrice(String promoPrice) {
 		this.promoPrice = promoPrice;
 	}
 

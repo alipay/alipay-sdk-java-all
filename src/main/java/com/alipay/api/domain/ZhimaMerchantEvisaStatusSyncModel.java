@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子签证申请状态信息同步接口
  *
  * @author auto create
- * @since 1.0, 2019-03-22 18:02:41
+ * @since 1.0, 2019-07-05 09:56:54
  */
 public class ZhimaMerchantEvisaStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5754992458291727213L;
+	private static final long serialVersionUID = 4882149386211251992L;
 
 	/**
 	 * 信息同步类型：VERIFY - 材料材料审核状态同步/APPROVE - 签证批准状态同步。

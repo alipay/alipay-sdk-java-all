@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 平账通知处理
  *
  * @author auto create
- * @since 1.0, 2018-11-19 15:36:13
+ * @since 1.0, 2019-06-17 20:48:11
  */
 public class MybankCreditGuaranteeWriteoffPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2729332948479252232L;
+	private static final long serialVersionUID = 4756855241855553676L;
 
 	/**
 	 * 实际平账金额，单位分

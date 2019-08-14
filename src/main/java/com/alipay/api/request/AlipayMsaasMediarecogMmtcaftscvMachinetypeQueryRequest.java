@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayMsaasMediarecogMmtcaftscvMachinetypeQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcaftscv.machinetype.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-06-20 15:40:01
  */
 public class AlipayMsaasMediarecogMmtcaftscvMachinetypeQueryRequest implements AlipayRequest<AlipayMsaasMediarecogMmtcaftscvMachinetypeQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 视觉货柜机型查询
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayMsaasMediarecogMmtcaftscvMachinetypeQueryRequest implements A
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

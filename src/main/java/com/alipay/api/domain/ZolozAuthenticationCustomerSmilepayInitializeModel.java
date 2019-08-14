@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸初始化唤起zim
  *
  * @author auto create
- * @since 1.0, 2019-04-01 21:54:05
+ * @since 1.0, 2019-06-17 20:38:51
  */
 public class ZolozAuthenticationCustomerSmilepayInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5275463134297669335L;
+	private static final long serialVersionUID = 4166641312355336814L;
 
 	/**
 	 * { "apdidToken": "设备指纹", "appName": "应用名称", "appVersion": "应用版本", "bioMetaInfo": "生物信息如2.3.0:3,-4" }

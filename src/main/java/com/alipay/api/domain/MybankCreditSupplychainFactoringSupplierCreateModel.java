@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链金融-自保理-创建供应商
  *
  * @author auto create
- * @since 1.0, 2018-12-21 15:34:32
+ * @since 1.0, 2019-08-13 13:52:56
  */
 public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5352713889523124264L;
+	private static final long serialVersionUID = 3213342266638199684L;
 
 	/**
 	 * 采购商网商银行参与者会员ID
@@ -36,6 +36,18 @@ public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayO
 	 */
 	@ApiField("buyer_site_user_id")
 	private String buyerSiteUserId;
+
+	/**
+	 * 商户ID
+	 */
+	@ApiField("merchant_id")
+	private String merchantId;
+
+	/**
+	 * 运营商名称
+	 */
+	@ApiField("operator_name")
+	private String operatorName;
 
 	/**
 	 * 收款渠道
@@ -91,6 +103,48 @@ public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayO
 	@ApiField("seller_login_id")
 	private String sellerLoginId;
 
+	/**
+	 * 门店所属城市
+	 */
+	@ApiField("store_city")
+	private String storeCity;
+
+	/**
+	 * 门店所属区县
+	 */
+	@ApiField("store_county")
+	private String storeCounty;
+
+	/**
+	 * 门店名称
+	 */
+	@ApiField("store_name")
+	private String storeName;
+
+	/**
+	 * 门店编号
+	 */
+	@ApiField("store_no")
+	private String storeNo;
+
+	/**
+	 * 门店所属省份
+	 */
+	@ApiField("store_province")
+	private String storeProvince;
+
+	/**
+	 * 门店背后主体证件号
+	 */
+	@ApiField("store_subject_cert_no")
+	private String storeSubjectCertNo;
+
+	/**
+	 * 门店背后主体名称
+	 */
+	@ApiField("store_subject_name")
+	private String storeSubjectName;
+
 	public String getBuyerIpId() {
 		return this.buyerIpId;
 	}
@@ -117,6 +171,20 @@ public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayO
 	}
 	public void setBuyerSiteUserId(String buyerSiteUserId) {
 		this.buyerSiteUserId = buyerSiteUserId;
+	}
+
+	public String getMerchantId() {
+		return this.merchantId;
+	}
+	public void setMerchantId(String merchantId) {
+		this.merchantId = merchantId;
+	}
+
+	public String getOperatorName() {
+		return this.operatorName;
+	}
+	public void setOperatorName(String operatorName) {
+		this.operatorName = operatorName;
 	}
 
 	public String getRcvAccountType() {
@@ -180,6 +248,55 @@ public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayO
 	}
 	public void setSellerLoginId(String sellerLoginId) {
 		this.sellerLoginId = sellerLoginId;
+	}
+
+	public String getStoreCity() {
+		return this.storeCity;
+	}
+	public void setStoreCity(String storeCity) {
+		this.storeCity = storeCity;
+	}
+
+	public String getStoreCounty() {
+		return this.storeCounty;
+	}
+	public void setStoreCounty(String storeCounty) {
+		this.storeCounty = storeCounty;
+	}
+
+	public String getStoreName() {
+		return this.storeName;
+	}
+	public void setStoreName(String storeName) {
+		this.storeName = storeName;
+	}
+
+	public String getStoreNo() {
+		return this.storeNo;
+	}
+	public void setStoreNo(String storeNo) {
+		this.storeNo = storeNo;
+	}
+
+	public String getStoreProvince() {
+		return this.storeProvince;
+	}
+	public void setStoreProvince(String storeProvince) {
+		this.storeProvince = storeProvince;
+	}
+
+	public String getStoreSubjectCertNo() {
+		return this.storeSubjectCertNo;
+	}
+	public void setStoreSubjectCertNo(String storeSubjectCertNo) {
+		this.storeSubjectCertNo = storeSubjectCertNo;
+	}
+
+	public String getStoreSubjectName() {
+		return this.storeSubjectName;
+	}
+	public void setStoreSubjectName(String storeSubjectName) {
+		this.storeSubjectName = storeSubjectName;
 	}
 
 }

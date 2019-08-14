@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 中再核保结果查询
  *
  * @author auto create
- * @since 1.0, 2018-01-22 10:27:48
+ * @since 1.0, 2019-08-13 16:29:50
  */
 public class AlipayDataDataserviceChinaremodelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8513592615396745484L;
+	private static final long serialVersionUID = 1653689976183746827L;
 
 	/**
 	 * 体检记录id

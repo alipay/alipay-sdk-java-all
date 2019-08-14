@@ -5,6 +5,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TradeFundBill;
+import com.alipay.api.domain.TradeSettleInfo;
 import com.alipay.api.domain.VoucherDetail;
 
 import com.alipay.api.AlipayResponse;
@@ -13,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-28 21:15:01
+ * @since 1.0, 2019-07-23 13:45:54
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5158953318457343812L;
+	private static final long serialVersionUID = 7125853267797432891L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -240,6 +241,12 @@ json格式。
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	/** 
+	 * 返回的交易结算信息，包含分账、补差等信息
+	 */
+	@ApiField("trade_settle_info")
+	private TradeSettleInfo tradeSettleInfo;
 
 	/** 
 	 * 交易状态：WAIT_BUYER_PAY（交易创建，等待买家付款）、TRADE_CLOSED（未付款交易超时关闭，或支付完成后全额退款）、TRADE_SUCCESS（交易支付成功）、TRADE_FINISHED（交易结束，不可退款）
@@ -509,6 +516,13 @@ json格式。
 	}
 	public String getTradeNo( ) {
 		return this.tradeNo;
+	}
+
+	public void setTradeSettleInfo(TradeSettleInfo tradeSettleInfo) {
+		this.tradeSettleInfo = tradeSettleInfo;
+	}
+	public TradeSettleInfo getTradeSettleInfo( ) {
+		return this.tradeSettleInfo;
 	}
 
 	public void setTradeStatus(String tradeStatus) {

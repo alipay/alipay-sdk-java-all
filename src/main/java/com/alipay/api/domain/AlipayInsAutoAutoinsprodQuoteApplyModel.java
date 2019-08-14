@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报价申请接口
  *
  * @author auto create
- * @since 1.0, 2019-05-21 20:54:10
+ * @since 1.0, 2019-07-12 09:38:01
  */
 public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8453879447936358674L;
+	private static final long serialVersionUID = 8388974113536783628L;
 
 	/**
 	 * 商业险产品信息
@@ -76,6 +76,36 @@ public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 	 */
 	@ApiField("quote_type")
 	private String quoteType;
+
+	/**
+	 * 税务机构编码
+	 */
+	@ApiField("tax_inst_code")
+	private String taxInstCode;
+
+	/**
+	 * 税务机构名称
+	 */
+	@ApiField("tax_inst_name")
+	private String taxInstName;
+
+	/**
+	 * 完税凭证编码
+	 */
+	@ApiField("tax_payment_code")
+	private String taxPaymentCode;
+
+	/**
+	 * 完税评审日期，格式：yyyymmdd
+	 */
+	@ApiField("tax_payment_date")
+	private String taxPaymentDate;
+
+	/**
+	 * 是否完税标识
+	 */
+	@ApiField("tax_type")
+	private String taxType;
 
 	public InsProduct getBusinessProduct() {
 		return this.businessProduct;
@@ -145,6 +175,41 @@ public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 	}
 	public void setQuoteType(String quoteType) {
 		this.quoteType = quoteType;
+	}
+
+	public String getTaxInstCode() {
+		return this.taxInstCode;
+	}
+	public void setTaxInstCode(String taxInstCode) {
+		this.taxInstCode = taxInstCode;
+	}
+
+	public String getTaxInstName() {
+		return this.taxInstName;
+	}
+	public void setTaxInstName(String taxInstName) {
+		this.taxInstName = taxInstName;
+	}
+
+	public String getTaxPaymentCode() {
+		return this.taxPaymentCode;
+	}
+	public void setTaxPaymentCode(String taxPaymentCode) {
+		this.taxPaymentCode = taxPaymentCode;
+	}
+
+	public String getTaxPaymentDate() {
+		return this.taxPaymentDate;
+	}
+	public void setTaxPaymentDate(String taxPaymentDate) {
+		this.taxPaymentDate = taxPaymentDate;
+	}
+
+	public String getTaxType() {
+		return this.taxType;
+	}
+	public void setTaxType(String taxType) {
+		this.taxType = taxType;
 	}
 
 }

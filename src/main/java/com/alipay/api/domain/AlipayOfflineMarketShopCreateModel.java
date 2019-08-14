@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统商需要通过该接口在口碑平台帮助商户创建门店信息。
  *
  * @author auto create
- * @since 1.0, 2018-12-07 14:02:14
+ * @since 1.0, 2019-07-17 11:46:52
  */
 public class AlipayOfflineMarketShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7713943626388425438L;
+	private static final long serialVersionUID = 7675447686445773142L;
 
 	/**
 	 * 门店详细地址，地址字符长度在4-50个字符，注：不含省市区。门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层，“四川北路1552号欢乐广场1楼”。
@@ -179,7 +179,7 @@ public class AlipayOfflineMarketShopCreateModel extends AlipayObject {
 	 * 经度；最长15位字符（包括小数点）， 注：高德坐标系。经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
 	 */
 	@ApiField("longitude")
-	private Long longitude;
+	private String longitude;
 
 	/**
 	 * 门店首图，非常重要，推荐尺寸2000*1500。
@@ -485,10 +485,10 @@ online_pay：在线买单。ISV不可以指定此字段，ISV泛行业开店默�
 		this.licenceName = licenceName;
 	}
 
-	public Long getLongitude() {
+	public String getLongitude() {
 		return this.longitude;
 	}
-	public void setLongitude(Long longitude) {
+	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 

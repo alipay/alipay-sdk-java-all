@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.merge.precreate response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-21 20:00:00
+ * @since 1.0, 2019-07-04 21:05:15
  */
 public class AlipayFundTransMergePrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8687268459814923586L;
+	private static final long serialVersionUID = 7147444538337161917L;
 
 	/** 
 	 * 合并转账单据号

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 多端小程序-真机预览接口
  *
  * @author auto create
- * @since 1.0, 2019-05-13 11:00:27
+ * @since 1.0, 2019-07-01 14:34:25
  */
 public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6242999536179161687L;
+	private static final long serialVersionUID = 3342935829377546289L;
 
 	/**
 	 * 构建参数- JSAPI 权限文件, JSON 字符串
@@ -24,6 +27,12 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	 */
 	@ApiField("build_pkg_url")
 	private String buildPkgUrl;
+
+	/**
+	 * 构建参数-IDE 构建好的plugin包地址，小程序插件的有两个构建产物client包和plugin包，该场景下client包地址通过build_pkg_url传递，plugin包地址通过本参数传递
+	 */
+	@ApiField("build_plugin_url")
+	private String buildPluginUrl;
 
 	/**
 	 * 一个端的标识，用于区分不同的客户端，每接入一个客户端，都需要向小程序应用中心申请bundelId入驻
@@ -56,6 +65,13 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	private String miniAppId;
 
 	/**
+	 * 小程序代码中引用的插件列表，包含插件id和插件版本信息
+	 */
+	@ApiListField("plugin_refs")
+	@ApiField("mini_app_plugin_reference")
+	private List<MiniAppPluginReference> pluginRefs;
+
+	/**
 	 * 预览类型，目前分为“DEBUG(调试版)、TRIAL(试用版)”
 	 */
 	@ApiField("scene")
@@ -73,6 +89,13 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	}
 	public void setBuildPkgUrl(String buildPkgUrl) {
 		this.buildPkgUrl = buildPkgUrl;
+	}
+
+	public String getBuildPluginUrl() {
+		return this.buildPluginUrl;
+	}
+	public void setBuildPluginUrl(String buildPluginUrl) {
+		this.buildPluginUrl = buildPluginUrl;
 	}
 
 	public String getBundleId() {
@@ -108,6 +131,13 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public List<MiniAppPluginReference> getPluginRefs() {
+		return this.pluginRefs;
+	}
+	public void setPluginRefs(List<MiniAppPluginReference> pluginRefs) {
+		this.pluginRefs = pluginRefs;
 	}
 
 	public String getScene() {

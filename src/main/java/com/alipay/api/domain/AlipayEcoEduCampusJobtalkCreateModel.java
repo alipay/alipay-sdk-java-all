@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 宣讲会新增与刷新接口
  *
  * @author auto create
- * @since 1.0, 2017-08-03 10:59:23
+ * @since 1.0, 2019-06-27 13:59:16
  */
 public class AlipayEcoEduCampusJobtalkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4878869441773796675L;
+	private static final long serialVersionUID = 5639243953612152579L;
 
 	/**
 	 * 公司在合作方的唯一标识id

@@ -7,17 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 奖品发放规则
  *
  * @author auto create
- * @since 1.0, 2017-06-05 11:25:25
+ * @since 1.0, 2019-06-27 19:09:24
  */
 public class SendRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2289829737898192176L;
+	private static final long serialVersionUID = 8474623481333552859L;
 
 	/**
 	 * 是否允许重复发奖：
 true代表允许，false代表不允许
 默认不设置，表明用户领取券后如果没有核销则不允许再次领取券
-如果设置为true，表明如果用户领取券后没有核销，还可以继续领取该券
+如果设置为true，表明如果用户领取券后没有核销，还可以继续领取该券（只有配置publish_channels中type为URL_WITH_TOKEN外部发券时，该字段生效）
 	 */
 	@ApiField("allow_repeat_send")
 	private String allowRepeatSend;

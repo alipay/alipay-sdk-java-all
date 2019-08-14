@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.edu.campus.job.create request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-07-01 17:50:01
  */
 public class AlipayEcoEduCampusJobCreateRequest implements AlipayRequest<AlipayEcoEduCampusJobCreateResponse> {
 

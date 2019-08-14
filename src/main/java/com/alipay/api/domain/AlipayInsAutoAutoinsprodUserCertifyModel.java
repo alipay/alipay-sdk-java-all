@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代理人实名认证接口
  *
  * @author auto create
- * @since 1.0, 2019-02-18 21:37:25
+ * @since 1.0, 2019-07-30 17:04:25
  */
 public class AlipayInsAutoAutoinsprodUserCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6113566197473238751L;
+	private static final long serialVersionUID = 1112811545513999181L;
 
 	/**
 	 * 代理人姓名

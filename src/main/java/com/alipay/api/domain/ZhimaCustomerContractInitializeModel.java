@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻可信电子合约初始化
  *
  * @author auto create
- * @since 1.0, 2017-10-26 17:38:16
+ * @since 1.0, 2019-06-21 14:07:37
  */
 public class ZhimaCustomerContractInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6123969147353355445L;
+	private static final long serialVersionUID = 7381951541165412182L;
 
 	/**
 	 * 合约内容，必须是PDF文件流，BASE64编码

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.order.app.freeze response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-25 11:25:00
+ * @since 1.0, 2019-06-12 22:35:01
  */
 public class AlipayFundAuthOrderAppFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8855657942824936326L;
+	private static final long serialVersionUID = 6129853723971949561L;
 
 	/** 
 	 * 本次操作冻结的金额，单位为：元（人民币），精确到小数点后两位

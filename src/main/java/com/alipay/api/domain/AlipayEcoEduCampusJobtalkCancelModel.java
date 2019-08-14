@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 宣讲会下架接口
  *
  * @author auto create
- * @since 1.0, 2017-08-03 10:59:08
+ * @since 1.0, 2019-06-27 13:59:39
  */
 public class AlipayEcoEduCampusJobtalkCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3759219219287556932L;
+	private static final long serialVersionUID = 7319321548296621533L;
 
 	/**
 	 * 备用字段，json格式

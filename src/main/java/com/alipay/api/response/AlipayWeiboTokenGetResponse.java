@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.weibo.token.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2019-07-24 15:00:21
  */
 public class AlipayWeiboTokenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3336712269838267926L;
+	private static final long serialVersionUID = 4424555442274955142L;
 
 	/** 
 	 * 访问账单查询的临时令牌

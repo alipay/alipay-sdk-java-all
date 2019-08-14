@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 算法入参图片信息
  *
  * @author auto create
- * @since 1.0, 2019-04-02 11:22:36
+ * @since 1.0, 2019-07-31 19:43:45
  */
 public class ImageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7529566463225227797L;
+	private static final long serialVersionUID = 5667127997883119725L;
 
 	/**
 	 * 图片aftsId或者url
@@ -20,10 +20,22 @@ public class ImageInfo extends AlipayObject {
 	private String image;
 
 	/**
-	 * 传入图片类型，ID表示aftsId，URL表示图片url地址
+	 * 传入图片类型
 	 */
 	@ApiField("image_type")
 	private String imageType;
+
+	/**
+	 * 图片数据md5值
+	 */
+	@ApiField("md_5")
+	private String md5;
+
+	/**
+	 * 图片数据标识名
+	 */
+	@ApiField("name")
+	private String name;
 
 	public String getImage() {
 		return this.image;
@@ -37,6 +49,20 @@ public class ImageInfo extends AlipayObject {
 	}
 	public void setImageType(String imageType) {
 		this.imageType = imageType;
+	}
+
+	public String getMd5() {
+		return this.md5;
+	}
+	public void setMd5(String md5) {
+		this.md5 = md5;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

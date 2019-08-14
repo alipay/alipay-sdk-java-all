@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑凭证码查询
  *
  * @author auto create
- * @since 1.0, 2018-09-28 22:20:38
+ * @since 1.0, 2019-07-26 17:37:07
  */
 public class KoubeiTradeTicketTicketcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2421232934421363745L;
+	private static final long serialVersionUID = 8351165867345394456L;
 
 	/**
 	 * 口碑门店id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 离线变量查询
  *
  * @author auto create
- * @since 1.0, 2018-10-24 11:24:37
+ * @since 1.0, 2019-07-29 16:06:52
  */
 public class SsdataDataserviceRiskOfflinevarsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6297377472282427222L;
+	private static final long serialVersionUID = 6267864213591348544L;
 
 	/**
 	 * 查询离线变量的主键

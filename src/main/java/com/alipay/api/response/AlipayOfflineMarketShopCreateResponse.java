@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.shop.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-07-17 12:00:01
  */
 public class AlipayOfflineMarketShopCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3338153344341898658L;
+	private static final long serialVersionUID = 3269188799896143545L;
 
 	/** 
 	 * 开店请求受理成功后返回的支付宝流水ID，根据此ID调用接口

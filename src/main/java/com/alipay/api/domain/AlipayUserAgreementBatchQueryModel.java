@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人代扣协议批量查询接口
  *
  * @author auto create
- * @since 1.0, 2018-01-05 16:51:41
+ * @since 1.0, 2019-06-06 14:17:40
  */
 public class AlipayUserAgreementBatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1769897974483123658L;
+	private static final long serialVersionUID = 3529927468494945524L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。本参数与alipay_user_id 不可同时为空，若都填写，则以alipay_user_id 为准。

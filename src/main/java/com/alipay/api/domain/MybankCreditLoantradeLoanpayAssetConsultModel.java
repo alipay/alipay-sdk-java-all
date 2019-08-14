@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 贷款支付单通道资产分期方案咨询
  *
  * @author auto create
- * @since 1.0, 2018-10-25 15:25:04
+ * @since 1.0, 2019-07-17 21:19:28
  */
 public class MybankCreditLoantradeLoanpayAssetConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2224176732847458317L;
+	private static final long serialVersionUID = 3389151989161938734L;
 
 	/**
 	 * 支付宝签约商户ID，如PARTNER_ALIBABA_CN, PARTNER_TAOBAO_ORDER

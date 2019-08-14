@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 城服用户消息触达
  *
  * @author auto create
- * @since 1.0, 2019-05-27 16:54:58
+ * @since 1.0, 2019-06-13 15:23:13
  */
 public class AlipayEcoCityserviceMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2229421597911437956L;
+	private static final long serialVersionUID = 3414713595691841169L;
 
 	/**
 	 * 消息条数，默认1，需和msg_list数组中消息实际条数保持一致，上限1000条
@@ -23,7 +23,7 @@ public class AlipayEcoCityserviceMessageSendModel extends AlipayObject {
 	private Long batchSize;
 
 	/**
-	 * 敏感字段加密类型，空表示不加密，目前支持md5，默认加密字段是msg_list中每条消息的“certificate_number”字段
+	 * 敏感字段加密类型，目前支持md5，默认加密字段是msg_list中每条消息的“certificate_number”字段
 	 */
 	@ApiField("encrypt_type")
 	private String encryptType;

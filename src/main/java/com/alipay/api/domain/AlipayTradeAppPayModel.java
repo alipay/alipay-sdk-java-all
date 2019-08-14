@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * app支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2019-05-10 17:37:31
+ * @since 1.0, 2019-07-19 11:59:12
  */
 public class AlipayTradeAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7373836617165235985L;
+	private static final long serialVersionUID = 3664849356894998817L;
+
+	/**
+	 * 签约参数。如果希望在sdk中支付并签约，需要在这里传入签约信息。
+	 */
+	@ApiField("agreement_sign_params")
+	private SignParams agreementSignParams;
 
 	/**
 	 * 对一笔交易的具体描述信息。如果是多种商品，请将商品描述字符串累加传给body。
@@ -157,6 +163,13 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
+
+	public SignParams getAgreementSignParams() {
+		return this.agreementSignParams;
+	}
+	public void setAgreementSignParams(SignParams agreementSignParams) {
+		this.agreementSignParams = agreementSignParams;
+	}
 
 	public String getBody() {
 		return this.body;

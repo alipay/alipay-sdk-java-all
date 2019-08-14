@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚁盾音频内容识别关键词管理
  *
  * @author auto create
- * @since 1.0, 2018-01-19 20:00:47
+ * @since 1.0, 2019-07-29 16:06:21
  */
 public class SsdataDataserviceRiskAudioSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8699187265759195641L;
+	private static final long serialVersionUID = 1234922531384497185L;
 
 	/**
 	 * 关键词创建人，也即使用者

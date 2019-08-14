@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用回调接口
  *
  * @author auto create
- * @since 1.0, 2019-05-29 10:48:41
+ * @since 1.0, 2019-07-30 17:08:24
  */
 public class AlipayInsAutoAutoinsprodCommonConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3227235424216489586L;
+	private static final long serialVersionUID = 5729239379193773414L;
 
 	/**
 	 * 业务内容

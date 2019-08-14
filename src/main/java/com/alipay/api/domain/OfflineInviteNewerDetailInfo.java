@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线下拉新结算明细数据模型
  *
  * @author auto create
- * @since 1.0, 2019-05-13 14:37:08
+ * @since 1.0, 2019-07-15 11:39:55
  */
 public class OfflineInviteNewerDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3642898319664527366L;
+	private static final long serialVersionUID = 1145778357874149236L;
 
 	/**
 	 * 城市
 	 */
 	@ApiField("city_name")
 	private String cityName;
+
+	/**
+	 * 扩展信息字段
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 被邀请手机号
@@ -86,6 +92,13 @@ public class OfflineInviteNewerDetailInfo extends AlipayObject {
 	}
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getInvitedPhone() {

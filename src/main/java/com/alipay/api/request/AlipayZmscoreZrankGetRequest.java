@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.zmscore.zrank.get request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2019-08-13 16:30:45
  */
 public class AlipayZmscoreZrankGetRequest implements AlipayRequest<AlipayZmscoreZrankGetResponse> {
 

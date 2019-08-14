@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 改api为数立提供验证码识别服务。isv可以通过该接口，使用我们的图片识别能力。
  *
  * @author auto create
- * @since 1.0, 2018-01-22 10:26:43
+ * @since 1.0, 2019-08-13 16:30:28
  */
 public class AlipayDataDataserviceCodeRecoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2495762613497561551L;
+	private static final long serialVersionUID = 1674443179588492162L;
 
 	/**
 	 * 参数配置：内容包括验证码之类，长度，是否可分割等

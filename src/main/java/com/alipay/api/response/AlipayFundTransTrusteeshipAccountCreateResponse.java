@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.ExtCardInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.trusteeship.account.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-04-22 17:52:18
+ * @since 1.0, 2019-07-04 19:09:33
  */
 public class AlipayFundTransTrusteeshipAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3149315136467533845L;
+	private static final long serialVersionUID = 5484721755471122194L;
 
 	/** 
 	 * 开设的支付宝账号user_id
@@ -20,11 +21,24 @@ public class AlipayFundTransTrusteeshipAccountCreateResponse extends AlipayRespo
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
 
+	/** 
+	 * 场景余额模式外标卡信息
+	 */
+	@ApiField("ext_card_info")
+	private ExtCardInfo extCardInfo;
+
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 	public String getAlipayUserId( ) {
 		return this.alipayUserId;
+	}
+
+	public void setExtCardInfo(ExtCardInfo extCardInfo) {
+		this.extCardInfo = extCardInfo;
+	}
+	public ExtCardInfo getExtCardInfo( ) {
+		return this.extCardInfo;
 	}
 
 }

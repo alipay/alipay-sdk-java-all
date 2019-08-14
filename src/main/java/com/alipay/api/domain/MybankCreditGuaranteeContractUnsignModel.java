@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 担保服务取消
  *
  * @author auto create
- * @since 1.0, 2018-11-19 15:36:52
+ * @since 1.0, 2019-06-17 20:43:49
  */
 public class MybankCreditGuaranteeContractUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8471228131934866736L;
+	private static final long serialVersionUID = 1577381828942652759L;
 
 	/**
 	 * 会员站点：AE:速卖通，ALIPAY:支付宝，MYBANK:网商银行，TAOBAO：淘宝，B2B_CN：中文站，B2B_EN：国际站

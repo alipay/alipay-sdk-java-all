@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序内容风险检测服务
  *
  * @author auto create
- * @since 1.0, 2018-07-13 18:26:08
+ * @since 1.0, 2019-07-29 16:06:11
  */
 public class AlipaySecurityRiskContentDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4347878737594543126L;
+	private static final long serialVersionUID = 4464736869771334645L;
 
 	/**
 	 * 需要识别的文本，不要包含特殊字符以及双引号等可能引起json格式化错误问题的字符.

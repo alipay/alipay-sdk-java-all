@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 险种责任
  *
  * @author auto create
- * @since 1.0, 2019-05-27 21:05:58
+ * @since 1.0, 2019-07-30 17:11:17
  */
 public class InsLiability extends AlipayObject {
 
-	private static final long serialVersionUID = 2193349347985728362L;
+	private static final long serialVersionUID = 3178445532468761335L;
 
 	/**
 	 * 保额
@@ -63,6 +63,12 @@ public class InsLiability extends AlipayObject {
 	 */
 	@ApiField("liability_premium")
 	private String liabilityPremium;
+
+	/**
+	 * 责任险种比率
+	 */
+	@ApiField("liability_rates")
+	private String liabilityRates;
 
 	/**
 	 * options
@@ -137,6 +143,13 @@ public class InsLiability extends AlipayObject {
 	}
 	public void setLiabilityPremium(String liabilityPremium) {
 		this.liabilityPremium = liabilityPremium;
+	}
+
+	public String getLiabilityRates() {
+		return this.liabilityRates;
+	}
+	public void setLiabilityRates(String liabilityRates) {
+		this.liabilityRates = liabilityRates;
 	}
 
 	public List<InsOption> getOptions() {

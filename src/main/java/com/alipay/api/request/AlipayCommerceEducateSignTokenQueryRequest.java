@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.sign.token.query request
  * 
  * @author auto create
- * @since 1.0, 2019-06-03 10:52:36
+ * @since 1.0, 2019-07-29 20:00:01
  */
 public class AlipayCommerceEducateSignTokenQueryRequest implements AlipayRequest<AlipayCommerceEducateSignTokenQueryResponse> {
 

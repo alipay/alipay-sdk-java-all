@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务订单明细实施项单项取消
  *
  * @author auto create
- * @since 1.0, 2018-07-06 14:51:53
+ * @since 1.0, 2019-07-30 18:05:54
  */
 public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6698521222673521895L;
+	private static final long serialVersionUID = 4178426478621696624L;
 
 	/**
 	 * 当前门店区域不支持实施

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.settle.confirm.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-10 17:49:14
+ * @since 1.0, 2019-07-08 15:18:03
  */
 public class AlipayTradeSettleConfirmCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8141761582691153254L;
+	private static final long serialVersionUID = 2658715451951536892L;
 
 	/** 
 	 * 原始确认结算时的请求号，对应于需要撤销的那笔请求

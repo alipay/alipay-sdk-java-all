@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户主动还款试算
  *
  * @author auto create
- * @since 1.0, 2018-10-11 23:24:16
+ * @since 1.0, 2019-06-18 15:31:43
  */
 public class MybankCreditLoantradeRepayBudgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6892915291931148783L;
+	private static final long serialVersionUID = 4583786228253693786L;
 
 	/**
 	 * 申请还款金额，如果budget_type为TOTAL_AMT，则填写还款总金额，如果为PRIN_AMT则填写还款本金

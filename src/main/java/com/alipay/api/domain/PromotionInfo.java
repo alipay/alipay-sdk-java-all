@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境游发现平台优惠券详情
  *
  * @author auto create
- * @since 1.0, 2018-01-12 11:23:54
+ * @since 1.0, 2019-08-07 15:20:09
  */
 public class PromotionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5739432743114873463L;
+	private static final long serialVersionUID = 6651615447161782696L;
 
 	/**
 	 * 优惠品牌
@@ -90,6 +90,12 @@ public class PromotionInfo extends AlipayObject {
 	 */
 	@ApiField("valid_time_text")
 	private String validTimeText;
+
+	/**
+	 * 券使用状态(已领取可使用COLLECTED_UNUSE/未领取UNCOLLECT/已使用USED)
+	 */
+	@ApiField("voucher_usage_status")
+	private String voucherUsageStatus;
 
 	public String getBrandName() {
 		return this.brandName;
@@ -180,6 +186,13 @@ public class PromotionInfo extends AlipayObject {
 	}
 	public void setValidTimeText(String validTimeText) {
 		this.validTimeText = validTimeText;
+	}
+
+	public String getVoucherUsageStatus() {
+		return this.voucherUsageStatus;
+	}
+	public void setVoucherUsageStatus(String voucherUsageStatus) {
+		this.voucherUsageStatus = voucherUsageStatus;
 	}
 
 }

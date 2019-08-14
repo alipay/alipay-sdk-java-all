@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体xnn云平台算法调用
  *
  * @author auto create
- * @since 1.0, 2019-04-02 16:38:08
+ * @since 1.0, 2019-07-31 19:43:45
  */
 public class AlipayMsaasMediarecogAftsXnnIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4332698743678654899L;
+	private static final long serialVersionUID = 5426371614256922899L;
 
 	/**
 	 * 算法业务标识id，调用对应算法前请联系接口负责人获取
@@ -30,7 +30,7 @@ public class AlipayMsaasMediarecogAftsXnnIdentifyModel extends AlipayObject {
 	private List<ImageInfo> imageInfoList;
 
 	/**
-	 * 算法入参，json字符串
+	 * config
 	 */
 	@ApiField("params")
 	private String params;
@@ -38,9 +38,16 @@ public class AlipayMsaasMediarecogAftsXnnIdentifyModel extends AlipayObject {
 	/**
 	 * 分类算法传入Common_Classify
 检测算法传入Common_Detect
+1.1版本后已废除
 	 */
 	@ApiField("request_type")
 	private String requestType;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getBizId() {
 		return this.bizId;
@@ -68,6 +75,13 @@ public class AlipayMsaasMediarecogAftsXnnIdentifyModel extends AlipayObject {
 	}
 	public void setRequestType(String requestType) {
 		this.requestType = requestType;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

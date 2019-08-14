@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoCplifeResidentinfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3437527859317644466L;
+	private static final long serialVersionUID = 8726384927752691844L;
 
 	/**
 	 * 待删除的住户所在的小区ID(支付宝平台统一小区ID标识)

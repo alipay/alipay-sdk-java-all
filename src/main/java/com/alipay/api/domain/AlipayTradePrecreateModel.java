@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2019-04-03 12:13:12
+ * @since 1.0, 2019-07-15 17:16:10
  */
 public class AlipayTradePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2396542427938111759L;
+	private static final long serialVersionUID = 6567521146727714888L;
 
 	/**
 	 * 支付宝店铺的门店ID
@@ -51,7 +51,7 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	private String disablePayChannels;
 
 	/**
-	 * 可打折金额. 参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000] 如果该值未传入，但传入了【订单总金额】，【不可打折金额】则该值默认为【订单总金额】-【不可打折金额】
+	 * 可打折金额. 参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000] 如果该值未传入，但传入了【订单总金额】和【不可打折金额】，则该值默认为【订单总金额】-【不可打折金额】
 	 */
 	@ApiField("discountable_amount")
 	private String discountableAmount;
@@ -172,7 +172,7 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	private String totalAmount;
 
 	/**
-	 * 不可打折金额. 不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000] 如果该值未传入，但传入了【订单总金额】,【打折金额】，则该值默认为【订单总金额】-【打折金额】
+	 * 不可打折金额. 不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000] 如果该值未传入，但传入了【订单总金额】和【打折金额】，则该值默认为【订单总金额】-【打折金额】
 	 */
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;

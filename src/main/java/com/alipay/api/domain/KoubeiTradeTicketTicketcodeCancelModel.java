@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑凭证码撤销核销
  *
  * @author auto create
- * @since 1.0, 2018-05-21 11:32:59
+ * @since 1.0, 2019-07-29 17:13:58
  */
 public class KoubeiTradeTicketTicketcodeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7896883492176292917L;
+	private static final long serialVersionUID = 1384445392923264733L;
 
 	/**
 	 * 凭证码类型,INTERNAL_CODE(内部凭证码),EXTERNAL_CODE(外部凭证码),默认INTERNAL_CODE,外部券场景必填

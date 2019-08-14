@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.royalty.relation.bind request
  * 
  * @author auto create
- * @since 1.0, 2019-04-09 11:11:31
+ * @since 1.0, 2019-07-05 19:40:01
  */
 public class AlipayTradeRoyaltyRelationBindRequest implements AlipayRequest<AlipayTradeRoyaltyRelationBindResponse> {
 

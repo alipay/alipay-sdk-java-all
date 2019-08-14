@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账主体信息
  *
  * @author auto create
- * @since 1.0, 2019-04-08 10:14:10
+ * @since 1.0, 2019-07-12 20:12:31
  */
 public class RoyaltyEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 8399356631488119255L;
+	private static final long serialVersionUID = 8359112635114463551L;
 
 	/**
 	 * 分账方帐号。当分账方类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；当分账方类型是loginName时，本参数为用户的支付宝登录号。
@@ -26,7 +26,7 @@ public class RoyaltyEntity extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 分账方全称
+	 * 分账方全称，新增分账关系时作为请求参数必填，解绑分账关系时作为请求参数可不填，分账关系查询时不作为返回结果返回
 	 */
 	@ApiField("name")
 	private String name;

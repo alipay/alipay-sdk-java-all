@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园生活查询学生信息接口
  *
  * @author auto create
- * @since 1.0, 2017-08-14 11:05:10
+ * @since 1.0, 2019-06-27 14:00:20
  */
 public class AlipayEcoEduCampusJobstudentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8118887651622136468L;
+	private static final long serialVersionUID = 3399626531113914581L;
 
 	/**
 	 * 支付宝客户端用户Id

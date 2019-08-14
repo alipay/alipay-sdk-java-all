@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询转账订单退票接口
  *
  * @author auto create
- * @since 1.0, 2016-07-19 22:59:10
+ * @since 1.0, 2019-07-30 14:25:20
  */
 public class AlipayFundTransDishonorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2353361636613825549L;
+	private static final long serialVersionUID = 2322619269785482482L;
 
 	/**
 	 * 查询退票起始时间:（大于等于），格式为yyyyMMdd。

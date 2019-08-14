@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个人信用准入评估
  *
  * @author auto create
- * @since 1.0, 2018-11-29 19:57:35
+ * @since 1.0, 2019-07-29 17:37:21
  */
 public class ZhimaCreditPeUserRiskConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1527467476768987153L;
+	private static final long serialVersionUID = 6144827573576819388L;
+
+	/**
+	 * 申请免押额度，取值范围[0.01,100000000]，精确到小数点后2位
+	 */
+	@ApiField("apply_amount")
+	private String applyAmount;
 
 	/**
 	 * 业务action，由芝麻信用分配，目前只能取值：level_600 或者 level_650，分别对应芝麻分600分和650分的准入门槛。后续可能会有更多种取值选择，届时请联系技术支持
@@ -54,6 +60,13 @@ public class ZhimaCreditPeUserRiskConsultModel extends AlipayObject {
 	 */
 	@ApiField("risk_info")
 	private String riskInfo;
+
+	public String getApplyAmount() {
+		return this.applyAmount;
+	}
+	public void setApplyAmount(String applyAmount) {
+		this.applyAmount = applyAmount;
+	}
 
 	public String getBizAction() {
 		return this.bizAction;

@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipaySecurityAafAdfaBatchqueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.aaf.adfa.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2019-03-07 12:10:01
+ * @since 1.0, 2019-07-11 17:10:01
  */
 public class AlipaySecurityAafAdfaBatchqueryRequest implements AlipayRequest<AlipaySecurityAafAdfaBatchqueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 打发的发顺丰
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipaySecurityAafAdfaBatchqueryRequest implements AlipayRequest<Ali
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序当日访问数据查询
  *
  * @author auto create
- * @since 1.0, 2019-04-26 11:01:43
+ * @since 1.0, 2019-06-12 12:04:36
  */
 public class AlipayOpenMiniDataVisitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8487724743341119249L;
+	private static final long serialVersionUID = 8562116567733199794L;
 
 	/**
 	 * 查询数据范围；APP_SUMMARY代表仅查询小程序的访问数据，AREA_DETAIL代表同时查询区域下该小程序的访问数据

@@ -1,18 +1,14 @@
 package com.alipay.api.internal.util;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.StringWriter;
-import java.net.HttpURLConnection;
-import java.net.InetSocketAddress;
-import java.net.Proxy;
+import com.alipay.api.AlipayConstants;
+import com.alipay.api.FileItem;
+import sun.net.www.protocol.https.HttpsURLConnectionImpl;
+
+import javax.net.ssl.*;
+import java.io.*;
+import java.lang.reflect.Field;
+import java.net.*;
 import java.net.Proxy.Type;
-import java.net.URL;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
 import java.security.SecureRandom;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
@@ -20,18 +16,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.KeyManager;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
-
-import com.alipay.api.AlipayConstants;
-import com.alipay.api.FileItem;
 
 /**
  * 网络工具类。
@@ -41,15 +25,34 @@ import com.alipay.api.FileItem;
  */
 public abstract class WebUtils {
 
-    private static final String     DEFAULT_CHARSET = AlipayConstants.CHARSET_UTF8;
-    private static final String     METHOD_POST     = "POST";
-    private static final String     METHOD_GET      = "GET";
+    private static final String DEFAULT_CHARSET = AlipayConstants.CHARSET_UTF8;
+    private static final String METHOD_POST     = "POST";
+    private static final String METHOD_GET      = "GET";
 
-    private static SSLContext       ctx             = null;
+    private static SSLContext ctx = null;
 
-    private static HostnameVerifier verifier        = null;
+    private static HostnameVerifier verifier = null;
 
-    private static SSLSocketFactory socketFactory   = null;
+    private static SSLSocketFactory socketFactory    = null;
+    private static int              keepAliveTimeout = 0;
+
+    /**
+     * 设置KeepAlive连接超时时间，一次HTTP请求完成后，底层TCP连接将尝试尽量保持该超时时间后才关闭，以便其他HTTP请求复用TCP连接
+     * <p>
+     * KeepAlive连接超时时间设置为0，表示使用默认的KeepAlive连接缓存时长（目前为5s）
+     * <p>
+     * 连接并非一定能保持指定的KeepAlive超时时长，比如服务端断开了连接
+     * <p>
+     * 注：该方法目前只在JDK8上测试有效
+     *
+     * @param timeout KeepAlive超时时间，单位秒
+     */
+    public static void setKeepAliveTimeout(int timeout) {
+        if (timeout < 0 || timeout > 60) {
+            throw new RuntimeException("keep-alive timeout value must be between 0 and 60.");
+        }
+        keepAliveTimeout = timeout;
+    }
 
     private static class DefaultTrustManager implements X509TrustManager {
         public X509Certificate[] getAcceptedIssuers() {
@@ -69,7 +72,7 @@ public abstract class WebUtils {
 
         try {
             ctx = SSLContext.getInstance("TLS");
-            ctx.init(new KeyManager[0], new TrustManager[] { new DefaultTrustManager() },
+            ctx.init(new KeyManager[0], new TrustManager[] {new DefaultTrustManager()},
                     new SecureRandom());
 
             ctx.getClientSessionContext().setSessionTimeout(15);
@@ -94,13 +97,13 @@ public abstract class WebUtils {
     /**
      * 执行HTTP POST请求，可使用代理proxy。
      *
-     * @param url 请求地址
-     * @param params 请求参数
-     * @param charset 字符集，如UTF-8, GBK, GB2312
+     * @param url            请求地址
+     * @param params         请求参数
+     * @param charset        字符集，如UTF-8, GBK, GB2312
      * @param connectTimeout 连接超时时间
-     * @param readTimeout 请求超时时间
-     * @param proxyHost 代理host，传null表示不使用代理
-     * @param proxyPort 代理端口，传0表示不使用代理
+     * @param readTimeout    请求超时时间
+     * @param proxyHost      代理host，传null表示不使用代理
+     * @param proxyPort      代理端口，传0表示不使用代理
      * @return 响应字符串
      * @throws IOException
      */
@@ -119,13 +122,13 @@ public abstract class WebUtils {
     /**
      * 执行HTTP POST请求。
      *
-     * @param url 请求地址
-     * @param ctype 请求类型
-     * @param content 请求字节数组
+     * @param url            请求地址
+     * @param ctype          请求类型
+     * @param content        请求字节数组
      * @param connectTimeout 连接超时时间
-     * @param readTimeout 请求超时时间
-     * @param proxyHost 代理host，传null表示不使用代理
-     * @param proxyPort 代理端口，传0表示不使用代理
+     * @param readTimeout    请求超时时间
+     * @param proxyHost      代理host，传null表示不使用代理
+     * @param proxyPort      代理端口，传0表示不使用代理
      * @return 响应字符串
      * @throws IOException
      */
@@ -175,14 +178,14 @@ public abstract class WebUtils {
     /**
      * 执行带文件上传的HTTP POST请求。
      *
-     * @param url 请求地址
-     * @param params 文本请求参数
-     * @param fileParams 文件请求参数
-     * @param charset 字符集，如UTF-8, GBK, GB2312
+     * @param url            请求地址
+     * @param params         文本请求参数
+     * @param fileParams     文件请求参数
+     * @param charset        字符集，如UTF-8, GBK, GB2312
      * @param connectTimeout 连接超时时间
-     * @param readTimeout 请求超时时间
-     * @param proxyHost 代理host，传null表示不使用代理
-     * @param proxyPort 代理端口，传0表示不使用代理
+     * @param readTimeout    请求超时时间
+     * @param proxyHost      代理host，传null表示不使用代理
+     * @param proxyPort      代理端口，传0表示不使用代理
      * @return 响应字符串
      * @throws IOException
      */
@@ -288,7 +291,7 @@ public abstract class WebUtils {
     /**
      * 执行HTTP GET请求。
      *
-     * @param url 请求地址
+     * @param url    请求地址
      * @param params 请求参数
      * @return 响应字符串
      * @throws IOException
@@ -300,8 +303,8 @@ public abstract class WebUtils {
     /**
      * 执行HTTP GET请求。
      *
-     * @param url 请求地址
-     * @param params 请求参数
+     * @param url     请求地址
+     * @param params  请求参数
      * @param charset 字符集，如UTF-8, GBK, GB2312
      * @return 响应字符串
      * @throws IOException
@@ -431,6 +434,11 @@ public abstract class WebUtils {
 
     protected static String getResponseAsString(HttpURLConnection conn) throws IOException {
         String charset = getResponseCharset(conn.getContentType());
+
+        //此时设置KeepAlive超时所需数据结构才刚初始化完整，可以通过反射修改
+        //同时也不宜将修改时机再滞后，因为可能后续连接缓存类已经消费了默认的KeepAliveTimeout值，再修改已经无效
+        setKeepAliveTimeout(conn);
+
         InputStream es = conn.getErrorStream();
         if (es == null) {
             return getStreamAsString(conn.getInputStream(), charset);
@@ -508,7 +516,7 @@ public abstract class WebUtils {
     /**
      * 使用指定的字符集反编码请求参数值。
      *
-     * @param value 参数值
+     * @param value   参数值
      * @param charset 字符集
      * @return 反编码后的参数值
      */
@@ -527,7 +535,7 @@ public abstract class WebUtils {
     /**
      * 使用指定的字符集编码请求参数值。
      *
-     * @param value 参数值
+     * @param value   参数值
      * @param charset 字符集
      * @return 编码后的参数值
      */
@@ -624,4 +632,29 @@ public abstract class WebUtils {
         return sb.toString();
     }
 
+    /**
+     * 由于HttpUrlConnection不支持设置KeepAlive超时时间，该方法通过反射机制设置
+     *
+     * @param connection 需要设置KeepAlive的连接
+     */
+    private static void setKeepAliveTimeout(HttpURLConnection connection) {
+        if (keepAliveTimeout == 0) {
+            return;
+        }
+        try {
+            Field delegateHttpsUrlConnectionField = HttpsURLConnectionImpl.class.getDeclaredField("delegate");
+            delegateHttpsUrlConnectionField.setAccessible(true);
+            Object delegateHttpsUrlConnection = delegateHttpsUrlConnectionField.get(connection);
+
+            Field httpClientField = sun.net.www.protocol.http.HttpURLConnection.class.getDeclaredField("http");
+            httpClientField.setAccessible(true);
+            Object httpClient = httpClientField.get(delegateHttpsUrlConnection);
+
+            Field keepAliveTimeoutField = Class.forName("sun.net.www.http.HttpClient").getDeclaredField("keepAliveTimeout");
+            keepAliveTimeoutField.setAccessible(true);
+            keepAliveTimeoutField.setInt(httpClient, keepAliveTimeout);
+        } catch (Throwable ignored) {
+            //设置KeepAlive超时只是一种优化辅助手段，设置失败不应阻塞主链路，设置失败不应影响功能
+        }
+    }
 }

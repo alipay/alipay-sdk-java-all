@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.industry.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-04-24 12:20:01
+ * @since 1.0, 2019-07-15 11:25:01
  */
 public class ZhimaCreditPeIndustryTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6738961682395893493L;
+	private static final long serialVersionUID = 8734467453681772662L;
 
 	/** 
 	 * 资金流水号，用于商户与支付宝进行对账,资金处理成功时才有值
 	 */
 	@ApiField("alipay_fund_order_no")
 	private String alipayFundOrderNo;
+
+	/** 
+	 * 交易外部订单号,资金处理成功时才有值,供商户对账使用
+	 */
+	@ApiField("alipay_out_trade_no")
+	private String alipayOutTradeNo;
 
 	/** 
 	 * 金额,单位元
@@ -61,6 +67,13 @@ public class ZhimaCreditPeIndustryTradeQueryResponse extends AlipayResponse {
 	}
 	public String getAlipayFundOrderNo( ) {
 		return this.alipayFundOrderNo;
+	}
+
+	public void setAlipayOutTradeNo(String alipayOutTradeNo) {
+		this.alipayOutTradeNo = alipayOutTradeNo;
+	}
+	public String getAlipayOutTradeNo( ) {
+		return this.alipayOutTradeNo;
 	}
 
 	public void setAmount(String amount) {

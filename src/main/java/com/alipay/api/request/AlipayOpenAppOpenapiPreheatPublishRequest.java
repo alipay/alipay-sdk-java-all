@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.openapi.preheat.publish request
  * 
  * @author auto create
- * @since 1.0, 2019-04-15 10:22:13
+ * @since 1.0, 2019-06-17 15:33:52
  */
 public class AlipayOpenAppOpenapiPreheatPublishRequest implements AlipayRequest<AlipayOpenAppOpenapiPreheatPublishResponse> {
 

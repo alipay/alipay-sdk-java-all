@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.member.data.oauth.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-06-28 16:35:01
  */
 public class KoubeiMemberDataOauthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1734879544454723485L;
+	private static final long serialVersionUID = 6381483883989939912L;
 
 	/** 
 	 * 扩展信息, 目前保留未用
@@ -37,6 +37,12 @@ public class KoubeiMemberDataOauthQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("operator_type")
 	private String operatorType;
+
+	/** 
+	 * 操作人身份是商家员工(MER_STAFF)或服务商员工(PROVIDER_STAFF)时将返回其可操作的门店id列表
+	 */
+	@ApiField("shop_ids")
+	private String shopIds;
 
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
@@ -64,6 +70,13 @@ public class KoubeiMemberDataOauthQueryResponse extends AlipayResponse {
 	}
 	public String getOperatorType( ) {
 		return this.operatorType;
+	}
+
+	public void setShopIds(String shopIds) {
+		this.shopIds = shopIds;
+	}
+	public String getShopIds( ) {
+		return this.shopIds;
 	}
 
 }

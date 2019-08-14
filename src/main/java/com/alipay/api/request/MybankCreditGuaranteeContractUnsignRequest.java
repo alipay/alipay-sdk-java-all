@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.guarantee.contract.unsign request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-06-17 20:43:49
  */
 public class MybankCreditGuaranteeContractUnsignRequest implements AlipayRequest<MybankCreditGuaranteeContractUnsignResponse> {
 

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融支付宝VID查询接口
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:51:00
+ * @since 1.0, 2019-07-05 13:39:44
  */
 public class MybankCreditSceneprodVidGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4585568998832248247L;
+	private static final long serialVersionUID = 2169233341762579722L;
 
 	/**
 	 * 支付宝版本号
 	 */
 	@ApiField("alipay_version")
 	private String alipayVersion;
+
+	/**
+	 * 人脸核身方式。在人脸识别场景才需要填写
+	 */
+	@ApiField("meta_info")
+	private String metaInfo;
 
 	/**
 	 * 机构编码
@@ -37,11 +43,24 @@ public class MybankCreditSceneprodVidGetModel extends AlipayObject {
 	@ApiField("site_user_id")
 	private String siteUserId;
 
+	/**
+	 * 可以选择的是人脸识别（FACE）或者账密方式（PASSWORD）,不填写默认使用账密方式
+	 */
+	@ApiField("verify_type")
+	private String verifyType;
+
 	public String getAlipayVersion() {
 		return this.alipayVersion;
 	}
 	public void setAlipayVersion(String alipayVersion) {
 		this.alipayVersion = alipayVersion;
+	}
+
+	public String getMetaInfo() {
+		return this.metaInfo;
+	}
+	public void setMetaInfo(String metaInfo) {
+		this.metaInfo = metaInfo;
 	}
 
 	public String getOrgCode() {
@@ -63,6 +82,13 @@ public class MybankCreditSceneprodVidGetModel extends AlipayObject {
 	}
 	public void setSiteUserId(String siteUserId) {
 		this.siteUserId = siteUserId;
+	}
+
+	public String getVerifyType() {
+		return this.verifyType;
+	}
+	public void setVerifyType(String verifyType) {
+		this.verifyType = verifyType;
 	}
 
 }

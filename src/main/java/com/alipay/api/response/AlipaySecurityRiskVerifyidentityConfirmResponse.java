@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.verifyidentity.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-07-07 14:50:01
  */
 public class AlipaySecurityRiskVerifyidentityConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5788621569849841563L;
+	private static final long serialVersionUID = 8484739817933135549L;
+
+	/** 
+	 * 返回给调用方的数据集合，具体数据由对接过程中双方共同确认
+	 */
+	@ApiField("biz_data")
+	private String bizData;
 
 	/** 
 	 * 身份核实校验结果失败时，返回的失败错误码
@@ -31,6 +37,13 @@ public class AlipaySecurityRiskVerifyidentityConfirmResponse extends AlipayRespo
 	 */
 	@ApiField("verify_result")
 	private Boolean verifyResult;
+
+	public void setBizData(String bizData) {
+		this.bizData = bizData;
+	}
+	public String getBizData( ) {
+		return this.bizData;
+	}
 
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;

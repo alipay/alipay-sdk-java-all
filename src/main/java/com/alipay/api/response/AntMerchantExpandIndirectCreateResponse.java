@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-13 15:13:25
+ * @since 1.0, 2019-06-25 15:13:05
  */
 public class AntMerchantExpandIndirectCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7381177749655452624L;
+	private static final long serialVersionUID = 4727838474298915122L;
 
 	/** 
 	 * 可用服务，列表返回</br>

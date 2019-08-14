@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境游优惠领取
  *
  * @author auto create
- * @since 1.0, 2018-04-17 15:12:47
+ * @since 1.0, 2019-08-07 13:53:20
  */
 public class AlipayOverseasTravelPromotionReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8588894994149131731L;
+	private static final long serialVersionUID = 8452399783393156769L;
 
 	/**
 	 * 多端统一渠道信息，与服务提供方协商分配，为空则默认取appId

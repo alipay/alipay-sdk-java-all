@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品SKU修改模型
  *
  * @author auto create
- * @since 1.0, 2018-11-28 16:17:08
+ * @since 1.0, 2019-07-31 14:24:49
  */
 public class ItemSkuModifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4769184932912952536L;
+	private static final long serialVersionUID = 7642945762425789741L;
 
 	/**
 	 * 成本价，单位分

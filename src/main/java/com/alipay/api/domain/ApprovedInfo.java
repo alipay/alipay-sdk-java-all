@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiField;
 EVOA approve infos.
  *
  * @author auto create
- * @since 1.0, 2019-03-22 18:02:41
+ * @since 1.0, 2019-07-31 14:35:43
  */
 public class ApprovedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2568947361111494771L;
+	private static final long serialVersionUID = 3344657927764624129L;
 
 	/**
 	 * 用户申请订单号回传。
@@ -22,6 +22,13 @@ Unique Application No.
 	 */
 	@ApiField("application_no")
 	private String applicationNo;
+
+	/**
+	 * URL to download approval letter
+Approval letter 文件下载地址
+	 */
+	@ApiField("approval_letter_url")
+	private String approvalLetterUrl;
 
 	/**
 	 * 泰国移民局发放的批准或拒绝码。
@@ -80,6 +87,13 @@ DateTime of approved or rejected.
 	private Date statusDateTime;
 
 	/**
+	 * URL to download TM.6
+TM6 文件下载地址
+	 */
+	@ApiField("tm_6_url")
+	private String tm6Url;
+
+	/**
 	 * URL to download TM.88
 TM88 文件下载地址。
 	 */
@@ -91,6 +105,13 @@ TM88 文件下载地址。
 	}
 	public void setApplicationNo(String applicationNo) {
 		this.applicationNo = applicationNo;
+	}
+
+	public String getApprovalLetterUrl() {
+		return this.approvalLetterUrl;
+	}
+	public void setApprovalLetterUrl(String approvalLetterUrl) {
+		this.approvalLetterUrl = approvalLetterUrl;
 	}
 
 	public String getImmCode() {
@@ -147,6 +168,13 @@ TM88 文件下载地址。
 	}
 	public void setStatusDateTime(Date statusDateTime) {
 		this.statusDateTime = statusDateTime;
+	}
+
+	public String getTm6Url() {
+		return this.tm6Url;
+	}
+	public void setTm6Url(String tm6Url) {
+		this.tm6Url = tm6Url;
 	}
 
 	public String getTm88Url() {

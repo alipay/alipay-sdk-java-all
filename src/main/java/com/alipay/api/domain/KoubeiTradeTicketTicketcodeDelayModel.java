@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑凭证延期接口
  *
  * @author auto create
- * @since 1.0, 2018-05-21 11:33:21
+ * @since 1.0, 2019-07-29 17:14:28
  */
 public class KoubeiTradeTicketTicketcodeDelayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1122839454236428817L;
+	private static final long serialVersionUID = 5672788414947156118L;
 
 	/**
 	 * 凭证码类型,INTERNAL_CODE(内部凭证码),EXTERNAL_CODE(外部凭证码),默认INTERNAL_CODE,外部券场景必填

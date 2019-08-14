@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票内容项申请模型
  *
  * @author auto create
- * @since 1.0, 2017-05-09 14:11:07
+ * @since 1.0, 2019-06-21 17:06:08
  */
 public class InvoiceItemApplyOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8628574585173835868L;
+	private static final long serialVersionUID = 8736345913494534432L;
 
 	/**
 	 * 明细不含税金额，该值为item_quantity＊item_unit_price，依据税控厂商的不同，目前对接的阿里平台和浙江航信该字段不必传

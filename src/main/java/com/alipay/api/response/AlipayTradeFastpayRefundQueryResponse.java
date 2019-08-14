@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-21 10:47:38
+ * @since 1.0, 2019-07-08 15:18:47
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1781552447862675617L;
+	private static final long serialVersionUID = 5354492212763324347L;
 
 	/** 
 	 * 退款失败错误码。只在使用异步退款接口情况下才会返回该字段

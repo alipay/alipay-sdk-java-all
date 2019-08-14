@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 团队资金批次创建(预结算资金分配)
  *
  * @author auto create
- * @since 1.0, 2019-05-17 11:54:09
+ * @since 1.0, 2019-06-06 17:55:22
  */
 public class AlipayFundTransGroupfundsBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7519377712287697191L;
+	private static final long serialVersionUID = 7173327831622671144L;
 
 	/**
 	 * 当前创建批次的支付宝用户ID

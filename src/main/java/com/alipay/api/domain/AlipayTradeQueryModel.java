@@ -1,18 +1,21 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 统一收单线下交易查询
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2019-05-17 16:52:54
+ * @since 1.0, 2019-07-08 15:18:23
  */
 public class AlipayTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3831959586783993615L;
+	private static final long serialVersionUID = 7792669445485347378L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用；
@@ -27,6 +30,13 @@ trade_no,out_trade_no如果同时存在优先取trade_no
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 查询选项，商户通过上送该字段来定制查询返回信息
+	 */
+	@ApiListField("query_options")
+	@ApiField("string")
+	private List<String> queryOptions;
 
 	/**
 	 * 支付宝交易号，和商户订单号不能同时为空
@@ -46,6 +56,13 @@ trade_no,out_trade_no如果同时存在优先取trade_no
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public List<String> getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(List<String> queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 	public String getTradeNo() {

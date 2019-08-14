@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用租确认下单
  *
  * @author auto create
- * @since 1.0, 2018-04-27 09:38:08
+ * @since 1.0, 2019-07-26 13:57:03
  */
 public class ZhimaMerchantOrderCreditConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284984578245143492L;
+	private static final long serialVersionUID = 5275834248656212717L;
 
 	/**
 	 * 商户订单号，必需参数，用于确认芝麻订单，该参数必须与调用接口（zhima.merchant.order.credit.create）时传入的out_order_no一致

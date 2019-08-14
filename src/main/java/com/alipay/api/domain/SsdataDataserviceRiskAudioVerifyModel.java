@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚁盾音频内容识别
  *
  * @author auto create
- * @since 1.0, 2018-01-19 20:03:52
+ * @since 1.0, 2019-07-29 16:05:58
  */
 public class SsdataDataserviceRiskAudioVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2515479631738587914L;
+	private static final long serialVersionUID = 1594982114355476474L;
 
 	/**
 	 * 需要识别的音频转换后的数据，不要包含特殊字符以及双引号等可能引起json格式化错误问题的字符.

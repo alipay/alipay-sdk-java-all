@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易创建
  *
  * @author auto create
- * @since 1.0, 2018-06-06 13:51:27
+ * @since 1.0, 2019-06-14 22:08:12
  */
 public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1747845716432211548L;
+	private static final long serialVersionUID = 4337721665694279815L;
 
 	/**
 	 * 买家会员信息
@@ -22,7 +22,7 @@ public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 	private Member buyer;
 
 	/**
-	 * 渠道，枚举如下：TMGXBL：天猫供销保理，TYZBL：通用自保理，TMZBL：天猫自保理，DSCYFRZ：大搜车预付融资
+	 * 渠道，枚举如下：TMGXBL：天猫供销保理，TYZBL：通用自保理，TMZBL：天猫自保理，DSCYFRZ：大搜车预付融资，CNBILL：菜鸟电票
 	 */
 	@ApiField("channel")
 	private String channel;
@@ -88,7 +88,7 @@ public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 	private String tradeAmount;
 
 	/**
-	 * FACTORING：保理，PREPAYMENT：预付融资，CREDITPAY：信任付
+	 * FACTORING：保理，PREPAYMENT：预付融资，CREDITPAY：信任付，PREPAYBILL：电票预付
 	 */
 	@ApiField("trade_type")
 	private String tradeType;

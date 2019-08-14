@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸本地比对结果同步汇报
  *
  * @author auto create
- * @since 1.0, 2018-10-16 12:37:50
+ * @since 1.0, 2019-07-09 20:13:41
  */
 public class ZolozIdentificationCustomerSmilerepoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2458386966449928945L;
+	private static final long serialVersionUID = 8419984227512521939L;
 
 	/**
 	 * 活体图片encode base64 String

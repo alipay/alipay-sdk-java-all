@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7175793166762277136L;
+	private static final long serialVersionUID = 2287791247283847391L;
 
 	/**
 	 * 兼容V1.0。月卡售卖原价，单位为分，该参数取值为hellobike调用方自身的业务参数。

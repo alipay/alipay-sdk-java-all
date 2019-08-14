@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放渠道
  *
  * @author auto create
- * @since 1.0, 2017-09-30 11:21:19
+ * @since 1.0, 2019-06-27 19:09:00
  */
 public class PublishChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 8262611138437652519L;
+	private static final long serialVersionUID = 4887364694235361335L;
 
 	/**
 	 * 当type为MERCHANT_CROWD时，config需填入口令送的密码和图片，样例如下："config":"{\"PASSWORD\":\"口令送密码\",\"BACKGROUND_LOGO\":\"1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC\"}"

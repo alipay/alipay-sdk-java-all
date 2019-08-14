@@ -7,26 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无线转账支付接口
  *
  * @author auto create
- * @since 1.0, 2019-01-11 12:07:30
+ * @since 1.0, 2019-08-06 17:25:24
  */
 public class AlipayFundTransAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8336793927788634117L;
+	private static final long serialVersionUID = 1616455341467652878L;
 
 	/**
-	 * 描述特定的业务场景，比如对党费缴纳场景需走党费专户
+	 * 描述特定的业务场景，可传值如下：
+PERSONAL_PAY: 发红包
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
 
 	/**
-	 * JSON格式，传递业务扩展参数，使用前请与支付宝工程师联系！
+	 * JSON格式，传递业务扩展参数.
+业务扩展字段，JSON格式。支持如下属性：
+sub_biz_scene 子场景，必填，传REDPACKET
+payer_binded_alipay_id 创建红包的商户会员绑定的支付宝userId，必填
 	 */
 	@ApiField("business_params")
 	private String businessParams;
 
 	/**
-	 * 转账订单的标题，用于在收银台和消费记录展示
+	 * 支付订单的标题，用于在收银台和消费记录展示
 	 */
 	@ApiField("order_title")
 	private String orderTitle;
@@ -56,7 +60,8 @@ public class AlipayFundTransAppPayModel extends AlipayObject {
 	private Participant payerInfo;
 
 	/**
-	 * 销售产品码，商家和支付宝签约的产品码
+	 * 销售产品码，商家和支付宝签约的产品码。
+STD_RED_PACKET：现金红包
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -68,10 +73,16 @@ public class AlipayFundTransAppPayModel extends AlipayObject {
 	private String refundTimeExpire;
 
 	/**
-	 * 转账备注
+	 * 支付备注
 	 */
 	@ApiField("remark")
 	private String remark;
+
+	/**
+	 * 商户发起请求的系统时间，格式yyyy-MM-dd HH:mm。基于安全的考虑，支付宝会对请求时间间隔进行控制，超过一定时间会拒绝支付请求。
+	 */
+	@ApiField("request_time")
+	private String requestTime;
 
 	/**
 	 * 绝对超时时间，格式为yyyy-MM-dd HH:mm
@@ -153,6 +164,13 @@ public class AlipayFundTransAppPayModel extends AlipayObject {
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+
+	public String getRequestTime() {
+		return this.requestTime;
+	}
+	public void setRequestTime(String requestTime) {
+		this.requestTime = requestTime;
 	}
 
 	public String getTimeExpire() {

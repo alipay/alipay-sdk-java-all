@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户动态码通知配置
  *
  * @author auto create
- * @since 1.0, 2019-03-06 21:30:42
+ * @since 1.0, 2019-08-08 20:05:40
  */
 public class TemplateMdcodeNotifyConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8238846631364247473L;
+	private static final long serialVersionUID = 7226368996519948131L;
 
 	/**
 	 * 扩展参数信息；

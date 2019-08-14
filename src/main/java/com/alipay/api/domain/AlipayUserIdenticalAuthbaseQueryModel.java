@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户账号实名同人校验
  *
  * @author auto create
- * @since 1.0, 2018-06-13 17:51:49
+ * @since 1.0, 2019-07-22 11:00:11
  */
 public class AlipayUserIdenticalAuthbaseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7557156364765154262L;
+	private static final long serialVersionUID = 1379485535764974287L;
 
 	/**
 	 * 需要校验的userId，该参数需要用作请求路由

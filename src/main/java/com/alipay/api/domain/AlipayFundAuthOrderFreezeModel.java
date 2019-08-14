@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2019-05-15 15:58:54
+ * @since 1.0, 2019-06-12 22:26:11
  */
 public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3429518661827462424L;
+	private static final long serialVersionUID = 5211271378223486799L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -48,6 +48,13 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	 */
 	@ApiField("extra_param")
 	private String extraParam;
+
+	/**
+	 * 用户实名信息参数，包含：姓名+身份证号的hash值、指定用户的uid。商户传入用户实名信息参数，支付宝会对比用户在支付宝端的实名信息。
+姓名+身份证号hash值使用SHA256摘要方式与UTF8编码,返回十六进制的字符串。
+	 */
+	@ApiField("identity_params")
+	private String identityParams;
 
 	/**
 	 * 业务订单的简单描述，如商品名称等
@@ -89,7 +96,7 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	private String payeeUserId;
 
 	/**
-	 * 销售产品码，后续新接入预授权当面付的业务，本字段取值固定为PRE_AUTH。
+	 * 销售产品码，后续新接入预授权当面付的业务，新当面资金授权取值PRE_AUTH，境外预授权取值OVERSEAS_INSTORE_AUTH。
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -151,6 +158,13 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	}
 	public void setExtraParam(String extraParam) {
 		this.extraParam = extraParam;
+	}
+
+	public String getIdentityParams() {
+		return this.identityParams;
+	}
+	public void setIdentityParams(String identityParams) {
+		this.identityParams = identityParams;
 	}
 
 	public String getOrderTitle() {

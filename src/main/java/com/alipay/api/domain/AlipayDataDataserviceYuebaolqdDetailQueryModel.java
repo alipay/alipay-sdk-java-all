@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 余额宝负债端预测数据
  *
  * @author auto create
- * @since 1.0, 2018-01-22 10:50:26
+ * @since 1.0, 2019-08-13 16:29:24
  */
 public class AlipayDataDataserviceYuebaolqdDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2756394741599294723L;
+	private static final long serialVersionUID = 7822688745465275642L;
 
 	/**
 	 * 服务入参，格式为yyyymmdd

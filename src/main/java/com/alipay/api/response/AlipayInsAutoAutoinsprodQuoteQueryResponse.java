@@ -13,11 +13,29 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoinsprod.quote.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-29 11:20:01
+ * @since 1.0, 2019-07-30 17:01:16
  */
 public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2718146536432311543L;
+	private static final long serialVersionUID = 7147499733596733283L;
+
+	/** 
+	 * 商业费率浮动系数，0~1分值的数字，精确到小数点后4位，如：0.6589
+	 */
+	@ApiField("biz_discount")
+	private String bizDiscount;
+
+	/** 
+	 * 商业险续保标识,  1：新保；2：续保；3：转保
+	 */
+	@ApiField("biz_renewal_flag")
+	private String bizRenewalFlag;
+
+	/** 
+	 * 商业险续保公司名称
+	 */
+	@ApiField("biz_renewal_org")
+	private String bizRenewalOrg;
 
 	/** 
 	 * 商业险保费
@@ -36,6 +54,12 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("car")
 	private Car car;
+
+	/** 
+	 * 车主评分，分值为1-100数字，精确到个位，如：92
+	 */
+	@ApiField("car_owner_grade")
+	private String carOwnerGrade;
 
 	/** 
 	 * 如果是图片验证码问题，返回验证码的base64流
@@ -81,6 +105,12 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	private String enquiryBizId;
 
 	/** 
+	 * 交强费率浮动系数，0~1分值的数字，精确到小数点后4位，如：0.6589
+	 */
+	@ApiField("force_discount")
+	private String forceDiscount;
+
+	/** 
 	 * 交强险保费
 	 */
 	@ApiField("force_premium")
@@ -93,11 +123,29 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	private InsProduct forceProduct;
 
 	/** 
+	 * 交强险续保标识; 1：新保；2：续保；3：转保
+	 */
+	@ApiField("force_renewal_flag")
+	private String forceRenewalFlag;
+
+	/** 
+	 * 交强险续保公司名称
+	 */
+	@ApiField("force_renewal_org")
+	private String forceRenewalOrg;
+
+	/** 
 	 * 支持的物流配送方式
 	 */
 	@ApiListField("logistics_models")
 	@ApiField("string")
 	private List<String> logisticsModels;
+
+	/** 
+	 * 平台NCD系数，精确到小数点后两位
+	 */
+	@ApiField("no_claim_adjust_ratio")
+	private String noClaimAdjustRatio;
 
 	/** 
 	 * 报价ID
@@ -130,10 +178,61 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	private String reducePremium;
 
 	/** 
+	 * 保司自主渠道系数，精确到小数点后十位
+	 */
+	@ApiField("self_channel_ratio")
+	private String selfChannelRatio;
+
+	/** 
+	 * 保司自主核保系数，精确到小数点后十位
+	 */
+	@ApiField("self_underwrite_ratio")
+	private String selfUnderwriteRatio;
+
+	/** 
 	 * 总保费
 	 */
 	@ApiField("total_premium")
 	private String totalPremium;
+
+	/** 
+	 * 交通违法系数,精确到小数点后两位
+	 */
+	@ApiField("traffic_violation_ratio")
+	private String trafficViolationRatio;
+
+	/** 
+	 * 用户提醒code
+	 */
+	@ApiField("warn_code")
+	private String warnCode;
+
+	/** 
+	 * 用户提示内容
+	 */
+	@ApiField("warn_message")
+	private String warnMessage;
+
+	public void setBizDiscount(String bizDiscount) {
+		this.bizDiscount = bizDiscount;
+	}
+	public String getBizDiscount( ) {
+		return this.bizDiscount;
+	}
+
+	public void setBizRenewalFlag(String bizRenewalFlag) {
+		this.bizRenewalFlag = bizRenewalFlag;
+	}
+	public String getBizRenewalFlag( ) {
+		return this.bizRenewalFlag;
+	}
+
+	public void setBizRenewalOrg(String bizRenewalOrg) {
+		this.bizRenewalOrg = bizRenewalOrg;
+	}
+	public String getBizRenewalOrg( ) {
+		return this.bizRenewalOrg;
+	}
 
 	public void setBusinessPremium(String businessPremium) {
 		this.businessPremium = businessPremium;
@@ -154,6 +253,13 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	}
 	public Car getCar( ) {
 		return this.car;
+	}
+
+	public void setCarOwnerGrade(String carOwnerGrade) {
+		this.carOwnerGrade = carOwnerGrade;
+	}
+	public String getCarOwnerGrade( ) {
+		return this.carOwnerGrade;
 	}
 
 	public void setCheckCode(String checkCode) {
@@ -205,6 +311,13 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 		return this.enquiryBizId;
 	}
 
+	public void setForceDiscount(String forceDiscount) {
+		this.forceDiscount = forceDiscount;
+	}
+	public String getForceDiscount( ) {
+		return this.forceDiscount;
+	}
+
 	public void setForcePremium(String forcePremium) {
 		this.forcePremium = forcePremium;
 	}
@@ -219,11 +332,32 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 		return this.forceProduct;
 	}
 
+	public void setForceRenewalFlag(String forceRenewalFlag) {
+		this.forceRenewalFlag = forceRenewalFlag;
+	}
+	public String getForceRenewalFlag( ) {
+		return this.forceRenewalFlag;
+	}
+
+	public void setForceRenewalOrg(String forceRenewalOrg) {
+		this.forceRenewalOrg = forceRenewalOrg;
+	}
+	public String getForceRenewalOrg( ) {
+		return this.forceRenewalOrg;
+	}
+
 	public void setLogisticsModels(List<String> logisticsModels) {
 		this.logisticsModels = logisticsModels;
 	}
 	public List<String> getLogisticsModels( ) {
 		return this.logisticsModels;
+	}
+
+	public void setNoClaimAdjustRatio(String noClaimAdjustRatio) {
+		this.noClaimAdjustRatio = noClaimAdjustRatio;
+	}
+	public String getNoClaimAdjustRatio( ) {
+		return this.noClaimAdjustRatio;
 	}
 
 	public void setQuoteBizId(String quoteBizId) {
@@ -261,11 +395,46 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 		return this.reducePremium;
 	}
 
+	public void setSelfChannelRatio(String selfChannelRatio) {
+		this.selfChannelRatio = selfChannelRatio;
+	}
+	public String getSelfChannelRatio( ) {
+		return this.selfChannelRatio;
+	}
+
+	public void setSelfUnderwriteRatio(String selfUnderwriteRatio) {
+		this.selfUnderwriteRatio = selfUnderwriteRatio;
+	}
+	public String getSelfUnderwriteRatio( ) {
+		return this.selfUnderwriteRatio;
+	}
+
 	public void setTotalPremium(String totalPremium) {
 		this.totalPremium = totalPremium;
 	}
 	public String getTotalPremium( ) {
 		return this.totalPremium;
+	}
+
+	public void setTrafficViolationRatio(String trafficViolationRatio) {
+		this.trafficViolationRatio = trafficViolationRatio;
+	}
+	public String getTrafficViolationRatio( ) {
+		return this.trafficViolationRatio;
+	}
+
+	public void setWarnCode(String warnCode) {
+		this.warnCode = warnCode;
+	}
+	public String getWarnCode( ) {
+		return this.warnCode;
+	}
+
+	public void setWarnMessage(String warnMessage) {
+		this.warnMessage = warnMessage;
+	}
+	public String getWarnMessage( ) {
+		return this.warnMessage;
 	}
 
 }

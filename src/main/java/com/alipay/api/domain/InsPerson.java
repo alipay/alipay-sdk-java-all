@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险干系人
  *
  * @author auto create
- * @since 1.0, 2019-03-20 22:16:25
+ * @since 1.0, 2019-07-26 17:07:14
  */
 public class InsPerson extends AlipayObject {
 
-	private static final long serialVersionUID = 8814988946856558153L;
+	private static final long serialVersionUID = 5517372756341571335L;
 
 	/**
 	 * 地址
 	 */
 	@ApiField("address")
 	private String address;
+
+	/**
+	 * 干系人地址区县编码
+	 */
+	@ApiField("area_code")
+	private String areaCode;
 
 	/**
 	 * 生日
@@ -111,6 +117,13 @@ public class InsPerson extends AlipayObject {
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public String getAreaCode() {
+		return this.areaCode;
+	}
+	public void setAreaCode(String areaCode) {
+		this.areaCode = areaCode;
 	}
 
 	public Date getBirthday() {

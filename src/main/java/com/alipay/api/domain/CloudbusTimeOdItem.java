@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公交云分时查询结果输出列表
  *
  * @author auto create
- * @since 1.0, 2019-05-09 16:43:31
+ * @since 1.0, 2019-08-01 15:26:23
  */
 public class CloudbusTimeOdItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5537324536351259662L;
+	private static final long serialVersionUID = 8137428828419129972L;
 
 	/**
 	 * 公交od
@@ -30,6 +30,18 @@ public class CloudbusTimeOdItem extends AlipayObject {
 	 */
 	@ApiField("time")
 	private String time;
+
+	/**
+	 * 工作日od
+	 */
+	@ApiField("week_od")
+	private Long weekOd;
+
+	/**
+	 * 工作日od
+	 */
+	@ApiField("work_od")
+	private Long workOd;
 
 	public Long getBusOd() {
 		return this.busOd;
@@ -50,6 +62,20 @@ public class CloudbusTimeOdItem extends AlipayObject {
 	}
 	public void setTime(String time) {
 		this.time = time;
+	}
+
+	public Long getWeekOd() {
+		return this.weekOd;
+	}
+	public void setWeekOd(Long weekOd) {
+		this.weekOd = weekOd;
+	}
+
+	public Long getWorkOd() {
+		return this.workOd;
+	}
+	public void setWorkOd(Long workOd) {
+		this.workOd = workOd;
 	}
 
 }

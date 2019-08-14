@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingToolFengdieSitesBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8181496658573772897L;
+	private static final long serialVersionUID = 8312322421583147644L;
 
 	/**
 	 * 作为当前操作者的空间成员用户名， 值为 origin_user_id（即创建空间成员接口的入参）

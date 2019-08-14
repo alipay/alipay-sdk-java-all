@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceYuebaoassetDetailSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8623557151622384462L;
+	private static final long serialVersionUID = 1193868855353736693L;
 
 	/** 
 	 * yeb_asset_data_num:本次录入数据条数。

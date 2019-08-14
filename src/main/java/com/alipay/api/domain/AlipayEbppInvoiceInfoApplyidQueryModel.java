@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据发票申请id查询发票信息
  *
  * @author auto create
- * @since 1.0, 2018-04-13 10:32:51
+ * @since 1.0, 2019-06-21 17:01:48
  */
 public class AlipayEbppInvoiceInfoApplyidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5266438191755381826L;
+	private static final long serialVersionUID = 4748338557129578349L;
 
 	/**
 	 * 申请开票时支付宝返回的申请id，具有全局唯一性。

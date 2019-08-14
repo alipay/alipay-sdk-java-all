@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑物流单创建
  *
  * @author auto create
- * @since 1.0, 2019-01-25 20:29:14
+ * @since 1.0, 2019-07-10 11:22:50
  */
 public class KoubeiTradeKbdeliveryDeliveryApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1194216864158825243L;
+	private static final long serialVersionUID = 1134848646775951678L;
 
 	/**
 	 * 附加数据，在查询API和物流变更通知回执中原样返回，该字段主要用于第三方系统携带订单的自定义数据

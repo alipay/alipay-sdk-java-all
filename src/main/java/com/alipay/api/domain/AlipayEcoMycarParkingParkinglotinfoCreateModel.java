@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车生活停车平台录入停车场信息
  *
  * @author auto create
- * @since 1.0, 2019-03-28 10:36:49
+ * @since 1.0, 2019-07-24 20:28:51
  */
 public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1851262233839642679L;
+	private static final long serialVersionUID = 7114272315682336113L;
 
 	/**
 	 * 服务商ID（2088开头的16位纯数字），由服务商提供给ISV
@@ -134,7 +134,8 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 	private String parkingNumber;
 
 	/**
-	 * 高德地图唯一标识
+	 * 高德地图唯一标识，查看方法可参考 https://openclub.alipay.com/club/history/read/5150
+若需新增高德兴趣点，请访问高德网站http://map.amap.com/help/index.html?type=addpoi
 	 */
 	@ApiField("parking_poiid")
 	private String parkingPoiid;

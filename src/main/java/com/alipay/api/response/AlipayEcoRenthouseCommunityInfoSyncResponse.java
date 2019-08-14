@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.renthouse.community.info.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-08-02 19:46:07
  */
 public class AlipayEcoRenthouseCommunityInfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5818934386754235596L;
+	private static final long serialVersionUID = 5472853153856169425L;
 
 	/** 
 	 * 小区同步请求号

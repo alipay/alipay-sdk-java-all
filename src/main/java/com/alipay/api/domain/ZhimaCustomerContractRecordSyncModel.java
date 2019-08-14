@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子合约链路存证
  *
  * @author auto create
- * @since 1.0, 2018-03-29 16:42:45
+ * @since 1.0, 2019-06-21 14:07:19
  */
 public class ZhimaCustomerContractRecordSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2197954547889239975L;
+	private static final long serialVersionUID = 4134967389975732675L;
 
 	/**
 	 * 本次业务流程唯一标识，一次电子合约流程中可能存在多次业务操作，比如有多次电子签名，每次业务操作有一个唯一标识，每次业务操作有多次存证记录

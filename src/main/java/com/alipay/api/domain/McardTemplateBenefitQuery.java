@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡模板外部权益查询结果模型
  *
  * @author auto create
- * @since 1.0, 2019-03-06 21:30:36
+ * @since 1.0, 2019-08-08 20:03:56
  */
 public class McardTemplateBenefitQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 3883355576883946269L;
+	private static final long serialVersionUID = 5215252591644925964L;
 
 	/**
 	 * 权益描述信息

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.model.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-08 10:09:55
+ * @since 1.0, 2019-07-29 17:03:25
  */
 public class AlipayOpenMiniModelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2318838436842857215L;
+	private static final long serialVersionUID = 7418794892896262189L;
 
 	/** 
 	 * 蚂蚁域小程序核心模型查询接口返回对象，model_type：查询模型类型，records：记录列表

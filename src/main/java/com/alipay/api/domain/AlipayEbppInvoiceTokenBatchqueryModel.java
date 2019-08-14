@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据查询令牌获取发票要素列表
  *
  * @author auto create
- * @since 1.0, 2018-04-23 13:16:26
+ * @since 1.0, 2019-06-21 16:59:08
  */
 public class AlipayEbppInvoiceTokenBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7237541467511447218L;
+	private static final long serialVersionUID = 7875261735568559733L;
 
 	/**
 	 * 查询请求令牌

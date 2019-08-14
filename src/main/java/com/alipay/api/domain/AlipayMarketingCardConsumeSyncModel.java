@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡消费记录同步
  *
  * @author auto create
- * @since 1.0, 2019-03-06 14:43:14
+ * @since 1.0, 2019-08-08 19:58:13
  */
 public class AlipayMarketingCardConsumeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3676694712546243528L;
+	private static final long serialVersionUID = 3658326774584537977L;
 
 	/**
 	 * 用户实际付的现金金额

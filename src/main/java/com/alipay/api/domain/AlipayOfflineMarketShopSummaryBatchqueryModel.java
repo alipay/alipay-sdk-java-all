@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店摘要信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2019-06-03 11:44:40
+ * @since 1.0, 2019-06-07 22:37:26
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5661245631525291844L;
+	private static final long serialVersionUID = 2126421355215121948L;
+
+	/**
+	 * 表示接口查询门店的业务渠道限制：ALL、 POS、不传。不传代表只查询普通门店，传入POS代表只查询简易门店，传入ALL代表查询普通门店和简易门店。
+	 */
+	@ApiField("biz_channel")
+	private String bizChannel;
 
 	/**
 	 * 品牌名
@@ -84,6 +90,13 @@ KB_PROMOTER：口碑客推广者
 	 */
 	@ApiField("shop_status")
 	private String shopStatus;
+
+	public String getBizChannel() {
+		return this.bizChannel;
+	}
+	public void setBizChannel(String bizChannel) {
+		this.bizChannel = bizChannel;
+	}
 
 	public String getBrandName() {
 		return this.brandName;

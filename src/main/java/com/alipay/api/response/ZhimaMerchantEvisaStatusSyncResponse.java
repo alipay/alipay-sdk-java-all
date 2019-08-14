@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.evisa.status.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-22 18:15:00
+ * @since 1.0, 2019-07-05 10:10:01
  */
 public class ZhimaMerchantEvisaStatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3412369363812222521L;
+	private static final long serialVersionUID = 8848454525294865981L;
 
 	/** 
 	 * 商户生成唯一的外部接口调用事务号

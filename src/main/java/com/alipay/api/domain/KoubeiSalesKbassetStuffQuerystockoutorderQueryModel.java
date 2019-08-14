@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出库单查询接口
  *
  * @author auto create
- * @since 1.0, 2019-05-30 23:23:10
+ * @since 1.0, 2019-06-25 20:58:07
  */
 public class KoubeiSalesKbassetStuffQuerystockoutorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3575441622326585663L;
+	private static final long serialVersionUID = 5429312262927857594L;
 
 	/**
 	 * 扩展字段，备用

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.instcard.bind response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-05 12:30:01
+ * @since 1.0, 2019-08-07 00:01:15
  */
 public class AlipayCommerceMedicalInstcardBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2787872152816956983L;
+	private static final long serialVersionUID = 1442399314182359493L;
 
 	
 

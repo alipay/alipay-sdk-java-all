@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 版本模型
  *
  * @author auto create
- * @since 1.0, 2019-06-03 21:58:58
+ * @since 1.0, 2019-06-06 19:04:00
  */
 public class MiniAppVersionBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7317644489312139855L;
+	private static final long serialVersionUID = 4613277728585939587L;
 
 	/**
 	 * 开发者版本
@@ -87,6 +87,12 @@ public class MiniAppVersionBaseInfo extends AlipayObject {
 	 */
 	@ApiField("package_url")
 	private String packageUrl;
+
+	/**
+	 * 插件plugin包地址
+	 */
+	@ApiField("plugin_url")
+	private String pluginUrl;
 
 	/**
 	 * 回滚时间
@@ -212,6 +218,13 @@ public class MiniAppVersionBaseInfo extends AlipayObject {
 	}
 	public void setPackageUrl(String packageUrl) {
 		this.packageUrl = packageUrl;
+	}
+
+	public String getPluginUrl() {
+		return this.pluginUrl;
+	}
+	public void setPluginUrl(String pluginUrl) {
+		this.pluginUrl = pluginUrl;
 	}
 
 	public Date getRollbackTime() {

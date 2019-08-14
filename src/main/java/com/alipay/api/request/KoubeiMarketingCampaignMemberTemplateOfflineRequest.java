@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.member.template.offline request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-06-27 13:32:42
  */
 public class KoubeiMarketingCampaignMemberTemplateOfflineRequest implements AlipayRequest<KoubeiMarketingCampaignMemberTemplateOfflineResponse> {
 

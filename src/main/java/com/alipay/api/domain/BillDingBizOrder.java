@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收支明细
  *
  * @author auto create
- * @since 1.0, 2018-12-21 14:31:04
+ * @since 1.0, 2019-08-11 12:48:49
  */
 public class BillDingBizOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6836142354933958314L;
+	private static final long serialVersionUID = 7459999628875529176L;
 
 	/**
 	 * 收支金额,收入为正,支出为负
@@ -76,6 +76,12 @@ public class BillDingBizOrder extends AlipayObject {
 	private String listTitle;
 
 	/**
+	 * 脱敏后的当前用户的支付宝账号
+	 */
+	@ApiField("login_id")
+	private String loginId;
+
+	/**
 	 * 脱敏后的对方支付宝账号
 	 */
 	@ApiField("opp_login_id")
@@ -116,6 +122,12 @@ public class BillDingBizOrder extends AlipayObject {
 	 */
 	@ApiField("title")
 	private String title;
+
+	/**
+	 * 脱敏后的姓名
+	 */
+	@ApiField("user_name")
+	private String userName;
 
 	public String getAmount() {
 		return this.amount;
@@ -187,6 +199,13 @@ public class BillDingBizOrder extends AlipayObject {
 		this.listTitle = listTitle;
 	}
 
+	public String getLoginId() {
+		return this.loginId;
+	}
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
+	}
+
 	public String getOppLoginId() {
 		return this.oppLoginId;
 	}
@@ -234,6 +253,13 @@ public class BillDingBizOrder extends AlipayObject {
 	}
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getUserName() {
+		return this.userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2019-05-10 17:36:33
+ * @since 1.0, 2019-07-15 17:16:44
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3875485593255656389L;
+	private static final long serialVersionUID = 4112155185949249393L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -20,7 +20,7 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private String authToken;
 
 	/**
-	 * Iphone6 16G
+	 * 对一笔交易的具体描述信息。如果是多种商品，请将商品描述字符串累加传给body。
 	 */
 	@ApiField("body")
 	private String body;

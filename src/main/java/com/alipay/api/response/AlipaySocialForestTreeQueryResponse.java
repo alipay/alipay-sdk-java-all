@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.forest.tree.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-21 20:07:15
+ * @since 1.0, 2019-08-13 12:30:01
  */
 public class AlipaySocialForestTreeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1622825884459163839L;
+	private static final long serialVersionUID = 7394221912136885877L;
 
 	/** 
 	 * 森林开通状态：

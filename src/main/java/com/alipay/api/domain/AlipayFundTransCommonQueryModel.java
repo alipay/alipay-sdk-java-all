@@ -7,15 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账业务单据查询接口
  *
  * @author auto create
- * @since 1.0, 2019-01-18 16:04:34
+ * @since 1.0, 2019-08-05 10:41:57
  */
 public class AlipayFundTransCommonQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3239439692828349194L;
+	private static final long serialVersionUID = 2642811681324733187L;
 
 	/**
-	 * 描述特定的业务场景，比如对党费缴纳场景需走党费专户
-如果传递了out_biz_no则该字段为必传
+	 * 描述特定的业务场景，如果传递了out_biz_no则该字段为必传。可取的业务场景如下：
+PERSONAL_PAY，C2C现金红包-发红包
+PERSONAL_COLLECTION，C2C现金红包-领红包
+REFUND，C2C现金红包-红包退回
+DIRECT_TRANSFER，B2C现金红包
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -34,8 +37,8 @@ public class AlipayFundTransCommonQueryModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 销售产品码，商家和支付宝签约的产品码
-如果传递了out_biz_no则该字段为必传
+	 * 销售产品码，商家和支付宝签约的产品码，如果传递了out_biz_no则该字段为必传。可传值如下：
+STD_RED_PACKET：现金红包
 	 */
 	@ApiField("product_code")
 	private String productCode;

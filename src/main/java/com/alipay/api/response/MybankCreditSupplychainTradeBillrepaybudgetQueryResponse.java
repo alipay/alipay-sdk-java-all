@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.trade.billrepaybudget.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-04-02 13:41:37
+ * @since 1.0, 2019-07-02 14:25:02
  */
 public class MybankCreditSupplychainTradeBillrepaybudgetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7862358239657489724L;
+	private static final long serialVersionUID = 6435236255228884133L;
 
 	/** 
 	 * 账单金额明细
@@ -29,6 +29,12 @@ public class MybankCreditSupplychainTradeBillrepaybudgetQueryResponse extends Al
 	 */
 	@ApiField("can_repay")
 	private Boolean canRepay;
+
+	/** 
+	 * exempt_amt:减免金额
+	 */
+	@ApiField("exempt_amt")
+	private String exemptAmt;
 
 	/** 
 	 * 分期明细
@@ -67,6 +73,13 @@ public class MybankCreditSupplychainTradeBillrepaybudgetQueryResponse extends Al
 	}
 	public Boolean getCanRepay( ) {
 		return this.canRepay;
+	}
+
+	public void setExemptAmt(String exemptAmt) {
+		this.exemptAmt = exemptAmt;
+	}
+	public String getExemptAmt( ) {
+		return this.exemptAmt;
 	}
 
 	public void setInstallBudgetDetailList(List<CustScpInstallmentBudgetVO> installBudgetDetailList) {

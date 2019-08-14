@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 市场风险平台风险因子计算
  *
  * @author auto create
- * @since 1.0, 2019-04-22 11:29:46
+ * @since 1.0, 2019-07-25 11:38:04
  */
 public class AlipayAccountFinriskMarkriskDatafactorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2298129287765433622L;
+	private static final long serialVersionUID = 2583877762881639957L;
 
 	/**
 	 * Json格式表示市场风险损益计算入参

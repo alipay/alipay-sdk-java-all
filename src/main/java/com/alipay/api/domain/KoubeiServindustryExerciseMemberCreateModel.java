@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑健身会籍创建
  *
  * @author auto create
- * @since 1.0, 2019-01-03 10:29:43
+ * @since 1.0, 2019-08-01 10:37:15
  */
 public class KoubeiServindustryExerciseMemberCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2757868192717851463L;
+	private static final long serialVersionUID = 4669612754252336915L;
 
 	/**
 	 * 外部会籍id
 	 */
 	@ApiField("external_member_id")
 	private String externalMemberId;
+
+	/**
+	 * 健身用户id
+	 */
+	@ApiField("fitness_id")
+	private String fitnessId;
 
 	/**
 	 * 会籍的到期时间
@@ -82,6 +88,13 @@ public class KoubeiServindustryExerciseMemberCreateModel extends AlipayObject {
 	}
 	public void setExternalMemberId(String externalMemberId) {
 		this.externalMemberId = externalMemberId;
+	}
+
+	public String getFitnessId() {
+		return this.fitnessId;
+	}
+	public void setFitnessId(String fitnessId) {
+		this.fitnessId = fitnessId;
 	}
 
 	public String getGmtEnd() {

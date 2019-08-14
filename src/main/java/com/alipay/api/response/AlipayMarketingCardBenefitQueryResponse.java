@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.benefit.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-06 14:42:18
+ * @since 1.0, 2019-08-08 20:01:24
  */
 public class AlipayMarketingCardBenefitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7866392269834589318L;
+	private static final long serialVersionUID = 2357595652666287185L;
 
 	/** 
 	 * 会员卡模板外部权益列表

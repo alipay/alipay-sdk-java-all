@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用租赁订单订单信息同步接口
  *
  * @author auto create
- * @since 1.0, 2019-05-09 15:51:34
+ * @since 1.0, 2019-07-26 13:55:09
  */
 public class ZhimaMerchantOrderRentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2894829876697832658L;
+	private static final long serialVersionUID = 5237731959717537824L;
 
 	/**
 	 * 外部订单号, 用于定位需要修改的订单
@@ -26,7 +26,7 @@ public class ZhimaMerchantOrderRentSyncModel extends AlipayObject {
 	private String outTransNo;
 
 	/**
-	 * 被修改订单的新逾期时间，注意格式为：yyyy-MM-dd HH:mm:ss，如果sync_type=overdue_time，传入该值有效
+	 * 被修改订单的新逾期时间，时间至少比当前时间晚一天，不能修改为过去的时间，注意格式为：yyyy-MM-dd HH:mm:ss，如果sync_type=overdue_time，传入该值有效
 	 */
 	@ApiField("overdue_time")
 	private String overdueTime;

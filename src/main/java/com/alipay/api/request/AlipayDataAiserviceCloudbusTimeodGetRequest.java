@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.cloudbus.timeod.get request
  * 
  * @author auto create
- * @since 1.0, 2019-05-09 16:44:09
+ * @since 1.0, 2019-08-07 17:11:19
  */
 public class AlipayDataAiserviceCloudbusTimeodGetRequest implements AlipayRequest<AlipayDataAiserviceCloudbusTimeodGetResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动商品的信息
  *
  * @author auto create
- * @since 1.0, 2017-09-30 11:21:09
+ * @since 1.0, 2019-06-25 19:47:25
  */
 public class PromoItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8165357787261255661L;
+	private static final long serialVersionUID = 6241663524433984394L;
 
 	/**
 	 * 商品购买限制

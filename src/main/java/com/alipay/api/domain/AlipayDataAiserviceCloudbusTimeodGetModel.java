@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 公交云OD分时接口
  *
  * @author auto create
- * @since 1.0, 2019-05-09 16:43:31
+ * @since 1.0, 2019-08-07 17:11:12
  */
 public class AlipayDataAiserviceCloudbusTimeodGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8862226212336953364L;
+	private static final long serialVersionUID = 7814999578177335163L;
 
 	/**
 	 * 接口版本

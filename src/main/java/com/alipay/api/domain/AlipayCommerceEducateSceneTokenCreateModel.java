@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育场景token生成处理器
  *
  * @author auto create
- * @since 1.0, 2019-05-22 16:57:59
+ * @since 1.0, 2019-07-19 16:39:23
  */
 public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4451172719945195261L;
+	private static final long serialVersionUID = 2229946417725942518L;
 
 	/**
 	 * 证件号码
@@ -30,6 +30,12 @@ Z:其它证件
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 采集人员的支付宝会员标识
+	 */
+	@ApiField("operator_user_id")
+	private String operatorUserId;
 
 	/**
 	 * 家长手机号码
@@ -67,6 +73,13 @@ Z:其它证件
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getOperatorUserId() {
+		return this.operatorUserId;
+	}
+	public void setOperatorUserId(String operatorUserId) {
+		this.operatorUserId = operatorUserId;
 	}
 
 	public String getParentPhone() {

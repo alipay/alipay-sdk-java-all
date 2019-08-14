@@ -1,17 +1,26 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 创建构建任务
  *
  * @author auto create
- * @since 1.0, 2019-05-13 10:54:51
+ * @since 1.0, 2019-06-20 15:59:10
  */
 public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8663533485516951115L;
+	private static final long serialVersionUID = 7565622961757778666L;
+
+	/**
+	 * 业务来源
+	 */
+	@ApiField("app_origin")
+	private String appOrigin;
 
 	/**
 	 * IDE开发打包类型
@@ -132,6 +141,20 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * 小程序代码中引用的插件列表，包含插件id和插件版本信息
+	 */
+	@ApiListField("plugin_refs")
+	@ApiField("mini_app_plugin_reference")
+	private List<MiniAppPluginReference> pluginRefs;
+
+	public String getAppOrigin() {
+		return this.appOrigin;
+	}
+	public void setAppOrigin(String appOrigin) {
+		this.appOrigin = appOrigin;
+	}
 
 	public String getBuildAppType() {
 		return this.buildAppType;
@@ -271,6 +294,13 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public List<MiniAppPluginReference> getPluginRefs() {
+		return this.pluginRefs;
+	}
+	public void setPluginRefs(List<MiniAppPluginReference> pluginRefs) {
+		this.pluginRefs = pluginRefs;
 	}
 
 }

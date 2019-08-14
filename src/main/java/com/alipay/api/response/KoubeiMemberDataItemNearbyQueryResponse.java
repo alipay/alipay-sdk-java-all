@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.member.data.item.nearby.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-06-28 18:01:30
  */
 public class KoubeiMemberDataItemNearbyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5585463365941194185L;
+	private static final long serialVersionUID = 7258597952632728594L;
 
 	/** 
 	 * 附近优惠商品列表,前端根据其中的字段展示即可

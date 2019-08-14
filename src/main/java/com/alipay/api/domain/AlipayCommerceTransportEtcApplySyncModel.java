@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单状态同步
  *
  * @author auto create
- * @since 1.0, 2019-05-20 22:55:59
+ * @since 1.0, 2019-06-23 10:51:22
  */
 public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4444941184184625826L;
+	private static final long serialVersionUID = 8639365939855427252L;
+
+	/**
+	 * 卡片有效期
+	 */
+	@ApiField("card_expiry_date")
+	private String cardExpiryDate;
 
 	/**
 	 * 卡号
 	 */
 	@ApiField("card_no")
 	private String cardNo;
+
+	/**
+	 * 卡片类型
+	 */
+	@ApiField("card_type")
+	private String cardType;
 
 	/**
 	 * 申请单审核意见
@@ -44,6 +56,12 @@ public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 	private String deliveryNo;
 
 	/**
+	 * 设备有效期
+	 */
+	@ApiField("device_expiry_date")
+	private String deviceExpiryDate;
+
+	/**
 	 * 设备编号
 	 */
 	@ApiField("device_no")
@@ -63,6 +81,12 @@ public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 	 */
 	@ApiField("device_status")
 	private String deviceStatus;
+
+	/**
+	 * 设备类型
+	 */
+	@ApiField("device_type")
+	private String deviceType;
 
 	/**
 	 * 支付宝生成的申请单id
@@ -93,11 +117,25 @@ public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
+	public String getCardExpiryDate() {
+		return this.cardExpiryDate;
+	}
+	public void setCardExpiryDate(String cardExpiryDate) {
+		this.cardExpiryDate = cardExpiryDate;
+	}
+
 	public String getCardNo() {
 		return this.cardNo;
 	}
 	public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
+	}
+
+	public String getCardType() {
+		return this.cardType;
+	}
+	public void setCardType(String cardType) {
+		this.cardType = cardType;
 	}
 
 	public String getCensorInfo() {
@@ -128,6 +166,13 @@ public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 		this.deliveryNo = deliveryNo;
 	}
 
+	public String getDeviceExpiryDate() {
+		return this.deviceExpiryDate;
+	}
+	public void setDeviceExpiryDate(String deviceExpiryDate) {
+		this.deviceExpiryDate = deviceExpiryDate;
+	}
+
 	public String getDeviceNo() {
 		return this.deviceNo;
 	}
@@ -140,6 +185,13 @@ public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 	}
 	public void setDeviceStatus(String deviceStatus) {
 		this.deviceStatus = deviceStatus;
+	}
+
+	public String getDeviceType() {
+		return this.deviceType;
+	}
+	public void setDeviceType(String deviceType) {
+		this.deviceType = deviceType;
 	}
 
 	public String getOrderId() {

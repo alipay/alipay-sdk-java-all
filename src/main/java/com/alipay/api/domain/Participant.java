@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账的收、付款参与方
  *
  * @author auto create
- * @since 1.0, 2019-05-05 14:32:34
+ * @since 1.0, 2019-07-02 15:48:27
  */
 public class Participant extends AlipayObject {
 
-	private static final long serialVersionUID = 7197214447712288295L;
+	private static final long serialVersionUID = 6821816928978586159L;
 
 	/**
 	 * 如果identity_type为BANKCARD_NO需传递该参数，涉及属性如下：
@@ -40,9 +40,7 @@ account_type 银行卡账户类型 1:对公 2：对私
 	/**
 	 * 参与方的标识类型，目前支持如下类型：
 1、ALIPAY_USER_ID 支付宝的会员ID
-2、ALIPAY_ANONYMOUS_USER_ID 支付宝匿名账号
-3、BANKCARD_ACCOUNT 银行卡账号(仅支持参与者为收款方时指定)
-4、ALIPAY_LOGON_ID：支付宝登录号，支持邮箱和手机号格式
+2、ALIPAY_LOGON_ID：支付宝登录号，支持邮箱和手机号格式
 	 */
 	@ApiField("identity_type")
 	private String identityType;
@@ -58,7 +56,7 @@ merchant_user_mobile：商户端的手机号
 	private String merchantUserInfo;
 
 	/**
-	 * 参与方名称
+	 * 参与方真实姓名，如果非空，将校验收款支付宝账号姓名一致性。当identity_type=ALIPAY_LOGON_ID时，本字段必填。
 	 */
 	@ApiField("name")
 	private String name;

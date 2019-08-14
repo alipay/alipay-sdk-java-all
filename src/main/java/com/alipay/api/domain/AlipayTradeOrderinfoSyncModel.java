@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝订单信息同步接口
  *
  * @author auto create
- * @since 1.0, 2019-02-18 20:58:39
+ * @since 1.0, 2019-06-18 11:53:29
  */
 public class AlipayTradeOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4557297494392696816L;
+	private static final long serialVersionUID = 6867315516169621584L;
 
 	/**
 	 * 交易信息同步对应的业务类型，具体值与支付宝约定；
@@ -38,6 +38,12 @@ VIOLATED： 用户已违约
 	private String orderBizInfo;
 
 	/**
+	 * 原始业务请求单号。如对某一次退款进行履约时，该字段传退款时的退款请求号
+	 */
+	@ApiField("orig_request_no")
+	private String origRequestNo;
+
+	/**
 	 * 标识一笔交易多次请求，同一笔交易多次信息同步时需要保证唯一
 	 */
 	@ApiField("out_request_no")
@@ -61,6 +67,13 @@ VIOLATED： 用户已违约
 	}
 	public void setOrderBizInfo(String orderBizInfo) {
 		this.orderBizInfo = orderBizInfo;
+	}
+
+	public String getOrigRequestNo() {
+		return this.origRequestNo;
+	}
+	public void setOrigRequestNo(String origRequestNo) {
+		this.origRequestNo = origRequestNo;
 	}
 
 	public String getOutRequestNo() {

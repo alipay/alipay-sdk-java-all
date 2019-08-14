@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预算信息
  *
  * @author auto create
- * @since 1.0, 2017-11-15 19:55:36
+ * @since 1.0, 2019-06-25 19:48:15
  */
 public class BudgetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3628737437641768399L;
+	private static final long serialVersionUID = 6726757434651751487L;
 
 	/**
 	 * 预算数量

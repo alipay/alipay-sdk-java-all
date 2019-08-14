@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金退款
  *
  * @author auto create
- * @since 1.0, 2019-01-10 20:56:05
+ * @since 1.0, 2019-07-17 01:01:37
  */
 public class AlipayFundTransRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1437476584546332566L;
+	private static final long serialVersionUID = 4856857243755641759L;
 
 	/**
 	 * JSON格式，传递业务扩展参数，使用前请与支付宝工程师联系！
@@ -20,13 +20,13 @@ public class AlipayFundTransRefundModel extends AlipayObject {
 	private String businessParams;
 
 	/**
-	 * 该笔支付在支付宝系统内部的单据ID。
+	 * 发红包时支付宝返回的支付宝订单号order_id。
 	 */
 	@ApiField("order_id")
 	private String orderId;
 
 	/**
-	 * 标识一次退款请求，一笔退款失败后重新提交，要采用原来的退款单号。总退款金额不能超过用户实际支付金额。
+	 * 标识一次资金退回请求，一笔资金退回失败后重新提交，要采用原来的资金退回单号。总退款金额不能超过用户实际支付金额。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -44,7 +44,7 @@ public class AlipayFundTransRefundModel extends AlipayObject {
 	private String refundAmount;
 
 	/**
-	 * 退款备注
+	 * 资金退回备注
 	 */
 	@ApiField("remark")
 	private String remark;

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证的流水信息
  *
  * @author auto create
- * @since 1.0, 2017-08-15 19:19:07
+ * @since 1.0, 2019-08-05 20:35:31
  */
 public class TicketTransInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1553289554182924741L;
+	private static final long serialVersionUID = 5389165153279896453L;
 
 	/**
 	 * 流水创建时间

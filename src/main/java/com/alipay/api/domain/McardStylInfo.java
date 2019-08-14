@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡卡面样式
  *
  * @author auto create
- * @since 1.0, 2019-03-06 21:31:15
+ * @since 1.0, 2019-08-08 20:03:15
  */
 public class McardStylInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1856171835581154324L;
+	private static final long serialVersionUID = 3116781443892844558L;
 
 	/**
 	 * 背景图片Id，通过接口（alipay.offline.material.image.upload）上传图片

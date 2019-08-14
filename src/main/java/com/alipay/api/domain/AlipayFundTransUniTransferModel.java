@@ -7,32 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝转账支付接口
  *
  * @author auto create
- * @since 1.0, 2019-04-22 17:49:06
+ * @since 1.0, 2019-07-27 01:16:21
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4418892697597648113L;
+	private static final long serialVersionUID = 7598492775582426516L;
 
 	/**
-	 * 描述特定的业务场景，比如对党费缴纳场景需走党费专户
+	 * 描述特定的业务场景，可传的参数如下：
+PERSONAL_COLLECTION：C2C现金红包-领红包
+DIRECT_TRANSFER：B2C现金红包
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
 
 	/**
-	 * 转账请求的扩展参数，具体请与支付宝工程师联系
+	 * 转账业务请求的扩展参数，支持传入的扩展参数如下：
+1、sub_biz_scene 子业务场景，红包必传，取值REDPACKET，c2c现金红包、b2c现金红包均需传入
 	 */
 	@ApiField("business_params")
 	private String businessParams;
 
 	/**
-	 * 转账的标题，用于在支付宝用户的账单里显示
+	 * 转账业务的标题，用于在支付宝用户的账单里显示
 	 */
 	@ApiField("order_title")
 	private String orderTitle;
 
 	/**
-	 * 原单号。比如抢红包的时候，传红包支付时返回的支付宝单号。
+	 * 原支付宝业务单号。C2C现金红包-红包领取时，传红包支付时返回的支付宝单号；B2C现金红包不需要该参数。
 	 */
 	@ApiField("original_order_id")
 	private String originalOrderId;
@@ -62,13 +65,14 @@ public class AlipayFundTransUniTransferModel extends AlipayObject {
 	private Participant payerInfo;
 
 	/**
-	 * 转账产品码
+	 * 业务产品码，
+收发现金红包固定为：STD_RED_PACKET
 	 */
 	@ApiField("product_code")
 	private String productCode;
 
 	/**
-	 * 转账备注
+	 * 业务备注
 	 */
 	@ApiField("remark")
 	private String remark;
