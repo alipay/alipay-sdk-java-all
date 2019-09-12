@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.ocr.idcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-20 20:23:39
+ * @since 1.0, 2019-08-27 11:16:38
  */
 public class AlipayIserviceCognitiveOcrIdcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4164615421924881138L;
+	private static final long serialVersionUID = 5426842458762117692L;
 
 	/** 
 	 * 地址
@@ -43,6 +43,12 @@ public class AlipayIserviceCognitiveOcrIdcardQueryResponse extends AlipayRespons
 	 */
 	@ApiField("issue")
 	private String issue;
+
+	/** 
+	 * 身份证姓名
+	 */
+	@ApiField("name")
+	private String name;
 
 	/** 
 	 * 民族
@@ -120,6 +126,13 @@ false: 解析失败
 	}
 	public String getIssue( ) {
 		return this.issue;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName( ) {
+		return this.name;
 	}
 
 	public void setNationality(String nationality) {

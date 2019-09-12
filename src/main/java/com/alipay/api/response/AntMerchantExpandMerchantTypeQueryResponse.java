@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.merchant.type.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-29 12:25:01
+ * @since 1.0, 2019-08-26 10:49:08
  */
 public class AntMerchantExpandMerchantTypeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7842797397373296925L;
+	private static final long serialVersionUID = 1336253136962739511L;
 
 	/** 
 	 * 返回值及对应含义如下：
@@ -31,6 +31,14 @@ other-非口碑商户
 	@ApiField("kb_type")
 	private String kbType;
 
+	/** 
+	 * 返回值及对应汗液如下：
+offline_pay_signed-已签约线下支付
+other-其他情况
+	 */
+	@ApiField("merchant_sign_type")
+	private String merchantSignType;
+
 	public void setIndirectBindType(String indirectBindType) {
 		this.indirectBindType = indirectBindType;
 	}
@@ -43,6 +51,13 @@ other-非口碑商户
 	}
 	public String getKbType( ) {
 		return this.kbType;
+	}
+
+	public void setMerchantSignType(String merchantSignType) {
+		this.merchantSignType = merchantSignType;
+	}
+	public String getMerchantSignType( ) {
+		return this.merchantSignType;
 	}
 
 }

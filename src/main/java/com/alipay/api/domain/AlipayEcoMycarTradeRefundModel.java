@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汽车超人退款节接口
  *
  * @author auto create
- * @since 1.0, 2019-03-28 10:39:05
+ * @since 1.0, 2019-08-29 11:19:27
  */
 public class AlipayEcoMycarTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5289469624981418264L;
+	private static final long serialVersionUID = 1178743494824293217L;
 
 	/**
 	 * 渠道平台

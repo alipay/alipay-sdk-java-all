@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金授权发码接口
  *
  * @author auto create
- * @since 1.0, 2019-06-12 22:26:07
+ * @since 1.0, 2019-09-09 16:05:24
  */
 public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3681858367649817559L;
+	private static final long serialVersionUID = 1479377494751237563L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -39,6 +39,7 @@ public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 	/**
 	 * 用户实名信息参数，包含：姓名+身份证号的hash值、指定用户的uid。商户传入用户实名信息参数，支付宝会对比用户在支付宝端的实名信息。
 姓名+身份证号hash值使用SHA256摘要方式与UTF8编码,返回十六进制的字符串。
+identity_hash和alipay_user_id都是可选的，如果两个都传，则会先校验identity_hash，然后校验alipay_user_id。其中identity_hash的待加密字样如"张三4566498798498498498498"
 	 */
 	@ApiField("identity_params")
 	private String identityParams;

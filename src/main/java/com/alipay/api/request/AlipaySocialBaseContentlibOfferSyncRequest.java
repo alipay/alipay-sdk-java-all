@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.contentlib.offer.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-06-10 15:10:29
+ * @since 1.0, 2019-08-31 14:21:37
  */
 public class AlipaySocialBaseContentlibOfferSyncRequest implements AlipayRequest<AlipaySocialBaseContentlibOfferSyncResponse> {
 

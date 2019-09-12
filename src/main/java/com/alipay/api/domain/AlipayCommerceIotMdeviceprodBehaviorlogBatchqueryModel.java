@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询iot设备扫码、心跳的行为日志信息
  *
  * @author auto create
- * @since 1.0, 2019-02-25 16:47:11
+ * @since 1.0, 2019-08-21 19:52:03
  */
 public class AlipayCommerceIotMdeviceprodBehaviorlogBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3194155317958496355L;
+	private static final long serialVersionUID = 2513517423755332357L;
 
 	/**
 	 * 行为日志类型，SCAN_CDOE:扫码/HEARTBEAT:心跳

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 游泳场馆水质数据回流接口
  *
  * @author auto create
- * @since 1.0, 2018-06-01 14:16:18
+ * @since 1.0, 2019-08-14 14:44:26
  */
 public class KoubeiServindustryNatatoriumWaterqualityUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3494171774481471288L;
+	private static final long serialVersionUID = 5772355639437782627L;
 
 	/**
 	 * ISV的插件ID

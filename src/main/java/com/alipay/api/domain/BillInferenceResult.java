@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票业务result
  *
  * @author auto create
- * @since 1.0, 2018-05-21 18:03:48
+ * @since 1.0, 2019-09-04 14:49:50
  */
 public class BillInferenceResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2225433526854232969L;
+	private static final long serialVersionUID = 1173444493393795963L;
 
 	/**
 	 * 角度

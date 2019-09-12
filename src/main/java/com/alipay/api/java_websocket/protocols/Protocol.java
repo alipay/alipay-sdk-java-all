@@ -34,65 +34,59 @@ import java.util.regex.Pattern;
  */
 public class Protocol implements IProtocol {
 
-	private static final Pattern patternSpace = Pattern.compile(" ");
-	private static final Pattern patternComma = Pattern.compile(",");
+    private static final Pattern patternSpace = Pattern.compile(" ");
+    private static final Pattern patternComma = Pattern.compile(",");
 
-	/**
-	 * Attribute for the provided protocol
-	 */
-	private final String providedProtocol;
+    /**
+     * Attribute for the provided protocol
+     */
+    private final String providedProtocol;
 
-	/**
-	 * Constructor for a Sec-Websocket-Protocol
-	 *
-	 * @param providedProtocol the protocol string
-	 */
-	public Protocol( String providedProtocol ) {
-		if( providedProtocol == null ) {
-			throw new IllegalArgumentException();
-		}
-		this.providedProtocol = providedProtocol;
-	}
+    /**
+     * Constructor for a Sec-Websocket-Protocol
+     *
+     * @param providedProtocol the protocol string
+     */
+    public Protocol(String providedProtocol) {
+        if (providedProtocol == null) {
+            throw new IllegalArgumentException();
+        }
+        this.providedProtocol = providedProtocol;
+    }
 
+    public boolean acceptProvidedProtocol(String inputProtocolHeader) {
+        String protocolHeader = patternSpace.matcher(inputProtocolHeader).replaceAll("");
+        String[] headers = patternComma.split(protocolHeader);
+        for (String header : headers) {
+            if (providedProtocol.equals(header)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
-	public boolean acceptProvidedProtocol( String inputProtocolHeader ) {
-		String protocolHeader = patternSpace.matcher(inputProtocolHeader).replaceAll("");
-		String[] headers = patternComma.split(protocolHeader);
-		for( String header : headers ) {
-			if( providedProtocol.equals( header ) ) {
-				return true;
-			}
-		}
-		return false;
-	}
+    public String getProvidedProtocol() {
+        return this.providedProtocol;
+    }
 
+    public IProtocol copyInstance() {
+        return new Protocol(getProvidedProtocol());
+    }
 
-	public String getProvidedProtocol() {
-		return this.providedProtocol;
-	}
+    public String toString() {
+        return getProvidedProtocol();
+    }
 
+    public boolean equals(Object o) {
+        if (this == o) { return true; }
+        if (o == null || getClass() != o.getClass()) { return false; }
 
-	public IProtocol copyInstance() {
-		return new Protocol( getProvidedProtocol() );
-	}
+        Protocol protocol = (Protocol) o;
 
+        return providedProtocol.equals(protocol.providedProtocol);
+    }
 
-	public String toString() {
-		return getProvidedProtocol();
-	}
-
-
-	public boolean equals( Object o ) {
-		if( this == o ) return true;
-		if( o == null || getClass() != o.getClass() ) return false;
-
-		Protocol protocol = ( Protocol ) o;
-
-		return providedProtocol.equals( protocol.providedProtocol );
-	}
-
-
-	public int hashCode() {
-		return providedProtocol.hashCode();
-	}
+    public int hashCode() {
+        return providedProtocol.hashCode();
+    }
 }

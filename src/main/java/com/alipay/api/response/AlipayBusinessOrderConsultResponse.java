@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.order.consult response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-12 10:40:22
+ * @since 1.0, 2019-08-17 17:36:34
  */
 public class AlipayBusinessOrderConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4244452395921585363L;
+	private static final long serialVersionUID = 8636714482749993259L;
 
 	/** 
 	 * 用户详细信息列表，对于会员互通场景，可一次性返回商户、支付宝、平台等用户信息。

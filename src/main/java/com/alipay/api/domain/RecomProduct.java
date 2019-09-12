@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推荐产品对象
  *
  * @author auto create
- * @since 1.0, 2019-03-19 04:07:59
+ * @since 1.0, 2019-09-09 14:00:18
  */
 public class RecomProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 5242597951772147856L;
+	private static final long serialVersionUID = 1418139387325168778L;
 
 	/**
 	 * 裸价
@@ -57,6 +57,12 @@ public class RecomProduct extends AlipayObject {
 	 */
 	@ApiField("company_service_phone")
 	private String companyServicePhone;
+
+	/**
+	 * 产品销售单元
+	 */
+	@ApiField("csu_no")
+	private String csuNo;
 
 	/**
 	 * 最大允许购买份数
@@ -106,6 +112,12 @@ public class RecomProduct extends AlipayObject {
 	 */
 	@ApiField("restriction_type")
 	private String restrictionType;
+
+	/**
+	 * 保额(单位:分)
+	 */
+	@ApiField("sum_insured")
+	private Long sumInsured;
 
 	/**
 	 * 推荐返回结果对象：1：保险产品，2：保险权益
@@ -162,6 +174,13 @@ public class RecomProduct extends AlipayObject {
 		this.companyServicePhone = companyServicePhone;
 	}
 
+	public String getCsuNo() {
+		return this.csuNo;
+	}
+	public void setCsuNo(String csuNo) {
+		this.csuNo = csuNo;
+	}
+
 	public Long getMaxQuan() {
 		return this.maxQuan;
 	}
@@ -216,6 +235,13 @@ public class RecomProduct extends AlipayObject {
 	}
 	public void setRestrictionType(String restrictionType) {
 		this.restrictionType = restrictionType;
+	}
+
+	public Long getSumInsured() {
+		return this.sumInsured;
+	}
+	public void setSumInsured(Long sumInsured) {
+		this.sumInsured = sumInsured;
 	}
 
 	public String getType() {

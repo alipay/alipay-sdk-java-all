@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业订单查询
  *
  * @author auto create
- * @since 1.0, 2019-03-12 10:40:00
+ * @since 1.0, 2019-08-17 17:38:59
  */
 public class AlipayBusinessOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3534912484433751199L;
+	private static final long serialVersionUID = 5285526217653893637L;
 
 	/**
 	 * 商户外部订单号，和支付宝订单号不能同时为空。注：商户已获取order_no（支付宝订单号）的情况下必须优先传入order_no

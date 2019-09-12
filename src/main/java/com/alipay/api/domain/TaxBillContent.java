@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增值税发票数据结构
  *
  * @author auto create
- * @since 1.0, 2019-01-25 17:14:39
+ * @since 1.0, 2019-09-05 10:17:52
  */
 public class TaxBillContent extends AlipayObject {
 
-	private static final long serialVersionUID = 2117885922328169611L;
+	private static final long serialVersionUID = 2776794969345568661L;
 
 	/**
 	 * 校验码
 	 */
 	@ApiField("anti_fake_code")
 	private String antiFakeCode;
+
+	/**
+	 * 复审
+	 */
+	@ApiField("checker")
+	private String checker;
+
+	/**
+	 * 开票人
+	 */
+	@ApiField("clerk")
+	private String clerk;
 
 	/**
 	 * 总金额
@@ -44,6 +56,24 @@ public class TaxBillContent extends AlipayObject {
 	private String einvNo;
 
 	/**
+	 * 收款人
+	 */
+	@ApiField("payee")
+	private String payee;
+
+	/**
+	 * 卖方地址、电话
+	 */
+	@ApiField("payee_address")
+	private String payeeAddress;
+
+	/**
+	 * 卖方开户行
+	 */
+	@ApiField("payee_bank_name")
+	private String payeeBankName;
+
+	/**
 	 * 卖方名称
 	 */
 	@ApiField("payee_name")
@@ -56,6 +86,18 @@ public class TaxBillContent extends AlipayObject {
 	private String payeeRegisterNo;
 
 	/**
+	 * 买方地址、电话
+	 */
+	@ApiField("payer_address")
+	private String payerAddress;
+
+	/**
+	 * 买方开户行
+	 */
+	@ApiField("payer_bank_name")
+	private String payerBankName;
+
+	/**
 	 * 买方名称
 	 */
 	@ApiField("payer_name")
@@ -66,6 +108,12 @@ public class TaxBillContent extends AlipayObject {
 	 */
 	@ApiField("payer_register_no")
 	private String payerRegisterNo;
+
+	/**
+	 * 价税合计（大写）
+	 */
+	@ApiField("sum_amount")
+	private String sumAmount;
 
 	/**
 	 * 税额
@@ -84,6 +132,20 @@ public class TaxBillContent extends AlipayObject {
 	}
 	public void setAntiFakeCode(String antiFakeCode) {
 		this.antiFakeCode = antiFakeCode;
+	}
+
+	public String getChecker() {
+		return this.checker;
+	}
+	public void setChecker(String checker) {
+		this.checker = checker;
+	}
+
+	public String getClerk() {
+		return this.clerk;
+	}
+	public void setClerk(String clerk) {
+		this.clerk = clerk;
 	}
 
 	public String getEinvAmount() {
@@ -114,6 +176,27 @@ public class TaxBillContent extends AlipayObject {
 		this.einvNo = einvNo;
 	}
 
+	public String getPayee() {
+		return this.payee;
+	}
+	public void setPayee(String payee) {
+		this.payee = payee;
+	}
+
+	public String getPayeeAddress() {
+		return this.payeeAddress;
+	}
+	public void setPayeeAddress(String payeeAddress) {
+		this.payeeAddress = payeeAddress;
+	}
+
+	public String getPayeeBankName() {
+		return this.payeeBankName;
+	}
+	public void setPayeeBankName(String payeeBankName) {
+		this.payeeBankName = payeeBankName;
+	}
+
 	public String getPayeeName() {
 		return this.payeeName;
 	}
@@ -128,6 +211,20 @@ public class TaxBillContent extends AlipayObject {
 		this.payeeRegisterNo = payeeRegisterNo;
 	}
 
+	public String getPayerAddress() {
+		return this.payerAddress;
+	}
+	public void setPayerAddress(String payerAddress) {
+		this.payerAddress = payerAddress;
+	}
+
+	public String getPayerBankName() {
+		return this.payerBankName;
+	}
+	public void setPayerBankName(String payerBankName) {
+		this.payerBankName = payerBankName;
+	}
+
 	public String getPayerName() {
 		return this.payerName;
 	}
@@ -140,6 +237,13 @@ public class TaxBillContent extends AlipayObject {
 	}
 	public void setPayerRegisterNo(String payerRegisterNo) {
 		this.payerRegisterNo = payerRegisterNo;
+	}
+
+	public String getSumAmount() {
+		return this.sumAmount;
+	}
+	public void setSumAmount(String sumAmount) {
+		this.sumAmount = sumAmount;
 	}
 
 	public String getTaxAmount() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品状态修改接口
  *
  * @author auto create
- * @since 1.0, 2019-01-18 10:39:57
+ * @since 1.0, 2019-08-16 12:28:30
  */
 public class AntMerchantExpandItemStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5646551576588369411L;
+	private static final long serialVersionUID = 2656438361926228146L;
 
 	/**
 	 * 商品ID

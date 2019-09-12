@@ -7,16 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝转账支付接口
  *
  * @author auto create
- * @since 1.0, 2019-07-27 01:16:21
+ * @since 1.0, 2019-09-09 16:05:00
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7598492775582426516L;
+	private static final long serialVersionUID = 1199931299566376272L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下：
-PERSONAL_COLLECTION：C2C现金红包-领红包
-DIRECT_TRANSFER：B2C现金红包
+PERSONAL_COLLECTION：C2C现金红包-领红包；
+DIRECT_TRANSFER：B2C现金红包、单笔无密转账
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -35,7 +35,7 @@ DIRECT_TRANSFER：B2C现金红包
 	private String orderTitle;
 
 	/**
-	 * 原支付宝业务单号。C2C现金红包-红包领取时，传红包支付时返回的支付宝单号；B2C现金红包不需要该参数。
+	 * 原支付宝业务单号。C2C现金红包-红包领取时，传红包支付时返回的支付宝单号；B2C现金红包、单笔无密转账不需要该参数。
 	 */
 	@ApiField("original_order_id")
 	private String originalOrderId;
@@ -66,7 +66,8 @@ DIRECT_TRANSFER：B2C现金红包
 
 	/**
 	 * 业务产品码，
-收发现金红包固定为：STD_RED_PACKET
+收发现金红包固定为：STD_RED_PACKET；
+单笔无密转账固定为：TRANS_ACCOUNT_NO_PWD；
 	 */
 	@ApiField("product_code")
 	private String productCode;

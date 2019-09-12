@@ -11,17 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 无资金单品券创建
  *
  * @author auto create
- * @since 1.0, 2019-07-15 10:09:20
+ * @since 1.0, 2019-09-06 08:54:34
  */
 public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3895268676197866139L;
+	private static final long serialVersionUID = 3426525732829867621L;
 
 	/**
 	 * 代金券面额。
-当voucher_type为无资金单品代金券时必选。币种为人民币，单位为元。该数值不能小于0.1，且不能大于999元，代表订单金额达到使用门槛后，本券可抵扣相应面额资金。
+当voucher_type为无资金单品代金券（ITEM_CASHLESS_FIX_VOUCHER）时必选。币种为人民币，单位为元。该数值不能小于0.1，且不能大于999元，代表订单金额达到使用门槛后，本券可抵扣相应面额资金。
 代金券面额以门槛消费金额为基准，换算成折扣，不能低于9.95折。
-当voucher_type为无资金单品折扣券和无资金单品特价券时此值必须为空。
+当voucher_type为无资金单品折扣券（ITEM_CASHLESS_DISCOUNT_VOUCHER）和无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER）时此值必须为空。
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -35,7 +35,7 @@ public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends Alipa
 
 	/**
 	 * 单品价格可以享受的折扣力度（如填写0.9就表示9折）。
-该值必须大于等于0.1且小于1，小数点以后最多保留两位，voucher_type为无资金单品折扣券时必选，其他券类型场景此值必须为0。
+该值必须大于等于0.1且小于1，小数点以后最多保留两位，voucher_type为无资金单品折扣券（ITEM_CASHLESS_DISCOUNT_VOUCHER）时必选，其他券类型场景此值必须为0。
 	 */
 	@ApiField("discount")
 	private Long discount;
@@ -48,9 +48,8 @@ public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends Alipa
 	private String floorAmount;
 
 	/**
-	 * 每种商品最多可享折扣数量。
-当用户同一种商品购买多件时，最多可以对几件特价支付。假设券类型为无资金单品特价券，商品编码填写A、B，此参数传入3，则订单中A、B两个单品分别最多3件特价X元，第4件以上原价。必须是整数，最低数量为1，最高99。
-voucher_type为无资金单品折扣券和无资金单品特价券时必填，无资金代金券下此值必须为0。
+	 * 所有商品最多可享折扣数量。 当用户购买多件时，最多可以对几件特价支付。假设券类型为无资金单品特价券(ITEM_CASHLESS_SPE_VOUCHER)，商品编码填写A、B，此参数传入2，则订单中不管是A或者B，一共只能优惠2件，第3件以上原价。必须是整数，最低数量为1，最高99。券类型为无资金单品折扣券(ITEM_CASHLESS_DISCOUNT_VOUCHER)和无资金单品特价券(ITEM_CASHLESS_SPE_VOUCHER)时必填，无资金单品代金券下此值必须为0。
+特别注意：此字段折扣数量的计算方式，相对老版本版本发生了变化。老版本的计算方式如下： 同样假设券类型为无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER），商品编码填写A、B，此参数传入3，则订单中A、B两个单品分别最多3件特价X元，第4件以上原价。必须是整数，最低数量为1，最高99。 voucher_type为无资金单品折扣券（ITEM_CASHLESS_DISCOUNT_VOUCHER）和无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER）时必填，无资金单品代金券下此值必须为0。可以直接通过产品文档说明中的API的版本信息或者创建券模板返回结果中的的最大优惠字段（voucher_discount_limit）来确认具体使用的哪种折扣方式。
 	 */
 	@ApiField("goods_ceiling_quantity")
 	private String goodsCeilingQuantity;
@@ -91,7 +90,7 @@ voucher_type为无资金单品折扣券和无资金单品特价券时必填，�
 
 	/**
 	 * 商品原价。
-当voucher_type为无资金单品折扣券和无资金单品特价券时必选，无资金单品代金券类型下此值必须为空。用于计算最大优惠价格（最大优惠价格的计算方式请参考产品说明文档）。
+当voucher_type为无资金单品折扣券（ITEM_CASHLESS_DISCOUNT_VOUCHER）和无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER）时必选，无资金单品代金券（ITEM_CASHLESS_FIX_VOUCHER）类型下此值必须为空。用于计算最大优惠价格（最大优惠价格的计算方式请参考产品说明文档）。
 	 */
 	@ApiField("goods_origin_price")
 	private String goodsOriginPrice;
@@ -127,7 +126,7 @@ voucher_type为无资金单品折扣券和无资金单品特价券时必填，�
 	private String ruleConf;
 
 	/**
-	 * 特价面额。使用特定价格购买单品，币种为人民币，单位为1以下小数。该数值不能小于0.1，小数点以后最多保留两位。最高特价面额不能超过999元。voucher_type为无资金单品特价券时必选，其他券类型场景此值必须为空。
+	 * 特价面额。使用特定价格购买单品，币种为人民币，最高特价面额不能超过999元。voucher_type为无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER）时必选，其他券类型场景此值必须为空。
 	 */
 	@ApiField("special_price")
 	private String specialPrice;

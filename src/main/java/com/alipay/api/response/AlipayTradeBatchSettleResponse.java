@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.batch.settle response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-05 21:09:33
+ * @since 1.0, 2019-09-12 18:35:50
  */
 public class AlipayTradeBatchSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6535797216681559598L;
+	private static final long serialVersionUID = 4381195751217631858L;
 
 	/** 
 	 * 结算受理时间
 	 */
 	@ApiField("gmt_create")
 	private String gmtCreate;
+
+	/** 
+	 * 结算请求外部流水号
+	 */
+	@ApiField("out_request_no")
+	private String outRequestNo;
 
 	/** 
 	 * 业务结果码。
@@ -43,6 +49,13 @@ SYSTEM_EXCEPTION：系统异常
 	}
 	public String getGmtCreate( ) {
 		return this.gmtCreate;
+	}
+
+	public void setOutRequestNo(String outRequestNo) {
+		this.outRequestNo = outRequestNo;
+	}
+	public String getOutRequestNo( ) {
+		return this.outRequestNo;
 	}
 
 	public void setResultCode(String resultCode) {

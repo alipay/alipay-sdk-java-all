@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZhimaMerchantActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4411546274189625656L;
+	private static final long serialVersionUID = 4326796192999742969L;
 
 	/**
 	 * 活动名称，用于展示和区分活动，最大长度30

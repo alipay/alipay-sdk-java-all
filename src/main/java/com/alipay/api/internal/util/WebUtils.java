@@ -2,7 +2,6 @@ package com.alipay.api.internal.util;
 
 import com.alipay.api.AlipayConstants;
 import com.alipay.api.FileItem;
-import sun.net.www.protocol.https.HttpsURLConnectionImpl;
 
 import javax.net.ssl.*;
 import java.io.*;
@@ -23,7 +22,7 @@ import java.util.Set;
  * @author carver.gu
  * @since 1.0, Sep 12, 2009
  */
-public abstract class WebUtils {
+public class WebUtils {
 
     private static final String DEFAULT_CHARSET = AlipayConstants.CHARSET_UTF8;
     private static final String METHOD_POST     = "POST";
@@ -33,8 +32,25 @@ public abstract class WebUtils {
 
     private static HostnameVerifier verifier = null;
 
-    private static SSLSocketFactory socketFactory    = null;
-    private static int              keepAliveTimeout = 0;
+    private static SSLSocketFactory socketFactory = null;
+
+    private static int keepAliveTimeout = 0;
+
+    /**
+     * 是否校验SSL服务端证书，默认为需要校验
+     */
+    private static volatile boolean needCheckServerTrusted = true;
+
+    /**
+     * 设置是否校验SSL服务端证书
+     *
+     * @param needCheckServerTrusted true：需要校验（默认，推荐）；
+     *                               <p>
+     *                               false：不需要校验（仅当部署环境不便于进行服务端证书校验，且已有其他方式确保通信安全时，可以关闭SSL服务端证书校验功能）
+     */
+    public static void setNeedCheckServerTrusted(boolean needCheckServerTrusted) {
+        WebUtils.needCheckServerTrusted = needCheckServerTrusted;
+    }
 
     /**
      * 设置KeepAlive连接超时时间，一次HTTP请求完成后，底层TCP连接将尝试尽量保持该超时时间后才关闭，以便其他HTTP请求复用TCP连接
@@ -85,7 +101,7 @@ public abstract class WebUtils {
 
         verifier = new HostnameVerifier() {
             public boolean verify(String hostname, SSLSession session) {
-                return false;//默认认证不通过，进行证书校验。
+                return false; //不允许URL的主机名和服务器的标识主机名不匹配的情况
             }
         };
 
@@ -361,8 +377,11 @@ public abstract class WebUtils {
             } else {
                 connHttps = (HttpsURLConnection) url.openConnection();
             }
-            connHttps.setSSLSocketFactory(socketFactory);
-            connHttps.setHostnameVerifier(verifier);
+            if (!needCheckServerTrusted) {
+                //设置不校验服务端证书的SSLContext
+                connHttps.setSSLSocketFactory(socketFactory);
+                connHttps.setHostnameVerifier(verifier);
+            }
             conn = connHttps;
         } else {
             conn = null;
@@ -589,7 +608,7 @@ public abstract class WebUtils {
     }
 
     public static String buildForm(String baseUrl, Map<String, String> parameters) {
-        java.lang.StringBuffer sb = new StringBuffer();
+        StringBuffer sb = new StringBuffer();
         sb.append("<form name=\"punchout_form\" method=\"post\" action=\"");
         sb.append(baseUrl);
         sb.append("\">\n");
@@ -598,7 +617,7 @@ public abstract class WebUtils {
         sb.append("<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n");
         sb.append("</form>\n");
         sb.append("<script>document.forms[0].submit();</script>");
-        java.lang.String form = sb.toString();
+        String form = sb.toString();
         return form;
     }
 
@@ -606,7 +625,7 @@ public abstract class WebUtils {
         if (parameters == null || parameters.isEmpty()) {
             return "";
         }
-        java.lang.StringBuffer sb = new StringBuffer();
+        StringBuffer sb = new StringBuffer();
         Set<String> keys = parameters.keySet();
         for (String key : keys) {
             String value = parameters.get(key);
@@ -616,12 +635,12 @@ public abstract class WebUtils {
             }
             sb.append(buildHiddenField(key, value));
         }
-        java.lang.String result = sb.toString();
+        String result = sb.toString();
         return result;
     }
 
     private static String buildHiddenField(String key, String value) {
-        java.lang.StringBuffer sb = new StringBuffer();
+        StringBuffer sb = new StringBuffer();
         sb.append("<input type=\"hidden\" name=\"");
         sb.append(key);
 
@@ -642,11 +661,13 @@ public abstract class WebUtils {
             return;
         }
         try {
-            Field delegateHttpsUrlConnectionField = HttpsURLConnectionImpl.class.getDeclaredField("delegate");
+
+            Field delegateHttpsUrlConnectionField = Class.forName("sun.net.www.protocol.https.HttpsURLConnectionImpl").getDeclaredField(
+                    "delegate");
             delegateHttpsUrlConnectionField.setAccessible(true);
             Object delegateHttpsUrlConnection = delegateHttpsUrlConnectionField.get(connection);
 
-            Field httpClientField = sun.net.www.protocol.http.HttpURLConnection.class.getDeclaredField("http");
+            Field httpClientField = Class.forName("sun.net.www.protocol.http.HttpURLConnection").getDeclaredField("http");
             httpClientField.setAccessible(true);
             Object httpClient = httpClientField.get(delegateHttpsUrlConnection);
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.cognitive.invoices.inference.query request
  * 
  * @author auto create
- * @since 1.0, 2019-04-26 12:37:51
+ * @since 1.0, 2019-09-05 20:08:00
  */
 public class AlipayIserviceCognitiveInvoicesInferenceQueryRequest implements AlipayRequest<AlipayIserviceCognitiveInvoicesInferenceQueryResponse> {
 

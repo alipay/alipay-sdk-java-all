@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易支付的渠道属性
  *
  * @author auto create
- * @since 1.0, 2019-02-27 23:31:50
+ * @since 1.0, 2019-08-17 17:45:10
  */
 public class TradeFundBill extends AlipayObject {
 
-	private static final long serialVersionUID = 8533484192927788821L;
+	private static final long serialVersionUID = 3748563955243513264L;
 
 	/**
 	 * 该支付工具类型所使用的金额

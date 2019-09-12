@@ -1,27 +1,28 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api;
+
+import com.alipay.api.internal.mapping.ApiField;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.alipay.api.internal.mapping.ApiField;
-
 /**
  * @author gongyi.tnj
- * @version $Id: BatchAlipayResponse.java, v 0.1 2018-07-18 ÉÏÎç10:29 gongyi.tnj Exp $
+ * @version $Id: BatchAlipayResponse.java, v 0.1 2018-07-18 ä¸Šåˆ10:29 gongyi.tnj Exp $
  */
 public class BatchAlipayResponse extends AlipayResponse {
 
-    private static final long                  serialVersionUID = -4636364816621782447L;
+    private static final long serialVersionUID = -4636364816621782447L;
 
-    /** ÅúÁ¿µ÷ÓÃ½Ó¿Ú¼¯ºÏ **/
-    private List<AlipayResponse>               responseList;
+    /**
+     * æ‰¹é‡è°ƒç”¨æ¥å£é›†åˆ
+     **/
+    private List<AlipayResponse> responseList;
 
     @ApiField("response_body")
-    private String                             responseBody;
+    private String responseBody;
 
     public void addResponse(AlipayResponse response) {
         if (null == responseList) {
@@ -31,7 +32,8 @@ public class BatchAlipayResponse extends AlipayResponse {
     }
 
     /**
-     * »ñÈ¡ÅúÁ¿µ÷ÓÃ×ÓÇëÇóÏìÓ¦ÁĞ±í
+     * è·å–æ‰¹é‡è°ƒç”¨å­è¯·æ±‚å“åº”åˆ—è¡¨
+     *
      * @return
      */
     public List<AlipayResponse> getResponseList() {

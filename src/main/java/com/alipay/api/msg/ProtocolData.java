@@ -1,25 +1,23 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api.msg;
-
-import java.util.Random;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import com.alipay.api.internal.util.AlipayUtils;
 import com.alipay.api.internal.util.StringUtils;
 
+import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
- *
  * @author liuqun.lq
  * @version $Id: ProtocolData.java, v 0.1 2018年11月02日 17:55 liuqun.lq Exp $
  */
 public class ProtocolData {
 
-    private static final AtomicInteger seq = new AtomicInteger(0);
-    private static final String RANDOM_NUM = AlipayUtils.toRadix62Str(
-            new Random().nextInt((int)AlipayUtils.fromRadix62Str("zz")), 2);
+    private static final AtomicInteger seq        = new AtomicInteger(0);
+    private static final String        RANDOM_NUM = AlipayUtils.toRadix62Str(
+            new Random().nextInt((int) AlipayUtils.fromRadix62Str("zz")), 2);
 
     private String fromSys;
     private String fromSysIp;
@@ -125,7 +123,7 @@ public class ProtocolData {
     /**
      * Setter method for property <tt>fromSys</tt>.
      *
-     * @param fromSys  value to be assigned to property fromSys
+     * @param fromSys value to be assigned to property fromSys
      */
     public void setFromSys(String fromSys) {
         this.fromSys = fromSys;
@@ -143,7 +141,7 @@ public class ProtocolData {
     /**
      * Setter method for property <tt>fromSysIp</tt>.
      *
-     * @param fromSysIp  value to be assigned to property fromSysIp
+     * @param fromSysIp value to be assigned to property fromSysIp
      */
     public void setFromSysIp(String fromSysIp) {
         this.fromSysIp = fromSysIp;
@@ -161,7 +159,7 @@ public class ProtocolData {
     /**
      * Setter method for property <tt>streamId</tt>.
      *
-     * @param streamId  value to be assigned to property streamId
+     * @param streamId value to be assigned to property streamId
      */
     public void setStreamId(String streamId) {
         this.streamId = streamId;
@@ -179,7 +177,7 @@ public class ProtocolData {
     /**
      * Setter method for property <tt>message</tt>.
      *
-     * @param message  value to be assigned to property message
+     * @param message value to be assigned to property message
      */
     public void setMessage(Message message) {
         this.message = message;

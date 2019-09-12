@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销券明细
  *
  * @author auto create
- * @since 1.0, 2019-02-27 20:49:09
+ * @since 1.0, 2019-08-17 17:45:01
  */
 public class VoucherInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8474678468351512334L;
+	private static final long serialVersionUID = 2283772567586334716L;
 
 	/**
 	 * ISTORE拿铁满50减10券

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单指定的营销信息
  *
  * @author auto create
- * @since 1.0, 2019-02-27 23:32:05
+ * @since 1.0, 2019-08-17 17:41:32
  */
 public class MarketingSelectionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1882252934753818972L;
+	private static final long serialVersionUID = 7135432776722856651L;
 
 	/**
 	 * 指定营销列表

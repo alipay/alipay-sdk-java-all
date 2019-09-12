@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 验证结果反馈
  *
  * @author auto create
- * @since 1.0, 2018-01-29 16:50:13
+ * @since 1.0, 2019-08-14 15:13:41
  */
 public class AlipayDataDataserviceVerificationResultSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7591679942825493497L;
+	private static final long serialVersionUID = 3146312519216493692L;
 
 	/**
 	 * 部署单记录id

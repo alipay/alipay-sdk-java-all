@@ -1,23 +1,26 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2012 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2012 All Rights Reserved.
  */
 package com.alipay.api;
 
+import java.security.cert.X509Certificate;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
- *
  * @author runzhi
  * @version $Id: DefaultAlipayClient.java, v 0.1 2012-11-49:45:21 runzhi Exp $
  */
 public class DefaultAlipayClient extends AbstractAlipayClient {
 
-    private String privateKey;
-    private String encryptKey;
-    private String alipayPublicKey;
-    private Signer signer;
-    private SignChecker signChecker;
-    private Encryptor encryptor;
-    private Decryptor decryptor;
+    private String                                     privateKey;
+    private String                                     encryptKey;
+    private String                                     alipayPublicKey;
+    private Signer                                     signer;
+    private SignChecker                                signChecker;
+    private Encryptor                                  encryptor;
+    private Decryptor                                  decryptor;
+    private X509Certificate                            cert;
+    private ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap;
 
     public DefaultAlipayClient(String serverUrl, String appId, String privateKey) {
         super(serverUrl, appId, null, null, null);
@@ -78,6 +81,17 @@ public class DefaultAlipayClient extends AbstractAlipayClient {
         this.decryptor = new DefaultDecryptor(encryptKey);
     }
 
+    public DefaultAlipayClient(CertAlipayRequest certAlipayRequest) throws AlipayApiException {
+        super(certAlipayRequest.getServerUrl(), certAlipayRequest.getAppId(), certAlipayRequest.getFormat(),
+                certAlipayRequest.getCharset(), certAlipayRequest.getSignType(), certAlipayRequest.getCertPath(),
+                certAlipayRequest.getAlipayPublicCertPath(), certAlipayRequest.getRootCertPath(),
+                certAlipayRequest.getProxyHost(), certAlipayRequest.getProxyPort(), certAlipayRequest.getEncryptType());
+        this.privateKey = certAlipayRequest.getPrivateKey();
+        this.signer = new DefaultSigner(certAlipayRequest.getPrivateKey());
+        this.encryptor = new DefaultEncryptor(certAlipayRequest.getEncryptor());
+        this.decryptor = new DefaultDecryptor(certAlipayRequest.getEncryptor());
+    }
+
     public Signer getSigner() {
         return signer;
     }
@@ -92,6 +106,14 @@ public class DefaultAlipayClient extends AbstractAlipayClient {
 
     public Decryptor getDecryptor() {
         return decryptor;
+    }
+
+    public X509Certificate getCert() {
+        return cert;
+    }
+
+    public ConcurrentHashMap<String, X509Certificate> getAlipayPublicCertMap() {
+        return alipayPublicCertMap;
     }
 
     public void setPrivateKey(String privateKey) {
@@ -185,6 +207,16 @@ public class DefaultAlipayClient extends AbstractAlipayClient {
 
         public Builder proxyPort(int proxyPort) {
             client.setProxyPort(proxyPort);
+            return this;
+        }
+
+        public Builder cert(X509Certificate cert) {
+            client.setCert(cert);
+            return this;
+        }
+
+        public Builder alipayPublicCertMap(ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap) {
+            client.setAlipayPublicCertMap(alipayPublicCertMap);
             return this;
         }
     }

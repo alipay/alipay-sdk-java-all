@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 平台险赠险投保申请
  *
  * @author auto create
- * @since 1.0, 2017-02-23 21:17:48
+ * @since 1.0, 2019-08-26 17:24:53
  */
 public class AlipayInsSceneCouponReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6132858194818979754L;
+	private static final long serialVersionUID = 7265353688366758961L;
 
 	/**
 	 * 投保人

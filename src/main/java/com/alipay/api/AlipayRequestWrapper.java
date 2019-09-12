@@ -1,24 +1,30 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api;
 
 /**
- * AlipayReqeustµÄ·â×°ÊµÏÖ£¬½öÓÃÓÚÅúÁ¿µ÷ÓÃ
+ * AlipayReqeustçš„å°è£…å®ç°ï¼Œä»…ç”¨äºæ‰¹é‡è°ƒç”¨
+ *
  * @author gongyi.tnj
- * @version $Id: AlipayRequestWrapper.java, v 0.1 2018-07-18 ÉÏÎç10:32 gongyi.tnj Exp $
+ * @version $Id: AlipayRequestWrapper.java, v 0.1 2018-07-18 ä¸Šåˆ10:32 gongyi.tnj Exp $
  */
 public class AlipayRequestWrapper {
 
-    /** ÒµÎñAPI **/
+    /**
+     * ä¸šåŠ¡API
+     **/
     private AlipayRequest<? extends AlipayRequest> alipayRequest;
 
-    /** ÓÃ»§ÊÚÈ¨ÁîÅÆ **/
-    private String                                 accessToken;
+    /**
+     * ç”¨æˆ·æˆæƒä»¤ç‰Œ
+     **/
+    private String accessToken;
 
-    /** Ó¦ÓÃÊÚÈ¨ÁîÅÆ **/
-    private String                                 appAuthToken;
+    /**
+     * åº”ç”¨æˆæƒä»¤ç‰Œ
+     **/
+    private String appAuthToken;
 
     public AlipayRequestWrapper() {
     }

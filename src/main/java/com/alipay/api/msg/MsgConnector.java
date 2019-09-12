@@ -1,18 +1,16 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api.msg;
-
-import java.net.URI;
-import java.util.Map;
 
 import com.alipay.api.internal.util.AlipayLogger;
 import com.alipay.api.java_websocket.client.WebSocketClient;
 import com.alipay.api.java_websocket.handshake.ServerHandshake;
 
+import java.net.URI;
+import java.util.Map;
+
 /**
- *
  * @author liuqun.lq
  * @version $Id: WebSocketConnector.java, v 0.1 2018年08月31日 17:28 liuqun.lq Exp $
  */

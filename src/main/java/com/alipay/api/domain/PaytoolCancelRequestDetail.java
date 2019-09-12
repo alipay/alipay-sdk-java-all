@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 撤销工具列表
  *
  * @author auto create
- * @since 1.0, 2019-02-27 20:49:24
+ * @since 1.0, 2019-08-17 17:44:38
  */
 public class PaytoolCancelRequestDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8113349169477822754L;
+	private static final long serialVersionUID = 3143272991379281551L;
 
 	/**
 	 * 支付宝支付工具单据号，与商户支付工具单据号不能同时为空。

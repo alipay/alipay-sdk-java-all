@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询区块链票据列表
  *
  * @author auto create
- * @since 1.0, 2018-12-13 20:23:06
+ * @since 1.0, 2019-08-29 16:50:09
  */
 public class AlipayEbppInvoiceFinancialBlockchainBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4624591386515649641L;
+	private static final long serialVersionUID = 3345559155813894476L;
 
 	/**
 	 * 证件号码的hash值，使用MD5算法获取的hash

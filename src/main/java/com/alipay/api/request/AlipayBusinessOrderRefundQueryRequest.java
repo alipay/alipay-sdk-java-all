@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.business.order.refund.query request
  * 
  * @author auto create
- * @since 1.0, 2019-03-12 10:40:13
+ * @since 1.0, 2019-08-17 17:37:49
  */
 public class AlipayBusinessOrderRefundQueryRequest implements AlipayRequest<AlipayBusinessOrderRefundQueryResponse> {
 

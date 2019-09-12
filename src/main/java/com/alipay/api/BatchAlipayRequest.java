@@ -1,6 +1,5 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api;
 
@@ -10,20 +9,26 @@ import java.util.Map;
 
 /**
  * @author gongyi.tnj
- * @version $Id: BatchAlipayRequest.java, v 0.1 2018-07-18 ÉÏÎç10:28 gongyi.tnj Exp $
+ * @version $Id: BatchAlipayRequest.java, v 0.1 2018-07-18 ä¸Šåˆ10:28 gongyi.tnj Exp $
  */
 public class BatchAlipayRequest implements AlipayRequest<BatchAlipayResponse> {
 
-    /** ÅúÁ¿µ÷ÓÃAPI½Ó¿ÚÃû **/
-    private static final String        METHOD      = "alipay.open.request.batch.send";
+    /**
+     * æ‰¹é‡è°ƒç”¨APIæ¥å£å
+     **/
+    private static final String METHOD = "alipay.open.request.batch.send";
 
-    private String                     apiVersion  = "1.0";
+    private String apiVersion = "1.0";
 
-    /** ÒµÎñ½Ó¿ÚÇëÇóÁĞ±í **/
+    /**
+     * ä¸šåŠ¡æ¥å£è¯·æ±‚åˆ—è¡¨
+     **/
     private List<AlipayRequestWrapper> requestList;
 
-    /** ÊÇ·ñ¼ÓÃÜ **/
-    private boolean                    needEncrypt = false;
+    /**
+     * æ˜¯å¦åŠ å¯†
+     **/
+    private boolean needEncrypt = false;
 
     public BatchAlipayRequest addRequest(AlipayRequest alipayRequest) {
         return addRequest(alipayRequest, null, null);
@@ -39,10 +44,10 @@ public class BatchAlipayRequest implements AlipayRequest<BatchAlipayResponse> {
             this.requestList = new ArrayList<AlipayRequestWrapper>();
         }
         AlipayRequestWrapper alipayRequestWrapper = new AlipayRequestWrapper(alipayRequest,
-            accessToken, appAuthToken);
+                accessToken, appAuthToken);
         this.requestList.add(alipayRequestWrapper);
 
-        //ÈôÒµÎñ½Ó¿ÚÁĞ±íÖĞ´æÔÚĞèÇ¿ÖÆ¼ÓÃÜµÄ½Ó¿Ú£¬Ôò±¾´ÎÅúÁ¿µ÷ÓÃÇ¿ÖÆ¼ÓÃÜ
+        //è‹¥ä¸šåŠ¡æ¥å£åˆ—è¡¨ä¸­å­˜åœ¨éœ€å¼ºåˆ¶åŠ å¯†çš„æ¥å£ï¼Œåˆ™æœ¬æ¬¡æ‰¹é‡è°ƒç”¨å¼ºåˆ¶åŠ å¯†
         if (!needEncrypt && alipayRequestWrapper.getAlipayRequest().isNeedEncrypt()) {
             this.needEncrypt = true;
         }

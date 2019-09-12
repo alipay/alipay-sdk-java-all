@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pai.partner.result.get request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2019-08-27 16:54:29
  */
 public class AlipayPaiPartnerResultGetRequest implements AlipayRequest<AlipayPaiPartnerResultGetResponse> {
 

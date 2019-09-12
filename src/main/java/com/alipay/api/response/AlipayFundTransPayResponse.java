@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.pay response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-06 17:39:37
+ * @since 1.0, 2019-09-09 15:09:22
  */
 public class AlipayFundTransPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1341269311795967452L;
+	private static final long serialVersionUID = 1632157742795375229L;
 
 	/** 
 	 * 该笔转账在支付宝系统内部的单据ID
@@ -34,6 +34,12 @@ UNKNOWN：未知；建议通过查询确认最新状态
 	@ApiField("status")
 	private String status;
 
+	/** 
+	 * 订单支付时间，格式为yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("trans_pay_time")
+	private String transPayTime;
+
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
@@ -53,6 +59,13 @@ UNKNOWN：未知；建议通过查询确认最新状态
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTransPayTime(String transPayTime) {
+		this.transPayTime = transPayTime;
+	}
+	public String getTransPayTime( ) {
+		return this.transPayTime;
 	}
 
 }

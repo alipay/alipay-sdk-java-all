@@ -1,5 +1,10 @@
 package com.alipay.api.internal.mapping;
 
+import com.alipay.api.AlipayApiException;
+import com.alipay.api.AlipayConstants;
+import com.alipay.api.AlipayResponse;
+import com.alipay.api.internal.util.StringUtils;
+
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
@@ -9,35 +14,27 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.TimeZone;
-
-import com.alipay.api.AlipayApiException;
-import com.alipay.api.AlipayConstants;
-import com.alipay.api.AlipayResponse;
-import com.alipay.api.internal.util.StringUtils;
+import java.util.*;
 
 /**
  * 转换工具类。
- * 
+ *
  * @author carver.gu
  * @since 1.0, Apr 11, 2010
  */
 public class Converters {
     // 是否对JSON返回的数据类型进行校验，默认不校验。给内部测试JSON返回时用的开关。
     //规则：返回的"基本"类型只有String,Long,Boolean,Date,采取严格校验方式，如果类型不匹配，报错
-    public static boolean            isCheckJsonType = false;
+    public static boolean isCheckJsonType = false;
 
-    private static final Set<String> baseFields      = new HashSet<String>();
+    private static final Set<String> baseFields = new HashSet<String>();
 
-    private static final Set<String> excludeFields   = new HashSet<String>();
+    private static final Set<String> excludeFields = new HashSet<String>();
 
-    /** 被子类覆盖的属性 */
-    private static final Set<String> overideFields   = new HashSet<String>();
+    /**
+     * 被子类覆盖的属性
+     */
+    private static final Set<String> overideFields = new HashSet<String>();
 
     static {
         baseFields.add("code");
@@ -65,9 +62,9 @@ public class Converters {
 
     /**
      * 使用指定 的读取器去转换字符串为对象。
-     * 
-     * @param <T> 领域泛型
-     * @param clazz 领域类型
+     *
+     * @param <T>    领域泛型
+     * @param clazz  领域类型
      * @param reader 读取器
      * @return 领域对象
      * @throws ApiException
@@ -113,7 +110,7 @@ public class Converters {
                     } else {
                         // 否则从父类再取一次
                         writeMethod = tryGetSetMethod(AlipayResponse.class, field,
-                            writeMethod.getName());
+                                writeMethod.getName());
                         if (writeMethod == null) {
                             continue;
                         }
@@ -257,7 +254,7 @@ public class Converters {
                                 if (genericTypes[0] instanceof Class<?>) {
                                     Class<?> subType = (Class<?>) genericTypes[0];
                                     List<?> listObjs = reader.getListObjects(listName, itemName,
-                                        subType);
+                                            subType);
                                     if (listObjs != null) {
                                         method.invoke(rsp, listObjs);
                                     }
@@ -281,10 +278,10 @@ public class Converters {
     }
 
     /**
-     *  尝试获取属性
-     *  
-     *  不会抛出异常，不存在则返回null
-     * 
+     * 尝试获取属性
+     * <p>
+     * 不会抛出异常，不存在则返回null
+     *
      * @param clazz
      * @param itemName
      * @return
@@ -301,8 +298,8 @@ public class Converters {
     }
 
     /**
-     *   获取属性设置属性
-     * 
+     * 获取属性设置属性
+     *
      * @param clazz
      * @param field
      * @return

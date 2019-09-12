@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票授权关系同步
  *
  * @author auto create
- * @since 1.0, 2018-12-11 16:30:17
+ * @since 1.0, 2019-08-29 16:50:43
  */
 public class AlipayEbppInvoiceAuthSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8393593357724794121L;
+	private static final long serialVersionUID = 4717595491159555315L;
 
 	/**
 	 * 发票授权类型，可选值：INVOICE_AUTO_SYNC（发票自动回传）

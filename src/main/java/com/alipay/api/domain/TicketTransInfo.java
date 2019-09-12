@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证的流水信息
  *
  * @author auto create
- * @since 1.0, 2019-08-05 20:35:31
+ * @since 1.0, 2019-08-16 20:14:03
  */
 public class TicketTransInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5389165153279896453L;
+	private static final long serialVersionUID = 1483151952949161292L;
 
 	/**
 	 * 流水创建时间
@@ -26,6 +26,12 @@ public class TicketTransInfo extends AlipayObject {
 	 */
 	@ApiField("last_modify_time")
 	private Date lastModifyTime;
+
+	/**
+	 * 流水涉及凭证数量，若为普通商品则为1， 若为次卡则为操作的凭证份数
+	 */
+	@ApiField("quantity")
+	private String quantity;
 
 	/**
 	 * 凭证流水id
@@ -51,6 +57,13 @@ public class TicketTransInfo extends AlipayObject {
 	}
 	public void setLastModifyTime(Date lastModifyTime) {
 		this.lastModifyTime = lastModifyTime;
+	}
+
+	public String getQuantity() {
+		return this.quantity;
+	}
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
 	}
 
 	public String getTicketTransId() {

@@ -1,21 +1,19 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api.msg;
 
 /**
- *
  * @author liuqun.lq
  * @version $Id: MsgAck.java, v 0.1 2018年11月13日 17:20 liuqun.lq Exp $
  */
 public class MsgAck {
 
-    private String xCmd;
+    private String        xCmd;
     private MsgStatusEnum xStatus;
-    private String xCode;
-    private String xError;
-    private String xMessageId;
+    private String        xCode;
+    private String        xError;
+    private String        xMessageId;
 
     /**
      * Getter method for property <tt>xCmd</tt>.
@@ -29,7 +27,7 @@ public class MsgAck {
     /**
      * Setter method for property <tt>xCmd</tt>.
      *
-     * @param xCmd  value to be assigned to property xCmd
+     * @param xCmd value to be assigned to property xCmd
      */
     protected void setxCmd(String xCmd) {
         this.xCmd = xCmd;
@@ -47,7 +45,7 @@ public class MsgAck {
     /**
      * Setter method for property <tt>xStatus</tt>.
      *
-     * @param xStatus  value to be assigned to property xStatus
+     * @param xStatus value to be assigned to property xStatus
      */
     public void setxStatus(MsgStatusEnum xStatus) {
         this.xStatus = xStatus;
@@ -65,7 +63,7 @@ public class MsgAck {
     /**
      * Setter method for property <tt>xCode</tt>.
      *
-     * @param xCode  value to be assigned to property xCode
+     * @param xCode value to be assigned to property xCode
      */
     public void setxCode(String xCode) {
         this.xCode = xCode;
@@ -83,7 +81,7 @@ public class MsgAck {
     /**
      * Setter method for property <tt>xError</tt>.
      *
-     * @param xError  value to be assigned to property xError
+     * @param xError value to be assigned to property xError
      */
     public void setxError(String xError) {
         this.xError = xError;
@@ -101,7 +99,7 @@ public class MsgAck {
     /**
      * Setter method for property <tt>xMessageId</tt>.
      *
-     * @param xMessageId  value to be assigned to property xMessageId
+     * @param xMessageId value to be assigned to property xMessageId
      */
     public void setxMessageId(String xMessageId) {
         this.xMessageId = xMessageId;

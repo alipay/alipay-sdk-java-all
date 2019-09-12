@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.ticketcode.use response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-26 17:55:01
+ * @since 1.0, 2019-08-16 20:25:01
  */
 public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7519576455676763461L;
+	private static final long serialVersionUID = 4662547758694115734L;
 
 	/** 
 	 * 该字段用于描述本次返回中的业务属性，现有：BIZ_ALREADY_SUCCESS（幂等业务码）
@@ -46,6 +46,12 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	 */
 	@ApiField("invoice_amount")
 	private String invoiceAmount;
+
+	/** 
+	 * 凭证对应商品别名，在口碑商品创建时候设置
+	 */
+	@ApiField("item_alias")
+	private String itemAlias;
 
 	/** 
 	 * 口碑商品ID
@@ -165,6 +171,13 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	}
 	public String getInvoiceAmount( ) {
 		return this.invoiceAmount;
+	}
+
+	public void setItemAlias(String itemAlias) {
+		this.itemAlias = itemAlias;
+	}
+	public String getItemAlias( ) {
+		return this.itemAlias;
 	}
 
 	public void setItemId(String itemId) {

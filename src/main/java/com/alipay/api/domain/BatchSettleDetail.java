@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量结算详情
  *
  * @author auto create
- * @since 1.0, 2019-05-27 10:41:39
+ * @since 1.0, 2019-09-09 22:06:28
  */
 public class BatchSettleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4499786294322174281L;
+	private static final long serialVersionUID = 6224298523865479267L;
 
 	/**
 	 * 结算金额，单位为元
@@ -78,6 +78,12 @@ SecondMerchant：结算主体为二级商户
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 二级商户信息
+	 */
+	@ApiField("sub_merchant")
+	private SubMerchant subMerchant;
 
 	public String getAmount() {
 		return this.amount;
@@ -147,6 +153,13 @@ SecondMerchant：结算主体为二级商户
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public SubMerchant getSubMerchant() {
+		return this.subMerchant;
+	}
+	public void setSubMerchant(SubMerchant subMerchant) {
+		this.subMerchant = subMerchant;
 	}
 
 }

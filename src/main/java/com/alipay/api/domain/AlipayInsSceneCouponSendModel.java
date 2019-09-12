@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险营销权益发放接口
  *
  * @author auto create
- * @since 1.0, 2017-02-23 21:17:32
+ * @since 1.0, 2019-08-26 17:24:35
  */
 public class AlipayInsSceneCouponSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5185199357652412976L;
+	private static final long serialVersionUID = 1752448978534799554L;
 
 	/**
 	 * 渠道账号对应的uid;如果证件类型字段没填则必填

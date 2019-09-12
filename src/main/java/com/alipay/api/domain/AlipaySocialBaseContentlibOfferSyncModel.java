@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容中台offer同步接口
  *
  * @author auto create
- * @since 1.0, 2019-06-10 15:10:29
+ * @since 1.0, 2019-08-31 14:21:37
  */
 public class AlipaySocialBaseContentlibOfferSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1452171687898287647L;
+	private static final long serialVersionUID = 7435143873633696682L;
 
 	/**
 	 * 参数名代表同步到我方的业务方来源值，在内容中台中是唯一标示，对接内容中台的时候，由中台PD告知对方

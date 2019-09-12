@@ -1,40 +1,31 @@
 package com.alipay.api.internal.util;
 
+import com.alipay.api.AlipayConstants;
+import com.alipay.api.AlipayResponse;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.InetAddress;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.TimeZone;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.Handler;
-import java.util.logging.Level;
+import java.util.*;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.commons.logging.impl.Jdk14Logger;
-
-import com.alipay.api.AlipayConstants;
-import com.alipay.api.AlipayResponse;
+//import org.apache.commons.logging.impl.Jdk14Logger;
 
 /**
- * 客户端日志
- * 通讯错误格式：time^_^api^_^app^_^ip^_^os^_^sdk^_^url^responseCode
- * 业务错误格式：time^_^response
+ * 客户端日志 通讯错误格式：time^_^api^_^app^_^ip^_^os^_^sdk^_^url^responseCode 业务错误格式：time^_^response
  */
 public class AlipayLogger {
 
-    private static final Log clog             = LogFactory.getLog("sdk.comm.err");
-    private static final Log blog             = LogFactory.getLog("sdk.biz.err");
+    private static final Log clog = LogFactory.getLog("sdk.comm.err");
+    private static final Log blog = LogFactory.getLog("sdk.biz.err");
 
-    private static String    osName           = System.getProperties().getProperty("os.name");
-    private static String    ip               = null;
-    private static boolean   needEnableLogger = true;
+    private static String  osName           = System.getProperties().getProperty("os.name");
+    private static String  ip               = null;
+    private static boolean needEnableLogger = true;
 
     public static void setNeedEnableLogger(boolean needEnableLogger) {
         AlipayLogger.needEnableLogger = needEnableLogger;
@@ -390,16 +381,16 @@ public class AlipayLogger {
      */
     public static void setJDKDebugEnabled(Boolean isEnabled) {
         //如果使用JDK14LOGGER，将业务日志级别设为DEBUG(FINE)
-        if (blog instanceof Jdk14Logger) {
-            Jdk14Logger logger = (Jdk14Logger) blog;
-            if (isEnabled) {
-                logger.getLogger().setLevel(Level.FINE);
-                Handler consoleHandler = new ConsoleHandler();
-                consoleHandler.setLevel(Level.FINE);
-                logger.getLogger().addHandler(consoleHandler);
-            } else {
-                logger.getLogger().setLevel(Level.INFO);
-            }
-        }
+        //        if (blog instanceof Jdk14Logger) {
+        //            Jdk14Logger logger = (Jdk14Logger) blog;
+        //            if (isEnabled) {
+        //                logger.getLogger().setLevel(Level.FINE);
+        //                Handler consoleHandler = new ConsoleHandler();
+        //                consoleHandler.setLevel(Level.FINE);
+        //                logger.getLogger().addHandler(consoleHandler);
+        //            } else {
+        //                logger.getLogger().setLevel(Level.INFO);
+        //            }
+        //        }
     }
 }

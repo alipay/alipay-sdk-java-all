@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 基于商业订单的支付
  *
  * @author auto create
- * @since 1.0, 2019-04-02 17:21:59
+ * @since 1.0, 2019-08-17 17:36:05
  */
 public class AlipayBusinessOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1662737231755154575L;
+	private static final long serialVersionUID = 7542214744168356697L;
 
 	/**
 	 * 支付宝订单号

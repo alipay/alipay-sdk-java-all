@@ -1,8 +1,14 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api.msg;
+
+import com.alipay.api.AlipayConstants;
+import com.alipay.api.AlipayRequest;
+import com.alipay.api.internal.util.AlipayLogger;
+import com.alipay.api.internal.util.AlipaySignature;
+import com.alipay.api.internal.util.WebUtils;
+import com.alipay.api.internal.util.json.JSONWriter;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -16,23 +22,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-
-import com.alipay.api.AlipayConstants;
-import com.alipay.api.AlipayRequest;
-import com.alipay.api.internal.util.AlipayLogger;
-import com.alipay.api.internal.util.AlipaySignature;
-import com.alipay.api.internal.util.WebUtils;
-import com.alipay.api.internal.util.json.JSONWriter;
+import java.util.concurrent.*;
 
 /**
- *
  * @author liuqun.lq
  * @version $Id: WebSocketClient.java, v 0.1 2018年08月31日 17:57 liuqun.lq Exp $
  */

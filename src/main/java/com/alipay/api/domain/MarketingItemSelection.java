@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 选中的营销项目信息，主要包括id、类型等信息。
  *
  * @author auto create
- * @since 1.0, 2019-02-27 20:23:01
+ * @since 1.0, 2019-08-17 17:41:32
  */
 public class MarketingItemSelection extends AlipayObject {
 
-	private static final long serialVersionUID = 7742714574352412495L;
+	private static final long serialVersionUID = 6867828143388191661L;
 
 	/**
 	 * 营销项目ID

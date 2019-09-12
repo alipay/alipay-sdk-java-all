@@ -34,54 +34,48 @@ import java.util.TreeMap;
  */
 public class HandshakedataImpl1 implements HandshakeBuilder {
 
-	/**
-	 * Attribute for the content of the handshake
-	 */
-	private byte[] content;
+    /**
+     * Attribute for the content of the handshake
+     */
+    private byte[] content;
 
-	/**
-	 * Attribute for the http fields and values
-	 */
-	private TreeMap<String,String> map;
+    /**
+     * Attribute for the http fields and values
+     */
+    private TreeMap<String, String> map;
 
-	/**
-	 * Constructor for handshake implementation
-	 */
-	public HandshakedataImpl1() {
-		map = new TreeMap<String,String>( String.CASE_INSENSITIVE_ORDER );
-	}
+    /**
+     * Constructor for handshake implementation
+     */
+    public HandshakedataImpl1() {
+        map = new TreeMap<String, String>(String.CASE_INSENSITIVE_ORDER);
+    }
 
+    public Iterator<String> iterateHttpFields() {
+        return Collections.unmodifiableSet(map.keySet()).iterator();// Safety first
+    }
 
-	public Iterator<String> iterateHttpFields() {
-		return Collections.unmodifiableSet( map.keySet() ).iterator();// Safety first
-	}
+    public String getFieldValue(String name) {
+        String s = map.get(name);
+        if (s == null) {
+            return "";
+        }
+        return s;
+    }
 
+    public byte[] getContent() {
+        return content;
+    }
 
-	public String getFieldValue( String name ) {
-		String s = map.get( name );
-		if ( s == null ) {
-			return "";
-		}
-		return s;
-	}
+    public void setContent(byte[] content) {
+        this.content = content;
+    }
 
+    public void put(String name, String value) {
+        map.put(name, value);
+    }
 
-	public byte[] getContent() {
-		return content;
-	}
-
-
-	public void setContent( byte[] content ) {
-		this.content = content;
-	}
-
-
-	public void put( String name, String value ) {
-		map.put( name, value );
-	}
-
-
-	public boolean hasFieldValue( String name ) {
-		return map.containsKey( name );
-	}
+    public boolean hasFieldValue(String name) {
+        return map.containsKey(name);
+    }
 }

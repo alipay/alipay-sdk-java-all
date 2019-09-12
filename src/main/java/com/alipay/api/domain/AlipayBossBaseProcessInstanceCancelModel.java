@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 撤消流程实例
  *
  * @author auto create
- * @since 1.0, 2017-09-19 20:53:14
+ * @since 1.0, 2019-09-06 15:00:49
  */
 public class AlipayBossBaseProcessInstanceCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6176777897457396642L;
+	private static final long serialVersionUID = 7164266227548255557L;
 
 	/**
 	 * 备注

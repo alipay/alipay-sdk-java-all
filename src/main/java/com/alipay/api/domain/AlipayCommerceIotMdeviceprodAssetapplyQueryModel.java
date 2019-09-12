@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询物料申请人信息
  *
  * @author auto create
- * @since 1.0, 2018-11-23 11:20:09
+ * @since 1.0, 2019-08-21 19:52:13
  */
 public class AlipayCommerceIotMdeviceprodAssetapplyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6641666243875765143L;
+	private static final long serialVersionUID = 5248747867667998866L;
 
 	/**
 	 * 物料平台的申请单ID

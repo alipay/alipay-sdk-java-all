@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付工具退款请求明细
  *
  * @author auto create
- * @since 1.0, 2019-02-27 20:49:14
+ * @since 1.0, 2019-08-17 17:44:44
  */
 public class PaytoolRefundRequestDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1724247364788742296L;
+	private static final long serialVersionUID = 5684287412119144184L;
 
 	/**
 	 * 支付宝支付工具单据号，和商户支付工具单据号不能同时为空。

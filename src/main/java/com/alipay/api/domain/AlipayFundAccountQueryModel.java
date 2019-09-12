@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝资金账户资产查询接口
  *
  * @author auto create
- * @since 1.0, 2019-07-19 14:56:09
+ * @since 1.0, 2019-08-20 15:52:47
  */
 public class AlipayFundAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5212731965627435347L;
+	private static final long serialVersionUID = 3461711257626228517L;
 
 	/**
 	 * 开户产品码。如果查询托管子户余额，必传且必须传入与开户时传入的值一致。
@@ -26,7 +26,7 @@ public class AlipayFundAccountQueryModel extends AlipayObject {
 	private String accountSceneCode;
 
 	/**
-	 * 查询的账号类型，如查询托管账户值为TRUSTEESHIP_ACCOUNT，查询余额户值为ACCTRANS_ACCOUNT
+	 * 查询的账号类型，如查询托管账户值为TRUSTEESHIP_ACCOUNT，查询余额账户值为ACCTRANS_ACCOUNT。查询余额账户时必填。
 	 */
 	@ApiField("account_type")
 	private String accountType;
@@ -38,7 +38,7 @@ public class AlipayFundAccountQueryModel extends AlipayObject {
 	private String alipayUserId;
 
 	/**
-	 * JSON格式，传递业务扩展参数，使用前请与支付宝工程师联系！
+	 * JSON格式，传递业务扩展参数。
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

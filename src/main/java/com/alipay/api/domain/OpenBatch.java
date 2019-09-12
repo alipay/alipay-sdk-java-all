@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenBatch extends AlipayObject {
 
-	private static final long serialVersionUID = 4181691261186268235L;
+	private static final long serialVersionUID = 2221491967364599839L;
 
 	/**
 	 * 批次id

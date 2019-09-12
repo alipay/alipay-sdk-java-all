@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据月账单号集合和来源查询开票单据及金额汇总
  *
  * @author auto create
- * @since 1.0, 2018-11-27 21:31:26
+ * @since 1.0, 2019-09-12 15:42:15
  */
 public class AlipayBossFncInvoicereceiptBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284576145443998711L;
+	private static final long serialVersionUID = 6172491586532858857L;
 
 	/**
 	 * 月账单号集合，唯一性ID集合，月账单表唯一主键ID集合

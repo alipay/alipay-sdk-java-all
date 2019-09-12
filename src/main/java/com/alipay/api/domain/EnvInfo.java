@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业订单经营环境信息，包括从商城、mall、门店、收银台和操作员等信息。
  *
  * @author auto create
- * @since 1.0, 2019-02-27 20:49:04
+ * @since 1.0, 2019-08-17 17:45:16
  */
 public class EnvInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3637946673756859365L;
+	private static final long serialVersionUID = 3859532152587943324L;
 
 	/**
 	 * 商户的操作员编号

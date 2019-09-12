@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.application.group.apply request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-08-26 16:49:02
  */
 public class AlipayInsSceneApplicationGroupApplyRequest implements AlipayRequest<AlipayInsSceneApplicationGroupApplyResponse> {
 

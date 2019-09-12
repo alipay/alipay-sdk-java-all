@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险查询用户的精简模型定义
  *
  * @author auto create
- * @since 1.0, 2018-07-18 13:53:51
+ * @since 1.0, 2019-08-20 16:42:51
  */
 public class InsQueryPerson extends AlipayObject {
 
-	private static final long serialVersionUID = 8886111592865733341L;
+	private static final long serialVersionUID = 1888241661688297115L;
 
 	/**
 	 * 证件号码;如果渠道账号字段（channel_user_id）没填则本字段为必填

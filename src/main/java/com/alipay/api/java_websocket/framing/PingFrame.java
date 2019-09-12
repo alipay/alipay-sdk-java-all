@@ -32,10 +32,10 @@ import com.alipay.api.java_websocket.enums.Opcode;
  */
 public class PingFrame extends ControlFrame {
 
-	/**
-	 * constructor which sets the opcode of this frame to ping
-	 */
-	public PingFrame() {
-		super(Opcode.PING);
-	}
+    /**
+     * constructor which sets the opcode of this frame to ping
+     */
+    public PingFrame() {
+        super(Opcode.PING);
+    }
 }

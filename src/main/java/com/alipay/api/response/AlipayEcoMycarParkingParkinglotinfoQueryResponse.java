@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.parkinglotinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-28 10:33:48
+ * @since 1.0, 2019-08-29 11:18:42
  */
 public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8515288958538673267L;
+	private static final long serialVersionUID = 4734733986989483448L;
 
 	/** 
 	 * 地区编码

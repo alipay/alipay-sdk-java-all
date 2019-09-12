@@ -8,11 +8,25 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-05 10:41:57
+ * @since 1.0, 2019-09-09 15:48:52
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1238852517734761955L;
+	private static final long serialVersionUID = 1796699589196592537L;
+
+	/** 
+	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
+注意：
+此参数为预计时间，可能与实际到账时间有较大误差，不能作为实际到账时间使用，仅供参考用途。
+	 */
+	@ApiField("arrival_time_end")
+	private String arrivalTimeEnd;
+
+	/** 
+	 * 商户查询代扣订单信息时返回其在代扣请求中传入的账单属性
+	 */
+	@ApiField("deduct_bill_info")
+	private String deductBillInfo;
 
 	/** 
 	 * 查询到的订单状态为FAIL失败或REFUND退票时，返回错误代码
@@ -25,6 +39,12 @@ public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
+
+	/** 
+	 * 预计收费金额（元），转账到银行卡专用，数字格式，精确到小数点后2位，转账失败或转账受理失败不返回。
+	 */
+	@ApiField("order_fee")
+	private String orderFee;
 
 	/** 
 	 * 支付宝转账单据号，查询失败不返回。
@@ -45,6 +65,18 @@ public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 	private String passbackParams;
 
 	/** 
+	 * 支付时间，格式为yyyy-MM-dd HH:mm:ss，转账失败不返回。
+	 */
+	@ApiField("pay_date")
+	private String payDate;
+
+	/** 
+	 * 支付宝支付资金流水号，转账失败不返回。
+	 */
+	@ApiField("pay_fund_order_id")
+	private String payFundOrderId;
+
+	/** 
 	 * 转账单据状态。可能出现的状态如下：
 	SUCCESS：转账成功；
 	WAIT_PAY：等待支付；
@@ -55,6 +87,26 @@ alipay.fund.trans.uni.transfer、alipay.fund.trans.refund涉及的状态：SUCCE
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 商户在查询代发订单信息时返回其在代发请求中传入的账单属性。
+	 */
+	@ApiField("transfer_bill_info")
+	private String transferBillInfo;
+
+	public void setArrivalTimeEnd(String arrivalTimeEnd) {
+		this.arrivalTimeEnd = arrivalTimeEnd;
+	}
+	public String getArrivalTimeEnd( ) {
+		return this.arrivalTimeEnd;
+	}
+
+	public void setDeductBillInfo(String deductBillInfo) {
+		this.deductBillInfo = deductBillInfo;
+	}
+	public String getDeductBillInfo( ) {
+		return this.deductBillInfo;
+	}
 
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
@@ -68,6 +120,13 @@ alipay.fund.trans.uni.transfer、alipay.fund.trans.refund涉及的状态：SUCCE
 	}
 	public String getFailReason( ) {
 		return this.failReason;
+	}
+
+	public void setOrderFee(String orderFee) {
+		this.orderFee = orderFee;
+	}
+	public String getOrderFee( ) {
+		return this.orderFee;
 	}
 
 	public void setOrderId(String orderId) {
@@ -91,11 +150,32 @@ alipay.fund.trans.uni.transfer、alipay.fund.trans.refund涉及的状态：SUCCE
 		return this.passbackParams;
 	}
 
+	public void setPayDate(String payDate) {
+		this.payDate = payDate;
+	}
+	public String getPayDate( ) {
+		return this.payDate;
+	}
+
+	public void setPayFundOrderId(String payFundOrderId) {
+		this.payFundOrderId = payFundOrderId;
+	}
+	public String getPayFundOrderId( ) {
+		return this.payFundOrderId;
+	}
+
 	public void setStatus(String status) {
 		this.status = status;
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTransferBillInfo(String transferBillInfo) {
+		this.transferBillInfo = transferBillInfo;
+	}
+	public String getTransferBillInfo( ) {
+		return this.transferBillInfo;
 	}
 
 }

@@ -1,14 +1,11 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2016 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2016 All Rights Reserved.
  */
 package com.alipay.api;
 
 import java.io.Serializable;
 
 /**
- * 
- * 
  * @author jiehua
  * @version $Id: EncryptReponseItem.java, v 0.1 2016-3-28 下午6:20:04 jiehua Exp $
  */
@@ -20,12 +17,12 @@ public class ResponseEncryptItem implements Serializable {
     /**
      * 响应返回
      */
-    private String            respContent;
+    private String respContent;
 
     /**
      * 处理完后的返回
      */
-    private String            realContent;
+    private String realContent;
 
     /**
      * @param respContent
@@ -39,7 +36,7 @@ public class ResponseEncryptItem implements Serializable {
 
     /**
      * Getter method for property <tt>respContent</tt>.
-     * 
+     *
      * @return property value of respContent
      */
     public String getRespContent() {
@@ -48,7 +45,7 @@ public class ResponseEncryptItem implements Serializable {
 
     /**
      * Getter method for property <tt>realContent</tt>.
-     * 
+     *
      * @return property value of realContent
      */
     public String getRealContent() {

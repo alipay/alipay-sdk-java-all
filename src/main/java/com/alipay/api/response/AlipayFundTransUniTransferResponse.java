@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.uni.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-27 01:20:01
+ * @since 1.0, 2019-09-09 16:06:09
  */
 public class AlipayFundTransUniTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2814787986437311297L;
+	private static final long serialVersionUID = 7572327445821673642L;
 
 	/** 
 	 * 支付宝转账订单号
@@ -27,6 +27,12 @@ public class AlipayFundTransUniTransferResponse extends AlipayResponse {
 	private String outBizNo;
 
 	/** 
+	 * 支付宝支付资金流水号
+	 */
+	@ApiField("pay_fund_order_id")
+	private String payFundOrderId;
+
+	/** 
 	 * 转账单据状态。
 SUCCESS：成功（对转账到银行卡的单据, 该状态可能变为退票[REFUND]状态）；
 FAIL：失败（具体失败原因请参见error_code以及fail_reason返回值）；
@@ -35,6 +41,12 @@ REFUND：退票；
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 订单支付时间，格式为yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("trans_date")
+	private String transDate;
 
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
@@ -50,11 +62,25 @@ REFUND：退票；
 		return this.outBizNo;
 	}
 
+	public void setPayFundOrderId(String payFundOrderId) {
+		this.payFundOrderId = payFundOrderId;
+	}
+	public String getPayFundOrderId( ) {
+		return this.payFundOrderId;
+	}
+
 	public void setStatus(String status) {
 		this.status = status;
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTransDate(String transDate) {
+		this.transDate = transDate;
+	}
+	public String getTransDate( ) {
+		return this.transDate;
 	}
 
 }

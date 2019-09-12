@@ -43,7 +43,7 @@ public class InvalidFrameException extends InvalidDataException {
      * calling InvalidDataException with closecode PROTOCOL_ERROR
      */
     public InvalidFrameException() {
-        super( CloseFrame.PROTOCOL_ERROR);
+        super(CloseFrame.PROTOCOL_ERROR);
     }
 
     /**
@@ -54,7 +54,7 @@ public class InvalidFrameException extends InvalidDataException {
      * @param s the detail message.
      */
     public InvalidFrameException(String s) {
-        super( CloseFrame.PROTOCOL_ERROR, s);
+        super(CloseFrame.PROTOCOL_ERROR, s);
     }
 
     /**
@@ -65,7 +65,7 @@ public class InvalidFrameException extends InvalidDataException {
      * @param t the throwable causing this exception.
      */
     public InvalidFrameException(Throwable t) {
-        super( CloseFrame.PROTOCOL_ERROR, t);
+        super(CloseFrame.PROTOCOL_ERROR, t);
     }
 
     /**
@@ -77,6 +77,6 @@ public class InvalidFrameException extends InvalidDataException {
      * @param t the throwable causing this exception.
      */
     public InvalidFrameException(String s, Throwable t) {
-        super( CloseFrame.PROTOCOL_ERROR, s, t);
+        super(CloseFrame.PROTOCOL_ERROR, s, t);
     }
 }

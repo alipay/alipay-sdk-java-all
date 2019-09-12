@@ -1,25 +1,18 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api.msg;
+
+import com.alipay.api.internal.util.AlipaySignature;
+import com.alipay.api.internal.util.StringUtils;
+import com.alipay.api.internal.util.json.*;
 
 import java.io.Serializable;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.alipay.api.internal.util.AlipaySignature;
-import com.alipay.api.internal.util.StringUtils;
-import com.alipay.api.internal.util.json.ExceptionErrorListener;
-import com.alipay.api.internal.util.json.JSONReader;
-import com.alipay.api.internal.util.json.JSONValidatingReader;
-import com.alipay.api.internal.util.json.JSONValidatingWriter;
-import com.alipay.api.internal.util.json.JSONValidator;
-import com.alipay.api.internal.util.json.JSONWriter;
-
 /**
- *
  * @author liuqun.lq
  * @version $Id: Message.java, v 0.1 2018年08月31日 17:11 liuqun.lq Exp $
  */
@@ -29,7 +22,7 @@ public class Message implements Serializable {
 
     private static final Pattern DATA_PATTERN = Pattern.compile("\"data\"\\s*:\\s*\\{");
 
-    private String xType = "message";
+    private String xType    = "message";
     private String xCmd;
     private String xMessageId;
     private String xStatus;
@@ -38,7 +31,7 @@ public class Message implements Serializable {
     private String xSignType;
     private String xSign;
     private String xCharset;
-    private Long xTimestamp;
+    private Long   xTimestamp;
     private String xVersion = "1.0";
     private String appId;
     private String msgApi;
@@ -61,21 +54,21 @@ public class Message implements Serializable {
             throw new IllegalArgumentException("protocol part format illegal.");
         }
         Map<?, ?> protocolJson = (Map<?, ?>) rootJson.get("protocol");
-        message.setxType((String)(protocolJson.get("x-type")));
+        message.setxType((String) (protocolJson.get("x-type")));
         if (StringUtils.isEmpty(message.getxType())) {
             throw new IllegalArgumentException("miss x-type in protocol part.");
         }
-        message.setxCmd((String)(protocolJson.get("x-cmd")));
-        message.setxMessageId((String)(protocolJson.get("x-msgId")));
-        message.setxStatus((String)(protocolJson.get("x-status")));
-        message.setxCode((String)(protocolJson.get("x-code")));
-        message.setxError((String)(protocolJson.get("x-error")));
-        message.setxCharset((String)(protocolJson.get("x-charset")));
-        message.setxSignType((String)(protocolJson.get("x-signType")));
-        message.setxSign((String)(protocolJson.get("x-sign")));
+        message.setxCmd((String) (protocolJson.get("x-cmd")));
+        message.setxMessageId((String) (protocolJson.get("x-msgId")));
+        message.setxStatus((String) (protocolJson.get("x-status")));
+        message.setxCode((String) (protocolJson.get("x-code")));
+        message.setxError((String) (protocolJson.get("x-error")));
+        message.setxCharset((String) (protocolJson.get("x-charset")));
+        message.setxSignType((String) (protocolJson.get("x-signType")));
+        message.setxSign((String) (protocolJson.get("x-sign")));
         if (protocolJson.containsKey("x-timestamp")) {
             Long xTimestamp = null;
-            String sTimestamp = (String)(protocolJson.get("x-timestamp"));
+            String sTimestamp = (String) (protocolJson.get("x-timestamp"));
             try {
                 xTimestamp = Long.parseLong(sTimestamp);
             } catch (Throwable t) {
@@ -83,7 +76,7 @@ public class Message implements Serializable {
             }
             message.setxTimestamp(xTimestamp);
         }
-        message.setxVersion((String)(protocolJson.get("x-version")));
+        message.setxVersion((String) (protocolJson.get("x-version")));
 
         if (rootJson.containsKey("data")) {
             if (!(rootJson.get("data") instanceof Map<?, ?>)) {
@@ -95,8 +88,8 @@ public class Message implements Serializable {
                     throw new IllegalArgumentException("header part format illegal.");
                 }
                 Map<?, ?> headerJson = (Map<?, ?>) dataJson.get("header");
-                message.setAppId((String)(headerJson.get("appId")));
-                message.setMsgApi((String)(headerJson.get("msgApi")));
+                message.setAppId((String) (headerJson.get("appId")));
+                message.setMsgApi((String) (headerJson.get("msgApi")));
             }
             if (dataJson.containsKey("content")) {
                 if (!(dataJson.get("content") instanceof Map<?, ?>)) {
@@ -153,8 +146,8 @@ public class Message implements Serializable {
         if (!StringUtils.isEmpty(message.getxSign())) {
             sb.append("\"x-sign\":\"").append(message.getxSign()).append("\",");
         }
-        if (',' == sb.charAt(sb.length()-1)) {
-            sb.deleteCharAt(sb.length()-1);
+        if (',' == sb.charAt(sb.length() - 1)) {
+            sb.deleteCharAt(sb.length() - 1);
         }
         sb.append("}");
         String data = genDataPart(message);
@@ -216,7 +209,7 @@ public class Message implements Serializable {
         if (!m.find()) {
             return null;
         }
-        return AlipaySignature.extractSignContent(str, m.end() - 1);
+        return AlipaySignature.extractSignContent(str, m.end() - 1).getSourceData();
     }
 
     private static String genDataPart(Message message) {
@@ -228,8 +221,8 @@ public class Message implements Serializable {
         if (!StringUtils.isEmpty(message.getMsgApi())) {
             dataSb.append("\"msgApi\":\"").append(message.getMsgApi()).append("\",");
         }
-        if (',' == dataSb.charAt(dataSb.length()-1)) {
-            dataSb.deleteCharAt(dataSb.length()-1);
+        if (',' == dataSb.charAt(dataSb.length() - 1)) {
+            dataSb.deleteCharAt(dataSb.length() - 1);
         }
         dataSb.append("}");
         if (!StringUtils.isEmpty(message.getBizContent())) {
@@ -259,7 +252,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xType</tt>.
      *
-     * @param xType  value to be assigned to property xType
+     * @param xType value to be assigned to property xType
      */
     public void setxType(String xType) {
         this.xType = xType;
@@ -277,7 +270,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xCmd</tt>.
      *
-     * @param xCmd  value to be assigned to property xCmd
+     * @param xCmd value to be assigned to property xCmd
      */
     public void setxCmd(String xCmd) {
         this.xCmd = xCmd;
@@ -295,7 +288,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xMessageId</tt>.
      *
-     * @param xMessageId  value to be assigned to property xMessageId
+     * @param xMessageId value to be assigned to property xMessageId
      */
     public void setxMessageId(String xMessageId) {
         this.xMessageId = xMessageId;
@@ -313,7 +306,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xStatus</tt>.
      *
-     * @param xStatus  value to be assigned to property xStatus
+     * @param xStatus value to be assigned to property xStatus
      */
     public void setxStatus(String xStatus) {
         this.xStatus = xStatus;
@@ -331,7 +324,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xCode</tt>.
      *
-     * @param xCode  value to be assigned to property xCode
+     * @param xCode value to be assigned to property xCode
      */
     public void setxCode(String xCode) {
         this.xCode = xCode;
@@ -349,7 +342,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xError</tt>.
      *
-     * @param xError  value to be assigned to property xError
+     * @param xError value to be assigned to property xError
      */
     public void setxError(String xError) {
         this.xError = xError;
@@ -367,7 +360,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xSignType</tt>.
      *
-     * @param xSignType  value to be assigned to property xSignType
+     * @param xSignType value to be assigned to property xSignType
      */
     public void setxSignType(String xSignType) {
         this.xSignType = xSignType;
@@ -385,7 +378,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xSign</tt>.
      *
-     * @param xSign  value to be assigned to property xSign
+     * @param xSign value to be assigned to property xSign
      */
     public void setxSign(String xSign) {
         this.xSign = xSign;
@@ -403,7 +396,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xCharset</tt>.
      *
-     * @param xCharset  value to be assigned to property xCharset
+     * @param xCharset value to be assigned to property xCharset
      */
     public void setxCharset(String xCharset) {
         this.xCharset = xCharset;
@@ -421,7 +414,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xTimestamp</tt>.
      *
-     * @param xTimestamp  value to be assigned to property xTimestamp
+     * @param xTimestamp value to be assigned to property xTimestamp
      */
     public void setxTimestamp(Long xTimestamp) {
         this.xTimestamp = xTimestamp;
@@ -439,7 +432,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>xVersion</tt>.
      *
-     * @param xVersion  value to be assigned to property xVersion
+     * @param xVersion value to be assigned to property xVersion
      */
     public void setxVersion(String xVersion) {
         this.xVersion = xVersion;
@@ -457,7 +450,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>appId</tt>.
      *
-     * @param appId  value to be assigned to property appId
+     * @param appId value to be assigned to property appId
      */
     public void setAppId(String appId) {
         this.appId = appId;
@@ -475,7 +468,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>msgApi</tt>.
      *
-     * @param msgApi  value to be assigned to property msgApi
+     * @param msgApi value to be assigned to property msgApi
      */
     public void setMsgApi(String msgApi) {
         this.msgApi = msgApi;
@@ -493,7 +486,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>bizContent</tt>.
      *
-     * @param bizContent  value to be assigned to property bizContent
+     * @param bizContent value to be assigned to property bizContent
      */
     public void setBizContent(String bizContent) {
         this.bizContent = bizContent;
@@ -511,7 +504,7 @@ public class Message implements Serializable {
     /**
      * Setter method for property <tt>body</tt>.
      *
-     * @param body  value to be assigned to property body
+     * @param body value to be assigned to property body
      */
     public void setBody(String body) {
         this.body = body;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除设备上的语音
  *
  * @author auto create
- * @since 1.0, 2019-06-20 20:45:29
+ * @since 1.0, 2019-08-22 22:51:54
  */
 public class AlipayCommerceIotDeviceAudioDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8487672666628421428L;
+	private static final long serialVersionUID = 1447186791218613238L;
 
 	/**
 	 * 语音id, 也就是语音合成接口返回的audio_id

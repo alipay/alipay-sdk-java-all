@@ -25,11 +25,11 @@
 
 package com.alipay.api.java_websocket.framing;
 
-import java.nio.ByteBuffer;
-
+import com.alipay.api.java_websocket.enums.Opcode;
 import com.alipay.api.java_websocket.exceptions.InvalidDataException;
 import com.alipay.api.java_websocket.util.ByteBufferUtils;
-import com.alipay.api.java_websocket.enums.Opcode;
+
+import java.nio.ByteBuffer;
 
 /**
  * Abstract implementation of a frame
@@ -43,7 +43,7 @@ public abstract class FramedataImpl1 implements Framedata {
     /**
      * Defines the interpretation of the "Payload data".
      */
-    private Opcode optcode;
+    private Opcode  optcode;
 
     /**
      * The unmasked "Payload data" which was sent in this frame
@@ -92,41 +92,33 @@ public abstract class FramedataImpl1 implements Framedata {
         rsv3 = false;
     }
 
-
     public boolean isRSV1() {
         return rsv1;
     }
-
 
     public boolean isRSV2() {
         return rsv2;
     }
 
-
     public boolean isRSV3() {
         return rsv3;
     }
-
 
     public boolean isFin() {
         return fin;
     }
 
-
     public Opcode getOpcode() {
         return optcode;
     }
-
 
     public boolean getTransfereMasked() {
         return transferemasked;
     }
 
-
     public ByteBuffer getPayloadData() {
         return unmaskedpayload;
     }
-
 
     public void append(Framedata nextframe) {
         ByteBuffer b = nextframe.getPayloadData();
@@ -157,9 +149,10 @@ public abstract class FramedataImpl1 implements Framedata {
 
     }
 
-
     public String toString() {
-        return "Framedata{ optcode:" + getOpcode() + ", fin:" + isFin() + ", rsv1:" + isRSV1() + ", rsv2:" + isRSV2() + ", rsv3:" + isRSV3() + ", payloadlength:[pos:" + unmaskedpayload.position() + ", len:" + unmaskedpayload.remaining() + "], payload:" + ( unmaskedpayload.remaining() > 1000 ? "(too big to display)" : new String( unmaskedpayload.array() ) ) + '}';
+        return "Framedata{ optcode:" + getOpcode() + ", fin:" + isFin() + ", rsv1:" + isRSV1() + ", rsv2:" + isRSV2() + ", rsv3:" + isRSV3()
+                + ", payloadlength:[pos:" + unmaskedpayload.position() + ", len:" + unmaskedpayload.remaining() + "], payload:" + (
+                unmaskedpayload.remaining() > 1000 ? "(too big to display)" : new String(unmaskedpayload.array())) + '}';
     }
 
     /**
@@ -223,7 +216,7 @@ public abstract class FramedataImpl1 implements Framedata {
      * @return the frame with a specific opcode
      */
     public static FramedataImpl1 get(Opcode opcode) {
-        if (opcode== null) {
+        if (opcode == null) {
             throw new IllegalArgumentException("Supplied opcode cannot be null");
         }
         switch (opcode) {
@@ -244,31 +237,29 @@ public abstract class FramedataImpl1 implements Framedata {
         }
     }
 
+    public boolean equals(Object o) {
+        if (this == o) { return true; }
+        if (o == null || getClass() != o.getClass()) { return false; }
 
-    public boolean equals( Object o ) {
-        if( this == o ) return true;
-        if( o == null || getClass() != o.getClass() ) return false;
+        FramedataImpl1 that = (FramedataImpl1) o;
 
-        FramedataImpl1 that = ( FramedataImpl1 ) o;
-
-        if( fin != that.fin ) return false;
-        if( transferemasked != that.transferemasked ) return false;
-        if( rsv1 != that.rsv1 ) return false;
-        if( rsv2 != that.rsv2 ) return false;
-        if( rsv3 != that.rsv3 ) return false;
-        if( optcode != that.optcode ) return false;
-        return unmaskedpayload != null ? unmaskedpayload.equals( that.unmaskedpayload ) : that.unmaskedpayload == null;
+        if (fin != that.fin) { return false; }
+        if (transferemasked != that.transferemasked) { return false; }
+        if (rsv1 != that.rsv1) { return false; }
+        if (rsv2 != that.rsv2) { return false; }
+        if (rsv3 != that.rsv3) { return false; }
+        if (optcode != that.optcode) { return false; }
+        return unmaskedpayload != null ? unmaskedpayload.equals(that.unmaskedpayload) : that.unmaskedpayload == null;
     }
 
-
     public int hashCode() {
-        int result = ( fin ? 1 : 0 );
+        int result = (fin ? 1 : 0);
         result = 31 * result + optcode.hashCode();
-        result = 31 * result + ( unmaskedpayload != null ? unmaskedpayload.hashCode() : 0 );
-        result = 31 * result + ( transferemasked ? 1 : 0 );
-        result = 31 * result + ( rsv1 ? 1 : 0 );
-        result = 31 * result + ( rsv2 ? 1 : 0 );
-        result = 31 * result + ( rsv3 ? 1 : 0 );
+        result = 31 * result + (unmaskedpayload != null ? unmaskedpayload.hashCode() : 0);
+        result = 31 * result + (transferemasked ? 1 : 0);
+        result = 31 * result + (rsv1 ? 1 : 0);
+        result = 31 * result + (rsv2 ? 1 : 0);
+        result = 31 * result + (rsv3 ? 1 : 0);
         return result;
     }
 }

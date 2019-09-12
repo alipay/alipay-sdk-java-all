@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.audio.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-21 14:34:19
+ * @since 1.0, 2019-08-22 22:58:38
  */
 public class AlipayCommerceIotDeviceAudioQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1215276358215496493L;
+	private static final long serialVersionUID = 3715916623883689362L;
 
 	/** 
 	 * 设备上的语音列表.格式为json字符串. audioId为语音id,playType为播放场景,取值为TRADE或CUSTOM_AUDIO

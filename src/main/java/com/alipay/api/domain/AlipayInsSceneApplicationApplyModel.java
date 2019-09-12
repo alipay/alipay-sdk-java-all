@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投保受理
  *
  * @author auto create
- * @since 1.0, 2019-06-10 21:51:13
+ * @since 1.0, 2019-08-28 13:59:53
  */
 public class AlipayInsSceneApplicationApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2142641794329897722L;
+	private static final long serialVersionUID = 8514855814926968611L;
 
 	/**
 	 * 用户参与的活动ID
@@ -40,6 +40,12 @@ public class AlipayInsSceneApplicationApplyModel extends AlipayObject {
 	 */
 	@ApiField("biz_data")
 	private String bizData;
+
+	/**
+	 * 保险产品销售单元编码
+	 */
+	@ApiField("csu_no")
+	private String csuNo;
 
 	/**
 	 * 生效时间
@@ -136,6 +142,13 @@ public class AlipayInsSceneApplicationApplyModel extends AlipayObject {
 	}
 	public void setBizData(String bizData) {
 		this.bizData = bizData;
+	}
+
+	public String getCsuNo() {
+		return this.csuNo;
+	}
+	public void setCsuNo(String csuNo) {
+		this.csuNo = csuNo;
 	}
 
 	public Date getEffectStartTime() {

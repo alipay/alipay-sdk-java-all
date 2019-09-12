@@ -1,19 +1,11 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2012 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2012 All Rights Reserved.
  */
 package com.alipay.api.internal.util;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.Writer;
+import java.io.*;
 
 /**
- * 
  * @author runzhi
  */
 public class StreamUtil {
@@ -70,9 +62,9 @@ public class StreamUtil {
     }
 
     public static String readText(InputStream in, String encoding, int bufferSize)
-                                                                                  throws IOException {
+            throws IOException {
         Reader reader = (encoding == null) ? new InputStreamReader(in) : new InputStreamReader(in,
-            encoding);
+                encoding);
 
         return readText(reader, bufferSize);
     }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车牌代扣状态查询API
  *
  * @author auto create
- * @since 1.0, 2019-05-20 22:58:19
+ * @since 1.0, 2019-08-22 14:07:30
  */
 public class AlipayEcoMycarParkingAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6745765532237696621L;
+	private static final long serialVersionUID = 2849798923114259569L;
 
 	/**
 	 * 支付宝用户ID
@@ -25,6 +25,12 @@ public class AlipayEcoMycarParkingAgreementQueryModel extends AlipayObject {
 	@ApiField("car_number")
 	private String carNumber;
 
+	/**
+	 * 接口版本号，不填则默认为v2.0，建议使用最新版v2.1
+	 */
+	@ApiField("ver")
+	private String ver;
+
 	public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
@@ -37,6 +43,13 @@ public class AlipayEcoMycarParkingAgreementQueryModel extends AlipayObject {
 	}
 	public void setCarNumber(String carNumber) {
 		this.carNumber = carNumber;
+	}
+
+	public String getVer() {
+		return this.ver;
+	}
+	public void setVer(String ver) {
+		this.ver = ver;
 	}
 
 }

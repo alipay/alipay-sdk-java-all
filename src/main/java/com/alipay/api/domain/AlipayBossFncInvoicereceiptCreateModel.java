@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单变更同步接口
  *
  * @author auto create
- * @since 1.0, 2018-11-27 21:31:33
+ * @since 1.0, 2019-09-12 15:43:02
  */
 public class AlipayBossFncInvoicereceiptCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3266212832747686657L;
+	private static final long serialVersionUID = 6842313941771164865L;
 
 	/**
 	 * 账单金额变更消息事件码

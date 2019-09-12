@@ -9,11 +9,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-20 22:58:25
+ * @since 1.0, 2019-08-22 16:21:17
  */
 public class AlipayEcoMycarParkingAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2773888555539897128L;
+	private static final long serialVersionUID = 2785965955363946613L;
+
+	/** 
+	 * 车牌垫资状态:
+0 可垫资
+1 不可垫资
+2 未知请重试
+	 */
+	@ApiField("advance_status")
+	private String advanceStatus;
 
 	/** 
 	 * 车牌代扣状态: 
@@ -29,16 +38,36 @@ public class AlipayEcoMycarParkingAgreementQueryResponse extends AlipayResponse 
 	private String agreementStatus;
 
 	/** 
+	 * 有效时间，格式"yyyy-MM-dd HH:mm:ss"
+	 */
+	@ApiField("expire_time")
+	private String expireTime;
+
+	/** 
 	 * 仅当当前车场服务商签约了停车无感垫资产品，且指定车牌被当前传入的支付宝用户开通代扣条件下返回
 	 */
 	@ApiField("user_advance_info")
 	private UserAdvanceInfo userAdvanceInfo;
+
+	public void setAdvanceStatus(String advanceStatus) {
+		this.advanceStatus = advanceStatus;
+	}
+	public String getAdvanceStatus( ) {
+		return this.advanceStatus;
+	}
 
 	public void setAgreementStatus(String agreementStatus) {
 		this.agreementStatus = agreementStatus;
 	}
 	public String getAgreementStatus( ) {
 		return this.agreementStatus;
+	}
+
+	public void setExpireTime(String expireTime) {
+		this.expireTime = expireTime;
+	}
+	public String getExpireTime( ) {
+		return this.expireTime;
 	}
 
 	public void setUserAdvanceInfo(UserAdvanceInfo userAdvanceInfo) {

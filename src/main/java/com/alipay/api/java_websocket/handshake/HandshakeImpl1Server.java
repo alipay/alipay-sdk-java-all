@@ -30,33 +30,29 @@ package com.alipay.api.java_websocket.handshake;
  */
 public class HandshakeImpl1Server extends HandshakedataImpl1 implements ServerHandshakeBuilder {
 
-	/**
-	 * Attribute for the http status
-	 */
-	private short httpstatus;
+    /**
+     * Attribute for the http status
+     */
+    private short httpstatus;
 
-	/**
-	 * Attribute for the http status message
-	 */
-	private String httpstatusmessage;
+    /**
+     * Attribute for the http status message
+     */
+    private String httpstatusmessage;
 
+    public String getHttpStatusMessage() {
+        return httpstatusmessage;
+    }
 
-	public String getHttpStatusMessage() {
-		return httpstatusmessage;
-	}
+    public short getHttpStatus() {
+        return httpstatus;
+    }
 
+    public void setHttpStatusMessage(String message) {
+        this.httpstatusmessage = message;
+    }
 
-	public short getHttpStatus() {
-		return httpstatus;
-	}
-
-
-	public void setHttpStatusMessage( String message ) {
-		this.httpstatusmessage = message;
-	}
-
-
-	public void setHttpStatus( short status ) {
-		httpstatus = status;
-	}
+    public void setHttpStatus(short status) {
+        httpstatus = status;
+    }
 }

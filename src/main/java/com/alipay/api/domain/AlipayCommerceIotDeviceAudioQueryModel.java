@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询设备上的语音
  *
  * @author auto create
- * @since 1.0, 2019-06-21 14:34:13
+ * @since 1.0, 2019-08-22 22:57:42
  */
 public class AlipayCommerceIotDeviceAudioQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5426676749312571161L;
+	private static final long serialVersionUID = 3113351891388297857L;
 
 	/**
 	 * 设备的唯一标识,设备id

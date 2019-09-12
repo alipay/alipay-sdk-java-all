@@ -43,7 +43,7 @@ public class LimitExedeedException extends InvalidDataException {
      * calling InvalidDataException with closecode TOOBIG
      */
     public LimitExedeedException() {
-        super( CloseFrame.TOOBIG);
+        super(CloseFrame.TOOBIG);
     }
 
     /**
@@ -54,7 +54,7 @@ public class LimitExedeedException extends InvalidDataException {
      * @param s the detail message.
      */
     public LimitExedeedException(String s) {
-        super( CloseFrame.TOOBIG, s);
+        super(CloseFrame.TOOBIG, s);
     }
 
 }

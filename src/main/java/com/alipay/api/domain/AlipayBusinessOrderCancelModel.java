@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商业订单撤销
  *
  * @author auto create
- * @since 1.0, 2019-03-12 10:39:44
+ * @since 1.0, 2019-08-17 17:39:20
  */
 public class AlipayBusinessOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1614416558568392966L;
+	private static final long serialVersionUID = 7444427692291814557L;
 
 	/**
 	 * 支付工具撤销请求明细。若该字段为空则认为是整单撤销

@@ -7,38 +7,55 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账业务单据查询接口
  *
  * @author auto create
- * @since 1.0, 2019-08-05 10:41:57
+ * @since 1.0, 2019-09-09 15:48:32
  */
 public class AlipayFundTransCommonQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2642811681324733187L;
+	private static final long serialVersionUID = 8528697337646529981L;
 
 	/**
 	 * 描述特定的业务场景，如果传递了out_biz_no则该字段为必传。可取的业务场景如下：
-PERSONAL_PAY，C2C现金红包-发红包
-PERSONAL_COLLECTION，C2C现金红包-领红包
-REFUND，C2C现金红包-红包退回
-DIRECT_TRANSFER，B2C现金红包
+PERSONAL_PAY：C2C现金红包-发红包；
+PERSONAL_COLLECTION：C2C现金红包-领红包；
+REFUND：C2C现金红包-红包退回；
+DIRECT_TRANSFER：B2C现金红包、单笔无密转账
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
 
 	/**
-	 * 支付宝转账单据号：和商户转账唯一订单号不能同时为空。当和商户转账唯一订单号同时提供时，将用本参数进行查询，忽略商户转账唯一订单号。
+	 * 支付宝转账单据号：
+本参数和商户转账唯一订单号、支付宝支付资金流水号三者不能同时为空。
+当本参数和商户转账唯一订单号、支付宝支付资金流水号三者同时提供时，将用支付宝支付资金流水号进行查询，忽略其余两者；
+当本参数和支付宝支付资金流水号同时提供时，将用支付宝支付资金流水号进行查询，忽略本参数。
+当本参数和商户转账唯一订单号同时提供时，将用本参数进行查询，忽略商户转账唯一订单号。
 	 */
 	@ApiField("order_id")
 	private String orderId;
 
 	/**
 	 * 商户转账唯一订单号：发起转账来源方定义的转账单据ID。
-和支付宝转账单据号不能同时为空。当和支付宝转账单据号同时提供时，将用支付宝转账单据号进行查询，忽略本参数。
+本参数和支付宝转账单据号、支付宝支付资金流水号三者不能同时为空。
+当本参数和支付宝转账单据号、支付宝支付资金流水号同时提供时，将用支付宝支付资金流水号进行查询，忽略本参数；
+当本参数和支付宝转账单据号同时提供时，将用支付宝转账单据号进行查询，忽略本参数；
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
 	/**
+	 * 支付宝支付资金流水号：
+本参数和支付宝转账单据号、商户转账唯一订单号三者不能同时为空。
+当本参数和支付宝转账单据号、商户转账唯一订单号同时提供时，将用本参数进行查询，忽略本参数；
+当本参数和支付宝转账单据号同时提供时，将用本参数进行查询，忽略支付宝转账单据号；
+当本参数和商户转账唯一订单号同时提供时，将用本参数进行查询，忽略商户转账唯一订单号；
+	 */
+	@ApiField("pay_fund_order_id")
+	private String payFundOrderId;
+
+	/**
 	 * 销售产品码，商家和支付宝签约的产品码，如果传递了out_biz_no则该字段为必传。可传值如下：
 STD_RED_PACKET：现金红包
+TRANS_ACCOUNT_NO_PWD：单笔无密转账
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -62,6 +79,13 @@ STD_RED_PACKET：现金红包
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getPayFundOrderId() {
+		return this.payFundOrderId;
+	}
+	public void setPayFundOrderId(String payFundOrderId) {
+		this.payFundOrderId = payFundOrderId;
 	}
 
 	public String getProductCode() {

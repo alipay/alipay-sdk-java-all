@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序版本信息
  *
  * @author auto create
- * @since 1.0, 2019-08-12 20:20:04
+ * @since 1.0, 2019-09-05 19:48:19
  */
 public class MiniAppVersionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2143999376818227447L;
+	private static final long serialVersionUID = 1781299768844687627L;
 
 	/**
 	 * Android客户端版本号信息
@@ -42,6 +42,12 @@ public class MiniAppVersionInfo extends AlipayObject {
 	 */
 	@ApiField("coverage_rate")
 	private Long coverageRate;
+
+	/**
+	 * 版本生成失败错误原因
+	 */
+	@ApiField("error_msg")
+	private String errorMsg;
 
 	/**
 	 * iOS客户端版本号信息
@@ -111,6 +117,13 @@ OFFLINE:已下架
 	}
 	public void setCoverageRate(Long coverageRate) {
 		this.coverageRate = coverageRate;
+	}
+
+	public String getErrorMsg() {
+		return this.errorMsg;
+	}
+	public void setErrorMsg(String errorMsg) {
+		this.errorMsg = errorMsg;
 	}
 
 	public MiniAppClientVersionInfo getIosClientVersionInfo() {

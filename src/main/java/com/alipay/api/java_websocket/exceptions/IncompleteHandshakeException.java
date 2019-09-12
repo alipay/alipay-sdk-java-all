@@ -43,6 +43,7 @@ public class IncompleteHandshakeException extends RuntimeException {
     /**
      * constructor for a IncompleteHandshakeException
      * <p>
+     *
      * @param preferedSize the prefered size
      */
     public IncompleteHandshakeException(int preferedSize) {

@@ -43,7 +43,7 @@ public class InvalidHandshakeException extends InvalidDataException {
      * calling InvalidDataException with closecode PROTOCOL_ERROR
      */
     public InvalidHandshakeException() {
-        super( CloseFrame.PROTOCOL_ERROR);
+        super(CloseFrame.PROTOCOL_ERROR);
     }
 
     /**
@@ -55,7 +55,7 @@ public class InvalidHandshakeException extends InvalidDataException {
      * @param t the throwable causing this exception.
      */
     public InvalidHandshakeException(String s, Throwable t) {
-        super( CloseFrame.PROTOCOL_ERROR, s, t);
+        super(CloseFrame.PROTOCOL_ERROR, s, t);
     }
 
     /**
@@ -66,7 +66,7 @@ public class InvalidHandshakeException extends InvalidDataException {
      * @param s the detail message.
      */
     public InvalidHandshakeException(String s) {
-        super( CloseFrame.PROTOCOL_ERROR, s);
+        super(CloseFrame.PROTOCOL_ERROR, s);
     }
 
     /**
@@ -77,7 +77,7 @@ public class InvalidHandshakeException extends InvalidDataException {
      * @param t the throwable causing this exception.
      */
     public InvalidHandshakeException(Throwable t) {
-        super( CloseFrame.PROTOCOL_ERROR, t);
+        super(CloseFrame.PROTOCOL_ERROR, t);
     }
 
 }

@@ -1,30 +1,30 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2014 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2014 All Rights Reserved.
  */
 package com.alipay.api;
+
+import com.alipay.api.internal.util.AlipayHashMap;
 
 import java.io.OutputStream;
 import java.util.Map;
 
-import com.alipay.api.internal.util.AlipayHashMap;
-
 /**
  * 多媒体文件下载请求
+ *
  * @author yikai.hu
  * @version $Id: AlipayMobilePublicMultiMediaDownloadRequest.java, v 0.1 Aug 15, 2014 10:19:15 AM yikai.hu Exp $
  */
 public class AlipayMobilePublicMultiMediaDownloadRequest implements
-                                                         AlipayRequest<AlipayMobilePublicMultiMediaDownloadResponse> {
+        AlipayRequest<AlipayMobilePublicMultiMediaDownloadResponse> {
 
     private AlipayHashMap udfParams;         // add user-defined text parameters
     private String        apiVersion = "1.0";
 
-    private String        notifyUrl;
+    private String notifyUrl;
 
-    private OutputStream  outputStream;
+    private OutputStream outputStream;
 
-    private String        bizContent;
+    private String bizContent;
 
     public void setBizContent(String bizContent) {
         this.bizContent = bizContent;
@@ -92,7 +92,7 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
 
     /**
      * Getter method for property <tt>outputStream</tt>.
-     * 
+     *
      * @return property value of outputStream
      */
     public OutputStream getOutputStream() {
@@ -101,7 +101,7 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
 
     /**
      * Setter method for property <tt>outputStream</tt>.
-     * 
+     *
      * @param outputStream value to be assigned to property outputStream
      */
     public void setOutputStream(OutputStream outputStream) {
@@ -110,7 +110,7 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
 
     /**
      * Getter method for property <tt>notifyUrl</tt>.
-     * 
+     *
      * @return property value of notifyUrl
      */
     public String getNotifyUrl() {
@@ -119,7 +119,7 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
 
     /**
      * Setter method for property <tt>notifyUrl</tt>.
-     * 
+     *
      * @param notifyUrl value to be assigned to property notifyUrl
      */
     public void setNotifyUrl(String notifyUrl) {
@@ -130,14 +130,14 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
         return AlipayMobilePublicMultiMediaDownloadResponse.class;
     }
 
-    /** 
+    /**
      * @see com.alipay.api.AlipayRequest#isNeedEncrypt()
      */
     public boolean isNeedEncrypt() {
         return false;
     }
 
-    /** 
+    /**
      * @see com.alipay.api.AlipayRequest#setNeedEncrypt(boolean)
      */
     public void setNeedEncrypt(boolean needEncrypt) {

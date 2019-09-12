@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 咨询可用奖品
  *
  * @author auto create
- * @since 1.0, 2018-02-07 12:00:22
+ * @since 1.0, 2019-08-23 14:23:21
  */
 public class MybankMarketingCampaignPrizeListConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5111861924356157671L;
+	private static final long serialVersionUID = 7558527293734446946L;
 
 	/**
 	 * 支付宝UID，2088开头

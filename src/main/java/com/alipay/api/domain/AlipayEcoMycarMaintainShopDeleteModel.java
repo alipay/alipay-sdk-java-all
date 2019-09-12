@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 洗车保养门店删除
  *
  * @author auto create
- * @since 1.0, 2019-03-28 10:32:21
+ * @since 1.0, 2019-08-29 11:21:38
  */
 public class AlipayEcoMycarMaintainShopDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8524281398131457155L;
+	private static final long serialVersionUID = 7139241976186247718L;
 
 	/**
 	 * 外部门店编号（与shop_id二选一，不能都为空）

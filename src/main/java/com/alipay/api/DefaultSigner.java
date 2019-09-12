@@ -1,16 +1,13 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api;
 
 import com.alipay.api.internal.util.AlipaySignature;
 
 /**
- * 默认加签器
- *
  * @author liuqun.lq
- * @version $Id: DefaultSigner.java, v 0.1 2018年07月03日 12:02 liuqun.lq Exp $
+ * @version $Id: DefaultSigner.java, v 0.1  12:02 liuqun.lq Exp $
  */
 public class DefaultSigner implements Signer {
 
@@ -42,7 +39,7 @@ public class DefaultSigner implements Signer {
     /**
      * Setter method for property <tt>privateKey</tt>.
      *
-     * @param privateKey  value to be assigned to property privateKey
+     * @param privateKey value to be assigned to property privateKey
      */
     public void setPrivateKey(String privateKey) {
         this.privateKey = privateKey;

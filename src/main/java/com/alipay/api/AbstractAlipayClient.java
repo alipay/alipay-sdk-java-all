@@ -1,59 +1,68 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2012 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2012 All Rights Reserved.
  */
 package com.alipay.api;
 
-import java.io.IOException;
-import java.security.Security;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TimeZone;
-
 import com.alipay.api.internal.parser.json.ObjectJsonParser;
 import com.alipay.api.internal.parser.xml.ObjectXmlParser;
-import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.internal.util.AlipayLogger;
-import com.alipay.api.internal.util.AlipaySignature;
-import com.alipay.api.internal.util.AlipayUtils;
-import com.alipay.api.internal.util.RequestParametersHolder;
-import com.alipay.api.internal.util.StringUtils;
-import com.alipay.api.internal.util.WebUtils;
+import com.alipay.api.internal.util.*;
+import com.alipay.api.internal.util.codec.Base64;
+import com.alipay.api.internal.util.file.FileUtils;
 import com.alipay.api.internal.util.json.JSONWriter;
 
+import javax.net.ssl.SSLException;
+import java.io.*;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.security.PublicKey;
+import java.security.Security;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
- *
  * @author liuqun.lq
  * @version $Id: AbstractAlipayClient.java, v 0.1 2018-07-03 10:45:21 liuqun.lq Exp $
  */
 public abstract class AbstractAlipayClient implements AlipayClient {
-
     private String serverUrl;
     private String appId;
     private String prodCode;
-    private String format         = AlipayConstants.FORMAT_JSON;
-    private String signType       = AlipayConstants.SIGN_TYPE_RSA;
-    private String encryptType    = AlipayConstants.ENCRYPT_TYPE_AES;
+    private String format      = AlipayConstants.FORMAT_JSON;
+    private String signType    = AlipayConstants.SIGN_TYPE_RSA;
+    private String encryptType = AlipayConstants.ENCRYPT_TYPE_AES;
 
     private String charset;
 
-    private int    connectTimeout = 3000;
-    private int    readTimeout    = 15000;
+    private int connectTimeout = 3000;
+    private int readTimeout    = 15000;
 
-    private String proxyHost;
-    private int    proxyPort;
+    private String      proxyHost;
+    private int         proxyPort;
+    private SignChecker signChecker;
+
+    private String                                     appCertSN;
+    private String                                     alipayCertSN;
+    private String                                     alipayRootCertSN;
+    private String                                     rootCertContent;
+    private X509Certificate                            cert;
+    private ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap;
+    private ConcurrentHashMap<String, String>          alipayPublicKeyMap;
 
     static {
-        //Çå³ı°²È«ÉèÖÃ
+        //æ¸…é™¤å®‰å…¨è®¾ç½®
         Security.setProperty("jdk.certpath.disabledAlgorithms", "");
+
     }
 
-    /** ÅúÁ¿APIÄ¬ÈÏ·Ö¸ô·û **/
+    /**
+     * æ‰¹é‡APIé»˜è®¤åˆ†éš”ç¬¦
+     **/
     private static final String BATCH_API_DEFAULT_SPLIT = "#S#";
 
     public AbstractAlipayClient(String serverUrl, String appId, String format,
@@ -85,6 +94,279 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         }
     }
 
+    public AbstractAlipayClient(String serverUrl, String appId, String format,
+                                String charset, String signType, String certPath,
+                                String alipayPublicCertPath, String rootCertPath, String proxyHost,
+                                int proxyPort, String encryptType) throws AlipayApiException {
+        this(serverUrl, appId, format, charset, signType);
+        if (!StringUtils.isEmpty(encryptType)) {
+            this.encryptType = encryptType;
+        }
+        this.proxyHost = proxyHost;
+        this.proxyPort = proxyPort;
+        //è¯»å–æ ¹è¯ä¹¦ï¼ˆç”¨æ¥æ ¡éªŒæœ¬åœ°æ”¯ä»˜å®å…¬é’¥è¯ä¹¦å¤±æ•ˆåè‡ªåŠ¨ä»ç½‘å…³ä¸‹è½½çš„æ–°æ”¯ä»˜å®å…¬é’¥è¯ä¹¦æ˜¯å¦æœ‰æ•ˆï¼‰
+        this.rootCertContent = readFileToString(rootCertPath);
+        //alipayRootCertSNæ ¹è¯ä¹¦åºåˆ—å·
+        this.alipayRootCertSN = AntCertificationUtil.getRootCertSN(this.rootCertContent);
+        if (StringUtils.isEmpty(this.alipayRootCertSN)) {
+            throw new AlipayApiException("AlipayRootCert Is Invalid");
+        }
+        //è·å–åº”ç”¨è¯ä¹¦
+        this.cert = getCert(certPath);
+        //è·å–æ”¯ä»˜å®å…¬é’¥è¯ä¹¦
+        X509Certificate alipayPublicCert = getCert(alipayPublicCertPath);
+
+        //appCertSNä¸ºæœ€ç»ˆå‘é€ç»™ç½‘å…³çš„åº”ç”¨è¯ä¹¦åºåˆ—å·
+        this.appCertSN = getCertSN(cert);
+        if (StringUtils.isEmpty(this.appCertSN)) {
+            throw new AlipayApiException("AppCert Is Invalid");
+        }
+        //alipayCertSNä¸ºæ”¯ä»˜å®å…¬é’¥è¯ä¹¦åºåˆ—å·
+        this.alipayCertSN = getCertSN(alipayPublicCert);
+        //å°†å…¬é’¥è¯ä¹¦ä»¥åºåˆ—å·ä¸ºkeyå­˜å…¥map
+        ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap = new ConcurrentHashMap<String, X509Certificate>();
+        alipayPublicCertMap.put(alipayCertSN, alipayPublicCert);
+        this.alipayPublicCertMap = alipayPublicCertMap;
+        //è·å–æ”¯ä»˜å®å…¬é’¥ä»¥åºåˆ—å·ä¸ºkeyå­˜å…¥map
+        PublicKey publicKey = alipayPublicCert.getPublicKey();
+        ConcurrentHashMap<String, String> alipayPublicKeyMap = new ConcurrentHashMap<String, String>();
+        alipayPublicKeyMap.put(alipayCertSN, Base64.encodeBase64String(publicKey.getEncoded()));
+        this.alipayPublicKeyMap = alipayPublicKeyMap;
+    }
+
+    /**
+     * @param certPath è¯ä¹¦è·¯å¾„
+     * @return
+     * @throws AlipayApiException
+     */
+    private X509Certificate getCert(String certPath) throws AlipayApiException {
+        InputStream inputStream = null;
+        try {
+            inputStream = new FileInputStream(certPath);
+            CertificateFactory cf = CertificateFactory.getInstance("X.509");
+            X509Certificate cert = (X509Certificate) cf.generateCertificate(inputStream);
+            return cert;
+
+        } catch (IOException e) {
+            throw new AlipayApiException(e);
+        } catch (CertificateException e) {
+            throw new AlipayApiException(e);
+        } finally {
+            try {
+                if (inputStream != null) {
+                    inputStream.close();
+                }
+            } catch (IOException e) {
+                throw new AlipayApiException(e);
+            }
+        }
+    }
+
+    private String getCertSN(X509Certificate cf) throws AlipayApiException {
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            md.update((cf.getIssuerX500Principal().getName() + cf.getSerialNumber()).getBytes());
+            String certSN = new BigInteger(1, md.digest()).toString(16);
+            //BigIntegerä¼šæŠŠ0çœç•¥æ‰ï¼Œéœ€è¡¥å…¨è‡³32ä½
+            certSN = fillMD5(certSN);
+            return certSN;
+        } catch (NoSuchAlgorithmException e) {
+            throw new AlipayApiException(e);
+        }
+    }
+
+    private static String fillMD5(String md5) {
+        return md5.length() == 32 ? md5 : fillMD5("0" + md5);
+    }
+
+    private String readFileToString(String rootCertPath) throws AlipayApiException {
+        try {
+            File file = new File(rootCertPath);
+            String client = FileUtils.readFileToString(file);
+            return client;
+        } catch (IOException e) {
+            throw new AlipayApiException(e);
+        }
+
+    }
+
+    //æ ¡éªŒè¯ä¹¦æœ‰æ•ˆæœŸä»¥åŠæ˜¯å¦æ”¯ä»˜å®é¢å‘
+    private boolean verifyCert(String cert) {
+        return AntCertificationUtil.isTrusted(cert, this.rootCertContent);
+    }
+
+    public <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request) throws AlipayApiException {
+        return certificateExecute(request, null);
+    }
+
+    public <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request,
+                                                           String accessToken) throws AlipayApiException {
+
+        return certificateExecute(request, accessToken, null);
+    }
+
+    public <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request, String accessToken,
+                                                           String appAuthToken) throws AlipayApiException {
+
+        return _certificateExecute(request, accessToken, appAuthToken);
+    }
+
+    public <T extends AlipayResponse> T _certificateExecute(AlipayRequest<T> request, String accessToken,
+                                                            String appAuthToken) throws AlipayApiException {
+        T tRsp = null;
+        try {
+            long beginTime = System.currentTimeMillis();
+            Map<String, Object> rt = doPost(request, accessToken, appAuthToken, this.appCertSN);
+
+            Map<String, Long> costTimeMap = new HashMap<String, Long>();
+            if (rt.containsKey("prepareTime")) {
+                costTimeMap.put("prepareCostTime", (Long) (rt.get("prepareTime")) - beginTime);
+                if (rt.containsKey("requestTime")) {
+                    costTimeMap.put("requestCostTime", (Long) (rt.get("requestTime")) - (Long) (rt.get("prepareTime")));
+                }
+            }
+            AlipayParser<T> parser = null;
+            if (AlipayConstants.FORMAT_XML.equals(this.format)) {
+                parser = new ObjectXmlParser<T>(request.getResponseClass());
+            } else {
+                parser = new ObjectJsonParser<T>(request.getResponseClass());
+            }
+            // è‹¥éœ€è¦è§£å¯†åˆ™å…ˆè§£å¯†
+            ResponseEncryptItem responseItem = decryptResponse(request, rt, parser);
+            // è§£æå®é™…ä¸²
+            tRsp = parser.parse(responseItem.getRealContent());
+            tRsp.setBody(responseItem.getRealContent());
+            checkResponseCertSign(request, parser, responseItem.getRespContent(), tRsp.isSuccess());
+
+            if (costTimeMap.containsKey("requestCostTime")) {
+                costTimeMap.put("postCostTime", System.currentTimeMillis() - (Long) (rt.get("requestTime")));
+            }
+
+            tRsp.setParams((AlipayHashMap) rt.get("textParams"));
+            if (!tRsp.isSuccess()) {
+                AlipayLogger.logErrorScene(rt, tRsp, "", costTimeMap);
+            } else {
+                AlipayLogger.logBizSummary(rt, tRsp, costTimeMap);
+            }
+            return tRsp;
+        } catch (RuntimeException e) {
+            AlipayLogger.logBizError(e);
+            throw new AlipayApiException(e);
+        } catch (AlipayApiException e) {
+            AlipayLogger.logBizError(e);
+            throw new AlipayApiException(e);
+        }
+    }
+
+    /**
+     * æ£€æŸ¥å“åº”ç­¾å
+     *
+     * @param request
+     * @param parser
+     * @param responseBody
+     * @param responseIsSucess
+     * @throws AlipayApiException
+     */
+    private <T extends AlipayResponse> void checkResponseCertSign(AlipayRequest<T> request,
+                                                                  AlipayParser<T> parser,
+                                                                  String responseBody,
+                                                                  boolean responseIsSucess) throws AlipayApiException {
+        CertItem certItem = parser.getCertItem(request, responseBody);
+        if (certItem == null) {
+            throw new AlipayApiException("cert check fail: Body is Empty!");
+        }
+        if (certItem.getCert() == null && responseIsSucess
+                && !request.getApiMethodName().equals(AlipayOpenAppAlipaycertDownloadRequest.ALIPAYCERT_DOWNLOAD)) {
+            throw new AlipayApiException("cert check fail: ALIPAY_CERT_SN is Empty!");
+        }
+        String alipayPublicKey = null;
+        if (certItem.getCert() != null) {
+            if (!alipayPublicCertMap.containsKey(certItem.getCert())) {
+                //å¦‚æœè¿”å›çš„æ”¯ä»˜å®å…¬é’¥è¯ä¹¦åºåˆ—å·ä¸æœ¬åœ°æ”¯ä»˜å®å…¬é’¥è¯ä¹¦åºåˆ—å·ä¸åŒ¹é…ï¼Œé€šè¿‡è¿”å›çš„æ”¯ä»˜å®å…¬é’¥è¯ä¹¦åºåˆ—å·å»ç½‘å…³æ‹‰å–æ–°çš„æ”¯ä»˜å®å…¬é’¥è¯ä¹¦
+                AlipayOpenAppAlipaycertDownloadRequest alipayRequest = new AlipayOpenAppAlipaycertDownloadRequest();
+                alipayRequest.setBizContent("{" +
+                        "\"alipay_cert_sn\":\"" + certItem.getCert() + "\"" +
+                        "  }");
+
+                Map<String, Object> rt = doPost(alipayRequest, null, null, this.appCertSN);
+                // è§£æå®é™…ä¸²
+                String respContent = rt.get("rsp").toString();
+                AlipayParser<AlipayOpenAppAlipaycertDownloadResponse> parserCert = null;
+                parserCert = new ObjectJsonParser<AlipayOpenAppAlipaycertDownloadResponse>(alipayRequest.getResponseClass());
+                AlipayOpenAppAlipaycertDownloadResponse alipayResponse = parserCert.parse(respContent);
+                if (!alipayResponse.isSuccess()) {
+                    throw new AlipayApiException("æ”¯ä»˜å®å…¬é’¥è¯ä¹¦æ ¡éªŒå¤±è´¥ï¼Œè¯·ç¡®è®¤æ˜¯å¦ä¸ºæ”¯ä»˜å®ç­¾å‘çš„æœ‰æ•ˆå…¬é’¥è¯ä¹¦");
+                }
+                String alipayCertContent = alipayResponse.getAlipayCertContent();
+
+                InputStream inputStream = null;
+                try {
+                    byte[] alipayCert = Base64.decodeBase64String(alipayCertContent);
+                    String alipayPublicCertStr = new String(alipayCert);
+                    if (!verifyCert(alipayPublicCertStr)) {
+                        throw new AlipayApiException("æ”¯ä»˜å®å…¬é’¥è¯ä¹¦æ ¡éªŒå¤±è´¥ï¼Œè¯·ç¡®è®¤æ˜¯å¦ä¸ºæ”¯ä»˜å®ç­¾å‘çš„æœ‰æ•ˆå…¬é’¥è¯ä¹¦");
+                    }
+                    inputStream = new ByteArrayInputStream(alipayCert);
+                    CertificateFactory cf = CertificateFactory.getInstance("X.509");
+                    X509Certificate alipayPublicCertNew = (X509Certificate) cf.generateCertificate(inputStream);
+                    //è·å–æ–°è¯ä¹¦å’Œå…¬é’¥æ·»åŠ åˆ°mapä¸­
+                    String alipayCertSNNew = getCertSN(alipayPublicCertNew);
+                    this.alipayPublicCertMap.put(alipayCertSNNew, alipayPublicCertNew);
+                    PublicKey publicKey = alipayPublicCertNew.getPublicKey();
+                    String alipayPublicKeyNew = Base64.encodeBase64String(publicKey.getEncoded());
+                    this.alipayPublicKeyMap.put(alipayCertSNNew, alipayPublicKeyNew);
+
+                } catch (CertificateException e) {
+                    throw new AlipayApiException(e);
+                } finally {
+                    try {
+                        if (inputStream != null) {
+                            inputStream.close();
+                        }
+                    } catch (IOException e) {
+                        throw new AlipayApiException(e);
+                    }
+                }
+            } else if (!alipayPublicKeyMap.containsKey(certItem.getCert())) {
+                PublicKey publicKey = alipayPublicCertMap.get(certItem.getCert()).getPublicKey();
+                this.alipayPublicKeyMap.put(certItem.getCert(), Base64.encodeBase64String(publicKey.getEncoded()));
+            }
+
+            // é’ˆå¯¹æˆåŠŸç»“æœä¸”æœ‰æ”¯ä»˜å®å…¬é’¥çš„è¿›è¡ŒéªŒç­¾
+            if (alipayPublicCertMap.containsKey(certItem.getCert())) {
+                alipayPublicKey = this.alipayPublicKeyMap.get(certItem.getCert());
+                if (responseIsSucess
+                        || (!responseIsSucess && !StringUtils.isEmpty(certItem.getSign()))) {
+                    signChecker = new DefaultSignChecker(alipayPublicKey);
+                    boolean rsaCheckContent = signChecker.checkCert(certItem.getSignSourceDate(),
+                            certItem.getSign(), this.signType, this.charset, alipayPublicKey);
+                    if (!rsaCheckContent) {
+
+                        // é’ˆå¯¹JSON \/é—®é¢˜ï¼Œæ›¿æ¢/åå†å°è¯•åšä¸€æ¬¡éªŒè¯
+                        if (!StringUtils.isEmpty(certItem.getSignSourceDate())
+                                && certItem.getSignSourceDate().contains("\\/")) {
+                            String srouceData = certItem.getSignSourceDate().replace("\\/", "/");
+
+                            boolean jsonCheck = getSignChecker().check(srouceData, certItem.getSign(),
+                                    this.signType, this.charset);
+                            if (!jsonCheck) {
+                                throw new AlipayApiException(
+                                        "cert check fail: check Cert and Data Failï¼JSON alsoï¼");
+                            }
+                        } else {
+
+                            throw new AlipayApiException("cert check fail: check Cert and Data Fail!");
+                        }
+                    }
+                }
+            } else {
+
+                throw new AlipayApiException("cert check fail: check Cert and Data Fail! CertSN non-existent");
+            }
+        }
+
+    }
+
     public <T extends AlipayResponse> T execute(AlipayRequest<T> request) throws AlipayApiException {
         return execute(request, null);
     }
@@ -112,16 +394,16 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
         long beginTime = System.currentTimeMillis();
 
-        //·¢ËÍÇëÇó
+        //å‘é€è¯·æ±‚
         Map<String, Object> rt = doPost(request);
         if (rt == null) {
             return null;
         }
         Map<String, Long> costTimeMap = new HashMap<String, Long>();
         if (rt.containsKey("prepareTime")) {
-            costTimeMap.put("prepareCostTime", (Long)(rt.get("prepareTime")) - beginTime);
+            costTimeMap.put("prepareCostTime", (Long) (rt.get("prepareTime")) - beginTime);
             if (rt.containsKey("requestTime")) {
-                costTimeMap.put("requestCostTime", (Long)(rt.get("requestTime")) - (Long)(rt.get("prepareTime")));
+                costTimeMap.put("requestCostTime", (Long) (rt.get("requestTime")) - (Long) (rt.get("prepareTime")));
             }
         }
 
@@ -135,21 +417,21 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         BatchAlipayResponse batchAlipayResponse = null;
         try {
 
-            // ÈôĞèÒª½âÃÜÔòÏÈ½âÃÜ
+            // è‹¥éœ€è¦è§£å¯†åˆ™å…ˆè§£å¯†
             ResponseEncryptItem responseItem = decryptResponse(request, rt, parser);
 
-            // ½âÎöÊµ¼Ê´®
+            // è§£æå®é™…ä¸²
             batchAlipayResponse = parser.parse(responseItem.getRealContent());
             batchAlipayResponse.setBody(responseItem.getRealContent());
 
-            // ÑéÇ©ÊÇ¶ÔÇëÇó·µ»ØÔ­Ê¼´®
+            // éªŒç­¾æ˜¯å¯¹è¯·æ±‚è¿”å›åŸå§‹ä¸²
             checkResponseSign(request, parser, responseItem.getRespContent(), batchAlipayResponse.isSuccess());
 
             if (costTimeMap.containsKey("requestCostTime")) {
-                costTimeMap.put("postCostTime", System.currentTimeMillis() - (Long)(rt.get("requestTime")));
+                costTimeMap.put("postCostTime", System.currentTimeMillis() - (Long) (rt.get("requestTime")));
             }
 
-            // ¹¹ÔìÏìÓ¦½âÊÍÆ÷
+            // æ„é€ å“åº”è§£é‡Šå™¨
             List<AlipayParser<?>> parserList = new ArrayList<AlipayParser<?>>();
             List<AlipayRequestWrapper> requestList = request.getRequestList();
             if (AlipayConstants.FORMAT_XML.equals(this.format)) {
@@ -162,12 +444,12 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                 }
             }
 
-            //ÅúÁ¿µ÷ÓÃÊ§°Ü£¬Ö±½Ó·µ»Ø
+            //æ‰¹é‡è°ƒç”¨å¤±è´¥ï¼Œç›´æ¥è¿”å›
             if (!batchAlipayResponse.isSuccess()) {
                 return batchAlipayResponse;
             }
             String[] responseArray = batchAlipayResponse.getResponseBody().split(BATCH_API_DEFAULT_SPLIT);
-            //Ñ­»·½âÎöÒµÎñAPIÏìÓ¦
+            //å¾ªç¯è§£æä¸šåŠ¡APIå“åº”
             for (int index = 0; index < responseArray.length; index++) {
                 AlipayResponse alipayResponse = parserList.get(index).parse(responseArray[index]);
                 alipayResponse.setBody(responseArray[index]);
@@ -198,7 +480,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
         String url = getRequestUrl(requestHolder);
 
-        // ´òÓ¡ÍêÕûÇëÇó±¨ÎÄ
+        // æ‰“å°å®Œæ•´è¯·æ±‚æŠ¥æ–‡
         if (AlipayLogger.isBizDebugEnabled()) {
             AlipayLogger.logBizDebug(getRedirectUrl(requestHolder));
         }
@@ -207,7 +489,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         String rsp = null;
         try {
             rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
-                connectTimeout, readTimeout, proxyHost, proxyPort);
+                    connectTimeout, readTimeout, proxyHost, proxyPort);
         } catch (IOException e) {
             throw new AlipayApiException(e);
         }
@@ -221,23 +503,24 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     /**
-     * ×é×°ÅúÁ¿ÇëÇó½Ó¿Ú²ÎÊı£¬´¦Àí¼ÓÃÜ¡¢Ç©ÃûÂß¼­
+     * ç»„è£…æ‰¹é‡è¯·æ±‚æ¥å£å‚æ•°ï¼Œå¤„ç†åŠ å¯†ã€ç­¾åé€»è¾‘
      *
      * @param request
      * @return
      * @throws AlipayApiException
      */
-    private <T extends AlipayResponse> RequestParametersHolder getRequestHolderWithSign(BatchAlipayRequest request) throws AlipayApiException {
+    private <T extends AlipayResponse> RequestParametersHolder getRequestHolderWithSign(BatchAlipayRequest request)
+            throws AlipayApiException {
 
         List<AlipayRequestWrapper> requestList = request.getRequestList();
-        //Ğ£Ñé½Ó¿ÚÁĞ±í·Ç¿Õ
+        //æ ¡éªŒæ¥å£åˆ—è¡¨éç©º
         if (requestList == null || requestList.isEmpty()) {
             throw new AlipayApiException("40", "client-error:api request list is empty");
         }
 
         RequestParametersHolder requestHolder = new RequestParametersHolder();
 
-        //Ìí¼ÓĞ­Òé±ØĞë²ÎÊı
+        //æ·»åŠ åè®®å¿…é¡»å‚æ•°
         AlipayHashMap protocalMustParams = new AlipayHashMap();
         protocalMustParams.put(AlipayConstants.METHOD, request.getApiMethodName());
         protocalMustParams.put(AlipayConstants.APP_ID, this.appId);
@@ -249,7 +532,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
             protocalMustParams.put(AlipayConstants.ENCRYPT_TYPE, this.encryptType);
         }
 
-        //Ìí¼ÓĞ­Òé¿ÉÑ¡²ÎÊı
+        //æ·»åŠ åè®®å¯é€‰å‚æ•°
         AlipayHashMap protocalOptParams = new AlipayHashMap();
         protocalOptParams.put(AlipayConstants.FORMAT, format);
         protocalOptParams.put(AlipayConstants.ALIPAY_SDK, AlipayConstants.SDK_VERSION);
@@ -261,12 +544,12 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         protocalMustParams.put(AlipayConstants.TIMESTAMP, df.format(new Date(timestamp)));
         requestHolder.setProtocalMustParams(protocalMustParams);
 
-        //ÉèÖÃÒµÎñ²ÎÊı
+        //è®¾ç½®ä¸šåŠ¡å‚æ•°
         AlipayHashMap appParams = new AlipayHashMap();
 
-        //¹¹ÔìÇëÇóÖ÷Ìâ
+        //æ„é€ è¯·æ±‚ä¸»é¢˜
         StringBuilder requestBody = new StringBuilder();
-        // ×é×°Ã¿¸öAPIµÄÇëÇó²ÎÊı
+        // ç»„è£…æ¯ä¸ªAPIçš„è¯·æ±‚å‚æ•°
         for (int index = 0; index < requestList.size(); index++) {
             AlipayRequestWrapper alipayRequestWrapper = requestList.get(index);
             AlipayRequest alipayRequest = alipayRequestWrapper.getAlipayRequest();
@@ -281,16 +564,16 @@ public abstract class AbstractAlipayClient implements AlipayClient {
             apiParams.put(AlipayConstants.TERMINAL_TYPE, alipayRequest.getTerminalType());
             apiParams.put(AlipayConstants.BATCH_REQUEST_ID, String.valueOf(index));
 
-            // ½öµ±API°üº¬biz_content²ÎÊıÇÒÖµÎª¿ÕÊ±£¬ĞòÁĞ»¯bizModelÌî³äbizContent
+            // ä»…å½“APIåŒ…å«biz_contentå‚æ•°ä¸”å€¼ä¸ºç©ºæ—¶ï¼Œåºåˆ—åŒ–bizModelå¡«å……bizContent
             try {
                 if (alipayRequest.getClass().getMethod("getBizContent") != null
-                    && StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))
-                    && alipayRequest.getBizModel() != null) {
+                        && StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))
+                        && alipayRequest.getBizModel() != null) {
                     apiParams.put(AlipayConstants.BIZ_CONTENT_KEY,
-                        new JSONWriter().write(alipayRequest.getBizModel(), true));
+                            new JSONWriter().write(alipayRequest.getBizModel(), true));
                 }
             } catch (NoSuchMethodException e) {
-                // ÕÒ²»µ½getBizContentÔòÊ²Ã´¶¼²»×ö
+                // æ‰¾ä¸åˆ°getBizContentåˆ™ä»€ä¹ˆéƒ½ä¸åš
             } catch (SecurityException e) {
                 AlipayLogger.logBizError(e);
             }
@@ -301,22 +584,22 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         }
         appParams.put(AlipayConstants.BIZ_CONTENT_KEY, requestBody.toString());
 
-        // Ö»ÓĞĞÂ½Ó¿ÚºÍÉèÖÃÃÜÔ¿²ÅÄÜÖ§³Ö¼ÓÃÜ
+        // åªæœ‰æ–°æ¥å£å’Œè®¾ç½®å¯†é’¥æ‰èƒ½æ”¯æŒåŠ å¯†
         if (request.isNeedEncrypt()) {
 
             if (StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))) {
 
-                throw new AlipayApiException("µ±Ç°API²»Ö§³Ö¼ÓÃÜÇëÇó");
+                throw new AlipayApiException("å½“å‰APIä¸æ”¯æŒåŠ å¯†è¯·æ±‚");
             }
 
-            // ĞèÒª¼ÓÃÜ±ØĞëÉèÖÃÃÜÔ¿ºÍ¼ÓÃÜËã·¨
+            // éœ€è¦åŠ å¯†å¿…é¡»è®¾ç½®å¯†é’¥å’ŒåŠ å¯†ç®—æ³•
             if (StringUtils.isEmpty(this.encryptType) || getEncryptor() == null) {
 
-                throw new AlipayApiException("APIÇëÇóÒªÇó¼ÓÃÜ£¬Ôò±ØĞëÉèÖÃÃÜÔ¿ÀàĞÍºÍ¼ÓÃÜÆ÷");
+                throw new AlipayApiException("APIè¯·æ±‚è¦æ±‚åŠ å¯†ï¼Œåˆ™å¿…é¡»è®¾ç½®å¯†é’¥ç±»å‹å’ŒåŠ å¯†å™¨");
             }
 
             String encryptContent = getEncryptor().encrypt(
-                appParams.get(AlipayConstants.BIZ_CONTENT_KEY), this.encryptType, this.charset);
+                    appParams.get(AlipayConstants.BIZ_CONTENT_KEY), this.encryptType, this.charset);
 
             appParams.put(AlipayConstants.BIZ_CONTENT_KEY, encryptContent);
         }
@@ -327,7 +610,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
             String signContent = AlipaySignature.getSignatureContent(requestHolder);
             protocalMustParams.put(AlipayConstants.SIGN,
-                getSigner().sign(signContent, this.signType, charset));
+                    getSigner().sign(signContent, this.signType, charset));
 
         } else {
             protocalMustParams.put(AlipayConstants.SIGN, "");
@@ -341,8 +624,8 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
     public <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request,
                                                     String httpMethod) throws AlipayApiException {
-        RequestParametersHolder requestHolder = getRequestHolderWithSign(request, null, null);
-        // ´òÓ¡ÍêÕûÇëÇó±¨ÎÄ
+        RequestParametersHolder requestHolder = getRequestHolderWithSign(request, null, null, this.appCertSN);
+        // æ‰“å°å®Œæ•´è¯·æ±‚æŠ¥æ–‡
         if (AlipayLogger.isBizDebugEnabled()) {
             AlipayLogger.logBizDebug(getRedirectUrl(requestHolder));
         }
@@ -365,8 +648,8 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     public <T extends AlipayResponse> T sdkExecute(AlipayRequest<T> request) throws AlipayApiException {
-        RequestParametersHolder requestHolder = getRequestHolderWithSign(request, null, null);
-        // ´òÓ¡ÍêÕûÇëÇó±¨ÎÄ
+        RequestParametersHolder requestHolder = getRequestHolderWithSign(request, null, null, this.appCertSN);
+        // æ‰“å°å®Œæ•´è¯·æ±‚æŠ¥æ–‡
         if (AlipayLogger.isBizDebugEnabled()) {
             AlipayLogger.logBizDebug(getSdkParams(requestHolder));
         }
@@ -392,7 +675,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
             T request = requsetClazz.newInstance();
             Class<TR> responseClazz = request.getResponseClass();
 
-            //resultÎª¿ÕÖ±½Ó·µ»ØSYSTEM_ERROR
+            //resultä¸ºç©ºç›´æ¥è¿”å›SYSTEM_ERROR
             if (StringUtils.isEmpty(rsp)) {
                 tRsp = responseClazz.newInstance();
                 tRsp.setCode("20000");
@@ -406,11 +689,11 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                     parser = new ObjectJsonParser<TR>(responseClazz);
                 }
 
-                // ½âÎöÊµ¼Ê´®
+                // è§£æå®é™…ä¸²
                 tRsp = parser.parse(rsp);
                 tRsp.setBody(rsp);
 
-                // ÑéÇ©ÊÇ¶ÔÇëÇó·µ»ØÔ­Ê¼´®
+                // éªŒç­¾æ˜¯å¯¹è¯·æ±‚è¿”å›åŸå§‹ä¸²
                 checkResponseSign(request, parser, rsp, tRsp.isSuccess());
                 if (!tRsp.isSuccess()) {
                     AlipayLogger.logBizError(rsp);
@@ -433,21 +716,23 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     /**
-     * ×é×°½Ó¿Ú²ÎÊı£¬´¦Àí¼ÓÃÜ¡¢Ç©ÃûÂß¼­
+     * ç»„è£…æ¥å£å‚æ•°ï¼Œå¤„ç†åŠ å¯†ã€ç­¾åé€»è¾‘
      *
      * @param request
      * @param accessToken
      * @param appAuthToken
+     * @param appCertSN    åº”ç”¨è¯ä¹¦åºåˆ—å·
      * @return
      * @throws AlipayApiException
      */
     private <T extends AlipayResponse> RequestParametersHolder getRequestHolderWithSign(AlipayRequest<?> request,
                                                                                         String accessToken,
-                                                                                        String appAuthToken) throws AlipayApiException {
+                                                                                        String appAuthToken, String appCertSN)
+            throws AlipayApiException {
         RequestParametersHolder requestHolder = new RequestParametersHolder();
         AlipayHashMap appParams = new AlipayHashMap(request.getTextParams());
 
-        // ½öµ±API°üº¬biz_content²ÎÊıÇÒÖµÎª¿ÕÊ±£¬ĞòÁĞ»¯bizModelÌî³äbizContent
+        // ä»…å½“APIåŒ…å«biz_contentå‚æ•°ä¸”å€¼ä¸ºç©ºæ—¶ï¼Œåºåˆ—åŒ–bizModelå¡«å……bizContent
         try {
             if (request.getClass().getMethod("getBizContent") != null
                     && StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))
@@ -456,23 +741,23 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                         new JSONWriter().write(request.getBizModel(), true));
             }
         } catch (NoSuchMethodException e) {
-            // ÕÒ²»µ½getBizContentÔòÊ²Ã´¶¼²»×ö
+            // æ‰¾ä¸åˆ°getBizContentåˆ™ä»€ä¹ˆéƒ½ä¸åš
         } catch (SecurityException e) {
             AlipayLogger.logBizError(e);
         }
 
-        // Ö»ÓĞĞÂ½Ó¿ÚºÍÉèÖÃÃÜÔ¿²ÅÄÜÖ§³Ö¼ÓÃÜ
+        // åªæœ‰æ–°æ¥å£å’Œè®¾ç½®å¯†é’¥æ‰èƒ½æ”¯æŒåŠ å¯†
         if (request.isNeedEncrypt()) {
 
             if (StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))) {
 
-                throw new AlipayApiException("µ±Ç°API²»Ö§³Ö¼ÓÃÜÇëÇó");
+                throw new AlipayApiException("å½“å‰APIä¸æ”¯æŒåŠ å¯†è¯·æ±‚");
             }
 
-            // ĞèÒª¼ÓÃÜ±ØĞëÉèÖÃÃÜÔ¿ºÍ¼ÓÃÜËã·¨
+            // éœ€è¦åŠ å¯†å¿…é¡»è®¾ç½®å¯†é’¥å’ŒåŠ å¯†ç®—æ³•
             if (StringUtils.isEmpty(this.encryptType) || getEncryptor() == null) {
 
-                throw new AlipayApiException("APIÇëÇóÒªÇó¼ÓÃÜ£¬Ôò±ØĞëÉèÖÃÃÜÔ¿ÀàĞÍºÍ¼ÓÃÜÆ÷");
+                throw new AlipayApiException("APIè¯·æ±‚è¦æ±‚åŠ å¯†ï¼Œåˆ™å¿…é¡»è®¾ç½®å¯†é’¥ç±»å‹å’ŒåŠ å¯†å™¨");
             }
 
             String encryptContent = getEncryptor().encrypt(
@@ -505,6 +790,14 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         if (request.isNeedEncrypt()) {
             protocalMustParams.put(AlipayConstants.ENCRYPT_TYPE, this.encryptType);
         }
+        //å¦‚æœåº”ç”¨è¯ä¹¦åºåˆ—å·éç©ºï¼Œæ·»åŠ åº”ç”¨è¯ä¹¦åºåˆ—å·
+        if (!StringUtils.isEmpty(appCertSN)) {
+            protocalMustParams.put(AlipayConstants.APP_CERT_SN, appCertSN);
+        }
+        //å¦‚æœæ ¹è¯ä¹¦åºåˆ—å·éç©ºï¼Œæ·»åŠ æ ¹è¯ä¹¦åºåˆ—å·
+        if (!StringUtils.isEmpty(this.alipayRootCertSN)) {
+            protocalMustParams.put(AlipayConstants.ALIPAY_ROOT_CERT_SN, this.alipayRootCertSN);
+        }
 
         Long timestamp = System.currentTimeMillis();
         DateFormat df = new SimpleDateFormat(AlipayConstants.DATE_TIME_FORMAT);
@@ -532,7 +825,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     /**
-     * »ñÈ¡POSTÇëÇóµÄbase url
+     * è·å–POSTè¯·æ±‚çš„base url
      *
      * @param requestHolder
      * @return
@@ -559,7 +852,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     /**
-     * GETÄ£Ê½ÏÂ»ñÈ¡Ìø×ªÁ´½Ó
+     * GETæ¨¡å¼ä¸‹è·å–è·³è½¬é“¾æ¥
      *
      * @param requestHolder
      * @return
@@ -580,7 +873,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     /**
-     * Æ´×°sdkµ÷ÓÃÊ±Ëù´«²ÎÊı
+     * æ‹¼è£…sdkè°ƒç”¨æ—¶æ‰€ä¼ å‚æ•°
      *
      * @param requestHolder
      * @return
@@ -604,35 +897,35 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                                                   String appAuthToken) throws AlipayApiException {
 
         long beginTime = System.currentTimeMillis();
-        Map<String, Object> rt = doPost(request, authToken, appAuthToken);
+        //é€‚é…æ–°å¢è¯ä¹¦åºåˆ—å·çš„è¯·æ±‚
+        Map<String, Object> rt = doPost(request, authToken, appAuthToken, null);
         if (rt == null) {
             return null;
         }
         Map<String, Long> costTimeMap = new HashMap<String, Long>();
         if (rt.containsKey("prepareTime")) {
-            costTimeMap.put("prepareCostTime", (Long)(rt.get("prepareTime")) - beginTime);
+            costTimeMap.put("prepareCostTime", (Long) (rt.get("prepareTime")) - beginTime);
             if (rt.containsKey("requestTime")) {
-                costTimeMap.put("requestCostTime", (Long)(rt.get("requestTime")) - (Long)(rt.get("prepareTime")));
+                costTimeMap.put("requestCostTime", (Long) (rt.get("requestTime")) - (Long) (rt.get("prepareTime")));
             }
         }
-
 
         T tRsp = null;
 
         try {
 
-            // ÈôĞèÒª½âÃÜÔòÏÈ½âÃÜ
+            // è‹¥éœ€è¦è§£å¯†åˆ™å…ˆè§£å¯†
             ResponseEncryptItem responseItem = decryptResponse(request, rt, parser);
 
-            // ½âÎöÊµ¼Ê´®
+            // è§£æå®é™…ä¸²
             tRsp = parser.parse(responseItem.getRealContent());
             tRsp.setBody(responseItem.getRealContent());
 
-            // ÑéÇ©ÊÇ¶ÔÇëÇó·µ»ØÔ­Ê¼´®
+            // éªŒç­¾æ˜¯å¯¹è¯·æ±‚è¿”å›åŸå§‹ä¸²
             checkResponseSign(request, parser, responseItem.getRespContent(), tRsp.isSuccess());
 
             if (costTimeMap.containsKey("requestCostTime")) {
-                costTimeMap.put("postCostTime", System.currentTimeMillis() - (Long)(rt.get("requestTime")));
+                costTimeMap.put("postCostTime", System.currentTimeMillis() - (Long) (rt.get("requestTime")));
             }
         } catch (RuntimeException e) {
 
@@ -654,24 +947,23 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     /**
-     *
-     *
      * @param request
      * @param accessToken
      * @param appAuthToken
+     * @param appCertSN    åº”ç”¨è¯ä¹¦åºåˆ—å·
      * @return
      * @throws AlipayApiException
      */
     private <T extends AlipayResponse> Map<String, Object> doPost(AlipayRequest<T> request,
                                                                   String accessToken,
-                                                                  String appAuthToken) throws AlipayApiException {
+                                                                  String appAuthToken, String appCertSN) throws AlipayApiException {
         Map<String, Object> result = new HashMap<String, Object>();
         RequestParametersHolder requestHolder = getRequestHolderWithSign(request, accessToken,
-                appAuthToken);
+                appAuthToken, appCertSN);
 
         String url = getRequestUrl(requestHolder);
 
-        // ´òÓ¡ÍêÕûÇëÇó±¨ÎÄ
+        // æ‰“å°å®Œæ•´è¯·æ±‚æŠ¥æ–‡
         if (AlipayLogger.isBizDebugEnabled()) {
             AlipayLogger.logBizDebug(getRedirectUrl(requestHolder));
         }
@@ -688,6 +980,11 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                 rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
                         connectTimeout, readTimeout, proxyHost, proxyPort);
             }
+        } catch (SSLException e) {
+            if (e.getMessage().contains("the trustAnchors parameter must be non-empty")) {
+                throw new AlipayApiException("è¯·æ£€æŸ¥CAè¯ä¹¦æ˜¯å¦è®¾ç½®æ­£ç¡®ï¼ˆJREä¸»ç›®å½•ä¸‹çš„lib/security/cacertsæ˜¯å¦å­˜åœ¨ï¼‰ã€‚" + e.getMessage(), e);
+            }
+            throw new AlipayApiException(e);
         } catch (IOException e) {
             throw new AlipayApiException(e);
         }
@@ -701,7 +998,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     /**
-     *  ¼ì²éÏìÓ¦Ç©Ãû
+     * æ£€æŸ¥å“åº”ç­¾å
      *
      * @param request
      * @param parser
@@ -713,7 +1010,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                                                               AlipayParser<T> parser,
                                                               String responseBody,
                                                               boolean responseIsSucess) throws AlipayApiException {
-        // Õë¶Ô³É¹¦½á¹ûÇÒÓĞÖ§¸¶±¦¹«Ô¿µÄ½øĞĞÑéÇ©
+        // é’ˆå¯¹æˆåŠŸç»“æœä¸”æœ‰æ”¯ä»˜å®å…¬é’¥çš„è¿›è¡ŒéªŒç­¾
         if (getSignChecker() != null) {
 
             SignItem signItem = parser.getSignItem(request, responseBody);
@@ -731,7 +1028,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
                 if (!rsaCheckContent) {
 
-                    // Õë¶ÔJSON \/ÎÊÌâ£¬Ìæ»»/ºóÔÙ³¢ÊÔ×öÒ»´ÎÑéÖ¤
+                    // é’ˆå¯¹JSON \/é—®é¢˜ï¼Œæ›¿æ¢/åå†å°è¯•åšä¸€æ¬¡éªŒè¯
                     if (!StringUtils.isEmpty(signItem.getSignSourceDate())
                             && signItem.getSignSourceDate().contains("\\/")) {
 
@@ -742,7 +1039,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
                         if (!jsonCheck) {
                             throw new AlipayApiException(
-                                    "sign check fail: check Sign and Data Fail£¡JSON also£¡");
+                                    "sign check fail: check Sign and Data Failï¼JSON alsoï¼");
                         }
                     } else {
 
@@ -755,7 +1052,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     /**
-     *  ½âÃÜÏìÓ¦
+     * è§£å¯†å“åº”
      *
      * @param request
      * @param rt
@@ -771,15 +1068,15 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
         String realBody = null;
 
-        // ½âÃÜ
+        // è§£å¯†
         if (request.isNeedEncrypt()) {
 
-            // ½âÃÜÔ­Ê¼´®
+            // è§£å¯†åŸå§‹ä¸²
             realBody = parser.decryptSourceData(request, responseBody, this.format,
                     getDecryptor(), this.encryptType, this.charset);
         } else {
 
-            // ½âÎöÔ­ÄÚÈİ´®
+            // è§£æåŸå†…å®¹ä¸²
             realBody = (String) rt.get("rsp");
         }
 
@@ -829,6 +1126,14 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
     void setProxyPort(int proxyPort) {
         this.proxyPort = proxyPort;
+    }
+
+    void setCert(X509Certificate cert) {
+        this.cert = cert;
+    }
+
+    void setAlipayPublicCertMap(ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap) {
+        this.alipayPublicCertMap = alipayPublicCertMap;
     }
 
     public abstract Signer getSigner();

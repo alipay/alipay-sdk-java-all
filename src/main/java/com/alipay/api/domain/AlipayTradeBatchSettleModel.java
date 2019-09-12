@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量请求结算
  *
  * @author auto create
- * @since 1.0, 2019-08-05 21:09:33
+ * @since 1.0, 2019-09-12 18:35:43
  */
 public class AlipayTradeBatchSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5571117933464411623L;
+	private static final long serialVersionUID = 1519613765741889326L;
 
 	/**
 	 * 收单产品码，商家和支付宝签约的产品码
@@ -29,7 +29,7 @@ public class AlipayTradeBatchSettleModel extends AlipayObject {
 	private String extendParams;
 
 	/**
-	 * 结算请求外部流水号，32个字符以内、可包含字母、数字、下划线；需保证在商户端不重复
+	 * 结算请求外部流水号，32个字符以内、可包含字母、数字、下划线；需保证在商户端不重复，如果重复则返回该流水号对应的结算单据的状态。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.cardbarcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-28 10:39:17
+ * @since 1.0, 2019-08-29 11:19:32
  */
 public class AlipayEcoMycarParkingCardbarcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1373247421756224721L;
+	private static final long serialVersionUID = 5315741421515156535L;
 
 	/** 
 	 * 停车车卡对应二维码列表

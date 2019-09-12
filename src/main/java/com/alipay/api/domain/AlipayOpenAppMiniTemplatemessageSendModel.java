@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7533295898577496479L;
+	private static final long serialVersionUID = 5125697326142368779L;
 
 	/**
 	 * 开发者需要发送模板消息中的自定义部分来替换模板的占位符

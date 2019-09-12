@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商业订单咨询
  *
  * @author auto create
- * @since 1.0, 2019-03-12 10:40:16
+ * @since 1.0, 2019-08-17 17:36:35
  */
 public class AlipayBusinessOrderConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2511965271882759391L;
+	private static final long serialVersionUID = 8464759236163697266L;
 
 	/**
 	 * 买家识别信息。

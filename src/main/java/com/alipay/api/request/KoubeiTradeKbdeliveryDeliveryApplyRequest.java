@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.trade.kbdelivery.delivery.apply request
  * 
  * @author auto create
- * @since 1.0, 2019-07-10 16:20:01
+ * @since 1.0, 2019-09-03 11:32:54
  */
 public class KoubeiTradeKbdeliveryDeliveryApplyRequest implements AlipayRequest<KoubeiTradeKbdeliveryDeliveryApplyResponse> {
 

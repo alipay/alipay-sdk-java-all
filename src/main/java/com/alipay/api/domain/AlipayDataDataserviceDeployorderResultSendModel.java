@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 部署单处理反馈参数
  *
  * @author auto create
- * @since 1.0, 2018-01-22 10:50:53
+ * @since 1.0, 2019-08-14 15:14:01
  */
 public class AlipayDataDataserviceDeployorderResultSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3376578873946248321L;
+	private static final long serialVersionUID = 8699759576448513538L;
 
 	/**
 	 * 部署单记录id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销明细
  *
  * @author auto create
- * @since 1.0, 2019-02-27 20:49:17
+ * @since 1.0, 2019-08-17 17:42:43
  */
 public class PromotionDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3791526496792255544L;
+	private static final long serialVersionUID = 1459658381667976833L;
 
 	/**
 	 * 营销ID。若营销为平台红包时，由于平台红包聚合返回，则营销可能id为空

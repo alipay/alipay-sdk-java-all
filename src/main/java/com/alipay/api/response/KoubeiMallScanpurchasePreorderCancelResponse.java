@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.mall.scanpurchase.preorder.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-31 16:25:00
+ * @since 1.0, 2019-09-07 13:57:14
  */
 public class KoubeiMallScanpurchasePreorderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7152295674352352511L;
+	private static final long serialVersionUID = 8849923652647689747L;
 
 	
 

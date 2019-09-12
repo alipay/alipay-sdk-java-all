@@ -1,24 +1,23 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api;
 
 /**
- * ¼ÓÃÜÆ÷½Ó¿Ú
+ * åŠ å¯†å™¨æ¥å£
  *
  * @author liuqun.lq
- * @version $Id: Encryptor.java, v 0.1 2018Äê07ÔÂ03ÈÕ 11:41 liuqun.lq Exp $
+ * @version $Id: Encryptor.java, v 0.1 2018å¹´07æœˆ03æ—¥ 11:41 liuqun.lq Exp $
  */
 public interface Encryptor {
 
     /**
-     * ¶ÔÄÚÈİ¼ÓÃÜ
+     * å¯¹å†…å®¹åŠ å¯†
      *
-     * @param sourceContent ´ı¼ÓÇ©ÄÚÈİ
-     * @param encryptType ¼ÓÃÜËã·¨ÀàĞÍ£¬ÈçAES
-     * @param charset ×Ö·û¼¯
-     * @return ¼ÓÃÜºóÄÚÈİ
+     * @param sourceContent å¾…åŠ ç­¾å†…å®¹
+     * @param encryptType   åŠ å¯†ç®—æ³•ç±»å‹ï¼Œå¦‚AES
+     * @param charset       å­—ç¬¦é›†
+     * @return åŠ å¯†åå†…å®¹
      */
     String encrypt(String sourceContent, String encryptType, String charset);
 }

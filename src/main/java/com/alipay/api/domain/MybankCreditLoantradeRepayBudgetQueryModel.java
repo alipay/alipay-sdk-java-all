@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户主动还款试算
  *
  * @author auto create
- * @since 1.0, 2019-06-18 15:31:43
+ * @since 1.0, 2019-08-30 17:00:41
  */
 public class MybankCreditLoantradeRepayBudgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4583786228253693786L;
+	private static final long serialVersionUID = 1789257255773934746L;
 
 	/**
 	 * 申请还款金额，如果budget_type为TOTAL_AMT，则填写还款总金额，如果为PRIN_AMT则填写还款本金
@@ -20,7 +20,10 @@ public class MybankCreditLoantradeRepayBudgetQueryModel extends AlipayObject {
 	private String applyRepayPrin;
 
 	/**
-	 * TOTAL_AMT：总额还款，PRIN_AMT：本金还款，如果为空，默认为本金还款
+	 * TOTAL_AMT：总额试算
+PRIN_AMT：本金试算
+CLEAR_AMT：结清试算
+如果为空，默认为本金还款
 	 */
 	@ApiField("budget_type")
 	private String budgetType;
@@ -54,6 +57,15 @@ public class MybankCreditLoantradeRepayBudgetQueryModel extends AlipayObject {
 	 */
 	@ApiField("loan_ar_no")
 	private String loanArNo;
+
+	/**
+	 * 还款场景，
+主动还款 CUST_REPAY
+机构代客还款 ORG_REPAY
+默认值为主动还款
+	 */
+	@ApiField("repay_scene")
+	private String repayScene;
 
 	public String getApplyRepayPrin() {
 		return this.applyRepayPrin;
@@ -102,6 +114,13 @@ public class MybankCreditLoantradeRepayBudgetQueryModel extends AlipayObject {
 	}
 	public void setLoanArNo(String loanArNo) {
 		this.loanArNo = loanArNo;
+	}
+
+	public String getRepayScene() {
+		return this.repayScene;
+	}
+	public void setRepayScene(String repayScene) {
+		this.repayScene = repayScene;
 	}
 
 }

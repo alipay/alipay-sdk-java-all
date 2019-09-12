@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户画像信息，除基本信息，还支持会员等级、积分等画像信息。
  *
  * @author auto create
- * @since 1.0, 2019-02-27 20:49:21
+ * @since 1.0, 2019-08-17 17:45:10
  */
 public class UserProfileDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3772896447648896131L;
+	private static final long serialVersionUID = 7459216411167757968L;
 
 	/**
 	 * 用户ID

@@ -26,17 +26,18 @@
 package com.alipay.api.java_websocket;
 
 import com.alipay.api.java_websocket.drafts.Draft;
+import com.alipay.api.java_websocket.exceptions.InvalidDataException;
 import com.alipay.api.java_websocket.framing.Framedata;
 import com.alipay.api.java_websocket.framing.PingFrame;
+import com.alipay.api.java_websocket.framing.PongFrame;
+import com.alipay.api.java_websocket.handshake.ClientHandshake;
 import com.alipay.api.java_websocket.handshake.HandshakeImpl1Server;
 import com.alipay.api.java_websocket.handshake.ServerHandshake;
 import com.alipay.api.java_websocket.handshake.ServerHandshakeBuilder;
-import com.alipay.api.java_websocket.exceptions.InvalidDataException;
-import com.alipay.api.java_websocket.framing.PongFrame;
-import com.alipay.api.java_websocket.handshake.ClientHandshake;
 
 /**
- * This class default implements all methods of the WebSocketListener that can be overridden optionally when advances functionalities is needed.<br>
+ * This class default implements all methods of the WebSocketListener that can be overridden optionally when advances functionalities is
+ * needed.<br>
  **/
 public abstract class WebSocketAdapter implements WebSocketListener {
 
@@ -46,12 +47,13 @@ public abstract class WebSocketAdapter implements WebSocketListener {
      * @see WebSocketListener#onWebsocketHandshakeReceivedAsServer(WebSocket, Draft, ClientHandshake)
      */
 
-    public ServerHandshakeBuilder onWebsocketHandshakeReceivedAsServer(WebSocket conn, Draft draft, ClientHandshake request ) throws InvalidDataException {
+    public ServerHandshakeBuilder onWebsocketHandshakeReceivedAsServer(WebSocket conn, Draft draft, ClientHandshake request) throws
+            InvalidDataException {
         return new HandshakeImpl1Server();
     }
 
-
-    public void onWebsocketHandshakeReceivedAsClient( WebSocket conn, ClientHandshake request, ServerHandshake response ) throws InvalidDataException {
+    public void onWebsocketHandshakeReceivedAsClient(WebSocket conn, ClientHandshake request, ServerHandshake response) throws
+            InvalidDataException {
         //To overwrite
     }
 
@@ -61,19 +63,19 @@ public abstract class WebSocketAdapter implements WebSocketListener {
      * @see WebSocketListener#onWebsocketHandshakeSentAsClient(WebSocket, ClientHandshake)
      */
 
-    public void onWebsocketHandshakeSentAsClient( WebSocket conn, ClientHandshake request ) throws InvalidDataException {
+    public void onWebsocketHandshakeSentAsClient(WebSocket conn, ClientHandshake request) throws InvalidDataException {
         //To overwrite
     }
 
     /**
-     * This default implementation will send a pong in response to the received ping.
-     * The pong frame will have the same payload as the ping frame.
+     * This default implementation will send a pong in response to the received ping. The pong frame will have the same payload as the ping
+     * frame.
      *
      * @see WebSocketListener#onWebsocketPing(WebSocket, Framedata)
      */
 
-    public void onWebsocketPing( WebSocket conn, Framedata f ) {
-        conn.sendFrame( new PongFrame( (PingFrame)f ) );
+    public void onWebsocketPing(WebSocket conn, Framedata f) {
+        conn.sendFrame(new PongFrame((PingFrame) f));
     }
 
     /**
@@ -82,7 +84,7 @@ public abstract class WebSocketAdapter implements WebSocketListener {
      * @see WebSocketListener#onWebsocketPong(WebSocket, Framedata)
      */
 
-    public void onWebsocketPong( WebSocket conn, Framedata f ) {
+    public void onWebsocketPong(WebSocket conn, Framedata f) {
         //To overwrite
     }
 }

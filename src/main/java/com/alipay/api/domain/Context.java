@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息模板上下文，即模板中定义的参数及参数值
  *
  * @author auto create
- * @since 1.0, 2018-03-07 10:30:34
+ * @since 1.0, 2019-09-12 12:10:55
  */
 public class Context extends AlipayObject {
 
-	private static final long serialVersionUID = 3256261782455342977L;
+	private static final long serialVersionUID = 2472939437747586712L;
 
 	/**
-	 * 底部链接描述文字，如“查看详情”
+	 * 底部链接描述文字，如“查看详情”，最多能传8个汉字或16个英文字符，长度超出会报错
 	 */
 	@ApiField("action_name")
 	private String actionName;

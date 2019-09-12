@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-04-22 10:40:06
+ * @since 1.0, 2019-09-03 19:27:15
  */
 public class AlipayPcreditHuabeiAuthAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3794136471682474858L;
+	private static final long serialVersionUID = 5866462278229777416L;
 
 	/** 
 	 * 协议名称
@@ -22,7 +22,7 @@ public class AlipayPcreditHuabeiAuthAgreementQueryResponse extends AlipayRespons
 	private String agreementName;
 
 	/** 
-	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号。
+	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花芝轻会员协议号。
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -40,7 +40,7 @@ public class AlipayPcreditHuabeiAuthAgreementQueryResponse extends AlipayRespons
 	private String alipayUserId;
 
 	/** 
-	 * 花呗先享签约场景，商户和支付宝签约时确定，商户接入时需要咨询技术支持。
+	 * 花芝轻会员签约场景，商户和支付宝签约时确定，商户接入时需要咨询技术支持。
 	 */
 	@ApiField("auth_scene")
 	private String authScene;
@@ -58,19 +58,19 @@ public class AlipayPcreditHuabeiAuthAgreementQueryResponse extends AlipayRespons
 	private Date gmtSign;
 
 	/** 
-	 * 花呗先享协议解约时间。如果是解约状态，才返回该字段。
+	 * 花芝轻会员协议解约时间。如果是解约状态，才返回该字段。
 	 */
 	@ApiField("gmt_unsign")
 	private Date gmtUnsign;
 
 	/** 
-	 * 外部签约号，由商户提供，花呗先享协议中标识用户的唯一签约号（确保在商户系统中唯一）。由商户签约时传入，最终返回给商户。
+	 * 外部签约号，由商户提供，花芝轻会员协议中标识用户的唯一签约号（确保在商户系统中唯一）。由商户签约时传入，最终返回给商户。
 	 */
 	@ApiField("out_sign_no")
 	private String outSignNo;
 
 	/** 
-	 * 用户在本花呗先享协议中，剩余的总冻结额度（资金池总余额），数值能实时准确，可以用于核对。两位小数，单位元。
+	 * 用户在本花芝轻会员协议中，剩余的总冻结额度（资金池总余额），数值能实时准确，可以用于核对。两位小数，单位元。
 	 */
 	@ApiField("rest_freeze_amount")
 	private String restFreezeAmount;

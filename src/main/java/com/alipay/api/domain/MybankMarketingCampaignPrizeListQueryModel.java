@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户已拥有的奖品列表
  *
  * @author auto create
- * @since 1.0, 2017-09-21 18:35:44
+ * @since 1.0, 2019-08-23 14:23:40
  */
 public class MybankMarketingCampaignPrizeListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7115433983569597193L;
+	private static final long serialVersionUID = 5785731768898876194L;
 
 	/**
 	 * 银行参与者id，是在网商银行创建会员后生成的id，网商银行会员的唯一标识

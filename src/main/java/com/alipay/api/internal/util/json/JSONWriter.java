@@ -1,5 +1,10 @@
 package com.alipay.api.internal.util.json;
 
+import com.alipay.api.AlipayConstants;
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.internal.util.AlipayLogger;
+
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
@@ -12,17 +17,7 @@ import java.text.CharacterIterator;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.text.StringCharacterIterator;
-import java.util.Collection;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Stack;
-import java.util.TimeZone;
-
-import com.alipay.api.AlipayConstants;
-import com.alipay.api.internal.mapping.ApiField;
-import com.alipay.api.internal.mapping.ApiListField;
-import com.alipay.api.internal.util.AlipayLogger;
+import java.util.*;
 
 public class JSONWriter {
 
@@ -79,31 +74,24 @@ public class JSONWriter {
             add(null);
         } else {
             calls.push(object);
-            if (object instanceof Class<?>)
-                string(object);
-            else if (object instanceof Boolean)
+            if (object instanceof Class<?>) { string(object); } else if (object instanceof Boolean) {
                 bool(((Boolean) object).booleanValue());
-            else if (object instanceof Number)
+            } else if (object instanceof Number) {
                 add(object);
-            else if (object instanceof String)
+            } else if (object instanceof String) {
                 string(object);
-            else if (object instanceof Character)
+            } else if (object instanceof Character) {
                 string(object);
-            else if (object instanceof Map<?, ?>)
+            } else if (object instanceof Map<?, ?>) {
                 map((Map<?, ?>) object);
-            else if (object.getClass().isArray())
+            } else if (object.getClass().isArray()) {
                 array(object, isApiModel);
-            else if (object instanceof Iterator<?>)
+            } else if (object instanceof Iterator<?>) {
                 array((Iterator<?>) object, isApiModel);
-            else if (object instanceof Collection<?>)
+            } else if (object instanceof Collection<?>) {
                 array(((Collection<?>) object).iterator(), isApiModel);
-            else if (object instanceof Date)
-                date((Date) object);
-            else {
-                if (isApiModel)
-                    model(object);
-                else
-                    bean(object);
+            } else if (object instanceof Date) { date((Date) object); } else {
+                if (isApiModel) { model(object); } else { bean(object); }
             }
             calls.pop();
         }
@@ -113,8 +101,7 @@ public class JSONWriter {
         Iterator<Object> it = calls.iterator();
         while (it.hasNext()) {
             Object called = it.next();
-            if (object == called)
-                return true;
+            if (object == called) { return true; }
         }
         return false;
     }
@@ -131,13 +118,10 @@ public class JSONWriter {
                 String name = prop.getName();
                 Method accessor = prop.getReadMethod();
                 if ((emitClassName || !"class".equals(name)) && accessor != null) {
-                    if (!accessor.isAccessible())
-                        accessor.setAccessible(true);
+                    if (!accessor.isAccessible()) { accessor.setAccessible(true); }
                     Object value = accessor.invoke(object, (Object[]) null);
-                    if (value == null)
-                        continue;
-                    if (addedSomething)
-                        add(',');
+                    if (value == null) { continue; }
+                    if (addedSomething) { add(','); }
                     add(name, value);
                     addedSomething = true;
                 }
@@ -146,10 +130,8 @@ public class JSONWriter {
             for (int i = 0; i < ff.length; ++i) {
                 Field field = ff[i];
                 Object value = field.get(object);
-                if (value == null)
-                    continue;
-                if (addedSomething)
-                    add(',');
+                if (value == null) { continue; }
+                if (addedSomething) { add(','); }
                 add(field.getName(), value);
                 addedSomething = true;
             }
@@ -177,28 +159,22 @@ public class JSONWriter {
                 // 优先处理列表类型注解,非列表类型才处理字段注解
                 if (listField != null) {
                     PropertyDescriptor pd = new PropertyDescriptor(field.getName(),
-                        object.getClass());
+                            object.getClass());
                     Method accessor = pd.getReadMethod();
-                    if (!accessor.isAccessible())
-                        accessor.setAccessible(true);
+                    if (!accessor.isAccessible()) { accessor.setAccessible(true); }
                     Object value = accessor.invoke(object, (Object[]) null);
-                    if (value == null)
-                        continue;
-                    if (addedSomething)
-                        add(',');
+                    if (value == null) { continue; }
+                    if (addedSomething) { add(','); }
                     add(listField.value(), value, true);
                     addedSomething = true;
                 } else if (jsonField != null) {
                     PropertyDescriptor pd = new PropertyDescriptor(field.getName(),
-                        object.getClass());
+                            object.getClass());
                     Method accessor = pd.getReadMethod();
-                    if (!accessor.isAccessible())
-                        accessor.setAccessible(true);
+                    if (!accessor.isAccessible()) { accessor.setAccessible(true); }
                     Object value = accessor.invoke(object, (Object[]) null);
-                    if (value == null)
-                        continue;
-                    if (addedSomething)
-                        add(',');
+                    if (value == null) { continue; }
+                    if (addedSomething) { add(','); }
                     add(jsonField.value(), value, true);
                     addedSomething = true;
                 }
@@ -234,8 +210,7 @@ public class JSONWriter {
             value(e.getKey());
             add(":");
             value(e.getValue());
-            if (it.hasNext())
-                add(',');
+            if (it.hasNext()) { add(','); }
         }
         add("}");
     }
@@ -248,8 +223,7 @@ public class JSONWriter {
         add("[");
         while (it.hasNext()) {
             value(it.next(), isApiModel);
-            if (it.hasNext())
-                add(",");
+            if (it.hasNext()) { add(","); }
         }
         add("]");
     }
@@ -263,8 +237,7 @@ public class JSONWriter {
         int length = Array.getLength(object);
         for (int i = 0; i < length; ++i) {
             value(Array.get(object, i), isApiModel);
-            if (i < length - 1)
-                add(',');
+            if (i < length - 1) { add(','); }
         }
         add("]");
     }
@@ -287,23 +260,15 @@ public class JSONWriter {
         add('"');
         CharacterIterator it = new StringCharacterIterator(obj.toString());
         for (char c = it.first(); c != CharacterIterator.DONE; c = it.next()) {
-            if (c == '"')
-                add("\\\"");
-            else if (c == '\\')
-                add("\\\\");
-            else if (c == '/')
-                add("\\/");
-            else if (c == '\b')
+            if (c == '"') { add("\\\""); } else if (c == '\\') { add("\\\\"); } else if (c == '/') { add("\\/"); } else if (c == '\b') {
                 add("\\b");
-            else if (c == '\f')
-                add("\\f");
-            else if (c == '\n')
+            } else if (c
+                    == '\f') { add("\\f"); } else if (c == '\n') {
                 add("\\n");
-            else if (c == '\r')
-                add("\\r");
-            else if (c == '\t')
-                add("\\t");
-            else if (Character.isISOControl(c)) {
+            } else if (c
+                    == '\r') { add("\\r"); } else if (c
+                    == '\t') { add("\\t"); } else if (Character
+                    .isISOControl(c)) {
                 unicode(c);
             } else {
                 add(c);

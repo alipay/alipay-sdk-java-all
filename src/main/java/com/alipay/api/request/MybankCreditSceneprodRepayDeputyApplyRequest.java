@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.sceneprod.repay.deputy.apply request
  * 
  * @author auto create
- * @since 1.0, 2019-03-28 11:00:00
+ * @since 1.0, 2019-08-27 14:12:10
  */
 public class MybankCreditSceneprodRepayDeputyApplyRequest implements AlipayRequest<MybankCreditSceneprodRepayDeputyApplyResponse> {
 

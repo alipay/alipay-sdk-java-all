@@ -25,13 +25,13 @@
 
 package com.alipay.api.java_websocket.framing;
 
-import java.nio.ByteBuffer;
-
+import com.alipay.api.java_websocket.enums.Opcode;
 import com.alipay.api.java_websocket.exceptions.InvalidDataException;
+import com.alipay.api.java_websocket.exceptions.InvalidFrameException;
 import com.alipay.api.java_websocket.util.ByteBufferUtils;
 import com.alipay.api.java_websocket.util.Charsetfunctions;
-import com.alipay.api.java_websocket.enums.Opcode;
-import com.alipay.api.java_websocket.exceptions.InvalidFrameException;
+
+import java.nio.ByteBuffer;
 
 /**
  * Class to represent a close frame
@@ -39,113 +39,89 @@ import com.alipay.api.java_websocket.exceptions.InvalidFrameException;
 public class CloseFrame extends ControlFrame {
 
     /**
-     * indicates a normal closure, meaning whatever purpose the
-     * connection was established for has been fulfilled.
+     * indicates a normal closure, meaning whatever purpose the connection was established for has been fulfilled.
      */
-    public static final int NORMAL = 1000;
+    public static final int NORMAL               = 1000;
     /**
-     * 1001 indicates that an endpoint is "going away", such as a server
-     * going down, or a browser having navigated away from a page.
+     * 1001 indicates that an endpoint is "going away", such as a server going down, or a browser having navigated away from a page.
      */
-    public static final int GOING_AWAY = 1001;
+    public static final int GOING_AWAY           = 1001;
     /**
-     * 1002 indicates that an endpoint is terminating the connection due
-     * to a protocol error.
+     * 1002 indicates that an endpoint is terminating the connection due to a protocol error.
      */
-    public static final int PROTOCOL_ERROR = 1002;
+    public static final int PROTOCOL_ERROR       = 1002;
     /**
-     * 1003 indicates that an endpoint is terminating the connection
-     * because it has received a type of data it cannot accept (e.g. an
-     * endpoint that understands only text data MAY send this if it
-     * receives a binary message).
+     * 1003 indicates that an endpoint is terminating the connection because it has received a type of data it cannot accept (e.g. an
+     * endpoint that understands only text data MAY send this if it receives a binary message).
      */
-    public static final int REFUSE = 1003;
+    public static final int REFUSE               = 1003;
     /*1004: Reserved. The specific meaning might be defined in the future.*/
     /**
-     * 1005 is a reserved value and MUST NOT be set as a status code in a
-     * Close control frame by an endpoint. It is designated for use in
-     * applications expecting a status code to indicate that no status
-     * code was actually present.
+     * 1005 is a reserved value and MUST NOT be set as a status code in a Close control frame by an endpoint. It is designated for use in
+     * applications expecting a status code to indicate that no status code was actually present.
      */
-    public static final int NOCODE = 1005;
+    public static final int NOCODE               = 1005;
     /**
-     * 1006 is a reserved value and MUST NOT be set as a status code in a
-     * Close control frame by an endpoint. It is designated for use in
-     * applications expecting a status code to indicate that the
-     * connection was closed abnormally, e.g. without sending or
-     * receiving a Close control frame.
+     * 1006 is a reserved value and MUST NOT be set as a status code in a Close control frame by an endpoint. It is designated for use in
+     * applications expecting a status code to indicate that the connection was closed abnormally, e.g. without sending or receiving a Close
+     * control frame.
      */
-    public static final int ABNORMAL_CLOSE = 1006;
+    public static final int ABNORMAL_CLOSE       = 1006;
     /**
-     * 1007 indicates that an endpoint is terminating the connection
-     * because it has received data within a message that was not
-     * consistent with the type of the message (e.g., non-UTF-8 [RFC3629]
-     * data within a text message).
+     * 1007 indicates that an endpoint is terminating the connection because it has received data within a message that was not consistent
+     * with the type of the message (e.g., non-UTF-8 [RFC3629] data within a text message).
      */
-    public static final int NO_UTF8 = 1007;
+    public static final int NO_UTF8              = 1007;
     /**
-     * 1008 indicates that an endpoint is terminating the connection
-     * because it has received a message that violates its policy. This
-     * is a generic status code that can be returned when there is no
-     * other more suitable status code (e.g. 1003 or 1009), or if there
-     * is a need to hide specific details about the policy.
+     * 1008 indicates that an endpoint is terminating the connection because it has received a message that violates its policy. This is a
+     * generic status code that can be returned when there is no other more suitable status code (e.g. 1003 or 1009), or if there is a need
+     * to hide specific details about the policy.
      */
-    public static final int POLICY_VALIDATION = 1008;
+    public static final int POLICY_VALIDATION    = 1008;
     /**
-     * 1009 indicates that an endpoint is terminating the connection
-     * because it has received a message which is too big for it to
-     * process.
+     * 1009 indicates that an endpoint is terminating the connection because it has received a message which is too big for it to process.
      */
-    public static final int TOOBIG = 1009;
+    public static final int TOOBIG               = 1009;
     /**
-     * 1010 indicates that an endpoint (client) is terminating the
-     * connection because it has expected the server to negotiate one or
-     * more extension, but the server didn't return them in the response
-     * message of the WebSocket handshake. The list of extensions which
-     * are needed SHOULD appear in the /reason/ part of the Close frame.
-     * Note that this status code is not used by the server, because it
-     * can fail the WebSocket handshake instead.
+     * 1010 indicates that an endpoint (client) is terminating the connection because it has expected the server to negotiate one or more
+     * extension, but the server didn't return them in the response message of the WebSocket handshake. The list of extensions which are
+     * needed SHOULD appear in the /reason/ part of the Close frame. Note that this status code is not used by the server, because it can
+     * fail the WebSocket handshake instead.
      */
-    public static final int EXTENSION = 1010;
+    public static final int EXTENSION            = 1010;
     /**
-     * 1011 indicates that a server is terminating the connection because
-     * it encountered an unexpected condition that prevented it from
+     * 1011 indicates that a server is terminating the connection because it encountered an unexpected condition that prevented it from
      * fulfilling the request.
      **/
     public static final int UNEXPECTED_CONDITION = 1011;
-	/**
-	 * 1012 indicates that the service is restarted.
-	 * A client may reconnect, and if it choses to do, should reconnect using a randomized delay of 5 - 30s.
-	 * See https://www.ietf.org/mail-archive/web/hybi/current/msg09670.html for more information.
-	 *
-	 * @since 1.3.8
-	 **/
-	public static final int SERVICE_RESTART = 1012;
-	/**
-	 * 1013 indicates that the service is experiencing overload.
-	 * A client should only connect to a different IP (when there are multiple for the target)
-	 * or reconnect to the same IP upon user action.
-	 * See https://www.ietf.org/mail-archive/web/hybi/current/msg09670.html for more information.
-	 *
-	 * @since 1.3.8
-	 **/
-	public static final int TRY_AGAIN_LATER = 1013;
-	/**
-	 * 1014 indicates that the server was acting as a gateway or proxy and received an
-	 * invalid response from the upstream server. This is similar to 502 HTTP Status Code
-	 * See https://www.ietf.org/mail-archive/web/hybi/current/msg10748.html fore more information.
-	 *
-	 * @since 1.3.8
-	 **/
-	public static final int BAD_GATEWAY = 1014;
     /**
-     * 1015 is a reserved value and MUST NOT be set as a status code in a
-     * Close control frame by an endpoint. It is designated for use in
-     * applications expecting a status code to indicate that the
-     * connection was closed due to a failure to perform a TLS handshake
-     * (e.g., the server certificate can't be verified).
+     * 1012 indicates that the service is restarted. A client may reconnect, and if it choses to do, should reconnect using a randomized
+     * delay of 5 - 30s. See https://www.ietf.org/mail-archive/web/hybi/current/msg09670.html for more information.
+     *
+     * @since 1.3.8
      **/
-    public static final int TLS_ERROR = 1015;
+    public static final int SERVICE_RESTART      = 1012;
+    /**
+     * 1013 indicates that the service is experiencing overload. A client should only connect to a different IP (when there are multiple for
+     * the target) or reconnect to the same IP upon user action. See https://www.ietf.org/mail-archive/web/hybi/current/msg09670.html for
+     * more information.
+     *
+     * @since 1.3.8
+     **/
+    public static final int TRY_AGAIN_LATER      = 1013;
+    /**
+     * 1014 indicates that the server was acting as a gateway or proxy and received an invalid response from the upstream server. This is
+     * similar to 502 HTTP Status Code See https://www.ietf.org/mail-archive/web/hybi/current/msg10748.html fore more information.
+     *
+     * @since 1.3.8
+     **/
+    public static final int BAD_GATEWAY          = 1014;
+    /**
+     * 1015 is a reserved value and MUST NOT be set as a status code in a Close control frame by an endpoint. It is designated for use in
+     * applications expecting a status code to indicate that the connection was closed due to a failure to perform a TLS handshake (e.g.,
+     * the server certificate can't be verified).
+     **/
+    public static final int TLS_ERROR            = 1015;
 
     /**
      * The connection had never been established
@@ -161,7 +137,6 @@ public class CloseFrame extends ControlFrame {
      * The connection was flushed and closed
      */
     public static final int FLASHPOLICY = -3;
-
 
     /**
      * The close code used in this close frame
@@ -184,11 +159,12 @@ public class CloseFrame extends ControlFrame {
         setCode(CloseFrame.NORMAL);
     }
 
-	/**
-	 * Set the close code for this close frame
-	 * @param code the close code
-	 */
-	public void setCode(int code) {
+    /**
+     * Set the close code for this close frame
+     *
+     * @param code the close code
+     */
+    public void setCode(int code) {
         this.code = code;
         // CloseFrame.TLS_ERROR is not allowed to be transfered over the wire
         if (code == CloseFrame.TLS_ERROR) {
@@ -198,10 +174,11 @@ public class CloseFrame extends ControlFrame {
         updatePayload();
     }
 
-	/**
-	 * Set the close reason for this close frame
-	 * @param reason the reason code
-	 */
+    /**
+     * Set the close reason for this close frame
+     *
+     * @param reason the reason code
+     */
     public void setReason(String reason) {
         if (reason == null) {
             reason = "";
@@ -209,6 +186,7 @@ public class CloseFrame extends ControlFrame {
         this.reason = reason;
         updatePayload();
     }
+
     /**
      * Get the used close code
      *
@@ -227,17 +205,15 @@ public class CloseFrame extends ControlFrame {
         return reason;
     }
 
-
     public String toString() {
         return super.toString() + "code: " + code;
     }
 
-
     public void isValid() throws InvalidDataException {
         super.isValid();
         if (code == CloseFrame.NO_UTF8 && reason.isEmpty()) {
-        	throw new InvalidDataException( CloseFrame.NO_UTF8, "Received text is no valid utf8 string!");
-		}
+            throw new InvalidDataException(CloseFrame.NO_UTF8, "Received text is no valid utf8 string!");
+        }
         if (code == CloseFrame.NOCODE && 0 < reason.length()) {
             throw new InvalidDataException(PROTOCOL_ERROR, "A close frame must have a closecode if it has a reason");
         }
@@ -245,45 +221,45 @@ public class CloseFrame extends ControlFrame {
         if ((code > CloseFrame.TLS_ERROR && code < 3000)) {
             throw new InvalidDataException(PROTOCOL_ERROR, "Trying to send an illegal close code!");
         }
-        if (code == CloseFrame.ABNORMAL_CLOSE || code == CloseFrame.TLS_ERROR || code == CloseFrame.NOCODE || code > 4999 || code < 1000 || code == 1004) {
+        if (code == CloseFrame.ABNORMAL_CLOSE || code == CloseFrame.TLS_ERROR || code == CloseFrame.NOCODE || code > 4999 || code < 1000
+                || code == 1004) {
             throw new InvalidFrameException("closecode must not be sent over the wire: " + code);
         }
     }
 
-
     public void setPayload(ByteBuffer payload) {
-		code = CloseFrame.NOCODE;
-		reason = "";
-		payload.mark();
-		if( payload.remaining() == 0 ) {
-			code = CloseFrame.NORMAL;
-		} else if( payload.remaining() == 1 ) {
-			code = CloseFrame.PROTOCOL_ERROR;
-		} else {
-			if( payload.remaining() >= 2 ) {
-				ByteBuffer bb = ByteBuffer.allocate( 4 );
-				bb.position( 2 );
-				bb.putShort( payload.getShort() );
-				bb.position( 0 );
-				code = bb.getInt();
-			}
-			payload.reset();
-			try {
-				int mark = payload.position();// because stringUtf8 also creates a mark
-				try {
-					payload.position( payload.position() + 2 );
-					reason = Charsetfunctions.stringUtf8( payload);
-				} catch ( IllegalArgumentException e ) {
-					throw new InvalidDataException( CloseFrame.NO_UTF8 );
-				} finally {
-					payload.position( mark );
-				}
-			} catch ( InvalidDataException e ) {
-				code = CloseFrame.NO_UTF8;
-				reason = null;
-			}
-		}
-	}
+        code = CloseFrame.NOCODE;
+        reason = "";
+        payload.mark();
+        if (payload.remaining() == 0) {
+            code = CloseFrame.NORMAL;
+        } else if (payload.remaining() == 1) {
+            code = CloseFrame.PROTOCOL_ERROR;
+        } else {
+            if (payload.remaining() >= 2) {
+                ByteBuffer bb = ByteBuffer.allocate(4);
+                bb.position(2);
+                bb.putShort(payload.getShort());
+                bb.position(0);
+                code = bb.getInt();
+            }
+            payload.reset();
+            try {
+                int mark = payload.position();// because stringUtf8 also creates a mark
+                try {
+                    payload.position(payload.position() + 2);
+                    reason = Charsetfunctions.stringUtf8(payload);
+                } catch (IllegalArgumentException e) {
+                    throw new InvalidDataException(CloseFrame.NO_UTF8);
+                } finally {
+                    payload.position(mark);
+                }
+            } catch (InvalidDataException e) {
+                code = CloseFrame.NO_UTF8;
+                reason = null;
+            }
+        }
+    }
 
     /**
      * Update the payload to represent the close code and the reason
@@ -300,10 +276,8 @@ public class CloseFrame extends ControlFrame {
         super.setPayload(pay);
     }
 
-
     public ByteBuffer getPayloadData() {
-        if (code == NOCODE)
-            return ByteBufferUtils.getEmptyByteBuffer();
+        if (code == NOCODE) { return ByteBufferUtils.getEmptyByteBuffer(); }
         return super.getPayloadData();
     }
 

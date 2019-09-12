@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主在线问答技师回复
  *
  * @author auto create
- * @since 1.0, 2019-03-28 10:42:03
+ * @since 1.0, 2019-08-29 11:21:17
  */
 public class AlipayEcoMycarDialogonlineAnswerPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8324676934725653282L;
+	private static final long serialVersionUID = 3291784465329626186L;
 
 	/**
 	 * 回复内容

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险标的
  *
  * @author auto create
- * @since 1.0, 2018-10-27 17:47:28
+ * @since 1.0, 2019-08-20 16:42:41
  */
 public class InsObject extends AlipayObject {
 
-	private static final long serialVersionUID = 2568346342226699141L;
+	private static final long serialVersionUID = 8567472349759544527L;
 
 	/**
 	 * 标的物的标识id

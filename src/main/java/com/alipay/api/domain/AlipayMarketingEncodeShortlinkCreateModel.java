@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成短连接开放接口
  *
  * @author auto create
- * @since 1.0, 2019-05-22 09:51:03
+ * @since 1.0, 2019-09-04 14:48:15
  */
 public class AlipayMarketingEncodeShortlinkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6347817279953269937L;
+	private static final long serialVersionUID = 6349519362635766118L;
 
 	/**
 	 * biz_identifier通过向mobilecodec系统申请，由mobilecodec系统分配，每个调用者一般指一个商家会有一个唯一值。

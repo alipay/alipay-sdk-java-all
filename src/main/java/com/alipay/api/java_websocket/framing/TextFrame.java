@@ -25,8 +25,8 @@
 
 package com.alipay.api.java_websocket.framing;
 
-import com.alipay.api.java_websocket.exceptions.InvalidDataException;
 import com.alipay.api.java_websocket.enums.Opcode;
+import com.alipay.api.java_websocket.exceptions.InvalidDataException;
 
 /**
  * Class to represent a text frames
@@ -39,7 +39,6 @@ public class TextFrame extends DataFrame {
     public TextFrame() {
         super(Opcode.TEXT);
     }
-
 
     public void isValid() throws InvalidDataException {
         super.isValid();

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 天气数据同步接口
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:54:47
+ * @since 1.0, 2019-08-26 17:24:29
  */
 public class AlipayInsDataWeatherSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5259496545263498877L;
+	private static final long serialVersionUID = 8264592543728554949L;
 
 	/**
 	 * 天气信息描述信息

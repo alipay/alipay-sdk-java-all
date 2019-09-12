@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单支付工具结果信息，包括支付宝返回的支付工具单据ID，状态和资金信息。支持现金、商户预付卡、支付宝、银行卡、其他第三方支付工具信息。
  *
  * @author auto create
- * @since 1.0, 2019-02-27 23:43:31
+ * @since 1.0, 2019-08-17 17:45:10
  */
 public class PaytoolResultDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8167872432674974325L;
+	private static final long serialVersionUID = 2379899624188772143L;
 
 	/**
 	 * 支付宝交易号，当tool_code是ALIPAY和TMARKETING时有效。

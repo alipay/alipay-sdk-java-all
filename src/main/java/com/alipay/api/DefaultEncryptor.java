@@ -1,15 +1,13 @@
 /**
- * Alipay.com Inc.
- * Copyright (c) 2004-2018 All Rights Reserved.
+ * Alipay.com Inc. Copyright (c) 2004-2018 All Rights Reserved.
  */
 package com.alipay.api;
 
 import com.alipay.api.internal.util.AlipayEncrypt;
 
 /**
- *
  * @author liuqun.lq
- * @version $Id: DefaultEncryptor.java, v 0.1 2018Äê07ÔÂ03ÈÕ 12:24 liuqun.lq Exp $
+ * @version $Id: DefaultEncryptor.java, v 0.1 2018å¹´07æœˆ03æ—¥ 12:24 liuqun.lq Exp $
  */
 public class DefaultEncryptor implements Encryptor {
 
@@ -42,7 +40,7 @@ public class DefaultEncryptor implements Encryptor {
     /**
      * Setter method for property <tt>encryptKey</tt>.
      *
-     * @param encryptKey  value to be assigned to property encryptKey
+     * @param encryptKey value to be assigned to property encryptKey
      */
     public void setEncryptKey(String encryptKey) {
         this.encryptKey = encryptKey;

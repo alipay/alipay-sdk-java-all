@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot设备到账语音触达接口
  *
  * @author auto create
- * @since 1.0, 2019-07-17 20:41:38
+ * @since 1.0, 2019-08-22 17:01:41
  */
 public class AlipayCommerceIotDeviceAudioSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1235598431163134938L;
+	private static final long serialVersionUID = 1354534635153115888L;
 
 	/**
 	 * 设备的唯一标识,设备id
@@ -20,7 +20,7 @@ public class AlipayCommerceIotDeviceAudioSyncModel extends AlipayObject {
 	private String bizTid;
 
 	/**
-	 * 交易流水号. 如果需要调用alipay.commerce.iot.device.broadcast.query接口,查询设备是否播报,则trade_id必填,否则无法获取播报结果
+	 * 交易流水号. 在以下情况下必填: 1. 如果需要调用alipay.commerce.iot.device.broadcast.query接口,查询设备是否播报,则trade_id必填; 2. 如果是交易播报则交易流水号必填,也就是说voice_content里面包含money参数的,则trade_id必填
 	 */
 	@ApiField("trade_id")
 	private String tradeId;

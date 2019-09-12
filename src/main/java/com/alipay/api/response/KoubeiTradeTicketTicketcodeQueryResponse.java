@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.ticketcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-26 17:37:07
+ * @since 1.0, 2019-08-16 20:25:01
  */
 public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2485111924171533886L;
+	private static final long serialVersionUID = 6561188366359955458L;
 
 	/** 
 	 * 非次卡场景，表示同一订单下同类凭证的可核销份数； 次卡场景，表示可用核销份数。
@@ -40,6 +40,12 @@ public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("expire_date")
 	private String expireDate;
+
+	/** 
+	 * 凭证对应商品别名，在口碑商品创建时候设置
+	 */
+	@ApiField("item_alias")
+	private String itemAlias;
 
 	/** 
 	 * 口碑商品ID
@@ -146,6 +152,13 @@ public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 	}
 	public String getExpireDate( ) {
 		return this.expireDate;
+	}
+
+	public void setItemAlias(String itemAlias) {
+		this.itemAlias = itemAlias;
+	}
+	public String getItemAlias( ) {
+		return this.itemAlias;
 	}
 
 	public void setItemId(String itemId) {

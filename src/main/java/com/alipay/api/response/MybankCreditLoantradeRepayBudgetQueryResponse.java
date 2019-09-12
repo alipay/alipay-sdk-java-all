@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.repay.budget.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-18 15:31:43
+ * @since 1.0, 2019-08-30 17:00:48
  */
 public class MybankCreditLoantradeRepayBudgetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8725878522887699987L;
+	private static final long serialVersionUID = 8238152537169127185L;
 
 	/** 
 	 * 申请还款本金
@@ -37,6 +37,12 @@ public class MybankCreditLoantradeRepayBudgetQueryResponse extends AlipayRespons
 	 */
 	@ApiField("should_repay_int")
 	private String shouldRepayInt;
+
+	/** 
+	 * 当前应还罚息
+	 */
+	@ApiField("should_repay_penalty")
+	private String shouldRepayPenalty;
 
 	/** 
 	 * 提前还款费
@@ -76,6 +82,13 @@ public class MybankCreditLoantradeRepayBudgetQueryResponse extends AlipayRespons
 	}
 	public String getShouldRepayInt( ) {
 		return this.shouldRepayInt;
+	}
+
+	public void setShouldRepayPenalty(String shouldRepayPenalty) {
+		this.shouldRepayPenalty = shouldRepayPenalty;
+	}
+	public String getShouldRepayPenalty( ) {
+		return this.shouldRepayPenalty;
 	}
 
 	public void setShouldRepayPreFee(String shouldRepayPreFee) {

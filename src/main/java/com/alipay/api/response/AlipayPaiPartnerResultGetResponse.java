@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pai.partner.result.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2019-08-27 16:54:29
  */
 public class AlipayPaiPartnerResultGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8527322182396385687L;
+	private static final long serialVersionUID = 3152328111452275264L;
 
 	/** 
 	 * 路由协议内容,根据不同的协议数据不一样

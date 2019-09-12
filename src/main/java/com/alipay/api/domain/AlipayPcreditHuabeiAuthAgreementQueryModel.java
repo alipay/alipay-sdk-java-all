@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享协议查询
  *
  * @author auto create
- * @since 1.0, 2019-04-22 10:40:06
+ * @since 1.0, 2019-08-19 13:58:08
  */
 public class AlipayPcreditHuabeiAuthAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3549142966527937455L;
+	private static final long serialVersionUID = 7875214261342553299L;
 
 	/**
-	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号。传入该参数，会忽略其它所有参数。
+	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花芝轻会员。传入该参数，会忽略其它所有参数。
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -26,13 +26,13 @@ public class AlipayPcreditHuabeiAuthAgreementQueryModel extends AlipayObject {
 	private String alipayUserId;
 
 	/**
-	 * 花呗先享签约场景，商户和支付宝签约时确定。该值需要与系统/页面签约接口调用时传入的值保持一致。
+	 * 花芝轻会员签约场景，商户和支付宝签约时确定。该值需要与系统/页面签约接口调用时传入的值保持一致。
 	 */
 	@ApiField("auth_scene")
 	private String authScene;
 
 	/**
-	 * 外部签约号，由商户提供，花呗先享协议中标识用户的唯一签约号（确保在商户系统中唯一）。
+	 * 外部签约号，由商户提供，花芝轻会员协议中标识用户的唯一签约号（确保在商户系统中唯一）。
 	 */
 	@ApiField("out_sign_no")
 	private String outSignNo;

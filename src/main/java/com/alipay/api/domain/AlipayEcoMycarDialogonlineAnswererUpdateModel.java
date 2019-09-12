@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改技师信息
  *
  * @author auto create
- * @since 1.0, 2019-03-28 10:41:48
+ * @since 1.0, 2019-08-29 11:21:08
  */
 public class AlipayEcoMycarDialogonlineAnswererUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1267183291858733131L;
+	private static final long serialVersionUID = 7752521336941676894L;
 
 	/**
 	 * 技师ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融银行直投代客还款账单查询明细
  *
  * @author auto create
- * @since 1.0, 2019-03-28 10:51:32
+ * @since 1.0, 2019-08-27 14:15:34
  */
 public class SceneProdDeputyPaymentBillQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 2257195922243539123L;
+	private static final long serialVersionUID = 1489785995588255356L;
 
 	/**
 	 * 代客还款的网商银行结算户信息

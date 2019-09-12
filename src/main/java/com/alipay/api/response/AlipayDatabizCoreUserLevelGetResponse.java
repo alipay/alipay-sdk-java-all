@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.databiz.core.user.level.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2019-08-14 15:25:03
  */
 public class AlipayDatabizCoreUserLevelGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1436855456473352179L;
+	private static final long serialVersionUID = 8735529888153256968L;
 
 	/** 
 	 * 支付宝用户等级信息
