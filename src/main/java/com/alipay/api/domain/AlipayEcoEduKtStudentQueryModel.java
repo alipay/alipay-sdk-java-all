@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEduKtStudentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7817121691155734124L;
+	private static final long serialVersionUID = 5235986295891973267L;
 
 	/**
 	 * 已经签约教育缴费的isv的支付宝PID

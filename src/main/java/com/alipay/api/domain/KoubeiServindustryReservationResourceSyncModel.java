@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑预订资源变更消息
  *
  * @author auto create
- * @since 1.0, 2019-04-25 15:20:28
+ * @since 1.0, 2019-09-19 10:44:29
  */
 public class KoubeiServindustryReservationResourceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6465834727811919464L;
+	private static final long serialVersionUID = 6122862912772465315L;
 
 	/**
 	 * 口碑为第三方ISV分配的渠道标识，如K米的渠道为KMI

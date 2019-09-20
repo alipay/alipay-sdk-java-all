@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cityservice.pushmsg.permit.query request
  * 
  * @author auto create
- * @since 1.0, 2019-04-28 10:01:01
+ * @since 1.0, 2019-09-17 22:53:05
  */
 public class AlipayEcoCityservicePushmsgPermitQueryRequest implements AlipayRequest<AlipayEcoCityservicePushmsgPermitQueryResponse> {
 

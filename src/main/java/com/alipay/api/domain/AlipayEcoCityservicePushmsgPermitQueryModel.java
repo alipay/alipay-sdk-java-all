@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 城服用户消息推送许可查询
  *
  * @author auto create
- * @since 1.0, 2019-04-28 10:01:01
+ * @since 1.0, 2019-09-17 22:53:05
  */
 public class AlipayEcoCityservicePushmsgPermitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8331675361685487571L;
+	private static final long serialVersionUID = 1368714464572198267L;
 
 	/**
 	 * 证件号码

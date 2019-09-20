@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2019-08-21 15:53:37
+ * @since 1.0, 2019-09-18 19:26:12
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -141,6 +141,21 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	* 省市区信息，当区域类型为LOCATION时，不能为空，province_code不能为空，当填写city_code时，province_code不能为空，当填写area_code时，province_code和city_code不能为空。只填province_code时，该省全部选择；province_code和city_code都填时，该市全部选择。province_code，city_code和area_code都填时，该县全部选择。具体code可以参考https://docs.alipay.com/isv/10327
 	 */
 	private List<RegionInfo> serviceRegionInfo;
+
+	/** 
+	* 测试账号
+	 */
+	private String testAccout;
+
+	/** 
+	* 测试附件
+	 */
+	private FileItem testFileName;
+
+	/** 
+	* 测试账号密码
+	 */
+	private String testPassword;
 
 	/** 
 	* 第三张营业执照照片，不能超过4MB，图片格式只支持jpg，png，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要营业执照信息，如果不填默认采用当前小程序第三张营业执照照片
@@ -325,6 +340,27 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 		return this.serviceRegionInfo;
 	}
 
+	public void setTestAccout(String testAccout) {
+		this.testAccout = testAccout;
+	}
+	public String getTestAccout() {
+		return this.testAccout;
+	}
+
+	public void setTestFileName(FileItem testFileName) {
+		this.testFileName = testFileName;
+	}
+	public FileItem getTestFileName() {
+		return this.testFileName;
+	}
+
+	public void setTestPassword(String testPassword) {
+		this.testPassword = testPassword;
+	}
+	public String getTestPassword() {
+		return this.testPassword;
+	}
+
 	public void setThirdLicensePic(FileItem thirdLicensePic) {
 		this.thirdLicensePic = thirdLicensePic;
 	}
@@ -420,6 +456,8 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 		txtParams.put("service_email", this.serviceEmail);
 		txtParams.put("service_phone", this.servicePhone);
 		txtParams.put("service_region_info", this.serviceRegionInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.serviceRegionInfo, true));
+		txtParams.put("test_accout", this.testAccout);
+		txtParams.put("test_password", this.testPassword);
 		txtParams.put("version_desc", this.versionDesc);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
@@ -446,6 +484,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 		params.put("out_door_pic", this.outDoorPic);
 		params.put("second_license_pic", this.secondLicensePic);
 		params.put("second_screen_shot", this.secondScreenShot);
+		params.put("test_file_name", this.testFileName);
 		params.put("third_license_pic", this.thirdLicensePic);
 		params.put("third_screen_shot", this.thirdScreenShot);
 		return params;

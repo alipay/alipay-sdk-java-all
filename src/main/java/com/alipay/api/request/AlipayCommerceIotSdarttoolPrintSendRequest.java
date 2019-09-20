@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.sdarttool.print.send request
  * 
  * @author auto create
- * @since 1.0, 2019-09-11 11:16:37
+ * @since 1.0, 2019-09-16 09:49:14
  */
 public class AlipayCommerceIotSdarttoolPrintSendRequest implements AlipayRequest<AlipayCommerceIotSdarttoolPrintSendResponse> {
 

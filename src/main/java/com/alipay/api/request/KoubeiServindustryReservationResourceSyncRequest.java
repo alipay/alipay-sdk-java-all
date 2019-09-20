@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.servindustry.reservation.resource.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-04-25 15:20:30
+ * @since 1.0, 2019-09-19 10:44:29
  */
 public class KoubeiServindustryReservationResourceSyncRequest implements AlipayRequest<KoubeiServindustryReservationResourceSyncResponse> {
 

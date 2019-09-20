@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约参数。用于sdk支付并签约中传入签约信息。
  *
  * @author auto create
- * @since 1.0, 2019-07-08 16:52:02
+ * @since 1.0, 2019-09-13 07:14:34
  */
 public class SignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3333113167337828233L;
+	private static final long serialVersionUID = 4546191986729716989L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -53,7 +53,7 @@ public class SignParams extends AlipayObject {
 	 * 此参数用于传递子商户信息，无特殊需求时不用关注。目前商户代扣、海外代扣、淘旅行信用住产品支持传入该参数（在销售方案中“是否允许自定义子商户信息”需要选是）。
 	 */
 	@ApiField("sub_merchant")
-	private SubMerchant subMerchant;
+	private SignMerchantParams subMerchant;
 
 	public AccessParams getAccessParams() {
 		return this.accessParams;
@@ -97,10 +97,10 @@ public class SignParams extends AlipayObject {
 		this.signScene = signScene;
 	}
 
-	public SubMerchant getSubMerchant() {
+	public SignMerchantParams getSubMerchant() {
 		return this.subMerchant;
 	}
-	public void setSubMerchant(SubMerchant subMerchant) {
+	public void setSubMerchant(SignMerchantParams subMerchant) {
 		this.subMerchant = subMerchant;
 	}
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.info.send response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-21 16:57:52
+ * @since 1.0, 2019-09-17 09:55:08
  */
 public class AlipayEbppInvoiceInfoSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5362199684346652878L;
+	private static final long serialVersionUID = 6539229384497165542L;
 
 	/** 
 	 * 发票访问地址，同步红票的情况下不返回该字段，同步蓝票的情况下如果同步单张发票，返回发票详情链接地址，如果同步的是多张发票，返回发票列表地址

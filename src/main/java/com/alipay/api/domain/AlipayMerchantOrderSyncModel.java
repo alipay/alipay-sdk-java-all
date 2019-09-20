@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2019-06-10 15:25:29
+ * @since 1.0, 2019-09-16 10:59:30
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3521694534323734953L;
+	private static final long serialVersionUID = 2429568781239895777L;
 
 	/**
 	 * 订单金额，单位为元
@@ -41,6 +41,15 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	@ApiListField("item_order_list")
 	@ApiField("item_order_info")
 	private List<ItemOrderInfo> itemOrderList;
+
+	/**
+	 * 物流信息
+列表最多支持物流信息个数，请参考产品文档
+注：若该值不为空，且物流信息同步至我的快递，则在查询订单时可返回具体物流信息
+	 */
+	@ApiListField("logistics_info_list")
+	@ApiField("order_logistics_information_request")
+	private List<OrderLogisticsInformationRequest> logisticsInfoList;
 
 	/**
 	 * 外部订单号
@@ -92,6 +101,13 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	}
 	public void setItemOrderList(List<ItemOrderInfo> itemOrderList) {
 		this.itemOrderList = itemOrderList;
+	}
+
+	public List<OrderLogisticsInformationRequest> getLogisticsInfoList() {
+		return this.logisticsInfoList;
+	}
+	public void setLogisticsInfoList(List<OrderLogisticsInformationRequest> logisticsInfoList) {
+		this.logisticsInfoList = logisticsInfoList;
 	}
 
 	public String getOutBizNo() {

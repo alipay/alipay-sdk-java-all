@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ArchiveFaceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1242486687776811515L;
+	private static final long serialVersionUID = 7383737939755597857L;
 
 	/**
 	 * 人脸图片BASE64转换后字符串,大小限制为2M

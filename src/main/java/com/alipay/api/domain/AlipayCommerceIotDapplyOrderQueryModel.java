@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁iot进件申请单撤销接口
  *
  * @author auto create
- * @since 1.0, 2019-08-13 13:49:35
+ * @since 1.0, 2019-09-16 16:59:04
  */
 public class AlipayCommerceIotDapplyOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6236358697711391495L;
+	private static final long serialVersionUID = 1583999768391536866L;
 
 	/**
 	 * 物料申请单号

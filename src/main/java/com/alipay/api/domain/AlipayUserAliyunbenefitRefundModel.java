@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAliyunbenefitRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2746441838373127698L;
+	private static final long serialVersionUID = 2333971173759324533L;
 
 	/**
 	 * 业务流水号，用来映射需要回退积分的订单号，与权益兑换时传入的值一致。

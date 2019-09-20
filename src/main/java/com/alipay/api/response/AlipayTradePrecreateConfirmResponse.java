@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.precreate.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-23 12:00:01
+ * @since 1.0, 2019-09-20 14:02:16
  */
 public class AlipayTradePrecreateConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1584854663186877995L;
+	private static final long serialVersionUID = 2456964638355773868L;
 
 	/** 
 	 * 收单模式

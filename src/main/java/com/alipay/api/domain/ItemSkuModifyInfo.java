@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品SKU修改模型
  *
  * @author auto create
- * @since 1.0, 2019-07-31 14:24:49
+ * @since 1.0, 2019-09-18 10:41:47
  */
 public class ItemSkuModifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7655494913864324124L;
+	private static final long serialVersionUID = 3683744113314154753L;
 
 	/**
 	 * 成本价，单位分
@@ -28,6 +28,18 @@ public class ItemSkuModifyInfo extends AlipayObject {
 	@ApiListField("ext_info")
 	@ApiField("item_ext_info")
 	private List<ItemExtInfo> extInfo;
+
+	/**
+	 * 外部skuId（sku_id不为空时作为普通更新项,sku_id为空时作为更新key,sku_id和该字段同时为空则新增该条数据）
+	 */
+	@ApiField("external_sku_id")
+	private String externalSkuId;
+
+	/**
+	 * 库存
+	 */
+	@ApiField("inventory")
+	private Long inventory;
 
 	/**
 	 * 标价，单位分
@@ -65,6 +77,20 @@ public class ItemSkuModifyInfo extends AlipayObject {
 	}
 	public void setExtInfo(List<ItemExtInfo> extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getExternalSkuId() {
+		return this.externalSkuId;
+	}
+	public void setExternalSkuId(String externalSkuId) {
+		this.externalSkuId = externalSkuId;
+	}
+
+	public Long getInventory() {
+		return this.inventory;
+	}
+	public void setInventory(Long inventory) {
+		this.inventory = inventory;
 	}
 
 	public Long getOriginalPrice() {

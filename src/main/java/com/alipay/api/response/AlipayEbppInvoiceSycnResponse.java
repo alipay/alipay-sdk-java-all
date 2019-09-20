@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.sycn response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-21 16:59:39
+ * @since 1.0, 2019-09-17 09:53:38
  */
 public class AlipayEbppInvoiceSycnResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5269985199239493165L;
+	private static final long serialVersionUID = 7437868147976789564L;
 
 	/** 
 	 * 支付宝发票管家发票详情页链接地址

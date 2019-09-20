@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOverseasTravelRateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5432253522439531766L;
+	private static final long serialVersionUID = 5341576868555831164L;
 
 	/**
 	 * 货币代码列表，货币代码遵循ISO标准alpha- 3币种代码，用英文半角逗号分隔，支持的币种可以联系支付宝技术支持。

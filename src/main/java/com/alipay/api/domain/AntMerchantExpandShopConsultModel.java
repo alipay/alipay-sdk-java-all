@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建咨询
  *
  * @author auto create
- * @since 1.0, 2019-08-13 19:18:29
+ * @since 1.0, 2019-09-13 01:06:26
  */
 public class AntMerchantExpandShopConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6395533461977718546L;
+	private static final long serialVersionUID = 6793279789133928931L;
+
+	/**
+	 * 门店结算卡信息。本业务当前只允许传入一张结算卡
+	 */
+	@ApiListField("biz_cards")
+	@ApiField("settle_card_info")
+	private List<SettleCardInfo> bizCards;
 
 	/**
 	 * 品牌id
@@ -163,6 +170,13 @@ public class AntMerchantExpandShopConsultModel extends AlipayObject {
 	 */
 	@ApiField("store_id")
 	private String storeId;
+
+	public List<SettleCardInfo> getBizCards() {
+		return this.bizCards;
+	}
+	public void setBizCards(List<SettleCardInfo> bizCards) {
+		this.bizCards = bizCards;
+	}
 
 	public String getBrandId() {
 		return this.brandId;

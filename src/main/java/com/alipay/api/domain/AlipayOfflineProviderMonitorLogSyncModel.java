@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineProviderMonitorLogSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4813428817723484476L;
+	private static final long serialVersionUID = 5169762565383572921L;
 
 	/**
 	 * 数据回流日志

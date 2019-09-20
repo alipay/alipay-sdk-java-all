@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataDataserviceRiskDeviceidentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4784361835976586938L;
+	private static final long serialVersionUID = 5244852513243333872L;
 
 	/** 
 	 * 盗卡盗账户概率，用于识别账号被盗的风险，数值越大风险概率越大，范围0~1，小数点后保留6有效数
