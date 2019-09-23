@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTrustUserScoreGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1266898912757363972L;
+	private static final long serialVersionUID = 1649816149683829575L;
 
 	/** 
 	 * 芝麻信用通过模型计算出的该用户的芝麻信用评分

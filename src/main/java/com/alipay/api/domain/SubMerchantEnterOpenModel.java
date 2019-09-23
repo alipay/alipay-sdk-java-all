@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubMerchantEnterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6764575215419842859L;
+	private static final long serialVersionUID = 6772767571179597622L;
 
 	/**
 	 * 开票商户pid，入驻支付即开票场景的时候，该字段必传

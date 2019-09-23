@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemUnitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3643237128347515218L;
+	private static final long serialVersionUID = 3763438545886986844L;
 
 	/**
 	 * 商品详情-商品套餐内容-菜品数量

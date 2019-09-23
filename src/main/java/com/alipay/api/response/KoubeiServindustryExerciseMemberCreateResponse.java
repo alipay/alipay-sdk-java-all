@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiServindustryExerciseMemberCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2587615582545654334L;
+	private static final long serialVersionUID = 5265879722578935976L;
 
 	/** 
 	 * 口碑用户健身唯一ID，和支付宝userId一一对应

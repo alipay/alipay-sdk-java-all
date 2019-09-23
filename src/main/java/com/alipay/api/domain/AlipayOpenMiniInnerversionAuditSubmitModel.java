@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序版本提交审核
  *
  * @author auto create
- * @since 1.0, 2019-09-18 19:25:36
+ * @since 1.0, 2019-09-21 11:40:07
  */
 public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4471261676782492191L;
+	private static final long serialVersionUID = 7166912397894327375L;
 
 	/**
 	 * 小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考https://docs.alipay.com/isv/10325，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。
@@ -118,6 +118,12 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	 */
 	@ApiField("service_phone")
 	private String servicePhone;
+
+	/**
+	 * 特殊资质图片地址列表，逗号分隔；部分类目需要特殊资质，如果需要特殊资质，最少一张，最多三张。
+	 */
+	@ApiField("special_license_pic_list")
+	private String specialLicensePicList;
 
 	/**
 	 * 小程序版本变更描述，30-500个字符，区分于app_desc
@@ -242,6 +248,13 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	}
 	public void setServicePhone(String servicePhone) {
 		this.servicePhone = servicePhone;
+	}
+
+	public String getSpecialLicensePicList() {
+		return this.specialLicensePicList;
+	}
+	public void setSpecialLicensePicList(String specialLicensePicList) {
+		this.specialLicensePicList = specialLicensePicList;
 	}
 
 	public String getVersionDesc() {

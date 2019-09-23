@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2019-09-18 19:26:12
+ * @since 1.0, 2019-09-23 11:07:00
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -78,6 +78,11 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private FileItem firstScreenShot;
 
 	/** 
+	* 第一张特殊资质图片，不能超过4MB，图片格式只支持jpg、png、jepg，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325 中是否需要特殊资质，如果不填默认采用当前小程序第一张特殊资质
+	 */
+	private FileItem firstSpecialLicensePic;
+
+	/** 
 	* 第四张营业执照照片，不能超过4MB，图片格式只支持jpg，png，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要营业执照信息，如果不填默认采用当前小程序第四张营业执照照片
 	 */
 	private FileItem fourthLicensePic;
@@ -128,6 +133,11 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private FileItem secondScreenShot;
 
 	/** 
+	* 第二张特殊资质图片文件，不能超过4MB，图片格式只支持jpg、png、jepg，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325 中是否需要特殊资质，如果不填默认采用当前小程序第二张特殊资质图片
+	 */
+	private FileItem secondSpecialLicensePic;
+
+	/** 
 	* 小程序客服邮箱，如果不填默认采用当前小程序的应用客服邮箱
 	 */
 	private String serviceEmail;
@@ -166,6 +176,11 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	* 小程序第三张应用截图，不能超过4MB，图片格式只支持jpg，png
 	 */
 	private FileItem thirdScreenShot;
+
+	/** 
+	* 第三张特殊资质图片文件，不能超过4MB，图片格式只支持jpg、png、jepg，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要特殊资质，如果不填默认采用当前小程序第三张特殊资质
+	 */
+	private FileItem thirdSpecialLicensePic;
 
 	/** 
 	* 小程序版本描述，30-500个字符
@@ -249,6 +264,13 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 		return this.firstScreenShot;
 	}
 
+	public void setFirstSpecialLicensePic(FileItem firstSpecialLicensePic) {
+		this.firstSpecialLicensePic = firstSpecialLicensePic;
+	}
+	public FileItem getFirstSpecialLicensePic() {
+		return this.firstSpecialLicensePic;
+	}
+
 	public void setFourthLicensePic(FileItem fourthLicensePic) {
 		this.fourthLicensePic = fourthLicensePic;
 	}
@@ -319,6 +341,13 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 		return this.secondScreenShot;
 	}
 
+	public void setSecondSpecialLicensePic(FileItem secondSpecialLicensePic) {
+		this.secondSpecialLicensePic = secondSpecialLicensePic;
+	}
+	public FileItem getSecondSpecialLicensePic() {
+		return this.secondSpecialLicensePic;
+	}
+
 	public void setServiceEmail(String serviceEmail) {
 		this.serviceEmail = serviceEmail;
 	}
@@ -373,6 +402,13 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	}
 	public FileItem getThirdScreenShot() {
 		return this.thirdScreenShot;
+	}
+
+	public void setThirdSpecialLicensePic(FileItem thirdSpecialLicensePic) {
+		this.thirdSpecialLicensePic = thirdSpecialLicensePic;
+	}
+	public FileItem getThirdSpecialLicensePic() {
+		return this.thirdSpecialLicensePic;
 	}
 
 	public void setVersionDesc(String versionDesc) {
@@ -479,14 +515,17 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 		params.put("fifth_screen_shot", this.fifthScreenShot);
 		params.put("first_license_pic", this.firstLicensePic);
 		params.put("first_screen_shot", this.firstScreenShot);
+		params.put("first_special_license_pic", this.firstSpecialLicensePic);
 		params.put("fourth_license_pic", this.fourthLicensePic);
 		params.put("fourth_screen_shot", this.fourthScreenShot);
 		params.put("out_door_pic", this.outDoorPic);
 		params.put("second_license_pic", this.secondLicensePic);
 		params.put("second_screen_shot", this.secondScreenShot);
+		params.put("second_special_license_pic", this.secondSpecialLicensePic);
 		params.put("test_file_name", this.testFileName);
 		params.put("third_license_pic", this.thirdLicensePic);
 		params.put("third_screen_shot", this.thirdScreenShot);
+		params.put("third_special_license_pic", this.thirdSpecialLicensePic);
 		return params;
 	}
 
