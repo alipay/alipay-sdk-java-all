@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.zdatafront.common.query request
  * 
  * @author auto create
- * @since 1.0, 2019-04-15 10:19:24
+ * @since 1.0, 2019-11-14 12:16:36
  */
 public class AlipayZdatafrontCommonQueryRequest implements AlipayRequest<AlipayZdatafrontCommonQueryResponse> {
 

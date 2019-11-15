@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 在sdk支付并签约中，传入签约相关的商户参数。
  *
  * @author auto create
- * @since 1.0, 2019-07-29 21:42:23
+ * @since 1.0, 2019-11-06 10:50:59
  */
 public class SignMerchantParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6871953951564666642L;
+	private static final long serialVersionUID = 4472712366973724195L;
 
 	/**
 	 * 子商户的商户id

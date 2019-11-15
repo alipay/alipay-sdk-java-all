@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiField;
 VerifyInfo of EVOA application.
  *
  * @author auto create
- * @since 1.0, 2019-03-22 18:02:41
+ * @since 1.0, 2019-10-29 15:59:50
  */
 public class VerifiedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8865343758217837599L;
+	private static final long serialVersionUID = 2698913577816659851L;
 
 	/**
 	 * 用户申请订单号回传。
@@ -22,6 +22,12 @@ Unique Application No.
 	 */
 	@ApiField("application_no")
 	private String applicationNo;
+
+	/**
+	 * 扩展信息，用于保存其它补充信息。
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 审核记录。
@@ -63,6 +69,13 @@ DateTime of verified or rejected.
 	}
 	public void setApplicationNo(String applicationNo) {
 		this.applicationNo = applicationNo;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getNote() {

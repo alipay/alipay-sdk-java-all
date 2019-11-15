@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据用户id查询用户可用凭证
  *
  * @author auto create
- * @since 1.0, 2019-08-31 22:38:49
+ * @since 1.0, 2019-09-25 19:59:46
  */
 public class KoubeiTradeTicketUserticketcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4745727672299332766L;
+	private static final long serialVersionUID = 6779945491875733483L;
 
 	/**
 	 * 外部请求流水号

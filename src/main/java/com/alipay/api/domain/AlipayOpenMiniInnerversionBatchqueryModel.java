@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序版本信息查询
  *
  * @author auto create
- * @since 1.0, 2019-09-05 20:45:57
+ * @since 1.0, 2019-10-15 14:24:21
  */
 public class AlipayOpenMiniInnerversionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3647846581394864738L;
+	private static final long serialVersionUID = 8138413831927491361L;
+
+	/**
+	 * 端参数，可不选，默认支付宝端
+枚举列举：支付宝：com.alipay.alipaywallet，高德：com.amap.app
+	 */
+	@ApiField("bundle_id")
+	private String bundleId;
 
 	/**
 	 * 小程序ID
@@ -28,6 +35,13 @@ public class AlipayOpenMiniInnerversionBatchqueryModel extends AlipayObject {
 	@ApiListField("version_list")
 	@ApiField("mini_app_version_query_info")
 	private List<MiniAppVersionQueryInfo> versionList;
+
+	public String getBundleId() {
+		return this.bundleId;
+	}
+	public void setBundleId(String bundleId) {
+		this.bundleId = bundleId;
+	}
 
 	public String getMiniAppId() {
 		return this.miniAppId;

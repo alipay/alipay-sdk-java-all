@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家是否有核销中的账单
  *
  * @author auto create
- * @since 1.0, 2019-07-10 11:43:23
+ * @since 1.0, 2019-10-25 14:08:30
  */
 public class AlipayBossFncPidUnwriteoffQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8837344423913374582L;
+	private static final long serialVersionUID = 2154349931383279686L;
 
 	/**
 	 * 请求查询业务场景

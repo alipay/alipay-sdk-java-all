@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发到账户明细复杂模型
  *
  * @author auto create
- * @since 1.0, 2018-05-24 11:33:41
+ * @since 1.0, 2019-11-12 17:29:21
  */
 public class AccDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4727166692415913187L;
+	private static final long serialVersionUID = 2883192817733844183L;
 
 	/**
 	 * 支付宝订单号
@@ -26,7 +26,13 @@ public class AccDetailModel extends AlipayObject {
 	private CertInfo certInfo;
 
 	/**
-	 * 明细流水号
+	 * 支付宝系统内部明细单号。
+	 */
+	@ApiField("detail_id")
+	private String detailId;
+
+	/**
+	 * 明细流水号（注：只有境外代发使用，其他场景请使用out_biz_no）
 	 */
 	@ApiField("detail_no")
 	private String detailNo;
@@ -56,6 +62,12 @@ F或为空: 不需要.
 	 */
 	@ApiField("need_retry")
 	private String needRetry;
+
+	/**
+	 * 商户明细订单号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 收款方信息。
@@ -134,6 +146,13 @@ UNKNOWN：未知状态
 		this.certInfo = certInfo;
 	}
 
+	public String getDetailId() {
+		return this.detailId;
+	}
+	public void setDetailId(String detailId) {
+		this.detailId = detailId;
+	}
+
 	public String getDetailNo() {
 		return this.detailNo;
 	}
@@ -167,6 +186,13 @@ UNKNOWN：未知状态
 	}
 	public void setNeedRetry(String needRetry) {
 		this.needRetry = needRetry;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public AccPayeeInfo getPayeeInfo() {

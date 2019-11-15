@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单状态同步
  *
  * @author auto create
- * @since 1.0, 2019-06-23 10:51:22
+ * @since 1.0, 2019-11-11 19:23:33
  */
 public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2552976299286688671L;
+	private static final long serialVersionUID = 6488131492347266227L;
 
 	/**
 	 * 卡片有效期
@@ -78,6 +78,7 @@ public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 6：退货中
 7：已退货
 8：换货中
+9：设备已注销
 	 */
 	@ApiField("device_status")
 	private String deviceStatus;
@@ -116,6 +117,12 @@ public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 1: 二次激活成功
+	 */
+	@ApiField("reactive_status")
+	private String reactiveStatus;
 
 	public String getCardExpiryDate() {
 		return this.cardExpiryDate;
@@ -220,6 +227,13 @@ public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getReactiveStatus() {
+		return this.reactiveStatus;
+	}
+	public void setReactiveStatus(String reactiveStatus) {
+		this.reactiveStatus = reactiveStatus;
 	}
 
 }

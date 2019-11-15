@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放账户余额上线
  *
  * @author auto create
- * @since 1.0, 2019-07-30 17:30:21
+ * @since 1.0, 2019-11-01 10:52:57
  */
 public class AlipayDataDataserviceAdUserbalanceOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3643575758435337222L;
+	private static final long serialVersionUID = 2884423832747468753L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token

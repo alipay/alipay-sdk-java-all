@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预发确认
  *
  * @author auto create
- * @since 1.0, 2019-09-19 21:12:04
+ * @since 1.0, 2019-10-09 11:25:41
  */
 public class AlipayOpenMiniInnerversionPreonlineConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5745766118466861651L;
+	private static final long serialVersionUID = 4427367979764682796L;
 
 	/**
 	 * 小程序版本号
 	 */
 	@ApiField("app_version")
 	private String appVersion;
+
+	/**
+	 * 端参数
+	 */
+	@ApiField("bundle_id")
+	private String bundleId;
 
 	/**
 	 * 小程序Id
@@ -30,6 +36,13 @@ public class AlipayOpenMiniInnerversionPreonlineConfirmModel extends AlipayObjec
 	}
 	public void setAppVersion(String appVersion) {
 		this.appVersion = appVersion;
+	}
+
+	public String getBundleId() {
+		return this.bundleId;
+	}
+	public void setBundleId(String bundleId) {
+		this.bundleId = bundleId;
 	}
 
 	public String getMiniAppId() {

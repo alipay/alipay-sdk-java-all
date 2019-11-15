@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.priceoptimizer.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-31 16:58:58
+ * @since 1.0, 2019-10-26 19:58:49
  */
 public class AlipayDataAiservicePriceoptimizerGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6556923144548588292L;
+	private static final long serialVersionUID = 2664397757928293462L;
 
 	/** 
 	 * 推荐价格返回列表

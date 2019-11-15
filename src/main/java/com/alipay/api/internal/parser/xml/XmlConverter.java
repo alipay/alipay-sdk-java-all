@@ -229,14 +229,16 @@ public class XmlConverter implements Converter {
         //  第一个字母+长度+>
         int signDataStartIndex = indexOfRootNode + rootNode.length() + 1;
         int indexOfSign = body.indexOf("<" + AlipayConstants.SIGN);
+        int indexOfCert = body.indexOf("<" + AlipayConstants.ALIPAY_CERT_SN);
 
         if (indexOfSign < 0) {
-
             return null;
         }
 
-        // 签名前减去
         int signDataEndIndex = indexOfSign;
+        if (indexOfCert > 0) {
+            signDataEndIndex = indexOfCert < indexOfSign ? indexOfCert : indexOfSign;
+        }
 
         return body.substring(signDataStartIndex, signDataEndIndex);
     }
@@ -261,8 +263,6 @@ public class XmlConverter implements Converter {
      * @return
      */
     private ResponseParseItem getXMLSignSourceData(AlipayRequest<?> request, String body) {
-
-        // XML涓�������������
         String rootNode = request.getApiMethodName().replace('.', '_')
                 + AlipayConstants.RESPONSE_SUFFIX;
         String errorRootNode = AlipayConstants.ERROR_RESPONSE;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 垃圾分类智能识别
  *
  * @author auto create
- * @since 1.0, 2019-07-24 11:09:06
+ * @since 1.0, 2019-10-12 12:15:45
  */
 public class AlipayIserviceCognitiveClassificationWasteQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8351686385574878992L;
+	private static final long serialVersionUID = 3431292787595547763L;
 
 	/**
 	 * 业务编码
@@ -48,6 +48,12 @@ public class AlipayIserviceCognitiveClassificationWasteQueryModel extends Alipay
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * 业务上游流量来源
+	 */
+	@ApiField("source")
+	private String source;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -95,6 +101,13 @@ public class AlipayIserviceCognitiveClassificationWasteQueryModel extends Alipay
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 	public String getUserId() {

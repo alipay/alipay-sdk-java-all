@@ -19,7 +19,7 @@ public interface Converter {
      * @return 响应对象
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T toResponse(String rsp, Class<T> clazz)
+    <T extends AlipayResponse> T toResponse(String rsp, Class<T> clazz)
             throws AlipayApiException;
 
     /**
@@ -30,7 +30,7 @@ public interface Converter {
      * @return
      * @throws AlipayApiException
      */
-    public SignItem getSignItem(AlipayRequest<?> request, String responseBody)
+    SignItem getSignItem(AlipayRequest<?> request, String responseBody)
             throws AlipayApiException;
 
     /**
@@ -41,7 +41,7 @@ public interface Converter {
      * @return
      * @throws AlipayApiException
      */
-    public CertItem getCertItem(AlipayRequest<?> request, String responseBody)
+    CertItem getCertItem(AlipayRequest<?> request, String responseBody)
             throws AlipayApiException;
 
     /**
@@ -56,8 +56,8 @@ public interface Converter {
      * @return
      * @throws AlipayApiException
      */
-    public String decryptSourceData(AlipayRequest<?> request, String body, String format,
-                                    Decryptor decryptor, String encryptType, String charset)
+    String decryptSourceData(AlipayRequest<?> request, String body, String format,
+                             Decryptor decryptor, String encryptType, String charset)
             throws AlipayApiException;
 
 }

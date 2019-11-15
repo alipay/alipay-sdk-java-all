@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内部小程序 - 批量查询信息
  *
  * @author auto create
- * @since 1.0, 2019-05-09 11:30:28
+ * @since 1.0, 2019-10-14 19:59:10
  */
 public class AlipayOpenMiniInnerbaseinfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4795322642424112235L;
+	private static final long serialVersionUID = 4696442756243878415L;
 
 	/**
 	 * 租户code，alipay or taobao

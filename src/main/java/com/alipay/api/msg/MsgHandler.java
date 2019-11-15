@@ -9,5 +9,5 @@ package com.alipay.api.msg;
  */
 public interface MsgHandler {
 
-    public void onMessage(String msgApi, String msgId, String bizContent);
+    void onMessage(String msgApi, String msgId, String bizContent);
 }

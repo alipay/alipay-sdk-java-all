@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建/修改单元
  *
  * @author auto create
- * @since 1.0, 2019-07-30 17:27:32
+ * @since 1.0, 2019-11-01 10:45:15
  */
 public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7568548944728483666L;
+	private static final long serialVersionUID = 8818752551871253949L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -41,10 +41,17 @@ public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObjec
 	private String groupName;
 
 	/**
-	 * 外部单元编号
+	 * 外部唯一单元编号
 	 */
 	@ApiField("group_outer_id")
 	private String groupOuterId;
+
+	/**
+	 * 单元状态：ENABLE-生效；DISABLE-暂停。
+若此入参字段为空：新建单元时此字段默认有效；修改单元此字段默认为单元当前状态。
+	 */
+	@ApiField("group_status")
+	private String groupStatus;
 
 	/**
 	 * 商品id列表
@@ -54,13 +61,17 @@ public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObjec
 	private List<String> itemIdList;
 
 	/**
-	 * 外部计划编号
+	 * 外部唯一计划编号
 	 */
 	@ApiField("plan_outer_id")
 	private String planOuterId;
 
 	/**
-	 * 单元定向列表
+	 * 单元定向列表。目前支持的定向类型有：
+REGION_LIST: 实时地址
+AD_POS_LIST: 广告位定向
+OUTER_KOUBEI_INTEREST_TAG_LIST: 口碑偏好
+OUTER_KOUBEI_CROWD_TAG_LIST：口碑人群
 	 */
 	@ApiListField("targeting_list")
 	@ApiField("outer_targeting_item")
@@ -71,6 +82,12 @@ public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObjec
 	 */
 	@ApiField("time_option")
 	private String timeOption;
+
+	/**
+	 * 投放时段配置，bitmap。规则：7个int用「,」分隔组成的字符串；每个int中第0位表示0点，第1位表示1点。如此类推; 7个int的排序是星期日、星期一、星期二、星期三、星期四、星期五、星期六
+	 */
+	@ApiField("time_schema")
+	private String timeSchema;
 
 	public String getBizToken() {
 		return this.bizToken;
@@ -107,6 +124,13 @@ public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObjec
 		this.groupOuterId = groupOuterId;
 	}
 
+	public String getGroupStatus() {
+		return this.groupStatus;
+	}
+	public void setGroupStatus(String groupStatus) {
+		this.groupStatus = groupStatus;
+	}
+
 	public List<String> getItemIdList() {
 		return this.itemIdList;
 	}
@@ -133,6 +157,13 @@ public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObjec
 	}
 	public void setTimeOption(String timeOption) {
 		this.timeOption = timeOption;
+	}
+
+	public String getTimeSchema() {
+		return this.timeSchema;
+	}
+	public void setTimeSchema(String timeSchema) {
+		this.timeSchema = timeSchema;
 	}
 
 }

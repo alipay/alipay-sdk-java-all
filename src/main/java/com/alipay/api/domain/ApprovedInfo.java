@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiField;
 EVOA approve infos.
  *
  * @author auto create
- * @since 1.0, 2019-07-31 14:35:43
+ * @since 1.0, 2019-11-15 10:20:55
  */
 public class ApprovedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4169664713889459223L;
+	private static final long serialVersionUID = 4519112677378912744L;
 
 	/**
 	 * 用户申请订单号回传。
@@ -57,6 +57,12 @@ Note.
 	 */
 	@ApiField("note")
 	private String note;
+
+	/**
+	 * 支付费用详情
+	 */
+	@ApiField("payment_confirm_url")
+	private String paymentConfirmUrl;
 
 	/**
 	 * URL to download receipt.
@@ -140,6 +146,13 @@ TM88 文件下载地址。
 	}
 	public void setNote(String note) {
 		this.note = note;
+	}
+
+	public String getPaymentConfirmUrl() {
+		return this.paymentConfirmUrl;
+	}
+	public void setPaymentConfirmUrl(String paymentConfirmUrl) {
+		this.paymentConfirmUrl = paymentConfirmUrl;
 	}
 
 	public String getReceiptUrl() {

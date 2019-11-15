@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.mall.event.send request
  * 
  * @author auto create
- * @since 1.0, 2019-09-16 17:50:37
+ * @since 1.0, 2019-10-09 10:31:52
  */
 public class KoubeiMallEventSendRequest implements AlipayRequest<KoubeiMallEventSendResponse> {
 

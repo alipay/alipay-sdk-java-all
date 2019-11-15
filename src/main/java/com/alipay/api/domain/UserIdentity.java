@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户身份识别信息
  *
  * @author auto create
- * @since 1.0, 2019-09-11 17:10:03
+ * @since 1.0, 2019-09-30 18:02:07
  */
 public class UserIdentity extends AlipayObject {
 
-	private static final long serialVersionUID = 7324542517179825578L;
+	private static final long serialVersionUID = 3537539882755228844L;
 
 	/**
 	 * 用户身份识别值。根据type和issuer传入对应格式的值：若type为USER_ID，issuer为ALIPAY，则identity为2088开头的16位纯数字。若type为USER_ID，issuer为MERCHANT，则identity根据商户定义的格式传入。若type为BAR_CODE，issuer为ALIPAY，则identity为25~30开头的长度为16~24位数字的支付宝付款码（实际字符串长度以及规则可能会进行调整与优化，以开发者获取的付款码长度为准）

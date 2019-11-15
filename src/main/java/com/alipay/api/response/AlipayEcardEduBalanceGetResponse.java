@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcardEduBalanceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4749237986956145275L;
+	private static final long serialVersionUID = 3885898883357197737L;
 
 	/** 
 	 * 校园一卡通余额查询结果对象

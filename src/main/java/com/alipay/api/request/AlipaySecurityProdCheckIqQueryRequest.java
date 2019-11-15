@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.check.iq.query request
  * 
  * @author auto create
- * @since 1.0, 2019-09-17 17:03:26
+ * @since 1.0, 2019-11-04 16:04:07
  */
 public class AlipaySecurityProdCheckIqQueryRequest implements AlipayRequest<AlipaySecurityProdCheckIqQueryResponse> {
 

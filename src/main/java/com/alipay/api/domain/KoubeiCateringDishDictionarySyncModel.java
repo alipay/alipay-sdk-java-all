@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品字典数据同步
  *
  * @author auto create
- * @since 1.0, 2019-01-07 17:47:22
+ * @since 1.0, 2019-10-18 16:48:57
  */
 public class KoubeiCateringDishDictionarySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8899498253576941988L;
+	private static final long serialVersionUID = 5711837539329182327L;
 
 	/**
 	 * 业务字典类型. 定义如下: catetory 分类 ;unit 单位;spec 规格 。

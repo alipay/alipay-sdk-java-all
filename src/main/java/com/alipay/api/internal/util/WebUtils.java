@@ -608,7 +608,7 @@ public class WebUtils {
     }
 
     public static String buildForm(String baseUrl, Map<String, String> parameters) {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("<form name=\"punchout_form\" method=\"post\" action=\"");
         sb.append(baseUrl);
         sb.append("\">\n");
@@ -625,7 +625,7 @@ public class WebUtils {
         if (parameters == null || parameters.isEmpty()) {
             return "";
         }
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         Set<String> keys = parameters.keySet();
         for (String key : keys) {
             String value = parameters.get(key);
@@ -635,12 +635,11 @@ public class WebUtils {
             }
             sb.append(buildHiddenField(key, value));
         }
-        String result = sb.toString();
-        return result;
+        return sb.toString();
     }
 
     private static String buildHiddenField(String key, String value) {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("<input type=\"hidden\" name=\"");
         sb.append(key);
 

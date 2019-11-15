@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发起代扣
  *
  * @author auto create
- * @since 1.0, 2019-07-20 21:51:33
+ * @since 1.0, 2019-11-12 19:52:42
  */
 public class AlipayCommerceTransportVehicleownerSettlementApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4677417152731698692L;
+	private static final long serialVersionUID = 1141331853891138317L;
 
 	/**
 	 * 阿里门店编号
 	 */
 	@ApiField("alipay_store_id")
 	private String alipayStoreId;
+
+	/**
+	 * 银行追款场景数据
+	 */
+	@ApiField("bank_repay_data")
+	private BankRepayData bankRepayData;
 
 	/**
 	 * 业务扣款协议号，由用户申请办理时生成并同步给外部；ETC卡号、车牌号码、OBU设备号、扣款协议号四者不能同时为空。
@@ -32,6 +38,7 @@ PARKING 车场停车场景;
 PARKING_SPACE 车位停车场景; 
 GAS 加油场景;
 BRIDGE 路桥场景;
+BANK_REPAY_SETTLE 银行追款;
 	 */
 	@ApiField("biz_scene_code")
 	private String bizSceneCode;
@@ -116,6 +123,12 @@ BRIDGE 路桥场景;
 	private String sellerId;
 
 	/**
+	 * 结算描述信息
+	 */
+	@ApiField("settle_info")
+	private VehicleSettleInfo settleInfo;
+
+	/**
 	 * 商户门店编号
 	 */
 	@ApiField("store_id")
@@ -156,6 +169,13 @@ BRIDGE 路桥场景;
 	}
 	public void setAlipayStoreId(String alipayStoreId) {
 		this.alipayStoreId = alipayStoreId;
+	}
+
+	public BankRepayData getBankRepayData() {
+		return this.bankRepayData;
+	}
+	public void setBankRepayData(BankRepayData bankRepayData) {
+		this.bankRepayData = bankRepayData;
 	}
 
 	public String getBizAgreementNo() {
@@ -254,6 +274,13 @@ BRIDGE 路桥场景;
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public VehicleSettleInfo getSettleInfo() {
+		return this.settleInfo;
+	}
+	public void setSettleInfo(VehicleSettleInfo settleInfo) {
+		this.settleInfo = settleInfo;
 	}
 
 	public String getStoreId() {

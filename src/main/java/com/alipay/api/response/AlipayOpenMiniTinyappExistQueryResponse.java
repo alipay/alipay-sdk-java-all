@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.tinyapp.exist.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-11-13 17:15:36
  */
 public class AlipayOpenMiniTinyappExistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5443458881499932738L;
+	private static final long serialVersionUID = 8345375993889253828L;
 
 	/** 
 	 * 是否是小程序开发者

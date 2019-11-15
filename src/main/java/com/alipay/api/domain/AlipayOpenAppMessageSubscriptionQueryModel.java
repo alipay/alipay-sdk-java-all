@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询消息订阅关系
  *
  * @author auto create
- * @since 1.0, 2019-07-18 11:26:47
+ * @since 1.0, 2019-10-12 14:00:18
  */
 public class AlipayOpenAppMessageSubscriptionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6453472563246273839L;
+	private static final long serialVersionUID = 1316811342435587963L;
 
 	/**
 	 * 授权令牌
@@ -24,6 +24,12 @@ public class AlipayOpenAppMessageSubscriptionQueryModel extends AlipayObject {
 	 */
 	@ApiField("auth_type")
 	private String authType;
+
+	/**
+	 * 消息标签，用于消息子类型过滤。使用前请确认消息topic是否支持
+	 */
+	@ApiField("tag")
+	private String tag;
 
 	/**
 	 * 消息主题名称
@@ -43,6 +49,13 @@ public class AlipayOpenAppMessageSubscriptionQueryModel extends AlipayObject {
 	}
 	public void setAuthType(String authType) {
 		this.authType = authType;
+	}
+
+	public String getTag() {
+		return this.tag;
+	}
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
 
 	public String getTopic() {

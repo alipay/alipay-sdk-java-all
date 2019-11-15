@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-19 22:36:49
+ * @since 1.0, 2019-10-23 20:28:00
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7789188337811215516L;
+	private static final long serialVersionUID = 4668613111457125584L;
 
 	/** 
 	 * 详细地址。
@@ -311,7 +311,7 @@ T--被冻结；F--未冻结
 	/** 
 	 * 用户状态（Q/T/B/W）。
 Q代表快速注册用户
-T代表已认证用户
+T代表正常用户
 B代表被冻结账户
 W代表已注册，未激活的账户
 	 */

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料生产指令对象, 包括物料生产的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 物料图片Url, 数量,  申请日期,收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2019-01-16 13:56:16
+ * @since 1.0, 2019-09-29 10:31:42
  */
 public class AssetProduceItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7243557431394933769L;
+	private static final long serialVersionUID = 4211612673344717266L;
+
+	/**
+	 * 生产指令动作类别：套组则为ASSEMBLE，组装
+	 */
+	@ApiField("action_type")
+	private String actionType;
 
 	/**
 	 * 申请日期，格式yyyy-MM-dd HH：mm:ss
@@ -193,6 +199,13 @@ public class AssetProduceItem extends AlipayObject {
 	 */
 	@ApiField("template_name")
 	private String templateName;
+
+	public String getActionType() {
+		return this.actionType;
+	}
+	public void setActionType(String actionType) {
+		this.actionType = actionType;
+	}
 
 	public String getApplyDate() {
 		return this.applyDate;

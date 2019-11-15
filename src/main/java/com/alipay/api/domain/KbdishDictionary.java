@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品数据字典模型
  *
  * @author auto create
- * @since 1.0, 2018-08-03 17:45:25
+ * @since 1.0, 2019-10-18 16:47:39
  */
 public class KbdishDictionary extends AlipayObject {
 
-	private static final long serialVersionUID = 3199929834274255663L;
+	private static final long serialVersionUID = 7599282132521376299L;
 
 	/**
 	 * 商家门店的操作小二,创建数据的人

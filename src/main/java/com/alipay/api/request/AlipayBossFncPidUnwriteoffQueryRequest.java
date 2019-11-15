@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.pid.unwriteoff.query request
  * 
  * @author auto create
- * @since 1.0, 2019-07-10 11:55:01
+ * @since 1.0, 2019-10-25 14:08:30
  */
 public class AlipayBossFncPidUnwriteoffQueryRequest implements AlipayRequest<AlipayBossFncPidUnwriteoffQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部机构对用户的通知接口
  *
  * @author auto create
- * @since 1.0, 2019-06-24 14:13:36
+ * @since 1.0, 2019-11-08 17:42:02
  */
 public class AlipayEbppCommonNotifySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6411139797971244597L;
+	private static final long serialVersionUID = 1442673229557395341L;
 
 	/**
 	 * 水电燃等机构为用户分配的户号

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.poi.showstatus.modify request
  * 
  * @author auto create
- * @since 1.0, 2019-01-23 15:45:01
+ * @since 1.0, 2019-09-30 18:14:01
  */
 public class AlipayOpenMiniPoiShowstatusModifyRequest implements AlipayRequest<AlipayOpenMiniPoiShowstatusModifyResponse> {
 

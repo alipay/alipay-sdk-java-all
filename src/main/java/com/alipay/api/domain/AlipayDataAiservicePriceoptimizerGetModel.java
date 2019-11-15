@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 猛犸定价接口
  *
  * @author auto create
- * @since 1.0, 2019-05-31 13:10:44
+ * @since 1.0, 2019-10-26 19:58:35
  */
 public class AlipayDataAiservicePriceoptimizerGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7746649167257818674L;
+	private static final long serialVersionUID = 2324696138486952535L;
 
 	/**
 	 * 接口版本号

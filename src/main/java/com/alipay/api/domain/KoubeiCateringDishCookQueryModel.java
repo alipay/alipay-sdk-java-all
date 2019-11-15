@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜谱查询
  *
  * @author auto create
- * @since 1.0, 2019-01-07 17:46:52
+ * @since 1.0, 2019-10-18 16:52:06
  */
 public class KoubeiCateringDishCookQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2898773415449787929L;
+	private static final long serialVersionUID = 7371878526543457913L;
 
 	/**
 	 * 菜谱id

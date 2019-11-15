@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增或修改创意
  *
  * @author auto create
- * @since 1.0, 2019-07-30 17:26:31
+ * @since 1.0, 2019-10-25 19:10:36
  */
 public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2345631245137262979L;
+	private static final long serialVersionUID = 2744358827737489568L;
+
+	/**
+	 * 创意交互行为属性实例值
+	 */
+	@ApiListField("action_property_list")
+	@ApiField("action_property")
+	private List<ActionProperty> actionPropertyList;
 
 	/**
 	 * 落地页动作类型，NO_ACTION-无动作；LP-普通落地页；OPEN_TINYAPP-打开小程序；OPEN_CHANNELS-打开生活号；COLLECT_TINYAPP-收藏小程序；
@@ -80,6 +87,12 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	private List<String> regionList;
 
 	/**
+	 * 创意状态，ENABLE-生效；PAUSE-暂停
+	 */
+	@ApiField("status")
+	private String status;
+
+	/**
 	 * 门店创意关联门店ID，目前仅口碑使用
 	 */
 	@ApiField("store_id")
@@ -102,6 +115,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	 */
 	@ApiField("template_id")
 	private Long templateId;
+
+	public List<ActionProperty> getActionPropertyList() {
+		return this.actionPropertyList;
+	}
+	public void setActionPropertyList(List<ActionProperty> actionPropertyList) {
+		this.actionPropertyList = actionPropertyList;
+	}
 
 	public String getActionType() {
 		return this.actionType;
@@ -171,6 +191,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	}
 	public void setRegionList(List<String> regionList) {
 		this.regionList = regionList;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getStoreId() {

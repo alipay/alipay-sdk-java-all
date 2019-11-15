@@ -15,7 +15,7 @@ public interface AlipayRequest<T extends AlipayResponse> {
      *
      * @return API名称
      */
-    public String getApiMethodName();
+    String getApiMethodName();
 
     /**
      * 获取所有的Key-Value形式的文本请求参数集合。其中：
@@ -26,119 +26,119 @@ public interface AlipayRequest<T extends AlipayResponse> {
      *
      * @return 文本请求参数集合
      */
-    public Map<String, String> getTextParams();
+    Map<String, String> getTextParams();
 
     /**
      * 得到当前接口的版本
      *
      * @return API版本
      */
-    public String getApiVersion();
+    String getApiVersion();
 
     /**
      * 设置当前API的版本信息
      *
      * @param apiVersion API版本
      */
-    public void setApiVersion(String apiVersion);
+    void setApiVersion(String apiVersion);
 
     /**
      * 获取终端类型
      *
      * @return 终端类型
      */
-    public String getTerminalType();
+    String getTerminalType();
 
     /**
      * 设置终端类型
      *
      * @param terminalType 终端类型
      */
-    public void setTerminalType(String terminalType);
+    void setTerminalType(String terminalType);
 
     /**
      * 获取终端信息
      *
      * @return 终端信息
      */
-    public String getTerminalInfo();
+    String getTerminalInfo();
 
     /**
      * 设置终端信息
      *
      * @param terminalInfo 终端信息
      */
-    public void setTerminalInfo(String terminalInfo);
+    void setTerminalInfo(String terminalInfo);
 
     /**
      * 获取产品码
      *
      * @return 产品码
      */
-    public String getProdCode();
+    String getProdCode();
 
     /**
      * 设置产品码
      *
      * @param prodCode 产品码
      */
-    public void setProdCode(String prodCode);
+    void setProdCode(String prodCode);
 
     /**
      * 返回通知地址
      *
      * @return
      */
-    public String getNotifyUrl();
+    String getNotifyUrl();
 
     /**
      * 设置通知地址
      *
      * @param notifyUrl
      */
-    public void setNotifyUrl(String notifyUrl);
+    void setNotifyUrl(String notifyUrl);
 
     /**
      * 返回回跳地址
      *
      * @return
      */
-    public String getReturnUrl();
+    String getReturnUrl();
 
     /**
      * 设置回跳地址
      *
-     * @param notifyUrl
+     * @param returnUrl
      */
-    public void setReturnUrl(String returnUrl);
+    void setReturnUrl(String returnUrl);
 
     /**
      * 得到当前API的响应结果类型
      *
      * @return 响应类型
      */
-    public Class<T> getResponseClass();
+    Class<T> getResponseClass();
 
     /**
      * 判断是否需要加密
      *
      * @return
      */
-    public boolean isNeedEncrypt();
+    boolean isNeedEncrypt();
 
     /**
      * 设置请求是否需要加密
      *
      * @param needEncrypt
      */
-    public void setNeedEncrypt(boolean needEncrypt);
+    void setNeedEncrypt(boolean needEncrypt);
 
-    public AlipayObject getBizModel();
+    AlipayObject getBizModel();
 
     /**
      * 设置业务实体，如需使用此方法，请勿直接设置biz_content
      *
      * @param bizModel
      */
-    public void setBizModel(AlipayObject bizModel);
+    void setBizModel(AlipayObject bizModel);
 }

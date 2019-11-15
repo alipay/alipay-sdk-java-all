@@ -10,17 +10,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品创建接口
  *
  * @author auto create
- * @since 1.0, 2019-09-16 19:45:30
+ * @since 1.0, 2019-10-12 17:32:42
  */
 public class AntMerchantExpandItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6749585698962547822L;
+	private static final long serialVersionUID = 1161136115653551829L;
+
+	/**
+	 * 详情地址
+	 */
+	@ApiField("detail_url")
+	private String detailUrl;
 
 	/**
 	 * 商品扩展信息：可以解析成 Map<String, String> 的 json string
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 外部商品ID
+	 */
+	@ApiField("external_item_id")
+	private String externalItemId;
 
 	/**
 	 * 前台类目id：target_type + target_id 和 front_category_id 二选一
@@ -34,6 +46,12 @@ public class AntMerchantExpandItemCreateModel extends AlipayObject {
 	@ApiListField("label_list")
 	@ApiField("item_label_create_info")
 	private List<ItemLabelCreateInfo> labelList;
+
+	/**
+	 * 主图地址
+	 */
+	@ApiField("main_pic")
+	private String mainPic;
 
 	/**
 	 * 商品名称
@@ -73,11 +91,25 @@ public class AntMerchantExpandItemCreateModel extends AlipayObject {
 	@ApiField("target_type")
 	private String targetType;
 
+	public String getDetailUrl() {
+		return this.detailUrl;
+	}
+	public void setDetailUrl(String detailUrl) {
+		this.detailUrl = detailUrl;
+	}
+
 	public String getExtInfo() {
 		return this.extInfo;
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getExternalItemId() {
+		return this.externalItemId;
+	}
+	public void setExternalItemId(String externalItemId) {
+		this.externalItemId = externalItemId;
 	}
 
 	public String getFrontCategoryId() {
@@ -92,6 +124,13 @@ public class AntMerchantExpandItemCreateModel extends AlipayObject {
 	}
 	public void setLabelList(List<ItemLabelCreateInfo> labelList) {
 		this.labelList = labelList;
+	}
+
+	public String getMainPic() {
+		return this.mainPic;
+	}
+	public void setMainPic(String mainPic) {
+		this.mainPic = mainPic;
 	}
 
 	public String getName() {

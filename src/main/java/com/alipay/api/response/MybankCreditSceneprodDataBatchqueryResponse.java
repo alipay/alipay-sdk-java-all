@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditSceneprodDataBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7245589293548235833L;
+	private static final long serialVersionUID = 8622572952633156636L;
 
 	/** 
 	 * 订单数据查询的返回值。通过列表方式批量返回机构的订单查询数据。通过系统控制返回的数据中不包含客户的敏感信息。

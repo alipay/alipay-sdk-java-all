@@ -9,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.customer.certifyzhub.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-16 11:17:12
+ * @since 1.0, 2019-09-23 13:30:01
  */
 public class ZolozIdentificationCustomerCertifyzhubQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8262216395357671269L;
+	private static final long serialVersionUID = 5113976144214673742L;
+
+	/** 
+	 * 是否为攻击
+	 */
+	@ApiField("attack")
+	private Boolean attack;
 
 	/** 
 	 * 业务单据号，用于核对和排查
@@ -44,6 +50,13 @@ public class ZolozIdentificationCustomerCertifyzhubQueryResponse extends AlipayR
 	 */
 	@ApiField("zim_msg")
 	private String zimMsg;
+
+	public void setAttack(Boolean attack) {
+		this.attack = attack;
+	}
+	public Boolean getAttack( ) {
+		return this.attack;
+	}
 
 	public void setBizId(String bizId) {
 		this.bizId = bizId;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-09 15:48:52
+ * @since 1.0, 2019-10-19 09:32:00
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6369896913766333974L;
+	private static final long serialVersionUID = 1882233112864377519L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -87,6 +87,12 @@ alipay.fund.trans.uni.transfer、alipay.fund.trans.refund涉及的状态：SUCCE
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 付款金额，收银台场景下付款成功后的支付金额，订单状态为SUCCESS才返回，其他状态不返回。
+	 */
+	@ApiField("trans_amount")
+	private String transAmount;
 
 	/** 
 	 * 商户在查询代发订单信息时返回其在代发请求中传入的账单属性。
@@ -169,6 +175,13 @@ alipay.fund.trans.uni.transfer、alipay.fund.trans.refund涉及的状态：SUCCE
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTransAmount(String transAmount) {
+		this.transAmount = transAmount;
+	}
+	public String getTransAmount( ) {
+		return this.transAmount;
 	}
 
 	public void setTransferBillInfo(String transferBillInfo) {

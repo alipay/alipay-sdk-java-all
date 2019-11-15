@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品加料绑定菜品信息
  *
  * @author auto create
- * @since 1.0, 2018-12-27 14:36:27
+ * @since 1.0, 2019-10-18 16:48:09
  */
 public class KbdishMaterialBindingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4555659324684932271L;
+	private static final long serialVersionUID = 5229947884919912441L;
 
 	/**
 	 * 加料id

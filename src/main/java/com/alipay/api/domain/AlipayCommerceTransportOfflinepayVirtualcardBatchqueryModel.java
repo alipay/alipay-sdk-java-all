@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟卡信息查询
  *
  * @author auto create
- * @since 1.0, 2018-04-13 11:00:57
+ * @since 1.0, 2019-11-04 11:07:16
  */
 public class AlipayCommerceTransportOfflinepayVirtualcardBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7665251488429437965L;
+	private static final long serialVersionUID = 5429667242117556168L;
 
 	/**
 	 * 卡号。和卡类型一起，唯一确定一张卡。为空时将返回该用户该卡类型下的所有卡。
@@ -24,6 +24,14 @@ public class AlipayCommerceTransportOfflinepayVirtualcardBatchqueryModel extends
 	 */
 	@ApiField("card_type")
 	private String cardType;
+
+	/**
+	 * 是否返回包含已删除卡片
+false：不返回已删除卡片，默认值；
+true：返回已删除卡片
+	 */
+	@ApiField("include_deleted")
+	private Boolean includeDeleted;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -43,6 +51,13 @@ public class AlipayCommerceTransportOfflinepayVirtualcardBatchqueryModel extends
 	}
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
+	}
+
+	public Boolean getIncludeDeleted() {
+		return this.includeDeleted;
+	}
+	public void setIncludeDeleted(Boolean includeDeleted) {
+		this.includeDeleted = includeDeleted;
 	}
 
 	public String getUserId() {

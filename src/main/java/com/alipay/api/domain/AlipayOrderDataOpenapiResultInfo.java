@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2019-08-01 14:52:30
+ * @since 1.0, 2019-11-14 14:06:04
  */
 public class AlipayOrderDataOpenapiResultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7579184343582376555L;
+	private static final long serialVersionUID = 1236727777735658419L;
 
 	/**
 	 * 订单金额，单位为元
@@ -38,7 +38,7 @@ public class AlipayOrderDataOpenapiResultInfo extends AlipayObject {
 	private String buyerId;
 
 	/**
-	 * 订单优惠金额
+	 * 总的订单优惠金额
 	 */
 	@ApiField("discount_amount")
 	private String discountAmount;
@@ -111,6 +111,18 @@ REFUNDED-已退款
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
+
+	/**
+	 * 商户前置额外费用
+	 */
+	@ApiField("pre_cost")
+	private PreAmountInfoResult preCost;
+
+	/**
+	 * 商户前置营销优惠
+	 */
+	@ApiField("pre_promotion")
+	private PreAmountInfoResult prePromotion;
 
 	/**
 	 * 买家实付金额
@@ -232,6 +244,20 @@ REFUNDED-已退款
 	}
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
+	}
+
+	public PreAmountInfoResult getPreCost() {
+		return this.preCost;
+	}
+	public void setPreCost(PreAmountInfoResult preCost) {
+		this.preCost = preCost;
+	}
+
+	public PreAmountInfoResult getPrePromotion() {
+		return this.prePromotion;
+	}
+	public void setPrePromotion(PreAmountInfoResult prePromotion) {
+		this.prePromotion = prePromotion;
 	}
 
 	public String getRealPayAmount() {

@@ -79,7 +79,7 @@ public class CertItem implements Serializable {
     /**
      * Setter method for property <tt>sign</tt>.
      *
-     * @param sign value to be assigned to property sign
+     * @param cert value to be assigned to property cert
      */
     public void setCert(String cert) {
         this.cert = cert;

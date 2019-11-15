@@ -26,75 +26,31 @@ public class AlipayRequestWrapper {
      **/
     private String appAuthToken;
 
-    public AlipayRequestWrapper() {
-    }
+    /**
+     * SPI接口路由参数
+     */
+    private String targetAppId;
 
-    public AlipayRequestWrapper(AlipayRequest alipayRequest) {
-        this.alipayRequest = alipayRequest;
-    }
-
-    public AlipayRequestWrapper(AlipayRequest alipayRequest, String accessToken) {
-        this.alipayRequest = alipayRequest;
-        this.accessToken = accessToken;
-    }
-
-    public AlipayRequestWrapper(AlipayRequest alipayRequest, String accessToken, String appAuthToken) {
+    public AlipayRequestWrapper(AlipayRequest alipayRequest, String accessToken, String appAuthToken, String targetAppId) {
         this.alipayRequest = alipayRequest;
         this.accessToken = accessToken;
         this.appAuthToken = appAuthToken;
+        this.targetAppId = targetAppId;
     }
 
-    /**
-     * Getter method for property <tt>alipayRequest</tt>.
-     *
-     * @return property value of alipayRequest
-     */
     public AlipayRequest getAlipayRequest() {
         return alipayRequest;
     }
 
-    /**
-     * Setter method for property <tt>alipayRequest </tt>.
-     *
-     * @param alipayRequest value to be assigned to property alipayRequest
-     */
-    public void setAlipayRequest(AlipayRequest alipayRequest) {
-        this.alipayRequest = alipayRequest;
-    }
-
-    /**
-     * Getter method for property <tt>accessToken</tt>.
-     *
-     * @return property value of accessToken
-     */
     public String getAccessToken() {
         return accessToken;
     }
 
-    /**
-     * Setter method for property <tt>accessToken </tt>.
-     *
-     * @param accessToken value to be assigned to property accessToken
-     */
-    public void setAccessToken(String accessToken) {
-        this.accessToken = accessToken;
-    }
-
-    /**
-     * Getter method for property <tt>appAuthToken</tt>.
-     *
-     * @return property value of appAuthToken
-     */
     public String getAppAuthToken() {
         return appAuthToken;
     }
 
-    /**
-     * Setter method for property <tt>appAuthToken </tt>.
-     *
-     * @param appAuthToken value to be assigned to property appAuthToken
-     */
-    public void setAppAuthToken(String appAuthToken) {
-        this.appAuthToken = appAuthToken;
+    public String getTargetAppId() {
+        return targetAppId;
     }
 }

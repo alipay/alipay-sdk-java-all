@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.invoicereceipt.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2019-09-12 15:42:15
+ * @since 1.0, 2019-10-25 14:11:43
  */
 public class AlipayBossFncInvoicereceiptBatchqueryRequest implements AlipayRequest<AlipayBossFncInvoicereceiptBatchqueryResponse> {
 

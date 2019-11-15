@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期性扣款协议执行计划修改接口
  *
  * @author auto create
- * @since 1.0, 2019-05-15 10:44:40
+ * @since 1.0, 2019-10-15 18:36:01
  */
 public class AlipayUserAgreementExecutionplanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8825577478443745597L;
+	private static final long serialVersionUID = 7393784717157998994L;
 
 	/**
 	 * 周期性扣款产品，授权免密支付协议号

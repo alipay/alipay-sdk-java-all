@@ -1,0 +1,42 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 查询单元
+ *
+ * @author auto create
+ * @since 1.0, 2019-11-01 10:45:38
+ */
+public class AlipayDataDataserviceAdGroupQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 5793684847956655359L;
+
+	/**
+	 * 灯火平台提供给外部系统的访问token
+	 */
+	@ApiField("biz_token")
+	private String bizToken;
+
+	/**
+	 * 外部唯一单元编号
+	 */
+	@ApiField("group_outer_id")
+	private String groupOuterId;
+
+	public String getBizToken() {
+		return this.bizToken;
+	}
+	public void setBizToken(String bizToken) {
+		this.bizToken = bizToken;
+	}
+
+	public String getGroupOuterId() {
+		return this.groupOuterId;
+	}
+	public void setGroupOuterId(String groupOuterId) {
+		this.groupOuterId = groupOuterId;
+	}
+
+}

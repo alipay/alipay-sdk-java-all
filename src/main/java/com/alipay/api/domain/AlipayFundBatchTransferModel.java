@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量代发统一接口
  *
  * @author auto create
- * @since 1.0, 2018-05-21 20:51:50
+ * @since 1.0, 2019-10-14 16:49:42
  */
 public class AlipayFundBatchTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4362518886639689338L;
+	private static final long serialVersionUID = 7692599927237326436L;
 
 	/**
 	 * 代发到账户明细列。biz_code=BATCH_TRANS_ACC时，该参数必填。biz_code为其他值时忽略该参数。

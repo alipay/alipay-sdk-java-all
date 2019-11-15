@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 垫资查询
  *
  * @author auto create
- * @since 1.0, 2019-06-15 00:44:06
+ * @since 1.0, 2019-10-29 11:33:11
  */
 public class AlipayTradeAdvanceConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7319194975714239498L;
+	private static final long serialVersionUID = 2323192182154329936L;
 
 	/**
 	 * 支付宝用户id

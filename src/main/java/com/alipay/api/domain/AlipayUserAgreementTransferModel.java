@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 协议由普通通用代扣协议产品转移到周期扣协议产品
  *
  * @author auto create
- * @since 1.0, 2019-09-04 22:11:35
+ * @since 1.0, 2019-10-16 14:11:55
  */
 public class AlipayUserAgreementTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1897258587792528684L;
+	private static final long serialVersionUID = 6758112795744895882L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ），如果传了该参数，其他参数会被忽略
@@ -20,7 +20,7 @@ public class AlipayUserAgreementTransferModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
-	 * 周期管控规则参数period_rule_params，在签约周期扣款产品（如CYCLE_PAY_AUTH_P）时必传，在签约其他产品时无需传入。 周期扣款产品，会按照这里传入的参数提示用户，并对发起扣款的时间、金额、次数等做相应限制。
+	 * 周期管控规则参数period_rule_params，在签约周期扣款产品（如CYCLE_PAY_AUTH_P）时必传。 周期扣款产品，会按照这里传入的参数提示用户，并对发起扣款的时间、金额、次数等做相应限制。
 	 */
 	@ApiField("period_rule_params")
 	private PeriodRuleParams periodRuleParams;

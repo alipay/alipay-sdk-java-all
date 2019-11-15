@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.tinyapp.exist.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-11-13 17:15:36
  */
 public class AlipayOpenMiniTinyappExistQueryRequest implements AlipayRequest<AlipayOpenMiniTinyappExistQueryResponse> {
 

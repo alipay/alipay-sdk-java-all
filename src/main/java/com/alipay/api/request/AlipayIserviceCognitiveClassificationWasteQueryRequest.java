@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.cognitive.classification.waste.query request
  * 
  * @author auto create
- * @since 1.0, 2019-07-24 11:20:01
+ * @since 1.0, 2019-10-12 12:15:55
  */
 public class AlipayIserviceCognitiveClassificationWasteQueryRequest implements AlipayRequest<AlipayIserviceCognitiveClassificationWasteQueryResponse> {
 

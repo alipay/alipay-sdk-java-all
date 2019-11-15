@@ -16,7 +16,7 @@ public interface AlipayClient {
      * @return
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T execute(AlipayRequest<T> request) throws AlipayApiException;
+    <T extends AlipayResponse> T execute(AlipayRequest<T> request) throws AlipayApiException;
 
     /**
      * @param <T>
@@ -24,8 +24,8 @@ public interface AlipayClient {
      * @return
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T execute(AlipayRequest<T> request,
-                                                String authToken) throws AlipayApiException;
+    <T extends AlipayResponse> T execute(AlipayRequest<T> request,
+                                         String authToken) throws AlipayApiException;
 
     /**
      * @param request
@@ -34,8 +34,11 @@ public interface AlipayClient {
      * @return
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
-                                                String appAuthToken) throws AlipayApiException;
+    <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
+                                         String appAuthToken) throws AlipayApiException;
+
+    <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
+                                         String appAuthToken, String targetAppId) throws AlipayApiException;
 
     /**
      * @param <T>
@@ -43,7 +46,7 @@ public interface AlipayClient {
      * @return
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request) throws AlipayApiException;
+    <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request) throws AlipayApiException;
 
     /**
      * SDK客户端调用生成sdk字符串
@@ -53,15 +56,15 @@ public interface AlipayClient {
      * @return
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T sdkExecute(AlipayRequest<T> request) throws AlipayApiException;
+    <T extends AlipayResponse> T sdkExecute(AlipayRequest<T> request) throws AlipayApiException;
 
     /**
      * @param request
      * @return
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request,
-                                                    String method) throws AlipayApiException;
+    <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request,
+                                             String method) throws AlipayApiException;
 
     /**
      * 移动客户端同步结果返回解析的参考工具方法
@@ -71,8 +74,8 @@ public interface AlipayClient {
      * @return 同步返回结果的response对象
      * @throws AlipayApiException
      */
-    public <TR extends AlipayResponse, T extends AlipayRequest<TR>> TR parseAppSyncResult(Map<String, String> result,
-                                                                                          Class<T> requsetClazz) throws AlipayApiException;
+    <TR extends AlipayResponse, T extends AlipayRequest<TR>> TR parseAppSyncResult(Map<String, String> result,
+                                                                                   Class<T> requsetClazz) throws AlipayApiException;
 
     /**
      * 批量调用
@@ -81,7 +84,7 @@ public interface AlipayClient {
      * @return
      * @throws AlipayApiException
      */
-    public BatchAlipayResponse execute(BatchAlipayRequest request) throws AlipayApiException;
+    BatchAlipayResponse execute(BatchAlipayRequest request) throws AlipayApiException;
 
     /**
      * 证书类型调用
@@ -91,7 +94,7 @@ public interface AlipayClient {
      * @return
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request) throws AlipayApiException;
+    <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request) throws AlipayApiException;
 
     /**
      * @param request
@@ -99,8 +102,8 @@ public interface AlipayClient {
      * @return
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request,
-                                                           String authToken) throws AlipayApiException;
+    <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request,
+                                                    String authToken) throws AlipayApiException;
 
     /**
      * @param request
@@ -110,7 +113,9 @@ public interface AlipayClient {
      * @return
      * @throws AlipayApiException
      */
-    public <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request, String accessToken,
-                                                           String appAuthToken) throws AlipayApiException;
+    <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request, String accessToken,
+                                                    String appAuthToken) throws AlipayApiException;
 
+    <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request, String accessToken,
+                                                    String appAuthToken, String targetAppId) throws AlipayApiException;
 }

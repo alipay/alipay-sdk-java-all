@@ -18,6 +18,6 @@ public @interface ApiListField {
     /**
      * JSON列表属性映射名称
      **/
-    public String value() default "";
+    String value() default "";
 
 }

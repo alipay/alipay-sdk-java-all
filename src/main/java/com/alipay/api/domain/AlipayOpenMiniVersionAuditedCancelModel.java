@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序退回开发
  *
  * @author auto create
- * @since 1.0, 2018-12-25 14:15:12
+ * @since 1.0, 2019-10-31 18:06:27
  */
 public class AlipayOpenMiniVersionAuditedCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7588117548141629843L;
+	private static final long serialVersionUID = 3662534519423977213L;
 
 	/**
 	 * 小程序版本号
@@ -19,11 +19,25 @@ public class AlipayOpenMiniVersionAuditedCancelModel extends AlipayObject {
 	@ApiField("app_version")
 	private String appVersion;
 
+	/**
+	 * 小程序投放的端参数，例如投放到支付宝钱包是支付宝端。该参数可选，默认支付宝端
+com.alipay.alipaywallet:支付宝端
+	 */
+	@ApiField("bundle_id")
+	private String bundleId;
+
 	public String getAppVersion() {
 		return this.appVersion;
 	}
 	public void setAppVersion(String appVersion) {
 		this.appVersion = appVersion;
+	}
+
+	public String getBundleId() {
+		return this.bundleId;
+	}
+	public void setBundleId(String bundleId) {
+		this.bundleId = bundleId;
 	}
 
 }

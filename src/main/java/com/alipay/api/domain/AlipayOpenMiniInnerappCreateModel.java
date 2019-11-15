@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部链路小程序创建
  *
  * @author auto create
- * @since 1.0, 2019-09-16 12:11:36
+ * @since 1.0, 2019-09-29 10:32:17
  */
 public class AlipayOpenMiniInnerappCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4813753964128416329L;
+	private static final long serialVersionUID = 2397253369499728671L;
 
 	/**
 	 * 小程序类目，二级类目与三级类目下划线隔开，最多可以选择3个类目，类目之间以;隔开
@@ -72,6 +72,12 @@ public class AlipayOpenMiniInnerappCreateModel extends AlipayObject {
 	 */
 	@ApiField("isv_app_id")
 	private String isvAppId;
+
+	/**
+	 * 需要创建的小程序appId，面向手淘场景，其他场景勿用
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
 
 	/**
 	 * 创建的小程序所属的PID
@@ -159,6 +165,13 @@ public class AlipayOpenMiniInnerappCreateModel extends AlipayObject {
 	}
 	public void setIsvAppId(String isvAppId) {
 		this.isvAppId = isvAppId;
+	}
+
+	public String getMiniAppId() {
+		return this.miniAppId;
+	}
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
 	}
 
 	public String getPid() {

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.order.create request
  * 
  * @author auto create
- * @since 1.0, 2019-07-29 21:15:44
+ * @since 1.0, 2019-10-21 20:37:54
  */
 public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRequest<AlipayOpenServicemarketOrderCreateResponse> {
 
@@ -46,6 +46,11 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 	private String appName;
 
 	/** 
+	* 来源的业务方
+	 */
+	private String appOrigin;
+
+	/** 
 	* 小程序应用简介，一句话描述小程序功能
 	 */
 	private String appSlogan;
@@ -59,6 +64,11 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 	* 商户PID
 	 */
 	private String merchantPid;
+
+	/** 
+	* 一二方支持传入appId
+	 */
+	private String miniAppId;
 
 	/** 
 	* 比如某种业务标准外部订单号,比如交易外部订单号，代表商户端自己订单号
@@ -110,6 +120,13 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 		return this.appName;
 	}
 
+	public void setAppOrigin(String appOrigin) {
+		this.appOrigin = appOrigin;
+	}
+	public String getAppOrigin() {
+		return this.appOrigin;
+	}
+
 	public void setAppSlogan(String appSlogan) {
 		this.appSlogan = appSlogan;
 	}
@@ -129,6 +146,13 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 	}
 	public String getMerchantPid() {
 		return this.merchantPid;
+	}
+
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
+	}
+	public String getMiniAppId() {
+		return this.miniAppId;
 	}
 
 	public void setOutBizNo(String outBizNo) {
@@ -216,9 +240,11 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 		txtParams.put("app_desc", this.appDesc);
 		txtParams.put("app_english_name", this.appEnglishName);
 		txtParams.put("app_name", this.appName);
+		txtParams.put("app_origin", this.appOrigin);
 		txtParams.put("app_slogan", this.appSlogan);
 		txtParams.put("merchandise_id", this.merchandiseId);
 		txtParams.put("merchant_pid", this.merchantPid);
+		txtParams.put("mini_app_id", this.miniAppId);
 		txtParams.put("out_biz_no", this.outBizNo);
 		txtParams.put("service_email", this.serviceEmail);
 		txtParams.put("service_phone", this.servicePhone);

@@ -7,33 +7,39 @@ import com.alipay.api.internal.mapping.ApiField;
  * 封闭式教育场景-本地人脸比对结果同步
  *
  * @author auto create
- * @since 1.0, 2019-07-23 10:19:22
+ * @since 1.0, 2019-10-18 21:02:58
  */
 public class AlipayCommerceEducateLocalfaceCompareSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4179253264465772193L;
+	private static final long serialVersionUID = 5456452138924911271L;
 
 	/**
-	 * 算法版本
+	 * 客户端BehaviourLog-> aesCypher 参数
+	 */
+	@ApiField("aes_cypher")
+	private String aesCypher;
+
+	/**
+	 * 参照示例传入
 	 */
 	@ApiField("alg_ver")
 	private String algVer;
 
 	/**
-	 * 图片encode base64处理后的字符串
+	 * 客户端BehaviourLog->imageBlob参数
 	 */
 	@ApiField("auth_img")
 	private String authImg;
 
 	/**
-	 * SCHOOL_FACE_PAYMENT: 校园刷脸支付
+	 * SCHOOL_PAYMENT: 校园刷脸支付
 SCHOOL_ENTRANCE_GUARD:校园门禁
 	 */
 	@ApiField("biz_code")
 	private String bizCode;
 
 	/**
-	 * 业务流水唯一ID
+	 * 业务流水唯一ID,isv自定义，保证唯一性
 	 */
 	@ApiField("biz_id")
 	private String bizId;
@@ -51,19 +57,19 @@ SCHOOL_ENTRANCE_GUARD:校园门禁
 	private String faceDataType;
 
 	/**
-	 * 人脸本地1:N比对后的用户ID
+	 * 参数来源填写特征文件中对应的face_id 人脸本地1:N比对后的用户ID
 	 */
 	@ApiField("fuid")
 	private String fuid;
 
 	/**
-	 * ISV的名称
+	 * 必须是由支付宝业务方分配的英文简称(例如:yikeshixx),不能是中文
 	 */
 	@ApiField("isv_name")
 	private String isvName;
 
 	/**
-	 * 学校机构编码
+	 * 国家统一分配的学校社会信用代码(institution_id)
 	 */
 	@ApiField("organize_id")
 	private String organizeId;
@@ -85,6 +91,13 @@ SCHOOL_ENTRANCE_GUARD:校园门禁
 	 */
 	@ApiField("score")
 	private String score;
+
+	public String getAesCypher() {
+		return this.aesCypher;
+	}
+	public void setAesCypher(String aesCypher) {
+		this.aesCypher = aesCypher;
+	}
 
 	public String getAlgVer() {
 		return this.algVer;

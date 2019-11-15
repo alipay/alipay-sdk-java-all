@@ -31,20 +31,24 @@ public class BatchAlipayRequest implements AlipayRequest<BatchAlipayResponse> {
     private boolean needEncrypt = false;
 
     public BatchAlipayRequest addRequest(AlipayRequest alipayRequest) {
-        return addRequest(alipayRequest, null, null);
+        return addRequest(alipayRequest, null, null, null);
     }
 
     public BatchAlipayRequest addRequest(AlipayRequest alipayRequest, String accessToken) {
-        return addRequest(alipayRequest, accessToken, null);
+        return addRequest(alipayRequest, accessToken, null, null);
+    }
+
+    public BatchAlipayRequest addRequest(AlipayRequest alipayRequest, String accessToken, String appAuthToken) {
+        return addRequest(alipayRequest, accessToken, appAuthToken, null);
     }
 
     public BatchAlipayRequest addRequest(AlipayRequest alipayRequest, String accessToken,
-                                         String appAuthToken) {
+                                         String appAuthToken, String targetAppId) {
         if (this.requestList == null) {
             this.requestList = new ArrayList<AlipayRequestWrapper>();
         }
         AlipayRequestWrapper alipayRequestWrapper = new AlipayRequestWrapper(alipayRequest,
-                accessToken, appAuthToken);
+                accessToken, appAuthToken, targetAppId);
         this.requestList.add(alipayRequestWrapper);
 
         //若业务接口列表中存在需强制加密的接口，则本次批量调用强制加密

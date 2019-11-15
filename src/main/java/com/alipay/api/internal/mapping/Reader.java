@@ -18,7 +18,7 @@ public interface Reader {
      * @param name 属性名称
      * @return true/false
      */
-    public boolean hasReturnField(Object name);
+    boolean hasReturnField(Object name);
 
     /**
      * 读取单个基本对象。
@@ -26,7 +26,7 @@ public interface Reader {
      * @param name 映射名称
      * @return 基本对象值
      */
-    public Object getPrimitiveObject(Object name);
+    Object getPrimitiveObject(Object name);
 
     /**
      * 读取单个自定义对象。
@@ -36,7 +36,7 @@ public interface Reader {
      * @return 映射类型的实例
      * @throws AlipayApiException
      */
-    public Object getObject(Object name, Class<?> type) throws AlipayApiException;
+    Object getObject(Object name, Class<?> type) throws AlipayApiException;
 
     /**
      * 读取多个对象的值。
@@ -47,7 +47,7 @@ public interface Reader {
      * @return 嵌套映射类型实例列表
      * @throws AlipayApiException
      */
-    public List<?> getListObjects(Object listName, Object itemName, Class<?> subType)
+    List<?> getListObjects(Object listName, Object itemName, Class<?> subType)
             throws AlipayApiException;
 
 }

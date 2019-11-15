@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅消息topic
  *
  * @author auto create
- * @since 1.0, 2019-07-17 21:50:27
+ * @since 1.0, 2019-10-12 14:02:47
  */
 public class AlipayOpenAppMessageTopicSubscribeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4799589835545783164L;
+	private static final long serialVersionUID = 1847929136299146114L;
 
 	/**
 	 * 授权令牌
@@ -30,6 +30,12 @@ public class AlipayOpenAppMessageTopicSubscribeModel extends AlipayObject {
 	 */
 	@ApiField("comm_type")
 	private String commType;
+
+	/**
+	 * 消息标签，用于消息子类型过滤。使用前请确认消息topic是否支持
+	 */
+	@ApiField("tag")
+	private String tag;
 
 	/**
 	 * 消息主题名称
@@ -56,6 +62,13 @@ public class AlipayOpenAppMessageTopicSubscribeModel extends AlipayObject {
 	}
 	public void setCommType(String commType) {
 		this.commType = commType;
+	}
+
+	public String getTag() {
+		return this.tag;
+	}
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
 
 	public String getTopic() {

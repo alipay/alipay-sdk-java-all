@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境游发现平台优惠券详情
  *
  * @author auto create
- * @since 1.0, 2019-08-07 15:20:09
+ * @since 1.0, 2019-11-14 23:37:42
  */
 public class PromotionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2655565253844568489L;
+	private static final long serialVersionUID = 1364443789496453857L;
 
 	/**
 	 * 优惠品牌
@@ -48,6 +48,12 @@ public class PromotionInfo extends AlipayObject {
 	 */
 	@ApiField("main_image_url")
 	private String mainImageUrl;
+
+	/**
+	 * 券平台领券成功的券id
+	 */
+	@ApiField("out_prize_id")
+	private String outPrizeId;
 
 	/**
 	 * 优惠ID
@@ -137,6 +143,13 @@ public class PromotionInfo extends AlipayObject {
 	}
 	public void setMainImageUrl(String mainImageUrl) {
 		this.mainImageUrl = mainImageUrl;
+	}
+
+	public String getOutPrizeId() {
+		return this.outPrizeId;
+	}
+	public void setOutPrizeId(String outPrizeId) {
+		this.outPrizeId = outPrizeId;
 	}
 
 	public String getPromotionId() {

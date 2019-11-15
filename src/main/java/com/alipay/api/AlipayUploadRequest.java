@@ -19,6 +19,6 @@ public interface AlipayUploadRequest<T extends AlipayResponse> extends AlipayReq
      *
      * @return 文件请求参数集合
      */
-    public Map<String, FileItem> getFileParams();
+    Map<String, FileItem> getFileParams();
 
 }

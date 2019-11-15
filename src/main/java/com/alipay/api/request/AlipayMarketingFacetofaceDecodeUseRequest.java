@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.facetoface.decode.use request
  * 
  * @author auto create
- * @since 1.0, 2019-04-15 11:29:14
+ * @since 1.0, 2019-10-25 16:32:29
  */
 public class AlipayMarketingFacetofaceDecodeUseRequest implements AlipayRequest<AlipayMarketingFacetofaceDecodeUseResponse> {
 

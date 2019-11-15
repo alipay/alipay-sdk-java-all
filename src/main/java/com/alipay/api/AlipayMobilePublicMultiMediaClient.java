@@ -105,11 +105,17 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
     public <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
                                                 String appAuthToken) throws AlipayApiException {
 
-        return _execute(request, accessToken, appAuthToken);
+        return execute(request, accessToken, appAuthToken, null);
+    }
+
+    @Override
+    public <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken, String appAuthToken, String targetAppId)
+            throws AlipayApiException {
+        return _execute(request, accessToken, appAuthToken, targetAppId);
     }
 
     private <T extends AlipayResponse> T _execute(AlipayRequest<T> request, String authToken,
-                                                  String appAuthToken) throws AlipayApiException {
+                                                  String appAuthToken, String targetAppId) throws AlipayApiException {
 
         return doGet(request, appAuthToken);
     }
@@ -125,11 +131,17 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
 
     public <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request, String accessToken,
                                                            String appAuthToken) throws AlipayApiException {
-        return _certificateExecute(request, accessToken, appAuthToken);
+        return _certificateExecute(request, accessToken, appAuthToken, null);
+    }
+
+    @Override
+    public <T extends AlipayResponse> T certificateExecute(AlipayRequest<T> request, String accessToken, String appAuthToken,
+                                                           String targetAppId) throws AlipayApiException {
+        return _certificateExecute(request, accessToken, appAuthToken, targetAppId);
     }
 
     public <T extends AlipayResponse> T _certificateExecute(AlipayRequest<T> request, String accessToken,
-                                                            String appAuthToken) throws AlipayApiException {
+                                                            String appAuthToken, String targetAppId) throws AlipayApiException {
         return null;
     }
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.kms.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-05 17:10:01
+ * @since 1.0, 2019-10-23 20:36:03
  */
 public class KoubeiCateringKmsOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4567252189731898954L;
+	private static final long serialVersionUID = 8868122694121257148L;
 
 	/** 
 	 * 开发者提示信息, 如果重复推单或重复退款, 会通过这个字段提示,  无其他业务作用.

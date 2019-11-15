@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消订阅关系
  *
  * @author auto create
- * @since 1.0, 2019-07-18 11:27:10
+ * @since 1.0, 2019-10-12 13:59:08
  */
 public class AlipayOpenAppMessageTopicUnsubscribeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6298116294763913682L;
+	private static final long serialVersionUID = 1298719543672255322L;
 
 	/**
 	 * 授权令牌
@@ -24,6 +24,12 @@ public class AlipayOpenAppMessageTopicUnsubscribeModel extends AlipayObject {
 	 */
 	@ApiField("auth_type")
 	private String authType;
+
+	/**
+	 * 消息标签，用于消息子类型过滤。使用前请确认消息topic是否支持
+	 */
+	@ApiField("tag")
+	private String tag;
 
 	/**
 	 * 消息主题名称
@@ -43,6 +49,13 @@ public class AlipayOpenAppMessageTopicUnsubscribeModel extends AlipayObject {
 	}
 	public void setAuthType(String authType) {
 		this.authType = authType;
+	}
+
+	public String getTag() {
+		return this.tag;
+	}
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
 
 	public String getTopic() {

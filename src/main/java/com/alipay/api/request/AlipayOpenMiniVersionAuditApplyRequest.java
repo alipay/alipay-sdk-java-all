@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2019-09-23 11:07:00
+ * @since 1.0, 2019-10-31 18:03:27
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -56,6 +56,11 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	* 小程序版本号
 	 */
 	private String appVersion;
+
+	/** 
+	* 小程序投放的端参数，例如投放到支付宝钱包是支付宝端。该参数可选，默认支付宝端 com.alipay.alipaywallet:支付宝端
+	 */
+	private String bundleId;
 
 	/** 
 	* 第五张营业执照照片，不能超过4MB，图片格式只支持jpg，png，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要营业执照信息，如果不填默认采用当前小程序第五张营业执照照片
@@ -158,7 +163,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private String testAccout;
 
 	/** 
-	* 测试附件
+	* 测试附件，请上传10M以内附件，支持格式zip,rar
 	 */
 	private FileItem testFileName;
 
@@ -234,6 +239,13 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	}
 	public String getAppVersion() {
 		return this.appVersion;
+	}
+
+	public void setBundleId(String bundleId) {
+		this.bundleId = bundleId;
+	}
+	public String getBundleId() {
+		return this.bundleId;
 	}
 
 	public void setFifthLicensePic(FileItem fifthLicensePic) {
@@ -484,6 +496,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 		txtParams.put("app_name", this.appName);
 		txtParams.put("app_slogan", this.appSlogan);
 		txtParams.put("app_version", this.appVersion);
+		txtParams.put("bundle_id", this.bundleId);
 		txtParams.put("license_name", this.licenseName);
 		txtParams.put("license_no", this.licenseNo);
 		txtParams.put("license_valid_date", this.licenseValidDate);

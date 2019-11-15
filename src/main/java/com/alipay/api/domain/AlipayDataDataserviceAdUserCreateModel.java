@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放账户开户
  *
  * @author auto create
- * @since 1.0, 2019-07-30 17:28:33
+ * @since 1.0, 2019-11-15 10:57:25
  */
 public class AlipayDataDataserviceAdUserCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3848551437643973291L;
+	private static final long serialVersionUID = 5575477258613663598L;
 
 	/**
 	 * 投放账户支付宝PID
@@ -25,6 +25,12 @@ public class AlipayDataDataserviceAdUserCreateModel extends AlipayObject {
 	@ApiField("biz_token")
 	private String bizToken;
 
+	/**
+	 * 账户状态，ENABLE-生效；DISABLE-失效。若为空，则默认有效。
+	 */
+	@ApiField("status")
+	private String status;
+
 	public String getAlipayPid() {
 		return this.alipayPid;
 	}
@@ -37,6 +43,13 @@ public class AlipayDataDataserviceAdUserCreateModel extends AlipayObject {
 	}
 	public void setBizToken(String bizToken) {
 		this.bizToken = bizToken;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }

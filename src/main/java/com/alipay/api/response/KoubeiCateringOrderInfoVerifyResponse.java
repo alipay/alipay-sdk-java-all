@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.info.verify response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-17 15:30:01
+ * @since 1.0, 2019-10-24 21:17:46
  */
 public class KoubeiCateringOrderInfoVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8673842424325827988L;
+	private static final long serialVersionUID = 4257312775955392831L;
+
+	/** 
+	 * 核销是否幂等，true-幂等，false-没幂等
+	 */
+	@ApiField("idempotent")
+	private Boolean idempotent;
 
 	/** 
 	 * 餐饮订单号
@@ -25,6 +31,13 @@ public class KoubeiCateringOrderInfoVerifyResponse extends AlipayResponse {
 	 */
 	@ApiField("retry")
 	private Boolean retry;
+
+	public void setIdempotent(Boolean idempotent) {
+		this.idempotent = idempotent;
+	}
+	public Boolean getIdempotent( ) {
+		return this.idempotent;
+	}
 
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;

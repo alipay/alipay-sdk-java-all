@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-10-29 20:58:20
  */
 public class KoubeiCateringOrderInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7156673876959887585L;
+	private static final long serialVersionUID = 6544439664979366224L;
 
 	/** 
 	 * 应收金额，以元为单位，精确到分
@@ -63,6 +63,12 @@ TO_GO("TO_GO", "外带"),
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/** 
+	 * 外部门店id
+	 */
+	@ApiField("external_shop_id")
+	private String externalShopId;
 
 	/** 
 	 * 是否享受会员价优惠
@@ -227,6 +233,13 @@ PLATFORM——线上点，SCAN——扫码点
 	}
 	public String getExtInfo( ) {
 		return this.extInfo;
+	}
+
+	public void setExternalShopId(String externalShopId) {
+		this.externalShopId = externalShopId;
+	}
+	public String getExternalShopId( ) {
+		return this.externalShopId;
 	}
 
 	public void setMemberFlag(String memberFlag) {

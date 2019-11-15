@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 打印指令
  *
  * @author auto create
- * @since 1.0, 2019-09-11 09:12:39
+ * @since 1.0, 2019-10-17 19:57:06
  */
 public class AlipayCommerceIotSdarttoolPrintSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1155659582554389315L;
+	private static final long serialVersionUID = 1272763114399552552L;
+
+	/**
+	 * 扩展字段
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 唯一请求流水号
@@ -48,6 +54,19 @@ public class AlipayCommerceIotSdarttoolPrintSendModel extends AlipayObject {
 	 */
 	@ApiField("supplier_id")
 	private String supplierId;
+
+	/**
+	 * 走纸行数默为03
+	 */
+	@ApiField("walk_paper")
+	private String walkPaper;
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
 
 	public String getOuterNo() {
 		return this.outerNo;
@@ -89,6 +108,13 @@ public class AlipayCommerceIotSdarttoolPrintSendModel extends AlipayObject {
 	}
 	public void setSupplierId(String supplierId) {
 		this.supplierId = supplierId;
+	}
+
+	public String getWalkPaper() {
+		return this.walkPaper;
+	}
+	public void setWalkPaper(String walkPaper) {
+		this.walkPaper = walkPaper;
 	}
 
 }

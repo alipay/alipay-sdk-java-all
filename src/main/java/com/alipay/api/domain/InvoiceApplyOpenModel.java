@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票申请模型
  *
  * @author auto create
- * @since 1.0, 2019-06-21 17:05:01
+ * @since 1.0, 2019-10-21 15:54:09
  */
 public class InvoiceApplyOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3245672611787328377L;
+	private static final long serialVersionUID = 5116782863537797742L;
 
 	/**
 	 * 复核人

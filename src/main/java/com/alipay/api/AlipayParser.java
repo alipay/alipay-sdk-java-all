@@ -14,12 +14,12 @@ public interface AlipayParser<T extends AlipayResponse> {
      * @param rsp 响应字符串
      * @return 领域对象
      */
-    public T parse(String rsp) throws AlipayApiException;
+    T parse(String rsp) throws AlipayApiException;
 
     /**
      * 获取响应类类型。
      */
-    public Class<T> getResponseClass() throws AlipayApiException;
+    Class<T> getResponseClass() throws AlipayApiException;
 
     /**
      * 获取响应内的签名数据
@@ -28,7 +28,7 @@ public interface AlipayParser<T extends AlipayResponse> {
      * @return
      * @throws AlipayApiException
      */
-    public SignItem getSignItem(AlipayRequest<?> request, String responseBody)
+    SignItem getSignItem(AlipayRequest<?> request, String responseBody)
             throws AlipayApiException;
 
     /**
@@ -38,7 +38,7 @@ public interface AlipayParser<T extends AlipayResponse> {
      * @return
      * @throws AlipayApiException
      */
-    public CertItem getCertItem(AlipayRequest<?> request, String responseBody)
+    CertItem getCertItem(AlipayRequest<?> request, String responseBody)
             throws AlipayApiException;
 
     /**
@@ -53,8 +53,8 @@ public interface AlipayParser<T extends AlipayResponse> {
      * @return
      * @throws AlipayApiException
      */
-    public String decryptSourceData(AlipayRequest<?> request, String body, String format,
-                                    Decryptor decryptor, String encryptType, String charset)
+    String decryptSourceData(AlipayRequest<?> request, String body, String format,
+                             Decryptor decryptor, String encryptType, String charset)
             throws AlipayApiException;
 
 }

@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.message.subscription.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-23 11:10:01
+ * @since 1.0, 2019-10-12 14:10:51
  */
 public class AlipayOpenAppMessageSubscriptionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4434534391837383934L;
+	private static final long serialVersionUID = 7385765443498453836L;
 
 	/** 
 	 * 消息接入方式，例如HTTP
 	 */
 	@ApiField("comm_type")
 	private String commType;
+
+	/** 
+	 * 消息标签
+	 */
+	@ApiField("tag")
+	private String tag;
 
 	/** 
 	 * 消息主题名称
@@ -31,6 +37,13 @@ public class AlipayOpenAppMessageSubscriptionQueryResponse extends AlipayRespons
 	}
 	public String getCommType( ) {
 		return this.commType;
+	}
+
+	public void setTag(String tag) {
+		this.tag = tag;
+	}
+	public String getTag( ) {
+		return this.tag;
 	}
 
 	public void setTopic(String topic) {

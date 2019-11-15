@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑餐区模型
  *
  * @author auto create
- * @since 1.0, 2018-08-03 17:51:30
+ * @since 1.0, 2019-10-18 16:46:43
  */
 public class KbdishAreaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1898827454525729365L;
+	private static final long serialVersionUID = 3629468764777621596L;
 
 	/**
 	 * 餐区开台菜列表

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 凭证查询返回模型
  *
  * @author auto create
- * @since 1.0, 2019-08-31 22:38:49
+ * @since 1.0, 2019-09-25 10:32:42
  */
 public class TicketCodeQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3435878819721974249L;
+	private static final long serialVersionUID = 2478131642121777982L;
 
 	/**
 	 * 当前可用份数

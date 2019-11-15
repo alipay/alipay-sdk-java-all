@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品估清模型
  *
  * @author auto create
- * @since 1.0, 2019-01-07 17:45:44
+ * @since 1.0, 2019-10-29 10:29:46
  */
 public class KbdishEstimatedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8647248147875897731L;
+	private static final long serialVersionUID = 5343694725138733748L;
 
 	/**
-	 * 估清的菜品dishid或者materialId,该值对应的类型由dsType指定。
+	 * 估清的菜品dishid，加料materialId，或者外部菜品id，该值对应的类型由dsType指定。
 	 */
 	@ApiField("ds_id")
 	private String dsId;
@@ -22,20 +22,27 @@ public class KbdishEstimatedInfo extends AlipayObject {
 	/**
 	 * dishid:菜品维度估清
 materialid:加料维度沽清
+outdishid:外部菜品id估清，使用外部菜品id需要特殊权限，请联系技术支持
 	 */
 	@ApiField("ds_type")
 	private String dsType;
 
 	/**
 	 * 估清后临时库存.大于等于0的数字。
-status=open必须要传一个数。
 在沽清类型为加料的时候，该项强制为0。
 	 */
 	@ApiField("inventory")
 	private String inventory;
 
 	/**
-	 * 口碑门店ID
+	 * 外部门店id，与shop_id不能同时为空
+使用外部门店id需要特殊申请，请联系技术支持
+	 */
+	@ApiField("out_shop_id")
+	private String outShopId;
+
+	/**
+	 * 口碑门店ID，使用out_shop_id时可以为空
 	 */
 	@ApiField("shop_id")
 	private String shopId;
@@ -71,6 +78,13 @@ status=open必须要传一个数。
 	}
 	public void setInventory(String inventory) {
 		this.inventory = inventory;
+	}
+
+	public String getOutShopId() {
+		return this.outShopId;
+	}
+	public void setOutShopId(String outShopId) {
+		this.outShopId = outShopId;
 	}
 
 	public String getShopId() {

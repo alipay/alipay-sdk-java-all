@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.dishonor.query request
  * 
  * @author auto create
- * @since 1.0, 2019-07-30 15:23:53
+ * @since 1.0, 2019-10-14 16:48:26
  */
 public class AlipayFundTransDishonorQueryRequest implements AlipayRequest<AlipayFundTransDishonorQueryResponse> {
 

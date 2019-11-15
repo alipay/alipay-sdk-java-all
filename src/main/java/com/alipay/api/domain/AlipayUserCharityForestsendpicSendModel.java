@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送蚂蚁森林林区实时图片
  *
  * @author auto create
- * @since 1.0, 2018-07-13 17:17:35
+ * @since 1.0, 2019-10-11 12:05:55
  */
 public class AlipayUserCharityForestsendpicSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7318989592738257899L;
+	private static final long serialVersionUID = 5419517451573568577L;
 
 	/**
 	 * 蚂蚁森林林区ID

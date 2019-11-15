@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2019-07-02 14:15:05
+ * @since 1.0, 2019-10-24 10:20:01
  */
 public class KdsOrderInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5417257115151476859L;
+	private static final long serialVersionUID = 5225557358418749257L;
 
 	/**
 	 * 订单业务产品类型.  "KB_ORDER_DISHES": 口碑c端点餐; "KB_RESERVATION": 口碑预约点餐; "KB_POS_ORDER_DISHES": 口碑B端盒子订单

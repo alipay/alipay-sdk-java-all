@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.offlinepayment.sign request
  * 
  * @author auto create
- * @since 1.0, 2019-06-21 21:35:01
+ * @since 1.0, 2019-11-01 16:41:27
  */
 public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadRequest<AlipayOpenAgentOfflinepaymentSignResponse> {
 
@@ -26,7 +26,7 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	private String batchNo;
 
 	/** 
-	* 营业执照号码
+	* 营业执照号码。若填写，请与以下营业执照图片、期限、一起提供。
 	 */
 	private String businessLicenseNo;
 
@@ -57,7 +57,7 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	private String rate;
 
 	/** 
-	* 店铺门头照图片，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	* 店铺门头照图片，需要包括招牌信息。最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem shopSignBoardPic;
 

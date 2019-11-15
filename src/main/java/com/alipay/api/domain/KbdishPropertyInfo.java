@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜品销售属性模型
  *
  * @author auto create
- * @since 1.0, 2019-03-05 17:03:21
+ * @since 1.0, 2019-10-18 16:48:09
  */
 public class KbdishPropertyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5418637767449212153L;
+	private static final long serialVersionUID = 8546329562466137114L;
 
 	/**
 	 * “属性最多可选数”，默认为1，与“属性最少可选数”同时为空或同时非空，不能为0，数值不能大于销售属性值的数量，即property_value_info_list的长度

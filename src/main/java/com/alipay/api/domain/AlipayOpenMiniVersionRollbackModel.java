@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序回滚
  *
  * @author auto create
- * @since 1.0, 2019-04-11 19:55:48
+ * @since 1.0, 2019-11-13 16:54:57
  */
 public class AlipayOpenMiniVersionRollbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1124289113438866611L;
+	private static final long serialVersionUID = 2439199295253687531L;
 
 	/**
 	 * 小程序版本号
@@ -19,11 +19,24 @@ public class AlipayOpenMiniVersionRollbackModel extends AlipayObject {
 	@ApiField("app_version")
 	private String appVersion;
 
+	/**
+	 * 端参数，可不传。默认支付宝端
+	 */
+	@ApiField("bundle_id")
+	private String bundleId;
+
 	public String getAppVersion() {
 		return this.appVersion;
 	}
 	public void setAppVersion(String appVersion) {
 		this.appVersion = appVersion;
+	}
+
+	public String getBundleId() {
+		return this.bundleId;
+	}
+	public void setBundleId(String bundleId) {
+		this.bundleId = bundleId;
 	}
 
 }

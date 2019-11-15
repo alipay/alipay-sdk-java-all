@@ -67,7 +67,7 @@ public class Converters {
      * @param clazz  领域类型
      * @param reader 读取器
      * @return 领域对象
-     * @throws ApiException
+     * @throws AlipayApiException
      */
     public static <T> T convert(Class<T> clazz, Reader reader) throws AlipayApiException {
         T rsp = null;

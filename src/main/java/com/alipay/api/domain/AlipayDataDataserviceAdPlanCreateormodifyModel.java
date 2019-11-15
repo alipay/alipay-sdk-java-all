@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建/修改计划
  *
  * @author auto create
- * @since 1.0, 2019-07-30 17:28:22
+ * @since 1.0, 2019-11-01 10:44:38
  */
 public class AlipayDataDataserviceAdPlanCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8426566296993175212L;
+	private static final long serialVersionUID = 3756298294874677731L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -53,13 +53,21 @@ CPD-按投放天数计费（包段）
 	private String planName;
 
 	/**
-	 * 外部计划编号
+	 * 外部计划唯一编号
 	 */
 	@ApiField("plan_outer_id")
 	private String planOuterId;
 
 	/**
-	 * 商家id
+	 * 计划状态：PLAN_EFFECTIVE-有效；PLAN_PAUSE-暂停。
+若此入参字段为空：新建计划时此字段默认有效；修改计划此字段默认为计划当前状态。
+若此入参字段不为空：计划状态与其投放开始和结束时间必须保持一致。
+	 */
+	@ApiField("plan_status")
+	private String planStatus;
+
+	/**
+	 * 广告投放商家id，来自投放商户创建或者修改接口的响应
 	 */
 	@ApiField("principal_id")
 	private Long principalId;
@@ -79,13 +87,13 @@ RTB-竞价交易
 	private String startDate;
 
 	/**
-	 * 投放时段配置，bitmap
+	 * 投放时段配置，bitmap。规则：7个int用「,」分隔组成的字符串；每个int中第0位表示0点，第1位表示1点。如此类推; 7个int的排序是星期日、星期一、星期二、星期三、星期四、星期五、星期六。例如：523776,8388096,8388096,8388096,8388352,16776960,523776
 	 */
 	@ApiField("time_schema")
 	private String timeSchema;
 
 	/**
-	 * 账户id
+	 * 广告投放账户id，来自投放账户开户接口的响应
 	 */
 	@ApiField("user_id")
 	private Long userId;
@@ -137,6 +145,13 @@ RTB-竞价交易
 	}
 	public void setPlanOuterId(String planOuterId) {
 		this.planOuterId = planOuterId;
+	}
+
+	public String getPlanStatus() {
+		return this.planStatus;
+	}
+	public void setPlanStatus(String planStatus) {
+		this.planStatus = planStatus;
 	}
 
 	public Long getPrincipalId() {

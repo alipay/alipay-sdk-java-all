@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 地铁购票核销码发码
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:20
+ * @since 1.0, 2019-10-10 16:30:53
  */
 public class AlipayCommerceCityfacilitatorVoucherGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5886459257397195386L;
+	private static final long serialVersionUID = 2784463817299163817L;
 
 	/**
 	 * 城市编码请参考查询：http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html；

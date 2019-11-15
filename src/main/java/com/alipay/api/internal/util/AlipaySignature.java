@@ -297,7 +297,7 @@ public class AlipaySignature {
         params.remove("sign");
         params.remove("sign_type");
 
-        StringBuffer content = new StringBuffer();
+        StringBuilder content = new StringBuilder();
         List<String> keys = new ArrayList<String>(params.keySet());
         Collections.sort(keys);
 
@@ -317,14 +317,14 @@ public class AlipaySignature {
 
         params.remove("sign");
 
-        StringBuffer content = new StringBuffer();
+        StringBuilder content = new StringBuilder();
         List<String> keys = new ArrayList<String>(params.keySet());
         Collections.sort(keys);
 
         for (int i = 0; i < keys.size(); i++) {
             String key = keys.get(i);
             String value = params.get(key);
-            content.append((i == 0 ? "" : "&") + key + "=" + value);
+            content.append(i == 0 ? "" : "&").append(key).append("=").append(value);
         }
 
         return content.toString();

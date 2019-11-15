@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.message.topic.unsubscribe response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-23 11:20:01
+ * @since 1.0, 2019-10-12 14:11:00
  */
 public class AlipayOpenAppMessageTopicUnsubscribeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2478454644278514377L;
+	private static final long serialVersionUID = 3395546484112173769L;
 
 	
 

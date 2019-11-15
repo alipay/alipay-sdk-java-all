@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发券接口
  *
  * @author auto create
- * @since 1.0, 2018-06-20 18:11:01
+ * @since 1.0, 2019-11-14 21:13:22
  */
 public class AlipayMarketingVoucherSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2345874559874265316L;
+	private static final long serialVersionUID = 6846791867956697262L;
 
 	/**
 	 * 券金额。浮点数，格式为#.00，单位是元。红包发放时填写，其它情形不能填

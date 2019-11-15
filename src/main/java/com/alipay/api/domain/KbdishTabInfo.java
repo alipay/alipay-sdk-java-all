@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑餐台模型
  *
  * @author auto create
- * @since 1.0, 2018-08-03 17:51:30
+ * @since 1.0, 2019-10-18 16:47:27
  */
 public class KbdishTabInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1776946652426294681L;
+	private static final long serialVersionUID = 3191322886119654292L;
 
 	/**
 	 * 餐台所属餐区的id
