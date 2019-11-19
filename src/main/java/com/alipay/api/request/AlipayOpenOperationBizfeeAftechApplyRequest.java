@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.bizfee.aftech.apply request
  * 
  * @author auto create
- * @since 1.0, 2019-07-08 21:25:01
+ * @since 1.0, 2019-11-17 23:10:19
  */
 public class AlipayOpenOperationBizfeeAftechApplyRequest implements AlipayRequest<AlipayOpenOperationBizfeeAftechApplyResponse> {
 

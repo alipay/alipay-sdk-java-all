@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingCampaignAssetDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1336251832751512382L;
+	private static final long serialVersionUID = 3241679573582249876L;
 
 	/** 
 	 * 适用门店:门店与门店之间用“,”隔开，适用门店的意思：就是该资产只能在返回的门店中核销该资产。

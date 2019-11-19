@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消代商户签约、创建应用事务
  *
  * @author auto create
- * @since 1.0, 2017-12-29 11:04:33
+ * @since 1.0, 2019-11-18 14:27:27
  */
 public class AlipayOpenAgentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3177227987638145479L;
+	private static final long serialVersionUID = 1527269919892374618L;
 
 	/**
 	 * ISV 代商户操作事务编号，通过事务开启接口alipay.open.agent.create调用返回。

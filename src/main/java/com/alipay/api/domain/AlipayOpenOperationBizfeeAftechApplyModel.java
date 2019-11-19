@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收费申请报送
  *
  * @author auto create
- * @since 1.0, 2019-07-08 21:11:31
+ * @since 1.0, 2019-11-17 23:10:12
  */
 public class AlipayOpenOperationBizfeeAftechApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3643959741457818411L;
+	private static final long serialVersionUID = 3526566873138451172L;
 
 	/**
 	 * 系统/应用名称
@@ -58,6 +58,12 @@ public class AlipayOpenOperationBizfeeAftechApplyModel extends AlipayObject {
 	 */
 	@ApiField("gmt_charge")
 	private String gmtCharge;
+
+	/**
+	 * 业务指定的结算应收时间
+	 */
+	@ApiField("gmt_receive")
+	private String gmtReceive;
 
 	/**
 	 * 业务发生时间
@@ -177,6 +183,13 @@ AUTO_CYCLE: 自动周期结算
 	}
 	public void setGmtCharge(String gmtCharge) {
 		this.gmtCharge = gmtCharge;
+	}
+
+	public String getGmtReceive() {
+		return this.gmtReceive;
+	}
+	public void setGmtReceive(String gmtReceive) {
+		this.gmtReceive = gmtReceive;
 	}
 
 	public String getGmtService() {

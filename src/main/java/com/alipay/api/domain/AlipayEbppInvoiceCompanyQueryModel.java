@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询企业税务信息
  *
  * @author auto create
- * @since 1.0, 2019-11-15 14:57:11
+ * @since 1.0, 2019-11-15 15:34:09
  */
 public class AlipayEbppInvoiceCompanyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4799992179674691565L;
+	private static final long serialVersionUID = 2411939539684591723L;
 
 	/**
 	 * 纳税人识别号。register_id与payee_register_no不能同时为空

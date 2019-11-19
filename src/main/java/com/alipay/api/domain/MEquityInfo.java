@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MEquityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4829155973869635884L;
+	private static final long serialVersionUID = 6276793167451792541L;
 
 	/**
 	 * 权益的展示信息，仅当equity_type=VOUCHER时，该值必填，其他类型无需设置

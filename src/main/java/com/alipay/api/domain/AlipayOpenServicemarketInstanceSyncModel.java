@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务市场实例同步
  *
  * @author auto create
- * @since 1.0, 2018-12-21 14:23:06
+ * @since 1.0, 2019-11-18 13:30:28
  */
 public class AlipayOpenServicemarketInstanceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4674654571633351383L;
+	private static final long serialVersionUID = 4361376826447273641L;
 
 	/**
 	 * 2088101118588888

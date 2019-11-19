@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务商将修理厂信息同步至车险
  *
  * @author auto create
- * @since 1.0, 2019-10-23 21:29:20
+ * @since 1.0, 2019-11-18 18:22:54
  */
 public class AlipayInsAutoAutoaftermarketDepotCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2295834571979279959L;
+	private static final long serialVersionUID = 6519776583595252268L;
 
 	/**
 	 * 操作类型:

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataActivityReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2828491829914822683L;
+	private static final long serialVersionUID = 7389786784855237322L;
 
 	/**
 	 * 查询报表数据的业务日期列表，精确到天，格式为yyyymmdd，支持列表格式，数据按天返回

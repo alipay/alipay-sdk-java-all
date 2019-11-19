@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeRoyaltyRelationBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7587354656157265921L;
+	private static final long serialVersionUID = 5184161146212957831L;
 
 	/**
 	 * 外部请求号。32个字符以内，可包含字母、数字、下划线。需保证在商户端不重复。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手淘我的淘宝页面支付宝小卡片信息的数据模型，数据用于展现支付宝卡片需要的信息
  *
  * @author auto create
- * @since 1.0, 2019-09-23 15:42:44
+ * @since 1.0, 2019-11-18 17:59:17
  */
 public class AlipayMiniCardData extends AlipayObject {
 
-	private static final long serialVersionUID = 4212338573473845233L;
+	private static final long serialVersionUID = 6121344386678964297L;
 
 	/**
 	 * 行动点链接，用户点击卡片的button时跳转到支付宝相应页面的链接地址
@@ -32,6 +32,12 @@ public class AlipayMiniCardData extends AlipayObject {
 	private String appName;
 
 	/**
+	 * 业务码，拼音或者数字，用于我淘搜集相关卡片的展现信息，便于分析各个卡片的点击率等数据情况
+	 */
+	@ApiField("biz_code")
+	private String bizCode;
+
+	/**
 	 * 卡片类型，数字表示相应的不同卡片类型，包括1.提醒类（暂不支持） 2.玩法权益类 3.内容类（暂不支持） 4.商品类（暂不支持） 5.工具类，数字对应手淘约定的几种卡片类型
 	 */
 	@ApiField("card_type")
@@ -48,6 +54,12 @@ public class AlipayMiniCardData extends AlipayObject {
 	 */
 	@ApiField("edit_text")
 	private String editText;
+
+	/**
+	 * 图文卡片中的图片链接（图片卡片文字用subText表示）
+	 */
+	@ApiField("item_pic")
+	private String itemPic;
 
 	/**
 	 * 主文本，工具类卡片展示的主文本文案
@@ -82,6 +94,13 @@ public class AlipayMiniCardData extends AlipayObject {
 		this.appName = appName;
 	}
 
+	public String getBizCode() {
+		return this.bizCode;
+	}
+	public void setBizCode(String bizCode) {
+		this.bizCode = bizCode;
+	}
+
 	public Long getCardType() {
 		return this.cardType;
 	}
@@ -101,6 +120,13 @@ public class AlipayMiniCardData extends AlipayObject {
 	}
 	public void setEditText(String editText) {
 		this.editText = editText;
+	}
+
+	public String getItemPic() {
+		return this.itemPic;
+	}
+	public void setItemPic(String itemPic) {
+		this.itemPic = itemPic;
 	}
 
 	public String getMainText() {

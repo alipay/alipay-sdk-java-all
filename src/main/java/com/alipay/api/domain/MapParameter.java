@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Map结构的入参
  *
  * @author auto create
- * @since 1.0, 2019-11-14 21:55:36
+ * @since 1.0, 2019-11-18 17:36:08
  */
 public class MapParameter extends AlipayObject {
 
-	private static final long serialVersionUID = 6523935811571967418L;
+	private static final long serialVersionUID = 1214886553318442849L;
 
 	/**
 	 * 参数的名字

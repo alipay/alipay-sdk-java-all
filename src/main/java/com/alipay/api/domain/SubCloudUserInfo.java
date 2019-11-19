@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubCloudUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2533959824825411262L;
+	private static final long serialVersionUID = 2177825856393819739L;
 
 	/**
 	 * 口碑子账号ID

@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 码商发码成功回调接口
  *
  * @author auto create
- * @since 1.0, 2018-05-02 14:41:39
+ * @since 1.0, 2019-11-19 16:08:55
  */
 public class KoubeiTradeTicketTicketcodeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6727596743144697321L;
+	private static final long serialVersionUID = 6267857794866911724L;
 
 	/**
 	 * 需要发送的码列表，其中code表示串码码值，num表示码的可核销份数
@@ -46,6 +47,18 @@ public class KoubeiTradeTicketTicketcodeSendModel extends AlipayObject {
 	 */
 	@ApiField("send_token")
 	private String sendToken;
+
+	/**
+	 * 券过期时间,默认为口碑商品配置失效时间
+	 */
+	@ApiField("valid_end")
+	private Date validEnd;
+
+	/**
+	 * 券生效时间,默认为口碑商品配置生效时间
+	 */
+	@ApiField("valid_start")
+	private Date validStart;
 
 	public List<KbIsvMaCode> getIsvMaList() {
 		return this.isvMaList;
@@ -80,6 +93,20 @@ public class KoubeiTradeTicketTicketcodeSendModel extends AlipayObject {
 	}
 	public void setSendToken(String sendToken) {
 		this.sendToken = sendToken;
+	}
+
+	public Date getValidEnd() {
+		return this.validEnd;
+	}
+	public void setValidEnd(Date validEnd) {
+		this.validEnd = validEnd;
+	}
+
+	public Date getValidStart() {
+		return this.validStart;
+	}
+	public void setValidStart(Date validStart) {
+		this.validStart = validStart;
 	}
 
 }

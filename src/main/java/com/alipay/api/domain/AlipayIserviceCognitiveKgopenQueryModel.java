@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 知识图谱在线服务统一接口
  *
  * @author auto create
- * @since 1.0, 2019-11-14 21:55:36
+ * @since 1.0, 2019-11-18 22:24:53
  */
 public class AlipayIserviceCognitiveKgopenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3815479698699748729L;
+	private static final long serialVersionUID = 4772354338277929768L;
 
 	/**
 	 * 所属在线服务的编码

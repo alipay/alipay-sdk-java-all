@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2825333489139476521L;
+	private static final long serialVersionUID = 2765334572415152132L;
 
 	/**
 	 * 门店详细地址，地址字符长度在4-50个字符。门店详细地址，格式（不含省市区）：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层；注：门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 申请支付宝S码
  *
  * @author auto create
- * @since 1.0, 2019-10-10 21:35:47
+ * @since 1.0, 2019-11-15 19:01:23
  */
 public class AntMerchantExpandScodeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2173844657434939528L;
+	private static final long serialVersionUID = 1792674383155493713L;
 
 	/**
 	 * apply_code_request，申请S码的请求参数

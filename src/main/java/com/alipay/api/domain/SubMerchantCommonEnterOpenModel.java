@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户门店公共信息模型
  *
  * @author auto create
- * @since 1.0, 2019-11-05 20:45:42
+ * @since 1.0, 2019-11-19 10:05:06
  */
 public class SubMerchantCommonEnterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4613477927985314929L;
+	private static final long serialVersionUID = 3616659276718229331L;
 
 	/**
 	 * 扩展字段，为json字符串格式；入驻支付即开票的产品，需要传入用户白名单的时候，由此字段传入；支付即开票商户配置维度，如果不传默认为SMID_MOD，目前仅支持SMID_MODE和PID_MODE
@@ -20,7 +20,7 @@ public class SubMerchantCommonEnterOpenModel extends AlipayObject {
 	private String extendFields;
 
 	/**
-	 * 商户门店入驻的产品码,STANDARD_INVOICE:扫码开票，INVOICE_RETURN:企业自建-发票回传，INVOICE_EXPENSE:发票报销，PAYMENT_OPEN:支付即开票。
+	 * 商户门店入驻的产品码,STANDARD_INVOICE:扫码开票，INVOICE_RETURN:企业自建-发票回传，INVOICE_EXPENSE:发票报销，PAYMENT_OPEN:支付即开票，PAY_FEE_OPEN:缴费后开票。
 	 */
 	@ApiField("product_code")
 	private String productCode;
