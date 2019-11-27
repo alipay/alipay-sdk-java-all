@@ -1,0 +1,10 @@
+language: java
+sudo: false # faster builds
+
+jdk:
+  - oraclejdk6
+
+branches: # build only on these branches
+  only:
+    - master
+    - dev
