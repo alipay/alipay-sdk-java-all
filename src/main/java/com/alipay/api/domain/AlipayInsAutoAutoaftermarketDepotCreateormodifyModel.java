@@ -10,17 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务商将修理厂信息同步至车险
  *
  * @author auto create
- * @since 1.0, 2019-11-18 18:22:54
+ * @since 1.0, 2019-11-18 21:26:37
  */
 public class AlipayInsAutoAutoaftermarketDepotCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6519776583595252268L;
+	private static final long serialVersionUID = 3728983841321326749L;
 
 	/**
 	 * 操作类型:
 ONLINE-上线，
 OFFLINE-下线，
-UPDATE-修改修理厂信息（如修改修理厂名称，修理厂某几天的库存）
+UPDATE-修改修理厂信息（如修改修理厂名称，修理厂地址）
+UPDATE_INVENTORY-修改修理厂时段接待数信息（修改信息见extra，仅支持全量时段列表修改）
 	 */
 	@ApiField("action_type")
 	private String actionType;
@@ -72,6 +73,12 @@ UPDATE-修改修理厂信息（如修改修理厂名称，修理厂某几天的�
 
 	/**
 	 * 扩展信息，json格式
+当action_type为UPDATE_INVENTORY时，必填，需传入时段接待数配置列表，字段描述如下：
+startHour：时段开始时间小时
+startMinute：时段开始时间分钟
+endHour：时段结束时间小时
+endMinute：时段结束时间分钟
+threshold：该时段可接待数
 	 */
 	@ApiField("extra")
 	private String extra;

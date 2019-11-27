@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣减用户积分
  *
  * @author auto create
- * @since 1.0, 2019-07-04 17:22:15
+ * @since 1.0, 2019-07-23 15:47:52
  */
 public class AlipayInsAutoUserOilExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2135157849318538668L;
+	private static final long serialVersionUID = 6524471553279748928L;
 
 	/**
 	 * 验证point与benefitId的一致性，才能使用对应的积分

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告投放优惠模型
  *
  * @author auto create
- * @since 1.0, 2018-09-14 13:54:41
+ * @since 1.0, 2018-09-14 15:30:17
  */
 public class DiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4568612628481147548L;
+	private static final long serialVersionUID = 2778265229253436639L;
 
 	/**
 	 * 全场代金的使用门槛

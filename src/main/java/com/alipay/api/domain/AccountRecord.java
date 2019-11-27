@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccountRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 6652446463626763437L;
+	private static final long serialVersionUID = 8752727137519589371L;
 
 	/**
 	 * 支付宝订单号
@@ -56,6 +56,12 @@ public class AccountRecord extends AlipayObject {
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;
+
+	/**
+	 * 对方支付宝账号
+	 */
+	@ApiField("opt_logon_id")
+	private String optLogonId;
 
 	/**
 	 * 对方支付宝账户ID
@@ -128,6 +134,13 @@ public class AccountRecord extends AlipayObject {
 	}
 	public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
+	}
+
+	public String getOptLogonId() {
+		return this.optLogonId;
+	}
+	public void setOptLogonId(String optLogonId) {
+		this.optLogonId = optLogonId;
 	}
 
 	public String getOptUserId() {

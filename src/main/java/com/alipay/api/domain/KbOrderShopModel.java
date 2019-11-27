@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑在线购买订单-购买店铺模型
  *
  * @author auto create
- * @since 1.0, 2017-09-27 10:56:59
+ * @since 1.0, 2017-09-27 13:13:24
  */
 public class KbOrderShopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1397225599193114774L;
+	private static final long serialVersionUID = 1826321431347673567L;
 
 	/**
 	 * 门店ID
@@ -26,7 +26,7 @@ public class KbOrderShopModel extends AlipayObject {
 	private String shopName;
 
 	/**
-	 * 00007
+	 * 门店外部ID
 	 */
 	@ApiField("store_id")
 	private String storeId;

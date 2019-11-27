@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户攒油试算
  *
  * @author auto create
- * @since 1.0, 2017-09-28 11:03:00
+ * @since 1.0, 2018-01-22 18:50:24
  */
 public class AlipayInsAutoPointReceiveQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1485262618347153473L;
+	private static final long serialVersionUID = 2523651793342316883L;
 
 	/**
 	 * 车险活动类型编码。
@@ -19,6 +19,13 @@ public class AlipayInsAutoPointReceiveQueryModel extends AlipayObject {
 	 */
 	@ApiField("auto_campaign_type")
 	private String autoCampaignType;
+
+	/**
+	 * 扩展参数。
+BIZ_OIL_GRADE为油量等级，目前支持1-6
+	 */
+	@ApiField("extend_info")
+	private String extendInfo;
 
 	/**
 	 * 车险活动接入场景码。
@@ -39,6 +46,13 @@ public class AlipayInsAutoPointReceiveQueryModel extends AlipayObject {
 	}
 	public void setAutoCampaignType(String autoCampaignType) {
 		this.autoCampaignType = autoCampaignType;
+	}
+
+	public String getExtendInfo() {
+		return this.extendInfo;
+	}
+	public void setExtendInfo(String extendInfo) {
+		this.extendInfo = extendInfo;
 	}
 
 	public String getSceneType() {

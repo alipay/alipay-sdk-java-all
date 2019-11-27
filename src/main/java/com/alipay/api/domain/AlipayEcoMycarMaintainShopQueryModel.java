@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 洗车保养门店查询
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:23:31
+ * @since 1.0, 2018-06-25 14:49:58
  */
 public class AlipayEcoMycarMaintainShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3899576346576268317L;
+	private static final long serialVersionUID = 7361658999635342524L;
 
 	/**
 	 * 外部门店编号（与shop_id二选一，不能都为空）

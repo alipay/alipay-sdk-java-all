@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻数据传入初始化
  *
  * @author auto create
- * @since 1.0, 2018-01-08 16:16:18
+ * @since 1.0, 2018-04-04 16:10:19
  */
 public class ZhimaMerchantDataUploadInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8789535517943495447L;
+	private static final long serialVersionUID = 5578143394622387177L;
 
 	/**
 	 * 芝麻平台服务商模式下的二级商户标识，如果是直连商户调用该接口，不需要设置
@@ -24,6 +24,7 @@ public class ZhimaMerchantDataUploadInitializeModel extends AlipayObject {
 8：数据反馈
 32：骑行
 CAR_RENTING：租车行业解决方案
+EP_RENTING：企业租赁
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

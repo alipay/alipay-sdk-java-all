@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询设备指纹信息
  *
  * @author auto create
- * @since 1.0, 2018-11-19 21:01:20
+ * @since 1.0, 2019-08-06 14:22:15
  */
 public class ZolozIdentificationDeviceinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7759916336698645386L;
+	private static final long serialVersionUID = 1462294238221844869L;
 
 	/**
 	 * 服务端生成的设备码（由我方提供的sdk或JS(H5)生成）

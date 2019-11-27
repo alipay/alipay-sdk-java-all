@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 案件欺诈调查结果同步
  *
  * @author auto create
- * @since 1.0, 2018-04-02 15:23:43
+ * @since 1.0, 2018-04-03 13:25:20
  */
 public class AlipayInsDataAutoFraudSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3186855957914562133L;
+	private static final long serialVersionUID = 4492855911894839322L;
 
 	/**
 	 * 减损金额，单位：元
@@ -20,10 +20,16 @@ public class AlipayInsDataAutoFraudSyncModel extends AlipayObject {
 	private String avoidLossAmount;
 
 	/**
-	 * 减损类型，见码表《反欺诈减损类型V1》
+	 * 减损类型，参考码表《反欺诈减损类型V1》
 	 */
 	@ApiField("avoid_loss_type")
 	private String avoidLossType;
+
+	/**
+	 * 减损类型描述，商户自定义
+	 */
+	@ApiField("avoid_loss_type_desc")
+	private String avoidLossTypeDesc;
 
 	/**
 	 * 结案金额，单位：元
@@ -79,6 +85,13 @@ MODIFY:修改
 	}
 	public void setAvoidLossType(String avoidLossType) {
 		this.avoidLossType = avoidLossType;
+	}
+
+	public String getAvoidLossTypeDesc() {
+		return this.avoidLossTypeDesc;
+	}
+	public void setAvoidLossTypeDesc(String avoidLossTypeDesc) {
+		this.avoidLossTypeDesc = avoidLossTypeDesc;
 	}
 
 	public String getCaseEndAmount() {

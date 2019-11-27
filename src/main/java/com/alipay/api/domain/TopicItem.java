@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销位内容
  *
  * @author auto create
- * @since 1.0, 2017-12-06 11:22:08
+ * @since 1.0, 2017-12-27 14:15:03
  */
 public class TopicItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1129375353827768495L;
+	private static final long serialVersionUID = 7787265661675378772L;
 
 	/**
 	 * 内容图片url, 尺寸为300*300，最大不超过3M，支持格式:.jpg、.png ，请先调用<a href="https://docs.open.alipay.com/api_3/alipay.offline.material.image.upload"> 图片上传接口</a>获得图片url
 	 */
 	@ApiField("img_url")
 	private String imgUrl;
+
+	/**
+	 * 跳转类型，网页:HTTP、小程序:APP，不传默认HTTP
+	 */
+	@ApiField("link_type")
+	private String linkType;
 
 	/**
 	 * 跳转链接，点击营销位内容图片跳到的链接url
@@ -42,6 +48,13 @@ public class TopicItem extends AlipayObject {
 	}
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
+	}
+
+	public String getLinkType() {
+		return this.linkType;
+	}
+	public void setLinkType(String linkType) {
+		this.linkType = linkType;
 	}
 
 	public String getLinkUrl() {

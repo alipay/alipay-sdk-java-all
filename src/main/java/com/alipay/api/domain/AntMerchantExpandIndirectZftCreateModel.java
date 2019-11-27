@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户创建
  *
  * @author auto create
- * @since 1.0, 2019-08-01 19:00:18
+ * @since 1.0, 2019-09-27 11:35:30
  */
 public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8589478575647934367L;
+	private static final long serialVersionUID = 8565496263539633514L;
 
 	/**
 	 * 商户别名

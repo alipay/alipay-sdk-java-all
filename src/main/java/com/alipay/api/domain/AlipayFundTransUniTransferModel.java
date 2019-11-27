@@ -7,23 +7,25 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝转账支付接口
  *
  * @author auto create
- * @since 1.0, 2019-10-23 15:09:00
+ * @since 1.0, 2019-11-26 16:55:30
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4589926851289332162L;
+	private static final long serialVersionUID = 2382954128841649668L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下：
 PERSONAL_COLLECTION：C2C现金红包-领红包；
-DIRECT_TRANSFER：B2C现金红包、单笔无密转账
+DIRECT_TRANSFER：B2C现金红包、单笔无密转账到支付宝/银行卡
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
 
 	/**
 	 * 转账业务请求的扩展参数，支持传入的扩展参数如下：
-1、sub_biz_scene 子业务场景，红包必传，取值REDPACKET，c2c现金红包、b2c现金红包均需传入
+1、sub_biz_scene 子业务场景，红包业务必传，取值REDPACKET，C2C现金红包、B2C现金红包均需传入；
+
+2、withdraw_timeliness为转账到银行卡的预期到账时间，可选（不传入则默认为T1），T0表示预期T+0到账，T1表示预期T+1到账，到账时效受银行机构处理影响，支付宝无法保证一定是T0或者T1到账；
 	 */
 	@ApiField("business_params")
 	private String businessParams;
@@ -35,7 +37,7 @@ DIRECT_TRANSFER：B2C现金红包、单笔无密转账
 	private String orderTitle;
 
 	/**
-	 * 原支付宝业务单号。C2C现金红包-红包领取时，传红包支付时返回的支付宝单号；B2C现金红包、单笔无密转账不需要该参数。
+	 * 原支付宝业务单号。C2C现金红包-红包领取时，传红包支付时返回的支付宝单号；B2C现金红包、单笔无密转账到支付宝/银行卡不需要该参数。
 	 */
 	@ApiField("original_order_id")
 	private String originalOrderId;
@@ -67,7 +69,8 @@ DIRECT_TRANSFER：B2C现金红包、单笔无密转账
 	/**
 	 * 业务产品码，
 收发现金红包固定为：STD_RED_PACKET；
-单笔无密转账固定为：TRANS_ACCOUNT_NO_PWD；
+单笔无密转账到支付宝账户固定为：TRANS_ACCOUNT_NO_PWD；
+单笔无密转账到银行卡固定为：TRANS_BANKCARD_NO_PWD
 	 */
 	@ApiField("product_code")
 	private String productCode;

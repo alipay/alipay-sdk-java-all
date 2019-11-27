@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.echo.offline.send request
  * 
  * @author auto create
- * @since 1.0, 2019-01-18 14:24:54
+ * @since 1.0, 2019-09-27 11:42:55
  */
 public class AlipayOpenEchoOfflineSendRequest implements AlipayRequest<AlipayOpenEchoOfflineSendResponse> {
 

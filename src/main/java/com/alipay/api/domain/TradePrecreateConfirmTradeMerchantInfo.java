@@ -8,11 +8,11 @@ import com.alipay.api.internal.mapping.ApiField;
 格式为json
  *
  * @author auto create
- * @since 1.0, 2019-07-23 11:48:15
+ * @since 1.0, 2019-10-03 13:45:24
  */
 public class TradePrecreateConfirmTradeMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1411199546736115186L;
+	private static final long serialVersionUID = 3344974772438598955L;
 
 	/**
 	 * 商户所在的城市编码

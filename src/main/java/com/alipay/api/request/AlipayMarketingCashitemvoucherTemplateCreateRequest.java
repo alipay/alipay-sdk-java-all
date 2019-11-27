@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.cashitemvoucher.template.create request
  * 
  * @author auto create
- * @since 1.0, 2019-10-28 14:20:19
+ * @since 1.0, 2019-11-22 15:22:36
  */
 public class AlipayMarketingCashitemvoucherTemplateCreateRequest implements AlipayRequest<AlipayMarketingCashitemvoucherTemplateCreateResponse> {
 

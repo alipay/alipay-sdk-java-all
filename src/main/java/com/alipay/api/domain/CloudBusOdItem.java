@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * OD 查询数据结果
  *
  * @author auto create
- * @since 1.0, 2019-08-01 15:39:32
+ * @since 1.0, 2019-10-11 20:33:31
  */
 public class CloudBusOdItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5828832765656127853L;
+	private static final long serialVersionUID = 6134388221398673169L;
 
 	/**
 	 * 实际公交od值
@@ -30,6 +30,12 @@ public class CloudBusOdItem extends AlipayObject {
 	 */
 	@ApiField("od")
 	private Long od;
+
+	/**
+	 * 用户画像
+	 */
+	@ApiField("user_info")
+	private CloudbusUserInfo userInfo;
 
 	/**
 	 * 非工作日od日均
@@ -62,6 +68,13 @@ public class CloudBusOdItem extends AlipayObject {
 	}
 	public void setOd(Long od) {
 		this.od = od;
+	}
+
+	public CloudbusUserInfo getUserInfo() {
+		return this.userInfo;
+	}
+	public void setUserInfo(CloudbusUserInfo userInfo) {
+		this.userInfo = userInfo;
 	}
 
 	public Long getWeekOd() {

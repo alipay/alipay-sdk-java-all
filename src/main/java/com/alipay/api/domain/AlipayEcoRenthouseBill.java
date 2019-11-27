@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单明细信息，可以同步多笔账单，json数组
  *
  * @author auto create
- * @since 1.0, 2017-11-08 10:54:24
+ * @since 1.0, 2018-06-25 14:49:45
  */
 public class AlipayEcoRenthouseBill extends AlipayObject {
 
-	private static final long serialVersionUID = 6784399937782467121L;
+	private static final long serialVersionUID = 7517944165784551792L;
+
+	/**
+	 * 退款账单关联ka唯一账单编号（bill_no）
+	 */
+	@ApiField("associated_bill_no")
+	private String associatedBillNo;
 
 	/**
 	 * 账单金额
@@ -138,6 +144,13 @@ public class AlipayEcoRenthouseBill extends AlipayObject {
 	 */
 	@ApiField("start_date")
 	private String startDate;
+
+	public String getAssociatedBillNo() {
+		return this.associatedBillNo;
+	}
+	public void setAssociatedBillNo(String associatedBillNo) {
+		this.associatedBillNo = associatedBillNo;
+	}
 
 	public String getBillAmount() {
 		return this.billAmount;

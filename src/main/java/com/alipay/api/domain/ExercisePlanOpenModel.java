@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 运动计划开放模型
  *
  * @author auto create
- * @since 1.0, 2019-01-03 10:33:00
+ * @since 1.0, 2019-01-03 10:52:11
  */
 public class ExercisePlanOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7268896528973474193L;
+	private static final long serialVersionUID = 3198595788166495855L;
 
 	/**
-	 * 运动计划类型。枚举：运动项目(ITEM),或课程(COURSE)
+	 * 运动计划类型。枚举：运动项目(ITEM),课程(COURSE),单次推荐(ITEM_SINGLE)
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -37,13 +37,13 @@ public class ExercisePlanOpenModel extends AlipayObject {
 	private List<ExerciseItemOpenModel> itemList;
 
 	/**
-	 * 时间维度类型。枚举：DAY("日"),WEEK("周"),MONTH("月"),LIFE("终生")
+	 * 时间维度类型。枚举：DAY("日"),WEEK("周"),MONTH("月"),LIFE("终生"),TEMP("短期")
 	 */
 	@ApiField("time_dimension_type")
 	private String timeDimensionType;
 
 	/**
-	 * 维度所所对应的值。用英文逗号,分割。DAY时留空，WEEK时取值范围1-7，MONTH时取值范围1-31，LIFE时为yyyy-MM-dd格式的日期
+	 * 维度所所对应的值。用英文逗号,分割。DAY时留空，WEEK时取值范围1-7，MONTH时取值范围1-31，LIFE时为yyyy-MM-dd格式的日期，TEMP时为yyyy-MM-dd格式的日期
 	 */
 	@ApiField("values")
 	private String values;

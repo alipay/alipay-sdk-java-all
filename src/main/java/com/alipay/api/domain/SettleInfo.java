@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 描述结算信息，json格式。
  *
  * @author auto create
- * @since 1.0, 2019-07-15 14:30:19
+ * @since 1.0, 2019-08-12 19:14:20
  */
 public class SettleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8632936653276229774L;
+	private static final long serialVersionUID = 4775369338123663978L;
 
 	/**
 	 * 结算详细信息，json数组，目前只支持一条。
@@ -23,11 +23,24 @@ public class SettleInfo extends AlipayObject {
 	@ApiField("settle_detail_info")
 	private List<SettleDetailInfo> settleDetailInfos;
 
+	/**
+	 * 该笔订单的超期自动确认结算时间，到达期限后，将自动确认结算。此字段只在签约账期结算模式时有效。取值范围：1d～365d。d-天。 该参数数值不接受小数点。
+	 */
+	@ApiField("settle_period_time")
+	private String settlePeriodTime;
+
 	public List<SettleDetailInfo> getSettleDetailInfos() {
 		return this.settleDetailInfos;
 	}
 	public void setSettleDetailInfos(List<SettleDetailInfo> settleDetailInfos) {
 		this.settleDetailInfos = settleDetailInfos;
+	}
+
+	public String getSettlePeriodTime() {
+		return this.settlePeriodTime;
+	}
+	public void setSettlePeriodTime(String settlePeriodTime) {
+		this.settlePeriodTime = settlePeriodTime;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主服务高速场景数据
  *
  * @author auto create
- * @since 1.0, 2019-06-22 19:51:40
+ * @since 1.0, 2019-09-23 11:38:17
  */
 public class HighwaySceneData extends AlipayObject {
 
-	private static final long serialVersionUID = 5281436818824893276L;
+	private static final long serialVersionUID = 8257223564268987561L;
 
 	/**
 	 * 车辆类：

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2019-10-15 20:29:52
+ * @since 1.0, 2019-11-25 10:27:50
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5379841137433644423L;
+	private static final long serialVersionUID = 3317944996613857981L;
 
 	/**
 	 * 订单金额，单位为元
@@ -27,6 +27,12 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * buyer_info与buyer_user_id必选其一
+	 */
+	@ApiField("buyer_info")
+	private UserInfomation buyerInfo;
 
 	/**
 	 * 扩展信息，请参见产品文档
@@ -53,6 +59,7 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
 	/**
 	 * 外部订单号
+out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -62,6 +69,25 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
+
+	/**
+	 * 支付金额
+需要实际支付的金额
+	 */
+	@ApiField("pay_amount")
+	private String payAmount;
+
+	/**
+	 * 支付超时时间，超过时间支付宝自行关闭订单
+	 */
+	@ApiField("pay_timeout_express")
+	private String payTimeoutExpress;
+
+	/**
+	 * 商户订单同步记录id
+	 */
+	@ApiField("record_id")
+	private String recordId;
 
 	/**
 	 * 卖家userId
@@ -87,6 +113,13 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public UserInfomation getBuyerInfo() {
+		return this.buyerInfo;
+	}
+	public void setBuyerInfo(UserInfomation buyerInfo) {
+		this.buyerInfo = buyerInfo;
 	}
 
 	public List<OrderExtInfo> getExtInfo() {
@@ -122,6 +155,27 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	}
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
+	}
+
+	public String getPayAmount() {
+		return this.payAmount;
+	}
+	public void setPayAmount(String payAmount) {
+		this.payAmount = payAmount;
+	}
+
+	public String getPayTimeoutExpress() {
+		return this.payTimeoutExpress;
+	}
+	public void setPayTimeoutExpress(String payTimeoutExpress) {
+		this.payTimeoutExpress = payTimeoutExpress;
+	}
+
+	public String getRecordId() {
+		return this.recordId;
+	}
+	public void setRecordId(String recordId) {
+		this.recordId = recordId;
 	}
 
 	public String getSellerId() {

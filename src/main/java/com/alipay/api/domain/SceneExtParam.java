@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融扩展字段
  *
  * @author auto create
- * @since 1.0, 2018-07-31 10:37:13
+ * @since 1.0, 2019-03-26 16:36:21
  */
 public class SceneExtParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3748242742857134939L;
+	private static final long serialVersionUID = 7238764721915561613L;
 
 	/**
 	 * B流程申请准入原因
@@ -36,6 +36,18 @@ public class SceneExtParam extends AlipayObject {
 	 */
 	@ApiField("firstpayamt")
 	private String firstpayamt;
+
+	/**
+	 * 上传的客户的身份证号，做同人校验使用，机构上传
+	 */
+	@ApiField("input_cust_id_card")
+	private String inputCustIdCard;
+
+	/**
+	 * 客户姓名，用于做同人校验，机构上传
+	 */
+	@ApiField("input_cust_real_name")
+	private String inputCustRealName;
 
 	/**
 	 * 利率，xx%格式
@@ -87,6 +99,20 @@ public class SceneExtParam extends AlipayObject {
 	}
 	public void setFirstpayamt(String firstpayamt) {
 		this.firstpayamt = firstpayamt;
+	}
+
+	public String getInputCustIdCard() {
+		return this.inputCustIdCard;
+	}
+	public void setInputCustIdCard(String inputCustIdCard) {
+		this.inputCustIdCard = inputCustIdCard;
+	}
+
+	public String getInputCustRealName() {
+		return this.inputCustRealName;
+	}
+	public void setInputCustRealName(String inputCustRealName) {
+		this.inputCustRealName = inputCustRealName;
 	}
 
 	public String getInterestrate() {

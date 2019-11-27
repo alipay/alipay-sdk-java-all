@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMobilePublicFollowAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1798594973224511691L;
+	private static final long serialVersionUID = 6497957166381961915L;
 
 	/** 
 	 * 成功与否的标志
@@ -20,11 +20,24 @@ public class AlipayMobilePublicFollowAddResponse extends AlipayResponse {
 	@ApiField("code")
 	private String code;
 
+	/** 
+	 * 添加关注失败
+	 */
+	@ApiField("msg")
+	private String msg;
+
 	public void setCode(String code) {
 		this.code = code;
 	}
 	public String getCode( ) {
 		return this.code;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+	public String getMsg( ) {
+		return this.msg;
 	}
 
 }

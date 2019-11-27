@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚁盾申请欺诈评分
  *
  * @author auto create
- * @since 1.0, 2017-09-27 11:42:00
+ * @since 1.0, 2019-07-29 16:05:29
  */
 public class SsdataDataserviceRiskAntifraudscoreQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4363476395223769327L;
+	private static final long serialVersionUID = 5242733195821364428L;
 
 	/**
 	 * 地址信息。省+市+区/县+详细地址，其中 省+市+区/县可以为空，长度不超过256，不要包含特殊字符，如","，"\"，"|"，"&"，"^"
@@ -26,16 +26,22 @@ public class SsdataDataserviceRiskAntifraudscoreQueryModel extends AlipayObject 
 	private String bankCard;
 
 	/**
-	 * 证件号。证件类型、证件号、姓名三要素均为必填参数
+	 * 证件号，特别说明：身份证号码（证件号）和手机号码不能同时为空 。
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 证件类型。IDENTITY_CARD标识为身份证，目前仅支持身份证类型
+	 * 证件类型。IDENTITY_CARD标识为身份证，目前仅支持身份证类型。特别说明：身份证号码（证件号）和手机号码不能同时为空 。
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 主体人的公司地址，省+市+区/县+详细地址，其中 省+市+区/县可以为空，长度不超过256，不要包含特殊字符，如","，"\"，"|"，"&"，"^"
+	 */
+	@ApiField("company_address")
+	private String companyAddress;
 
 	/**
 	 * 电子邮箱。合法email，字母小写，特殊符号以半角形式出现
@@ -62,7 +68,7 @@ public class SsdataDataserviceRiskAntifraudscoreQueryModel extends AlipayObject 
 	private String mac;
 
 	/**
-	 * 手机号码。中国大陆合法手机号，长度11位，不含国家代码
+	 * 手机号码。中国大陆合法手机号，长度11位，不含国家代码，特别说明：身份证号码（证件号）和手机号码不能同时为空 。
 	 */
 	@ApiField("mobile")
 	private String mobile;
@@ -78,6 +84,30 @@ public class SsdataDataserviceRiskAntifraudscoreQueryModel extends AlipayObject 
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
+
+	/**
+	 * 证件号
+	 */
+	@ApiField("relation_cert_no")
+	private String relationCertNo;
+
+	/**
+	 * 证件类型。IDENTITY_CARD标识为身份证，目前仅支持身份证类型。
+	 */
+	@ApiField("relation_cert_type")
+	private String relationCertType;
+
+	/**
+	 * 联系人的姓名，长度不超过64，姓名中不要包含特殊字符，如 ",","/u0001", "|", "&", "^", "\\"
+	 */
+	@ApiField("relation_name")
+	private String relationName;
+
+	/**
+	 * 联系人的手机号码，中国大陆合法手机号，长度11位，不含国家代码
+	 */
+	@ApiField("relation_phone")
+	private String relationPhone;
 
 	/**
 	 * wifi的物理地址。支持格式如下：xx:xx:xx:xx:xx:xx，xx-xx-xx-xx-xx-xx，xxxxxxxxxxxx，x取值范围[0,9]之间的整数及A，B，C，D，E，F
@@ -111,6 +141,13 @@ public class SsdataDataserviceRiskAntifraudscoreQueryModel extends AlipayObject 
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getCompanyAddress() {
+		return this.companyAddress;
+	}
+	public void setCompanyAddress(String companyAddress) {
+		this.companyAddress = companyAddress;
 	}
 
 	public String getEmail() {
@@ -160,6 +197,34 @@ public class SsdataDataserviceRiskAntifraudscoreQueryModel extends AlipayObject 
 	}
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
+	}
+
+	public String getRelationCertNo() {
+		return this.relationCertNo;
+	}
+	public void setRelationCertNo(String relationCertNo) {
+		this.relationCertNo = relationCertNo;
+	}
+
+	public String getRelationCertType() {
+		return this.relationCertType;
+	}
+	public void setRelationCertType(String relationCertType) {
+		this.relationCertType = relationCertType;
+	}
+
+	public String getRelationName() {
+		return this.relationName;
+	}
+	public void setRelationName(String relationName) {
+		this.relationName = relationName;
+	}
+
+	public String getRelationPhone() {
+		return this.relationPhone;
+	}
+	public void setRelationPhone(String relationPhone) {
+		this.relationPhone = relationPhone;
 	}
 
 	public String getWifimac() {

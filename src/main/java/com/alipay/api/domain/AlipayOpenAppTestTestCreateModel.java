@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 验收测试SPI接口
  *
  * @author auto create
- * @since 1.0, 2019-10-29 11:34:51
+ * @since 1.0, 2019-10-29 14:39:28
  */
 public class AlipayOpenAppTestTestCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1197145893516968689L;
+	private static final long serialVersionUID = 4733553512218863693L;
 
 	/**
 	 * 详细地址

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 活动各阶段订单模型
  *
  * @author auto create
- * @since 1.0, 2019-06-25 19:48:28
+ * @since 1.0, 2017-04-20 16:40:53
  */
 public class ActivityOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1663996314539331243L;
+	private static final long serialVersionUID = 7211762361345565375L;
 
 	/**
 	 * 工单中的审核信息
@@ -28,6 +28,18 @@ public class ActivityOrderDTO extends AlipayObject {
 	 */
 	@ApiField("audit_status")
 	private String auditStatus;
+
+	/**
+	 * 活动各阶段操作发起人id，比如order_type=CAMPAIGN_CREATE_ORDER,那么这个id就是活动创建人的id。
+	 */
+	@ApiField("creator_id")
+	private String creatorId;
+
+	/**
+	 * 活动工单创建人类型，PROVIDER:服务商;PROVIDER_STAFF:服务商员工;SALES:BD人员;MER:商户
+	 */
+	@ApiField("creator_type")
+	private String creatorType;
 
 	/**
 	 * 订单号
@@ -59,6 +71,20 @@ public class ActivityOrderDTO extends AlipayObject {
 	}
 	public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
+	}
+
+	public String getCreatorId() {
+		return this.creatorId;
+	}
+	public void setCreatorId(String creatorId) {
+		this.creatorId = creatorId;
+	}
+
+	public String getCreatorType() {
+		return this.creatorType;
+	}
+	public void setCreatorType(String creatorType) {
+		this.creatorType = creatorType;
 	}
 
 	public String getOrderId() {

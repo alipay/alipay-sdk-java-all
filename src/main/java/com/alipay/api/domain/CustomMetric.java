@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 监控共建自定义指标数据结构
  *
  * @author auto create
- * @since 1.0, 2019-03-12 10:43:36
+ * @since 1.0, 2019-08-02 15:26:13
  */
 public class CustomMetric extends AlipayObject {
 
-	private static final long serialVersionUID = 6556855239891477466L;
+	private static final long serialVersionUID = 5441598825136336852L;
 
 	/**
 	 * 监控共建自定义指标数据产生的时间戳

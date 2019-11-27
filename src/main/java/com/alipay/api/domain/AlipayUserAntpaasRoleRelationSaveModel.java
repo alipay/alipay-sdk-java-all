@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保存账号绑定关系
  *
  * @author auto create
- * @since 1.0, 2018-12-07 14:15:55
+ * @since 1.0, 2018-12-07 14:22:23
  */
 public class AlipayUserAntpaasRoleRelationSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3131756981452624334L;
+	private static final long serialVersionUID = 3476917244883386452L;
 
 	/**
 	 * 需要绑定的支付宝用户id

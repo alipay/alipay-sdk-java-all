@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步定损/核损结果到蚂蚁
  *
  * @author auto create
- * @since 1.0, 2017-07-28 15:30:22
+ * @since 1.0, 2018-04-03 17:23:10
  */
 public class AlipayInsDataAutodamageEstimateConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2199193734968986786L;
+	private static final long serialVersionUID = 3685576857489846542L;
 
 	/**
 	 * 业务类型，2表示机构核损，3表示机构定损
@@ -54,10 +54,35 @@ public class AlipayInsDataAutodamageEstimateConfirmModel extends AlipayObject {
 	private String estimateNo;
 
 	/**
+	 * 额外信息，json格式
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
+
+	/**
 	 * 车架号
 	 */
 	@ApiField("frame_no")
 	private String frameNo;
+
+	/**
+	 * 对比蚂蚁定损结果，该结果维修方案是否被修改
+枚举：
+CHANGED-已修改
+NON-无修改
+	 */
+	@ApiField("is_repair_plan_changed")
+	private String isRepairPlanChanged;
+
+	/**
+	 * 对比蚂蚁定损结果，该结果定损价格是否被修改
+枚举
+
+CHANGED-已修改
+NON-未修改
+	 */
+	@ApiField("is_repair_price_changed")
+	private String isRepairPriceChanged;
 
 	/**
 	 * 车牌号
@@ -149,11 +174,32 @@ public class AlipayInsDataAutodamageEstimateConfirmModel extends AlipayObject {
 		this.estimateNo = estimateNo;
 	}
 
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+
 	public String getFrameNo() {
 		return this.frameNo;
 	}
 	public void setFrameNo(String frameNo) {
 		this.frameNo = frameNo;
+	}
+
+	public String getIsRepairPlanChanged() {
+		return this.isRepairPlanChanged;
+	}
+	public void setIsRepairPlanChanged(String isRepairPlanChanged) {
+		this.isRepairPlanChanged = isRepairPlanChanged;
+	}
+
+	public String getIsRepairPriceChanged() {
+		return this.isRepairPriceChanged;
+	}
+	public void setIsRepairPriceChanged(String isRepairPriceChanged) {
+		this.isRepairPriceChanged = isRepairPriceChanged;
 	}
 
 	public String getLicenseNo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动报名接口
  *
  * @author auto create
- * @since 1.0, 2018-09-01 09:21:05
+ * @since 1.0, 2018-10-18 20:50:05
  */
 public class AntMerchantExpandActivitySignupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1285226516324498193L;
+	private static final long serialVersionUID = 6359186396482636727L;
 
 	/**
 	 * 参数名：活动标识

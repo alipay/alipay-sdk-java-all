@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.open.qerq.qerq.query request
  * 
  * @author auto create
- * @since 1.0, 2019-09-26 16:55:33
+ * @since 1.0, 2019-11-22 15:58:54
  */
 public class ZhimaOpenQerqQerqQueryRequest implements AlipayRequest<ZhimaOpenQerqQerqQueryResponse> {
 

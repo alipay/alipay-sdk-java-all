@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantOrderConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1413962317755269239L;
+	private static final long serialVersionUID = 2887428691227362616L;
 
 	/** 
 	 * 证件号
@@ -29,8 +29,8 @@ public class ZhimaMerchantOrderConfirmResponse extends AlipayResponse {
 	/** 
 	 * 本次订单信用权益金额（如免押、极速付）
 	 */
-	@ApiField("credit_amout")
-	private String creditAmout;
+	@ApiField("credit_amount")
+	private String creditAmount;
 
 	/** 
 	 * 民族
@@ -106,11 +106,11 @@ public class ZhimaMerchantOrderConfirmResponse extends AlipayResponse {
 		return this.channelId;
 	}
 
-	public void setCreditAmout(String creditAmout) {
-		this.creditAmout = creditAmout;
+	public void setCreditAmount(String creditAmount) {
+		this.creditAmount = creditAmount;
 	}
-	public String getCreditAmout( ) {
-		return this.creditAmout;
+	public String getCreditAmount( ) {
+		return this.creditAmount;
 	}
 
 	public void setEthnicGroup(String ethnicGroup) {

@@ -10,11 +10,27 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑客分佣任务批量查询结果
  *
  * @author auto create
- * @since 1.0, 2017-01-13 11:53:39
+ * @since 1.0, 2017-03-29 17:41:03
  */
 public class KbAdvertMissionQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1626536312125789132L;
+	private static final long serialVersionUID = 3648322657658213159L;
+
+	/**
+	 * 是否可设置二级分佣任务
+只有推广者可见该字段，商户不可见
+	 */
+	@ApiField("can_cascade_mission")
+	private Boolean canCascadeMission;
+
+	/**
+	 * 二级分佣配置信息
+1、只对mission任务推广者可见
+2、只有当任务认领人配置二级分佣，才存在该配置
+	 */
+	@ApiListField("cascade_commission_infos")
+	@ApiField("kb_advert_cascade_commission_info")
+	private List<KbAdvertCascadeCommissionInfo> cascadeCommissionInfos;
 
 	/**
 	 * 任务结束时间
@@ -35,6 +51,12 @@ public class KbAdvertMissionQueryResponse extends AlipayObject {
 	private String missionId;
 
 	/**
+	 * 分佣任务归属人支付宝账号
+	 */
+	@ApiField("owner")
+	private String owner;
+
+	/**
 	 * 推广状态
 EFFECTIVE-有效
 INVALID-无效
@@ -43,11 +65,31 @@ INVALID-无效
 	private String promoteStatus;
 
 	/**
+	 * 智能营销信息
+	 */
+	@ApiField("smart_promo")
+	private KbadvertSmartPromoResponse smartPromo;
+
+	/**
 	 * 分佣标的信息
 	 */
 	@ApiListField("subjects")
 	@ApiField("kb_advert_mission_subject")
 	private List<KbAdvertMissionSubject> subjects;
+
+	public Boolean getCanCascadeMission() {
+		return this.canCascadeMission;
+	}
+	public void setCanCascadeMission(Boolean canCascadeMission) {
+		this.canCascadeMission = canCascadeMission;
+	}
+
+	public List<KbAdvertCascadeCommissionInfo> getCascadeCommissionInfos() {
+		return this.cascadeCommissionInfos;
+	}
+	public void setCascadeCommissionInfos(List<KbAdvertCascadeCommissionInfo> cascadeCommissionInfos) {
+		this.cascadeCommissionInfos = cascadeCommissionInfos;
+	}
 
 	public String getGmtEnd() {
 		return this.gmtEnd;
@@ -70,11 +112,25 @@ INVALID-无效
 		this.missionId = missionId;
 	}
 
+	public String getOwner() {
+		return this.owner;
+	}
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
 	public String getPromoteStatus() {
 		return this.promoteStatus;
 	}
 	public void setPromoteStatus(String promoteStatus) {
 		this.promoteStatus = promoteStatus;
+	}
+
+	public KbadvertSmartPromoResponse getSmartPromo() {
+		return this.smartPromo;
+	}
+	public void setSmartPromo(KbadvertSmartPromoResponse smartPromo) {
+		this.smartPromo = smartPromo;
 	}
 
 	public List<KbAdvertMissionSubject> getSubjects() {

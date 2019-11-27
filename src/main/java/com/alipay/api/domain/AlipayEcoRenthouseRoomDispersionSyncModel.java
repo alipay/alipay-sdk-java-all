@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分散式(整租/合租)房源同步
  *
  * @author auto create
- * @since 1.0, 2018-06-25 14:48:52
+ * @since 1.0, 2019-02-26 20:54:44
  */
 public class AlipayEcoRenthouseRoomDispersionSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3897825893659453723L;
+	private static final long serialVersionUID = 4192434219528352436L;
 
 	/**
 	 * 阿里短号
@@ -60,6 +60,21 @@ http://ecopublic.oss-cn-hangzhou.aliyuncs.com/eco/tpmogo/CommunityInfos/Communit
 	 */
 	@ApiField("community_code")
 	private String communityCode;
+
+	/**
+	 * 房源详情页跳转地址；
+如不填可以走约定页面（约定页面地址在入住时提交）；
+如无约定地址则走默认页面，默认页面无签约流程
+	 */
+	@ApiField("detail_address")
+	private String detailAddress;
+
+	/**
+	 * 房源所支持的平台服务
+	 */
+	@ApiListField("feature")
+	@ApiField("string")
+	private List<String> feature;
 
 	/**
 	 * 费用说明
@@ -269,6 +284,13 @@ http://ecopublic.oss-cn-hangzhou.aliyuncs.com/eco/tpmogo/CommunityInfos/Communit
 	@ApiField("total_floor_count")
 	private String totalFloorCount;
 
+	/**
+	 * 房源视频地址
+视频：多少分钟，大小多少
+	 */
+	@ApiField("video")
+	private String video;
+
 	public String getAliShortNum() {
 		return this.aliShortNum;
 	}
@@ -316,6 +338,20 @@ http://ecopublic.oss-cn-hangzhou.aliyuncs.com/eco/tpmogo/CommunityInfos/Communit
 	}
 	public void setCommunityCode(String communityCode) {
 		this.communityCode = communityCode;
+	}
+
+	public String getDetailAddress() {
+		return this.detailAddress;
+	}
+	public void setDetailAddress(String detailAddress) {
+		this.detailAddress = detailAddress;
+	}
+
+	public List<String> getFeature() {
+		return this.feature;
+	}
+	public void setFeature(List<String> feature) {
+		this.feature = feature;
 	}
 
 	public String getFeeRemark() {
@@ -540,6 +576,13 @@ http://ecopublic.oss-cn-hangzhou.aliyuncs.com/eco/tpmogo/CommunityInfos/Communit
 	}
 	public void setTotalFloorCount(String totalFloorCount) {
 		this.totalFloorCount = totalFloorCount;
+	}
+
+	public String getVideo() {
+		return this.video;
+	}
+	public void setVideo(String video) {
+		this.video = video;
 	}
 
 }

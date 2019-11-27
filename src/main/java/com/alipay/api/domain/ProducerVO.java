@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生产厂商信息
  *
  * @author auto create
- * @since 1.0, 2018-08-17 10:43:45
+ * @since 1.0, 2018-08-17 10:57:50
  */
 public class ProducerVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6588265492367833415L;
+	private static final long serialVersionUID = 8372774924725394451L;
 
 	/**
 	 * 业务状态，EFFECTIVE:有效、INVALID:无效
@@ -35,7 +35,8 @@ BANK:开户银行,
 BANK_ACCOUNT:银行账号,
 CONTACT:联系人,
 PHONE:联系电话,
-ACCOUNT_DAY:结账日期
+ACCOUNT_DAY:结账日期,
+PRODUCER_ADDRESS:生产厂商地址
 	 */
 	@ApiField("certificate_desc")
 	private String certificateDesc;

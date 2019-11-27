@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询商品编码对应的商品是否存在
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:11
+ * @since 1.0, 2017-08-30 10:55:32
  */
 public class KoubeiItemExtitemExistedQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6657523786629598672L;
+	private static final long serialVersionUID = 7161529989582211865L;
 
 	/**
 	 * 商品编码列表, 商品编码数量不超过100条。

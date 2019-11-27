@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CdpDisplayContent extends AlipayObject {
 
-	private static final long serialVersionUID = 4556452927618974538L;
+	private static final long serialVersionUID = 2637614838749572541L;
 
 	/**
 	 * 点击投放内容跳转地址

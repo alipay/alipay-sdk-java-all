@@ -14,7 +14,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class Data extends AlipayObject {
 
-	private static final long serialVersionUID = 8844531697939237986L;
+	private static final long serialVersionUID = 7319936775219998571L;
+
+	/**
+	 * 对应userIdList，标准Alipay UserId列表
+	 */
+	@ApiListField("alipay_user_id_list")
+	@ApiField("string")
+	private List<String> alipayUserIdList;
 
 	/**
 	 * 用户id列表
@@ -22,6 +29,13 @@ public class Data extends AlipayObject {
 	@ApiListField("user_id_list")
 	@ApiField("string")
 	private List<String> userIdList;
+
+	public List<String> getAlipayUserIdList() {
+		return this.alipayUserIdList;
+	}
+	public void setAlipayUserIdList(List<String> alipayUserIdList) {
+		this.alipayUserIdList = alipayUserIdList;
+	}
 
 	public List<String> getUserIdList() {
 		return this.userIdList;

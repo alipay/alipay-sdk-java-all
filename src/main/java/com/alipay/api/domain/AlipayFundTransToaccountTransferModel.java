@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单笔转账到支付宝账户接口
  *
  * @author auto create
- * @since 1.0, 2019-11-19 12:53:23
+ * @since 1.0, 2019-11-22 11:04:36
  */
 public class AlipayFundTransToaccountTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2241269338626212897L;
+	private static final long serialVersionUID = 4363694387265627283L;
 
 	/**
 	 * 转账金额，单位：元。

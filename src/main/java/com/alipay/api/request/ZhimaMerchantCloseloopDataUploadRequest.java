@@ -60,6 +60,7 @@ public class ZhimaMerchantCloseloopDataUploadRequest implements AlipayUploadRequ
 8：数据反馈
 32：骑行
 CAR_RENTING：租车行业解决方案
+EP_RENTING：企业租赁
 每个场景码对应的数据模板不一样，请使用zhima.merchant.data.upload.initialize接口获取场景码对应的数据模板。
 	 */
 	private String sceneCode;

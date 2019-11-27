@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAcquireRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3498735416917171469L;
+	private static final long serialVersionUID = 4398372748987521425L;
 
 	/** 
 	 * 买家支付宝账号，可以是Email或手机号码。
@@ -54,6 +54,24 @@ N：本次退款请求未发送资金变动。
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/** 
+	 * 本次退款金额中买家退款金额
+	 */
+	@ApiField("present_refund_buyer_amount")
+	private String presentRefundBuyerAmount;
+
+	/** 
+	 * 本次退款金额中平台优惠退款金额
+	 */
+	@ApiField("present_refund_discount_amount")
+	private String presentRefundDiscountAmount;
+
+	/** 
+	 * 本次退款金额中商家优惠退款金额
+	 */
+	@ApiField("present_refund_mdiscount_amount")
+	private String presentRefundMdiscountAmount;
 
 	/** 
 	 * 退款处理结果响应码。
@@ -111,6 +129,27 @@ UNKNOWN：结果未知
 	}
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
+	}
+
+	public void setPresentRefundBuyerAmount(String presentRefundBuyerAmount) {
+		this.presentRefundBuyerAmount = presentRefundBuyerAmount;
+	}
+	public String getPresentRefundBuyerAmount( ) {
+		return this.presentRefundBuyerAmount;
+	}
+
+	public void setPresentRefundDiscountAmount(String presentRefundDiscountAmount) {
+		this.presentRefundDiscountAmount = presentRefundDiscountAmount;
+	}
+	public String getPresentRefundDiscountAmount( ) {
+		return this.presentRefundDiscountAmount;
+	}
+
+	public void setPresentRefundMdiscountAmount(String presentRefundMdiscountAmount) {
+		this.presentRefundMdiscountAmount = presentRefundMdiscountAmount;
+	}
+	public String getPresentRefundMdiscountAmount( ) {
+		return this.presentRefundMdiscountAmount;
 	}
 
 	public void setResultCode(String resultCode) {

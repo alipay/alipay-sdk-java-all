@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 是一个data数组，可以包含一个或多个请求数据（data）
  *
  * @author auto create
- * @since 1.0, 2017-08-10 16:22:11
+ * @since 1.0, 2017-12-21 21:39:30
  */
 public class Datas extends AlipayObject {
 
-	private static final long serialVersionUID = 8796799492498263794L;
+	private static final long serialVersionUID = 1611342818862568538L;
 
 	/**
 	 * 指标数据区
@@ -31,6 +31,13 @@ public class Datas extends AlipayObject {
 	@ApiField("data_dim")
 	private List<DataDim> dimension;
 
+	/**
+	 * 监控指标各项属性
+	 */
+	@ApiListField("info")
+	@ApiField("info")
+	private List<Info> info;
+
 	public List<DataEntry> getData() {
 		return this.data;
 	}
@@ -43,6 +50,13 @@ public class Datas extends AlipayObject {
 	}
 	public void setDimension(List<DataDim> dimension) {
 		this.dimension = dimension;
+	}
+
+	public List<Info> getInfo() {
+		return this.info;
+	}
+	public void setInfo(List<Info> info) {
+		this.info = info;
 	}
 
 }

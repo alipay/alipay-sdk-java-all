@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 到位服务订单信息
  *
  * @author auto create
- * @since 1.0, 2017-03-14 16:37:23
+ * @since 1.0, 2017-03-14 16:38:23
  */
 public class ServiceOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8383268843157498512L;
+	private static final long serialVersionUID = 4188828932257494813L;
 
 	/**
 	 * 服务总金额，单位为元
@@ -23,7 +23,7 @@ public class ServiceOrderInfo extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 商品服务所在类目的id
+	 * 商品服务所在类目的id，全局唯一，订单商品所属的到位系统固定类目信息
 	 */
 	@ApiField("category_code")
 	private String categoryCode;
@@ -57,26 +57,25 @@ yyyy-MM-dd HH:mm:ss
 	private String gmtRefund;
 
 	/**
-	 * 消费者标注订单备注
+	 * 备注信息，消费者下单时填写的备注信息
 	 */
 	@ApiField("memo")
 	private String memo;
 
 	/**
-	 * 第三方服务id
+	 * 外部服务ID，保证商家内部唯一，用于查询商家服务信息，商家同步服务到到位系统时填写
 	 */
 	@ApiField("out_service_id")
 	private String outServiceId;
 
 	/**
-	 * 商品的商家端端SKU ID
+	 * 外部SKU ID，商家内部保证唯一，用于到位系统查询商品商家端价格信息，商家系统生成
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
 
 	/**
-	 * 第三方服务者id列表，例子：
-[“2323”,…]，如果没有服务者，则为[]
+	 * 第三方服务者id列表，保证商家内部唯一，商家同步服务者信息给到位时填写，例子：[“2323”,…]，如果没有服务者，则为[]，
 	 */
 	@ApiListField("out_sp_id")
 	@ApiField("string")
@@ -89,7 +88,7 @@ yyyy-MM-dd HH:mm:ss
 	private String paymentAmount;
 
 	/**
-	 * 单价，单位为元
+	 * 商品单价，单位为元
 	 */
 	@ApiField("price")
 	private String price;
@@ -113,31 +112,31 @@ yyyy-MM-dd HH:mm:ss
 	private String refundAmount;
 
 	/**
-	 * 到位的服务id
+	 * 到位的服务id, 全局唯一，用于查询或者修改到位到服务信息，到位系统在商家同步服务时生成
 	 */
 	@ApiField("service_id")
 	private String serviceId;
 
 	/**
-	 * 服务订单号
+	 * 服务订单号，全局唯一，用户下单时到位系统生成
 	 */
 	@ApiField("service_order_no")
 	private String serviceOrderNo;
 
 	/**
-	 * 商品的内部SKU ID
+	 * 商品的内部SKU ID，全局唯一，商家同步sku信息时到位系统产生
 	 */
 	@ApiField("sku_id")
 	private String skuId;
 
 	/**
-	 * 支付宝交易号
+	 * 支付宝交易号，全局唯一，商家可用于对账，用户下单时由到位系统生成
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
 
 	/**
-	 * 商品价格单位
+	 * 商品价格单位，枚举值，PER_TIME：每次；PER_HOUR：每小时；PER_MINUTE：每分钟；PER_DAY：每天；PER_WEEK：每周；PER_MONTH：每月；PER_PIECE：每份；PER_GE：每个；PER_SHAN：每扇；PER_KESHI：每课时；NEGOTIABLE：面议；PER_QITA：其他；UNDEFINE：未定义；
 	 */
 	@ApiField("unit")
 	private String unit;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租约同步
  *
  * @author auto create
- * @since 1.0, 2018-01-12 10:57:19
+ * @since 1.0, 2018-08-22 11:32:05
  */
 public class AlipayEcoRenthouseLeaseOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2235493484868556664L;
+	private static final long serialVersionUID = 7812372182237632516L;
 
 	/**
 	 * 预览合同二进制流	预览合同html的Base64字符串
@@ -54,6 +54,24 @@ public class AlipayEcoRenthouseLeaseOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("card_type")
 	private Long cardType;
+
+	/**
+	 * 退房金额
+	 */
+	@ApiField("check_out_amount")
+	private String checkOutAmount;
+
+	/**
+	 * 我要退房！！！！！
+	 */
+	@ApiField("check_out_remark")
+	private String checkOutRemark;
+
+	/**
+	 * 退房时间
+	 */
+	@ApiField("check_out_time")
+	private String checkOutTime;
 
 	/**
 	 * 租约结束时间格式 YYYY-MM-dd
@@ -290,6 +308,27 @@ flatsTag为1,则代表单编号 2,代表房型编号
 	}
 	public void setCardType(Long cardType) {
 		this.cardType = cardType;
+	}
+
+	public String getCheckOutAmount() {
+		return this.checkOutAmount;
+	}
+	public void setCheckOutAmount(String checkOutAmount) {
+		this.checkOutAmount = checkOutAmount;
+	}
+
+	public String getCheckOutRemark() {
+		return this.checkOutRemark;
+	}
+	public void setCheckOutRemark(String checkOutRemark) {
+		this.checkOutRemark = checkOutRemark;
+	}
+
+	public String getCheckOutTime() {
+		return this.checkOutTime;
+	}
+	public void setCheckOutTime(String checkOutTime) {
+		this.checkOutTime = checkOutTime;
 	}
 
 	public String getEndDate() {

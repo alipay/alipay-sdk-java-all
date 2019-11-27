@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 货品模板商品集识别精确度校验
  *
  * @author auto create
- * @since 1.0, 2019-01-04 11:54:46
+ * @since 1.0, 2019-10-21 16:20:50
  */
 public class AlipayMsaasMediarecogMmtcaftscvTemplateVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4153155419225413519L;
+	private static final long serialVersionUID = 5523194443945625652L;
 
 	/**
 	 * 商品Id列表
@@ -46,6 +46,13 @@ public class AlipayMsaasMediarecogMmtcaftscvTemplateVerifyModel extends AlipayOb
 	 */
 	@ApiField("template_id")
 	private String templateId;
+
+	/**
+	 * 商品id冲突校验白名单，逗号分隔字符串对List。例如，一个商品有ABC三个外观，需传入["A,B", "B,C", "A,C"]
+	 */
+	@ApiListField("white_list")
+	@ApiField("string")
+	private List<String> whiteList;
 
 	public List<String> getAlgorithmGoodsIds() {
 		return this.algorithmGoodsIds;
@@ -80,6 +87,13 @@ public class AlipayMsaasMediarecogMmtcaftscvTemplateVerifyModel extends AlipayOb
 	}
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
+	}
+
+	public List<String> getWhiteList() {
+		return this.whiteList;
+	}
+	public void setWhiteList(List<String> whiteList) {
+		this.whiteList = whiteList;
 	}
 
 }

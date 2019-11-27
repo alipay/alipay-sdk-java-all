@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统商需要通过该接口在口碑平台帮助商户修改门店信息，所有的选项都为非必填项，需要修改什么信息就传入什么参数，不传入的参数，则保持不变。修改门店名、首图、门店图片、营业执照相关字段、是否在其他平台开店相关字段，会重新触发风控审核，修改其他字段不会触发风控审核。
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:50:03
+ * @since 1.0, 2018-04-04 13:48:21
  */
 public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2765334572415152132L;
+	private static final long serialVersionUID = 1394827568899473255L;
 
 	/**
 	 * 门店详细地址，地址字符长度在4-50个字符。门店详细地址，格式（不含省市区）：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层；注：门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名
@@ -30,12 +30,6 @@ public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 	 */
 	@ApiField("auth_letter")
 	private String authLetter;
-
-	/**
-	 * 人均消费价格，最少1元，最大不超过99999元，请按实际情况填写，单位元。
-	 */
-	@ApiField("avg_price")
-	private String avgPrice;
 
 	/**
 	 * 店铺接口业务版本号，新接入的ISV，请统一传入2.0。
@@ -304,13 +298,6 @@ online_pay：在线买单。ISV不可以指定此字段，ISV泛行业开店默�
 	}
 	public void setAuthLetter(String authLetter) {
 		this.authLetter = authLetter;
-	}
-
-	public String getAvgPrice() {
-		return this.avgPrice;
-	}
-	public void setAvgPrice(String avgPrice) {
-		this.avgPrice = avgPrice;
 	}
 
 	public String getBizVersion() {

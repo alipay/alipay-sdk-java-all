@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商户人群组数目统计接口
  *
  * @author auto create
- * @since 1.0, 2017-07-26 11:31:28
+ * @since 1.0, 2019-03-15 14:25:56
  */
 public class KoubeiMarketingCampaignCrowdCountModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6481589557231988328L;
+	private static final long serialVersionUID = 6754226912523145242L;
 
 	/**
 	 * 圈人的条件
@@ -30,7 +30,7 @@ value:标签值
 	private String crowdGroupId;
 
 	/**
-	 * 画像分析的维度，目前支持:["pam_age","pam_gender","pam_constellation","pam_hometown_code","pam_city_code","pam_occupation","pam_consume_level","pam_have_baby"]，以koubei.marketing.campaign.tags.query接口返回的dimensions为准，各个维度标签的详细信息参见附件，<a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/tags%26usecase.zip">标签信息</a>
+	 * 画像分析的维度，目前只支持单维度:["pam_age","pam_gender","pam_constellation","pam_hometown_code","pam_city_code","pam_occupation","pam_consume_level","pam_have_baby"]，以koubei.marketing.campaign.tags.query接口返回的dimensions为准，各个维度标签的详细信息参见附件，<a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/tags%26usecase.zip">标签信息</a>
 	 */
 	@ApiField("dimensions")
 	private String dimensions;

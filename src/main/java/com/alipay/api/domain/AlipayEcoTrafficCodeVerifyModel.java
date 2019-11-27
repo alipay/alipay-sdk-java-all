@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝行业公交验码服务
  *
  * @author auto create
- * @since 1.0, 2019-06-06 21:17:27
+ * @since 1.0, 2019-11-26 21:24:18
  */
 public class AlipayEcoTrafficCodeVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6398826714117391679L;
+	private static final long serialVersionUID = 1363853582717913443L;
 
 	/**
 	 * 凭证服务类型

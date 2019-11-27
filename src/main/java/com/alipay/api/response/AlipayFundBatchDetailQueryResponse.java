@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-12 12:21:37
+ * @since 1.0, 2019-11-13 15:53:12
  */
 public class AlipayFundBatchDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3715517748835233233L;
+	private static final long serialVersionUID = 5596417235357872961L;
 
 	/** 
 	 * 1）当批次状态为INIT状态时，明细信息还未落地，返回明细信息为空
@@ -96,6 +96,12 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	private String failReason;
 
 	/** 
+	 * 批次处理完成时间
+	 */
+	@ApiField("gmt_finish")
+	private String gmtFinish;
+
+	/** 
 	 * 商户的批次号
 	 */
 	@ApiField("out_batch_no")
@@ -112,6 +118,12 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/** 
+	 * 付款方身份标识
+	 */
+	@ApiField("payer_id")
+	private String payerId;
 
 	/** 
 	 * 付款方需要支付的金额，受理成功（status为APPLIED）之后才会有值，受理成功之前是0。
@@ -136,6 +148,12 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	 */
 	@ApiField("sign_principal")
 	private String signPrincipal;
+
+	/** 
+	 * 批次总金额
+	 */
+	@ApiField("total_amount")
+	private String totalAmount;
 
 	/** 
 	 * 总记录数
@@ -205,6 +223,13 @@ MESSAGE_BATCH_PAY：接口报文代发。
 		return this.failReason;
 	}
 
+	public void setGmtFinish(String gmtFinish) {
+		this.gmtFinish = gmtFinish;
+	}
+	public String getGmtFinish( ) {
+		return this.gmtFinish;
+	}
+
 	public void setOutBatchNo(String outBatchNo) {
 		this.outBatchNo = outBatchNo;
 	}
@@ -224,6 +249,13 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	}
 	public Long getPageSize( ) {
 		return this.pageSize;
+	}
+
+	public void setPayerId(String payerId) {
+		this.payerId = payerId;
+	}
+	public String getPayerId( ) {
+		return this.payerId;
 	}
 
 	public void setPaymentAmount(String paymentAmount) {
@@ -252,6 +284,13 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	}
 	public String getSignPrincipal( ) {
 		return this.signPrincipal;
+	}
+
+	public void setTotalAmount(String totalAmount) {
+		this.totalAmount = totalAmount;
+	}
+	public String getTotalAmount( ) {
+		return this.totalAmount;
 	}
 
 	public void setTotalItemCount(Long totalItemCount) {

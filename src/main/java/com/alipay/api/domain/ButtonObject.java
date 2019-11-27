@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜单对象模型
  *
  * @author auto create
- * @since 1.0, 2017-10-31 19:50:53
+ * @since 1.0, 2017-10-31 19:52:12
  */
 public class ButtonObject extends AlipayObject {
 
-	private static final long serialVersionUID = 6577666786195298347L;
+	private static final long serialVersionUID = 3778375176135278298L;
 
 	/**
 	 * 当actionType为link时，该参数为url链接；
@@ -51,7 +51,7 @@ consumption——点击查看用户与生活号管理员账号之间的消费记
 	private String name;
 
 	/**
-	 * 二级菜单数组，若sub_button为空，则一级菜单必须指定action_type和action_param的值，二级菜单个数可以为1~5个。
+	 * 二级菜单数组，若sub_button为空，则一级菜单必须指定action_type和action_param的值。若文本菜单，二级菜单个数可以为1~5个，若 ICON 菜单，二级菜单个数可以为空
 	 */
 	@ApiListField("sub_button")
 	@ApiField("sub_button")

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备中心消息发送
  *
  * @author auto create
- * @since 1.0, 2018-02-07 11:15:49
+ * @since 1.0, 2019-06-13 21:23:24
  */
 public class AlipayCommerceIotMsgcenterSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1163963795324186979L;
+	private static final long serialVersionUID = 4384217257981689741L;
 
 	/**
 	 * 消息内容
@@ -26,7 +26,7 @@ public class AlipayCommerceIotMsgcenterSendModel extends AlipayObject {
 	private Long datetime;
 
 	/**
-	 * 扩展参数，json序列化后的字符串
+	 * 扩展参数，json序列化后的字符串。比如device_name，含义为设备名称
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
@@ -50,7 +50,7 @@ public class AlipayCommerceIotMsgcenterSendModel extends AlipayObject {
 	private String title;
 
 	/**
-	 * 消息类型, 0：普通消息、1：发送push的消息
+	 * 消息类型, 0：普通消息、1：发送push的消息、2：发送首页消息提醒的新设备绑定消息
 	 */
 	@ApiField("type")
 	private Long type;

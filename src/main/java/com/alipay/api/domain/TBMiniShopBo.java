@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 淘宝轻店铺信息
  *
  * @author auto create
- * @since 1.0, 2018-11-22 10:43:59
+ * @since 1.0, 2019-05-09 22:29:58
  */
 public class TBMiniShopBo extends AlipayObject {
 
-	private static final long serialVersionUID = 4114168695195513837L;
+	private static final long serialVersionUID = 5126295329347833493L;
 
 	/**
 	 * 门店地址

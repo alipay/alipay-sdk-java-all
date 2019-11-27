@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询支付宝用户简要信息
  *
  * @author auto create
- * @since 1.0, 2018-11-22 16:51:57
+ * @since 1.0, 2018-12-05 17:02:12
  */
 public class AlipayUserPortraitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2684224812494378434L;
+	private static final long serialVersionUID = 2768189415656456162L;
 
 	/**
 	 * 1688端传递havanaId的列表过来，单次传递不超过2个

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 基于LBS的优惠券输出接口
  *
  * @author auto create
- * @since 1.0, 2017-11-03 16:59:45
+ * @since 1.0, 2017-11-16 16:58:55
  */
 public class AlipayDataDataserviceLbsDiscountBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1587277875968749425L;
+	private static final long serialVersionUID = 6832538473197422134L;
 
 	/**
 	 * 媒体编号，使用前需要找业务申请 ，不申请直接调用会失败

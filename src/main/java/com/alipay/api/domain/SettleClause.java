@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算条款信息
  *
  * @author auto create
- * @since 1.0, 2019-08-06 10:15:52
+ * @since 1.0, 2019-08-06 15:48:32
  */
 public class SettleClause extends AlipayObject {
 
-	private static final long serialVersionUID = 8341637443795124726L;
+	private static final long serialVersionUID = 3267144417893923413L;
 
 	/**
 	 * 结算金额，单位为元
@@ -24,6 +24,15 @@ public class SettleClause extends AlipayObject {
 	 */
 	@ApiField("currency")
 	private String currency;
+
+	/**
+	 * 结算账号所属于的结算主体类型。
+secondMerchant 二级商户的结算账号
+store 门店的结算账号
+如果不填，默认为settleEntityType对应的类型
+	 */
+	@ApiField("settle_account_entity")
+	private String settleAccountEntity;
 
 	/**
 	 * 结算账户id。当结算账户id类型是cardSerialNo时，本参数为用户在支付宝绑定的卡编号；当结算账户id类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号；当结算账户id类型是loginName时，本参数为用户的支付宝登录号
@@ -62,6 +71,12 @@ SecondMerchant：结算主体为二级商户
 	@ApiField("settle_entity_type")
 	private String settleEntityType;
 
+	/**
+	 * 二级商户信息
+	 */
+	@ApiField("sub_merchant")
+	private SubMerchant subMerchant;
+
 	public String getAmount() {
 		return this.amount;
 	}
@@ -74,6 +89,13 @@ SecondMerchant：结算主体为二级商户
 	}
 	public void setCurrency(String currency) {
 		this.currency = currency;
+	}
+
+	public String getSettleAccountEntity() {
+		return this.settleAccountEntity;
+	}
+	public void setSettleAccountEntity(String settleAccountEntity) {
+		this.settleAccountEntity = settleAccountEntity;
 	}
 
 	public String getSettleAccountId() {
@@ -109,6 +131,13 @@ SecondMerchant：结算主体为二级商户
 	}
 	public void setSettleEntityType(String settleEntityType) {
 		this.settleEntityType = settleEntityType;
+	}
+
+	public SubMerchant getSubMerchant() {
+		return this.subMerchant;
+	}
+	public void setSubMerchant(SubMerchant subMerchant) {
+		this.subMerchant = subMerchant;
 	}
 
 }

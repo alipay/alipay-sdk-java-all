@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.open.app.des.send request
  * 
  * @author auto create
- * @since 1.0, 2019-06-05 22:19:55
+ * @since 1.0, 2019-10-19 18:03:51
  */
 public class ZhimaOpenAppDesSendRequest implements AlipayRequest<ZhimaOpenAppDesSendResponse> {
 

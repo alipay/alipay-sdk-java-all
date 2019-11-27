@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能机具监控对接质量中心
  *
  * @author auto create
- * @since 1.0, 2018-04-11 10:35:40
+ * @since 1.0, 2018-05-30 20:43:43
  */
 public class AlipayCommerceDataMonitordeviceQualitycenterModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7572338579613866522L;
+	private static final long serialVersionUID = 2336424422968522982L;
 
 	/**
 	 * device_id, 唯一标识设备，由openmonitor传递到质量中心。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialBaseChatSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7312732375976753323L;
+	private static final long serialVersionUID = 3157932675556747424L;
 
 	/**
 	 * 消息简短描述，显示在会话列表上，必填
@@ -47,7 +47,13 @@ public class AlipaySocialBaseChatSendModel extends AlipayObject {
 	 * 消息体的内容，形式为json字符串，必填
 分享模板
 {
-	"title":支付宝聊天,
+    "appInfo": {
+        "appId": "应用id",
+        "link": "打开应用的跳转地址",
+        "logo": "应用Logo",
+        "name": "应用名称"
+    },
+    "title":支付宝聊天,
 	"desc":"支付宝聊天",
 	"image":"图片地址",
 	"thumb":"缩略图地址"

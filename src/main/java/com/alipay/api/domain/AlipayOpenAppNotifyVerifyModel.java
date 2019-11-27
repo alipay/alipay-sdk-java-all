@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 验证通知
  *
  * @author auto create
- * @since 1.0, 2017-11-21 22:27:49
+ * @since 1.0, 2017-12-07 21:05:35
  */
 public class AlipayOpenAppNotifyVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8153874582588914399L;
+	private static final long serialVersionUID = 1466381784526577498L;
 
 	/**
 	 * 通知id

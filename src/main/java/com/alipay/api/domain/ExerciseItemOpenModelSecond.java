@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二级健身项目
  *
  * @author auto create
- * @since 1.0, 2019-01-03 10:33:00
+ * @since 1.0, 2019-01-03 12:19:06
  */
 public class ExerciseItemOpenModelSecond extends AlipayObject {
 
-	private static final long serialVersionUID = 4873979184971774885L;
+	private static final long serialVersionUID = 4485955261681243275L;
 
 	/**
 	 * 健身项目简介
@@ -27,6 +27,12 @@ public class ExerciseItemOpenModelSecond extends AlipayObject {
 	 */
 	@ApiField("external_item_id")
 	private String externalItemId;
+
+	/**
+	 * 枚举类型：FOCUS(重点关注)
+	 */
+	@ApiField("hint")
+	private String hint;
 
 	/**
 	 * 必填项目类型码。由ISV保证唯一。
@@ -71,6 +77,13 @@ public class ExerciseItemOpenModelSecond extends AlipayObject {
 	}
 	public void setExternalItemId(String externalItemId) {
 		this.externalItemId = externalItemId;
+	}
+
+	public String getHint() {
+		return this.hint;
+	}
+	public void setHint(String hint) {
+		this.hint = hint;
 	}
 
 	public String getItemCode() {

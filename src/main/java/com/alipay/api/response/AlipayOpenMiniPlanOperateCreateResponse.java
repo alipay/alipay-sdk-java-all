@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.plan.operate.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-22 20:28:33
+ * @since 1.0, 2019-10-31 22:01:32
  */
 public class AlipayOpenMiniPlanOperateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1837732553248635892L;
+	private static final long serialVersionUID = 2492619261592895629L;
 
 	/** 
 	 * 创建支付后推荐方案返回的方案id，后续用户可根据该方案ID对方案进行终止和调整优先级

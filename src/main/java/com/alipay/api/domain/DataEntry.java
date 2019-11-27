@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单个数据模型
  *
  * @author auto create
- * @since 1.0, 2017-08-10 16:22:11
+ * @since 1.0, 2017-12-21 21:39:30
  */
 public class DataEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 5172278853313352547L;
+	private static final long serialVersionUID = 4378181943736385861L;
 
 	/**
 	 * 数据的发生时间
@@ -26,6 +26,12 @@ public class DataEntry extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 统计类型，值为avg或者sum
+	 */
+	@ApiField("statistic_type")
+	private String statisticType;
 
 	/**
 	 * 用于指定数据的类型
@@ -56,6 +62,13 @@ public class DataEntry extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getStatisticType() {
+		return this.statisticType;
+	}
+	public void setStatisticType(String statisticType) {
+		this.statisticType = statisticType;
 	}
 
 	public String getType() {

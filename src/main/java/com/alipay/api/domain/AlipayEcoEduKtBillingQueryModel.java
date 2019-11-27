@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费账单查询
  *
  * @author auto create
- * @since 1.0, 2017-11-06 11:47:53
+ * @since 1.0, 2019-03-17 14:44:37
  */
 public class AlipayEcoEduKtBillingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3176677565629499392L;
+	private static final long serialVersionUID = 1745486199476214893L;
 
 	/**
 	 * Isv pid
@@ -26,7 +26,7 @@ public class AlipayEcoEduKtBillingQueryModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
-	 * 学校支付宝pid
+	 * 学校支付宝pid，直付通填写smid
 	 */
 	@ApiField("school_pid")
 	private String schoolPid;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务条款抽象模型
  *
  * @author auto create
- * @since 1.0, 2017-01-20 17:41:05
+ * @since 1.0, 2017-04-06 11:46:57
  */
 public class KbAdvertCommissionClause extends AlipayObject {
 
-	private static final long serialVersionUID = 3518337426529435556L;
+	private static final long serialVersionUID = 3463245628473375545L;
 
 	/**
 	 * 条款类型（条款类型是什么，下面填的条款就是什么）
@@ -24,6 +24,8 @@ MISSION_CLAIM_CLAUSE:专属认领人条款
 
 	/**
 	 * 比例分佣条款
+rate的最小值通过koubei.advert.data.conf.query获取，最大值为100；
+max的范围可通过koubei.advert.data.conf.query获取
 	 */
 	@ApiField("percentage_clause")
 	private KbAdvertPercentageCommissionClause percentageClause;
@@ -36,6 +38,7 @@ MISSION_CLAIM_CLAUSE:专属认领人条款
 
 	/**
 	 * 固定金额条款
+固定金额的范围可通过koubei.advert.data.conf.query获取
 	 */
 	@ApiField("quota_clause")
 	private KbAdvertQuotaCommissionClause quotaClause;

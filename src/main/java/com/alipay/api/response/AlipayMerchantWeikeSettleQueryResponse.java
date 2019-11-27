@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.weike.settle.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-30 12:10:01
+ * @since 1.0, 2019-06-03 22:31:47
  */
 public class AlipayMerchantWeikeSettleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6122896292819359834L;
+	private static final long serialVersionUID = 5352135792998226441L;
 
 	/** 
 	 * 外部业务号

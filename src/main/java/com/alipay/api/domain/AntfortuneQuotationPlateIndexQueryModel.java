@@ -7,15 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * 板块列表
  *
  * @author auto create
- * @since 1.0, 2018-09-25 20:13:38
+ * @since 1.0, 2019-09-26 09:34:15
  */
 public class AntfortuneQuotationPlateIndexQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1327223433993997539L;
+	private static final long serialVersionUID = 8868223566571199898L;
 
 	/**
 	 * 如果类型为getIds，则为空即可。
-如果类型为getInfo,则填入板块id。板块的Id,返回板块的详细信息。包括板块的名称，所属股票的代码和名称。
+如果类型为getInfo,则填入板块id，多个板块id使用英文逗号分隔。
 	 */
 	@ApiField("plate_id")
 	private String plateId;

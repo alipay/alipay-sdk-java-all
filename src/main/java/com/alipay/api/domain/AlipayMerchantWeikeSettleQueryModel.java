@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询蚂蚁微客信息
  *
  * @author auto create
- * @since 1.0, 2019-05-30 11:56:11
+ * @since 1.0, 2019-06-03 22:31:47
  */
 public class AlipayMerchantWeikeSettleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4251945247724682956L;
+	private static final long serialVersionUID = 3523345859964469321L;
 
 	/**
 	 * 外部业务号

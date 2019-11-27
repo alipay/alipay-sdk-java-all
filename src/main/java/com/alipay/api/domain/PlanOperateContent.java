@@ -7,14 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放配置场景内容
  *
  * @author auto create
- * @since 1.0, 2019-10-22 20:28:25
+ * @since 1.0, 2019-10-31 22:01:53
  */
 public class PlanOperateContent extends AlipayObject {
 
-	private static final long serialVersionUID = 7872542429949924569L;
+	private static final long serialVersionUID = 1441218429388996328L;
 
 	/**
-	 * 内容入参 key, 支持的枚举值: APP_SKIP_URL:小程序跳转链接, MEMBER_CARD_OPEN_URL: 会员卡开通链接, BENEFIT_TEXT: 权益文案
+	 * 内容入参 key, 支持的枚举值: 
+APP_SKIP_URL:小程序跳转链接, 完整的 schema 跳转地址, 需要与配置投放的小程序相对应 MEMBER_CARD_OPEN_URL: 会员卡开通链接, 需要归属于当前 pid
+ BENEFIT_TEXT: 权益文案, 用于自定义 iot 端结果页透出文案
 	 */
 	@ApiField("key")
 	private String key;

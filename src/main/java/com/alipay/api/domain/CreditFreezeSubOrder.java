@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用额度冻结子订单模型
  *
  * @author auto create
- * @since 1.0, 2018-10-10 10:59:39
+ * @since 1.0, 2018-10-17 19:41:37
  */
 public class CreditFreezeSubOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8891263921374882595L;
+	private static final long serialVersionUID = 8449757241466238433L;
 
 	/**
 	 * 用信冻结额度，单位为元，取值范围[0.01,100000000]，精确到小数点后2位

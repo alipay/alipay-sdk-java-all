@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 打发的发顺丰
  *
  * @author auto create
- * @since 1.0, 2019-07-11 15:57:19
+ * @since 1.0, 2019-09-26 11:34:43
  */
 public class AlipaySecurityAafAdfaBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5113629452977496232L;
+	private static final long serialVersionUID = 6446375821131944849L;
 
 	/**
 	 * 详细地址

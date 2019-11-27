@@ -19,6 +19,11 @@ public class AlipayAcquireRefundRequest implements AlipayRequest<AlipayAcquireRe
 	private String apiVersion="1.0";
 
 	/** 
+	* 退款的商品明细信息，json格式，具体请参见“4.3 商品明细说明”。
+	 */
+	private String goodsDetail;
+
+	/** 
 	* 卖家的操作员ID。
 	 */
 	private String operatorId;
@@ -63,6 +68,13 @@ public class AlipayAcquireRefundRequest implements AlipayRequest<AlipayAcquireRe
 如果同时传了out_trade_no和trade_no，则以trade_no为准
 	 */
 	private String tradeNo;
+
+	public void setGoodsDetail(String goodsDetail) {
+		this.goodsDetail = goodsDetail;
+	}
+	public String getGoodsDetail() {
+		return this.goodsDetail;
+	}
 
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
@@ -181,6 +193,7 @@ public class AlipayAcquireRefundRequest implements AlipayRequest<AlipayAcquireRe
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("goods_detail", this.goodsDetail);
 		txtParams.put("operator_id", this.operatorId);
 		txtParams.put("operator_type", this.operatorType);
 		txtParams.put("out_request_no", this.outRequestNo);

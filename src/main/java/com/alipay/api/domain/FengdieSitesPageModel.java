@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 云凤蝶站点页面数据模型
  *
  * @author auto create
- * @since 1.0, 2018-11-08 16:15:57
+ * @since 1.0, 2019-01-03 18:21:46
  */
 public class FengdieSitesPageModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5438973643755151473L;
+	private static final long serialVersionUID = 4149357319673165733L;
 
 	/**
 	 * 站点页面别名
@@ -46,6 +46,12 @@ public class FengdieSitesPageModel extends AlipayObject {
 	 */
 	@ApiField("snapshot")
 	private String snapshot;
+
+	/**
+	 * 页面 spmb 位
+	 */
+	@ApiField("spm_b")
+	private String spmB;
 
 	/**
 	 * 页面访问地址
@@ -86,6 +92,13 @@ public class FengdieSitesPageModel extends AlipayObject {
 	}
 	public void setSnapshot(String snapshot) {
 		this.snapshot = snapshot;
+	}
+
+	public String getSpmB() {
+		return this.spmB;
+	}
+	public void setSpmB(String spmB) {
+		this.spmB = spmB;
 	}
 
 	public String getUrl() {

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手淘我淘支付宝大卡片信息的数据模型，数据用于展现支付宝卡片需要的信息
  *
  * @author auto create
- * @since 1.0, 2019-10-18 11:42:19
+ * @since 1.0, 2019-11-19 20:49:14
  */
 public class BigCardData extends AlipayObject {
 
-	private static final long serialVersionUID = 8441865123721873249L;
+	private static final long serialVersionUID = 6613197951585529225L;
 
 	/**
 	 * 主文本行动点文案，在卡片的button处展现
 	 */
 	@ApiField("action_text")
 	private String actionText;
+
+	/**
+	 * 业务码，拼音或者数字，用于我淘搜集相关卡片的展现信息，便于分析各个卡片的点击率等数据情况
+	 */
+	@ApiField("biz_code")
+	private String bizCode;
 
 	/**
 	 * 主文本信息文案，如XXXX元，XXXX积分
@@ -102,6 +108,13 @@ public class BigCardData extends AlipayObject {
 	}
 	public void setActionText(String actionText) {
 		this.actionText = actionText;
+	}
+
+	public String getBizCode() {
+		return this.bizCode;
+	}
+	public void setBizCode(String bizCode) {
+		this.bizCode = bizCode;
 	}
 
 	public String getBizData() {

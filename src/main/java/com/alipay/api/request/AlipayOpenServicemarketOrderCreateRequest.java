@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.order.create request
  * 
  * @author auto create
- * @since 1.0, 2019-11-18 13:30:11
+ * @since 1.0, 2019-11-18 13:53:26
  */
 public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRequest<AlipayOpenServicemarketOrderCreateResponse> {
 
@@ -54,6 +54,11 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 	* 小程序应用简介，一句话描述小程序功能
 	 */
 	private String appSlogan;
+
+	/** 
+	* 订购的服务商品ID所在的市场编码。新接入场景必须传递，具体值请联系产品分配。
+	 */
+	private String marketCode;
 
 	/** 
 	* 订购的服务商品ID
@@ -132,6 +137,13 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 	}
 	public String getAppSlogan() {
 		return this.appSlogan;
+	}
+
+	public void setMarketCode(String marketCode) {
+		this.marketCode = marketCode;
+	}
+	public String getMarketCode() {
+		return this.marketCode;
 	}
 
 	public void setMerchandiseId(String merchandiseId) {
@@ -242,6 +254,7 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 		txtParams.put("app_name", this.appName);
 		txtParams.put("app_origin", this.appOrigin);
 		txtParams.put("app_slogan", this.appSlogan);
+		txtParams.put("market_code", this.marketCode);
 		txtParams.put("merchandise_id", this.merchandiseId);
 		txtParams.put("merchant_pid", this.merchantPid);
 		txtParams.put("mini_app_id", this.miniAppId);

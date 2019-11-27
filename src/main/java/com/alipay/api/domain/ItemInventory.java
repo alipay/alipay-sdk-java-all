@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品库存信息
  *
  * @author auto create
- * @since 1.0, 2018-11-28 22:08:44
+ * @since 1.0, 2019-02-20 17:16:49
  */
 public class ItemInventory extends AlipayObject {
 
-	private static final long serialVersionUID = 4686165436188215149L;
+	private static final long serialVersionUID = 4358981231881396834L;
 
 	/**
 	 * 商品库存扩展属性

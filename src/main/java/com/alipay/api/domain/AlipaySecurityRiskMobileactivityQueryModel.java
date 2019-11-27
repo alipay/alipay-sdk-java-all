@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户风险评级客户绑定手机活跃度服务
  *
  * @author auto create
- * @since 1.0, 2016-06-15 13:55:46
+ * @since 1.0, 2016-07-11 13:55:51
  */
 public class AlipaySecurityRiskMobileactivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4635658852785277465L;
+	private static final long serialVersionUID = 6643736812971278694L;
 
 	/**
 	 * 账户绑定手机号

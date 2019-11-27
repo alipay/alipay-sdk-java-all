@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 公交云od接口
  *
  * @author auto create
- * @since 1.0, 2019-08-07 17:10:58
+ * @since 1.0, 2019-10-11 20:42:17
  */
 public class AlipayDataAiserviceCloudbusOdGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2683566724766536752L;
+	private static final long serialVersionUID = 2624152263426866954L;
 
 	/**
 	 * 接口版本
@@ -58,6 +58,12 @@ public class AlipayDataAiserviceCloudbusOdGetModel extends AlipayObject {
 	 */
 	@ApiField("start_date")
 	private String startDate;
+
+	/**
+	 * 0：  不需要用户画像  1； 包含用户画像
+	 */
+	@ApiField("type")
+	private String type;
 
 	public String getAppVersion() {
 		return this.appVersion;
@@ -106,6 +112,13 @@ public class AlipayDataAiserviceCloudbusOdGetModel extends AlipayObject {
 	}
 	public void setStartDate(String startDate) {
 		this.startDate = startDate;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

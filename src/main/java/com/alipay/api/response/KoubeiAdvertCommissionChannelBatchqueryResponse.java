@@ -13,28 +13,28 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiAdvertCommissionChannelBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3454928873975698956L;
+	private static final long serialVersionUID = 3426277659928838827L;
 
 	/** 
-	 * 渠道信息
+	 * 渠道信息，渠道信息中channel_id必须保存ISV数据库
 	 */
 	@ApiField("data")
 	private KbAdvertChannelResponse data;
 
 	/** 
-	 * 页码
+	 * 当前页码
 	 */
 	@ApiField("page_index")
 	private String pageIndex;
 
 	/** 
-	 * 每页页数
+	 * 分页查询的每页记录条数
 	 */
 	@ApiField("page_size")
 	private String pageSize;
 
 	/** 
-	 * 总页数
+	 * 总条数（渠道的总数）
 	 */
 	@ApiField("total_count")
 	private String totalCount;

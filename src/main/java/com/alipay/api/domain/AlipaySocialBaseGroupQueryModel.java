@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询群基本信息
  *
  * @author auto create
- * @since 1.0, 2016-08-25 10:46:49
+ * @since 1.0, 2019-07-29 21:09:13
  */
 public class AlipaySocialBaseGroupQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7287284355843725385L;
+	private static final long serialVersionUID = 5746984354265792456L;
 
 	/**
 	 * 群的id

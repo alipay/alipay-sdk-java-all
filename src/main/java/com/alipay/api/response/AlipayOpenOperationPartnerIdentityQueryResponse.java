@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenOperationPartnerIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5664963689549925586L;
+	private static final long serialVersionUID = 2228796857493537568L;
 
 	/** 
 	 * 当前账号是否实名认证。true表示已经实名认证；false表示未实名认证。
@@ -25,6 +27,17 @@ public class AlipayOpenOperationPartnerIdentityQueryResponse extends AlipayRespo
 	 */
 	@ApiField("master")
 	private Boolean master;
+
+	/** 
+	 * 如已入驻，则返回该账号拥有的开放平台身份。
+枚举如下：
+自研开发者 -- IDENTITY_OPEN_SELF_RESEARCH_DEVELOPER，
+系统服务商 -- IDENTITY_OPEN_SYSTEM_SERVICE_PROVIDER，
+地推服务商 -- IDENTITY_OPEN_PUSH_SERVICE_PROVIDER
+	 */
+	@ApiListField("roles")
+	@ApiField("string")
+	private List<String> roles;
 
 	/** 
 	 * 当前账号是否已入驻蚂蚁开放平台。true表示已入驻；false表示未入驻。
@@ -44,6 +57,13 @@ public class AlipayOpenOperationPartnerIdentityQueryResponse extends AlipayRespo
 	}
 	public Boolean getMaster( ) {
 		return this.master;
+	}
+
+	public void setRoles(List<String> roles) {
+		this.roles = roles;
+	}
+	public List<String> getRoles( ) {
+		return this.roles;
 	}
 
 	public void setSettled(Boolean settled) {

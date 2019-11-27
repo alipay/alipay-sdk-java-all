@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁会员积分扣减接口（需要用户授权）
  *
  * @author auto create
- * @since 1.0, 2018-04-03 15:32:54
+ * @since 1.0, 2019-07-22 10:59:11
  */
 public class AlipayUserPointDeductModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1163795881459254653L;
+	private static final long serialVersionUID = 8676557393576929878L;
 
 	/**
 	 * 蚂蚁会员平台上的权益所对应的编号
@@ -38,6 +38,12 @@ public class AlipayUserPointDeductModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 需要扣减的积分数，该参数只用于核对扣减的积分数是否正确，不用于实际扣减，实际扣减的积分以蚂蚁会员后台对应的积分为准
+	 */
+	@ApiField("point")
+	private String point;
 
 	/**
 	 * 扣减积分时，该字段用于补充描述积分扣减的场景，将会拼在积分扣减记录的标题中进行展示，若无特殊需求则不要传该参数。明文长度不要超过32个中文汉字。
@@ -77,6 +83,13 @@ public class AlipayUserPointDeductModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getPoint() {
+		return this.point;
+	}
+	public void setPoint(String point) {
+		this.point = point;
 	}
 
 	public String getProdTitle() {

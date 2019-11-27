@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单条数据传入
  *
  * @author auto create
- * @since 1.0, 2018-01-08 16:13:10
+ * @since 1.0, 2018-04-04 17:08:20
  */
 public class ZhimaMerchantSingleDataUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1154113965735117198L;
+	private static final long serialVersionUID = 4584746334411278195L;
 
 	/**
 	 * 公用回传参数（非必填），这个字段由商户传入，系统透传给商户，便于商户做逻辑关联，请使用json格式。
@@ -42,6 +42,7 @@ public class ZhimaMerchantSingleDataUploadModel extends AlipayObject {
 8：数据反馈
 32：骑行
 CAR_RENTING：租车行业解决方案
+EP_RENTING：企业租赁
 每个场景码对应的数据模板不一样，请使用zhima.merchant.data.upload.initialize接口获取场景码对应的数据模板。
 	 */
 	@ApiField("scene_code")

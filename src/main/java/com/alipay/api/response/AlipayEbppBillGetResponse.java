@@ -12,28 +12,30 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppBillGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2184597465566127518L;
+	private static final long serialVersionUID = 8696333641221881242L;
 
 	/** 
-	 * 支付宝的业务订单号，具有唯一性。
+	 * 支付宝业务流水号。
 	 */
 	@ApiField("alipay_order_no")
 	private String alipayOrderNo;
 
 	/** 
 	 * 账单的账期，例如201203表示2012年3月的账单。
+缴税业务非必填
 	 */
 	@ApiField("bill_date")
 	private String billDate;
 
 	/** 
-	 * 账单单据号，例如水费单号，手机号，电费号，信用卡卡号。没有唯一性要求。
+	 * 纳税人识别号，对于三证合一的企业来说，采用社会信用代码；
+对于个人来说，采用身份证号。
 	 */
 	@ApiField("bill_key")
 	private String billKey;
 
 	/** 
-	 * 支付宝给每个出账机构指定了一个对应的英文短名称来唯一表示该收费单位。
+	 * 出账机构代码，对于缴税来说，指征收机关英文代码，例如南京玄武国税（NJXWGS）
 	 */
 	@ApiField("charge_inst")
 	private String chargeInst;
@@ -45,7 +47,7 @@ public class AlipayEbppBillGetResponse extends AlipayResponse {
 	private String chargeInstName;
 
 	/** 
-	 * 输出机构的业务流水号，需要保证唯一性。
+	 * 回传ISV流水号。
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;
@@ -57,49 +59,52 @@ public class AlipayEbppBillGetResponse extends AlipayResponse {
 	private String orderStatus;
 
 	/** 
-	 * 支付宝订单类型。公共事业缴纳JF,信用卡还款HK
+	 * 业务类型英文名称，对缴税业务来说，固定为TAX，表示缴税
 	 */
 	@ApiField("order_type")
 	private String orderType;
 
 	/** 
 	 * 拥有该账单的用户姓名
+缴税业务为纳税人名称
 	 */
 	@ApiField("owner_name")
 	private String ownerName;
 
 	/** 
-	 * 缴费金额。用户支付的总金额。单位为：RMB Yuan。取值范围为[0.01，100000000.00]，精确到小数点后两位。
+	 * 用户支付的总金额，包含滞纳金，精确到分。
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
 
 	/** 
-	 * 付款时间
+	 * 支付时间
 	 */
 	@ApiField("pay_time")
 	private String payTime;
 
 	/** 
-	 * 账单的服务费
+	 * 账单的服务费。
+缴税业务非必填
 	 */
 	@ApiField("service_amount")
 	private String serviceAmount;
 
 	/** 
-	 * 子业务类型是业务类型的下一级概念，例如：WATER表示JF下面的水费，ELECTRIC表示JF下面的电费，GAS表示JF下面的燃气费。
+	 * 子业务类型是业务类型的下一级概念
+对缴税业务来说，固定为TAX，表示缴税。
 	 */
 	@ApiField("sub_order_type")
 	private String subOrderType;
 
 	/** 
-	 * 交通违章地点，sub_order_type=TRAFFIC时有值
+	 * 废弃字段，无需关注
 	 */
 	@ApiField("traffic_location")
 	private String trafficLocation;
 
 	/** 
-	 * 违章行为，sub_order_type=TRAFFIC时有值。
+	 * 废弃字段，无需关注
 	 */
 	@ApiField("traffic_regulations")
 	private String trafficRegulations;

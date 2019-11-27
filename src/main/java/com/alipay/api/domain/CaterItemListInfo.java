@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表单条商品数据结构
  *
  * @author auto create
- * @since 1.0, 2017-09-21 13:03:20
+ * @since 1.0, 2017-09-21 15:54:25
  */
 public class CaterItemListInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6314274783969848185L;
+	private static final long serialVersionUID = 7418217727643475991L;
 
 	/**
 	 * 商品最后修改时间。格式为YYYY-MM-DD HH:mm:ss
@@ -58,7 +58,7 @@ public class CaterItemListInfo extends AlipayObject {
 	private String rejectReason;
 
 	/**
-	 * 商品名称，请勿超过40汉字，80个字符
+	 * 商品名称，请勿超过60个字符
 	 */
 	@ApiField("subject")
 	private String subject;

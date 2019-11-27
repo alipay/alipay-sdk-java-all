@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付创建订单
  *
  * @author auto create
- * @since 1.0, 2019-11-05 11:55:55
+ * @since 1.0, 2019-11-05 11:56:53
  */
 public class MybankPaymentTradeNormalpayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3479249783246121481L;
+	private static final long serialVersionUID = 8516199342125927142L;
 
 	/**
 	 * 订单金额
@@ -68,6 +68,18 @@ etc_corp：高速公司名称
 	 */
 	@ApiField("order_type")
 	private String orderType;
+
+	/**
+	 * 收方资产信息，内容是JSON格式，并用urlencode编码，按场景约定具体字段
+	 */
+	@ApiField("payee_fund_detail")
+	private String payeeFundDetail;
+
+	/**
+	 * 付方资产信息，内容是JSON格式，并用urlencode编码，按场景约定具体字段
+	 */
+	@ApiField("payer_fund_detail")
+	private String payerFundDetail;
 
 	/**
 	 * 请求流水号，表示外部一次请求，幂等字段
@@ -142,6 +154,20 @@ etc_corp：高速公司名称
 	}
 	public void setOrderType(String orderType) {
 		this.orderType = orderType;
+	}
+
+	public String getPayeeFundDetail() {
+		return this.payeeFundDetail;
+	}
+	public void setPayeeFundDetail(String payeeFundDetail) {
+		this.payeeFundDetail = payeeFundDetail;
+	}
+
+	public String getPayerFundDetail() {
+		return this.payerFundDetail;
+	}
+	public void setPayerFundDetail(String payerFundDetail) {
+		this.payerFundDetail = payerFundDetail;
 	}
 
 	public String getRequestNo() {

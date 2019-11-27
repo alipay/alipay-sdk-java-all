@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑广告系统分佣规则(比例)
  *
  * @author auto create
- * @since 1.0, 2016-11-21 17:14:39
+ * @since 1.0, 2017-01-17 10:33:12
  */
 public class KbAdvertCommissionClausePercentage extends AlipayObject {
 
-	private static final long serialVersionUID = 3848439728923179459L;
+	private static final long serialVersionUID = 6653842826596895242L;
 
 	/**
 	 * 分佣比例结束范围(100以内精度2位的非负小数)

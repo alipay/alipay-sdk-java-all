@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 健身记录
  *
  * @author auto create
- * @since 1.0, 2019-01-03 10:32:54
+ * @since 1.0, 2019-01-03 14:27:28
  */
 public class ExerciseRecordOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5244626816544137348L;
+	private static final long serialVersionUID = 1827656263236631456L;
 
 	/**
 	 * 运动计划类型。枚举：运动项目(ITEM),或课程(COURSE)
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 肌群锻炼情况
+	 */
+	@ApiListField("category_list")
+	@ApiField("exercise_category_open_model")
+	private List<ExerciseCategoryOpenModel> categoryList;
 
 	/**
 	 * 课程列表。当biz_type=COURSE时必填
@@ -34,6 +41,12 @@ public class ExerciseRecordOpenModel extends AlipayObject {
 	@ApiListField("daily_summary")
 	@ApiField("exercise_daily_summary_open_model")
 	private List<ExerciseDailySummaryOpenModel> dailySummary;
+
+	/**
+	 * 运动习惯分析
+	 */
+	@ApiField("exercise_proposal")
+	private ExerciseProposalOpenModel exerciseProposal;
 
 	/**
 	 * 一级健身项目列表。当biz_type=ITEM时必填
@@ -61,11 +74,24 @@ public class ExerciseRecordOpenModel extends AlipayObject {
 	@ApiField("values")
 	private String values;
 
+	/**
+	 * 一周小结
+	 */
+	@ApiField("weekly_summary")
+	private ExerciseWeeklySummaryOpenModel weeklySummary;
+
 	public String getBizType() {
 		return this.bizType;
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public List<ExerciseCategoryOpenModel> getCategoryList() {
+		return this.categoryList;
+	}
+	public void setCategoryList(List<ExerciseCategoryOpenModel> categoryList) {
+		this.categoryList = categoryList;
 	}
 
 	public ExerciseCourseOpenModel getCourseList() {
@@ -80,6 +106,13 @@ public class ExerciseRecordOpenModel extends AlipayObject {
 	}
 	public void setDailySummary(List<ExerciseDailySummaryOpenModel> dailySummary) {
 		this.dailySummary = dailySummary;
+	}
+
+	public ExerciseProposalOpenModel getExerciseProposal() {
+		return this.exerciseProposal;
+	}
+	public void setExerciseProposal(ExerciseProposalOpenModel exerciseProposal) {
+		this.exerciseProposal = exerciseProposal;
 	}
 
 	public List<ExerciseItemOpenModel> getItemList() {
@@ -108,6 +141,13 @@ public class ExerciseRecordOpenModel extends AlipayObject {
 	}
 	public void setValues(String values) {
 		this.values = values;
+	}
+
+	public ExerciseWeeklySummaryOpenModel getWeeklySummary() {
+		return this.weeklySummary;
+	}
+	public void setWeeklySummary(ExerciseWeeklySummaryOpenModel weeklySummary) {
+		this.weeklySummary = weeklySummary;
 	}
 
 }

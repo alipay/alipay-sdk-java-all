@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取购特车scheme
  *
  * @author auto create
- * @since 1.0, 2017-09-11 16:39:57
+ * @since 1.0, 2018-01-09 15:52:37
  */
 public class KoubeiTradeItemBuyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3844665943162762577L;
+	private static final long serialVersionUID = 3453374793118998776L;
 
 	/**
 	 * 预定用户的联系号码。要求合法的手机号码或者座机；该字段仅用于商品预定，商品预定场景为必填字段。如：0579-XXXXXXX；1526XXXXXXX
@@ -26,7 +26,7 @@ public class KoubeiTradeItemBuyModel extends AlipayObject {
 	private String buyerUserName;
 
 	/**
-	 * 手艺人ID，为非必填字段。
+	 * 手艺人ID，为非必填字段。泛行业商品可以传入手艺人关联的工作编号。
 	 */
 	@ApiField("craftsman_id")
 	private String craftsmanId;
@@ -34,6 +34,7 @@ public class KoubeiTradeItemBuyModel extends AlipayObject {
 	/**
 	 * 若无现价则此值传商品原价，交易创建将根据此价格进行售卖。
 传入的价格最多可有两位小数，最大值不可超过5000，超过则会报错。
+目前只支持人民币，价格单位元。
 	 */
 	@ApiField("current_price")
 	private String currentPrice;
@@ -51,7 +52,7 @@ public class KoubeiTradeItemBuyModel extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 原价，传入的价格最多可有两位小数，超过则会报错
+	 * 原价，传入的价格最多可有两位小数，超过则会报错. 目前只支持人民币，价格单位元。
 	 */
 	@ApiField("original_price")
 	private String originalPrice;

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手艺人信息
  *
  * @author auto create
- * @since 1.0, 2019-01-03 10:34:49
+ * @since 1.0, 2017-10-26 10:35:48
  */
 public class CraftsmanOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8369315141913661657L;
+	private static final long serialVersionUID = 1696573628666653196L;
 
 	/**
 	 * 手艺人账户名，仅支持小写字母和数字。上限12个小写字母或者数字。举例，若商户在口碑商家的登录账号为 testaop01@alipay.com,手艺人账号名为zhangsan，则手艺人登录口碑商家的账号名为 testaop01@alipay.com#zhangsan，获取登录密码需要扫商户app的员工激活码。从口碑商家app的员工管理进入员工详情页获取登录密码。
@@ -30,7 +30,7 @@ public class CraftsmanOpenModel extends AlipayObject {
 	private CraftsmanAssessment assessment;
 
 	/**
-	 * 手艺人头像，在商家端手艺人管理和用户端手艺人个人简介中展示手艺人头像 （通过 alipay.offline.material.image.upload 接口上传图片获取的资源id），上限最大5M,支持bmp,png,jpeg,jpg,gif格式的图片。
+	 * 手艺人头像，在商家端手艺人管理和用户端手艺人个人简介中展示手艺人头像，两种格式1.图片全路径，http或https开头 2.图片id （通过 alipay.offline.material.image.upload 接口上传图片获取的资源id），上限最大5M,支持bmp,png,jpeg,jpg,gif格式的图片。
 	 */
 	@ApiField("avatar")
 	private String avatar;

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预下单的订单信息
  *
  * @author auto create
- * @since 1.0, 2019-07-23 11:48:15
+ * @since 1.0, 2019-10-03 11:34:46
  */
 public class TradePrecreateConfirmOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2528368352444914876L;
+	private static final long serialVersionUID = 6888513441669389437L;
 
 	/**
 	 * 对交易或商品的描述

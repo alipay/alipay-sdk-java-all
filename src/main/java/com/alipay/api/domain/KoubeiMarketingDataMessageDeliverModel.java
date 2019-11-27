@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一键营销商家中心PUSH消息接口
  *
  * @author auto create
- * @since 1.0, 2016-09-07 16:01:59
+ * @since 1.0, 2018-07-26 14:02:29
  */
 public class KoubeiMarketingDataMessageDeliverModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3179882785199785683L;
+	private static final long serialVersionUID = 8472489666681162355L;
 
 	/**
-	 * 消息内容，json格式， KEY值编号递增
+	 * 消息内容，json格式， key不可随意定义，只能是KEY+数字，数字编号递增
 	 */
 	@ApiField("content")
 	private String content;
@@ -22,8 +22,8 @@ public class KoubeiMarketingDataMessageDeliverModel extends AlipayObject {
 	/**
 	 * 扩展信息， json格式，
 key值：
-REDIRECT_URL跳转地址; 
-CHANNEL发送渠道，对应value值为：MSGBOX消息盒子，PUSH手机消息通知
+REDIRECT_URL跳转地址，目前做了强校验REDIRECT_URL一定要有值; 
+CHANNEL发送渠道，对应value值为：MSGBOX(商家APP消息盒子)，PUSH(手机消息通知)，可以通过CHANNEL选择发送消息的渠道（要和沟通模板配置保持对应，如果传了CHANNEL的值，则msg_type和CHANNEL两个字段一起对应一个沟通模板，如果没有传CHANNEL的值，则msg_type对应一个沟通模板）
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

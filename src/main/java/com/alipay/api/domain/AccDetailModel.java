@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发到账户明细复杂模型
  *
  * @author auto create
- * @since 1.0, 2019-11-12 17:29:21
+ * @since 1.0, 2019-11-12 17:34:20
  */
 public class AccDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4724914375863956376L;
+	private static final long serialVersionUID = 8593484584665591994L;
 
 	/**
 	 * 支付宝订单号
@@ -54,6 +54,18 @@ public class AccDetailModel extends AlipayObject {
 	 */
 	@ApiField("exchange_rate")
 	private ExchangeRate exchangeRate;
+
+	/**
+	 * 明细创建时间
+	 */
+	@ApiField("gmt_create")
+	private String gmtCreate;
+
+	/**
+	 * 明细处理完成时间
+	 */
+	@ApiField("gmt_finish")
+	private String gmtFinish;
 
 	/**
 	 * 是否需要通过alipay_order_no原单据重试.
@@ -179,6 +191,20 @@ UNKNOWN：未知状态
 	}
 	public void setExchangeRate(ExchangeRate exchangeRate) {
 		this.exchangeRate = exchangeRate;
+	}
+
+	public String getGmtCreate() {
+		return this.gmtCreate;
+	}
+	public void setGmtCreate(String gmtCreate) {
+		this.gmtCreate = gmtCreate;
+	}
+
+	public String getGmtFinish() {
+		return this.gmtFinish;
+	}
+	public void setGmtFinish(String gmtFinish) {
+		this.gmtFinish = gmtFinish;
 	}
 
 	public String getNeedRetry() {

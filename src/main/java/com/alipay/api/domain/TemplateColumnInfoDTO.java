@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板栏位信息
  *
  * @author auto create
- * @since 1.0, 2018-03-22 14:17:06
+ * @since 1.0, 2019-08-08 20:04:18
  */
 public class TemplateColumnInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4761899458482389776L;
+	private static final long serialVersionUID = 2359646467438768613L;
 
 	/**
 	 * 标准栏位：行为由支付宝统一定，同时已经分配标准Code
@@ -32,8 +32,8 @@ TELEPHONE：联系方式
 	private String groupTitle;
 
 	/**
-	 * 若template_style_info.column_info_layout
-的值为grid，此项为宫格项的展示icon。通过接口（alipay.offline.material.image.upload）上传图片。
+	 * 当template_style_info.column_info_layout
+的值为grid时，此参数必填。此项为宫格项的展示icon。通过接口（alipay.offline.material.image.upload）上传图片。
 	 */
 	@ApiField("icon_id")
 	private String iconId;
@@ -56,8 +56,8 @@ TELEPHONE：联系方式
 	private String operateType;
 
 	/**
-	 * 若template_style_info.column_info_layout
-的值为grid，此项为宫格项标签。可空。
+	 * 只有当template_style_info.column_info_layout
+的值为grid时，此参数有效。此项为宫格项标签，最多只会展示一个标签。
 	 */
 	@ApiField("tag")
 	private String tag;

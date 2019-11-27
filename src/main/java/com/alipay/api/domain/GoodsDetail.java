@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息
  *
  * @author auto create
- * @since 1.0, 2019-05-20 20:35:17
+ * @since 1.0, 2019-05-20 20:44:27
  */
 public class GoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6214518431495859197L;
+	private static final long serialVersionUID = 6558458342463697646L;
 
 	/**
 	 * 支付宝定义的统一商品编号
@@ -30,6 +30,12 @@ public class GoodsDetail extends AlipayObject {
 	 */
 	@ApiField("categories_tree")
 	private String categoriesTree;
+
+	/**
+	 * 商品扩展信息，包含图片id等
+	 */
+	@ApiField("extend_params")
+	private ExtendParams extendParams;
 
 	/**
 	 * 商品类目
@@ -86,6 +92,13 @@ public class GoodsDetail extends AlipayObject {
 	}
 	public void setCategoriesTree(String categoriesTree) {
 		this.categoriesTree = categoriesTree;
+	}
+
+	public ExtendParams getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(ExtendParams extendParams) {
+		this.extendParams = extendParams;
 	}
 
 	public String getGoodsCategory() {

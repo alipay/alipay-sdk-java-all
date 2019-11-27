@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.etc.apply.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-11-11 19:23:44
+ * @since 1.0, 2019-11-19 20:25:36
  */
 public class AlipayCommerceTransportEtcApplySyncRequest implements AlipayRequest<AlipayCommerceTransportEtcApplySyncResponse> {
 

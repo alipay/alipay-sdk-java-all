@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序删除POI信息
  *
  * @author auto create
- * @since 1.0, 2018-12-29 16:33:24
+ * @since 1.0, 2019-01-23 20:33:50
  */
 public class AlipayOpenMiniPoiDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5868563222152979626L;
+	private static final long serialVersionUID = 8699366345849991779L;
 
 	/**
 	 * poi id，地理位置标记信息

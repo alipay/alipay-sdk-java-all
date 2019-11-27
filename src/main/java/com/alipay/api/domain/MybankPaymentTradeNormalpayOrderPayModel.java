@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付支付接口
  *
  * @author auto create
- * @since 1.0, 2019-11-15 17:11:38
+ * @since 1.0, 2019-11-15 17:48:46
  */
 public class MybankPaymentTradeNormalpayOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4696711724993422898L;
+	private static final long serialVersionUID = 3833393518324122189L;
 
 	/**
 	 * 支付金额
@@ -30,6 +30,12 @@ public class MybankPaymentTradeNormalpayOrderPayModel extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 操作场景类型 ：NORMAL_PAY_PAYMENT_WITH_CREDIT-周卡支付;NORMAL_PAY_PAYMENT_WITH_GUARANTEE-担保支付；不传默认为周卡支付；
+	 */
+	@ApiField("operate_scene_type")
+	private String operateSceneType;
 
 	/**
 	 * 创建订单时返回的订单号
@@ -92,6 +98,13 @@ public class MybankPaymentTradeNormalpayOrderPayModel extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getOperateSceneType() {
+		return this.operateSceneType;
+	}
+	public void setOperateSceneType(String operateSceneType) {
+		this.operateSceneType = operateSceneType;
 	}
 
 	public String getOrderNo() {

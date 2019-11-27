@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝建群
  *
  * @author auto create
- * @since 1.0, 2016-08-25 10:46:34
+ * @since 1.0, 2017-04-27 11:25:04
  */
 public class AlipaySocialBaseGroupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8213459521167928792L;
+	private static final long serialVersionUID = 4736181111379592647L;
 
 	/**
 	 * 业务方传入的唯一id，做为幂等使用

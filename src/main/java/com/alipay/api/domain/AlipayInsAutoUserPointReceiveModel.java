@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户攒油请求
  *
  * @author auto create
- * @since 1.0, 2017-09-28 11:02:58
+ * @since 1.0, 2017-12-25 22:01:49
  */
 public class AlipayInsAutoUserPointReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5446459751336441776L;
+	private static final long serialVersionUID = 5687582719317626496L;
 
 	/**
 	 * 车险活动类型编码。
@@ -22,7 +22,7 @@ public class AlipayInsAutoUserPointReceiveModel extends AlipayObject {
 
 	/**
 	 * 扩展参数。
-BIZ_END_TIME:业务结束时间，值为时间戳
+BIZ_END_TIME:业务结束时间，值为时间戳,BIZ_OIL_GRADE为油量等级，目前支持1-6
 	 */
 	@ApiField("extend_info")
 	private String extendInfo;

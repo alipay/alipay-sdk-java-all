@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT设备安全芯片applet初始化
  *
  * @author auto create
- * @since 1.0, 2018-03-29 10:01:39
+ * @since 1.0, 2019-01-08 20:37:05
  */
 public class AlipaySecurityProdSeAppletQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7411789983322737525L;
+	private static final long serialVersionUID = 7627815847469991429L;
 
 	/**
 	 * 操作类型，唯一，传递tsm的具体操作，厂测程序提供

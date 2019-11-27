@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringOrderBillCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6875583568997976347L;
+	private static final long serialVersionUID = 3836128723888153341L;
 
 	/**
 	 * 取消类型：RENEW-退款并重新生成新订单（反结场景），REFUND-仅退款不生成新订单（先付撤销、外卖退款场景）

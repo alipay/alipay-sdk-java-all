@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑广告系统推广详情(单张券)
  *
  * @author auto create
- * @since 1.0, 2017-01-16 16:13:33
+ * @since 1.0, 2017-02-15 13:57:59
  */
 public class KbAdvertAdvSingleVoucherResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4115363596215364931L;
+	private static final long serialVersionUID = 6418129247335652875L;
 
 	/**
 	 * 广告内容模型

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.message.send response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-30 17:51:58
+ * @since 1.0, 2019-08-27 18:34:23
  */
 public class AlipayCommerceTransportMessageSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5196812164434838723L;
+	private static final long serialVersionUID = 2784574692785199994L;
 
 	/** 
 	 * 请求失败时返回的子错误码信息
@@ -31,6 +31,12 @@ public class AlipayCommerceTransportMessageSendResponse extends AlipayResponse {
 	 */
 	@ApiField("failed_user_ids")
 	private String failedUserIds;
+
+	/** 
+	 * 业务成功标志。true表示业务成功，false表示业务失败。
+	 */
+	@ApiField("success")
+	private Boolean success;
 
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
@@ -51,6 +57,13 @@ public class AlipayCommerceTransportMessageSendResponse extends AlipayResponse {
 	}
 	public String getFailedUserIds( ) {
 		return this.failedUserIds;
+	}
+
+	public void setSuccess(Boolean success) {
+		this.success = success;
+	}
+	public Boolean getSuccess( ) {
+		return this.success;
 	}
 
 }

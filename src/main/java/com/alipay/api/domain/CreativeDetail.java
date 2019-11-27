@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创意详情列表
  *
  * @author auto create
- * @since 1.0, 2019-07-25 16:53:27
+ * @since 1.0, 2019-08-07 14:22:04
  */
 public class CreativeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6652554378512245118L;
+	private static final long serialVersionUID = 4181989562463911533L;
 
 	/**
 	 * 落地页动作类型，NO_ACTION-无动作；LP-普通落地页；OPEN_TINYAPP-打开小程序；OPEN_CHANNELS-打开生活号；COLLECT_TINYAPP-收藏小程序；
@@ -27,6 +27,18 @@ public class CreativeDetail extends AlipayObject {
 	 */
 	@ApiField("batch_tag")
 	private String batchTag;
+
+	/**
+	 * 创意点击量
+	 */
+	@ApiField("click")
+	private Long click;
+
+	/**
+	 * 创意消费数据，单元：分
+	 */
+	@ApiField("cost")
+	private Long cost;
 
 	/**
 	 * 广告投放平台生成的创意ID
@@ -65,6 +77,12 @@ public class CreativeDetail extends AlipayObject {
 	@ApiListField("img_list")
 	@ApiField("material_detail")
 	private List<MaterialDetail> imgList;
+
+	/**
+	 * 创意展现量
+	 */
+	@ApiField("impression")
+	private Long impression;
 
 	/**
 	 * 门店LBS信息，目前仅口碑使用，格式为：经度:纬度:半径(单位:KM,无半径限制直接设置为0)
@@ -168,6 +186,20 @@ public class CreativeDetail extends AlipayObject {
 		this.batchTag = batchTag;
 	}
 
+	public Long getClick() {
+		return this.click;
+	}
+	public void setClick(Long click) {
+		this.click = click;
+	}
+
+	public Long getCost() {
+		return this.cost;
+	}
+	public void setCost(Long cost) {
+		this.cost = cost;
+	}
+
 	public Long getCreativeId() {
 		return this.creativeId;
 	}
@@ -208,6 +240,13 @@ public class CreativeDetail extends AlipayObject {
 	}
 	public void setImgList(List<MaterialDetail> imgList) {
 		this.imgList = imgList;
+	}
+
+	public Long getImpression() {
+		return this.impression;
+	}
+	public void setImpression(Long impression) {
+		this.impression = impression;
 	}
 
 	public List<String> getLbsList() {

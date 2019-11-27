@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 首页的超值抢购数据类型
  *
  * @author auto create
- * @since 1.0, 2019-01-28 11:53:34
+ * @since 1.0, 2019-01-28 17:56:09
  */
 public class IndexBigbuyItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4656811351933585123L;
+	private static final long serialVersionUID = 5856321171635992557L;
 
 	/**
 	 * 距离
@@ -74,6 +74,18 @@ public class IndexBigbuyItem extends AlipayObject {
 	private String priceUnit;
 
 	/**
+	 * 剩余日库存
+	 */
+	@ApiField("remain_inventory")
+	private Long remainInventory;
+
+	/**
+	 * 剩余日库存描述
+	 */
+	@ApiField("remain_inventory_desc")
+	private String remainInventoryDesc;
+
+	/**
 	 * 售卖价格
 	 */
 	@ApiField("selling_price")
@@ -102,6 +114,18 @@ public class IndexBigbuyItem extends AlipayObject {
 	 */
 	@ApiField("tb_mini_shop_id")
 	private String tbMiniShopId;
+
+	/**
+	 * 总日库存
+	 */
+	@ApiField("total_inventory")
+	private Long totalInventory;
+
+	/**
+	 * 总日库存描述
+	 */
+	@ApiField("total_inventory_desc")
+	private String totalInventoryDesc;
 
 	public Long getDistance() {
 		return this.distance;
@@ -173,6 +197,20 @@ public class IndexBigbuyItem extends AlipayObject {
 		this.priceUnit = priceUnit;
 	}
 
+	public Long getRemainInventory() {
+		return this.remainInventory;
+	}
+	public void setRemainInventory(Long remainInventory) {
+		this.remainInventory = remainInventory;
+	}
+
+	public String getRemainInventoryDesc() {
+		return this.remainInventoryDesc;
+	}
+	public void setRemainInventoryDesc(String remainInventoryDesc) {
+		this.remainInventoryDesc = remainInventoryDesc;
+	}
+
 	public String getSellingPrice() {
 		return this.sellingPrice;
 	}
@@ -206,6 +244,20 @@ public class IndexBigbuyItem extends AlipayObject {
 	}
 	public void setTbMiniShopId(String tbMiniShopId) {
 		this.tbMiniShopId = tbMiniShopId;
+	}
+
+	public Long getTotalInventory() {
+		return this.totalInventory;
+	}
+	public void setTotalInventory(Long totalInventory) {
+		this.totalInventory = totalInventory;
+	}
+
+	public String getTotalInventoryDesc() {
+		return this.totalInventoryDesc;
+	}
+	public void setTotalInventoryDesc(String totalInventoryDesc) {
+		this.totalInventoryDesc = totalInventoryDesc;
 	}
 
 }

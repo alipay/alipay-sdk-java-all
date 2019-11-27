@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计划单元详情
  *
  * @author auto create
- * @since 1.0, 2018-09-18 21:52:42
+ * @since 1.0, 2018-09-19 01:25:14
  */
 public class AdPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 6841949242153723416L;
+	private static final long serialVersionUID = 8346616282836392872L;
 
 	/**
 	 * 注册用户返回的用户ID

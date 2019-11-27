@@ -7,14 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * crash 信息上报接口
  *
  * @author auto create
- * @since 1.0, 2018-08-24 17:07:27
+ * @since 1.0, 2018-08-24 17:35:58
  */
 public class KoubeiMerchantDeviceCrashinfoUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3715749788222819632L;
+	private static final long serialVersionUID = 3272994344893481511L;
 
 	/**
-	 * Crash事件发生时间
+	 * crash事件发生时间/ssids搜集时间
+格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("event_time")
 	private String eventTime;
@@ -44,7 +45,7 @@ public class KoubeiMerchantDeviceCrashinfoUploadModel extends AlipayObject {
 	private String messageType;
 
 	/**
-	 * 第三方应用的app_id
+	 * 发送心跳的设备所依赖的口碑产品，目前仅支持CO：点餐
 	 */
 	@ApiField("product")
 	private String product;

@@ -24,6 +24,11 @@ public class AlipayEcardEduBalanceGetRequest implements AlipayRequest<AlipayEcar
 	private String agentCode;
 
 	/** 
+	* 公众账号协议Id
+	 */
+	private String agreementId;
+
+	/** 
 	* 支付宝userId
 	 */
 	private String alipayUserId;
@@ -38,11 +43,23 @@ public class AlipayEcardEduBalanceGetRequest implements AlipayRequest<AlipayEcar
 	 */
 	private String cardNo;
 
+	/** 
+	* 公众平台ID
+	 */
+	private String publicId;
+
 	public void setAgentCode(String agentCode) {
 		this.agentCode = agentCode;
 	}
 	public String getAgentCode() {
 		return this.agentCode;
+	}
+
+	public void setAgreementId(String agreementId) {
+		this.agreementId = agreementId;
+	}
+	public String getAgreementId() {
+		return this.agreementId;
 	}
 
 	public void setAlipayUserId(String alipayUserId) {
@@ -64,6 +81,13 @@ public class AlipayEcardEduBalanceGetRequest implements AlipayRequest<AlipayEcar
 	}
 	public String getCardNo() {
 		return this.cardNo;
+	}
+
+	public void setPublicId(String publicId) {
+		this.publicId = publicId;
+	}
+	public String getPublicId() {
+		return this.publicId;
 	}
 	private String terminalType;
 	private String terminalInfo;	
@@ -128,9 +152,11 @@ public class AlipayEcardEduBalanceGetRequest implements AlipayRequest<AlipayEcar
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("agent_code", this.agentCode);
+		txtParams.put("agreement_id", this.agreementId);
 		txtParams.put("alipay_user_id", this.alipayUserId);
 		txtParams.put("card_name", this.cardName);
 		txtParams.put("card_no", this.cardNo);
+		txtParams.put("public_id", this.publicId);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

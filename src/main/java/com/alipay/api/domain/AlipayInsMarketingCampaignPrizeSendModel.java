@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险营销活动发奖接口
  *
  * @author auto create
- * @since 1.0, 2017-12-14 18:04:02
+ * @since 1.0, 2017-12-14 18:06:40
  */
 public class AlipayInsMarketingCampaignPrizeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2685876341536325278L;
+	private static final long serialVersionUID = 4812986774566565555L;
 
 	/**
 	 * 账户id，如支付宝userId：2088102161835009

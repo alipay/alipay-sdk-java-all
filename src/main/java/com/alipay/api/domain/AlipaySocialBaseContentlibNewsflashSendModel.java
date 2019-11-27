@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容中台快讯插入接口
  *
  * @author auto create
- * @since 1.0, 2018-05-14 14:10:07
+ * @since 1.0, 2018-06-21 15:26:54
  */
 public class AlipaySocialBaseContentlibNewsflashSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8272895861865952958L;
+	private static final long serialVersionUID = 6478445338613468765L;
 
 	/**
 	 * 作者

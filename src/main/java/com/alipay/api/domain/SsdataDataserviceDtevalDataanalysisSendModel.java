@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数据报告服务数据传输接口
  *
  * @author auto create
- * @since 1.0, 2017-02-06 12:07:51
+ * @since 1.0, 2017-05-09 10:21:49
  */
 public class SsdataDataserviceDtevalDataanalysisSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6673691685411154231L;
+	private static final long serialVersionUID = 8843488732714351157L;
 
 	/**
 	 * 业务编号, 唯一流水标识

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 心跳信息采集接口
  *
  * @author auto create
- * @since 1.0, 2018-08-24 17:06:57
+ * @since 1.0, 2018-08-24 17:08:05
  */
 public class KoubeiMerchantDeviceHeartbeatUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3319822671797147669L;
+	private static final long serialVersionUID = 6542941897235946195L;
 
 	/**
 	 * 前台/后台app信息，name传递应用名称，version传递应用版本信息，status传递应用状态，枚举：active----运行，background----后台运行
@@ -48,13 +48,14 @@ HE_OTHER——其他硬件异常
 	private String isvAppId;
 
 	/**
-	 * isv商户pid
+	 * isv pid
 	 */
 	@ApiField("isv_pid")
 	private String isvPid;
 
 	/**
-	 * ISV 心跳服务器时间
+	 * ISV 心跳服务器时间（即isv服务器调用接口的时间）
+格式： yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("isv_server_time")
 	private String isvServerTime;
@@ -140,7 +141,8 @@ HE_OTHER——其他硬件异常
 	private String sysVersion;
 
 	/**
-	 * 心跳发生时间
+	 * 产生心跳的时间
+格式：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("time")
 	private String time;

@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.KoubeiItemExtitemBrandQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -17,6 +18,18 @@ public class KoubeiItemExtitemBrandQueryRequest implements AlipayRequest<KoubeiI
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 品牌查询接口
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class KoubeiItemExtitemBrandQueryRequest implements AlipayRequest<KoubeiI
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

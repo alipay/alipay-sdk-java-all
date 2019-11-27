@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * tomayi消息测试
  *
  * @author auto create
- * @since 1.0, 2019-06-05 22:19:54
+ * @since 1.0, 2019-10-19 18:03:51
  */
 public class ZhimaOpenAppDesSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4219891774538947816L;
+	private static final long serialVersionUID = 4599511499927699292L;
 
 	/**
 	 * 21

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 编辑档口
  *
  * @author auto create
- * @since 1.0, 2018-11-23 19:45:49
+ * @since 1.0, 2018-12-24 13:55:45
  */
 public class KoubeiCateringPosStallModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7664517458489435439L;
+	private static final long serialVersionUID = 8671586773532621314L;
 
 	/**
 	 * 菜品id列表
@@ -28,6 +28,13 @@ public class KoubeiCateringPosStallModifyModel extends AlipayObject {
 	 */
 	@ApiField("id")
 	private String id;
+
+	/**
+	 * kds id 集合 （结构和dish_ids一样）
+	 */
+	@ApiListField("kds_ids")
+	@ApiField("string")
+	private List<String> kdsIds;
 
 	/**
 	 * 打印机id
@@ -77,6 +84,13 @@ public class KoubeiCateringPosStallModifyModel extends AlipayObject {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public List<String> getKdsIds() {
+		return this.kdsIds;
+	}
+	public void setKdsIds(List<String> kdsIds) {
+		this.kdsIds = kdsIds;
 	}
 
 	public String getPrinterId() {

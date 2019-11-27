@@ -19,12 +19,13 @@ public class AlipayEbppBillGetRequest implements AlipayRequest<AlipayEbppBillGet
 	private String apiVersion="1.0";
 
 	/** 
-	* 输出机构的业务流水号，需要保证唯一性。
+	* ISV流水号，用于控制幂等，须确保全局唯一。
+对缴税业务来说，可采用{征收机关代码}-{外部申报号}的形式
 	 */
 	private String merchantOrderNo;
 
 	/** 
-	* 支付宝订单类型。公共事业缴纳JF,信用卡还款HK
+	* 业务类型英文名称，对缴税业务来说，固定传TAX，表示缴税
 	 */
 	private String orderType;
 

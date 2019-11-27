@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务的物流信息
  *
  * @author auto create
- * @since 1.0, 2017-03-14 16:16:59
+ * @since 1.0, 2017-03-14 16:17:32
  */
 public class OrderLogisticsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8173287279662767651L;
+	private static final long serialVersionUID = 8549348266753286474L;
 
 	/**
 	 * 消费者下单线下服务时，填写的服务地址
@@ -32,19 +32,19 @@ public class OrderLogisticsInfo extends AlipayObject {
 	private OrderLogisticsExtInfo extInfo;
 
 	/**
-	 * 消费者地址纬度（高德坐标系）
+	 * 消费者地址纬度（高德坐标系，高德经纬度查询：http://lbs.amap.com/console/show/picker）
 	 */
 	@ApiField("latitude")
 	private String latitude;
 
 	/**
-	 * 消费者地址经度（高德坐标系）
+	 * 消费者地址经度（高德坐标系，高德经纬度查询：http://lbs.amap.com/console/show/picker）
 	 */
 	@ApiField("longitude")
 	private String longitude;
 
 	/**
-	 * 商家电话绑定的消费者手机号（阿里小号）
+	 * 消费者与商家绑定的手机号码（阿里小号，用户保护消费者隐私。参考链接：https://aliqin.tmall.com/help/detail.htm?kid=5849806）
 	 */
 	@ApiField("merchant_bind_mobile")
 	private String merchantBindMobile;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝脱机交易结算
  *
  * @author auto create
- * @since 1.0, 2016-08-10 17:01:08
+ * @since 1.0, 2017-09-20 18:00:56
  */
 public class AlipayCommerceTransportOfflinepayTradeSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6458964381794537495L;
+	private static final long serialVersionUID = 5113924429318347938L;
 
 	/**
 	 * 脱机交易列表

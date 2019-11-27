@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户互通产品查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:42:37
+ * @since 1.0, 2017-11-16 19:40:21
  */
 public class AlipayUserCustomerIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1823872796848418132L;
+	private static final long serialVersionUID = 4411917928464288831L;
 
 	/**
 	 * 预留参数，用于商户区分同一appId下的不同业务场景。默认场景不用传。

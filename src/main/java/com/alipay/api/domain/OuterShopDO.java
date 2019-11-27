@@ -7,27 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 操作的店铺对象信息
  *
  * @author auto create
- * @since 1.0, 2017-03-07 22:15:22
+ * @since 1.0, 2017-10-27 18:16:12
  */
 public class OuterShopDO extends AlipayObject {
 
-	private static final long serialVersionUID = 5651142717866327297L;
+	private static final long serialVersionUID = 3611167479185358543L;
 
 	/**
-	 * 合作商户ID
+	 * ISV系统中与口碑店铺shop_id关联的ISV店铺主键，口碑系统会根据shop_id+outer_id+type保存一条数据，来唯一标示口碑店铺与哪些ISV的店铺建立了关联关系。
 	 */
 	@ApiField("outer_id")
 	private String outerId;
 
 	/**
-	 * 支付宝店铺ID
+	 * 口碑店铺ID，一般情况商家订购ISV服务插件后，ISV会建立口碑店铺与ISV店铺的关联关系。
 	 */
 	@ApiField("shop_id")
 	private String shopId;
 
 	/**
-	 * 合作商户类型 （mike、_2dFire）
-iSV自己定义自己的类型，推荐使用自己的域名
+	 * 如果已经在上传的无需修改，后续接入直接传入ISV的域名。口碑系统会根据shop_id+outer_id+type保存一条数据，来唯一标示口碑店铺与哪些ISV的店铺建立了关联关系，所以传入各自ISV的域名可以有效的区分掉不同的ISV，一旦设置就不能再次变化。
 	 */
 	@ApiField("type")
 	private String type;

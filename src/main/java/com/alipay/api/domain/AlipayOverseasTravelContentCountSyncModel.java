@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 飞猪内容对接内容阅读数点赞数同步接口
  *
  * @author auto create
- * @since 1.0, 2017-11-29 17:17:03
+ * @since 1.0, 2017-12-15 13:52:27
  */
 public class AlipayOverseasTravelContentCountSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5399469491821342291L;
+	private static final long serialVersionUID = 2364955446856353233L;
 
 	/**
-	 * 计数信息列表
+	 * 计数信息列表，表大小不超过2000个
 	 */
 	@ApiListField("count_infos")
 	@ApiField("count_info")

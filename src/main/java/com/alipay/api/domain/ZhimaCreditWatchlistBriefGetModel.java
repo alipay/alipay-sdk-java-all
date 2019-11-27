@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业关注名单普惠版
  *
  * @author auto create
- * @since 1.0, 2017-11-23 14:20:59
+ * @since 1.0, 2017-11-23 14:31:48
  */
 public class ZhimaCreditWatchlistBriefGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8416899175252639663L;
+	private static final long serialVersionUID = 1712369272614669821L;
 
 	/**
 	 * 与参数cert_type对应，分别为：证件号完整值(例：420983190001010001) 或支付宝uid（例：2088102165398450）
@@ -24,6 +24,12 @@ public class ZhimaCreditWatchlistBriefGetModel extends AlipayObject {
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 芝麻平台服务商模式下的二级商户标识，如果是直连商户调用该接口，不需要设置
+	 */
+	@ApiField("linked_merchant_id")
+	private String linkedMerchantId;
 
 	/**
 	 * 用户姓名 当证件类型为ALIPAY_USER_ID时可以不填
@@ -55,6 +61,13 @@ public class ZhimaCreditWatchlistBriefGetModel extends AlipayObject {
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getLinkedMerchantId() {
+		return this.linkedMerchantId;
+	}
+	public void setLinkedMerchantId(String linkedMerchantId) {
+		this.linkedMerchantId = linkedMerchantId;
 	}
 
 	public String getName() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一对外错误码测试测试
  *
  * @author auto create
- * @since 1.0, 2016-05-11 19:51:24
+ * @since 1.0, 2017-06-09 15:55:15
  */
 public class AlipayOpenAppCodetesttestModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5693938326934763474L;
+	private static final long serialVersionUID = 1898724383744943499L;
 
 	/**
 	 * 测试参数1

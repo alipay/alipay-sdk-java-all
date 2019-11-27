@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序类目模型
  *
  * @author auto create
- * @since 1.0, 2018-12-17 15:44:16
+ * @since 1.0, 2019-02-22 10:45:04
  */
 public class MiniAppCategory extends AlipayObject {
 
-	private static final long serialVersionUID = 8284618779553193629L;
+	private static final long serialVersionUID = 5318782146373822976L;
 
 	/**
 	 * 类目id
@@ -44,7 +44,7 @@ public class MiniAppCategory extends AlipayObject {
 	private Boolean needOutDoorPic;
 
 	/**
-	 * 是否需要营业执照
+	 * 是否需要特许营业执照
 	 */
 	@ApiField("need_special_license")
 	private Boolean needSpecialLicense;

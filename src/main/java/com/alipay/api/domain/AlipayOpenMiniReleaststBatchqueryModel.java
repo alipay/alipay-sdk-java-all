@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 0411预发验证
  *
  * @author auto create
- * @since 1.0, 2019-04-11 17:22:28
+ * @since 1.0, 2019-06-13 12:09:46
  */
 public class AlipayOpenMiniReleaststBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4866153723591494742L;
+	private static final long serialVersionUID = 5529676116181933483L;
 
 	/**
 	 * 20

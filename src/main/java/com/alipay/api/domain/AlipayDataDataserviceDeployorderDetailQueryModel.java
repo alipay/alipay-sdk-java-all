@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 部署单查询接口
  *
  * @author auto create
- * @since 1.0, 2018-01-22 10:51:01
+ * @since 1.0, 2019-08-14 15:22:42
  */
 public class AlipayDataDataserviceDeployorderDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1515791941238182331L;
+	private static final long serialVersionUID = 5868823264493446962L;
 
 	/**
 	 * 描述：拉取的业务起始时间（不包含）

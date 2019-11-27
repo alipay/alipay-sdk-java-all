@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8354493325615529373L;
+	private static final long serialVersionUID = 4574259834325738136L;
 
 	/** 
 	 * 地址。用机构的AES加密后值。
@@ -31,6 +31,12 @@ public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/** 
+	 * 证件本人相片。base64。
+	 */
+	@ApiField("cert_picture")
+	private String certPicture;
 
 	/** 
 	 * 性别(男，女)。用机构的AES加密后值。
@@ -99,6 +105,13 @@ public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 	}
 	public String getCertNo( ) {
 		return this.certNo;
+	}
+
+	public void setCertPicture(String certPicture) {
+		this.certPicture = certPicture;
+	}
+	public String getCertPicture( ) {
+		return this.certPicture;
 	}
 
 	public void setGender(String gender) {

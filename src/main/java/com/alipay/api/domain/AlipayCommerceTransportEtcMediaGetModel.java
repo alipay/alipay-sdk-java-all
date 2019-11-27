@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * etc办理资料接口
  *
  * @author auto create
- * @since 1.0, 2019-05-25 14:25:26
+ * @since 1.0, 2019-05-28 11:06:22
  */
 public class AlipayCommerceTransportEtcMediaGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1317275434646662898L;
+	private static final long serialVersionUID = 8785871178327412721L;
 
 	/**
 	 * 业务标识。
@@ -19,7 +19,9 @@ public class AlipayCommerceTransportEtcMediaGetModel extends AlipayObject {
 2：身份证背面照片；
 3：行驶证正页正面照片；
 4：行驶证副页正面照片；
-5：车头照片
+5：车头照片；
+6：OBU车内照片；
+7：OBU车外照片；
 	 */
 	@ApiField("biz_type")
 	private String bizType;

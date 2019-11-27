@@ -25,11 +25,47 @@ public class AlipayToolsFileUploadRequest implements AlipayUploadRequest<AlipayT
 	 */
 	private FileItem file;
 
+	/** 
+	* file1
+	 */
+	private String file2;
+
+	/** 
+	* file2
+	 */
+	private FileItem file3;
+
+	/** 
+	* 234234
+	 */
+	private String sadsa;
+
 	public void setFile(FileItem file) {
 		this.file = file;
 	}
 	public FileItem getFile() {
 		return this.file;
+	}
+
+	public void setFile2(String file2) {
+		this.file2 = file2;
+	}
+	public String getFile2() {
+		return this.file2;
+	}
+
+	public void setFile3(FileItem file3) {
+		this.file3 = file3;
+	}
+	public FileItem getFile3() {
+		return this.file3;
+	}
+
+	public void setSadsa(String sadsa) {
+		this.sadsa = sadsa;
+	}
+	public String getSadsa() {
+		return this.sadsa;
 	}
 	private String terminalType;
 	private String terminalInfo;
@@ -92,6 +128,8 @@ public class AlipayToolsFileUploadRequest implements AlipayUploadRequest<AlipayT
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("file2", this.file2);
+		txtParams.put("sadsa", this.sadsa);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
@@ -108,6 +146,7 @@ public class AlipayToolsFileUploadRequest implements AlipayUploadRequest<AlipayT
 	public Map<String, FileItem> getFileParams() {
 		Map<String, FileItem> params = new HashMap<String, FileItem>();
 		params.put("file", this.file);
+		params.put("file3", this.file3);
 		return params;
 	}
 

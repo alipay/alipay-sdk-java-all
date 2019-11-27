@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品SKU查询模型
  *
  * @author auto create
- * @since 1.0, 2019-07-31 14:55:03
+ * @since 1.0, 2019-08-01 10:40:03
  */
 public class ItemSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1331961824291787751L;
+	private static final long serialVersionUID = 7517754555555359443L;
 
 	/**
 	 * 成本价，单位分
@@ -43,10 +43,23 @@ public class ItemSkuInfo extends AlipayObject {
 	private Date gmtModified;
 
 	/**
+	 * 库存
+	 */
+	@ApiField("inventory")
+	private Long inventory;
+
+	/**
 	 * 商品id
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 素材列表
+	 */
+	@ApiListField("material_list")
+	@ApiField("material_info")
+	private List<MaterialInfo> materialList;
 
 	/**
 	 * 标价，单位分
@@ -59,6 +72,12 @@ public class ItemSkuInfo extends AlipayObject {
 	 */
 	@ApiField("price")
 	private Long price;
+
+	/**
+	 * 剩余库存
+	 */
+	@ApiField("remain_inventory")
+	private Long remainInventory;
 
 	/**
 	 * 商品sku id
@@ -100,11 +119,25 @@ public class ItemSkuInfo extends AlipayObject {
 		this.gmtModified = gmtModified;
 	}
 
+	public Long getInventory() {
+		return this.inventory;
+	}
+	public void setInventory(Long inventory) {
+		this.inventory = inventory;
+	}
+
 	public String getItemId() {
 		return this.itemId;
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public List<MaterialInfo> getMaterialList() {
+		return this.materialList;
+	}
+	public void setMaterialList(List<MaterialInfo> materialList) {
+		this.materialList = materialList;
 	}
 
 	public Long getOriginalPrice() {
@@ -119,6 +152,13 @@ public class ItemSkuInfo extends AlipayObject {
 	}
 	public void setPrice(Long price) {
 		this.price = price;
+	}
+
+	public Long getRemainInventory() {
+		return this.remainInventory;
+	}
+	public void setRemainInventory(Long remainInventory) {
+		this.remainInventory = remainInventory;
 	}
 
 	public String getSkuId() {

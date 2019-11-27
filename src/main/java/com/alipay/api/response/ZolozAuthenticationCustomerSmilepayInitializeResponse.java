@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.smilepay.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-17 20:38:51
+ * @since 1.0, 2019-07-30 09:57:32
  */
 public class ZolozAuthenticationCustomerSmilepayInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1495618589331989752L;
+	private static final long serialVersionUID = 7867626757911924141L;
 
 	/** 
 	 * 返回值

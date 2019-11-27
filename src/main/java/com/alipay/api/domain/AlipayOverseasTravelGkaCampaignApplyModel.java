@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 苹果外部活动参加
  *
  * @author auto create
- * @since 1.0, 2018-12-03 16:00:37
+ * @since 1.0, 2018-12-25 15:08:07
  */
 public class AlipayOverseasTravelGkaCampaignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3823998657953584268L;
+	private static final long serialVersionUID = 4135226297574333789L;
 
 	/**
 	 * 活动id，获取方式：联系支付宝运营同学获取（适用于支付宝平台活动，由合作伙伴调用触发）

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 仓库模型
  *
  * @author auto create
- * @since 1.0, 2018-08-21 20:34:20
+ * @since 1.0, 2018-09-13 19:27:59
  */
 public class WarehouseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6193922833629683377L;
+	private static final long serialVersionUID = 1535857454992324541L;
 
 	/**
 	 * 仓库详细地址
@@ -62,6 +62,15 @@ public class WarehouseVO extends AlipayObject {
 	private String contact;
 
 	/**
+	 * 扩展信息
+ADMIN_PHONE:管理员电话
+CITY_MANAGER_PHONE:城市经理电话
+PURCHASE_MANAGER_PHONE:采购经理电话
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
+
+	/**
 	 * 维度
 	 */
 	@ApiField("lat")
@@ -96,6 +105,12 @@ public class WarehouseVO extends AlipayObject {
 	 */
 	@ApiField("province_name")
 	private String provinceName;
+
+	/**
+	 * 安全库存是否打开 ON打开 OFF关闭
+	 */
+	@ApiField("safety_inventory_switch")
+	private Boolean safetyInventorySwitch;
 
 	/**
 	 * 对应的门店ID
@@ -177,6 +192,13 @@ public class WarehouseVO extends AlipayObject {
 		this.contact = contact;
 	}
 
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+
 	public String getLat() {
 		return this.lat;
 	}
@@ -217,6 +239,13 @@ public class WarehouseVO extends AlipayObject {
 	}
 	public void setProvinceName(String provinceName) {
 		this.provinceName = provinceName;
+	}
+
+	public Boolean getSafetyInventorySwitch() {
+		return this.safetyInventorySwitch;
+	}
+	public void setSafetyInventorySwitch(Boolean safetyInventorySwitch) {
+		this.safetyInventorySwitch = safetyInventorySwitch;
 	}
 
 	public String getShopId() {

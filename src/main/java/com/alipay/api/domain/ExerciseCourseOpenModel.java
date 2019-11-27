@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 课程模型
  *
  * @author auto create
- * @since 1.0, 2019-01-03 10:33:00
+ * @since 1.0, 2019-01-03 14:30:42
  */
 public class ExerciseCourseOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4374263463639822436L;
+	private static final long serialVersionUID = 5558898482649624442L;
 
 	/**
 	 * 课程类型：团课(CLASS),私教(PRIVATE_LESSON)
@@ -56,6 +56,12 @@ public class ExerciseCourseOpenModel extends AlipayObject {
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 课程所属运动类型：柔韧(FLEXIBILITY),有氧(CARDIO)
+	 */
+	@ApiField("exercise_type")
+	private String exerciseType;
 
 	/**
 	 * 外部课程ID。课程记录在ISV系统中的ID
@@ -128,6 +134,13 @@ public class ExerciseCourseOpenModel extends AlipayObject {
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getExerciseType() {
+		return this.exerciseType;
+	}
+	public void setExerciseType(String exerciseType) {
+		this.exerciseType = exerciseType;
 	}
 
 	public String getExternalCourseId() {

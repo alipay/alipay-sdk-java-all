@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserGroupshoppingNewbieQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6482874848119518365L;
+	private static final long serialVersionUID = 7231732997945921911L;
 
 	/**
 	 * 支付宝淘宝拼团的组团id

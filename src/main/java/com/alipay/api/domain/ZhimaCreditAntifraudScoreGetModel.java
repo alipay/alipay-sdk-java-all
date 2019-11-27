@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请欺诈评分
  *
  * @author auto create
- * @since 1.0, 2017-10-30 10:55:35
+ * @since 1.0, 2017-11-23 14:14:11
  */
 public class ZhimaCreditAntifraudScoreGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2251293231155417627L;
+	private static final long serialVersionUID = 7724784988645489315L;
 
 	/**
 	 * 地址信息。省+市+区/县+详细地址，长度不超过256，不含",","/u0001"，"|","&","^","\\"
@@ -54,6 +54,12 @@ public class ZhimaCreditAntifraudScoreGetModel extends AlipayObject {
 	 */
 	@ApiField("ip")
 	private String ip;
+
+	/**
+	 * 芝麻平台服务商模式下的二级商户标识，如果是直连商户调用该接口，不需要设置
+	 */
+	@ApiField("linked_merchant_id")
+	private String linkedMerchantId;
 
 	/**
 	 * 物理地址。支持格式如下：xx:xx:xx:xx:xx:xx，xx-xx-xx-xx-xx-xx，xxxxxxxxxxxx，x取值范围[0,9]之间的整数及A，B，C，D，E，F
@@ -138,6 +144,13 @@ public class ZhimaCreditAntifraudScoreGetModel extends AlipayObject {
 	}
 	public void setIp(String ip) {
 		this.ip = ip;
+	}
+
+	public String getLinkedMerchantId() {
+		return this.linkedMerchantId;
+	}
+	public void setLinkedMerchantId(String linkedMerchantId) {
+		this.linkedMerchantId = linkedMerchantId;
 	}
 
 	public String getMac() {

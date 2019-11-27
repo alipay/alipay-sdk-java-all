@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺优惠信息查询
  *
  * @author auto create
- * @since 1.0, 2016-10-31 11:21:25
+ * @since 1.0, 2017-08-07 17:15:17
  */
 public class ShopDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7397535225634717224L;
+	private static final long serialVersionUID = 5151948336378535697L;
 
 	/**
 	 * 图片url
@@ -39,7 +39,8 @@ public class ShopDiscountInfo extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 子类型
+	 * 子类型.
+DISCOUNT("折扣券"),CASH("代金券"),EXCHANGE("兑换券"),BUY_SEND("买N送M券"),
 	 */
 	@ApiField("promo_sub_type")
 	private String promoSubType;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定损宝图像定损结果详情对象
  *
  * @author auto create
- * @since 1.0, 2017-08-07 17:31:25
+ * @since 1.0, 2017-10-10 21:59:49
  */
 public class InsDataDsbEstimateResultDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2622939656893749697L;
+	private static final long serialVersionUID = 1338874931967382888L;
 
 	/**
 	 * 受损程度
@@ -66,6 +66,12 @@ public class InsDataDsbEstimateResultDetail extends AlipayObject {
 	 */
 	@ApiField("parts_cost")
 	private String partsCost;
+
+	/**
+	 * 涉及到的维修配件的数量
+	 */
+	@ApiField("parts_count")
+	private Long partsCount;
 
 	/**
 	 * 零件管理费，单位：元
@@ -158,6 +164,13 @@ public class InsDataDsbEstimateResultDetail extends AlipayObject {
 	}
 	public void setPartsCost(String partsCost) {
 		this.partsCost = partsCost;
+	}
+
+	public Long getPartsCount() {
+		return this.partsCount;
+	}
+	public void setPartsCount(Long partsCount) {
+		this.partsCount = partsCount;
 	}
 
 	public String getPartsManageFee() {

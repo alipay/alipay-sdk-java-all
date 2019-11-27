@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户门店信息模型
  *
  * @author auto create
- * @since 1.0, 2019-11-19 10:05:06
+ * @since 1.0, 2019-11-26 16:10:04
  */
 public class SubMerchantEnterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7325265937156194163L;
+	private static final long serialVersionUID = 1894899855476899418L;
 
 	/**
-	 * 扩展字段，为json字符串格式；入驻缴费后开票的产品需要传入自定义开票链接，由此字段传入；入驻缴费后开票的产品需要传入输出的流水号类型(ALIPAY_TRADE_NO或者OUT_TRADE_NO)，如果不传默认为支付宝流水号。
+	 * 扩展字段，为json字符串格式；入驻缴费后开票的产品如果需要传入自定义开票链接，由此字段传入。
 	 */
 	@ApiField("extend_fields")
 	private String extendFields;

@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayMobileStdPublicAccountQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.std.public.account.query request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AlipayMobileStdPublicAccountQueryRequest implements AlipayRequest<AlipayMobileStdPublicAccountQueryResponse> {
 
@@ -19,7 +20,7 @@ public class AlipayMobileStdPublicAccountQueryRequest implements AlipayRequest<A
 	private String apiVersion="1.0";
 
 	/** 
-	* 业务信息：userId，这是个json字段
+	* 当用户成为商户的关注用户之后，则商户可以通过本接口查询关注者的绑定账户，以便补全异常情况下的单边账户数据。
 	 */
 	private String bizContent;
 

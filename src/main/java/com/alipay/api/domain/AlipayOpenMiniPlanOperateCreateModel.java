@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付后推荐创建方案
  *
  * @author auto create
- * @since 1.0, 2019-10-22 20:28:25
+ * @since 1.0, 2019-10-31 22:01:32
  */
 public class AlipayOpenMiniPlanOperateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2237995438954755166L;
+	private static final long serialVersionUID = 4114113652314377739L;
 
 	/**
 	 * 描述支付后推荐的应用是否属于当前账号，该字段只做展示用, 不应用于业务逻辑, 若属于当前账号则设置为OWN，否则设置为OTHERS, 无法判断的场景传 DEFAULT 即可
@@ -54,7 +54,9 @@ public class AlipayOpenMiniPlanOperateCreateModel extends AlipayObject {
 	private String planName;
 
 	/**
-	 * 小程序投放方案场景码，目前只支持支付后推荐场景
+	 * 投放方案场景码，目前只支持: 
+支付宝钱包支付后推荐场景 PAYMENT_SUCCESS
+蜻蜓端支付结果页 DRAGONFLY_IOT_PAYMENT
 	 */
 	@ApiField("scene")
 	private String scene;
@@ -67,7 +69,10 @@ public class AlipayOpenMiniPlanOperateCreateModel extends AlipayObject {
 	private List<String> serviceList;
 
 	/**
-	 * 用于标识支付后推荐的类型，目前只支持小程序和生活号推荐。目前可填的枚举值如下:"TINYAPP"(小程序)，"PUBLICAPP"(生活号), "IOT_MEMBER_CARD" (IOT支付后会员卡开卡)
+	 * 用于标识支付后推荐的类型，目前只支持小程序和生活号推荐。目前可填的枚举值如下:
+"TINYAPP"(小程序, 仅支付宝钱包)，
+"PUBLICAPP"(生活号, 仅支付宝钱包), 
+"IOT_MEMBER_CARD" (IOT支付后会员卡开卡, 仅蜻蜓端), "IOT_SEND_ME_TINYAPP" (IOT推荐小程序服务, 仅蜻蜓端)
 	 */
 	@ApiField("type")
 	private String type;

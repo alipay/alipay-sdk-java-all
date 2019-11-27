@@ -19,7 +19,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4322539798322742926L;
+	private static final long serialVersionUID = 1487952544213836861L;
 
 	/** 
 	 * 订单对应活动信息，多个商品情况下可能对应多个活动，故为列表;可根据此活动号查询活动名，以标注该购买的商品隶属于哪个活动。
@@ -29,7 +29,7 @@ public class KoubeiTradeOrderQueryResponse extends AlipayResponse {
 	private List<KbOrderActivityModel> activityInfos;
 
 	/** 
-	 * 购买用户UID，对应买家登陆的支付宝账号
+	 * 购买用户UID，对应买家登陆的支付宝账号(以2088开始)
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
@@ -48,7 +48,7 @@ amount:金额；
 shop_id:门店ID；
 store_id:外部门店ID,即ISV系统中的门店ID，用于与口碑的对应
 account:资金流入账户;
-trans_type:资金刘庄类型,PAY/SETTLE/REFUND分别对应支付／打款／退款
+trans_type:资金流水类型,PAY/SETTLE/REFUND分别对应支付／打款／退款
 	 */
 	@ApiListField("funds_vouchers")
 	@ApiField("kb_order_funds_voucher_model")

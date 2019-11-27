@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询贷款方案
  *
  * @author auto create
- * @since 1.0, 2016-10-17 16:44:56
+ * @since 1.0, 2017-07-21 10:56:28
  */
 public class AlipayCreditAutofinanceLoanPlanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5349349963932976216L;
+	private static final long serialVersionUID = 8357954634757381454L;
 
 	/**
 	 * 扩展参数,针对不同的平台特殊业务场景，将需要的参数填入改字段，目前针对大搜车业务有以下参数：itemprice 车辆价格，lastprop 车辆残值率,extintamt 基础服务包+增值服务包，loantenor 贷款期数，creditamtprop 授信额度比例调整值；

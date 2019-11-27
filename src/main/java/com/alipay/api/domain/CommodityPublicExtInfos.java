@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁云服务插件扩展信息
  *
  * @author auto create
- * @since 1.0, 2016-11-30 21:06:38
+ * @since 1.0, 2016-12-01 17:47:16
  */
 public class CommodityPublicExtInfos extends AlipayObject {
 
-	private static final long serialVersionUID = 1463311956254637472L;
+	private static final long serialVersionUID = 7467565785941279184L;
 
 	/**
 	 * 前置url
@@ -84,6 +84,12 @@ public class CommodityPublicExtInfos extends AlipayObject {
 	 */
 	@ApiField("export_url")
 	private String exportUrl;
+
+	/**
+	 * 是否外部展示
+	 */
+	@ApiField("is_export")
+	private String isExport;
 
 	/**
 	 * 属性ID
@@ -173,6 +179,13 @@ public class CommodityPublicExtInfos extends AlipayObject {
 	}
 	public void setExportUrl(String exportUrl) {
 		this.exportUrl = exportUrl;
+	}
+
+	public String getIsExport() {
+		return this.isExport;
+	}
+	public void setIsExport(String isExport) {
+		this.isExport = isExport;
 	}
 
 	public String getPropertyId() {

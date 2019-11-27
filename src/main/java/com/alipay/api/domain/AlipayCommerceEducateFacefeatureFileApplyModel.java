@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸特征文件申请
  *
  * @author auto create
- * @since 1.0, 2019-07-23 10:19:42
+ * @since 1.0, 2019-11-19 21:05:43
  */
 public class AlipayCommerceEducateFacefeatureFileApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4815132384867419916L;
+	private static final long serialVersionUID = 1568642232571287545L;
 
 	/**
-	 * 学校团餐
+	 * SCHOOL_PAYMENT
 	 */
 	@ApiField("biz_code")
 	private String bizCode;
@@ -38,13 +38,13 @@ public class AlipayCommerceEducateFacefeatureFileApplyModel extends AlipayObject
 	private String fileType;
 
 	/**
-	 * 机构ID
+	 * 国家统一分配的学校社会信用代码(institution_id)
 	 */
 	@ApiField("institution_id")
 	private String institutionId;
 
 	/**
-	 * 合作机构简称
+	 * 必须是由支付宝业务方分配的英文简称(例如:yikeshi),不能是中文
 	 */
 	@ApiField("isv_name")
 	private String isvName;

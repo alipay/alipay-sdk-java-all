@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商圈门店以及门店下面优惠券商品信息
  *
  * @author auto create
- * @since 1.0, 2018-11-22 10:43:59
+ * @since 1.0, 2019-05-09 22:14:23
  */
 public class KoubeiMarketingDataMallShopitemsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8598123671578967138L;
+	private static final long serialVersionUID = 5288725471433741243L;
 
 	/**
 	 * 查询内容范围

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 天弘建信养老飞月宝实时申购信息接口
  *
  * @author auto create
- * @since 1.0, 2017-07-27 16:58:09
+ * @since 1.0, 2017-09-12 20:32:03
  */
 public class AlipayFinanceZcbEndowmentorderDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6683529791974383167L;
+	private static final long serialVersionUID = 2211442517723811624L;
 
 	/**
 	 * 查询条件里时间区间的结束时间，格式为：YYYYMMDDHHMISS，采用左开右闭的方式

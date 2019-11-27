@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 入库通知单查询返回数据
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:33:55
+ * @since 1.0, 2018-05-29 19:49:50
  */
 public class InboundOrderVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6392471147151448822L;
+	private static final long serialVersionUID = 7737688373543836835L;
 
 	/**
 	 * 扩展字段，json格式
@@ -70,7 +70,7 @@ public class InboundOrderVO extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 入库单类型：INIT（初始化）, PROCESSING（处理中）,FINISHED（完成）, CANCELLED（取消）;
+	 * 入库单类型：初始化＝INIT, 已生效＝ENABLED, 处理中＝PROCESSING, 取消待确认＝CANCEL_CONFIRMING, 已完成＝FINISHED, 已取消＝CANCELLED, 失败＝FAILED;
 	 */
 	@ApiField("status")
 	private String status;

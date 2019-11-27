@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单下单并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2019-06-19 10:41:19
+ * @since 1.0, 2019-07-12 17:48:41
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7485764986663997328L;
+	private static final long serialVersionUID = 4439445373229391655L;
 
 	/**
 	 * 签约参数，支付后签约场景使用
@@ -105,7 +105,7 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
-	 * 公用回传参数，如果请求时传递了该参数，则返回给商户时会回传该参数。支付宝只会在同步返回（包括跳转回商户网站）和异步通知时将该参数原样返回。本参数必须进行UrlEncode之后才可以发送给支付宝。
+	 * 公用回传参数，如果请求时传递了该参数，则返回给商户时会回传该参数。支付宝会在异步通知时将该参数原样返回。本参数必须进行UrlEncode之后才可以发送给支付宝。
 	 */
 	@ApiField("passback_params")
 	private String passbackParams;

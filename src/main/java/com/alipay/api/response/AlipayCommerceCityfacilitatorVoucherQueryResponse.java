@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-10-10 16:31:23
  */
 public class AlipayCommerceCityfacilitatorVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4741772865438777585L;
+	private static final long serialVersionUID = 6812843685591523759L;
 
 	/** 
 	 * 订单金额
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/** 
+	 * 核销相关信息，如果已核销，返回核销的网点、终端机编号、核销的时间、收到的上传票号数等信息
+	 */
+	@ApiField("confirm_info")
+	private String confirmInfo;
 
 	/** 
 	 * 终点站
@@ -51,7 +57,7 @@ public class AlipayCommerceCityfacilitatorVoucherQueryResponse extends AlipayRes
 	private String startStationName;
 
 	/** 
-	 * 查询的该笔订单当前状态(SUCCESS、TRANSFER、FAIL等)
+	 * 查询的该笔订单当前状态(SUCCESS、TRANSFER、FAIL、REFUND等)
 	 */
 	@ApiField("status")
 	private String status;
@@ -79,6 +85,13 @@ public class AlipayCommerceCityfacilitatorVoucherQueryResponse extends AlipayRes
 	}
 	public String getAmount( ) {
 		return this.amount;
+	}
+
+	public void setConfirmInfo(String confirmInfo) {
+		this.confirmInfo = confirmInfo;
+	}
+	public String getConfirmInfo( ) {
+		return this.confirmInfo;
 	}
 
 	public void setEndStation(String endStation) {

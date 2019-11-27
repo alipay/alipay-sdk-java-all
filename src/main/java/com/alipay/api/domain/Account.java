@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户信息
  *
  * @author auto create
- * @since 1.0, 2017-12-06 21:42:16
+ * @since 1.0, 2018-01-18 14:27:09
  */
 public class Account extends AlipayObject {
 
-	private static final long serialVersionUID = 2344938472869531422L;
+	private static final long serialVersionUID = 8198525797326531193L;
 
 	/**
 	 * json字符串，扩展信息，支付宝：alipayId，外部银行卡：银行机构名称、银行机构号（总行、支行）、对公/对私等
@@ -32,7 +32,7 @@ public class Account extends AlipayObject {
 	private String accountNo;
 
 	/**
-	 * 账户类型，ALIPAY(“ALIPAY”, “Alipay”, “支付宝账号”, “支付宝账号”),CURRENT(“CURRENT”, “MayiBank”, “网商银行账号”, “网商银行账号”),OUT_BANK(“OUT_BANK”, “OutBank”, “外部银行账号”, “外部银行账号”)
+	 * 账户类型，ALIPAY：支付宝账号；CURRENT：网商银行账号；OUT_BANK：外部银行账号
 	 */
 	@ApiField("account_type")
 	private String accountType;

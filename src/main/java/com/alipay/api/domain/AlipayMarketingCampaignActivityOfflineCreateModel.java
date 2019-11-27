@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 能够创商户建领券活动,后续支持
  *
  * @author auto create
- * @since 1.0, 2016-05-09 17:09:27
+ * @since 1.0, 2018-12-20 11:23:06
  */
 public class AlipayMarketingCampaignActivityOfflineCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4496832731218276644L;
+	private static final long serialVersionUID = 1197341292743723861L;
 
 	/**
 	 * 预算信息

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 有资金单品券创建
  *
  * @author auto create
- * @since 1.0, 2019-10-28 14:20:07
+ * @since 1.0, 2019-11-22 15:08:58
  */
 public class AlipayMarketingCashitemvoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2362116846996452991L;
+	private static final long serialVersionUID = 4843151272228576487L;
 
 	/**
 	 * 代金券面额。 当voucher_type为有资金单品代金券（ITEM_BALANCE_FIX_VOUCHER）时必选。币种为人民币，单位为元。该数值不能小于0.1，且不能大于999元，代表订单金额达到使用门槛后，本券可抵扣相应面额资金。 代金券面额以门槛消费金额为基准，换算成折扣，不能低于9.95折。 当voucher_type为有资金单品折扣券（ITEM_BALANCE_DISCOUNT_VOUCHER）和有资金单品特价券（ITEM_BALANCE_SPE_VOUCHER）时此值必须为空。
@@ -118,7 +118,7 @@ public class AlipayMarketingCashitemvoucherTemplateCreateModel extends AlipayObj
 	private String redirectUri;
 
 	/**
-	 * 规则配置，JSON字符串，{"PID": "2088512417841101,2088512417841102", "STORE": "123456,678901"}，其中PID表示可以核销该券的pid列表，多个值用英文逗号隔开，PID为必传且需与接口调用PID或授权PID同属一个商家，必须签约当面付，STORE表示可以核销该券的内部门店ID，多个值用英文逗号隔开 。仅支持PID和STOREID核销规则，PID列表和门店ID列表均不能含有重复ID，并且门店ID数量最多支持3000个。
+	 * 规则配置，JSON字符串，{"PID": "2088512417841101,2088512417841102", "STORE": "123456,678901"}，其中PID表示可以核销该券的pid列表，多个值用英文逗号隔开，PID为必传且必须签约当面付，STORE表示可以核销该券的内部门店ID，多个值用英文逗号隔开 。仅支持PID和STOREID核销规则，PID列表和门店ID列表均不能含有重复ID，并且门店ID数量最多支持3000个。
 	 */
 	@ApiField("rule_conf")
 	private String ruleConf;

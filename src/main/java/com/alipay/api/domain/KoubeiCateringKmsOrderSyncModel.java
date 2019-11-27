@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步外部订单到KDS
  *
  * @author auto create
- * @since 1.0, 2019-10-23 20:36:03
+ * @since 1.0, 2019-11-08 14:18:56
  */
 public class KoubeiCateringKmsOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3638239594123187135L;
+	private static final long serialVersionUID = 7513442349255762436L;
 
 	/**
 	 * 同步动作. "PUSH":推送订单; "CANCEL_PUSH": 取消推送
@@ -23,7 +23,7 @@ public class KoubeiCateringKmsOrderSyncModel extends AlipayObject {
 	private String action;
 
 	/**
-	 * 渠道码. "ELE_ME": 饿了么; "KERUYUN": 客如云
+	 * 推单渠道码. "ELE_ME":饿了么; "KERUYUN":客如云；“YINBAO”:银豹；“DUOWEI”:"多维";如不再此名单则联系口碑技术同学新增；
 	 */
 	@ApiField("biz_channel")
 	private String bizChannel;
@@ -42,7 +42,7 @@ public class KoubeiCateringKmsOrderSyncModel extends AlipayObject {
 	private KdsOrderInfoDTO kdsOrderInfo;
 
 	/**
-	 * 口碑订单号 (口碑订单必传)
+	 * 平台订单号.(口碑、饿了么、支付宝、滴滴、美团订单必传)
 退款时, 以order_no为主. 如果order_no不存在, 以out_order_no为准.
 	 */
 	@ApiField("order_no")
@@ -62,7 +62,13 @@ public class KoubeiCateringKmsOrderSyncModel extends AlipayObject {
 
 	/**
 	 * 原始订单来源.
-来自客如云的订单: keruyun(客如云本地pos下单/客如云线上扫码点餐),koubei(口碑点餐),other(其他平台)
+ISV订单:isvpos(例如:属于客如云、银豹、多维等ISV厂商自己的POS订单，则传isvpos)；
+口碑订单:koubei；
+饿了么订单:eleme；
+支付宝订单:alipay；
+美团订单:meituan；
+滴滴订单:didi；
+其他平台:other；
 	 */
 	@ApiField("source")
 	private String source;

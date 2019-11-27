@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝群聊发消息
  *
  * @author auto create
- * @since 1.0, 2018-10-22 17:53:22
+ * @since 1.0, 2019-07-29 19:47:57
  */
 public class AlipaySocialBaseChatGmsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6743983843977829475L;
+	private static final long serialVersionUID = 7777954586953415365L;
 
 	/**
 	 * 消息简短描述，显示在会话列表上，必填

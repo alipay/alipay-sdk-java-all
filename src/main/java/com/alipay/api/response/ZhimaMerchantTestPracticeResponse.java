@@ -13,7 +13,13 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantTestPracticeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4673859133664982845L;
+	private static final long serialVersionUID = 8669876995488652658L;
+
+	/** 
+	 * 23
+	 */
+	@ApiField("ccccc")
+	private String ccccc;
 
 	/** 
 	 * xxxx
@@ -22,16 +28,36 @@ public class ZhimaMerchantTestPracticeResponse extends AlipayResponse {
 	private XXXXsdasdasd dddd;
 
 	/** 
+	 * 123
+	 */
+	@ApiField("qweqwe")
+	private String qweqwe;
+
+	/** 
 	 * ccc
 	 */
 	@ApiField("sss")
 	private String sss;
+
+	public void setCcccc(String ccccc) {
+		this.ccccc = ccccc;
+	}
+	public String getCcccc( ) {
+		return this.ccccc;
+	}
 
 	public void setDddd(XXXXsdasdasd dddd) {
 		this.dddd = dddd;
 	}
 	public XXXXsdasdasd getDddd( ) {
 		return this.dddd;
+	}
+
+	public void setQweqwe(String qweqwe) {
+		this.qweqwe = qweqwe;
+	}
+	public String getQweqwe( ) {
+		return this.qweqwe;
 	}
 
 	public void setSss(String sss) {

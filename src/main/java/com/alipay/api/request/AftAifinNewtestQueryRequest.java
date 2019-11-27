@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: aft.aifin.newtest.query request
  * 
  * @author auto create
- * @since 1.0, 2019-02-18 13:15:00
+ * @since 1.0, 2019-06-13 10:21:33
  */
 public class AftAifinNewtestQueryRequest implements AlipayRequest<AftAifinNewtestQueryResponse> {
 

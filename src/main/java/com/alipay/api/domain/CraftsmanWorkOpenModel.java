@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手艺人作品返回对象
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:33:13
+ * @since 1.0, 2017-01-17 18:00:12
  */
 public class CraftsmanWorkOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2718114455623615577L;
+	private static final long serialVersionUID = 3862923977648555445L;
 
 	/**
 	 * 口碑手艺人id。是创建手艺人接口koubei.craftsman.data.provider.create返回的craftsman_id，或通过查询手艺人信息接口koubei.craftsman.data.provider查询craftsman_id
@@ -26,7 +26,7 @@ public class CraftsmanWorkOpenModel extends AlipayObject {
 	private Long duration;
 
 	/**
-	 * 媒体资源id（通过 alipay.offline.material.image.upload 接口上传图片获取的资源id）。图片上限最大5M,支持bmp,png,jpeg,jpg,gif格式的图片。视频上限最大50M,支持MP4格式。
+	 * 媒体资源id（通过 alipay.offline.material.image.upload 接口上传视频/图片获取的资源id）。图片上限最大5M,支持bmp,png,jpeg,jpg,gif格式的图片。视频上限最大50M,支持MP4格式。注意视频资源id的格式为视频id+竖线+视频头图id。举例：视频id为Qt5XB8R7SMizIC2CZ_qLXAAAACMAAQED，视频头图id为XXwcvckbS_WcT5-mYXtY1QAAACMAAQED； 则视频文件的字符串为Qt5XB8R7SMizIC2CZ_qLXAAAACMAAQED|XXwcvckbS_WcT5-mYXtY1QAAACMAAQED
 	 */
 	@ApiField("media_id")
 	private String mediaId;

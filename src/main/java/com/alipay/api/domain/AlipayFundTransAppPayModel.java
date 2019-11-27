@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无线转账支付接口
  *
  * @author auto create
- * @since 1.0, 2019-09-29 16:33:23
+ * @since 1.0, 2019-10-11 22:56:18
  */
 public class AlipayFundTransAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4284993369468697448L;
+	private static final long serialVersionUID = 5567185892562192411L;
 
 	/**
 	 * 描述特定的业务场景，可传值如下：
@@ -28,6 +28,12 @@ payer_binded_alipay_id 创建红包的商户会员绑定的支付宝userId，必
 	 */
 	@ApiField("business_params")
 	private String businessParams;
+
+	/**
+	 * 支付宝订单号
+	 */
+	@ApiField("order_id")
+	private String orderId;
 
 	/**
 	 * 支付订单的标题，用于在收银台和消费记录展示
@@ -108,6 +114,13 @@ STD_RED_PACKET：现金红包
 	}
 	public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
+	}
+
+	public String getOrderId() {
+		return this.orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
 	}
 
 	public String getOrderTitle() {

@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.XXXXsdasdasd;
 import com.alipay.api.domain.AlipayItemGoodsList;
 
 import com.alipay.api.AlipayResponse;
@@ -15,7 +16,13 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataexchangeSfasdfResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1455287492672998433L;
+	private static final long serialVersionUID = 7113885332626918124L;
+
+	/** 
+	 * dfghjkghgdfsa
+	 */
+	@ApiField("adasdassdfg")
+	private XXXXsdasdasd adasdassdfg;
 
 	/** 
 	 * dsfagshdj
@@ -57,6 +64,13 @@ public class AlipayDataDataexchangeSfasdfResponse extends AlipayResponse {
 	@ApiListField("wrty")
 	@ApiField("alipay_item_goods_list")
 	private List<AlipayItemGoodsList> wrty;
+
+	public void setAdasdassdfg(XXXXsdasdasd adasdassdfg) {
+		this.adasdassdfg = adasdassdfg;
+	}
+	public XXXXsdasdasd getAdasdassdfg( ) {
+		return this.adasdassdfg;
+	}
 
 	public void setAzxfghd(List<String> azxfghd) {
 		this.azxfghd = azxfghd;

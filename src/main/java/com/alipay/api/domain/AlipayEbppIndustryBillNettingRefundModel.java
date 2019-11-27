@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 行业业务订单轧差退款
  *
  * @author auto create
- * @since 1.0, 2018-09-14 14:28:50
+ * @since 1.0, 2019-06-25 20:27:41
  */
 public class AlipayEbppIndustryBillNettingRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4278912597373767493L;
+	private static final long serialVersionUID = 8333217971234866973L;
 
 	/**
 	 * 支付宝流水号。

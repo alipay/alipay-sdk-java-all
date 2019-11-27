@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取系统参数配置
  *
  * @author auto create
- * @since 1.0, 2018-11-21 10:40:02
+ * @since 1.0, 2018-12-24 13:56:21
  */
 public class KoubeiCateringPosParamQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4386374451783918518L;
+	private static final long serialVersionUID = 4627182595181177288L;
 
 	/**
 	 * 门店id

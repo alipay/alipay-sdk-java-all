@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险评估服务
  *
  * @author auto create
- * @since 1.0, 2018-02-08 17:38:36
+ * @since 1.0, 2019-07-25 09:24:47
  */
 public class ZhimaCreditRiskEvaluateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7359529653219474791L;
+	private static final long serialVersionUID = 2552284279172545291L;
 
 	/**
-	 * 扩展字段，用来标识用户的其他描述信息，是一个JSON串
+	 * 预留扩展字段，商家进行定制风控策略时，联系BD提供规范再接入；用来标识用户的其他描述信息，是一个JSON串，
 	 */
 	@ApiField("extend_info")
 	private String extendInfo;

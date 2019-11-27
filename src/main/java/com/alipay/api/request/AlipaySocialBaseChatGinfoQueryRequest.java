@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.chat.ginfo.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-08-23 16:50:33
  */
 public class AlipaySocialBaseChatGinfoQueryRequest implements AlipayRequest<AlipaySocialBaseChatGinfoQueryResponse> {
 

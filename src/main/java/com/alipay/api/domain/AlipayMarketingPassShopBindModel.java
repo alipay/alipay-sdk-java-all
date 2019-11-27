@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 绑定卡券模板的适用门店
  *
  * @author auto create
- * @since 1.0, 2018-03-13 18:04:28
+ * @since 1.0, 2019-08-08 20:02:18
  */
 public class AlipayMarketingPassShopBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1159531918682991523L;
+	private static final long serialVersionUID = 3467117157615318646L;
 
 	/**
 	 * 当前操作是否为追加门店绑定，默认为true，代表为追加门店绑定，现有的门店列表不变，追加绑定本次传入的门店列表；

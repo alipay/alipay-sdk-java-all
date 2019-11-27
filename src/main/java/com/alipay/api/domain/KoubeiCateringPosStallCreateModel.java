@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增档口
  *
  * @author auto create
- * @since 1.0, 2018-11-23 19:44:47
+ * @since 1.0, 2018-12-24 13:55:04
  */
 public class KoubeiCateringPosStallCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4669783393538126271L;
+	private static final long serialVersionUID = 4626982879351795587L;
 
 	/**
 	 * 档口下菜品集合
@@ -22,6 +22,13 @@ public class KoubeiCateringPosStallCreateModel extends AlipayObject {
 	@ApiListField("dish_ids")
 	@ApiField("string")
 	private List<String> dishIds;
+
+	/**
+	 * kds id 集合（结构和dish_ids一样））
+	 */
+	@ApiListField("kds_ids")
+	@ApiField("string")
+	private List<String> kdsIds;
 
 	/**
 	 * 打印机id
@@ -58,6 +65,13 @@ public class KoubeiCateringPosStallCreateModel extends AlipayObject {
 	}
 	public void setDishIds(List<String> dishIds) {
 		this.dishIds = dishIds;
+	}
+
+	public List<String> getKdsIds() {
+		return this.kdsIds;
+	}
+	public void setKdsIds(List<String> kdsIds) {
+		this.kdsIds = kdsIds;
 	}
 
 	public String getPrinterId() {

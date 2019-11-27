@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 理赔案件信息查询
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:48:56
+ * @since 1.0, 2019-08-26 17:24:41
  */
 public class AlipayInsUnderwriteClaimReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7199714989184943959L;
+	private static final long serialVersionUID = 4143641613411989625L;
 
 	/**
 	 * 理赔申请报案号，通过理赔申请【alipay.ins.scene.claim.apply】接口的返回字段claim_report_no获取

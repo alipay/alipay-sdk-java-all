@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringDishGroupSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8542274247331769739L;
+	private static final long serialVersionUID = 7174174188841627188L;
 
 	/**
 	 * 口碑菜品套餐项目组

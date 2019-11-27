@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 洗车保养门店修改
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:23:21
+ * @since 1.0, 2018-06-25 14:50:13
  */
 public class AlipayEcoMycarMaintainShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6484958294923642627L;
+	private static final long serialVersionUID = 7467176897255431849L;
 
 	/**
 	 * 门店详细地址，地址字符长度在4-50个字符，注：不含省市区。门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层，“四川北路1552号欢乐广场1楼”
@@ -174,6 +174,12 @@ public class AlipayEcoMycarMaintainShopModifyModel extends AlipayObject {
 	 */
 	@ApiField("shop_type")
 	private String shopType;
+
+	/**
+	 * 门店初始星级评分，为5分制
+	 */
+	@ApiField("star_score")
+	private String starScore;
 
 	/**
 	 * 门店状态（0：下线；1：上线）
@@ -354,6 +360,13 @@ public class AlipayEcoMycarMaintainShopModifyModel extends AlipayObject {
 	}
 	public void setShopType(String shopType) {
 		this.shopType = shopType;
+	}
+
+	public String getStarScore() {
+		return this.starScore;
+	}
+	public void setStarScore(String starScore) {
+		this.starScore = starScore;
 	}
 
 	public String getStatus() {

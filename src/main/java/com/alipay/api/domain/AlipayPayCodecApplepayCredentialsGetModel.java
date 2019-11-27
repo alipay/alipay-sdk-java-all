@@ -1,0 +1,126 @@
+package com.alipay.api.domain;
+
+import java.util.List;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+
+/**
+ * applepay付款码获取
+ *
+ * @author auto create
+ * @since 1.0, 2019-11-27 12:27:59
+ */
+public class AlipayPayCodecApplepayCredentialsGetModel extends AlipayObject {
+
+	private static final long serialVersionUID = 6628117283844894477L;
+
+	/**
+	 * ECC算法、PKCS#7的签名。{Base 64 encoded signature from Apple authorizing the return of the credentials. PKCS#7 detached ECC signature covering the SHA 256 hash of the concatenation of the UTF-8 values of
+provisioningBundleIdentifier ,
+lastUsedCredentialIdentifier , numberToFetch and hasZeroQRCodes .}
+	 */
+	@ApiField("apple_signature")
+	private String appleSignature;
+
+	/**
+	 * JSON格式，base64的证书链List。两级证书结构，能被root证书验过。第0个证书用于二维码加密使用。{Base 64 encoded X.509 encryption certificate chain containing the intermediate and leaf certificates. Encryption shall be performed using the first certificate in the list.}
+	 */
+	@ApiListField("barcode_encryption_cert_chain")
+	@ApiField("string")
+	private List<String> barcodeEncryptionCertChain;
+
+	/**
+	 * 风控信息。 Fraud data provided by Apple as outlined in separate Fraud SIA document, if applicable
+	 */
+	@ApiField("fraud_data")
+	private CredentialsFraudData fraudData;
+
+	/**
+	 * hasZeroQRCodes，本地已经没有付款码。{This parameter indicates if there are anymore QR codes left on the device or not. True means that there are no more QR codes left on the device.}
+	 */
+	@ApiField("has_zero_qr_codes")
+	private String hasZeroQrCodes;
+
+	/**
+	 * 上一个展示过的码id，-1个可做失效处理。{The identifier of the most recently consumed payment credential}
+	 */
+	@ApiField("last_used_credential_identifier")
+	private String lastUsedCredentialIdentifier;
+
+	/**
+	 * 希望下发的码个数。{The desired number of payment credentials to be returned}
+	 */
+	@ApiField("number_to_fetch")
+	private String numberToFetch;
+
+	/**
+	 * 码类型。 {To enable QR code and barcode functionality}
+	 */
+	@ApiField("payment_credential_type")
+	private String paymentCredentialType;
+
+	/**
+	 * SAM pass的bundleId，唯一标识一张卡片。{The identifier on the device for which the payment credentials are destined}
+	 */
+	@ApiField("provisioning_bundle_identifier")
+	private String provisioningBundleIdentifier;
+
+	public String getAppleSignature() {
+		return this.appleSignature;
+	}
+	public void setAppleSignature(String appleSignature) {
+		this.appleSignature = appleSignature;
+	}
+
+	public List<String> getBarcodeEncryptionCertChain() {
+		return this.barcodeEncryptionCertChain;
+	}
+	public void setBarcodeEncryptionCertChain(List<String> barcodeEncryptionCertChain) {
+		this.barcodeEncryptionCertChain = barcodeEncryptionCertChain;
+	}
+
+	public CredentialsFraudData getFraudData() {
+		return this.fraudData;
+	}
+	public void setFraudData(CredentialsFraudData fraudData) {
+		this.fraudData = fraudData;
+	}
+
+	public String getHasZeroQrCodes() {
+		return this.hasZeroQrCodes;
+	}
+	public void setHasZeroQrCodes(String hasZeroQrCodes) {
+		this.hasZeroQrCodes = hasZeroQrCodes;
+	}
+
+	public String getLastUsedCredentialIdentifier() {
+		return this.lastUsedCredentialIdentifier;
+	}
+	public void setLastUsedCredentialIdentifier(String lastUsedCredentialIdentifier) {
+		this.lastUsedCredentialIdentifier = lastUsedCredentialIdentifier;
+	}
+
+	public String getNumberToFetch() {
+		return this.numberToFetch;
+	}
+	public void setNumberToFetch(String numberToFetch) {
+		this.numberToFetch = numberToFetch;
+	}
+
+	public String getPaymentCredentialType() {
+		return this.paymentCredentialType;
+	}
+	public void setPaymentCredentialType(String paymentCredentialType) {
+		this.paymentCredentialType = paymentCredentialType;
+	}
+
+	public String getProvisioningBundleIdentifier() {
+		return this.provisioningBundleIdentifier;
+	}
+	public void setProvisioningBundleIdentifier(String provisioningBundleIdentifier) {
+		this.provisioningBundleIdentifier = provisioningBundleIdentifier;
+	}
+
+}

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 入库通知单货品明细对象
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:33:41
+ * @since 1.0, 2018-06-07 16:47:51
  */
 public class InboundOrderLine extends AlipayObject {
 
-	private static final long serialVersionUID = 3416199425337686975L;
+	private static final long serialVersionUID = 8425676524116465342L;
 
 	/**
 	 * 批次编号

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.device.audio.create request
  * 
  * @author auto create
- * @since 1.0, 2019-06-20 20:45:41
+ * @since 1.0, 2019-11-22 11:21:32
  */
 public class AlipayCommerceIotDeviceAudioCreateRequest implements AlipayRequest<AlipayCommerceIotDeviceAudioCreateResponse> {
 

@@ -7,11 +7,19 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融银行直投代客还款账单查询明细
  *
  * @author auto create
- * @since 1.0, 2019-08-27 14:15:34
+ * @since 1.0, 2019-08-27 14:21:05
  */
 public class SceneProdDeputyPaymentBillQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 7452328479829239819L;
+	private static final long serialVersionUID = 1667846391849855122L;
+
+	/**
+	 * 代客还款业务类型
+DEPUTY 普通代客还款
+COMPENSATE 代偿，后续可发起线上追偿
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * 代客还款的网商银行结算户信息
@@ -30,6 +38,13 @@ public class SceneProdDeputyPaymentBillQuery extends AlipayObject {
 	 */
 	@ApiField("term")
 	private String term;
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
+	}
 
 	public String getDeputyAccount() {
 		return this.deputyAccount;

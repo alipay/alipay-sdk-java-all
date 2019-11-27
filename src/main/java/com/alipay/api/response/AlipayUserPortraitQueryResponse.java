@@ -1,8 +1,6 @@
 package com.alipay.api.response;
 
-import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
-import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.PintuanUserInfos;
 
 import com.alipay.api.AlipayResponse;
@@ -15,19 +13,18 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserPortraitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3782152173881477988L;
+	private static final long serialVersionUID = 4397357393377878669L;
 
 	/** 
 	 * 拼团信息列表
 	 */
-	@ApiListField("pintuan_user_infos")
 	@ApiField("pintuan_user_infos")
-	private List<PintuanUserInfos> pintuanUserInfos;
+	private PintuanUserInfos pintuanUserInfos;
 
-	public void setPintuanUserInfos(List<PintuanUserInfos> pintuanUserInfos) {
+	public void setPintuanUserInfos(PintuanUserInfos pintuanUserInfos) {
 		this.pintuanUserInfos = pintuanUserInfos;
 	}
-	public List<PintuanUserInfos> getPintuanUserInfos( ) {
+	public PintuanUserInfos getPintuanUserInfos( ) {
 		return this.pintuanUserInfos;
 	}
 

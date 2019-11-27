@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品可用时段信息
  *
  * @author auto create
- * @since 1.0, 2017-08-24 13:56:10
+ * @since 1.0, 2017-09-21 12:59:25
  */
 public class AvailablePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6645224242769385365L;
+	private static final long serialVersionUID = 7142851936885171236L;
 
 	/**
 	 * 每周可用天列表。格式为星期几并用逗号分隔。如周一周二可用则为“1,2”，周五周六可用则为"5,6"
@@ -20,7 +20,7 @@ public class AvailablePeriodInfo extends AlipayObject {
 	private String availableWeekDays;
 
 	/**
-	 * 商品可用时段结束时间。格式HH:mm，如果22：30
+	 * 商品可用时段结束时间。格式HH:mm，如22:30
 	 */
 	@ApiField("time_end")
 	private String timeEnd;

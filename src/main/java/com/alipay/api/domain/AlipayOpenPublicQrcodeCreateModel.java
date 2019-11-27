@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * createQrCodeProcessor
  *
  * @author auto create
- * @since 1.0, 2016-08-10 17:27:01
+ * @since 1.0, 2018-12-24 10:50:47
  */
 public class AlipayOpenPublicQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8584987232126144868L;
+	private static final long serialVersionUID = 3499581537137946962L;
 
 	/**
 	 * 服务窗创建带参二维码接口，开发者自定义信息

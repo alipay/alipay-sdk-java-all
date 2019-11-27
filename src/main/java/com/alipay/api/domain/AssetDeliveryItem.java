@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料配送指令对象, 包括物料配送的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 数量, 收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2019-06-04 15:11:20
+ * @since 1.0, 2019-11-18 16:18:34
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1463559481837351657L;
+	private static final long serialVersionUID = 3464861236426171837L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -61,6 +61,12 @@ yyyy-MM-dd HH：mm:ss
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 提供给物流商清关所用信息
+	 */
+	@ApiField("custom_clearance")
+	private CCInfo customClearance;
 
 	/**
 	 * 配送指令单据明细ID
@@ -237,6 +243,13 @@ yyyy-MM-dd HH：mm:ss
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public CCInfo getCustomClearance() {
+		return this.customClearance;
+	}
+	public void setCustomClearance(CCInfo customClearance) {
+		this.customClearance = customClearance;
 	}
 
 	public String getDeliveryAssignOrderItemId() {

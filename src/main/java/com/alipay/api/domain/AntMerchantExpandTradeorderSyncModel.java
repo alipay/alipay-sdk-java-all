@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单创建
  *
  * @author auto create
- * @since 1.0, 2019-11-19 14:59:41
+ * @since 1.0, 2019-11-21 21:36:56
  */
 public class AntMerchantExpandTradeorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1652759152595858459L;
+	private static final long serialVersionUID = 2666465182641435857L;
 
 	/**
 	 * 订单金额（单位：分）

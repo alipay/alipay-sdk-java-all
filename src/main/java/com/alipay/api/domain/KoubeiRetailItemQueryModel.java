@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询快消行业商品详情
  *
  * @author auto create
- * @since 1.0, 2017-11-30 10:18:27
+ * @since 1.0, 2017-11-30 23:16:11
  */
 public class KoubeiRetailItemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6825349719274826326L;
+	private static final long serialVersionUID = 7217758128897857939L;
 
 	/**
 	 * 城市编码，6位国际码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡级别配置信息
  *
  * @author auto create
- * @since 1.0, 2019-03-06 21:29:56
+ * @since 1.0, 2019-08-08 20:02:54
  */
 public class TemplateCardLevelConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5749264977261286329L;
+	private static final long serialVersionUID = 2887866811718633475L;
 
 	/**
 	 * 会员级别 该级别和开卡接口中的level要一致
@@ -26,7 +26,9 @@ public class TemplateCardLevelConfDTO extends AlipayObject {
 	private String levelDesc;
 
 	/**
-	 * 会员级别对应icon， 通过接口（alipay.offline.material.image.upload）上传图片
+	 * 会员级别对应icon图片，
+会员信息预留字段，暂不在用户端展示；
+通过接口（alipay.offline.material.image.upload）上传图片
 	 */
 	@ApiField("level_icon")
 	private String levelIcon;

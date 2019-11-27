@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手艺人作品
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:32:38
+ * @since 1.0, 2017-10-11 20:36:00
  */
 public class CraftsmanWorkCreateOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6551969717365422571L;
+	private static final long serialVersionUID = 1182883484736247753L;
 
 	/**
 	 * 视频资源必传，视频时长，单位(秒)
@@ -20,7 +20,9 @@ public class CraftsmanWorkCreateOpenModel extends AlipayObject {
 	private Long duration;
 
 	/**
-	 * 媒体资源id（通过 alipay.offline.material.image.upload 接口上传图片获取的资源id）。图片上限最大5M,支持bmp,png,jpeg,jpg,gif格式的图片。视频上限最大50M,支持MP4格式。
+	 * 媒体资源id（通过 alipay.offline.material.image.upload 接口上传视频/图片获取的资源id）。图片上限最大5M,支持bmp,png,jpeg,jpg,gif格式的图片。视频上限最大50M,支持MP4格式。注意上传视频作品需要组装视频和图片id:1.需要上传视频，获取视频id；2.上传视频头图，获取视频头图id；3.拼接 视频文件的字符串=视频id +竖线+视频头图id。举例：视频id为Qt5XB8R7SMizIC2CZ_qLXAAAACMAAQED，视频头图id为XXwcvckbS_WcT5-mYXtY1QAAACMAAQED；
+则视频文件的字符串为Qt5XB8R7SMizIC2CZ_qLXAAAACMAAQED|XXwcvckbS_WcT5-mYXtY1QAAACMAAQED
+如果不上传视频头图，只上传视频id的话，则用户看到的视频无视频头图。
 	 */
 	@ApiField("media_id")
 	private String mediaId;

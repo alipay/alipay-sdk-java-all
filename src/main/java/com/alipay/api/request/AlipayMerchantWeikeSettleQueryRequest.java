@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.weike.settle.query request
  * 
  * @author auto create
- * @since 1.0, 2019-05-30 12:10:01
+ * @since 1.0, 2019-06-03 22:31:47
  */
 public class AlipayMerchantWeikeSettleQueryRequest implements AlipayRequest<AlipayMerchantWeikeSettleQueryResponse> {
 

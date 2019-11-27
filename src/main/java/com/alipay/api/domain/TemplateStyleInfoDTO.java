@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡模板样式信息
  *
  * @author auto create
- * @since 1.0, 2019-03-12 12:07:09
+ * @since 1.0, 2019-08-08 20:05:17
  */
 public class TemplateStyleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4822291381798876317L;
+	private static final long serialVersionUID = 3525863144126522341L;
 
 	/**
 	 * 背景图片Id，通过接口（alipay.offline.material.image.upload）上传图片
@@ -103,6 +103,12 @@ public class TemplateStyleInfoDTO extends AlipayObject {
 	 */
 	@ApiField("logo_id")
 	private String logoId;
+
+	/**
+	 * 营销背景图片Id（目前用于开卡授权页使用），通过接口（alipay.offline.material.image.upload）上传图片
+	 */
+	@ApiField("market_background_id")
+	private String marketBackgroundId;
 
 	/**
 	 * 标语
@@ -198,6 +204,13 @@ public class TemplateStyleInfoDTO extends AlipayObject {
 	}
 	public void setLogoId(String logoId) {
 		this.logoId = logoId;
+	}
+
+	public String getMarketBackgroundId() {
+		return this.marketBackgroundId;
+	}
+	public void setMarketBackgroundId(String marketBackgroundId) {
+		this.marketBackgroundId = marketBackgroundId;
 	}
 
 	public String getSlogan() {

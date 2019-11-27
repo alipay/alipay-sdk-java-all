@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出库通知单返回数据
  *
  * @author auto create
- * @since 1.0, 2018-04-26 16:33:32
+ * @since 1.0, 2018-06-07 16:45:51
  */
 public class OutboundOrderVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2532797486844835658L;
+	private static final long serialVersionUID = 5381889154226793438L;
 
 	/**
 	 * 取消原因
@@ -87,10 +87,13 @@ PDCK("盘点出库"),;
 
 	/**
 	 * 状态
-INIT,
-PROCESSING,
-FINISHED,
-CANCELLED;
+初始化＝INIT,
+已生效＝ENABLED,
+处理中＝PROCESSING,
+取消待确认＝CANCEL_CONFIRMING,
+已完成＝FINISHED,
+已取消＝CANCELLED,
+失败＝FAILED;
 	 */
 	@ApiField("status")
 	private String status;

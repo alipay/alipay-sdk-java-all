@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资源状态(剩余库存和销售状态)变更消息
  *
  * @author auto create
- * @since 1.0, 2019-04-25 15:20:15
+ * @since 1.0, 2019-09-19 10:43:51
  */
 public class KoubeiServindustryReservationResourcestatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8373247443856978885L;
+	private static final long serialVersionUID = 1696294975975731194L;
 
 	/**
 	 * 消息变更类型

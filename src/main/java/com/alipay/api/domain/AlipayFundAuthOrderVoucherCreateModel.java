@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金授权发码接口
  *
  * @author auto create
- * @since 1.0, 2019-11-04 15:05:46
+ * @since 1.0, 2019-11-27 12:12:51
  */
 public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2152449841787918354L;
+	private static final long serialVersionUID = 7457169594975351982L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -27,11 +27,7 @@ public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 	private String enablePayChannels;
 
 	/**
-	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 
-1.间联模式必须传入二级商户ID，key为secondaryMerchantId;
-2. 当面资金授权业务对应的类目，key为category，value由支付宝分配，酒店业务传 "HOTEL"(信用预授权场景下必传)；
-3. 外部商户的门店编号，key为outStoreCode，可选；
-4. 外部商户的门店简称，key为outStoreAlias，可选。
+	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 1.间联模式必须传入二级商户ID，key为secondaryMerchantId; 2. 当面资金授权业务对应的类目，key为category，value由支付宝分配，酒店业务传 "HOTEL",若使用信用预授权，则该值必传； 3. 外部商户的门店编号，key为outStoreCode，间联场景下建议传； 4. 外部商户的门店简称，key为outStoreAlias，可选; 5.间联模式必须传入二级商户所属机构id，key为requestOrgId;6.信用服务Id，key为serviceId，信用场景下必传，具体值需要联系芝麻客服。
 	 */
 	@ApiField("extra_param")
 	private String extraParam;

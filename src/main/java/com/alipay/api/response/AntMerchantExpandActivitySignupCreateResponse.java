@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.activity.signup.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-08 15:15:00
+ * @since 1.0, 2019-01-07 20:51:15
  */
 public class AntMerchantExpandActivitySignupCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1286397198814581237L;
+	private static final long serialVersionUID = 4747481277412488335L;
 
 	/** 
 	 * 接口返回描述：e.g.报名失败:没有报名资格/报名成功/报名确认

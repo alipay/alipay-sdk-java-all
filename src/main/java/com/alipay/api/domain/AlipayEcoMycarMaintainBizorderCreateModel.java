@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建保养洗车订单接口
  *
  * @author auto create
- * @since 1.0, 2019-08-15 20:08:48
+ * @since 1.0, 2019-08-29 11:19:58
  */
 public class AlipayEcoMycarMaintainBizorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1136319223696894475L;
+	private static final long serialVersionUID = 6736991931896152192L;
 
 	/**
 	 * 预约确认时间yyyy-MM-dd HH:mm:ss。门店确认预约时间。门店确认后，预约流程生效，用户可到店服务。

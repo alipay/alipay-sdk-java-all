@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * isv 回传的门店商品信息上传接口
  *
  * @author auto create
- * @since 1.0, 2017-04-14 18:10:01
+ * @since 1.0, 2018-03-29 10:40:38
  */
 public class KoubeiRetailShopitemUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2649262392823321975L;
+	private static final long serialVersionUID = 4585528111687329668L;
 
 	/**
 	 * 上传的商品集合

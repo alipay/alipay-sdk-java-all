@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建aa收款付款单据
  *
  * @author auto create
- * @since 1.0, 2018-07-20 12:10:18
+ * @since 1.0, 2018-09-13 19:44:20
  */
 public class AlipayFundTransAacollectPayorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4773698415767129593L;
+	private static final long serialVersionUID = 4712174127998531638L;
 
 	/**
 	 * 批次号，创建批次返回

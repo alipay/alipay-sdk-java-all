@@ -7,17 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链金融-交易支付确认
  *
  * @author auto create
- * @since 1.0, 2018-07-04 19:03:05
+ * @since 1.0, 2018-07-28 01:07:46
  */
 public class MybankCreditSupplychainTradePayConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2138266263886459219L;
+	private static final long serialVersionUID = 1734423797749895621L;
 
 	/**
 	 * 买家身份信息
 	 */
 	@ApiField("buyer")
 	private Member buyer;
+
+	/**
+	 * 交易确认金额
+	 */
+	@ApiField("confirm_amt")
+	private String confirmAmt;
+
+	/**
+	 * 生效日期，格式yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("effect_date")
+	private String effectDate;
+
+	/**
+	 * 结束日期，格式yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("end_date")
+	private String endDate;
 
 	/**
 	 * 外部订单号，格式：机构ipRoleId_外部订单号
@@ -42,6 +60,27 @@ public class MybankCreditSupplychainTradePayConfirmModel extends AlipayObject {
 	}
 	public void setBuyer(Member buyer) {
 		this.buyer = buyer;
+	}
+
+	public String getConfirmAmt() {
+		return this.confirmAmt;
+	}
+	public void setConfirmAmt(String confirmAmt) {
+		this.confirmAmt = confirmAmt;
+	}
+
+	public String getEffectDate() {
+		return this.effectDate;
+	}
+	public void setEffectDate(String effectDate) {
+		this.effectDate = effectDate;
+	}
+
+	public String getEndDate() {
+		return this.endDate;
+	}
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
 	}
 
 	public String getOutOrderNo() {

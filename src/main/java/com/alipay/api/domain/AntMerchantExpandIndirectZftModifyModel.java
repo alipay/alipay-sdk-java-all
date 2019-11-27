@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户修改
  *
  * @author auto create
- * @since 1.0, 2019-08-01 19:00:05
+ * @since 1.0, 2019-08-16 11:55:32
  */
 public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1414673252755483959L;
+	private static final long serialVersionUID = 4176981355779936429L;
 
 	/**
 	 * 商户别名

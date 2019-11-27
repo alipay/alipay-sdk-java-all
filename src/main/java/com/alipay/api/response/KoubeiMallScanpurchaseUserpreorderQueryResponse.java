@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.mall.scanpurchase.userpreorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-24 20:15:00
+ * @since 1.0, 2019-02-25 17:39:20
  */
 public class KoubeiMallScanpurchaseUserpreorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5168844128165171465L;
+	private static final long serialVersionUID = 2444241263442549662L;
 
 	/** 
 	 * 预订单信息
@@ -28,10 +28,16 @@ public class KoubeiMallScanpurchaseUserpreorderQueryResponse extends AlipayRespo
 	private String buyerUserId;
 
 	/** 
-	 * 商圈是否开通会员系统
+	 * 商圈是否加载会员系统
 	 */
 	@ApiField("mall_has_card")
 	private Boolean mallHasCard;
+
+	/** 
+	 * 会员卡权益描述信息
+	 */
+	@ApiField("member_card_desc")
+	private String memberCardDesc;
 
 	/** 
 	 * 用户是否开通会员卡
@@ -76,6 +82,13 @@ public class KoubeiMallScanpurchaseUserpreorderQueryResponse extends AlipayRespo
 	}
 	public Boolean getMallHasCard( ) {
 		return this.mallHasCard;
+	}
+
+	public void setMemberCardDesc(String memberCardDesc) {
+		this.memberCardDesc = memberCardDesc;
+	}
+	public String getMemberCardDesc( ) {
+		return this.memberCardDesc;
 	}
 
 	public void setOpenCard(Boolean openCard) {

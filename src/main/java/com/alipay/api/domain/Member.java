@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户会员站点以及身份信息
  *
  * @author auto create
- * @since 1.0, 2017-12-06 21:34:01
+ * @since 1.0, 2018-01-18 14:21:56
  */
 public class Member extends AlipayObject {
 
-	private static final long serialVersionUID = 7468879128372758195L;
+	private static final long serialVersionUID = 5715144244527133866L;
 
 	/**
 	 * 网商银行参与者会员ID

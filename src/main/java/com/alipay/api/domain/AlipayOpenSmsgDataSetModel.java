@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * to蚂蚁消息测试-数据重置
  *
  * @author auto create
- * @since 1.0, 2018-03-09 11:03:37
+ * @since 1.0, 2018-09-27 17:49:58
  */
 public class AlipayOpenSmsgDataSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4645888357821923783L;
+	private static final long serialVersionUID = 2526999211498848144L;
 
 	/**
 	 * 测试

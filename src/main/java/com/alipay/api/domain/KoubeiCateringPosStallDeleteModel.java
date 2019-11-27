@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除档口
  *
  * @author auto create
- * @since 1.0, 2018-11-16 17:30:40
+ * @since 1.0, 2018-12-24 13:56:41
  */
 public class KoubeiCateringPosStallDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7163666537552551727L;
+	private static final long serialVersionUID = 6365278325133946479L;
 
 	/**
 	 * 门店id

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.acquire.createandpay response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-18 14:08:22
+ * @since 1.0, 2019-04-03 18:48:25
  */
 public class AlipayAcquireCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2383878688499726836L;
+	private static final long serialVersionUID = 3748941979576577371L;
 
 	/** 
 	 * 买家支付宝账号，可以为email或者手机号。对部分信息进行了隐藏。
@@ -42,10 +42,22 @@ public class AlipayAcquireCreateandpayResponse extends AlipayResponse {
 	private String detailErrorDes;
 
 	/** 
+	 * 平台优惠金额
+	 */
+	@ApiField("discount_amount")
+	private String discountAmount;
+
+	/** 
 	 * 支付后返回的其他信息，如预付卡金额，key值mcard_fee，以Json格式返回。
 	 */
 	@ApiField("extend_info")
 	private String extendInfo;
+
+	/** 
+	 * 商户优惠金额
+	 */
+	@ApiField("mdiscount_amount")
+	private String mdiscountAmount;
 
 	/** 
 	 * 7085502131376415
@@ -94,11 +106,25 @@ public class AlipayAcquireCreateandpayResponse extends AlipayResponse {
 		return this.detailErrorDes;
 	}
 
+	public void setDiscountAmount(String discountAmount) {
+		this.discountAmount = discountAmount;
+	}
+	public String getDiscountAmount( ) {
+		return this.discountAmount;
+	}
+
 	public void setExtendInfo(String extendInfo) {
 		this.extendInfo = extendInfo;
 	}
 	public String getExtendInfo( ) {
 		return this.extendInfo;
+	}
+
+	public void setMdiscountAmount(String mdiscountAmount) {
+		this.mdiscountAmount = mdiscountAmount;
+	}
+	public String getMdiscountAmount( ) {
+		return this.mdiscountAmount;
 	}
 
 	public void setOutTradeNo(String outTradeNo) {

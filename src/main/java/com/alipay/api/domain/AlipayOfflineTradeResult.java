@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 脱机交易执行结果
  *
  * @author auto create
- * @since 1.0, 2017-09-20 18:08:12
+ * @since 1.0, 2017-09-20 18:08:20
  */
 public class AlipayOfflineTradeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8342243628116673311L;
+	private static final long serialVersionUID = 2693225333492582458L;
 
 	/**
 	 * 系统异常

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品套餐内，菜品详细信息数据结构
  *
  * @author auto create
- * @since 1.0, 2017-08-24 13:56:10
+ * @since 1.0, 2017-09-21 12:59:25
  */
 public class ItemUnitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8346497496968828724L;
+	private static final long serialVersionUID = 1199747248238423484L;
 
 	/**
 	 * 商品详情-商品套餐内容-菜品数量
@@ -32,7 +32,7 @@ public class ItemUnitInfo extends AlipayObject {
 	private String spec;
 
 	/**
-	 * 商品详情-商品套餐内容-菜品名称。不得超过15个中文字符
+	 * 商品详情-商品套餐内容-菜品名称。不得超过40个字符
 	 */
 	@ApiField("title")
 	private String title;

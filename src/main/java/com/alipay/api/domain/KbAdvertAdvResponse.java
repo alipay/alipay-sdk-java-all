@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑广告系统推广详情
  *
  * @author auto create
- * @since 1.0, 2017-01-13 18:49:18
+ * @since 1.0, 2017-02-15 13:57:59
  */
 public class KbAdvertAdvResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5259339498578798343L;
+	private static final long serialVersionUID = 5441141259845918226L;
 
 	/**
-	 * 推广ID
+	 * 广告ID
 	 */
 	@ApiField("adv_id")
 	private String advId;
