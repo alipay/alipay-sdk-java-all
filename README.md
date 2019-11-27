@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5a2a4867c87d4d15a8beba06d2e49635)](https://www.codacy.com/manual/antopen/alipay-sdk-java-all?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alipay/alipay-sdk-java-all&amp;utm_campaign=Badge_Grade)
 
 ```
 开发语言：JAVA
