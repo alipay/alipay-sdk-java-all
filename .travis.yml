@@ -2,10 +2,9 @@ language: java
 sudo: false # faster builds
 
 jdk:
-  - openjdk6
+  - openjdk8
 
 branches: # build only on these branches
   only:
     - master
     - dev
-    - 
