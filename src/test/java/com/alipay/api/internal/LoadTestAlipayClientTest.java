@@ -11,7 +11,7 @@ import com.alipay.api.response.AlipayOpenOperationOpenbizmockBizQueryResponse;
 import com.alipay.api.response.AlipayTradeAppPayResponse;
 import com.alipay.api.response.AlipayTradeWapPayResponse;
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.Ignore;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
@@ -27,7 +27,7 @@ public class LoadTestAlipayClientTest {
                 TestAccount.DevLoadTest.ALIPAY_PUBLICKEY, "RSA");
     }
 
-    @Test
+    @Ignore
     public void should_return_success_response() throws AlipayApiException {
         //given
         AlipayOpenOperationOpenbizmockBizQueryRequest request = new AlipayOpenOperationOpenbizmockBizQueryRequest();
@@ -39,7 +39,7 @@ public class LoadTestAlipayClientTest {
         assertThat(response.isSuccess(), is(true));
     }
 
-    @Test
+    @Ignore
     public void should_get_app_id_with_load_test_flag_when_call_sdk_execute() throws AlipayApiException {
         //given
         AlipayTradeAppPayRequest request = new AlipayTradeAppPayRequest();
@@ -59,7 +59,7 @@ public class LoadTestAlipayClientTest {
         assertThat(orderString, containsString("app_id=2021000100600007_TEST_1A"));
     }
 
-    @Test
+    @Ignore
     public void should_get_app_id_with_load_test_flag_in_redirect_url_when_call_page_execute() throws AlipayApiException {
         //given
         AlipayTradeWapPayRequest request = new AlipayTradeWapPayRequest();
@@ -78,7 +78,7 @@ public class LoadTestAlipayClientTest {
         assertThat(orderString, containsString("app_id=2021000100600007_TEST_1A"));
     }
 
-    @Test
+    @Ignore
     public void should_get_app_id_with_load_test_flag_in_post_form_when_call_page_execute() throws AlipayApiException {
         //given
         AlipayTradeWapPayRequest request = new AlipayTradeWapPayRequest();
