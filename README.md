@@ -1,4 +1,3 @@
-
 ```
 开发语言：JAVA
 适用JDK版本：1.5及以上
@@ -6,6 +5,8 @@
 ```
 
 ## 主要类文件功能说明
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all?ref=badge_shield)
+
 ```
 DefaultAlipayClient.java
 public DefaultAlipayClient(String serverUrl, String appId, String privateKey);
@@ -73,3 +74,7 @@ public static boolean rsaCheckContent(String content, String sign, String public
     + charset 签名编码格式
 + 输出：验签结果
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all?ref=badge_large)
