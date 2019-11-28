@@ -1,0 +1,3 @@
+2019-09-27 Version: 4.8.0
+1. 修复已知Bug。
+2. 强制开启SSL服务端证书校验。如需关闭请调用：WebUtils.setNeedCheckServerTrusted(false);
