@@ -20,7 +20,7 @@ Alipay SDK for Java让您不用复杂编程即可访支付宝开放平台开放�
 	* 加签模式为公钥模式时
 	`AppId`、`应用的私钥`、`应用的公钥`、`支付宝公钥`
 
-3. Alipay SDK for Java 需要配合`JKD 1.6`或其以上版本。
+3. Alipay SDK for Java 需要配合`JKD 1.6`或其以上版本使用。
 
 ## 安装依赖
 通过Maven来管理项目依赖（推荐），您只需在项目的`pom.xml`文件中声明如下依赖
