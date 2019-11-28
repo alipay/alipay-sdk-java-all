@@ -9,9 +9,6 @@ branches: # build only on these branches
     - master
     - dev
 
-install:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -Dgpg.skip=true
-
 script:
   - "mvn cobertura:cobertura"
 
