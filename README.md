@@ -105,7 +105,7 @@ public class Main {
 [SDK文档首页](https://docs.open.alipay.com/54/103419/)
 
 ## 问题
-[提交 Issue](https://github.com/alipay/alipay-sdk-java-all/issues/new)，我们会定期查看Issue记录并尽量做出反馈。
+[提交 Issue](https://github.com/alipay/alipay-sdk-java-all/issues/new)，我们会定期查看Issue记录并尽快做出反馈。
 
 ## 变更日志
 每个版本的详细更改记录在[变更日志](./CHANGELOG)中。
