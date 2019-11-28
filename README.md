@@ -1,3 +1,5 @@
+[![Maven Central](https://img.shields.io/maven-central/v/com.alipay.sdk/alipay-sdk-java.svg)](https://mvnrepository.com/artifact/com.alipay.sdk/alipay-sdk-java)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all?ref=badge_shield)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5a2a4867c87d4d15a8beba06d2e49635)](https://www.codacy.com/manual/antopen/alipay-sdk-java-all?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alipay/alipay-sdk-java-all&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://www.travis-ci.org/alipay/alipay-sdk-java-all.svg?branch=dev)](https://www.travis-ci.org/alipay/alipay-sdk-java-all)
 [![codecov](https://codecov.io/gh/alipay/alipay-sdk-java-all/branch/dev/graph/badge.svg)](https://codecov.io/gh/alipay/alipay-sdk-java-all)
@@ -103,6 +105,7 @@ public class Main {
 
 ## 变更日志
 每个版本的详细更改记录在[变更日志](./CHANGELOG)中。
+
 注：版本号最末一位修订号的增加（比如从4.8.62.ALL升级为4.8.74.ALL），意味着SDK的功能没有发生任何变化，仅仅是集成了更多的API的Request、Response、Model类，此类变更默认不记录在变更日志中。
 
 ## 相关
@@ -111,4 +114,4 @@ public class Main {
 * [最新源码](https://github.com/alipay/alipay-sdk-java-all)
 
 ## 许可证
-[Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all?ref=badge_large)
