@@ -12,15 +12,19 @@ Alipay SDK for Java让您不用复杂编程即可访支付宝开放平台开放�
 如果您在使用 Alipay SDK for Java 的过程中遇到任何问题，欢迎在当前 GitHub [提交 Issues](https://github.com/alipay/alipay-sdk-java-all/issues/new)。
 
 ## 环境要求
-1. 使用 Alipay SDK for Java 之前 ，您需要先前往[支付宝开发平台-开发者中心](https://openhome.alipay.com/platform/developerIndex.htm)完成开发者接入的一些准备工作，包括创建应用、为应用添加功能包、设置应用的接口加签方式等。
+1. Alipay SDK for Java 需要配合`JKD 1.6`或其以上版本。
 
-2. 准备工作完成后，注意保存如下参数，后续将作为使用SDK的输入。
+2. 使用 Alipay SDK for Java 之前 ，您需要先前往[支付宝开发平台-开发者中心](https://openhome.alipay.com/platform/developerIndex.htm)完成开发者接入的一些准备工作，包括创建应用、为应用添加功能包、设置应用的接口加签方式等。
+
+3. 准备工作完成后，注意保存如下信息，后续将作为使用SDK的输入。
+
 * 加签模式为公钥证书模式时（推荐）
-`AppID`、`应用的私钥`、`应用的公钥证书文件`、`支付宝公钥证书文件`、`支付宝根证书文件`
-	* 加签模式为公钥模式时
-	`AppId`、`应用的私钥`、`应用的公钥`、`支付宝公钥`
 
-3. Alipay SDK for Java 需要配合`JKD 1.6`或其以上版本使用。
+`AppID`、`应用的私钥`、`应用的公钥证书文件`、`支付宝公钥证书文件`、`支付宝根证书文件`
+
+* 加签模式为公钥模式时
+
+`AppId`、`应用的私钥`、`应用的公钥`、`支付宝公钥`
 
 ## 安装依赖
 通过Maven来管理项目依赖（推荐），您只需在项目的`pom.xml`文件中声明如下依赖
