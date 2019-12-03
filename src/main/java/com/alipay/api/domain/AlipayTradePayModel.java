@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2019-08-29 14:36:52
+ * @since 1.0, 2019-11-25 15:08:47
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4228736843497297627L;
+	private static final long serialVersionUID = 6548449867946851133L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -103,6 +103,12 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail")
 	private List<GoodsDetail> goodsDetail;
+
+	/**
+	 * 是否异步支付，传入true时，表明本次期望走异步支付，会先将支付请求受理下来，再异步推进。商户可以通过交易的异步通知或者轮询交易的状态来确定最终的交易结果
+	 */
+	@ApiField("is_async_pay")
+	private Boolean isAsyncPay;
 
 	/**
 	 * 商户的原始订单号
@@ -318,6 +324,13 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	}
 	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
+	}
+
+	public Boolean getIsAsyncPay() {
+		return this.isAsyncPay;
+	}
+	public void setIsAsyncPay(Boolean isAsyncPay) {
+		this.isAsyncPay = isAsyncPay;
 	}
 
 	public String getMerchantOrderNo() {

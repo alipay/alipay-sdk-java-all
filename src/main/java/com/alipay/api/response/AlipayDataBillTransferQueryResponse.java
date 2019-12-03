@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TransferDetailResult;
 
 import com.alipay.api.AlipayResponse;
@@ -9,17 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.transfer.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-11 10:57:39
+ * @since 1.0, 2019-11-25 16:10:50
  */
 public class AlipayDataBillTransferQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3255515782614498718L;
+	private static final long serialVersionUID = 1749181986196821644L;
 
 	/** 
 	 * 充值、提现、转账明细记录
 	 */
-	@ApiField("detail_list")
-	private TransferDetailResult detailList;
+	@ApiListField("detail_list")
+	@ApiField("transfer_detail_result")
+	private List<TransferDetailResult> detailList;
 
 	/** 
 	 * 分页号，从1开始
@@ -39,10 +42,10 @@ public class AlipayDataBillTransferQueryResponse extends AlipayResponse {
 	@ApiField("total_size")
 	private String totalSize;
 
-	public void setDetailList(TransferDetailResult detailList) {
+	public void setDetailList(List<TransferDetailResult> detailList) {
 		this.detailList = detailList;
 	}
-	public TransferDetailResult getDetailList( ) {
+	public List<TransferDetailResult> getDetailList( ) {
 		return this.detailList;
 	}
 

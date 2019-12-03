@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线下拉新结算汇总数据查询
  *
  * @author auto create
- * @since 1.0, 2019-01-22 10:50:35
+ * @since 1.0, 2019-11-27 15:13:50
  */
 public class AlipayUserInviteOfflinesummaryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5857221728288761755L;
+	private static final long serialVersionUID = 4733971948949411743L;
 
 	/**
 	 * 二级渠道

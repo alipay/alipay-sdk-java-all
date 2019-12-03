@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约参数。用于sdk支付并签约中传入签约信息。
  *
  * @author auto create
- * @since 1.0, 2019-09-13 07:14:34
+ * @since 1.0, 2019-11-29 16:27:37
  */
 public class SignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6496222269221962851L;
+	private static final long serialVersionUID = 3513336849919134235L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
 	 */
 	@ApiField("access_params")
 	private AccessParams accessParams;
+
+	/**
+	 * 是否允许花芝GO降级成原代扣（即销售方案指定的代扣产品），在花芝GO场景下才会使用该值。取值：true-允许降级，false-不允许降级。默认为false。
+	 */
+	@ApiField("allow_huazhi_degrade")
+	private Boolean allowHuazhiDegrade;
 
 	/**
 	 * 商户签约号，代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。 格式规则：支持大写小写字母和数字，最长32位。 商户系统按需传入，如果同一用户在同一产品码、同一签约场景下，签订了多份代扣协议，那么需要指定并传入该值。
@@ -44,6 +50,12 @@ public class SignParams extends AlipayObject {
 	private String personalProductCode;
 
 	/**
+	 * 签约成功后商户用于接收异步通知的地址。如果不传入，签约与支付的异步通知都会发到外层notify_url参数传入的地址；如果外层也未传入，签约与支付的异步通知都会发到商户appid配置的网关地址。
+	 */
+	@ApiField("sign_notify_url")
+	private String signNotifyUrl;
+
+	/**
 	 * 协议签约场景，商户和支付宝签约时确定，商户可咨询技术支持。
 	 */
 	@ApiField("sign_scene")
@@ -60,6 +72,13 @@ public class SignParams extends AlipayObject {
 	}
 	public void setAccessParams(AccessParams accessParams) {
 		this.accessParams = accessParams;
+	}
+
+	public Boolean getAllowHuazhiDegrade() {
+		return this.allowHuazhiDegrade;
+	}
+	public void setAllowHuazhiDegrade(Boolean allowHuazhiDegrade) {
+		this.allowHuazhiDegrade = allowHuazhiDegrade;
 	}
 
 	public String getExternalAgreementNo() {
@@ -88,6 +107,13 @@ public class SignParams extends AlipayObject {
 	}
 	public void setPersonalProductCode(String personalProductCode) {
 		this.personalProductCode = personalProductCode;
+	}
+
+	public String getSignNotifyUrl() {
+		return this.signNotifyUrl;
+	}
+	public void setSignNotifyUrl(String signNotifyUrl) {
+		this.signNotifyUrl = signNotifyUrl;
 	}
 
 	public String getSignScene() {

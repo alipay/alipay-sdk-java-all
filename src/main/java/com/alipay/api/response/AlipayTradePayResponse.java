@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-29 14:36:52
+ * @since 1.0, 2019-11-25 15:09:40
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3698837367863142336L;
+	private static final long serialVersionUID = 2899246273241735898L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -26,10 +26,12 @@ public class AlipayTradePayResponse extends AlipayResponse {
 	private String advanceAmount;
 
 	/** 
-	 * 异步支付模式，先享后付业务会返回该参数，目前有三种值：
+	 * 异步支付模式，目前有五种值：
 ASYNC_DELAY_PAY(异步延时付款);
 ASYNC_REALTIME_PAY(异步准实时付款);
 SYNC_DIRECT_PAY(同步直接扣款);
+NORMAL_ASYNC_PAY(纯异步付款);
+QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	 */
 	@ApiField("async_payment_mode")
 	private String asyncPaymentMode;

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.member.alipaycard.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-24 16:24:54
+ * @since 1.0, 2019-11-27 16:09:24
  */
 public class AlipayUserMemberAlipaycardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2141173714861618612L;
+	private static final long serialVersionUID = 3341792294332766167L;
 
 	/** 
 	 * 支付宝卡片展现信息（缓存）

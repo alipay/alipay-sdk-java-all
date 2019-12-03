@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票内容项申请模型
  *
  * @author auto create
- * @since 1.0, 2019-06-21 17:06:08
+ * @since 1.0, 2019-11-20 20:31:49
  */
 public class InvoiceItemApplyOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6678341987542521489L;
+	private static final long serialVersionUID = 7177563911891344786L;
 
 	/**
 	 * 明细不含税金额，该值为item_quantity＊item_unit_price，依据税控厂商的不同，目前对接的阿里平台和浙江航信该字段不必传
@@ -44,7 +44,7 @@ public class InvoiceItemApplyOpenModel extends AlipayObject {
 	private String itemSpec;
 
 	/**
-	 * 明细价税合计。该值为item_tax_amount＋item_ex_tax_amount，依据税控厂商的不同，目前对接的阿里平台和浙江航信该字段可不传。
+	 * 明细价税合计。该值为item_tax_amount＋item_ex_tax_amount，依据税控厂商的不同，目前对接的阿里平台和浙江航信该字段可不传
 	 */
 	@ApiField("item_sum_amount")
 	private String itemSumAmount;
@@ -74,10 +74,28 @@ public class InvoiceItemApplyOpenModel extends AlipayObject {
 	private String itemUnitPrice;
 
 	/**
+	 * 优惠政策标识。0：没有优惠政策；1：对应零税率为免税或者不征税
+	 */
+	@ApiField("prefer_policy_flag")
+	private String preferPolicyFlag;
+
+	/**
 	 * 发票行性质。0表示正常行，1表示折扣行，2表示被折扣行。比如充电器单价100元，折扣10元，则明细为2行，充电器行性质为2，折扣行性质为1。如果充电器没有折扣，则值应为0
 	 */
 	@ApiField("row_type")
 	private String rowType;
+
+	/**
+	 * 增值税特殊管理。该标识会展示在票面上，和优惠政策标识和零税率标识强关联；如果是免税，在税率那一行展示“免税”；如果是不征税，在税率那一行展示“不征税”
+	 */
+	@ApiField("special_manage_flag")
+	private String specialManageFlag;
+
+	/**
+	 * 零税率标识。为空：非零税率； 1：免税；2：不征税；3：普通零税率
+	 */
+	@ApiField("zero_tax_flag")
+	private String zeroTaxFlag;
 
 	public String getItemExTaxAmount() {
 		return this.itemExTaxAmount;
@@ -149,11 +167,32 @@ public class InvoiceItemApplyOpenModel extends AlipayObject {
 		this.itemUnitPrice = itemUnitPrice;
 	}
 
+	public String getPreferPolicyFlag() {
+		return this.preferPolicyFlag;
+	}
+	public void setPreferPolicyFlag(String preferPolicyFlag) {
+		this.preferPolicyFlag = preferPolicyFlag;
+	}
+
 	public String getRowType() {
 		return this.rowType;
 	}
 	public void setRowType(String rowType) {
 		this.rowType = rowType;
+	}
+
+	public String getSpecialManageFlag() {
+		return this.specialManageFlag;
+	}
+	public void setSpecialManageFlag(String specialManageFlag) {
+		this.specialManageFlag = specialManageFlag;
+	}
+
+	public String getZeroTaxFlag() {
+		return this.zeroTaxFlag;
+	}
+	public void setZeroTaxFlag(String zeroTaxFlag) {
+		this.zeroTaxFlag = zeroTaxFlag;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopPosSchedule extends AlipayObject {
 
-	private static final long serialVersionUID = 6116551167359451861L;
+	private static final long serialVersionUID = 1515919469316493848L;
 
 	/**
 	 * 早班结束时间

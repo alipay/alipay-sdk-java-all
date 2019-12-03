@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新春五福福卡查询接口
  *
  * @author auto create
- * @since 1.0, 2018-12-28 19:49:49
+ * @since 1.0, 2019-11-28 17:39:38
  */
 public class AlipayFundCouponWufuCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2875727559337453591L;
+	private static final long serialVersionUID = 5372973187848173915L;
 
 	/**
 	 * 业务场景码

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SquareDanceTaskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7667183349168569962L;
+	private static final long serialVersionUID = 5385239521514749155L;
 
 	/**
 	 * 应用id，固定值，用于识别相关调用方的应用来源

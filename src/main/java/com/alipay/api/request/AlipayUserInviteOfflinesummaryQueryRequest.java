@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.invite.offlinesummary.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-22 10:50:35
+ * @since 1.0, 2019-11-27 15:13:50
  */
 public class AlipayUserInviteOfflinesummaryQueryRequest implements AlipayRequest<AlipayUserInviteOfflinesummaryQueryResponse> {
 

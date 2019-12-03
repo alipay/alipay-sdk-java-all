@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享会员协议关闭接口
  *
  * @author auto create
- * @since 1.0, 2019-11-18 19:17:03
+ * @since 1.0, 2019-11-22 11:56:59
  */
 public class AlipayPcreditHuabeiAuthAgreementCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2648176196846194934L;
+	private static final long serialVersionUID = 2828193594726117331L;
 
 	/**
 	 * 花芝协议号，支付宝系统中用以唯一标识用户签约记录的编号，即花芝协议号。
@@ -36,6 +36,12 @@ public class AlipayPcreditHuabeiAuthAgreementCloseModel extends AlipayObject {
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
+
+	/**
+	 * 用户主动意愿退出：USER_CANCEL_QUIT; 商户结算退出：SETTLE_APPLY_QUIT; 默认值为SETTLE_APPLY_QUIT；这个字段会影响用户在芝麻信用合约的状态
+	 */
+	@ApiField("quit_type")
+	private String quitType;
 
 	public String getAgreementNo() {
 		return this.agreementNo;
@@ -63,6 +69,13 @@ public class AlipayPcreditHuabeiAuthAgreementCloseModel extends AlipayObject {
 	}
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
+	}
+
+	public String getQuitType() {
+		return this.quitType;
+	}
+	public void setQuitType(String quitType) {
+		this.quitType = quitType;
 	}
 
 }

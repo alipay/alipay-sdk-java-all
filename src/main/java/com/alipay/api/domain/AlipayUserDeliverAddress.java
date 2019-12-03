@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员收货地址信息（alipay.user.info.share使用）
  *
  * @author auto create
- * @since 1.0, 2019-09-27 12:35:35
+ * @since 1.0, 2019-11-26 10:05:14
  */
 public class AlipayUserDeliverAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 8296351638239794413L;
+	private static final long serialVersionUID = 8353253521639115312L;
 
 	/**
 	 * 地址

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品订单
  *
  * @author auto create
- * @since 1.0, 2019-02-20 20:23:23
+ * @since 1.0, 2019-11-28 14:57:36
  */
 public class ItemOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8127929752245961374L;
+	private static final long serialVersionUID = 6639777736915318783L;
 
 	/**
 	 * 扩展信息（键值对列表，有重复的键后者覆盖前者，建议唯一，以免出现不可预期的结果）

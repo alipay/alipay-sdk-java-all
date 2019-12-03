@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票申请模型
  *
  * @author auto create
- * @since 1.0, 2019-10-21 15:54:09
+ * @since 1.0, 2019-11-29 10:51:57
  */
 public class InvoiceApplyOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7531447876836822941L;
+	private static final long serialVersionUID = 5692527592897276249L;
 
 	/**
 	 * 复核人
@@ -83,6 +83,13 @@ public class InvoiceApplyOpenModel extends AlipayObject {
 	 */
 	@ApiField("out_apply_id")
 	private String outApplyId;
+
+	/**
+	 * 为外部系统提供的扩展信息透传字段，可在开票申请中传入，开票成功后从发票信息中取回。
+格式：key1=value2|key2=value2
+	 */
+	@ApiField("out_extends")
+	private String outExtends;
 
 	/**
 	 * 申请开票对应的商户交易流水号，该流水号必须保证在同商户范围内全局唯一。
@@ -237,6 +244,13 @@ public class InvoiceApplyOpenModel extends AlipayObject {
 	}
 	public void setOutApplyId(String outApplyId) {
 		this.outApplyId = outApplyId;
+	}
+
+	public String getOutExtends() {
+		return this.outExtends;
+	}
+	public void setOutExtends(String outExtends) {
+		this.outExtends = outExtends;
 	}
 
 	public String getOutTradeNo() {

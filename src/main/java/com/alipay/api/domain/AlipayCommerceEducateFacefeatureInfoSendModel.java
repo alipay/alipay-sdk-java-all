@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 封闭式教育场景-一脸通行特征兼容
  *
  * @author auto create
- * @since 1.0, 2019-10-24 18:25:26
+ * @since 1.0, 2019-11-19 20:37:39
  */
 public class AlipayCommerceEducateFacefeatureInfoSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7821999471622912789L;
+	private static final long serialVersionUID = 4142735547632265179L;
 
 	/**
 	 * 人脸算法版本
