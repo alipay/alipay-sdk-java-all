@@ -7,23 +7,48 @@ import com.alipay.api.internal.mapping.ApiField;
  * 垫资查询
  *
  * @author auto create
- * @since 1.0, 2019-10-29 11:33:11
+ * @since 1.0, 2019-12-03 14:19:49
  */
 public class AlipayTradeAdvanceConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5231613573435968747L;
+	private static final long serialVersionUID = 1852369945838822892L;
 
 	/**
-	 * 支付宝用户id
+	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ） ，在进行单笔订单风险评估预咨询时必传。
+	 */
+	@ApiField("agreement_no")
+	private String agreementNo;
+
+	/**
+	 * 支付宝用户id；除单笔订单风险预评估场景(即consult_scene指定ORDER_RISK_EVALUATION)外，其他场景必选。
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 订单咨询类型，用以选择咨询的服务。不传时默认为垫资咨询。其他的场景需要按照对接的服务传入指定的值。
+单笔订单风险预评估-ORDER_RISK_EVALUATION
+	 */
+	@ApiField("consult_scene")
+	private String consultScene;
+
+	/**
+	 * 预估订单总金额，单位为元，精确到小数点后两位，单笔订单风险预评估时使用，取值范围[0.01,100000000]。
+	 */
+	@ApiField("estimated_order_amount")
+	private String estimatedOrderAmount;
 
 	/**
 	 * 行业产品信息，咨询是，会从该产品对应的销售方案中获取相关垫资规则配置
 	 */
 	@ApiField("industry_product_code")
 	private String industryProductCode;
+
+	/**
+	 * 商户请求时的外部订单号，在花芝场景下非空。
+	 */
+	@ApiField("out_trade_no")
+	private String outTradeNo;
 
 	/**
 	 * 子商户id
@@ -37,6 +62,13 @@ public class AlipayTradeAdvanceConsultModel extends AlipayObject {
 	@ApiField("sub_merchant_type")
 	private String subMerchantType;
 
+	public String getAgreementNo() {
+		return this.agreementNo;
+	}
+	public void setAgreementNo(String agreementNo) {
+		this.agreementNo = agreementNo;
+	}
+
 	public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
@@ -44,11 +76,32 @@ public class AlipayTradeAdvanceConsultModel extends AlipayObject {
 		this.alipayUserId = alipayUserId;
 	}
 
+	public String getConsultScene() {
+		return this.consultScene;
+	}
+	public void setConsultScene(String consultScene) {
+		this.consultScene = consultScene;
+	}
+
+	public String getEstimatedOrderAmount() {
+		return this.estimatedOrderAmount;
+	}
+	public void setEstimatedOrderAmount(String estimatedOrderAmount) {
+		this.estimatedOrderAmount = estimatedOrderAmount;
+	}
+
 	public String getIndustryProductCode() {
 		return this.industryProductCode;
 	}
 	public void setIndustryProductCode(String industryProductCode) {
 		this.industryProductCode = industryProductCode;
+	}
+
+	public String getOutTradeNo() {
+		return this.outTradeNo;
+	}
+	public void setOutTradeNo(String outTradeNo) {
+		this.outTradeNo = outTradeNo;
 	}
 
 	public String getSubMerchantId() {

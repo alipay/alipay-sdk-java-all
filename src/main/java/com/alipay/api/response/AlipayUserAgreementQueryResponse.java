@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-29 11:32:17
+ * @since 1.0, 2019-12-18 19:24:21
  */
 public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2394349995518795725L;
+	private static final long serialVersionUID = 1871756183113729649L;
 
 	/** 
 	 * 用户签约成功后的协议号
@@ -25,6 +25,12 @@ public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
+
+	/** 
+	 * 授信模式，取值：DEDUCT_HUAZHI-花芝GO。目前只在花芝代扣（即花芝go）协议时才会返回
+	 */
+	@ApiField("credit_auth_mode")
+	private String creditAuthMode;
 
 	/** 
 	 * 设备Id
@@ -128,6 +134,13 @@ CUSTOMER:支付宝用户
 	}
 	public String getAlipayLogonId( ) {
 		return this.alipayLogonId;
+	}
+
+	public void setCreditAuthMode(String creditAuthMode) {
+		this.creditAuthMode = creditAuthMode;
+	}
+	public String getCreditAuthMode( ) {
+		return this.creditAuthMode;
 	}
 
 	public void setDeviceId(String deviceId) {

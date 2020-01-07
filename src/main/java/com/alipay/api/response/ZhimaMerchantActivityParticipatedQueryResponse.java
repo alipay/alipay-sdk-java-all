@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.activity.participated.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-14 20:58:15
+ * @since 1.0, 2019-12-21 12:06:32
  */
 public class ZhimaMerchantActivityParticipatedQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3173152794467134294L;
+	private static final long serialVersionUID = 5119375152728463625L;
 
 	/** 
 	 * 用户参加活动模型列表

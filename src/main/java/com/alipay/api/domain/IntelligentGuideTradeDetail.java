@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户单门店下线下交易数据详细信息，按照给定格式上传
  *
  * @author auto create
- * @since 1.0, 2019-11-12 11:16:56
+ * @since 1.0, 2019-12-18 16:30:26
  */
 public class IntelligentGuideTradeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7396172811363668466L;
+	private static final long serialVersionUID = 2333256348722359629L;
 
 	/**
 	 * 非必填，商户会员的会员卡类型
 	 */
 	@ApiField("card_type")
 	private String cardType;
+
+	/**
+	 * 线下到点客户来源类型，非必填项，商户可自填
+	 */
+	@ApiField("customer_source")
+	private String customerSource;
 
 	/**
 	 * 客户类型，支持枚举值：轮牌 - LP、指牌 - ZP。非必填
@@ -120,6 +126,13 @@ public class IntelligentGuideTradeDetail extends AlipayObject {
 	}
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
+	}
+
+	public String getCustomerSource() {
+		return this.customerSource;
+	}
+	public void setCustomerSource(String customerSource) {
+		this.customerSource = customerSource;
 	}
 
 	public String getCustomerType() {

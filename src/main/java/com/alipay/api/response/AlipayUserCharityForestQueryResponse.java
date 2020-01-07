@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.charity.forest.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-11 12:04:45
+ * @since 1.0, 2019-12-26 21:06:34
  */
 public class AlipayUserCharityForestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8677169941382457448L;
+	private static final long serialVersionUID = 2444971394326835895L;
 
 	/** 
 	 * 是否开通了蚂蚁森林

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能定价配制同步
  *
  * @author auto create
- * @since 1.0, 2019-05-31 13:10:11
+ * @since 1.0, 2019-12-11 20:32:24
  */
 public class AlipayDataAiservicePriceoptimizerConfigSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6446175955342221489L;
+	private static final long serialVersionUID = 5152498476168174233L;
 
 	/**
 	 * 内部接口版本号

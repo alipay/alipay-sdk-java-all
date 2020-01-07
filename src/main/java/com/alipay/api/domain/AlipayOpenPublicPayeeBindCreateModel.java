@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加收款账号接口
  *
  * @author auto create
- * @since 1.0, 2018-04-28 15:56:55
+ * @since 1.0, 2019-12-27 18:58:03
  */
 public class AlipayOpenPublicPayeeBindCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8741555232123382274L;
+	private static final long serialVersionUID = 4632124639527155894L;
 
 	/**
 	 * 收款账号，需要绑定的收款支付宝账号，跟pid不要同时传

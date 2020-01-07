@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸特征报告上传
  *
  * @author auto create
- * @since 1.0, 2019-10-18 21:04:08
+ * @since 1.0, 2019-12-24 11:17:04
  */
 public class AlipayCommerceEducateFacefeatureReportUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2295713394383647238L;
+	private static final long serialVersionUID = 8142941855151829423L;
 
 	/**
 	 * 参数来源 客户端BehaviourLog-> aesCypher 参数

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户产品签约状态结果对象
  *
  * @author auto create
- * @since 1.0, 2018-07-09 10:31:09
+ * @since 1.0, 2019-12-09 10:40:36
  */
 public class ProductSignStatusInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3426565475699291513L;
+	private static final long serialVersionUID = 6361741324561979944L;
 
 	/**
 	 * 产品编码

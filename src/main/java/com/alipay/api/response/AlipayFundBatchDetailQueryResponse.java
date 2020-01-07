@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-12 12:21:37
+ * @since 1.0, 2019-12-31 16:27:33
  */
 public class AlipayFundBatchDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7552831225516466894L;
+	private static final long serialVersionUID = 1812473444934163279L;
 
 	/** 
 	 * 1）当批次状态为INIT状态时，明细信息还未落地，返回明细信息为空
@@ -90,10 +90,34 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	private String errorCode;
 
 	/** 
+	 * 失败金额
+	 */
+	@ApiField("fail_amount")
+	private String failAmount;
+
+	/** 
+	 * 失败笔数
+	 */
+	@ApiField("fail_count")
+	private Long failCount;
+
+	/** 
 	 * 批次失败错误原因
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
+
+	/** 
+	 * 批次处理完成时间
+	 */
+	@ApiField("gmt_finish")
+	private String gmtFinish;
+
+	/** 
+	 * 批次支付完成时间
+	 */
+	@ApiField("gmt_pay_finish")
+	private String gmtPayFinish;
 
 	/** 
 	 * 商户的批次号
@@ -112,6 +136,12 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/** 
+	 * 付款方身份标识
+	 */
+	@ApiField("payer_id")
+	private String payerId;
 
 	/** 
 	 * 付款方需要支付的金额，受理成功（status为APPLIED）之后才会有值，受理成功之前是0。
@@ -136,6 +166,24 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	 */
 	@ApiField("sign_principal")
 	private String signPrincipal;
+
+	/** 
+	 * 成功金额
+	 */
+	@ApiField("success_amount")
+	private String successAmount;
+
+	/** 
+	 * 成功笔数
+	 */
+	@ApiField("success_count")
+	private Long successCount;
+
+	/** 
+	 * 批次总金额
+	 */
+	@ApiField("total_amount")
+	private String totalAmount;
 
 	/** 
 	 * 总记录数
@@ -198,11 +246,39 @@ MESSAGE_BATCH_PAY：接口报文代发。
 		return this.errorCode;
 	}
 
+	public void setFailAmount(String failAmount) {
+		this.failAmount = failAmount;
+	}
+	public String getFailAmount( ) {
+		return this.failAmount;
+	}
+
+	public void setFailCount(Long failCount) {
+		this.failCount = failCount;
+	}
+	public Long getFailCount( ) {
+		return this.failCount;
+	}
+
 	public void setFailReason(String failReason) {
 		this.failReason = failReason;
 	}
 	public String getFailReason( ) {
 		return this.failReason;
+	}
+
+	public void setGmtFinish(String gmtFinish) {
+		this.gmtFinish = gmtFinish;
+	}
+	public String getGmtFinish( ) {
+		return this.gmtFinish;
+	}
+
+	public void setGmtPayFinish(String gmtPayFinish) {
+		this.gmtPayFinish = gmtPayFinish;
+	}
+	public String getGmtPayFinish( ) {
+		return this.gmtPayFinish;
 	}
 
 	public void setOutBatchNo(String outBatchNo) {
@@ -224,6 +300,13 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	}
 	public Long getPageSize( ) {
 		return this.pageSize;
+	}
+
+	public void setPayerId(String payerId) {
+		this.payerId = payerId;
+	}
+	public String getPayerId( ) {
+		return this.payerId;
 	}
 
 	public void setPaymentAmount(String paymentAmount) {
@@ -252,6 +335,27 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	}
 	public String getSignPrincipal( ) {
 		return this.signPrincipal;
+	}
+
+	public void setSuccessAmount(String successAmount) {
+		this.successAmount = successAmount;
+	}
+	public String getSuccessAmount( ) {
+		return this.successAmount;
+	}
+
+	public void setSuccessCount(Long successCount) {
+		this.successCount = successCount;
+	}
+	public Long getSuccessCount( ) {
+		return this.successCount;
+	}
+
+	public void setTotalAmount(String totalAmount) {
+		this.totalAmount = totalAmount;
+	}
+	public String getTotalAmount( ) {
+		return this.totalAmount;
 	}
 
 	public void setTotalItemCount(Long totalItemCount) {

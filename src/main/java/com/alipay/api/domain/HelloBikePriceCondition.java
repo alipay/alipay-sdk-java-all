@@ -12,11 +12,11 @@ card_type_left * coefficient_left >= card_type_right * coefficient_right
 举例 ycard * 0.08333 >= mcard * 0.8  （0.08333 = 1/12）
  *
  * @author auto create
- * @since 1.0, 2018-11-29 15:49:29
+ * @since 1.0, 2019-12-11 20:53:14
  */
 public class HelloBikePriceCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 4722392347547831387L;
+	private static final long serialVersionUID = 6317142314991984871L;
 
 	/**
 	 * 算式左侧优惠卡类型，枚举值为 mcard,qcard,hycard,ycard,tcard

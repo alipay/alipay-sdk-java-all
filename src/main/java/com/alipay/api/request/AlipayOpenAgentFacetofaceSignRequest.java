@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.facetoface.sign request
  * 
  * @author auto create
- * @since 1.0, 2019-11-18 14:26:40
+ * @since 1.0, 2019-12-24 10:45:52
  */
 public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest<AlipayOpenAgentFacetofaceSignResponse> {
 
@@ -58,6 +58,12 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	private String mccCode;
 
 	/** 
+	* 服务费率（%），0.38~3之间，精确到0.01。
+当签约且授权sign_and_auth=true时，必填。
+	 */
+	private String rate;
+
+	/** 
 	* 店铺内景图片，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem shopScenePic;
@@ -66,6 +72,11 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	* 店铺门头照图片，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem shopSignBoardPic;
+
+	/** 
+	* 签约且授权标识，默认为false
+	 */
+	private Boolean signAndAuth;
 
 	/** 
 	* 企业特殊资质图片，可参考
@@ -123,6 +134,13 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 		return this.mccCode;
 	}
 
+	public void setRate(String rate) {
+		this.rate = rate;
+	}
+	public String getRate() {
+		return this.rate;
+	}
+
 	public void setShopScenePic(FileItem shopScenePic) {
 		this.shopScenePic = shopScenePic;
 	}
@@ -135,6 +153,13 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	}
 	public FileItem getShopSignBoardPic() {
 		return this.shopSignBoardPic;
+	}
+
+	public void setSignAndAuth(Boolean signAndAuth) {
+		this.signAndAuth = signAndAuth;
+	}
+	public Boolean getSignAndAuth() {
+		return this.signAndAuth;
 	}
 
 	public void setSpecialLicensePic(FileItem specialLicensePic) {
@@ -209,6 +234,8 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 		txtParams.put("date_limitation", this.dateLimitation);
 		txtParams.put("long_term", this.longTerm);
 		txtParams.put("mcc_code", this.mccCode);
+		txtParams.put("rate", this.rate);
+		txtParams.put("sign_and_auth", this.signAndAuth);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

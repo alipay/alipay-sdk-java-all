@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 取消订单或退货完成反馈接口
  *
  * @author auto create
- * @since 1.0, 2018-09-20 10:30:22
+ * @since 1.0, 2019-12-23 17:34:00
  */
 public class AntMerchantExpandAssetreverseCompleteSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1276364472467987933L;
+	private static final long serialVersionUID = 4541964967487676989L;
 
 	/**
 	 * 取消订单或退货成功入参

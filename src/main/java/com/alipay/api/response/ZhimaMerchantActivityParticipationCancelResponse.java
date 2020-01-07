@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.activity.participation.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2019-04-18 19:30:01
+ * @since 1.0, 2019-12-21 12:03:00
  */
 public class ZhimaMerchantActivityParticipationCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3727427957232917344L;
+	private static final long serialVersionUID = 1218315553735225187L;
 
 	
 

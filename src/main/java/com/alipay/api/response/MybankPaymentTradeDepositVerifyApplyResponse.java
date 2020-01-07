@@ -1,0 +1,44 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: mybank.payment.trade.deposit.verify.apply response.
+ * 
+ * @author auto create
+ * @since 1.0, 2019-12-10 21:49:57
+ */
+public class MybankPaymentTradeDepositVerifyApplyResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 7753999529957231953L;
+
+	/** 
+	 * 请求流水号，与入参一致
+	 */
+	@ApiField("request_no")
+	private String requestNo;
+
+	/** 
+	 * 打款验证ID
+打款验证受理后生成的一个唯一标识，用于金额校验接口
+	 */
+	@ApiField("verify_id")
+	private String verifyId;
+
+	public void setRequestNo(String requestNo) {
+		this.requestNo = requestNo;
+	}
+	public String getRequestNo( ) {
+		return this.requestNo;
+	}
+
+	public void setVerifyId(String verifyId) {
+		this.verifyId = verifyId;
+	}
+	public String getVerifyId( ) {
+		return this.verifyId;
+	}
+
+}

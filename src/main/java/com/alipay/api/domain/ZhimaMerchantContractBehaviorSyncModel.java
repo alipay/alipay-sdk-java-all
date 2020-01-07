@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用承诺消费用户履约信息同步接口
  *
  * @author auto create
- * @since 1.0, 2019-03-21 20:37:48
+ * @since 1.0, 2019-12-21 12:05:57
  */
 public class ZhimaMerchantContractBehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7565584251942262759L;
+	private static final long serialVersionUID = 1325719498453187667L;
 
 	/**
 	 * 履约动作发生时间，如果重试需要保证为首次动作发生的时间

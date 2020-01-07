@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活号用户关注查询接口
  *
  * @author auto create
- * @since 1.0, 2017-11-02 16:05:24
+ * @since 1.0, 2019-12-27 18:58:26
  */
 public class AlipayOpenPublicUserFollowQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5447343428759744637L;
+	private static final long serialVersionUID = 5185913417531382567L;
 
 	/**
 	 * 支付宝用户id，2088开头的16位长度字符串

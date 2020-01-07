@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发券接口
  *
  * @author auto create
- * @since 1.0, 2019-11-14 21:13:22
+ * @since 1.0, 2019-12-03 12:27:14
  */
 public class AlipayMarketingVoucherSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3264289161252796242L;
+	private static final long serialVersionUID = 2897586532117929991L;
 
 	/**
 	 * 券金额。浮点数，格式为#.00，单位是元。红包发放时填写，其它情形不能填
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 扩展参数，当前仅允许传入的key值为"alipayMiniAppToken"
+	 */
+	@ApiField("extend_info")
+	private String extendInfo;
 
 	/**
 	 * 支付宝登录ID，手机或邮箱 。user_id, login_id, taobao_nick不能同时为空，优先级依次降低
@@ -60,6 +66,13 @@ public class AlipayMarketingVoucherSendModel extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getExtendInfo() {
+		return this.extendInfo;
+	}
+	public void setExtendInfo(String extendInfo) {
+		this.extendInfo = extendInfo;
 	}
 
 	public String getLoginId() {

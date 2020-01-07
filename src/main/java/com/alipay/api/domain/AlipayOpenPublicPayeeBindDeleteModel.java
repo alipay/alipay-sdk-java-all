@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除收款账号接口
  *
  * @author auto create
- * @since 1.0, 2018-04-28 15:56:34
+ * @since 1.0, 2019-12-27 18:59:17
  */
 public class AlipayOpenPublicPayeeBindDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3242829321498145682L;
+	private static final long serialVersionUID = 2836484626314179223L;
 
 	/**
 	 * 收款账号，需要解除绑定的收款支付宝账号，跟pid不要同时传

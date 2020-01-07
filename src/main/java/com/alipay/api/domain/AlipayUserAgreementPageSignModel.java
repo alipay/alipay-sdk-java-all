@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2019-10-29 11:32:02
+ * @since 1.0, 2019-12-04 12:18:25
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5468711943145677399L;
+	private static final long serialVersionUID = 3235158335628243131L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -28,6 +28,12 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	 */
 	@ApiField("agreement_effect_type")
 	private String agreementEffectType;
+
+	/**
+	 * 是否允许花芝GO降级成原代扣（即销售方案指定的代扣产品），在花芝GO场景下才会使用该值。取值：true-允许降级，false-不允许降级。默认为false。
+	 */
+	@ApiField("allow_huazhi_degrade")
+	private String allowHuazhiDegrade;
 
 	/**
 	 * 设备信息参数，在使用设备维度签约代扣协议时，可以传这些信息
@@ -152,6 +158,13 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	}
 	public void setAgreementEffectType(String agreementEffectType) {
 		this.agreementEffectType = agreementEffectType;
+	}
+
+	public String getAllowHuazhiDegrade() {
+		return this.allowHuazhiDegrade;
+	}
+	public void setAllowHuazhiDegrade(String allowHuazhiDegrade) {
+		this.allowHuazhiDegrade = allowHuazhiDegrade;
 	}
 
 	public DeviceParams getDeviceParams() {

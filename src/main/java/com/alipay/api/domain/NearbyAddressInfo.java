@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NearbyAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3443446197273278253L;
+	private static final long serialVersionUID = 3282344243376667281L;
 
 	/**
 	 * 审核状态,AUDIT-审核中，AUDIT_SUCCESS-审核通过，AUDIT_FAIL-审核不通过，AUDIT_CANCEL-取消审核

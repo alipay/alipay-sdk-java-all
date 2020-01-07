@@ -189,23 +189,10 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         protocalMustParams.put(AlipayConstants.FORMAT, format);
         requestHolder.setProtocalMustParams(protocalMustParams);
 
-        if (AlipayConstants.SIGN_TYPE_RSA.equals(this.sign_type)) {
 
-            String signContent = AlipaySignature.getSignatureContent(requestHolder);
-
-            protocalMustParams.put(AlipayConstants.SIGN,
-                    AlipaySignature.rsaSign(signContent, privateKey, charset));
-
-        } else if (AlipayConstants.SIGN_TYPE_RSA2.equals(this.sign_type)) {
-
-            String signContent = AlipaySignature.getSignatureContent(requestHolder);
-
-            protocalMustParams.put(AlipayConstants.SIGN,
-                    AlipaySignature.rsa256Sign(signContent, privateKey, charset));
-
-        } else {
-            protocalMustParams.put(AlipayConstants.SIGN, "");
-        }
+        String signContent = AlipaySignature.getSignatureContent(requestHolder);
+        protocalMustParams.put(AlipayConstants.SIGN,
+                AlipaySignature.rsaSign(signContent, privateKey, charset, this.sign_type));
 
         AlipayMobilePublicMultiMediaDownloadResponse rsp = null;
         try {

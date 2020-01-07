@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集分宝发放接口
  *
  * @author auto create
- * @since 1.0, 2019-11-29 21:39:03
+ * @since 1.0, 2020-01-03 23:59:00
  */
 public class AlipayUserAlipaypointSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8659977928597693518L;
+	private static final long serialVersionUID = 2471832354241299235L;
 
 	/**
 	 * 签约商户的集分宝的预算库，扣除此预算库的集分宝发放给用户。会校验budgetcode和业务方appId的签约商户pid的关联关系，若无关则发放失败。

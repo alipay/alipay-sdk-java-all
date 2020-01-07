@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻信用承诺消费活动创建
  *
  * @author auto create
- * @since 1.0, 2018-11-22 22:02:26
+ * @since 1.0, 2019-12-21 12:06:43
  */
 public class ZhimaMerchantActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4861976894759556432L;
+	private static final long serialVersionUID = 4839721463492949396L;
 
 	/**
 	 * 活动名称，用于展示和区分活动，最大长度30

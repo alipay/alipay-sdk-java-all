@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批次下单接口
  *
  * @author auto create
- * @since 1.0, 2019-11-04 20:31:00
+ * @since 1.0, 2019-12-23 17:44:39
  */
 public class AlipayFundBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2286849835544534373L;
+	private static final long serialVersionUID = 6338186811965521953L;
 
 	/**
 	 * 业务场景。不同场景值不同，具体值联系支付宝确认。

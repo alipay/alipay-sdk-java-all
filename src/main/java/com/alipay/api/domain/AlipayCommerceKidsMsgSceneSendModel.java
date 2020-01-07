@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景（如消费/核身）消息上报接口
  *
  * @author auto create
- * @since 1.0, 2019-12-01 19:54:34
+ * @since 1.0, 2019-12-06 16:22:47
  */
 public class AlipayCommerceKidsMsgSceneSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1899743434784194888L;
+	private static final long serialVersionUID = 5369475394954951666L;
 
 	/**
 	 * 业务码
@@ -20,13 +20,14 @@ public class AlipayCommerceKidsMsgSceneSendModel extends AlipayObject {
 	private String bizCode;
 
 	/**
-	 * json数据格式，title：标题；child_name：孩子名称；school_name：学校名称；school_stdcode：学校外标；action：行为；link：isv详情链接；memo：辅助信息，比如有疑问请咨询xxxx（isv传），可为空，为空不展示；parent_userid：家长uid；child_userid：孩子uid
+	 * operator_name：刷脸行为人，如学生或教职工，必填；school_name：学校名称，必填；school_stdcode：学校外标，必填；link：如alipays://platformapi/startapp?appId=xxxx，必填；memo：备注信息，必填；target_userid：消息接入人uid，必填；operator_userid：刷脸行为人UID，必填；
+contact_info：联系信息，必填；
 	 */
 	@ApiField("biz_data")
 	private String bizData;
 
 	/**
-	 * 业务真实发生时间，如核身时间点，消费支付时间点
+	 * 业务真实发生时间，如核身时间点，消费支付时间点。格式要求yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("biz_time")
 	private String bizTime;
@@ -38,7 +39,7 @@ public class AlipayCommerceKidsMsgSceneSendModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 业务类型，确定数据使用场景。刷脸支付：facepay、核身门禁：entrance、核身考勤：sign
+	 * 业务类型，确定数据使用场景。就餐提醒：school_facepay、离校提醒：school_entrance_out、入校提醒：school_entrance_in，考勤提醒：school_sign
 	 */
 	@ApiField("template_code")
 	private String templateCode;

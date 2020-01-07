@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户定价入参价格结构列表
  *
  * @author auto create
- * @since 1.0, 2019-05-31 13:10:44
+ * @since 1.0, 2019-12-11 20:40:43
  */
 public class MakePriceCards extends AlipayObject {
 
-	private static final long serialVersionUID = 3873521264925517154L;
+	private static final long serialVersionUID = 1111961827651792455L;
 
 	/**
 	 * 定价对象原价

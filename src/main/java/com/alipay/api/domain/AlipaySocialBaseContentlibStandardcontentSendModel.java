@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部接入内容中台的标准内容接口
  *
  * @author auto create
- * @since 1.0, 2018-11-16 10:32:00
+ * @since 1.0, 2019-12-09 15:15:20
  */
 public class AlipaySocialBaseContentlibStandardcontentSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1827511218355676826L;
+	private static final long serialVersionUID = 7214671125377575564L;
 
 	/**
 	 * action_type为此次请求类型，值为枚举，有三种，publish(发布),depublish(撤回),heartbeat(心跳),具体对接请联系负责人,必填
@@ -22,7 +22,8 @@ public class AlipaySocialBaseContentlibStandardcontentSendModel extends AlipayOb
 	private String actionType;
 
 	/**
-	 * extInfo为扩展信息，json格式
+	 * extInfo为扩展信息，json格式。
+ugc和pgc区分：扩展字段中增加参数标识内容为PGC或UGC，格式为"createType":"ugc" 或者 "createType":"pgc"
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
@@ -100,7 +101,8 @@ public class AlipaySocialBaseContentlibStandardcontentSendModel extends AlipayOb
 	private String sourceThumbnails;
 
 	/**
-	 * source_title是来源方文章标题，当action_type是publish时，必填
+	 * source_title是来源方文章标题，当action_type是publish时，必填。
+针对没有标题的内容，如雪球传固定文案：雪球内容+(发布时间戳)
 	 */
 	@ApiField("source_title")
 	private String sourceTitle;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁档案人像管理平台人像比对服务
  *
  * @author auto create
- * @since 1.0, 2018-12-28 15:04:03
+ * @since 1.0, 2019-12-13 15:20:04
  */
 public class AlipayUserAntarchiveFaceIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7435169629727747417L;
+	private static final long serialVersionUID = 4835512972357294619L;
 
 	/**
 	 * 比对业务场景，用于计费和限流等功能

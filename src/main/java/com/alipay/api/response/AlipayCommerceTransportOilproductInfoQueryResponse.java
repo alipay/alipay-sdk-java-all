@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.oilproduct.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-25 16:22:41
+ * @since 1.0, 2019-12-24 11:15:37
  */
 public class AlipayCommerceTransportOilproductInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4427255252646762138L;
+	private static final long serialVersionUID = 7832143152857718533L;
 
 	/** 
 	 * 油站列表

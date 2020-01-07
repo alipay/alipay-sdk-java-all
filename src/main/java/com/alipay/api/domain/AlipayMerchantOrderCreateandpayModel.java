@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单创建并支付
  *
  * @author auto create
- * @since 1.0, 2019-11-13 12:04:32
+ * @since 1.0, 2019-12-25 13:21:43
  */
 public class AlipayMerchantOrderCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6794973254475592771L;
+	private static final long serialVersionUID = 7119285638317924968L;
 
 	/**
 	 * 不同的业务类型有不同的状态推进逻辑，同时对于支付的驱动有不同的处理方法。如阿里云的现金支付不需要订单驱动，阿里云的纯积分支付需要等待代扣成功消息才算支付成功。
@@ -43,7 +43,7 @@ public class AlipayMerchantOrderCreateandpayModel extends AlipayObject {
 	private List<GoodsInformation> goodsInfos;
 
 	/**
-	 * 订单金额，比如[{"type":"Money","amount":88.66},{"type":"FAMILY_POINT","amount":2000}]，代表订单中所有商品需要支付的总金额是88.66元+2000家庭积分。
+	 * 订单金额，比如[{"type":"MONEY","amount":88.66},{"type":"FAMILY_POINT","amount":2000}]，代表订单中所有商品需要支付的总金额是88.66元+2000家庭积分。
 	 */
 	@ApiListField("order_amount")
 	@ApiField("price_information")
@@ -67,6 +67,12 @@ public class AlipayMerchantOrderCreateandpayModel extends AlipayObject {
 	 */
 	@ApiField("seller")
 	private UserIdentity seller;
+
+	/**
+	 * service_type是基于biz_scene的，biz_scene+service_type唯一标识了一个业务场景
+	 */
+	@ApiField("service_type")
+	private String serviceType;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -122,6 +128,13 @@ public class AlipayMerchantOrderCreateandpayModel extends AlipayObject {
 	}
 	public void setSeller(UserIdentity seller) {
 		this.seller = seller;
+	}
+
+	public String getServiceType() {
+		return this.serviceType;
+	}
+	public void setServiceType(String serviceType) {
+		this.serviceType = serviceType;
 	}
 
 }

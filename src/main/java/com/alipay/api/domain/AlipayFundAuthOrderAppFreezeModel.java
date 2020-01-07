@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上资金授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2019-11-25 11:41:59
+ * @since 1.0, 2020-01-02 11:37:31
  */
 public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7369837227282444678L;
+	private static final long serialVersionUID = 5167324223176757396L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -27,7 +27,7 @@ public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 	private String enablePayChannels;
 
 	/**
-	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 1.授权业务对应的类目，key为category，value由支付宝分配，比如充电桩业务传 "CHARGE_PILE_CAR"； 2. 外部商户的门店编号，key为outStoreCode，可选； 3. 外部商户的门店简称，key为outStoreAlias，可选。
+	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 1.授权业务对应的类目，key为category，value由支付宝分配，比如充电桩业务传 "CHARGE_PILE_CAR"若使用信用预授权，则该值必传； 2. 外部商户的门店编号，key为outStoreCode，可选； 3. 外部商户的门店简称，key为outStoreAlias，可选; 4. 外部商户的门店简称，key为outStoreAlias，可选; 5.间联模式必须传入二级商户所属机构id，key为requestOrgId；6.信用服务Id，key为serviceId，信用场景下必传，具体值需要联系芝麻客服。
 	 */
 	@ApiField("extra_param")
 	private String extraParam;
@@ -42,7 +42,6 @@ identity_hash和alipay_user_id都是可选的，如果两个都传，则会先�
 
 	/**
 	 * 业务订单的简单描述，如商品名称等
-长度不超过100个字母或50个汉字
 	 */
 	@ApiField("order_title")
 	private String orderTitle;

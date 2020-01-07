@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信用承诺消费活动分页查询接口
  *
  * @author auto create
- * @since 1.0, 2018-12-27 15:49:12
+ * @since 1.0, 2019-12-21 12:06:54
  */
 public class ZhimaMerchantActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4431133664968196555L;
+	private static final long serialVersionUID = 5298519629115355676L;
 
 	/**
 	 * 活动号，来自活动创建接口[zhima.merchant.activity.create]

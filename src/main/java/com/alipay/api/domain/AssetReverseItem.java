@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消订单或者退货所需复杂类型。
  *
  * @author auto create
- * @since 1.0, 2019-01-04 17:19:32
+ * @since 1.0, 2019-12-23 15:04:01
  */
 public class AssetReverseItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6782172573274561276L;
+	private static final long serialVersionUID = 6165666872179642475L;
 
 	/**
 	 * 行为类型
@@ -48,6 +48,12 @@ public class AssetReverseItem extends AlipayObject {
 	 */
 	@ApiField("count")
 	private String count;
+
+	/**
+	 * 出货地址
+	 */
+	@ApiField("from_address")
+	private AssetDeliveryAddress fromAddress;
 
 	/**
 	 * 物料ID
@@ -103,6 +109,12 @@ public class AssetReverseItem extends AlipayObject {
 	@ApiField("reverse_type")
 	private String reverseType;
 
+	/**
+	 * 目标地址
+	 */
+	@ApiField("to_address")
+	private AssetDeliveryAddress toAddress;
+
 	public String getActionType() {
 		return this.actionType;
 	}
@@ -143,6 +155,13 @@ public class AssetReverseItem extends AlipayObject {
 	}
 	public void setCount(String count) {
 		this.count = count;
+	}
+
+	public AssetDeliveryAddress getFromAddress() {
+		return this.fromAddress;
+	}
+	public void setFromAddress(AssetDeliveryAddress fromAddress) {
+		this.fromAddress = fromAddress;
 	}
 
 	public String getItemId() {
@@ -206,6 +225,13 @@ public class AssetReverseItem extends AlipayObject {
 	}
 	public void setReverseType(String reverseType) {
 		this.reverseType = reverseType;
+	}
+
+	public AssetDeliveryAddress getToAddress() {
+		return this.toAddress;
+	}
+	public void setToAddress(AssetDeliveryAddress toAddress) {
+		this.toAddress = toAddress;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险产品资源项
  *
  * @author auto create
- * @since 1.0, 2019-07-30 17:11:17
+ * @since 1.0, 2019-12-09 15:22:25
  */
 public class InsProdResource extends AlipayObject {
 
-	private static final long serialVersionUID = 4662673365612959865L;
+	private static final long serialVersionUID = 2376514727791994559L;
 
 	/**
 	 * 资源项标识符;insMustKnow:投保须知,productTerm:产品条款,insAgreement:投保协议,insAgreementH5:投保协议H5,healthMustKnow:健康告知,announcement:重要告知,productFeature:产品特色,productFeatureDetail:产品特色详情,insTermUrl:保险条款链接,relativeFileUrl:相关文件链接,claimFlow:理赔流程,productImage:产品图片,productImageSmall:产品小图片,productIcon:产品图标,insDetail:投保详情,claimDetail:理赔详情,insDetailDigest:投保详情摘要,electronicPolicyUrl:电子保单地址.

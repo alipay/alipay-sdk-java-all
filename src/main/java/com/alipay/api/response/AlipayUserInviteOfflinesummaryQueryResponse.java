@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.invite.offlinesummary.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-27 15:13:50
+ * @since 1.0, 2019-12-17 11:39:44
  */
 public class AlipayUserInviteOfflinesummaryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7837151299186225748L;
+	private static final long serialVersionUID = 4341884182273592843L;
 
 	/** 
 	 * 线下拉新结算汇总数据列表

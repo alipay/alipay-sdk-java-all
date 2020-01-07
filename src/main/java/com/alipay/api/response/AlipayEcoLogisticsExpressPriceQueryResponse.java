@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoLogisticsExpressPriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3557322998111971553L;
+	private static final long serialVersionUID = 2212216237328467937L;
 
 	/** 
 	 * 续重价格（单位：元）

@@ -1,5 +1,6 @@
 package com.alipay.api.internal.util;
 
+import com.alipay.api.AlipayConstants;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import java.io.ByteArrayInputStream;
@@ -280,6 +281,42 @@ public class AntCertificationUtil {
             AlipayLogger.logBizError(("提取根证书失败"));
         }
         return rootCertSN;
+
+    }
+
+    /**
+     * 获取根证书序列号
+     *
+     * @param rootCertContent
+     * @return
+     */
+    public static String getRootCertSN(String rootCertContent,String signType) {
+        if(AlipayConstants.SIGN_TYPE_SM2.equals(signType)){
+            String rootCertSN = null;
+            try {
+                X509Certificate[] x509Certificates = readPemCertChain(rootCertContent);
+                MessageDigest md = MessageDigest.getInstance("MD5");
+                for (X509Certificate c : x509Certificates) {
+                    if (c.getSigAlgOID().startsWith("1.2.156.10197.1.501")) {
+                        md.update((c.getIssuerX500Principal().getName() + c.getSerialNumber()).getBytes());
+                        String certSN = new BigInteger(1, md.digest()).toString(16);
+                        //BigInteger会把0省略掉，需补全至32位
+                        certSN = fillMD5(certSN);
+                        if (StringUtils.isEmpty(rootCertSN)) {
+                            rootCertSN = certSN;
+                        } else {
+                            rootCertSN = rootCertSN + "_" + certSN;
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                AlipayLogger.logBizError(("提取根证书失败"));
+            }
+            return rootCertSN;
+
+        }else {
+            return getRootCertSN(rootCertContent);
+        }
 
     }
 

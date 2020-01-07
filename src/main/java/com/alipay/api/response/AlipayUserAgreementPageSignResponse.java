@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.page.sign response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-29 11:32:02
+ * @since 1.0, 2019-12-04 12:18:43
  */
 public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3673999752685898796L;
+	private static final long serialVersionUID = 2491155877846938255L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。（只有签约成功时才会返回）
@@ -32,6 +32,12 @@ public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/** 
+	 * 授信模式，取值：DEDUCT_HUAZHI-花芝GO。
+	 */
+	@ApiField("credit_auth_mode")
+	private String creditAuthMode;
 
 	/** 
 	 * 代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。
@@ -116,6 +122,13 @@ public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 	}
 	public String getAlipayUserId( ) {
 		return this.alipayUserId;
+	}
+
+	public void setCreditAuthMode(String creditAuthMode) {
+		this.creditAuthMode = creditAuthMode;
+	}
+	public String getCreditAuthMode( ) {
+		return this.creditAuthMode;
 	}
 
 	public void setExternalAgreementNo(String externalAgreementNo) {

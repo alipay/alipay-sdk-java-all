@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 闪蝶搭建中台模板信息
  *
  * @author auto create
- * @since 1.0, 2019-11-18 10:35:30
+ * @since 1.0, 2019-12-08 18:38:20
  */
 public class MorphoTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 8221843547739329965L;
+	private static final long serialVersionUID = 3569397934211794939L;
 
 	/**
 	 * 闪蝶搭建平台模板名称

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * isv智能导购线下交易数据同步
  *
  * @author auto create
- * @since 1.0, 2019-11-12 11:16:56
+ * @since 1.0, 2019-12-18 16:30:26
  */
 public class KoubeiServindustryPromoIntelligentguideSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7628925346779862715L;
+	private static final long serialVersionUID = 2197777632676172464L;
 
 	/**
 	 * 商户ID

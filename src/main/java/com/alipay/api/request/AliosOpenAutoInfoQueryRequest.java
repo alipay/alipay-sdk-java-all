@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alios.open.auto.info.query request
  * 
  * @author auto create
- * @since 1.0, 2019-10-12 15:30:56
+ * @since 1.0, 2019-12-17 12:20:59
  */
 public class AliosOpenAutoInfoQueryRequest implements AlipayRequest<AliosOpenAutoInfoQueryResponse> {
 

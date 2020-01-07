@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信用支付统一咨询接口
  *
  * @author auto create
- * @since 1.0, 2019-07-31 09:40:41
+ * @since 1.0, 2019-12-25 20:05:13
  */
 public class MybankCreditLoantradePayAssetConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8449723662191682571L;
+	private static final long serialVersionUID = 6832731918773166327L;
 
 	/**
 	 * 支付宝合作伙伴id

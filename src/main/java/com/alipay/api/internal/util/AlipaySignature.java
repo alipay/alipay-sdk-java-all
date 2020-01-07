@@ -5,34 +5,272 @@ package com.alipay.api.internal.util;
 
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayConstants;
+import com.alipay.api.internal.util.asymmetric.AsymmetricManager;
+import com.alipay.api.internal.util.asymmetric.RSAEncryptor;
 import com.alipay.api.internal.util.codec.Base64;
 
-import javax.crypto.Cipher;
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigInteger;
 import java.security.*;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.PKCS8EncodedKeySpec;
-import java.security.spec.X509EncodedKeySpec;
 import java.util.*;
 
 /**
- * @author runzhi
+ * @author junying.wjy
  */
 public class AlipaySignature {
+    /**
+     * 通用签名方法
+     *
+     * @param content    待签名内容
+     * @param privateKey 私钥
+     * @param charset    编码格式
+     * @param signType   签名类型：RSA、RSA2、SM2
+     * @return
+     * @throws AlipayApiException
+     */
+    public static String sign(String content, String privateKey, String charset,
+                              String signType) throws AlipayApiException {
+
+        return AsymmetricManager.getByName(signType).sign(content, charset, privateKey);
+    }
 
     /**
-     * RSA最大加密明文大小
+     * 通用签名方法
+     *
+     * @param params     待签名内容
+     * @param privateKey 私钥
+     * @param charset    编码格式
+     * @param signType   签名类型：RSA、RSA2、SM2
+     * @return
+     * @throws AlipayApiException
      */
-    private static final int MAX_ENCRYPT_BLOCK = 117;
+    public static String sign(Map<String, String> params, String privateKey, String charset,
+                              String signType) throws AlipayApiException {
+        String signContent = getSignContent(params);
+        return AsymmetricManager.getByName(signType).sign(signContent, charset, privateKey);
+    }
 
     /**
-     * RSA最大解密密文大小
+     * 密钥模式RSA、RSA2、SM2通用验签方法，主要用于支付接口的返回参数的验签比如：当面付，APP支付，手机网站支付，电脑网站支付
+     *
+     * @param params    待验签的从支付宝接收到的参数Map
+     * @param publicKey 支付宝公钥
+     * @param charset   参数内容编码集
+     * @param signType  指定采用的签名方式，RSA、RSA2、SM2
+     * @return true：验签通过；false：验签不通过
+     * @throws AlipayApiException
      */
-    private static final int MAX_DECRYPT_BLOCK = 128;
+    public static boolean verifyV1(Map<String, String> params, String publicKey,
+                                   String charset, String signType) throws AlipayApiException {
+        String sign = params.get("sign");
+        String content = getSignCheckContentV1(params);
+
+        return AsymmetricManager.getByName(signType).verify(content, charset, publicKey, sign);
+    }
+
+    /**
+     * 证书模式RSA、RSA2、SM2通用验签方法，主要用于支付接口的返回参数的验签比如：当面付，APP支付，手机网站支付，电脑网站支付
+     *
+     * @param params               待验签的从支付宝接收到的参数Map
+     * @param alipayPublicCertPath 支付宝公钥路径
+     * @param charset              参数内容编码集
+     * @param signType             指定采用的签名方式，RSA、RSA2、SM2
+     * @return true：验签通过；false：验签不通过
+     * @throws AlipayApiException
+     */
+    public static boolean certVerifyV1(Map<String, String> params, String alipayPublicCertPath,
+                                       String charset, String signType) throws AlipayApiException {
+        String publicKey = getAlipayPublicKey(alipayPublicCertPath);
+        return verifyV1(params, publicKey, charset, signType);
+    }
+
+    /**
+     * 密钥模式RSA、RSA2、SM2通用验签方法，主要是用于生活号相关的事件消息和口碑服务市场订购信息等发送到应用网关地址的异步信息的验签
+     *
+     * @param params    待验签的从支付宝接收到的参数Map
+     * @param publicKey 支付宝公钥
+     * @param charset   参数内容编码集
+     * @param signType  指定采用的签名方式，RSA、RSA2、SM2
+     * @return true：验签通过；false：验签不通过
+     * @throws AlipayApiException
+     */
+    public static boolean verifyV2(Map<String, String> params, String publicKey,
+                                   String charset, String signType) throws AlipayApiException {
+        String sign = params.get("sign");
+        String content = getSignCheckContentV2(params);
+
+        return AsymmetricManager.getByName(signType).verify(content, charset, publicKey, sign);
+    }
+
+    /**
+     * 证书模式RSA、RSA2、SM2通用验签方法，主要是用于生活号相关的事件消息和口碑服务市场订购信息等发送到应用网关地址的异步信息的验签
+     *
+     * @param params               待验签的从支付宝接收到的参数Map
+     * @param alipayPublicCertPath 支付宝公钥路径
+     * @param charset              参数内容编码集
+     * @param signType             指定采用的签名方式，RSA、RSA2、SM2
+     * @return true：验签通过；false：验签不通过
+     * @throws AlipayApiException
+     */
+    public static boolean certVerifyV2(Map<String, String> params, String alipayPublicCertPath,
+                                       String charset, String signType) throws AlipayApiException {
+        String publicKey = getAlipayPublicKey(alipayPublicCertPath);
+
+        return verifyV2(params, publicKey, charset, signType);
+    }
+
+    /**
+     * 密钥模式RSA、RSA2、SM2通用验签方法
+     *
+     * @param content   待验签字符串
+     * @param sign      签名
+     * @param publicKey 支付宝公钥
+     * @param charset   参数内容编码集
+     * @param signType  指定采用的签名方式，RSA、RSA2、SM2
+     * @return
+     * @throws AlipayApiException
+     */
+    public static boolean verify(String content, String sign, String publicKey, String charset,
+                                 String signType) throws AlipayApiException {
+
+        return AsymmetricManager.getByName(signType).verify(content, charset, publicKey, sign);
+    }
+
+    /**
+     * 证书模式RSA、RSA2、SM2通用验签方法
+     *
+     * @param content              待验签字符串
+     * @param sign                 签名
+     * @param alipayPublicCertPath 支付宝公钥路径
+     * @param charset              参数内容编码集
+     * @param signType             指定采用的签名方式，RSA、RSA2、SM2
+     * @return
+     * @throws AlipayApiException
+     */
+    public static boolean certVerify(String content, String sign, String alipayPublicCertPath, String charset,
+                                     String signType) throws AlipayApiException {
+        String publicKey = getAlipayPublicKey(alipayPublicCertPath);
+        return verify(content, sign, publicKey, charset, signType);
+    }
+
+    /**
+     * 公钥加密
+     *
+     * @param content   待加密内容
+     * @param publicKey 公钥
+     * @param charset   字符集，如UTF-8, GBK, GB2312
+     * @param signType  指定采用的签名方式，RSA、RSA2、SM2
+     * @return 密文内容
+     * @throws AlipayApiException
+     */
+    public static String encrypt(String content, String publicKey,
+                                 String charset, String signType) throws AlipayApiException {
+        return AsymmetricManager.getByName(signType).encrypt(content, charset, publicKey);
+    }
+
+    /**
+     * 私钥解密
+     *
+     * @param content    待解密内容
+     * @param privateKey 私钥
+     * @param charset    字符集，如UTF-8, GBK, GB2312
+     * @param signType   指定采用的签名方式，RSA、RSA2、SM2
+     * @return 明文内容
+     * @throws AlipayApiException
+     */
+    public static String decrypt(String content, String privateKey,
+                                 String charset, String signType) throws AlipayApiException {
+
+        return AsymmetricManager.getByName(signType).decrypt(content, charset, privateKey);
+    }
+
+    /**
+     * 加密并签名<br> <b>目前适用于公众号</b>
+     *
+     * @param bizContent      待加密、签名内容
+     * @param alipayPublicKey 支付宝公钥
+     * @param cusPrivateKey   商户私钥
+     * @param charset         字符集，如UTF-8, GBK, GB2312
+     * @param isEncrypt       是否加密，true-加密  false-不加密
+     * @param isSign          是否签名，true-签名  false-不签名
+     * @param signType        指定采用的签名方式，RSA、RSA2、SM2
+     * @return 加密、签名后xml内容字符串 <p> 返回示例： <alipay> <response>密文</response> <encryption_type>RSA</encryption_type> <sign>sign</sign>
+     * <sign_type>RSA</sign_type> </alipay> </p>
+     * @throws AlipayApiException
+     */
+    public static String encryptAndSign(String bizContent, String alipayPublicKey,
+                                        String cusPrivateKey, String charset, boolean isEncrypt,
+                                        boolean isSign, String signType) throws AlipayApiException {
+        StringBuilder sb = new StringBuilder();
+        if (StringUtils.isEmpty(charset)) {
+            charset = AlipayConstants.CHARSET_GBK;
+        }
+        sb.append("<?xml version=\"1.0\" encoding=\"" + charset + "\"?>");
+        if (isEncrypt) {// 加密
+            sb.append("<alipay>");
+            String encrypted = encrypt(bizContent, alipayPublicKey, charset, signType);
+            sb.append("<response>" + encrypted + "</response>");
+            sb.append("<encryption_type>RSA</encryption_type>");
+            if (isSign) {
+                String sign = sign(encrypted, cusPrivateKey, charset, signType);
+                sb.append("<sign>" + sign + "</sign>");
+                sb.append("<sign_type>RSA</sign_type>");
+            }
+            sb.append("</alipay>");
+        } else if (isSign) {// 不加密，但需要签名
+            sb.append("<alipay>");
+            sb.append("<response>" + bizContent + "</response>");
+            String sign = sign(bizContent, cusPrivateKey, charset, signType);
+            sb.append("<sign>" + sign + "</sign>");
+            sb.append("<sign_type>RSA</sign_type>");
+            sb.append("</alipay>");
+        } else {// 不加密，不加签
+            sb.append(bizContent);
+        }
+        return sb.toString();
+    }
+
+    /**
+     * 验签并解密 <p> <b>目前适用于公众号</b><br> params参数示例： <br>{
+     * <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16
+     * /IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD
+     * /ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD
+     * /s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP
+     * /jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
+     * <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7
+     * /mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=, sign_type=RSA, <br>charset=UTF-8 <br>} </p>
+     *
+     * @param params
+     * @param alipayPublicKey 支付宝公钥
+     * @param cusPrivateKey   商户私钥
+     * @param isCheckSign     是否验签
+     * @param isDecrypt       是否解密
+     * @param signType        指定采用的签名方式，RSA、RSA2、SM2
+     * @return 解密后明文，验签失败则异常抛出
+     * @throws AlipayApiException
+     */
+    public static String checkSignAndDecrypt(Map<String, String> params, String alipayPublicKey,
+                                             String cusPrivateKey, boolean isCheckSign,
+                                             boolean isDecrypt, String signType) throws AlipayApiException {
+        String charset = params.get("charset");
+        String bizContent = params.get("biz_content");
+        if (isCheckSign) {
+            if (!verifyV2(params, alipayPublicKey, charset, signType)) {
+                throw new AlipayApiException("rsaCheck failure:rsaParams=" + params);
+            }
+        }
+
+        if (isDecrypt) {
+            return decrypt(bizContent, cusPrivateKey, charset, signType);
+        }
+
+        return bizContent;
+    }
 
     public static String getSignatureContent(RequestParametersHolder requestHolder) {
         return getSignContent(getSortedMap(requestHolder));
@@ -181,17 +419,7 @@ public class AlipaySignature {
     public static String rsaSign(String content, String privateKey, String charset,
                                  String signType) throws AlipayApiException {
 
-        if (AlipayConstants.SIGN_TYPE_RSA.equals(signType)) {
-
-            return rsaSign(content, privateKey, charset);
-        } else if (AlipayConstants.SIGN_TYPE_RSA2.equals(signType)) {
-
-            return rsa256Sign(content, privateKey, charset);
-        } else {
-
-            throw new AlipayApiException("Sign Type is Not Support : signType=" + signType);
-        }
-
+        return AsymmetricManager.getByName(signType).sign(content, charset, privateKey);
     }
 
     /**
@@ -206,28 +434,7 @@ public class AlipaySignature {
     public static String rsa256Sign(String content, String privateKey,
                                     String charset) throws AlipayApiException {
 
-        try {
-            PrivateKey priKey = getPrivateKeyFromPKCS8(AlipayConstants.SIGN_TYPE_RSA,
-                    new ByteArrayInputStream(privateKey.getBytes()));
-
-            Signature signature = Signature
-                    .getInstance(AlipayConstants.SIGN_SHA256RSA_ALGORITHMS);
-
-            signature.initSign(priKey);
-
-            if (StringUtils.isEmpty(charset)) {
-                signature.update(content.getBytes());
-            } else {
-                signature.update(content.getBytes(charset));
-            }
-
-            byte[] signed = signature.sign();
-
-            return new String(Base64.encodeBase64(signed));
-        } catch (Exception e) {
-            throw new AlipayApiException("RSAcontent = " + content + "; charset = " + charset, e);
-        }
-
+        return AsymmetricManager.getByName("RSA2").sign(content, charset, privateKey);
     }
 
     /**
@@ -241,29 +448,8 @@ public class AlipaySignature {
      */
     public static String rsaSign(String content, String privateKey,
                                  String charset) throws AlipayApiException {
-        try {
-            PrivateKey priKey = getPrivateKeyFromPKCS8(AlipayConstants.SIGN_TYPE_RSA,
-                    new ByteArrayInputStream(privateKey.getBytes()));
 
-            Signature signature = Signature
-                    .getInstance(AlipayConstants.SIGN_ALGORITHMS);
-
-            signature.initSign(priKey);
-
-            if (StringUtils.isEmpty(charset)) {
-                signature.update(content.getBytes());
-            } else {
-                signature.update(content.getBytes(charset));
-            }
-
-            byte[] signed = signature.sign();
-
-            return new String(Base64.encodeBase64(signed));
-        } catch (InvalidKeySpecException ie) {
-            throw new AlipayApiException("RSA私钥格式不正确，请检查是否正确配置了PKCS8格式的私钥", ie);
-        } catch (Exception e) {
-            throw new AlipayApiException("RSAcontent = " + content + "; charset = " + charset, e);
-        }
+        return AsymmetricManager.getByName("RSA").sign(content, charset, privateKey);
     }
 
     public static String rsaSign(Map<String, String> params, String privateKey,
@@ -276,17 +462,8 @@ public class AlipaySignature {
 
     public static PrivateKey getPrivateKeyFromPKCS8(String algorithm,
                                                     InputStream ins) throws Exception {
-        if (ins == null || StringUtils.isEmpty(algorithm)) {
-            return null;
-        }
 
-        KeyFactory keyFactory = KeyFactory.getInstance(algorithm);
-
-        byte[] encodedKey = StreamUtil.readText(ins).getBytes();
-
-        encodedKey = Base64.decodeBase64(encodedKey);
-
-        return keyFactory.generatePrivate(new PKCS8EncodedKeySpec(encodedKey));
+        return RSAEncryptor.getPrivateKeyFromPKCS8(algorithm, ins);
     }
 
     public static String getSignCheckContentV1(Map<String, String> params) {
@@ -409,19 +586,7 @@ public class AlipaySignature {
     public static boolean rsaCheck(String content, String sign, String publicKey, String charset,
                                    String signType) throws AlipayApiException {
 
-        if (AlipayConstants.SIGN_TYPE_RSA.equals(signType)) {
-
-            return rsaCheckContent(content, sign, publicKey, charset);
-
-        } else if (AlipayConstants.SIGN_TYPE_RSA2.equals(signType)) {
-
-            return rsa256CheckContent(content, sign, publicKey, charset);
-
-        } else {
-
-            throw new AlipayApiException("Sign Type is Not Support : signType=" + signType);
-        }
-
+        return AsymmetricManager.getByName(signType).verify(content, charset, publicKey, sign);
     }
 
     public static boolean rsaCertCheck(String content, String sign, String alipayPublicCertPath, String charset,
@@ -432,82 +597,31 @@ public class AlipaySignature {
 
     public static boolean rsa256CheckContent(String content, String sign, String publicKey,
                                              String charset) throws AlipayApiException {
-        try {
-            PublicKey pubKey = getPublicKeyFromX509("RSA",
-                    new ByteArrayInputStream(publicKey.getBytes()));
 
-            Signature signature = Signature
-                    .getInstance(AlipayConstants.SIGN_SHA256RSA_ALGORITHMS);
-
-            signature.initVerify(pubKey);
-
-            if (StringUtils.isEmpty(charset)) {
-                signature.update(content.getBytes());
-            } else {
-                signature.update(content.getBytes(charset));
-            }
-
-            return signature.verify(Base64.decodeBase64(sign.getBytes()));
-        } catch (Exception e) {
-            throw new AlipayApiException(
-                    "RSAcontent = " + content + ",sign=" + sign + ",charset = " + charset, e);
-        }
+        return AsymmetricManager.getByName("RSA2").verify(content, charset, publicKey, sign);
     }
 
     public static boolean rsaCheckContent(String content, String sign, String publicKey,
                                           String charset) throws AlipayApiException {
-        try {
-            PublicKey pubKey = getPublicKeyFromX509("RSA",
-                    new ByteArrayInputStream(publicKey.getBytes()));
 
-            Signature signature = Signature
-                    .getInstance(AlipayConstants.SIGN_ALGORITHMS);
-
-            signature.initVerify(pubKey);
-
-            if (StringUtils.isEmpty(charset)) {
-                signature.update(content.getBytes());
-            } else {
-                signature.update(content.getBytes(charset));
-            }
-
-            return signature.verify(Base64.decodeBase64(sign.getBytes()));
-        } catch (Exception e) {
-            throw new AlipayApiException(
-                    "RSAcontent = " + content + ",sign=" + sign + ",charset = " + charset, e);
-        }
+        return AsymmetricManager.getByName("RSA").verify(content, charset, publicKey, sign);
     }
 
     public static PublicKey getPublicKeyFromX509(String algorithm,
                                                  InputStream ins) throws Exception {
-        KeyFactory keyFactory = KeyFactory.getInstance(algorithm);
 
-        StringWriter writer = new StringWriter();
-        StreamUtil.io(new InputStreamReader(ins), writer);
-
-        byte[] encodedKey = writer.toString().getBytes();
-
-        encodedKey = Base64.decodeBase64(encodedKey);
-
-        return keyFactory.generatePublic(new X509EncodedKeySpec(encodedKey));
+        return RSAEncryptor.getPublicKeyFromX509(algorithm, ins);
     }
 
     /**
-     * 验签并解密
-     * <p>
-     * <b>目前适用于公众号</b><br>
-     * params参数示例：
-     * <br>{
+     * 验签并解密 <p> <b>目前适用于公众号</b><br> params参数示例： <br>{
      * <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16
      * /IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD
      * /ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD
      * /s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP
      * /jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
      * <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7
-     * /mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=, sign_type=RSA,
-     * <br>charset=UTF-8
-     * <br>}
-     * </p>
+     * /mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=, sign_type=RSA, <br>charset=UTF-8 <br>} </p>
      *
      * @param params
      * @param alipayPublicKey 支付宝公钥
@@ -536,51 +650,7 @@ public class AlipaySignature {
     }
 
     /**
-     * 验签并解密
-     * <p>
-     * <b>目前适用于公众号</b><br>
-     * params参数示例：
-     * <br>{
-     * <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16
-     * /IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD
-     * /ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD
-     * /s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP
-     * /jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
-     * <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7
-     * /mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=, sign_type=RSA,
-     * <br>charset=UTF-8
-     * <br>}
-     * </p>
-     *
-     * @param params
-     * @param alipayPublicKey 支付宝公钥
-     * @param cusPrivateKey   商户私钥
-     * @param isCheckSign     是否验签
-     * @param isDecrypt       是否解密
-     * @return 解密后明文，验签失败则异常抛出
-     * @throws AlipayApiException
-     */
-    public static String checkSignAndDecrypt(Map<String, String> params, String alipayPublicKey,
-                                             String cusPrivateKey, boolean isCheckSign,
-                                             boolean isDecrypt, String signType) throws AlipayApiException {
-        String charset = params.get("charset");
-        String bizContent = params.get("biz_content");
-        if (isCheckSign) {
-            if (!rsaCheckV2(params, alipayPublicKey, charset, signType)) {
-                throw new AlipayApiException("rsaCheck failure:rsaParams=" + params);
-            }
-        }
-
-        if (isDecrypt) {
-            return rsaDecrypt(bizContent, cusPrivateKey, charset);
-        }
-
-        return bizContent;
-    }
-
-    /**
-     * 加密并签名<br>
-     * <b>目前适用于公众号</b>
+     * 加密并签名<br> <b>目前适用于公众号</b>
      *
      * @param bizContent      待加密、签名内容
      * @param alipayPublicKey 支付宝公钥
@@ -588,16 +658,8 @@ public class AlipaySignature {
      * @param charset         字符集，如UTF-8, GBK, GB2312
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
-     * @return 加密、签名后xml内容字符串
-     * <p>
-     * 返回示例：
-     * <alipay>
-     * <response>密文</response>
-     * <encryption_type>RSA</encryption_type>
-     * <sign>sign</sign>
-     * <sign_type>RSA</sign_type>
-     * </alipay>
-     * </p>
+     * @return 加密、签名后xml内容字符串 <p> 返回示例： <alipay> <response>密文</response> <encryption_type>RSA</encryption_type> <sign>sign</sign>
+     * <sign_type>RSA</sign_type> </alipay> </p>
      * @throws AlipayApiException
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
@@ -633,64 +695,6 @@ public class AlipaySignature {
     }
 
     /**
-     * 加密并签名<br>
-     * <b>目前适用于公众号</b>
-     *
-     * @param bizContent      待加密、签名内容
-     * @param alipayPublicKey 支付宝公钥
-     * @param cusPrivateKey   商户私钥
-     * @param charset         字符集，如UTF-8, GBK, GB2312
-     * @param isEncrypt       是否加密，true-加密  false-不加密
-     * @param isSign          是否签名，true-签名  false-不签名
-     * @return 加密、签名后xml内容字符串
-     * <p>
-     * 返回示例：
-     * <alipay>
-     * <response>密文</response>
-     * <encryption_type>RSA</encryption_type>
-     * <sign>sign</sign>
-     * <sign_type>RSA</sign_type>
-     * </alipay>
-     * </p>
-     * @throws AlipayApiException
-     */
-    public static String encryptAndSign(String bizContent, String alipayPublicKey,
-                                        String cusPrivateKey, String charset, boolean isEncrypt,
-                                        boolean isSign, String signType) throws AlipayApiException {
-        StringBuilder sb = new StringBuilder();
-        if (StringUtils.isEmpty(charset)) {
-            charset = AlipayConstants.CHARSET_GBK;
-        }
-        sb.append("<?xml version=\"1.0\" encoding=\"" + charset + "\"?>");
-        if (isEncrypt) {// 加密
-            sb.append("<alipay>");
-            String encrypted = rsaEncrypt(bizContent, alipayPublicKey, charset);
-            sb.append("<response>" + encrypted + "</response>");
-            sb.append("<encryption_type>RSA</encryption_type>");
-            if (isSign) {
-                String sign = rsaSign(encrypted, cusPrivateKey, charset, signType);
-                sb.append("<sign>" + sign + "</sign>");
-                sb.append("<sign_type>");
-                sb.append(signType);
-                sb.append("</sign_type>");
-            }
-            sb.append("</alipay>");
-        } else if (isSign) {// 不加密，但需要签名
-            sb.append("<alipay>");
-            sb.append("<response>" + bizContent + "</response>");
-            String sign = rsaSign(bizContent, cusPrivateKey, charset, signType);
-            sb.append("<sign>" + sign + "</sign>");
-            sb.append("<sign_type>");
-            sb.append(signType);
-            sb.append("</sign_type>");
-            sb.append("</alipay>");
-        } else {// 不加密，不加签
-            sb.append(bizContent);
-        }
-        return sb.toString();
-    }
-
-    /**
      * 公钥加密
      *
      * @param content   待加密内容
@@ -701,38 +705,7 @@ public class AlipaySignature {
      */
     public static String rsaEncrypt(String content, String publicKey,
                                     String charset) throws AlipayApiException {
-        try {
-            PublicKey pubKey = getPublicKeyFromX509(AlipayConstants.SIGN_TYPE_RSA,
-                    new ByteArrayInputStream(publicKey.getBytes()));
-            Cipher cipher = Cipher.getInstance(AlipayConstants.SIGN_TYPE_RSA);
-            cipher.init(Cipher.ENCRYPT_MODE, pubKey);
-            byte[] data = StringUtils.isEmpty(charset) ? content.getBytes()
-                    : content.getBytes(charset);
-            int inputLen = data.length;
-            ByteArrayOutputStream out = new ByteArrayOutputStream();
-            int offSet = 0;
-            byte[] cache;
-            int i = 0;
-            // 对数据分段加密
-            while (inputLen - offSet > 0) {
-                if (inputLen - offSet > MAX_ENCRYPT_BLOCK) {
-                    cache = cipher.doFinal(data, offSet, MAX_ENCRYPT_BLOCK);
-                } else {
-                    cache = cipher.doFinal(data, offSet, inputLen - offSet);
-                }
-                out.write(cache, 0, cache.length);
-                i++;
-                offSet = i * MAX_ENCRYPT_BLOCK;
-            }
-            byte[] encryptedData = Base64.encodeBase64(out.toByteArray());
-            out.close();
-
-            return StringUtils.isEmpty(charset) ? new String(encryptedData)
-                    : new String(encryptedData, charset);
-        } catch (Exception e) {
-            throw new AlipayApiException("EncryptContent = " + content + ",charset = " + charset,
-                    e);
-        }
+        return AsymmetricManager.getByName("RSA").encrypt(content, charset, publicKey);
     }
 
     /**
@@ -746,38 +719,8 @@ public class AlipaySignature {
      */
     public static String rsaDecrypt(String content, String privateKey,
                                     String charset) throws AlipayApiException {
-        try {
-            PrivateKey priKey = getPrivateKeyFromPKCS8(AlipayConstants.SIGN_TYPE_RSA,
-                    new ByteArrayInputStream(privateKey.getBytes()));
-            Cipher cipher = Cipher.getInstance(AlipayConstants.SIGN_TYPE_RSA);
-            cipher.init(Cipher.DECRYPT_MODE, priKey);
-            byte[] encryptedData = StringUtils.isEmpty(charset)
-                    ? Base64.decodeBase64(content.getBytes())
-                    : Base64.decodeBase64(content.getBytes(charset));
-            int inputLen = encryptedData.length;
-            ByteArrayOutputStream out = new ByteArrayOutputStream();
-            int offSet = 0;
-            byte[] cache;
-            int i = 0;
-            // 对数据分段解密
-            while (inputLen - offSet > 0) {
-                if (inputLen - offSet > MAX_DECRYPT_BLOCK) {
-                    cache = cipher.doFinal(encryptedData, offSet, MAX_DECRYPT_BLOCK);
-                } else {
-                    cache = cipher.doFinal(encryptedData, offSet, inputLen - offSet);
-                }
-                out.write(cache, 0, cache.length);
-                i++;
-                offSet = i * MAX_DECRYPT_BLOCK;
-            }
-            byte[] decryptedData = out.toByteArray();
-            out.close();
 
-            return StringUtils.isEmpty(charset) ? new String(decryptedData)
-                    : new String(decryptedData, charset);
-        } catch (Exception e) {
-            throw new AlipayApiException("EncodeContent = " + content + ",charset = " + charset, e);
-        }
+        return AsymmetricManager.getByName("RSA").decrypt(content, charset, privateKey);
     }
 
     /**
@@ -791,7 +734,7 @@ public class AlipaySignature {
         InputStream inputStream = null;
         try {
             inputStream = new FileInputStream(certPath);
-            CertificateFactory cf = CertificateFactory.getInstance("X.509");
+            CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
             X509Certificate cert = (X509Certificate) cf.generateCertificate(inputStream);
             MessageDigest md = MessageDigest.getInstance("MD5");
             md.update((cert.getIssuerX500Principal().getName() + cert.getSerialNumber()).getBytes());
@@ -800,6 +743,8 @@ public class AlipaySignature {
             certSN = fillMD5(certSN);
             return certSN;
 
+        } catch (NoSuchProviderException e) {
+            throw new AlipayApiException(e);
         } catch (NoSuchAlgorithmException e) {
             throw new AlipayApiException(e);
         } catch (IOException e) {
@@ -832,10 +777,12 @@ public class AlipaySignature {
         InputStream inputStream = null;
         try {
             inputStream = new FileInputStream(alipayPublicCertPath);
-            CertificateFactory cf = CertificateFactory.getInstance("X.509");
+            CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
             X509Certificate cert = (X509Certificate) cf.generateCertificate(inputStream);
             PublicKey publicKey = cert.getPublicKey();
             return Base64.encodeBase64String(publicKey.getEncoded());
+        } catch (NoSuchProviderException e) {
+            throw new AlipayApiException(e);
         } catch (IOException e) {
             throw new AlipayApiException(e);
         } catch (CertificateException e) {
@@ -850,4 +797,5 @@ public class AlipaySignature {
             }
         }
     }
+
 }

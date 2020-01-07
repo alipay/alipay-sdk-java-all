@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.charity.forest.query request
  * 
  * @author auto create
- * @since 1.0, 2019-10-11 12:04:45
+ * @since 1.0, 2019-12-26 21:06:34
  */
 public class AlipayUserCharityForestQueryRequest implements AlipayRequest<AlipayUserCharityForestQueryResponse> {
 

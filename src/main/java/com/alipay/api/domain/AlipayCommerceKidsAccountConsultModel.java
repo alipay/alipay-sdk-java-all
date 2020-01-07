@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 儿童账户咨询
  *
  * @author auto create
- * @since 1.0, 2019-11-28 23:14:37
+ * @since 1.0, 2019-12-05 16:29:59
  */
 public class AlipayCommerceKidsAccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7375944855221156479L;
+	private static final long serialVersionUID = 5469332464511958148L;
 
 	/**
 	 * 与child_cert_type对应，如果child_cert_type为IDENTITY_CARD，对应的取值为身份证号
@@ -30,6 +30,12 @@ public class AlipayCommerceKidsAccountConsultModel extends AlipayObject {
 	 */
 	@ApiField("info_source")
 	private InfoSource infoSource;
+
+	/**
+	 * 当前操作者支付宝userId
+	 */
+	@ApiField("operator_uid")
+	private String operatorUid;
 
 	/**
 	 * 家长支付宝userId，用于查询与该家长关联的孩子
@@ -62,6 +68,13 @@ public class AlipayCommerceKidsAccountConsultModel extends AlipayObject {
 	}
 	public void setInfoSource(InfoSource infoSource) {
 		this.infoSource = infoSource;
+	}
+
+	public String getOperatorUid() {
+		return this.operatorUid;
+	}
+	public void setOperatorUid(String operatorUid) {
+		this.operatorUid = operatorUid;
 	}
 
 	public String getParentUid() {

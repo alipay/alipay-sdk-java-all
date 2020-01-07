@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.wufu.card.receive response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-29 17:49:38
+ * @since 1.0, 2019-12-20 16:18:21
  */
 public class AlipayFundCouponWufuCardReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7298741687439632344L;
+	private static final long serialVersionUID = 5265539856868645397L;
+
+	/** 
+	 * 福卡id，全局唯一
+	 */
+	@ApiField("card_id")
+	private String cardId;
 
 	/** 
 	 * 福卡类型:
@@ -24,6 +30,13 @@ public class AlipayFundCouponWufuCardReceiveResponse extends AlipayResponse {
 	 */
 	@ApiField("card_type")
 	private String cardType;
+
+	public void setCardId(String cardId) {
+		this.cardId = cardId;
+	}
+	public String getCardId( ) {
+		return this.cardId;
+	}
 
 	public void setCardType(String cardType) {
 		this.cardType = cardType;

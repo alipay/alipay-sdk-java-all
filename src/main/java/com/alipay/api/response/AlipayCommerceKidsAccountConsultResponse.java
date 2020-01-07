@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.ChildCertInfo;
+import com.alipay.api.domain.NextUrl;
 import com.alipay.api.domain.RelationVO;
 
 import com.alipay.api.AlipayResponse;
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.kids.account.consult response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-28 23:14:37
+ * @since 1.0, 2019-12-05 16:30:11
  */
 public class AlipayCommerceKidsAccountConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1339744559697886159L;
+	private static final long serialVersionUID = 7498915752965454679L;
 
 	/** 
 	 * 是否满足开户条件
@@ -29,6 +30,12 @@ public class AlipayCommerceKidsAccountConsultResponse extends AlipayResponse {
 	 */
 	@ApiField("child_info")
 	private ChildCertInfo childInfo;
+
+	/** 
+	 * 下一步跳转url
+	 */
+	@ApiField("next_url")
+	private NextUrl nextUrl;
 
 	/** 
 	 * 关系数量上限
@@ -55,6 +62,13 @@ public class AlipayCommerceKidsAccountConsultResponse extends AlipayResponse {
 	}
 	public ChildCertInfo getChildInfo( ) {
 		return this.childInfo;
+	}
+
+	public void setNextUrl(NextUrl nextUrl) {
+		this.nextUrl = nextUrl;
+	}
+	public NextUrl getNextUrl( ) {
+		return this.nextUrl;
 	}
 
 	public void setRelationLimit(Long relationLimit) {

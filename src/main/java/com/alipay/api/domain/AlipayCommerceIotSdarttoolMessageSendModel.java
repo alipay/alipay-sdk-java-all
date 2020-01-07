@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 打印消息发送
  *
  * @author auto create
- * @since 1.0, 2019-11-25 14:06:39
+ * @since 1.0, 2019-12-25 18:20:11
  */
 public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2181125664396636418L;
+	private static final long serialVersionUID = 3887532662769233933L;
 
 	/**
 	 * 当离线消息挤压太多时，若设备上线将获取所有未过期的消息。推送太多消息对设备体验不太好，所以此字段用于设置消息是必达。当消息不是必达的
@@ -20,13 +20,28 @@ public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 	private Boolean biDa;
 
 	/**
+	 * 设备查询条件类型 supplierid+sn : (SUPPLIERID_SN)
+itemid + sn: ITEMID_SN
+	 */
+	@ApiField("device_query_type")
+	private String deviceQueryType;
+
+	/**
 	 * 是否即时消息; true-校验设备是否在线，false-不校验设备是否在线
 	 */
 	@ApiField("immediate_msg")
 	private Boolean immediateMsg;
 
 	/**
-	 * 消息内容，需要对内容进行gzip压缩
+	 * 产品ID
+	 */
+	@ApiField("item_id")
+	private String itemId;
+
+	/**
+	 * 根据消息类型有不同的消息模板，传入的消息内容会是多个参数如云打印
+{"contentParams":["打印内容"],"target":"打印编号-可选默认第一个","instructionFormat":"template或cmd"}
+cloud_print: 消息内容详见: https://alipay.open.taobao.com/docs/doc.htm?spm=a219a.7629140.0.0.46cf4b70bQj0aZ&treeId=662&articleId=117980&docType=1#s1
 	 */
 	@ApiField("msg_content")
 	private String msgContent;
@@ -50,7 +65,8 @@ public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 	private Long msgPriority;
 
 	/**
-	 * 消息类型 xpaas_print: 小程序打印
+	 * 消息类型
+云打印: cloud_print
 	 */
 	@ApiField("msg_type")
 	private String msgType;
@@ -74,11 +90,25 @@ public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 		this.biDa = biDa;
 	}
 
+	public String getDeviceQueryType() {
+		return this.deviceQueryType;
+	}
+	public void setDeviceQueryType(String deviceQueryType) {
+		this.deviceQueryType = deviceQueryType;
+	}
+
 	public Boolean getImmediateMsg() {
 		return this.immediateMsg;
 	}
 	public void setImmediateMsg(Boolean immediateMsg) {
 		this.immediateMsg = immediateMsg;
+	}
+
+	public String getItemId() {
+		return this.itemId;
+	}
+	public void setItemId(String itemId) {
+		this.itemId = itemId;
 	}
 
 	public String getMsgContent() {

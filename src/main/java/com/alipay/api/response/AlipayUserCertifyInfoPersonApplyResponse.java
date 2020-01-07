@@ -1,0 +1,20 @@
+package com.alipay.api.response;
+
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.user.certify.info.person.apply response.
+ * 
+ * @author auto create
+ * @since 1.0, 2019-12-04 19:54:58
+ */
+public class AlipayUserCertifyInfoPersonApplyResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 8265918296527598186L;
+
+	
+
+	
+
+}

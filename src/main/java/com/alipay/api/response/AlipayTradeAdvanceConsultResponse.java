@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.advance.consult response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-29 11:33:11
+ * @since 1.0, 2019-12-03 14:57:08
  */
 public class AlipayTradeAdvanceConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7395548599468887676L;
+	private static final long serialVersionUID = 6265683229124845532L;
 
 	/** 
 	 * true 代表当前时间点，用户允许垫资
@@ -35,6 +35,12 @@ false 代表当前时间，用户不允许垫资
 	 */
 	@ApiField("result_message")
 	private String resultMessage;
+
+	/** 
+	 * 订单风险评估等级，在单笔订单风险预评估时返回。当基础风险校验通过时，可通过该值获取业务风险评估等级。取值：2-高风险；1-低风险。
+	 */
+	@ApiField("risk_level")
+	private String riskLevel;
 
 	/** 
 	 * 用户剩余的总待还金额，无论当前用户是否允许垫资，都会返回改属性
@@ -74,6 +80,13 @@ false 代表当前时间，用户不允许垫资
 	}
 	public String getResultMessage( ) {
 		return this.resultMessage;
+	}
+
+	public void setRiskLevel(String riskLevel) {
+		this.riskLevel = riskLevel;
+	}
+	public String getRiskLevel( ) {
+		return this.riskLevel;
 	}
 
 	public void setWaitRepaymentAmount(String waitRepaymentAmount) {

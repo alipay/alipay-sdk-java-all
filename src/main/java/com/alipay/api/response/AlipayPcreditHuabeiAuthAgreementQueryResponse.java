@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-15 11:20:49
+ * @since 1.0, 2019-12-09 10:39:17
  */
 public class AlipayPcreditHuabeiAuthAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4435353557286398762L;
+	private static final long serialVersionUID = 6493128712212324148L;
 
 	/** 
 	 * 协议名称
@@ -62,6 +62,12 @@ public class AlipayPcreditHuabeiAuthAgreementQueryResponse extends AlipayRespons
 	 */
 	@ApiField("gmt_unsign")
 	private Date gmtUnsign;
+
+	/** 
+	 * 外部业务类型，用于区分本次业务交互在商户侧具体的业务类别，提供给商家进行特定逻辑的处理
+	 */
+	@ApiField("out_biz_type")
+	private String outBizType;
 
 	/** 
 	 * 外部签约号，由商户提供，花芝轻会员协议中标识用户的唯一签约号（确保在商户系统中唯一）。由商户签约时传入，最终返回给商户。
@@ -129,6 +135,13 @@ public class AlipayPcreditHuabeiAuthAgreementQueryResponse extends AlipayRespons
 	}
 	public Date getGmtUnsign( ) {
 		return this.gmtUnsign;
+	}
+
+	public void setOutBizType(String outBizType) {
+		this.outBizType = outBizType;
+	}
+	public String getOutBizType( ) {
+		return this.outBizType;
 	}
 
 	public void setOutSignNo(String outSignNo) {

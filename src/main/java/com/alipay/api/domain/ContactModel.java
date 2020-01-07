@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 三方平台代理签约接口中的联系人对象
  *
  * @author auto create
- * @since 1.0, 2018-07-02 13:24:13
+ * @since 1.0, 2019-12-09 10:40:46
  */
 public class ContactModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3455134527276481994L;
+	private static final long serialVersionUID = 6541782723748391621L;
 
 	/**
 	 * 联系人邮箱

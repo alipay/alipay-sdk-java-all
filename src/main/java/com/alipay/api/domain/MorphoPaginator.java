@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 闪蝶分页查询分页信息
  *
  * @author auto create
- * @since 1.0, 2019-11-18 10:32:26
+ * @since 1.0, 2019-12-10 16:02:33
  */
 public class MorphoPaginator extends AlipayObject {
 
-	private static final long serialVersionUID = 7573381591583119845L;
+	private static final long serialVersionUID = 7426364751121578632L;
 
 	/**
 	 * 总页数

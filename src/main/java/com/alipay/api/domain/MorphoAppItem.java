@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 闪蝶应用列表返回数据项
  *
  * @author auto create
- * @since 1.0, 2019-11-18 10:23:34
+ * @since 1.0, 2019-12-10 16:02:33
  */
 public class MorphoAppItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6695178827152227272L;
+	private static final long serialVersionUID = 7868983268589257394L;
 
 	/**
 	 * 应用更新时间

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部链路小程序构建并提审
  *
  * @author auto create
- * @since 1.0, 2019-11-06 15:18:04
+ * @since 1.0, 2019-12-18 10:15:13
  */
 public class AlipayOpenMiniInnerversionBuildauditSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6653796529978384711L;
+	private static final long serialVersionUID = 3487932744898918985L;
 
 	/**
 	 * 小程序类目，可不传，不传取基础信息中的小程序类目
@@ -114,6 +114,12 @@ public class AlipayOpenMiniInnerversionBuildauditSubmitModel extends AlipayObjec
 	 */
 	@ApiField("service_phone")
 	private String servicePhone;
+
+	/**
+	 * 特殊资质图片地址列表，逗号分割,
+	 */
+	@ApiField("special_license_pic_list")
+	private String specialLicensePicList;
 
 	/**
 	 * 小程序模板ID
@@ -250,6 +256,13 @@ public class AlipayOpenMiniInnerversionBuildauditSubmitModel extends AlipayObjec
 	}
 	public void setServicePhone(String servicePhone) {
 		this.servicePhone = servicePhone;
+	}
+
+	public String getSpecialLicensePicList() {
+		return this.specialLicensePicList;
+	}
+	public void setSpecialLicensePicList(String specialLicensePicList) {
+		this.specialLicensePicList = specialLicensePicList;
 	}
 
 	public String getTemplateId() {

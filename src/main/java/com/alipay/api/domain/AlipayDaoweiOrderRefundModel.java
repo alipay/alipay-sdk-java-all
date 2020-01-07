@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDaoweiOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6215231565172641671L;
+	private static final long serialVersionUID = 5337694641893664442L;
 
 	/**
 	 * 退款操作备注信息，用于详述退款单原因（使用该接口，必须要详细说明退款的原因），必填，长度不超过2000字符

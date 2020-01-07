@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取承诺消费活动详情页
  *
  * @author auto create
- * @since 1.0, 2019-03-25 16:47:50
+ * @since 1.0, 2019-12-21 12:05:44
  */
 public class ZhimaMerchantActivityDetailGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7679826216471234717L;
+	private static final long serialVersionUID = 5536675184467683224L;
 
 	/**
 	 * 活动号，唯一标识一个活动。

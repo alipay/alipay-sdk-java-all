@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 教育缴费账单发送接口
  *
  * @author auto create
- * @since 1.0, 2018-09-19 11:07:49
+ * @since 1.0, 2019-12-26 14:57:27
  */
 public class AlipayEcoEduKtBillingSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8617283186549549381L;
+	private static final long serialVersionUID = 3878275436835274281L;
 
 	/**
 	 * 总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]，
@@ -62,6 +62,14 @@ public class AlipayEcoEduKtBillingSendModel extends AlipayObject {
 	private String endEnable;
 
 	/**
+	 * 业务拓展字段
+目前支持下面字段
+已签约分账产品用户 royalty_amount 分账金额，分账收入户PID trans_in_pid
+	 */
+	@ApiField("ext_info")
+	private BillSendExtInfo extInfo;
+
+	/**
 	 * 缴费截止时间，格式"yyyy-MM-dd HH:mm:ss"，日期要大于当前时间。请注意，过期时间不宜设置过短。
 	 */
 	@ApiField("gmt_end")
@@ -92,7 +100,7 @@ public class AlipayEcoEduKtBillingSendModel extends AlipayObject {
 	private String schoolNo;
 
 	/**
-	 * 学校支付宝pid
+	 * 学校支付宝pid,直付通填写smid
 	 */
 	@ApiField("school_pid")
 	private String schoolPid;
@@ -164,6 +172,13 @@ public class AlipayEcoEduKtBillingSendModel extends AlipayObject {
 	}
 	public void setEndEnable(String endEnable) {
 		this.endEnable = endEnable;
+	}
+
+	public BillSendExtInfo getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(BillSendExtInfo extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getGmtEnd() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部商户投保调用
  *
  * @author auto create
- * @since 1.0, 2019-11-28 09:57:07
+ * @since 1.0, 2019-12-02 17:31:18
  */
 public class AlipayInsSceneApplicationOutsideApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3894811731379418774L;
+	private static final long serialVersionUID = 6688932414926441183L;
 
 	/**
 	 * 保险干系人
@@ -28,6 +28,12 @@ public class AlipayInsSceneApplicationOutsideApplyModel extends AlipayObject {
 	 */
 	@ApiField("biz_factor")
 	private String bizFactor;
+
+	/**
+	 * 保险止期
+	 */
+	@ApiField("effect_end_time")
+	private Date effectEndTime;
 
 	/**
 	 * 生效日期
@@ -90,6 +96,13 @@ public class AlipayInsSceneApplicationOutsideApplyModel extends AlipayObject {
 	}
 	public void setBizFactor(String bizFactor) {
 		this.bizFactor = bizFactor;
+	}
+
+	public Date getEffectEndTime() {
+		return this.effectEndTime;
+	}
+	public void setEffectEndTime(Date effectEndTime) {
+		this.effectEndTime = effectEndTime;
 	}
 
 	public Date getEffectStartTime() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 闪蝶侧小程序类型应用的源数据
  *
  * @author auto create
- * @since 1.0, 2019-11-15 15:38:54
+ * @since 1.0, 2019-12-10 16:02:33
  */
 public class MorphoMiniMeta extends AlipayObject {
 
-	private static final long serialVersionUID = 8327488131583465827L;
+	private static final long serialVersionUID = 1692869439193576355L;
 
 	/**
 	 * 小程序的名称

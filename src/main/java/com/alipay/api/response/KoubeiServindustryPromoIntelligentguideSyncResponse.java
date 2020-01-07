@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.promo.intelligentguide.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-13 21:56:19
+ * @since 1.0, 2019-12-18 16:30:34
  */
 public class KoubeiServindustryPromoIntelligentguideSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2892496917279687335L;
+	private static final long serialVersionUID = 6494177262271174561L;
 
 	/** 
 	 * 单次上传交易数据失败条数数量

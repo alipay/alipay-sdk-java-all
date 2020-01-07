@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线下拉新结算汇总数据查询
  *
  * @author auto create
- * @since 1.0, 2019-11-27 15:13:50
+ * @since 1.0, 2019-12-17 11:39:36
  */
 public class AlipayUserInviteOfflinesummaryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4733971948949411743L;
+	private static final long serialVersionUID = 1697524424239775351L;
 
 	/**
 	 * 二级渠道
@@ -30,6 +30,12 @@ public class AlipayUserInviteOfflinesummaryQueryModel extends AlipayObject {
 	 */
 	@ApiField("report_date")
 	private String reportDate;
+
+	/**
+	 * 参数名task_id，提供给商户按不同的线下拉新任务类型查询任务完成报表，当前枚举值有：xianxia001,xianxia002,xianxia_super,xianxia_bank。获取方式：该API仅提供给KA商户使用，接入时由运营沟通该参数如何使用。
+	 */
+	@ApiField("task_id")
+	private String taskId;
 
 	public String getPartnerId() {
 		return this.partnerId;
@@ -50,6 +56,13 @@ public class AlipayUserInviteOfflinesummaryQueryModel extends AlipayObject {
 	}
 	public void setReportDate(String reportDate) {
 		this.reportDate = reportDate;
+	}
+
+	public String getTaskId() {
+		return this.taskId;
+	}
+	public void setTaskId(String taskId) {
+		this.taskId = taskId;
 	}
 
 }

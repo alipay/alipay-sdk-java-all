@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单流水查询接口
  *
  * @author auto create
- * @since 1.0, 2019-04-28 10:31:18
+ * @since 1.0, 2019-12-31 17:14:22
  */
 public class MybankCreditLoantradeBillListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4259548593963779425L;
+	private static final long serialVersionUID = 2124135151277321184L;
 
 	/**
 	 * 账单状态，OVD逾期，CLE结清，NOR正常

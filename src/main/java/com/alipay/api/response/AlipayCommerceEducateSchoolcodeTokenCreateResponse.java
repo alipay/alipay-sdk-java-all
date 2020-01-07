@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.schoolcode.token.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-22 17:30:08
+ * @since 1.0, 2019-12-05 19:04:02
  */
 public class AlipayCommerceEducateSchoolcodeTokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6122744296999863546L;
+	private static final long serialVersionUID = 2574619291322424796L;
 
 	/** 
-	 * 学生信息凭证+在用户信息授权时使用,作为授权url中state的参数值+创建toen接口返回
+	 * 学生信息凭证，在用户信息授权时使用，作为授权url中state的参数值，创建token接口返回
 	 */
 	@ApiField("school_code_token")
 	private String schoolCodeToken;

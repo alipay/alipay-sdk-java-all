@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.deviceinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-12-17 17:01:25
  */
 public class AlipaySecurityProdDeviceinfoQueryRequest implements AlipayRequest<AlipaySecurityProdDeviceinfoQueryResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * hellobike月卡智能定价
  *
  * @author auto create
- * @since 1.0, 2019-04-18 21:00:35
+ * @since 1.0, 2019-12-30 14:22:33
  */
 public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6519257413478777798L;
+	private static final long serialVersionUID = 8234855462497122938L;
 
 	/**
 	 * 兼容V1.0。月卡售卖原价，单位为分，该参数取值为hellobike调用方自身的业务参数。
@@ -71,6 +71,12 @@ public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 	 */
 	@ApiField("lower_price_cent")
 	private Long lowerPriceCent;
+
+	/**
+	 * 这个请求是否经过排序的标记位,默认为false
+	 */
+	@ApiField("rank")
+	private String rank;
 
 	/**
 	 * 场景码，目前用于区分「单车」和「电单车」两种场景，其中，单车对应 bike， 电单车对应 ebike。不传该字段，默认为单车。
@@ -151,6 +157,13 @@ public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 	}
 	public void setLowerPriceCent(Long lowerPriceCent) {
 		this.lowerPriceCent = lowerPriceCent;
+	}
+
+	public String getRank() {
+		return this.rank;
+	}
+	public void setRank(String rank) {
+		this.rank = rank;
 	}
 
 	public String getSceneCode() {

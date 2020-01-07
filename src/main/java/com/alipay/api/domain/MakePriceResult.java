@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定价推荐价格列表返回类型
  *
  * @author auto create
- * @since 1.0, 2019-06-18 09:58:53
+ * @since 1.0, 2019-12-11 20:40:35
  */
 public class MakePriceResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2233117827731775698L;
+	private static final long serialVersionUID = 1622813274688733427L;
 
 	/**
 	 * 定价对象原价

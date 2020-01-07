@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-23 20:28:00
+ * @since 1.0, 2019-12-17 14:01:39
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6839121993923163869L;
+	private static final long serialVersionUID = 3773426799815284595L;
 
 	/** 
 	 * 详细地址。
@@ -43,14 +43,14 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	private String businessScope;
 
 	/** 
-	 * 【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
-证件号码，结合证件类型使用.
+	 * 【证件号码】结合证件类型使用.
+【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/** 
-	 * 【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+	 * 【证件类型】
 0:身份证
 1:护照
 2:军官证
@@ -64,6 +64,7 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 10:其它证件
 11:港澳居民来往内地通行证
 12:台湾居民来往大陆通行证
+【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -100,7 +101,7 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	private List<AlipayUserDeliverAddress> deliverAddresses;
 
 	/** 
-	 * 用户支付宝邮箱登录名
+	 * 优先获取email登录名，如果不存在，则返回mobile登录名
 	 */
 	@ApiField("email")
 	private String email;
@@ -259,6 +260,12 @@ T--被冻结；F--未冻结
 	private String personBirthday;
 
 	/** 
+	 * 生日。不包含具体年份，格式MMdd
+	 */
+	@ApiField("person_birthday_without_year")
+	private String personBirthdayWithoutYear;
+
+	/** 
 	 * 证件有效期（用户类型是个人的时候才有此字段）。
 	 */
 	@ApiField("person_cert_expiry_date")
@@ -302,8 +309,8 @@ T--被冻结；F--未冻结
 	private String userId;
 
 	/** 
-	 * 【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
-若用户是个人用户，则是用户的真实姓名；若是企业用户，则是企业名称。
+	 * 若用户是个人用户，则是用户的真实姓名；若是企业用户，则是企业名称。
+【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
 	 */
 	@ApiField("user_name")
 	private String userName;
@@ -581,6 +588,13 @@ W代表已注册，未激活的账户
 	}
 	public String getPersonBirthday( ) {
 		return this.personBirthday;
+	}
+
+	public void setPersonBirthdayWithoutYear(String personBirthdayWithoutYear) {
+		this.personBirthdayWithoutYear = personBirthdayWithoutYear;
+	}
+	public String getPersonBirthdayWithoutYear( ) {
+		return this.personBirthdayWithoutYear;
 	}
 
 	public void setPersonCertExpiryDate(String personCertExpiryDate) {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ka外部平台一键入驻生活号
  *
  * @author auto create
- * @since 1.0, 2019-03-28 15:18:48
+ * @since 1.0, 2019-12-23 11:46:05
  */
 public class AlipayOpenPublicLifeaccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5511427169246899358L;
+	private static final long serialVersionUID = 3242935382735684766L;
 
 	/**
 	 * 勾选同意生活号协议（true：同意，false：不同意）
@@ -54,7 +54,7 @@ public class AlipayOpenPublicLifeaccountCreateModel extends AlipayObject {
 	private String businessLicense;
 
 	/**
-	 * 行业类目id（类目级以“|”分隔，比如一级类目为100，二级类目为200，则传100|200）
+	 * 行业类目mcc类目code
 	 */
 	@ApiField("category_id")
 	private String categoryId;

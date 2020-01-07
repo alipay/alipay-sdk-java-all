@@ -17,6 +17,12 @@ public class AlipayConstants {
      */
     public static final String SIGN_TYPE_RSA2 = "RSA2";
 
+    public static final String SHA_TYPE = "SHA1";
+
+    public static final String SHA_TYPE256 = "SHA256";
+
+    public static final String SIGN_TYPE_SM2 = "SM2";
+
     public static final String SIGN_ALGORITHMS = "SHA1WithRSA";
 
     public static final String SIGN_SHA256RSA_ALGORITHMS = "SHA256WithRSA";
@@ -98,7 +104,7 @@ public class AlipayConstants {
     /**
      * SDK版本号
      */
-    public static final String SDK_VERSION = "alipay-sdk-java-4.8.73.ALL";
+    public static final String SDK_VERSION = "alipay-sdk-java-dynamicVersionNo";
 
     public static final String PROD_CODE = "prod_code";
 

@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智慧门店的ISV数据记录回流
  *
  * @author auto create
- * @since 1.0, 2019-01-16 14:08:59
+ * @since 1.0, 2020-01-06 16:54:36
  */
 public class KoubeiCateringSmartstoreDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1339589598328638992L;
+	private static final long serialVersionUID = 6334458962458379259L;
+
+	/**
+	 * 烘焙商品操作模型，如果是传输烘焙商品操作数据，此模型需要赋值，其他业务无需关心此字段
+	 */
+	@ApiField("baking_item_operation_data")
+	private BakingItemOperationData bakingItemOperationData;
 
 	/**
 	 * 浏览过的商品，格式英文逗号分隔
@@ -193,6 +199,7 @@ RFID识别：RFID
 人脸识别支付：facePay
 蛋糕屏：cakeScreen
 送餐机器人：diningRobot
+烘焙商品操作：bakingItemOperation
 	 */
 	@ApiField("scene")
 	private String scene;
@@ -220,6 +227,13 @@ RFID识别：RFID
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public BakingItemOperationData getBakingItemOperationData() {
+		return this.bakingItemOperationData;
+	}
+	public void setBakingItemOperationData(BakingItemOperationData bakingItemOperationData) {
+		this.bakingItemOperationData = bakingItemOperationData;
+	}
 
 	public String getBrowseDishs() {
 		return this.browseDishs;

@@ -1,27 +1,11 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-*.iml
-.idea/
-target/
+.idea
 .DS_Store
+target
+*.iml
+*.ipr
+*.iws
+
+sdkSource/alipay-sdk-java-sources.zip
+sdkSource/alipay-sdk-java-sources
+publish/alipay-sdk-java-all
+publish/alipay-sdk-JAVA-*.zip

@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝认证信息申请接口
  *
  * @author auto create
- * @since 1.0, 2017-09-22 10:47:12
+ * @since 1.0, 2019-12-05 13:56:43
  */
 public class AlipayUserCertifyInfoApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6248612415176416519L;
+	private static final long serialVersionUID = 8782256683755986998L;
 
 	/**
-	 * 委托书图片base64编码的字符串
+	 * 委托书图片数据，根据biz_from参数确定是传base64字符串，还是传oss地址
 	 */
 	@ApiField("agent_auth_letter_picture")
 	private String agentAuthLetterPicture;
 
 	/**
-	 * 代理人证件图片辅助页图片，对应二代身份证就是国徽页
+	 * 代理人证件图片辅助页图片，对应二代身份证就是国徽页，根据biz_from参数确定是传base64字符串，还是传oss地址
 	 */
 	@ApiField("agent_cert_card_assist_picture")
 	private String agentCertCardAssistPicture;
 
 	/**
-	 * 代理人证件信息页图片base64编码字符串，对应二代身份证为带人脸页图片
+	 * 代理人证件信息页图片数据，对应二代身份证为带人脸页图片，根据biz_from参数确定是传base64字符串，还是传oss地址
 	 */
 	@ApiField("agent_cert_card_info_picture")
 	private String agentCertCardInfoPicture;
@@ -68,13 +68,13 @@ public class AlipayUserCertifyInfoApplyModel extends AlipayObject {
 	private String contactMobile;
 
 	/**
-	 * 法人证件图片辅助页图片base64格式字符串,若为身份证，则为国徽页图片
+	 * 法人证件图片辅助页图片数据,若为身份证，则为国徽页图片，根据biz_from参数确定是传base64字符串，还是传oss地址
 	 */
 	@ApiField("legal_cert_card_assist_picture")
 	private String legalCertCardAssistPicture;
 
 	/**
-	 * 法定代表人的证件图片信息页的base64编码字符串，若为身份证，则为带人脸图片的那一页照片
+	 * 法定代表人的证件图片信息页数据，若为身份证，则为带人脸图片的那一页照片，根据biz_from参数确定是传base64字符串，还是传oss地址
 	 */
 	@ApiField("legal_cert_card_info_picture")
 	private String legalCertCardInfoPicture;
@@ -144,7 +144,7 @@ public class AlipayUserCertifyInfoApplyModel extends AlipayObject {
 	private String orgMainCertNo;
 
 	/**
-	 * 营业执照图片的base64编码格式的string字符串
+	 * 营业执照图片信息，根据biz_from参数确定是要传base64编码格式的string字符串，还是传oss地址
 	 */
 	@ApiField("org_main_cert_picture")
 	private String orgMainCertPicture;

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FengdieActivityCreatePagesData extends AlipayObject {
 
-	private static final long serialVersionUID = 3241584812684318232L;
+	private static final long serialVersionUID = 3594914885283897228L;
 
 	/**
 	 * 指定页面使用的组件，展示顺序和传入的列表顺序一致，一旦使用这个参数，模板中 {% components %} {% endcomponents %} 区域只会显示这里指定的组件

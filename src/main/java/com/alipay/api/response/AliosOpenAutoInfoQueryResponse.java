@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alios.open.auto.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-12 15:30:56
+ * @since 1.0, 2019-12-17 12:20:59
  */
 public class AliosOpenAutoInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2266323613239348728L;
+	private static final long serialVersionUID = 3436957914365896914L;
 
 	/** 
 	 * 发动机号
@@ -25,6 +25,12 @@ public class AliosOpenAutoInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("license_no")
 	private String licenseNo;
+
+	/** 
+	 * 车辆类型
+	 */
+	@ApiField("vehicle_type")
+	private String vehicleType;
 
 	/** 
 	 * 车辆识别号码
@@ -44,6 +50,13 @@ public class AliosOpenAutoInfoQueryResponse extends AlipayResponse {
 	}
 	public String getLicenseNo( ) {
 		return this.licenseNo;
+	}
+
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
+	}
+	public String getVehicleType( ) {
+		return this.vehicleType;
 	}
 
 	public void setVin(String vin) {

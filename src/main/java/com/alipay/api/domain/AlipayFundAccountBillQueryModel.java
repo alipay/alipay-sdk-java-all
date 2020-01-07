@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 托管户账单查询接口
  *
  * @author auto create
- * @since 1.0, 2019-06-24 17:50:12
+ * @since 1.0, 2019-12-18 11:48:21
  */
 public class AlipayFundAccountBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8572793295746664192L;
+	private static final long serialVersionUID = 2392896255542969353L;
 
 	/**
 	 * 开户场景码

@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoinsprod.quote.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-30 17:01:16
+ * @since 1.0, 2019-12-24 16:53:36
  */
 public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7686127118273883853L;
+	private static final long serialVersionUID = 6136648754963651748L;
 
 	/** 
 	 * 商业费率浮动系数，0~1分值的数字，精确到小数点后4位，如：0.6589
@@ -140,6 +140,30 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	@ApiListField("logistics_models")
 	@ApiField("string")
 	private List<String> logisticsModels;
+
+	/** 
+	 * 允许调整的最大渠道系数，精确到小数点后十位
+	 */
+	@ApiField("max_self_channel_ratio")
+	private String maxSelfChannelRatio;
+
+	/** 
+	 * 允许调整的最大核保系数，精确到小数点后十位
+	 */
+	@ApiField("max_self_underwrite_ratio")
+	private String maxSelfUnderwriteRatio;
+
+	/** 
+	 * 允许调整的最小渠道系数，精确到小数点后十位
+	 */
+	@ApiField("min_self_channel_ratio")
+	private String minSelfChannelRatio;
+
+	/** 
+	 * 允许调整的最小核保系数，精确到小数点后十位
+	 */
+	@ApiField("min_self_underwrite_ratio")
+	private String minSelfUnderwriteRatio;
 
 	/** 
 	 * 平台NCD系数，精确到小数点后两位
@@ -351,6 +375,34 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	}
 	public List<String> getLogisticsModels( ) {
 		return this.logisticsModels;
+	}
+
+	public void setMaxSelfChannelRatio(String maxSelfChannelRatio) {
+		this.maxSelfChannelRatio = maxSelfChannelRatio;
+	}
+	public String getMaxSelfChannelRatio( ) {
+		return this.maxSelfChannelRatio;
+	}
+
+	public void setMaxSelfUnderwriteRatio(String maxSelfUnderwriteRatio) {
+		this.maxSelfUnderwriteRatio = maxSelfUnderwriteRatio;
+	}
+	public String getMaxSelfUnderwriteRatio( ) {
+		return this.maxSelfUnderwriteRatio;
+	}
+
+	public void setMinSelfChannelRatio(String minSelfChannelRatio) {
+		this.minSelfChannelRatio = minSelfChannelRatio;
+	}
+	public String getMinSelfChannelRatio( ) {
+		return this.minSelfChannelRatio;
+	}
+
+	public void setMinSelfUnderwriteRatio(String minSelfUnderwriteRatio) {
+		this.minSelfUnderwriteRatio = minSelfUnderwriteRatio;
+	}
+	public String getMinSelfUnderwriteRatio( ) {
+		return this.minSelfUnderwriteRatio;
 	}
 
 	public void setNoClaimAdjustRatio(String noClaimAdjustRatio) {

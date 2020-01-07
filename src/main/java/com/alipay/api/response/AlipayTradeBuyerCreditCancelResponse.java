@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.buyer.credit.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-25 15:23:53
+ * @since 1.0, 2019-12-05 17:47:01
  */
 public class AlipayTradeBuyerCreditCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7589226422182688842L;
+	private static final long serialVersionUID = 1296292327215246213L;
 
 	/** 
 	 * 标识买家授信额度的来源

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发到账户明细复杂模型
  *
  * @author auto create
- * @since 1.0, 2019-11-12 17:29:21
+ * @since 1.0, 2019-12-23 17:44:37
  */
 public class AccDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5154621982698474847L;
+	private static final long serialVersionUID = 2667385797189851766L;
 
 	/**
 	 * 支付宝订单号
@@ -54,6 +54,18 @@ public class AccDetailModel extends AlipayObject {
 	 */
 	@ApiField("exchange_rate")
 	private ExchangeRate exchangeRate;
+
+	/**
+	 * 创建时间
+	 */
+	@ApiField("gmt_create")
+	private String gmtCreate;
+
+	/**
+	 * 完成时间
+	 */
+	@ApiField("gmt_finish")
+	private String gmtFinish;
 
 	/**
 	 * 是否需要通过alipay_order_no原单据重试.
@@ -121,6 +133,12 @@ UNKNOWN：未知状态
 	private String status;
 
 	/**
+	 * 子状态
+	 */
+	@ApiField("sub_status")
+	private String subStatus;
+
+	/**
 	 * 转账金额。代发请求中指定的trans_amount.
 	 */
 	@ApiField("trans_amount")
@@ -179,6 +197,20 @@ UNKNOWN：未知状态
 	}
 	public void setExchangeRate(ExchangeRate exchangeRate) {
 		this.exchangeRate = exchangeRate;
+	}
+
+	public String getGmtCreate() {
+		return this.gmtCreate;
+	}
+	public void setGmtCreate(String gmtCreate) {
+		this.gmtCreate = gmtCreate;
+	}
+
+	public String getGmtFinish() {
+		return this.gmtFinish;
+	}
+	public void setGmtFinish(String gmtFinish) {
+		this.gmtFinish = gmtFinish;
 	}
 
 	public String getNeedRetry() {
@@ -242,6 +274,13 @@ UNKNOWN：未知状态
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getSubStatus() {
+		return this.subStatus;
+	}
+	public void setSubStatus(String subStatus) {
+		this.subStatus = subStatus;
 	}
 
 	public String getTransAmount() {

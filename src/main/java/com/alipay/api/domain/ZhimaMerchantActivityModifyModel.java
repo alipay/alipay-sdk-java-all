@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用承诺消费活动修改接口
  *
  * @author auto create
- * @since 1.0, 2018-10-25 15:23:59
+ * @since 1.0, 2019-12-21 12:06:09
  */
 public class ZhimaMerchantActivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3313491644849143244L;
+	private static final long serialVersionUID = 5244742698595542897L;
 
 	/**
 	 * 对活动的操作类型，合法的操作类型必须在如下枚举中，当前有：

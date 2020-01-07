@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.buyer.credit.cancel request
  * 
  * @author auto create
- * @since 1.0, 2019-11-25 15:23:53
+ * @since 1.0, 2019-12-05 17:47:01
  */
 public class AlipayTradeBuyerCreditCancelRequest implements AlipayRequest<AlipayTradeBuyerCreditCancelResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用承诺消费合约状态变更
  *
  * @author auto create
- * @since 1.0, 2019-03-21 20:23:55
+ * @since 1.0, 2019-12-21 12:05:31
  */
 public class ZhimaMerchantContractStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4543356935291332184L;
+	private static final long serialVersionUID = 5456195433268662925L;
 
 	/**
 	 * 合约状态变更操作发生的时间
