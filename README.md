@@ -110,7 +110,7 @@ public class Main {
 ## 变更日志
 每个版本的详细更改记录在[变更日志](./CHANGELOG)中。
 
-注：版本号最末一位修订号的增加（比如从4.8.62.ALL升级为4.8.74.ALL），意味着SDK的功能没有发生任何变化，仅仅是集成了更多的API的Request、Response、Model类，此类变更默认不记录在变更日志中。
+注：版本号最末一位修订号的增加（比如从`4.8.62.ALL`升级为`4.8.74.ALL`），意味着SDK的功能没有发生任何变化，仅仅是集成了更多的API的Request、Response、Model类，此类变更默认不记录在变更日志中。
 
 ## 相关
 * [支付宝开放平台](https://open.alipay.com/platform/home.htm)
