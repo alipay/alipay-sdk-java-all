@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationContentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5127345591791183124L;
+	private static final long serialVersionUID = 1445262449715126476L;
 
 	/** 
 	 * 内容信息列表 , json 格式 , 每一个展台对应一个 内容列表 .  每一个内容信息模型对应 : ContentInfoModel

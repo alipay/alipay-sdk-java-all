@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderDishQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8688923353751577161L;
+	private static final long serialVersionUID = 8454476695758876977L;
 
 	/**
 	 * 数据是根据alipay.offline.provider.shopaction.record的插入菜品接口获取，对应字段是：dishTypeName。

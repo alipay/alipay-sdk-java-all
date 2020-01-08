@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataDataserviceRiskDeviceidentityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5425242652636274924L;
+	private static final long serialVersionUID = 6611331149788482537L;
 
 	/**
 	 * 设备token值， 服务端JS生成的设备token值（由我方提供的JS生成），界面引入我方提供的js即可获取afs_token值，token的失效期为12个小时，基本上是190位的一串字符。

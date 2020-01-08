@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3887532662769233933L;
+	private static final long serialVersionUID = 6638957863957762163L;
 
 	/**
 	 * 当离线消息挤压太多时，若设备上线将获取所有未过期的消息。推送太多消息对设备体验不太好，所以此字段用于设置消息是必达。当消息不是必达的

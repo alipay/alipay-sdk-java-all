@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingCampaignOpenDeliveryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3228424727849649166L;
+	private static final long serialVersionUID = 7827947426752447855L;
 
 	/**
 	 * 详情设置会根据delivery_type字段类型不同而格式不同，整体是json结构。详细说明见链接：https://lark.alipay.com/xiaoling.zwt/idg11s/mhx33i

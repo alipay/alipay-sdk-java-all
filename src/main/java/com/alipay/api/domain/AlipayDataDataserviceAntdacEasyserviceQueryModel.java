@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAntdacEasyserviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4332336334892948924L;
+	private static final long serialVersionUID = 6116227485634981769L;
 
 	/**
 	 * 调用方法id＋询问antdac应用开发者获取＋每个方法id对应一个真实调用的接口
