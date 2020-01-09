@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAgentSignstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3766321893614151164L;
+	private static final long serialVersionUID = 7513269995849649554L;
 
 	/**
 	 * isv要查询签约状态的商户账号，是支付宝账号pid（2088开头）

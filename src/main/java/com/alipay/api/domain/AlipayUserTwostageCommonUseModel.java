@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用当面付二阶段接口
  *
  * @author auto create
- * @since 1.0, 2020-01-03 09:58:40
+ * @since 1.0, 2020-01-09 17:56:03
  */
 public class AlipayUserTwostageCommonUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4317139571658667879L;
+	private static final long serialVersionUID = 8422615627691216843L;
 
 	/**
 	 * 商户扫描用户的付款码值。

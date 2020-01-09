@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotWifiStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2531228311986582341L;
+	private static final long serialVersionUID = 5837615462215186633L;
 
 	/** 
 	 * 当前wifi名称

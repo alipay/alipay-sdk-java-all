@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询测试场景用例
  *
  * @author auto create
- * @since 1.0, 2019-11-27 19:27:15
+ * @since 1.0, 2020-01-08 15:13:52
  */
 public class KoubeiQualityTestShieldTestcaseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3457665366223766492L;
+	private static final long serialVersionUID = 2548134228718917193L;
 
 	/**
 	 * 接口支持两种维度的查询

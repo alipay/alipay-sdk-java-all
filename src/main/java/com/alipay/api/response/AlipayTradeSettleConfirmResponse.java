@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.settle.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-30 17:38:16
+ * @since 1.0, 2020-01-09 15:34:07
  */
 public class AlipayTradeSettleConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8368224767382475658L;
+	private static final long serialVersionUID = 2511965912285961448L;
 
 	/** 
 	 * 确认结算请求流水号，开发者自行生成并保证唯一性，作为业务幂等性控制
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
+
+	/** 
+	 * 本次确认结算的实际结算金额，单位为元。
+	 */
+	@ApiField("settle_amount")
+	private String settleAmount;
 
 	/** 
 	 * 支付宝交易号
@@ -31,6 +37,13 @@ public class AlipayTradeSettleConfirmResponse extends AlipayResponse {
 	}
 	public String getOutRequestNo( ) {
 		return this.outRequestNo;
+	}
+
+	public void setSettleAmount(String settleAmount) {
+		this.settleAmount = settleAmount;
+	}
+	public String getSettleAmount( ) {
+		return this.settleAmount;
 	}
 
 	public void setTradeNo(String tradeNo) {

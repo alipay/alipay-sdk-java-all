@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppMessageTopicUnsubscribeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1676869161912144691L;
+	private static final long serialVersionUID = 3467892521641498621L;
 
 	
 

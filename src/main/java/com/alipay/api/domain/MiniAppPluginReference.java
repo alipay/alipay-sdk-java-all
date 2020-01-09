@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniAppPluginReference extends AlipayObject {
 
-	private static final long serialVersionUID = 5784573428846144534L;
+	private static final long serialVersionUID = 3134843376618423177L;
 
 	/**
 	 * 插件id，即插件的唯一标识，形如小程序的appId

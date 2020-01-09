@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序服务信息批量上传
  *
  * @author auto create
- * @since 1.0, 2019-12-03 20:05:25
+ * @since 1.0, 2020-01-09 18:36:25
  */
 public class AlipayOpenMiniBizdataTemplatemessageUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7399537719368225479L;
+	private static final long serialVersionUID = 3341441741156849122L;
 
 	/**
 	 * 服务信息列表，列表大小不超过50

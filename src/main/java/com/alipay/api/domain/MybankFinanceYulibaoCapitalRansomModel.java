@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoCapitalRansomModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4873377161865399722L;
+	private static final long serialVersionUID = 7269563975262422879L;
 
 	/**
 	 * 赎回的金额，以分为单位，必须为正整数。如amount=123456表示赎回1234.56元的余利宝份额。

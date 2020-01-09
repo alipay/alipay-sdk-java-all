@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAssetCardReturnRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5678571191284999967L;
+	private static final long serialVersionUID = 8135253972617316644L;
 
 	/** 
 	 * 账务操作时间

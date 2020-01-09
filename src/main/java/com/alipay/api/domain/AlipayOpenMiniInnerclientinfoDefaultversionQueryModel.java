@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序客户端默认版本号信息
  *
  * @author auto create
- * @since 1.0, 2019-04-10 19:56:08
+ * @since 1.0, 2020-01-09 14:04:34
  */
 public class AlipayOpenMiniInnerclientinfoDefaultversionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4533288886381196132L;
+	private static final long serialVersionUID = 2498279488568594838L;
 
 	/**
 	 * 小程序Id

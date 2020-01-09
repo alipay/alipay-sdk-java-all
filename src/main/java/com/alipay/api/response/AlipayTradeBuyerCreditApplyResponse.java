@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeBuyerCreditApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1439693453874452792L;
+	private static final long serialVersionUID = 7817985656838266519L;
 
 	/** 
 	 * 标识买家授信额度的来源

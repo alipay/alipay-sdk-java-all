@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多端小程序-真机预览接口
  *
  * @author auto create
- * @since 1.0, 2019-07-01 14:34:25
+ * @since 1.0, 2020-01-09 17:47:51
  */
 public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2662288999479658945L;
+	private static final long serialVersionUID = 8429533738226461564L;
 
 	/**
 	 * 构建参数- JSAPI 权限文件, JSON 字符串
