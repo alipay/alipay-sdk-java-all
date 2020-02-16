@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertSettleBillResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7215741884721289443L;
+	private static final long serialVersionUID = 6382664177598227531L;
 
 	/**
 	 * 账单下载地址(为空表示查无账单)

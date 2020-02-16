@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动审批结果查询
  *
  * @author auto create
- * @since 1.0, 2019-12-25 16:59:49
+ * @since 1.0, 2020-01-10 17:35:00
  */
 public class AlipayCommerceTransportVehicleownerCampaignauditQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7846872435143784889L;
+	private static final long serialVersionUID = 7757335111578532997L;
 
 	/**
 	 * 业务类型

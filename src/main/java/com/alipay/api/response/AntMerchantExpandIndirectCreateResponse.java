@@ -10,17 +10,19 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-25 15:13:05
+ * @since 1.0, 2020-02-13 17:53:30
  */
 public class AntMerchantExpandIndirectCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8433111264848852574L;
+	private static final long serialVersionUID = 8575462648929162842L;
 
 	/** 
 	 * 可用服务，列表返回</br>
 PC：网站支付</br>
 APP：无线支付</br>
 F2F：当面付</br>
+PRE_F2F：线下预授权</br>
+PRE_APP：线上预授权</br>
 返回为空为不支持所有服务
 	 */
 	@ApiListField("service_codes")

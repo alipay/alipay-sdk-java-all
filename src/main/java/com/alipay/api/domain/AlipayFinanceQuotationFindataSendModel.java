@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinanceQuotationFindataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5875514421813493654L;
+	private static final long serialVersionUID = 6263859981466836539L;
 
 	/**
 	 * 业务类型。strategy_pool策略池,strategy_pool_detail策略池明细

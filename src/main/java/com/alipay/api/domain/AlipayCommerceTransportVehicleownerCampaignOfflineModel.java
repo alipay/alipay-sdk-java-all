@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动接口(下架)
  *
  * @author auto create
- * @since 1.0, 2019-12-25 16:59:57
+ * @since 1.0, 2020-01-10 17:34:52
  */
 public class AlipayCommerceTransportVehicleownerCampaignOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4748444183749217676L;
+	private static final long serialVersionUID = 8286821222489959328L;
 
 	/**
 	 * 活动id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试文档更新
  *
  * @author auto create
- * @since 1.0, 2019-09-18 23:46:10
+ * @since 1.0, 2020-02-04 19:47:26
  */
 public class AlipayOpenAppDfsfasDeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2552176187191153685L;
+	private static final long serialVersionUID = 7268556774185328936L;
 
 	/**
 	 * 1
@@ -25,6 +25,12 @@ public class AlipayOpenAppDfsfasDeQueryModel extends AlipayObject {
 	@ApiField("desdde")
 	private String desdde;
 
+	/**
+	 * 1
+	 */
+	@ApiField("desf")
+	private String desf;
+
 	public String getDesd() {
 		return this.desd;
 	}
@@ -37,6 +43,13 @@ public class AlipayOpenAppDfsfasDeQueryModel extends AlipayObject {
 	}
 	public void setDesdde(String desdde) {
 		this.desdde = desdde;
+	}
+
+	public String getDesf() {
+		return this.desf;
+	}
+	public void setDesf(String desf) {
+		this.desf = desf;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸能力接口
  *
  * @author auto create
- * @since 1.0, 2019-07-12 22:47:23
+ * @since 1.0, 2020-02-13 16:53:22
  */
 public class ZolozAuthenticationCustomerFaceabilityIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8782752551897445784L;
+	private static final long serialVersionUID = 3126334881272423572L;
 
 	/**
 	 * 开放活体图片进行人脸识别的能力，包括extract(提取特征)、sex(检测性别)、rect(人脸矩形框检测)

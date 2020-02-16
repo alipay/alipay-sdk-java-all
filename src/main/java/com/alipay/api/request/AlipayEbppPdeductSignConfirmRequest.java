@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.pdeduct.sign.confirm request
  * 
  * @author auto create
- * @since 1.0, 2019-12-29 15:58:18
+ * @since 1.0, 2020-02-14 16:58:14
  */
 public class AlipayEbppPdeductSignConfirmRequest implements AlipayRequest<AlipayEbppPdeductSignConfirmResponse> {
 

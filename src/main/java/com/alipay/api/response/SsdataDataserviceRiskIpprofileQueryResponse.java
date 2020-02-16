@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataDataserviceRiskIpprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8422635921853887454L;
+	private static final long serialVersionUID = 5582695213911475681L;
 
 	/** 
 	 * IP上用户活跃度分值（分值越高活跃度越高）

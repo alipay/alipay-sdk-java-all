@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 升级模板实例化小程序
  *
  * @author auto create
- * @since 1.0, 2019-06-21 17:46:51
+ * @since 1.0, 2020-02-11 17:54:57
  */
 public class AlipayOpenMiniInnerversionUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4464773293795588178L;
+	private static final long serialVersionUID = 1748868919752675399L;
 
 	/**
 	 * 来源类型，新接入方需要向支付宝申请专用来源，否则不予接入。

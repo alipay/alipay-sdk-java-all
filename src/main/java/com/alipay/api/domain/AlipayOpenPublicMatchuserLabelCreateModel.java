@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 匹配用户标签添加接口
  *
  * @author auto create
- * @since 1.0, 2018-12-24 10:48:27
+ * @since 1.0, 2020-01-10 18:09:54
  */
 public class AlipayOpenPublicMatchuserLabelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8398124435569218969L;
+	private static final long serialVersionUID = 4841638445254391399L;
 
 	/**
 	 * 标签id，调用创建标签接口会返回label_id

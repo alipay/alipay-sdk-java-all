@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 打印消息发送
  *
  * @author auto create
- * @since 1.0, 2019-12-25 18:20:11
+ * @since 1.0, 2020-01-09 21:06:25
  */
 public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4737896842165573934L;
+	private static final long serialVersionUID = 4387862686134457383L;
 
 	/**
 	 * 当离线消息挤压太多时，若设备上线将获取所有未过期的消息。推送太多消息对设备体验不太好，所以此字段用于设置消息是必达。当消息不是必达的
@@ -66,10 +66,15 @@ cloud_print: 消息内容详见: https://alipay.open.taobao.com/docs/doc.htm?spm
 
 	/**
 	 * 消息类型
-云打印: cloud_print
 	 */
 	@ApiField("msg_type")
 	private String msgType;
+
+	/**
+	 * 服务ID，当小程序消费消息时必传(传入的是小程序ID)
+	 */
+	@ApiField("service_id")
+	private String serviceId;
 
 	/**
 	 * 设备sn号
@@ -144,6 +149,13 @@ cloud_print: 消息内容详见: https://alipay.open.taobao.com/docs/doc.htm?spm
 	}
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
+	}
+
+	public String getServiceId() {
+		return this.serviceId;
+	}
+	public void setServiceId(String serviceId) {
+		this.serviceId = serviceId;
 	}
 
 	public String getSn() {

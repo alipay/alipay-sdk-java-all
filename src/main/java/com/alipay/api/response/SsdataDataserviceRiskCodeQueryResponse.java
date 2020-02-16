@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.code.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-02-10 16:15:13
  */
 public class SsdataDataserviceRiskCodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4639759682499459964L;
+	private static final long serialVersionUID = 3756183968626263578L;
 
 	/** 
 	 * 是否命中yes/no

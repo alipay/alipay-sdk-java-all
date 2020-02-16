@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单发模板消息
  *
  * @author auto create
- * @since 1.0, 2019-10-10 10:52:26
+ * @since 1.0, 2020-02-12 18:10:58
  */
 public class AlipayOpenPublicMessageSingleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7376213972761959738L;
+	private static final long serialVersionUID = 5591193987512753344L;
 
 	/**
 	 * 消息模板相关参数，其中包括templateId模板ID和context模板上下文

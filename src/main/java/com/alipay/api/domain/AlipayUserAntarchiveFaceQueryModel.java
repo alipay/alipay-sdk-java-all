@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁档案人脸图片查询
  *
  * @author auto create
- * @since 1.0, 2018-11-28 14:49:34
+ * @since 1.0, 2020-02-06 14:19:30
  */
 public class AlipayUserAntarchiveFaceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8432469661659132627L;
+	private static final long serialVersionUID = 4119338185678511248L;
 
 	/**
 	 * 出生日期(RFC3339格式)，yyyy-MM-dd，可选.若证件类型为105(港澳居民往来内地通行证)或106(台湾居民往来内地通行证)时,cert_expire_date与birthday至少填写一项

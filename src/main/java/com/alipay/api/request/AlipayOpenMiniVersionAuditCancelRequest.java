@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.cancel request
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 17:21:17
+ * @since 1.0, 2020-02-14 14:19:42
  */
 public class AlipayOpenMiniVersionAuditCancelRequest implements AlipayRequest<AlipayOpenMiniVersionAuditCancelResponse> {
 

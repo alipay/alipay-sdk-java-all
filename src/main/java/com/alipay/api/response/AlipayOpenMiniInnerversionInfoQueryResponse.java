@@ -1,7 +1,10 @@
 package com.alipay.api.response;
 
 import java.util.Date;
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.MiniAppPluginInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -9,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerversion.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-23 14:17:29
+ * @since 1.0, 2020-02-10 10:52:42
  */
 public class AlipayOpenMiniInnerversionInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6244544622988953329L;
+	private static final long serialVersionUID = 3362613519223532317L;
 
 	/** 
 	 * 版本号
@@ -88,6 +91,13 @@ public class AlipayOpenMiniInnerversionInfoQueryResponse extends AlipayResponse 
 	private String packageUrl;
 
 	/** 
+	 * 引用插件信息
+	 */
+	@ApiListField("plugin_refs")
+	@ApiField("mini_app_plugin_info")
+	private List<MiniAppPluginInfo> pluginRefs;
+
+	/** 
 	 * 审核失败原因
 	 */
 	@ApiField("reject_reason")
@@ -116,6 +126,12 @@ public class AlipayOpenMiniInnerversionInfoQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("shelf_time")
 	private Date shelfTime;
+
+	/** 
+	 * 源码包地址
+	 */
+	@ApiField("source_url")
+	private String sourceUrl;
 
 	/** 
 	 * 版本状态
@@ -219,6 +235,13 @@ public class AlipayOpenMiniInnerversionInfoQueryResponse extends AlipayResponse 
 		return this.packageUrl;
 	}
 
+	public void setPluginRefs(List<MiniAppPluginInfo> pluginRefs) {
+		this.pluginRefs = pluginRefs;
+	}
+	public List<MiniAppPluginInfo> getPluginRefs( ) {
+		return this.pluginRefs;
+	}
+
 	public void setRejectReason(String rejectReason) {
 		this.rejectReason = rejectReason;
 	}
@@ -252,6 +275,13 @@ public class AlipayOpenMiniInnerversionInfoQueryResponse extends AlipayResponse 
 	}
 	public Date getShelfTime( ) {
 		return this.shelfTime;
+	}
+
+	public void setSourceUrl(String sourceUrl) {
+		this.sourceUrl = sourceUrl;
+	}
+	public String getSourceUrl( ) {
+		return this.sourceUrl;
 	}
 
 	public void setStatus(String status) {

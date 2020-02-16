@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.sign.flow.create request
  * 
  * @author auto create
- * @since 1.0, 2019-12-26 21:40:39
+ * @since 1.0, 2020-02-11 17:09:45
  */
 public class AlipayEcoSignFlowCreateRequest implements AlipayRequest<AlipayEcoSignFlowCreateResponse> {
 

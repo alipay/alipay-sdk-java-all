@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跨境游优惠信息获取
  *
  * @author auto create
- * @since 1.0, 2019-11-14 23:37:42
+ * @since 1.0, 2020-02-12 21:07:11
  */
 public class AlipayOverseasTravelPromotionGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7722799418363393897L;
+	private static final long serialVersionUID = 8339148135867169117L;
 
 	/**
 	 * 蚂蚁LBS基础设施定义的商圈码列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人员风险背景调查
  *
  * @author auto create
- * @since 1.0, 2017-05-31 19:27:57
+ * @since 1.0, 2020-02-01 11:36:03
  */
 public class AlipaySecurityRiskBackgroundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1222119972577346269L;
+	private static final long serialVersionUID = 7567385587361819524L;
 
 	/**
 	 * params+用于背调查询的输入信息+用户传入

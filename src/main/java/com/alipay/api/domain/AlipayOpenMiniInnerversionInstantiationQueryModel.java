@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序实例化关系查询
  *
  * @author auto create
- * @since 1.0, 2019-11-13 17:12:57
+ * @since 1.0, 2020-02-11 17:50:58
  */
 public class AlipayOpenMiniInnerversionInstantiationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1251652974485826798L;
+	private static final long serialVersionUID = 4522478464128163938L;
 
 	/**
-	 * 来源，需要申请
+	 * 来源类型，新接入方需要向支付宝申请专用来源，否则不予接入，申请方式请参见接入手册。
 	 */
 	@ApiField("app_origin")
 	private String appOrigin;

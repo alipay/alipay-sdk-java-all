@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 兑换蚂蚁森林树种
  *
  * @author auto create
- * @since 1.0, 2019-10-22 20:24:16
+ * @since 1.0, 2020-02-04 15:11:47
  */
 public class AlipaySocialAntforestPlantApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7155597958184725629L;
+	private static final long serialVersionUID = 5235165397896246749L;
 
 	/**
 	 * 出账购买树种的账户id

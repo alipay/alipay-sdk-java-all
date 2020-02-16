@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发起汇款请求
  *
  * @author auto create
- * @since 1.0, 2019-09-26 10:25:52
+ * @since 1.0, 2020-02-11 15:27:05
  */
 public class AlipayOverseasRemitFundTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2796586453765415196L;
+	private static final long serialVersionUID = 8431769313785868518L;
 
 	/**
 	 * 汇率的基准币种

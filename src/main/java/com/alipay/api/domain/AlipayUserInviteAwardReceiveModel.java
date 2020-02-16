@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserInviteAwardReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1686856296485768347L;
+	private static final long serialVersionUID = 5425348979522743723L;
 
 	/**
 	 * 用户扫码抽奖输入的手机号，手机号和用户ID必须有一个非空，如果两者都有，则优先取user_id的值作为后续发奖的用户账号

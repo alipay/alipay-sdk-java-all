@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票企业信息、税务信息
  *
  * @author auto create
- * @since 1.0, 2019-11-15 14:55:59
+ * @since 1.0, 2020-01-16 17:52:20
  */
 public class InvoiceCompanyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1155391476563425368L;
+	private static final long serialVersionUID = 5557145458782985368L;
 
 	/**
 	 * 发票限额信息，列表类型，按不同票种拆分发票限额

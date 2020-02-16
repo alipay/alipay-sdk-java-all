@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境汇款查询收款人信息
  *
  * @author auto create
- * @since 1.0, 2019-10-24 15:00:29
+ * @since 1.0, 2020-02-11 15:26:54
  */
 public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5435632519776737154L;
+	private static final long serialVersionUID = 6779297656464648116L;
 
 	/**
 	 * 相对于汇率的基准货币

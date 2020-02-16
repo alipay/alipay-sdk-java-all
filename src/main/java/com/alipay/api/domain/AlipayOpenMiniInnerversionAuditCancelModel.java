@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部链路撤销审核
  *
  * @author auto create
- * @since 1.0, 2019-06-17 17:36:54
+ * @since 1.0, 2020-02-14 09:49:05
  */
 public class AlipayOpenMiniInnerversionAuditCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6865427148132439171L;
+	private static final long serialVersionUID = 2551725323431616174L;
 
 	/**
 	 * 业务来源
@@ -32,7 +32,7 @@ public class AlipayOpenMiniInnerversionAuditCancelModel extends AlipayObject {
 	private String bundleId;
 
 	/**
-	 * 小程序ID
+	 * 小程序ID，仅特殊场景使用，普通业务方无需关注该参数
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * spi线上验证接口
  *
  * @author auto create
- * @since 1.0, 2019-10-31 11:47:12
+ * @since 1.0, 2020-02-04 21:48:32
  */
 public class AlipayOpenAppBoyiBoyiCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1372345323461866548L;
+	private static final long serialVersionUID = 8617924264792218796L;
 
 	/**
 	 * 12
@@ -30,6 +30,12 @@ public class AlipayOpenAppBoyiBoyiCreateModel extends AlipayObject {
 	 */
 	@ApiField("desd")
 	private GavinTestnew desd;
+
+	/**
+	 * 21
+	 */
+	@ApiField("desdmm")
+	private String desdmm;
 
 	/**
 	 * 11
@@ -68,6 +74,13 @@ public class AlipayOpenAppBoyiBoyiCreateModel extends AlipayObject {
 	}
 	public void setDesd(GavinTestnew desd) {
 		this.desd = desd;
+	}
+
+	public String getDesdmm() {
+		return this.desdmm;
+	}
+	public void setDesdmm(String desdmm) {
+		this.desdmm = desdmm;
 	}
 
 	public String getHeader() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 银行间连商户入驻
  *
  * @author auto create
- * @since 1.0, 2019-06-25 15:12:55
+ * @since 1.0, 2020-02-13 17:53:21
  */
 public class AntMerchantExpandIndirectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4113648515899125324L;
+	private static final long serialVersionUID = 4415574574715246217L;
 
 	/**
 	 * 商户地址信息
@@ -112,6 +112,8 @@ public class AntMerchantExpandIndirectCreateModel extends AlipayObject {
 PC：网站支付</br>
 APP：无线支付</br>
 F2F：当面付</br>
+PRE_F2F：线下预授权</br>
+PRE_APP：线上预授权</br>
 </br>
 PC和APP对应线上，F2F对应线下。
 	 */

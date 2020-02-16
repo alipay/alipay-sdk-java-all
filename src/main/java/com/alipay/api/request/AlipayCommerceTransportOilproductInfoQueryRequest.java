@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.oilproduct.info.query request
  * 
  * @author auto create
- * @since 1.0, 2019-12-24 11:15:37
+ * @since 1.0, 2020-01-10 17:36:09
  */
 public class AlipayCommerceTransportOilproductInfoQueryRequest implements AlipayRequest<AlipayCommerceTransportOilproductInfoQueryResponse> {
 

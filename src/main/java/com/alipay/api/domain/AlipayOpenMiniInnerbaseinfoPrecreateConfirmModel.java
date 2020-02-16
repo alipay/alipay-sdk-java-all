@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序预创建确认生成
  *
  * @author auto create
- * @since 1.0, 2020-01-09 14:05:22
+ * @since 1.0, 2020-02-07 21:49:41
  */
 public class AlipayOpenMiniInnerbaseinfoPrecreateConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8379297456663255167L;
+	private static final long serialVersionUID = 8269963255761457135L;
 
 	/**
 	 * 小程序ID

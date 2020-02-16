@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 匹配用户标签删除接口
  *
  * @author auto create
- * @since 1.0, 2018-12-24 10:49:34
+ * @since 1.0, 2020-01-10 18:10:16
  */
 public class AlipayOpenPublicMatchuserLabelDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8173887279229457255L;
+	private static final long serialVersionUID = 5729814177828179358L;
 
 	/**
 	 * 标签id

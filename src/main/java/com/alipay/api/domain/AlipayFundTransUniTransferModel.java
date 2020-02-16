@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝转账支付接口
  *
  * @author auto create
- * @since 1.0, 2019-12-16 22:11:51
+ * @since 1.0, 2020-02-14 20:46:22
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4787258683732358475L;
+	private static final long serialVersionUID = 6895848898412325384L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下：
@@ -25,10 +25,16 @@ DIRECT_TRANSFER：B2C现金红包、单笔无密转账到支付宝/银行卡
 	 * 转账业务请求的扩展参数，支持传入的扩展参数如下：
 1、sub_biz_scene 子业务场景，红包业务必传，取值REDPACKET，C2C现金红包、B2C现金红包均需传入；
 
-2、withdraw_timeliness为转账到银行卡的预期到账时间，可选（不传入则默认为T1），T0表示预期T+0到账，T1表示预期T+1到账，到账时效受银行机构处理影响，支付宝无法保证一定是T0或者T1到账；
+2、withdraw_timeliness为转账到银行卡的预期到账时间，可选（不传入则默认为T1），取值T0表示预期T+0到账，取值T1表示预期T+1到账，因到账时效受银行机构处理影响，支付宝无法保证一定是T0或者T1到账；
 	 */
 	@ApiField("business_params")
 	private String businessParams;
+
+	/**
+	 * 多币种信息字段，填充支付金额及币种，转账金额及币种，结算金额及币种
+	 */
+	@ApiField("mutiple_currency_detail")
+	private MutipleCurrencyDetail mutipleCurrencyDetail;
 
 	/**
 	 * 转账业务的标题，用于在支付宝用户的账单里显示
@@ -100,6 +106,13 @@ TRANS_ACCOUNT_NO_PWD产品取值范围[0.1,100000000]
 	}
 	public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
+	}
+
+	public MutipleCurrencyDetail getMutipleCurrencyDetail() {
+		return this.mutipleCurrencyDetail;
+	}
+	public void setMutipleCurrencyDetail(MutipleCurrencyDetail mutipleCurrencyDetail) {
+		this.mutipleCurrencyDetail = mutipleCurrencyDetail;
 	}
 
 	public String getOrderTitle() {

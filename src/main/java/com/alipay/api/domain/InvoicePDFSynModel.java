@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票同步简单模式下的发票信息入参模型
  *
  * @author auto create
- * @since 1.0, 2018-12-21 11:13:53
+ * @since 1.0, 2020-02-10 21:21:30
  */
 public class InvoicePDFSynModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1575277418532696944L;
+	private static final long serialVersionUID = 1882444338494431453L;
 
 	/**
 	 * 预留的扩展字段，格式如：key1=value1\nkey2=value2\nkey3=value3，字段之间以\n(换行符)分隔。

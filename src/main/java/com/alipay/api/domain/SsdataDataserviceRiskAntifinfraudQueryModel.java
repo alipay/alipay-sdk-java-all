@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 互联网金融反欺诈服务
  *
  * @author auto create
- * @since 1.0, 2017-07-26 14:35:47
+ * @since 1.0, 2020-02-10 16:15:33
  */
 public class SsdataDataserviceRiskAntifinfraudQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2259338921253918661L;
+	private static final long serialVersionUID = 7782448456845165766L;
 
 	/**
 	 * 行为发生时的Apdid值

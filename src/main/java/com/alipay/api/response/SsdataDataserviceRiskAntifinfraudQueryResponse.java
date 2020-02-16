@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.antifinfraud.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-02-10 16:15:33
  */
 public class SsdataDataserviceRiskAntifinfraudQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1382978644177856597L;
+	private static final long serialVersionUID = 7122733185573819396L;
 
 	/** 
 	 * 风险解释，即本次风险评分中TOP 3，信息代码、风险因子代码、风险因子名、风险描述。详情请参考

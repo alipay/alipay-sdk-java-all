@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 2133
  *
  * @author auto create
- * @since 1.0, 2019-09-21 14:29:35
+ * @since 1.0, 2020-02-05 14:16:13
  */
 public class AlipaySecurityProdDfesfDefBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6776266751415369866L;
+	private static final long serialVersionUID = 2179953113929545573L;
+
+	/**
+	 * 11
+	 */
+	@ApiField("dd")
+	private GavintestNewLeveaOne dd;
 
 	/**
 	 * 纬度
 	 */
 	@ApiField("latitude")
 	private String latitude;
+
+	public GavintestNewLeveaOne getDd() {
+		return this.dd;
+	}
+	public void setDd(GavintestNewLeveaOne dd) {
+		this.dd = dd;
+	}
 
 	public String getLatitude() {
 		return this.latitude;

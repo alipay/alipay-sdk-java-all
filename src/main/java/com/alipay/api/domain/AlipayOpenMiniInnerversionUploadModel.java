@@ -10,68 +10,68 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建构建任务
  *
  * @author auto create
- * @since 1.0, 2019-12-19 21:28:36
+ * @since 1.0, 2020-02-10 10:51:41
  */
 public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8829327937119486752L;
+	private static final long serialVersionUID = 8211661852484283929L;
 
 	/**
-	 * 业务来源
+	 * 业务来源，新接入方需要向支付宝申请专用来源，否则不予接入。https://yuque.antfin-inc.com/tinyapp-all/qddncu/bidushixiang
 	 */
 	@ApiField("app_origin")
 	private String appOrigin;
 
 	/**
-	 * IDE开发打包类型
+	 * IDE开发打包类型，写死tinyApp
 	 */
 	@ApiField("build_app_type")
 	private String buildAppType;
 
 	/**
-	 * 扩展信息
+	 * 扩展信息，比如adaptorName、tinycliVersion、tinycliName、import-module、allowPrecompile、extJson、allowInstallDependency、aggregationMainAppId
 	 */
 	@ApiField("build_extra_info")
 	private String buildExtraInfo;
 
 	/**
-	 * js api 权限文件
+	 * jsapi 权限文件,钉钉外请勿传
 	 */
 	@ApiField("build_js_permission")
 	private String buildJsPermission;
 
 	/**
-	 * 主入口
+	 * 小程序页面主入口。/index.html#page/component/index，该值需要和extendInfo中的page参数保持一致
 	 */
 	@ApiField("build_main_url")
 	private String buildMainUrl;
 
 	/**
-	 * 最大Android客户端版本号
+	 * 最大Android客户端版本号，禁止使用，如果需要使用请联系小程序平台评估，否则端上会出现问题
 	 */
 	@ApiField("build_max_android_client_version")
 	private String buildMaxAndroidClientVersion;
 
 	/**
-	 * 最大iOS客户单版本号
+	 * 最大iOS客户单版本号，禁止使用，如果需要使用请联系小程序平台评估，否则端上会出现问题
 	 */
 	@ApiField("build_max_ios_client_version")
 	private String buildMaxIosClientVersion;
 
 	/**
-	 * 最小Android客户端版本号
+	 * 最小Android客户端版本号，禁止使用，如果需要使用请联系小程序平台评估，否则端上会出现问题
 	 */
 	@ApiField("build_min_android_client_version")
 	private String buildMinAndroidClientVersion;
 
 	/**
-	 * 最小iOS客户单版本号
+	 * 最小iOS客户单版本号，禁止使用，如果需要使用请联系小程序平台评估，否则端上会出现问题
 	 */
 	@ApiField("build_min_ios_client_version")
 	private String buildMinIosClientVersion;
 
 	/**
-	 * 源码包MD5
+	 * 源码包文件流的MD5字符串
 	 */
 	@ApiField("build_package_md_5")
 	private String buildPackageMd5;
@@ -83,7 +83,7 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	private String buildPackageName;
 
 	/**
-	 * 小程序源码包
+	 * base64编码后的小程序源码包文件流
 	 */
 	@ApiField("build_package_stream")
 	private String buildPackageStream;
@@ -101,7 +101,7 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	private String buildSourcePkgSize;
 
 	/**
-	 * 源码包地址
+	 * 源码包地址，源码包大小不能超过20M且地址必须永久有效，若超20M，将限制业务来源调用。将源码文件夹整个用zip格式压缩成后缀amr文件传至文件服务器
 	 */
 	@ApiField("build_source_pkg_url")
 	private String buildSourcePkgUrl;
@@ -125,7 +125,7 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	private String bundleId;
 
 	/**
-	 * 多端类型
+	 * 多端类型，除了钉钉外其他业务方禁止使用
 	 */
 	@ApiField("client_type")
 	private String clientType;

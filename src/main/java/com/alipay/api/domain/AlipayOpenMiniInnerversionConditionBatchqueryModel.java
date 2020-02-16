@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据状态批量查询版本信息
  *
  * @author auto create
- * @since 1.0, 2019-10-31 11:18:51
+ * @since 1.0, 2020-02-13 23:49:12
  */
 public class AlipayOpenMiniInnerversionConditionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7569539445796475284L;
+	private static final long serialVersionUID = 7512269985587986313L;
 
 	/**
 	 * 业务来源
@@ -26,7 +26,7 @@ public class AlipayOpenMiniInnerversionConditionBatchqueryModel extends AlipayOb
 	private String bundleId;
 
 	/**
-	 * 小程序应用ID
+	 * 小程序ID，仅特殊场景使用，普通业务方无需关注该参数。
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;

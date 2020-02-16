@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动接口(修改)
  *
  * @author auto create
- * @since 1.0, 2019-12-25 16:59:14
+ * @since 1.0, 2020-01-10 17:35:28
  */
 public class AlipayCommerceTransportVehicleownerCampaignModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8251496311888676525L;
+	private static final long serialVersionUID = 8568917821176498975L;
 
 	/**
 	 * 0.优惠券（目前仅提供一种后续增加）。必选项，单选。

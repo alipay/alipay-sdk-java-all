@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotAdvertiserDeviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2177676296845294776L;
+	private static final long serialVersionUID = 4384597529474448811L;
 
 	/** 
 	 * 获取商户下设备列表

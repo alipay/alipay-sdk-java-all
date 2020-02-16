@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 流程配置信息（E签宝）
  *
  * @author auto create
- * @since 1.0, 2019-12-25 11:29:04
+ * @since 1.0, 2020-02-11 17:06:11
  */
 public class ConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6264869962536681723L;
+	private static final long serialVersionUID = 1734354691115616824L;
 
 	/**
 	 * 附件信息（collect_attachement值为true时必填）
@@ -24,6 +27,13 @@ public class ConfigInfo extends AlipayObject {
 	 */
 	@ApiField("collect_attachement")
 	private Boolean collectAttachement;
+
+	/**
+	 * 收集证件类型列表
+	 */
+	@ApiListField("collect_cert_types")
+	@ApiField("string")
+	private List<String> collectCertTypes;
 
 	/**
 	 * 公司编号-SF
@@ -73,6 +83,13 @@ public class ConfigInfo extends AlipayObject {
 	}
 	public void setCollectAttachement(Boolean collectAttachement) {
 		this.collectAttachement = collectAttachement;
+	}
+
+	public List<String> getCollectCertTypes() {
+		return this.collectCertTypes;
+	}
+	public void setCollectCertTypes(List<String> collectCertTypes) {
+		this.collectCertTypes = collectCertTypes;
 	}
 
 	public String getCompanyNo() {

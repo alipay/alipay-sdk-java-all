@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝加油站油品信息查询接口
  *
  * @author auto create
- * @since 1.0, 2019-12-24 11:15:37
+ * @since 1.0, 2020-01-10 17:36:09
  */
 public class AlipayCommerceTransportOilproductInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6861571526549833247L;
+	private static final long serialVersionUID = 6374949149445612425L;
 
 	/**
 	 * 来源

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁金服信息安全平台风险扫描接口
  *
  * @author auto create
- * @since 1.0, 2018-03-19 21:01:13
+ * @since 1.0, 2020-02-01 11:36:43
  */
 public class AlipaySecurityRiskRiskscanSingleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4727925467521837775L;
+	private static final long serialVersionUID = 1594936494821938551L;
 
 	/**
 	 * 蚂蚁信息安全平台为接入方分配的业务key，必须正确

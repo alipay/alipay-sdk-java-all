@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人群数量查询
  *
  * @author auto create
- * @since 1.0, 2018-12-24 10:46:36
+ * @since 1.0, 2020-01-10 18:07:44
  */
 public class AlipayOpenPublicGroupCrowdQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7242144195775969735L;
+	private static final long serialVersionUID = 1172886665957227166L;
 
 	/**
 	 * 用户分组的规则项列表，规则项之间元素是与的逻辑，每个规则项内部用多个值表示或的逻辑

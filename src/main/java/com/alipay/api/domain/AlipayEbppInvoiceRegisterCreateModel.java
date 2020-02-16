@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 提交入驻工单信息
  *
  * @author auto create
- * @since 1.0, 2019-11-15 15:34:36
+ * @since 1.0, 2020-02-13 14:44:50
  */
 public class AlipayEbppInvoiceRegisterCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7532284558378299233L;
+	private static final long serialVersionUID = 2621675686442677886L;
 
 	/**
 	 * 联系人信息
@@ -35,7 +35,7 @@ public class AlipayEbppInvoiceRegisterCreateModel extends AlipayObject {
 	private InvoiceCompanyInfo invoiceCompany;
 
 	/**
-	 * 发票订购信息。当业务前台是 由服务市场订购后发起入驻时，必填
+	 * 发票订购信息。当业务前台是由服务市场订购后发起入驻时，且register_type是new后者renew时，必填；register_type是init或者online时，为空；
 	 */
 	@ApiListField("invoice_order")
 	@ApiField("invoice_order_info")
@@ -69,7 +69,7 @@ public class AlipayEbppInvoiceRegisterCreateModel extends AlipayObject {
 
 	/**
 	 * 入驻类型，可选值：
-新订购：new，续订：renew，已有税控初始化：init
+新订购：new，续订：renew，已有税控初始化：init，线下商户上线：online
 	 */
 	@ApiField("register_type")
 	private String registerType;

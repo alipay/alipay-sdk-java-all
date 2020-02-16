@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建准入检测任务
  *
  * @author auto create
- * @since 1.0, 2019-03-20 21:38:06
+ * @since 1.0, 2020-02-12 12:01:56
  */
 public class AlipayEbppDetectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5746686569631778933L;
+	private static final long serialVersionUID = 8446199612439729512L;
 
 	/**
 	 * 业务类型。巡检平台统一分配。

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务市场发票服务订购信息
  *
  * @author auto create
- * @since 1.0, 2019-11-15 14:06:49
+ * @since 1.0, 2020-01-16 17:52:34
  */
 public class InvoiceOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8727635688547129531L;
+	private static final long serialVersionUID = 7772943932929878343L;
 
 	/**
 	 * 商品CODE

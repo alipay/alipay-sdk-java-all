@@ -7,17 +7,25 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票授权关系解约
  *
  * @author auto create
- * @since 1.0, 2019-12-25 10:07:58
+ * @since 1.0, 2020-01-10 11:13:24
  */
 public class AlipayEbppInvoiceAuthUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4461597332882979739L;
+	private static final long serialVersionUID = 6431645733671385326L;
 
 	/**
 	 * 发票授权类型，可选值：INVOICE_AUTO_SYNC（发票自动回传）
+INVOICE_TWOWAY_AUTO_SYNC（发票双向自动回传）
 	 */
 	@ApiField("authorization_type")
 	private String authorizationType;
+
+	/**
+	 * 扩展字段，格式为：KEY1=VALUE1,KEY2=VALUE2,KEY3=VALUE3
+邮箱地址KEY为EMAIL_ADDRESS
+	 */
+	@ApiField("extend_fields")
+	private String extendFields;
 
 	/**
 	 * 开票商户品牌简称，与商户入驻时的品牌简称保持一致。
@@ -36,6 +44,13 @@ public class AlipayEbppInvoiceAuthUnsignModel extends AlipayObject {
 	}
 	public void setAuthorizationType(String authorizationType) {
 		this.authorizationType = authorizationType;
+	}
+
+	public String getExtendFields() {
+		return this.extendFields;
+	}
+	public void setExtendFields(String extendFields) {
+		this.extendFields = extendFields;
 	}
 
 	public String getmShortName() {

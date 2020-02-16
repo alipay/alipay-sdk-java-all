@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEprintTokenRefreshModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2293648142287515117L;
+	private static final long serialVersionUID = 8223959235622966456L;
 
 	/**
 	 * 应用ID
