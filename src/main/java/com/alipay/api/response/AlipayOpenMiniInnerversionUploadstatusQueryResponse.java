@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerversion.uploadstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-12 10:55:08
+ * @since 1.0, 2020-03-04 14:25:07
  */
 public class AlipayOpenMiniInnerversionUploadstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1124963493655594813L;
+	private static final long serialVersionUID = 7573239284397894462L;
 
 	/** 
 	 * 构建信息
@@ -33,10 +33,22 @@ public class AlipayOpenMiniInnerversionUploadstatusQueryResponse extends AlipayR
 	private String buildStatus;
 
 	/** 
+	 * 构建日志地址
+	 */
+	@ApiField("log_url")
+	private String logUrl;
+
+	/** 
 	 * 是否需要轮询
 	 */
 	@ApiField("need_rotation")
 	private String needRotation;
+
+	/** 
+	 * 构建的结果地址
+	 */
+	@ApiField("result_url")
+	private String resultUrl;
 
 	/** 
 	 * 创建版本结果
@@ -65,11 +77,25 @@ public class AlipayOpenMiniInnerversionUploadstatusQueryResponse extends AlipayR
 		return this.buildStatus;
 	}
 
+	public void setLogUrl(String logUrl) {
+		this.logUrl = logUrl;
+	}
+	public String getLogUrl( ) {
+		return this.logUrl;
+	}
+
 	public void setNeedRotation(String needRotation) {
 		this.needRotation = needRotation;
 	}
 	public String getNeedRotation( ) {
 		return this.needRotation;
+	}
+
+	public void setResultUrl(String resultUrl) {
+		this.resultUrl = resultUrl;
+	}
+	public String getResultUrl( ) {
+		return this.resultUrl;
 	}
 
 	public void setVersionCreated(String versionCreated) {

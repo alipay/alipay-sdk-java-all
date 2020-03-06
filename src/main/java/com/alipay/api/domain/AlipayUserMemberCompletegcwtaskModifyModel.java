@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserMemberCompletegcwtaskModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7667931923652934996L;
+	private static final long serialVersionUID = 2141431327224979975L;
 
 	/**
 	 * 蚂蚁统一会员ID，16位2088开头。

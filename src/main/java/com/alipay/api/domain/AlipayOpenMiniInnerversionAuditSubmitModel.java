@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序版本提交审核
  *
  * @author auto create
- * @since 1.0, 2020-02-11 15:16:06
+ * @since 1.0, 2020-02-24 14:44:48
  */
 public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4524943641787662211L;
+	private static final long serialVersionUID = 2297916951499369211L;
 
 	/**
 	 * 小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考https://docs.alipay.com/isv/10325，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。
@@ -83,7 +83,7 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 需要提交审核的小程序appId，面向一方场景，其他场景误用
+	 * 小程序ID，特殊场景专用，普通业务方无需关注该参数。
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;

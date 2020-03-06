@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻业务状态数据同步接口
  *
  * @author auto create
- * @since 1.0, 2020-01-15 14:32:40
+ * @since 1.0, 2020-02-28 15:58:36
  */
 public class ZhimaDataStateDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8284981398552263523L;
+	private static final long serialVersionUID = 6763956829515292698L;
 
 	/**
 	 * 同步的数据具体内容(json字符串)，开发前与技术对接，将会给出需要的字段模型
@@ -26,7 +26,7 @@ public class ZhimaDataStateDataSyncModel extends AlipayObject {
 	private String bizStateCode;
 
 	/**
-	 * 此类目为分配给商户在一个信用服务下的不同类目分类，（如约定产品下的电影类目）
+	 * 此类目为分配给商户在内容下的不同分类，（如电影，直播）
 	 */
 	@ApiField("category_code")
 	private String categoryCode;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建准入检测任务
  *
  * @author auto create
- * @since 1.0, 2020-02-12 12:01:56
+ * @since 1.0, 2020-02-22 12:31:40
  */
 public class AlipayEbppDetectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8446199612439729512L;
+	private static final long serialVersionUID = 5772193828442716356L;
 
 	/**
 	 * 业务类型。巡检平台统一分配。
@@ -29,7 +29,7 @@ public class AlipayEbppDetectCreateModel extends AlipayObject {
 	private String dataFromType;
 
 	/**
-	 * 外部业务标识
+	 * 外部业务标识.如pipelineId
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -40,6 +40,18 @@ public class AlipayEbppDetectCreateModel extends AlipayObject {
 	@ApiListField("service_list")
 	@ApiField("detect_service_entity")
 	private List<DetectServiceEntity> serviceList;
+
+	/**
+	 * 小程序appId
+	 */
+	@ApiField("tinyapp_id")
+	private String tinyappId;
+
+	/**
+	 * 小程序pid
+	 */
+	@ApiField("tinyapp_partner_id")
+	private String tinyappPartnerId;
 
 	public String getBizType() {
 		return this.bizType;
@@ -67,6 +79,20 @@ public class AlipayEbppDetectCreateModel extends AlipayObject {
 	}
 	public void setServiceList(List<DetectServiceEntity> serviceList) {
 		this.serviceList = serviceList;
+	}
+
+	public String getTinyappId() {
+		return this.tinyappId;
+	}
+	public void setTinyappId(String tinyappId) {
+		this.tinyappId = tinyappId;
+	}
+
+	public String getTinyappPartnerId() {
+		return this.tinyappPartnerId;
+	}
+	public void setTinyappPartnerId(String tinyappPartnerId) {
+		this.tinyappPartnerId = tinyappPartnerId;
 	}
 
 }

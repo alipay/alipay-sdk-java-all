@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交通卡种子及脚本数据
  *
  * @author auto create
- * @since 1.0, 2019-12-18 19:54:54
+ * @since 1.0, 2020-02-25 18:36:35
  */
 public class WorldOfflineDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3692431452665529228L;
+	private static final long serialVersionUID = 4796141663665743576L;
 
 	/**
 	 * 生码模式

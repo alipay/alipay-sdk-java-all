@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单状态同步
  *
  * @author auto create
- * @since 1.0, 2019-11-11 19:23:33
+ * @since 1.0, 2020-03-02 13:00:36
  */
 public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3834375246811445274L;
+	private static final long serialVersionUID = 7826423241748369225L;
 
 	/**
 	 * 卡片有效期
@@ -79,6 +79,9 @@ public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 7：已退货
 8：换货中
 9：设备已注销
+10：设备注销失败
+11：已发卡
+12：已发签
 	 */
 	@ApiField("device_status")
 	private String deviceStatus;

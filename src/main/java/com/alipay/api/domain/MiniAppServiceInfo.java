@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序服务信息
  *
  * @author auto create
- * @since 1.0, 2020-02-05 17:13:59
+ * @since 1.0, 2020-02-21 15:19:16
  */
 public class MiniAppServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4693395681957136265L;
+	private static final long serialVersionUID = 3356896214629321339L;
+
+	/**
+	 * 是否是内部标，true/false
+	 */
+	@ApiField("is_inner")
+	private Boolean isInner;
 
 	/**
 	 * 是否订购，true/false
@@ -78,6 +84,13 @@ public class MiniAppServiceInfo extends AlipayObject {
 	 */
 	@ApiField("show_type")
 	private String showType;
+
+	public Boolean getIsInner() {
+		return this.isInner;
+	}
+	public void setIsInner(Boolean isInner) {
+		this.isInner = isInner;
+	}
 
 	public Boolean getIsOrder() {
 		return this.isOrder;

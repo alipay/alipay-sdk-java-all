@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MakePriceAgrs extends AlipayObject {
 
-	private static final long serialVersionUID = 7323214964398894867L;
+	private static final long serialVersionUID = 8251595173947445537L;
 
 	/**
 	 * 属性名称

@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4387862686134457383L;
+	private static final long serialVersionUID = 8357187828266863759L;
 
 	/**
-	 * 当离线消息挤压太多时，若设备上线将获取所有未过期的消息。推送太多消息对设备体验不太好，所以此字段用于设置消息是必达。当消息不是必达的
+	 * 消息是否必达(immediate_msg为false时此字段设置有效)，消息过期时间顺延3*24h. 建议使用expire_time设置消息过期时间
 	 */
 	@ApiField("bi_da")
 	private Boolean biDa;
@@ -39,9 +39,7 @@ itemid + sn: ITEMID_SN
 	private String itemId;
 
 	/**
-	 * 根据消息类型有不同的消息模板，传入的消息内容会是多个参数如云打印
-{"contentParams":["打印内容"],"target":"打印编号-可选默认第一个","instructionFormat":"template或cmd"}
-cloud_print: 消息内容详见: https://alipay.open.taobao.com/docs/doc.htm?spm=a219a.7629140.0.0.46cf4b70bQj0aZ&treeId=662&articleId=117980&docType=1#s1
+	 * 消息内容(xpaas_common:{"contentParams":["消息内容"]};audio_msg:{"contentParams":["语音内容"]};cloud_print:{"contentParams":["打印内容"],"target":"打印编号-可选默认第一个","instructionFormat":"template或cmd"})
 	 */
 	@ApiField("msg_content")
 	private String msgContent;
@@ -53,19 +51,19 @@ cloud_print: 消息内容详见: https://alipay.open.taobao.com/docs/doc.htm?spm
 	private String msgContentType;
 
 	/**
-	 * 消息过期时间戳(单位秒)， 默认为当前时间延期3天有效。若消息在此时间之前未推送，将不再推送（必达消息会永久保留直到推送成功）
+	 * 消息过期时间戳(ms)， 默认为当前时间顺延24h有效。当设备在线时消息服务过期之前尝试推送。最大过期时间顺延3*24h
 	 */
 	@ApiField("msg_expire")
 	private Long msgExpire;
 
 	/**
-	 * 离线消息，当设备在线时消息优先发送级别，越大优先级域高(优先级为正整数)。
+	 * 消息优先级（immediate_msg为false此字段设置有效）数字越大优先发送。
 	 */
 	@ApiField("msg_priority")
 	private Long msgPriority;
 
 	/**
-	 * 消息类型
+	 * 消息类型(通用消息: xpaas_common;语音消息: audio_msg;云打印: cloud_print)
 	 */
 	@ApiField("msg_type")
 	private String msgType;

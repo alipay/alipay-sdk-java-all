@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.identify.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-14 21:05:50
+ * @since 1.0, 2020-03-05 18:00:08
  */
 public class AlipayUserCertifyIdentifyInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7473582659584323354L;
+	private static final long serialVersionUID = 8691485761442427573L;
 
 	/** 
 	 * 如果是个人账号，就是个人的名字，如果是企业账号，就是企业名称
@@ -45,6 +45,12 @@ public class AlipayUserCertifyIdentifyInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("certify_time")
 	private String certifyTime;
+
+	/** 
+	 * havana id
+	 */
+	@ApiField("havana_id")
+	private String havanaId;
 
 	/** 
 	 * T表示认证，F表示未认证
@@ -233,6 +239,13 @@ public class AlipayUserCertifyIdentifyInfoQueryResponse extends AlipayResponse {
 	}
 	public String getCertifyTime( ) {
 		return this.certifyTime;
+	}
+
+	public void setHavanaId(String havanaId) {
+		this.havanaId = havanaId;
+	}
+	public String getHavanaId( ) {
+		return this.havanaId;
 	}
 
 	public void setIsCertified(String isCertified) {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2020-02-05 11:28:27
+ * @since 1.0, 2020-02-17 15:41:35
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7249675663713226535L;
+	private static final long serialVersionUID = 2376683342347676226L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -139,6 +139,13 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	 */
 	@ApiField("promo_params")
 	private PromoParam promoParams;
+
+	/**
+	 * 返回查询选项，商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。如：["fund_bill_list","voucher_detail_list","discount_goods_detail"]
+	 */
+	@ApiListField("query_options")
+	@ApiField("string")
+	private List<String> queryOptions;
 
 	/**
 	 * 描述分账信息，json格式，其它说明详见分账说明
@@ -366,6 +373,13 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	}
 	public void setPromoParams(PromoParam promoParams) {
 		this.promoParams = promoParams;
+	}
+
+	public List<String> getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(List<String> queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 	public RoyaltyInfo getRoyaltyInfo() {

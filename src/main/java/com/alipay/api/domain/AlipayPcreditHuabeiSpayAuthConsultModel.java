@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗月月付支付鉴权接口
  *
  * @author auto create
- * @since 1.0, 2020-02-14 11:53:45
+ * @since 1.0, 2020-03-02 20:18:50
  */
 public class AlipayPcreditHuabeiSpayAuthConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2786914569996182245L;
+	private static final long serialVersionUID = 7847327566619399363L;
 
 	/**
 	 * 月月付的资产编码类型；月月付接口，此处必须传：ALICREDITFF
@@ -63,6 +63,7 @@ public class AlipayPcreditHuabeiSpayAuthConsultModel extends AlipayObject {
 
 	/**
 	 * RECEIVE_IN_ONE_TIME:表达一次性提前收款服务
+RECEIVE_BY_PERIOD:按照周期收款
 	 */
 	@ApiField("receive_mode")
 	private String receiveMode;

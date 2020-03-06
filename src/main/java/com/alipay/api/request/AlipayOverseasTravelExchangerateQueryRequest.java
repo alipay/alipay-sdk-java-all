@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.exchangerate.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-02-24 11:12:32
  */
 public class AlipayOverseasTravelExchangerateQueryRequest implements AlipayRequest<AlipayOverseasTravelExchangerateQueryResponse> {
 

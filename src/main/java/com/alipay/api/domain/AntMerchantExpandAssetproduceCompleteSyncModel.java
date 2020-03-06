@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料生产完成反馈接口
  *
  * @author auto create
- * @since 1.0, 2018-07-30 13:46:14
+ * @since 1.0, 2020-02-26 19:10:49
  */
 public class AntMerchantExpandAssetproduceCompleteSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4818893245491455881L;
+	private static final long serialVersionUID = 5729678335537144674L;
 
 	/**
 	 * 物料生产单完成后指定物流信息

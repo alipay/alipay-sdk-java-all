@@ -11,17 +11,26 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-03-03 16:05:08
  */
 public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3577374924351764333L;
+	private static final long serialVersionUID = 1672618189691923913L;
 
 	/** 
 	 * 签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/** 
+	 * 当前绑卡状态：
+BINDED(已绑定)
+NOT_BIND(未绑定)
+OTHER_BIND(不同账号绑卡)
+	 */
+	@ApiField("bind_status")
+	private String bindStatus;
 
 	/** 
 	 * 买家支付宝账号，将用＊号屏蔽部分内容
@@ -57,7 +66,7 @@ public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 	private String city;
 
 	/** 
-	 * 一个支付宝账号绑定了多张医保卡，除本人意外的卡信息
+	 * 一个支付宝账号绑定了多张医保卡，除本人以外的卡信息
 	 */
 	@ApiListField("extend_cards")
 	@ApiField("extend_medical_card")
@@ -98,6 +107,18 @@ public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 	private String medicalCardType;
 
 	/** 
+	 * bind_satus= OTHER_BIND情况下输出,买家支付宝账号，将用*号屏蔽部分内容
+	 */
+	@ApiField("other_user_logon_id")
+	private String otherUserLogonId;
+
+	/** 
+	 * bind_satus= OTHER_BIND情况下输出, "off"代表其他账户已注销 "on"代表其他账户未注销
+	 */
+	@ApiField("other_user_status")
+	private String otherUserStatus;
+
+	/** 
 	 * 医保卡持卡人证件号码(脱敏)
 	 */
 	@ApiField("out_user_card_no")
@@ -122,6 +143,13 @@ public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 	}
 	public String getAgreementNo( ) {
 		return this.agreementNo;
+	}
+
+	public void setBindStatus(String bindStatus) {
+		this.bindStatus = bindStatus;
+	}
+	public String getBindStatus( ) {
+		return this.bindStatus;
 	}
 
 	public void setBuyerLogonId(String buyerLogonId) {
@@ -199,6 +227,20 @@ public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 	}
 	public String getMedicalCardType( ) {
 		return this.medicalCardType;
+	}
+
+	public void setOtherUserLogonId(String otherUserLogonId) {
+		this.otherUserLogonId = otherUserLogonId;
+	}
+	public String getOtherUserLogonId( ) {
+		return this.otherUserLogonId;
+	}
+
+	public void setOtherUserStatus(String otherUserStatus) {
+		this.otherUserStatus = otherUserStatus;
+	}
+	public String getOtherUserStatus( ) {
+		return this.otherUserStatus;
 	}
 
 	public void setOutUserCardNo(String outUserCardNo) {

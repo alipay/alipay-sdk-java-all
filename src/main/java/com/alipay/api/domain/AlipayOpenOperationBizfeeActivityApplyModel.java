@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenOperationBizfeeActivityApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2186295123976335296L;
+	private static final long serialVersionUID = 2794671448979318861L;
 
 	/**
 	 * 优惠活动码，由优惠平台创建并分配，对应于某一特定的优惠活动，例如免费提现额度提额活动，由运营同学进行录入，并提供给外部商户

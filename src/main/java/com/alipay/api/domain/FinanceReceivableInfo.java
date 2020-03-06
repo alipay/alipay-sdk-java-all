@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 区块链金融业务的标准应收账款信息
  *
  * @author auto create
- * @since 1.0, 2019-12-25 14:15:12
+ * @since 1.0, 2020-02-24 15:42:53
  */
 public class FinanceReceivableInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8791978483449865376L;
+	private static final long serialVersionUID = 5855962561188996172L;
 
 	/**
 	 * 账款金额，以元为单位，精确到小数点后2位
@@ -29,11 +29,18 @@ public class FinanceReceivableInfo extends AlipayObject {
 	private FinanceMemberInfo coreBusinessInfo;
 
 	/**
-	 * 向核心企业授信的配置id
+	 * 向核心企业授信的配置id(已弃用)，请参考credit_idxs
 	 */
 	@ApiListField("credit_ids")
 	@ApiField("string")
 	private List<String> creditIds;
+
+	/**
+	 * 授信列表
+	 */
+	@ApiListField("credit_idxs")
+	@ApiField("finance_credit_item")
+	private List<FinanceCreditItem> creditIdxs;
 
 	/**
 	 * 币种
@@ -97,6 +104,13 @@ public class FinanceReceivableInfo extends AlipayObject {
 	}
 	public void setCreditIds(List<String> creditIds) {
 		this.creditIds = creditIds;
+	}
+
+	public List<FinanceCreditItem> getCreditIdxs() {
+		return this.creditIdxs;
+	}
+	public void setCreditIdxs(List<FinanceCreditItem> creditIdxs) {
+		this.creditIdxs = creditIdxs;
 	}
 
 	public String getCurrency() {

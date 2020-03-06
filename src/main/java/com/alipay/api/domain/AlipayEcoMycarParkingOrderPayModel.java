@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车缴费代扣接口API
  *
  * @author auto create
- * @since 1.0, 2019-12-26 17:02:23
+ * @since 1.0, 2020-03-03 16:25:48
  */
 public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8238881185483881273L;
+	private static final long serialVersionUID = 7473823655655481858L;
 
 	/**
 	 * 代扣返佣的支付宝用户号。
@@ -47,7 +47,7 @@ false不开启(默认)
 	private Boolean isAdvance;
 
 	/**
-	 * ISV停车场ID，由ISV定义的停车场标识，系统唯一，parking_id和out_parking_id不能同时为空
+	 * ISV停车场ID，由ISV定义的停车场标识，系统唯一，必填
 	 */
 	@ApiField("out_parking_id")
 	private String outParkingId;
@@ -59,7 +59,7 @@ false不开启(默认)
 	private String outTradeNo;
 
 	/**
-	 * 支付宝停车平台ID，由支付宝定义的该停车场标识，系统唯一, parking_id和out_parking_id不能同时为空
+	 * 支付宝停车平台ID，由支付宝定义的该停车场标识，系统唯一, 必填
 	 */
 	@ApiField("parking_id")
 	private String parkingId;

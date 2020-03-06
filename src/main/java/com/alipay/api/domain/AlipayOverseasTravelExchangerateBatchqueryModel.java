@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跨境游汇率批量查询
  *
  * @author auto create
- * @since 1.0, 2018-06-14 11:21:50
+ * @since 1.0, 2020-02-24 11:11:48
  */
 public class AlipayOverseasTravelExchangerateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4195653551328194467L;
+	private static final long serialVersionUID = 8821743571424285988L;
 
 	/**
 	 * 货币代码列表，货币代码遵循ISO标准alpha- 3币种代码，用英文半角逗号分隔，支持的币种可以联系支付宝技术支持获取

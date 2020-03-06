@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充享惠用户使用记录
  *
  * @author auto create
- * @since 1.0, 2020-02-10 18:01:06
+ * @since 1.0, 2020-02-29 22:11:52
  */
 public class PayForPrivilegeRechargeCardUseLog extends AlipayObject {
 
-	private static final long serialVersionUID = 1667674918649718962L;
+	private static final long serialVersionUID = 7474849538841116853L;
 
 	/**
 	 * 交易总金额
@@ -40,7 +40,7 @@ public class PayForPrivilegeRechargeCardUseLog extends AlipayObject {
 	private String bizType;
 
 	/**
-	 * 订单ID
+	 * 该字段已废弃，请勿使用
 	 */
 	@ApiField("order_id")
 	private String orderId;

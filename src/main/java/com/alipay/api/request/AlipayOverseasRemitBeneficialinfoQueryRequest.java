@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.remit.beneficialinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2020-02-11 15:27:01
+ * @since 1.0, 2020-03-05 15:10:08
  */
 public class AlipayOverseasRemitBeneficialinfoQueryRequest implements AlipayRequest<AlipayOverseasRemitBeneficialinfoQueryResponse> {
 

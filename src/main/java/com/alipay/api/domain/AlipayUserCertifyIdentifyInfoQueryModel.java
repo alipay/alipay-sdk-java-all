@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户身份信息查询
  *
  * @author auto create
- * @since 1.0, 2019-11-14 21:05:42
+ * @since 1.0, 2020-03-05 17:58:55
  */
 public class AlipayUserCertifyIdentifyInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1285693417358821943L;
+	private static final long serialVersionUID = 5485892152158375976L;
+
+	/**
+	 * havana_id
+	 */
+	@ApiField("havana_id")
+	private String havanaId;
 
 	/**
 	 * 登录ID
@@ -24,6 +30,13 @@ public class AlipayUserCertifyIdentifyInfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getHavanaId() {
+		return this.havanaId;
+	}
+	public void setHavanaId(String havanaId) {
+		this.havanaId = havanaId;
+	}
 
 	public String getLogonId() {
 		return this.logonId;

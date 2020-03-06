@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询城市服务中心化业务相关信息
  *
  * @author auto create
- * @since 1.0, 2019-02-18 14:22:31
+ * @since 1.0, 2020-02-28 20:57:37
  */
 public class AlipayEcoBasicBizinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4491919735698656373L;
+	private static final long serialVersionUID = 6396424515466565614L;
 
 	/**
 	 * 表示提供目标业务的机构名称

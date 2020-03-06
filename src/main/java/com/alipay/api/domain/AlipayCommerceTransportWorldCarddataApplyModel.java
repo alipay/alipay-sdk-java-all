@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 非中国大陆用户获取卡种子及相关数据。
  *
  * @author auto create
- * @since 1.0, 2019-12-18 19:54:54
+ * @since 1.0, 2020-02-25 18:34:57
  */
 public class AlipayCommerceTransportWorldCarddataApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8447176979614912293L;
+	private static final long serialVersionUID = 4873458835172192498L;
 
 	/**
 	 * 请求号

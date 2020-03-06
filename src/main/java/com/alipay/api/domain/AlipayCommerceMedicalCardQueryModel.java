@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗机构根据用户userId查询该账户的医保卡相关信息
  *
  * @author auto create
- * @since 1.0, 2018-09-12 16:46:50
+ * @since 1.0, 2020-03-03 16:03:11
  */
 public class AlipayCommerceMedicalCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2177682795158981173L;
+	private static final long serialVersionUID = 1346159712349838124L;
 
 	/**
 	 * 支付授权码
@@ -39,6 +39,13 @@ public class AlipayCommerceMedicalCardQueryModel extends AlipayObject {
 	private String extendParams;
 
 	/**
+	 * 机构类型：医保(YB),人社(RS)
+默认为RS
+	 */
+	@ApiField("ins_type")
+	private String insType;
+
+	/**
 	 * 跳回的地址
 	 */
 	@ApiField("return_url")
@@ -52,6 +59,12 @@ public class AlipayCommerceMedicalCardQueryModel extends AlipayObject {
 	 */
 	@ApiField("scene")
 	private String scene;
+
+	/**
+	 * 版本号
+	 */
+	@ApiField("version_no")
+	private String versionNo;
 
 	public String getAuthCode() {
 		return this.authCode;
@@ -81,6 +94,13 @@ public class AlipayCommerceMedicalCardQueryModel extends AlipayObject {
 		this.extendParams = extendParams;
 	}
 
+	public String getInsType() {
+		return this.insType;
+	}
+	public void setInsType(String insType) {
+		this.insType = insType;
+	}
+
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
@@ -93,6 +113,13 @@ public class AlipayCommerceMedicalCardQueryModel extends AlipayObject {
 	}
 	public void setScene(String scene) {
 		this.scene = scene;
+	}
+
+	public String getVersionNo() {
+		return this.versionNo;
+	}
+	public void setVersionNo(String versionNo) {
+		this.versionNo = versionNo;
 	}
 
 }

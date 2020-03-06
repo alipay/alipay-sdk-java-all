@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.world.carddata.apply response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-18 19:55:04
+ * @since 1.0, 2020-02-25 18:34:57
  */
 public class AlipayCommerceTransportWorldCarddataApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7528671299481217249L;
+	private static final long serialVersionUID = 1187239124296635789L;
 
 	/** 
 	 * 卡号

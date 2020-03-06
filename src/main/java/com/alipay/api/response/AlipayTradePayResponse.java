@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-05 11:28:56
+ * @since 1.0, 2020-02-24 15:05:05
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7748371984578142182L;
+	private static final long serialVersionUID = 5285833987591264121L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -111,13 +111,15 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	private String discountAmount;
 
 	/** 
-	 * 本次交易支付所使用的单品券优惠的商品优惠信息
+	 * 本次交易支付所使用的单品券优惠的商品优惠信息。
+只有在query_options中指定时才返回该字段信息。
 	 */
 	@ApiField("discount_goods_detail")
 	private String discountGoodsDetail;
 
 	/** 
-	 * 交易支付使用的资金渠道
+	 * 交易支付使用的资金渠道。
+只有在签约中指定需要返回资金明细，或者入参的query_options中指定时才返回该字段信息。
 	 */
 	@ApiListField("fund_bill_list")
 	@ApiField("trade_fund_bill")
@@ -233,7 +235,8 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	private String transPayRate;
 
 	/** 
-	 * 本交易支付时使用的所有优惠券信息
+	 * 本交易支付时使用的所有优惠券信息。
+只有在query_options中指定时才返回该字段信息。
 	 */
 	@ApiListField("voucher_detail_list")
 	@ApiField("voucher_detail")

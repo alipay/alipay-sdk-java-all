@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商户可使用该接口查询自已通过alipay.trade.refund提交的退款请求是否执行成功。
  *
  * @author auto create
- * @since 1.0, 2019-07-08 15:18:47
+ * @since 1.0, 2020-02-17 15:41:51
  */
 public class AlipayTradeFastpayRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6136649698253327825L;
+	private static final long serialVersionUID = 3111819565395551668L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用；
@@ -31,6 +34,13 @@ public class AlipayTradeFastpayRefundQueryModel extends AlipayObject {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 查询选项，商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。如：["refund_detail_item_list"]
+	 */
+	@ApiListField("query_options")
+	@ApiField("string")
+	private List<String> queryOptions;
 
 	/**
 	 * 支付宝交易号，和商户订单号不能同时为空
@@ -57,6 +67,13 @@ public class AlipayTradeFastpayRefundQueryModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public List<String> getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(List<String> queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 	public String getTradeNo() {

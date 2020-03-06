@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.pay.result.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-11 12:07:27
+ * @since 1.0, 2020-02-19 17:05:26
  */
 public class AlipayEcoCplifePayResultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8844612339585298964L;
+	private static final long serialVersionUID = 6634173159287292646L;
 
 	/** 
 	 * 本次交易关联的账单详情

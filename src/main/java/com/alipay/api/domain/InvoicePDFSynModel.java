@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票同步简单模式下的发票信息入参模型
  *
  * @author auto create
- * @since 1.0, 2020-02-10 21:21:30
+ * @since 1.0, 2020-02-17 17:13:17
  */
 public class InvoicePDFSynModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1882444338494431453L;
+	private static final long serialVersionUID = 3356796612188646563L;
 
 	/**
 	 * 预留的扩展字段，格式如：key1=value1\nkey2=value2\nkey3=value3，字段之间以\n(换行符)分隔。
 	 */
 	@ApiField("extend_fields")
 	private String extendFields;
+
+	/**
+	 * base64化的字符串
+	 */
+	@ApiField("file_base")
+	private String fileBase;
 
 	/**
 	 * PDF类型文件填写PDF，
@@ -44,11 +50,24 @@ JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * 压缩方式
+	 */
+	@ApiField("zip")
+	private String zip;
+
 	public String getExtendFields() {
 		return this.extendFields;
 	}
 	public void setExtendFields(String extendFields) {
 		this.extendFields = extendFields;
+	}
+
+	public String getFileBase() {
+		return this.fileBase;
+	}
+	public void setFileBase(String fileBase) {
+		this.fileBase = fileBase;
 	}
 
 	public String getFileDownloadType() {
@@ -77,6 +96,13 @@ JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getZip() {
+		return this.zip;
+	}
+	public void setZip(String zip) {
+		this.zip = zip;
 	}
 
 }

@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-11 12:30:05
+ * @since 1.0, 2020-02-17 15:43:22
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8528638221126299969L;
+	private static final long serialVersionUID = 8461272734521132665L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -101,7 +101,8 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	private String discountAmount;
 
 	/** 
-	 * 本次交易支付所使用的单品券优惠的商品优惠信息
+	 * 本次交易支付所使用的单品券优惠的商品优惠信息。
+只有在query_options中指定时才返回该字段信息。
 	 */
 	@ApiField("discount_goods_detail")
 	private String discountGoodsDetail;
@@ -114,7 +115,8 @@ json格式。
 	private String extInfos;
 
 	/** 
-	 * 交易支付使用的资金渠道
+	 * 交易支付使用的资金渠道。
+只有在签约中指定需要返回资金明细，或者入参的query_options中指定时才返回该字段信息。
 	 */
 	@ApiListField("fund_bill_list")
 	@ApiField("trade_fund_bill")
@@ -243,7 +245,8 @@ json格式。
 	private String tradeNo;
 
 	/** 
-	 * 返回的交易结算信息，包含分账、补差等信息
+	 * 返回的交易结算信息，包含分账、补差等信息。
+只有在query_options中指定时才返回该字段信息。
 	 */
 	@ApiField("trade_settle_info")
 	private TradeSettleInfo tradeSettleInfo;
@@ -267,7 +270,8 @@ json格式。
 	private String transPayRate;
 
 	/** 
-	 * 本交易支付时使用的所有优惠券信息
+	 * 本交易支付时使用的所有优惠券信息。
+只有在query_options中指定时才返回该字段信息。
 	 */
 	@ApiListField("voucher_detail_list")
 	@ApiField("voucher_detail")

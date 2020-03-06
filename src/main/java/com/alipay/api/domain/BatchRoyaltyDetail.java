@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量结算详情
  *
  * @author auto create
- * @since 1.0, 2019-09-09 11:25:22
+ * @since 1.0, 2020-03-01 19:02:48
  */
 public class BatchRoyaltyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8787768526727699935L;
+	private static final long serialVersionUID = 6839757764697527464L;
 
 	/**
 	 * 分账金额，单位元

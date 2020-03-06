@@ -7,17 +7,43 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸初始化唤起zim
  *
  * @author auto create
- * @since 1.0, 2019-12-23 19:56:22
+ * @since 1.0, 2020-03-02 14:32:25
  */
 public class ZolozAuthenticationCustomerSmilepayInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7741259883479888495L;
+	private static final long serialVersionUID = 1573315757377877541L;
+
+	/**
+	 * 刷脸服务Id
+	 */
+	@ApiField("service_id")
+	private String serviceId;
+
+	/**
+	 * 商户可传入刷脸服务所需的扩展参数，json格式
+	 */
+	@ApiField("service_params")
+	private String serviceParams;
 
 	/**
 	 * { "apdidToken": "设备指纹", "appName": "应用名称", "appVersion": "应用版本", "bioMetaInfo": "生物信息如2.3.0:3,-4" }
 	 */
 	@ApiField("zimmetainfo")
 	private String zimmetainfo;
+
+	public String getServiceId() {
+		return this.serviceId;
+	}
+	public void setServiceId(String serviceId) {
+		this.serviceId = serviceId;
+	}
+
+	public String getServiceParams() {
+		return this.serviceParams;
+	}
+	public void setServiceParams(String serviceParams) {
+		this.serviceParams = serviceParams;
+	}
 
 	public String getZimmetainfo() {
 		return this.zimmetainfo;

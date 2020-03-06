@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.data.state.data.sync response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-15 14:32:52
+ * @since 1.0, 2020-02-28 16:00:06
  */
 public class ZhimaDataStateDataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7737355748415794762L;
+	private static final long serialVersionUID = 7889816482569953773L;
 
 	/** 
 	 * 同步结果成功或失败,具体错误码在错误信息中

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多端小程序-真机预览接口
  *
  * @author auto create
- * @since 1.0, 2020-01-09 17:47:51
+ * @since 1.0, 2020-03-04 14:22:15
  */
 public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1158449335347531639L;
+	private static final long serialVersionUID = 5195911375928981131L;
 
 	/**
 	 * 构建参数- JSAPI 权限文件, JSON 字符串
@@ -76,6 +76,13 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	 */
 	@ApiField("scene")
 	private String scene;
+
+	/**
+	 * 分包信息
+	 */
+	@ApiListField("sub_packages")
+	@ApiField("sub_package")
+	private List<SubPackage> subPackages;
 
 	public String getBuildJsPermission() {
 		return this.buildJsPermission;
@@ -145,6 +152,13 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	}
 	public void setScene(String scene) {
 		this.scene = scene;
+	}
+
+	public List<SubPackage> getSubPackages() {
+		return this.subPackages;
+	}
+	public void setSubPackages(List<SubPackage> subPackages) {
+		this.subPackages = subPackages;
 	}
 
 }

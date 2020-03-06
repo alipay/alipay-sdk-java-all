@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 附件信息（E签宝）
  *
  * @author auto create
- * @since 1.0, 2019-12-25 10:59:03
+ * @since 1.0, 2020-03-03 20:01:28
  */
 public class AttachmentExplain extends AlipayObject {
 
-	private static final long serialVersionUID = 7632821441415887843L;
+	private static final long serialVersionUID = 2428429898839233213L;
 
 	/**
-	 * 是否允许上传更多附件 （collect_attachement值为true时必填）
+	 * 允许上传更多附件。开启后，除了“附件列表”中指定的内容，签署人可自由上传之多10张图片。默认值为false
 	 */
 	@ApiField("allow_more_uploads")
 	private Boolean allowMoreUploads;

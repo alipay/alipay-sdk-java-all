@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI认知服务端模型地址查询接口
  *
  * @author auto create
- * @since 1.0, 2020-02-12 10:40:23
+ * @since 1.0, 2020-02-17 15:03:19
  */
 public class AnttechAiCvTfjsModelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3336684311515916311L;
+	private static final long serialVersionUID = 2156114459341161173L;
 
 	/**
 	 * 模型服务code，模型服务唯一标示

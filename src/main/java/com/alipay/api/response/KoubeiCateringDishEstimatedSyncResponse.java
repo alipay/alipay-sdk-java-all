@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.estimated.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-30 11:48:01
+ * @since 1.0, 2020-03-05 15:42:55
  */
 public class KoubeiCateringDishEstimatedSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6793891775645551475L;
+	private static final long serialVersionUID = 2791756918732389759L;
 
 	
 

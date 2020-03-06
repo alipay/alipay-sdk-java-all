@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 流程配置信息（E签宝）
  *
  * @author auto create
- * @since 1.0, 2020-02-11 17:06:11
+ * @since 1.0, 2020-03-03 20:06:33
  */
 public class ConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1734354691115616824L;
+	private static final long serialVersionUID = 6539951652637583895L;
 
 	/**
 	 * 附件信息（collect_attachement值为true时必填）
@@ -54,6 +54,12 @@ public class ConfigInfo extends AlipayObject {
 	private String jumpUrl;
 
 	/**
+	 * 商户小程序签署地址（signModel字段值为1时 必填）
+	 */
+	@ApiField("merchant_mini_sign_url")
+	private String merchantMiniSignUrl;
+
+	/**
 	 * 回调地址，签署的过程和签署完成都会回调。
 	 */
 	@ApiField("notice_developer_url")
@@ -70,6 +76,12 @@ public class ConfigInfo extends AlipayObject {
 	 */
 	@ApiField("serial_no")
 	private String serialNo;
+
+	/**
+	 * 签署方式  0-e签宝小程序签署 1-商户小程序签署  默认0
+	 */
+	@ApiField("sign_model")
+	private Long signModel;
 
 	public AttachmentExplain getAttachmentExplain() {
 		return this.attachmentExplain;
@@ -113,6 +125,13 @@ public class ConfigInfo extends AlipayObject {
 		this.jumpUrl = jumpUrl;
 	}
 
+	public String getMerchantMiniSignUrl() {
+		return this.merchantMiniSignUrl;
+	}
+	public void setMerchantMiniSignUrl(String merchantMiniSignUrl) {
+		this.merchantMiniSignUrl = merchantMiniSignUrl;
+	}
+
 	public String getNoticeDeveloperUrl() {
 		return this.noticeDeveloperUrl;
 	}
@@ -132,6 +151,13 @@ public class ConfigInfo extends AlipayObject {
 	}
 	public void setSerialNo(String serialNo) {
 		this.serialNo = serialNo;
+	}
+
+	public Long getSignModel() {
+		return this.signModel;
+	}
+	public void setSignModel(Long signModel) {
+		this.signModel = signModel;
 	}
 
 }

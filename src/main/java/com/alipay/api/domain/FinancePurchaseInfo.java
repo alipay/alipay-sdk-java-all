@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 区块链金融业务的采购内容信息
  *
  * @author auto create
- * @since 1.0, 2019-12-16 16:53:27
+ * @since 1.0, 2020-02-18 09:19:19
  */
 public class FinancePurchaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6865759391425291112L;
+	private static final long serialVersionUID = 8387327679881642723L;
 
 	/**
 	 * 采购内容描述

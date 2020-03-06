@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceAccountRysenterpriseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1862282721499217859L;
+	private static final long serialVersionUID = 3844734535148559244L;
 
 	/**
 	 * 融易收资金账户

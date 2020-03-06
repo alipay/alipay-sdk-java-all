@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融资方终审结果通知
  *
  * @author auto create
- * @since 1.0, 2019-07-22 14:50:44
+ * @since 1.0, 2020-02-27 16:24:13
  */
 public class MybankCreditSceneprodLoanConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2677551946674143699L;
+	private static final long serialVersionUID = 5829325656553156968L;
 
 	/**
 	 * 网商针对一次客户主动申请生成的申请单据编号

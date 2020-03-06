@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2020-02-11 11:17:16
+ * @since 1.0, 2020-02-17 15:41:40
  */
 public class AlipayTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3784685993886628789L;
+	private static final long serialVersionUID = 8651439192198243531L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用；
@@ -32,7 +32,7 @@ trade_no,out_trade_no如果同时存在优先取trade_no
 	private String outTradeNo;
 
 	/**
-	 * 查询选项，商户通过上送该字段来定制查询返回信息
+	 * 查询选项，商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。如：["trade_settle_info","fund_bill_list","voucher_detail_list","discount_goods_detail"]
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")

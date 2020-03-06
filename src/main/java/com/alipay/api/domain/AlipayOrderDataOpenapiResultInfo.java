@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2019-11-14 14:06:04
+ * @since 1.0, 2020-03-04 20:01:59
  */
 public class AlipayOrderDataOpenapiResultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4186991128247136911L;
+	private static final long serialVersionUID = 1365256832846916619L;
 
 	/**
 	 * 订单金额，单位为元
@@ -77,10 +77,22 @@ public class AlipayOrderDataOpenapiResultInfo extends AlipayObject {
 	private List<OrderLogisticsInformation> logisticsInfoList;
 
 	/**
+	 * 商户订单业务类型
+	 */
+	@ApiField("merchant_biz_type")
+	private String merchantBizType;
+
+	/**
 	 * 商户订单链接地址
 	 */
 	@ApiField("merchant_order_link_page")
 	private String merchantOrderLinkPage;
+
+	/**
+	 * 外部订单号 out_biz_no唯一对应一笔订单
+	 */
+	@ApiField("merchant_order_no")
+	private String merchantOrderNo;
 
 	/**
 	 * 商户的uid，即所需查询订单的partnerId
@@ -113,6 +125,12 @@ REFUNDED-已退款
 	private String orderStatus;
 
 	/**
+	 * 订单类型，SERVICE_ORDER：服务订单 -TRADE_ORDER：交易订单
+	 */
+	@ApiField("order_type")
+	private String orderType;
+
+	/**
 	 * 商户前置额外费用
 	 */
 	@ApiField("pre_cost")
@@ -129,6 +147,18 @@ REFUNDED-已退款
 	 */
 	@ApiField("real_pay_amount")
 	private String realPayAmount;
+
+	/**
+	 * 门店信息
+	 */
+	@ApiField("shop_info")
+	private OrderShopInfoResult shopInfo;
+
+	/**
+	 * 凭证信息
+	 */
+	@ApiField("ticket_info")
+	private TicketInfoResult ticketInfo;
 
 	/**
 	 * 小程序appid
@@ -211,11 +241,25 @@ REFUNDED-已退款
 		this.logisticsInfoList = logisticsInfoList;
 	}
 
+	public String getMerchantBizType() {
+		return this.merchantBizType;
+	}
+	public void setMerchantBizType(String merchantBizType) {
+		this.merchantBizType = merchantBizType;
+	}
+
 	public String getMerchantOrderLinkPage() {
 		return this.merchantOrderLinkPage;
 	}
 	public void setMerchantOrderLinkPage(String merchantOrderLinkPage) {
 		this.merchantOrderLinkPage = merchantOrderLinkPage;
+	}
+
+	public String getMerchantOrderNo() {
+		return this.merchantOrderNo;
+	}
+	public void setMerchantOrderNo(String merchantOrderNo) {
+		this.merchantOrderNo = merchantOrderNo;
 	}
 
 	public String getMerchantUserId() {
@@ -246,6 +290,13 @@ REFUNDED-已退款
 		this.orderStatus = orderStatus;
 	}
 
+	public String getOrderType() {
+		return this.orderType;
+	}
+	public void setOrderType(String orderType) {
+		this.orderType = orderType;
+	}
+
 	public PreAmountInfoResult getPreCost() {
 		return this.preCost;
 	}
@@ -265,6 +316,20 @@ REFUNDED-已退款
 	}
 	public void setRealPayAmount(String realPayAmount) {
 		this.realPayAmount = realPayAmount;
+	}
+
+	public OrderShopInfoResult getShopInfo() {
+		return this.shopInfo;
+	}
+	public void setShopInfo(OrderShopInfoResult shopInfo) {
+		this.shopInfo = shopInfo;
+	}
+
+	public TicketInfoResult getTicketInfo() {
+		return this.ticketInfo;
+	}
+	public void setTicketInfo(TicketInfoResult ticketInfo) {
+		this.ticketInfo = ticketInfo;
 	}
 
 	public String getTinyAppId() {

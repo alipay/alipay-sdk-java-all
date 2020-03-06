@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部流量投放前的rta查询
  *
  * @author auto create
- * @since 1.0, 2020-01-03 11:14:59
+ * @since 1.0, 2020-03-03 10:49:35
  */
 public class AlipayUserInviteRtaConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6292184372455982771L;
+	private static final long serialVersionUID = 8535192871263311393L;
 
 	/**
 	 * 加密类型，空表示不加密

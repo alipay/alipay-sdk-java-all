@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金授权发码接口
  *
  * @author auto create
- * @since 1.0, 2020-01-08 15:35:06
+ * @since 1.0, 2020-02-17 16:07:52
  */
 public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1791421938558899662L;
+	private static final long serialVersionUID = 1247477574133992914L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位

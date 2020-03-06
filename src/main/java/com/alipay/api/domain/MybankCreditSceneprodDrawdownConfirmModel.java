@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景金融资方放款结果通知
  *
  * @author auto create
- * @since 1.0, 2019-07-22 14:50:54
+ * @since 1.0, 2020-02-27 16:24:46
  */
 public class MybankCreditSceneprodDrawdownConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3423868693625672475L;
+	private static final long serialVersionUID = 7434875763968133811L;
 
 	/**
 	 * 网商针对一次客户主动申请生成的申请单据编号

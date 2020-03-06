@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标签删除接口
  *
  * @author auto create
- * @since 1.0, 2020-01-10 18:06:35
+ * @since 1.0, 2020-02-19 15:42:16
  */
 public class AlipayOpenPublicLifeLabelDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5441175252272591287L;
+	private static final long serialVersionUID = 1449953122622752492L;
 
 	/**
 	 * 标签id, 只支持生活号自定义标签

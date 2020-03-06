@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 基于模板构建小程序版本
  *
  * @author auto create
- * @since 1.0, 2020-02-05 15:48:26
+ * @since 1.0, 2020-02-20 21:11:59
  */
 public class AlipayOpenMiniInnerversionTemplatebasedUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1889242486278594796L;
+	private static final long serialVersionUID = 8147593773854943514L;
 
 	/**
 	 * 版本号
@@ -24,6 +24,12 @@ public class AlipayOpenMiniInnerversionTemplatebasedUploadModel extends AlipayOb
 	 */
 	@ApiField("build_extra_info")
 	private String buildExtraInfo;
+
+	/**
+	 * 构建方式TEMPLATE_CONFIG_PKG：模板配置化；TEMPLATE_EXTEND：模板继承
+	 */
+	@ApiField("build_type")
+	private String buildType;
 
 	/**
 	 * 淘宝：com.taobao.app
@@ -79,6 +85,13 @@ public class AlipayOpenMiniInnerversionTemplatebasedUploadModel extends AlipayOb
 	}
 	public void setBuildExtraInfo(String buildExtraInfo) {
 		this.buildExtraInfo = buildExtraInfo;
+	}
+
+	public String getBuildType() {
+		return this.buildType;
+	}
+	public void setBuildType(String buildType) {
+		this.buildType = buildType;
 	}
 
 	public String getBundleId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可选票种
  *
  * @author auto create
- * @since 1.0, 2019-12-18 19:54:54
+ * @since 1.0, 2020-02-25 18:36:35
  */
 public class WorldTicketType extends AlipayObject {
 
-	private static final long serialVersionUID = 5359381138156579424L;
+	private static final long serialVersionUID = 8768636293165458821L;
 
 	/**
 	 * 票种代码

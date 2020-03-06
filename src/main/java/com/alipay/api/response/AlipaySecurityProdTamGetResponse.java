@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.tam.get response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-09 13:36:41
+ * @since 1.0, 2020-03-05 00:10:08
  */
 public class AlipaySecurityProdTamGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3328264485125116691L;
+	private static final long serialVersionUID = 2645996828362635314L;
 
 	/** 
 	 * encrypted_ta_bin（ta二进制文件的加密字符串）+ 不唯一+用于传递加密后的ta文件给OEM厂商服务端+获取方式为支付宝服务端加密后生成+特殊说明：输入框长度有限，示例值并非真实的值，实际文件长度可能会超过4096
@@ -27,6 +27,12 @@ public class AlipaySecurityProdTamGetResponse extends AlipayResponse {
 	private String encryptedTaData;
 
 	/** 
+	 * ext_info+不唯一+补充说明协议中不明确的信息+无枚举值
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
+
+	/** 
 	 * return_code(错误码)+不唯一+用于响应OEM厂商服务端的请求+是枚举值，000000含义为成功+生成方式由具体执行情况确定+其它枚举值进一步约定
 	 */
 	@ApiField("return_code")
@@ -38,6 +44,18 @@ ERR_TEE_FAIL ERR_TEE_RESOURCE_FULL ERR_TEE_UNKNOWN ERR_TFW_NOT_TRUSTED ERR_UNSUP
 	 */
 	@ApiField("return_desc")
 	private String returnDesc;
+
+	/** 
+	 * ta_hash+不唯一+ta源文件进行SHA-256哈希计算再进行BASE64编码得到的哈希值字符串信息。
+	 */
+	@ApiField("ta_hash")
+	private String taHash;
+
+	/** 
+	 * ext_info+不唯一+JSON形式的map，包含关于ta摘要算法等信息+枚举值：BASE64_OVER_SHA256；BASE64_OVER_SHA512;BASE64_OVER_SM3+支付宝服务端返回TA哈希时放在入参里+缺省值为BASE64_OVER_SHA256
+	 */
+	@ApiField("ta_info")
+	private String taInfo;
 
 	public void setEncryptedTaBin(String encryptedTaBin) {
 		this.encryptedTaBin = encryptedTaBin;
@@ -53,6 +71,13 @@ ERR_TEE_FAIL ERR_TEE_RESOURCE_FULL ERR_TEE_UNKNOWN ERR_TFW_NOT_TRUSTED ERR_UNSUP
 		return this.encryptedTaData;
 	}
 
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+	public String getExtInfo( ) {
+		return this.extInfo;
+	}
+
 	public void setReturnCode(String returnCode) {
 		this.returnCode = returnCode;
 	}
@@ -65,6 +90,20 @@ ERR_TEE_FAIL ERR_TEE_RESOURCE_FULL ERR_TEE_UNKNOWN ERR_TFW_NOT_TRUSTED ERR_UNSUP
 	}
 	public String getReturnDesc( ) {
 		return this.returnDesc;
+	}
+
+	public void setTaHash(String taHash) {
+		this.taHash = taHash;
+	}
+	public String getTaHash( ) {
+		return this.taHash;
+	}
+
+	public void setTaInfo(String taInfo) {
+		this.taInfo = taInfo;
+	}
+	public String getTaInfo( ) {
+		return this.taInfo;
 	}
 
 }

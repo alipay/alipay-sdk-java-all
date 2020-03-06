@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金支付接口
  *
  * @author auto create
- * @since 1.0, 2020-01-08 11:02:35
+ * @since 1.0, 2020-03-01 18:13:20
  */
 public class AlipayFundTransPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1447759727499116328L;
+	private static final long serialVersionUID = 3897767972469248955L;
 
 	/**
 	 * 授权对象

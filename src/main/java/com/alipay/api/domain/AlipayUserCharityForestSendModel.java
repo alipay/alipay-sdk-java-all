@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 森林能量发放接口
  *
  * @author auto create
- * @since 1.0, 2019-10-11 12:06:18
+ * @since 1.0, 2020-02-21 10:03:29
  */
 public class AlipayUserCharityForestSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4388715521121289914L;
+	private static final long serialVersionUID = 3728295724129639157L;
 
 	/**
 	 * 唯一单据号，用于发能量幂等控制

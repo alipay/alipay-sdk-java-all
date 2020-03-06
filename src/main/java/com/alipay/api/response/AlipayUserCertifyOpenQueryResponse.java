@@ -10,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.open.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-03-03 15:05:07
  */
 public class AlipayUserCertifyOpenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6795946891495373816L;
+	private static final long serialVersionUID = 4117225855944767158L;
+
+	/** 
+	 * 认证错误原因，扩展字段，默认不返回
+	 */
+	@ApiField("fail_reason")
+	private String failReason;
 
 	/** 
 	 * 认证的主体信息，一般的认证场景返回为空
@@ -34,6 +40,13 @@ public class AlipayUserCertifyOpenQueryResponse extends AlipayResponse {
 	@ApiListField("passed")
 	@ApiField("string")
 	private List<String> passed;
+
+	public void setFailReason(String failReason) {
+		this.failReason = failReason;
+	}
+	public String getFailReason( ) {
+		return this.failReason;
+	}
 
 	public void setIdentityInfo(String identityInfo) {
 		this.identityInfo = identityInfo;

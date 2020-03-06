@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链金融业务的标准发票信息
  *
  * @author auto create
- * @since 1.0, 2019-12-16 16:53:49
+ * @since 1.0, 2020-02-18 09:19:19
  */
 public class FinanceInvoiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4282599369291446469L;
+	private static final long serialVersionUID = 6134426424356486954L;
 
 	/**
 	 * 发票金额，以元为单位的，精确到小数点后2位

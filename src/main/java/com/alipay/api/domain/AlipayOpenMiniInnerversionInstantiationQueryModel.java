@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序实例化关系查询
  *
  * @author auto create
- * @since 1.0, 2020-02-11 17:50:58
+ * @since 1.0, 2020-02-24 14:45:21
  */
 public class AlipayOpenMiniInnerversionInstantiationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4522478464128163938L;
+	private static final long serialVersionUID = 1798334933572348828L;
 
 	/**
 	 * 来源类型，新接入方需要向支付宝申请专用来源，否则不予接入，申请方式请参见接入手册。
@@ -32,7 +32,7 @@ public class AlipayOpenMiniInnerversionInstantiationQueryModel extends AlipayObj
 	private String bundleId;
 
 	/**
-	 * 小程序appId，仅支持普通小程序、门店小程序
+	 * 小程序ID，特殊场景专用，普通业务方无需关注该参数。
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;

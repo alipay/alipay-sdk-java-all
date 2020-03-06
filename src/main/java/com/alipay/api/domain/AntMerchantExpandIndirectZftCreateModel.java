@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户创建
  *
  * @author auto create
- * @since 1.0, 2019-08-01 19:00:18
+ * @since 1.0, 2020-02-20 14:11:11
  */
 public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5375655673732131245L;
+	private static final long serialVersionUID = 8796449514864878673L;
 
 	/**
 	 * 商户别名
@@ -190,7 +190,7 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String signTimeWithIsv;
 
 	/**
-	 * 商户站点信息，包括网站、app、小程序。商户使用服务包含电脑支付或wap支付时，必须填充一个类型为01(网站)的SiteInfo对象；当包含app支付时，必须至少填充类型为02(APP)或06(支付宝小程序)中一种类型的SiteInfo对象
+	 * 商户站点信息，包括网站、app、小程序。商户使用服务包含电脑支付或wap支付时，必须填充一个类型为01(网站)的SiteInfo对象，site_type/site_url/site_name必填；当包含app支付时，必须至少填充类型为02(APP)或06(支付宝小程序)中一种类型的SiteInfo对象，site_type/site_name必填
 	 */
 	@ApiListField("sites")
 	@ApiField("site_info")

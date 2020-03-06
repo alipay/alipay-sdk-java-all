@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取种子数据内部数据结构
  *
  * @author auto create
- * @since 1.0, 2019-12-18 19:54:55
+ * @since 1.0, 2020-02-25 18:31:01
  */
 public class WorldBaseRPCResponseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4257173343492876764L;
+	private static final long serialVersionUID = 6842326973278183619L;
 
 	/**
 	 * 错误信息

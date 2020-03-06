@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 热脸入库
  *
  * @author auto create
- * @since 1.0, 2018-12-03 14:28:13
+ * @since 1.0, 2020-02-25 00:29:49
  */
 public class ZolozAuthenticationCustomerFacemanageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4892243856859386591L;
+	private static final long serialVersionUID = 6462512736579163962L;
 
 	/**
 	 * 地域编码

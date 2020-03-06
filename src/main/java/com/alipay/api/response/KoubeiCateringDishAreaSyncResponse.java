@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.area.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 16:52:56
+ * @since 1.0, 2020-03-05 15:40:39
  */
 public class KoubeiCateringDishAreaSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7112442677485257688L;
+	private static final long serialVersionUID = 8115419535295177521L;
 
 	/** 
 	 * 餐区餐台模型

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品库加料模型
  *
  * @author auto create
- * @since 1.0, 2019-01-08 15:32:45
+ * @since 1.0, 2020-03-06 10:18:19
  */
 public class KbdishMaterialInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5767358397667211451L;
+	private static final long serialVersionUID = 5619587884429398853L;
 
 	/**
 	 * 加价金额，最小加价金额0

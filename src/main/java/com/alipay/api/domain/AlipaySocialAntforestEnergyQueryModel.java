@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询森林用户能量信息
  *
  * @author auto create
- * @since 1.0, 2019-10-25 17:43:50
+ * @since 1.0, 2020-03-03 00:38:05
  */
 public class AlipaySocialAntforestEnergyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8683765822366612679L;
+	private static final long serialVersionUID = 1555655594395999257L;
 
 	/**
 	 * 蚂蚁统一会员ID

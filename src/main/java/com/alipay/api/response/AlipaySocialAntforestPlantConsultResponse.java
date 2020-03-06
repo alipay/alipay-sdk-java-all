@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.plant.consult response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-21 15:24:10
+ * @since 1.0, 2020-03-03 00:40:06
  */
 public class AlipaySocialAntforestPlantConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8435937736563316158L;
+	private static final long serialVersionUID = 1637986119939174248L;
 
 	/** 
 	 * 当前账户可用能量

@@ -1,45 +1,34 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.ZhimaMerchantContractOfferModifyModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayZdataserviceUnidataQueryResponse;
+import com.alipay.api.response.ZhimaMerchantContractOfferModifyResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.zdataservice.unidata.query request
+ * ALIPAY API: zhima.merchant.contract.offer.modify request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2020-02-24 14:40:05
  */
-public class AlipayZdataserviceUnidataQueryRequest implements AlipayRequest<AlipayZdataserviceUnidataQueryResponse> {
+public class ZhimaMerchantContractOfferModifyRequest implements AlipayRequest<ZhimaMerchantContractOfferModifyResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 通用的查询入参
+	* 芝麻约定发约单修改接口
 	 */
-	private String queryCondition;
+	private String bizContent;
 
-	/** 
-	* 返回数据的类型，内部业务系统分配
-	 */
-	private String uniqKey;
-
-	public void setQueryCondition(String queryCondition) {
-		this.queryCondition = queryCondition;
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
 	}
-	public String getQueryCondition() {
-		return this.queryCondition;
-	}
-
-	public void setUniqKey(String uniqKey) {
-		this.uniqKey = uniqKey;
-	}
-	public String getUniqKey() {
-		return this.uniqKey;
+	public String getBizContent() {
+		return this.bizContent;
 	}
 	private String terminalType;
 	private String terminalInfo;	
@@ -98,13 +87,12 @@ public class AlipayZdataserviceUnidataQueryRequest implements AlipayRequest<Alip
 	}
 
 	public String getApiMethodName() {
-		return "alipay.zdataservice.unidata.query";
+		return "zhima.merchant.contract.offer.modify";
 	}
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
-		txtParams.put("query_condition", this.queryCondition);
-		txtParams.put("uniq_key", this.uniqKey);
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
@@ -118,8 +106,8 @@ public class AlipayZdataserviceUnidataQueryRequest implements AlipayRequest<Alip
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayZdataserviceUnidataQueryResponse> getResponseClass() {
-		return AlipayZdataserviceUnidataQueryResponse.class;
+	public Class<ZhimaMerchantContractOfferModifyResponse> getResponseClass() {
+		return ZhimaMerchantContractOfferModifyResponse.class;
 	}
 	
 

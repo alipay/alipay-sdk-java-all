@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境汇款查询收款人信息
  *
  * @author auto create
- * @since 1.0, 2020-02-11 15:26:54
+ * @since 1.0, 2020-03-05 15:08:59
  */
 public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6779297656464648116L;
+	private static final long serialVersionUID = 4264775643236848155L;
 
 	/**
 	 * 相对于汇率的基准货币
@@ -68,7 +68,7 @@ public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 	private String sendAmount;
 
 	/**
-	 * 汇款人国家
+	 * 汇款人国家，与sender_nationality不能同时为空
 	 */
 	@ApiField("send_country")
 	private String sendCountry;
@@ -90,6 +90,12 @@ public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("sender_name")
 	private String senderName;
+
+	/**
+	 * 汇款人国籍，与send_country不能同时为空
+	 */
+	@ApiField("sender_nationality")
+	private String senderNationality;
 
 	public String getBaseCurrency() {
 		return this.baseCurrency;
@@ -180,6 +186,13 @@ public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 	}
 	public void setSenderName(String senderName) {
 		this.senderName = senderName;
+	}
+
+	public String getSenderNationality() {
+		return this.senderNationality;
+	}
+	public void setSenderNationality(String senderNationality) {
+		this.senderNationality = senderNationality;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链金融业务的标准会员信息(由dchaincustomer应用定义)
  *
  * @author auto create
- * @since 1.0, 2019-12-16 15:16:30
+ * @since 1.0, 2020-02-18 09:19:19
  */
 public class FinanceMemberInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2182969686256643974L;
+	private static final long serialVersionUID = 1492778133589211235L;
 
 	/**
 	 * 金融资产链的会员地址
