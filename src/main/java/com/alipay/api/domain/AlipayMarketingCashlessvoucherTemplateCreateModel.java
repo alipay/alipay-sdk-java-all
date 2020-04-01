@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户券模板创建接口
  *
  * @author auto create
- * @since 1.0, 2018-09-17 11:06:38
+ * @since 1.0, 2020-03-10 11:15:11
  */
 public class AlipayMarketingCashlessvoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7246355174597327247L;
+	private static final long serialVersionUID = 5196726589152474573L;
 
 	/**
 	 * 面额。每张代金券可以抵扣的金额。币种为人民币，单位为元。该数值有效范围为1~999，小数点以后最多保留两位。代金券必填，兑换券不能填
@@ -22,14 +22,13 @@ public class AlipayMarketingCashlessvoucherTemplateCreateModel extends AlipayObj
 	private String amount;
 
 	/**
-	 * 品牌名。用于在卡包中展示，长度不能超过12个字符，voucher_type值为代金券时：券名称=券面额+’元代金券’，voucher_type值为兑换券时：券名称=品牌名+“兑换券”组成 ，券名称最终用于卡包展示
+	 * 品牌名。用于在卡包中展示，长度不能超过12个字符，voucher_type值为代金券时：券名称=券面额+’元代金券’ ，券名称最终用于卡包展示
 	 */
 	@ApiField("brand_name")
 	private String brandName;
 
 	/**
-	 * 扩展字段,JSON字符串。目前支持使用模式扩展：{"useMode":"H5","useModeData":{"url":"http://www.yourdomian.com/yourusepage.htm","signKeys":"voucherId,userId,tag","charset":"UTF-8","signType":"RSA2","tag":"this is my tag"}}
-其中如果useMode表示自定义的使用模式类型，目前仅支持"H5",表示在券详情页按钮跳转至自定义H5页面，当传入useMode参数后，将会检查useModeData对象数据，其中的url为必传参数;url字段表示客制化使用按钮跳转链接，传入该字段后在券详情使用时点击效果将会跳转此链接，链接将进行白名单过滤，如果无法接入成功请联系技术支持;signKeys字段表示跳转至客制链接时的加签字段，如果不传默认为voucherId,userId,tag;signType为加签类型，目前支持RSA及RSA2,如果不传则不会加签;charset为链接编码格式，不传默认为UTF-8;tag为自定义参数，会直接透传回使用链接;当传入合法加签信息后，券使用链接将为http://www.yourdomain.com/yourusepage.htm?voucherId=当前券id&userId=当前用户id&tag=传入tag&sign=对应算法及key生成的加签数据
+	 * 扩展字段,JSON字符串。
 	 */
 	@ApiField("extension_info")
 	private String extensionInfo;

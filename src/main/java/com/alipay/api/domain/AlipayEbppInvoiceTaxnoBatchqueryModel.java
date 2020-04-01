@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取指定企业税号的用户发票要素列表
  *
  * @author auto create
- * @since 1.0, 2020-03-05 23:13:14
+ * @since 1.0, 2020-03-25 16:51:52
  */
 public class AlipayEbppInvoiceTaxnoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4732126714243314317L;
+	private static final long serialVersionUID = 4813496676565159217L;
+
+	/**
+	 * 默认值为false。true为输出交易信息，false为不输出交易信息。
+	 */
+	@ApiField("enable_trade_out")
+	private String enableTradeOut;
 
 	/**
 	 * 查询结束时间，精确到天（按开票日期查询）
@@ -77,6 +83,13 @@ start_invoice_date和end_invoice_date传值要求
 	 */
 	@ApiField("tax_no")
 	private String taxNo;
+
+	public String getEnableTradeOut() {
+		return this.enableTradeOut;
+	}
+	public void setEnableTradeOut(String enableTradeOut) {
+		this.enableTradeOut = enableTradeOut;
+	}
 
 	public String getEndInvoiceDate() {
 		return this.endInvoiceDate;

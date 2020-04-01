@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * C端订单数据列表查询-安全云专用
  *
  * @author auto create
- * @since 1.0, 2019-10-15 15:33:18
+ * @since 1.0, 2020-03-08 16:50:34
  */
 public class AlipayMerchantOrderSecuritydigestConsumerBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4656981948886962346L;
+	private static final long serialVersionUID = 1659277546859489294L;
 
 	/**
 	 * 买家支付宝用户id
@@ -20,11 +20,7 @@ public class AlipayMerchantOrderSecuritydigestConsumerBatchqueryModel extends Al
 	private String buyerId;
 
 	/**
-	 * 结束时间，格式为：yyyy-MM-dd hh:mm:ss
-
-查询返回的订单支付时间在end_time之前，不包括end_time
-
-注：为了避免数据重复，可在start_time不变的情况下利用上一次返回列表中最后一条数据的支付时间作为下一次end_time的入参，实现分页查询
+	 * 结束时间，格式为：yyyy-MM-dd hh:mm:ss 查询返回的订单支付时间在end_time之前，不包括end_time 注：为了避免数据重复，可在start_time不变的情况下利用上一次返回中的next_end_time作为下一次end_time的入参，实现分页查询
 	 */
 	@ApiField("end_time")
 	private String endTime;

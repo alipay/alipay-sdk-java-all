@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * pos订单推进同步
  *
  * @author auto create
- * @since 1.0, 2019-01-18 11:17:23
+ * @since 1.0, 2020-03-09 12:13:53
  */
 public class KoubeiCateringOrderInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4761889898219634971L;
+	private static final long serialVersionUID = 7833883951833237767L;
 
 	/**
 	 * 订单操作类型，RECEIPT—接单、REJECT—拒单、PREPARE—已备餐、DELIVER—已送餐、REFUND—退款、RENEW—反结、ACCEPT_REFUND 接受退款、REJECT_REFUND 拒接退款、TABLE_CHANGE-修改桌号、PARTIAL_REFUND-部分退款、COOKING-下厨、QUEUE_NUM_SYNC-排队顺序同步

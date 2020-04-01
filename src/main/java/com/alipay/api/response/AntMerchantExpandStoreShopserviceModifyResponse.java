@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.store.shopservice.modify response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-29 12:00:06
+ * @since 1.0, 2020-03-13 16:20:07
  */
 public class AntMerchantExpandStoreShopserviceModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6225556579287432236L;
+	private static final long serialVersionUID = 6319286732523997616L;
 
 	
 

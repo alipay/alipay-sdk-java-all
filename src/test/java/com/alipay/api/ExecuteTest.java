@@ -90,7 +90,7 @@ public class ExecuteTest {
     private AlipayTradeCreateRequest getTradeCreateRequest() {
         AlipayTradeCreateRequest request = new AlipayTradeCreateRequest();
         AlipayTradeCreateModel model = new AlipayTradeCreateModel();
-        model.setOutTradeNo("20150320010101001");
+        model.setOutTradeNo("20200320010101002");
         model.setTotalAmount("88.88");
         model.setSubject("Iphone6 16G");
         model.setBuyerId("2088102177846880");

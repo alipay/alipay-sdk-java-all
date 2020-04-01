@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.order.securitydigest.consumer.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-15 15:33:25
+ * @since 1.0, 2020-03-08 16:51:16
  */
 public class AlipayMerchantOrderSecuritydigestConsumerBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1755985846744661115L;
+	private static final long serialVersionUID = 3475325512629257287L;
 
 	/** 
 	 * 是否还有下一页
 	 */
 	@ApiField("has_next_page")
 	private Boolean hasNextPage;
+
+	/** 
+	 * 下一次请求的end_time（用于分页查询）
+	 */
+	@ApiField("next_end_time")
+	private String nextEndTime;
 
 	/** 
 	 * 订单信息列表，当存在符合条件的订单时，则返回订单信息；
@@ -35,6 +41,13 @@ public class AlipayMerchantOrderSecuritydigestConsumerBatchqueryResponse extends
 	}
 	public Boolean getHasNextPage( ) {
 		return this.hasNextPage;
+	}
+
+	public void setNextEndTime(String nextEndTime) {
+		this.nextEndTime = nextEndTime;
+	}
+	public String getNextEndTime( ) {
+		return this.nextEndTime;
 	}
 
 	public void setOrderList(List<AlipayOrderDataOpenapiResultInfo> orderList) {

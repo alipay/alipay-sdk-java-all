@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 修复结算金额amount的类型，原来Number类型不合理，导致商户无法通过sdk集成，需改成Price类型
+ * trans_in_type支持商户传入默认结算账号，修改相关接口描述
  *
  * @author auto create
- * @since 1.0, 2019-07-15 14:30:19
+ * @since 1.0, 2020-03-12 00:34:37
  */
 public class SettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5521127762898458145L;
+	private static final long serialVersionUID = 2164358115861218893L;
 
 	/**
 	 * 结算的金额，单位为元。目前必须和交易金额相同
@@ -41,7 +41,7 @@ public class SettleDetailInfo extends AlipayObject {
 	private String summaryDimension;
 
 	/**
-	 * 结算收款方。当结算收款方类型是cardAliasNo时，本参数为用户在支付宝绑定的卡编号；结算收款方类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；当结算收款方类型是loginName时，本参数为用户的支付宝登录号
+	 * 结算收款方。当结算收款方类型是cardAliasNo时，本参数为用户在支付宝绑定的卡编号；结算收款方类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；当结算收款方类型是loginName时，本参数为用户的支付宝登录号；当结算收款方类型是defaultSettle时，本参数不能传值，保持为空。
 	 */
 	@ApiField("trans_in")
 	private String transIn;
@@ -52,6 +52,7 @@ public class SettleDetailInfo extends AlipayObject {
 cardAliasNo：结算收款方的银行卡编号;
 userId：表示是支付宝账号对应的支付宝唯一用户号;
 loginName：表示是支付宝登录号；
+defaultSettle：表示结算到商户进件时设置的默认结算账号，结算主体为门店时不支持传defaultSettle；
 	 */
 	@ApiField("trans_in_type")
 	private String transInType;

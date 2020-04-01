@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品通用规则删除
  *
  * @author auto create
- * @since 1.0, 2020-03-05 15:41:01
+ * @since 1.0, 2020-03-25 18:06:24
  */
 public class KoubeiCateringDishRuleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5765875463293165989L;
+	private static final long serialVersionUID = 6785726676641468975L;
 
 	/**
 	 * 菜品规则通用模型

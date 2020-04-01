@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建流程（E签宝）
  *
  * @author auto create
- * @since 1.0, 2019-12-26 21:40:27
+ * @since 1.0, 2020-03-13 14:29:39
  */
 public class AlipayEcoSignFlowCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5812425368814985386L;
+	private static final long serialVersionUID = 6121416642791232173L;
 
 	/**
 	 * 附件信息

@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
@@ -8,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.guarantee.selleradmittance.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-10 11:05:01
+ * @since 1.0, 2020-03-26 19:42:25
  */
 public class MybankCreditGuaranteeSelleradmittanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2152751373635835931L;
+	private static final long serialVersionUID = 3799264895682881681L;
 
 	/** 
-	 * 查询decision是否准入
+	 * 查询decision是否准入。为空表示不准入
 	 */
 	@ApiField("is_admitted")
 	private Boolean isAdmitted;
@@ -25,6 +26,18 @@ public class MybankCreditGuaranteeSelleradmittanceQueryResponse extends AlipayRe
 	 */
 	@ApiField("is_signed")
 	private Boolean isSigned;
+
+	/** 
+	 * 是否解约AE提前收款，为空表示未解约
+	 */
+	@ApiField("is_unsigned")
+	private Boolean isUnsigned;
+
+	/** 
+	 * 解约时间，为空表示无解约时间
+	 */
+	@ApiField("unsign_date")
+	private Date unsignDate;
 
 	public void setIsAdmitted(Boolean isAdmitted) {
 		this.isAdmitted = isAdmitted;
@@ -38,6 +51,20 @@ public class MybankCreditGuaranteeSelleradmittanceQueryResponse extends AlipayRe
 	}
 	public Boolean getIsSigned( ) {
 		return this.isSigned;
+	}
+
+	public void setIsUnsigned(Boolean isUnsigned) {
+		this.isUnsigned = isUnsigned;
+	}
+	public Boolean getIsUnsigned( ) {
+		return this.isUnsigned;
+	}
+
+	public void setUnsignDate(Date unsignDate) {
+		this.unsignDate = unsignDate;
+	}
+	public Date getUnsignDate( ) {
+		return this.unsignDate;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillEreceiptApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2896717324527814784L;
+	private static final long serialVersionUID = 6564412481382282133L;
 
 	/**
 	 * 根据不同业务类型，传入不同参数。当前余额等无需参数的，不需要传入。日汇总传入格式：yyyy-MM-dd，月汇总传入格式：yyyy-MM。订单号直接传入。

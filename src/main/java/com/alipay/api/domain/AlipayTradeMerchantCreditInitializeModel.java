@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易卖家可赊账额度初始化
  *
  * @author auto create
- * @since 1.0, 2019-11-25 15:22:49
+ * @since 1.0, 2020-03-11 17:32:18
  */
 public class AlipayTradeMerchantCreditInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4211872371891637111L;
+	private static final long serialVersionUID = 3316967153798766353L;
 
 	/**
 	 * 卖家可授信分配的额度单位为元，精确到小数点后两位，取值范围[0.01,100000000]

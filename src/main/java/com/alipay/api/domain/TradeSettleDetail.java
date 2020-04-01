@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易结算明细
  *
  * @author auto create
- * @since 1.0, 2019-06-03 14:16:55
+ * @since 1.0, 2020-03-10 15:50:40
  */
 public class TradeSettleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6899219322771612918L;
+	private static final long serialVersionUID = 4498838836826444711L;
 
 	/**
 	 * 实际操作金额，单位为元，两位小数。该参数的值为分账或补差或结算时传入

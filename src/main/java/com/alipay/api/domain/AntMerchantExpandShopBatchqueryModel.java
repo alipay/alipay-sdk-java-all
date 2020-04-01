@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询线下门店
  *
  * @author auto create
- * @since 1.0, 2020-03-05 15:31:44
+ * @since 1.0, 2020-03-13 16:20:54
  */
 public class AntMerchantExpandShopBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4558944789839874257L;
+	private static final long serialVersionUID = 7217531576863332142L;
 
 	/**
 	 * 当前页码
@@ -20,7 +20,7 @@ public class AntMerchantExpandShopBatchqueryModel extends AlipayObject {
 	private Long pageNo;
 
 	/**
-	 * 分页数量
+	 * 分页数量, 最大50
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 托管账户外卡信息
  *
  * @author auto create
- * @since 1.0, 2019-06-25 17:08:40
+ * @since 1.0, 2020-03-10 22:52:32
  */
 public class ExtCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2241275957681588476L;
+	private static final long serialVersionUID = 3495913883664922417L;
 
 	/**
 	 * 托管子户外卡户名

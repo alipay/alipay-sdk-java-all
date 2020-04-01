@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权码错误指示器
  *
  * @author auto create
- * @since 1.0, 2020-02-26 10:30:38
+ * @since 1.0, 2020-03-18 15:45:34
  */
 public class OfflinepayErrorIndicator extends AlipayObject {
 
-	private static final long serialVersionUID = 8792753736444418824L;
+	private static final long serialVersionUID = 7695398767525522456L;
 
 	/**
 	 * 右动作按钮

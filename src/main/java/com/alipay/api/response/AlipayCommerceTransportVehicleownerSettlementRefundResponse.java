@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.settlement.refund response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-22 23:05:01
+ * @since 1.0, 2020-03-27 10:30:37
  */
 public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8741956374945581521L;
+	private static final long serialVersionUID = 3617431972868234888L;
 
 	/** 
 	 * 买家在支付宝的用户id
@@ -28,6 +28,12 @@ public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends
 	private Date gmtRefundPay;
 
 	/** 
+	 * 退款外部请求号，多次退款会有
+	 */
+	@ApiField("out_request_no")
+	private String outRequestNo;
+
+	/** 
 	 * 商户订单号
 	 */
 	@ApiField("out_trade_no")
@@ -38,6 +44,19 @@ public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
+
+	/** 
+	 * 支付宝收单：
+"RI", "退款中";
+"R", "已退款";
+"PR", "部分退款";
+银行收单：
+"PART_PROCESS_REFUND", "受理部分退款";
+"IN_PROCESSING_REFUND", "受理退款中";
+"PROCESS_REFUND", "已受理退款".
+	 */
+	@ApiField("refund_status")
+	private String refundStatus;
 
 	/** 
 	 * 支付宝交易号
@@ -59,6 +78,13 @@ public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends
 		return this.gmtRefundPay;
 	}
 
+	public void setOutRequestNo(String outRequestNo) {
+		this.outRequestNo = outRequestNo;
+	}
+	public String getOutRequestNo( ) {
+		return this.outRequestNo;
+	}
+
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
@@ -71,6 +97,13 @@ public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends
 	}
 	public String getRefundAmount( ) {
 		return this.refundAmount;
+	}
+
+	public void setRefundStatus(String refundStatus) {
+		this.refundStatus = refundStatus;
+	}
+	public String getRefundStatus( ) {
+		return this.refundStatus;
 	}
 
 	public void setTradeNo(String tradeNo) {

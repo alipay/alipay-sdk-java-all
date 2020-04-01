@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店插件服务订单业务能力
  *
  * @author auto create
- * @since 1.0, 2020-03-05 15:32:30
+ * @since 1.0, 2020-03-13 16:22:04
  */
 public class AntMerchantOrderStoreCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4743593365179221531L;
+	private static final long serialVersionUID = 2254188231833369257L;
 
 	/**
 	 * 买家id
@@ -30,7 +30,9 @@ public class AntMerchantOrderStoreCreateModel extends AlipayObject {
 
 	/**
 	 * 扩展参数:
-Ext_ArrivedTime : 到店时间
+CONSUMER_COUNT ：到店人数, 样例：3
+SERVICE_ITEM：服务项目，样例: ["洗头","美发"]
+SERVICE_TIME: 到店时间，样例: 2020-03-10 09:00:00
 	 */
 	@ApiListField("ext")
 	@ApiField("order_ext")

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户创建
  *
  * @author auto create
- * @since 1.0, 2020-02-20 14:11:11
+ * @since 1.0, 2020-03-14 11:46:16
  */
 public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8796449514864878673L;
+	private static final long serialVersionUID = 1652448361947224717L;
 
 	/**
 	 * 商户别名
@@ -83,6 +83,12 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	@ApiListField("contact_infos")
 	@ApiField("contact_info")
 	private List<ContactInfo> contactInfos;
+
+	/**
+	 * 默认结算规则。在收单时不做特别指定规则时，将使用本对象设置的结算规则进行结算。其详细描述及收单接口传参示例参考功能包文档
+	 */
+	@ApiField("default_settle_rule")
+	private DefaultSettleRule defaultSettleRule;
 
 	/**
 	 * 商户编号，由机构定义，需要保证在机构下唯一
@@ -271,6 +277,13 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	}
 	public void setContactInfos(List<ContactInfo> contactInfos) {
 		this.contactInfos = contactInfos;
+	}
+
+	public DefaultSettleRule getDefaultSettleRule() {
+		return this.defaultSettleRule;
+	}
+	public void setDefaultSettleRule(DefaultSettleRule defaultSettleRule) {
+		this.defaultSettleRule = defaultSettleRule;
 	}
 
 	public String getExternalId() {

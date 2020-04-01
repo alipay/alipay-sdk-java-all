@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量生产IoT设备sn
  *
  * @author auto create
- * @since 1.0, 2020-01-08 15:05:05
+ * @since 1.0, 2020-03-16 20:05:04
  */
 public class AlipayCommerceIotSnCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5199694212789128327L;
+	private static final long serialVersionUID = 5398173551427239354L;
 
 	/**
 	 * 申请单描述信息
@@ -37,6 +37,18 @@ public class AlipayCommerceIotSnCreateModel extends AlipayObject {
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * pcba板厂商
+	 */
+	@ApiField("pcba")
+	private String pcba;
+
+	/**
+	 * 产品系列
+	 */
+	@ApiField("product_series")
+	private String productSeries;
 
 	/**
 	 * 厂商id
@@ -70,6 +82,20 @@ public class AlipayCommerceIotSnCreateModel extends AlipayObject {
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getPcba() {
+		return this.pcba;
+	}
+	public void setPcba(String pcba) {
+		this.pcba = pcba;
+	}
+
+	public String getProductSeries() {
+		return this.productSeries;
+	}
+	public void setProductSeries(String productSeries) {
+		this.productSeries = productSeries;
 	}
 
 	public String getSupplierId() {

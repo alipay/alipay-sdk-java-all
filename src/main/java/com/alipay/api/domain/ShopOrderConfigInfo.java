@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 点餐设置中每一个店铺的配置信息
  *
  * @author auto create
- * @since 1.0, 2019-01-17 11:55:36
+ * @since 1.0, 2020-03-30 17:33:25
  */
 public class ShopOrderConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2222775787295679952L;
+	private static final long serialVersionUID = 5455997581563714967L;
 
 	/**
 	 * 扩展信息
@@ -27,6 +30,27 @@ public class ShopOrderConfigInfo extends AlipayObject {
 	 */
 	@ApiField("order_entry_status")
 	private String orderEntryStatus;
+
+	/**
+	 * 点餐一般营业营业时间配置
+	 */
+	@ApiListField("order_normal_business_time")
+	@ApiField("normal_business_time_rule")
+	private List<NormalBusinessTimeRule> orderNormalBusinessTime;
+
+	/**
+	 * 点餐特殊营业时间规则配置
+	 */
+	@ApiListField("order_special_business_time")
+	@ApiField("special_business_time_rule")
+	private List<SpecialBusinessTimeRule> orderSpecialBusinessTime;
+
+	/**
+	 * OPEN表示打开点餐服务
+CLOSED表示关闭点餐服务
+	 */
+	@ApiField("order_status")
+	private String orderStatus;
 
 	/**
 	 * 口碑门店ID
@@ -52,6 +76,27 @@ public class ShopOrderConfigInfo extends AlipayObject {
 	}
 	public void setOrderEntryStatus(String orderEntryStatus) {
 		this.orderEntryStatus = orderEntryStatus;
+	}
+
+	public List<NormalBusinessTimeRule> getOrderNormalBusinessTime() {
+		return this.orderNormalBusinessTime;
+	}
+	public void setOrderNormalBusinessTime(List<NormalBusinessTimeRule> orderNormalBusinessTime) {
+		this.orderNormalBusinessTime = orderNormalBusinessTime;
+	}
+
+	public List<SpecialBusinessTimeRule> getOrderSpecialBusinessTime() {
+		return this.orderSpecialBusinessTime;
+	}
+	public void setOrderSpecialBusinessTime(List<SpecialBusinessTimeRule> orderSpecialBusinessTime) {
+		this.orderSpecialBusinessTime = orderSpecialBusinessTime;
+	}
+
+	public String getOrderStatus() {
+		return this.orderStatus;
+	}
+	public void setOrderStatus(String orderStatus) {
+		this.orderStatus = orderStatus;
 	}
 
 	public String getShopId() {

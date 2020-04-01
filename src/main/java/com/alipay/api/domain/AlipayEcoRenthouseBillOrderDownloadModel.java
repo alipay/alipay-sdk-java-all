@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoRenthouseBillOrderDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4491837517541273912L;
+	private static final long serialVersionUID = 4498522278133328412L;
 
 	/**
 	 * 查询日期

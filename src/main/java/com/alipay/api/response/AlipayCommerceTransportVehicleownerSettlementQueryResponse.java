@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.settlement.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-25 11:50:01
+ * @since 1.0, 2020-03-27 10:31:13
  */
 public class AlipayCommerceTransportVehicleownerSettlementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6422713514586638895L;
+	private static final long serialVersionUID = 7244148832123462799L;
 
 	/** 
 	 * 收单机构渠道码，该字段不返回默认为ALIPAY
@@ -66,6 +66,12 @@ public class AlipayCommerceTransportVehicleownerSettlementQueryResponse extends 
 	 */
 	@ApiField("plate_no")
 	private String plateNo;
+
+	/** 
+	 * 退款总金额， 单位为元
+	 */
+	@ApiField("refund_amount")
+	private String refundAmount;
 
 	/** 
 	 * 打款给卖家的时间（收单为支付宝必返回）
@@ -164,6 +170,13 @@ public class AlipayCommerceTransportVehicleownerSettlementQueryResponse extends 
 	}
 	public String getPlateNo( ) {
 		return this.plateNo;
+	}
+
+	public void setRefundAmount(String refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+	public String getRefundAmount( ) {
+		return this.refundAmount;
 	}
 
 	public void setSendPayDate(Date sendPayDate) {

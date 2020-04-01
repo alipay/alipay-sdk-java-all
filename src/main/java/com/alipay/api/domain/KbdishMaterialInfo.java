@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品库加料模型
  *
  * @author auto create
- * @since 1.0, 2020-03-06 10:18:19
+ * @since 1.0, 2020-03-31 13:52:25
  */
 public class KbdishMaterialInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5619587884429398853L;
+	private static final long serialVersionUID = 3779344176891463253L;
 
 	/**
 	 * 加价金额，最小加价金额0
@@ -30,6 +30,12 @@ public class KbdishMaterialInfo extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 加料的描述字段
+	 */
+	@ApiField("material_desc")
+	private String materialDesc;
 
 	/**
 	 * 加料id，加料的唯一标识。
@@ -69,10 +75,22 @@ public class KbdishMaterialInfo extends AlipayObject {
 	private String merchantId;
 
 	/**
+	 * 外部isv的加料id
+	 */
+	@ApiField("out_material_id")
+	private String outMaterialId;
+
+	/**
 	 * 公共字段，根据materialType的类型，这里填入商户id或者口碑门店id。
 	 */
 	@ApiField("public_id")
 	private String publicId;
+
+	/**
+	 * 加料的单位id
+	 */
+	@ApiField("unit_id")
+	private String unitId;
 
 	/**
 	 * 修改人，在新增和修改，删除时必传
@@ -99,6 +117,13 @@ public class KbdishMaterialInfo extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getMaterialDesc() {
+		return this.materialDesc;
+	}
+	public void setMaterialDesc(String materialDesc) {
+		this.materialDesc = materialDesc;
 	}
 
 	public String getMaterialId() {
@@ -143,11 +168,25 @@ public class KbdishMaterialInfo extends AlipayObject {
 		this.merchantId = merchantId;
 	}
 
+	public String getOutMaterialId() {
+		return this.outMaterialId;
+	}
+	public void setOutMaterialId(String outMaterialId) {
+		this.outMaterialId = outMaterialId;
+	}
+
 	public String getPublicId() {
 		return this.publicId;
 	}
 	public void setPublicId(String publicId) {
 		this.publicId = publicId;
+	}
+
+	public String getUnitId() {
+		return this.unitId;
+	}
+	public void setUnitId(String unitId) {
+		this.unitId = unitId;
 	}
 
 	public String getUpdateUser() {

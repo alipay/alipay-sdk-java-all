@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付后推荐下架方案
  *
  * @author auto create
- * @since 1.0, 2019-10-22 22:13:29
+ * @since 1.0, 2020-03-26 22:34:17
  */
 public class AlipayOpenMiniPlanOperateOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3213591366771819726L;
+	private static final long serialVersionUID = 1826242413475192493L;
 
 	/**
 	 * 指定创建方案的 pid, 该字段仅白名单应用可用, 其他情况下会被忽略

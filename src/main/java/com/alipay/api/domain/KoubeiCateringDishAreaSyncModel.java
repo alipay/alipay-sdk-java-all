@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑餐区餐台同步api
  *
  * @author auto create
- * @since 1.0, 2020-03-05 15:40:39
+ * @since 1.0, 2020-03-25 18:06:50
  */
 public class KoubeiCateringDishAreaSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6872727575669178276L;
+	private static final long serialVersionUID = 6452771987482492381L;
 
 	/**
 	 * area:操作餐区模型 ;  tab:餐台列表; dish:操作开台菜列表    说明 修改全字段修改,设置为空则更新为空

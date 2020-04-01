@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 发票要素模型
  *
  * @author auto create
- * @since 1.0, 2020-03-06 09:37:47
+ * @since 1.0, 2020-03-26 10:14:11
  */
 public class InvoiceElementModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8552776966284883237L;
+	private static final long serialVersionUID = 3865259785744656149L;
 
 	/**
 	 * 发票报销状态
@@ -142,6 +145,22 @@ EXPIRED－已失效
 	 */
 	@ApiField("pdf_url")
 	private String pdfUrl;
+
+	/**
+	 * 该发票对应的交易
+	 */
+	@ApiListField("trade_list")
+	@ApiField("einv_trade")
+	private List<EinvTrade> tradeList;
+
+	/**
+	 * 交易匹配结果
+match-匹配到
+noMatched-未匹配到
+notMatch-未做匹配
+	 */
+	@ApiField("trade_match_result")
+	private String tradeMatchResult;
 
 	public String getExpenseStatus() {
 		return this.expenseStatus;
@@ -274,6 +293,20 @@ EXPIRED－已失效
 	}
 	public void setPdfUrl(String pdfUrl) {
 		this.pdfUrl = pdfUrl;
+	}
+
+	public List<EinvTrade> getTradeList() {
+		return this.tradeList;
+	}
+	public void setTradeList(List<EinvTrade> tradeList) {
+		this.tradeList = tradeList;
+	}
+
+	public String getTradeMatchResult() {
+		return this.tradeMatchResult;
+	}
+	public void setTradeMatchResult(String tradeMatchResult) {
+		this.tradeMatchResult = tradeMatchResult;
 	}
 
 }

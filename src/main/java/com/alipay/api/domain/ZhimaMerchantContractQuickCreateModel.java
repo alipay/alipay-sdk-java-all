@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻约定快速发约接口
  *
  * @author auto create
- * @since 1.0, 2020-02-24 14:48:29
+ * @since 1.0, 2020-03-18 19:55:07
  */
 public class ZhimaMerchantContractQuickCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1314688544345764151L;
+	private static final long serialVersionUID = 3581268475797162555L;
 
 	/**
 	 * 此类目为分配给商户在内容下的不同类目分类，（如直播/电影类目）
@@ -136,6 +136,12 @@ TAOBAO_ROLE:淘宝用户
 	 */
 	@ApiField("service_id")
 	private String serviceId;
+
+	/**
+	 * 模板id
+	 */
+	@ApiField("template_no")
+	private String templateNo;
 
 	public String getCategoryCode() {
 		return this.categoryCode;
@@ -268,6 +274,13 @@ TAOBAO_ROLE:淘宝用户
 	}
 	public void setServiceId(String serviceId) {
 		this.serviceId = serviceId;
+	}
+
+	public String getTemplateNo() {
+		return this.templateNo;
+	}
+	public void setTemplateNo(String templateNo) {
+		this.templateNo = templateNo;
 	}
 
 }

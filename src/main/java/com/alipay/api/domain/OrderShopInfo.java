@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店信息
  *
  * @author auto create
- * @since 1.0, 2020-03-04 20:02:28
+ * @since 1.0, 2020-03-30 20:50:48
  */
 public class OrderShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3237147533297413642L;
+	private static final long serialVersionUID = 1211448378831656766L;
 
 	/**
 	 * 店铺地址
@@ -25,6 +25,12 @@ public class OrderShopInfo extends AlipayObject {
 	 */
 	@ApiField("merchant_shop_id")
 	private String merchantShopId;
+
+	/**
+	 * 店铺详情链接地址
+	 */
+	@ApiField("merchant_shop_link_page")
+	private String merchantShopLinkPage;
 
 	/**
 	 * 店铺名称
@@ -51,6 +57,13 @@ public class OrderShopInfo extends AlipayObject {
 	}
 	public void setMerchantShopId(String merchantShopId) {
 		this.merchantShopId = merchantShopId;
+	}
+
+	public String getMerchantShopLinkPage() {
+		return this.merchantShopLinkPage;
+	}
+	public void setMerchantShopLinkPage(String merchantShopLinkPage) {
+		this.merchantShopLinkPage = merchantShopLinkPage;
 	}
 
 	public String getName() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟卡信息查询
  *
  * @author auto create
- * @since 1.0, 2019-11-04 11:07:16
+ * @since 1.0, 2020-03-19 18:02:36
  */
 public class AlipayCommerceTransportOfflinepayVirtualcardBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4881845659387364235L;
+	private static final long serialVersionUID = 1258422824224342888L;
 
 	/**
 	 * 卡号。和卡类型一起，唯一确定一张卡。为空时将返回该用户该卡类型下的所有卡。

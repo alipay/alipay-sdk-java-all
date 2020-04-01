@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品套餐组明细
  *
  * @author auto create
- * @since 1.0, 2020-03-06 10:17:14
+ * @since 1.0, 2020-03-30 16:28:34
  */
 public class KbdishPackagesDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6782118842784333415L;
+	private static final long serialVersionUID = 4693148578852953673L;
 
 	/**
 	 * 明细菜品在套餐里的个数, 不填默认为1

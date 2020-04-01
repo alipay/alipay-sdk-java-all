@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MEquityValidInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8569749455841934295L;
+	private static final long serialVersionUID = 1691111127616927192L;
 
 	/**
 	 * 延迟生效时间(单位分钟)；延迟生效时间取值范围1~99999的整数，注意：仅当effect_type=DELAY时，该值起作用

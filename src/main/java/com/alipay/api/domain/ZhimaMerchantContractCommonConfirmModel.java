@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻约定应约接口
  *
  * @author auto create
- * @since 1.0, 2020-02-21 19:04:09
+ * @since 1.0, 2020-03-18 19:58:11
  */
 public class ZhimaMerchantContractCommonConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7364774672978341278L;
+	private static final long serialVersionUID = 8484893392382282847L;
 
 	/**
 	 * 扩展参数

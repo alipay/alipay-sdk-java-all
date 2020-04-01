@@ -5,6 +5,7 @@ package com.alipay.api;
 
 import com.alipay.api.request.AlipayOfflineMaterialImageUploadRequest;
 import com.alipay.api.response.AlipayOfflineMaterialImageUploadResponse;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.containsString;
@@ -31,7 +32,7 @@ public class CertificateExecuteWithFileUploadTest {
     }
 
 
-    @Test
+    @Ignore
     public void should_be_able_to_upload_file_sm2() throws AlipayApiException {
         AlipayClient client = new DefaultAlipayClient(TestAccount.DevSM2Cert.SM2_CERT_PARAMS);
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.commonevent.apply request
  * 
  * @author auto create
- * @since 1.0, 2020-02-28 09:30:06
+ * @since 1.0, 2020-03-06 14:10:07
  */
 public class AlipayMarketingCampaignCommoneventApplyRequest implements AlipayRequest<AlipayMarketingCampaignCommoneventApplyResponse> {
 

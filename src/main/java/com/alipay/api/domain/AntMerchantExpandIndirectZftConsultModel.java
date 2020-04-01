@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通商户创建预校验咨询
  *
  * @author auto create
- * @since 1.0, 2020-02-20 14:10:51
+ * @since 1.0, 2020-03-14 11:46:13
  */
 public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2537367361578542757L;
+	private static final long serialVersionUID = 7274994998549486149L;
 
 	/**
 	 * 商户别名
@@ -85,6 +85,12 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private List<ContactInfo> contactInfos;
 
 	/**
+	 * 默认结算规则。在收单时不做特别指定规则时，将使用本对象设置的结算规则进行结算。其详细描述及收单接口传参示例参考功能包文档
+	 */
+	@ApiField("default_settle_rule")
+	private DefaultSettleRule defaultSettleRule;
+
+	/**
 	 * 商户编号，由机构定义，需要保证在机构下唯一
 	 */
 	@ApiField("external_id")
@@ -152,7 +158,7 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private String name;
 
 	/**
-	 * 外部业务号。比如某种业务标准外部订单号,比如交易外部订单号，代表服务商端自己订单号。用于做并发控制，防止一笔外部订单发起两次进件。非必要场景禁止传入本字段，如要使用务必理清场景及字段生成规则，与蚂蚁金服对接人咨询。
+	 * 外部业务号。目前已废弃。新接入场景禁止传入本字段，否则可能会产生无法新进件的情况
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -272,6 +278,13 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	}
 	public void setContactInfos(List<ContactInfo> contactInfos) {
 		this.contactInfos = contactInfos;
+	}
+
+	public DefaultSettleRule getDefaultSettleRule() {
+		return this.defaultSettleRule;
+	}
+	public void setDefaultSettleRule(DefaultSettleRule defaultSettleRule) {
+		this.defaultSettleRule = defaultSettleRule;
 	}
 
 	public String getExternalId() {

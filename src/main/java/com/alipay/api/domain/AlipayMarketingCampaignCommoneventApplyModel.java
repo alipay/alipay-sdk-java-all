@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灯火ADX通用事件接口
  *
  * @author auto create
- * @since 1.0, 2020-02-28 09:27:26
+ * @since 1.0, 2020-03-06 14:09:37
  */
 public class AlipayMarketingCampaignCommoneventApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7858773673776942218L;
+	private static final long serialVersionUID = 8336284135364472887L;
 
 	/**
 	 * 与event关联的数据

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.open.public.tmall.follow.create(品牌号关注关系同步)
  *
  * @author auto create
- * @since 1.0, 2019-08-22 20:12:17
+ * @since 1.0, 2020-03-18 14:14:20
  */
 public class AlipayOpenPublicFollowCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6528683393967552347L;
+	private static final long serialVersionUID = 4467774229256394973L;
 
 	/**
 	 * 来源，目前只有"tmall"

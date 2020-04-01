@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑的菜品模型,包含基本信息,sku,套餐明细
  *
  * @author auto create
- * @since 1.0, 2020-03-06 10:17:14
+ * @since 1.0, 2020-03-31 14:41:21
  */
 public class KbdishInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2638446697383342299L;
+	private static final long serialVersionUID = 6588276186833357424L;
 
 	/**
 	 * 分类字典大类的id, 如果操作的是菜品，则比输入，如果操作的是sku信息，可不输入
@@ -58,6 +58,13 @@ public class KbdishInfo extends AlipayObject {
 	 */
 	@ApiField("dish_cuisine")
 	private String dishCuisine;
+
+	/**
+	 * 菜品详情页图片id，展示在菜品详情页中；最多支持10张图片
+	 */
+	@ApiListField("dish_detail_img_list")
+	@ApiField("string")
+	private List<String> dishDetailImgList;
 
 	/**
 	 * 口碑的菜品id, 新增操作可以为空,修改的时候必传
@@ -261,6 +268,13 @@ key=special标识特色标签；value=0标示不设定;1招牌；2新品
 	}
 	public void setDishCuisine(String dishCuisine) {
 		this.dishCuisine = dishCuisine;
+	}
+
+	public List<String> getDishDetailImgList() {
+		return this.dishDetailImgList;
+	}
+	public void setDishDetailImgList(List<String> dishDetailImgList) {
+		this.dishDetailImgList = dishDetailImgList;
 	}
 
 	public String getDishId() {

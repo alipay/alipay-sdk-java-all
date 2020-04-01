@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AE提前收款卖家信息查询
  *
  * @author auto create
- * @since 1.0, 2019-07-10 10:54:53
+ * @since 1.0, 2020-03-26 19:41:32
  */
 public class MybankCreditGuaranteeSelleradmittanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2716936511834794121L;
+	private static final long serialVersionUID = 3537394721517868651L;
 
 	/**
 	 * AE卖家sellerLoginID

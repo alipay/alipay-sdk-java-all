@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单数据列表查询
  *
  * @author auto create
- * @since 1.0, 2019-08-15 17:08:07
+ * @since 1.0, 2020-03-06 20:40:25
  */
 public class AlipayMerchantOrderDigestConsumerBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1178268675697721832L;
+	private static final long serialVersionUID = 2636261442676553163L;
 
 	/**
 	 * 买家支付宝用户id
@@ -24,7 +24,7 @@ public class AlipayMerchantOrderDigestConsumerBatchqueryModel extends AlipayObje
 
 查询返回的订单支付时间在end_time之前，不包括end_time
 
-注：为了避免数据重复，可在start_time不变的情况下利用上一次返回列表中最后一条数据的支付时间作为下一次end_time的入参，实现分页查询
+注：为了避免数据重复，可在start_time不变的情况下利用上一次返回中的next_end_time作为下一次end_time的入参，实现分页查询
 	 */
 	@ApiField("end_time")
 	private String endTime;

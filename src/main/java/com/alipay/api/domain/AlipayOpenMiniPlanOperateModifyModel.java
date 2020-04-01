@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改支付后推荐方案优先级
  *
  * @author auto create
- * @since 1.0, 2019-10-05 17:31:26
+ * @since 1.0, 2020-03-26 22:35:14
  */
 public class AlipayOpenMiniPlanOperateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7515179955896854994L;
+	private static final long serialVersionUID = 2735315326421737598L;
 
 	/**
 	 * 小程序投放方案场景码，目前只支持传入支付后推荐场景码：PAYMENT_SUCCESS

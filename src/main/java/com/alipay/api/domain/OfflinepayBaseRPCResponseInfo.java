@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权码基础请求响应信息模型
  *
  * @author auto create
- * @since 1.0, 2020-02-26 11:59:18
+ * @since 1.0, 2020-03-18 15:45:34
  */
 public class OfflinepayBaseRPCResponseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6441813831147419394L;
+	private static final long serialVersionUID = 3194959758711957419L;
 
 	/**
 	 * 错误指示器

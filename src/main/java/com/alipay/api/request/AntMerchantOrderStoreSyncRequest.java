@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.order.store.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-02-29 11:35:06
+ * @since 1.0, 2020-03-13 16:25:08
  */
 public class AntMerchantOrderStoreSyncRequest implements AlipayRequest<AntMerchantOrderStoreSyncResponse> {
 

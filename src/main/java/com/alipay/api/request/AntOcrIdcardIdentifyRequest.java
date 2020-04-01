@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.ocr.idcard.identify request
  * 
  * @author auto create
- * @since 1.0, 2020-02-07 11:29:32
+ * @since 1.0, 2020-03-20 11:07:26
  */
 public class AntOcrIdcardIdentifyRequest implements AlipayRequest<AntOcrIdcardIdentifyResponse> {
 

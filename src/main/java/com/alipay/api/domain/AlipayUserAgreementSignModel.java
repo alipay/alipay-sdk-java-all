@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议签约接口
  *
  * @author auto create
- * @since 1.0, 2020-02-06 17:47:27
+ * @since 1.0, 2020-03-19 13:59:37
  */
 public class AlipayUserAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3134941291325121769L;
+	private static final long serialVersionUID = 1371283128982697935L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。
@@ -92,6 +92,12 @@ M：手机校验码回填确认方式。
 	 */
 	@ApiField("promo_params")
 	private String promoParams;
+
+	/**
+	 * 卡id(由固定前缀+32位数字构成)
+	 */
+	@ApiField("provisioning_bundle_id")
+	private String provisioningBundleId;
 
 	/**
 	 * 协议签约场景，商户和支付宝签约时确定，商户可咨询技术支持。
@@ -232,6 +238,13 @@ sub_merchant_service_description (子商户服务描述)
 	}
 	public void setPromoParams(String promoParams) {
 		this.promoParams = promoParams;
+	}
+
+	public String getProvisioningBundleId() {
+		return this.provisioningBundleId;
+	}
+	public void setProvisioningBundleId(String provisioningBundleId) {
+		this.provisioningBundleId = provisioningBundleId;
 	}
 
 	public String getSignScene() {

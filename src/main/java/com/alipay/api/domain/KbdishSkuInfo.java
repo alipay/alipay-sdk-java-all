@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜品sku模型
  *
  * @author auto create
- * @since 1.0, 2020-03-06 10:17:14
+ * @since 1.0, 2020-03-31 13:51:49
  */
 public class KbdishSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2355262986486927257L;
+	private static final long serialVersionUID = 2447328111579865166L;
 
 	/**
 	 * 餐盒费用
@@ -60,7 +60,7 @@ public class KbdishSkuInfo extends AlipayObject {
 	private String sellPrice;
 
 	/**
-	 * sku的扩展字典,json字符串
+	 * sku的扩展字典,json字符串,注意： 如果是字符串拼接的方式，转移符\要替换为\\\ 。星巴克定制设置成{\"default\":\"true\"}, 一个菜下的sku只允许一个默认设置
 	 */
 	@ApiField("sku_ext_content")
 	private String skuExtContent;

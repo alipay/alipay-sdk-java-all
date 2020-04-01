@@ -46,7 +46,7 @@ public class BatchExecuteTest {
 
     private AlipayTradeCreateModel getTestModel() {
         AlipayTradeCreateModel model = new AlipayTradeCreateModel();
-        model.setOutTradeNo("20150320010101001");
+        model.setOutTradeNo("20200320010101004");
         model.setTotalAmount("88.88");
         model.setSubject("Iphone6 16G");
         model.setBuyerId("2088102177846880");

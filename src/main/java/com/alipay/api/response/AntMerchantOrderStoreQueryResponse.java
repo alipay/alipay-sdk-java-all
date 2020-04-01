@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.order.store.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-05 15:32:25
+ * @since 1.0, 2020-03-13 16:20:32
  */
 public class AntMerchantOrderStoreQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7669666164434155187L;
+	private static final long serialVersionUID = 4333695396651794944L;
 
 	/** 
 	 * 买家id

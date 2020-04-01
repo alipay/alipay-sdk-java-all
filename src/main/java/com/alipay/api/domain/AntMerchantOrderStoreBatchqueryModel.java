@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家端订单批量查询接口
  *
  * @author auto create
- * @since 1.0, 2020-03-05 16:16:38
+ * @since 1.0, 2020-03-13 16:19:02
  */
 public class AntMerchantOrderStoreBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8129458212896651915L;
+	private static final long serialVersionUID = 3323459695491146537L;
 
 	/**
 	 * 结束时间

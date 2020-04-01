@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店插件服务订单状态同步
  *
  * @author auto create
- * @since 1.0, 2020-02-29 11:31:56
+ * @since 1.0, 2020-03-13 16:22:38
  */
 public class AntMerchantOrderStoreSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2266152263915575131L;
+	private static final long serialVersionUID = 3515261933928984762L;
 
 	/**
 	 * 状态相关的描述

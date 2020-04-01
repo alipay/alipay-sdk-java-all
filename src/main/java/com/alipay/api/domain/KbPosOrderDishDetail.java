@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 口碑pos订单菜明细
  *
  * @author auto create
- * @since 1.0, 2019-10-23 15:46:22
+ * @since 1.0, 2020-03-30 16:04:35
  */
 public class KbPosOrderDishDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4766371448866453444L;
+	private static final long serialVersionUID = 4356368723869712838L;
 
 	/**
 	 * 改价（单价），以元为单位，精度到分
@@ -136,6 +138,13 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	private String outDetailNo;
 
 	/**
+	 * 当前菜为单品菜时,为对应的sku外部ID
+当前菜为加料时,为对应的加料的外部ID
+	 */
+	@ApiField("outer_id")
+	private String outerId;
+
+	/**
 	 * 做法信息，格式按照：做法1,做法2，对于有一般销售属性的菜会拼接一般销售属性信息，格式为：做法1,做法2,销售属性1,销售属性2
 	 */
 	@ApiField("practice_info")
@@ -172,6 +181,13 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	private String salesProperties;
 
 	/**
+	 * 销售属性的扩展
+	 */
+	@ApiListField("sales_properties_ext")
+	@ApiField("name_outer_id_pair")
+	private List<NameOuterIdPair> salesPropertiesExt;
+
+	/**
 	 * 售价（单价），以元为单位，精度到分
 	 */
 	@ApiField("sell_price")
@@ -194,6 +210,13 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	 */
 	@ApiField("spec_name")
 	private String specName;
+
+	/**
+	 * 规格名称扩展信息
+	 */
+	@ApiListField("spec_name_ext")
+	@ApiField("name_outer_id_pair")
+	private List<NameOuterIdPair> specNameExt;
 
 	/**
 	 * 菜明细类型，SINGLE(单品)/SIDE(加料)/COMBO(套餐)/COMBO(套餐内单品)
@@ -353,6 +376,13 @@ public class KbPosOrderDishDetail extends AlipayObject {
 		this.outDetailNo = outDetailNo;
 	}
 
+	public String getOuterId() {
+		return this.outerId;
+	}
+	public void setOuterId(String outerId) {
+		this.outerId = outerId;
+	}
+
 	public String getPracticeInfo() {
 		return this.practiceInfo;
 	}
@@ -395,6 +425,13 @@ public class KbPosOrderDishDetail extends AlipayObject {
 		this.salesProperties = salesProperties;
 	}
 
+	public List<NameOuterIdPair> getSalesPropertiesExt() {
+		return this.salesPropertiesExt;
+	}
+	public void setSalesPropertiesExt(List<NameOuterIdPair> salesPropertiesExt) {
+		this.salesPropertiesExt = salesPropertiesExt;
+	}
+
 	public String getSellPrice() {
 		return this.sellPrice;
 	}
@@ -421,6 +458,13 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	}
 	public void setSpecName(String specName) {
 		this.specName = specName;
+	}
+
+	public List<NameOuterIdPair> getSpecNameExt() {
+		return this.specNameExt;
+	}
+	public void setSpecNameExt(List<NameOuterIdPair> specNameExt) {
+		this.specNameExt = specNameExt;
 	}
 
 	public String getType() {

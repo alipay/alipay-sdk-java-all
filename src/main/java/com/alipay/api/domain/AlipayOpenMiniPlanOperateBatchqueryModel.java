@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询支付后推荐方案列表
  *
  * @author auto create
- * @since 1.0, 2019-10-05 17:31:14
+ * @since 1.0, 2020-03-26 22:35:43
  */
 public class AlipayOpenMiniPlanOperateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8266984291494693819L;
+	private static final long serialVersionUID = 3425928222121779162L;
 
 	/**
 	 * 页码数，从第一页开始

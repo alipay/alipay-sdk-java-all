@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询设备是否支付宝新用户
  *
  * @author auto create
- * @since 1.0, 2019-12-06 21:34:02
+ * @since 1.0, 2020-03-09 14:45:45
  */
 public class AlipayUserAccountDeviceInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7535348795346373748L;
+	private static final long serialVersionUID = 6597319194775498524L;
 
 	/**
 	 * idfa或者imei号数组。同一笔请求中，数组中只能是idfa或者imei,不能既有imei，又有idfa

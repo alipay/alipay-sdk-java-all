@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通微账余额查询
  *
  * @author auto create
- * @since 1.0, 2020-03-05 22:06:08
+ * @since 1.0, 2020-03-30 14:06:15
  */
 public class AlipayTradeSettleReceivablesQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5713271426622542652L;
+	private static final long serialVersionUID = 7715442597979462492L;
 
 	/**
 	 * 收单产品码，商家和支付宝签约的产品码
@@ -36,6 +36,15 @@ public class AlipayTradeSettleReceivablesQueryModel extends AlipayObject {
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
+
+	/**
+	 * 查询历史日期，格式为 yyyyMMdd ，取值范围为昨日起至往前30日内；
+不传入时，查询实时待结算余额返回；
+传入过去某一天日期，查询对应日期的日终待结算余额返回（注意：日常场景下，昨日日终待结算余额只可在当天 02:00 后查询，在当天 02:00 前查询返回查询错误；大促场景下昨日日终可查时间会适当延后）；
+传入过去某一天非近30天内，返回参数错误；
+	 */
+	@ApiField("query_his_date")
+	private String queryHisDate;
 
 	public String getBizProduct() {
 		return this.bizProduct;
@@ -63,6 +72,13 @@ public class AlipayTradeSettleReceivablesQueryModel extends AlipayObject {
 	}
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
+	}
+
+	public String getQueryHisDate() {
+		return this.queryHisDate;
+	}
+	public void setQueryHisDate(String queryHisDate) {
+		this.queryHisDate = queryHisDate;
 	}
 
 }

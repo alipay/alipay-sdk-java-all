@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiCvOcrVatinvoiceIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5725863899648919418L;
+	private static final long serialVersionUID = 3749356891684548744L;
 
 	/**
 	 * 文件二进制内容 + base64
