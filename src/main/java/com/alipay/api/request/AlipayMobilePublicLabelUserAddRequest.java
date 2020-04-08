@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.label.user.add request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2020-04-07 16:48:00
  */
 public class AlipayMobilePublicLabelUserAddRequest implements AlipayRequest<AlipayMobilePublicLabelUserAddResponse> {
 

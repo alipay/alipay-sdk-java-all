@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询绑定商户会员号
  *
  * @author auto create
- * @since 1.0, 2018-12-24 10:51:04
+ * @since 1.0, 2020-04-07 16:59:55
  */
 public class AlipayOpenPublicAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1648126351366937193L;
+	private static final long serialVersionUID = 6793742921388758153L;
 
 	/**
 	 * 支付宝账号userid，2088开头长度为16位的字符串

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改标签接口
  *
  * @author auto create
- * @since 1.0, 2018-12-25 17:15:00
+ * @since 1.0, 2020-04-07 10:50:05
  */
 public class AlipayOpenPublicLabelModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5853751689918172483L;
+	private static final long serialVersionUID = 2663944486324696611L;
 
 	/**
 	 * 要修改的标签id

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链金融业务的标准发票信息
  *
  * @author auto create
- * @since 1.0, 2020-02-18 09:19:19
+ * @since 1.0, 2020-04-02 21:22:23
  */
 public class FinanceInvoiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5284492328892369949L;
+	private static final long serialVersionUID = 2654685823937274922L;
 
 	/**
-	 * 发票金额，以元为单位的，精确到小数点后2位
+	 * 发票金额（不含税），以元为单位的，精确到小数点后2位
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 发票金额（含税）
+	 */
+	@ApiField("amount_with_tax")
+	private String amountWithTax;
 
 	/**
 	 * UTC标准格式
@@ -30,6 +36,12 @@ public class FinanceInvoiceInfo extends AlipayObject {
 	 */
 	@ApiField("check_code")
 	private String checkCode;
+
+	/**
+	 * 发票对应合同编号
+	 */
+	@ApiField("contract_no")
+	private String contractNo;
 
 	/**
 	 * 发票影印件信息
@@ -49,11 +61,24 @@ public class FinanceInvoiceInfo extends AlipayObject {
 	@ApiField("invoice_number")
 	private String invoiceNumber;
 
+	/**
+	 * 发票类型:专票SPECIAL,普票REGULAR,电票DIGITAL
+	 */
+	@ApiField("invoice_type")
+	private String invoiceType;
+
 	public String getAmount() {
 		return this.amount;
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getAmountWithTax() {
+		return this.amountWithTax;
+	}
+	public void setAmountWithTax(String amountWithTax) {
+		this.amountWithTax = amountWithTax;
 	}
 
 	public String getBillingDate() {
@@ -68,6 +93,13 @@ public class FinanceInvoiceInfo extends AlipayObject {
 	}
 	public void setCheckCode(String checkCode) {
 		this.checkCode = checkCode;
+	}
+
+	public String getContractNo() {
+		return this.contractNo;
+	}
+	public void setContractNo(String contractNo) {
+		this.contractNo = contractNo;
 	}
 
 	public FinanceFileInfo getFile() {
@@ -89,6 +121,13 @@ public class FinanceInvoiceInfo extends AlipayObject {
 	}
 	public void setInvoiceNumber(String invoiceNumber) {
 		this.invoiceNumber = invoiceNumber;
+	}
+
+	public String getInvoiceType() {
+		return this.invoiceType;
+	}
+	public void setInvoiceType(String invoiceType) {
+		this.invoiceType = invoiceType;
 	}
 
 }

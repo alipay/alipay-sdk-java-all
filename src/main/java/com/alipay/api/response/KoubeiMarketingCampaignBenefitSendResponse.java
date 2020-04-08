@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingCampaignBenefitSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3247938271674837323L;
+	private static final long serialVersionUID = 4626883265279491555L;
 
 	/** 
 	 * 领取的权益列表

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 账单总金额查询接口
  *
  * @author auto create
- * @since 1.0, 2020-01-08 14:36:46
+ * @since 1.0, 2020-04-07 17:22:09
  */
 public class AlipayBossFncApbillTotalbillamtQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6349619633143715764L;
+	private static final long serialVersionUID = 2662941631698465949L;
 
 	/**
 	 * 合约号
@@ -59,6 +59,12 @@ public class AlipayBossFncApbillTotalbillamtQueryModel extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 发票种类{"01":"增值税专用发票","02":"增值税普通发票","05":"其它发票","07":"虚拟发票"}
+	 */
+	@ApiField("invoice_type")
+	private String invoiceType;
 
 	/**
 	 * 参与者角色ID
@@ -165,6 +171,13 @@ public class AlipayBossFncApbillTotalbillamtQueryModel extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getInvoiceType() {
+		return this.invoiceType;
+	}
+	public void setInvoiceType(String invoiceType) {
+		this.invoiceType = invoiceType;
 	}
 
 	public String getIpRoleId() {

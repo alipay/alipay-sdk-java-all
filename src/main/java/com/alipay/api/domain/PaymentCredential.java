@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentCredential extends AlipayObject {
 
-	private static final long serialVersionUID = 1224555132983392133L;
+	private static final long serialVersionUID = 8838735191452125767L;
 
 	/**
 	 * 码过期时间。{UTC timestamp when the payment credential is no longer valid for payment. W3C’s definition of the ISO 8601 date and time format: yyyy-MM-dd'T'HH:mm:ss.SSSZ}

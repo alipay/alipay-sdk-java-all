@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelAppleCampprizeDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5797686553845918399L;
+	private static final long serialVersionUID = 8287418281576735174L;
 
 	/** 
 	 * 奖品简要信息列表，一定不为null，但是size可以为0

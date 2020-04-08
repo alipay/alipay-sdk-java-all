@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量账单号查询月账单客户视图
  *
  * @author auto create
- * @since 1.0, 2020-01-08 14:37:01
+ * @since 1.0, 2020-04-07 17:22:02
  */
 public class AlipayBossFncApbillBillcustviewBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6465841292686467652L;
+	private static final long serialVersionUID = 1416669138821121826L;
 
 	/**
 	 * 月账单号列表
@@ -23,11 +23,24 @@ public class AlipayBossFncApbillBillcustviewBatchqueryModel extends AlipayObject
 	@ApiField("string")
 	private List<String> billNos;
 
+	/**
+	 * 发票种类{"01":"增值税专用发票","02":"增值税普通发票","05":"其它发票","07":"虚拟发票"}
+	 */
+	@ApiField("invoice_type")
+	private String invoiceType;
+
 	public List<String> getBillNos() {
 		return this.billNos;
 	}
 	public void setBillNos(List<String> billNos) {
 		this.billNos = billNos;
+	}
+
+	public String getInvoiceType() {
+		return this.invoiceType;
+	}
+	public void setInvoiceType(String invoiceType) {
+		this.invoiceType = invoiceType;
 	}
 
 }

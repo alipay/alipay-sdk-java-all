@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 春暖花开优惠券查询服务
  *
  * @author auto create
- * @since 1.0, 2020-03-31 14:03:04
+ * @since 1.0, 2020-04-02 17:04:43
  */
 public class AlipayMarketingCampaignWarmcardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6351841392922561676L;
+	private static final long serialVersionUID = 7273729578735186233L;
 
 	/**
 	 * 春暖花开活动场景码

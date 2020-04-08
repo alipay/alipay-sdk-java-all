@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.chat.gmember.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-31 18:50:33
+ * @since 1.0, 2020-04-01 19:05:37
  */
 public class AlipaySocialBaseChatGmemberConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3826476611414739368L;
+	private static final long serialVersionUID = 3871191995843874454L;
 
 	/** 
 	 * 所属的群id

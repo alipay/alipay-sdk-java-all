@@ -10,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.applepay.provisioningbundle.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-19 17:00:05
+ * @since 1.0, 2020-04-03 12:10:09
  */
 public class AlipayUserApplepayProvisioningbundleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8838667117727876758L;
+	private static final long serialVersionUID = 7234587139878952148L;
+
+	/** 
+	 * 卡状态
+	 */
+	@ApiField("pass_state")
+	private String passState;
 
 	/** 
 	 * 卡模型
@@ -27,6 +33,13 @@ public class AlipayUserApplepayProvisioningbundleQueryResponse extends AlipayRes
 	 */
 	@ApiField("response_header")
 	private OpenApiResponseHeader responseHeader;
+
+	public void setPassState(String passState) {
+		this.passState = passState;
+	}
+	public String getPassState( ) {
+		return this.passState;
+	}
 
 	public void setProvisioningBundle(OpenApiProvisioningBundle provisioningBundle) {
 		this.provisioningBundle = provisioningBundle;

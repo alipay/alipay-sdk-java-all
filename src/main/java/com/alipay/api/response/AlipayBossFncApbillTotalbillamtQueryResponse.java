@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.apbill.totalbillamt.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-08 14:36:55
+ * @since 1.0, 2020-04-07 17:22:26
  */
 public class AlipayBossFncApbillTotalbillamtQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3769345811579247956L;
+	private static final long serialVersionUID = 2546347512166236977L;
 
 	/** 
 	 * 汇总调整金额
@@ -188,6 +188,12 @@ public class AlipayBossFncApbillTotalbillamtQueryResponse extends AlipayResponse
 	 */
 	@ApiField("mid")
 	private String mid;
+
+	/** 
+	 * 税损扣除后月账单可关联发票金额
+	 */
+	@ApiField("new_can_invoice_amt")
+	private MultiCurrencyMoneyOpenApi newCanInvoiceAmt;
 
 	/** 
 	 * 已付金额
@@ -492,6 +498,13 @@ public class AlipayBossFncApbillTotalbillamtQueryResponse extends AlipayResponse
 	}
 	public String getMid( ) {
 		return this.mid;
+	}
+
+	public void setNewCanInvoiceAmt(MultiCurrencyMoneyOpenApi newCanInvoiceAmt) {
+		this.newCanInvoiceAmt = newCanInvoiceAmt;
+	}
+	public MultiCurrencyMoneyOpenApi getNewCanInvoiceAmt( ) {
+		return this.newCanInvoiceAmt;
 	}
 
 	public void setPaidAmt(MultiCurrencyMoneyOpenApi paidAmt) {

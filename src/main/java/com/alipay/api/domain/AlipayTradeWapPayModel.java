@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2019-07-15 17:16:44
+ * @since 1.0, 2020-04-07 23:33:18
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6292174763925637516L;
+	private static final long serialVersionUID = 3292876661912494869L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -58,6 +61,13 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	 */
 	@ApiField("extend_params")
 	private ExtendParams extendParams;
+
+	/**
+	 * 订单包含的商品列表信息，json格式，其它说明详见商品明细说明
+	 */
+	@ApiListField("goods_detail")
+	@ApiField("goods_detail")
+	private List<GoodsDetail> goodsDetail;
 
 	/**
 	 * 商品主类型 :0-虚拟类商品,1-实物类商品
@@ -217,6 +227,13 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	}
 	public void setExtendParams(ExtendParams extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public List<GoodsDetail> getGoodsDetail() {
+		return this.goodsDetail;
+	}
+	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
+		this.goodsDetail = goodsDetail;
 	}
 
 	public String getGoodsType() {

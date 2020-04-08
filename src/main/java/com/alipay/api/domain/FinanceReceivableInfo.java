@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 区块链金融业务的标准应收账款信息
  *
  * @author auto create
- * @since 1.0, 2020-02-24 15:42:53
+ * @since 1.0, 2020-04-02 21:23:01
  */
 public class FinanceReceivableInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8359936994588614687L;
+	private static final long serialVersionUID = 8329191216872261872L;
 
 	/**
 	 * 账款金额，以元为单位，精确到小数点后2位
