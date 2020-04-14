@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fix.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-27 16:43:43
+ * @since 1.0, 2020-04-09 20:55:15
  */
 public class AlipayCommerceFixTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1616412247961552413L;
+	private static final long serialVersionUID = 4555565171317795961L;
 
 	/** 
 	 * 部分规则场景下，对提报问题进行的二次分类
@@ -79,8 +79,9 @@ public class AlipayCommerceFixTaskQueryResponse extends AlipayResponse {
 	/** 
 	 * 定向开放场景中，可能同时支持多个业务场景，允许各业务场景自定义个性化提交的数据。数据格式请提前与业务接口人确定
 	 */
-	@ApiField("extra_info")
-	private FixExtData extraInfo;
+	@ApiListField("extra_info")
+	@ApiField("fix_ext_data")
+	private List<FixExtData> extraInfo;
 
 	/** 
 	 * 工单中包含的文件信息，可以通过download_url下载到文件内容
@@ -230,10 +231,10 @@ public class AlipayCommerceFixTaskQueryResponse extends AlipayResponse {
 		return this.dutyOwnerPhone;
 	}
 
-	public void setExtraInfo(FixExtData extraInfo) {
+	public void setExtraInfo(List<FixExtData> extraInfo) {
 		this.extraInfo = extraInfo;
 	}
-	public FixExtData getExtraInfo( ) {
+	public List<FixExtData> getExtraInfo( ) {
 		return this.extraInfo;
 	}
 

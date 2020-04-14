@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoEduCampusJobPublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3529685692133427247L;
+	private static final long serialVersionUID = 1355831449626812517L;
 
 	/** 
 	 * 备注问题，或者异常

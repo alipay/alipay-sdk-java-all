@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序版本信息
  *
  * @author auto create
- * @since 1.0, 2019-09-05 19:48:19
+ * @since 1.0, 2020-04-08 18:22:26
  */
 public class MiniAppVersionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5768616191773926992L;
+	private static final long serialVersionUID = 3357599737654954818L;
 
 	/**
 	 * Android客户端版本号信息
@@ -24,6 +24,12 @@ public class MiniAppVersionInfo extends AlipayObject {
 	 */
 	@ApiField("app_version")
 	private String appVersion;
+
+	/**
+	 * 审核包信息
+	 */
+	@ApiField("audit_package")
+	private MiniAppPackageInfo auditPackage;
 
 	/**
 	 * 小程序构建日志地址
@@ -96,6 +102,13 @@ OFFLINE:已下架
 	}
 	public void setAppVersion(String appVersion) {
 		this.appVersion = appVersion;
+	}
+
+	public MiniAppPackageInfo getAuditPackage() {
+		return this.auditPackage;
+	}
+	public void setAuditPackage(MiniAppPackageInfo auditPackage) {
+		this.auditPackage = auditPackage;
 	}
 
 	public String getBuildTaskLog() {

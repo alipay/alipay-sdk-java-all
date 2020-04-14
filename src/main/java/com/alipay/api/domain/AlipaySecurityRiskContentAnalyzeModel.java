@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容风险识别接口服务
  *
  * @author auto create
- * @since 1.0, 2019-11-27 16:27:38
+ * @since 1.0, 2020-04-10 10:37:04
  */
 public class AlipaySecurityRiskContentAnalyzeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6617296623996412943L;
+	private static final long serialVersionUID = 2264852438661634983L;
 
 	/**
 	 * 内容的发表账户号，用于将需要检测的内容（文本、链接、图片、音视频）等和账户进行关联
@@ -94,6 +94,12 @@ public class AlipaySecurityRiskContentAnalyzeModel extends AlipayObject {
 	 */
 	@ApiField("text")
 	private String text;
+
+	/**
+	 * 文本类型
+	 */
+	@ApiField("text_type")
+	private String textType;
 
 	/**
 	 * 进行识别的视频地址列表
@@ -184,6 +190,13 @@ public class AlipaySecurityRiskContentAnalyzeModel extends AlipayObject {
 	}
 	public void setText(String text) {
 		this.text = text;
+	}
+
+	public String getTextType() {
+		return this.textType;
+	}
+	public void setTextType(String textType) {
+		this.textType = textType;
 	}
 
 	public List<String> getVideoUrls() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.codec.hschool.decode.use request
  * 
  * @author auto create
- * @since 1.0, 2020-04-02 21:02:42
+ * @since 1.0, 2020-04-08 16:45:12
  */
 public class AlipayPayCodecHschoolDecodeUseRequest implements AlipayRequest<AlipayPayCodecHschoolDecodeUseResponse> {
 

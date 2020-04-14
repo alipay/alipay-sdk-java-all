@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询储值方案
  *
  * @author auto create
- * @since 1.0, 2020-02-25 13:31:50
+ * @since 1.0, 2020-04-08 11:34:49
  */
 public class AlipayMerchantPayforprivilegePromotionplanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5663855344612499945L;
+	private static final long serialVersionUID = 3119839575956829414L;
 
 	/**
 	 * 充享惠方案ID

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniActivityModuleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1397178781739545998L;
+	private static final long serialVersionUID = 4371932876621598419L;
 
 	/**
 	 * 地区码，比如杭州的城市码是300100

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户单门店下线下交易数据详细信息，按照给定格式上传
  *
  * @author auto create
- * @since 1.0, 2019-12-18 16:30:26
+ * @since 1.0, 2020-04-13 17:20:14
  */
 public class IntelligentGuideTradeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3141922538193984471L;
+	private static final long serialVersionUID = 7353529388323841151L;
 
 	/**
 	 * 非必填，商户会员的会员卡类型
@@ -80,7 +80,7 @@ public class IntelligentGuideTradeDetail extends AlipayObject {
 	private String mobile;
 
 	/**
-	 * 原价金额，粒度精确到分（0.01元）。例：100代表1元。10代表0.1元。校验数字，大于0。
+	 * 原价金额。单位：元。精确到小数点后两位。例：11.11。校验数字，大于0。
 	 */
 	@ApiField("original_price")
 	private String originalPrice;
@@ -92,7 +92,7 @@ public class IntelligentGuideTradeDetail extends AlipayObject {
 	private String paymentType;
 
 	/**
-	 * 实际消费金额，粒度精确到分(0.01元)，同original_price。
+	 * 实际消费金额。单位：元。精确到小数点后两位。例：11.11。校验数字，大于0。实际消费金额需要小于等于原价
 	 */
 	@ApiField("price")
 	private String price;

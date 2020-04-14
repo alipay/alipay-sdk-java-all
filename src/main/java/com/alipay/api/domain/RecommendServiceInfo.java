@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推荐服务信息
  *
  * @author auto create
- * @since 1.0, 2020-03-10 10:32:56
+ * @since 1.0, 2020-04-13 17:15:26
  */
 public class RecommendServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8865477277451125949L;
+	private static final long serialVersionUID = 1765529231896297458L;
 
 	/**
 	 * 一级类目
@@ -47,7 +47,7 @@ public class RecommendServiceInfo extends AlipayObject {
 	 * 套餐最低价
 	 */
 	@ApiField("min_price")
-	private String minPrice;
+	private Long minPrice;
 
 	/**
 	 * 服务推荐原因
@@ -96,10 +96,10 @@ public class RecommendServiceInfo extends AlipayObject {
 		this.maxPrice = maxPrice;
 	}
 
-	public String getMinPrice() {
+	public Long getMinPrice() {
 		return this.minPrice;
 	}
-	public void setMinPrice(String minPrice) {
+	public void setMinPrice(Long minPrice) {
 		this.minPrice = minPrice;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构服务通知
  *
  * @author auto create
- * @since 1.0, 2019-12-06 16:44:30
+ * @since 1.0, 2020-04-09 16:03:22
  */
 public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6622334169193456943L;
+	private static final long serialVersionUID = 5884545316157214312L;
 
 	/**
 	 * 账单机构缩写，广东移动，江苏电网

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加绑定商户会员号
  *
  * @author auto create
- * @since 1.0, 2017-07-04 10:40:27
+ * @since 1.0, 2020-04-08 15:26:58
  */
 public class AlipayOpenPublicAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8526558578313691875L;
+	private static final long serialVersionUID = 5436823957581476525L;
 
 	/**
 	 * 账户添加成功，在支付宝与其对应的协议号。如果账户重复添加，接口保证幂等依然视为添加成功，返回此前该账户在支付宝对应的协议号。其他异常该字段不存在。

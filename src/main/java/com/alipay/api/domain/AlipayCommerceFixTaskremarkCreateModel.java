@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工单添加备注接口
  *
  * @author auto create
- * @since 1.0, 2020-03-27 19:46:31
+ * @since 1.0, 2020-04-09 20:55:58
  */
 public class AlipayCommerceFixTaskremarkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2242518135757566447L;
+	private static final long serialVersionUID = 3885897567491182491L;
 
 	/**
 	 * 针对工单的补充备注信息

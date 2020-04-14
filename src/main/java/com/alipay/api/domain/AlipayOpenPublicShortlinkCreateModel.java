@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务窗短链自主生成接口
  *
  * @author auto create
- * @since 1.0, 2017-07-04 10:40:37
+ * @since 1.0, 2020-04-08 15:25:42
  */
 public class AlipayOpenPublicShortlinkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2836331857349876164L;
+	private static final long serialVersionUID = 3762174427775918538L;
 
 	/**
 	 * 对于场景ID的描述，商户自己定义

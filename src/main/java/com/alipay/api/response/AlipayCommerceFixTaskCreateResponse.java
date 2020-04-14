@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fix.task.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-27 19:45:48
+ * @since 1.0, 2020-04-09 20:55:51
  */
 public class AlipayCommerceFixTaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5462172511786442647L;
+	private static final long serialVersionUID = 3691345672252157861L;
 
 	/** 
 	 * 创建成功工单的唯一标识id。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * hellobike 定价返回结构体
  *
  * @author auto create
- * @since 1.0, 2019-12-30 14:22:33
+ * @since 1.0, 2020-04-14 17:33:54
  */
 public class HelloBikePriceResultItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6664471365417913484L;
+	private static final long serialVersionUID = 6245186284192139638L;
 
 	/**
 	 * 优惠卡类型，枚举值为 mcard,qcard,hycard,ycard,tcard
@@ -20,7 +20,7 @@ public class HelloBikePriceResultItem extends AlipayObject {
 	private String cardType;
 
 	/**
-	 * 排序优先级,数字越大,优先级越高,没有经过排序的卡类型默认返回-1
+	 * 排序优先级,数字越小,优先级越高,没有经过排序的卡类型默认返回-1
 	 */
 	@ApiField("priority")
 	private String priority;

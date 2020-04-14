@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 建立会员关系
  *
  * @author auto create
- * @since 1.0, 2020-02-25 13:32:25
+ * @since 1.0, 2020-04-08 11:34:12
  */
 public class AlipayMerchantPayforprivilegeUserrelationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7497826949717767278L;
+	private static final long serialVersionUID = 7457898923512468776L;
 
 	/**
 	 * 蚂蚁统一会员ID

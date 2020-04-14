@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardBinVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8142222384652657555L;
+	private static final long serialVersionUID = 2251966381987356651L;
 
 	/**
 	 * 卡的别名

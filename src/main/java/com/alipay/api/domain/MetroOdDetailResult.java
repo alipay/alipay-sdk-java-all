@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 结果
  *
  * @author auto create
- * @since 1.0, 2020-04-01 14:49:36
+ * @since 1.0, 2020-04-14 15:40:13
  */
 public class MetroOdDetailResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4834734826249689563L;
+	private static final long serialVersionUID = 1614721667667364749L;
 
 	/**
 	 * 返回码
@@ -22,8 +25,9 @@ public class MetroOdDetailResult extends AlipayObject {
 	/**
 	 * 结果
 	 */
-	@ApiField("data")
-	private MetroOdItem data;
+	@ApiListField("data")
+	@ApiField("metro_od_item")
+	private List<MetroOdItem> data;
 
 	/**
 	 * 消息描述
@@ -38,10 +42,10 @@ public class MetroOdDetailResult extends AlipayObject {
 		this.code = code;
 	}
 
-	public MetroOdItem getData() {
+	public List<MetroOdItem> getData() {
 		return this.data;
 	}
-	public void setData(MetroOdItem data) {
+	public void setData(List<MetroOdItem> data) {
 		this.data = data;
 	}
 

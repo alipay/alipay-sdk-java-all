@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv咨询智能导购项目推荐
  *
  * @author auto create
- * @since 1.0, 2020-03-10 10:32:56
+ * @since 1.0, 2020-04-13 17:15:25
  */
 public class KoubeiServindustryPromoIntelligentguideConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1876319624747896262L;
+	private static final long serialVersionUID = 2754971156588878324L;
 
 	/**
 	 * 手机号码

@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarMaintainBizorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1419544855693962481L;
+	private static final long serialVersionUID = 6582968154749158599L;
 
 	/** 
 	 * 预约确认时间yyyy-MM-dd HH:mm:ss。门店确认预约时间。门店确认后，预约流程生效，用户可到店服务。

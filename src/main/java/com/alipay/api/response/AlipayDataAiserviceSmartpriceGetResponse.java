@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.smartprice.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-30 14:22:44
+ * @since 1.0, 2020-04-14 17:35:09
  */
 public class AlipayDataAiserviceSmartpriceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4396797559769759189L;
+	private static final long serialVersionUID = 4482573467222852714L;
 
 	/** 
 	 * 兼容V1.0。用户购买hellobike月卡的推荐价格，单位为分。

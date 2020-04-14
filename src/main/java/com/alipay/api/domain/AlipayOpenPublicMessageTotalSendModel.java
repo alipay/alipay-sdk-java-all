@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * alipay.open.public. message.total.send（群发消息）
  *
  * @author auto create
- * @since 1.0, 2018-01-22 10:33:37
+ * @since 1.0, 2020-04-08 15:24:13
  */
 public class AlipayOpenPublicMessageTotalSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6413811298981565473L;
+	private static final long serialVersionUID = 3277379965912169821L;
 
 	/**
 	 * 图文消息，当msg_type为image-text，该值必须设置

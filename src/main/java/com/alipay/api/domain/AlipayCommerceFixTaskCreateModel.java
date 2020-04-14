@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建生态协同单接口
  *
  * @author auto create
- * @since 1.0, 2020-03-27 19:45:48
+ * @since 1.0, 2020-04-09 20:55:51
  */
 public class AlipayCommerceFixTaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5259712638494484282L;
+	private static final long serialVersionUID = 4237877674264491562L;
 
 	/**
 	 * 应用场景: 用于在ruleScene规则场景下，对提报问题进行二次分类。
@@ -49,11 +49,10 @@ public class AlipayCommerceFixTaskCreateModel extends AlipayObject {
 	private List<FixExtData> extra;
 
 	/**
-	 * 如果工单包含图片等附件信息，首先通过文件上传接口进行文件上传，并从接口返回中获得id。此处构造的FixFileInfo对象只需包含id即可。
+	 * 如果工单包含图片等附件信息，首先通过文件上传接口进行文件上传，并从接口返回中获得id。此处构造的fileIds多个之间用英文","分隔。
 	 */
-	@ApiListField("files")
-	@ApiField("fix_file_info")
-	private List<FixFileInfo> files;
+	@ApiField("file_ids")
+	private String fileIds;
 
 	/**
 	 * 特殊场景下需要直接指定任务处理方时使用（非必须）。
@@ -136,11 +135,11 @@ public class AlipayCommerceFixTaskCreateModel extends AlipayObject {
 		this.extra = extra;
 	}
 
-	public List<FixFileInfo> getFiles() {
-		return this.files;
+	public String getFileIds() {
+		return this.fileIds;
 	}
-	public void setFiles(List<FixFileInfo> files) {
-		this.files = files;
+	public void setFileIds(String fileIds) {
+		this.fileIds = fileIds;
 	}
 
 	public String getHandlerId() {

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.identify.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-05 18:00:08
+ * @since 1.0, 2020-04-08 10:46:08
  */
 public class AlipayUserCertifyIdentifyInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7726491869747885128L;
+	private static final long serialVersionUID = 4139255896685292913L;
 
 	/** 
 	 * 如果是个人账号，就是个人的名字，如果是企业账号，就是企业名称

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问题现象分类查询接口
  *
  * @author auto create
- * @since 1.0, 2020-03-25 17:02:55
+ * @since 1.0, 2020-04-09 20:55:30
  */
 public class AlipayCommerceFixTaskproblemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1368527682491284544L;
+	private static final long serialVersionUID = 3273272668488578612L;
 
 	/**
 	 * 非必须，仅用在部分行业，请与业务对接同学沟通后确定是否使用。

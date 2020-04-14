@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个性化扩展区上下线接口
  *
  * @author auto create
- * @since 1.0, 2017-04-27 10:50:31
+ * @since 1.0, 2020-04-08 15:26:40
  */
 public class AlipayOpenPublicPersonalizedExtensionSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6148279511513674976L;
+	private static final long serialVersionUID = 6755278612552734166L;
 
 	/**
 	 * 扩展区套id，调用创建个性化扩展区接口时返回

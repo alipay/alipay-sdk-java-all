@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAntarchiveCustrelationAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1871696466228571425L;
+	private static final long serialVersionUID = 2572779371259173481L;
 
 	/**
 	 * 待关联客户id
