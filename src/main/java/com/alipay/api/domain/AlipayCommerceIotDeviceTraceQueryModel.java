@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询设备轨迹接口
  *
  * @author auto create
- * @since 1.0, 2019-09-20 12:11:50
+ * @since 1.0, 2020-04-30 10:49:13
  */
 public class AlipayCommerceIotDeviceTraceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1381843512592385474L;
+	private static final long serialVersionUID = 3858116626127622998L;
 
 	/**
 	 * 设备唯一标识，设备id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备与线路绑定接口
  *
  * @author auto create
- * @since 1.0, 2019-09-20 15:41:39
+ * @since 1.0, 2020-04-30 10:48:29
  */
 public class AlipayCommerceIotDeviceGeofenceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3763327456895683967L;
+	private static final long serialVersionUID = 3838287386825319265L;
 
 	/**
 	 * 设备的唯一标识,设备id

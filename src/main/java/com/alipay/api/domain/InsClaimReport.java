@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险报案信息实体
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:48:09
+ * @since 1.0, 2020-04-27 17:21:30
  */
 public class InsClaimReport extends AlipayObject {
 
-	private static final long serialVersionUID = 7465256529541836314L;
+	private static final long serialVersionUID = 6685611292317214438L;
 
 	/**
 	 * 出险地点

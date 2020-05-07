@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康码验码接口
  *
  * @author auto create
- * @since 1.0, 2020-03-11 16:34:26
+ * @since 1.0, 2020-04-21 11:08:42
  */
 public class AlipayEbppIndustryGovHealthcodeVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5558644283428585799L;
+	private static final long serialVersionUID = 2551472486224842118L;
 
 	/**
 	 * 市
@@ -25,6 +25,12 @@ public class AlipayEbppIndustryGovHealthcodeVerifyModel extends AlipayObject {
 	@ApiField("code_content")
 	private String codeContent;
 
+	/**
+	 * 区分验码的业务主体，医护天使: MEDICAL_ANGEL; 默认为健康码: HEALTH_CODE
+	 */
+	@ApiField("industry_type")
+	private String industryType;
+
 	public String getCityCode() {
 		return this.cityCode;
 	}
@@ -37,6 +43,13 @@ public class AlipayEbppIndustryGovHealthcodeVerifyModel extends AlipayObject {
 	}
 	public void setCodeContent(String codeContent) {
 		this.codeContent = codeContent;
+	}
+
+	public String getIndustryType() {
+		return this.industryType;
+	}
+	public void setIndustryType(String industryType) {
+		this.industryType = industryType;
 	}
 
 }

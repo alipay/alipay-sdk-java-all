@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询阿里车的车辆信息
  *
  * @author auto create
- * @since 1.0, 2019-12-17 12:20:36
+ * @since 1.0, 2020-05-06 13:28:06
  */
 public class AliosOpenAutoInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2432545997627287854L;
+	private static final long serialVersionUID = 8712767793942364478L;
 
 	/**
 	 * 设备token

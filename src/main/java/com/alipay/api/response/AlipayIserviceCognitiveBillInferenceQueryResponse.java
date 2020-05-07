@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCognitiveBillInferenceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2648942425826679138L;
+	private static final long serialVersionUID = 2648526486242834821L;
 
 	/** 
 	 * 发票识别内容详细信息

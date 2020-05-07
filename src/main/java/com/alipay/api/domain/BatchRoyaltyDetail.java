@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量结算详情
  *
  * @author auto create
- * @since 1.0, 2020-03-01 19:02:48
+ * @since 1.0, 2020-04-23 09:47:11
  */
 public class BatchRoyaltyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1889568649686465147L;
+	private static final long serialVersionUID = 1669448851828961347L;
 
 	/**
 	 * 分账金额，单位元
@@ -26,10 +26,18 @@ public class BatchRoyaltyDetail extends AlipayObject {
 	private String desc;
 
 	/**
-	 * 错误编码，SETTLE_ACCOUNT_ERROR：结算账户信息有误；BANK_DISHONOR：银行提现退票；UNKNOWN_ERROR：未知错误
+	 * 错误编码
+BANK_CARD_ERROR：银行卡信息有误的场景，系统自动重试中
+BANK_DISHONOR：银行退票
 	 */
 	@ApiField("error_code")
 	private String errorCode;
+
+	/**
+	 * 错误描述
+	 */
+	@ApiField("error_desc")
+	private String errorDesc;
 
 	/**
 	 * ACCEPT_SUCCESS：受理成功； SUCCESS：结算成功； FAIL：结算失败；FAIL_RETRY：失败重试。
@@ -90,7 +98,7 @@ Store: 结算门店
 	private String transOutEntityId;
 
 	/**
-	 * 分账转出主体类型。 SecondMerchant：结算主体为二级商户
+	 * 分账转出主体类型。 SecondMerchant：结算主体为二级商户，Store：结算主体为门店。
 	 */
 	@ApiField("trans_out_entity_type")
 	private String transOutEntityType;
@@ -120,6 +128,13 @@ Store: 结算门店
 	}
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
+	}
+
+	public String getErrorDesc() {
+		return this.errorDesc;
+	}
+	public void setErrorDesc(String errorDesc) {
+		this.errorDesc = errorDesc;
 	}
 
 	public String getStatus() {

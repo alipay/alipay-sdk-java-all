@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.geofence.bind response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-20 15:41:46
+ * @since 1.0, 2020-04-30 10:48:29
  */
 public class AlipayCommerceIotDeviceGeofenceBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5321465184177298331L;
+	private static final long serialVersionUID = 5459921673962733119L;
 
 	
 

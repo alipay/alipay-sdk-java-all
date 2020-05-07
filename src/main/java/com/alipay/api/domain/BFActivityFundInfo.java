@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计收费主体信息配置
  *
  * @author auto create
- * @since 1.0, 2020-03-27 17:22:57
+ * @since 1.0, 2020-04-21 14:23:27
  */
 public class BFActivityFundInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2852338562193679429L;
+	private static final long serialVersionUID = 5287985536373926754L;
 
 	/**
 	 * 计收费主体是否激活

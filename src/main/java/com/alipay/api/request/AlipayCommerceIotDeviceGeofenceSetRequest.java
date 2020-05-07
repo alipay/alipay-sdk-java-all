@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.device.geofence.set request
  * 
  * @author auto create
- * @since 1.0, 2019-09-20 12:12:10
+ * @since 1.0, 2020-04-30 10:48:42
  */
 public class AlipayCommerceIotDeviceGeofenceSetRequest implements AlipayRequest<AlipayCommerceIotDeviceGeofenceSetResponse> {
 

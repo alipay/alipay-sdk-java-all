@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAgreementAuthApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4226969428369378126L;
+	private static final long serialVersionUID = 5761313877141687256L;
 
 	/** 
 	 * 鉴权申请token，其格式和内容，由支付宝定义。在鉴权确认的过程中，商户可根据申请操作成功时返回的申请token，进行后续的确认操作。

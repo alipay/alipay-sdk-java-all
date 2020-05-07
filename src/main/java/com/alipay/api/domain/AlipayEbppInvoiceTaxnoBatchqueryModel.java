@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取指定企业税号的用户发票要素列表
  *
  * @author auto create
- * @since 1.0, 2020-03-25 16:51:52
+ * @since 1.0, 2020-04-15 09:30:14
  */
 public class AlipayEbppInvoiceTaxnoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4142196734723343841L;
+	private static final long serialVersionUID = 5437134793319911453L;
 
 	/**
 	 * 默认值为false。true为输出交易信息，false为不输出交易信息。
@@ -47,9 +47,7 @@ SALSE_INVOICE:机动车销售统一发票
 	private List<String> invoiceKindList;
 
 	/**
-	 * 查询结果上限笔数；
-不设置时默认200笔上限；
-上限为500笔
+	 * 查询结果上限笔数，最大值20
 	 */
 	@ApiField("limit_size")
 	private Long limitSize;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约参数。用于sdk支付并签约中传入签约信息。
  *
  * @author auto create
- * @since 1.0, 2019-11-29 16:27:37
+ * @since 1.0, 2020-04-29 20:11:54
  */
 public class SignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7459839131289688571L;
+	private static final long serialVersionUID = 4518718861689783347L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -20,7 +20,7 @@ public class SignParams extends AlipayObject {
 	private AccessParams accessParams;
 
 	/**
-	 * 是否允许花芝GO降级成原代扣（即销售方案指定的代扣产品），在花芝GO场景下才会使用该值。取值：true-允许降级，false-不允许降级。默认为false。
+	 * 是否允许花芝GO降级成原代扣（即销售方案指定的代扣产品），在花芝GO场景下才会使用该值。取值：true-允许降级，false-不允许降级。默认为true。
 	 */
 	@ApiField("allow_huazhi_degrade")
 	private Boolean allowHuazhiDegrade;

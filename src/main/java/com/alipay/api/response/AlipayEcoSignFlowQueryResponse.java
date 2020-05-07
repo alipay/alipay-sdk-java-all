@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.FlowSigner;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.sign.flow.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-26 21:38:00
+ * @since 1.0, 2020-05-06 14:30:09
  */
 public class AlipayEcoSignFlowQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5241824876392156452L;
+	private static final long serialVersionUID = 5227512189852361845L;
 
 	/** 
 	 * 文件主题
@@ -67,6 +70,13 @@ public class AlipayEcoSignFlowQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("sign_validity")
 	private Long signValidity;
+
+	/** 
+	 * 签署人列表及签署状态
+	 */
+	@ApiListField("signers")
+	@ApiField("flow_signer")
+	private List<FlowSigner> signers;
 
 	public void setBusinessScene(String businessScene) {
 		this.businessScene = businessScene;
@@ -129,6 +139,13 @@ public class AlipayEcoSignFlowQueryResponse extends AlipayResponse {
 	}
 	public Long getSignValidity( ) {
 		return this.signValidity;
+	}
+
+	public void setSigners(List<FlowSigner> signers) {
+		this.signers = signers;
+	}
+	public List<FlowSigner> getSigners( ) {
+		return this.signers;
 	}
 
 }

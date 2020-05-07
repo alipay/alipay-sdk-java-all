@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.location.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-20 12:11:16
+ * @since 1.0, 2020-04-30 10:49:34
  */
 public class AlipayCommerceIotDeviceLocationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2399581287171731665L;
+	private static final long serialVersionUID = 2787561544186874174L;
 
 	/** 
 	 * 纬度

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享订单关闭接口
  *
  * @author auto create
- * @since 1.0, 2019-01-22 11:08:51
+ * @since 1.0, 2020-05-06 10:25:11
  */
 public class AlipayPcreditHuabeiAuthOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7843769411259171954L;
+	private static final long serialVersionUID = 4278382479173519183L;
 
 	/**
 	 * 支付宝侧花呗冻结、解冻操作单据id。在原先的冻结或者解冻接口调用中同步返回给商户，或者通过商户通知返回给商户。推荐优先使用本参数。

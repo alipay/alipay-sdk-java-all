@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员电子证件信息保存
  *
  * @author auto create
- * @since 1.0, 2019-03-21 16:25:37
+ * @since 1.0, 2020-05-07 10:08:10
  */
 public class AlipayUserCertdocSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8298556199134346666L;
+	private static final long serialVersionUID = 1313232771911539596L;
 
 	/**
 	 * 证件号

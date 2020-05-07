@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员电子证件链接查询
  *
  * @author auto create
- * @since 1.0, 2019-08-01 14:16:21
+ * @since 1.0, 2020-05-07 10:09:02
  */
 public class AlipayUserCertdocUrlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7877259728628833694L;
+	private static final long serialVersionUID = 7791816941513141525L;
 
 	/**
 	 * 业务类型。向支付宝证件夹PD申请。

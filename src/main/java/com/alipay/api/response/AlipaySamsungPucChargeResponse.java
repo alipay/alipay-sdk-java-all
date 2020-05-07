@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySamsungPucChargeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7495925214716766287L;
+	private static final long serialVersionUID = 4718626474994979489L;
 
 	/** 
 	 * zhijiefanhui yemian

@@ -47,6 +47,7 @@ public class PageExecuteTest {
                 "    \"total_amount\":9.00," +
                 "    \"product_code\":\"QUICK_WAP_WAY\"" +
                 "  }");
+        request.setReturnUrl("https://www.taobao.com");
         return request;
     }
 

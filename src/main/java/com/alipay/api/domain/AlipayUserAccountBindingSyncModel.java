@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户绑定关系同步接口
  *
  * @author auto create
- * @since 1.0, 2019-04-09 15:25:03
+ * @since 1.0, 2020-04-27 15:19:54
  */
 public class AlipayUserAccountBindingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1332231122935474754L;
+	private static final long serialVersionUID = 7384361362379618545L;
 
 	/**
 	 * 支付宝用户ID

@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * ApplePay公用响应头
  *
  * @author auto create
- * @since 1.0, 2020-02-25 21:30:13
+ * @since 1.0, 2020-04-23 11:48:14
  */
 public class OpenApiResponseHeader extends AlipayObject {
 
-	private static final long serialVersionUID = 2426985659372934252L;
+	private static final long serialVersionUID = 6555229693138718633L;
+
+	/**
+	 * 会话id，对应请求中的conversation_id，若请求中conversation_id非空，则该值非空
+	 */
+	@ApiField("conversation_id")
+	private String conversationId;
+
+	/**
+	 * 响应id，对应请求中的request_id。如果请求中request_id非空，则response_id非空。
+	 */
+	@ApiField("response_id")
+	private String responseId;
 
 	/**
 	 * 自定义状态码
@@ -30,6 +42,20 @@ public class OpenApiResponseHeader extends AlipayObject {
 	 */
 	@ApiField("sub_status_code")
 	private String subStatusCode;
+
+	public String getConversationId() {
+		return this.conversationId;
+	}
+	public void setConversationId(String conversationId) {
+		this.conversationId = conversationId;
+	}
+
+	public String getResponseId() {
+		return this.responseId;
+	}
+	public void setResponseId(String responseId) {
+		this.responseId = responseId;
+	}
 
 	public String getStatusCode() {
 		return this.statusCode;

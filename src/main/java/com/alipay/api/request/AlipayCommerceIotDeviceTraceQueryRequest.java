@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.device.trace.query request
  * 
  * @author auto create
- * @since 1.0, 2019-09-20 12:11:58
+ * @since 1.0, 2020-04-30 10:49:13
  */
 public class AlipayCommerceIotDeviceTraceQueryRequest implements AlipayRequest<AlipayCommerceIotDeviceTraceQueryResponse> {
 

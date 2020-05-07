@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * E签宝附件列表
  *
  * @author auto create
- * @since 1.0, 2019-12-25 10:57:52
+ * @since 1.0, 2020-05-06 14:36:29
  */
 public class Detail extends AlipayObject {
 
-	private static final long serialVersionUID = 4566835788319264686L;
+	private static final long serialVersionUID = 2514684294171169596L;
 
 	/**
 	 * 英文描述（collectAttachement值为true时必填）

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主服务高速场景数据
  *
  * @author auto create
- * @since 1.0, 2019-06-22 19:51:40
+ * @since 1.0, 2020-05-06 15:22:18
  */
 public class HighwaySceneData extends AlipayObject {
 
-	private static final long serialVersionUID = 1653699223111168922L;
+	private static final long serialVersionUID = 4749878815492746596L;
 
 	/**
 	 * 车辆类：
@@ -52,7 +52,7 @@ truck:货车
 	private String endStationLongitude;
 
 	/**
-	 * 出站口名称
+	 * 当具体交易场景为ETC_HIGHWAY、ETC_HIGHWAY_OPEN时，该字段必填，格式为省份+收费站名，比如“黑龙江瓦盆窑西站”
 	 */
 	@ApiField("end_station_name")
 	private String endStationName;
@@ -64,7 +64,7 @@ truck:货车
 	private String endStationProvince;
 
 	/**
-	 * 即用户出高速时间
+	 * 对应路网规范中的chargeTime字段，如果是高速通行场景，该字段为高速出口的时间
 	 */
 	@ApiField("end_time")
 	private String endTime;
@@ -106,7 +106,7 @@ truck:货车
 	private String startStationLongitude;
 
 	/**
-	 * 进站口名称
+	 * 当具体交易场景为ETC_HIGHWAY时，该字段必填，格式为省份+收费站名，比如“黑龙江瓦盆窑西站”
 	 */
 	@ApiField("start_station_name")
 	private String startStationName;
@@ -122,6 +122,34 @@ truck:货车
 	 */
 	@ApiField("start_time")
 	private String startTime;
+
+	/**
+	 * 子场景：
+ETC_HIGHWAY：ETC封闭式高速公路（不传默认这个值）；
+ETC_HIGHWAY_OPEN：ETC开放式高速公路；
+ETC_PARKING：ETC停车场；
+ETC_GAS：ETC加油站；
+ETC_SERVICE_AREA：ETC服务区；
+ETC_MUNICIPAL_SERVICE：ETC市政服务。
+	 */
+	@ApiField("sub_scene")
+	private String subScene;
+
+	/**
+	 * 1、当交易场景为ETC_PARKING时：省份+停车场描述 (停车场描述应填写停车场名称 或停车场具体地点，勿填停车场 所属公司名称)，如北京市首都机场停车场/北京市东城区东单体育馆南侧路停车场
+2、当交易场景为ETC_GAS时：省份+加油站描述 (加油站描述应填写加油站具体 地点)，比如北京市朝阳区北四环东路中石化加油站
+3、当交易场景为ETC_SERVICE_AREA时：省份+服务区描述 (服务区描述应填写所在高速公 路名称及服务区名称)，如北京市京藏高速百葛服务区
+4、当交易场景为ETC_MUNICIPAL_SERVICE时：省份+市政服务 描述(市政服务描述应填写市政 服务名称)，比如山东省青岛市胶州湾海底隧道
+	 */
+	@ApiField("sub_scene_desc")
+	private String subSceneDesc;
+
+	/**
+	 * HIGHWAY_TYPE：高速交易场景类型，对应具体交易场景[ETC_HIGHWAY,ETC_HIGHWAY_OPEN]
+EXPAND_TYPE：拓展消费交易类型，对应具体交易场景 [ETC_PARKING,ETC_GAS,ETC_SERVICE_AREA,ETC_MUNICIPAL_SERVICE]
+	 */
+	@ApiField("sub_type")
+	private String subType;
 
 	public String getCarType() {
 		return this.carType;
@@ -247,6 +275,27 @@ truck:货车
 	}
 	public void setStartTime(String startTime) {
 		this.startTime = startTime;
+	}
+
+	public String getSubScene() {
+		return this.subScene;
+	}
+	public void setSubScene(String subScene) {
+		this.subScene = subScene;
+	}
+
+	public String getSubSceneDesc() {
+		return this.subSceneDesc;
+	}
+	public void setSubSceneDesc(String subSceneDesc) {
+		this.subSceneDesc = subSceneDesc;
+	}
+
+	public String getSubType() {
+		return this.subType;
+	}
+	public void setSubType(String subType) {
+		this.subType = subType;
 	}
 
 }

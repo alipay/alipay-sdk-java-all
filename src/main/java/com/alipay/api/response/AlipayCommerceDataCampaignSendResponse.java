@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.data.campaign.send response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-13 14:07:24
+ * @since 1.0, 2020-04-23 13:06:14
  */
 public class AlipayCommerceDataCampaignSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6334357722346196112L;
+	private static final long serialVersionUID = 3668884879957436349L;
 
 	/** 
 	 * 用户订阅消息状态，其中true：已订阅；false：未订阅；unknown：未知状态

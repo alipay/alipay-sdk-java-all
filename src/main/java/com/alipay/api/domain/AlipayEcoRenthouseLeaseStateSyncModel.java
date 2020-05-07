@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租约状态同步
  *
  * @author auto create
- * @since 1.0, 2018-06-25 14:53:30
+ * @since 1.0, 2020-05-07 15:28:19
  */
 public class AlipayEcoRenthouseLeaseStateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8436829353722992178L;
+	private static final long serialVersionUID = 3774119378752658683L;
 
 	/**
 	 * 租约电子合同图片，内容字节组Base64处理，支持jpg、png、jpeg、bmp格式

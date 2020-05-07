@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灰度组件SDK线上验证测试接口
  *
  * @author auto create
- * @since 1.0, 2020-04-09 22:31:34
+ * @since 1.0, 2020-04-20 14:05:38
  */
 public class AlipayOpenAppOpenbizmockApisdkgrayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7734393335534491613L;
+	private static final long serialVersionUID = 7187889348144656961L;
 
 	/**
 	 * 测试接口，参数随便配置

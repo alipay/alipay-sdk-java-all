@@ -7,14 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人机识别服务接口，检查这次行为是人还是机器操作的。
  *
  * @author auto create
- * @since 1.0, 2017-11-14 15:00:33
+ * @since 1.0, 2020-04-23 14:45:35
  */
 public class AlipaySecurityRiskPolicyRdsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6744953953177425622L;
+	private static final long serialVersionUID = 8589643874235783796L;
 
 	/**
-	 * 参数名称：RDS采集的行为数据；非唯一；参数作用：RDS系统通过行为数据做人机识别；如何获取：客户端集成RDS的SDK后自动会获取到该数据。
+	 * 具体需传递的参数请参考接入文档中的参数列表
+https://yuque.antfin-inc.com/tecsec/rds/insertdoc
 	 */
 	@ApiField("rds_params")
 	private String rdsParams;

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链金融业务的上传文件信息
  *
  * @author auto create
- * @since 1.0, 2020-02-18 09:19:19
+ * @since 1.0, 2020-04-29 22:10:09
  */
 public class FinanceFileInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7291394133486155558L;
+	private static final long serialVersionUID = 2746481178211828244L;
+
+	/**
+	 * 文件内容hash
+	 */
+	@ApiField("file_hash")
+	private String fileHash;
 
 	/**
 	 * 上传文件生成的唯一id
@@ -24,6 +30,13 @@ public class FinanceFileInfo extends AlipayObject {
 	 */
 	@ApiField("file_key")
 	private String fileKey;
+
+	public String getFileHash() {
+		return this.fileHash;
+	}
+	public void setFileHash(String fileHash) {
+		this.fileHash = fileHash;
+	}
 
 	public String getFileId() {
 		return this.fileId;

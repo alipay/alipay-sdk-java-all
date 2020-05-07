@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账条款明细
  *
  * @author auto create
- * @since 1.0, 2020-03-01 19:02:42
+ * @since 1.0, 2020-04-21 19:48:58
  */
 public class RoyaltyDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2132981383693811481L;
+	private static final long serialVersionUID = 4736582724816618168L;
 
 	/**
 	 * 分账金额，单位为元
@@ -26,19 +26,19 @@ public class RoyaltyDetailInfo extends AlipayObject {
 	private String desc;
 
 	/**
-	 * 分账转入账户id。当分账账户id类型是cardSerialNo时，本参数为用户在支付宝绑定的卡编号；当分账账户id类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号；当分账账户id类型是loginName时，本参数为用户的支付宝登录号
+	 * 分账转入账户id。当分账账户id类型是cardSerialNo时，本参数为用户在支付宝绑定的卡编号；当分账账户id类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号；当分账账户id类型是loginName时，本参数为用户的支付宝登录号; 当 trans_in_account_type 为defaultSettle时，本参数必须为空
 	 */
 	@ApiField("trans_in_account_id")
 	private String transInAccountId;
 
 	/**
-	 * 分账转入账户id类型。 当settle_account_type 为bankCard时，本参数为cardSerialNo，表示分账账户id是银行卡编号; 当settle_account_type 为alipayBalance时，本参数为userId或者loginName，其中userId表示分账账户id是支付宝唯一用户号，loginName表示分账账户id是支付宝登录号
+	 * 分账转入账户id类型。 当trans_in_account_type 为bankCard时，本参数为cardSerialNo，表示分账账户id是银行卡编号; 当trans_in_account_type 为alipayBalance时，本参数为userId或者loginName，其中userId表示分账账户id是支付宝唯一用户号，loginName表示分账账户id是支付宝登录号; 当 trans_in_account_type 为 defaultSettle 时，本参数必须为空
 	 */
 	@ApiField("trans_in_account_id_type")
 	private String transInAccountIdType;
 
 	/**
-	 * 分账账 户类型。 bankCard: 分账账户为银行卡； alipayBalance: 分账账户为支付宝余额户
+	 * 分账账户类型。 bankCard: 分账账户为银行卡； alipayBalance: 分账账户为支付宝余额户; defaultSettle: 按默认结算规则分账
 	 */
 	@ApiField("trans_in_account_type")
 	private String transInAccountType;

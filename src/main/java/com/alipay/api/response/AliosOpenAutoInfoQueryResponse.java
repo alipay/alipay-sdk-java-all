@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alios.open.auto.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-17 12:20:59
+ * @since 1.0, 2020-05-06 14:05:09
  */
 public class AliosOpenAutoInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2559575448776651284L;
+	private static final long serialVersionUID = 8652412816314291515L;
 
 	/** 
 	 * 发动机号
@@ -25,6 +25,12 @@ public class AliosOpenAutoInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("license_no")
 	private String licenseNo;
+
+	/** 
+	 * 用户激活时间
+	 */
+	@ApiField("user_activation_time")
+	private String userActivationTime;
 
 	/** 
 	 * 车辆类型
@@ -50,6 +56,13 @@ public class AliosOpenAutoInfoQueryResponse extends AlipayResponse {
 	}
 	public String getLicenseNo( ) {
 		return this.licenseNo;
+	}
+
+	public void setUserActivationTime(String userActivationTime) {
+		this.userActivationTime = userActivationTime;
+	}
+	public String getUserActivationTime( ) {
+		return this.userActivationTime;
 	}
 
 	public void setVehicleType(String vehicleType) {

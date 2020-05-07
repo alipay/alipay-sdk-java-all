@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-09 14:59:43
+ * @since 1.0, 2020-04-28 19:56:14
  */
 public class AlipayPcreditHuabeiAuthOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5437649158383825526L;
+	private static final long serialVersionUID = 7425959492124885651L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号。

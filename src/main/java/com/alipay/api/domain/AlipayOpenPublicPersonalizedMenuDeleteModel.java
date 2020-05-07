@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicPersonalizedMenuDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5432381657745936948L;
+	private static final long serialVersionUID = 3492519259757156928L;
 
 	/**
 	 * 要删除的个性化菜单key

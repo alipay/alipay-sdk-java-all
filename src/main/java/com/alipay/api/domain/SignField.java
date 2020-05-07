@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签署区（E签宝）
  *
  * @author auto create
- * @since 1.0, 2019-12-25 11:00:40
+ * @since 1.0, 2020-05-06 14:36:29
  */
 public class SignField extends AlipayObject {
 
-	private static final long serialVersionUID = 6154898826818748756L;
+	private static final long serialVersionUID = 1613732356522646216L;
 
 	/**
 	 * 平台自动签

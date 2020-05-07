@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建红包模板
  *
  * @author auto create
- * @since 1.0, 2019-08-09 11:17:59
+ * @since 1.0, 2020-04-23 16:55:58
  */
 public class AlipayMarketingCouponTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7149221791978282427L;
+	private static final long serialVersionUID = 7596656845532824372L;
 
 	/**
 	 * 创建红包模板时录入的品牌信息，由商户自定义，在通用模板中展示在红包LOGO下方。根据红包使用场景的不同，该信息的展示位置可能会有不同。

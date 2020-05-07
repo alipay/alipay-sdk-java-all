@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用借还借用实体数据上传接口
  *
  * @author auto create
- * @since 1.0, 2019-07-11 21:07:37
+ * @since 1.0, 2020-05-06 12:50:16
  */
 public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7168832937628177729L;
+	private static final long serialVersionUID = 1595483993547143814L;
 
 	/**
 	 * 地址描述
@@ -63,6 +63,12 @@ public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 	 */
 	@ApiField("entity_name")
 	private String entityName;
+
+	/**
+	 * 扩展信息字段，格式:json。请将需要传递的key和value字段放入map中,然后转成json传入
+	 */
+	@ApiField("ext_properties")
+	private String extProperties;
 
 	/**
 	 * 地址位置纬度，取值范围：纬度-90~90，中国地区经度范围：纬度3.86~53.55
@@ -160,6 +166,13 @@ public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 	}
 	public void setEntityName(String entityName) {
 		this.entityName = entityName;
+	}
+
+	public String getExtProperties() {
+		return this.extProperties;
+	}
+	public void setExtProperties(String extProperties) {
+		this.extProperties = extProperties;
 	}
 
 	public String getLatitude() {

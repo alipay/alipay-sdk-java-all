@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.authenticate.campuscard.create request
  * 
  * @author auto create
- * @since 1.0, 2020-03-20 14:40:26
+ * @since 1.0, 2020-04-22 17:25:16
  */
 public class AlipayCommerceEducateAuthenticateCampuscardCreateRequest implements AlipayRequest<AlipayCommerceEducateAuthenticateCampuscardCreateResponse> {
 

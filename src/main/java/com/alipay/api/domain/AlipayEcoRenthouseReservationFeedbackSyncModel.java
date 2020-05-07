@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预约反馈
  *
  * @author auto create
- * @since 1.0, 2019-02-26 20:58:02
+ * @since 1.0, 2020-05-07 15:28:43
  */
 public class AlipayEcoRenthouseReservationFeedbackSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8376256761941323827L;
+	private static final long serialVersionUID = 4891818488273733259L;
 
 	/**
 	 * 备注

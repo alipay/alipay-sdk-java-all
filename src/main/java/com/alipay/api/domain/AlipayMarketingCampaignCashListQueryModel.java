@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignCashListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5662851667347841868L;
+	private static final long serialVersionUID = 4289564538446797665L;
 
 	/**
 	 * 要查询的活动状态,不填默认返回所有类型。

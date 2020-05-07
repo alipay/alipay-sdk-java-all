@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certdoc.url.query request
  * 
  * @author auto create
- * @since 1.0, 2019-08-01 14:30:37
+ * @since 1.0, 2020-05-07 10:09:02
  */
 public class AlipayUserCertdocUrlQueryRequest implements AlipayRequest<AlipayUserCertdocUrlQueryResponse> {
 

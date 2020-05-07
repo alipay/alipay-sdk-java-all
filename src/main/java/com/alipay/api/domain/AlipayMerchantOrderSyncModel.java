@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2020-03-08 16:49:54
+ * @since 1.0, 2020-05-01 00:00:42
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6349257689472596269L;
+	private static final long serialVersionUID = 3756196953746812251L;
 
 	/**
 	 * 订单金额，单位为元
@@ -133,6 +133,12 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 是否需要小程序订单代理发送模版消息，Y代表需要发送，N代表不需要发送，不传默认不发送
+	 */
+	@ApiField("send_msg")
+	private String sendMsg;
 
 	/**
 	 * 门店信息
@@ -278,6 +284,13 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public String getSendMsg() {
+		return this.sendMsg;
+	}
+	public void setSendMsg(String sendMsg) {
+		this.sendMsg = sendMsg;
 	}
 
 	public OrderShopInfo getShopInfo() {

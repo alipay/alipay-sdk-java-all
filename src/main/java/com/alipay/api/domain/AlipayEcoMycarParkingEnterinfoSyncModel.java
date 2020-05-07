@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆驶入上送接口
  *
  * @author auto create
- * @since 1.0, 2017-08-25 17:10:00
+ * @since 1.0, 2020-04-28 11:13:45
  */
 public class AlipayEcoMycarParkingEnterinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3799999172371833941L;
+	private static final long serialVersionUID = 7689672531457918179L;
 
 	/**
 	 * 车牌号
@@ -20,7 +20,7 @@ public class AlipayEcoMycarParkingEnterinfoSyncModel extends AlipayObject {
 	private String carNumber;
 
 	/**
-	 * 车辆入场的时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制
+	 * 车辆入场的时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制，请保证服务器时间准确，入场时间不应晚于当前网络时间
 	 */
 	@ApiField("in_time")
 	private String inTime;

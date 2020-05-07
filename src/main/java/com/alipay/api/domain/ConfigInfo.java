@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 流程配置信息（E签宝）
  *
  * @author auto create
- * @since 1.0, 2020-03-03 20:06:33
+ * @since 1.0, 2020-05-06 14:36:29
  */
 public class ConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6254118619441647243L;
+	private static final long serialVersionUID = 8464184354916175189L;
 
 	/**
 	 * 附件信息（collect_attachement值为true时必填）

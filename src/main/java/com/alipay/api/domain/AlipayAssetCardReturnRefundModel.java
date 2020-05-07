@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部商户标准卡退款
  *
  * @author auto create
- * @since 1.0, 2018-05-18 22:32:06
+ * @since 1.0, 2020-04-20 13:32:38
  */
 public class AlipayAssetCardReturnRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6746284183412298861L;
+	private static final long serialVersionUID = 4493941588187116938L;
 
 	/**
 	 * 资产id

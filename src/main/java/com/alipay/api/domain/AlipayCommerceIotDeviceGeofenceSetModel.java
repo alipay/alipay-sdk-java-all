@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公交盒子地理围栏设置接口
  *
  * @author auto create
- * @since 1.0, 2019-09-20 12:12:03
+ * @since 1.0, 2020-04-30 10:48:42
  */
 public class AlipayCommerceIotDeviceGeofenceSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1872649857449137932L;
+	private static final long serialVersionUID = 8314439198271816176L;
 
 	/**
 	 * 地图围栏事件. 如果是createOrUpdate,则必填,如果是delete,则可不填

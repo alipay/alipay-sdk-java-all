@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议签约接口
  *
  * @author auto create
- * @since 1.0, 2020-03-19 13:59:37
+ * @since 1.0, 2020-04-21 11:59:57
  */
 public class AlipayUserAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3313274271131529538L;
+	private static final long serialVersionUID = 4297852275158971651L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。
@@ -68,6 +68,12 @@ M：手机校验码回填确认方式。
 	 */
 	@ApiField("external_logon_id")
 	private String externalLogonId;
+
+	/**
+	 * 业务透传参数
+	 */
+	@ApiField("pass_params")
+	private String passParams;
 
 	/**
 	 * 个人签约产品码，商户和支付宝签约时确定，商户可咨询技术支持。
@@ -210,6 +216,13 @@ sub_merchant_service_description (子商户服务描述)
 	}
 	public void setExternalLogonId(String externalLogonId) {
 		this.externalLogonId = externalLogonId;
+	}
+
+	public String getPassParams() {
+		return this.passParams;
+	}
+	public void setPassParams(String passParams) {
+		this.passParams = passParams;
 	}
 
 	public String getPersonalProductCode() {

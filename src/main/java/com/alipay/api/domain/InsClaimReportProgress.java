@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 理赔报案进度
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:48:09
+ * @since 1.0, 2020-05-06 10:41:28
  */
 public class InsClaimReportProgress extends AlipayObject {
 
-	private static final long serialVersionUID = 1471431436439699276L;
+	private static final long serialVersionUID = 5353939457631267921L;
 
 	/**
 	 * 案件更新内容

@@ -4,17 +4,17 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * trans_in_type支持商户传入默认结算账号，修改相关接口描述
+ * 结算详情信息
  *
  * @author auto create
- * @since 1.0, 2020-03-12 00:34:37
+ * @since 1.0, 2020-05-07 14:32:13
  */
 public class SettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5328351734393685425L;
+	private static final long serialVersionUID = 5198146281426436386L;
 
 	/**
-	 * 结算的金额，单位为元。目前必须和交易金额相同
+	 * 结算的金额，单位为元。在创建订单和支付接口时必须和交易金额相同。在结算确认接口时必须等于交易金额减去已退款金额。
 	 */
 	@ApiField("amount")
 	private String amount;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antarchive.identityrelation.add request
  * 
  * @author auto create
- * @since 1.0, 2019-03-15 17:52:45
+ * @since 1.0, 2020-04-27 16:14:49
  */
 public class AlipayUserAntarchiveIdentityrelationAddRequest implements AlipayRequest<AlipayUserAntarchiveIdentityrelationAddResponse> {
 

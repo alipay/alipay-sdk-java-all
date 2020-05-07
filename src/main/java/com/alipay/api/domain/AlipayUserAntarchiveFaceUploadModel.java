@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加身份证影印件信息
  *
  * @author auto create
- * @since 1.0, 2019-07-09 16:45:02
+ * @since 1.0, 2020-04-27 15:37:06
  */
 public class AlipayUserAntarchiveFaceUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7263975599451963941L;
+	private static final long serialVersionUID = 4366929825754457793L;
 
 	/**
 	 * 业务场景
