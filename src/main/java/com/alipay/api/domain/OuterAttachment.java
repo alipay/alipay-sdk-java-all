@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资质
  *
  * @author auto create
- * @since 1.0, 2019-07-25 17:11:12
+ * @since 1.0, 2020-05-15 16:00:57
  */
 public class OuterAttachment extends AlipayObject {
 
-	private static final long serialVersionUID = 2579148585936931948L;
+	private static final long serialVersionUID = 4869176757297292961L;
 
 	/**
 	 * 资质类型：ISV_ICP_LICENCE-代理商营业执照；ICP_LICENCE-营业执照；PORTRAIT_AUTH_LICENSE-肖像授权文件；TRADE_MARK_LICENSE - 商标注册证；SPECIAL_BUSINESS_LICENSE - 特殊行业资质；OTHER_FILE - 其他文件
@@ -20,10 +20,16 @@ public class OuterAttachment extends AlipayObject {
 	private String attachmentType;
 
 	/**
-	 * oss key
+	 * 资质文件oss存储key值；file_key和file_url，至少有1个不能为空
 	 */
 	@ApiField("file_key")
 	private String fileKey;
+
+	/**
+	 * 资质文件url；file_key和file_url，至少有1个不能为空
+	 */
+	@ApiField("file_url")
+	private String fileUrl;
 
 	/**
 	 * 有效结束日期；格式：YYYY-MM-DD
@@ -49,6 +55,13 @@ public class OuterAttachment extends AlipayObject {
 	}
 	public void setFileKey(String fileKey) {
 		this.fileKey = fileKey;
+	}
+
+	public String getFileUrl() {
+		return this.fileUrl;
+	}
+	public void setFileUrl(String fileUrl) {
+		this.fileUrl = fileUrl;
 	}
 
 	public String getValidateEndTime() {

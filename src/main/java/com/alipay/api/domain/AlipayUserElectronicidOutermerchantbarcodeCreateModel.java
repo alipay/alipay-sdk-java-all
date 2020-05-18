@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员电子身份证生成外部商户码
  *
  * @author auto create
- * @since 1.0, 2019-08-01 14:16:26
+ * @since 1.0, 2020-05-08 17:24:31
  */
 public class AlipayUserElectronicidOutermerchantbarcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1175815929851153448L;
+	private static final long serialVersionUID = 1252656252485946425L;
 
 	/**
 	 * 码类型，可选值：动态二维码：DYNAMIC，静态二维码：STATIC

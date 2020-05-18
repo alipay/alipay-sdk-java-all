@@ -40,6 +40,6 @@ public class AlipayMobilePublicMultiMediaClientTest {
         //when
         AlipayMobilePublicMultiMediaDownloadResponse response = client.execute(request);
         //then
-        assertThat(response.getMsg(), containsString("缺少签名相关配置"));
+        assertThat(response.getMsg(), containsString("无效的sign"));
     }
 }

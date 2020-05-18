@@ -83,13 +83,19 @@ public class DefaultAlipayClient extends AbstractAlipayClient {
 
     public DefaultAlipayClient(CertAlipayRequest certAlipayRequest) throws AlipayApiException {
         super(certAlipayRequest.getServerUrl(), certAlipayRequest.getAppId(), certAlipayRequest.getFormat(),
-                certAlipayRequest.getCharset(), certAlipayRequest.getSignType(), certAlipayRequest.getCertPath(),
-                certAlipayRequest.getAlipayPublicCertPath(), certAlipayRequest.getRootCertPath(),
+                certAlipayRequest.getCharset(), certAlipayRequest.getSignType(),
+                certAlipayRequest.getCertPath(), certAlipayRequest.getCertContent(),
+                certAlipayRequest.getAlipayPublicCertPath(), certAlipayRequest.getAlipayPublicCertContent(),
+                certAlipayRequest.getRootCertPath(), certAlipayRequest.getRootCertContent(),
                 certAlipayRequest.getProxyHost(), certAlipayRequest.getProxyPort(), certAlipayRequest.getEncryptType());
         this.privateKey = certAlipayRequest.getPrivateKey();
         this.signer = new DefaultSigner(certAlipayRequest.getPrivateKey());
         this.encryptor = new DefaultEncryptor(certAlipayRequest.getEncryptor());
         this.decryptor = new DefaultDecryptor(certAlipayRequest.getEncryptor());
+    }
+
+    public static Builder builder(String serverUrl, String appId, String privateKey) {
+        return new Builder(serverUrl, appId, privateKey);
     }
 
     public Signer getSigner() {
@@ -138,10 +144,6 @@ public class DefaultAlipayClient extends AbstractAlipayClient {
         if (this.signChecker == null) {
             this.signChecker = new DefaultSignChecker(alipayPublicKey);
         }
-    }
-
-    public static Builder builder(String serverUrl, String appId, String privateKey) {
-        return new Builder(serverUrl, appId, privateKey);
     }
 
     public static class Builder {

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.category.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-13 10:18:45
+ * @since 1.0, 2020-05-09 13:55:18
  */
 public class AlipayOpenMiniCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6264459926443311265L;
+	private static final long serialVersionUID = 6881137348573837342L;
 
 	/** 
 	 * 小程序类目列表
@@ -24,11 +24,25 @@ public class AlipayOpenMiniCategoryQueryResponse extends AlipayResponse {
 	@ApiField("mini_app_category")
 	private List<MiniAppCategory> categoryList;
 
+	/** 
+	 * 小程序新类目列表
+	 */
+	@ApiListField("mini_category_list")
+	@ApiField("mini_app_category")
+	private List<MiniAppCategory> miniCategoryList;
+
 	public void setCategoryList(List<MiniAppCategory> categoryList) {
 		this.categoryList = categoryList;
 	}
 	public List<MiniAppCategory> getCategoryList( ) {
 		return this.categoryList;
+	}
+
+	public void setMiniCategoryList(List<MiniAppCategory> miniCategoryList) {
+		this.miniCategoryList = miniCategoryList;
+	}
+	public List<MiniAppCategory> getMiniCategoryList( ) {
+		return this.miniCategoryList;
 	}
 
 }

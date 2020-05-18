@@ -22,17 +22,13 @@ public class TestAccount {
 
         public static final String UNTRUSTED_GATEWAY = "https://121.0.26.96/gateway.do";
 
-        public static final String ALIPAY_PUBLICKEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnAUxtW3XiajFkyIpf0psiSor"
-                + "GpVGTWAEkbOGcJXtgoVUr42wBsbGI91X0z9tlMubrjb"
-                + "/rsi4b9A1plS4L6SkbB6/jplDbCE5WY5LPb9MsbBNYgHxL4RCL5NLvSM0W19iOq5jkj4tJtjn7+EOUSLHsSLqtu7HIlvN"
-                + "/prxOYNj8RdXhUKRyzqNXnLZYdbWoiyzKfF2Epdp4It/cSjHsODu1+WqSHU1xqpTyh4tHASDFpNK0pOaPjGJl7HR0O"
-                + "/BLQjwIRdxk3OmrSPb5cTn7q2z+hK4O3Dh8qK606KDMReveZN0uOvS2CuH62nxZKoEJmujR7vEY0lHk/xgv0TqKXpt4QIDAQAB";
+        public static final String ALIPAY_PUBLICKEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAohmWF9HXjI3VRxrKbuZq4YK6lIFAIzUZ4xvY4iw2zwYiblPkB0FWbqxouyyB9nmAyK+hN/5tyXatpskcy6rO6zJl3kfdog0lRA7g06+YpdHVHhu/bXfaz+BfCA3YHwjkBQffMa8Amwy6JZF6aDiXDdYP/YWKmFk1t4K6F1853EDf2vYsT6AsVYRk2xkw+fx3/qIWaidHETjNBnOOPRG68hLf0H0DCeEOsLp3mFox2LARRQol5IfV45nNq2a2zb6ubwZbgXypZM3vfLQekUaxAaC1Vuu4gYWxPRCzHE1e6aQpEuacVVYCnjNURvDmDpT7oMzh+HtN0DKCe6yOHRDZ3QIDAQAB";
 
-        public static final String APP_ID = "2016092700607517";
+        public static final String APP_ID = "2016102200737202";
 
         public static final String APP_PRIVATE_KEY = getPrivateKey("Sandbox");
 
-        public static final String AES_KEY = "hNtPqVWeuUeEpw9ksTZ92A==";
+        public static final String AES_KEY = "RrAdgyCsnkoE1a9A8cW72w==";
     }
 
     public static class DevLoadTest {

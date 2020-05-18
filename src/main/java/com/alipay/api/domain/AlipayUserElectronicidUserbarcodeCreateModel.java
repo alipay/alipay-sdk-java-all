@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子身份证生成用户码
  *
  * @author auto create
- * @since 1.0, 2018-06-25 15:27:41
+ * @since 1.0, 2020-05-08 17:24:01
  */
 public class AlipayUserElectronicidUserbarcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8297426182552117438L;
+	private static final long serialVersionUID = 4537721323547812265L;
 
 	/**
 	 * 机构方根据cert_id查到机构内部用户信息的唯一字符串。比如：身份证号+姓名 AES加密后的值；

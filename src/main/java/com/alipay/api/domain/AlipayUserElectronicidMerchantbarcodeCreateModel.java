@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建证件商户二维码
  *
  * @author auto create
- * @since 1.0, 2018-12-27 11:42:40
+ * @since 1.0, 2020-05-08 17:22:42
  */
 public class AlipayUserElectronicidMerchantbarcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3555914222221444354L;
+	private static final long serialVersionUID = 7728496648418126935L;
 
 	/**
 	 * 动态码过期时间，单位秒，当type为DYNAMIC时为必填参数

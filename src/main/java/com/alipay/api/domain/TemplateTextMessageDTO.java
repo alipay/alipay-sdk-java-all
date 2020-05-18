@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模版标签文案信息
  *
  * @author auto create
- * @since 1.0, 2020-04-24 17:42:00
+ * @since 1.0, 2020-05-08 19:33:41
  */
 public class TemplateTextMessageDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7487678142421645799L;
+	private static final long serialVersionUID = 2645937485659829583L;
 
 	/**
 	 * 标签标题文案，支持以 $动态参数$ 形式的自定义动态参数传值。

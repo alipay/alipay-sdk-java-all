@@ -5,22 +5,38 @@ package com.alipay.api;
 
 import com.alipay.api.internal.parser.json.ObjectJsonParser;
 import com.alipay.api.internal.parser.xml.ObjectXmlParser;
-import com.alipay.api.internal.util.*;
+import com.alipay.api.internal.util.AlipayHashMap;
+import com.alipay.api.internal.util.AlipayLogger;
+import com.alipay.api.internal.util.AlipaySignature;
+import com.alipay.api.internal.util.AlipayUtils;
+import com.alipay.api.internal.util.AntCertificationUtil;
+import com.alipay.api.internal.util.LoadTestUtil;
+import com.alipay.api.internal.util.RequestParametersHolder;
+import com.alipay.api.internal.util.StringUtils;
+import com.alipay.api.internal.util.WebUtils;
 import com.alipay.api.internal.util.codec.Base64;
 import com.alipay.api.internal.util.file.FileUtils;
 import com.alipay.api.internal.util.json.JSONWriter;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import javax.net.ssl.SSLException;
-import java.io.*;
-import java.math.BigInteger;
-import java.security.*;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.NoSuchProviderException;
+import java.security.PublicKey;
+import java.security.Security;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TimeZone;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -28,32 +44,10 @@ import java.util.concurrent.ConcurrentHashMap;
  * @version $Id: AbstractAlipayClient.java, v 0.1 2018-07-03 10:45:21 liuqun.lq Exp $
  */
 public abstract class AbstractAlipayClient implements AlipayClient {
-    private String serverUrl;
-    private String appId;
-    private String prodCode;
-    private String format = AlipayConstants.FORMAT_JSON;
-    private String signType = AlipayConstants.SIGN_TYPE_RSA;
-    private String encryptType = AlipayConstants.ENCRYPT_TYPE_AES;
-
-    private String charset;
-
-    private int connectTimeout = 3000;
-    private int readTimeout = 15000;
-
-    private String proxyHost;
-    private int proxyPort;
-    private SignChecker signChecker;
-
-    private String appCertSN;
-    private String alipayCertSN;
-    private String alipayRootCertSN;
-    private String alipayRootSm2CertSN;
-    private String rootCertContent;
-    private X509Certificate cert;
-    private ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap;
-    private ConcurrentHashMap<String, String> alipayPublicKeyMap;
-
-    protected boolean loadTest = false;
+    /**
+     * 批量API默认分隔符
+     **/
+    private static final String BATCH_API_DEFAULT_SPLIT = "#S#";
 
     static {
         //清除安全设置
@@ -61,10 +55,27 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
     }
 
-    /**
-     * 批量API默认分隔符
-     **/
-    private static final String BATCH_API_DEFAULT_SPLIT = "#S#";
+    protected boolean                                    loadTest       = false;
+    private   String                                     serverUrl;
+    private   String                                     appId;
+    private   String                                     prodCode;
+    private   String                                     format         = AlipayConstants.FORMAT_JSON;
+    private   String                                     signType       = AlipayConstants.SIGN_TYPE_RSA;
+    private   String                                     encryptType    = AlipayConstants.ENCRYPT_TYPE_AES;
+    private   String                                     charset;
+    private   int                                        connectTimeout = 3000;
+    private   int                                        readTimeout    = 15000;
+    private   String                                     proxyHost;
+    private   int                                        proxyPort;
+    private   SignChecker                                signChecker;
+    private   String                                     appCertSN;
+    private   String                                     alipayCertSN;
+    private   String                                     alipayRootCertSN;
+    private   String                                     alipayRootSm2CertSN;
+    private   String                                     rootCertContent;
+    private   X509Certificate                            cert;
+    private   ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap;
+    private   ConcurrentHashMap<String, String>          alipayPublicKeyMap;
 
     public AbstractAlipayClient(String serverUrl, String appId, String format,
                                 String charset, String signType) {
@@ -96,9 +107,11 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     }
 
     public AbstractAlipayClient(String serverUrl, String appId, String format,
-                                String charset, String signType, String certPath,
-                                String alipayPublicCertPath, String rootCertPath, String proxyHost,
-                                int proxyPort, String encryptType) throws AlipayApiException {
+                                String charset, String signType,
+                                String certPath, String certContent,
+                                String alipayPublicCertPath, String alipayPublicCertContent,
+                                String rootCertPath, String rootCertContent,
+                                String proxyHost, int proxyPort, String encryptType) throws AlipayApiException {
         this(serverUrl, appId, format, charset, signType);
         if (!StringUtils.isEmpty(encryptType)) {
             this.encryptType = encryptType;
@@ -106,7 +119,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         this.proxyHost = proxyHost;
         this.proxyPort = proxyPort;
         //读取根证书（用来校验本地支付宝公钥证书失效后自动从网关下载的新支付宝公钥证书是否有效）
-        this.rootCertContent = readFileToString(rootCertPath);
+        this.rootCertContent = StringUtils.isEmpty(rootCertContent) ? readFileToString(rootCertPath) : rootCertContent;
         //alipayRootCertSN根证书序列号
         if (AlipayConstants.SIGN_TYPE_SM2.equals(signType)) {
             this.alipayRootSm2CertSN = AntCertificationUtil.getRootCertSN(this.rootCertContent, "SM2");
@@ -117,17 +130,20 @@ public abstract class AbstractAlipayClient implements AlipayClient {
             }
         }
         //获取应用证书
-        this.cert = getCert(certPath);
+        this.cert = StringUtils.isEmpty(certContent) ? AntCertificationUtil.getCertFromPath(certPath)
+                : AntCertificationUtil.getCertFromContent(certContent);
         //获取支付宝公钥证书
-        X509Certificate alipayPublicCert = getCert(alipayPublicCertPath);
+        X509Certificate alipayPublicCert = StringUtils.isEmpty(alipayPublicCertContent) ?
+                AntCertificationUtil.getCertFromPath(alipayPublicCertPath) :
+                AntCertificationUtil.getCertFromContent(alipayPublicCertContent);
 
         //appCertSN为最终发送给网关的应用证书序列号
-        this.appCertSN = getCertSN(cert);
+        this.appCertSN = AntCertificationUtil.getCertSN(cert);
         if (StringUtils.isEmpty(this.appCertSN)) {
             throw new AlipayApiException("AppCert Is Invalid");
         }
         //alipayCertSN为支付宝公钥证书序列号
-        this.alipayCertSN = getCertSN(alipayPublicCert);
+        this.alipayCertSN = AntCertificationUtil.getCertSN(alipayPublicCert);
         //将公钥证书以序列号为key存入map
         ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap = new ConcurrentHashMap<String, X509Certificate>();
         alipayPublicCertMap.put(alipayCertSN, alipayPublicCert);
@@ -139,63 +155,12 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         this.alipayPublicKeyMap = alipayPublicKeyMap;
     }
 
-    /**
-     * @param certPath 证书路径
-     * @return
-     * @throws AlipayApiException
-     */
-    private X509Certificate getCert(String certPath) throws AlipayApiException {
-        InputStream inputStream = null;
-        try {
-            inputStream = new FileInputStream(certPath);
-            Security.addProvider(new BouncyCastleProvider());
-            CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
-            X509Certificate cert = (X509Certificate) cf.generateCertificate(inputStream);
-            return cert;
-
-        } catch (NoSuchProviderException e) {
-            throw new AlipayApiException(e);
-        } catch (IOException e) {
-            throw new AlipayApiException(e);
-        } catch (CertificateException e) {
-            throw new AlipayApiException(e);
-        } finally {
-            try {
-                if (inputStream != null) {
-                    inputStream.close();
-                }
-            } catch (IOException e) {
-                throw new AlipayApiException(e);
-            }
-        }
-    }
-
-    private String getCertSN(X509Certificate cf) throws AlipayApiException {
-        try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update((cf.getIssuerX500Principal().getName() + cf.getSerialNumber()).getBytes());
-            String certSN = new BigInteger(1, md.digest()).toString(16);
-            //BigInteger会把0省略掉，需补全至32位
-            certSN = fillMD5(certSN);
-            return certSN;
-        } catch (NoSuchAlgorithmException e) {
-            throw new AlipayApiException(e);
-        }
-    }
-
-    private static String fillMD5(String md5) {
-        return md5.length() == 32 ? md5 : fillMD5("0" + md5);
-    }
-
     private String readFileToString(String rootCertPath) throws AlipayApiException {
         try {
-            File file = new File(rootCertPath);
-            String client = FileUtils.readFileToString(file);
-            return client;
+            return FileUtils.readFileToString(new File(rootCertPath));
         } catch (IOException e) {
             throw new AlipayApiException(e);
         }
-
     }
 
     //校验证书有效期以及是否支付宝颁发
@@ -323,7 +288,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                     CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
                     X509Certificate alipayPublicCertNew = (X509Certificate) cf.generateCertificate(inputStream);
                     //获取新证书和公钥添加到map中
-                    String alipayCertSNNew = getCertSN(alipayPublicCertNew);
+                    String alipayCertSNNew = AntCertificationUtil.getCertSN(alipayPublicCertNew);
                     this.alipayPublicCertMap.put(alipayCertSNNew, alipayPublicCertNew);
                     PublicKey publicKey = alipayPublicCertNew.getPublicKey();
                     String alipayPublicKeyNew = Base64.encodeBase64String(publicKey.getEncoded());

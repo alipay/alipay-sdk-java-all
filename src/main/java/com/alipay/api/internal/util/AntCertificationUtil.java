@@ -1,14 +1,34 @@
 package com.alipay.api.internal.util;
 
+import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayConstants;
+import com.alipay.api.internal.util.codec.Base64;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigInteger;
-import java.security.*;
+import java.security.InvalidKeyException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+import java.security.Principal;
+import java.security.PublicKey;
+import java.security.Security;
+import java.security.SignatureException;
 import java.security.cert.Certificate;
-import java.security.cert.*;
-import java.util.*;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateExpiredException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.CertificateNotYetValidException;
+import java.security.cert.X509Certificate;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 证书文件可信校验
@@ -290,8 +310,8 @@ public class AntCertificationUtil {
      * @param rootCertContent
      * @return
      */
-    public static String getRootCertSN(String rootCertContent,String signType) {
-        if(AlipayConstants.SIGN_TYPE_SM2.equals(signType)){
+    public static String getRootCertSN(String rootCertContent, String signType) {
+        if (AlipayConstants.SIGN_TYPE_SM2.equals(signType)) {
             String rootCertSN = null;
             try {
                 X509Certificate[] x509Certificates = readPemCertChain(rootCertContent);
@@ -314,7 +334,7 @@ public class AntCertificationUtil {
             }
             return rootCertSN;
 
-        }else {
+        } else {
             return getRootCertSN(rootCertContent);
         }
 
@@ -324,4 +344,75 @@ public class AntCertificationUtil {
         return md5.length() == 32 ? md5 : fillMD5("0" + md5);
     }
 
+    /**
+     * @param certPath 证书路径
+     * @return
+     * @throws AlipayApiException
+     */
+    public static X509Certificate getCertFromPath(String certPath) throws AlipayApiException {
+        InputStream inputStream = null;
+        try {
+            inputStream = new FileInputStream(certPath);
+            CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
+            return (X509Certificate) cf.generateCertificate(inputStream);
+        } catch (Exception e) {
+            throw new AlipayApiException(e);
+        } finally {
+            try {
+                if (inputStream != null) {
+                    inputStream.close();
+                }
+            } catch (IOException e) {
+                throw new AlipayApiException(e);
+            }
+        }
+    }
+
+    public static X509Certificate getCertFromContent(String certContent) throws AlipayApiException {
+        try {
+            InputStream inputStream = new ByteArrayInputStream(certContent.getBytes());
+            CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
+            return (X509Certificate) cf.generateCertificate(inputStream);
+        } catch (Exception e) {
+            throw new AlipayApiException(e);
+        }
+    }
+
+    public static String getCertSN(X509Certificate cf) throws AlipayApiException {
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            md.update((cf.getIssuerX500Principal().getName() + cf.getSerialNumber()).getBytes());
+            String certSN = new BigInteger(1, md.digest()).toString(16);
+            //BigInteger会把0省略掉，需补全至32位
+            certSN = fillMD5(certSN);
+            return certSN;
+        } catch (NoSuchAlgorithmException e) {
+            throw new AlipayApiException(e);
+        }
+    }
+
+    public static String getAlipayPublicKey(String alipayPublicCertPath) throws AlipayApiException {
+        InputStream inputStream = null;
+        try {
+            inputStream = new FileInputStream(alipayPublicCertPath);
+            CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
+            X509Certificate cert = (X509Certificate) cf.generateCertificate(inputStream);
+            PublicKey publicKey = cert.getPublicKey();
+            return Base64.encodeBase64String(publicKey.getEncoded());
+        } catch (NoSuchProviderException e) {
+            throw new AlipayApiException(e);
+        } catch (IOException e) {
+            throw new AlipayApiException(e);
+        } catch (CertificateException e) {
+            throw new AlipayApiException(e);
+        } finally {
+            try {
+                if (inputStream != null) {
+                    inputStream.close();
+                }
+            } catch (IOException e) {
+                throw new AlipayApiException(e);
+            }
+        }
+    }
 }

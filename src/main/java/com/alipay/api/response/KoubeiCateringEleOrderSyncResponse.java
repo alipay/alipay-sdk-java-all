@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringEleOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8236946918453452647L;
+	private static final long serialVersionUID = 3161127872545748897L;
 
 	/** 
 	 * 原始的订单id编号

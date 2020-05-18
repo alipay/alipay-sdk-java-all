@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.peerpayprod.relation.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-05-09 17:56:47
  */
 public class AlipayTradePeerpayprodRelationCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6681438664819262493L;
+	private static final long serialVersionUID = 8542673499667556177L;
 
 	/** 
 	 * 亲情号关系是否添加成功

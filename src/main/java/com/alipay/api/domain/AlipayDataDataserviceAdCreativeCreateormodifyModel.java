@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增或修改创意
  *
  * @author auto create
- * @since 1.0, 2019-10-25 19:10:36
+ * @since 1.0, 2020-05-14 19:54:06
  */
 public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6541858542723698259L;
+	private static final long serialVersionUID = 4237147194389481737L;
 
 	/**
 	 * 创意交互行为属性实例值
@@ -30,6 +30,12 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	private String actionType;
 
 	/**
+	 * 转化监控URL，如留资等
+	 */
+	@ApiField("action_url")
+	private String actionUrl;
+
+	/**
 	 * 创意分组标识，多个创意可按业务逻辑标识为一个分组
 	 */
 	@ApiField("batch_tag")
@@ -40,6 +46,12 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	 */
 	@ApiField("biz_token")
 	private String bizToken;
+
+	/**
+	 * 点击监控URL
+	 */
+	@ApiField("click_track_url")
+	private String clickTrackUrl;
 
 	/**
 	 * 外部平台导入广告库后，广告投放创意对应的外部资源ID
@@ -58,6 +70,12 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	 */
 	@ApiField("group_outer_id")
 	private String groupOuterId;
+
+	/**
+	 * 展现监控URL
+	 */
+	@ApiField("impression_track_url")
+	private String impressionTrackUrl;
 
 	/**
 	 * 门店LBS信息，目前仅口碑使用，格式为：经度:纬度:半径(单位:KM,无半径限制直接设置为0)
@@ -130,6 +148,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 		this.actionType = actionType;
 	}
 
+	public String getActionUrl() {
+		return this.actionUrl;
+	}
+	public void setActionUrl(String actionUrl) {
+		this.actionUrl = actionUrl;
+	}
+
 	public String getBatchTag() {
 		return this.batchTag;
 	}
@@ -142,6 +167,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	}
 	public void setBizToken(String bizToken) {
 		this.bizToken = bizToken;
+	}
+
+	public String getClickTrackUrl() {
+		return this.clickTrackUrl;
+	}
+	public void setClickTrackUrl(String clickTrackUrl) {
+		this.clickTrackUrl = clickTrackUrl;
 	}
 
 	public String getCreativeOuterId() {
@@ -163,6 +195,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	}
 	public void setGroupOuterId(String groupOuterId) {
 		this.groupOuterId = groupOuterId;
+	}
+
+	public String getImpressionTrackUrl() {
+		return this.impressionTrackUrl;
+	}
+	public void setImpressionTrackUrl(String impressionTrackUrl) {
+		this.impressionTrackUrl = impressionTrackUrl;
 	}
 
 	public List<String> getLbsList() {

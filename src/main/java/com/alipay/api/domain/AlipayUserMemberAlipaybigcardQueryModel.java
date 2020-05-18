@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserMemberAlipaybigcardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4718396181868663494L;
+	private static final long serialVersionUID = 3849662996291912735L;
 
 	/**
 	 * 缓存是否可用，手淘在请求前先查uid的缓存，新用户请求未落缓存或者上次缓存已经被清空时为false

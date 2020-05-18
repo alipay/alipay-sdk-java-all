@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 垃圾分类智能识别
  *
  * @author auto create
- * @since 1.0, 2019-10-12 12:15:45
+ * @since 1.0, 2020-05-09 22:04:43
  */
 public class AlipayIserviceCognitiveClassificationWasteQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7667669478682928818L;
+	private static final long serialVersionUID = 3297748659161254118L;
 
 	/**
 	 * 业务编码
@@ -36,6 +36,13 @@ public class AlipayIserviceCognitiveClassificationWasteQueryModel extends Alipay
 	 */
 	@ApiField("cognition_type")
 	private String cognitionType;
+
+	/**
+	 * 图片组id
+适用于垃圾桶等一次投递拍摄多张图片，一次投递一个id
+	 */
+	@ApiField("group_id")
+	private String groupId;
 
 	/**
 	 * 纬度
@@ -87,6 +94,13 @@ public class AlipayIserviceCognitiveClassificationWasteQueryModel extends Alipay
 	}
 	public void setCognitionType(String cognitionType) {
 		this.cognitionType = cognitionType;
+	}
+
+	public String getGroupId() {
+		return this.groupId;
+	}
+	public void setGroupId(String groupId) {
+		this.groupId = groupId;
 	}
 
 	public String getLatitude() {

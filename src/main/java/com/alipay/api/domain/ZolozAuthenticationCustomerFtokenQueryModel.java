@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸ftoken查询消费接口
  *
  * @author auto create
- * @since 1.0, 2020-02-17 10:46:23
+ * @since 1.0, 2020-05-14 18:47:28
  */
 public class ZolozAuthenticationCustomerFtokenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3198452161552359424L;
+	private static final long serialVersionUID = 4197117185553256327L;
 
 	/**
 	 * 1、1：1人脸验证能力
@@ -34,6 +34,12 @@ public class ZolozAuthenticationCustomerFtokenQueryModel extends AlipayObject {
 	@ApiField("ftoken")
 	private String ftoken;
 
+	/**
+	 * 刷脸初始化流程中产生的zimId值
+	 */
+	@ApiField("zim_id")
+	private String zimId;
+
 	public String getBizType() {
 		return this.bizType;
 	}
@@ -53,6 +59,13 @@ public class ZolozAuthenticationCustomerFtokenQueryModel extends AlipayObject {
 	}
 	public void setFtoken(String ftoken) {
 		this.ftoken = ftoken;
+	}
+
+	public String getZimId() {
+		return this.zimId;
+	}
+	public void setZimId(String zimId) {
+		this.zimId = zimId;
 	}
 
 }

@@ -1,23 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 模板信息（基于合同模板填充内容生成待签文件，并指定签署人）	
  *
  * @author auto create
- * @since 1.0, 2020-05-06 13:44:20
+ * @since 1.0, 2020-05-15 10:41:38
  */
 public class TemplateInfoBean extends AlipayObject {
 
-	private static final long serialVersionUID = 4379946465993576769L;
+	private static final long serialVersionUID = 2575159558144841982L;
 
 	/**
 	 * 模板填充项，根据组件key值传入填写内容
 	 */
-	@ApiField("fill_contents")
-	private FillContent fillContents;
+	@ApiListField("fill_contents")
+	@ApiField("fill_content")
+	private List<FillContent> fillContents;
 
 	/**
 	 * 签署文件名称
@@ -28,8 +32,9 @@ public class TemplateInfoBean extends AlipayObject {
 	/**
 	 * 签署区，根据签署区key值传入对应的签署人信息
 	 */
-	@ApiField("signfields")
-	private SignFieldBean signfields;
+	@ApiListField("signfields")
+	@ApiField("sign_field_bean")
+	private List<SignFieldBean> signfields;
 
 	/**
 	 * 模板id，通过创建合同模板获取
@@ -37,10 +42,10 @@ public class TemplateInfoBean extends AlipayObject {
 	@ApiField("template_id")
 	private String templateId;
 
-	public FillContent getFillContents() {
+	public List<FillContent> getFillContents() {
 		return this.fillContents;
 	}
-	public void setFillContents(FillContent fillContents) {
+	public void setFillContents(List<FillContent> fillContents) {
 		this.fillContents = fillContents;
 	}
 
@@ -51,10 +56,10 @@ public class TemplateInfoBean extends AlipayObject {
 		this.name = name;
 	}
 
-	public SignFieldBean getSignfields() {
+	public List<SignFieldBean> getSignfields() {
 		return this.signfields;
 	}
-	public void setSignfields(SignFieldBean signfields) {
+	public void setSignfields(List<SignFieldBean> signfields) {
 		this.signfields = signfields;
 	}
 

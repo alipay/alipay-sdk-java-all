@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户检测(机构名 + 支付宝外标）是否存在，如果存在返回对应的uid
  *
  * @author auto create
- * @since 1.0, 2017-02-10 10:27:11
+ * @since 1.0, 2020-05-08 09:55:11
  */
 public class AlipayUserAccountInstitutionCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1721216321743757851L;
+	private static final long serialVersionUID = 8198567343167328446L;
 
 	/**
 	 * 描述机构的名称

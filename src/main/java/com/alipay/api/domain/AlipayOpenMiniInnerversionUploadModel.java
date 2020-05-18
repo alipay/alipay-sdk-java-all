@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建构建任务
  *
  * @author auto create
- * @since 1.0, 2020-03-11 19:28:02
+ * @since 1.0, 2020-05-08 17:06:43
  */
 public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1793842783799629522L;
+	private static final long serialVersionUID = 2375835346282243432L;
 
 	/**
 	 * 业务来源，新接入方需要向支付宝申请专用来源，否则不予接入。https://yuque.antfin-inc.com/tinyapp-all/qddncu/bidushixiang
@@ -29,7 +29,8 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	private String buildAppType;
 
 	/**
-	 * 扩展信息，比如adaptorName、tinycliVersion、tinycliName、import-module、allowPrecompile、extJson、allowInstallDependency、aggregationMainAppId
+	 * 扩展信息，比如adaptorName、tinycliVersion、tinycliName、import-module、allowPrecompile、extJson、allowInstallDependency、aggregationMainAppId，如果没有特殊要求，tinycliVersion版本请用最新的：
+https://registry.npm.alibaba-inc.com/@alipay/tiny-cli/huoban-prod
 	 */
 	@ApiField("build_extra_info")
 	private String buildExtraInfo;
@@ -119,7 +120,7 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	private String buildVersion;
 
 	/**
-	 * 一个端的标识，用于区分不同的客户端，每接入一个客户端，都需要向小程序应用中心申请bundelId入驻
+	 * 一个端的标识，用于区分不同的客户端，每接入一个客户端，都需要向小程序应用中心申请bundleId入驻
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;
@@ -143,7 +144,7 @@ public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 	private String miniAppId;
 
 	/**
-	 * 小程序代码中引用的插件列表，包含插件id和插件版本信息
+	 * 小程序代码中引用的插件列表，包含插件id和插件版本信息，业务方需要自行解析源码包的app.json里面的plugins信息
 	 */
 	@ApiListField("plugin_refs")
 	@ApiField("mini_app_plugin_reference")

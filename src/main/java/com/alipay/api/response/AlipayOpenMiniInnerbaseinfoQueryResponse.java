@@ -9,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-23 14:18:38
+ * @since 1.0, 2020-05-08 21:30:12
  */
 public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3678449867734533651L;
+	private static final long serialVersionUID = 1467746977755469472L;
+
+	/** 
+	 * 小程序别名，简称
+	 */
+	@ApiField("app_alias_name")
+	private String appAliasName;
 
 	/** 
 	 * 类目Id列表
@@ -110,6 +116,13 @@ public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("service_phone")
 	private String servicePhone;
+
+	public void setAppAliasName(String appAliasName) {
+		this.appAliasName = appAliasName;
+	}
+	public String getAppAliasName( ) {
+		return this.appAliasName;
+	}
 
 	public void setAppCategoryIds(String appCategoryIds) {
 		this.appCategoryIds = appCategoryIds;

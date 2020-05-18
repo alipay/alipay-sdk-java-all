@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单创建子单对象
  *
  * @author auto create
- * @since 1.0, 2019-06-14 20:50:40
+ * @since 1.0, 2020-05-14 10:24:05
  */
 public class DeviceApplyOrderItemDto extends AlipayObject {
 
-	private static final long serialVersionUID = 5868215948512719247L;
+	private static final long serialVersionUID = 1344113796847339475L;
 
 	/**
 	 * 申请数量，和sn数量保持一致

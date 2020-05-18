@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * pass卡券实例查询接口
  *
  * @author auto create
- * @since 1.0, 2018-01-31 22:13:25
+ * @since 1.0, 2020-05-07 19:54:27
  */
 public class AlipayMarketingPassInstanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3236578692894221679L;
+	private static final long serialVersionUID = 2152714655841549851L;
 
 	/**
 	 * 页码，必须为大于0的整数， 1表示第一页，2表示第2页；

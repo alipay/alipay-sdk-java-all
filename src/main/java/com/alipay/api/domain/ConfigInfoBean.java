@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 流程配置信息
  *
  * @author auto create
- * @since 1.0, 2020-05-06 13:44:20
+ * @since 1.0, 2020-05-15 10:40:50
  */
 public class ConfigInfoBean extends AlipayObject {
 
-	private static final long serialVersionUID = 1446883985343139165L;
+	private static final long serialVersionUID = 7855363433686163515L;
 
 	/**
 	 * 配置附件收集任务相关信息
@@ -79,8 +82,9 @@ public class ConfigInfoBean extends AlipayObject {
 	/**
 	 * 指定签署人需要上传的附件列表，例如：A、B、C三方签署，A需上传附件1，B需指定附件2，C需上传附件1,2,3
 	 */
-	@ApiField("specify_attachment_infos")
-	private SpecifyAttachmentInfo specifyAttachmentInfos;
+	@ApiListField("specify_attachment_infos")
+	@ApiField("specify_attachment_info")
+	private List<SpecifyAttachmentInfo> specifyAttachmentInfos;
 
 	public AttachmentExplainBean getAttachmentExplain() {
 		return this.attachmentExplain;
@@ -152,10 +156,10 @@ public class ConfigInfoBean extends AlipayObject {
 		this.signModel = signModel;
 	}
 
-	public SpecifyAttachmentInfo getSpecifyAttachmentInfos() {
+	public List<SpecifyAttachmentInfo> getSpecifyAttachmentInfos() {
 		return this.specifyAttachmentInfos;
 	}
-	public void setSpecifyAttachmentInfos(SpecifyAttachmentInfo specifyAttachmentInfos) {
+	public void setSpecifyAttachmentInfos(List<SpecifyAttachmentInfo> specifyAttachmentInfos) {
 		this.specifyAttachmentInfos = specifyAttachmentInfos;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应付月账单客户视图
  *
  * @author auto create
- * @since 1.0, 2020-01-08 12:33:43
+ * @since 1.0, 2020-05-14 12:09:49
  */
 public class ApMonthlyBillCustOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4232222612386657483L;
+	private static final long serialVersionUID = 6891623525173332854L;
 
 	/**
 	 * 分析维度1
@@ -120,6 +120,12 @@ public class ApMonthlyBillCustOpenApiResponse extends AlipayObject {
 	 */
 	@ApiField("mid")
 	private String mid;
+
+	/**
+	 * 税损扣除后月账单可关联发票金额，无发票类型时，默认为0
+	 */
+	@ApiField("new_can_invoice_amt")
+	private MultiCurrencyMoneyOpenApi newCanInvoiceAmt;
 
 	/**
 	 * 已付金额
@@ -323,6 +329,13 @@ public class ApMonthlyBillCustOpenApiResponse extends AlipayObject {
 	}
 	public void setMid(String mid) {
 		this.mid = mid;
+	}
+
+	public MultiCurrencyMoneyOpenApi getNewCanInvoiceAmt() {
+		return this.newCanInvoiceAmt;
+	}
+	public void setNewCanInvoiceAmt(MultiCurrencyMoneyOpenApi newCanInvoiceAmt) {
+		this.newCanInvoiceAmt = newCanInvoiceAmt;
 	}
 
 	public MultiCurrencyMoneyOpenApi getPaidAmt() {

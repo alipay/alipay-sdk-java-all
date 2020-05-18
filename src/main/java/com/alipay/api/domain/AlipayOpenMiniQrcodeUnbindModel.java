@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除已联普遍二维码
  *
  * @author auto create
- * @since 1.0, 2019-09-23 10:46:46
+ * @since 1.0, 2020-05-15 14:20:04
  */
 public class AlipayOpenMiniQrcodeUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5498727358167646382L;
+	private static final long serialVersionUID = 3383785352538735956L;
 
 	/**
 	 * 路由规则组，用于唯一标记一条路由规则

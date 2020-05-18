@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户签约统一入口
  *
  * @author auto create
- * @since 1.0, 2020-05-06 19:07:46
+ * @since 1.0, 2020-05-11 22:24:42
  */
 public class AlipayTradeCreditProductSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7674213175888784957L;
+	private static final long serialVersionUID = 7289923967188679976L;
 
 	/**
 	 * 扩展值

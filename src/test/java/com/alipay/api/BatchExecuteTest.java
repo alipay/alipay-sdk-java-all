@@ -8,6 +8,8 @@ import com.alipay.api.request.AlipayTradeCreateRequest;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.UUID;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -46,7 +48,7 @@ public class BatchExecuteTest {
 
     private AlipayTradeCreateModel getTestModel() {
         AlipayTradeCreateModel model = new AlipayTradeCreateModel();
-        model.setOutTradeNo("20200320010101004");
+        model.setOutTradeNo(UUID.randomUUID().toString());
         model.setTotalAmount("88.88");
         model.setSubject("Iphone6 16G");
         model.setBuyerId("2088102177846880");

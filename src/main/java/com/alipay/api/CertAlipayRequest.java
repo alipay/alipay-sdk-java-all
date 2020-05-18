@@ -20,6 +20,21 @@ public class CertAlipayRequest {
     private String proxyHost;
     private int    proxyPort;
 
+    /**
+     * 指定商户证书内容字符串，该字段与certPath只需指定一个，优先以该字段的值为准
+     */
+    private String certContent;
+
+    /**
+     * 指定支付宝公钥证书内容字符串，该字段与alipayPublicCertPath只需指定一个，优先以该字段的值为准
+     */
+    private String alipayPublicCertContent;
+
+    /**
+     * 指定根证书内容字符串，该字段与alipayPublicCertPath只需指定一个，优先以该字段的值为准
+     */
+    private String rootCertContent;
+
     public String getServerUrl() {
         return serverUrl;
     }
@@ -122,5 +137,59 @@ public class CertAlipayRequest {
 
     public void setProxyPort(int proxyPort) {
         this.proxyPort = proxyPort;
+    }
+
+    /**
+     * Getter method for property <tt>certContent</tt>.
+     *
+     * @return property value of certContent
+     */
+    public String getCertContent() {
+        return certContent;
+    }
+
+    /**
+     * Setter method for property <tt>certContent</tt>.
+     *
+     * @param certContent value to be assigned to property certContent
+     */
+    public void setCertContent(String certContent) {
+        this.certContent = certContent;
+    }
+
+    /**
+     * Getter method for property <tt>alipayPublicCertContent</tt>.
+     *
+     * @return property value of alipayPublicCertContent
+     */
+    public String getAlipayPublicCertContent() {
+        return alipayPublicCertContent;
+    }
+
+    /**
+     * Setter method for property <tt>alipayPublicCertContent</tt>.
+     *
+     * @param alipayPublicCertContent value to be assigned to property alipayPublicCertContent
+     */
+    public void setAlipayPublicCertContent(String alipayPublicCertContent) {
+        this.alipayPublicCertContent = alipayPublicCertContent;
+    }
+
+    /**
+     * Getter method for property <tt>rootCertContent</tt>.
+     *
+     * @return property value of rootCertContent
+     */
+    public String getRootCertContent() {
+        return rootCertContent;
+    }
+
+    /**
+     * Setter method for property <tt>rootCertContent</tt>.
+     *
+     * @param rootCertContent value to be assigned to property rootCertContent
+     */
+    public void setRootCertContent(String rootCertContent) {
+        this.rootCertContent = rootCertContent;
     }
 }

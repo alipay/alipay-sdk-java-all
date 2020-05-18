@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.ftoken.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-09 10:25:36
+ * @since 1.0, 2020-05-14 18:47:28
  */
 public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4638365856993348441L;
+	private static final long serialVersionUID = 2266194689962557374L;
 
 	/** 
 	 * 图片base64 encodeString
 	 */
 	@ApiField("authimg_base_64")
 	private String authimgBase64;
+
+	/** 
+	 * 由ISV定义的对自然人唯一编码，举例可以是身份证号码和姓名的MD5值，或者是其他编码方式，要求脱敏、随机且在ISV可以唯一说明一个自然人
+	 */
+	@ApiField("face_id")
+	private String faceId;
 
 	/** 
 	 * 支付宝uid
@@ -41,6 +47,13 @@ public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayRespon
 	}
 	public String getAuthimgBase64( ) {
 		return this.authimgBase64;
+	}
+
+	public void setFaceId(String faceId) {
+		this.faceId = faceId;
+	}
+	public String getFaceId( ) {
+		return this.faceId;
 	}
 
 	public void setUid(String uid) {

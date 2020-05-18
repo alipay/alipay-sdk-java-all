@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.renthouse.community.info.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-02 19:46:07
+ * @since 1.0, 2020-05-11 11:55:19
  */
 public class AlipayEcoRenthouseCommunityInfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1315768576579454239L;
+	private static final long serialVersionUID = 7744424824328972575L;
 
 	/** 
 	 * 小区同步请求号
 	 */
 	@ApiField("comm_req_id")
 	private String commReqId;
+
+	/** 
+	 * 小区审核拒绝原因
+	 */
+	@ApiField("remark")
+	private String remark;
 
 	/** 
 	 * 小区同步状态
@@ -31,6 +37,13 @@ public class AlipayEcoRenthouseCommunityInfoSyncResponse extends AlipayResponse 
 	}
 	public String getCommReqId( ) {
 		return this.commReqId;
+	}
+
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	public String getRemark( ) {
+		return this.remark;
 	}
 
 	public void setStatus(Long status) {

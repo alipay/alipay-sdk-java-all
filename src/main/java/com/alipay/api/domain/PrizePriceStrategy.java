@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 奖品定价策略
  *
  * @author auto create
- * @since 1.0, 2019-08-19 15:58:49
+ * @since 1.0, 2020-05-09 19:52:04
  */
 public class PrizePriceStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 2323871689598589659L;
+	private static final long serialVersionUID = 3365223299764588785L;
 
 	/**
 	 * 根据不同的奖品类型填写不同的值，具体用法联系营销技术获取
@@ -26,7 +26,7 @@ public class PrizePriceStrategy extends AlipayObject {
 	private String minPrice;
 
 	/**
-	 * 定价策略值，根据不同的奖品类型填写不同的值，具体用法联系营销技术获取
+	 * 废弃-不再使用
 	 */
 	@ApiField("stragety_value")
 	private String stragetyValue;
@@ -36,6 +36,12 @@ public class PrizePriceStrategy extends AlipayObject {
 	 */
 	@ApiField("strategy_type")
 	private String strategyType;
+
+	/**
+	 * 定价策略值，根据不同的奖品类型填写不同的值，具体用法联系营销技术获取
+	 */
+	@ApiField("strategy_value")
+	private String strategyValue;
 
 	public String getMaxPrice() {
 		return this.maxPrice;
@@ -63,6 +69,13 @@ public class PrizePriceStrategy extends AlipayObject {
 	}
 	public void setStrategyType(String strategyType) {
 		this.strategyType = strategyType;
+	}
+
+	public String getStrategyValue() {
+		return this.strategyValue;
+	}
+	public void setStrategyValue(String strategyValue) {
+		this.strategyValue = strategyValue;
 	}
 
 }

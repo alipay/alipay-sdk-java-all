@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.card.benefit.modify request
  * 
  * @author auto create
- * @since 1.0, 2019-08-08 20:01:40
+ * @since 1.0, 2020-05-15 15:50:44
  */
 public class AlipayMarketingCardBenefitModifyRequest implements AlipayRequest<AlipayMarketingCardBenefitModifyResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiTradeVoucherItemTemplete extends AlipayObject {
 
-	private static final long serialVersionUID = 8469634854812523714L;
+	private static final long serialVersionUID = 3815771171465385522L;
 
 	/**
 	 * 商品可用时间段

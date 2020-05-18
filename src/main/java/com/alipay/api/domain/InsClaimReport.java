@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险报案信息实体
  *
  * @author auto create
- * @since 1.0, 2020-04-27 17:21:30
+ * @since 1.0, 2020-05-12 14:14:37
  */
 public class InsClaimReport extends AlipayObject {
 
-	private static final long serialVersionUID = 6685611292317214438L;
+	private static final long serialVersionUID = 4869997593992748414L;
 
 	/**
 	 * 出险地点
@@ -55,6 +55,12 @@ public class InsClaimReport extends AlipayObject {
 	private String claimReportNo;
 
 	/**
+	 * 报案类型
+	 */
+	@ApiField("claim_report_type")
+	private String claimReportType;
+
+	/**
 	 * 赔案信息
 	 */
 	@ApiListField("claims")
@@ -79,6 +85,12 @@ public class InsClaimReport extends AlipayObject {
 	 */
 	@ApiField("reporter")
 	private InsPerson reporter;
+
+	/**
+	 * 报案来源
+	 */
+	@ApiField("source")
+	private String source;
 
 	/**
 	 * 案件状态
@@ -128,6 +140,13 @@ public class InsClaimReport extends AlipayObject {
 		this.claimReportNo = claimReportNo;
 	}
 
+	public String getClaimReportType() {
+		return this.claimReportType;
+	}
+	public void setClaimReportType(String claimReportType) {
+		this.claimReportType = claimReportType;
+	}
+
 	public List<InsClaim> getClaims() {
 		return this.claims;
 	}
@@ -154,6 +173,13 @@ public class InsClaimReport extends AlipayObject {
 	}
 	public void setReporter(InsPerson reporter) {
 		this.reporter = reporter;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 	public String getStatus() {

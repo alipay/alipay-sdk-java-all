@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模版底部横幅信息
  *
  * @author auto create
- * @since 1.0, 2020-04-24 17:40:37
+ * @since 1.0, 2020-05-08 19:33:41
  */
 public class TemplateBannerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3363469599459647492L;
+	private static final long serialVersionUID = 3865387452665167691L;
 
 	/**
 	 * 横幅图片ID，通过接口（alipay.offline.material.image.upload）上传图片获得图片ID。图片需在1M以内，支持bmp、png、jpeg、jpg、gif格式，建议使用710*200px的图片。支持以 $动态参数$ 形式的自定义动态参数传值。

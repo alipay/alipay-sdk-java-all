@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FoodDispenserCellInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6165992534686174496L;
+	private static final long serialVersionUID = 6872141358668883974L;
 
 	/**
 	 * 业务状态

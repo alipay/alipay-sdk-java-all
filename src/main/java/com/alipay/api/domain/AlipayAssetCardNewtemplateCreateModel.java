@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部商户标准卡模板创建
  *
  * @author auto create
- * @since 1.0, 2020-04-14 14:41:52
+ * @since 1.0, 2020-05-11 14:49:34
  */
 public class AlipayAssetCardNewtemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3127419218762258246L;
+	private static final long serialVersionUID = 7153462943669666197L;
 
 	/**
 	 * 账户模式：借记/贷记/借贷合一账户模式
@@ -106,6 +106,12 @@ public class AlipayAssetCardNewtemplateCreateModel extends AlipayObject {
 	 */
 	@ApiField("settle_user_id")
 	private String settleUserId;
+
+	/**
+	 * 商户资金签约主体
+	 */
+	@ApiField("sign_principal")
+	private String signPrincipal;
 
 	public String getAccountModel() {
 		return this.accountModel;
@@ -210,6 +216,13 @@ public class AlipayAssetCardNewtemplateCreateModel extends AlipayObject {
 	}
 	public void setSettleUserId(String settleUserId) {
 		this.settleUserId = settleUserId;
+	}
+
+	public String getSignPrincipal() {
+		return this.signPrincipal;
+	}
+	public void setSignPrincipal(String signPrincipal) {
+		this.signPrincipal = signPrincipal;
 	}
 
 }

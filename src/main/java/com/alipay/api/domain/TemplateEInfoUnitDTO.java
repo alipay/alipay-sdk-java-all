@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模版主体数据单元信息
  *
  * @author auto create
- * @since 1.0, 2020-04-26 09:41:35
+ * @since 1.0, 2020-05-08 19:33:41
  */
 public class TemplateEInfoUnitDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1598668927193519548L;
+	private static final long serialVersionUID = 5755872931931269795L;
 
 	/**
 	 * 显示icon的图片ID，通过接口（alipay.offline.material.image.upload）上传图片

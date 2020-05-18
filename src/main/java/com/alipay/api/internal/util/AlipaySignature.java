@@ -7,17 +7,16 @@ import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayConstants;
 import com.alipay.api.internal.util.asymmetric.AsymmetricManager;
 import com.alipay.api.internal.util.asymmetric.RSAEncryptor;
-import com.alipay.api.internal.util.codec.Base64;
 
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.math.BigInteger;
-import java.security.*;
-import java.security.cert.CertificateException;
-import java.security.cert.CertificateFactory;
-import java.security.cert.X509Certificate;
-import java.util.*;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * @author junying.wjy
@@ -731,39 +730,7 @@ public class AlipaySignature {
      * @throws AlipayApiException
      */
     public static String getCertSN(String certPath) throws AlipayApiException {
-        InputStream inputStream = null;
-        try {
-            inputStream = new FileInputStream(certPath);
-            CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
-            X509Certificate cert = (X509Certificate) cf.generateCertificate(inputStream);
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update((cert.getIssuerX500Principal().getName() + cert.getSerialNumber()).getBytes());
-            String certSN = new BigInteger(1, md.digest()).toString(16);
-            //BigInteger会把0省略掉，需补全至32位
-            certSN = fillMD5(certSN);
-            return certSN;
-
-        } catch (NoSuchProviderException e) {
-            throw new AlipayApiException(e);
-        } catch (NoSuchAlgorithmException e) {
-            throw new AlipayApiException(e);
-        } catch (IOException e) {
-            throw new AlipayApiException(e);
-        } catch (CertificateException e) {
-            throw new AlipayApiException(e);
-        } finally {
-            try {
-                if (inputStream != null) {
-                    inputStream.close();
-                }
-            } catch (IOException e) {
-                throw new AlipayApiException(e);
-            }
-        }
-    }
-
-    private static String fillMD5(String md5) {
-        return md5.length() == 32 ? md5 : fillMD5("0" + md5);
+        return AntCertificationUtil.getCertSN(AntCertificationUtil.getCertFromPath(certPath));
     }
 
     /**
@@ -774,28 +741,6 @@ public class AlipaySignature {
      * @throws AlipayApiException
      */
     public static String getAlipayPublicKey(String alipayPublicCertPath) throws AlipayApiException {
-        InputStream inputStream = null;
-        try {
-            inputStream = new FileInputStream(alipayPublicCertPath);
-            CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
-            X509Certificate cert = (X509Certificate) cf.generateCertificate(inputStream);
-            PublicKey publicKey = cert.getPublicKey();
-            return Base64.encodeBase64String(publicKey.getEncoded());
-        } catch (NoSuchProviderException e) {
-            throw new AlipayApiException(e);
-        } catch (IOException e) {
-            throw new AlipayApiException(e);
-        } catch (CertificateException e) {
-            throw new AlipayApiException(e);
-        } finally {
-            try {
-                if (inputStream != null) {
-                    inputStream.close();
-                }
-            } catch (IOException e) {
-                throw new AlipayApiException(e);
-            }
-        }
+        return AntCertificationUtil.getAlipayPublicKey(alipayPublicCertPath);
     }
-
 }

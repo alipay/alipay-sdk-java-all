@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小区同步
  *
  * @author auto create
- * @since 1.0, 2017-12-22 17:20:35
+ * @since 1.0, 2020-05-11 11:52:55
  */
 public class AlipayEcoRenthouseCommunityInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8687149278482399544L;
+	private static final long serialVersionUID = 1893742253342134846L;
 
 	/**
 	 * 小区地址(与经度纬度，POI三者选填其一)

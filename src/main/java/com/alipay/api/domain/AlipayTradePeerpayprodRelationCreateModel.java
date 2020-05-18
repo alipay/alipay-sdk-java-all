@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝亲情号账号关系创建
  *
  * @author auto create
- * @since 1.0, 2018-12-14 17:22:54
+ * @since 1.0, 2020-05-09 17:56:47
  */
 public class AlipayTradePeerpayprodRelationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6515155116563686747L;
+	private static final long serialVersionUID = 7187495295299946215L;
 
 	/**
 	 * 支付宝userId，可以为空，用于传递被开通人

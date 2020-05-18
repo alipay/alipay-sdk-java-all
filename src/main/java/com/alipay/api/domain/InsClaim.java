@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 赔案
  *
  * @author auto create
- * @since 1.0, 2020-04-27 17:22:45
+ * @since 1.0, 2020-05-12 14:14:25
  */
 public class InsClaim extends AlipayObject {
 
-	private static final long serialVersionUID = 8514948874254965187L;
+	private static final long serialVersionUID = 1884193184635144729L;
 
 	/**
 	 * 理赔因子;标准json 格式
@@ -65,6 +65,12 @@ public class InsClaim extends AlipayObject {
 	 */
 	@ApiField("reject_reason")
 	private String rejectReason;
+
+	/**
+	 * 流水号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	public String getBizData() {
 		return this.bizData;
@@ -120,6 +126,13 @@ public class InsClaim extends AlipayObject {
 	}
 	public void setRejectReason(String rejectReason) {
 		this.rejectReason = rejectReason;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
 	}
 
 }

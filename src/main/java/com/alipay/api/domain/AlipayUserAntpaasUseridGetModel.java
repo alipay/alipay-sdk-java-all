@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员注册提前获取userId
  *
  * @author auto create
- * @since 1.0, 2016-10-25 19:01:45
+ * @since 1.0, 2020-05-07 20:39:54
  */
 public class AlipayUserAntpaasUseridGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4755863644258211376L;
+	private static final long serialVersionUID = 1514649592517837763L;
 
 	/**
 	 * 账户登录号，邮箱或者手机号

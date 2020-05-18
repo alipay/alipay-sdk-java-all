@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模版主体信息
  *
  * @author auto create
- * @since 1.0, 2020-04-26 12:33:09
+ * @since 1.0, 2020-05-08 19:33:41
  */
 public class TemplateEInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3665435838358848127L;
+	private static final long serialVersionUID = 4723777985957729276L;
 
 	/**
 	 * 卡券辅助区域块

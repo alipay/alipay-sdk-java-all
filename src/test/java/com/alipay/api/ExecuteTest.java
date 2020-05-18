@@ -11,6 +11,8 @@ import com.alipay.api.response.AlipayOpenOperationOpenbizmockBizQueryResponse;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 
+import java.util.UUID;
+
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -90,7 +92,7 @@ public class ExecuteTest {
     private AlipayTradeCreateRequest getTradeCreateRequest() {
         AlipayTradeCreateRequest request = new AlipayTradeCreateRequest();
         AlipayTradeCreateModel model = new AlipayTradeCreateModel();
-        model.setOutTradeNo("20200320010101002");
+        model.setOutTradeNo(UUID.randomUUID().toString());
         model.setTotalAmount("88.88");
         model.setSubject("Iphone6 16G");
         model.setBuyerId("2088102177846880");

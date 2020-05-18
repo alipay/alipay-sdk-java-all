@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.version.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-07 12:15:41
+ * @since 1.0, 2020-05-10 06:05:09
  */
 public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3332577572973525372L;
+	private static final long serialVersionUID = 1459222212544427581L;
 
 	/** 
 	 * 小程序应用描述
@@ -104,6 +104,13 @@ public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 	@ApiListField("mini_app_category_info_list")
 	@ApiField("mini_app_category_info")
 	private List<MiniAppCategoryInfo> miniAppCategoryInfoList;
+
+	/** 
+	 * 新小程序类目列表
+	 */
+	@ApiListField("mini_category_info_list")
+	@ApiField("mini_app_category_info")
+	private List<MiniAppCategoryInfo> miniCategoryInfoList;
 
 	/** 
 	 * 小程序功能包列表
@@ -264,6 +271,13 @@ public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 	}
 	public List<MiniAppCategoryInfo> getMiniAppCategoryInfoList( ) {
 		return this.miniAppCategoryInfoList;
+	}
+
+	public void setMiniCategoryInfoList(List<MiniAppCategoryInfo> miniCategoryInfoList) {
+		this.miniCategoryInfoList = miniCategoryInfoList;
+	}
+	public List<MiniAppCategoryInfo> getMiniCategoryInfoList( ) {
+		return this.miniCategoryInfoList;
 	}
 
 	public void setPackageInfoList(List<MiniPackageInfo> packageInfoList) {
