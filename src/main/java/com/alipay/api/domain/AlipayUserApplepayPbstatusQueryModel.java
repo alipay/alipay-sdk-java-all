@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询卡状态
  *
  * @author auto create
- * @since 1.0, 2020-03-31 13:48:48
+ * @since 1.0, 2020-05-29 10:26:02
  */
 public class AlipayUserApplepayPbstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2424479838968265984L;
+	private static final long serialVersionUID = 5761621538682793231L;
 
 	/**
 	 * 设备接受语言

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用受理订单信息同步
  *
  * @author auto create
- * @since 1.0, 2019-07-26 13:55:53
+ * @since 1.0, 2020-05-24 11:13:13
  */
 public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2145548737219711729L;
+	private static final long serialVersionUID = 8415326372793137745L;
 
 	/**
 	 * 买家的支付宝用户id
@@ -36,6 +36,12 @@ public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
+
+	/**
+	 * 签约产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 卖家的支付宝id
@@ -81,6 +87,13 @@ public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 	}
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getSellerId() {

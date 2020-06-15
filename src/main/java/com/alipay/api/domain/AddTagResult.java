@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 饿了么打标接口返回值
  *
  * @author auto create
- * @since 1.0, 2019-11-13 21:06:58
+ * @since 1.0, 2020-06-15 10:51:32
  */
 public class AddTagResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6535344426431972413L;
+	private static final long serialVersionUID = 1293311152424723898L;
 
 	/**
 	 * biz_id，唯一，业务id，用于业务请求的幂等标志

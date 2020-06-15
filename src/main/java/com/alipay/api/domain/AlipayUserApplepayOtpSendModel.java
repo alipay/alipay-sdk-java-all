@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ApplePay的easy开卡OTP发送
  *
  * @author auto create
- * @since 1.0, 2020-04-03 10:00:29
+ * @since 1.0, 2020-05-29 10:25:04
  */
 public class AlipayUserApplepayOtpSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4387548925261619673L;
+	private static final long serialVersionUID = 6614846711542671132L;
 
 	/**
 	 * 卡id(由固定前缀+32位数字构成)

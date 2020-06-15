@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.mini.create request
  * 
  * @author auto create
- * @since 1.0, 2020-05-07 21:55:55
+ * @since 1.0, 2020-06-08 16:17:26
  */
 public class AlipayOpenAgentMiniCreateRequest implements AlipayUploadRequest<AlipayOpenAgentMiniCreateResponse> {
 
@@ -55,6 +55,11 @@ public class AlipayOpenAgentMiniCreateRequest implements AlipayUploadRequest<Ali
 	* ISV 代商家操作事务编号，通过事务开启接口alipay.open.agent.create调用返回。
 	 */
 	private String batchNo;
+
+	/** 
+	* 新小程序前台类目，一级与二级、三级用下划线隔开，最多可以选四个类目，类目之间;隔开。使用后不再读取app_category_ids值，老前台类目将废弃
+	 */
+	private String miniCategoryIds;
 
 	/** 
 	* 商家小程序客服邮箱
@@ -115,6 +120,13 @@ public class AlipayOpenAgentMiniCreateRequest implements AlipayUploadRequest<Ali
 	}
 	public String getBatchNo() {
 		return this.batchNo;
+	}
+
+	public void setMiniCategoryIds(String miniCategoryIds) {
+		this.miniCategoryIds = miniCategoryIds;
+	}
+	public String getMiniCategoryIds() {
+		return this.miniCategoryIds;
 	}
 
 	public void setServiceEmail(String serviceEmail) {
@@ -197,6 +209,7 @@ public class AlipayOpenAgentMiniCreateRequest implements AlipayUploadRequest<Ali
 		txtParams.put("app_name", this.appName);
 		txtParams.put("app_slogan", this.appSlogan);
 		txtParams.put("batch_no", this.batchNo);
+		txtParams.put("mini_category_ids", this.miniCategoryIds);
 		txtParams.put("service_email", this.serviceEmail);
 		txtParams.put("service_phone", this.servicePhone);
 		if(udfParams != null) {

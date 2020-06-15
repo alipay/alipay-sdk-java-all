@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.user.customer.identify接口专用结果对象，维护接口查询结果中的活动信息
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:42:37
+ * @since 1.0, 2020-06-12 15:37:26
  */
 public class AlipayUserCustIdentifyActivity extends AlipayObject {
 
-	private static final long serialVersionUID = 6388687417588657554L;
+	private static final long serialVersionUID = 8447953947452684989L;
 
 	/**
 	 * 活动扩展信息，预留字段。例如通过连接引导参加运营活动，包含活动链接（或者参与方式）及活动信息。

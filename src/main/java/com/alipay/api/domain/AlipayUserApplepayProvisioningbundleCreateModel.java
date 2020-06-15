@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ApplePay开卡接口(用于压测)
  *
  * @author auto create
- * @since 1.0, 2020-04-03 13:20:24
+ * @since 1.0, 2020-05-29 10:22:53
  */
 public class AlipayUserApplepayProvisioningbundleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3195869224492647547L;
+	private static final long serialVersionUID = 3717969162678378386L;
 
 	/**
 	 * 支付宝用户id

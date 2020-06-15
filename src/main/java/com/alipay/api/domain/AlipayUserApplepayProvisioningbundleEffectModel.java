@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * wagu激活卡片接口
  *
  * @author auto create
- * @since 1.0, 2020-04-03 13:20:02
+ * @since 1.0, 2020-05-29 10:24:09
  */
 public class AlipayUserApplepayProvisioningbundleEffectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4323997241189289879L;
+	private static final long serialVersionUID = 5273286699239828644L;
 
 	/**
 	 * 事件类型

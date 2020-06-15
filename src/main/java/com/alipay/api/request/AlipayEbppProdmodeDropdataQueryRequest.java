@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.prodmode.dropdata.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-06-15 10:00:37
  */
 public class AlipayEbppProdmodeDropdataQueryRequest implements AlipayRequest<AlipayEbppProdmodeDropdataQueryResponse> {
 

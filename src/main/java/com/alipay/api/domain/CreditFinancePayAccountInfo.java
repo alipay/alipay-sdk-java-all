@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用交易金融操作类的账户信息
  *
  * @author auto create
- * @since 1.0, 2020-03-11 15:59:38
+ * @since 1.0, 2020-06-03 15:15:46
  */
 public class CreditFinancePayAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4674612559116418376L;
+	private static final long serialVersionUID = 4238642447676188291L;
 
 	/**
 	 * 账号的扩展信息，String格式的json字符串

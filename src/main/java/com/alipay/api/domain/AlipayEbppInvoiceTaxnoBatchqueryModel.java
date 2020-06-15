@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取指定企业税号的用户发票要素列表
  *
  * @author auto create
- * @since 1.0, 2020-04-15 09:30:14
+ * @since 1.0, 2020-05-27 20:06:40
  */
 public class AlipayEbppInvoiceTaxnoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4717868367776532599L;
+	private static final long serialVersionUID = 7773875277252413382L;
 
 	/**
 	 * 默认值为false。true为输出交易信息，false为不输出交易信息。
@@ -26,7 +26,7 @@ public class AlipayEbppInvoiceTaxnoBatchqueryModel extends AlipayObject {
 	 * 查询结束时间，精确到天（按开票日期查询）
 start_invoice_date和end_invoice_date传值要求
 1.同时为空时，返回最近半年200条数据
-2.其中一个值不能为空
+2.必须同时为空 或 同时不为空
 3.结束日期不能大于当前日期
 4.开始时间和结束时间跨度不能超过6个月
 	 */
@@ -69,7 +69,7 @@ INVOICE_EXPENSE－发票报销
 	 * 查询起始时间，精确到天（按开票日期查询）
 start_invoice_date和end_invoice_date传值要求
 1.同时为空时，返回最近半年200条数据
-2.其中一个值不能为空
+2.必须同时为空 或 同时不为空
 3.结束日期不能大于当前日期
 4.开始时间和结束时间跨度不能超过6个月
 	 */

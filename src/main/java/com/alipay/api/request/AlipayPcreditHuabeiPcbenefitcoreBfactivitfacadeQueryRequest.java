@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.pcbenefitcore.bfactivitfacade.query request
  * 
  * @author auto create
- * @since 1.0, 2020-03-27 17:25:11
+ * @since 1.0, 2020-05-20 20:40:11
  */
 public class AlipayPcreditHuabeiPcbenefitcoreBfactivitfacadeQueryRequest implements AlipayRequest<AlipayPcreditHuabeiPcbenefitcoreBfactivitfacadeQueryResponse> {
 

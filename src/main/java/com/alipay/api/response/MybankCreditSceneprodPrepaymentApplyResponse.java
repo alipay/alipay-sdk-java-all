@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.prepayment.apply response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-27 11:55:01
+ * @since 1.0, 2020-05-28 10:05:13
  */
 public class MybankCreditSceneprodPrepaymentApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7121659761536866636L;
+	private static final long serialVersionUID = 2111891831579715757L;
 
 	/** 
 	 * 是否可以提前还款
@@ -20,6 +20,12 @@ public class MybankCreditSceneprodPrepaymentApplyResponse extends AlipayResponse
 	 */
 	@ApiField("accept_repay")
 	private String acceptRepay;
+
+	/** 
+	 * 枚举值 a.退车 loanCancel b.机构主动回购 activeRefund c.客户主动结清 repayByCust
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/** 
 	 * 交易失败明细提示
@@ -82,6 +88,13 @@ public class MybankCreditSceneprodPrepaymentApplyResponse extends AlipayResponse
 	}
 	public String getAcceptRepay( ) {
 		return this.acceptRepay;
+	}
+
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
+	}
+	public String getBizType( ) {
+		return this.bizType;
 	}
 
 	public void setFailReason(String failReason) {

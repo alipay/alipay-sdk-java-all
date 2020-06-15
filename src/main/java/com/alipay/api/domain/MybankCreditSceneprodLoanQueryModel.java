@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融订单状态查询
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:56:21
+ * @since 1.0, 2020-05-27 09:59:16
  */
 public class MybankCreditSceneprodLoanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5898335156491418856L;
+	private static final long serialVersionUID = 3848673385546385859L;
+
+	/**
+	 * 网商申请单号
+	 */
+	@ApiField("app_seq_no")
+	private String appSeqNo;
 
 	/**
 	 * 机构编码，机构接入场景金融平台时分配，固定值
@@ -42,6 +48,13 @@ public class MybankCreditSceneprodLoanQueryModel extends AlipayObject {
 	 */
 	@ApiField("site_user_id")
 	private String siteUserId;
+
+	public String getAppSeqNo() {
+		return this.appSeqNo;
+	}
+	public void setAppSeqNo(String appSeqNo) {
+		this.appSeqNo = appSeqNo;
+	}
 
 	public String getOrgCode() {
 		return this.orgCode;

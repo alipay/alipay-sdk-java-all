@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.remit.fund.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-20 16:29:57
+ * @since 1.0, 2020-05-29 14:56:15
  */
 public class AlipayOverseasRemitFundInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7875951756151422361L;
+	private static final long serialVersionUID = 1253395823211962124L;
 
 	/** 
 	 * 合规检查的业务结果

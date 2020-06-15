@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜品项目组
  *
  * @author auto create
- * @since 1.0, 2020-03-06 10:18:12
+ * @since 1.0, 2020-06-15 11:50:22
  */
 public class KbdishGroupInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8286431927671976416L;
+	private static final long serialVersionUID = 3389127985646111667L;
 
 	/**
 	 * 操作员

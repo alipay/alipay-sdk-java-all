@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2019-12-04 12:18:25
+ * @since 1.0, 2020-06-12 18:02:59
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8185334852133393534L;
+	private static final long serialVersionUID = 1743569667365112259L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -30,7 +30,7 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	private String agreementEffectType;
 
 	/**
-	 * 是否允许花芝GO降级成原代扣（即销售方案指定的代扣产品），在花芝GO场景下才会使用该值。取值：true-允许降级，false-不允许降级。默认为false。
+	 * 是否允许花芝GO降级成原代扣（即销售方案指定的代扣产品），在花芝GO场景下才会使用该值。取值：true-允许降级，false-不允许降级。默认为true。
 	 */
 	@ApiField("allow_huazhi_degrade")
 	private String allowHuazhiDegrade;
@@ -69,6 +69,12 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	 */
 	@ApiField("merchant_process_url")
 	private String merchantProcessUrl;
+
+	/**
+	 * 业务透传参数
+	 */
+	@ApiField("pass_params")
+	private String passParams;
 
 	/**
 	 * 周期管控规则参数period_rule_params，在签约周期扣款产品（如CYCLE_PAY_AUTH_P）时必传，在签约其他产品时无需传入。 周期扣款产品，会按照这里传入的参数提示用户，并对发起扣款的时间、金额、次数等做相应限制。
@@ -200,6 +206,13 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	}
 	public void setMerchantProcessUrl(String merchantProcessUrl) {
 		this.merchantProcessUrl = merchantProcessUrl;
+	}
+
+	public String getPassParams() {
+		return this.passParams;
+	}
+	public void setPassParams(String passParams) {
+		this.passParams = passParams;
 	}
 
 	public PeriodRuleParams getPeriodRuleParams() {

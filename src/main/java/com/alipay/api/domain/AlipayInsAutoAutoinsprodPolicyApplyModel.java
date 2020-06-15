@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 下单请求接口
  *
  * @author auto create
- * @since 1.0, 2019-12-31 12:12:06
+ * @since 1.0, 2020-06-08 14:28:32
  */
 public class AlipayInsAutoAutoinsprodPolicyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7593774571338931625L;
+	private static final long serialVersionUID = 8298864945265616252L;
 
 	/**
 	 * 商业险收款账号，商交保费收入账号不一致时，商业险收入账号传此字段。一般为保险公司收款账号登录ID，最终以技术isv给出示例为准，蚂蚁会校验该id对应的保险公司是不是和蚂蚁胜信签约以及签约关系是否有效，示例：xxxx.@alipay.com

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票报销处理进度同步
  *
  * @author auto create
- * @since 1.0, 2020-04-14 20:41:52
+ * @since 1.0, 2020-06-08 10:20:00
  */
 public class AlipayEbppInvoiceExpenseProgressSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5413724451889236217L;
+	private static final long serialVersionUID = 5424169185867449267L;
 
 	/**
 	 * 同步申请id，每次发起同步时生成，isv每次请求需要保证唯一

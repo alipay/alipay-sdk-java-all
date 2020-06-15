@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询账单业务户号
  *
  * @author auto create
- * @since 1.0, 2018-05-10 14:50:17
+ * @since 1.0, 2020-06-15 10:02:31
  */
 public class AlipayEbppCommonBillkeyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7769239753782898339L;
+	private static final long serialVersionUID = 2842769784289779792L;
 
 	/**
 	 * 业务类型缩写：

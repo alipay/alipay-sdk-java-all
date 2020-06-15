@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车牌代扣状态查询API
  *
  * @author auto create
- * @since 1.0, 2020-02-14 11:49:45
+ * @since 1.0, 2020-05-27 21:21:01
  */
 public class AlipayEcoMycarParkingAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3394959675727426196L;
+	private static final long serialVersionUID = 8876259539827241295L;
 
 	/**
 	 * 支付宝用户ID；只有传入该参数才能准确的匹配车和用户的关系，否则有可能无法正确获取到用户的代扣状态。

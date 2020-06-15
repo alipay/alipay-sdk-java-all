@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 准备汇款
  *
  * @author auto create
- * @since 1.0, 2020-04-20 16:29:57
+ * @since 1.0, 2020-05-29 14:55:59
  */
 public class AlipayOverseasRemitFundInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5137131662581553752L;
+	private static final long serialVersionUID = 7391376864629821959L;
 
 	/**
 	 * 发端生成的单据号

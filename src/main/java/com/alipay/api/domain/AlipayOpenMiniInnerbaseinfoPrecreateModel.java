@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序预创建接口
  *
  * @author auto create
- * @since 1.0, 2020-05-06 20:04:57
+ * @since 1.0, 2020-05-26 11:06:04
  */
 public class AlipayOpenMiniInnerbaseinfoPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3457889177397274553L;
+	private static final long serialVersionUID = 1613481849616318834L;
 
 	/**
 	 * 小程序类目ID列表
@@ -61,6 +61,12 @@ public class AlipayOpenMiniInnerbaseinfoPrecreateModel extends AlipayObject {
 	 */
 	@ApiField("app_sub_type")
 	private String appSubType;
+
+	/**
+	 * 新小程序前台类目，一级与二级、三级用下划线隔开，最多可以选四个类目，类目之间;隔开。使用后不再读取app_category_ids值，老前台类目将废弃
+	 */
+	@ApiField("mini_category_ids")
+	private String miniCategoryIds;
 
 	/**
 	 * 小程序业务主体
@@ -142,6 +148,13 @@ ALIBABA：阿里域内应用
 	}
 	public void setAppSubType(String appSubType) {
 		this.appSubType = appSubType;
+	}
+
+	public String getMiniCategoryIds() {
+		return this.miniCategoryIds;
+	}
+	public void setMiniCategoryIds(String miniCategoryIds) {
+		this.miniCategoryIds = miniCategoryIds;
 	}
 
 	public String getOwnerEntity() {

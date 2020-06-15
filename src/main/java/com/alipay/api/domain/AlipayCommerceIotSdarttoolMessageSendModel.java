@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 打印消息发送
  *
  * @author auto create
- * @since 1.0, 2020-01-09 21:06:25
+ * @since 1.0, 2020-06-03 17:33:43
  */
 public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1726768479956279441L;
+	private static final long serialVersionUID = 2798685934771228562L;
 
 	/**
 	 * 消息是否必达(immediate_msg为false时此字段设置有效)，消息过期时间顺延3*24h. 建议使用expire_time设置消息过期时间
@@ -20,8 +20,9 @@ public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 	private Boolean biDa;
 
 	/**
-	 * 设备查询条件类型 supplierid+sn : (SUPPLIERID_SN)
-itemid + sn: ITEMID_SN
+	 * 设备查询条件类型 ；SUPPLIERID_SN:supplierid+sn ;
+ ITEMID_SN:itemid + sn;
+SN:sn
 	 */
 	@ApiField("device_query_type")
 	private String deviceQueryType;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户主体信息，包含用户支付宝userId、登录名等.
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:42:37
+ * @since 1.0, 2020-06-12 15:37:26
  */
 public class AlipayUserPrincipalInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3337384616743356671L;
+	private static final long serialVersionUID = 4892994985183962481L;
 
 	/**
 	 * 用户电子邮箱

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序代商户订购插件
  *
  * @author auto create
- * @since 1.0, 2019-12-19 19:03:42
+ * @since 1.0, 2020-06-08 16:21:57
  */
 public class AlipayOpenMiniInnerappPluginOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2677487645849698669L;
+	private static final long serialVersionUID = 2615951145981288194L;
 
 	/**
 	 * 业务来源
@@ -30,6 +30,13 @@ public class AlipayOpenMiniInnerappPluginOrderModel extends AlipayObject {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * 业务幂等号，规则为商品id+appOrigin+requestId 作为幂等流水号
+非必填,不传则默认生成一个8位requestId
+	 */
+	@ApiField("request_id")
+	private String requestId;
 
 	public String getAppOrigin() {
 		return this.appOrigin;
@@ -50,6 +57,13 @@ public class AlipayOpenMiniInnerappPluginOrderModel extends AlipayObject {
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public String getRequestId() {
+		return this.requestId;
+	}
+	public void setRequestId(String requestId) {
+		this.requestId = requestId;
 	}
 
 }

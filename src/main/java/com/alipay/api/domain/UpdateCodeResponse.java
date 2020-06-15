@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量更新码值的返回结果
  *
  * @author auto create
- * @since 1.0, 2019-11-14 17:28:38
+ * @since 1.0, 2020-06-15 10:51:37
  */
 public class UpdateCodeResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2786675398786429344L;
+	private static final long serialVersionUID = 5737275486494931551L;
 
 	/**
 	 * 批量更新码值返回结果列表

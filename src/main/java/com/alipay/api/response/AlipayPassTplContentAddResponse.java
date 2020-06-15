@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pass.tpl.content.add response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2020-06-11 17:45:44
  */
 public class AlipayPassTplContentAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3291933421764283331L;
+	private static final long serialVersionUID = 6298867673953384781L;
 
 	/** 
 	 * 业务结果

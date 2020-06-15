@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关闭蚂蚁档案客户关联
  *
  * @author auto create
- * @since 1.0, 2020-04-27 16:14:32
+ * @since 1.0, 2020-06-05 19:19:51
  */
 public class AlipayUserAntarchiveCustrelationCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3541216349589181474L;
+	private static final long serialVersionUID = 2112679857514533218L;
 
 	/**
 	 * 关闭时间,可空.标准时间格式：yyyy-MM-dd HH:mm:ss

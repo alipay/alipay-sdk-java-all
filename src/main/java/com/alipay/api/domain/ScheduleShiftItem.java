@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 轮班结果
  *
  * @author auto create
- * @since 1.0, 2020-03-02 16:07:21
+ * @since 1.0, 2020-06-08 16:36:50
  */
 public class ScheduleShiftItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5873926952892816833L;
+	private static final long serialVersionUID = 3326391487483616242L;
 
 	/**
 	 * 班次序号（可关联排班表得到具体工作计划，0表示休息）
@@ -30,6 +30,12 @@ public class ScheduleShiftItem extends AlipayObject {
 	 */
 	@ApiField("line_id")
 	private String lineId;
+
+	/**
+	 * 车辆编号id
+	 */
+	@ApiField("vehicle_id")
+	private String vehicleId;
 
 	/**
 	 * 虚拟员工编号
@@ -56,6 +62,13 @@ public class ScheduleShiftItem extends AlipayObject {
 	}
 	public void setLineId(String lineId) {
 		this.lineId = lineId;
+	}
+
+	public String getVehicleId() {
+		return this.vehicleId;
+	}
+	public void setVehicleId(String vehicleId) {
+		this.vehicleId = vehicleId;
 	}
 
 	public String getVirEmployId() {

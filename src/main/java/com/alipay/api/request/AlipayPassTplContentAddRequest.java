@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pass.tpl.content.add request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2020-06-11 17:45:44
  */
 public class AlipayPassTplContentAddRequest implements AlipayRequest<AlipayPassTplContentAddResponse> {
 

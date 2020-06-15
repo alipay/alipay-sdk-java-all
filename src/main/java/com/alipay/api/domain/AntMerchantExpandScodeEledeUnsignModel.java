@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 饿了么餐饮批量去标接口
  *
  * @author auto create
- * @since 1.0, 2019-11-14 17:28:30
+ * @since 1.0, 2020-06-15 10:49:33
  */
 public class AntMerchantExpandScodeEledeUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2623598383185549623L;
+	private static final long serialVersionUID = 7783491212299127965L;
 
 	/**
 	 * 去标请求

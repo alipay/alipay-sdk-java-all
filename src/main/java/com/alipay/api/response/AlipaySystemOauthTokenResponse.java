@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.system.oauth.token response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-03 12:05:01
+ * @since 1.0, 2020-05-26 17:42:05
  */
 public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5387162327373165923L;
+	private static final long serialVersionUID = 3515315575439265668L;
 
 	/** 
 	 * 访问令牌。通过该令牌调用需要授权类接口

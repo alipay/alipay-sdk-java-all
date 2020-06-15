@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.transdata.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-02-26 10:25:05
+ * @since 1.0, 2020-05-27 19:58:12
  */
 public class AlipayCommerceTransportVehicleownerTransdataSyncRequest implements AlipayRequest<AlipayCommerceTransportVehicleownerTransdataSyncResponse> {
 

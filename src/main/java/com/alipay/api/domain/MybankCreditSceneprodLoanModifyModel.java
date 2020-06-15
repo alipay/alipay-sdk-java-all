@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融订单状态修改
  *
  * @author auto create
- * @since 1.0, 2018-07-31 10:38:20
+ * @since 1.0, 2020-05-28 10:04:02
  */
 public class MybankCreditSceneprodLoanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5845584948674674951L;
+	private static final long serialVersionUID = 4433593945714662984L;
+
+	/**
+	 * 网商申请单号。注意网商申请单号和外部订单号至少要传一个
+	 */
+	@ApiField("app_seq_no")
+	private String appSeqNo;
 
 	/**
 	 * 业务订单扩展字段，根据机构不同填入的参数会有区别
@@ -78,6 +84,13 @@ public class MybankCreditSceneprodLoanModifyModel extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	public String getAppSeqNo() {
+		return this.appSeqNo;
+	}
+	public void setAppSeqNo(String appSeqNo) {
+		this.appSeqNo = appSeqNo;
+	}
 
 	public String getExtParam() {
 		return this.extParam;

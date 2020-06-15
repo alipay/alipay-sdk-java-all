@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.expense.progress.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-04-14 20:41:52
+ * @since 1.0, 2020-06-08 10:20:00
  */
 public class AlipayEbppInvoiceExpenseProgressSyncRequest implements AlipayRequest<AlipayEbppInvoiceExpenseProgressSyncResponse> {
 

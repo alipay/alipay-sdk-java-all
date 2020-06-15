@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜品定制规则api
  *
  * @author auto create
- * @since 1.0, 2020-04-11 11:22:47
+ * @since 1.0, 2020-06-15 11:48:06
  */
 public class KoubeiCateringDishCommruleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2475557712596595656L;
+	private static final long serialVersionUID = 1697567672263655864L;
 
 	/**
 	 * 规则列表 可批量操作

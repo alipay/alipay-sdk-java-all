@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品规则通用模型
  *
  * @author auto create
- * @since 1.0, 2020-03-06 10:18:36
+ * @since 1.0, 2020-06-15 11:49:39
  */
 public class KbdishRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7894983299443649771L;
+	private static final long serialVersionUID = 3783577269451166217L;
 
 	/**
 	 * 规则的类型，枚举值如下：

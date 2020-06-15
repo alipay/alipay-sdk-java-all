@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 排班调度-单程时间获取接口
  *
  * @author auto create
- * @since 1.0, 2020-03-02 17:16:53
+ * @since 1.0, 2020-05-27 17:22:32
  */
 public class AlipayDataAiserviceCloudbusScheduletriptimeGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7274233968993977471L;
+	private static final long serialVersionUID = 2584978557222869122L;
 
 	/**
 	 * mean/max/pert_95

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统商需要通过该接口在口碑平台帮助商户创建门店信息。
  *
  * @author auto create
- * @since 1.0, 2019-07-17 11:46:52
+ * @since 1.0, 2020-06-09 15:09:59
  */
 public class AlipayOfflineMarketShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7186289472123528222L;
+	private static final long serialVersionUID = 8458873773764412932L;
 
 	/**
 	 * 门店详细地址，地址字符长度在4-50个字符，注：不含省市区。门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层，“四川北路1552号欢乐广场1楼”。

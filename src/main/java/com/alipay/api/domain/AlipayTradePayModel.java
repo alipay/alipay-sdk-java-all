@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2020-05-12 16:14:18
+ * @since 1.0, 2020-05-27 14:01:02
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3177422993415379338L;
+	private static final long serialVersionUID = 1196164372749292992L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -146,6 +146,12 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	@ApiListField("query_options")
 	@ApiField("string")
 	private List<String> queryOptions;
+
+	/**
+	 * 收单机构(例如银行）的标识，填写该机构在支付宝的pid。只在机构间联场景下传递该值。
+	 */
+	@ApiField("request_org_pid")
+	private String requestOrgPid;
 
 	/**
 	 * 描述分账信息，json格式，其它说明详见分账说明
@@ -380,6 +386,13 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	}
 	public void setQueryOptions(List<String> queryOptions) {
 		this.queryOptions = queryOptions;
+	}
+
+	public String getRequestOrgPid() {
+		return this.requestOrgPid;
+	}
+	public void setRequestOrgPid(String requestOrgPid) {
+		this.requestOrgPid = requestOrgPid;
 	}
 
 	public RoyaltyInfo getRoyaltyInfo() {

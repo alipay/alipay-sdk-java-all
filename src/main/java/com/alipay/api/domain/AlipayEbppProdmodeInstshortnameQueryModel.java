@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询机构英文名称
  *
  * @author auto create
- * @since 1.0, 2018-04-26 13:56:59
+ * @since 1.0, 2020-06-15 09:58:06
  */
 public class AlipayEbppProdmodeInstshortnameQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2333916411932249576L;
+	private static final long serialVersionUID = 6266735535497196218L;
 
 	/**
 	 * 出账机构中文名称

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppCommonNotifySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8525229584587746679L;
+	private static final long serialVersionUID = 5487268162828791318L;
 
 	/** 
 	 * 通知的执行结果

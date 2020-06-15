@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.renthouse.common.image.upload response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-02 19:41:33
+ * @since 1.0, 2020-06-02 19:24:33
  */
 public class AlipayEcoRenthouseCommonImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7455991283261597877L;
+	private static final long serialVersionUID = 1445172943618147279L;
 
 	/** 
 	 * 图片url地址

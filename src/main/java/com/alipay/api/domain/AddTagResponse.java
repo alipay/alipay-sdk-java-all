@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 打标返回值
  *
  * @author auto create
- * @since 1.0, 2019-11-14 17:28:45
+ * @since 1.0, 2020-06-15 10:51:32
  */
 public class AddTagResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4775238651328457833L;
+	private static final long serialVersionUID = 5533266471158427393L;
 
 	/**
 	 * 批量打标接口返回值

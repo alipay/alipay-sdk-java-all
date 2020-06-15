@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantPayforprivilegeUselogBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3666352127391148594L;
+	private static final long serialVersionUID = 8239662375436489521L;
 
 	/**
 	 * 业务结束时间，包含该业务时间点，开始时间和结束时间不能超过一年

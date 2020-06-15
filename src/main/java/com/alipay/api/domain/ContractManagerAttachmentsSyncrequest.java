@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流程附件
  *
  * @author auto create
- * @since 1.0, 2020-03-30 14:15:10
+ * @since 1.0, 2020-05-19 13:56:28
  */
 public class ContractManagerAttachmentsSyncrequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6736774593848471448L;
+	private static final long serialVersionUID = 8527516473314887236L;
 
 	/**
 	 * 附件fileId

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链票据用户公钥查询
  *
  * @author auto create
- * @since 1.0, 2019-08-29 16:50:58
+ * @since 1.0, 2020-05-20 15:48:43
  */
 public class AlipayEbppIndustryKmsPubkeyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1265646496135155747L;
+	private static final long serialVersionUID = 1499588897512386635L;
 
 	/**
 	 * 业务类型

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑订单预下单
  *
  * @author auto create
- * @since 1.0, 2018-11-30 17:11:08
+ * @since 1.0, 2020-06-04 14:54:15
  */
 public class KoubeiTradeOrderPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5851292564277574548L;
+	private static final long serialVersionUID = 8816831159264963485L;
 
 	/**
 	 * 业务类型，当前支持：POST_ORDER_PAY 点餐后付订单支付码生成

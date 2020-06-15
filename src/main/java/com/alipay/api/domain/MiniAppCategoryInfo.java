@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序类目模型
  *
  * @author auto create
- * @since 1.0, 2018-12-25 18:05:38
+ * @since 1.0, 2020-05-28 12:33:57
  */
 public class MiniAppCategoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6153522494952226368L;
+	private static final long serialVersionUID = 5739294126722535344L;
 
 	/**
 	 * 一级类目id
@@ -36,6 +36,18 @@ public class MiniAppCategoryInfo extends AlipayObject {
 	 */
 	@ApiField("second_category_name")
 	private String secondCategoryName;
+
+	/**
+	 * 三级类目id，可空
+	 */
+	@ApiField("third_category_id")
+	private String thirdCategoryId;
+
+	/**
+	 * 三级类目名称，可空
+	 */
+	@ApiField("third_category_name")
+	private String thirdCategoryName;
 
 	public String getFirstCategoryId() {
 		return this.firstCategoryId;
@@ -63,6 +75,20 @@ public class MiniAppCategoryInfo extends AlipayObject {
 	}
 	public void setSecondCategoryName(String secondCategoryName) {
 		this.secondCategoryName = secondCategoryName;
+	}
+
+	public String getThirdCategoryId() {
+		return this.thirdCategoryId;
+	}
+	public void setThirdCategoryId(String thirdCategoryId) {
+		this.thirdCategoryId = thirdCategoryId;
+	}
+
+	public String getThirdCategoryName() {
+		return this.thirdCategoryName;
+	}
+	public void setThirdCategoryName(String thirdCategoryName) {
+		this.thirdCategoryName = thirdCategoryName;
 	}
 
 }

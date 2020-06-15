@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改S码入参
  *
  * @author auto create
- * @since 1.0, 2019-11-13 15:15:41
+ * @since 1.0, 2020-06-15 10:51:47
  */
 public class UpdateCodeRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4591357133662467884L;
+	private static final long serialVersionUID = 7747354523369739692L;
 
 	/**
 	 * 执行动作，如：绑定-BIND，解绑-UNBIND

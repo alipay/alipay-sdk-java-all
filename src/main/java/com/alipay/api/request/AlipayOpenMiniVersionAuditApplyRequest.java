@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2020-05-11 20:45:02
+ * @since 1.0, 2020-06-08 16:25:11
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -121,6 +121,11 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	* 小程序备注;小程序备注最多500字符
 	 */
 	private String memo;
+
+	/** 
+	* 新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询mini_category_list，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。使用后不再读取app_category_ids值，老前台类目将废弃
+	 */
+	private String miniCategoryIds;
 
 	/** 
 	* 门头照图片，部分小程序类目需要提交，参照https://opendocs.alipay.com/mini/operation/material中是否需要营业执照信息，如果不填默认采用当前小程序门头照图片;门头照支持扩展名为jpg, png;门头照最大4MB，宽度2160，高度3840
@@ -333,6 +338,13 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 		return this.memo;
 	}
 
+	public void setMiniCategoryIds(String miniCategoryIds) {
+		this.miniCategoryIds = miniCategoryIds;
+	}
+	public String getMiniCategoryIds() {
+		return this.miniCategoryIds;
+	}
+
 	public void setOutDoorPic(FileItem outDoorPic) {
 		this.outDoorPic = outDoorPic;
 	}
@@ -509,6 +521,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 		txtParams.put("license_no", this.licenseNo);
 		txtParams.put("license_valid_date", this.licenseValidDate);
 		txtParams.put("memo", this.memo);
+		txtParams.put("mini_category_ids", this.miniCategoryIds);
 		txtParams.put("region_type", this.regionType);
 		txtParams.put("service_email", this.serviceEmail);
 		txtParams.put("service_phone", this.servicePhone);

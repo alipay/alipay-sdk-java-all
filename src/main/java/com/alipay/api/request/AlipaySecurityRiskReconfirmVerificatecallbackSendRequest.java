@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.reconfirm.verificatecallback.send request
  * 
  * @author auto create
- * @since 1.0, 2019-01-16 17:20:04
+ * @since 1.0, 2020-06-04 17:23:25
  */
 public class AlipaySecurityRiskReconfirmVerificatecallbackSendRequest implements AlipayRequest<AlipaySecurityRiskReconfirmVerificatecallbackSendResponse> {
 

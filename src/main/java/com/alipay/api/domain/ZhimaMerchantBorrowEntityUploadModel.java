@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用借还借用实体数据上传接口
  *
  * @author auto create
- * @since 1.0, 2020-05-06 12:50:16
+ * @since 1.0, 2020-06-02 10:29:09
  */
 public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2274995786223248168L;
+	private static final long serialVersionUID = 6892499784756788171L;
 
 	/**
 	 * 地址描述

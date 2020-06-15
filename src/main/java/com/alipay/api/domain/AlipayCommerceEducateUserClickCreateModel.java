@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 岗位点击用户信息行为
  *
  * @author auto create
- * @since 1.0, 2019-11-01 11:08:46
+ * @since 1.0, 2020-05-26 20:27:11
  */
 public class AlipayCommerceEducateUserClickCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5191792461392367751L;
+	private static final long serialVersionUID = 8197941634746583672L;
 
 	/**
 	 * 市

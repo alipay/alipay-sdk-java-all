@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑对接饿了么企业订单查询接口
  *
  * @author auto create
- * @since 1.0, 2019-03-26 19:45:17
+ * @since 1.0, 2020-06-04 15:06:30
  */
 public class KoubeiTradeOrderEnterpriseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4618227848849153712L;
+	private static final long serialVersionUID = 1122949524617895774L;
 
 	/**
 	 * 口碑订单号，和外部订单号不能同时为空

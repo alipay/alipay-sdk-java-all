@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.cloudbus.scheduletriptime.get response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-02 17:16:53
+ * @since 1.0, 2020-05-27 17:22:33
  */
 public class AlipayDataAiserviceCloudbusScheduletriptimeGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5358381599833914596L;
+	private static final long serialVersionUID = 8231574527662764818L;
 
 	/** 
 	 * 结果

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenPromoPrizeDimension extends AlipayObject {
 
-	private static final long serialVersionUID = 6644137484738367782L;
+	private static final long serialVersionUID = 5378573482179341854L;
 
 	/**
 	 * 时间维度,

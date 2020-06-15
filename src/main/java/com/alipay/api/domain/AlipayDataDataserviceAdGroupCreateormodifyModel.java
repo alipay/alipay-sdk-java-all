@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建/修改单元
  *
  * @author auto create
- * @since 1.0, 2020-02-28 21:15:42
+ * @since 1.0, 2020-06-05 21:09:03
  */
 public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1575561247993117463L;
+	private static final long serialVersionUID = 5258356524578364494L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -79,6 +79,12 @@ CPA_TMALL_MEMBER_JOIN：淘系店铺入会
 	 */
 	@ApiField("plan_outer_id")
 	private String planOuterId;
+
+	/**
+	 * 定向扩展信息
+	 */
+	@ApiField("targeting_extend_info")
+	private String targetingExtendInfo;
 
 	/**
 	 * 单元定向列表。目前支持的定向类型有：
@@ -171,6 +177,13 @@ OUTER_KOUBEI_CROWD_TAG_LIST：口碑人群
 	}
 	public void setPlanOuterId(String planOuterId) {
 		this.planOuterId = planOuterId;
+	}
+
+	public String getTargetingExtendInfo() {
+		return this.targetingExtendInfo;
+	}
+	public void setTargetingExtendInfo(String targetingExtendInfo) {
+		this.targetingExtendInfo = targetingExtendInfo;
 	}
 
 	public List<OuterTargetingItem> getTargetingList() {

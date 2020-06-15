@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.benefit.send response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-05 18:15:01
+ * @since 1.0, 2020-06-01 13:12:46
  */
 public class KoubeiMarketingCampaignBenefitSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2363448216159933765L;
+	private static final long serialVersionUID = 2264681662928251915L;
 
 	/** 
 	 * 领取的权益列表

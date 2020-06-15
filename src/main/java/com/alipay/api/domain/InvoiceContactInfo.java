@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票入驻工单联系人信息
  *
  * @author auto create
- * @since 1.0, 2020-01-16 17:52:38
+ * @since 1.0, 2020-05-21 14:50:35
  */
 public class InvoiceContactInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1419551359937583598L;
+	private static final long serialVersionUID = 8544583229231662779L;
 
 	/**
 	 * 联系人地址

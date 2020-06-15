@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.ftoken.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-14 18:47:28
+ * @since 1.0, 2020-05-25 16:50:10
  */
 public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2266194689962557374L;
+	private static final long serialVersionUID = 5342147759722436345L;
+
+	/** 
+	 * 年龄是否在指定范围内，未指定范围则返回空，true/false
+	 */
+	@ApiField("age_check_result")
+	private String ageCheckResult;
 
 	/** 
 	 * 图片base64 encodeString
@@ -41,6 +47,13 @@ public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayRespon
 	@ApiListField("uid_tel_pair_list")
 	@ApiField("zhub_uid_tel_pair")
 	private List<ZhubUidTelPair> uidTelPairList;
+
+	public void setAgeCheckResult(String ageCheckResult) {
+		this.ageCheckResult = ageCheckResult;
+	}
+	public String getAgeCheckResult( ) {
+		return this.ageCheckResult;
+	}
 
 	public void setAuthimgBase64(String authimgBase64) {
 		this.authimgBase64 = authimgBase64;

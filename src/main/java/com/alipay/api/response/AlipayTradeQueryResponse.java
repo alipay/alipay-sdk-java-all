@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-17 15:43:22
+ * @since 1.0, 2020-05-25 09:51:20
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6881934748734975686L;
+	private static final long serialVersionUID = 1497671961291635156L;
 
 	/** 
 	 * 支付宝店铺编号

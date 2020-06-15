@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV兼职岗位信息同步
  *
  * @author auto create
- * @since 1.0, 2019-11-01 11:09:03
+ * @since 1.0, 2020-05-26 20:26:54
  */
 public class AlipayCommerceEducateParttimejobInfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1612158711399731989L;
+	private static final long serialVersionUID = 3276613419192652816L;
 
 	/**
 	 * 市

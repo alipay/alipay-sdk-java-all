@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签署平台的商户配置信息
  *
  * @author auto create
- * @since 1.0, 2020-03-30 14:15:36
+ * @since 1.0, 2020-06-04 13:58:07
  */
 public class MerchantConfigRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 5664167494799962319L;
+	private static final long serialVersionUID = 8218238744151247443L;
 
 	/**
 	 * 详情页banner跳转目标小程序appid

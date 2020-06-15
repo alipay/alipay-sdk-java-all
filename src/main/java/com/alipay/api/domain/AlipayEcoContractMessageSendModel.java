@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签署平台消息推送
  *
  * @author auto create
- * @since 1.0, 2020-05-12 16:03:13
+ * @since 1.0, 2020-05-25 16:11:21
  */
 public class AlipayEcoContractMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4777825726383683985L;
+	private static final long serialVersionUID = 6586226552124725349L;
 
 	/**
 	 * 调用批次号

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingPassShopBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8737133527249264562L;
+	private static final long serialVersionUID = 2158379735239631318L;
 
 	/**
 	 * 当前操作是否为追加门店绑定，默认为true，代表为追加门店绑定，现有的门店列表不变，追加绑定本次传入的门店列表；

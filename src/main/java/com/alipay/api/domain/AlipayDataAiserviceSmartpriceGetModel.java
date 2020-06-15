@@ -10,17 +10,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * hellobike月卡智能定价
  *
  * @author auto create
- * @since 1.0, 2020-04-14 17:33:54
+ * @since 1.0, 2020-06-03 20:38:55
  */
 public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6263886928389685537L;
+	private static final long serialVersionUID = 1225526827925619599L;
+
+	/**
+	 * 渠道来源，跳转到渠道(流量位)的上一级页面
+	 */
+	@ApiField("ad_source")
+	private String adSource;
 
 	/**
 	 * 兼容V1.0。月卡售卖原价，单位为分，该参数取值为hellobike调用方自身的业务参数。
 	 */
 	@ApiField("base_price_cent")
 	private Long basePriceCent;
+
+	/**
+	 * 卡型代码版本,0为旧版卡型代码(默认),1为新版卡型代码
+	 */
+	@ApiField("card_type_version")
+	private Long cardTypeVersion;
 
 	/**
 	 * 用户购买hellobike月卡的渠道，目前有两种：alipay_tinyapp:小程序, hellobike_app:hellobike客户端，该参数取值为hellobike调用方自身的业务参数。
@@ -55,7 +67,7 @@ public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 	private Long defaultPromoPriceCent;
 
 	/**
-	 * 活动页面来源，即用户跳转到活动页面的前一个页面。CARD:月卡购买页面跳转，OTHER：其他场景页面跳转，该参数取值为hellobike调用方自身的业务参数。
+	 * 渠道(流量位)，如购卡页和待支付页。该参数取值为hellobike调用方自身的业务参数。
 	 */
 	@ApiField("from")
 	private String from;
@@ -73,6 +85,12 @@ public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 	private Long lowerPriceCent;
 
 	/**
+	 * 业务端口，安卓、iOS、支付宝小程序、微信、H5、高德
+	 */
+	@ApiField("plat_form")
+	private String platForm;
+
+	/**
 	 * 这个请求是否经过排序的标记位,默认为false
 	 */
 	@ApiField("rank")
@@ -83,6 +101,12 @@ public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
+
+	/**
+	 * 系统平台代码,有支付宝小程序,ios,安卓等
+	 */
+	@ApiField("system_code")
+	private String systemCode;
 
 	/**
 	 * 用户参与一次月卡打折活动的业务标识，需要唯一。通过该业务标识串联用户在一次月卡打折活动中的涉及的关键业务流程（调用alipay.data.aiservice.smartprice.get接口获取用户购买月卡的活动价格、领取折扣券、购买月卡3个业务流程），该参数由hellobike业务端生成该id并在上述3个业务流程推进过程中存储记录该id。
@@ -96,11 +120,25 @@ public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	public String getAdSource() {
+		return this.adSource;
+	}
+	public void setAdSource(String adSource) {
+		this.adSource = adSource;
+	}
+
 	public Long getBasePriceCent() {
 		return this.basePriceCent;
 	}
 	public void setBasePriceCent(Long basePriceCent) {
 		this.basePriceCent = basePriceCent;
+	}
+
+	public Long getCardTypeVersion() {
+		return this.cardTypeVersion;
+	}
+	public void setCardTypeVersion(Long cardTypeVersion) {
+		this.cardTypeVersion = cardTypeVersion;
 	}
 
 	public String getChannel() {
@@ -159,6 +197,13 @@ public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 		this.lowerPriceCent = lowerPriceCent;
 	}
 
+	public String getPlatForm() {
+		return this.platForm;
+	}
+	public void setPlatForm(String platForm) {
+		this.platForm = platForm;
+	}
+
 	public String getRank() {
 		return this.rank;
 	}
@@ -171,6 +216,13 @@ public class AlipayDataAiserviceSmartpriceGetModel extends AlipayObject {
 	}
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
+	}
+
+	public String getSystemCode() {
+		return this.systemCode;
+	}
+	public void setSystemCode(String systemCode) {
+		this.systemCode = systemCode;
 	}
 
 	public String getTraceId() {

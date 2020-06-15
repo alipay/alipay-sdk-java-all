@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报价申请接口
  *
  * @author auto create
- * @since 1.0, 2019-12-23 20:17:02
+ * @since 1.0, 2020-06-10 19:49:26
  */
 public class AlipayInsAutoAutoinsprodQuoteApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4397672131866578429L;
+	private static final long serialVersionUID = 5181715973692868318L;
 
 	/**
 	 * 商业险产品信息

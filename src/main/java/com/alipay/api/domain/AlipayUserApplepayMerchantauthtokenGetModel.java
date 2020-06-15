@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ApplePay商户授权token获取
  *
  * @author auto create
- * @since 1.0, 2020-04-23 11:50:09
+ * @since 1.0, 2020-05-26 15:16:31
  */
 public class AlipayUserApplepayMerchantauthtokenGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8191565416488558932L;
+	private static final long serialVersionUID = 4439855411329438472L;
 
 	/**
 	 * 金额

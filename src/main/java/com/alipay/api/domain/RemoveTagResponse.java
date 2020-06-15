@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 去标接口返回值
  *
  * @author auto create
- * @since 1.0, 2019-11-14 17:28:30
+ * @since 1.0, 2020-06-15 10:51:40
  */
 public class RemoveTagResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1885583855714628185L;
+	private static final long serialVersionUID = 6583344687617779654L;
 
 	/**
 	 * 批量去标接口结果列表

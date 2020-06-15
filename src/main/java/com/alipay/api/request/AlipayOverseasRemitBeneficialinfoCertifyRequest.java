@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.remit.beneficialinfo.certify request
  * 
  * @author auto create
- * @since 1.0, 2020-03-23 20:46:44
+ * @since 1.0, 2020-05-27 20:10:11
  */
 public class AlipayOverseasRemitBeneficialinfoCertifyRequest implements AlipayRequest<AlipayOverseasRemitBeneficialinfoCertifyResponse> {
 

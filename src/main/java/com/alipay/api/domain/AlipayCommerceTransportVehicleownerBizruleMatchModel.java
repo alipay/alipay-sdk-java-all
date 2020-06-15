@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主场景实体业务规则匹配服务
  *
  * @author auto create
- * @since 1.0, 2019-05-20 10:06:34
+ * @since 1.0, 2020-06-03 22:48:27
  */
 public class AlipayCommerceTransportVehicleownerBizruleMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3868677417686472284L;
+	private static final long serialVersionUID = 6349957888654858167L;
 
 	/**
 	 * 请求规则匹配的业务实体

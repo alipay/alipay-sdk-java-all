@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分页信息
  *
  * @author auto create
- * @since 1.0, 2020-03-06 10:17:14
+ * @since 1.0, 2020-06-15 11:50:36
  */
 public class PaginationDish extends AlipayObject {
 
-	private static final long serialVersionUID = 3225274812836571294L;
+	private static final long serialVersionUID = 2514884831379117887L;
 
 	/**
 	 * 出参列表

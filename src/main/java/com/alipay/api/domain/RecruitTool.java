@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecruitTool extends AlipayObject {
 
-	private static final long serialVersionUID = 1463666599745554391L;
+	private static final long serialVersionUID = 8375448441573541747L;
 
 	/**
 	 * 招商结束时间

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消订单或者退货所需复杂类型。
  *
  * @author auto create
- * @since 1.0, 2019-12-23 15:04:01
+ * @since 1.0, 2020-06-11 20:03:27
  */
 public class AssetReverseItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5123766147437891123L;
+	private static final long serialVersionUID = 8163226713199412545L;
 
 	/**
 	 * 行为类型
@@ -80,6 +80,18 @@ public class AssetReverseItem extends AlipayObject {
 	private String originalApplyOrderItemId;
 
 	/**
+	 * 原配送单id
+	 */
+	@ApiField("original_deliver_order_id")
+	private String originalDeliverOrderId;
+
+	/**
+	 * 原配送明细id
+	 */
+	@ApiField("original_deliver_order_item_id")
+	private String originalDeliverOrderItemId;
+
+	/**
 	 * 原配送单物料号
 	 */
 	@ApiField("original_delivery_assign_item_id")
@@ -102,6 +114,18 @@ public class AssetReverseItem extends AlipayObject {
 	 */
 	@ApiField("ou_name")
 	private String ouName;
+
+	/**
+	 * 逆向申请单ID
+	 */
+	@ApiField("reverse_apply_order_id")
+	private String reverseApplyOrderId;
+
+	/**
+	 * 逆向申请单明细ID
+	 */
+	@ApiField("reverse_apply_order_item_id")
+	private String reverseApplyOrderItemId;
 
 	/**
 	 * 逆向类型
@@ -192,6 +216,20 @@ public class AssetReverseItem extends AlipayObject {
 		this.originalApplyOrderItemId = originalApplyOrderItemId;
 	}
 
+	public String getOriginalDeliverOrderId() {
+		return this.originalDeliverOrderId;
+	}
+	public void setOriginalDeliverOrderId(String originalDeliverOrderId) {
+		this.originalDeliverOrderId = originalDeliverOrderId;
+	}
+
+	public String getOriginalDeliverOrderItemId() {
+		return this.originalDeliverOrderItemId;
+	}
+	public void setOriginalDeliverOrderItemId(String originalDeliverOrderItemId) {
+		this.originalDeliverOrderItemId = originalDeliverOrderItemId;
+	}
+
 	public String getOriginalDeliveryAssignItemId() {
 		return this.originalDeliveryAssignItemId;
 	}
@@ -218,6 +256,20 @@ public class AssetReverseItem extends AlipayObject {
 	}
 	public void setOuName(String ouName) {
 		this.ouName = ouName;
+	}
+
+	public String getReverseApplyOrderId() {
+		return this.reverseApplyOrderId;
+	}
+	public void setReverseApplyOrderId(String reverseApplyOrderId) {
+		this.reverseApplyOrderId = reverseApplyOrderId;
+	}
+
+	public String getReverseApplyOrderItemId() {
+		return this.reverseApplyOrderItemId;
+	}
+	public void setReverseApplyOrderItemId(String reverseApplyOrderItemId) {
+		this.reverseApplyOrderItemId = reverseApplyOrderItemId;
 	}
 
 	public String getReverseType() {

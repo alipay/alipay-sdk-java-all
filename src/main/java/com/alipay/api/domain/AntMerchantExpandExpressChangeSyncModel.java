@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流状态信息反馈接口
  *
  * @author auto create
- * @since 1.0, 2019-06-03 19:46:51
+ * @since 1.0, 2020-06-11 22:59:52
  */
 public class AntMerchantExpandExpressChangeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7651186471495595426L;
+	private static final long serialVersionUID = 3518353754994146331L;
 
 	/**
 	 * 传入需要上传的附件内容及相关业务参数

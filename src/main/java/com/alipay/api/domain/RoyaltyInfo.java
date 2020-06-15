@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分账信息
  *
  * @author auto create
- * @since 1.0, 2017-06-14 16:34:34
+ * @since 1.0, 2020-06-03 15:15:56
  */
 public class RoyaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1464324554562637258L;
+	private static final long serialVersionUID = 2459533757678873376L;
 
 	/**
 	 * 分账明细的信息，可以描述多条分账指令，json数组。

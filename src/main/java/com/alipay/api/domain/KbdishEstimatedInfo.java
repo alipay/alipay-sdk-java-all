@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品估清模型
  *
  * @author auto create
- * @since 1.0, 2020-03-06 10:16:03
+ * @since 1.0, 2020-06-15 11:50:42
  */
 public class KbdishEstimatedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5581784887898599722L;
+	private static final long serialVersionUID = 3169118357711863735L;
 
 	/**
 	 * 估清的菜品dishid，加料materialId，或者外部菜品id，该值对应的类型由dsType指定。

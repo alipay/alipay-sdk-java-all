@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易订单查询接口
  *
  * @author auto create
- * @since 1.0, 2019-08-29 11:18:06
+ * @since 1.0, 2020-05-27 21:21:59
  */
 public class AlipayEcoMycarTradeOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7739291181446926296L;
+	private static final long serialVersionUID = 1616973616639442237L;
 
 	/**
 	 * 车主平台交易号，与车主业务平台订单号相同。和trade_no，out_biz_trade_no不能同时为空。

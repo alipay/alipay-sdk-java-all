@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票限额信息
  *
  * @author auto create
- * @since 1.0, 2020-01-16 17:52:20
+ * @since 1.0, 2020-05-21 14:50:35
  */
 public class InvoiceAmountLimitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6369342663877915281L;
+	private static final long serialVersionUID = 4895594731254788411L;
 
 	/**
 	 * 单张发票限额，单位元

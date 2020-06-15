@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融银行直投提前还款
  *
  * @author auto create
- * @since 1.0, 2019-03-27 10:04:04
+ * @since 1.0, 2020-05-28 10:03:55
  */
 public class MybankCreditSceneprodPrepaymentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6388287363547554966L;
+	private static final long serialVersionUID = 2154382952255899676L;
 
 	/**
 	 * 网商申请单号(必须S结尾)

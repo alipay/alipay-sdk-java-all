@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汇款信息的验证
  *
  * @author auto create
- * @since 1.0, 2020-03-23 20:46:44
+ * @since 1.0, 2020-05-27 20:09:34
  */
 public class AlipayOverseasRemitBeneficialinfoCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6644436555116377819L;
+	private static final long serialVersionUID = 5588953724435414387L;
 
 	/**
 	 * 中文名

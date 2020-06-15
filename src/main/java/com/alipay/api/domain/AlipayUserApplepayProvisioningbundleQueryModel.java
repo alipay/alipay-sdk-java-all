@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * wagu获取卡片信息接口
  *
  * @author auto create
- * @since 1.0, 2020-04-03 12:08:46
+ * @since 1.0, 2020-05-29 10:24:47
  */
 public class AlipayUserApplepayProvisioningbundleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6872746337794145366L;
+	private static final long serialVersionUID = 8816147631772729734L;
 
 	/**
 	 * 加密证书链

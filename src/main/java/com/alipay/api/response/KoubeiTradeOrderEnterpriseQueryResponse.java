@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.order.enterprise.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-26 19:55:00
+ * @since 1.0, 2020-06-04 15:06:30
  */
 public class KoubeiTradeOrderEnterpriseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5745463485128642663L;
+	private static final long serialVersionUID = 7881729737638585498L;
 
 	/** 
 	 * 订单下单主体id，一般是支付宝账号，也可能是虚拟账号

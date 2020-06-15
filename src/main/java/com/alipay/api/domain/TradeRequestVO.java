@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TradeRequestVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3798137873244742482L;
+	private static final long serialVersionUID = 1142737895592425273L;
 
 	/**
 	 * globalnet收单机构

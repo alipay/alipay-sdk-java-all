@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.titlelibrary.list.query request
  * 
  * @author auto create
- * @since 1.0, 2019-12-02 20:33:15
+ * @since 1.0, 2020-05-20 15:47:37
  */
 public class AlipayEbppInvoiceTitlelibraryListQueryRequest implements AlipayRequest<AlipayEbppInvoiceTitlelibraryListQueryResponse> {
 

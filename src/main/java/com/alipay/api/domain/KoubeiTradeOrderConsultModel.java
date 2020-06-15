@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑订单预咨询
  *
  * @author auto create
- * @since 1.0, 2017-11-01 11:23:03
+ * @since 1.0, 2020-06-04 14:53:12
  */
 public class KoubeiTradeOrderConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1384536558133364392L;
+	private static final long serialVersionUID = 3338973397212884792L;
 
 	/**
 	 * 用户设备信息,通过钱包容器提供的JSAPI接口获取，

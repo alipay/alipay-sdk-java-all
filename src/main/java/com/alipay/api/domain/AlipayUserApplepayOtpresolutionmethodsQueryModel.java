@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ApplePay easy开卡OTP校验方法查询
  *
  * @author auto create
- * @since 1.0, 2020-03-31 13:49:02
+ * @since 1.0, 2020-05-29 10:25:32
  */
 public class AlipayUserApplepayOtpresolutionmethodsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2118689962416113129L;
+	private static final long serialVersionUID = 1172779125718236494L;
 
 	/**
 	 * 卡id(由固定前缀+32位数字构成)

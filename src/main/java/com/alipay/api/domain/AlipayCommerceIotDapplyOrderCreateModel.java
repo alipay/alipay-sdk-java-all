@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁iot进件申请单创建接口
  *
  * @author auto create
- * @since 1.0, 2019-08-21 19:50:09
+ * @since 1.0, 2020-05-29 10:23:01
  */
 public class AlipayCommerceIotDapplyOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4889136385235586667L;
+	private static final long serialVersionUID = 4359333938968543745L;
 
 	/**
 	 * 申请人联系电话

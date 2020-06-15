@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计收费主体信息配置
  *
  * @author auto create
- * @since 1.0, 2020-04-21 14:23:27
+ * @since 1.0, 2020-06-04 20:30:50
  */
 public class BFActivityFundInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1168289987186629716L;
+	private static final long serialVersionUID = 7459936127242468634L;
 
 	/**
 	 * 计收费主体是否激活
@@ -54,6 +54,12 @@ public class BFActivityFundInfo extends AlipayObject {
 	 */
 	@ApiField("ratio")
 	private String ratio;
+
+	/**
+	 * 商家可见费率
+	 */
+	@ApiField("seller_rate")
+	private String sellerRate;
 
 	/**
 	 * rate:折扣,fixed:定额扣减
@@ -126,6 +132,13 @@ public class BFActivityFundInfo extends AlipayObject {
 	}
 	public void setRatio(String ratio) {
 		this.ratio = ratio;
+	}
+
+	public String getSellerRate() {
+		return this.sellerRate;
+	}
+	public void setSellerRate(String sellerRate) {
+		this.sellerRate = sellerRate;
 	}
 
 	public String getSubsidyMode() {

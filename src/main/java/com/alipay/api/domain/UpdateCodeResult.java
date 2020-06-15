@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新S码返回结果
  *
  * @author auto create
- * @since 1.0, 2019-11-13 15:15:41
+ * @since 1.0, 2020-06-15 10:51:37
  */
 public class UpdateCodeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2778424777344812726L;
+	private static final long serialVersionUID = 2251136567899459676L;
 
 	/**
 	 * biz_id，唯一，业务id，用于业务请求的幂等标志

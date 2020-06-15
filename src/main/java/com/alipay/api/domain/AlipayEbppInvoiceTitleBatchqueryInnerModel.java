@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取指定用户所有的有效抬头列表（集团内部接口）
  *
  * @author auto create
- * @since 1.0, 2019-06-21 17:02:41
+ * @since 1.0, 2020-05-20 15:49:48
  */
 public class AlipayEbppInvoiceTitleBatchqueryInnerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2789326777118226765L;
+	private static final long serialVersionUID = 2575379439634317945L;
 
 	/**
 	 * 抬头所属支付宝用户id

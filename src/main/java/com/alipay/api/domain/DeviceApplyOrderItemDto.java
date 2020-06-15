@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单创建子单对象
  *
  * @author auto create
- * @since 1.0, 2020-05-14 10:24:05
+ * @since 1.0, 2020-05-28 20:57:25
  */
 public class DeviceApplyOrderItemDto extends AlipayObject {
 
-	private static final long serialVersionUID = 1344113796847339475L;
+	private static final long serialVersionUID = 7185413914428836863L;
 
 	/**
 	 * 申请数量，和sn数量保持一致
 	 */
 	@ApiField("apply_amount")
 	private Long applyAmount;
+
+	/**
+	 * 订单计费模式
+BILL（计费），NON_BILL（非计费）
+	 */
+	@ApiField("billed")
+	private String billed;
 
 	/**
 	 * itemId
@@ -39,6 +46,12 @@ public class DeviceApplyOrderItemDto extends AlipayObject {
 	 */
 	@ApiField("model_number")
 	private String modelNumber;
+
+	/**
+	 * 销售单价 保留两位小数
+	 */
+	@ApiField("selling_price")
+	private String sellingPrice;
 
 	/**
 	 * sn列表
@@ -60,6 +73,13 @@ public class DeviceApplyOrderItemDto extends AlipayObject {
 		this.applyAmount = applyAmount;
 	}
 
+	public String getBilled() {
+		return this.billed;
+	}
+	public void setBilled(String billed) {
+		this.billed = billed;
+	}
+
 	public String getItemId() {
 		return this.itemId;
 	}
@@ -79,6 +99,13 @@ public class DeviceApplyOrderItemDto extends AlipayObject {
 	}
 	public void setModelNumber(String modelNumber) {
 		this.modelNumber = modelNumber;
+	}
+
+	public String getSellingPrice() {
+		return this.sellingPrice;
+	}
+	public void setSellingPrice(String sellingPrice) {
+		this.sellingPrice = sellingPrice;
 	}
 
 	public List<String> getSnList() {

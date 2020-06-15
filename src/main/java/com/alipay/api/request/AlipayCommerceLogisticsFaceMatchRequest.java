@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.face.match request
  * 
  * @author auto create
- * @since 1.0, 2019-02-14 16:29:41
+ * @since 1.0, 2020-05-29 10:12:44
  */
 public class AlipayCommerceLogisticsFaceMatchRequest implements AlipayRequest<AlipayCommerceLogisticsFaceMatchResponse> {
 

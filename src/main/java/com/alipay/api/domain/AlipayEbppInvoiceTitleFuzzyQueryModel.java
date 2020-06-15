@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 抬头模糊查询
  *
  * @author auto create
- * @since 1.0, 2019-07-04 11:28:48
+ * @since 1.0, 2020-05-20 15:49:18
  */
 public class AlipayEbppInvoiceTitleFuzzyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6241822621583854326L;
+	private static final long serialVersionUID = 1659726743351938927L;
 
 	/**
 	 * 企业名称

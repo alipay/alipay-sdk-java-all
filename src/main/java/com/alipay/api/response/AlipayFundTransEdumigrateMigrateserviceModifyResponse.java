@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.edumigrate.migrateservice.modify response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-12 19:09:04
+ * @since 1.0, 2020-06-05 20:04:13
  */
 public class AlipayFundTransEdumigrateMigrateserviceModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4325768564937164187L;
+	private static final long serialVersionUID = 7282239986524779189L;
 
 	/** 
 	 * data字段为迁移服务数据返回 JSON结构

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发货计划反馈信息
  *
  * @author auto create
- * @since 1.0, 2019-06-03 19:46:51
+ * @since 1.0, 2020-06-11 20:03:57
  */
 public class AssetLogisticsRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 6883433783927836617L;
+	private static final long serialVersionUID = 4652246489923927589L;
 
 	/**
 	 * 物流节点详情描述

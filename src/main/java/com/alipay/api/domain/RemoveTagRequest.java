@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 去标请求字段
  *
  * @author auto create
- * @since 1.0, 2019-11-08 18:02:13
+ * @since 1.0, 2020-06-15 10:51:52
  */
 public class RemoveTagRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6164943135756868567L;
+	private static final long serialVersionUID = 7688845414336389841L;
 
 	/**
 	 * biz_id，唯一，业务id，用于业务请求的幂等标志

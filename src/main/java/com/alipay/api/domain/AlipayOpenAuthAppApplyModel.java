@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应用授权协议授权取消接口
  *
  * @author auto create
- * @since 1.0, 2018-12-18 16:39:16
+ * @since 1.0, 2020-05-26 17:41:34
  */
 public class AlipayOpenAuthAppApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1433133594493372949L;
+	private static final long serialVersionUID = 4311223512775984135L;
 
 	/**
 	 * 授权方应用在蚂蚁开放平台的应用ID

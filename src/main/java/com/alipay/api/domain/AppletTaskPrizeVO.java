@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppletTaskPrizeVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7151365331485316212L;
+	private static final long serialVersionUID = 3461779439125356464L;
 
 	/**
 	 * 奖品余额。

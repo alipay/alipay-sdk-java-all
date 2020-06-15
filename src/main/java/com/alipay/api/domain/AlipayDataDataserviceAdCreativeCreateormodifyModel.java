@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增或修改创意
  *
  * @author auto create
- * @since 1.0, 2020-05-14 19:54:06
+ * @since 1.0, 2020-06-05 21:09:12
  */
 public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4237147194389481737L;
+	private static final long serialVersionUID = 1471759521791758953L;
 
 	/**
 	 * 创意交互行为属性实例值
@@ -34,6 +34,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	 */
 	@ApiField("action_url")
 	private String actionUrl;
+
+	/**
+	 * 创意补充资质
+	 */
+	@ApiListField("attachment_list")
+	@ApiField("outer_attachment")
+	private List<OuterAttachment> attachmentList;
 
 	/**
 	 * 创意分组标识，多个创意可按业务逻辑标识为一个分组
@@ -153,6 +160,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	}
 	public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
+	}
+
+	public List<OuterAttachment> getAttachmentList() {
+		return this.attachmentList;
+	}
+	public void setAttachmentList(List<OuterAttachment> attachmentList) {
+		this.attachmentList = attachmentList;
 	}
 
 	public String getBatchTag() {

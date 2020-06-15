@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.financial.blockchain.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2019-08-29 16:50:09
+ * @since 1.0, 2020-05-20 15:49:03
  */
 public class AlipayEbppInvoiceFinancialBlockchainBatchqueryRequest implements AlipayRequest<AlipayEbppInvoiceFinancialBlockchainBatchqueryResponse> {
 

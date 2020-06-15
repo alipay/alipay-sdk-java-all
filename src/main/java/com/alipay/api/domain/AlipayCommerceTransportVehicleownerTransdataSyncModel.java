@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车服数据迁移
  *
  * @author auto create
- * @since 1.0, 2020-02-26 10:20:07
+ * @since 1.0, 2020-05-27 19:58:12
  */
 public class AlipayCommerceTransportVehicleownerTransdataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6188545788153426474L;
+	private static final long serialVersionUID = 3556873918294776281L;
 
 	/**
 	 * 同步操作类型

@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 方案任务。
  *
  * @author auto create
- * @since 1.0, 2020-05-06 17:53:33
+ * @since 1.0, 2020-05-19 16:13:11
  */
 public class AppletTaskVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2186371651319767879L;
+	private static final long serialVersionUID = 2513866425232726685L;
 
 	/**
 	 * 是否可以报名
 	 */
 	@ApiField("can_access")
 	private Boolean canAccess;
+
+	/**
+	 * 任务显示信息。
+	 */
+	@ApiField("display")
+	private AppletTaskDisplayVO display;
 
 	/**
 	 * 是否需要报名
@@ -83,6 +89,13 @@ public class AppletTaskVO extends AlipayObject {
 	}
 	public void setCanAccess(Boolean canAccess) {
 		this.canAccess = canAccess;
+	}
+
+	public AppletTaskDisplayVO getDisplay() {
+		return this.display;
+	}
+	public void setDisplay(AppletTaskDisplayVO display) {
+		this.display = display;
 	}
 
 	public String getNeedSignUp() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序版本提交审核
  *
  * @author auto create
- * @since 1.0, 2020-05-08 16:05:01
+ * @since 1.0, 2020-06-08 10:49:50
  */
 public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7315412676966522727L;
+	private static final long serialVersionUID = 7342296755596188668L;
 
 	/**
 	 * 小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考https://docs.alipay.com/isv/10325，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。
@@ -29,7 +29,7 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	private String appDesc;
 
 	/**
-	 * 小程序应用英文名称，如果不填默认采用当前小程序应用英文名称，3～30个字符
+	 * 小程序应用英文名称，如果不填默认采用当前小程序应用英文名称，3～30个字符。插件不填
 	 */
 	@ApiField("app_english_name")
 	private String appEnglishName;
@@ -71,7 +71,7 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	private String bundleId;
 
 	/**
-	 * 提交审核营业执照信息，部分小程序类目需要营业执照信息，需要营业执照的类目请参照https://docs.alipay.com/isv/10325
+	 * 提交审核营业执照信息，部分小程序类目需要营业执照信息，需要营业执照的类目请参照https://docs.alipay.com/isv/10325。模板和插件不需要资质
 	 */
 	@ApiField("license_info")
 	private AuditLicenseInfo licenseInfo;
@@ -87,6 +87,12 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * 新小程序前台类目，一级与二级、三级用下划线隔开，最多可以选四个类目，类目之间;隔开。使用后不再读取app_category_ids值，老前台类目将废弃
+	 */
+	@ApiField("mini_category_ids")
+	private String miniCategoryIds;
 
 	/**
 	 * 门头照图片地址，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要营业执照信息，如果不填默认采用当前小程序门头照图片
@@ -114,13 +120,13 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	private String serviceEmail;
 
 	/**
-	 * 小程序客服电话，如果不填默认采用当前小程序的应用客服电话，和客服邮箱至少填写一个
+	 * 小程序客服电话，如果不填默认采用当前小程序的应用客服电话，和客服邮箱至少填写一个。插件不填
 	 */
 	@ApiField("service_phone")
 	private String servicePhone;
 
 	/**
-	 * 特殊资质图片地址列表，逗号分隔；部分类目需要特殊资质，如果需要特殊资质，最少一张，最多三张。
+	 * 特殊资质图片地址列表，逗号分隔；部分类目需要特殊资质，如果需要特殊资质，最少一张，最多三张。模板和插件不需要特殊资质
 	 */
 	@ApiField("special_license_pic_list")
 	private String specialLicensePicList;
@@ -213,6 +219,13 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public String getMiniCategoryIds() {
+		return this.miniCategoryIds;
+	}
+	public void setMiniCategoryIds(String miniCategoryIds) {
+		this.miniCategoryIds = miniCategoryIds;
 	}
 
 	public String getOutDoorPic() {

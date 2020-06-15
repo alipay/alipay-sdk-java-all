@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ad.principal.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-01 10:52:11
+ * @since 1.0, 2020-06-05 21:20:11
  */
 public class AlipayDataDataserviceAdPrincipalQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1535515865669614175L;
+	private static final long serialVersionUID = 3274958415699737571L;
 
 	/** 
 	 * 商家支付宝PID
@@ -35,6 +35,12 @@ public class AlipayDataDataserviceAdPrincipalQueryResponse extends AlipayRespons
 	 */
 	@ApiField("principal_id")
 	private Long principalId;
+
+	/** 
+	 * 商户审核拒绝理由
+	 */
+	@ApiField("refuse_reason")
+	private String refuseReason;
 
 	/** 
 	 * 状态：
@@ -73,6 +79,13 @@ RE_SIGN-待重签
 	}
 	public Long getPrincipalId( ) {
 		return this.principalId;
+	}
+
+	public void setRefuseReason(String refuseReason) {
+		this.refuseReason = refuseReason;
+	}
+	public String getRefuseReason( ) {
+		return this.refuseReason;
 	}
 
 	public void setStatus(String status) {

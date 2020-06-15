@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.remit.fund.initialize request
  * 
  * @author auto create
- * @since 1.0, 2020-04-20 16:29:57
+ * @since 1.0, 2020-05-29 14:56:15
  */
 public class AlipayOverseasRemitFundInitializeRequest implements AlipayRequest<AlipayOverseasRemitFundInitializeResponse> {
 

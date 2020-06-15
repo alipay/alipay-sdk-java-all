@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sts.token.get request
  * 
  * @author auto create
- * @since 1.0, 2019-05-24 18:40:07
+ * @since 1.0, 2020-05-26 17:41:11
  */
 public class AlipayOpenStsTokenGetRequest implements AlipayRequest<AlipayOpenStsTokenGetResponse> {
 

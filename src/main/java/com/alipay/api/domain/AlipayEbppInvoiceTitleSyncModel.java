@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子发票抬头添加
  *
  * @author auto create
- * @since 1.0, 2019-06-21 16:58:07
+ * @since 1.0, 2020-05-20 15:51:05
  */
 public class AlipayEbppInvoiceTitleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5612156397827317432L;
+	private static final long serialVersionUID = 7777342652238581924L;
 
 	/**
 	 * 开户银行账号

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI认知服务增值税发票ocr识别
  *
  * @author auto create
- * @since 1.0, 2020-03-04 18:41:11
+ * @since 1.0, 2020-06-05 16:19:30
  */
 public class AnttechAiCvOcrVatinvoiceIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8776735976124438979L;
+	private static final long serialVersionUID = 1661448666852968773L;
+
+	/**
+	 * 目前只支持pdf、jpg两种file_type的识别能力，根据具体传入的发票的格式传入正确的值
+	 */
+	@ApiField("file_type")
+	private String fileType;
 
 	/**
 	 * 文件二进制内容 + base64
@@ -36,6 +42,13 @@ public class AnttechAiCvOcrVatinvoiceIdentifyModel extends AlipayObject {
 	 */
 	@ApiField("trace_id")
 	private String traceId;
+
+	public String getFileType() {
+		return this.fileType;
+	}
+	public void setFileType(String fileType) {
+		this.fileType = fileType;
+	}
 
 	public String getImageRaw() {
 		return this.imageRaw;

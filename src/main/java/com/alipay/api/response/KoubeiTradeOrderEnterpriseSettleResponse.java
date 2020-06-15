@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.order.enterprise.settle response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-29 18:50:02
+ * @since 1.0, 2020-06-03 19:56:26
  */
 public class KoubeiTradeOrderEnterpriseSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4843888637375459824L;
+	private static final long serialVersionUID = 8385636738662618111L;
 
 	/** 
 	 * 描述本次返回中的业务属性，该字段用于描述本次返回中的业务属性，现有：BIZ_ALREADY_SUCCESS（幂等业务码）

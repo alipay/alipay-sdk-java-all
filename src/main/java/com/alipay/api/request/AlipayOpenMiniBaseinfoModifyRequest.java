@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.baseinfo.modify request
  * 
  * @author auto create
- * @since 1.0, 2020-05-06 19:56:31
+ * @since 1.0, 2020-06-08 12:00:11
  */
 public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<AlipayOpenMiniBaseinfoModifyResponse> {
 
@@ -49,6 +49,11 @@ public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<
 	* 小程序应用简介，一句话描述小程序功能
 	 */
 	private String appSlogan;
+
+	/** 
+	* 新小程序前台类目，一级与二级、三级用下划线隔开，最多可以选四个类目，类目之间;隔开。使用后不再读取app_category_ids值，老前台类目将废弃
+	 */
+	private String miniCategoryIds;
 
 	/** 
 	* 小程序客服邮箱
@@ -100,6 +105,13 @@ public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<
 	}
 	public String getAppSlogan() {
 		return this.appSlogan;
+	}
+
+	public void setMiniCategoryIds(String miniCategoryIds) {
+		this.miniCategoryIds = miniCategoryIds;
+	}
+	public String getMiniCategoryIds() {
+		return this.miniCategoryIds;
 	}
 
 	public void setServiceEmail(String serviceEmail) {
@@ -181,6 +193,7 @@ public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<
 		txtParams.put("app_english_name", this.appEnglishName);
 		txtParams.put("app_name", this.appName);
 		txtParams.put("app_slogan", this.appSlogan);
+		txtParams.put("mini_category_ids", this.miniCategoryIds);
 		txtParams.put("service_email", this.serviceEmail);
 		txtParams.put("service_phone", this.servicePhone);
 		if(udfParams != null) {

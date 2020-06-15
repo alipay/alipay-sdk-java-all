@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员通用设备、环境相关信息
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:42:37
+ * @since 1.0, 2020-06-12 15:37:26
  */
 public class AlipayUserDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1652341941729944998L;
+	private static final long serialVersionUID = 4536472199838479275L;
 
 	/**
 	 * 扩展信息，json格式的字符串

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaytoolResultDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4554176475414343316L;
+	private static final long serialVersionUID = 2347527276222483528L;
 
 	/**
 	 * 支付宝交易号，当tool_code是ALIPAY和TMARKETING时有效。

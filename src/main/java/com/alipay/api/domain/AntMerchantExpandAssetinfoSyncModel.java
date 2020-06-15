@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料信息同步
  *
  * @author auto create
- * @since 1.0, 2020-02-26 19:10:52
+ * @since 1.0, 2020-06-11 20:02:34
  */
 public class AntMerchantExpandAssetinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6434991943796985172L;
+	private static final long serialVersionUID = 7123719217919735338L;
 
 	/**
 	 * 传入需要反馈的物料信息对象列表.
