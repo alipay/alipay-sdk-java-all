@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.exercise.recordcourse.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-02-25 15:55:00
+ * @since 1.0, 2020-06-18 11:51:22
  */
 public class KoubeiServindustryExerciseRecordcourseSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8239238892646825269L;
+	private static final long serialVersionUID = 8419236248498514588L;
 
 	
 

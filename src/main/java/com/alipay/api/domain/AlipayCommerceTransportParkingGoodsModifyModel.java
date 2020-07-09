@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝车位运营商品修改
  *
  * @author auto create
- * @since 1.0, 2020-03-17 14:26:29
+ * @since 1.0, 2020-06-22 17:12:31
  */
 public class AlipayCommerceTransportParkingGoodsModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5188166939911981636L;
+	private static final long serialVersionUID = 5697684863491728688L;
 
 	/**
 	 * 1^2^3（表示周一、周二、周三）,此时间与商品履约开始、结束时间取交集，如2019-01-01到2019-03-01期间的周一、周二、周三

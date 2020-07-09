@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.parking.reserve.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-23 17:02:23
+ * @since 1.0, 2020-06-22 17:13:30
  */
 public class AlipayCommerceTransportParkingReserveConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4193678877336867923L;
+	private static final long serialVersionUID = 6145343426174755722L;
 
 	
 

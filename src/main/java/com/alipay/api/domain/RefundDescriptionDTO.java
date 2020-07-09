@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 点餐退款详情描述
  *
  * @author auto create
- * @since 1.0, 2018-12-20 21:03:45
+ * @since 1.0, 2020-06-18 15:09:35
  */
 public class RefundDescriptionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8565798393397671384L;
+	private static final long serialVersionUID = 7141321463892244192L;
 
 	/**
 	 * 本次支付用户实付的金额 = 应付金额 - 支付优惠中商家优惠金额 - 支付优惠中平台补贴金额

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝车位运营预约单创建确认
  *
  * @author auto create
- * @since 1.0, 2020-03-23 17:01:27
+ * @since 1.0, 2020-06-22 17:13:30
  */
 public class AlipayCommerceTransportParkingReserveConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3137243298479929962L;
+	private static final long serialVersionUID = 7496686779415738373L;
 
 	/**
 	 * true-预约成功，false-预约失败

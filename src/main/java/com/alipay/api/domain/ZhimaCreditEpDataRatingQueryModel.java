@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用企业金融风控查询
  *
  * @author auto create
- * @since 1.0, 2020-01-06 09:32:56
+ * @since 1.0, 2020-06-16 19:13:34
  */
 public class ZhimaCreditEpDataRatingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4233718311394457198L;
+	private static final long serialVersionUID = 5578879224159155448L;
 
 	/**
 	 * 特定业务场景传输的扩展参数，以JSON形式传输

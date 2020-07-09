@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 客制化组分页模型
  *
  * @author auto create
- * @since 1.0, 2020-03-31 18:38:29
+ * @since 1.0, 2020-06-20 01:34:45
  */
 public class PaginationCommGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 1412346111544178327L;
+	private static final long serialVersionUID = 2384573226931644814L;
 
 	/**
 	 * 出参列表

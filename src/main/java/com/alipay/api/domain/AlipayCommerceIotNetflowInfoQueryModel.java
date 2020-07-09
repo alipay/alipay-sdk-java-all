@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备流量信息查询
  *
  * @author auto create
- * @since 1.0, 2020-06-12 17:11:36
+ * @since 1.0, 2020-06-24 09:53:25
  */
 public class AlipayCommerceIotNetflowInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7513821739283134595L;
+	private static final long serialVersionUID = 8515252547771584447L;
 
 	/**
 	 * 设备的sn/imei/bizTid等信息

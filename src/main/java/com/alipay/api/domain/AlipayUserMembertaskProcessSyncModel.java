@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员任务进程推进接口
  *
  * @author auto create
- * @since 1.0, 2019-06-05 15:11:06
+ * @since 1.0, 2020-06-18 21:44:30
  */
 public class AlipayUserMembertaskProcessSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1672448532168683849L;
+	private static final long serialVersionUID = 8781756993523189723L;
 
 	/**
 	 * 标识目标业务的业务大类

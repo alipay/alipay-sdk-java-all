@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 基于UID支付宝渠道认证的协议授权
  *
  * @author auto create
- * @since 1.0, 2017-12-15 15:40:04
+ * @since 1.0, 2020-07-02 19:51:55
  */
 public class AlipayUserAuthZhimaperInnerApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7546252593142524323L;
+	private static final long serialVersionUID = 8898218949871932944L;
 
 	/**
 	 * 证件号码

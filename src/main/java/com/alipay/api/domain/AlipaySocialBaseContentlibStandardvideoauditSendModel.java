@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 视频审核接口
  *
  * @author auto create
- * @since 1.0, 2019-06-18 11:03:27
+ * @since 1.0, 2020-07-03 20:38:31
  */
 public class AlipaySocialBaseContentlibStandardvideoauditSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5152864957986592128L;
+	private static final long serialVersionUID = 1325166432796617738L;
 
 	/**
 	 * publish(审核通过),

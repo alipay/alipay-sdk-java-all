@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 运动项目同步
  *
  * @author auto create
- * @since 1.0, 2019-01-03 10:28:56
+ * @since 1.0, 2020-06-18 11:53:10
  */
 public class KoubeiServindustryExerciseItemSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1511625684647437666L;
+	private static final long serialVersionUID = 3835961256415566621L;
 
 	/**
 	 * linux时间戳

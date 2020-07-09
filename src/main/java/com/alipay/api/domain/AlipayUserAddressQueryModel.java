@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据addressId获取用户详细地址信息
  *
  * @author auto create
- * @since 1.0, 2020-05-07 10:08:47
+ * @since 1.0, 2020-06-18 15:26:09
  */
 public class AlipayUserAddressQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7373491625853297938L;
+	private static final long serialVersionUID = 7484731268393518126L;
 
 	/**
 	 * 用户地址唯一ID。通过调用小程序开放api(my.chooseAddress)获取。

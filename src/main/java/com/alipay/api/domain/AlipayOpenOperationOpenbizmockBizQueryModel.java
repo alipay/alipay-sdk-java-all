@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放基础业务模拟查询接口
  *
  * @author auto create
- * @since 1.0, 2020-03-17 10:38:29
+ * @since 1.0, 2020-06-29 14:09:22
  */
 public class AlipayOpenOperationOpenbizmockBizQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5386699651623943568L;
+	private static final long serialVersionUID = 1778389922349169128L;
 
 	/**
 	 * 业务编码
@@ -19,11 +19,24 @@ public class AlipayOpenOperationOpenbizmockBizQueryModel extends AlipayObject {
 	@ApiField("biz_no")
 	private String bizNo;
 
+	/**
+	 * aa
+	 */
+	@ApiField("number")
+	private String number;
+
 	public String getBizNo() {
 		return this.bizNo;
 	}
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
+	}
+
+	public String getNumber() {
+		return this.number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
 	}
 
 }

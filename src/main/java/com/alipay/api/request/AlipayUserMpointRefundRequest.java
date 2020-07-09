@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.mpoint.refund request
  * 
  * @author auto create
- * @since 1.0, 2020-03-05 16:10:08
+ * @since 1.0, 2020-07-04 20:50:10
  */
 public class AlipayUserMpointRefundRequest implements AlipayRequest<AlipayUserMpointRefundResponse> {
 

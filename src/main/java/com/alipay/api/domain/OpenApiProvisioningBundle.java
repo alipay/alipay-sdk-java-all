@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ApplePay卡信息
  *
  * @author auto create
- * @since 1.0, 2020-02-25 21:29:02
+ * @since 1.0, 2020-07-08 11:48:07
  */
 public class OpenApiProvisioningBundle extends AlipayObject {
 
-	private static final long serialVersionUID = 2538596577548344446L;
+	private static final long serialVersionUID = 5689862397492771861L;
 
 	/**
 	 * 加密后的数据

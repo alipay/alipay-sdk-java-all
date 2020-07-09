@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ApplePay公用响应头
  *
  * @author auto create
- * @since 1.0, 2020-04-23 11:48:14
+ * @since 1.0, 2020-07-08 11:48:01
  */
 public class OpenApiResponseHeader extends AlipayObject {
 
-	private static final long serialVersionUID = 8828976686285187718L;
+	private static final long serialVersionUID = 4142999299771938359L;
 
 	/**
 	 * 会话id，对应请求中的conversation_id，若请求中conversation_id非空，则该值非空

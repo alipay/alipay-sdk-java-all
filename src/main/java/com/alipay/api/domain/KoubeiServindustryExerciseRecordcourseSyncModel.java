@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 健身课程日志同步接口
  *
  * @author auto create
- * @since 1.0, 2019-01-03 10:30:01
+ * @since 1.0, 2020-06-18 11:51:22
  */
 public class KoubeiServindustryExerciseRecordcourseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2546569867873622353L;
+	private static final long serialVersionUID = 2759119943431961493L;
 
 	/**
 	 * 数据版本号。linux时间戳，到毫秒级别。如果同步数据的版本号小于口碑服务器已有数据的版本号，则会被丢弃。

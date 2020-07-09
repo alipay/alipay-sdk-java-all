@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单交易关闭接口
  *
  * @author auto create
- * @since 1.0, 2020-03-03 15:07:59
+ * @since 1.0, 2020-07-02 20:51:54
  */
 public class AlipayTradeCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7239545167151622884L;
+	private static final long serialVersionUID = 3392112559419891458L;
 
 	/**
 	 * 卖家端自定义的的操作员 ID

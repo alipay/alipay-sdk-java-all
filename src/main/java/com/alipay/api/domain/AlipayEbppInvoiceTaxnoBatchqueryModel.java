@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取指定企业税号的用户发票要素列表
  *
  * @author auto create
- * @since 1.0, 2020-05-27 20:06:40
+ * @since 1.0, 2020-06-15 18:42:33
  */
 public class AlipayEbppInvoiceTaxnoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7773875277252413382L;
+	private static final long serialVersionUID = 1374215323212346684L;
 
 	/**
 	 * 默认值为false。true为输出交易信息，false为不输出交易信息。

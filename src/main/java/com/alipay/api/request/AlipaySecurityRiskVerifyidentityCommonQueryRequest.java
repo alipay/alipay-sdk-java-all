@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.verifyidentity.common.query request
  * 
  * @author auto create
- * @since 1.0, 2020-02-08 13:29:19
+ * @since 1.0, 2020-06-30 16:18:04
  */
 public class AlipaySecurityRiskVerifyidentityCommonQueryRequest implements AlipayRequest<AlipaySecurityRiskVerifyidentityCommonQueryResponse> {
 

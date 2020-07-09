@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸关闭支付申请
  *
  * @author auto create
- * @since 1.0, 2020-06-02 19:32:22
+ * @since 1.0, 2020-07-08 14:17:44
  */
 public class AlipayCommerceEducateFacepayCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1169769774257125177L;
+	private static final long serialVersionUID = 3591165565647744723L;
 
 	/**
 	 * 采集人脸学生uid

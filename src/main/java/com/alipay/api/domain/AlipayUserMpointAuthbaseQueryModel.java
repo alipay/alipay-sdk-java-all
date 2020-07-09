@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户等级和积分查询接口（不需要授权）
  *
  * @author auto create
- * @since 1.0, 2020-03-05 16:10:22
+ * @since 1.0, 2020-07-04 20:48:24
  */
 public class AlipayUserMpointAuthbaseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1491288943241865948L;
+	private static final long serialVersionUID = 5626254115599981541L;
 
 	/**
 	 * 用户的支付宝账户ID

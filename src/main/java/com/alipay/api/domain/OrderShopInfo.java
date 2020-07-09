@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店信息
  *
  * @author auto create
- * @since 1.0, 2020-03-30 20:50:48
+ * @since 1.0, 2020-06-20 11:00:22
  */
 public class OrderShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1758446986964956318L;
+	private static final long serialVersionUID = 1883958396617278217L;
 
 	/**
 	 * 店铺地址

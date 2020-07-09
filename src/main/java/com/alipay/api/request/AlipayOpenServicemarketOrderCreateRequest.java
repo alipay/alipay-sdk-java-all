@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.order.create request
  * 
  * @author auto create
- * @since 1.0, 2020-04-26 20:15:09
+ * @since 1.0, 2020-07-09 15:36:15
  */
 public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRequest<AlipayOpenServicemarketOrderCreateResponse> {
 
@@ -74,6 +74,11 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 	* 一二方支持传入appId
 	 */
 	private String miniAppId;
+
+	/** 
+	* 新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询mini_category_list，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。使用后不再读取app_category_ids值，老前台类目将废弃
+	 */
+	private String miniCategoryIds;
 
 	/** 
 	* 比如某种业务标准外部订单号,比如交易外部订单号，代表商户端自己订单号
@@ -167,6 +172,13 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 		return this.miniAppId;
 	}
 
+	public void setMiniCategoryIds(String miniCategoryIds) {
+		this.miniCategoryIds = miniCategoryIds;
+	}
+	public String getMiniCategoryIds() {
+		return this.miniCategoryIds;
+	}
+
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
@@ -258,6 +270,7 @@ public class AlipayOpenServicemarketOrderCreateRequest implements AlipayUploadRe
 		txtParams.put("merchandise_id", this.merchandiseId);
 		txtParams.put("merchant_pid", this.merchantPid);
 		txtParams.put("mini_app_id", this.miniAppId);
+		txtParams.put("mini_category_ids", this.miniCategoryIds);
 		txtParams.put("out_biz_no", this.outBizNo);
 		txtParams.put("service_email", this.serviceEmail);
 		txtParams.put("service_phone", this.servicePhone);

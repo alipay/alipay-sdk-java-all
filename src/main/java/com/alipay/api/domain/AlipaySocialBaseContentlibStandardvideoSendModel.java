@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标准视频接入
  *
  * @author auto create
- * @since 1.0, 2018-12-19 13:42:31
+ * @since 1.0, 2020-07-03 20:38:56
  */
 public class AlipaySocialBaseContentlibStandardvideoSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6642763142392218357L;
+	private static final long serialVersionUID = 3138241523177749721L;
 
 	/**
 	 * action_type为此次请求类型，值为枚举，有三种，publish(发布),depublish(撤回),heartbeat(心跳),具体对接请联系负责人,必填

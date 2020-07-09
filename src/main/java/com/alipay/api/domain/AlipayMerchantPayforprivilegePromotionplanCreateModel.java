@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建充值方案
  *
  * @author auto create
- * @since 1.0, 2020-04-08 11:34:42
+ * @since 1.0, 2020-07-01 11:17:42
  */
 public class AlipayMerchantPayforprivilegePromotionplanCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6483756715992612654L;
+	private static final long serialVersionUID = 8649816914822832317L;
 
 	/**
 	 * 充享惠方案权益金部分，最小为0，权益金不超过5000元

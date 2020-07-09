@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文魄创建消息通知
  *
  * @author auto create
- * @since 1.0, 2019-01-03 10:28:41
+ * @since 1.0, 2020-06-18 11:51:41
  */
 public class KoubeiServindustryExerciseNoticeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2182249491181355387L;
+	private static final long serialVersionUID = 1177714934766287147L;
 
 	/**
 	 * 外部通知ID

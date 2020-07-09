@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemDiagnoseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1462695563351345129L;
+	private static final long serialVersionUID = 1187296321795451923L;
 
 	/**
 	 * 菜品的热度等级	菜品热度等级（0/0.5/1/1.5/2/2.5/3/3.5/4/4.5/5）该字段是对热度值做离散化，方便用户用图像化表达热度

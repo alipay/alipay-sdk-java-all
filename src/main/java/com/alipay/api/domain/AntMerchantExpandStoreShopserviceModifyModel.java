@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景服务修改
  *
  * @author auto create
- * @since 1.0, 2020-03-13 16:19:39
+ * @since 1.0, 2020-06-16 16:13:38
  */
 public class AntMerchantExpandStoreShopserviceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3215949144343124657L;
+	private static final long serialVersionUID = 2512839365994497814L;
+
+	/**
+	 * true/false, 是否有效，默认为true
+	 */
+	@ApiField("is_valid")
+	private Boolean isValid;
 
 	/**
 	 * 测试的场景服务名称
@@ -83,6 +89,13 @@ public class AntMerchantExpandStoreShopserviceModifyModel extends AlipayObject {
 	 */
 	@ApiField("store_open_id")
 	private String storeOpenId;
+
+	public Boolean getIsValid() {
+		return this.isValid;
+	}
+	public void setIsValid(Boolean isValid) {
+		this.isValid = isValid;
+	}
 
 	public String getName() {
 		return this.name;

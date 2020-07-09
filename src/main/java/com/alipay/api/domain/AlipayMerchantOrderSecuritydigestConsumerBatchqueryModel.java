@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * C端订单数据列表查询-安全云专用
  *
  * @author auto create
- * @since 1.0, 2020-03-08 16:50:34
+ * @since 1.0, 2020-06-20 10:58:10
  */
 public class AlipayMerchantOrderSecuritydigestConsumerBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3616976296543781266L;
+	private static final long serialVersionUID = 5149344671679933635L;
 
 	/**
 	 * 买家支付宝用户id

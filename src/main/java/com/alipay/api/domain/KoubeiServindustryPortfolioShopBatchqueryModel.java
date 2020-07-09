@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询作品集信息
  *
  * @author auto create
- * @since 1.0, 2017-12-28 13:57:13
+ * @since 1.0, 2020-06-18 11:52:45
  */
 public class KoubeiServindustryPortfolioShopBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5173921442816489144L;
+	private static final long serialVersionUID = 2863428249751768264L;
 
 	/**
 	 * 插件id

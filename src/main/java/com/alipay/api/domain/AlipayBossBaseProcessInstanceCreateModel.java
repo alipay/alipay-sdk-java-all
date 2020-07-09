@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建流程实例
  *
  * @author auto create
- * @since 1.0, 2019-09-18 12:01:06
+ * @since 1.0, 2020-07-09 13:49:07
  */
 public class AlipayBossBaseProcessInstanceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7416943411795943469L;
+	private static final long serialVersionUID = 5279169148633254584L;
 
 	/**
 	 * 加签内容

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模版来源渠道
  *
  * @author auto create
- * @since 1.0, 2020-05-08 19:33:42
+ * @since 1.0, 2020-07-07 15:00:00
  */
 public class TemplatePlatformDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5332817238336554393L;
+	private static final long serialVersionUID = 1417113618629467563L;
 
 	/**
 	 * 卡券所属业务线，如飞猪在其内部营销平台里，通过营销活动为新用户发放优惠券，那此处填写飞猪业务线：fliggy。支持自定义动态参数传值，但动态参数需定义为：$_r_biz_from_bu$。
@@ -32,7 +32,7 @@ public class TemplatePlatformDTO extends AlipayObject {
 	private String bizFromScene;
 
 	/**
-	 * 卡券所属商户在支付宝的pid/appid，如代理商代替商户设置卡券时，此值为被代理的商户的pid/appid。支持以 $动态参数$ 形式的自定义动态参数传值。
+	 * 卡券所属商户在支付宝的商户号(pid)，如代理商代替商户设置卡券时，此值为被代理的商户的商户号(pid)。支持以 $动态参数$ 形式的自定义动态参数传值，但动态参数需定义为$channelID$。
 	 */
 	@ApiField("channel_id")
 	private String channelId;

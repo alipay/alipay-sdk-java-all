@@ -22,6 +22,7 @@ public class AlipayLogger {
 
     private static final Log clog = LogFactory.getLog("sdk.comm.err");
     private static final Log blog = LogFactory.getLog("sdk.biz.err");
+    private static final Log ilog = LogFactory.getLog("sdk.biz.info");
 
     private static String  osName           = System.getProperties().getProperty("os.name");
     private static String  ip               = null;
@@ -354,7 +355,7 @@ public class AlipayLogger {
         sb.append("ms,");
         sb.append(costTimeMap.get("postCostTime"));
         sb.append("ms");
-        blog.info(sb.toString());
+        ilog.info(sb.toString());
     }
 
     private static void appendLog(AlipayHashMap map, StringBuilder sb) {

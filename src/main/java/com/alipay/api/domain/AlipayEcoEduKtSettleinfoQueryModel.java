@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通学校结算信息查询
  *
  * @author auto create
- * @since 1.0, 2020-05-28 13:50:38
+ * @since 1.0, 2020-06-16 16:06:56
  */
 public class AlipayEcoEduKtSettleinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4333537522753189542L;
+	private static final long serialVersionUID = 3184134672783855569L;
 
 	/**
 	 * 结算日期：格式为yyyy-MM-dd

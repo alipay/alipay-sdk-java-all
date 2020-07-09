@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.aftscvpay.transaction.initialize request
  * 
  * @author auto create
- * @since 1.0, 2019-05-14 20:25:01
+ * @since 1.0, 2020-06-18 13:42:28
  */
 public class AlipayMsaasMediarecogAftscvpayTransactionInitializeRequest implements AlipayRequest<AlipayMsaasMediarecogAftscvpayTransactionInitializeResponse> {
 

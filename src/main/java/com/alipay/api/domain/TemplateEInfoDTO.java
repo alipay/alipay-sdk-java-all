@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模版主体信息
  *
  * @author auto create
- * @since 1.0, 2020-05-08 19:33:41
+ * @since 1.0, 2020-07-07 14:59:33
  */
 public class TemplateEInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2432251719613582376L;
+	private static final long serialVersionUID = 3366648146697447763L;
 
 	/**
 	 * 卡券辅助区域块
@@ -24,7 +24,7 @@ public class TemplateEInfoDTO extends AlipayObject {
 	private List<TemplateEInfoUnitDTO> auxiliaryFields;
 
 	/**
-	 * 卡券适用商品ID列表，对于使用支付宝底层商品系统、小程序服务的卡券可直接显示对应商品信息，快速跳转转化。支持自定义动态参数传值，但动态参数需定义为：$_r_available_item_id$。
+	 * 卡券适用商品ID列表，对于使用支付宝底层商品系统、小程序服务的卡券可直接显示对应商品信息，快速跳转转化。支持自定义动态参数传值，但动态参数需定义为：[$_r_available_item_id$]，即在数组里存放单个元素：$_r_available_item_id$。
 	 */
 	@ApiListField("available_item_ids")
 	@ApiField("string")
@@ -93,10 +93,22 @@ public class TemplateEInfoDTO extends AlipayObject {
 	private String useCondition;
 
 	/**
+	 * 适用城市，国标（行政区划代码）前6位编码，支持省份、城市，不支持城市下级区县，如：330100（浙江省）、330100（杭州市），不支持：330106（西湖区）。用于优先推荐参考因素，暂不对用户展示。不限城市：ALL，省份编码，城市编码。允许多个省份与城市同时出现，多个省份或城市使用英文（半角）逗号进行分隔，城市与城市所属省份不能同时出现。支持自定义动态参数传值，但动态参数需定义为：$_r_use_limit_city$。
+	 */
+	@ApiField("use_limit_city")
+	private String useLimitCity;
+
+	/**
 	 * 卡券适用范围/限制，如全场可用、全品类可用、X店铺可用、X商品可用、X服务可用等，建议12字以内。支持以 $动态参数$ 形式的自定义动态参数传值。
 	 */
 	@ApiField("use_limit_desc")
 	private String useLimitDesc;
+
+	/**
+	 * 使用场景，用于优先推荐参考因素，暂不对用户展示。线上：ONLINE；线下：OFFLINE；ALL：不限场景。支持自定义动态参数传值，但动态参数需定义为：$_r_use_limit_scene$。
+	 */
+	@ApiField("use_limit_scene")
+	private String useLimitScene;
 
 	public List<TemplateEInfoUnitDTO> getAuxiliaryFields() {
 		return this.auxiliaryFields;
@@ -182,11 +194,25 @@ public class TemplateEInfoDTO extends AlipayObject {
 		this.useCondition = useCondition;
 	}
 
+	public String getUseLimitCity() {
+		return this.useLimitCity;
+	}
+	public void setUseLimitCity(String useLimitCity) {
+		this.useLimitCity = useLimitCity;
+	}
+
 	public String getUseLimitDesc() {
 		return this.useLimitDesc;
 	}
 	public void setUseLimitDesc(String useLimitDesc) {
 		this.useLimitDesc = useLimitDesc;
+	}
+
+	public String getUseLimitScene() {
+		return this.useLimitScene;
+	}
+	public void setUseLimitScene(String useLimitScene) {
+		this.useLimitScene = useLimitScene;
 	}
 
 }

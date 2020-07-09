@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 下单请求接口
  *
  * @author auto create
- * @since 1.0, 2020-06-08 14:28:32
+ * @since 1.0, 2020-07-02 21:36:49
  */
 public class AlipayInsAutoAutoinsprodPolicyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8298864945265616252L;
+	private static final long serialVersionUID = 8618244295661214977L;
+
+	/**
+	 * 出单的坐席的工号
+	 */
+	@ApiField("agent_no")
+	private String agentNo;
 
 	/**
 	 * 商业险收款账号，商交保费收入账号不一致时，商业险收入账号传此字段。一般为保险公司收款账号登录ID，最终以技术isv给出示例为准，蚂蚁会校验该id对应的保险公司是不是和蚂蚁胜信签约以及签约关系是否有效，示例：xxxx.@alipay.com
@@ -54,6 +60,13 @@ public class AlipayInsAutoAutoinsprodPolicyApplyModel extends AlipayObject {
 	 */
 	@ApiField("who_payed")
 	private String whoPayed;
+
+	public String getAgentNo() {
+		return this.agentNo;
+	}
+	public void setAgentNo(String agentNo) {
+		this.agentNo = agentNo;
+	}
 
 	public String getBusIncomeAccountNo() {
 		return this.busIncomeAccountNo;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收钱吱口令创建
  *
  * @author auto create
- * @since 1.0, 2018-07-25 17:54:00
+ * @since 1.0, 2020-06-22 17:29:26
  */
 public class AlipayFundTransCollectSinglemoneytokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2121761361161384833L;
+	private static final long serialVersionUID = 8461512843414698477L;
 
 	/**
 	 * 业务回调通知参数,由业务方定义,用于支付成功后mnotify回调通知透传

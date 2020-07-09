@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.arater.ratestatus.modify response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-29 21:37:35
+ * @since 1.0, 2020-07-02 17:30:50
  */
 public class AlipayOpenAppAraterRatestatusModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5131665984519366958L;
+	private static final long serialVersionUID = 2673245689953197742L;
 
 	/** 
 	 * 是否更惨成功

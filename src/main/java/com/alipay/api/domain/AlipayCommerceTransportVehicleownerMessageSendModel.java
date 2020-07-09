@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车主服务统一消息发送入口
  *
  * @author auto create
- * @since 1.0, 2020-03-19 10:52:30
+ * @since 1.0, 2020-06-22 17:13:16
  */
 public class AlipayCommerceTransportVehicleownerMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1873152998342784192L;
+	private static final long serialVersionUID = 5112663856434162384L;
 
 	/**
 	 * 消息条数，需和msg_list数组中消息实际条数保持一致，上限20条

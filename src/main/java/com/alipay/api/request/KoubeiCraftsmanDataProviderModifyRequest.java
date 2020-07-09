@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.craftsman.data.provider.modify request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-06-18 11:56:58
  */
 public class KoubeiCraftsmanDataProviderModifyRequest implements AlipayRequest<KoubeiCraftsmanDataProviderModifyResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多币种货币类
  *
  * @author auto create
- * @since 1.0, 2018-10-25 15:25:04
+ * @since 1.0, 2020-06-29 15:54:47
  */
 public class MultiCurrencyMoneyVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7343452327631839121L;
+	private static final long serialVersionUID = 1526654857557634753L;
 
 	/**
 	 * 金额，默认单位是人民币，精确到小数点两位，单位元

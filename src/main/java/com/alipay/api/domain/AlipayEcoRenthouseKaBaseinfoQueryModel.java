@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoRenthouseKaBaseinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8896789895423363718L;
+	private static final long serialVersionUID = 1176695467712497816L;
 
 	/**
 	 * kaCode唯一标识

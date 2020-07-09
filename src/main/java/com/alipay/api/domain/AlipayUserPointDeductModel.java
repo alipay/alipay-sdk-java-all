@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁会员积分扣减接口（需要用户授权）
  *
  * @author auto create
- * @since 1.0, 2020-05-09 17:34:58
+ * @since 1.0, 2020-06-23 20:00:17
  */
 public class AlipayUserPointDeductModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284478177246893786L;
+	private static final long serialVersionUID = 3481667818194588852L;
 
 	/**
 	 * 蚂蚁会员平台上的权益所对应的编号

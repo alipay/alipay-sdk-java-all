@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 发送消息查询
  *
  * @author auto create
- * @since 1.0, 2017-09-20 17:31:09
+ * @since 1.0, 2020-07-06 16:46:18
  */
 public class PublicMessageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5249947147487225398L;
+	private static final long serialVersionUID = 7855977859416954198L;
+
+	/**
+	 * 内容信息
+	 */
+	@ApiListField("articles")
+	@ApiField("image_text_item")
+	private List<ImageTextItem> articles;
 
 	/**
 	 * 消息id
@@ -36,6 +46,13 @@ public class PublicMessageInfo extends AlipayObject {
 	 */
 	@ApiField("status_desc")
 	private String statusDesc;
+
+	public List<ImageTextItem> getArticles() {
+		return this.articles;
+	}
+	public void setArticles(List<ImageTextItem> articles) {
+		this.articles = articles;
+	}
 
 	public String getMessageId() {
 		return this.messageId;

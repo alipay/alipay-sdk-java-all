@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭档案详情
  *
  * @author auto create
- * @since 1.0, 2020-06-11 22:05:14
+ * @since 1.0, 2020-07-08 19:26:02
  */
 public class FamilyArchiveDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5739131117763935625L;
+	private static final long serialVersionUID = 6334411972788122157L;
 
 	/**
 	 * 家庭档案中用户填写的详细地址

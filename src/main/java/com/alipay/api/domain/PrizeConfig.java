@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 奖品配置
  *
  * @author auto create
- * @since 1.0, 2020-05-09 19:52:16
+ * @since 1.0, 2020-06-29 12:07:01
  */
 public class PrizeConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 6643583886338561446L;
+	private static final long serialVersionUID = 5171959611496778439L;
 
 	/**
 	 * 总预算,目前仅支持个数预算
@@ -102,6 +102,12 @@ AMOUNT 金额预算
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 使用有效期
+	 */
+	@ApiField("valid_period")
+	private PrizeValidPeriod validPeriod;
 
 	public String getAmount() {
 		return this.amount;
@@ -199,6 +205,13 @@ AMOUNT 金额预算
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public PrizeValidPeriod getValidPeriod() {
+		return this.validPeriod;
+	}
+	public void setValidPeriod(PrizeValidPeriod validPeriod) {
+		this.validPeriod = validPeriod;
 	}
 
 }

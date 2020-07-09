@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 教育缴费学校直付通进件接口
  *
  * @author auto create
- * @since 1.0, 2020-05-12 20:10:15
+ * @since 1.0, 2020-06-16 16:07:17
  */
 public class AlipayEcoEduKtZftschoolModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5262286749116996496L;
+	private static final long serialVersionUID = 7447293281437481647L;
 
 	/**
 	 * 商户结算卡信息。本业务当前只允许传入一张结算卡
@@ -57,7 +57,13 @@ public class AlipayEcoEduKtZftschoolModifyModel extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 商户证件类型，取值范围：201：营业执照；2011:营业执照(统一社会信用代码)；218：事业单位法人证书
+	 * 商户证件类型，201：营业执照；204 民办非企业单位登记证书；2011:营业执照(统一社会信用代码)；218：事业单位法人证书。 
+
+对应merchant_type规则，可参考：
+01对应201或2011；
+02对应218 办学许可证、事业单位法人证书、办园许可证、学前教育机构登记证、登记注册合格证；
+03对应204 民办非企业单位登记证书 
+07对应 201 或 2011	
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -121,7 +127,13 @@ public class AlipayEcoEduKtZftschoolModifyModel extends AlipayObject {
 	private String mcc;
 
 	/**
-	 * 商家类型：01：企业；02：事业单位；07：个体工商户
+	 * 商家类型：01：企业；02：事业单位；03：民办非企业组织，07：个体工商户。 
+
+对应cert_type规则，可参考：
+01对应201或2011；
+02对应218 办学许可证、事业单位法人证书、办园许可；证、学前教育机构登记证、登记注册合格证
+03对应204 民办非企业单位登记证书；
+07对应 201 或 2011
 	 */
 	@ApiField("merchant_type")
 	private String merchantType;

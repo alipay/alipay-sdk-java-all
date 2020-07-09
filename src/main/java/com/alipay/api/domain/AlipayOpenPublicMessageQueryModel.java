@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询已发送消息接口
  *
  * @author auto create
- * @since 1.0, 2020-04-08 21:34:22
+ * @since 1.0, 2020-07-06 16:46:18
  */
 public class AlipayOpenPublicMessageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6864715322754221166L;
+	private static final long serialVersionUID = 5824153277987169914L;
 
 	/**
 	 * 消息id集，限制最多传入20个message_id。message_id在调用群发、组发消息接口时会返回，需调用方保存

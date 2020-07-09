@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景服务创建
  *
  * @author auto create
- * @since 1.0, 2020-03-13 16:18:15
+ * @since 1.0, 2020-06-16 16:13:44
  */
 public class AntMerchantExpandStoreShopserviceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8856518899389899493L;
+	private static final long serialVersionUID = 3115536512147246111L;
 
 	/**
 	 * 素材上传的安全云oss的accessKey
 	 */
 	@ApiField("access_key_id")
 	private String accessKeyId;
+
+	/**
+	 * true/false, 是否有效；默认为true
+	 */
+	@ApiField("is_valid")
+	private Boolean isValid;
 
 	/**
 	 * 场景服务名称
@@ -83,6 +89,13 @@ public class AntMerchantExpandStoreShopserviceCreateModel extends AlipayObject {
 	}
 	public void setAccessKeyId(String accessKeyId) {
 		this.accessKeyId = accessKeyId;
+	}
+
+	public Boolean getIsValid() {
+		return this.isValid;
+	}
+	public void setIsValid(Boolean isValid) {
+		this.isValid = isValid;
 	}
 
 	public String getName() {

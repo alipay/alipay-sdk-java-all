@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.itap.push.send response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-09 11:01:33
+ * @since 1.0, 2020-06-18 18:55:03
  */
 public class AlipayMsaasItapPushSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4126725899585632823L;
+	private static final long serialVersionUID = 3498758843672397285L;
 
 	/** 
 	 * Itap统一放回结果模型

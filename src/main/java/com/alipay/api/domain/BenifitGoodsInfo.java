@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用的权益商品信息
  *
  * @author auto create
- * @since 1.0, 2020-01-08 19:54:52
+ * @since 1.0, 2020-06-22 10:06:15
  */
 public class BenifitGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6545722327252215996L;
+	private static final long serialVersionUID = 5588175382241252713L;
 
 	/**
 	 * 扩展信息，预留字段，非必录项

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innerversion.uploadstatus.query request
  * 
  * @author auto create
- * @since 1.0, 2020-03-27 17:35:09
+ * @since 1.0, 2020-06-29 23:10:20
  */
 public class AlipayOpenMiniInnerversionUploadstatusQueryRequest implements AlipayRequest<AlipayOpenMiniInnerversionUploadstatusQueryResponse> {
 

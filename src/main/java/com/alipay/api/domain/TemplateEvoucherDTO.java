@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模版卡券信息
  *
  * @author auto create
- * @since 1.0, 2020-05-08 19:33:41
+ * @since 1.0, 2020-07-07 15:18:46
  */
 public class TemplateEvoucherDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3745246484596459493L;
+	private static final long serialVersionUID = 4725263388175862447L;
 
 	/**
 	 * 卡券特性，不同类型pass对应的特定属性
@@ -36,7 +36,7 @@ public class TemplateEvoucherDTO extends AlipayObject {
 	private List<TemplateOperationDTO> operations;
 
 	/**
-	 * 卡券的子类型，子类型及利益点有：cycle_coupon（周期券）N天；commodity_coupon（商品券）商品名称/N次/N个/N份；discount_coupon（折扣券）N折；random_reduction_coupon（随机立减券）立减N元；reduced_to_coupon（减至券）减至N元；voucher（代金券）N元；exchange_coupon（兑换券）N次/N个/N份。
+	 * 卡券的子类型，子类型有：cycle_coupon（周期券）；commodity_coupon（商品券）；discount_coupon（折扣券）；random_reduction_coupon（随机立减券）；reduced_to_coupon（减至券）；voucher（代金券/满减券）；exchange_coupon（兑换券）。
 	 */
 	@ApiField("pass_sub_type")
 	private String passSubType;
@@ -78,7 +78,7 @@ public class TemplateEvoucherDTO extends AlipayObject {
 	private String title;
 
 	/**
-	 * 卡券的类型，目前只支持：marketVoucher（优惠券）类型。
+	 * 卡券的类型，目前只支持：marketVoucher（优惠券）类型。可不填，不填将通过子类型自动匹配。
 	 */
 	@ApiField("type")
 	private String type;

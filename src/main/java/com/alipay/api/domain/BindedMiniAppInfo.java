@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 已绑定小程序信息
  *
  * @author auto create
- * @since 1.0, 2020-06-08 09:52:14
+ * @since 1.0, 2020-07-06 10:10:19
  */
 public class BindedMiniAppInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5458213754977747741L;
+	private static final long serialVersionUID = 2888896591988772216L;
+
+	/**
+	 * 开发者名称
+	 */
+	@ApiField("dev_name")
+	private String devName;
 
 	/**
 	 * 小程序应用ID
@@ -32,6 +38,12 @@ public class BindedMiniAppInfo extends AlipayObject {
 	private String miniAppName;
 
 	/**
+	 * 小程序的简介
+	 */
+	@ApiField("mini_app_slogan")
+	private String miniAppSlogan;
+
+	/**
 	 * true：小程序在架
 false：小程序当前未在架
 	 */
@@ -43,6 +55,13 @@ false：小程序当前未在架
 	 */
 	@ApiField("support_ampe")
 	private Boolean supportAmpe;
+
+	public String getDevName() {
+		return this.devName;
+	}
+	public void setDevName(String devName) {
+		this.devName = devName;
+	}
 
 	public String getMiniAppId() {
 		return this.miniAppId;
@@ -63,6 +82,13 @@ false：小程序当前未在架
 	}
 	public void setMiniAppName(String miniAppName) {
 		this.miniAppName = miniAppName;
+	}
+
+	public String getMiniAppSlogan() {
+		return this.miniAppSlogan;
+	}
+	public void setMiniAppSlogan(String miniAppSlogan) {
+		this.miniAppSlogan = miniAppSlogan;
 	}
 
 	public Boolean getOnline() {

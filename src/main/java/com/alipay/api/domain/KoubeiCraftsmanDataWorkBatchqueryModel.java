@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手艺人作品信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2018-12-07 10:44:13
+ * @since 1.0, 2020-06-18 11:57:25
  */
 public class KoubeiCraftsmanDataWorkBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1281775424616746583L;
+	private static final long serialVersionUID = 3891752363136113814L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为

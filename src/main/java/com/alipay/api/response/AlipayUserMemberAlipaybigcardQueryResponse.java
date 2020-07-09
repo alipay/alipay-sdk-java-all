@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.member.alipaybigcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-27 16:08:59
+ * @since 1.0, 2020-06-17 15:02:26
  */
 public class AlipayUserMemberAlipaybigcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6582814977572621483L;
+	private static final long serialVersionUID = 8887799496753726869L;
 
 	/** 
 	 * 支付宝大卡片展现信息（缓存类），缓存类是对实时性要求不高的透出内容。缓存类用于存在缓存中，在调用接口超时或者降级时取用。
@@ -26,6 +26,36 @@ public class AlipayUserMemberAlipaybigcardQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("alipay_big_card_real_time_data")
 	private BigCardData alipayBigCardRealTimeData;
+
+	/** 
+	 * 可存入缓存的卡片展示信息
+	 */
+	@ApiField("backup_display_info")
+	private String backupDisplayInfo;
+
+	/** 
+	 * 工具类或卡片类，single_tool或single_content
+	 */
+	@ApiField("backup_template_code")
+	private String backupTemplateCode;
+
+	/** 
+	 * 植入在手淘的埋点信息
+	 */
+	@ApiField("backup_track_info")
+	private String backupTrackInfo;
+
+	/** 
+	 * 按照淘宝约定的格式返回的卡片展示结果，json格式
+	 */
+	@ApiField("display_info")
+	private String displayInfo;
+
+	/** 
+	 * 扩展字段备用
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/** 
 	 * 结果码
@@ -51,6 +81,18 @@ public class AlipayUserMemberAlipaybigcardQueryResponse extends AlipayResponse {
 	@ApiField("success")
 	private Boolean success;
 
+	/** 
+	 * 工具类或卡片类，single_tool或single_content
+	 */
+	@ApiField("template_code")
+	private String templateCode;
+
+	/** 
+	 * 植入在手淘的埋点信息
+	 */
+	@ApiField("track_info")
+	private String trackInfo;
+
 	public void setAlipayBigCardCacheData(BigCardData alipayBigCardCacheData) {
 		this.alipayBigCardCacheData = alipayBigCardCacheData;
 	}
@@ -63,6 +105,41 @@ public class AlipayUserMemberAlipaybigcardQueryResponse extends AlipayResponse {
 	}
 	public BigCardData getAlipayBigCardRealTimeData( ) {
 		return this.alipayBigCardRealTimeData;
+	}
+
+	public void setBackupDisplayInfo(String backupDisplayInfo) {
+		this.backupDisplayInfo = backupDisplayInfo;
+	}
+	public String getBackupDisplayInfo( ) {
+		return this.backupDisplayInfo;
+	}
+
+	public void setBackupTemplateCode(String backupTemplateCode) {
+		this.backupTemplateCode = backupTemplateCode;
+	}
+	public String getBackupTemplateCode( ) {
+		return this.backupTemplateCode;
+	}
+
+	public void setBackupTrackInfo(String backupTrackInfo) {
+		this.backupTrackInfo = backupTrackInfo;
+	}
+	public String getBackupTrackInfo( ) {
+		return this.backupTrackInfo;
+	}
+
+	public void setDisplayInfo(String displayInfo) {
+		this.displayInfo = displayInfo;
+	}
+	public String getDisplayInfo( ) {
+		return this.displayInfo;
+	}
+
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+	public String getExtInfo( ) {
+		return this.extInfo;
 	}
 
 	public void setResultCode(String resultCode) {
@@ -91,6 +168,20 @@ public class AlipayUserMemberAlipaybigcardQueryResponse extends AlipayResponse {
 	}
 	public Boolean getSuccess( ) {
 		return this.success;
+	}
+
+	public void setTemplateCode(String templateCode) {
+		this.templateCode = templateCode;
+	}
+	public String getTemplateCode( ) {
+		return this.templateCode;
+	}
+
+	public void setTrackInfo(String trackInfo) {
+		this.trackInfo = trackInfo;
+	}
+	public String getTrackInfo( ) {
+		return this.trackInfo;
 	}
 
 }

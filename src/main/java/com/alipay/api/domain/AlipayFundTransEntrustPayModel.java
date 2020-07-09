@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金委托支付接口	
  *
  * @author auto create
- * @since 1.0, 2020-06-04 21:01:04
+ * @since 1.0, 2020-07-08 11:36:45
  */
 public class AlipayFundTransEntrustPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3657683435444369597L;
+	private static final long serialVersionUID = 7532992125944688651L;
 
 	/**
 	 * 授权对象

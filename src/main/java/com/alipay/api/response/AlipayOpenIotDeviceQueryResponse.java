@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iot.device.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-12 22:52:26
+ * @since 1.0, 2020-07-02 16:35:44
  */
 public class AlipayOpenIotDeviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4463628337245166991L;
+	private static final long serialVersionUID = 8242359699574988768L;
 
 	/** 
-	 * 设备商户绑定关系列表，如果没有查到绑定信息，则该字段结果为空
+	 * 返回设备-商户绑定关系相关数据。注意事项：1）设备绑定接口传入的merchantId字段，间连场景返回smid字段，直连场景返回pid字段；2）如果没有查询到相关绑定信息，则返回为空。
 	 */
 	@ApiField("data")
 	private String data;

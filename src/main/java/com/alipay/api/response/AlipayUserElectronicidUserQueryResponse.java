@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.electronicid.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-06-19 16:15:19
  */
 public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6789275492637574359L;
+	private static final long serialVersionUID = 5343321534234646351L;
 
 	/** 
 	 * 地址。用机构的AES加密后值。
@@ -31,6 +31,12 @@ public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/** 
+	 * 证件本人相片。base64。
+	 */
+	@ApiField("cert_picture")
+	private String certPicture;
 
 	/** 
 	 * 性别(男，女)。用机构的AES加密后值。
@@ -99,6 +105,13 @@ public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 	}
 	public String getCertNo( ) {
 		return this.certNo;
+	}
+
+	public void setCertPicture(String certPicture) {
+		this.certPicture = certPicture;
+	}
+	public String getCertPicture( ) {
+		return this.certPicture;
 	}
 
 	public void setGender(String gender) {

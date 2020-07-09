@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.individual.business.certify request
  * 
  * @author auto create
- * @since 1.0, 2020-01-09 16:14:06
+ * @since 1.0, 2020-07-07 22:35:15
  */
 public class AlipayOpenMiniIndividualBusinessCertifyRequest implements AlipayRequest<AlipayOpenMiniIndividualBusinessCertifyResponse> {
 

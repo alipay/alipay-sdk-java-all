@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单流水查询接口
  *
  * @author auto create
- * @since 1.0, 2019-12-31 17:14:22
+ * @since 1.0, 2020-07-06 11:58:05
  */
 public class MybankCreditLoantradeBillListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2319221688262549892L;
+	private static final long serialVersionUID = 2762117979832957174L;
+
+	/**
+	 * 账单编号列表，最多支持20条记录查询
+	 */
+	@ApiField("bill_no_list")
+	private String billNoList;
 
 	/**
 	 * 账单状态，OVD逾期，CLE结清，NOR正常
@@ -62,6 +68,13 @@ public class MybankCreditLoantradeBillListQueryModel extends AlipayObject {
 	 */
 	@ApiField("user")
 	private UserVo user;
+
+	public String getBillNoList() {
+		return this.billNoList;
+	}
+	public void setBillNoList(String billNoList) {
+		this.billNoList = billNoList;
+	}
 
 	public String getBillStatusList() {
 		return this.billStatusList;

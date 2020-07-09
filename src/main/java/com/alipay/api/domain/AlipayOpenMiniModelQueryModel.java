@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序多种模型查询
  *
  * @author auto create
- * @since 1.0, 2020-01-21 20:14:00
+ * @since 1.0, 2020-06-16 17:11:21
  */
 public class AlipayOpenMiniModelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1112676189624996899L;
+	private static final long serialVersionUID = 8698156346366379964L;
 
 	/**
 	 * 内容：app_info表最新更新时间，格式：时间戳
@@ -36,6 +36,12 @@ public class AlipayOpenMiniModelQueryModel extends AlipayObject {
 	 */
 	@ApiField("deploy_window_modified")
 	private String deployWindowModified;
+
+	/**
+	 * 租户类型，由应用中心分配
+	 */
+	@ApiField("inst_code")
+	private String instCode;
 
 	/**
 	 * 是否为压测流量，true为是，默认false
@@ -81,6 +87,13 @@ public class AlipayOpenMiniModelQueryModel extends AlipayObject {
 	}
 	public void setDeployWindowModified(String deployWindowModified) {
 		this.deployWindowModified = deployWindowModified;
+	}
+
+	public String getInstCode() {
+		return this.instCode;
+	}
+	public void setInstCode(String instCode) {
+		this.instCode = instCode;
 	}
 
 	public String getLoadTest() {

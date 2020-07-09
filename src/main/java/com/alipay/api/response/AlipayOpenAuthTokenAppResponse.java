@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.auth.token.app response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-24 18:41:10
+ * @since 1.0, 2020-07-03 10:27:40
  */
 public class AlipayOpenAuthTokenAppResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8161298174171734755L;
+	private static final long serialVersionUID = 5168266519163993739L;
 
 	/** 
 	 * 应用授权令牌
@@ -36,7 +36,7 @@ public class AlipayOpenAuthTokenAppResponse extends AlipayResponse {
 	private String authAppId;
 
 	/** 
-	 * 应用授权令牌的有效时间（从接口调用时间作为起始时间），单位到秒
+	 * 该字段已作废，应用令牌长期有效，接入方不需要消费该字段
 	 */
 	@ApiField("expires_in")
 	private String expiresIn;

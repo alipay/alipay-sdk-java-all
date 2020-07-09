@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流信息需要新增
  *
  * @author auto create
- * @since 1.0, 2020-02-25 21:31:43
+ * @since 1.0, 2020-06-20 11:00:36
  */
 public class OrderLogisticsInformation extends AlipayObject {
 
-	private static final long serialVersionUID = 3867276913549482659L;
+	private static final long serialVersionUID = 7765355124696688421L;
 
 	/**
 	 * 物流信息

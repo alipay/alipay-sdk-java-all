@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户身份的额外信息
  *
  * @author auto create
- * @since 1.0, 2020-03-18 10:23:04
+ * @since 1.0, 2020-06-16 16:47:01
  */
 public class UserIdentityExt extends AlipayObject {
 
-	private static final long serialVersionUID = 2416357797472323527L;
+	private static final long serialVersionUID = 1629295815586876495L;
 
 	/**
 	 * 用户交易账号的发卡机构id

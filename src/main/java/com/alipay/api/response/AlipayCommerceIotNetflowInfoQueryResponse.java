@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.netflow.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-12 17:12:27
+ * @since 1.0, 2020-06-24 09:55:16
  */
 public class AlipayCommerceIotNetflowInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3178525915476479671L;
+	private static final long serialVersionUID = 5231219966713983892L;
 
 	/** 
 	 * 流量充值记录信息

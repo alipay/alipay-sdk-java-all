@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * pos订单查询接口
  *
  * @author auto create
- * @since 1.0, 2020-03-02 16:56:25
+ * @since 1.0, 2020-06-18 15:06:11
  */
 public class KoubeiCateringOrderInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7652274866217167679L;
+	private static final long serialVersionUID = 7631994469131521912L;
 
 	/**
 	 * 订单ID

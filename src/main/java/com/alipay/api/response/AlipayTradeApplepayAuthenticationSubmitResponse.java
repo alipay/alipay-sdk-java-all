@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.OpenApiResponseHeader;
+import com.alipay.api.domain.UpdatedAuthenticationDetails;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.applepay.authentication.submit response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-05 10:06:16
+ * @since 1.0, 2020-06-16 19:45:13
  */
 public class AlipayTradeApplepayAuthenticationSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6613518697113567845L;
+	private static final long serialVersionUID = 8445814744375421256L;
 
 	/** 
 	 * 核身错误信息
@@ -42,6 +43,18 @@ public class AlipayTradeApplepayAuthenticationSubmitResponse extends AlipayRespo
 	@ApiListField("retry_authentication_mechanisms")
 	@ApiField("string")
 	private List<String> retryAuthenticationMechanisms;
+
+	/** 
+	 * base64之后的证书
+	 */
+	@ApiField("signing_certificate")
+	private String signingCertificate;
+
+	/** 
+	 * 最新的鉴权明细信息
+	 */
+	@ApiField("updated_authentication_details")
+	private UpdatedAuthenticationDetails updatedAuthenticationDetails;
 
 	/** 
 	 * 交易状态
@@ -75,6 +88,20 @@ public class AlipayTradeApplepayAuthenticationSubmitResponse extends AlipayRespo
 	}
 	public List<String> getRetryAuthenticationMechanisms( ) {
 		return this.retryAuthenticationMechanisms;
+	}
+
+	public void setSigningCertificate(String signingCertificate) {
+		this.signingCertificate = signingCertificate;
+	}
+	public String getSigningCertificate( ) {
+		return this.signingCertificate;
+	}
+
+	public void setUpdatedAuthenticationDetails(UpdatedAuthenticationDetails updatedAuthenticationDetails) {
+		this.updatedAuthenticationDetails = updatedAuthenticationDetails;
+	}
+	public UpdatedAuthenticationDetails getUpdatedAuthenticationDetails( ) {
+		return this.updatedAuthenticationDetails;
 	}
 
 	public void setUpdatedTransactionStatus(String updatedTransactionStatus) {

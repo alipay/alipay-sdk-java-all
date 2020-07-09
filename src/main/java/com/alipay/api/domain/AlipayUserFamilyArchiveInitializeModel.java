@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 初始化家人信息档案(选人授权)组件
  *
  * @author auto create
- * @since 1.0, 2020-06-11 21:40:21
+ * @since 1.0, 2020-07-08 11:52:40
  */
 public class AlipayUserFamilyArchiveInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1359235789396439621L;
+	private static final long serialVersionUID = 4394939462577298647L;
 
 	/**
 	 * 家庭档案id

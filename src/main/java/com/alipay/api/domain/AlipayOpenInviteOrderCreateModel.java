@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV邀约即授权页面创建
  *
  * @author auto create
- * @since 1.0, 2019-12-27 10:38:33
+ * @since 1.0, 2020-06-28 17:35:57
  */
 public class AlipayOpenInviteOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6461459986558511921L;
+	private static final long serialVersionUID = 4553179967444793538L;
 
 	/**
 	 * isv业务系统的申请单id

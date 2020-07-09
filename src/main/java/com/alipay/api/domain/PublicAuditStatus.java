@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活号审核状态
  *
  * @author auto create
- * @since 1.0, 2017-09-20 17:31:46
+ * @since 1.0, 2020-06-24 14:32:27
  */
 public class PublicAuditStatus extends AlipayObject {
 
-	private static final long serialVersionUID = 1468658423713166718L;
+	private static final long serialVersionUID = 5697176544965358953L;
 
 	/**
 	 * 审核状态描述，如果审核驳回则有相关的驳回理由

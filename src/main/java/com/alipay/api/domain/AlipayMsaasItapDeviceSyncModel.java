@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 智能终端设备同步
  *
  * @author auto create
- * @since 1.0, 2020-01-09 11:01:31
+ * @since 1.0, 2020-06-23 20:51:30
  */
 public class AlipayMsaasItapDeviceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3755283637753369677L;
+	private static final long serialVersionUID = 2244361251924979797L;
 
 	/**
 	 * 设备同步消息体

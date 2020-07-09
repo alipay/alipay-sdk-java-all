@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单同步接口
  *
  * @author auto create
- * @since 1.0, 2019-08-29 11:17:49
+ * @since 1.0, 2020-06-23 17:15:29
  */
 public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2286378231144454593L;
+	private static final long serialVersionUID = 4496187367119718254L;
 
 	/**
 	 * 车牌

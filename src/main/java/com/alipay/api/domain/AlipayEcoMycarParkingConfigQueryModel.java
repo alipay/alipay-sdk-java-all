@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV系统配置查询接口
  *
  * @author auto create
- * @since 1.0, 2020-06-09 16:52:53
+ * @since 1.0, 2020-07-02 11:10:27
  */
 public class AlipayEcoMycarParkingConfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1114376822819964586L;
+	private static final long serialVersionUID = 3138248472254365812L;
 
 	/**
 	 * H5传入参数固定值：alipay.eco.mycar.parking.userpage.query

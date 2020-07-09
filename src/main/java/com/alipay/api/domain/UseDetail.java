@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益使用详情
  *
  * @author auto create
- * @since 1.0, 2020-01-08 19:54:52
+ * @since 1.0, 2020-06-22 10:06:15
  */
 public class UseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5252149467727849667L;
+	private static final long serialVersionUID = 7445478353431995851L;
 
 	/**
 	 * 实付金额，单位是分

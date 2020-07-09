@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.applepay.pbstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-29 10:26:02
+ * @since 1.0, 2020-06-18 19:27:28
  */
 public class AlipayUserApplepayPbstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4811369217942219747L;
+	private static final long serialVersionUID = 3642888477382648191L;
 
 	/** 
 	 * 卡状态列表
@@ -28,6 +28,12 @@ public class AlipayUserApplepayPbstatusQueryResponse extends AlipayResponse {
 	@ApiField("response_header")
 	private OpenApiResponseHeader responseHeader;
 
+	/** 
+	 * 状态
+	 */
+	@ApiField("state")
+	private String state;
+
 	public void setPassStatusList(OpenApiPassStatus passStatusList) {
 		this.passStatusList = passStatusList;
 	}
@@ -40,6 +46,13 @@ public class AlipayUserApplepayPbstatusQueryResponse extends AlipayResponse {
 	}
 	public OpenApiResponseHeader getResponseHeader( ) {
 		return this.responseHeader;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getState( ) {
+		return this.state;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑泛行业系统商创建作品集接口
  *
  * @author auto create
- * @since 1.0, 2017-10-20 11:04:51
+ * @since 1.0, 2020-06-18 11:55:07
  */
 public class KoubeiServindustryPortfolioDataCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6762243394448818618L;
+	private static final long serialVersionUID = 5816163473477499396L;
 
 	/**
 	 * ISV插件ID

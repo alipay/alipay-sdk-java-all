@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.netflow.info.query request
  * 
  * @author auto create
- * @since 1.0, 2020-06-12 17:12:27
+ * @since 1.0, 2020-06-24 09:55:16
  */
 public class AlipayCommerceIotNetflowInfoQueryRequest implements AlipayRequest<AlipayCommerceIotNetflowInfoQueryResponse> {
 

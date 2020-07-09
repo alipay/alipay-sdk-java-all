@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部接入内容中台的标准内容接口
  *
  * @author auto create
- * @since 1.0, 2019-12-09 15:15:20
+ * @since 1.0, 2020-07-03 20:37:37
  */
 public class AlipaySocialBaseContentlibStandardcontentSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6864493946716278821L;
+	private static final long serialVersionUID = 2758817235856214291L;
 
 	/**
 	 * action_type为此次请求类型，值为枚举，有三种，publish(发布),depublish(撤回),heartbeat(心跳),具体对接请联系负责人,必填

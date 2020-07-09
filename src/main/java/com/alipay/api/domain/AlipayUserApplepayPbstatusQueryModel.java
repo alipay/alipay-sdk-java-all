@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询卡状态
  *
  * @author auto create
- * @since 1.0, 2020-05-29 10:26:02
+ * @since 1.0, 2020-06-18 19:26:37
  */
 public class AlipayUserApplepayPbstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5761621538682793231L;
+	private static final long serialVersionUID = 8778248398577235443L;
+
+	/**
+	 * 当前的状态
+	 */
+	@ApiField("current_state")
+	private String currentState;
 
 	/**
 	 * 设备接受语言
@@ -30,6 +36,13 @@ public class AlipayUserApplepayPbstatusQueryModel extends AlipayObject {
 	 */
 	@ApiField("reference_identifier")
 	private String referenceIdentifier;
+
+	public String getCurrentState() {
+		return this.currentState;
+	}
+	public void setCurrentState(String currentState) {
+		this.currentState = currentState;
+	}
 
 	public String getDeviceAcceptLanguage() {
 		return this.deviceAcceptLanguage;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统商删除作品集接口
  *
  * @author auto create
- * @since 1.0, 2017-10-20 11:04:38
+ * @since 1.0, 2020-06-18 11:53:34
  */
 public class KoubeiServindustryPortfolioDataDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4387671487563795948L;
+	private static final long serialVersionUID = 6475693358995835955L;
 
 	/**
 	 * 作品集id

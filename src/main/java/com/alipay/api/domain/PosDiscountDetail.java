@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * pos优惠明细信息
  *
  * @author auto create
- * @since 1.0, 2019-01-03 22:26:59
+ * @since 1.0, 2020-07-08 16:45:13
  */
 public class PosDiscountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4779997924146682711L;
+	private static final long serialVersionUID = 2448446128936172457L;
 
 	/**
 	 * 活动id
@@ -21,11 +21,14 @@ public class PosDiscountDetail extends AlipayObject {
 
 	/**
 	 * 活动类型，可枚举的类型
-(1)itemDiscount 商品级优惠
-(2) buyItem 购买商品
-(3) fullDiscountCamp 全场折活动
-(4) fullCutCamp 全场满减活动
+(1)itemDiscount: 商品级优惠
+(2) buyItem：购买商品
+(3) fullDiscountCamp：全场折活动
+(4) fullCutCamp：全场满减活动
 (5) fullCutVoucher 全场满减券
+(6) itemReductionVoucher：单品立减券
+(7) itemDiscountVoucher：单品折扣券
+(8) itemSpecifiedVoucher：单品减至券
 	 */
 	@ApiField("activity_type")
 	private String activityType;
@@ -49,10 +52,22 @@ public class PosDiscountDetail extends AlipayObject {
 	private String dishId;
 
 	/**
-	 * 扩展信息，存储优惠的详细模型。json对象格式，key和value都为字符串，其中DISH_ID为菜品id，USER_ITEM_ID为被核销商品id
+	 * 菜品skuId
+	 */
+	@ApiField("dish_sku_id")
+	private String dishSkuId;
+
+	/**
+	 * 此字段废弃，请使用ext_info_str。（扩展信息，存储优惠的详细模型。json对象格式，key和value都为字符串，其中DISH_ID为菜品id，USER_ITEM_ID为被核销商品id）
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 扩展信息，存储优惠的详细模型。json对象格式，key和value都为字符串，其中DISH_ID为菜品id，USER_ITEM_ID为被核销商品id，TEMPLATE_ID为券模版id，VOUCHER_ID为券实例id
+	 */
+	@ApiField("ext_info_str")
+	private String extInfoStr;
 
 	/**
 	 * 商家出资优惠金额，以元为单位，精确到分
@@ -113,11 +128,25 @@ public class PosDiscountDetail extends AlipayObject {
 		this.dishId = dishId;
 	}
 
+	public String getDishSkuId() {
+		return this.dishSkuId;
+	}
+	public void setDishSkuId(String dishSkuId) {
+		this.dishSkuId = dishSkuId;
+	}
+
 	public String getExtInfo() {
 		return this.extInfo;
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getExtInfoStr() {
+		return this.extInfoStr;
+	}
+	public void setExtInfoStr(String extInfoStr) {
+		this.extInfoStr = extInfoStr;
 	}
 
 	public String getMrtDiscount() {

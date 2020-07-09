@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 验证支付宝用户Token是否有效
  *
  * @author auto create
- * @since 1.0, 2020-01-09 11:01:51
+ * @since 1.0, 2020-06-23 14:51:44
  */
 public class AlipayMsaasItapUserConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2394562185789613814L;
+	private static final long serialVersionUID = 3628568583224931177L;
 
 	/**
 	 * 用户确认消息体

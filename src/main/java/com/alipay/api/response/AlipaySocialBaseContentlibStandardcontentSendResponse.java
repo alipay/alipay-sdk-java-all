@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.contentlib.standardcontent.send response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-09 15:29:28
+ * @since 1.0, 2020-07-03 20:37:37
  */
 public class AlipaySocialBaseContentlibStandardcontentSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2159357271368897487L;
+	private static final long serialVersionUID = 1766971856299948637L;
 
 	/** 
 	 * result_msg为请求openAPI接口后返回的结果message

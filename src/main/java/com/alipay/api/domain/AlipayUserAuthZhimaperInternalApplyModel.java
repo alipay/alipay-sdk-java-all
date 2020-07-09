@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 协议授权-全网
  *
  * @author auto create
- * @since 1.0, 2017-12-15 15:40:39
+ * @since 1.0, 2020-07-02 19:51:34
  */
 public class AlipayUserAuthZhimaperInternalApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8417463925513638421L;
+	private static final long serialVersionUID = 6282112668872926865L;
 
 	/**
 	 * 证件号码

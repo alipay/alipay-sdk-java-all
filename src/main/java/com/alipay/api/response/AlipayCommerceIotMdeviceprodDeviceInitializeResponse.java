@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.mdeviceprod.device.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-16 16:57:09
+ * @since 1.0, 2020-06-30 16:26:29
  */
 public class AlipayCommerceIotMdeviceprodDeviceInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1238828284417117526L;
+	private static final long serialVersionUID = 7325224457574238132L;
 
 	/** 
 	 * 设备唯一标识

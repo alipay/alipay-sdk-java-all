@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境汇款，网商银行提现结果通知回调
  *
  * @author auto create
- * @since 1.0, 2020-03-19 20:48:51
+ * @since 1.0, 2020-07-09 10:43:08
  */
 public class AlipayOverseasRemitWithdrawNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4388685425835887473L;
+	private static final long serialVersionUID = 5757351847117173869L;
 
 	/**
 	 * APS定义的机构ID

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.itap.device.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-01-09 11:01:38
+ * @since 1.0, 2020-06-23 20:52:30
  */
 public class AlipayMsaasItapDeviceSyncRequest implements AlipayRequest<AlipayMsaasItapDeviceSyncResponse> {
 

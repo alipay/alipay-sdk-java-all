@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询某个ISV下的指定app_auth_token的授权信息：授权者、授权接口列表、状态、过期时间等
  *
  * @author auto create
- * @since 1.0, 2016-07-18 13:35:47
+ * @since 1.0, 2020-06-29 19:53:10
  */
 public class AlipayOpenAuthTokenAppQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1765272824223358241L;
+	private static final long serialVersionUID = 2216466881219424792L;
 
 	/**
 	 * 应用授权令牌

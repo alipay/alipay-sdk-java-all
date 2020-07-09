@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销抽奖活动触发
  *
  * @author auto create
- * @since 1.0, 2020-04-27 17:03:34
+ * @since 1.0, 2020-07-08 15:26:57
  */
 public class AlipayMarketingCampaignDrawcampTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7464349374389185411L;
+	private static final long serialVersionUID = 2513191558213533641L;
 
 	/**
 	 * 用户参与活动的手机号（如果是用户直接输入手机号的活动形式，该项必填，作为识别用户的依据）
@@ -66,6 +66,12 @@ public class AlipayMarketingCampaignDrawcampTriggerModel extends AlipayObject {
 	 */
 	@ApiField("prize_id")
 	private String prizeId;
+
+	/**
+	 * 淘宝账号
+	 */
+	@ApiField("taobao_id")
+	private String taobaoId;
 
 	/**
 	 * 支付宝用户uid：支付宝用户唯一标识。该参数用于已知支付宝账号的活动触发。user_id、login_id、bind_mobile三个参数至少有一个非空。
@@ -134,6 +140,13 @@ public class AlipayMarketingCampaignDrawcampTriggerModel extends AlipayObject {
 	}
 	public void setPrizeId(String prizeId) {
 		this.prizeId = prizeId;
+	}
+
+	public String getTaobaoId() {
+		return this.taobaoId;
+	}
+	public void setTaobaoId(String taobaoId) {
+		this.taobaoId = taobaoId;
 	}
 
 	public String getUserId() {

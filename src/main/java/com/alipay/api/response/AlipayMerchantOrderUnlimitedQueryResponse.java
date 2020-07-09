@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.order.unlimited.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-06 20:52:25
+ * @since 1.0, 2020-06-20 10:58:53
  */
 public class AlipayMerchantOrderUnlimitedQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5856998741214848519L;
+	private static final long serialVersionUID = 3231477647269256519L;
 
 	/** 
 	 * 订单信息

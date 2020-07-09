@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.kids.msg.scene.send response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-24 11:05:05
+ * @since 1.0, 2020-07-02 17:50:24
  */
 public class AlipayCommerceKidsMsgSceneSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2826318234394556193L;
+	private static final long serialVersionUID = 3221767155186449596L;
 
 	
 

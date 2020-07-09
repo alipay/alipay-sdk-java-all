@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-17 14:01:39
+ * @since 1.0, 2020-07-06 17:15:18
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8156438986565358335L;
+	private static final long serialVersionUID = 6712261147565775751L;
 
 	/** 
 	 * 详细地址。
@@ -43,28 +43,14 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	private String businessScope;
 
 	/** 
-	 * 【证件号码】结合证件类型使用.
-【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+	 * 【证件号码】结合证件类型使用.【注意】只is_certified为T的时候才有意义，否则不保证准确性.
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/** 
-	 * 【证件类型】
-0:身份证
-1:护照
-2:军官证
-3:士兵证
-4:回乡证
-5:临时身份证
-6:户口簿
-7:警官证
-8:台胞证
-9:营业执照
-10:其它证件
-11:港澳居民来往内地通行证
-12:台湾居民来往大陆通行证
-【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+	 * 【证件类型】0:身份证 1:护照 2:军官证 3:士兵证 4:回乡证 5:临时身份证 6:户口簿 7:警官证 8:台胞证 9:营业执照10:其它证件 11:港澳居民来往内地通行证 12:台湾居民来往大陆通行证 13:台湾居民居住证 14:港澳居民居住证
+ 15:港澳身份证【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -309,8 +295,7 @@ T--被冻结；F--未冻结
 	private String userId;
 
 	/** 
-	 * 若用户是个人用户，则是用户的真实姓名；若是企业用户，则是企业名称。
-【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+	 * 若用户是个人用户，则是用户的真实姓名；若是企业用户，则是企业名称。【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
 	 */
 	@ApiField("user_name")
 	private String userName;
