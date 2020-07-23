@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketMcommentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2634131894426791185L;
+	private static final long serialVersionUID = 2213651427334614879L;
 
 	/** 
 	 * 本次交易号对应的评价在支付宝的唯一标识.评价id

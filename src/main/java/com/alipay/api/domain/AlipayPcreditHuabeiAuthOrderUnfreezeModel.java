@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗额度授权解冻接口
  *
  * @author auto create
- * @since 1.0, 2020-07-06 11:46:58
+ * @since 1.0, 2020-07-17 19:19:44
  */
 public class AlipayPcreditHuabeiAuthOrderUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8822839151146852428L;
+	private static final long serialVersionUID = 8748377246789272168L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业认证V2初始化
  *
  * @author auto create
- * @since 1.0, 2019-08-01 17:30:59
+ * @since 1.0, 2020-07-10 10:14:46
  */
 public class ZhimaCustomerEpIdentificationInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3754636173132551591L;
+	private static final long serialVersionUID = 7845157585946322316L;
 
 	/**
 	 * 认证模式。

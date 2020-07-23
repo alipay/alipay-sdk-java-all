@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.auth.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-20 15:44:17
+ * @since 1.0, 2020-07-13 10:02:07
  */
 public class AlipayEbppInvoiceAuthUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6338917793422973952L;
+	private static final long serialVersionUID = 2133488913313493696L;
 
 	
 

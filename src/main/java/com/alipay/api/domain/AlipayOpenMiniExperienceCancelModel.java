@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniExperienceCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8747875866789377873L;
+	private static final long serialVersionUID = 7666539489975356955L;
 
 	/**
 	 * 小程序版本号

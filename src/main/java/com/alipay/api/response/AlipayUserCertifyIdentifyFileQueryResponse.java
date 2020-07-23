@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.identify.file.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-08 10:54:05
+ * @since 1.0, 2020-07-13 20:23:59
  */
 public class AlipayUserCertifyIdentifyFileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3421632265397712581L;
+	private static final long serialVersionUID = 5476854949736354767L;
 
 	/** 
 	 * 文件的base64数据，一般情况是小于2M的

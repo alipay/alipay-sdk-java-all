@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序预发上架
  *
  * @author auto create
- * @since 1.0, 2020-06-16 11:40:20
+ * @since 1.0, 2020-07-22 20:01:22
  */
 public class AlipayOpenMiniInnerversionPreOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6582942918619919994L;
+	private static final long serialVersionUID = 1628424692953938995L;
 
 	/**
 	 * 一个端的标识，用于区分不同的客户端，每接入一个客户端，都需要向小程序应用中心申请bundelId入驻

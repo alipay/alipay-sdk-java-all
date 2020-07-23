@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.invoice.syncdata.modify response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-29 15:10:11
+ * @since 1.0, 2020-07-14 15:53:33
  */
 public class AlipayFundTransInvoiceSyncdataModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2534898751196341812L;
+	private static final long serialVersionUID = 2751868818863689933L;
 
 	/** 
 	 * 票据详情页url

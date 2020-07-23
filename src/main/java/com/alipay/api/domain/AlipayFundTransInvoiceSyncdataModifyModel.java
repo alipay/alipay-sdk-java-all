@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 票据平台票据信息归集接口
  *
  * @author auto create
- * @since 1.0, 2020-05-29 15:09:59
+ * @since 1.0, 2020-07-14 15:53:33
  */
 public class AlipayFundTransInvoiceSyncdataModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8525793271275878652L;
+	private static final long serialVersionUID = 8155377571735696622L;
 
 	/**
 	 * 票据总金额（元）
@@ -92,6 +92,19 @@ public class AlipayFundTransInvoiceSyncdataModifyModel extends AlipayObject {
 	private String payerId;
 
 	/**
+	 * 当user_id不传值时payer_id_type必须传值，含义为用户身份标识类型
+1 身份证
+	 */
+	@ApiField("payer_id_type")
+	private String payerIdType;
+
+	/**
+	 * 当user_id为空时，payer_id_value必须传值，内容为与payer_id_type对应的标识值，如身份证号130xxx
+	 */
+	@ApiField("payer_id_value")
+	private String payerIdValue;
+
+	/**
 	 * 付款人姓名
 	 */
 	@ApiField("payer_name")
@@ -122,7 +135,7 @@ public class AlipayFundTransInvoiceSyncdataModifyModel extends AlipayObject {
 	private String url;
 
 	/**
-	 * 支付宝用户id
+	 * 支付宝用户id,若为空，则payer_id_type,payer_id_valuey用户身份标识内容必填
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -222,6 +235,20 @@ public class AlipayFundTransInvoiceSyncdataModifyModel extends AlipayObject {
 	}
 	public void setPayerId(String payerId) {
 		this.payerId = payerId;
+	}
+
+	public String getPayerIdType() {
+		return this.payerIdType;
+	}
+	public void setPayerIdType(String payerIdType) {
+		this.payerIdType = payerIdType;
+	}
+
+	public String getPayerIdValue() {
+		return this.payerIdValue;
+	}
+	public void setPayerIdValue(String payerIdValue) {
+		this.payerIdValue = payerIdValue;
 	}
 
 	public String getPayerName() {

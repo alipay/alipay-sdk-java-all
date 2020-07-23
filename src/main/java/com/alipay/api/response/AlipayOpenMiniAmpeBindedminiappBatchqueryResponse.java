@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.bindedminiapp.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-08 09:52:14
+ * @since 1.0, 2020-07-14 14:21:51
  */
 public class AlipayOpenMiniAmpeBindedminiappBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7583283517673435724L;
+	private static final long serialVersionUID = 8245292572952265737L;
 
 	/** 
 	 * 绑定的小程序信息列表
@@ -24,11 +24,24 @@ public class AlipayOpenMiniAmpeBindedminiappBatchqueryResponse extends AlipayRes
 	@ApiField("binded_mini_app_info")
 	private List<BindedMiniAppInfo> bindedMiniAppList;
 
+	/** 
+	 * 已绑定小程序的总个数
+	 */
+	@ApiField("total_count")
+	private Long totalCount;
+
 	public void setBindedMiniAppList(List<BindedMiniAppInfo> bindedMiniAppList) {
 		this.bindedMiniAppList = bindedMiniAppList;
 	}
 	public List<BindedMiniAppInfo> getBindedMiniAppList( ) {
 		return this.bindedMiniAppList;
+	}
+
+	public void setTotalCount(Long totalCount) {
+		this.totalCount = totalCount;
+	}
+	public Long getTotalCount( ) {
+		return this.totalCount;
 	}
 
 }

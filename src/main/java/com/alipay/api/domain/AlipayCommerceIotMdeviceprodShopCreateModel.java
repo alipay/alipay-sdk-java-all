@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业虚拟门店创建
  *
  * @author auto create
- * @since 1.0, 2019-09-09 11:36:57
+ * @since 1.0, 2020-07-13 17:29:31
  */
 public class AlipayCommerceIotMdeviceprodShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4811695271488582228L;
+	private static final long serialVersionUID = 1618216566372233211L;
 
 	/**
 	 * 西湖区文三路国际大厦

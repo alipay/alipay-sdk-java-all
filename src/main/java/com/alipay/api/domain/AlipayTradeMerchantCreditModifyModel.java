@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易卖家可分配授信额度修改
  *
  * @author auto create
- * @since 1.0, 2020-03-11 16:03:33
+ * @since 1.0, 2020-07-10 19:41:54
  */
 public class AlipayTradeMerchantCreditModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3412531128822935483L;
+	private static final long serialVersionUID = 8128849256542917424L;
 
 	/**
 	 * 标识本次授信拆分的业务场景，具体的值由支付宝定义

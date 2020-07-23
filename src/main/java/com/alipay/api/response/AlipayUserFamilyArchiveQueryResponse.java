@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.family.archive.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-08 11:52:25
+ * @since 1.0, 2020-07-14 14:32:34
  */
 public class AlipayUserFamilyArchiveQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3263217316531789257L;
+	private static final long serialVersionUID = 5462283654774281894L;
 
 	/** 
 	 * 家庭档案列表，包含档案id、档案详情等

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序取消预发
  *
  * @author auto create
- * @since 1.0, 2020-06-16 11:40:55
+ * @since 1.0, 2020-07-22 20:01:04
  */
 public class AlipayOpenMiniInnerversionPreCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7588118594794826125L;
+	private static final long serialVersionUID = 4585456736579253744L;
 
 	/**
 	 * 一个端的标识，用于区分不同的客户端，每接入一个客户端，都需要向小程序应用中心申请bundelId入驻

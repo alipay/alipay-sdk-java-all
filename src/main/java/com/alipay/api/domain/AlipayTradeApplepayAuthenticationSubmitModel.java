@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ApplePay支付鉴权提交
  *
  * @author auto create
- * @since 1.0, 2020-06-16 19:43:21
+ * @since 1.0, 2020-07-15 16:40:53
  */
 public class AlipayTradeApplepayAuthenticationSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3864212921432136628L;
+	private static final long serialVersionUID = 3747558793294768233L;
 
 	/**
 	 * ApplePay核身鉴权结果，包括：支付密码、用户确认、数字签名

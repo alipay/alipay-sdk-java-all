@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加档案身份关系
  *
  * @author auto create
- * @since 1.0, 2020-06-05 19:19:56
+ * @since 1.0, 2020-07-22 20:07:01
  */
 public class AlipayUserAntarchiveIdentityrelationAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7291353168272268971L;
+	private static final long serialVersionUID = 6857256344995438988L;
 
 	/**
 	 * 扩展信息,Map格式JSON序列化表示

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建充值卡支付单
  *
  * @author auto create
- * @since 1.0, 2020-07-01 11:13:40
+ * @since 1.0, 2020-07-14 15:38:10
  */
 public class AlipayMerchantPayforprivilegePayCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3664266388989158352L;
+	private static final long serialVersionUID = 8558636936931376552L;
 
 	/**
 	 * 该字段已废弃，请使用user_id字段查询

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 初始化认证信息
  *
  * @author auto create
- * @since 1.0, 2020-04-09 14:45:44
+ * @since 1.0, 2020-07-13 20:29:10
  */
 public class AlipayUserCertifyActionApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3331793279472621633L;
+	private static final long serialVersionUID = 2821569683461477239L;
 
 	/**
 	 * 表示申请认证信息的业务类型

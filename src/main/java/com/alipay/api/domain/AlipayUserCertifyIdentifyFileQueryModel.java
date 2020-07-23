@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户图片信息查询
  *
  * @author auto create
- * @since 1.0, 2020-04-08 10:54:05
+ * @since 1.0, 2020-07-13 20:23:59
  */
 public class AlipayUserCertifyIdentifyFileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6428323458735174891L;
+	private static final long serialVersionUID = 8389272597863256848L;
 
 	/**
 	 * 文件的地址

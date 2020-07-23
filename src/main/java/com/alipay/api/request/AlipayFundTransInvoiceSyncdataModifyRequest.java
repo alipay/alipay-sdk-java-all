@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.invoice.syncdata.modify request
  * 
  * @author auto create
- * @since 1.0, 2020-05-29 15:10:11
+ * @since 1.0, 2020-07-14 15:53:33
  */
 public class AlipayFundTransInvoiceSyncdataModifyRequest implements AlipayRequest<AlipayFundTransInvoiceSyncdataModifyResponse> {
 

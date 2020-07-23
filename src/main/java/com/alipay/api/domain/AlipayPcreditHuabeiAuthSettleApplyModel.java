@@ -7,11 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享支付接口
  *
  * @author auto create
- * @since 1.0, 2020-06-18 15:57:50
+ * @since 1.0, 2020-07-17 20:39:46
  */
 public class AlipayPcreditHuabeiAuthSettleApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7271135355523653351L;
+	private static final long serialVersionUID = 2468774149945468691L;
+
+	/**
+	 * MERCHANT_SETTLE 结算（需要主动退出在发起结算）;
+QUIT_SETTLE 退出协议（解约协议）;
+PERIOD_SETTLE 分阶段结算（不解约协议）;
+默认为 MERCHANT_SETTLE
+	 */
+	@ApiField("action_type")
+	private String actionType;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。
@@ -54,6 +63,13 @@ public class AlipayPcreditHuabeiAuthSettleApplyModel extends AlipayObject {
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	public String getActionType() {
+		return this.actionType;
+	}
+	public void setActionType(String actionType) {
+		this.actionType = actionType;
+	}
 
 	public String getAgreementNo() {
 		return this.agreementNo;

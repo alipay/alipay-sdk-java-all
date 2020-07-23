@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV订单信息变更通知
  *
  * @author auto create
- * @since 1.0, 2020-06-18 22:33:14
+ * @since 1.0, 2020-07-13 14:52:40
  */
 public class AlipayEbppInvoiceOrderInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6839217981147581323L;
+	private static final long serialVersionUID = 3791192249428833969L;
 
 	/**
 	 * 实际结算金额

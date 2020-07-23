@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序服务信息
  *
  * @author auto create
- * @since 1.0, 2020-07-08 10:06:42
+ * @since 1.0, 2020-07-21 14:38:27
  */
 public class MiniAppServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1171347243587542685L;
+	private static final long serialVersionUID = 5395564253856561574L;
+
+	/**
+	 * 插件发布状态码，暂存100，风控审核200，运营审核300，等待上架400，已预发上架500，已上架501，已下架600，已驳回700
+	 */
+	@ApiField("biz_status")
+	private String bizStatus;
 
 	/**
 	 * 是否是内部标，true/false
@@ -84,6 +90,13 @@ public class MiniAppServiceInfo extends AlipayObject {
 	 */
 	@ApiField("show_type")
 	private String showType;
+
+	public String getBizStatus() {
+		return this.bizStatus;
+	}
+	public void setBizStatus(String bizStatus) {
+		this.bizStatus = bizStatus;
+	}
 
 	public Boolean getIsInner() {
 		return this.isInner;

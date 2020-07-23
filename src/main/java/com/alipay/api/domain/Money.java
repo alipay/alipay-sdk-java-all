@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * money
  *
  * @author auto create
- * @since 1.0, 2020-07-09 14:05:42
+ * @since 1.0, 2020-07-21 21:01:13
  */
 public class Money extends AlipayObject {
 
-	private static final long serialVersionUID = 3818778392159439257L;
+	private static final long serialVersionUID = 4466748742634351826L;
 
 	/**
 	 * 3-letter currency code, refer to ISO 4217 Standard currency alphabetic code

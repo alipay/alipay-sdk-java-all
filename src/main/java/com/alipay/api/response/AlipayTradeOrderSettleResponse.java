@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.order.settle response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-25 09:51:20
+ * @since 1.0, 2020-07-14 19:46:15
  */
 public class AlipayTradeOrderSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3494796793132514849L;
+	private static final long serialVersionUID = 7378845931813186573L;
 
 	/** 
 	 * 支付宝交易号

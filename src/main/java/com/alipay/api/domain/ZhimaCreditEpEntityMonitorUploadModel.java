@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险雷达上传监控实体列表接口
  *
  * @author auto create
- * @since 1.0, 2018-03-22 19:33:27
+ * @since 1.0, 2020-07-17 16:37:22
  */
 public class ZhimaCreditEpEntityMonitorUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5498917975217698519L;
+	private static final long serialVersionUID = 8597377829492524513L;
 
 	/**
 	 * 监控实体列表（实体名，实体代码）

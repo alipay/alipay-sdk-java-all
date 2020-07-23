@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝认证图片上传
  *
  * @author auto create
- * @since 1.0, 2020-04-08 10:51:56
+ * @since 1.0, 2020-07-13 20:33:23
  */
 public class AlipayUserCertifyImgUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5628144761259736137L;
+	private static final long serialVersionUID = 8325927978656587433L;
 
 	/**
 	 * 业务来源，用于支付宝认证系统识别是哪个业务方

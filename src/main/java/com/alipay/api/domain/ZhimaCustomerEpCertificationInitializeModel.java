@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业认证初始化
  *
  * @author auto create
- * @since 1.0, 2017-10-27 14:28:16
+ * @since 1.0, 2020-07-10 10:17:02
  */
 public class ZhimaCustomerEpCertificationInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7562542895977872649L;
+	private static final long serialVersionUID = 6571176217513734982L;
 
 	/**
 	 * 认证场景码，支持的场景码有EP_ALIPAY_ACCOUNT。签约的协议决定了可以使用哪些场景。

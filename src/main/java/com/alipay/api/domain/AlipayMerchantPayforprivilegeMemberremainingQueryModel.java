@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员充值余额查询
  *
  * @author auto create
- * @since 1.0, 2020-07-01 11:13:28
+ * @since 1.0, 2020-07-14 15:37:22
  */
 public class AlipayMerchantPayforprivilegeMemberremainingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1528453264283927235L;
+	private static final long serialVersionUID = 3288214463158337831L;
 
 	/**
 	 * 该字段已废弃，请通过user_id查询

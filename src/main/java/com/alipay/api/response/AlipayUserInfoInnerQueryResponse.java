@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.inner.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-09 10:31:28
+ * @since 1.0, 2020-07-14 15:44:30
  */
 public class AlipayUserInfoInnerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4114797664615782946L;
+	private static final long serialVersionUID = 8592451833373343462L;
 
 	/** 
 	 * 绑定手机号码
@@ -25,6 +25,12 @@ public class AlipayUserInfoInnerQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("email")
 	private String email;
+
+	/** 
+	 * 邮箱登录名。如果未设置，则返回空字符串
+	 */
+	@ApiField("email_logon_id")
+	private String emailLogonId;
 
 	/** 
 	 * 阿里集团统一ID
@@ -42,10 +48,22 @@ N:非金融机构或特殊单位
 	private String instType;
 
 	/** 
+	 * 是否开启余额支付。T是，F否
+	 */
+	@ApiField("is_enable_payment")
+	private String isEnablePayment;
+
+	/** 
 	 * 账户是否禁止提现，T是，F否
 	 */
 	@ApiField("is_forbidden_withdraw")
 	private String isForbiddenWithdraw;
+
+	/** 
+	 * 手机登录名。如果未设置，则返回空字符串
+	 */
+	@ApiField("mobile_logon_id")
+	private String mobileLogonId;
 
 	/** 
 	 * 蚂蚁统一会员ID
@@ -73,6 +91,13 @@ N:非金融机构或特殊单位
 		return this.email;
 	}
 
+	public void setEmailLogonId(String emailLogonId) {
+		this.emailLogonId = emailLogonId;
+	}
+	public String getEmailLogonId( ) {
+		return this.emailLogonId;
+	}
+
 	public void setHavanaId(String havanaId) {
 		this.havanaId = havanaId;
 	}
@@ -87,11 +112,25 @@ N:非金融机构或特殊单位
 		return this.instType;
 	}
 
+	public void setIsEnablePayment(String isEnablePayment) {
+		this.isEnablePayment = isEnablePayment;
+	}
+	public String getIsEnablePayment( ) {
+		return this.isEnablePayment;
+	}
+
 	public void setIsForbiddenWithdraw(String isForbiddenWithdraw) {
 		this.isForbiddenWithdraw = isForbiddenWithdraw;
 	}
 	public String getIsForbiddenWithdraw( ) {
 		return this.isForbiddenWithdraw;
+	}
+
+	public void setMobileLogonId(String mobileLogonId) {
+		this.mobileLogonId = mobileLogonId;
+	}
+	public String getMobileLogonId( ) {
+		return this.mobileLogonId;
 	}
 
 	public void setUserId(String userId) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁会员积分支付接口（需要用户授权）
  *
  * @author auto create
- * @since 1.0, 2020-07-03 19:40:01
+ * @since 1.0, 2020-07-20 21:00:14
  */
 public class AlipayUserMpointPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4693829879326317884L;
+	private static final long serialVersionUID = 1716434762484193588L;
 
 	/**
 	 * 业务子类型，由会员方面分配

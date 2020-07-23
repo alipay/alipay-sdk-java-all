@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.auth.userinfo.apply response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-09 14:45:23
+ * @since 1.0, 2020-07-14 11:17:21
  */
 public class AlipayUserAuthUserinfoApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3167678379197911259L;
+	private static final long serialVersionUID = 5878929977152567726L;
 
 	/** 
 	 * 授权的码

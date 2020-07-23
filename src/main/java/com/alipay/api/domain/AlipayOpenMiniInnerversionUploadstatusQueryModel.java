@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询构建状态
  *
  * @author auto create
- * @since 1.0, 2020-03-27 17:34:02
+ * @since 1.0, 2020-07-14 10:40:09
  */
 public class AlipayOpenMiniInnerversionUploadstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8493243282884889157L;
+	private static final long serialVersionUID = 3517813545411852159L;
 
 	/**
 	 * 包管理ID，用于查询打包状态

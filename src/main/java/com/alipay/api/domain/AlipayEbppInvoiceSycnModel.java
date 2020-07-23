@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部商户同步电子发票至支付宝
  *
  * @author auto create
- * @since 1.0, 2020-05-20 15:40:06
+ * @since 1.0, 2020-07-10 15:29:59
  */
 public class AlipayEbppInvoiceSycnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1533891689689738237L;
+	private static final long serialVersionUID = 1129885371452578774L;
 
 	/**
 	 * 同步发票信息模型

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品库加料查询接口
  *
  * @author auto create
- * @since 1.0, 2020-03-12 11:12:39
+ * @since 1.0, 2020-07-16 19:42:32
  */
 public class KoubeiCateringDishMaterialQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4653346183748185731L;
+	private static final long serialVersionUID = 2439242742673871413L;
 
 	/**
-	 * 加料的id，若不为空，则为单条查询，page_size和page_no失效；如果为空，则为批量查询，page_size和page_no必传，否则为默认值
+	 * 口碑内部加料id，若不为空，则为单条查询，page_size和page_no失效；如果为空，则为批量查询，page_size和page_no必传，否则为默认值
 	 */
 	@ApiField("material_id")
 	private String materialId;
@@ -24,6 +24,12 @@ public class KoubeiCateringDishMaterialQueryModel extends AlipayObject {
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
+
+	/**
+	 * isv的外部加料id，和口碑内部加料id二选一，都不为空时以内部加料id为优先；若不为空，则为单条查询，page_size和page_no失效；如果都为空，则为批量查询，page_size和page_no必传，否则为默认值
+	 */
+	@ApiField("out_material_id")
+	private String outMaterialId;
 
 	/**
 	 * 查询页码，表示第几页；兼顾老版本，批量查询不传时默认为1
@@ -49,6 +55,13 @@ public class KoubeiCateringDishMaterialQueryModel extends AlipayObject {
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public String getOutMaterialId() {
+		return this.outMaterialId;
+	}
+	public void setOutMaterialId(String outMaterialId) {
+		this.outMaterialId = outMaterialId;
 	}
 
 	public String getPageNo() {

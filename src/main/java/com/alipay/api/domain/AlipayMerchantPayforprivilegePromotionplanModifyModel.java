@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改储值方案
  *
  * @author auto create
- * @since 1.0, 2020-07-01 11:16:10
+ * @since 1.0, 2020-07-14 15:37:46
  */
 public class AlipayMerchantPayforprivilegePromotionplanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5667523746649242815L;
+	private static final long serialVersionUID = 7692644886324415148L;
 
 	/**
 	 * 充享惠方案的结束时间

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.juneng.loan.query request
  * 
  * @author auto create
- * @since 1.0, 2019-05-22 15:26:00
+ * @since 1.0, 2020-07-23 10:04:57
  */
 public class AlipayDataAiserviceJunengLoanQueryRequest implements AlipayRequest<AlipayDataAiserviceJunengLoanQueryResponse> {
 

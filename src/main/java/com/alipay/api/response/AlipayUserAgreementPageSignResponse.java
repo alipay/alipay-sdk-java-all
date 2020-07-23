@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.page.sign response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-29 09:35:17
+ * @since 1.0, 2020-07-15 17:11:16
  */
 public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8313323186134936967L;
+	private static final long serialVersionUID = 7191131371854868328L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。（只有签约成功时才会返回）
@@ -80,6 +80,12 @@ public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 	 */
 	@ApiField("sign_time")
 	private String signTime;
+
+	/** 
+	 * 用户选择的首扣渠道列表。其中list元素是一个map，包含tail - 银行卡尾号、bank_card_type - 银行卡类型。
+	 */
+	@ApiField("specified_sort_assets")
+	private String specifiedSortAssets;
 
 	/** 
 	 * 协议的当前状态。
@@ -178,6 +184,13 @@ public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 	}
 	public String getSignTime( ) {
 		return this.signTime;
+	}
+
+	public void setSpecifiedSortAssets(String specifiedSortAssets) {
+		this.specifiedSortAssets = specifiedSortAssets;
+	}
+	public String getSpecifiedSortAssets( ) {
+		return this.specifiedSortAssets;
 	}
 
 	public void setStatus(String status) {

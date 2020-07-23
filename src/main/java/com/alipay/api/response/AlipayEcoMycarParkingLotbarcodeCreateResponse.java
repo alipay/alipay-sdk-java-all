@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarParkingLotbarcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8845876595489893929L;
+	private static final long serialVersionUID = 2671234342662535514L;
 
 	/** 
 	 * 返回二维码链接地址

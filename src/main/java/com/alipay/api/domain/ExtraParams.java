@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2020-06-18 16:06:07
+ * @since 1.0, 2020-07-17 20:39:46
  */
 public class ExtraParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6678414433917289347L;
+	private static final long serialVersionUID = 4258164833616653954L;
 
 	/**
 	 * 轻会员场景下协议结算周期，由协议生效日期到失效日期拼接(yyyyMMddHHmmss-yyyyMMddHHmmss)，精确到秒。
@@ -25,6 +25,18 @@ public class ExtraParams extends AlipayObject {
 	@ApiField("period_summary_info")
 	private String periodSummaryInfo;
 
+	/**
+	 * 用户主动意愿退出：USER_CANCEL_QUIT; 商户结算退出：SETTLE_APPLY_QUIT; 默认值为SETTLE_APPLY_QUIT；这个字段会影响用户在芝麻信用合约的状态
+	 */
+	@ApiField("quit_type")
+	private String quitType;
+
+	/**
+	 * 代扣期数，周期扣场景PERIOD_SETTLE下需要传递
+	 */
+	@ApiField("withhold_index")
+	private String withholdIndex;
+
 	public String getPeriod() {
 		return this.period;
 	}
@@ -37,6 +49,20 @@ public class ExtraParams extends AlipayObject {
 	}
 	public void setPeriodSummaryInfo(String periodSummaryInfo) {
 		this.periodSummaryInfo = periodSummaryInfo;
+	}
+
+	public String getQuitType() {
+		return this.quitType;
+	}
+	public void setQuitType(String quitType) {
+		this.quitType = quitType;
+	}
+
+	public String getWithholdIndex() {
+		return this.withholdIndex;
+	}
+	public void setWithholdIndex(String withholdIndex) {
+		this.withholdIndex = withholdIndex;
 	}
 
 }

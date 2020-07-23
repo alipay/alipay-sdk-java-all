@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人认证信息申请接口
  *
  * @author auto create
- * @since 1.0, 2020-04-08 10:52:28
+ * @since 1.0, 2020-07-13 20:29:25
  */
 public class AlipayUserCertifyInfoPersonApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5459163753773119861L;
+	private static final long serialVersionUID = 2184863362886377381L;
 
 	/**
 	 * 用户详细地址

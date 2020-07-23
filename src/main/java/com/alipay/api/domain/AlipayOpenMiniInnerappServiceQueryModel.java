@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序服务市场搜索
  *
  * @author auto create
- * @since 1.0, 2020-07-07 11:52:53
+ * @since 1.0, 2020-07-22 19:52:56
  */
 public class AlipayOpenMiniInnerappServiceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2237827934525866468L;
+	private static final long serialVersionUID = 7321384915677815357L;
 
 	/**
 	 * 业务来源，新接入方需要向支付宝申请专用来源，否则不予接入。https://yuque.antfin-inc.com/tinyapp-all/qddncu/bidushixiang
@@ -24,6 +24,12 @@ public class AlipayOpenMiniInnerappServiceQueryModel extends AlipayObject {
 	 */
 	@ApiField("app_sub_type")
 	private String appSubType;
+
+	/**
+	 * 是否需要展示offline状态插件，不传默认为false（不展示）
+	 */
+	@ApiField("include_offline")
+	private Boolean includeOffline;
 
 	/**
 	 * 关键词
@@ -67,6 +73,13 @@ public class AlipayOpenMiniInnerappServiceQueryModel extends AlipayObject {
 	}
 	public void setAppSubType(String appSubType) {
 		this.appSubType = appSubType;
+	}
+
+	public Boolean getIncludeOffline() {
+		return this.includeOffline;
+	}
+	public void setIncludeOffline(Boolean includeOffline) {
+		this.includeOffline = includeOffline;
 	}
 
 	public String getKeyword() {
