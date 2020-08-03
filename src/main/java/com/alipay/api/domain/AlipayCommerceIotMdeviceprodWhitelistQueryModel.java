@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询IoT白名单配置信息
  *
  * @author auto create
- * @since 1.0, 2020-06-22 17:15:10
+ * @since 1.0, 2020-07-23 21:34:13
  */
 public class AlipayCommerceIotMdeviceprodWhitelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6273491782992454422L;
+	private static final long serialVersionUID = 6151254225545128949L;
 
 	/**
 	 * 白名单所属应用的appID

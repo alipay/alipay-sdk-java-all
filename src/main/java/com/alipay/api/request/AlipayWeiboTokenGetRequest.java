@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.weibo.token.get request
  * 
  * @author auto create
- * @since 1.0, 2019-07-24 15:00:21
+ * @since 1.0, 2020-07-30 15:18:05
  */
 public class AlipayWeiboTokenGetRequest implements AlipayRequest<AlipayWeiboTokenGetResponse> {
 

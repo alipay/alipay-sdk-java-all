@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品简化接口套餐组明细信息
  *
  * @author auto create
- * @since 1.0, 2020-06-21 14:57:42
+ * @since 1.0, 2020-07-30 15:17:22
  */
 public class KbdishGroupDetailSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6137553951932356294L;
+	private static final long serialVersionUID = 3389666175175594649L;
 
 	/**
 	 * 加价
@@ -32,7 +32,7 @@ public class KbdishGroupDetailSimplifyInfo extends AlipayObject {
 	private String outSkuId;
 
 	/**
-	 * 套餐明细规格，default：是否默认；true：默认；false：不默认
+	 * 套餐明细规格，default：是否默认；true：默认；false：不默认；cost_inclusive：子菜是否计算入套餐价格内，true：计算，false（默认）：不计算
 	 */
 	@ApiField("rule")
 	private String rule;

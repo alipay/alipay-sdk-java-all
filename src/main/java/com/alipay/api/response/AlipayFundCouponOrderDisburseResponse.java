@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.order.disburse response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-07 20:59:40
+ * @since 1.0, 2020-07-29 16:40:54
  */
 public class AlipayFundCouponOrderDisburseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4722828827544216773L;
+	private static final long serialVersionUID = 7393957624515196866L;
 
 	/** 
 	 * 本次支付的金额，单位为：元（人民币），精确到小数点后两位

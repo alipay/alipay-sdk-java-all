@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 哥伦布用研投放任务灰度比例调整
  *
  * @author auto create
- * @since 1.0, 2020-06-05 17:48:48
+ * @since 1.0, 2020-07-29 11:10:10
  */
 public class AlipaySocialQuestionnareGrayUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3443114875823935266L;
+	private static final long serialVersionUID = 2465753757429386687L;
 
 	/**
 	 * 业务扩展字段

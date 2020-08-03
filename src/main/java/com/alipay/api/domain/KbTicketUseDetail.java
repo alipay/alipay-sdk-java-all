@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券核销明细信息
  *
  * @author auto create
- * @since 1.0, 2018-09-28 22:21:39
+ * @since 1.0, 2020-07-28 20:55:52
  */
 public class KbTicketUseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3759425919398344221L;
+	private static final long serialVersionUID = 6827114943865678443L;
 
 	/**
 	 * 用户购买券的时候实际支付的金额，单位为元，精确到小数点后两位

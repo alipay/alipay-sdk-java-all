@@ -9,17 +9,41 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票交易模型
  *
  * @author auto create
- * @since 1.0, 2020-06-15 10:06:45
+ * @since 1.0, 2020-07-29 17:42:47
  */
 public class EinvTrade extends AlipayObject {
 
-	private static final long serialVersionUID = 1341182622697348337L;
+	private static final long serialVersionUID = 8837629588354747493L;
+
+	/**
+	 * 订单编号
+	 */
+	@ApiField("bill_no")
+	private String billNo;
+
+	/**
+	 * 下单时间
+	 */
+	@ApiField("bill_time")
+	private Date billTime;
+
+	/**
+	 * 商户所在城市(经营地址)
+	 */
+	@ApiField("city_name")
+	private String cityName;
 
 	/**
 	 * 账单明细信息，酒店水单信息，行程单信息，餐饮小票信息
 	 */
 	@ApiField("detail_json")
 	private String detailJson;
+
+	/**
+	 * 账单明细信息，酒店水单，行程单，餐饮小票等pdf原件链接
+	 */
+	@ApiField("download_url")
+	private String downloadUrl;
 
 	/**
 	 * 扩展参数
@@ -83,11 +107,39 @@ catering 餐饮小票
 	@ApiField("trade_type")
 	private String tradeType;
 
+	public String getBillNo() {
+		return this.billNo;
+	}
+	public void setBillNo(String billNo) {
+		this.billNo = billNo;
+	}
+
+	public Date getBillTime() {
+		return this.billTime;
+	}
+	public void setBillTime(Date billTime) {
+		this.billTime = billTime;
+	}
+
+	public String getCityName() {
+		return this.cityName;
+	}
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
 	public String getDetailJson() {
 		return this.detailJson;
 	}
 	public void setDetailJson(String detailJson) {
 		this.detailJson = detailJson;
+	}
+
+	public String getDownloadUrl() {
+		return this.downloadUrl;
+	}
+	public void setDownloadUrl(String downloadUrl) {
+		this.downloadUrl = downloadUrl;
 	}
 
 	public String getExtendMap() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserInvitetaskExchangeConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6428662366797327225L;
+	private static final long serialVersionUID = 5665778646453981397L;
 
 	/** 
 	 * true-确认成功，可以进行下一步的代扣、发货

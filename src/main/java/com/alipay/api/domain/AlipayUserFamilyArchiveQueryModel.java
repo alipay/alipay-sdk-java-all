@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询家人信息档案(选人授权)组件已选的家人档案信息
  *
  * @author auto create
- * @since 1.0, 2020-07-08 11:52:25
+ * @since 1.0, 2020-07-28 09:51:48
  */
 public class AlipayUserFamilyArchiveQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5553327298587631913L;
+	private static final long serialVersionUID = 3843463681788262294L;
 
 	/**
 	 * 家人信息档案(选人授权)组件渲染请求令牌

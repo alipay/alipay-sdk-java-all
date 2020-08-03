@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCashlessitemvoucherTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4421715131148726466L;
+	private static final long serialVersionUID = 7535251242131891464L;
 
 	/** 
 	 * 券模板ID

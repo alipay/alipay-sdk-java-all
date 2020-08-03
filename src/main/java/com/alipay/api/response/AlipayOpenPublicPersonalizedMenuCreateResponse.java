@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.personalized.menu.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-10 18:11:16
+ * @since 1.0, 2020-07-24 10:00:29
  */
 public class AlipayOpenPublicPersonalizedMenuCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8616712597529268354L;
+	private static final long serialVersionUID = 1431627413842724793L;
 
 	/** 
 	 * 该套个性化菜单key

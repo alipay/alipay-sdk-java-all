@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 询价接口
  *
  * @author auto create
- * @since 1.0, 2020-06-08 14:12:07
+ * @since 1.0, 2020-07-31 16:04:47
  */
 public class AlipayInsAutoAutoinsprodEnquriyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6775328626385418476L;
+	private static final long serialVersionUID = 1272716847814632431L;
 
 	/**
 	 * 代理人身份信息
@@ -72,6 +72,12 @@ public class AlipayInsAutoAutoinsprodEnquriyApplyModel extends AlipayObject {
 	 */
 	@ApiField("insured")
 	private InsPerson insured;
+
+	/**
+	 * 名单id，新电焊模式必传
+	 */
+	@ApiField("leads_id")
+	private String leadsId;
 
 	/**
 	 * 外部询价申请业务单号（幂等字段）
@@ -147,6 +153,13 @@ public class AlipayInsAutoAutoinsprodEnquriyApplyModel extends AlipayObject {
 	}
 	public void setInsured(InsPerson insured) {
 		this.insured = insured;
+	}
+
+	public String getLeadsId() {
+		return this.leadsId;
+	}
+	public void setLeadsId(String leadsId) {
+		this.leadsId = leadsId;
 	}
 
 	public String getOutBizNo() {

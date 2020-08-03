@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 哥伦布问卷配置查询
  *
  * @author auto create
- * @since 1.0, 2020-06-05 17:48:40
+ * @since 1.0, 2020-07-29 11:10:52
  */
 public class AlipaySocialQuestionnareTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7143944465442346822L;
+	private static final long serialVersionUID = 2378356567728656917L;
 
 	/**
 	 * 业务类型

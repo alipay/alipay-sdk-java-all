@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 判断支付宝群成员是否在群中
  *
  * @author auto create
- * @since 1.0, 2018-03-15 14:16:48
+ * @since 1.0, 2020-07-28 17:13:45
  */
 public class AlipaySocialBaseChatGmemberConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3275996254977725553L;
+	private static final long serialVersionUID = 3113179756687881147L;
 
 	/**
 	 * 业务类型，申请接入时和我们申请，用于统计和限流

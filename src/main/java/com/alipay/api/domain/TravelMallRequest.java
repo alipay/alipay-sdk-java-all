@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TravelMallRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1672465394627617626L;
+	private static final long serialVersionUID = 2653645623517499981L;
 
 	/**
 	 * 目的地距目标综合体的距离(单位:米)

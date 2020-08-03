@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝社交邀请好友进群
  *
  * @author auto create
- * @since 1.0, 2018-03-15 14:15:26
+ * @since 1.0, 2020-07-28 17:13:17
  */
 public class AlipaySocialBaseChatGinvSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6771683969224699646L;
+	private static final long serialVersionUID = 4767692689528326871L;
 
 	/**
 	 * 群id

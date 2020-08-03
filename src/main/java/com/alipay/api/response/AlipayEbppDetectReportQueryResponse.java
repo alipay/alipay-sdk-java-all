@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.detect.report.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-14 21:33:31
+ * @since 1.0, 2020-07-30 15:10:11
  */
 public class AlipayEbppDetectReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7812143544159544519L;
+	private static final long serialVersionUID = 2312316326653991148L;
 
 	/** 
 	 * 注意：该字段废弃。
@@ -27,10 +27,22 @@ public class AlipayEbppDetectReportQueryResponse extends AlipayResponse {
 	private Boolean auditPass;
 
 	/** 
+	 * 检测详情报告地址
+	 */
+	@ApiField("detail_report")
+	private String detailReport;
+
+	/** 
 	 * 检测结果详情。JSON数组字符串。列出每个检测项的检测详情。
 	 */
 	@ApiField("detect_detail")
 	private String detectDetail;
+
+	/** 
+	 * 检测结果详情，案例过长，可查看 https://yuque.antfin-inc.com/docs/share/dc6d16d3-08c1-46d2-a1ed-c0ca6bbba07d?# 或联系 @温酒 @赵旭敏
+	 */
+	@ApiField("detect_result")
+	private String detectResult;
 
 	/** 
 	 * 检测状态.
@@ -82,11 +94,25 @@ public class AlipayEbppDetectReportQueryResponse extends AlipayResponse {
 		return this.auditPass;
 	}
 
+	public void setDetailReport(String detailReport) {
+		this.detailReport = detailReport;
+	}
+	public String getDetailReport( ) {
+		return this.detailReport;
+	}
+
 	public void setDetectDetail(String detectDetail) {
 		this.detectDetail = detectDetail;
 	}
 	public String getDetectDetail( ) {
 		return this.detectDetail;
+	}
+
+	public void setDetectResult(String detectResult) {
+		this.detectResult = detectResult;
+	}
+	public String getDetectResult( ) {
+		return this.detectResult;
 	}
 
 	public void setDetectStatus(Long detectStatus) {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiCateringPosQrcodeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7151552111772414537L;
+	private static final long serialVersionUID = 4313319263567432588L;
 
 	/**
 	 * 需要同步的桌台与二维码信息

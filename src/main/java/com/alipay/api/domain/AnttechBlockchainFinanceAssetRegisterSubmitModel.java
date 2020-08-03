@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资产登记注册通用提交接口
  *
  * @author auto create
- * @since 1.0, 2020-03-19 15:34:23
+ * @since 1.0, 2020-07-24 17:05:29
  */
 public class AnttechBlockchainFinanceAssetRegisterSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1775246792192856464L;
+	private static final long serialVersionUID = 5657945257362187548L;
 
 	/**
 	 * 资产发现中心内部资产编号，通过apply返回

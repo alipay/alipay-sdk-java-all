@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 子账本转账记录
  *
  * @author auto create
- * @since 1.0, 2020-06-10 10:43:54
+ * @since 1.0, 2020-08-03 16:42:18
  */
 public class TransferAccountBookDetailResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2497577779217648622L;
+	private static final long serialVersionUID = 6716889685945736372L;
 
 	/**
 	 * 付款/收款账户。充值记录中是付款账户。提现、转账记录中是收款账户。支付宝名称及账号脱敏；银行账户的户名脱敏，银行账户显示银行名称+银行卡号后四位

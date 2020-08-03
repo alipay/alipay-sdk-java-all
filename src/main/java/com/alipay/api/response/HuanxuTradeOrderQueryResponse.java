@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: huanxu.trade.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-23 10:21:18
+ * @since 1.0, 2020-07-27 14:00:37
  */
 public class HuanxuTradeOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5292258152389749623L;
+	private static final long serialVersionUID = 6185917195129945387L;
 
 	/** 
 	 * 支付，打款或者退款的操作金额

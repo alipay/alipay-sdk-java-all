@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.risk.warning.add request
  * 
  * @author auto create
- * @since 1.0, 2020-04-01 20:55:08
+ * @since 1.0, 2020-07-23 19:20:11
  */
 public class AnttechBlockchainFinanceRiskWarningAddRequest implements AlipayRequest<AnttechBlockchainFinanceRiskWarningAddResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车代扣退款接口
  *
  * @author auto create
- * @since 1.0, 2020-05-27 21:22:27
+ * @since 1.0, 2020-07-24 10:01:46
  */
 public class AlipayEcoMycarParkingOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5356272962847288533L;
+	private static final long serialVersionUID = 4765412668283587596L;
 
 	/**
 	 * 代扣时返回的支付宝支付交易流水号，系统唯一

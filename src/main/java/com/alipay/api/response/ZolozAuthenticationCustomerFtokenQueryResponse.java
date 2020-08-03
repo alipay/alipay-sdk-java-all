@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.ftoken.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-25 16:50:10
+ * @since 1.0, 2020-07-24 17:12:01
  */
 public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4661433599252497371L;
+	private static final long serialVersionUID = 1582473582394297872L;
 
 	/** 
 	 * 年龄是否在指定范围内，未指定范围则返回空，true/false

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票同步场景下的发票入参模型
  *
  * @author auto create
- * @since 1.0, 2020-06-18 19:21:48
+ * @since 1.0, 2020-07-30 19:37:47
  */
 public class InvoiceSendOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3346327955494167185L;
+	private static final long serialVersionUID = 1722261135354545525L;
 
 	/**
 	 * 支付宝端的申请id。如果在开票过程中，是通过支付宝提交的申请到机构端，支付宝会带上开票申请在支付宝生成的申请id，机构在回传发票的时候只需要回传这个申请id，不用获取用户的uid，支付宝可以根据申请id将发票归集到对应的用户名下
@@ -179,6 +179,13 @@ public class InvoiceSendOpenModel extends AlipayObject {
 	 */
 	@ApiField("tax_amount")
 	private String taxAmount;
+
+	/**
+	 * 交易内容
+	 */
+	@ApiListField("trade_list")
+	@ApiField("einv_trade")
+	private List<EinvTrade> tradeList;
 
 	/**
 	 * 支付宝用户userId，当发送红字发票时，即invoice_type＝RED时，可选填；或者apply_id不为空的时候，可选填；其他情况必填。
@@ -373,6 +380,13 @@ public class InvoiceSendOpenModel extends AlipayObject {
 	}
 	public void setTaxAmount(String taxAmount) {
 		this.taxAmount = taxAmount;
+	}
+
+	public List<EinvTrade> getTradeList() {
+		return this.tradeList;
+	}
+	public void setTradeList(List<EinvTrade> tradeList) {
+		this.tradeList = tradeList;
 	}
 
 	public String getUserId() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.trade.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-27 21:25:34
+ * @since 1.0, 2020-07-29 09:40:13
  */
 public class AlipayEcoMycarTradeOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7336315553879616814L;
+	private static final long serialVersionUID = 8466975659739871826L;
 
 	/** 
 	 * 车主平台交易号，交易订单唯一标记。与车主业务平台订单号相同。

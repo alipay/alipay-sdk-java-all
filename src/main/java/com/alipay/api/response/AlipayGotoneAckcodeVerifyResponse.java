@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.gotone.ackcode.verify response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-24 15:00:32
+ * @since 1.0, 2020-07-30 15:18:19
  */
 public class AlipayGotoneAckcodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4292819254819239926L;
+	private static final long serialVersionUID = 5622466671895733714L;
 
 	/** 
 	 * 返回结果

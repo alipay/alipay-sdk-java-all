@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 移动应用信息
  *
  * @author auto create
- * @since 1.0, 2020-07-14 10:50:54
+ * @since 1.0, 2020-07-29 16:02:22
  */
 public class MobileAppInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2253111162179227487L;
+	private static final long serialVersionUID = 8239492298548612142L;
 
 	/**
 	 * 移动应用绑定小程序数量

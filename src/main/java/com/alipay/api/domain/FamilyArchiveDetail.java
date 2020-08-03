@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭档案详情
  *
  * @author auto create
- * @since 1.0, 2020-07-08 19:26:02
+ * @since 1.0, 2020-07-28 09:51:48
  */
 public class FamilyArchiveDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8792962465168644677L;
+	private static final long serialVersionUID = 1628326581214299547L;
 
 	/**
 	 * 家庭档案中用户填写的详细地址
@@ -54,6 +54,18 @@ public class FamilyArchiveDetail extends AlipayObject {
 	 */
 	@ApiField("city")
 	private String city;
+
+	/**
+	 * 脱敏的家人支付宝登录号
+	 */
+	@ApiField("desensitized_logon_id")
+	private String desensitizedLogonId;
+
+	/**
+	 * 脱敏的家人真实姓名
+	 */
+	@ApiField("desensitized_real_name")
+	private String desensitizedRealName;
 
 	/**
 	 * 家庭档案中用户填写的邮箱地址
@@ -150,6 +162,20 @@ public class FamilyArchiveDetail extends AlipayObject {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getDesensitizedLogonId() {
+		return this.desensitizedLogonId;
+	}
+	public void setDesensitizedLogonId(String desensitizedLogonId) {
+		this.desensitizedLogonId = desensitizedLogonId;
+	}
+
+	public String getDesensitizedRealName() {
+		return this.desensitizedRealName;
+	}
+	public void setDesensitizedRealName(String desensitizedRealName) {
+		this.desensitizedRealName = desensitizedRealName;
 	}
 
 	public String getEmail() {

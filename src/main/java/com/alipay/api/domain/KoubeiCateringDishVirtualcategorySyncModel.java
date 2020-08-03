@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品虚拟类目菜品同步简化接口
  *
  * @author auto create
- * @since 1.0, 2020-07-09 20:24:45
+ * @since 1.0, 2020-07-26 09:38:35
  */
 public class KoubeiCateringDishVirtualcategorySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8189561314427697836L;
+	private static final long serialVersionUID = 2856864444545974947L;
 
 	/**
 	 * 类目信息

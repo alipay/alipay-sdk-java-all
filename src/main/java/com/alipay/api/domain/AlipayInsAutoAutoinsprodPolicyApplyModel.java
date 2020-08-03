@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 下单请求接口
  *
  * @author auto create
- * @since 1.0, 2020-07-02 21:36:49
+ * @since 1.0, 2020-07-31 15:13:30
  */
 public class AlipayInsAutoAutoinsprodPolicyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7776131793356236349L;
+	private static final long serialVersionUID = 4217381977682912954L;
 
 	/**
-	 * 出单的坐席的工号
+	 * 出单的坐席的工号，新电焊模式必填
 	 */
 	@ApiField("agent_no")
 	private String agentNo;
@@ -26,7 +26,7 @@ public class AlipayInsAutoAutoinsprodPolicyApplyModel extends AlipayObject {
 	private String busIncomeAccountNo;
 
 	/**
-	 * 邮寄信息
+	 * 邮寄信息，除了新电焊模式外均必填
 	 */
 	@ApiField("deliver_info")
 	private DeliverInfo deliverInfo;
@@ -44,7 +44,7 @@ public class AlipayInsAutoAutoinsprodPolicyApplyModel extends AlipayObject {
 	private String forceIncomeAccountNo;
 
 	/**
-	 * 指定保险公司支付宝收款账户,一般为保险公司收款账号登录ID
+	 * 指定保险公司支付宝收款账户,一般为保险公司收款账号登录ID，除交商分开承保情况外，默认必填。交商承保情况下可不填，但bus_income_account_no与force_income_account_no必须填写其中一个
 	 */
 	@ApiField("income_account_no")
 	private String incomeAccountNo;

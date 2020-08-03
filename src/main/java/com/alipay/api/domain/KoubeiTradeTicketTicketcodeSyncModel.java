@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑凭证码同步
  *
  * @author auto create
- * @since 1.0, 2019-11-19 16:08:12
+ * @since 1.0, 2020-07-31 15:05:46
  */
 public class KoubeiTradeTicketTicketcodeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4443221118544858837L;
+	private static final long serialVersionUID = 8711388998923441157L;
 
 	/**
 	 * 凭证码类型,INTERNAL_CODE(内部凭证码),EXTERNAL_CODE(外部凭证码),默认INTERNAL_CODE,外部券场景必填

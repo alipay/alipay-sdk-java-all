@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部链路小程序上架
  *
  * @author auto create
- * @since 1.0, 2020-07-14 14:32:39
+ * @since 1.0, 2020-07-28 20:27:42
  */
 public class AlipayOpenMiniInnerversionOnlinePublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7776694369812577119L;
+	private static final long serialVersionUID = 6733779289333831319L;
 
 	/**
 	 * 业务来源
@@ -32,6 +32,12 @@ public class AlipayOpenMiniInnerversionOnlinePublishModel extends AlipayObject {
 	private String bundleId;
 
 	/**
+	 * 否服务降级，如果降级，拉包策略如果端上有本地包，则使用本地包打开，同时异步下载新包，待下次打开则使用新包
+	 */
+	@ApiField("downgrade")
+	private Boolean downgrade;
+
+	/**
 	 * 小程序ID，仅特殊场景使用，普通业务方无需关注该参数
 	 */
 	@ApiField("mini_app_id")
@@ -42,6 +48,12 @@ public class AlipayOpenMiniInnerversionOnlinePublishModel extends AlipayObject {
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * normal默认普通发布，high 高保发布
+	 */
+	@ApiField("release_type")
+	private String releaseType;
 
 	public String getAppOrigin() {
 		return this.appOrigin;
@@ -64,6 +76,13 @@ public class AlipayOpenMiniInnerversionOnlinePublishModel extends AlipayObject {
 		this.bundleId = bundleId;
 	}
 
+	public Boolean getDowngrade() {
+		return this.downgrade;
+	}
+	public void setDowngrade(Boolean downgrade) {
+		this.downgrade = downgrade;
+	}
+
 	public String getMiniAppId() {
 		return this.miniAppId;
 	}
@@ -76,6 +95,13 @@ public class AlipayOpenMiniInnerversionOnlinePublishModel extends AlipayObject {
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public String getReleaseType() {
+		return this.releaseType;
+	}
+	public void setReleaseType(String releaseType) {
+		this.releaseType = releaseType;
 	}
 
 }

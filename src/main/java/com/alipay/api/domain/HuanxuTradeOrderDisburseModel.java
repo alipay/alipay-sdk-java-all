@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 焕旭科技聚合支付资金打款接口
  *
  * @author auto create
- * @since 1.0, 2020-07-23 10:20:40
+ * @since 1.0, 2020-07-27 14:00:46
  */
 public class HuanxuTradeOrderDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8579632379974389838L;
+	private static final long serialVersionUID = 4218863218984986579L;
 
 	/**
 	 * 打款金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]

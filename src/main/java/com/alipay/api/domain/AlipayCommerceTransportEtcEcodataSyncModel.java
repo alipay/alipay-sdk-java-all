@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1319546285742573168L;
+	private static final long serialVersionUID = 5735273453946924267L;
 
 	/**
 	 * 收单方式，支付宝收单：ALIPAY;银行收单：BANK

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑pos订单菜明细
  *
  * @author auto create
- * @since 1.0, 2020-03-30 16:04:35
+ * @since 1.0, 2020-07-30 15:39:54
  */
 public class KbPosOrderDishDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1713479646697731869L;
+	private static final long serialVersionUID = 6678826653452685263L;
 
 	/**
 	 * 改价（单价），以元为单位，精度到分
@@ -78,7 +78,7 @@ public class KbPosOrderDishDetail extends AlipayObject {
 	private Long dishVersion;
 
 	/**
-	 * 扩展信息，json对象格式，key和value都为字符串。目前包含内容为1、outItemId表示外部菜品id，2、outSkuId外部菜品sku id，3、defaultInCarts开台必点菜。4、cookVersion菜谱版本
+	 * 扩展信息，json对象格式，key和value都为字符串。目前包含内容为1、outItemId表示外部菜品id，2、outSkuId外部菜品sku id，3、defaultInCarts开台必点菜。4、cookVersion菜谱版本，5、costInclusive 是否包含在套餐基础价；6、costPrice 原价(以元为单位，精度到分)
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

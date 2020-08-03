@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankPaymentTradeDepositVerifyMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5363933211377859548L;
+	private static final long serialVersionUID = 6148667224576394833L;
 
 	/** 
 	 * 金额是否匹配

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundCouponOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7471699633569487854L;
+	private static final long serialVersionUID = 5379342349493966129L;
 
 	/**
 	 * 需要退款的金额，单位为：元（人民币），精确到小数点后两位

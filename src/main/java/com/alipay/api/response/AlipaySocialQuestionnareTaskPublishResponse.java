@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.questionnare.task.publish response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-05 17:50:13
+ * @since 1.0, 2020-07-29 11:09:40
  */
 public class AlipaySocialQuestionnareTaskPublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3396611249385949693L;
+	private static final long serialVersionUID = 8521392347873183399L;
 
 	/** 
 	 * 业务扩展字段

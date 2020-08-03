@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiAdvertCommissionRoleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5355783255956269757L;
+	private static final long serialVersionUID = 8635658546648983594L;
 
 	/**
 	 * 角色code码，如果不提供该字段，则会遍历所有角色，并返回user_identify是否拥有，
