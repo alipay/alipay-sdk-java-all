@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantPayforprivilegePromotionplanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7365214967359156374L;
+	private static final long serialVersionUID = 7783343467631793521L;
 
 	/** 
 	 * 充享惠方案信息，返回之前创建的充享惠方案信息，方案不存在或者无权限返回空

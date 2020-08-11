@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.pay response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-14 11:30:24
+ * @since 1.0, 2020-08-03 20:00:12
  */
 public class AlipayFundTransPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8676153923896836528L;
+	private static final long serialVersionUID = 7351122865231475111L;
 
 	/** 
 	 * 该笔转账在支付宝系统内部的单据ID
@@ -25,6 +25,12 @@ public class AlipayFundTransPayResponse extends AlipayResponse {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/** 
+	 * 支付宝支付资金流水号
+	 */
+	@ApiField("pay_fund_order_id")
+	private String payFundOrderId;
 
 	/** 
 	 * SUCCESS：支付成功；
@@ -52,6 +58,13 @@ UNKNOWN：未知；建议通过查询确认最新状态
 	}
 	public String getOutBizNo( ) {
 		return this.outBizNo;
+	}
+
+	public void setPayFundOrderId(String payFundOrderId) {
+		this.payFundOrderId = payFundOrderId;
+	}
+	public String getPayFundOrderId( ) {
+		return this.payFundOrderId;
 	}
 
 	public void setStatus(String status) {

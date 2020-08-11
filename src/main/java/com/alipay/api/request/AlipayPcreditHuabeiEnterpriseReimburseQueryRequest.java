@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.enterprise.reimburse.query request
  * 
  * @author auto create
- * @since 1.0, 2020-05-11 11:55:10
+ * @since 1.0, 2020-08-04 14:35:55
  */
 public class AlipayPcreditHuabeiEnterpriseReimburseQueryRequest implements AlipayRequest<AlipayPcreditHuabeiEnterpriseReimburseQueryResponse> {
 

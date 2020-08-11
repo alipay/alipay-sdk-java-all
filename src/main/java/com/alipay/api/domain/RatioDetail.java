@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RatioDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4888352545522499497L;
+	private static final long serialVersionUID = 5488444654237299386L;
 
 	/**
 	 * 区域编码

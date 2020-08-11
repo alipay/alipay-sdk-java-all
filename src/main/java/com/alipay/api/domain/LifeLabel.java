@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 标签信息模型
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:47:33
+ * @since 1.0, 2020-08-10 20:26:56
  */
 public class LifeLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 3699517312766364529L;
+	private static final long serialVersionUID = 7167322292499168884L;
 
 	/**
 	 * 该标签支持的业务列表，menu表示个性化菜单，extension表示个性化扩展区，message表示消息触达

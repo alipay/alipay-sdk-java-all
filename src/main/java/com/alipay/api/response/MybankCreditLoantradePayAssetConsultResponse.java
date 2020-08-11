@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.CreditPayBillAssetVO;
+import com.alipay.api.domain.CreditPayGuideVO;
 import com.alipay.api.domain.CreditPayInstallmentAssetVO;
 import com.alipay.api.domain.CreditPayRefuseVO;
 
@@ -13,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.pay.asset.consult response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-25 20:05:13
+ * @since 1.0, 2020-08-06 10:50:11
  */
 public class MybankCreditLoantradePayAssetConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6697924483239837655L;
+	private static final long serialVersionUID = 5827422447514774148L;
 
 	/** 
 	 * 账期资产视图，如果未咨询账期资产，可能为空
@@ -25,6 +26,12 @@ public class MybankCreditLoantradePayAssetConsultResponse extends AlipayResponse
 	@ApiListField("bill_assets")
 	@ApiField("credit_pay_bill_asset_v_o")
 	private List<CreditPayBillAssetVO> billAssets;
+
+	/** 
+	 * 引导模型
+	 */
+	@ApiField("guide_info")
+	private CreditPayGuideVO guideInfo;
 
 	/** 
 	 * 分期资产视图，如果未咨询分期资产，可能为空
@@ -50,6 +57,13 @@ public class MybankCreditLoantradePayAssetConsultResponse extends AlipayResponse
 	}
 	public List<CreditPayBillAssetVO> getBillAssets( ) {
 		return this.billAssets;
+	}
+
+	public void setGuideInfo(CreditPayGuideVO guideInfo) {
+		this.guideInfo = guideInfo;
+	}
+	public CreditPayGuideVO getGuideInfo( ) {
+		return this.guideInfo;
 	}
 
 	public void setInstallmentAssets(List<CreditPayInstallmentAssetVO> installmentAssets) {

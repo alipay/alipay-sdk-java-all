@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约记录信息
  *
  * @author auto create
- * @since 1.0, 2020-03-25 15:58:10
+ * @since 1.0, 2020-08-07 16:48:26
  */
 public class QueryRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 8684524964122582962L;
+	private static final long serialVersionUID = 8688255341544543899L;
 
 	/**
 	 * 企业编号

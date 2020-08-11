@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品明细信息
  *
  * @author auto create
- * @since 1.0, 2018-11-20 21:05:09
+ * @since 1.0, 2020-08-05 20:15:02
  */
 public class DishList extends AlipayObject {
 
-	private static final long serialVersionUID = 4721592237128181641L;
+	private static final long serialVersionUID = 1755563777319752276L;
 
 	/**
 	 * 总价

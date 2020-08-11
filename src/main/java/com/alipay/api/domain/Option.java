@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 展示文本和对应取值的映射关系
  *
  * @author auto create
- * @since 1.0, 2017-06-14 11:09:05
+ * @since 1.0, 2020-08-10 20:26:56
  */
 public class Option extends AlipayObject {
 
-	private static final long serialVersionUID = 6865449489337338141L;
+	private static final long serialVersionUID = 7826927392188655662L;
 
 	/**
 	 * 文本，通常用于理解对应的取值

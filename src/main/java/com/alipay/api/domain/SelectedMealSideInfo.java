@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 套餐子明细的加料信息
  *
  * @author auto create
- * @since 1.0, 2019-01-29 17:46:32
+ * @since 1.0, 2020-08-05 20:15:02
  */
 public class SelectedMealSideInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5864837274185637927L;
+	private static final long serialVersionUID = 3832981178729444416L;
 
 	/**
 	 * 套餐的加价.仅当type=COMBO时有效

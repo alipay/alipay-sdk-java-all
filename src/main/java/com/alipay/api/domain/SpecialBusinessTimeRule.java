@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 特殊营业时间规则
  *
  * @author auto create
- * @since 1.0, 2020-03-30 16:04:49
+ * @since 1.0, 2020-08-05 20:13:51
  */
 public class SpecialBusinessTimeRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7321295492686558581L;
+	private static final long serialVersionUID = 2559673859497964874L;
 
 	/**
 	 * 开始日期

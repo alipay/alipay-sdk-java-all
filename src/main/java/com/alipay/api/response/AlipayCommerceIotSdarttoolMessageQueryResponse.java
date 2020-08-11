@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.sdarttool.message.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-22 19:27:31
+ * @since 1.0, 2020-08-04 21:55:11
  */
 public class AlipayCommerceIotSdarttoolMessageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1296672888371541353L;
+	private static final long serialVersionUID = 5691997335294486661L;
 
 	/** 
 	 * 消息消费返回码，不用的消息类型返回码不一样
@@ -27,7 +27,7 @@ public class AlipayCommerceIotSdarttoolMessageQueryResponse extends AlipayRespon
 	private String consumeErrMsg;
 
 	/** 
-	 * 消息消费状态1-成功 2-失败
+	 * 消息消费状态1-未消费; 2-消费成功；3-消费失败
 	 */
 	@ApiField("consume_state")
 	private Long consumeState;

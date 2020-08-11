@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserUnicomDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7827564699327293779L;
+	private static final long serialVersionUID = 7449198576535691682L;
 
 	/** 
 	 * 蚂蚁宝卡流量余额，单位M

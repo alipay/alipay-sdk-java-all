@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC生态发行订单数据同步
  *
  * @author auto create
- * @since 1.0, 2020-07-22 10:39:10
+ * @since 1.0, 2020-08-04 10:01:59
  */
 public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5735273453946924267L;
+	private static final long serialVersionUID = 1598969149563242619L;
 
 	/**
 	 * 收单方式，支付宝收单：ALIPAY;银行收单：BANK
@@ -92,6 +92,12 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 	private String engineNo;
 
 	/**
+	 * 发行方卡名称；激活时必传
+	 */
+	@ApiField("etc_name")
+	private String etcName;
+
+	/**
 	 * 发证日期
 	 */
 	@ApiField("grant_date")
@@ -154,20 +160,49 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 
 	/**
 	 * 发行方id，一般为ETC卡号前缀：
-'3701':'山东';
-'3201':'江苏';
-'3301':'浙江';
-'3101':'上海';
-'1101':'北京';
-'3401':'安徽';
-'5201':'贵州';
-'4501':'广西';
-'1301':'河北';
-'1201':'天津';
-'4301':'湖南';
+"3701", "山东省"；
+"6201", "甘肃省"；
+"3201", "江苏省"；
+"1101", "北京"；
+"5301", "云南省"；
+"4601", "海南省"；
+"3301", "浙江省"；
+"3101", "上海"；
+"6101", "陕西省"；
+"1201", "天津"；
+"6501", "新疆维吾尔自治区"；
+"5201", "贵州省"；
+"3401", "安徽省"；
+"8201", "澳门特别行政区"；
+"4301", "湖南省"；
+"1301", "河北省"；
+"8101", "香港特别行政区"；
+"2101", "辽宁省"；
+"5101", "四川省"；
+"6401", "宁夏回族自治区"；
+"2201", "吉林省"；
+"3501", "福建省"；
+"4201", "湖北省"；
+"4401", "广东省"；
+"5001", "重庆"；
+"1401", "山西省"；
+"3601", "江西省"；
+"2301", "黑龙江省"；
+"6301", "青海省"；
+"4101", "河南省"；
+"7101", "台湾省"；
+"1501", "内蒙古自治区"；
+"5401", "西藏自治区"；
+"4501", "广西壮族自治区"；
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 发行方名称；激活时必传
+	 */
+	@ApiField("seller_name")
+	private String sellerName;
 
 	/**
 	 * 准牵引总质量
@@ -307,6 +342,13 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 		this.engineNo = engineNo;
 	}
 
+	public String getEtcName() {
+		return this.etcName;
+	}
+	public void setEtcName(String etcName) {
+		this.etcName = etcName;
+	}
+
 	public String getGrantDate() {
 		return this.grantDate;
 	}
@@ -368,6 +410,13 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public String getSellerName() {
+		return this.sellerName;
+	}
+	public void setSellerName(String sellerName) {
+		this.sellerName = sellerName;
 	}
 
 	public String getTractionMass() {

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-28 20:35:20
+ * @since 1.0, 2020-08-04 21:42:25
  */
 public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3757694886664755216L;
+	private static final long serialVersionUID = 8234127355615367472L;
 
 	/** 
 	 * 小程序别名，简称
@@ -92,6 +92,12 @@ public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/** 
+	 * 新小程序前台类目，一级与二级、三级用下划线隔开，最多可以选四个类目，类目之间;隔开。使用后不再读取app_category_ids值，老前台类目将废弃
+	 */
+	@ApiField("mini_category_ids")
+	private String miniCategoryIds;
 
 	/** 
 	 * 应用创建来源，alipay = 支付宝，taobao = 淘宝
@@ -206,6 +212,13 @@ public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 	}
 	public String getMiniAppId( ) {
 		return this.miniAppId;
+	}
+
+	public void setMiniCategoryIds(String miniCategoryIds) {
+		this.miniCategoryIds = miniCategoryIds;
+	}
+	public String getMiniCategoryIds( ) {
+		return this.miniCategoryIds;
 	}
 
 	public void setOrigin(String origin) {

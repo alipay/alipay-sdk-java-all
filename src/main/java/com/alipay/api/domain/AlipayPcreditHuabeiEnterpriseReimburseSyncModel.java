@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单据创建
  *
  * @author auto create
- * @since 1.0, 2020-05-11 14:49:13
+ * @since 1.0, 2020-08-04 14:36:25
  */
 public class AlipayPcreditHuabeiEnterpriseReimburseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7865655895831527975L;
+	private static final long serialVersionUID = 7499986988729718251L;
 
 	/**
 	 * 企业单据id

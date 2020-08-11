@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票业务数据
  *
  * @author auto create
- * @since 1.0, 2020-06-01 21:12:42
+ * @since 1.0, 2020-08-07 11:44:48
  */
 public class ReceiptBizData extends AlipayObject {
 
-	private static final long serialVersionUID = 7821377138354763154L;
+	private static final long serialVersionUID = 4374625464392931946L;
 
 	/**
 	 * 交易实付金额，单位分
@@ -28,6 +28,12 @@ public class ReceiptBizData extends AlipayObject {
 	 */
 	@ApiField("actual_pay_time")
 	private Date actualPayTime;
+
+	/**
+	 * 机具身份id
+	 */
+	@ApiField("biztid")
+	private String biztid;
 
 	/**
 	 * 币种（CNY-人命币）
@@ -64,6 +70,13 @@ public class ReceiptBizData extends AlipayObject {
 	 */
 	@ApiField("origin_amount")
 	private Long originAmount;
+
+	/**
+	 * 其他优惠
+	 */
+	@ApiListField("other_discount_info")
+	@ApiField("receipt_discount_info")
+	private List<ReceiptDiscountInfo> otherDiscountInfo;
 
 	/**
 	 * 外部订单编号,小票编号
@@ -114,6 +127,12 @@ public class ReceiptBizData extends AlipayObject {
 	@ApiField("trade_id")
 	private String tradeId;
 
+	/**
+	 * 交易来源，barcode-扫码，face-刷脸，other-其他
+	 */
+	@ApiField("trade_source")
+	private String tradeSource;
+
 	public Long getActualPayAmount() {
 		return this.actualPayAmount;
 	}
@@ -126,6 +145,13 @@ public class ReceiptBizData extends AlipayObject {
 	}
 	public void setActualPayTime(Date actualPayTime) {
 		this.actualPayTime = actualPayTime;
+	}
+
+	public String getBiztid() {
+		return this.biztid;
+	}
+	public void setBiztid(String biztid) {
+		this.biztid = biztid;
 	}
 
 	public String getCurrency() {
@@ -168,6 +194,13 @@ public class ReceiptBizData extends AlipayObject {
 	}
 	public void setOriginAmount(Long originAmount) {
 		this.originAmount = originAmount;
+	}
+
+	public List<ReceiptDiscountInfo> getOtherDiscountInfo() {
+		return this.otherDiscountInfo;
+	}
+	public void setOtherDiscountInfo(List<ReceiptDiscountInfo> otherDiscountInfo) {
+		this.otherDiscountInfo = otherDiscountInfo;
 	}
 
 	public String getOutTradeId() {
@@ -224,6 +257,13 @@ public class ReceiptBizData extends AlipayObject {
 	}
 	public void setTradeId(String tradeId) {
 		this.tradeId = tradeId;
+	}
+
+	public String getTradeSource() {
+		return this.tradeSource;
+	}
+	public void setTradeSource(String tradeSource) {
+		this.tradeSource = tradeSource;
 	}
 
 }

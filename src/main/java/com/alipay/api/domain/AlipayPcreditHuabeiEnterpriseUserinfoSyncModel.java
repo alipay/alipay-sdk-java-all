@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商务花呗用户信息同步
  *
  * @author auto create
- * @since 1.0, 2020-05-11 14:49:48
+ * @since 1.0, 2020-08-04 14:36:47
  */
 public class AlipayPcreditHuabeiEnterpriseUserinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6131184199934473333L;
+	private static final long serialVersionUID = 5847534336161833259L;
 
 	/**
 	 * 商务花呗用户协议id

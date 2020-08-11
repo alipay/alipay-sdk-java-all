@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文本消息内容
  *
  * @author auto create
- * @since 1.0, 2017-06-29 17:24:44
+ * @since 1.0, 2020-08-10 20:27:10
  */
 public class Text extends AlipayObject {
 
-	private static final long serialVersionUID = 8719719148522187719L;
+	private static final long serialVersionUID = 4224462776889663246L;
 
 	/**
 	 * 文本消息的内容

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票要素模型
  *
  * @author auto create
- * @since 1.0, 2020-06-17 16:45:36
+ * @since 1.0, 2020-08-07 15:31:38
  */
 public class InvoiceElementModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8558215575975751315L;
+	private static final long serialVersionUID = 6524964821272527114L;
 
 	/**
 	 * 发票报销状态
@@ -145,6 +145,12 @@ EXPIRED－已失效
 	 */
 	@ApiField("pdf_url")
 	private String pdfUrl;
+
+	/**
+	 * 表示发票来源，由发票回传方带入。例如：bz_gd，bz_ele，bz_tmall等
+	 */
+	@ApiField("source")
+	private String source;
 
 	/**
 	 * 该发票对应的交易
@@ -293,6 +299,13 @@ notMatch-未做匹配
 	}
 	public void setPdfUrl(String pdfUrl) {
 		this.pdfUrl = pdfUrl;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 	public List<EinvTrade> getTradeList() {

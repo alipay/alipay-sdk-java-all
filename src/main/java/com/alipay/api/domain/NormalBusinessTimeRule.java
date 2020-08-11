@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 正常营业时间规则
  *
  * @author auto create
- * @since 1.0, 2020-03-30 16:05:05
+ * @since 1.0, 2020-08-05 20:13:51
  */
 public class NormalBusinessTimeRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5519483295899687564L;
+	private static final long serialVersionUID = 5723123629823679527L;
 
 	/**
 	 * 指定月份,当为全年时，传入1,2,3,4,5,6,7,8,9,10,11,12

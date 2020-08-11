@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 儿童信息来源，一种关联儿童信息的方式，比如可以是一个token，也可以是一个userId
  *
  * @author auto create
- * @since 1.0, 2019-08-08 11:06:36
+ * @since 1.0, 2020-08-10 20:25:49
  */
 public class InfoSource extends AlipayObject {
 
-	private static final long serialVersionUID = 6185798326758265348L;
+	private static final long serialVersionUID = 8647145968359799483L;
 
 	/**
 	 * 儿童信息来源的类型，目前支持name

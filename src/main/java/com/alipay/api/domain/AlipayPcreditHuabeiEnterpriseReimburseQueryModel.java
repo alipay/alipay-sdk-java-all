@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业单据数据导出查询
  *
  * @author auto create
- * @since 1.0, 2020-05-11 11:54:34
+ * @since 1.0, 2020-08-04 14:35:55
  */
 public class AlipayPcreditHuabeiEnterpriseReimburseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5494143578882925452L;
+	private static final long serialVersionUID = 8855423515978462652L;
 
 	/**
 	 * 商户ID

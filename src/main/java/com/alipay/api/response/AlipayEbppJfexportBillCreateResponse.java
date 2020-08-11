@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppJfexportBillCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6771479876743324435L;
+	private static final long serialVersionUID = 2471732399827171133L;
 
 	/** 
 	 * 支付金额,单位为：RMB 元。

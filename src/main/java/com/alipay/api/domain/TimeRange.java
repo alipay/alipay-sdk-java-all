@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 时间区间
  *
  * @author auto create
- * @since 1.0, 2020-03-30 15:24:36
+ * @since 1.0, 2020-08-05 20:13:51
  */
 public class TimeRange extends AlipayObject {
 
-	private static final long serialVersionUID = 2487555893493442951L;
+	private static final long serialVersionUID = 1248566856733271854L;
 
 	/**
 	 * 开始时间

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扩展区
  *
  * @author auto create
- * @since 1.0, 2017-07-04 11:08:57
+ * @since 1.0, 2020-08-10 20:27:05
  */
 public class ExtensionArea extends AlipayObject {
 
-	private static final long serialVersionUID = 5251181362334172259L;
+	private static final long serialVersionUID = 8224166576129351337L;
 
 	/**
 	 * 跳转链接，当content_type为"image"时必传，必须是https或alipays开头的url链接

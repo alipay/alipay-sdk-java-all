@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑isv风控事件发送接口
  *
  * @author auto create
- * @since 1.0, 2020-07-08 11:38:54
+ * @since 1.0, 2020-08-10 11:21:44
  */
 public class KoubeiSecurityRiskEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8112364663876655234L;
+	private static final long serialVersionUID = 1834858394235526551L;
 
 	/**
 	 * 每一个事件码对应的扩展信息，是Map<String,String>的类型JSON格式化的字符串，具体内容与场景相关，请联系接口负责人获取相关文档。

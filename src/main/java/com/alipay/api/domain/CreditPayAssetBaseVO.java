@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付资产基础视图
  *
  * @author auto create
- * @since 1.0, 2019-07-17 11:08:58
+ * @since 1.0, 2020-08-06 10:50:09
  */
 public class CreditPayAssetBaseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4144983365474951487L;
+	private static final long serialVersionUID = 3848239691864935833L;
 
 	/**
 	 * 可用额度，部分场景可能会被过滤不透出

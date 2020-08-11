@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息查询
  *
  * @author auto create
- * @since 1.0, 2020-06-04 20:00:05
+ * @since 1.0, 2020-08-04 21:41:48
  */
 public class AlipayCommerceIotSdarttoolMessageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4627823134129889626L;
+	private static final long serialVersionUID = 6449369559334164325L;
 
 	/**
 	 * 消息ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户打标接口失败的匹配器
  *
  * @author auto create
- * @since 1.0, 2017-06-01 11:25:22
+ * @since 1.0, 2020-08-10 20:27:29
  */
 public class ErrorMatcher extends AlipayObject {
 
-	private static final long serialVersionUID = 6818362281512264946L;
+	private static final long serialVersionUID = 7898537563431486863L;
 
 	/**
 	 * 失败原因

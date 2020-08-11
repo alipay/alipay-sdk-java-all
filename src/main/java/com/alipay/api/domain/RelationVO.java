@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 亲子关系模型，包含关系双方信息
  *
  * @author auto create
- * @since 1.0, 2019-08-08 11:06:40
+ * @since 1.0, 2020-08-10 20:25:36
  */
 public class RelationVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1377562748295955541L;
+	private static final long serialVersionUID = 3512267855616774352L;
 
 	/**
 	 * 支付宝账户名称（脱敏）

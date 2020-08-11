@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringCrowdgroupConditionSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5163319859391682176L;
+	private static final long serialVersionUID = 7222386989397869226L;
 
 	/** 
 	 * 创建成功返回isv创建的分组规则列表

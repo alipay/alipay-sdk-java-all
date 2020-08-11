@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoTrafficCodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2535845893321312369L;
+	private static final long serialVersionUID = 2752597842769383449L;
 
 	/** 
 	 * 解码是否成功

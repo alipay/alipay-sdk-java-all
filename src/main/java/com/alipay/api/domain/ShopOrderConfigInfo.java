@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 点餐设置中每一个店铺的配置信息
  *
  * @author auto create
- * @since 1.0, 2020-03-30 17:33:25
+ * @since 1.0, 2020-08-10 14:33:38
  */
 public class ShopOrderConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2259553168736343924L;
+	private static final long serialVersionUID = 8334213737417878923L;
 
 	/**
 	 * 扩展信息
@@ -51,6 +51,12 @@ CLOSED表示关闭点餐服务
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
+
+	/**
+	 * 预点餐（轻快餐自提）相关设置。若字段为空，表示无需修改。
+	 */
+	@ApiField("pre_order_config")
+	private PreOrderConfigInfo preOrderConfig;
 
 	/**
 	 * 口碑门店ID
@@ -97,6 +103,13 @@ CLOSED表示关闭点餐服务
 	}
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
+	}
+
+	public PreOrderConfigInfo getPreOrderConfig() {
+		return this.preOrderConfig;
+	}
+	public void setPreOrderConfig(PreOrderConfigInfo preOrderConfig) {
+		this.preOrderConfig = preOrderConfig;
 	}
 
 	public String getShopId() {

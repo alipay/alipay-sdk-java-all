@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询个性化菜单返回对象
  *
  * @author auto create
- * @since 1.0, 2017-05-25 11:39:51
+ * @since 1.0, 2020-08-10 20:27:34
  */
 public class QueryMenu extends AlipayObject {
 
-	private static final long serialVersionUID = 1816769116628471925L;
+	private static final long serialVersionUID = 8857721887465981761L;
 
 	/**
 	 * 一级菜单列表
