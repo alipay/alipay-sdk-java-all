@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCustomerCertificationMaterialCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6816794331337292478L;
+	private static final long serialVersionUID = 5816358843972538141L;
 
 	/**
 	 * 认证场景码，常用的场景码有：FACE_API，入参支持的认证场景码和商户签约的认证场景相关，详见芝麻认证快速接入文档

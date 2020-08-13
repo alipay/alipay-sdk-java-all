@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PintuanUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7289373967659822151L;
+	private static final long serialVersionUID = 7637127596743999488L;
 
 	/**
 	 * 头像地址

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvalidTradeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8776427858543569742L;
+	private static final long serialVersionUID = 6897631288484814982L;
 
 	/**
 	 * 错误信息，用于描述单条交易数据错误原因

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountFinriskCompanyVerifyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2248411955227669556L;
+	private static final long serialVersionUID = 4715614756229638142L;
 
 	/** 
 	 * 二代结果码

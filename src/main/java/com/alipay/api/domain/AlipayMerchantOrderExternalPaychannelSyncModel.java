@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantOrderExternalPaychannelSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1179755741427994519L;
+	private static final long serialVersionUID = 2753457656859511688L;
 
 	/**
 	 * 业务单号，微信、支付宝交易号

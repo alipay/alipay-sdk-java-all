@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IntelligentPromo extends AlipayObject {
 
-	private static final long serialVersionUID = 5728938429887771139L;
+	private static final long serialVersionUID = 4362876525769841797L;
 
 	/**
 	 * 是否允许自动续期

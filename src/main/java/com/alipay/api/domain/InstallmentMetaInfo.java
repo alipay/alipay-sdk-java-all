@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InstallmentMetaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2386356334347316491L;
+	private static final long serialVersionUID = 7612623782384387694L;
 
 	/**
 	 * 结束期数，包含此值

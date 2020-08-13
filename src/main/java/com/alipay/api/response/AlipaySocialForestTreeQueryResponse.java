@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TreeData;
+import com.alipay.api.domain.TreeDetailData;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.forest.tree.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-01 14:14:10
+ * @since 1.0, 2020-08-12 11:36:16
  */
 public class AlipaySocialForestTreeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6155883284124824652L;
+	private static final long serialVersionUID = 5124283896115873177L;
 
 	/** 
 	 * 森林开通状态：
@@ -33,6 +34,13 @@ CLOSED：已关闭；
 	@ApiField("tree_data")
 	private List<TreeData> treeDatas;
 
+	/** 
+	 * 种树详细信息
+	 */
+	@ApiListField("tree_detail_data")
+	@ApiField("tree_detail_data")
+	private List<TreeDetailData> treeDetailData;
+
 	public void setForestStatus(String forestStatus) {
 		this.forestStatus = forestStatus;
 	}
@@ -45,6 +53,13 @@ CLOSED：已关闭；
 	}
 	public List<TreeData> getTreeDatas( ) {
 		return this.treeDatas;
+	}
+
+	public void setTreeDetailData(List<TreeDetailData> treeDetailData) {
+		this.treeDetailData = treeDetailData;
+	}
+	public List<TreeDetailData> getTreeDetailData( ) {
+		return this.treeDetailData;
 	}
 
 }

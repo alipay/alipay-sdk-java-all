@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppProdmodeSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5593442249421719974L;
+	private static final long serialVersionUID = 7275417995562412431L;
 
 	/** 
 	 * 返回签约信息数据对象，主要包含:产品编码、产品版本、生效时间、到期时间等

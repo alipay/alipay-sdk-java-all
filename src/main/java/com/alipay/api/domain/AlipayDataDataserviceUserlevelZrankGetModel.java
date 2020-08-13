@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceUserlevelZrankGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2277722326441557492L;
+	private static final long serialVersionUID = 6468376795592746752L;
 
 	/**
 	 * type对应的账号：如手机号-13815869530

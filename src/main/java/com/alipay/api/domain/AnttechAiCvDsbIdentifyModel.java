@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnttechAiCvDsbIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4298713681945879673L;
+	private static final long serialVersionUID = 2138112964216723834L;
 
 	/**
 	 * 蚂蚁内部单号

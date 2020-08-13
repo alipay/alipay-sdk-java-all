@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundAuthOperationCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1761212544373929192L;
+	private static final long serialVersionUID = 4529458296769882138L;
 
 	/** 
 	 * 本次撤销触发的资金动作

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.isvtoken.reim.apply response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-07 20:41:53
+ * @since 1.0, 2020-08-11 17:37:19
  */
 public class AlipayEbppInvoiceIsvtokenReimApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8675259792766973294L;
+	private static final long serialVersionUID = 1429283169958938995L;
 
 	/** 
 	 * 支付宝分配给报销软件的授权token

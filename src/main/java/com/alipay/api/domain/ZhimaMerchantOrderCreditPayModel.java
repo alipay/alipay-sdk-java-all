@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用支付
  *
  * @author auto create
- * @since 1.0, 2019-10-29 14:38:39
+ * @since 1.0, 2020-08-12 09:42:24
  */
 public class ZhimaMerchantOrderCreditPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4861959447817349261L;
+	private static final long serialVersionUID = 4659364876529689712L;
 
 	/**
 	 * 优惠券金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]，无支付行为时为空，例如订单取消或者支付金额为0

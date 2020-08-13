@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoinsprod.quote.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-24 16:53:36
+ * @since 1.0, 2020-08-12 09:52:26
  */
 public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3567186999328389415L;
+	private static final long serialVersionUID = 8881427946993623453L;
 
 	/** 
 	 * 商业费率浮动系数，0~1分值的数字，精确到小数点后4位，如：0.6589
@@ -224,6 +224,12 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("traffic_violation_ratio")
 	private String trafficViolationRatio;
+
+	/** 
+	 * 客户评级信息，辅助作业人员展业(具体内容以保司信息为准)
+	 */
+	@ApiField("user_level")
+	private String userLevel;
 
 	/** 
 	 * 用户提醒code
@@ -473,6 +479,13 @@ public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 	}
 	public String getTrafficViolationRatio( ) {
 		return this.trafficViolationRatio;
+	}
+
+	public void setUserLevel(String userLevel) {
+		this.userLevel = userLevel;
+	}
+	public String getUserLevel( ) {
+		return this.userLevel;
 	}
 
 	public void setWarnCode(String warnCode) {
