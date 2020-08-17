@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiOperationContext extends AlipayObject {
 
-	private static final long serialVersionUID = 5769187239543138651L;
+	private static final long serialVersionUID = 2387616779562971864L;
 
 	/**
 	 * 如果是isv代操作，请传入ISV；如果是其他角色（商户MERCHANT、服务商PROVIDER、服务商员工S_STAFF、商户员工M_STAFF）操作，不用填写。

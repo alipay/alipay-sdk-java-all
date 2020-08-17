@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.DepositBackInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.RefundRoyaltyResult;
 
@@ -13,11 +14,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-09 15:10:54
+ * @since 1.0, 2020-08-13 19:08:51
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8591797115752737885L;
+	private static final long serialVersionUID = 4419337334794138247L;
+
+	/** 
+	 * 银行卡冲退信息
+	 */
+	@ApiField("deposit_back_info")
+	private DepositBackInfo depositBackInfo;
 
 	/** 
 	 * 退款失败错误码。只在使用异步退款接口情况下才会返回该字段
@@ -133,6 +140,13 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public void setDepositBackInfo(DepositBackInfo depositBackInfo) {
+		this.depositBackInfo = depositBackInfo;
+	}
+	public DepositBackInfo getDepositBackInfo( ) {
+		return this.depositBackInfo;
+	}
 
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTravelGkaCampprizeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2737277528547953518L;
+	private static final long serialVersionUID = 4734879872635378694L;
 
 	/**
 	 * 活动id，获取方式：联系支付宝运营同学获取（适用于支付宝平台活动，由合作伙伴调用触发）

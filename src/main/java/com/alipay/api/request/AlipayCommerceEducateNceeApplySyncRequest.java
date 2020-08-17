@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.ncee.apply.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-06-30 21:25:18
+ * @since 1.0, 2020-08-14 14:12:49
  */
 public class AlipayCommerceEducateNceeApplySyncRequest implements AlipayRequest<AlipayCommerceEducateNceeApplySyncResponse> {
 

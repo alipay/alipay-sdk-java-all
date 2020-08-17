@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 高考智能填报信息同步
  *
  * @author auto create
- * @since 1.0, 2020-06-30 21:24:07
+ * @since 1.0, 2020-08-14 14:12:49
  */
 public class AlipayCommerceEducateNceeApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3634666236271328224L;
+	private static final long serialVersionUID = 4245184588839776264L;
 
 	/**
 	 * 批次

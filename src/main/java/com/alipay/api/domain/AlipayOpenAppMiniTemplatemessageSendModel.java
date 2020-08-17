@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序发送模板消息
  *
  * @author auto create
- * @since 1.0, 2020-08-13 17:35:22
+ * @since 1.0, 2020-08-15 22:07:18
  */
 public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8897499736388164444L;
+	private static final long serialVersionUID = 5423585486217622516L;
 
 	/**
 	 * 开发者需要发送模板消息中的自定义部分来替换模板的占位符

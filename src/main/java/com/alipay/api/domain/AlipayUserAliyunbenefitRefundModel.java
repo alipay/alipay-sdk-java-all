@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员阿里云权益退款接口
  *
  * @author auto create
- * @since 1.0, 2019-04-26 20:07:43
+ * @since 1.0, 2020-08-17 10:31:24
  */
 public class AlipayUserAliyunbenefitRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7111793865598999254L;
+	private static final long serialVersionUID = 6234745752385372883L;
 
 	/**
 	 * 业务流水号，用来映射需要回退积分的订单号，与权益兑换时传入的值一致。

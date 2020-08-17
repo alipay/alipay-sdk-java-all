@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝会员阿里云权益同步接口
  *
  * @author auto create
- * @since 1.0, 2019-04-26 20:06:45
+ * @since 1.0, 2020-08-17 11:03:30
  */
 public class AlipayUserAliyunbenefitSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1158253289278779258L;
+	private static final long serialVersionUID = 5417886639272446332L;
 
 	/**
 	 * 阿里云商品类目编码

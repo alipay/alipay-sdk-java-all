@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotModellistCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7156425847128679356L;
+	private static final long serialVersionUID = 7256991927425175223L;
 
 	/** 
 	 * 重复的型号id列表，当所请求创建的型号已经存在时，则将已存在的型号id列表通过该字段返回

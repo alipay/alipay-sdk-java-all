@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certdoc.certverify.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-13 10:35:44
+ * @since 1.0, 2020-08-17 10:17:09
  */
 public class AlipayUserCertdocCertverifyPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2142938544176215316L;
+	private static final long serialVersionUID = 4242539247769184549L;
 
 	/** 
 	 * 申请验证ID

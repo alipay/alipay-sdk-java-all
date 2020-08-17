@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC绑定用户信息修改
  *
  * @author auto create
- * @since 1.0, 2020-03-25 09:59:22
+ * @since 1.0, 2020-08-14 16:37:51
  */
 public class AlipayCommerceTransportEtcBindModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5468569461982925127L;
+	private static final long serialVersionUID = 2754594551263395829L;
 
 	/**
 	 * 绑定申请协议号

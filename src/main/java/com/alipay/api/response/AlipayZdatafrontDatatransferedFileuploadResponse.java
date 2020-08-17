@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayZdatafrontDatatransferedFileuploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8475379533637167831L;
+	private static final long serialVersionUID = 5136891766179337316L;
 
 	/** 
 	 * 返回用户数据推送产生的结果数据，如picPath为文件上传后返回文件内部存储的位置信息
