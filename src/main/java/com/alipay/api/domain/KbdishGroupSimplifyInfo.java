@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品简化接口套餐组信息
  *
  * @author auto create
- * @since 1.0, 2020-06-22 11:02:23
+ * @since 1.0, 2020-08-21 11:43:34
  */
 public class KbdishGroupSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3596483234866998638L;
+	private static final long serialVersionUID = 6683955116447414185L;
 
 	/**
 	 * 套餐组明细

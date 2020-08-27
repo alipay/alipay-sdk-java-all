@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费外籍留学生缴费学校信息录入接口
  *
  * @author auto create
- * @since 1.0, 2020-07-30 19:20:17
+ * @since 1.0, 2020-08-19 20:26:07
  */
 public class AlipayOverseasFundInstitutionschoolinfCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5592531475634178967L;
+	private static final long serialVersionUID = 3829663981993945512L;
 
 	/**
 	 * 必填，必须是行业属性代码表中存在的最细分类的记录。

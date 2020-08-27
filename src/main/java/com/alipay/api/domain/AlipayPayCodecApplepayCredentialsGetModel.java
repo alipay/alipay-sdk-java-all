@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * applepay付款码获取
  *
  * @author auto create
- * @since 1.0, 2020-02-20 19:41:04
+ * @since 1.0, 2020-08-20 20:11:59
  */
 public class AlipayPayCodecApplepayCredentialsGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7775445899248144796L;
+	private static final long serialVersionUID = 1192283912982661451L;
 
 	/**
 	 * ECC算法、PKCS#7的签名。{Base 64 encoded signature from Apple authorizing the return of the credentials. PKCS#7 detached ECC signature covering the SHA 256 hash of the concatenation of the UTF-8 values of

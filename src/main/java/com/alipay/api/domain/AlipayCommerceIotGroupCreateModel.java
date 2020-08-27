@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建分组
  *
  * @author auto create
- * @since 1.0, 2019-11-29 10:51:42
+ * @since 1.0, 2020-08-19 20:12:00
  */
 public class AlipayCommerceIotGroupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3519654512175812195L;
+	private static final long serialVersionUID = 8482259815577413692L;
 
 	/**
 	 * 业务类型-代表不同的业务场景

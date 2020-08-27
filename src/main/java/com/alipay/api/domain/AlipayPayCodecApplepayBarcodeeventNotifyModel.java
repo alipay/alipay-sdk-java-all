@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * applePay码上报
  *
  * @author auto create
- * @since 1.0, 2020-04-03 12:28:54
+ * @since 1.0, 2020-08-20 20:12:02
  */
 public class AlipayPayCodecApplepayBarcodeeventNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8432263296277378146L;
+	private static final long serialVersionUID = 5337484723715897886L;
 
 	/**
 	 * 码的id。{Identifier for this credential}

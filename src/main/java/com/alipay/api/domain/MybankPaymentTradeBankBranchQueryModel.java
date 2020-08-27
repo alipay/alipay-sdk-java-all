@@ -7,19 +7,27 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支行查询
  *
  * @author auto create
- * @since 1.0, 2019-12-10 21:55:24
+ * @since 1.0, 2020-08-18 11:29:19
  */
 public class MybankPaymentTradeBankBranchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8273739141281724643L;
+	private static final long serialVersionUID = 6417826879529437558L;
 
 	/**
 	 * 支持全称，或部分名称。银行名称不单独传参，需要其它条件一起使用，允许的几种模式：
 1. 银行名称 + 总行联行号 + 行政地区编码
 2. 银行名称 + 总行联行号
+
+名称支持多关键词模糊匹配，多关键词之间为并的关系。
 	 */
 	@ApiField("bank_name")
 	private String bankName;
+
+	/**
+	 * 支行联行号。当指定支行联行号时，其它查询条件失效，只会根据支行联行号精确匹配，并且查询结果会额外增加总行联行号和总行全称。
+	 */
+	@ApiField("branch_bank_code")
+	private String branchBankCode;
 
 	/**
 	 * 行政地区编码。行政地区编码不单独传参，需要其它条件一起使用，允许的几种模式：
@@ -43,6 +51,13 @@ public class MybankPaymentTradeBankBranchQueryModel extends AlipayObject {
 	}
 	public void setBankName(String bankName) {
 		this.bankName = bankName;
+	}
+
+	public String getBranchBankCode() {
+		return this.branchBankCode;
+	}
+	public void setBranchBankCode(String branchBankCode) {
+		this.branchBankCode = branchBankCode;
 	}
 
 	public String getDistrictCode() {

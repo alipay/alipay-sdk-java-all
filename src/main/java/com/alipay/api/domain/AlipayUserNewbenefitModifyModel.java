@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁会员V3权益修改接口
  *
  * @author auto create
- * @since 1.0, 2017-06-15 15:43:39
+ * @since 1.0, 2020-08-17 21:20:56
  */
 public class AlipayUserNewbenefitModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8822597322747989298L;
+	private static final long serialVersionUID = 7827131549765789819L;
 
 	/**
 	 * 权益关联的专区码 ,需要联系蚂蚁会员平台的业务负责人进行专区码分配

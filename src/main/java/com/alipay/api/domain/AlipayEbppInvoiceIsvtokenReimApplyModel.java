@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取报销授权令牌
  *
  * @author auto create
- * @since 1.0, 2020-08-07 20:41:52
+ * @since 1.0, 2020-08-18 14:51:01
  */
 public class AlipayEbppInvoiceIsvtokenReimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3565158863111847336L;
+	private static final long serialVersionUID = 3371246271415957996L;
 
 	/**
 	 * 报销软件app对应的isv app code，由支付宝进行分配

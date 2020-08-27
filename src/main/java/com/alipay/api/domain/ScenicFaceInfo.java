@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScenicFaceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3731359217883123659L;
+	private static final long serialVersionUID = 3191146818267961514L;
 
 	/**
 	 * 用户场景下唯一标示码

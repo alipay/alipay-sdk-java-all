@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支付宝用户苹果绑定状态
  *
  * @author auto create
- * @since 1.0, 2020-08-17 03:25:12
+ * @since 1.0, 2020-08-17 14:01:12
  */
 public class AlipayMarketingCampaignAppleActivityConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6154477262562313322L;
+	private static final long serialVersionUID = 2164772454145197414L;
 
 	/**
 	 * 活动id

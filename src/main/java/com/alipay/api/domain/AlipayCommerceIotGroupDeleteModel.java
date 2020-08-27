@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除分组
  *
  * @author auto create
- * @since 1.0, 2019-11-29 10:50:38
+ * @since 1.0, 2020-08-19 20:11:34
  */
 public class AlipayCommerceIotGroupDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6613332198294168574L;
+	private static final long serialVersionUID = 7777541377597958363L;
 
 	/**
 	 * 需要删除的分组id

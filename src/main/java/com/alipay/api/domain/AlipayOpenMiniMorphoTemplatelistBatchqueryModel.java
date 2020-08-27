@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板批量查询
  *
  * @author auto create
- * @since 1.0, 2019-12-26 15:03:18
+ * @since 1.0, 2020-08-20 19:52:02
  */
 public class AlipayOpenMiniMorphoTemplatelistBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3556175378221227184L;
+	private static final long serialVersionUID = 6794318737766316432L;
 
 	/**
 	 * 闪蝶身份验证信息

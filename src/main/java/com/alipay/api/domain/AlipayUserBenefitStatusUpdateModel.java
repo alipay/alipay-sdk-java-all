@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁会员合作专区权益状态变更接口
  *
  * @author auto create
- * @since 1.0, 2017-06-15 15:43:50
+ * @since 1.0, 2020-08-17 21:20:39
  */
 public class AlipayUserBenefitStatusUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6368684853849774731L;
+	private static final long serialVersionUID = 7552752367443438716L;
 
 	/**
 	 * 权益的ID

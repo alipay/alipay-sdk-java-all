@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 应用批量查询
  *
  * @author auto create
- * @since 1.0, 2019-12-26 15:02:11
+ * @since 1.0, 2020-08-20 19:50:54
  */
 public class AlipayOpenMiniMorphoApplistBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7562551496439255327L;
+	private static final long serialVersionUID = 7438596834213646925L;
 
 	/**
 	 * 批量查询时的，闪蝶应用ID数组

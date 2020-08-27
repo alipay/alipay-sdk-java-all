@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁会员合作权益编辑接口
  *
  * @author auto create
- * @since 1.0, 2018-03-07 11:31:10
+ * @since 1.0, 2020-08-17 21:21:10
  */
 public class AlipayUserBenefitEditModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7283721288365838636L;
+	private static final long serialVersionUID = 3227681431513875647L;
 
 	/**
 	 * 权益专区码，在创建权益前应该先向蚂蚁会员平台申请一个合适的专区码。 专区必须存在。

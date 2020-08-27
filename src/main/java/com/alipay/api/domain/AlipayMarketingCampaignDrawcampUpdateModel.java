@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 营销抽奖活动修改
  *
  * @author auto create
- * @since 1.0, 2018-10-17 14:15:54
+ * @since 1.0, 2020-08-20 13:53:40
  */
 public class AlipayMarketingCampaignDrawcampUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6612398236979768744L;
+	private static final long serialVersionUID = 6759813912318386839L;
 
 	/**
 	 * 单用户以支付宝账号维度可参与当前营销活动的总次数，由开发者自定义此数值

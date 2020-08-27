@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 财务开票模式同步
  *
  * @author auto create
- * @since 1.0, 2020-03-26 17:40:28
+ * @since 1.0, 2020-08-18 15:51:31
  */
 public class AlipayBossFncInvmodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6449825544349266656L;
+	private static final long serialVersionUID = 1533517837236635746L;
 
 	/**
 	 * 所属ou

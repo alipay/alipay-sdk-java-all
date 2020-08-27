@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁会员V3权益创建接口
  *
  * @author auto create
- * @since 1.0, 2017-06-15 15:43:45
+ * @since 1.0, 2020-08-17 21:20:13
  */
 public class AlipayUserNewbenefitCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7134653776198564319L;
+	private static final long serialVersionUID = 3539864992828475439L;
 
 	/**
 	 * 关联的专区码，需要联系蚂蚁会员平台的业务负责人进行专区码分配

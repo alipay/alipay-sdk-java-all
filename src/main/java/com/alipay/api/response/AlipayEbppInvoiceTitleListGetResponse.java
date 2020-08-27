@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.title.list.get response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-20 15:51:36
+ * @since 1.0, 2020-08-26 20:50:34
  */
 public class AlipayEbppInvoiceTitleListGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3284486221654864729L;
+	private static final long serialVersionUID = 3158447733943228132L;
 
 	/** 
 	 * 抬头列表

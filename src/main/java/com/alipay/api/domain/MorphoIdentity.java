@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 闪蝶身份校验信息
  *
  * @author auto create
- * @since 1.0, 2019-12-10 16:09:30
+ * @since 1.0, 2020-08-21 14:19:49
  */
 public class MorphoIdentity extends AlipayObject {
 
-	private static final long serialVersionUID = 6114178887636421614L;
+	private static final long serialVersionUID = 1714768417598594262L;
 
 	/**
 	 * 闪蝶侧用户身份唯一标识

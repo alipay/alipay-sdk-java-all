@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上线应用
  *
  * @author auto create
- * @since 1.0, 2019-12-26 15:04:23
+ * @since 1.0, 2020-08-20 19:52:55
  */
 public class AlipayOpenMiniMorphoAppOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2262455249859459852L;
+	private static final long serialVersionUID = 3372488665655527955L;
 
 	/**
 	 * 闪蝶应用ID

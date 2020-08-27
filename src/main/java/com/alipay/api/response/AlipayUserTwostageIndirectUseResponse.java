@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.twostage.indirect.use response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-01 19:14:28
+ * @since 1.0, 2020-08-20 11:40:11
  */
 public class AlipayUserTwostageIndirectUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3292111687388671678L;
+	private static final long serialVersionUID = 1816424676878922685L;
 
 	/** 
 	 * 蚂蚁统一会员ID

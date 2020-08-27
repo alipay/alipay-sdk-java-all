@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校验机构缴费项
  *
  * @author auto create
- * @since 1.0, 2020-07-30 17:35:10
+ * @since 1.0, 2020-08-19 20:26:08
  */
 public class AlipayOverseasTransferPaymentPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5139999433842544357L;
+	private static final long serialVersionUID = 2244211487638831166L;
 
 	/**
 	 * 缴费详细信息

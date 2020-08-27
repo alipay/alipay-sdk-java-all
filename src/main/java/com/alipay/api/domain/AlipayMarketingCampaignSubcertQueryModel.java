@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询有效子凭证详细信息
  *
  * @author auto create
- * @since 1.0, 2018-10-17 14:15:29
+ * @since 1.0, 2020-08-25 16:46:03
  */
 public class AlipayMarketingCampaignSubcertQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1599799633285247344L;
+	private static final long serialVersionUID = 3818585953211466583L;
 
 	/**
 	 * 用户登录账号名：邮箱或手机号。已知支付宝账号的活动触发调用中，user_id与login_id至少有一个非空，都非空时，以user_id为准。

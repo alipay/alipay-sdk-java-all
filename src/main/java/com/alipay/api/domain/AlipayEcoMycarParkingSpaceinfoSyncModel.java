@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车场车位信息同步
  *
  * @author auto create
- * @since 1.0, 2020-07-20 20:06:06
+ * @since 1.0, 2020-08-26 15:52:27
  */
 public class AlipayEcoMycarParkingSpaceinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3429547563587866845L;
+	private static final long serialVersionUID = 4386261511869199282L;
 
 	/**
 	 * 空闲充电桩车位数

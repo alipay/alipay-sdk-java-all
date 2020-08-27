@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 流程配置信息
  *
  * @author auto create
- * @since 1.0, 2020-05-15 10:40:50
+ * @since 1.0, 2020-08-20 16:40:57
  */
 public class ConfigInfoBean extends AlipayObject {
 
-	private static final long serialVersionUID = 2776846465438922776L;
+	private static final long serialVersionUID = 6853988413325684392L;
 
 	/**
 	 * 配置附件收集任务相关信息
 	 */
 	@ApiField("attachment_explain")
 	private AttachmentExplainBean attachmentExplain;
+
+	/**
+	 * 签署完成是否自动归档，默认true，如果false，则归档需要调用签署流程归档接口
+	 */
+	@ApiField("auto_archive")
+	private Boolean autoArchive;
 
 	/**
 	 * 是否收集附件（需签署人上传身份证或者其他文件的，需设置为true）
@@ -91,6 +97,13 @@ public class ConfigInfoBean extends AlipayObject {
 	}
 	public void setAttachmentExplain(AttachmentExplainBean attachmentExplain) {
 		this.attachmentExplain = attachmentExplain;
+	}
+
+	public Boolean getAutoArchive() {
+		return this.autoArchive;
+	}
+	public void setAutoArchive(Boolean autoArchive) {
+		this.autoArchive = autoArchive;
 	}
 
 	public Boolean getCollectAttachement() {

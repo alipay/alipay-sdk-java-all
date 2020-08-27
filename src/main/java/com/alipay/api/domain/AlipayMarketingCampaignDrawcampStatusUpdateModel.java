@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 抽奖活动状态变更
  *
  * @author auto create
- * @since 1.0, 2018-10-17 14:15:09
+ * @since 1.0, 2020-08-20 14:01:10
  */
 public class AlipayMarketingCampaignDrawcampStatusUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3316815489458343211L;
+	private static final long serialVersionUID = 5757772776232769377L;
 
 	/**
 	 * 活动id

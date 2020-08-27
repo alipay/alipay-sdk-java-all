@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合约取消接口
  *
  * @author auto create
- * @since 1.0, 2020-03-12 11:52:54
+ * @since 1.0, 2020-08-20 10:16:10
  */
 public class ZhimaMerchantContractCommonCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1674141827121765265L;
+	private static final long serialVersionUID = 1862279311458583653L;
 
 	/**
 	 * 合约单号

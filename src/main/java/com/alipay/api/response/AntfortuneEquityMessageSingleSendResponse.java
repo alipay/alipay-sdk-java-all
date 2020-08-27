@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.equity.message.single.send response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-25 10:10:57
+ * @since 1.0, 2020-08-24 10:32:54
  */
 public class AntfortuneEquityMessageSingleSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5521749538246737437L;
+	private static final long serialVersionUID = 4313173954329289799L;
 
 	
 

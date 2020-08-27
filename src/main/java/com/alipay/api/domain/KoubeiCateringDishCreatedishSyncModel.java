@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品库新菜品同步接口
  *
  * @author auto create
- * @since 1.0, 2020-06-23 16:10:00
+ * @since 1.0, 2020-08-19 11:52:28
  */
 public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3696886966397742575L;
+	private static final long serialVersionUID = 1744491768469265473L;
 
 	/**
 	 * 类目的名称，需要保证pid+分类名称唯一

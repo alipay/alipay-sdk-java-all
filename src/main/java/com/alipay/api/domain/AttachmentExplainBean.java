@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配置附件收集任务相关信息
  *
  * @author auto create
- * @since 1.0, 2020-05-06 13:44:20
+ * @since 1.0, 2020-08-19 20:42:03
  */
 public class AttachmentExplainBean extends AlipayObject {
 
-	private static final long serialVersionUID = 3358967329459285174L;
+	private static final long serialVersionUID = 2223596624637538986L;
 
 	/**
 	 * 页面展示的任务描（collect_attachement值为true时必填）

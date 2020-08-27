@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.auth.secondparty.token.verify response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-16 20:05:01
+ * @since 1.0, 2020-08-24 17:22:44
  */
 public class AlipayUserAuthSecondpartyTokenVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2617217551558898936L;
+	private static final long serialVersionUID = 4541949831755389398L;
 
 	/** 
 	 * 淘宝用户id

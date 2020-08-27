@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantPayforprivilegeProfileSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7631831392654529344L;
+	private static final long serialVersionUID = 8126552313641252788L;
 
 	/**
 	 * 充享惠卡模板设置，用户使用充享惠业务领卡后会在支付宝卡包中使用该模板配置创建卡入口

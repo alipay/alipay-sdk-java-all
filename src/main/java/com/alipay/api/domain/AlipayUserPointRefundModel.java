@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁会员积分退还接口(需要用户授权)
  *
  * @author auto create
- * @since 1.0, 2017-03-23 19:50:01
+ * @since 1.0, 2020-08-17 21:14:41
  */
 public class AlipayUserPointRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6792219236153267899L;
+	private static final long serialVersionUID = 7336416913851636478L;
 
 	/**
 	 * 业务大类，与调用扣减积分接口时传入的值一致。

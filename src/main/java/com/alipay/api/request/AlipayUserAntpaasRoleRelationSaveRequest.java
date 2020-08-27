@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antpaas.role.relation.save request
  * 
  * @author auto create
- * @since 1.0, 2020-01-02 17:51:33
+ * @since 1.0, 2020-08-24 20:03:36
  */
 public class AlipayUserAntpaasRoleRelationSaveRequest implements AlipayRequest<AlipayUserAntpaasRoleRelationSaveResponse> {
 

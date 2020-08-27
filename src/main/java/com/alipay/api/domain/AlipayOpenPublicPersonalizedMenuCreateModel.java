@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 个性化菜单创建
  *
  * @author auto create
- * @since 1.0, 2020-08-14 22:37:21
+ * @since 1.0, 2020-08-20 17:42:17
  */
 public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1738276111849831142L;
+	private static final long serialVersionUID = 8786523546954269741L;
 
 	/**
 	 * 一级菜单列表。如果是文本菜单，最多有3个一级菜单，最多5个二级菜单；如果是 ICON 菜单信息，最多有80个一级菜单，ICON菜单不支持二级菜单
@@ -37,7 +37,7 @@ public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 	private List<LabelRule> labelRule;
 
 	/**
-	 * 手机客户端类型，iphone、android
+	 * 手机客户端类型，iphone、android、wp,不填为不区分机型
 	 */
 	@ApiField("mobile_client_type")
 	private String mobileClientType;

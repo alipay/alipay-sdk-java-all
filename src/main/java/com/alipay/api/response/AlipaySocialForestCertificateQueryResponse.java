@@ -10,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.forest.certificate.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-07 10:10:14
+ * @since 1.0, 2020-08-25 14:27:26
  */
 public class AlipaySocialForestCertificateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6725132312518761627L;
+	private static final long serialVersionUID = 2555793821422316185L;
+
+	/** 
+	 * 对应树种的证书数量，JSON
+	 */
+	@ApiField("cert_count_by_tree")
+	private String certCountByTree;
 
 	/** 
 	 * 当前用户是否是森林用户
@@ -51,6 +57,13 @@ public class AlipaySocialForestCertificateQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("user_certs")
 	private UserCert userCerts;
+
+	public void setCertCountByTree(String certCountByTree) {
+		this.certCountByTree = certCountByTree;
+	}
+	public String getCertCountByTree( ) {
+		return this.certCountByTree;
+	}
 
 	public void setForestUser(Boolean forestUser) {
 		this.forestUser = forestUser;

@@ -7,17 +7,25 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用当面付二阶段接口
  *
  * @author auto create
- * @since 1.0, 2020-01-09 17:56:03
+ * @since 1.0, 2020-08-20 11:17:29
  */
 public class AlipayUserTwostageCommonUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4147225668254114987L;
+	private static final long serialVersionUID = 4861192842466314896L;
 
 	/**
 	 * 商户扫描用户的付款码值。
 	 */
 	@ApiField("dynamic_id")
 	private String dynamicId;
+
+	/**
+	 * 传1表示 校验pid(pay_pid)和来支付的时候的pid一致性；
+传2表示校验pid(pay_pid)和来支付的时候的pid一致性、校验scene_no和来支付时DYNAMIC_TOKEN_OUT_BIZ_NO属性一致；                       
+不传值和value=2的表现一致
+	 */
+	@ApiField("pay_check_strategy")
+	private String payCheckStrategy;
 
 	/**
 	 * 商家进行二阶段支付的PID信息。
@@ -36,6 +44,13 @@ public class AlipayUserTwostageCommonUseModel extends AlipayObject {
 	}
 	public void setDynamicId(String dynamicId) {
 		this.dynamicId = dynamicId;
+	}
+
+	public String getPayCheckStrategy() {
+		return this.payCheckStrategy;
+	}
+	public void setPayCheckStrategy(String payCheckStrategy) {
+		this.payCheckStrategy = payCheckStrategy;
 	}
 
 	public String getPayPid() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除分组成员
  *
  * @author auto create
- * @since 1.0, 2019-11-29 10:51:33
+ * @since 1.0, 2020-08-19 20:09:44
  */
 public class AlipayCommerceIotGroupMemberDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1379145969868636142L;
+	private static final long serialVersionUID = 5443997522373721414L;
 
 	/**
 	 * 分组id

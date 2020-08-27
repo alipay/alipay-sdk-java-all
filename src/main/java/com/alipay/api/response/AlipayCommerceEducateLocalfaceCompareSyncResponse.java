@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.localface.compare.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 21:03:08
+ * @since 1.0, 2020-08-17 20:09:53
  */
 public class AlipayCommerceEducateLocalfaceCompareSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2132224743755489341L;
+	private static final long serialVersionUID = 7132166582759445393L;
 
 	
 

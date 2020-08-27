@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量添加分组设备
  *
  * @author auto create
- * @since 1.0, 2019-11-29 10:51:25
+ * @since 1.0, 2020-08-19 20:10:48
  */
 public class AlipayCommerceIotGroupMemberAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1335659471273171118L;
+	private static final long serialVersionUID = 3546389722188941784L;
 
 	/**
 	 * 分组id

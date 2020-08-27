@@ -7,14 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸开通支付申请
  *
  * @author auto create
- * @since 1.0, 2020-07-31 10:44:20
+ * @since 1.0, 2020-08-24 14:19:26
  */
 public class AlipayCommerceEducateFacepayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8776169799938638826L;
+	private static final long serialVersionUID = 4793268469966622551L;
 
 	/**
-	 * 扩展信息, json格式. 例如, 对不使用银行优先代扣, 可以传入{"useBankChannel":"NO"}
+	 * 扩展信息, json格式. 例如, 对不使用银行代扣, 可以传入{"useBankChannel":"NO"}；
+使用银行代扣且指定银行，{"useBankChannel":"YES","useBankMode":"BANK"}；
+使用银行代扣且指定银行卡，{"useBankChannel":"YES","useBankMode":"BANK_CARD"}。且必须实现获取银行卡信息的SPIAPI，若不传useBankMode默认指定银行
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

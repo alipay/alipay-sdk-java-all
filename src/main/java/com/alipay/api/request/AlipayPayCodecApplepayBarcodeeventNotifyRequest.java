@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.codec.applepay.barcodeevent.notify request
  * 
  * @author auto create
- * @since 1.0, 2020-04-03 12:30:11
+ * @since 1.0, 2020-08-20 20:12:02
  */
 public class AlipayPayCodecApplepayBarcodeeventNotifyRequest implements AlipayRequest<AlipayPayCodecApplepayBarcodeeventNotifyResponse> {
 

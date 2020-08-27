@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdFacepayVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4427921479218126741L;
+	private static final long serialVersionUID = 5343524343646873522L;
 
 	/**
 	 * 用户输入的扫脸付邀请码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车场业务归属配置
  *
  * @author auto create
- * @since 1.0, 2019-06-13 13:47:16
+ * @since 1.0, 2020-08-26 15:53:37
  */
 public class AlipayEcoMycarParkingBusinessModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6517525249728775182L;
+	private static final long serialVersionUID = 8389613488256835973L;
 
 	/**
 	 * 停车场无感业务归属appid。appid在停车平台配置过ISV信息。

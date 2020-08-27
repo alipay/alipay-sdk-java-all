@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 群成员信息
  *
  * @author auto create
- * @since 1.0, 2017-08-18 16:18:09
+ * @since 1.0, 2020-08-18 18:16:24
  */
 public class MemberInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4288689427918716791L;
+	private static final long serialVersionUID = 7629447387563234677L;
 
 	/**
 	 * 群成员性别，m表示男，f表示女

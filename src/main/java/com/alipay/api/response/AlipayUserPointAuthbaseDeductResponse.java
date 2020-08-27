@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.point.authbase.deduct response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-20 19:03:28
+ * @since 1.0, 2020-08-17 21:19:41
  */
 public class AlipayUserPointAuthbaseDeductResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7415734996798569514L;
+	private static final long serialVersionUID = 7339834228237281823L;
 
 	
 

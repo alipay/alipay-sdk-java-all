@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 圈人规则创建
  *
  * @author auto create
- * @since 1.0, 2018-10-17 14:07:00
+ * @since 1.0, 2020-08-20 13:50:37
  */
 public class AlipayMarketingCampaignRuleCrowdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6683627441427144346L;
+	private static final long serialVersionUID = 2465739961848921893L;
 
 	/**
 	 * tagCode：标签别名，指定标签类型，如城市、年龄等，如pubsrv_city_code为城市标签，创建时必填，可传入多组标签

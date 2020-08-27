@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.apple.activity.consult response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-17 03:25:12
+ * @since 1.0, 2020-08-17 14:01:12
  */
 public class AlipayMarketingCampaignAppleActivityConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4192479455346865841L;
+	private static final long serialVersionUID = 6232643682886662838L;
 
 	/** 
 	 * 活动参与状态

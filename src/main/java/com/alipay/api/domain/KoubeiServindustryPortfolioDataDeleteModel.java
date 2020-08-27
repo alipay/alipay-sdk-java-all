@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiServindustryPortfolioDataDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5284258917951384422L;
+	private static final long serialVersionUID = 5612972278578879979L;
 
 	/**
 	 * 作品集id

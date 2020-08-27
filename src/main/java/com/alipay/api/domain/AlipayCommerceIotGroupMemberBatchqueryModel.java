@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分组设备列表查询
  *
  * @author auto create
- * @since 1.0, 2019-11-29 10:50:54
+ * @since 1.0, 2020-08-19 20:11:11
  */
 public class AlipayCommerceIotGroupMemberBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8647218479336588746L;
+	private static final long serialVersionUID = 2568228371915942955L;
 
 	/**
 	 * 分组id

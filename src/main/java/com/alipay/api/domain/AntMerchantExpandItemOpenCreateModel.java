@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5468115433334114496L;
+	private static final long serialVersionUID = 3157346456293975364L;
 
 	/**
 	 * 商品描述
@@ -30,7 +30,7 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 	private List<ItemExtInfo> extInfo;
 
 	/**
-	 * 素材列表（最多3个）
+	 * 素材列表（最多3个），素材内容为素材key（素材key获取方式参照：https://opendocs.alipay.com/apis/api_4/alipay.merchant.item.file.upload）
 	 */
 	@ApiListField("material_list")
 	@ApiField("material_create_info")
@@ -50,7 +50,7 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 	private List<ItemPropertyInfo> propertyList;
 
 	/**
-	 * 场景码（具体值请参见产品文档）
+	 * 场景码（小程序商品：APP_ORDER）
 	 */
 	@ApiField("scene")
 	private String scene;
@@ -63,7 +63,7 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 	private List<SkuCreateInfo> skuList;
 
 	/**
-	 * 商品所属标准类目ID（具体值请参见产品文档）
+	 * 商品所属标准类目ID（参考：https://opendocs.alipay.com/mini/011lxt）
 	 */
 	@ApiField("standard_category_id")
 	private String standardCategoryId;

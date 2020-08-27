@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻约定快速发约接口
  *
  * @author auto create
- * @since 1.0, 2020-03-18 19:55:07
+ * @since 1.0, 2020-08-20 10:15:50
  */
 public class ZhimaMerchantContractQuickCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8674347522876312116L;
+	private static final long serialVersionUID = 8384812221739956859L;
 
 	/**
 	 * 此类目为分配给商户在内容下的不同类目分类，（如直播/电影类目）

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 指定签署人需要上传的附件
  *
  * @author auto create
- * @since 1.0, 2020-05-14 19:54:20
+ * @since 1.0, 2020-08-19 20:42:03
  */
 public class SpecifyAttachmentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7597872293254637132L;
+	private static final long serialVersionUID = 4295826496131328755L;
 
 	/**
 	 * 是否允许上传更多附件，默认值为false。开启后，除了“collect_common_codes”中指定的附件，签署人可自由上传至多10张图片。

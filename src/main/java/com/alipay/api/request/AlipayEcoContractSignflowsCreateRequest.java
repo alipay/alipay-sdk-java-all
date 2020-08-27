@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.contract.signflows.create request
  * 
  * @author auto create
- * @since 1.0, 2020-08-03 19:56:22
+ * @since 1.0, 2020-08-21 15:26:32
  */
 public class AlipayEcoContractSignflowsCreateRequest implements AlipayRequest<AlipayEcoContractSignflowsCreateResponse> {
 
