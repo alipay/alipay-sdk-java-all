@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联系人信息验证
  *
  * @author auto create
- * @since 1.0, 2017-11-29 18:04:35
+ * @since 1.0, 2020-09-02 13:36:15
  */
 public class ZhimaCreditRelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7663139576484492415L;
+	private static final long serialVersionUID = 1596445771717341416L;
 
 	/**
 	 * 申请人证件号，中国大陆18或者15位合法身份号

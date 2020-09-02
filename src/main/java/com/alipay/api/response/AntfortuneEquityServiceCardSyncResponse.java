@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.equity.service.card.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-28 20:33:29
+ * @since 1.0, 2020-09-01 09:59:00
  */
 public class AntfortuneEquityServiceCardSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8139833843247587572L;
+	private static final long serialVersionUID = 1762389611578847265L;
 
 	/** 
 	 * 是否同步成功

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜谱同步简化接口
  *
  * @author auto create
- * @since 1.0, 2020-06-23 16:10:35
+ * @since 1.0, 2020-08-31 11:12:56
  */
 public class KoubeiCateringDishMenuSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5394137466536628946L;
+	private static final long serialVersionUID = 3513995584174178593L;
 
 	/**
 	 * 菜谱背景图片id

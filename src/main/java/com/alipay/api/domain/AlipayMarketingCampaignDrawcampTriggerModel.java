@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销抽奖活动触发
  *
  * @author auto create
- * @since 1.0, 2020-07-08 15:26:57
+ * @since 1.0, 2020-09-02 14:27:46
  */
 public class AlipayMarketingCampaignDrawcampTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8498114244859791578L;
+	private static final long serialVersionUID = 2587844211719829811L;
 
 	/**
 	 * 用户参与活动的手机号（如果是用户直接输入手机号的活动形式，该项必填，作为识别用户的依据）

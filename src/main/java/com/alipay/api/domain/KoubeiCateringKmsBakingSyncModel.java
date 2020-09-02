@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * kms烘焙数据同步
  *
  * @author auto create
- * @since 1.0, 2020-05-06 16:54:49
+ * @since 1.0, 2020-09-02 15:45:05
  */
 public class KoubeiCateringKmsBakingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1731476364755923392L;
+	private static final long serialVersionUID = 5296289143357952865L;
 
 	/**
 	 * 同步:sync;

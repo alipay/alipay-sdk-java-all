@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收支明细
  *
  * @author auto create
- * @since 1.0, 2019-08-11 12:48:49
+ * @since 1.0, 2020-08-31 20:26:02
  */
 public class BillDingBizOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8384985934225638254L;
+	private static final long serialVersionUID = 2249621348673356622L;
 
 	/**
 	 * 收支金额,收入为正,支出为负

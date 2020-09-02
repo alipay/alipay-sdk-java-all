@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可开票单据response
  *
  * @author auto create
- * @since 1.0, 2020-08-07 14:55:39
+ * @since 1.0, 2020-08-28 13:49:12
  */
 public class ArInvoiceReceiptOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8639689927747373272L;
+	private static final long serialVersionUID = 3176926653191193629L;
 
 	/**
 	 * 合约号

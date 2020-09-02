@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundBill extends AlipayObject {
 
-	private static final long serialVersionUID = 4858448756566267539L;
+	private static final long serialVersionUID = 7396575172878958454L;
 
 	/**
 	 * 该支付工具类型所使用的金额

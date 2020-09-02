@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 财务开票模式同步
  *
  * @author auto create
- * @since 1.0, 2020-08-18 15:51:31
+ * @since 1.0, 2020-08-31 21:14:23
  */
 public class AlipayBossFncInvmodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1533517837236635746L;
+	private static final long serialVersionUID = 3874271388663681439L;
+
+	/**
+	 * 合同id
+	 */
+	@ApiField("ar_no")
+	private String arNo;
 
 	/**
 	 * 所属ou
@@ -32,6 +38,13 @@ public class AlipayBossFncInvmodeCreateModel extends AlipayObject {
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
+
+	public String getArNo() {
+		return this.arNo;
+	}
+	public void setArNo(String arNo) {
+		this.arNo = arNo;
+	}
 
 	public String getInstId() {
 		return this.instId;

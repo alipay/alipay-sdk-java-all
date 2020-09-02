@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子身份证查询用户身份信息
  *
  * @author auto create
- * @since 1.0, 2020-06-19 16:14:20
+ * @since 1.0, 2020-08-27 15:05:13
  */
 public class AlipayUserElectronicidUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1681894725267734947L;
+	private static final long serialVersionUID = 7514276419852662139L;
 
 	/**
 	 * 用户码码串

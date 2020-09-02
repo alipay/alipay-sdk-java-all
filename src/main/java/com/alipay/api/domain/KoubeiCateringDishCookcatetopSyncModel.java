@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜谱分类置顶同步
  *
  * @author auto create
- * @since 1.0, 2020-07-24 15:06:42
+ * @since 1.0, 2020-08-31 11:12:05
  */
 public class KoubeiCateringDishCookcatetopSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6855788458517385617L;
+	private static final long serialVersionUID = 5136838538264544325L;
 
 	/**
 	 * 菜谱类目置顶操作列表，一次批量操作最多100个

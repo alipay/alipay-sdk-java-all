@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票要素模型
  *
  * @author auto create
- * @since 1.0, 2020-08-07 15:31:38
+ * @since 1.0, 2020-08-28 09:51:04
  */
 public class InvoiceElementModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4222338375425418476L;
+	private static final long serialVersionUID = 3131977562526853946L;
 
 	/**
 	 * 发票报销状态
@@ -25,6 +25,12 @@ EXPENSE_FINISHED－已报销
 	 */
 	@ApiField("expense_status")
 	private String expenseStatus;
+
+	/**
+	 * 扩展字段
+	 */
+	@ApiField("extend_fields")
+	private String extendFields;
 
 	/**
 	 * 发票是否有pdf文件
@@ -41,7 +47,7 @@ false:存在异常
 	private Boolean hasRisk;
 
 	/**
-	 * 发票金额
+	 * 发票金额，含税
 	 */
 	@ApiField("invoice_amount")
 	private String invoiceAmount;
@@ -117,6 +123,12 @@ EXPIRED－已失效
 	private String mName;
 
 	/**
+	 * 发票金额，不含税
+	 */
+	@ApiField("out_tax_amount")
+	private String outTaxAmount;
+
+	/**
 	 * 销方名称
 	 */
 	@ApiField("payee_name")
@@ -173,6 +185,13 @@ notMatch-未做匹配
 	}
 	public void setExpenseStatus(String expenseStatus) {
 		this.expenseStatus = expenseStatus;
+	}
+
+	public String getExtendFields() {
+		return this.extendFields;
+	}
+	public void setExtendFields(String extendFields) {
+		this.extendFields = extendFields;
 	}
 
 	public Boolean getHasPdfFile() {
@@ -264,6 +283,13 @@ notMatch-未做匹配
 	}
 	public void setmName(String mName) {
 		this.mName = mName;
+	}
+
+	public String getOutTaxAmount() {
+		return this.outTaxAmount;
+	}
+	public void setOutTaxAmount(String outTaxAmount) {
+		this.outTaxAmount = outTaxAmount;
 	}
 
 	public String getPayeeName() {

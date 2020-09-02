@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销报表下载
  *
  * @author auto create
- * @since 1.0, 2017-09-29 15:08:57
+ * @since 1.0, 2020-08-31 10:35:32
  */
 public class KoubeiMarketingDataActivityBillDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4433476578129363849L;
+	private static final long serialVersionUID = 1172235162384581561L;
 
 	/**
 	 * 活动id

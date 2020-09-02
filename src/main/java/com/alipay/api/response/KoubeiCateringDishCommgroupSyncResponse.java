@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.commgroup.sync response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-24 15:07:05
+ * @since 1.0, 2020-09-02 11:49:10
  */
 public class KoubeiCateringDishCommgroupSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6559374881537824672L;
+	private static final long serialVersionUID = 3844756638873297457L;
 
 	/** 
 	 * 通用分组的id,标示组结构的唯一id

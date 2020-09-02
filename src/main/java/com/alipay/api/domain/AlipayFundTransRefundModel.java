@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金退款
  *
  * @author auto create
- * @since 1.0, 2019-12-17 21:00:59
+ * @since 1.0, 2020-09-01 11:06:46
  */
 public class AlipayFundTransRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4738313862195119574L;
+	private static final long serialVersionUID = 4663517678779377665L;
 
 	/**
 	 * JSON格式，传递业务扩展参数，使用前请与支付宝工程师联系！

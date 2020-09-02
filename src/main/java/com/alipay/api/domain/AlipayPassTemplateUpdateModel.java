@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass更新模版接口
  *
  * @author auto create
- * @since 1.0, 2019-08-08 19:59:56
+ * @since 1.0, 2020-08-31 14:00:47
  */
 public class AlipayPassTemplateUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8128716786581223411L;
+	private static final long serialVersionUID = 3414418291366726279L;
 
 	/**
 	 * 模板内容信息，遵循JSON规范，详情参见tpl_content参数说明:https://doc.open.alipay.com/doc2/detail.htm?treeId=193&articleId=105249&docType=1#tpl_content

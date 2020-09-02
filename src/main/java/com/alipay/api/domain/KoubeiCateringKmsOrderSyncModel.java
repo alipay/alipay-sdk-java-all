@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步外部订单到KDS
  *
  * @author auto create
- * @since 1.0, 2020-01-10 16:45:52
+ * @since 1.0, 2020-09-02 15:45:30
  */
 public class KoubeiCateringKmsOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4715866676676764783L;
+	private static final long serialVersionUID = 5418539255468424928L;
 
 	/**
 	 * 同步动作. "PUSH":推送订单; "CANCEL_PUSH": 取消推送

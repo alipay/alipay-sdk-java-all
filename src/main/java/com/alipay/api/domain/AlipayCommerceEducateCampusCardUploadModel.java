@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEducateCampusCardUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3621622576533542521L;
+	private static final long serialVersionUID = 6384797754791252669L;
 
 	/**
 	 * 学生证照片链接(可多张)。注：需要提供图片oss URL访问地址，且url需要长期有效

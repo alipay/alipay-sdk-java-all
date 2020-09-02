@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataAiservicePriceoptimizerGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8261396181535695941L;
+	private static final long serialVersionUID = 7512464474835796588L;
 
 	/** 
 	 * 推荐价格返回列表

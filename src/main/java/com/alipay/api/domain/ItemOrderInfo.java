@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单商品信息
  *
  * @author auto create
- * @since 1.0, 2020-06-20 11:00:45
+ * @since 1.0, 2020-08-27 15:01:58
  */
 public class ItemOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5781782794362235444L;
+	private static final long serialVersionUID = 6212993756892174739L;
 
 	/**
 	 * 扩展信息，请参见产品文档。小程序订单助手业务中，扩展参数必须传递素材id；其他业务场景参见对应的产品文档。

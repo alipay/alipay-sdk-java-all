@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantOrderRentModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3445254812728315696L;
+	private static final long serialVersionUID = 6537967159563377516L;
 
 	/**
 	 * 芝麻借还订单的开始借用时间，格式：yyyy-mm-dd hh:MM:ss 

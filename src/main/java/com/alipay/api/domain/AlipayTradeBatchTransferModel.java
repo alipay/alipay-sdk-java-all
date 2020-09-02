@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 请款分账
  *
  * @author auto create
- * @since 1.0, 2020-08-17 23:26:53
+ * @since 1.0, 2020-09-02 15:06:34
  */
 public class AlipayTradeBatchTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1152748735766668627L;
+	private static final long serialVersionUID = 2465232295858751767L;
 
 	/**
 	 * 业务扩展参数

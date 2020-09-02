@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotOrderPrintSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4365665928952641625L;
+	private static final long serialVersionUID = 7493796163174692499L;
 
 	
 

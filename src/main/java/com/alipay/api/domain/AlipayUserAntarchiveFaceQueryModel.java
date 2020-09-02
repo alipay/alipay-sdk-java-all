@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAntarchiveFaceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4157439663575613162L;
+	private static final long serialVersionUID = 1761218359869698475L;
 
 	/**
 	 * 出生日期(RFC3339格式)，yyyy-MM-dd，可选.若证件类型为105(港澳居民往来内地通行证)或106(台湾居民往来内地通行证)时,cert_expire_date与birthday至少填写一项

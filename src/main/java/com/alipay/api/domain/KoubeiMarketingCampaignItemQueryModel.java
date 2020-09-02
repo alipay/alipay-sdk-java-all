@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户商品券查询接口
  *
  * @author auto create
- * @since 1.0, 2017-09-29 15:08:13
+ * @since 1.0, 2020-08-31 10:32:12
  */
 public class KoubeiMarketingCampaignItemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5243842871971752749L;
+	private static final long serialVersionUID = 2129193356817497917L;
 
 	/**
 	 * 商品id

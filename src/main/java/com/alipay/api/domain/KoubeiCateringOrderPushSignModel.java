@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringOrderPushSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1119497894196133923L;
+	private static final long serialVersionUID = 3671717876574129919L;
 
 	/**
 	 * 口碑推单批次号，口碑推单时传入；

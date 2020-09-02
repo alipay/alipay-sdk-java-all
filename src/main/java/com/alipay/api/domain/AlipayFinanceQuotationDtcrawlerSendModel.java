@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinanceQuotationDtcrawlerSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6689681349562168371L;
+	private static final long serialVersionUID = 4625665612279345631L;
 
 	/**
 	 * 爬虫平台推送数据，为json字符串，bizNo 为推送流水号，taskName为任务名，业务数据包含在bizData中

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜品估清数据同步
  *
  * @author auto create
- * @since 1.0, 2020-03-25 18:04:09
+ * @since 1.0, 2020-09-02 11:52:39
  */
 public class KoubeiCateringDishEstimatedSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8365894973223867166L;
+	private static final long serialVersionUID = 8611589156165599488L;
 
 	/**
 	 * 菜品估清类型,estimated表示菜品估清

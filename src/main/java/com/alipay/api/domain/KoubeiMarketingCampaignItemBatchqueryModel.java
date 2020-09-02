@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商品券批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-09-29 15:08:21
+ * @since 1.0, 2020-08-31 10:34:44
  */
 public class KoubeiMarketingCampaignItemBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6413738496339389259L;
+	private static final long serialVersionUID = 5415669314241993932L;
 
 	/**
 	 * 操作人id，必须和operator_type配对存在，不填时默认是商户

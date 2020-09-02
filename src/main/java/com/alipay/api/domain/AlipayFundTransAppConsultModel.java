@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无线转账支付咨询接口
  *
  * @author auto create
- * @since 1.0, 2019-12-18 11:48:12
+ * @since 1.0, 2020-08-27 11:50:10
  */
 public class AlipayFundTransAppConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2661525169293986466L;
+	private static final long serialVersionUID = 3751743437835357822L;
 
 	/**
 	 * 描述特定的业务场景，比如对党费缴纳场景需走党费专户。
