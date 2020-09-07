@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻go商户数据回传金额类型数据模型
  *
  * @author auto create
- * @since 1.0, 2020-09-01 23:53:18
+ * @since 1.0, 2020-09-03 14:58:57
  */
 public class AmountTypeData extends AlipayObject {
 
-	private static final long serialVersionUID = 8679469282241715112L;
+	private static final long serialVersionUID = 3367955478359182462L;
 
 	/**
 	 * 累计类型为金额类型的累计名称。为必传入参。
@@ -23,14 +23,20 @@ public class AmountTypeData extends AlipayObject {
 	private String name;
 
 	/**
-	 * 优惠信息。为List类型，支持传入多笔优惠，大部分场景传入一笔。包含：优惠名称，优惠类型，优惠金额（单位元）。为必传入参。
+	 * 优惠信息。为List类型，支持传入多笔优惠，大部分场景传入一笔。包含：优惠名称，优惠类型，优惠金额（单位元）。
+字段必传场景：
+1.当累计模式为【交易绑定模式】时，为必传入参。
+2.当累计模式为【交易解耦模式】，同时需要累计优惠信息时，为必传入参。
 	 */
 	@ApiListField("out_discount_infos")
 	@ApiField("z_m_go_out_discount_info")
 	private List<ZMGoOutDiscountInfo> outDiscountInfos;
 
 	/**
-	 * 交易信息。包含：交易号，交易金额。为必传入参。
+	 * 交易信息。包含：交易号，交易金额。
+字段必传场景：
+1.当累计模式为【交易绑定模式】时，为必传入参。
+2.当累计模式为【交易解耦模式】，同时需要累计交易信息时，为必传入参。
 	 */
 	@ApiField("trade_info")
 	private ZMGoTradeInfo tradeInfo;

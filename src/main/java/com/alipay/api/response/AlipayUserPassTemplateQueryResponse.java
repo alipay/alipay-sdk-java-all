@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.pass.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-05 10:21:21
+ * @since 1.0, 2020-09-03 15:39:36
  */
 public class AlipayUserPassTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5278222925221916381L;
+	private static final long serialVersionUID = 2389477435946721966L;
 
 	/** 
 	 * 基础属性

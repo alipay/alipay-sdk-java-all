@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡包卡券模板查询接口
  *
  * @author auto create
- * @since 1.0, 2020-05-08 19:45:41
+ * @since 1.0, 2020-09-03 15:39:36
  */
 public class AlipayUserPassTemplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8711293142475811876L;
+	private static final long serialVersionUID = 8255198535699463683L;
 
 	/**
 	 * 支付宝模版ID

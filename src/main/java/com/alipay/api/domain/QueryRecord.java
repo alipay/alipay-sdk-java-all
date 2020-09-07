@@ -9,11 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约记录信息
  *
  * @author auto create
- * @since 1.0, 2020-08-07 16:48:26
+ * @since 1.0, 2020-09-03 01:23:09
  */
 public class QueryRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 8133194651845574622L;
+	private static final long serialVersionUID = 7845257768896438666L;
+
+	/**
+	 * 区块在账本中的数据地址
+	 */
+	@ApiField("block_addr")
+	private String blockAddr;
+
+	/**
+	 * 上链内容所在区块高度
+	 */
+	@ApiField("block_height")
+	private String blockHeight;
 
 	/**
 	 * 企业编号
@@ -26,6 +38,14 @@ public class QueryRecord extends AlipayObject {
 	 */
 	@ApiField("corp_name")
 	private String corpName;
+
+	/**
+	 * 上链状态
+
+SYNCHING：上链中；SYNCHED：上链完成
+	 */
+	@ApiField("notary_status")
+	private String notaryStatus;
 
 	/**
 	 * 操作人(经办人/实际签约人)姓名
@@ -57,6 +77,32 @@ public class QueryRecord extends AlipayObject {
 	@ApiField("sign_type_code")
 	private String signTypeCode;
 
+	/**
+	 * 上链时间
+	 */
+	@ApiField("syn_time")
+	private Date synTime;
+
+	/**
+	 * 签约步骤上链哈希值
+	 */
+	@ApiField("tx_hash_code")
+	private String txHashCode;
+
+	public String getBlockAddr() {
+		return this.blockAddr;
+	}
+	public void setBlockAddr(String blockAddr) {
+		this.blockAddr = blockAddr;
+	}
+
+	public String getBlockHeight() {
+		return this.blockHeight;
+	}
+	public void setBlockHeight(String blockHeight) {
+		this.blockHeight = blockHeight;
+	}
+
 	public String getCorpCode() {
 		return this.corpCode;
 	}
@@ -69,6 +115,13 @@ public class QueryRecord extends AlipayObject {
 	}
 	public void setCorpName(String corpName) {
 		this.corpName = corpName;
+	}
+
+	public String getNotaryStatus() {
+		return this.notaryStatus;
+	}
+	public void setNotaryStatus(String notaryStatus) {
+		this.notaryStatus = notaryStatus;
 	}
 
 	public String getOprCertName() {
@@ -104,6 +157,20 @@ public class QueryRecord extends AlipayObject {
 	}
 	public void setSignTypeCode(String signTypeCode) {
 		this.signTypeCode = signTypeCode;
+	}
+
+	public Date getSynTime() {
+		return this.synTime;
+	}
+	public void setSynTime(Date synTime) {
+		this.synTime = synTime;
+	}
+
+	public String getTxHashCode() {
+		return this.txHashCode;
+	}
+	public void setTxHashCode(String txHashCode) {
+		this.txHashCode = txHashCode;
 	}
 
 }

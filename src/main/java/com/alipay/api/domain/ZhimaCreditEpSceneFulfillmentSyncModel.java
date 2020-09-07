@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpSceneFulfillmentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2727178519583438523L;
+	private static final long serialVersionUID = 3452535938446527378L;
 
 	/**
 	 * 特定业务场景传输的扩展参数，以JSON形式传输。具体业务场景需要传入参数请参考<a href="https://docs.open.alipay.com/11270#s3">业务场景传输的扩展参数</a>

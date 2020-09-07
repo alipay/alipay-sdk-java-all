@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模版利益点信息
  *
  * @author auto create
- * @since 1.0, 2020-07-07 14:59:46
+ * @since 1.0, 2020-09-03 15:40:07
  */
 public class TemplateProfitDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8458727896876761113L;
+	private static final long serialVersionUID = 4753939792293719534L;
 
 	/**
 	 * 利益前缀，如“立减10元”，利益前缀为：立减。随机立减券、减至券不填会使用默认值，其它类型可空。支持自定义动态参数传值，但动态参数需定义为：$_r_profit_pre_desc$。

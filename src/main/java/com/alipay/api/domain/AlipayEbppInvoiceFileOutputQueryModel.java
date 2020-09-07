@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销发票原件查询
  *
  * @author auto create
- * @since 1.0, 2020-08-24 18:50:09
+ * @since 1.0, 2020-09-04 15:15:08
  */
 public class AlipayEbppInvoiceFileOutputQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5198736518553435988L;
+	private static final long serialVersionUID = 4889811426113663763L;
 
 	/**
 	 * 发票代码
@@ -33,6 +33,12 @@ public class AlipayEbppInvoiceFileOutputQueryModel extends AlipayObject {
 	 */
 	@ApiField("scene")
 	private String scene;
+
+	/**
+	 * 是否跳过发票报销状态同步；当为true时，跳过报销状态同步校验。默认为false，需要先做报销状态同步
+	 */
+	@ApiField("skip_expense_progress_sync")
+	private Boolean skipExpenseProgressSync;
 
 	/**
 	 * 支付宝用户id
@@ -59,6 +65,13 @@ public class AlipayEbppInvoiceFileOutputQueryModel extends AlipayObject {
 	}
 	public void setScene(String scene) {
 		this.scene = scene;
+	}
+
+	public Boolean getSkipExpenseProgressSync() {
+		return this.skipExpenseProgressSync;
+	}
+	public void setSkipExpenseProgressSync(Boolean skipExpenseProgressSync) {
+		this.skipExpenseProgressSync = skipExpenseProgressSync;
 	}
 
 	public String getUserId() {

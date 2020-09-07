@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antarchive.face.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-22 19:50:10
+ * @since 1.0, 2020-09-03 15:59:14
  */
 public class AlipayUserAntarchiveFaceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1749448386143113129L;
+	private static final long serialVersionUID = 1285993495929762266L;
 
 	/** 
 	 * 返回人脸图片类型列表.若不存在则返回空列表

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMiniCardData extends AlipayObject {
 
-	private static final long serialVersionUID = 5456493613684374896L;
+	private static final long serialVersionUID = 4739264572876684255L;
 
 	/**
 	 * 行动点链接，用户点击卡片的button时跳转到支付宝相应页面的链接地址

@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 法链系统 发起签约请求
  *
  * @author auto create
- * @since 1.0, 2020-03-25 15:57:56
+ * @since 1.0, 2020-09-03 01:36:53
  */
 public class AlipayBossProdAntlegalchainOrderApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2336455237924218958L;
+	private static final long serialVersionUID = 6536212641142325541L;
 
 	/**
 	 * 关联业务数据编号
 	 */
 	@ApiField("biz_code")
 	private String bizCode;
+
+	/**
+	 * 关联业务名称
+	 */
+	@ApiField("biz_name")
+	private String bizName;
 
 	/**
 	 * 业务数据请求唯一标识,唯一
@@ -118,6 +124,12 @@ public class AlipayBossProdAntlegalchainOrderApplyModel extends AlipayObject {
 	private String requestToken;
 
 	/**
+	 * 签约顺序, 1表示我方先签约; 2表示对方先签约. （可传，若不传，默认值为1，即“我方先签约”）
+	 */
+	@ApiField("sign_order")
+	private Long signOrder;
+
+	/**
 	 * 发起签约时间/我方签约时间
 	 */
 	@ApiField("submit_time")
@@ -128,6 +140,13 @@ public class AlipayBossProdAntlegalchainOrderApplyModel extends AlipayObject {
 	}
 	public void setBizCode(String bizCode) {
 		this.bizCode = bizCode;
+	}
+
+	public String getBizName() {
+		return this.bizName;
+	}
+	public void setBizName(String bizName) {
+		this.bizName = bizName;
 	}
 
 	public String getBizUniqueId() {
@@ -233,6 +252,13 @@ public class AlipayBossProdAntlegalchainOrderApplyModel extends AlipayObject {
 	}
 	public void setRequestToken(String requestToken) {
 		this.requestToken = requestToken;
+	}
+
+	public Long getSignOrder() {
+		return this.signOrder;
+	}
+	public void setSignOrder(Long signOrder) {
+		this.signOrder = signOrder;
 	}
 
 	public Date getSubmitTime() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TransOrderResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3519326636635417559L;
+	private static final long serialVersionUID = 5514524986515789421L;
 
 	/**
 	 * 转账失败时的错误码描述。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模版来源渠道
  *
  * @author auto create
- * @since 1.0, 2020-07-07 15:00:00
+ * @since 1.0, 2020-09-03 15:40:15
  */
 public class TemplatePlatformDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3232412357316228632L;
+	private static final long serialVersionUID = 3575125225363253529L;
 
 	/**
 	 * 卡券所属业务线，如飞猪在其内部营销平台里，通过营销活动为新用户发放优惠券，那此处填写飞猪业务线：fliggy。支持自定义动态参数传值，但动态参数需定义为：$_r_biz_from_bu$。

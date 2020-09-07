@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarParkingLotbarcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6118152862633717159L;
+	private static final long serialVersionUID = 1324187194236169146L;
 
 	/**
 	 * 停车场编号

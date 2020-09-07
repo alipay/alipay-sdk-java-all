@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pass.template.add request
  * 
  * @author auto create
- * @since 1.0, 2020-08-31 13:58:59
+ * @since 1.0, 2020-09-04 17:22:26
  */
 public class AlipayPassTemplateAddRequest implements AlipayRequest<AlipayPassTemplateAddResponse> {
 

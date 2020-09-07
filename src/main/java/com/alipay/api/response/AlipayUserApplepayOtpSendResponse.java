@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserApplepayOtpSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5232259596691391961L;
+	private static final long serialVersionUID = 3338923252471264184L;
 
 	/** 
 	 * 响应头

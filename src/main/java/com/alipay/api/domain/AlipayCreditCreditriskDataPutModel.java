@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业融资数据采集平台对外的数据提交接口
  *
  * @author auto create
- * @since 1.0, 2018-11-14 16:41:37
+ * @since 1.0, 2020-09-03 17:21:59
  */
 public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8427188559835395247L;
+	private static final long serialVersionUID = 3419661156829122997L;
 
 	/**
 	 * 数据类别,ISV注册成为网商银行的会员，达成数据合作服务，约定数据模型，由网商分配给ISV的数据模型的类别

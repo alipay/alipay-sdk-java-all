@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数金机构单发模板消息
  *
  * @author auto create
- * @since 1.0, 2020-08-24 10:32:54
+ * @since 1.0, 2020-09-03 10:59:50
  */
 public class AntfortuneEquityMessageSingleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5791897444336174656L;
+	private static final long serialVersionUID = 6457931597153228842L;
 
 	/**
 	 * TA编码

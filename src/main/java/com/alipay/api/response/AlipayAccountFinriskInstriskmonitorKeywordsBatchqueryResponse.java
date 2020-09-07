@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountFinriskInstriskmonitorKeywordsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1843258668766966739L;
+	private static final long serialVersionUID = 1515575134824314159L;
 
 	/** 
 	 * 返回机构关键词相关信息

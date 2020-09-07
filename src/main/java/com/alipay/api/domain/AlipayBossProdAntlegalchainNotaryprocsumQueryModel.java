@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询特定签约记录
  *
  * @author auto create
- * @since 1.0, 2020-08-06 20:19:46
+ * @since 1.0, 2020-09-03 01:23:09
  */
 public class AlipayBossProdAntlegalchainNotaryprocsumQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4152721185697656982L;
+	private static final long serialVersionUID = 2296151181178827412L;
 
 	/**
 	 * 法链签约业务ID，发起签约会返回对应的ID值

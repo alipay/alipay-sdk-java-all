@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡包卡券模板创建接口
  *
  * @author auto create
- * @since 1.0, 2020-05-11 10:38:59
+ * @since 1.0, 2020-09-03 15:39:53
  */
 public class AlipayUserPassTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2558184783155697341L;
+	private static final long serialVersionUID = 5536248329775455699L;
 
 	/**
 	 * 基础属性

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模版辅助核销区信息
  *
  * @author auto create
- * @since 1.0, 2020-05-08 19:33:41
+ * @since 1.0, 2020-09-03 15:40:07
  */
 public class TemplateSecondaryOperationDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7223364184999662168L;
+	private static final long serialVersionUID = 1446274716481935348L;
 
 	/**
 	 * 是否进行核销。支持以 $动态参数$ 形式的自定义动态参数传值。

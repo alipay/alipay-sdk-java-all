@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ButtonObject extends AlipayObject {
 
-	private static final long serialVersionUID = 3272185278816155829L;
+	private static final long serialVersionUID = 5112848145789275878L;
 
 	/**
 	 * 当actionType为link时，该参数为url链接；

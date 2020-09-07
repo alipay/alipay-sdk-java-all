@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelGkaCampprizeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1389987457317464362L;
+	private static final long serialVersionUID = 6111431863197577197L;
 
 	/** 
 	 * 奖品信息列表，一定不为null，但是size可以为0
