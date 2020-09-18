@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票同步场景下的发票入参模型
  *
  * @author auto create
- * @since 1.0, 2020-08-26 11:26:35
+ * @since 1.0, 2020-09-08 14:06:28
  */
 public class InvoiceSendOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2291481347329559284L;
+	private static final long serialVersionUID = 2531982738958322844L;
 
 	/**
 	 * 支付宝端的申请id。如果在开票过程中，是通过支付宝提交的申请到机构端，支付宝会带上开票申请在支付宝生成的申请id，机构在回传发票的时候只需要回传这个申请id，不用获取用户的uid，支付宝可以根据申请id将发票归集到对应的用户名下

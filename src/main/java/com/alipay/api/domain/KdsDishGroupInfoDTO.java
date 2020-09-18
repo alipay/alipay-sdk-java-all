@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品信息(与KdsDishInfoDTO相比, 仅缺一个dishGroupInfo字段, 增加一个out_parent_id字段)
  *
  * @author auto create
- * @since 1.0, 2019-12-26 11:38:05
+ * @since 1.0, 2020-09-14 15:48:58
  */
 public class KdsDishGroupInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7337449386874421533L;
+	private static final long serialVersionUID = 7828979988499478444L;
 
 	/**
 	 * 菜品制作耗时，单位分钟

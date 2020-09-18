@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 销量预测模型
  *
  * @author auto create
- * @since 1.0, 2020-05-08 15:38:14
+ * @since 1.0, 2020-09-14 15:48:31
  */
 public class KmsBakingSalesForecastDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5216586624435363529L;
+	private static final long serialVersionUID = 1778665274951474721L;
 
 	/**
 	 * 预测日期

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝交易支付工具
  *
  * @author auto create
- * @since 1.0, 2019-11-29 10:54:28
+ * @since 1.0, 2020-09-15 15:06:42
  */
 public class InvoiceTradeFundItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3425194459123712916L;
+	private static final long serialVersionUID = 8465699688236355644L;
 
 	/**
 	 * 当前支付工具支付的金额

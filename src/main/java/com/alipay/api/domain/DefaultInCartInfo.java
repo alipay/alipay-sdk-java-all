@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开台菜默认规则类型
  *
  * @author auto create
- * @since 1.0, 2020-06-15 11:49:39
+ * @since 1.0, 2020-09-07 16:15:28
  */
 public class DefaultInCartInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6567473978399475179L;
+	private static final long serialVersionUID = 3447817448599833446L;
 
 	/**
 	 * 如果不设置就餐人数，该字段必填，代表开台菜的默认必点数量。

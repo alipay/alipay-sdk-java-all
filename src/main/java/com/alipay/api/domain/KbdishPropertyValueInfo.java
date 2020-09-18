@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品销售属性属性值模型
  *
  * @author auto create
- * @since 1.0, 2020-06-15 11:50:36
+ * @since 1.0, 2020-09-07 16:14:09
  */
 public class KbdishPropertyValueInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3388126379819877945L;
+	private static final long serialVersionUID = 8878299995736855295L;
 
 	/**
 	 * 属性值排序字段，从1一直递增到5

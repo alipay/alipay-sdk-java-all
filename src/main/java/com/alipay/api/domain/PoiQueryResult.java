@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PoiQueryResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4116834863819569522L;
+	private static final long serialVersionUID = 3353517453735465633L;
 
 	/**
 	 * 地址

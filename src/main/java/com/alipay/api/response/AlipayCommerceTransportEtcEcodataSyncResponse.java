@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.ecodata.sync response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-04 10:01:59
+ * @since 1.0, 2020-09-11 10:10:25
  */
 public class AlipayCommerceTransportEtcEcodataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8765141941863533122L;
+	private static final long serialVersionUID = 7231718639211876462L;
 
 	/** 
 	 * 同步结果，true/false

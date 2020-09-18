@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayGotoneAckcodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1766453779129464625L;
+	private static final long serialVersionUID = 1735953988497412298L;
 
 	/** 
 	 * 返回结果

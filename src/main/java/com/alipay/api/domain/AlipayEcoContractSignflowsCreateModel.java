@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoContractSignflowsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2531899244741972297L;
+	private static final long serialVersionUID = 4243612587512866527L;
 
 	/**
 	 * 附件信息（附件可作为合同的辅助证明材料，无需签署。需通过文件直传接口上传附件，获取文件id后添加）

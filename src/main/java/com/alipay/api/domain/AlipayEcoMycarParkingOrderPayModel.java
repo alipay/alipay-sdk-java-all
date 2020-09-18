@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车缴费代扣接口API
  *
  * @author auto create
- * @since 1.0, 2020-08-16 23:18:29
+ * @since 1.0, 2020-09-18 10:30:45
  */
 public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8641654176457979964L;
+	private static final long serialVersionUID = 7319425161624865579L;
 
 	/**
 	 * 代扣返佣的支付宝用户号。
@@ -33,7 +33,7 @@ public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 	private String carNumber;
 
 	/**
-	 * 车牌颜色
+	 * 车牌颜色，可选蓝-BLUE、绿-GREEN、黄-YELLOW、白-WHITE、黑-BLACK、黄绿色-LIMEGREEN
 	 */
 	@ApiField("car_number_color")
 	private String carNumberColor;
@@ -78,6 +78,12 @@ false不开启(默认)
 	 */
 	@ApiField("seller_logon_id")
 	private String sellerLogonId;
+
+	/**
+	 * 支付宝业务流水号，用于记录车辆从驶入到驶出的全流程
+	 */
+	@ApiField("serial_no")
+	private String serialNo;
 
 	/**
 	 * 订单标题，描述订单用途
@@ -159,6 +165,13 @@ false不开启(默认)
 	}
 	public void setSellerLogonId(String sellerLogonId) {
 		this.sellerLogonId = sellerLogonId;
+	}
+
+	public String getSerialNo() {
+		return this.serialNo;
+	}
+	public void setSerialNo(String serialNo) {
+		this.serialNo = serialNo;
 	}
 
 	public String getSubject() {

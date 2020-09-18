@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询是否开通森林
  *
  * @author auto create
- * @since 1.0, 2020-03-11 23:38:30
+ * @since 1.0, 2020-09-14 10:56:19
  */
 public class AlipayUserCharityForestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2865211264698365835L;
+	private static final long serialVersionUID = 4179543929776964325L;
 
 	/**
 	 * 用户的支付宝账户ID

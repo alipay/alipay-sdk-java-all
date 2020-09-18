@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 简化版菜品模型
  *
  * @author auto create
- * @since 1.0, 2020-06-22 13:26:17
+ * @since 1.0, 2020-09-07 16:13:29
  */
 public class KbdishSimplyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8146215588355188879L;
+	private static final long serialVersionUID = 6734249298111363119L;
 
 	/**
 	 * 加购描述

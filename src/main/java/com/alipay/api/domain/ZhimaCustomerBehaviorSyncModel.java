@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻约定行为反馈
  *
  * @author auto create
- * @since 1.0, 2020-08-16 00:02:19
+ * @since 1.0, 2020-09-07 14:23:57
  */
 public class ZhimaCustomerBehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6455466749764414176L;
+	private static final long serialVersionUID = 8261563366488678873L;
 
 	/**
 	 * 反馈行为
@@ -29,6 +29,12 @@ public class ZhimaCustomerBehaviorSyncModel extends AlipayObject {
 	 */
 	@ApiField("behavior_content")
 	private String behaviorContent;
+
+	/**
+	 * 约定编号
+	 */
+	@ApiField("contract_no")
+	private String contractNo;
 
 	/**
 	 * 业务发生时间
@@ -78,6 +84,13 @@ public class ZhimaCustomerBehaviorSyncModel extends AlipayObject {
 	}
 	public void setBehaviorContent(String behaviorContent) {
 		this.behaviorContent = behaviorContent;
+	}
+
+	public String getContractNo() {
+		return this.contractNo;
+	}
+	public void setContractNo(String contractNo) {
+		this.contractNo = contractNo;
 	}
 
 	public Date getGmtService() {

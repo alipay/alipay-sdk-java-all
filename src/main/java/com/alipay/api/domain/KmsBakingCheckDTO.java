@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 烘焙数据核对模型
  *
  * @author auto create
- * @since 1.0, 2020-04-26 14:07:07
+ * @since 1.0, 2020-09-14 15:48:47
  */
 public class KmsBakingCheckDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7244523519549833779L;
+	private static final long serialVersionUID = 7826596138174132787L;
 
 	/**
 	 * 回传结束时间，格式yyyy-MM-dd HH:mm:ss

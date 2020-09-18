@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝交易模型交易内容项模型
  *
  * @author auto create
- * @since 1.0, 2019-11-29 10:54:28
+ * @since 1.0, 2020-09-15 15:06:42
  */
 public class InvoiceTradeGoodsItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6158742852247833624L;
+	private static final long serialVersionUID = 7634398818871183391L;
 
 	/**
 	 * 商品类目

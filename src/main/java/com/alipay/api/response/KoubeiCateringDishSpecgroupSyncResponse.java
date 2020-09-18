@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.specgroup.sync response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-02 11:57:48
+ * @since 1.0, 2020-09-08 20:55:11
  */
 public class KoubeiCateringDishSpecgroupSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6139444461382573454L;
+	private static final long serialVersionUID = 2237131822491667833L;
 
 	/** 
 	 * 12323

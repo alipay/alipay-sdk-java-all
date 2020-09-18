@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权信息核验
  *
  * @author auto create
- * @since 1.0, 2020-08-27 16:32:07
+ * @since 1.0, 2020-09-13 13:36:43
  */
 public class AnttechBlockchainTwcPreauthinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6188282968415661564L;
+	private static final long serialVersionUID = 1396773892566164446L;
 
 	/**
 	 * 预授权码

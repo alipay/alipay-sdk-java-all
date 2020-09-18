@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑通用组明细模型，用来定制加料，以及属性
  *
  * @author auto create
- * @since 1.0, 2020-06-20 01:34:53
+ * @since 1.0, 2020-09-07 16:13:46
  */
 public class KbdishCommGroupDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3117912556544741422L;
+	private static final long serialVersionUID = 2352846193697511165L;
 
 	/**
 	 * 明细描述；加料以本身的描述为准，该字段不生效

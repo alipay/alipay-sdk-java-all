@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据商户id分页查询菜品信息
  *
  * @author auto create
- * @since 1.0, 2020-09-02 11:48:55
+ * @since 1.0, 2020-09-08 17:21:00
  */
 public class KoubeiCateringDishConditionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2724835116535995376L;
+	private static final long serialVersionUID = 1868779689379146722L;
 
 	/**
 	 * 分类字典大类的id

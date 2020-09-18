@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动限制
  *
  * @author auto create
- * @since 1.0, 2020-04-26 14:07:07
+ * @since 1.0, 2020-09-14 15:48:38
  */
 public class ActivityLimitationDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2465914683867116784L;
+	private static final long serialVersionUID = 7549724397895634232L;
 
 	/**
 	 * 限制份数，与限制类型对应的数量，必须是数字格式，且与限制类型的位置要对应。

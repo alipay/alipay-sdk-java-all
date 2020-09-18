@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayEcoRenthouseRoomConcentrationSyncModel;
+import com.alipay.api.domain.AlipayMarketingCampaignSelfVoucherQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayEcoRenthouseRoomConcentrationSyncResponse;
+import com.alipay.api.response.AlipayMarketingCampaignSelfVoucherQueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.eco.renthouse.room.concentration.sync request
+ * ALIPAY API: alipay.marketing.campaign.self.voucher.query request
  * 
  * @author auto create
- * @since 1.0, 2020-05-12 10:55:19
+ * @since 1.0, 2020-09-11 22:07:45
  */
-public class AlipayEcoRenthouseRoomConcentrationSyncRequest implements AlipayRequest<AlipayEcoRenthouseRoomConcentrationSyncResponse> {
+public class AlipayMarketingCampaignSelfVoucherQueryRequest implements AlipayRequest<AlipayMarketingCampaignSelfVoucherQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 集中式房源同步
+	* 支付宝商户券信息查询
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayEcoRenthouseRoomConcentrationSyncRequest implements AlipayReq
 	}
 
 	public String getApiMethodName() {
-		return "alipay.eco.renthouse.room.concentration.sync";
+		return "alipay.marketing.campaign.self.voucher.query";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayEcoRenthouseRoomConcentrationSyncRequest implements AlipayReq
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayEcoRenthouseRoomConcentrationSyncResponse> getResponseClass() {
-		return AlipayEcoRenthouseRoomConcentrationSyncResponse.class;
+	public Class<AlipayMarketingCampaignSelfVoucherQueryResponse> getResponseClass() {
+		return AlipayMarketingCampaignSelfVoucherQueryResponse.class;
 	}
 	
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品简化接口加料组信息
  *
  * @author auto create
- * @since 1.0, 2020-06-21 14:56:58
+ * @since 1.0, 2020-09-07 16:13:29
  */
 public class KbdishMaterialSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5876785355991464961L;
+	private static final long serialVersionUID = 7356631713392614886L;
 
 	/**
 	 * 加料id列表，加料先通过加料创建接口拿到id

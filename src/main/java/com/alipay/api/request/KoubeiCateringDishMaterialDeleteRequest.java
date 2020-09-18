@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.dish.material.delete request
  * 
  * @author auto create
- * @since 1.0, 2020-09-02 11:54:49
+ * @since 1.0, 2020-09-08 17:20:37
  */
 public class KoubeiCateringDishMaterialDeleteRequest implements AlipayRequest<KoubeiCateringDishMaterialDeleteResponse> {
 

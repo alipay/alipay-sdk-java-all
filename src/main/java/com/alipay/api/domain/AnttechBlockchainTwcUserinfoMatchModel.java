@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户信息匹配
  *
  * @author auto create
- * @since 1.0, 2020-08-10 11:07:47
+ * @since 1.0, 2020-09-11 11:25:33
  */
 public class AnttechBlockchainTwcUserinfoMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1336342245683127655L;
+	private static final long serialVersionUID = 4683533466977489664L;
+
+	/**
+	 * 支付宝的UID
+	 */
+	@ApiField("alipay_user_id")
+	private String alipayUserId;
 
 	/**
 	 * 移动号码hash后的字符串
@@ -30,6 +36,13 @@ public class AnttechBlockchainTwcUserinfoMatchModel extends AlipayObject {
 	 */
 	@ApiField("unify_no_hash")
 	private String unifyNoHash;
+
+	public String getAlipayUserId() {
+		return this.alipayUserId;
+	}
+	public void setAlipayUserId(String alipayUserId) {
+		this.alipayUserId = alipayUserId;
+	}
 
 	public String getCallNoHash() {
 		return this.callNoHash;

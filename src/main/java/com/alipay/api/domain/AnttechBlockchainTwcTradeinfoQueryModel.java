@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支付订单详情
  *
  * @author auto create
- * @since 1.0, 2020-08-25 17:01:59
+ * @since 1.0, 2020-09-15 16:05:18
  */
 public class AnttechBlockchainTwcTradeinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7275742927976648927L;
+	private static final long serialVersionUID = 5181882794564212313L;
 
 	/**
 	 * 支付者用户的支付宝id
@@ -24,6 +24,12 @@ public class AnttechBlockchainTwcTradeinfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("selleruid")
 	private String selleruid;
+
+	/**
+	 * 交易金额
+	 */
+	@ApiField("tradefee")
+	private String tradefee;
 
 	/**
 	 * 支付订单id
@@ -43,6 +49,13 @@ public class AnttechBlockchainTwcTradeinfoQueryModel extends AlipayObject {
 	}
 	public void setSelleruid(String selleruid) {
 		this.selleruid = selleruid;
+	}
+
+	public String getTradefee() {
+		return this.tradefee;
+	}
+	public void setTradefee(String tradefee) {
+		this.tradefee = tradefee;
 	}
 
 	public String getTradeid() {

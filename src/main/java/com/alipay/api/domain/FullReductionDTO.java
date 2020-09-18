@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 满减营销
  *
  * @author auto create
- * @since 1.0, 2020-04-26 14:07:07
+ * @since 1.0, 2020-09-14 15:48:38
  */
 public class FullReductionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3466742771568913282L;
+	private static final long serialVersionUID = 7446418742534897685L;
 
 	/**
 	 * 是否仅满减商品（Y/N）

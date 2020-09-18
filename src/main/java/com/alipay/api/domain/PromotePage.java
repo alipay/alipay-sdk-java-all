@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灯火平台留资页数据结构
  *
  * @author auto create
- * @since 1.0, 2020-05-11 14:38:08
+ * @since 1.0, 2020-09-15 15:23:39
  */
 public class PromotePage extends AlipayObject {
 
-	private static final long serialVersionUID = 6594952172116258533L;
+	private static final long serialVersionUID = 3718586276913576412L;
 
 	/**
 	 * 留资页页面ID

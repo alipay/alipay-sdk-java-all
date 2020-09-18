@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑门店关联的虚拟类目下的菜品信息
  *
  * @author auto create
- * @since 1.0, 2020-03-31 17:54:30
+ * @since 1.0, 2020-09-07 16:15:36
  */
 public class KbVirtualShopCategoryDishInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1278462492173966286L;
+	private static final long serialVersionUID = 8832779216278612115L;
 
 	/**
 	 * 口碑菜品id

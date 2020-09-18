@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合约事项
  *
  * @author auto create
- * @since 1.0, 2020-08-15 22:25:17
+ * @since 1.0, 2020-09-11 17:08:17
  */
 public class ApiContractItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5564954745869814214L;
+	private static final long serialVersionUID = 8589696279838569858L;
 
 	/**
 	 * 实际逾期时间

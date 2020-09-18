@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请相关的发票抬头模型
  *
  * @author auto create
- * @since 1.0, 2019-06-21 17:06:19
+ * @since 1.0, 2020-09-15 15:06:16
  */
 public class InvoiceTitleApplyOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8253991547834973125L;
+	private static final long serialVersionUID = 8629284813193726924L;
 
 	/**
 	 * 购买方地址

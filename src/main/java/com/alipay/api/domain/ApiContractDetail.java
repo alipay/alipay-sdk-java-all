@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 约定详情模型
  *
  * @author auto create
- * @since 1.0, 2020-08-16 20:19:46
+ * @since 1.0, 2020-09-16 19:41:10
  */
 public class ApiContractDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8541925194532559595L;
+	private static final long serialVersionUID = 8188287488964644221L;
 
 	/**
 	 * 合约取消时间
@@ -70,6 +70,12 @@ public class ApiContractDetail extends AlipayObject {
 	 */
 	@ApiField("items")
 	private ApiContractItem items;
+
+	/**
+	 * 历史加入人次
+	 */
+	@ApiField("join_history_people")
+	private Long joinHistoryPeople;
 
 	/**
 	 * 发约单号
@@ -157,6 +163,13 @@ public class ApiContractDetail extends AlipayObject {
 	}
 	public void setItems(ApiContractItem items) {
 		this.items = items;
+	}
+
+	public Long getJoinHistoryPeople() {
+		return this.joinHistoryPeople;
+	}
+	public void setJoinHistoryPeople(Long joinHistoryPeople) {
+		this.joinHistoryPeople = joinHistoryPeople;
 	}
 
 	public String getOfferNo() {

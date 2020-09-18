@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 支付宝个人协议签约接口
  *
  * @author auto create
- * @since 1.0, 2020-06-05 11:38:46
+ * @since 1.0, 2020-09-07 20:04:03
  */
 public class AlipayUserAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5779181716928324294L;
+	private static final long serialVersionUID = 3548485771945442354L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。
@@ -128,6 +131,13 @@ M：手机校验码回填确认方式。
 	 */
 	@ApiField("sign_validity_period")
 	private String signValidityPeriod;
+
+	/**
+	 * 商户希望该协议在代扣支付时指定使用的资产列表，如指定只能使用余额支付
+	 */
+	@ApiListField("specified_channel")
+	@ApiField("specified_channel_param")
+	private List<SpecifiedChannelParam> specifiedChannel;
 
 	/**
 	 * 此参数用于传递子商户信息，目前商户代扣、海外代扣、淘旅行信用住产品支持传入该参数(销售方案中是否允许自定义子商户信息选是)；
@@ -285,6 +295,13 @@ sub_merchant_service_description (子商户服务描述)
 	}
 	public void setSignValidityPeriod(String signValidityPeriod) {
 		this.signValidityPeriod = signValidityPeriod;
+	}
+
+	public List<SpecifiedChannelParam> getSpecifiedChannel() {
+		return this.specifiedChannel;
+	}
+	public void setSpecifiedChannel(List<SpecifiedChannelParam> specifiedChannel) {
+		this.specifiedChannel = specifiedChannel;
 	}
 
 	public String getSubMerchant() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 简化版虚拟类目同步菜品的信息
  *
  * @author auto create
- * @since 1.0, 2020-07-07 20:20:43
+ * @since 1.0, 2020-09-07 16:12:55
  */
 public class KbdishVirtualDishSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5736987645681535417L;
+	private static final long serialVersionUID = 6124698147615357518L;
 
 	/**
 	 * 外部菜品id

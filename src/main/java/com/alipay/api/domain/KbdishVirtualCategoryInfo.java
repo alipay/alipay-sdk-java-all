@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑虚拟类目菜品同步，门店关联的类目对象
  *
  * @author auto create
- * @since 1.0, 2020-03-31 21:03:43
+ * @since 1.0, 2020-09-07 16:15:36
  */
 public class KbdishVirtualCategoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7753438377929352872L;
+	private static final long serialVersionUID = 1582362759225648154L;
 
 	/**
 	 * 虚拟类目id

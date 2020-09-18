@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑定制规则
  *
  * @author auto create
- * @since 1.0, 2020-06-15 11:49:11
+ * @since 1.0, 2020-09-07 16:15:31
  */
 public class KbdishCommRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1483194941848451159L;
+	private static final long serialVersionUID = 6684128263796881376L;
 
 	/**
 	 * 口碑菜品id/口碑skuId/规格的specId,需要和type一一对应

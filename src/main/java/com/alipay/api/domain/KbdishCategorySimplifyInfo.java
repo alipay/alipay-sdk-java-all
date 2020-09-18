@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑菜谱类目简化模型
  *
  * @author auto create
- * @since 1.0, 2020-06-22 10:53:26
+ * @since 1.0, 2020-09-07 16:13:33
  */
 public class KbdishCategorySimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3735199314549135376L;
+	private static final long serialVersionUID = 2443186833864292891L;
 
 	/**
 	 * 菜谱类目名称

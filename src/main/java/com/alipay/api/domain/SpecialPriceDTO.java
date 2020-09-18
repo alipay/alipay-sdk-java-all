@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 特价营销
  *
  * @author auto create
- * @since 1.0, 2020-05-06 16:54:48
+ * @since 1.0, 2020-09-14 15:48:38
  */
 public class SpecialPriceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6766469483456574493L;
+	private static final long serialVersionUID = 7472675623198772216L;
 
 	/**
 	 * 最少份数，如果有阶梯规则，多个值用英文逗号分割，例如：3,5

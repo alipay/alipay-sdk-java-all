@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 满赠营销
  *
  * @author auto create
- * @since 1.0, 2020-05-06 16:54:48
+ * @since 1.0, 2020-09-14 15:48:38
  */
 public class FullGiftDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5875829951459811515L;
+	private static final long serialVersionUID = 6589833366942562745L;
 
 	/**
 	 * 赠送金额，如果有阶梯规则，多个值用英文逗号分割，例如：10,20

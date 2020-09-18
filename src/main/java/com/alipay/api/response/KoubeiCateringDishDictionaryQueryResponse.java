@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.dictionary.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-02 11:58:18
+ * @since 1.0, 2020-09-08 17:21:16
  */
 public class KoubeiCateringDishDictionaryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5167611536598757335L;
+	private static final long serialVersionUID = 2862499583772854654L;
 
 	/** 
 	 * 返回的字典数据列表

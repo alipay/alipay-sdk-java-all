@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合约参与者
  *
  * @author auto create
- * @since 1.0, 2020-08-15 22:25:17
+ * @since 1.0, 2020-09-11 17:10:02
  */
 public class ApiContractParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 2862489674853475991L;
+	private static final long serialVersionUID = 8815316165249423611L;
+
+	/**
+	 * 业务主体id，比如淘宝id
+	 */
+	@ApiField("biz_principal_id")
+	private String bizPrincipalId;
+
+	/**
+	 * 业务主体类型
+	 */
+	@ApiField("biz_principal_type")
+	private String bizPrincipalType;
 
 	/**
 	 * offer、acceptor
@@ -30,6 +42,20 @@ public class ApiContractParticipant extends AlipayObject {
 	 */
 	@ApiField("principal_type")
 	private String principalType;
+
+	public String getBizPrincipalId() {
+		return this.bizPrincipalId;
+	}
+	public void setBizPrincipalId(String bizPrincipalId) {
+		this.bizPrincipalId = bizPrincipalId;
+	}
+
+	public String getBizPrincipalType() {
+		return this.bizPrincipalType;
+	}
+	public void setBizPrincipalType(String bizPrincipalType) {
+		this.bizPrincipalType = bizPrincipalType;
+	}
 
 	public String getParticipantType() {
 		return this.participantType;

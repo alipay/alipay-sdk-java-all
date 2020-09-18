@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品简化接口套餐组信息
  *
  * @author auto create
- * @since 1.0, 2020-08-21 11:43:34
+ * @since 1.0, 2020-09-07 16:13:29
  */
 public class KbdishGroupSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3227841291161743658L;
+	private static final long serialVersionUID = 4292863177726225166L;
 
 	/**
 	 * 套餐组明细
@@ -24,7 +24,7 @@ public class KbdishGroupSimplifyInfo extends AlipayObject {
 	private List<KbdishGroupDetailSimplifyInfo> groupDetailList;
 
 	/**
-	 * 套餐组规则，fix：是否固定套餐，true：是；false：不是。max_count：最大可选数量；min_count：最小可选数量。
+	 * 套餐组规则，fix：是否固定套餐，true：是；false：不是。max_count：最大可选数量；min_count：最小可选数量。sort：套餐组排序值数字从小到大排
 	 */
 	@ApiField("group_rule")
 	private String groupRule;

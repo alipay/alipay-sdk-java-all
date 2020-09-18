@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品做法模型
  *
  * @author auto create
- * @since 1.0, 2020-06-15 11:50:36
+ * @since 1.0, 2020-09-07 16:14:09
  */
 public class KbdishPracticeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1455535775659428893L;
+	private static final long serialVersionUID = 8553913782137428389L;
 
 	/**
 	 * 口碑的菜品id

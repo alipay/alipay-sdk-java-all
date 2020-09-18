@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceIsvtokenReimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4477584933256625584L;
+	private static final long serialVersionUID = 8418799528862416183L;
 
 	/**
 	 * 报销软件app对应的isv app code，由支付宝进行分配

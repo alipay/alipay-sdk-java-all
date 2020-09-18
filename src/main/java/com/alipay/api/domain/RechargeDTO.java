@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 充值营销
  *
  * @author auto create
- * @since 1.0, 2020-05-06 16:54:48
+ * @since 1.0, 2020-09-14 15:48:38
  */
 public class RechargeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1215866999657821292L;
+	private static final long serialVersionUID = 5139299661626431218L;
 
 	/**
 	 * 赠送金额，如果有阶梯规则，多个值用英文逗号分割，例如：10,20

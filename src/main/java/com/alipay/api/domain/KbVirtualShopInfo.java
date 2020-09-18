@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑门店对象
  *
  * @author auto create
- * @since 1.0, 2020-03-31 21:59:15
+ * @since 1.0, 2020-09-07 16:15:36
  */
 public class KbVirtualShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5179238339697949938L;
+	private static final long serialVersionUID = 3187575147892456965L;
 
 	/**
 	 * 门店信息

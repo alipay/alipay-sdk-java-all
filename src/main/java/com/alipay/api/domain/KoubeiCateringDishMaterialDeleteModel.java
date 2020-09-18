@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品库加料删除接口
  *
  * @author auto create
- * @since 1.0, 2020-09-02 11:54:49
+ * @since 1.0, 2020-09-08 17:20:32
  */
 public class KoubeiCateringDishMaterialDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4347835473545379259L;
+	private static final long serialVersionUID = 6874497153868121143L;
 
 	/**
 	 * 菜品加料入参

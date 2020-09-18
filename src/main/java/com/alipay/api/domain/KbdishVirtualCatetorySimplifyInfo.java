@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 虚拟类目同步菜品简化结构类目信息
  *
  * @author auto create
- * @since 1.0, 2020-07-08 10:54:45
+ * @since 1.0, 2020-09-07 16:12:55
  */
 public class KbdishVirtualCatetorySimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4534138531157548219L;
+	private static final long serialVersionUID = 4816161374455115171L;
 
 	/**
 	 * 虚拟类目的名称

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 虚拟类目同步菜品简化接口的门店信息
  *
  * @author auto create
- * @since 1.0, 2020-07-08 16:01:39
+ * @since 1.0, 2020-09-07 16:12:55
  */
 public class KbdishVirtualShopSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5144792866714964743L;
+	private static final long serialVersionUID = 4423894485567297176L;
 
 	/**
 	 * 门店下虚拟类目信息

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.charity.forest.send response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-21 10:03:29
+ * @since 1.0, 2020-09-14 10:57:26
  */
 public class AlipayUserCharityForestSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3638996516243648211L;
+	private static final long serialVersionUID = 3749195492388599663L;
 
 	
 

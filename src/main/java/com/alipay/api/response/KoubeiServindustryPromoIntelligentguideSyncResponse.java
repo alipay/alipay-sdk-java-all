@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiServindustryPromoIntelligentguideSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3497152814185666936L;
+	private static final long serialVersionUID = 1423315512153247383L;
 
 	/** 
 	 * 单次上传交易数据失败条数数量

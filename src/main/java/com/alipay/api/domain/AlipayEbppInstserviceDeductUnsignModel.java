@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣解约
  *
  * @author auto create
- * @since 1.0, 2020-07-02 15:54:04
+ * @since 1.0, 2020-09-11 19:24:19
  */
 public class AlipayEbppInstserviceDeductUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1476758693733123155L;
+	private static final long serialVersionUID = 7453732722893254687L;
 
 	/**
 	 * 签约ID
@@ -30,6 +30,12 @@ public class AlipayEbppInstserviceDeductUnsignModel extends AlipayObject {
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 代扣产品码（由技术同学分配）
+	 */
+	@ApiField("ededuct_product_code")
+	private String edeductProductCode;
 
 	/**
 	 * 扩展字段
@@ -80,6 +86,13 @@ public class AlipayEbppInstserviceDeductUnsignModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public String getEdeductProductCode() {
+		return this.edeductProductCode;
+	}
+	public void setEdeductProductCode(String edeductProductCode) {
+		this.edeductProductCode = edeductProductCode;
 	}
 
 	public String getExtendField() {

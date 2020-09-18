@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品规格组的同步
  *
  * @author auto create
- * @since 1.0, 2020-09-02 11:57:48
+ * @since 1.0, 2020-09-08 20:54:14
  */
 public class KoubeiCateringDishSpecgroupSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1115991558496239977L;
+	private static final long serialVersionUID = 1765188971186658282L;
 
 	/**
 	 * 创建者

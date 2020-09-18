@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.twc.tradeinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-25 17:02:26
+ * @since 1.0, 2020-09-15 16:05:35
  */
 public class AnttechBlockchainTwcTradeinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1161458747914499142L;
+	private static final long serialVersionUID = 1117817584289736985L;
+
+	/** 
+	 * 订单核验的结果说明
+	 */
+	@ApiField("desc")
+	private String desc;
 
 	/** 
 	 * 是否与订单的信息一致
@@ -20,11 +26,31 @@ public class AnttechBlockchainTwcTradeinfoQueryResponse extends AlipayResponse {
 	@ApiField("match")
 	private Boolean match;
 
+	/** 
+	 * 订单核验的结果状态码
+	 */
+	@ApiField("status")
+	private Long status;
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+	public String getDesc( ) {
+		return this.desc;
+	}
+
 	public void setMatch(Boolean match) {
 		this.match = match;
 	}
 	public Boolean getMatch( ) {
 		return this.match;
+	}
+
+	public void setStatus(Long status) {
+		this.status = status;
+	}
+	public Long getStatus( ) {
+		return this.status;
 	}
 
 }

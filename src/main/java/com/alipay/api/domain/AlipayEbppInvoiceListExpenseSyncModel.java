@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报销状态批量同步开放接口
  *
  * @author auto create
- * @since 1.0, 2020-06-30 14:26:18
+ * @since 1.0, 2020-09-16 10:14:55
  */
 public class AlipayEbppInvoiceListExpenseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7364521919617547557L;
+	private static final long serialVersionUID = 3395682164796427336L;
 
 	/**
 	 * 报销进度变更时间

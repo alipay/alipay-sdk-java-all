@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据商户店铺批量查询菜谱
  *
  * @author auto create
- * @since 1.0, 2020-09-02 11:54:28
+ * @since 1.0, 2020-09-08 17:20:17
  */
 public class KoubeiCateringCookConditionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4844652711859683499L;
+	private static final long serialVersionUID = 6681626199777727194L;
 
 	/**
 	 * 商户的支付宝user_id. 商户授权后,isv能获得

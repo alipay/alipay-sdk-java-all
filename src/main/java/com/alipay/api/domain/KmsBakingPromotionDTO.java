@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * kms烘焙营销数据接口
  *
  * @author auto create
- * @since 1.0, 2020-05-06 16:54:49
+ * @since 1.0, 2020-09-14 15:48:38
  */
 public class KmsBakingPromotionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7322987832449832931L;
+	private static final long serialVersionUID = 4442941982374785547L;
 
 	/**
 	 * 活动限制

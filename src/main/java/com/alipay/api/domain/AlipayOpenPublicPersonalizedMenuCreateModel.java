@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3234218178485761813L;
+	private static final long serialVersionUID = 1684389836298544818L;
 
 	/**
 	 * 一级菜单列表。如果是文本菜单，最多有3个一级菜单，最多5个二级菜单；如果是 ICON 菜单信息，最多有80个一级菜单，ICON菜单不支持二级菜单

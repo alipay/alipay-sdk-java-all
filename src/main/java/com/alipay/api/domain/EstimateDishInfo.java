@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品估清信息
  *
  * @author auto create
- * @since 1.0, 2020-07-01 16:01:35
+ * @since 1.0, 2020-09-07 16:13:05
  */
 public class EstimateDishInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8865754222775121322L;
+	private static final long serialVersionUID = 4381249582726117983L;
 
 	/**
 	 * 口碑菜品id

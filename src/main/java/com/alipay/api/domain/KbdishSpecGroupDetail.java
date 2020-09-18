@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑规格标签扩展
  *
  * @author auto create
- * @since 1.0, 2020-03-31 17:57:34
+ * @since 1.0, 2020-09-07 16:15:40
  */
 public class KbdishSpecGroupDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6231581518956196338L;
+	private static final long serialVersionUID = 4641514696147267654L;
 
 	/**
 	 * 规格标签id

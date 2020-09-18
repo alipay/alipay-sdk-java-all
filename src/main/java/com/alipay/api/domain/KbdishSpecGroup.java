@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品规格标签定制
  *
  * @author auto create
- * @since 1.0, 2020-03-31 21:05:49
+ * @since 1.0, 2020-09-07 16:15:40
  */
 public class KbdishSpecGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 2639989371773989585L;
+	private static final long serialVersionUID = 4527641514651244654L;
 
 	/**
 	 * 规格标签明细

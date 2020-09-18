@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.plant.apply response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-03 00:40:06
+ * @since 1.0, 2020-09-14 10:57:26
  */
 public class AlipaySocialAntforestPlantApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7757214668985271637L;
+	private static final long serialVersionUID = 3631393827484272171L;
 
 	/** 
 	 * 时间戳，记录的是业务在蚂蚁森林完成时间，可保存用户核对

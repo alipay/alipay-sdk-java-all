@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑视图规则模型
  *
  * @author auto create
- * @since 1.0, 2020-06-15 11:49:11
+ * @since 1.0, 2020-09-07 16:15:31
  */
 public class KbdishCommRuleShowInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2418486837278332689L;
+	private static final long serialVersionUID = 4494812666699618416L;
 
 	/**
 	 * 规则扩展

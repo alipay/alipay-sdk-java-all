@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 满折营销
  *
  * @author auto create
- * @since 1.0, 2020-04-26 14:07:07
+ * @since 1.0, 2020-09-14 15:48:38
  */
 public class FullDiscountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8793219134648932689L;
+	private static final long serialVersionUID = 1115998163868452483L;
 
 	/**
 	 * 折扣，如果有阶梯规则，则用英文逗号分隔
