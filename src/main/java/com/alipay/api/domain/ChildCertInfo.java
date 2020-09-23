@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChildCertInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6271581453841464329L;
+	private static final long serialVersionUID = 5636181498168313632L;
 
 	/**
 	 * 儿童业务id

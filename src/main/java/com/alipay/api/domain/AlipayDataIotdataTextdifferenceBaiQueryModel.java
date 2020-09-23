@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataIotdataTextdifferenceBaiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3415511812481762294L;
+	private static final long serialVersionUID = 2521773584553987251L;
 
 	/**
 	 * 文档的文本内容。

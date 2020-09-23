@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务窗创建带参二维码接口，场景信息
  *
  * @author auto create
- * @since 1.0, 2016-08-10 17:27:01
+ * @since 1.0, 2020-09-21 11:48:36
  */
 public class Scene extends AlipayObject {
 
-	private static final long serialVersionUID = 5715361771684154233L;
+	private static final long serialVersionUID = 2849193634934243554L;
 
 	/**
 	 * 场景Id，最长32位，英文字母、数字以及下划线，开发者自定义

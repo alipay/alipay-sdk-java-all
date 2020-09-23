@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaOpenQerqQerqQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5623424766459238887L;
+	private static final long serialVersionUID = 2212576239277329322L;
 
 	/**
 	 * 123

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class GFAOpenAPIDetailQueryResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1517445318969359259L;
+	private static final long serialVersionUID = 7133233959581145579L;
 
 	/**
 	 * 业财受理单基础模型

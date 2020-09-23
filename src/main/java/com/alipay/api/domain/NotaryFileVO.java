@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约文件对象信息
  *
  * @author auto create
- * @since 1.0, 2020-03-25 15:57:56
+ * @since 1.0, 2020-09-22 15:35:57
  */
 public class NotaryFileVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1618929567465948286L;
+	private static final long serialVersionUID = 8564297925341624468L;
 
 	/**
 	 * 文件http地址
@@ -25,6 +25,12 @@ public class NotaryFileVO extends AlipayObject {
 	@ApiField("file_name")
 	private String fileName;
 
+	/**
+	 * 用于标识某个文件
+	 */
+	@ApiField("file_uniq_id")
+	private String fileUniqId;
+
 	public String getFileAddr() {
 		return this.fileAddr;
 	}
@@ -37,6 +43,13 @@ public class NotaryFileVO extends AlipayObject {
 	}
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
+	}
+
+	public String getFileUniqId() {
+		return this.fileUniqId;
+	}
+	public void setFileUniqId(String fileUniqId) {
+		this.fileUniqId = fileUniqId;
 	}
 
 }

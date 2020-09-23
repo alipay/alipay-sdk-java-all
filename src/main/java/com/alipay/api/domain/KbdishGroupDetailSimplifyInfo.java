@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品简化接口套餐组明细信息
  *
  * @author auto create
- * @since 1.0, 2020-09-07 16:13:29
+ * @since 1.0, 2020-09-21 10:58:51
  */
 public class KbdishGroupDetailSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6152388393913767498L;
+	private static final long serialVersionUID = 2519861224151321632L;
 
 	/**
 	 * 加价
 	 */
 	@ApiField("add_price")
 	private String addPrice;
+
+	/**
+	 * 可选组子菜最大可选数量，不传默认为1，传值必须为大于0的数字
+	 */
+	@ApiField("detail_count")
+	private String detailCount;
 
 	/**
 	 * 外部菜品id
@@ -48,6 +54,13 @@ public class KbdishGroupDetailSimplifyInfo extends AlipayObject {
 	}
 	public void setAddPrice(String addPrice) {
 		this.addPrice = addPrice;
+	}
+
+	public String getDetailCount() {
+		return this.detailCount;
+	}
+	public void setDetailCount(String detailCount) {
+		this.detailCount = detailCount;
 	}
 
 	public String getOutDishId() {

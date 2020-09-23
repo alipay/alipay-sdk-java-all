@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoTextDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2869884655461567418L;
+	private static final long serialVersionUID = 4436347859234438875L;
 
 	/** 
 	 * 检测结果

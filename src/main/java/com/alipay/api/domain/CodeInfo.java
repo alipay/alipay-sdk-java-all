@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务窗创建带参二维码接口，开发者自定义信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2020-09-21 11:48:36
  */
 public class CodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8585984393418251429L;
+	private static final long serialVersionUID = 1426333579634677882L;
 
 	/**
 	 * 跳转URL，扫码关注服务窗后会直接跳转到此URL

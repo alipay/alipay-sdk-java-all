@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PublicMessageBody extends AlipayObject {
 
-	private static final long serialVersionUID = 1171195369618331993L;
+	private static final long serialVersionUID = 6494884868566343883L;
 
 	/**
 	 * 图文消息，当msg_type为image-text，该值必须设置，图文消息中的图片建议尺寸 750 x 350px，小于3M，图片支持jpg、png格式

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增值服务进度同步接口
  *
  * @author auto create
- * @since 1.0, 2020-06-19 18:25:02
+ * @since 1.0, 2020-09-22 11:09:17
  */
 public class AlipayInsSceneInsserviceprodSerprogressSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4347599457422376819L;
+	private static final long serialVersionUID = 3799295157646185126L;
 
 	/**
 	 * 蚂蚁服务合约编号

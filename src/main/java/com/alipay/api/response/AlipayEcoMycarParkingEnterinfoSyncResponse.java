@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.enterinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-17 22:48:02
+ * @since 1.0, 2020-09-21 09:11:55
  */
 public class AlipayEcoMycarParkingEnterinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4381698658246516694L;
+	private static final long serialVersionUID = 7479154587223623617L;
 
 	/** 
 	 * 当前车辆在支付宝侧的信息，可选返回项为： NORMAL：正常缴费用户 NON-SENSE-PAY：无感支付签约用户

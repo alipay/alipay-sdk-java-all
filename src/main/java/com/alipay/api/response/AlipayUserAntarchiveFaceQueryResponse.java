@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAntarchiveFaceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7439292828937884992L;
+	private static final long serialVersionUID = 1345112481655495915L;
 
 	/** 
 	 * 返回人脸图片类型列表.若不存在则返回空列表
