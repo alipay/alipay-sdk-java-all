@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连渠道服务商商户信息补全接口
  *
  * @author auto create
- * @since 1.0, 2020-08-19 15:07:14
+ * @since 1.0, 2020-09-28 11:17:14
  */
 public class AntMerchantExpandIndirectIsvModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3744465974589133872L;
+	private static final long serialVersionUID = 5251412111536596498L;
 
 	/**
 	 * 商户地址信息

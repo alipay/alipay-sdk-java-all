@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 生活号广告位
  *
  * @author auto create
- * @since 1.0, 2017-11-02 16:07:18
+ * @since 1.0, 2020-09-28 10:41:55
  */
 public class Advert extends AlipayObject {
 
-	private static final long serialVersionUID = 4615371897766369414L;
+	private static final long serialVersionUID = 4162463234889494918L;
 
 	/**
 	 * 广告位id

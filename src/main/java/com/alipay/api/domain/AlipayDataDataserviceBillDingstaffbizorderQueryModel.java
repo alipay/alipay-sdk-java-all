@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询钉钉企业零钱账单
  *
  * @author auto create
- * @since 1.0, 2018-11-16 19:59:30
+ * @since 1.0, 2020-09-29 12:21:49
  */
 public class AlipayDataDataserviceBillDingstaffbizorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3156466922797887854L;
+	private static final long serialVersionUID = 4678763821238537617L;
 
 	/**
 	 * 钉钉业务单据号

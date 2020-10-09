@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新菜单
  *
  * @author auto create
- * @since 1.0, 2018-11-05 19:08:54
+ * @since 1.0, 2020-09-24 17:02:55
  */
 public class AlipayOpenPublicMenuModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5852978522448278365L;
+	private static final long serialVersionUID = 6313171698682485658L;
 
 	/**
 	 * 一级菜单列表。最多有4个一级菜单，若开发者在后台打开了"咨询反馈"的开关，则只能有3个一级菜单.

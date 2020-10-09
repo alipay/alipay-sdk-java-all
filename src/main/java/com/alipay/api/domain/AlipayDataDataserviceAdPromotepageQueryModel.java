@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询留资页列表
  *
  * @author auto create
- * @since 1.0, 2020-05-11 16:06:00
+ * @since 1.0, 2020-09-24 21:16:30
  */
 public class AlipayDataDataserviceAdPromotepageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2411113486771141353L;
+	private static final long serialVersionUID = 4241528155912342446L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -25,6 +25,12 @@ public class AlipayDataDataserviceAdPromotepageQueryModel extends AlipayObject {
 	@ApiField("principal_id")
 	private String principalId;
 
+	/**
+	 * 推广页类型
+	 */
+	@ApiField("type")
+	private String type;
+
 	public String getBizToken() {
 		return this.bizToken;
 	}
@@ -37,6 +43,13 @@ public class AlipayDataDataserviceAdPromotepageQueryModel extends AlipayObject {
 	}
 	public void setPrincipalId(String principalId) {
 		this.principalId = principalId;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

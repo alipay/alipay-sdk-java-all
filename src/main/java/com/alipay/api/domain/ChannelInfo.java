@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道信息
  *
  * @author auto create
- * @since 1.0, 2020-09-11 18:05:25
+ * @since 1.0, 2020-09-29 21:51:28
  */
 public class ChannelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5359788662391191877L;
+	private static final long serialVersionUID = 2878488863168154173L;
 
 	/**
 	 * 资产ID
@@ -30,6 +30,18 @@ public class ChannelInfo extends AlipayObject {
 	 */
 	@ApiField("asset_type_code")
 	private String assetTypeCode;
+
+	/**
+	 * 资产详情扩展参数
+	 */
+	@ApiField("assets_detail_params")
+	private AssetsDetailParams assetsDetailParams;
+
+	/**
+	 * 渠道可用额度
+	 */
+	@ApiField("available_amount")
+	private String availableAmount;
 
 	/**
 	 * 渠道不可用错误码
@@ -91,6 +103,12 @@ public class ChannelInfo extends AlipayObject {
 	@ApiField("recommend_tip")
 	private String recommendTip;
 
+	/**
+	 * 渠道是否已签约
+	 */
+	@ApiField("signed")
+	private Boolean signed;
+
 	public String getAssetId() {
 		return this.assetId;
 	}
@@ -110,6 +128,20 @@ public class ChannelInfo extends AlipayObject {
 	}
 	public void setAssetTypeCode(String assetTypeCode) {
 		this.assetTypeCode = assetTypeCode;
+	}
+
+	public AssetsDetailParams getAssetsDetailParams() {
+		return this.assetsDetailParams;
+	}
+	public void setAssetsDetailParams(AssetsDetailParams assetsDetailParams) {
+		this.assetsDetailParams = assetsDetailParams;
+	}
+
+	public String getAvailableAmount() {
+		return this.availableAmount;
+	}
+	public void setAvailableAmount(String availableAmount) {
+		this.availableAmount = availableAmount;
 	}
 
 	public String getCloseErrorCode() {
@@ -180,6 +212,13 @@ public class ChannelInfo extends AlipayObject {
 	}
 	public void setRecommendTip(String recommendTip) {
 		this.recommendTip = recommendTip;
+	}
+
+	public Boolean getSigned() {
+		return this.signed;
+	}
+	public void setSigned(Boolean signed) {
+		this.signed = signed;
 	}
 
 }

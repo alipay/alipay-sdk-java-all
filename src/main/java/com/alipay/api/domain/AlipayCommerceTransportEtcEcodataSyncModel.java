@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC生态发行订单数据同步
  *
  * @author auto create
- * @since 1.0, 2020-08-04 10:01:59
+ * @since 1.0, 2020-09-24 11:29:02
  */
 public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2518313447191368797L;
+	private static final long serialVersionUID = 8694247768117866791L;
 
 	/**
 	 * 收单方式，支付宝收单：ALIPAY;银行收单：BANK
@@ -35,7 +35,6 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 
 	/**
 	 * 申请类型,
-小型轿车：car;
 货车：truck;
 客车：bus
 	 */
@@ -80,7 +79,7 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 	private String cardNo;
 
 	/**
-	 * 用户ETC OBU号，同步激活状态时必传
+	 * 用户ETC OBU号
 	 */
 	@ApiField("device_no")
 	private String deviceNo;
@@ -116,8 +115,10 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 3、CENSOR_BLOCK：审核驳回；
 4、DELIVERYED：已发货；
 5、RECEIVED：已收货；
-6、ACTIVATED ：已激活；
+6、ACTIVATED：已激活；
 7、UNMOUNTED：已注销；
+8、ADD_BLACK：拉黑；
+9、REMOVE_BLACK：解黑；
 	 */
 	@ApiField("order_status")
 	private String orderStatus;

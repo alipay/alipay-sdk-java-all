@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZhimaMerchantEvisaStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3334169557967924524L;
+	private static final long serialVersionUID = 1388376212579247446L;
 
 	/**
 	 * 信息同步类型：VERIFY - 材料材料审核状态同步/APPROVE - 签证批准状态同步。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeFastpayEteDidiPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6694937525956749111L;
+	private static final long serialVersionUID = 1398172244129429216L;
 
 	/**
 	 * 对一笔交易的具体描述信息。如果是多种商品，请将商品描述字符串累加传给body。

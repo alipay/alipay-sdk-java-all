@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserMemberAlipaybigcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5111817154868225886L;
+	private static final long serialVersionUID = 5438329365319184287L;
 
 	/** 
 	 * 支付宝大卡片展现信息（缓存类），缓存类是对实时性要求不高的透出内容。缓存类用于存在缓存中，在调用接口超时或者降级时取用。

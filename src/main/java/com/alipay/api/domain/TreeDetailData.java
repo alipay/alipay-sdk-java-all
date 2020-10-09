@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 种树详细信息
  *
  * @author auto create
- * @since 1.0, 2020-08-12 11:36:14
+ * @since 1.0, 2020-09-23 16:02:20
  */
 public class TreeDetailData extends AlipayObject {
 
-	private static final long serialVersionUID = 5753645988137814769L;
+	private static final long serialVersionUID = 4281652586982429496L;
 
 	/**
 	 * 证书申请时间
 	 */
 	@ApiField("apply_time")
 	private Date applyTime;
+
+	/**
+	 * 兑换树种获得的证书id
+	 */
+	@ApiField("certificate_id")
+	private String certificateId;
 
 	/**
 	 * 是否合种。true：是合种，false：不是合种
@@ -44,6 +50,13 @@ public class TreeDetailData extends AlipayObject {
 	}
 	public void setApplyTime(Date applyTime) {
 		this.applyTime = applyTime;
+	}
+
+	public String getCertificateId() {
+		return this.certificateId;
+	}
+	public void setCertificateId(String certificateId) {
+		this.certificateId = certificateId;
 	}
 
 	public Boolean getCooperation() {

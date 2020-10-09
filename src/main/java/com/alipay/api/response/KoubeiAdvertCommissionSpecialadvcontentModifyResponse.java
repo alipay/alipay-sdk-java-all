@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.commission.specialadvcontent.modify response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-09-29 17:17:16
  */
 public class KoubeiAdvertCommissionSpecialadvcontentModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1394445659835188882L;
+	private static final long serialVersionUID = 7838726885878621133L;
 
 	/** 
 	 * 修改特殊广告内容的返回结果

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2020-08-24 10:55:13
+ * @since 1.0, 2020-09-28 15:46:17
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -170,12 +170,12 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private List<RegionInfo> serviceRegionInfo;
 
 	/** 
-	* 测试账号
+	* 测试账号,是否需要填写请参见https://opendocs.alipay.com/mini/operation/standard/case/akxg6r#3.%20%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%E6%8F%90%E4%BA%A4%E4%B8%8D%E5%AE%8C%E6%95%B4
 	 */
 	private String testAccout;
 
 	/** 
-	* 测试附件，请上传10M以内附件，支持格式zip,rar
+	* 测试附件，用于上传测试报告和测试录屏，请上传10M以内附件，支持格式zip，rar。是否需要填写请参见:https://opendocs.alipay.com/mini/operation/standard/case/akxg6r#3.%20%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%E6%8F%90%E4%BA%A4%E4%B8%8D%E5%AE%8C%E6%95%B4
 	 */
 	private FileItem testFileName;
 

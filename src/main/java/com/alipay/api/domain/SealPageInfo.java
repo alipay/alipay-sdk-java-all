@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SealPageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8514623678268556773L;
+	private static final long serialVersionUID = 2238637254818976764L;
 
 	/**
 	 * 当前页码号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenOperationPartnerLoginCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2176684729325848267L;
+	private static final long serialVersionUID = 1225157853376876917L;
 
 	/**
 	 * 三方合作服务商的员工支付宝UID，要求唯一。需要三方员工通过授权操作提供。

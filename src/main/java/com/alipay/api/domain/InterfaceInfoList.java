@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 接口信息列表，停车业务需要配置的接口列表，该值为JSON数据格式的LIST对象，现阶段只需要配置一个页面接口即可 。每次请将所有的接口配置信息都传入，未传的接口信息将会被置空。
  *
  * @author auto create
- * @since 1.0, 2019-04-04 15:54:16
+ * @since 1.0, 2020-09-30 16:25:01
  */
 public class InterfaceInfoList extends AlipayObject {
 
-	private static final long serialVersionUID = 2177745752198358674L;
+	private static final long serialVersionUID = 2345361121544197583L;
 
 	/**
 	 * H5传入参数固定值：alipay.eco.mycar.parking.userpage.query

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收支明细
  *
  * @author auto create
- * @since 1.0, 2020-08-31 20:26:02
+ * @since 1.0, 2020-09-29 12:21:49
  */
 public class BillDingBizOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 2297626532885913428L;
+	private static final long serialVersionUID = 4745972191169214546L;
 
 	/**
 	 * 收支金额,收入为正,支出为负
@@ -80,6 +80,12 @@ public class BillDingBizOrder extends AlipayObject {
 	 */
 	@ApiField("login_id")
 	private String loginId;
+
+	/**
+	 * 营销金额，如转账中营销红包金额，收入为正，支出为负
+	 */
+	@ApiField("marketing_amount")
+	private String marketingAmount;
 
 	/**
 	 * 脱敏后的对方支付宝账号
@@ -204,6 +210,13 @@ public class BillDingBizOrder extends AlipayObject {
 	}
 	public void setLoginId(String loginId) {
 		this.loginId = loginId;
+	}
+
+	public String getMarketingAmount() {
+		return this.marketingAmount;
+	}
+	public void setMarketingAmount(String marketingAmount) {
+		this.marketingAmount = marketingAmount;
 	}
 
 	public String getOppLoginId() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransEdumigrateMigrateserviceModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3423429266133314533L;
+	private static final long serialVersionUID = 5819144123316356268L;
 
 	/** 
 	 * data字段为迁移服务数据返回 JSON结构

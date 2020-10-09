@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户信息模型
  *
  * @author auto create
- * @since 1.0, 2020-09-22 15:46:35
+ * @since 1.0, 2020-09-24 10:12:19
  */
 public class MerchantInformation extends AlipayObject {
 
-	private static final long serialVersionUID = 8154117972898122793L;
+	private static final long serialVersionUID = 7741231789985339613L;
 
 	/**
 	 * 地址
@@ -20,10 +20,22 @@ public class MerchantInformation extends AlipayObject {
 	private String address;
 
 	/**
+	 * 预收金额
+	 */
+	@ApiField("advance_amount")
+	private String advanceAmount;
+
+	/**
 	 * 城市
 	 */
 	@ApiField("city_desc")
 	private String cityDesc;
+
+	/**
+	 * 计收模式和结算方式
+	 */
+	@ApiField("collection_settlement")
+	private String collectionSettlement;
 
 	/**
 	 * 国家
@@ -80,11 +92,25 @@ public class MerchantInformation extends AlipayObject {
 		this.address = address;
 	}
 
+	public String getAdvanceAmount() {
+		return this.advanceAmount;
+	}
+	public void setAdvanceAmount(String advanceAmount) {
+		this.advanceAmount = advanceAmount;
+	}
+
 	public String getCityDesc() {
 		return this.cityDesc;
 	}
 	public void setCityDesc(String cityDesc) {
 		this.cityDesc = cityDesc;
+	}
+
+	public String getCollectionSettlement() {
+		return this.collectionSettlement;
+	}
+	public void setCollectionSettlement(String collectionSettlement) {
+		this.collectionSettlement = collectionSettlement;
 	}
 
 	public String getCountryDesc() {

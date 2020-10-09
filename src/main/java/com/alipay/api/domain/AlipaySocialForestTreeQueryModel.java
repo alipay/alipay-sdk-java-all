@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户种植树统计信息查询
  *
  * @author auto create
- * @since 1.0, 2020-09-14 10:56:20
+ * @since 1.0, 2020-09-28 10:21:11
  */
 public class AlipaySocialForestTreeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4722317784298986967L;
+	private static final long serialVersionUID = 1276964678697669547L;
 
 	/**
 	 * 种树截止时间

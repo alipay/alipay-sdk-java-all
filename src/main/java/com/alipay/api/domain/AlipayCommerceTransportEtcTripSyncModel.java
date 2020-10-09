@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC行程账单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2020-08-04 10:02:10
+ * @since 1.0, 2020-09-24 11:29:04
  */
 public class AlipayCommerceTransportEtcTripSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4396486861755365625L;
+	private static final long serialVersionUID = 1472166875648596432L;
 
 	/**
 	 * 高速场景数据
@@ -84,9 +84,7 @@ public class AlipayCommerceTransportEtcTripSyncModel extends AlipayObject {
 	private String totalAmount;
 
 	/**
-	 * 交易状态；
-S：扣款成功；
-R:  退款成功；
+	 * 交易状态； S：扣款成功； R: 退款成功；
 	 */
 	@ApiField("trade_status")
 	private String tradeStatus;

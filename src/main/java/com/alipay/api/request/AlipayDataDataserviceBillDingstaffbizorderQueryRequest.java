@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.bill.dingstaffbizorder.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-09-29 12:22:26
  */
 public class AlipayDataDataserviceBillDingstaffbizorderQueryRequest implements AlipayRequest<AlipayDataDataserviceBillDingstaffbizorderQueryResponse> {
 

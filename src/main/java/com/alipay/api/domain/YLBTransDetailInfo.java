@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YLBTransDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5356639449293822881L;
+	private static final long serialVersionUID = 3835584123787525895L;
 
 	/**
 	 * 余利宝交易金额，单位为元

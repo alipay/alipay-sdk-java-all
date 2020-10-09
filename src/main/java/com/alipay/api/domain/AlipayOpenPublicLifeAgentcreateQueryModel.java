@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv代创建生活号申请状态查询接口
  *
  * @author auto create
- * @since 1.0, 2018-12-18 18:07:18
+ * @since 1.0, 2020-09-24 17:02:40
  */
 public class AlipayOpenPublicLifeAgentcreateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6517953558452936359L;
+	private static final long serialVersionUID = 3573644972995661333L;
 
 	/**
 	 * 由开发者创建的外部入驻申请单据号

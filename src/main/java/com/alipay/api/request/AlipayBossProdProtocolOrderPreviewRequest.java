@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.protocol.order.preview request
  * 
  * @author auto create
- * @since 1.0, 2020-09-02 18:00:13
+ * @since 1.0, 2020-09-29 23:06:16
  */
 public class AlipayBossProdProtocolOrderPreviewRequest implements AlipayRequest<AlipayBossProdProtocolOrderPreviewResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.life.msg.recall response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-12 17:35:13
+ * @since 1.0, 2020-09-24 17:10:38
  */
 public class AlipayOpenPublicLifeMsgRecallResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4628877373467519331L;
+	private static final long serialVersionUID = 2899986755738171484L;
 
 	
 

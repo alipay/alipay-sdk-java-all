@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certdoc.certverify.consult response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-17 10:16:56
+ * @since 1.0, 2020-09-24 14:35:39
  */
 public class AlipayUserCertdocCertverifyConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1724545854463453449L;
+	private static final long serialVersionUID = 8231382165828891856L;
 
 	/** 
 	 * 具体哪些字段不一致。与预授权的输入字段对应，类型为字符串列表的JSON格式。

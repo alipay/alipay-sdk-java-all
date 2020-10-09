@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.shop.public.bind response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2020-09-24 10:18:03
  */
 public class AlipayOfflineMarketShopPublicBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6417283473185914814L;
+	private static final long serialVersionUID = 3622749582499739681L;
 
 	/** 
 	 * 绑定失败的店铺ID列表

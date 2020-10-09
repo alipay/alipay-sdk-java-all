@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarParkingEnterinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7479154587223623617L;
+	private static final long serialVersionUID = 8716237753976441899L;
 
 	/** 
 	 * 当前车辆在支付宝侧的信息，可选返回项为： NORMAL：正常缴费用户 NON-SENSE-PAY：无感支付签约用户

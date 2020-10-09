@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PosDishPracticeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8798836428428957467L;
+	private static final long serialVersionUID = 1159143964385486888L;
 
 	/**
 	 * 加价类型 add 加法
