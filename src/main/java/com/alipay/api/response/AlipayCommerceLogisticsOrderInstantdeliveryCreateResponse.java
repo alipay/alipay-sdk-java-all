@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.order.instantdelivery.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-27 22:00:14
+ * @since 1.0, 2020-10-14 12:01:18
  */
 public class AlipayCommerceLogisticsOrderInstantdeliveryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3114285566254256312L;
+	private static final long serialVersionUID = 2417677347359985438L;
 
 	/** 
 	 * 优惠券费用

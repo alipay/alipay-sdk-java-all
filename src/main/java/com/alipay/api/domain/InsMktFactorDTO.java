@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsMktFactorDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3196376138979999259L;
+	private static final long serialVersionUID = 1313669244169462736L;
 
 	/**
 	 * 规则因子

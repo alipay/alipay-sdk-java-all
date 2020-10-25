@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: huanxu.trade.order.pay response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-21 21:10:31
+ * @since 1.0, 2020-10-15 16:45:13
  */
 public class HuanxuTradeOrderPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7455771569879335552L;
+	private static final long serialVersionUID = 6381787981938748685L;
 
 	/** 
-	 * 聚合支付的支付渠道，支付宝分配。
+	 * 聚合支付的支付渠道，焕旭分配。
 	 */
 	@ApiField("channel")
 	private String channel;
@@ -46,7 +46,7 @@ public class HuanxuTradeOrderPayResponse extends AlipayResponse {
 	private String payStatus;
 
 	/** 
-	 * 支付id，支付宝针对每一笔支付请求生成的唯一支付凭证，后续打款和退款时候需带入此id
+	 * 支付id，焕旭针对每一笔支付请求生成的唯一支付凭证，后续打款和退款时候需带入此id
 	 */
 	@ApiField("payment_id")
 	private String paymentId;

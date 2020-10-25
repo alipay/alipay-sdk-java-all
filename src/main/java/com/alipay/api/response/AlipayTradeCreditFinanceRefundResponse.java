@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.credit.finance.refund response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-11 16:00:11
+ * @since 1.0, 2020-10-09 11:27:25
  */
 public class AlipayTradeCreditFinanceRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1875866541499178941L;
+	private static final long serialVersionUID = 8878874688877992636L;
 
 	/** 
-	 * 退款金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
+	 * 本次退款的金额，非特殊情况下和请求金额保持一致。单位为元；精确到小数点后两位，取值范围[0.01,100000000]
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -27,21 +27,25 @@ public class AlipayTradeCreditFinanceRefundResponse extends AlipayResponse {
 	private String bizNo;
 
 	/** 
-	 * 币种，CNY
+	 * 币种单位，目前只支持人民币CNY
 	 */
 	@ApiField("currency")
 	private String currency;
 
 	/** 
-	 * 外部请求号
+	 * 支付宝系统资金处理成功时间，格式为"yyyy-MM-dd HH:mm:ss"
+	 */
+	@ApiField("gmt_refund_pay")
+	private String gmtRefundPay;
+
+	/** 
+	 * 外部请求号，和请求入参一致
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
 	/** 
-	 * 本次退款的状态
-SUCCESS
-FAIL
+	 * 本次退款的处理状态，SUCCESS：处理成功；FAIL：处理失败
 	 */
 	@ApiField("status")
 	private String status;
@@ -71,6 +75,13 @@ FAIL
 	}
 	public String getCurrency( ) {
 		return this.currency;
+	}
+
+	public void setGmtRefundPay(String gmtRefundPay) {
+		this.gmtRefundPay = gmtRefundPay;
+	}
+	public String getGmtRefundPay( ) {
+		return this.gmtRefundPay;
 	}
 
 	public void setOutRequestNo(String outRequestNo) {

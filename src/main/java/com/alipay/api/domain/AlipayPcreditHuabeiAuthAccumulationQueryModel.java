@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiAuthAccumulationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4336636876374174792L;
+	private static final long serialVersionUID = 1642317747188872833L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。

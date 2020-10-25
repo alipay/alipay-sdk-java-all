@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsWaybillInstantdeliverySettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6728763843832938546L;
+	private static final long serialVersionUID = 2531317918815319112L;
 
 	/** 
 	 * 即时配送公司返回的错误码

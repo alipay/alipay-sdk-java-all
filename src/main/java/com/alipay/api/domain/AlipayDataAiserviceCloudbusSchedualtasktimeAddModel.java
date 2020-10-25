@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 时刻表排班任务
  *
  * @author auto create
- * @since 1.0, 2020-03-02 16:57:37
+ * @since 1.0, 2020-10-21 10:36:21
  */
 public class AlipayDataAiserviceCloudbusSchedualtasktimeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3871722821272462596L;
+	private static final long serialVersionUID = 4122613644943198887L;
 
 	/**
 	 * 版本号

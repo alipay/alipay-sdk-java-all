@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.market.multibundle.consult response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-24 13:50:12
+ * @since 1.0, 2020-10-16 22:15:12
  */
 public class AlipayOpenMiniMarketMultibundleConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6734958361198196278L;
+	private static final long serialVersionUID = 2454347114744261319L;
 
 	/** 
 	 * 端ID

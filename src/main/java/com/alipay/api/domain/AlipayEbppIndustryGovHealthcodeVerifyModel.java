@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryGovHealthcodeVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8297633348976226927L;
+	private static final long serialVersionUID = 3364178111183889953L;
 
 	/**
 	 * 市

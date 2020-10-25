@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单明细
  *
  * @author auto create
- * @since 1.0, 2020-09-27 14:20:16
+ * @since 1.0, 2020-10-23 11:56:08
  */
 public class OrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5168635745394124614L;
+	private static final long serialVersionUID = 3156728731229685166L;
 
 	/**
 	 * 店铺所在具体位置
@@ -98,7 +98,7 @@ public class OrderItem extends AlipayObject {
 	private String onlineTime;
 
 	/**
-	 * TO_DO-未实施,DOING-实施中,TO_CONFIRM-待商户确认,DONE-已完成,MERCHANT_REJECTED-商户已回绝,MERCHANT_CANCELLED-商户已取消,ISV_REJECTED-服务商已回绝,ISV_CANCELLED-服务商已取消
+	 * TO_DO-未实施,DOING-实施中,TO_CONFIRM-待商户确认,CONFIRMED-商户已确认,DONE-已完成,MERCHANT_REJECTED-商户已回绝,MERCHANT_CANCELLED-商户已取消,ISV_REJECTED-服务商已回绝,ISV_CANCELLED-服务商已取消
 	 */
 	@ApiField("order_status")
 	private String orderStatus;

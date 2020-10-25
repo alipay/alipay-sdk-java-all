@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取用户访问历史geo接口
  *
  * @author auto create
- * @since 1.0, 2019-07-31 19:51:25
+ * @since 1.0, 2020-10-21 10:38:23
  */
 public class AlipayDataAiserviceCloudbusHistorygeoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8226821967233764711L;
+	private static final long serialVersionUID = 2181145751214466835L;
 
 	/**
 	 * 内部接口版本号

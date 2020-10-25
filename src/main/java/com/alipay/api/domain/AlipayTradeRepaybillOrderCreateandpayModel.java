@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易还款账单付款单创建并支付接口
  *
  * @author auto create
- * @since 1.0, 2020-02-13 21:22:20
+ * @since 1.0, 2020-10-09 11:27:13
  */
 public class AlipayTradeRepaybillOrderCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7881622948767381338L;
+	private static final long serialVersionUID = 5164579337135616143L;
+
+	/**
+	 * 还款协议号
+	 */
+	@ApiField("agreement_no")
+	private String agreementNo;
 
 	/**
 	 * 支付宝账单编号
@@ -20,7 +26,7 @@ public class AlipayTradeRepaybillOrderCreateandpayModel extends AlipayObject {
 	private String billNo;
 
 	/**
-	 * 扩展参数。使用前需要和支付宝先约定key值。
+	 * 扩展参数，json格式字符串。使用前需要和支付宝先约定key值。
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
@@ -32,13 +38,19 @@ public class AlipayTradeRepaybillOrderCreateandpayModel extends AlipayObject {
 	private String outOrderNo;
 
 	/**
+	 * json格式字符串，公用回传参数。如果请求时传递了该参数，则异步通知商户时会回传该参数
+	 */
+	@ApiField("passback_params")
+	private String passbackParams;
+
+	/**
 	 * 还款的付款uid
 	 */
 	@ApiField("payer_user_id")
 	private String payerUserId;
 
 	/**
-	 * 还款金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
+	 * 还款请求金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
 	 */
 	@ApiField("repay_amount")
 	private String repayAmount;
@@ -73,6 +85,13 @@ public class AlipayTradeRepaybillOrderCreateandpayModel extends AlipayObject {
 	@ApiField("specify_pay_channels")
 	private String specifyPayChannels;
 
+	public String getAgreementNo() {
+		return this.agreementNo;
+	}
+	public void setAgreementNo(String agreementNo) {
+		this.agreementNo = agreementNo;
+	}
+
 	public String getBillNo() {
 		return this.billNo;
 	}
@@ -92,6 +111,13 @@ public class AlipayTradeRepaybillOrderCreateandpayModel extends AlipayObject {
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getPassbackParams() {
+		return this.passbackParams;
+	}
+	public void setPassbackParams(String passbackParams) {
+		this.passbackParams = passbackParams;
 	}
 
 	public String getPayerUserId() {

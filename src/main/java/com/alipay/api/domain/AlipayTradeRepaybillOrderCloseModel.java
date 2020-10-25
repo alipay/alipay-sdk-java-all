@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易还款账单付款单关闭
  *
  * @author auto create
- * @since 1.0, 2020-03-06 10:33:38
+ * @since 1.0, 2020-10-09 11:26:19
  */
 public class AlipayTradeRepaybillOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2262555813263538194L;
+	private static final long serialVersionUID = 7683692262188361853L;
 
 	/**
 	 * 支付宝账单编号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智慧公交--地铁分时查询
  *
  * @author auto create
- * @since 1.0, 2020-04-01 16:47:44
+ * @since 1.0, 2020-10-21 10:35:05
  */
 public class AlipayDataAiserviceCloudbusMetrotimeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7661944244134599959L;
+	private static final long serialVersionUID = 6497375871693791457L;
 
 	/**
 	 * 接口版本号

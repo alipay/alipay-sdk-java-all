@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.cloudbus.od.get request
  * 
  * @author auto create
- * @since 1.0, 2020-09-01 13:45:03
+ * @since 1.0, 2020-10-21 10:33:06
  */
 public class AlipayDataAiserviceCloudbusOdGetRequest implements AlipayRequest<AlipayDataAiserviceCloudbusOdGetResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智慧公交--资源文件
  *
  * @author auto create
- * @since 1.0, 2020-05-07 15:30:21
+ * @since 1.0, 2020-10-21 10:33:34
  */
 public class AlipayDataAiserviceCloudbusResourceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4149369449627564485L;
+	private static final long serialVersionUID = 6823453139918437513L;
 
 	/**
 	 * 按类型查找， 空默认查询所有

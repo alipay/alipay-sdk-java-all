@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付订单创建并支付
  *
  * @author auto create
- * @since 1.0, 2020-09-07 20:05:04
+ * @since 1.0, 2020-10-15 19:09:02
  */
 public class MybankPaymentTradeNormalpayOrderCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2541481514881482718L;
+	private static final long serialVersionUID = 3486698482448171398L;
 
 	/**
 	 * 金额，单位：分
@@ -42,6 +42,12 @@ public class MybankPaymentTradeNormalpayOrderCreateandpayModel extends AlipayObj
 	 */
 	@ApiField("operate_scene_type")
 	private String operateSceneType;
+
+	/**
+	 * 订单类型
+	 */
+	@ApiField("order_type")
+	private String orderType;
 
 	/**
 	 * 收方资产信息，内容是JSON格式，并用urlencode编码，按场景约定具体字段
@@ -106,6 +112,13 @@ public class MybankPaymentTradeNormalpayOrderCreateandpayModel extends AlipayObj
 	}
 	public void setOperateSceneType(String operateSceneType) {
 		this.operateSceneType = operateSceneType;
+	}
+
+	public String getOrderType() {
+		return this.orderType;
+	}
+	public void setOrderType(String orderType) {
+		this.orderType = orderType;
 	}
 
 	public String getPayeeFundDetail() {

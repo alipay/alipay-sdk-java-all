@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.repaybill.order.createandpay response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-13 21:22:20
+ * @since 1.0, 2020-10-09 11:27:13
  */
 public class AlipayTradeRepaybillOrderCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3622948125965736536L;
+	private static final long serialVersionUID = 2561846146764736521L;
 
 	/** 
 	 * 支付宝账单编号
@@ -33,8 +33,7 @@ public class AlipayTradeRepaybillOrderCreateandpayResponse extends AlipayRespons
 	private String repayFundOrderNo;
 
 	/** 
-	 * 订单还款状态
-("INIT", "初始"),("PROCESSING", "处理中")("SUCCESS", "成功"),("CLOSE", "关闭");
+	 * 订单还款状态，INIT：初始状态；PARTIAL_SUCCESS：部分还款成功；SUCCESS：全部还款成功；CLOSE：订单已经关闭
 	 */
 	@ApiField("repay_status")
 	private String repayStatus;

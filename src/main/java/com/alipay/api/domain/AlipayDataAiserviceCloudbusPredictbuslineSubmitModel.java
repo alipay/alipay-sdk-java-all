@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 公交路线预测接口1
  *
  * @author auto create
- * @since 1.0, 2019-08-22 10:27:55
+ * @since 1.0, 2020-10-21 10:38:17
  */
 public class AlipayDataAiserviceCloudbusPredictbuslineSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1574995626781274253L;
+	private static final long serialVersionUID = 8791484328899118115L;
 
 	/**
 	 * 接口版本

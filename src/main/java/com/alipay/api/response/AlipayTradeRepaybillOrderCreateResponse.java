@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.repaybill.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-13 21:21:53
+ * @since 1.0, 2020-10-09 11:27:01
  */
 public class AlipayTradeRepaybillOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1777944827518412136L;
+	private static final long serialVersionUID = 5884572192511855231L;
 
 	/** 
 	 * 支付宝账单编号
 	 */
 	@ApiField("bill_no")
 	private String billNo;
+
+	/** 
+	 * 收银单id，用于客户端唤起收银台SDK
+	 */
+	@ApiField("cashier_order_id")
+	private String cashierOrderId;
 
 	/** 
 	 * 还款的资金单号，后续用该单号去调用支付宝收银台sdk进行支付
@@ -31,6 +37,13 @@ public class AlipayTradeRepaybillOrderCreateResponse extends AlipayResponse {
 	}
 	public String getBillNo( ) {
 		return this.billNo;
+	}
+
+	public void setCashierOrderId(String cashierOrderId) {
+		this.cashierOrderId = cashierOrderId;
+	}
+	public String getCashierOrderId( ) {
+		return this.cashierOrderId;
 	}
 
 	public void setRepayFundOrderNo(String repayFundOrderNo) {

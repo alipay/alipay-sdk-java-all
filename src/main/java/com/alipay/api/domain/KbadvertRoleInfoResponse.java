@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbadvertRoleInfoResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6267756227185215648L;
+	private static final long serialVersionUID = 6843649511955532472L;
 
 	/**
 	 * 角色code

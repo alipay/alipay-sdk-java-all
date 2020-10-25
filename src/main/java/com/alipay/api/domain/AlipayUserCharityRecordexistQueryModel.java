@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询是否在支付宝公益捐赠的接口
  *
  * @author auto create
- * @since 1.0, 2019-01-11 15:33:55
+ * @since 1.0, 2020-10-20 21:48:28
  */
 public class AlipayUserCharityRecordexistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3569464753764598271L;
+	private static final long serialVersionUID = 7497995935936928852L;
 
 	/**
 	 * 公益的业务类型(缺省是所有类型)

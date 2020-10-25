@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 区域客流总量
  *
  * @author auto create
- * @since 1.0, 2019-10-08 19:04:05
+ * @since 1.0, 2020-10-21 10:38:11
  */
 public class AlipayDataAiserviceCloudbusTotalodQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7443244358235694184L;
+	private static final long serialVersionUID = 7179354651555964798L;
 
 	/**
 	 * 接口版本

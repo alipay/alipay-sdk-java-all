@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 哈罗单车选址任务提交
  *
  * @author auto create
- * @since 1.0, 2020-04-22 15:30:41
+ * @since 1.0, 2020-10-21 10:34:20
  */
 public class AlipayDataAiserviceHellobikeSiteSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6736181215589389911L;
+	private static final long serialVersionUID = 8741743284987617529L;
 
 	/**
 	 * 接口版本号

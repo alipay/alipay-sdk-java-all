@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可用公交od月份
  *
  * @author auto create
- * @since 1.0, 2019-08-07 17:11:24
+ * @since 1.0, 2020-10-21 10:38:05
  */
 public class AlipayDataAiserviceCloudbusAvailableQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3392778512484332481L;
+	private static final long serialVersionUID = 4751529656186347886L;
 
 	/**
 	 * 内部服务接口版本号

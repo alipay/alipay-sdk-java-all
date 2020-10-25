@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智慧公交--地铁OD对详情
  *
  * @author auto create
- * @since 1.0, 2020-04-01 16:48:06
+ * @since 1.0, 2020-10-21 10:35:26
  */
 public class AlipayDataAiserviceCloudbusMetrodetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2522364458468344868L;
+	private static final long serialVersionUID = 8587137156313773411L;
 
 	/**
 	 * 版本号

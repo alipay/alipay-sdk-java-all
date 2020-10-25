@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApiContractItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4673626671791763997L;
+	private static final long serialVersionUID = 8881224637754783678L;
 
 	/**
 	 * 实际逾期时间

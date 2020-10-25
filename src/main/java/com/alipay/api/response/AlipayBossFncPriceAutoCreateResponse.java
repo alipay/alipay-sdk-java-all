@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncPriceAutoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2446517125654594754L;
+	private static final long serialVersionUID = 4121586536138354888L;
 
 	/** 
 	 * 结果码

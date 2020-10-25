@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT设备-商户-店铺绑定
  *
  * @author auto create
- * @since 1.0, 2020-09-30 15:45:52
+ * @since 1.0, 2020-10-20 20:51:50
  */
 public class AlipayCommerceIotDeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8753123358347922959L;
+	private static final long serialVersionUID = 3826327521726724337L;
 
 	/**
 	 * 应用类型，目前只支持小程序MINI_APP
@@ -44,19 +44,37 @@ public class AlipayCommerceIotDeviceBindModel extends AlipayObject {
 	private String deviceSn;
 
 	/**
+	 * 硬件类型
+	 */
+	@ApiField("equipment_type")
+	private String equipmentType;
+
+	/**
 	 * 商户编号，由ISV定义，需要保证在ISV下唯一
 	 */
 	@ApiField("external_id")
 	private String externalId;
 
 	/**
-	 * 商户角色id。对于直连开店场景，填写商户pid
+	 * external_id对应的secret秘钥
+	 */
+	@ApiField("external_id_secret")
+	private String externalIdSecret;
+
+	/**
+	 * 外部门店id
+	 */
+	@ApiField("external_shop_id")
+	private String externalShopId;
+
+	/**
+	 * 商户角色id。对于直连开店场景，填写商户pid；对于间连开店场景，填写商户smid。
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
 
 	/**
-	 * 商户ID类型，目前只支持直连商户，填写direct
+	 * 区分商户ID类型，直连商户填写direct，间连商户填写indirect
 	 */
 	@ApiField("merchant_id_type")
 	private String merchantIdType;
@@ -66,6 +84,12 @@ public class AlipayCommerceIotDeviceBindModel extends AlipayObject {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * merchant_id_type为间连indirect时，smid关联的pid
+	 */
+	@ApiField("pid")
+	private String pid;
 
 	/**
 	 * 店铺ID
@@ -120,11 +144,32 @@ public class AlipayCommerceIotDeviceBindModel extends AlipayObject {
 		this.deviceSn = deviceSn;
 	}
 
+	public String getEquipmentType() {
+		return this.equipmentType;
+	}
+	public void setEquipmentType(String equipmentType) {
+		this.equipmentType = equipmentType;
+	}
+
 	public String getExternalId() {
 		return this.externalId;
 	}
 	public void setExternalId(String externalId) {
 		this.externalId = externalId;
+	}
+
+	public String getExternalIdSecret() {
+		return this.externalIdSecret;
+	}
+	public void setExternalIdSecret(String externalIdSecret) {
+		this.externalIdSecret = externalIdSecret;
+	}
+
+	public String getExternalShopId() {
+		return this.externalShopId;
+	}
+	public void setExternalShopId(String externalShopId) {
+		this.externalShopId = externalShopId;
 	}
 
 	public String getMerchantId() {
@@ -146,6 +191,13 @@ public class AlipayCommerceIotDeviceBindModel extends AlipayObject {
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public String getPid() {
+		return this.pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
 	}
 
 	public String getShopId() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innerapp.create request
  * 
  * @author auto create
- * @since 1.0, 2020-06-28 14:30:18
+ * @since 1.0, 2020-10-23 11:51:22
  */
 public class AlipayOpenMiniInnerappCreateRequest implements AlipayRequest<AlipayOpenMiniInnerappCreateResponse> {
 

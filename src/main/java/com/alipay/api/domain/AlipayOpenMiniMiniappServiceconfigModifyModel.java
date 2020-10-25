@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniMiniappServiceconfigModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5477434375221475618L;
+	private static final long serialVersionUID = 3196442957869244232L;
 
 	/**
 	 * 云客服是否在小程序首页透出，true-开启，false-不开启

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.hellobike.site.submit request
  * 
  * @author auto create
- * @since 1.0, 2020-04-22 15:31:13
+ * @since 1.0, 2020-10-21 10:34:20
  */
 public class AlipayDataAiserviceHellobikeSiteSubmitRequest implements AlipayRequest<AlipayDataAiserviceHellobikeSiteSubmitResponse> {
 

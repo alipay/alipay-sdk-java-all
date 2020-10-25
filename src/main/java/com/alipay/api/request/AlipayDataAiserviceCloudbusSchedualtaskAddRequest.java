@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.cloudbus.schedualtask.add request
  * 
  * @author auto create
- * @since 1.0, 2020-03-02 16:57:14
+ * @since 1.0, 2020-10-21 10:36:37
  */
 public class AlipayDataAiserviceCloudbusSchedualtaskAddRequest implements AlipayRequest<AlipayDataAiserviceCloudbusSchedualtaskAddResponse> {
 

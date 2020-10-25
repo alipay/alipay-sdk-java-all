@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 焕旭科技聚合支付产品操作指令查询接口
  *
  * @author auto create
- * @since 1.0, 2020-08-17 11:49:59
+ * @since 1.0, 2020-10-15 15:26:21
  */
 public class HuanxuTradeOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7478871937563652148L;
+	private static final long serialVersionUID = 3278476851968681187L;
 
 	/**
-	 * 支付、打款、退款时候支付宝返回的唯一凭证id，调用方查询时候建议优先传入该值，内部处理时优先以该值为准。instruction_id和out_request_no不能同时为空。
+	 * 支付、打款、退款时候焕旭返回的唯一凭证id，调用方查询时候建议优先传入该值，内部处理时优先以该值为准。instruction_id和out_request_no不能同时为空。
 	 */
 	@ApiField("instruction_id")
 	private String instructionId;

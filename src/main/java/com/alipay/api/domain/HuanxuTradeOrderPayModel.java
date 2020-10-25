@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 焕旭科技聚合支付下单支付接口
  *
  * @author auto create
- * @since 1.0, 2020-08-21 21:10:30
+ * @since 1.0, 2020-10-15 16:44:02
  */
 public class HuanxuTradeOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7516438311786323554L;
+	private static final long serialVersionUID = 7449292381327357866L;
 
 	/**
-	 * 聚合支付的支付渠道，支付宝分配。
+	 * 聚合支付的支付渠道，焕旭分配。
 	 */
 	@ApiField("channel")
 	private String channel;
@@ -56,7 +56,13 @@ public class HuanxuTradeOrderPayModel extends AlipayObject {
 	private String payAmount;
 
 	/**
-	 * 支付模式，支付宝分配，目前只支持GUARANTEE_PAY(担保支付模式)
+	 * CASH现金模式（默认值，传入这个值，则表示仅仅支持银行卡现金）BILL票据模式（传入这个值，则表示仅仅支持银行票据）CASH_BILL现金/票据都支持模式
+	 */
+	@ApiField("pay_entity_mode")
+	private String payEntityMode;
+
+	/**
+	 * 支付模式，焕旭分配，目前只支持GUARANTEE_PAY(担保支付模式)
 	 */
 	@ApiField("pay_mode")
 	private String payMode;
@@ -68,7 +74,7 @@ public class HuanxuTradeOrderPayModel extends AlipayObject {
 	private String payRequestNo;
 
 	/**
-	 * 支付终端，指支付来源的设备端，支付宝分配，目前支持PC/APP
+	 * 支付终端，指支付来源的设备端，焕旭分配，目前支持PC/APP
 	 */
 	@ApiField("pay_terminal")
 	private String payTerminal;
@@ -150,6 +156,13 @@ public class HuanxuTradeOrderPayModel extends AlipayObject {
 	}
 	public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
+	}
+
+	public String getPayEntityMode() {
+		return this.payEntityMode;
+	}
+	public void setPayEntityMode(String payEntityMode) {
+		this.payEntityMode = payEntityMode;
 	}
 
 	public String getPayMode() {

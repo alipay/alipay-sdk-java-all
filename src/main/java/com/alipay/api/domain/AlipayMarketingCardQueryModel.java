@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡查询
  *
  * @author auto create
- * @since 1.0, 2020-06-19 13:47:00
+ * @since 1.0, 2020-10-23 15:19:13
  */
 public class AlipayMarketingCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6537629893642893936L;
+	private static final long serialVersionUID = 2284684128679488856L;
 
 	/**
 	 * 用户信息 填写则作为附加条件查询

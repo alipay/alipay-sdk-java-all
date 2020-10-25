@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoPrinterStatusNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8493792782742287365L;
+	private static final long serialVersionUID = 5484995312293591974L;
 
 	
 

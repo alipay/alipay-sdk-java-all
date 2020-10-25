@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸特征文件申请
  *
  * @author auto create
- * @since 1.0, 2020-09-15 10:49:25
+ * @since 1.0, 2020-10-14 14:06:34
  */
 public class AlipayCommerceEducateFacefeatureFileApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8189655982586128224L;
+	private static final long serialVersionUID = 4627744829373638724L;
 
 	/**
 	 * SCHOOL_PAYMENT

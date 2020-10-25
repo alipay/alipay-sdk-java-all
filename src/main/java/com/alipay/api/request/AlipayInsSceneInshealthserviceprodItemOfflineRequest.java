@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.inshealthserviceprod.item.offline request
  * 
  * @author auto create
- * @since 1.0, 2020-09-25 16:15:37
+ * @since 1.0, 2020-10-15 15:34:01
  */
 public class AlipayInsSceneInshealthserviceprodItemOfflineRequest implements AlipayRequest<AlipayInsSceneInshealthserviceprodItemOfflineResponse> {
 

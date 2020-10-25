@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.ExtContext;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: huanxu.trade.order.disburse response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-17 11:49:43
+ * @since 1.0, 2020-10-15 15:27:28
  */
 public class HuanxuTradeOrderDisburseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8272847785248355126L;
+	private static final long serialVersionUID = 2256288298641933998L;
 
 	/** 
-	 * 聚合支付的支付渠道，支付宝分配。
+	 * 聚合支付的支付渠道，焕旭分配。
 	 */
 	@ApiField("channel")
 	private String channel;
@@ -27,7 +28,7 @@ public class HuanxuTradeOrderDisburseResponse extends AlipayResponse {
 	private String disburseAmount;
 
 	/** 
-	 * 打款id，支付宝针对每一笔打款请求生成的唯一打款凭证
+	 * 打款id，焕旭针对每一笔打款请求生成的唯一打款凭证
 	 */
 	@ApiField("disburse_id")
 	private String disburseId;
@@ -43,6 +44,12 @@ public class HuanxuTradeOrderDisburseResponse extends AlipayResponse {
 	 */
 	@ApiField("disburse_status")
 	private String disburseStatus;
+
+	/** 
+	 * 用于透传扩展信息，pay_url为支付链接。
+	 */
+	@ApiField("ext_context")
+	private ExtContext extContext;
 
 	public void setChannel(String channel) {
 		this.channel = channel;
@@ -77,6 +84,13 @@ public class HuanxuTradeOrderDisburseResponse extends AlipayResponse {
 	}
 	public String getDisburseStatus( ) {
 		return this.disburseStatus;
+	}
+
+	public void setExtContext(ExtContext extContext) {
+		this.extContext = extContext;
+	}
+	public ExtContext getExtContext( ) {
+		return this.extContext;
 	}
 
 }

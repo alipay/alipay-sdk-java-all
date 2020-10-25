@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建构建任务
  *
  * @author auto create
- * @since 1.0, 2020-08-03 11:55:18
+ * @since 1.0, 2020-10-19 16:15:44
  */
 public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5546677411516869878L;
+	private static final long serialVersionUID = 3126227525283998652L;
 
 	/**
 	 * 业务来源，新接入方需要向支付宝申请专用来源，否则不予接入。https://yuque.antfin-inc.com/tinyapp-all/qddncu/bidushixiang
@@ -94,6 +94,12 @@ https://registry.npm.alibaba-inc.com/@alipay/tiny-cli/huoban-prod
 	 */
 	@ApiField("build_qcloud_info")
 	private String buildQcloudInfo;
+
+	/**
+	 * 已经构建加签过的包地址
+	 */
+	@ApiField("build_signed_pkg_url")
+	private String buildSignedPkgUrl;
 
 	/**
 	 * 源码包大小
@@ -239,6 +245,13 @@ https://registry.npm.alibaba-inc.com/@alipay/tiny-cli/huoban-prod
 	}
 	public void setBuildQcloudInfo(String buildQcloudInfo) {
 		this.buildQcloudInfo = buildQcloudInfo;
+	}
+
+	public String getBuildSignedPkgUrl() {
+		return this.buildSignedPkgUrl;
+	}
+	public void setBuildSignedPkgUrl(String buildSignedPkgUrl) {
+		this.buildSignedPkgUrl = buildSignedPkgUrl;
 	}
 
 	public String getBuildSourcePkgSize() {

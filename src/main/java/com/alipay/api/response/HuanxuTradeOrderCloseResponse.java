@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.ExtContext;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: huanxu.trade.order.close response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-17 11:48:55
+ * @since 1.0, 2020-10-15 15:50:12
  */
 public class HuanxuTradeOrderCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2297299834438416297L;
+	private static final long serialVersionUID = 3157751426715873565L;
 
 	/** 
-	 * 聚合支付的支付渠道，支付宝分配。
+	 * 聚合支付的支付渠道，焕旭分配。
 	 */
 	@ApiField("channel")
 	private String channel;
+
+	/** 
+	 * 用于透传扩展信息，pay_url为支付链接。
+	 */
+	@ApiField("ext_context")
+	private ExtContext extContext;
 
 	/** 
 	 * 支付金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
@@ -33,7 +40,7 @@ public class HuanxuTradeOrderCloseResponse extends AlipayResponse {
 	private String payRequestNo;
 
 	/** 
-	 * 支付id，支付宝针对每一笔支付请求生成的唯一支付凭证
+	 * 支付id，焕旭针对每一笔支付请求生成的唯一支付凭证
 	 */
 	@ApiField("payment_id")
 	private String paymentId;
@@ -43,6 +50,13 @@ public class HuanxuTradeOrderCloseResponse extends AlipayResponse {
 	}
 	public String getChannel( ) {
 		return this.channel;
+	}
+
+	public void setExtContext(ExtContext extContext) {
+		this.extContext = extContext;
+	}
+	public ExtContext getExtContext( ) {
+		return this.extContext;
 	}
 
 	public void setPayAmount(String payAmount) {

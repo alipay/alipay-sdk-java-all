@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务市场订单同步
  *
  * @author auto create
- * @since 1.0, 2019-04-01 14:13:00
+ * @since 1.0, 2020-10-23 11:55:14
  */
 public class AlipayOpenServicemarketOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6375298775385998986L;
+	private static final long serialVersionUID = 2378361745911284223L;
 
 	/**
 	 * 实际支付金额，单位分

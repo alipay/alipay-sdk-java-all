@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MaskedLogonIdView extends AlipayObject {
 
-	private static final long serialVersionUID = 5857911797128676924L;
+	private static final long serialVersionUID = 2852499276449318462L;
 
 	/**
 	 * 脱敏后的支付宝邮箱登录名，如果用户没有邮箱登录名，则返回空。

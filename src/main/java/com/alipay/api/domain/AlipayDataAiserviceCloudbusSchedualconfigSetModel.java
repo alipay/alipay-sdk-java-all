@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 排班调度配制接口
  *
  * @author auto create
- * @since 1.0, 2020-03-02 16:19:47
+ * @since 1.0, 2020-10-21 10:36:43
  */
 public class AlipayDataAiserviceCloudbusSchedualconfigSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7287382663733644632L;
+	private static final long serialVersionUID = 3898117627646473518L;
 
 	/**
 	 * 接口版本号

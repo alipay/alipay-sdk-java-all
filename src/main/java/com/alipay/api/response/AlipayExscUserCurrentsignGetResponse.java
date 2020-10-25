@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayExscUserCurrentsignGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7651713982157478437L;
+	private static final long serialVersionUID = 5577976737895168427L;
 
 	/** 
 	 * 返回结果的业务类型。当前签约绑卡业务类型 （current_sign）

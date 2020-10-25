@@ -9,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.accountbook.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-31 11:33:41
+ * @since 1.0, 2020-10-14 09:45:13
  */
 public class AlipayFundAccountbookQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7584465817449557679L;
+	private static final long serialVersionUID = 3543778895154254996L;
+
+	/** 
+	 * 记账账簿id
+	 */
+	@ApiField("account_book_id")
+	private String accountBookId;
 
 	/** 
 	 * 可用余额
@@ -26,6 +32,13 @@ public class AlipayFundAccountbookQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ext_card_info")
 	private ExtCardInfo extCardInfo;
+
+	public void setAccountBookId(String accountBookId) {
+		this.accountBookId = accountBookId;
+	}
+	public String getAccountBookId( ) {
+		return this.accountBookId;
+	}
 
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;

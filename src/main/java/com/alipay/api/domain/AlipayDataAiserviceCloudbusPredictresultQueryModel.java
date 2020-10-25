@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公交路线预测进度查询1
  *
  * @author auto create
- * @since 1.0, 2019-10-10 16:24:45
+ * @since 1.0, 2020-10-21 10:37:56
  */
 public class AlipayDataAiserviceCloudbusPredictresultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2884843316897535287L;
+	private static final long serialVersionUID = 2524325631857648348L;
 
 	/**
 	 * 接口版本号

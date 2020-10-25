@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用交易金融支付接口
  *
  * @author auto create
- * @since 1.0, 2020-03-11 16:00:38
+ * @since 1.0, 2020-10-09 11:27:34
  */
 public class AlipayTradeCreditFinancePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6323648818986178559L;
+	private static final long serialVersionUID = 5526168319234958459L;
 
 	/**
 	 * 本次需要支付的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
@@ -20,26 +20,25 @@ public class AlipayTradeCreditFinancePayModel extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 本次金融支付对应的业务类型,本次对应：
-BILL_REPAY:账单还款后打款
+	 * 本次金融支付对应的业务类型,目前只支持BILL_REPAY: 用于采销宝账单还款后，交易打款前，驱动资金从买家子户到采销宝资产出资户
 	 */
 	@ApiField("business_type")
 	private String businessType;
 
 	/**
-	 * 币种，CNY
+	 * 币种单位，目前只支持人民币CNY
 	 */
 	@ApiField("currency")
 	private String currency;
 
 	/**
-	 * 扩展参数，json结构体，具体值需要联系支付宝工程师确认
+	 * 扩展参数，格式为json字符串
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
 
 	/**
-	 * 外部请求号，用于控制幂等
+	 * 外部请求号，用于支付宝内部做幂等控制。同一笔trade_no下out_request_no不能相同，如果相同则代表是重复请求
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -61,6 +60,12 @@ BILL_REPAY:账单还款后打款
 	 */
 	@ApiField("subject")
 	private String subject;
+
+	/**
+	 * 本次金融付款交易的买家支付宝会员id
+	 */
+	@ApiField("trade_buyer_id")
+	private String tradeBuyerId;
 
 	/**
 	 * 需要进行金融支付处理的交易号
@@ -122,6 +127,13 @@ BILL_REPAY:账单还款后打款
 	}
 	public void setSubject(String subject) {
 		this.subject = subject;
+	}
+
+	public String getTradeBuyerId() {
+		return this.tradeBuyerId;
+	}
+	public void setTradeBuyerId(String tradeBuyerId) {
+		this.tradeBuyerId = tradeBuyerId;
 	}
 
 	public String getTradeNo() {

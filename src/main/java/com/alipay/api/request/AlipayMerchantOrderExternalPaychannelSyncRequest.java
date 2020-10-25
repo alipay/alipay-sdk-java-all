@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.order.external.paychannel.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-08-05 10:49:34
+ * @since 1.0, 2020-10-15 14:20:37
  */
 public class AlipayMerchantOrderExternalPaychannelSyncRequest implements AlipayRequest<AlipayMerchantOrderExternalPaychannelSyncResponse> {
 

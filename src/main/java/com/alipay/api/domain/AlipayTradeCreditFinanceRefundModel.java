@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用交易金融退款接口
  *
  * @author auto create
- * @since 1.0, 2020-03-11 16:00:11
+ * @since 1.0, 2020-10-09 11:27:25
  */
 public class AlipayTradeCreditFinanceRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7693112921682197631L;
+	private static final long serialVersionUID = 3244654275112577155L;
 
 	/**
 	 * 本次需要退款的金额，单位为元；精确到小数点后两位，取值范围[0.01,100000000]
@@ -20,13 +20,13 @@ public class AlipayTradeCreditFinanceRefundModel extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 币种,CNY
+	 * 币种单位，目前只支持人民币CNY
 	 */
 	@ApiField("currency")
 	private String currency;
 
 	/**
-	 * 扩展参数，json结构体，例用前需要与支付宝工程师确认
+	 * 扩展参数，格式为json字符串。
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
@@ -38,7 +38,7 @@ public class AlipayTradeCreditFinanceRefundModel extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 外部退款请求号，用于控制幂等
+	 * 外部退款请求号，外部请求号，用于支付宝内部做幂等控制。同一笔trade_no下out_request_no不能相同，如果相同则代表是重复请求
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -50,13 +50,13 @@ public class AlipayTradeCreditFinanceRefundModel extends AlipayObject {
 	private CreditFinancePayAccountInfo payeeInfo;
 
 	/**
-	 * 本次需要进行金融处理的交易对应的交易的买家userId
+	 * 本次金融付款对应交易的买家ID
 	 */
 	@ApiField("trade_buyer_id")
 	private String tradeBuyerId;
 
 	/**
-	 * 需要进行金融处理的交易号
+	 * 需要进行金融退款处理的交易号
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

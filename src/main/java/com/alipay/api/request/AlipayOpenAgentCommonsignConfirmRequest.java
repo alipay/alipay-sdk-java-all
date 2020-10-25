@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.commonsign.confirm request
  * 
  * @author auto create
- * @since 1.0, 2020-09-16 16:15:35
+ * @since 1.0, 2020-10-21 20:30:14
  */
 public class AlipayOpenAgentCommonsignConfirmRequest implements AlipayRequest<AlipayOpenAgentCommonsignConfirmResponse> {
 

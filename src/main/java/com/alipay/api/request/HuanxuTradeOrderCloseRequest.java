@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: huanxu.trade.order.close request
  * 
  * @author auto create
- * @since 1.0, 2020-08-17 11:48:55
+ * @since 1.0, 2020-10-15 15:50:12
  */
 public class HuanxuTradeOrderCloseRequest implements AlipayRequest<HuanxuTradeOrderCloseResponse> {
 

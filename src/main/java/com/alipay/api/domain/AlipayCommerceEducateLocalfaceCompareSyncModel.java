@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 封闭式教育场景-本地人脸比对结果同步
  *
  * @author auto create
- * @since 1.0, 2020-08-17 20:09:53
+ * @since 1.0, 2020-10-14 14:07:50
  */
 public class AlipayCommerceEducateLocalfaceCompareSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3576147671469743832L;
+	private static final long serialVersionUID = 6769632153897524837L;
 
 	/**
 	 * 客户端BehaviourLog-> aesCypher 参数

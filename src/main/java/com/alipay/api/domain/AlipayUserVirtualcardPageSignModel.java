@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserVirtualcardPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5369695372499224544L;
+	private static final long serialVersionUID = 4188382329154667419L;
 
 	/**
 	 * 用户虚拟卡余额信息，单位为元，可精确到分。后付费卡不需要。

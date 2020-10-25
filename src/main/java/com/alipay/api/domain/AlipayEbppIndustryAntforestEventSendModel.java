@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryAntforestEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3349798149567528761L;
+	private static final long serialVersionUID = 3858965117357258387L;
 
 	/**
 	 * 用于标识行业-蚂蚁森林能量事件的类别

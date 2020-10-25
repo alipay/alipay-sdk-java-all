@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.create request
  * 
  * @author auto create
- * @since 1.0, 2020-04-07 20:39:09
+ * @since 1.0, 2020-10-16 17:38:58
  */
 public class AlipayOpenPublicLifeCreateRequest implements AlipayUploadRequest<AlipayOpenPublicLifeCreateResponse> {
 

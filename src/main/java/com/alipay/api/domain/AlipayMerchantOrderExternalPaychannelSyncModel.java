@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单平台外部渠道支付结果同步消息
  *
  * @author auto create
- * @since 1.0, 2020-08-05 10:49:34
+ * @since 1.0, 2020-10-15 14:20:14
  */
 public class AlipayMerchantOrderExternalPaychannelSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2335135634712872282L;
+	private static final long serialVersionUID = 5532943374572829572L;
 
 	/**
 	 * 业务单号，微信、支付宝交易号
@@ -68,6 +68,12 @@ public class AlipayMerchantOrderExternalPaychannelSyncModel extends AlipayObject
 	 */
 	@ApiField("notify_type")
 	private String notifyType;
+
+	/**
+	 * 原始第三方支付结构的交易号，比如支付宝、微信交易号
+	 */
+	@ApiField("origin_trade_no")
+	private String originTradeNo;
 
 	/**
 	 * 外部业务号
@@ -172,6 +178,13 @@ public class AlipayMerchantOrderExternalPaychannelSyncModel extends AlipayObject
 	}
 	public void setNotifyType(String notifyType) {
 		this.notifyType = notifyType;
+	}
+
+	public String getOriginTradeNo() {
+		return this.originTradeNo;
+	}
+	public void setOriginTradeNo(String originTradeNo) {
+		this.originTradeNo = originTradeNo;
 	}
 
 	public String getOutBizNo() {
