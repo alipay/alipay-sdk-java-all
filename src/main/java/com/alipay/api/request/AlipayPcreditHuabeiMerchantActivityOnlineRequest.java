@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.merchant.activity.online request
  * 
  * @author auto create
- * @since 1.0, 2020-07-23 16:10:29
+ * @since 1.0, 2020-12-03 21:08:40
  */
 public class AlipayPcreditHuabeiMerchantActivityOnlineRequest implements AlipayRequest<AlipayPcreditHuabeiMerchantActivityOnlineResponse> {
 

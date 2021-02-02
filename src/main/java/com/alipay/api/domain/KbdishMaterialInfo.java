@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品库加料模型
  *
  * @author auto create
- * @since 1.0, 2020-09-07 16:13:37
+ * @since 1.0, 2020-11-23 14:45:53
  */
 public class KbdishMaterialInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2297319921136899873L;
+	private static final long serialVersionUID = 6432319123713944322L;
 
 	/**
 	 * 加价金额，最小加价金额0
@@ -26,7 +26,8 @@ public class KbdishMaterialInfo extends AlipayObject {
 	private String createUser;
 
 	/**
-	 * 扩展字段
+	 * 扩展字段,星巴克萃取方式需设置特殊字段"StandardStandardAliFilter":{"StandardCoffeeAliFilter":"aaaaaa","DecafCoffeeAliFilter":"bbbbbb"
+}   key为out_material_id  value为标准/低因对应的新的poskey 组成的json
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

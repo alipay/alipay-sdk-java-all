@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票同步场景下的发票入参模型
  *
  * @author auto create
- * @since 1.0, 2020-09-08 14:06:28
+ * @since 1.0, 2020-12-30 17:46:59
  */
 public class InvoiceSendOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8695343998586886219L;
+	private static final long serialVersionUID = 7366593936293437645L;
 
 	/**
 	 * 支付宝端的申请id。如果在开票过程中，是通过支付宝提交的申请到机构端，支付宝会带上开票申请在支付宝生成的申请id，机构在回传发票的时候只需要回传这个申请id，不用获取用户的uid，支付宝可以根据申请id将发票归集到对应的用户名下
@@ -53,16 +53,23 @@ public class InvoiceSendOpenModel extends AlipayObject {
 	private String extendFields;
 
 	/**
-	 * 下载文件类型，需要回传文件下载链接的情况下必传，PDF:下载文件类型为pdf;JPG:下载的文件类型为jpg。
+	 * 下载版式文件类型，需要回传文件下载链接的情况下必传，
+取值范围：PDF，JPG，OFD
 	 */
 	@ApiField("file_download_type")
 	private String fileDownloadType;
 
 	/**
-	 * 发票的pdf或者jpg文件下载地址。
+	 * 发票版式文件下载地址。
 	 */
 	@ApiField("file_download_url")
 	private String fileDownloadUrl;
+
+	/**
+	 * 财政电子票据子类型，当tax_type=FINANCIAL_ELECTRONIC_BILL时要求必填 可选值如下： 01:非税收入通用票据 02:非税收入专用票据 03:非税收入一般缴款书 04:资金往来结算票据 05:公益事业捐赠票据 06:医疗收费票据 07:社会团体会费票据 08:社会保险基金票据 09:工会经费收入票据 99:其他财政票据
+	 */
+	@ApiField("financial_electronic_type")
+	private String financialElectronicType;
 
 	/**
 	 * 发票代码，该字段与invoice_no构成一张发票的唯一标识。
@@ -84,8 +91,11 @@ public class InvoiceSendOpenModel extends AlipayObject {
 	private String invoiceDate;
 
 	/**
-	 * 标识发票的类型，PLAIN:增值税电子普通发票;SPECIAL:增值税专用发票;PLAIN_INVOICE:增值税普通发票;SALSE_INVOICE:机动车销售统一发票
-;PAPER_INVOICE:增值税普通发票(卷式)。
+	 * 标识发票的类型，
+PLAIN:增值税电子普通发票;
+SPECIAL:增值税专用发票;
+PLAIN_INVOICE:增值税普通发票;
+FINANCIAL_ELECTRONIC_BILL:财政电子票据;
 	 */
 	@ApiField("invoice_kind")
 	private String invoiceKind;
@@ -247,6 +257,13 @@ public class InvoiceSendOpenModel extends AlipayObject {
 	}
 	public void setFileDownloadUrl(String fileDownloadUrl) {
 		this.fileDownloadUrl = fileDownloadUrl;
+	}
+
+	public String getFinancialElectronicType() {
+		return this.financialElectronicType;
+	}
+	public void setFinancialElectronicType(String financialElectronicType) {
+		this.financialElectronicType = financialElectronicType;
 	}
 
 	public String getInvoiceCode() {

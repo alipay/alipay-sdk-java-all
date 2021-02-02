@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活号人群摘要查询
  *
  * @author auto create
- * @since 1.0, 2020-06-01 10:06:16
+ * @since 1.0, 2021-01-25 16:30:27
  */
 public class AlipayOpenPublicCrowdInnerQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8882849677176484421L;
+	private static final long serialVersionUID = 3321655985953437981L;
 
 	/**
 	 * 人群来源

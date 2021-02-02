@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.cloudbus.predictbusline.submit response.
  * 
  * @author auto create
- * @since 1.0, 2020-10-21 10:38:17
+ * @since 1.0, 2021-01-21 23:34:09
  */
 public class AlipayDataAiserviceCloudbusPredictbuslineSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1576583117398932774L;
+	private static final long serialVersionUID = 8534685463249853661L;
 
 	/** 
 	 * 预测任务提交返回

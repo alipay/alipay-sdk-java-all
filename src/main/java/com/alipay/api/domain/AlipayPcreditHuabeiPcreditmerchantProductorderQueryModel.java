@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 淘系商家查询花呗合约订购关系
  *
  * @author auto create
- * @since 1.0, 2020-07-01 09:43:41
+ * @since 1.0, 2021-01-19 17:00:24
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5759646491787975818L;
+	private static final long serialVersionUID = 6175648935872418734L;
 
 	/**
 	 * 合约订购查询业务场景

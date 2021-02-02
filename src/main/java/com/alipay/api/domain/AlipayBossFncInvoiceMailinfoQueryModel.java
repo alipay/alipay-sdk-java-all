@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据发票邮寄ID获取当前的邮寄信息
  *
  * @author auto create
- * @since 1.0, 2019-10-23 15:45:57
+ * @since 1.0, 2020-11-27 14:07:10
  */
 public class AlipayBossFncInvoiceMailinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3289628785711921858L;
+	private static final long serialVersionUID = 4199218129373338633L;
 
 	/**
 	 * 邮寄ID，唯一性ID，邮寄信息表唯一主键ID

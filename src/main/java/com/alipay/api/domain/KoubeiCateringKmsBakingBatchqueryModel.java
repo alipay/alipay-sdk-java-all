@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 烘焙销量回传接口
  *
  * @author auto create
- * @since 1.0, 2020-09-02 15:44:06
+ * @since 1.0, 2020-11-24 15:51:55
  */
 public class KoubeiCateringKmsBakingBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1139772593556862664L;
+	private static final long serialVersionUID = 5186726561929451531L;
 
 	/**
 	 * 预测日期，目前只支持预测当天日期

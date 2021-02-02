@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即时配送商家门店分页查询
  *
  * @author auto create
- * @since 1.0, 2020-09-27 21:07:29
+ * @since 1.0, 2021-02-01 11:08:41
  */
 public class AlipayOpenInstantdeliveryMerchantshopBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4358833457343528672L;
+	private static final long serialVersionUID = 2724497732422963394L;
 
 	/**
 	 * 当前页码

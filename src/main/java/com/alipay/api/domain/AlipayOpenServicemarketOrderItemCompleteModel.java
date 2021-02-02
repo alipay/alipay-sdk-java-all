@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenServicemarketOrderItemCompleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7876685494946478167L;
+	private static final long serialVersionUID = 8219896821911694181L;
 
 	/**
 	 * 订购服务插件订单号
@@ -26,7 +26,9 @@ public class AlipayOpenServicemarketOrderItemCompleteModel extends AlipayObject 
 	private String miniAppId;
 
 	/**
-	 * 商家订购服务选择的某一门店的ID，如果该订单为口碑服务市场发布的服务所产生的订单，则此字段必填
+	 * 商家订购服务选择的某一门店的ID。若该订单：
+为支付宝服务市场发布的服务所产生订单则该参数可选。
+为口碑服务市场发布的服务所产生的订单，则此字段必填。口碑服务市场参见 http://fuwu.koubei.com/commodity/v2/merchandise/index.htm。
 	 */
 	@ApiField("shop_id")
 	private String shopId;

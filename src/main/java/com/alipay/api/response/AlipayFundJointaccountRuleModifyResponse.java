@@ -1,0 +1,20 @@
+package com.alipay.api.response;
+
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.fund.jointaccount.rule.modify response.
+ * 
+ * @author auto create
+ * @since 1.0, 2021-01-26 11:10:16
+ */
+public class AlipayFundJointaccountRuleModifyResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 1361598828384118983L;
+
+	
+
+	
+
+}

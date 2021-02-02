@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部商户步数同步接口
  *
  * @author auto create
- * @since 1.0, 2020-04-30 16:40:17
+ * @since 1.0, 2020-12-28 14:05:20
  */
 public class AlipayUserStepcounterSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4555362888258667388L;
+	private static final long serialVersionUID = 7171286463383612493L;
 
 	/**
 	 * 年龄数据。是外部商户系统中录入的用户年龄数据

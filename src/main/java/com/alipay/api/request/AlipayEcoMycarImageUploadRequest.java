@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2019-08-29 11:20:56
+ * @since 1.0, 2020-12-31 11:49:04
  */
 public class AlipayEcoMycarImageUploadRequest implements AlipayRequest<AlipayEcoMycarImageUploadResponse> {
 

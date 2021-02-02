@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票明细开放模型
  *
  * @author auto create
- * @since 1.0, 2020-07-02 19:01:56
+ * @since 1.0, 2021-01-19 14:52:56
  */
 public class InvoiceItemOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3598848222546773499L;
+	private static final long serialVersionUID = 4414256869156636815L;
 
 	/**
 	 * 明细行不含税金额，保留两位小数
@@ -32,7 +32,9 @@ public class InvoiceItemOpenModel extends AlipayObject {
 	private String itemNo;
 
 	/**
-	 * 数量，可精确到两位小数
+	 * 数量；
+1.当row_type=0或2且item_unit_price为空，可空；
+2.可精确到小数点后6位
 	 */
 	@ApiField("item_quantity")
 	private Long itemQuantity;
@@ -68,7 +70,9 @@ public class InvoiceItemOpenModel extends AlipayObject {
 	private String itemUnit;
 
 	/**
-	 * 不含税单价，可精确到8位小数
+	 * 不含税单价;
+1.当row_type=0或2且item_quantity为空，可空
+2.可精确到小数点后8位；
 	 */
 	@ApiField("item_unit_price")
 	private String itemUnitPrice;

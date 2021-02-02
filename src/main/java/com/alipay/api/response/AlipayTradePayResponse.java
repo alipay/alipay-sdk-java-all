@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-08 10:06:33
+ * @since 1.0, 2021-01-27 16:20:15
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5168199427479827195L;
+	private static final long serialVersionUID = 8453341275391455954L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -178,6 +178,12 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	 */
 	@ApiField("receipt_amount")
 	private String receiptAmount;
+
+	/** 
+	 * 收款资金类型，当交易收款资金为数字人民币时返回值为“DC”，否则不返回该字段。
+	 */
+	@ApiField("receipt_currency_type")
+	private String receiptCurrencyType;
 
 	/** 
 	 * 结算币种订单金额
@@ -408,6 +414,13 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	}
 	public String getReceiptAmount( ) {
 		return this.receiptAmount;
+	}
+
+	public void setReceiptCurrencyType(String receiptCurrencyType) {
+		this.receiptCurrencyType = receiptCurrencyType;
+	}
+	public String getReceiptCurrencyType( ) {
+		return this.receiptCurrencyType;
 	}
 
 	public void setSettleAmount(String settleAmount) {

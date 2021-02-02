@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-08 09:41:50
+ * @since 1.0, 2021-01-21 18:55:48
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4781889243836255181L;
+	private static final long serialVersionUID = 3235715458987492876L;
 
 	/** 
 	 * 银行卡冲退信息
@@ -33,8 +33,7 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	private String errorCode;
 
 	/** 
-	 * 退款时间；
-默认不返回该信息，需与支付宝约定后配置返回；
+	 * 退款时间。
 	 */
 	@ApiField("gmt_refund_pay")
 	private Date gmtRefundPay;

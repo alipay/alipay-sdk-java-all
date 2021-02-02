@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.experience.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-13 16:53:01
+ * @since 1.0, 2020-11-24 16:30:39
  */
 public class AlipayOpenMiniExperienceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2284865332725395647L;
+	private static final long serialVersionUID = 5234274211864529164L;
 
 	/** 
 	 * 小程序体验版二维码地址
@@ -21,7 +21,10 @@ public class AlipayOpenMiniExperienceQueryResponse extends AlipayResponse {
 	private String expQrCodeUrl;
 
 	/** 
-	 * 体验版打包状态，expVersionPackged-体验版打包成功，expVersionPackaging-体验版打包中，notExpVersion-非体验版
+	 * 体验版打包状态。状态枚举如下：
+expVersionPackged：体验版打包成功；
+expVersionPackaging：体验版打包中；
+notExpVersion：非体验版。
 	 */
 	@ApiField("status")
 	private String status;

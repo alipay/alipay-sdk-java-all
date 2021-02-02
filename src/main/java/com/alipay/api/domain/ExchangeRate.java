@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账兑换汇率的基本信息
  *
  * @author auto create
- * @since 1.0, 2019-12-03 14:42:02
+ * @since 1.0, 2020-12-22 15:09:30
  */
 public class ExchangeRate extends AlipayObject {
 
-	private static final long serialVersionUID = 2728286584737324244L;
+	private static final long serialVersionUID = 4772287765326128421L;
 
 	/**
 	 * 兑换汇率的基本币种。biz_scene是LOCAL场景下，该参数返回为空。

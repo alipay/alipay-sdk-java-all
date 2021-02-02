@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.frontcategory.security.create request
  * 
  * @author auto create
- * @since 1.0, 2019-09-06 21:53:32
+ * @since 1.0, 2021-01-15 11:34:30
  */
 public class AntMerchantExpandFrontcategorySecurityCreateRequest implements AlipayRequest<AntMerchantExpandFrontcategorySecurityCreateResponse> {
 

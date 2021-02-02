@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.auth.refund.apply request
  * 
  * @author auto create
- * @since 1.0, 2020-07-07 17:34:42
+ * @since 1.0, 2021-01-29 17:38:44
  */
 public class AlipayPcreditHuabeiAuthRefundApplyRequest implements AlipayRequest<AlipayPcreditHuabeiAuthRefundApplyResponse> {
 

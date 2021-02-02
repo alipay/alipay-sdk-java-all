@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.common.sign request
  * 
  * @author auto create
- * @since 1.0, 2020-09-16 21:10:11
+ * @since 1.0, 2020-12-23 18:38:40
  */
 public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<AlipayOpenAgentCommonSignResponse> {
 
@@ -93,6 +93,21 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	private FileItem specialLicensePic;
 
 	/** 
+	* 网站首页截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem webHomeScreenshot;
+
+	/** 
+	* 网站商品页截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem webItemScreenshot;
+
+	/** 
+	* 网站支付页截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem webPayScreenshot;
+
+	/** 
 	* 接入网址信息（1 app_name、app_demo；2 web_sites；3 alipay_life_name；4 wechat_official_account_name。1、2、3、4至少选择一个填写）
 	 */
 	private List<String> webSites;
@@ -101,6 +116,21 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	* 接入网址的授权涵，格式为.doc .docx .pdf格式
 	 */
 	private FileItem webSitesLoa;
+
+	/** 
+	* 网站状态，枚举值为：已上线，未上线
+	 */
+	private String webStatus;
+
+	/** 
+	* 可以登录此网站的测试账户
+	 */
+	private String webTestAccount;
+
+	/** 
+	* 可以登录此网站的账户的密码。对应web_test_account的登录密码
+	 */
+	private String webTestAccountPassword;
 
 	/** 
 	* 微信公众号名称（1 app_name、app_demo；2 web_sites；3 alipay_life_name；4 wechat_official_account_name。1、2、3、4至少选择一个填写）
@@ -205,6 +235,27 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 		return this.specialLicensePic;
 	}
 
+	public void setWebHomeScreenshot(FileItem webHomeScreenshot) {
+		this.webHomeScreenshot = webHomeScreenshot;
+	}
+	public FileItem getWebHomeScreenshot() {
+		return this.webHomeScreenshot;
+	}
+
+	public void setWebItemScreenshot(FileItem webItemScreenshot) {
+		this.webItemScreenshot = webItemScreenshot;
+	}
+	public FileItem getWebItemScreenshot() {
+		return this.webItemScreenshot;
+	}
+
+	public void setWebPayScreenshot(FileItem webPayScreenshot) {
+		this.webPayScreenshot = webPayScreenshot;
+	}
+	public FileItem getWebPayScreenshot() {
+		return this.webPayScreenshot;
+	}
+
 	public void setWebSites(List<String> webSites) {
 		this.webSites = webSites;
 	}
@@ -217,6 +268,27 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	}
 	public FileItem getWebSitesLoa() {
 		return this.webSitesLoa;
+	}
+
+	public void setWebStatus(String webStatus) {
+		this.webStatus = webStatus;
+	}
+	public String getWebStatus() {
+		return this.webStatus;
+	}
+
+	public void setWebTestAccount(String webTestAccount) {
+		this.webTestAccount = webTestAccount;
+	}
+	public String getWebTestAccount() {
+		return this.webTestAccount;
+	}
+
+	public void setWebTestAccountPassword(String webTestAccountPassword) {
+		this.webTestAccountPassword = webTestAccountPassword;
+	}
+	public String getWebTestAccountPassword() {
+		return this.webTestAccountPassword;
 	}
 
 	public void setWechatOfficialAccountName(String wechatOfficialAccountName) {
@@ -295,6 +367,9 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 		txtParams.put("mcc_code", this.mccCode);
 		txtParams.put("product_code", this.productCode);
 		txtParams.put("web_sites", this.webSites == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.webSites, true));
+		txtParams.put("web_status", this.webStatus);
+		txtParams.put("web_test_account", this.webTestAccount);
+		txtParams.put("web_test_account_password", this.webTestAccountPassword);
 		txtParams.put("wechat_official_account_name", this.wechatOfficialAccountName);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
@@ -317,6 +392,9 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 		params.put("shop_scene_pic", this.shopScenePic);
 		params.put("shop_sign_board_pic", this.shopSignBoardPic);
 		params.put("special_license_pic", this.specialLicensePic);
+		params.put("web_home_screenshot", this.webHomeScreenshot);
+		params.put("web_item_screenshot", this.webItemScreenshot);
+		params.put("web_pay_screenshot", this.webPayScreenshot);
 		params.put("web_sites_loa", this.webSitesLoa);
 		return params;
 	}

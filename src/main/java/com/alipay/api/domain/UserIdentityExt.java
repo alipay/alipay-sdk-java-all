@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户身份的额外信息
  *
  * @author auto create
- * @since 1.0, 2020-06-16 16:47:01
+ * @since 1.0, 2020-12-30 16:45:13
  */
 public class UserIdentityExt extends AlipayObject {
 
-	private static final long serialVersionUID = 8555146883979988397L;
+	private static final long serialVersionUID = 5242132833569732294L;
 
 	/**
 	 * 用户交易账号的发卡机构id
@@ -42,6 +42,18 @@ public class UserIdentityExt extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * isv传给机构（如银行）的唯一uuid，可能是手机号，也可能是身份证号（盒马对接isv一网通）
+	 */
+	@ApiField("inst_uuid")
+	private String instUuid;
+
+	/**
+	 * inst_uuid的类型，可能是手机号，也可能是身份证等
+	 */
+	@ApiField("inst_uuid_type")
+	private String instUuidType;
 
 	/**
 	 * 用户在商家平台的会员id
@@ -88,6 +100,20 @@ public class UserIdentityExt extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getInstUuid() {
+		return this.instUuid;
+	}
+	public void setInstUuid(String instUuid) {
+		this.instUuid = instUuid;
+	}
+
+	public String getInstUuidType() {
+		return this.instUuidType;
+	}
+	public void setInstUuidType(String instUuidType) {
+		this.instUuidType = instUuidType;
 	}
 
 	public String getMemberId() {

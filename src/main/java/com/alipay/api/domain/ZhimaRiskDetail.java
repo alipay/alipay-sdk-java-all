@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaRiskDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7747869628113358758L;
+	private static final long serialVersionUID = 7779166882288472467L;
 
 	/**
 	 * 数据类型：Negative(负面信息)、Risk(风险信息) 。系统会将在APP上对C端披露的信息标记为负面信息，其余的信息标记为风险信息。

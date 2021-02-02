@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花芝结算扣款费用逆向退款申请
  *
  * @author auto create
- * @since 1.0, 2020-05-15 23:41:11
+ * @since 1.0, 2021-01-29 17:38:44
  */
 public class AlipayPcreditHuabeiAuthRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5827483796948123656L;
+	private static final long serialVersionUID = 8781855312847677734L;
 
 	/**
 	 * 签约花芝的业务协议号，在签约成功、结算成功等通知中回回传给商户。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开通门店码
  *
  * @author auto create
- * @since 1.0, 2020-10-22 14:22:05
+ * @since 1.0, 2020-12-20 22:48:28
  */
 public class AlipayMerchantStoreShopcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6195681171129648724L;
+	private static final long serialVersionUID = 4449293678764418363L;
 
 	/**
 	 * 详细地址
@@ -83,7 +83,7 @@ public class AlipayMerchantStoreShopcodeCreateModel extends AlipayObject {
 	private String provinceCode;
 
 	/**
-	 * 门头照图片在支付宝存储的相对路径地址，由调用图片上传接口后生成并返回
+	 * 门头照图片上传后返回的文件地址，由调用图片上传接口后生成并返回
 	 */
 	@ApiField("shop_front_photo")
 	private String shopFrontPhoto;

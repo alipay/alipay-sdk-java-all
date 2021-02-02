@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2020-10-24 07:16:25
+ * @since 1.0, 2020-11-26 13:57:18
  */
 public class AlipayOpenSpImageUploadRequest implements AlipayUploadRequest<AlipayOpenSpImageUploadResponse> {
 
@@ -21,7 +21,7 @@ public class AlipayOpenSpImageUploadRequest implements AlipayUploadRequest<Alipa
 	private String apiVersion="1.0";
 
 	/** 
-	* 图片二进制字节流，最大为10M
+	* 图片二进制字节流，最小50K，最大为5M，支持png/bmp/gif/jpg/jpeg格式
 	 */
 	private FileItem imageContent;
 

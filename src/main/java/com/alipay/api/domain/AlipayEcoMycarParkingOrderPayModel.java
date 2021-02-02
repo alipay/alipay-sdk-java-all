@@ -7,11 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车缴费代扣接口API
  *
  * @author auto create
- * @since 1.0, 2020-09-21 09:12:16
+ * @since 1.0, 2021-01-18 17:45:44
  */
 public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5852425595433238129L;
+	private static final long serialVersionUID = 5688198245182197884L;
+
+	/**
+	 * 先离后付订单：true；
+普通先付后离订单：false
+	 */
+	@ApiField("after_pay_order")
+	private Boolean afterPayOrder;
 
 	/**
 	 * 代扣返佣的支付宝用户号。
@@ -19,6 +26,12 @@ public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 	 */
 	@ApiField("agent_id")
 	private String agentId;
+
+	/**
+	 * 计费时长(以分为单位)
+	 */
+	@ApiField("billing_duration")
+	private String billingDuration;
 
 	/**
 	 * 订单描述
@@ -39,6 +52,18 @@ public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 	private String carNumberColor;
 
 	/**
+	 * 停车时长（以分为单位）
+	 */
+	@ApiField("in_duration")
+	private String inDuration;
+
+	/**
+	 * 入场时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制
+	 */
+	@ApiField("in_time")
+	private String inTime;
+
+	/**
 	 * 车场服务商指定是否开启垫付功能（若需开启，须实现签约支付宝停车垫资协议）：
 true开启，
 false不开启(默认)
@@ -53,6 +78,12 @@ false不开启(默认)
 	private String outParkingId;
 
 	/**
+	 * 出场时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制
+	 */
+	@ApiField("out_time")
+	private String outTime;
+
+	/**
 	 * 支付宝合作商户网站唯一订单号
 	 */
 	@ApiField("out_trade_no")
@@ -63,6 +94,12 @@ false不开启(默认)
 	 */
 	@ApiField("parking_id")
 	private String parkingId;
+
+	/**
+	 * 版本号,最新版本为：3.0
+	 */
+	@ApiField("pay_version")
+	private String payVersion;
 
 	/**
 	 * 卖家支付宝用户号
@@ -97,11 +134,25 @@ false不开启(默认)
 	@ApiField("total_fee")
 	private String totalFee;
 
+	public Boolean getAfterPayOrder() {
+		return this.afterPayOrder;
+	}
+	public void setAfterPayOrder(Boolean afterPayOrder) {
+		this.afterPayOrder = afterPayOrder;
+	}
+
 	public String getAgentId() {
 		return this.agentId;
 	}
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
+	}
+
+	public String getBillingDuration() {
+		return this.billingDuration;
+	}
+	public void setBillingDuration(String billingDuration) {
+		this.billingDuration = billingDuration;
 	}
 
 	public String getBody() {
@@ -125,6 +176,20 @@ false不开启(默认)
 		this.carNumberColor = carNumberColor;
 	}
 
+	public String getInDuration() {
+		return this.inDuration;
+	}
+	public void setInDuration(String inDuration) {
+		this.inDuration = inDuration;
+	}
+
+	public String getInTime() {
+		return this.inTime;
+	}
+	public void setInTime(String inTime) {
+		this.inTime = inTime;
+	}
+
 	public Boolean getIsAdvance() {
 		return this.isAdvance;
 	}
@@ -139,6 +204,13 @@ false不开启(默认)
 		this.outParkingId = outParkingId;
 	}
 
+	public String getOutTime() {
+		return this.outTime;
+	}
+	public void setOutTime(String outTime) {
+		this.outTime = outTime;
+	}
+
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
@@ -151,6 +223,13 @@ false不开启(默认)
 	}
 	public void setParkingId(String parkingId) {
 		this.parkingId = parkingId;
+	}
+
+	public String getPayVersion() {
+		return this.payVersion;
+	}
+	public void setPayVersion(String payVersion) {
+		this.payVersion = payVersion;
 	}
 
 	public String getSellerId() {

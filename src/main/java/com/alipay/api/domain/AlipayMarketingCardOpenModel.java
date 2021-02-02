@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2636922337865116677L;
+	private static final long serialVersionUID = 6747552976758567557L;
 
 	/**
 	 * 外部卡信息(biz_card_no无需填写)
@@ -58,7 +58,7 @@ open_card_channel用于区分渠道类型，例如取值为"SHOP"（门店），
 	private String openCardChannelId;
 
 	/**
-	 * 外部商户流水号（商户需要确保唯一性控制，类似request_id唯一请求标识）
+	 * 外部商户流水号。由商户自定义，需保证商户系统中唯一。
 	 */
 	@ApiField("out_serial_no")
 	private String outSerialNo;

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新版花呗分期商家贴息活动创建接口
  *
  * @author auto create
- * @since 1.0, 2020-07-23 16:09:59
+ * @since 1.0, 2020-12-21 16:56:15
  */
 public class AlipayPcreditHuabeiMerchantActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7243654863924523564L;
+	private static final long serialVersionUID = 8358783583731689771L;
 
 	/**
 	 * 花呗分期商家贴息活动名称，长度不能超过30个汉字或字符
@@ -52,6 +52,12 @@ public class AlipayPcreditHuabeiMerchantActivityCreateModel extends AlipayObject
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 出资的资金类型，默认值=MONEY，商户积分=MERCHANT_POINT
+	 */
+	@ApiField("fund_type")
+	private String fundType;
 
 	/**
 	 * 花呗分期数集合
@@ -131,6 +137,13 @@ public class AlipayPcreditHuabeiMerchantActivityCreateModel extends AlipayObject
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getFundType() {
+		return this.fundType;
+	}
+	public void setFundType(String fundType) {
+		this.fundType = fundType;
 	}
 
 	public List<Long> getInstallNumList() {

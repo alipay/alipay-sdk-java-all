@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解除ISV门店与口碑门店的绑定关系
  *
  * @author auto create
- * @since 1.0, 2019-08-02 09:59:13
+ * @since 1.0, 2020-12-16 20:50:26
  */
 public class KoubeiServindustryReservationShopUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3827983192559813288L;
+	private static final long serialVersionUID = 5619286678384546413L;
 
 	/**
 	 * 口碑为第三方ISV分配的渠道标识，如K米的渠道为ISV_KMI

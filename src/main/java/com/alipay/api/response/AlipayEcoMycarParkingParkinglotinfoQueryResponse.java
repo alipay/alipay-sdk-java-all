@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.BusinessItem;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.parkinglotinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-02 11:09:58
+ * @since 1.0, 2021-01-28 11:10:17
  */
 public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7495362678919582295L;
+	private static final long serialVersionUID = 4881128577227842631L;
 
 	/** 
 	 * 地区编码
@@ -25,6 +28,13 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	 */
 	@ApiField("agent_id")
 	private String agentId;
+
+	/** 
+	 * 车场业务归属列表
+	 */
+	@ApiListField("business_isv")
+	@ApiField("business_item")
+	private List<BusinessItem> businessIsv;
 
 	/** 
 	 * 城市编码
@@ -67,6 +77,12 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	 */
 	@ApiField("parking_fee_description")
 	private String parkingFeeDescription;
+
+	/** 
+	 * 停车场价格明细图片
+	 */
+	@ApiField("parking_fee_description_img")
+	private String parkingFeeDescriptionImg;
 
 	/** 
 	 * 支付宝返回停车场id，系统唯一
@@ -148,6 +164,13 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 		return this.agentId;
 	}
 
+	public void setBusinessIsv(List<BusinessItem> businessIsv) {
+		this.businessIsv = businessIsv;
+	}
+	public List<BusinessItem> getBusinessIsv( ) {
+		return this.businessIsv;
+	}
+
 	public void setCityId(String cityId) {
 		this.cityId = cityId;
 	}
@@ -195,6 +218,13 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	}
 	public String getParkingFeeDescription( ) {
 		return this.parkingFeeDescription;
+	}
+
+	public void setParkingFeeDescriptionImg(String parkingFeeDescriptionImg) {
+		this.parkingFeeDescriptionImg = parkingFeeDescriptionImg;
+	}
+	public String getParkingFeeDescriptionImg( ) {
+		return this.parkingFeeDescriptionImg;
 	}
 
 	public void setParkingId(String parkingId) {

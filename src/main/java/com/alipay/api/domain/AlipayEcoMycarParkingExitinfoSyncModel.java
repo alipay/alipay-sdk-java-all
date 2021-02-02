@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆驶出上送接口
  *
  * @author auto create
- * @since 1.0, 2020-09-27 20:08:10
+ * @since 1.0, 2020-12-21 17:56:08
  */
 public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4241674987615482763L;
+	private static final long serialVersionUID = 8459811977354751448L;
 
 	/**
-	 * 车牌颜色，可选蓝-BLUE、绿-GREEN、黄-YELLOW、白-WHITE、黑-BLACK、黄绿色-LIMEGREEN
+	 * 车牌颜色，枚举支持：
+*BLUE：蓝。
+*GREEN：绿。
+*YELLOW：黄。
+*WHITE：白。
+*BLACK：黑。
+*LIMEGREEN：黄绿色。
 	 */
 	@ApiField("car_color")
 	private String carColor;
@@ -38,13 +44,13 @@ public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 	private String outTime;
 
 	/**
-	 * 支付宝停车场ID，系统唯一
+	 * 支付宝停车平台ID，由支付宝定义的该停车场标识，同一个ISV或商户范围内唯一。通过 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口获取。
 	 */
 	@ApiField("parking_id")
 	private String parkingId;
 
 	/**
-	 * 支付宝业务流水号，用于记录车辆从驶入到驶出的全流程
+	 * 支付宝业务流水号，用于记录车辆从驶入到驶出的全流程。通过 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.enterinfo.sync">alipay.eco.mycar.parking.enterinfo.sync</a>(车辆驶入接口)接口获取。
 	 */
 	@ApiField("serial_no")
 	private String serialNo;

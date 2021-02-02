@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.carlib.info.push request
  * 
  * @author auto create
- * @since 1.0, 2019-08-29 11:21:22
+ * @since 1.0, 2020-12-31 11:44:55
  */
 public class AlipayEcoMycarCarlibInfoPushRequest implements AlipayRequest<AlipayEcoMycarCarlibInfoPushResponse> {
 

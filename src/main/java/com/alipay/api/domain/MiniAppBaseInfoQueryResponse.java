@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序基本信息返回
  *
  * @author auto create
- * @since 1.0, 2020-04-23 15:55:27
+ * @since 1.0, 2020-12-30 22:19:08
  */
 public class MiniAppBaseInfoQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5536334843815236474L;
+	private static final long serialVersionUID = 3811639643314845654L;
+
+	/**
+	 * 应用别名，简称
+	 */
+	@ApiField("app_alias_name")
+	private String appAliasName;
 
 	/**
 	 * 小程序应用描述
@@ -92,6 +98,13 @@ public class MiniAppBaseInfoQueryResponse extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	public String getAppAliasName() {
+		return this.appAliasName;
+	}
+	public void setAppAliasName(String appAliasName) {
+		this.appAliasName = appAliasName;
+	}
 
 	public String getAppDesc() {
 		return this.appDesc;

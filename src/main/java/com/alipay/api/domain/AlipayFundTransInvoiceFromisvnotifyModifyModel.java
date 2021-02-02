@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 票据助手通过通知回查新增票据
  *
  * @author auto create
- * @since 1.0, 2020-08-14 17:01:20
+ * @since 1.0, 2020-12-16 11:58:03
  */
 public class AlipayFundTransInvoiceFromisvnotifyModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1269277643158762578L;
+	private static final long serialVersionUID = 6576926435198863391L;
 
 	/**
 	 * 所属地区，用于区分不同地区票据应用

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.miniapp.brand.upload request
  * 
  * @author auto create
- * @since 1.0, 2020-10-21 11:45:14
+ * @since 1.0, 2020-12-24 12:45:18
  */
 public class AlipayOpenMiniMiniappBrandUploadRequest implements AlipayUploadRequest<AlipayOpenMiniMiniappBrandUploadResponse> {
 
@@ -21,7 +21,7 @@ public class AlipayOpenMiniMiniappBrandUploadRequest implements AlipayUploadRequ
 	private String apiVersion="1.0";
 
 	/** 
-	* 图片元数据，图片大小不能超过5MB
+	* 图片元数据，图片大小不能超过5MB(当前只支持jpg, png, jpeg格式的本地图片)
 	 */
 	private FileItem fileContent;
 

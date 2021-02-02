@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修复结算金额amount的类型，原来Number类型不合理，导致商户无法通过sdk集成，需改成Price类型
  *
  * @author auto create
- * @since 1.0, 2019-04-02 14:43:35
+ * @since 1.0, 2020-12-29 14:51:24
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 8231853267464994672L;
+	private static final long serialVersionUID = 6218656119588225862L;
 
 	/**
 	 * 分账的金额，单位为元

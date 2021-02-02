@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸支付图片上传接口
  *
  * @author auto create
- * @since 1.0, 2017-03-04 12:55:28
+ * @since 1.0, 2020-12-18 15:27:29
  */
 public class AlipaySecurityProdFacepayUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6575743324699811844L;
+	private static final long serialVersionUID = 2752365525841318148L;
 
 	/**
 	 * 用户输入的邀请码

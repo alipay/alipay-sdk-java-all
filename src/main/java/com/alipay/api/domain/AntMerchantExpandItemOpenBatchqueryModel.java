@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查询商品接口
  *
  * @author auto create
- * @since 1.0, 2019-09-17 17:21:20
+ * @since 1.0, 2021-01-15 11:29:24
  */
 public class AntMerchantExpandItemOpenBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8276113965925195626L;
+	private static final long serialVersionUID = 4345888913115317771L;
 
 	/**
-	 * 商品ID列表
+	 * 商品ID列表，单次查询上限为 20。
 	 */
 	@ApiListField("item_id_list")
 	@ApiField("string")

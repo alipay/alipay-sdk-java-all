@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 修改停车场信息
  *
  * @author auto create
- * @since 1.0, 2020-09-28 14:35:15
+ * @since 1.0, 2021-01-29 11:14:31
  */
 public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8147258975942914321L;
+	private static final long serialVersionUID = 5474445859249229567L;
 
 	/**
 	 * 服务商ID（2088开头的16位纯数字），由服务商提供给ISV
 	 */
 	@ApiField("agent_id")
 	private String agentId;
+
+	/**
+	 * 车场业务归属列表
+	 */
+	@ApiListField("business_isv")
+	@ApiField("business_item")
+	private List<BusinessItem> businessIsv;
 
 	/**
 	 * 该参数废弃
@@ -68,6 +78,20 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String equipmentName;
 
 	/**
+	 * 是否支持电子发票。枚举支持： 
+*0：表示不支持。 
+*1：表示支持。
+	 */
+	@ApiField("is_support_invoice")
+	private String isSupportInvoice;
+
+	/**
+	 * ISV电话，传入original_isv_pid、original_isv_appid时，此处为服务商电话
+	 */
+	@ApiField("isv_mobile")
+	private String isvMobile;
+
+	/**
 	 * 该参数废弃
 	 */
 	@ApiField("latitude")
@@ -84,6 +108,30 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	 */
 	@ApiField("mchnt_id")
 	private String mchntId;
+
+	/**
+	 * ISV的APPID,服务商调用必传，由ISV提供给服务商
+	 */
+	@ApiField("original_isv_appid")
+	private String originalIsvAppid;
+
+	/**
+	 * ISV电话，此值与isv_mobile组合使用
+	 */
+	@ApiField("original_isv_mobile")
+	private String originalIsvMobile;
+
+	/**
+	 * ISV的名称，服务商调用必传，由ISV提供给服务商
+	 */
+	@ApiField("original_isv_name")
+	private String originalIsvName;
+
+	/**
+	 * ISV的PID，服务商调用必传,由ISV提供给服务商
+	 */
+	@ApiField("original_isv_pid")
+	private String originalIsvPid;
 
 	/**
 	 * 该参数废弃
@@ -108,6 +156,12 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	 */
 	@ApiField("parking_fee_description")
 	private String parkingFeeDescription;
+
+	/**
+	 * 商户在停车平台露出的停车价格图片；注意：该图片为PNG格式内容为BASE64的字符串，大小不要超过1MB
+	 */
+	@ApiField("parking_fee_description_img")
+	private String parkingFeeDescriptionImg;
 
 	/**
 	 * 支付宝返回停车场id，系统唯一
@@ -140,7 +194,8 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String parkingNumber;
 
 	/**
-	 * 高德地图唯一标识
+	 * 高德地图唯一标识。新增高德兴趣点流程 <a href="https://opensupport.alipay.com/support/helpcenter/311/201602557288?ant_source=zsearch">点此查看详情</a> 。
+获取高德兴趣点流程 <a href="https://opensupport.alipay.com/support/helpcenter/311/201602557287?ant_source=zsearch">点此查看详情</a>。
 	 */
 	@ApiField("parking_poiid")
 	private String parkingPoiid;
@@ -158,7 +213,11 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String parkingType;
 
 	/**
-	 * 支付方式（1为支付宝在线缴费，2为支付宝代扣缴费，3当面付)，如支持多种方式以','进行间隔
+	 * 支付方式。枚举支持：
+*1：表示支付宝在线缴费。 
+*2：表示支付宝代扣缴费。 
+*3：表示当面付。 
+说明：如支持多种方式以 ',' 进行分隔。
 	 */
 	@ApiField("pay_type")
 	private String payType;
@@ -176,6 +235,21 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String shopingmallId;
 
 	/**
+	 * 停车场车位数
+	 */
+	@ApiField("sum_space")
+	private String sumSpace;
+
+	/**
+	 * 是否支持先离后付。枚举支持： 
+*Y：支持。 
+*N：不支持。 
+说明：默认为空不支持，此参数适用于签约信用代扣的商户。
+	 */
+	@ApiField("support_after_pay")
+	private String supportAfterPay;
+
+	/**
 	 * 用户支付未离场的超时时间(以分钟为单位)
 	 */
 	@ApiField("time_out")
@@ -186,6 +260,13 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	}
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
+	}
+
+	public List<BusinessItem> getBusinessIsv() {
+		return this.businessIsv;
+	}
+	public void setBusinessIsv(List<BusinessItem> businessIsv) {
+		this.businessIsv = businessIsv;
 	}
 
 	public String getCityId() {
@@ -244,6 +325,20 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 		this.equipmentName = equipmentName;
 	}
 
+	public String getIsSupportInvoice() {
+		return this.isSupportInvoice;
+	}
+	public void setIsSupportInvoice(String isSupportInvoice) {
+		this.isSupportInvoice = isSupportInvoice;
+	}
+
+	public String getIsvMobile() {
+		return this.isvMobile;
+	}
+	public void setIsvMobile(String isvMobile) {
+		this.isvMobile = isvMobile;
+	}
+
 	public String getLatitude() {
 		return this.latitude;
 	}
@@ -263,6 +358,34 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	}
 	public void setMchntId(String mchntId) {
 		this.mchntId = mchntId;
+	}
+
+	public String getOriginalIsvAppid() {
+		return this.originalIsvAppid;
+	}
+	public void setOriginalIsvAppid(String originalIsvAppid) {
+		this.originalIsvAppid = originalIsvAppid;
+	}
+
+	public String getOriginalIsvMobile() {
+		return this.originalIsvMobile;
+	}
+	public void setOriginalIsvMobile(String originalIsvMobile) {
+		this.originalIsvMobile = originalIsvMobile;
+	}
+
+	public String getOriginalIsvName() {
+		return this.originalIsvName;
+	}
+	public void setOriginalIsvName(String originalIsvName) {
+		this.originalIsvName = originalIsvName;
+	}
+
+	public String getOriginalIsvPid() {
+		return this.originalIsvPid;
+	}
+	public void setOriginalIsvPid(String originalIsvPid) {
+		this.originalIsvPid = originalIsvPid;
 	}
 
 	public String getOutParkingId() {
@@ -291,6 +414,13 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	}
 	public void setParkingFeeDescription(String parkingFeeDescription) {
 		this.parkingFeeDescription = parkingFeeDescription;
+	}
+
+	public String getParkingFeeDescriptionImg() {
+		return this.parkingFeeDescriptionImg;
+	}
+	public void setParkingFeeDescriptionImg(String parkingFeeDescriptionImg) {
+		this.parkingFeeDescriptionImg = parkingFeeDescriptionImg;
 	}
 
 	public String getParkingId() {
@@ -368,6 +498,20 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	}
 	public void setShopingmallId(String shopingmallId) {
 		this.shopingmallId = shopingmallId;
+	}
+
+	public String getSumSpace() {
+		return this.sumSpace;
+	}
+	public void setSumSpace(String sumSpace) {
+		this.sumSpace = sumSpace;
+	}
+
+	public String getSupportAfterPay() {
+		return this.supportAfterPay;
+	}
+	public void setSupportAfterPay(String supportAfterPay) {
+		this.supportAfterPay = supportAfterPay;
 	}
 
 	public String getTimeOut() {

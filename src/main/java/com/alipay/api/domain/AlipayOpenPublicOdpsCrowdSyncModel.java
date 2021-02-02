@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 生活号人群odps同步
  *
  * @author auto create
- * @since 1.0, 2020-06-01 10:06:01
+ * @since 1.0, 2021-01-25 16:30:02
  */
 public class AlipayOpenPublicOdpsCrowdSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3232199361874379577L;
+	private static final long serialVersionUID = 2878774767171755551L;
 
 	/**
 	 * 人群来源渠道

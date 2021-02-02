@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 哥伦布问卷疲劳度同步客户端接口
  *
  * @author auto create
- * @since 1.0, 2020-09-04 13:56:28
+ * @since 1.0, 2020-12-16 11:59:50
  */
 public class AlipaySocialQuestionnareFatigueSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3774245353437494691L;
+	private static final long serialVersionUID = 7684971412167725662L;
 
 	/**
 	 * 异步问卷投递时间

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建商品接口
  *
  * @author auto create
- * @since 1.0, 2019-09-16 16:13:25
+ * @since 1.0, 2021-01-15 11:28:31
  */
 public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1464797971768126158L;
+	private static final long serialVersionUID = 4518226482756212827L;
 
 	/**
 	 * 商品描述
@@ -23,7 +23,8 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 	private String description;
 
 	/**
-	 * 商品扩展信息（具体KEY请参见产品文档）
+	 * 商品扩展信息（具体KEY请参见产品文档）。
+小程序订单中心场景参见 https://opendocs.alipay.com/mini/00u9ga
 	 */
 	@ApiListField("ext_info")
 	@ApiField("item_ext_info")
@@ -50,7 +51,8 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 	private List<ItemPropertyInfo> propertyList;
 
 	/**
-	 * 场景码（小程序商品：APP_ORDER）
+	 * 业务场景码。
+小程序订单中心场景固定为 APP_ORDER。
 	 */
 	@ApiField("scene")
 	private String scene;
@@ -63,28 +65,30 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 	private List<SkuCreateInfo> skuList;
 
 	/**
-	 * 商品所属标准类目ID（参考：https://opendocs.alipay.com/mini/011lxt）
+	 * 商品所属标准类目ID，当 type 为STANDARD_GOODS（标品）时必填。  请填入 https://opendocs.alipay.com/mini/011lxt  小程序商品类目表中三级类目ID。
 	 */
 	@ApiField("standard_category_id")
 	private String standardCategoryId;
 
 	/**
 	 * 商品归属主体ID
-例：商品归属主体类型为店铺，则商品归属主体ID为店铺ID；归属主体为小程序，则归属主体ID为小程序ID
+例：商品归属主体类型target_type为店铺，则商品归属主体ID为店铺ID（支付宝侧店铺ID）；归属主体类型target_type为小程序，则归属主体ID为小程序ID
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
-	 * 商品归属主体类型:
-5（店铺）
-8（小程序）
+	 * 商品归属主体类型。枚举如下：
+5：店铺。
+8：小程序。
 	 */
 	@ApiField("target_type")
 	private String targetType;
 
 	/**
-	 * 商品类型：STANDARD_GOODS（标品）、NON_STANDARD_GOODS（非标品）
+	 * 商品类型。枚举支持：
+STANDARD_GOODS：标品，一般是具有明确、标准规格、型号、参数的商品，如：手机、数码产品、大多数的家电 。
+NON_STANDARD_GOODS：非标品等，，则是在这些方面没有统一的行业标准和参数规格的商品，如：服装、鞋袜等。
 	 */
 	@ApiField("type")
 	private String type;

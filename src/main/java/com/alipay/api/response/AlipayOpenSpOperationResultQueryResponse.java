@@ -8,26 +8,31 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.operation.result.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-10-21 10:22:28
+ * @since 1.0, 2021-01-27 18:05:19
  */
 public class AlipayOpenSpOperationResultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5476493158449133367L;
+	private static final long serialVersionUID = 7484297585847276929L;
 
 	/** 
-	 * 被代运营者为间连商户时有值，此时返回绑定的支付宝账号。
+	 * 商户支付宝pid。仅间连场景，且存在绑定关系时返回值。
 	 */
 	@ApiField("bind_user_id")
 	private String bindUserId;
 
 	/** 
-	 * 轮询结果。SUCCESS代表成功;PROCESS处理中
+	 * 代运营操作结果。
+SUCCESS：代表成功。
+PROCESS：待商家确认中。
+NO_PERMISSION：表示当前商家支付宝账号无权限操作。需要提醒商家切换成发起授权时指定的支付宝账号。
+NONE：表示不存在代运营绑定或授权关系。
+NONE_ACCOUNT：间连商家推荐支付宝账号列表为空。
 	 */
 	@ApiField("handle_status")
 	private String handleStatus;
 
 	/** 
-	 * 被代运营的商户号。
+	 * 支付宝商户号。间连场景为商户smid，直连场景为商户支付宝pid
 	 */
 	@ApiField("merchant_no")
 	private String merchantNo;

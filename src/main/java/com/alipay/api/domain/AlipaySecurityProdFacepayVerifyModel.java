@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸支付验证接口
  *
  * @author auto create
- * @since 1.0, 2017-03-04 14:23:39
+ * @since 1.0, 2020-12-18 15:27:19
  */
 public class AlipaySecurityProdFacepayVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3742117474564163894L;
+	private static final long serialVersionUID = 7742923364121634488L;
 
 	/**
 	 * 用户输入的扫脸付邀请码

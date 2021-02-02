@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.promo.ticket.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-29 11:18:32
+ * @since 1.0, 2020-12-31 11:34:43
  */
 public class AlipayEcoMycarPromoTicketSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2682924467487762691L;
+	private static final long serialVersionUID = 8581993262564788879L;
 
 	
 

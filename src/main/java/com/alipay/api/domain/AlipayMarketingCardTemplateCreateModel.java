@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡模板创建
  *
  * @author auto create
- * @since 1.0, 2020-10-23 15:19:45
+ * @since 1.0, 2020-12-15 16:36:55
  */
 public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4843366921713414513L;
+	private static final long serialVersionUID = 1892833631521193848L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -54,7 +54,7 @@ public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 	private String cardSpecTag;
 
 	/**
-	 * 卡类型为固定枚举类型，可选类型如下：
+	 * 卡类型。可选类型如下：
 OUT_MEMBER_CARD：外部权益卡
 	 */
 	@ApiField("card_type")
@@ -97,7 +97,7 @@ OUT_MEMBER_CARD：外部权益卡
 	private List<PubChannelDTO> pubChannels;
 
 	/**
-	 * 请求ID，由开发者生成并保证唯一性
+	 * 请求ID，商家自定义且并保证唯一性。
 	 */
 	@ApiField("request_id")
 	private String requestId;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2020-05-12 16:12:44
+ * @since 1.0, 2020-12-30 10:38:20
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8633816452131482954L;
+	private static final long serialVersionUID = 2755491235967869863L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -70,7 +70,9 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private List<GoodsDetail> goodsDetail;
 
 	/**
-	 * 商品主类型 :0-虚拟类商品,1-实物类商品
+	 * 商品主类型，取值如下：
+0：虚拟类商品；
+1：实物类商品。
 	 */
 	@ApiField("goods_type")
 	private String goodsType;
@@ -88,7 +90,7 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private String merchantOrderNo;
 
 	/**
-	 * 商户网站唯一订单号
+	 * 商户网站订单号，由商家自定义，需保证商家系统中唯一。仅支持数字、字母、下划线。
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
@@ -157,7 +159,8 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private SubMerchant subMerchant;
 
 	/**
-	 * 商品的标题/交易标题/订单标题/订单关键字等。
+	 * 商品标题/交易标题/订单标题/订单关键字等。 
+注意：不可使用特殊字符，如 /，=，& 等。
 	 */
 	@ApiField("subject")
 	private String subject;
@@ -175,7 +178,7 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private String timeoutExpress;
 
 	/**
-	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
+	 * 订单总金额，单位为人民币（元），取值范围为 0.01~100000000.00，精确到小数点后两位。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

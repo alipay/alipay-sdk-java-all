@@ -14,16 +14,16 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeRoyaltyRelationUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8886998431538616218L;
+	private static final long serialVersionUID = 7216247362563757481L;
 
 	/**
-	 * 外部请求号。32个字符以内，可包含字母、数字、下划线。需保证在商户端不重复。
+	 * 外部请求号，由商家自定义。32个字符以内，仅可包含字母、数字、下划线。需保证在商户端不重复。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
 	/**
-	 * 分账接收方列表，单次传入最多20个
+	 * 分账接收方列表，单次传入最多 20 个信息。
 	 */
 	@ApiListField("receiver_list")
 	@ApiField("royalty_entity")

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 金融信息平台研究数据查询
  *
  * @author auto create
- * @since 1.0, 2020-02-24 10:43:31
+ * @since 1.0, 2020-12-16 00:26:13
  */
 public class AntfortuneQuotationResearchdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5769861765141916172L;
+	private static final long serialVersionUID = 5735673281743541137L;
 
 	/**
 	 * 需要获取数据的结束时间
@@ -65,6 +65,12 @@ public class AntfortuneQuotationResearchdataQueryModel extends AlipayObject {
 	 */
 	@ApiField("table")
 	private String table;
+
+	/**
+	 * 目标系统，BK_FINDATA代表数金金融数据库，null代表行情自己
+	 */
+	@ApiField("target_system")
+	private String targetSystem;
 
 	public String getEndDate() {
 		return this.endDate;
@@ -120,6 +126,13 @@ public class AntfortuneQuotationResearchdataQueryModel extends AlipayObject {
 	}
 	public void setTable(String table) {
 		this.table = table;
+	}
+
+	public String getTargetSystem() {
+		return this.targetSystem;
+	}
+	public void setTargetSystem(String targetSystem) {
+		this.targetSystem = targetSystem;
 	}
 
 }

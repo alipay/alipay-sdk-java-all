@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.invoice.status.modify response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-14 15:53:55
+ * @since 1.0, 2020-12-16 11:58:16
  */
 public class AlipayFundTransInvoiceStatusModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4258572356118755747L;
+	private static final long serialVersionUID = 8723995981447177472L;
 
 	
 

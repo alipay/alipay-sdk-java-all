@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicMatchuserLabelDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2348153972592336532L;
+	private static final long serialVersionUID = 6258199219429718382L;
 
 	/**
 	 * 标签id

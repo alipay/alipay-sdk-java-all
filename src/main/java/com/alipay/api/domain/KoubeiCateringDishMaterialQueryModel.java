@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品库加料查询接口
  *
  * @author auto create
- * @since 1.0, 2020-09-08 17:20:25
+ * @since 1.0, 2020-11-23 11:24:15
  */
 public class KoubeiCateringDishMaterialQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8897889651636534172L;
+	private static final long serialVersionUID = 1788562344624122314L;
 
 	/**
 	 * 口碑内部加料id，若不为空，则为单条查询，page_size和page_no失效；如果为空，则为批量查询，page_size和page_no必传，否则为默认值

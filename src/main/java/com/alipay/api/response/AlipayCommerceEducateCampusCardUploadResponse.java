@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.campus.card.upload response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-16 21:26:46
+ * @since 1.0, 2021-01-11 11:30:49
  */
 public class AlipayCommerceEducateCampusCardUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4561242612372729423L;
+	private static final long serialVersionUID = 8694425424197152978L;
 
 	
 

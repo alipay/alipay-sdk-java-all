@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.facepay.upload response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-12-18 15:27:29
  */
 public class AlipaySecurityProdFacepayUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2489638531326293724L;
+	private static final long serialVersionUID = 8242619823924617195L;
 
 	/** 
 	 * 人脸支付token。即商户在本接口提交的用户人脸图片对应的token，通过此token串联后续调用

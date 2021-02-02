@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘系商户申请订购花呗合约
  *
  * @author auto create
- * @since 1.0, 2020-07-01 09:43:55
+ * @since 1.0, 2021-01-19 17:00:22
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6348997349477866683L;
+	private static final long serialVersionUID = 4833322814132581615L;
 
 	/**
 	 * 产品开始生效的时间
 	 */
 	@ApiField("active_datetime")
 	private String activeDatetime;
+
+	/**
+	 * 活动ID
+	 */
+	@ApiField("activity_id")
+	private String activityId;
 
 	/**
 	 * 合约订购业务场景
@@ -72,6 +78,13 @@ public class AlipayPcreditHuabeiPcreditmerchantProductorderApplyModel extends Al
 	}
 	public void setActiveDatetime(String activeDatetime) {
 		this.activeDatetime = activeDatetime;
+	}
+
+	public String getActivityId() {
+		return this.activityId;
+	}
+	public void setActivityId(String activityId) {
+		this.activityId = activityId;
 	}
 
 	public String getBizFrom() {

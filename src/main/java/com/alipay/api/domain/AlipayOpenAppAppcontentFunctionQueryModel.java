@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应用内容服务查询
  *
  * @author auto create
- * @since 1.0, 2020-07-15 13:06:22
+ * @since 1.0, 2020-12-15 19:55:24
  */
 public class AlipayOpenAppAppcontentFunctionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4768982615147423244L;
+	private static final long serialVersionUID = 6694676172882784326L;
 
 	/**
-	 * 服务编码
+	 * 服务编码，通过 <a href="https://opendocs.alipay.com/apis/011agl">alipay.open.app.appcontent.function.create</a>(小程序服务创建)接口创建服务后获取。
 	 */
 	@ApiField("service_code")
 	private String serviceCode;

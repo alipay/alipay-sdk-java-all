@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 应用内容服务创建
  *
  * @author auto create
- * @since 1.0, 2020-07-15 13:06:04
+ * @since 1.0, 2020-12-15 20:02:45
  */
 public class AlipayOpenAppAppcontentFunctionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3355199311747998159L;
+	private static final long serialVersionUID = 3496873688665444765L;
 
 	/**
 	 * 服务区域编码；默认值为1，表示全国范围；编码参考高德地图JS API相关下载中的行政区编码与城市编码表：https://lbs.amap.com/api/javascript-api/download/
@@ -22,6 +22,13 @@ public class AlipayOpenAppAppcontentFunctionCreateModel extends AlipayObject {
 	@ApiListField("area_codes")
 	@ApiField("string")
 	private List<String> areaCodes;
+
+	/**
+	 * 类目属性列表
+	 */
+	@ApiListField("category_attributes")
+	@ApiField("app_attribute")
+	private List<AppAttribute> categoryAttributes;
 
 	/**
 	 * 类目
@@ -37,14 +44,14 @@ public class AlipayOpenAppAppcontentFunctionCreateModel extends AlipayObject {
 	private String icon;
 
 	/**
-	 * 关键字列表
+	 * 关键字列表；关键词数量最多5个，每个关键词长度在5个字符以内
 	 */
 	@ApiListField("key_words")
 	@ApiField("string")
 	private List<String> keyWords;
 
 	/**
-	 * 服务名称
+	 * 服务名称；长度范围在2到10个字符以内
 	 */
 	@ApiField("service_name")
 	private String serviceName;
@@ -69,7 +76,7 @@ public class AlipayOpenAppAppcontentFunctionCreateModel extends AlipayObject {
 	private List<ServiceUrl> serviceUrls;
 
 	/**
-	 * 短描述
+	 * 短描述；长度范围在5到16个字符以内
 	 */
 	@ApiField("short_desc")
 	private String shortDesc;
@@ -79,6 +86,13 @@ public class AlipayOpenAppAppcontentFunctionCreateModel extends AlipayObject {
 	}
 	public void setAreaCodes(List<String> areaCodes) {
 		this.areaCodes = areaCodes;
+	}
+
+	public List<AppAttribute> getCategoryAttributes() {
+		return this.categoryAttributes;
+	}
+	public void setCategoryAttributes(List<AppAttribute> categoryAttributes) {
+		this.categoryAttributes = categoryAttributes;
 	}
 
 	public List<String> getCategoryIds() {

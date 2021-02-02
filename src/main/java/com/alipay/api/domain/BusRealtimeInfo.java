@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 实时公交线路信息
  *
  * @author auto create
- * @since 1.0, 2020-09-23 16:30:26
+ * @since 1.0, 2020-11-04 10:31:45
  */
 public class BusRealtimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7721574231579339552L;
+	private static final long serialVersionUID = 5857358812459862118L;
 
 	/**
 	 * 线路id，线路的唯一标志。
@@ -48,6 +48,25 @@ public class BusRealtimeInfo extends AlipayObject {
 	 */
 	@ApiField("station_name")
 	private String stationName;
+
+	/**
+	 * 线路运营子状态。取值如下：
+0：正常，有实时数据
+-1：等待发车
+-2：实时信息维护中
+-3：已停运
+-4：尚未发车
+-5：尚未开通实时公交
+-8：不在运营时间
+	 */
+	@ApiField("sub_status")
+	private String subStatus;
+
+	/**
+	 * 线路运营子状态文案。例如：不在运营时间
+	 */
+	@ApiField("sub_text")
+	private String subText;
 
 	public String getLineId() {
 		return this.lineId;
@@ -89,6 +108,20 @@ public class BusRealtimeInfo extends AlipayObject {
 	}
 	public void setStationName(String stationName) {
 		this.stationName = stationName;
+	}
+
+	public String getSubStatus() {
+		return this.subStatus;
+	}
+	public void setSubStatus(String subStatus) {
+		this.subStatus = subStatus;
+	}
+
+	public String getSubText() {
+		return this.subText;
+	}
+	public void setSubText(String subText) {
+		this.subText = subText;
 	}
 
 }

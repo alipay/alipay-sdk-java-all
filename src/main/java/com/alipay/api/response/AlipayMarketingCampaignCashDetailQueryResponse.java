@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.cash.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-26 20:52:27
+ * @since 1.0, 2020-12-22 16:30:17
  */
 public class AlipayMarketingCampaignCashDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4163623869795758797L;
+	private static final long serialVersionUID = 4274889715298392437L;
 
 	/** 
 	 * 活动状态，CREATED: 已创建未打款
@@ -21,7 +21,7 @@ PAID:已打款
 READY:活动已开始
 PAUSE:活动已暂停
 CLOSED:活动已结束
-SETTLE:活动已清算
+SETTLED:活动已清算
 	 */
 	@ApiField("camp_status")
 	private String campStatus;

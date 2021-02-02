@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.individual.business.certify request
  * 
  * @author auto create
- * @since 1.0, 2020-07-07 22:35:15
+ * @since 1.0, 2020-11-23 11:10:13
  */
 public class AlipayOpenMiniIndividualBusinessCertifyRequest implements AlipayRequest<AlipayOpenMiniIndividualBusinessCertifyResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayOpenMiniIndividualBusinessCertifyRequest implements AlipayReq
 	private String apiVersion="1.0";
 
 	/** 
-	* 营业执照
+	* 营业执照注册号即营业执照的编号。
 	 */
 	private String licenseNo;
 

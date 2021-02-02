@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开发者账号绑定关系解绑
  *
  * @author auto create
- * @since 1.0, 2020-05-26 17:40:24
+ * @since 1.0, 2020-12-14 14:26:36
  */
 public class AlipayOpenAccountAliyunUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2184556673432693231L;
+	private static final long serialVersionUID = 4459766662672164881L;
 
 	/**
 	 * 与阿里云账号绑定的第三方平台的账号ID

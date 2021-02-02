@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoDoctemplateSettingurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3257725676244263725L;
+	private static final long serialVersionUID = 8412223311739998341L;
 
 	/**
-	 * 模板id
+	 * 合同模板id。通过<a href ="https://opendocs.alipay.com/apis/api_50/alipay.eco.doc.template.create">创建合同模版</a>（alipay.eco.doc.template.create）接口获取。
 	 */
 	@ApiField("template_id")
 	private String templateId;

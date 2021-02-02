@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量请求结算
  *
  * @author auto create
- * @since 1.0, 2020-09-02 15:06:21
+ * @since 1.0, 2020-12-02 14:46:24
  */
 public class AlipayTradeBatchSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4156268885288639567L;
+	private static final long serialVersionUID = 4749235781437277493L;
 
 	/**
 	 * 收单产品码，商家和支付宝签约的产品码
@@ -40,6 +40,12 @@ public class AlipayTradeBatchSettleModel extends AlipayObject {
 	@ApiListField("settle_clauses")
 	@ApiField("settle_clause")
 	private List<SettleClause> settleClauses;
+
+	/**
+	 * 结算方式，目前仅支持提前放款结算quickSettlement，提前放款结算需要商户开通快收服务，不填则为普通结算方式
+	 */
+	@ApiField("settle_type")
+	private String settleType;
 
 	public String getBizProduct() {
 		return this.bizProduct;
@@ -67,6 +73,13 @@ public class AlipayTradeBatchSettleModel extends AlipayObject {
 	}
 	public void setSettleClauses(List<SettleClause> settleClauses) {
 		this.settleClauses = settleClauses;
+	}
+
+	public String getSettleType() {
+		return this.settleType;
+	}
+	public void setSettleType(String settleType) {
+		this.settleType = settleType;
 	}
 
 }

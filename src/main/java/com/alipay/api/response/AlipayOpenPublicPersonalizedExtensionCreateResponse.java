@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.personalized.extension.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-10 18:10:55
+ * @since 1.0, 2021-01-28 14:31:35
  */
 public class AlipayOpenPublicPersonalizedExtensionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3146835214331353677L;
+	private static final long serialVersionUID = 3858737115152469188L;
 
 	/** 
 	 * 扩展区套id，创建个性化扩展区成功后，支付宝会将该字段返回，后续扩展区上下线或者扩展区删除都会用到这个值。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发到账户明细复杂模型
  *
  * @author auto create
- * @since 1.0, 2019-12-23 17:44:37
+ * @since 1.0, 2020-12-29 09:50:23
  */
 public class AccDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6234912775885393241L;
+	private static final long serialVersionUID = 5161965239969466212L;
 
 	/**
 	 * 支付宝订单号

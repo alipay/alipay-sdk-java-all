@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.antlegalchain.multiparty.modify request
  * 
  * @author auto create
- * @since 1.0, 2020-09-22 15:35:37
+ * @since 1.0, 2020-11-04 15:22:02
  */
 public class AlipayBossProdAntlegalchainMultipartyModifyRequest implements AlipayRequest<AlipayBossProdAntlegalchainMultipartyModifyResponse> {
 

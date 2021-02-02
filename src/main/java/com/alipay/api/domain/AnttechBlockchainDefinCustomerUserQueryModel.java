@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询客户信息
  *
  * @author auto create
- * @since 1.0, 2020-09-23 17:02:46
+ * @since 1.0, 2020-12-15 19:31:34
  */
 public class AnttechBlockchainDefinCustomerUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8817173965511723336L;
+	private static final long serialVersionUID = 4353349411472623481L;
 
 	/**
 	 * DCHAIN("DCHAIN","供应链信用流转平台"), ABS("ABS","ABS资产流转平台"), BAMBOO("BAMBOO","BAMBOO项目"), LOGISTICS_FIN("LOGISTICS_FIN", "物流金融"), TRUSPLE("TRUSPLE", "跨境贸易金融平台");
@@ -24,6 +24,12 @@ public class AnttechBlockchainDefinCustomerUserQueryModel extends AlipayObject {
 	 */
 	@ApiField("role_type")
 	private String roleType;
+
+	/**
+	 * 操作员邮箱
+	 */
+	@ApiField("user_email")
+	private String userEmail;
 
 	/**
 	 * user id
@@ -49,6 +55,13 @@ public class AnttechBlockchainDefinCustomerUserQueryModel extends AlipayObject {
 	}
 	public void setRoleType(String roleType) {
 		this.roleType = roleType;
+	}
+
+	public String getUserEmail() {
+		return this.userEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
 	}
 
 	public String getUserId() {

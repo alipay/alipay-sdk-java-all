@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品简化接口sku信息
  *
  * @author auto create
- * @since 1.0, 2020-09-07 16:13:29
+ * @since 1.0, 2020-12-10 14:08:02
  */
 public class KbdishSkuSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5554226478684951782L;
+	private static final long serialVersionUID = 2467385648938273349L;
 
 	/**
 	 * 加料组列表

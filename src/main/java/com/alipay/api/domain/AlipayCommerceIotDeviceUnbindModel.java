@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT设备-商户-店铺解绑
  *
  * @author auto create
- * @since 1.0, 2020-10-20 20:51:25
+ * @since 1.0, 2020-12-01 10:32:28
  */
 public class AlipayCommerceIotDeviceUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4416366857193118159L;
+	private static final long serialVersionUID = 4316891565189919712L;
 
 	/**
 	 * 应用类型，目前只支持小程序MINI_APP
@@ -80,7 +80,7 @@ public class AlipayCommerceIotDeviceUnbindModel extends AlipayObject {
 	private String merchantIdType;
 
 	/**
-	 * 小程序ID，当app_type为MINI_APP时，设置该值
+	 * 小程序ID，当app_type为MINI_APP时，设置该值； 如意LITE设备，请填写"RUYI_LITE"
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;

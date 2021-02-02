@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3375597856446518291L;
+	private static final long serialVersionUID = 1281439353463272985L;
 
 	/**
 	 * 当前门店区域不支持实施
@@ -20,7 +20,7 @@ public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 	private String cancelReason;
 
 	/**
-	 * 订购服务订单ID
+	 * 订购服务订单ID，通过支付宝发送的 https://opendocs.alipay.com/apis/api_3/alipay.open.servicemarket.order.notify(服务市场商户确认订购通知) 通知获取。
 	 */
 	@ApiField("commodity_order_id")
 	private String commodityOrderId;
@@ -32,7 +32,9 @@ public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 	private String miniAppId;
 
 	/**
-	 * 商家订购服务选择的某一门店的ID，如果该订单为口碑服务市场发布的服务所产生的订单，则此字段必填
+	 * 商家订购服务选择的某一门店的ID。若该订单： 
+为支付宝服务市场发布的服务所产生订单则该参数可选。 
+为口碑服务市场发布的服务所产生的订单，则此字段必填。口碑服务市场参见 http://fuwu.koubei.com/commodity/v2/merchandise/index.htm。
 	 */
 	@ApiField("shop_id")
 	private String shopId;

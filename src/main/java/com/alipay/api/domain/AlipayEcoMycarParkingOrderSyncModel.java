@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单同步接口
  *
  * @author auto create
- * @since 1.0, 2020-07-29 11:21:12
+ * @since 1.0, 2020-12-21 17:53:20
  */
 public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8244655467661619621L;
+	private static final long serialVersionUID = 6259733876341653447L;
 
 	/**
 	 * 车牌
@@ -44,7 +44,9 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	private String orderNo;
 
 	/**
-	 * 设备商订单状态，0：成功，1：失败
+	 * 设备商订单状态，枚举支持：
+* 0：成功。
+* 1：失败。
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
@@ -62,19 +64,19 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	private String outOrderNo;
 
 	/**
-	 * ISV停车场ID，由ISV提供，同一个isv或商户范围内唯一
+	 * ISV停车场ID，由ISV定义的停车场标识，同一个isv或商户范围内唯一。需与 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口传入值一致。
 	 */
 	@ApiField("out_parking_id")
 	private String outParkingId;
 
 	/**
-	 * 支付宝停车场id，系统唯一
+	 * 支付宝停车平台ID，由支付宝定义的该停车场标识，同一个isv或商户范围内唯一。通过 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口获取。
 	 */
 	@ApiField("parking_id")
 	private String parkingId;
 
 	/**
-	 * 停车场名称，由ISV定义，尽量与高德地图上的一致
+	 * 停车场名称，需与<a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口传入值一致。
 	 */
 	@ApiField("parking_name")
 	private String parkingName;
@@ -92,13 +94,16 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	private String payTime;
 
 	/**
-	 * 付款方式，1：支付宝在线缴费 ，2：支付宝代扣缴费
+	 * 付款方式，枚举支持：
+*1：支付宝在线缴费 。
+*2：支付宝代扣缴费。
 	 */
 	@ApiField("pay_type")
 	private String payType;
 
 	/**
-	 * 停车缴费支付宝用户的ID，请ISV保证用户ID的正确性，以免导致用户在停车平台查询不到相关的订单信息
+	 * 停车缴费用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+注意：ISV需保证用户 id的正确性，以免导致用户在停车平台查询不到相关的订单信息。
 	 */
 	@ApiField("user_id")
 	private String userId;

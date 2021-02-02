@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.dialogonline.answer.push response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-29 11:21:17
+ * @since 1.0, 2020-11-17 10:09:09
  */
 public class AlipayEcoMycarDialogonlineAnswerPushResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1529564158616592437L;
+	private static final long serialVersionUID = 1438761566439476697L;
 
 	/** 
 	 * 技师ID，支付宝对技师的唯一标识

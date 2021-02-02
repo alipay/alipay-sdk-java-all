@@ -11,28 +11,31 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppMessageTopicUnsubscribeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7831695815274431272L;
+	private static final long serialVersionUID = 3843483236447395863L;
 
 	/**
-	 * 授权令牌
+	 * 授权令牌。
 	 */
 	@ApiField("auth_token")
 	private String authToken;
 
 	/**
-	 * 授权类型，例如app_auth表示三方应用授权
+	 * 授权类型，支持：
+app_auth：三方应用授权。
+user_auth-用户授权。
+例如 app_auth 表示三方应用授权。
 	 */
 	@ApiField("auth_type")
 	private String authType;
 
 	/**
-	 * 消息标签，用于消息子类型过滤。使用前请确认消息topic是否支持
+	 * 消息标签，用于消息子类型过滤。使用前请确认消息topic是否支持。若topic传入的消息接口中未定义 tag 则不支持传递。
 	 */
 	@ApiField("tag")
 	private String tag;
 
 	/**
-	 * 消息主题名称
+	 * 消息主题名称，即消息接口英文名。
 	 */
 	@ApiField("topic")
 	private String topic;

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.executionplan.modify response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 18:52:02
+ * @since 1.0, 2020-12-28 16:37:03
  */
 public class AlipayUserAgreementExecutionplanModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4539825723876299757L;
+	private static final long serialVersionUID = 4437271728284948823L;
 
 	/** 
 	 * 周期性扣款产品，授权免密支付协议号
@@ -22,7 +22,8 @@ public class AlipayUserAgreementExecutionplanModifyResponse extends AlipayRespon
 	private String agreementNo;
 
 	/** 
-	 * 商户下一次扣款时间
+	 * 商户下一次扣款时间，格式 "yyyy-MM-dd"。
+例如：用户在1月1日开通了连续包月，使用了10天又另行购买了“季度包”，如果此时商户希望“季度包”立即优先生效，在季度包结束后能继续使用连续包月，那么原定的周期就被延后了。此时可以通过本接口将预计扣款时间推后“季度包”的时长。
 	 */
 	@ApiField("deduct_time")
 	private Date deductTime;

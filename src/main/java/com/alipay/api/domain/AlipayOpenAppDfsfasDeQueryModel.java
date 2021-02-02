@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppDfsfasDeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4227896427249994696L;
+	private static final long serialVersionUID = 8185218949928893183L;
 
 	/**
 	 * 1

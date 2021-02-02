@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 复杂参数
  *
  * @author auto create
- * @since 1.0, 2020-03-30 10:00:46
+ * @since 1.0, 2020-12-25 17:56:25
  */
 public class CampaignExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4722752988192355384L;
+	private static final long serialVersionUID = 1835546195795261639L;
 
 	/**
 	 * 用户不活跃间隔时间，当用户集点满足阙值且满足不活跃间隔时间后，发送召回通知
@@ -20,7 +20,13 @@ public class CampaignExtInfo extends AlipayObject {
 	private String intervalTime;
 
 	/**
-	 * 集点阈值，即当用户集点进度达到阙值后才会根据间隔时间下发召回唤醒
+	 * 针对每个用户而言的月召回次数上限，且必须不大于平台侧该值全局配置
+	 */
+	@ApiField("month_limit")
+	private String monthLimit;
+
+	/**
+	 * 集点阈值，即当用户集点进度达到阈值后才会根据间隔时间下发召回唤醒通知，且必须不小于平台侧该值全局配置
 	 */
 	@ApiField("threshold")
 	private String threshold;
@@ -30,6 +36,13 @@ public class CampaignExtInfo extends AlipayObject {
 	}
 	public void setIntervalTime(String intervalTime) {
 		this.intervalTime = intervalTime;
+	}
+
+	public String getMonthLimit() {
+		return this.monthLimit;
+	}
+	public void setMonthLimit(String monthLimit) {
+		this.monthLimit = monthLimit;
 	}
 
 	public String getThreshold() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑物流单取消
  *
  * @author auto create
- * @since 1.0, 2020-08-18 16:15:53
+ * @since 1.0, 2020-11-24 15:52:18
  */
 public class KoubeiTradeKbdeliveryDeliveryCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6467618289232476511L;
+	private static final long serialVersionUID = 2797168224429699265L;
 
 	/**
 	 * 口碑物流单，单号；

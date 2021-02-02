@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.order.instantdelivery.cancel request
  * 
  * @author auto create
- * @since 1.0, 2020-09-27 22:01:18
+ * @since 1.0, 2020-11-20 11:39:37
  */
 public class AlipayCommerceLogisticsOrderInstantdeliveryCancelRequest implements AlipayRequest<AlipayCommerceLogisticsOrderInstantdeliveryCancelResponse> {
 

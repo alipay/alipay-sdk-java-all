@@ -10,21 +10,22 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2020-07-28 16:10:14
+ * @since 1.0, 2020-12-31 13:39:33
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6794566624725668133L;
+	private static final long serialVersionUID = 7181732596958515185L;
 
 	/**
-	 * 门店结算卡信息。本业务当前只允许传入一张结算卡
+	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。
+说明：本参数仅直付通业务使用，其余业务无需关注。
 	 */
 	@ApiListField("biz_cards")
 	@ApiField("settle_card_info")
 	private List<SettleCardInfo> bizCards;
 
 	/**
-	 * 品牌id
+	 * 品牌id，非加油站等特殊门店无需关注。
 	 */
 	@ApiField("brand_id")
 	private String brandId;
@@ -43,31 +44,33 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private List<ShopBusinessTime> businessTime;
 
 	/**
-	 * 营业执照图片url。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。当店铺类目为特殊行业时必填
+	 * 营业执照图片 id 即通过 https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload 接口上传图片后得到的 image_id。
 	 */
 	@ApiField("cert_image")
 	private String certImage;
 
 	/**
-	 * 营业执照名称，填写值为营业执照或统一社会信用代码证上的名称。当店铺类目是特殊类目是要求必填
+	 * 营业执照名称，填写值为营业执照或统一社会信用代码证上的名称。
+注意：若传入 cert_no，则本参数必填。
 	 */
 	@ApiField("cert_name")
 	private String certName;
 
 	/**
-	 * 证件号码。请填写店铺营业执照号。当店铺类目是特殊类目是要求必填
+	 * 证件号码。请填写店铺营业执照号。
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 证件类型，取值范围：201：营业执照；2011:多证合一(统一社会信用代码)。当店铺类目是特殊类目是要求必填
+	 * 证件类型，取值范围：201：营业执照；2011:多证合一(统一社会信用代码)。
+注意：若传入 cert_no，则本参数必填。
 	 */
 	@ApiField("cert_type")
 	private String certType;
 
 	/**
-	 * 联系人信息。如果填写，其中名称必填，手机、固话、email三选一必填
+	 * 联系人信息。如果填写，其中名称必填，手机、固话、email 三选一必填。
 	 */
 	@ApiListField("contact_infos")
 	@ApiField("contact_info")
@@ -93,25 +96,25 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private List<ShopExtInfo> extInfos;
 
 	/**
-	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid
+	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。特别说明：IoT设备三绑定场景统一填写商户pid
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
 
 	/**
-	 * 法人身份证号。当店铺类目是特殊类目是要求必填
+	 * 法人身份证号。
 	 */
 	@ApiField("legal_cert_no")
 	private String legalCertNo;
 
 	/**
-	 * 法人名称。当店铺类目是特殊类目是要求必填
+	 * 法人名称。
 	 */
 	@ApiField("legal_name")
 	private String legalName;
 
 	/**
-	 * 营业执照授权函。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。当店铺类目是特殊行业时必填
+	 * 营业执照授权函。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("license_auth_letter_image")
 	private String licenseAuthLetterImage;
@@ -123,33 +126,33 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 门头照，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。当店铺类目是特殊类目是要求必填
+	 * 门头照 id，即通过 https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload 接口上传图片后得到的 image_id。
 	 */
 	@ApiListField("out_door_images")
 	@ApiField("string")
 	private List<String> outDoorImages;
 
 	/**
-	 * 行业特殊资质。当店铺类目是特殊类目是要求必填
+	 * 行业特殊资质。
 	 */
 	@ApiListField("qualifications")
 	@ApiField("industry_qualification_info")
 	private List<IndustryQualificationInfo> qualifications;
 
 	/**
-	 * 场景
+	 * 场景，非加油站等特殊门店无需关注。
 	 */
 	@ApiField("scene")
 	private String scene;
 
 	/**
-	 * 结算支付宝账号的登录号
+	 * 结算支付宝账号的登录号，需传入小程序归属账号。若需增加收款账号，可在创建门店后登录 b.alipay.com 账户中心 > 经营信息 > 门店管理 中选择对应门店选择 更多 > 编辑 > 新增收款账号。 
 	 */
 	@ApiField("settle_alipay_logon_id")
 	private String settleAlipayLogonId;
 
 	/**
-	 * 店铺类目，取值参见文件https://mif-pub.alipayobjects.com/ShopCategory.xlsx 中的三级门店类目
+	 * 新版门店类目标准二级类目code。类目标准及与原类目映射关系参见表格 https://ur.alipay.com/2qv1f9
 	 */
 	@ApiField("shop_category")
 	private String shopCategory;

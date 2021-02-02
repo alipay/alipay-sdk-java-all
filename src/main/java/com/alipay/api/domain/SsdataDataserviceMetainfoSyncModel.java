@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上数元数据信息同步服务
  *
  * @author auto create
- * @since 1.0, 2019-04-09 15:45:45
+ * @since 1.0, 2020-12-31 13:50:44
  */
 public class SsdataDataserviceMetainfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5768433779244579122L;
+	private static final long serialVersionUID = 2563631835438226468L;
 
 	/**
 	 * 元数据信息

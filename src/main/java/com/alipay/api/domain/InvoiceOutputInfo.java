@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子发票输出模型
  *
  * @author auto create
- * @since 1.0, 2020-08-07 15:12:28
+ * @since 1.0, 2020-11-02 10:47:35
  */
 public class InvoiceOutputInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4344663412622628725L;
+	private static final long serialVersionUID = 2123123592658535962L;
+
+	/**
+	 * 发票防伪码，验证码
+	 */
+	@ApiField("check_code")
+	private String checkCode;
 
 	/**
 	 * 票面上复核人信息。
@@ -142,6 +148,13 @@ public class InvoiceOutputInfo extends AlipayObject {
 	 */
 	@ApiField("tax_amount")
 	private String taxAmount;
+
+	public String getCheckCode() {
+		return this.checkCode;
+	}
+	public void setCheckCode(String checkCode) {
+		this.checkCode = checkCode;
+	}
 
 	public String getChecker() {
 		return this.checker;

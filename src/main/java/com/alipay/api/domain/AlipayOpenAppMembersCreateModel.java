@@ -11,16 +11,18 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppMembersCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6885395848141878787L;
+	private static final long serialVersionUID = 5785113984371142219L;
 
 	/**
-	 * 支付宝登录账号ID
+	 * 支付宝登录账号。
 	 */
 	@ApiField("logon_id")
 	private String logonId;
 
 	/**
-	 * 成员的角色类型，DEVELOPER-开发者，EXPERIENCER-体验者
+	 * 为成员添加的角色类型，支持：
+DEVELOPER-开发者；
+EXPERIENCER-体验者。
 	 */
 	@ApiField("role")
 	private String role;

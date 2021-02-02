@@ -11,11 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 宠物档案对象，包括基本信息
  *
  * @author auto create
- * @since 1.0, 2020-09-14 20:04:28
+ * @since 1.0, 2020-12-28 15:20:31
  */
 public class PetProfile extends AlipayObject {
 
-	private static final long serialVersionUID = 6781394471424566869L;
+	private static final long serialVersionUID = 6876527368112956761L;
+
+	/**
+	 * 算法识别的宠物种类code编码
+	 */
+	@ApiField("algorithm_pet_species_code")
+	private String algorithmPetSpeciesCode;
+
+	/**
+	 * 宠物毛色
+	 */
+	@ApiField("coat_color")
+	private String coatColor;
 
 	/**
 	 * 宠物资料是否齐全 0 不齐全 1 齐全
@@ -113,6 +125,20 @@ public class PetProfile extends AlipayObject {
 	 */
 	@ApiField("policy_status")
 	private Long policyStatus;
+
+	public String getAlgorithmPetSpeciesCode() {
+		return this.algorithmPetSpeciesCode;
+	}
+	public void setAlgorithmPetSpeciesCode(String algorithmPetSpeciesCode) {
+		this.algorithmPetSpeciesCode = algorithmPetSpeciesCode;
+	}
+
+	public String getCoatColor() {
+		return this.coatColor;
+	}
+	public void setCoatColor(String coatColor) {
+		this.coatColor = coatColor;
+	}
 
 	public Long getDocComplete() {
 		return this.docComplete;

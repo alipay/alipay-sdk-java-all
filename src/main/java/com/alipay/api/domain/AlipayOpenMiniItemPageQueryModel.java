@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniItemPageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2856845589848335977L;
+	private static final long serialVersionUID = 6466648725724649724L;
 
 	/**
-	 * 商家侧商品id列表
+	 * 商家侧商品 id 列表，最多可传入 20 个。导入商品信息时传入的商户自定义商品 id（item_id），传入后仅分页查询出对应商品信息。
 	 */
 	@ApiListField("item_id_list")
 	@ApiField("string")
@@ -30,7 +30,7 @@ public class AlipayOpenMiniItemPageQueryModel extends AlipayObject {
 	private String operation;
 
 	/**
-	 * 当前页码，默认1
+	 * 查询起始页码，默认为第一页 1。
 	 */
 	@ApiField("page_num")
 	private Long pageNum;

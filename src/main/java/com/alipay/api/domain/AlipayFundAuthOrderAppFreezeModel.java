@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上资金授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2020-05-15 15:18:37
+ * @since 1.0, 2021-01-08 21:42:06
  */
 public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2421343321792916435L;
+	private static final long serialVersionUID = 4359843894591637654L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -27,7 +27,7 @@ public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 	private String enablePayChannels;
 
 	/**
-	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 1.授权业务对应的类目，key为category，value由支付宝分配，比如充电桩业务传 "CHARGE_PILE_CAR"若使用信用预授权，则该值必传； 2. 外部商户的门店编号，key为outStoreCode，可选； 3. 外部商户的门店简称，key为outStoreAlias，可选; 4. 外部商户的门店简称，key为outStoreAlias，可选; 5.间联模式必须传入二级商户所属机构id，key为requestOrgId；6.信用服务Id，key为serviceId，信用场景下必传，具体值需要联系芝麻客服。
+	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 1.授权业务对应的类目，key为category，value由支付宝分配，比如充电桩业务传 "CHARGE_PILE_CAR"若使用信用预授权，则该值必传； 2. 外部商户的门店编号，key为outStoreCode，可选； 3. 外部商户的门店简称，key为outStoreAlias，可选; 4. 外部商户的门店简称，key为outStoreAlias，可选; 5.间联模式必须传入二级商户所属机构id，key为requestOrgId；6.信用服务Id，key为serviceId，信用场景下必传，具体值需要联系芝麻客服https://cshall.alipay.com/enterprise/index.htm?sourceId=pc_zhima（右上角“有问题点我”进入咨询）。
 	 */
 	@ApiField("extra_param")
 	private String extraParam;
@@ -47,13 +47,13 @@ identity_hash和alipay_user_id都是可选的，如果两个都传，则会先�
 	private String orderTitle;
 
 	/**
-	 * 商户授权资金订单号 ,不能包含除中文、英文、数字以外的字符，创建后不能修改，需要保证在商户端不重复。
+	 * 商户授权资金订单号，商家自定义需保证在商户端不重复。不能包含除中文、英文、数字以外的字符，创建后不能修改。
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
 
 	/**
-	 * 商户本次资金操作的请求流水号，用于标示请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。
+	 * 商户本次资金操作的请求流水号，用于标示请求流水的唯一性，商家自定义需保证在商户端不重复。不能包含除中文、英文、数字以外的字符。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -79,7 +79,7 @@ identity_hash和alipay_user_id都是可选的，如果两个都传，则会先�
 	private String payeeUserId;
 
 	/**
-	 * 销售产品码，新接入线上预授权的业务，支付宝预授权产品取值PRE_AUTH_ONLINE，境外预授权产品取值OVERSEAS_INSTORE_AUTH 。
+	 * 销售产品码。新接入线上预授权的业务，支付宝预授权产品固定为 PRE_AUTH_ONLINE；境外预授权产品固定为 OVERSEAS_INSTORE_AUTH 。
 	 */
 	@ApiField("product_code")
 	private String productCode;

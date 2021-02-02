@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子小票商品详情
  *
  * @author auto create
- * @since 1.0, 2020-06-01 21:12:42
+ * @since 1.0, 2020-11-20 17:01:57
  */
 public class ReceiptSku extends AlipayObject {
 
-	private static final long serialVersionUID = 5814811549788325215L;
+	private static final long serialVersionUID = 4431955168629328651L;
+
+	/**
+	 * 商品条形码
+	 */
+	@ApiField("barcode")
+	private String barcode;
 
 	/**
 	 * 商品数量
@@ -30,6 +36,13 @@ public class ReceiptSku extends AlipayObject {
 	 */
 	@ApiField("price")
 	private Long price;
+
+	public String getBarcode() {
+		return this.barcode;
+	}
+	public void setBarcode(String barcode) {
+		this.barcode = barcode;
+	}
 
 	public Long getCount() {
 		return this.count;

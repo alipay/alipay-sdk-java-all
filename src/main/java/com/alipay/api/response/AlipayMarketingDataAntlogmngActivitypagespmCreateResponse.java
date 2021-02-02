@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.data.antlogmng.activitypagespm.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-22 14:30:54
+ * @since 1.0, 2021-01-06 16:28:25
  */
 public class AlipayMarketingDataAntlogmngActivitypagespmCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5374566432362565562L;
+	private static final long serialVersionUID = 8364229131729171793L;
 
 	/** 
 	 * 申请是否成功

@@ -11,16 +11,18 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniTemplateUsageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5699396771872482264L;
+	private static final long serialVersionUID = 7847484228257143634L;
 
 	/**
-	 * 小程序投放的端参数，例如投放到支付宝钱包是支付宝端。该参数可选，默认支付宝端 com.alipay.alipaywallet:支付宝端
+	 * 小程序投放的端参数，例如投放到支付宝钱包是支付宝端。默认支付宝端。支持：
+com.alipay.alipaywallet:支付宝端；
+com.alipay.iot.xpaas：支付宝IoT端。
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;
 
 	/**
-	 * 查询的页数，默认第一页
+	 * 查询的页数，起始为 1（第一页） 。默认第一页。
 	 */
 	@ApiField("page_num")
 	private Long pageNum;
@@ -32,7 +34,7 @@ public class AlipayOpenMiniTemplateUsageQueryModel extends AlipayObject {
 	private Long pageSize;
 
 	/**
-	 * 模板id
+	 * 小程序模板APPID
 	 */
 	@ApiField("template_id")
 	private String templateId;

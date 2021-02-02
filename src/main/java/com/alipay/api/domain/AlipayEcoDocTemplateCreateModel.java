@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoDocTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2181328978213298554L;
+	private static final long serialVersionUID = 7375626598198133882L;
 
 	/**
-	 * 模版文件的md5值
+	 * 模版文件的md5值。示例代码参见 <a href="https://opendocs.alipay.com/mini/00arl2#%E5%88%9B%E5%BB%BA%E5%90%88%E5%90%8C%E6%A8%A1%E6%9D%BF">创建合同模板</a>
 	 */
 	@ApiField("content_md_5")
 	private String contentMd5;
 
 	/**
-	 * 目标文件的MIME类型
+	 * 目标文件的MIME类型。示例代码参见 <a href="https://opendocs.alipay.com/mini/00arl2#%E5%88%9B%E5%BB%BA%E5%90%88%E5%90%8C%E6%A8%A1%E6%9D%BF">创建合同模板</a>
 	 */
 	@ApiField("content_type")
 	private String contentType;
@@ -32,7 +32,7 @@ public class AlipayEcoDocTemplateCreateModel extends AlipayObject {
 	private String convertToPdf;
 
 	/**
-	 * 文件名称（必须带上文件扩展名如:.pdf,.doc,.docx，不然会导致后续发起流程校验异常）
+	 * 文件名称，必须带上文件扩展名如 .pdf、.doc、.docx，否则会导致后续发起流程校验异常。
 	 */
 	@ApiField("file_name")
 	private String fileName;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.waybill.istddetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-27 22:00:38
+ * @since 1.0, 2020-11-20 11:39:47
  */
 public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4487247334348627476L;
+	private static final long serialVersionUID = 2667146997962363428L;
 
 	/** 
 	 * 预计还剩多久送达 单位：秒
@@ -49,18 +49,6 @@ public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends Alipa
 	 */
 	@ApiField("status")
 	private String status;
-
-	/** 
-	 * 即时配送公司返回的错误码
-	 */
-	@ApiField("third_error_code")
-	private String thirdErrorCode;
-
-	/** 
-	 * 即时配送公司返回的错误描述
-	 */
-	@ApiField("third_error_msg")
-	private String thirdErrorMsg;
 
 	public void setReachDuration(Long reachDuration) {
 		this.reachDuration = reachDuration;
@@ -102,20 +90,6 @@ public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends Alipa
 	}
 	public String getStatus( ) {
 		return this.status;
-	}
-
-	public void setThirdErrorCode(String thirdErrorCode) {
-		this.thirdErrorCode = thirdErrorCode;
-	}
-	public String getThirdErrorCode( ) {
-		return this.thirdErrorCode;
-	}
-
-	public void setThirdErrorMsg(String thirdErrorMsg) {
-		this.thirdErrorMsg = thirdErrorMsg;
-	}
-	public String getThirdErrorMsg( ) {
-		return this.thirdErrorMsg;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4118889425431212779L;
+	private static final long serialVersionUID = 2294279449893553544L;
 
 	/**
 	 * 开户产品码。如果查询托管子户余额，必传且必须传入与开户时传入的值一致。
@@ -32,7 +32,7 @@ public class AlipayFundAccountQueryModel extends AlipayObject {
 	private String accountType;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 支付宝会员 id。
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;

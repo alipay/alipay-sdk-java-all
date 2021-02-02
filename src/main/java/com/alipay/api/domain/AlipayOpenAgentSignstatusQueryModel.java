@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * isv查询商户某个产品的签约状态
  *
  * @author auto create
- * @since 1.0, 2020-06-28 17:39:52
+ * @since 1.0, 2020-11-30 17:34:59
  */
 public class AlipayOpenAgentSignstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7553844681287438337L;
+	private static final long serialVersionUID = 3445184395812426571L;
 
 	/**
 	 * isv要查询签约状态的商户账号，是支付宝账号pid（2088开头）
@@ -23,7 +23,8 @@ public class AlipayOpenAgentSignstatusQueryModel extends AlipayObject {
 	private String pid;
 
 	/**
-	 * isv要查询商户签约状态的产品码，产品码是支付宝内部对产品的唯一标识
+	 * isv要查询商户签约状态的产品码，产品码是支付宝内部对产品的唯一标识。目前支持查询产品及产品码详情参见 https://opendocs.alipay.com/isv/01cv77#%E8%83%BD%E5%8A%9B%E4%BA%A7%E5%93%81%E7%A0%81 。
+
 	 */
 	@ApiListField("product_codes")
 	@ApiField("string")

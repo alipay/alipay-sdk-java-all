@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IOT机具信息查询接口
  *
  * @author auto create
- * @since 1.0, 2019-09-16 16:56:37
+ * @since 1.0, 2021-01-04 14:27:39
  */
 public class AlipayCommerceIotMdeviceprodDeviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3362466493569523227L;
+	private static final long serialVersionUID = 4354642653671996988L;
 
 	/**
 	 * 真实设备sn

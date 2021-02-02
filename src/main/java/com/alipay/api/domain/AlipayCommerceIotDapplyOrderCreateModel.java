@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁iot进件申请单创建接口
  *
  * @author auto create
- * @since 1.0, 2020-05-29 10:23:01
+ * @since 1.0, 2020-11-25 20:52:28
  */
 public class AlipayCommerceIotDapplyOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1674364741214413447L;
+	private static final long serialVersionUID = 7873764594293212119L;
 
 	/**
 	 * 申请人联系电话
@@ -70,6 +70,12 @@ public class AlipayCommerceIotDapplyOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 物料商品ID
+	 */
+	@ApiField("item_mall_id")
+	private String itemMallId;
 
 	/**
 	 * 备注
@@ -180,6 +186,13 @@ public class AlipayCommerceIotDapplyOrderCreateModel extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getItemMallId() {
+		return this.itemMallId;
+	}
+	public void setItemMallId(String itemMallId) {
+		this.itemMallId = itemMallId;
 	}
 
 	public String getMemo() {

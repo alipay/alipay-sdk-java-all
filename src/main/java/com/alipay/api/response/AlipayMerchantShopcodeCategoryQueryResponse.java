@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.shopcode.category.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-10-22 12:00:13
+ * @since 1.0, 2020-12-11 14:19:46
  */
 public class AlipayMerchantShopcodeCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1437722613217571349L;
+	private static final long serialVersionUID = 1253876949345231885L;
 
 	/** 
 	 * 门店码一级类目列表

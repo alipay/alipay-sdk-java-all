@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品库新菜品同步接口
  *
  * @author auto create
- * @since 1.0, 2020-09-08 17:20:28
+ * @since 1.0, 2021-01-04 15:44:29
  */
 public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6586924541322296947L;
+	private static final long serialVersionUID = 6665195794745726282L;
+
+	/**
+	 * 菜品活动信息，属于isv外部活动信息
+	 */
+	@ApiField("activity_info")
+	private KbdishBaseActivityInfo activityInfo;
 
 	/**
 	 * 类目的名称，需要保证pid+分类名称唯一
@@ -27,6 +33,19 @@ public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 	 */
 	@ApiField("catetory_sort")
 	private String catetorySort;
+
+	/**
+	 * 菜品背景图片(非C端菜谱中的商品主图)，如combo加购页的顶层背景图，主图、附图、背景图尺寸不一
+	 */
+	@ApiField("dish_background_img")
+	private String dishBackgroundImg;
+
+	/**
+	 * 多图菜品的附图列表
+	 */
+	@ApiListField("dish_detail_img_list")
+	@ApiField("string")
+	private List<String> dishDetailImgList;
 
 	/**
 	 * 图片id
@@ -61,6 +80,12 @@ public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 	private String name;
 
 	/**
+	 * 菜品是否不参与整单优惠，true(不参与)，false(参与)，不传默认为false
+	 */
+	@ApiField("non_whole_order_discount")
+	private String nonWholeOrderDiscount;
+
+	/**
 	 * 外部菜品id
 	 */
 	@ApiField("out_dish_id")
@@ -72,6 +97,12 @@ public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 	 */
 	@ApiField("out_shop_id")
 	private String outShopId;
+
+	/**
+	 * 时间规则
+	 */
+	@ApiField("period")
+	private KbdishPeriodExtendInfo period;
 
 	/**
 	 * 属性列表
@@ -124,10 +155,23 @@ public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 	private String typeBig;
 
 	/**
+	 * 菜品子类型，在type_small基础上拓展出来的第三级，如packages/choosen/combo，表示combo类型可选套餐，不传则默认为非combo菜品
+	 */
+	@ApiField("type_sub")
+	private String typeSub;
+
+	/**
 	 * 单位
 	 */
 	@ApiField("unit")
 	private String unit;
+
+	public KbdishBaseActivityInfo getActivityInfo() {
+		return this.activityInfo;
+	}
+	public void setActivityInfo(KbdishBaseActivityInfo activityInfo) {
+		this.activityInfo = activityInfo;
+	}
 
 	public String getCatetoryName() {
 		return this.catetoryName;
@@ -141,6 +185,20 @@ public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 	}
 	public void setCatetorySort(String catetorySort) {
 		this.catetorySort = catetorySort;
+	}
+
+	public String getDishBackgroundImg() {
+		return this.dishBackgroundImg;
+	}
+	public void setDishBackgroundImg(String dishBackgroundImg) {
+		this.dishBackgroundImg = dishBackgroundImg;
+	}
+
+	public List<String> getDishDetailImgList() {
+		return this.dishDetailImgList;
+	}
+	public void setDishDetailImgList(List<String> dishDetailImgList) {
+		this.dishDetailImgList = dishDetailImgList;
 	}
 
 	public String getDmgImg() {
@@ -178,6 +236,13 @@ public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 		this.name = name;
 	}
 
+	public String getNonWholeOrderDiscount() {
+		return this.nonWholeOrderDiscount;
+	}
+	public void setNonWholeOrderDiscount(String nonWholeOrderDiscount) {
+		this.nonWholeOrderDiscount = nonWholeOrderDiscount;
+	}
+
 	public String getOutDishId() {
 		return this.outDishId;
 	}
@@ -190,6 +255,13 @@ public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 	}
 	public void setOutShopId(String outShopId) {
 		this.outShopId = outShopId;
+	}
+
+	public KbdishPeriodExtendInfo getPeriod() {
+		return this.period;
+	}
+	public void setPeriod(KbdishPeriodExtendInfo period) {
+		this.period = period;
 	}
 
 	public List<KbdishPropertySimplifyInfo> getPropertyList() {
@@ -246,6 +318,13 @@ public class KoubeiCateringDishCreatedishSyncModel extends AlipayObject {
 	}
 	public void setTypeBig(String typeBig) {
 		this.typeBig = typeBig;
+	}
+
+	public String getTypeSub() {
+		return this.typeSub;
+	}
+	public void setTypeSub(String typeSub) {
+		this.typeSub = typeSub;
 	}
 
 	public String getUnit() {

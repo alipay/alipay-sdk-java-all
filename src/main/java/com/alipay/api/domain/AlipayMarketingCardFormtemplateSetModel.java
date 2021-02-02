@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开卡组件表单配置
  *
  * @author auto create
- * @since 1.0, 2020-10-23 15:19:05
+ * @since 1.0, 2020-12-15 16:36:35
  */
 public class AlipayMarketingCardFormtemplateSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7326429145953219317L;
+	private static final long serialVersionUID = 7856463135683381743L;
 
 	/**
-	 * 会员卡开卡时的表单字段配置信息，可定义多个通用表单字段，最大不超过20个。
+	 * 会员卡开卡时的表单字段配置信息，即用户开卡时需填写内容。可定义多个通用表单字段，最大不超过20个。
 	 */
 	@ApiField("fields")
 	private OpenFormFieldDO fields;
 
 	/**
-	 * 会员卡模板id。使用会员卡模板创建接口(alipay.marketing.card.template.create)返回的结果
+	 * 会员卡模板id。调用alipay.marketing.card.template.create（会员卡模板创建接口）创建模板后同步返回。
 	 */
 	@ApiField("template_id")
 	private String templateId;

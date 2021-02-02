@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * K12业务关闭接口
  *
  * @author auto create
- * @since 1.0, 2020-10-10 11:10:17
+ * @since 1.0, 2021-01-11 16:54:30
  */
 public class AlipayCommerceEducateSceneKidsCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3552925228236779214L;
+	private static final long serialVersionUID = 7282525425697549638L;
 
 	/**
 	 * 业务场景码，SCHOOL_PAYMENT：校园支付，STUDENT_CARD：电子学生卡
@@ -44,7 +44,7 @@ public class AlipayCommerceEducateSceneKidsCloseModel extends AlipayObject {
 	private String parentUid;
 
 	/**
-	 * 学校外标
+	 * 学校外标，即学校的统一信用编码
 	 */
 	@ApiField("school_stdcode")
 	private String schoolStdcode;

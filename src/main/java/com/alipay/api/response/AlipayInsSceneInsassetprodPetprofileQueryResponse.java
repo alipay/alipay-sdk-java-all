@@ -12,11 +12,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.insassetprod.petprofile.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-21 20:10:36
+ * @since 1.0, 2020-12-29 11:15:42
  */
 public class AlipayInsSceneInsassetprodPetprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8837866879978967588L;
+	private static final long serialVersionUID = 6366541344829271629L;
+
+	/** 
+	 * 算法识别的宠物种类code编码
+	 */
+	@ApiField("algorithm_pet_species_code")
+	private String algorithmPetSpeciesCode;
+
+	/** 
+	 * 宠物毛色
+	 */
+	@ApiField("coat_color")
+	private String coatColor;
 
 	/** 
 	 * 宠物资料是否齐全 0 不齐全 1 齐全
@@ -114,6 +126,20 @@ public class AlipayInsSceneInsassetprodPetprofileQueryResponse extends AlipayRes
 	 */
 	@ApiField("policy_status")
 	private Long policyStatus;
+
+	public void setAlgorithmPetSpeciesCode(String algorithmPetSpeciesCode) {
+		this.algorithmPetSpeciesCode = algorithmPetSpeciesCode;
+	}
+	public String getAlgorithmPetSpeciesCode( ) {
+		return this.algorithmPetSpeciesCode;
+	}
+
+	public void setCoatColor(String coatColor) {
+		this.coatColor = coatColor;
+	}
+	public String getCoatColor( ) {
+		return this.coatColor;
+	}
 
 	public void setDocComplete(Long docComplete) {
 		this.docComplete = docComplete;

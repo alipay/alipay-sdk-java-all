@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁店铺关闭
  *
  * @author auto create
- * @since 1.0, 2020-07-28 16:09:53
+ * @since 1.0, 2020-11-23 13:57:32
  */
 public class AntMerchantExpandShopCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8161172493858995367L;
+	private static final long serialVersionUID = 8599263548839934188L;
 
 	/**
-	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。关店接口中，如果没传shop_id，则本字段与store_id均必填
+	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id 则本参数与store_id均必填。
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
 
 	/**
-	 * 蚂蚁店铺id。填写本参数的话，store_id和ip_role_id可以不填
+	 * 支付宝侧蚂蚁店铺 id。传入本参数后可不填 store_id 及 ip_role_id。
 	 */
 	@ApiField("shop_id")
 	private String shopId;
 
 	/**
-	 * 门店编号，表示该门店在该商户角色id(直连pid，间连smid)下，由商户自己定义的外部门店编号。关店接口中，如果没传shop_id，则本字段与ip_role_id均必填
+	 * 商户侧门店编号。表示该门店在该商户角色id(直连pid，间连smid)下，由商户自己定义的外部门店编号。若未传入 shop_id  则本参数与与ip_role_id均必填。
 	 */
 	@ApiField("store_id")
 	private String storeId;

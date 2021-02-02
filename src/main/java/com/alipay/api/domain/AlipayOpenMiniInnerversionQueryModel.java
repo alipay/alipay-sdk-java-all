@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序版本查询
  *
  * @author auto create
- * @since 1.0, 2020-10-12 14:11:40
+ * @since 1.0, 2020-12-30 17:05:09
  */
 public class AlipayOpenMiniInnerversionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7158222441639435258L;
+	private static final long serialVersionUID = 3718844436919853363L;
 
 	/**
 	 * 淘宝
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;
+
+	/**
+	 * 多个端集合
+	 */
+	@ApiListField("bundle_ids")
+	@ApiField("string")
+	private List<String> bundleIds;
 
 	/**
 	 * 排序字段
@@ -77,6 +84,13 @@ public class AlipayOpenMiniInnerversionQueryModel extends AlipayObject {
 	}
 	public void setBundleId(String bundleId) {
 		this.bundleId = bundleId;
+	}
+
+	public List<String> getBundleIds() {
+		return this.bundleIds;
+	}
+	public void setBundleIds(List<String> bundleIds) {
+		this.bundleIds = bundleIds;
 	}
 
 	public String getFirstSortCol() {

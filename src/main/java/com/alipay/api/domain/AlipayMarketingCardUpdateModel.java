@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡更新
  *
  * @author auto create
- * @since 1.0, 2020-10-23 15:19:18
+ * @since 1.0, 2020-12-22 15:33:02
  */
 public class AlipayMarketingCardUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8616187121533233992L;
+	private static final long serialVersionUID = 1257925865148475387L;
 
 	/**
 	 * 需要修改的最新卡信息
@@ -39,7 +39,8 @@ public class AlipayMarketingCardUpdateModel extends AlipayObject {
 	private McardStylInfo mcardStyleInfo;
 
 	/**
-	 * 卡信息变更通知消息
+	 * 注意：此字段已废弃。
+卡信息变更通知消息
 1、在列表中定义的消息，才会发送给用户，消息格式一定。
 2、根据卡信息变更情况，一次可发送多个消息
 	 */
@@ -48,13 +49,14 @@ public class AlipayMarketingCardUpdateModel extends AlipayObject {
 	private List<McardNotifyMessage> notifyMessages;
 
 	/**
-	 * 标识业务发生的时间
+	 * 标识业务发生的时间。 时间格式：yyyy-MM-dd HH:mm:ss 。
+
 	 */
 	@ApiField("occur_time")
 	private Date occurTime;
 
 	/**
-	 * 支付宝业务卡号，即开卡接口返回结果中的card_info.biz_card_no
+	 * 支付宝业务卡号，即 alipay.marketing.card.open(会员卡开卡)返回结果中的card_info#biz_card_no。
 	 */
 	@ApiField("target_card_no")
 	private String targetCardNo;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT设备-商家-店铺绑定查询
  *
  * @author auto create
- * @since 1.0, 2020-09-30 15:46:28
+ * @since 1.0, 2020-12-01 10:32:28
  */
 public class AlipayCommerceIotDeviceBindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1398261283297773355L;
+	private static final long serialVersionUID = 2869159662954196812L;
 
 	/**
 	 * 应用类型，目前只支持小程序MINI_APP
@@ -44,7 +44,7 @@ public class AlipayCommerceIotDeviceBindQueryModel extends AlipayObject {
 	private String deviceSn;
 
 	/**
-	 * 小程序ID，当app_type为MINI_APP时，设置该值
+	 * 小程序ID，当app_type为MINI_APP时，设置该值； 如意LITE设备，请填写"RUYI_LITE"
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;

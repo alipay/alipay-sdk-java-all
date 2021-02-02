@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-14 11:48:54
+ * @since 1.0, 2021-01-29 10:00:15
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6291562412762793436L;
+	private static final long serialVersionUID = 8378697793131113247L;
 
 	/** 
 	 * 详细地址。
@@ -172,8 +172,9 @@ STATEORGAN(党政国家机关)
 	private String firmType;
 
 	/** 
-	 * 【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
-性别（F：女性；M：男性）。
+	 * 性别。枚举值如下：
+F：女性；
+M：男性。
 	 */
 	@ApiField("gender")
 	private String gender;

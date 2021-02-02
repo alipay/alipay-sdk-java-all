@@ -7,14 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序添加域白名单
  *
  * @author auto create
- * @since 1.0, 2018-12-25 14:16:22
+ * @since 1.0, 2020-12-10 11:31:04
  */
 public class AlipayOpenMiniSafedomainCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7312725825379914891L;
+	private static final long serialVersionUID = 7282322114322267383L;
 
 	/**
-	 * httpRequest域白名单
+	 * 服务器域名白名单。支付宝小程序在HTTP请求、上传文件等场景只能与域名白名单中的域名进行通讯 。
+新添加域白名单后需重新上传应用版本（模板模式下小程序模板及商家应用都需重新上传、实例化版本）才会生效。老版本应用继续使用老版本名单。
+每个应用最多可添加30个 URL。
 	 */
 	@ApiField("safe_domain")
 	private String safeDomain;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2020-04-18 10:39:17
+ * @since 1.0, 2021-01-07 21:55:42
  */
 public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5521131857156887673L;
+	private static final long serialVersionUID = 7269586373152526982L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -21,7 +21,13 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 支付授权码，25~30开头的长度为16~24位的数字，实际字符串长度以开发者获取的付款码长度为准
+	 * 支付授权码
+付款码场景下：
+      25~30开头的长度为16~24位的数字，实际字符串长度以开发者获取的付款码长度为准；
+刷脸场景下存在两种可能：
+      1）fp开头的35位字符串；
+      2）300-700字符的随机字符串；
+考虑到未来可能拓展更多格式，建议外围不必做规则拦截，由支付宝统一做有效性校验
 	 */
 	@ApiField("auth_code")
 	private String authCode;

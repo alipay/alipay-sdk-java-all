@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.servindustry.reservation.isvorder.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-05-07 14:45:52
+ * @since 1.0, 2020-12-16 20:50:47
  */
 public class KoubeiServindustryReservationIsvorderSyncRequest implements AlipayRequest<KoubeiServindustryReservationIsvorderSyncResponse> {
 

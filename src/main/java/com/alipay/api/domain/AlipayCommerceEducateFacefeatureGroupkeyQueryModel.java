@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询人脸库key接口
  *
  * @author auto create
- * @since 1.0, 2020-04-13 14:51:06
+ * @since 1.0, 2021-01-25 16:47:31
  */
 public class AlipayCommerceEducateFacefeatureGroupkeyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1651193223691383376L;
+	private static final long serialVersionUID = 3545779219445333173L;
 
 	/**
 	 * 人脸特征场景码

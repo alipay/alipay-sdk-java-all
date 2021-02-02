@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.sn.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-16 20:05:09
+ * @since 1.0, 2021-01-28 19:40:16
  */
 public class AlipayCommerceIotSnCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1731688813622162273L;
+	private static final long serialVersionUID = 1144899938481476836L;
 
 	/** 
 	 * 申请单id，用于后续追踪或查询该批次的设备sn

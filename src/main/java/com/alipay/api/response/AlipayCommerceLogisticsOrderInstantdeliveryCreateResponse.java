@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.order.instantdelivery.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-10-14 12:01:18
+ * @since 1.0, 2020-12-14 11:17:19
  */
 public class AlipayCommerceLogisticsOrderInstantdeliveryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2417677347359985438L;
+	private static final long serialVersionUID = 5538864486719999867L;
 
 	/** 
 	 * 优惠券费用
@@ -79,18 +79,6 @@ public class AlipayCommerceLogisticsOrderInstantdeliveryCreateResponse extends A
 	 */
 	@ApiField("status")
 	private String status;
-
-	/** 
-	 * 即时配送公司返回的错误码
-	 */
-	@ApiField("third_error_code")
-	private String thirdErrorCode;
-
-	/** 
-	 * 即时配送公司返回的错误描述
-	 */
-	@ApiField("third_error_msg")
-	private String thirdErrorMsg;
 
 	/** 
 	 * 即时配送运单编号
@@ -173,20 +161,6 @@ public class AlipayCommerceLogisticsOrderInstantdeliveryCreateResponse extends A
 	}
 	public String getStatus( ) {
 		return this.status;
-	}
-
-	public void setThirdErrorCode(String thirdErrorCode) {
-		this.thirdErrorCode = thirdErrorCode;
-	}
-	public String getThirdErrorCode( ) {
-		return this.thirdErrorCode;
-	}
-
-	public void setThirdErrorMsg(String thirdErrorMsg) {
-		this.thirdErrorMsg = thirdErrorMsg;
-	}
-	public String getThirdErrorMsg( ) {
-		return this.thirdErrorMsg;
 	}
 
 	public void setWaybillNo(String waybillNo) {

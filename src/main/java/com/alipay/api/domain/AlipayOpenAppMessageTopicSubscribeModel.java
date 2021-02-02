@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppMessageTopicSubscribeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1643174534999199687L;
+	private static final long serialVersionUID = 8612685473634398243L;
 
 	/**
 	 * 授权令牌
@@ -20,25 +20,28 @@ public class AlipayOpenAppMessageTopicSubscribeModel extends AlipayObject {
 	private String authToken;
 
 	/**
-	 * 授权类型，例如app_auth表示三方应用授权
+	 * 授权类型。枚举支持：
+app_auth：三方应用授权。
+user_auth：用户授权。
+
 	 */
 	@ApiField("auth_type")
 	private String authType;
 
 	/**
-	 * 消费该topic消息的通讯协议类型，目前支持HTTP 或者 WebSocket
+	 * 消费该topic消息的通讯协议类型，目前支持 HTTP 或 WebSocket
 	 */
 	@ApiField("comm_type")
 	private String commType;
 
 	/**
-	 * 消息标签，用于消息子类型过滤。使用前请确认消息topic是否支持
+	 * 消息标签，用于消息子类型过滤。使用前请确认消息topic是否支持。若消息接口中未定义 tag 则不支持传递。
 	 */
 	@ApiField("tag")
 	private String tag;
 
 	/**
-	 * 消息主题名称
+	 * 消息主题名称，即消息接口英文名。
 	 */
 	@ApiField("topic")
 	private String topic;

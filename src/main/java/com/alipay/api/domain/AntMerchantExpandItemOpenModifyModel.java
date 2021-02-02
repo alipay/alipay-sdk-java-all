@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改商品接口
  *
  * @author auto create
- * @since 1.0, 2019-09-17 17:21:26
+ * @since 1.0, 2021-01-15 11:29:45
  */
 public class AntMerchantExpandItemOpenModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1247594156233827283L;
+	private static final long serialVersionUID = 7149293893944686448L;
 
 	/**
 	 * 商品描述
@@ -30,7 +30,7 @@ public class AntMerchantExpandItemOpenModifyModel extends AlipayObject {
 	private List<ItemExtInfo> extInfo;
 
 	/**
-	 * 商品ID
+	 * 商品ID，通过创建商品接口 https://opendocs.alipay.com/apis/api_4/ant.merchant.expand.item.open.create 获取。
 	 */
 	@ApiField("item_id")
 	private String itemId;
@@ -63,7 +63,7 @@ public class AntMerchantExpandItemOpenModifyModel extends AlipayObject {
 	private List<SkuModifyInfo> skuList;
 
 	/**
-	 * 商品所属标准类目ID（具体值请参见产品文档）
+	 * 商品所属标准类目ID，当 type 为STANDARD_GOODS（标品）时必填。  请填入 https://opendocs.alipay.com/mini/011lxt  小程序商品类目表中三级类目ID。
 	 */
 	@ApiField("standard_category_id")
 	private String standardCategoryId;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权明细撤销接口
  *
  * @author auto create
- * @since 1.0, 2019-12-08 15:03:12
+ * @since 1.0, 2020-12-21 14:26:06
  */
 public class AlipayFundAuthOperationCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7371826228316357617L;
+	private static final long serialVersionUID = 1645211933119739825L;
 
 	/**
 	 * 支付宝授权资金订单号，与商户的授权资金订单号不能同时为空，二者都存在时，以支付宝资金授权订单号为准，该参数与支付宝授权资金操作流水号配对使用。
@@ -27,18 +27,20 @@ public class AlipayFundAuthOperationCancelModel extends AlipayObject {
 
 	/**
 	 * 商户的授权资金订单号，与支付宝的授权资金订单号不能同时为空，二者都存在时，以支付宝的授权资金订单号为准，该参数与商户的授权资金操作流水号配对使用。
+该值与资金冻结时 out_order_id一致。
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
 
 	/**
 	 * 商户的授权资金操作流水号，与支付宝的授权资金操作流水号不能同时为空，二者都存在时，以支付宝的授权资金操作流水号为准，该参数与商户的授权资金订单号配对使用。
+该值与资金冻结时out_request_no一致
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
 	/**
-	 * 商户对本次撤销操作的附言描述
+	 * 商户对本次撤销操作的附言描述，长度不超过100个字母或50个汉字。
 	 */
 	@ApiField("remark")
 	private String remark;

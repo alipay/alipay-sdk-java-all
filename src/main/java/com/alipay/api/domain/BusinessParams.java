@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务信息参数
  *
  * @author auto create
- * @since 1.0, 2019-05-16 14:21:54
+ * @since 1.0, 2020-12-31 10:31:33
  */
 public class BusinessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3765674341151512714L;
+	private static final long serialVersionUID = 3258537529476361675L;
 
 	/**
 	 * 实际订单时间，在乘车码场景，传入的是用户刷码乘车时间

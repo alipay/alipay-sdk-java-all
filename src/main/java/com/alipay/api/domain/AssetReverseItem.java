@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消订单或者退货所需复杂类型。
  *
  * @author auto create
- * @since 1.0, 2020-06-11 20:03:27
+ * @since 1.0, 2020-12-21 14:25:16
  */
 public class AssetReverseItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8758385862134219198L;
+	private static final long serialVersionUID = 5797472728299481312L;
 
 	/**
 	 * 行为类型

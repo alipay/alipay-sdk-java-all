@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-11 11:42:27
+ * @since 1.0, 2020-12-31 14:35:15
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2749953383875184119L;
+	private static final long serialVersionUID = 6815851995589285123L;
 
 	/** 
 	 * 品牌id
@@ -91,7 +91,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private List<ShopExtInfo> extInfos;
 
 	/** 
-	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，是商户pid；对于间连开店场景（线上、线下、直付通），是商户smid
+	 *  商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id 则本参数与store_id均必填。
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
@@ -119,6 +119,12 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/** 
+	 * 新版门店类目标准二级类目code。类目标准及与原shop_category映射关系参见文档https://ur.alipay.com/3oJ26c0veETkLXgTbtQnYY
+	 */
+	@ApiField("new_shop_category")
+	private String newShopCategory;
 
 	/** 
 	 * 门头照，返回值为一个有访问时限的链接
@@ -153,7 +159,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private String shopCategory;
 
 	/** 
-	 * 蚂蚁店铺id
+	 * 支付宝侧蚂蚁店铺 id。传入本参数后可不填 store_id 及 ip_role_id。
 	 */
 	@ApiField("shop_id")
 	private String shopId;
@@ -171,7 +177,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private String shopType;
 
 	/** 
-	 * 门店编号，表示该门店在该商户角色id(直连pid，间连smid)下，由商户自己定义的外部门店编号
+	 * 商户侧门店编号。表示该门店在该商户角色id(直连pid，间连smid)下，由商户自己定义的外部门店编号。若未传入 shop_id  则本参数与与ip_role_id均必填。
 	 */
 	@ApiField("store_id")
 	private String storeId;
@@ -286,6 +292,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	}
 	public String getMemo( ) {
 		return this.memo;
+	}
+
+	public void setNewShopCategory(String newShopCategory) {
+		this.newShopCategory = newShopCategory;
+	}
+	public String getNewShopCategory( ) {
+		return this.newShopCategory;
 	}
 
 	public void setOutDoorImages(List<String> outDoorImages) {

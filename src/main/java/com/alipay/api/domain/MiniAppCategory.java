@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序类目模型
  *
  * @author auto create
- * @since 1.0, 2020-08-11 14:34:09
+ * @since 1.0, 2020-11-03 15:23:28
  */
 public class MiniAppCategory extends AlipayObject {
 
-	private static final long serialVersionUID = 7141912446166529373L;
+	private static final long serialVersionUID = 6719963296833871772L;
 
 	/**
 	 * 类目id

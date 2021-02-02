@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标准医院信息医院信息
  *
  * @author auto create
- * @since 1.0, 2019-10-11 14:40:23
+ * @since 1.0, 2020-11-25 14:38:51
  */
 public class HospitalDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4612892372456342672L;
+	private static final long serialVersionUID = 6482782925139846975L;
+
+	/**
+	 * 医院ID
+	 */
+	@ApiField("hospital_id")
+	private String hospitalId;
 
 	/**
 	 * 医院标准名称
@@ -30,6 +36,13 @@ public class HospitalDTO extends AlipayObject {
 	 */
 	@ApiField("ownership")
 	private String ownership;
+
+	public String getHospitalId() {
+		return this.hospitalId;
+	}
+	public void setHospitalId(String hospitalId) {
+		this.hospitalId = hospitalId;
+	}
 
 	public String getHospitalName() {
 		return this.hospitalName;

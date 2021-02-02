@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单更新接口
  *
  * @author auto create
- * @since 1.0, 2020-07-29 09:38:31
+ * @since 1.0, 2020-12-21 17:55:35
  */
 public class AlipayEcoMycarParkingOrderUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1642469716984546263L;
+	private static final long serialVersionUID = 4589426819498841186L;
 
 	/**
 	 * 支付宝支付流水号，系统唯一
@@ -20,13 +20,16 @@ public class AlipayEcoMycarParkingOrderUpdateModel extends AlipayObject {
 	private String orderNo;
 
 	/**
-	 * 用户停车订单状态，0：成功，1：失败
+	 * 用户停车订单状态，枚举支持：
+*0：成功。
+*1：失败。
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
 
 	/**
-	 * 停车缴费支付宝用户的ID，请ISV保证用户ID的正确性，以免导致用户在停车平台查询不到相关的订单信息
+	 * 停车缴费用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+注意：ISV需保证用户 id 的正确性，以免导致用户在停车平台查询不到相关的订单信息。
 	 */
 	@ApiField("user_id")
 	private String userId;

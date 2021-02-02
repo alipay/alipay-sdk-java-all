@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot设备到账语音触达接口
  *
  * @author auto create
- * @since 1.0, 2020-04-30 10:50:20
+ * @since 1.0, 2021-01-13 19:17:33
  */
 public class AlipayCommerceIotDeviceAudioSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2813916548371289216L;
+	private static final long serialVersionUID = 7333943618855177313L;
 
 	/**
 	 * 设备的唯一标识,设备id

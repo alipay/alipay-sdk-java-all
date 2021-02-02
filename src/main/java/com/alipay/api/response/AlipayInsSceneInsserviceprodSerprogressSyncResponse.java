@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.insserviceprod.serprogress.sync response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-22 11:09:17
+ * @since 1.0, 2020-11-26 14:05:16
  */
 public class AlipayInsSceneInsserviceprodSerprogressSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5452716966495217664L;
+	private static final long serialVersionUID = 3479291784985451768L;
 
 	/** 
 	 * 进度明细编号(业务主键)

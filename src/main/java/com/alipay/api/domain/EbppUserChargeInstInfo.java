@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活缴费用户的机构列表信息
  *
  * @author auto create
- * @since 1.0, 2020-07-28 15:16:22
+ * @since 1.0, 2020-10-30 16:13:56
  */
 public class EbppUserChargeInstInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6699426138392178351L;
+	private static final long serialVersionUID = 7479784219842891351L;
 
 	/**
 	 * 业务类型缩写:

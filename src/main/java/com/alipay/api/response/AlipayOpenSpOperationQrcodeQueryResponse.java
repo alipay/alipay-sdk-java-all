@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.RecommendAccountDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.operation.qrcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-10-21 10:22:28
+ * @since 1.0, 2021-01-22 10:56:21
  */
 public class AlipayOpenSpOperationQrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4382143156865386562L;
+	private static final long serialVersionUID = 8762366453998195578L;
 
 	/** 
 	 * 支付宝操作批次号
@@ -21,10 +22,25 @@ public class AlipayOpenSpOperationQrcodeQueryResponse extends AlipayResponse {
 	private String batchNo;
 
 	/** 
-	 * 二维码图片地址。urlEncode处理过
+	 * 商家已经绑定的支付宝账号信息
+	 */
+	@ApiField("bind_account")
+	private RecommendAccountDTO bindAccount;
+
+	/** 
+	 * 二维码图片地址，urlEncode处理过。
+注意：
+1.有效期为24h;
+2.用户扫码确认授权操作（同意/拒绝）后，支付宝将通过<a href="https://opendocs.alipay.com/apis/01lc2d">alipay.open.sp.operation.result.notify</a>接口发送异步通知给服务商。
 	 */
 	@ApiField("qr_code_url")
 	private String qrCodeUrl;
+
+	/** 
+	 * 只针对服务商代间连商家发起代运营绑定、授权时，这个字段会返回推荐的商家支付宝账号列表，包括：支付宝账号和名称，为保护商家信息，账号和名称都按照规范脱敏。
+	 */
+	@ApiField("recommend_accounts")
+	private RecommendAccountDTO recommendAccounts;
 
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
@@ -33,11 +49,25 @@ public class AlipayOpenSpOperationQrcodeQueryResponse extends AlipayResponse {
 		return this.batchNo;
 	}
 
+	public void setBindAccount(RecommendAccountDTO bindAccount) {
+		this.bindAccount = bindAccount;
+	}
+	public RecommendAccountDTO getBindAccount( ) {
+		return this.bindAccount;
+	}
+
 	public void setQrCodeUrl(String qrCodeUrl) {
 		this.qrCodeUrl = qrCodeUrl;
 	}
 	public String getQrCodeUrl( ) {
 		return this.qrCodeUrl;
+	}
+
+	public void setRecommendAccounts(RecommendAccountDTO recommendAccounts) {
+		this.recommendAccounts = recommendAccounts;
+	}
+	public RecommendAccountDTO getRecommendAccounts( ) {
+		return this.recommendAccounts;
 	}
 
 }

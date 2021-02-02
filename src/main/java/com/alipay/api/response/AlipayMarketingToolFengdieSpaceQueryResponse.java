@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.space.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-22 14:31:20
+ * @since 1.0, 2021-01-06 16:28:40
  */
 public class AlipayMarketingToolFengdieSpaceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5845767533168921374L;
+	private static final long serialVersionUID = 7592686847727978934L;
 
 	/** 
 	 * 空间详情信息，比如空间名称、空间管理员等信息

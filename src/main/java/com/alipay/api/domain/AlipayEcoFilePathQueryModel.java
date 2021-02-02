@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoFilePathQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5672552979658932684L;
+	private static final long serialVersionUID = 5426647679584773428L;
 
 	/**
 	 * 先计算文件md5值，在对该md5值进行base64编码
@@ -26,7 +26,8 @@ public class AlipayEcoFilePathQueryModel extends AlipayObject {
 	private String contentType;
 
 	/**
-	 * 文件名称（必须带上文件扩展名，不然会导致后续发起流程校验过不去 示例：合同.pdf ）
+	 * 文件名称。
+注意：必须带上文件扩展名，不然会导致后续发起流程校验不通过。示例：合同.pdf。
 	 */
 	@ApiField("file_name")
 	private String fileName;

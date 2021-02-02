@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.itap.data.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-06-23 19:56:20
+ * @since 1.0, 2020-10-26 09:58:16
  */
 public class AlipayMsaasItapDataSyncRequest implements AlipayRequest<AlipayMsaasItapDataSyncResponse> {
 

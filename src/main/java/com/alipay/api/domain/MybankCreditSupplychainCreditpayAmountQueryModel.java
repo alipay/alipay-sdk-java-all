@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应商-1688和赊呗融合-额度查询接口
  *
  * @author auto create
- * @since 1.0, 2020-03-04 11:19:56
+ * @since 1.0, 2020-12-03 15:18:30
  */
 public class MybankCreditSupplychainCreditpayAmountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6148313991297756666L;
+	private static final long serialVersionUID = 2686386919116859245L;
 
 	/**
 	 * 买方信息，这里是ISV的信息

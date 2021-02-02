@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险知识图谱-医院模糊查询
  *
  * @author auto create
- * @since 1.0, 2019-10-11 14:40:23
+ * @since 1.0, 2020-11-25 14:38:51
  */
 public class AlipayInsDataHospitalQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6543776954465755813L;
+	private static final long serialVersionUID = 6248817194855136361L;
 
 	/**
 	 * 医院所在的地市名称

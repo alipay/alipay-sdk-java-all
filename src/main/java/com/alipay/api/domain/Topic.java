@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 营销位
  *
  * @author auto create
- * @since 1.0, 2017-12-06 11:22:08
+ * @since 1.0, 2021-01-27 10:28:09
  */
 public class Topic extends AlipayObject {
 
-	private static final long serialVersionUID = 1485272354342549956L;
+	private static final long serialVersionUID = 6617651123658646326L;
 
 	/**
 	 * 营销位图片url
 	 */
 	@ApiField("img_url")
 	private String imgUrl;
+
+	/**
+	 * 跳转类型，网页:HTTP、小程序:APP
+	 */
+	@ApiField("link_type")
+	private String linkType;
 
 	/**
 	 * 营销位跳转地址，点击营销位头图跳到的链接url。
@@ -58,6 +64,13 @@ public class Topic extends AlipayObject {
 	}
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
+	}
+
+	public String getLinkType() {
+		return this.linkType;
+	}
+	public void setLinkType(String linkType) {
+		this.linkType = linkType;
 	}
 
 	public String getLinkUrl() {

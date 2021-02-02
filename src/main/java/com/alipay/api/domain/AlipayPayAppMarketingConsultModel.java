@@ -10,16 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户前置营销内容咨询接口
  *
  * @author auto create
- * @since 1.0, 2020-10-22 17:11:22
+ * @since 1.0, 2020-12-15 10:16:32
  */
 public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2183438874352831726L;
+	private static final long serialVersionUID = 6555273298858494782L;
 
 	/**
-	 * 业务场景，用于区分商户具体的咨场景，示例：
-OPENING_PAGE：开屏页营销咨询；
-ORDER_PAGE：下单页营销咨询
+	 * 业务场景，用于区分商户具体的咨场景，示例：ORDER_PAGE：下单页营销咨询；其他新场景接入时需与支付宝协商约定
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -58,16 +56,48 @@ ORDER_PAGE：下单页营销咨询
 	private String encryptedMobile;
 
 	/**
+	 * 订单包含的商品列表信息，json格式，其它说明详见商品明细说明；取值可参考alipay.trade.app.pay(app支付接口2.0)
+	 */
+	@ApiListField("goods_detail")
+	@ApiField("goods_detail")
+	private List<GoodsDetail> goodsDetail;
+
+	/**
 	 * 已废弃不支持
 	 */
 	@ApiField("mobile")
 	private String mobile;
 
 	/**
+	 * 是否需要返回标签信息；默认为false不返回
+	 */
+	@ApiField("need_return_tag")
+	private Boolean needReturnTag;
+
+	/**
 	 * 商户订单号,64个字符以内、可包含字母、数字、下划线；需保证在商户端不重复
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 销售产品码，商家和支付宝签约的产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
+
+	/**
+	 * 优惠参数 注：仅与支付宝协商后可用；取值可参考alipay.trade.app.pay(app支付接口2.0)
+	 */
+	@ApiField("promo_params")
+	private String promoParams;
+
+	/**
+	 * 收款支付宝账号对应的支付宝唯一用户号。
+以2088开头的纯16位数字
+	 */
+	@ApiField("seller_id")
+	private String sellerId;
 
 	/**
 	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
@@ -129,6 +159,13 @@ ORDER_PAGE：下单页营销咨询
 		this.encryptedMobile = encryptedMobile;
 	}
 
+	public List<GoodsDetail> getGoodsDetail() {
+		return this.goodsDetail;
+	}
+	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
+		this.goodsDetail = goodsDetail;
+	}
+
 	public String getMobile() {
 		return this.mobile;
 	}
@@ -136,11 +173,39 @@ ORDER_PAGE：下单页营销咨询
 		this.mobile = mobile;
 	}
 
+	public Boolean getNeedReturnTag() {
+		return this.needReturnTag;
+	}
+	public void setNeedReturnTag(Boolean needReturnTag) {
+		this.needReturnTag = needReturnTag;
+	}
+
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+
+	public String getPromoParams() {
+		return this.promoParams;
+	}
+	public void setPromoParams(String promoParams) {
+		this.promoParams = promoParams;
+	}
+
+	public String getSellerId() {
+		return this.sellerId;
+	}
+	public void setSellerId(String sellerId) {
+		this.sellerId = sellerId;
 	}
 
 	public String getTotalAmount() {

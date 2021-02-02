@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询代运营授权或者账号绑定二维码
  *
  * @author auto create
- * @since 1.0, 2020-10-21 10:22:22
+ * @since 1.0, 2021-01-21 21:43:45
  */
 public class AlipayOpenSpOperationQrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8621371977581586129L;
+	private static final long serialVersionUID = 8716683743975611921L;
 
 	/**
 	 * 接入的产品编号。
@@ -23,7 +23,8 @@ public class AlipayOpenSpOperationQrcodeQueryModel extends AlipayObject {
 
 	/**
 	 * 支付宝登录账号。通常为手机号或者邮箱。
-若被代运营者是间连商户，则alipay_account必填；若为直连商户，则merchant_no和alipay_account不能同时为空，都有值优先取merchant_no。
+若代运营商户为直连才需要填，merchant_no和alipay_account不能同时为空，优先取merchant_no。
+若代运营商户为间连，该字段无需填写。
 	 */
 	@ApiField("alipay_account")
 	private String alipayAccount;

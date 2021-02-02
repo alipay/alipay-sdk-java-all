@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 菜品简化接口套餐组信息
  *
  * @author auto create
- * @since 1.0, 2020-09-07 16:13:29
+ * @since 1.0, 2020-12-10 14:08:02
  */
 public class KbdishGroupSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8136944668211288877L;
+	private static final long serialVersionUID = 5174285171233411274L;
+
+	/**
+	 * 套餐组上的活动信息，属isv外部活动信息
+	 */
+	@ApiField("activity_info")
+	private String activityInfo;
 
 	/**
 	 * 套餐组明细
@@ -34,6 +40,13 @@ public class KbdishGroupSimplifyInfo extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	public String getActivityInfo() {
+		return this.activityInfo;
+	}
+	public void setActivityInfo(String activityInfo) {
+		this.activityInfo = activityInfo;
+	}
 
 	public List<KbdishGroupDetailSimplifyInfo> getGroupDetailList() {
 		return this.groupDetailList;

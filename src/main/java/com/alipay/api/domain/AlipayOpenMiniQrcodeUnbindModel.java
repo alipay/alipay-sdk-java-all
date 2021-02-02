@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除已联普遍二维码
  *
  * @author auto create
- * @since 1.0, 2020-05-15 14:20:04
+ * @since 1.0, 2020-11-17 14:37:33
  */
 public class AlipayOpenMiniQrcodeUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2694571451588936485L;
+	private static final long serialVersionUID = 6321342216364951796L;
 
 	/**
-	 * 路由规则组，用于唯一标记一条路由规则
+	 * 路由规则组，用于唯一标记一条路由规则。调用 https://opendocs.alipay.com/apis/00rkye 接口关联普通二维码后的返回值。
 	 */
 	@ApiField("route_group")
 	private String routeGroup;

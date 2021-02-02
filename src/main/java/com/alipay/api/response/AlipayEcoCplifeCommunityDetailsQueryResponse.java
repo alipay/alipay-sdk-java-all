@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.community.details.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-19 16:51:27
+ * @since 1.0, 2021-01-13 15:55:48
  */
 public class AlipayEcoCplifeCommunityDetailsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1695443915667576938L;
+	private static final long serialVersionUID = 6187468523768181845L;
 
 	/** 
 	 * 开发者关联的高德地图中住宅、住宿或地名地址等小区相关类型的POI（地图兴趣点）ID列表和POI名称，中间用"|"分隔。
@@ -35,7 +35,7 @@ AUDIT_SUCCESS：审核通过。
 	private String auditStatus;
 
 	/** 
-	 * 地级市编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
+	 * 地级市编码，国标码，详见国家统计局数据 <a href="https://gw.alipayobjects.com/os/bmw-prod/ecac67e2-ff88-4b74-8dbe-33a6cbecfee0.xls">点此下载</a>。
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -81,7 +81,7 @@ OFFLINE - 下线
 	private String communityStatus;
 
 	/** 
-	 * 区县编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
+	 * 区县编码，国标码，详见国家统计局数据 <a href="https://gw.alipayobjects.com/os/bmw-prod/ecac67e2-ff88-4b74-8dbe-33a6cbecfee0.xls">点此下载</a>。
 	 */
 	@ApiField("district_code")
 	private String districtCode;
@@ -148,7 +148,7 @@ WAIT_AUDITING - 等待审核
 	private String outCommunityId;
 
 	/** 
-	 * 省份编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
+	 * 省份编码，国标码，详见国家统计局数据 <a href="https://gw.alipayobjects.com/os/bmw-prod/ecac67e2-ff88-4b74-8dbe-33a6cbecfee0.xls">点此下载</a>。
 	 */
 	@ApiField("province_code")
 	private String provinceCode;

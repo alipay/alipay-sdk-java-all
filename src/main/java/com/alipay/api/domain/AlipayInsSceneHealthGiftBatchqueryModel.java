@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 健康险赠险权益批量查询接口
  *
  * @author auto create
- * @since 1.0, 2019-04-23 11:37:54
+ * @since 1.0, 2020-10-28 16:44:37
  */
 public class AlipayInsSceneHealthGiftBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6497578976856457557L;
+	private static final long serialVersionUID = 3842592211564242755L;
 
 	/**
 	 * 赠险业务标志 HEALTH_BEAN_SIMPLE_UPGRADE 免费医疗金、HEALTH_GUARDIAN_GOLD 守护金、HEALTH_DSDB_NEW_OUTPATIENT 多收多宝新门诊

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创意关联的图片/视频物料元素详情
  *
  * @author auto create
- * @since 1.0, 2019-07-23 15:46:15
+ * @since 1.0, 2020-10-29 17:45:57
  */
 public class MaterialDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4469765441935781395L;
+	private static final long serialVersionUID = 8446935944763182136L;
 
 	/**
 	 * 广告投放平台生成的物料ID

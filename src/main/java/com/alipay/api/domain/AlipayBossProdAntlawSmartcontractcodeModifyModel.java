@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同撰写更新合同编号
  *
  * @author auto create
- * @since 1.0, 2020-06-09 11:17:29
+ * @since 1.0, 2020-11-04 15:23:42
  */
 public class AlipayBossProdAntlawSmartcontractcodeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6259774512392556182L;
+	private static final long serialVersionUID = 6428479327958251156L;
 
 	/**
 	 * 业务编号

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.creditrisk.consult.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-11-26 16:30:14
  */
 public class MybankCreditCreditriskConsultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8267181922351835919L;
+	private static final long serialVersionUID = 2161926534877712325L;
 
 	/** 
 	 * 可贷额度，单位元
@@ -38,6 +38,12 @@ public class MybankCreditCreditriskConsultQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("creditlmt_amt")
 	private String creditlmtAmt;
+
+	/** 
+	 * 贷款年化利率
+	 */
+	@ApiField("loan_int_rate")
+	private String loanIntRate;
 
 	public void setAvailableAmt(String availableAmt) {
 		this.availableAmt = availableAmt;
@@ -65,6 +71,13 @@ public class MybankCreditCreditriskConsultQueryResponse extends AlipayResponse {
 	}
 	public String getCreditlmtAmt( ) {
 		return this.creditlmtAmt;
+	}
+
+	public void setLoanIntRate(String loanIntRate) {
+		this.loanIntRate = loanIntRate;
+	}
+	public String getLoanIntRate( ) {
+		return this.loanIntRate;
 	}
 
 }

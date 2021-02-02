@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票信息展示模型
  *
  * @author auto create
- * @since 1.0, 2018-11-23 19:35:14
+ * @since 1.0, 2020-12-31 15:38:52
  */
 public class ArInvoiceOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6866339535259451549L;
+	private static final long serialVersionUID = 2195723541739888475L;
 
 	/**
 	 * 发票行信息集合
@@ -59,6 +59,12 @@ public class ArInvoiceOpenApiResponse extends AlipayObject {
 	 */
 	@ApiField("buyer_telephone")
 	private String buyerTelephone;
+
+	/**
+	 * 是否可以关联账单
+	 */
+	@ApiField("can_link")
+	private Boolean canLink;
 
 	/**
 	 * 创建人
@@ -176,6 +182,12 @@ public class ArInvoiceOpenApiResponse extends AlipayObject {
 	private String lastModer;
 
 	/**
+	 * 已关联账单金额
+	 */
+	@ApiField("linked_amt")
+	private MultiCurrencyMoneyOpenApi linkedAmt;
+
+	/**
 	 * 发票开出后的邮寄状态，具体状态说明
 01：待邮寄，02：已邮寄，03：退回中，04：已退回
 	 */
@@ -187,6 +199,12 @@ public class ArInvoiceOpenApiResponse extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 是否是无账单发票 Y：是  N：不是
+	 */
+	@ApiField("no_bill_invoice_flag")
+	private String noBillInvoiceFlag;
 
 	/**
 	 * 是否为点在发票
@@ -314,6 +332,13 @@ true：是， false：不是
 	}
 	public void setBuyerTelephone(String buyerTelephone) {
 		this.buyerTelephone = buyerTelephone;
+	}
+
+	public Boolean getCanLink() {
+		return this.canLink;
+	}
+	public void setCanLink(Boolean canLink) {
+		this.canLink = canLink;
 	}
 
 	public String getCreator() {
@@ -449,6 +474,13 @@ true：是， false：不是
 		this.lastModer = lastModer;
 	}
 
+	public MultiCurrencyMoneyOpenApi getLinkedAmt() {
+		return this.linkedAmt;
+	}
+	public void setLinkedAmt(MultiCurrencyMoneyOpenApi linkedAmt) {
+		this.linkedAmt = linkedAmt;
+	}
+
 	public String getMailStatus() {
 		return this.mailStatus;
 	}
@@ -461,6 +493,13 @@ true：是， false：不是
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getNoBillInvoiceFlag() {
+		return this.noBillInvoiceFlag;
+	}
+	public void setNoBillInvoiceFlag(String noBillInvoiceFlag) {
+		this.noBillInvoiceFlag = noBillInvoiceFlag;
 	}
 
 	public Boolean getOnline() {

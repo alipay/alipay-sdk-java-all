@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * NFC用户卡信息同步
  *
  * @author auto create
- * @since 1.0, 2019-08-07 18:09:10
+ * @since 1.0, 2020-12-14 13:54:54
  */
 public class AlipayCommerceTransportNfccardSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1795362431561329732L;
+	private static final long serialVersionUID = 7291459317478677536L;
 
 	/**
 	 * 卡号

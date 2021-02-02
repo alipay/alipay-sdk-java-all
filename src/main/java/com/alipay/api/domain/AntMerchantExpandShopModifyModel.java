@@ -10,14 +10,15 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改蚂蚁店铺
  *
  * @author auto create
- * @since 1.0, 2020-08-27 16:30:23
+ * @since 1.0, 2020-12-31 13:39:24
  */
 public class AntMerchantExpandShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5636711124166454383L;
+	private static final long serialVersionUID = 6189943582859337532L;
 
 	/**
-	 * 门店结算卡信息。本业务当前只允许传入一张结算卡
+	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。
+说明：本参数仅直付通业务使用，其余业务无需关注。
 	 */
 	@ApiListField("biz_cards")
 	@ApiField("settle_card_info")
@@ -43,25 +44,27 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private List<ShopBusinessTime> businessTime;
 
 	/**
-	 * 营业执照图片url。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。当店铺类目为特殊行业时要求本信息项。若无需更新本信息项，可以不填写
+	 * 营业执照图片url。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。若无需更新本信息项，可以不填写
 	 */
 	@ApiField("cert_image")
 	private String certImage;
 
 	/**
-	 * 营业执照名称，填写值为营业执照或统一社会信用代码证上的名称。当店铺类目是特殊类目是要求本信息项。若无需更新本信息项，可以不填写
+	 * 营业执照名称，填写值为营业执照或统一社会信用代码证上的名称。若无需更新本信息项，可以不填写
+注意：若传入 cert_no 则本参数必填。
 	 */
 	@ApiField("cert_name")
 	private String certName;
 
 	/**
-	 * 证件号码。请填写店铺营业执照号。当店铺类目是特殊类目是要求必填。若无需更新本信息项，可以不填写，以原有值为准
+	 * 证件号码。请填写店铺营业执照号。若无需更新本信息项，可以不填写，以原有值为准
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 证件类型，取值范围：201：营业执照；2011:多证合一(统一社会信用代码)。当店铺类目是特殊类目是要求本信息项。若无需更新本信息项，可以不填写
+	 * 证件类型，取值范围：201：营业执照；2011:多证合一(统一社会信用代码)。若无需更新本信息项，可以不填写。
+注意：若传入 cert_no 则本参数必填。
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -104,13 +107,13 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private String legalCertNo;
 
 	/**
-	 * 法人名称。如果要更新，必须和legal_name成对传入
+	 * 法人名称。如果要更新，必须和legal_cert_no成对传入
 	 */
 	@ApiField("legal_name")
 	private String legalName;
 
 	/**
-	 * 营业执照授权函。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。当店铺类目是特殊行业时要求本信息项。若无需更新本信息项，可以不填写
+	 * 营业执照授权函。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。若无需更新本信息项，可以不填写
 	 */
 	@ApiField("license_auth_letter_image")
 	private String licenseAuthLetterImage;
@@ -122,14 +125,14 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 门头照，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。当店铺类目是特殊类目要求本信息项。若无需更新本信息项，可以不填写。若填写则会整体覆盖原有的门头照列表
+	 * 门头照，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。若无需更新本信息项，可以不填写。若填写则会整体覆盖原有的门头照列表
 	 */
 	@ApiListField("out_door_images")
 	@ApiField("string")
 	private List<String> outDoorImages;
 
 	/**
-	 * 行业特殊资质。当店铺类目是特殊类目是要求本信息项。若无需更新本信息项，可以不填写。填写会按类型进行更新或补充
+	 * 行业特殊资质。若无需更新本信息项，可以不填写。填写会按类型进行更新或补充
 	 */
 	@ApiListField("qualifications")
 	@ApiField("industry_qualification_info")
@@ -148,7 +151,7 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private String settleAlipayLogonId;
 
 	/**
-	 * 店铺类目，取值参见文件https://mif-pub.alipayobjects.com/ShopCategory.xlsx 中的三级门店类目。若无需更新本信息项，可以不填写
+	 * 新版门店类目标准二级类目code。类目标准及与原shop_category映射关系参见表格 https://ur.alipay.com/2qv1f9。若无需更新本信息项，可以不填写
 	 */
 	@ApiField("shop_category")
 	private String shopCategory;

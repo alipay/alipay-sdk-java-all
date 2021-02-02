@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品数据字典模型
  *
  * @author auto create
- * @since 1.0, 2020-09-07 16:14:28
+ * @since 1.0, 2020-12-02 15:38:23
  */
 public class KbdishDictionary extends AlipayObject {
 
-	private static final long serialVersionUID = 4165956459779535284L;
+	private static final long serialVersionUID = 2232832386514197594L;
 
 	/**
 	 * 商家门店的操作小二,创建数据的人
@@ -30,7 +30,7 @@ sync_type=update、stateChange和del时必填
 	 * 字典的扩展json，根据不同的biz_type，设置商家的自定义字典表key以及value。
 如果字典类型为virtual_catetory和category一样的结构，并新增shopId和outDictionaryId，level只支持1
 如果字典类型为catetory，key为cateSort（排序），level（层级，数字表示），parentCatetoryId（父类目id），cateType（dish或cook, 新增virtual表示虚拟类目定制），outDictionaryId（isv侧字典id）;
-如果字典类型为spec，key为specSort（排序），capacity(容量，如400ml)，imageId(图片)，desc(描述)，viewTag(样式定制，杯型：杯型：ONE_ROW_THREE_COLUMN_WITH_PICTURE；温度：ONE_ROW_THREE_COLUMN；咖啡豆：PICTURE_TILE), upName(规格分类显示，如杯型)，outDictionaryId。
+如果字典类型为spec，key为specSort（排序），capacity(容量，如400ml)，imageId(图片)，desc(描述)，viewTag(样式定制，杯型：杯型：ONE_ROW_THREE_COLUMN_WITH_PICTURE；温度：ONE_ROW_THREE_COLUMN；咖啡豆：PICTURE_TILE), upName(规格分类显示，如杯型)，outDictionaryId，新增hidden字段，表示是否隐藏实体类目，true表示隐藏(不分大小写)，其余值(包括不传)表示不隐藏
 注意：
 如果是字符串拼接的方式，转移符\要替换为\\\ 。
 	 */

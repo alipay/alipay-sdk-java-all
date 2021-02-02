@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCashlessvoucherTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3361154976246894251L;
+	private static final long serialVersionUID = 2514886894429745551L;
 
 	/**
 	 * 模板修改操作外部业务号，用于修改时的幂等控制，注意这里不是修改业务号
@@ -23,12 +23,13 @@ public class AlipayMarketingCashlessvoucherTemplateModifyModel extends AlipayObj
 
 	/**
 	 * 发放结束时间，晚于该时间不能发券。券的发放结束时间和发放开始时间跨度不能大于90天。发放结束时间必须晚于发放开始时间。格式为：yyyy-MM-dd HH:mm:ss。
+仅支持延长发券时间，不支持提前结束。即仅支持传入比创建券模板时发券结束时间晚的时间点。
 	 */
 	@ApiField("publish_end_time")
 	private Date publishEndTime;
 
 	/**
-	 * 规则配置，JSON字符串，{"PID": "2088512417841101,2088512417841102", "STORE": "123456,678901"}，其中PID表示可以核销该券的pid列表，多个值用英文逗号隔开，STORE表示可以核销该券的内部门店ID，多个值用英文逗号隔开，不传此参数则不修改规则，若有要修改规则那么必须包含PID，规则修改仅支持代金券
+	 * 规则配置，仅需传入增加规则，不传默认创建时规则。JSON字符串，{"PID": "2088512417841101,2088512417841102", "STORE": "123456,678901"}，其中PID表示可以核销该券的pid列表，多个值用英文逗号隔开，STORE表示可以核销该券的内部门店ID，多个值用英文逗号隔开，不传此参数则不修改规则，仅支持新增规则，若有要修改规则那么必须包含PID，规则修改仅支持代金券。
 	 */
 	@ApiField("rule_conf")
 	private String ruleConf;

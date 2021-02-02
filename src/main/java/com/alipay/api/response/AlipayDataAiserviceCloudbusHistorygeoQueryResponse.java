@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.cloudbus.historygeo.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-10-21 10:38:23
+ * @since 1.0, 2021-01-19 09:36:11
  */
 public class AlipayDataAiserviceCloudbusHistorygeoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7315749215231558338L;
+	private static final long serialVersionUID = 4132161138591193193L;
 
 	/** 
 	 * 地图问题geo hash码

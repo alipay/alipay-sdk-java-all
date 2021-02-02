@@ -9,14 +9,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单平台外部渠道支付结果同步消息
  *
  * @author auto create
- * @since 1.0, 2020-10-15 14:20:14
+ * @since 1.0, 2021-01-18 15:53:49
  */
 public class AlipayMerchantOrderExternalPaychannelSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5532943374572829572L;
+	private static final long serialVersionUID = 3741147773766419911L;
 
 	/**
-	 * 业务单号，微信、支付宝交易号
+	 * isv测的业务订单号，等同于支付接口spi.alipay.merchant.order.commonisv.pay
+中的isv_order_no。
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
@@ -70,7 +71,7 @@ public class AlipayMerchantOrderExternalPaychannelSyncModel extends AlipayObject
 	private String notifyType;
 
 	/**
-	 * 原始第三方支付结构的交易号，比如支付宝、微信交易号
+	 * 原始第三方支付结构的交易号，比如支付宝、微信交易号。等同于支付接口spi.alipay.merchant.order.commonisv.pay 中的channel_order_no
 	 */
 	@ApiField("origin_trade_no")
 	private String originTradeNo;
@@ -88,7 +89,7 @@ public class AlipayMerchantOrderExternalPaychannelSyncModel extends AlipayObject
 	private String outRequestNo;
 
 	/**
-	 * 支付渠道，微信：wechat，支付宝：alipay - 仅针对支付
+	 * 支付通道类型，001：支付宝，002：微信，003：qq钱包，004：京东钱包，005：口碑，006：翼支付，007：银联二维码，008：和包支付（仅限和包通道），009：百度钱包，010：苏宁钱包，100：自动识别类型等
 	 */
 	@ApiField("pay_channel")
 	private String payChannel;

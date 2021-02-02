@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.identification.customer.enroll.cancel request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-12-18 15:35:56
  */
 public class ZolozIdentificationCustomerEnrollCancelRequest implements AlipayRequest<ZolozIdentificationCustomerEnrollCancelResponse> {
 

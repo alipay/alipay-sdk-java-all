@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.relation.friends.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-03 10:55:41
+ * @since 1.0, 2020-10-30 14:48:31
  */
 public class AlipaySocialBaseRelationFriendsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2157853546371418964L;
+	private static final long serialVersionUID = 7199429153295276931L;
 
 	/** 
 	 * 好友列表数据

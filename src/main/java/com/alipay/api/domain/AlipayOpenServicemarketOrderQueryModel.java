@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenServicemarketOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1476712132324616442L;
+	private static final long serialVersionUID = 3365387813624676767L;
 
 	/**
-	 * 商户订单ID号
+	 * 订购服务订单ID，通过支付宝发送的 https://opendocs.alipay.com/apis/api_3/alipay.open.servicemarket.order.notify(服务市场商户确认订购通知) 通知获取。
 	 */
 	@ApiField("commodity_order_id")
 	private String commodityOrderId;
 
 	/**
-	 * 从第几页开始查询
+	 * 查询开始页码，1 为第一页。
 	 */
 	@ApiField("start_page")
 	private String startPage;

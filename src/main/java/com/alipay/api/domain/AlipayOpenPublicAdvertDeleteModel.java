@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活号广告删除询接口
  *
  * @author auto create
- * @since 1.0, 2020-09-28 09:38:29
+ * @since 1.0, 2021-01-25 16:31:11
  */
 public class AlipayOpenPublicAdvertDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8368624335165479728L;
+	private static final long serialVersionUID = 7544829415434914936L;
+
+	/**
+	 * 待删除的广告位分组标识
+	 */
+	@ApiField("advert_group")
+	private String advertGroup;
 
 	/**
 	 * 待删除的广告位id
 	 */
 	@ApiField("advert_id")
 	private String advertId;
+
+	public String getAdvertGroup() {
+		return this.advertGroup;
+	}
+	public void setAdvertGroup(String advertGroup) {
+		this.advertGroup = advertGroup;
+	}
 
 	public String getAdvertId() {
 		return this.advertId;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝开放认证初始化服务
  *
  * @author auto create
- * @since 1.0, 2020-09-01 20:09:22
+ * @since 1.0, 2020-11-13 11:59:40
  */
 public class AlipayUserCertifyOpenInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6675923628479176655L;
+	private static final long serialVersionUID = 1217543225693836623L;
 
 	/**
 	 * 认证场景码。入参支持的认证场景码和商户签约的认证场景相关，取值如下:
@@ -30,11 +30,16 @@ SMART_FACE：多因子快捷认证
 	private String faceContrastPicture;
 
 	/**
-	 * 需要验证的身份信息参数，格式为json，字段详细说明如下：
-identity_type：身份信息参数类型，必填，必须传入CERT_INFO
-cert_type：证件类型，必填，当前支持身份证，必须传入IDENTITY_CARD
-cert_name：真实姓名，必填，填写需要验证的真实姓名
-cert_no：证件号码，必填，填写需要验证的证件号码
+	 * 需要验证的身份信息(json)字段说明如下：
+identity_type：身份信息参数类型，固定为 CERT_INFO
+cert_name：真实姓名，必填
+cert_no：证件号码，必填
+cert_type：证件类型，必填，枚举支持：
+IDENTITY_CARD：身份证
+HOME_VISIT_PERMIT_HK_MC：港澳通行证
+HOME_VISIT_PERMIT_TAIWAN：台湾通行证
+RESIDENCE_PERMIT_HK_MC：港澳居住证
+RESIDENCE_PERMIT_TAIWAN：台湾居住证
 	 */
 	@ApiField("identity_param")
 	private String identityParam;

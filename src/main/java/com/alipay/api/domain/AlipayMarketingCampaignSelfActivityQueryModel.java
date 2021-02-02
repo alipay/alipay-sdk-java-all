@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商户自营销信息查询
  *
  * @author auto create
- * @since 1.0, 2020-09-11 22:07:54
+ * @since 1.0, 2021-01-25 10:16:15
  */
 public class AlipayMarketingCampaignSelfActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7734756254814944478L;
+	private static final long serialVersionUID = 6187187746278366494L;
 
 	/**
 	 * b.alipay.com 运营中心配置后台-活动详情-活动id

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.wap.pay response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-11 10:54:03
+ * @since 1.0, 2021-01-07 10:50:17
  */
 public class AlipayTradeWapPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6183542249463144486L;
+	private static final long serialVersionUID = 4137536772699979656L;
 
 	/** 
 	 * 商户原始订单号，最大长度限制32位
@@ -21,7 +21,7 @@ public class AlipayTradeWapPayResponse extends AlipayResponse {
 	private String merchantOrderNo;
 
 	/** 
-	 * 商户网站唯一订单号
+	 * 商户网站订单号，由商家自定义。
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
@@ -34,7 +34,7 @@ public class AlipayTradeWapPayResponse extends AlipayResponse {
 	private String sellerId;
 
 	/** 
-	 * 该笔订单的资金总额，单位为RMB-Yuan。取值范围为[0.01，100000000.00]，精确到小数点后两位。
+	 * 该笔订单的资金总额，单位为人民币（元），取值范围为 0.01~100000000.00，精确到小数点后两位。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

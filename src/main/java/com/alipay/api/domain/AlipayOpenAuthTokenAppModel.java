@@ -7,27 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用应用授权码（app_auth_code）换取或者刷新应用授权令牌(app_auth_token)
  *
  * @author auto create
- * @since 1.0, 2018-06-29 17:54:42
+ * @since 1.0, 2020-12-14 14:22:12
  */
 public class AlipayOpenAuthTokenAppModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2714865893516193598L;
+	private static final long serialVersionUID = 6213987723517843794L;
 
 	/**
-	 * 授权码，如果grant_type的值为authorization_code。该值必须填写
+	 * 授权码，应用授权后得到。本参数在 grant_type 为 authorization_code 时必填；为 refresh_token 时不填。
 	 */
 	@ApiField("code")
 	private String code;
 
 	/**
-	 * authorization_code表示换取app_auth_token。
-refresh_token表示刷新app_auth_token。
+	 * 授权方式。支持：
+authorization_code：使用应用授权码换取应用授权令牌app_auth_token。
+refresh_token：使用app_refresh_token刷新获取新授权令牌。
+
 	 */
 	@ApiField("grant_type")
 	private String grantType;
 
 	/**
-	 * 刷新令牌，如果grant_type值为refresh_token。该值不能为空。该值来源于此接口的返回值app_refresh_token（至少需要通过grant_type=authorization_code调用此接口一次才能获取）
+	 * 刷新令牌，上次换取访问令牌时得到。本参数在 grant_type 为 authorization_code 时不填；为 refresh_token 时必填，且该值来源于此接口的返回值 app_refresh_token（即至少需要通过 grant_type=authorization_code 调用此接口一次才能获取）。
 	 */
 	@ApiField("refresh_token")
 	private String refreshToken;

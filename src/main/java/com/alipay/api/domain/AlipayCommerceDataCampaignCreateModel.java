@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集点活动配置接口
  *
  * @author auto create
- * @since 1.0, 2020-04-13 14:06:53
+ * @since 1.0, 2021-01-07 16:33:57
  */
 public class AlipayCommerceDataCampaignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8859163987285811841L;
+	private static final long serialVersionUID = 7638834863411158367L;
 
 	/**
 	 * 集点活动任务完成时用户得到的集点奖品名称，用于在服务提醒消息中进行展示
@@ -26,7 +26,7 @@ public class AlipayCommerceDataCampaignCreateModel extends AlipayObject {
 	private String endTime;
 
 	/**
-	 * 集点活动配置业务扩展字段，json数组格式。具体值需要和支付宝约定
+	 * 集点活动配置业务扩展字段，json格式。具体值需要和支付宝约定，请查看集点营销集成文档中说明。
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
@@ -50,10 +50,7 @@ public class AlipayCommerceDataCampaignCreateModel extends AlipayObject {
 	private String merchantPid;
 
 	/**
-	 * 集点活动中里程碑信息，json数组格式，其中：milestone_total_num:小里程碑目标次数
-milestone_award:小里程碑奖品名称
-小里程碑目标次数需要小于集点任务目标次数；
-如果传入小里程碑奖品名称时，小里程碑目标次数必传。
+	 * 集点活动中里程碑信息，json数组格式，其中：milestone_total_num:小里程碑目标次数，milestone_award:小里程碑奖品名称。小里程碑目标次数需要小于集点任务目标次数； 如果传入小里程碑奖品名称时，小里程碑目标次数必传。
 	 */
 	@ApiField("milestone_list")
 	private String milestoneList;
@@ -71,7 +68,7 @@ milestone_award:小里程碑奖品名称
 	private String pushUnit;
 
 	/**
-	 * 集点活动展示变量，用于在集点通知服务提醒中进行展示
+	 * 集点活动展示变量，即被push_unit量词修饰的实体，用于在集点通知服务提醒中进行展示。
 	 */
 	@ApiField("push_unit_name")
 	private String pushUnitName;

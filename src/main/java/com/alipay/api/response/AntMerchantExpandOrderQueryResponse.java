@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-11 11:42:27
+ * @since 1.0, 2020-12-28 18:00:16
  */
 public class AntMerchantExpandOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5362689787196483321L;
+	private static final long serialVersionUID = 7357258841414711278L;
 
 	/** 
 	 * 申请单创建时间
@@ -30,7 +30,7 @@ public class AntMerchantExpandOrderQueryResponse extends AlipayResponse {
 	private String extInfo;
 
 	/** 
-	 * 商户角色id。审核通过后生成。间连商户或平台商二级商户业务中，本字段表示smid
+	 * 商户角色id。间连商户或平台商二级商户业务中，本字段表示smid。审核通过后生成。
 	 */
 	@ApiListField("ip_role_id")
 	@ApiField("string")
@@ -43,7 +43,10 @@ public class AntMerchantExpandOrderQueryResponse extends AlipayResponse {
 	private String merchantName;
 
 	/** 
-	 * 申请单状态。99:已完结;-1:失败;031:已提交审核
+	 * 申请单状态。支持：
+99:已完结；
+-1:失败；
+031:已提交审核。
 	 */
 	@ApiField("status")
 	private String status;

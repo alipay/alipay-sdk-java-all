@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询一段时间内的交易日
  *
  * @author auto create
- * @since 1.0, 2020-10-23 15:03:15
+ * @since 1.0, 2020-12-02 23:08:05
  */
 public class AlipayFinanceQuotationQuotetradeTradingdayBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6766252572719522799L;
+	private static final long serialVersionUID = 3472795484119222977L;
 
 	/**
 	 * 查询的开始日期, 格式为 yyyyMMdd

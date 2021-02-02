@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2020-07-02 20:52:01
+ * @since 1.0, 2020-12-30 10:37:52
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1887253981542186687L;
+	private static final long serialVersionUID = 1269652414279787984L;
 
 	/**
 	 * 支付宝的店铺编号
@@ -23,7 +23,7 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String alipayStoreId;
 
 	/**
-	 * 对交易或商品的描述
+	 * 对一笔交易的具体描述信息。如果是多种商品，请将商品描述字符串累加传给body。
 	 */
 	@ApiField("body")
 	private String body;
@@ -35,7 +35,8 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private BusinessParams businessParams;
 
 	/**
-	 * 买家的支付宝唯一用户号（2088开头的16位纯数字）
+	 * 买家的支付宝唯一用户号（2088开头的16位纯数字）。
+小程序支付场景必填。
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
@@ -56,8 +57,8 @@ public class AlipayTradeCreateModel extends AlipayObject {
 
 	/**
 	 * 可打折金额.
-参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
-如果该值未传入，但传入了【订单总金额】，【不可打折金额】则该值默认为【订单总金额】-【不可打折金额】
+参与优惠计算的金额，单位为人民币（元），取值范围为 0.01~100000000.00，精确到小数点后两位。
+注意：如果该值未传入，但传入了【订单总金额】，【不可打折金额】则该值默认为【订单总金额】-【不可打折金额】
 	 */
 	@ApiField("discountable_amount")
 	private String discountableAmount;
@@ -83,7 +84,7 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private ExtendParams extendParams;
 
 	/**
-	 * 订单包含的商品列表信息，json格式，其它说明详见：“商品明细说明”
+	 * 订单包含的商品列表信息，json格式。
 	 */
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail")
@@ -114,10 +115,17 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
+	 * 公用回传参数，如果请求时传递了该参数，则返回给商户时会回传该参数。支付宝只会在同步返回（包括跳转回商户网站）和异步通知时将该参数原样返回。本参数必须进行UrlEncode之后才可以发送给支付宝。
+	 */
+	@ApiField("passback_params")
+	private String passbackParams;
+
+	/**
 	 * 销售产品码。
 如果签约的是当面付快捷版，则传OFFLINE_PAYMENT;
 其它支付宝当面付产品传FACE_TO_FACE_PAYMENT；
-不传默认使用FACE_TO_FACE_PAYMENT；
+不传默认使用FACE_TO_FACE_PAYMENT。
+说明：小程序支付场景无需传入，使用默认值即可。
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -142,13 +150,13 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String sellerId;
 
 	/**
-	 * 描述结算信息，json格式，详见结算参数说明
+	 * 描述结算信息，json格式。
 	 */
 	@ApiField("settle_info")
 	private SettleInfo settleInfo;
 
 	/**
-	 * 商户门店编号
+	 *  商户门店编号，由商家自定义。需保证当前商户下唯一。
 	 */
 	@ApiField("store_id")
 	private String storeId;
@@ -160,7 +168,8 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private SubMerchant subMerchant;
 
 	/**
-	 * 订单标题
+	 * 商品标题/交易标题/订单标题/订单关键字等。
+注意：不可使用特殊字符，如 /，=，& 等。
 	 */
 	@ApiField("subject")
 	private String subject;
@@ -178,8 +187,8 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String timeoutExpress;
 
 	/**
-	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
-如果同时传入了【打折金额】，【不可打折金额】，【订单总金额】三者，则必须满足如下条件：【订单总金额】=【打折金额】+【不可打折金额】
+	 * 订单总金额，单位为人民币（元），取值范围为 0.01~100000000.00，精确到小数点后两位。
+注意：如果同时传入了【打折金额】，【不可打折金额】，【订单总金额】三者，则必须满足如下条件：【订单总金额】=【打折金额】+【不可打折金额】
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
@@ -295,6 +304,13 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getPassbackParams() {
+		return this.passbackParams;
+	}
+	public void setPassbackParams(String passbackParams) {
+		this.passbackParams = passbackParams;
 	}
 
 	public String getProductCode() {

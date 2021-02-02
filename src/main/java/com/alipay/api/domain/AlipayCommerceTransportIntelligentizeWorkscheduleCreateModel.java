@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大出行智能平台-排班任务-创建
  *
  * @author auto create
- * @since 1.0, 2020-09-04 19:44:31
+ * @since 1.0, 2021-01-04 20:32:02
  */
 public class AlipayCommerceTransportIntelligentizeWorkscheduleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2327528274359563215L;
+	private static final long serialVersionUID = 3735546292891753618L;
 
 	/**
 	 * 城市代码
@@ -70,6 +70,12 @@ public class AlipayCommerceTransportIntelligentizeWorkscheduleCreateModel extend
 	 */
 	@ApiField("timetable_direction")
 	private String timetableDirection;
+
+	/**
+	 * 单个车次结束后的驻站时长（单位：分钟），不传则由算法自行决策驻站时长
+	 */
+	@ApiField("trip_break_time")
+	private Long tripBreakTime;
 
 	/**
 	 * 上行首站的临时停车容量，大于等于0整数
@@ -145,6 +151,13 @@ public class AlipayCommerceTransportIntelligentizeWorkscheduleCreateModel extend
 	}
 	public void setTimetableDirection(String timetableDirection) {
 		this.timetableDirection = timetableDirection;
+	}
+
+	public Long getTripBreakTime() {
+		return this.tripBreakTime;
+	}
+	public void setTripBreakTime(Long tripBreakTime) {
+		this.tripBreakTime = tripBreakTime;
 	}
 
 	public Long getUpFirstStationCapacity() {

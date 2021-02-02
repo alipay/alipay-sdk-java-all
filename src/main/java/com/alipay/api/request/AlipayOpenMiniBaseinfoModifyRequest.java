@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.baseinfo.modify request
  * 
  * @author auto create
- * @since 1.0, 2020-10-23 11:35:18
+ * @since 1.0, 2020-11-18 15:19:45
  */
 public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<AlipayOpenMiniBaseinfoModifyResponse> {
 
@@ -21,47 +21,49 @@ public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<
 	private String apiVersion="1.0";
 
 	/** 
-	* 11_12;12_13。小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考https://docs.alipay.com/isv/10325
+	* 11_12;12_13。小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询mini_category_list 。
 	 */
 	private String appCategoryIds;
 
 	/** 
-	* 小程序应用描述，20-200个字
+	* 小程序应用描述，20-200个字。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
 	 */
 	private String appDesc;
 
 	/** 
-	* 小程序应用英文名称
+	* 小程序应用英文名称。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
 	 */
 	private String appEnglishName;
 
 	/** 
-	* 小程序应用logo图标，图片格式必须为：png、jpeg、jpg，建议上传像素为180*180
+	* 小程序应用logo图标，图片格式必须为：png、jpeg、jpg，建议上传像素为180*180。
+若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
 	 */
 	private FileItem appLogo;
 
 	/** 
-	* 小程序应用名称
+	* 小程序应用名称。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
 	 */
 	private String appName;
 
 	/** 
-	* 小程序应用简介，一句话描述小程序功能
+	* 小程序应用简介，一句话描述小程序功能。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
 	 */
 	private String appSlogan;
 
 	/** 
-	* 新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询mini_category_list。使用后不再读取app_category_ids值，老前台类目将废弃
+	* 新小程序前台类目。格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目。详细类目可以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询mini_category_list。
+如需申请用户信息则该项必填，否则应用后台不会展示用户信息申请入口；通过接口申请用户信息会被直接驳回。
 	 */
 	private String miniCategoryIds;
 
 	/** 
-	* 小程序客服邮箱
+	* 小程序客服邮箱。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
 	 */
 	private String serviceEmail;
 
 	/** 
-	* 小程序客服电话
+	* 小程序客服电话。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
 	 */
 	private String servicePhone;
 

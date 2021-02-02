@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家给用户赠送彩票，由亚博科技提供服务
  *
  * @author auto create
- * @since 1.0, 2017-07-24 14:37:10
+ * @since 1.0, 2020-12-14 15:48:03
  */
 public class AlipayCommerceLotteryPresentSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5441417926128546246L;
+	private static final long serialVersionUID = 1538673997465877373L;
 
 	/**
 	 * 被赠送彩票的支付宝用户的ID，不支持一次赠送给多个用户

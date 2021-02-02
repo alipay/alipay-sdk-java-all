@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 逆向物料信息 - 退换货或取消订单
  *
  * @author auto create
- * @since 1.0, 2020-06-11 20:03:32
+ * @since 1.0, 2020-12-21 14:25:05
  */
 public class AssetReverseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8825865646541858579L;
+	private static final long serialVersionUID = 7891154469667916222L;
 
 	/**
 	 * 退货数量

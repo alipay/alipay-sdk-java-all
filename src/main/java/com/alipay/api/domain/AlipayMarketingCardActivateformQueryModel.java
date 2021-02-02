@@ -11,17 +11,21 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardActivateformQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8289967448418661536L;
+	private static final long serialVersionUID = 2452493382692863225L;
 
 	/**
 	 * 开放表单信息查询业务类型，可选类型如下：
-MEMBER_CARD -- 会员卡开卡
+MEMBER_CARD ：商户会员卡开卡
 	 */
 	@ApiField("biz_type")
 	private String bizType;
 
 	/**
-	 * 查询用户表单提交信息的请求id，在用户授权表单确认提交后跳转商户页面url时返回此参数。
+	 * 查询用户表单提交信息的请求id。
+网页移动应用：将于auth_code 一起通过alipay.marketing.card.activateurl.apply(获取会员卡领卡投放链接)接口callback地址回传。
+小程序应用：将于 auth_code 一起通过 my.addCardAuth 接口 success 回调返回。
+
+注意：auth_code（用户授权码）用于换取用户授权令牌 accessToken，后续调用接口需传入accessToken。
 	 */
 	@ApiField("request_id")
 	private String requestId;

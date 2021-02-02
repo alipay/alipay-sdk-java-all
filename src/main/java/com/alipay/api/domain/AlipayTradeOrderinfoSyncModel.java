@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5139354513411625437L;
+	private static final long serialVersionUID = 8241378197424866983L;
 
 	/**
 	 * 交易信息同步对应的业务类型，具体值与支付宝约定；
@@ -44,7 +44,7 @@ VIOLATED： 用户已违约
 	private String origRequestNo;
 
 	/**
-	 * 标识一笔交易多次请求，同一笔交易多次信息同步时需要保证唯一
+	 * 外部请求号，商家自定义。标识一笔交易多次请求，同一笔交易多次信息同步时需要保证唯一。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

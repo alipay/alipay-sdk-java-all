@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.data.antlogmng.activitypagespm.create request
  * 
  * @author auto create
- * @since 1.0, 2019-05-22 14:30:54
+ * @since 1.0, 2021-01-06 16:28:25
  */
 public class AlipayMarketingDataAntlogmngActivitypagespmCreateRequest implements AlipayRequest<AlipayMarketingDataAntlogmngActivitypagespmCreateResponse> {
 

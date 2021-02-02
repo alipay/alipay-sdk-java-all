@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 法链系统 发起多方签约
  *
  * @author auto create
- * @since 1.0, 2020-09-22 15:37:48
+ * @since 1.0, 2020-11-04 15:21:37
  */
 public class AlipayBossProdAntlegalchainMultipartyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6619532816225346441L;
+	private static final long serialVersionUID = 5119124443237777288L;
 
 	/**
 	 * 申请人工号(内部buc工号)

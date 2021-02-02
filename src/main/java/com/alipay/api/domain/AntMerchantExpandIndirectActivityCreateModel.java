@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联商户运营活动报名接口
  *
  * @author auto create
- * @since 1.0, 2018-12-29 11:01:33
+ * @since 1.0, 2020-11-16 14:04:26
  */
 public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5121542192367751712L;
+	private static final long serialVersionUID = 7596768592583679534L;
 
 	/**
 	 * 活动类型，间连商户报名的支付宝活动类型。
@@ -29,7 +29,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 
 	/**
 	 * 银行卡信息。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("bank_account")
 	private BankCardInfo bankAccount;
@@ -38,7 +38,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	 * 营业执照，要求营业执照文本信息清晰可见。
 请上传照片OSSKey（参见应用场景说明）。
 蓝海行动必传。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("business_license_pic")
 	private String businessLicensePic;
@@ -46,7 +46,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 证明文件图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("certificate_file")
 	private String certificateFile;
@@ -54,7 +54,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 收费样本。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("charge_sample")
 	private String chargeSample;
@@ -64,7 +64,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 请上传照片OSSKey（参见应用场景说明）。
 蓝海活动必须包含：①主扫：扫码支付场景需要展示具有支付宝logo和“推荐使用支付宝 或 支付就用支付宝”露出的二维码物料或立牌；②被
 扫：展示具有支付宝logo和推荐使用支付宝 或 支付就用支付宝”的扫码机具（盒子 ）
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("checkstand_pic")
 	private String checkstandPic;
@@ -72,7 +72,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 照会。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("diplomatic_note")
 	private String diplomaticNote;
@@ -81,7 +81,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	 * 店内环境照，要求照片清晰可见。
 请上传照片OSSKey（参见应用场景说明）。
 蓝海活动必传。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("indoor_pic")
 	private String indoorPic;
@@ -89,7 +89,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 事业单位法人证书图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("institutional_organization_pic")
 	private String institutionalOrganizationPic;
@@ -97,7 +97,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 法人身份证图片。需上传包含正反面的法人身份证图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("legal_person_pic")
 	private String legalPersonPic;
@@ -105,7 +105,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 法人登记证书图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("legal_person_registration_pic")
 	private String legalPersonRegistrationPic;
@@ -113,7 +113,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 医疗执业许可证图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("medical_instrument_practice_license_pic")
 	private String medicalInstrumentPracticeLicensePic;
@@ -127,7 +127,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 组织机构代码证图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("org_cert_pic")
 	private String orgCertPic;
@@ -135,7 +135,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 民办非企业单位登记证书图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("private_nonenterprise_units")
 	private String privateNonenterpriseUnits;
@@ -143,7 +143,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 办学资质图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("run_school_license_pic")
 	private String runSchoolLicensePic;
@@ -152,7 +152,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	 * 主流餐饮平台入驻证明（任选一个即可）：大众点评、美团、饿了么、口碑、百度外卖餐饮平台商户展示页面。
 请上传照片OSSKey（参见应用场景说明）。
 蓝海活动必传。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("settled_pic")
 	private String settledPic;
@@ -161,7 +161,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	 * 门头照。
 请上传照片OSSKey（参见应用场景说明）。
 蓝海行动必传。
-特殊行业，请参见<a href="https://docs.open.alipay.com/10933">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
 	 */
 	@ApiField("shop_entrance_pic")
 	private String shopEntrancePic;

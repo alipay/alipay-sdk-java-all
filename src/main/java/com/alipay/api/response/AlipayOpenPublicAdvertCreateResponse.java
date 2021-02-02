@@ -8,17 +8,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.advert.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2021-01-25 16:32:49
  */
 public class AlipayOpenPublicAdvertCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5558236523223189859L;
+	private static final long serialVersionUID = 2234334567795584477L;
+
+	/** 
+	 * 广告分组标识
+	 */
+	@ApiField("advert_group")
+	private String advertGroup;
 
 	/** 
 	 * 广告位id
 	 */
 	@ApiField("advert_id")
 	private String advertId;
+
+	public void setAdvertGroup(String advertGroup) {
+		this.advertGroup = advertGroup;
+	}
+	public String getAdvertGroup( ) {
+		return this.advertGroup;
+	}
 
 	public void setAdvertId(String advertId) {
 		this.advertId = advertId;

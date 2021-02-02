@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单下单并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2020-03-16 13:10:41
+ * @since 1.0, 2020-12-30 10:36:37
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8381196577796546613L;
+	private static final long serialVersionUID = 5529595614845839978L;
 
 	/**
 	 * 签约参数，支付后签约场景使用
@@ -63,14 +63,16 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private ExtendParams extendParams;
 
 	/**
-	 * 订单包含的商品列表信息，json格式，其它说明详见商品明细说明
+	 * 订单包含的商品列表信息，json格式。
 	 */
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail")
 	private List<GoodsDetail> goodsDetail;
 
 	/**
-	 * 商品主类型 :0-虚拟类商品,1-实物类商品
+	 * 商品主类型 ，枚举支持：
+0：虚拟类商品；
+1：实物类商品。
 注：虚拟类商品不支持使用花呗渠道
 	 */
 	@ApiField("goods_type")
@@ -99,7 +101,7 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private String merchantOrderNo;
 
 	/**
-	 * 商户订单号,64个字符以内、可包含字母、数字、下划线；需保证在商户端不重复
+	 * 商户订单号。64 个字符以内的大小，仅支持字母、数字、下划线。需保证该参数在商户端不重复。
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
@@ -157,13 +159,13 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private String requestFromUrl;
 
 	/**
-	 * 描述分账信息，json格式，详见分账参数说明
+	 * 描述分账信息，json格式。
 	 */
 	@ApiField("royalty_info")
 	private RoyaltyInfo royaltyInfo;
 
 	/**
-	 * 描述结算信息，json格式，详见结算参数说明
+	 * 描述结算信息，json格式。
 	 */
 	@ApiField("settle_info")
 	private SettleInfo settleInfo;
@@ -181,7 +183,8 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private SubMerchant subMerchant;
 
 	/**
-	 * 订单标题
+	 * 商品标题/交易标题/订单标题/订单关键字等。 
+注意：不可使用特殊字符，如 /，=，& 等。
 	 */
 	@ApiField("subject")
 	private String subject;
@@ -199,7 +202,7 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	private String timeoutExpress;
 
 	/**
-	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。
+	 * 订单总金额，单位为人民币（元），取值范围为 0.01~100000000.00，精确到小数点后两位。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

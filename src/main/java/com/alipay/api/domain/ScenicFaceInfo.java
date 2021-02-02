@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户出库数据模型
  *
  * @author auto create
- * @since 1.0, 2019-11-26 20:40:17
+ * @since 1.0, 2021-01-29 11:26:17
  */
 public class ScenicFaceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7778885149568933957L;
+	private static final long serialVersionUID = 6748664985754595351L;
 
 	/**
-	 * 用户场景下唯一标示码
+	 * 用户场景下唯一标示码。（注：请确保传入face_id的自然人维度全局唯一）
 	 */
 	@ApiField("face_id")
 	private String faceId;

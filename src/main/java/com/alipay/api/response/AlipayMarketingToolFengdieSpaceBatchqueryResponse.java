@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.space.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-22 14:31:13
+ * @since 1.0, 2021-01-06 16:28:35
  */
 public class AlipayMarketingToolFengdieSpaceBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2296232637736788333L;
+	private static final long serialVersionUID = 2296668162139166995L;
 
 	/** 
 	 * 云凤蝶空间列表查询接口返回值，包含分页信息，空间信息的列表。

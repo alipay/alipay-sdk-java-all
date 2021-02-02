@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分包信息
  *
  * @author auto create
- * @since 1.0, 2020-03-04 14:22:15
+ * @since 1.0, 2021-01-20 15:13:30
  */
 public class SubPackage extends AlipayObject {
 
-	private static final long serialVersionUID = 7567877173183776336L;
+	private static final long serialVersionUID = 6555577195265286559L;
 
 	/**
 	 * 构建结果地址
 	 */
 	@ApiField("build_package_url")
 	private String buildPackageUrl;
+
+	/**
+	 * 构建结果地址
+	 */
+	@ApiField("new_build_package_url")
+	private String newBuildPackageUrl;
 
 	/**
 	 * 分包路径
@@ -42,6 +48,13 @@ public class SubPackage extends AlipayObject {
 	}
 	public void setBuildPackageUrl(String buildPackageUrl) {
 		this.buildPackageUrl = buildPackageUrl;
+	}
+
+	public String getNewBuildPackageUrl() {
+		return this.newBuildPackageUrl;
+	}
+	public void setNewBuildPackageUrl(String newBuildPackageUrl) {
+		this.newBuildPackageUrl = newBuildPackageUrl;
 	}
 
 	public String getPath() {

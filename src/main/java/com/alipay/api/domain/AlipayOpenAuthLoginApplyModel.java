@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 第三方信登支付宝
  *
  * @author auto create
- * @since 1.0, 2020-05-26 17:41:49
+ * @since 1.0, 2020-12-14 14:27:41
  */
 public class AlipayOpenAuthLoginApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6745515947515482364L;
+	private static final long serialVersionUID = 6242675962546316852L;
 
 	/**
 	 * 当前登录调用方平台的开发者登录渠道，如阿里云允许用阿里云账号、淘宝账号、支付宝账号、1688账号、钉钉账号、新浪账号登录，可选值有：aliyun、taobao、alipay、dingtalk、1688、sina

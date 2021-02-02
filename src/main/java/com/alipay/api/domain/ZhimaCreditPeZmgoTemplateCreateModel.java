@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻Go模板创建
  *
  * @author auto create
- * @since 1.0, 2020-10-09 10:21:47
+ * @since 1.0, 2020-12-30 19:27:13
  */
 public class ZhimaCreditPeZmgoTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7179234346974757844L;
+	private static final long serialVersionUID = 7686665538134883535L;
+
+	/**
+	 * 使用权益跳转链接
+	 */
+	@ApiField("benefit_url")
+	private String benefitUrl;
 
 	/**
 	 * 业务号，控制幂等
@@ -72,6 +78,13 @@ PROMISE_MEMBER，承诺会员。
 	 */
 	@ApiField("template_name")
 	private String templateName;
+
+	public String getBenefitUrl() {
+		return this.benefitUrl;
+	}
+	public void setBenefitUrl(String benefitUrl) {
+		this.benefitUrl = benefitUrl;
+	}
 
 	public String getBizNo() {
 		return this.bizNo;

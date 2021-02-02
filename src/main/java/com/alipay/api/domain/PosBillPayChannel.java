@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * pos账单支付渠道信息
  *
  * @author auto create
- * @since 1.0, 2020-06-18 15:09:25
+ * @since 1.0, 2021-01-19 14:21:46
  */
 public class PosBillPayChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 1134111524886878254L;
+	private static final long serialVersionUID = 1547682944239354951L;
 
 	/**
 	 * 支付渠道类型:

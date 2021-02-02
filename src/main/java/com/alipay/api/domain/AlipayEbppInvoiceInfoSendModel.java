@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票信息回传接口（新版）
  *
  * @author auto create
- * @since 1.0, 2020-09-08 14:06:28
+ * @since 1.0, 2021-01-04 11:21:44
  */
 public class AlipayEbppInvoiceInfoSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3664388255536149144L;
+	private static final long serialVersionUID = 3168238342889225177L;
 
 	/**
 	 * 发票信息列表

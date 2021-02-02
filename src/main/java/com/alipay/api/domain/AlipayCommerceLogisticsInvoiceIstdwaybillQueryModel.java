@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询即时配送订单的开票结果
  *
  * @author auto create
- * @since 1.0, 2020-09-26 22:35:27
+ * @since 1.0, 2020-11-20 11:38:39
  */
 public class AlipayCommerceLogisticsInvoiceIstdwaybillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5141564235237757955L;
+	private static final long serialVersionUID = 5852481395196319677L;
 
 	/**
 	 * 即时配送公司编码

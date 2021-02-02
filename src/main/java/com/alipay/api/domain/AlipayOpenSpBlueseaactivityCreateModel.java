@@ -7,26 +7,33 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新蓝海活动报名申请
  *
  * @author auto create
- * @since 1.0, 2020-10-24 07:17:33
+ * @since 1.0, 2020-11-25 17:36:17
  */
 public class AlipayOpenSpBlueseaactivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1349854285876117297L;
+	private static final long serialVersionUID = 6739141476525671318L;
 
 	/**
-	 * 详细地址
+	 * 详细地址。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("address")
 	private String address;
 
 	/**
-	 * 蓝海活动的场景，包括直连餐饮（BLUE_SEA_FOOD_APPLY）、直连快消（BLUE_SEA_FMCG_APPLY）、间连餐饮（BLUE_SEA_FOOD_INDIRECT_APPLY）、间连快消（BLUE_SEA_FMCG_INDIRECT_APPLY）场景
+	 * 蓝海活动的场景，支持场景如下：
+直连餐饮（BLUE_SEA_FOOD_APPLY）；
+直连快消（BLUE_SEA_FMCG_APPLY）；
+间连餐饮（BLUE_SEA_FOOD_INDIRECT_APPLY）；
+间连快消（BLUE_SEA_FMCG_INDIRECT_APPLY）。
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
 
 	/**
-	 * 营业执照，要求证件文本信息清晰可见。 请上传照片fileId（传参明细参见应用场景说明）
+	 * 营业执照，要求证件文本信息清晰可见，图片文件大小在 50K-5M 之间，不限制长宽，支持 png、bmp、gif、jpg、jpeg格式。
+请传入图片上传接口  https://opendocs.alipay.com/apis/01ea4t  返回的的image_id。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("business_lic")
 	private String businessLic;
@@ -44,43 +51,55 @@ public class AlipayOpenSpBlueseaactivityCreateModel extends AlipayObject {
 	private String districtCode;
 
 	/**
-	 * 食品经营许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 食品经营许可证，要求证件文本信息清晰可见，图片文件大小在 50K-5M 之间，不限制长宽，支持 png、bmp、gif、jpg、jpeg格式。
+请传入图片上传接口  https://opendocs.alipay.com/apis/01ea4t  返回的的image_id。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("food_business_lic")
 	private String foodBusinessLic;
 
 	/**
-	 * 食品流通许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 食品流通许可证，要求证件文本信息清晰可见，图片文件大小在 50K-5M 之间，不限制长宽，支持 png、bmp、gif、jpg、jpeg格式。
+请传入图片上传接口  https://opendocs.alipay.com/apis/01ea4t  返回的的image_id。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("food_circulate_lic")
 	private String foodCirculateLic;
 
 	/**
-	 * 食品卫生许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 食品卫生许可证，要求证件文本信息清晰可见，图片文件大小在 50K-5M 之间，不限制长宽，支持 png、bmp、gif、jpg、jpeg格式。
+请传入图片上传接口  https://opendocs.alipay.com/apis/01ea4t  返回的的image_id。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("food_health_lic")
 	private String foodHealthLic;
 
 	/**
-	 * 食品生产许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 食品生产许可证，要求证件文本信息清晰可见，图片文件大小在 50K-5M 之间，不限制长宽，支持 png、bmp、gif、jpg、jpeg格式。
+请传入图片上传接口  https://opendocs.alipay.com/apis/01ea4t  返回的的image_id。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("food_production_lic")
 	private String foodProductionLic;
 
 	/**
-	 * 餐饮服务许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 餐饮服务许可证，要求证件文本信息清晰可见，图片文件大小在 50K-5M 之间，不限制长宽，支持 png、bmp、gif、jpg、jpeg格式。
+请传入图片上传接口  https://opendocs.alipay.com/apis/01ea4t  返回的的image_id。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("food_service_lic")
 	private String foodServiceLic;
 
 	/**
-	 * 门头照，要求内景照片清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 内景照，要求图片清晰可见，图片文件大小在 50K-5M 之间，不限制长宽，支持 png、bmp、gif、jpg、jpeg格式。
+请传入图片上传接口  https://opendocs.alipay.com/apis/01ea4t  返回的的image_id。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("indoor_pic")
 	private String indoorPic;
 
 	/**
-	 * 参与蓝海活动的商户支付宝账号，只有当参与直连蓝海活动场景（BLUE_SEA_FOOD_APPLY/BLUE_SEA_FMCG_APPLY）时必填，间连场景可空
+	 * 参与蓝海活动的商户支付宝账号，只有当参与直连蓝海活动场景（BLUE_SEA_FOOD_APPLY/BLUE_SEA_FMCG_APPLY）时必填，间连场景可空。
 	 */
 	@ApiField("merchant_logon")
 	private String merchantLogon;
@@ -92,19 +111,23 @@ public class AlipayOpenSpBlueseaactivityCreateModel extends AlipayObject {
 	private String provinceCode;
 
 	/**
-	 * 门头照，要求店铺外观照片清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 门头照，要求图片清晰可见，图片文件大小在 50K-5M 之间，不限制长宽，支持 png、bmp、gif、jpg、jpeg格式。
+请传入图片上传接口  https://opendocs.alipay.com/apis/01ea4t  返回的的image_id。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("shop_entrance_pic")
 	private String shopEntrancePic;
 
 	/**
-	 * 参与蓝海活动的间连商户账号，只有当参与间连蓝海活动场景（BLUE_SEA_FOOD_INDIRECT_APPLY/BLUE_SEA_FMCG_INDIRECT_APPLY）时必填，直连场景可空
+	 * 参与蓝海活动的间连商户账号，只有当参与间连蓝海活动场景（BLUE_SEA_FOOD_INDIRECT_APPLY/BLUE_SEA_FMCG_INDIRECT_APPLY）时必填，直连场景可空。
 	 */
 	@ApiField("sub_merchant_id")
 	private String subMerchantId;
 
 	/**
-	 * 烟草专卖零售许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 烟草专卖零售许可证，要求证件文本信息清晰可见，图片文件大小在 50K-5M 之间，不限制长宽，支持 png、bmp、gif、jpg、jpeg格式。
+请传入图片上传接口  https://opendocs.alipay.com/apis/01ea4t  返回的的image_id。
+该资质是否必传请参见<a href='https://opendocs.alipay.com/open/01hd83'>报名资质要求</a>。
 	 */
 	@ApiField("tobacco_lic")
 	private String tobaccoLic;

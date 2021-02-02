@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPassInstanceAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4612768149457386959L;
+	private static final long serialVersionUID = 1816147713524788715L;
 
 	/**
 	 * 支付宝用户识别信息：uid发券组件。对接文档：https://docs.open.alipay.com/199/sy3hs4
@@ -20,7 +20,10 @@ public class AlipayPassInstanceAddModel extends AlipayObject {
 	private String recognitionInfo;
 
 	/**
-	 * Alipass添加对象识别类型：1–订单信息
+	 * Alipass添加对象识别类型，枚举如下：
+1：订单信息；
+2：基于用户信息识别。
+说明：支付宝卡包场景暂仅支持 2。
 	 */
 	@ApiField("recognition_type")
 	private String recognitionType;

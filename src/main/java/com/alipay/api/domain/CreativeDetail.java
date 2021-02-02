@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创意详情列表
  *
  * @author auto create
- * @since 1.0, 2020-02-28 21:14:46
+ * @since 1.0, 2020-11-24 15:18:30
  */
 public class CreativeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1176968887883826739L;
+	private static final long serialVersionUID = 7228175247658759863L;
 
 	/**
 	 * 落地页动作类型，NO_ACTION-无动作；LP-普通落地页；OPEN_TINYAPP-打开小程序；OPEN_CHANNELS-打开生活号；COLLECT_TINYAPP-收藏小程序；
@@ -114,6 +114,12 @@ public class CreativeDetail extends AlipayObject {
 	 */
 	@ApiField("principal_id")
 	private Long principalId;
+
+	/**
+	 * 创意审核拒绝的扩展信息
+	 */
+	@ApiField("refuse_extend_info")
+	private CreativeRefuseExtendInfo refuseExtendInfo;
 
 	/**
 	 * 创意审核拒绝原因
@@ -288,6 +294,13 @@ public class CreativeDetail extends AlipayObject {
 	}
 	public void setPrincipalId(Long principalId) {
 		this.principalId = principalId;
+	}
+
+	public CreativeRefuseExtendInfo getRefuseExtendInfo() {
+		return this.refuseExtendInfo;
+	}
+	public void setRefuseExtendInfo(CreativeRefuseExtendInfo refuseExtendInfo) {
+		this.refuseExtendInfo = refuseExtendInfo;
 	}
 
 	public String getRefuseReason() {

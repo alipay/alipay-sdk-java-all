@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约参数。用于sdk支付并签约中传入签约信息。
  *
  * @author auto create
- * @since 1.0, 2020-07-08 11:47:41
+ * @since 1.0, 2020-12-21 20:03:43
  */
 public class SignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5232285384961887111L;
+	private static final long serialVersionUID = 2297285623645254825L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 虚拟类目同步菜品简化结构类目信息
  *
  * @author auto create
- * @since 1.0, 2020-09-07 16:12:55
+ * @since 1.0, 2020-12-14 14:01:24
  */
 public class KbdishVirtualCatetorySimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6238997354311113149L;
+	private static final long serialVersionUID = 8233622442587296133L;
 
 	/**
 	 * 虚拟类目的名称
@@ -41,6 +41,18 @@ public class KbdishVirtualCatetorySimplifyInfo extends AlipayObject {
 	@ApiListField("out_shop_ids")
 	@ApiField("string")
 	private List<String> outShopIds;
+
+	/**
+	 * forever/week，分别表示永久、按周，不传则只检查time_ranges字段
+	 */
+	@ApiField("period_type")
+	private String periodType;
+
+	/**
+	 * 有效时间值，如果为forever则忽略，表示永久生效，如果为week，则传周几，逗号分隔，阿拉伯数字，1,2,5即表示周一、周二、周五生效
+	 */
+	@ApiField("period_value")
+	private String periodValue;
 
 	/**
 	 * 菜品在菜谱中的售卖时间，同一个out_dish_id都指定的情况下，以第一个为准
@@ -75,6 +87,20 @@ public class KbdishVirtualCatetorySimplifyInfo extends AlipayObject {
 	}
 	public void setOutShopIds(List<String> outShopIds) {
 		this.outShopIds = outShopIds;
+	}
+
+	public String getPeriodType() {
+		return this.periodType;
+	}
+	public void setPeriodType(String periodType) {
+		this.periodType = periodType;
+	}
+
+	public String getPeriodValue() {
+		return this.periodValue;
+	}
+	public void setPeriodValue(String periodValue) {
+		this.periodValue = periodValue;
 	}
 
 	public List<String> getTimeRanges() {

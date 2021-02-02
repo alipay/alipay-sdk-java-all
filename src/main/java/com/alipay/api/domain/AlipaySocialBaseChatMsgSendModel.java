@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝单聊发消息
  *
  * @author auto create
- * @since 1.0, 2018-03-15 14:16:36
+ * @since 1.0, 2020-10-30 14:45:11
  */
 public class AlipaySocialBaseChatMsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8418263414974517225L;
+	private static final long serialVersionUID = 7851356892977252458L;
 
 	/**
 	 * 消息简短描述，显示在会话列表上，必填

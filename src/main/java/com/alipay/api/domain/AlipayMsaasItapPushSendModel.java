@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 智能设备变更发送消息通知
  *
  * @author auto create
- * @since 1.0, 2020-06-18 18:55:03
+ * @since 1.0, 2020-10-26 10:00:18
  */
 public class AlipayMsaasItapPushSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3543174695628412591L;
+	private static final long serialVersionUID = 8153476648133964321L;
 
 	/**
 	 * 设备消息通知消息体

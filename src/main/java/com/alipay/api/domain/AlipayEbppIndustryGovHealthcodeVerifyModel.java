@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康码验码接口
  *
  * @author auto create
- * @since 1.0, 2020-04-21 11:08:42
+ * @since 1.0, 2021-01-25 18:48:31
  */
 public class AlipayEbppIndustryGovHealthcodeVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3364178111183889953L;
+	private static final long serialVersionUID = 2488956986877476894L;
 
 	/**
 	 * 市

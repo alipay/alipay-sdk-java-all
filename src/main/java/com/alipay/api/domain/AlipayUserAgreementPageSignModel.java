@@ -7,15 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2020-07-29 16:43:06
+ * @since 1.0, 2020-11-20 13:04:09
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8848778882591568653L;
+	private static final long serialVersionUID = 8356745334983575211L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
-扫码或者短信页面签约需要拼装http的请求地址访问中间页面，钱包h5页面签约可直接拼接schema的请求地址
+扫码或者短信页面签约需要拼装http的请求地址访问中间页面，钱包h5页面签约可直接拼接scheme的请求地址
 	 */
 	@ApiField("access_params")
 	private AccessParams accessParams;
@@ -84,6 +84,7 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 
 	/**
 	 * 个人签约产品码，商户和支付宝签约时确定，商户可咨询技术支持。
+周期扣款个人签约产品码固定为 CYCLE_PAY_AUTH_P
 	 */
 	@ApiField("personal_product_code")
 	private String personalProductCode;
@@ -96,6 +97,7 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 
 	/**
 	 * 销售产品码，商户签约的支付宝合同所对应的产品码。
+周期扣款场景固定为 CYCLE_PAY_AUTH。
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -109,6 +111,8 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	/**
 	 * 协议签约场景，商户和支付宝签约时确定，商户可咨询技术支持。
 当传入商户签约号external_agreement_no时，场景不能为默认值DEFAULT|DEFAULT。
+代扣产品常见场景值参见：  https://opendocs.alipay.com/open/20190319114403226822/signscene。
+
 	 */
 	@ApiField("sign_scene")
 	private String signScene;

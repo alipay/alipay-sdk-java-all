@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8542633473796184756L;
+	private static final long serialVersionUID = 5762889378594596761L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ） ，如果传了该参数，其他参数会被忽略
@@ -35,21 +35,21 @@ public class AlipayUserAgreementQueryModel extends AlipayObject {
 	/**
 	 * 代扣协议中标示用户的唯一签约号(确保在商户系统中
 唯一)。
-格式规则:支持大写小写字 母和数字，最长 32 位。
+格式规则:支持大写小写字母和数字，最长 32 位。
 	 */
 	@ApiField("external_agreement_no")
 	private String externalAgreementNo;
 
 	/**
-	 * 协议产品码，商户和支付宝签约时确定，商户可咨询技术支持。
+	 * 协议产品码，商户和支付宝签约时确定，商户可咨询技术支持。周期扣款场景固定为：CYCLE_PAY_AUTH_P。
 	 */
 	@ApiField("personal_product_code")
 	private String personalProductCode;
 
 	/**
-	 * 签约协议场景，商户和支付宝签约时确定，商户可咨询技术支持。
-当传入商户签约号 external_agreement_no 时，场景不能为空或默认值 DEFAULT|DEFAULT。
-该值需要与系统/页面签约接口调用时传入的值保持一 致。
+	 * 签约场景码，该值需要与系统/页面签约接口调用时传入的值保持一 致。如：周期扣款场景与调用 alipay.user.agreement.page.sign(支付宝个人协议页面签约接口) 签约时的 sign_scene 相同。 
+注意：当传入商户签约号 external_agreement_no 时，该值不能为空或默认值 DEFAULT|DEFAULT。
+
 	 */
 	@ApiField("sign_scene")
 	private String signScene;

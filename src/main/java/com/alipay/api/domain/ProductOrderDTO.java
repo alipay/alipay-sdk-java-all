@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合约订购关系返回模型
  *
  * @author auto create
- * @since 1.0, 2020-07-01 09:43:41
+ * @since 1.0, 2021-01-19 17:00:24
  */
 public class ProductOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6174541654663245556L;
+	private static final long serialVersionUID = 5145245967879141385L;
 
 	/**
 	 * 生效时间
@@ -66,6 +66,12 @@ public class ProductOrderDTO extends AlipayObject {
 	 */
 	@ApiField("ps_code")
 	private String psCode;
+
+	/**
+	 * 签约活动
+	 */
+	@ApiField("sign_activity_dto")
+	private SignActivityDTO signActivityDto;
 
 	/**
 	 * 合约状态
@@ -134,6 +140,13 @@ public class ProductOrderDTO extends AlipayObject {
 	}
 	public void setPsCode(String psCode) {
 		this.psCode = psCode;
+	}
+
+	public SignActivityDTO getSignActivityDto() {
+		return this.signActivityDto;
+	}
+	public void setSignActivityDto(SignActivityDTO signActivityDto) {
+		this.signActivityDto = signActivityDto;
 	}
 
 	public String getStatus() {

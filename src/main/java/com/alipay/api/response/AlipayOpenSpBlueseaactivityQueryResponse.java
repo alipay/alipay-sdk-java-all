@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.blueseaactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-10-24 07:17:29
+ * @since 1.0, 2020-12-03 17:31:20
  */
 public class AlipayOpenSpBlueseaactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4353683495616228443L;
+	private static final long serialVersionUID = 7234159512523346464L;
 
 	/** 
 	 * 详细地址
@@ -27,7 +27,7 @@ public class AlipayOpenSpBlueseaactivityQueryResponse extends AlipayResponse {
 	private String bizScene;
 
 	/** 
-	 * 营业执照，要求证件文本信息清晰可见。 请上传照片fileId（传参明细参见应用场景说明）
+	 * 营业执照，要求证件文本信息清晰可见。 资质信息请参见<a href="https://opendocs.alipay.com/open/01hd83">报名资质要求</a>
 	 */
 	@ApiField("business_lic")
 	private String businessLic;
@@ -45,40 +45,46 @@ public class AlipayOpenSpBlueseaactivityQueryResponse extends AlipayResponse {
 	private String districtCode;
 
 	/** 
-	 * 食品经营许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 食品经营许可证，要求证件文本信息清晰可见。资质信息请参见<a href="https://opendocs.alipay.com/open/01hd83">报名资质要求</a>
 	 */
 	@ApiField("food_business_lic")
 	private String foodBusinessLic;
 
 	/** 
-	 * 食品流通许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 食品流通许可证，要求证件文本信息清晰可见。资质信息请参见<a href="https://opendocs.alipay.com/open/01hd83">报名资质要求</a>
 	 */
 	@ApiField("food_circulate_lic")
 	private String foodCirculateLic;
 
 	/** 
-	 * 食品卫生许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 食品卫生许可证，要求证件文本信息清晰可见。资质信息请参见<a href="https://opendocs.alipay.com/open/01hd83">报名资质要求</a>
 	 */
 	@ApiField("food_health_lic")
 	private String foodHealthLic;
 
 	/** 
-	 * 食品生产许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 食品生产许可证，要求证件文本信息清晰可见。资质信息请参见<a href="https://opendocs.alipay.com/open/01hd83">报名资质要求</a>
 	 */
 	@ApiField("food_production_lic")
 	private String foodProductionLic;
 
 	/** 
-	 * 餐饮服务许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 餐饮服务许可证，要求证件文本信息清晰可见。资质信息请参见<a href="https://opendocs.alipay.com/open/01hd83">报名资质要求</a>
 	 */
 	@ApiField("food_service_lic")
 	private String foodServiceLic;
 
 	/** 
-	 * 门头照，要求内景照片清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 门头照，要求内景照片清晰可见。资质信息请参见<a href="https://opendocs.alipay.com/open/01hd83">报名资质要求</a>
 	 */
 	@ApiField("indoor_pic")
 	private String indoorPic;
+
+	/** 
+	 * 审核驳回原因，在订单状态为失败时有效
+	 */
+	@ApiField("memo")
+	private String memo;
 
 	/** 
 	 * 参与蓝海活动的商户支付宝账号，只有当参与直连蓝海活动场景（BLUE_SEA_FOOD_APPLY/BLUE_SEA_FMCG_APPLY）时才返回
@@ -93,7 +99,7 @@ public class AlipayOpenSpBlueseaactivityQueryResponse extends AlipayResponse {
 	private String provinceCode;
 
 	/** 
-	 * 门头照，要求店铺外观照片清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 门头照，要求店铺外观照片清晰可见。资质信息请参见<a href="https://opendocs.alipay.com/open/01hd83">报名资质要求</a>
 	 */
 	@ApiField("shop_entrance_pic")
 	private String shopEntrancePic;
@@ -111,7 +117,7 @@ public class AlipayOpenSpBlueseaactivityQueryResponse extends AlipayResponse {
 	private String subMerchantId;
 
 	/** 
-	 * 烟草专卖零售许可证，要求证件文本信息清晰可见。请上传照片fieldId（传参明细参见应用场景说明）
+	 * 烟草专卖零售许可证，要求证件文本信息清晰可见。资质信息请参见<a href="https://opendocs.alipay.com/open/01hd83">报名资质要求</a>
 	 */
 	@ApiField("tobacco_lic")
 	private String tobaccoLic;
@@ -191,6 +197,13 @@ public class AlipayOpenSpBlueseaactivityQueryResponse extends AlipayResponse {
 	}
 	public String getIndoorPic( ) {
 		return this.indoorPic;
+	}
+
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+	public String getMemo( ) {
+		return this.memo;
 	}
 
 	public void setMerchantLogon(String merchantLogon) {

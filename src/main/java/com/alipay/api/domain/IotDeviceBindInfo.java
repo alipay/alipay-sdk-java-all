@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备绑定信息
  *
  * @author auto create
- * @since 1.0, 2020-10-16 20:50:06
+ * @since 1.0, 2020-11-04 16:28:50
  */
 public class IotDeviceBindInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4365364939699816493L;
+	private static final long serialVersionUID = 5481143144631521946L;
 
 	/**
 	 * 应用类型，目前只支持小程序MINI_APP
@@ -98,10 +98,22 @@ public class IotDeviceBindInfo extends AlipayObject {
 	private String source;
 
 	/**
+	 * 表示ISV在开放平台注册的SPI服务应用的app_id
+	 */
+	@ApiField("spi_app_id")
+	private String spiAppId;
+
+	/**
 	 * 设备供应商ID：supplierId
 	 */
 	@ApiField("supplier_id")
 	private String supplierId;
+
+	/**
+	 * 由ISV自定义的扩展字段，在支付宝侧向SPI服务发起请求时透传给ISV的服务，使得ISV能够自定义商户、设备等相关的信息，包括ISV商户、ISV门店、设备身份、安全校验等。
+	 */
+	@ApiField("terminal_bind_info")
+	private String terminalBindInfo;
 
 	public String getAppType() {
 		return this.appType;
@@ -201,11 +213,25 @@ public class IotDeviceBindInfo extends AlipayObject {
 		this.source = source;
 	}
 
+	public String getSpiAppId() {
+		return this.spiAppId;
+	}
+	public void setSpiAppId(String spiAppId) {
+		this.spiAppId = spiAppId;
+	}
+
 	public String getSupplierId() {
 		return this.supplierId;
 	}
 	public void setSupplierId(String supplierId) {
 		this.supplierId = supplierId;
+	}
+
+	public String getTerminalBindInfo() {
+		return this.terminalBindInfo;
+	}
+	public void setTerminalBindInfo(String terminalBindInfo) {
+		this.terminalBindInfo = terminalBindInfo;
 	}
 
 }

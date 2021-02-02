@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智慧门店的ISV数据记录回流
  *
  * @author auto create
- * @since 1.0, 2020-09-02 15:45:43
+ * @since 1.0, 2020-11-24 15:50:19
  */
 public class KoubeiCateringSmartstoreDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5874328481988625766L;
+	private static final long serialVersionUID = 4374167137785153653L;
 
 	/**
 	 * 烘焙商品操作模型，如果是传输烘焙商品操作数据，此模型需要赋值，其他业务无需关心此字段

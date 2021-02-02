@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeAppMergePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3383857393326118527L;
+	private static final long serialVersionUID = 1494233712448186437L;
 
 	/**
-	 * 如果预创建成功，支付宝返回该预下单号，后续商户使用该预下单号请求支付宝支付接口
+	 * 预下单号。通过 alipay.trade.merge.precreate(统一收单合并支付预创建接口)返回。
 	 */
 	@ApiField("pre_order_no")
 	private String preOrderNo;

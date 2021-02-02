@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务活动预算申请Request
  *
  * @author auto create
- * @since 1.0, 2020-09-25 09:47:50
+ * @since 1.0, 2021-01-22 13:19:02
  */
 public class ApplyBizBudgetRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 2392326378428279485L;
+	private static final long serialVersionUID = 7246166767487967725L;
 
 	/**
 	 * 预算申请金额，人民币
@@ -32,6 +34,12 @@ APPEND_TO:增加到，将原有基础增加到100
 	 */
 	@ApiField("biz_budget_apply_code")
 	private String bizBudgetApplyCode;
+
+	/**
+	 * 业务申请的时间，默认不填写为当前时间，填写后可以按照业务申请时间来进行预算申请有效期校验
+	 */
+	@ApiField("biz_date")
+	private Date bizDate;
 
 	/**
 	 * 业务名称
@@ -70,6 +78,13 @@ APPEND_TO:增加到，将原有基础增加到100
 	}
 	public void setBizBudgetApplyCode(String bizBudgetApplyCode) {
 		this.bizBudgetApplyCode = bizBudgetApplyCode;
+	}
+
+	public Date getBizDate() {
+		return this.bizDate;
+	}
+	public void setBizDate(Date bizDate) {
+		this.bizDate = bizDate;
 	}
 
 	public String getBizName() {

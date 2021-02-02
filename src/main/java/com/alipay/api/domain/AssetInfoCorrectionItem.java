@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料信息更正服务请求信息
  *
  * @author auto create
- * @since 1.0, 2020-06-11 20:04:19
+ * @since 1.0, 2020-12-21 14:23:38
  */
 public class AssetInfoCorrectionItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5741761176336449812L;
+	private static final long serialVersionUID = 8799672294396612462L;
 
 	/**
 	 * 配送, 生产指令id.

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建构建任务
  *
  * @author auto create
- * @since 1.0, 2020-10-19 16:15:44
+ * @since 1.0, 2020-12-30 17:05:43
  */
 public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3126227525283998652L;
+	private static final long serialVersionUID = 2876817912678782975L;
 
 	/**
 	 * 业务来源，新接入方需要向支付宝申请专用来源，否则不予接入。https://yuque.antfin-inc.com/tinyapp-all/qddncu/bidushixiang
@@ -124,6 +124,18 @@ https://registry.npm.alibaba-inc.com/@alipay/tiny-cli/huoban-prod
 	 */
 	@ApiField("build_version")
 	private String buildVersion;
+
+	/**
+	 * 已经构建过的包大小，单位是字节，主要是给自行构建的场景使用
+	 */
+	@ApiField("builded_package_size")
+	private String buildedPackageSize;
+
+	/**
+	 * 已经构建的包地址，目前主要自行构建的场景使用
+	 */
+	@ApiField("builded_package_url")
+	private String buildedPackageUrl;
 
 	/**
 	 * 一个端的标识，用于区分不同的客户端，每接入一个客户端，都需要向小程序应用中心申请bundleId入驻
@@ -280,6 +292,20 @@ https://registry.npm.alibaba-inc.com/@alipay/tiny-cli/huoban-prod
 	}
 	public void setBuildVersion(String buildVersion) {
 		this.buildVersion = buildVersion;
+	}
+
+	public String getBuildedPackageSize() {
+		return this.buildedPackageSize;
+	}
+	public void setBuildedPackageSize(String buildedPackageSize) {
+		this.buildedPackageSize = buildedPackageSize;
+	}
+
+	public String getBuildedPackageUrl() {
+		return this.buildedPackageUrl;
+	}
+	public void setBuildedPackageUrl(String buildedPackageUrl) {
+		this.buildedPackageUrl = buildedPackageUrl;
 	}
 
 	public String getBundleId() {

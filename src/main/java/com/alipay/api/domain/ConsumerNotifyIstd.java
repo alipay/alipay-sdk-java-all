@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消费者通知信息
  *
  * @author auto create
- * @since 1.0, 2020-09-22 16:28:57
+ * @since 1.0, 2020-12-14 14:56:35
  */
 public class ConsumerNotifyIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 2767711212631517253L;
+	private static final long serialVersionUID = 6342336135439847635L;
 
 	/**
 	 * 商品数量
@@ -20,7 +20,7 @@ public class ConsumerNotifyIstd extends AlipayObject {
 	private Long goodsCount;
 
 	/**
-	 * 商品缩略图url
+	 * 商品缩略图url，支持格式：bmp、jpg、jpeg、png、gif
 	 */
 	@ApiField("goods_img")
 	private String goodsImg;

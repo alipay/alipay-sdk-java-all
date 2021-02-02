@@ -5,6 +5,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TradeFundBill;
+import com.alipay.api.domain.HbFqPayInfo;
 import com.alipay.api.domain.TradeSettleInfo;
 import com.alipay.api.domain.VoucherDetail;
 
@@ -14,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-20 16:53:53
+ * @since 1.0, 2020-12-31 09:45:14
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5824397687371129365L;
+	private static final long serialVersionUID = 6753635331858131385L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -123,6 +124,12 @@ json格式。
 	private List<TradeFundBill> fundBillList;
 
 	/** 
+	 * 若用户使用花呗分期支付，且商家开通返回此通知参数，则会返回花呗分期信息。json格式其它说明详见花呗分期信息说明。
+	 */
+	@ApiField("hb_fq_pay_info")
+	private HbFqPayInfo hbFqPayInfo;
+
+	/** 
 	 * 行业特殊信息（例如在医保卡支付业务中，向用户返回医疗信息）。
 	 */
 	@ApiField("industry_sepc_detail")
@@ -175,6 +182,12 @@ json格式。
 	 */
 	@ApiField("receipt_amount")
 	private String receiptAmount;
+
+	/** 
+	 * 收款资金类型，当交易收款资金为数字人民币时返回值为“DC”，否则不返回该字段。
+	 */
+	@ApiField("receipt_currency_type")
+	private String receiptCurrencyType;
 
 	/** 
 	 * 本次交易打款给卖家的时间
@@ -382,6 +395,13 @@ json格式。
 		return this.fundBillList;
 	}
 
+	public void setHbFqPayInfo(HbFqPayInfo hbFqPayInfo) {
+		this.hbFqPayInfo = hbFqPayInfo;
+	}
+	public HbFqPayInfo getHbFqPayInfo( ) {
+		return this.hbFqPayInfo;
+	}
+
 	public void setIndustrySepcDetail(String industrySepcDetail) {
 		this.industrySepcDetail = industrySepcDetail;
 	}
@@ -443,6 +463,13 @@ json格式。
 	}
 	public String getReceiptAmount( ) {
 		return this.receiptAmount;
+	}
+
+	public void setReceiptCurrencyType(String receiptCurrencyType) {
+		this.receiptCurrencyType = receiptCurrencyType;
+	}
+	public String getReceiptCurrencyType( ) {
+		return this.receiptCurrencyType;
 	}
 
 	public void setSendPayDate(Date sendPayDate) {

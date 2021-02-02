@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * SPI出参复杂数据结构
  *
  * @author auto create
- * @since 1.0, 2019-10-29 14:07:00
+ * @since 1.0, 2021-01-14 11:40:57
  */
 public class SpiOutputObject extends AlipayObject {
 
-	private static final long serialVersionUID = 8729253114257551136L;
+	private static final long serialVersionUID = 5749144488746321575L;
 
 	/**
 	 * test

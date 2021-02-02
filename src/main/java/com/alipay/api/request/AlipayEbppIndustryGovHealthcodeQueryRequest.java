@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.gov.healthcode.query request
  * 
  * @author auto create
- * @since 1.0, 2020-04-21 13:50:10
+ * @since 1.0, 2021-01-25 18:47:51
  */
 public class AlipayEbppIndustryGovHealthcodeQueryRequest implements AlipayRequest<AlipayEbppIndustryGovHealthcodeQueryResponse> {
 

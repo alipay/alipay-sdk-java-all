@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子小票信息发送接口
  *
  * @author auto create
- * @since 1.0, 2020-06-02 16:02:36
+ * @since 1.0, 2020-12-29 21:11:28
  */
 public class AlipayCommerceIotReceiptSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4589181141917567252L;
+	private static final long serialVersionUID = 6765253792469972933L;
 
 	/**
 	 * 用户支付宝uid
@@ -32,10 +32,16 @@ public class AlipayCommerceIotReceiptSendModel extends AlipayObject {
 	private String biztid;
 
 	/**
-	 * 商户pid
+	 * 直联商户填写pid，  pid和smid必填其一
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * 间联商户填写smid，pid和smid必填其一
+	 */
+	@ApiField("smid")
+	private String smid;
 
 	public String getAlipayUid() {
 		return this.alipayUid;
@@ -63,6 +69,13 @@ public class AlipayCommerceIotReceiptSendModel extends AlipayObject {
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public String getSmid() {
+		return this.smid;
+	}
+	public void setSmid(String smid) {
+		this.smid = smid;
 	}
 
 }

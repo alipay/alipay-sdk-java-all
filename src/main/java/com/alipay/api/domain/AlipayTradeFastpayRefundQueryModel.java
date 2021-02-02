@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeFastpayRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2351782671511382873L;
+	private static final long serialVersionUID = 5378719569821759385L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用；
@@ -36,7 +36,8 @@ public class AlipayTradeFastpayRefundQueryModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
-	 * 查询选项，商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。如：["refund_detail_item_list"]
+	 * 查询选项，商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。枚举支持：
+refund_detail_item_list：本次退款使用的资金渠道。
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")

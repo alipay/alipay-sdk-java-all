@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票行信息
  *
  * @author auto create
- * @since 1.0, 2018-11-23 19:24:47
+ * @since 1.0, 2020-12-31 15:38:59
  */
 public class ArInvoiceLineOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4772343425134744492L;
+	private static final long serialVersionUID = 7156581522775154164L;
 
 	/**
 	 * 含税金额
 	 */
 	@ApiField("amt")
 	private MultiCurrencyMoneyOpenApi amt;
+
+	/**
+	 * 免税标识
+	 */
+	@ApiField("duty_free_flag")
+	private String dutyFreeFlag;
+
+	/**
+	 * 含税单价
+	 */
+	@ApiField("incl_tax_unit_amt")
+	private Long inclTaxUnitAmt;
 
 	/**
 	 * 关联的发票ID
@@ -84,6 +96,20 @@ public class ArInvoiceLineOpenApiResponse extends AlipayObject {
 	}
 	public void setAmt(MultiCurrencyMoneyOpenApi amt) {
 		this.amt = amt;
+	}
+
+	public String getDutyFreeFlag() {
+		return this.dutyFreeFlag;
+	}
+	public void setDutyFreeFlag(String dutyFreeFlag) {
+		this.dutyFreeFlag = dutyFreeFlag;
+	}
+
+	public Long getInclTaxUnitAmt() {
+		return this.inclTaxUnitAmt;
+	}
+	public void setInclTaxUnitAmt(Long inclTaxUnitAmt) {
+		this.inclTaxUnitAmt = inclTaxUnitAmt;
 	}
 
 	public String getInvoiceId() {

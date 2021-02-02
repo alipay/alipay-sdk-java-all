@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询调用者指定时间范围内的彩票赠送列表，由亚博科技提供服务
  *
  * @author auto create
- * @since 1.0, 2017-07-24 14:37:50
+ * @since 1.0, 2020-12-14 15:46:59
  */
 public class AlipayCommerceLotteryPresentlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5336938826492236874L;
+	private static final long serialVersionUID = 5474758617421338268L;
 
 	/**
 	 * 结束日期，格式为yyyyMMdd

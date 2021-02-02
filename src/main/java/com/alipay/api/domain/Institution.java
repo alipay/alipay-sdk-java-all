@@ -7,23 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构
  *
  * @author auto create
- * @since 1.0, 2019-12-10 21:54:30
+ * @since 1.0, 2020-11-16 09:44:32
  */
 public class Institution extends AlipayObject {
 
-	private static final long serialVersionUID = 6637397314916743981L;
+	private static final long serialVersionUID = 2119926227547979299L;
 
 	/**
-	 * 人行联行号
+	 * 机构编码（如：人行联行号）
 	 */
 	@ApiField("code")
 	private String code;
 
 	/**
-	 * 银行全称
+	 * 机构全称
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 父级机构编码
+	 */
+	@ApiField("root_code")
+	private String rootCode;
+
+	/**
+	 * 父级机构全称
+	 */
+	@ApiField("root_name")
+	private String rootName;
 
 	public String getCode() {
 		return this.code;
@@ -37,6 +49,20 @@ public class Institution extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getRootCode() {
+		return this.rootCode;
+	}
+	public void setRootCode(String rootCode) {
+		this.rootCode = rootCode;
+	}
+
+	public String getRootName() {
+		return this.rootName;
+	}
+	public void setRootName(String rootName) {
+		this.rootName = rootName;
 	}
 
 }

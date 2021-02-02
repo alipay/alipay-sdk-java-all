@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部小程序-小程序灰度上架
  *
  * @author auto create
- * @since 1.0, 2020-09-16 10:42:02
+ * @since 1.0, 2020-12-30 17:05:25
  */
 public class AlipayOpenMiniInnerversionGrayOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3357168327932129773L;
+	private static final long serialVersionUID = 8464375144385229711L;
 
 	/**
 	 * 小程序版本号
@@ -24,6 +24,12 @@ public class AlipayOpenMiniInnerversionGrayOnlineModel extends AlipayObject {
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;
+
+	/**
+	 * 多个规则逗号分隔
+	 */
+	@ApiField("gray_rule")
+	private String grayRule;
 
 	/**
 	 * 租户code，alipay or taobao
@@ -49,6 +55,13 @@ public class AlipayOpenMiniInnerversionGrayOnlineModel extends AlipayObject {
 	}
 	public void setBundleId(String bundleId) {
 		this.bundleId = bundleId;
+	}
+
+	public String getGrayRule() {
+		return this.grayRule;
+	}
+	public void setGrayRule(String grayRule) {
+		this.grayRule = grayRule;
 	}
 
 	public String getInstCode() {

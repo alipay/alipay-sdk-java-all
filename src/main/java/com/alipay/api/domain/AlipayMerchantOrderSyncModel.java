@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2020-06-22 14:31:03
+ * @since 1.0, 2021-01-20 22:08:30
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2464268358455675523L;
+	private static final long serialVersionUID = 5266967151547532281L;
 
 	/**
-	 * 订单金额，单位为元
+	 * 订单金额，单位为元。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -42,7 +42,14 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	private String discountAmount;
 
 	/**
-	 * 扩展信息，请参见产品文档
+	 * 订单优惠信息
+	 */
+	@ApiListField("discount_info_list")
+	@ApiField("discount_info_data")
+	private List<DiscountInfoData> discountInfoList;
+
+	/**
+	 * 扩展信息，请参见 <a href="https://opendocs.alipay.com/mini/introduce/ordercenter">小程序订单中心</a>；<a href="https://opendocs.alipay.com/mini/00nnt3">扫码点餐</a>产品文档。
 	 */
 	@ApiListField("ext_info")
 	@ApiField("order_ext_info")
@@ -54,6 +61,13 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	@ApiListField("item_order_list")
 	@ApiField("item_order_info")
 	private List<ItemOrderInfo> itemOrderList;
+
+	/**
+	 * 行程信息
+	 */
+	@ApiListField("journey_order_list")
+	@ApiField("order_journey_info")
+	private List<OrderJourneyInfo> journeyOrderList;
 
 	/**
 	 * 物流信息
@@ -78,6 +92,12 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("order_create_time")
 	private Date orderCreateTime;
+
+	/**
+	 * 订单修改时间，一般不需要传入。用于订单状态或数据变化较快的顺序控制，order_modified_time较晚的同步会被最终存储，order_modified_time相同的两次同步可能会被幂等处理，SERVICE_ORDER按照行业标准化接入场景必须传入该字段控制乱序
+	 */
+	@ApiField("order_modified_time")
+	private Date orderModifiedTime;
 
 	/**
 	 * 订单支付时间
@@ -109,8 +129,7 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	private String partnerId;
 
 	/**
-	 * 支付金额
-需要实际支付的金额
+	 * 支付金额，需要实际支付的金额。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
@@ -141,10 +160,18 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	private String sendMsg;
 
 	/**
-	 * 门店信息
+	 * 门店信息，扫码点餐获取返佣时必填。
 	 */
 	@ApiField("shop_info")
 	private OrderShopInfo shopInfo;
+
+	/**
+	 * 同步内容
+-JOURNEY_ONLY 仅行程信息
+-ALL 全部(默认)
+	 */
+	@ApiField("sync_content")
+	private String syncContent;
 
 	/**
 	 * 凭证信息
@@ -195,6 +222,13 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 		this.discountAmount = discountAmount;
 	}
 
+	public List<DiscountInfoData> getDiscountInfoList() {
+		return this.discountInfoList;
+	}
+	public void setDiscountInfoList(List<DiscountInfoData> discountInfoList) {
+		this.discountInfoList = discountInfoList;
+	}
+
 	public List<OrderExtInfo> getExtInfo() {
 		return this.extInfo;
 	}
@@ -207,6 +241,13 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	}
 	public void setItemOrderList(List<ItemOrderInfo> itemOrderList) {
 		this.itemOrderList = itemOrderList;
+	}
+
+	public List<OrderJourneyInfo> getJourneyOrderList() {
+		return this.journeyOrderList;
+	}
+	public void setJourneyOrderList(List<OrderJourneyInfo> journeyOrderList) {
+		this.journeyOrderList = journeyOrderList;
 	}
 
 	public List<OrderLogisticsInformationRequest> getLogisticsInfoList() {
@@ -228,6 +269,13 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	}
 	public void setOrderCreateTime(Date orderCreateTime) {
 		this.orderCreateTime = orderCreateTime;
+	}
+
+	public Date getOrderModifiedTime() {
+		return this.orderModifiedTime;
+	}
+	public void setOrderModifiedTime(Date orderModifiedTime) {
+		this.orderModifiedTime = orderModifiedTime;
 	}
 
 	public Date getOrderPayTime() {
@@ -298,6 +346,13 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	}
 	public void setShopInfo(OrderShopInfo shopInfo) {
 		this.shopInfo = shopInfo;
+	}
+
+	public String getSyncContent() {
+		return this.syncContent;
+	}
+	public void setSyncContent(String syncContent) {
+		this.syncContent = syncContent;
 	}
 
 	public TicketInfo getTicketInfo() {

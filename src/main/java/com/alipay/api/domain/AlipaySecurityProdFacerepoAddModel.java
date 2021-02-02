@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸1:N服务入库接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:13
+ * @since 1.0, 2020-12-18 15:27:41
  */
 public class AlipaySecurityProdFacerepoAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8844488475851887424L;
+	private static final long serialVersionUID = 7226744644687585578L;
 
 	/**
 	 * 商户的业务单据号，用于核对与问题排查

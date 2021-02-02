@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预下即时配送订单时返回的运单信息列表
  *
  * @author auto create
- * @since 1.0, 2020-09-22 16:28:51
+ * @since 1.0, 2020-11-18 10:12:08
  */
 public class PreCreateWaybillIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 1899443153434517229L;
+	private static final long serialVersionUID = 8347366394557669498L;
 
 	/**
 	 * 优惠券费用
@@ -82,14 +82,14 @@ public class PreCreateWaybillIstd extends AlipayObject {
 	/**
 	 * 即时配送公司返回的错误码
 	 */
-	@ApiField("third_error_code")
-	private String thirdErrorCode;
+	@ApiField("third_sub_code")
+	private String thirdSubCode;
 
 	/**
 	 * 即时配送公司返回的错误描述
 	 */
-	@ApiField("third_error_msg")
-	private String thirdErrorMsg;
+	@ApiField("third_sub_msg")
+	private String thirdSubMsg;
 
 	public String getCouponFee() {
 		return this.couponFee;
@@ -168,18 +168,18 @@ public class PreCreateWaybillIstd extends AlipayObject {
 		this.thirdCode = thirdCode;
 	}
 
-	public String getThirdErrorCode() {
-		return this.thirdErrorCode;
+	public String getThirdSubCode() {
+		return this.thirdSubCode;
 	}
-	public void setThirdErrorCode(String thirdErrorCode) {
-		this.thirdErrorCode = thirdErrorCode;
+	public void setThirdSubCode(String thirdSubCode) {
+		this.thirdSubCode = thirdSubCode;
 	}
 
-	public String getThirdErrorMsg() {
-		return this.thirdErrorMsg;
+	public String getThirdSubMsg() {
+		return this.thirdSubMsg;
 	}
-	public void setThirdErrorMsg(String thirdErrorMsg) {
-		this.thirdErrorMsg = thirdErrorMsg;
+	public void setThirdSubMsg(String thirdSubMsg) {
+		this.thirdSubMsg = thirdSubMsg;
 	}
 
 }

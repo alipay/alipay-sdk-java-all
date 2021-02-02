@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询当前用户可用的模板列表
  *
  * @author auto create
- * @since 1.0, 2019-05-22 14:29:19
+ * @since 1.0, 2021-01-06 16:28:00
  */
 public class AlipayMarketingToolFengdieTemplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6319126374762223185L;
+	private static final long serialVersionUID = 6834653264141533845L;
 
 	/**
 	 * 当前页数，默认为1

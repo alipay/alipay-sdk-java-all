@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料二维码
  *
  * @author auto create
- * @since 1.0, 2019-08-29 11:19:21
+ * @since 1.0, 2020-12-31 11:36:15
  */
 public class AlipayEcoMycarParkingLotbarcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2698799641871759392L;
+	private static final long serialVersionUID = 5717965146873825593L;
 
 	/**
 	 * 停车场编号

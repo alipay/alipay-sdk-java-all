@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.creditpay.amount.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-04 11:19:56
+ * @since 1.0, 2020-12-03 15:20:15
  */
 public class MybankCreditSupplychainCreditpayAmountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6534725833114416858L;
+	private static final long serialVersionUID = 3432121598584184635L;
 
 	/** 
 	 * 准入标志
@@ -31,6 +31,12 @@ public class MybankCreditSupplychainCreditpayAmountQueryResponse extends AlipayR
 	 */
 	@ApiField("buyer_scene_id")
 	private String buyerSceneId;
+
+	/** 
+	 * 是否签约
+	 */
+	@ApiField("signed")
+	private Boolean signed;
 
 	/** 
 	 * 授信额度
@@ -63,6 +69,13 @@ public class MybankCreditSupplychainCreditpayAmountQueryResponse extends AlipayR
 	}
 	public String getBuyerSceneId( ) {
 		return this.buyerSceneId;
+	}
+
+	public void setSigned(Boolean signed) {
+		this.signed = signed;
+	}
+	public Boolean getSigned( ) {
+		return this.signed;
 	}
 
 	public void setTotalAmt(String totalAmt) {

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询申请单状态
  *
  * @author auto create
- * @since 1.0, 2020-06-28 17:39:20
+ * @since 1.0, 2020-11-30 17:35:13
  */
 public class AlipayOpenAgentOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4438533319228442429L;
+	private static final long serialVersionUID = 8554794657288998482L;
 
 	/**
-	 * ISV 代商户操作事务编号，通过事务开启接口alipay.open.agent.create调用返回。
+	 * ISV 代商户操作事务编号，通过调用alipay.open.agent.create(开启代商户签约、创建应用事务)接口返回，详见 https://opendocs.alipay.com/apis/api_50/alipay.open.agent.create/ 。
 	 */
 	@ApiField("batch_no")
 	private String batchNo;

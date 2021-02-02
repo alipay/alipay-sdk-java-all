@@ -10,20 +10,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人脸出库接口
  *
  * @author auto create
- * @since 1.0, 2020-10-14 14:07:59
+ * @since 1.0, 2021-01-29 11:26:17
  */
 public class AlipayCommerceEducateFacefeatureDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2124753363625497979L;
+	private static final long serialVersionUID = 8269223978798165713L;
 
 	/**
-	 * 场景码
+	 * 行业编码。（注：该接口为定向开放接口，使用前需要与对应的"业务产品"申请，切勿随意填写）
 	 */
 	@ApiField("biz_code")
 	private String bizCode;
 
 	/**
-	 * 业务流水id,用于排查
+	 * 业务流水id。（注：用于异常过程中排查定位问题）
 	 */
 	@ApiField("biz_id")
 	private String bizId;
@@ -35,25 +35,25 @@ public class AlipayCommerceEducateFacefeatureDeleteModel extends AlipayObject {
 	private String extInfo;
 
 	/**
-	 * 人脸库id
+	 * 人脸库id。（注：人脸库id可通过“查询人脸库key接口”获取）
 	 */
 	@ApiField("group_id")
 	private String groupId;
 
 	/**
-	 * 机构编号
+	 * 机构编号。（同：机构id/机构内标）
 	 */
 	@ApiField("inst_id")
 	private String instId;
 
 	/**
-	 * isv英文简称
+	 * isv英文简称。（注：请不要填写中文名称）
 	 */
 	@ApiField("isv_name")
 	private String isvName;
 
 	/**
-	 * 人脸出库信息
+	 * 人脸出库信息列表。
 	 */
 	@ApiListField("scenic_face_info")
 	@ApiField("scenic_face_info")

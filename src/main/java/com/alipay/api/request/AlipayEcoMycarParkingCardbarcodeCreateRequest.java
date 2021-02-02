@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.parking.cardbarcode.create request
  * 
  * @author auto create
- * @since 1.0, 2019-08-29 11:19:32
+ * @since 1.0, 2020-12-31 11:35:12
  */
 public class AlipayEcoMycarParkingCardbarcodeCreateRequest implements AlipayRequest<AlipayEcoMycarParkingCardbarcodeCreateResponse> {
 

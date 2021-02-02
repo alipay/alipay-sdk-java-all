@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗月月付支付鉴权接口
  *
  * @author auto create
- * @since 1.0, 2020-10-09 17:24:50
+ * @since 1.0, 2021-01-07 15:43:05
  */
 public class AlipayPcreditHuabeiSpayAuthConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8184744717952665554L;
+	private static final long serialVersionUID = 7897777991951553569L;
 
 	/**
 	 * 月月付的资产编码类型；月月付接口，此处必须传：ALICREDITFF
@@ -27,7 +27,7 @@ public class AlipayPcreditHuabeiSpayAuthConsultModel extends AlipayObject {
 
 	/**
 	 * 业务场景：
-hbff.stanard.other 淘外标准版
+hbff.stanard.other 淘外标准版（默认）
 hbff.stanard.telecom 淘外运营商合约购
 	 */
 	@ApiField("business_code")
@@ -89,13 +89,13 @@ RECEIVE_BY_PERIOD:按照周期收款
 	private String totalPaymentAmount;
 
 	/**
-	 * 用户身份信息，蚂蚁统一会员ID user_id、蚂蚁会员登陆ID login_id（邮箱、手机号）二选一
+	 * 用户身份信息，蚂蚁统一会员ID user_id、蚂蚁会员登陆ID login_id（邮箱、手机号），此字段中user_id、login_id和user_id字段三选一必传
 	 */
 	@ApiField("user")
 	private UserDInfo user;
 
 	/**
-	 * 买家的蚂蚁统一会员ID，建议使用新的 user字段，当前字段仍然保持兼容支持；
+	 * 买家的蚂蚁统一会员ID，建议使用新的 user字段，当前字段仍然保持兼容支持；此字段和user字段中user_id、login_id三选一必传
 	 */
 	@ApiField("user_id")
 	private String userId;

@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券营销信息
  *
  * @author auto create
- * @since 1.0, 2020-09-11 17:11:11
+ * @since 1.0, 2020-12-28 17:57:22
  */
 public class PromoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6699346981446414811L;
+	private static final long serialVersionUID = 7737668929284979366L;
 
 	/**
-	 * 最高优惠金额
+	 * 最高优惠金额，仅针对折扣券
 	 */
 	@ApiField("ceiling_amount")
 	private String ceilingAmount;
 
 	/**
-	 * 代金券，券金额
+	 * 券金额，仅针对代金券
 	 */
 	@ApiField("reduction_amount")
 	private String reductionAmount;
 
 	/**
-	 * 优惠额度，如3折券，reduction_ratio=0.7
+	 * 优惠额度，如3折券，返回0.7，仅针对折扣券
 	 */
 	@ApiField("reduction_ratio")
 	private String reductionRatio;
 
 	/**
-	 * 特价券减至金额
+	 * 减至金额，仅针对减至券
 	 */
 	@ApiField("specified_amount")
 	private String specifiedAmount;

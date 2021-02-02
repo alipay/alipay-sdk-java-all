@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步车型库
  *
  * @author auto create
- * @since 1.0, 2019-08-29 11:21:22
+ * @since 1.0, 2020-12-31 11:44:55
  */
 public class AlipayEcoMycarCarlibInfoPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4898114548426936121L;
+	private static final long serialVersionUID = 7816457582761176671L;
 
 	/**
 	 * 品牌

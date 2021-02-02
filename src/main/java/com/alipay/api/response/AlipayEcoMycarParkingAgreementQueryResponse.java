@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-16 21:10:38
+ * @since 1.0, 2021-01-05 16:51:51
  */
 public class AlipayEcoMycarParkingAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5886166298529742163L;
+	private static final long serialVersionUID = 6491843343158728888L;
 
 	/** 
 	 * 车牌垫资状态:
@@ -36,6 +36,18 @@ public class AlipayEcoMycarParkingAgreementQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("agreement_status")
 	private String agreementStatus;
+
+	/** 
+	 * 当前车辆在支付宝侧的信息，是否可以使用无感支付，可选返回项为： NORMAL：正常缴费用户 NON-SENSE-PAY：可无感支付用户
+	 */
+	@ApiField("car_status")
+	private String carStatus;
+
+	/** 
+	 * 当前时间戳(查询签约状态和是否支持无感支付仅代表当前时间点查询结果，不作为最后代扣结果，应在发起代扣前再次查询)
+	 */
+	@ApiField("current_time")
+	private String currentTime;
 
 	/** 
 	 * 有效时间，格式"yyyy-MM-dd HH:mm:ss"
@@ -61,6 +73,20 @@ public class AlipayEcoMycarParkingAgreementQueryResponse extends AlipayResponse 
 	}
 	public String getAgreementStatus( ) {
 		return this.agreementStatus;
+	}
+
+	public void setCarStatus(String carStatus) {
+		this.carStatus = carStatus;
+	}
+	public String getCarStatus( ) {
+		return this.carStatus;
+	}
+
+	public void setCurrentTime(String currentTime) {
+		this.currentTime = currentTime;
+	}
+	public String getCurrentTime( ) {
+		return this.currentTime;
 	}
 
 	public void setExpireTime(String expireTime) {

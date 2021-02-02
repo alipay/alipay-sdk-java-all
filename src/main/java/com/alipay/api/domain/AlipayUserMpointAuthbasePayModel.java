@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员积分扣减接口
  *
  * @author auto create
- * @since 1.0, 2020-08-17 19:19:46
+ * @since 1.0, 2020-12-16 21:10:16
  */
 public class AlipayUserMpointAuthbasePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1512937287169314884L;
+	private static final long serialVersionUID = 7566134491235165125L;
 
 	/**
 	 * 业务子类型，由会员方面分配

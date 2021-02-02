@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.mobilepay.sign request
  * 
  * @author auto create
- * @since 1.0, 2020-06-28 17:38:37
+ * @since 1.0, 2021-01-20 14:07:33
  */
 public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<AlipayOpenAgentMobilepaySignResponse> {
 
@@ -26,9 +27,34 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	private FileItem appDemo;
 
 	/** 
+	* 应用在哪些市场上架，枚举值为：苹果,应用宝,豌豆荚,其他
+	 */
+	private List<String> appMarket;
+
+	/** 
 	* 商户的APP应用名称
 	 */
 	private String appName;
+
+	/** 
+	* 应用上架状态，枚举值为 已上架，未上架
+	 */
+	private String appStatus;
+
+	/** 
+	* 可以登录该应用的测试账户
+	 */
+	private String appTestAccount;
+
+	/** 
+	* 可以登录此应用的账户的密码。对应app_test_account的登录密码
+	 */
+	private String appTestAccountPassword;
+
+	/** 
+	* 应用类型，枚举值为：IOS，安卓
+	 */
+	private List<String> appType;
 
 	/** 
 	* 代商户操作事务编号，通过alipay.open.isv.agent.create接口进行创建。
@@ -56,21 +82,39 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	private String dateLimitation;
 
 	/** 
+	* 应用下载链接
+	 */
+	private String downloadLink;
+
+	/** 
+	* 应用首页截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem homeScreenshot;
+
+	/** 
+	* 应用内截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem inAppScreenshot;
+
+	/** 
 	* 营业期限是否长期有效
 	 */
 	private Boolean longTerm;
 
 	/** 
 	* 所属MCCCode，详情可参考
-<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1
-">商家经营类目</a> 中的“经营类目编码”
+<a href="https://opendocs.alipay.com/open/01n22g#%E5%95%86%E5%AE%B6%E7%BB%8F%E8%90%A5%E7%B1%BB%E7%9B%AE">商家经营类目</a> 中的“经营类目编码”
 	 */
 	private String mccCode;
 
 	/** 
+	* 应用内支付页截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem payScreenshot;
+
+	/** 
 	* 企业特殊资质图片，可参考
-<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1
-">商家经营类目</a> 中的“需要的特殊资质证书”，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+<a href="https://opendocs.alipay.com/open/01n22g#%E5%95%86%E5%AE%B6%E7%BB%8F%E8%90%A5%E7%B1%BB%E7%9B%AE">商家经营类目</a> 中的“需要的特殊资质证书”，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem specialLicensePic;
 
@@ -81,11 +125,46 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 		return this.appDemo;
 	}
 
+	public void setAppMarket(List<String> appMarket) {
+		this.appMarket = appMarket;
+	}
+	public List<String> getAppMarket() {
+		return this.appMarket;
+	}
+
 	public void setAppName(String appName) {
 		this.appName = appName;
 	}
 	public String getAppName() {
 		return this.appName;
+	}
+
+	public void setAppStatus(String appStatus) {
+		this.appStatus = appStatus;
+	}
+	public String getAppStatus() {
+		return this.appStatus;
+	}
+
+	public void setAppTestAccount(String appTestAccount) {
+		this.appTestAccount = appTestAccount;
+	}
+	public String getAppTestAccount() {
+		return this.appTestAccount;
+	}
+
+	public void setAppTestAccountPassword(String appTestAccountPassword) {
+		this.appTestAccountPassword = appTestAccountPassword;
+	}
+	public String getAppTestAccountPassword() {
+		return this.appTestAccountPassword;
+	}
+
+	public void setAppType(List<String> appType) {
+		this.appType = appType;
+	}
+	public List<String> getAppType() {
+		return this.appType;
 	}
 
 	public void setBatchNo(String batchNo) {
@@ -123,6 +202,27 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 		return this.dateLimitation;
 	}
 
+	public void setDownloadLink(String downloadLink) {
+		this.downloadLink = downloadLink;
+	}
+	public String getDownloadLink() {
+		return this.downloadLink;
+	}
+
+	public void setHomeScreenshot(FileItem homeScreenshot) {
+		this.homeScreenshot = homeScreenshot;
+	}
+	public FileItem getHomeScreenshot() {
+		return this.homeScreenshot;
+	}
+
+	public void setInAppScreenshot(FileItem inAppScreenshot) {
+		this.inAppScreenshot = inAppScreenshot;
+	}
+	public FileItem getInAppScreenshot() {
+		return this.inAppScreenshot;
+	}
+
 	public void setLongTerm(Boolean longTerm) {
 		this.longTerm = longTerm;
 	}
@@ -135,6 +235,13 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	}
 	public String getMccCode() {
 		return this.mccCode;
+	}
+
+	public void setPayScreenshot(FileItem payScreenshot) {
+		this.payScreenshot = payScreenshot;
+	}
+	public FileItem getPayScreenshot() {
+		return this.payScreenshot;
 	}
 
 	public void setSpecialLicensePic(FileItem specialLicensePic) {
@@ -204,10 +311,16 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("app_market", this.appMarket == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.appMarket, true));
 		txtParams.put("app_name", this.appName);
+		txtParams.put("app_status", this.appStatus);
+		txtParams.put("app_test_account", this.appTestAccount);
+		txtParams.put("app_test_account_password", this.appTestAccountPassword);
+		txtParams.put("app_type", this.appType == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.appType, true));
 		txtParams.put("batch_no", this.batchNo);
 		txtParams.put("business_license_no", this.businessLicenseNo);
 		txtParams.put("date_limitation", this.dateLimitation);
+		txtParams.put("download_link", this.downloadLink);
 		txtParams.put("long_term", this.longTerm);
 		txtParams.put("mcc_code", this.mccCode);
 		if(udfParams != null) {
@@ -228,6 +341,9 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 		params.put("app_demo", this.appDemo);
 		params.put("business_license_auth_pic", this.businessLicenseAuthPic);
 		params.put("business_license_pic", this.businessLicensePic);
+		params.put("home_screenshot", this.homeScreenshot);
+		params.put("in_app_screenshot", this.inAppScreenshot);
+		params.put("pay_screenshot", this.payScreenshot);
 		params.put("special_license_pic", this.specialLicensePic);
 		return params;
 	}

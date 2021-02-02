@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.AppAttribute;
 import com.alipay.api.domain.ServiceUrl;
 
 import com.alipay.api.AlipayResponse;
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.appcontent.function.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-17 17:02:25
+ * @since 1.0, 2021-01-28 11:05:59
  */
 public class AlipayOpenAppAppcontentFunctionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6412455929882487651L;
+	private static final long serialVersionUID = 5199183777419667327L;
 
 	/** 
 	 * 服务区域编码；默认值为1，表示全国范围；编码参考高德地图JS API相关下载中的行政区编码与城市编码表：https://lbs.amap.com/api/javascript-api/download/
@@ -29,6 +30,13 @@ public class AlipayOpenAppAppcontentFunctionQueryResponse extends AlipayResponse
 	 */
 	@ApiField("audit_status")
 	private String auditStatus;
+
+	/** 
+	 * 类目属性列表
+	 */
+	@ApiListField("category_attributes")
+	@ApiField("app_attribute")
+	private List<AppAttribute> categoryAttributes;
 
 	/** 
 	 * 类目
@@ -111,6 +119,13 @@ public class AlipayOpenAppAppcontentFunctionQueryResponse extends AlipayResponse
 	}
 	public String getAuditStatus( ) {
 		return this.auditStatus;
+	}
+
+	public void setCategoryAttributes(List<AppAttribute> categoryAttributes) {
+		this.categoryAttributes = categoryAttributes;
+	}
+	public List<AppAttribute> getCategoryAttributes( ) {
+		return this.categoryAttributes;
 	}
 
 	public void setCategoryIds(List<String> categoryIds) {

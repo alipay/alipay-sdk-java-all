@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.indirect.activity.create request
  * 
  * @author auto create
- * @since 1.0, 2019-06-26 10:55:01
+ * @since 1.0, 2020-12-18 15:05:42
  */
 public class AntMerchantExpandIndirectActivityCreateRequest implements AlipayRequest<AntMerchantExpandIndirectActivityCreateResponse> {
 

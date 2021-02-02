@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6457256152265418418L;
+	private static final long serialVersionUID = 6654875966129241728L;
 
 	/**
 	 * 定义商户的一级简称,用于标识商户品牌，对应于商户入驻时填写的"商户品牌简称"。 如：肯德基：KFC

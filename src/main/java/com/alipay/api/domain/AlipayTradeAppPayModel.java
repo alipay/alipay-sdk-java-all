@@ -10,14 +10,15 @@ import com.alipay.api.internal.mapping.ApiListField;
  * app支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2020-05-12 16:13:18
+ * @since 1.0, 2020-12-30 10:38:06
  */
 public class AlipayTradeAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2742712151283945872L;
+	private static final long serialVersionUID = 6617187957783874667L;
 
 	/**
 	 * 签约参数。如果希望在sdk中支付并签约，需要在这里传入签约信息。
+周期扣款场景 product_code 为 CYCLE_PAY_AUTH 时必填。
 	 */
 	@ApiField("agreement_sign_params")
 	private SignParams agreementSignParams;
@@ -70,7 +71,9 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	private List<GoodsDetail> goodsDetail;
 
 	/**
-	 * 商品主类型 :0-虚拟类商品,1-实物类商品
+	 * 商品主类型，取值如下：
+0：虚拟类商品；
+1：实物类商品。
 	 */
 	@ApiField("goods_type")
 	private String goodsType;
@@ -88,7 +91,7 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	private String merchantOrderNo;
 
 	/**
-	 * 商户网站唯一订单号
+	 * 商户订单号，由商家自定义，需保证商家系统中唯一。仅支持数字、字母、下划线。
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
@@ -100,7 +103,10 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	private String passbackParams;
 
 	/**
-	 * 销售产品码，商家和支付宝签约的产品码
+	 * 销售产品码，商家和支付宝签约的产品码，默认为 QUICK_MSECURITY_PAY（App支付）。枚举支持：
+QUICK_MSECURITY_PAY：App支付；
+CYCLE_PAY_AUTH：周期扣款。
+周期扣款产品场景必填。
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -151,7 +157,8 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	private SubMerchant subMerchant;
 
 	/**
-	 * 商品的标题/交易标题/订单标题/订单关键字等。
+	 * 商品标题/交易标题/订单标题/订单关键字等。 
+注意：不可使用特殊字符，如 /，=，& 等。
 	 */
 	@ApiField("subject")
 	private String subject;
@@ -169,7 +176,7 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	private String timeoutExpress;
 
 	/**
-	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
+	 * 订单总金额，单位为人民币（元），取值范围为 0.01~100000000.00，精确到小数点后两位。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

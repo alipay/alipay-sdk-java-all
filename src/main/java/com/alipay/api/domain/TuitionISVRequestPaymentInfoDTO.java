@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付款信息
  *
  * @author auto create
- * @since 1.0, 2020-05-26 16:09:49
+ * @since 1.0, 2020-11-30 14:31:55
  */
 public class TuitionISVRequestPaymentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5432244469992881466L;
+	private static final long serialVersionUID = 2871778829812627174L;
 
 	/**
 	 * 170

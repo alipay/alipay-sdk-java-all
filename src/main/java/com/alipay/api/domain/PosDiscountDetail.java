@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * pos优惠明细信息
  *
  * @author auto create
- * @since 1.0, 2020-07-08 16:45:13
+ * @since 1.0, 2021-01-19 14:21:23
  */
 public class PosDiscountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8185315338338962628L;
+	private static final long serialVersionUID = 6581164757632633596L;
 
 	/**
 	 * 活动id
@@ -29,6 +29,10 @@ public class PosDiscountDetail extends AlipayObject {
 (6) itemReductionVoucher：单品立减券
 (7) itemDiscountVoucher：单品折扣券
 (8) itemSpecifiedVoucher：单品减至券
+(9) userPoint : 积分抵扣
+(10) comboDiscount  :商品组合折扣
+(11) comboSpecified : 商品组合一口价
+(12) alipayBSiteVoucher:支付宝B站劵
 	 */
 	@ApiField("activity_type")
 	private String activityType;
@@ -52,6 +56,18 @@ public class PosDiscountDetail extends AlipayObject {
 	private String dishId;
 
 	/**
+	 * 关联的主菜在这笔推单里的菜品流水id
+	 */
+	@ApiField("dish_main_out_detail_no")
+	private String dishMainOutDetailNo;
+
+	/**
+	 * 菜品的在这笔推单里的流水明细id
+	 */
+	@ApiField("dish_out_detail_no")
+	private String dishOutDetailNo;
+
+	/**
 	 * 菜品skuId
 	 */
 	@ApiField("dish_sku_id")
@@ -64,13 +80,13 @@ public class PosDiscountDetail extends AlipayObject {
 	private String extInfo;
 
 	/**
-	 * 扩展信息，存储优惠的详细模型。json对象格式，key和value都为字符串，其中DISH_ID为菜品id，USER_ITEM_ID为被核销商品id，TEMPLATE_ID为券模版id，VOUCHER_ID为券实例id
+	 * 扩展信息，存储优惠的详细模型。json对象格式，key和value都为字符串，其中DISH_ID为菜品id，USER_ITEM_ID为被核销商品id，TEMPLATE_ID为券模版id，VOUCHER_ID为券实例id,POS_KEY为星巴克的poskey, DEDUCT_POINT为星巴克星星数.IS_CHANGE为星巴克是否置换标 ,"deductDetails":"[{\"consumeUnitPoint\":9,\"preferentialNum\":2,\"unitPrice\":"25.00"},{\"consumeUnitPoint\":1,\"preferentialNum\":1,\"unitPrice\":"3.00"}]"
 	 */
 	@ApiField("ext_info_str")
 	private String extInfoStr;
 
 	/**
-	 * 商家出资优惠金额，以元为单位，精确到分
+	 * 商家出资优惠金额，以元为单位，精确到分; 如果是星巴克的星星，这里表示星星抵扣金额
 	 */
 	@ApiField("mrt_discount")
 	private String mrtDiscount;
@@ -126,6 +142,20 @@ public class PosDiscountDetail extends AlipayObject {
 	}
 	public void setDishId(String dishId) {
 		this.dishId = dishId;
+	}
+
+	public String getDishMainOutDetailNo() {
+		return this.dishMainOutDetailNo;
+	}
+	public void setDishMainOutDetailNo(String dishMainOutDetailNo) {
+		this.dishMainOutDetailNo = dishMainOutDetailNo;
+	}
+
+	public String getDishOutDetailNo() {
+		return this.dishOutDetailNo;
+	}
+	public void setDishOutDetailNo(String dishOutDetailNo) {
+		this.dishOutDetailNo = dishOutDetailNo;
 	}
 
 	public String getDishSkuId() {

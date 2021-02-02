@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询门店码开通流水记录
  *
  * @author auto create
- * @since 1.0, 2020-10-22 14:21:57
+ * @since 1.0, 2020-12-11 14:19:00
  */
 public class AlipayMerchantShopcodeApplyorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6671494561119357278L;
+	private static final long serialVersionUID = 1326498686173289151L;
 
 	/**
 	 * 支付宝侧生成的开通流水编号，可以通过传入该参数查询指定流水编号的开通状态。

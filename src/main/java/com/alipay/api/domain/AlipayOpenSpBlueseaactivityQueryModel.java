@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新蓝海活动申请单详情查询
  *
  * @author auto create
- * @since 1.0, 2020-10-24 07:17:10
+ * @since 1.0, 2020-11-26 13:57:39
  */
 public class AlipayOpenSpBlueseaactivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3545323517173148822L;
+	private static final long serialVersionUID = 1594685813246493631L;
 
 	/**
 	 * 申请单Id

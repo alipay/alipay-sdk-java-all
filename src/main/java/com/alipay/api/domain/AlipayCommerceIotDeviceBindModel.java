@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT设备-商户-店铺绑定
  *
  * @author auto create
- * @since 1.0, 2020-10-20 20:51:50
+ * @since 1.0, 2020-12-01 10:32:30
  */
 public class AlipayCommerceIotDeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3826327521726724337L;
+	private static final long serialVersionUID = 1777756388111333369L;
 
 	/**
 	 * 应用类型，目前只支持小程序MINI_APP
@@ -80,7 +80,8 @@ public class AlipayCommerceIotDeviceBindModel extends AlipayObject {
 	private String merchantIdType;
 
 	/**
-	 * 小程序ID，当app_type为MINI_APP时，设置该值
+	 * 小程序ID，当app_type为MINI_APP时，设置该值；
+如意LITE设备，请填写"RUYI_LITE"
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
@@ -104,10 +105,22 @@ public class AlipayCommerceIotDeviceBindModel extends AlipayObject {
 	private String source;
 
 	/**
+	 * 表示ISV在开放平台注册的SPI服务应用的app_id
+	 */
+	@ApiField("spi_app_id")
+	private String spiAppId;
+
+	/**
 	 * 设备供应商ID：supplierId
 	 */
 	@ApiField("supplier_id")
 	private String supplierId;
+
+	/**
+	 * 由ISV自定义的扩展字段，在支付宝侧向SPI服务发起请求时透传给ISV的服务，使得ISV能够自定义商户、设备等相关的信息，包括ISV商户、ISV门店、设备身份、安全校验等。
+	 */
+	@ApiField("terminal_bind_info")
+	private String terminalBindInfo;
 
 	public String getAppType() {
 		return this.appType;
@@ -214,11 +227,25 @@ public class AlipayCommerceIotDeviceBindModel extends AlipayObject {
 		this.source = source;
 	}
 
+	public String getSpiAppId() {
+		return this.spiAppId;
+	}
+	public void setSpiAppId(String spiAppId) {
+		this.spiAppId = spiAppId;
+	}
+
 	public String getSupplierId() {
 		return this.supplierId;
 	}
 	public void setSupplierId(String supplierId) {
 		this.supplierId = supplierId;
+	}
+
+	public String getTerminalBindInfo() {
+		return this.terminalBindInfo;
+	}
+	public void setTerminalBindInfo(String terminalBindInfo) {
+		this.terminalBindInfo = terminalBindInfo;
 	}
 
 }

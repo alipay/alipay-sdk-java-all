@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费学校信息录入接口
  *
  * @author auto create
- * @since 1.0, 2019-09-17 22:53:49
+ * @since 1.0, 2020-12-22 16:13:22
  */
 public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7882983743462597659L;
+	private static final long serialVersionUID = 5253685486532595795L;
 
 	/**
 	 * 与浙江网商交易见证平台有交互ISV输入网商交易异步通知回调URL，教育缴费同步账单信息给网商，网商会回调此url，ISV即可获取网商相关的参数，根据教育缴费平台账单发送接口返回的 order_no和网商返回的outer_trade_no来对应账单信息。

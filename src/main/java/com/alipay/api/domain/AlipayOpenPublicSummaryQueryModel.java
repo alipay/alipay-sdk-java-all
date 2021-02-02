@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家生活号信息查询
  *
  * @author auto create
- * @since 1.0, 2019-12-23 11:10:56
+ * @since 1.0, 2021-01-25 16:28:52
  */
 public class AlipayOpenPublicSummaryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4832138485461177866L;
+	private static final long serialVersionUID = 2734814233614731644L;
 
 	/**
 	 * 商户ID

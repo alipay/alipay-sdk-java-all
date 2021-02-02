@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取 H5 活动洞察信息
  *
  * @author auto create
- * @since 1.0, 2019-05-22 14:30:20
+ * @since 1.0, 2021-01-06 16:28:10
  */
 public class AlipayMarketingDataDeerInsightQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2458167896596415222L;
+	private static final long serialVersionUID = 3215478554467312315L;
 
 	/**
 	 * 洞察名称，只能是数字、英文字母、横线或下划线

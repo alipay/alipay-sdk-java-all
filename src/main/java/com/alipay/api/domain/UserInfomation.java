@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 用户信息
  *
  * @author auto create
- * @since 1.0, 2020-06-20 11:02:53
+ * @since 1.0, 2021-01-20 19:03:44
  */
 public class UserInfomation extends AlipayObject {
 
-	private static final long serialVersionUID = 7358529912518734834L;
+	private static final long serialVersionUID = 7733353611419676995L;
 
 	/**
 	 * 证件号
@@ -24,6 +27,13 @@ public class UserInfomation extends AlipayObject {
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 扩展信息
+	 */
+	@ApiListField("ext_info")
+	@ApiField("order_ext_info")
+	private List<OrderExtInfo> extInfo;
 
 	/**
 	 * 手机号
@@ -49,6 +59,13 @@ public class UserInfomation extends AlipayObject {
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public List<OrderExtInfo> getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(List<OrderExtInfo> extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getMobile() {

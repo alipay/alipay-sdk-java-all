@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.facefeature.groupkey.query request
  * 
  * @author auto create
- * @since 1.0, 2020-04-13 14:51:06
+ * @since 1.0, 2021-01-25 16:49:22
  */
 public class AlipayCommerceEducateFacefeatureGroupkeyQueryRequest implements AlipayRequest<AlipayCommerceEducateFacefeatureGroupkeyQueryResponse> {
 

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5442654377695697459L;
+	private static final long serialVersionUID = 1421769515648353688L;
 
 	/**
 	 * 代金券面额。
@@ -56,21 +56,21 @@ public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends Alipa
 
 	/**
 	 * 单品券封面图片。
-请先通过图片上传接口：alipay.marketing.material.image.upload上传图片。通过图片上传接口获取获得图片资源id以后，将该图片资源id传入，单张大小不超过2MB，格式支持png、gif、jpg、jpeg、bmp，尺寸为800X600
+请先通过 https://opendocs.alipay.com/pre-apis/00a8ae（图片上传接口）上传图片。通过图片上传接口获取获得图片资源ID以后，将该图片资源ID传入，单张大小不超过2MB，格式支持png、gif、jpg、jpeg、bmp，尺寸为800X600。
 	 */
 	@ApiField("goods_cover_image_id")
 	private String goodsCoverImageId;
 
 	/**
 	 * 单品券详情图片。
-请先通过图片上传接口：alipay.marketing.material.image.upload上传图片。通过图片上传接口获取获得图片资源id以后，将该图片资源id传入，单张大小不超过2MB，格式支持png、gif、jpg、jpeg、bmp，尺寸为800X600。
-最多支持3张单品详情图片，图片资源id用英文逗号分隔，不可含有重复资源ID。
+请先通过 https://opendocs.alipay.com/pre-apis/00a8ae（图片上传接口）上传图片。通过图片上传接口获取获得图片资源ID以后，将该图片资源ID传入，单张大小不超过2MB，格式支持png、gif、jpg、jpeg、bmp，尺寸为800X600。
+最多支持3张单品详情图片，图片资源ID用英文逗号分隔，不可含有重复资源ID。
 	 */
 	@ApiField("goods_detail_image_ids")
 	private String goodsDetailImageIds;
 
 	/**
-	 * 可优惠商品编码。多个编码标点隔开，不能含有重复id，最多3千个单品数量。当用户支付时，交易中的商品编码和单品券配置的商品编码有任一匹配时，可以使用单品优惠券。
+	 * 可优惠商品编码，商家自定义。多个编码用 ',' 隔开，不能含有重复ID，最多3000个单品数量。当用户支付时，交易中的商品编码和单品券配置的商品编码有任一匹配时，可以使用单品优惠券。
 	 */
 	@ApiField("goods_id")
 	private String goodsId;
@@ -120,7 +120,7 @@ public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends Alipa
 	private Date publishStartTime;
 
 	/**
-	 * 规则配置，JSON字符串，{"PID": "2088512417841101,2088512417841102", "STORE": "123456,678901"}，其中PID表示可以核销该券的pid列表，多个值用英文逗号隔开，PID为必传且需与接口调用PID或授权PID同属一个商家，必须签约当面付，STORE表示可以核销该券的内部门店ID，多个值用英文逗号隔开 。仅支持PID和STOREID核销规则，PID列表和门店ID列表均不能含有重复ID，并且门店ID数量最多支持3000个。
+	 * 规则配置，JSON字符串，{"PID": "2088512417841101,2088512417841102", "STORE": "123456,678901"}，其中PID表示可以核销该券的PID列表，多个值用英文逗号隔开，PID为必传且需与接口调用PID或授权PID同属一个商家，必须签约当面付，STORE表示可以核销该券的内部门店ID，多个值用英文逗号隔开 。仅支持PID和STOREID核销规则，PID列表和门店ID列表均不能含有重复ID，并且门店ID数量最多支持3000个。
 	 */
 	@ApiField("rule_conf")
 	private String ruleConf;
@@ -138,7 +138,7 @@ public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends Alipa
 	private String voucherAvailableTime;
 
 	/**
-	 * 券使用说明。JSON数组字符串，最多可以有10条，每条最多50字。必须写明券的使用条件、领取条件、退款规则，请参考示例；
+	 * 券使用说明。JSON数组字符串，最多可以有10条，每条最多50字。必须写明券的使用条件、领取条件、退款规则，请参考示例。
 	 */
 	@ApiListField("voucher_description")
 	@ApiField("string")
@@ -151,13 +151,16 @@ public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends Alipa
 	private String voucherQuantity;
 
 	/**
-	 * 无资金单品券券类型，目前仅支持无资金单品代金券（ITEM_CASHLESS_FIX_VOUCHER）、无资金单品折扣券（ITEM_CASHLESS_DISCOUNT_VOUCHER）、无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER）
+	 * 无资金单品券券类型。目前仅支持：
+ITEM_CASHLESS_FIX_VOUCHER：无资金单品代金券；
+ITEM_CASHLESS_DISCOUNT_VOUCHER：无资金单品折扣券；
+ITEM_CASHLESS_SPE_VOUCHER：无资金单品特价券。
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
 
 	/**
-	 * 券有效期。有两种类型：绝对时间和相对时间。使用JSON字符串表示。绝对时间有3个key：type、start、end，type取值固定为"ABSOLUTE"，start和end分别表示券生效时间和失效时间，格式为yyyy-MM-dd HH:mm:ss。绝对时间示例：{"type": "ABSOLUTE", "start": "2017-01-10 00:00:00", "end": "2017-01-13 23:59:59"}。相对时间有3个key：type、duration、unit，type取值固定为"RELATIVE"，duration表示从发券时间开始到往后推duration个单位时间为止作为券的使用有效期，unit表示有效时间单位，有效时间单位可枚举：MINUTE, HOUR, DAY。示例：{"type": "RELATIVE", "duration": 1 , "unit": "DAY" }，如果此刻发券，那么该券从现在开始生效1(duration)天(unit)后失效。
+	 * 券有效期，不能超过90天。type：红包有效期类型。支持 ABSOLUTE（绝对时间）、RELATIVE（相对时间）。ABSOLUTE（绝对时间）需传入 start （开始时间），end（结束时间）格式为yyyy-MM-dd HH:mm:ss。RELATIVE（相对时间）需传入 duration（有效时间）表示红包在发放后的duration个单位时间内有效，unit（有效时间单位）支持：MINUTE, HOUR, DAY，如"duration":1,"unit":"DAY"表示红包在发放开始的1天内有效。
 	 */
 	@ApiField("voucher_valid_period")
 	private String voucherValidPeriod;

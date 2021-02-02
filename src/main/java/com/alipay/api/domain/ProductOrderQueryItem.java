@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单条合约订购查询条件
  *
  * @author auto create
- * @since 1.0, 2020-07-01 09:43:41
+ * @since 1.0, 2021-01-19 17:00:24
  */
 public class ProductOrderQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4633514461272776259L;
+	private static final long serialVersionUID = 3162876189358917588L;
+
+	/**
+	 * 是否需要查活动信息
+	 */
+	@ApiField("need_activity")
+	private Boolean needActivity;
 
 	/**
 	 * 订购渠道
@@ -24,6 +30,13 @@ public class ProductOrderQueryItem extends AlipayObject {
 	 */
 	@ApiField("ps_code")
 	private String psCode;
+
+	public Boolean getNeedActivity() {
+		return this.needActivity;
+	}
+	public void setNeedActivity(Boolean needActivity) {
+		this.needActivity = needActivity;
+	}
 
 	public String getOrderedChannel() {
 		return this.orderedChannel;

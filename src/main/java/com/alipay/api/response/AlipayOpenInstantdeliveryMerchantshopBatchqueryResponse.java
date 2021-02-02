@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.MerchantShopDTO;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.instantdelivery.merchantshop.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-27 21:35:11
+ * @since 1.0, 2021-02-01 11:10:43
  */
 public class AlipayOpenInstantdeliveryMerchantshopBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3894449186114777638L;
+	private static final long serialVersionUID = 3237124317278791138L;
 
 	/** 
 	 * 当前页码
@@ -30,8 +32,9 @@ public class AlipayOpenInstantdeliveryMerchantshopBatchqueryResponse extends Ali
 	/** 
 	 * 门店列表数据。
 	 */
-	@ApiField("records")
-	private MerchantShopDTO records;
+	@ApiListField("records")
+	@ApiField("merchant_shop_d_t_o")
+	private List<MerchantShopDTO> records;
 
 	/** 
 	 * 总数量
@@ -53,10 +56,10 @@ public class AlipayOpenInstantdeliveryMerchantshopBatchqueryResponse extends Ali
 		return this.pageSize;
 	}
 
-	public void setRecords(MerchantShopDTO records) {
+	public void setRecords(List<MerchantShopDTO> records) {
 		this.records = records;
 	}
-	public MerchantShopDTO getRecords( ) {
+	public List<MerchantShopDTO> getRecords( ) {
 		return this.records;
 	}
 

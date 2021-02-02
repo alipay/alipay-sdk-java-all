@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.facepay.verify response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2020-12-18 15:27:19
  */
 public class AlipaySecurityProdFacepayVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4876683751561996917L;
+	private static final long serialVersionUID = 3854675528463943741L;
 
 	/** 
 	 * 安全码。当人脸认证成功时，支付宝返回此项参数，商户使用此token发起后续支付流程

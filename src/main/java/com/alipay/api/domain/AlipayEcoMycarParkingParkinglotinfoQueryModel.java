@@ -7,20 +7,22 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车场信息查询
  *
  * @author auto create
- * @since 1.0, 2020-07-02 11:09:58
+ * @since 1.0, 2021-01-13 11:10:49
  */
 public class AlipayEcoMycarParkingParkinglotinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2217223813582234367L;
+	private static final long serialVersionUID = 1535454534911352481L;
 
 	/**
-	 * ISV停车场ID，由ISV定义的停车场标识，系统唯一，parking_id和out_parking_id不能同时为空
+	 * ISV停车场ID，由ISV定义的停车场标识，同一个ISV或商户范围内唯一。需与 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口传入值一致。
+注意：parking_id和out_parking_id不能同时为空。
 	 */
 	@ApiField("out_parking_id")
 	private String outParkingId;
 
 	/**
-	 * 支付宝停车平台ID，由支付宝定义的该停车场标识，系统唯一, parking_id和out_parking_id不能同时为空
+	 * 支付宝停车平台ID，由支付宝定义的该停车场标识，同一个ISV或商户范围内唯一。通过 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口获取。
+注意：parking_id和out_parking_id不能同时为空。
 	 */
 	@ApiField("parking_id")
 	private String parkingId;
