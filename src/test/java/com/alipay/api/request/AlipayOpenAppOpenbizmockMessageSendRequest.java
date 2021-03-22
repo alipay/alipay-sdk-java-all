@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * @author junying
- * @version : AlipayOpenAppOpenbizmockMessageSendRequest.java, v 0.1 2020Äê12ÔÂ02ÈÕ 10:24 ÉÏÎç junying Exp $
+ * @version : AlipayOpenAppOpenbizmockMessageSendRequest.java, v 0.1 2020å¹´12æœˆ02æ—¥ 10:24 ä¸Šåˆ junying Exp $
  */
 public class AlipayOpenAppOpenbizmockMessageSendRequest extends Object implements AlipayRequest<AlipayOpenAppOpenbizmockMessageSendResponse> {
     private AlipayHashMap udfParams;

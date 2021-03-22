@@ -8,7 +8,7 @@ import com.alipay.api.AlipayResponse;
 
 /**
  * @author junying
- * @version : AlipayOpenAppOpenbizmockMessageSendResponse.java, v 0.1 2020Äê12ÔÂ02ÈÕ 10:25 ÉÏÎç junying Exp $
+ * @version : AlipayOpenAppOpenbizmockMessageSendResponse.java, v 0.1 2020å¹´12æœˆ02æ—¥ 10:25 ä¸Šåˆ junying Exp $
  */
 public class AlipayOpenAppOpenbizmockMessageSendResponse extends AlipayResponse {
     private static final long serialVersionUID = 3873811359427953227L;

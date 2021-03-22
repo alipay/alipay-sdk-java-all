@@ -18,7 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
  * @author junying
- * @version : MsgClientTest.java, v 0.1 2020Äê12ÔÂ02ÈÕ 9:54 ÉÏÎç junying Exp $
+ * @version : MsgClientTest.java, v 0.1 2020å¹´12æœˆ02æ—¥ 9:54 ä¸Šåˆ junying Exp $
  */
 public class MsgClientTest {
 
@@ -43,7 +43,7 @@ public class MsgClientTest {
             alipayMsgClient.setCharset(charset);
             alipayMsgClient.setLoadTest(false);
 
-            // ÏûÏ¢½ÓÊÕ
+            // æ¶ˆæ¯æ¥æ”¶
             alipayMsgClient.setMessageHandler(new MsgHandler() {
                 public void onMessage(String msgApi, String msgId, String bizContent) {
                     System.out.println("receive message. msgApi:" + msgApi + " msgId:" + msgId + " bizContent:" + bizContent);
@@ -53,7 +53,7 @@ public class MsgClientTest {
             alipayMsgClient.connect();
 
         } catch (Exception e) {
-            System.out.println("ÉÏĞĞÏûÏ¢½¨Á¢Á´½ÓÒì³££º");
+            System.out.println("ä¸Šè¡Œæ¶ˆæ¯å»ºç«‹é“¾æ¥å¼‚å¸¸ï¼š");
             e.printStackTrace();
         }
 
@@ -100,9 +100,9 @@ public class MsgClientTest {
                     "  }");
             AlipayOpenAppOpenbizmockMessageSendResponse response = alipayClient.execute(request);
             if(response.isSuccess()){
-                System.out.println("µ÷ÓÃ³É¹¦");
+                System.out.println("è°ƒç”¨æˆåŠŸ");
             } else {
-                System.out.println("µ÷ÓÃÊ§°Ü");
+                System.out.println("è°ƒç”¨å¤±è´¥");
             }
 
             System.out.println(response.getBody());
