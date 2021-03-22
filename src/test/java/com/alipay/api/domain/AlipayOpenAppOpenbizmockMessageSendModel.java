@@ -9,7 +9,7 @@ import com.alipay.api.internal.mapping.ApiField;
 
 /**
  * @author junying
- * @version : AlipayOpenAppOpenbizmockMessageSendModel.java, v 0.1 2020Äê12ÔÂ02ÈÕ 10:29 ÉÏÎç junying Exp $
+ * @version : AlipayOpenAppOpenbizmockMessageSendModel.java, v 0.1 2020å¹´12æœˆ02æ—¥ 10:29 ä¸Šåˆ junying Exp $
  */
 public class AlipayOpenAppOpenbizmockMessageSendModel extends AlipayObject {
     private static final long serialVersionUID = 2215897481895449228L;
