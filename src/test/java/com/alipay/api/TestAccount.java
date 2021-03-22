@@ -6,6 +6,8 @@ package com.alipay.api;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alipay.api.internal.util.file.IOUtils;
+import com.alipay.api.kms.aliyun.AliyunKMSCertAlipayRequest;
+import com.alipay.api.kms.aliyun.AliyunKMSClient;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -112,6 +114,134 @@ public class TestAccount {
         public static final String APP_PRIVATE_KEY = getPrivateKey("DevSM2");
     }
 
+    public static class AliyunKMSCert {
+        public static final String GATEWAY = "https://openapi.alipay.com/gateway.do";
+
+        public static final String APP_ID = "2021001185661068";
+
+        public static final String SIGN_TYPE = "RSA2";
+
+        //阿里云官方申请的AccessKey Id
+        public static final String ACCESS_KEY_ID = getAliyunAccessKey("AccessKeyId");
+
+        //阿里云官方申请的AccessKey Secret
+        public static final String ACCESS_KEY_SECRET = getAliyunAccessKey("AccessKeySecret");
+
+        //阿里云KMS主密钥ID
+        public static final String KMS_KEY_ID = "4358f298-8e30-4849-9791-52e68dbd9d1e";
+
+        //阿里云KMS主密钥版本ID
+        public static final String KMS_KEY_VERSION_ID = "e71daa69-c321-4014-b0c4-ba070c7839ee";
+
+        //阿里云KMS client
+        public static final AliyunKMSClient KMS_CLIENT = getAliyunKMSClient();
+
+        //阿里云RAM角色全局资源描述符
+        public static final String ROLE_ARN = "acs:ram::1540355698848459:role/aliyunramrolearntest";
+
+        //阿里云RAM临时角色名称
+        public static final String ROLE_SESSION_NAME = "defaultRoleSessionName";
+
+        //从阿里云官方获取的临时安全令牌Security Token
+        public static final String SECURITY_TOKEN = "<--需要替换成即时的security token进行测试-->";
+
+        //阿里云ECS实例RAM角色名称
+        public static final String ROLE_NAME = "AliyunECSRamRoleTest";
+
+        /**
+         * KMS服务地址
+         * KMS服务地址列表详情，请参考：
+         * https://help.aliyun.com/document_detail/69006.html?spm=a2c4g.11186623.2.9.783f77cfAoNhY6#concept-69006-zh
+         */
+        public static final String KMS_ENDPOINT = "kms.cn-hangzhou.aliyuncs.com";
+
+        public static final AliyunKMSCertAlipayRequest CERT_PARAMS = getCertParams();
+
+        public static AliyunKMSCertAlipayRequest getCertParams() {
+            AliyunKMSCertAlipayRequest certParams = new AliyunKMSCertAlipayRequest();
+            certParams.setServerUrl(AliyunKMSCert.GATEWAY);
+            certParams.setAppId(AliyunKMSCert.APP_ID);
+            certParams.setFormat("json");
+            certParams.setCharset("utf-8");
+            certParams.setSignType(AliyunKMSCert.SIGN_TYPE);
+            certParams.setCertPath("src/test/resources/fixture/appCertPublicKey_2021001185661068_AliyunKMS.crt");
+            certParams.setAlipayPublicCertPath("src/test/resources/fixture/alipayCertPublicKey_RSA2_AliyunKMS.crt");
+            certParams.setRootCertPath("src/test/resources/fixture/alipayRootCert_AliyunKMS.crt");
+            certParams.setClient(AliyunKMSCert.KMS_CLIENT);
+            certParams.setKeyId(AliyunKMSCert.KMS_KEY_ID);
+            certParams.setKeyVersionId(AliyunKMSCert.KMS_KEY_VERSION_ID);
+            return certParams;
+        }
+
+        public static AliyunKMSClient getAliyunKMSClient() {
+            return new AliyunKMSClient(AliyunKMSCert.KMS_ENDPOINT, AliyunKMSCert.ACCESS_KEY_ID, AliyunKMSCert.ACCESS_KEY_SECRET);
+        }
+    }
+
+    public static class AliyunKMSSM2Cert {
+        public static final String GATEWAY = "https://openapi.alipay.com/gateway.do";
+
+        public static final String APP_ID = "2021001185661076";
+
+        public static final String SIGN_TYPE = "SM2";
+
+        //阿里云官方申请的AccessKey Id
+        public static final String ACCESS_KEY_ID = getAliyunAccessKey("AccessKeyId");
+
+        //阿里云官方申请的AccessKey Secret
+        public static final String ACCESS_KEY_SECRET = getAliyunAccessKey("AccessKeySecret");
+
+        //阿里云KMS主密钥ID
+        public static final String KMS_KEY_ID = "a1f40fb2-a8dc-4202-9f52-d01b190ab48b";
+
+        //阿里云KMS主密钥版本ID
+        public static final String KMS_KEY_VERSION_ID = "c36bfd85-7bb0-4fed-8444-e51d40413832";
+
+        //阿里云KMS client
+        public static final AliyunKMSClient KMS_CLIENT = getAliyunKMSClient();
+
+        //阿里云RAM角色全局资源描述符
+        public static final String ROLE_ARN = "acs:ram::1540355698848459:role/aliyunramrolearntest";
+
+        //阿里云RAM临时角色名称
+        public static final String ROLE_SESSION_NAME = "defaultRoleSessionName";
+
+        //从阿里云官方获取的临时安全令牌Security Token
+        public static final String SECURITY_TOKEN = "<--需要替换成即时的security token进行测试-->";
+
+        //阿里云ECS实例RAM角色名称
+        public static final String ROLE_NAME = "AliyunECSRamRoleTest";
+
+        /**
+         * KMS服务地址
+         * KMS服务地址列表详情，请参考：
+         * https://help.aliyun.com/document_detail/69006.html?spm=a2c4g.11186623.2.9.783f77cfAoNhY6#concept-69006-zh
+         */
+        public static final String KMS_ENDPOINT = "kms.cn-hangzhou.aliyuncs.com";
+
+        public static final AliyunKMSCertAlipayRequest SM2_CERT_PARAMS = getSM2CertParams();
+
+        public static AliyunKMSCertAlipayRequest getSM2CertParams() {
+            AliyunKMSCertAlipayRequest certParams = new AliyunKMSCertAlipayRequest();
+            certParams.setServerUrl(AliyunKMSSM2Cert.GATEWAY);
+            certParams.setAppId(AliyunKMSSM2Cert.APP_ID);
+            certParams.setFormat("json");
+            certParams.setCharset("GBK");
+            certParams.setSignType(AliyunKMSSM2Cert.SIGN_TYPE);
+            certParams.setCertPath("src/test/resources/fixture/appCertPublicKey_2021001185661076_SM2_AliyunKMS.crt");
+            certParams.setAlipayPublicCertPath("src/test/resources/fixture/alipayCertPublicKey_SM2_AliyunKMS.crt");
+            certParams.setRootCertPath("src/test/resources/fixture/alipayRootCert_SM2_AliyunKMS.crt");
+            certParams.setClient(AliyunKMSSM2Cert.KMS_CLIENT);
+            certParams.setKeyId(AliyunKMSSM2Cert.KMS_KEY_ID);
+            certParams.setKeyVersionId(AliyunKMSSM2Cert.KMS_KEY_VERSION_ID);
+            return certParams;
+        }
+
+        public static AliyunKMSClient getAliyunKMSClient() {
+            return new AliyunKMSClient(AliyunKMSSM2Cert.KMS_ENDPOINT, AliyunKMSSM2Cert.ACCESS_KEY_ID, AliyunKMSSM2Cert.ACCESS_KEY_SECRET);
+        }
+    }
+
     /**
      * 从文件中读取私钥
      * <p>
@@ -126,6 +256,23 @@ public class TestAccount {
     private static String getPrivateKey(String key) {
         try {
             InputStream stream = TestAccount.class.getResourceAsStream("/fixture/privateKey.json");
+            JSONObject jsonObject = JSON.parseObject(IOUtils.toString(stream, "utf-8"));
+            return jsonObject.getString(key);
+        } catch (IOException e) {
+            throw new RuntimeException(e.getMessage(), e);
+        }
+    }
+
+    /**
+     * 从文件中读取阿里云AccessKey配置信息
+     * 此处为了单元测试执行的环境普适性，AccessKey信息配置在resources资源下，实际过程中请不要这样做。
+     *
+     * @param key AccessKey配置对应的key
+     * @return AccessKey配置字符串
+     */
+    private static String getAliyunAccessKey(String key) {
+        try {
+            InputStream stream = TestAccount.class.getResourceAsStream("/fixture/aliyunAccessKey.json");
             JSONObject jsonObject = JSON.parseObject(IOUtils.toString(stream, "utf-8"));
             return jsonObject.getString(key);
         } catch (IOException e) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流公司账户状态信息
  *
  * @author auto create
- * @since 1.0, 2020-09-27 19:30:34
+ * @since 1.0, 2021-02-03 12:10:33
  */
 public class LogisticsAccountStatusDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5456387255327832235L;
+	private static final long serialVersionUID = 8417413766659874885L;
 
 	/**
 	 * 商家在配送公司的账户的审核说明
@@ -32,7 +32,7 @@ public class LogisticsAccountStatusDTO extends AlipayObject {
 	private String logisticsName;
 
 	/**
-	 * 账户状态，AUDITING:审核中，CREATE_FAILED:创建失败，AUDIT_REJECT:审核驳回，IN_FORCE:已生效
+	 * 账户状态，AUDITING:审核中，AUDIT_REJECT:审核驳回，VALID:已生效
 	 */
 	@ApiField("status")
 	private String status;

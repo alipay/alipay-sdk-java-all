@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 传递给金融网络业务扩展信息
  *
  * @author auto create
- * @since 1.0, 2020-12-30 16:44:42
+ * @since 1.0, 2021-03-18 15:52:47
  */
 public class FinExtParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2571444484931346897L;
+	private static final long serialVersionUID = 2361772726218657269L;
 
 	/**
 	 * 机构的appid

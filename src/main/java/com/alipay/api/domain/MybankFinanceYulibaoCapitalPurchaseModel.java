@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoCapitalPurchaseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2752568414744482986L;
+	private static final long serialVersionUID = 4179259563682722193L;
 
 	/**
 	 * 余利宝申购金额，单位是“分”。如amount=123456表示申购1234.56元的余利宝份额。
@@ -26,7 +26,7 @@ public class MybankFinanceYulibaoCapitalPurchaseModel extends AlipayObject {
 	private String currency;
 
 	/**
-	 * 基金代码，必填。目前默认填001529，代表余利宝
+	 * 基金代码。余利宝场景固定为 001529。
 	 */
 	@ApiField("fund_code")
 	private String fundCode;

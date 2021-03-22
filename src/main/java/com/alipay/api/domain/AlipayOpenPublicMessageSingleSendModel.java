@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicMessageSingleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5855353684797287875L;
+	private static final long serialVersionUID = 1849317966538663557L;
 
 	/**
 	 * 消息模板相关参数，其中包括templateId模板ID和context模板上下文
@@ -20,7 +20,7 @@ public class AlipayOpenPublicMessageSingleSendModel extends AlipayObject {
 	private Template template;
 
 	/**
-	 * 消息接收用户的userid
+	 * 消息接收用户的支付宝用户id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
 	 */
 	@ApiField("to_user_id")
 	private String toUserId;

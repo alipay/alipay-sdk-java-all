@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-08 21:32:55
+ * @since 1.0, 2021-03-11 15:41:22
  */
 public class AlipayOpenPublicInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4836938789341152682L;
+	private static final long serialVersionUID = 6117217813467884363L;
 
 	/** 
 	 * 生活号名称
@@ -73,8 +73,7 @@ public class AlipayOpenPublicInfoQueryResponse extends AlipayResponse {
 	private String logoUrl;
 
 	/** 
-	 * 商家经营类目，详情可参考
-<a href="https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.INIZWb&articleId=105364&docType=1">商家经营类目</a>
+	 * 商家经营类目，详情参见 <a href="https://opendocs.alipay.com/open/01n22g">商家经营类目</a>
 	 */
 	@ApiField("mcc_code_desc")
 	private String mccCodeDesc;

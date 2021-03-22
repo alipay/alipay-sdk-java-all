@@ -8,14 +8,16 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.user.follow.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-01 10:00:12
+ * @since 1.0, 2021-02-02 11:08:52
  */
 public class AlipayOpenPublicUserFollowQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4331246751144959998L;
+	private static final long serialVersionUID = 7762812971475575967L;
 
 	/** 
-	 * 用户是否关注，T代表已关注，F代表未关注
+	 * 用户是否关注。枚举值如下：
+*T：代表已关注。
+*F：代表未关注。
 	 */
 	@ApiField("is_follow")
 	private String isFollow;

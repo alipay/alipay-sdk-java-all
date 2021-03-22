@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiTradeOrderConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6223633842562934918L;
+	private static final long serialVersionUID = 7339832291954367596L;
 
 	/**
 	 * 用户设备信息,通过钱包容器提供的JSAPI接口获取，
@@ -42,7 +42,7 @@ AlipayJSBridge.call('getO2ODeviceToken', {
 	private List<GoodsInfo> goodsInfo;
 
 	/**
-	 * 唯一请求id，开放者请确保每次请求的唯一性
+	 * 唯一请求id，开放者请确保每次请求的唯一性。
 	 */
 	@ApiField("request_id")
 	private String requestId;
@@ -54,21 +54,21 @@ AlipayJSBridge.call('getO2ODeviceToken', {
 	private String shopId;
 
 	/**
-	 * 订单总金额，单位元，精确到小数点后两位，取值范围[0.01,999999999]
-如果同时传入了【不可打折金额】，【订单总金额】两者，则必须满足【不可打折金额】<=【订单总金额】
+	 * 订单总金额，单位元，精确到小数点后两位，取值范围[0.01,999999999]。
+注意：如果同时传入了【不可打折金额】，【订单总金额】两者，则必须满足【不可打折金额】<=【订单总金额】。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
 
 	/**
-	 * 不可打折金额，单位为元，精确到小数点后两位，取值范围[0,999999999]
-如果同时传入了【不可打折金额】、【订单总金额】，则必须满足【不可打折金额】<=【订单总金额】
+	 * 不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0,999999999]。
+注意：如果同时传入了【不可打折金额】、【订单总金额】，则必须满足【不可打折金额】<=【订单总金额】。
 	 */
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;
 
 	/**
-	 * 支付宝用户Id
+	 * 支付宝用户Id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
 	 */
 	@ApiField("user_id")
 	private String userId;

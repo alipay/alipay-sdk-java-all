@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机具设备信息查询
  *
  * @author auto create
- * @since 1.0, 2018-07-31 17:08:29
+ * @since 1.0, 2021-03-03 12:07:53
  */
 public class AlipayCommerceIotMdeviceprodQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2242963698931729327L;
+	private static final long serialVersionUID = 2833491497393964729L;
 
 	/**
 	 * 设备id（物料系统的id）

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandAutomatApplyModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3775472137875369744L;
+	private static final long serialVersionUID = 7818194394133979427L;
 
 	/**
 	 * 机具发货地址信息
@@ -70,7 +70,7 @@ BREAKFAST_MACHINE(早餐机),
 TISSUE_MACHINE(纸巾机),
 NOODLE_MACHINE(面条机),
 PROTOTYPE_MACHINE(派样机),
-ADULT_ITEM_MACHINE(成人用品机),
+SCANFACE_PORTABLE_CHARGER_SMALL(扫脸小充电宝),
 OTHER(其他)
 	 */
 	@ApiField("machine_type")

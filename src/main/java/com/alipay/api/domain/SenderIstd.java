@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发件人
  *
  * @author auto create
- * @since 1.0, 2020-09-20 10:48:39
+ * @since 1.0, 2021-03-05 09:59:27
  */
 public class SenderIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 8722483674633353124L;
+	private static final long serialVersionUID = 5412817947436196484L;
 
 	/**
 	 * 地址(街道、小区、大厦等，用于定位)
@@ -41,13 +41,13 @@ public class SenderIstd extends AlipayObject {
 	 * 纬度
 	 */
 	@ApiField("lat")
-	private Long lat;
+	private String lat;
 
 	/**
 	 * 经度
 	 */
 	@ApiField("lng")
-	private Long lng;
+	private String lng;
 
 	/**
 	 * 手机号
@@ -89,17 +89,17 @@ public class SenderIstd extends AlipayObject {
 		this.coordinateType = coordinateType;
 	}
 
-	public Long getLat() {
+	public String getLat() {
 		return this.lat;
 	}
-	public void setLat(Long lat) {
+	public void setLat(String lat) {
 		this.lat = lat;
 	}
 
-	public Long getLng() {
+	public String getLng() {
 		return this.lng;
 	}
-	public void setLng(Long lng) {
+	public void setLng(String lng) {
 		this.lng = lng;
 	}
 

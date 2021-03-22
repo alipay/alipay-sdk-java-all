@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEprintPrinterDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2658741668425178474L;
+	private static final long serialVersionUID = 5572271132649762577L;
 
 	/**
 	 * 应用ID

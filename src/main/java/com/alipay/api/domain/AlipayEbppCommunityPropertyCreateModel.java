@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业公司创建
  *
  * @author auto create
- * @since 1.0, 2020-11-17 09:43:16
+ * @since 1.0, 2021-02-18 19:07:52
  */
 public class AlipayEbppCommunityPropertyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7851953934878359644L;
+	private static final long serialVersionUID = 5171584266327218918L;
 
 	/**
 	 * 外部联系人

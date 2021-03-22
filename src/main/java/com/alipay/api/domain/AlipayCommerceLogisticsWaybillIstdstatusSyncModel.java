@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即时配送运单状态变更通知(配送公司to蚂蚁)
  *
  * @author auto create
- * @since 1.0, 2020-09-26 22:33:45
+ * @since 1.0, 2021-02-07 11:46:35
  */
 public class AlipayCommerceLogisticsWaybillIstdstatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4437597414246769467L;
+	private static final long serialVersionUID = 4435199391227421428L;
 
 	/**
 	 * 事件发生时间点

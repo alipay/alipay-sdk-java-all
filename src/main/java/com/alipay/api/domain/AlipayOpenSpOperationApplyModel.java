@@ -11,12 +11,12 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpOperationApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3364444952239851592L;
+	private static final long serialVersionUID = 1394771169633768254L;
 
 	/**
 	 * 接入的产品编号。 枚举如下：
-操作类型为账号绑定时，填OPENAPI_BIND_DEFAULT。
-操作类型为代运营授权时，填OPENAPI_AUTH_DEFAULT。
+* OPENAPI_BIND_DEFAULT：操作类型为账号绑定。
+* OPENAPI_AUTH_DEFAULT：操作类型为代运营授权时。
 	 */
 	@ApiField("access_product_code")
 	private String accessProductCode;
@@ -38,9 +38,9 @@ public class AlipayOpenSpOperationApplyModel extends AlipayObject {
 	private String merchantNo;
 
 	/**
-	 * 代运营操作类型。
-ACCOUNT_BIND:代表绑定支付宝账号，仅对于间连商户。
-OPERATION_AUTH:代表代运营授权，支持间连和直连商户，其中间连场景包含绑定支付宝账号。
+	 * 代运营操作类型。枚举如下：
+* ACCOUNT_BIND：代表绑定支付宝账号，仅对于间连商户。
+* OPERATION_AUTH：代表代运营授权，支持间连和直连商户，其中间连场景包含绑定支付宝账号。
 	 */
 	@ApiField("operate_type")
 	private String operateType;

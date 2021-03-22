@@ -1,0 +1,42 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 增值服务的sku
+ *
+ * @author auto create
+ * @since 1.0, 2021-03-02 13:43:03
+ */
+public class HealthServiceSku extends AlipayObject {
+
+	private static final long serialVersionUID = 2343522197295585731L;
+
+	/**
+	 * 商家sku条形码
+	 */
+	@ApiField("merchant_item_sku_bar_code")
+	private String merchantItemSkuBarCode;
+
+	/**
+	 * skuId
+	 */
+	@ApiField("sku_id")
+	private String skuId;
+
+	public String getMerchantItemSkuBarCode() {
+		return this.merchantItemSkuBarCode;
+	}
+	public void setMerchantItemSkuBarCode(String merchantItemSkuBarCode) {
+		this.merchantItemSkuBarCode = merchantItemSkuBarCode;
+	}
+
+	public String getSkuId() {
+		return this.skuId;
+	}
+	public void setSkuId(String skuId) {
+		this.skuId = skuId;
+	}
+
+}

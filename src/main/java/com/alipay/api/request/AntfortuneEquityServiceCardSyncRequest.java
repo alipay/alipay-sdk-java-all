@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.equity.service.card.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-09-01 09:59:00
+ * @since 1.0, 2021-03-02 20:25:16
  */
 public class AntfortuneEquityServiceCardSyncRequest implements AlipayRequest<AntfortuneEquityServiceCardSyncResponse> {
 

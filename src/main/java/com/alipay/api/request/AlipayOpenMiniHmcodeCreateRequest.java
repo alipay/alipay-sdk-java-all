@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.hmcode.create request
  * 
  * @author auto create
- * @since 1.0, 2021-01-29 23:00:17
+ * @since 1.0, 2021-02-03 15:15:16
  */
 public class AlipayOpenMiniHmcodeCreateRequest implements AlipayRequest<AlipayOpenMiniHmcodeCreateResponse> {
 

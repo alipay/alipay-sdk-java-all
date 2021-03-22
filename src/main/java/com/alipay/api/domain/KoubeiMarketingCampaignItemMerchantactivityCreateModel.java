@@ -15,110 +15,96 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiMarketingCampaignItemMerchantactivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7138518382177497984L;
+	private static final long serialVersionUID = 3523554922996139325L;
 
 	/**
-	 * 活动优惠次数限制
-活动优惠总次数限制不能小于1,且不能为不限制
-活动优惠总次数限制不能大于99999999
+	 * 活动优惠次数限制，必须设置。
+说明：活动优惠总次数限制不能小于1，且不能大于99999999。
 	 */
 	@ApiField("count_limit")
 	private Long countLimit;
 
 	/**
-	 * 活动优惠单日次数限制
-0表示不限制
-活动优惠单日次数限制不能为负数
-活动优惠单日次数限制不能大于99999999
+	 * 活动优惠单日次数限制。
+说明：活动优惠单日次数限制不能为负数，不能大于99999999；0表示不限制。
+
 	 */
 	@ApiField("count_limit_per_day")
 	private Long countLimitPerDay;
 
 	/**
-	 * 活动单用户限次
-0表示不限制
-活动单用户总限次不能为负数
-活动单用户总限次不能大于999
+	 * 活动单用户限次。
+说明：活动单用户总限次不能为负数，不能大于999。0表示不限制。
 	 */
 	@ApiField("count_limit_per_user")
 	private Long countLimitPerUser;
 
 	/**
-	 * 活动单用户单日限次
-0表示不限制
-活动单用户单日限次不能为负数
-活动单用户单日限次不能大于999
+	 * 活动单用户单日限次。
+说明：活动单用户单日限次不能为负数，不能大于999。0表示不限制。
 	 */
 	@ApiField("count_limit_per_user_per_day")
 	private Long countLimitPerUserPerDay;
 
 	/**
-	 * 人群规则：
-DEFAULT： 全部用户
-ONLINE_NEWCOMER：在线购买新人
-MEMBER：会员
+	 * 群规则，枚举支持：
+* DEFAULT： 全部用户；
+* ONLINE_NEWCOMER：在线购买新人；
+* MEMBER：会员。
 	 */
 	@ApiField("crowd")
 	private String crowd;
 
 	/**
-	 * 代金券面额
-代金券面额 单位为元
-代金券面额格式必须为#.##
-代金券面额需小于49999
+	 * 代金券面额，单位为元。
+说明：代金券面额格式必须为#.##，代金券面额需小于49999。
 	 */
 	@ApiField("deduct_amount")
 	private String deductAmount;
 
 	/**
-	 * 外部回调地址
-外部回调地址最大字符数不能超过500
+	 * 外部回调地址，最大字符数不能超过500。
 	 */
 	@ApiField("external_callback_url")
 	private String externalCallbackUrl;
 
 	/**
-	 * 外部Id
-最大长度不能超过64
-最小长度不能低于13
+	 * 外部id，需保证同一账户下唯一。
+说明：最小长度不能低于13，最大长度不能超过64。
 	 */
 	@ApiField("external_unique_id")
 	private String externalUniqueId;
 
 	/**
-	 * 活动结束时间
-格式必须为yyyy-MM-dd HH:mm:ss
+	 * 活动结束时间。活动结束时间需大于活动开始时间。格式为"yyyy-MM-dd HH:mm:ss"。
 	 */
 	@ApiField("gmt_end")
 	private Date gmtEnd;
 
 	/**
-	 * 活动开始时间
-格式必须为yyyy-MM-dd HH:mm:ss
+	 * 活动开始时间。格式为"yyyy-MM-dd HH:mm:ss"。
 	 */
 	@ApiField("gmt_start")
 	private Date gmtStart;
 
 	/**
-	 * 商品列表
-参加活动的商品列表不能为空
-参加活动的商品列表最大个数不能超过100
+	 * 商品列表。
+说明：参加活动的商品列表不能为空，最大个数不能超过100。
 	 */
 	@ApiListField("item_ids")
 	@ApiField("string")
 	private List<String> itemIds;
 
 	/**
-	 * 备注
-备注最大字符数不能超过500
+	 * 备注。
+说明：备注最大字符数不能超过500。
 	 */
 	@ApiField("memo")
 	private String memo;
 
 	/**
-	 * 使用门槛，满X元可用，使用门槛必须大于券面额
-使用门槛单位为元
-使用门槛格式必须为#.##
+	 * 使用门槛，即满 min_cost 元可用，使用门槛必须大于券面额，单位为元。
+说明：使用门槛格式必须为#.##。
 	 */
 	@ApiField("min_cost")
 	private String minCost;

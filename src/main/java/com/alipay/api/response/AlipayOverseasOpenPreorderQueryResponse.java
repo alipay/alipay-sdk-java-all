@@ -4,6 +4,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.TuitionISVAgentInfoDTO;
 import com.alipay.api.domain.TuitionISVResponsePaymentInfoDTO;
 import com.alipay.api.domain.TuitionISVResult;
+import com.alipay.api.domain.TuitionISVOrderStatusDTO;
 import com.alipay.api.domain.TuitionISVStudentInfoDTO;
 
 import com.alipay.api.AlipayResponse;
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.preorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-11-27 15:59:09
+ * @since 1.0, 2021-03-04 10:50:18
  */
 public class AlipayOverseasOpenPreorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7128931668872658812L;
+	private static final long serialVersionUID = 3551191137618855959L;
 
 	/** 
 	 * 机构信息
@@ -25,7 +26,7 @@ public class AlipayOverseasOpenPreorderQueryResponse extends AlipayResponse {
 	private TuitionISVAgentInfoDTO agentInfo;
 
 	/** 
-	 * payment_info
+	 * payment_info（已废弃）
 	 */
 	@ApiField("payment_info")
 	private TuitionISVResponsePaymentInfoDTO paymentInfo;
@@ -43,13 +44,19 @@ public class AlipayOverseasOpenPreorderQueryResponse extends AlipayResponse {
 	private TuitionISVResult result;
 
 	/** 
-	 * 单据状态
+	 * 订单状态
+	 */
+	@ApiField("status")
+	private TuitionISVOrderStatusDTO status;
+
+	/** 
+	 * 单据状态（已废弃）
 	 */
 	@ApiField("status_code")
 	private String statusCode;
 
 	/** 
-	 * TuitionISVStudentInfoDTO
+	 * TuitionISVStudentInfoDTO（已废弃）
 	 */
 	@ApiField("student_info")
 	private TuitionISVStudentInfoDTO studentInfo;
@@ -80,6 +87,13 @@ public class AlipayOverseasOpenPreorderQueryResponse extends AlipayResponse {
 	}
 	public TuitionISVResult getResult( ) {
 		return this.result;
+	}
+
+	public void setStatus(TuitionISVOrderStatusDTO status) {
+		this.status = status;
+	}
+	public TuitionISVOrderStatusDTO getStatus( ) {
+		return this.status;
 	}
 
 	public void setStatusCode(String statusCode) {

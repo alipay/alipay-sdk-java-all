@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingCampaignActivityOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2576889318948355697L;
+	private static final long serialVersionUID = 1566135446787493896L;
 
 	/**
-	 * 活动Id
+	 * 活动id。通过 <a href="https://opendocs.alipay.com/apis/api_5/koubei.marketing.campaign.activity.create">koubei.marketing.campaign.activity.create</a>(活动创建接口)获取。
 	 */
 	@ApiField("camp_id")
 	private String campId;
@@ -32,13 +32,17 @@ public class KoubeiMarketingCampaignActivityOfflineModel extends AlipayObject {
 	private String operatorId;
 
 	/**
-	 * 操作人类型,有以下值可填：MER（外部商户），MER_OPERATOR（外部商户操作员），PROVIDER（外部服务商），PROVIDER_STAFF（外部服务商员工），默认不需要填这个字段，默认为MER
+	 * 操作人类型，不填默认为 MER（外部商户）。支持枚举值如下：
+* MER：外部商户。
+* MER_OPERATOR：外部商户操作员。
+* PROVIDER：外部服务商。
+* PROVIDER_STAFF：外部服务商员工。
 	 */
 	@ApiField("operator_type")
 	private String operatorType;
 
 	/**
-	 * 外部批次ID,每次需传入不同的值
+	 * 外部批次ID。需保证同一账户下唯一，控制幂等。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

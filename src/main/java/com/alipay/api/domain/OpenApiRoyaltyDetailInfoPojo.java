@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 修复结算金额amount的类型，原来Number类型不合理，导致商户无法通过sdk集成，需改成Price类型
+ * 修改分账场景描述
  *
  * @author auto create
- * @since 1.0, 2020-12-29 14:51:24
+ * @since 1.0, 2021-03-02 22:48:42
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 6218656119588225862L;
+	private static final long serialVersionUID = 4647927124825923494L;
 
 	/**
 	 * 分账的金额，单位为元
@@ -30,6 +30,12 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	 */
 	@ApiField("desc")
 	private String desc;
+
+	/**
+	 * 可选值：达人佣金、平台服务费、技术服务费、其他
+	 */
+	@ApiField("royalty_scene")
+	private String royaltyScene;
 
 	/**
 	 * 分账类型.
@@ -53,13 +59,13 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	private String transInType;
 
 	/**
-	 * 支出方账户。如果支出方账户类型为userId，本参数为支出方的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；如果支出方类型为loginName，本参数为支出方的支付宝登录号；
+	 * 支出方账户。如果支出方账户类型为userId，本参数为支出方的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；如果支出方类型为loginName，本参数为支出方的支付宝登录号。 泛金融类商户分账时，该字段不要上送。
 	 */
 	@ApiField("trans_out")
 	private String transOut;
 
 	/**
-	 * 支出方账户类型。userId表示是支付宝账号对应的支付宝唯一用户号;loginName表示是支付宝登录号；
+	 * 支出方账户类型。userId表示是支付宝账号对应的支付宝唯一用户号;loginName表示是支付宝登录号； 泛金融类商户分账时，该字段不要上送。
 	 */
 	@ApiField("trans_out_type")
 	private String transOutType;
@@ -83,6 +89,13 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	}
 	public void setDesc(String desc) {
 		this.desc = desc;
+	}
+
+	public String getRoyaltyScene() {
+		return this.royaltyScene;
+	}
+	public void setRoyaltyScene(String royaltyScene) {
+		this.royaltyScene = royaltyScene;
 	}
 
 	public String getRoyaltyType() {

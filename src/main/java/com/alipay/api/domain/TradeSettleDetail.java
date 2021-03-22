@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易结算明细
  *
  * @author auto create
- * @since 1.0, 2020-03-10 15:50:40
+ * @since 1.0, 2021-02-23 14:53:48
  */
 public class TradeSettleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4697677558432736673L;
+	private static final long serialVersionUID = 7715285733829955438L;
 
 	/**
 	 * 实际操作金额，单位为元，两位小数。该参数的值为分账或补差或结算时传入
@@ -34,7 +34,8 @@ public class TradeSettleDetail extends AlipayObject {
 	private String operationSerialNo;
 
 	/**
-	 * 结算操作类型。包含replenish、replenish_refund、transfer、transfer_refund等类型
+	 * 结算操作类型。有以下几种类型：
+replenish(补差)、replenish_refund(退补差)、transfer(分账)、transfer_refund(退分账)、settle(结算)、settle_refund(退结算)、on_settle(待结算)。
 	 */
 	@ApiField("operation_type")
 	private String operationType;

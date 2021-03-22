@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构商户解约服务
  *
  * @author auto create
- * @since 1.0, 2019-03-22 16:16:09
+ * @since 1.0, 2021-03-04 14:33:56
  */
 public class AlipayFinancialnetAuthContractMerchantUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1241832469136511593L;
+	private static final long serialVersionUID = 5735528414589513852L;
 
 	/**
 	 * 场景码

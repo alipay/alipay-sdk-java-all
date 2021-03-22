@@ -11,28 +11,28 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicTemplateMessageIndustryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2448572921678434821L;
+	private static final long serialVersionUID = 5188562571815151495L;
 
 	/**
-	 * 服务窗消息模板所属主行业一/二级编码
+	 * 服务窗消息模板所属主行业一/二级编码，参见 <a href="https://alipay.open.taobao.com/doc2/detail?treeId=197&docType=1&articleId=105043">查看行业信息</a>。
 	 */
 	@ApiField("primary_industry_code")
 	private String primaryIndustryCode;
 
 	/**
-	 * 服务窗消息模板所属主行业一/二级名称，<a href="https://doc.open.alipay.com/doc2/detail?treeId=197&docType=1&articleId=105043">查看行业信息</a>
+	 * 服务窗消息模板所属主行业一/二级名称，参见 <a href="https://alipay.open.taobao.com/doc2/detail?treeId=197&docType=1&articleId=105043">查看行业信息</a>。
 	 */
 	@ApiField("primary_industry_name")
 	private String primaryIndustryName;
 
 	/**
-	 * 服务窗消息模板所属副行业一/二级编码
+	 * 服务窗消息模板所属副行业一/二级编码，参见 <a href="https://alipay.open.taobao.com/doc2/detail?treeId=197&docType=1&articleId=105043">查看行业信息</a>。
 	 */
 	@ApiField("secondary_industry_code")
 	private String secondaryIndustryCode;
 
 	/**
-	 * 服务窗消息模板所属副行业一/二级名称
+	 * 服务窗消息模板所属副行业一/二级名称，参见 <a href="https://alipay.open.taobao.com/doc2/detail?treeId=197&docType=1&articleId=105043">查看行业信息</a>。
 	 */
 	@ApiField("secondary_industry_name")
 	private String secondaryIndustryName;

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.order.update response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-01 18:27:32
+ * @since 1.0, 2021-03-10 19:42:31
  */
 public class AlipayEcoMycarParkingOrderUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4511112863598218853L;
+	private static final long serialVersionUID = 5115348682269675833L;
 
 	
 

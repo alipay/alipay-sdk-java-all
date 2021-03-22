@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeOrderPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6732289435552958758L;
+	private static final long serialVersionUID = 4467975394316374492L;
 
 	/**
 	 * 业务类型，当前支持：POST_ORDER_PAY 点餐后付订单支付码生成
@@ -20,8 +20,8 @@ public class KoubeiTradeOrderPrecreateModel extends AlipayObject {
 	private String bizType;
 
 	/**
-	 * 外部订单号，即请求方订单的唯一标识。
-当biz_type传入POST_ORDER_PAY时，该字段为必选
+	 * 外部订单号，即请求方订单的唯一标识，由商家自定义。
+注意：当biz_type=POST_ORDER_PAY时，该字段必选。
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
@@ -34,7 +34,7 @@ public class KoubeiTradeOrderPrecreateModel extends AlipayObject {
 
 	/**
 	 * 口碑侧的门店id。
-当biz_type传入POST_ORDER_PAY时，该字段为必选
+注意：当biz_type=POST_ORDER_PAY时，该字段必选。
 	 */
 	@ApiField("shop_id")
 	private String shopId;

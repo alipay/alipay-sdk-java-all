@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.itemorder.refund response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-04 14:51:42
+ * @since 1.0, 2021-03-10 16:58:18
  */
 public class KoubeiTradeItemorderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2579897426576758867L;
+	private static final long serialVersionUID = 8158262439665551188L;
 
 	/** 
 	 * 口碑订单号

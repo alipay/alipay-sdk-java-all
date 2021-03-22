@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeOverseasSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8149491513338817774L;
+	private static final long serialVersionUID = 2257339529347722914L;
 
 	/** 
 	 * 本笔跨境结算使用的汇率，精度 8 位小数

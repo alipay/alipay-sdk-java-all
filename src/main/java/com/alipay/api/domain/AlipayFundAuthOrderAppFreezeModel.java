@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上资金授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2021-01-08 21:42:06
+ * @since 1.0, 2021-02-22 11:16:26
  */
 public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4359843894591637654L;
+	private static final long serialVersionUID = 1474141694814992638L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -21,7 +21,13 @@ public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 商户可用该参数指定用户可使用的支付渠道，本期支持商户可支持三种支付渠道，余额宝（MONEY_FUND）、花呗（PCREDIT_PAY）以及芝麻信用（CREDITZHIMA）。商户可设置一种支付渠道，也可设置多种支付渠道。
+	 * 商户可用该参数指定禁止使用的支付渠道，本期支持两种禁用渠道：信用卡快捷（OPTIMIZED_MOTO）、信用卡卡通（BIGAMOUNT_CREDIT_CARTOON）。商户可设置一种支付渠道，也可设置多种支付渠道。与可用支付渠道不能同时传入
+	 */
+	@ApiField("disable_pay_channels")
+	private String disablePayChannels;
+
+	/**
+	 * 商户可用该参数指定用户可使用的支付渠道，本期支持商户可支持三种支付渠道，余额宝（MONEY_FUND）、花呗（PCREDIT_PAY）以及芝麻信用（CREDITZHIMA）。商户可设置一种支付渠道，也可设置多种支付渠道。与禁用支付渠道不可同时传入
 	 */
 	@ApiField("enable_pay_channels")
 	private String enablePayChannels;
@@ -107,6 +113,13 @@ identity_hash和alipay_user_id都是可选的，如果两个都传，则会先�
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getDisablePayChannels() {
+		return this.disablePayChannels;
+	}
+	public void setDisablePayChannels(String disablePayChannels) {
+		this.disablePayChannels = disablePayChannels;
 	}
 
 	public String getEnablePayChannels() {

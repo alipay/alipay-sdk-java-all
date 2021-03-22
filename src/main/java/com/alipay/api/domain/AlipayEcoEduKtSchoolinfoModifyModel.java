@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5253685486532595795L;
+	private static final long serialVersionUID = 6418244434499298279L;
 
 	/**
 	 * 与浙江网商交易见证平台有交互ISV输入网商交易异步通知回调URL，教育缴费同步账单信息给网商，网商会回调此url，ISV即可获取网商相关的参数，根据教育缴费平台账单发送接口返回的 order_no和网商返回的outer_trade_no来对应账单信息。
@@ -50,7 +50,7 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String cardAliasNo;
 
 	/**
-	 * 城市的国家编码（国家统计局出版的行政区划代码 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/）
+	 * 城市的国家编码。参见 <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">国家统计局出版的行政区划代码</a>。
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -68,7 +68,7 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String corporateBranchPid;
 
 	/**
-	 * 区县的国家编码（国家统计局出版的行政区划代码 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/）
+	 * 区县的国家编码。参见 <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">国家统计局出版的行政区划代码</a>。
 	 */
 	@ApiField("district_code")
 	private String districtCode;
@@ -86,8 +86,7 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String isvName;
 
 	/**
-	 * 注意：本参数从1.3版本开始已经废弃，不再需要传递。
-
+	 * 注意：本参数于2017-08-03开始已经废弃，不再需要传递。
 由支付宝提供的给已经签约的isv的编码，业务上一般直接采用isv的支付宝PID。
 	 */
 	@ApiField("isv_no")
@@ -112,7 +111,7 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String isvPid;
 
 	/**
-	 * 省份的国家编码（国家统计局出版的行政区划代码 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/）
+	 * 省份的国家编码，参见 <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">国家统计局出版的行政区划代码</a>。
 	 */
 	@ApiField("province_code")
 	private String provinceCode;
@@ -155,10 +154,13 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	private String schoolStdcode;
 
 	/**
-	 * 学校的类型：
-1：代表托儿所； 2：代表幼儿园；3：代表小学；4：代表初中；5：代表高中。
-如果学校兼有多种属性，可以连写，比如：
-45：代表兼有初中部高中部；34：代表兼有小学部初中部
+	 * 学校的类型。枚举值如下：
+*1：代表托儿所。
+*2：代表幼儿园。
+*3：代表小学。
+*4：代表初中。
+*5：代表高中。
+注意：如果学校兼有多种属性，可以连写，比如：45：代表兼有初中部高中部；34：代表兼有小学部初中部。
 	 */
 	@ApiField("school_type")
 	private String schoolType;

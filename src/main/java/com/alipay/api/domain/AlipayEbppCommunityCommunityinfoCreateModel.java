@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小区创建
  *
  * @author auto create
- * @since 1.0, 2020-11-17 09:43:04
+ * @since 1.0, 2021-03-03 16:16:54
  */
 public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5531834378255979193L;
+	private static final long serialVersionUID = 8771521226615199475L;
 
 	/**
 	 * 别名
@@ -78,9 +78,14 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	private String province;
 
 	/**
-	 * 底座能力提供            SAAS
-跳转模式支持            H5
-ISV接口对接模式        REMOTE
+	 * 中心账单楼房号模式	REMOTE
+中心账单户号模式	REMOTE_NO_ROOM
+内部H5模式	H5
+内部底座模式	SAAS
+自运营账单-楼房号 EXTERNAL_BILL_ROOM
+自运营账单-仅户号 EXTERNAL_BILL_BILLKEY
+备注：1、中心账单楼房号模式会进行用户隐私校验
+	   2、不确定使用哪种方式时请联系对应BD或开发
 	 */
 	@ApiField("support_type")
 	private String supportType;

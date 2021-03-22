@@ -14,17 +14,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicMenuCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6319573647939299595L;
+	private static final long serialVersionUID = 2497355816963916299L;
 
 	/**
-	 * 一级菜单列表。如果是文本菜单，最多有4个一级菜单，若开发者在后台打开了"咨询反馈"的开关，则只能有3个一级菜单；如果是 ICON 菜单信息，最多有80个一级菜单(忽略二级菜单)
+	 * 一级菜单列表。说明：
+* 如果是文本菜单，最多有4个一级菜单，若开发者在后台打开了"咨询反馈"的开关，则只能有3个一级菜单。
+* 如果是 ICON 菜单信息，最多有80个一级菜单(忽略二级菜单)。
 	 */
 	@ApiListField("button")
 	@ApiField("button_object")
 	private List<ButtonObject> button;
 
 	/**
-	 * 菜单类型，支持值为icon：icon型菜单，text：文本型菜单，不传时默认为"text"，当传值为"icon"时，菜单节点的icon字段必传。
+	 * 菜单类型，不填时默认为 text（文本型菜单）。枚举值如下：
+* text：文本型菜单。
+* icon：表示 icon 型菜单，当传值为"icon"时，菜单节点的icon字段必传。
 	 */
 	@ApiField("type")
 	private String type;

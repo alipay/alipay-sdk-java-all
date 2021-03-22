@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆驶入上送接口
  *
  * @author auto create
- * @since 1.0, 2020-12-21 17:55:51
+ * @since 1.0, 2021-03-12 19:13:59
  */
 public class AlipayEcoMycarParkingEnterinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6469661568931548743L;
+	private static final long serialVersionUID = 5686889369919488137L;
 
 	/**
 	 * 是否启用车牌代扣状态查询功能，true为启用，false为停用

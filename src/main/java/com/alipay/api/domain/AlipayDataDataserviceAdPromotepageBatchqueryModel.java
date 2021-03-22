@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自建推广页列表批量查询
  *
  * @author auto create
- * @since 1.0, 2020-12-28 15:33:59
+ * @since 1.0, 2021-03-15 15:42:12
  */
 public class AlipayDataDataserviceAdPromotepageBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5196847742653453141L;
+	private static final long serialVersionUID = 1428133872738867546L;
 
 	/**
 	 * 代理商访问灯火平台的token
@@ -38,7 +38,7 @@ public class AlipayDataDataserviceAdPromotepageBatchqueryModel extends AlipayObj
 	private String principalTag;
 
 	/**
-	 * 推广页类型：COLLECT_INFO -  普通留资;TRADE - 交易留资
+	 * 推广页类型：COLLECT_INFO -  免费留资；TRADE - 付费留资； OPERATION_PAID - 运营商付费留资；待扩展
 	 */
 	@ApiField("type")
 	private String type;

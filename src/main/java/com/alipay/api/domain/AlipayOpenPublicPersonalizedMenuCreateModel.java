@@ -14,36 +14,46 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6324195141147837372L;
+	private static final long serialVersionUID = 6336992111549197383L;
 
 	/**
-	 * 一级菜单列表。如果是文本菜单，最多有3个一级菜单，最多5个二级菜单；如果是 ICON 菜单信息，最多有80个一级菜单，ICON菜单不支持二级菜单
+	 * 一级菜单列表。说明：
+* 如果是文本菜单，最多有4个一级菜单，若开发者在后台打开了"咨询反馈"的开关，则只能有3个一级菜单。
+* 如果是 ICON 菜单信息，最多有80个一级菜单(忽略二级菜单)。
 	 */
 	@ApiListField("button")
 	@ApiField("button_object")
 	private List<ButtonObject> button;
 
 	/**
-	 * 人群分组id。人群分组与标签规则不能同时为空
+	 * 人群分组id。分组创建及管理接入详情参见 <a href="https://opendocs.alipay.com/fw/api/106931">分组管理</a>。
+注意：group_id 与 label_rule（标签规则）不能同时为空。
 	 */
 	@ApiField("group_id")
 	private String groupId;
 
 	/**
-	 * 标签规则，目前限定只能传入1条，在个性化菜单创建成功后，满足该标签规则的用户进入生活号首页，将看到该套菜单。人群分组ID与标签规则不能同时为空
+	 * 标签规则，目前限定只能传入1条，在个性化菜单创建成功后，满足该标签规则的用户进入生活号首页，将看到该套菜单。生成标签及打标详情参见<a href="https://opendocs.alipay.com/fw/api/106877">标签管理</a>。
+注意：group_id（人群分组id） 与 label_rule 不能同时为空。
 	 */
 	@ApiListField("label_rule")
 	@ApiField("label_rule")
 	private List<LabelRule> labelRule;
 
 	/**
-	 * 手机客户端类型，iphone、android、wp,不填为不区分机型
+	 * 手机客户端类型，枚举支持：
+*iphone；
+*android；
+*wp；
+说明：不填为不区分机型。
 	 */
 	@ApiField("mobile_client_type")
 	private String mobileClientType;
 
 	/**
-	 * 菜单类型，支持值为icon：icon型菜单，text：文本型菜单，不传时默认为"text"，当传值为"icon"时，菜单节点的icon字段必传。
+	 * 菜单类型，不填时默认为 text（文本型菜单）。枚举值如下：
+* text：文本型菜单。
+* icon：表示 icon 型菜单，当传值为"icon"时，菜单节点的icon字段必传。
 	 */
 	@ApiField("type")
 	private String type;

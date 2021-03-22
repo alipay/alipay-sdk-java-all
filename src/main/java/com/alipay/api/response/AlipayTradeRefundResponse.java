@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-31 10:26:14
+ * @since 1.0, 2021-02-03 17:52:52
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2498969784523348821L;
+	private static final long serialVersionUID = 6654175814367762333L;
 
 	/** 
 	 * 用户的登录id
@@ -120,8 +120,8 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private String refundSettlementId;
 
 	/** 
-	 * 本次商户实际退回金额
-注：在签约收单产品时需勾选“返回资金明细”才会返回
+	 * 本次商户实际退回金额。
+说明：如需获取该值，需在入参query_options中传入 refund_detail_item_list。
 	 */
 	@ApiField("send_back_fee")
 	private String sendBackFee;

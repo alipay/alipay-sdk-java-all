@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.trade.order.precreate request
  * 
  * @author auto create
- * @since 1.0, 2020-06-04 14:54:15
+ * @since 1.0, 2021-03-10 16:57:59
  */
 public class KoubeiTradeOrderPrecreateRequest implements AlipayRequest<KoubeiTradeOrderPrecreateResponse> {
 

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-23 15:09:52
+ * @since 1.0, 2021-03-08 14:07:17
  */
 public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3599373585437172991L;
+	private static final long serialVersionUID = 2152272635813694129L;
 
 	/** 
 	 * 券余额(元)
@@ -62,7 +62,19 @@ public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 	private String name;
 
 	/** 
-	 * 券状态(ENABLED:可用,DISABLED:不可用,DELETE:删除状态,TRANS:发放中,TRANSFER:已转增,UNC:未领取,USED:已使用,USING:使用中,REFUNDED:已退款,REFUNDING:退款中,UNACTIVE:未激活,EXPIRED:已过期)
+	 * 券状态。枚举值如下：
+ENABLED：可用；
+DISABLED：不可用；
+DELETE：删除状态；
+TRANS：发放中；
+TRANSFER：已转增；
+UNC：未领取；
+USED：已使用；
+USING：使用中；
+REFUNDED：已退款；
+REFUNDING：退款中；
+UNACTIVE：未激活；
+EXPIRED：已过期。
 	 */
 	@ApiField("status")
 	private String status;

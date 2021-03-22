@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceSyncSimpleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8316571764817761752L;
+	private static final long serialVersionUID = 4534826985275514614L;
 
 	/**
 	 * 回传的发票信息
@@ -20,7 +20,7 @@ public class AlipayEbppInvoiceSyncSimpleSendModel extends AlipayObject {
 	private InvoicePDFSynModel invoiceInfo;
 
 	/**
-	 * 开票商户品牌简称，与商户入驻时的品牌简称保持一致。
+	 * 开票商户品牌简称，与商户入驻时的品牌简称保持一致。详情参见 <a href="https://opendocs.alipay.com/open/10691/welcome-to-lark">电子发票</a>
 	 */
 	@ApiField("m_short_name")
 	private String mShortName;

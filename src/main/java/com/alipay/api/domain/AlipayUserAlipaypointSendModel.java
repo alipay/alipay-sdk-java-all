@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAlipaypointSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4287926872121293137L;
+	private static final long serialVersionUID = 1786412677267671364L;
 
 	/**
 	 * 签约商户的集分宝的预算库，扣除此预算库的集分宝发放给用户。会校验budgetcode和业务方appId的签约商户pid的关联关系，若无关则发放失败。
@@ -26,7 +26,7 @@ public class AlipayUserAlipaypointSendModel extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 接入方自己交易的唯一流水ID号，集分宝服务将依据该字段 + 用户账号(user_id或者user_account) 来进行幂等控制，需要慎重传递，否则可能会造成损失
+	 * 接入方自己交易的唯一流水ID号，不同交易请保证幂等号唯一性，集分宝服务将依据该字段来进行幂等控制，重试请求不要更换幂等号，需要慎重传递，否则可能会造成损失
 	 */
 	@ApiField("partner_biz_no")
 	private String partnerBizNo;

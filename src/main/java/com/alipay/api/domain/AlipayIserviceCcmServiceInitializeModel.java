@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceCcmServiceInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4774174796145564261L;
+	private static final long serialVersionUID = 1489738193335223815L;
 
 	/**
 	 * 服务描述
@@ -23,19 +23,19 @@ public class AlipayIserviceCcmServiceInitializeModel extends AlipayObject {
 	private String description;
 
 	/**
-	 * 服务图标url
+	 * 服务图标url。支持 http(s) 链接。
 	 */
 	@ApiField("icon")
 	private String icon;
 
 	/**
-	 * 服务编码
+	 * 服务编码。可在服务上架后，在服务市场上查询此信息。
 	 */
 	@ApiField("service_code")
 	private String serviceCode;
 
 	/**
-	 * 服务名称
+	 * 服务名称。可在服务上架后，在服务市场上查询此信息。
 	 */
 	@ApiField("service_name")
 	private String serviceName;

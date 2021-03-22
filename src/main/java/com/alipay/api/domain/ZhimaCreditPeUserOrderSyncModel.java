@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用受理订单信息同步
  *
  * @author auto create
- * @since 1.0, 2020-05-24 11:13:13
+ * @since 1.0, 2021-03-15 19:21:41
  */
 public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7684743718351263956L;
+	private static final long serialVersionUID = 7422322443722775375L;
 
 	/**
 	 * 买家的支付宝用户id

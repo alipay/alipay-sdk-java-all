@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.invoice.istdwaybill.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-11-20 11:38:39
+ * @since 1.0, 2021-02-07 11:48:44
  */
 public class AlipayCommerceLogisticsInvoiceIstdwaybillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7575418116693359696L;
+	private static final long serialVersionUID = 1532633885541772348L;
 
 	/** 
 	 * 开票的整体结果，0：处理中 1：已开票  2：开票失败

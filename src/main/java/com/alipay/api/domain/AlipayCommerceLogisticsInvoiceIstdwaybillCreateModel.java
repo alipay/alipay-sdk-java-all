@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开即时配送订单发票
  *
  * @author auto create
- * @since 1.0, 2020-11-20 11:38:59
+ * @since 1.0, 2021-02-07 11:48:35
  */
 public class AlipayCommerceLogisticsInvoiceIstdwaybillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2397788283686891429L;
+	private static final long serialVersionUID = 3347443393223271398L;
 
 	/**
 	 * 发票信息

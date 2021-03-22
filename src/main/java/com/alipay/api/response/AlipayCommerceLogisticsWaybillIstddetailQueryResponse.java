@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.waybill.istddetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-11-20 11:39:47
+ * @since 1.0, 2021-03-09 11:00:16
  */
 public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2667146997962363428L;
+	private static final long serialVersionUID = 2758851443752362491L;
 
 	/** 
 	 * 预计还剩多久送达 单位：秒
@@ -24,13 +24,13 @@ public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends Alipa
 	 * 骑手位置纬度
 	 */
 	@ApiField("rider_lat")
-	private Long riderLat;
+	private String riderLat;
 
 	/** 
 	 * 骑手位置经度
 	 */
 	@ApiField("rider_lng")
-	private Long riderLng;
+	private String riderLng;
 
 	/** 
 	 * 骑手电话
@@ -57,17 +57,17 @@ public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends Alipa
 		return this.reachDuration;
 	}
 
-	public void setRiderLat(Long riderLat) {
+	public void setRiderLat(String riderLat) {
 		this.riderLat = riderLat;
 	}
-	public Long getRiderLat( ) {
+	public String getRiderLat( ) {
 		return this.riderLat;
 	}
 
-	public void setRiderLng(Long riderLng) {
+	public void setRiderLng(String riderLng) {
 		this.riderLng = riderLng;
 	}
-	public Long getRiderLng( ) {
+	public String getRiderLng( ) {
 		return this.riderLng;
 	}
 

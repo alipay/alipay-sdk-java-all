@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.page.sign response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-15 15:06:38
+ * @since 1.0, 2021-02-26 17:59:25
  */
 public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6235281558585439999L;
+	private static final long serialVersionUID = 8138772273347882923L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。（只有签约成功时才会返回）
@@ -21,7 +21,7 @@ public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 	private String agreementNo;
 
 	/** 
-	 * 返回脱敏的支付宝账号，如需要返回不脱敏的支付宝用户账号，需要用户在签约页面上授权
+	 * 返回脱敏的支付宝账号。
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 热脸入库
  *
  * @author auto create
- * @since 1.0, 2020-03-10 11:30:06
+ * @since 1.0, 2021-03-02 14:13:17
  */
 public class ZolozAuthenticationCustomerFacemanageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2237649818521383228L;
+	private static final long serialVersionUID = 7695787949448843726L;
 
 	/**
 	 * 地域编码
@@ -20,7 +20,7 @@ public class ZolozAuthenticationCustomerFacemanageCreateModel extends AlipayObje
 	private String areacode;
 
 	/**
-	 * 人脸产品能力
+	 * 人脸产品能力，预热场景，需要传college，k12，scenic，subway，traffic。具体值视具体场景
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -39,6 +39,7 @@ public class ZolozAuthenticationCustomerFacemanageCreateModel extends AlipayObje
 
 	/**
 	 * 商户机具唯一编码，关键参数
+人脸预热，传logicGroupId
 	 */
 	@ApiField("devicenum")
 	private String devicenum;
@@ -55,12 +56,16 @@ IDCARD:身份证
 ALIPAY_USER:支付宝用户id,
 ALIPAY_TEL:手机号入库
 CUSTOMER:自定义
+DIRECT_CLIENT_PRE：本地预写入
+DIRECT_CLIENT：本地客户端库
+ENCLOSED：封闭场景
 	 */
 	@ApiField("facetype")
 	private String facetype;
 
 	/**
 	 * 入库用户信息
+人脸预热，alipayUid必填
 	 */
 	@ApiField("faceval")
 	private String faceval;

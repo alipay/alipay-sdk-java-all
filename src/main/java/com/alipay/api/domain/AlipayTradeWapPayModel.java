@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2020-12-30 10:38:20
+ * @since 1.0, 2021-03-18 16:17:51
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2755491235967869863L;
+	private static final long serialVersionUID = 1625791991837455411L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -43,9 +43,8 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private String disablePayChannels;
 
 	/**
-	 * 可用渠道，用户只能在指定渠道范围内支付
-当有多个渠道时用“,”分隔
-注，与disable_pay_channels互斥
+	 * 可用渠道，优先推荐用户使用的支付渠道。
+注：当有多个渠道时用“,”分隔注，与disable_pay_channels互斥。
 	 */
 	@ApiField("enable_pay_channels")
 	private String enablePayChannels;

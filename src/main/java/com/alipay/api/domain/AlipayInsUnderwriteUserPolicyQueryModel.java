@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询用户的保单列表
  *
  * @author auto create
- * @since 1.0, 2019-08-26 16:45:34
+ * @since 1.0, 2021-03-15 16:50:29
  */
 public class AlipayInsUnderwriteUserPolicyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3869495928567366899L;
+	private static final long serialVersionUID = 6897296554445372195L;
 
 	/**
 	 * 页码，必须为大于0的整数， 1表示第一页，2表示第2页，依次类推。不填默认值为1

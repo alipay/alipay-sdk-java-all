@@ -9,11 +9,44 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业小区绑定关系创建
  *
  * @author auto create
- * @since 1.0, 2021-01-25 10:33:48
+ * @since 1.0, 2021-03-18 14:13:56
  */
 public class AlipayEbppCommunityRelationshipCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7882377536369888733L;
+	private static final long serialVersionUID = 5895446136956377821L;
+
+	/**
+	 * 每个小区默认的收款帐号为授权物业的支付宝账号，默认不用传该参数。
+
+但为满足部分物业公司财务要求，允许开发者为每个小区服务传入一个指定的物业收款帐号，开发者需要在直付通中设置银行卡相关信息
+	 */
+	@ApiField("account")
+	private String account;
+
+	/**
+	 * 每个小区默认的收款账号为授权物业的支付宝账号，默认不用传该参数。用户完成缴费后实时入账至该支付宝账号，后续由物业财务系统根据缴费异步通知和支付宝对账文件进行资金清分。
+
+
+
+但为了满足部分物业公司的财务清结算需求，允许在授权物业账号下已设置支付宝收款子账号限制集的前提下，由开发者为指定小区服务传入一个物业公司的支付宝收款子帐号，目前只支持银行卡的分账模式：
+
+
+
+BANK_CARD_ID - 银行卡号
+
+
+
+
+注意：若传递的收款子账号事先未在支付宝配置，开发者在上线前的支付验证环节会提示不支持收款到该账户，请联系物业公司完成配置事宜。
+	 */
+	@ApiField("account_type")
+	private String accountType;
+
+	/**
+	 * 外部户号查询跳转链接,占位符使用#xxx#模式，xxx为占位符枚举，目前支持的枚举值为:communityShortName
+	 */
+	@ApiField("billkey_url")
+	private String billkeyUrl;
 
 	/**
 	 * 小区短名, 创建小区时创建
@@ -34,6 +67,18 @@ public class AlipayEbppCommunityRelationshipCreateModel extends AlipayObject {
 	private String dailyStart;
 
 	/**
+	 * 绑定关系额外字段
+	 */
+	@ApiField("extend_field")
+	private CommunityRelationshipExtendField extendField;
+
+	/**
+	 * 外部账单页面跳转链接，占位符使用#xxx#模式，xxx为占位符枚举，目前支持的枚举值为:communityShortName
+	 */
+	@ApiField("out_bill_url")
+	private String outBillUrl;
+
+	/**
 	 * 物业公司的短名,在创建物业公司时生成
 	 */
 	@ApiField("property_short_name")
@@ -52,10 +97,41 @@ public class AlipayEbppCommunityRelationshipCreateModel extends AlipayObject {
 	private Date serviceStart;
 
 	/**
-	 * 服务类型，不传默认为物业缴费THIRD_PARTY_COMMUNITY_JIAOFEI
+	 * 服务类型，不传默认为物业缴费
+    THIRD_PARTY_COMMUNITY_JIAOFEI(物业缴费),
+    CENTRAL_SCAN_CODE_PASS(扫码通行联动门禁),
+    OPEN_SESAME(扫码通行无门禁),
+    H5_SCAN_CODE_PASS(扫码通行内部H5模式)
 	 */
 	@ApiField("service_type")
 	private String serviceType;
+
+	/**
+	 * accountType不为空时，需要传入结算的二级商户id
+	 */
+	@ApiField("smid")
+	private String smid;
+
+	public String getAccount() {
+		return this.account;
+	}
+	public void setAccount(String account) {
+		this.account = account;
+	}
+
+	public String getAccountType() {
+		return this.accountType;
+	}
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
+
+	public String getBillkeyUrl() {
+		return this.billkeyUrl;
+	}
+	public void setBillkeyUrl(String billkeyUrl) {
+		this.billkeyUrl = billkeyUrl;
+	}
 
 	public String getCommunityShortName() {
 		return this.communityShortName;
@@ -76,6 +152,20 @@ public class AlipayEbppCommunityRelationshipCreateModel extends AlipayObject {
 	}
 	public void setDailyStart(String dailyStart) {
 		this.dailyStart = dailyStart;
+	}
+
+	public CommunityRelationshipExtendField getExtendField() {
+		return this.extendField;
+	}
+	public void setExtendField(CommunityRelationshipExtendField extendField) {
+		this.extendField = extendField;
+	}
+
+	public String getOutBillUrl() {
+		return this.outBillUrl;
+	}
+	public void setOutBillUrl(String outBillUrl) {
+		this.outBillUrl = outBillUrl;
 	}
 
 	public String getPropertyShortName() {
@@ -104,6 +194,13 @@ public class AlipayEbppCommunityRelationshipCreateModel extends AlipayObject {
 	}
 	public void setServiceType(String serviceType) {
 		this.serviceType = serviceType;
+	}
+
+	public String getSmid() {
+		return this.smid;
+	}
+	public void setSmid(String smid) {
+		this.smid = smid;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车场业务归属配置
  *
  * @author auto create
- * @since 1.0, 2021-01-29 15:29:25
+ * @since 1.0, 2021-02-19 20:37:59
  */
 public class AlipayEcoMycarParkingParkinglotbizTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2797797231369778672L;
+	private static final long serialVersionUID = 8647688634533141459L;
 
 	/**
 	 * 车场业务归属关系列表

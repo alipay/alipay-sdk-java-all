@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.bill.add response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-21 17:23:12
+ * @since 1.0, 2021-02-02 11:19:02
  */
 public class AlipayEbppBillAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3231364394179692918L;
+	private static final long serialVersionUID = 8284241277367212276L;
 
 	/** 
 	 * 支付宝的业务订单号，具有唯一性。
@@ -27,7 +27,7 @@ public class AlipayEbppBillAddResponse extends AlipayResponse {
 	private String bankBillNo;
 
 	/** 
-	 * 账单的账期，例如201203表示2012年3月的账单。
+	 * 账单的账期，格式为 yyyyMMdd。例如：202012表示2020年12月的账单。
 	 */
 	@ApiField("bill_date")
 	private String billDate;
@@ -64,7 +64,11 @@ public class AlipayEbppBillAddResponse extends AlipayResponse {
 	private String merchantOrderNo;
 
 	/** 
-	 * 支付宝订单类型。公共事业缴纳JF,信用卡还款HK
+	 * 支付宝订单类型。枚举支持：
+*JF：公共事业缴纳。
+*WUYE：物业缴费。
+*HK：信用卡还款。
+*TX：通讯缴费。
 	 */
 	@ApiField("order_type")
 	private String orderType;
@@ -76,7 +80,7 @@ public class AlipayEbppBillAddResponse extends AlipayResponse {
 	private String ownerName;
 
 	/** 
-	 * 缴费金额。用户支付的总金额。单位为：RMB Yuan。取值范围为[0.01，100000000.00]，精确到小数点后两位。
+	 * 缴费金额。用户支付的总金额。单位为 元（人民币）。取值范围为[0.01，100000000.00]，精确到小数点后两位。
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
@@ -88,7 +92,19 @@ public class AlipayEbppBillAddResponse extends AlipayResponse {
 	private String serviceAmount;
 
 	/** 
-	 * 子业务类型是业务类型的下一级概念，例如：WATER表示JF下面的水费，ELECTRIC表示JF下面的电费，GAS表示JF下面的燃气费。
+	 * 子业务类型是业务类型的下一级概念。枚举支持：
+*WATER：缴水费。
+*ELECTRIC：缴电费。
+*GAS：缴燃气费。
+*COMMUN：缴固话宽带费。
+*CATV：缴有线电视费。
+*WUYE：缴物业费。
+*RC：定期还车贷代扣。
+*RH：定期还房贷代扣。
+*RR：定期还房租代扣。
+*RN：定期还网贷代扣。
+*CZ：手机充值代扣。
+例如：WATER表示JF下面的水费。
 	 */
 	@ApiField("sub_order_type")
 	private String subOrderType;

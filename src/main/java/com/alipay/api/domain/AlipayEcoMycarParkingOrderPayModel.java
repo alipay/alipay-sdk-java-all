@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车缴费代扣接口API
  *
  * @author auto create
- * @since 1.0, 2021-01-18 17:45:44
+ * @since 1.0, 2021-03-14 15:22:39
  */
 public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5688198245182197884L;
+	private static final long serialVersionUID = 5249617324456181162L;
 
 	/**
 	 * 先离后付订单：true；
@@ -94,6 +94,12 @@ false不开启(默认)
 	 */
 	@ApiField("parking_id")
 	private String parkingId;
+
+	/**
+	 * 代扣场景，PLATE_PAY：OCR识别车牌代扣。ETC_PAY：ETC识别车牌代扣。
+	 */
+	@ApiField("pay_scene")
+	private String payScene;
 
 	/**
 	 * 版本号,最新版本为：3.0
@@ -223,6 +229,13 @@ false不开启(默认)
 	}
 	public void setParkingId(String parkingId) {
 		this.parkingId = parkingId;
+	}
+
+	public String getPayScene() {
+		return this.payScene;
+	}
+	public void setPayScene(String payScene) {
+		this.payScene = payScene;
 	}
 
 	public String getPayVersion() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付创建订单
  *
  * @author auto create
- * @since 1.0, 2019-12-18 09:58:18
+ * @since 1.0, 2021-02-05 09:57:13
  */
 public class MybankPaymentTradeNormalpayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7579741444561444594L;
+	private static final long serialVersionUID = 5294726211465172714L;
 
 	/**
 	 * 订单金额

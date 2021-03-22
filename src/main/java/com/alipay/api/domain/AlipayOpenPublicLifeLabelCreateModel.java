@@ -7,20 +7,22 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建标签接口
  *
  * @author auto create
- * @since 1.0, 2020-02-19 15:40:09
+ * @since 1.0, 2021-03-11 20:51:13
  */
 public class AlipayOpenPublicLifeLabelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7583549613474192187L;
+	private static final long serialVersionUID = 6454119699855266136L;
 
 	/**
-	 * 标签值类型，目前只支持string（字符串类型），不传默认为"string"
+	 * 标签值类型，不填默认为 string 类型。
+注意：目前只支持 string（字符串类型）。
 	 */
 	@ApiField("data_type")
 	private String dataType;
 
 	/**
-	 * 自定义标签名
+	 * 自定义标签名。
+注意：每个生活号最多创建 100 个自定义标签。
 	 */
 	@ApiField("label_name")
 	private String labelName;

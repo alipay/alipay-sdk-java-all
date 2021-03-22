@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2020-12-31 10:31:25
+ * @since 1.0, 2021-03-02 10:29:06
  */
 public class ExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7343392893552987261L;
+	private static final long serialVersionUID = 3486771366737596485L;
 
 	/**
 	 * 卡类型
@@ -36,6 +36,12 @@ public class ExtendParams extends AlipayObject {
 	 */
 	@ApiField("industry_reflux_info")
 	private String industryRefluxInfo;
+
+	/**
+	 * 特殊场景下，允许商户指定交易展示的卖家名称
+	 */
+	@ApiField("specified_seller_name")
+	private String specifiedSellerName;
 
 	/**
 	 * 系统商编号
@@ -70,6 +76,13 @@ public class ExtendParams extends AlipayObject {
 	}
 	public void setIndustryRefluxInfo(String industryRefluxInfo) {
 		this.industryRefluxInfo = industryRefluxInfo;
+	}
+
+	public String getSpecifiedSellerName() {
+		return this.specifiedSellerName;
+	}
+	public void setSpecifiedSellerName(String specifiedSellerName) {
+		this.specifiedSellerName = specifiedSellerName;
 	}
 
 	public String getSysServiceProviderId() {

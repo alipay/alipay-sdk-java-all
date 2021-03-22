@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻用户信用额度解冻
  *
  * @author auto create
- * @since 1.0, 2019-07-26 13:56:29
+ * @since 1.0, 2021-03-12 10:54:14
  */
 public class ZhimaCreditPeUserCreditUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2254394285466982572L;
+	private static final long serialVersionUID = 8632215449897661376L;
 
 	/**
 	 * 解冻额度，单位为元，取值范围[0.01,100000000]，精确到小数点后2位

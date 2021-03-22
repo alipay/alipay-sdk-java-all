@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸入库 期望机构ID 和入库时间
  *
  * @author auto create
- * @since 1.0, 2020-11-20 11:23:18
+ * @since 1.0, 2021-03-02 17:31:50
  */
 public class InstitutionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1249818513255365398L;
+	private static final long serialVersionUID = 2537448844541645571L;
 
 	/**
 	 * 期望入库时间 不传则立即入库

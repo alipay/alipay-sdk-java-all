@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建AA收款
  *
  * @author auto create
- * @since 1.0, 2018-07-19 11:22:14
+ * @since 1.0, 2021-03-15 13:57:55
  */
 public class AlipayFundTransAacollectBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2657248134493645857L;
+	private static final long serialVersionUID = 4489455637189727561L;
 
 	/**
 	 * 收款备注，显示在支付宝账单

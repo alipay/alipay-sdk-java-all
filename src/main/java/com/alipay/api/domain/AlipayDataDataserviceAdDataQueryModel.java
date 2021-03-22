@@ -14,33 +14,37 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataserviceAdDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8376926897368395326L;
+	private static final long serialVersionUID = 5115495845415356865L;
 
 	/**
-	 * 汇总数据广告层级类型，如PLAN-计划；GROUP-单元；CREATIVE-创意；USER-用户
+	 * 汇总数据广告层级类型。枚举值如下：
+*  PLAN：计划。
+*  GROUP：单元。
+*  CREATIVE：创意。
+*  USER：用户。
 	 */
 	@ApiField("ad_level")
 	private String adLevel;
 
 	/**
-	 * 灯火平台提供给外部系统的访问token
+	 * 支付宝数字推广平台提供给外部系统的访问 token。
 	 */
 	@ApiField("biz_token")
 	private String bizToken;
 
 	/**
-	 * 当ad_level='USER'，该入参必填，
-计费方式：
-CPC-按点击付费
-CPM-按展示次数付费
-CPD-按投放天数计费（包段）
-CPA-按转化效果计费
+	 * 计费方式。当ad_level='USER'，该入参必填。枚举值如下：
+*  CPC：按点击付费。
+*  CPM：按展示次数付费。
+*  CPD：按投放天数计费（包段）。
+*  CPA：按转化效果计费。
 	 */
 	@ApiField("charge_type")
 	private String chargeType;
 
 	/**
-	 * 数据查询开始时间，查询时间间隔不能大于30天，点时间格式：yyyyMMdd
+	 * 数据查询结束时间，时间格式为 yyyyMMdd。
+注意：查询时间间隔不能大于30天。
 	 */
 	@ApiField("end_date")
 	private String endDate;
@@ -53,13 +57,17 @@ CPA-按转化效果计费
 	private List<String> outerIdList;
 
 	/**
-	 * 数据查询类型，默认为ALL_SUM，如GROUP_SUM-日期范围内outer_id_list中根据id group by后进行数据求和；ALL_SUM-日期范围内outer_id_list中所有数据求和；DETAIL-数据详情
+	 * 数据查询类型，默认为 ALL_SUM。枚举值如下：
+*  GROUP_SUM：日期范围内 outer_id_list 中根据 id group by 后进行数据求和。
+*  ALL_SUM：日期范围内 outer_id_list 中所有数据求和。
+*  DETAIL：数据详情。
 	 */
 	@ApiField("query_type")
 	private String queryType;
 
 	/**
-	 * 数据查询开始时间，查询时间间隔不能大于30天，点时间格式：yyyyMMdd
+	 * 数据查询开始时间，时间格式为 yyyyMMdd。
+注意：查询时间间隔不能大于30天。
 	 */
 	@ApiField("start_date")
 	private String startDate;

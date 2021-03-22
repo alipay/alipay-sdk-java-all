@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻用户信用资产冻结
  *
  * @author auto create
- * @since 1.0, 2019-07-26 13:56:38
+ * @since 1.0, 2021-03-12 10:56:27
  */
 public class ZhimaCreditPeUserCreditFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5112281972866746632L;
+	private static final long serialVersionUID = 6616251825284738842L;
 
 	/**
 	 * 买家的支付宝用户id

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiMarketingCampaignActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7522771231254679844L;
+	private static final long serialVersionUID = 2322526331714116286L;
 
 	/**
 	 * 操作人id，必须和operator_type配对存在，不填时默认是商户
@@ -23,7 +23,11 @@ public class KoubeiMarketingCampaignActivityBatchqueryModel extends AlipayObject
 	private String operatorId;
 
 	/**
-	 * 操作人类型,有以下值可填：MER（外部商户），MER_OPERATOR（外部商户操作员），PROVIDER（外部服务商），PROVIDER_STAFF（外部服务商员工），默认不需要填这个字段，默认为MER
+	 * 操作人类型，不填默认为 MER（外部商户）。支持枚举值如下：
+* MER：外部商户。
+* MER_OPERATOR：外部商户操作员。
+* PROVIDER：外部服务商。
+* PROVIDER_STAFF：外部服务商员工。
 	 */
 	@ApiField("operator_type")
 	private String operatorType;

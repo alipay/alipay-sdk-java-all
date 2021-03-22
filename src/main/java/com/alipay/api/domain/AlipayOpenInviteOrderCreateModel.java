@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV邀约即授权页面创建
  *
  * @author auto create
- * @since 1.0, 2020-11-30 17:35:20
+ * @since 1.0, 2021-03-08 14:03:11
  */
 public class AlipayOpenInviteOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8325517289843282439L;
+	private static final long serialVersionUID = 6385272359976535723L;
 
 	/**
 	 * ISV 业务系统的申请单 id。由 ISV 自定义，支付宝会将该值拼接在 isv_return_url 后返回，ISV 可据此做业务处理。

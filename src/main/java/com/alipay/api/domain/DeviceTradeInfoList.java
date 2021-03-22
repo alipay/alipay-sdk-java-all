@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot设备交易信息列表
  *
  * @author auto create
- * @since 1.0, 2020-05-07 22:20:17
+ * @since 1.0, 2021-02-02 11:17:50
  */
 public class DeviceTradeInfoList extends AlipayObject {
 
-	private static final long serialVersionUID = 1792828456556976166L;
+	private static final long serialVersionUID = 2178293518923211298L;
 
 	/**
 	 * 设备id
@@ -30,6 +30,12 @@ public class DeviceTradeInfoList extends AlipayObject {
 	 */
 	@ApiField("device_face_trade_dau")
 	private Long deviceFaceTradeDau;
+
+	/**
+	 * 当日刷脸付用户数-同比差值
+	 */
+	@ApiField("device_face_trade_dau_d_value")
+	private Long deviceFaceTradeDauDValue;
 
 	/**
 	 * 设备名称
@@ -56,10 +62,46 @@ public class DeviceTradeInfoList extends AlipayObject {
 	private Long faceTradeCnt;
 
 	/**
+	 * 当日刷脸付笔数占比
+	 */
+	@ApiField("face_trd_cnt_rate")
+	private String faceTrdCntRate;
+
+	/**
+	 * 当日刷脸付用户数占比
+	 */
+	@ApiField("face_trd_user_cnt_rate")
+	private String faceTrdUserCntRate;
+
+	/**
+	 * 当日刷脸付用户数占比-同比差值
+	 */
+	@ApiField("face_trd_user_cnt_rate_d_value")
+	private String faceTrdUserCntRateDValue;
+
+	/**
 	 * 激活时间
 	 */
 	@ApiField("gmt_active")
 	private String gmtActive;
+
+	/**
+	 * 当日支付宝客单价(元)
+	 */
+	@ApiField("iot_trd_up")
+	private String iotTrdUp;
+
+	/**
+	 * 当日支付宝交易用户数
+	 */
+	@ApiField("iot_trd_user_cnt")
+	private Long iotTrdUserCnt;
+
+	/**
+	 * 当日支付宝交易用户数-同比差值
+	 */
+	@ApiField("iot_trd_user_cnt_d_value")
+	private Long iotTrdUserCntDValue;
 
 	/**
 	 * 统计时间
@@ -112,6 +154,13 @@ public class DeviceTradeInfoList extends AlipayObject {
 		this.deviceFaceTradeDau = deviceFaceTradeDau;
 	}
 
+	public Long getDeviceFaceTradeDauDValue() {
+		return this.deviceFaceTradeDauDValue;
+	}
+	public void setDeviceFaceTradeDauDValue(Long deviceFaceTradeDauDValue) {
+		this.deviceFaceTradeDauDValue = deviceFaceTradeDauDValue;
+	}
+
 	public String getDeviceName() {
 		return this.deviceName;
 	}
@@ -140,11 +189,53 @@ public class DeviceTradeInfoList extends AlipayObject {
 		this.faceTradeCnt = faceTradeCnt;
 	}
 
+	public String getFaceTrdCntRate() {
+		return this.faceTrdCntRate;
+	}
+	public void setFaceTrdCntRate(String faceTrdCntRate) {
+		this.faceTrdCntRate = faceTrdCntRate;
+	}
+
+	public String getFaceTrdUserCntRate() {
+		return this.faceTrdUserCntRate;
+	}
+	public void setFaceTrdUserCntRate(String faceTrdUserCntRate) {
+		this.faceTrdUserCntRate = faceTrdUserCntRate;
+	}
+
+	public String getFaceTrdUserCntRateDValue() {
+		return this.faceTrdUserCntRateDValue;
+	}
+	public void setFaceTrdUserCntRateDValue(String faceTrdUserCntRateDValue) {
+		this.faceTrdUserCntRateDValue = faceTrdUserCntRateDValue;
+	}
+
 	public String getGmtActive() {
 		return this.gmtActive;
 	}
 	public void setGmtActive(String gmtActive) {
 		this.gmtActive = gmtActive;
+	}
+
+	public String getIotTrdUp() {
+		return this.iotTrdUp;
+	}
+	public void setIotTrdUp(String iotTrdUp) {
+		this.iotTrdUp = iotTrdUp;
+	}
+
+	public Long getIotTrdUserCnt() {
+		return this.iotTrdUserCnt;
+	}
+	public void setIotTrdUserCnt(Long iotTrdUserCnt) {
+		this.iotTrdUserCnt = iotTrdUserCnt;
+	}
+
+	public Long getIotTrdUserCntDValue() {
+		return this.iotTrdUserCntDValue;
+	}
+	public void setIotTrdUserCntDValue(Long iotTrdUserCntDValue) {
+		this.iotTrdUserCntDValue = iotTrdUserCntDValue;
 	}
 
 	public String getMaxDt() {

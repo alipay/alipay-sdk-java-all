@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketShopPublicUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2367754651181479492L;
+	private static final long serialVersionUID = 2882338119481774651L;
 
 	/** 
 	 * 绑定失败的店铺ID列表,绑定失败原因可能是：a)检测到shop_id不存在;b)检测到shop_id不属于当前商户；c）该门店ID已经绑定服务窗

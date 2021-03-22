@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建测试支付宝账户
  *
  * @author auto create
- * @since 1.0, 2017-05-10 20:20:03
+ * @since 1.0, 2021-03-19 15:25:36
  */
 public class AlipayUserAntpaasTestaccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5277126617162649483L;
+	private static final long serialVersionUID = 3147623284262372789L;
 
 	/**
 	 * 认证等级，L1，L2，L3，L3可以开店

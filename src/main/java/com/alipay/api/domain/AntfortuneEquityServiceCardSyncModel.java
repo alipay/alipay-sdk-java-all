@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 精选服务海景房卡片服务内容同步
  *
  * @author auto create
- * @since 1.0, 2020-09-01 09:59:00
+ * @since 1.0, 2021-03-02 20:24:47
  */
 public class AntfortuneEquityServiceCardSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6294314569779834837L;
+	private static final long serialVersionUID = 3534483558894713139L;
 
 	/**
 	 * 服务动态信息列表

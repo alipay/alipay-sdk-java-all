@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询城服用户展台服务信息
  *
  * @author auto create
- * @since 1.0, 2020-05-22 13:36:05
+ * @since 1.0, 2021-02-22 16:25:57
  */
 public class AlipayEcoCityserviceUserAppinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7589187789396216654L;
+	private static final long serialVersionUID = 7316377736521798365L;
 
 	/**
 	 * 业务类型

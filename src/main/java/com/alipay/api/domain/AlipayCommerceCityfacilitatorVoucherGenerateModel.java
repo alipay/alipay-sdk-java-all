@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorVoucherGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5123494792582465143L;
+	private static final long serialVersionUID = 1338627183135772336L;
 
 	/**
-	 * 城市编码请参考查询：http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html；
+	 * 城市编码请参考查询 <a href="http://www.mca.gov.cn/article/sj/xzqh/">中华人民共和国行政区划代码</a>。
 已支持城市：广州 440100，深圳 440300，杭州330100。
 	 */
 	@ApiField("city_code")
@@ -45,7 +45,8 @@ public class AlipayCommerceCityfacilitatorVoucherGenerateModel extends AlipayObj
 	private String ticketPrice;
 
 	/**
-	 * 地铁票种类
+	 * 地铁票种类，枚举支持：
+*oneway。
 	 */
 	@ApiField("ticket_type")
 	private String ticketType;

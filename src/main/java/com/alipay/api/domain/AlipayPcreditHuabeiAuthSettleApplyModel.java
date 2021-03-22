@@ -11,13 +11,13 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiAuthSettleApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6648192318489843553L;
+	private static final long serialVersionUID = 2275855277614478666L;
 
 	/**
-	 * MERCHANT_SETTLE 结算（需要主动退出在发起结算）;
-QUIT_SETTLE 退出协议（解约协议）;
-PERIOD_SETTLE 分阶段结算（不解约协议）;
-默认为 MERCHANT_SETTLE
+	 * 操作类型，默认为 MERCHANT_SETTLE（结算）。枚举值如下：
+*  MERCHANT_SETTLE：结算（需要主动退出在发起结算）;
+*  QUIT_SETTLE：退出协议（解约协议）;
+*  PERIOD_SETTLE：分阶段结算（不解约协议）。
 	 */
 	@ApiField("action_type")
 	private String actionType;
@@ -29,7 +29,7 @@ PERIOD_SETTLE 分阶段结算（不解约协议）;
 	private String agreementNo;
 
 	/**
-	 * 买家在支付宝的用户id
+	 * 用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
@@ -41,7 +41,9 @@ PERIOD_SETTLE 分阶段结算（不解约协议）;
 	private ExtraParams extendParams;
 
 	/**
-	 * 该参数控制结算完成之后的操作，true或者不填代表解约，false代表不解约
+	 * 是否解约，该参数控制结算完成之后的操作，为空则表示结算后解约。枚举值如下：
+*  true：代表解约，默认为true。
+*  false：代表不解约。
 	 */
 	@ApiField("need_terminated")
 	private String needTerminated;
@@ -59,7 +61,8 @@ PERIOD_SETTLE 分阶段结算（不解约协议）;
 	private String payAmount;
 
 	/**
-	 * 商户的支付宝用户id。如果该值为空，则默认为商户签约账号对应的支付宝用户ID。
+	 * 支付宝商家ID，即商家账号在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+说明：若该值为空，则默认为商户签约账号对应的支付宝用户ID。
 	 */
 	@ApiField("seller_id")
 	private String sellerId;

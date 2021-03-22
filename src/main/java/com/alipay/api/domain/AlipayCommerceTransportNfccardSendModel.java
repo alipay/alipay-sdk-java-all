@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportNfccardSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7291459317478677536L;
+	private static final long serialVersionUID = 2471577394983626371L;
 
 	/**
 	 * 卡号
@@ -20,7 +20,9 @@ public class AlipayCommerceTransportNfccardSendModel extends AlipayObject {
 	private String cardNo;
 
 	/**
-	 * 卡片状态（FREEZE：冻结，CANCEL：销卡）
+	 * 卡片状态。枚举值如下：
+*  FREEZE：冻结。
+*  CANCEL：销卡。
 	 */
 	@ApiField("card_status")
 	private String cardStatus;

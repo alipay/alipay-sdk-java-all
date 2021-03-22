@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享订单关闭接口
  *
  * @author auto create
- * @since 1.0, 2021-02-01 19:55:29
+ * @since 1.0, 2021-02-25 15:11:56
  */
 public class AlipayPcreditHuabeiAuthOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8826142232593682262L;
+	private static final long serialVersionUID = 2421413542147391639L;
 
 	/**
 	 * 支付宝userId
@@ -36,6 +36,12 @@ public class AlipayPcreditHuabeiAuthOrderCloseModel extends AlipayObject {
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
+
+	/**
+	 * 芝麻GO配置模板Id
+	 */
+	@ApiField("template_id")
+	private String templateId;
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;
@@ -63,6 +69,13 @@ public class AlipayPcreditHuabeiAuthOrderCloseModel extends AlipayObject {
 	}
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
+	}
+
+	public String getTemplateId() {
+		return this.templateId;
+	}
+	public void setTemplateId(String templateId) {
+		this.templateId = templateId;
 	}
 
 }

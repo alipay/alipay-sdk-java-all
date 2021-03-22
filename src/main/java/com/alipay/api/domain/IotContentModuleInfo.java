@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 展位内容
  *
  * @author auto create
- * @since 1.0, 2020-12-22 19:15:00
+ * @since 1.0, 2021-02-08 13:35:19
  */
 public class IotContentModuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4494895768536321263L;
+	private static final long serialVersionUID = 4273593395936752284L;
 
 	/**
 	 * 对展位内容加签，用于校验内容合法性

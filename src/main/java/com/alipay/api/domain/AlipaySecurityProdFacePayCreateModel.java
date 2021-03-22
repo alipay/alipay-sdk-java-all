@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * facepay
  *
  * @author auto create
- * @since 1.0, 2020-07-03 14:15:10
+ * @since 1.0, 2021-02-23 14:29:11
  */
 public class AlipaySecurityProdFacePayCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4832834128481922384L;
+	private static final long serialVersionUID = 1839241237924257127L;
 
 	/**
 	 * 1
@@ -25,6 +25,12 @@ public class AlipaySecurityProdFacePayCreateModel extends AlipayObject {
 	@ApiField("aaaaaaaaaaaaa")
 	private String aaaaaaaaaaaaa;
 
+	/**
+	 * 1
+	 */
+	@ApiField("bbbbb")
+	private String bbbbb;
+
 	public String getAaa() {
 		return this.aaa;
 	}
@@ -37,6 +43,13 @@ public class AlipaySecurityProdFacePayCreateModel extends AlipayObject {
 	}
 	public void setAaaaaaaaaaaaa(String aaaaaaaaaaaaa) {
 		this.aaaaaaaaaaaaa = aaaaaaaaaaaaa;
+	}
+
+	public String getBbbbb() {
+		return this.bbbbb;
+	}
+	public void setBbbbb(String bbbbb) {
+		this.bbbbb = bbbbb;
 	}
 
 }

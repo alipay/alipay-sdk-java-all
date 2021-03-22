@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 版本模型
  *
  * @author auto create
- * @since 1.0, 2020-12-30 22:50:35
+ * @since 1.0, 2021-02-22 14:32:05
  */
 public class MiniAppVersionBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7683561651588699357L;
+	private static final long serialVersionUID = 4727665428323839966L;
 
 	/**
 	 * 开发者版本
@@ -75,6 +75,18 @@ public class MiniAppVersionBaseInfo extends AlipayObject {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * 包地址
+	 */
+	@ApiField("new_package_url")
+	private String newPackageUrl;
+
+	/**
+	 * 插件plugin包地址
+	 */
+	@ApiField("new_plugin_url")
+	private String newPluginUrl;
 
 	/**
 	 * 下架时间
@@ -204,6 +216,20 @@ public class MiniAppVersionBaseInfo extends AlipayObject {
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public String getNewPackageUrl() {
+		return this.newPackageUrl;
+	}
+	public void setNewPackageUrl(String newPackageUrl) {
+		this.newPackageUrl = newPackageUrl;
+	}
+
+	public String getNewPluginUrl() {
+		return this.newPluginUrl;
+	}
+	public void setNewPluginUrl(String newPluginUrl) {
+		this.newPluginUrl = newPluginUrl;
 	}
 
 	public Date getOfflineTime() {

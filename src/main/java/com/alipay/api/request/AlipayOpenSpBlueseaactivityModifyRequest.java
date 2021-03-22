@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.blueseaactivity.modify request
  * 
  * @author auto create
- * @since 1.0, 2020-11-30 18:00:15
+ * @since 1.0, 2021-02-02 11:20:20
  */
 public class AlipayOpenSpBlueseaactivityModifyRequest implements AlipayRequest<AlipayOpenSpBlueseaactivityModifyResponse> {
 

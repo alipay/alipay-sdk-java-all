@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用服务产品地图点位上传
  *
  * @author auto create
- * @since 1.0, 2019-04-23 19:18:48
+ * @since 1.0, 2021-03-12 10:52:55
  */
 public class ZhimaCreditPeIndustryLocationUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5769646268262891871L;
+	private static final long serialVersionUID = 5595734566232349464L;
 
 	/**
 	 * 业务场景,分时租赁平台:car_sharing_zhima,具体业务对应的业务场景请联系业务确认

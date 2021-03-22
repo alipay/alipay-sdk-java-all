@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceExpenseProgressSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3711896358827555382L;
+	private static final long serialVersionUID = 6441784989256725679L;
 
 	/**
 	 * 同步申请id，每次发起同步时生成，isv每次请求需要保证唯一
@@ -63,18 +63,16 @@ public class AlipayEbppInvoiceExpenseProgressSyncModel extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 报销操作
-传值固定：
-EXPENSE_APPLY－用户已提交申请
-EXPENSE_APPROVAL_PASS －报销审核通过
-EXPENSE_FINISHED－报销完结
-EXPENSE_CANCEL－报销撤回
+	 * 报销操作。枚举值如下：
+*EXPENSE_APPLY：用户已提交申请。*EXPENSE_APPROVAL_PASS：报销审核通过。
+*EXPENSE_FINISHED：报销完结。
+*EXPENSE_CANCEL：报销撤回。
 	 */
 	@ApiField("status")
 	private String status;
 
 	/**
-	 * 支付宝用户id
+	 * 发票归属用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
 	 */
 	@ApiField("user_id")
 	private String userId;

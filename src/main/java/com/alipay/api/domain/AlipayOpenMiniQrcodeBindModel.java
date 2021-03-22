@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联普通二维码
  *
  * @author auto create
- * @since 1.0, 2020-05-15 00:47:50
+ * @since 1.0, 2021-03-16 19:38:36
  */
 public class AlipayOpenMiniQrcodeBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4632265125123146833L;
+	private static final long serialVersionUID = 1644398327183479472L;
 
 	/**
 	 * 匹配规则，仅支持EXACT（精确匹配）、FUZZY（模糊匹配）两个值。
@@ -26,6 +26,12 @@ public class AlipayOpenMiniQrcodeBindModel extends AlipayObject {
 	 */
 	@ApiField("page_redirection")
 	private String pageRedirection;
+
+	/**
+	 * 匹配模式，用于描述通用的路由url格式，适用于同一个host下面存在大量路由的场景，主要用于提升路由性能，其中{0}、{1} 代表路径中的变量，注意，同一个host下面不能存在路径深度相同的匹配。
+	 */
+	@ApiField("route_pattern")
+	private String routePattern;
 
 	/**
 	 * 二维码域名，须通过ICP备案验证，支持http、https、ftp开头的链接
@@ -45,6 +51,13 @@ public class AlipayOpenMiniQrcodeBindModel extends AlipayObject {
 	}
 	public void setPageRedirection(String pageRedirection) {
 		this.pageRedirection = pageRedirection;
+	}
+
+	public String getRoutePattern() {
+		return this.routePattern;
+	}
+	public void setRoutePattern(String routePattern) {
+		this.routePattern = routePattern;
 	}
 
 	public String getRouteUrl() {

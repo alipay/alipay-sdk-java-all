@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.family.share.zmgo.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-20 11:10:16
+ * @since 1.0, 2021-02-05 16:35:17
  */
 public class AlipayUserFamilyShareZmgoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2528272381228511514L;
+	private static final long serialVersionUID = 6179314584786737147L;
 
 	/** 
 	 * 协议名称
@@ -85,6 +85,12 @@ public class AlipayUserFamilyShareZmgoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("sign_user_id")
 	private String signUserId;
+
+	/** 
+	 * 签约者脱敏姓名
+	 */
+	@ApiField("sign_user_name")
+	private String signUserName;
 
 	/** 
 	 * 签约人业务账号类型
@@ -186,6 +192,13 @@ public class AlipayUserFamilyShareZmgoQueryResponse extends AlipayResponse {
 	}
 	public String getSignUserId( ) {
 		return this.signUserId;
+	}
+
+	public void setSignUserName(String signUserName) {
+		this.signUserName = signUserName;
+	}
+	public String getSignUserName( ) {
+		return this.signUserName;
 	}
 
 	public void setSignUserType(String signUserType) {

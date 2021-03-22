@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券详情信息
  *
  * @author auto create
- * @since 1.0, 2021-01-22 18:10:32
+ * @since 1.0, 2021-03-15 20:51:27
  */
 public class VoucherDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7898117433298366572L;
+	private static final long serialVersionUID = 6666876182343378969L;
+
+	/**
+	 * 券对应的活动id
+	 */
+	@ApiField("activity_id")
+	private String activityId;
 
 	/**
 	 * 优惠金额
@@ -130,6 +136,13 @@ ITEM_DISCOUNT_VOUCHER:单品折扣券
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
+
+	public String getActivityId() {
+		return this.activityId;
+	}
+	public void setActivityId(String activityId) {
+		this.activityId = activityId;
+	}
 
 	public String getAmount() {
 		return this.amount;

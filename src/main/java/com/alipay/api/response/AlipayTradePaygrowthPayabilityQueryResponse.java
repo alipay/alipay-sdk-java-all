@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.paygrowth.payability.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-03 10:45:24
+ * @since 1.0, 2021-02-22 14:35:15
  */
 public class AlipayTradePaygrowthPayabilityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3763918282179252671L;
+	private static final long serialVersionUID = 4411622586721538129L;
 
 	/** 
 	 * 是否有支付能力，true表示有支付能力，false表示没有支付能力。

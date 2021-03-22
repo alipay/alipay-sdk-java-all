@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.code.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-22 09:51:30
+ * @since 1.0, 2021-03-18 14:37:14
  */
 public class AlipayMobileCodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3178324562446174158L;
+	private static final long serialVersionUID = 2363155999695741963L;
 
 	/** 
 	 * 业务关联的id，如订单号,userId

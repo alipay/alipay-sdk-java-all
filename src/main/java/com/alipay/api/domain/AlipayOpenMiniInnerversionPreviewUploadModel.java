@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多端小程序-真机预览接口
  *
  * @author auto create
- * @since 1.0, 2020-12-30 14:35:22
+ * @since 1.0, 2021-02-23 21:30:37
  */
 public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4333239754912949398L;
+	private static final long serialVersionUID = 8749282446111386142L;
 
 	/**
 	 * 构建参数- JSAPI 权限文件, JSON 字符串
@@ -63,6 +63,19 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * 构建参数-IDE 构建好的appx2.0包地址
+	 */
+	@ApiField("new_build_pkg_url")
+	private String newBuildPkgUrl;
+
+	/**
+	 * 构建参数-IDE 
+构建好的plugin包地址，小程序插件的有两个构建产物client包和plugin包，该场景下client包地址通过build_pkg_url传递，plugin包地址通过本参数传递
+	 */
+	@ApiField("new_build_plugin_url")
+	private String newBuildPluginUrl;
 
 	/**
 	 * 小程序代码中引用的插件列表，包含插件id和插件版本信息
@@ -138,6 +151,20 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public String getNewBuildPkgUrl() {
+		return this.newBuildPkgUrl;
+	}
+	public void setNewBuildPkgUrl(String newBuildPkgUrl) {
+		this.newBuildPkgUrl = newBuildPkgUrl;
+	}
+
+	public String getNewBuildPluginUrl() {
+		return this.newBuildPluginUrl;
+	}
+	public void setNewBuildPluginUrl(String newBuildPluginUrl) {
+		this.newBuildPluginUrl = newBuildPluginUrl;
 	}
 
 	public List<MiniAppPluginReference> getPluginRefs() {

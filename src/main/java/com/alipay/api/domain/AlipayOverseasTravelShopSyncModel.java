@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跨境游私域店铺数据同步
  *
  * @author auto create
- * @since 1.0, 2021-01-07 16:01:28
+ * @since 1.0, 2021-02-25 19:13:06
  */
 public class AlipayOverseasTravelShopSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3899457399485588325L;
+	private static final long serialVersionUID = 4826652748561437869L;
 
 	/**
 	 * 地图可以搜索的到的店铺详细地址。对于线下店铺，地址为必填，线上店铺为非必填。
@@ -52,6 +52,12 @@ public class AlipayOverseasTravelShopSyncModel extends AlipayObject {
 	 */
 	@ApiField("delivery_fee")
 	private Amount deliveryFee;
+
+	/**
+	 * 店铺扩展参数
+	 */
+	@ApiField("extend_params")
+	private ShopExtendParams extendParams;
 
 	/**
 	 * 外链地址,可以是许可范围内的支付宝小程序地址，H5链接等。
@@ -191,6 +197,13 @@ public class AlipayOverseasTravelShopSyncModel extends AlipayObject {
 	}
 	public void setDeliveryFee(Amount deliveryFee) {
 		this.deliveryFee = deliveryFee;
+	}
+
+	public ShopExtendParams getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(ShopExtendParams extendParams) {
+		this.extendParams = extendParams;
 	}
 
 	public String getExternalLinkUrl() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集团采购的活动预算请求对象
  *
  * @author auto create
- * @since 1.0, 2020-08-29 11:30:21
+ * @since 1.0, 2021-03-11 14:53:19
  */
 public class PurchaseApplyInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5256178358332754838L;
+	private static final long serialVersionUID = 3382462376242293928L;
 
 	/**
 	 * 采购类目
@@ -52,6 +52,12 @@ public class PurchaseApplyInfoDTO extends AlipayObject {
 	private String budgetStrategy;
 
 	/**
+	 * 币种
+	 */
+	@ApiField("currency")
+	private String currency;
+
+	/**
 	 * 预算周期结束时间
 	 */
 	@ApiField("end_cycle")
@@ -80,6 +86,12 @@ public class PurchaseApplyInfoDTO extends AlipayObject {
 	 */
 	@ApiField("pool_code")
 	private String poolCode;
+
+	/**
+	 * 剩余可用金额
+	 */
+	@ApiField("remain_amount")
+	private String remainAmount;
 
 	/**
 	 * 状态：CONFIG，CONFIG_DONE，CHECK，ACTIVE，HISTORY，CLOSE，DISCARD，INACTIVE
@@ -135,6 +147,13 @@ public class PurchaseApplyInfoDTO extends AlipayObject {
 		this.budgetStrategy = budgetStrategy;
 	}
 
+	public String getCurrency() {
+		return this.currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
+
 	public Date getEndCycle() {
 		return this.endCycle;
 	}
@@ -168,6 +187,13 @@ public class PurchaseApplyInfoDTO extends AlipayObject {
 	}
 	public void setPoolCode(String poolCode) {
 		this.poolCode = poolCode;
+	}
+
+	public String getRemainAmount() {
+		return this.remainAmount;
+	}
+	public void setRemainAmount(String remainAmount) {
+		this.remainAmount = remainAmount;
 	}
 
 	public String getStatus() {

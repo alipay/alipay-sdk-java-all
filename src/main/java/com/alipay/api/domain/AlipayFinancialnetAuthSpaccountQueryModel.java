@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构专户账户信息查询服务
  *
  * @author auto create
- * @since 1.0, 2018-09-04 14:59:40
+ * @since 1.0, 2021-03-04 14:32:30
  */
 public class AlipayFinancialnetAuthSpaccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7839938663366178647L;
+	private static final long serialVersionUID = 6145423342932361235L;
 
 	/**
 	 * 产品编码

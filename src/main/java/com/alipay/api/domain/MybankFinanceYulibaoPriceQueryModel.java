@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoPriceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5253669237671784173L;
+	private static final long serialVersionUID = 6121765342127474326L;
 
 	/**
 	 * 查询行情的截止日期，必须是格式为yyyyMMdd的日期字符串且日期要大于等于start_date，时间最大跨度为30天，如start_date为20160808，则end_date最大值为20160906
@@ -20,7 +20,7 @@ public class MybankFinanceYulibaoPriceQueryModel extends AlipayObject {
 	private String endDate;
 
 	/**
-	 * 基金代码，必填。目前默认填001529，代表余利宝。
+	 * 基金代码。余利宝场景固定为 001529。
 	 */
 	@ApiField("fund_code")
 	private String fundCode;

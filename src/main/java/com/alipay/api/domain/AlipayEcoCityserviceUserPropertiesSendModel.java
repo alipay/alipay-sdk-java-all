@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 城服服务用户属性同步接口
  *
  * @author auto create
- * @since 1.0, 2020-05-12 10:51:24
+ * @since 1.0, 2021-02-22 16:26:27
  */
 public class AlipayEcoCityserviceUserPropertiesSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3451851272471845855L;
+	private static final long serialVersionUID = 8625928226151173566L;
 
 	/**
 	 * 城市

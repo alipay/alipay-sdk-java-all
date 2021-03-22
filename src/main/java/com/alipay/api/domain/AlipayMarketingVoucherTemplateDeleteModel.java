@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除资金券模板
  *
  * @author auto create
- * @since 1.0, 2018-01-30 22:43:25
+ * @since 1.0, 2021-02-27 20:26:04
  */
 public class AlipayMarketingVoucherTemplateDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5277175338651844399L;
+	private static final long serialVersionUID = 4777558476366251311L;
 
 	/**
 	 * 券模板ID

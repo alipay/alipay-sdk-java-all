@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 打款验证查询
  *
  * @author auto create
- * @since 1.0, 2020-08-17 11:36:52
+ * @since 1.0, 2021-02-25 16:31:32
  */
 public class MybankPaymentTradeDepositVerifyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4187749518487746958L;
+	private static final long serialVersionUID = 7171432619891123157L;
 
 	/**
 	 * 打款验证ID 打款验证受理后生成的一个唯一标识

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiTradeItemorderBuyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3261651912457976938L;
+	private static final long serialVersionUID = 2556352634967778941L;
 
 	/**
 	 * 业务产品
@@ -66,7 +66,7 @@ public class KoubeiTradeItemorderBuyModel extends AlipayObject {
 	private String subject;
 
 	/**
-	 * 该笔订单允许的最晚付款时间，逾期将关闭交易，取值范围:1m～30m(单位:分钟) 不传默认3m。
+	 * 该笔订单允许的最晚付款时间，逾期将关闭交易，不传默认3m。取值范围:1m～30m(单位:分钟) ，不支持小数。
 	 */
 	@ApiField("timeout")
 	private String timeout;

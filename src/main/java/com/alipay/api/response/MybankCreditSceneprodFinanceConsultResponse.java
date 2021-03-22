@@ -8,11 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.finance.consult response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-28 10:05:11
+ * @since 1.0, 2021-03-19 14:46:23
  */
 public class MybankCreditSceneprodFinanceConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5612387699168425941L;
+	private static final long serialVersionUID = 3872292462687451861L;
+
+	/** 
+	 * 分行ipRoleid
+	 */
+	@ApiField("finance_branch_ip_role_id")
+	private String financeBranchIpRoleId;
+
+	/** 
+	 * 分行名称
+	 */
+	@ApiField("finance_branch_name")
+	private String financeBranchName;
 
 	/** 
 	 * 资方编码
@@ -39,7 +51,13 @@ public class MybankCreditSceneprodFinanceConsultResponse extends AlipayResponse 
 	private String routeNo;
 
 	/** 
-	 * 路由查询状态
+	 * 路由结果
+
+SUCCESS:成功，同时route_no会有值
+
+PROCESSING：咨询中，等待资方接口返回结果
+
+FAIL: 匹配到的资方都拒绝准入
 	 */
 	@ApiField("status")
 	private String status;
@@ -49,6 +67,20 @@ public class MybankCreditSceneprodFinanceConsultResponse extends AlipayResponse 
 	 */
 	@ApiField("trace_id")
 	private String traceId;
+
+	public void setFinanceBranchIpRoleId(String financeBranchIpRoleId) {
+		this.financeBranchIpRoleId = financeBranchIpRoleId;
+	}
+	public String getFinanceBranchIpRoleId( ) {
+		return this.financeBranchIpRoleId;
+	}
+
+	public void setFinanceBranchName(String financeBranchName) {
+		this.financeBranchName = financeBranchName;
+	}
+	public String getFinanceBranchName( ) {
+		return this.financeBranchName;
+	}
 
 	public void setFinanceInstCode(String financeInstCode) {
 		this.financeInstCode = financeInstCode;

@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicLifeLabelDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3129226341861694765L;
+	private static final long serialVersionUID = 8616964423811731346L;
 
 	/**
-	 * 标签id, 只支持生活号自定义标签
+	 * 标签 id，只支持生活号自定义标签。通过 <a href="https://opendocs.alipay.com/apis/api_6/alipay.open.public.life.label.create">alipay.open.public.life.label.create</a>(创建标签接口)创建自定义标签后获取。
 	 */
 	@ApiField("label_id")
 	private String labelId;

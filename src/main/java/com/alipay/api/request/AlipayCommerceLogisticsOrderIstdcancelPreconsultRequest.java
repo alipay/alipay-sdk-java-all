@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.order.istdcancel.preconsult request
  * 
  * @author auto create
- * @since 1.0, 2020-11-20 11:39:07
+ * @since 1.0, 2021-02-07 11:48:28
  */
 public class AlipayCommerceLogisticsOrderIstdcancelPreconsultRequest implements AlipayRequest<AlipayCommerceLogisticsOrderIstdcancelPreconsultResponse> {
 

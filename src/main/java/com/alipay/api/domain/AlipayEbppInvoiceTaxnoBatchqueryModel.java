@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppInvoiceTaxnoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5143299364326946515L;
+	private static final long serialVersionUID = 7554952119663914232L;
 
 	/**
 	 * 默认值为false。true为输出交易信息，false为不输出交易信息。
@@ -34,13 +34,12 @@ start_invoice_date和end_invoice_date传值要求
 	private String endInvoiceDate;
 
 	/**
-	 * 查询票种列表
-可选值
-PLAIN：增值税电子普通发票
-SPECIAL：增值税专用发票
-PLAIN_INVOICE:增值税普通发票
-PAPER_INVOICE:增值税普通发票（卷式）
-SALSE_INVOICE:机动车销售统一发票
+	 * 查询票种列表。枚举值如下：
+*PLAIN：增值税电子普通发票；
+*SPECIAL：增值税专用发票；
+*PLAIN_INVOICE：增值税普通发票；
+*PAPER_INVOICE：增值税普通发票（卷式）；
+*SALSE_INVOICE：机动车销售统一发票。
 	 */
 	@ApiListField("invoice_kind_list")
 	@ApiField("string")
@@ -59,8 +58,7 @@ SALSE_INVOICE:机动车销售统一发票
 	private Long pageNum;
 
 	/**
-	 * 发票要素获取应用场景
-INVOICE_EXPENSE－发票报销
+	 * 发票要素获取应用场景。<a href="https://opendocs.alipay.com/open/10691/bv8s88">"拉"模式报销</a> 固定为 INVOICE_EXPENSE 表示发票报销。
 	 */
 	@ApiField("scene")
 	private String scene;

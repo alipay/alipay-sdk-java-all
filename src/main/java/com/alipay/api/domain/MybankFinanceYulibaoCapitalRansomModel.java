@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoCapitalRansomModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3848664164231427878L;
+	private static final long serialVersionUID = 2194348726387793366L;
 
 	/**
 	 * 赎回的金额，以分为单位，必须为正整数。如amount=123456表示赎回1234.56元的余利宝份额。
@@ -26,7 +26,7 @@ public class MybankFinanceYulibaoCapitalRansomModel extends AlipayObject {
 	private String currency;
 
 	/**
-	 * 基金代码，必填。目前默认填001529，代表余利宝。
+	 * 基金代码。余利宝场景固定为 001529。
 	 */
 	@ApiField("fund_code")
 	private String fundCode;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝券模板模型
  *
  * @author auto create
- * @since 1.0, 2021-01-04 13:39:31
+ * @since 1.0, 2021-02-20 10:24:47
  */
 public class VoucherTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 5555983922219357917L;
+	private static final long serialVersionUID = 3261278392483881546L;
 
 	/**
 	 * 券可使用时间规则
@@ -89,6 +89,12 @@ public class VoucherTemplate extends AlipayObject {
 	@ApiListField("unavailable_time_rule")
 	@ApiField("voucher_time_rule")
 	private List<VoucherTimeRule> unavailableTimeRule;
+
+	/**
+	 * 券描述
+	 */
+	@ApiField("voucher_desc")
+	private String voucherDesc;
 
 	/**
 	 * 优惠券名称
@@ -176,6 +182,13 @@ public class VoucherTemplate extends AlipayObject {
 	}
 	public void setUnavailableTimeRule(List<VoucherTimeRule> unavailableTimeRule) {
 		this.unavailableTimeRule = unavailableTimeRule;
+	}
+
+	public String getVoucherDesc() {
+		return this.voucherDesc;
+	}
+	public void setVoucherDesc(String voucherDesc) {
+		this.voucherDesc = voucherDesc;
 	}
 
 	public String getVoucherName() {

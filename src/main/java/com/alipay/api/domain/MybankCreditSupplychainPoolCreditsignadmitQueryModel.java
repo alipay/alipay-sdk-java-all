@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 池融资授信及签约准入查询
  *
  * @author auto create
- * @since 1.0, 2021-01-20 14:18:58
+ * @since 1.0, 2021-03-03 14:52:55
  */
 public class MybankCreditSupplychainPoolCreditsignadmitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8713843256189799749L;
+	private static final long serialVersionUID = 2759497986222194926L;
 
 	/**
 	 * 客户支付宝登录号，在饿了么发薪贷场景是外包服务供应商的支付宝登录号

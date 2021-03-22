@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动指标查询
  *
  * @author auto create
- * @since 1.0, 2017-09-29 15:07:40
+ * @since 1.0, 2021-03-12 11:06:33
  */
 public class KoubeiMarketingDataIndicatorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2191541882836668756L;
+	private static final long serialVersionUID = 1495986885735758587L;
 
 	/**
 	 * 开始日期,格式:yyyyMMdd
@@ -20,13 +20,15 @@ public class KoubeiMarketingDataIndicatorQueryModel extends AlipayObject {
 	private String beginDate;
 
 	/**
-	 * 业务类型，可选值有六个
+	 * 业务类型，可选值有八个
 1，MemberQuery 商户会员数据查询
 2，MemberQueryByStore 门店会员数据查询
 3，TradeQuery 商户交易数据查询
 4，TradeQueryByStore 门店交易数据查询
 5，CampaignQuery 商户活动数据查询
 6，CampaignQueryByStore 门店活动数据查询
+7, ConponsQuery 商户券数据查询
+8,ConponsQueryByStore 门店券数据查询
 	 */
 	@ApiField("biz_type")
 	private String bizType;

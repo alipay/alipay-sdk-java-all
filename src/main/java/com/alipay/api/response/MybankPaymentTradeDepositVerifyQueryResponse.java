@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.deposit.verify.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-17 11:36:52
+ * @since 1.0, 2021-02-25 16:32:32
  */
 public class MybankPaymentTradeDepositVerifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8788535568669282547L;
+	private static final long serialVersionUID = 3747587649773337759L;
 
 	/** 
 	 * 申请日期，格式是yyyyMMddHHmmss
@@ -55,6 +55,12 @@ public class MybankPaymentTradeDepositVerifyQueryResponse extends AlipayResponse
 	 */
 	@ApiField("max_match_times")
 	private Long maxMatchTimes;
+
+	/** 
+	 * 打款失败原因
+	 */
+	@ApiField("reason")
+	private String reason;
 
 	/** 
 	 * 打款验证当前状态：
@@ -123,6 +129,13 @@ EXPIRED - 申请已过期失效
 	}
 	public Long getMaxMatchTimes( ) {
 		return this.maxMatchTimes;
+	}
+
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+	public String getReason( ) {
+		return this.reason;
 	}
 
 	public void setStatus(String status) {

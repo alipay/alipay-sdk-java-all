@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.gis.get request
  * 
  * @author auto create
- * @since 1.0, 2020-08-06 16:06:39
+ * @since 1.0, 2021-03-17 15:19:22
  */
 public class AlipayMobilePublicGisGetRequest implements AlipayRequest<AlipayMobilePublicGisGetResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-29 10:00:15
+ * @since 1.0, 2021-03-03 10:20:15
  */
 public class AlipayFundBatchDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5736627293998273256L;
+	private static final long serialVersionUID = 6436666334161117676L;
 
 	/** 
 	 * 1）当批次状态为INIT状态时，明细信息还未落地，返回明细信息为空
@@ -27,6 +27,12 @@ public class AlipayFundBatchDetailQueryResponse extends AlipayResponse {
 	@ApiListField("acc_detail_list")
 	@ApiField("acc_detail_model")
 	private List<AccDetailModel> accDetailList;
+
+	/** 
+	 * 批次推进时的审批状态，只有当批次需要审批时才提供。WAIT_APPROVAL: 未审批   APPROVED: 已审批REJECTED: 已拒绝
+	 */
+	@ApiField("approval_status")
+	private String approvalStatus;
 
 	/** 
 	 * 商户请求的批次流水号，同请求中的"batch_no"。（注：只有境外代发使用，其他场景返回out_batch_no）
@@ -202,6 +208,13 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	}
 	public List<AccDetailModel> getAccDetailList( ) {
 		return this.accDetailList;
+	}
+
+	public void setApprovalStatus(String approvalStatus) {
+		this.approvalStatus = approvalStatus;
+	}
+	public String getApprovalStatus( ) {
+		return this.approvalStatus;
 	}
 
 	public void setBatchNo(String batchNo) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小区申请下线接口
  *
  * @author auto create
- * @since 1.0, 2020-12-24 10:43:30
+ * @since 1.0, 2021-02-22 09:49:19
  */
 public class AlipayEbppCommunityServiceOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6676758417716717842L;
+	private static final long serialVersionUID = 4537431171948462123L;
 
 	/**
 	 * 小区短名
@@ -28,7 +28,6 @@ public class AlipayEbppCommunityServiceOfflineModel extends AlipayObject {
 	/**
 	 * THIRD_PARTY_COMMUNITY_JIAOFEI:物业缴费
 CENTRAL_SCAN_CODE_PASS:中心化扫码通行
-THIRD_PARTY_SCAN_CODE_PASS:三方扫码通行
 	 */
 	@ApiField("service_type")
 	private String serviceType;

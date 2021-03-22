@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoTransHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2351443917642288319L;
+	private static final long serialVersionUID = 1727422148398739811L;
 
 	/**
-	 * 查询交易的结束时间，必须是格式为yyyyMMdd的日期字符串，且日期要大于等于start_date，时间最大跨度为30天，如start_date为20160808，则end_date最大值为20160906。
+	 * 查询交易的结束时间，必须是格式为 yyyyMMdd 的日期字符串，且日期要大于等于start_date，时间最大跨度为30天，如start_date 为20200808，则end_date最大值为20200906。
 	 */
 	@ApiField("end_date")
 	private String endDate;
 
 	/**
-	 * 基金代码，必填。目前默认填001529，代表余利宝。
+	 * 基金代码。余利宝场景固定为 001529。
 	 */
 	@ApiField("fund_code")
 	private String fundCode;
@@ -38,7 +38,7 @@ public class MybankFinanceYulibaoTransHistoryQueryModel extends AlipayObject {
 	private Long pageSize;
 
 	/**
-	 * 查询交易的开始时间，必须是格式为yyyyMMdd的日期字符串，如20160808。
+	 * 查询交易的开始时间，必须是格式为yyyyMMdd的日期字符串，如20200808。
 	 */
 	@ApiField("start_date")
 	private String startDate;

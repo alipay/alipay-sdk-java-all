@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.content.community.data.send request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2021-03-11 15:55:42
  */
 public class AntfortuneContentCommunityDataSendRequest implements AlipayRequest<AntfortuneContentCommunityDataSendResponse> {
 

@@ -14,16 +14,16 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiTradeItemorderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6775172169515732449L;
+	private static final long serialVersionUID = 7572429721492978562L;
 
 	/**
-	 * 口碑订单号
+	 * 口碑订单号，可通过 <a href="https://opendocs.alipay.com/apis/api_1/koubei.trade.itemorder.buy">koubei.trade.itemorder.buy</a>(口碑商品交易购买接口)获取。
 	 */
 	@ApiField("order_no")
 	private String orderNo;
 
 	/**
-	 * 标识一次退款请求，同一笔订单多次退款需要保证唯一
+	 * 标识一次退款请求，同一笔订单多次退款需要保证唯一。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

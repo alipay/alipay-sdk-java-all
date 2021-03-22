@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车主车辆认证查询
  *
  * @author auto create
- * @since 1.0, 2020-09-14 13:49:16
+ * @since 1.0, 2021-03-02 00:47:19
  */
 public class AlipayEcoMycarVehicleCertifiedQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4876453686611948558L;
+	private static final long serialVersionUID = 4214119438325257297L;
 
 	/**
 	 * 车牌列表

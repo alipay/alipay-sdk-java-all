@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部引入内容接口
  *
  * @author auto create
- * @since 1.0, 2018-12-13 22:43:34
+ * @since 1.0, 2021-03-11 15:55:20
  */
 public class AntfortuneContentCommunityDataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6842526429447649548L;
+	private static final long serialVersionUID = 7377545819438871656L;
 
 	/**
 	 * 内容流入格式。json格式 sourceId 数据id 、creator 创建者、gmtModified 修改时间、type类型、title标题

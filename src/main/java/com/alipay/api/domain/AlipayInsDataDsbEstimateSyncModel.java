@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步机构定损/核损结果
  *
  * @author auto create
- * @since 1.0, 2017-10-11 17:32:58
+ * @since 1.0, 2021-03-08 19:51:54
  */
 public class AlipayInsDataDsbEstimateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2662232722661984462L;
+	private static final long serialVersionUID = 7628732125711558372L;
 
 	/**
 	 * 业务类型：assessment（定损），evaluation（核损）

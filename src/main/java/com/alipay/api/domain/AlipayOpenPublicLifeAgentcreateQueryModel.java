@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicLifeAgentcreateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1361661911915699279L;
+	private static final long serialVersionUID = 7251358351297681161L;
 
 	/**
 	 * 由开发者创建的外部入驻申请单据号

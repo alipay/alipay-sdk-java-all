@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝券详细信息
  *
  * @author auto create
- * @since 1.0, 2021-01-21 13:56:06
+ * @since 1.0, 2021-02-20 10:24:28
  */
 public class VoucherItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8747171717846379464L;
+	private static final long serialVersionUID = 8897865762678697474L;
 
 	/**
 	 * 券可使用时间规则
@@ -83,6 +83,12 @@ public class VoucherItem extends AlipayObject {
 	private List<VoucherTimeRule> unavailableTimeRule;
 
 	/**
+	 * 券描述
+	 */
+	@ApiField("voucher_desc")
+	private String voucherDesc;
+
+	/**
 	 * 券id
 	 */
 	@ApiField("voucher_id")
@@ -96,7 +102,7 @@ public class VoucherItem extends AlipayObject {
 
 	/**
 	 * 券状态：
-可用(ENABLED)，已核销(即完全使用，USED)，已过期(EXPIRED)，删除(DELETE)，不可用(DISABLED，逐步废弃)
+可用(ENABLED)，已核销(即完全使用，USED)，已过期(EXPIRED)，不可用(DISABLED)，删除(DELETE，已废弃)，
 	 */
 	@ApiField("voucher_status")
 	private String voucherStatus;
@@ -177,6 +183,13 @@ public class VoucherItem extends AlipayObject {
 	}
 	public void setUnavailableTimeRule(List<VoucherTimeRule> unavailableTimeRule) {
 		this.unavailableTimeRule = unavailableTimeRule;
+	}
+
+	public String getVoucherDesc() {
+		return this.voucherDesc;
+	}
+	public void setVoucherDesc(String voucherDesc) {
+		this.voucherDesc = voucherDesc;
 	}
 
 	public String getVoucherId() {

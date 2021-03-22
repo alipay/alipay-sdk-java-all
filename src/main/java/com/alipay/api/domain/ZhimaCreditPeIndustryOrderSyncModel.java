@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用服务产品订单同步
  *
  * @author auto create
- * @since 1.0, 2019-04-23 20:03:38
+ * @since 1.0, 2021-03-15 19:21:50
  */
 public class ZhimaCreditPeIndustryOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6332535657428868561L;
+	private static final long serialVersionUID = 2272361231334997255L;
 
 	/**
 	 * 业务场景,分时租赁平台:car_sharing_zhima,具体业务对应的业务场景请联系业务确认

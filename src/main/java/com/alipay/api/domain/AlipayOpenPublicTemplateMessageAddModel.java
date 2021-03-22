@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicTemplateMessageAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1726174353966648752L;
+	private static final long serialVersionUID = 3453247337764158585L;
 
 	/**
 	 * 自行组合模板关键词列表，关键词顺序按数组顺序，关键字名称不能重复，最多支持5个，最少2个关键词组合
@@ -24,7 +24,7 @@ public class AlipayOpenPublicTemplateMessageAddModel extends AlipayObject {
 	private List<PublicMsgKeyword> keywordList;
 
 	/**
-	 * 消息母板id，登陆生活号后台(fuwu.alipay.com)，点击菜单“模板消息”，点击“模板库”，即可看到相应模板的消息母板id
+	 * 消息母板id，登录 <a href="https://fuwu.alipay.com/platform/spa/merchant/main/index">生活号后台</a>，点击【消息与互动】菜单【模板消息】，即可看到/领取模板的消息母板id。
 	 */
 	@ApiField("lib_code")
 	private String libCode;

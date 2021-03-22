@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2493271429935462334L;
+	private static final long serialVersionUID = 8394585472286186218L;
 
 	/**
 	 * 消息是否必达(immediate_msg为false时此字段设置有效)，消息过期时间顺延3*24h. 建议使用expire_time设置消息过期时间
@@ -40,7 +40,7 @@ SN:sn
 	private String itemId;
 
 	/**
-	 * 消息内容(xpaas_common:{"contentParams":["消息内容"]};audio_msg:{"contentParams":["语音内容"]};cloud_print:{"contentParams":["打印内容"],"target":"打印编号-可选默认第一个","instructionFormat":"template或cmd"})
+	 * 消息内容
 	 */
 	@ApiField("msg_content")
 	private String msgContent;
@@ -64,7 +64,9 @@ SN:sn
 	private Long msgPriority;
 
 	/**
-	 * 消息类型：xpaas_common-小程序通用消息
+	 * 消息类型：
+xpaas_common-小程序消息；
+ruyi_ordermsg-如意订单消息
 	 */
 	@ApiField("msg_type")
 	private String msgType;

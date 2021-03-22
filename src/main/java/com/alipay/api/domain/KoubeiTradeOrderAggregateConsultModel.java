@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeOrderAggregateConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2325178218258845364L;
+	private static final long serialVersionUID = 5137784789378511217L;
 
 	/**
-	 * 订单包含的商品列表信息，json格式，其它说明详见商品明细说明
+	 * 订单包含的商品列表信息，json格式。
 	 */
 	@ApiField("goods_info")
 	private KbGoodsInfo goodsInfo;
@@ -38,7 +38,9 @@ public class KoubeiTradeOrderAggregateConsultModel extends AlipayObject {
 	private String subject;
 
 	/**
-	 * 支付超时时间；默认3m; 该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为 90m
+	 * 支付超时时间，默认3m（即3分钟）。表示该笔订单允许的最晚付款时间，逾期将关闭交易。
+取值范围：1m～15d。m-分钟，h-小时，d-天。
+注意：该参数数值不接受小数点， 如 1.5h，可转换为 90m。
 	 */
 	@ApiField("timeout_express")
 	private String timeoutExpress;

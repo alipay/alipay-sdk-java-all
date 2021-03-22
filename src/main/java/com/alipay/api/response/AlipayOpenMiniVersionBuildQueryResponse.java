@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.version.build.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-11-24 16:29:39
+ * @since 1.0, 2021-02-22 18:00:46
  */
 public class AlipayOpenMiniVersionBuildQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8148294439794695113L;
+	private static final long serialVersionUID = 7324896132211858486L;
 
 	/** 
 	 * 构建的状态，0-构建排队中；1-正在构建；2-构建成功；3-构建失败；5-构建超时
@@ -21,7 +21,13 @@ public class AlipayOpenMiniVersionBuildQueryResponse extends AlipayResponse {
 	private String buildStatus;
 
 	/** 
-	 * 创建版本的状态，0-构建排队中；1-正在构建；2-构建成功；3-构建失败；5-构建超时；6-版本创建成功
+	 * 创建版本的状态，状态说明如下：
+0：构建排队中；
+1：正在构建；
+2：构建成功；
+3：构建失败；
+5：构建超时；
+6：版本创建成功。
 	 */
 	@ApiField("create_status")
 	private String createStatus;

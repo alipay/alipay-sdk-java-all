@@ -11,14 +11,16 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.device.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-15 19:46:24
+ * @since 1.0, 2021-02-26 13:57:16
  */
 public class AlipayUserAccountDeviceInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4215757669855348889L;
+	private static final long serialVersionUID = 6392348985327446219L;
 
 	/** 
 	 * 满足投放条件的简要设备信息
+1. device_id：对应入参中设备的唯一标识；
+2. device_label：咨询的结果标签
 	 */
 	@ApiListField("device_infos")
 	@ApiField("device_result_info")
@@ -26,12 +28,14 @@ public class AlipayUserAccountDeviceInfoQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 设备类型，如：IDFA、IMEI、MOBILE等
+注意：该字段正在废弃，由于该信息取自用户传入参数，所以此处不再做回填；
 	 */
 	@ApiField("device_type")
 	private String deviceType;
 
 	/** 
-	 * 设备id的加密方式，如没有加密，可以不传。一般sha256即可满足需求，如其他方式，请和支付宝技术支持联系
+	 * 设备id的加密方式，如没有加密，可以不传。一般sha256即可满足需求，如其他方式，请和支付宝技术支持联系。
+注意：该字段正在废弃，由于该信息取自用户传入参数，所以此处不再做回填；
 	 */
 	@ApiField("encrypt_type")
 	private String encryptType;

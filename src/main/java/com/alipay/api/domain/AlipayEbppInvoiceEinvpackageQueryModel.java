@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceEinvpackageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1227524966451766633L;
+	private static final long serialVersionUID = 5771224875797859163L;
 
 	/**
-	 * 加密过的uid
+	 * 加密过的uid。获取详情参见 <a href="https://opendocs.alipay.com/open/017fwh">"推"模式发票报销</a>。
 	 */
 	@ApiField("encrypted_uid")
 	private String encryptedUid;
 
 	/**
-	 * 发票包id
+	 * 发票包id。获取详情参见 <a href="https://opendocs.alipay.com/open/017fwh">"推"模式发票报销</a>。
 	 */
 	@ApiField("package_id")
 	private String packageId;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * STS临时token获取
  *
  * @author auto create
- * @since 1.0, 2020-12-14 14:26:55
+ * @since 1.0, 2021-02-26 16:56:21
  */
 public class AlipayOpenStsTokenGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8577521796384483339L;
+	private static final long serialVersionUID = 5847485684433829922L;
 
 	/**
 	 * 当前安全令牌

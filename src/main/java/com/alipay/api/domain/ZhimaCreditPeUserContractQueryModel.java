@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用受理服务协议查询
  *
  * @author auto create
- * @since 1.0, 2019-09-26 09:50:16
+ * @since 1.0, 2021-03-12 10:55:43
  */
 public class ZhimaCreditPeUserContractQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8649658181527149924L;
+	private static final long serialVersionUID = 8113647962629862375L;
 
 	/**
 	 * 芝麻信用场景，由芝麻信用侧分配，如：天猫信用购，淘宝租赁等

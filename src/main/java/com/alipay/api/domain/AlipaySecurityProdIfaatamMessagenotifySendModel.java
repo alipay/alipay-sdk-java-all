@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV接入车辆状态变更消息通知接口
  *
  * @author auto create
- * @since 1.0, 2020-12-01 10:57:25
+ * @since 1.0, 2021-03-18 19:21:41
  */
 public class AlipaySecurityProdIfaatamMessagenotifySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3696663124571365453L;
+	private static final long serialVersionUID = 2381545169278183473L;
 
 	/**
 	 * 业务操作类型
@@ -32,10 +32,22 @@ public class AlipaySecurityProdIfaatamMessagenotifySendModel extends AlipayObjec
 	private String businessId;
 
 	/**
+	 * 控车序列号
+	 */
+	@ApiField("car_info_seq_no")
+	private String carInfoSeqNo;
+
+	/**
 	 * 商户ID
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
+
+	/**
+	 * 控车时间
+	 */
+	@ApiField("tbox_time")
+	private String tboxTime;
 
 	/**
 	 * 汽车终端发起的消息通知内容,包含车辆的模块,当前的状态,和状态描述信息
@@ -64,11 +76,25 @@ public class AlipaySecurityProdIfaatamMessagenotifySendModel extends AlipayObjec
 		this.businessId = businessId;
 	}
 
+	public String getCarInfoSeqNo() {
+		return this.carInfoSeqNo;
+	}
+	public void setCarInfoSeqNo(String carInfoSeqNo) {
+		this.carInfoSeqNo = carInfoSeqNo;
+	}
+
 	public String getPartnerId() {
 		return this.partnerId;
 	}
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
+	}
+
+	public String getTboxTime() {
+		return this.tboxTime;
+	}
+	public void setTboxTime(String tboxTime) {
+		this.tboxTime = tboxTime;
 	}
 
 	public VehicleMessageInfo getVehicleMessageInfo() {

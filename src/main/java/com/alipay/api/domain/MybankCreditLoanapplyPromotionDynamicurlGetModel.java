@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取推广活动的动态链接
  *
  * @author auto create
- * @since 1.0, 2019-03-28 21:13:06
+ * @since 1.0, 2021-02-04 15:21:27
  */
 public class MybankCreditLoanapplyPromotionDynamicurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7528577869479718548L;
+	private static final long serialVersionUID = 7597317682162938399L;
 
 	/**
 	 * 机构合约编号，商户接入企业信贷业务时自动分配，获取地址：https://partner.mybank.cn/cooperation/myCooperation.htm，路径：我的合作-查看详情-开发接口调用-接口合约编号；

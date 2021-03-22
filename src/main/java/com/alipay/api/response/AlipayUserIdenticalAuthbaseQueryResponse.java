@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.identical.authbase.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-22 11:00:11
+ * @since 1.0, 2021-03-17 15:23:09
  */
 public class AlipayUserIdenticalAuthbaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8187722232947287933L;
+	private static final long serialVersionUID = 2538192589337671731L;
 
 	/** 
 	 * 是否是同人账号

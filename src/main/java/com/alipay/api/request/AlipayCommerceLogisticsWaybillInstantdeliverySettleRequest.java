@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.waybill.instantdelivery.settle request
  * 
  * @author auto create
- * @since 1.0, 2020-12-17 14:47:33
+ * @since 1.0, 2021-02-07 11:46:47
  */
 public class AlipayCommerceLogisticsWaybillInstantdeliverySettleRequest implements AlipayRequest<AlipayCommerceLogisticsWaybillInstantdeliverySettleResponse> {
 

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiMarketingCampaignActivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8853823642561775343L;
+	private static final long serialVersionUID = 3525491227598662639L;
 
 	/**
 	 * 是否自动续期活动，仅当活动下券的有效期均为相对有效期时才能设置成Y
@@ -30,7 +30,7 @@ public class KoubeiMarketingCampaignActivityModifyModel extends AlipayObject {
 	private BudgetInfo budgetInfo;
 
 	/**
-	 * 活动id
+	 * 活动id，通过 <a href="https://opendocs.alipay.com/apis/api_5/koubei.marketing.campaign.activity.create">koubei.marketing.campaign.activity.create</a>(活动创建接口)获取。
 	 */
 	@ApiField("camp_id")
 	private String campId;
@@ -42,15 +42,15 @@ public class KoubeiMarketingCampaignActivityModifyModel extends AlipayObject {
 	private ConstraintInfo constraintInfo;
 
 	/**
-	 * 活动详细说明
-不允许修改，必须与活动详情查询的结果保持一致
+	 * 活动详细说明。
+ 注意：本参数不允许修改，必须与  <a href="https://opendocs.alipay.com/apis/api_5/koubei.marketing.campaign.activity.query">koubei.marketing.campaign.activity.query</a>(活动详情查询)接口查询结果保持一致。
 	 */
 	@ApiField("desc")
 	private String desc;
 
 	/**
-	 * 活动结束时间
-活动结束时间只允许延长
+	 * 活动结束时间，格式为"yyyy-MM-dd HH:mm:ss"。
+注意：活动结束时间只允许延长
 	 */
 	@ApiField("end_time")
 	private Date endTime;
@@ -62,8 +62,8 @@ public class KoubeiMarketingCampaignActivityModifyModel extends AlipayObject {
 	private String extInfo;
 
 	/**
-	 * 活动名称
-不允许修改，必须与活动详情查询的结果保持一致
+	 * 活动名称。
+注意：本参数不允许修改，必须与  <a href="https://opendocs.alipay.com/apis/api_5/koubei.marketing.campaign.activity.query">koubei.marketing.campaign.activity.query</a>(活动详情查询)接口查询结果保持一致。
 	 */
 	@ApiField("name")
 	private String name;
@@ -75,13 +75,17 @@ public class KoubeiMarketingCampaignActivityModifyModel extends AlipayObject {
 	private String operatorId;
 
 	/**
-	 * 操作人类型,有以下值可填：MER（外部商户），MER_OPERATOR（外部商户操作员），PROVIDER（外部服务商），PROVIDER_STAFF（外部服务商员工），默认不需要填这个字段，默认为MER
+	 * 操作人类型，不填默认为 MER（外部商户）。支持枚举值如下：
+* MER：外部商户。
+* MER_OPERATOR：外部商户操作员。
+* PROVIDER：外部服务商。
+* PROVIDER_STAFF：外部服务商员工。
 	 */
 	@ApiField("operator_type")
 	private String operatorType;
 
 	/**
-	 * 外部批次ID，用户指定,每次请求保持唯一
+	 * 外部批次ID。需保证同一账户下唯一，控制幂等。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -107,15 +111,15 @@ public class KoubeiMarketingCampaignActivityModifyModel extends AlipayObject {
 	private RecruitTool recruitTool;
 
 	/**
-	 * 活动开始时间
-不允许修改，必须与活动详情查询的结果保持一致
+	 * 活动开始时间，格式为"yyyy-MM-dd HH:mm:ss"。
+注意：本参数不允许修改，必须与  <a href="https://opendocs.alipay.com/apis/api_5/koubei.marketing.campaign.activity.query">koubei.marketing.campaign.activity.query</a>(活动详情查询)接口查询结果保持一致。
 	 */
 	@ApiField("start_time")
 	private Date startTime;
 
 	/**
-	 * 活动类型
-不允许修改，必须与活动详情查询的结果保持一致
+	 * 活动类型。
+ 注意：本参数不允许修改，必须与  <a href="https://opendocs.alipay.com/apis/api_5/koubei.marketing.campaign.activity.query">koubei.marketing.campaign.activity.query</a>(活动详情查询)接口查询结果保持一致。
 	 */
 	@ApiField("type")
 	private String type;

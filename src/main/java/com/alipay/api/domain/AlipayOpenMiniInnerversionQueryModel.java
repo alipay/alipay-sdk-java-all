@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序版本查询
  *
  * @author auto create
- * @since 1.0, 2020-12-30 17:05:09
+ * @since 1.0, 2021-03-01 13:16:13
  */
 public class AlipayOpenMiniInnerversionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3718844436919853363L;
+	private static final long serialVersionUID = 7522397374615673586L;
 
 	/**
 	 * 淘宝
@@ -59,6 +59,13 @@ public class AlipayOpenMiniInnerversionQueryModel extends AlipayObject {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * 小程序ID列表
+	 */
+	@ApiListField("mini_app_id_list")
+	@ApiField("string")
+	private List<String> miniAppIdList;
 
 	/**
 	 * 页数-从0开始
@@ -126,6 +133,13 @@ public class AlipayOpenMiniInnerversionQueryModel extends AlipayObject {
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public List<String> getMiniAppIdList() {
+		return this.miniAppIdList;
+	}
+	public void setMiniAppIdList(List<String> miniAppIdList) {
+		this.miniAppIdList = miniAppIdList;
 	}
 
 	public Long getPageNum() {

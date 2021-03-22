@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品汇总信息
  *
  * @author auto create
- * @since 1.0, 2020-09-20 10:48:26
+ * @since 1.0, 2021-03-05 09:59:50
  */
 public class GoodsInfoIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 3585378957663689774L;
+	private static final long serialVersionUID = 6531112852533222391L;
 
 	/**
 	 * 交货信息，用于骑手交付商品
@@ -26,13 +26,13 @@ public class GoodsInfoIstd extends AlipayObject {
 	private String firstClass;
 
 	/**
-	 * 商品高度，单位为cm，精确到小数点后面两位
+	 * 商品高度，单位为cm
 	 */
 	@ApiField("height")
 	private Long height;
 
 	/**
-	 * 商品长度，单位为cm，精确到小数点后面两位
+	 * 商品长度，单位为cm
 	 */
 	@ApiField("length")
 	private Long length;
@@ -59,10 +59,10 @@ public class GoodsInfoIstd extends AlipayObject {
 	 * 货物重量，单位为kg，精确到小数点后两位
 	 */
 	@ApiField("weight")
-	private Long weight;
+	private String weight;
 
 	/**
-	 * 商品宽度，单位为cm，精确到小数点后面两位
+	 * 商品宽度，单位为cm
 	 */
 	@ApiField("width")
 	private Long width;
@@ -116,10 +116,10 @@ public class GoodsInfoIstd extends AlipayObject {
 		this.secondClass = secondClass;
 	}
 
-	public Long getWeight() {
+	public String getWeight() {
 		return this.weight;
 	}
-	public void setWeight(Long weight) {
+	public void setWeight(String weight) {
 		this.weight = weight;
 	}
 

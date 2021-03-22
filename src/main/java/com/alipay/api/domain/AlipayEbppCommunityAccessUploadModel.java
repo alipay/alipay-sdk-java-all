@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开门记录换取用户脱敏信息
  *
  * @author auto create
- * @since 1.0, 2021-01-26 16:25:26
+ * @since 1.0, 2021-02-18 20:03:51
  */
 public class AlipayEbppCommunityAccessUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2514528973985258491L;
+	private static final long serialVersionUID = 3464139196587947496L;
 
 	/**
 	 * 小区code

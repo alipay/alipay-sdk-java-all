@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通商户创建预校验咨询
  *
  * @author auto create
- * @since 1.0, 2021-01-13 13:23:16
+ * @since 1.0, 2021-03-01 14:09:43
  */
 public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3161815747392867571L;
+	private static final long serialVersionUID = 2274816667535656651L;
 
 	/**
 	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名
@@ -78,7 +78,7 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private String certType;
 
 	/**
-	 * 商户联系人信息。在本业务中，ContactInfo对象中联系人姓名，联系人类型、手机号必填，其他选填
+	 * 商户联系人信息。在本业务中，ContactInfo对象中联系人姓名、手机号必填，其他选填
 	 */
 	@ApiListField("contact_infos")
 	@ApiField("contact_info")
@@ -139,7 +139,7 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private String licenseAuthLetterImage;
 
 	/**
-	 * 商户类别码mcc，参见https://gw.alipayobjects.com/os/bmw-prod/05c9a32e-42d1-436b-ace7-13101d91f672.xlsx 特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质要在qualifications中上传，会有人工审核。
+	 * 商户类别码mcc，参见https://gw.alipayobjects.com/os/bmw-prod/e5dbb27b-1d8d-442e-be9e-6e52971ce7c3.xlsx 特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质要在qualifications中上传，会有人工审核。
 	 */
 	@ApiField("mcc")
 	private String mcc;

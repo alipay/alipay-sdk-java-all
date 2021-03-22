@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 类目信息
  *
  * @author auto create
- * @since 1.0, 2020-08-18 18:52:54
+ * @since 1.0, 2021-03-09 16:35:18
  */
 public class CateInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5813882562965146389L;
+	private static final long serialVersionUID = 4534314946134983525L;
 
 	/**
 	 * 类目编码

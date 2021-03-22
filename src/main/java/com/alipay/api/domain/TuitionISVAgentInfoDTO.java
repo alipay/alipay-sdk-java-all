@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv机构信息
  *
  * @author auto create
- * @since 1.0, 2020-11-30 14:06:47
+ * @since 1.0, 2021-03-03 15:22:04
  */
 public class TuitionISVAgentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4778728836552794259L;
+	private static final long serialVersionUID = 6144386252441647527L;
+
+	/**
+	 * 二级机构名称
+	 */
+	@ApiField("agent_sub_name")
+	private String agentSubName;
 
 	/**
 	 * 机构isv机构pid
@@ -24,6 +30,13 @@ public class TuitionISVAgentInfoDTO extends AlipayObject {
 	 */
 	@ApiField("sub_pid")
 	private String subPid;
+
+	public String getAgentSubName() {
+		return this.agentSubName;
+	}
+	public void setAgentSubName(String agentSubName) {
+		this.agentSubName = agentSubName;
+	}
 
 	public String getPid() {
 		return this.pid;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 实名证件信息比对验证预咨询
  *
  * @author auto create
- * @since 1.0, 2020-08-17 10:17:09
+ * @since 1.0, 2021-03-03 15:18:19
  */
 public class AlipayUserCertdocCertverifyPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3732349422193933384L;
+	private static final long serialVersionUID = 5126717593499816791L;
 
 	/**
 	 * 证件号

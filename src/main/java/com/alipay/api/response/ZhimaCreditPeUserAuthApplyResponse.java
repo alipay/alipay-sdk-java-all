@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.auth.apply response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-26 13:55:28
+ * @since 1.0, 2021-03-12 10:53:49
  */
 public class ZhimaCreditPeUserAuthApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1876666237726551421L;
+	private static final long serialVersionUID = 8457674182542248423L;
 
 	/** 
 	 * 临时授权码，一次性有效，同时若超过有效期未使用，则会失效。有效期目前至少为5分钟，最长为24小时。请获取auth_code后尽快通过调用alipay.system.oauth.token接口获取访问令牌

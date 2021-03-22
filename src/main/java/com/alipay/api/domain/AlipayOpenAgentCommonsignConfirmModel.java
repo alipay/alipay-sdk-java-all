@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代商户签约，提交信息确认接口
  *
  * @author auto create
- * @since 1.0, 2020-11-30 17:34:23
+ * @since 1.0, 2021-03-08 14:05:01
  */
 public class AlipayOpenAgentCommonsignConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4375271732488538949L;
+	private static final long serialVersionUID = 1523675252727782694L;
 
 	/**
 	 * ISV 代商户操作事务编号，通过事务开启接口alipay.open.agent.create调用返回。

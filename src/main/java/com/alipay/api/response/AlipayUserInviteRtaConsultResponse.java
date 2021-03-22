@@ -11,26 +11,26 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.invite.rta.consult response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-03 10:50:07
+ * @since 1.0, 2021-02-27 19:12:38
  */
 public class AlipayUserInviteRtaConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8192654521986131243L;
+	private static final long serialVersionUID = 3121211712989391368L;
 
 	/** 
-	 * 人群标签
+	 * 一个或多个咨询策略标签，若返回多个标签，中间用“-”分隔
 	 */
 	@ApiField("principal_label")
 	private String principalLabel;
 
 	/** 
-	 * 是否需要的流量
+	 * 是否需要的流量，结果可为true和false
 	 */
 	@ApiField("required_flow")
 	private Boolean requiredFlow;
 
 	/** 
-	 * rta咨询结果列表
+	 * rta咨询结果列表。最终结果形如：[{"accountId":"11111"},{"accountId":"22222"}]
 	 */
 	@ApiListField("rta_info_list")
 	@ApiField("rta_info")

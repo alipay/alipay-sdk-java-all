@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询代运营授权或者账号绑定二维码
  *
  * @author auto create
- * @since 1.0, 2021-01-21 21:43:45
+ * @since 1.0, 2021-02-26 15:26:08
  */
 public class AlipayOpenSpOperationQrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8716683743975611921L;
+	private static final long serialVersionUID = 1613299279996727616L;
 
 	/**
 	 * 接入的产品编号。
@@ -23,28 +23,30 @@ public class AlipayOpenSpOperationQrcodeQueryModel extends AlipayObject {
 
 	/**
 	 * 支付宝登录账号。通常为手机号或者邮箱。
-若代运营商户为直连才需要填，merchant_no和alipay_account不能同时为空，优先取merchant_no。
-若代运营商户为间连，该字段无需填写。
+若被代运营者是间连商户，该字段无需填写。
+若为直连商户，则 merchant_no 和 alipay_account 不能同时为空，都有值优先取 merchant_no。
 	 */
 	@ApiField("alipay_account")
 	private String alipayAccount;
 
 	/**
-	 * 支付宝商户号。间直连商户都支持，特别注意仅支持2088开头的间连商户。若被代运营者是间连商户，则merchant_no必填；若为直连商户，则merchant_no和alipay_account不能同时为空，都有值优先取merchant_no。
+	 * 支付宝商户号。注意仅支持 2088 开头的间连商户。
+若被代运营者是间连商户，则 merchant_no 必填；
+若为直连商户，则 merchant_no 和 alipay_account 不能同时为空，都有值优先取 merchant_no。
 	 */
 	@ApiField("merchant_no")
 	private String merchantNo;
 
 	/**
-	 * 代运营操作类型。取值如下
-ACCOUNT_BIND：账号绑定；仅对于间连商户
-OPERATION_AUTH：代运营授权。支持间直连商户
+	 * 代运营操作类型。取值如下：
+* ACCOUNT_BIND：账号绑定，仅支持间连商户。
+* OPERATION_AUTH：代运营授权，支持间连、直连商户。
 	 */
 	@ApiField("operate_type")
 	private String operateType;
 
 	/**
-	 * 外部操作流水。每次操作需要确保唯一。
+	 * 外部操作流水，由服务商自定义，需确保每次操作唯一。仅支持数字、字母、下划线组合。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

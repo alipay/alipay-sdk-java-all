@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境汇款查询收款人信息
  *
  * @author auto create
- * @since 1.0, 2020-03-05 15:08:59
+ * @since 1.0, 2021-03-03 19:53:40
  */
 public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3666527911751121193L;
+	private static final long serialVersionUID = 3394974157263418521L;
 
 	/**
 	 * 相对于汇率的基准货币
@@ -50,10 +50,34 @@ public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 	private String receiveCurrency;
 
 	/**
+	 * 用户的名，拼音
+	 */
+	@ApiField("receiver_first_name")
+	private String receiverFirstName;
+
+	/**
+	 * 用户的全名拼音
+	 */
+	@ApiField("receiver_full_name")
+	private String receiverFullName;
+
+	/**
+	 * 用户的姓，拼音
+	 */
+	@ApiField("receiver_last_name")
+	private String receiverLastName;
+
+	/**
 	 * 接收端的ID
 	 */
 	@ApiField("receiver_mid")
 	private String receiverMid;
+
+	/**
+	 * 用户中间的名字
+	 */
+	@ApiField("receiver_middle_name")
+	private String receiverMiddleName;
 
 	/**
 	 * 汇款用途
@@ -139,11 +163,39 @@ public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 		this.receiveCurrency = receiveCurrency;
 	}
 
+	public String getReceiverFirstName() {
+		return this.receiverFirstName;
+	}
+	public void setReceiverFirstName(String receiverFirstName) {
+		this.receiverFirstName = receiverFirstName;
+	}
+
+	public String getReceiverFullName() {
+		return this.receiverFullName;
+	}
+	public void setReceiverFullName(String receiverFullName) {
+		this.receiverFullName = receiverFullName;
+	}
+
+	public String getReceiverLastName() {
+		return this.receiverLastName;
+	}
+	public void setReceiverLastName(String receiverLastName) {
+		this.receiverLastName = receiverLastName;
+	}
+
 	public String getReceiverMid() {
 		return this.receiverMid;
 	}
 	public void setReceiverMid(String receiverMid) {
 		this.receiverMid = receiverMid;
+	}
+
+	public String getReceiverMiddleName() {
+		return this.receiverMiddleName;
+	}
+	public void setReceiverMiddleName(String receiverMiddleName) {
+		this.receiverMiddleName = receiverMiddleName;
 	}
 
 	public String getRemitPurpose() {

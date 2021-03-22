@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝商户券领取
  *
  * @author auto create
- * @since 1.0, 2021-01-25 11:45:18
+ * @since 1.0, 2021-02-02 13:57:45
  */
 public class AlipayMarketingCampaignUserVoucherReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5672749797667554772L;
+	private static final long serialVersionUID = 2812769457848446137L;
 
 	/**
 	 * 活动id
@@ -23,7 +23,14 @@ public class AlipayMarketingCampaignUserVoucherReceiveModel extends AlipayObject
 	private String activityId;
 
 	/**
+	 * 外部业务号，是否传入由业务场景决定， 如果传入前缀需要带入ISV信息
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
+
+	/**
 	 * 场景码：默认(DEFAULT)
+场景码与业务类型相关，接入时候请务必和支付宝技术对接人确认。需要传入特定业务场景的场景码
 	 */
 	@ApiListField("scene_code")
 	@ApiField("string")
@@ -34,6 +41,13 @@ public class AlipayMarketingCampaignUserVoucherReceiveModel extends AlipayObject
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public List<String> getSceneCode() {

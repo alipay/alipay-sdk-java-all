@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁预算DTO
  *
  * @author auto create
- * @since 1.0, 2020-08-31 10:29:46
+ * @since 1.0, 2021-03-11 14:53:25
  */
 public class BizBudgetDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4392299156187594844L;
+	private static final long serialVersionUID = 8594885679148147782L;
+
+	/**
+	 * 方案剩余可用金额
+	 */
+	@ApiField("available_amount")
+	private String availableAmount;
 
 	/**
 	 * 预算业务申请信息
@@ -35,6 +41,19 @@ public class BizBudgetDTO extends AlipayObject {
 	@ApiField("biz_budget_name")
 	private String bizBudgetName;
 
+	/**
+	 * 金额币种
+	 */
+	@ApiField("currency")
+	private String currency;
+
+	public String getAvailableAmount() {
+		return this.availableAmount;
+	}
+	public void setAvailableAmount(String availableAmount) {
+		this.availableAmount = availableAmount;
+	}
+
 	public List<PurchaseApplyInfoDTO> getBizApplyInfo() {
 		return this.bizApplyInfo;
 	}
@@ -54,6 +73,13 @@ public class BizBudgetDTO extends AlipayObject {
 	}
 	public void setBizBudgetName(String bizBudgetName) {
 		this.bizBudgetName = bizBudgetName;
+	}
+
+	public String getCurrency() {
+		return this.currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT设备-结果页-展位查询
  *
  * @author auto create
- * @since 1.0, 2021-01-21 10:35:49
+ * @since 1.0, 2021-02-08 13:35:19
  */
 public class AlipayMarketingIotBoothQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5442765957774583735L;
+	private static final long serialVersionUID = 8689498283871925747L;
 
 	/**
 	 * 客户端app信息，设备信息及sdk版本等信息加密后数据
@@ -36,6 +36,18 @@ public class AlipayMarketingIotBoothQueryModel extends AlipayObject {
 	 */
 	@ApiField("ftoken")
 	private String ftoken;
+
+	/**
+	 * 商家活动ID
+	 */
+	@ApiField("merchant_plan_id")
+	private String merchantPlanId;
+
+	/**
+	 * IoT展位码
+	 */
+	@ApiField("space_code")
+	private String spaceCode;
 
 	/**
 	 * 交易流水号
@@ -69,6 +81,20 @@ public class AlipayMarketingIotBoothQueryModel extends AlipayObject {
 	}
 	public void setFtoken(String ftoken) {
 		this.ftoken = ftoken;
+	}
+
+	public String getMerchantPlanId() {
+		return this.merchantPlanId;
+	}
+	public void setMerchantPlanId(String merchantPlanId) {
+		this.merchantPlanId = merchantPlanId;
+	}
+
+	public String getSpaceCode() {
+		return this.spaceCode;
+	}
+	public void setSpaceCode(String spaceCode) {
+		this.spaceCode = spaceCode;
 	}
 
 	public String getTradeNo() {

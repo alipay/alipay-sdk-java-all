@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.isvtoken.reim.apply response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-18 14:59:08
+ * @since 1.0, 2021-02-02 10:26:25
  */
 public class AlipayEbppInvoiceIsvtokenReimApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4685859996555778972L;
+	private static final long serialVersionUID = 7524541139532396239L;
 
 	/** 
 	 * 支付宝分配给报销软件的授权token，当前设置有效时间为20分钟

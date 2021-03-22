@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部流量投放前的rta查询
  *
  * @author auto create
- * @since 1.0, 2020-03-03 10:49:35
+ * @since 1.0, 2021-02-27 19:12:38
  */
 public class AlipayUserInviteRtaConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4534847943314435825L;
+	private static final long serialVersionUID = 1455853435683419211L;
 
 	/**
 	 * 加密类型，空表示不加密
@@ -20,19 +20,20 @@ public class AlipayUserInviteRtaConsultModel extends AlipayObject {
 	private String encryptType;
 
 	/**
-	 * (加密或明文的)手机号、imei或idfa等信息
+	 * 设备标识信息，包括IMEI，IDFA，OAID。
+注意：IMEI必须为MD5加密类型
 	 */
 	@ApiField("principal")
 	private String principal;
 
 	/**
-	 * 查询类型
+	 * 查询的设备类型（IMEI、IDFA、OAID）
 	 */
 	@ApiField("principal_type")
 	private String principalType;
 
 	/**
-	 * 人群mode，运营分配，映射一个人群或几个人群的组合
+	 * 咨询策略组，包含一个或多个目标咨询策略的组合，由运营分配
 	 */
 	@ApiField("target_crowd_package_key")
 	private String targetCrowdPackageKey;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链金融-自保理-创建供应商
  *
  * @author auto create
- * @since 1.0, 2019-08-13 13:52:56
+ * @since 1.0, 2021-03-11 20:12:59
  */
 public class MybankCreditSupplychainFactoringSupplierCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3118165928494995939L;
+	private static final long serialVersionUID = 4331475297683783387L;
 
 	/**
 	 * 采购商网商银行参与者会员ID

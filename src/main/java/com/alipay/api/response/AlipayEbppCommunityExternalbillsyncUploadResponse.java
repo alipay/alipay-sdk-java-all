@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.externalbillsync.upload response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-14 13:37:28
+ * @since 1.0, 2021-02-22 09:50:15
  */
 public class AlipayEbppCommunityExternalbillsyncUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2798832161411471371L;
+	private static final long serialVersionUID = 5618972742133279549L;
 
 	/** 
 	 * 失败总数
@@ -24,7 +24,7 @@ public class AlipayEbppCommunityExternalbillsyncUploadResponse extends AlipayRes
 	private String failCount;
 
 	/** 
-	 * 失败列表，用于告知失败账单号和原有
+	 * 失败列表，用于告知失败账单号和原因
 	 */
 	@ApiListField("fail_external_sync")
 	@ApiField("fail_external_sync")

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户秩序咨询
  *
  * @author auto create
- * @since 1.0, 2020-08-25 20:45:02
+ * @since 1.0, 2021-02-18 15:27:49
  */
 public class AlipayUserAccountOrderConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3646699318839373255L;
+	private static final long serialVersionUID = 1116578851123681761L;
 
 	/**
 	 * 集团havana ID

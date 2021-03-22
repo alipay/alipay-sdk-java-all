@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.follow.create request
  * 
  * @author auto create
- * @since 1.0, 2020-03-18 14:15:10
+ * @since 1.0, 2021-03-10 17:26:22
  */
 public class AlipayOpenPublicFollowCreateRequest implements AlipayRequest<AlipayOpenPublicFollowCreateResponse> {
 

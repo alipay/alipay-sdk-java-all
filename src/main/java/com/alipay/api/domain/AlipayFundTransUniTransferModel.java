@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5894931792954779336L;
+	private static final long serialVersionUID = 4754615715762366542L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下：
@@ -47,7 +47,7 @@ sub_biz_scene 子业务场景，红包业务必传，取值REDPACKET，C2C现金
 	private String originalOrderId;
 
 	/**
-	 * 商户端的唯一订单号，对于同一笔转账请求，商户需保证该订单号唯一。
+	 * 商家侧唯一订单号，由商家自定义。对于不同转账请求，商家需保证该订单号在自身系统唯一。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicPersonalizedExtensionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4735299194391736236L;
+	private static final long serialVersionUID = 1253236514443335576L;
 
 	/**
 	 * 扩展区列表，最大条数为3
@@ -24,7 +24,7 @@ public class AlipayOpenPublicPersonalizedExtensionCreateModel extends AlipayObje
 	private List<ExtensionArea> areas;
 
 	/**
-	 * 标签规则，目前限定只能传入1条，在扩展区上线后，满足该标签规则的用户进入生活号首页，将看到该套扩展区。
+	 * 标签规则，目前限定只能传入1条，在扩展区上线后，满足该标签规则的用户进入生活号首页，将看到该套扩展区。生成标签及打标详情参见<a href="https://opendocs.alipay.com/fw/api/106877">标签管理</a>。
 	 */
 	@ApiListField("label_rule")
 	@ApiField("label_rule")

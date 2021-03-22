@@ -14,16 +14,16 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicMatchuserLabelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6794355184336214922L;
+	private static final long serialVersionUID = 1261313443392935738L;
 
 	/**
-	 * 标签id，调用创建标签接口会返回label_id
+	 * 标签 id，只支持生活号自定义标签。通过 <a href="https://opendocs.alipay.com/apis/api_6/alipay.open.public.life.label.create">alipay.open.public.life.label.create</a>(创建标签接口)创建自定义标签后获取。
 	 */
 	@ApiField("label_id")
 	private String labelId;
 
 	/**
-	 * 标签值，由开发者自主指定，标签值类型要满足创建标签接口中data_type参数的限定。
+	 * 标签值，由开发者自主指定，标签值类型要满足 <a href="https://opendocs.alipay.com/apis/api_6/alipay.open.public.life.label.create">alipay.open.public.life.label.create</a>(创建标签接口)中data_type参数的限定。
 	 */
 	@ApiField("label_value")
 	private String labelValue;

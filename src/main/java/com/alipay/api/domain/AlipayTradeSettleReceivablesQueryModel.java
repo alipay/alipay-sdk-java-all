@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通微账余额查询
  *
  * @author auto create
- * @since 1.0, 2020-04-20 15:39:11
+ * @since 1.0, 2021-03-04 17:28:22
  */
 public class AlipayTradeSettleReceivablesQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2195373437562931873L;
+	private static final long serialVersionUID = 6177381683722571924L;
 
 	/**
 	 * 收单产品码，商家和支付宝签约的产品码

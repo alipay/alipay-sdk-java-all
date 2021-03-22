@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 异步退款受理接口
  *
  * @author auto create
- * @since 1.0, 2018-08-15 17:23:36
+ * @since 1.0, 2021-03-08 16:25:50
  */
 public class AlipayTradeRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1636682361636869532L;
+	private static final long serialVersionUID = 8873399443311769345L;
 
 	/**
 	 * 商户传入业务信息，具体值要和支付宝约定，格式为json格式。
@@ -43,6 +46,14 @@ public class AlipayTradeRefundApplyModel extends AlipayObject {
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
+
+	/**
+	 * 退款资金明细
+注：目前只有SETTLE_OFFLINE_GROUP产品的退款支持该字段
+	 */
+	@ApiListField("refund_fund_details")
+	@ApiField("open_api_refund_fund_detail_pojo")
+	private List<OpenApiRefundFundDetailPojo> refundFundDetails;
 
 	/**
 	 * 退款的原因说明
@@ -101,6 +112,13 @@ public class AlipayTradeRefundApplyModel extends AlipayObject {
 	}
 	public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
+	}
+
+	public List<OpenApiRefundFundDetailPojo> getRefundFundDetails() {
+		return this.refundFundDetails;
+	}
+	public void setRefundFundDetails(List<OpenApiRefundFundDetailPojo> refundFundDetails) {
+		this.refundFundDetails = refundFundDetails;
 	}
 
 	public String getRefundReason() {

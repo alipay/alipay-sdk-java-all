@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小区服务申请上线接口
  *
  * @author auto create
- * @since 1.0, 2020-12-24 10:40:07
+ * @since 1.0, 2021-02-22 09:49:24
  */
 public class AlipayEbppCommunityServiceOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1873243487612664989L;
+	private static final long serialVersionUID = 4221658879764867713L;
 
 	/**
 	 * 小区短名

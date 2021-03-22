@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniIndividualBusinessCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7723381874525239774L;
+	private static final long serialVersionUID = 4737857823942897243L;
 
 	/** 
 	 * 个体工商户认证结果，true代表认证成功，false代表认证失败

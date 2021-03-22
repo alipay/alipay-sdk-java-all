@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceDetailOutputQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7243585124197631754L;
+	private static final long serialVersionUID = 3399989836534824628L;
 
 	/**
 	 * 发票代码
@@ -28,8 +28,7 @@ public class AlipayEbppInvoiceDetailOutputQueryModel extends AlipayObject {
 	private String invoiceNo;
 
 	/**
-	 * 获取发票明细应用场景
-固定值：INVOICE_EXPENSE-发票报销
+	 * 获取发票明细应用场景。固定为 INVOICE_EXPENSE  表示发票报销。
 	 */
 	@ApiField("scene")
 	private String scene;
@@ -41,7 +40,7 @@ public class AlipayEbppInvoiceDetailOutputQueryModel extends AlipayObject {
 	private Boolean skipExpenseProgressSync;
 
 	/**
-	 * 支付宝用户id
+	 * 发票归属用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
 	 */
 	@ApiField("user_id")
 	private String userId;

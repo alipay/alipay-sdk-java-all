@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7181732596958515185L;
+	private static final long serialVersionUID = 1511636578699443765L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。
@@ -44,7 +44,10 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private List<ShopBusinessTime> businessTime;
 
 	/**
-	 * 营业执照图片 id 即通过 https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload 接口上传图片后得到的 image_id。
+	 * 营业执照图片，需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
+注意：
+* 蚂蚁门店管理场景可选。
+* 间连 M1、M2商家创建门店，必须传入营业执照图片。
 	 */
 	@ApiField("cert_image")
 	private String certImage;
@@ -57,7 +60,10 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String certName;
 
 	/**
-	 * 证件号码。请填写店铺营业执照号。
+	 * 证件号码，请填写店铺营业执照号。
+注意：
+* 蚂蚁门店管理场景可选。
+* 间连 M1、M2商家创建门店，必须传入营业执照号。
 	 */
 	@ApiField("cert_no")
 	private String certNo;
@@ -102,19 +108,20 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String ipRoleId;
 
 	/**
-	 * 法人身份证号。
+	 * 法人身份证号。蚂蚁门店管理场景可选。
 	 */
 	@ApiField("legal_cert_no")
 	private String legalCertNo;
 
 	/**
-	 * 法人名称。
+	 * 法人名称。蚂蚁门店管理场景可选。
 	 */
 	@ApiField("legal_name")
 	private String legalName;
 
 	/**
-	 * 营业执照授权函。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
+	 * 营业执照授权函。需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
+蚂蚁门店管理场景可选。
 	 */
 	@ApiField("license_auth_letter_image")
 	private String licenseAuthLetterImage;
@@ -126,7 +133,8 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 门头照 id，即通过 https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload 接口上传图片后得到的 image_id。
+	 * 门头照 id，需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
+蚂蚁门店管理场景可选。
 	 */
 	@ApiListField("out_door_images")
 	@ApiField("string")
@@ -146,13 +154,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String scene;
 
 	/**
-	 * 结算支付宝账号的登录号，需传入小程序归属账号。若需增加收款账号，可在创建门店后登录 b.alipay.com 账户中心 > 经营信息 > 门店管理 中选择对应门店选择 更多 > 编辑 > 新增收款账号。 
+	 * 结算支付宝账号的登录号，需传入小程序归属账号。若需增加收款账号，可在创建门店后登录<a href="https://b.alipay.com/index2.htm">商家中心</a>  ，在 账户中心 > 经营信息 > 门店管理 中选择对应门店选择 更多 > 编辑 > 新增收款账号。 
 	 */
 	@ApiField("settle_alipay_logon_id")
 	private String settleAlipayLogonId;
 
 	/**
-	 * 新版门店类目标准二级类目code。类目标准及与原类目映射关系参见表格 https://ur.alipay.com/2qv1f9
+	 * 新版门店类目标准二级类目code。类目标准及与原类目映射关系参见 <a href="https://ur.alipay.com/4cmn0n">支付宝门店类目-最新</a> 表格。
 	 */
 	@ApiField("shop_category")
 	private String shopCategory;
