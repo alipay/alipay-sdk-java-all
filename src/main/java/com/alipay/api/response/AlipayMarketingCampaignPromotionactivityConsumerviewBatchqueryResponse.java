@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.promotionactivity.consumerview.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-22 15:57:32
+ * @since 1.0, 2021-03-23 11:45:01
  */
 public class AlipayMarketingCampaignPromotionactivityConsumerviewBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3463923979143976883L;
+	private static final long serialVersionUID = 3264862384713874831L;
 
 	/** 
 	 * 可领券的活动列表

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告暂停API
  *
  * @author auto create
- * @since 1.0, 2019-05-13 15:54:17
+ * @since 1.0, 2021-03-23 19:41:37
  */
 public class AlipayDataDataserviceAdOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1411248747541288315L;
+	private static final long serialVersionUID = 1496688279231858967L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -23,7 +23,7 @@ public class AlipayDataDataserviceAdOfflineModel extends AlipayObject {
 	private String bizToken;
 
 	/**
-	 * 操作的广告层级类型，如计划(plan)，单元(group)，创意 （creative）
+	 * 操作的广告层级类型，如计划(plan)，单元(group)，创意 （creative），分组标识（batchTag），店铺标识（store）
 	 */
 	@ApiField("op_type")
 	private String opType;

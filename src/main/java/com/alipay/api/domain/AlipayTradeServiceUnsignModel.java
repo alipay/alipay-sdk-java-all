@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大额无限付产品个人解约接口
  *
  * @author auto create
- * @since 1.0, 2021-01-07 19:51:35
+ * @since 1.0, 2021-03-23 11:23:42
  */
 public class AlipayTradeServiceUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6528525611373497459L;
+	private static final long serialVersionUID = 4668518838716763977L;
 
 	/**
 	 * 用户的支付宝id

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2889155416141164159L;
+	private static final long serialVersionUID = 2727325562735918312L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -111,7 +111,7 @@ HUABEI_FUWU：花呗服务（只有需要花呗服务时，才需要加入该标
 	private List<String> serviceLabelList;
 
 	/**
-	 * 会员卡上架门店id（支付宝门店id），既发放会员卡的商家门店id
+	 * 会员卡上架门店id（支付宝门店id），即发放会员卡的商家门店id
 	 */
 	@ApiListField("shop_ids")
 	@ApiField("string")

@@ -13,16 +13,18 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeTicketTicketcodeDelayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4848818666916285225L;
+	private static final long serialVersionUID = 7794148735493963338L;
 
 	/**
-	 * 凭证码类型,INTERNAL_CODE(内部凭证码),EXTERNAL_CODE(外部凭证码),默认INTERNAL_CODE,外部券场景必填
+	 * 券码类型。默认INTERNAL_CODE。枚举值如下：
+* INTERNAL_CODE：券码。
+* EXTERNAL_CODE：外部券码。
 	 */
 	@ApiField("code_type")
 	private String codeType;
 
 	/**
-	 * 延至日期
+	 * 延至日期，时间格式为 yyyyMMdd HHmmss。
 	 */
 	@ApiField("end_date")
 	private Date endDate;
@@ -34,7 +36,7 @@ public class KoubeiTradeTicketTicketcodeDelayModel extends AlipayObject {
 	private String orderNo;
 
 	/**
-	 * 请求id，唯一标识一次请求
+	 * 请求 id，唯一标识一次请求，由商家自定义。
 	 */
 	@ApiField("request_id")
 	private String requestId;

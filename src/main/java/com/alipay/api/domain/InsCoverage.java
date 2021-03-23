@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsCoverage extends AlipayObject {
 
-	private static final long serialVersionUID = 7351988234451466257L;
+	private static final long serialVersionUID = 8674269396989918749L;
 
 	/**
 	 * 险种名称

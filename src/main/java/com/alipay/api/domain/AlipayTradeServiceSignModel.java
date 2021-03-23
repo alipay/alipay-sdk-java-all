@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大额无限付产品个人签约
  *
  * @author auto create
- * @since 1.0, 2021-01-07 19:52:09
+ * @since 1.0, 2021-03-23 11:23:33
  */
 public class AlipayTradeServiceSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8461485831592587724L;
+	private static final long serialVersionUID = 7879983229562598471L;
 
 	/**
 	 * 用户发生协议签约的设备终端标识，支付宝分配，目前支持PC/APP

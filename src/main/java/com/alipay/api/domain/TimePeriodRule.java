@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 时间规则
  *
  * @author auto create
- * @since 1.0, 2021-01-21 09:55:48
+ * @since 1.0, 2021-03-23 11:46:14
  */
 public class TimePeriodRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3481952214139933576L;
+	private static final long serialVersionUID = 4335243168897753112L;
 
 	/**
 	 * 结束时间， 格式HH:mm:ss

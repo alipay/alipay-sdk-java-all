@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.service.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-07 19:52:33
+ * @since 1.0, 2021-03-23 11:22:55
  */
 public class AlipayTradeServiceAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1195722792176526277L;
+	private static final long serialVersionUID = 8679455946367724353L;
 
 	/** 
 	 * 无限付产品账户卡信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IntelligentGuideTradeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8642779181333459794L;
+	private static final long serialVersionUID = 2874758335549737761L;
 
 	/**
 	 * 非必填，商户会员的会员卡类型

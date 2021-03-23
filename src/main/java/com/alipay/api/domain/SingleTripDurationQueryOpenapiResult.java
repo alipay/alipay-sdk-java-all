@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SingleTripDurationQueryOpenapiResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2573959914994186426L;
+	private static final long serialVersionUID = 5786749337993645239L;
 
 	/**
 	 * 线路方向（UP-上行，DOWN-下行）

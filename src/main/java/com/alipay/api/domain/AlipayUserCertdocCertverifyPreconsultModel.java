@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCertdocCertverifyPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5126717593499816791L;
+	private static final long serialVersionUID = 6547477391861138712L;
 
 	/**
 	 * 证件号
@@ -20,8 +20,7 @@ public class AlipayUserCertdocCertverifyPreconsultModel extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 证件类型，例如：
-IDENTITY_CARD — 身份证
+	 * 证件类型。暂仅支持 IDENTITY_CARD （身份证）。
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -33,7 +32,7 @@ IDENTITY_CARD — 身份证
 	private String extInfo;
 
 	/**
-	 * 登录名
+	 * 支付宝登录名
 	 */
 	@ApiField("logon_id")
 	private String logonId;
@@ -45,7 +44,7 @@ IDENTITY_CARD — 身份证
 	private String mobile;
 
 	/**
-	 * 姓名
+	 * 真实姓名
 	 */
 	@ApiField("user_name")
 	private String userName;

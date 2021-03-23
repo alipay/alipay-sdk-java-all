@@ -10,13 +10,16 @@ import java.util.List;
 import org.dom4j.Element;
 
 import com.alipay.service.schema.exception.ServiceSchemaException;
+import com.alipay.service.schema.model.enums.AttrTypeEnum;
 import com.alipay.service.schema.model.enums.SchemaErrorEnum;
 import com.alipay.service.schema.util.StringUtil;
 import com.alipay.service.schema.util.XmlUtils;
 
 /**
- * @author junying
- * @version : MultiComplexAttribute.java, v 0.1 2021年03月17日 10:06 下午 junying Exp $
+ *多组符合属性
+ *
+ * @author hongbi.wang
+ * @version $Id: MultiComplexAttribute.java, v 0.1 2021年02月26日 5:48 PM hongbi.wang Exp $
  */
 public class MultiComplexAttribute extends Attribute {
 
@@ -71,6 +74,32 @@ public class MultiComplexAttribute extends Attribute {
         return attrNode;
     }
 
+    public ComplexAttribute cloneAttribute() throws ServiceSchemaException {
+        if (this.getAttributes() == null || this.getAttributes().size() <= 0) {
+            throw new ServiceSchemaException(SchemaErrorEnum.SYSTEM_ERROR, this.getId());
+        }
+        ComplexAttribute complexAttribute = this.getAttributes().get(0);
+        List<Attribute> newAttributes = new ArrayList<Attribute>();
+        for (Attribute attribute : complexAttribute.getAttributes()) {
+            Attribute newAttribute = AttrTypeEnum.createAttribute(attribute.getType());
+            newAttribute.setId(attribute.getId());
+            newAttribute.setName(attribute.getName());
+            newAttribute.setValueType(attribute.getValueType());
+            newAttribute.setOptions(attribute.getOptions());
+            newAttribute.setRules(attribute.getRules());
+            newAttributes.add(newAttribute);
+        }
+        ComplexAttribute newComplexAttribute = new ComplexAttribute();
+        newComplexAttribute.setId(complexAttribute.getId());
+        newComplexAttribute.setName(complexAttribute.getName());
+        newComplexAttribute.setType(complexAttribute.getType());
+        newComplexAttribute.setValueType(complexAttribute.getValueType());
+        newComplexAttribute.setRules(complexAttribute.getRules());
+        newComplexAttribute.setOptions(complexAttribute.getOptions());
+        newComplexAttribute.setAttributes(newAttributes);
+        return newComplexAttribute;
+    }
+
     /**
      * Getter method for property <tt>attributes</tt>.
      *
@@ -83,7 +112,7 @@ public class MultiComplexAttribute extends Attribute {
     /**
      * Setter method for property <tt>attributes</tt>.
      *
-     * @param attributes value to be assigned to property attributes
+     * @param attributes  value to be assigned to property attributes
      */
     public void setAttributes(List<ComplexAttribute> attributes) {
         this.attributes = attributes;

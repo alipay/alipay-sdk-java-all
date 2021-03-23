@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AgreementSignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8692769785452392347L;
+	private static final long serialVersionUID = 7764196462914255287L;
 
 	/**
 	 * 商户在芝麻端申请的appId

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AddTagResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3142925168354773827L;
+	private static final long serialVersionUID = 4514573632337471432L;
 
 	/**
 	 * 批量打标接口返回值

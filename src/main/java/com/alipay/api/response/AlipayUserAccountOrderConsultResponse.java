@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.order.consult response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-19 17:17:32
+ * @since 1.0, 2021-03-22 20:50:17
  */
 public class AlipayUserAccountOrderConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4473297782279523876L;
+	private static final long serialVersionUID = 8659782399755842587L;
 
 	/** 
 	 * 结果码

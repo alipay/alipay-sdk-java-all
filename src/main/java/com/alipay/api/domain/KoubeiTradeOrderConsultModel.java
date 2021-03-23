@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiTradeOrderConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7339832291954367596L;
+	private static final long serialVersionUID = 6371486576667441817L;
 
 	/**
 	 * 用户设备信息,通过钱包容器提供的JSAPI接口获取，
@@ -68,7 +68,7 @@ AlipayJSBridge.call('getO2ODeviceToken', {
 	private String undiscountableAmount;
 
 	/**
-	 * 支付宝用户Id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+	 * 支付宝用户 Id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
 	 */
 	@ApiField("user_id")
 	private String userId;

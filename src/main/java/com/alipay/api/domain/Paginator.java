@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页器
  *
  * @author auto create
- * @since 1.0, 2021-01-21 09:55:37
+ * @since 1.0, 2021-03-23 11:45:30
  */
 public class Paginator extends AlipayObject {
 
-	private static final long serialVersionUID = 2644588775275838659L;
+	private static final long serialVersionUID = 7887512766875162677L;
 
 	/**
 	 * 页码

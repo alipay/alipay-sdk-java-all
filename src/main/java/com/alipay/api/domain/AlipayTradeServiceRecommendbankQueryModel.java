@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询推荐银行渠道
  *
  * @author auto create
- * @since 1.0, 2021-01-07 19:51:57
+ * @since 1.0, 2021-03-23 11:23:09
  */
 public class AlipayTradeServiceRecommendbankQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2243877123795354795L;
+	private static final long serialVersionUID = 1157798676974782716L;
 
 	/**
 	 * 用户支付宝UID

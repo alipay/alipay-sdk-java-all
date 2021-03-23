@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AdvanceOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8884296756979599199L;
+	private static final long serialVersionUID = 5829357982593531976L;
 
 	/**
 	 * 预订单编号

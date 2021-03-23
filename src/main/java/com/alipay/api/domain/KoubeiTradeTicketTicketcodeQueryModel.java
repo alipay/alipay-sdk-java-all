@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeTicketTicketcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6415327595148178762L;
+	private static final long serialVersionUID = 7681141128284315763L;
 
 	/**
 	 * 口碑门店id
@@ -20,7 +20,7 @@ public class KoubeiTradeTicketTicketcodeQueryModel extends AlipayObject {
 	private String shopId;
 
 	/**
-	 * 12位的券码，券码为纯数字，且唯一不重复
+	 * 券码值，12位纯数字券码，且唯一不重复。
 	 */
 	@ApiField("ticket_code")
 	private String ticketCode;

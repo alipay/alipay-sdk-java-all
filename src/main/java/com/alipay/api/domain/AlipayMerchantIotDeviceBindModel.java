@@ -11,16 +11,19 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantIotDeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4885133294552616617L;
+	private static final long serialVersionUID = 4443728499421526492L;
 
 	/**
-	 * 设备 ID ，device_id_type 为 ID 时填写。
+	 * 设备 ID ，仅device_id_type 为 ID 时填写。
 	 */
 	@ApiField("biz_tid")
 	private String bizTid;
 
 	/**
-	 * 可选方式 [ID,SN]。ID-使用biztid作为设备唯一识别标识；SN-使用supplier_id、device_sn联合作为设备唯一识别标识。由于不同机型的supplier_id不同，推荐使用 ID 。
+	 * 可选方式。枚举支持：
+*  ID：表示使用 biztid 作为设备唯一识别标识，
+*  SN：表示使用 supplier_id、device_sn联合作为设备唯一识别标识。
+注意：由于不同机型的supplier_id不同，推荐使用 ID 。
 	 */
 	@ApiField("device_id_type")
 	private String deviceIdType;
@@ -32,7 +35,9 @@ public class AlipayMerchantIotDeviceBindModel extends AlipayObject {
 	private String deviceSn;
 
 	/**
-	 * 商户类型，直连商户填写direct，间连商户填写indirect
+	 * 商户类型。枚举支持：
+*  direct：直连商户；
+*  indirect：间连商户。
 	 */
 	@ApiField("merchant_type")
 	private String merchantType;

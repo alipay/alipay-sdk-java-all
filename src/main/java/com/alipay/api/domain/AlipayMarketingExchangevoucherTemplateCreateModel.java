@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingExchangevoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2839113137778653254L;
+	private static final long serialVersionUID = 6725446758167888662L;
 
 	/**
 	 * 品牌名。用于在卡包中展示，长度不能超过12个字符。
@@ -33,7 +33,7 @@ public class AlipayMarketingExchangevoucherTemplateCreateModel extends AlipayObj
 	private String notifyUri;
 
 	/**
-	 * 外部业务单号。用作幂等控制。同一个pid下相同的外部业务单号作唯一键。
+	 * 外部业务单号，用作幂等控制，由商家自定义，需保证同一pid下唯一。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -81,7 +81,7 @@ public class AlipayMarketingExchangevoucherTemplateCreateModel extends AlipayObj
 	private Long voucherQuantity;
 
 	/**
-	 * 券类型，目前仅支持兑换券，即：EXCHANGE_VOUCHER
+	 * 券类型，目前仅支持 EXCHANGE_VOUCHER（兑换券）。
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;

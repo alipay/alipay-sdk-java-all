@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicFollowBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5229949442262495877L;
+	private static final long serialVersionUID = 6332998714512143381L;
 
 	/**
 	 * 当关注者数量超过10000时使用，本次拉取数据中第一个用户的userId，从上次接口调用返回值中获取。第一次调用置空

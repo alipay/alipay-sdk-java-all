@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardBenefitModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6248145916367928753L;
+	private static final long serialVersionUID = 4658149935189435288L;
 
 	/**
-	 * 权益ID
+	 * 权益ID，通过 <a href="https://opendocs.alipay.com/apis/api_5/alipay.marketing.card.benefit.create">alipay.marketing.card.benefit.create</a>(会员卡模板外部权益创建)接口创建获取。
 	 */
 	@ApiField("benefit_id")
 	private String benefitId;

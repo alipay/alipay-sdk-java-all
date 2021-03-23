@@ -11,17 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataTradeHabbitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1754261153719464976L;
+	private static final long serialVersionUID = 7112272638971685586L;
 
 	/**
-	 * 业务日期
+	 * 业务日期，格式：yyyyMMdd。
 	 */
 	@ApiField("biz_date")
 	private String bizDate;
 
 	/**
-	 * 门店列表,门店用逗号分割，最多支持10个门店。
-不填时,则为商户维度汇总数据
+	 * 门店列表，多个门店用 ',' 分割，最多支持 10 个门店。不填时，默认为商户维度汇总数据。
 	 */
 	@ApiField("store_ids")
 	private String storeIds;

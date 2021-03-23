@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingToolFengdieTemplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4649629192379364251L;
+	private static final long serialVersionUID = 6566279614737169537L;
 
 	/**
-	 * 当前页数，默认为1
+	 * 当前页数，不填本参数默认为 1。
 	 */
 	@ApiField("page_number")
 	private Long pageNumber;
 
 	/**
-	 * 每页记录数，不能超过50，默认为10
+	 * 查询结果每页记录数，最大不超过 50，不填本参数默认为 10。
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户秩序咨询
  *
  * @author auto create
- * @since 1.0, 2021-02-18 15:27:49
+ * @since 1.0, 2021-03-22 20:48:51
  */
 public class AlipayUserAccountOrderConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1116578851123681761L;
+	private static final long serialVersionUID = 3357785491575174196L;
+
+	/**
+	 * 与场景码相关的扩展参数
+	 */
+	@ApiField("ext_info")
+	private ConsultParams extInfo;
 
 	/**
 	 * 集团havana ID
@@ -30,6 +36,13 @@ public class AlipayUserAccountOrderConsultModel extends AlipayObject {
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
+
+	public ConsultParams getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(ConsultParams extInfo) {
+		this.extInfo = extInfo;
+	}
 
 	public String getHid() {
 		return this.hid;

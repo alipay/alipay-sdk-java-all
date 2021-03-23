@@ -11,16 +11,19 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignCashStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3614784168577189824L;
+	private static final long serialVersionUID = 8259755378711476112L;
 
 	/**
-	 * 修改后的活动状态, PAUSE或者READY或者CLOSED
+	 * 金活动修改后的状态。支持修改为：
+*PAUSE：活动暂停。
+*READY：活动开始。
+*CLOSED：活动结束。
 	 */
 	@ApiField("camp_status")
 	private String campStatus;
 
 	/**
-	 * 要修改的现金红包活动号
+	 * 现金活动号，通过<a href="https://opendocs.alipay.com/apis/api_5/alipay.marketing.campaign.cash.create">alipay.marketing.campaign.cash.create</a>(创建现金活动)接口创建现金活动获取。
 	 */
 	@ApiField("crowd_no")
 	private String crowdNo;

@@ -11,11 +11,15 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataDishdiagnoseBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8797317276546757124L;
+	private static final long serialVersionUID = 2866555547124181242L;
 
 	/**
-	 * 查询菜品类型：001是明星菜品，002是潜力菜品，003是其他菜品（除明星菜品和潜力菜品之外的其他一律作为其他菜品 编号为003）。
-2-	如果要查询所有的则传入999。具体的值可以通过koubei.marketing.data.dishdiagnosetype.batchquery来查询，同时会返回类型与说明
+	 * 查询菜品类型：
+*001：明星菜品；
+*002：潜力菜品；
+*003：其他菜品（除明星菜品和潜力菜品之外的其他一律作为其他菜品 编号为003）。
+*999：查询所有菜品9。
+说明：具体值可通过<a href="https://opendocs.alipay.com/apis/api_5/koubei.marketing.data.dishdiagnosetype.batchquery">koubei.marketing.data.dishdiagnosetype.batchquery</a>接口查询获得，同时此接口会返回类型及说明。
 	 */
 	@ApiField("item_diagnose_type")
 	private String itemDiagnoseType;
@@ -27,13 +31,14 @@ public class KoubeiMarketingDataDishdiagnoseBatchqueryModel extends AlipayObject
 	private Long pageNo;
 
 	/**
-	 * 每页大小，默认值50，同时page_size*page_no最多条数是300条，查询请注意。超过后不会再返回数据。
+	 * 每页大小，不填时默认值为 50。
+注意：page_size * page_no 最多为300条，超过后将不再返回数据。
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
 
 	/**
-	 * 查询数据时间,最新数据是昨天的。T-1的数据，最大保留30天,格式：YYYYMMDD。比如20170103
+	 * 查询数据时间，最新为 T-1 即上一日数据。最大保留30天，时间格式为：YYYYMMDD。如20170103。
 	 */
 	@ApiField("report_date")
 	private String reportDate;

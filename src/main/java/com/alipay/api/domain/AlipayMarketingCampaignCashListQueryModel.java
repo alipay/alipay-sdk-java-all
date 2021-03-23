@@ -11,18 +11,17 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignCashListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4749672673554682398L;
+	private static final long serialVersionUID = 8137174573439718554L;
 
 	/**
-	 * 要查询的活动状态,不填默认返回所有类型。
-可填:
-ALL:所有类型的活动
-CREATED: 已创建未打款
-PAID:已打款
-READY:活动已开始
-PAUSE:活动已暂停
-CLOSED:活动已结束
-SETTLE:活动已清算
+	 * 要查询的活动状态,不填默认为 ALL 返回所有类型。枚举支持:
+*ALL：所有类型的活动。
+*CREATED：已创建未打款。
+*PAID：已打款。
+*READY：活动已开始。
+*PAUSE：活动已暂停。
+*CLOSED：活动已结束。
+*SETTLE：活动已清算。
 	 */
 	@ApiField("camp_status")
 	private String campStatus;
@@ -34,7 +33,7 @@ SETTLE:活动已清算
 	private String pageIndex;
 
 	/**
-	 * 分页查询时每页返回的列表大小,最大为50
+	 * 分页查询时每页返回的列表大小，每页数据最大为 50。
 	 */
 	@ApiField("page_size")
 	private String pageSize;

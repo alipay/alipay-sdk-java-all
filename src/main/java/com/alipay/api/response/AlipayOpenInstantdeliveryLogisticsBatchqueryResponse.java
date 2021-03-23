@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.instantdelivery.logistics.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-26 20:20:13
+ * @since 1.0, 2021-03-22 20:19:15
  */
 public class AlipayOpenInstantdeliveryLogisticsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3251218959441582755L;
+	private static final long serialVersionUID = 8433959387922179297L;
 
 	/** 
 	 * 支持的即时配送公司列表

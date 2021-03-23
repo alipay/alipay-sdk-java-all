@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序生成推广二维码接口
  *
  * @author auto create
- * @since 1.0, 2019-09-06 14:23:25
+ * @since 1.0, 2021-03-23 19:10:24
  */
 public class AlipayOpenAppQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1496926558485774161L;
+	private static final long serialVersionUID = 1683251472284237568L;
 
 	/**
 	 * 对应的二维码描述

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金记账号的信息查询
  *
  * @author auto create
- * @since 1.0, 2020-10-14 09:45:00
+ * @since 1.0, 2021-03-22 19:14:16
  */
 public class AlipayFundAccountbookQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4888613727316374936L;
+	private static final long serialVersionUID = 7865627294795939916L;
 
 	/**
 	 * 记账账簿id
