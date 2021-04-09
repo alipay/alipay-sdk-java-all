@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.message.dynamicicondata.modify request
  * 
  * @author auto create
- * @since 1.0, 2020-10-16 16:25:12
+ * @since 1.0, 2021-03-25 13:47:34
  */
 public class AlipaySocialBaseMessageDynamicicondataModifyRequest implements AlipayRequest<AlipaySocialBaseMessageDynamicicondataModifyResponse> {
 

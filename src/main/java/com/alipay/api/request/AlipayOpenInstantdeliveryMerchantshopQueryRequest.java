@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.instantdelivery.merchantshop.query request
  * 
  * @author auto create
- * @since 1.0, 2021-02-03 12:15:20
+ * @since 1.0, 2021-04-06 10:43:29
  */
 public class AlipayOpenInstantdeliveryMerchantshopQueryRequest implements AlipayRequest<AlipayOpenInstantdeliveryMerchantshopQueryResponse> {
 

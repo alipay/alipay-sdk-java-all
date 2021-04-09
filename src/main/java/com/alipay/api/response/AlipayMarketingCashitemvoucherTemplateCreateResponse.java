@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.cashitemvoucher.template.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-22 15:22:36
+ * @since 1.0, 2021-03-26 14:52:19
  */
 public class AlipayMarketingCashitemvoucherTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1599554549912525771L;
+	private static final long serialVersionUID = 7226184695765754961L;
 
 	/** 
 	 * 模板支付确认链接

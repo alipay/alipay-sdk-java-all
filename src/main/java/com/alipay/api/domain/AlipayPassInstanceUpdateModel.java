@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass更新卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2019-08-08 19:59:41
+ * @since 1.0, 2021-03-31 17:07:14
  */
 public class AlipayPassInstanceUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3253568796238917698L;
+	private static final long serialVersionUID = 4441447753836694768L;
 
 	/**
 	 * 代理商代替商户发放卡券后，再代替商户更新卡券时，此值为商户的pid/appid
@@ -38,13 +38,19 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	private String tplParams;
 
 	/**
-	 * 核销码串值【当状态变更为USED时，建议传】。该值正常为模板中核销区域（Operation）对应的message值。
+	 * 支付宝用户ID，新接入商户必填，历史已接入商户请尽快补传
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	/**
+	 * 历史遗留，已废弃。当状态变更为USED时，建议传，该值正常为模板中核销区域（Operation）对应的message值。
 	 */
 	@ApiField("verify_code")
 	private String verifyCode;
 
 	/**
-	 * 核销方式，该值正常为模板中核销区域（Operation）对应的format值。verify_code和verify_type需同时传入。
+	 * 历史遗留，已废弃。核销方式，该值正常为模板中核销区域（Operation）对应的format值。verify_code和verify_type需同时传入。
 	 */
 	@ApiField("verify_type")
 	private String verifyType;
@@ -75,6 +81,13 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	}
 	public void setTplParams(String tplParams) {
 		this.tplParams = tplParams;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 	public String getVerifyCode() {

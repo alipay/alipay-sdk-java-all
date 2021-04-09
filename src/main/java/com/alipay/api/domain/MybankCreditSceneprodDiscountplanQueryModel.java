@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融贴息方案查询接口
  *
  * @author auto create
- * @since 1.0, 2020-12-22 19:21:40
+ * @since 1.0, 2021-03-29 10:43:52
  */
 public class MybankCreditSceneprodDiscountplanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2466323135337583664L;
+	private static final long serialVersionUID = 7679473691448284437L;
 
 	/**
 	 * 合作机构编码，由网商分配

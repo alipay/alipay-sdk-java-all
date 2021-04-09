@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小票优惠信息
  *
  * @author auto create
- * @since 1.0, 2020-11-20 17:01:49
+ * @since 1.0, 2021-03-31 11:19:08
  */
 public class ReceiptDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2163371624724687221L;
+	private static final long serialVersionUID = 1292988953248799633L;
 
 	/**
 	 * 优惠金额，单位分

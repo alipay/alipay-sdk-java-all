@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.service.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-18 11:51:22
+ * @since 1.0, 2021-04-09 11:35:19
  */
 public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2278596333249196824L;
+	private static final long serialVersionUID = 5466728339517622627L;
 
 	/** 
 	 * 驳回理由
@@ -23,8 +23,8 @@ public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 	/** 
 	 * 服务id
 	 */
-	@ApiField("service_id")
-	private String serviceId;
+	@ApiField("service_code")
+	private String serviceCode;
 
 	/** 
 	 * 服务描述xml格式
@@ -33,7 +33,7 @@ public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 	private String serviceXml;
 
 	/** 
-	 * 服务状态
+	 * 服务状态，EDITING(编辑中)/AUDITING(审核中)/AUDIT_REJECT(审核驳回)/PROMOTION(可推广)/STOP_PROMOTION(停止推广)/INVALID(失效)/PUNISHED(处罚)
 	 */
 	@ApiField("status")
 	private String status;
@@ -45,11 +45,11 @@ public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 		return this.rejectReason;
 	}
 
-	public void setServiceId(String serviceId) {
-		this.serviceId = serviceId;
+	public void setServiceCode(String serviceCode) {
+		this.serviceCode = serviceCode;
 	}
-	public String getServiceId( ) {
-		return this.serviceId;
+	public String getServiceCode( ) {
+		return this.serviceCode;
 	}
 
 	public void setServiceXml(String serviceXml) {

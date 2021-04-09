@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.promotion.dynamicurl.get request
  * 
  * @author auto create
- * @since 1.0, 2021-02-04 15:21:27
+ * @since 1.0, 2021-03-30 20:15:17
  */
 public class MybankCreditLoanapplyPromotionDynamicurlGetRequest implements AlipayRequest<MybankCreditLoanapplyPromotionDynamicurlGetResponse> {
 

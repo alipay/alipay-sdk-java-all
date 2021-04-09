@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.order.item.pay response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-18 17:25:00
+ * @since 1.0, 2021-04-07 20:39:16
  */
 public class AlipayEbppOrderItemPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4126461371663455674L;
+	private static final long serialVersionUID = 8121435981597859744L;
 
 	
 

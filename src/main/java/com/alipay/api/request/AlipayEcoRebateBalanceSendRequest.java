@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.rebate.balance.send request
  * 
  * @author auto create
- * @since 1.0, 2020-08-11 15:40:12
+ * @since 1.0, 2021-03-26 14:52:34
  */
 public class AlipayEcoRebateBalanceSendRequest implements AlipayRequest<AlipayEcoRebateBalanceSendResponse> {
 

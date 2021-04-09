@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票配送单详情
  *
  * @author auto create
- * @since 1.0, 2020-09-26 22:35:27
+ * @since 1.0, 2021-03-31 13:22:43
  */
 public class WaybillInvoiceQueryIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 3442663938298796228L;
+	private static final long serialVersionUID = 4469379393989864874L;
 
 	/**
 	 * 失败原因，需要传单个即时配送运单的驳回原因
@@ -26,13 +26,13 @@ public class WaybillInvoiceQueryIstd extends AlipayObject {
 	private String shopNo;
 
 	/**
-	 * 即时配送运单金额
+	 * 即时配送运单金额，waybill_invoce_status为1的情况下不能为空
 	 */
 	@ApiField("waybill_amount")
 	private String waybillAmount;
 
 	/**
-	 * 即时配送运单开票状态 0：处理中 1：已开票 2：开票失败
+	 * 明细的运单开票状态，1：开票成功 2：不可开票 3：可开票；整体开票状态为0的情况下，无开票明细；整体开票状态为1，明细开票状态全部是1；整体开票状态为2，明细开票状态全部为2
 	 */
 	@ApiField("waybill_invoice_status")
 	private Long waybillInvoiceStatus;

@@ -11,16 +11,18 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniVersionDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4581288557467618332L;
+	private static final long serialVersionUID = 1316712533849791311L;
 
 	/**
-	 * 小程序版本号
+	 *  小程序版本号。只有状态为开发中的版本才能被删除。
 	 */
 	@ApiField("app_version")
 	private String appVersion;
 
 	/**
-	 * 小程序投放的端参数，例如投放到支付宝钱包是支付宝端。该参数可选，默认支付宝端，目前仅支持支付宝端，枚举列举：com.alipay.alipaywallet:支付宝端
+	 * 小程序投放的端参数，例如投放到支付宝钱包是支付宝端。默认支付宝端。支持：
+com.alipay.alipaywallet:支付宝端；
+com.alipay.iot.xpaas：支付宝IoT端。
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;

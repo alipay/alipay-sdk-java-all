@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业工商信息查询（按个人）
  *
  * @author auto create
- * @since 1.0, 2020-07-10 10:31:00
+ * @since 1.0, 2021-03-30 15:11:48
  */
 public class ZhimaCreditEpRoleGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5343228756595446262L;
+	private static final long serialVersionUID = 3739419367898257861L;
 
 	/**
 	 * 企业法定代表人/企业股东/企业主要管理人员 的身份证号

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpSceneAgreementCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3339356685817997516L;
+	private static final long serialVersionUID = 4389542864993385999L;
 
 	/**
 	 * 业务取消时间，日期格式为 yyyy-MM-dd HH:mm:ss
@@ -22,7 +22,7 @@ public class ZhimaCreditEpSceneAgreementCancelModel extends AlipayObject {
 	private Date bizTime;
 
 	/**
-	 * 信用订单号
+	 *  信用订单号，为<a href="https://opendocs.alipay.com/apis/api_8/zhima.credit.ep.scene.agreement.use">zhima.credit.ep.scene.agreement.use</a>接口加入信用服务后获取的credit_order_no（信用订单号）。
 	 */
 	@ApiField("credit_order_no")
 	private String creditOrderNo;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算卡信息
  *
  * @author auto create
- * @since 1.0, 2018-12-27 11:22:12
+ * @since 1.0, 2021-04-07 21:04:05
  */
 public class SettleCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4542714268822739528L;
+	private static final long serialVersionUID = 8193163994982451575L;
 
 	/**
 	 * 开户支行名

@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicMessageContentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3685456274223445854L;
+	private static final long serialVersionUID = 2877437493276461563L;
 
 	/**
-	 * 活动利益点，图文类型ctype为activity类型时才需要传，最多10个字符
+	 * 活动利益点，最多10个字符。仅 ctype 为 activity 类型时才需传入。
 	 */
 	@ApiField("benefit")
 	private String benefit;
@@ -26,19 +26,22 @@ public class AlipayOpenPublicMessageContentCreateModel extends AlipayObject {
 	private String content;
 
 	/**
-	 * 是否允许评论 T:允许 F:不允许，默认不允许
+	 * 是否允许评论。枚举支持：
+*T：允许。
+*F：不允许，默认不允许。
 	 */
 	@ApiField("could_comment")
 	private String couldComment;
 
 	/**
-	 * 封面图url, 尺寸为996*450，最大不超过3M，支持格式:.jpg、.png ，请先调用<a href="https://docs.open.alipay.com/api_3/alipay.offline.material.image.upload"> 图片上传接口</a>获得图片url。
+	 * 封面图url，需传入 <a href="https://opendocs.alipay.com/apis/api_3/alipay.offline.material.image.upload">图片上传接口</a>上传图片获取的 image_url。
+注意：尺寸为 996*450，最大不超过3M，支持格式：jpg、.png 。
 	 */
 	@ApiField("cover")
 	private String cover;
 
 	/**
-	 * 图文类型  activity: 活动图文，不填默认普通图文
+	 * 图文类型，不填默认普通图文。还支持 activity（活动图文）。
 	 */
 	@ApiField("ctype")
 	private String ctype;

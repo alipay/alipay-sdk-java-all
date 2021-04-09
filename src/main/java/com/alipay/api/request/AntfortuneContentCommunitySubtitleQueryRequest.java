@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.content.community.subtitle.query request
  * 
  * @author auto create
- * @since 1.0, 2021-03-19 17:30:42
+ * @since 1.0, 2021-04-01 20:51:09
  */
 public class AntfortuneContentCommunitySubtitleQueryRequest implements AlipayRequest<AntfortuneContentCommunitySubtitleQueryResponse> {
 

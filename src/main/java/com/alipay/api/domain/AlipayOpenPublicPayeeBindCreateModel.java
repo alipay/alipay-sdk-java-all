@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicPayeeBindCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8381831527222244141L;
+	private static final long serialVersionUID = 7191259911496784648L;
 
 	/**
-	 * 收款账号，需要绑定的收款支付宝账号，跟pid不要同时传
+	 * 收款账号，需要绑定的收款支付宝账号，请勿与 pid 同时传入。
 	 */
 	@ApiField("login_id")
 	private String loginId;
 
 	/**
-	 * 支付宝用户id，2088开头的16位长度字符串，跟login_id不要同时传
+	 * 支付宝用户id，2088开头的16位长度字符串，请勿与 login_id 同时传入。
 	 */
 	@ApiField("pid")
 	private String pid;

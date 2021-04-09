@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学缴费-订单状态模型
  *
  * @author auto create
- * @since 1.0, 2021-03-03 15:22:13
+ * @since 1.0, 2021-04-08 17:44:47
  */
 public class TuitionISVOrderStatusDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7585922359582644838L;
+	private static final long serialVersionUID = 3242648846298489457L;
+
+	/**
+	 * 错误码
+	 */
+	@ApiField("error_code")
+	private String errorCode;
 
 	/**
 	 * 错误信息
@@ -30,6 +36,13 @@ public class TuitionISVOrderStatusDTO extends AlipayObject {
 	 */
 	@ApiField("status_desc")
 	private String statusDesc;
+
+	public String getErrorCode() {
+		return this.errorCode;
+	}
+	public void setErrorCode(String errorCode) {
+		this.errorCode = errorCode;
+	}
 
 	public String getErrorMessage() {
 		return this.errorMessage;

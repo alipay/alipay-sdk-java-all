@@ -14,17 +14,19 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppMessagetemplateSubscribeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8165167557199589743L;
+	private static final long serialVersionUID = 5717191168437599327L;
 
 	/**
-	 * 消息模板id，可以填写多个，最多不超过3个。模板id需要保持同一个应用主体，并且展示在同一个订阅组件中的模板id
+	 * 消息模板id，可以填写多个，最多不超过3个。模板id需要保持同一个应用主体，并且展示在同一个订阅组件中的模板id。
+模板id获取详情参见<a href="https://opendocs.alipay.com/mini/01rnqx">模板消息</a>。
 	 */
 	@ApiListField("template_id_list")
 	@ApiField("string")
 	private List<String> templateIdList;
 
 	/**
-	 * 订阅消息模板的用户的userid
+	 * 订阅消息模板用户的支付宝唯一标识，2088开头。
+
 	 */
 	@ApiField("user_id")
 	private String userId;

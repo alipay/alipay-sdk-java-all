@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用企业征信产品推广码下线
  *
  * @author auto create
- * @since 1.0, 2020-07-17 16:36:27
+ * @since 1.0, 2021-03-30 15:10:42
  */
 public class ZhimaCreditEpProductCodeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1273951917134862777L;
+	private static final long serialVersionUID = 7173182476458854764L;
 
 	/**
 	 * 二维码唯一标识id

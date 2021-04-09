@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订座配置数据回流
  *
  * @author auto create
- * @since 1.0, 2019-05-16 10:38:51
+ * @since 1.0, 2021-03-29 15:06:13
  */
 public class KoubeiCateringBookShopinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2412558291564588721L;
+	private static final long serialVersionUID = 4135145595491468314L;
 
 	/**
 	 * 桌位保留时间（单位：分钟）

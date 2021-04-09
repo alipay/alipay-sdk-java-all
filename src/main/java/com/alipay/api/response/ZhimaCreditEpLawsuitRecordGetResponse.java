@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.lawsuit.record.get response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-24 18:10:33
+ * @since 1.0, 2021-03-30 15:09:13
  */
 public class ZhimaCreditEpLawsuitRecordGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4462612672649469967L;
+	private static final long serialVersionUID = 8852837214919883423L;
 
 	/** 
 	 * 芝麻信用对于每一次请求返回的业务号。后续可以通过此业务号进行对账

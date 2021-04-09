@@ -7,23 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务查询
  *
  * @author auto create
- * @since 1.0, 2021-03-18 11:50:53
+ * @since 1.0, 2021-04-09 11:34:28
  */
 public class AlipayOpenAppServiceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6544682978965786889L;
+	private static final long serialVersionUID = 7856719817861127769L;
 
 	/**
 	 * 服务id
 	 */
-	@ApiField("service_id")
-	private String serviceId;
+	@ApiField("service_code")
+	private String serviceCode;
 
-	public String getServiceId() {
-		return this.serviceId;
+	public String getServiceCode() {
+		return this.serviceCode;
 	}
-	public void setServiceId(String serviceId) {
-		this.serviceId = serviceId;
+	public void setServiceCode(String serviceCode) {
+		this.serviceCode = serviceCode;
 	}
 
 }

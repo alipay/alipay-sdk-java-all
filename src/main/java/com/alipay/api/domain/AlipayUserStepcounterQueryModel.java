@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户日计步数查询
  *
  * @author auto create
- * @since 1.0, 2021-01-07 20:56:19
+ * @since 1.0, 2021-04-01 10:38:30
  */
 public class AlipayUserStepcounterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7123752551669896995L;
+	private static final long serialVersionUID = 3591151623717158296L;
 
 	/**
 	 * 商户要查询步数的日期。如果不传入此参数，则返回用户当日步数。

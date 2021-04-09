@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayAssetPointAccountlogQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7614519733191363997L;
+	private static final long serialVersionUID = 8235645128474996596L;
 
 	/**
 	 * 用户流水查询起始时间

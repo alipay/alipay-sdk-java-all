@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.community.room.delete request
  * 
  * @author auto create
- * @since 1.0, 2021-01-28 19:17:32
+ * @since 1.0, 2021-03-31 13:46:21
  */
 public class AlipayEbppCommunityRoomDeleteRequest implements AlipayRequest<AlipayEbppCommunityRoomDeleteResponse> {
 

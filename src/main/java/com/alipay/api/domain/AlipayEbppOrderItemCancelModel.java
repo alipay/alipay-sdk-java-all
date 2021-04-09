@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业支付订单子项删除接口
  *
  * @author auto create
- * @since 1.0, 2018-12-20 19:38:25
+ * @since 1.0, 2021-04-07 20:40:37
  */
 public class AlipayEbppOrderItemCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2762862417974823741L;
+	private static final long serialVersionUID = 4125898159324812962L;
 
 	/**
 	 * 机构订单子项id

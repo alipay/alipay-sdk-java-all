@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 知识库-问答-创建
  *
  * @author auto create
- * @since 1.0, 2021-01-26 15:20:02
+ * @since 1.0, 2021-03-30 20:15:28
  */
 public class AlipayIserviceCcmSwArticleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7778818674916219812L;
+	private static final long serialVersionUID = 2795534587517341361L;
 
 	/**
 	 * 所属类目ID，如果search_all_category为true则不用填
@@ -55,7 +55,7 @@ public class AlipayIserviceCcmSwArticleCreateModel extends AlipayObject {
 	private String libraryId;
 
 	/**
-	 * 场景ID。1（内部知识库）；2（机器人）;3（帮助中心）；4（无线帮助中心）
+	 * 场景ID。KNOWLEDGE（内部知识库）；ROBOT（机器人）;HELP（帮助中心）；WHELP（无线帮助中心）
 	 */
 	@ApiListField("scene_codes")
 	@ApiField("string")

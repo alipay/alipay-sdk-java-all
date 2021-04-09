@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpSceneAgreementUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7787983113768945314L;
+	private static final long serialVersionUID = 5559136433221921384L;
 
 	/**
 	 * 特定业务场景传输的扩展参数，以JSON形式传输。具体业务场景需要传入参数请参考<a href="https://docs.open.alipay.com/11270#s3">业务场景传输的扩展参数</a>
@@ -40,7 +40,7 @@ public class ZhimaCreditEpSceneAgreementUseModel extends AlipayObject {
 	private String provisionCode;
 
 	/**
-	 * 评估订单号。在用户完成信用评估后可以获取。信用评估流程关联接口见：zhima.credit.ep.scene.rating.initialize；zhima.credit.ep.scene.rating.apply。
+	 * 评估订单号。用户完成信用评估的芝麻信用评估订单号，即为<a href="https://opendocs.alipay.com/apis/api_8/zhima.credit.ep.scene.rating.initialize">zhima.credit.ep.scene.rating.initialize</a>接口初始化后返回的 order_no，初始化后还需调用<a href="https://opendocs.alipay.com/apis/api_8/zhima.credit.ep.scene.rating.apply">zhima.credit.ep.scene.rating.apply</a>接口发起信用评估。
 	 */
 	@ApiField("rating_order_no")
 	private String ratingOrderNo;

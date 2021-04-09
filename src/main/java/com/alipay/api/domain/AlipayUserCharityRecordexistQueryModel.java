@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCharityRecordexistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5217212636286124751L;
+	private static final long serialVersionUID = 8353153611134637432L;
 
 	/**
 	 * 公益的业务类型(缺省是所有类型)

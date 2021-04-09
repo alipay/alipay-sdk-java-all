@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子小票详情查询
  *
  * @author auto create
- * @since 1.0, 2020-11-17 15:31:36
+ * @since 1.0, 2021-03-26 15:44:53
  */
 public class AlipayCommerceIotReceiptDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1667659174317569697L;
+	private static final long serialVersionUID = 5136166242562954417L;
 
 	/**
 	 * 调用发送电子小票接口时返回的电子小票id

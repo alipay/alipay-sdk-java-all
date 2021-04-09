@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 在配送公司的门店状态
  *
  * @author auto create
- * @since 1.0, 2021-02-02 21:04:59
+ * @since 1.0, 2021-04-06 10:43:12
  */
 public class LogisticsShopStatusDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7527515848824812994L;
+	private static final long serialVersionUID = 7773413263627983734L;
 
 	/**
 	 * 商家在配送公司的账户的审核说明.
@@ -32,7 +32,7 @@ public class LogisticsShopStatusDTO extends AlipayObject {
 	private String logisticsName;
 
 	/**
-	 * 门店状态，AUDITING:审核中，AUDIT_REJECT:审核驳回，VALID:已生效，UPDATING:更新中
+	 * 门店状态，AUDITING:审核中，AUDIT_REJECT:审核驳回，VALID:已生效，UPDATING:更新中，WAIT_CREATE:待开通(存量门店若需要支持后面新增的配送公司，需要调用门店更新接口发起申请)
 	 */
 	@ApiField("status")
 	private String status;

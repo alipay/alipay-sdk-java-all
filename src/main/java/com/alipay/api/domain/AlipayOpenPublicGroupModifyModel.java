@@ -14,10 +14,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicGroupModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1341922232323585546L;
+	private static final long serialVersionUID = 3586864436245298241L;
 
 	/**
-	 * 分组ID，整型值
+	 * 分组ID，通过<a href="https://opendocs.alipay.com/apis/api_6/alipay.open.public.group.create">alipay.open.public.group.create</a>（用户分组创建接口)
+创建用户分组获取。
 	 */
 	@ApiField("group_id")
 	private String groupId;

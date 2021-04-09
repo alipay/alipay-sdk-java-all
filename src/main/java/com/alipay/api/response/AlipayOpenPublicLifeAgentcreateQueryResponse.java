@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.life.agentcreate.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-27 20:25:34
+ * @since 1.0, 2021-03-26 14:55:56
  */
 public class AlipayOpenPublicLifeAgentcreateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5542281791931676236L;
+	private static final long serialVersionUID = 8224514551351174279L;
 
 	/** 
 	 * 只有审核通过，且商户在支付宝发送的授权邮件中确认授权，此时生活号才会正式创建，查询才会返回该值
@@ -27,7 +27,8 @@ public class AlipayOpenPublicLifeAgentcreateQueryResponse extends AlipayResponse
 	private String merchantPid;
 
 	/** 
-	 * 支付宝商户入驻申请单状态，申请单状态包括：暂存、审核中、待商户确认、成功、失败。注:暂存是审核前的中间状态，如出现暂存请再次提交
+	 * 支付宝商户入驻申请单状态，申请单状态包括：暂存、审核中、待商户确认、成功、失败。
+说明：暂存是审核前的中间状态，如出现暂存状态请再次提交代创建生活号申请。
 	 */
 	@ApiField("order_status_biz_desc")
 	private String orderStatusBizDesc;
