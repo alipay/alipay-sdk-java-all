@@ -10,11 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 单元详情
  *
  * @author auto create
- * @since 1.0, 2019-10-21 19:14:04
+ * @since 1.0, 2021-04-01 17:04:40
  */
 public class OuterGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 2878769661683219135L;
+	private static final long serialVersionUID = 4287377215413445242L;
+
+	/**
+	 * 转化目标之转化事件id列表
+	 */
+	@ApiListField("conversion_id_list")
+	@ApiField("string")
+	private List<String> conversionIdList;
+
+	/**
+	 * 计费点
+	 */
+	@ApiField("conversion_type")
+	private String conversionType;
 
 	/**
 	 * 业务扩展参数字段，根据第三方需要使用，投放端只做存储并向检索端透传
@@ -65,10 +78,22 @@ REAL_DISABLE-失效
 	private List<String> itemIdList;
 
 	/**
+	 * 是否使用OCPX智能出价，只再CPC场景下，支持开启OCPX： OPEN: 打开；CLOSE: 关闭
+	 */
+	@ApiField("ocpx_switch")
+	private String ocpxSwitch;
+
+	/**
 	 * 外部唯一计划编号
 	 */
 	@ApiField("plan_outer_id")
 	private String planOuterId;
+
+	/**
+	 * 转化目标成本，只有开启OCPX后才需要配置，单位为分
+	 */
+	@ApiField("target_cpa")
+	private Long targetCpa;
 
 	/**
 	 * 单元定向列表。目前支持的定向类型有：
@@ -92,6 +117,20 @@ OUTER_KOUBEI_CROWD_TAG_LIST：口碑人群
 	 */
 	@ApiField("time_schema")
 	private String timeSchema;
+
+	public List<String> getConversionIdList() {
+		return this.conversionIdList;
+	}
+	public void setConversionIdList(List<String> conversionIdList) {
+		this.conversionIdList = conversionIdList;
+	}
+
+	public String getConversionType() {
+		return this.conversionType;
+	}
+	public void setConversionType(String conversionType) {
+		this.conversionType = conversionType;
+	}
 
 	public String getExtendInfo() {
 		return this.extendInfo;
@@ -142,11 +181,25 @@ OUTER_KOUBEI_CROWD_TAG_LIST：口碑人群
 		this.itemIdList = itemIdList;
 	}
 
+	public String getOcpxSwitch() {
+		return this.ocpxSwitch;
+	}
+	public void setOcpxSwitch(String ocpxSwitch) {
+		this.ocpxSwitch = ocpxSwitch;
+	}
+
 	public String getPlanOuterId() {
 		return this.planOuterId;
 	}
 	public void setPlanOuterId(String planOuterId) {
 		this.planOuterId = planOuterId;
+	}
+
+	public Long getTargetCpa() {
+		return this.targetCpa;
+	}
+	public void setTargetCpa(Long targetCpa) {
+		this.targetCpa = targetCpa;
 	}
 
 	public List<OuterTargetingItem> getTargetingList() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取推广活动的动态链接
  *
  * @author auto create
- * @since 1.0, 2021-02-04 15:21:27
+ * @since 1.0, 2021-03-30 20:13:42
  */
 public class MybankCreditLoanapplyPromotionDynamicurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1141627724318724213L;
+	private static final long serialVersionUID = 5385374663172465635L;
 
 	/**
 	 * 机构合约编号，商户接入企业信贷业务时自动分配，获取地址：https://partner.mybank.cn/cooperation/myCooperation.htm，路径：我的合作-查看详情-开发接口调用-接口合约编号；
@@ -20,10 +20,24 @@ public class MybankCreditLoanapplyPromotionDynamicurlGetModel extends AlipayObje
 	private String arrangementNo;
 
 	/**
+	 * 动态链接使用场景。地推工具外投必填字段
+01-地推工具外投。
+（机构特殊外投才需要，否则可以忽略该字段不需填入）
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
+
+	/**
 	 * 部门编码，是网商机构门户内维护的组织结构中部门的唯一编号，由网商机构门户生成后提供给合作机构，参数staff_type为01或03时，此参数必填
 	 */
 	@ApiField("dept_code")
 	private String deptCode;
+
+	/**
+	 * 推广机构内部员工编号。（机构特殊外投才需要，否则可以忽略该字段不需填入）
+	 */
+	@ApiField("inst_staff_no")
+	private String instStaffNo;
 
 	/**
 	 * 渠道编码，是网商机构门户内维护的推广渠道的唯一编号，由网商机构门户生成后提供给合作机构，参数staff_type为01或03时，此参数必填
@@ -62,7 +76,8 @@ public class MybankCreditLoanapplyPromotionDynamicurlGetModel extends AlipayObje
 	private String recmdInstIpRoleId;
 
 	/**
-	 * 请求的实体ID，跟staff_type对应，若staff_type是01则为支付宝账号；若staff_type是02则为生活号在支付宝开放平台对应的app_id；若staff_type是03则为机构在支付宝开放平台对应的app_id
+	 * 请求的实体ID，跟staff_type对应，若staff_type是01则为支付宝账号；若staff_type是02则为生活号在支付宝开放平台对应的app_id；若staff_type是03则为机构在支付宝开放平台对应的app_id。
+biz_scene有值则staff_id不需要校验，否则必填
 	 */
 	@ApiField("staff_id")
 	private String staffId;
@@ -80,11 +95,25 @@ public class MybankCreditLoanapplyPromotionDynamicurlGetModel extends AlipayObje
 		this.arrangementNo = arrangementNo;
 	}
 
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
+	}
+
 	public String getDeptCode() {
 		return this.deptCode;
 	}
 	public void setDeptCode(String deptCode) {
 		this.deptCode = deptCode;
+	}
+
+	public String getInstStaffNo() {
+		return this.instStaffNo;
+	}
+	public void setInstStaffNo(String instStaffNo) {
+		this.instStaffNo = instStaffNo;
 	}
 
 	public String getOpChCode() {

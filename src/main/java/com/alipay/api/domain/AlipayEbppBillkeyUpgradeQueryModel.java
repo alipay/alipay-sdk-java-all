@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 户号升级结果查询
  *
  * @author auto create
- * @since 1.0, 2021-03-22 09:47:51
+ * @since 1.0, 2021-03-30 16:10:50
  */
 public class AlipayEbppBillkeyUpgradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1334322929997313114L;
+	private static final long serialVersionUID = 3652962976518576927L;
 
 	/**
 	 * 原户号

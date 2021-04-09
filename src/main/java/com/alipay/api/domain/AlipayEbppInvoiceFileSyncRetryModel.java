@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文件同步补偿接口
  *
  * @author auto create
- * @since 1.0, 2020-05-20 15:52:28
+ * @since 1.0, 2021-04-06 11:45:21
  */
 public class AlipayEbppInvoiceFileSyncRetryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2193564875742925416L;
+	private static final long serialVersionUID = 3394135566869354486L;
 
 	/**
 	 * 发票代码

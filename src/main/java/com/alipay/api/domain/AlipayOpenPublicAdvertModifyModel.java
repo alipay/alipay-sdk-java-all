@@ -14,16 +14,16 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicAdvertModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1775917985524186855L;
+	private static final long serialVersionUID = 7885384959572472345L;
 
 	/**
-	 * 广告位id
+	 * 广告位id，通过<a href="https://opendocs.alipay.com/apis/api_6/alipay.open.public.advert.create">alipay.open.public.advert.create</a>(生活号广告位添加接口)添加广告位获取。
 	 */
 	@ApiField("advert_id")
 	private String advertId;
 
 	/**
-	 * 广告位轮播内容列表，数量限制：大于1个，小于5个，广告位轮播内容顺序，根据接口传入的顺序排列
+	 * 广告位轮播内容列表。数量限制：大于1个，小于5个。广告位轮播内容顺序：与接口传入的顺序排列一致。
 	 */
 	@ApiListField("advert_items")
 	@ApiField("advert_item")

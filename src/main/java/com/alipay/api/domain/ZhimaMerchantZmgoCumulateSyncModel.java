@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantZmgoCumulateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6718252796414934521L;
+	private static final long serialVersionUID = 6623683612614787897L;
 
 	/**
 	 * 芝麻go协议号，唯一标识一个芝麻go协议。
@@ -28,7 +28,9 @@ public class ZhimaMerchantZmgoCumulateSyncModel extends AlipayObject {
 	private AmountTypeSyncData amountTypeSyncData;
 
 	/**
-	 * 数据回传的动作类型，枚举值，为必传入参。 可取值： ("POSITIVE", "正向回传")，("REVERSE", "逆向回传")。 其中POSITIVE表示回传为正向的，即订单金额累加，优惠累加，任务次数累加；而REVERSE表示回传为逆向的，即订单金额退款，优惠退款，任务次数回退。
+	 * 数据回传的动作类型。枚举如下：
+* POSITIVE：正向回传，即订单金额累加，优惠累加，任务次数累加。
+* REVERSE：逆向回传，即订单金额退款，优惠退款，任务次数回退。
 	 */
 	@ApiField("biz_action")
 	private String bizAction;
@@ -60,7 +62,7 @@ DISCOUNT - 优惠型
 	private String outBizNo;
 
 	/**
-	 * 数据回传的商户ID，即和用户发生业务来往的PID主体。
+	 * 数据回传的商户 ID，即和用户发生业务来往的 PID 主体。商户账号在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
 	 */
 	@ApiField("provider_pid")
 	private String providerPid;
@@ -87,7 +89,8 @@ UPDATE - 修改数据
 	private TimesTypeSyncData timesTypeSyncData;
 
 	/**
-	 * 用户支付宝userId，蚂蚁统一会员ID。
+	 * 用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+
 	 */
 	@ApiField("user_id")
 	private String userId;

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.messagetemplate.subscribe.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-25 16:22:33
+ * @since 1.0, 2021-03-26 14:53:56
  */
 public class AlipayOpenAppMessagetemplateSubscribeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3237612482626659897L;
+	private static final long serialVersionUID = 6846164187116849273L;
 
 	/** 
 	 * true:显示订阅组件，false:不显示订阅组件

@@ -14,17 +14,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicMessageGroupSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4676256123555523574L;
+	private static final long serialVersionUID = 2479211283985355358L;
 
 	/**
-	 * 图文消息，当msg_type为image-text，该值必须设置，图文消息中的图片建议尺寸 750 x 350px，小于3M，图片支持jpg、png格式
+	 * 图文消息，当 msg_type为image-text，本参数必填。
 	 */
 	@ApiListField("articles")
 	@ApiField("article")
 	private List<Article> articles;
 
 	/**
-	 * 用户分组ID
+	 * 分组ID，通过<a href="https://opendocs.alipay.com/apis/api_6/alipay.open.public.group.create">alipay.open.public.group.create</a>（用户分组创建接口)
+创建用户分组获取。
 	 */
 	@ApiField("group_id")
 	private String groupId;
@@ -36,13 +37,16 @@ public class AlipayOpenPublicMessageGroupSendModel extends AlipayObject {
 	private Image image;
 
 	/**
-	 * 消息类型，text表示文本消息，image-text表示图文消息
+	 * 消息类型。枚举支持：
+* text：表示文本消息；
+* image-text：表示图文消息。
+
 	 */
 	@ApiField("msg_type")
 	private String msgType;
 
 	/**
-	 * 文本消息内容，当msg_type为text，必须设置该值，而且必须同时设置标题和内容字段
+	 * 文本消息内容，当msg_type为text，本参数必填。
 	 */
 	@ApiField("text")
 	private Text text;

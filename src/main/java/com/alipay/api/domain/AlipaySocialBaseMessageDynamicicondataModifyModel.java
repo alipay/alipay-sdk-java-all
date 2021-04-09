@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应用中心-微动效-数据管理服务
  *
  * @author auto create
- * @since 1.0, 2020-10-16 16:24:51
+ * @since 1.0, 2021-03-25 13:47:30
  */
 public class AlipaySocialBaseMessageDynamicicondataModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2663179836462173552L;
+	private static final long serialVersionUID = 8499376117175579255L;
 
 	/**
 	 * 微动效业务编码

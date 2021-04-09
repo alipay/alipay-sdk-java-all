@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPassTemplateUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5528238386485235266L;
+	private static final long serialVersionUID = 2658667667163416511L;
 
 	/**
-	 * 模板内容信息，遵循JSON规范，详情参见tpl_content参数说明:https://doc.open.alipay.com/doc2/detail.htm?treeId=193&articleId=105249&docType=1#tpl_content
+	 * 模板内容信息，遵循JSON规范，详情参见tpl_content <a href="https://opendocs.alipay.com/open/016d5g">参数详细说明</a>。
 	 */
 	@ApiField("tpl_content")
 	private String tplContent;
 
 	/**
-	 * 更新的模板ID，即调用模板创建接口时返回的tpl_id。
+	 * 支付宝pass模版ID。通过<a href="https://opendocs.alipay.com/apis/api_24/alipay.pass.template.add">alipay.pass.template.add</a>(卡券模板创建接口)创建模板后返回的tpl_id。
 	 */
 	@ApiField("tpl_id")
 	private String tplId;

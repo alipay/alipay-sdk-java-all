@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpSceneFulfillmentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1875618847156471789L;
+	private static final long serialVersionUID = 1576426449493694623L;
 
 	/**
 	 * 特定业务场景传输的扩展参数，以JSON形式传输。具体业务场景需要传入参数请参考<a href="https://docs.open.alipay.com/11270#s3">业务场景传输的扩展参数</a>
@@ -28,7 +28,7 @@ public class ZhimaCreditEpSceneFulfillmentSyncModel extends AlipayObject {
 	private Date bizTime;
 
 	/**
-	 * 信用订单号，即调用zhima.credit.ep.scene.agreement.use返回的信用订单号。
+	 * 信用订单号，为<a href="https://opendocs.alipay.com/apis/api_8/zhima.credit.ep.scene.agreement.use">zhima.credit.ep.scene.agreement.use</a>接口加入信用服务后获取的credit_order_no（信用订单号）。
 	 */
 	@ApiField("credit_order_no")
 	private String creditOrderNo;

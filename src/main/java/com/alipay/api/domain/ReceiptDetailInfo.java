@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票详情信息
  *
  * @author auto create
- * @since 1.0, 2020-11-20 17:01:57
+ * @since 1.0, 2021-03-31 11:19:01
  */
 public class ReceiptDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5264922819774284465L;
+	private static final long serialVersionUID = 8115676687817941565L;
 
 	/**
 	 * 交易实付金额，单位分

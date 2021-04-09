@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝账户风险风险
  *
  * @author auto create
- * @since 1.0, 2019-09-17 15:39:13
+ * @since 1.0, 2021-04-01 10:25:33
  */
 public class AlipaySecurityRiskCustomerriskrankGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7314111324255154416L;
+	private static final long serialVersionUID = 1138935833656788679L;
 
 	/**
 	 * 证件号码，除了场景id必填，其他几个参数不能同时为空

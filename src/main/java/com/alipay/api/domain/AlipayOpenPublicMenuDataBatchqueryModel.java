@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicMenuDataBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3119699747553643994L;
+	private static final long serialVersionUID = 7773213516574394144L;
 
 	/**
-	 * 开始日期
+	 * 数据开始日期，时间格式为 "yyyyMMdd" 。
 	 */
 	@ApiField("begin_date")
 	private String beginDate;
 
 	/**
-	 * 结束日期，开始日期/结束日期时间跨度最大30天
+	 * 数据结束日期，时间格式为"yyyyMMdd"。查询数据开始日期/结束日期时间跨度最大30天。
 	 */
 	@ApiField("end_date")
 	private String endDate;

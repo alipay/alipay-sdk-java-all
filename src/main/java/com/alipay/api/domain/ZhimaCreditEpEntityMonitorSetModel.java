@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险雷达添加商户联系方式列表接口
  *
  * @author auto create
- * @since 1.0, 2020-07-17 16:36:56
+ * @since 1.0, 2021-03-30 15:10:32
  */
 public class ZhimaCreditEpEntityMonitorSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2146414532969665557L;
+	private static final long serialVersionUID = 3514455933391394763L;
 
 	/**
 	 * 联系人列表

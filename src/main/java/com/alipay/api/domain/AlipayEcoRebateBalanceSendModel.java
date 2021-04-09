@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoRebateBalanceSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5671215348938355358L;
+	private static final long serialVersionUID = 4355942254723958569L;
 
 	/**
 	 * 用户订单明细
@@ -30,7 +30,7 @@ public class AlipayEcoRebateBalanceSendModel extends AlipayObject {
 	private String orderId;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 用户支付宝唯一标识，2088开头。
 	 */
 	@ApiField("user_id")
 	private String userId;

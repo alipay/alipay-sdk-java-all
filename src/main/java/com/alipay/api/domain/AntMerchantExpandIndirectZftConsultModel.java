@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通商户创建预校验咨询
  *
  * @author auto create
- * @since 1.0, 2021-03-01 14:09:43
+ * @since 1.0, 2021-04-08 14:06:25
  */
 public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8895826723558529557L;
+	private static final long serialVersionUID = 5642763876592277481L;
 
 	/**
-	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名
+	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名。如果涉及当面付场景，请填写线下店铺名称
 	 */
 	@ApiField("alias_name")
 	private String aliasName;
@@ -29,7 +29,7 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private String alipayLogonId;
 
 	/**
-	 * 签约支付宝账户，用于协议确认，及后续二级商户增值产品服务签约时使用。本字段要求与商户名称name同名，且是实名认证支付宝账户
+	 * 签约支付宝账户，用于协议确认，及后续二级商户增值产品服务签约时使用。本字段要求与商户名称name同名(个体工商户可以与name或cert_name相同)，且是实名认证支付宝账户
 	 */
 	@ApiField("binding_alipay_logon_id")
 	private String bindingAlipayLogonId;
@@ -42,19 +42,19 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private List<SettleCardInfo> bizCards;
 
 	/**
-	 * 经营地址。地址对象中省、市、区、地址必填，其余选填
+	 * 经营地址。当使用当面付服务时，本字段要求必填。地址对象中省、市、区、地址必填，其余选填
 	 */
 	@ApiField("business_address")
 	private AddressInfo businessAddress;
 
 	/**
-	 * 商户证件图片url，本业务接口中，如果是特殊行业必填。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
+	 * 商户证件图片url，本业务接口中，如果是特殊行业必填；使用当面付服务时，非个人必填，个人结算到卡时必填。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("cert_image")
 	private String certImage;
 
 	/**
-	 * 证件反面图片。目前只有当商户类型是个人商户，主证件为身份证时才需填写
+	 * 证件反面图片。目前只有当商户类型是个人商户且使用当面付服务时才需填写
 	 */
 	@ApiField("cert_image_back")
 	private String certImageBack;
@@ -72,7 +72,7 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 商户证件类型，按商户类型merchant_type的说明提供对应的证件类型。如果不传则以存量数据为准
+	 * 商户证件类型，按商户类型merchant_type的说明提供对应的证件类型。
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -97,6 +97,13 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private String externalId;
 
 	/**
+	 * 内景照，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。如果使用当面付服务则必填
+	 */
+	@ApiListField("in_door_images")
+	@ApiField("string")
+	private List<String> inDoorImages;
+
+	/**
 	 * 开票资料信息
 	 */
 	@ApiField("invoice_info")
@@ -115,7 +122,7 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private String legalCertFrontImage;
 
 	/**
-	 * 法人身份证号
+	 * 法人身份证号。非个人商户类型必填
 	 */
 	@ApiField("legal_cert_no")
 	private String legalCertNo;
@@ -127,7 +134,7 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private String legalCertType;
 
 	/**
-	 * 法人名称
+	 * 法人名称。非个人商户类型必填
 	 */
 	@ApiField("legal_name")
 	private String legalName;
@@ -145,13 +152,13 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private String mcc;
 
 	/**
-	 * 商家类型：01：企业；02：事业单位；03：民办非企业组织；04：社会团体；05：党政及国家机关；06：个人商户；07：个体工商户
+	 * 商户类型： 01：企业；cert_type填写201（营业执照）；cert_no填写营业执照号； 02：事业单位：cert_type填写218（事业单位法人证书）；cert_no填写事业单位法人证书编号； 03：民办非企业组织：cert_type填写204（民办非企业登记证书）；cert_no填写民办非企业登记证书编号； 04：社会团体：cert_type填写206（社会团体法人登记证书）；cert_no填写社会团体法人登记证书编号； 05：党政及国家机关：cert_type填写219（党政机关批准设立文件/行政执法主体资格证）；cert_no填写党政机关批准设立文件/行政执法主体资格证编号； 06：个人商户：cert_type填写100（个人身份证）；cert_no填写个人身份证号码； 07：个体工商户：cert_type填写201（营业执照）；cert_no填写营业执照编号；
 	 */
 	@ApiField("merchant_type")
 	private String merchantType;
 
 	/**
-	 * 进件的二级商户名称
+	 * 进件的二级商户名称。一般情况下要与证件的名称相同。个体工商户类型可以放宽到法人名称
 	 */
 	@ApiField("name")
 	private String name;
@@ -170,14 +177,14 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private List<String> outDoorImages;
 
 	/**
-	 * 商户行业资质，当商户是特殊行业时必填
+	 * 商户行业资质，当商户是特殊行业时必填。每项行业资质信息中，industry_qualification_type和industry_qualification_image均必填
 	 */
 	@ApiListField("qualifications")
 	@ApiField("industry_qualification_info")
 	private List<IndustryQualificationInfo> qualifications;
 
 	/**
-	 * 商户使用服务，可选值有：当面付、app支付、wap支付、电脑支付
+	 * 商户使用服务，可选值有：当面付、app支付、wap支付、电脑支付、线上资金预授权、新当面资金授权、商户代扣、小程序支付。其值会影响其他字段必填性，详见其他字段描述
 	 */
 	@ApiListField("service")
 	@ApiField("string")
@@ -291,6 +298,13 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	}
 	public void setExternalId(String externalId) {
 		this.externalId = externalId;
+	}
+
+	public List<String> getInDoorImages() {
+		return this.inDoorImages;
+	}
+	public void setInDoorImages(List<String> inDoorImages) {
+		this.inDoorImages = inDoorImages;
 	}
 
 	public MerchantInvoiceInfo getInvoiceInfo() {

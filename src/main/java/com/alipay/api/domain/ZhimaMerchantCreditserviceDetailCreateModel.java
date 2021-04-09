@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantCreditserviceDetailCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7592319946737984547L;
+	private static final long serialVersionUID = 3397533324826889775L;
 
 	/**
 	 * 信用服务基础信息配置，为必传字段。此字段为复杂模型，其中服务名称和服务logo为必传属性。
@@ -26,7 +26,9 @@ public class ZhimaMerchantCreditserviceDetailCreateModel extends AlipayObject {
 	private String bizNo;
 
 	/**
-	 * 信用服务创建模式，为必传字段，可取值：direct(直连模式)；indirect(间连模式)。
+	 * 信用服务创建模式，枚举如下：
+* direct：直连模式。
+* indirect：间连模式。
 	 */
 	@ApiField("create_type")
 	private String createType;
@@ -50,7 +52,10 @@ public class ZhimaMerchantCreditserviceDetailCreateModel extends AlipayObject {
 	private RiskConfig riskConfig;
 
 	/**
-	 * 二级商户ID。如果创建模式为间连模式，此为必传字段；如果为直连模式，不可将此字段赋值作为入参传入。
+	 * 二级商户ID。
+注意：
+* create_type = indirect（间连模式创建）时本参数必填。
+* create_type = direct（直连模式创建）时，请勿传入。
 	 */
 	@ApiField("smid")
 	private String smid;

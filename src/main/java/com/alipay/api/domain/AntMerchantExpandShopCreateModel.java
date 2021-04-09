@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2020-12-31 13:39:33
+ * @since 1.0, 2021-04-07 14:04:47
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8789396962266736852L;
+	private static final long serialVersionUID = 3345621513817597965L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。

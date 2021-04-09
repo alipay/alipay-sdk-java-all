@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子小票信息发送接口
  *
  * @author auto create
- * @since 1.0, 2020-12-29 21:11:28
+ * @since 1.0, 2021-03-26 15:45:38
  */
 public class AlipayCommerceIotReceiptSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7437563969738224876L;
+	private static final long serialVersionUID = 3416813985119686196L;
 
 	/**
 	 * 用户支付宝uid

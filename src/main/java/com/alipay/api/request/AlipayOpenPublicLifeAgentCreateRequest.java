@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.agent.create request
  * 
  * @author auto create
- * @since 1.0, 2021-01-25 16:33:15
+ * @since 1.0, 2021-03-26 15:02:30
  */
 public class AlipayOpenPublicLifeAgentCreateRequest implements AlipayUploadRequest<AlipayOpenPublicLifeAgentCreateResponse> {
 
@@ -21,7 +21,8 @@ public class AlipayOpenPublicLifeAgentCreateRequest implements AlipayUploadReque
 	private String apiVersion="1.0";
 
 	/** 
-	* isv代开通生活号的商户支付宝账号或者商户支付宝账号pid（2088开头16位长度的字符串），账号需通过实名认证
+	* 服务商代开通生活号的商户支付宝账号或商户支付宝账号 pid（2088开头16位长度的字符串）。
+注意：账号需通过 <a href="https://opendocs.alipay.com/open/200/qyzfbsmrz">实名认证</a>。
 	 */
 	private String account;
 
@@ -66,13 +67,13 @@ public class AlipayOpenPublicLifeAgentCreateRequest implements AlipayUploadReque
 	private FileItem logoPic;
 
 	/** 
-	* 所属MCCCode，详情可参考
-<a href="https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.INIZWb&articleId=105364&docType=1">商家经营类目</a> 中的“经营类目编码”
+	* 所属MCCCode，详情可参考<a href="https://opendocs.alipay.com/open/01n22g#%E5%95%86%E5%AE%B6%E7%BB%8F%E8%90%A5%E7%B1%BB%E7%9B%AE">商家经营类目</a>中的“类目code”。
 	 */
 	private String mccCode;
 
 	/** 
-	* 外部入驻申请单据号，由开发者生成，并需保证在开发者端不重复。另，如果代创建被驳回，需更换新的申请号，原申请号不能再次使用
+	* 外部入驻申请单据号，由开发者自行生成，并需保证在开发者端不重复。
+注意：如果代创建申请被驳回，需更换新的申请号，原申请号不能再次使用。
 	 */
 	private String outBizNo;
 
@@ -102,7 +103,7 @@ public class AlipayOpenPublicLifeAgentCreateRequest implements AlipayUploadReque
 	private FileItem shopSignBoardPic;
 
 	/** 
-	* 企业特殊资质图片，可参考 <a href="https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.INIZWb&articleId=105364&docType=1">商家经营类目</a> 中的 “需要的特殊资质证书”
+	* 企业特殊资质图片，可参考<a href="https://opendocs.alipay.com/open/01n22g#%E5%95%86%E5%AE%B6%E7%BB%8F%E8%90%A5%E7%B1%BB%E7%9B%AE">商家经营类目</a>中的 “所需资质”。
 	 */
 	private FileItem specialLicensePic;
 

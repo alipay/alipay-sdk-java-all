@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询活动预算
  *
  * @author auto create
- * @since 1.0, 2021-02-26 16:34:06
+ * @since 1.0, 2021-04-08 11:54:11
  */
 public class AlipayBossFncAntbudgetBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3147572275735862364L;
+	private static final long serialVersionUID = 2263396254476442768L;
 
 	/**
 	 * COMMISSION("COMMISSION", "返佣"),

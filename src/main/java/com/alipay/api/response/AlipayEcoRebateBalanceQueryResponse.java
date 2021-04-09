@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.rebate.balance.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-11 15:40:12
+ * @since 1.0, 2021-03-26 14:52:49
  */
 public class AlipayEcoRebateBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2619138849837321171L;
+	private static final long serialVersionUID = 2375435743297479296L;
 
 	/** 
 	 * 商户侧商品id

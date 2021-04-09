@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.file.sync.retry response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-20 15:52:28
+ * @since 1.0, 2021-04-06 11:45:21
  */
 public class AlipayEbppInvoiceFileSyncRetryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5712247122164451599L;
+	private static final long serialVersionUID = 3828398933465214878L;
 
 	
 

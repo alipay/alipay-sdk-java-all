@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ISVLogSync extends AlipayObject {
 
-	private static final long serialVersionUID = 7333719775814243968L;
+	private static final long serialVersionUID = 7726131911758788976L;
 
 	/**
 	 * 应用名

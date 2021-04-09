@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.card.formtemplate.set request
  * 
  * @author auto create
- * @since 1.0, 2020-12-30 18:12:59
+ * @since 1.0, 2021-03-25 11:01:28
  */
 public class AlipayMarketingCardFormtemplateSetRequest implements AlipayRequest<AlipayMarketingCardFormtemplateSetResponse> {
 

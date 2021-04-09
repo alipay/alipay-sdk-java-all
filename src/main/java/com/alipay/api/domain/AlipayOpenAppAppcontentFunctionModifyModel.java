@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 应用内容服务编辑
  *
  * @author auto create
- * @since 1.0, 2020-12-15 20:03:17
+ * @since 1.0, 2021-03-29 15:44:38
  */
 public class AlipayOpenAppAppcontentFunctionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5298561916729656379L;
+	private static final long serialVersionUID = 1237197472181431745L;
 
 	/**
 	 * 服务区域编码，默认值为 1，表示全国范围。

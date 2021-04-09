@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicAccountResetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3885547584521494875L;
+	private static final long serialVersionUID = 7671915753473228233L;
 
 	/**
-	 * 需要重置的协议号，商户会员在支付宝服务窗账号中的唯一标识
+	 * 需要重置的协议号，商户会员在支付宝生活号账号中的唯一标识。
 	 */
 	@ApiField("agreement_id")
 	private String agreementId;
@@ -26,13 +26,15 @@ public class AlipayOpenPublicAccountResetModel extends AlipayObject {
 	private String bindAccountNo;
 
 	/**
-	 * 开发者期望在服务窗首页看到的关于该用户的显示信息，最长10个字符
+	 * 商户期望在生活号首页看到的关于该用户的显示信息，最长10个字符。
+
 	 */
 	@ApiField("display_name")
 	private String displayName;
 
 	/**
-	 * 要绑定的商户会员对应的支付宝userid，2088开头长度为16位的字符串
+	 * 要绑定的商户会员对应的支付宝唯一标识，2088开头长度为16位的字符串。
+
 	 */
 	@ApiField("from_user_id")
 	private String fromUserId;

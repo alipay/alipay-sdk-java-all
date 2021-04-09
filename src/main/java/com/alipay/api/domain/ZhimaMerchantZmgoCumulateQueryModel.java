@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantZmgoCumulateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8192394243389482179L;
+	private static final long serialVersionUID = 1645159278944343245L;
 
 	/**
 	 * 芝麻go协议号，唯一标识一个芝麻go协议。
@@ -20,7 +20,9 @@ public class ZhimaMerchantZmgoCumulateQueryModel extends AlipayObject {
 	private String agreementId;
 
 	/**
-	 * 是否需要回传明细
+	 * 是否需要回传明细。枚举支持：
+* true：需要回传明细。
+* false：不需要回传明细。
 	 */
 	@ApiField("need_detail")
 	private Boolean needDetail;
@@ -38,13 +40,13 @@ public class ZhimaMerchantZmgoCumulateQueryModel extends AlipayObject {
 	private Long pageSize;
 
 	/**
-	 * 数据回传的商户主体PID。
+	 * 数据回传的商户 ID，即和用户发生业务来往的 PID 主体。商户账号在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
 	 */
 	@ApiField("provider_pid")
 	private String providerPid;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
 	 */
 	@ApiField("user_id")
 	private String userId;

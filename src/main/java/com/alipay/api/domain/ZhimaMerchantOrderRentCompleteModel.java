@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantOrderRentCompleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5432997447855174962L;
+	private static final long serialVersionUID = 8655511725778775453L;
 
 	/**
 	 * 扩展信息。商户发起借用服务时的扩展信息字段，格式：json，注意，如果字符串对应的json对象包含中文字符，需要对包含中文的字段进行编码
@@ -20,7 +20,7 @@ public class ZhimaMerchantOrderRentCompleteModel extends AlipayObject {
 	private String extendInfo;
 
 	/**
-	 * 信用借还订单号
+	 * 信用借还订单号，通过<a href="https://opendocs.alipay.com/apis/api_8/zhima.merchant.order.rent.create">zhima.merchant.order.rent.create</a>(信用借还订单创建(页面))接口创建信用借还订单后获取。
 	 */
 	@ApiField("order_no")
 	private String orderNo;
@@ -40,7 +40,7 @@ DAMAGE:赔偿金
 	private String payAmountType;
 
 	/**
-	 * 信用借还的产品码:w1010100000000002858
+	 * 信用借还的产品码，固定为：w1010100000000002858。
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -53,6 +53,7 @@ DAMAGE:赔偿金
 
 	/**
 	 * 物品实际归还时间，borrow_time<restore_time<当前时间+24小时，即该时间不能早于借还订单创建时的borrow_time，且最晚不能晚于当前时间后24小时。
+时间格式为 yyyy-mm-dd hh:MM:ss。
 	 */
 	@ApiField("restore_time")
 	private String restoreTime;

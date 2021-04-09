@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个人涉诉记录查询
  *
  * @author auto create
- * @since 1.0, 2020-07-10 10:32:41
+ * @since 1.0, 2021-03-30 15:09:29
  */
 public class ZhimaCreditPeLawsuitRecordGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3539129885294348913L;
+	private static final long serialVersionUID = 2682417278513861127L;
 
 	/**
 	 * 个人的身份证号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 打印消息发送
  *
  * @author auto create
- * @since 1.0, 2020-08-04 21:17:20
+ * @since 1.0, 2021-04-07 15:10:03
  */
 public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5322552895265461347L;
+	private static final long serialVersionUID = 8769859128755491329L;
 
 	/**
 	 * 消息是否必达(immediate_msg为false时此字段设置有效)，消息过期时间顺延3*24h. 建议使用expire_time设置消息过期时间

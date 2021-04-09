@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务修改
  *
  * @author auto create
- * @since 1.0, 2021-03-18 11:48:49
+ * @since 1.0, 2021-04-09 11:34:09
  */
 public class AlipayOpenAppServiceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4281916745732166133L;
+	private static final long serialVersionUID = 8663921614736553857L;
 
 	/**
 	 * 服务schema版本
@@ -22,8 +22,8 @@ public class AlipayOpenAppServiceModifyModel extends AlipayObject {
 	/**
 	 * 服务id
 	 */
-	@ApiField("service_id")
-	private String serviceId;
+	@ApiField("service_code")
+	private String serviceCode;
 
 	/**
 	 * 服务内容xml格式
@@ -38,11 +38,11 @@ public class AlipayOpenAppServiceModifyModel extends AlipayObject {
 		this.schemaVersion = schemaVersion;
 	}
 
-	public String getServiceId() {
-		return this.serviceId;
+	public String getServiceCode() {
+		return this.serviceCode;
 	}
-	public void setServiceId(String serviceId) {
-		this.serviceId = serviceId;
+	public void setServiceCode(String serviceCode) {
+		this.serviceCode = serviceCode;
 	}
 
 	public String getServiceXml() {

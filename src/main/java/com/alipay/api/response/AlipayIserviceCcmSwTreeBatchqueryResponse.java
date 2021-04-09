@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TreeInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -9,22 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.sw.tree.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-26 15:20:17
+ * @since 1.0, 2021-03-30 20:17:32
  */
 public class AlipayIserviceCcmSwTreeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5351893891158628456L;
+	private static final long serialVersionUID = 2114664217117642321L;
 
 	/** 
 	 * 类目集合
 	 */
-	@ApiField("trees")
-	private TreeInfo trees;
+	@ApiListField("trees")
+	@ApiField("tree_info")
+	private List<TreeInfo> trees;
 
-	public void setTrees(TreeInfo trees) {
+	public void setTrees(List<TreeInfo> trees) {
 		this.trees = trees;
 	}
-	public TreeInfo getTrees( ) {
+	public List<TreeInfo> getTrees( ) {
 		return this.trees;
 	}
 

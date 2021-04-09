@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即时配送订单扩展
  *
  * @author auto create
- * @since 1.0, 2020-09-20 10:48:12
+ * @since 1.0, 2021-03-24 10:05:51
  */
 public class OrderExtIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 1615998473146385366L;
+	private static final long serialVersionUID = 6273688881457295625L;
 
 	/**
 	 * 骑手应付金额
@@ -104,6 +104,12 @@ public class OrderExtIstd extends AlipayObject {
 	 */
 	@ApiField("poi_seq")
 	private String poiSeq;
+
+	/**
+	 * 即时配送公司的服务代码
+	 */
+	@ApiField("service_code")
+	private String serviceCode;
 
 	public String getCashOnDelivery() {
 		return this.cashOnDelivery;
@@ -208,6 +214,13 @@ public class OrderExtIstd extends AlipayObject {
 	}
 	public void setPoiSeq(String poiSeq) {
 		this.poiSeq = poiSeq;
+	}
+
+	public String getServiceCode() {
+		return this.serviceCode;
+	}
+	public void setServiceCode(String serviceCode) {
+		this.serviceCode = serviceCode;
 	}
 
 }

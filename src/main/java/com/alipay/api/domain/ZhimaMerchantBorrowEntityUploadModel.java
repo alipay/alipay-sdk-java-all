@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4193766391917229328L;
+	private static final long serialVersionUID = 4679118726263884196L;
 
 	/**
 	 * 地址描述
@@ -32,9 +32,10 @@ public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 	private String canBorrowCnt;
 
 	/**
-	 * 类目Code，传入芝麻借还规定的类目Code，其他值会认为非法参数，参数值如下：
-雨伞：umbrella 
-充电宝：power_bank
+	 * 类目Code，传入芝麻借还规定的类目Code，其他值会认为非法参数，枚举如下：
+*雨伞：umbrella
+*充电宝：power_bank
+注意：联调测试情况下，类目Code必须传如 test。
 	 */
 	@ApiField("category_code")
 	private String categoryCode;
@@ -89,7 +90,7 @@ public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 	private String officeHoursDesc;
 
 	/**
-	 * 信用借还的签约产品码,传入固定值:w1010100000000002858
+	 * 信用借还的签约产品码，固定为：w1010100000000002858。
 	 */
 	@ApiField("product_code")
 	private String productCode;

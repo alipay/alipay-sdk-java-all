@@ -14,23 +14,26 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicMessageTotalSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1789177927312736564L;
+	private static final long serialVersionUID = 5439333555261387973L;
 
 	/**
-	 * 图文消息，当msg_type为image-text，该值必须设置
+	 * 图文消息，当 msg_type为image-text，本参数必填。
+
 	 */
 	@ApiListField("articles")
 	@ApiField("article")
 	private List<Article> articles;
 
 	/**
-	 * 消息类型，text：文本消息，image-text：图文消息
+	 * 消息类型。枚举支持：
+* text：表示文本消息；
+* image-text：表示图文消息。
 	 */
 	@ApiField("msg_type")
 	private String msgType;
 
 	/**
-	 * 文本消息内容，当msg_type为text，必须设置该值
+	 * 当msg_type为text，本参数必填。
 	 */
 	@ApiField("text")
 	private Text text;

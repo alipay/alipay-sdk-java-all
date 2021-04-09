@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4675746766814111457L;
+	private static final long serialVersionUID = 4221251739519982555L;
 
 	/**
 	 * 需要修改的最新卡信息
@@ -49,21 +49,20 @@ public class AlipayMarketingCardUpdateModel extends AlipayObject {
 	private List<McardNotifyMessage> notifyMessages;
 
 	/**
-	 * 标识业务发生的时间。 时间格式：yyyy-MM-dd HH:mm:ss 。
-
+	 * 标识业务发生时间，时间格式为"yyyy-MM-dd HH:mm:ss"。
 	 */
 	@ApiField("occur_time")
 	private Date occurTime;
 
 	/**
-	 * 支付宝业务卡号，即 alipay.marketing.card.open(会员卡开卡)返回结果中的card_info#biz_card_no。
+	 * 支付宝业务卡号，即通过<a href="">alipay.marketing.card.open</a>(会员卡开卡)接口开卡后获取的 card_info.biz_card_no 值。
 	 */
 	@ApiField("target_card_no")
 	private String targetCardNo;
 
 	/**
-	 * 卡号ID类型
-BIZ_CARD：支付宝业务卡号
+	 * 卡号ID类型。支持：
+BIZ_CARD：支付宝业务卡号（商户会员卡场景使用）。
 	 */
 	@ApiField("target_card_no_type")
 	private String targetCardNoType;

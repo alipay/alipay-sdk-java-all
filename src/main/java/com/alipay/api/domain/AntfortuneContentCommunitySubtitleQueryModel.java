@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询字幕的纠正文案
  *
  * @author auto create
- * @since 1.0, 2021-03-19 17:30:30
+ * @since 1.0, 2021-04-01 20:51:09
  */
 public class AntfortuneContentCommunitySubtitleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2758356466884582186L;
+	private static final long serialVersionUID = 5879466684771443422L;
 
 	/**
 	 * 10s内字幕文本，最多1000个字

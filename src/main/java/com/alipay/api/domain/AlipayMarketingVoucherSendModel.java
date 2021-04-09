@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingVoucherSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7593488873262953638L;
+	private static final long serialVersionUID = 2622863929861887958L;
 
 	/**
 	 * 券金额。浮点数，格式为#.00，单位是元。红包发放时填写，其它情形不能填
@@ -50,7 +50,8 @@ public class AlipayMarketingVoucherSendModel extends AlipayObject {
 	private String taobaoNick;
 
 	/**
-	 * 券模板ID
+	 * 券模板ID。如
+<a href="https://opendocs.alipay.com/open/20170515180730063964/oe1vs5">无资金优惠券</a>、<a href="https://opendocs.alipay.com/open/20170320142638022200/fgxzva">现金抵价券</a> 创建的券模板id。
 	 */
 	@ApiField("template_id")
 	private String templateId;

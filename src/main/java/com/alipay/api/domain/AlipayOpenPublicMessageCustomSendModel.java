@@ -14,17 +14,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicMessageCustomSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7291185855274693595L;
+	private static final long serialVersionUID = 7776925686849943326L;
 
 	/**
-	 * 图文消息，当msg_type为image-text时，必须存在相对应的值
+	 * msg_type为image-text，本参数必填。
+
 	 */
 	@ApiListField("articles")
 	@ApiField("article")
 	private List<Article> articles;
 
 	/**
-	 * 是否是聊天消息。支持值：0，1，当值为0时，代表是非聊天消息，消息显示在生活号主页，当值为1时，代表是聊天消息，消息显示在咨询反馈列表页。默认值为0
+	 * 是否为聊天消息。枚举支持：
+*0：代表非聊天消息，消息显示在生活号主页，默认为 0。
+*1：代表是聊天消息，消息显示在咨询反馈列表页。
 	 */
 	@ApiField("chat")
 	private String chat;
@@ -36,13 +39,16 @@ public class AlipayOpenPublicMessageCustomSendModel extends AlipayObject {
 	private String eventType;
 
 	/**
-	 * 消息类型，text：文本消息，image-text：图文消息
+	 * 消息类型。枚举支持：
+* text：表示文本消息；
+* image-text：表示图文消息。
 	 */
 	@ApiField("msg_type")
 	private String msgType;
 
 	/**
-	 * 当msg_type为text时，必须设置相对应的值
+	 *  文本消息内容，当msg_type为text，本参数必填。
+
 	 */
 	@ApiField("text")
 	private Text text;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝根据用户id查询券信息
  *
  * @author auto create
- * @since 1.0, 2020-11-26 15:06:13
+ * @since 1.0, 2021-03-31 14:47:22
  */
 public class AlipayMarketingCampaignUserVoucherBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7882917772715687925L;
+	private static final long serialVersionUID = 5641784528461745536L;
 
 	/**
 	 * 分页查询的当前页号,从1开始
@@ -25,6 +25,12 @@ public class AlipayMarketingCampaignUserVoucherBatchqueryModel extends AlipayObj
 	@ApiField("page_size")
 	private String pageSize;
 
+	/**
+	 * 券状态： 可用(ENABLED)，已核销(即完全使用，USED)，已过期(EXPIRED)，不可用(DISABLED)
+	 */
+	@ApiField("voucher_status")
+	private String voucherStatus;
+
 	public String getPageNumber() {
 		return this.pageNumber;
 	}
@@ -37,6 +43,13 @@ public class AlipayMarketingCampaignUserVoucherBatchqueryModel extends AlipayObj
 	}
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getVoucherStatus() {
+		return this.voucherStatus;
+	}
+	public void setVoucherStatus(String voucherStatus) {
+		this.voucherStatus = voucherStatus;
 	}
 
 }

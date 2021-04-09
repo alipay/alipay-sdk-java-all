@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.shake.user.query request
  * 
  * @author auto create
- * @since 1.0, 2021-01-11 17:26:34
+ * @since 1.0, 2021-04-07 16:50:18
  */
 public class AlipayMobileShakeUserQueryRequest implements AlipayRequest<AlipayMobileShakeUserQueryResponse> {
 

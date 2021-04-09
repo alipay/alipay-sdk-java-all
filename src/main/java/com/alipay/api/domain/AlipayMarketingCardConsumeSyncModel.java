@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardConsumeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1858729816748971976L;
+	private static final long serialVersionUID = 6736144125297956932L;
 
 	/**
 	 * 用户实际付的现金金额
@@ -51,23 +51,23 @@ public class AlipayMarketingCardConsumeSyncModel extends AlipayObject {
 	private String shopCode;
 
 	/**
-	 * 产生该笔交易时，用户出具的凭证类型
-ALIPAY：支付宝电子卡
-ENTITY：实体卡
-OTHER：其他
+	 * 产生该笔交易时，用户出具的凭证类型。枚举支持：
+*ALIPAY：支付宝电子卡；
+*ENTITY：实体卡；
+*OTHER：其他。
 	 */
 	@ApiField("swipe_cert_type")
 	private String swipeCertType;
 
 	/**
-	 * 支付宝业务卡号，开卡接口中返回获取
+	 * 支付宝业务卡号，即通过<a href="">alipay.marketing.card.open</a>(会员卡开卡)接口开卡后获取的 card_info.biz_card_no 值。
 	 */
 	@ApiField("target_card_no")
 	private String targetCardNo;
 
 	/**
-	 * 卡号类型
-BIZ_CARD：支付宝业务卡号
+	 * 卡号ID类型。支持：
+*BIZ_CARD：支付宝业务卡号（商户会员卡场景使用）。
 	 */
 	@ApiField("target_card_no_type")
 	private String targetCardNoType;
@@ -79,8 +79,7 @@ BIZ_CARD：支付宝业务卡号
 	private String tradeAmount;
 
 	/**
-	 * 交易名称
-为空时根据交易类型提供默认名称
+	 * 交易名称。为空时支付宝将根据交易类型提供默认名称。
 	 */
 	@ApiField("trade_name")
 	private String tradeName;
@@ -92,18 +91,18 @@ BIZ_CARD：支付宝业务卡号
 	private String tradeNo;
 
 	/**
-	 * 线下交易时间（是用户付款的交易时间）
-当交易时间晚于上次消费记录同步时间，则会发生卡信息变更
+	 * 线下交易时间，为用户付款的交易时间。
+说明：当交易时间晚于上次消费记录同步时间时，将变更会员卡信息。
 	 */
 	@ApiField("trade_time")
 	private Date tradeTime;
 
 	/**
-	 * 交易类型
-开卡：OPEN
-消费：TRADE
-充值：DEPOSIT
-退卡：RETURN
+	 * 交易类型。枚举支持：
+*开卡：OPEN；
+*消费：TRADE；
+*充值：DEPOSIT；
+*退卡：RETURN。
 	 */
 	@ApiField("trade_type")
 	private String tradeType;

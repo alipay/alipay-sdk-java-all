@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniMiniappFavoritegiftQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4377597523833421796L;
+	private static final long serialVersionUID = 4641527848524559778L;
 
 	/** 
 	 * 收藏有礼查询用户对应小程序的查询结果列表

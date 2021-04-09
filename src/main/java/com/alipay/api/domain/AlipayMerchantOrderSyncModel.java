@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2021-01-20 22:08:30
+ * @since 1.0, 2021-03-25 15:28:36
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6513689191328759931L;
+	private static final long serialVersionUID = 6419239921785217717L;
 
 	/**
 	 * 订单金额，单位为元。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
@@ -158,6 +158,12 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	 */
 	@ApiField("send_msg")
 	private String sendMsg;
+
+	/**
+	 * 服务code：传入小程序后台提报的服务id，将订单与服务关联，有利于提高服务曝光机会；入参服务id的类目须与订单类型相符，若不相符将会报错；如订单类型为“外卖”，则入参的服务ID所对应的服务类目也必须得是”外卖“；service_code 通过 alipay.open.app.appcontent.function.create(小程序服务创建)接口创建服务后获取。
+	 */
+	@ApiField("service_code")
+	private String serviceCode;
 
 	/**
 	 * 门店信息，扫码点餐获取返佣时必填。
@@ -339,6 +345,13 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	}
 	public void setSendMsg(String sendMsg) {
 		this.sendMsg = sendMsg;
+	}
+
+	public String getServiceCode() {
+		return this.serviceCode;
+	}
+	public void setServiceCode(String serviceCode) {
+		this.serviceCode = serviceCode;
 	}
 
 	public OrderShopInfo getShopInfo() {
