@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业费账单数据批量查询
  *
  * @author auto create
- * @since 1.0, 2018-06-09 20:13:42
+ * @since 1.0, 2021-04-09 14:43:39
  */
 public class AlipayEcoCplifeBillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5175131436822122983L;
+	private static final long serialVersionUID = 1724268351854316279L;
 
 	/**
 	 * 查询过滤条件之一：

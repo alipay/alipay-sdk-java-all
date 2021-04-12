@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝商户自营销信息查询
  *
  * @author auto create
- * @since 1.0, 2021-03-22 15:16:38
+ * @since 1.0, 2021-04-09 19:42:56
  */
 public class AlipayMarketingCampaignSelfActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7114881174832629669L;
+	private static final long serialVersionUID = 2668828838533459699L;
 
 	/**
 	 * b.alipay.com 运营中心配置后台-活动详情-活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
+
+	/**
+	 * 是否需要券核销范围信息（包括pid列表、门店id列表和小程序appid列表，由于字段可能较大默认不返回，业务方也请慎用。pid列表:PID，门店id列表:SHOP_ID，小程序appid列表:APP_ID）
+	 */
+	@ApiListField("need_use_scope_info")
+	@ApiField("string")
+	private List<String> needUseScopeInfo;
 
 	/**
 	 * 场景码：默认(DEFAULT)
@@ -35,6 +42,13 @@ public class AlipayMarketingCampaignSelfActivityQueryModel extends AlipayObject 
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
+	}
+
+	public List<String> getNeedUseScopeInfo() {
+		return this.needUseScopeInfo;
+	}
+	public void setNeedUseScopeInfo(List<String> needUseScopeInfo) {
+		this.needUseScopeInfo = needUseScopeInfo;
 	}
 
 	public List<String> getSceneCode() {

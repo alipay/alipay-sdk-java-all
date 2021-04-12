@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社区物业报事报修单状态更新
  *
  * @author auto create
- * @since 1.0, 2018-06-09 20:19:57
+ * @since 1.0, 2021-04-09 14:45:19
  */
 public class AlipayEcoCplifeRepairStatusUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4442472733212256865L;
+	private static final long serialVersionUID = 3647745468312996674L;
 
 	/**
 	 * 报修单状态明细

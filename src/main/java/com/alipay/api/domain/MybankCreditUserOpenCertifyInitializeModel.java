@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditUserOpenCertifyInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4193736892841477185L;
+	private static final long serialVersionUID = 5355121996149151569L;
 
 	/**
 	 * 认证场景码。入参支持的认证场景码和商户签约的认证场景相关，取值如下:
@@ -41,7 +41,7 @@ cert_no：证件号码，必填，填写需要验证的证件号码
 
 	/**
 	 * 商户个性化配置，格式为json，详细支持的字段说明为：
-return_url：需要回跳的目标地址，必填，一般指定为商户业务页面
+return_url：需要回跳的目标地址，必填，一般指定为商户业务页面。linked_merchant_app_id:商户的appid
 	 */
 	@ApiField("merchant_config")
 	private String merchantConfig;

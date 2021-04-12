@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务标准化的商户信息
  *
  * @author auto create
- * @since 1.0, 2021-03-22 14:58:22
+ * @since 1.0, 2021-04-11 09:02:56
  */
 public class CateringMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7662726253144573533L;
+	private static final long serialVersionUID = 4248376714962423388L;
 
 	/**
 	 * 品牌名称

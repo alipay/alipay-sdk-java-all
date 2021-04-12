@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询单个物业小区信息
  *
  * @author auto create
- * @since 1.0, 2018-06-09 20:14:02
+ * @since 1.0, 2021-04-09 14:43:01
  */
 public class AlipayEcoCplifeCommunityDetailsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1554654449573525993L;
+	private static final long serialVersionUID = 3573585176838311613L;
 
 	/**
 	 * 支付宝社区小区统一编号，必须在物业账号名下存在。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.community.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-19 16:45:42
+ * @since 1.0, 2021-04-09 14:43:56
  */
 public class AlipayEcoCplifeCommunityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5328657976521396711L;
+	private static final long serialVersionUID = 6527795641793138218L;
 
 	/** 
 	 * 若查询到符合条件的小区，返回物业小区摘要信息列表

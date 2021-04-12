@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAccountAliyunUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2816231124728891571L;
+	private static final long serialVersionUID = 6376345752785557446L;
 
 	/**
 	 * 与阿里云账号绑定的第三方平台的账号ID

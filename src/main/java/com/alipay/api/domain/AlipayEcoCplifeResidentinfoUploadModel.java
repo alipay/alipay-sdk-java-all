@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业小区业主信息上传
  *
  * @author auto create
- * @since 1.0, 2018-06-09 20:19:02
+ * @since 1.0, 2021-04-09 14:45:52
  */
 public class AlipayEcoCplifeResidentinfoUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5436655356879197213L;
+	private static final long serialVersionUID = 7781548633334915471L;
 
 	/**
 	 * 请求流水号，由商户自定义，在商户系统内唯一标示一次业务请求。

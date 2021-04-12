@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除物业小区住户信息
  *
  * @author auto create
- * @since 1.0, 2018-06-09 20:18:10
+ * @since 1.0, 2021-04-09 14:46:00
  */
 public class AlipayEcoCplifeResidentinfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3663624859673927457L;
+	private static final long serialVersionUID = 6548128219948178654L;
 
 	/**
 	 * 待删除的住户所在的小区ID(支付宝平台统一小区ID标识)

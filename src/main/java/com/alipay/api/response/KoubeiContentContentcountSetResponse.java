@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiContentContentcountSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5274269358335496986L;
+	private static final long serialVersionUID = 7845424573923556671L;
 
 	/** 
 	 * 口碑内容的唯一id

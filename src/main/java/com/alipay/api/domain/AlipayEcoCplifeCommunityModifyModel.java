@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 变更物业小区信息
  *
  * @author auto create
- * @since 1.0, 2018-06-09 20:16:03
+ * @since 1.0, 2021-04-09 14:42:35
  */
 public class AlipayEcoCplifeCommunityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2497385431853618751L;
+	private static final long serialVersionUID = 4171885979221822867L;
 
 	/**
 	 * 若开发者录入的物业小区需要精确对应地图上多个小区（比如物业系统中的小区包含类似一期二期、或东区西区的组团结构），以便后续线上推广时覆盖到对应小区的住户，可以指定关联的高德地图中住宅、住宿或地名地址等小区相关类型的POI（地图兴趣点）ID列表。

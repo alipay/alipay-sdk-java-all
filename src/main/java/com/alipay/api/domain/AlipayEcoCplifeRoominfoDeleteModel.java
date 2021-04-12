@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除物业小区房屋信息
  *
  * @author auto create
- * @since 1.0, 2018-06-09 20:18:50
+ * @since 1.0, 2021-04-09 14:43:48
  */
 public class AlipayEcoCplifeRoominfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7876425558477166952L;
+	private static final long serialVersionUID = 4619757185386933893L;
 
 	/**
 	 * 请求批次号，由商户自定义，在商户系统内唯一标示一次业务请求。

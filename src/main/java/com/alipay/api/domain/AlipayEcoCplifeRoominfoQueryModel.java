@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户根据需要调用该接口查询小区房屋信息列表。
  *
  * @author auto create
- * @since 1.0, 2018-06-09 20:17:57
+ * @since 1.0, 2021-04-09 14:41:39
  */
 public class AlipayEcoCplifeRoominfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8649156137856517584L;
+	private static final long serialVersionUID = 8284473657849269822L;
 
 	/**
 	 * 传入该小区在支付宝社区物业平台中的唯一编号，通过小区创建和查询接口获取。
