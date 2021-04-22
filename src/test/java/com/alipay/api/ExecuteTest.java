@@ -1,6 +1,7 @@
 package com.alipay.api;
 
 import com.alipay.api.domain.AlipayTradeCreateModel;
+import com.alipay.api.internal.util.AlipayLogger;
 import com.alipay.api.internal.util.WebUtils;
 import com.alipay.api.request.AlipayOfflineMaterialImageUploadRequest;
 import com.alipay.api.request.AlipayTradeCreateRequest;
@@ -25,6 +26,7 @@ public class ExecuteTest {
 
     @Before
     public void setUp() {
+        AlipayLogger.isBizDebugEnabled() = false;
         alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.GATEWAY, TestAccount.Sandbox.APP_ID, TestAccount.Sandbox.APP_PRIVATE_KEY,
                 "json", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2");
     }

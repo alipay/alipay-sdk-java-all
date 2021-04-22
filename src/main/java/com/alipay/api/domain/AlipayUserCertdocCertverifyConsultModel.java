@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 实名证件信息比对验证咨询
  *
  * @author auto create
- * @since 1.0, 2021-03-03 15:17:10
+ * @since 1.0, 2021-04-20 17:24:22
  */
 public class AlipayUserCertdocCertverifyConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4724926927873164455L;
+	private static final long serialVersionUID = 7468711925795811984L;
 
 	/**
-	 * 信息校验验证ID
+	 * 信息校验验证ID。通过<a href="https://opendocs.alipay.com/apis/api_2/alipay.user.certdoc.certverify.preconsult">alipay.user.certdoc.certverify.preconsult</a>(实名证件信息比对验证预咨询)接口获取。
 	 */
 	@ApiField("verify_id")
 	private String verifyId;

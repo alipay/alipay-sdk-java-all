@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAgentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5117364145211333419L;
+	private static final long serialVersionUID = 1234737896442931357L;
 
 	/**
 	 * isv代操作的商户账号，可以是支付宝账号，也可以是pid（2088开头）
@@ -26,7 +26,7 @@ public class AlipayOpenAgentCreateModel extends AlipayObject {
 	private ContactModel contactInfo;
 
 	/**
-	 * 订单授权凭证，填写都则对应事务提交进入预授权模式
+	 * 订单授权凭证。若传入本参数，则对应事务提交后进入预授权模式。
 	 */
 	@ApiField("order_ticket")
 	private String orderTicket;

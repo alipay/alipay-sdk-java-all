@@ -11,14 +11,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.payforprivilege.uselog.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-14 15:37:06
+ * @since 1.0, 2021-04-19 16:40:18
  */
 public class AlipayMerchantPayforprivilegeUselogBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4741683525244489875L;
+	private static final long serialVersionUID = 1386931132147899784L;
 
 	/** 
-	 * 充享惠使用记录
+	 * 余额使用记录
 	 */
 	@ApiListField("use_log_list")
 	@ApiField("pay_for_privilege_recharge_card_use_log")

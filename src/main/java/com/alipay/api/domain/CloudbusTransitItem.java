@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客流走廊地址列表
  *
  * @author auto create
- * @since 1.0, 2019-12-10 22:35:28
+ * @since 1.0, 2021-04-20 10:16:30
  */
 public class CloudbusTransitItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3811928689653996944L;
+	private static final long serialVersionUID = 8526868871317748319L;
 
 	/**
 	 * 月份

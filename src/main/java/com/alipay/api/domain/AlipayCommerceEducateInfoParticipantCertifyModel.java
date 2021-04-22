@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 参赛者信息校验接口
  *
  * @author auto create
- * @since 1.0, 2021-03-11 21:27:41
+ * @since 1.0, 2021-04-15 18:32:22
  */
 public class AlipayCommerceEducateInfoParticipantCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1391749484466554264L;
+	private static final long serialVersionUID = 3638375643224813127L;
 
 	/**
 	 * 参赛者信息

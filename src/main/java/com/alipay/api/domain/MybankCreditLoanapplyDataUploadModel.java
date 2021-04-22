@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoanapplyDataUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8366411738481553453L;
+	private static final long serialVersionUID = 5852322354256457212L;
 
 	/**
 	 * 业务单编号。在申请场景下，就是申请单编号，唯一标识一笔贷款授信申请，获取方式：前提，和网商对接业务消息，biz_no是申请成功消息applicationEvent中的applicationCode字段，必填项。在其他场景，比如订单交易场景下，就是订单号。

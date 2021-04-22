@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预下单
  *
  * @author auto create
- * @since 1.0, 2021-03-03 23:18:19
+ * @since 1.0, 2021-04-15 21:14:01
  */
 public class AlipayOverseasOpenPreorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2156661872614452378L;
+	private static final long serialVersionUID = 3628743271255186532L;
 
 	/**
 	 * ISV机构信息
 	 */
 	@ApiField("agent_info")
 	private TuitionISVAgentInfoDTO agentInfo;
+
+	/**
+	 * 是否完成自审
+	 */
+	@ApiField("finish_self_audit")
+	private Boolean finishSelfAudit;
 
 	/**
 	 * 付款人信息
@@ -48,6 +54,13 @@ public class AlipayOverseasOpenPreorderCreateModel extends AlipayObject {
 	}
 	public void setAgentInfo(TuitionISVAgentInfoDTO agentInfo) {
 		this.agentInfo = agentInfo;
+	}
+
+	public Boolean getFinishSelfAudit() {
+		return this.finishSelfAudit;
+	}
+	public void setFinishSelfAudit(Boolean finishSelfAudit) {
+		this.finishSelfAudit = finishSelfAudit;
 	}
 
 	public TuitionISVPayerInfoDTO getPayerInfo() {

@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayCommerceEducateXuexinIdentityQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.xuexin.identity.query request
  * 
  * @author auto create
- * @since 1.0, 2021-04-08 15:09:41
+ * @since 1.0, 2021-04-12 15:12:37
  */
 public class AlipayCommerceEducateXuexinIdentityQueryRequest implements AlipayRequest<AlipayCommerceEducateXuexinIdentityQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 支付宝标准用户学信网在校信息授权查询
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayCommerceEducateXuexinIdentityQueryRequest implements AlipayRe
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

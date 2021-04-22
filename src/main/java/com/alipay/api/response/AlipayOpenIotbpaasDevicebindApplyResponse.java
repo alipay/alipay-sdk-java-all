@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotbpaas.devicebind.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-29 16:10:16
+ * @since 1.0, 2021-04-16 17:10:18
  */
 public class AlipayOpenIotbpaasDevicebindApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5242339857577672232L;
+	private static final long serialVersionUID = 2337596772476125941L;
 
 	/** 
 	 * 绑定信息
@@ -22,7 +22,12 @@ public class AlipayOpenIotbpaasDevicebindApplyResponse extends AlipayResponse {
 	private IoTBPaaSDeviceApplyBindInfo bindInfo;
 
 	/** 
-	 * 绑定状态：1、已绑定；2、未绑定；3、绑定中；4、绑定失败；5、无效token；
+	 * 绑定状态，枚举如下：
+* 1：已绑定；
+* 2：未绑定；
+* 3：绑定中；
+* 4：绑定失败；
+* 5：无效token。
 	 */
 	@ApiField("bind_status")
 	private Long bindStatus;

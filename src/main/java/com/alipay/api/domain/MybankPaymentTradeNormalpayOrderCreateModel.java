@@ -7,82 +7,100 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付创建订单
  *
  * @author auto create
- * @since 1.0, 2021-02-05 09:57:13
+ * @since 1.0, 2021-04-13 20:30:08
  */
 public class MybankPaymentTradeNormalpayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4694197666928431461L;
+	private static final long serialVersionUID = 5718853428734917814L;
 
 	/**
-	 * 订单金额
+	 * 订单金额，单位:分
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/**
 	 * 渠道类型，表示请求的来源
+ANT_OPEN=蚂蚁开放平台
 	 */
 	@ApiField("biz_channel")
 	private String bizChannel;
 
 	/**
-	 * 外部平台的单据号，网商订单与外部平台订单一一对应
+	 * 外部平台的单据号，建议和request_no保持一致
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
 
 	/**
-	 * 用户的网商卡号
+	 * 买家信息，user_info_type表示账户类型，ALIPAY_UID=支付宝UID，BANK_UID=网商会员角色ID，MYBANK_CARD_NO=网商卡号，样例内容是{"user_info_type":"ALIPAY_UID","user_info_id":"2088102146225135"}，在进行urlencode
+	 */
+	@ApiField("buyer_info")
+	private String buyerInfo;
+
+	/**
+	 * 网商卡号，具体是买方还是卖方，按接入场景而定，详情咨询开发小二
 	 */
 	@ApiField("card_no")
 	private String cardNo;
 
 	/**
-	 * 币种
+	 * 关单时间，格式是数字+单位，m=分钟，h=小时，d=天
+	 */
+	@ApiField("close_time")
+	private String closeTime;
+
+	/**
+	 * 币种，156=人民币
 	 */
 	@ApiField("currency_value")
 	private String currencyValue;
 
 	/**
-	 * 扩展参数，内容是JSON格式，并用urlconde编码，按场景约定具体字段
-ETC场景：
-etc_corp：高速公司名称
+	 * 扩展参数，内容是JSON格式，并用urlconde编码
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
 
 	/**
-	 * 用户在网商的会员ID
+	 * 网商会员ID，具体是买方还是卖方，按接入场景而定，详情咨询开发小二
 	 */
 	@ApiField("ipid")
 	private String ipid;
 
 	/**
-	 * 用户在网商的会员角色ID
+	 * 网商会员角色ID，具体是买方还是卖方，按接入场景而定，详情咨询开发小二
 	 */
 	@ApiField("iproleid")
 	private String iproleid;
 
 	/**
-	 * 订单类型
+	 * 订单类型，
+NORMAL_PAY=通用支付
 	 */
 	@ApiField("order_type")
 	private String orderType;
 
 	/**
-	 * 收方资产信息，内容是JSON格式，并用urlencode编码，按场景约定具体字段
+	 * 收方资产信息，内容是JSON格式，并用urlencode编码，样例内容是[{"accountName":"张三", "accountNo":"620227193903043336","accountType":"EXTEND_BANK_CARD"}]
 	 */
 	@ApiField("payee_fund_detail")
 	private String payeeFundDetail;
 
 	/**
-	 * 付方资产信息，内容是JSON格式，并用urlencode编码，按场景约定具体字段
+	 * 付方资产信息，内容是JSON格式，并用urlencode编码，样例内容是[{"accountName":"张三", "accountNo":"620227193903043336","accountType":"EXTEND_BANK_CARD"}]
 	 */
 	@ApiField("payer_fund_detail")
 	private String payerFundDetail;
 
 	/**
-	 * 请求流水号，表示外部一次请求，幂等字段
+	 * 网商对账单的备注信息
+	 */
+	@ApiField("remark")
+	private String remark;
+
+	/**
+	 * 请求流水号，表示外部一次请求，控重字段
 	 */
 	@ApiField("request_no")
 	private String requestNo;
@@ -92,6 +110,12 @@ etc_corp：高速公司名称
 	 */
 	@ApiField("request_time")
 	private String requestTime;
+
+	/**
+	 * 卖家信息，user_info_type表示账户类型，ALIPAY_UID=支付宝UID，BANK_UID=网商会员角色ID，MYBANK_CARD_NO=网商卡号，样例内容是{"user_info_type":"ALIPAY_UID","user_info_id":"2088102146225135"}，再进行urlencode
+	 */
+	@ApiField("seller_info")
+	private String sellerInfo;
 
 	public String getAmount() {
 		return this.amount;
@@ -114,11 +138,25 @@ etc_corp：高速公司名称
 		this.bizNo = bizNo;
 	}
 
+	public String getBuyerInfo() {
+		return this.buyerInfo;
+	}
+	public void setBuyerInfo(String buyerInfo) {
+		this.buyerInfo = buyerInfo;
+	}
+
 	public String getCardNo() {
 		return this.cardNo;
 	}
 	public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
+	}
+
+	public String getCloseTime() {
+		return this.closeTime;
+	}
+	public void setCloseTime(String closeTime) {
+		this.closeTime = closeTime;
 	}
 
 	public String getCurrencyValue() {
@@ -170,6 +208,13 @@ etc_corp：高速公司名称
 		this.payerFundDetail = payerFundDetail;
 	}
 
+	public String getRemark() {
+		return this.remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+
 	public String getRequestNo() {
 		return this.requestNo;
 	}
@@ -182,6 +227,13 @@ etc_corp：高速公司名称
 	}
 	public void setRequestTime(String requestTime) {
 		this.requestTime = requestTime;
+	}
+
+	public String getSellerInfo() {
+		return this.sellerInfo;
+	}
+	public void setSellerInfo(String sellerInfo) {
+		this.sellerInfo = sellerInfo;
 	}
 
 }

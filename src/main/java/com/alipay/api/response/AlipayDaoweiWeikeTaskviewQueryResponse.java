@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDaoweiWeikeTaskviewQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7334411886499296115L;
+	private static final long serialVersionUID = 7766265839394112718L;
 
 	/** 
 	 * 微客当前城市的任务视图列表

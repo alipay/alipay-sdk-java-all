@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能定价数据回流
  *
  * @author auto create
- * @since 1.0, 2020-01-06 16:31:24
+ * @since 1.0, 2021-04-19 15:23:26
  */
 public class AlipayDataAiservicePriceoptimizerDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4642763744467248215L;
+	private static final long serialVersionUID = 3677677138353111384L;
 
 	/**
 	 * 优惠算法类型，如： alipay_algo:支付宝算法 mer_algo:接入方自有算法 random:随机算法 fixed_amount:固定金额
@@ -54,7 +54,7 @@ public class AlipayDataAiservicePriceoptimizerDataSyncModel extends AlipayObject
 	/**
 	 * 扩展信息，json字符串格式。
 如：对于哈啰数据回流场景，这个字段内容为
-原opdata字段内容，注意在json字符串中新增priority字段表示该卡是否经过排序, 数字越大，优先级越高，-1表示没有经过排序
+原opdata字段内容，注意在json字符串中新增priority字段表示该卡是否经过排序, 数字越小，优先级越高，-1表示没有经过排序
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

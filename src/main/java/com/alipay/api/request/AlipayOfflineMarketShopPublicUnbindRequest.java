@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.market.shop.public.unbind request
  * 
  * @author auto create
- * @since 1.0, 2020-04-07 16:47:00
+ * @since 1.0, 2021-04-20 11:36:38
  */
 public class AlipayOfflineMarketShopPublicUnbindRequest implements AlipayRequest<AlipayOfflineMarketShopPublicUnbindResponse> {
 

@@ -9,15 +9,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单平台外部渠道支付结果同步消息
  *
  * @author auto create
- * @since 1.0, 2021-01-18 15:53:49
+ * @since 1.0, 2021-04-14 14:38:01
  */
 public class AlipayMerchantOrderExternalPaychannelSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6689569737223449616L;
+	private static final long serialVersionUID = 6449332688572932413L;
 
 	/**
-	 * isv测的业务订单号，等同于支付接口spi.alipay.merchant.order.commonisv.pay
-中的isv_order_no。
+	 * isv侧的业务订单号，等同于支付接口spi.alipay.merchant.order.commonisv.pay
+中的isv_order_no
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
@@ -77,7 +77,7 @@ public class AlipayMerchantOrderExternalPaychannelSyncModel extends AlipayObject
 	private String originTradeNo;
 
 	/**
-	 * 外部业务号
+	 * 外部业务号，等同于支付接口spi.alipay.merchant.order.commonisv.pay中的merchant_order_no
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv学校查询
  *
  * @author auto create
- * @since 1.0, 2021-03-03 23:19:26
+ * @since 1.0, 2021-04-15 21:14:04
  */
 public class AlipayOverseasOpenSchoolQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7166315574938676451L;
+	private static final long serialVersionUID = 3336544996658468665L;
 
 	/**
 	 * 学校名称

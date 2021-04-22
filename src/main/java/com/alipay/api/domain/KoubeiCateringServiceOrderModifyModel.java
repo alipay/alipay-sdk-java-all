@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订座/排队线下订单创建
  *
  * @author auto create
- * @since 1.0, 2019-05-16 10:38:58
+ * @since 1.0, 2021-04-16 14:40:26
  */
 public class KoubeiCateringServiceOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2349966788938975115L;
+	private static final long serialVersionUID = 6165961546265373734L;
 
 	/**
 	 * 订座信息。仅order_type=book有效

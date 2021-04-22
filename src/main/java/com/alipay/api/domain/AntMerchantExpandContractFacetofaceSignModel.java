@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开通当面付申请接口
  *
  * @author auto create
- * @since 1.0, 2017-06-14 12:07:18
+ * @since 1.0, 2021-04-15 12:12:37
  */
 public class AntMerchantExpandContractFacetofaceSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5567545369554497199L;
+	private static final long serialVersionUID = 8334771219748754613L;
 
 	/**
 	 * 营业执照授权函图片，个体工商户如果使用总公司或其他公司的营业执照认证需上传该授权函图片，通过ant.merchant.expand.image.upload接口上传营业执照授权函图片

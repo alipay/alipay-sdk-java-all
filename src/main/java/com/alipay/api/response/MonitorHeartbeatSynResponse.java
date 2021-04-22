@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MonitorHeartbeatSynResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2685138937258954875L;
+	private static final long serialVersionUID = 7865168229868264395L;
 
 	/** 
 	 * 商户pid

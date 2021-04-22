@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.payforprivilege.memberremaining.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-14 15:37:22
+ * @since 1.0, 2021-04-19 16:40:18
  */
 public class AlipayMerchantPayforprivilegeMemberremainingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4461122288751239788L;
+	private static final long serialVersionUID = 3753325749256644198L;
 
 	/** 
 	 * 余额中未使用的权益金部分

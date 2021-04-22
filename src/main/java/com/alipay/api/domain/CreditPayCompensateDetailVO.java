@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CreditPayCompensateDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3382447855798332322L;
+	private static final long serialVersionUID = 6728621979491238848L;
 
 	/**
 	 * 费用列表

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务提报申请
  *
  * @author auto create
- * @since 1.0, 2021-04-09 11:21:05
+ * @since 1.0, 2021-04-19 14:11:02
  */
 public class AlipayOpenAppServiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1784178196288521255L;
+	private static final long serialVersionUID = 5849532855463857469L;
 
 	/**
 	 * 行业类目id
 	 */
 	@ApiField("category_id")
 	private String categoryId;
+
+	/**
+	 * 外部业务编号,平台会基于appId+out_biz_no做幂等控制，如果出现幂等，会返回幂等的service_code
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 服务schema版本
@@ -36,6 +42,13 @@ public class AlipayOpenAppServiceApplyModel extends AlipayObject {
 	}
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public String getSchemaVersion() {

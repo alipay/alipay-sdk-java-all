@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建充值方案
  *
  * @author auto create
- * @since 1.0, 2020-07-14 15:37:14
+ * @since 1.0, 2021-04-19 16:39:47
  */
 public class AlipayMerchantPayforprivilegePromotionplanCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2351914158697378919L;
+	private static final long serialVersionUID = 8466936111654286235L;
 
 	/**
-	 * 充享惠方案权益金部分，最小为0，权益金不超过5000元
+	 * 充值方案权益金部分，最小为0，权益金不超过5000元
 	 */
 	@ApiField("benefit")
 	private String benefit;
@@ -36,14 +36,14 @@ public class AlipayMerchantPayforprivilegePromotionplanCreateModel extends Alipa
 	private String outBizNo;
 
 	/**
-	 * 充享惠方案有偿券部分，消费者充值成功后自动发放，如果不需要有偿券，指定空列表；有偿券的总金额不得超过10000元，且不得超过本金的2倍
+	 * 充值方案有偿券部分，消费者充值成功后自动发放，如果不需要有偿券，指定空列表；有偿券的总金额不得超过10000元，且不得超过本金的2倍
 	 */
 	@ApiListField("paid_voucher_list")
 	@ApiField("pay_for_privilege_paid_voucher_config")
 	private List<PayForPrivilegePaidVoucherConfig> paidVoucherList;
 
 	/**
-	 * 充享惠方案本金部分，单位元，必须大于0，本金不超过5000元
+	 * 充值方案本金部分，单位元，必须大于0，本金不超过5000元
 	 */
 	@ApiField("principal")
 	private String principal;

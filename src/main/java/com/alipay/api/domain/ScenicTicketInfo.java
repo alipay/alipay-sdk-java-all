@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门票信息
  *
  * @author auto create
- * @since 1.0, 2021-03-02 17:05:07
+ * @since 1.0, 2021-04-21 13:40:15
  */
 public class ScenicTicketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8186196636934285779L;
+	private static final long serialVersionUID = 2275545864464629572L;
 
 	/**
 	 * 自动检票时间
@@ -34,6 +34,14 @@ public class ScenicTicketInfo extends AlipayObject {
 	 */
 	@ApiField("close_time")
 	private Date closeTime;
+
+	/**
+	 * IDENTITY_CARD("IDENTITY_CARD_ONLY", "凭身份证入园"),
+QR_CODE("QR_CODE_ONLY", "凭二维码入园"),
+IDENTITY_CARD_AND_QR_CODE("IDENTITY_CARD_AND_QR_CODE", "凭二维码或身份证入园");
+	 */
+	@ApiField("enter_way")
+	private String enterWay;
 
 	/**
 	 * 扩展信息
@@ -132,6 +140,18 @@ REGION("REGION","区域票")
 	private String ticketType;
 
 	/**
+	 * 票凭证code
+	 */
+	@ApiField("ticket_use_code")
+	private String ticketUseCode;
+
+	/**
+	 * 购票二维码图片
+	 */
+	@ApiField("ticket_use_pic")
+	private String ticketUsePic;
+
+	/**
 	 * 使用结束日期
 	 */
 	@ApiField("use_end_date")
@@ -174,6 +194,13 @@ REGION("REGION","区域票")
 	}
 	public void setCloseTime(Date closeTime) {
 		this.closeTime = closeTime;
+	}
+
+	public String getEnterWay() {
+		return this.enterWay;
+	}
+	public void setEnterWay(String enterWay) {
+		this.enterWay = enterWay;
 	}
 
 	public List<ScenicExtInfo> getExtInfo() {
@@ -265,6 +292,20 @@ REGION("REGION","区域票")
 	}
 	public void setTicketType(String ticketType) {
 		this.ticketType = ticketType;
+	}
+
+	public String getTicketUseCode() {
+		return this.ticketUseCode;
+	}
+	public void setTicketUseCode(String ticketUseCode) {
+		this.ticketUseCode = ticketUseCode;
+	}
+
+	public String getTicketUsePic() {
+		return this.ticketUsePic;
+	}
+	public void setTicketUsePic(String ticketUsePic) {
+		this.ticketUsePic = ticketUsePic;
 	}
 
 	public Date getUseEndDate() {

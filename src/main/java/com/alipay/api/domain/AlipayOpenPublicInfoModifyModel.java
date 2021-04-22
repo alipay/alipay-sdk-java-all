@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务窗基础信息修改接口
  *
  * @author auto create
- * @since 1.0, 2020-04-08 21:33:37
+ * @since 1.0, 2021-04-20 11:36:05
  */
 public class AlipayOpenPublicInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4354963486648287162L;
+	private static final long serialVersionUID = 5433878971488355562L;
 
 	/**
 	 * 生活号名称，2-20个字之间。注意：

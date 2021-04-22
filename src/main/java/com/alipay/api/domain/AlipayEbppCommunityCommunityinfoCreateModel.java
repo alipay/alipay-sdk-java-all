@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小区创建
  *
  * @author auto create
- * @since 1.0, 2021-03-03 16:16:54
+ * @since 1.0, 2021-04-16 15:58:59
  */
 public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6225424241648659223L;
+	private static final long serialVersionUID = 2151537554632315168L;
 
 	/**
 	 * 别名
@@ -63,6 +63,12 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 外部小区号
+	 */
+	@ApiField("out_community_id")
+	private String outCommunityId;
 
 	/**
 	 * 地理信息
@@ -153,6 +159,13 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOutCommunityId() {
+		return this.outCommunityId;
+	}
+	public void setOutCommunityId(String outCommunityId) {
+		this.outCommunityId = outCommunityId;
 	}
 
 	public List<ExternalPoiInfo> getPois() {

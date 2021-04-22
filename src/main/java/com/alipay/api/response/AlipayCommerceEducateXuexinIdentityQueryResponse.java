@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.xuexin.identity.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-08 15:09:41
+ * @since 1.0, 2021-04-12 15:12:37
  */
 public class AlipayCommerceEducateXuexinIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5538723695996155562L;
+	private static final long serialVersionUID = 1831567692217586596L;
 
 	/** 
 	 * 0表示非学生,1表示学生
@@ -26,6 +26,17 @@ public class AlipayCommerceEducateXuexinIdentityQueryResponse extends AlipayResp
 	@ApiField("graduate_time")
 	private String graduateTime;
 
+	/** 
+	 * 学信网返回不是学生原因，仅6要素校验提供。
+"LEVEL_NO_MATCH", "教育层次校验失败"
+"SCHOOL_NO_MATCH", "学校校验失败"
+"ENROLL_DATE_NO_MATCH", "入学日期校验失败"
+"DEGREE_NO_MATCH", "学历校验失败"
+"IDENTITY_CARD_NO_MATCH", "证件类型不是身份证"
+	 */
+	@ApiField("reason_code")
+	private String reasonCode;
+
 	public void setCollegeOnlineTag(String collegeOnlineTag) {
 		this.collegeOnlineTag = collegeOnlineTag;
 	}
@@ -38,6 +49,13 @@ public class AlipayCommerceEducateXuexinIdentityQueryResponse extends AlipayResp
 	}
 	public String getGraduateTime( ) {
 		return this.graduateTime;
+	}
+
+	public void setReasonCode(String reasonCode) {
+		this.reasonCode = reasonCode;
+	}
+	public String getReasonCode( ) {
+		return this.reasonCode;
 	}
 
 }

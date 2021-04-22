@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2021-04-08 19:40:49
+ * @since 1.0, 2021-04-20 15:45:07
  */
 public class CateringGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6369281955665725941L;
+	private static final long serialVersionUID = 6297346544728165345L;
 
 	/**
-	 * 商品扩展字段
+	 * 商品扩展字段，商品信息扩展，key：good_ classification，value：drink
 	 */
 	@ApiListField("goods_extra_info")
 	@ApiField("extra_info")

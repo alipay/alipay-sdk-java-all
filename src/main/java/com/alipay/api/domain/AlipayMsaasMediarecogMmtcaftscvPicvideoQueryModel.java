@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图片视频捞取请求
  *
  * @author auto create
- * @since 1.0, 2019-06-19 21:15:41
+ * @since 1.0, 2021-04-13 19:09:44
  */
 public class AlipayMsaasMediarecogMmtcaftscvPicvideoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6772517148965862466L;
+	private static final long serialVersionUID = 7322998284863275225L;
 
 	/**
 	 * 请求Id

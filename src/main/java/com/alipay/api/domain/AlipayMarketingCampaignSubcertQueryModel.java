@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignSubcertQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6564215863162384776L;
+	private static final long serialVersionUID = 8319378973727154124L;
 
 	/**
 	 * 用户登录账号名：邮箱或手机号。已知支付宝账号的活动触发调用中，user_id与login_id至少有一个非空，都非空时，以user_id为准。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certdoc.certverify.consult request
  * 
  * @author auto create
- * @since 1.0, 2021-03-03 15:17:10
+ * @since 1.0, 2021-04-20 17:25:19
  */
 public class AlipayUserCertdocCertverifyConsultRequest implements AlipayRequest<AlipayUserCertdocCertverifyConsultResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公交客流走廊
  *
  * @author auto create
- * @since 1.0, 2020-10-21 10:37:17
+ * @since 1.0, 2021-04-19 18:42:50
  */
 public class AlipayDataAiserviceCloudbusTransitorridorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3734436254788949923L;
+	private static final long serialVersionUID = 3819351985339266755L;
 
 	/**
 	 * 接口版本控制

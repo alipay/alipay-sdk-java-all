@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 可订座时间段回流
  *
  * @author auto create
- * @since 1.0, 2019-05-16 10:38:41
+ * @since 1.0, 2021-04-20 11:44:20
  */
 public class KoubeiCateringBookShopbooktableSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2365868756132886515L;
+	private static final long serialVersionUID = 4147697816841679855L;
 
 	/**
 	 * 可选时间段

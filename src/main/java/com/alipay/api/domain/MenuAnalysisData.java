@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MenuAnalysisData extends AlipayObject {
 
-	private static final long serialVersionUID = 1758789446697684135L;
+	private static final long serialVersionUID = 3354362145184183281L;
 
 	/**
 	 * 人均点击次数

@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.normalpay.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-05 09:59:57
+ * @since 1.0, 2021-04-13 20:32:33
  */
 public class MybankPaymentTradeNormalpayOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3169231355949688565L;
+	private static final long serialVersionUID = 5253924275659723527L;
 
 	/** 
-	 * 网商受理退款操作返回的流水号
+	 * 网商退款流水号
 	 */
 	@ApiField("operate_no")
 	private String operateNo;
@@ -33,7 +33,7 @@ public class MybankPaymentTradeNormalpayOrderRefundResponse extends AlipayRespon
 	private String requestNo;
 
 	/** 
-	 * 外部平台是否需要原单重试，失败时有值
+	 * 外部平台是否需要原单重试，失败时有值，true=可重试，false=不可重试
 	 */
 	@ApiField("retry")
 	private String retry;

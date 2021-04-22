@@ -8,14 +8,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.normalpay.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-05 09:57:13
+ * @since 1.0, 2021-04-13 20:30:19
  */
 public class MybankPaymentTradeNormalpayOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4585398828243336212L;
+	private static final long serialVersionUID = 1537583947143532873L;
 
 	/** 
-	 * 网商创建的订单号
+	 * 场景端依赖该URL，拉起网商收银台，需和支付渠道的http前缀结合
+	 */
+	@ApiField("cashier_url")
+	private String cashierUrl;
+
+	/** 
+	 * 网商订单号
 	 */
 	@ApiField("order_no")
 	private String orderNo;
@@ -33,10 +39,17 @@ public class MybankPaymentTradeNormalpayOrderCreateResponse extends AlipayRespon
 	private String requestNo;
 
 	/** 
-	 * 外部平台是否可重试，失败时有值
+	 * 外部平台判断是否可重试，失败时有值，true=可重试，false=不可重试
 	 */
 	@ApiField("retry")
 	private Boolean retry;
+
+	public void setCashierUrl(String cashierUrl) {
+		this.cashierUrl = cashierUrl;
+	}
+	public String getCashierUrl( ) {
+		return this.cashierUrl;
+	}
 
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;

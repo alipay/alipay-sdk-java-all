@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工商个体户入驻接口
  *
  * @author auto create
- * @since 1.0, 2016-09-26 13:19:43
+ * @since 1.0, 2021-04-19 17:35:51
  */
 public class AntMerchantExpandPersonalApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6824711531242524549L;
+	private static final long serialVersionUID = 1334499889818991885L;
 
 	/**
 	 * 企业基本信息

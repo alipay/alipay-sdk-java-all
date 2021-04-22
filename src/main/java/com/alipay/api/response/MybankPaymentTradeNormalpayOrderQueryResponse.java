@@ -8,71 +8,95 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.normalpay.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-02-25 19:20:05
+ * @since 1.0, 2021-04-13 20:30:42
  */
 public class MybankPaymentTradeNormalpayOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6355171135547474736L;
+	private static final long serialVersionUID = 8219493252689913561L;
 
 	/** 
-	 * 订单金额
+	 * 订单金额，单位:分
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/** 
-	 * 渠道类型，表示请求的来源
+	 * 渠道类型，表示请求的来源，ANT_OPEN=蚂蚁开放平台
 	 */
 	@ApiField("biz_channel")
 	private String bizChannel;
 
 	/** 
-	 * 外部平台的单据号，网商订单与外部平台订单一一对应
+	 * 外部平台的单据号
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
 
 	/** 
-	 * 币种
+	 * 币种，156=人民币
 	 */
 	@ApiField("currency_value")
 	private String currencyValue;
 
 	/** 
-	 * 扩展参数，内容是JSON格式，并用urlconde编码，按场景约定具体字段
+	 * 扩展参数，内容是JSON格式，并用urlconde编码
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
 
 	/** 
-	 * 创建订单的订单类型
+	 * 网商订单号
+	 */
+	@ApiField("order_no")
+	private String orderNo;
+
+	/** 
+	 * 订单状态，PAYED=支付成功，CLOSED=关闭，INIT=待支付，FINISH=完结(不允许发起任何交易)，FAIL=支付失败
+	 */
+	@ApiField("order_status")
+	private String orderStatus;
+
+	/** 
+	 * 订单类型，NORMAL_PAY=通用支付
 	 */
 	@ApiField("order_type")
 	private String orderType;
 
 	/** 
-	 * 已支付金额
+	 * 已支付金额，单位:分
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
 
 	/** 
-	 * 在途支付金额，表示已受理但未达到终态的金额，这部分金额，成功时转化为已支付金额，失败时归零
+	 * 支付时间，格式是yyyyMMddHHmmss
+	 */
+	@ApiField("pay_time")
+	private String payTime;
+
+	/** 
+	 * 在途支付金额，表示已受理但未达到终态的金额，这部分金额，成功时转化为已支付金额，失败时归零，单位:分
 	 */
 	@ApiField("paying_amount")
 	private String payingAmount;
 
 	/** 
-	 * 已打款金额
+	 * 已打款金额，单位:分
 	 */
 	@ApiField("receipt_amount")
 	private String receiptAmount;
 
 	/** 
-	 * 在途打款金额，表示已受理但未达到终态的金额，这部分金额，成功时转化为已打款金额，失败时归零
+	 * 在途打款金额，表示已受理但未达到终态的金额，这部分金额，成功时转化为已打款金额，失败时归零，单位:分
 	 */
 	@ApiField("receipting_amount")
 	private String receiptingAmount;
+
+	/** 
+	 * 已退款金额，单位:分
+	 */
+	@ApiField("refund_amount")
+	private String refundAmount;
 
 	/** 
 	 * 请求受理时间，格式是yyyyMMddHHmmss
@@ -121,6 +145,20 @@ public class MybankPaymentTradeNormalpayOrderQueryResponse extends AlipayRespons
 		return this.extInfo;
 	}
 
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
+	}
+	public String getOrderNo( ) {
+		return this.orderNo;
+	}
+
+	public void setOrderStatus(String orderStatus) {
+		this.orderStatus = orderStatus;
+	}
+	public String getOrderStatus( ) {
+		return this.orderStatus;
+	}
+
 	public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
@@ -133,6 +171,13 @@ public class MybankPaymentTradeNormalpayOrderQueryResponse extends AlipayRespons
 	}
 	public String getPayAmount( ) {
 		return this.payAmount;
+	}
+
+	public void setPayTime(String payTime) {
+		this.payTime = payTime;
+	}
+	public String getPayTime( ) {
+		return this.payTime;
 	}
 
 	public void setPayingAmount(String payingAmount) {
@@ -154,6 +199,13 @@ public class MybankPaymentTradeNormalpayOrderQueryResponse extends AlipayRespons
 	}
 	public String getReceiptingAmount( ) {
 		return this.receiptingAmount;
+	}
+
+	public void setRefundAmount(String refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+	public String getRefundAmount( ) {
+		return this.refundAmount;
 	}
 
 	public void setRequestAcceptTime(String requestAcceptTime) {

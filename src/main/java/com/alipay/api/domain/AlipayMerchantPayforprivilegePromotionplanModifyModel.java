@@ -9,32 +9,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改储值方案
  *
  * @author auto create
- * @since 1.0, 2020-07-14 15:37:46
+ * @since 1.0, 2021-04-19 16:15:15
  */
 public class AlipayMerchantPayforprivilegePromotionplanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3666363947219486527L;
+	private static final long serialVersionUID = 2829997117961428226L;
 
 	/**
-	 * 充享惠方案的结束时间
+	 * 充值方案的结束时间
 	 */
 	@ApiField("end_time")
 	private Date endTime;
 
 	/**
-	 * 充享惠方案ID，通过创建接口创建的ID
+	 * 充值方案ID，通过创建接口创建的ID
 	 */
 	@ApiField("promotion_plan_id")
 	private String promotionPlanId;
 
 	/**
-	 * 充享惠方案开始时间
+	 * 充值方案开始时间
 	 */
 	@ApiField("start_time")
 	private Date startTime;
 
 	/**
-	 * 充享惠方案的状态，ENABLED(启用), DISABLED(停用)
+	 * 充值方案的状态，ENABLED(启用), DISABLED(停用)
 	 */
 	@ApiField("status")
 	private String status;

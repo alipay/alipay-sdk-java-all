@@ -9,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.preorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-04 10:50:19
+ * @since 1.0, 2021-04-15 21:15:17
  */
 public class AlipayOverseasOpenPreorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7719277773652961481L;
+	private static final long serialVersionUID = 5815787164291256514L;
 
 	/** 
 	 * 预创建单单号
 	 */
 	@ApiField("pre_order_id")
 	private String preOrderId;
+
+	/** 
+	 * 预订单链接地址（小程序的链接地址）
+	 */
+	@ApiField("pre_order_link")
+	private String preOrderLink;
 
 	/** 
 	 * 结果
@@ -32,6 +38,13 @@ public class AlipayOverseasOpenPreorderCreateResponse extends AlipayResponse {
 	}
 	public String getPreOrderId( ) {
 		return this.preOrderId;
+	}
+
+	public void setPreOrderLink(String preOrderLink) {
+		this.preOrderLink = preOrderLink;
+	}
+	public String getPreOrderLink( ) {
+		return this.preOrderLink;
 	}
 
 	public void setResult(TuitionISVResult result) {

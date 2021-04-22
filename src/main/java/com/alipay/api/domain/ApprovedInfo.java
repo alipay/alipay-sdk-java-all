@@ -14,7 +14,7 @@ EVOA approve infos.
  */
 public class ApprovedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1819774541588349741L;
+	private static final long serialVersionUID = 1344126991381391421L;
 
 	/**
 	 * 用户申请订单号回传。

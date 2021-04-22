@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付订单退款
  *
  * @author auto create
- * @since 1.0, 2021-02-05 09:59:57
+ * @since 1.0, 2021-04-13 20:31:24
  */
 public class MybankPaymentTradeNormalpayOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3857239446942818314L;
+	private static final long serialVersionUID = 5551974764978362995L;
 
 	/**
 	 * 金额，单位：分
@@ -20,25 +20,25 @@ public class MybankPaymentTradeNormalpayOrderRefundModel extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 币种
+	 * 币种，156=人民币
 	 */
 	@ApiField("currency_value")
 	private String currencyValue;
 
 	/**
-	 * 创建订单时返回的订单号
+	 * 网商订单号
 	 */
 	@ApiField("order_no")
 	private String orderNo;
 
 	/**
-	 * 订单类型
+	 * 订单类型，GUARANTEE_PAY=担保支付，NORMAL_PAY=通用支付
 	 */
 	@ApiField("order_type")
 	private String orderType;
 
 	/**
-	 * 退款类型
+	 * 退款类型，REFUND=通用退款
 	 */
 	@ApiField("refund_type")
 	private String refundType;
@@ -50,7 +50,7 @@ public class MybankPaymentTradeNormalpayOrderRefundModel extends AlipayObject {
 	private String remark;
 
 	/**
-	 * 请求流水号，表示外部一次请求，幂等字段。
+	 * 请求流水号，表示外部一次退款请求，控重字段。
 	 */
 	@ApiField("request_no")
 	private String requestNo;

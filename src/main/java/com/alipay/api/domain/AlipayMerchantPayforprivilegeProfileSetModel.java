@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充享惠业务配置设置
  *
  * @author auto create
- * @since 1.0, 2020-07-14 15:36:48
+ * @since 1.0, 2021-04-19 16:39:46
  */
 public class AlipayMerchantPayforprivilegeProfileSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5488438225553954286L;
+	private static final long serialVersionUID = 1619754688613433196L;
 
 	/**
-	 * 充享惠卡模板设置，用户使用充享惠业务领卡后会在支付宝卡包中使用该模板配置创建卡入口
+	 * 卡包充值卡面模板设置，用户使用充值业务领卡后会在支付宝卡包中使用该模板配置创建卡入口
 	 */
 	@ApiField("card_template_config")
 	private PayForPrivilegeCardTemplateConfig cardTemplateConfig;

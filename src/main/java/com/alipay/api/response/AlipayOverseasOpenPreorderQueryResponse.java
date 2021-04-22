@@ -2,6 +2,7 @@ package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.TuitionISVAgentInfoDTO;
+import com.alipay.api.domain.TuitionISVAmountInfoDTO;
 import com.alipay.api.domain.TuitionISVResponsePaymentInfoDTO;
 import com.alipay.api.domain.TuitionISVResult;
 import com.alipay.api.domain.TuitionISVOrderStatusDTO;
@@ -13,17 +14,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.preorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-04 10:50:18
+ * @since 1.0, 2021-04-15 21:15:17
  */
 public class AlipayOverseasOpenPreorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7155628453643818317L;
+	private static final long serialVersionUID = 5295448684531163668L;
 
 	/** 
 	 * 机构信息
 	 */
 	@ApiField("agent_info")
 	private TuitionISVAgentInfoDTO agentInfo;
+
+	/** 
+	 * 付款金额
+	 */
+	@ApiField("payment_amount")
+	private TuitionISVAmountInfoDTO paymentAmount;
 
 	/** 
 	 * payment_info（已废弃）
@@ -36,6 +43,12 @@ public class AlipayOverseasOpenPreorderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("pre_order_id")
 	private String preOrderId;
+
+	/** 
+	 * 退款金额
+	 */
+	@ApiField("refund_amount")
+	private TuitionISVAmountInfoDTO refundAmount;
 
 	/** 
 	 * 留学汇款对isv返回结果
@@ -68,6 +81,13 @@ public class AlipayOverseasOpenPreorderQueryResponse extends AlipayResponse {
 		return this.agentInfo;
 	}
 
+	public void setPaymentAmount(TuitionISVAmountInfoDTO paymentAmount) {
+		this.paymentAmount = paymentAmount;
+	}
+	public TuitionISVAmountInfoDTO getPaymentAmount( ) {
+		return this.paymentAmount;
+	}
+
 	public void setPaymentInfo(TuitionISVResponsePaymentInfoDTO paymentInfo) {
 		this.paymentInfo = paymentInfo;
 	}
@@ -80,6 +100,13 @@ public class AlipayOverseasOpenPreorderQueryResponse extends AlipayResponse {
 	}
 	public String getPreOrderId( ) {
 		return this.preOrderId;
+	}
+
+	public void setRefundAmount(TuitionISVAmountInfoDTO refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+	public TuitionISVAmountInfoDTO getRefundAmount( ) {
+		return this.refundAmount;
 	}
 
 	public void setResult(TuitionISVResult result) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自助售卖机地址信息
  *
  * @author auto create
- * @since 1.0, 2018-12-13 10:35:02
+ * @since 1.0, 2021-04-21 11:15:23
  */
 public class SmartAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2118425346125869343L;
+	private static final long serialVersionUID = 8855582453351288369L;
 
 	/**
 	 * 行政区代码-区，使用蚂蚁标准行政区划代码，可参考

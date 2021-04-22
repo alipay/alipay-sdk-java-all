@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝开放认证初始化服务
  *
  * @author auto create
- * @since 1.0, 2021-03-02 14:24:57
+ * @since 1.0, 2021-04-20 19:46:55
  */
 public class AlipayUserCertifyOpenInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8621775832329685375L;
+	private static final long serialVersionUID = 1877924738647134127L;
 
 	/**
 	 * 认证场景码。入参支持的认证场景码和商户签约的认证场景相关，取值如下:
@@ -47,6 +47,7 @@ RESIDENCE_PERMIT_TAIWAN：台湾居住证
 	/**
 	 * 商户个性化配置，格式为json，详细支持的字段说明为：
 return_url：需要回跳的目标地址，必填，一般指定为商户业务页面
+face_reserve_strategy：人脸保存策略，非必填；reserve(保存活体人脸)/never(不保存活体人脸)，不传默认为reserve
 	 */
 	@ApiField("merchant_config")
 	private String merchantConfig;
