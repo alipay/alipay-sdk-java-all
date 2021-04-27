@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融支付宝VID查询接口
  *
  * @author auto create
- * @since 1.0, 2019-07-05 13:39:44
+ * @since 1.0, 2021-04-27 15:11:45
  */
 public class MybankCreditSceneprodVidGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7799362258764394114L;
+	private static final long serialVersionUID = 3395991925994975894L;
 
 	/**
 	 * 支付宝版本号

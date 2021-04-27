@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherDisplayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2614449175379683382L;
+	private static final long serialVersionUID = 1833962637661966651L;
 
 	/**
 	 * 商户品牌名称，字数上限为12。如果不设置品牌名称，则默认使用支付宝商家系统中维护的商家别名。如果没有维护商家别名，则使用默认名称。

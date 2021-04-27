@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 景区门票同步
  *
  * @author auto create
- * @since 1.0, 2021-03-04 20:11:03
+ * @since 1.0, 2021-04-27 21:34:37
  */
 public class AlipayBusinessItemTicketSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3619844922542864568L;
+	private static final long serialVersionUID = 8653762463286719164L;
 
 	/**
 	 * 扩展信息

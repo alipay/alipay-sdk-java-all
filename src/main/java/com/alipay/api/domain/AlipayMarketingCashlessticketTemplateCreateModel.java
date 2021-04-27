@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCashlessticketTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1372499955892539624L;
+	private static final long serialVersionUID = 3811911266757528913L;
 
 	/**
 	 * 面额（仅用于无资金定额票,无资金不定额票不能填写此值）。每张票最多可以抵扣的金额。币种为人民币，单位为元。小数点以后最多保留两位，没有抵扣完的面额，可以下次使用；该数值有效范围为0.1~9999

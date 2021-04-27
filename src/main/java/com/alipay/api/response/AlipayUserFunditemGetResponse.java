@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.funditem.get response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-04 20:17:08
+ * @since 1.0, 2021-04-26 21:38:20
  */
 public class AlipayUserFunditemGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8113746169649679962L;
+	private static final long serialVersionUID = 8637163317877558556L;
 
 	/** 
 	 * 查询得到的消费记录详细信息（主记录+资金明细列表）

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店地址信息
  *
  * @author auto create
- * @since 1.0, 2021-04-22 00:12:50
+ * @since 1.0, 2021-04-26 21:58:24
  */
 public class StoreAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3738399225418948221L;
+	private static final long serialVersionUID = 6392637281822831585L;
 
 	/**
-	 * 门店地址（格式：省/市/区/详细地址门牌号）
+	 * 门店地址（格式：市/区/详细地址门牌号）
 	 */
 	@ApiField("address")
 	private String address;

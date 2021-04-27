@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景金融代客还款接口
  *
  * @author auto create
- * @since 1.0, 2020-02-27 16:25:03
+ * @since 1.0, 2021-04-27 14:37:52
  */
 public class MybankCreditSceneprodRepayDeputyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3573729746894427683L;
+	private static final long serialVersionUID = 5892113211929532617L;
 
 	/**
 	 * 网商分配的申请单号

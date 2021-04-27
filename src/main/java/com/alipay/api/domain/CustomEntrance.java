@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CustomEntrance extends AlipayObject {
 
-	private static final long serialVersionUID = 2195429156518139554L;
+	private static final long serialVersionUID = 6492399853859624253L;
 
 	/**
 	 * 卡包详情页可跳转的小程序appId。该appId必须是商户的appId。

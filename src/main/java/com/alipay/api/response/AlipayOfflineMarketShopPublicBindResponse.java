@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketShopPublicBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5164786662466972651L;
+	private static final long serialVersionUID = 3316773128754546273L;
 
 	/** 
 	 * 绑定失败的店铺ID列表

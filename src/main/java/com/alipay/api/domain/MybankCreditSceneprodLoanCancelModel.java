@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融订单关闭
  *
  * @author auto create
- * @since 1.0, 2019-07-05 11:50:03
+ * @since 1.0, 2021-04-27 15:11:58
  */
 public class MybankCreditSceneprodLoanCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4472345377477638778L;
+	private static final long serialVersionUID = 2649585549862688758L;
 
 	/**
 	 * 关闭订单的原因

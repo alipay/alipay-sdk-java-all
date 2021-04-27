@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构准入咨询接口
  *
  * @author auto create
- * @since 1.0, 2020-05-26 17:40:40
+ * @since 1.0, 2021-04-27 14:37:42
  */
 public class MybankCreditSceneprodInstAuthConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3164619955227157953L;
+	private static final long serialVersionUID = 3293953541787682189L;
 
 	/**
 	 * 需要咨询的内容信息，不填默认是机构是否准入咨询

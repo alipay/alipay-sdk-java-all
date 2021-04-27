@@ -4,7 +4,7 @@
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <version>4.13.42.ALL</version>
+    <version>4.13.45.ALL</version>
     <name>alipay-sdk-java</name>
 
     <url>https://open.alipay.com</url>
@@ -70,11 +70,6 @@
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
             <version>1.62</version>
-        </dependency>
-        <dependency>
-            <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

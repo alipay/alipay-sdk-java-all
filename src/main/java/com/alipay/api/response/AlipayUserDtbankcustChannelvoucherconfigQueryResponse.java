@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.channelvoucherconfig.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-20 19:24:14
+ * @since 1.0, 2021-04-26 16:47:35
  */
 public class AlipayUserDtbankcustChannelvoucherconfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6582266218631989491L;
+	private static final long serialVersionUID = 2239376429125846776L;
 
 	/** 
 	 * 数字分行活动唯一id
@@ -48,6 +48,7 @@ ENDED="已结束"
 	/** 
 	 * CREDIT:信用卡
 DEBIT:借记卡
+DEBIT_CREDIT:借记卡或信用卡
 	 */
 	@ApiField("bank_card_type")
 	private String bankCardType;

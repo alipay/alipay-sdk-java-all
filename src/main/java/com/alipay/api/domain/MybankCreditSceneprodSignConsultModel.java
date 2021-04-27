@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融银行直投签约咨询接口
  *
  * @author auto create
- * @since 1.0, 2021-03-31 16:04:46
+ * @since 1.0, 2021-04-27 11:35:34
  */
 public class MybankCreditSceneprodSignConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2768932962619719357L;
+	private static final long serialVersionUID = 3577623363916185196L;
 
 	/**
 	 * 网商申请单号，S结尾
