@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot设备交易信息列表
  *
  * @author auto create
- * @since 1.0, 2021-02-02 11:17:50
+ * @since 1.0, 2021-04-21 20:06:54
  */
 public class DeviceTradeInfoList extends AlipayObject {
 
-	private static final long serialVersionUID = 4674897915696495921L;
+	private static final long serialVersionUID = 8115694883291833778L;
 
 	/**
 	 * 设备id
@@ -60,6 +60,12 @@ public class DeviceTradeInfoList extends AlipayObject {
 	 */
 	@ApiField("face_trade_cnt")
 	private Long faceTradeCnt;
+
+	/**
+	 * 扫脸金额
+	 */
+	@ApiField("face_trd_amt")
+	private String faceTrdAmt;
 
 	/**
 	 * 当日刷脸付笔数占比
@@ -187,6 +193,13 @@ public class DeviceTradeInfoList extends AlipayObject {
 	}
 	public void setFaceTradeCnt(Long faceTradeCnt) {
 		this.faceTradeCnt = faceTradeCnt;
+	}
+
+	public String getFaceTrdAmt() {
+		return this.faceTrdAmt;
+	}
+	public void setFaceTrdAmt(String faceTrdAmt) {
+		this.faceTrdAmt = faceTrdAmt;
 	}
 
 	public String getFaceTrdCntRate() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 排队队列状态数据回流
  *
  * @author auto create
- * @since 1.0, 2019-05-16 10:38:29
+ * @since 1.0, 2021-04-22 11:22:47
  */
 public class KoubeiCateringQueueShopqueuestatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4656755718961148983L;
+	private static final long serialVersionUID = 2429725815358764186L;
 
 	/**
 	 * 美味门店ID

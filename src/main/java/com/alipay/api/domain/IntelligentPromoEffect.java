@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IntelligentPromoEffect extends AlipayObject {
 
-	private static final long serialVersionUID = 2323636231319992483L;
+	private static final long serialVersionUID = 4439244992414558198L;
 
 	/**
 	 * 平均客单价提升比例

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ad.promotepage.download response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-22 13:43:19
+ * @since 1.0, 2021-04-22 20:17:28
  */
 public class AlipayDataDataserviceAdPromotepageDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5358863563188376716L;
+	private static final long serialVersionUID = 6741875532853174263L;
 
 	/** 
 	 * 转化事件ID

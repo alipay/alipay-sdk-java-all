@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7314634186894156744L;
+	private static final long serialVersionUID = 6438643376439211799L;
 
 	/**
 	 * 商品描述
@@ -24,14 +24,14 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 
 	/**
 	 * 商品扩展信息（具体KEY请参见产品文档）。
-小程序订单中心场景参见 https://opendocs.alipay.com/mini/00u9ga
+小程序订单中心场景接入参见  <a href="https://opendocs.alipay.com/mini/00u9ga">快速接入</a>。
 	 */
 	@ApiListField("ext_info")
 	@ApiField("item_ext_info")
 	private List<ItemExtInfo> extInfo;
 
 	/**
-	 * 素材列表（最多3个），素材内容为素材key（素材key获取方式参照：https://opendocs.alipay.com/apis/api_4/alipay.merchant.item.file.upload）
+	 * 素材列表（最多3个），素材内容为素材key（素材key为<a href="https://opendocs.alipay.com/apis/api_4/alipay.merchant.item.file.upload">alipay.merchant.item.file.upload</a> 接口返回的 material_key）
 	 */
 	@ApiListField("material_list")
 	@ApiField("material_create_info")
@@ -65,7 +65,7 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 	private List<SkuCreateInfo> skuList;
 
 	/**
-	 * 商品所属标准类目ID，当 type 为STANDARD_GOODS（标品）时必填。  请填入 https://opendocs.alipay.com/mini/011lxt  小程序商品类目表中三级类目ID。
+	 * 商品所属标准类目ID，标品及非标品都需传入。  请填入 <a href="https://opendocs.alipay.com/mini/011lxt">小程序商品类目表</a> 中三级类目ID。
 	 */
 	@ApiField("standard_category_id")
 	private String standardCategoryId;
@@ -88,7 +88,7 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 	/**
 	 * 商品类型。枚举支持：
 STANDARD_GOODS：标品，一般是具有明确、标准规格、型号、参数的商品，如：手机、数码产品、大多数的家电 。
-NON_STANDARD_GOODS：非标品等，，则是在这些方面没有统一的行业标准和参数规格的商品，如：服装、鞋袜等。
+NON_STANDARD_GOODS：非标品，则是在这些方面没有统一的行业标准和参数规格的商品，如：服装、鞋袜等。
 	 */
 	@ApiField("type")
 	private String type;

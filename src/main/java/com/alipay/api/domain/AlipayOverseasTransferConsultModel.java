@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境汇款
  *
  * @author auto create
- * @since 1.0, 2021-04-01 16:50:23
+ * @since 1.0, 2021-04-25 17:05:27
  */
 public class AlipayOverseasTransferConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6274319358174458537L;
+	private static final long serialVersionUID = 3694982786985217915L;
 
 	/**
 	 * 汇款相关信息

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 组合消息模板领取接口
  *
  * @author auto create
- * @since 1.0, 2021-04-06 10:56:57
+ * @since 1.0, 2021-04-25 14:36:42
  */
 public class AlipayOpenPublicTemplateMessageAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6779823546732372926L;
+	private static final long serialVersionUID = 4788254695835878185L;
 
 	/**
 	 * 自行组合模板关键词列表，关键词顺序按数组顺序，关键字名称不能重复，最多支持5个，最少2个关键词组合

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮服务标准化门店信息
  *
  * @author auto create
- * @since 1.0, 2021-04-20 09:53:37
+ * @since 1.0, 2021-04-22 14:30:58
  */
 public class CateringStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1726393425415887383L;
+	private static final long serialVersionUID = 7622847865491311514L;
 
 	/**
 	 * 门店营业时间
@@ -29,7 +29,7 @@ public class CateringStoreInfo extends AlipayObject {
 	private CateringStoreDeliveryInfo deliveryInfo;
 
 	/**
-	 * 人均消费
+	 * 人均消费。单位为元，精确到小数点后两位。
 	 */
 	@ApiField("per_consumption")
 	private String perConsumption;

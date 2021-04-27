@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ForbbidenTime extends AlipayObject {
 
-	private static final long serialVersionUID = 2486354411674675358L;
+	private static final long serialVersionUID = 7684871392154686642L;
 
 	/**
 	 * 不可用日期区间，仅支持到天

@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-19 10:53:46
+ * @since 1.0, 2021-04-26 11:02:26
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8627737946212446454L;
+	private static final long serialVersionUID = 1384477837882478799L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -94,6 +94,18 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("charge_flags")
 	private String chargeFlags;
+
+	/** 
+	 * 信用业务单号。信用支付场景才有值，先用后付产品里是芝麻订单号。
+	 */
+	@ApiField("credit_biz_order_id")
+	private String creditBizOrderId;
+
+	/** 
+	 * 信用支付模式。表示订单是采用信用支付方式（支付时买家没有出资，需要后续履约）。"creditAdvanceV2"表示芝麻先用后付模式，用户后续需要履约扣款。 此字段只有信用支付场景才有值，商户需要根据字段值单独处理。此字段以后可能扩展其他值，建议商户使用白名单方式识别，对于未识别的值做失败处理，并联系支付宝技术支持人员。
+	 */
+	@ApiField("credit_pay_mode")
+	private String creditPayMode;
 
 	/** 
 	 * 平台优惠金额
@@ -367,6 +379,20 @@ json格式。
 	}
 	public String getChargeFlags( ) {
 		return this.chargeFlags;
+	}
+
+	public void setCreditBizOrderId(String creditBizOrderId) {
+		this.creditBizOrderId = creditBizOrderId;
+	}
+	public String getCreditBizOrderId( ) {
+		return this.creditBizOrderId;
+	}
+
+	public void setCreditPayMode(String creditPayMode) {
+		this.creditPayMode = creditPayMode;
+	}
+	public String getCreditPayMode( ) {
+		return this.creditPayMode;
 	}
 
 	public void setDiscountAmount(String discountAmount) {

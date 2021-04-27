@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务标准化的商户信息
  *
  * @author auto create
- * @since 1.0, 2021-04-11 09:02:56
+ * @since 1.0, 2021-04-22 10:55:46
  */
 public class CateringMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6512315622222915664L;
+	private static final long serialVersionUID = 7471545316136239157L;
 
 	/**
 	 * 品牌名称
@@ -32,7 +32,7 @@ public class CateringMerchantInfo extends AlipayObject {
 	private String pid;
 
 	/**
-	 * 间联商户。除排队之外，特殊可选，pid smid 必有一个
+	 * 间联商户。除排队之外，特殊可选，pid smid 必有一个。银行ISV将商户入驻得到的sub_merchant_id，受理商户唯一标识。
 	 */
 	@ApiField("smid")
 	private String smid;

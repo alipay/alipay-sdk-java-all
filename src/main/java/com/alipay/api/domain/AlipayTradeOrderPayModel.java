@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易直接支付接口
  *
  * @author auto create
- * @since 1.0, 2021-03-16 19:33:55
+ * @since 1.0, 2021-04-26 11:05:45
  */
 public class AlipayTradeOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2789883659111765258L;
+	private static final long serialVersionUID = 7593844312185166775L;
+
+	/**
+	 * 垫资支付模式。支付时需要垫资的场景才传入。具体传参需与支付宝约定。
+CREDIT_FULFILLMENT_ZM 表示先用后付产品履约动作支持芝麻垫资。
+	 */
+	@ApiField("advance_payment_type")
+	private String advancePaymentType;
 
 	/**
 	 * 买家的支付宝用户id
@@ -39,6 +46,31 @@ public class AlipayTradeOrderPayModel extends AlipayObject {
 	private List<BuyerPayDetail> buyerPayDetail;
 
 	/**
+	 * 本次履约支付金额，单位为元，精确到小数点后两位。履约支付场景才需要传入。
+	 */
+	@ApiField("fulfillment_amount")
+	private String fulfillmentAmount;
+
+	/**
+	 * 是否异步支付，传入true时，表明本次期望走异步支付，会先将支付请求受理下来，再异步推进。商户可以通过交易的异步通知或者轮询交易的状态来确定最终的交易结果
+	 */
+	@ApiField("is_async_pay")
+	private Boolean isAsyncPay;
+
+	/**
+	 * 订单支付模式。特殊支付场景才需要传入。具体传参需与支付宝约定。
+CREDIT_FULFILLMENT_ZM表示基于芝麻授信的履约支付模式，比如芝麻先用后付产品。
+	 */
+	@ApiField("order_pay_mode")
+	private String orderPayMode;
+
+	/**
+	 * 商户请求号，标识一次请求的唯一id，用于幂等控制。部分履约支付场景下必传。
+	 */
+	@ApiField("out_request_no")
+	private String outRequestNo;
+
+	/**
 	 * 销售产品码
 	 */
 	@ApiField("product_code")
@@ -59,6 +91,13 @@ public class AlipayTradeOrderPayModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	public String getAdvancePaymentType() {
+		return this.advancePaymentType;
+	}
+	public void setAdvancePaymentType(String advancePaymentType) {
+		this.advancePaymentType = advancePaymentType;
+	}
+
 	public String getBuyerId() {
 		return this.buyerId;
 	}
@@ -71,6 +110,34 @@ public class AlipayTradeOrderPayModel extends AlipayObject {
 	}
 	public void setBuyerPayDetail(List<BuyerPayDetail> buyerPayDetail) {
 		this.buyerPayDetail = buyerPayDetail;
+	}
+
+	public String getFulfillmentAmount() {
+		return this.fulfillmentAmount;
+	}
+	public void setFulfillmentAmount(String fulfillmentAmount) {
+		this.fulfillmentAmount = fulfillmentAmount;
+	}
+
+	public Boolean getIsAsyncPay() {
+		return this.isAsyncPay;
+	}
+	public void setIsAsyncPay(Boolean isAsyncPay) {
+		this.isAsyncPay = isAsyncPay;
+	}
+
+	public String getOrderPayMode() {
+		return this.orderPayMode;
+	}
+	public void setOrderPayMode(String orderPayMode) {
+		this.orderPayMode = orderPayMode;
+	}
+
+	public String getOutRequestNo() {
+		return this.outRequestNo;
+	}
+	public void setOutRequestNo(String outRequestNo) {
+		this.outRequestNo = outRequestNo;
 	}
 
 	public String getProductCode() {

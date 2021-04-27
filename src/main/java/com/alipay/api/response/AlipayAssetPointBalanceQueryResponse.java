@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAssetPointBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7259185395432497126L;
+	private static final long serialVersionUID = 5127326999739775191L;
 
 	/** 
 	 * 用户的集分宝余额

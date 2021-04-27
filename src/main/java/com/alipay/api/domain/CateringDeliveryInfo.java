@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外卖配送信息
  *
  * @author auto create
- * @since 1.0, 2021-04-08 19:40:36
+ * @since 1.0, 2021-04-22 10:55:19
  */
 public class CateringDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6149952454257592496L;
+	private static final long serialVersionUID = 1519198869748343671L;
 
 	/**
-	 * 骑手位置（距离多少公里）
+	 * 骑手位置，单位是米。
 	 */
 	@ApiField("delivery_distance")
 	private String deliveryDistance;
@@ -28,19 +28,19 @@ public class CateringDeliveryInfo extends AlipayObject {
 	private String deliveryMobile;
 
 	/**
-	 * 配送商信息
+	 * 配送商信息。配送中及之后状态必填。
 	 */
 	@ApiField("distributor")
 	private String distributor;
 
 	/**
-	 * 预计送达结束时间（结束时间大于开始时间）
+	 * 预计送达结束时间。如果是时间段，start和end都要填；如果是时间点，填入start。endtime需要大于starttime。
 	 */
 	@ApiField("estimate_delivery_end_time")
 	private Date estimateDeliveryEndTime;
 
 	/**
-	 * 预计送达开始时间
+	 * 预计送达开始时间。如果是时间段，start和end都要填；如果是时间点，填入start。
 	 */
 	@ApiField("estimate_delivery_start_time")
 	private Date estimateDeliveryStartTime;

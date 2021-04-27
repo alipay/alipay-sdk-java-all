@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部账单上传
  *
  * @author auto create
- * @since 1.0, 2021-02-22 09:49:00
+ * @since 1.0, 2021-04-25 11:09:01
  */
 public class AlipayEbppMerchantExternalbillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3251298322924784328L;
+	private static final long serialVersionUID = 8618995644952797879L;
 
 	/**
 	 * 账期金额,单位元
@@ -60,6 +60,11 @@ PROPERTY_PARK_MNG("PROPERTY_PARK_MNG", "车位管理费"),
 PROPERTY_PARK_LEASE("PROPERTY_PARK_LEASE", "车位租赁费"),
 PROPERTY_ROOM_LEASE("PROPERTY_ROOM_LEASE", "房屋租赁费"),
 PROPERTY_TEMP_PARK("PROPERTY_TEMP_PARK", "临时停车费");
+PROPERTY_PUBLIC_ENERGY("PROPERTY_PUBLIC_ENERGY", "代收公共能耗费"),
+    PROPERTY_GAS("PROPERTY_GAS", "代收燃气费"),
+PROPERTY_MAINTENANCE("PROPERTY_MAINTENANCE", "维修服务费"),
+PROPERTY_HOUSEKEEPING("PROPERTY_HOUSEKEEPING", "家政服务费"),
+    PROPERTY_GREENING("PROPERTY_GREENING", "绿化服务费");
 	 */
 	@ApiField("fee_type")
 	private String feeType;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7368985676992543825L;
+	private static final long serialVersionUID = 4683269137162548673L;
 
 	/**
 	 * 当用户进入芝麻受理页面后，点击左上角的回退按钮时，跳转的商户url。点击后回到商户页面，开通流程结束。

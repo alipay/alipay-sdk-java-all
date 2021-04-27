@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 点餐业务信息
  *
  * @author auto create
- * @since 1.0, 2021-04-07 17:16:15
+ * @since 1.0, 2021-04-22 00:13:25
  */
 public class CateringOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8259794978385145157L;
+	private static final long serialVersionUID = 6567583955935457777L;
 
 	/**
 	 * 点餐首页

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 景区订单同步
  *
  * @author auto create
- * @since 1.0, 2021-03-04 20:11:20
+ * @since 1.0, 2021-04-22 23:21:32
  */
 public class AlipayBusinessOrderOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6212818167852751633L;
+	private static final long serialVersionUID = 5521952767641131686L;
 
 	/**
 	 * 金额

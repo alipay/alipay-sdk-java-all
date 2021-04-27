@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenLotterymallExchangerecordstatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8793218557222622525L;
+	private static final long serialVersionUID = 3783532331627841244L;
 
 	/** 
 	 * 如果success为false，errorCode表示具体的失败错误码

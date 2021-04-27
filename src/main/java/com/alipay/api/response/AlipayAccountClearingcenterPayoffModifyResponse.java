@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountClearingcenterPayoffModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4863159721125123711L;
+	private static final long serialVersionUID = 4824453485262989742L;
 
 	/** 
 	 * 返回结果

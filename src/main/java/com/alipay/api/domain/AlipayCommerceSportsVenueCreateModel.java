@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆入驻
  *
  * @author auto create
- * @since 1.0, 2021-04-13 16:18:04
+ * @since 1.0, 2021-04-23 17:29:45
  */
 public class AlipayCommerceSportsVenueCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4246951288346256914L;
+	private static final long serialVersionUID = 7117687112152278613L;
 
 	/**
 	 * 具体地址
@@ -67,6 +67,7 @@ public class AlipayCommerceSportsVenueCreateModel extends AlipayObject {
 	/**
 	 * 营业时间
 开始时间 - 结束时间；
+(注：全英文符号）
 	 */
 	@ApiField("opening_hours")
 	private String openingHours;
@@ -133,6 +134,12 @@ course: 课程
 	@ApiListField("tag_list")
 	@ApiField("string")
 	private List<String> tagList;
+
+	/**
+	 * 是否为“测试场馆”。如果上传的场馆为想要进行测试的非正式场馆，则填写“Y”。如上传正式场馆，则不传或填写为N
+	 */
+	@ApiField("test_venue")
+	private String testVenue;
 
 	/**
 	 * 交通信息
@@ -278,6 +285,13 @@ course: 课程
 	}
 	public void setTagList(List<String> tagList) {
 		this.tagList = tagList;
+	}
+
+	public String getTestVenue() {
+		return this.testVenue;
+	}
+	public void setTestVenue(String testVenue) {
+		this.testVenue = testVenue;
 	}
 
 	public String getTraffic() {

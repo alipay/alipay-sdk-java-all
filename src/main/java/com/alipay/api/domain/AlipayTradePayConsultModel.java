@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单支付能力咨询
  *
  * @author auto create
- * @since 1.0, 2021-03-10 11:21:39
+ * @since 1.0, 2021-04-25 17:14:16
  */
 public class AlipayTradePayConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7425382953981269819L;
+	private static final long serialVersionUID = 5562725425321364225L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。用户签约成功后时，协议号会返回给商户。

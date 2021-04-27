@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 排队配置数据回流
  *
  * @author auto create
- * @since 1.0, 2019-05-16 10:39:09
+ * @since 1.0, 2021-04-22 11:21:51
  */
 public class KoubeiCateringQueueShopinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2513274854821622727L;
+	private static final long serialVersionUID = 4525994379928498972L;
 
 	/**
 	 * 过号是否作废。返回0表示作废；非0表示不作废，并以数字表示过号延几桌。如返回1，表示延一桌，返回2则是延两桌。

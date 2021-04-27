@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPeZmgoSignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6741387124934888539L;
+	private static final long serialVersionUID = 5778944122589736114L;
 
 	/**
 	 * 支付宝的用户id。用于水平校验，当传入用户id与实际唤起支付宝用户id不一致时，签约申请失败。特殊业务(用户在商户侧已经绑定了支付宝A，不允许支付宝B进行开通芝麻GO)需求定制，无特殊需求时不要传入此参数

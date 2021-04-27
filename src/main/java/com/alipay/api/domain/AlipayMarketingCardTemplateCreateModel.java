@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5265596885786262452L;
+	private static final long serialVersionUID = 1297899976588445928L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -34,7 +34,7 @@ public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 	/**
 	 * 卡行动点配置；
 行动点，即用户可点击跳转的区块，类似按钮控件的交互；
-单张卡最多定制4个行动点。如果各项的配置内容完全一样，展示时会进行去重。
+单张卡最多定制3个行动点。如果各项的配置内容完全一样，展示时会进行去重。
 	 */
 	@ApiListField("card_action_list")
 	@ApiField("template_action_info_d_t_o")

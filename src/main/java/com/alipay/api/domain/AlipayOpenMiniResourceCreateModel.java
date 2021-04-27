@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序运营创建流量位
  *
  * @author auto create
- * @since 1.0, 2021-04-15 21:23:39
+ * @since 1.0, 2021-04-25 16:51:56
  */
 public class AlipayOpenMiniResourceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3413757735439433712L;
+	private static final long serialVersionUID = 6881383449347833192L;
 
 	/**
 	 * 流量位的计费模式，目前可选择值为：CPS、CPC，根据自己的业务模式选择合适的计费模式。
