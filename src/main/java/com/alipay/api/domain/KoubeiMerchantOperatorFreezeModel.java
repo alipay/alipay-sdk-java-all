@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 锁定操作员
  *
  * @author auto create
- * @since 1.0, 2018-07-13 20:43:19
+ * @since 1.0, 2021-05-06 14:57:40
  */
 public class KoubeiMerchantOperatorFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8164127893433924196L;
+	private static final long serialVersionUID = 3698994358983226941L;
 
 	/**
 	 * 操作码

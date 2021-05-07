@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDaoweiOrderConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2734635436348494882L;
+	private static final long serialVersionUID = 2789243662664211537L;
 
 	/**
 	 * 备注信息，商家确认订单时添加的备注信息，长度不超过2000个字符

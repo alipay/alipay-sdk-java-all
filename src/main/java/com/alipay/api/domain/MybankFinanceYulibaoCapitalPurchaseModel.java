@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoCapitalPurchaseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3618857252238217634L;
+	private static final long serialVersionUID = 1354545115534631342L;
 
 	/**
 	 * 余利宝申购金额，单位是“分”。如amount=123456表示申购1234.56元的余利宝份额。

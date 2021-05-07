@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文体业务批量查询场馆产品信息SPI中的产品模型。
  *
  * @author auto create
- * @since 1.0, 2021-03-29 20:16:52
+ * @since 1.0, 2021-04-30 17:35:03
  */
 public class ProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1658389321793762935L;
+	private static final long serialVersionUID = 1358841135943564318L;
 
 	/**
 	 * 场馆的产品购买限制规则信息

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小区创建
  *
  * @author auto create
- * @since 1.0, 2021-04-25 10:43:26
+ * @since 1.0, 2021-05-06 10:53:25
  */
 public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4838213777118313489L;
+	private static final long serialVersionUID = 3183237656468424924L;
 
 	/**
 	 * 别名
@@ -27,6 +27,12 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	 */
 	@ApiField("city")
 	private String city;
+
+	/**
+	 * 社区code，例如 清波门社区 330102001051
+	 */
+	@ApiField("community_adcode")
+	private String communityAdcode;
 
 	/**
 	 * 小区编码，兼容迁移小区时所需；正常的非迁移的小区创建时不需要传
@@ -84,6 +90,12 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	private String province;
 
 	/**
+	 * 街道code，例如 清波街道 330102001000
+	 */
+	@ApiField("street_adcode")
+	private String streetAdcode;
+
+	/**
 	 * 中心账单楼房号模式	REMOTE
 中心账单户号模式	REMOTE_NO_ROOM
 内部H5模式	H5
@@ -117,6 +129,13 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getCommunityAdcode() {
+		return this.communityAdcode;
+	}
+	public void setCommunityAdcode(String communityAdcode) {
+		this.communityAdcode = communityAdcode;
 	}
 
 	public String getCommunityShortName() {
@@ -180,6 +199,13 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	}
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public String getStreetAdcode() {
+		return this.streetAdcode;
+	}
+	public void setStreetAdcode(String streetAdcode) {
+		this.streetAdcode = streetAdcode;
 	}
 
 	public String getSupportType() {

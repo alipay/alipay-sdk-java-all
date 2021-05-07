@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserVirtualcardSignEffectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1652843794727638214L;
+	private static final long serialVersionUID = 8763145112387753657L;
 
 	/**
 	 * hex格式表示的虚拟卡数据，卡数据将在虚拟卡二维码中透传。

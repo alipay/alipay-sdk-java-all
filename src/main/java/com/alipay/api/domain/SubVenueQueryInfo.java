@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆查询子场馆详情
  *
  * @author auto create
- * @since 1.0, 2021-04-01 15:35:06
+ * @since 1.0, 2021-04-30 14:49:29
  */
 public class SubVenueQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7617472293415583887L;
+	private static final long serialVersionUID = 5478699878826862794L;
 
 	/**
 	 * 入场要求
@@ -86,8 +86,9 @@ public class SubVenueQueryInfo extends AlipayObject {
 	/**
 	 * 联系电话，多个逗号隔开，不传用主场馆的
 	 */
-	@ApiField("phone")
-	private String phone;
+	@ApiListField("phone")
+	@ApiField("string")
+	private List<String> phone;
 
 	/**
 	 * 场馆图片链接列表 最多5张
@@ -139,8 +140,9 @@ course: 课程
 	/**
 	 * 标签列表
 	 */
-	@ApiField("tag_list")
-	private String tagList;
+	@ApiListField("tag_list")
+	@ApiField("string")
+	private List<String> tagList;
 
 	/**
 	 * 培训信息
@@ -238,10 +240,10 @@ course: 课程
 		this.paymentType = paymentType;
 	}
 
-	public String getPhone() {
+	public List<String> getPhone() {
 		return this.phone;
 	}
-	public void setPhone(String phone) {
+	public void setPhone(List<String> phone) {
 		this.phone = phone;
 	}
 
@@ -294,10 +296,10 @@ course: 课程
 		this.subVenueStatus = subVenueStatus;
 	}
 
-	public String getTagList() {
+	public List<String> getTagList() {
 		return this.tagList;
 	}
-	public void setTagList(String tagList) {
+	public void setTagList(List<String> tagList) {
 		this.tagList = tagList;
 	}
 

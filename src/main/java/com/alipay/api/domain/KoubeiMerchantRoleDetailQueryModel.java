@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv权限查询
  *
  * @author auto create
- * @since 1.0, 2018-08-16 19:00:50
+ * @since 1.0, 2021-05-06 14:58:00
  */
 public class KoubeiMerchantRoleDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4641521917314351667L;
+	private static final long serialVersionUID = 4387143375787431486L;
 
 	/**
 	 * isv回传的auth_code，通过auth_code校验当前操作人与商户的关系

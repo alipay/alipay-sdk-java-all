@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCreditAutofinanceVidGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3755893553898518191L;
+	private static final long serialVersionUID = 3752878473135471911L;
 
 	/**
 	 * 机构编号

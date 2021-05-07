@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻约定BC场景履约事件同步
  *
  * @author auto create
- * @since 1.0, 2019-12-05 11:46:36
+ * @since 1.0, 2021-04-30 10:28:33
  */
 public class ZhimaCustomerFulfillmentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2235876966345344572L;
+	private static final long serialVersionUID = 8487514985644476279L;
 
 	/**
 	 * 扩展参数

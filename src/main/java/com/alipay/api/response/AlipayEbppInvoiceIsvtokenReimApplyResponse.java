@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppInvoiceIsvtokenReimApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3173291359638481566L;
+	private static final long serialVersionUID = 2125695372722275582L;
 
 	/** 
 	 * 支付宝分配给报销软件的授权token，当前设置有效时间为20分钟

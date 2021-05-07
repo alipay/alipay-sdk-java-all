@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝转账支付接口
  *
  * @author auto create
- * @since 1.0, 2021-04-19 15:16:33
+ * @since 1.0, 2021-05-03 19:48:02
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2373171116353987591L;
+	private static final long serialVersionUID = 3576966574815267237L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下：
@@ -85,6 +85,12 @@ STD_RED_PACKET；
 	 */
 	@ApiField("remark")
 	private String remark;
+
+	/**
+	 * 签名信息
+	 */
+	@ApiField("sign_data")
+	private SignData signData;
 
 	/**
 	 * 订单总金额，单位为元，精确到小数点后两位，STD_RED_PACKET产品取值范围[0.01,100000000]；
@@ -168,6 +174,13 @@ TRANS_ACCOUNT_NO_PWD产品取值范围[0.1,100000000]
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+
+	public SignData getSignData() {
+		return this.signData;
+	}
+	public void setSignData(SignData signData) {
+		this.signData = signData;
 	}
 
 	public String getTransAmount() {

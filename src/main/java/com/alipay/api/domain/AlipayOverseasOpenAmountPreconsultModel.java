@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金额试算
  *
  * @author auto create
- * @since 1.0, 2021-04-15 15:09:34
+ * @since 1.0, 2021-04-30 16:49:17
  */
 public class AlipayOverseasOpenAmountPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5449262774362264728L;
+	private static final long serialVersionUID = 6689968597158683694L;
 
 	/**
 	 * 机构信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeOrderPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8352453249849684151L;
+	private static final long serialVersionUID = 4644743485233472211L;
 
 	/**
 	 * 业务类型，当前支持：POST_ORDER_PAY 点餐后付订单支付码生成

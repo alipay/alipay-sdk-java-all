@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillEreceiptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4587863146397775458L;
+	private static final long serialVersionUID = 4239423235669375677L;
 
 	/**
-	 * 根据申请id查询状态。通过 <a href="https://opendocs.alipay.com/apis/api_15/alipay.data.bill.ereceipt.apply">alipay.data.bill.ereceipt.apply(申请电子回单(incubating))</a>接口同步响应获取。
+	 * 根据申请id查询状态。通过 <a href="https://opendocs.alipay.com/apis/api_15/alipay.data.bill.ereceipt.apply">alipay.data.bill.ereceipt.apply(申请电子回单(incubating))</a> 接口同步响应获取。
 	 */
 	@ApiField("file_id")
 	private String fileId;

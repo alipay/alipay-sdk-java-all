@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2021-04-26 10:44:41
+ * @since 1.0, 2021-05-07 16:05:31
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7642473496384261824L;
+	private static final long serialVersionUID = 2723129752788495197L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -137,6 +137,12 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	 */
 	@ApiField("passback_params")
 	private String passbackParams;
+
+	/**
+	 * 支付相关参数
+	 */
+	@ApiField("pay_params")
+	private PayParams payParams;
 
 	/**
 	 * 产品码，默认 FACE_TO_FACE_PAYMENT（当面付），枚举支持：
@@ -391,6 +397,13 @@ CYCLE_PAY_AUTH ：周期扣款。
 	}
 	public void setPassbackParams(String passbackParams) {
 		this.passbackParams = passbackParams;
+	}
+
+	public PayParams getPayParams() {
+		return this.payParams;
+	}
+	public void setPayParams(PayParams payParams) {
+		this.payParams = payParams;
 	}
 
 	public String getProductCode() {

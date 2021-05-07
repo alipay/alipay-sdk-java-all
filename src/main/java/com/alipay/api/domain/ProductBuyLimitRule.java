@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场馆的产品购买限制规则信息
  *
  * @author auto create
- * @since 1.0, 2021-03-29 20:16:52
+ * @since 1.0, 2021-04-30 17:53:13
  */
 public class ProductBuyLimitRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6346718397457149494L;
+	private static final long serialVersionUID = 1548993416916636994L;
 
 	/**
 	 * 购买限制的类型，0-无需关联，1-需要关联，默认无需关联。 名词解释：票券课程类型商品的无需在意本字段，在价格日历预订下，代表是否需要时间段或场地的连场限制。
@@ -42,6 +42,20 @@ public class ProductBuyLimitRule extends AlipayObject {
 	 */
 	@ApiField("category_choose_min_count")
 	private Long categoryChooseMinCount;
+
+	/**
+	 * 天可购买的最晚时间，大于这个时间则不可购买。
+默认23点59分59秒
+	 */
+	@ApiField("daily_end_time")
+	private String dailyEndTime;
+
+	/**
+	 * 每天可购买的最早时间，小于这个时间则不可购买。
+默认0点0分0秒
+	 */
+	@ApiField("daily_start_time")
+	private String dailyStartTime;
 
 	public String getCanBuyLimitType() {
 		return this.canBuyLimitType;
@@ -76,6 +90,20 @@ public class ProductBuyLimitRule extends AlipayObject {
 	}
 	public void setCategoryChooseMinCount(Long categoryChooseMinCount) {
 		this.categoryChooseMinCount = categoryChooseMinCount;
+	}
+
+	public String getDailyEndTime() {
+		return this.dailyEndTime;
+	}
+	public void setDailyEndTime(String dailyEndTime) {
+		this.dailyEndTime = dailyEndTime;
+	}
+
+	public String getDailyStartTime() {
+		return this.dailyStartTime;
+	}
+	public void setDailyStartTime(String dailyStartTime) {
+		this.dailyStartTime = dailyStartTime;
 	}
 
 }

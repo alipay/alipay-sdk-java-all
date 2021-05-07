@@ -9,70 +9,94 @@ import com.alipay.api.internal.mapping.ApiField;
  * 日期区间内可以使用优惠
  *
  * @author auto create
- * @since 1.0, 2021-04-24 14:48:33
+ * @since 1.0, 2021-04-30 16:44:51
  */
 public class VoucherValidPeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 1165969879135568538L;
+	private static final long serialVersionUID = 5498849365757458591L;
 
 	/**
-	 * 券有效期。有两种类型：
+	 * 券有效期。
 
-绝对时间：
-ABSOLUTE
+枚举值：
 
+ABSOLUTE：绝对时间
 
-
-相对时间：
-RELATIVE
+RELATIVE：相对时间
 	 */
 	@ApiField("type")
 	private String type;
 
 	/**
-	 * type为ABSOLUTE必填。
+	 * 券可使用的开始时间。
 
-券可使用的开始时间。
 
-格式为yyyy-MM-dd HH:mm:ss
+
+格式为：yyyy-MM-dd HH:mm:ss
+
+
+
+限制：
+
+type为ABSOLUTE时该字段必填。
 	 */
 	@ApiField("valid_begin_time")
 	private Date validBeginTime;
 
 	/**
-	 * type为RELATIVE必填。
+	 * 券生效后N天内可以使用。
 
 
 
-券生效后N天内可以使用。
+可以配合wait_days_after_receive字段使用。
 
 
 
-可以配合waitDaysAfterReceive使用。
+限制：
+
+type为RELATIVE时必填。
+
+
+
+valid_days_after_receive必须大于0。
 	 */
 	@ApiField("valid_days_after_receive")
 	private Long validDaysAfterReceive;
 
 	/**
-	 * type为ABSOLUTE必填。
+	 * 券可使用的结束时间。
 
 
-
-券可使用的结束时间。该时间不能早于
-
-publish_end_time，券的发放时间。
 
 格式为yyyy-MM-dd HH:mm:ss
+
+
+
+限制：
+
+type为ABSOLUTE必填。
+
+
+
+券可使用的结束时间valid_end_time 必须大于 券的发放结束时间
+
+publish_end_time
 	 */
 	@ApiField("valid_end_time")
 	private Date validEndTime;
 
 	/**
-	 * type为RELATIVE可选。
+	 * 用户领券后需要等待N天，券才可以生效。
 
 
 
-用户领券后需要等待N天，券生效。
+如果该字段填入0或者不填写，则用户领券后立刻生效。
+
+
+
+限制：
+
+type为RELATIVE时可选。
 	 */
 	@ApiField("wait_days_after_receive")
 	private Long waitDaysAfterReceive;

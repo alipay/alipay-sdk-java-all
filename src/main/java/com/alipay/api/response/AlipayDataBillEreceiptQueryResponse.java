@@ -8,15 +8,15 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.ereceipt.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-29 09:37:45
+ * @since 1.0, 2021-05-06 14:11:28
  */
 public class AlipayDataBillEreceiptQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4357811958964125774L;
+	private static final long serialVersionUID = 2696354762232659712L;
 
 	/** 
-	 * 下载链接。status为SUCCESS时返回。用户可以使用此http链接下载文件内容。有效时间20s。<br/>
-生成的文件是zip格式。需要解压后获取电子回单pdf内容
+	 * 下载链接。status 为 SUCCESS时返回。用户可以使用此http链接下载文件内容。有效时间为 20s。 
+生成的文件是zip格式。需要解压后获取电子回单pdf内容。
 	 */
 	@ApiField("download_url")
 	private String downloadUrl;
@@ -28,13 +28,11 @@ public class AlipayDataBillEreceiptQueryResponse extends AlipayResponse {
 	private String errorMessage;
 
 	/** 
-	 * 处理状态<br/>
-<ul>
-<li>INIT - 初始化</li>
-<li>PROCESS - 处理中</li>
-<li>SUCCESS - 成功</li>
-<li>FAIL - 失败</li>
-</ul>
+	 * 处理状态。枚举值如下：
+INIT：初始化。
+PROCESS：处理中。
+SUCCESS：成功。
+FAIL：失败。
 	 */
 	@ApiField("status")
 	private String status;

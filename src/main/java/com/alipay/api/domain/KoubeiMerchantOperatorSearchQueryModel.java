@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 操作员列表查询
  *
  * @author auto create
- * @since 1.0, 2018-03-23 11:52:03
+ * @since 1.0, 2021-05-06 14:54:23
  */
 public class KoubeiMerchantOperatorSearchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8751453933641227739L;
+	private static final long serialVersionUID = 3552378179987624443L;
 
 	/**
 	 * isv回传的auth_code，通过auth_code校验当前操作人与商户的关系

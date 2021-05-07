@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑销售Leads创建接口
  *
  * @author auto create
- * @since 1.0, 2019-07-16 15:46:29
+ * @since 1.0, 2021-05-06 14:58:20
  */
 public class KoubeiSalesLeadsSaleleadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8591966147971529281L;
+	private static final long serialVersionUID = 6681237657655819475L;
 
 	/**
 	 * 销售Leads关联的业务主体id

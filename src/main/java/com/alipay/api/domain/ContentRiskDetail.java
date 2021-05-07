@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险规则详情
  *
  * @author auto create
- * @since 1.0, 2021-04-21 09:51:08
+ * @since 1.0, 2021-05-07 20:39:09
  */
 public class ContentRiskDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8899635679374835775L;
+	private static final long serialVersionUID = 5536359282386529614L;
 
 	/**
 	 * 规则名称
@@ -24,6 +24,12 @@ public class ContentRiskDetail extends AlipayObject {
 	 */
 	@ApiField("notice")
 	private String notice;
+
+	/**
+	 * https://xx.xxx.com/g/hsxone.mms.materialscenter/v/provider/getMaterialsInfo?file_guid=a87b7dc1fbc04d2c97753612fdd4dd08
+	 */
+	@ApiField("origin_file")
+	private String originFile;
 
 	/**
 	 * 当前规则命中的风险详情信息，譬如风险在图片的坐标、位置信息,坐标对应文字。
@@ -62,6 +68,13 @@ public class ContentRiskDetail extends AlipayObject {
 	}
 	public void setNotice(String notice) {
 		this.notice = notice;
+	}
+
+	public String getOriginFile() {
+		return this.originFile;
+	}
+	public void setOriginFile(String originFile) {
+		this.originFile = originFile;
 	}
 
 	public String getRiskInfos() {

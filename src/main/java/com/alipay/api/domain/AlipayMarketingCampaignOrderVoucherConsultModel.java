@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCampaignOrderVoucherConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5387395424636191632L;
+	private static final long serialVersionUID = 8897516716112828595L;
 
 	/**
 	 * 商品咨询请求列表（当需要咨询单品券时必传，如果某商品不希望参与本次单品优惠咨询则不传递对应信息即可）

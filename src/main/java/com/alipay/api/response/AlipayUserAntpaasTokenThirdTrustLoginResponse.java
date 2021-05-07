@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAntpaasTokenThirdTrustLoginResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4575538661592247527L;
+	private static final long serialVersionUID = 7738453644598282976L;
 
 	/** 
 	 * third_trust_token：用户免登的一次性token；后续使用改token进行免登请求。

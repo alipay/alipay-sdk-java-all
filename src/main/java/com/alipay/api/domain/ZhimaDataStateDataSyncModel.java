@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaDataStateDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7832274777217372419L;
+	private static final long serialVersionUID = 6828692946646752311L;
 
 	/**
 	 * 同步的数据具体内容(json字符串)，开发前与技术对接，将会给出需要的字段模型

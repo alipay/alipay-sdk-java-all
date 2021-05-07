@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  *  餐饮服务标准化服务申报
  *
  * @author auto create
- * @since 1.0, 2021-04-26 21:58:24
+ * @since 1.0, 2021-05-06 15:57:47
  */
 public class AlipayCommerceOperationIsvServiceSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7245646217177428253L;
+	private static final long serialVersionUID = 1635719683368379536L;
 
 	/**
 	 * 扩展字段，服务扩展字段，示例：key：service_levle，value：standard

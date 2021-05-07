@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CrowdSummary extends AlipayObject {
 
-	private static final long serialVersionUID = 5398686734794153759L;
+	private static final long serialVersionUID = 8594144829686321453L;
 
 	/**
 	 * 人群数量

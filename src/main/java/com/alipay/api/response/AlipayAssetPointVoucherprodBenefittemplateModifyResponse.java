@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.voucherprod.benefittemplate.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-27 23:59:08
+ * @since 1.0, 2021-04-28 00:00:21
  */
 public class AlipayAssetPointVoucherprodBenefittemplateModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7199533238177424591L;
+	private static final long serialVersionUID = 4651158855833336629L;
 
 	/** 
 	 * 修改后模版的过期时间

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建构建任务
  *
  * @author auto create
- * @since 1.0, 2021-04-22 17:49:46
+ * @since 1.0, 2021-05-06 14:53:33
  */
 public class AlipayOpenMiniInnerversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4819866288876979933L;
+	private static final long serialVersionUID = 3221567828561769314L;
 
 	/**
 	 * 业务来源，新接入方需要向支付宝申请专用来源，否则不予接入。https://yuque.antfin-inc.com/tinyapp-all/qddncu/bidushixiang
@@ -34,6 +34,12 @@ https://registry.npm.alibaba-inc.com/@alipay/tiny-cli/huoban-prod
 	 */
 	@ApiField("build_extra_info")
 	private String buildExtraInfo;
+
+	/**
+	 * 用于覆盖开发者配置字段，实现止血和灰度逻辑
+	 */
+	@ApiField("build_extra_mini_project_config")
+	private String buildExtraMiniProjectConfig;
 
 	/**
 	 * jsapi 权限文件,钉钉外请勿传
@@ -187,6 +193,13 @@ https://registry.npm.alibaba-inc.com/@alipay/tiny-cli/huoban-prod
 	}
 	public void setBuildExtraInfo(String buildExtraInfo) {
 		this.buildExtraInfo = buildExtraInfo;
+	}
+
+	public String getBuildExtraMiniProjectConfig() {
+		return this.buildExtraMiniProjectConfig;
+	}
+	public void setBuildExtraMiniProjectConfig(String buildExtraMiniProjectConfig) {
+		this.buildExtraMiniProjectConfig = buildExtraMiniProjectConfig;
 	}
 
 	public String getBuildJsPermission() {

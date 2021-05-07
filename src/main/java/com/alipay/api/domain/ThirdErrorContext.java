@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ThirdErrorContext extends AlipayObject {
 
-	private static final long serialVersionUID = 3613824377578529672L;
+	private static final long serialVersionUID = 3311576788863537326L;
 
 	/**
 	 * 支付宝三代错误码内部值

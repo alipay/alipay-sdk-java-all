@@ -4,37 +4,33 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 代金券
+ * 满减配置
  *
  * @author auto create
- * @since 1.0, 2021-04-24 14:47:26
+ * @since 1.0, 2021-04-30 16:43:57
  */
 public class FixVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 7119717423972691144L;
+	private static final long serialVersionUID = 8135416275762748673L;
 
 	/**
-	 * 面额。每张代金券可以抵扣的金额。币种为人民币，单位为元。该数值不能小于0.1，小数点以后最多保留两位。
+	 * 面额，每张代金券可以抵扣的金额。
 
 
 
-取值范围:0.1<x<3000
+限制：
+
+币种为人民币，单位为元。小数点以后最多保留两位。
+
+
+
+取值范围:0.1<=x<=3000
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/**
-	 * 最低额度。设置券使用门槛，只有订单金额大于等于最低额度时券才能使用。币种为人民币，单位为元。该数值不能小于0，小数点以后最多保留两位。
-
-
-
-设置门槛：取值范围:0.1<x<
-
-50000
-
-
-
-不设置门槛：认为是无门槛
+	 * 门槛金额。该字段设置为0或者不填写，认为无门槛。 限制： 只有当订单金额大于等于门槛金额时券才能使用。 币种为人民币，单位为元。小数点以后最多保留两位。 设置门槛：取值范围:0<=x<= 50000。
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;

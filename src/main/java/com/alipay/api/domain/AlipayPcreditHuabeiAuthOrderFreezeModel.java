@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiAuthOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1166618217328179593L;
+	private static final long serialVersionUID = 4876311716159615765L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号

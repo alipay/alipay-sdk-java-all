@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.venue.modify request
  * 
  * @author auto create
- * @since 1.0, 2021-04-13 22:41:21
+ * @since 1.0, 2021-04-30 16:10:58
  */
 public class AlipayCommerceSportsVenueModifyRequest implements AlipayRequest<AlipayCommerceSportsVenueModifyResponse> {
 
