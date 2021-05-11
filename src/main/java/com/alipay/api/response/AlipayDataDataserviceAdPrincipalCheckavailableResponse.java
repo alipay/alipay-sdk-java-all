@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ad.principal.checkavailable response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-05 19:45:11
+ * @since 1.0, 2021-05-08 11:49:37
  */
 public class AlipayDataDataserviceAdPrincipalCheckavailableResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1357677799891539541L;
+	private static final long serialVersionUID = 4518642574547136357L;
 
 	/** 
 	 * 返回灯火商家的ID

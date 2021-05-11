@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEduJzApplyresultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7371225438384933429L;
+	private static final long serialVersionUID = 2812214527914623322L;
 
 	/**
 	 * 报名编号（通过调用报名信息同步接口返回）

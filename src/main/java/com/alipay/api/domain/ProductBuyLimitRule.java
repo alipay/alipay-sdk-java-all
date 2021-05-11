@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场馆的产品购买限制规则信息
  *
  * @author auto create
- * @since 1.0, 2021-04-30 17:53:13
+ * @since 1.0, 2021-05-10 10:53:12
  */
 public class ProductBuyLimitRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1548993416916636994L;
+	private static final long serialVersionUID = 3779355577842815353L;
 
 	/**
 	 * 购买限制的类型，0-无需关联，1-需要关联，默认无需关联。 名词解释：票券课程类型商品的无需在意本字段，在价格日历预订下，代表是否需要时间段或场地的连场限制。

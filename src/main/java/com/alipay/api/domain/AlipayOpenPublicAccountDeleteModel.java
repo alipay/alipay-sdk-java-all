@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicAccountDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8236581846586834862L;
+	private static final long serialVersionUID = 5571252875453165669L;
 
 	/**
 	 * 协议号，商户会员在支付宝服务窗账号中的唯一标识，与bind_account_no不能同时为空

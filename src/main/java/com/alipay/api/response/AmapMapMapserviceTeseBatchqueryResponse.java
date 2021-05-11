@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AmapMapMapserviceTeseBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5822396837367275898L;
+	private static final long serialVersionUID = 5857656625525472726L;
 
 	/** 
 	 * 1

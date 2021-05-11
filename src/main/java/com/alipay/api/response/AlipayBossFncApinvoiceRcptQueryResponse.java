@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncApinvoiceRcptQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4612457384515515415L;
+	private static final long serialVersionUID = 4471987872124521295L;
 
 	/** 
 	 * 当前页

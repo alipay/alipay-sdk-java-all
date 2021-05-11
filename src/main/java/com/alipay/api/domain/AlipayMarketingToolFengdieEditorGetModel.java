@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingToolFengdieEditorGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7632895516324174678L;
+	private static final long serialVersionUID = 6492845547796513158L;
 
 	/**
 	 * 欲唤起的站点 ID

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppYufanlingsanyaowuYufalingsanyaowuQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3126258688269824716L;
+	private static final long serialVersionUID = 5517714899775448548L;
 
 	/**
 	 * 省份编码，国标码

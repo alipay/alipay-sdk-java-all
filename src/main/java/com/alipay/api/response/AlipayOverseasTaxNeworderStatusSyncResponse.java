@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTaxNeworderStatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1456762137455944151L;
+	private static final long serialVersionUID = 6551174553748433549L;
 
 	/** 
 	 * 纸质退税单号

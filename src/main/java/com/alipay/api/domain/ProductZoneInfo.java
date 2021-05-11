@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文体业务批量查询场馆产品信息SPI中的产品区间模型。
  *
  * @author auto create
- * @since 1.0, 2021-04-30 17:35:03
+ * @since 1.0, 2021-05-10 10:53:12
  */
 public class ProductZoneInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6358148561341597178L;
+	private static final long serialVersionUID = 7345358668772565323L;
 
 	/**
 	 * 结束时间

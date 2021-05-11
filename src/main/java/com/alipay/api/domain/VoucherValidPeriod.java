@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 日期区间内可以使用优惠
  *
  * @author auto create
- * @since 1.0, 2021-04-30 16:44:51
+ * @since 1.0, 2021-05-09 19:19:49
  */
 public class VoucherValidPeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 5498849365757458591L;
+	private static final long serialVersionUID = 6294297472723336956L;
 
 	/**
 	 * 券有效期。

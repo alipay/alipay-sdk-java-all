@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增/修改商家
  *
  * @author auto create
- * @since 1.0, 2020-08-27 15:21:31
+ * @since 1.0, 2021-05-08 11:49:10
  */
 public class AlipayDataDataserviceAdPrincipalCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4634428145695719846L;
+	private static final long serialVersionUID = 4113862874198496235L;
 
 	/**
 	 * 商家支付宝PID，新增商家时必填

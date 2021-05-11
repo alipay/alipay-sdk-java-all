@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdFacepayUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8234737516423433871L;
+	private static final long serialVersionUID = 1332967594322639928L;
 
 	/** 
 	 * 人脸支付token。即商户在本接口提交的用户人脸图片对应的token，通过此token串联后续调用

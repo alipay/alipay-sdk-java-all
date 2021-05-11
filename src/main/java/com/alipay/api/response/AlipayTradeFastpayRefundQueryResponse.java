@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-02 14:33:01
+ * @since 1.0, 2021-05-08 15:00:22
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1343954564429718925L;
+	private static final long serialVersionUID = 8552329132982365735L;
 
 	/** 
 	 * 银行卡冲退信息
@@ -79,6 +79,18 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
+
+	/** 
+	 * 若支付渠道包含医保统筹、个账，则显示退款的渠道信息。如统筹OUTSIDEGOVCARD，个账OUTSIDEACCCARD
+	 */
+	@ApiField("refund_channel_list")
+	private String refundChannelList;
+
+	/** 
+	 * 若支付渠道包含医保统筹、个账，全渠道退款成功时返回SUCCESS，全失败时返回FAIL，部分成功时返回PART_SUCCESS
+	 */
+	@ApiField("refund_channel_status")
+	private String refundChannelStatus;
 
 	/** 
 	 * 本次退款针对收款方的退收费金额；
@@ -208,6 +220,20 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	}
 	public String getRefundAmount( ) {
 		return this.refundAmount;
+	}
+
+	public void setRefundChannelList(String refundChannelList) {
+		this.refundChannelList = refundChannelList;
+	}
+	public String getRefundChannelList( ) {
+		return this.refundChannelList;
+	}
+
+	public void setRefundChannelStatus(String refundChannelStatus) {
+		this.refundChannelStatus = refundChannelStatus;
+	}
+	public String getRefundChannelStatus( ) {
+		return this.refundChannelStatus;
 	}
 
 	public void setRefundChargeAmount(String refundChargeAmount) {

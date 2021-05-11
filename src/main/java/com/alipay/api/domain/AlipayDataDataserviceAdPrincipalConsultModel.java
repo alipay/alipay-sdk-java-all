@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二方商家获取签约地址
  *
  * @author auto create
- * @since 1.0, 2020-05-11 16:08:35
+ * @since 1.0, 2021-05-08 11:49:54
  */
 public class AlipayDataDataserviceAdPrincipalConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5416279766769138745L;
+	private static final long serialVersionUID = 5156479466236175267L;
 
 	/**
 	 * 商家支付宝PID，根据该ID获取签约地址
