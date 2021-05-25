@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单券导入券码
  *
  * @author auto create
- * @since 1.0, 2021-05-10 00:38:59
+ * @since 1.0, 2021-05-12 22:59:36
  */
 public class AlipayMarketingActivityOrdervoucherCodedepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4524276734249629383L;
+	private static final long serialVersionUID = 6726558859626546126L;
 
 	/**
 	 * 活动id
@@ -37,7 +37,7 @@ public class AlipayMarketingActivityOrdervoucherCodedepositModel extends AlipayO
 	 * 券码的数量列表。接口参数为列表类型。
 
 限制：
-目前最大上传 2000 个。
+目前最大上传 1000 个。
 
 单个code最长64位。
 

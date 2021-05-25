@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 快递柜刷脸取件接口
  *
  * @author auto create
- * @since 1.0, 2020-11-16 10:18:34
+ * @since 1.0, 2021-05-11 17:10:15
  */
 public class AlipayCommerceLogisticsFaceMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6558641117328562112L;
+	private static final long serialVersionUID = 7137469127628965141L;
 
 	/**
 	 * 业务类型标识，比如 刷脸开柜，刷脸支付, 值由支付宝分配

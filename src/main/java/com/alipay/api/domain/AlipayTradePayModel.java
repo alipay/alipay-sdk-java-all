@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5889645369438966134L;
+	private static final long serialVersionUID = 2856312334598385639L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -145,10 +145,12 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	private PayParams payParams;
 
 	/**
-	 * 产品码，默认 FACE_TO_FACE_PAYMENT（当面付），枚举支持：
-PRE_AUTH_ONLINE：支付宝预授权。
-PRE_AUTH：新当面资金授权。
-CYCLE_PAY_AUTH ：周期扣款。
+	 * 产品码，默认 FACE_TO_FACE_PAYMENT（当面付），枚举如下：
+* FACE_TO_FACE_PAYMENT：当面付（默认）。
+* PRE_AUTH_ONLINE：支付宝预授权。
+* PRE_AUTH：新当面资金授权。
+* CYCLE_PAY_AUTH ：周期扣款。
+注意：非当面付产品使用本接口时，本参数必填。请传入对应产品码。
 	 */
 	@ApiField("product_code")
 	private String productCode;

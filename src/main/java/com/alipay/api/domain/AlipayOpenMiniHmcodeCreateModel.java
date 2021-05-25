@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniHmcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2363788231852634638L;
+	private static final long serialVersionUID = 6674332622655431387L;
 
 	/**
 	 * 对应的异形码描述

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.app.pay response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-26 11:02:38
+ * @since 1.0, 2021-05-12 18:22:36
  */
 public class AlipayTradeAppPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3599882895182222399L;
+	private static final long serialVersionUID = 8131514328961644435L;
 
 	/** 
 	 * 授信协议号。信用支付场景才有值，先用后付产品里是用户的芝麻授信协议号
@@ -58,7 +58,7 @@ public class AlipayTradeAppPayResponse extends AlipayResponse {
 	private String totalAmount;
 
 	/** 
-	 * 该交易在支付宝系统中的交易流水号。
+	 * 该交易在支付宝系统中的交易流水号。使用sdkExecute方法提交时不会返回，请在支付成功后通过 <a href="https://opendocs.alipay.com/apis/api_1/alipay.trade.query">alipay.trade.query</a>(统一收单线下交易查询)接口查询获取。
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

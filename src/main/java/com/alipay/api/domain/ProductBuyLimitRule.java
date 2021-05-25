@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 场馆的产品购买限制规则信息
  *
  * @author auto create
- * @since 1.0, 2021-05-10 10:53:12
+ * @since 1.0, 2021-05-13 11:44:37
  */
 public class ProductBuyLimitRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3779355577842815353L;
+	private static final long serialVersionUID = 3412591961221997799L;
+
+	/**
+	 * 购买时间限制，商品可下单的时间范围，为“可购买开始时间-可购买截止时间”时间段列表。全天可购买时可以不传值或者传["00:00:00-23:59:59"]；全天不可购买时传值["00:00:00-00:00:00"]。每个时间段内截止时间不能早于开始时间，多个时间段相互不能重合，如果传值错误会导致商品信息无法正常展示而被隐藏。
+	 */
+	@ApiListField("buy_time_limit")
+	@ApiField("string")
+	private List<String> buyTimeLimit;
 
 	/**
 	 * 购买限制的类型，0-无需关联，1-需要关联，默认无需关联。 名词解释：票券课程类型商品的无需在意本字段，在价格日历预订下，代表是否需要时间段或场地的连场限制。
@@ -44,18 +54,25 @@ public class ProductBuyLimitRule extends AlipayObject {
 	private Long categoryChooseMinCount;
 
 	/**
-	 * 天可购买的最晚时间，大于这个时间则不可购买。
-默认23点59分59秒
+	 * （已废弃，无效）可购买截止时间，当前时间大于这个时间用户不能下单。
+如果全天可下单，可购买开始和截止时间可以为空或者为00:00:00 - 23:59:59；如果全天不可下单，可购买开始时间(daily_start_time)和可购买截止时间(daily_end_time)均为00:00:00。
 	 */
 	@ApiField("daily_end_time")
 	private String dailyEndTime;
 
 	/**
-	 * 每天可购买的最早时间，小于这个时间则不可购买。
-默认0点0分0秒
+	 * （已废弃，无效）可购买开始时间，当前时间小于这个时间用户不能下单。
+默认00:00:00
 	 */
 	@ApiField("daily_start_time")
 	private String dailyStartTime;
+
+	public List<String> getBuyTimeLimit() {
+		return this.buyTimeLimit;
+	}
+	public void setBuyTimeLimit(List<String> buyTimeLimit) {
+		this.buyTimeLimit = buyTimeLimit;
+	}
 
 	public String getCanBuyLimitType() {
 		return this.canBuyLimitType;

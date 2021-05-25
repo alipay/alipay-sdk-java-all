@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 动账同步
  *
  * @author auto create
- * @since 1.0, 2021-04-26 11:08:26
+ * @since 1.0, 2021-05-24 11:03:24
  */
 public class AlipayEbppMerchantExternalbillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5144862839599177683L;
+	private static final long serialVersionUID = 3117913148761484982L;
 
 	/**
 	 * yyyyMMdd+0(DB_FLAG)+0070(SYSTEM_FLAG)+018(SUB_BIZ_FLAG,新建)+0000(预留)+DB_SPLIT(BIZ_TYPE+SUB_BIZTYPE+MERCHANT_CODE, 2位)+TABLE_FLAG(MERCHANT_CODE, 2位)+8位全局唯一nextValue

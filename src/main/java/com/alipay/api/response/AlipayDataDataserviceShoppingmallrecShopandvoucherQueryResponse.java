@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceShoppingmallrecShopandvoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1851854373434791589L;
+	private static final long serialVersionUID = 3722427765794356856L;
 
 	/** 
 	 * 本次推荐的id, 开发者埋点需带入此参数

@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金明细模型
  *
  * @author auto create
- * @since 1.0, 2021-04-27 09:57:08
+ * @since 1.0, 2021-05-13 09:54:21
  */
 public class FundItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8664396847493411217L;
+	private static final long serialVersionUID = 3557312556795765545L;
 
 	/**
-	 * 金额，单位分
+	 * 金额，单位元
 	 */
 	@ApiField("amount")
 	private String amount;

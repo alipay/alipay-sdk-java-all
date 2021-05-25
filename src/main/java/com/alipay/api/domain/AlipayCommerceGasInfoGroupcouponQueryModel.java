@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceGasInfoGroupcouponQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5519164927254154411L;
+	private static final long serialVersionUID = 7137952165915372582L;
 
 	/**
 	 * 劵创建结束时间:格式yyyy-MM-dd HH:mm:ss

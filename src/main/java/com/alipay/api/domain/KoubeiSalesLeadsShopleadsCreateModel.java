@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑开店Leads创建接口
  *
  * @author auto create
- * @since 1.0, 2019-07-16 15:45:10
+ * @since 1.0, 2021-05-10 15:52:08
  */
 public class KoubeiSalesLeadsShopleadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6298919531773937363L;
+	private static final long serialVersionUID = 2196446356793188492L;
 
 	/**
 	 * 街道详细地址

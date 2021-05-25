@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.contract.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-11-18 17:27:55
+ * @since 1.0, 2021-05-17 10:39:38
  */
 public class ZhimaMerchantContractCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2843293525878762652L;
+	private static final long serialVersionUID = 2893274173944671829L;
 
 	/** 
 	 * 取消的操作主体 用于区分是系统取消还是用户主动取消

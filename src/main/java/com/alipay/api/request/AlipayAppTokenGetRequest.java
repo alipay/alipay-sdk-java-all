@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.app.token.get request
  * 
  * @author auto create
- * @since 1.0, 2019-03-26 17:00:00
+ * @since 1.0, 2021-05-24 13:41:11
  */
 public class AlipayAppTokenGetRequest implements AlipayRequest<AlipayAppTokenGetResponse> {
 

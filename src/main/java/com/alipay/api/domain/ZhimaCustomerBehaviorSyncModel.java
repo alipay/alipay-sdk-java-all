@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻约定行为反馈
  *
  * @author auto create
- * @since 1.0, 2020-09-07 14:23:57
+ * @since 1.0, 2021-05-17 10:40:31
  */
 public class ZhimaCustomerBehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4482477455744723394L;
+	private static final long serialVersionUID = 4299521879534226274L;
 
 	/**
 	 * 反馈行为

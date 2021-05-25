@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiMarketingDataEnterpriseStaffinfoUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6782278713117764919L;
+	private static final long serialVersionUID = 3174743493386869832L;
 
 	/**
 	 * 请求流水号，由ISV自定义，在ISV系统内唯一标示一次业务请求。

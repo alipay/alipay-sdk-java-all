@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserSceneCooperationConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5891153188565632363L;
+	private static final long serialVersionUID = 6644666768842492598L;
 
 	/** 
 	 * 脱敏后的支付宝登录号

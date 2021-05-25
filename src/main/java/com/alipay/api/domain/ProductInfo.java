@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文体业务批量查询场馆产品信息SPI中的产品模型。
  *
  * @author auto create
- * @since 1.0, 2021-04-30 17:35:03
+ * @since 1.0, 2021-05-14 09:51:42
  */
 public class ProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4554564915427725881L;
+	private static final long serialVersionUID = 4113837729291931162L;
 
 	/**
 	 * 场馆的产品购买限制规则信息
@@ -23,7 +23,13 @@ public class ProductInfo extends AlipayObject {
 	private ProductBuyLimitRule canBuyRule;
 
 	/**
-	 * 产品开始使用前多长时间(分钟)可退款，不传默认开始前5分钟都可退款
+	 * 是否支持退款，可退款为true，不可退款为false，不传默认true可退款
+	 */
+	@ApiField("can_refund")
+	private Boolean canRefund;
+
+	/**
+	 * 产品开始使用前多长时间(分钟)可退款，不传默认开始前30分钟都可退款；产品不可退款(can_refund=false)时不需要传值。
 	 */
 	@ApiField("can_refund_minute")
 	private Long canRefundMinute;
@@ -131,6 +137,13 @@ public class ProductInfo extends AlipayObject {
 	}
 	public void setCanBuyRule(ProductBuyLimitRule canBuyRule) {
 		this.canBuyRule = canBuyRule;
+	}
+
+	public Boolean getCanRefund() {
+		return this.canRefund;
+	}
+	public void setCanRefund(Boolean canRefund) {
+		this.canRefund = canRefund;
 	}
 
 	public Long getCanRefundMinute() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDaoweiOrderTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2828619123566977248L;
+	private static final long serialVersionUID = 3147179151851695979L;
 
 	/**
 	 * 备注信息。商户在推进订单状态时填写的备注信息，不超过500字符。

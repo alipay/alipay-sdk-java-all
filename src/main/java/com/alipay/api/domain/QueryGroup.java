@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分组查询模型
  *
  * @author auto create
- * @since 1.0, 2020-08-10 20:27:18
+ * @since 1.0, 2021-05-17 15:13:50
  */
 public class QueryGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 5421271311968436644L;
+	private static final long serialVersionUID = 6423919422195716187L;
 
 	/**
 	 * 分组id

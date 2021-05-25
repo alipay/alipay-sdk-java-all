@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3371952988945991452L;
+	private static final long serialVersionUID = 1345671758813339866L;
 
 	/**
-	 * 当用户进入芝麻受理页面后，点击左上角的回退按钮时，跳转的商户url。点击后回到商户页面，开通流程结束。
+	 * 当用户进入芝麻后付开通页面后，点击左上角的回退按钮，中断开通流程，跳转回商户的页面地址
 	 */
 	@ApiField("cancel_back_link")
 	private String cancelBackLink;
@@ -26,7 +26,7 @@ public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject
 	private String categoryId;
 
 	/**
-	 * 用户在商户网站的登录账号，用于在开通页面展示，如果为空，则不展示。
+	 * 用户在商户网站的登录账号
 	 */
 	@ApiField("external_logon_id")
 	private String externalLogonId;
@@ -50,7 +50,7 @@ public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject
 	private String productCode;
 
 	/**
-	 * 用户完成开通流程后的跳转回商户的页面地址。
+	 * 用户成功完成芝麻后付开通流程后，跳转回商户的页面地址
 	 */
 	@ApiField("return_back_link")
 	private String returnBackLink;

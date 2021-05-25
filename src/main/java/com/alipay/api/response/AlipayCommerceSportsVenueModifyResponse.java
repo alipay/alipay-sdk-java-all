@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.venue.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-30 16:10:58
+ * @since 1.0, 2021-05-10 19:15:20
  */
 public class AlipayCommerceSportsVenueModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8145196176367546824L;
+	private static final long serialVersionUID = 6239196311814414227L;
 
 	/** 
 	 * 具体地址
@@ -81,14 +81,16 @@ public class AlipayCommerceSportsVenueModifyResponse extends AlipayResponse {
 	/** 
 	 * 联系电话
 	 */
-	@ApiField("phone")
-	private String phone;
+	@ApiListField("phone")
+	@ApiField("string")
+	private List<String> phone;
 
 	/** 
 	 * 场馆图片链接列表 最多5张
 	 */
-	@ApiField("picture_list")
-	private String pictureList;
+	@ApiListField("picture_list")
+	@ApiField("string")
+	private List<String> pictureList;
 
 	/** 
 	 * poi
@@ -108,8 +110,9 @@ calendar：价格日历
 ticket：票券
 course: 课程
 	 */
-	@ApiField("product_type_list")
-	private String productTypeList;
+	@ApiListField("product_type_list")
+	@ApiField("string")
+	private List<String> productTypeList;
 
 	/** 
 	 * 省份code
@@ -233,17 +236,17 @@ course: 课程
 		return this.outVenueId;
 	}
 
-	public void setPhone(String phone) {
+	public void setPhone(List<String> phone) {
 		this.phone = phone;
 	}
-	public String getPhone( ) {
+	public List<String> getPhone( ) {
 		return this.phone;
 	}
 
-	public void setPictureList(String pictureList) {
+	public void setPictureList(List<String> pictureList) {
 		this.pictureList = pictureList;
 	}
-	public String getPictureList( ) {
+	public List<String> getPictureList( ) {
 		return this.pictureList;
 	}
 
@@ -261,10 +264,10 @@ course: 课程
 		return this.poster;
 	}
 
-	public void setProductTypeList(String productTypeList) {
+	public void setProductTypeList(List<String> productTypeList) {
 		this.productTypeList = productTypeList;
 	}
-	public String getProductTypeList( ) {
+	public List<String> getProductTypeList( ) {
 		return this.productTypeList;
 	}
 

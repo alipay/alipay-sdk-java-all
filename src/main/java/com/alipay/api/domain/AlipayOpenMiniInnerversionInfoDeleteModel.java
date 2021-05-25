@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部链路删除版本
  *
  * @author auto create
- * @since 1.0, 2019-10-18 14:15:53
+ * @since 1.0, 2021-05-19 21:23:00
  */
 public class AlipayOpenMiniInnerversionInfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5556876751285848493L;
+	private static final long serialVersionUID = 5634517214645282269L;
 
 	/**
 	 * 业务场景来源

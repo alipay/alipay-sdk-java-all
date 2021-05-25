@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportVehicleownerBlacklistSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2428176738599464331L;
+	private static final long serialVersionUID = 5354163269224423579L;
 
 	
 

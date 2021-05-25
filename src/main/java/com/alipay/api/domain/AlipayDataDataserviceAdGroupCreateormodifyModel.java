@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建/修改单元
  *
  * @author auto create
- * @since 1.0, 2020-10-22 19:10:56
+ * @since 1.0, 2021-05-12 22:04:01
  */
 public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6387449755972823993L;
+	private static final long serialVersionUID = 6888978642458934924L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -23,10 +23,17 @@ public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObjec
 	private String bizToken;
 
 	/**
-	 * 转化事件编号。若此字段不为空，则要求conversion_type也不为空，且此转化事件与转化事件类型conversion_type匹配
+	 * 转化事件编号（废弃）。若此字段不为空，则要求conversion_type也不为空，且此转化事件与转化事件类型conversion_type匹配
 	 */
 	@ApiField("conversion_id")
 	private String conversionId;
+
+	/**
+	 * 转化目标之转化事件id列表
+	 */
+	@ApiListField("conversion_id_list")
+	@ApiField("string")
+	private List<String> conversionIdList;
 
 	/**
 	 * 转化事件类型：
@@ -75,10 +82,22 @@ CPA_TMALL_MEMBER_JOIN：淘系店铺入会
 	private List<String> itemIdList;
 
 	/**
+	 * 是否使用OCPX智能出价，只再CPC场景下，支持开启OCPX： OPEN: 打开；CLOSE: 关闭
+	 */
+	@ApiField("ocpx_switch")
+	private String ocpxSwitch;
+
+	/**
 	 * 外部唯一计划编号
 	 */
 	@ApiField("plan_outer_id")
 	private String planOuterId;
+
+	/**
+	 * 转化目标成本，只有开启OCPX后才需要配置，单位为分
+	 */
+	@ApiField("target_cpa")
+	private Long targetCpa;
 
 	/**
 	 * 定向扩展信息
@@ -121,6 +140,13 @@ OUTER_KOUBEI_CROWD_TAG_LIST：口碑人群
 	}
 	public void setConversionId(String conversionId) {
 		this.conversionId = conversionId;
+	}
+
+	public List<String> getConversionIdList() {
+		return this.conversionIdList;
+	}
+	public void setConversionIdList(List<String> conversionIdList) {
+		this.conversionIdList = conversionIdList;
 	}
 
 	public String getConversionType() {
@@ -172,11 +198,25 @@ OUTER_KOUBEI_CROWD_TAG_LIST：口碑人群
 		this.itemIdList = itemIdList;
 	}
 
+	public String getOcpxSwitch() {
+		return this.ocpxSwitch;
+	}
+	public void setOcpxSwitch(String ocpxSwitch) {
+		this.ocpxSwitch = ocpxSwitch;
+	}
+
 	public String getPlanOuterId() {
 		return this.planOuterId;
 	}
 	public void setPlanOuterId(String planOuterId) {
 		this.planOuterId = planOuterId;
+	}
+
+	public Long getTargetCpa() {
+		return this.targetCpa;
+	}
+	public void setTargetCpa(Long targetCpa) {
+		this.targetCpa = targetCpa;
 	}
 
 	public String getTargetingExtendInfo() {

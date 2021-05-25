@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权单笔操作明细查询接口
  *
  * @author auto create
- * @since 1.0, 2020-12-21 14:26:27
+ * @since 1.0, 2021-05-13 19:19:18
  */
 public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4436271757967429136L;
+	private static final long serialVersionUID = 3823298273894656513L;
 
 	/**
 	 * 支付宝授权资金订单号，与商户的授权资金订单号不能同时为空，二者都存在时，以支付宝资金授权订单号为准，该参数与支付宝授权资金操作流水号配对使用。
@@ -24,6 +24,12 @@ public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 	 */
 	@ApiField("operation_id")
 	private String operationId;
+
+	/**
+	 * 授权资金操作类型，可选值FREEZE/UNFREEZE/PAY，分别对应冻结、解冻、支付明细类型；未传入本参数时，如果仅查询出单笔明细则直接返回，如果查询出多笔则优先返回冻结明细、无冻结明细时返回解冻明细；当传入本参数时，则严格按照该操作类型返回对应明细
+	 */
+	@ApiField("operation_type")
+	private String operationType;
 
 	/**
 	 * 商户的授权资金订单号，与支付宝的授权资金订单号不能同时为空，二者都存在时，以支付宝的授权资金订单号为准，该参数与商户的授权资金操作流水号配对使用。
@@ -51,6 +57,13 @@ public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 	}
 	public void setOperationId(String operationId) {
 		this.operationId = operationId;
+	}
+
+	public String getOperationType() {
+		return this.operationType;
+	}
+	public void setOperationType(String operationType) {
+		this.operationType = operationType;
 	}
 
 	public String getOutOrderNo() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserElectronicidMerchantbarcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6585117369528967698L;
+	private static final long serialVersionUID = 1726437554578696327L;
 
 	/**
 	 * 动态码过期时间，单位秒，当type为DYNAMIC时为必填参数

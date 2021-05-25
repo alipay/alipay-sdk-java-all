@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO签约预创单
  *
  * @author auto create
- * @since 1.0, 2021-02-25 14:01:19
+ * @since 1.0, 2021-05-24 20:17:56
  */
 public class ZhimaCreditPeZmgoPreorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4554382159759637541L;
+	private static final long serialVersionUID = 4149526999564548149L;
 
 	/**
 	 * 支付宝用户ID。同一个外部请求号，调用方要确保支付宝userId取值不变
@@ -30,7 +30,7 @@ public class ZhimaCreditPeZmgoPreorderCreateModel extends AlipayObject {
 	private Date bizTime;
 
 	/**
-	 * 自定义模板参数，支持动态模板配置
+	 * 废弃字段，勿用
 	 */
 	@ApiField("custom_temp_conf")
 	private String customTempConf;
@@ -40,6 +40,12 @@ public class ZhimaCreditPeZmgoPreorderCreateModel extends AlipayObject {
 	 */
 	@ApiField("expire_aisle_data")
 	private String expireAisleData;
+
+	/**
+	 * 动态配置参数
+	 */
+	@ApiField("ext_template_conf")
+	private ExtTemplateConf extTemplateConf;
 
 	/**
 	 * 冻结金额，单位：元
@@ -123,6 +129,13 @@ public class ZhimaCreditPeZmgoPreorderCreateModel extends AlipayObject {
 	}
 	public void setExpireAisleData(String expireAisleData) {
 		this.expireAisleData = expireAisleData;
+	}
+
+	public ExtTemplateConf getExtTemplateConf() {
+		return this.extTemplateConf;
+	}
+	public void setExtTemplateConf(ExtTemplateConf extTemplateConf) {
+		this.extTemplateConf = extTemplateConf;
 	}
 
 	public String getFreezeAmount() {

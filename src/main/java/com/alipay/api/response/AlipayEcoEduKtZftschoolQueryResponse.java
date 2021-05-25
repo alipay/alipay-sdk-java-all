@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.edu.kt.zftschool.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-22 16:37:30
+ * @since 1.0, 2021-05-13 16:31:28
  */
 public class AlipayEcoEduKtZftschoolQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5893857845632121878L;
+	private static final long serialVersionUID = 3464346669991521592L;
 
 	/** 
 	 * 商户进件失败原因。有则返回，进件成功则不返回，失败原因可参考直付通接口说明，https://docs.alipay.com/pre-open/api_pre/ant.merchant.expand.indirect.zft.create

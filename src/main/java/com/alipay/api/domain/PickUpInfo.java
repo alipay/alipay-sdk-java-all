@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自提业务信息
  *
  * @author auto create
- * @since 1.0, 2021-04-22 10:55:32
+ * @since 1.0, 2021-05-12 21:08:16
  */
 public class PickUpInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8439163362821817565L;
+	private static final long serialVersionUID = 1713344971435462672L;
 
 	/**
 	 * 自提地址（展示的地址）

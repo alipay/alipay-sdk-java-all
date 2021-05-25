@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoEduKtParentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3749196952247218265L;
+	private static final long serialVersionUID = 8739171169236768175L;
 
 	/** 
 	 * 如果用户已经添加过这个孩子，则返回SUCCESS ， 失败返回FAIL。

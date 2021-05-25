@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.finance.consult response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-27 11:36:09
+ * @since 1.0, 2021-05-18 13:15:20
  */
 public class MybankCreditSceneprodFinanceConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2861451385894954713L;
+	private static final long serialVersionUID = 8552286878957474165L;
 
 	/** 
 	 * 分行ipRoleid
@@ -37,6 +37,12 @@ public class MybankCreditSceneprodFinanceConsultResponse extends AlipayResponse 
 	 */
 	@ApiField("finance_inst_name")
 	private String financeInstName;
+
+	/** 
+	 * 响应请求场景描述
+	 */
+	@ApiField("info")
+	private String info;
 
 	/** 
 	 * 是否可重试
@@ -94,6 +100,13 @@ FAIL: 匹配到的资方都拒绝准入
 	}
 	public String getFinanceInstName( ) {
 		return this.financeInstName;
+	}
+
+	public void setInfo(String info) {
+		this.info = info;
+	}
+	public String getInfo( ) {
+		return this.info;
 	}
 
 	public void setRetry(String retry) {

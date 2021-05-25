@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁直播字幕纠正扩展模型
  *
  * @author auto create
- * @since 1.0, 2021-03-19 15:40:07
+ * @since 1.0, 2021-05-18 17:38:51
  */
 public class AliveSubtitleExt extends AlipayObject {
 
-	private static final long serialVersionUID = 3149837663141844546L;
+	private static final long serialVersionUID = 8358373739775179644L;
 
 	/**
 	 * 当前句子识别结果的置信度，取值范围：[0.0,1.0]。值越大表示置信度越高
@@ -30,6 +30,22 @@ public class AliveSubtitleExt extends AlipayObject {
 	 */
 	@ApiField("index")
 	private Long index;
+
+	/**
+	 * PASSED("数据识别通过，可以在网站上正常显示"),
+
+    REJECTED("被拒绝的数据，比如内容出现违禁词；不能出现在我们网站上"),
+
+    REJECTED_CC("被拒绝的数据，但是展示效果为CC效果"),
+
+    CC("CC表示用户发表数据后，提示成功。"),
+
+    RECOVER("恢复数据，将误判断的内容，恢复回来"),
+
+    DELETE("删除数据, 为了不扩大化数据的传播，删除历史已经发出去的数据。");
+	 */
+	@ApiField("info_sec_result")
+	private String infoSecResult;
 
 	/**
 	 * 句子超始时间，单位为ms
@@ -62,6 +78,13 @@ public class AliveSubtitleExt extends AlipayObject {
 	}
 	public void setIndex(Long index) {
 		this.index = index;
+	}
+
+	public String getInfoSecResult() {
+		return this.infoSecResult;
+	}
+	public void setInfoSecResult(String infoSecResult) {
+		this.infoSecResult = infoSecResult;
 	}
 
 	public String getStartTime() {

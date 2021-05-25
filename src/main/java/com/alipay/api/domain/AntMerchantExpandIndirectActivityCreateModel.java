@@ -7,54 +7,57 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联商户运营活动报名接口
  *
  * @author auto create
- * @since 1.0, 2021-04-28 13:11:26
+ * @since 1.0, 2021-05-24 17:06:21
  */
 public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7291666462931527998L;
+	private static final long serialVersionUID = 3833871556977838349L;
 
 	/**
 	 * 活动类型，间连商户报名的支付宝活动类型。
-蓝海行动：BLUE_SEA
 特殊行业优惠费率：INDUSTRY_SPECIAL
 	 */
 	@ApiField("activity_type")
 	private String activityType;
 
 	/**
-	 * 商户简称，门头照的名称或者大众点评、美团、饿了么、口碑、百度外卖入驻平台名称。需和进件时别名保持一致。
+	 * 商户简称，需和进件时简称保持一致。
 	 */
 	@ApiField("alias_name")
 	private String aliasName;
 
 	/**
-	 * 银行卡信息。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+	 * 一般为商户同名银行账户信息，党费等特殊业务除外
 	 */
 	@ApiField("bank_account")
 	private BankCardInfo bankAccount;
 
 	/**
-	 * 营业执照，要求营业执照文本信息清晰可见。
-请上传照片OSSKey（参见应用场景说明）。
-蓝海行动必传。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+	 * 银行开户证明/银行开户回单/委托代收党费党支部红头文件，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
+	 */
+	@ApiField("bank_account_prove")
+	private String bankAccountProve;
+
+	/**
+	 * 机构跟银行的合作协议关键页/机构银行合作授权函，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key
+	 */
+	@ApiField("bank_cooperation_agreement")
+	private String bankCooperationAgreement;
+
+	/**
+	 * 统一社会信用代码证（三证合一）、营业执照、事业单位法人证书、组织机构代码证，要求文本信息清晰可见，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("business_license_pic")
 	private String businessLicensePic;
 
 	/**
-	 * 证明文件图片。
-请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+	 * 其他证明文件图片，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("certificate_file")
 	private String certificateFile;
 
 	/**
-	 * 收费样本。
-请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+	 * 收费样本，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("charge_sample")
 	private String chargeSample;
@@ -64,7 +67,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 请上传照片OSSKey（参见应用场景说明）。
 蓝海活动必须包含：①主扫：扫码支付场景需要展示具有支付宝logo和“推荐使用支付宝 或 支付就用支付宝”露出的二维码物料或立牌；②被
 扫：展示具有支付宝logo和推荐使用支付宝 或 支付就用支付宝”的扫码机具（盒子 ）
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("checkstand_pic")
 	private String checkstandPic;
@@ -72,32 +75,39 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 照会。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("diplomatic_note")
 	private String diplomaticNote;
 
 	/**
-	 * 店内环境照，要求照片清晰可见。
-请上传照片OSSKey（参见应用场景说明）。
-蓝海活动必传。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+	 * 店内环境照，具体可参见资质要求，要求照片清晰可见，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("indoor_pic")
 	private String indoorPic;
 
 	/**
+	 * 商户行业资质图片，如《医疗机构执业许可证》、《党组织批复成立文件》等，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key
+	 */
+	@ApiField("industry_qualification_image")
+	private String industryQualificationImage;
+
+	/**
 	 * 事业单位法人证书图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("institutional_organization_pic")
 	private String institutionalOrganizationPic;
 
 	/**
-	 * 法人身份证图片。需上传包含正反面的法人身份证图片。
-请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+	 * 负责人授权函，如果上传代理人身份证，需补充法人授权函；上传党支部书记身份证，需补充党支部书记任命函或党组织授权函，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
+	 */
+	@ApiField("legal_person_license_auth_pic")
+	private String legalPersonLicenseAuthPic;
+
+	/**
+	 * 负责人身份证图片正反面，可以上传法人身份证/代理人身份证/党支部书记身份证，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("legal_person_pic")
 	private String legalPersonPic;
@@ -105,7 +115,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 法人登记证书图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("legal_person_registration_pic")
 	private String legalPersonRegistrationPic;
@@ -113,13 +123,13 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 医疗执业许可证图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("medical_instrument_practice_license_pic")
 	private String medicalInstrumentPracticeLicensePic;
 
 	/**
-	 * 商户名称，营业执照上的名称，需和进件名称保持一致。
+	 * 商户名称，注册登记证件上的名称，需和进件名称保持一致。
 	 */
 	@ApiField("name")
 	private String name;
@@ -127,7 +137,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 组织机构代码证图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("org_cert_pic")
 	private String orgCertPic;
@@ -135,7 +145,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 民办非企业单位登记证书图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("private_nonenterprise_units")
 	private String privateNonenterpriseUnits;
@@ -143,7 +153,7 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	/**
 	 * 办学资质图片。
 请上传照片OSSKey（参见应用场景说明）。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("run_school_license_pic")
 	private String runSchoolLicensePic;
@@ -152,16 +162,13 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	 * 主流餐饮平台入驻证明（任选一个即可）：大众点评、美团、饿了么、口碑、百度外卖餐饮平台商户展示页面。
 请上传照片OSSKey（参见应用场景说明）。
 蓝海活动必传。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("settled_pic")
 	private String settledPic;
 
 	/**
-	 * 门头照。
-请上传照片OSSKey（参见应用场景说明）。
-蓝海行动必传。
-特殊行业，请参见<a href="https://opendocs.alipay.com/open/01hd83">间连特殊行业上传资质</a>
+	 * 门头照，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("shop_entrance_pic")
 	private String shopEntrancePic;
@@ -191,6 +198,20 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	}
 	public void setBankAccount(BankCardInfo bankAccount) {
 		this.bankAccount = bankAccount;
+	}
+
+	public String getBankAccountProve() {
+		return this.bankAccountProve;
+	}
+	public void setBankAccountProve(String bankAccountProve) {
+		this.bankAccountProve = bankAccountProve;
+	}
+
+	public String getBankCooperationAgreement() {
+		return this.bankCooperationAgreement;
+	}
+	public void setBankCooperationAgreement(String bankCooperationAgreement) {
+		this.bankCooperationAgreement = bankCooperationAgreement;
 	}
 
 	public String getBusinessLicensePic() {
@@ -235,11 +256,25 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 		this.indoorPic = indoorPic;
 	}
 
+	public String getIndustryQualificationImage() {
+		return this.industryQualificationImage;
+	}
+	public void setIndustryQualificationImage(String industryQualificationImage) {
+		this.industryQualificationImage = industryQualificationImage;
+	}
+
 	public String getInstitutionalOrganizationPic() {
 		return this.institutionalOrganizationPic;
 	}
 	public void setInstitutionalOrganizationPic(String institutionalOrganizationPic) {
 		this.institutionalOrganizationPic = institutionalOrganizationPic;
+	}
+
+	public String getLegalPersonLicenseAuthPic() {
+		return this.legalPersonLicenseAuthPic;
+	}
+	public void setLegalPersonLicenseAuthPic(String legalPersonLicenseAuthPic) {
+		this.legalPersonLicenseAuthPic = legalPersonLicenseAuthPic;
 	}
 
 	public String getLegalPersonPic() {

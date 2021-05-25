@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 参赛作品同步接口
  *
  * @author auto create
- * @since 1.0, 2021-04-15 18:32:45
+ * @since 1.0, 2021-05-12 11:00:07
  */
 public class AlipayCommerceEducateApplycompetitionWorksSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1667681629925189793L;
+	private static final long serialVersionUID = 2833587553636769736L;
 
 	/**
 	 * 参赛状态，参赛状态0:已报名，1:已支付，2:已参赛
 	 */
 	@ApiField("apply_status")
 	private String applyStatus;
+
+	/**
+	 * 扩展信息JSON格式
+	 */
+	@ApiField("extend_info")
+	private String extendInfo;
 
 	/**
 	 * 文件类型1：图片，2：视频
@@ -48,6 +54,13 @@ public class AlipayCommerceEducateApplycompetitionWorksSyncModel extends AlipayO
 	}
 	public void setApplyStatus(String applyStatus) {
 		this.applyStatus = applyStatus;
+	}
+
+	public String getExtendInfo() {
+		return this.extendInfo;
+	}
+	public void setExtendInfo(String extendInfo) {
+		this.extendInfo = extendInfo;
 	}
 
 	public String getFileType() {

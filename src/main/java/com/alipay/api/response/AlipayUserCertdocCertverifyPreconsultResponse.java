@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCertdocCertverifyPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1633282961669546389L;
+	private static final long serialVersionUID = 2388539626284394744L;
 
 	/** 
 	 * 申请验证ID。有效期为 2 小时，过期后在校验接口使用会报错 "校验信息已过期"。

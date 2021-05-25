@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开启带商户签约、创建应用事务
  *
  * @author auto create
- * @since 1.0, 2021-04-09 16:04:00
+ * @since 1.0, 2021-05-22 11:26:00
  */
 public class AlipayOpenAgentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6473271138432696948L;
+	private static final long serialVersionUID = 5431271614959519145L;
 
 	/**
 	 * isv代操作的商户账号，可以是支付宝账号，也可以是pid（2088开头）

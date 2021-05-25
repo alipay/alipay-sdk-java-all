@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 复杂标签规则项查询模型
  *
  * @author auto create
- * @since 1.0, 2020-08-10 20:27:18
+ * @since 1.0, 2021-05-17 15:13:50
  */
 public class QueryComplexLabelRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1571192839656896775L;
+	private static final long serialVersionUID = 1397223492898163375L;
 
 	/**
 	 * 标签id

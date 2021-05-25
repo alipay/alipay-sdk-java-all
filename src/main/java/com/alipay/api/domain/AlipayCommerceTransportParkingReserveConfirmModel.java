@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportParkingReserveConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7125791327571126314L;
+	private static final long serialVersionUID = 8758915188392549835L;
 
 	/**
 	 * true-预约成功，false-预约失败

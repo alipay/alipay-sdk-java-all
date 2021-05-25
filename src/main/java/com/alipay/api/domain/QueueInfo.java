@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 排队信息
  *
  * @author auto create
- * @since 1.0, 2021-04-22 00:13:19
+ * @since 1.0, 2021-05-12 21:08:34
  */
 public class QueueInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3172119324341658594L;
+	private static final long serialVersionUID = 1598888716418497892L;
 
 	/**
 	 * 当前叫号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScenicExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5627522721546942792L;
+	private static final long serialVersionUID = 7716555751565192142L;
 
 	/**
 	 * key的值
