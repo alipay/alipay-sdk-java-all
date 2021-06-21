@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2021-05-07 16:05:31
+ * @since 1.0, 2021-06-04 15:53:14
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2856312334598385639L;
+	private static final long serialVersionUID = 5499671963826967516L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -24,34 +24,42 @@ public class AlipayTradePayModel extends AlipayObject {
 	private String advancePaymentType;
 
 	/**
-	 * 代扣业务需要传入协议相关信息
+	 * 代扣信息。
+代扣业务需要传入的协议相关信息，使用本参数传入协议号后scene和auth_code不需要再传值。
 	 */
 	@ApiField("agreement_params")
 	private AgreementParams agreementParams;
 
 	/**
-	 * 支付宝的店铺编号
+	 * 支付宝店铺编号。
+指商户创建门店后支付宝生成的门店ID。
 	 */
 	@ApiField("alipay_store_id")
 	private String alipayStoreId;
 
 	/**
-	 * 支付授权码，25~30开头的长度为16~24位的数字，实际字符串长度以开发者获取的付款码长度为准。
-周期扣款（CYCLE_PAY_AUTH ）场景必填，传入用户签约号 agreement_no。
-支付宝预授权（PRE_AUTH_ONLINE）、新当面资金授权（PRE_AUTH）场景不填，需替换为 auth_no 传入资金授权订单号。
+	 * 支付授权码。
+当面付场景传买家的付款码（25~30开头的长度为16~24位的数字，实际字符串长度以开发者获取的付款码长度为准）或者刷脸标识串（fp开头的35位字符串）；
+周期扣款或代扣场景无需传入，协议号通过agreement_params参数传递； 
+支付宝预授权和新当面资金授权场景无需传入，授权订单号通过 auth_no字段传入。
+注：交易的买家与卖家不能相同。
 	 */
 	@ApiField("auth_code")
 	private String authCode;
 
 	/**
-	 * 预授权确认模式，授权转交易请求中传入，适用于预授权转交易业务使用，目前只支持PRE_AUTH(预授权产品码)
-COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLETE：转交易支付完成不结束预授权，不解冻剩余金额
+	 * 预授权确认模式。
+适用于支付宝预授权和新当面资金授权场景。枚举值：
+COMPLETE：转交易完成后解冻剩余冻结金额；
+NOT_COMPLETE：转交易完成后不解冻剩余冻结金额；
+默认值为NOT_COMPLETE。
 	 */
 	@ApiField("auth_confirm_mode")
 	private String authConfirmMode;
 
 	/**
-	 * 支付宝的资金授权订单号，预授权转交易场景必填。目前仅支持 支付宝预授权（PRE_AUTH_ONLINE）、新当面资金授权（PRE_AUTH）场景使用。
+	 * 资金预授权单号。
+支付宝预授权和新当面资金授权场景下必填。
 	 */
 	@ApiField("auth_no")
 	private String authNo;
@@ -69,21 +77,25 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	private BusinessParams businessParams;
 
 	/**
-	 * 买家的支付宝用户 ID，若为空，则从传入的码值信息中获取用户 ID
-新当面资金授权场景必填。
+	 * 买家支付宝用户ID。
+支付宝预授权和新当面资金授权场景下必填，其它场景不需要传入。
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
 
 	/**
-	 * 禁用支付渠道,多个渠道以逗号分割，如同时禁用信用支付类型和积分，则disable_pay_channels="credit_group,point"
+	 * 禁用支付渠道。
+多个渠道以逗号分割，如同时禁用信用支付类型和积分，则传入："credit_group,point"。
+支持传入的值：<a target="_blank" href="https://docs.open.alipay.com/common/wifww7">渠道列表</a>
 	 */
 	@ApiField("disable_pay_channels")
 	private String disablePayChannels;
 
 	/**
-	 * 参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。
-如果该值未传入，但传入了【订单总金额】和【不可打折金额】，则该值默认为【订单总金额】-【不可打折金额】
+	 * 可打折金额。
+参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。 
+如果同时传入了【可打折金额】、【不可打折金额】和【订单总金额】，则必须满足如下条件：【订单总金额】=【可打折金额】+【不可打折金额】。
+如果订单金额全部参与优惠计算，则【可打折金额】和【不可打折金额】都无需传入。
 	 */
 	@ApiField("discountable_amount")
 	private String discountableAmount;
@@ -108,7 +120,8 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	private List<GoodsDetail> goodsDetail;
 
 	/**
-	 * 是否异步支付，传入true时，表明本次期望走异步支付，会先将支付请求受理下来，再异步推进。商户可以通过交易的异步通知或者轮询交易的状态来确定最终的交易结果
+	 * 是否异步支付，传入true时，表明本次期望走异步支付，会先将支付请求受理下来，再异步推进。商户可以通过交易的异步通知或者轮询交易的状态来确定最终的交易结果。
+只在代扣场景下有效，其它场景无需传入。
 	 */
 	@ApiField("is_async_pay")
 	private Boolean isAsyncPay;
@@ -121,19 +134,21 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 
 	/**
 	 * 商户操作员编号。
-新当面资金授权场景必填。
 	 */
 	@ApiField("operator_id")
 	private String operatorId;
 
 	/**
-	 * 商户订单号，由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。
+	 * 商户订单号。
+由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
 
 	/**
-	 * 公用回传参数，如果请求时传递了该参数，则返回给商户时会回传该参数。支付宝只会在同步返回（包括跳转回商户网站）和异步通知时将该参数原样返回。本参数必须进行UrlEncode之后才可以发送给支付宝。
+	 * 公用回传参数。
+如果请求时传递了该参数，支付宝会在异步通知时将该参数原样返回。
+本参数必须进行UrlEncode之后才可以发送给支付宝。
 	 */
 	@ApiField("passback_params")
 	private String passbackParams;
@@ -145,11 +160,14 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	private PayParams payParams;
 
 	/**
-	 * 产品码，默认 FACE_TO_FACE_PAYMENT（当面付），枚举如下：
-* FACE_TO_FACE_PAYMENT：当面付（默认）。
-* PRE_AUTH_ONLINE：支付宝预授权。
-* PRE_AUTH：新当面资金授权。
-* CYCLE_PAY_AUTH ：周期扣款。
+	 * 产品码。
+商家和支付宝签约的产品码。 枚举值（点击查看签约情况）：
+<a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/486/487">FACE_TO_FACE_PAYMENT</a>：当面付产品；
+<a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/807/1419">CYCLE_PAY_AUTH</a>：周期扣款产品；
+GENERAL_WITHHOLDING：代扣产品；
+<a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/712/1471">PRE_AUTH_ONLINE</a>：支付宝预授权产品；
+PRE_AUTH：新当面资金授权产品；
+默认值为FACE_TO_FACE_PAYMENT。
 注意：非当面付产品使用本接口时，本参数必填。请传入对应产品码。
 	 */
 	@ApiField("product_code")
@@ -162,7 +180,8 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	private PromoParam promoParams;
 
 	/**
-	 * 返回查询选项，商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。如：["fund_bill_list","voucher_detail_list","discount_goods_detail"]
+	 * 返回参数选项。
+商户通过传递该参数来定制同步需要额外返回的信息字段，数组格式。如：["fund_bill_list","voucher_detail_list","discount_goods_detail"]
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")
@@ -175,24 +194,30 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	private String requestOrgPid;
 
 	/**
-	 * 描述分账信息，json格式，其它说明详见分账说明
+	 * 分账信息。
+json格式，其它说明详见分账说明
 	 */
 	@ApiField("royalty_info")
 	private RoyaltyInfo royaltyInfo;
 
 	/**
-	 * 支付场景。条码支付场景固定为：bar_code。
-周期扣款后续代扣时必填，固定为 deduct_pay；
-新当面资金授权场景固定为 bar_code。
-支付宝预授权景无需传入。
-
+	 * 支付场景。枚举值：
+bar_code：当面付条码支付场景；
+security_code：当面付刷脸支付场景，对应的auth_code为fp开头的刷脸标识串；
+周期扣款或代扣场景无需传入，协议号通过agreement_params参数传递； 
+支付宝预授权和新当面资金授权场景无需传入，授权订单号通过 auth_no字段传入。
+默认值为bar_code。
 	 */
 	@ApiField("scene")
 	private String scene;
 
 	/**
-	 * 如果该值为空，则默认为商户签约账号对应的支付宝用户ID。
-新当面资金授权场景必填。
+	 * 卖家支付宝用户ID。
+当需要指定收款账号时，通过该参数传入，如果该值为空，则默认为商户签约账号对应的支付宝用户ID。
+收款账号优先级规则：门店绑定的收款账户>请求传入的seller_id>商户签约账号对应的支付宝用户ID；
+注：直付通和机构间联场景下seller_id无需传入或者保持跟pid一致；
+如果传入的seller_id与pid不一致，需要联系支付宝小二配置收款关系；
+支付宝预授权和新当面资金授权场景下必填。
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
@@ -204,54 +229,59 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	private String settleCurrency;
 
 	/**
-	 * 描述结算信息，json格式，详见结算参数说明
+	 * 结算信息、
+json格式，详见结算参数说明。
+直付通模式下必传。
 	 */
 	@ApiField("settle_info")
 	private SettleInfo settleInfo;
 
 	/**
 	 * 商户门店编号。
-新当面资金授权场景必填。
+指商户创建门店时输入的门店编号。
 	 */
 	@ApiField("store_id")
 	private String storeId;
 
 	/**
-	 * 间连受理商户信息体，当前只对特殊银行机构特定场景下使用此字段
+	 * 二级商户信息。
+直付通模式和机构间连模式下必传，其它场景下不需要传入。
 	 */
 	@ApiField("sub_merchant")
 	private SubMerchant subMerchant;
 
 	/**
-	 * 商品标题/交易标题/订单标题/订单关键字等。 
+	 * 订单标题。
 注意：不可使用特殊字符，如 /，=，& 等。
 	 */
 	@ApiField("subject")
 	private String subject;
 
 	/**
-	 * 商户机具终端编号
+	 * 商户机具终端编号。
 	 */
 	@ApiField("terminal_id")
 	private String terminalId;
 
 	/**
-	 * 商户传入终端设备相关信息，具体值要和支付宝约定
+	 * IOT设备信息。
+通过集成IOTSDK的机具发起的交易时传入，取值为IOTSDK生成的业务签名值。
 	 */
 	@ApiField("terminal_params")
 	private String terminalParams;
 
 	/**
-	 * 该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
-当面付场景默认超时时间为3h，且最大时间不超过 3h。若当面付场景设置timeout_express>3h，接口不报错，但是订单将在3小时关闭。
+	 * 订单相对超时时间。
+该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。 
+当面付场景默认值为3h；
+其它场景默认值为15d;
 	 */
 	@ApiField("timeout_express")
 	private String timeoutExpress;
 
 	/**
-	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
-如果同时传入【可打折金额】和【不可打折金额】，该参数可以不用传入；
-如果同时传入了【可打折金额】，【不可打折金额】，【订单总金额】三者，则必须满足如下条件：【订单总金额】=【可打折金额】+【不可打折金额】
+	 * 订单总金额。
+单位为元，精确到小数点后两位，取值范围：[0.01,100000000] 。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
@@ -263,7 +293,10 @@ COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLE
 	private String transCurrency;
 
 	/**
-	 * 不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。如果该值未传入，但传入了【订单总金额】和【可打折金额】，则该值默认为【订单总金额】-【可打折金额】
+	 * 不可打折金额。
+不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。 
+如果同时传入了【可打折金额】、【不可打折金额】和【订单总金额】，则必须满足如下条件：【订单总金额】=【可打折金额】+【不可打折金额】。
+如果订单金额全部参与优惠计算，则【可打折金额】和【不可打折金额】都无需传入。
 	 */
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;

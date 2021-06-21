@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.iot.booth.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-07 11:15:43
+ * @since 1.0, 2021-06-10 10:10:23
  */
 public class AlipayMarketingIotBoothQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8718816927186932773L;
+	private static final long serialVersionUID = 8866273835651188956L;
 
 	/** 
 	 * 用于链路埋点，识别权益触发链路
@@ -36,6 +36,12 @@ public class AlipayMarketingIotBoothQueryResponse extends AlipayResponse {
 	@ApiField("engine_type")
 	private String engineType;
 
+	/** 
+	 * 展位可用性结果，描述当前入参是否存在可用展位
+	 */
+	@ApiField("usable")
+	private Boolean usable;
+
 	public void setBoothToken(String boothToken) {
 		this.boothToken = boothToken;
 	}
@@ -55,6 +61,13 @@ public class AlipayMarketingIotBoothQueryResponse extends AlipayResponse {
 	}
 	public String getEngineType( ) {
 		return this.engineType;
+	}
+
+	public void setUsable(Boolean usable) {
+		this.usable = usable;
+	}
+	public Boolean getUsable( ) {
+		return this.usable;
 	}
 
 }

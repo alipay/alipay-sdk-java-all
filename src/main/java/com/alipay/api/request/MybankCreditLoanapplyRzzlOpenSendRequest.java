@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.rzzl.open.send request
  * 
  * @author auto create
- * @since 1.0, 2021-05-13 09:55:21
+ * @since 1.0, 2021-05-26 19:37:35
  */
 public class MybankCreditLoanapplyRzzlOpenSendRequest implements AlipayRequest<MybankCreditLoanapplyRzzlOpenSendResponse> {
 

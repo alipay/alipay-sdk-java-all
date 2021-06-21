@@ -1,0 +1,364 @@
+package com.alipay.api.domain;
+
+import java.util.Date;
+import java.util.List;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+
+/**
+ * 订单信息
+ *
+ * @author auto create
+ * @since 1.0, 2021-06-15 16:59:01
+ */
+public class ReceiptOrderDTO extends AlipayObject {
+
+	private static final long serialVersionUID = 1362296391673948583L;
+
+	/**
+	 * 支付宝用户uid; 是支付宝支付时，必填
+	 */
+	@ApiField("alipay_uid")
+	private String alipayUid;
+
+	/**
+	 * 订单金额，单位为元; 如果不涉及金额可不传入该字段，其他场 景必传;
+	 */
+	@ApiField("amount")
+	private String amount;
+
+	/**
+	 * 租借时长，精确到分钟;充电宝场景时，必填;
+	 */
+	@ApiField("borrow_time")
+	private Long borrowTime;
+
+	/**
+	 * 买家信息
+	 */
+	@ApiField("buyer_info")
+	private UserInformation buyerInfo;
+
+	/**
+	 * 币种（CNY-人民币）
+	 */
+	@ApiField("currency")
+	private String currency;
+
+	/**
+	 * 优惠金额。 如果为空，则默认都没有优惠金额
+	 */
+	@ApiField("discount_amount")
+	private String discountAmount;
+
+	/**
+	 * 订单优惠信息;电子小票场景时，必填
+	 */
+	@ApiListField("discount_info_list")
+	@ApiField("discount_info_data_d_t_o")
+	private List<DiscountInfoDataDTO> discountInfoList;
+
+	/**
+	 * 环保数据，不传为空时，认为没有环保行为
+	 */
+	@ApiListField("environmental_info")
+	@ApiField("enviromental_info_d_t_o")
+	private List<EnviromentalInfoDTO> environmentalInfo;
+
+	/**
+	 * 商户商品信息列表; 电子小票场景时，必填
+	 */
+	@ApiListField("item_order_list")
+	@ApiField("item_order_info_d_t_o")
+	private List<ItemOrderInfoDTO> itemOrderList;
+
+	/**
+	 * 设备地理位置及坐标; 充电宝场景时，必填
+	 */
+	@ApiField("location")
+	private String location;
+
+	/**
+	 * 物流信息; 订单信息包含物流信息时，必填; 列表最多支持物流信 息个数;最大支持5个
+注:若该值不为空，且物流信息同步至我的快递，则在查询订单时可返回具体物流信息
+ionRequest
+	 */
+	@ApiListField("logistics_info_list")
+	@ApiField("order_logistics_information_request_d_t_o")
+	private List<OrderLogisticsInformationRequestDTO> logisticsInfoList;
+
+	/**
+	 * 商户名字
+	 */
+	@ApiField("merchant_name")
+	private String merchantName;
+
+	/**
+	 * 订单创建时间; 充电宝和酒店行业时，必填
+	 */
+	@ApiField("order_create_time")
+	private Date orderCreateTime;
+
+	/**
+	 * 订单修改时间，一般不需要传入。用于订单状态或数据变化较快 的顺序控制，order_modified_time较晚的同步会被最终存储， order_modified_time相同的两次同步可能会被幂等处理， FMCG按照行业标准化接入场景必须传入该字段控制乱序;
+	 */
+	@ApiField("order_modified_time")
+	private Date orderModifiedTime;
+
+	/**
+	 * 订单支付时间，当pay_channel为非ALIPAY时，且订单状态已 流转到“支付”或支付后时，需要将支付时间传入;支付交易完成 时，必填
+	 */
+	@ApiField("order_pay_time")
+	private Date orderPayTime;
+
+	/**
+	 * 每次请求必传;所有订单类型枚举: 快消:FMCG; 酒店:HOTEL; 智能 售卖:AUTOMAT; 景区:RESORT;高校:HIGHSCHOOL;品牌: FASHION; 商圈综合体:MALL; 充电宝:POWERBANK; 物流:LOGISTICS
+	 */
+	@ApiField("order_type")
+	private String orderType;
+
+	/**
+	 * 外部商户订单号;out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
+
+	/**
+	 * 支付金额，需要实际支付的金额。如果不涉及金额可不传入该字 段，其他场景必传
+	 */
+	@ApiField("pay_amount")
+	private String payAmount;
+
+	/**
+	 * 支付类型:alipay:支付宝，wchatpay:微信，cloudpay:云闪付，cashpay：现金，otherpay：其它
+	 */
+	@ApiField("pay_type")
+	private String payType;
+
+	/**
+	 * 门店地址
+	 */
+	@ApiField("shop_address")
+	private String shopAddress;
+
+	/**
+	 * 门店联系方式
+	 */
+	@ApiField("shop_contract")
+	private String shopContract;
+
+	/**
+	 * 门店名称; 拥有门店的场景时，必填; 否则无法展示门店信息
+	 */
+	@ApiField("shop_name")
+	private String shopName;
+
+	/**
+	 * 提供字典值
+	 */
+	@ApiField("shop_type")
+	private String shopType;
+
+	/**
+	 * 终端设备id;直饮水订单时，必填
+	 */
+	@ApiField("terminal_id")
+	private String terminalId;
+
+	/**
+	 * 订单所对应的支付宝交易号; 支付宝支付时，必填
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
+
+	/**
+	 * 交易号类型:1. TRADE-交易，为空默认为TRADE;2. TRANSFER-转账;3. ENTRUST-受托
+	 */
+	@ApiField("trade_type")
+	private String tradeType;
+
+	public String getAlipayUid() {
+		return this.alipayUid;
+	}
+	public void setAlipayUid(String alipayUid) {
+		this.alipayUid = alipayUid;
+	}
+
+	public String getAmount() {
+		return this.amount;
+	}
+	public void setAmount(String amount) {
+		this.amount = amount;
+	}
+
+	public Long getBorrowTime() {
+		return this.borrowTime;
+	}
+	public void setBorrowTime(Long borrowTime) {
+		this.borrowTime = borrowTime;
+	}
+
+	public UserInformation getBuyerInfo() {
+		return this.buyerInfo;
+	}
+	public void setBuyerInfo(UserInformation buyerInfo) {
+		this.buyerInfo = buyerInfo;
+	}
+
+	public String getCurrency() {
+		return this.currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
+
+	public String getDiscountAmount() {
+		return this.discountAmount;
+	}
+	public void setDiscountAmount(String discountAmount) {
+		this.discountAmount = discountAmount;
+	}
+
+	public List<DiscountInfoDataDTO> getDiscountInfoList() {
+		return this.discountInfoList;
+	}
+	public void setDiscountInfoList(List<DiscountInfoDataDTO> discountInfoList) {
+		this.discountInfoList = discountInfoList;
+	}
+
+	public List<EnviromentalInfoDTO> getEnvironmentalInfo() {
+		return this.environmentalInfo;
+	}
+	public void setEnvironmentalInfo(List<EnviromentalInfoDTO> environmentalInfo) {
+		this.environmentalInfo = environmentalInfo;
+	}
+
+	public List<ItemOrderInfoDTO> getItemOrderList() {
+		return this.itemOrderList;
+	}
+	public void setItemOrderList(List<ItemOrderInfoDTO> itemOrderList) {
+		this.itemOrderList = itemOrderList;
+	}
+
+	public String getLocation() {
+		return this.location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public List<OrderLogisticsInformationRequestDTO> getLogisticsInfoList() {
+		return this.logisticsInfoList;
+	}
+	public void setLogisticsInfoList(List<OrderLogisticsInformationRequestDTO> logisticsInfoList) {
+		this.logisticsInfoList = logisticsInfoList;
+	}
+
+	public String getMerchantName() {
+		return this.merchantName;
+	}
+	public void setMerchantName(String merchantName) {
+		this.merchantName = merchantName;
+	}
+
+	public Date getOrderCreateTime() {
+		return this.orderCreateTime;
+	}
+	public void setOrderCreateTime(Date orderCreateTime) {
+		this.orderCreateTime = orderCreateTime;
+	}
+
+	public Date getOrderModifiedTime() {
+		return this.orderModifiedTime;
+	}
+	public void setOrderModifiedTime(Date orderModifiedTime) {
+		this.orderModifiedTime = orderModifiedTime;
+	}
+
+	public Date getOrderPayTime() {
+		return this.orderPayTime;
+	}
+	public void setOrderPayTime(Date orderPayTime) {
+		this.orderPayTime = orderPayTime;
+	}
+
+	public String getOrderType() {
+		return this.orderType;
+	}
+	public void setOrderType(String orderType) {
+		this.orderType = orderType;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
+	}
+
+	public String getPayAmount() {
+		return this.payAmount;
+	}
+	public void setPayAmount(String payAmount) {
+		this.payAmount = payAmount;
+	}
+
+	public String getPayType() {
+		return this.payType;
+	}
+	public void setPayType(String payType) {
+		this.payType = payType;
+	}
+
+	public String getShopAddress() {
+		return this.shopAddress;
+	}
+	public void setShopAddress(String shopAddress) {
+		this.shopAddress = shopAddress;
+	}
+
+	public String getShopContract() {
+		return this.shopContract;
+	}
+	public void setShopContract(String shopContract) {
+		this.shopContract = shopContract;
+	}
+
+	public String getShopName() {
+		return this.shopName;
+	}
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+
+	public String getShopType() {
+		return this.shopType;
+	}
+	public void setShopType(String shopType) {
+		this.shopType = shopType;
+	}
+
+	public String getTerminalId() {
+		return this.terminalId;
+	}
+	public void setTerminalId(String terminalId) {
+		this.terminalId = terminalId;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
+	}
+
+	public String getTradeType() {
+		return this.tradeType;
+	}
+	public void setTradeType(String tradeType) {
+		this.tradeType = tradeType;
+	}
+
+}

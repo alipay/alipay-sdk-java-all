@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新计划
  *
  * @author auto create
- * @since 1.0, 2020-05-06 13:28:54
+ * @since 1.0, 2021-06-16 16:39:46
  */
 public class AlipayCommerceIotAdvertiserAdModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8765243425415195964L;
+	private static final long serialVersionUID = 8545422249267657522L;
 
 	/**
 	 * 下线SN列表

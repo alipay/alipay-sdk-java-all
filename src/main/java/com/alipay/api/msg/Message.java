@@ -37,6 +37,8 @@ public class Message implements Serializable {
     private String msgApi;
     private String bizContent;
     private String body;
+    private String appCertSN;
+    private String alipayRootCertSN;
 
     public static Message fromStr(String str) throws IllegalArgumentException {
         Message message = new Message();
@@ -90,6 +92,9 @@ public class Message implements Serializable {
                 Map<?, ?> headerJson = (Map<?, ?>) dataJson.get("header");
                 message.setAppId((String) (headerJson.get("appId")));
                 message.setMsgApi((String) (headerJson.get("msgApi")));
+
+                message.setAppCertSN((String) (headerJson.get("app_cert_sn")));
+                message.setAlipayRootCertSN((String)(headerJson.get("alipay_root_cert_sn")));
             }
             if (dataJson.containsKey("content")) {
                 if (!(dataJson.get("content") instanceof Map<?, ?>)) {
@@ -220,6 +225,12 @@ public class Message implements Serializable {
         }
         if (!StringUtils.isEmpty(message.getMsgApi())) {
             dataSb.append("\"msgApi\":\"").append(message.getMsgApi()).append("\",");
+        }
+        if (!StringUtils.isEmpty(message.getAppCertSN())) {
+            dataSb.append("\"app_cert_sn\":\"").append(message.getAppCertSN()).append("\",");
+        }
+        if (!StringUtils.isEmpty(message.getAlipayRootCertSN())) {
+            dataSb.append("\"alipay_root_cert_sn\":\"").append(message.getAlipayRootCertSN()).append("\",");
         }
         if (',' == dataSb.charAt(dataSb.length() - 1)) {
             dataSb.deleteCharAt(dataSb.length() - 1);
@@ -508,6 +519,43 @@ public class Message implements Serializable {
      */
     public void setBody(String body) {
         this.body = body;
+    }
+
+    /**
+     * Getter method for property <tt>appCertSN</tt>.
+     *
+     * @return property value of appCertSN
+     */
+    public String getAppCertSN() {
+        return appCertSN;
+    }
+
+    /**
+     * Setter method for property <tt>appCertSN</tt>.
+     *
+     * @param appCertSN value to be assigned to property appCertSN
+     */
+    public void setAppCertSN(String appCertSN) {
+        this.appCertSN = appCertSN;
+    }
+
+
+    /**
+     * Getter method for property <tt>alipayRootCertSN</tt>.
+     *
+     * @return property value of alipayRootCertSN
+     */
+    public String getAlipayRootCertSN() {
+        return alipayRootCertSN;
+    }
+
+    /**
+     * Setter method for property <tt>alipayRootCertSN</tt>.
+     *
+     * @param alipayRootCertSN value to be assigned to property alipayRootCertSN
+     */
+    public void setAlipayRootCertSN(String alipayRootCertSN) {
+        this.alipayRootCertSN = alipayRootCertSN;
     }
 
     @Override

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.advertiser.ad.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-13 17:12:28
+ * @since 1.0, 2021-06-16 16:44:01
  */
 public class AlipayCommerceIotAdvertiserAdCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4113968273362759735L;
+	private static final long serialVersionUID = 1425813263992513866L;
 
 	
 

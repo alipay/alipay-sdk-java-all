@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.sites.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-06 16:27:22
+ * @since 1.0, 2021-06-11 11:07:36
  */
 public class AlipayMarketingToolFengdieSitesSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1459266998122769691L;
+	private static final long serialVersionUID = 7586156926657373118L;
 
 	/** 
 	 * 返回站点升级是否成功

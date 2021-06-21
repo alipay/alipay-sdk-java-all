@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.inner.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-25 10:30:16
+ * @since 1.0, 2021-06-15 17:20:23
  */
 public class AlipayUserInfoInnerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1674132928761317979L;
+	private static final long serialVersionUID = 3788583276431783375L;
 
 	/** 
 	 * 绑定手机号码
@@ -76,6 +76,12 @@ N:非金融机构或特殊单位
 	 */
 	@ApiField("user_status")
 	private String userStatus;
+
+	/** 
+	 * 支付宝号，由字母和数字组成
+	 */
+	@ApiField("zid")
+	private String zid;
 
 	public void setBindedMobile(String bindedMobile) {
 		this.bindedMobile = bindedMobile;
@@ -145,6 +151,13 @@ N:非金融机构或特殊单位
 	}
 	public String getUserStatus( ) {
 		return this.userStatus;
+	}
+
+	public void setZid(String zid) {
+		this.zid = zid;
+	}
+	public String getZid( ) {
+		return this.zid;
 	}
 
 }

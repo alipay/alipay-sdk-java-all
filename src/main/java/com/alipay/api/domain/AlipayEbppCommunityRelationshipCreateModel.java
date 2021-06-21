@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业小区绑定关系创建
  *
  * @author auto create
- * @since 1.0, 2021-03-18 14:13:56
+ * @since 1.0, 2021-06-01 19:32:52
  */
 public class AlipayEbppCommunityRelationshipCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4814834581341242272L;
+	private static final long serialVersionUID = 7657531331879853828L;
 
 	/**
 	 * 每个小区默认的收款帐号为授权物业的支付宝账号，默认不用传该参数。

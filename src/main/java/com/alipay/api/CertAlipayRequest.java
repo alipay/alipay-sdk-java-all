@@ -31,7 +31,7 @@ public class CertAlipayRequest {
     private String alipayPublicCertContent;
 
     /**
-     * 指定根证书内容字符串，该字段与alipayPublicCertPath只需指定一个，优先以该字段的值为准
+     * 指定根证书内容字符串，该字段与rootCertPath只需指定一个，优先以该字段的值为准
      */
     private String rootCertContent;
 

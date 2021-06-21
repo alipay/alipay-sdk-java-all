@@ -26,16 +26,16 @@ public class CertificateExecuteWithCertContentTest {
 
     @Before
     public void setUp() throws Exception {
-        CertAlipayRequest certParams = ProdCert.getCertParams();
-        certParams.setCertPath(null);
-        certParams.setAlipayPublicCertPath(null);
-        certParams.setRootCertPath(null);
+        AlipayConfig config = ProdCert.getConfig();
+        config.setAppCertPath(null);
+        config.setAlipayPublicCertPath(null);
+        config.setRootCertPath(null);
 
-        certParams.setCertContent(FileUtils.readFileToString(new File(ProdCert.CERT_PARAMS.getCertPath())));
-        certParams.setAlipayPublicCertContent(FileUtils.readFileToString(new File(ProdCert.CERT_PARAMS.getAlipayPublicCertPath())));
-        certParams.setRootCertContent(FileUtils.readFileToString(new File(ProdCert.CERT_PARAMS.getRootCertPath())));
+        config.setAppCertContent(FileUtils.readFileToString(new File(ProdCert.getConfig().getAppCertPath())));
+        config.setAlipayPublicCertContent(FileUtils.readFileToString(new File(ProdCert.getConfig().getAlipayPublicCertPath())));
+        config.setRootCertContent(FileUtils.readFileToString(new File(ProdCert.getConfig().getRootCertPath())));
 
-        client = new DefaultAlipayClient(certParams);
+        client = new DefaultAlipayClient(config);
     }
 
     @Test
@@ -58,10 +58,10 @@ public class CertificateExecuteWithCertContentTest {
     @Test
     public void should_auto_download_alipay_public_cert() throws AlipayApiException {
         //given
-        CertAlipayRequest certParams = TestAccount.ProdCert.getCertParams();
+        AlipayConfig config = TestAccount.ProdCert.getConfig();
         //将支付宝公钥证书路径故意设置成商户证书路径，以便触发自动下载支付宝公钥证书链路
-        certParams.setAlipayPublicCertPath(certParams.getCertPath());
-        client = new DefaultAlipayClient(certParams);
+        config.setAlipayPublicCertPath(config.getAppCertPath());
+        client = new DefaultAlipayClient(config);
 
         AlipayOpenOperationOpenbizmockBizQueryRequest request = getRequest();
         //when
@@ -74,9 +74,9 @@ public class CertificateExecuteWithCertContentTest {
     @Test
     public void should_be_able_to_parse_xml_format_response() throws AlipayApiException {
         //given
-        CertAlipayRequest certParams = TestAccount.ProdCert.getCertParams();
-        certParams.setFormat("xml");
-        client = new DefaultAlipayClient(certParams);
+        AlipayConfig config = TestAccount.ProdCert.getConfig();
+        config.setFormat("xml");
+        client = new DefaultAlipayClient(config);
 
         AlipayOpenOperationOpenbizmockBizQueryRequest request = getRequest();
         //when
@@ -89,9 +89,9 @@ public class CertificateExecuteWithCertContentTest {
     public void should_return_false_when_app_not_set_private_key() throws AlipayApiException {
         //given
         //访问线上一个没有设置公私钥对的APP
-        CertAlipayRequest certParams = TestAccount.ProdCert.getCertParams();
-        certParams.setAppId(TestAccount.NOT_SET_KEY_APP_ID);
-        client = new DefaultAlipayClient(certParams);
+        AlipayConfig config = TestAccount.ProdCert.getConfig();
+        config.setAppId(TestAccount.NOT_SET_KEY_APP_ID);
+        client = new DefaultAlipayClient(config);
         //when
         AlipayOpenOperationOpenbizmockBizQueryResponse response = client.certificateExecute(getRequest());
         //then

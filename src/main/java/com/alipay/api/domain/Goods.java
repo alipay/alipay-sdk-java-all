@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品详细信息
  *
  * @author auto create
- * @since 1.0, 2021-05-12 21:08:45
+ * @since 1.0, 2021-06-17 14:01:04
  */
 public class Goods extends AlipayObject {
 
-	private static final long serialVersionUID = 8631226926516613542L;
+	private static final long serialVersionUID = 6649167441763711883L;
 
 	/**
 	 * 商品id
@@ -32,7 +32,7 @@ public class Goods extends AlipayObject {
 	private String goodsNum;
 
 	/**
-	 * 商品图片（图片上传返回id）
+	 * 商品图片（图片上传返回material_key）
 	 */
 	@ApiField("goods_pic_url")
 	private String goodsPicUrl;
@@ -45,6 +45,10 @@ public class Goods extends AlipayObject {
 
 	/**
 	 * 商品规格份、件、斤、kg，默认为份
+KG：千克
+SHARE：份
+CATTY：斤
+PKG：件
 	 */
 	@ApiField("goods_specs")
 	private String goodsSpecs;

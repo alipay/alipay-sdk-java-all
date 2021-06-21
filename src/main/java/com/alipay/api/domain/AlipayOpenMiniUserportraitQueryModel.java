@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序的用户画像信息
  *
  * @author auto create
- * @since 1.0, 2019-10-25 18:44:55
+ * @since 1.0, 2021-06-01 14:32:56
  */
 public class AlipayOpenMiniUserportraitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3648974987474829681L;
+	private static final long serialVersionUID = 1732138463165168594L;
 
 	/**
 	 * 用户画像的时间范围。RECENT_7_DAY代表近7日，RECENT_30_DAY代表近30日

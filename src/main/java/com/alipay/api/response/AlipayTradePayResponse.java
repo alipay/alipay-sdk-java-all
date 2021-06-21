@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-12 18:22:35
+ * @since 1.0, 2021-06-08 16:16:25
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7127517632769153145L;
+	private static final long serialVersionUID = 6861649796567797455L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -90,16 +90,18 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 
 	/** 
 	 * 该笔交易针对收款方的收费金额；
-默认不返回该信息，需与支付宝约定后配置返回；
+只在机构间联模式下返回，其它场景下不返回该字段；
 	 */
 	@ApiField("charge_amount")
 	private String chargeAmount;
 
 	/** 
 	 * 费率活动标识，当交易享受活动优惠费率时，返回该活动的标识；
-默认不返回该信息，需与支付宝约定后配置返回；
+只在机构间联模式下返回，其它场景下不返回该字段；
 可能的返回值列表：
-蓝海活动标识：bluesea_1
+bluesea_1：蓝海活动标识;
+industry_special_00：行业特殊费率0；
+industry_special_01：行业特殊费率1；
 	 */
 	@ApiField("charge_flags")
 	private String chargeFlags;
@@ -217,7 +219,7 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 
 	/** 
 	 * 支付清算编号，用于清算对账使用；
-只在银行间联交易场景下返回该信息；
+只在机构间联模式下返回，其它场景下不返回该字段；
 	 */
 	@ApiField("settlement_id")
 	private String settlementId;

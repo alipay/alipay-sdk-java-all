@@ -24,7 +24,7 @@ public class RSACheckTest {
     public void setUp() throws Exception {
         //本单元测试中使用的是商户私钥（因为拿不到支付宝私钥）签名后的参数进行测试，所以验签时指定的是商户的公钥
         //实际使用RSACheck系列函数时，应该是指定支付宝公钥，对支付宝私钥签名后的参数进行验签
-        this.publicKey = AlipaySignature.getAlipayPublicKey(TestAccount.ProdCert.CERT_PARAMS.getCertPath());
+        this.publicKey = AlipaySignature.getAlipayPublicKey(TestAccount.ProdCert.getConfig().getAppCertPath());
     }
 
     @Test

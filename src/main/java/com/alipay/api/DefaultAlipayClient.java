@@ -3,6 +3,8 @@
  */
 package com.alipay.api;
 
+import com.alipay.api.internal.util.StringUtils;
+
 import java.security.cert.X509Certificate;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -21,6 +23,33 @@ public class DefaultAlipayClient extends AbstractAlipayClient {
     private Decryptor                                  decryptor;
     private X509Certificate                            cert;
     private ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap;
+
+    /**
+     * 推荐使用AlipayConfig统一配置参数对象初始化SDK
+     *
+     * @param alipayConfig 配置参数
+     */
+    public DefaultAlipayClient(AlipayConfig alipayConfig) throws AlipayApiException {
+        super(alipayConfig.getServerUrl(), alipayConfig.getAppId(), alipayConfig.getFormat(),
+                alipayConfig.getCharset(), alipayConfig.getSignType(),
+                alipayConfig.getAppCertPath(), alipayConfig.getAppCertContent(),
+                alipayConfig.getAlipayPublicCertPath(), alipayConfig.getAlipayPublicCertContent(),
+                alipayConfig.getRootCertPath(), alipayConfig.getRootCertContent(),
+                alipayConfig.getProxyHost(), alipayConfig.getProxyPort(), alipayConfig.getEncryptType());
+        this.privateKey = alipayConfig.getPrivateKey();
+        this.signer = new DefaultSigner(alipayConfig.getPrivateKey());
+        this.encryptor = new DefaultEncryptor(alipayConfig.getEncryptKey());
+        this.decryptor = new DefaultDecryptor(alipayConfig.getEncryptKey());
+
+        if (!StringUtils.isEmpty(alipayConfig.getAlipayPublicKey())) {
+            this.alipayPublicKey = alipayConfig.getAlipayPublicKey();
+            this.signChecker = new DefaultSignChecker(alipayConfig.getAlipayPublicKey());
+        }
+
+        setHeaders(alipayConfig.getCustomHeaders());
+        setConnectTimeout(alipayConfig.getConnectTimeout());
+        setReadTimeout(alipayConfig.getReadTimeout());
+    }
 
     public DefaultAlipayClient(String serverUrl, String appId, String privateKey) {
         super(serverUrl, appId, null, null, null);

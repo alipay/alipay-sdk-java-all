@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.SignAddressInfo;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.facetoface.sign request
  * 
  * @author auto create
- * @since 1.0, 2020-12-07 11:15:49
+ * @since 1.0, 2021-06-18 16:00:45
  */
 public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest<AlipayOpenAgentFacetofaceSignResponse> {
 
@@ -29,6 +30,11 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	* 营业执照授权函图片，个体工商户如果使用总公司或其他公司的营业执照认证需上传该授权函图片，最小5KB，最大5M（暂不限制图片宽高），图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem businessLicenseAuthPic;
+
+	/** 
+	* 营业执照法人手机号码
+	 */
+	private String businessLicenseMobile;
 
 	/** 
 	* 营业执照号码
@@ -63,6 +69,16 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	private String rate;
 
 	/** 
+	* 店铺地址
+	 */
+	private SignAddressInfo shopAddress;
+
+	/** 
+	* 店铺名称
+	 */
+	private String shopName;
+
+	/** 
 	* 店铺内景图片，最小5KB，最大5M（暂不限制图片宽高），图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem shopScenePic;
@@ -95,6 +111,13 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	}
 	public FileItem getBusinessLicenseAuthPic() {
 		return this.businessLicenseAuthPic;
+	}
+
+	public void setBusinessLicenseMobile(String businessLicenseMobile) {
+		this.businessLicenseMobile = businessLicenseMobile;
+	}
+	public String getBusinessLicenseMobile() {
+		return this.businessLicenseMobile;
 	}
 
 	public void setBusinessLicenseNo(String businessLicenseNo) {
@@ -137,6 +160,20 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	}
 	public String getRate() {
 		return this.rate;
+	}
+
+	public void setShopAddress(SignAddressInfo shopAddress) {
+		this.shopAddress = shopAddress;
+	}
+	public SignAddressInfo getShopAddress() {
+		return this.shopAddress;
+	}
+
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+	public String getShopName() {
+		return this.shopName;
 	}
 
 	public void setShopScenePic(FileItem shopScenePic) {
@@ -228,11 +265,14 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("batch_no", this.batchNo);
+		txtParams.put("business_license_mobile", this.businessLicenseMobile);
 		txtParams.put("business_license_no", this.businessLicenseNo);
 		txtParams.put("date_limitation", this.dateLimitation);
 		txtParams.put("long_term", this.longTerm);
 		txtParams.put("mcc_code", this.mccCode);
 		txtParams.put("rate", this.rate);
+		txtParams.put("shop_address", this.shopAddress == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.shopAddress, true));
+		txtParams.put("shop_name", this.shopName);
 		txtParams.put("sign_and_auth", this.signAndAuth);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);

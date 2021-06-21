@@ -21,9 +21,8 @@ public class BatchExecuteTest {
     private AlipayClient alipayClient;
 
     @Before
-    public void setUp() {
-        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.GATEWAY, TestAccount.Sandbox.APP_ID, TestAccount.Sandbox.APP_PRIVATE_KEY,
-                "json", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2");
+    public void setUp() throws AlipayApiException {
+        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.getConfig());
     }
 
     @Test

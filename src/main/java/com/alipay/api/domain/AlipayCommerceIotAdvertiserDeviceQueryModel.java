@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取商户下的设备sn列表
  *
  * @author auto create
- * @since 1.0, 2020-03-26 11:43:53
+ * @since 1.0, 2021-06-16 16:40:34
  */
 public class AlipayCommerceIotAdvertiserDeviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7549923687995531792L;
+	private static final long serialVersionUID = 1831349485451838754L;
 
 	/**
 	 * 设备类型，比如qt 或 pos

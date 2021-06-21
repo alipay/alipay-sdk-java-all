@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 子场馆入驻详情信息
  *
  * @author auto create
- * @since 1.0, 2021-04-01 15:34:52
+ * @since 1.0, 2021-06-11 10:41:31
  */
 public class SubVenueCreateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8494663522375572191L;
+	private static final long serialVersionUID = 4826791935548135112L;
 
 	/**
 	 * 入场要求
@@ -73,13 +73,23 @@ public class SubVenueCreateInfo extends AlipayObject {
 	private String outSubVenueId;
 
 	/**
-	 * 收款方支付宝账户
+	 * 收款方支付宝账户（payment_method)为空或account时必传
 	 */
 	@ApiField("payee_account")
 	private String payeeAccount;
 
 	/**
-	 * 收款方式（indirect=间连/direct=直连）
+	 * 收款方式
+空值/account：通过支付宝账号收款
+smid：通过smid收款
+	 */
+	@ApiField("payment_method")
+	private String paymentMethod;
+
+	/**
+	 * 收款类型（indirect=间连/direct=直连）
+直连：收款方为商户/场馆
+间连：收款方为服务商
 	 */
 	@ApiField("payment_type")
 	private String paymentType;
@@ -127,10 +137,16 @@ course: 课程
 	private String recPrice;
 
 	/**
-	 * 子场馆pid
+	 * 子场馆pid（payment_method为smid时必传）
 	 */
 	@ApiField("sub_venue_pid")
 	private String subVenuePid;
+
+	/**
+	 * 子场馆商户二级smid（payment_method为smid时必传）
+	 */
+	@ApiField("sub_venue_smid")
+	private String subVenueSmid;
 
 	/**
 	 * 标签列表
@@ -228,6 +244,13 @@ course: 课程
 		this.payeeAccount = payeeAccount;
 	}
 
+	public String getPaymentMethod() {
+		return this.paymentMethod;
+	}
+	public void setPaymentMethod(String paymentMethod) {
+		this.paymentMethod = paymentMethod;
+	}
+
 	public String getPaymentType() {
 		return this.paymentType;
 	}
@@ -282,6 +305,13 @@ course: 课程
 	}
 	public void setSubVenuePid(String subVenuePid) {
 		this.subVenuePid = subVenuePid;
+	}
+
+	public String getSubVenueSmid() {
+		return this.subVenueSmid;
+	}
+	public void setSubVenueSmid(String subVenueSmid) {
+		this.subVenueSmid = subVenueSmid;
 	}
 
 	public List<String> getTagList() {

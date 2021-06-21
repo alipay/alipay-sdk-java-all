@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-03 17:52:52
+ * @since 1.0, 2021-06-08 16:16:02
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2472868979623199622L;
+	private static final long serialVersionUID = 3476477388798221469L;
 
 	/** 
 	 * 用户的登录id
@@ -62,26 +62,29 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private String outTradeNo;
 
 	/** 
-	 * 本次退款金额中买家退款金额
+	 * 本次退款金额中买家退款金额;
+该字段默认不返回；
 	 */
 	@ApiField("present_refund_buyer_amount")
 	private String presentRefundBuyerAmount;
 
 	/** 
-	 * 本次退款金额中平台优惠退款金额
+	 * 本次退款金额中平台优惠退款金额；
+该字段默认不返回；
 	 */
 	@ApiField("present_refund_discount_amount")
 	private String presentRefundDiscountAmount;
 
 	/** 
-	 * 本次退款金额中商家优惠退款金额
+	 * 本次退款金额中商家优惠退款金额；
+该字段默认不返回；
 	 */
 	@ApiField("present_refund_mdiscount_amount")
 	private String presentRefundMdiscountAmount;
 
 	/** 
 	 * 本次退款针对收款方的退收费金额；
-默认不返回该信息，需与支付宝约定后配置返回；
+只在机构间联模式下返回，其它场景下不返回该字段；
 	 */
 	@ApiField("refund_charge_amount")
 	private String refundChargeAmount;
@@ -101,7 +104,8 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private List<TradeFundBill> refundDetailItemList;
 
 	/** 
-	 * 退款总金额
+	 * 退款总金额。
+指该笔交易累计已经退款成功的金额。
 	 */
 	@ApiField("refund_fee")
 	private String refundFee;
@@ -114,7 +118,7 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 
 	/** 
 	 * 退款清算编号，用于清算对账使用；
-只在银行间联交易场景下返回该信息；
+只在机构间联模式下返回，其它场景下不返回该字段；
 	 */
 	@ApiField("refund_settlement_id")
 	private String refundSettlementId;

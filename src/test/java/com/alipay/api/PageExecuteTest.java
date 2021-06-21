@@ -20,9 +20,8 @@ public class PageExecuteTest {
     private AlipayClient client;
 
     @Before
-    public void setUp() {
-        client = new DefaultAlipayClient(TestAccount.Sandbox.GATEWAY, TestAccount.Sandbox.APP_ID,
-                TestAccount.Sandbox.APP_PRIVATE_KEY, "json", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2");
+    public void setUp() throws AlipayApiException {
+        client = new DefaultAlipayClient(TestAccount.Sandbox.getConfig());
     }
 
     @Test

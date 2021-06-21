@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业公司创建
  *
  * @author auto create
- * @since 1.0, 2021-05-24 14:45:10
+ * @since 1.0, 2021-06-01 19:32:47
  */
 public class AlipayEbppCommunityPropertyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2359163528146886376L;
+	private static final long serialVersionUID = 5825182635496668369L;
 
 	/**
 	 * 外部联系人
@@ -70,6 +70,12 @@ public class AlipayEbppCommunityPropertyCreateModel extends AlipayObject {
 	@ApiField("scale")
 	private String scale;
 
+	/**
+	 * 物业公司简称
+	 */
+	@ApiField("short_company_name")
+	private String shortCompanyName;
+
 	public List<ExternalContact> getContacts() {
 		return this.contacts;
 	}
@@ -124,6 +130,13 @@ public class AlipayEbppCommunityPropertyCreateModel extends AlipayObject {
 	}
 	public void setScale(String scale) {
 		this.scale = scale;
+	}
+
+	public String getShortCompanyName() {
+		return this.shortCompanyName;
+	}
+	public void setShortCompanyName(String shortCompanyName) {
+		this.shortCompanyName = shortCompanyName;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改用户引导配置
  *
  * @author auto create
- * @since 1.0, 2021-05-07 21:20:58
+ * @since 1.0, 2021-06-15 18:13:45
  */
 public class CustomerGuideModify extends AlipayObject {
 
-	private static final long serialVersionUID = 5421811343868169697L;
+	private static final long serialVersionUID = 8278832878886517277L;
 
 	/**
 	 * 券可使用的门店列表。

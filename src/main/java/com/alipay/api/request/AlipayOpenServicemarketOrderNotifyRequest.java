@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.order.notify request
  * 
  * @author auto create
- * @since 1.0, 2020-11-19 14:06:32
+ * @since 1.0, 2021-06-04 15:05:23
  */
 public class AlipayOpenServicemarketOrderNotifyRequest implements AlipayRequest<AlipayOpenServicemarketOrderNotifyResponse> {
 

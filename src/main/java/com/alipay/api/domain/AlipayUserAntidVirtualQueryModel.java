@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据识别因子查询虚拟账户AntID
  *
  * @author auto create
- * @since 1.0, 2020-07-20 18:46:55
+ * @since 1.0, 2021-06-17 15:19:36
  */
 public class AlipayUserAntidVirtualQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2587837752184683884L;
+	private static final long serialVersionUID = 8283557125828537936L;
 
 	/**
 	 * 业务域场景，由提供方分配

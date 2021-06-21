@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-23 14:40:22
+ * @since 1.0, 2021-06-11 10:15:22
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5346494548845438732L;
+	private static final long serialVersionUID = 6239779169818579451L;
 
 	/** 
 	 * 详细地址。
@@ -31,7 +31,7 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	private String area;
 
 	/** 
-	 * 用户头像地址
+	 * 用户头像地址。
 	 */
 	@ApiField("avatar")
 	private String avatar;
@@ -229,7 +229,7 @@ T--被冻结；F--未冻结
 	private String mobile;
 
 	/** 
-	 * 用户昵称
+	 * 用户昵称。
 	 */
 	@ApiField("nick_name")
 	private String nickName;
@@ -278,7 +278,7 @@ T--被冻结；F--未冻结
 	private String profession;
 
 	/** 
-	 * 省份名称
+	 * 省份名称。
 	 */
 	@ApiField("province")
 	private String province;
@@ -290,7 +290,7 @@ T--被冻结；F--未冻结
 	private String taobaoId;
 
 	/** 
-	 * 支付宝用户的userId
+	 * 支付宝用户的userId。
 	 */
 	@ApiField("user_id")
 	private String userId;

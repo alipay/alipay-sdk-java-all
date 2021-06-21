@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.SignAddressInfo;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.offlinepayment.sign request
  * 
  * @author auto create
- * @since 1.0, 2021-04-22 14:33:12
+ * @since 1.0, 2021-06-18 11:10:50
  */
 public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadRequest<AlipayOpenAgentOfflinepaymentSignResponse> {
 
@@ -24,6 +25,11 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	* 代商户操作事务编号，通过alipay.open.agent.create接口进行创建。
 	 */
 	private String batchNo;
+
+	/** 
+	* 营业执照法人手机号码
+	 */
+	private String businessLicenseMobile;
 
 	/** 
 	* 营业执照号码。若填写，请与以下营业执照图片、期限、一起提供。
@@ -39,6 +45,11 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	* 营业期限
 	 */
 	private String dateLimitation;
+
+	/** 
+	* 送货地址
+	 */
+	private SignAddressInfo deliveryAddress;
 
 	/** 
 	* 营业期限是否长期有效
@@ -57,6 +68,21 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	private String rate;
 
 	/** 
+	* 店铺地址
+	 */
+	private SignAddressInfo shopAddress;
+
+	/** 
+	* 店铺名称
+	 */
+	private String shopName;
+
+	/** 
+	* 店铺内景照片，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem shopScenePic;
+
+	/** 
 	* 店铺门头照图片，需要包括招牌信息。最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem shopSignBoardPic;
@@ -72,6 +98,13 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	}
 	public String getBatchNo() {
 		return this.batchNo;
+	}
+
+	public void setBusinessLicenseMobile(String businessLicenseMobile) {
+		this.businessLicenseMobile = businessLicenseMobile;
+	}
+	public String getBusinessLicenseMobile() {
+		return this.businessLicenseMobile;
 	}
 
 	public void setBusinessLicenseNo(String businessLicenseNo) {
@@ -95,6 +128,13 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 		return this.dateLimitation;
 	}
 
+	public void setDeliveryAddress(SignAddressInfo deliveryAddress) {
+		this.deliveryAddress = deliveryAddress;
+	}
+	public SignAddressInfo getDeliveryAddress() {
+		return this.deliveryAddress;
+	}
+
 	public void setLongTerm(Boolean longTerm) {
 		this.longTerm = longTerm;
 	}
@@ -114,6 +154,27 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	}
 	public String getRate() {
 		return this.rate;
+	}
+
+	public void setShopAddress(SignAddressInfo shopAddress) {
+		this.shopAddress = shopAddress;
+	}
+	public SignAddressInfo getShopAddress() {
+		return this.shopAddress;
+	}
+
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+	public String getShopName() {
+		return this.shopName;
+	}
+
+	public void setShopScenePic(FileItem shopScenePic) {
+		this.shopScenePic = shopScenePic;
+	}
+	public FileItem getShopScenePic() {
+		return this.shopScenePic;
 	}
 
 	public void setShopSignBoardPic(FileItem shopSignBoardPic) {
@@ -191,11 +252,15 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("batch_no", this.batchNo);
+		txtParams.put("business_license_mobile", this.businessLicenseMobile);
 		txtParams.put("business_license_no", this.businessLicenseNo);
 		txtParams.put("date_limitation", this.dateLimitation);
+		txtParams.put("delivery_address", this.deliveryAddress == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.deliveryAddress, true));
 		txtParams.put("long_term", this.longTerm);
 		txtParams.put("mcc_code", this.mccCode);
 		txtParams.put("rate", this.rate);
+		txtParams.put("shop_address", this.shopAddress == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.shopAddress, true));
+		txtParams.put("shop_name", this.shopName);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
@@ -212,6 +277,7 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	public Map<String, FileItem> getFileParams() {
 		Map<String, FileItem> params = new HashMap<String, FileItem>();
 		params.put("business_license_pic", this.businessLicensePic);
+		params.put("shop_scene_pic", this.shopScenePic);
 		params.put("shop_sign_board_pic", this.shopSignBoardPic);
 		params.put("special_license_pic", this.specialLicensePic);
 		return params;

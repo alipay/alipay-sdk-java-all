@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询投放计划列表
  *
  * @author auto create
- * @since 1.0, 2019-08-13 17:13:01
+ * @since 1.0, 2021-06-16 16:41:48
  */
 public class AlipayCommerceIotAdvertiserAdBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4752396423741952682L;
+	private static final long serialVersionUID = 7174886691583529639L;
 
 	/**
 	 * 是否只要总大小

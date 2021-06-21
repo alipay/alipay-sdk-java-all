@@ -7,11 +7,19 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票同步简单模式下的发票信息入参模型
  *
  * @author auto create
- * @since 1.0, 2020-12-30 17:46:42
+ * @since 1.0, 2021-06-17 15:29:23
  */
 public class InvoicePDFSynModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6312699763768265964L;
+	private static final long serialVersionUID = 2114756658494968941L;
+
+	/**
+	 * 支付宝开票申请id。
+当userId为空时，必填；
+如果在开票过程中，是通过支付宝提交的申请到开票服务方，支付宝会带上开票申请在支付宝生成的申请id，开票服务方在回传发票的时候只需要回传这个申请id，不用获取用户的userId，支付宝可以根据申请id将发票归集到对应的用户名下
+	 */
+	@ApiField("apply_id")
+	private String applyId;
 
 	/**
 	 * 预留的扩展字段，格式如：key1=value1\nkey2=value2\nkey3=value3，字段之间以\n(换行符)分隔。
@@ -46,7 +54,8 @@ JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	private String outInvoiceId;
 
 	/**
-	 * 支付宝用户userId
+	 * 支付宝用户userId；
+当apply_id为空时，userId必填
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -56,6 +65,13 @@ JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	 */
 	@ApiField("zip")
 	private String zip;
+
+	public String getApplyId() {
+		return this.applyId;
+	}
+	public void setApplyId(String applyId) {
+		this.applyId = applyId;
+	}
 
 	public String getExtendFields() {
 		return this.extendFields;

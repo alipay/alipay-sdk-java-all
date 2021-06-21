@@ -14,12 +14,17 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.mobilepay.sign request
  * 
  * @author auto create
- * @since 1.0, 2021-03-22 11:13:37
+ * @since 1.0, 2021-06-18 11:11:28
  */
 public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<AlipayOpenAgentMobilepaySignResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* APP授权函图片，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem appAuthPic;
 
 	/** 
 	* APP demo，格式为.apk；或者应用说明文档, 格式为.doc .docx .pdf格式
@@ -65,6 +70,11 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	* 营业执照授权函图片，个体工商户如果使用总公司或其他公司的营业执照认证需上传该授权函图片，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem businessLicenseAuthPic;
+
+	/** 
+	* 营业执照法人手机号码
+	 */
+	private String businessLicenseMobile;
 
 	/** 
 	* 营业执照号码。
@@ -117,6 +127,13 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 <a href="https://opendocs.alipay.com/open/01n22g#%E5%95%86%E5%AE%B6%E7%BB%8F%E8%90%A5%E7%B1%BB%E7%9B%AE">商家经营类目</a> 中的“需要的特殊资质证书”，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem specialLicensePic;
+
+	public void setAppAuthPic(FileItem appAuthPic) {
+		this.appAuthPic = appAuthPic;
+	}
+	public FileItem getAppAuthPic() {
+		return this.appAuthPic;
+	}
 
 	public void setAppDemo(FileItem appDemo) {
 		this.appDemo = appDemo;
@@ -179,6 +196,13 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	}
 	public FileItem getBusinessLicenseAuthPic() {
 		return this.businessLicenseAuthPic;
+	}
+
+	public void setBusinessLicenseMobile(String businessLicenseMobile) {
+		this.businessLicenseMobile = businessLicenseMobile;
+	}
+	public String getBusinessLicenseMobile() {
+		return this.businessLicenseMobile;
 	}
 
 	public void setBusinessLicenseNo(String businessLicenseNo) {
@@ -318,6 +342,7 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 		txtParams.put("app_test_account_password", this.appTestAccountPassword);
 		txtParams.put("app_type", this.appType == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.appType, true));
 		txtParams.put("batch_no", this.batchNo);
+		txtParams.put("business_license_mobile", this.businessLicenseMobile);
 		txtParams.put("business_license_no", this.businessLicenseNo);
 		txtParams.put("date_limitation", this.dateLimitation);
 		txtParams.put("download_link", this.downloadLink);
@@ -338,6 +363,7 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 
 	public Map<String, FileItem> getFileParams() {
 		Map<String, FileItem> params = new HashMap<String, FileItem>();
+		params.put("app_auth_pic", this.appAuthPic);
 		params.put("app_demo", this.appDemo);
 		params.put("business_license_auth_pic", this.businessLicenseAuthPic);
 		params.put("business_license_pic", this.businessLicensePic);

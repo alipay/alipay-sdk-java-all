@@ -11,52 +11,52 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1345671758813339866L;
+	private static final long serialVersionUID = 7582443813468674285L;
 
 	/**
-	 * 当用户进入芝麻后付开通页面后，点击左上角的回退按钮，中断开通流程，跳转回商户的页面地址
+	 * 当用户进入芝麻后付开通页面后，点击左上角的回退按钮，中断开通流程，跳转回商户的页面地址。
 	 */
 	@ApiField("cancel_back_link")
 	private String cancelBackLink;
 
 	/**
-	 * 芝麻外部类目
+	 * 芝麻外部类目。
 	 */
 	@ApiField("category_id")
 	private String categoryId;
 
 	/**
-	 * 用户在商户网站的登录账号
+	 * 用户在商户网站的登录账号。
 	 */
 	@ApiField("external_logon_id")
 	private String externalLogonId;
 
 	/**
-	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式
+	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。
 	 */
 	@ApiField("extra_param")
 	private String extraParam;
 
 	/**
-	 * 商户外部协议号
+	 * 商户外部协议号。
 	 */
 	@ApiField("out_agreement_no")
 	private String outAgreementNo;
 
 	/**
-	 * 产品码，不填默认为CREDIT_PAY_AFTER_USE
+	 * 产品码，不填默认为 CREDIT_PAY_AFTER_USE。
 	 */
 	@ApiField("product_code")
 	private String productCode;
 
 	/**
-	 * 用户成功完成芝麻后付开通流程后，跳转回商户的页面地址
+	 * 用户成功完成芝麻后付开通流程后，跳转回商户的页面地址。
 	 */
 	@ApiField("return_back_link")
 	private String returnBackLink;
 
 	/**
-	 * 芝麻服务ID
+	 * 芝麻服务ID。
 	 */
 	@ApiField("zm_service_id")
 	private String zmServiceId;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小区创建
  *
  * @author auto create
- * @since 1.0, 2021-05-24 14:44:52
+ * @since 1.0, 2021-06-01 19:32:41
  */
 public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4155286762278694821L;
+	private static final long serialVersionUID = 2765567538569397171L;
 
 	/**
 	 * 别名
@@ -35,6 +35,12 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	private String communityAdcode;
 
 	/**
+	 * 社区中文，如嘉绿苑社区
+	 */
+	@ApiField("community_adcode_name")
+	private String communityAdcodeName;
+
+	/**
 	 * 小区编码，兼容迁移小区时所需；正常的非迁移的小区创建时不需要传
 	 */
 	@ApiField("community_short_name")
@@ -45,6 +51,12 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	 */
 	@ApiField("county")
 	private String county;
+
+	/**
+	 * 区县中文，如西湖区
+	 */
+	@ApiField("county_name")
+	private String countyName;
 
 	/**
 	 * 小区热线
@@ -96,6 +108,12 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	private String streetAdcode;
 
 	/**
+	 * 街道中文，如古荡街道
+	 */
+	@ApiField("street_adcode_name")
+	private String streetAdcodeName;
+
+	/**
 	 * 中心账单楼房号模式	REMOTE
 中心账单户号模式	REMOTE_NO_ROOM
 内部H5模式	H5
@@ -138,6 +156,13 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 		this.communityAdcode = communityAdcode;
 	}
 
+	public String getCommunityAdcodeName() {
+		return this.communityAdcodeName;
+	}
+	public void setCommunityAdcodeName(String communityAdcodeName) {
+		this.communityAdcodeName = communityAdcodeName;
+	}
+
 	public String getCommunityShortName() {
 		return this.communityShortName;
 	}
@@ -150,6 +175,13 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	}
 	public void setCounty(String county) {
 		this.county = county;
+	}
+
+	public String getCountyName() {
+		return this.countyName;
+	}
+	public void setCountyName(String countyName) {
+		this.countyName = countyName;
 	}
 
 	public String getHotLine() {
@@ -206,6 +238,13 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 	}
 	public void setStreetAdcode(String streetAdcode) {
 		this.streetAdcode = streetAdcode;
+	}
+
+	public String getStreetAdcodeName() {
+		return this.streetAdcodeName;
+	}
+	public void setStreetAdcodeName(String streetAdcodeName) {
+		this.streetAdcodeName = streetAdcodeName;
 	}
 
 	public String getSupportType() {

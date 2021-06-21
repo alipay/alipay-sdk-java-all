@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 生活号广告位修改接口
  *
  * @author auto create
- * @since 1.0, 2021-01-25 16:32:10
+ * @since 1.0, 2021-05-27 16:14:36
  */
 public class AlipayOpenPublicAdvertModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3536611171419684939L;
+	private static final long serialVersionUID = 2628977783623396287L;
 
 	/**
 	 * 广告位id，通过<a href="https://opendocs.alipay.com/apis/api_6/alipay.open.public.advert.create">alipay.open.public.advert.create</a>(生活号广告位添加接口)添加广告位获取。

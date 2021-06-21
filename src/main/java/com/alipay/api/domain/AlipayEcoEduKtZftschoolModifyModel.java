@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 教育缴费学校直付通进件接口
  *
  * @author auto create
- * @since 1.0, 2020-06-16 16:07:17
+ * @since 1.0, 2021-06-02 13:15:34
  */
 public class AlipayEcoEduKtZftschoolModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6821338399567338456L;
+	private static final long serialVersionUID = 8818692551349376745L;
 
 	/**
 	 * 商户结算卡信息。本业务当前只允许传入一张结算卡

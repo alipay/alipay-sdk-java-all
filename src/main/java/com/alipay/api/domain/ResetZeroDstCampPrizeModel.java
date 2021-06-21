@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ResetZeroDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1116784891391256967L;
+	private static final long serialVersionUID = 4742683653617485775L;
 
 	/**
 	 * 折扣预算ID

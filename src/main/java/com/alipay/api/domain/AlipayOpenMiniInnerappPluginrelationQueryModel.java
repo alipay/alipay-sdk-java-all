@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询插件引用关系
  *
  * @author auto create
- * @since 1.0, 2021-05-07 15:42:49
+ * @since 1.0, 2021-06-01 10:44:34
  */
 public class AlipayOpenMiniInnerappPluginrelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3364318542297258153L;
+	private static final long serialVersionUID = 3865984392342169463L;
 
 	/**
 	 * 应用ID列表
@@ -53,6 +53,12 @@ public class AlipayOpenMiniInnerappPluginrelationQueryModel extends AlipayObject
 	 */
 	@ApiField("run_model_type")
 	private String runModelType;
+
+	/**
+	 * 是否展示邀测信息
+	 */
+	@ApiField("show_beta_info")
+	private Boolean showBetaInfo;
 
 	public List<String> getMiniAppIdList() {
 		return this.miniAppIdList;
@@ -94,6 +100,13 @@ public class AlipayOpenMiniInnerappPluginrelationQueryModel extends AlipayObject
 	}
 	public void setRunModelType(String runModelType) {
 		this.runModelType = runModelType;
+	}
+
+	public Boolean getShowBetaInfo() {
+		return this.showBetaInfo;
+	}
+	public void setShowBetaInfo(Boolean showBetaInfo) {
+		this.showBetaInfo = showBetaInfo;
 	}
 
 }

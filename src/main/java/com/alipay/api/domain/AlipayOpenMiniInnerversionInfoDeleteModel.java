@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部链路删除版本
  *
  * @author auto create
- * @since 1.0, 2021-05-19 21:23:00
+ * @since 1.0, 2021-05-31 15:49:01
  */
 public class AlipayOpenMiniInnerversionInfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5634517214645282269L;
+	private static final long serialVersionUID = 1733794665513196826L;
 
 	/**
 	 * 业务场景来源
@@ -32,13 +32,19 @@ public class AlipayOpenMiniInnerversionInfoDeleteModel extends AlipayObject {
 	private String bundleId;
 
 	/**
+	 * 租户信息
+	 */
+	@ApiField("inst_code")
+	private String instCode;
+
+	/**
 	 * 小程序ID
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
 
 	/**
-	 * 操作者ID
+	 * 操作者ID，支付宝租户必填
 	 */
 	@ApiField("pid")
 	private String pid;
@@ -62,6 +68,13 @@ public class AlipayOpenMiniInnerversionInfoDeleteModel extends AlipayObject {
 	}
 	public void setBundleId(String bundleId) {
 		this.bundleId = bundleId;
+	}
+
+	public String getInstCode() {
+		return this.instCode;
+	}
+	public void setInstCode(String instCode) {
+		this.instCode = instCode;
 	}
 
 	public String getMiniAppId() {

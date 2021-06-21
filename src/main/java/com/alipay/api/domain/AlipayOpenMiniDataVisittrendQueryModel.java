@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序访问趋势实时数据查询
  *
  * @author auto create
- * @since 1.0, 2019-06-20 16:57:27
+ * @since 1.0, 2021-06-01 14:34:14
  */
 public class AlipayOpenMiniDataVisittrendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8534413226794386923L;
+	private static final long serialVersionUID = 8473123267898495711L;
 
 	/**
 	 * 查询小程序访问趋势数据的粒度，如HOUR-小时级

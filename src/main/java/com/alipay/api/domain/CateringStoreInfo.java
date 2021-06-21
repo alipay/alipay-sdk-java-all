@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮服务标准化门店信息
  *
  * @author auto create
- * @since 1.0, 2021-05-12 21:08:02
+ * @since 1.0, 2021-06-18 11:02:40
  */
 public class CateringStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6737922285848185594L;
+	private static final long serialVersionUID = 1158975853621821314L;
 
 	/**
 	 * 门店营业时间
@@ -72,7 +72,7 @@ public class CateringStoreInfo extends AlipayObject {
 	private String storeName;
 
 	/**
-	 * 门店联系方式
+	 * 门店联系方式，支持手机号和固定电话。请输入合法的手机号码或者固定号码，其中其中固定号码的区号3到4位，电话7到8位，分机号选填(例：固定电话：0834-1133567 或者 0834-1133567-1234）
 	 */
 	@ApiField("store_phone")
 	private String storePhone;

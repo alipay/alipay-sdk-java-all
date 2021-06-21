@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2020-12-28 15:33:35
+ * @since 1.0, 2021-06-09 19:15:59
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 4315952623323237528L;
+	private static final long serialVersionUID = 7884836255457137988L;
 
 	/**
 	 * 留资流水号，用于source=XLIGHT

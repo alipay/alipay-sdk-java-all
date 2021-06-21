@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务标准化的商户信息
  *
  * @author auto create
- * @since 1.0, 2021-05-12 21:08:09
+ * @since 1.0, 2021-06-18 11:02:39
  */
 public class CateringMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8545375436927769393L;
+	private static final long serialVersionUID = 6596488311162712763L;
 
 	/**
 	 * 品牌名称
@@ -20,7 +20,7 @@ public class CateringMerchantInfo extends AlipayObject {
 	private String brandName;
 
 	/**
-	 * 商家logo（上传logo图片返回的material_id）
+	 * 商家logo（上传logo图片返回的material_key）
 	 */
 	@ApiField("merchant_logo")
 	private String merchantLogo;

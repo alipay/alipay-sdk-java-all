@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门票信息
  *
  * @author auto create
- * @since 1.0, 2021-04-21 13:40:15
+ * @since 1.0, 2021-06-16 10:22:00
  */
 public class ScenicTicketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2229791486186621276L;
+	private static final long serialVersionUID = 2676945523832352139L;
 
 	/**
 	 * 自动检票时间
@@ -36,9 +36,9 @@ public class ScenicTicketInfo extends AlipayObject {
 	private Date closeTime;
 
 	/**
-	 * IDENTITY_CARD("IDENTITY_CARD_ONLY", "凭身份证入园"),
-QR_CODE("QR_CODE_ONLY", "凭二维码入园"),
-IDENTITY_CARD_AND_QR_CODE("IDENTITY_CARD_AND_QR_CODE", "凭二维码或身份证入园");
+	 * IDENTITY_CARD_ONLY：凭身份证入园，
+QR_CODE_ONLY：凭二维码入园，
+IDENTITY_CARD_AND_QR_CODE：凭二维码或身份证入园
 	 */
 	@ApiField("enter_way")
 	private String enterWay;
@@ -146,7 +146,7 @@ REGION("REGION","区域票")
 	private String ticketUseCode;
 
 	/**
-	 * 购票二维码图片
+	 * 购票凭证图片流的base64编码
 	 */
 	@ApiField("ticket_use_pic")
 	private String ticketUsePic;

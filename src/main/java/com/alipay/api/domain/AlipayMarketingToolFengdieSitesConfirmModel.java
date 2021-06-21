@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云凤蝶站点发布审批
  *
  * @author auto create
- * @since 1.0, 2021-01-06 16:25:55
+ * @since 1.0, 2021-06-08 14:10:00
  */
 public class AlipayMarketingToolFengdieSitesConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6583616797668323975L;
+	private static final long serialVersionUID = 8457457181983914351L;
 
 	/**
 	 * 欲审批发布的站点 Id

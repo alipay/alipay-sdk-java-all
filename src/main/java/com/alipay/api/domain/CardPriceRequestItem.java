@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 待定价产品实例
  *
  * @author auto create
- * @since 1.0, 2021-04-15 16:14:49
+ * @since 1.0, 2021-06-09 16:17:19
  */
 public class CardPriceRequestItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5754756268181573535L;
+	private static final long serialVersionUID = 4452168235778184865L;
 
 	/**
 	 * 优惠卡原价，单位为分
@@ -36,6 +36,12 @@ public class CardPriceRequestItem extends AlipayObject {
 	 */
 	@ApiField("high_price_cent")
 	private Long highPriceCent;
+
+	/**
+	 * 当前请求的周期卡价格(用于不需要定价的情况),单位为分
+	 */
+	@ApiField("last_promo_price")
+	private Long lastPromoPrice;
 
 	/**
 	 * 优惠卡价格区间下限，单位为分
@@ -81,6 +87,13 @@ public class CardPriceRequestItem extends AlipayObject {
 	}
 	public void setHighPriceCent(Long highPriceCent) {
 		this.highPriceCent = highPriceCent;
+	}
+
+	public Long getLastPromoPrice() {
+		return this.lastPromoPrice;
+	}
+	public void setLastPromoPrice(Long lastPromoPrice) {
+		this.lastPromoPrice = lastPromoPrice;
 	}
 
 	public Long getLowerPriceCent() {

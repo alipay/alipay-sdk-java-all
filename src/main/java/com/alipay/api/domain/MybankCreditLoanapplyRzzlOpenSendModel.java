@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商银行-融资租赁API通用处理器
  *
  * @author auto create
- * @since 1.0, 2021-05-13 09:54:32
+ * @since 1.0, 2021-05-26 19:36:40
  */
 public class MybankCreditLoanapplyRzzlOpenSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1645897663254864927L;
+	private static final long serialVersionUID = 8522783317973825859L;
 
 	/**
 	 * 业务类型,APPROVE_RESULT_NOTICE,资方发起审核结果请求,SDK枚举获取

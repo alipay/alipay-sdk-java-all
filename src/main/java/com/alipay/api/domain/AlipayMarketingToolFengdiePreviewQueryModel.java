@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取云凤蝶站点页面预览数据
  *
  * @author auto create
- * @since 1.0, 2018-04-26 10:14:55
+ * @since 1.0, 2021-06-10 11:27:14
  */
 public class AlipayMarketingToolFengdiePreviewQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1354821458275346112L;
+	private static final long serialVersionUID = 7786169664698452763L;
 
 	/**
 	 * 欲查询的站点 ID

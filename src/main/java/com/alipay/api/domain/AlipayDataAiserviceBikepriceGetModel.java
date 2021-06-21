@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 哈啰支付宝端内售卖智能定价接口
  *
  * @author auto create
- * @since 1.0, 2021-04-15 19:16:24
+ * @since 1.0, 2021-06-15 16:40:47
  */
 public class AlipayDataAiserviceBikepriceGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4149581926571873133L;
+	private static final long serialVersionUID = 6653348752286334761L;
 
 	/**
 	 * 渠道来源，跳转到渠道(流量位)的上一级页面(由调用方定义渠道枚举，给出对应英文代码或中文解释)

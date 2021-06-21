@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.sign.token.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-11 16:55:42
+ * @since 1.0, 2021-06-01 14:05:21
  */
 public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4476958315497336225L;
+	private static final long serialVersionUID = 1698576295519882275L;
 
 	/** 
 	 * 业务场景类型标识
@@ -49,6 +49,18 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("school_code")
 	private String schoolCode;
+
+	/** 
+	 * 校园一脸通行开通状态。OPEN：开通，CLOSE：关闭
+	 */
+	@ApiField("school_face_pass_status")
+	private String schoolFacePassStatus;
+
+	/** 
+	 * 校园一脸通行刷脸支付开通状态。OPEN：开通，CLOSE：关闭
+	 */
+	@ApiField("school_face_payment_status")
+	private String schoolFacePaymentStatus;
 
 	/** 
 	 * 学校外标（即学校的统一信用编码）
@@ -102,6 +114,20 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	}
 	public String getSchoolCode( ) {
 		return this.schoolCode;
+	}
+
+	public void setSchoolFacePassStatus(String schoolFacePassStatus) {
+		this.schoolFacePassStatus = schoolFacePassStatus;
+	}
+	public String getSchoolFacePassStatus( ) {
+		return this.schoolFacePassStatus;
+	}
+
+	public void setSchoolFacePaymentStatus(String schoolFacePaymentStatus) {
+		this.schoolFacePaymentStatus = schoolFacePaymentStatus;
+	}
+	public String getSchoolFacePaymentStatus( ) {
+		return this.schoolFacePaymentStatus;
 	}
 
 	public void setSchoolStdcode(String schoolStdcode) {

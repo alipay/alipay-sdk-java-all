@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV代商户快速投放智能客服入口
  *
  * @author auto create
- * @since 1.0, 2020-08-17 16:02:47
+ * @since 1.0, 2021-05-26 19:11:42
  */
 public class AlipayOpenMiniMiniappServiceconfigModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2191311344532193714L;
+	private static final long serialVersionUID = 6755662146191212284L;
 
 	/**
 	 * 云客服是否在小程序首页透出，true-开启，false-不开启

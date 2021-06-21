@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部小程序添加成员
  *
  * @author auto create
- * @since 1.0, 2019-09-09 15:30:31
+ * @since 1.0, 2021-06-01 14:09:01
  */
 public class AlipayOpenMiniMembersHuobanCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1411231639872399176L;
+	private static final long serialVersionUID = 6473842462634437137L;
 
 	/**
 	 * 内部员工域账号

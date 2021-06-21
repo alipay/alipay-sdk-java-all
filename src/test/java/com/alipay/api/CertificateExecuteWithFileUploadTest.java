@@ -18,7 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class CertificateExecuteWithFileUploadTest {
     @Test
     public void should_be_able_to_upload_file() throws AlipayApiException {
-        AlipayClient client = new DefaultAlipayClient(TestAccount.ProdCert.CERT_PARAMS);
+        AlipayClient client = new DefaultAlipayClient(TestAccount.ProdCert.getConfig());
 
         AlipayOfflineMaterialImageUploadRequest request = new AlipayOfflineMaterialImageUploadRequest();
         request.setImageType("jpg");

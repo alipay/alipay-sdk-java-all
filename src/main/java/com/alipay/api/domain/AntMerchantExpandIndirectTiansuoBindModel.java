@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 间连天梭绑定接口
  *
  * @author auto create
- * @since 1.0, 2019-08-13 12:56:41
+ * @since 1.0, 2021-06-17 10:40:43
  */
 public class AntMerchantExpandIndirectTiansuoBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8851885711918692723L;
+	private static final long serialVersionUID = 8886169589888645257L;
 
 	/**
 	 * 间连天梭绑定isv列表

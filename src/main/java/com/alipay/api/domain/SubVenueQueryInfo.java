@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆查询子场馆详情
  *
  * @author auto create
- * @since 1.0, 2021-04-30 14:49:29
+ * @since 1.0, 2021-06-11 10:41:58
  */
 public class SubVenueQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4335664639496451525L;
+	private static final long serialVersionUID = 4854896381246214466L;
 
 	/**
 	 * 入场要求
@@ -78,6 +78,14 @@ public class SubVenueQueryInfo extends AlipayObject {
 	private String payeeAccount;
 
 	/**
+	 * 收款方式
+account/空值：通过支付宝账号收款 
+smid：通过smid收款
+	 */
+	@ApiField("payment_method")
+	private String paymentMethod;
+
+	/**
 	 * 收款方式（间连/直连）
 	 */
 	@ApiField("payment_type")
@@ -130,6 +138,12 @@ course: 课程
 	 */
 	@ApiField("sub_venue_pid")
 	private String subVenuePid;
+
+	/**
+	 * 子场馆商户二级smid（payment_method为smid时必传）
+	 */
+	@ApiField("sub_venue_smid")
+	private String subVenueSmid;
 
 	/**
 	 * 场馆当前状态 安全审核中：infosec-audit 安全审核不通过：infosec-unpass 云验收中： cloud-audit 云验收不通过： cloud-unpass 上架： online 下架： offline 人工下架： manual-offline
@@ -233,6 +247,13 @@ course: 课程
 		this.payeeAccount = payeeAccount;
 	}
 
+	public String getPaymentMethod() {
+		return this.paymentMethod;
+	}
+	public void setPaymentMethod(String paymentMethod) {
+		this.paymentMethod = paymentMethod;
+	}
+
 	public String getPaymentType() {
 		return this.paymentType;
 	}
@@ -287,6 +308,13 @@ course: 课程
 	}
 	public void setSubVenuePid(String subVenuePid) {
 		this.subVenuePid = subVenuePid;
+	}
+
+	public String getSubVenueSmid() {
+		return this.subVenueSmid;
+	}
+	public void setSubVenueSmid(String subVenueSmid) {
+		this.subVenueSmid = subVenueSmid;
 	}
 
 	public String getSubVenueStatus() {

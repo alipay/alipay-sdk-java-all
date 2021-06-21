@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO结算申请
  *
  * @author auto create
- * @since 1.0, 2021-05-18 15:31:16
+ * @since 1.0, 2021-05-31 15:20:57
  */
 public class ZhimaCreditPeZmgoSettleApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2794293342525359964L;
+	private static final long serialVersionUID = 2295994848214196636L;
 
 	/**
 	 * DEFAULT_SETTLE 默认结算模式;
@@ -68,7 +68,7 @@ public class ZhimaCreditPeZmgoSettleApplyModel extends AlipayObject {
 	private String totalRealPayAmount;
 
 	/**
-	 * 芝麻GO任务开始到到期过程中和任务相关完成的任务次数，单位为：元（人民币），精确到小数点后两位。承诺模式下，需要穿这个字段。
+	 * 芝麻GO任务开始到到期过程中和任务相关完成的任务次数
 	 */
 	@ApiField("total_task_count")
 	private String totalTaskCount;

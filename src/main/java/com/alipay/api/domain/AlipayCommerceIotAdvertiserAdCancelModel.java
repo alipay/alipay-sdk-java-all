@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消投放计划
  *
  * @author auto create
- * @since 1.0, 2019-08-13 17:12:21
+ * @since 1.0, 2021-06-16 16:44:01
  */
 public class AlipayCommerceIotAdvertiserAdCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5487221877754977188L;
+	private static final long serialVersionUID = 5763723187318537983L;
 
 	/**
 	 * 投放计划id

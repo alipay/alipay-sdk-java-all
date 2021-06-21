@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoSignFlowFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4562561358632164365L;
+	private static final long serialVersionUID = 3844871891984549825L;
 
 	
 

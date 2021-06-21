@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RpaCrawlerTaskVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4349597756215185564L;
+	private static final long serialVersionUID = 2627545817976497443L;
 
 	/**
 	 * 算法id

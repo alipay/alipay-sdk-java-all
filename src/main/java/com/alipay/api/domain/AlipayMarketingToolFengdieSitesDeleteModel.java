@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除云凤蝶站点
  *
  * @author auto create
- * @since 1.0, 2021-01-06 16:28:55
+ * @since 1.0, 2021-06-09 22:21:19
  */
 public class AlipayMarketingToolFengdieSitesDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3144135566316236359L;
+	private static final long serialVersionUID = 3617436412628159765L;
 
 	/**
 	 * 待删除的站点 ID

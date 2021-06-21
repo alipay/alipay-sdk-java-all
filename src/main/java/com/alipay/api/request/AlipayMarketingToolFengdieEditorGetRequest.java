@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.tool.fengdie.editor.get request
  * 
  * @author auto create
- * @since 1.0, 2021-01-06 16:27:16
+ * @since 1.0, 2021-06-09 22:52:36
  */
 public class AlipayMarketingToolFengdieEditorGetRequest implements AlipayRequest<AlipayMarketingToolFengdieEditorGetResponse> {
 

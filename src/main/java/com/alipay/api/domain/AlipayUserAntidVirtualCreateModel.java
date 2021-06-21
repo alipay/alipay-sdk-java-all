@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 基于识别因子方式创建蚂蚁虚拟账户ID
  *
  * @author auto create
- * @since 1.0, 2020-07-20 18:47:05
+ * @since 1.0, 2021-06-17 15:19:23
  */
 public class AlipayUserAntidVirtualCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5214245259621272163L;
+	private static final long serialVersionUID = 1362843871847367628L;
 
 	/**
 	 * 业务域场景，由提供方分配

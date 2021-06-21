@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antid.virtual.query request
  * 
  * @author auto create
- * @since 1.0, 2020-07-20 18:47:26
+ * @since 1.0, 2021-06-17 15:19:36
  */
 public class AlipayUserAntidVirtualQueryRequest implements AlipayRequest<AlipayUserAntidVirtualQueryResponse> {
 

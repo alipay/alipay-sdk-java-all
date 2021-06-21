@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 内部链路小程序灰度上架
  *
  * @author auto create
- * @since 1.0, 2021-05-07 17:04:46
+ * @since 1.0, 2021-06-01 14:23:47
  */
 public class AlipayOpenMiniInnerversionGrayPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8521333696177432127L;
+	private static final long serialVersionUID = 1845169252562437554L;
 
 	/**
 	 * 业务来源
@@ -24,6 +27,13 @@ public class AlipayOpenMiniInnerversionGrayPublishModel extends AlipayObject {
 	 */
 	@ApiField("app_version")
 	private String appVersion;
+
+	/**
+	 * 待邀测应用列表，灰度插件时使用，如无邀测必要请不要传入
+	 */
+	@ApiListField("beta_app_id_list")
+	@ApiField("string")
+	private List<String> betaAppIdList;
 
 	/**
 	 * 端信息
@@ -61,6 +71,13 @@ public class AlipayOpenMiniInnerversionGrayPublishModel extends AlipayObject {
 	}
 	public void setAppVersion(String appVersion) {
 		this.appVersion = appVersion;
+	}
+
+	public List<String> getBetaAppIdList() {
+		return this.betaAppIdList;
+	}
+	public void setBetaAppIdList(List<String> betaAppIdList) {
+		this.betaAppIdList = betaAppIdList;
 	}
 
 	public String getBundleId() {

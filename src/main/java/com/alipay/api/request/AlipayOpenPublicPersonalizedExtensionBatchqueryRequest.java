@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.personalized.extension.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2021-01-28 12:02:03
+ * @since 1.0, 2021-05-27 16:46:45
  */
 public class AlipayOpenPublicPersonalizedExtensionBatchqueryRequest implements AlipayRequest<AlipayOpenPublicPersonalizedExtensionBatchqueryResponse> {
 

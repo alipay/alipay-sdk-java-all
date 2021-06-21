@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料批量查询
  *
  * @author auto create
- * @since 1.0, 2019-08-13 17:12:31
+ * @since 1.0, 2021-06-16 16:43:17
  */
 public class AlipayCommerceIotAdvertiserMaterialBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8648765398418497957L;
+	private static final long serialVersionUID = 7247429343693963658L;
 
 	/**
 	 * 查询总数

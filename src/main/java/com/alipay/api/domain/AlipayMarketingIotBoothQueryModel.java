@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT设备-结果页-展位查询
  *
  * @author auto create
- * @since 1.0, 2021-04-07 11:15:43
+ * @since 1.0, 2021-06-10 10:05:34
  */
 public class AlipayMarketingIotBoothQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7162846196748717425L;
+	private static final long serialVersionUID = 8396794175649139198L;
+
+	/**
+	 * 接口调用版本号
+	 */
+	@ApiField("api_version")
+	private String apiVersion;
 
 	/**
 	 * 客户端app信息，设备信息及sdk版本等信息加密后数据
@@ -54,6 +60,13 @@ public class AlipayMarketingIotBoothQueryModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public String getApiVersion() {
+		return this.apiVersion;
+	}
+	public void setApiVersion(String apiVersion) {
+		this.apiVersion = apiVersion;
+	}
 
 	public String getAppInfo() {
 		return this.appInfo;

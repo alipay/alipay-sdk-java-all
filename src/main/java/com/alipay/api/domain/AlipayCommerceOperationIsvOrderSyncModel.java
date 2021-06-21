@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮服务标准化订单数据回流
  *
  * @author auto create
- * @since 1.0, 2021-05-06 15:57:31
+ * @since 1.0, 2021-06-17 14:01:04
  */
 public class AlipayCommerceOperationIsvOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1791126455366396368L;
+	private static final long serialVersionUID = 6658684595447336558L;
 
 	/**
 	 * 支付宝userid（用户在支付宝平台的2088开头16位id）
@@ -63,6 +63,24 @@ public class AlipayCommerceOperationIsvOrderSyncModel extends AlipayObject {
 	private CateringGoodsInfo goodsInfo;
 
 	/**
+	 * 商品队列，前面排队的商品数量，如喜茶点单，前方还有66杯。
+	 */
+	@ApiField("goods_queue_num")
+	private Long goodsQueueNum;
+
+	/**
+	 * 开发票跳转链接
+	 */
+	@ApiField("invoice_url")
+	private String invoiceUrl;
+
+	/**
+	 * 环保标签，支持多标签，英文逗号隔开，目前支持标签：N_DISPOSABLE_CUP-自带杯；N_PACKAGED-不打包；N_STRAW-不用吸管；
+	 */
+	@ApiField("low_carbon_behavior")
+	private String lowCarbonBehavior;
+
+	/**
 	 * 商户订单号
 	 */
 	@ApiField("merchant_order_no")
@@ -101,6 +119,12 @@ public class AlipayCommerceOperationIsvOrderSyncModel extends AlipayObject {
 	private Date orderModifyTime;
 
 	/**
+	 * 订单队列，前面排队的订单数量
+	 */
+	@ApiField("order_queue_num")
+	private Long orderQueueNum;
+
+	/**
 	 * 订单类型，枚举支持
 ALIPAY_APPLETS：支付宝小程序产生的订单
 ALIPAY_POS：收银POS产生的支付宝订单
@@ -135,10 +159,22 @@ INSTANT：实时单
 	private QueueInfo queueInfo;
 
 	/**
-	 * 商户订单同步记录id（同一订单，非第一次同步 必填）
+	 * 返佣pid
+	 */
+	@ApiField("rebate_pid")
+	private String rebatePid;
+
+	/**
+	 * 订单同步接口返回record_id（同一订单，非第一次同步 必填）
 	 */
 	@ApiField("record_id")
 	private String recordId;
+
+	/**
+	 * 再来一单跳转链接，用户点击可进入商家小程序直接将上次购物的商品加入购物车
+	 */
+	@ApiField("reorder_url")
+	private String reorderUrl;
 
 	/**
 	 * 服务标识
@@ -153,7 +189,7 @@ INSTANT：实时单
 	private String status;
 
 	/**
-	 * 支付宝交易号（一个订单可能存在多笔支付单，英文逗号隔开）示例：2021031746828992022,2021031746828992034
+	 * 支付宝交易号
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
@@ -207,6 +243,27 @@ INSTANT：实时单
 		this.goodsInfo = goodsInfo;
 	}
 
+	public Long getGoodsQueueNum() {
+		return this.goodsQueueNum;
+	}
+	public void setGoodsQueueNum(Long goodsQueueNum) {
+		this.goodsQueueNum = goodsQueueNum;
+	}
+
+	public String getInvoiceUrl() {
+		return this.invoiceUrl;
+	}
+	public void setInvoiceUrl(String invoiceUrl) {
+		this.invoiceUrl = invoiceUrl;
+	}
+
+	public String getLowCarbonBehavior() {
+		return this.lowCarbonBehavior;
+	}
+	public void setLowCarbonBehavior(String lowCarbonBehavior) {
+		this.lowCarbonBehavior = lowCarbonBehavior;
+	}
+
 	public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
@@ -249,6 +306,13 @@ INSTANT：实时单
 		this.orderModifyTime = orderModifyTime;
 	}
 
+	public Long getOrderQueueNum() {
+		return this.orderQueueNum;
+	}
+	public void setOrderQueueNum(Long orderQueueNum) {
+		this.orderQueueNum = orderQueueNum;
+	}
+
 	public String getOrderSource() {
 		return this.orderSource;
 	}
@@ -284,11 +348,25 @@ INSTANT：实时单
 		this.queueInfo = queueInfo;
 	}
 
+	public String getRebatePid() {
+		return this.rebatePid;
+	}
+	public void setRebatePid(String rebatePid) {
+		this.rebatePid = rebatePid;
+	}
+
 	public String getRecordId() {
 		return this.recordId;
 	}
 	public void setRecordId(String recordId) {
 		this.recordId = recordId;
+	}
+
+	public String getReorderUrl() {
+		return this.reorderUrl;
+	}
+	public void setReorderUrl(String reorderUrl) {
+		this.reorderUrl = reorderUrl;
 	}
 
 	public String getServiceCode() {

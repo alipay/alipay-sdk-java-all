@@ -35,7 +35,7 @@ public class CertificateRSACheckTest {
                         + "/hDZVq27xWi4CQ2ffdV0lf7E2V/HMUPXECbIKkTnLXrwJBmsLgTGbTDGf7pGo0y0rkRvdsg9BmPPswfTeq"
                         + "/o2rlxD0XxrK1MPZ4uSPFhpdWVEyNchtXEfKoVsaYeVXV3cMfZi9zcKc6RCE8ezF9LxRJp1R0BxKEg==");
         //when
-        boolean result = AlipaySignature.rsaCertCheckV2(parameters, TestAccount.ProdCert.CERT_PARAMS.getCertPath(), "utf-8", "RSA");
+        boolean result = AlipaySignature.rsaCertCheckV2(parameters, TestAccount.ProdCert.getConfig().getAppCertPath(), "utf-8", "RSA");
         //then
         assertThat(result, is(true));
     }
@@ -54,7 +54,7 @@ public class CertificateRSACheckTest {
                         + "/HbNqcoBU4ctSPAGsuDPO/mah1+IwGQAuPP6xoEPL"
                         + "+3zQ0wztQCwHT2o8aQmxFJ9a09q8ybRprHaNjCgTaLDeTWE0o1pllZIE8c7wnG3cOuj6quYjTcQyLm6P4M87Zw==");
         //when
-        boolean result = AlipaySignature.rsaCertCheckV2(parameters, TestAccount.ProdCert.CERT_PARAMS.getCertPath(), "utf-8", "RSA2");
+        boolean result = AlipaySignature.rsaCertCheckV2(parameters, TestAccount.ProdCert.getConfig().getAppCertPath(), "utf-8", "RSA2");
         //then
         assertThat(result, is(true));
     }
@@ -69,7 +69,7 @@ public class CertificateRSACheckTest {
         parameters.put("sign",
                 "KrRGUY3/2JX3KtlLgus8CbK0xuUIBDCpOdJkVzJDefez6HvlA8RA6uCVj2rrMd7DgVfarG5SROdSnkZbf8MLKHbVoFqi9w0QCvto9mc8n3ezfWejZECJVCZhbJ3OslB+4gij9+F70usrnCNEJZm02ntyNdVzcqMbgdRMB93BJIRC1jjmCotpXgXWrRdTb/SfhIAkoHqgGi2aCUHuLDInLGZCn8NeziGWMnFOic6/sE/nMpwriOmwLb2nyzD0fGiolwuuxlOGMcBHAb22J8XqchFHyCpbs2A/rWdJMjhUfqsErbtZQM93fi1xfL2pUa9RMWX0Q81Qk7iSEeHCR+NGyQ==");
 
-        boolean result = AlipaySignature.rsaCertCheckV2(parameters, TestAccount.ProdCert.CERT_PARAMS.getCertPath(), "utf-8", "RSA2");
+        boolean result = AlipaySignature.rsaCertCheckV2(parameters, TestAccount.ProdCert.getConfig().getAppCertPath(), "utf-8", "RSA2");
 
         assertThat(result, is(true));
     }

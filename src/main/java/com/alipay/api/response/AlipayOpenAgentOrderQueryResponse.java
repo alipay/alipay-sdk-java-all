@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.SignRestrictInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-30 14:13:20
+ * @since 1.0, 2021-06-18 11:10:22
  */
 public class AlipayOpenAgentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1387481982762355127L;
+	private static final long serialVersionUID = 5458315737728632179L;
 
 	/** 
 	 * 代理创建的应用ID，如果有代理商户创建应用，商户确认成功后，才返回应用ID，否则不返回。
@@ -50,6 +53,13 @@ MERCHANT_APPLY_ORDER_CANCELED=审核失败或商户拒绝，申请信息审核�
 	@ApiField("reject_reason")
 	private String rejectReason;
 
+	/** 
+	 * 受限信息
+	 */
+	@ApiListField("restrict_infos")
+	@ApiField("sign_restrict_info")
+	private List<SignRestrictInfo> restrictInfos;
+
 	public void setAgentAppId(String agentAppId) {
 		this.agentAppId = agentAppId;
 	}
@@ -83,6 +93,13 @@ MERCHANT_APPLY_ORDER_CANCELED=审核失败或商户拒绝，申请信息审核�
 	}
 	public String getRejectReason( ) {
 		return this.rejectReason;
+	}
+
+	public void setRestrictInfos(List<SignRestrictInfo> restrictInfos) {
+		this.restrictInfos = restrictInfos;
+	}
+	public List<SignRestrictInfo> getRestrictInfos( ) {
+		return this.restrictInfos;
 	}
 
 }

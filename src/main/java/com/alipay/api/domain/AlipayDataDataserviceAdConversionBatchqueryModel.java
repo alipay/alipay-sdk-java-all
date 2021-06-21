@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化事件列表查询
  *
  * @author auto create
- * @since 1.0, 2021-05-12 20:51:42
+ * @since 1.0, 2021-06-09 17:12:24
  */
 public class AlipayDataDataserviceAdConversionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7246422536421577694L;
+	private static final long serialVersionUID = 6444958643762918542L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -23,14 +23,18 @@ public class AlipayDataDataserviceAdConversionBatchqueryModel extends AlipayObje
 	private String bizToken;
 
 	/**
-	 * 转化事件类型
+	 * 转化事件ID列表
 	 */
 	@ApiListField("conversion_id_list")
 	@ApiField("string")
 	private List<String> conversionIdList;
 
 	/**
-	 * 转化事件类型
+	 * 转化事件类型：
+COLLECT_NORMAL - 免费留资
+COLLECT_TRADE - 付费留资
+CPA_TMALL_MEMBER_JOIN - 入会
+等等
 	 */
 	@ApiField("conversion_type")
 	private String conversionType;

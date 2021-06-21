@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构人群匹配
  *
  * @author auto create
- * @since 1.0, 2018-09-20 16:53:25
+ * @since 1.0, 2021-06-03 11:00:33
  */
 public class AntfortuneMarketingCrowdWshopMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8427762482945168965L;
+	private static final long serialVersionUID = 7237668235834988468L;
 
 	/**
 	 * 财富号机构自建人群id，应用于财富号机构人群匹配。财富号合作机构通过财富号后台创建人群后获得人群id

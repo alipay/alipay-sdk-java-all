@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费账单状态同步接口
  *
  * @author auto create
- * @since 1.0, 2017-11-06 11:48:51
+ * @since 1.0, 2021-06-21 10:26:20
  */
 public class AlipayEcoEduKtBillingModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4169229111117431917L;
+	private static final long serialVersionUID = 1134217368239914135L;
+
+	/**
+	 * 成功Y，失败N
+	 */
+	@ApiField("bank_success")
+	private String bankSuccess;
 
 	/**
 	 * 退款时，支付宝返回的用户的登录id
@@ -38,7 +44,7 @@ public class AlipayEcoEduKtBillingModifyModel extends AlipayObject {
 	private String gmtRefund;
 
 	/**
-	 * 标识一次退款请求，同一笔交易多次退款需要保证唯一，如需部分退款，则此参数必传
+	 * 标识一次退款请求，同一笔交易多次退款需要保证唯一，如需部分退款，则此参数必传。（若退款时填写，则同步退款状态时也必须填写）
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -62,14 +68,19 @@ public class AlipayEcoEduKtBillingModifyModel extends AlipayObject {
 	private String refundDetailItemList;
 
 	/**
-	 * 退款原因，商家根据客户实际退款原因填写
+	 * 退款原因，商家根据客户实际退款原因填写（若退款时填写，则同步退款状态时也必须填写）
 	 */
 	@ApiField("refund_reason")
 	private String refundReason;
 
 	/**
 	 * 状态：1:缴费成功，2:关闭账单，3、退费
-如果为退款状态，需要填写以下字段,字段都是支付宝退款返回的必填参数
+如果为退款状态，需要填写fund_change, 
+refund_amount, refund_reason,
+out_request_no, buyer_logon_id,
+gmt_refund,
+buyer_user_id, refund_detail_item_list;
+4、同步网商返回的状态,如果是网商银行的账单，bank_success这个字段必填
 	 */
 	@ApiField("status")
 	private String status;
@@ -79,6 +90,13 @@ public class AlipayEcoEduKtBillingModifyModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public String getBankSuccess() {
+		return this.bankSuccess;
+	}
+	public void setBankSuccess(String bankSuccess) {
+		this.bankSuccess = bankSuccess;
+	}
 
 	public String getBuyerLogonId() {
 		return this.buyerLogonId;

@@ -7,11 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 拓展字段
  *
  * @author auto create
- * @since 1.0, 2020-06-16 16:43:35
+ * @since 1.0, 2021-06-18 16:56:24
  */
 public class BillSendExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8144926557335541452L;
+	private static final long serialVersionUID = 8191586789428513886L;
+
+	/**
+	 * 账单唤起收银台的方式：
+1-手机wap;2-当面付。默认值为1（不传值或传非数字值）
+	 */
+	@ApiField("order_pay_type")
+	private String orderPayType;
 
 	/**
 	 * 分账金额
@@ -24,6 +31,13 @@ public class BillSendExtInfo extends AlipayObject {
 	 */
 	@ApiField("trans_in_pid")
 	private String transInPid;
+
+	public String getOrderPayType() {
+		return this.orderPayType;
+	}
+	public void setOrderPayType(String orderPayType) {
+		this.orderPayType = orderPayType;
+	}
 
 	public String getRoyaltyAmount() {
 		return this.royaltyAmount;

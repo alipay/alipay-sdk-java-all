@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联商户运营活动报名接口
  *
  * @author auto create
- * @since 1.0, 2021-05-24 17:06:21
+ * @since 1.0, 2021-06-07 16:46:00
  */
 public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3833871556977838349L;
+	private static final long serialVersionUID = 6627944366674496571L;
 
 	/**
 	 * 活动类型，间连商户报名的支付宝活动类型。
@@ -85,6 +85,12 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	 */
 	@ApiField("indoor_pic")
 	private String indoorPic;
+
+	/**
+	 * 特殊费率资质表中对应的行业code
+	 */
+	@ApiField("industry_code")
+	private String industryCode;
 
 	/**
 	 * 商户行业资质图片，如《医疗机构执业许可证》、《党组织批复成立文件》等，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key
@@ -254,6 +260,13 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	}
 	public void setIndoorPic(String indoorPic) {
 		this.indoorPic = indoorPic;
+	}
+
+	public String getIndustryCode() {
+		return this.industryCode;
+	}
+	public void setIndustryCode(String industryCode) {
+		this.industryCode = industryCode;
 	}
 
 	public String getIndustryQualificationImage() {

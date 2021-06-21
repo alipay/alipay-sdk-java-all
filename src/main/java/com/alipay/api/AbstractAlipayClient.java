@@ -76,6 +76,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     private   X509Certificate                            cert;
     private   ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap;
     private   ConcurrentHashMap<String, String>          alipayPublicKeyMap;
+    private   Map<String, String>                        headers;
 
     public AbstractAlipayClient(String serverUrl, String appId, String format,
                                 String charset, String signType) {
@@ -118,6 +119,12 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         }
         this.proxyHost = proxyHost;
         this.proxyPort = proxyPort;
+
+        //公钥证书未设置，提前返回，跳过后续证书初始化内容
+        if (StringUtils.isEmpty(alipayPublicCertContent) && StringUtils.isEmpty(alipayPublicCertPath)) {
+            return;
+        }
+
         //读取根证书（用来校验本地支付宝公钥证书失效后自动从网关下载的新支付宝公钥证书是否有效）
         this.rootCertContent = StringUtils.isEmpty(rootCertContent) ? readFileToString(rootCertPath) : rootCertContent;
         //alipayRootCertSN根证书序列号
@@ -479,7 +486,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         String rsp = null;
         try {
             rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
-                    connectTimeout, readTimeout, proxyHost, proxyPort);
+                    connectTimeout, readTimeout, proxyHost, proxyPort, headers);
         } catch (IOException e) {
             throw new AlipayApiException(e);
         }
@@ -979,10 +986,10 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                 AlipayUploadRequest<T> uRequest = (AlipayUploadRequest<T>) request;
                 Map<String, FileItem> fileParams = AlipayUtils.cleanupMap(uRequest.getFileParams());
                 rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), fileParams,
-                        charset, connectTimeout, readTimeout, proxyHost, proxyPort);
+                        charset, connectTimeout, readTimeout, proxyHost, proxyPort, headers);
             } else {
                 rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
-                        connectTimeout, readTimeout, proxyHost, proxyPort);
+                        connectTimeout, readTimeout, proxyHost, proxyPort, headers);
             }
         } catch (SSLException e) {
             if (e.getMessage().contains("the trustAnchors parameter must be non-empty")
@@ -1124,6 +1131,15 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
     public void setReadTimeout(int readTimeout) {
         this.readTimeout = readTimeout;
+    }
+
+    /**
+     * 设置自定义http的header
+     *
+     * @param headers 自定义http的header
+     */
+    void setHeaders(Map<String, String> headers) {
+        this.headers = headers;
     }
 
     void setProxyHost(String proxyHost) {

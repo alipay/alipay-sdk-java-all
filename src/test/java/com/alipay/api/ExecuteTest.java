@@ -1,14 +1,19 @@
 package com.alipay.api;
 
+import com.alipay.api.TestAccount.Sandbox;
 import com.alipay.api.domain.AlipayTradeCreateModel;
 import com.alipay.api.internal.util.WebUtils;
 import com.alipay.api.request.AlipayOfflineMaterialImageUploadRequest;
-import com.alipay.api.request.AlipayTradeCreateRequest;
 import com.alipay.api.request.AlipayOpenOperationOpenbizmockBizQueryRequest;
+import com.alipay.api.request.AlipayTradeCreateRequest;
 import com.alipay.api.response.AlipayOfflineMaterialImageUploadResponse;
-import com.alipay.api.response.AlipayTradeCreateResponse;
 import com.alipay.api.response.AlipayOpenOperationOpenbizmockBizQueryResponse;
-import org.junit.*;
+import com.alipay.api.response.AlipayTradeCreateResponse;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Rule;
+import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import java.util.UUID;
@@ -18,15 +23,13 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ExecuteTest {
-    private AlipayClient alipayClient;
-
     @Rule
     public final ExpectedException expectedException = ExpectedException.none();
+    private AlipayClient alipayClient;
 
     @Before
-    public void setUp() {
-        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.GATEWAY, TestAccount.Sandbox.APP_ID, TestAccount.Sandbox.APP_PRIVATE_KEY,
-                "json", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2");
+    public void setUp() throws AlipayApiException {
+        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.getConfig());
     }
 
     @After
@@ -43,9 +46,6 @@ public class ExecuteTest {
     @Test
     public void should_return_success_when_request_and_response_encrypted() throws AlipayApiException {
         //given
-        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.GATEWAY, TestAccount.Sandbox.APP_ID, TestAccount.Sandbox.APP_PRIVATE_KEY,
-                "json", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2",
-                TestAccount.Sandbox.AES_KEY, "AES");
         AlipayTradeCreateRequest request = getTradeCreateRequest();
         request.setNeedEncrypt(true);
         //when
@@ -64,8 +64,9 @@ public class ExecuteTest {
     @Test
     public void should_be_able_to_parse_xml_format_response() throws AlipayApiException {
         //given
-        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.GATEWAY, TestAccount.Sandbox.APP_ID, TestAccount.Sandbox.APP_PRIVATE_KEY,
-                "xml", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2");
+        AlipayConfig config = Sandbox.getConfig();
+        config.setFormat("xml");
+        alipayClient = new DefaultAlipayClient(config);
         AlipayTradeCreateRequest request = getTradeCreateRequest();
         //when
         AlipayTradeCreateResponse response = alipayClient.execute(request);
@@ -77,9 +78,9 @@ public class ExecuteTest {
     @Test
     public void should_be_able_to_parse_xml_format_response_when_encrypted() throws AlipayApiException {
         //given
-        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.GATEWAY, TestAccount.Sandbox.APP_ID, TestAccount.Sandbox.APP_PRIVATE_KEY,
-                "xml", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2",
-                TestAccount.Sandbox.AES_KEY, "AES");
+        AlipayConfig config = Sandbox.getConfig();
+        config.setFormat("xml");
+        alipayClient = new DefaultAlipayClient(config);
         AlipayTradeCreateRequest request = getTradeCreateRequest();
         request.setNeedEncrypt(true);
         //when
@@ -104,9 +105,10 @@ public class ExecuteTest {
     public void should_return_false_when_app_not_set_private_key() throws AlipayApiException {
         //given
         //访问线上一个没有设置公私钥对的APP
-        alipayClient = new DefaultAlipayClient(TestAccount.ProdCert.GATEWAY, TestAccount.NOT_SET_KEY_APP_ID,
-                TestAccount.Sandbox.APP_PRIVATE_KEY,
-                "json", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2");
+        AlipayConfig config = TestAccount.Sandbox.getConfig();
+        config.setServerUrl("https://openapi.alipay.com/gateway.do");
+        config.setAppId(TestAccount.NOT_SET_KEY_APP_ID);
+        alipayClient = new DefaultAlipayClient(config);
         //when
         AlipayTradeCreateResponse response = alipayClient.execute(getTradeCreateRequest());
         //then
@@ -116,9 +118,9 @@ public class ExecuteTest {
 
     @Test
     public void should_failed_when_visit_untrusted_gateway() throws AlipayApiException {
-        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.UNTRUSTED_GATEWAY, TestAccount.Sandbox.APP_ID,
-                TestAccount.Sandbox.APP_PRIVATE_KEY,
-                "json", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2");
+        AlipayConfig config = TestAccount.Sandbox.getConfig();
+        config.setServerUrl(TestAccount.Sandbox.UNTRUSTED_GATEWAY);
+        alipayClient = new DefaultAlipayClient(config);
         expectedException.expectMessage("javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException");
         sendOneNormalRequest();
     }
@@ -134,9 +136,6 @@ public class ExecuteTest {
      */
     @Ignore
     public void should_return_success_when_ca_cert_not_exist_but_set_skip_ssl_server_cert_verify() throws AlipayApiException {
-        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.GATEWAY, TestAccount.Sandbox.APP_ID,
-                TestAccount.Sandbox.APP_PRIVATE_KEY,
-                "json", "utf-8", TestAccount.Sandbox.ALIPAY_PUBLICKEY, "RSA2");
         WebUtils.setNeedCheckServerTrusted(true);
         sendOneNormalRequest();
     }
@@ -168,7 +167,6 @@ public class ExecuteTest {
         assertThat(response.getCode(), is("10000"));
     }
 
-
     //TODO:待相关依赖上线后替换为线上环境测试
     public void should_return_success_when_request_and_response_encrypted_sm2() throws AlipayApiException {
         //given
@@ -186,7 +184,6 @@ public class ExecuteTest {
         assertThat(response.getCode(), is("10000"));
     }
 
-
     //TODO:待相关依赖上线后替换为线上环境测试
     public void should_be_able_to_upload_file_sm2() throws AlipayApiException {
         //given
@@ -203,7 +200,6 @@ public class ExecuteTest {
 
         assertThat(response.getCode(), is("10000"));
     }
-
 
     private String getTestImagePath() {
         return "src/test/resources/fixture/海底捞.jpg";

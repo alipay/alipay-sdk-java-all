@@ -176,21 +176,6 @@ public class AntCertificationUtilTest {
             + "-----END CERTIFICATE-----";
 
     @Test
-    public void should_return_true_when_use_ras_root_ca_check_rsa_root_ca() {
-        assertThat(AntCertificationUtil.isTrusted(rsaRootCa, rsaRootCa), is(true));
-    }
-
-    @Test
-    public void should_return_true_when_use_rsa_root_ca_check_rsa_client_cert() {
-        assertThat(AntCertificationUtil.isTrusted(rsaClientCert, rsaRootCa), is(true));
-    }
-
-    @Test
-    public void should_return_true_when_use_rsa_root_ca_chain_check_rsa_client_cert_chain() {
-        assertThat(AntCertificationUtil.isTrusted(rsaClientCertchain, rsaRootCaChain), is(true));
-    }
-
-    @Test
     public void should_return_false_when_cert_date_invalid() {
         assertThat(AntCertificationUtil.isTrusted(badDateRsaClientCert, rsaRootCa), is(false));
     }

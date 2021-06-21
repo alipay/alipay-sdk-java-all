@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2021-05-10 16:19:27
+ * @since 1.0, 2021-06-11 11:59:37
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7641184112784958429L;
+	private static final long serialVersionUID = 2896343747647913318L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。
@@ -154,7 +154,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String scene;
 
 	/**
-	 * 结算支付宝账号的登录号，需传入小程序归属账号。若需增加收款账号，可在创建门店后登录<a href="https://b.alipay.com/index2.htm">商家中心</a>  ，在 账户中心 > 经营信息 > 门店管理 中选择对应门店选择 更多 > 编辑 > 新增收款账号。 
+	 * 结算支付宝账号的登录号。
 	 */
 	@ApiField("settle_alipay_logon_id")
 	private String settleAlipayLogonId;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.app.pay response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-12 18:22:36
+ * @since 1.0, 2021-06-04 15:55:45
  */
 public class AlipayTradeAppPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8131514328961644435L;
+	private static final long serialVersionUID = 7373728917724377192L;
 
 	/** 
 	 * 授信协议号。信用支付场景才有值，先用后付产品里是用户的芝麻授信协议号
@@ -52,7 +52,7 @@ public class AlipayTradeAppPayResponse extends AlipayResponse {
 	private String sellerId;
 
 	/** 
-	 * 该笔订单的资金总额，单位为RMB-Yuan。取值范围为[0.01，100000000.00]，精确到小数点后两位。
+	 * 该笔订单的资金总额，单位为人民币（元），取值范围为 0.01~100000000.00，精确到小数点后两位。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.setting.category.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-26 15:01:28
+ * @since 1.0, 2021-05-27 16:25:10
  */
 public class AlipayOpenPublicSettingCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6222945579727756578L;
+	private static final long serialVersionUID = 1674742894121794426L;
 
 	/** 
 	 * 已设置的一级行业分类名称。

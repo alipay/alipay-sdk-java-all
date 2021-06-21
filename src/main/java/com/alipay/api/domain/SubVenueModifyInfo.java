@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆修子场馆详细信息
  *
  * @author auto create
- * @since 1.0, 2021-04-01 15:36:04
+ * @since 1.0, 2021-06-11 10:41:48
  */
 public class SubVenueModifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4795219476264993584L;
+	private static final long serialVersionUID = 4513121746758349636L;
 
 	/**
 	 * 入场要求
@@ -78,10 +78,18 @@ public class SubVenueModifyInfo extends AlipayObject {
 	private String outSubVenueId;
 
 	/**
-	 * 收款方支付宝账户
+	 * 收款方支付宝账户(payment_method为account或空值时必传)
 	 */
 	@ApiField("payee_account")
 	private String payeeAccount;
+
+	/**
+	 * 收款方式 
+account：通过支付宝账号收款 
+smid：通过smid收款
+	 */
+	@ApiField("payment_method")
+	private String paymentMethod;
 
 	/**
 	 * 收款方式（间连/直连）
@@ -135,10 +143,16 @@ public class SubVenueModifyInfo extends AlipayObject {
 	private String subVenueId;
 
 	/**
-	 * 子场馆pid
+	 * 子场馆pid(payment_method为smid时必传)
 	 */
 	@ApiField("sub_venue_pid")
 	private String subVenuePid;
+
+	/**
+	 * 子场馆商户二级smid（payment_method为smid时必传）
+	 */
+	@ApiField("sub_venue_smid")
+	private String subVenueSmid;
 
 	/**
 	 * 标签列表
@@ -243,6 +257,13 @@ public class SubVenueModifyInfo extends AlipayObject {
 		this.payeeAccount = payeeAccount;
 	}
 
+	public String getPaymentMethod() {
+		return this.paymentMethod;
+	}
+	public void setPaymentMethod(String paymentMethod) {
+		this.paymentMethod = paymentMethod;
+	}
+
 	public String getPaymentType() {
 		return this.paymentType;
 	}
@@ -304,6 +325,13 @@ public class SubVenueModifyInfo extends AlipayObject {
 	}
 	public void setSubVenuePid(String subVenuePid) {
 		this.subVenuePid = subVenuePid;
+	}
+
+	public String getSubVenueSmid() {
+		return this.subVenueSmid;
+	}
+	public void setSubVenueSmid(String subVenueSmid) {
+		this.subVenueSmid = subVenueSmid;
 	}
 
 	public List<String> getTagList() {

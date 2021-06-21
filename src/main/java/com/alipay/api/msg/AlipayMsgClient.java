@@ -3,14 +3,20 @@
  */
 package com.alipay.api.msg;
 
+import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayConstants;
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayLogger;
 import com.alipay.api.internal.util.AlipaySignature;
+import com.alipay.api.internal.util.AntCertificationUtil;
+import com.alipay.api.internal.util.StringUtils;
 import com.alipay.api.internal.util.WebUtils;
+import com.alipay.api.internal.util.file.FileUtils;
 import com.alipay.api.internal.util.json.JSONWriter;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
@@ -22,7 +28,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
-import java.util.concurrent.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author liuqun.lq
@@ -30,6 +42,7 @@ import java.util.concurrent.*;
  */
 public class AlipayMsgClient {
 
+    private static Map<String, AlipayMsgClient>                   clientMap       = new HashMap<String, AlipayMsgClient>();
     private String     serverHost;
     private boolean    isSSL                 = true;
     private MsgHandler messageHandler;
@@ -41,8 +54,10 @@ public class AlipayMsgClient {
     private int        bizThreadPoolCoreSize = 5;
     private int        bizThreadPoolMaxSize  = 10;
     private boolean    loadTest              = false;
-
-    private static Map<String, AlipayMsgClient>                   clientMap       = new HashMap<String, AlipayMsgClient>();
+    private String appCertSN;
+    private String alipayCertSN;
+    private String alipayRootCertSN;
+    private String rootCertContent;
     private        ThreadPoolExecutor                             bizThreadPoolExecutor;
     private        ScheduledThreadPoolExecutor                    heartBeatExecutor;
     private        int                                            reConnectTimes  = 0;
@@ -148,6 +163,13 @@ public class AlipayMsgClient {
             params.put("timestamp", String.valueOf(System.currentTimeMillis()));
             params.put("sign_type", signType);
             params.put("sdk_version", AlipayConstants.SDK_VERSION);
+
+            //新增证书模式SN参数
+            if (!StringUtils.isEmpty(this.alipayCertSN)) {
+                params.put(AlipayConstants.APP_CERT_SN, this.appCertSN);
+                params.put(AlipayConstants.ALIPAY_ROOT_CERT_SN, this.alipayRootCertSN);
+            }
+
             String signContent = AlipaySignature.getSignCheckContentV2(params);
             String sign = AlipaySignature.rsaSign(signContent, appPrivateKey, charset, signType);
             params.put("sign", sign);
@@ -176,6 +198,13 @@ public class AlipayMsgClient {
         message.setMsgApi(msgReq.getApiMethodName());
         message.setxTimestamp(System.currentTimeMillis());
         message.setBizContent(new JSONWriter().write(msgReq.getBizModel(), true));
+
+        //新增证书模式SN参数
+        if (!StringUtils.isEmpty(this.appCertSN)) {
+            message.setAppCertSN(this.appCertSN);
+            message.setAlipayRootCertSN(this.alipayRootCertSN);
+        }
+
         Message.addSign(message, appPrivateKey);
         ProtocolData protocolData = new ProtocolData();
         protocolData.setMessage(message);
@@ -321,6 +350,18 @@ public class AlipayMsgClient {
         this.alipayPublicKey = alipayPublicKey;
     }
 
+    //设置证书参数
+    public void setSecurityCertConfig(String signType, String appPrivateKey, String certPath, String alipayPublicCertPath,
+                                      String rootCertPath) throws AlipayApiException {
+        this.signType = signType;
+        this.appPrivateKey = appPrivateKey;
+        this.alipayPublicKey = AntCertificationUtil.getAlipayPublicKey(alipayPublicCertPath);
+        this.alipayCertSN = AntCertificationUtil.getCertSN(AntCertificationUtil.getCertFromPath(alipayPublicCertPath));
+        this.appCertSN = AntCertificationUtil.getCertSN(AntCertificationUtil.getCertFromPath(certPath));
+        this.rootCertContent = readFileToString(rootCertPath);
+        this.alipayRootCertSN = AntCertificationUtil.getRootCertSN(this.rootCertContent, signType);
+    }
+
     public String getCharset() {
         return charset;
     }
@@ -341,6 +382,12 @@ public class AlipayMsgClient {
         params.put("charset", charset);
         params.put("sdk_version", AlipayConstants.SDK_VERSION);
         params.put("nonce", UUID.randomUUID().toString().replace("-", ""));
+
+        //新增证书模式SN参数
+        if (!StringUtils.isEmpty(this.alipayCertSN)) {
+            params.put(AlipayConstants.APP_CERT_SN, this.appCertSN);
+            params.put(AlipayConstants.ALIPAY_ROOT_CERT_SN, this.alipayRootCertSN);
+        }
         String signContent = AlipaySignature.getSignCheckContentV2(params);
         String sign = AlipaySignature.rsaSign(signContent, appPrivateKey, charset, signType);
         params.put("sign", sign);
@@ -352,7 +399,7 @@ public class AlipayMsgClient {
         InputStream stream = null;
         String rsp = null;
         try {
-            conn = WebUtils.getConnection(url, "GET", "application/x-www-form-urlencoded;charset=" + charset);
+            conn = WebUtils.getConnection(url, "GET", "application/x-www-form-urlencoded;charset=" + charset, null);
             if (loadTest) {
                 conn.setRequestProperty("LoadTest", "true");
             }
@@ -390,8 +437,10 @@ public class AlipayMsgClient {
         }
         int contentBegin = rsp.indexOf("\"response\"") + "\"response\"".length();
         int contentEnd = -1;
-        for (; contentBegin < rsp.length() && rsp.charAt(contentBegin) != ':'; ++contentBegin) {}
-        for (; contentBegin < rsp.length() && rsp.charAt(contentBegin) != '{'; ++contentBegin) {}
+        for (; contentBegin < rsp.length() && rsp.charAt(contentBegin) != ':'; ++contentBegin) {
+        }
+        for (; contentBegin < rsp.length() && rsp.charAt(contentBegin) != '{'; ++contentBegin) {
+        }
 
         int rIdx = rsp.lastIndexOf("\"sign\"") + "\"sign\"".length();
         int signBegin = -1;
@@ -399,15 +448,29 @@ public class AlipayMsgClient {
         String signContent = null;
         StringBuilder sb = new StringBuilder();
         if (rIdx > "\"sign\"".length()) {
-            for (; rIdx < rsp.length() && rsp.charAt(rIdx) != ':'; ++rIdx) {}
-            for (; rIdx < rsp.length() && rsp.charAt(rIdx) != '\"'; ++rIdx) {}
-            for (signBegin = ++rIdx; rsp.charAt(rIdx) != '\"' && sb.append(rsp.charAt(rIdx)) != null; ++rIdx) {}
+            for (; rIdx < rsp.length() && rsp.charAt(rIdx) != ':'; ++rIdx) {
+            }
+            for (; rIdx < rsp.length() && rsp.charAt(rIdx) != '\"'; ++rIdx) {
+            }
+            for (signBegin = ++rIdx; rsp.charAt(rIdx) != '\"' && sb.append(rsp.charAt(rIdx)) != null; ++rIdx) {
+            }
             sign = sb.toString();
 
             rIdx = signBegin;
-            for (; rIdx > 0 && rsp.charAt(rIdx) != '}'; --rIdx) {}
+            for (; rIdx > 0 && rsp.charAt(rIdx) != '}'; --rIdx) {
+            }
             contentEnd = rIdx + 1;
             signContent = rsp.substring(contentBegin, contentEnd);
+
+            //新增支付宝公钥序列号校验，alipay_cert_sn固定在最后
+            if (rsp.indexOf("alipay_cert_sn") > 1) {
+                int snBegin = rsp.indexOf("\"alipay_cert_sn\"") + "\"alipay_cert_sn\"".length() + 2;
+                int snEnd = rsp.lastIndexOf("}") - 1;
+                String sn = rsp.substring(snBegin, snEnd);
+                if (!this.alipayCertSN.equals(sn)) {
+                    throw new RuntimeException("register response alipay_cert_sn check fail! " + rsp);
+                }
+            }
 
             if (!AlipaySignature.rsaCheck(signContent, sign, alipayPublicKey,
                     charset, signType)) {
@@ -415,7 +478,8 @@ public class AlipayMsgClient {
             }
         } else {
             rIdx = rsp.lastIndexOf("}");
-            for (--rIdx; rIdx > 0 && rsp.charAt(rIdx) != '}'; --rIdx) {}
+            for (--rIdx; rIdx > 0 && rsp.charAt(rIdx) != '}'; --rIdx) {
+            }
             contentEnd = rIdx + 1;
             signContent = rsp.substring(contentBegin, contentEnd);
         }
@@ -464,6 +528,30 @@ public class AlipayMsgClient {
         return zone;
     }
 
+    private String readFileToString(String rootCertPath) throws AlipayApiException {
+        try {
+            return FileUtils.readFileToString(new File(rootCertPath));
+        } catch (IOException e) {
+            throw new AlipayApiException(e);
+        }
+    }
+
+    private enum ReconnectStrategy {
+        ONE(0),
+        TWO(5000),
+        THREE(10000);
+
+        private int watiTime;
+
+        ReconnectStrategy(int watiTime) {
+            this.watiTime = watiTime;
+        }
+
+        public int getWatiTime() {
+            return watiTime;
+        }
+    }
+
     private static class RegisterResponse {
         private String linkToken;
         private String zone;
@@ -482,22 +570,6 @@ public class AlipayMsgClient {
 
         void setZone(String zone) {
             this.zone = zone;
-        }
-    }
-
-    private enum ReconnectStrategy {
-        ONE(0),
-        TWO(5000),
-        THREE(10000);
-
-        private int watiTime;
-
-        ReconnectStrategy(int watiTime) {
-            this.watiTime = watiTime;
-        }
-
-        public int getWatiTime() {
-            return watiTime;
         }
     }
 }

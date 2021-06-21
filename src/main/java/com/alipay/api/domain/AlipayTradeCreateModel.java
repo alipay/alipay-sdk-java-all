@@ -10,20 +10,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2021-05-25 16:25:33
+ * @since 1.0, 2021-06-04 15:53:14
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3117317811895169515L;
+	private static final long serialVersionUID = 1681734892581169285L;
 
 	/**
-	 * 支付宝的店铺编号
+	 * 支付宝店铺编号。
+指商户创建门店后支付宝生成的门店ID。
 	 */
 	@ApiField("alipay_store_id")
 	private String alipayStoreId;
 
 	/**
-	 * 对一笔交易的具体描述信息。如果是多种商品，请将商品描述字符串累加传给body。
+	 * 订单描述
 	 */
 	@ApiField("body")
 	private String body;
@@ -35,14 +36,17 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private BusinessParams businessParams;
 
 	/**
-	 * 买家的支付宝唯一用户号（2088开头的16位纯数字）。
-小程序支付场景必填。
+	 * 买家支付宝用户ID。
+2088开头的16位纯数字，小程序场景下获取用户ID请参考：<a target="_blank" href="https://opendocs.alipay.com/mini/introduce/authcode" >用户授权</a>;
+其它场景下获取用户ID请参考：<a target="_blank" href="https://opendocs.alipay.com/open/284/106001/#s4" >网页授权获取用户信息</a>;
+注：交易的买家与卖家不能相同。
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
 
 	/**
-	 * 买家支付宝账号，和buyer_id不能同时为空
+	 * 买家支付宝登录账号。
+buyer_logon_id和buyer_id两者传其一，和buyer_id不能同时为空，建议通过buyer_id来传递买家信息。
 	 */
 	@ApiField("buyer_logon_id")
 	private String buyerLogonId;
@@ -56,17 +60,19 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String disablePayChannels;
 
 	/**
-	 * 可打折金额.
-参与优惠计算的金额，单位为人民币（元），取值范围为 0.01~100000000.00，精确到小数点后两位。
-注意：如果该值未传入，但传入了【订单总金额】，【不可打折金额】则该值默认为【订单总金额】-【不可打折金额】
+	 * 可打折金额。
+参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。 
+如果同时传入了【可打折金额】、【不可打折金额】和【订单总金额】，则必须满足如下条件：【订单总金额】=【可打折金额】+【不可打折金额】。
+如果订单金额全部参与优惠计算，则【可打折金额】和【不可打折金额】都无需传入。
 	 */
 	@ApiField("discountable_amount")
 	private String discountableAmount;
 
 	/**
-	 * 可用渠道,用户只能在指定渠道范围内支付，多个渠道以逗号分割
-注，与disable_pay_channels互斥
-渠道列表：https://docs.open.alipay.com/common/wifww7
+	 * 指定支付渠道。
+用户只能使用指定的渠道进行支付，多个渠道以逗号分割。
+与disable_pay_channels互斥，支持传入的值：<a target="_blank" href="https://docs.open.alipay.com/common/wifww7">渠道列表</a>。
+注：如果传入了指定支付渠道，则用户只能用指定内的渠道支付，包括营销渠道也要指定才能使用。该参数可能导致用户支付受限，慎用。
 	 */
 	@ApiField("enable_pay_channels")
 	private String enablePayChannels;
@@ -97,35 +103,37 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private LogisticsDetail logisticsDetail;
 
 	/**
-	 * 商户原始订单号，最大长度限制32位
+	 * 商户的原始订单号
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;
 
 	/**
-	 * 商户操作员编号
+	 * 商户操作员编号。
 	 */
 	@ApiField("operator_id")
 	private String operatorId;
 
 	/**
-	 * 商户订单号,64个字符以内、只能包含字母、数字、下划线；需保证在商户端不重复
+	 * 商户订单号。
+由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
 
 	/**
-	 * 公用回传参数，如果请求时传递了该参数，则返回给商户时会回传该参数。支付宝只会在同步返回（包括跳转回商户网站）和异步通知时将该参数原样返回。本参数必须进行UrlEncode之后才可以发送给支付宝。
+	 * 公用回传参数。
+如果请求时传递了该参数，支付宝会在异步通知时将该参数原样返回。
+本参数必须进行UrlEncode之后才可以发送给支付宝。
 	 */
 	@ApiField("passback_params")
 	private String passbackParams;
 
 	/**
-	 * 销售产品码。
-如果签约的是当面付快捷版，则传OFFLINE_PAYMENT;
-其它支付宝当面付产品传FACE_TO_FACE_PAYMENT；
-不传默认使用FACE_TO_FACE_PAYMENT。
-说明：小程序支付场景无需传入，使用默认值即可。
+	 * 产品码。
+商家和支付宝签约的产品码。 枚举值（点击查看签约情况）：
+<a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/486/487">FACE_TO_FACE_PAYMENT</a>：当面付产品；
+默认值为FACE_TO_FACE_PAYMENT。
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -144,7 +152,10 @@ public class AlipayTradeCreateModel extends AlipayObject {
 
 	/**
 	 * 卖家支付宝用户ID。
-如果该值为空，则默认为商户签约账号对应的支付宝用户ID
+当需要指定收款账号时，通过该参数传入，如果该值为空，则默认为商户签约账号对应的支付宝用户ID。
+收款账号优先级规则：门店绑定的收款账户>请求传入的seller_id>商户签约账号对应的支付宝用户ID；
+注：直付通和机构间联场景下seller_id无需传入或者保持跟pid一致；
+如果传入的seller_id与pid不一致，需要联系支付宝小二配置收款关系；
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
@@ -156,47 +167,53 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private SettleInfo settleInfo;
 
 	/**
-	 *  商户门店编号，由商家自定义。需保证当前商户下唯一。
+	 * 商户门店编号。
+指商户创建门店时输入的门店编号。
 	 */
 	@ApiField("store_id")
 	private String storeId;
 
 	/**
-	 * 二级商户信息,当前只对特殊银行机构特定场景下使用此字段
+	 * 二级商户信息。
+直付通模式和机构间连模式下必传，其它场景下不需要传入。
 	 */
 	@ApiField("sub_merchant")
 	private SubMerchant subMerchant;
 
 	/**
-	 * 商品标题/交易标题/订单标题/订单关键字等。
+	 * 订单标题。
 注意：不可使用特殊字符，如 /，=，& 等。
 	 */
 	@ApiField("subject")
 	private String subject;
 
 	/**
-	 * 商户机具终端编号
+	 * 商户机具终端编号。
 	 */
 	@ApiField("terminal_id")
 	private String terminalId;
 
 	/**
-	 * 该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
+	 * 订单相对超时时间。
+该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
+当面付场景默认值为3h； 
+其它场景默认值为15d;
 	 */
 	@ApiField("timeout_express")
 	private String timeoutExpress;
 
 	/**
-	 * 订单总金额，单位为人民币（元），取值范围为 0.01~100000000.00，精确到小数点后两位。
-注意：如果同时传入了【打折金额】，【不可打折金额】，【订单总金额】三者，则必须满足如下条件：【订单总金额】=【打折金额】+【不可打折金额】
+	 * 订单总金额。
+单位为元，精确到小数点后两位，取值范围：[0.01,100000000] 。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
 
 	/**
-	 * 不可打折金额.
-不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
-如果该值未传入，但传入了【订单总金额】,【打折金额】，则该值默认为【订单总金额】-【打折金额】
+	 * 不可打折金额。
+不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。 
+如果同时传入了【可打折金额】、【不可打折金额】和【订单总金额】，则必须满足如下条件：【订单总金额】=【可打折金额】+【不可打折金额】。
+如果订单金额全部参与优惠计算，则【可打折金额】和【不可打折金额】都无需传入。
 	 */
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;

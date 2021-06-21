@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汇款信息验证
  *
  * @author auto create
- * @since 1.0, 2021-05-14 13:04:13
+ * @since 1.0, 2021-06-17 14:38:53
  */
 public class AlipayOverseasTransferCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8783133616192384442L;
+	private static final long serialVersionUID = 4619992129579241858L;
 
 	/**
 	 * 收端用户信息
@@ -62,6 +62,12 @@ public class AlipayOverseasTransferCertifyModel extends AlipayObject {
 	private String payerAgentId;
 
 	/**
+	 * 汇款二级目的
+	 */
+	@ApiField("sub_transfer_purpose")
+	private String subTransferPurpose;
+
+	/**
 	 * 汇款的金额
 	 */
 	@ApiField("transfer_from_amount")
@@ -72,6 +78,12 @@ public class AlipayOverseasTransferCertifyModel extends AlipayObject {
 	 */
 	@ApiField("transfer_from_region")
 	private String transferFromRegion;
+
+	/**
+	 * 汇款目的
+	 */
+	@ApiField("transfer_purpose")
+	private String transferPurpose;
 
 	/**
 	 * 收款的金额
@@ -141,6 +153,13 @@ public class AlipayOverseasTransferCertifyModel extends AlipayObject {
 		this.payerAgentId = payerAgentId;
 	}
 
+	public String getSubTransferPurpose() {
+		return this.subTransferPurpose;
+	}
+	public void setSubTransferPurpose(String subTransferPurpose) {
+		this.subTransferPurpose = subTransferPurpose;
+	}
+
 	public Money getTransferFromAmount() {
 		return this.transferFromAmount;
 	}
@@ -153,6 +172,13 @@ public class AlipayOverseasTransferCertifyModel extends AlipayObject {
 	}
 	public void setTransferFromRegion(String transferFromRegion) {
 		this.transferFromRegion = transferFromRegion;
+	}
+
+	public String getTransferPurpose() {
+		return this.transferPurpose;
+	}
+	public void setTransferPurpose(String transferPurpose) {
+		this.transferPurpose = transferPurpose;
 	}
 
 	public Money getTransferToAmount() {

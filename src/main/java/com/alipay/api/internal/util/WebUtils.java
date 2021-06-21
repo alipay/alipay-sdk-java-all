@@ -3,11 +3,28 @@ package com.alipay.api.internal.util;
 import com.alipay.api.AlipayConstants;
 import com.alipay.api.FileItem;
 
-import javax.net.ssl.*;
-import java.io.*;
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.KeyManager;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.StringWriter;
 import java.lang.reflect.Field;
-import java.net.*;
+import java.net.HttpURLConnection;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
 import java.net.Proxy.Type;
+import java.net.URL;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.security.SecureRandom;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
@@ -41,6 +58,32 @@ public class WebUtils {
      */
     private static volatile boolean needCheckServerTrusted = true;
 
+    static {
+
+        try {
+            ctx = SSLContext.getInstance("TLS");
+            ctx.init(new KeyManager[0], new TrustManager[] {new DefaultTrustManager()},
+                    new SecureRandom());
+
+            ctx.getClientSessionContext().setSessionTimeout(15);
+            ctx.getClientSessionContext().setSessionCacheSize(1000);
+
+            socketFactory = ctx.getSocketFactory();
+        } catch (Exception e) {
+
+        }
+
+        verifier = new HostnameVerifier() {
+            public boolean verify(String hostname, SSLSession session) {
+                return false; //不允许URL的主机名和服务器的标识主机名不匹配的情况
+            }
+        };
+
+    }
+
+    private WebUtils() {
+    }
+
     /**
      * 设置是否校验SSL服务端证书
      *
@@ -70,46 +113,6 @@ public class WebUtils {
         keepAliveTimeout = timeout;
     }
 
-    private static class DefaultTrustManager implements X509TrustManager {
-        public X509Certificate[] getAcceptedIssuers() {
-            return null;
-        }
-
-        public void checkClientTrusted(X509Certificate[] chain,
-                                       String authType) throws CertificateException {
-        }
-
-        public void checkServerTrusted(X509Certificate[] chain,
-                                       String authType) throws CertificateException {
-        }
-    }
-
-    static {
-
-        try {
-            ctx = SSLContext.getInstance("TLS");
-            ctx.init(new KeyManager[0], new TrustManager[] {new DefaultTrustManager()},
-                    new SecureRandom());
-
-            ctx.getClientSessionContext().setSessionTimeout(15);
-            ctx.getClientSessionContext().setSessionCacheSize(1000);
-
-            socketFactory = ctx.getSocketFactory();
-        } catch (Exception e) {
-
-        }
-
-        verifier = new HostnameVerifier() {
-            public boolean verify(String hostname, SSLSession session) {
-                return false; //不允许URL的主机名和服务器的标识主机名不匹配的情况
-            }
-        };
-
-    }
-
-    private WebUtils() {
-    }
-
     /**
      * 执行HTTP POST请求，可使用代理proxy。
      *
@@ -125,14 +128,14 @@ public class WebUtils {
      */
     public static String doPost(String url, Map<String, String> params, String charset,
                                 int connectTimeout, int readTimeout, String proxyHost,
-                                int proxyPort) throws IOException {
+                                int proxyPort, Map<String, String> headers) throws IOException {
         String ctype = "application/x-www-form-urlencoded;charset=" + charset;
         String query = buildQuery(params, charset);
         byte[] content = {};
         if (query != null) {
             content = query.getBytes(charset);
         }
-        return doPost(url, ctype, content, connectTimeout, readTimeout, proxyHost, proxyPort);
+        return doPost(url, ctype, content, connectTimeout, readTimeout, proxyHost, proxyPort, headers);
     }
 
     /**
@@ -149,7 +152,7 @@ public class WebUtils {
      * @throws IOException
      */
     public static String doPost(String url, String ctype, byte[] content, int connectTimeout,
-                                int readTimeout, String proxyHost, int proxyPort) throws IOException {
+                                int readTimeout, String proxyHost, int proxyPort, Map<String, String> headers) throws IOException {
         HttpURLConnection conn = null;
         OutputStream out = null;
         String rsp = null;
@@ -157,9 +160,9 @@ public class WebUtils {
             try {
                 conn = null;
                 if (!StringUtils.isEmpty(proxyHost)) {
-                    conn = getConnection(new URL(url), METHOD_POST, ctype, proxyHost, proxyPort);
+                    conn = getConnection(new URL(url), METHOD_POST, ctype, proxyHost, proxyPort, headers);
                 } else {
-                    conn = getConnection(new URL(url), METHOD_POST, ctype);
+                    conn = getConnection(new URL(url), METHOD_POST, ctype, headers);
                 }
                 conn.setConnectTimeout(connectTimeout);
                 conn.setReadTimeout(readTimeout);
@@ -208,9 +211,9 @@ public class WebUtils {
     public static String doPost(String url, Map<String, String> params,
                                 Map<String, FileItem> fileParams, String charset,
                                 int connectTimeout, int readTimeout, String proxyHost,
-                                int proxyPort) throws IOException {
+                                int proxyPort, Map<String, String> headers) throws IOException {
         if (fileParams == null || fileParams.isEmpty()) {
-            return doPost(url, params, charset, connectTimeout, readTimeout, proxyHost, proxyPort);
+            return doPost(url, params, charset, connectTimeout, readTimeout, proxyHost, proxyPort, headers);
         }
 
         String boundary = System.currentTimeMillis() + ""; // 随机分隔线
@@ -222,9 +225,9 @@ public class WebUtils {
                 String ctype = "multipart/form-data;boundary=" + boundary + ";charset=" + charset;
                 conn = null;
                 if (!StringUtils.isEmpty(proxyHost)) {
-                    conn = getConnection(new URL(url), METHOD_POST, ctype, proxyHost, proxyPort);
+                    conn = getConnection(new URL(url), METHOD_POST, ctype, proxyHost, proxyPort, headers);
                 } else {
-                    conn = getConnection(new URL(url), METHOD_POST, ctype);
+                    conn = getConnection(new URL(url), METHOD_POST, ctype, headers);
                 }
                 conn.setConnectTimeout(connectTimeout);
                 conn.setReadTimeout(readTimeout);
@@ -334,7 +337,7 @@ public class WebUtils {
             String ctype = "application/x-www-form-urlencoded;charset=" + charset;
             String query = buildQuery(params, charset);
             try {
-                conn = getConnection(buildGetUrl(url, query), METHOD_GET, ctype);
+                conn = getConnection(buildGetUrl(url, query), METHOD_GET, ctype, null);
             } catch (IOException e) {
                 Map<String, String> map = getParamsFromUrl(url);
                 AlipayLogger.logCommError(e, url, map.get("app_key"), map.get("method"), params);
@@ -358,17 +361,20 @@ public class WebUtils {
         return rsp;
     }
 
-    public static HttpURLConnection getConnection(URL url, String method, String ctype) throws IOException {
-        return getConnection(url, method, ctype, null);
+    public static HttpURLConnection getConnection(URL url, String method, String ctype,
+                                                  Map<String, String> headers) throws IOException {
+        return getConnection(url, method, ctype, null, headers);
     }
 
     public static HttpURLConnection getConnection(URL url, String method, String ctype,
-                                                  String proxyHost, int proxyPort) throws IOException {
+                                                  String proxyHost, int proxyPort,
+                                                  Map<String, String> headers) throws IOException {
         Proxy proxy = new Proxy(Type.HTTP, new InetSocketAddress(proxyHost, proxyPort));
-        return getConnection(url, method, ctype, proxy);
+        return getConnection(url, method, ctype, proxy, headers);
     }
 
-    private static HttpURLConnection getConnection(URL url, String method, String ctype, Proxy proxy) throws IOException {
+    private static HttpURLConnection getConnection(URL url, String method, String ctype, Proxy proxy,
+                                                   Map<String, String> headers) throws IOException {
         HttpURLConnection conn = null;
         if ("https".equals(url.getProtocol())) {
             HttpsURLConnection connHttps = null;
@@ -398,6 +404,11 @@ public class WebUtils {
         conn.setRequestProperty("Accept", "text/plain,text/xml,text/javascript,text/html");
         conn.setRequestProperty("User-Agent", "aop-sdk-java");
         conn.setRequestProperty("Content-Type", ctype);
+        if (headers != null) {
+            for (Entry<String, String> header : headers.entrySet()) {
+                conn.setRequestProperty(header.getKey(), header.getValue());
+            }
+        }
         return conn;
     }
 
@@ -603,10 +614,6 @@ public class WebUtils {
         return result;
     }
 
-    public String buildForm(String baseUrl, RequestParametersHolder requestHolder) {
-        return null;
-    }
-
     public static String buildForm(String baseUrl, Map<String, String> parameters) {
         StringBuilder sb = new StringBuilder();
         sb.append("<form name=\"punchout_form\" method=\"post\" action=\"");
@@ -675,6 +682,20 @@ public class WebUtils {
             keepAliveTimeoutField.setInt(httpClient, keepAliveTimeout);
         } catch (Throwable ignored) {
             //设置KeepAlive超时只是一种优化辅助手段，设置失败不应阻塞主链路，设置失败不应影响功能
+        }
+    }
+
+    private static class DefaultTrustManager implements X509TrustManager {
+        public X509Certificate[] getAcceptedIssuers() {
+            return null;
+        }
+
+        public void checkClientTrusted(X509Certificate[] chain,
+                                       String authType) throws CertificateException {
+        }
+
+        public void checkServerTrusted(X509Certificate[] chain,
+                                       String authType) throws CertificateException {
         }
     }
 }

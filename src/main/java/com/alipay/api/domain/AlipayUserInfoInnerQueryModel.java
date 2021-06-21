@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应用授权用户字段查询
  *
  * @author auto create
- * @since 1.0, 2021-01-25 10:28:42
+ * @since 1.0, 2021-06-15 17:19:33
  */
 public class AlipayUserInfoInnerQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5289921488493554731L;
+	private static final long serialVersionUID = 4852388421497647153L;
 
 	/**
 	 * 阿里集团统一ID
@@ -30,6 +30,12 @@ public class AlipayUserInfoInnerQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 支付宝号，由字母和数字组成的字符串
+	 */
+	@ApiField("zid")
+	private String zid;
 
 	public String getHavanaId() {
 		return this.havanaId;
@@ -50,6 +56,13 @@ public class AlipayUserInfoInnerQueryModel extends AlipayObject {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getZid() {
+		return this.zid;
+	}
+	public void setZid(String zid) {
+		this.zid = zid;
 	}
 
 }

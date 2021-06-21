@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育场景token生成处理器
  *
  * @author auto create
- * @since 1.0, 2021-01-11 16:54:33
+ * @since 1.0, 2021-06-01 14:04:45
  */
 public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4481271743419346765L;
+	private static final long serialVersionUID = 7378432129881856799L;
 
 	/**
 	 * 证件号码
@@ -56,7 +56,9 @@ Z:其它证件
 	private String studentName;
 
 	/**
-	 * 教育场景子业务
+	 * 教育场景子业务。SCHOOL_PAYMENT_REMOTE_OPEN_ACCOUNT：校园一脸通行集采邀请（生成的token用于集采邀请发送采集阶段）；
+SCHOOL_FACE_PASS_QUERY：校园一脸通行查询（生成的token用于查询同学的一脸通行开通状态）；
+SCHOOL_FACE_PASS_NAVIGATE：校园一脸通行跳转（生成的token用于个采开通阶段的用户信息填充）；
 	 */
 	@ApiField("sub_code")
 	private String subCode;

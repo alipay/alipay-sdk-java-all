@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 简单模式发票回传接口
  *
  * @author auto create
- * @since 1.0, 2021-01-04 11:23:42
+ * @since 1.0, 2021-06-17 15:29:23
  */
 public class AlipayEbppInvoiceSyncSimpleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6232944999328732521L;
+	private static final long serialVersionUID = 7115892425733686155L;
 
 	/**
 	 * 回传的发票信息

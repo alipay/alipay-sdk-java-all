@@ -14,14 +14,15 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-13 13:50:22
+ * @since 1.0, 2021-06-08 16:16:27
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7737143194583239391L;
+	private static final long serialVersionUID = 5616535636126578411L;
 
 	/** 
-	 * 银行卡冲退信息
+	 * 银行卡冲退信息。
+该字段默认不返回；
 	 */
 	@ApiField("deposit_back_info")
 	private DepositBackInfo depositBackInfo;
@@ -57,19 +58,22 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	private String outTradeNo;
 
 	/** 
-	 * 本次退款金额中买家退款金额
+	 * 本次退款金额中买家退款金额。
+该字段默认不返回；
 	 */
 	@ApiField("present_refund_buyer_amount")
 	private String presentRefundBuyerAmount;
 
 	/** 
-	 * 本次退款金额中平台优惠退款金额
+	 * 本次退款金额中平台优惠退款金额。
+该字段默认不返回；
 	 */
 	@ApiField("present_refund_discount_amount")
 	private String presentRefundDiscountAmount;
 
 	/** 
-	 * 本次退款金额中商家优惠退款金额
+	 * 本次退款金额中商家优惠退款金额。
+该字段默认不返回；
 	 */
 	@ApiField("present_refund_mdiscount_amount")
 	private String presentRefundMdiscountAmount;
@@ -94,7 +98,7 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 本次退款针对收款方的退收费金额；
-默认不返回该信息，需与支付宝约定后配置返回；
+只在机构间联模式下返回，其它场景下不返回该字段；
 	 */
 	@ApiField("refund_charge_amount")
 	private String refundChargeAmount;
@@ -122,7 +126,7 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 退款清算编号，用于清算对账使用；
-只在银行间联交易场景下返回该信息；
+只在机构间联模式下返回，其它场景下不返回该字段；
 	 */
 	@ApiField("refund_settlement_id")
 	private String refundSettlementId;

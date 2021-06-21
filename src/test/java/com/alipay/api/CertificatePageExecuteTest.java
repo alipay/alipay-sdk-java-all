@@ -20,7 +20,7 @@ public class CertificatePageExecuteTest {
 
     @Before
     public void setUp() throws Exception {
-        client = new DefaultAlipayClient(TestAccount.ProdCert.CERT_PARAMS);
+        client = new DefaultAlipayClient(TestAccount.ProdCert.getConfig());
     }
 
     @Test
