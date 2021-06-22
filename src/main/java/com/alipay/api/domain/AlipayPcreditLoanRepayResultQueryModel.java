@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditLoanRepayResultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8231268391765746456L;
+	private static final long serialVersionUID = 7496917825745544773L;
 
 	/**
 	 * 还款申请业务标准外部订单号，即商户端进行还款申请提交时所传入的商户端自己的订单号，必须保证与外部业务单号二者不能同时为空。

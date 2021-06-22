@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCdpRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6648729292717421115L;
+	private static final long serialVersionUID = 3798151913837916892L;
 
 	/**
 	 * 广告标识码

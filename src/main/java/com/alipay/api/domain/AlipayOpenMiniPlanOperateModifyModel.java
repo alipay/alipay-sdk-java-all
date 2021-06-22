@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniPlanOperateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5324565419448176265L;
+	private static final long serialVersionUID = 8443233916917695997L;
 
 	/**
 	 * 小程序投放方案场景码，目前只支持传入支付后推荐场景码：PAYMENT_SUCCESS

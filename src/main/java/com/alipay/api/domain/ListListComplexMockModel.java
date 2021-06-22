@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ListListComplexMockModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2565729837633978277L;
+	private static final long serialVersionUID = 5533979147645187354L;
 
 	/**
 	 * 复杂对象list

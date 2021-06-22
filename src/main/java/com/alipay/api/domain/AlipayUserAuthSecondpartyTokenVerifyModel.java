@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAuthSecondpartyTokenVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3442335377912287546L;
+	private static final long serialVersionUID = 6171597275254734638L;
 
 	/**
 	 * 二方登录token

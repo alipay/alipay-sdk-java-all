@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOverseasTravelShopSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7526826661916881449L;
+	private static final long serialVersionUID = 2589623558319891688L;
 
 	/**
 	 * 地图可以搜索的到的店铺详细地址。对于线下店铺，地址为必填，线上店铺为非必填。

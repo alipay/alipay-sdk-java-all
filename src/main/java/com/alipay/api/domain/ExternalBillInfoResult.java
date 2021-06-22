@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单详细信息
  *
  * @author auto create
- * @since 1.0, 2021-04-19 20:29:02
+ * @since 1.0, 2021-06-21 16:17:51
  */
 public class ExternalBillInfoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7463667422971438746L;
+	private static final long serialVersionUID = 7449198659798881438L;
+
+	/**
+	 * 账单id
+	 */
+	@ApiField("alipay_bill_id")
+	private String alipayBillId;
 
 	/**
 	 * 账期金额,单位元
@@ -52,7 +58,25 @@ public class ExternalBillInfoResult extends AlipayObject {
 	private Date expiryDate;
 
 	/**
-	 * PROPERTY_MNG("PROPERTY_MNG", "物业费"), PROPERTY_WATER("PROPERTY_WATER", "代收水费"), PROPERTY_ELECTRIC("PROPERTY_ELECTRIC", "代收电费"), PROPERTY_SHARE("PROPERTY_SHARE", "公共维护金"), PROPERTY_PARK_MNG("PROPERTY_PARK_MNG", "车位管理费"), PROPERTY_PARK_LEASE("PROPERTY_PARK_LEASE", "车位租赁费"), PROPERTY_ROOM_LEASE("PROPERTY_ROOM_LEASE", "房屋租赁费"), PROPERTY_TEMP_PARK("PROPERTY_TEMP_PARK", "临时停车费");
+	 * PROPERTY_MNG/物业费，
+PROPERTY_WATER/代收水费，
+PROPERTY_ELECTRIC/代收电费，
+PROPERTY_SHARE/公共维护金，
+PROPERTY_PARK_MNG/车位管理费，
+PROPERTY_PARK_LEASE /车位租赁费，
+PROPERTY_ROOM_LEASE/房屋租赁费，
+PROPERTY_TEMP_PARK/临时停车费，
+PROPERTY_PUBLIC_ENERGY/公共能耗费，
+PROPERTY_GAS/代收燃气费，
+PROPERTY_MAINTENANCE/维修服务费，
+PROPERTY_HOUSEKEEPING/家政服务费，
+PROPERTY_GREENING/绿化服务费，
+PROPERTY_STORAGE_ROOM/储藏室物业费，
+PROPERTY_DECORATION_DEPOSIT/装修押金，
+PROPERTY_REFUSE_COLLECTION/垃圾清运费，
+PROPERTY_PAID_SERVICE/有偿服务费，
+PROPERTY_WATER_SHARING/水费公摊费，
+PROPERTY_ELECTRIC_SHARING/电费公摊费。
 	 */
 	@ApiField("fee_type")
 	private String feeType;
@@ -112,6 +136,18 @@ public class ExternalBillInfoResult extends AlipayObject {
 	private String serviceAmount;
 
 	/**
+	 * INIT("待缴")
+WAIT_PAY("处理中"),
+FINISH_PAY("已缴"),
+FAIL("支付失败"),
+REFUND("异常退款"),
+INVALID("失效"),
+CHANNEL_FINISH_PAY ("外部渠道支付");
+	 */
+	@ApiField("status")
+	private String status;
+
+	/**
 	 * 子业务类型
 	 */
 	@ApiField("sub_biz_type")
@@ -122,6 +158,13 @@ public class ExternalBillInfoResult extends AlipayObject {
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
+
+	public String getAlipayBillId() {
+		return this.alipayBillId;
+	}
+	public void setAlipayBillId(String alipayBillId) {
+		this.alipayBillId = alipayBillId;
+	}
 
 	public String getBillAmount() {
 		return this.billAmount;
@@ -233,6 +276,13 @@ public class ExternalBillInfoResult extends AlipayObject {
 	}
 	public void setServiceAmount(String serviceAmount) {
 		this.serviceAmount = serviceAmount;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getSubBizType() {

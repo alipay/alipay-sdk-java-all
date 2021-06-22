@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeCustomsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1339129735238954535L;
+	private static final long serialVersionUID = 3769261594476879942L;
 
 	/** 
 	 * 不存在记录的报关请求号。多个值用逗号分隔，单次最多10个;每个报关请求号String(32)

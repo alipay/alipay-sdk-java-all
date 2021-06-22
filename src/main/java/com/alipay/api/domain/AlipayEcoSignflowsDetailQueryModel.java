@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoSignflowsDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4495499317623497473L;
+	private static final long serialVersionUID = 3361172476161443519L;
 
 	/**
 	 * 流程id，通过 <a href ="https://opendocs.alipay.com/apis/api_50/alipay.eco.contract.signflows.create">创建电子合同签署流程</a>(alipay.eco.contract.signflows.create)接口获取。

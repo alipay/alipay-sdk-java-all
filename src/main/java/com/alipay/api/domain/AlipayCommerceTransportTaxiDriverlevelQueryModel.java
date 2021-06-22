@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询司机等级
  *
  * @author auto create
- * @since 1.0, 2020-07-09 17:01:45
+ * @since 1.0, 2021-06-21 13:58:55
  */
 public class AlipayCommerceTransportTaxiDriverlevelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3219245728735122563L;
+	private static final long serialVersionUID = 6446167726832188866L;
 
 	/**
 	 * 固定值“JUDI”

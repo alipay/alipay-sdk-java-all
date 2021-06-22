@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RestTime extends AlipayObject {
 
-	private static final long serialVersionUID = 8639323382364471666L;
+	private static final long serialVersionUID = 7888582395866883562L;
 
 	/**
 	 * 扩展参数，json格式，由双方约定取值
