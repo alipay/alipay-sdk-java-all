@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据标签组发消息接口
  *
  * @author auto create
- * @since 1.0, 2020-04-08 15:26:03
+ * @since 1.0, 2021-06-23 10:49:22
  */
 public class AlipayOpenPublicMessageLabelSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7853452172797629716L;
+	private static final long serialVersionUID = 1734118929391914884L;
 
 	/**
 	 * 根据标签圈人的过滤器

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardBinActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8815193944622756743L;
+	private static final long serialVersionUID = 8567429167844199537L;
 
 	/**
 	 * 银行标准缩写 eg： 工行ICBC，农行ABC

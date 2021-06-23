@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆驶出上送接口
  *
  * @author auto create
- * @since 1.0, 2021-06-18 16:44:56
+ * @since 1.0, 2021-06-22 12:13:21
  */
 public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5654532185385621937L;
+	private static final long serialVersionUID = 8861211893699222382L;
 
 	/**
 	 * 车牌颜色，枚举支持：

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.content.analyze response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-20 00:40:03
+ * @since 1.0, 2021-06-23 16:20:22
  */
 public class AlipaySecurityRiskContentAnalyzeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4629512115287647919L;
+	private static final long serialVersionUID = 8847268535941419392L;
 
 	/** 
 	 * 内容ID，用于查询异步识别结果时作为查询ID
@@ -63,6 +63,12 @@ RECOVER("恢复数据，将误判断的内容，恢复回来")
 	@ApiField("result_action")
 	private String resultAction;
 
+	/** 
+	 * 命中标签用逗号分割
+	 */
+	@ApiField("risk_labels")
+	private String riskLabels;
+
 	public void setAppSceneDataId(String appSceneDataId) {
 		this.appSceneDataId = appSceneDataId;
 	}
@@ -96,6 +102,13 @@ RECOVER("恢复数据，将误判断的内容，恢复回来")
 	}
 	public String getResultAction( ) {
 		return this.resultAction;
+	}
+
+	public void setRiskLabels(String riskLabels) {
+		this.riskLabels = riskLabels;
+	}
+	public String getRiskLabels( ) {
+		return this.riskLabels;
 	}
 
 }

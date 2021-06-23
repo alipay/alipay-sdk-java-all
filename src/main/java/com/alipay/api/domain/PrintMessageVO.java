@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PrintMessageVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3423278987494715887L;
+	private static final long serialVersionUID = 2155992588487759995L;
 
 	/**
 	 * 打印指令类型

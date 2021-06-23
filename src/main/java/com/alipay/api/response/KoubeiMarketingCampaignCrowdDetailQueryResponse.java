@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingCampaignCrowdDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6524697757444855183L;
+	private static final long serialVersionUID = 5464499974615444565L;
 
 	/** 
 	 * op：表示操作符，目前支持 EQ（相等）、GT（大于）、GTEQ（大于等于）、LT（小于）、LTEQ（小于等于）、NEQ（不等）、LIKE（模糊匹配）、IN（在枚举范围内）、NOTIN（不在枚举范围内）、BETWEEN（范围比较）、LEFTDAYS（几天以内）、RIGHTDAYS（几天以外）、LOCATE（地理位置比较）LBS（地图位置数据）；

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计算所选标签人数
  *
  * @author auto create
- * @since 1.0, 2020-08-20 14:01:20
+ * @since 1.0, 2021-06-23 15:39:38
  */
 public class AlipayMarketingCampaignRuleCrowdCountModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5472238597344956898L;
+	private static final long serialVersionUID = 2578786482562353479L;
 
 	/**
 	 * 签约商户下属机构唯一编号

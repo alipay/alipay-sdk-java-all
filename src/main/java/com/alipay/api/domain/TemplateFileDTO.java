@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateFileDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3358479433422188467L;
+	private static final long serialVersionUID = 8336589512715642742L;
 
 	/**
 	 * 是否支持转赠，当设置为可转赠则可以在支付宝卡包中点击转赠按钮，将拥有的券转赠给其他用户。支持以 $动态参数$ 形式的自定义动态参数传值。

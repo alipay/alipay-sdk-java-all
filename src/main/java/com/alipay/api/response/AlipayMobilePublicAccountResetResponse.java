@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.public.account.reset response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-07 16:48:11
+ * @since 1.0, 2021-06-23 14:42:32
  */
 public class AlipayMobilePublicAccountResetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7825868311166452214L;
+	private static final long serialVersionUID = 3391391545139518138L;
 
 	/** 
 	 * 这是新账户绑定成功后产生的协议号

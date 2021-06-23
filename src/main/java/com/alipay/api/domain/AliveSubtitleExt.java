@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁直播字幕纠正扩展模型
  *
  * @author auto create
- * @since 1.0, 2021-05-18 17:38:51
+ * @since 1.0, 2021-06-23 10:45:08
  */
 public class AliveSubtitleExt extends AlipayObject {
 
-	private static final long serialVersionUID = 8829582488725246867L;
+	private static final long serialVersionUID = 1531159518642441542L;
+
+	/**
+	 * 字幕命中特殊行为逻辑，例如口播关注
+	 */
+	@ApiField("action_type")
+	private String actionType;
+
+	/**
+	 * base64 url
+	 */
+	@ApiField("action_url")
+	private String actionUrl;
 
 	/**
 	 * 当前句子识别结果的置信度，取值范围：[0.0,1.0]。值越大表示置信度越高
@@ -58,6 +70,20 @@ public class AliveSubtitleExt extends AlipayObject {
 	 */
 	@ApiField("sub_index")
 	private Long subIndex;
+
+	public String getActionType() {
+		return this.actionType;
+	}
+	public void setActionType(String actionType) {
+		this.actionType = actionType;
+	}
+
+	public String getActionUrl() {
+		return this.actionUrl;
+	}
+	public void setActionUrl(String actionUrl) {
+		this.actionUrl = actionUrl;
+	}
 
 	public String getConfidence() {
 		return this.confidence;

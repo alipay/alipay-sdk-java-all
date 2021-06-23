@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销抽奖活动凭证创建
  *
  * @author auto create
- * @since 1.0, 2020-08-20 14:01:39
+ * @since 1.0, 2021-06-23 15:39:30
  */
 public class AlipayMarketingCampaignCertCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1514561275963943796L;
+	private static final long serialVersionUID = 5135262915586976418L;
 
 	/**
 	 * 凭证批次名称

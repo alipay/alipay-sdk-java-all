@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataDataserviceDatapropertyBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8411888134788891589L;
+	private static final long serialVersionUID = 4742417747224447574L;
 
 	/**
 	 * 描述针对datachannel需要执行的操作

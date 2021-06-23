@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更改现金活动状态
  *
  * @author auto create
- * @since 1.0, 2020-08-20 14:00:37
+ * @since 1.0, 2021-06-23 15:30:53
  */
 public class AlipayMarketingCampaignCashStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1665738528863117143L;
+	private static final long serialVersionUID = 7568944667486322177L;
 
 	/**
 	 * 金活动修改后的状态。支持修改为：

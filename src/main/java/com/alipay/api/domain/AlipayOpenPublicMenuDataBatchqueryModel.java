@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜单分析数据查询
  *
  * @author auto create
- * @since 1.0, 2020-04-07 10:48:23
+ * @since 1.0, 2021-06-23 10:45:49
  */
 public class AlipayOpenPublicMenuDataBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3461765446924688958L;
+	private static final long serialVersionUID = 1715965522875455487L;
 
 	/**
 	 * 数据开始日期，时间格式为 "yyyyMMdd" 。

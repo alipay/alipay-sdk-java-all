@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnttechBlockchainFinanceTrusplePersoncreditinquirySubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2785475553338284383L;
+	private static final long serialVersionUID = 6781797371136979927L;
 
 	/**
 	 * 资料附件列表

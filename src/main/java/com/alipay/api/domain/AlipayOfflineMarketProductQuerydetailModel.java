@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过该接口可以查询商户录入的指定商品详细信息
  *
  * @author auto create
- * @since 1.0, 2017-02-27 13:05:23
+ * @since 1.0, 2021-06-22 19:13:31
  */
 public class AlipayOfflineMarketProductQuerydetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1228565727939819616L;
+	private static final long serialVersionUID = 4624288241532517811L;
 
 	/**
 	 * 商品ID

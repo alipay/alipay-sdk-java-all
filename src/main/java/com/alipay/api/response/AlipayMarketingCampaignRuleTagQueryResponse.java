@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.rule.tag.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-20 14:01:02
+ * @since 1.0, 2021-06-23 15:40:00
  */
 public class AlipayMarketingCampaignRuleTagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2764344117515375599L;
+	private static final long serialVersionUID = 4616748393363567369L;
 
 	/** 
 	 * {

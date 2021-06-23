@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.public.label.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-07 10:47:12
+ * @since 1.0, 2021-06-23 14:45:20
  */
 public class AlipayMobilePublicLabelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2331747154543999957L;
+	private static final long serialVersionUID = 7771974215495676751L;
 
 	/** 
 	 * 结果码

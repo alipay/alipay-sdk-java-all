@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 为服务窗合作伙伴（如YunOS），提供查询所有服务窗的菜单的功能
  *
  * @author auto create
- * @since 1.0, 2020-04-07 16:56:55
+ * @since 1.0, 2021-06-23 10:51:39
  */
 public class AlipayOpenPublicPartnerMenuQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8456663536377587134L;
+	private static final long serialVersionUID = 7518824981846583935L;
 
 	/**
 	 * 服务窗id

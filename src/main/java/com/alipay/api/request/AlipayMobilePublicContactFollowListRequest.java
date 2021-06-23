@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.contact.follow.list request
  * 
  * @author auto create
- * @since 1.0, 2020-04-07 16:56:10
+ * @since 1.0, 2021-06-23 14:42:01
  */
 public class AlipayMobilePublicContactFollowListRequest implements AlipayRequest<AlipayMobilePublicContactFollowListResponse> {
 

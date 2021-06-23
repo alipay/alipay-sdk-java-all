@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 中奖信息查询
  *
  * @author auto create
- * @since 1.0, 2020-12-29 16:55:50
+ * @since 1.0, 2021-06-23 15:39:11
  */
 public class AlipayMarketingCampaignPrizeSendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3334661245688366437L;
+	private static final long serialVersionUID = 5726678172629646877L;
 
 	/**
 	 * 活动id

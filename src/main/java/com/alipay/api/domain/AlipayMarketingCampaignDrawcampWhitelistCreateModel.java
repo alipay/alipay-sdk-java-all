@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销抽奖活动白名单创建
  *
  * @author auto create
- * @since 1.0, 2020-08-20 13:51:00
+ * @since 1.0, 2021-06-23 15:41:04
  */
 public class AlipayMarketingCampaignDrawcampWhitelistCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1751381488451591985L;
+	private static final long serialVersionUID = 4774944315991683732L;
 
 	/**
 	 * 活动id

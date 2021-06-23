@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.content.result.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2021-06-23 16:20:22
  */
 public class AlipaySecurityRiskContentResultGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2362298764131935555L;
+	private static final long serialVersionUID = 7526285488264711311L;
 
 	/** 
 	 * 命中结果详情
@@ -32,6 +32,12 @@ REJECTED("被拒绝的数据，比如内容出现违禁词；不能出现在我�
 	@ApiField("result_action")
 	private String resultAction;
 
+	/** 
+	 * 输出命中的标签，用逗号分割
+	 */
+	@ApiField("risk_labels")
+	private String riskLabels;
+
 	public void setHitDetectItems(List<InfoSecHitDetectItem> hitDetectItems) {
 		this.hitDetectItems = hitDetectItems;
 	}
@@ -44,6 +50,13 @@ REJECTED("被拒绝的数据，比如内容出现违禁词；不能出现在我�
 	}
 	public String getResultAction( ) {
 		return this.resultAction;
+	}
+
+	public void setRiskLabels(String riskLabels) {
+		this.riskLabels = riskLabels;
+	}
+	public String getRiskLabels( ) {
+		return this.riskLabels;
 	}
 
 }
