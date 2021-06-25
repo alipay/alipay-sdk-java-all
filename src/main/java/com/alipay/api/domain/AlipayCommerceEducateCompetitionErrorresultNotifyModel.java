@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateCompetitionErrorresultNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7525525491839478341L;
+	private static final long serialVersionUID = 5625534114462848355L;
 
 	/**
 	 * 异常类型

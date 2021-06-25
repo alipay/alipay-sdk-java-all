@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * mydds 数据服务处理器
  *
  * @author auto create
- * @since 1.0, 2017-10-02 18:21:11
+ * @since 1.0, 2021-06-24 14:22:07
  */
 public class KoubeiMarketingDataBizadviserMyddsreportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6535411422954589365L;
+	private static final long serialVersionUID = 4746453932868317627L;
 
 	/**
 	 * req_parameters是请求参数汇集的一个json串和格式如下；

@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.MpPrizeSendOrder;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.drawcamp.trigger response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-29 17:12:25
+ * @since 1.0, 2021-06-24 20:50:24
  */
 public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7266349441387979131L;
+	private static final long serialVersionUID = 7766466944871151551L;
 
 	/** 
 	 * 活动id
@@ -57,6 +60,12 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 	private String prizeId;
 
 	/** 
+	 * 发奖流水
+	 */
+	@ApiField("prize_log_id")
+	private String prizeLogId;
+
+	/** 
 	 * 奖品名称
 	 */
 	@ApiField("prize_name")
@@ -67,6 +76,13 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 	 */
 	@ApiField("repeat_trigger_flag")
 	private String repeatTriggerFlag;
+
+	/** 
+	 * 中奖流水：仅在中奖数量大于1条时生效；中奖数量为1条时读取同级数据。
+	 */
+	@ApiListField("send_order_list")
+	@ApiField("mp_prize_send_order")
+	private List<MpPrizeSendOrder> sendOrderList;
 
 	/** 
 	 * 是否中奖结果状态，如果为true时返回的结果中的其他字段非空，否则返回的其他字段为空
@@ -123,6 +139,13 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 		return this.prizeId;
 	}
 
+	public void setPrizeLogId(String prizeLogId) {
+		this.prizeLogId = prizeLogId;
+	}
+	public String getPrizeLogId( ) {
+		return this.prizeLogId;
+	}
+
 	public void setPrizeName(String prizeName) {
 		this.prizeName = prizeName;
 	}
@@ -135,6 +158,13 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 	}
 	public String getRepeatTriggerFlag( ) {
 		return this.repeatTriggerFlag;
+	}
+
+	public void setSendOrderList(List<MpPrizeSendOrder> sendOrderList) {
+		this.sendOrderList = sendOrderList;
+	}
+	public List<MpPrizeSendOrder> getSendOrderList( ) {
+		return this.sendOrderList;
 	}
 
 	public void setTriggerResult(Boolean triggerResult) {

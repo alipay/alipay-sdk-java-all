@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 宠物险创建宠物档案
  *
  * @author auto create
- * @since 1.0, 2020-12-29 11:14:51
+ * @since 1.0, 2021-06-25 09:45:21
  */
 public class AlipayInsSceneInsassetprodPetprofileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6328768334279432694L;
+	private static final long serialVersionUID = 6716261278387613814L;
 
 	/**
 	 * 渠道类型

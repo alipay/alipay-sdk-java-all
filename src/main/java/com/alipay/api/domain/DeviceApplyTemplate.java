@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeviceApplyTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 8793138233252437849L;
+	private static final long serialVersionUID = 2642369522278162779L;
 
 	/**
 	 * 实际申请数量，取值1到500之间，最多不能超过500。补充说明：一次能申请的机具模板种类最多为10，也就是device_list大小为10

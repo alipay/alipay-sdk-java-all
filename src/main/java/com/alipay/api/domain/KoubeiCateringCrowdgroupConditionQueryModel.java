@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv创建用户规则查询
  *
  * @author auto create
- * @since 1.0, 2018-04-04 11:04:02
+ * @since 1.0, 2021-06-24 14:24:48
  */
 public class KoubeiCateringCrowdgroupConditionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3126613953334118199L;
+	private static final long serialVersionUID = 5136893124222836537L;
 
 	/**
 	 * 门店id

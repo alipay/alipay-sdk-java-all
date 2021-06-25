@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCustomertagSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4648774466324683533L;
+	private static final long serialVersionUID = 6323929173469371327L;
 
 	/**
 	 * 业务场景码。由支付宝产品经理分配，相当于存储标签的使用凭证。

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportWorldVirtualcardBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6489367262869413172L;
+	private static final long serialVersionUID = 1822587452379867297L;
 
 	/** 
 	 * 虚拟卡信息查询结果列表

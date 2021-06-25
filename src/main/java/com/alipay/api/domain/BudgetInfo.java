@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BudgetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1894555512366578698L;
+	private static final long serialVersionUID = 4525291413554935772L;
 
 	/**
 	 * 预算数量

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExerciseUserMappingDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7855619668141249943L;
+	private static final long serialVersionUID = 2374921666839261795L;
 
 	/**
 	 * 健身用户id

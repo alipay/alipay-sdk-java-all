@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 教育缴费定向同步接口
  *
  * @author auto create
- * @since 1.0, 2021-06-13 19:08:45
+ * @since 1.0, 2021-06-24 10:31:19
  */
 public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3272466768147872753L;
+	private static final long serialVersionUID = 5853657285711431416L;
 
 	/**
 	 * 如果所在学校分校区，传入分校区编号，不传默认为总校或无分校区

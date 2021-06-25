@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.tool.fengdie.sites.delete request
  * 
  * @author auto create
- * @since 1.0, 2021-06-09 22:21:28
+ * @since 1.0, 2021-06-25 21:55:18
  */
 public class AlipayMarketingToolFengdieSitesDeleteRequest implements AlipayRequest<AlipayMarketingToolFengdieSitesDeleteResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EndowmentOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 2166583915511172482L;
+	private static final long serialVersionUID = 1766247664181818983L;
 
 	/**
 	 * apply_amount：申购金额，以分为单位

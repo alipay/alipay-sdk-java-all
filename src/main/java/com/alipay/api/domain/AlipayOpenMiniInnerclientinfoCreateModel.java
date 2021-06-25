@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新增小程序端信息
  *
  * @author auto create
- * @since 1.0, 2021-06-21 10:40:20
+ * @since 1.0, 2021-06-24 16:32:39
  */
 public class AlipayOpenMiniInnerclientinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5526826531292169651L;
+	private static final long serialVersionUID = 8183772611471754621L;
 
 	/**
 	 * 端ID，不可重复，接入方需要和小程序平台约定格式
@@ -30,6 +30,12 @@ public class AlipayOpenMiniInnerclientinfoCreateModel extends AlipayObject {
 	 */
 	@ApiField("bundle_prefix")
 	private String bundlePrefix;
+
+	/**
+	 * 租户code，手淘租户:taobao，钉钉租户:dingding；参数不填默认为手淘租户
+	 */
+	@ApiField("inst_code")
+	private String instCode;
 
 	public String getBundleId() {
 		return this.bundleId;
@@ -50,6 +56,13 @@ public class AlipayOpenMiniInnerclientinfoCreateModel extends AlipayObject {
 	}
 	public void setBundlePrefix(String bundlePrefix) {
 		this.bundlePrefix = bundlePrefix;
+	}
+
+	public String getInstCode() {
+		return this.instCode;
+	}
+	public void setInstCode(String instCode) {
+		this.instCode = instCode;
 	}
 
 }

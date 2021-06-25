@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApInvoiceOrderRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3751462286794123136L;
+	private static final long serialVersionUID = 6651336991546643228L;
 
 	/**
 	 * （invoiceType !=07时，必填；修改操作必填）发票行信息，发票行数大于等于1，不能超过8

@@ -32,4 +32,19 @@ public class EncryptTest {
         assertThat(plaintext, containsString("test1234567"));
     }
 
+
+    @Test
+    public void testAESV2() throws AlipayApiException {
+
+        String raw = "test1234567";
+        //given
+        String chipertext = AlipayEncrypt.encryptContent(raw, "AES_V2", "aa4BtZ4tspm2wnXLb1ThQA==", "utf-8");
+
+        String plaintext = AlipayEncrypt.decryptContent(chipertext, "AES_V2", "aa4BtZ4tspm2wnXLb1ThQA==", "utf-8");
+
+        assertThat(plaintext, containsString(raw));
+
+    }
+
+
 }

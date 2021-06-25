@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.editor.get response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-09 22:52:36
+ * @since 1.0, 2021-06-25 21:55:55
  */
 public class AlipayMarketingToolFengdieEditorGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7829841331927858518L;
+	private static final long serialVersionUID = 2595748641355125676L;
 
 	/** 
 	 * 唤起云凤蝶站点编辑器返回模型，包含 编辑器具体免登的url

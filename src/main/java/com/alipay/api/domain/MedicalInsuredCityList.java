@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalInsuredCityList extends AlipayObject {
 
-	private static final long serialVersionUID = 2746584866843337384L;
+	private static final long serialVersionUID = 3124638183954369963L;
 
 	/**
 	 * 参保地城市编码(国标)

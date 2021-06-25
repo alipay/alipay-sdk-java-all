@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommercePoiPowerbanklocationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2269913622968329857L;
+	private static final long serialVersionUID = 4879546615232662649L;
 
 	/** 
 	 * 充电宝位置

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 景区订单同步
  *
  * @author auto create
- * @since 1.0, 2021-04-27 21:34:40
+ * @since 1.0, 2021-06-25 20:25:29
  */
 public class AlipayBusinessOrderOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2354837863681477273L;
+	private static final long serialVersionUID = 6523346413972447747L;
 
 	/**
 	 * 金额
@@ -70,7 +70,9 @@ DAY("DAY","当日购")
 	private String orderId;
 
 	/**
-	 * 支付宝小程序订单详情页链接
+	 * 订单详情页链接，必须是alipay://开头的小程序scheme链接，如何拼接小程序页面链接参考https://opensupport.alipay.com/support/helpcenter/142/201602496413。
+
+注意：scheme链接中的page参数值必须做URL ENCODE，否则接口会报错！
 	 */
 	@ApiField("order_link")
 	private String orderLink;
@@ -218,7 +220,7 @@ H5("H5", "H5")
 	private String source;
 
 	/**
-	 * ISV
+	 * 服务商的标识，需要ISV提前联系支付宝技术分配该值。配置时间较长，请提前联系
 	 */
 	@ApiField("source_system")
 	private String sourceSystem;

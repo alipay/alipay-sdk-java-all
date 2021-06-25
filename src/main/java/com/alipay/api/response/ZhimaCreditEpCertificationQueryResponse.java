@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-11 17:10:16
+ * @since 1.0, 2021-06-24 15:39:40
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3744926783731675987L;
+	private static final long serialVersionUID = 5171475848828366327L;
 
 	/** 
 	 * 授权状态，从用户授权开始计时，时间窗口3天

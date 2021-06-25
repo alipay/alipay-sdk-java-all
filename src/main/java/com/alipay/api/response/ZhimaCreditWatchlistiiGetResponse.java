@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditWatchlistiiGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5559323593314739457L;
+	private static final long serialVersionUID = 3179532818792612442L;
 
 	/** 
 	 * 芝麻信用对于每一次请求返回的业务号。后续可以通过此业务号进行对账
