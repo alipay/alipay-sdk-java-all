@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 归属商户信息
  *
  * @author auto create
- * @since 1.0, 2021-06-25 14:09:26
+ * @since 1.0, 2021-06-30 16:09:35
  */
 public class BelongMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6584951259911485992L;
+	private static final long serialVersionUID = 8747535225755843279L;
 
 	/**
 	 * 合作业务类型,默认为ISV_FOR_MERCHANT

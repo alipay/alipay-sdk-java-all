@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsDataHospitalQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2769569883598997459L;
+	private static final long serialVersionUID = 2681892435653216472L;
 
 	/** 
 	 * 名称相似度Top10的医院

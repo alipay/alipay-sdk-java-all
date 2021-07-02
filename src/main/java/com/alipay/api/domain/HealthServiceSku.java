@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HealthServiceSku extends AlipayObject {
 
-	private static final long serialVersionUID = 5193755141691813812L;
+	private static final long serialVersionUID = 7815113746415541366L;
 
 	/**
 	 * 商家sku条形码

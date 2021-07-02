@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 欺诈信息验证
  *
  * @author auto create
- * @since 1.0, 2017-10-13 19:33:16
+ * @since 1.0, 2021-06-29 15:30:24
  */
 public class ZhimaCreditAntifraudVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2352861954746326572L;
+	private static final long serialVersionUID = 1112627141243136737L;
 
 	/**
 	 * 地址信息。省+市+区/县+详细地址，长度不超过256，不要包含特殊字符，如","，"\"，"|"，"&"，"^"

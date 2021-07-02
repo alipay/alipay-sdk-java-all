@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.jobworth.scene.use request
  * 
  * @author auto create
- * @since 1.0, 2021-06-25 17:12:37
+ * @since 1.0, 2021-06-28 14:50:21
  */
 public class ZhimaCustomerJobworthSceneUseRequest implements AlipayRequest<ZhimaCustomerJobworthSceneUseResponse> {
 

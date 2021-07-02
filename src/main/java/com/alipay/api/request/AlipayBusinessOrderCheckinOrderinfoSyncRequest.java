@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayOpenMiniActivityModuleQueryModel;
+import com.alipay.api.domain.AlipayBusinessOrderCheckinOrderinfoSyncModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayOpenMiniActivityModuleQueryResponse;
+import com.alipay.api.response.AlipayBusinessOrderCheckinOrderinfoSyncResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.open.mini.activity.module.query request
+ * ALIPAY API: alipay.business.order.checkin.orderinfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-10-16 15:52:01
+ * @since 1.0, 2021-07-02 09:21:25
  */
-public class AlipayOpenMiniActivityModuleQueryRequest implements AlipayRequest<AlipayOpenMiniActivityModuleQueryResponse> {
+public class AlipayBusinessOrderCheckinOrderinfoSyncRequest implements AlipayRequest<AlipayBusinessOrderCheckinOrderinfoSyncResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 小程序活动会场查询
+	* 酒店住中订单同步
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayOpenMiniActivityModuleQueryRequest implements AlipayRequest<A
 	}
 
 	public String getApiMethodName() {
-		return "alipay.open.mini.activity.module.query";
+		return "alipay.business.order.checkin.orderinfo.sync";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayOpenMiniActivityModuleQueryRequest implements AlipayRequest<A
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayOpenMiniActivityModuleQueryResponse> getResponseClass() {
-		return AlipayOpenMiniActivityModuleQueryResponse.class;
+	public Class<AlipayBusinessOrderCheckinOrderinfoSyncResponse> getResponseClass() {
+		return AlipayBusinessOrderCheckinOrderinfoSyncResponse.class;
 	}
 	
 

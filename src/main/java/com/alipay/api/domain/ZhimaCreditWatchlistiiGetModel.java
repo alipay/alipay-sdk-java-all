@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业关注名单
  *
  * @author auto create
- * @since 1.0, 2017-11-14 17:59:20
+ * @since 1.0, 2021-06-29 15:30:50
  */
 public class ZhimaCreditWatchlistiiGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1332385865531482661L;
+	private static final long serialVersionUID = 8722778447441853289L;
 
 	/**
 	 * 产品码，直接使用［示例］给出的值

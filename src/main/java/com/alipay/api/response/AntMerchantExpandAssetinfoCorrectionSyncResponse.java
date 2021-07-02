@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandAssetinfoCorrectionSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5382126386793113224L;
+	private static final long serialVersionUID = 2788415455275638658L;
 
 	/** 
 	 * 物料更正请求响应。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动任务权益发放
  *
  * @author auto create
- * @since 1.0, 2019-10-12 16:18:43
+ * @since 1.0, 2021-06-28 17:01:29
  */
 public class AlipayOpenMiniActivityTaskequityReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2813825234562786685L;
+	private static final long serialVersionUID = 3467121419896974982L;
 
 	/**
 	 * 任务完成的业务时间，用于做权益发放的原始时间戳，将以任务完成时间为准发放权益

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WelfareEcoStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1697316386271328552L;
+	private static final long serialVersionUID = 2472532891527949633L;
 
 	/**
 	 * 门店具体位置（中文）

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付邀请员工
  *
  * @author auto create
- * @since 1.0, 2021-06-09 11:02:05
+ * @since 1.0, 2021-06-30 22:53:46
  */
 public class AlipayFundJointaccountMemberBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8743816788691995363L;
+	private static final long serialVersionUID = 3772613257797161885L;
 
 	/**
 	 * 账本ID

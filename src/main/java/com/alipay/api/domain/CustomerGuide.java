@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户引导配置
  *
  * @author auto create
- * @since 1.0, 2021-06-25 14:08:30
+ * @since 1.0, 2021-06-30 16:09:35
  */
 public class CustomerGuide extends AlipayObject {
 
-	private static final long serialVersionUID = 8433122173227563192L;
+	private static final long serialVersionUID = 1498159414935559676L;
 
 	/**
 	 * 卡包详情页可跳转的小程序appId。 限制： 该appId归属的pid必须和当前商户保持一致。 目前mini_app_id、store_ids、real_shop_ids必须三选一。

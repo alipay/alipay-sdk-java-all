@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportVehicleownerBlacklistSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8251667286843524589L;
+	private static final long serialVersionUID = 2683459275117312147L;
 
 	/**
 	 * 支付宝生成的签约协议编号

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCityservicePolymerSyncSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7459284581514232823L;
+	private static final long serialVersionUID = 4332214555619785761L;
 
 	
 

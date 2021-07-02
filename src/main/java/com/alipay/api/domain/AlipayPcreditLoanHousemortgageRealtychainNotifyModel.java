@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 借呗-房抵贷-房产链通知借呗
  *
  * @author auto create
- * @since 1.0, 2021-02-01 13:49:44
+ * @since 1.0, 2021-06-29 14:03:46
  */
 public class AlipayPcreditLoanHousemortgageRealtychainNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6532859781387498587L;
+	private static final long serialVersionUID = 5561228557514479117L;
 
 	/**
 	 * 合同签署人-用户签约事件必传
