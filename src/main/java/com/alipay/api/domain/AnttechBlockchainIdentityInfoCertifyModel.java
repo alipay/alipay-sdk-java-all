@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业身份信息验证企业四要素，个人两要素验证
  *
  * @author auto create
- * @since 1.0, 2020-12-30 20:20:59
+ * @since 1.0, 2021-07-06 10:48:26
  */
 public class AnttechBlockchainIdentityInfoCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3387625139473946916L;
+	private static final long serialVersionUID = 6559945917166763537L;
 
 	/**
 	 * 支付宝账户

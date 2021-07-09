@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡更新
  *
  * @author auto create
- * @since 1.0, 2021-03-23 20:04:17
+ * @since 1.0, 2021-07-08 14:46:53
  */
 public class AlipayMarketingCardUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3268716492344874459L;
+	private static final long serialVersionUID = 1795253441381417683L;
 
 	/**
 	 * 需要修改的最新卡信息
@@ -37,6 +37,12 @@ public class AlipayMarketingCardUpdateModel extends AlipayObject {
 	 */
 	@ApiField("mcard_style_info")
 	private McardStylInfo mcardStyleInfo;
+
+	/**
+	 * 商家会员卡消息信息
+	 */
+	@ApiField("merchant_card_msg_info")
+	private MerchantCardMsgInfo merchantCardMsgInfo;
 
 	/**
 	 * 注意：此字段已废弃。
@@ -86,6 +92,13 @@ BIZ_CARD：支付宝业务卡号（商户会员卡场景使用）。
 	}
 	public void setMcardStyleInfo(McardStylInfo mcardStyleInfo) {
 		this.mcardStyleInfo = mcardStyleInfo;
+	}
+
+	public MerchantCardMsgInfo getMerchantCardMsgInfo() {
+		return this.merchantCardMsgInfo;
+	}
+	public void setMerchantCardMsgInfo(MerchantCardMsgInfo merchantCardMsgInfo) {
+		this.merchantCardMsgInfo = merchantCardMsgInfo;
 	}
 
 	public List<McardNotifyMessage> getNotifyMessages() {

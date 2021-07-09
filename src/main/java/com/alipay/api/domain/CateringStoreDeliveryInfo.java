@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外卖相关参数
  *
  * @author auto create
- * @since 1.0, 2021-06-09 17:33:18
+ * @since 1.0, 2021-07-08 19:46:00
  */
 public class CateringStoreDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3129192537565226726L;
+	private static final long serialVersionUID = 6837153796757559179L;
 
 	/**
 	 * 门店配送范围（单位：公里），数值型，精确至小数点两位。外卖场景必填，其余非必填。

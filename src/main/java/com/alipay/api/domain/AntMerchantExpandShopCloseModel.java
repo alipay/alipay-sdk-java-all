@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁店铺关闭
  *
  * @author auto create
- * @since 1.0, 2021-06-11 12:00:13
+ * @since 1.0, 2021-07-06 14:59:32
  */
 public class AntMerchantExpandShopCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4173556275913673454L;
+	private static final long serialVersionUID = 1553468345289467938L;
 
 	/**
 	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id 则本参数与store_id均必填。

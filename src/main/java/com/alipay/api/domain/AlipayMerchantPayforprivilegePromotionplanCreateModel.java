@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantPayforprivilegePromotionplanCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4212217858658995653L;
+	private static final long serialVersionUID = 7747131592183998469L;
 
 	/**
 	 * 充值方案权益金部分，最小为0，权益金不超过5000元

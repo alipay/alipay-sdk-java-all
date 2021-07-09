@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单同步接口
  *
  * @author auto create
- * @since 1.0, 2020-12-21 17:53:20
+ * @since 1.0, 2021-07-08 10:33:34
  */
 public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3876571573675532928L;
+	private static final long serialVersionUID = 2619592162489619993L;
 
 	/**
 	 * 车牌
@@ -97,6 +97,7 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	 * 付款方式，枚举支持：
 *1：支付宝在线缴费 。
 *2：支付宝代扣缴费。
+*FTF_IN_PARKINGLOT_PAY：用户通过支付宝场内主动扫码或者提前在线缴费。
 	 */
 	@ApiField("pay_type")
 	private String payType;

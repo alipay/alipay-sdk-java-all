@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.identification.deviceinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2021-07-02 15:43:44
  */
 public class ZolozIdentificationDeviceinfoQueryRequest implements AlipayRequest<ZolozIdentificationDeviceinfoQueryResponse> {
 

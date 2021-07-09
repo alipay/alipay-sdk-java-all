@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用对外基础数据服务
  *
  * @author auto create
- * @since 1.0, 2021-06-11 19:51:16
+ * @since 1.0, 2021-07-02 18:56:27
  */
 public class AnttechBlockchainDefinDataserviceOcrSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5624732264129217833L;
+	private static final long serialVersionUID = 4112758333513446981L;
 
 	/**
 	 * base64编码的业务参数

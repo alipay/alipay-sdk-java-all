@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.validate request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2021-07-05 20:10:05
  */
 public class AlipayUserValidateRequest implements AlipayRequest<AlipayUserValidateResponse> {
 

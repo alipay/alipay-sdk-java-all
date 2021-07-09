@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租车门店信息
  *
  * @author auto create
- * @since 1.0, 2021-05-25 20:32:39
+ * @since 1.0, 2021-07-05 20:17:54
  */
 public class CarRentalStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4658378328214652899L;
+	private static final long serialVersionUID = 6244476268587896449L;
 
 	/**
 	 * 门店营业时间
@@ -60,7 +60,8 @@ public class CarRentalStoreInfo extends AlipayObject {
 	private String storeName;
 
 	/**
-	 * 门店联系方式
+	 * 门店电话
+支持固话或者个人用户手机号
 	 */
 	@ApiField("store_phone")
 	private String storePhone;

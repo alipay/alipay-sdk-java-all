@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.qrcode.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-28 11:55:31
+ * @since 1.0, 2021-07-08 21:50:22
  */
 public class ZhimaCreditEpDossierQrcodeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2418229423114816621L;
+	private static final long serialVersionUID = 5474438974823462963L;
+
+	/** 
+	 * 档案直跳地址，默认不返回
+	 */
+	@ApiField("dossier_path")
+	private String dossierPath;
 
 	/** 
 	 * 二维码到期时间，
@@ -26,6 +32,13 @@ public class ZhimaCreditEpDossierQrcodeApplyResponse extends AlipayResponse {
 	 */
 	@ApiField("qr_code")
 	private String qrCode;
+
+	public void setDossierPath(String dossierPath) {
+		this.dossierPath = dossierPath;
+	}
+	public String getDossierPath( ) {
+		return this.dossierPath;
+	}
 
 	public void setExpirationTime(String expirationTime) {
 		this.expirationTime = expirationTime;

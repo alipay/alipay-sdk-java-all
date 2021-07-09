@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 景区ID内外域映射配置
  *
  * @author auto create
- * @since 1.0, 2021-06-10 19:30:38
+ * @since 1.0, 2021-07-02 19:54:23
  */
 public class AlipayCommerceDataScenicSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6772464278711683936L;
+	private static final long serialVersionUID = 4129678835328385126L;
 
 	/**
 	 * 服务商名称

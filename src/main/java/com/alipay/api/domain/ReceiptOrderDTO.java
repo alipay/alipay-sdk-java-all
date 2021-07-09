@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2021-06-25 15:39:07
+ * @since 1.0, 2021-07-06 16:05:58
  */
 public class ReceiptOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3267779277788598338L;
+	private static final long serialVersionUID = 3783321736989798321L;
 
 	/**
 	 * 支付宝用户uid; 是支付宝支付时，必填
@@ -24,7 +24,7 @@ public class ReceiptOrderDTO extends AlipayObject {
 	private String alipayUid;
 
 	/**
-	 * 订单金额，单位为元; 如果不涉及金额可不传入该字段，其他场 景必传;
+	 * 订单金额，单位为元;
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -61,23 +61,20 @@ public class ReceiptOrderDTO extends AlipayObject {
 	private List<DiscountInfoDataDTO> discountInfoList;
 
 	/**
-	 * 环保数据，不传为空时，认为没有环保行为
+	 * 有环保行为时，必填; 环保数据为空时，认为没有环保行为，将不发能量;
 	 */
 	@ApiListField("environmental_info")
 	@ApiField("enviromental_info_d_t_o")
 	private List<EnviromentalInfoDTO> environmentalInfo;
 
 	/**
-	 * 对接电子小票/无纸化小票能量发放时，必填; 其它场景，无需该
-字段; 字段含义: 是否接入支付宝电子小票; "0":不接入(商户自己
-有电子小票终端)；"1":接入; 接入场景后，为确保为确保小票信息的真实性，需传小票必填字段证实为小票信息。如支付宝侧C端对小票信息进行展示，需消费者单独授权。; 不接入的
-商户且商户自己有终端实现了电子小票, 可以对接无纸化小票能
+	 * 对接电子小票/无纸化小票能量发放时，必填; 其它场景，无需该字段; 字段含义: 是否接入支付宝电子小票; "0":不接入(商户自己有电子小票终端)；"1":接入; 接入场景:必须传入小票全量商品信息，用于在支付宝侧电子小票阵地展示给到C端用户;  不接入的商户且商户自己有终端实现了电子小票, 可以对接无纸化小票能量; 为空时，默认:"0"
 	 */
 	@ApiField("is_alipay_ticket")
 	private String isAlipayTicket;
 
 	/**
-	 * 商户商品信息列表; 电子小票场景时，必填
+	 * 订单商品信息列表; 使用支付宝电子小票时，必填;（is_alipay_ticket 是 "1"时，必填）
 	 */
 	@ApiListField("item_order_list")
 	@ApiField("item_order_info_d_t_o")
@@ -90,9 +87,8 @@ public class ReceiptOrderDTO extends AlipayObject {
 	private String location;
 
 	/**
-	 * 物流信息; 订单信息包含物流信息时，必填; 列表最多支持物流信 息个数;最大支持5个
-注:若该值不为空，且物流信息同步至我的快递，则在查询订单时可返回具体物流信息
-ionRequest
+	 * 物流信息; 订单信息包含物流信息时，必填; 列表最多支持物流信息个数;最大支持10个
+注：若该值不为空，且物流信息同步至我的快递，则在查询订单时可返回具体物流信息
 	 */
 	@ApiListField("logistics_info_list")
 	@ApiField("order_logistics_information_request_d_t_o")
@@ -105,19 +101,19 @@ ionRequest
 	private String merchantName;
 
 	/**
-	 * 订单创建时间; 充电宝和酒店行业时，必填
+	 * 订单创建时间; 充电宝和酒店行业时，必填; 时间格式:yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("order_create_time")
 	private Date orderCreateTime;
 
 	/**
-	 * 订单修改时间，一般不需要传入。用于订单状态或数据变化较快 的顺序控制，order_modified_time较晚的同步会被最终存储， order_modified_time相同的两次同步可能会被幂等处理， FMCG按照行业标准化接入场景必须传入该字段控制乱序;
+	 * 订单修改时间，一般不需要传入。用于订单状态或数据变化较快的顺序控制，order_modified_time较晚的同步会被最终存储，order_modified_time相同的两次同步可能会被幂等处理，FMCG按照行业标准化接入场景必须传入该字段控制乱序;时间格式:yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("order_modified_time")
 	private Date orderModifiedTime;
 
 	/**
-	 * 订单支付时间，当pay_channel为非ALIPAY时，且订单状态已 流转到“支付”或支付后时，需要将支付时间传入;支付交易完成 时，必填
+	 * 订单支付时间，当pay_channel为非ALIPAY时，且订单状态已流转到“支付”或支付后时，需要将支付时间传入;支付交易完成时，必填；时间格式:yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("order_pay_time")
 	private Date orderPayTime;
@@ -135,7 +131,7 @@ ionRequest
 	private String outBizNo;
 
 	/**
-	 * 支付金额，需要实际支付的金额。如果不涉及金额可不传入该字 段，其他场景必传
+	 * 支付金额，需要实际支付的金额。如果不涉及金额可不传入该字段，其他场景必传; 使用支付宝电子小票时，必填;（is_alipay_ticket 是 "1"时，必填）
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;

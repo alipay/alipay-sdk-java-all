@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租户应用数据同步页面接口
  *
  * @author auto create
- * @since 1.0, 2019-01-17 18:21:22
+ * @since 1.0, 2021-07-02 14:59:07
  */
 public class AlipayCommerceAppPageUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6761579722425815898L;
+	private static final long serialVersionUID = 4465342498857351584L;
 
 	/**
 	 * 租户应用服务数据

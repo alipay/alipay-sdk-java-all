@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.ZhimaCreditRelationQueryModel;
+import com.alipay.api.domain.AlipayPcreditHuabeiMerchantActivityPauseModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.ZhimaCreditRelationQueryResponse;
+import com.alipay.api.response.AlipayPcreditHuabeiMerchantActivityPauseResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: zhima.credit.relation.query request
+ * ALIPAY API: alipay.pcredit.huabei.merchant.activity.pause request
  * 
  * @author auto create
- * @since 1.0, 2020-09-02 13:36:15
+ * @since 1.0, 2021-07-05 15:35:22
  */
-public class ZhimaCreditRelationQueryRequest implements AlipayRequest<ZhimaCreditRelationQueryResponse> {
+public class AlipayPcreditHuabeiMerchantActivityPauseRequest implements AlipayRequest<AlipayPcreditHuabeiMerchantActivityPauseResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 联系人信息验证
+	* 新版花呗分期商家贴息活动暂停接口
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class ZhimaCreditRelationQueryRequest implements AlipayRequest<ZhimaCredi
 	}
 
 	public String getApiMethodName() {
-		return "zhima.credit.relation.query";
+		return "alipay.pcredit.huabei.merchant.activity.pause";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class ZhimaCreditRelationQueryRequest implements AlipayRequest<ZhimaCredi
 		this.udfParams.put(key, value);
 	}
 
-	public Class<ZhimaCreditRelationQueryResponse> getResponseClass() {
-		return ZhimaCreditRelationQueryResponse.class;
+	public Class<AlipayPcreditHuabeiMerchantActivityPauseResponse> getResponseClass() {
+		return AlipayPcreditHuabeiMerchantActivityPauseResponse.class;
 	}
 	
 

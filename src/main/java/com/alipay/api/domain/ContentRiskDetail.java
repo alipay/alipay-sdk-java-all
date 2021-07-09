@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险规则详情
  *
  * @author auto create
- * @since 1.0, 2021-05-07 20:39:09
+ * @since 1.0, 2021-07-08 23:08:27
  */
 public class ContentRiskDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4871446139632647631L;
+	private static final long serialVersionUID = 5859962948122171337L;
+
+	/**
+	 * 规则编码
+	 */
+	@ApiField("code")
+	private String code;
 
 	/**
 	 * 规则名称
@@ -55,6 +61,13 @@ public class ContentRiskDetail extends AlipayObject {
 	 */
 	@ApiField("viola_words")
 	private String violaWords;
+
+	public String getCode() {
+		return this.code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
 
 	public String getName() {
 		return this.name;

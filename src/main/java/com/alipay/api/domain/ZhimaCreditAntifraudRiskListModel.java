@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditAntifraudRiskListModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1356813893848278947L;
+	private static final long serialVersionUID = 1592174823531191512L;
 
 	/**
 	 * 地址信息。省+市+区/县+详细地址，长度不超过256，不含",","/u0001"，"|","&","^","\\"

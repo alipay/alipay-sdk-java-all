@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆驶入上送接口
  *
  * @author auto create
- * @since 1.0, 2021-06-22 12:13:07
+ * @since 1.0, 2021-07-06 10:39:24
  */
 public class AlipayEcoMycarParkingEnterinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4837839514527992174L;
+	private static final long serialVersionUID = 3839679737362241318L;
 
 	/**
 	 * 是否启用车牌代扣状态查询功能，true为启用，false为停用
@@ -44,10 +44,22 @@ public class AlipayEcoMycarParkingEnterinfoSyncModel extends AlipayObject {
 	private String entranceId;
 
 	/**
+	 * 当前停车场的入场免费时长分钟数
+	 */
+	@ApiField("free_minutes")
+	private Long freeMinutes;
+
+	/**
 	 * 车辆入场的时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制，请保证服务器时间准确，入场时间不应晚于当前网络时间
 	 */
 	@ApiField("in_time")
 	private String inTime;
+
+	/**
+	 * 智能助理当前的跳转链接
+	 */
+	@ApiField("isv_url")
+	private String isvUrl;
 
 	/**
 	 * 支付宝停车平台ID，由支付宝定义的该停车场标识，同一个isv或商户范围内唯一。通过 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口获取。
@@ -95,11 +107,25 @@ public class AlipayEcoMycarParkingEnterinfoSyncModel extends AlipayObject {
 		this.entranceId = entranceId;
 	}
 
+	public Long getFreeMinutes() {
+		return this.freeMinutes;
+	}
+	public void setFreeMinutes(Long freeMinutes) {
+		this.freeMinutes = freeMinutes;
+	}
+
 	public String getInTime() {
 		return this.inTime;
 	}
 	public void setInTime(String inTime) {
 		this.inTime = inTime;
+	}
+
+	public String getIsvUrl() {
+		return this.isvUrl;
+	}
+	public void setIsvUrl(String isvUrl) {
+		this.isvUrl = isvUrl;
 	}
 
 	public String getParkingId() {

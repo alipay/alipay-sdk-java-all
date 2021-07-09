@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字分行银行码明细数据查询
  *
  * @author auto create
- * @since 1.0, 2021-02-03 14:10:13
+ * @since 1.0, 2021-07-07 19:16:45
  */
 public class AlipayUserDtbankQrcodedataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2561482277586763434L;
+	private static final long serialVersionUID = 6364916877927237571L;
 
 	/**
 	 * 查询的数据日期

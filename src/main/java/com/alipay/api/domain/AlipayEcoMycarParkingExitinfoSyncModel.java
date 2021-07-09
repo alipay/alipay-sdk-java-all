@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆驶出上送接口
  *
  * @author auto create
- * @since 1.0, 2021-06-22 12:13:21
+ * @since 1.0, 2021-07-06 10:47:20
  */
 public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2631964763939442197L;
+	private static final long serialVersionUID = 7155955694636627814L;
+
+	/**
+	 * 实际金额
+	 */
+	@ApiField("actual_amount")
+	private String actualAmount;
 
 	/**
 	 * 车牌颜色，枚举支持：
@@ -32,10 +38,28 @@ public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 	private String carNumber;
 
 	/**
+	 * 折扣金额
+	 */
+	@ApiField("discount_amount")
+	private String discountAmount;
+
+	/**
 	 * 用于识别车辆出口，多出入口车场适用
 	 */
 	@ApiField("exit_id")
 	private String exitId;
+
+	/**
+	 * 智能助理当前的跳转链接
+	 */
+	@ApiField("isv_url")
+	private String isvUrl;
+
+	/**
+	 * 订单总金额
+	 */
+	@ApiField("order_amount")
+	private String orderAmount;
 
 	/**
 	 * 车辆离场时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制
@@ -67,6 +91,13 @@ public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 	@ApiField("store_id")
 	private String storeId;
 
+	public String getActualAmount() {
+		return this.actualAmount;
+	}
+	public void setActualAmount(String actualAmount) {
+		this.actualAmount = actualAmount;
+	}
+
 	public String getCarColor() {
 		return this.carColor;
 	}
@@ -81,11 +112,32 @@ public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 		this.carNumber = carNumber;
 	}
 
+	public String getDiscountAmount() {
+		return this.discountAmount;
+	}
+	public void setDiscountAmount(String discountAmount) {
+		this.discountAmount = discountAmount;
+	}
+
 	public String getExitId() {
 		return this.exitId;
 	}
 	public void setExitId(String exitId) {
 		this.exitId = exitId;
+	}
+
+	public String getIsvUrl() {
+		return this.isvUrl;
+	}
+	public void setIsvUrl(String isvUrl) {
+		this.isvUrl = isvUrl;
+	}
+
+	public String getOrderAmount() {
+		return this.orderAmount;
+	}
+	public void setOrderAmount(String orderAmount) {
+		this.orderAmount = orderAmount;
 	}
 
 	public String getOutTime() {

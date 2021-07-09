@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-24 15:39:40
+ * @since 1.0, 2021-07-09 10:05:22
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1254282698777527712L;
+	private static final long serialVersionUID = 5229442596373476544L;
+
+	/** 
+	 * 代理函有效访问地址，有效时间2分钟，接口返回后开始计时，字段SUCCESS为true时返回，特定场景下返回值为空
+	 */
+	@ApiField("attorney_letter")
+	private String attorneyLetter;
 
 	/** 
 	 * 授权状态，从用户授权开始计时，时间窗口3天
@@ -52,10 +58,29 @@ FAIL，代表失败
 	private String epName;
 
 	/** 
+	 * 法人身份证反面有效访问定制，有效时间2分钟，接口返回后开始计时，特定场景下返回
+	 */
+	@ApiField("legal_person_id_card_back")
+	private String legalPersonIdCardBack;
+
+	/** 
+	 * 法人身份证正面有效访问地址，有效时间2分钟，接口返回后开始计时，特定场景下返回
+	 */
+	@ApiField("legal_person_id_card_front")
+	private String legalPersonIdCardFront;
+
+	/** 
 	 * 个人用户姓名，字段auth_status为SUCCESS时返回
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	public void setAttorneyLetter(String attorneyLetter) {
+		this.attorneyLetter = attorneyLetter;
+	}
+	public String getAttorneyLetter( ) {
+		return this.attorneyLetter;
+	}
 
 	public void setAuthStatus(String authStatus) {
 		this.authStatus = authStatus;
@@ -90,6 +115,20 @@ FAIL，代表失败
 	}
 	public String getEpName( ) {
 		return this.epName;
+	}
+
+	public void setLegalPersonIdCardBack(String legalPersonIdCardBack) {
+		this.legalPersonIdCardBack = legalPersonIdCardBack;
+	}
+	public String getLegalPersonIdCardBack( ) {
+		return this.legalPersonIdCardBack;
+	}
+
+	public void setLegalPersonIdCardFront(String legalPersonIdCardFront) {
+		this.legalPersonIdCardFront = legalPersonIdCardFront;
+	}
+	public String getLegalPersonIdCardFront( ) {
+		return this.legalPersonIdCardFront;
 	}
 
 	public void setUserName(String userName) {

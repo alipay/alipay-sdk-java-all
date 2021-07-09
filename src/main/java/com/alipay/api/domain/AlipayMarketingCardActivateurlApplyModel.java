@@ -7,17 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡领卡链接获取接口
  *
  * @author auto create
- * @since 1.0, 2021-05-11 20:16:35
+ * @since 1.0, 2021-07-07 14:06:15
  */
 public class AlipayMarketingCardActivateurlApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2293659453339673136L;
+	private static final long serialVersionUID = 4285724595943638694L;
 
 	/**
-	 * 会员卡开卡表单提交后回调地址。
+	 * 会员卡开卡表单提交后回调地址。要求必须是单纯的服务端接收回调。
 说明：
 1.该地址不可带参数，如需回传参数，可设置out_string入参。
-2.小程序应用无需传入。
 	 */
 	@ApiField("callback")
 	private String callback;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务标准化的商户信息
  *
  * @author auto create
- * @since 1.0, 2021-06-18 11:02:39
+ * @since 1.0, 2021-07-09 14:30:44
  */
 public class CateringMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3416541251416974382L;
+	private static final long serialVersionUID = 4899781888492468953L;
 
 	/**
 	 * 品牌名称
@@ -20,19 +20,21 @@ public class CateringMerchantInfo extends AlipayObject {
 	private String brandName;
 
 	/**
-	 * 商家logo（上传logo图片返回的material_key）
+	 * 商家logo（上传logo图片返回的material_key）。平台小程序必填；模板或自研小程序选填，不填官方会取小程序Logo
+请使用此文档集的图片上传接口上传获取的ID
+（alipay.merchant.item.file.upload）
 	 */
 	@ApiField("merchant_logo")
 	private String merchantLogo;
 
 	/**
-	 * 直连商户id。除排队之外，特殊可选
+	 * 品牌在支付宝商家平台的PID。除排队场景外，PID/SMID必填一个。
 	 */
 	@ApiField("pid")
 	private String pid;
 
 	/**
-	 * 间联商户。除排队之外，特殊可选，pid smid 必有一个。银行ISV将商户入驻得到的sub_merchant_id，受理商户唯一标识。
+	 * 品牌在支付宝商家平台的入驻得到的sub_merchant_id，受理商户唯一标识。除排队场景外，PID/SMID必填一个。
 	 */
 	@ApiField("smid")
 	private String smid;

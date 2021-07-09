@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3236458879782433888L;
+	private static final long serialVersionUID = 2881929294981391577L;
 
 	/**
 	 * 一级菜单列表。说明：

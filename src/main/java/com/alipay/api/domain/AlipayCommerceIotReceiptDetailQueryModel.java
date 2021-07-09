@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotReceiptDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7559784812757432972L;
+	private static final long serialVersionUID = 1481386186587144842L;
 
 	/**
 	 * 调用发送电子小票接口时返回的电子小票id

@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.ZhimaCreditAntifraudVerifyModel;
+import com.alipay.api.domain.AlipayMarketingActivityOrdervoucherInvalidModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.ZhimaCreditAntifraudVerifyResponse;
+import com.alipay.api.response.AlipayMarketingActivityOrdervoucherInvalidResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: zhima.credit.antifraud.verify request
+ * ALIPAY API: alipay.marketing.activity.ordervoucher.invalid request
  * 
  * @author auto create
- * @since 1.0, 2021-06-29 15:30:24
+ * @since 1.0, 2021-07-03 11:05:24
  */
-public class ZhimaCreditAntifraudVerifyRequest implements AlipayRequest<ZhimaCreditAntifraudVerifyResponse> {
+public class AlipayMarketingActivityOrdervoucherInvalidRequest implements AlipayRequest<AlipayMarketingActivityOrdervoucherInvalidResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 欺诈信息验证
+	* 使券失效
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class ZhimaCreditAntifraudVerifyRequest implements AlipayRequest<ZhimaCre
 	}
 
 	public String getApiMethodName() {
-		return "zhima.credit.antifraud.verify";
+		return "alipay.marketing.activity.ordervoucher.invalid";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class ZhimaCreditAntifraudVerifyRequest implements AlipayRequest<ZhimaCre
 		this.udfParams.put(key, value);
 	}
 
-	public Class<ZhimaCreditAntifraudVerifyResponse> getResponseClass() {
-		return ZhimaCreditAntifraudVerifyResponse.class;
+	public Class<AlipayMarketingActivityOrdervoucherInvalidResponse> getResponseClass() {
+		return AlipayMarketingActivityOrdervoucherInvalidResponse.class;
 	}
 	
 

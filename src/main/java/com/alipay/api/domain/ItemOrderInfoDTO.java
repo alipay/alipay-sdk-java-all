@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户商品信息列表; 电子小票场景时，必填
  *
  * @author auto create
- * @since 1.0, 2021-06-23 17:27:04
+ * @since 1.0, 2021-07-05 16:27:45
  */
 public class ItemOrderInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3197132995187719771L;
+	private static final long serialVersionUID = 3417237286274466577L;
 
 	/**
 	 * 商品条形码
@@ -26,13 +26,13 @@ public class ItemOrderInfoDTO extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 商品名称; 充电宝时，必填
+	 * 商品名称; 使用支付宝电子小票时，必填;（is_alipay_ticket 是 "1"时，必填）
 	 */
 	@ApiField("item_name")
 	private String itemName;
 
 	/**
-	 * 商品数量(单位:自拟);充电宝时，必填
+	 * 商品数量（单位：自拟）;使用支付宝电子小票时，必填;（is_alipay_ticket 是 "1"时，必填）
 	 */
 	@ApiField("quantity")
 	private Long quantity;
@@ -44,7 +44,7 @@ public class ItemOrderInfoDTO extends AlipayObject {
 	private String skuId;
 
 	/**
-	 * 商品单价(单位:元);充电宝时，必填
+	 * 商品单价（单位: 元）;使用支付宝电子小票时，必填;（is_alipay_ticket 是 "1"时，必填）
 	 */
 	@ApiField("unit_price")
 	private String unitPrice;

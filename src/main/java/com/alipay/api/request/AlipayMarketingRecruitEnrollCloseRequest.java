@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.ZhimaCreditAntifraudRiskListModel;
+import com.alipay.api.domain.AlipayMarketingRecruitEnrollCloseModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.ZhimaCreditAntifraudRiskListResponse;
+import com.alipay.api.response.AlipayMarketingRecruitEnrollCloseResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: zhima.credit.antifraud.risk.list request
+ * ALIPAY API: alipay.marketing.recruit.enroll.close request
  * 
  * @author auto create
- * @since 1.0, 2021-06-29 15:30:39
+ * @since 1.0, 2021-07-02 14:50:46
  */
-public class ZhimaCreditAntifraudRiskListRequest implements AlipayRequest<ZhimaCreditAntifraudRiskListResponse> {
+public class AlipayMarketingRecruitEnrollCloseRequest implements AlipayRequest<AlipayMarketingRecruitEnrollCloseResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 欺诈关注清单
+	* 下线报名
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class ZhimaCreditAntifraudRiskListRequest implements AlipayRequest<ZhimaC
 	}
 
 	public String getApiMethodName() {
-		return "zhima.credit.antifraud.risk.list";
+		return "alipay.marketing.recruit.enroll.close";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class ZhimaCreditAntifraudRiskListRequest implements AlipayRequest<ZhimaC
 		this.udfParams.put(key, value);
 	}
 
-	public Class<ZhimaCreditAntifraudRiskListResponse> getResponseClass() {
-		return ZhimaCreditAntifraudRiskListResponse.class;
+	public Class<AlipayMarketingRecruitEnrollCloseResponse> getResponseClass() {
+		return AlipayMarketingRecruitEnrollCloseResponse.class;
 	}
 	
 

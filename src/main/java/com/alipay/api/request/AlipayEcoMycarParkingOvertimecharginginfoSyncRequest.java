@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.ZhimaCreditAntifraudScoreGetModel;
+import com.alipay.api.domain.AlipayEcoMycarParkingOvertimecharginginfoSyncModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.ZhimaCreditAntifraudScoreGetResponse;
+import com.alipay.api.response.AlipayEcoMycarParkingOvertimecharginginfoSyncResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: zhima.credit.antifraud.score.get request
+ * ALIPAY API: alipay.eco.mycar.parking.overtimecharginginfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-06-29 15:31:00
+ * @since 1.0, 2021-07-05 19:35:21
  */
-public class ZhimaCreditAntifraudScoreGetRequest implements AlipayRequest<ZhimaCreditAntifraudScoreGetResponse> {
+public class AlipayEcoMycarParkingOvertimecharginginfoSyncRequest implements AlipayRequest<AlipayEcoMycarParkingOvertimecharginginfoSyncResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 申请欺诈评分
+	* 车辆停车超时重计费接口
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class ZhimaCreditAntifraudScoreGetRequest implements AlipayRequest<ZhimaC
 	}
 
 	public String getApiMethodName() {
-		return "zhima.credit.antifraud.score.get";
+		return "alipay.eco.mycar.parking.overtimecharginginfo.sync";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class ZhimaCreditAntifraudScoreGetRequest implements AlipayRequest<ZhimaC
 		this.udfParams.put(key, value);
 	}
 
-	public Class<ZhimaCreditAntifraudScoreGetResponse> getResponseClass() {
-		return ZhimaCreditAntifraudScoreGetResponse.class;
+	public Class<AlipayEcoMycarParkingOvertimecharginginfoSyncResponse> getResponseClass() {
+		return AlipayEcoMycarParkingOvertimecharginginfoSyncResponse.class;
 	}
 	
 

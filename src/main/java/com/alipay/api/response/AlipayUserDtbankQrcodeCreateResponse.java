@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbank.qrcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-03 14:15:16
+ * @since 1.0, 2021-07-07 19:13:12
  */
 public class AlipayUserDtbankQrcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1248892886615753994L;
+	private static final long serialVersionUID = 3528456694745334618L;
 
 	/** 
 	 * 银行码码值

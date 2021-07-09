@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbCodeBindInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4255547456329229775L;
+	private static final long serialVersionUID = 1645926833265462263L;
 
 	/**
 	 * 商家餐桌摆放的区域名称（预留字段，暂不使用）

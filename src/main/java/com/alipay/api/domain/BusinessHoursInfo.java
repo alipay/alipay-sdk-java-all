@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店营业时间
  *
  * @author auto create
- * @since 1.0, 2021-06-09 17:33:18
+ * @since 1.0, 2021-07-08 19:46:00
  */
 public class BusinessHoursInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3691722326284741397L;
+	private static final long serialVersionUID = 8167434798875241289L;
 
 	/**
 	 * 营业日：周一、周二、周三、周四、周五、周六、周日

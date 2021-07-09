@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 在线发卡商户确认订单
  *
  * @author auto create
- * @since 1.0, 2018-01-24 15:18:08
+ * @since 1.0, 2021-07-09 14:32:47
  */
 public class ZhimaMerchantOrderConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1888392814284779174L;
+	private static final long serialVersionUID = 7263812249368821393L;
 
 	/**
 	 * 芝麻信用订单号,此订单号是在业务办理中的信用套餐页面点提交后生成的单号，此单号通过页面url或者后台通知到商户的业务系统，商户用此单号可以查询用户授权过的信用评估的相关信息后完成接下来的业务流程

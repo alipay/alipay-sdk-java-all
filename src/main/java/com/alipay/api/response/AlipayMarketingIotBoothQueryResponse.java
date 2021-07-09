@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.iot.booth.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-10 10:10:23
+ * @since 1.0, 2021-07-09 11:02:37
  */
 public class AlipayMarketingIotBoothQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1496445925239941614L;
+	private static final long serialVersionUID = 4226126265483957927L;
 
 	/** 
 	 * 用于链路埋点，识别权益触发链路

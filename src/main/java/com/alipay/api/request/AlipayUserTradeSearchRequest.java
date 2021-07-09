@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.trade.search request
  * 
  * @author auto create
- * @since 1.0, 2020-06-04 19:43:19
+ * @since 1.0, 2021-07-05 20:03:38
  */
 public class AlipayUserTradeSearchRequest implements AlipayRequest<AlipayUserTradeSearchResponse> {
 

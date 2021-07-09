@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户贴息账单
  *
  * @author auto create
- * @since 1.0, 2020-07-22 13:56:45
+ * @since 1.0, 2021-07-05 15:47:03
  */
 public class HbMerchantBill extends AlipayObject {
 
-	private static final long serialVersionUID = 4287944333539626419L;
+	private static final long serialVersionUID = 4535152244385315975L;
 
 	/**
 	 * 商家贴息金额
@@ -24,6 +24,12 @@ public class HbMerchantBill extends AlipayObject {
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/**
+	 * 分期期数
+	 */
+	@ApiField("period_num")
+	private String periodNum;
 
 	/**
 	 * 订单金额
@@ -55,6 +61,13 @@ public class HbMerchantBill extends AlipayObject {
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getPeriodNum() {
+		return this.periodNum;
+	}
+	public void setPeriodNum(String periodNum) {
+		this.periodNum = periodNum;
 	}
 
 	public String getTradeAmount() {
