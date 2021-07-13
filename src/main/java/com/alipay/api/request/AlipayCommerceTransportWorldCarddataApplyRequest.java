@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.world.carddata.apply request
  * 
  * @author auto create
- * @since 1.0, 2020-03-24 17:40:34
+ * @since 1.0, 2021-07-13 10:41:49
  */
 public class AlipayCommerceTransportWorldCarddataApplyRequest implements AlipayRequest<AlipayCommerceTransportWorldCarddataApplyResponse> {
 

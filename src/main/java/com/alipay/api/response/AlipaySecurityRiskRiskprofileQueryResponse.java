@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityRiskRiskprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8443349253886476978L;
+	private static final long serialVersionUID = 1579172931321518832L;
 
 	/** 
 	 * success 字段为false 是返回失败原因

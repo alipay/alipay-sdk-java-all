@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.deviceinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-02 15:43:44
+ * @since 1.0, 2021-07-13 15:45:07
  */
 public class ZolozIdentificationDeviceinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6354923746615128673L;
+	private static final long serialVersionUID = 1276321837938714542L;
 
 	/** 
 	 * device_info

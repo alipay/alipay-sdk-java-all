@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.order.confirm request
  * 
  * @author auto create
- * @since 1.0, 2021-07-09 14:32:47
+ * @since 1.0, 2021-07-13 15:44:13
  */
 public class ZhimaMerchantOrderConfirmRequest implements AlipayRequest<ZhimaMerchantOrderConfirmResponse> {
 

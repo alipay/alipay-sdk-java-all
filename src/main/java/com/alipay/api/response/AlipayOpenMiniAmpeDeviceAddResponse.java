@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.device.add response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-14 19:12:23
+ * @since 1.0, 2021-07-13 10:42:02
  */
 public class AlipayOpenMiniAmpeDeviceAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4348431266365316331L;
+	private static final long serialVersionUID = 8141792747322813667L;
 
 	
 

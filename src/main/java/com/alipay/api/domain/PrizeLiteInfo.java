@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PrizeLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3366663627171537563L;
+	private static final long serialVersionUID = 2529628743612323323L;
 
 	/**
 	 * 外部奖品ID

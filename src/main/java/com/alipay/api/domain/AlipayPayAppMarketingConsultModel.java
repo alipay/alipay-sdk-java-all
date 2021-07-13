@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户前置营销内容咨询接口
  *
  * @author auto create
- * @since 1.0, 2020-12-15 10:16:32
+ * @since 1.0, 2021-07-13 19:17:55
  */
 public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5835885614822352211L;
+	private static final long serialVersionUID = 4246458472791754438L;
 
 	/**
 	 * 业务场景，用于区分商户具体的咨场景，示例：ORDER_PAGE：下单页营销咨询；其他新场景接入时需与支付宝协商约定
@@ -38,7 +38,7 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	private List<String> confusedMobileList;
 
 	/**
-	 * 设备号密文，使用SHA256加密；设备号类型由device_type字段指定；（手机号、设备号或morse匿名查询，三种匹配方式至少有一种参数不能为空）
+	 * 设备号密文，使用SHA256加密；设备号类型由device_type字段指定；（设备号或morse匿名查询，两种匹配方式至少有一种参数不能为空）
 	 */
 	@ApiField("device_id")
 	private String deviceId;
@@ -50,7 +50,7 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	private String deviceType;
 
 	/**
-	 * 手机号md5值密文；（手机号、设备号或morse匿名查询，三种匹配方式至少有一种参数不能为空）
+	 * 手机号md5值密文；（已废弃不支持）
 	 */
 	@ApiField("encrypted_mobile")
 	private String encryptedMobile;
@@ -67,6 +67,18 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	 */
 	@ApiField("mobile")
 	private String mobile;
+
+	/**
+	 * 是否需要查询反作弊等级值，默认为false不查询
+	 */
+	@ApiField("need_query_anti_rank")
+	private String needQueryAntiRank;
+
+	/**
+	 * 是否需要查询营销偏好等级值，默认为false不查询
+	 */
+	@ApiField("need_query_marketing_rank")
+	private String needQueryMarketingRank;
 
 	/**
 	 * 是否需要返回标签信息；默认为false不返回
@@ -100,13 +112,13 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	private String sellerId;
 
 	/**
-	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
+	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]（total_amount与undiscountable_amount两个字段需至少有一个不能为空）
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
 
 	/**
-	 * 不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
+	 * 不参与优惠计算的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]（total_amount与undiscountable_amount两个字段需至少有一个不能为空）
 	 */
 	@ApiField("undiscountable_amount")
 	private String undiscountableAmount;
@@ -171,6 +183,20 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public String getNeedQueryAntiRank() {
+		return this.needQueryAntiRank;
+	}
+	public void setNeedQueryAntiRank(String needQueryAntiRank) {
+		this.needQueryAntiRank = needQueryAntiRank;
+	}
+
+	public String getNeedQueryMarketingRank() {
+		return this.needQueryMarketingRank;
+	}
+	public void setNeedQueryMarketingRank(String needQueryMarketingRank) {
+		this.needQueryMarketingRank = needQueryMarketingRank;
 	}
 
 	public Boolean getNeedReturnTag() {

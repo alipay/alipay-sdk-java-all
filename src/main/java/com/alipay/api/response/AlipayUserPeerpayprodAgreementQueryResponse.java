@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.peerpayprod.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-21 11:36:25
+ * @since 1.0, 2021-07-13 10:41:54
  */
 public class AlipayUserPeerpayprodAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2391239136822226458L;
+	private static final long serialVersionUID = 2693886983647163281L;
 
 	/** 
 	 * 亲情号协议的额度

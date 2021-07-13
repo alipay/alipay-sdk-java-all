@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.url.deviceverify.add request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2021-07-13 10:42:01
  */
 public class AlipayMobileUrlDeviceverifyAddRequest implements AlipayRequest<AlipayMobileUrlDeviceverifyAddResponse> {
 

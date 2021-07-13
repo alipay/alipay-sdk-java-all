@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.operator.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-06 14:58:22
+ * @since 1.0, 2021-07-13 15:44:03
  */
 public class KoubeiMerchantOperatorModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7676573745889212641L;
+	private static final long serialVersionUID = 5356548532727383895L;
 
 	/** 
 	 * 操作员ID

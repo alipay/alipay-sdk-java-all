@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询蚂蚁庄园捐赠信息
  *
  * @author auto create
- * @since 1.0, 2021-07-05 19:54:19
+ * @since 1.0, 2021-07-10 23:29:46
  */
 public class AlipaySocialAntfarmDonationinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4814266682745113919L;
+	private static final long serialVersionUID = 8836432956716325152L;
 
 	/**
 	 * 蚂蚁统一会员ID

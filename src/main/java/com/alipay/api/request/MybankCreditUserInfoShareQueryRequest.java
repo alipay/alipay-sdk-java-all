@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.user.info.share.query request
  * 
  * @author auto create
- * @since 1.0, 2020-06-12 10:36:03
+ * @since 1.0, 2021-07-13 15:44:59
  */
 public class MybankCreditUserInfoShareQueryRequest implements AlipayRequest<MybankCreditUserInfoShareQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.authentication.face.search.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-08 18:35:00
+ * @since 1.0, 2021-07-13 10:41:54
  */
 public class ZolozAuthenticationFaceSearchQueryRequest implements AlipayRequest<ZolozAuthenticationFaceSearchQueryResponse> {
 

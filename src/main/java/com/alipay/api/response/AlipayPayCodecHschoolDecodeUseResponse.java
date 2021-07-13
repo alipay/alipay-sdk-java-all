@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.codec.hschool.decode.use response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-08 16:45:12
+ * @since 1.0, 2021-07-13 15:44:09
  */
 public class AlipayPayCodecHschoolDecodeUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6392862338983968229L;
+	private static final long serialVersionUID = 8378315933274528239L;
 
 	/** 
 	 * 学生短号

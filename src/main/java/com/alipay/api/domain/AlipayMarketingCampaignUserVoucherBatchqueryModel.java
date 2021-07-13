@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝根据用户id查询券信息
  *
  * @author auto create
- * @since 1.0, 2021-03-31 14:47:22
+ * @since 1.0, 2021-07-13 14:20:55
  */
 public class AlipayMarketingCampaignUserVoucherBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6543732875838483926L;
+	private static final long serialVersionUID = 1389161479967866193L;
 
 	/**
 	 * 分页查询的当前页号,从1开始

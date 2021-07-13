@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoteDateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3187369763828725846L;
+	private static final long serialVersionUID = 3835133715965819769L;
 
 	/**
 	 * 日期

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户批量查询已领取的商户券
  *
  * @author auto create
- * @since 1.0, 2021-06-24 14:30:55
+ * @since 1.0, 2021-07-13 14:20:24
  */
 public class AlipayMarketingCampaignUserActivityvoucherBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5621366249552485542L;
+	private static final long serialVersionUID = 8861744854517873218L;
 
 	/**
 	 * 场景码：默认(DEFAULT)

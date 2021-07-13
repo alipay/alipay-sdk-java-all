@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataAiserviceHellobikeSiteQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4245872598211435556L;
+	private static final long serialVersionUID = 7583164367862729416L;
 
 	/**
 	 * 任务id.  （当空时，返回最近3个月的所有任务及状态）

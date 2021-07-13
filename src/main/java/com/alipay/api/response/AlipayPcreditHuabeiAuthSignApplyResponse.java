@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.sign.apply response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-10 17:44:46
+ * @since 1.0, 2021-07-13 15:44:10
  */
 public class AlipayPcreditHuabeiAuthSignApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6235733322265995253L;
+	private static final long serialVersionUID = 5713334997751669569L;
 
 	
 

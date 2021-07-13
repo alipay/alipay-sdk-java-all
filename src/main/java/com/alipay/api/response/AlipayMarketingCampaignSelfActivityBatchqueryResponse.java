@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.self.activity.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-24 14:31:09
+ * @since 1.0, 2021-07-13 16:40:02
  */
 public class AlipayMarketingCampaignSelfActivityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5478879385334636863L;
+	private static final long serialVersionUID = 4123695417517117413L;
 
 	/** 
 	 * 活动列表
@@ -24,11 +24,63 @@ public class AlipayMarketingCampaignSelfActivityBatchqueryResponse extends Alipa
 	@ApiField("marketing_activity_info")
 	private List<MarketingActivityInfo> activityList;
 
+	/** 
+	 * 当前页数
+	 */
+	@ApiField("current_pages")
+	private String currentPages;
+
+	/** 
+	 * 每页活动数
+	 */
+	@ApiField("items_per_page")
+	private String itemsPerPage;
+
+	/** 
+	 * 返回总活动数
+	 */
+	@ApiField("total_items")
+	private String totalItems;
+
+	/** 
+	 * 总页数
+	 */
+	@ApiField("total_pages")
+	private String totalPages;
+
 	public void setActivityList(List<MarketingActivityInfo> activityList) {
 		this.activityList = activityList;
 	}
 	public List<MarketingActivityInfo> getActivityList( ) {
 		return this.activityList;
+	}
+
+	public void setCurrentPages(String currentPages) {
+		this.currentPages = currentPages;
+	}
+	public String getCurrentPages( ) {
+		return this.currentPages;
+	}
+
+	public void setItemsPerPage(String itemsPerPage) {
+		this.itemsPerPage = itemsPerPage;
+	}
+	public String getItemsPerPage( ) {
+		return this.itemsPerPage;
+	}
+
+	public void setTotalItems(String totalItems) {
+		this.totalItems = totalItems;
+	}
+	public String getTotalItems( ) {
+		return this.totalItems;
+	}
+
+	public void setTotalPages(String totalPages) {
+		this.totalPages = totalPages;
+	}
+	public String getTotalPages( ) {
+		return this.totalPages;
 	}
 
 }

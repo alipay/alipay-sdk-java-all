@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.identity.info.certify request
  * 
  * @author auto create
- * @since 1.0, 2021-07-06 10:48:25
+ * @since 1.0, 2021-07-13 16:11:45
  */
 public class AnttechBlockchainIdentityInfoCertifyRequest implements AlipayRequest<AnttechBlockchainIdentityInfoCertifyResponse> {
 

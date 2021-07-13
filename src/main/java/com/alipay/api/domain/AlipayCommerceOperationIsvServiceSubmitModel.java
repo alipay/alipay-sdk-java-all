@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  *  餐饮服务标准化服务申报
  *
  * @author auto create
- * @since 1.0, 2021-06-18 11:02:40
+ * @since 1.0, 2021-07-13 16:13:05
  */
 public class AlipayCommerceOperationIsvServiceSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6435785184695565465L;
+	private static final long serialVersionUID = 7131263324262543956L;
 
 	/**
 	 * 扩展字段，服务扩展字段，示例：key：service_levle，value：standard
@@ -30,13 +30,13 @@ public class AlipayCommerceOperationIsvServiceSubmitModel extends AlipayObject {
 	private CateringMerchantInfo merchantInfo;
 
 	/**
-	 * 服务描述
+	 * 描述此服务的内容
 	 */
 	@ApiField("service_description")
 	private String serviceDescription;
 
 	/**
-	 * 服务名称
+	 * 服务名称（针对此服务类型有特殊的品牌宣导，如肯德基宅急送；如没有特殊要求，可不填）；长度最大15个中文字符
 	 */
 	@ApiField("service_name")
 	private String serviceName;
@@ -52,8 +52,9 @@ SERVICE_OFFLINE：服务下线
 
 	/**
 	 * 服务子类型（ServiceSubType枚举）
-PICK_UP:自提
-TAKE_AWAY:外卖
+自提:PICK_UP
+外卖:TAKE_AWAY
+排队:QUEUE
 	 */
 	@ApiField("service_sub_type")
 	private String serviceSubType;
@@ -65,7 +66,7 @@ TAKE_AWAY:外卖
 	private String serviceType;
 
 	/**
-	 * 服务url（可直接跳转对应的服务子类型小程序页面）
+	 * 服务url（请注意：1、可直接跳转对应的服务子类型小程序页面；2、url当中的小程序需要和开放平台解析出的小程序appid一致）
 	 */
 	@ApiField("service_url")
 	private String serviceUrl;

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.edu.kt.student.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-10 10:18:21
+ * @since 1.0, 2021-07-13 15:43:58
  */
 public class AlipayEcoEduKtStudentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4248213147659554593L;
+	private static final long serialVersionUID = 2322259133921878631L;
 
 	/** 
 	 * 学生姓名

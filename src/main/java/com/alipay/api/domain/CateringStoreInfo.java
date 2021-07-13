@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮服务标准化门店信息
  *
  * @author auto create
- * @since 1.0, 2021-06-18 11:02:40
+ * @since 1.0, 2021-07-13 16:13:05
  */
 public class CateringStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4116239658382261486L;
+	private static final long serialVersionUID = 6159978983656469256L;
 
 	/**
 	 * 门店营业时间
@@ -60,13 +60,13 @@ public class CateringStoreInfo extends AlipayObject {
 	private List<ExtraInfo> storeExtraInfo;
 
 	/**
-	 * 商家门店id
+	 * 商家门店id（ISV内部门店唯一编号）
 	 */
 	@ApiField("store_id")
 	private String storeId;
 
 	/**
-	 * 门店名称
+	 * 门店名称，比如：蚂蚁金服店，不需要“(”  “)”等辅助标记，与门店名称合并后对外展示如星巴克(蚂蚁金服店)
 	 */
 	@ApiField("store_name")
 	private String storeName;

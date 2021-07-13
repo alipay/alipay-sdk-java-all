@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑凭证码核销
  *
  * @author auto create
- * @since 1.0, 2019-08-16 20:14:19
+ * @since 1.0, 2021-07-13 10:56:06
  */
 public class KoubeiTradeTicketTicketcodeUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6418486872254648735L;
+	private static final long serialVersionUID = 3579299425765594862L;
 
 	/**
 	 * 凭证码类型,INTERNAL_CODE(内部凭证码),EXTERNAL_CODE(外部凭证码),默认INTERNAL_CODE,外部券场景必填
 	 */
 	@ApiField("code_type")
 	private String codeType;
+
+	/**
+	 * 扩展信息，或落地到核销任务单上
+	 */
+	@ApiField("ext")
+	private String ext;
 
 	/**
 	 * 业务发生时间，默认为接口调用时间
@@ -68,6 +74,13 @@ public class KoubeiTradeTicketTicketcodeUseModel extends AlipayObject {
 	}
 	public void setCodeType(String codeType) {
 		this.codeType = codeType;
+	}
+
+	public String getExt() {
+		return this.ext;
+	}
+	public void setExt(String ext) {
+		this.ext = ext;
 	}
 
 	public Date getGmtBiz() {

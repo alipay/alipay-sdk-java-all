@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.open.red.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-10 21:12:55
+ * @since 1.0, 2021-07-13 15:43:56
  */
 public class AlipayEbppInvoiceOpenRedCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7728757289518785162L;
+	private static final long serialVersionUID = 4753332445849198972L;
 
 	/** 
 	 * 发票生成的开票申请流水id，查询开票结果使用改值

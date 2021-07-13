@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.order.aggregate.consult response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-10 16:57:13
+ * @since 1.0, 2021-07-13 10:42:02
  */
 public class KoubeiTradeOrderAggregateConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8772566783421512615L;
+	private static final long serialVersionUID = 8884293174499748172L;
 
 	/** 
 	 * 买家ID, 支付成功时才返回

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.user.click.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-26 20:27:10
+ * @since 1.0, 2021-07-13 10:41:48
  */
 public class AlipayCommerceEducateUserClickCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7457753441398878891L;
+	private static final long serialVersionUID = 1141237469245437472L;
 
 	
 

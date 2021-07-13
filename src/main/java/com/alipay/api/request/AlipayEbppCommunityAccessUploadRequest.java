@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.community.access.upload request
  * 
  * @author auto create
- * @since 1.0, 2021-02-18 20:05:14
+ * @since 1.0, 2021-07-13 15:44:59
  */
 public class AlipayEbppCommunityAccessUploadRequest implements AlipayRequest<AlipayEbppCommunityAccessUploadResponse> {
 

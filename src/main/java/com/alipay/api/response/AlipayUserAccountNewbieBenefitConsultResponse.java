@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.newbie.benefit.consult response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-18 10:45:16
+ * @since 1.0, 2021-07-13 15:45:04
  */
 public class AlipayUserAccountNewbieBenefitConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8573425595811389723L;
+	private static final long serialVersionUID = 2141232552693583942L;
 
 	/** 
 	 * 脱敏后的支付宝登录号

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.shop.wxlogin.query request
  * 
  * @author auto create
- * @since 1.0, 2020-02-26 22:55:06
+ * @since 1.0, 2021-07-13 10:42:02
  */
 public class KoubeiShopWxloginQueryRequest implements AlipayRequest<KoubeiShopWxloginQueryResponse> {
 

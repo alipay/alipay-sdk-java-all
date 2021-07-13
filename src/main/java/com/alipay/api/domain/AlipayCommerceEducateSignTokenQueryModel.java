@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扫脸信息查询
  *
  * @author auto create
- * @since 1.0, 2021-06-01 14:04:45
+ * @since 1.0, 2021-07-12 19:25:52
  */
 public class AlipayCommerceEducateSignTokenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3826717411984143972L;
+	private static final long serialVersionUID = 1459854756313914253L;
 
 	/**
 	 * 加密TOKEN

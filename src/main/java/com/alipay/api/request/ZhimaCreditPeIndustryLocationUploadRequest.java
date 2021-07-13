@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.pe.industry.location.upload request
  * 
  * @author auto create
- * @since 1.0, 2021-03-12 10:52:55
+ * @since 1.0, 2021-07-13 15:44:12
  */
 public class ZhimaCreditPeIndustryLocationUploadRequest implements AlipayRequest<ZhimaCreditPeIndustryLocationUploadResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.user.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-02-14 16:29:18
+ * @since 1.0, 2021-07-13 15:44:06
  */
 public class AlipayCommerceLogisticsUserOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2181129728591224567L;
+	private static final long serialVersionUID = 3635961316252738256L;
 
 	/** 
 	 * 格式 : json , 目前 json 的 key 有 biz_unique_no

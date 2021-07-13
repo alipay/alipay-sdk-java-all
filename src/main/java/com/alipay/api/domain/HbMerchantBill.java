@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HbMerchantBill extends AlipayObject {
 
-	private static final long serialVersionUID = 4535152244385315975L;
+	private static final long serialVersionUID = 5313891155614363318L;
 
 	/**
 	 * 商家贴息金额

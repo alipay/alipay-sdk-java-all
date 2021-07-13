@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.underwrite.policy.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-26 16:46:10
+ * @since 1.0, 2021-07-13 15:44:54
  */
 public class AlipayInsUnderwritePolicyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1377775175761224328L;
+	private static final long serialVersionUID = 1376748289391799987L;
 
 	/** 
 	 * 保单

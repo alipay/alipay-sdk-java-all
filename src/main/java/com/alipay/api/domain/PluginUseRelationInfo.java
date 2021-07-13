@@ -9,11 +9,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 插件使用关系
  *
  * @author auto create
- * @since 1.0, 2021-05-08 12:03:28
+ * @since 1.0, 2021-07-12 19:32:25
  */
 public class PluginUseRelationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4265973143763181462L;
+	private static final long serialVersionUID = 8413337522513253153L;
+
+	/**
+	 * 邀测驳回原因
+	 */
+	@ApiField("beta_memo")
+	private String betaMemo;
+
+	/**
+	 * 邀测插件版本号
+	 */
+	@ApiField("beta_plugin_version")
+	private String betaPluginVersion;
+
+	/**
+	 * 邀测二维码
+	 */
+	@ApiField("beta_qr_code_url")
+	private String betaQrCodeUrl;
+
+	/**
+	 * WAITCHECK-待确认;CHECKED-确认;REJECT-拒绝
+	 */
+	@ApiField("beta_status")
+	private String betaStatus;
 
 	/**
 	 * 激活时间
@@ -74,6 +98,34 @@ public class PluginUseRelationInfo extends AlipayObject {
 	 */
 	@ApiField("source_from")
 	private String sourceFrom;
+
+	public String getBetaMemo() {
+		return this.betaMemo;
+	}
+	public void setBetaMemo(String betaMemo) {
+		this.betaMemo = betaMemo;
+	}
+
+	public String getBetaPluginVersion() {
+		return this.betaPluginVersion;
+	}
+	public void setBetaPluginVersion(String betaPluginVersion) {
+		this.betaPluginVersion = betaPluginVersion;
+	}
+
+	public String getBetaQrCodeUrl() {
+		return this.betaQrCodeUrl;
+	}
+	public void setBetaQrCodeUrl(String betaQrCodeUrl) {
+		this.betaQrCodeUrl = betaQrCodeUrl;
+	}
+
+	public String getBetaStatus() {
+		return this.betaStatus;
+	}
+	public void setBetaStatus(String betaStatus) {
+		this.betaStatus = betaStatus;
+	}
 
 	public Date getGmtActive() {
 		return this.gmtActive;

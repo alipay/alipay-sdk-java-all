@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayWeiboPucChargeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2351186432213734965L;
+	private static final long serialVersionUID = 7693952452637442228L;
 
 	/** 
 	 * 返回页面内容

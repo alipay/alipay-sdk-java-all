@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝商户券信息查询
  *
  * @author auto create
- * @since 1.0, 2021-06-02 15:57:06
+ * @since 1.0, 2021-07-13 14:20:41
  */
 public class AlipayMarketingCampaignSelfVoucherQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5339214889266537348L;
+	private static final long serialVersionUID = 3788793124871963945L;
 
 	/**
 	 * 场景码：默认(DEFAULT) 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.order.cancel request
  * 
  * @author auto create
- * @since 1.0, 2019-11-27 20:38:24
+ * @since 1.0, 2021-07-13 10:42:00
  */
 public class AlipayMerchantOrderCancelRequest implements AlipayRequest<AlipayMerchantOrderCancelResponse> {
 

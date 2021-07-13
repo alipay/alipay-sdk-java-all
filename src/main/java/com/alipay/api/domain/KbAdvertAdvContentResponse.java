@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbAdvertAdvContentResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5663439652268219184L;
+	private static final long serialVersionUID = 8856987453814562157L;
 
 	/**
 	 * 二维码类型的内容模型（当content_type为codec时，返回该模型）

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.identification.customer.blacklist.query request
  * 
  * @author auto create
- * @since 1.0, 2019-06-19 10:50:01
+ * @since 1.0, 2021-07-13 10:41:55
  */
 public class ZolozIdentificationCustomerBlacklistQueryRequest implements AlipayRequest<ZolozIdentificationCustomerBlacklistQueryResponse> {
 

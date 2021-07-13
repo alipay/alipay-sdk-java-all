@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.promotion.dynamicurl.get response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-30 20:15:17
+ * @since 1.0, 2021-07-13 10:42:03
  */
 public class MybankCreditLoanapplyPromotionDynamicurlGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2579282312211843516L;
+	private static final long serialVersionUID = 8174875643974765678L;
 
 	/** 
 	 * 推广活动需要跳转的动态链接地址

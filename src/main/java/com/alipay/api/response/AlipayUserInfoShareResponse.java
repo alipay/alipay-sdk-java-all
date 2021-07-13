@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-11 10:15:22
+ * @since 1.0, 2021-07-13 15:45:06
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1624263797917923343L;
+	private static final long serialVersionUID = 1238576498211636399L;
 
 	/** 
 	 * 详细地址。

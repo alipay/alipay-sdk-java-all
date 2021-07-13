@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动券领取咨询结果
  *
  * @author auto create
- * @since 1.0, 2021-06-24 14:17:58
+ * @since 1.0, 2021-07-12 10:03:05
  */
 public class ActivityConsultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3698194483247961646L;
+	private static final long serialVersionUID = 8148134547721677993L;
 
 	/**
 	 * 活动id
@@ -20,7 +20,7 @@ public class ActivityConsultInfo extends AlipayObject {
 	private String activityId;
 
 	/**
-	 * 错误码：领取超限(RECEIVE_LIMIT_EXCEEDED)，券余量不足(VOUCHER_INSUFFICIENT_EXCEPTION)，通用领取异常(RECEIVE_FAIL_ERROR)
+	 * 错误码：领取超限(RECEIVE_LIMIT_EXCEEDED)，券余量不足(VOUCHER_INSUFFICIENT_EXCEPTION)，活动未处于有效期内(ACTIVITY_NOT_IN_TIME_EXCEPTION)，通用领取异常(RECEIVE_FAIL_ERROR)
 	 */
 	@ApiField("error_code")
 	private String errorCode;

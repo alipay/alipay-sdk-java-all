@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.mall.circle.recommenditem.query request
  * 
  * @author auto create
- * @since 1.0, 2020-07-06 10:12:20
+ * @since 1.0, 2021-07-13 15:44:01
  */
 public class KoubeiMallCircleRecommenditemQueryRequest implements AlipayRequest<KoubeiMallCircleRecommenditemQueryResponse> {
 

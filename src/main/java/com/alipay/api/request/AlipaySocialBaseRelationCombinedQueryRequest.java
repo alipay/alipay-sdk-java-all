@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.relation.combined.query request
  * 
  * @author auto create
- * @since 1.0, 2021-03-17 15:22:40
+ * @since 1.0, 2021-07-13 10:41:51
  */
 public class AlipaySocialBaseRelationCombinedQueryRequest implements AlipayRequest<AlipaySocialBaseRelationCombinedQueryResponse> {
 

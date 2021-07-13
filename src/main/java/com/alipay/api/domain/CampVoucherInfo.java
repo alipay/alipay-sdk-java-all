@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动和券模版信息
  *
  * @author auto create
- * @since 1.0, 2021-07-01 16:18:52
+ * @since 1.0, 2021-07-12 21:21:34
  */
 public class CampVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5785866555247879161L;
+	private static final long serialVersionUID = 4582122221344623454L;
 
 	/**
 	 * 活动id

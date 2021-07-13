@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.industry.location.upload response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-12 10:52:55
+ * @since 1.0, 2021-07-13 15:44:12
  */
 public class ZhimaCreditPeIndustryLocationUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8835317973628973296L;
+	private static final long serialVersionUID = 7731353313346956511L;
 
 	
 

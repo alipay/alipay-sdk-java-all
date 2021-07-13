@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDaoweiOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5757912392612291423L;
+	private static final long serialVersionUID = 6492712789253483177L;
 
 	/**
 	 * 到位业务订单号。用户在到位下单时，由到位系统生成的32位全局唯一数字 id。

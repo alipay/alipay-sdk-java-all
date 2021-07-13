@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.promo.intelligentguide.consult response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-13 17:15:34
+ * @since 1.0, 2021-07-13 15:44:56
  */
 public class KoubeiServindustryPromoIntelligentguideConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3515859256691938182L;
+	private static final long serialVersionUID = 3466141271763894775L;
 
 	/** 
 	 * 预计消费最大金额

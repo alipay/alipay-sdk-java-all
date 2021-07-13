@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.kids.account.bind request
  * 
  * @author auto create
- * @since 1.0, 2019-08-08 11:22:48
+ * @since 1.0, 2021-07-13 15:44:05
  */
 public class AlipayCommerceKidsAccountBindRequest implements AlipayRequest<AlipayCommerceKidsAccountBindResponse> {
 
