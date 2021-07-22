@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.edu.kt.billing.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:45:02
+ * @since 1.0, 2021-07-14 10:09:16
  */
 public class AlipayEcoEduKtBillingSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6883241473173537222L;
+	private static final long serialVersionUID = 1154322989385655531L;
 
 	/** 
 	 * 教育缴费平台的账单号

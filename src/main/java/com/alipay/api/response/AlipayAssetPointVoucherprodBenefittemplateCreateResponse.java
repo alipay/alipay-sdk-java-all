@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.voucherprod.benefittemplate.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-28 00:00:21
+ * @since 1.0, 2021-07-14 10:10:11
  */
 public class AlipayAssetPointVoucherprodBenefittemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4812691152243361492L;
+	private static final long serialVersionUID = 8234196474592624795L;
 
 	/** 
 	 * 资产id，即创建的权益模板的id

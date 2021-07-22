@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotDeviceAudioCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4134259732624161811L;
+	private static final long serialVersionUID = 2115624795458652989L;
 
 	/**
 	 * 文本内容. 文本的最大长度为25个字符.注意: 语音合成不支持英文字母和!,@,#,$,%,^...等特殊字符, 如果包含则会自动过滤

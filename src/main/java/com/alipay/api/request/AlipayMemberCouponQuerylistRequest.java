@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.member.coupon.querylist request
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 10:42:00
+ * @since 1.0, 2021-07-14 13:59:05
  */
 public class AlipayMemberCouponQuerylistRequest implements AlipayRequest<AlipayMemberCouponQuerylistResponse> {
 

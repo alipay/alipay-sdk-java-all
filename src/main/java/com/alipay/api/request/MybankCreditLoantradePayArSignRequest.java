@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loantrade.pay.ar.sign request
  * 
  * @author auto create
- * @since 1.0, 2020-09-29 20:28:58
+ * @since 1.0, 2021-07-14 10:10:19
  */
 public class MybankCreditLoantradePayArSignRequest implements AlipayRequest<MybankCreditLoantradePayArSignResponse> {
 

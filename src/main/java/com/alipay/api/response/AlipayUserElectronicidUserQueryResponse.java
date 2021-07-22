@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.electronicid.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:45:05
+ * @since 1.0, 2021-07-14 10:09:19
  */
 public class AlipayUserElectronicidUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8429994765186743354L;
+	private static final long serialVersionUID = 1682769346469369511L;
 
 	/** 
 	 * 地址。用机构的AES加密后值。

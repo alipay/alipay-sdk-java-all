@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.order.checkin.orderinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-02 09:21:25
+ * @since 1.0, 2021-07-14 10:10:12
  */
 public class AlipayBusinessOrderCheckinOrderinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7718353927156486245L;
+	private static final long serialVersionUID = 6164178669919983273L;
 
 	/** 
 	 * 行业侧入住单唯一标识

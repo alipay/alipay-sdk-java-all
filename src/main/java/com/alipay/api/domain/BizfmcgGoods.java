@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 快消商品信息
  *
  * @author auto create
- * @since 1.0, 2021-07-12 21:21:34
+ * @since 1.0, 2021-07-14 19:47:31
  */
 public class BizfmcgGoods extends AlipayObject {
 
-	private static final long serialVersionUID = 3715355128144237412L;
+	private static final long serialVersionUID = 5212492525235329245L;
 
 	/**
 	 * 商品编码

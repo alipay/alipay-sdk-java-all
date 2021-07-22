@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑外部券使用接口
  *
  * @author auto create
- * @since 1.0, 2018-08-22 11:32:05
+ * @since 1.0, 2021-07-14 14:00:01
  */
 public class AlipayOfflineMarketingVoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3566795914551451458L;
+	private static final long serialVersionUID = 6311717815411299124L;
 
 	/**
 	 * 约定的扩展参数

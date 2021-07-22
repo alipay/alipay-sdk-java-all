@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境汇款查询收款人信息
  *
  * @author auto create
- * @since 1.0, 2021-06-21 20:17:07
+ * @since 1.0, 2021-07-15 15:07:50
  */
 public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6889677559849831724L;
+	private static final long serialVersionUID = 1571366138427927544L;
 
 	/**
 	 * 相对于汇率的基准货币
@@ -24,6 +24,12 @@ public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("exchange_rate")
 	private String exchangeRate;
+
+	/**
+	 * 扩展信息
+	 */
+	@ApiField("extend_info")
+	private String extendInfo;
 
 	/**
 	 * 登录ID
@@ -133,6 +139,13 @@ public class AlipayOverseasRemitBeneficialinfoQueryModel extends AlipayObject {
 	}
 	public void setExchangeRate(String exchangeRate) {
 		this.exchangeRate = exchangeRate;
+	}
+
+	public String getExtendInfo() {
+		return this.extendInfo;
+	}
+	public void setExtendInfo(String extendInfo) {
+		this.extendInfo = extendInfo;
 	}
 
 	public String getLogonId() {

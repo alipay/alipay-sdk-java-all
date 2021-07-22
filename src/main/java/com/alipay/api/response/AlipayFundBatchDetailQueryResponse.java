@@ -11,18 +11,19 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-03 10:20:15
+ * @since 1.0, 2021-07-19 17:45:51
  */
 public class AlipayFundBatchDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8849188259661853759L;
+	private static final long serialVersionUID = 1516992342456935246L;
 
 	/** 
 	 * 1）当批次状态为INIT状态时，明细信息还未落地，返回明细信息为空
 2）如果以上都没有问题，返回明细为空，请检查是否以下情况导致：
-1. 校验商户只能查询自己上传的批次信息，批次号不存在或者不是该商户上传的批次。
-2. 查询条件没有查询到结果，包括总共5页，商户要求查询第6页的内容。
-3. 查询的状态不存在。
+  1. 校验商户只能查询自己上传的批次信息，批次号不存在或者不是该商户上传的批次。
+  2. 查询条件没有查询到结果，包括总共5页，商户要求查询第6页的内容。
+  3. 查询的状态不存在。
+3) 转账状态及错误码明细详情，参见 <a href="https://opendocs.alipay.com/pre-open/025fm2">批量转账状态及明细错误码说明</a> 。
 	 */
 	@ApiListField("acc_detail_list")
 	@ApiField("acc_detail_model")

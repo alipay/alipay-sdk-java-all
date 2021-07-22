@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.ExternalBillInfoResult;
 
 import com.alipay.api.AlipayResponse;
@@ -9,17 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.merchant.externalbill.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-15 15:33:11
+ * @since 1.0, 2021-07-21 17:00:17
  */
 public class AlipayEbppMerchantExternalbillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2862872852538796875L;
+	private static final long serialVersionUID = 1226379816966986692L;
 
 	/** 
 	 * 账单列表
 	 */
-	@ApiField("external_bill_list")
-	private ExternalBillInfoResult externalBillList;
+	@ApiListField("external_bill_list")
+	@ApiField("external_bill_info_result")
+	private List<ExternalBillInfoResult> externalBillList;
 
 	/** 
 	 * 当前页码
@@ -39,10 +42,10 @@ public class AlipayEbppMerchantExternalbillQueryResponse extends AlipayResponse 
 	@ApiField("total_count")
 	private Long totalCount;
 
-	public void setExternalBillList(ExternalBillInfoResult externalBillList) {
+	public void setExternalBillList(List<ExternalBillInfoResult> externalBillList) {
 		this.externalBillList = externalBillList;
 	}
-	public ExternalBillInfoResult getExternalBillList( ) {
+	public List<ExternalBillInfoResult> getExternalBillList( ) {
 		return this.externalBillList;
 	}
 

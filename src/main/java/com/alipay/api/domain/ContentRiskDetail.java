@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险规则详情
  *
  * @author auto create
- * @since 1.0, 2021-07-08 23:08:27
+ * @since 1.0, 2021-07-20 20:36:45
  */
 public class ContentRiskDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7471954131325976236L;
+	private static final long serialVersionUID = 6393865521889934263L;
 
 	/**
 	 * 规则编码
 	 */
 	@ApiField("code")
 	private String code;
+
+	/**
+	 * 当前规则对应的扩展信息
+	 */
+	@ApiField("ext_properties")
+	private String extProperties;
+
+	/**
+	 * 当前规则对应的转换后的原始审核素材
+	 */
+	@ApiField("generated_file")
+	private String generatedFile;
 
 	/**
 	 * 规则名称
@@ -67,6 +79,20 @@ public class ContentRiskDetail extends AlipayObject {
 	}
 	public void setCode(String code) {
 		this.code = code;
+	}
+
+	public String getExtProperties() {
+		return this.extProperties;
+	}
+	public void setExtProperties(String extProperties) {
+		this.extProperties = extProperties;
+	}
+
+	public String getGeneratedFile() {
+		return this.generatedFile;
+	}
+	public void setGeneratedFile(String generatedFile) {
+		this.generatedFile = generatedFile;
 	}
 
 	public String getName() {

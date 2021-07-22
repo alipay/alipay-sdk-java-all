@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7569589786961694167L;
+	private static final long serialVersionUID = 3393386343334677855L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -179,7 +179,7 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 
 	/**
 	 * 订单绝对超时时间。
-格式为yyyy-MM-dd HH:mm。
+格式为yyyy-MM-dd HH:mm:ss。
 注：time_express和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
 	 */
 	@ApiField("time_expire")

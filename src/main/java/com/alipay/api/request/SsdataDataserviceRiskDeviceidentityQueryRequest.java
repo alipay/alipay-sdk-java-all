@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.risk.deviceidentity.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2021-07-14 10:12:44
  */
 public class SsdataDataserviceRiskDeviceidentityQueryRequest implements AlipayRequest<SsdataDataserviceRiskDeviceidentityQueryResponse> {
 

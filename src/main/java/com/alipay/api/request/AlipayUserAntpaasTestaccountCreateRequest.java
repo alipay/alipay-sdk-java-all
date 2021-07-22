@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antpaas.testaccount.create request
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:45:04
+ * @since 1.0, 2021-07-14 10:09:18
  */
 public class AlipayUserAntpaasTestaccountCreateRequest implements AlipayRequest<AlipayUserAntpaasTestaccountCreateResponse> {
 

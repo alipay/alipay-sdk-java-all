@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.recommend.get request
  * 
  * @author auto create
- * @since 1.0, 2021-07-05 20:38:32
+ * @since 1.0, 2021-07-14 10:13:14
  */
 public class AlipayMobileRecommendGetRequest implements AlipayRequest<AlipayMobileRecommendGetResponse> {
 

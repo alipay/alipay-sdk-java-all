@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询消费者领券的活动列表
  *
  * @author auto create
- * @since 1.0, 2021-03-23 11:45:01
+ * @since 1.0, 2021-07-19 15:24:53
  */
 public class AlipayMarketingCampaignPromotionactivityConsumerviewBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1342242167681386896L;
+	private static final long serialVersionUID = 3431377616859951739L;
 
 	/**
 	 * 单品券场景下对应的goods_id,单次最多限制5个

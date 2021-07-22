@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝标准用户学信网在校信息授权查询
  *
  * @author auto create
- * @since 1.0, 2021-04-12 15:12:34
+ * @since 1.0, 2021-07-20 10:57:47
  */
 public class AlipayCommerceEducateXuexinIdentityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5158183656546875251L;
+	private static final long serialVersionUID = 6366443665136854783L;
 
 	/**
 	 * 证件号
@@ -28,25 +28,16 @@ public class AlipayCommerceEducateXuexinIdentityQueryModel extends AlipayObject 
 	/**
 	 * 教育层次
 SPECIALTY("专科", "0"),
-UNDERGRADUATE("本科", "1"),
-POSTGRADUATE("研究生班", "2"),
-MASTER("硕士研究生", "3"),
-DOCTOR("博士研究生", "4"),
-SECOND_DEGREE("第二学士学位", "5"),
-HIGH_SCHOOL_TO_UNDERGRADUATE("高升本", "6"),
-JUNIOR_COLLEGE_TO_UNDERGRADUATE("专升本", "7"),
-SECOND_UNDERGRADUATE_COURSE("第二本科", "8"),
-JUNIOR_COLLEGE_VOCATIONAL_COLLEGE("专科(高职)", "9"),
-SECOND_SPECIALTY("第二专科", "10"),
-GENERAL_CLASS_OF_NIGHT_UNIVERSITY("夜大电大函大普通班", "11"),
-UNIVERSITY("大学", "12"),
-OTHER("*", "13"),
+ UNDERGRADUATE("本科", "1"),
+ MASTER("硕士", "2"),
+ DOCTOR("博士", "3"),
+ SECOND_DEGREE("第二学士学位", "4")
 	 */
 	@ApiField("education_level")
 	private String educationLevel;
 
 	/**
-	 * 入学日期
+	 * 入学日期，学信网能力变更，目前无法交易入学时间准确性
 	 */
 	@ApiField("enroll_date")
 	private String enrollDate;

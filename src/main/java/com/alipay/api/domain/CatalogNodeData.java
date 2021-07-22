@@ -1,0 +1,42 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 品牌下可用类目详情
+ *
+ * @author auto create
+ * @since 1.0, 2021-07-14 16:36:18
+ */
+public class CatalogNodeData extends AlipayObject {
+
+	private static final long serialVersionUID = 2262415139575695966L;
+
+	/**
+	 * 类目id
+	 */
+	@ApiField("node_id")
+	private String nodeId;
+
+	/**
+	 * 类目名称
+	 */
+	@ApiField("node_nm")
+	private String nodeNm;
+
+	public String getNodeId() {
+		return this.nodeId;
+	}
+	public void setNodeId(String nodeId) {
+		this.nodeId = nodeId;
+	}
+
+	public String getNodeNm() {
+		return this.nodeNm;
+	}
+	public void setNodeNm(String nodeNm) {
+		this.nodeNm = nodeNm;
+	}
+
+}

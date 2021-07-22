@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.data.disease.identify request
  * 
  * @author auto create
- * @since 1.0, 2021-02-01 13:54:42
+ * @since 1.0, 2021-07-14 10:09:57
  */
 public class AlipayInsDataDiseaseIdentifyRequest implements AlipayRequest<AlipayInsDataDiseaseIdentifyResponse> {
 

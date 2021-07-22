@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.order.unlimited.query request
  * 
  * @author auto create
- * @since 1.0, 2020-06-20 10:58:53
+ * @since 1.0, 2021-07-14 10:13:14
  */
 public class AlipayMerchantOrderUnlimitedQueryRequest implements AlipayRequest<AlipayMerchantOrderUnlimitedQueryResponse> {
 

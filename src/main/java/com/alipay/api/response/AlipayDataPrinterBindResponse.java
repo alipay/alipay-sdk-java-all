@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.printer.bind response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 11:07:36
+ * @since 1.0, 2021-07-14 10:12:40
  */
 public class AlipayDataPrinterBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4787138921136616836L;
+	private static final long serialVersionUID = 1339593327945442688L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金提现
  *
  * @author auto create
- * @since 1.0, 2021-03-23 11:22:46
+ * @since 1.0, 2021-07-13 21:51:40
  */
 public class AlipayTradeServiceFundWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4862464799299439817L;
+	private static final long serialVersionUID = 2419522354898844671L;
 
 	/**
 	 * 用户支付宝UID
@@ -42,6 +42,38 @@ public class AlipayTradeServiceFundWithdrawModel extends AlipayObject {
 	 */
 	@ApiField("sub_biz_type")
 	private String subBizType;
+
+	/**
+	 * 待提现的银行卡账户名称
+	 */
+	@ApiField("withdraw_account_name")
+	private String withdrawAccountName;
+
+	/**
+	 * 待提现的银行卡账号
+	 */
+	@ApiField("withdraw_account_no")
+	private String withdrawAccountNo;
+
+	/**
+	 * 待提现的银行联行号
+	 */
+	@ApiField("withdraw_bank_branch_code")
+	private String withdrawBankBranchCode;
+
+	/**
+	 * 提现的银行机构id
+	 */
+	@ApiField("withdraw_bank_inst_id")
+	private String withdrawBankInstId;
+
+	/**
+	 * 待提现的银行卡类型
+DC:借记卡
+CC:贷记卡
+	 */
+	@ApiField("withdraw_card_type")
+	private String withdrawCardType;
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;
@@ -76,6 +108,41 @@ public class AlipayTradeServiceFundWithdrawModel extends AlipayObject {
 	}
 	public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
+	}
+
+	public String getWithdrawAccountName() {
+		return this.withdrawAccountName;
+	}
+	public void setWithdrawAccountName(String withdrawAccountName) {
+		this.withdrawAccountName = withdrawAccountName;
+	}
+
+	public String getWithdrawAccountNo() {
+		return this.withdrawAccountNo;
+	}
+	public void setWithdrawAccountNo(String withdrawAccountNo) {
+		this.withdrawAccountNo = withdrawAccountNo;
+	}
+
+	public String getWithdrawBankBranchCode() {
+		return this.withdrawBankBranchCode;
+	}
+	public void setWithdrawBankBranchCode(String withdrawBankBranchCode) {
+		this.withdrawBankBranchCode = withdrawBankBranchCode;
+	}
+
+	public String getWithdrawBankInstId() {
+		return this.withdrawBankInstId;
+	}
+	public void setWithdrawBankInstId(String withdrawBankInstId) {
+		this.withdrawBankInstId = withdrawBankInstId;
+	}
+
+	public String getWithdrawCardType() {
+		return this.withdrawCardType;
+	}
+	public void setWithdrawCardType(String withdrawCardType) {
+		this.withdrawCardType = withdrawCardType;
 	}
 
 }

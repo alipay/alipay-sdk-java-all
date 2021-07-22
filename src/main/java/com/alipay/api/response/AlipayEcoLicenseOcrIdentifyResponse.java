@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.license.ocr.identify response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-06 18:14:50
+ * @since 1.0, 2021-07-14 10:12:31
  */
 public class AlipayEcoLicenseOcrIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7152199833263532847L;
+	private static final long serialVersionUID = 5223465431587174798L;
 
 	/** 
 	 * 地址

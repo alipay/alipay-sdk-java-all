@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易结算相关信息。包含分账、补差等信息
  *
  * @author auto create
- * @since 1.0, 2020-03-10 15:50:40
+ * @since 1.0, 2021-07-14 19:40:35
  */
 public class TradeSettleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3375642785838976131L;
+	private static final long serialVersionUID = 6323112699257648781L;
 
 	/**
 	 * 交易结算明细信息

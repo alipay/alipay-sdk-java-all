@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-01 16:40:46
+ * @since 1.0, 2021-07-14 10:10:19
  */
 public class MybankCreditSceneprodCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6332911588664899116L;
+	private static final long serialVersionUID = 3659149916176613763L;
 
 	/** 
 	 * 请求结果响应说明唯一序号，包含多个字符串

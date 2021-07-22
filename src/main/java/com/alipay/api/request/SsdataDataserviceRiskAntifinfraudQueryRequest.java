@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.risk.antifinfraud.query request
  * 
  * @author auto create
- * @since 1.0, 2020-02-10 16:15:33
+ * @since 1.0, 2021-07-14 10:12:44
  */
 public class SsdataDataserviceRiskAntifinfraudQueryRequest implements AlipayRequest<SsdataDataserviceRiskAntifinfraudQueryResponse> {
 

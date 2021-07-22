@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.recharge.item.get response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:45:01
+ * @since 1.0, 2021-07-14 10:09:15
  */
 public class AlipayEbppRechargeItemGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5227993621434969994L;
+	private static final long serialVersionUID = 4393968533858543882L;
 
 	/** 
 	 * 错误码

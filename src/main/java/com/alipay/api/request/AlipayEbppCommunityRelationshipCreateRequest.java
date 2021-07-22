@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.community.relationship.create request
  * 
  * @author auto create
- * @since 1.0, 2021-07-05 19:10:21
+ * @since 1.0, 2021-07-19 11:37:53
  */
 public class AlipayEbppCommunityRelationshipCreateRequest implements AlipayRequest<AlipayEbppCommunityRelationshipCreateResponse> {
 

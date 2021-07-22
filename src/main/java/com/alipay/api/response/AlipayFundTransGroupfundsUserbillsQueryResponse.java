@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.groupfunds.userbills.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-06 17:56:32
+ * @since 1.0, 2021-07-14 10:09:56
  */
 public class AlipayFundTransGroupfundsUserbillsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6875948675276665451L;
+	private static final long serialVersionUID = 8794297282415623712L;
 
 	/** 
 	 * 当前用户涉及的流水模型列表，仅返回实际存在的流水数据

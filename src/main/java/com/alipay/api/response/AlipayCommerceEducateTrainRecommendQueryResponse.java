@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.train.recommend.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-19 20:13:27
+ * @since 1.0, 2021-07-14 10:12:36
  */
 public class AlipayCommerceEducateTrainRecommendQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6298876916699381443L;
+	private static final long serialVersionUID = 6634429314188311751L;
 
 	/** 
 	 * 根据年龄推荐的学段

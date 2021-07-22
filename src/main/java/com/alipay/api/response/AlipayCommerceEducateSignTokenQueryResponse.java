@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.sign.token.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:44:04
+ * @since 1.0, 2021-07-21 16:07:38
  */
 public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3117311544432896251L;
+	private static final long serialVersionUID = 4891657488172752319L;
 
 	/** 
 	 * 业务场景类型标识
@@ -27,7 +27,7 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	private String certNo;
 
 	/** 
-	 * 证件类型（"1","居民身份证"）
+	 * 证件类型（"1","居民身份证"，"X":"学工号"）
 	 */
 	@ApiField("cert_type")
 	private String certType;

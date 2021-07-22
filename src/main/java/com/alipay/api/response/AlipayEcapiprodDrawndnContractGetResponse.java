@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ecapiprod.drawndn.contract.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2021-07-14 10:13:20
  */
 public class AlipayEcapiprodDrawndnContractGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6624875946681762464L;
+	private static final long serialVersionUID = 6444895339765214537L;
 
 	/** 
 	 * 合同的内容文本	String	合同的内容文本，为HTML格式

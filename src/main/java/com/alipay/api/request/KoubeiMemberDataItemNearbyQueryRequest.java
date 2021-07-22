@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.member.data.item.nearby.query request
  * 
  * @author auto create
- * @since 1.0, 2019-06-28 18:01:30
+ * @since 1.0, 2021-07-14 10:12:35
  */
 public class KoubeiMemberDataItemNearbyQueryRequest implements AlipayRequest<KoubeiMemberDataItemNearbyQueryResponse> {
 

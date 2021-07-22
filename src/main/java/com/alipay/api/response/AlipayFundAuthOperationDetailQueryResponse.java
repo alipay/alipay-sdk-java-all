@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-13 19:55:21
+ * @since 1.0, 2021-07-15 14:55:23
  */
 public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7127972951469416655L;
+	private static final long serialVersionUID = 2362524647785211813L;
 
 	/** 
 	 * 该笔资金操作流水opertion_id对应的操作金额，单位为：元（人民币）
@@ -74,6 +74,12 @@ PAY：支付
 	 */
 	@ApiField("operation_type")
 	private String operationType;
+
+	/** 
+	 * 授权单状态：INIT（初始状态：已创建未授权）、AUTHORIZED（已授权状态：授权成功，可以进行转支付或解冻操作）、FINISHED（完成状态：转支付完成且无剩余冻结资金）、CLOSED（关闭状态：授权未完成超时关闭或冻结资金全额解冻）
+	 */
+	@ApiField("order_status")
+	private String orderStatus;
 
 	/** 
 	 * 业务订单的简单描述，如商品名称等
@@ -249,6 +255,13 @@ CLOSED：关闭
 	}
 	public String getOperationType( ) {
 		return this.operationType;
+	}
+
+	public void setOrderStatus(String orderStatus) {
+		this.orderStatus = orderStatus;
+	}
+	public String getOrderStatus( ) {
+		return this.orderStatus;
 	}
 
 	public void setOrderTitle(String orderTitle) {

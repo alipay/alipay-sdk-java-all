@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.blueseaactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-02 11:20:20
+ * @since 1.0, 2021-07-14 10:13:47
  */
 public class AlipayOpenSpBlueseaactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6127794264613877887L;
+	private static final long serialVersionUID = 3243172482254171469L;
 
 	/** 
 	 * 详细地址

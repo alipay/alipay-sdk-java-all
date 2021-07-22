@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiQualityTestCloudacptBatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7149382812627821669L;
+	private static final long serialVersionUID = 1132221291682254611L;
 
 	/**
 	 * 活动id

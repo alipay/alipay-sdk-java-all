@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.goods.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-07 16:05:15
+ * @since 1.0, 2021-07-21 16:39:18
  */
 public class AlipayOverseasTravelGoodsSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5596181739575892951L;
+	private static final long serialVersionUID = 5426512549924455141L;
 
 	/** 
 	 * 商品状态，NORMAL表示如正在售卖，CLOSED表示下架；当syncStatus为SUCCESS时该值一定存在，其他状态不一定存在。

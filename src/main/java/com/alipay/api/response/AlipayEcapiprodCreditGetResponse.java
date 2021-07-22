@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ecapiprod.credit.get response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:45:01
+ * @since 1.0, 2021-07-14 10:12:31
  */
 public class AlipayEcapiprodCreditGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1267732964141377546L;
+	private static final long serialVersionUID = 5339857445764269274L;
 
 	/** 
 	 * 授信结果

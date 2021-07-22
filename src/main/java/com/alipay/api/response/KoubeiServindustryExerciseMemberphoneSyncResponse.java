@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.exercise.memberphone.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-31 16:05:22
+ * @since 1.0, 2021-07-14 10:12:36
  */
 public class KoubeiServindustryExerciseMemberphoneSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4869479164396558782L;
+	private static final long serialVersionUID = 7839942926631521513L;
 
 	/** 
 	 * 健身用户手机号与健身用户id映射

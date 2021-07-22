@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户智能活动效果预测接口
  *
  * @author auto create
- * @since 1.0, 2020-08-31 10:34:32
+ * @since 1.0, 2021-07-15 14:07:06
  */
 public class KoubeiMarketingDataSmartactivityForecastModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3867466942452937995L;
+	private static final long serialVersionUID = 6275413745237571637L;
 
 	/**
 	 * 活动配置CODE

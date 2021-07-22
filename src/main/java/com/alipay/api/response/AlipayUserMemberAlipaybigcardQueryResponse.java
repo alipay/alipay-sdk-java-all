@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.member.alipaybigcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-17 15:02:26
+ * @since 1.0, 2021-07-14 10:13:25
  */
 public class AlipayUserMemberAlipaybigcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1221596656584147318L;
+	private static final long serialVersionUID = 4434166435484567478L;
 
 	/** 
 	 * 支付宝大卡片展现信息（缓存类），缓存类是对实时性要求不高的透出内容。缓存类用于存在缓存中，在调用接口超时或者降级时取用。

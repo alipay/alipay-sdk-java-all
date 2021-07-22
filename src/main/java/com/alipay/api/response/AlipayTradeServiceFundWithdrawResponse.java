@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.service.fund.withdraw response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-23 11:22:46
+ * @since 1.0, 2021-07-13 21:52:39
  */
 public class AlipayTradeServiceFundWithdrawResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7197595316629793479L;
+	private static final long serialVersionUID = 1876818952341333488L;
 
 	/** 
 	 * 实际提现金额,单位:元，精确到小数点后两位

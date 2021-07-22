@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.zhimabrief.sign request
  * 
  * @author auto create
- * @since 1.0, 2020-06-28 17:37:49
+ * @since 1.0, 2021-07-14 10:10:17
  */
 public class AlipayOpenAgentZhimabriefSignRequest implements AlipayUploadRequest<AlipayOpenAgentZhimabriefSignResponse> {
 

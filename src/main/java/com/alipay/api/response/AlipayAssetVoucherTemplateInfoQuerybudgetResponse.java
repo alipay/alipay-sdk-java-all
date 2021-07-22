@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAssetVoucherTemplateInfoQuerybudgetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6254312937341637792L;
+	private static final long serialVersionUID = 7215137553697816887L;
 
 	/** 
 	 * 券模板预算列表

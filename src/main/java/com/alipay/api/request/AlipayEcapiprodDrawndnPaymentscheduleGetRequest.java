@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ecapiprod.drawndn.paymentschedule.get request
  * 
  * @author auto create
- * @since 1.0, 2021-07-05 19:56:52
+ * @since 1.0, 2021-07-14 10:13:20
  */
 public class AlipayEcapiprodDrawndnPaymentscheduleGetRequest implements AlipayRequest<AlipayEcapiprodDrawndnPaymentscheduleGetResponse> {
 

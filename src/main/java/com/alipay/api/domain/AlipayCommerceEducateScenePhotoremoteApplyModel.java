@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * K12一脸通行通过集采照片开通申请
  *
  * @author auto create
- * @since 1.0, 2021-07-12 19:24:28
+ * @since 1.0, 2021-07-21 16:07:16
  */
 public class AlipayCommerceEducateScenePhotoremoteApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5336147748515742137L;
+	private static final long serialVersionUID = 7457894765623587493L;
 
 	/**
 	 * 证件号。
@@ -20,7 +20,7 @@ public class AlipayCommerceEducateScenePhotoremoteApplyModel extends AlipayObjec
 	private String certNo;
 
 	/**
-	 * 证件类型。{1:身份证，A:护照}
+	 * 证件类型。{1:身份证，X:学工号}
 	 */
 	@ApiField("cert_type")
 	private String certType;

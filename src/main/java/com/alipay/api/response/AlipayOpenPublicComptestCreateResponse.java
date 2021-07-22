@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.comptest.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-11 14:21:13
+ * @since 1.0, 2021-07-14 10:09:50
  */
 public class AlipayOpenPublicComptestCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3795936651958753644L;
+	private static final long serialVersionUID = 3549343561974183642L;
 
 	/** 
 	 * 1

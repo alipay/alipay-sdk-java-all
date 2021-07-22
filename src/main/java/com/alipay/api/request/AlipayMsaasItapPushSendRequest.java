@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.itap.push.send request
  * 
  * @author auto create
- * @since 1.0, 2021-03-09 20:25:16
+ * @since 1.0, 2021-07-14 10:09:48
  */
 public class AlipayMsaasItapPushSendRequest implements AlipayRequest<AlipayMsaasItapPushSendResponse> {
 

@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 插件使用关系
  *
  * @author auto create
- * @since 1.0, 2021-07-12 19:32:25
+ * @since 1.0, 2021-07-21 14:07:03
  */
 public class PluginUseRelationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8413337522513253153L;
+	private static final long serialVersionUID = 2864717928122969726L;
 
 	/**
 	 * 邀测驳回原因
@@ -80,6 +82,13 @@ public class PluginUseRelationInfo extends AlipayObject {
 	 */
 	@ApiField("plugin_status")
 	private String pluginStatus;
+
+	/**
+	 * 分端版本配置信息列表
+	 */
+	@ApiListField("plugin_use_config_info_list")
+	@ApiField("plugin_use_config_info")
+	private List<PluginUseConfigInfo> pluginUseConfigInfoList;
 
 	/**
 	 * 插件版本
@@ -174,6 +183,13 @@ public class PluginUseRelationInfo extends AlipayObject {
 	}
 	public void setPluginStatus(String pluginStatus) {
 		this.pluginStatus = pluginStatus;
+	}
+
+	public List<PluginUseConfigInfo> getPluginUseConfigInfoList() {
+		return this.pluginUseConfigInfoList;
+	}
+	public void setPluginUseConfigInfoList(List<PluginUseConfigInfo> pluginUseConfigInfoList) {
+		this.pluginUseConfigInfoList = pluginUseConfigInfoList;
 	}
 
 	public String getPluginVersion() {

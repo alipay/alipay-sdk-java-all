@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.license.ocr.identify request
  * 
  * @author auto create
- * @since 1.0, 2019-09-06 18:14:50
+ * @since 1.0, 2021-07-14 10:12:31
  */
 public class AlipayEcoLicenseOcrIdentifyRequest implements AlipayRequest<AlipayEcoLicenseOcrIdentifyResponse> {
 

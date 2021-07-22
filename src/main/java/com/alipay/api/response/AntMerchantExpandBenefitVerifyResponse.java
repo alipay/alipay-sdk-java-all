@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.benefit.verify response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-23 20:51:41
+ * @since 1.0, 2021-07-14 10:13:54
  */
 public class AntMerchantExpandBenefitVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4499732566551998232L;
+	private static final long serialVersionUID = 1258858175375676258L;
 
 	/** 
 	 * 扩展的业务信息

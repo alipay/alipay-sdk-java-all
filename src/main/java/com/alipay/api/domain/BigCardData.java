@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BigCardData extends AlipayObject {
 
-	private static final long serialVersionUID = 1489998599861655878L;
+	private static final long serialVersionUID = 5395433728547919887L;
 
 	/**
 	 * 主文本行动点文案，在卡片的button处展现

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.merge.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-23 14:25:18
+ * @since 1.0, 2021-07-14 10:09:56
  */
 public class AlipayFundTransMergeDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5441555947644673293L;
+	private static final long serialVersionUID = 4769978734581369599L;
 
 	/** 
 	 * 分渠道金额汇总

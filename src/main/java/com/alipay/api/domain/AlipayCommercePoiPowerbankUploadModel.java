@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电宝点位上传
  *
  * @author auto create
- * @since 1.0, 2021-06-22 10:34:18
+ * @since 1.0, 2021-07-16 19:12:40
  */
 public class AlipayCommercePoiPowerbankUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1268468877842464581L;
+	private static final long serialVersionUID = 8623922757283871519L;
 
 	/**
 	 * 地址描述
@@ -26,7 +26,7 @@ public class AlipayCommercePoiPowerbankUploadModel extends AlipayObject {
 	private String canBorrow;
 
 	/**
-	 * 充电宝机柜总共可以借还的充电宝数量（一共能放几个充电宝）.
+	 * 充电宝机柜总共可以借还的充电宝数量（一共能放几个充电宝).如无法统计可以不传
 	 */
 	@ApiField("can_borrow_cnt")
 	private String canBorrowCnt;

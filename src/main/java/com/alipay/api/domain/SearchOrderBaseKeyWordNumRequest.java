@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可配置基础关键词数量
  *
  * @author auto create
- * @since 1.0, 2021-07-12 16:46:28
+ * @since 1.0, 2021-07-21 20:26:17
  */
 public class SearchOrderBaseKeyWordNumRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8858119685699986296L;
+	private static final long serialVersionUID = 8728538556928864386L;
 
 	/**
 	 * appid

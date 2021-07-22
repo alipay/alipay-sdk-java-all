@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCplifeResidentinfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5229549139333143761L;
+	private static final long serialVersionUID = 2541284261717458796L;
 
 	
 

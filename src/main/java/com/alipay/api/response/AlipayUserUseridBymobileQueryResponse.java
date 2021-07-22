@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.userid.bymobile.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-30 10:12:53
+ * @since 1.0, 2021-07-14 10:09:58
  */
 public class AlipayUserUseridBymobileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1281729791852983364L;
+	private static final long serialVersionUID = 1224394787459712625L;
 
 	/** 
 	 * 绑定手机号对应的支付宝userId列表【注意：最多返回10个】

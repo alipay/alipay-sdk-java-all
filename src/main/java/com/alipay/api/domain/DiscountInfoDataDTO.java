@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单优惠信息;电子小票场景时，必填
  *
  * @author auto create
- * @since 1.0, 2021-06-23 17:27:04
+ * @since 1.0, 2021-07-20 14:17:58
  */
 public class DiscountInfoDataDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6373537944352971221L;
+	private static final long serialVersionUID = 1231818865634118423L;
 
 	/**
 	 * 优惠金额

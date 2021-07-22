@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.pocketmoney.auth.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-15 10:20:38
+ * @since 1.0, 2021-07-14 10:13:47
  */
 public class AlipayPayAppPocketmoneyAuthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8633244632449448446L;
+	private static final long serialVersionUID = 1362612884869977594L;
 
 	/** 
 	 * 授权结果，枚举值（ok：授权成功，exist：已经存在）

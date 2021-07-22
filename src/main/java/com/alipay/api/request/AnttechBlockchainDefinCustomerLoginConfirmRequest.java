@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.customer.login.confirm request
  * 
  * @author auto create
- * @since 1.0, 2020-09-23 16:02:04
+ * @since 1.0, 2021-07-14 10:13:56
  */
 public class AnttechBlockchainDefinCustomerLoginConfirmRequest implements AlipayRequest<AnttechBlockchainDefinCustomerLoginConfirmResponse> {
 

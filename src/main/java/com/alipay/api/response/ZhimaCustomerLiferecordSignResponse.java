@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.liferecord.sign response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-05 15:57:36
+ * @since 1.0, 2021-07-14 10:12:44
  */
 public class ZhimaCustomerLiferecordSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2895214573811311711L;
+	private static final long serialVersionUID = 2668464165746326511L;
 
 	/** 
 	 * 业务处理是否成功

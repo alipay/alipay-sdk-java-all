@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.craftsman.data.provider.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2021-07-02 15:42:31
+ * @since 1.0, 2021-07-14 10:10:02
  */
 public class KoubeiCraftsmanDataProviderBatchqueryRequest implements AlipayRequest<KoubeiCraftsmanDataProviderBatchqueryResponse> {
 

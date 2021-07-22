@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.config.chargeinst.search request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2021-07-14 10:13:19
  */
 public class AlipayEbppConfigChargeinstSearchRequest implements AlipayRequest<AlipayEbppConfigChargeinstSearchResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.scene.photoremote.apply request
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:44:04
+ * @since 1.0, 2021-07-21 16:07:38
  */
 public class AlipayCommerceEducateScenePhotoremoteApplyRequest implements AlipayRequest<AlipayCommerceEducateScenePhotoremoteApplyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.benefit.verify request
  * 
  * @author auto create
- * @since 1.0, 2019-08-23 20:51:41
+ * @since 1.0, 2021-07-14 10:13:54
  */
 public class AntMerchantExpandBenefitVerifyRequest implements AlipayRequest<AntMerchantExpandBenefitVerifyResponse> {
 

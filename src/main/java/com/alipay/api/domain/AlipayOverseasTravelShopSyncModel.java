@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跨境游私域店铺数据同步
  *
  * @author auto create
- * @since 1.0, 2021-02-25 19:13:06
+ * @since 1.0, 2021-07-21 16:39:02
  */
 public class AlipayOverseasTravelShopSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6739324369873138377L;
+	private static final long serialVersionUID = 5176696266912845746L;
 
 	/**
 	 * 地图可以搜索的到的店铺详细地址。对于线下店铺，地址为必填，线上店铺为非必填。

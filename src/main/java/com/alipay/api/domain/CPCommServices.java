@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CPCommServices extends AlipayObject {
 
-	private static final long serialVersionUID = 1696324224324631623L;
+	private static final long serialVersionUID = 6173666614151285826L;
 
 	/**
 	 * 对于涉及收费类型的服务，返回收款帐号，若开发者没有为当前服务传入过物业收款帐号，则默认为授权物业的签约账号。

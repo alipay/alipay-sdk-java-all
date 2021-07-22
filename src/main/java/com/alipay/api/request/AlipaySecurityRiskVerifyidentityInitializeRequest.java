@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.verifyidentity.initialize request
  * 
  * @author auto create
- * @since 1.0, 2019-06-28 10:49:32
+ * @since 1.0, 2021-07-14 10:12:42
  */
 public class AlipaySecurityRiskVerifyidentityInitializeRequest implements AlipayRequest<AlipaySecurityRiskVerifyidentityInitializeResponse> {
 
