@@ -7,36 +7,30 @@ package com.alipay.service.schema.model.enums;
 import com.alipay.service.schema.model.rule.AttributeRule;
 
 /**
- * @author junying
- * @version : AttrRuleTypeEnum.java, v 0.1 2021年03月17日 9:39 下午 junying Exp $
+ * 属性规则类型枚举
+ *
+ * @author hongbi.wang
+ * @version $Id: AttrRuleTypeEnum.java, v 0.1 2021年03月01日 11:33 AM hongbi.wang Exp $
  */
 public enum AttrRuleTypeEnum {
 
-    REQUIRED("required","是否必填,true/false"),
-
-    MAXLENGTH("maxLength","字符串要求最大长度"),
-
-    MINLENGTH("minLength","字符串要求最小长度"),
-
-    EXCLUSIVEMAXIMUM("exclusiveMaximum","最大值,包含最大值,<="),
-
-    EXCLUSIVEMINIMUM("exclusiveMinimum","最小值,包含最小值,>="),
-
-    MAXVALUE("maxValue","最大值,不包含最大值,<"),
-
-    MINVALUE("minValue","最小值,不包含最小值,>"),
-
-    MAXSIZE("maxSize","最大个数"),
-
-    MINSIZE("minSize","最大个数"),
-
-    PRECISION("precision","精度"),
-
-    PATTERN("pattern","正则表达式"),
-
-    VALUETYPE("valueType","值类型"),
-
-    DEVTIP("devTip","输入提示");
+    REQUIRED("required", "是否必填,true/false"),
+    MAXLENGTH("maxLength", "字符串要求最大长度"),
+    MINLENGTH("minLength", "字符串要求最小长度"),
+    EXCLUSIVEMAXIMUM("exclusiveMaximum", "最大值,包含最大值,<="),
+    EXCLUSIVEMINIMUM("exclusiveMinimum", "最小值,包含最小值,>="),
+    MAXIMUM("maximum", "最大值,不包含最大值,<"),
+    MINIMUM("minimum", "最小值,不包含最小值,>"),
+    MAXSIZE("maxSize", "最大个数"),
+    MINSIZE("minSize", "最大个数"),
+    PRECISION("precision", "精度"),
+    PATTERN("pattern", "正则表达式"),
+    VALUETYPE("valueType", "值类型"),
+    DEVTIP("devTip", "输入提示"),
+    HEIGHT("height", "高度"),
+    WIDTH("width", "长度"),
+    URLSCHEMA("urlSchema", "url格式"),
+    ;
 
     private String code;
     private String name;

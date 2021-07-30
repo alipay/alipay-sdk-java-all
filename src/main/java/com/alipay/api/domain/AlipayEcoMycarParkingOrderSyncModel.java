@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单同步接口
  *
  * @author auto create
- * @since 1.0, 2021-07-13 18:01:58
+ * @since 1.0, 2021-07-28 11:00:21
  */
 public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3811715798141194169L;
+	private static final long serialVersionUID = 2294766392613315639L;
 
 	/**
 	 * 车牌
@@ -82,6 +82,12 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	private String parkingName;
 
 	/**
+	 * 支付宝业务流水号，用于记录车辆从驶入到驶出的全流程。通过 alipay.eco.mycar.parking.enterinfo.sync(车辆驶入接口)接口获取。
+	 */
+	@ApiField("parking_record_id")
+	private String parkingRecordId;
+
+	/**
 	 * 缴费金额，保留小数点后两位
 	 */
 	@ApiField("pay_money")
@@ -101,6 +107,12 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("pay_type")
 	private String payType;
+
+	/**
+	 * 间连商户ID
+	 */
+	@ApiField("smid")
+	private String smid;
 
 	/**
 	 * 停车缴费用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
@@ -186,6 +198,13 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 		this.parkingName = parkingName;
 	}
 
+	public String getParkingRecordId() {
+		return this.parkingRecordId;
+	}
+	public void setParkingRecordId(String parkingRecordId) {
+		this.parkingRecordId = parkingRecordId;
+	}
+
 	public String getPayMoney() {
 		return this.payMoney;
 	}
@@ -205,6 +224,13 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	}
 	public void setPayType(String payType) {
 		this.payType = payType;
+	}
+
+	public String getSmid() {
+		return this.smid;
+	}
+	public void setSmid(String smid) {
+		this.smid = smid;
 	}
 
 	public String getUserId() {

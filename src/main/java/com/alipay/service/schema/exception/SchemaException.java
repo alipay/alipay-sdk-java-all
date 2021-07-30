@@ -7,10 +7,10 @@ package com.alipay.service.schema.exception;
 import com.alipay.service.schema.model.enums.SchemaErrorEnum;
 
 /**
- * @author junying
- * @version : ServiceSchemaException.java, v 0.1 2021年03月17日 9:00 下午 junying Exp $
+ * @author hongbi.wang
+ * @version $Id: SchemaException.java, v 0.1 2021年02月26日 6:03 PM hongbi.wang Exp $
  */
-public class ServiceSchemaException extends Exception {
+public class SchemaException extends Exception {
 
     private String errorCode;
 
@@ -18,18 +18,18 @@ public class ServiceSchemaException extends Exception {
 
     private String attributeId;
 
-    public ServiceSchemaException(SchemaErrorEnum errorEnum) {
+    public SchemaException(SchemaErrorEnum errorEnum) {
         super(errorEnum.getErrorMessage());
         this.errorCode = errorEnum.getErrorCode();
         this.errorMessage = errorEnum.getErrorMessage();
     }
 
-    public ServiceSchemaException(String errorCode, String errorMessage) {
+    public SchemaException(String errorCode, String errorMessage) {
         this.errorCode = errorCode;
         this.errorMessage = errorMessage;
     }
 
-    public ServiceSchemaException(SchemaErrorEnum errorCode, String attributeId) {
+    public SchemaException(SchemaErrorEnum errorCode, String attributeId) {
         super(errorCode.getErrorMessage());
         String msg = errorCode.getErrorMessage();
         if (attributeId != null && attributeId.length() != 0) {
@@ -40,13 +40,13 @@ public class ServiceSchemaException extends Exception {
         this.attributeId = attributeId;
     }
 
-    public ServiceSchemaException(String errorCode, String errorMessage, String attributeId) {
+    public SchemaException(String errorCode, String errorMessage, String attributeId) {
         this.errorCode = errorCode;
         this.errorMessage = errorMessage;
         this.attributeId = attributeId;
     }
 
-    public ServiceSchemaException(SchemaErrorEnum errorCode, Throwable e) {
+    public SchemaException(SchemaErrorEnum errorCode, Throwable e) {
         super(errorCode.getErrorMessage(), e);
         this.errorCode = errorCode.getErrorCode();
         this.errorMessage = errorCode.getErrorMessage();

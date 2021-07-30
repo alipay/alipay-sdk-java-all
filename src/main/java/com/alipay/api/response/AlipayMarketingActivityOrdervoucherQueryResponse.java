@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-13 17:30:21
+ * @since 1.0, 2021-07-25 10:50:23
  */
 public class AlipayMarketingActivityOrdervoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3245312752594548621L;
+	private static final long serialVersionUID = 8738914321771656351L;
 
 	/** 
 	 * 活动id
@@ -89,6 +89,12 @@ activity_operation_status字段判断活动是否处于CREATING状态。
 	private BelongMerchantInfo belongMerchantInfo;
 
 	/** 
+	 * 商家券业务标签，影响商家券对C端用户的展示形式。 枚举值 兑换券团购场景 GROUP_BUY_EXCHANGE_VOUCHER 兑换券代金场景 FIX_EXCHANGE_VOUCHER
+	 */
+	@ApiField("biz_tag")
+	private String bizTag;
+
+	/** 
 	 * 用户引导相关配置
 	 */
 	@ApiField("customer_guide")
@@ -130,12 +136,7 @@ activity_operation_status字段判断活动是否处于CREATING状态。
 
 	/** 
 	 * 券类型。
-
-
-
-枚举值：
-
-FIX_VOUCHER：满减券。
+ 枚举值： FIX_VOUCHER：固定面额满减券 EXCHANGE_VOUCHER: 兑换券
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
@@ -179,6 +180,13 @@ FIX_VOUCHER：满减券。
 	}
 	public BelongMerchantInfo getBelongMerchantInfo( ) {
 		return this.belongMerchantInfo;
+	}
+
+	public void setBizTag(String bizTag) {
+		this.bizTag = bizTag;
+	}
+	public String getBizTag( ) {
+		return this.bizTag;
 	}
 
 	public void setCustomerGuide(CustomerGuide customerGuide) {

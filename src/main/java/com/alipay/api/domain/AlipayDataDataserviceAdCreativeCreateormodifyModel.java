@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增或修改创意
  *
  * @author auto create
- * @since 1.0, 2021-05-08 11:47:53
+ * @since 1.0, 2021-07-28 22:57:11
  */
 public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8476993767164113854L;
+	private static final long serialVersionUID = 7851223426583266121L;
 
 	/**
 	 * 创意交互行为属性实例值
@@ -110,6 +110,12 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	@ApiListField("region_list")
 	@ApiField("string")
 	private List<String> regionList;
+
+	/**
+	 * 广告关联rta请求编号
+	 */
+	@ApiField("rta_id")
+	private String rtaId;
 
 	/**
 	 * 创意状态，ENABLE-生效；PAUSE-暂停
@@ -244,6 +250,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	}
 	public void setRegionList(List<String> regionList) {
 		this.regionList = regionList;
+	}
+
+	public String getRtaId() {
+		return this.rtaId;
+	}
+	public void setRtaId(String rtaId) {
+		this.rtaId = rtaId;
 	}
 
 	public String getStatus() {

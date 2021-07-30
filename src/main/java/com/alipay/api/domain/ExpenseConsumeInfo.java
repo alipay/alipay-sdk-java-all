@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2021-06-08 17:56:07
+ * @since 1.0, 2021-07-29 15:35:26
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4113724733485544184L;
+	private static final long serialVersionUID = 5623914235385764113L;
 
 	/**
 	 * 公司账号ID
@@ -26,13 +26,13 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String billNo;
 
 	/**
-	 * 账单类型（支付、退款、转账）
+	 * 账单类型（CONSUME-消费账单、REFUND-退款、TRANSFER-转账）
 	 */
 	@ApiField("bill_type")
 	private String billType;
 
 	/**
-	 * 账单分类
+	 * 账单行业分类（交通出行，餐饮美食，商业服务，日用百货等等）
 	 */
 	@ApiField("category_name")
 	private String categoryName;
@@ -80,7 +80,13 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String payeeName;
 
 	/**
-	 * 支付使用的项目号（成本中心）
+	 * 费控制度中的项目编号
+	 */
+	@ApiField("project_id")
+	private String projectId;
+
+	/**
+	 * 支付使用的项目号（成本中心）此字段废弃
 	 */
 	@ApiField("projiect_id")
 	private String projiectId;
@@ -166,6 +172,13 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	}
 	public void setPayeeName(String payeeName) {
 		this.payeeName = payeeName;
+	}
+
+	public String getProjectId() {
+		return this.projectId;
+	}
+	public void setProjectId(String projectId) {
+		this.projectId = projectId;
 	}
 
 	public String getProjiectId() {

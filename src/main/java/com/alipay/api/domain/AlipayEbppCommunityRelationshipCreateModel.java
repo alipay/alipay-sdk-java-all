@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业小区绑定关系创建
  *
  * @author auto create
- * @since 1.0, 2021-07-19 11:37:53
+ * @since 1.0, 2021-07-29 14:47:27
  */
 public class AlipayEbppCommunityRelationshipCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8123433767639285997L;
+	private static final long serialVersionUID = 2441381731993825232L;
 
 	/**
 	 * 每个小区默认的收款帐号为授权物业的支付宝账号，默认不用传该参数。
@@ -41,6 +41,12 @@ BANK_CARD_ID - 银行卡号
 	 */
 	@ApiField("account_type")
 	private String accountType;
+
+	/**
+	 * 物业费允许跳缴 （1允许，0不允许，默认1） 若服务商接口设置小区“不允许跳缴” ，则物业缴费单页，用户点击“完成选择”时，针对费用类型为“物业费、公共维护金、公共能耗费、水费公摊费、电费公摊费、储藏室物业费”的账单选择板块， 均新增逻辑判断 （如下判断是各费种各自独立判断） 1）若最早账期的账单已勾选、且勾选的账单月份连续、且服务商/物业设置的必勾选的账单均已勾选，则流程继续 2）若最早账期的账单未勾选、或者出现勾选的账单月份不连续的情况，则弹框提示“根据物业公司要求，部分费用类型的账单不允许跳缴（跳缴：跳过前序未缴费月份进行账单缴费）”、且无法进入下一步
+	 */
+	@ApiField("allow_skip_pay")
+	private String allowSkipPay;
 
 	/**
 	 * 外部户号查询跳转链接,占位符使用#xxx#模式，xxx为占位符枚举，目前支持的枚举值为:communityShortName
@@ -124,6 +130,13 @@ BANK_CARD_ID - 银行卡号
 	}
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
+	}
+
+	public String getAllowSkipPay() {
+		return this.allowSkipPay;
+	}
+	public void setAllowSkipPay(String allowSkipPay) {
+		this.allowSkipPay = allowSkipPay;
 	}
 
 	public String getBillkeyUrl() {

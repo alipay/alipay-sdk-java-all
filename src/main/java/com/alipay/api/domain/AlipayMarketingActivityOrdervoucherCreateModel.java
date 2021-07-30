@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建订单券
  *
  * @author auto create
- * @since 1.0, 2021-05-12 23:07:51
+ * @since 1.0, 2021-07-29 16:33:31
  */
 public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8878492729192139128L;
+	private static final long serialVersionUID = 6294878688289798412L;
 
 	/**
 	 * 活动名称。
@@ -29,9 +29,21 @@ public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject
 说明：
 如果该复杂对象不填。则默认为该商家券活动的归属者是调用者本人。
 如果填写，则认为该商家券活动的归属者是该商户。
+
+限制:服务商身份接入时必传
 	 */
 	@ApiField("belong_merchant_info")
 	private BelongMerchantInfo belongMerchantInfo;
+
+	/**
+	 * 商家券业务标签，影响商家券对C端用户的展示形式。
+
+枚举值
+兑换券团购场景 GROUP_BUY_EXCHANGE_VOUCHER
+兑换券代金场景 FIX_EXCHANGE_VOUCHER
+	 */
+	@ApiField("biz_tag")
+	private String bizTag;
 
 	/**
 	 * 码模式。
@@ -43,7 +55,7 @@ MERCHANT_UPLOAD：商户上传自定义code，发券时系统随机选取上传�
 	private String codeMode;
 
 	/**
-	 * 用户引导相关配置
+	 * 自定义入口
 	 */
 	@ApiField("customer_guide")
 	private CustomerGuide customerGuide;
@@ -103,7 +115,9 @@ publish_start_time 间隔必须小于等于180天
 	 * 券类型。
 
 枚举值：
-FIX_VOUCHER：满减券。
+FIX_VOUCHER：满减券
+
+EXCHANGE_VOUCHER: 兑换券
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
@@ -126,6 +140,13 @@ FIX_VOUCHER：满减券。
 	}
 	public void setBelongMerchantInfo(BelongMerchantInfo belongMerchantInfo) {
 		this.belongMerchantInfo = belongMerchantInfo;
+	}
+
+	public String getBizTag() {
+		return this.bizTag;
+	}
+	public void setBizTag(String bizTag) {
+		this.bizTag = bizTag;
 	}
 
 	public String getCodeMode() {

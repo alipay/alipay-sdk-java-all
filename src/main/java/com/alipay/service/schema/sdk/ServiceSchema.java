@@ -4,20 +4,16 @@
  */
 package com.alipay.service.schema.sdk;
 
-import com.alipay.service.schema.model.option.Option;
-
-import java.util.List;
-
 /**
  * @author junying
  * @version : ServiceSchema.java, v 0.1 2021年03月24日 4:48 下午 junying Exp $
  */
 public class ServiceSchema {
 
-    private String serviceName;
-    private String serviceDesc;
+    private String     serviceName;
+    private String     serviceDesc;
     private ServiceUrl serviceUrl;
-    private Poi Poi;
+    private Poi        Poi;
 
     /**
      * Getter method for property <tt>serviceName</tt>.

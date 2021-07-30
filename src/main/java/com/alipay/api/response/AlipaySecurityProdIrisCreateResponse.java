@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdIrisCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6424846117983817331L;
+	private static final long serialVersionUID = 7121524464231975357L;
 
 	/** 
 	 * 虹膜注册的关联token，用于关联跨设备分次注册

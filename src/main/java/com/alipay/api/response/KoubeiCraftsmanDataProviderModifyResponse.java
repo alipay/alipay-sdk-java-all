@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCraftsmanDataProviderModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4194198646439124652L;
+	private static final long serialVersionUID = 1791157871113183188L;
 
 	
 

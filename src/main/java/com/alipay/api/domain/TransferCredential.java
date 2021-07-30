@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 证件信息
  *
  * @author auto create
- * @since 1.0, 2020-12-31 14:30:31
+ * @since 1.0, 2021-07-28 12:10:09
  */
 public class TransferCredential extends AlipayObject {
 
-	private static final long serialVersionUID = 7864692571337844159L;
+	private static final long serialVersionUID = 1522524253643785593L;
 
 	/**
 	 * 证件号码

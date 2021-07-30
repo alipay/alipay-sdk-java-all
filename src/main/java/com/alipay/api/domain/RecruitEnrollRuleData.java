@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitEnrollRuleData extends AlipayObject {
 
-	private static final long serialVersionUID = 8862663542292682213L;
+	private static final long serialVersionUID = 7578952837284581563L;
 
 	/**
 	 * 素材的要求，json字符串，使用时需要把此字符串解析成json对象

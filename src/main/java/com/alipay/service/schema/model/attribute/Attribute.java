@@ -4,40 +4,49 @@
  */
 package com.alipay.service.schema.model.attribute;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.alipay.service.schema.model.rule.AttributeRule;
-import org.dom4j.Element;
-
-import com.alipay.service.schema.exception.ServiceSchemaException;
+import com.alipay.service.schema.exception.SchemaException;
 import com.alipay.service.schema.model.enums.AttrTypeEnum;
 import com.alipay.service.schema.model.enums.AttrValueTypeEnum;
 import com.alipay.service.schema.model.enums.SchemaErrorEnum;
 import com.alipay.service.schema.model.option.Option;
+import com.alipay.service.schema.model.rule.AttributeRule;
 import com.alipay.service.schema.util.StringUtil;
 import com.alipay.service.schema.util.XmlUtils;
+import org.dom4j.Element;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * @author junying
- * @version : Attribute.java, v 0.1 2021年03月17日 9:56 下午 junying Exp $
+ * schema的属性
+ *
+ * @author hongbi.wang
+ * @version $Id: Attribute.java, v 0.1 2021年02月26日 5:41 PM hongbi.wang Exp $
  */
 public abstract class Attribute {
 
-    private String id;
-    private String name;
-    private AttrTypeEnum type;
-    private AttrValueTypeEnum valueType;
-    private List<AttributeRule> rules = new ArrayList<AttributeRule>();
-    private List<Option> options = new ArrayList<Option>();
+    private String              id;
+    private String              name;
+    private AttrTypeEnum        type;
+    private AttrValueTypeEnum   valueType;
+    private List<AttributeRule> rules   = new ArrayList<AttributeRule>();
+    private List<Option>        options = new ArrayList<Option>();
 
     /**
      * 转换成document的元素
      *
      * @return
-     * @throws ServiceSchemaException
+     * @throws SchemaException
      */
-    public abstract Element toElement() throws ServiceSchemaException;
+    public abstract Element toElement() throws SchemaException;
+
+    /**
+     * 转换成document的元素
+     *
+     * @return
+     * @throws SchemaException
+     */
+    public abstract Element toValueElement() throws SchemaException;
 
     public void addRule(AttributeRule rule) {
         this.rules.add(rule);
@@ -48,7 +57,7 @@ public abstract class Attribute {
     }
 
     protected void appendRulesElement(Element parent, List<AttributeRule> rules,
-                                      String attributeId) throws ServiceSchemaException {
+                                      String attributeId) throws SchemaException {
         if (rules == null || rules.size() <= 0) {
             return;
         }
@@ -60,7 +69,7 @@ public abstract class Attribute {
     }
 
     protected void appendOptionsElement(Element parent, List<Option> options,
-                                        String attributeId) throws ServiceSchemaException {
+                                        String attributeId) throws SchemaException {
         if (options == null || options.size() <= 0) {
             return;
         }
@@ -73,13 +82,13 @@ public abstract class Attribute {
     }
 
     protected void appendAttributeValues(Attribute attribute,
-                                         Element parent) throws ServiceSchemaException {
+                                         Element parent) throws SchemaException {
         if (attribute.getType() == AttrTypeEnum.SINGLE) {
             appendSingleAttributValue(parent, attribute);
         } else if (attribute.getType() == AttrTypeEnum.MULTI) {
             appendMultiAttributValue(parent, attribute);
         } else {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_TYPE_ERROR, attribute.getId());
+            throw new SchemaException(SchemaErrorEnum.ATTR_TYPE_ERROR, attribute.getId());
         }
     }
 
@@ -99,6 +108,15 @@ public abstract class Attribute {
             if (!StringUtil.isEmpty(value)) {
                 valueElm.setText(value);
             }
+        }
+    }
+
+    protected void checkAttribute() throws SchemaException {
+        if (StringUtil.isEmpty(this.id)) {
+            throw new SchemaException(SchemaErrorEnum.ATTR_MISS_ID);
+        }
+        if (this.getType() == null || StringUtil.isEmpty(this.getType().getType())) {
+            throw new SchemaException(SchemaErrorEnum.ATTR_MISS_TYPE, this.id);
         }
     }
 

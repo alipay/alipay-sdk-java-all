@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汇款金额信息
  *
  * @author auto create
- * @since 1.0, 2020-12-31 14:30:51
+ * @since 1.0, 2021-07-28 12:10:29
  */
 public class TransferAmount extends AlipayObject {
 
-	private static final long serialVersionUID = 6631626749116519783L;
+	private static final long serialVersionUID = 2355915545333592532L;
 
 	/**
 	 * 币种

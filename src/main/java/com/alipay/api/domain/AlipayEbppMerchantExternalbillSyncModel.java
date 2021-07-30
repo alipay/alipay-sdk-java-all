@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 动账同步
  *
  * @author auto create
- * @since 1.0, 2021-07-21 15:52:05
+ * @since 1.0, 2021-07-29 14:52:20
  */
 public class AlipayEbppMerchantExternalbillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5285772929815511965L;
+	private static final long serialVersionUID = 4331141335459611614L;
 
 	/**
 	 * yyyyMMdd+0(DB_FLAG)+0070(SYSTEM_FLAG)+018(SUB_BIZ_FLAG,新建)+0000(预留)+DB_SPLIT(BIZ_TYPE+SUB_BIZTYPE+MERCHANT_CODE, 2位)+TABLE_FLAG(MERCHANT_CODE, 2位)+8位全局唯一nextValue
@@ -70,7 +70,9 @@ PROPERTY_DECORATION_DEPOSIT/装修押金，
 PROPERTY_REFUSE_COLLECTION/垃圾清运费，
 PROPERTY_PAID_SERVICE/有偿服务费，
 PROPERTY_WATER_SHARING/水费公摊费，
-PROPERTY_ELECTRIC_SHARING/电费公摊费。
+PROPERTY_ELECTRIC_SHARING/电费公摊费,
+PROPERTY_DECORATION_MANAGEMENT/装修管理费,
+PROPERTY_HEATING_FEE/代收取暖费。
 	 */
 	@ApiField("fee_type")
 	private String feeType;

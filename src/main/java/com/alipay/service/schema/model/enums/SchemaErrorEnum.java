@@ -5,8 +5,10 @@
 package com.alipay.service.schema.model.enums;
 
 /**
- * @author junying
- * @version : SchemaErrorEnum.java, v 0.1 2021年03月17日 9:54 下午 junying Exp $
+ * schema错误枚举
+ *
+ * @author hongbi.wang
+ * @version $Id: SchemaErrorEnum.java, v 0.1 2021年03月01日 10:51 AM hongbi.wang Exp $
  */
 public enum SchemaErrorEnum {
 

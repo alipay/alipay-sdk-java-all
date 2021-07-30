@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发放商家券
  *
  * @author auto create
- * @since 1.0, 2021-07-03 11:02:29
+ * @since 1.0, 2021-07-29 00:41:49
  */
 public class AlipayMarketingActivityOrdervoucherSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1712224159586765279L;
+	private static final long serialVersionUID = 7347317296823453934L;
 
 	/**
 	 * 优惠券活动id
@@ -30,10 +30,19 @@ public class AlipayMarketingActivityOrdervoucherSendModel extends AlipayObject {
 	private Date bizDt;
 
 	/**
+	 * 推广渠道信息。
+由支付宝公私域跳转到服务商小程序时带入。例如
+aalipays://platformapi/startapp?appId=2021002147682XXX&page=pages/main/mian&query=chInfo%3DchInfo_promotion  其中chInfo为支付宝带入投放渠道信息，需要在调用发券接口时传入
+	 */
+	@ApiField("ch_info")
+	private String chInfo;
+
+	/**
 	 * 用户领券之后在服务商(商户)侧提供的券详情展示页面。在支付宝卡包中展示链接，用户点击可以跳转到服务商券详情页。
 
 限制:
 该字段在兑换券场景下必传。
+链接必须是alipays开头的小程序链接，详见《小程序scheme链接介绍》https://opendocs.alipay.com/support/01rb18
 	 */
 	@ApiField("merchant_order_url")
 	private String merchantOrderUrl;
@@ -84,6 +93,13 @@ ZHIFUBAO_TRADE_CHANNEL： 支付宝交易渠道
 	}
 	public void setBizDt(Date bizDt) {
 		this.bizDt = bizDt;
+	}
+
+	public String getChInfo() {
+		return this.chInfo;
+	}
+	public void setChInfo(String chInfo) {
+		this.chInfo = chInfo;
 	}
 
 	public String getMerchantOrderUrl() {

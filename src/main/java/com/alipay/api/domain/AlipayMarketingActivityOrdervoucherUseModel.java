@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单券核销
  *
  * @author auto create
- * @since 1.0, 2021-05-12 20:32:31
+ * @since 1.0, 2021-07-29 14:29:26
  */
 public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2431443129658612236L;
+	private static final long serialVersionUID = 3115487363921369898L;
 
 	/**
 	 * 优惠券活动id
@@ -63,7 +63,17 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 支付宝门店id
+	 * 用户核销优惠券的代运营商业关系门店id，调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id。
+限制:
+传入的门店id必须是创建商家券customer_guide对象中real_shop_ids中的门店id。
+	 */
+	@ApiField("real_shop_id")
+	private String realShopId;
+
+	/**
+	 * 用户核销优惠券的支付门店id,调用接口ant.merchant.expand.shop.create创建门店返回的门店id。
+限制:
+传入的门店id必须是创建商家券customer_guide对象中store_ids中的门店id
 	 */
 	@ApiField("store_id")
 	private String storeId;
@@ -144,6 +154,13 @@ OTHER_TRADE_CHANNEL：
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getRealShopId() {
+		return this.realShopId;
+	}
+	public void setRealShopId(String realShopId) {
+		this.realShopId = realShopId;
 	}
 
 	public String getStoreId() {

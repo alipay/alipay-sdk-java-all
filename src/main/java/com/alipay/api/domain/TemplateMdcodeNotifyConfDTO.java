@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateMdcodeNotifyConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4651717434665413885L;
+	private static final long serialVersionUID = 2258854963162566824L;
 
 	/**
 	 * 扩展参数信息；

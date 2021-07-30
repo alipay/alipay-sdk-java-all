@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BrandRegistrationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3397731952878656738L;
+	private static final long serialVersionUID = 1578264818624354876L;
 
 	/**
 	 * 商标有效期(结束日期)

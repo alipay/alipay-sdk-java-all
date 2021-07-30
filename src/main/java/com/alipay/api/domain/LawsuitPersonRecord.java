@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LawsuitPersonRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 8535974562765484774L;
+	private static final long serialVersionUID = 5318471295613698787L;
 
 	/**
 	 * 曝光台列表

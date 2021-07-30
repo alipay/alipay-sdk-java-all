@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部账单上传
  *
  * @author auto create
- * @since 1.0, 2021-07-21 15:52:11
+ * @since 1.0, 2021-07-29 14:47:36
  */
 public class AlipayEbppMerchantExternalbillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2837487848499341518L;
+	private static final long serialVersionUID = 5364614333939843263L;
 
 	/**
 	 * 账期金额,单位元
@@ -70,7 +70,9 @@ PROPERTY_DECORATION_DEPOSIT/装修押金，
 PROPERTY_REFUSE_COLLECTION/垃圾清运费，
 PROPERTY_PAID_SERVICE/有偿服务费，
 PROPERTY_WATER_SHARING/水费公摊费，
-PROPERTY_ELECTRIC_SHARING/电费公摊费。
+PROPERTY_ELECTRIC_SHARING/电费公摊费,
+PROPERTY_DECORATION_MANAGEMENT/装修管理费,
+PROPERTY_HEATING_FEE/代收取暖费。
 	 */
 	@ApiField("fee_type")
 	private String feeType;

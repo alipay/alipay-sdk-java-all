@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CustScpInstallmentBudgetVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4566275981423646267L;
+	private static final long serialVersionUID = 5854111687752517428L;
 
 	/**
 	 * 是否可以还款

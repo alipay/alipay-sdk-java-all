@@ -4,19 +4,18 @@
  */
 package com.alipay.service.schema.model.attribute;
 
+import com.alipay.service.schema.exception.SchemaException;
+import com.alipay.service.schema.util.XmlUtils;
+import org.dom4j.Element;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import org.dom4j.Element;
-
-import com.alipay.service.schema.exception.ServiceSchemaException;
-import com.alipay.service.schema.model.enums.SchemaErrorEnum;
-import com.alipay.service.schema.util.StringUtil;
-import com.alipay.service.schema.util.XmlUtils;
-
 /**
- * @author junying
- * @version : ComplexAttribute.java, v 0.1 2021年03月17日 9:57 下午 junying Exp $
+ * 复合属性
+ *
+ * @author hongbi.wang
+ * @version $Id: ComplexAttribute.java, v 0.1 2021年02月26日 5:47 PM hongbi.wang Exp $
  */
 public class ComplexAttribute extends Attribute {
 
@@ -27,17 +26,11 @@ public class ComplexAttribute extends Attribute {
     }
 
     @Override
-    public Element toElement() throws ServiceSchemaException {
+    public Element toElement() throws SchemaException {
+
+        checkAttribute();
+
         Element attributeNode = XmlUtils.createRootElement("attribute");
-        if (StringUtil.isEmpty(this.getId())) {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_MISS_ID);
-        }
-        if (this.getType() == null || StringUtil.isEmpty(this.getType().getType())) {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_MISS_TYPE, this.getId());
-        }
-        if (this.getType() == null) {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_TYPE_ERROR, this.getId());
-        }
         attributeNode.addAttribute("id", this.getId());
         attributeNode.addAttribute("name", this.getName());
         attributeNode.addAttribute("type", this.getType().getType());
@@ -60,6 +53,32 @@ public class ComplexAttribute extends Attribute {
 
         }
         appendRulesElement(attributeNode, this.getRules(), this.getId());
+
+        return attributeNode;
+    }
+
+    @Override
+    public Element toValueElement() throws SchemaException {
+        checkAttribute();
+
+        Element attributeNode = XmlUtils.createRootElement("attribute");
+        attributeNode.addAttribute("id", this.getId());
+        attributeNode.addAttribute("name", this.getName());
+        attributeNode.addAttribute("type", this.getType().getType());
+        attributeNode.addAttribute("valueType", this.getValueType().getCode());
+
+        Element attributesElm = XmlUtils.appendElement(attributeNode, "attributes");
+        for (Attribute attribute : attributes) {
+            Element attributeElm = XmlUtils.appendElement(attributesElm, "attribute");
+            attributeElm.addAttribute("id", attribute.getId());
+            attributeElm.addAttribute("name", attribute.getName());
+            attributeElm.addAttribute("type", attribute.getType().getType());
+            attributeElm.addAttribute("valueType", attribute.getValueType().getCode());
+
+            //value
+            appendAttributeValues(attribute, attributeElm);
+
+        }
 
         return attributeNode;
     }

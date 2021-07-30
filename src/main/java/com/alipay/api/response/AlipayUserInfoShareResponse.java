@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:19
+ * @since 1.0, 2021-07-26 13:51:27
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5136628368617982273L;
+	private static final long serialVersionUID = 5738618187841888563L;
 
 	/** 
 	 * 详细地址。
@@ -50,7 +50,7 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 
 	/** 
 	 * 【证件类型】0:身份证 1:护照 2:军官证 3:士兵证 4:回乡证 5:临时身份证 6:户口簿 7:警官证 8:台胞证 9:营业执照10:其它证件 11:港澳居民来往内地通行证 12:台湾居民来往大陆通行证 13:台湾居民居住证 14:港澳居民居住证
- 15:港澳身份证【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+ 15:港澳身份证 16:外国人永久居住证【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
 	 */
 	@ApiField("cert_type")
 	private String certType;

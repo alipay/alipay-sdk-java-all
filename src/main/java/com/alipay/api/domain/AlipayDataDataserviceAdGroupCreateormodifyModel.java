@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建/修改单元
  *
  * @author auto create
- * @since 1.0, 2021-05-12 22:04:01
+ * @since 1.0, 2021-07-28 22:56:58
  */
 public class AlipayDataDataserviceAdGroupCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1354293949781837519L;
+	private static final long serialVersionUID = 8384312796171691459L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
 	 */
 	@ApiField("biz_token")
 	private String bizToken;
+
+	/**
+	 * 数据集id列表
+	 */
+	@ApiListField("conversion_data_id_list")
+	@ApiField("string")
+	private List<String> conversionDataIdList;
 
 	/**
 	 * 转化事件编号（废弃）。若此字段不为空，则要求conversion_type也不为空，且此转化事件与转化事件类型conversion_type匹配
@@ -133,6 +140,13 @@ OUTER_KOUBEI_CROWD_TAG_LIST：口碑人群
 	}
 	public void setBizToken(String bizToken) {
 		this.bizToken = bizToken;
+	}
+
+	public List<String> getConversionDataIdList() {
+		return this.conversionDataIdList;
+	}
+	public void setConversionDataIdList(List<String> conversionDataIdList) {
+		this.conversionDataIdList = conversionDataIdList;
 	}
 
 	public String getConversionId() {

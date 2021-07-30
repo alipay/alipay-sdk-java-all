@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费项目
  *
  * @author auto create
- * @since 1.0, 2020-12-31 14:46:32
+ * @since 1.0, 2021-07-28 12:10:09
  */
 public class TransferPaymentItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3454496372564899576L;
+	private static final long serialVersionUID = 5137989994279775849L;
 
 	/**
 	 * 缴费接收日期，yyyy-MM-DD

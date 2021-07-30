@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备档案拓展信息
  *
  * @author auto create
- * @since 1.0, 2021-07-19 19:36:29
+ * @since 1.0, 2021-07-29 21:25:01
  */
 public class DeviceExtParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5817955483895642267L;
+	private static final long serialVersionUID = 1587697321447577614L;
+
+	/**
+	 * 商户编号，由ISV定义，需要保证在ISV下唯一
+	 */
+	@ApiField("external_id")
+	private String externalId;
 
 	/**
 	 * 外部门店id
@@ -50,6 +56,13 @@ public class DeviceExtParams extends AlipayObject {
 	 */
 	@ApiField("terminal_bind_info")
 	private String terminalBindInfo;
+
+	public String getExternalId() {
+		return this.externalId;
+	}
+	public void setExternalId(String externalId) {
+		this.externalId = externalId;
+	}
 
 	public String getExternalShopId() {
 		return this.externalShopId;

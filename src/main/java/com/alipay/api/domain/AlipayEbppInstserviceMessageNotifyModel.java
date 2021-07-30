@@ -7,20 +7,38 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构服务通知
  *
  * @author auto create
- * @since 1.0, 2020-04-09 16:03:22
+ * @since 1.0, 2021-07-27 20:39:34
  */
 public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5132589463742528855L;
+	private static final long serialVersionUID = 2159691556672671797L;
 
 	/**
-	 * 账单机构缩写，广东移动，江苏电网
+	 * 余额
+	 */
+	@ApiField("balance")
+	private String balance;
+
+	/**
+	 * 账单金额
+	 */
+	@ApiField("bill_amount")
+	private String billAmount;
+
+	/**
+	 * 账单日期等时间格式
+	 */
+	@ApiField("bill_date")
+	private String billDate;
+
+	/**
+	 * 账单机构缩写，广东移动，江苏电网，支付宝分配
 	 */
 	@ApiField("bill_inst")
 	private String billInst;
 
 	/**
-	 * 如浙江电力，浙江移动等
+	 * 如浙江电力，浙江移动等，支付宝分配
 	 */
 	@ApiField("bill_inst_desc")
 	private String billInstDesc;
@@ -30,6 +48,24 @@ public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 	 */
 	@ApiField("bill_key")
 	private String billKey;
+
+	/**
+	 * 账单缴清截止日期
+	 */
+	@ApiField("bill_last_date")
+	private String billLastDate;
+
+	/**
+	 * 通知流水号
+	 */
+	@ApiField("bill_no")
+	private String billNo;
+
+	/**
+	 * 账单业务类型
+	 */
+	@ApiField("bill_type")
+	private String billType;
 
 	/**
 	 * 业务类型，通信，缴费，还款等动帐服务通知
@@ -56,7 +92,7 @@ public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 	private String notifyDesc;
 
 	/**
-	 * 通知功能码
+	 * 通知功能码，支付宝分配
 	 */
 	@ApiField("notify_type")
 	private String notifyType;
@@ -68,10 +104,49 @@ public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 	private String subBizType;
 
 	/**
+	 * 阀值金额，低额触发的阀值
+	 */
+	@ApiField("threshold_amount")
+	private String thresholdAmount;
+
+	/**
+	 * 用户地址
+	 */
+	@ApiField("user_address")
+	private String userAddress;
+
+	/**
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 姓名
+	 */
+	@ApiField("user_name")
+	private String userName;
+
+	public String getBalance() {
+		return this.balance;
+	}
+	public void setBalance(String balance) {
+		this.balance = balance;
+	}
+
+	public String getBillAmount() {
+		return this.billAmount;
+	}
+	public void setBillAmount(String billAmount) {
+		this.billAmount = billAmount;
+	}
+
+	public String getBillDate() {
+		return this.billDate;
+	}
+	public void setBillDate(String billDate) {
+		this.billDate = billDate;
+	}
 
 	public String getBillInst() {
 		return this.billInst;
@@ -92,6 +167,27 @@ public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 	}
 	public void setBillKey(String billKey) {
 		this.billKey = billKey;
+	}
+
+	public String getBillLastDate() {
+		return this.billLastDate;
+	}
+	public void setBillLastDate(String billLastDate) {
+		this.billLastDate = billLastDate;
+	}
+
+	public String getBillNo() {
+		return this.billNo;
+	}
+	public void setBillNo(String billNo) {
+		this.billNo = billNo;
+	}
+
+	public String getBillType() {
+		return this.billType;
+	}
+	public void setBillType(String billType) {
+		this.billType = billType;
 	}
 
 	public String getBizType() {
@@ -136,11 +232,32 @@ public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 		this.subBizType = subBizType;
 	}
 
+	public String getThresholdAmount() {
+		return this.thresholdAmount;
+	}
+	public void setThresholdAmount(String thresholdAmount) {
+		this.thresholdAmount = thresholdAmount;
+	}
+
+	public String getUserAddress() {
+		return this.userAddress;
+	}
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
+	}
+
 	public String getUserId() {
 		return this.userId;
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getUserName() {
+		return this.userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

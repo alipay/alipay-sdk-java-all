@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantKbcloudClouduserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6636742471552769955L;
+	private static final long serialVersionUID = 1529652551987335749L;
 
 	/** 
 	 * 口碑云主账号数据列表

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.material.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2021-06-05 15:59:16
+ * @since 1.0, 2021-07-30 09:57:36
  */
 public class AlipayMarketingMaterialImageUploadRequest implements AlipayUploadRequest<AlipayMarketingMaterialImageUploadResponse> {
 
@@ -25,11 +25,28 @@ public class AlipayMarketingMaterialImageUploadRequest implements AlipayUploadRe
 	 */
 	private FileItem fileContent;
 
+	/** 
+	* 文件业务标识.
+
+该字段某些场景下必选.
+具体该字段在哪些场景下需要传入，会在不同的接口处进行描述。
+
+例如：alipay.marketing.activity.ordervoucher.create接口的voucher_image字段.就清楚描述了.需要使用该接口上传图片，同时指定file_key为PROMO_VOUCHER_IMAGE
+	 */
+	private String fileKey;
+
 	public void setFileContent(FileItem fileContent) {
 		this.fileContent = fileContent;
 	}
 	public FileItem getFileContent() {
 		return this.fileContent;
+	}
+
+	public void setFileKey(String fileKey) {
+		this.fileKey = fileKey;
+	}
+	public String getFileKey() {
+		return this.fileKey;
 	}
 	private String terminalType;
 	private String terminalInfo;
@@ -92,6 +109,7 @@ public class AlipayMarketingMaterialImageUploadRequest implements AlipayUploadRe
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("file_key", this.fileKey);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

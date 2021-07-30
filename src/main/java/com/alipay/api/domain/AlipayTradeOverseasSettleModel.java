@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一境内收单跨境结算接口
  *
  * @author auto create
- * @since 1.0, 2021-06-30 21:25:01
+ * @since 1.0, 2021-07-30 13:45:30
  */
 public class AlipayTradeOverseasSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5568293764141926545L;
+	private static final long serialVersionUID = 1658193423183715843L;
 
 	/**
 	 * 跨境结算的人民币金额，单位为元；等于交易金额 (实际为实收金额)，加上净补差金额，减去已退款金额，减去净收费金额，再减去净分账金额，
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 扩展参数
+	 */
+	@ApiField("extend_params")
+	private OverseasExtendParams extendParams;
 
 	/**
 	 * 跨境结算的外币币种
@@ -42,6 +48,13 @@ public class AlipayTradeOverseasSettleModel extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public OverseasExtendParams getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(OverseasExtendParams extendParams) {
+		this.extendParams = extendParams;
 	}
 
 	public String getForeignSettleCurrency() {

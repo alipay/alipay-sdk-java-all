@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数据集同步
  *
  * @author auto create
- * @since 1.0, 2021-06-09 17:00:17
+ * @since 1.0, 2021-07-28 22:57:02
  */
 public class AlipayDataDataserviceAdDatasetSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5753441195846694471L;
+	private static final long serialVersionUID = 1196681582832826533L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -51,6 +51,12 @@ LOCAL_TRANSACTION-本地生活订单数据
 	 */
 	@ApiField("data_type")
 	private String dataType;
+
+	/**
+	 * 商户id
+	 */
+	@ApiField("principal_id")
+	private String principalId;
 
 	/**
 	 * 商户在支付宝灯火pb侧的唯一标志
@@ -110,6 +116,13 @@ LOCAL_TRANSACTION-本地生活订单数据
 	}
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
+	}
+
+	public String getPrincipalId() {
+		return this.principalId;
+	}
+	public void setPrincipalId(String principalId) {
+		this.principalId = principalId;
 	}
 
 	public String getPrincipalTag() {

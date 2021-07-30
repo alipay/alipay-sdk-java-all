@@ -7,20 +7,18 @@ package com.alipay.service.schema.model.enums;
 import com.alipay.service.schema.util.StringUtil;
 
 /**
- * @author junying
- * @version : AttrValueTypeEnum.java, v 0.1 2021年03月17日 9:52 下午 junying Exp $
+ * 服务属性值类型
+ *
+ * @author hongbi.wang
+ * @version $Id: AttrValueTypeEnum.java, v 0.1 2021年03月01日 1:59 PM hongbi.wang Exp $
  */
 public enum AttrValueTypeEnum {
 
-    TEXT("text","文本类型"),
-
-    BOOLEAN("boolean","boolean类型"),
-
-    NUMERIC("numeric","数据类型"),
-
-    ENUM("enum","枚举型"),
-
-    OBJECT("object","对象型");
+    TEXT("text", "文本类型"),
+    BOOLEAN("boolean", "boolean类型"),
+    NUMERIC("numeric", "数据类型"),
+    ENUM("enum", "枚举型"),
+    OBJECT("object", "对象型");
 
     private String code;
     private String name;

@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2021-06-09 19:15:59
+ * @since 1.0, 2021-07-28 22:56:42
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 5524327195898913477L;
+	private static final long serialVersionUID = 2759919275232822155L;
 
 	/**
 	 * 留资流水号，用于source=XLIGHT
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
+
+	/**
+	 * 转化金额，单位分
+	 */
+	@ApiField("conversion_amount")
+	private String conversionAmount;
 
 	/**
 	 * 转化事件ID
@@ -47,6 +53,12 @@ public class ConversionData extends AlipayObject {
 	private String creativeId;
 
 	/**
+	 * 数据集id
+	 */
+	@ApiField("data_id")
+	private String dataId;
+
+	/**
 	 * 单元ID
 	 */
 	@ApiField("group_id")
@@ -57,6 +69,12 @@ public class ConversionData extends AlipayObject {
 	 */
 	@ApiField("plan_id")
 	private String planId;
+
+	/**
+	 * 商户在灯火pb端的id, 可代替principal_tag
+	 */
+	@ApiField("principal_id")
+	private String principalId;
 
 	/**
 	 * 商家标志
@@ -83,11 +101,25 @@ public class ConversionData extends AlipayObject {
 	@ApiField("uuid")
 	private String uuid;
 
+	/**
+	 * PID : 2088pid
+PHONE : 手机号
+	 */
+	@ApiField("uuid_type")
+	private String uuidType;
+
 	public String getBizNo() {
 		return this.bizNo;
 	}
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
+	}
+
+	public String getConversionAmount() {
+		return this.conversionAmount;
+	}
+	public void setConversionAmount(String conversionAmount) {
+		this.conversionAmount = conversionAmount;
 	}
 
 	public String getConversionId() {
@@ -118,6 +150,13 @@ public class ConversionData extends AlipayObject {
 		this.creativeId = creativeId;
 	}
 
+	public String getDataId() {
+		return this.dataId;
+	}
+	public void setDataId(String dataId) {
+		this.dataId = dataId;
+	}
+
 	public String getGroupId() {
 		return this.groupId;
 	}
@@ -130,6 +169,13 @@ public class ConversionData extends AlipayObject {
 	}
 	public void setPlanId(String planId) {
 		this.planId = planId;
+	}
+
+	public String getPrincipalId() {
+		return this.principalId;
+	}
+	public void setPrincipalId(String principalId) {
+		this.principalId = principalId;
 	}
 
 	public String getPrincipalTag() {
@@ -158,6 +204,13 @@ public class ConversionData extends AlipayObject {
 	}
 	public void setUuid(String uuid) {
 		this.uuid = uuid;
+	}
+
+	public String getUuidType() {
+		return this.uuidType;
+	}
+	public void setUuidType(String uuidType) {
+		this.uuidType = uuidType;
 	}
 
 }

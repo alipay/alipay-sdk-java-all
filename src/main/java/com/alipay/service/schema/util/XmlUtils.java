@@ -1,15 +1,7 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2021 All Rights Reserved.
- */
 package com.alipay.service.schema.util;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.alipay.service.schema.exception.SchemaException;
+import com.alipay.service.schema.model.enums.SchemaErrorEnum;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
@@ -19,18 +11,17 @@ import org.dom4j.io.SAXReader;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import com.alipay.service.schema.exception.ServiceSchemaException;
-import com.alipay.service.schema.model.enums.SchemaErrorEnum;
+import java.io.File;
+import java.io.InputStream;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.List;
 
-/**
- * @author junying
- * @version : XmlUtils.java, v 0.1 2021年03月17日 8:58 下午 junying Exp $
- */
 public class XmlUtils {
     private static final String DEFAULT_ENCODE = "UTF-8";
-    public static String EGE = "http://xml.org/sax/features/external-general-entities";
-    public static String EPE = "http://xml.org/sax/features/external-parameter-entities";
-    public static String LED = "http://apache.org/xml/features/nonvalidating/load-external-dtd";
+    public static        String EGE            = "http://xml.org/sax/features/external-general-entities";
+    public static        String EPE            = "http://xml.org/sax/features/external-parameter-entities";
+    public static        String LED            = "http://apache.org/xml/features/nonvalidating/load-external-dtd";
 
     /**
      * Creates a new document instance.
@@ -49,9 +40,9 @@ public class XmlUtils {
      *
      * @param file the XML file instance
      * @return the document instance representing the entire XML document
-     * @throws ServiceSchemaException problem parsing the XML file
+     * @throws SchemaException problem parsing the XML file
      */
-    public static Document getDocument(File file) throws ServiceSchemaException {
+    public static Document getDocument(File file) throws SchemaException {
         SAXReader reader = new SAXReader();
         reader.setEncoding(DEFAULT_ENCODE);
 
@@ -62,9 +53,9 @@ public class XmlUtils {
             reader.setFeature(EPE, false);
             doc = reader.read(file);
         } catch (DocumentException e) {
-            throw new ServiceSchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
+            throw new SchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
         } catch (SAXException e) {
-            throw new ServiceSchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
+            throw new SchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
         }
         return doc;
     }
@@ -74,9 +65,9 @@ public class XmlUtils {
      *
      * @param xml file inputstream
      * @return the document instance representing the entire XML document
-     * @throws ServiceSchemaException problem parsing the XML file
+     * @throws SchemaException problem parsing the XML file
      */
-    public static Document getDocument(InputStream xml) throws ServiceSchemaException {
+    public static Document getDocument(InputStream xml) throws SchemaException {
         SAXReader reader = new SAXReader();
         reader.setEncoding(DEFAULT_ENCODE);
         Document doc = null;
@@ -86,9 +77,9 @@ public class XmlUtils {
             reader.setFeature(EPE, false);
             doc = reader.read(xml);
         } catch (DocumentException e) {
-            throw new ServiceSchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
+            throw new SchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
         } catch (SAXException e) {
-            throw new ServiceSchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
+            throw new SchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
         }
         return doc;
     }
@@ -98,9 +89,9 @@ public class XmlUtils {
      *
      * @param xml file InputSource
      * @return the document instance representing the entire XML document
-     * @throws ServiceSchemaException problem parsing the XML file
+     * @throws SchemaException problem parsing the XML file
      */
-    public static Document getDocument(InputSource xml) throws ServiceSchemaException {
+    public static Document getDocument(InputSource xml) throws SchemaException {
         SAXReader reader = new SAXReader();
         Document doc = null;
 
@@ -110,9 +101,9 @@ public class XmlUtils {
             reader.setFeature(EPE, false);
             doc = reader.read(xml);
         } catch (DocumentException e) {
-            throw new ServiceSchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
+            throw new SchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
         } catch (SAXException e) {
-            throw new ServiceSchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
+            throw new SchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, e);
         }
         return doc;
     }
@@ -122,9 +113,9 @@ public class XmlUtils {
      *
      * @param tagName the name of the root element
      * @return a new element instance
-     * @throws ServiceSchemaException problem generating a new document
+     * @throws SchemaException problem generating a new document
      */
-    public static Element createRootElement(String tagName) throws ServiceSchemaException {
+    public static Element createRootElement(String tagName) throws SchemaException {
         Document doc = newDocument();
         Element root = DocumentHelper.createElement(tagName);
         doc.add(root);
@@ -136,9 +127,9 @@ public class XmlUtils {
      *
      * @param xml the XML file input stream
      * @return the root element of parsed document
-     * @throws ServiceSchemaException problem parsing the XML file input stream
+     * @throws SchemaException problem parsing the XML file input stream
      */
-    public static Element getRootElementFromStream(InputStream xml) throws ServiceSchemaException {
+    public static Element getRootElementFromStream(InputStream xml) throws SchemaException {
         return getDocument(xml).getRootElement();
     }
 
@@ -147,9 +138,9 @@ public class XmlUtils {
      *
      * @param xml the name of the XML file
      * @return the root element of parsed document
-     * @throws ServiceSchemaException problem parsing the XML file
+     * @throws SchemaException problem parsing the XML file
      */
-    public static Element getRootElementFromFile(File xml) throws ServiceSchemaException {
+    public static Element getRootElementFromFile(File xml) throws SchemaException {
         return getDocument(xml).getRootElement();
     }
 
@@ -158,11 +149,11 @@ public class XmlUtils {
      *
      * @param payload the XML payload representing the XML file.
      * @return the root element of parsed document
-     * @throws ServiceSchemaException problem parsing the XML payload
+     * @throws SchemaException problem parsing the XML payload
      */
-    public static Element getRootElementFromString(String payload) throws ServiceSchemaException {
+    public static Element getRootElementFromString(String payload) throws SchemaException {
         if (payload == null || payload.length() < 1) {
-            throw new ServiceSchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, "");
+            throw new SchemaException(SchemaErrorEnum.XML_FORMAT_ERROR, "");
         }
 
         StringReader sr = new StringReader(escapeXml(payload));
@@ -187,9 +178,9 @@ public class XmlUtils {
      *
      * @param file the XML file instance
      * @return the XML payload representing the XML file
-     * @throws ServiceSchemaException problem transforming XML to string
+     * @throws SchemaException problem transforming XML to string
      */
-    public static String xmlToString(File file) throws ServiceSchemaException {
+    public static String xmlToString(File file) throws SchemaException {
         return getDocument(file).asXML();
     }
 
@@ -197,7 +188,7 @@ public class XmlUtils {
      * Gets the immediately child elements list from the parent element.
      *
      * @param parent  the parent element in the element tree
-     * @param tagName the specified tag name
+     * @param tagName the specified tool name
      * @return the NOT NULL immediately child elements list
      */
     @SuppressWarnings("unchecked")
@@ -208,7 +199,7 @@ public class XmlUtils {
         for (int i = 0; i < allNodes.size(); i++) {
             Element node = allNodes.get(i);
             if (node instanceof Element && node.getParent() == parent) {
-                elements.add((Element) node);
+                elements.add(node);
             }
         }
         return elements;
@@ -218,7 +209,7 @@ public class XmlUtils {
      * Gets the descendant elements list from the parent element.
      *
      * @param parent  the parent element in the element tree
-     * @param tagName the specified tag name
+     * @param tagName the specified tool name
      * @return the NOT NULL descendant elements list
      */
     public static List<Element> getElements(Element parent, String tagName) {
@@ -229,7 +220,7 @@ public class XmlUtils {
         for (int i = 0; i < allNodes.size(); i++) {
             Element node = allNodes.get(i);
             if (node instanceof Element) {
-                elements.add((Element) node);
+                elements.add(node);
             }
         }
         return elements;
@@ -337,9 +328,9 @@ public class XmlUtils {
      *
      * @param node the node/element instance to convert
      * @return the XML payload representing the node/element
-     * @throws ServiceSchemaException problem converting XML to string
+     * @throws SchemaException problem converting XML to string
      */
-    public static String nodeToString(Node node) throws ServiceSchemaException {
+    public static String nodeToString(Node node) throws SchemaException {
         return node.asXML();
     }
 
@@ -348,10 +339,11 @@ public class XmlUtils {
      *
      * @param in the XML file input stream
      * @return the payload represents the XML file
-     * @throws ServiceSchemaException problem transforming XML to string
+     * @throws SchemaException problem transforming XML to string
      */
-    public static String xmlToString(InputStream in) throws ServiceSchemaException {
+    public static String xmlToString(InputStream in) throws SchemaException {
         Element root = getRootElementFromStream(in);
         return nodeToString(root);
     }
+
 }

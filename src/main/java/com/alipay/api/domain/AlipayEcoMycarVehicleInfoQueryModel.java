@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主车辆信息查询
  *
  * @author auto create
- * @since 1.0, 2021-07-22 14:26:22
+ * @since 1.0, 2021-07-28 16:00:26
  */
 public class AlipayEcoMycarVehicleInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2741597857559168181L;
+	private static final long serialVersionUID = 1898487375225527372L;
 
 	/**
 	 * 车牌号

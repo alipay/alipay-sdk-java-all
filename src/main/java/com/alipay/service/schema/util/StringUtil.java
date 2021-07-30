@@ -1,19 +1,29 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2021 All Rights Reserved.
- */
 package com.alipay.service.schema.util;
 
-/**
- * @author junying
- * @version : StringUtil.java, v 0.1 2021年03月17日 8:58 下午 junying Exp $
- */
 public class StringUtil {
+
     public static boolean isEmpty(String str) {
-        if (str == null || str.trim().length() == 0) {
-            return true;
-        } else {
-            return false;
+        return str == null || str.trim().length() == 0;
+    }
+
+    /**
+     * 拼接入参
+     *
+     * @param spliterStr 拼接分割符
+     * @param objs       变参
+     */
+    public static String concatParams(String spliterStr, Object... objs) {
+
+        StringBuilder sb = new StringBuilder();
+        if (objs != null) {
+            for (int i = 0; i < objs.length; i++) {
+                sb.append(objs[i]);
+                if (i != objs.length - 1) {
+                    sb.append(spliterStr);
+                }
+            }
+            return sb.toString();
         }
+        return null;
     }
 }

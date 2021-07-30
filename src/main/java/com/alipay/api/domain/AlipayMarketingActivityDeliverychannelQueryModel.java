@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可推广渠道
  *
  * @author auto create
- * @since 1.0, 2021-07-20 17:50:50
+ * @since 1.0, 2021-07-28 22:32:32
  */
 public class AlipayMarketingActivityDeliverychannelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6381284157287795261L;
+	private static final long serialVersionUID = 1428285574139114753L;
 
 	/**
 	 * 当前服务商所代理的商户信息.
@@ -26,10 +26,10 @@ public class AlipayMarketingActivityDeliverychannelQueryModel extends AlipayObje
 	/**
 	 * 展位码。
 
-boothCode含义：boothCode表达的是某个渠道可以投放的展位码。例如：支付结果页PAYMENT_RESULT
+boothCode含义：boothCode表达的是某个渠道可以投放的展位码。例如：支付结果页PAY_RESULT
 
 枚举值：
-PAYMENT_RESULT：支付结果页。
+PAY_RESULT：支付结果页。
 
 后续新增可投放的展位后，会在文档中新增描述信息
 	 */

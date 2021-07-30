@@ -1,7 +1,3 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2021 All Rights Reserved.
- */
 package com.alipay.service.schema.model.enums;
 
 import com.alipay.service.schema.model.attribute.Attribute;
@@ -10,21 +6,18 @@ import com.alipay.service.schema.model.attribute.MultiAttribute;
 import com.alipay.service.schema.model.attribute.MultiComplexAttribute;
 import com.alipay.service.schema.model.attribute.SingleAttribute;
 
-/**
- * @author junying
- * @version : AttrTypeEnum.java, v 0.1 2021年03月17日 9:47 下午 junying Exp $
- */
 public enum AttrTypeEnum {
 
     SINGLE("single"),
-
     MULTI("multi"),
-
     COMPLEX("complex"),
-
     MULTICOMPLEX("multiComplex");
 
     final private String type;
+
+    AttrTypeEnum(final String type) {
+        this.type = type;
+    }
 
     public static Attribute createAttribute(AttrTypeEnum attributeType) {
         Attribute attribute = null;
@@ -44,10 +37,6 @@ public enum AttrTypeEnum {
         }
         attribute.setType(attributeType);
         return attribute;
-    }
-
-    private AttrTypeEnum(final String type) {
-        this.type = type;
     }
 
     public static AttrTypeEnum getType(String type) {
@@ -72,4 +61,5 @@ public enum AttrTypeEnum {
     public String getType() {
         return type;
     }
+
 }

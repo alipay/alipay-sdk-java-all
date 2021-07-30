@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用一脸通行入库接口
  *
  * @author auto create
- * @since 1.0, 2021-05-13 10:35:06
+ * @since 1.0, 2021-07-23 15:19:21
  */
 public class AlipayCommerceEducateFacefeatureCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2765364315515391924L;
+	private static final long serialVersionUID = 6157354495276993876L;
 
 	/**
 	 * 行业编码。（注：该接口为定向开放接口，使用前需要与对应的"业务产品"申请，切勿随意填写）

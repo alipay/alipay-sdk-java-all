@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通二级商户进件申请单信息
  *
  * @author auto create
- * @since 1.0, 2020-03-13 17:56:50
+ * @since 1.0, 2021-07-26 14:24:53
  */
 public class ZftSubMerchantOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8117622476693635277L;
+	private static final long serialVersionUID = 1537647264275674891L;
 
 	/**
 	 * 申请单创建时间

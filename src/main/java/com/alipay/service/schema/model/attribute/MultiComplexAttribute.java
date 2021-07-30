@@ -4,19 +4,17 @@
  */
 package com.alipay.service.schema.model.attribute;
 
+import com.alipay.service.schema.exception.SchemaException;
+import com.alipay.service.schema.model.enums.AttrTypeEnum;
+import com.alipay.service.schema.model.enums.SchemaErrorEnum;
+import com.alipay.service.schema.util.XmlUtils;
+import org.dom4j.Element;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import org.dom4j.Element;
-
-import com.alipay.service.schema.exception.ServiceSchemaException;
-import com.alipay.service.schema.model.enums.AttrTypeEnum;
-import com.alipay.service.schema.model.enums.SchemaErrorEnum;
-import com.alipay.service.schema.util.StringUtil;
-import com.alipay.service.schema.util.XmlUtils;
-
 /**
- *多组符合属性
+ * 多组符合属性
  *
  * @author hongbi.wang
  * @version $Id: MultiComplexAttribute.java, v 0.1 2021年02月26日 5:48 PM hongbi.wang Exp $
@@ -30,17 +28,10 @@ public class MultiComplexAttribute extends Attribute {
     }
 
     @Override
-    public Element toElement() throws ServiceSchemaException {
+    public Element toElement() throws SchemaException {
+        checkAttribute();
+
         Element attrNode = XmlUtils.createRootElement("attribute");
-        if (StringUtil.isEmpty(this.getId())) {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_MISS_ID);
-        }
-        if (this.getType() == null || StringUtil.isEmpty(this.getType().getType())) {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_MISS_TYPE, this.getId());
-        }
-        if (this.getType() == null) {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_TYPE_ERROR, this.getId());
-        }
         attrNode.addAttribute("id", this.getId());
         attrNode.addAttribute("name", this.getName());
         attrNode.addAttribute("type", this.getType().getType());
@@ -53,11 +44,11 @@ public class MultiComplexAttribute extends Attribute {
                 attributeElm.addAttribute("id", attribute.getId());
                 attributeElm.addAttribute("name", attribute.getName());
                 if (attribute.getType() == null) {
-                    throw new ServiceSchemaException(SchemaErrorEnum.ATTR_MISS_TYPE, this.getId());
+                    throw new SchemaException(SchemaErrorEnum.ATTR_MISS_TYPE, this.getId());
                 }
                 attributeElm.addAttribute("type", attribute.getType().getType());
                 if (attribute.getValueType() == null) {
-                    throw new ServiceSchemaException(SchemaErrorEnum.ATTR_VALUETYPE_ERROR,
+                    throw new SchemaException(SchemaErrorEnum.ATTR_VALUETYPE_ERROR,
                             this.getId());
                 }
                 attributeElm.addAttribute("valueType", attribute.getValueType().getCode());
@@ -74,9 +65,42 @@ public class MultiComplexAttribute extends Attribute {
         return attrNode;
     }
 
-    public ComplexAttribute cloneAttribute() throws ServiceSchemaException {
+    @Override
+    public Element toValueElement() throws SchemaException {
+        checkAttribute();
+        Element attrNode = XmlUtils.createRootElement("attribute");
+        attrNode.addAttribute("id", this.getId());
+        attrNode.addAttribute("name", this.getName());
+        attrNode.addAttribute("type", this.getType().getType());
+        attrNode.addAttribute("valueType", "object");
+
+        for (ComplexAttribute complexAttribute : attributes) {
+            Element attributesNode = XmlUtils.appendElement(attrNode, "attributes");
+            for (Attribute attribute : complexAttribute.getAttributes()) {
+                Element attributeElm = XmlUtils.appendElement(attributesNode, "attribute");
+                attributeElm.addAttribute("id", attribute.getId());
+                attributeElm.addAttribute("name", attribute.getName());
+                if (attribute.getType() == null) {
+                    throw new SchemaException(SchemaErrorEnum.ATTR_MISS_TYPE, this.getId());
+                }
+                attributeElm.addAttribute("type", attribute.getType().getType());
+                if (attribute.getValueType() == null) {
+                    throw new SchemaException(SchemaErrorEnum.ATTR_VALUETYPE_ERROR,
+                            this.getId());
+                }
+                attributeElm.addAttribute("valueType", attribute.getValueType().getCode());
+                //value
+                appendAttributeValues(attribute, attributeElm);
+
+            }
+
+        }
+        return attrNode;
+    }
+
+    public ComplexAttribute cloneAttribute() throws SchemaException {
         if (this.getAttributes() == null || this.getAttributes().size() <= 0) {
-            throw new ServiceSchemaException(SchemaErrorEnum.SYSTEM_ERROR, this.getId());
+            throw new SchemaException(SchemaErrorEnum.SYSTEM_ERROR, this.getId());
         }
         ComplexAttribute complexAttribute = this.getAttributes().get(0);
         List<Attribute> newAttributes = new ArrayList<Attribute>();
@@ -112,7 +136,7 @@ public class MultiComplexAttribute extends Attribute {
     /**
      * Setter method for property <tt>attributes</tt>.
      *
-     * @param attributes  value to be assigned to property attributes
+     * @param attributes value to be assigned to property attributes
      */
     public void setAttributes(List<ComplexAttribute> attributes) {
         this.attributes = attributes;

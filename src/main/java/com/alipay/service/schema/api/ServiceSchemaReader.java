@@ -1,18 +1,6 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2021 All Rights Reserved.
- */
 package com.alipay.service.schema.api;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import com.alipay.service.schema.model.rule.AttributeRule;
-import org.dom4j.Element;
-
-import com.alipay.service.schema.exception.ServiceSchemaException;
+import com.alipay.service.schema.exception.SchemaException;
 import com.alipay.service.schema.model.attribute.Attribute;
 import com.alipay.service.schema.model.attribute.ComplexAttribute;
 import com.alipay.service.schema.model.attribute.MultiAttribute;
@@ -23,36 +11,39 @@ import com.alipay.service.schema.model.enums.AttrTypeEnum;
 import com.alipay.service.schema.model.enums.AttrValueTypeEnum;
 import com.alipay.service.schema.model.enums.SchemaErrorEnum;
 import com.alipay.service.schema.model.option.Option;
+import com.alipay.service.schema.model.rule.AttributeRule;
 import com.alipay.service.schema.util.StringUtil;
 import com.alipay.service.schema.util.XmlUtils;
+import org.dom4j.Element;
 
-/**
- * @author junying
- * @version : ServiceSchemaReader.java, v 0.1 2021年03月17日 10:13 下午 junying Exp $
- */
+import java.io.File;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class ServiceSchemaReader {
 
-    public static Map<String, Attribute> readXmlForMap(File file) throws ServiceSchemaException {
+    public static Map<String, Attribute> readXmlForMap(File file) throws SchemaException {
         Element rootEle = XmlUtils.getRootElementFromFile(file);
         return readXmlForMap(rootEle);
     }
 
-    public static Map<String, Attribute> readXmlForMap(String xmlStirng) throws ServiceSchemaException {
+    public static Map<String, Attribute> readXmlForMap(String xmlStirng) throws SchemaException {
         Element rootEle = XmlUtils.getRootElementFromString(xmlStirng);
         return readXmlForMap(rootEle);
     }
 
-    public static List<Attribute> readXmlForList(File file) throws ServiceSchemaException {
+    public static List<Attribute> readXmlForList(File file) throws SchemaException {
         Element rootEle = XmlUtils.getRootElementFromFile(file);
         return readXmlForList(rootEle);
     }
 
-    public static List<Attribute> readXmlForList(String xmlStirng) throws ServiceSchemaException {
+    public static List<Attribute> readXmlForList(String xmlStirng) throws SchemaException {
         Element rootEle = XmlUtils.getRootElementFromString(xmlStirng);
         return readXmlForList(rootEle);
     }
 
-    public static List<Attribute> readXmlForList(Element rootEle) throws ServiceSchemaException {
+    public static List<Attribute> readXmlForList(Element rootEle) throws SchemaException {
         List<Attribute> attributeList = ServiceSchemaFactory.createEmptyAttributeList();
         List<Element> attributeElmList = XmlUtils.getChildElements(rootEle, "attribute");
         for (Element attrElm : attributeElmList) {
@@ -62,7 +53,7 @@ public class ServiceSchemaReader {
         return attributeList;
     }
 
-    public static Map<String, Attribute> readXmlForMap(Element rootEle) throws ServiceSchemaException {
+    public static Map<String, Attribute> readXmlForMap(Element rootEle) throws SchemaException {
         Map<String, Attribute> attributeMap = new HashMap<String, Attribute>();
         List<Element> attributeElmList = XmlUtils.getChildElements(rootEle, "attribute");
         for (Element attributeElm : attributeElmList) {
@@ -72,7 +63,7 @@ public class ServiceSchemaReader {
         return attributeMap;
     }
 
-    public static Attribute elementToAttribute(Element attributeElm) throws ServiceSchemaException {
+    public static Attribute elementToAttribute(Element attributeElm) throws SchemaException {
         if (attributeElm == null) {
             return null;
         }
@@ -80,13 +71,13 @@ public class ServiceSchemaReader {
         if (StringUtil.isEmpty(attributeId)) {
             String msg = SchemaErrorEnum.ATTR_MISS_ID.getErrorMessage() + "相关xml片段 ["
                     + attributeElm.asXML() + "]";
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_MISS_ID.getErrorCode(), msg);
+            throw new SchemaException(SchemaErrorEnum.ATTR_MISS_ID.getErrorCode(), msg);
         }
         String attributeType = XmlUtils.getAttributeValue(attributeElm, "type");
         if (StringUtil.isEmpty(attributeType)) {
             String msg = SchemaErrorEnum.ATTR_MISS_TYPE.getErrorMessage() + "相关xml片段 ["
                     + attributeElm.asXML() + "].attributeId=" + attributeId;
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_MISS_TYPE.getErrorCode(), msg,
+            throw new SchemaException(SchemaErrorEnum.ATTR_MISS_TYPE.getErrorCode(), msg,
                     attributeId);
         }
         String attributeName = XmlUtils.getAttributeValue(attributeElm, "name");
@@ -96,7 +87,7 @@ public class ServiceSchemaReader {
         if (valueTypeEnum == null) {
             String msg = SchemaErrorEnum.ATTR_VALUETYPE_ERROR.getErrorMessage() + "相关xml片段 ["
                     + attributeElm.asXML() + "].attributeId=" + attributeId;
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_VALUETYPE_ERROR.getErrorCode(),
+            throw new SchemaException(SchemaErrorEnum.ATTR_VALUETYPE_ERROR.getErrorCode(),
                     msg, attributeId);
         }
 
@@ -104,7 +95,7 @@ public class ServiceSchemaReader {
         if (attributeTypeEnum == null) {
             String msg = SchemaErrorEnum.ATTR_TYPE_ERROR.getErrorMessage() + "相关xml片段["
                     + attributeElm.asXML() + "].attributeId=" + attributeId;
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_TYPE_ERROR.getErrorCode(), msg,
+            throw new SchemaException(SchemaErrorEnum.ATTR_TYPE_ERROR.getErrorCode(), msg,
                     attributeId);
         }
 
@@ -131,23 +122,23 @@ public class ServiceSchemaReader {
     }
 
     private static AttributeRule elementToRule(Element ruleEle,
-                                               String attributeId) throws ServiceSchemaException {
+                                               String attributeId) throws SchemaException {
         if (ruleEle == null) {
             return null;
         }
         String ruleType = XmlUtils.getAttributeValue(ruleEle, "type");
         if (StringUtil.isEmpty(ruleType)) {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_RULE_TYPE_ERROR, attributeId);
+            throw new SchemaException(SchemaErrorEnum.ATTR_RULE_TYPE_ERROR, attributeId);
         }
         String ruleValue = XmlUtils.getAttributeValue(ruleEle, "value");
         if (StringUtil.isEmpty(ruleValue)) {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_RULE_VALUE_ERROR, attributeId);
+            throw new SchemaException(SchemaErrorEnum.ATTR_RULE_VALUE_ERROR, attributeId);
         }
 
         AttributeRule rule = null;
         AttrRuleTypeEnum ruleTypeEnum = AttrRuleTypeEnum.getType(ruleType);
         if (ruleTypeEnum == null) {
-            throw new ServiceSchemaException(SchemaErrorEnum.ATTR_RULE_TYPE_ERROR, attributeId);
+            throw new SchemaException(SchemaErrorEnum.ATTR_RULE_TYPE_ERROR, attributeId);
         }
         rule = ServiceSchemaFactory.createRule(ruleTypeEnum);
         rule.setType(ruleTypeEnum);
@@ -158,15 +149,15 @@ public class ServiceSchemaReader {
     }
 
     private static Option elementToOption(Element optionEle,
-                                          String attributeId) throws ServiceSchemaException {
+                                          String attributeId) throws SchemaException {
         Option opResult = new Option();
         String displayName = XmlUtils.getAttributeValue(optionEle, "displayName");
         if (StringUtil.isEmpty(displayName)) {
-            throw new ServiceSchemaException(SchemaErrorEnum.OPTION_NAME_ERROR, attributeId);
+            throw new SchemaException(SchemaErrorEnum.OPTION_NAME_ERROR, attributeId);
         }
         String value = XmlUtils.getAttributeValue(optionEle, "value");
         if (StringUtil.isEmpty(value)) {
-            throw new ServiceSchemaException(SchemaErrorEnum.OPTION_VALUE_ERROR, attributeId);
+            throw new SchemaException(SchemaErrorEnum.OPTION_VALUE_ERROR, attributeId);
         }
         opResult.setDisplayName(displayName);
         opResult.setValue(value);
@@ -177,7 +168,7 @@ public class ServiceSchemaReader {
     private static SingleAttribute elementToSingleAttribute(Element attributeElm,
                                                             String attributeId,
                                                             String attributeName,
-                                                            AttrValueTypeEnum valueType) throws ServiceSchemaException {
+                                                            AttrValueTypeEnum valueType) throws SchemaException {
         if (attributeElm == null) {
             return null;
         }
@@ -216,7 +207,7 @@ public class ServiceSchemaReader {
 
     private static MultiAttribute elementToMultiAttribute(Element attrElm, String attrId,
                                                           String attrName,
-                                                          AttrValueTypeEnum valueType) throws ServiceSchemaException {
+                                                          AttrValueTypeEnum valueType) throws SchemaException {
         if (attrElm == null) {
             return null;
         }
@@ -244,13 +235,24 @@ public class ServiceSchemaReader {
                 multiAttr.addValue(value);
             }
         }
+
+        //option
+        Element optionsEle = XmlUtils.getChildElement(attrElm, "options");
+        if (optionsEle != null) {
+            List<Element> optionEleList = XmlUtils.getChildElements(optionsEle, "option");
+            for (Element optionEleEle : optionEleList) {
+                Option op = elementToOption(optionEleEle, multiAttr.getId());
+                multiAttr.addOption(op);
+            }
+        }
+
         return multiAttr;
     }
 
     private static MultiComplexAttribute elementToMultiComplexAttribute(Element attributeElm,
                                                                         String attributeId,
                                                                         String attributeName,
-                                                                        AttrValueTypeEnum valueType) throws ServiceSchemaException {
+                                                                        AttrValueTypeEnum valueType) throws SchemaException {
         if (attributeElm == null) {
             return null;
         }
@@ -287,7 +289,7 @@ public class ServiceSchemaReader {
 
     private static ComplexAttribute elementToComplexAttribute(Element attrElm, String attrId,
                                                               String attrName,
-                                                              AttrValueTypeEnum valueType) throws ServiceSchemaException {
+                                                              AttrValueTypeEnum valueType) throws SchemaException {
         if (attrElm == null) {
             return null;
         }
