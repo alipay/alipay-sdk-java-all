@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解语花直播审核结果查询
  *
  * @author auto create
- * @since 1.0, 2021-07-30 09:13:59
+ * @since 1.0, 2021-08-02 15:04:45
  */
 public class AlipayFincoreComplianceRcsmartLivecontentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6671293161181593594L;
+	private static final long serialVersionUID = 5158128299368778747L;
 
 	/**
 	 * app_name为调用方系统名称(英文)，与分配的app_token一起做调用系统合法性校验
@@ -26,6 +26,18 @@ public class AlipayFincoreComplianceRcsmartLivecontentQueryModel extends AlipayO
 	 */
 	@ApiField("app_token")
 	private String appToken;
+
+	/**
+	 * 审核完成时间开始
+	 */
+	@ApiField("live_audit_time_begain")
+	private Date liveAuditTimeBegain;
+
+	/**
+	 * 审核完成结束时间
+	 */
+	@ApiField("live_audit_time_end")
+	private Date liveAuditTimeEnd;
 
 	/**
 	 * 直播开始时间的维度-起始查询时间
@@ -63,6 +75,20 @@ public class AlipayFincoreComplianceRcsmartLivecontentQueryModel extends AlipayO
 	}
 	public void setAppToken(String appToken) {
 		this.appToken = appToken;
+	}
+
+	public Date getLiveAuditTimeBegain() {
+		return this.liveAuditTimeBegain;
+	}
+	public void setLiveAuditTimeBegain(Date liveAuditTimeBegain) {
+		this.liveAuditTimeBegain = liveAuditTimeBegain;
+	}
+
+	public Date getLiveAuditTimeEnd() {
+		return this.liveAuditTimeEnd;
+	}
+	public void setLiveAuditTimeEnd(Date liveAuditTimeEnd) {
+		this.liveAuditTimeEnd = liveAuditTimeEnd;
 	}
 
 	public Date getLiveStartTimeBegain() {

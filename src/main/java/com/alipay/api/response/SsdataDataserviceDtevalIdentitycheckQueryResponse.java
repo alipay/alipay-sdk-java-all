@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataDataserviceDtevalIdentitycheckQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4512849962822832642L;
+	private static final long serialVersionUID = 7268357913432175341L;
 
 	/** 
 	 * evidence：关联人的手机号是否和该用户通话以及通话次数

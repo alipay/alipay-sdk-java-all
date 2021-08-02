@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanBeikeaccountInterestfreeModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1512466451697798961L;
+	private static final long serialVersionUID = 1468286328632112137L;
 
 	/** 
 	 * 呗壳额度返回结果

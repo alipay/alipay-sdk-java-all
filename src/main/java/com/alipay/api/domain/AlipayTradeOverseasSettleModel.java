@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeOverseasSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1658193423183715843L;
+	private static final long serialVersionUID = 3658443283584723816L;
 
 	/**
 	 * 跨境结算的人民币金额，单位为元；等于交易金额 (实际为实收金额)，加上净补差金额，减去已退款金额，减去净收费金额，再减去净分账金额，

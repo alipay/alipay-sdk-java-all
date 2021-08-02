@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金收款账号绑定关系查询
  *
  * @author auto create
- * @since 1.0, 2021-05-25 11:56:21
+ * @since 1.0, 2021-07-30 16:59:41
  */
 public class AlipayFundTransPayeeBindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6653276225711497857L;
+	private static final long serialVersionUID = 2641519441435795481L;
 
 	/**
 	 * 证件号

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExRefRateInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6437462244351172965L;
+	private static final long serialVersionUID = 4389511436182135725L;
 
 	/**
 	 * 货币对

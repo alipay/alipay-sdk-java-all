@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 借还合约查询
  *
  * @author auto create
- * @since 1.0, 2019-08-19 16:06:39
+ * @since 1.0, 2021-07-30 14:34:11
  */
 public class ZhimaCreditContractBorrowQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1769978995453376147L;
+	private static final long serialVersionUID = 5696967367724167115L;
 
 	/**
 	 * 外部类目,样例：图书馆:BOOK

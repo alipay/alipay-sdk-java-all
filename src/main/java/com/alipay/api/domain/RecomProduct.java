@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推荐产品对象
  *
  * @author auto create
- * @since 1.0, 2019-09-09 14:00:18
+ * @since 1.0, 2021-08-02 10:04:16
  */
 public class RecomProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 5294164752177513632L;
+	private static final long serialVersionUID = 4622756192618946163L;
 
 	/**
 	 * 裸价

@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通二级商户进件申请单信息
  *
  * @author auto create
- * @since 1.0, 2021-07-26 14:24:53
+ * @since 1.0, 2021-08-02 14:59:16
  */
 public class ZftSubMerchantOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1537647264275674891L;
+	private static final long serialVersionUID = 8336741252544856171L;
+
+	/**
+	 * 是否开通线上预授权
+	 */
+	@ApiField("app_pre_auth")
+	private String appPreAuth;
 
 	/**
 	 * 申请单创建时间
@@ -40,6 +46,12 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	private String externalId;
 
 	/**
+	 * 是否开通线下预授权
+	 */
+	@ApiField("face_pre_auth")
+	private String facePreAuth;
+
+	/**
 	 * 风控审核状态。CREATE：已创建待审批、SKIP：跳过风控审批步骤、PASS：风控审核通过、REJECT：风控审批拒绝
 	 */
 	@ApiField("fk_audit")
@@ -50,6 +62,12 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	 */
 	@ApiField("fk_audit_memo")
 	private String fkAuditMemo;
+
+	/**
+	 * 判断个人当面付权限版本，返回TRUE时表示是标准版，返回FALSE表示受限版
+	 */
+	@ApiField("is_face_limit")
+	private String isFaceLimit;
 
 	/**
 	 * 客资审核状态。CREATE：已创建待审批、SKIP：跳过客资审批步骤、PASS：客资审核通过、REJECT：客资审批拒绝
@@ -76,6 +94,12 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	private String orderId;
 
 	/**
+	 * 申请单处理失败时，通过此此段返回具体的失败理由；与kf_audit_memo和kz_audit_memo配合使用
+	 */
+	@ApiField("reason")
+	private String reason;
+
+	/**
 	 * 二级商户id。当总体申请状态status为99时，smid才算进件完成
 	 */
 	@ApiField("smid")
@@ -92,6 +116,13 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	 */
 	@ApiField("sub_confirm")
 	private String subConfirm;
+
+	public String getAppPreAuth() {
+		return this.appPreAuth;
+	}
+	public void setAppPreAuth(String appPreAuth) {
+		this.appPreAuth = appPreAuth;
+	}
 
 	public Date getApplyTime() {
 		return this.applyTime;
@@ -121,6 +152,13 @@ public class ZftSubMerchantOrder extends AlipayObject {
 		this.externalId = externalId;
 	}
 
+	public String getFacePreAuth() {
+		return this.facePreAuth;
+	}
+	public void setFacePreAuth(String facePreAuth) {
+		this.facePreAuth = facePreAuth;
+	}
+
 	public String getFkAudit() {
 		return this.fkAudit;
 	}
@@ -133,6 +171,13 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	}
 	public void setFkAuditMemo(String fkAuditMemo) {
 		this.fkAuditMemo = fkAuditMemo;
+	}
+
+	public String getIsFaceLimit() {
+		return this.isFaceLimit;
+	}
+	public void setIsFaceLimit(String isFaceLimit) {
+		this.isFaceLimit = isFaceLimit;
 	}
 
 	public String getKzAudit() {
@@ -161,6 +206,13 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getReason() {
+		return this.reason;
+	}
+	public void setReason(String reason) {
+		this.reason = reason;
 	}
 
 	public String getSmid() {

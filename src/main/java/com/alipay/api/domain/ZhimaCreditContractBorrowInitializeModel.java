@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 借还合约初始化
  *
  * @author auto create
- * @since 1.0, 2019-07-31 14:03:12
+ * @since 1.0, 2021-07-30 14:35:50
  */
 public class ZhimaCreditContractBorrowInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5165824488617593315L;
+	private static final long serialVersionUID = 2333779734536885457L;
 
 	/**
 	 * 用户加入合约成功后跳转的小程序地址

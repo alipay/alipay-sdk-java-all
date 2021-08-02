@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantDepartmentTreeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1292623425724295548L;
+	private static final long serialVersionUID = 7145685999323615912L;
 
 	/** 
 	 * 商户部门组织模型集合，根据返回的结果构造出商户的部门树

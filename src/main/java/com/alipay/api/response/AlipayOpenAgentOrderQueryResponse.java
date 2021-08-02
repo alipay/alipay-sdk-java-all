@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.ProductAgentStatusInfo;
 import com.alipay.api.domain.SignRestrictInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-15 17:42:58
+ * @since 1.0, 2021-07-30 19:47:37
  */
 public class AlipayOpenAgentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2776279272989133917L;
+	private static final long serialVersionUID = 3643773465437451223L;
 
 	/** 
 	 * 代理创建的应用ID，如果有代理商户创建应用，商户确认成功后，才返回应用ID，否则不返回。
@@ -46,6 +47,13 @@ MERCHANT_APPLY_ORDER_CANCELED=审核失败或商户拒绝，申请信息审核�
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
+
+	/** 
+	 * 申请单中每个产品的签约状态
+	 */
+	@ApiListField("product_agent_status_infos")
+	@ApiField("product_agent_status_info")
+	private List<ProductAgentStatusInfo> productAgentStatusInfos;
 
 	/** 
 	 * 审核失败的拒绝原因，只有审核失败才会返回该值
@@ -86,6 +94,13 @@ MERCHANT_APPLY_ORDER_CANCELED=审核失败或商户拒绝，申请信息审核�
 	}
 	public String getOrderStatus( ) {
 		return this.orderStatus;
+	}
+
+	public void setProductAgentStatusInfos(List<ProductAgentStatusInfo> productAgentStatusInfos) {
+		this.productAgentStatusInfos = productAgentStatusInfos;
+	}
+	public List<ProductAgentStatusInfo> getProductAgentStatusInfos( ) {
+		return this.productAgentStatusInfos;
 	}
 
 	public void setRejectReason(String rejectReason) {
