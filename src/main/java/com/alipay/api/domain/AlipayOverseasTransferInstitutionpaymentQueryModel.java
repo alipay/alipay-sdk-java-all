@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询机构缴费信息
  *
  * @author auto create
- * @since 1.0, 2020-07-30 17:33:54
+ * @since 1.0, 2021-08-09 15:07:51
  */
 public class AlipayOverseasTransferInstitutionpaymentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2582742817118236138L;
+	private static final long serialVersionUID = 6369147621559351531L;
 
 	/**
 	 * 业务类型

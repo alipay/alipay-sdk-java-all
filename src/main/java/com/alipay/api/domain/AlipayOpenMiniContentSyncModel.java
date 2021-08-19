@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序内容接入
  *
  * @author auto create
- * @since 1.0, 2020-08-27 16:56:20
+ * @since 1.0, 2021-08-12 18:51:04
  */
 public class AlipayOpenMiniContentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5815425697325255433L;
+	private static final long serialVersionUID = 1269394773729668173L;
 
 	/**
 	 * 具体的内容数据，采用json格式，不同类型不同操作数据不同，请根据 https://opendocs.alipay.com/mini/00ntj5内容同步产品文档，选择需接入功能并传入对应参数。

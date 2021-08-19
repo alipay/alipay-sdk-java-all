@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 垫资查询
  *
  * @author auto create
- * @since 1.0, 2021-07-28 19:04:18
+ * @since 1.0, 2021-08-09 13:06:22
  */
 public class AlipayTradeAdvanceConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6113616454888521225L;
+	private static final long serialVersionUID = 8441988965541486447L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ） ，在进行单笔订单风险评估预咨询时必传。
@@ -46,6 +46,12 @@ ORDER_RISK_EVALUATION：表示单笔订单风险预评估。
 	private String industryProductCode;
 
 	/**
+	 * 是否需要进行用户风险预测
+	 */
+	@ApiField("need_user_risk_prediction")
+	private String needUserRiskPrediction;
+
+	/**
 	 * 商户请求时的外部订单号，在花芝场景下非空。
 	 */
 	@ApiField("out_trade_no")
@@ -62,6 +68,18 @@ ORDER_RISK_EVALUATION：表示单笔订单风险预评估。
 	 */
 	@ApiField("sub_merchant_type")
 	private String subMerchantType;
+
+	/**
+	 * 交易信息摘要，需要进行用户风险预测时可传，用于结合场景的更加精细的预测。具体信息结构服务接入前咨询约定。
+	 */
+	@ApiField("trade_digest")
+	private String tradeDigest;
+
+	/**
+	 * 用户在外部域账号系统绑定的手机号，需要进行用户风险预测时必传，用于预测用户是否面临被二次放号的场景。使用时需要对请求加密，加密后请求在公网传输时为加密文本。详见：https://opendocs.alipay.com/open/common/104567；https://opendocs.alipay.com/isv/grefvl/getaes
+	 */
+	@ApiField("user_out_binding_phone")
+	private String userOutBindingPhone;
 
 	public String getAgreementNo() {
 		return this.agreementNo;
@@ -98,6 +116,13 @@ ORDER_RISK_EVALUATION：表示单笔订单风险预评估。
 		this.industryProductCode = industryProductCode;
 	}
 
+	public String getNeedUserRiskPrediction() {
+		return this.needUserRiskPrediction;
+	}
+	public void setNeedUserRiskPrediction(String needUserRiskPrediction) {
+		this.needUserRiskPrediction = needUserRiskPrediction;
+	}
+
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
@@ -117,6 +142,20 @@ ORDER_RISK_EVALUATION：表示单笔订单风险预评估。
 	}
 	public void setSubMerchantType(String subMerchantType) {
 		this.subMerchantType = subMerchantType;
+	}
+
+	public String getTradeDigest() {
+		return this.tradeDigest;
+	}
+	public void setTradeDigest(String tradeDigest) {
+		this.tradeDigest = tradeDigest;
+	}
+
+	public String getUserOutBindingPhone() {
+		return this.userOutBindingPhone;
+	}
+	public void setUserOutBindingPhone(String userOutBindingPhone) {
+		this.userOutBindingPhone = userOutBindingPhone;
 	}
 
 }

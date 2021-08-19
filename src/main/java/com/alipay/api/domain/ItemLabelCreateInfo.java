@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemLabelCreateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8142118849538635549L;
+	private static final long serialVersionUID = 1561375555514878646L;
 
 	/**
 	 * 标签键

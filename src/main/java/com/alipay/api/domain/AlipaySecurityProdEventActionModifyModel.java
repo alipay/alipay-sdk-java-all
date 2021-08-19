@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 事件下指定action类型通知
  *
  * @author auto create
- * @since 1.0, 2020-12-14 17:35:36
+ * @since 1.0, 2021-08-09 17:03:56
  */
 public class AlipaySecurityProdEventActionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7195916213411265984L;
+	private static final long serialVersionUID = 3338281912899312329L;
 
 	/**
 	 * 返回描述

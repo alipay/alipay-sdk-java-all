@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ExerciseItemOpenModelSecond extends AlipayObject {
 
-	private static final long serialVersionUID = 4119978556714495659L;
+	private static final long serialVersionUID = 7545858718493883879L;
 
 	/**
 	 * 健身项目简介

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推荐产品对象
  *
  * @author auto create
- * @since 1.0, 2021-08-02 10:04:16
+ * @since 1.0, 2021-08-13 12:38:53
  */
 public class RecomProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 4622756192618946163L;
+	private static final long serialVersionUID = 5151826633957223243L;
 
 	/**
 	 * 裸价
@@ -93,6 +93,12 @@ public class RecomProduct extends AlipayObject {
 	 */
 	@ApiField("prod_no")
 	private String prodNo;
+
+	/**
+	 * 流水号
+	 */
+	@ApiField("recom_flow_no")
+	private String recomFlowNo;
 
 	/**
 	 * 产品资源项列表，可以平行扩展多个资源项
@@ -214,6 +220,13 @@ public class RecomProduct extends AlipayObject {
 	}
 	public void setProdNo(String prodNo) {
 		this.prodNo = prodNo;
+	}
+
+	public String getRecomFlowNo() {
+		return this.recomFlowNo;
+	}
+	public void setRecomFlowNo(String recomFlowNo) {
+		this.recomFlowNo = recomFlowNo;
 	}
 
 	public List<ProdResource> getResourceList() {

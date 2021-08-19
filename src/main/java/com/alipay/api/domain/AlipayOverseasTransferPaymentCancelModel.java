@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 撤销缴费接口
  *
  * @author auto create
- * @since 1.0, 2020-08-19 20:32:23
+ * @since 1.0, 2021-08-09 15:03:48
  */
 public class AlipayOverseasTransferPaymentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5731282521613398189L;
+	private static final long serialVersionUID = 5564175463543925229L;
 
 	/**
 	 * Cancelation reason

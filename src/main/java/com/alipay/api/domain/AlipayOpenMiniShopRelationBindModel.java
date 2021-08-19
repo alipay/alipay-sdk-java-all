@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序门店绑定
  *
  * @author auto create
- * @since 1.0, 2020-12-02 11:38:37
+ * @since 1.0, 2021-08-12 18:50:01
  */
 public class AlipayOpenMiniShopRelationBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1557676874851262393L;
+	private static final long serialVersionUID = 3899689249988446591L;
 
 	/**
 	 * 门店信息，entity_id为平台侧门店id，property_list属性列表详见 <a href="https://opendocs.alipay.com/mini/00nvud">绑定门店</a>。

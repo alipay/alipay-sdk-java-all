@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 下架商户门店
  *
  * @author auto create
- * @since 1.0, 2021-03-17 16:29:25
+ * @since 1.0, 2021-08-10 10:34:33
  */
 public class AlipayOpenServicemarketCommodityShopOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5162572326112252949L;
+	private static final long serialVersionUID = 6174955547186558435L;
 
 	/**
 	 * 服务商户ID

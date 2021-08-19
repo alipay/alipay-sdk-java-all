@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NetValueVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3816754425129319799L;
+	private static final long serialVersionUID = 8121392572397238967L;
 
 	/**
 	 * 基金单位净值，含4位小数

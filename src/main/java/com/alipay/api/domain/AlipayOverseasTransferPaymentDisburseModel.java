@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量汇款
  *
  * @author auto create
- * @since 1.0, 2020-07-30 17:34:36
+ * @since 1.0, 2021-08-09 15:05:44
  */
 public class AlipayOverseasTransferPaymentDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7466465969548858155L;
+	private static final long serialVersionUID = 3144756797998552416L;
 
 	/**
 	 * 透传信息

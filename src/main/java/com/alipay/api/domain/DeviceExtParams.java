@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备档案拓展信息
  *
  * @author auto create
- * @since 1.0, 2021-07-29 21:25:01
+ * @since 1.0, 2021-08-04 10:30:32
  */
 public class DeviceExtParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3579495664496716988L;
+	private static final long serialVersionUID = 5869896135428179219L;
 
 	/**
 	 * 商户编号，由ISV定义，需要保证在ISV下唯一
@@ -34,7 +34,7 @@ public class DeviceExtParams extends AlipayObject {
 	private String paymentType;
 
 	/**
-	 * 门店名称
+	 * 极简绑定时必传，用于设备左上角展示，可以区分设备所在门店
 	 */
 	@ApiField("shop_name")
 	private String shopName;
@@ -46,13 +46,13 @@ public class DeviceExtParams extends AlipayObject {
 	private String source;
 
 	/**
-	 * isv应用id，绑定流程不消费，订单中心消费。
+	 * 表示ISV在开放平台注册的SPI服务应用的app_id，用于标识ISV身份
 	 */
 	@ApiField("spi_app_id")
 	private String spiAppId;
 
 	/**
-	 * sv内部唯一标识商户、商户门店等字段信息
+	 * isv内部唯一标识商户、商户门店等字段信息；可作为ISV自主对接的扩展字段使用
 	 */
 	@ApiField("terminal_bind_info")
 	private String terminalBindInfo;

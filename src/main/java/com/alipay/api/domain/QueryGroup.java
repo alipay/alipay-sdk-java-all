@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分组查询模型
  *
  * @author auto create
- * @since 1.0, 2021-05-17 15:13:50
+ * @since 1.0, 2021-08-16 15:08:15
  */
 public class QueryGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 7665788228181839159L;
+	private static final long serialVersionUID = 6627575397811686484L;
+
+	/**
+	 * 人群中包含人数
+	 */
+	@ApiField("count")
+	private Long count;
 
 	/**
 	 * 分组id
@@ -34,6 +40,13 @@ public class QueryGroup extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	public Long getCount() {
+		return this.count;
+	}
+	public void setCount(Long count) {
+		this.count = count;
+	}
 
 	public String getId() {
 		return this.id;

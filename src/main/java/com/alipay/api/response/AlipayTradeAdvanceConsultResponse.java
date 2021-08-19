@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.UserRiskPrediction;
 import com.alipay.api.domain.WaitRepaymentOrderInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.advance.consult response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-28 19:04:18
+ * @since 1.0, 2021-08-10 11:57:38
  */
 public class AlipayTradeAdvanceConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3156991315455726936L;
+	private static final long serialVersionUID = 7167553558237143315L;
 
 	/** 
 	 * true 代表当前时间点，用户允许垫资
@@ -41,6 +42,12 @@ false 代表当前时间，用户不允许垫资
 	 */
 	@ApiField("risk_level")
 	private String riskLevel;
+
+	/** 
+	 * 用户风险预测结果，包括用户拒付风险等级、用户绑定手机号被二次放号风险等级。
+	 */
+	@ApiField("user_risk_prediction")
+	private UserRiskPrediction userRiskPrediction;
 
 	/** 
 	 * 用户剩余的总待还金额，无论当前用户是否允许垫资，都会返回改属性
@@ -87,6 +94,13 @@ false 代表当前时间，用户不允许垫资
 	}
 	public String getRiskLevel( ) {
 		return this.riskLevel;
+	}
+
+	public void setUserRiskPrediction(UserRiskPrediction userRiskPrediction) {
+		this.userRiskPrediction = userRiskPrediction;
+	}
+	public UserRiskPrediction getUserRiskPrediction( ) {
+		return this.userRiskPrediction;
 	}
 
 	public void setWaitRepaymentAmount(String waitRepaymentAmount) {

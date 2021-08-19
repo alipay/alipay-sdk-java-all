@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序poi数据同步
  *
  * @author auto create
- * @since 1.0, 2021-05-26 19:09:53
+ * @since 1.0, 2021-08-12 18:49:45
  */
 public class AlipayOpenMiniDataPoiSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8562727349773769378L;
+	private static final long serialVersionUID = 5572138824512947434L;
 
 	/**
 	 * poi回流数据

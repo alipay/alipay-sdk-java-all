@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序实例绑定关系分页查询
  *
  * @author auto create
- * @since 1.0, 2020-12-02 11:38:29
+ * @since 1.0, 2021-08-12 18:50:45
  */
 public class AlipayOpenMiniShopRelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8297464247313562873L;
+	private static final long serialVersionUID = 3586543768643726699L;
 
 	/**
 	 * 门店 ID 列表。支付宝门店（蚂蚁门店）的 ShopID。

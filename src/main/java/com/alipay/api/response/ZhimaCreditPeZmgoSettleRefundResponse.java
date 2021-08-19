@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.settle.refund response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-04 12:15:18
+ * @since 1.0, 2021-08-10 15:57:37
  */
 public class ZhimaCreditPeZmgoSettleRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7486215188414714659L;
+	private static final long serialVersionUID = 2159877428318773459L;
 
 	/** 
 	 * 退款操作错误原因描述
@@ -31,6 +31,12 @@ public class ZhimaCreditPeZmgoSettleRefundResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
+
+	/** 
+	 * 芝麻GO退款生成的内部唯一流水，外部商户可以拿这个参数进行对账
+	 */
+	@ApiField("refund_opt_no")
+	private String refundOptNo;
 
 	/** 
 	 * 此字段含义，商家接入时需咨询对接技术。
@@ -63,6 +69,13 @@ public class ZhimaCreditPeZmgoSettleRefundResponse extends AlipayResponse {
 	}
 	public String getRefundAmount( ) {
 		return this.refundAmount;
+	}
+
+	public void setRefundOptNo(String refundOptNo) {
+		this.refundOptNo = refundOptNo;
+	}
+	public String getRefundOptNo( ) {
+		return this.refundOptNo;
 	}
 
 	public void setRetry(Boolean retry) {

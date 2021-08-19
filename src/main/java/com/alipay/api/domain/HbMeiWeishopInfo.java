@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 美味店铺信息对象
  *
  * @author auto create
- * @since 1.0, 2021-07-29 17:30:26
+ * @since 1.0, 2021-08-06 13:48:02
  */
 public class HbMeiWeishopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3789953262163462627L;
+	private static final long serialVersionUID = 3719675615835954248L;
 
 	/**
 	 * 所在城市code
@@ -72,6 +72,12 @@ public class HbMeiWeishopInfo extends AlipayObject {
 	 */
 	@ApiField("star_rate_shop")
 	private String starRateShop;
+
+	/**
+	 * 1代表有效，0代表无效
+	 */
+	@ApiField("status")
+	private String status;
 
 	public String getCityCode() {
 		return this.cityCode;
@@ -141,6 +147,13 @@ public class HbMeiWeishopInfo extends AlipayObject {
 	}
 	public void setStarRateShop(String starRateShop) {
 		this.starRateShop = starRateShop;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }

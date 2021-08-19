@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改券使用规则配置
  *
  * @author auto create
- * @since 1.0, 2021-06-15 18:13:45
+ * @since 1.0, 2021-08-06 11:15:18
  */
 public class VoucherUseRuleModify extends AlipayObject {
 
-	private static final long serialVersionUID = 8891715775161782924L;
+	private static final long serialVersionUID = 2447932953997766952L;
 
 	/**
 	 * 日期区间内可以使用优惠

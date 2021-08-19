@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 配送地址
  *
  * @author auto create
- * @since 1.0, 2020-12-21 14:34:56
+ * @since 1.0, 2021-08-09 17:48:30
  */
 public class AssetDeliveryAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 7679476515927133211L;
+	private static final long serialVersionUID = 4449862145395346946L;
 
 	/**
 	 * 详细地址

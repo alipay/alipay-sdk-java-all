@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约商户指定渠道参数
  *
  * @author auto create
- * @since 1.0, 2020-09-05 19:53:54
+ * @since 1.0, 2021-08-09 10:32:15
  */
 public class SpecifiedChannelParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3422317772261237334L;
+	private static final long serialVersionUID = 4519132233599395112L;
 
 	/**
 	 * 指定渠道签约号

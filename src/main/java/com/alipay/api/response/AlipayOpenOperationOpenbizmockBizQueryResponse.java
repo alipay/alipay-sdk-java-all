@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.openbizmock.biz.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-29 14:10:15
+ * @since 1.0, 2021-08-03 15:19:37
  */
 public class AlipayOpenOperationOpenbizmockBizQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1499242582691142441L;
+	private static final long serialVersionUID = 4235924668346559817L;
 
 	/** 
 	 * 处理结果

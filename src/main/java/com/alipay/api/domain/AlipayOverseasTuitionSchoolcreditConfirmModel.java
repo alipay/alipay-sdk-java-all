@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国际留学汇款-汇款入账通知
  *
  * @author auto create
- * @since 1.0, 2020-07-30 19:19:50
+ * @since 1.0, 2021-08-09 15:06:12
  */
 public class AlipayOverseasTuitionSchoolcreditConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2539464482945356979L;
+	private static final long serialVersionUID = 4221258368566216219L;
 
 	/**
 	 * 支付内部交易流水号

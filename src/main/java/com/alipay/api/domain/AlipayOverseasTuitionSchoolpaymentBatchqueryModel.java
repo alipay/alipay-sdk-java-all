@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 国际留学汇款-订单批量查询
  *
  * @author auto create
- * @since 1.0, 2020-07-30 19:20:31
+ * @since 1.0, 2021-08-09 15:01:39
  */
 public class AlipayOverseasTuitionSchoolpaymentBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7815213411586547143L;
+	private static final long serialVersionUID = 7619532253531268953L;
 
 	/**
 	 * ISV入驻签约PID

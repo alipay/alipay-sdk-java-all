@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝开放认证查询
  *
  * @author auto create
- * @since 1.0, 2020-11-13 12:00:39
+ * @since 1.0, 2021-08-10 11:44:57
  */
 public class AlipayUserCertifyOpenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8558277862832592692L;
+	private static final long serialVersionUID = 4578895956779266612L;
 
 	/**
 	 * 本次申请操作的唯一标识，通过alipay.user.certify.open.initialize(身份认证初始化服务)接口同步响应获取。

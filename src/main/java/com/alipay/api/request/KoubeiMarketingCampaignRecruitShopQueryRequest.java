@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.recruit.shop.query request
  * 
  * @author auto create
- * @since 1.0, 2020-08-31 10:35:06
+ * @since 1.0, 2021-08-17 10:46:17
  */
 public class KoubeiMarketingCampaignRecruitShopQueryRequest implements AlipayRequest<KoubeiMarketingCampaignRecruitShopQueryResponse> {
 

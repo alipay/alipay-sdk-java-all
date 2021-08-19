@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeMergePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5598992153142328793L;
+	private static final long serialVersionUID = 3398747672713958745L;
 
 	/**
 	 * 子订单详情

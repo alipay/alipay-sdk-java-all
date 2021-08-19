@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserValidateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6863524497924357321L;
+	private static final long serialVersionUID = 1253783959548356951L;
 
 	/** 
 	 * 支付宝userId

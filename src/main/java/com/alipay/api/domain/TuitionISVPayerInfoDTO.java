@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学缴费-付款人信息
  *
  * @author auto create
- * @since 1.0, 2021-03-03 15:21:50
+ * @since 1.0, 2021-08-16 15:52:47
  */
 public class TuitionISVPayerInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2239181697883695341L;
+	private static final long serialVersionUID = 4613883259488979552L;
 
 	/**
 	 * 支付宝登录号

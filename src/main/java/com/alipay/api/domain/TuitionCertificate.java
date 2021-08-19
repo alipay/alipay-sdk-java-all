@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 证件信息
  *
  * @author auto create
- * @since 1.0, 2020-07-24 19:55:52
+ * @since 1.0, 2021-08-16 15:53:41
  */
 public class TuitionCertificate extends AlipayObject {
 
-	private static final long serialVersionUID = 4668967138834587899L;
+	private static final long serialVersionUID = 7569145816687835632L;
 
 	/**
 	 * 证件号码

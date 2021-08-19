@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付通知
  *
  * @author auto create
- * @since 1.0, 2020-07-30 16:25:23
+ * @since 1.0, 2021-08-09 15:05:16
  */
 public class AlipayOverseasTransferPaymentNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5145564638753687948L;
+	private static final long serialVersionUID = 1638474291173361499L;
 
 	/**
 	 * Only used for pass-through. In JSON map format.

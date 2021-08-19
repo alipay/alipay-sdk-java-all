@@ -4,6 +4,7 @@
 package com.alipay.api;
 
 import com.alipay.api.domain.AlipayOpenOperationOpenbizmockBizQueryModel;
+import com.alipay.api.domain.AlipayTradeCreateModel;
 import com.alipay.api.request.AlipayOpenOperationOpenbizmockBizQueryRequest;
 import com.alipay.api.response.AlipayOpenOperationOpenbizmockBizQueryResponse;
 import org.junit.Before;
@@ -108,6 +109,7 @@ public class CertificateExecuteTest {
         AlipayOpenOperationOpenbizmockBizQueryRequest request = new AlipayOpenOperationOpenbizmockBizQueryRequest();
         AlipayOpenOperationOpenbizmockBizQueryModel model = new AlipayOpenOperationOpenbizmockBizQueryModel();
         model.setBizNo("test");
+        AlipayTradeCreateModel model2 = new AlipayTradeCreateModel();
         request.setBizModel(model);
         return request;
     }

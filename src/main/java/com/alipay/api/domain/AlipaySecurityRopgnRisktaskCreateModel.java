@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * B类汇款订单生成审理任务接口
  *
  * @author auto create
- * @since 1.0, 2020-05-28 19:17:14
+ * @since 1.0, 2021-08-04 17:01:12
  */
 public class AlipaySecurityRopgnRisktaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5172764242614525265L;
+	private static final long serialVersionUID = 5579172961473988244L;
 
 	/**
 	 * 任务扩展信息

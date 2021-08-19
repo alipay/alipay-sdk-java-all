@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费账单详情
  *
  * @author auto create
- * @since 1.0, 2020-07-30 23:03:39
+ * @since 1.0, 2021-08-17 14:59:15
  */
 public class EduPayItems extends AlipayObject {
 
-	private static final long serialVersionUID = 4686542239481945352L;
+	private static final long serialVersionUID = 3286878797997263451L;
 
 	/**
 	 * 缴费项是否必选 如果缴费项是多选模式，此参数生效。 “Y”表示必填，“N”或空表示非必填。

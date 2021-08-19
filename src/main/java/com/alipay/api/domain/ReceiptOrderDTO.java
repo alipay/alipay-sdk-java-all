@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2021-07-20 14:17:58
+ * @since 1.0, 2021-08-16 10:41:16
  */
 public class ReceiptOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3132287151396978842L;
+	private static final long serialVersionUID = 6696243498472231299L;
 
 	/**
 	 * 支付宝用户uid; 是支付宝支付时，必填
@@ -113,7 +113,7 @@ public class ReceiptOrderDTO extends AlipayObject {
 	private Date orderModifiedTime;
 
 	/**
-	 * 订单支付时间，当pay_channel为非ALIPAY时，且订单状态已流转到“支付”或支付后时，需要将支付时间传入;支付交易完成时，必填；时间格式:yyyy-MM-dd HH:mm:ss
+	 * 订单支付时间; 有支付行为时，必填; 没有支付时，为空; 时间格式:yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("order_pay_time")
 	private Date orderPayTime;
@@ -131,13 +131,14 @@ public class ReceiptOrderDTO extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 支付金额，需要实际支付的金额。如果不涉及金额可不传入该字段，其他场景必传; 使用支付宝电子小票时，必填;（is_alipay_ticket 是 "1"时，必填）
+	 * 支付金额，需要实际支付的金额。如果不涉及金额可不传入该字段，其他场景必填; 0元订单时，必填;
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
 
 	/**
-	 * 支付类型:alipay:支付宝，wchatpay:微信，cloudpay:云闪付，cashpay：现金，otherpay：其它
+	 * 支付类型:alipay:支付宝，cashpay：现金，otherpay：其它; 支付宝支付时，必填; 
+森林能量发放仅支持支付宝支付("alipay")和0元订单("otherpay")
 	 */
 	@ApiField("pay_type")
 	private String payType;

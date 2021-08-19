@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4879153421962881293L;
+	private static final long serialVersionUID = 4699179833772781448L;
 
 	/**
 	 * 支付宝转账单据号：和商户转账唯一订单号不能同时为空。当和商户转账唯一订单号同时提供时，将用本参数进行查询，忽略商户转账唯一订单号。

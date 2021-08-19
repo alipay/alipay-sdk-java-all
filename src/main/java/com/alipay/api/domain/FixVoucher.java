@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 满减配置
  *
  * @author auto create
- * @since 1.0, 2021-06-30 16:09:35
+ * @since 1.0, 2021-08-13 10:44:30
  */
 public class FixVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 2676179482689889951L;
+	private static final long serialVersionUID = 6582399447966582818L;
 
 	/**
 	 * 面额，每张代金券可以抵扣的金额。
@@ -49,6 +49,12 @@ public class FixVoucher extends AlipayObject {
 	@ApiField("floor_amount")
 	private String floorAmount;
 
+	/**
+	 * 商品名称。
+	 */
+	@ApiField("goods_name")
+	private String goodsName;
+
 	public String getAmount() {
 		return this.amount;
 	}
@@ -61,6 +67,13 @@ public class FixVoucher extends AlipayObject {
 	}
 	public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
+	}
+
+	public String getGoodsName() {
+		return this.goodsName;
+	}
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
 	}
 
 }

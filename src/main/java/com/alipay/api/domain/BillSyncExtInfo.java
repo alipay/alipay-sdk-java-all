@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单同步的扩展字段信息
  *
  * @author auto create
- * @since 1.0, 2020-07-30 23:03:39
+ * @since 1.0, 2021-08-17 14:59:15
  */
 public class BillSyncExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5637997819978117832L;
+	private static final long serialVersionUID = 2481768871677446199L;
 
 	/**
 	 * 账单类型

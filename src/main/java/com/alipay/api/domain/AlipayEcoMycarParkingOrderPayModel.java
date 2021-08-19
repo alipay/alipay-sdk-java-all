@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车缴费代扣接口API
  *
  * @author auto create
- * @since 1.0, 2021-07-28 10:47:12
+ * @since 1.0, 2021-08-10 10:12:52
  */
 public class AlipayEcoMycarParkingOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8367684673489319198L;
+	private static final long serialVersionUID = 6692653793664469169L;
 
 	/**
 	 * 先离后付订单：true；

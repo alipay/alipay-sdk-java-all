@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 搜索运营提报服务工单接口
  *
  * @author auto create
- * @since 1.0, 2021-04-28 17:23:47
+ * @since 1.0, 2021-08-09 11:28:29
  */
 public class AlipayOpenSearchServiceorderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3268656179681286478L;
+	private static final long serialVersionUID = 8745634466366848465L;
 
 	/**
 	 * 创建搜索运营申请单的入参。base_items、brand_items、service_items 分别为基础信息、品牌直达、服务直达的模块数据信息，需根据提报类型选择进行相应的设置，不能同时填写。

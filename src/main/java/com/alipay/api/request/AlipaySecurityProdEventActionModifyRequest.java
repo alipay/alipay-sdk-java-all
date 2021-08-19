@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.event.action.modify request
  * 
  * @author auto create
- * @since 1.0, 2020-12-14 17:35:39
+ * @since 1.0, 2021-08-09 17:03:56
  */
 public class AlipaySecurityProdEventActionModifyRequest implements AlipayRequest<AlipaySecurityProdEventActionModifyResponse> {
 

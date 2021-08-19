@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4137293328228593187L;
+	private static final long serialVersionUID = 6311967862883922672L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -53,7 +53,7 @@ identity_hash和alipay_user_id都是可选的，如果两个都传，则会先�
 	private String orderTitle;
 
 	/**
-	 * 商户授权资金订单号，商家自定义需保证在商户端不重复。不能包含除中文、英文、数字以外的字符，创建后不能修改。
+	 * 商户授权资金订单号，商家自定义需保证在商户端不重复。不能包含除中文、英文、数字以外的字符，创建后不能修改。 
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiServindustryPromoIntelligentguideOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1477384666878797214L;
+	private static final long serialVersionUID = 6799874733124273323L;
 
 	/**
 	 * 枚举类型，目前仅支持半年(HALF_YEAR)和一年(ONE_YEAR)，使用前先确认是否有相对应的份额

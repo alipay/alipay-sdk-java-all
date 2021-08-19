@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汇款单据查询
  *
  * @author auto create
- * @since 1.0, 2020-07-30 19:20:05
+ * @since 1.0, 2021-08-09 15:06:00
  */
 public class AlipayOverseasTransferPaymentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6677116426148237684L;
+	private static final long serialVersionUID = 4148485278244545663L;
 
 	/**
 	 * 透出字段。以map方式存储

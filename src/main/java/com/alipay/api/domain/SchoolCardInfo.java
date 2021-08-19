@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园卡基本信息
  *
  * @author auto create
- * @since 1.0, 2019-12-20 15:36:49
+ * @since 1.0, 2021-08-10 17:17:44
  */
 public class SchoolCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3455765978222565964L;
+	private static final long serialVersionUID = 2256755168626619555L;
 
 	/**
 	 * 支付宝校园卡卡号

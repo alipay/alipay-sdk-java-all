@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BizActionConsumedAmountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4217585183862169613L;
+	private static final long serialVersionUID = 4291245892673227358L;
 
 	/**
 	 * 业务预算申请code

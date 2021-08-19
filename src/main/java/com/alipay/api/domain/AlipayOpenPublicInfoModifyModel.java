@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5265887247536378741L;
+	private static final long serialVersionUID = 3861857419562561865L;
 
 	/**
 	 * 生活号名称，2-20个字之间。注意：

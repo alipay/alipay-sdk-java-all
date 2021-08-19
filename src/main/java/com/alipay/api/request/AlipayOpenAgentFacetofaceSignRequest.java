@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.facetoface.sign request
  * 
  * @author auto create
- * @since 1.0, 2021-07-23 14:00:49
+ * @since 1.0, 2021-08-16 10:57:37
  */
 public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest<AlipayOpenAgentFacetofaceSignResponse> {
 
@@ -57,8 +57,7 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	private Boolean longTerm;
 
 	/** 
-	* 商家经营类目编码。详情可参考
-<a href="https://opendocs.alipay.com/open/01n22g#%E5%95%86%E5%AE%B6%E7%BB%8F%E8%90%A5%E7%B1%BB%E7%9B%AE">商家经营类目</a> 中的“二级类目code”。
+	* 商家经营类目编码。参见 <a href="https://opendocs.alipay.com/open/01n22g#%E5%95%86%E5%AE%B6%E7%BB%8F%E8%90%A5%E7%B1%BB%E7%9B%AE">商家经营类目2.0</a> 中的“一级类目code_二级类目code”。
 	 */
 	private String mccCode;
 
