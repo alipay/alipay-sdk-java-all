@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据回传
  *
  * @author auto create
- * @since 1.0, 2021-07-28 22:56:42
+ * @since 1.0, 2021-08-24 19:48:09
  */
 public class AlipayDataDataserviceAdConversionUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5859542152195751294L;
+	private static final long serialVersionUID = 4217728115149145559L;
 
 	/**
 	 * 代理商访问灯火平台的token

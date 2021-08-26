@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自动售货机终端设备进件接口
  *
  * @author auto create
- * @since 1.0, 2021-08-05 14:08:27
+ * @since 1.0, 2021-08-20 13:06:19
  */
 public class AlipayCommerceTerminalVendingCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6518696946373523992L;
+	private static final long serialVersionUID = 4432893471451984786L;
 
 	/**
 	 * 地址位置纬度，使用国标GCJ-02坐标系，取值范围：纬度-90~90，中国地区经度范围：纬度3.86~53.55

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新充电宝终端设备
  *
  * @author auto create
- * @since 1.0, 2021-08-05 14:07:21
+ * @since 1.0, 2021-08-20 13:06:30
  */
 public class AlipayCommerceTerminalPowerbankModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5356381144983749283L;
+	private static final long serialVersionUID = 7535315346621982419L;
 
 	/**
 	 * 是否删除

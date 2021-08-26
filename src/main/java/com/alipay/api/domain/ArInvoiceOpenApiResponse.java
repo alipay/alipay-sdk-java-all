@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票信息展示模型
  *
  * @author auto create
- * @since 1.0, 2020-12-31 15:38:52
+ * @since 1.0, 2021-08-24 16:54:57
  */
 public class ArInvoiceOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4812826295557642489L;
+	private static final long serialVersionUID = 5215987289697828128L;
 
 	/**
 	 * 发票行信息集合
@@ -236,6 +236,20 @@ true：是， false：不是
 	 */
 	@ApiField("red_amt")
 	private MultiCurrencyMoneyOpenApi redAmt;
+
+	/**
+	 * 发票如果有关联的蓝票则显示发票关联的蓝票信息
+	 */
+	@ApiListField("rel_blue_invoices")
+	@ApiField("ar_rel_invoice_open_api_response")
+	private List<ArRelInvoiceOpenApiResponse> relBlueInvoices;
+
+	/**
+	 * 如果发票有关联的红票则为关联的红票的信息
+	 */
+	@ApiListField("rel_red_invoices")
+	@ApiField("ar_rel_invoice_open_api_response")
+	private List<ArRelInvoiceOpenApiResponse> relRedInvoices;
 
 	/**
 	 * 复核人
@@ -535,6 +549,20 @@ true：是， false：不是
 	}
 	public void setRedAmt(MultiCurrencyMoneyOpenApi redAmt) {
 		this.redAmt = redAmt;
+	}
+
+	public List<ArRelInvoiceOpenApiResponse> getRelBlueInvoices() {
+		return this.relBlueInvoices;
+	}
+	public void setRelBlueInvoices(List<ArRelInvoiceOpenApiResponse> relBlueInvoices) {
+		this.relBlueInvoices = relBlueInvoices;
+	}
+
+	public List<ArRelInvoiceOpenApiResponse> getRelRedInvoices() {
+		return this.relRedInvoices;
+	}
+	public void setRelRedInvoices(List<ArRelInvoiceOpenApiResponse> relRedInvoices) {
+		this.relRedInvoices = relRedInvoices;
 	}
 
 	public String getReviewer() {

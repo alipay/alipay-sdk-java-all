@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingPassInstanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8536792929764388991L;
+	private static final long serialVersionUID = 2257286791729789965L;
 
 	/**
 	 * 页码，必须为大于0的整数， 1表示第一页，2表示第2页；

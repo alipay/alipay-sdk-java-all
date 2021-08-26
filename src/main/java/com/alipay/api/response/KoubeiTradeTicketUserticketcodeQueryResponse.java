@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.userticketcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-25 19:59:57
+ * @since 1.0, 2021-08-20 11:32:19
  */
 public class KoubeiTradeTicketUserticketcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7491114482179119111L;
+	private static final long serialVersionUID = 4811713753636411784L;
 
 	/** 
 	 * 查询结果列表

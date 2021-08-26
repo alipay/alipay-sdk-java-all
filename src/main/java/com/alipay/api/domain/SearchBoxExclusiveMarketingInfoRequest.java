@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * box活动申请入参
  *
  * @author auto create
- * @since 1.0, 2021-07-14 16:37:41
+ * @since 1.0, 2021-08-20 15:38:18
  */
 public class SearchBoxExclusiveMarketingInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3657366762537946575L;
+	private static final long serialVersionUID = 6788118476251675295L;
 
 	/**
 	 * 状态
@@ -63,6 +63,12 @@ public class SearchBoxExclusiveMarketingInfoRequest extends AlipayObject {
 	 */
 	@ApiField("material_type")
 	private String materialType;
+
+	/**
+	 * 定向规则
+	 */
+	@ApiField("oriented_rules")
+	private SearchProductOrientedRuleOpenApi orientedRules;
 
 	/**
 	 * 活动id
@@ -143,6 +149,13 @@ public class SearchBoxExclusiveMarketingInfoRequest extends AlipayObject {
 	}
 	public void setMaterialType(String materialType) {
 		this.materialType = materialType;
+	}
+
+	public SearchProductOrientedRuleOpenApi getOrientedRules() {
+		return this.orientedRules;
+	}
+	public void setOrientedRules(SearchProductOrientedRuleOpenApi orientedRules) {
+		this.orientedRules = orientedRules;
 	}
 
 	public String getServCode() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮服务标准化订单数据回流
  *
  * @author auto create
- * @since 1.0, 2021-07-21 13:38:53
+ * @since 1.0, 2021-08-26 15:47:37
  */
 public class AlipayCommerceOperationIsvOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3276858254941273981L;
+	private static final long serialVersionUID = 8662249359145944194L;
 
 	/**
 	 * 支付宝userid（用户在支付宝平台的2088开头16位id）
@@ -185,6 +185,12 @@ INSTANT：实时单
 	 */
 	@ApiField("service_code")
 	private String serviceCode;
+
+	/**
+	 * 订单对应的服务相关信息
+	 */
+	@ApiField("service_info")
+	private CateringServiceInfo serviceInfo;
 
 	/**
 	 * 订单枚举。请参考产品文档场景说明。
@@ -378,6 +384,13 @@ INSTANT：实时单
 	}
 	public void setServiceCode(String serviceCode) {
 		this.serviceCode = serviceCode;
+	}
+
+	public CateringServiceInfo getServiceInfo() {
+		return this.serviceInfo;
+	}
+	public void setServiceInfo(CateringServiceInfo serviceInfo) {
+		this.serviceInfo = serviceInfo;
 	}
 
 	public String getStatus() {

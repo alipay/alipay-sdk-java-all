@@ -8,17 +8,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.order.settle response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-15 13:46:19
+ * @since 1.0, 2021-08-24 16:30:23
  */
 public class AlipayTradeOrderSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1662878314656191488L;
+	private static final long serialVersionUID = 8473984235212953215L;
+
+	/** 
+	 * 支付宝分账单号，可以根据该单号查询单次分账请求执行结果
+	 */
+	@ApiField("settle_no")
+	private String settleNo;
 
 	/** 
 	 * 支付宝交易号
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public void setSettleNo(String settleNo) {
+		this.settleNo = settleNo;
+	}
+	public String getSettleNo( ) {
+		return this.settleNo;
+	}
 
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;

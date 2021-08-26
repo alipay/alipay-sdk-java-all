@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数据集同步
  *
  * @author auto create
- * @since 1.0, 2021-07-28 22:57:02
+ * @since 1.0, 2021-08-24 19:47:59
  */
 public class AlipayDataDataserviceAdDatasetSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1479713311918867892L;
+	private static final long serialVersionUID = 1573264523536386157L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token

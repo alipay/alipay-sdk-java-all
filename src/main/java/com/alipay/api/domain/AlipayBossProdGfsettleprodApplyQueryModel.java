@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁统一结算付款申请单查询
  *
  * @author auto create
- * @since 1.0, 2021-01-29 15:43:17
+ * @since 1.0, 2021-08-24 17:15:21
  */
 public class AlipayBossProdGfsettleprodApplyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6172552833547869573L;
+	private static final long serialVersionUID = 5193728392197299446L;
 
 	/**
 	 * 合约号，等同于集采PO号
@@ -25,6 +25,12 @@ public class AlipayBossProdGfsettleprodApplyQueryModel extends AlipayObject {
 	@ApiField("ip_role_id")
 	private String ipRoleId;
 
+	/**
+	 * 单据类型
+	 */
+	@ApiField("type")
+	private String type;
+
 	public String getArrangementNo() {
 		return this.arrangementNo;
 	}
@@ -37,6 +43,13 @@ public class AlipayBossProdGfsettleprodApplyQueryModel extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

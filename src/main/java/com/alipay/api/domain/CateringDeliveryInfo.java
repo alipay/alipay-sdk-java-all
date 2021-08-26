@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外卖配送信息
  *
  * @author auto create
- * @since 1.0, 2021-05-12 21:08:23
+ * @since 1.0, 2021-08-26 15:47:37
  */
 public class CateringDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5453732455575235335L;
+	private static final long serialVersionUID = 5576372861825476935L;
 
 	/**
 	 * 骑手位置，单位是米。

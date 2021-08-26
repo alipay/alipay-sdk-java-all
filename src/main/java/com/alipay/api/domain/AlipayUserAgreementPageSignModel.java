@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2021-08-09 10:20:56
+ * @since 1.0, 2021-08-23 19:22:45
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6356255941963479186L;
+	private static final long serialVersionUID = 8556631295517995354L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -127,6 +127,12 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	 */
 	@ApiField("sign_validity_period")
 	private String signValidityPeriod;
+
+	/**
+	 * 商户签约指定可用渠道
+	 */
+	@ApiField("specified_asset")
+	private SpecifiedAsset specifiedAsset;
 
 	/**
 	 * 商户指定优先扣款渠道
@@ -272,6 +278,13 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	}
 	public void setSignValidityPeriod(String signValidityPeriod) {
 		this.signValidityPeriod = signValidityPeriod;
+	}
+
+	public SpecifiedAsset getSpecifiedAsset() {
+		return this.specifiedAsset;
+	}
+	public void setSpecifiedAsset(SpecifiedAsset specifiedAsset) {
+		this.specifiedAsset = specifiedAsset;
 	}
 
 	public SpecifiedChannelParam getSpecifiedSortChannelParams() {

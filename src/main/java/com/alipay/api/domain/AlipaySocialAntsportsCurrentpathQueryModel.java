@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialAntsportsCurrentpathQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1116437418672573464L;
+	private static final long serialVersionUID = 4111354657217547166L;
 
 	/**
 	 * 日期。格式yyyy-MM-dd

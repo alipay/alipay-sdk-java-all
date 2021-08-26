@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6789193782115943862L;
+	private static final long serialVersionUID = 6861528548931738141L;
 
 	/**
 	 * 优惠券活动id
@@ -118,6 +118,7 @@ OTHER_TRADE_CHANNEL：
 
 	/**
 	 * 该交易在支付宝系统中的交易流水号。
+注意：若用户使用支付宝为交易的渠道，本参数必填。
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

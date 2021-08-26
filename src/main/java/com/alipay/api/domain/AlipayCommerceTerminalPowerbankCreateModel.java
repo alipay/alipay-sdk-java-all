@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建一个新的充电宝终端设备进件
  *
  * @author auto create
- * @since 1.0, 2021-08-04 17:50:22
+ * @since 1.0, 2021-08-20 13:06:23
  */
 public class AlipayCommerceTerminalPowerbankCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7436421967781453186L;
+	private static final long serialVersionUID = 3512862572685214874L;
 
 	/**
 	 * 地址位置纬度，使用国标GCJ-02坐标系，取值范围：纬度-90~90，中国地区经度范围：纬度3.86~53.55

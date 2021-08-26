@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 付费外卡售卖基础配置
  *
  * @author auto create
- * @since 1.0, 2021-08-18 17:21:27
+ * @since 1.0, 2021-08-19 15:38:02
  */
 public class PaidOuterCardSellingConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7366819963415691428L;
+	private static final long serialVersionUID = 1496749913474195146L;
 
 	/**
 	 * 售卖结束时间。
@@ -26,8 +28,9 @@ public class PaidOuterCardSellingConfDTO extends AlipayObject {
 	/**
 	 * 售卖方案列表
 	 */
-	@ApiField("price_detail")
-	private PaidOuterCardPriceDetailDTO priceDetail;
+	@ApiListField("price_detail")
+	@ApiField("paid_outer_card_price_detail_d_t_o")
+	private List<PaidOuterCardPriceDetailDTO> priceDetail;
 
 	/**
 	 * 售卖地址
@@ -48,10 +51,10 @@ public class PaidOuterCardSellingConfDTO extends AlipayObject {
 		this.endDate = endDate;
 	}
 
-	public PaidOuterCardPriceDetailDTO getPriceDetail() {
+	public List<PaidOuterCardPriceDetailDTO> getPriceDetail() {
 		return this.priceDetail;
 	}
-	public void setPriceDetail(PaidOuterCardPriceDetailDTO priceDetail) {
+	public void setPriceDetail(List<PaidOuterCardPriceDetailDTO> priceDetail) {
 		this.priceDetail = priceDetail;
 	}
 

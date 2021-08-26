@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易结算接口
  *
  * @author auto create
- * @since 1.0, 2021-07-15 13:46:19
+ * @since 1.0, 2021-08-24 16:28:17
  */
 public class AlipayTradeOrderSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5241246473213892127L;
+	private static final long serialVersionUID = 7139696384822856368L;
 
 	/**
 	 * 分账结算业务扩展参数
@@ -33,6 +33,12 @@ public class AlipayTradeOrderSettleModel extends AlipayObject {
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
+
+	/**
+	 * 分账模式，目前有两种分账同步执行sync，分账异步执行async，不传默认同步执行
+	 */
+	@ApiField("royalty_mode")
+	private String royaltyMode;
 
 	/**
 	 * 分账明细信息。
@@ -67,6 +73,13 @@ public class AlipayTradeOrderSettleModel extends AlipayObject {
 	}
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
+	}
+
+	public String getRoyaltyMode() {
+		return this.royaltyMode;
+	}
+	public void setRoyaltyMode(String royaltyMode) {
+		this.royaltyMode = royaltyMode;
 	}
 
 	public List<OpenApiRoyaltyDetailInfoPojo> getRoyaltyParameters() {

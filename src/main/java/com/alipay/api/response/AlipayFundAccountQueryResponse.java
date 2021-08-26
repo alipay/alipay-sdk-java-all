@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-27 12:04:15
+ * @since 1.0, 2021-08-25 14:22:44
  */
 public class AlipayFundAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5344546236183182157L;
+	private static final long serialVersionUID = 5261936156361655349L;
 
 	/** 
 	 * 可用余额。可用于支付或提现的余额。
@@ -27,6 +27,12 @@ public class AlipayFundAccountQueryResponse extends AlipayResponse {
 	@ApiField("ext_card_info")
 	private ExtCardInfo extCardInfo;
 
+	/** 
+	 * 当前支付宝账户的实时冻结余额
+	 */
+	@ApiField("freeze_amount")
+	private String freezeAmount;
+
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
@@ -39,6 +45,13 @@ public class AlipayFundAccountQueryResponse extends AlipayResponse {
 	}
 	public ExtCardInfo getExtCardInfo( ) {
 		return this.extCardInfo;
+	}
+
+	public void setFreezeAmount(String freezeAmount) {
+		this.freezeAmount = freezeAmount;
+	}
+	public String getFreezeAmount( ) {
+		return this.freezeAmount;
 	}
 
 }

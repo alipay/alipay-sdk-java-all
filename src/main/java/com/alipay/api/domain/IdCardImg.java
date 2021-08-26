@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IdCardImg extends AlipayObject {
 
-	private static final long serialVersionUID = 8898622833264933392L;
+	private static final long serialVersionUID = 3725471278234617254L;
 
 	/**
 	 * 证件类型，营业执照：businessLicense，身份证：IDCARD

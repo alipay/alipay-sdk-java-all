@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCognitiveOcrBankcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2697877178673317787L;
+	private static final long serialVersionUID = 2884724855943134239L;
 
 	/** 
 	 * 银行卡号

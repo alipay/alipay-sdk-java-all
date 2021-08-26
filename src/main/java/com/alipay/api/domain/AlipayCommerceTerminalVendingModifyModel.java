@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新自动售卖机终端设备
  *
  * @author auto create
- * @since 1.0, 2021-08-05 14:08:40
+ * @since 1.0, 2021-08-20 13:06:32
  */
 public class AlipayCommerceTerminalVendingModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4272733834524499147L;
+	private static final long serialVersionUID = 2645247668346912283L;
 
 	/**
 	 * 是否删除

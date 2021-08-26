@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务提报申请
  *
  * @author auto create
- * @since 1.0, 2021-04-19 14:11:02
+ * @since 1.0, 2021-08-26 13:52:33
  */
 public class AlipayOpenAppServiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2898737546949972422L;
+	private static final long serialVersionUID = 6858682321358218688L;
 
 	/**
 	 * 行业类目id
@@ -30,6 +30,12 @@ public class AlipayOpenAppServiceApplyModel extends AlipayObject {
 	 */
 	@ApiField("schema_version")
 	private String schemaVersion;
+
+	/**
+	 * 服务编码, 首次提报时设置空值，支付宝侧返回ServiceCode；当传入serviceCode，则对已提报服务做编辑操作。
+	 */
+	@ApiField("service_code")
+	private String serviceCode;
 
 	/**
 	 * 服务xml
@@ -56,6 +62,13 @@ public class AlipayOpenAppServiceApplyModel extends AlipayObject {
 	}
 	public void setSchemaVersion(String schemaVersion) {
 		this.schemaVersion = schemaVersion;
+	}
+
+	public String getServiceCode() {
+		return this.serviceCode;
+	}
+	public void setServiceCode(String serviceCode) {
+		this.serviceCode = serviceCode;
 	}
 
 	public String getServiceXml() {
