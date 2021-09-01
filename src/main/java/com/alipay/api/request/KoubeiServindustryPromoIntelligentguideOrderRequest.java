@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.servindustry.promo.intelligentguide.order request
  * 
  * @author auto create
- * @since 1.0, 2020-03-10 10:35:08
+ * @since 1.0, 2021-09-01 11:06:19
  */
 public class KoubeiServindustryPromoIntelligentguideOrderRequest implements AlipayRequest<KoubeiServindustryPromoIntelligentguideOrderResponse> {
 

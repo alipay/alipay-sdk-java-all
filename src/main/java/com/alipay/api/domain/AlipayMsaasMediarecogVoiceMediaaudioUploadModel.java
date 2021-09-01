@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMsaasMediarecogVoiceMediaaudioUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6799438921192339376L;
+	private static final long serialVersionUID = 4738869153492487464L;
 
 	/**
 	 * base64编码的声音数据

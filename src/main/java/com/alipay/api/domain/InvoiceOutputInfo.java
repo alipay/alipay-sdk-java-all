@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子发票输出模型
  *
  * @author auto create
- * @since 1.0, 2020-11-02 10:47:35
+ * @since 1.0, 2021-08-27 17:09:53
  */
 public class InvoiceOutputInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5414176956226687353L;
+	private static final long serialVersionUID = 5657441343692636719L;
 
 	/**
 	 * 发票防伪码，验证码

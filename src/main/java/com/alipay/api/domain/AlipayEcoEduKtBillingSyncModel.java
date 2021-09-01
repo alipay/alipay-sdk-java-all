@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 教育缴费定向同步接口
  *
  * @author auto create
- * @since 1.0, 2021-06-24 10:31:19
+ * @since 1.0, 2021-08-30 17:09:58
  */
 public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7536146855281187758L;
+	private static final long serialVersionUID = 6543251581735862583L;
 
 	/**
 	 * 如果所在学校分校区，传入分校区编号，不传默认为总校或无分校区
@@ -128,6 +128,12 @@ public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 	private String province;
 
 	/**
+	 * 学校编号  SV发送模式下必传
+	 */
+	@ApiField("school_code")
+	private String schoolCode;
+
+	/**
 	 * 学校编号，需保证唯一，公立学校建议用办学许可证号，私立学校用组织机构代码证。
 对应直付通进件接口中external_id。
 	 */
@@ -159,13 +165,13 @@ public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 	private String schoolType;
 
 	/**
-	 * 教育缴费平台的账单来源。1-ISV发送；2-钉钉同步
+	 * 教育缴费平台的账单来源。7-ISV发送；2-钉钉同步
 	 */
 	@ApiField("source")
 	private String source;
 
 	/**
-	 * 学生编号。只支持字母和数字类型，一般以教育局学号为准，作为学生的唯一标识。
+	 * 学生编号。只支持字母和数字类型，一般以教育局学号为准，作为学生的唯一标识。钉钉必传，isv来源学生编号和家长手机号必传一个
 	 */
 	@ApiField("student_code")
 	private String studentCode;
@@ -175,6 +181,41 @@ public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 	 */
 	@ApiField("student_name")
 	private String studentName;
+
+	/**
+	 * 子机构名称
+	 */
+	@ApiField("sub_orgname")
+	private String subOrgname;
+
+	/**
+	 * 子机构类型
+枚举值如下：
+0:幼儿园
+1:小学
+2:初中
+3:高中
+4:大学
+5:中职中专
+6:培训机构
+7:高职高专
+8:成人教育、函授等
+10.政务机关
+	 */
+	@ApiField("sub_orgtype")
+	private String subOrgtype;
+
+	/**
+	 * 返佣标识码。根据具体场景传递对应值。智能账单场景：edu_trade_sync
+	 */
+	@ApiField("sys_service_param")
+	private String sysServiceParam;
+
+	/**
+	 * 返佣字段
+	 */
+	@ApiField("sys_service_provider_id")
+	private String sysServiceProviderId;
 
 	/**
 	 * 缴费账单名称
@@ -197,6 +238,7 @@ public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 
 	/**
 	 * 为学生缴费的家长信息
+钉钉必传，isv来源学生编号和家长手机号必传一个
 	 */
 	@ApiField("user")
 	private UserDetails user;
@@ -327,6 +369,13 @@ public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 		this.province = province;
 	}
 
+	public String getSchoolCode() {
+		return this.schoolCode;
+	}
+	public void setSchoolCode(String schoolCode) {
+		this.schoolCode = schoolCode;
+	}
+
 	public String getSchoolExternalId() {
 		return this.schoolExternalId;
 	}
@@ -381,6 +430,34 @@ public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 	}
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
+	}
+
+	public String getSubOrgname() {
+		return this.subOrgname;
+	}
+	public void setSubOrgname(String subOrgname) {
+		this.subOrgname = subOrgname;
+	}
+
+	public String getSubOrgtype() {
+		return this.subOrgtype;
+	}
+	public void setSubOrgtype(String subOrgtype) {
+		this.subOrgtype = subOrgtype;
+	}
+
+	public String getSysServiceParam() {
+		return this.sysServiceParam;
+	}
+	public void setSysServiceParam(String sysServiceParam) {
+		this.sysServiceParam = sysServiceParam;
+	}
+
+	public String getSysServiceProviderId() {
+		return this.sysServiceProviderId;
+	}
+	public void setSysServiceProviderId(String sysServiceProviderId) {
+		this.sysServiceProviderId = sysServiceProviderId;
 	}
 
 	public String getTitle() {

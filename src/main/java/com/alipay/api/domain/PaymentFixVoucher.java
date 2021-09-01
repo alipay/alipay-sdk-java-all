@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 满减券详情
  *
  * @author auto create
- * @since 1.0, 2021-08-16 21:28:00
+ * @since 1.0, 2021-08-27 16:02:49
  */
 public class PaymentFixVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 6186234685515196923L;
+	private static final long serialVersionUID = 5235168275625257644L;
 
 	/**
 	 * 面额，每张优惠券可以抵扣的金额。
@@ -24,11 +24,12 @@ public class PaymentFixVoucher extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 门槛金额，当订单总金额大于等于门槛金额时券才能使用。默认无门槛限制。 
+	 * 门槛金额。默认无门槛限制。 
 
 限制:
 1、币种为人民币，单位为元。小数点以后最多保留两位。 
 2、取值范围:0.1<=x<= 50000。
+3、若指定可核销商品编码，门槛金额必填。门槛金额为可核销商品部分的消费金额，而不是订单的消费金额。
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;

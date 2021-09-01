@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连商户费率审核状态查询
  *
  * @author auto create
- * @since 1.0, 2021-07-05 19:45:10
+ * @since 1.0, 2021-08-31 02:53:21
  */
 public class AntMerchantExpandIndirectActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3287431643119783844L;
+	private static final long serialVersionUID = 1569213851921934524L;
 
 	/**
 	 * 商户在支付宝入驻成功后，生成的支付宝内全局唯一的商户编号

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券详情页
  *
  * @author auto create
- * @since 1.0, 2021-08-16 21:32:47
+ * @since 1.0, 2021-08-27 16:02:49
  */
 public class PaymentVoucherDisplayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6752966737831427362L;
+	private static final long serialVersionUID = 4552116645554796349L;
 
 	/**
 	 * 商户品牌名称。 如果不设置品牌名称，则默认使用支付宝商家系统中维护的商家别名。 如果没有维护商家别名，则使用默认名称： 商家优惠。 用户领取优惠券后，品牌名称会对用户进行展示

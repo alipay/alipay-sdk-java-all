@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字身份电子凭证同步接口
  *
  * @author auto create
- * @since 1.0, 2021-06-17 19:11:51
+ * @since 1.0, 2021-09-01 16:24:08
  */
 public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4231757772491697798L;
+	private static final long serialVersionUID = 2213536353174553369L;
 
 	/**
 	 * 用户申领信息核验模式，该字段值与传入的用户姓名及证件号相关联。例如PLAIN模式下原文对比传入的用户申领信息与支付宝侧信息是否一致。
@@ -42,6 +42,12 @@ public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject 
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 接口调用权限token，由支付宝侧下发。需携带相应token才可回流成功。
+	 */
+	@ApiField("sync_token")
+	private String syncToken;
 
 	/**
 	 * 用户申领时证件号，当前仅支持身份证号（用于已领取卡面脱敏展示）。在PLAIN模式下需传入证件号明文；MD5模式下需传入证件号MD5摘要
@@ -100,6 +106,13 @@ public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject 
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getSyncToken() {
+		return this.syncToken;
+	}
+	public void setSyncToken(String syncToken) {
+		this.syncToken = syncToken;
 	}
 
 	public String getUserApplyCertNo() {

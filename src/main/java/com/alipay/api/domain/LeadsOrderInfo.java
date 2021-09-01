@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客资详情
  *
  * @author auto create
- * @since 1.0, 2020-07-08 19:26:09
+ * @since 1.0, 2021-08-31 17:54:17
  */
 public class LeadsOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8523153653554495714L;
+	private static final long serialVersionUID = 7559862714899353538L;
 
 	/**
 	 * 客资类型，如手艺人预约，直播客资，门店预约，商品购买等

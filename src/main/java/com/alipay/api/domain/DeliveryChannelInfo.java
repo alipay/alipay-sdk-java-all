@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可投放的渠道信息
  *
  * @author auto create
- * @since 1.0, 2021-06-21 16:16:16
+ * @since 1.0, 2021-08-26 23:08:37
  */
 public class DeliveryChannelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1334819377664473193L;
+	private static final long serialVersionUID = 4344329872723327497L;
 
 	/**
-	 * 展位码:boothCode表达的是具体渠道所属的展位码。例如：支付结果页PAYMENT_RESULT
+	 * 展位码:boothCode表达的是具体渠道所属的展位码。例如：支付结果页PAY_RESULT
 	 */
 	@ApiField("booth_code")
 	private String boothCode;

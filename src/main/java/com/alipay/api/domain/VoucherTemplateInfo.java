@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherTemplateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3221269857621474425L;
+	private static final long serialVersionUID = 1539646986826674226L;
 
 	/**
 	 * 面额。每张代金券可以抵扣的金额。币种为人民币，单位为元。该数值不小于0，小数点以后最多两位

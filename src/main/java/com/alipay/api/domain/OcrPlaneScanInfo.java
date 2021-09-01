@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 飞机票扫描模型
  *
  * @author auto create
- * @since 1.0, 2020-08-07 15:12:40
+ * @since 1.0, 2021-08-27 17:09:54
  */
 public class OcrPlaneScanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1541972153576873549L;
+	private static final long serialVersionUID = 4526675181249754921L;
 
 	/**
 	 * 目的地

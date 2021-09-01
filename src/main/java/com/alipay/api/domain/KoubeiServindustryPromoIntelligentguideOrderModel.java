@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * isv开通商户智能导购权限
  *
  * @author auto create
- * @since 1.0, 2020-03-10 10:34:17
+ * @since 1.0, 2021-09-01 11:06:19
  */
 public class KoubeiServindustryPromoIntelligentguideOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1332121521245567941L;
+	private static final long serialVersionUID = 1147365445921235372L;
 
 	/**
 	 * 枚举类型，目前仅支持半年(HALF_YEAR)和一年(ONE_YEAR)，使用前先确认是否有相对应的份额

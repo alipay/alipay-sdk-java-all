@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量添加小程序硬件设备
  *
  * @author auto create
- * @since 1.0, 2020-04-14 19:12:20
+ * @since 1.0, 2021-08-26 20:57:56
  */
 public class AlipayOpenMiniAmpeDeviceAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7398881274248814483L;
+	private static final long serialVersionUID = 5895415556891515264L;
 
 	/**
 	 * 用于标识厂商单个设备产品下唯一的一个设备，推荐使用厂商自己定义的序列号。单次最多提交200个，如果productId下已存在deviceId，会被更新为最新一次提交的数据

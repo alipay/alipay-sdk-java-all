@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantCreditlifeRiskApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4514312411866391744L;
+	private static final long serialVersionUID = 3486923964385618873L;
 
 	/**
 	 * 地址

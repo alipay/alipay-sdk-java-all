@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.promo.guidequota.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-10 10:35:08
+ * @since 1.0, 2021-09-01 11:06:42
  */
 public class KoubeiServindustryPromoGuidequotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6213185575971478426L;
+	private static final long serialVersionUID = 1517876146958811972L;
 
 	/** 
 	 * 权限份额

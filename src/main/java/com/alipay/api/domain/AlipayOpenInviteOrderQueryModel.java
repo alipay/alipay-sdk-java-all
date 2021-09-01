@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenInviteOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1531832511326728383L;
+	private static final long serialVersionUID = 2591432692657348257L;
 
 	/**
 	 * 商家的支付宝账号，如果调用alipay.open.invite.order.create接口时有传入支付宝账号，则这里查询签约状态时必须要传

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WorkShiftParam extends AlipayObject {
 
-	private static final long serialVersionUID = 5284996471771718136L;
+	private static final long serialVersionUID = 6767514919398431756L;
 
 	/**
 	 * 扩展参数，json格式，由双方约定取值

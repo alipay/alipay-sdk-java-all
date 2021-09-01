@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学费码支付页面数据录入
  *
  * @author auto create
- * @since 1.0, 2020-11-25 10:44:11
+ * @since 1.0, 2021-08-30 13:59:50
  */
 public class AlipayCommerceEducateTuitioncodePagedataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8592571341976335231L;
+	private static final long serialVersionUID = 8256496471297855177L;
 
 	/**
 	 * 商户名称
@@ -42,6 +42,12 @@ public class AlipayCommerceEducateTuitioncodePagedataSendModel extends AlipayObj
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 学费码创单扩展参数
+	 */
+	@ApiField("ext_param")
+	private TuitionOrderExtendParam extParam;
 
 	/**
 	 * 商户logo
@@ -118,6 +124,13 @@ public class AlipayCommerceEducateTuitioncodePagedataSendModel extends AlipayObj
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public TuitionOrderExtendParam getExtParam() {
+		return this.extParam;
+	}
+	public void setExtParam(TuitionOrderExtendParam extParam) {
+		this.extParam = extParam;
 	}
 
 	public String getLogo() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户信息
  *
  * @author auto create
- * @since 1.0, 2021-01-20 19:03:44
+ * @since 1.0, 2021-08-30 10:48:04
  */
 public class UserInfomation extends AlipayObject {
 
-	private static final long serialVersionUID = 8546997964775362418L;
+	private static final long serialVersionUID = 3295897856427314746L;
 
 	/**
 	 * 证件号
@@ -46,6 +46,12 @@ public class UserInfomation extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 支付宝uid
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getCertNo() {
 		return this.certNo;
@@ -80,6 +86,13 @@ public class UserInfomation extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

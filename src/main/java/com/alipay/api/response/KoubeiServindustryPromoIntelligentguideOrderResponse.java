@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.promo.intelligentguide.order response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-10 10:35:08
+ * @since 1.0, 2021-09-01 11:06:19
  */
 public class KoubeiServindustryPromoIntelligentguideOrderResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3414693791151643318L;
+	private static final long serialVersionUID = 5194129515512152115L;
 
 	/** 
 	 * 是否成功

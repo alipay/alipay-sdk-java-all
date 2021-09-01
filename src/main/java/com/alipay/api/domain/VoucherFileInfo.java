@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证文件信息
  *
  * @author auto create
- * @since 1.0, 2021-06-08 17:56:22
+ * @since 1.0, 2021-08-27 17:09:53
  */
 public class VoucherFileInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7245712583728728593L;
+	private static final long serialVersionUID = 7676867138856816144L;
 
 	/**
 	 * 发票文件下载

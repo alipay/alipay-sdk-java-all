@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateTrainRecommendQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6358636631651985623L;
+	private static final long serialVersionUID = 3533114139182273799L;
 
 	/** 
 	 * 根据年龄推荐的学段

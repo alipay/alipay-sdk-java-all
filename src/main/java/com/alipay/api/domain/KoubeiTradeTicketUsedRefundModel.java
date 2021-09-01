@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑凭证售后退
  *
  * @author auto create
- * @since 1.0, 2019-08-16 14:57:33
+ * @since 1.0, 2021-08-31 15:13:24
  */
 public class KoubeiTradeTicketUsedRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3665949767828897249L;
+	private static final long serialVersionUID = 2529576772638294959L;
 
 	/**
 	 * 外部请求号，支持英文字母和数字，由开发者自行定义（不允许重复）

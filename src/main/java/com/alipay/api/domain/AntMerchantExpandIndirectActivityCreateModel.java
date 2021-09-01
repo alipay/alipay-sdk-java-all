@@ -7,15 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联商户运营活动报名接口
  *
  * @author auto create
- * @since 1.0, 2021-08-13 14:17:26
+ * @since 1.0, 2021-08-31 02:53:33
  */
 public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8867266339314736884L;
+	private static final long serialVersionUID = 1281665288944963494L;
 
 	/**
 	 * 活动类型，间连商户报名的支付宝活动类型。
 特殊行业优惠费率：INDUSTRY_SPECIAL
+服务商返佣活动：REBATE
 	 */
 	@ApiField("activity_type")
 	private String activityType;
@@ -25,6 +26,36 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	 */
 	@ApiField("alias_name")
 	private String aliasName;
+
+	/**
+	 * app的应用上架市场名称，申请app支付必选
+	 */
+	@ApiField("app_market")
+	private String appMarket;
+
+	/**
+	 * 申请app支付的app应用名称，申请app支付必选
+	 */
+	@ApiField("app_name")
+	private String appName;
+
+	/**
+	 * APP上架截图，申请APP支付优惠费率时必填
+	 */
+	@ApiField("app_screenshot")
+	private String appScreenshot;
+
+	/**
+	 * app上架状态，true已上架，false未上架
+	 */
+	@ApiField("app_status")
+	private String appStatus;
+
+	/**
+	 * 申请app支付、PC网站支付时，app、网站的ICP许可证主体与申请商户不一致时提供
+	 */
+	@ApiField("auth_license")
+	private String authLicense;
 
 	/**
 	 * 一般为商户同名银行账户信息，党费等特殊业务除外
@@ -81,13 +112,19 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	private String diplomaticNote;
 
 	/**
+	 * 申请app支付、PC网站支付时，app、PC网站的ICP许可证与商户主体一致时必填
+	 */
+	@ApiField("icp_license")
+	private String icpLicense;
+
+	/**
 	 * 店内环境照，具体可参见资质要求，要求照片清晰可见，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("indoor_pic")
 	private String indoorPic;
 
 	/**
-	 * 特殊费率资质表中对应的行业code
+	 * 活动报名资质表中对应的行业code
 	 */
 	@ApiField("industry_code")
 	private String industryCode;
@@ -149,12 +186,36 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	private String orgCertPic;
 
 	/**
+	 * 申请PC网站支付的PC站点地址，申请PC支付必填
+	 */
+	@ApiField("pc_site")
+	private String pcSite;
+
+	/**
+	 * 网站上架状态，商户申请PC支付特殊费率时必填；true已上线，false未上线
+	 */
+	@ApiField("pc_site_status")
+	private String pcSiteStatus;
+
+	/**
 	 * 民办非企业单位登记证书图片。
 请上传照片OSSKey（参见应用场景说明）。
 特殊行业，请参见<a href="https://opendocs.alipay.com/p/01y6vi">间连特殊行业上传资质</a>
 	 */
 	@ApiField("private_nonenterprise_units")
 	private String privateNonenterpriseUnits;
+
+	/**
+	 * 商户开通代扣的单日额度限制
+	 */
+	@ApiField("quota_per_day")
+	private String quotaPerDay;
+
+	/**
+	 * 商户开通代扣的单笔额度限制
+	 */
+	@ApiField("quota_per_each")
+	private String quotaPerEach;
 
 	/**
 	 * 办学资质图片。
@@ -185,6 +246,18 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	@ApiField("sub_merchant_id")
 	private String subMerchantId;
 
+	/**
+	 * 商家开通代扣的服务描述
+	 */
+	@ApiField("withhold_service_desc")
+	private String withholdServiceDesc;
+
+	/**
+	 * 商家开通代扣的服务名称
+	 */
+	@ApiField("withhold_service_name")
+	private String withholdServiceName;
+
 	public String getActivityType() {
 		return this.activityType;
 	}
@@ -197,6 +270,41 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	}
 	public void setAliasName(String aliasName) {
 		this.aliasName = aliasName;
+	}
+
+	public String getAppMarket() {
+		return this.appMarket;
+	}
+	public void setAppMarket(String appMarket) {
+		this.appMarket = appMarket;
+	}
+
+	public String getAppName() {
+		return this.appName;
+	}
+	public void setAppName(String appName) {
+		this.appName = appName;
+	}
+
+	public String getAppScreenshot() {
+		return this.appScreenshot;
+	}
+	public void setAppScreenshot(String appScreenshot) {
+		this.appScreenshot = appScreenshot;
+	}
+
+	public String getAppStatus() {
+		return this.appStatus;
+	}
+	public void setAppStatus(String appStatus) {
+		this.appStatus = appStatus;
+	}
+
+	public String getAuthLicense() {
+		return this.authLicense;
+	}
+	public void setAuthLicense(String authLicense) {
+		this.authLicense = authLicense;
 	}
 
 	public BankCardInfo getBankAccount() {
@@ -253,6 +361,13 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	}
 	public void setDiplomaticNote(String diplomaticNote) {
 		this.diplomaticNote = diplomaticNote;
+	}
+
+	public String getIcpLicense() {
+		return this.icpLicense;
+	}
+	public void setIcpLicense(String icpLicense) {
+		this.icpLicense = icpLicense;
 	}
 
 	public String getIndoorPic() {
@@ -325,11 +440,39 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 		this.orgCertPic = orgCertPic;
 	}
 
+	public String getPcSite() {
+		return this.pcSite;
+	}
+	public void setPcSite(String pcSite) {
+		this.pcSite = pcSite;
+	}
+
+	public String getPcSiteStatus() {
+		return this.pcSiteStatus;
+	}
+	public void setPcSiteStatus(String pcSiteStatus) {
+		this.pcSiteStatus = pcSiteStatus;
+	}
+
 	public String getPrivateNonenterpriseUnits() {
 		return this.privateNonenterpriseUnits;
 	}
 	public void setPrivateNonenterpriseUnits(String privateNonenterpriseUnits) {
 		this.privateNonenterpriseUnits = privateNonenterpriseUnits;
+	}
+
+	public String getQuotaPerDay() {
+		return this.quotaPerDay;
+	}
+	public void setQuotaPerDay(String quotaPerDay) {
+		this.quotaPerDay = quotaPerDay;
+	}
+
+	public String getQuotaPerEach() {
+		return this.quotaPerEach;
+	}
+	public void setQuotaPerEach(String quotaPerEach) {
+		this.quotaPerEach = quotaPerEach;
 	}
 
 	public String getRunSchoolLicensePic() {
@@ -358,6 +501,20 @@ public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 	}
 	public void setSubMerchantId(String subMerchantId) {
 		this.subMerchantId = subMerchantId;
+	}
+
+	public String getWithholdServiceDesc() {
+		return this.withholdServiceDesc;
+	}
+	public void setWithholdServiceDesc(String withholdServiceDesc) {
+		this.withholdServiceDesc = withholdServiceDesc;
+	}
+
+	public String getWithholdServiceName() {
+		return this.withholdServiceName;
+	}
+	public void setWithholdServiceName(String withholdServiceName) {
+		this.withholdServiceName = withholdServiceName;
 	}
 
 }

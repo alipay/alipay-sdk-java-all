@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.trade.ticket.used.refund request
  * 
  * @author auto create
- * @since 1.0, 2019-08-16 15:10:01
+ * @since 1.0, 2021-08-31 15:15:27
  */
 public class KoubeiTradeTicketUsedRefundRequest implements AlipayRequest<KoubeiTradeTicketUsedRefundResponse> {
 

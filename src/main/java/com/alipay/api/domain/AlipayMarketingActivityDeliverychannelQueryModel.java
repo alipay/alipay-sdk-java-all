@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityDeliverychannelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3688625519286585458L;
+	private static final long serialVersionUID = 7768722251367299256L;
 
 	/**
 	 * 当前服务商所代理的商户信息.
@@ -46,7 +46,7 @@ PAY_RESULT：支付结果页。
 	private Long pageNum;
 
 	/**
-	 * 每页查询的个数
+	 * 每页查询的个数，最大值为 100。
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 操作员关联主账号查询
  *
  * @author auto create
- * @since 1.0, 2021-08-24 11:24:24
+ * @since 1.0, 2021-08-30 20:00:44
  */
 public class AlipayFundTransOperatorBindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1373794847236125735L;
+	private static final long serialVersionUID = 6842575371376439435L;
 
 	/**
-	 * 业务场景码
+	 * 业务场景码，默认DEFAULT
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -32,7 +32,8 @@ public class AlipayFundTransOperatorBindQueryModel extends AlipayObject {
 	private String operatorUserId;
 
 	/**
-	 * 业务产品码
+	 * 业务产品码，枚举：
+salary_platform_daily_salary
 	 */
 	@ApiField("product_code")
 	private String productCode;

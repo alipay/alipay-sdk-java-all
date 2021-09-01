@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 共同账户成员信息
  *
  * @author auto create
- * @since 1.0, 2021-08-11 18:12:17
+ * @since 1.0, 2021-08-31 14:41:27
  */
 public class JointAccountMemberRespDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4173398983215161963L;
+	private static final long serialVersionUID = 3635543377261237321L;
 
 	/**
 	 * 额度模型

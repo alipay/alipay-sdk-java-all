@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量删除小程序硬件设备
  *
  * @author auto create
- * @since 1.0, 2020-10-27 14:57:31
+ * @since 1.0, 2021-08-26 20:57:43
  */
 public class AlipayOpenMiniAmpeDeviceDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6144537985166125274L;
+	private static final long serialVersionUID = 2235786261614915243L;
 
 	/**
 	 * 厂商在对应设备产品和机型下已添加的设备ID，单次最多提交200个
