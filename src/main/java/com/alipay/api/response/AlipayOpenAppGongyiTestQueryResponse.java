@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppGongyiTestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2586755621543491556L;
+	private static final long serialVersionUID = 3497427564893218758L;
 
 	/** 
 	 * 日期

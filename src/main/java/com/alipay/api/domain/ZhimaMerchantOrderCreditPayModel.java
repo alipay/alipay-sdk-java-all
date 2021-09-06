@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantOrderCreditPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7577925876869886262L;
+	private static final long serialVersionUID = 8548952697648524511L;
 
 	/**
 	 * 优惠券金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]，无支付行为时为空，例如订单取消或者支付金额为0

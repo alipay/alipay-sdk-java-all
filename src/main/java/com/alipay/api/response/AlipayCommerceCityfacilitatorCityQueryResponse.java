@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceCityfacilitatorCityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7664133173614756187L;
+	private static final long serialVersionUID = 6118713143734761775L;
 
 	/** 
 	 * 城市列表

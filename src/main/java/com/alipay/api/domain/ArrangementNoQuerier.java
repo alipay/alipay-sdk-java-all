@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ArrangementNoQuerier extends AlipayObject {
 
-	private static final long serialVersionUID = 1128383561589243757L;
+	private static final long serialVersionUID = 6575776571261661134L;
 
 	/**
 	 * 合约编号列表

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IgAuthQuota extends AlipayObject {
 
-	private static final long serialVersionUID = 5471114547441548571L;
+	private static final long serialVersionUID = 6465139247164458531L;
 
 	/**
 	 * 份额数量

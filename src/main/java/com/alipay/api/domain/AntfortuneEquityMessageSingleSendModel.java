@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneEquityMessageSingleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2363926283525993844L;
+	private static final long serialVersionUID = 7656944567673986981L;
 
 	/**
 	 * TA编码

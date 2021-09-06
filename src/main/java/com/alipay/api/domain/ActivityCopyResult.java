@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityCopyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7538989343536475919L;
+	private static final long serialVersionUID = 8282835753755198933L;
 
 	/**
 	 * 活动权益复制内容，和入参中copy_content相对应，表示其执行结果

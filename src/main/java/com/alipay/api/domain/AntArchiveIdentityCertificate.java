@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntArchiveIdentityCertificate extends AlipayObject {
 
-	private static final long serialVersionUID = 2283752383847883326L;
+	private static final long serialVersionUID = 2625769749836155258L;
 
 	/**
 	 * 证件名

@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsMarketingDiscountDecisionResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4296642676338283744L;
+	private static final long serialVersionUID = 5116143966355826664L;
 
 	/** 
 	 * 该订单可以享受的事后权益

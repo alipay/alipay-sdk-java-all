@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建虎符的auth请求
  *
  * @author auto create
- * @since 1.0, 2020-06-04 17:21:33
+ * @since 1.0, 2021-09-06 13:53:21
  */
 public class AlipaySecurityRiskHufuAuthCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2533449947124474141L;
+	private static final long serialVersionUID = 5352555841314787627L;
 
 	/**
 	 * 虎符认证成功后的回调地址
