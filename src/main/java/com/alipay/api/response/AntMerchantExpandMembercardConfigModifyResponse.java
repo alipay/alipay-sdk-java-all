@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandMembercardConfigModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7619163951963471121L;
+	private static final long serialVersionUID = 2415794365591668918L;
 
 	/** 
 	 * 最新的卡模版配置

@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.goods.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-21 16:39:18
+ * @since 1.0, 2021-09-02 19:32:44
  */
 public class AlipayOverseasTravelGoodsSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8195779479712325265L;
+	private static final long serialVersionUID = 3239567379265617372L;
 
 	/** 
 	 * 商品状态，NORMAL表示如正在售卖，CLOSED表示下架；当syncStatus为SUCCESS时该值一定存在，其他状态不一定存在。
 	 */
 	@ApiField("goods_biz_status")
 	private String goodsBizStatus;
+
+	/** 
+	 * 同步单据id
+	 */
+	@ApiField("sync_order_id")
+	private String syncOrderId;
 
 	/** 
 	 * 商品数据同步请求处理状态：
@@ -34,6 +40,13 @@ FAILED表示商品信息处理失败，如商品信息审核失败；PROCESSING�
 	}
 	public String getGoodsBizStatus( ) {
 		return this.goodsBizStatus;
+	}
+
+	public void setSyncOrderId(String syncOrderId) {
+		this.syncOrderId = syncOrderId;
+	}
+	public String getSyncOrderId( ) {
+		return this.syncOrderId;
 	}
 
 	public void setSyncStatus(String syncStatus) {

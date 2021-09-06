@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易结算明细
  *
  * @author auto create
- * @since 1.0, 2021-07-14 19:40:35
+ * @since 1.0, 2021-09-02 10:35:22
  */
 public class TradeSettleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5162555721356666539L;
+	private static final long serialVersionUID = 4783734447951786599L;
 
 	/**
 	 * 实际操作金额，单位为元，两位小数。该参数的值为分账或补差或结算时传入
@@ -39,6 +39,18 @@ replenish(补差)、replenish_refund(退补差)、transfer(分账)、transfer_re
 	 */
 	@ApiField("operation_type")
 	private String operationType;
+
+	/**
+	 * 商户请求的转入账号
+	 */
+	@ApiField("ori_trans_in")
+	private String oriTransIn;
+
+	/**
+	 * 商户请求的转出账号
+	 */
+	@ApiField("ori_trans_out")
+	private String oriTransOut;
 
 	/**
 	 * 转入账号
@@ -78,6 +90,20 @@ replenish(补差)、replenish_refund(退补差)、transfer(分账)、transfer_re
 	}
 	public void setOperationType(String operationType) {
 		this.operationType = operationType;
+	}
+
+	public String getOriTransIn() {
+		return this.oriTransIn;
+	}
+	public void setOriTransIn(String oriTransIn) {
+		this.oriTransIn = oriTransIn;
+	}
+
+	public String getOriTransOut() {
+		return this.oriTransOut;
+	}
+	public void setOriTransOut(String oriTransOut) {
+		this.oriTransOut = oriTransOut;
 	}
 
 	public String getTransIn() {

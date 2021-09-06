@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoRebateBalanceSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8675455478148738677L;
+	private static final long serialVersionUID = 8498323646214365683L;
 
 	/**
 	 * 用户订单明细

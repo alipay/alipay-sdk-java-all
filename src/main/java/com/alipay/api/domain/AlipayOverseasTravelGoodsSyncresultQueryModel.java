@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品同步结果查询
  *
  * @author auto create
- * @since 1.0, 2021-07-21 16:39:36
+ * @since 1.0, 2021-09-02 19:32:29
  */
 public class AlipayOverseasTravelGoodsSyncresultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4531233876422244316L;
+	private static final long serialVersionUID = 4764237956855391349L;
 
 	/**
 	 * 外部商户或第三方的商品ID
@@ -25,6 +25,12 @@ public class AlipayOverseasTravelGoodsSyncresultQueryModel extends AlipayObject 
 	@ApiField("out_shop_id")
 	private String outShopId;
 
+	/**
+	 * 同步单据id，跨境电商场景必传
+	 */
+	@ApiField("sync_order_id")
+	private String syncOrderId;
+
 	public String getOutGoodsId() {
 		return this.outGoodsId;
 	}
@@ -37,6 +43,13 @@ public class AlipayOverseasTravelGoodsSyncresultQueryModel extends AlipayObject 
 	}
 	public void setOutShopId(String outShopId) {
 		this.outShopId = outShopId;
+	}
+
+	public String getSyncOrderId() {
+		return this.syncOrderId;
+	}
+	public void setSyncOrderId(String syncOrderId) {
+		this.syncOrderId = syncOrderId;
 	}
 
 }

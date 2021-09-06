@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndexBlockBanner extends AlipayObject {
 
-	private static final long serialVersionUID = 1141415579325892649L;
+	private static final long serialVersionUID = 7164495325688662893L;
 
 	/**
 	 * 图片地址，展示需要的图片信息

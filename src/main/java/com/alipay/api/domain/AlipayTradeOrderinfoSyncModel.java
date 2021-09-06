@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝订单信息同步接口
  *
  * @author auto create
- * @since 1.0, 2019-06-18 11:53:29
+ * @since 1.0, 2021-09-01 20:04:39
  */
 public class AlipayTradeOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4271148523886826419L;
+	private static final long serialVersionUID = 4333432899481941154L;
 
 	/**
 	 * 交易信息同步对应的业务类型，具体值与支付宝约定；

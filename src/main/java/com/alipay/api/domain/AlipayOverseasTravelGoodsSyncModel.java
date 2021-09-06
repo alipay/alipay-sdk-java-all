@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跨境游私域商品数据同步
  *
  * @author auto create
- * @since 1.0, 2021-07-21 16:39:18
+ * @since 1.0, 2021-09-02 19:32:33
  */
 public class AlipayOverseasTravelGoodsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5514582815259638632L;
+	private static final long serialVersionUID = 7767687456774494344L;
 
 	/**
 	 * 商品首图，外部商品图片地址
@@ -28,6 +28,13 @@ public class AlipayOverseasTravelGoodsSyncModel extends AlipayObject {
 	 */
 	@ApiField("external_link_url")
 	private String externalLinkUrl;
+
+	/**
+	 * 跨境营销线上电商商品扩展参数
+。针对scenarios传了GOL_GOODS的场景，必填。
+	 */
+	@ApiField("gol_goods_ext_param")
+	private GolGoodsExtParam golGoodsExtParam;
 
 	/**
 	 * 商品分类枚举,请向支付宝业务对口BD询问可用的枚举值。
@@ -137,6 +144,13 @@ public class AlipayOverseasTravelGoodsSyncModel extends AlipayObject {
 	}
 	public void setExternalLinkUrl(String externalLinkUrl) {
 		this.externalLinkUrl = externalLinkUrl;
+	}
+
+	public GolGoodsExtParam getGolGoodsExtParam() {
+		return this.golGoodsExtParam;
+	}
+	public void setGolGoodsExtParam(GolGoodsExtParam golGoodsExtParam) {
+		this.golGoodsExtParam = golGoodsExtParam;
 	}
 
 	public String getGoodsCategory() {

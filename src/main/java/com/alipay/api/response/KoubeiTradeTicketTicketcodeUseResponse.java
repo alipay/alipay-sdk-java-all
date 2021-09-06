@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.ticketcode.use response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-26 15:35:30
+ * @since 1.0, 2021-09-03 17:22:43
  */
 public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2624916643267732319L;
+	private static final long serialVersionUID = 7466727397717397371L;
 
 	/** 
 	 * 该字段用于描述本次返回中的业务属性，现有：BIZ_ALREADY_SUCCESS（幂等业务码）
@@ -113,6 +113,12 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	@ApiListField("ticket_use_details")
 	@ApiField("kb_ticket_use_detail")
 	private List<KbTicketUseDetail> ticketUseDetails;
+
+	/** 
+	 * 天猫商品ID
+	 */
+	@ApiField("tm_item_id")
+	private String tmItemId;
 
 	/** 
 	 * 券核销时间
@@ -248,6 +254,13 @@ public class KoubeiTradeTicketTicketcodeUseResponse extends AlipayResponse {
 	}
 	public List<KbTicketUseDetail> getTicketUseDetails( ) {
 		return this.ticketUseDetails;
+	}
+
+	public void setTmItemId(String tmItemId) {
+		this.tmItemId = tmItemId;
+	}
+	public String getTmItemId( ) {
+		return this.tmItemId;
 	}
 
 	public void setUseDate(String useDate) {

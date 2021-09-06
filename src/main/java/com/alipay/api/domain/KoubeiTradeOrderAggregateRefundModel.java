@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeOrderAggregateRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7748184629314925441L;
+	private static final long serialVersionUID = 3617324868132669865L;
 
 	/**
 	 * 口碑订单号

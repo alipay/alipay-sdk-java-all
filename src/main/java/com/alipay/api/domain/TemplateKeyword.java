@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateKeyword extends AlipayObject {
 
-	private static final long serialVersionUID = 8528352999673137268L;
+	private static final long serialVersionUID = 2371229762662623416L;
 
 	/**
 	 * 模板中占位符的颜色

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateLocalfaceCompareSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3879192255522728868L;
+	private static final long serialVersionUID = 1425627523357681813L;
 
 	/**
 	 * 客户端BehaviourLog-> aesCypher 参数

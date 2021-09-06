@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 网商银行创建业务订单接口
  *
  * @author auto create
- * @since 1.0, 2021-08-20 15:38:32
+ * @since 1.0, 2021-09-03 10:06:48
  */
 public class MybankPaymentTradeBusinessOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6261299571632773393L;
+	private static final long serialVersionUID = 8379477335661265538L;
 
 	/**
 	 * 金额，单位：元，精确到小数点后两位
@@ -52,6 +52,12 @@ public class MybankPaymentTradeBusinessOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("match_account_no")
 	private String matchAccountNo;
+
+	/**
+	 * 订单扩展字段
+	 */
+	@ApiField("order_extend_params")
+	private OrderExtendParams orderExtendParams;
 
 	/**
 	 * 外部平台的单据号，网商订单与外部平台订单一一对应
@@ -129,6 +135,13 @@ public class MybankPaymentTradeBusinessOrderCreateModel extends AlipayObject {
 	}
 	public void setMatchAccountNo(String matchAccountNo) {
 		this.matchAccountNo = matchAccountNo;
+	}
+
+	public OrderExtendParams getOrderExtendParams() {
+		return this.orderExtendParams;
+	}
+	public void setOrderExtendParams(OrderExtendParams orderExtendParams) {
+		this.orderExtendParams = orderExtendParams;
 	}
 
 	public String getOutTradeNo() {

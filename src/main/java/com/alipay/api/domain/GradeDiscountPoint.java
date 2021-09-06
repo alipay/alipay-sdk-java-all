@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GradeDiscountPoint extends AlipayObject {
 
-	private static final long serialVersionUID = 6188374766152714719L;
+	private static final long serialVersionUID = 1193762585199314611L;
 
 	/**
 	 * 蚂蚁会员权益配置的ID

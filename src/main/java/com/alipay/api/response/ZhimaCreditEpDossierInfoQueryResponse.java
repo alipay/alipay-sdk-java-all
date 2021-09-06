@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.EpBranchInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-25 10:04:17
+ * @since 1.0, 2021-09-03 16:20:57
  */
 public class ZhimaCreditEpDossierInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8457151856133877162L;
+	private static final long serialVersionUID = 1413722482157986387L;
 
 	/** 
 	 * 经营期限自
@@ -43,6 +46,19 @@ public class ZhimaCreditEpDossierInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("charge_person_type")
 	private String chargePersonType;
+
+	/** 
+	 * 企业从业人数
+	 */
+	@ApiField("employee_account")
+	private String employeeAccount;
+
+	/** 
+	 * 企业分支机构列表信息
+	 */
+	@ApiListField("ep_branch_list")
+	@ApiField("ep_branch_info")
+	private List<EpBranchInfo> epBranchList;
 
 	/** 
 	 * 统一社会信用代码或营业执照注册号
@@ -104,6 +120,12 @@ public class ZhimaCreditEpDossierInfoQueryResponse extends AlipayResponse {
 	@ApiField("registered_org")
 	private String registeredOrg;
 
+	/** 
+	 * 公开社保缴纳员工数
+	 */
+	@ApiField("social_security_account")
+	private String socialSecurityAccount;
+
 	public void setBusinessPeriodFrom(String businessPeriodFrom) {
 		this.businessPeriodFrom = businessPeriodFrom;
 	}
@@ -137,6 +159,20 @@ public class ZhimaCreditEpDossierInfoQueryResponse extends AlipayResponse {
 	}
 	public String getChargePersonType( ) {
 		return this.chargePersonType;
+	}
+
+	public void setEmployeeAccount(String employeeAccount) {
+		this.employeeAccount = employeeAccount;
+	}
+	public String getEmployeeAccount( ) {
+		return this.employeeAccount;
+	}
+
+	public void setEpBranchList(List<EpBranchInfo> epBranchList) {
+		this.epBranchList = epBranchList;
+	}
+	public List<EpBranchInfo> getEpBranchList( ) {
+		return this.epBranchList;
 	}
 
 	public void setEpCertNo(String epCertNo) {
@@ -207,6 +243,13 @@ public class ZhimaCreditEpDossierInfoQueryResponse extends AlipayResponse {
 	}
 	public String getRegisteredOrg( ) {
 		return this.registeredOrg;
+	}
+
+	public void setSocialSecurityAccount(String socialSecurityAccount) {
+		this.socialSecurityAccount = socialSecurityAccount;
+	}
+	public String getSocialSecurityAccount( ) {
+		return this.socialSecurityAccount;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AmapMapMapserviceTeseBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6757315669116142453L;
+	private static final long serialVersionUID = 4332151258699735829L;
 
 	/**
 	 * 2

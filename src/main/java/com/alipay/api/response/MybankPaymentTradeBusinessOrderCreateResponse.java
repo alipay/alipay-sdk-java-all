@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.business.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-20 15:40:27
+ * @since 1.0, 2021-09-03 10:07:02
  */
 public class MybankPaymentTradeBusinessOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3288217176938159195L;
+	private static final long serialVersionUID = 4532398737441882886L;
 
 	/** 
 	 * 网商银行创建的业务单号

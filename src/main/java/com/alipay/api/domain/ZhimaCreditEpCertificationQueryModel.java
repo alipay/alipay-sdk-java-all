@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁企业信用认证结果查询
  *
  * @author auto create
- * @since 1.0, 2021-07-09 10:02:51
+ * @since 1.0, 2021-09-02 19:08:06
  */
 public class ZhimaCreditEpCertificationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6764889171995213333L;
+	private static final long serialVersionUID = 8827783124546961916L;
 
 	/**
 	 * 一次认证的唯一标识,在商户调用认证初始化接口的时候获取

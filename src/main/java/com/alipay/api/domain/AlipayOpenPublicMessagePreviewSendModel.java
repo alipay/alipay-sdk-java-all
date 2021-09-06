@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicMessagePreviewSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5489118198613674142L;
+	private static final long serialVersionUID = 4481277426925892723L;
 
 	/**
 	 * 预览用户登录id列表，每次做多发送5个用户，且这5个用户必须是生活号的管理员或者是操作员。多个 id 用 "," 分隔。
