@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT设备绑定预处理
  *
  * @author auto create
- * @since 1.0, 2021-01-29 16:08:18
+ * @since 1.0, 2021-09-06 18:45:58
  */
 public class AlipayOpenIotbpaasDevicebindApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2583499758194433968L;
+	private static final long serialVersionUID = 4873476258926518892L;
 
 	/**
 	 * 绑定token，用于查询绑定状态

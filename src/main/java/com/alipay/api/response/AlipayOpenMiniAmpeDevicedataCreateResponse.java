@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.devicedata.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-24 14:30:49
+ * @since 1.0, 2021-09-06 17:47:44
  */
 public class AlipayOpenMiniAmpeDevicedataCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3875627345647623419L;
+	private static final long serialVersionUID = 3164789147797749873L;
 
 	/** 
 	 * 2000为失败，与ampe保持一致，在success为false时生效

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.offlinepayment.sign request
  * 
  * @author auto create
- * @since 1.0, 2021-08-31 20:25:07
+ * @since 1.0, 2021-09-07 15:25:31
  */
 public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadRequest<AlipayOpenAgentOfflinepaymentSignResponse> {
 
@@ -27,7 +27,7 @@ public class AlipayOpenAgentOfflinepaymentSignRequest implements AlipayUploadReq
 	private String batchNo;
 
 	/** 
-	* 营业执照法人手机号码
+	* 被邀请授权的营业执照法人手机号码，上传非同人营业执照时必填
 	 */
 	private String businessLicenseMobile;
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2021-08-31 11:31:34
+ * @since 1.0, 2021-09-07 14:41:41
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5483622341374448585L;
+	private static final long serialVersionUID = 4474328668465745314L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -84,7 +84,6 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 
 	/**
 	 * 个人签约产品码，商户和支付宝签约时确定，商户可咨询技术支持。
-周期扣款个人签约产品码固定为 CYCLE_PAY_AUTH_P
 	 */
 	@ApiField("personal_product_code")
 	private String personalProductCode;
@@ -97,7 +96,6 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 
 	/**
 	 * 销售产品码，商户签约的支付宝合同所对应的产品码。
-周期扣款场景固定为 CYCLE_PAY_AUTH。
 	 */
 	@ApiField("product_code")
 	private String productCode;

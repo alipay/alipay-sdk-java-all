@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFundBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2112832376672821661L;
+	private static final long serialVersionUID = 2429471963139946614L;
 
 	/**
-	 * 业务场景。不同场景值不同，具体值联系支付宝确认。
+	 * 业务场景。不同场景值不同，具体值联系支付宝确认。如：<a href="https://opendocs.alipay.com/open/022312">批量转账到支付宝账户</a> 场景固定为 MESSAGE_BATCH_PAY。
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -53,7 +53,7 @@ public class AlipayFundBatchCreateModel extends AlipayObject {
 	private Participant payerInfo;
 
 	/**
-	 * 业务产品码。不同产品值不同，具体值联系支付宝确认。
+	 * 业务产品码。不同产品值不同，具体值联系支付宝确认。如：<a href="https://opendocs.alipay.com/open/022312">批量转账到支付宝账户</a> 场景固定为 BATCH_API_TO_ACC。
 	 */
 	@ApiField("product_code")
 	private String productCode;

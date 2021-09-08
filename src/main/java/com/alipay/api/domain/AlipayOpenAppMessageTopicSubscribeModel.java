@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppMessageTopicSubscribeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6855958831116234395L;
+	private static final long serialVersionUID = 7474593267487612783L;
 
 	/**
 	 * 授权令牌
@@ -20,10 +20,9 @@ public class AlipayOpenAppMessageTopicSubscribeModel extends AlipayObject {
 	private String authToken;
 
 	/**
-	 * 授权类型。枚举支持：
-app_auth：三方应用授权。
-user_auth：用户授权。
-
+	 * 授权类型。枚举如下：
+* app_auth：表示第三方应用授权。
+* user_auth：表示用户授权。
 	 */
 	@ApiField("auth_type")
 	private String authType;

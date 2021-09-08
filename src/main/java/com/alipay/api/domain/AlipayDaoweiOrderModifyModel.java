@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDaoweiOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1896217496117883712L;
+	private static final long serialVersionUID = 7216979857152639951L;
 
 	/**
 	 * 服务地址，修改物流地址时填写的新服务地址：由第三方确认新的服务地址，最长不超过500字符

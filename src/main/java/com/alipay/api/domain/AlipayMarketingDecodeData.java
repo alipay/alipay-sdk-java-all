@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingDecodeData extends AlipayObject {
 
-	private static final long serialVersionUID = 7883172579819146322L;
+	private static final long serialVersionUID = 5374699953161318672L;
 
 	/**
 	 * 钱包二维码码值

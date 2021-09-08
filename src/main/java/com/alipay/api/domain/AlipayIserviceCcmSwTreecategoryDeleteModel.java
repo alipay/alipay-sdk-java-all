@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCcmSwTreecategoryDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6396395986755442934L;
+	private static final long serialVersionUID = 2217823685185586875L;
 
 	/**
 	 * 子部门ID，不传为默认部门

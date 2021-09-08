@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户免证照进件
  *
  * @author auto create
- * @since 1.0, 2021-08-05 19:56:17
+ * @since 1.0, 2021-09-07 14:09:23
  */
 public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5362812138449577264L;
+	private static final long serialVersionUID = 1346879737844852459L;
 
 	/**
 	 * 补充证件图片，与additional_cert_no、additional_cert_type同时提供。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
@@ -65,7 +65,7 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private AddressInfo businessAddress;
 
 	/**
-	 * 商户联系人信息。在本业务中，ContactInfo对象中联系人姓名、联系人类型、手机号必填，其他选填
+	 * 商户联系人信息。在本业务中，ContactInfo对象中联系人姓名、手机号必填，其他选填
 	 */
 	@ApiField("contact_infos")
 	private ContactInfo contactInfos;

@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-03 10:37:43
+ * @since 1.0, 2021-09-08 10:05:42
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5125254663342163581L;
+	private static final long serialVersionUID = 5635725357941542425L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -87,10 +87,15 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	private String chargeAmount;
 
 	/** 
-	 * 费率活动标识，当交易享受活动优惠费率时，返回该活动的标识；
-默认不返回该信息，需与支付宝约定后配置返回；
-可能的返回值列表：
-蓝海活动标识：bluesea_1
+	 * 费率活动标识。
+当交易享受特殊行业或活动费率时，返回该场景的标识。具体场景如下：
+trade_special_00：订单优惠费率；
+industry_special_on_00：线上行业特殊费率0；
+industry_special_on_01：线上行业特殊费率1；
+industry_special_00：线下行业特殊费率0；
+industry_special_01：线下行业特殊费率1；
+bluesea_1：蓝海活动优惠费率标签；
+注：只在机构间联模式下返回，其它场景下不返回该字段； 
 	 */
 	@ApiField("charge_flags")
 	private String chargeFlags;

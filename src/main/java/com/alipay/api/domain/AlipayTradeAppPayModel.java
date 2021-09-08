@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5495192441315161836L;
+	private static final long serialVersionUID = 5287261945888638741L;
 
 	/**
 	 * 签约参数。如果希望在sdk中支付并签约，需要在这里传入签约信息。
@@ -44,10 +44,9 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	private String disablePayChannels;
 
 	/**
-	 * 指定支付渠道。
-用户只能使用指定的渠道进行支付，多个渠道以逗号分割。
+	 * 指定支付渠道，多个渠道以逗号分割。用户只能使用此处指定渠道进行支付。
 与disable_pay_channels互斥，支持传入的值：<a target="_blank" href="https://docs.open.alipay.com/common/wifww7">渠道列表</a>。
-注：如果传入了指定支付渠道，则用户只能用指定内的渠道支付，包括营销渠道也要指定才能使用。该参数可能导致用户支付受限，慎用。
+注意：如果传入了指定支付渠道，则用户只能用指定内的渠道支付，包括营销渠道也要指定才能使用。若所有指定渠道用户都不可使用，将导致用户无法支付，慎用。
 	 */
 	@ApiField("enable_pay_channels")
 	private String enablePayChannels;
@@ -145,9 +144,10 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	private SettleInfo settleInfo;
 
 	/**
-	 * 指定单通道。
-目前仅支持传入pcredit，若由于用户原因渠道不可用，用户可选择是否用其他渠道支付。
-注：该参数不可与花呗分期参数同时传入
+	 * 指定单通道，仅支持传入一个渠道。
+注意：
+目前仅支持传入 pcredit，若由于用户原因指定渠道不可用（不能支付），允许用户选择其他渠道支付。
+该参数不可与花呗分期参数同时传入。
 	 */
 	@ApiField("specified_channel")
 	private String specifiedChannel;

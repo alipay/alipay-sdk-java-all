@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT商家历史订单查询
  *
  * @author auto create
- * @since 1.0, 2021-01-29 11:57:27
+ * @since 1.0, 2021-09-06 18:46:45
  */
 public class AlipayOpenIotbpaasMerchantorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7479895955591537345L;
+	private static final long serialVersionUID = 1298948624716772351L;
 
 	/**
 	 * 截止时间

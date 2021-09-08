@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户消费（领取、核销）特权数据同步（无需用户授权）
  *
  * @author auto create
- * @since 1.0, 2021-09-06 11:04:14
+ * @since 1.0, 2021-09-07 11:29:29
  */
 public class AlipayUserPartnerPrivilegeauthbaseMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3427497423246586442L;
+	private static final long serialVersionUID = 8832538341678252542L;
 
 	/**
 	 * 当前用户注册成为合作商家会员（成为会员后可享有相应的特权）的时间

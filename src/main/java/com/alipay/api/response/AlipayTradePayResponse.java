@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-06 15:36:12
+ * @since 1.0, 2021-09-08 11:25:28
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3673725324356979462L;
+	private static final long serialVersionUID = 7595133276656369765L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -96,12 +96,15 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	private String chargeAmount;
 
 	/** 
-	 * 费率活动标识，当交易享受活动优惠费率时，返回该活动的标识；
-只在机构间联模式下返回，其它场景下不返回该字段；
-可能的返回值列表：
-bluesea_1：蓝海活动标识;
-industry_special_00：行业特殊费率0；
-industry_special_01：行业特殊费率1；
+	 * 费率活动标识。
+当交易享受特殊行业或活动费率时，返回该场景的标识。具体场景如下：
+trade_special_00：订单优惠费率；
+industry_special_on_00：线上行业特殊费率0；
+industry_special_on_01：线上行业特殊费率1；
+industry_special_00：线下行业特殊费率0；
+industry_special_01：线下行业特殊费率1；
+bluesea_1：蓝海活动优惠费率标签；
+注：只在机构间联模式下返回，其它场景下不返回该字段；
 	 */
 	@ApiField("charge_flags")
 	private String chargeFlags;

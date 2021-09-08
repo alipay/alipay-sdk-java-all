@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.partner.privilegeauthbase.match request
  * 
  * @author auto create
- * @since 1.0, 2021-09-06 11:05:27
+ * @since 1.0, 2021-09-07 11:30:28
  */
 public class AlipayUserPartnerPrivilegeauthbaseMatchRequest implements AlipayRequest<AlipayUserPartnerPrivilegeauthbaseMatchResponse> {
 

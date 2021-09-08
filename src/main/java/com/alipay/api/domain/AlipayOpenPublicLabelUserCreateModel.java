@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicLabelUserCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7211514931487654771L;
+	private static final long serialVersionUID = 2253553566311623986L;
 
 	/**
 	 * 要绑定的标签Id

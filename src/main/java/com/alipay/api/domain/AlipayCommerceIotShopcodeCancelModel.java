@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消投放电子门店码
  *
  * @author auto create
- * @since 1.0, 2020-11-22 22:22:14
+ * @since 1.0, 2021-09-06 18:48:19
  */
 public class AlipayCommerceIotShopcodeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4331121191331714669L;
+	private static final long serialVersionUID = 1436396436296699494L;
 
 	/**
 	 * 设备绑定的商户pid，直连场景填写商户收单pid，间连场景填写smid绑定的pid

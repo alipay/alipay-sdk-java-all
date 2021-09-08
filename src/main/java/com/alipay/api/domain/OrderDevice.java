@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备订单SN模型
  *
  * @author auto create
- * @since 1.0, 2021-07-02 16:53:57
+ * @since 1.0, 2021-09-06 16:41:25
  */
 public class OrderDevice extends AlipayObject {
 
-	private static final long serialVersionUID = 5875978732821549448L;
+	private static final long serialVersionUID = 7798882794348881637L;
 
 	/**
 	 * 设备SN
@@ -20,7 +20,7 @@ public class OrderDevice extends AlipayObject {
 	private String deviceSn;
 
 	/**
-	 * 实际安装照片：最多5张，英文逗号分隔(,) ，图片格式必须（bmp,jpg,png,gif）
+	 * 实际安装照片：最多5张，英文逗号分隔(,) ，图片格式必须（bmp,jpg,png,gif,image）
 	 */
 	@ApiField("install_actual_photo")
 	private String installActualPhoto;
@@ -32,7 +32,7 @@ public class OrderDevice extends AlipayObject {
 	private String installMode;
 
 	/**
-	 * 铺屏现场照片: 最多5张，英文逗号分隔(,) ，图片格式必须（bmp,jpg,png,gif）
+	 * 铺屏现场照片: 最多5张，英文逗号分隔(,) ，图片格式必须（bmp,jpg,png,gif,image）
 	 */
 	@ApiField("install_scene_photo")
 	private String installScenePhoto;

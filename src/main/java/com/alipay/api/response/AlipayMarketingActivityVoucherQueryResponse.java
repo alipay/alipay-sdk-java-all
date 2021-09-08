@@ -1,12 +1,13 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.PaymentVoucherBelongMerchantInfo;
 import com.alipay.api.domain.VoucherSummary;
 import com.alipay.api.domain.PaymentVoucherBudgetInfo;
 import com.alipay.api.domain.PaymentVoucherDisplayInfo;
 import com.alipay.api.domain.PaymentVoucherSendRule;
-import com.alipay.api.domain.PaymentVoucherUseRule;
+import com.alipay.api.domain.PaymentVoucherUseRuleDetail;
 
 import com.alipay.api.AlipayResponse;
 
@@ -14,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-18 14:22:39
+ * @since 1.0, 2021-09-07 23:00:52
  */
 public class AlipayMarketingActivityVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5724576253534942337L;
+	private static final long serialVersionUID = 5477185289333145123L;
 
 	/** 
 	 * 活动ID
@@ -53,13 +54,13 @@ FINISHED：已停止
 	 * 券发放结束时间。 格式为：yyyy-MM-dd HH:mm:ss 限制： 券发放结束时间 publish_end_time 与 券发放开始时间 publish_start_time 间隔必须小于等于180天
 	 */
 	@ApiField("publish_end_time")
-	private String publishEndTime;
+	private Date publishEndTime;
 
 	/** 
 	 * 券发放开始时间。 格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("publish_start_time")
-	private String publishStartTime;
+	private Date publishStartTime;
 
 	/** 
 	 * 券汇总信息
@@ -94,10 +95,10 @@ FIX_VOUCHER：固定面额满减券
 	private String voucherType;
 
 	/** 
-	 * 核销规则
+	 * 支付券核销规则
 	 */
 	@ApiField("voucher_use_rule")
-	private PaymentVoucherUseRule voucherUseRule;
+	private PaymentVoucherUseRuleDetail voucherUseRule;
 
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
@@ -127,17 +128,17 @@ FIX_VOUCHER：固定面额满减券
 		return this.belongMerchantInfo;
 	}
 
-	public void setPublishEndTime(String publishEndTime) {
+	public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
-	public String getPublishEndTime( ) {
+	public Date getPublishEndTime( ) {
 		return this.publishEndTime;
 	}
 
-	public void setPublishStartTime(String publishStartTime) {
+	public void setPublishStartTime(Date publishStartTime) {
 		this.publishStartTime = publishStartTime;
 	}
-	public String getPublishStartTime( ) {
+	public Date getPublishStartTime( ) {
 		return this.publishStartTime;
 	}
 
@@ -176,10 +177,10 @@ FIX_VOUCHER：固定面额满减券
 		return this.voucherType;
 	}
 
-	public void setVoucherUseRule(PaymentVoucherUseRule voucherUseRule) {
+	public void setVoucherUseRule(PaymentVoucherUseRuleDetail voucherUseRule) {
 		this.voucherUseRule = voucherUseRule;
 	}
-	public PaymentVoucherUseRule getVoucherUseRule( ) {
+	public PaymentVoucherUseRuleDetail getVoucherUseRule( ) {
 		return this.voucherUseRule;
 	}
 

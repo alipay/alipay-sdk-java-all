@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntOcrGeneralIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3155648786435437418L;
+	private static final long serialVersionUID = 7476333798418147867L;
 
 	/** 
 	 * 识别结果

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenApiRefundFundDetailPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 8877933464858632281L;
+	private static final long serialVersionUID = 6852654333251793364L;
 
 	/**
 	 * 退款资金明细

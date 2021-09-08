@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotDeviceAudioDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5315667612158963959L;
+	private static final long serialVersionUID = 6759318848782392276L;
 
 	/**
 	 * 语音id, 也就是语音合成接口返回的audio_id
