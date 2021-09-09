@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查活动流水发放接口
  *
  * @author auto create
- * @since 1.0, 2021-02-26 21:23:21
+ * @since 1.0, 2021-09-09 11:45:48
  */
 public class AlipayUserDtbankcustActivityorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2436893877458651931L;
+	private static final long serialVersionUID = 2376327241655795731L;
 
 	/**
 	 * 活动流水唯一id，由系统自动生成的，在调用活动触发接口会返回该id。

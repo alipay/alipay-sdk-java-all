@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学费码申请
  *
  * @author auto create
- * @since 1.0, 2021-08-24 14:43:43
+ * @since 1.0, 2021-09-08 16:56:29
  */
 public class AlipayCommerceEducateTuitioncodeApplySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2187624223714314387L;
+	private static final long serialVersionUID = 4427336328893852546L;
 
 	/**
 	 * 投诉地址
@@ -36,6 +36,12 @@ public class AlipayCommerceEducateTuitioncodeApplySendModel extends AlipayObject
 	 */
 	@ApiField("smid")
 	private String smid;
+
+	/**
+	 * 返佣pid
+	 */
+	@ApiField("sys_service_provider_id")
+	private String sysServiceProviderId;
 
 	public String getComplainUrl() {
 		return this.complainUrl;
@@ -63,6 +69,13 @@ public class AlipayCommerceEducateTuitioncodeApplySendModel extends AlipayObject
 	}
 	public void setSmid(String smid) {
 		this.smid = smid;
+	}
+
+	public String getSysServiceProviderId() {
+		return this.sysServiceProviderId;
+	}
+	public void setSysServiceProviderId(String sysServiceProviderId) {
+		this.sysServiceProviderId = sysServiceProviderId;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserInvitetaskExchangeConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3872711542553151367L;
+	private static final long serialVersionUID = 6575697599416273922L;
 
 	/**
 	 * 猫超券兑换金额,单位:分

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaOpenAppDesSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1532663187432155637L;
+	private static final long serialVersionUID = 2899346224146941421L;
 
 	/**
 	 * 21

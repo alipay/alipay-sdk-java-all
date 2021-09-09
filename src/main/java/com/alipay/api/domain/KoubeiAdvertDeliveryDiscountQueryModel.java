@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiAdvertDeliveryDiscountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1297397282639891113L;
+	private static final long serialVersionUID = 2125596789334272736L;
 
 	/**
 	 * 优惠id，调用优惠查询接口时，需要提供“优惠id”

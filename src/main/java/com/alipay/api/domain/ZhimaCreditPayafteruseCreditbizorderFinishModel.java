@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPayafteruseCreditbizorderFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3511719473787781242L;
+	private static final long serialVersionUID = 3442474372518273571L;
 
 	/**
-	 * 芝麻后付订单号
+	 * 信用服务订单号
 	 */
 	@ApiField("credit_biz_order_id")
 	private String creditBizOrderId;
 
 	/**
-	 * 用户此订单是否守约
+	 * 用户此订单是否守约。传true时，芝麻侧会显示用户该笔订单是守约完结的；传false时，芝麻侧会显示用户该笔订单取消。
 	 */
 	@ApiField("is_fulfilled")
 	private String isFulfilled;

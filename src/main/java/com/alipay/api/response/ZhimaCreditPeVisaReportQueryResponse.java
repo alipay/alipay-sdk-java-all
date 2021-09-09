@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditPeVisaReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4895957133823271869L;
+	private static final long serialVersionUID = 2272181543178826645L;
 
 	/** 
 	 * 用户签证报告申请状态，枚举字段：

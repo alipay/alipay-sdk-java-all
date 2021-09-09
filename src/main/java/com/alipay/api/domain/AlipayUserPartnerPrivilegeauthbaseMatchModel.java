@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserPartnerPrivilegeauthbaseMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8832538341678252542L;
+	private static final long serialVersionUID = 6839284493797193746L;
 
 	/**
 	 * 当前用户注册成为合作商家会员（成为会员后可享有相应的特权）的时间

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DiscountDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6166973637453272781L;
+	private static final long serialVersionUID = 2232165228212593673L;
 
 	/**
 	 * 优惠金额

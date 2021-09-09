@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业跳端签约
  *
  * @author auto create
- * @since 1.0, 2021-03-31 11:21:41
+ * @since 1.0, 2021-09-08 14:44:48
  */
 public class AlipayFundJointaccountSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2569869376576636979L;
+	private static final long serialVersionUID = 2687416354166259198L;
 
 	/**
 	 * 账本名称，传空采用默认规则命名，使用公司名称
@@ -51,18 +51,45 @@ public class AlipayFundJointaccountSignModel extends AlipayObject {
 	private String bizScene;
 
 	/**
-	 * 开户账号：
-identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
-是ALIPAY_LOGON_ID 填支付宝登录号
+	 * 开户账号：<br>
+-当identity_type是ALIPAY_USER_ID时填支付宝会员ID（2088开头）<br>
+-当identity_type是ALIPAY_LOGON_ID 时填支付宝登录号<br>
+-当identity_type是OUT_USER_ID时填外部平台的用户uid
 	 */
 	@ApiField("identity")
 	private String identity;
 
 	/**
-	 * 账号类型，目前支持如下类型： 1、ALIPAY_USER_ID 支付宝的会员ID 2、ALIPAY_LOGON_ID：支付宝登录号，支持邮箱和手机号格式
+	 * 账号类型，目前支持如下类型： <br>
+-ALIPAY_USER_ID 支付宝的会员ID<br>
+-ALIPAY_LOGON_ID：支付宝登录号，支持邮箱和手机号格式<br>
+-OUT_USER_ID：外部用户uid，如钉钉侧的钉钉会员uid
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 开户时被邀请者列表
+	 */
+	@ApiListField("invitee_list")
+	@ApiField("invite_member_form")
+	private List<InviteMemberForm> inviteeList;
+
+	/**
+	 * 开户邀请倒计时（单位：秒），超时后撤销系统自动撤销开户操作。<br>
+补充说明：<br>
+-商户传递时，最长不可超过999999秒（约11天）<br>
+-商户不传该字段时，支付宝默认开户72小时后发起撤销操作
+	 */
+	@ApiField("open_timeout")
+	private String openTimeout;
+
+	/**
+	 * 商户侧单号（幂等字段）<br>
+-补充说明：幂等逻辑（商户appid+out_biz_no），商户集成时需注意，如换号重复发起，则认为是一笔新的请求
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 产品码
@@ -117,6 +144,27 @@ identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public List<InviteMemberForm> getInviteeList() {
+		return this.inviteeList;
+	}
+	public void setInviteeList(List<InviteMemberForm> inviteeList) {
+		this.inviteeList = inviteeList;
+	}
+
+	public String getOpenTimeout() {
+		return this.openTimeout;
+	}
+	public void setOpenTimeout(String openTimeout) {
+		this.openTimeout = openTimeout;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public String getProductCode() {

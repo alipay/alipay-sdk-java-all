@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 应收发票综合查询
  *
  * @author auto create
- * @since 1.0, 2020-11-27 15:28:00
+ * @since 1.0, 2021-09-08 16:26:31
  */
 public class AlipayBossFncInvoiceBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2767275222231731842L;
+	private static final long serialVersionUID = 5555666726478472213L;
 
 	/**
 	 * 开票申请ID，唯一标识开票申请表的ID

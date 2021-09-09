@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditbizorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-01 10:16:29
+ * @since 1.0, 2021-09-08 17:13:07
  */
 public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5525532266421834583L;
+	private static final long serialVersionUID = 2534497516835264949L;
 
 	/** 
 	 * 订单创建时间
@@ -22,13 +22,13 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	private Date createTime;
 
 	/** 
-	 * 芝麻开通协议号
+	 * 芝麻先用后付开通协议号
 	 */
 	@ApiField("credit_agreement_id")
 	private String creditAgreementId;
 
 	/** 
-	 * 先享后付记账单号
+	 * 信用服务订单号
 	 */
 	@ApiField("credit_biz_order_id")
 	private String creditBizOrderId;
@@ -46,13 +46,13 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	private String productCode;
 
 	/** 
-	 * 先享后付记账单冻结金额
+	 * 信用服务订单冻结金额
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
 
 	/** 
-	 * 记账单交易号
+	 * 支付宝交易号
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

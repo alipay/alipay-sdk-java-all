@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialBaseBcMsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6174331124858841856L;
+	private static final long serialVersionUID = 8561482848254418515L;
 
 	/**
 	 * BC消息，收到消息的客户端的最低版本号，如收到消息的最低版本低于该字段，怎客户端不会收到消息
