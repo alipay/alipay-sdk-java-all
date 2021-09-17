@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财账单受理接口
  *
  * @author auto create
- * @since 1.0, 2021-07-06 16:35:45
+ * @since 1.0, 2021-09-16 18:16:36
  */
 public class AlipayBossFncGfacceptanceBillAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1753665488367627134L;
+	private static final long serialVersionUID = 4192766913113659257L;
 
 	/**
 	 * 业财账单受理模型

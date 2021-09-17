@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAccountNegativecardSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7269645718277459554L;
+	private static final long serialVersionUID = 2642696818785971787L;
 
 	/** 
 	 * 结果码。SUCCESS：发送成功。

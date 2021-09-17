@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.vendingmachine.profile.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-26 16:55:00
+ * @since 1.0, 2021-09-17 10:26:53
  */
 public class AlipayCommerceIotVendingmachineProfileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6839853312673192381L;
+	private static final long serialVersionUID = 4697439998248711241L;
 
 	/** 
 	 * 消费者画像列表

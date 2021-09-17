@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundBatchUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3265653565663894982L;
+	private static final long serialVersionUID = 8289559263841445671L;
 
 	/**
 	 * 业务场景。不同场景值不同，具体值联系支付宝确认。
@@ -56,7 +56,7 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 	private String totalCount;
 
 	/**
-	 * 批次总金额，单位为元，精确到小数点后两位，取值范围[0.01,9999999999999.99]
+	 * 批次总金额，单位为元，精确到小数点后两位，取值范围[1.00,9999999999999.99]
 	 */
 	@ApiField("total_trans_amount")
 	private String totalTransAmount;

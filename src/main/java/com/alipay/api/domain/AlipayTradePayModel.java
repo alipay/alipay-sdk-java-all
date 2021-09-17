@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2021-09-07 21:15:06
+ * @since 1.0, 2021-09-17 14:06:23
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5563632887487131246L;
+	private static final long serialVersionUID = 2718358274534699324L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -65,7 +65,8 @@ NOT_COMPLETE：转交易完成后不解冻剩余冻结金额；
 	private String authNo;
 
 	/**
-	 * 订单描述
+	 * 订单附加信息。
+如果请求时传递了该参数，将在异步通知、对账单中原样返回，同时会在商户和用户的pc账单详情中作为交易描述展示
 	 */
 	@ApiField("body")
 	private String body;

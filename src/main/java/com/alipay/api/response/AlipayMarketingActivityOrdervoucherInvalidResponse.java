@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.invalid response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-03 11:05:24
+ * @since 1.0, 2021-09-10 11:21:40
  */
 public class AlipayMarketingActivityOrdervoucherInvalidResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3185594448611278249L;
+	private static final long serialVersionUID = 6298187964964793641L;
 
 	
 

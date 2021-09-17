@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康门诊险药品目录项
  *
  * @author auto create
- * @since 1.0, 2021-06-17 11:33:51
+ * @since 1.0, 2021-09-16 10:08:24
  */
 public class HealthDrugCatalogueItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3469146197166792364L;
+	private static final long serialVersionUID = 6122329544899985316L;
 
 	/**
 	 * 是否是目录内药品
@@ -72,6 +72,12 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	 */
 	@ApiField("min_purchase_quantity")
 	private Long minPurchaseQuantity;
+
+	/**
+	 * 国药准字
+	 */
+	@ApiField("national_medicine_permission_no")
+	private String nationalMedicinePermissionNo;
 
 	/**
 	 * 售价
@@ -165,6 +171,13 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	}
 	public void setMinPurchaseQuantity(Long minPurchaseQuantity) {
 		this.minPurchaseQuantity = minPurchaseQuantity;
+	}
+
+	public String getNationalMedicinePermissionNo() {
+		return this.nationalMedicinePermissionNo;
+	}
+	public void setNationalMedicinePermissionNo(String nationalMedicinePermissionNo) {
+		this.nationalMedicinePermissionNo = nationalMedicinePermissionNo;
 	}
 
 	public String getPrice() {

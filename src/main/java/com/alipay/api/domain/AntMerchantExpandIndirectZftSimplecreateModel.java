@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户免证照进件
  *
  * @author auto create
- * @since 1.0, 2021-09-07 14:09:23
+ * @since 1.0, 2021-09-10 20:24:59
  */
 public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1466116324344352856L;
+	private static final long serialVersionUID = 7157824134789452549L;
 
 	/**
 	 * 补充证件图片，与additional_cert_no、additional_cert_type同时提供。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
@@ -75,6 +75,12 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	 */
 	@ApiField("default_settle_rule")
 	private DefaultSettleRule defaultSettleRule;
+
+	/**
+	 * 商户编号，由机构定义，需要保证在机构下唯一
+	 */
+	@ApiField("external_id")
+	private String externalId;
 
 	/**
 	 * 内景照，签约当面付必填。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
@@ -207,6 +213,13 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	}
 	public void setDefaultSettleRule(DefaultSettleRule defaultSettleRule) {
 		this.defaultSettleRule = defaultSettleRule;
+	}
+
+	public String getExternalId() {
+		return this.externalId;
+	}
+	public void setExternalId(String externalId) {
+		this.externalId = externalId;
 	}
 
 	public String getInDoorImages() {

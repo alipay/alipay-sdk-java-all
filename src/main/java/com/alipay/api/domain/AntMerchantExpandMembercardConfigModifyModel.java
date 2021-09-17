@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家安心充配置修改
  *
  * @author auto create
- * @since 1.0, 2021-08-26 14:36:55
+ * @since 1.0, 2021-09-10 19:44:06
  */
 public class AntMerchantExpandMembercardConfigModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8122281316233173743L;
+	private static final long serialVersionUID = 1521937177868486459L;
 
 	/**
 	 * 期望修改成的卡面信息

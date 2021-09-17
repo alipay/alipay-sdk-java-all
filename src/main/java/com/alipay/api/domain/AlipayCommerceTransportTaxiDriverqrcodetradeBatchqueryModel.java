@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车司机收钱码交易数据批量查询接口
  *
  * @author auto create
- * @since 1.0, 2021-09-09 16:28:59
+ * @since 1.0, 2021-09-09 21:37:16
  */
 public class AlipayCommerceTransportTaxiDriverqrcodetradeBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8328579828382941349L;
+	private static final long serialVersionUID = 6431869863351761958L;
 
 	/**
 	 * 批量开始时间

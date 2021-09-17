@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.executionplan.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-09 15:20:49
+ * @since 1.0, 2021-09-15 11:54:55
  */
 public class AlipayUserAgreementExecutionplanModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5695848465118911986L;
+	private static final long serialVersionUID = 3593264748999474511L;
 
 	/** 
 	 * 周期性扣款产品，授权免密支付协议号

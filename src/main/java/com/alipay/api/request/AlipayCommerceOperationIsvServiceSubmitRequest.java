@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.isv.service.submit request
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 16:16:28
+ * @since 1.0, 2021-09-16 14:41:34
  */
 public class AlipayCommerceOperationIsvServiceSubmitRequest implements AlipayRequest<AlipayCommerceOperationIsvServiceSubmitResponse> {
 

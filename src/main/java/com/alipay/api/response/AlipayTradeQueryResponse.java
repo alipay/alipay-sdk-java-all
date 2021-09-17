@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-08 10:05:42
+ * @since 1.0, 2021-09-16 16:06:33
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2867171524941346547L;
+	private static final long serialVersionUID = 2222345253335199992L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -29,7 +29,7 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 间连商户在支付宝端的商户编号；
-只在间连场景下返回；
+ 只在银行间联交易场景下返回该信息；
 	 */
 	@ApiField("alipay_sub_merchant_id")
 	private String alipaySubMerchantId;
@@ -41,8 +41,8 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	private String authTradePayMode;
 
 	/** 
-	 * 订单描述;
-只在间连场景下返回；
+	 * 订单描述；
+只在银行间联交易场景下返回该信息；
 	 */
 	@ApiField("body")
 	private String body;
@@ -81,7 +81,7 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 该笔交易针对收款方的收费金额；
-默认不返回该信息，需与支付宝约定后配置返回；
+ 只在银行间联交易场景下返回该信息；
 	 */
 	@ApiField("charge_amount")
 	private String chargeAmount;
@@ -253,7 +253,7 @@ json格式。
 
 	/** 
 	 * 订单标题；
-只在间连场景下返回；
+ 只在银行间联交易场景下返回该信息；
 	 */
 	@ApiField("subject")
 	private String subject;

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.debark.apply request
  * 
  * @author auto create
- * @since 1.0, 2021-05-27 17:00:49
+ * @since 1.0, 2021-09-13 20:59:36
  */
 public class AlipayOpenPublicLifeDebarkApplyRequest implements AlipayRequest<AlipayOpenPublicLifeDebarkApplyResponse> {
 

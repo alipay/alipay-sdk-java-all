@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoTBPaaS一机一码生成
  *
  * @author auto create
- * @since 1.0, 2021-09-07 15:02:56
+ * @since 1.0, 2021-09-16 16:34:53
  */
 public class AlipayOpenIotbpaasDevicecodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2511185266473369724L;
+	private static final long serialVersionUID = 8649514158565262515L;
 
 	/**
 	 * 设备biztid

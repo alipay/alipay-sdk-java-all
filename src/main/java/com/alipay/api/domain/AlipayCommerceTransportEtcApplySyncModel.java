@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单状态同步
  *
  * @author auto create
- * @since 1.0, 2020-03-02 13:00:36
+ * @since 1.0, 2021-09-10 22:01:43
  */
 public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1658996166735574158L;
+	private static final long serialVersionUID = 6889245877498849438L;
 
 	/**
 	 * 卡片有效期

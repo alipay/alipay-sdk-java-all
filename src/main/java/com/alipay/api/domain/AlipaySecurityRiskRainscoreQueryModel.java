@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskRainscoreQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8271186593299629119L;
+	private static final long serialVersionUID = 3436322947793513154L;
 
 	/**
 	 * 帐号内容，目前为中国大陆手机号（11位阿拉伯数字，不包含特殊符号或空格）

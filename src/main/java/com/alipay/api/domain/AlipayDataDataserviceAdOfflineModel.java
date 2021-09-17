@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告暂停API
  *
  * @author auto create
- * @since 1.0, 2021-05-08 11:45:06
+ * @since 1.0, 2021-09-16 17:30:00
  */
 public class AlipayDataDataserviceAdOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8895516787749218526L;
+	private static final long serialVersionUID = 8163557718745564255L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token

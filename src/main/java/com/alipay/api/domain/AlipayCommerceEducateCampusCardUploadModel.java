@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户学生证信息同步
  *
  * @author auto create
- * @since 1.0, 2021-01-11 11:30:49
+ * @since 1.0, 2021-09-15 10:08:38
  */
 public class AlipayCommerceEducateCampusCardUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4316919128383924362L;
+	private static final long serialVersionUID = 8672268792138472993L;
 
 	/**
 	 * 逐步废弃，请使用card_pictures字段！学生证照片链接(可多张)。注：需要提供图片oss URL访问地址，且url需要长期有效

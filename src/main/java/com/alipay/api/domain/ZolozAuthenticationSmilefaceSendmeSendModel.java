@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT模板消息服务
  *
  * @author auto create
- * @since 1.0, 2020-04-16 17:06:02
+ * @since 1.0, 2021-09-13 10:35:48
  */
 public class ZolozAuthenticationSmilefaceSendmeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7196918674972838864L;
+	private static final long serialVersionUID = 8414834939286221414L;
 
 	/**
 	 * 业务类型

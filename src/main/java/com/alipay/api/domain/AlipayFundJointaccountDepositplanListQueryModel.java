@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自动攒计划列表查询
  *
  * @author auto create
- * @since 1.0, 2021-09-07 19:25:44
+ * @since 1.0, 2021-09-14 23:26:50
  */
 public class AlipayFundJointaccountDepositplanListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1374597618546462254L;
+	private static final long serialVersionUID = 4147439614415121879L;
 
 	/**
 	 * 合花群ID<br>

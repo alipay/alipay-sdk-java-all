@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.facetoface.sign response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-07 17:55:27
+ * @since 1.0, 2021-09-15 17:18:29
  */
 public class AlipayOpenAgentFacetofaceSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5668886329463951957L;
+	private static final long serialVersionUID = 4175853837842584496L;
 
 	
 

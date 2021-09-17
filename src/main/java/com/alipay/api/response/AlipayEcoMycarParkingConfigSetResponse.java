@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.config.set response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-28 11:06:56
+ * @since 1.0, 2021-09-09 17:55:10
  */
 public class AlipayEcoMycarParkingConfigSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8623396535957857739L;
+	private static final long serialVersionUID = 8678243748988761539L;
 
 	
 

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-03 15:07:33
+ * @since 1.0, 2021-09-15 16:55:53
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5562319443751934914L;
+	private static final long serialVersionUID = 5569244717924623136L;
 
 	/** 
 	 * 详细地址。
@@ -186,6 +186,30 @@ M：男性。
 	private String graduationTime;
 
 	/** 
+	 * 身份证地址信息
+	 */
+	@ApiField("identity_card_address")
+	private String identityCardAddress;
+
+	/** 
+	 * 身份证地区信息
+	 */
+	@ApiField("identity_card_area")
+	private String identityCardArea;
+
+	/** 
+	 * 身份证市信息
+	 */
+	@ApiField("identity_card_city")
+	private String identityCardCity;
+
+	/** 
+	 * 身份证省信息
+	 */
+	@ApiField("identity_card_province")
+	private String identityCardProvince;
+
+	/** 
 	 * 余额账户是否被冻结。
 T--被冻结；F--未冻结
 	 */
@@ -300,6 +324,12 @@ T--被冻结；F--未冻结
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	/** 
+	 * 身份证民族信息
+	 */
+	@ApiField("user_nation")
+	private String userNation;
 
 	/** 
 	 * 用户状态（Q/T/B/W）。
@@ -506,6 +536,34 @@ W代表已注册，未激活的账户
 		return this.graduationTime;
 	}
 
+	public void setIdentityCardAddress(String identityCardAddress) {
+		this.identityCardAddress = identityCardAddress;
+	}
+	public String getIdentityCardAddress( ) {
+		return this.identityCardAddress;
+	}
+
+	public void setIdentityCardArea(String identityCardArea) {
+		this.identityCardArea = identityCardArea;
+	}
+	public String getIdentityCardArea( ) {
+		return this.identityCardArea;
+	}
+
+	public void setIdentityCardCity(String identityCardCity) {
+		this.identityCardCity = identityCardCity;
+	}
+	public String getIdentityCardCity( ) {
+		return this.identityCardCity;
+	}
+
+	public void setIdentityCardProvince(String identityCardProvince) {
+		this.identityCardProvince = identityCardProvince;
+	}
+	public String getIdentityCardProvince( ) {
+		return this.identityCardProvince;
+	}
+
 	public void setIsBalanceFrozen(String isBalanceFrozen) {
 		this.isBalanceFrozen = isBalanceFrozen;
 	}
@@ -637,6 +695,13 @@ W代表已注册，未激活的账户
 	}
 	public String getUserName( ) {
 		return this.userName;
+	}
+
+	public void setUserNation(String userNation) {
+		this.userNation = userNation;
+	}
+	public String getUserNation( ) {
+		return this.userNation;
 	}
 
 	public void setUserStatus(String userStatus) {

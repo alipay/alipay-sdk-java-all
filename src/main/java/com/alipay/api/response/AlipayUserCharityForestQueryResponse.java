@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCharityForestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2545739321536616584L;
+	private static final long serialVersionUID = 8553857663376998124L;
 
 	/** 
 	 * 是否开通了蚂蚁森林

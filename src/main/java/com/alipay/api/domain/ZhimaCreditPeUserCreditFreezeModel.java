@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZhimaCreditPeUserCreditFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4369936249822488485L;
+	private static final long serialVersionUID = 5855267241765724127L;
 
 	/**
 	 * 买家的支付宝用户id

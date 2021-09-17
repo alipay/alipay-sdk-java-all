@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.payforprivilege.memberremaining.query request
  * 
  * @author auto create
- * @since 1.0, 2021-08-18 10:15:59
+ * @since 1.0, 2021-09-13 20:56:35
  */
 public class AlipayMerchantPayforprivilegeMemberremainingQueryRequest implements AlipayRequest<AlipayMerchantPayforprivilegeMemberremainingQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.public.template.message.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2021-09-13 20:11:01
  */
 public class AlipayMobilePublicTemplateMessageGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3453874811763155238L;
+	private static final long serialVersionUID = 5782189778657483673L;
 
 	/** 
 	 * 消息模板id--商户领取母版后生成的唯一模板id

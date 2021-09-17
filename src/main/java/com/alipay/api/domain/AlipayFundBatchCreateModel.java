@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFundBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3169977134655362274L;
+	private static final long serialVersionUID = 5445472136257298661L;
 
 	/**
 	 * 业务场景。不同场景值不同，具体值联系支付宝确认。如：<a href="https://opendocs.alipay.com/open/022312">批量转账到支付宝账户</a> 场景固定为 MESSAGE_BATCH_PAY。
@@ -77,7 +77,7 @@ public class AlipayFundBatchCreateModel extends AlipayObject {
 	private String totalCount;
 
 	/**
-	 * 批次总金额，单位为元，精确到小数点后两位，取值范围[0.01,9999999999999.99]
+	 * 批次总金额，单位为元，精确到小数点后两位，取值范围[1.00,9999999999999.99]
 	 */
 	@ApiField("total_trans_amount")
 	private String totalTransAmount;

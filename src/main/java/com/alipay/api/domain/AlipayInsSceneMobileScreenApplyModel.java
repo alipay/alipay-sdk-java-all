@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碎屏险投保接口
  *
  * @author auto create
- * @since 1.0, 2021-06-18 16:20:07
+ * @since 1.0, 2021-09-13 16:31:00
  */
 public class AlipayInsSceneMobileScreenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5418455448955231727L;
+	private static final long serialVersionUID = 3866197981573735464L;
 
 	/**
 	 * 投保人信息

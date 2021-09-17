@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁iot设备交易查询接口
  *
  * @author auto create
- * @since 1.0, 2020-07-23 14:04:28
+ * @since 1.0, 2021-09-14 17:32:24
  */
 public class AlipayCommerceIotDapplyDevicetradestatlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5224249325667975574L;
+	private static final long serialVersionUID = 5853737471812977768L;
 
 	/**
 	 * 分页起始偏移

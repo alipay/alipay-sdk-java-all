@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建订单券
  *
  * @author auto create
- * @since 1.0, 2021-08-20 13:41:20
+ * @since 1.0, 2021-09-09 19:07:45
  */
 public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1675147418144697387L;
+	private static final long serialVersionUID = 1286938996968358336L;
 
 	/**
 	 * 活动名称。
@@ -36,7 +36,10 @@ public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject
 	private BelongMerchantInfo belongMerchantInfo;
 
 	/**
-	 * 商家券业务标签，影响商家券对C端用户的展示形式。
+	 * 该字段废弃！后续不要使用该字段！
+
+
+商家券业务标签，影响商家券对C端用户的展示形式。
 
 枚举值
 兑换券团购场景 GROUP_BUY_EXCHANGE_VOUCHER
@@ -50,6 +53,8 @@ public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject
 
 枚举值：
 MERCHANT_UPLOAD：商户上传自定义code，发券时系统随机选取上传的券code发放
+
+MERCHANT_API：发奖时指定券码发奖，此模式无须提前上传券码。（该模式暂时只针对exchange_voucher生效）
 	 */
 	@ApiField("code_mode")
 	private String codeMode;

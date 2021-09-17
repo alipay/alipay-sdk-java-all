@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  *  餐饮服务标准化服务申报
  *
  * @author auto create
- * @since 1.0, 2021-07-13 16:13:05
+ * @since 1.0, 2021-09-16 14:41:09
  */
 public class AlipayCommerceOperationIsvServiceSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4716437474196952864L;
+	private static final long serialVersionUID = 7852395138183435991L;
 
 	/**
 	 * 扩展字段，服务扩展字段，示例：key：service_levle，value：standard
@@ -40,6 +40,12 @@ public class AlipayCommerceOperationIsvServiceSubmitModel extends AlipayObject {
 	 */
 	@ApiField("service_name")
 	private String serviceName;
+
+	/**
+	 * 服务范围信息
+	 */
+	@ApiField("service_scope_info")
+	private CateringServiceScopeInfo serviceScopeInfo;
 
 	/**
 	 * 服务状态（ServiceStatus枚举）
@@ -103,6 +109,13 @@ SERVICE_OFFLINE：服务下线
 	}
 	public void setServiceName(String serviceName) {
 		this.serviceName = serviceName;
+	}
+
+	public CateringServiceScopeInfo getServiceScopeInfo() {
+		return this.serviceScopeInfo;
+	}
+	public void setServiceScopeInfo(CateringServiceScopeInfo serviceScopeInfo) {
+		this.serviceScopeInfo = serviceScopeInfo;
 	}
 
 	public String getServiceStatus() {

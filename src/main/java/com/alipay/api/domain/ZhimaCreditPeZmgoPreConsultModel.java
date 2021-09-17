@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预咨询接口
  *
  * @author auto create
- * @since 1.0, 2021-08-03 10:43:28
+ * @since 1.0, 2021-09-14 16:18:13
  */
 public class ZhimaCreditPeZmgoPreConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1684714314637173285L;
+	private static final long serialVersionUID = 8779682291582986212L;
 
 	/**
 	 * 用户id

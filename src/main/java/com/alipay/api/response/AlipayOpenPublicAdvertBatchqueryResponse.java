@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.advert.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-27 16:14:00
+ * @since 1.0, 2021-09-13 20:58:40
  */
 public class AlipayOpenPublicAdvertBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3483798151774762155L;
+	private static final long serialVersionUID = 1649115497594317957L;
 
 	/** 
 	 * 广告位列表 。目前只有一个广告位。

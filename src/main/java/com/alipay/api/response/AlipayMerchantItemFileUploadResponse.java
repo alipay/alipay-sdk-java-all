@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.item.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-15 11:30:13
+ * @since 1.0, 2021-09-13 20:55:41
  */
 public class AlipayMerchantItemFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6249466449549892287L;
+	private static final long serialVersionUID = 3112492258746958178L;
 
 	/** 
 	 * 文件在商品中心的素材标识（素材ID长期有效）

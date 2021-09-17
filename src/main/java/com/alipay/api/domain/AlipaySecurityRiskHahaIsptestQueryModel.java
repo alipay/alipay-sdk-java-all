@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ISP场景验证
  *
  * @author auto create
- * @since 1.0, 2021-09-07 16:47:45
+ * @since 1.0, 2021-09-17 13:38:51
  */
 public class AlipaySecurityRiskHahaIsptestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3582853514145248542L;
+	private static final long serialVersionUID = 3238156474265265387L;
 
 	/**
 	 * 简单复杂类型

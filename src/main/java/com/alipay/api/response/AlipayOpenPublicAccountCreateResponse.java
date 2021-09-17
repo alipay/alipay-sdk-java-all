@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.account.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-23 10:48:49
+ * @since 1.0, 2021-09-13 20:58:27
  */
 public class AlipayOpenPublicAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4294743885859139818L;
+	private static final long serialVersionUID = 2149671725432216874L;
 
 	/** 
 	 * 协议号，商户会员在支付宝服务窗账号中的唯一标识

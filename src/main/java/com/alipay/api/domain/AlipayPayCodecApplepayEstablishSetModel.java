@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayPayCodecApplepayEstablishSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8161299772811816756L;
+	private static final long serialVersionUID = 5636327476317343931L;
 
 	/**
 	 * 数字签名。

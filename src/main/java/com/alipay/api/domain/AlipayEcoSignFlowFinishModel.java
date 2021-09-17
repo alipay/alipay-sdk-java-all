@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoSignFlowFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8314366566646791195L;
+	private static final long serialVersionUID = 2697476378674353878L;
 
 	/**
 	 * 流程id

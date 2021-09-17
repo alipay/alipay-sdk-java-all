@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-26 20:16:14
+ * @since 1.0, 2021-09-16 16:06:17
  */
 public class AlipayTradeCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4858916284994395196L;
+	private static final long serialVersionUID = 5678816973318594963L;
 
 	/** 
 	 * 本次撤销触发的交易动作,接口调用成功且交易存在时返回。可能的返回值：
@@ -26,7 +26,7 @@ refund：交易已支付，触发交易退款动作；
 
 	/** 
 	 * 当撤销产生了退款时，返回退款时间；
-默认不返回该信息，需与支付宝约定后配置返回；
+ 只在银行间联交易场景下返回该信息；
 	 */
 	@ApiField("gmt_refund_pay")
 	private Date gmtRefundPay;

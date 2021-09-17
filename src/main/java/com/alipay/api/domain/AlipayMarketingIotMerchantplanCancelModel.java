@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT展位投放计划商家取消报名接口
  *
  * @author auto create
- * @since 1.0, 2021-02-02 17:34:02
+ * @since 1.0, 2021-09-13 10:35:36
  */
 public class AlipayMarketingIotMerchantplanCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2673339319278219625L;
+	private static final long serialVersionUID = 2364736183476579248L;
 
 	/**
 	 * 商家活动ID

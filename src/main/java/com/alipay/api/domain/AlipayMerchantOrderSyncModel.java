@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2021-07-13 10:01:02
+ * @since 1.0, 2021-09-16 16:01:50
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6613548262373422541L;
+	private static final long serialVersionUID = 8692823829864595129L;
 
 	/**
 	 * 订单金额，单位为元。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
@@ -94,7 +94,7 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	private Date orderCreateTime;
 
 	/**
-	 * 订单修改时间，一般不需要传入。用于订单状态或数据变化较快的顺序控制，order_modified_time较晚的同步会被最终存储，order_modified_time相同的两次同步可能会被幂等处理，SERVICE_ORDER按照行业标准化接入场景必须传入该字段控制乱序
+	 * 订单修改时间。用于订单状态或数据变化较快的顺序控制，SERVICE_ORDER按照行业标准化接入场景必须传入该字段控制乱序。order_modified_time较晚的同步会被最终存储，order_modified_time相同的两次同步会被幂等处理
 	 */
 	@ApiField("order_modified_time")
 	private Date orderModifiedTime;
@@ -107,9 +107,7 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	private Date orderPayTime;
 
 	/**
-	 * 订单类型，若为空，默认为交易订单，每次请求必传
--SERVICE_ORDER：服务订单
--TRADE_ORDER：交易订单
+	 * 订单类型，新接入商户统一传入SERVICE_ORDER(服务订单)
 	 */
 	@ApiField("order_type")
 	private String orderType;
@@ -180,10 +178,17 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	private String syncContent;
 
 	/**
-	 * 凭证信息
+	 * 凭证信息（废弃，凭证信息参考ticket_order_list）
 	 */
 	@ApiField("ticket_info")
 	private TicketInfo ticketInfo;
+
+	/**
+	 * 凭证信息
+	 */
+	@ApiListField("ticket_order_list")
+	@ApiField("ticket_order_info")
+	private List<TicketOrderInfo> ticketOrderList;
 
 	/**
 	 * 订单所对应的支付宝交易号
@@ -373,6 +378,13 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	}
 	public void setTicketInfo(TicketInfo ticketInfo) {
 		this.ticketInfo = ticketInfo;
+	}
+
+	public List<TicketOrderInfo> getTicketOrderList() {
+		return this.ticketOrderList;
+	}
+	public void setTicketOrderList(List<TicketOrderInfo> ticketOrderList) {
+		this.ticketOrderList = ticketOrderList;
 	}
 
 	public String getTradeNo() {

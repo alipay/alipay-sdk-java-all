@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 兼职平台报名同步接口
  *
  * @author auto create
- * @since 1.0, 2016-09-08 16:00:33
+ * @since 1.0, 2021-09-16 17:17:06
  */
 public class AlipayEcoEduJzApplyresultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6619491714973428844L;
+	private static final long serialVersionUID = 4353554552988797884L;
 
 	/**
 	 * 报名编号（通过调用报名信息同步接口返回）

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8527487845449918118L;
+	private static final long serialVersionUID = 6497873666953597854L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -52,7 +52,8 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
-	 * 查询选项，商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。支持：refund_detail_item_list：退款使用的资金渠道。
+	 * 查询选项。
+商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。支持：refund_detail_item_list：退款使用的资金渠道。
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")
@@ -73,7 +74,8 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	private String refundCurrency;
 
 	/**
-	 * 退款原因说明，商家自定义。
+	 * 退款原因说明。
+商家自定义，将在对账单的退款明细中作为备注返回，同时会在商户和用户的pc退款账单详情中展示
 	 */
 	@ApiField("refund_reason")
 	private String refundReason;
