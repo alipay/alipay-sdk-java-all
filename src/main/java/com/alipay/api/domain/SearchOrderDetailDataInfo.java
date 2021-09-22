@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联的服务状态信息
  *
  * @author auto create
- * @since 1.0, 2020-12-17 19:24:15
+ * @since 1.0, 2021-09-17 18:02:47
  */
 public class SearchOrderDetailDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2152744773181722598L;
+	private static final long serialVersionUID = 1844925291352482212L;
 
 	/**
 	 * 申请单类型 BASE：基础信息， BRAND_BOX：品牌直达，SERVICE_BOX服务直达

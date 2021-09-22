@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEducateFacefeatureInfoSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5413288874776164887L;
+	private static final long serialVersionUID = 1678161791147849772L;
 
 	/**
 	 * 人脸算法版本

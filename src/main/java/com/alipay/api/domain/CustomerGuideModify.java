@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改用户引导配置
  *
  * @author auto create
- * @since 1.0, 2021-08-06 11:15:26
+ * @since 1.0, 2021-09-18 17:18:53
  */
 public class CustomerGuideModify extends AlipayObject {
 
-	private static final long serialVersionUID = 1594184858716746259L;
+	private static final long serialVersionUID = 4418469763456646781L;
 
 	/**
 	 * 券可使用的商业关系门店列表,列表中的门店id是调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id 

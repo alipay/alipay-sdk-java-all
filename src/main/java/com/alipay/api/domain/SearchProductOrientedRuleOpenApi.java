@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定向规则
  *
  * @author auto create
- * @since 1.0, 2021-08-19 17:09:01
+ * @since 1.0, 2021-09-17 18:01:55
  */
 public class SearchProductOrientedRuleOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 5834978787389219588L;
+	private static final long serialVersionUID = 2236996163727688415L;
 
 	/**
 	 * 客户端 ALL IOS ANDROID

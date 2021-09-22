@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品详细信息
  *
  * @author auto create
- * @since 1.0, 2021-06-17 14:01:04
+ * @since 1.0, 2021-09-18 15:59:42
  */
 public class Goods extends AlipayObject {
 
-	private static final long serialVersionUID = 6613198611442463573L;
+	private static final long serialVersionUID = 8335177479657123697L;
 
 	/**
 	 * 商品id
@@ -38,7 +38,7 @@ public class Goods extends AlipayObject {
 	private String goodsPicUrl;
 
 	/**
-	 * 商品单价，单位为元，精确到小数点后两位，取值范围为 [0.01,100000000]
+	 * 商品单价，单位为元，精确到小数点后两位，取值范围为 [0.01,100000000]，GENERAL蜻蜓点餐业务场景必填，其他场景选填
 	 */
 	@ApiField("goods_price")
 	private String goodsPrice;

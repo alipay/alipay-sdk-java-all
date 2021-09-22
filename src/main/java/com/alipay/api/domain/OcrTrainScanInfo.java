@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 火车票扫描模型
  *
  * @author auto create
- * @since 1.0, 2021-08-27 17:09:54
+ * @since 1.0, 2021-09-22 15:59:06
  */
 public class OcrTrainScanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7768185396257231696L;
+	private static final long serialVersionUID = 1172742983346615911L;
 
 	/**
 	 * 目的地

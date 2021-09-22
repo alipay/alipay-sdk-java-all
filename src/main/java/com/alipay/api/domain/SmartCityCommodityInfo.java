@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SmartCityCommodityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3373336612233441813L;
+	private static final long serialVersionUID = 7886864139918466646L;
 
 	/**
 	 * 服务归属

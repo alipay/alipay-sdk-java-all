@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnfreezeOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8238315843773326743L;
+	private static final long serialVersionUID = 2213879972283932387L;
 
 	/**
 	 * 支付宝订单号

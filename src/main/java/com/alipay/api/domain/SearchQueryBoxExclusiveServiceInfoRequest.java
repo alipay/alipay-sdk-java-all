@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询品牌绑定的官方账号入参
  *
  * @author auto create
- * @since 1.0, 2021-07-12 16:44:00
+ * @since 1.0, 2021-09-17 18:02:35
  */
 public class SearchQueryBoxExclusiveServiceInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8581943164945254534L;
+	private static final long serialVersionUID = 7444381424118815355L;
 
 	/**
 	 * 品牌id

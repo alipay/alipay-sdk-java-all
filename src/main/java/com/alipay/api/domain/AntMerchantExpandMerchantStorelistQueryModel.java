@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户外部门店查询接口
  *
  * @author auto create
- * @since 1.0, 2021-09-08 17:51:09
+ * @since 1.0, 2021-09-22 19:13:34
  */
 public class AntMerchantExpandMerchantStorelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4823785662717543793L;
+	private static final long serialVersionUID = 5852961249722466739L;
 
 	/**
 	 * 可选：  true / false 。
@@ -36,7 +36,7 @@ public class AntMerchantExpandMerchantStorelistQueryModel extends AlipayObject {
 	private Long pageSize;
 
 	/**
-	 * 指定的商户pid，如果指定， 只返回此pid的店铺信息。(此pid必须是商户自己的)
+	 * 门店所属的商户pid
 	 */
 	@ApiField("pid")
 	private String pid;

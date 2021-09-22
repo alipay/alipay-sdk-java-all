@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预咨询接口
  *
  * @author auto create
- * @since 1.0, 2021-09-14 16:18:13
+ * @since 1.0, 2021-09-18 10:34:42
  */
 public class ZhimaCreditPeZmgoPreConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8779682291582986212L;
+	private static final long serialVersionUID = 8737951624725488838L;
 
 	/**
 	 * 用户id
@@ -30,6 +30,12 @@ public class ZhimaCreditPeZmgoPreConsultModel extends AlipayObject {
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * 查询等级
+	 */
+	@ApiField("query_level")
+	private String queryLevel;
 
 	/**
 	 * 模板id
@@ -56,6 +62,13 @@ public class ZhimaCreditPeZmgoPreConsultModel extends AlipayObject {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getQueryLevel() {
+		return this.queryLevel;
+	}
+	public void setQueryLevel(String queryLevel) {
+		this.queryLevel = queryLevel;
 	}
 
 	public String getTemplateId() {

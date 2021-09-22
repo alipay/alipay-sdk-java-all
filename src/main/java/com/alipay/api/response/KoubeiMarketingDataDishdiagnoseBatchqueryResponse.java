@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingDataDishdiagnoseBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2451424645284684755L;
+	private static final long serialVersionUID = 4127119827984339674L;
 
 	/** 
 	 * 查询返回的详情数据

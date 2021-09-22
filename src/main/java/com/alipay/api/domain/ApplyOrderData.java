@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 申请单基础信息
  *
  * @author auto create
- * @since 1.0, 2020-12-15 19:22:49
+ * @since 1.0, 2021-09-17 18:03:04
  */
 public class ApplyOrderData extends AlipayObject {
 
-	private static final long serialVersionUID = 6424347494779227159L;
+	private static final long serialVersionUID = 6816224496953853944L;
 
 	/**
 	 * 申请类型 BASE：基础信息， BRAND_BOX：品牌直达，SERVICE_BOX服务直达

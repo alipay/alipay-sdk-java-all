@@ -11,11 +11,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户学生证信息同步
  *
  * @author auto create
- * @since 1.0, 2021-09-15 10:08:38
+ * @since 1.0, 2021-09-22 17:28:44
  */
 public class AlipayCommerceEducateCampusCardUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8672268792138472993L;
+	private static final long serialVersionUID = 5342383442181892236L;
+
+	/**
+	 * 业务来源，需要拆分子渠道的需要上送，例如：
+饿了么需要拆分子渠道，
+饿了么学生中心：XUESHENGZHONGXIN
+饿了么付费会员：FUFEIHUIYUAN
+	 */
+	@ApiField("biz_source_from")
+	private String bizSourceFrom;
 
 	/**
 	 * 逐步废弃，请使用card_pictures字段！学生证照片链接(可多张)。注：需要提供图片oss URL访问地址，且url需要长期有效
@@ -48,6 +57,13 @@ public class AlipayCommerceEducateCampusCardUploadModel extends AlipayObject {
 	 */
 	@ApiField("school_name")
 	private String schoolName;
+
+	public String getBizSourceFrom() {
+		return this.bizSourceFrom;
+	}
+	public void setBizSourceFrom(String bizSourceFrom) {
+		this.bizSourceFrom = bizSourceFrom;
+	}
 
 	public List<String> getCampusCardPicture() {
 		return this.campusCardPicture;

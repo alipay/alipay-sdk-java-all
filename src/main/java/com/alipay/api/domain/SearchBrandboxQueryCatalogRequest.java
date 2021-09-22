@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询品牌下可用类目入参
  *
  * @author auto create
- * @since 1.0, 2021-09-01 14:46:37
+ * @since 1.0, 2021-09-17 18:01:01
  */
 public class SearchBrandboxQueryCatalogRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7859523444776761334L;
+	private static final long serialVersionUID = 4329727188357383128L;
 
 	/**
 	 * 品牌id

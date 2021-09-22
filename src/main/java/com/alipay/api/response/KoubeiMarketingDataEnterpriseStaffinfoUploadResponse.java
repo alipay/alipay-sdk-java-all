@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingDataEnterpriseStaffinfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1175495339927152742L;
+	private static final long serialVersionUID = 8255147926652126253L;
 
 	/** 
 	 * 人群ID

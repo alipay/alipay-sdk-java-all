@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.mobile.screen.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-13 16:31:00
+ * @since 1.0, 2021-09-17 20:35:28
  */
 public class AlipayInsSceneMobileScreenApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1887831544485154573L;
+	private static final long serialVersionUID = 6698565446786671829L;
 
 	/** 
 	 * 投保外部业务单号
@@ -31,6 +31,12 @@ public class AlipayInsSceneMobileScreenApplyResponse extends AlipayResponse {
 	 */
 	@ApiField("policy_url")
 	private String policyUrl;
+
+	/** 
+	 * 保单保费（单位：分）
+	 */
+	@ApiField("premium")
+	private Long premium;
 
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
@@ -51,6 +57,13 @@ public class AlipayInsSceneMobileScreenApplyResponse extends AlipayResponse {
 	}
 	public String getPolicyUrl( ) {
 		return this.policyUrl;
+	}
+
+	public void setPremium(Long premium) {
+		this.premium = premium;
+	}
+	public Long getPremium( ) {
+		return this.premium;
 	}
 
 }

@@ -7,20 +7,27 @@ import com.alipay.api.internal.mapping.ApiField;
  * 餐饮订单对应服务信息
  *
  * @author auto create
- * @since 1.0, 2021-08-24 10:10:46
+ * @since 1.0, 2021-09-18 16:47:23
  */
 public class CateringServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4874677667576944742L;
+	private static final long serialVersionUID = 6866194251735926565L;
 
 	/**
 	 * 服务子类型（ServiceSubType枚举）
 自提:PICK_UP
 外卖:TAKE_AWAY
 排队:QUEUE
+订单通用业务类型:GENERAL(蜻蜓点餐返佣场景)
 	 */
 	@ApiField("service_sub_type")
 	private String serviceSubType;
+
+	/**
+	 * 蚂蚁门店编号。GERERAL蜻蜓点餐业务类型，必填
+	 */
+	@ApiField("shop_id")
+	private String shopId;
 
 	/**
 	 * 门店地址（格式：市/区/详细地址门牌号）
@@ -45,6 +52,13 @@ public class CateringServiceInfo extends AlipayObject {
 	}
 	public void setServiceSubType(String serviceSubType) {
 		this.serviceSubType = serviceSubType;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 	public String getStoreAddress() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 搜索运营列表的查询request
  *
  * @author auto create
- * @since 1.0, 2020-12-15 19:20:42
+ * @since 1.0, 2021-09-17 18:03:13
  */
 public class SearchOperPageQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1711238838262692577L;
+	private static final long serialVersionUID = 4334953746944241612L;
 
 	/**
 	 * 申请类型 BASE：基础信息， BRAND_BOX：品牌直达，SERVICE_BOX服务直达

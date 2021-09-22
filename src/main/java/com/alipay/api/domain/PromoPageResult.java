@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoPageResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2567855555628858168L;
+	private static final long serialVersionUID = 1581765314121944214L;
 
 	/**
 	 * 页码

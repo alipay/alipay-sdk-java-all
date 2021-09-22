@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SceneProdDeputyPaymentBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4819843625615693855L;
+	private static final long serialVersionUID = 8735936261658854713L;
 
 	/**
 	 * 代客还款的网商银行结算户信息

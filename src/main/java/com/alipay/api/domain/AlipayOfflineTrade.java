@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineTrade extends AlipayObject {
 
-	private static final long serialVersionUID = 2472546865638674936L;
+	private static final long serialVersionUID = 5823161966888536798L;
 
 	/**
 	 * 交易实际发生时间

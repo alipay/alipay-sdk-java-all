@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.data.scenic.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-02 19:55:21
+ * @since 1.0, 2021-09-18 14:40:28
  */
 public class AlipayCommerceDataScenicSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5124885583224479434L;
+	private static final long serialVersionUID = 2639795345367968768L;
+
+	/** 
+	 * 当前景区进见状态的说明
+	 */
+	@ApiField("desc")
+	private String desc;
 
 	/** 
 	 * 对应服务商请求中的outer_id
@@ -33,10 +39,23 @@ public class AlipayCommerceDataScenicSyncResponse extends AlipayResponse {
 	private String scenicId;
 
 	/** 
+	 * 当前景区的进见状态。可选择值：[AUDITING:审核中， SUCCESS：成功]
+	 */
+	@ApiField("status")
+	private String status;
+
+	/** 
 	 * 出现异常 "同一个appId+outerId下不能对应两个景区" 时，才会有值，表示outer_id+scenic_app_id在支付宝域维护的景区ID
 	 */
 	@ApiField("zfb_scenic_id")
 	private String zfbScenicId;
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+	public String getDesc( ) {
+		return this.desc;
+	}
 
 	public void setOuterId(String outerId) {
 		this.outerId = outerId;
@@ -57,6 +76,13 @@ public class AlipayCommerceDataScenicSyncResponse extends AlipayResponse {
 	}
 	public String getScenicId( ) {
 		return this.scenicId;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getStatus( ) {
+		return this.status;
 	}
 
 	public void setZfbScenicId(String zfbScenicId) {

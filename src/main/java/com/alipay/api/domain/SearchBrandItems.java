@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 接入运营平台提报品牌box申请单数据详情
  *
  * @author auto create
- * @since 1.0, 2020-12-15 19:20:59
+ * @since 1.0, 2021-09-17 18:01:34
  */
 public class SearchBrandItems extends AlipayObject {
 
-	private static final long serialVersionUID = 1321514256968783139L;
+	private static final long serialVersionUID = 7887772147278952937L;
 
 	/**
 	 * 品牌box状态

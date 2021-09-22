@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索运营服务的列表信息，包括 基础信息、品牌直达、服务直达
  *
  * @author auto create
- * @since 1.0, 2020-12-15 19:20:28
+ * @since 1.0, 2021-09-17 18:03:19
  */
 public class AbilityPageQueryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4812518379538797922L;
+	private static final long serialVersionUID = 4515746366874198668L;
 
 	/**
 	 * 搜索运营列表的分页数据

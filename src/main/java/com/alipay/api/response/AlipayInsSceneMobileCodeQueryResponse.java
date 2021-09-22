@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.mobile.code.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-13 11:41:55
+ * @since 1.0, 2021-09-17 20:35:28
  */
 public class AlipayInsSceneMobileCodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4668969772896114765L;
+	private static final long serialVersionUID = 8736587482211792611L;
 
 	/** 
 	 * 投保人
@@ -46,6 +46,12 @@ public class AlipayInsSceneMobileCodeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("policy_no")
 	private String policyNo;
+
+	/** 
+	 * 保单保费（单位：分）
+	 */
+	@ApiField("premium")
+	private Long premium;
 
 	/** 
 	 * 维修类型 unOfficial:严选；official:官修
@@ -93,6 +99,13 @@ inactivated:未激活，activated:已激活
 	}
 	public String getPolicyNo( ) {
 		return this.policyNo;
+	}
+
+	public void setPremium(Long premium) {
+		this.premium = premium;
+	}
+	public Long getPremium( ) {
+		return this.premium;
 	}
 
 	public void setRepairType(String repairType) {

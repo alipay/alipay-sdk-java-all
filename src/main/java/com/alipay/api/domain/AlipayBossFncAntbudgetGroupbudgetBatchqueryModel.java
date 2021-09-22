@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 有权限的集团预算基础信息和可用余额查询
  *
  * @author auto create
- * @since 1.0, 2021-08-06 10:17:57
+ * @since 1.0, 2021-09-17 16:51:46
  */
 public class AlipayBossFncAntbudgetGroupbudgetBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4645341746345586641L;
+	private static final long serialVersionUID = 4188835539819385464L;
 
 	/**
 	 * 财年，例如：2021
 	 */
 	@ApiField("budget_fy")
 	private String budgetFy;
+
+	/**
+	 * ps部门信息
+	 */
+	@ApiField("department_code")
+	private String departmentCode;
 
 	/**
 	 * 集团预算编码(提供精确查询)
@@ -48,6 +54,13 @@ public class AlipayBossFncAntbudgetGroupbudgetBatchqueryModel extends AlipayObje
 	}
 	public void setBudgetFy(String budgetFy) {
 		this.budgetFy = budgetFy;
+	}
+
+	public String getDepartmentCode() {
+		return this.departmentCode;
+	}
+	public void setDepartmentCode(String departmentCode) {
+		this.departmentCode = departmentCode;
 	}
 
 	public String getGroupBudgetCode() {

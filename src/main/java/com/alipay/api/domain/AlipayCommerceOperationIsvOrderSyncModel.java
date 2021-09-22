@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮服务标准化订单数据回流
  *
  * @author auto create
- * @since 1.0, 2021-08-26 15:47:37
+ * @since 1.0, 2021-09-18 16:47:23
  */
 public class AlipayCommerceOperationIsvOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2258662368236921629L;
+	private static final long serialVersionUID = 1629954843838284793L;
 
 	/**
 	 * 支付宝userid（用户在支付宝平台的2088开头16位id）
@@ -90,7 +90,7 @@ N_DISPOSABLE_CUP：环保杯（用非一次性杯子如自带杯或用商户提�
 
 	/**
 	 * 订单总金额。
-自提、外卖、点餐场景下，必填。
+自提、外卖、点餐（GENERAL蜻蜓点餐）场景下，必填。
 	 */
 	@ApiField("order_amount")
 	private String orderAmount;
@@ -102,7 +102,7 @@ N_DISPOSABLE_CUP：环保杯（用非一次性杯子如自带杯或用商户提�
 	private Date orderCreateTime;
 
 	/**
-	 * 订单详情链接
+	 * 订单详情链接，GENERAL蜻蜓点餐可选填，其他业务场景必填
 	 */
 	@ApiField("order_detail_url")
 	private String orderDetailUrl;
@@ -132,6 +132,7 @@ ALIPAY_APPLETS：支付宝小程序产生的订单
 ALIPAY_POS：收银POS产生的支付宝订单
 MERCHANT_APP：APP交易产生的支付宝订单
 OTHERS：其他渠道的支付宝交易
+KIOSKS：自助设备（蜻蜓点餐填此类型）
 	 */
 	@ApiField("order_source")
 	private String orderSource;
@@ -163,7 +164,7 @@ INSTANT：实时单
 	private QueueInfo queueInfo;
 
 	/**
-	 * 返佣pid
+	 * 返佣pid，GENERAL蜻蜓点餐业务场景，必填
 	 */
 	@ApiField("rebate_pid")
 	private String rebatePid;
@@ -199,7 +200,7 @@ INSTANT：实时单
 	private String status;
 
 	/**
-	 * 支付宝交易号，自提、外卖场景 必填，不支持多个交易号。
+	 * 支付宝交易号，除CREATE、CLOSED节点必填，不支持多个交易号。
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

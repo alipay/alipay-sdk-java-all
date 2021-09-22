@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 兼职平台贴子发布接口
  *
  * @author auto create
- * @since 1.0, 2021-09-16 17:16:46
+ * @since 1.0, 2021-09-18 14:52:31
  */
 public class AlipayEcoEduJzPostPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1158583123343445284L;
+	private static final long serialVersionUID = 3413951151448873425L;
 
 	/**
 	 * 年龄要求范围

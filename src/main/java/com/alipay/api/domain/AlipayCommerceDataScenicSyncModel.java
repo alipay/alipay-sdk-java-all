@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 景区ID内外域映射配置
  *
  * @author auto create
- * @since 1.0, 2021-07-02 19:54:23
+ * @since 1.0, 2021-09-18 14:39:59
  */
 public class AlipayCommerceDataScenicSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4616132781563663796L;
+	private static final long serialVersionUID = 1187582746217318346L;
+
+	/**
+	 * 码值信息
+	 */
+	@ApiListField("code_value")
+	@ApiField("string")
+	private List<String> codeValue;
 
 	/**
 	 * 服务商名称
@@ -48,6 +58,13 @@ public class AlipayCommerceDataScenicSyncModel extends AlipayObject {
 	 */
 	@ApiField("scenic_id")
 	private String scenicId;
+
+	public List<String> getCodeValue() {
+		return this.codeValue;
+	}
+	public void setCodeValue(List<String> codeValue) {
+		this.codeValue = codeValue;
+	}
 
 	public String getIsvName() {
 		return this.isvName;

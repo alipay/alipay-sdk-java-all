@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询代商户报名的活动列表
  *
  * @author auto create
- * @since 1.0, 2021-07-28 09:56:59
+ * @since 1.0, 2021-09-18 15:05:03
  */
 public class AlipayMarketingCampaignPromotionactivityMerchantviewBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3331254716574354577L;
+	private static final long serialVersionUID = 2132145737766787261L;
 
 	/**
 	 * 查询过滤条件, 单品券goods_id. 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneYebInfoAdvertisingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6399536572552316972L;
+	private static final long serialVersionUID = 5321377857595478512L;
 
 	/** 
 	 * advertising_type：广告投放类型。

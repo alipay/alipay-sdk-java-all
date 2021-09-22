@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * box的服务模型
  *
  * @author auto create
- * @since 1.0, 2021-07-12 16:44:29
+ * @since 1.0, 2021-09-17 18:01:46
  */
 public class BoxExclusiveService extends AlipayObject {
 
-	private static final long serialVersionUID = 4863968813884981922L;
+	private static final long serialVersionUID = 2715438372793369977L;
 
 	/**
 	 * 父服务编码

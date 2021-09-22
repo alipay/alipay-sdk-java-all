@@ -7,23 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户门店信息
  *
  * @author auto create
- * @since 1.0, 2017-06-20 21:12:59
+ * @since 1.0, 2021-09-22 19:13:35
  */
 public class ShopQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2719573937681975955L;
+	private static final long serialVersionUID = 6611565644319713384L;
 
 	/**
 	 * 门店地址
 	 */
 	@ApiField("address")
 	private String address;
-
-	/**
-	 * 是否包含同mid下的其他pid的店铺
-	 */
-	@ApiField("is_include_cognate")
-	private Boolean isIncludeCognate;
 
 	/**
 	 * 纬度
@@ -72,13 +66,6 @@ public class ShopQueryInfo extends AlipayObject {
 	}
 	public void setAddress(String address) {
 		this.address = address;
-	}
-
-	public Boolean getIsIncludeCognate() {
-		return this.isIncludeCognate;
-	}
-	public void setIsIncludeCognate(Boolean isIncludeCognate) {
-		this.isIncludeCognate = isIncludeCognate;
 	}
 
 	public String getLatitude() {

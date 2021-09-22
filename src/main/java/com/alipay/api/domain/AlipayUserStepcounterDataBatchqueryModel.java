@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝用户日计步数据批量查询接口
  *
  * @author auto create
- * @since 1.0, 2021-08-10 11:05:45
+ * @since 1.0, 2021-09-22 11:40:02
  */
 public class AlipayUserStepcounterDataBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5257529419423564243L;
+	private static final long serialVersionUID = 4876741456965227678L;
 
 	/**
 	 * 步数数据查询的结束日期。此日期不能小于步数查询的开始日期

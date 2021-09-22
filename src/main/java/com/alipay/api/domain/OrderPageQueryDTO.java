@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 审核单分页查询数据
  *
  * @author auto create
- * @since 1.0, 2020-12-15 19:22:36
+ * @since 1.0, 2021-09-17 18:03:04
  */
 public class OrderPageQueryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6751561785978743558L;
+	private static final long serialVersionUID = 5568939929579595792L;
 
 	/**
 	 * 审核单数据信息

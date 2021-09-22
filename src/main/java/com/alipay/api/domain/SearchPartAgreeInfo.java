@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 审核提效部分剔除数据的信息
  *
  * @author auto create
- * @since 1.0, 2020-12-15 19:22:25
+ * @since 1.0, 2021-09-17 18:03:04
  */
 public class SearchPartAgreeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7696598898114188381L;
+	private static final long serialVersionUID = 6361563341646584798L;
 
 	/**
 	 * 剔除数据名称

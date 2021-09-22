@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * box工单基础类型
  *
  * @author auto create
- * @since 1.0, 2021-07-12 16:45:04
+ * @since 1.0, 2021-09-17 18:01:46
  */
 public class BoxOrderStatusInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4796965459369999982L;
+	private static final long serialVersionUID = 2227863459422395792L;
 
 	/**
 	 * 工单数据

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 品牌绑定的官方账号详情
  *
  * @author auto create
- * @since 1.0, 2021-07-27 14:26:48
+ * @since 1.0, 2021-09-17 18:01:38
  */
 public class BoxExclusiveServiceOpenApiInfos extends AlipayObject {
 
-	private static final long serialVersionUID = 6535246674231515575L;
+	private static final long serialVersionUID = 5866169253927472338L;
 
 	/**
 	 * 应用id

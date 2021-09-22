@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自提业务信息
  *
  * @author auto create
- * @since 1.0, 2021-08-26 15:47:37
+ * @since 1.0, 2021-09-18 16:00:47
  */
 public class PickUpInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7585926366631869397L;
+	private static final long serialVersionUID = 2173526624612472711L;
 
 	/**
 	 * 自提地址（展示的地址）
@@ -32,7 +32,7 @@ public class PickUpInfo extends AlipayObject {
 	private String pickUpShopName;
 
 	/**
-	 * 取餐凭证类型。待自取及之后状态必填。整体状态生命周期中，必须回传1次。枚举支持：自提码-SELF_PICK_CODE ；口令-PASSWORD。
+	 * 取餐凭证类型。待自取及之后状态必填。整体状态生命周期中，必须回传1次。枚举支持：自提码-SELF_PICK_CODE ；口令-PASSWORD；取餐码-MEAL_NUM
 	 */
 	@ApiField("pick_up_type")
 	private String pickUpType;

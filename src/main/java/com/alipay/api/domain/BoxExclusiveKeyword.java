@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 品牌box触发词
  *
  * @author auto create
- * @since 1.0, 2021-07-12 16:44:42
+ * @since 1.0, 2021-09-17 18:01:29
  */
 public class BoxExclusiveKeyword extends AlipayObject {
 
-	private static final long serialVersionUID = 1863782349757568448L;
+	private static final long serialVersionUID = 2312677252321374894L;
 
 	/**
 	 * 默认品牌触发词

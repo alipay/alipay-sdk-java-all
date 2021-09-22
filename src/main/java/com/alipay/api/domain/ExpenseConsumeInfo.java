@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2021-08-27 16:02:05
+ * @since 1.0, 2021-09-22 15:59:06
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7839824434313565739L;
+	private static final long serialVersionUID = 8483316865254936279L;
 
 	/**
 	 * 公司账号ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
+
+	/**
+	 * 实际出资账号（实际出资人实名认证名称)
+	 */
+	@ApiField("actual_account_number")
+	private String actualAccountNumber;
+
+	/**
+	 * 汇总批次id
+	 */
+	@ApiField("batch_id")
+	private String batchId;
 
 	/**
 	 * 支付流水号
@@ -62,6 +74,12 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String employeeId;
 
 	/**
+	 * 开票模式
+	 */
+	@ApiField("open_model")
+	private String openModel;
+
+	/**
 	 * 外部流水号
 	 */
 	@ApiField("out_biz_no")
@@ -92,6 +110,18 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String projiectId;
 
 	/**
+	 * 制度id
+	 */
+	@ApiField("standard_id")
+	private String standardId;
+
+	/**
+	 * tp标志位
+	 */
+	@ApiField("tp_sign")
+	private String tpSign;
+
+	/**
 	 * 凭证id
 	 */
 	@ApiField("voucher_id")
@@ -102,6 +132,20 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	}
 	public void setAccountId(String accountId) {
 		this.accountId = accountId;
+	}
+
+	public String getActualAccountNumber() {
+		return this.actualAccountNumber;
+	}
+	public void setActualAccountNumber(String actualAccountNumber) {
+		this.actualAccountNumber = actualAccountNumber;
+	}
+
+	public String getBatchId() {
+		return this.batchId;
+	}
+	public void setBatchId(String batchId) {
+		this.batchId = batchId;
 	}
 
 	public String getBillNo() {
@@ -153,6 +197,13 @@ public class ExpenseConsumeInfo extends AlipayObject {
 		this.employeeId = employeeId;
 	}
 
+	public String getOpenModel() {
+		return this.openModel;
+	}
+	public void setOpenModel(String openModel) {
+		this.openModel = openModel;
+	}
+
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
@@ -186,6 +237,20 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	}
 	public void setProjiectId(String projiectId) {
 		this.projiectId = projiectId;
+	}
+
+	public String getStandardId() {
+		return this.standardId;
+	}
+	public void setStandardId(String standardId) {
+		this.standardId = standardId;
+	}
+
+	public String getTpSign() {
+		return this.tpSign;
+	}
+	public void setTpSign(String tpSign) {
+		this.tpSign = tpSign;
 	}
 
 	public String getVoucherId() {

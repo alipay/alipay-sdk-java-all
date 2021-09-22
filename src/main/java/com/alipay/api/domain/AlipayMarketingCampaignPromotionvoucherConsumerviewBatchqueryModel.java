@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询消费者领取的券列表
  *
  * @author auto create
- * @since 1.0, 2021-07-19 15:25:05
+ * @since 1.0, 2021-09-18 15:11:28
  */
 public class AlipayMarketingCampaignPromotionvoucherConsumerviewBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4535264137181288492L;
+	private static final long serialVersionUID = 3233899816784162588L;
 
 	/**
 	 * 单品id列表, 单品券场景返回货品信息. 最大支持5个条形码

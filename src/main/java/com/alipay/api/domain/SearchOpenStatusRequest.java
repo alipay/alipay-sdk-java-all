@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改运营服务的上下架请求入参
  *
  * @author auto create
- * @since 1.0, 2020-12-15 19:22:15
+ * @since 1.0, 2021-09-17 18:03:09
  */
 public class SearchOpenStatusRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1739368614823351481L;
+	private static final long serialVersionUID = 5374523795117654565L;
 
 	/**
 	 * 行为(关闭或开启) on off
