@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.isv.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-30 18:25:22
+ * @since 1.0, 2021-09-23 16:21:35
  */
 public class AlipayOpenMiniIsvQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5829328254187948473L;
+	private static final long serialVersionUID = 1124265893952237416L;
 
 	/** 
 	 * 小程序appId，商家确认后非空，若商家未确认或超时返回空
@@ -31,6 +31,12 @@ public class AlipayOpenMiniIsvQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/** 
+	 * 商户pid
+	 */
+	@ApiField("pid")
+	private String pid;
 
 	/** 
 	 * PROCESS处理中，TIMEOUT超时，AGREED同意， REJECTED拒绝
@@ -57,6 +63,13 @@ public class AlipayOpenMiniIsvQueryResponse extends AlipayResponse {
 	}
 	public String getOutOrderNo( ) {
 		return this.outOrderNo;
+	}
+
+	public void setPid(String pid) {
+		this.pid = pid;
+	}
+	public String getPid( ) {
+		return this.pid;
 	}
 
 	public void setStatus(String status) {

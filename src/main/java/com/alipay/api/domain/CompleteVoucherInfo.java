@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票详细信息
  *
  * @author auto create
- * @since 1.0, 2021-09-22 11:03:47
+ * @since 1.0, 2021-09-23 14:18:46
  */
 public class CompleteVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5786694128591138279L;
+	private static final long serialVersionUID = 7551223611293538189L;
 
 	/**
 	 * 防伪码

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingToolFengdieSitesQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2466529419488811223L;
+	private static final long serialVersionUID = 6723246853985817158L;
 
 	/** 
 	 * 站点查询返回值

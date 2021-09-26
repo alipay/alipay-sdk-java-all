@@ -1,0 +1,29 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 收款单查询
+ *
+ * @author auto create
+ * @since 1.0, 2021-09-24 13:53:33
+ */
+public class AlipayBossFncCollectreceiptReceiptQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 1478232894632258587L;
+
+	/**
+	 * 收款单openapi查询Order
+	 */
+	@ApiField("collect_receipt_query_open_api_order")
+	private CollectReceiptQueryOpenApiOrder collectReceiptQueryOpenApiOrder;
+
+	public CollectReceiptQueryOpenApiOrder getCollectReceiptQueryOpenApiOrder() {
+		return this.collectReceiptQueryOpenApiOrder;
+	}
+	public void setCollectReceiptQueryOpenApiOrder(CollectReceiptQueryOpenApiOrder collectReceiptQueryOpenApiOrder) {
+		this.collectReceiptQueryOpenApiOrder = collectReceiptQueryOpenApiOrder;
+	}
+
+}

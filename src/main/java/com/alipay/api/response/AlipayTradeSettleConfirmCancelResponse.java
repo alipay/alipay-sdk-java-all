@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeSettleConfirmCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1647538148778549794L;
+	private static final long serialVersionUID = 1724727981469928728L;
 
 	/** 
 	 * 原始确认结算时的请求号，对应于需要撤销的那笔请求

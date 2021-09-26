@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新版花呗分期商家贴息活动修改接口
  *
  * @author auto create
- * @since 1.0, 2021-07-05 17:22:21
+ * @since 1.0, 2021-09-23 13:41:27
  */
 public class AlipayPcreditHuabeiMerchantActivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8844825255737873374L;
+	private static final long serialVersionUID = 8537854979749198977L;
 
 	/**
 	 * 花呗分期商家贴息活动名称，长度不能超过30个汉字或字符
@@ -71,6 +71,12 @@ public class AlipayPcreditHuabeiMerchantActivityModifyModel extends AlipayObject
 	@ApiListField("install_num_list")
 	@ApiField("number")
 	private List<Long> installNumList;
+
+	/**
+	 * 代运营isv的商户pid
+	 */
+	@ApiField("isv_id")
+	private String isvId;
 
 	/**
 	 * 免息金额上限不能大于300000, 不能低于免息金额下限，交易额度若高于该上限值则不做花呗分期免息补贴，单位是元
@@ -170,6 +176,13 @@ public class AlipayPcreditHuabeiMerchantActivityModifyModel extends AlipayObject
 	}
 	public void setInstallNumList(List<Long> installNumList) {
 		this.installNumList = installNumList;
+	}
+
+	public String getIsvId() {
+		return this.isvId;
+	}
+	public void setIsvId(String isvId) {
+		this.isvId = isvId;
 	}
 
 	public String getMaxMoneyLimit() {

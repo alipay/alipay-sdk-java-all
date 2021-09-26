@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保电子凭证或电子社保卡列表
  *
  * @author auto create
- * @since 1.0, 2021-06-21 16:25:00
+ * @since 1.0, 2021-09-24 00:27:38
  */
 public class MedicalCardInfoList extends AlipayObject {
 
-	private static final long serialVersionUID = 5116227658311441316L;
+	private static final long serialVersionUID = 8469389737654496421L;
 
 	/**
 	 * 参保地列表
@@ -24,12 +24,6 @@ public class MedicalCardInfoList extends AlipayObject {
 	 */
 	@ApiField("insured_status")
 	private String insuredStatus;
-
-	/**
-	 * 持卡人与当前UID账户关系
-	 */
-	@ApiField("relation_type")
-	private String relationType;
 
 	/**
 	 * 绑卡激活状态
@@ -49,13 +43,6 @@ public class MedicalCardInfoList extends AlipayObject {
 	}
 	public void setInsuredStatus(String insuredStatus) {
 		this.insuredStatus = insuredStatus;
-	}
-
-	public String getRelationType() {
-		return this.relationType;
-	}
-	public void setRelationType(String relationType) {
-		this.relationType = relationType;
 	}
 
 	public String getStatus() {

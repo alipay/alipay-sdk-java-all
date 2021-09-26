@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDtbankcustActivityorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2431413561191623579L;
+	private static final long serialVersionUID = 5542657612785347364L;
 
 	/**
 	 * 活动流水唯一id，由系统自动生成的，在调用活动触发接口会返回该id。

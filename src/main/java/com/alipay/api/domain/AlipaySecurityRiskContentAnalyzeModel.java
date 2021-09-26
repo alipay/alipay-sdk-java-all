@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容风险识别接口服务
  *
  * @author auto create
- * @since 1.0, 2021-06-23 16:17:40
+ * @since 1.0, 2021-09-23 11:16:55
  */
 public class AlipaySecurityRiskContentAnalyzeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1324655254258652799L;
+	private static final long serialVersionUID = 4156897876458239949L;
 
 	/**
 	 * 内容的发表账户号，用于将需要检测的内容（文本、链接、图片、音视频）等和账户进行关联

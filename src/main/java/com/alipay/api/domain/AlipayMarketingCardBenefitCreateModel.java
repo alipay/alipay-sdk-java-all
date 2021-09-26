@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardBenefitCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4828819415128356273L;
+	private static final long serialVersionUID = 5255336772413457722L;
 
 	/**
 	 * 会员卡模板外部权益

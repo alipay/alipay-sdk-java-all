@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NotifyParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1348855233622459689L;
+	private static final long serialVersionUID = 2123589625939914738L;
 
 	/**
 	 * 消息push的内容，根据serviceCode对应的模版中的key进行值替换模版中的具体文案，格式为Map<String, String>转json

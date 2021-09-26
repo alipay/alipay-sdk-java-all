@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossCsChannelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5154258491979139831L;
+	private static final long serialVersionUID = 5831835566281358773L;
 
 	/** 
 	 * 平均通话时长

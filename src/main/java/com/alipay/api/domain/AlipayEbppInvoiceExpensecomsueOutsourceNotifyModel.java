@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部员工消费通知
  *
  * @author auto create
- * @since 1.0, 2021-07-09 19:25:36
+ * @since 1.0, 2021-09-24 21:20:54
  */
 public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8869312561744215255L;
+	private static final long serialVersionUID = 5329949921381293446L;
 
 	/**
 	 * 企业码账号
@@ -28,7 +28,7 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	private String agreementNo;
 
 	/**
-	 * 消费金额（单位：分）
+	 * 消费金额（单位：分）正整数，金额必须大于0， 200 表示金额为2元
 	 */
 	@ApiField("amount")
 	private Long amount;
@@ -52,7 +52,7 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	private Long employeeIdType;
 
 	/**
-	 * 扩展参数
+	 * 定制化字段传入,当前无约定规则（例如：部分调用方传入餐补餐期-中餐（L），晚餐(D)）
 	 */
 	@ApiField("extend")
 	private String extend;
@@ -70,10 +70,16 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	private String outSourceId;
 
 	/**
-	 * 调用者身份（道安- DAO_AN）
+	 * 调用者身份（道安- DAO_AN，企业福利平台WELFARE_PLATFORM），接入接口分配的身份标记
 	 */
 	@ApiField("platform")
 	private String platform;
+
+	/**
+	 * 制度id
+	 */
+	@ApiField("standard_id")
+	private String standardId;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -143,6 +149,13 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	}
 	public void setPlatform(String platform) {
 		this.platform = platform;
+	}
+
+	public String getStandardId() {
+		return this.standardId;
+	}
+	public void setStandardId(String standardId) {
+		this.standardId = standardId;
 	}
 
 }
