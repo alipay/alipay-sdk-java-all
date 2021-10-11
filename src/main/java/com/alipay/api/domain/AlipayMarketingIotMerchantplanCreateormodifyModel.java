@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IoT展位投放计划商家报名接口
  *
  * @author auto create
- * @since 1.0, 2021-09-13 10:35:11
+ * @since 1.0, 2021-09-29 15:02:59
  */
 public class AlipayMarketingIotMerchantplanCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4212896351991783841L;
+	private static final long serialVersionUID = 5322939955772218353L;
 
 	/**
 	 * 操作类型：CREATE（新增） / MODIFY（修改）

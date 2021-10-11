@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易驱动还款
  *
  * @author auto create
- * @since 1.0, 2019-06-17 20:44:24
+ * @since 1.0, 2021-09-26 17:31:22
  */
 public class MybankCreditGuaranteeTradedrivePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5571658598573846678L;
+	private static final long serialVersionUID = 2382831569361675441L;
 
 	/**
 	 * 业务日期

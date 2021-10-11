@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁财务统一结算应付付款条款修改
  *
  * @author auto create
- * @since 1.0, 2021-01-29 15:40:28
+ * @since 1.0, 2021-09-28 14:28:00
  */
 public class AlipayBossProdGfsettlePaycontractModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7897257764624232663L;
+	private static final long serialVersionUID = 5787329818965258962L;
 
 	/**
 	 * 修改的付款条款信息

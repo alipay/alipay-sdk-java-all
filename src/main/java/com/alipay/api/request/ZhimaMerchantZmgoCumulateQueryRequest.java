@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.zmgo.cumulate.query request
  * 
  * @author auto create
- * @since 1.0, 2021-03-30 17:05:18
+ * @since 1.0, 2021-09-29 17:22:38
  */
 public class ZhimaMerchantZmgoCumulateQueryRequest implements AlipayRequest<ZhimaMerchantZmgoCumulateQueryResponse> {
 

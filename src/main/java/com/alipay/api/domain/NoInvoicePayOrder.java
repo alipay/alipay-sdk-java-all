@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无票付款
  *
  * @author auto create
- * @since 1.0, 2021-08-02 16:34:12
+ * @since 1.0, 2021-09-28 14:28:55
  */
 public class NoInvoicePayOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 4346961764469649232L;
+	private static final long serialVersionUID = 4681189624939911239L;
 
 	/**
 	 * 账单单据号

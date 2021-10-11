@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查询用户付款码皮肤信息
  *
  * @author auto create
- * @since 1.0, 2021-09-23 18:00:56
+ * @since 1.0, 2021-09-28 14:56:55
  */
 public class AlipayCommerceSportsFacepayskinBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8635324153142854274L;
+	private static final long serialVersionUID = 1486369185819571154L;
 
 	/**
 	 * 支付宝客户端版本号

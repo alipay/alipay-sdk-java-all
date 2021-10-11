@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收付款中心结算单模型
  *
  * @author auto create
- * @since 1.0, 2021-08-02 16:25:47
+ * @since 1.0, 2021-09-28 14:29:15
  */
 public class PayRcvSettleOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7358634872892286253L;
+	private static final long serialVersionUID = 2255983597531722317L;
 
 	/**
 	 * 需结算金额

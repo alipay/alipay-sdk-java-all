@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险投保
  *
  * @author auto create
- * @since 1.0, 2021-08-05 17:16:01
+ * @since 1.0, 2021-09-26 16:40:30
  */
 public class AnttechBlockchainDefinInsuranceApplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5457396397381136766L;
+	private static final long serialVersionUID = 5891761116271284795L;
 
 	/**
 	 * 投保基本信息
@@ -30,6 +30,12 @@ public class AnttechBlockchainDefinInsuranceApplyCreateModel extends AlipayObjec
 	 */
 	@ApiField("parm")
 	private String parm;
+
+	/**
+	 * 产品市场编码，一般指保司端险种编码
+	 */
+	@ApiField("pdt_mkt_code")
+	private String pdtMktCode;
 
 	/**
 	 * 统一客户平台的会员类型
@@ -80,6 +86,13 @@ public class AnttechBlockchainDefinInsuranceApplyCreateModel extends AlipayObjec
 	}
 	public void setParm(String parm) {
 		this.parm = parm;
+	}
+
+	public String getPdtMktCode() {
+		return this.pdtMktCode;
+	}
+	public void setPdtMktCode(String pdtMktCode) {
+		this.pdtMktCode = pdtMktCode;
 	}
 
 	public String getPlatformAccessType() {

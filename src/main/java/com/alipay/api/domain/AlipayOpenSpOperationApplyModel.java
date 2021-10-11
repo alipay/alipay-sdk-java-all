@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 向商户发起代运营操作
  *
  * @author auto create
- * @since 1.0, 2021-09-13 21:05:41
+ * @since 1.0, 2021-09-26 21:03:49
  */
 public class AlipayOpenSpOperationApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7898814737552732184L;
+	private static final long serialVersionUID = 7713186357351433214L;
 
 	/**
 	 * 接入的产品编号。 枚举如下：

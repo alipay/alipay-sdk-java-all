@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量请求结算
  *
  * @author auto create
- * @since 1.0, 2021-08-19 19:07:22
+ * @since 1.0, 2021-09-26 16:37:12
  */
 public class AlipayTradeBatchSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7382379394161377255L;
+	private static final long serialVersionUID = 2784464526592874185L;
 
 	/**
 	 * 收单产品码，商家和支付宝签约的产品码

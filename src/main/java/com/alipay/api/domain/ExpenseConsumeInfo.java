@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2021-09-22 15:59:06
+ * @since 1.0, 2021-09-28 16:54:56
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5583315693973623495L;
+	private static final long serialVersionUID = 2388252767357281949L;
 
 	/**
 	 * 公司账号ID
@@ -78,6 +78,12 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("open_model")
 	private String openModel;
+
+	/**
+	 * 退款交易关联正交易单号
+	 */
+	@ApiField("original_voucher_id")
+	private String originalVoucherId;
 
 	/**
 	 * 外部流水号
@@ -202,6 +208,13 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	}
 	public void setOpenModel(String openModel) {
 		this.openModel = openModel;
+	}
+
+	public String getOriginalVoucherId() {
+		return this.originalVoucherId;
+	}
+	public void setOriginalVoucherId(String originalVoucherId) {
+		this.originalVoucherId = originalVoucherId;
 	}
 
 	public String getOutBizNo() {

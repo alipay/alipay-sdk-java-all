@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayEcoEduJzPostPublishModel;
+import com.alipay.api.domain.AlipayCommerceOperationPromoterExchangeConfirmModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayEcoEduJzPostPublishResponse;
+import com.alipay.api.response.AlipayCommerceOperationPromoterExchangeConfirmResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.eco.edu.jz.post.publish request
+ * ALIPAY API: alipay.commerce.operation.promoter.exchange.confirm request
  * 
  * @author auto create
- * @since 1.0, 2021-09-18 14:52:31
+ * @since 1.0, 2021-10-09 11:20:33
  */
-public class AlipayEcoEduJzPostPublishRequest implements AlipayRequest<AlipayEcoEduJzPostPublishResponse> {
+public class AlipayCommerceOperationPromoterExchangeConfirmRequest implements AlipayRequest<AlipayCommerceOperationPromoterExchangeConfirmResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 兼职平台贴子发布接口
+	* 积分兑换奖品确认视图
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayEcoEduJzPostPublishRequest implements AlipayRequest<AlipayEco
 	}
 
 	public String getApiMethodName() {
-		return "alipay.eco.edu.jz.post.publish";
+		return "alipay.commerce.operation.promoter.exchange.confirm";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayEcoEduJzPostPublishRequest implements AlipayRequest<AlipayEco
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayEcoEduJzPostPublishResponse> getResponseClass() {
-		return AlipayEcoEduJzPostPublishResponse.class;
+	public Class<AlipayCommerceOperationPromoterExchangeConfirmResponse> getResponseClass() {
+		return AlipayCommerceOperationPromoterExchangeConfirmResponse.class;
 	}
 	
 

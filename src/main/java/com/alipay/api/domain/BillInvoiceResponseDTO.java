@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单关联的发票
  *
  * @author auto create
- * @since 1.0, 2021-08-02 17:39:21
+ * @since 1.0, 2021-09-28 14:28:42
  */
 public class BillInvoiceResponseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3272425517655635688L;
+	private static final long serialVersionUID = 1744525331129827144L;
 
 	/**
 	 * 关联的金额1

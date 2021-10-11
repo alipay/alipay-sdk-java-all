@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.invoice.delete request
  * 
  * @author auto create
- * @since 1.0, 2021-01-29 15:42:32
+ * @since 1.0, 2021-09-28 14:27:44
  */
 public class AlipayBossFncGfsettleprodInvoiceDeleteRequest implements AlipayRequest<AlipayBossFncGfsettleprodInvoiceDeleteResponse> {
 

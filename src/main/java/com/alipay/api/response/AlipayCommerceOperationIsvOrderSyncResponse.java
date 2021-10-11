@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.isv.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-18 16:47:42
+ * @since 1.0, 2021-09-27 10:16:36
  */
 public class AlipayCommerceOperationIsvOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7532132398656573823L;
+	private static final long serialVersionUID = 1544531375125143331L;
 
 	/** 
 	 * 同步订单记录id

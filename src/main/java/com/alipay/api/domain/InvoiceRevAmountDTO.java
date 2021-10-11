@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普票、无票、专票可收票单据金额
  *
  * @author auto create
- * @since 1.0, 2021-08-02 16:26:01
+ * @since 1.0, 2021-09-28 14:29:10
  */
 public class InvoiceRevAmountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5857275236193227217L;
+	private static final long serialVersionUID = 7639575518863938789L;
 
 	/**
 	 * 账单号

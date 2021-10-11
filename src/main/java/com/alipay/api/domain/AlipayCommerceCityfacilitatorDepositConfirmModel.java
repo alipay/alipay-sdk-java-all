@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorDepositConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5819189983639471296L;
+	private static final long serialVersionUID = 5841275961164978594L;
 
 	/**
 	 * 传递确认的终端信息，终端编号等

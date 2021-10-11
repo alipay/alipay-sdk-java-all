@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * AP融合账单查询请求
  *
  * @author auto create
- * @since 1.0, 2021-08-02 16:32:37
+ * @since 1.0, 2021-09-28 14:29:01
  */
 public class ApSummaryBillViewQueryOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1373954481451855939L;
+	private static final long serialVersionUID = 6427871259737926166L;
 
 	/**
 	 * 合约号

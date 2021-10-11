@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayEcoEduJzApplyresultSyncModel;
+import com.alipay.api.domain.AlipayOpenMiniAmpeRecommendDetectModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayEcoEduJzApplyresultSyncResponse;
+import com.alipay.api.response.AlipayOpenMiniAmpeRecommendDetectResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.eco.edu.jz.applyresult.sync request
+ * ALIPAY API: alipay.open.mini.ampe.recommend.detect request
  * 
  * @author auto create
- * @since 1.0, 2021-09-18 14:50:37
+ * @since 1.0, 2021-10-08 10:35:33
  */
-public class AlipayEcoEduJzApplyresultSyncRequest implements AlipayRequest<AlipayEcoEduJzApplyresultSyncResponse> {
+public class AlipayOpenMiniAmpeRecommendDetectRequest implements AlipayRequest<AlipayOpenMiniAmpeRecommendDetectResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 兼职平台报名同步接口
+	* AMPE情景推荐信息校验
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayEcoEduJzApplyresultSyncRequest implements AlipayRequest<Alipa
 	}
 
 	public String getApiMethodName() {
-		return "alipay.eco.edu.jz.applyresult.sync";
+		return "alipay.open.mini.ampe.recommend.detect";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayEcoEduJzApplyresultSyncRequest implements AlipayRequest<Alipa
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayEcoEduJzApplyresultSyncResponse> getResponseClass() {
-		return AlipayEcoEduJzApplyresultSyncResponse.class;
+	public Class<AlipayOpenMiniAmpeRecommendDetectResponse> getResponseClass() {
+		return AlipayOpenMiniAmpeRecommendDetectResponse.class;
 	}
 	
 

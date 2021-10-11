@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值跳端
  *
  * @author auto create
- * @since 1.0, 2021-09-07 21:05:00
+ * @since 1.0, 2021-09-29 17:19:44
  */
 public class AlipayFundJointaccountFundDepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6526568436742967985L;
+	private static final long serialVersionUID = 1498926553427216889L;
 
 	/**
 	 * 合花群ID<br>

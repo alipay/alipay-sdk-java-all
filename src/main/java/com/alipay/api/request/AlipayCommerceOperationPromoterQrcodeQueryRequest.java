@@ -1,69 +1,34 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayCommerceOperationPromoterQrcodeQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayPassSyncAddResponse;
+import com.alipay.api.response.AlipayCommerceOperationPromoterQrcodeQueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.pass.sync.add request
+ * ALIPAY API: alipay.commerce.operation.promoter.qrcode.query request
  * 
  * @author auto create
- * @since 1.0, 2021-09-24 10:52:24
+ * @since 1.0, 2021-10-08 15:10:32
  */
-public class AlipayPassSyncAddRequest implements AlipayRequest<AlipayPassSyncAddResponse> {
+public class AlipayCommerceOperationPromoterQrcodeQueryRequest implements AlipayRequest<AlipayCommerceOperationPromoterQrcodeQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* alipass文件Base64编码后的内容。
+	* 查看推广码
 	 */
-	private String fileContent;
+	private String bizContent;
 
-	/** 
-	* 商户外部交易号，由商户生成并确保其唯一性
-	 */
-	private String outTradeNo;
-
-	/** 
-	* 商户与支付宝签约时，分配的唯一ID。
-	 */
-	private String partnerId;
-
-	/** 
-	* 支付宝用户ID，即买家用户ID
-	 */
-	private String userId;
-
-	public void setFileContent(String fileContent) {
-		this.fileContent = fileContent;
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
 	}
-	public String getFileContent() {
-		return this.fileContent;
-	}
-
-	public void setOutTradeNo(String outTradeNo) {
-		this.outTradeNo = outTradeNo;
-	}
-	public String getOutTradeNo() {
-		return this.outTradeNo;
-	}
-
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
-	}
-	public String getPartnerId() {
-		return this.partnerId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	public String getUserId() {
-		return this.userId;
+	public String getBizContent() {
+		return this.bizContent;
 	}
 	private String terminalType;
 	private String terminalInfo;	
@@ -122,15 +87,12 @@ public class AlipayPassSyncAddRequest implements AlipayRequest<AlipayPassSyncAdd
 	}
 
 	public String getApiMethodName() {
-		return "alipay.pass.sync.add";
+		return "alipay.commerce.operation.promoter.qrcode.query";
 	}
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
-		txtParams.put("file_content", this.fileContent);
-		txtParams.put("out_trade_no", this.outTradeNo);
-		txtParams.put("partner_id", this.partnerId);
-		txtParams.put("user_id", this.userId);
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
@@ -144,8 +106,8 @@ public class AlipayPassSyncAddRequest implements AlipayRequest<AlipayPassSyncAdd
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayPassSyncAddResponse> getResponseClass() {
-		return AlipayPassSyncAddResponse.class;
+	public Class<AlipayCommerceOperationPromoterQrcodeQueryResponse> getResponseClass() {
+		return AlipayCommerceOperationPromoterQrcodeQueryResponse.class;
 	}
 	
 

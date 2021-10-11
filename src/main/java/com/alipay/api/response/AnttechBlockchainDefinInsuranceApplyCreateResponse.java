@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.insurance.apply.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-05 17:16:01
+ * @since 1.0, 2021-09-26 16:40:56
  */
 public class AnttechBlockchainDefinInsuranceApplyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3679592645636542679L;
+	private static final long serialVersionUID = 8523128292766186944L;
 
 	/** 
 	 * 保额
@@ -49,6 +49,12 @@ public class AnttechBlockchainDefinInsuranceApplyCreateResponse extends AlipayRe
 	 */
 	@ApiField("policy_no")
 	private String policyNo;
+
+	/** 
+	 * 电子保单链接
+	 */
+	@ApiField("policy_url")
+	private String policyUrl;
 
 	/** 
 	 * 保费
@@ -102,6 +108,13 @@ public class AnttechBlockchainDefinInsuranceApplyCreateResponse extends AlipayRe
 	}
 	public String getPolicyNo( ) {
 		return this.policyNo;
+	}
+
+	public void setPolicyUrl(String policyUrl) {
+		this.policyUrl = policyUrl;
+	}
+	public String getPolicyUrl( ) {
+		return this.policyUrl;
 	}
 
 	public void setPremium(String premium) {

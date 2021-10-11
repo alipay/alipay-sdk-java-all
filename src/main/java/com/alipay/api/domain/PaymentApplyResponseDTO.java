@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询付款申请
  *
  * @author auto create
- * @since 1.0, 2021-01-29 14:47:35
+ * @since 1.0, 2021-09-28 14:29:35
  */
 public class PaymentApplyResponseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7816764611375814611L;
+	private static final long serialVersionUID = 5681762525627518166L;
 
 	/**
 	 * 申请单号

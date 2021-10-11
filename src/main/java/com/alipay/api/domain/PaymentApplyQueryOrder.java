@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 付款申请单查询模型
  *
  * @author auto create
- * @since 1.0, 2021-08-05 15:11:37
+ * @since 1.0, 2021-09-28 14:28:22
  */
 public class PaymentApplyQueryOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 3317298245436283848L;
+	private static final long serialVersionUID = 5472644582264167872L;
 
 	/**
 	 * 发票受理单的外部单号out_bill_no

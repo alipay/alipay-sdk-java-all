@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二维码创建
  *
  * @author auto create
- * @since 1.0, 2021-08-19 15:46:09
+ * @since 1.0, 2021-09-27 10:07:44
  */
 public class MybankPaymentTradeQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4382367478455813739L;
+	private static final long serialVersionUID = 8591335621992289266L;
 
 	/**
 	 * 账户分类

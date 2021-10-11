@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户结算卡开户
  *
  * @author auto create
- * @since 1.0, 2021-09-17 21:06:30
+ * @since 1.0, 2021-09-29 15:49:15
  */
 public class AlipayFundInstcardOpenSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6234193415219199951L;
+	private static final long serialVersionUID = 4698443277379428787L;
 
 	/**
 	 * 场景码

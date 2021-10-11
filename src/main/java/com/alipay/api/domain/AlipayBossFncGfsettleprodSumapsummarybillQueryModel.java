@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统计AP应付账单金额
  *
  * @author auto create
- * @since 1.0, 2021-08-05 15:25:03
+ * @since 1.0, 2021-09-28 14:26:06
  */
 public class AlipayBossFncGfsettleprodSumapsummarybillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3292138181542215216L;
+	private static final long serialVersionUID = 2653282219518317141L;
 
 	/**
 	 * AP融合账单查询请求

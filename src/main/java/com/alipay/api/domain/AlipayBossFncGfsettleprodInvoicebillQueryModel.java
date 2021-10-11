@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票关联的账单查询
  *
  * @author auto create
- * @since 1.0, 2021-08-05 15:24:47
+ * @since 1.0, 2021-09-28 14:25:47
  */
 public class AlipayBossFncGfsettleprodInvoicebillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1682528369377534385L;
+	private static final long serialVersionUID = 3848315423316192749L;
 
 	/**
 	 * 结算单查询

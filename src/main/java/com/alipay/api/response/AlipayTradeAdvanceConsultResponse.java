@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.advance.consult response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-10 11:57:38
+ * @since 1.0, 2021-10-09 17:02:46
  */
 public class AlipayTradeAdvanceConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2114312881146241578L;
+	private static final long serialVersionUID = 3199787563331183146L;
 
 	/** 
 	 * true 代表当前时间点，用户允许垫资
@@ -50,7 +50,7 @@ false 代表当前时间，用户不允许垫资
 	private UserRiskPrediction userRiskPrediction;
 
 	/** 
-	 * 用户剩余的总待还金额，无论当前用户是否允许垫资，都会返回改属性
+	 * 用户剩余的总待还金额，无论当前用户是否允许垫资，都会返回该属性。
 	 */
 	@ApiField("wait_repayment_amount")
 	private String waitRepaymentAmount;

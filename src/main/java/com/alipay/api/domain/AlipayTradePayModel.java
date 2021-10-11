@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2021-09-17 14:06:23
+ * @since 1.0, 2021-10-09 14:57:15
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4411561388871992188L;
+	private static final long serialVersionUID = 3494493349361618519L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -272,9 +272,12 @@ json格式，详见结算参数说明。
 	private String terminalParams;
 
 	/**
-	 * 订单相对超时时间。
-该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。 
+	 * 订单相对超时时间。从交易创建时间开始计算。
+
+该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
+
 当面付场景默认值为3h；
+
 其它场景默认值为15d;
 	 */
 	@ApiField("timeout_express")

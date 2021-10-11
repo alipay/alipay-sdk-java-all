@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一结算发票查询
  *
  * @author auto create
- * @since 1.0, 2021-01-29 15:43:05
+ * @since 1.0, 2021-09-28 14:26:34
  */
 public class AlipayBossFncGfsettleprodInvoiceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7733715596797255929L;
+	private static final long serialVersionUID = 8617646719557767893L;
 
 	/**
 	 * 开票号

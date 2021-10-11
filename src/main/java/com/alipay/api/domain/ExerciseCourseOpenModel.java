@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExerciseCourseOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3886379598526567942L;
+	private static final long serialVersionUID = 8695261479489951937L;
 
 	/**
 	 * 课程类型：团课(CLASS),私教(PRIVATE_LESSON)

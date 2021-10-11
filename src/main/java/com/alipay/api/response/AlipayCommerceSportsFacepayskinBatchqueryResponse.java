@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.facepayskin.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-23 18:01:36
+ * @since 1.0, 2021-09-28 14:57:46
  */
 public class AlipayCommerceSportsFacepayskinBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8432813953562779586L;
+	private static final long serialVersionUID = 7256183775914496166L;
 
 	/** 
 	 * 用户付款码皮肤信息列表

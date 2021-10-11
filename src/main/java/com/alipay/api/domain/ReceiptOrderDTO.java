@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2021-09-15 16:31:52
+ * @since 1.0, 2021-10-09 14:58:28
  */
 public class ReceiptOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2489625793865145611L;
+	private static final long serialVersionUID = 1162185959375314743L;
 
 	/**
 	 * 支付宝用户uid; 是支付宝支付时，必填
@@ -174,13 +174,13 @@ public class ReceiptOrderDTO extends AlipayObject {
 	private String terminalId;
 
 	/**
-	 * 订单所对应的支付宝交易号; 支付宝支付时，必填
+	 * 订单所对应的支付宝交易号，酒店6小件场景时,传入履约号; 支付宝支付时，必填; 特殊情况: 0元订单, 可不填; 无支付场景时，可不填;
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
 
 	/**
-	 * 交易号类型:1. TRADE-交易，为空默认为TRADE;2. TRANSFER-转账;3. ENTRUST-受托
+	 * 交易号类型:1. TRADE-交易，为空默认为TRADE;2. TRANSFER-转账;3. ENTRUST-受托;4.(酒店)履约-CONTRACT
 	 */
 	@ApiField("trade_type")
 	private String tradeType;

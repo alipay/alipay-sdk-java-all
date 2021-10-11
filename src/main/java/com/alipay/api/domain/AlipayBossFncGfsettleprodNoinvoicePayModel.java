@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无票付款
  *
  * @author auto create
- * @since 1.0, 2021-08-05 19:43:24
+ * @since 1.0, 2021-09-28 14:24:47
  */
 public class AlipayBossFncGfsettleprodNoinvoicePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4187274524118815384L;
+	private static final long serialVersionUID = 6773526353791524859L;
 
 	/**
 	 * 无票付款

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7694889474451279752L;
+	private static final long serialVersionUID = 5223161274992429936L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下：
@@ -87,7 +87,8 @@ STD_RED_PACKET；
 	private String remark;
 
 	/**
-	 * 签名信息
+	 * 签名信息。
+说明：仅特殊场景使用，现金红包场景无需关注。
 	 */
 	@ApiField("sign_data")
 	private SignData signData;

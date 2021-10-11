@@ -248,11 +248,24 @@ public class AlipayMsgClient {
         return produceMsgAck;
     }
 
+    @Deprecated
     public void close() throws InterruptedException {
         bizThreadPoolExecutor.shutdown();
         heartBeatExecutor.shutdown();
         Thread.sleep(1000);
         webSocketConnector.closeBlocking();
+    }
+
+    /**
+     * 推荐使用destroy()代替close()
+     * @throws InterruptedException
+     */
+    public void destroy() throws InterruptedException{
+        close();
+        bizThreadPoolExecutor = null;
+        heartBeatExecutor = null;
+        reConnectTimes = 0;
+        waitTime = 0L;
     }
 
     void onMessage(final String str) {

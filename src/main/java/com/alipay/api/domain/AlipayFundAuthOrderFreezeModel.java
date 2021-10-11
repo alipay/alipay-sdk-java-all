@@ -11,53 +11,53 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5185548518557915736L;
+	private static final long serialVersionUID = 2265449135499118651L;
 
 	/**
-	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位
+	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位。
 取值范围：[0.01,100000000.00]
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/**
-	 * 支付授权码
-付款码场景下：
-      25~30开头的长度为16~24位的数字，实际字符串长度以开发者获取的付款码长度为准；
-刷脸场景下存在两种可能：
-      1）fp开头的35位字符串；
-      2）300-700字符的随机字符串；
-考虑到未来可能拓展更多格式，建议外围不必做规则拦截，由支付宝统一做有效性校验
+	 * 用户付款码。
+1.条码场景：25~30开头的长度为16~24位的数字，实际字符串长度以开发者获取的付款码长度为准；
+2.刷脸场景：
+1）fp开头的35位字符串；
+2）300-700字符的随机字符串；
+注：刷脸场景考虑到未来可能拓展更多格式，建议外围不必做规则拦截，由支付宝统一做有效性校验
 	 */
 	@ApiField("auth_code")
 	private String authCode;
 
 	/**
-	 * 授权码类型
-目前支持"bar_code"和"security_code"，分别对应付款码和刷脸场景
+	 * 付款码类型。
+1.条码场景：bar_code
+2.刷脸场景：security_code
 	 */
 	@ApiField("auth_code_type")
 	private String authCodeType;
 
 	/**
-	 * 商户可用该参数指定禁止使用的支付渠道，本期支持两种禁用渠道：信用卡快捷（OPTIMIZED_MOTO）、信用卡卡通（BIGAMOUNT_CREDIT_CARTOON）。商户可设置一种支付渠道，也可设置多种支付渠道。与可用支付渠道不能同时传入
+	 * 无特殊需要请勿传入；商户可用该参数禁用支付渠道。
+传入后用户不可使用列表中的渠道进行支付，目前支持两种禁用渠道：信用卡快捷（OPTIMIZED_MOTO）、信用卡卡通（BIGAMOUNT_CREDIT_CARTOON）。与可用支付渠道不能同时传入
 	 */
 	@ApiField("disable_pay_channels")
 	private String disablePayChannels;
 
 	/**
-	 * 商户可用该参数指定用户可使用的支付渠道，本期支持商户可支持三种支付渠道，余额宝（MONEY_FUND）、花呗（PCREDIT_PAY）以及芝麻信用（CREDITZHIMA）。商户可设置一种支付渠道，也可设置多种支付渠道。与禁用支付渠道不可同时传入
+	 * 无特殊需要请勿传入；商户可用该参数指定支付渠道。
+传入后用户仅能使用列表中的渠道进行支付，目前支持三种渠道，余额宝（MONEY_FUND）、花呗（PCREDIT_PAY）以及芝麻信用（CREDITZHIMA）。与禁用支付渠道不可同时传入
 	 */
 	@ApiField("enable_pay_channels")
 	private String enablePayChannels;
 
 	/**
-	 * 业务扩展参数，用于商户的特定业务信息的传递，json格式。 
-1.间联模式必须传入二级商户ID，key为secondaryMerchantId;
-2. 当面资金授权业务对应的类目，key为category，value由支付宝分配，酒店业务传 "HOTEL",若使用信用预授权，则该值必传；
-3. 外部商户的门店编号，key为outStoreCode，间联场景下建议传；
-4. 外部商户的门店简称，key为outStoreAlias，可选;
-5.间联模式必须传入二级商户所属机构id，key为requestOrgId; 6.信用服务Id，key为serviceId，信用场景下必传，具体值需要联系芝麻客服。
+	 * 业务扩展参数，用于特定业务信息的传递，json格式，key值如下：
+1、category，信用类目，信用预授权场景必传，具体类目信息见https://opendocs.alipay.com/open/10719
+2、serviceId，信用服务id，信用预授权场景必传，需要联系芝麻客服获取，https://cshall.alipay.com/enterprise/index.htm?sourceId=pc_zhima（右上角“有问题点我”进入咨询）
+3、creditExtInfo，信用参数，如有需要请与芝麻约定后传入，信用服务说明见https://opendocs.alipay.com/open/11157/qlsxya
 	 */
 	@ApiField("extra_param")
 	private String extraParam;
@@ -71,51 +71,58 @@ identity_hash和alipay_user_id都是可选的，如果两个都传，则会先�
 	private String identityParams;
 
 	/**
-	 * 业务订单的简单描述，如商品名称等
+	 * 订单标题。
+业务订单的简单描述，如商品名称等
 	 */
 	@ApiField("order_title")
 	private String orderTitle;
 
 	/**
-	 * 商户授权资金订单号 ,不能包含除中文、英文、数字以外的字符，创建后不能修改，需要保证在商户端不重复。
+	 * 商户授权资金订单号。
+商家自定义需保证在商户端不重复。仅支持字母、数字、下划线。
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
 
 	/**
-	 * 商户本次资金操作的请求流水号，用于标示请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。
+	 * 商户本次资金操作的请求流水号，用于标示请求流水的唯一性。
+可与out_order_no相同，仅支持字母、数字、下划线。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
 	/**
-	 * 该笔订单允许的最晚付款时间，逾期将关闭该笔订单
-取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为90m
-如果为空，默认15m
+	 * 预授权订单相对超时时间，从商户请求时间开始计算。
+预授权订单允许的最晚授权时间，逾期将关闭该笔订单。取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为90m。
+默认为15m。
 	 */
 	@ApiField("pay_timeout")
 	private String payTimeout;
 
 	/**
-	 * 收款方支付宝账号（Email或手机号），如果收款方支付宝登录号(payee_logon_id)和用户号(payee_user_id)同时传递，则以用户号(payee_user_id)为准，如果商户有勾选花呗渠道，收款方支付宝登录号(payee_logon_id)和用户号(payee_user_id)不能同时为空。
+	 * 收款账户的支付宝登录号（email或手机号）。
+如果传入则会校验该登录号对应的账号是否具备当前商户收款权限，如果商户希望用户能够使用花呗，则用户号(payee_user_id)和登录号(payee_logon_id)两者必须传入其一
 	 */
 	@ApiField("payee_logon_id")
 	private String payeeLogonId;
 
 	/**
-	 * 收款方的支付宝唯一用户号,以2088开头的16位纯数字组成，如果非空则会在支付时校验交易的的收款方与此是否一致，如果商户有勾选花呗渠道，收款方支付宝登录号(payee_logon_id)和用户号(payee_user_id)不能同时为空。
+	 * 收款账户的支付宝用户号。
+以2088开头的16位纯数字，如果传入则会校验该账号是否具备当前商户收款权限，如果商户希望用户能够使用花呗，则用户号(payee_user_id)和登录号(payee_logon_id)两者必须传入其一
 	 */
 	@ApiField("payee_user_id")
 	private String payeeUserId;
 
 	/**
-	 * 销售产品码，用于接入预授权当面付的业务，本字段取值固定为PRE_AUTH。
+	 * 销售产品码。
+当面资金预授权固定为 PRE_AUTH
 	 */
 	@ApiField("product_code")
 	private String productCode;
 
 	/**
-	 * 场景码，预授权刷脸场景取值为HOTEL，其他不需填写
+	 * 场景码。
+刷脸场景下传入HOTEL，其他情况下无需传入
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易退款接口
  *
  * @author auto create
- * @since 1.0, 2021-09-17 22:13:42
+ * @since 1.0, 2021-09-27 20:01:42
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6593458251278618971L;
+	private static final long serialVersionUID = 4588376858324681589L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -72,6 +72,13 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	 */
 	@ApiField("refund_currency")
 	private String refundCurrency;
+
+	/**
+	 * 退款包含的商品列表信息
+	 */
+	@ApiListField("refund_goods_detail")
+	@ApiField("refund_goods_detail")
+	private List<RefundGoodsDetail> refundGoodsDetail;
 
 	/**
 	 * 退款原因说明。
@@ -162,6 +169,13 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	}
 	public void setRefundCurrency(String refundCurrency) {
 		this.refundCurrency = refundCurrency;
+	}
+
+	public List<RefundGoodsDetail> getRefundGoodsDetail() {
+		return this.refundGoodsDetail;
+	}
+	public void setRefundGoodsDetail(List<RefundGoodsDetail> refundGoodsDetail) {
+		this.refundGoodsDetail = refundGoodsDetail;
 	}
 
 	public String getRefundReason() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.sign.token.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-22 19:00:22
+ * @since 1.0, 2021-09-26 17:15:31
  */
 public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6295468787198694156L;
+	private static final long serialVersionUID = 4619368419768228596L;
 
 	/** 
 	 * 业务场景类型标识
@@ -27,7 +27,7 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	private String certNo;
 
 	/** 
-	 * 证件类型（"1","居民身份证"，"X":"学工号"）
+	 * 证件类型。{1:居民身份证；A:护照；X:学工号}
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -39,7 +39,7 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	private String parentLogonId;
 
 	/** 
-	 * 家长id，如是本人开通，当前id与用户id相同
+	 * 家长uid。其为当前开通的支付宝会员id，用于支付，与刷脸uid不同（历史原因，部分学生和教职工本人开通，其刷脸uid与当前uid一致）
 	 */
 	@ApiField("parent_user_id")
 	private String parentUserId;
@@ -69,7 +69,7 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	private String schoolStdcode;
 
 	/** 
-	 * 用户id
+	 * 用户uid。用于扫脸和刷脸支付
 	 */
 	@ApiField("user_id")
 	private String userId;

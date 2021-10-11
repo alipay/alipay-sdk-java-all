@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.invoice.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-05 14:55:22
+ * @since 1.0, 2021-09-28 14:26:14
  */
 public class AlipayBossFncGfsettleprodInvoiceCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2847577621493966114L;
+	private static final long serialVersionUID = 6369459341379647635L;
 
 	
 

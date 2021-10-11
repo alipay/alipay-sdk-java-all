@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.order.voucher.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-24 17:11:35
+ * @since 1.0, 2021-09-27 19:25:29
  */
 public class AlipayFundAuthOrderVoucherCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6624692388412672322L;
+	private static final long serialVersionUID = 6481253428837487378L;
 
 	/** 
 	 * 码类型，分为  barCode：条形码 (一维码) 和 qrCode:二维码(qrCode) ；

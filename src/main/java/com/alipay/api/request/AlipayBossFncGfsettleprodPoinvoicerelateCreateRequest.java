@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.poinvoicerelate.create request
  * 
  * @author auto create
- * @since 1.0, 2021-01-29 15:45:19
+ * @since 1.0, 2021-09-28 14:26:54
  */
 public class AlipayBossFncGfsettleprodPoinvoicerelateCreateRequest implements AlipayRequest<AlipayBossFncGfsettleprodPoinvoicerelateCreateResponse> {
 

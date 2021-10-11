@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户的电子社保卡或医保电子凭证基础信息
  *
  * @author auto create
- * @since 1.0, 2021-09-24 00:27:38
+ * @since 1.0, 2021-10-08 10:20:47
  */
 public class AlipayCommerceMedicalCardAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1349751673695815267L;
+	private static final long serialVersionUID = 3822959767776621178L;
 
 	/**
 	 * 机构编码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育场景token生成处理器
  *
  * @author auto create
- * @since 1.0, 2021-07-21 16:14:37
+ * @since 1.0, 2021-09-26 13:08:06
  */
 public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6124563528437644181L;
+	private static final long serialVersionUID = 5573962388532481567L;
 
 	/**
 	 * 证件号码
@@ -20,25 +20,19 @@ public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 1:身份证
-2:军官证
-3:士兵证
-8:台湾居民通行证
-B:户口簿
-X:学工号
-Z:其它证件
+	 * 证件类型。{1:居民身份证；A:护照；X:学工号}
 	 */
 	@ApiField("cert_type")
 	private String certType;
 
 	/**
-	 * 采集人员的支付宝会员标识。（当sub_code为SCHOOL_FACE_PASS_QUERY或SCHOOL_FACE_PASS_NAVIGATE时，当前参数必选）
+	 * 采集人员的支付宝会员标识。（当sub_code为SCHOOL_PAYMENT_REMOTE_OPEN_ACCOUNT时，当前参数必选）
 	 */
 	@ApiField("operator_user_id")
 	private String operatorUserId;
 
 	/**
-	 * 家长手机号码。（当sub_code为SCHOOL_FACE_PASS_QUERY或SCHOOL_FACE_PASS_NAVIGATE时，当前参数必选）
+	 * 家长手机号码。
 	 */
 	@ApiField("parent_phone")
 	private String parentPhone;

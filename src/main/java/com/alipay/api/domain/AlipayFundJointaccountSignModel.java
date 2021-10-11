@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业跳端签约
  *
  * @author auto create
- * @since 1.0, 2021-09-08 14:44:48
+ * @since 1.0, 2021-09-29 17:17:13
  */
 public class AlipayFundJointaccountSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2659896558815237568L;
+	private static final long serialVersionUID = 8644436323467341373L;
 
 	/**
 	 * 账本名称，传空采用默认规则命名，使用公司名称

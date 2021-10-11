@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询待开票单据服务
  *
  * @author auto create
- * @since 1.0, 2020-08-31 19:38:27
+ * @since 1.0, 2021-10-11 11:26:30
  */
 public class AlipayBossFncApinvoiceRcptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2827735923159455733L;
+	private static final long serialVersionUID = 2641293468685447481L;
 
 	/**
 	 * 合约号

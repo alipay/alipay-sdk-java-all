@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一结算查询PO已付款金额
  *
  * @author auto create
- * @since 1.0, 2021-01-29 15:43:28
+ * @since 1.0, 2021-09-28 14:26:45
  */
 public class AlipayBossFncGfsettleprodPoamountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4353714461633762516L;
+	private static final long serialVersionUID = 5484467397188295859L;
 
 	/**
 	 * PO号

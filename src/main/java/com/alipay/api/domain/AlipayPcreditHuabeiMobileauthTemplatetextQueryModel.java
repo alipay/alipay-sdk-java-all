@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询芝麻GO模板信息（带协议信息）
  *
  * @author auto create
- * @since 1.0, 2020-06-12 14:48:38
+ * @since 1.0, 2021-09-29 17:26:03
  */
 public class AlipayPcreditHuabeiMobileauthTemplatetextQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2835132854757659314L;
+	private static final long serialVersionUID = 4652227274793354384L;
 
 	/**
 	 * 请求参数

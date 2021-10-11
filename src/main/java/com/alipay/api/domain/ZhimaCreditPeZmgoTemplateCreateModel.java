@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻Go模板创建
  *
  * @author auto create
- * @since 1.0, 2020-12-30 19:27:13
+ * @since 1.0, 2021-09-29 17:24:01
  */
 public class ZhimaCreditPeZmgoTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5858513285451669372L;
+	private static final long serialVersionUID = 8354339363135164392L;
 
 	/**
 	 * 使用权益跳转链接

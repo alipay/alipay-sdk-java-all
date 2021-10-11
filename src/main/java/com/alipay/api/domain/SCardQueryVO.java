@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SCardQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5786482381695178529L;
+	private static final long serialVersionUID = 6227746529782677868L;
 
 	/**
 	 * 背景图

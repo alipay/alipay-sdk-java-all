@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-24 17:45:30
+ * @since 1.0, 2021-09-27 17:32:46
  */
 public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5289864184177266636L;
+	private static final long serialVersionUID = 4784242171548837572L;
 
 	/** 
 	 * 该笔资金操作流水opertion_id对应的操作金额，单位为：元（人民币）
@@ -66,7 +66,7 @@ public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 	private String operationId;
 
 	/** 
-	 * 支付宝资金操作类型，
+	 * 支付宝资金操作类型，表示当前查询到的这笔明细的操作类型。
 目前支持： 
 FREEZE：冻结
 UNFREEZE：解冻

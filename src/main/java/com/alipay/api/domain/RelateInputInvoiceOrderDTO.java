@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 关联发票请求
  *
  * @author auto create
- * @since 1.0, 2021-08-02 17:39:52
+ * @since 1.0, 2021-09-28 14:28:36
  */
 public class RelateInputInvoiceOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8231651382439599246L;
+	private static final long serialVersionUID = 5689521431724154423L;
 
 	/**
 	 * 发票附件名称

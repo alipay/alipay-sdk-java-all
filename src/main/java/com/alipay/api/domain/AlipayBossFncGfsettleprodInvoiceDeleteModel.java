@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一结算发票作废
  *
  * @author auto create
- * @since 1.0, 2021-01-29 15:42:08
+ * @since 1.0, 2021-09-28 14:27:44
  */
 public class AlipayBossFncGfsettleprodInvoiceDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7867313198743794534L;
+	private static final long serialVersionUID = 5851269228471588786L;
 
 	/**
 	 * 发票操作对象

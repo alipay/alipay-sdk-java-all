@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票邮寄信息
  *
  * @author auto create
- * @since 1.0, 2021-08-02 16:25:32
+ * @since 1.0, 2021-09-28 14:29:20
  */
 public class InvoiceMailInfoOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2527999177943283284L;
+	private static final long serialVersionUID = 3381271598667683224L;
 
 	/**
 	 * 需要添加快递的发票信息列表

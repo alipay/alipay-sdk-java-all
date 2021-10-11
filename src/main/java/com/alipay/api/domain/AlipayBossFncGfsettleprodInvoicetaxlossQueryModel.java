@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询发票税损金额
  *
  * @author auto create
- * @since 1.0, 2021-08-05 15:25:47
+ * @since 1.0, 2021-09-28 14:25:07
  */
 public class AlipayBossFncGfsettleprodInvoicetaxlossQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5699752717693596919L;
+	private static final long serialVersionUID = 1664258176219992428L;
 
 	/**
 	 * 账单号

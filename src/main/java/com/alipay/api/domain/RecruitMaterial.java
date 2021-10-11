@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商报名的素材
  *
  * @author auto create
- * @since 1.0, 2021-06-30 23:43:49
+ * @since 1.0, 2021-09-26 15:27:38
  */
 public class RecruitMaterial extends AlipayObject {
 
-	private static final long serialVersionUID = 2176143437891871219L;
+	private static final long serialVersionUID = 5373248839882759329L;
 
 	/**
 	 * 提报的素材内容，json字符串，使用时需要把此字符串解析成json对象
@@ -24,6 +24,13 @@ public class RecruitMaterial extends AlipayObject {
 	 */
 	@ApiField("description")
 	private String description;
+
+	/**
+	 * 素材审核信息，展示给商家的素材审核不通过的意见。素材审核通过时该字段为空。
+报名详情查询接口不用填写该字段。
+	 */
+	@ApiField("material_audit_info")
+	private String materialAuditInfo;
 
 	/**
 	 * 素材名名称
@@ -49,6 +56,13 @@ public class RecruitMaterial extends AlipayObject {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getMaterialAuditInfo() {
+		return this.materialAuditInfo;
+	}
+	public void setMaterialAuditInfo(String materialAuditInfo) {
+		this.materialAuditInfo = materialAuditInfo;
 	}
 
 	public String getName() {

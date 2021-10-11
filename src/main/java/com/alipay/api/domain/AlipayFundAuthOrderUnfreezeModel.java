@@ -11,29 +11,33 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAuthOrderUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3892724139552757241L;
+	private static final long serialVersionUID = 1218333736595658878L;
 
 	/**
-	 * 本次操作解冻的金额，单位为：元（人民币），精确到小数点后两位，取值范围：[0.01,100000000.00]
+	 * 本次操作解冻的金额，单位为：元（人民币），精确到小数点后两位。
+取值范围：[0.01,100000000.00]
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/**
-	 * 支付宝资金授权订单号
+	 * 支付宝资金授权订单号。
 	 */
 	@ApiField("auth_no")
 	private String authNo;
 
 	/**
-	 * 解冻扩展信息，json格式；unfreezeBizInfo 目前为芝麻消费字段，支持Key值如下：
-"bizComplete":"true" -- 选填：标识本次解冻用户是否履约，如果true信用单会完结为COMPLETE
+	 * 解冻扩展信息。map<string, string>的json格式，目前支持如下key：
+unfreezeBizInfo：由芝麻消费，当前支持value如下：
+"bizComplete":"true"——标识本次解冻用户已履约，true表示信用单履约完结
 	 */
 	@ApiField("extra_param")
 	private String extraParam;
 
 	/**
-	 * 商户本次资金操作的请求流水号，同一商户每次不同的资金操作请求，商户请求流水号不能重复
+	 * 解冻请求流水号。
+如果是针对同一笔授权单不同的解冻请求，如第一次解冻1元，第二次解冻2元，则解冻请求流水号必须不重复；
+如果是针对同一笔解冻请求的多次发起，则需要保证每次发起，解冻请求流水号和解冻金额都相同
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

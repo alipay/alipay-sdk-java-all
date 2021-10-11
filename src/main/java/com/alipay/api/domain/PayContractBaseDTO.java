@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付款条件基础信息DTO
  *
  * @author auto create
- * @since 1.0, 2021-01-29 14:46:44
+ * @since 1.0, 2021-09-28 14:29:57
  */
 public class PayContractBaseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5216536181737831739L;
+	private static final long serialVersionUID = 3324436367186996188L;
 
 	/**
 	 * 合约号

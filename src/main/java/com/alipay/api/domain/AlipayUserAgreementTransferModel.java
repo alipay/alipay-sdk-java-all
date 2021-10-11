@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 协议由普通通用代扣协议产品转移到周期扣协议产品
  *
  * @author auto create
- * @since 1.0, 2021-09-15 14:55:30
+ * @since 1.0, 2021-09-27 16:42:13
  */
 public class AlipayUserAgreementTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1195654363825556822L;
+	private static final long serialVersionUID = 5542319296896245948L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ），如果传了该参数，其他参数会被忽略

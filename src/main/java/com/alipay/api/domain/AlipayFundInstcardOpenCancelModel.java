@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户结算卡销户
  *
  * @author auto create
- * @since 1.0, 2021-09-17 21:07:20
+ * @since 1.0, 2021-09-29 11:29:59
  */
 public class AlipayFundInstcardOpenCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2163743721229252399L;
+	private static final long serialVersionUID = 3217949757715414842L;
 
 	/**
 	 * 场景码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加发票邮寄信息
  *
  * @author auto create
- * @since 1.0, 2021-08-05 15:25:33
+ * @since 1.0, 2021-09-28 14:25:27
  */
 public class AlipayBossFncGfsettleprodInvoicemailinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4622667541333626523L;
+	private static final long serialVersionUID = 5373871765468511528L;
 
 	/**
 	 * 邮寄信息

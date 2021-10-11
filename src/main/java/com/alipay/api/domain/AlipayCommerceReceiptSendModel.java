@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票信息回流接口
  *
  * @author auto create
- * @since 1.0, 2021-09-15 15:09:00
+ * @since 1.0, 2021-10-09 14:57:48
  */
 public class AlipayCommerceReceiptSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5374268574689581117L;
+	private static final long serialVersionUID = 2444219774655865413L;
 
 	/**
 	 * 订单信息,最大限制10条
