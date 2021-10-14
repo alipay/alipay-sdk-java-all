@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 无资金单品券创建
  *
  * @author auto create
- * @since 1.0, 2019-09-06 08:54:34
+ * @since 1.0, 2021-10-14 16:18:44
  */
 public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4465868619847861615L;
+	private static final long serialVersionUID = 1341942282629817459L;
 
 	/**
 	 * 代金券面额。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钢铁匣查询准入条件
  *
  * @author auto create
- * @since 1.0, 2018-12-21 15:10:32
+ * @since 1.0, 2021-10-12 19:00:36
  */
 public class AlipayUserSafeboxConditionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3211896998366816831L;
+	private static final long serialVersionUID = 6151269524123144388L;
 
 	/**
 	 * 蚂蚁统一会员ID

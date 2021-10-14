@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部员工消费通知
  *
  * @author auto create
- * @since 1.0, 2021-09-24 21:20:54
+ * @since 1.0, 2021-10-14 15:58:39
  */
 public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1885773528628262545L;
+	private static final long serialVersionUID = 1499111984235441556L;
 
 	/**
 	 * 企业码账号
@@ -74,6 +74,12 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	 */
 	@ApiField("platform")
 	private String platform;
+
+	/**
+	 * 退款流水ID，多次退款此ID不同，退款必须传入
+	 */
+	@ApiField("relate_no")
+	private String relateNo;
 
 	/**
 	 * 制度id
@@ -149,6 +155,13 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	}
 	public void setPlatform(String platform) {
 		this.platform = platform;
+	}
+
+	public String getRelateNo() {
+		return this.relateNo;
+	}
+	public void setRelateNo(String relateNo) {
+		this.relateNo = relateNo;
 	}
 
 	public String getStandardId() {

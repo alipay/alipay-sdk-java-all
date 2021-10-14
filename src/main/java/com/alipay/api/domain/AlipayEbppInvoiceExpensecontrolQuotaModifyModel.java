@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改额度
  *
  * @author auto create
- * @since 1.0, 2021-09-24 21:23:16
+ * @since 1.0, 2021-10-13 20:15:22
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6812258484725481777L;
+	private static final long serialVersionUID = 7864182424361496577L;
 
 	/**
 	 * 企业签约企业合花ID-共同账号ID
@@ -24,8 +24,8 @@ public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObjec
 ADD - 增加额度
 DEDUCT - 扣减额度
 UPDATE_BALANCE-更新可用余额
-ENABLE-额度启用
-DISABLE-额度停用
+FREEZE-额度冻结
+UNFREEZE-额度解冻
 	 */
 	@ApiField("action")
 	private String action;

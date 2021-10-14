@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户身份参数
  *
  * @author auto create
- * @since 1.0, 2021-09-17 21:06:12
+ * @since 1.0, 2021-10-14 10:55:37
  */
 public class MerchantIdentityParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5766268411228918669L;
+	private static final long serialVersionUID = 2791392278975184289L;
 
 	/**
 	 * 证件号码，必填，填写需要验证的证件号码
@@ -54,6 +54,12 @@ public class MerchantIdentityParams extends AlipayObject {
 	 */
 	@ApiField("smid")
 	private String smid;
+
+	/**
+	 * 间联商户smid进件的sourcePid。如果该字段非空，优先以该字段做smid的水平鉴权；如果该字段为空，则以接口调用方PID做smid的水平鉴权。
+	 */
+	@ApiField("smid_source_pid")
+	private String smidSourcePid;
 
 	public String getCertNo() {
 		return this.certNo;
@@ -102,6 +108,13 @@ public class MerchantIdentityParams extends AlipayObject {
 	}
 	public void setSmid(String smid) {
 		this.smid = smid;
+	}
+
+	public String getSmidSourcePid() {
+		return this.smidSourcePid;
+	}
+	public void setSmidSourcePid(String smidSourcePid) {
+		this.smidSourcePid = smidSourcePid;
 	}
 
 }

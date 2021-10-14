@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ActivityPlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1247894978812214216L;
+	private static final long serialVersionUID = 1643932152366143928L;
 
 	/**
 	 * 平台活动结束时间

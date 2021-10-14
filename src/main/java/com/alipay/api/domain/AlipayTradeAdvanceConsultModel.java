@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 垫资查询
  *
  * @author auto create
- * @since 1.0, 2021-09-28 10:13:20
+ * @since 1.0, 2021-10-12 10:42:58
  */
 public class AlipayTradeAdvanceConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5231396354918375636L;
+	private static final long serialVersionUID = 3181131674485375174L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ） ，在进行单笔订单风险评估预咨询时必传。

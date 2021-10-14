@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingCampaignIntelligentPromoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5145312113255877435L;
+	private static final long serialVersionUID = 3489314417374891768L;
 
 	/** 
 	 * 查询返回的营销活动列表信息

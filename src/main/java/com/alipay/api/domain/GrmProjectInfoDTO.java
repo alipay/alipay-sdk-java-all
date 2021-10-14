@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 业管平台立项信息DTO
  *
  * @author auto create
- * @since 1.0, 2021-08-06 20:47:44
+ * @since 1.0, 2021-10-14 10:49:26
  */
 public class GrmProjectInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2656515176392552536L;
+	private static final long serialVersionUID = 5186132869825381563L;
 
 	/**
 	 * 附件地址
@@ -146,6 +146,18 @@ public class GrmProjectInfoDTO extends AlipayObject {
 	 */
 	@ApiField("service_location")
 	private String serviceLocation;
+
+	/**
+	 * 结算公式编码
+	 */
+	@ApiField("settlement_formula_code")
+	private String settlementFormulaCode;
+
+	/**
+	 * 结算公式名称
+	 */
+	@ApiField("settlement_formula_name")
+	private String settlementFormulaName;
 
 	/**
 	 * sla详情地址
@@ -316,6 +328,20 @@ public class GrmProjectInfoDTO extends AlipayObject {
 	}
 	public void setServiceLocation(String serviceLocation) {
 		this.serviceLocation = serviceLocation;
+	}
+
+	public String getSettlementFormulaCode() {
+		return this.settlementFormulaCode;
+	}
+	public void setSettlementFormulaCode(String settlementFormulaCode) {
+		this.settlementFormulaCode = settlementFormulaCode;
+	}
+
+	public String getSettlementFormulaName() {
+		return this.settlementFormulaName;
+	}
+	public void setSettlementFormulaName(String settlementFormulaName) {
+		this.settlementFormulaName = settlementFormulaName;
 	}
 
 	public String getSlaViewInfo() {

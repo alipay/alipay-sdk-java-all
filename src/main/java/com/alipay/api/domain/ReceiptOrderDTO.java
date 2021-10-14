@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2021-10-09 14:58:28
+ * @since 1.0, 2021-10-11 17:20:26
  */
 public class ReceiptOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1162185959375314743L;
+	private static final long serialVersionUID = 8512484791485991227L;
 
 	/**
 	 * 支付宝用户uid; 是支付宝支付时，必填

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流金融统一route接口
  *
  * @author auto create
- * @since 1.0, 2020-03-17 20:16:21
+ * @since 1.0, 2021-10-11 17:12:14
  */
 public class AnttechBlockchainFinanceMylogisticfinsysMessagePublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3548483659359929238L;
+	private static final long serialVersionUID = 2868387761455992319L;
 
 	/**
 	 * 路由方法的参数

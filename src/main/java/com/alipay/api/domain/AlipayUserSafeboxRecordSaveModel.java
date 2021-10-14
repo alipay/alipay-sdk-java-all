@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钢铁匣保存记录
  *
  * @author auto create
- * @since 1.0, 2018-12-21 15:10:43
+ * @since 1.0, 2021-10-12 19:00:30
  */
 public class AlipayUserSafeboxRecordSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5186498458161454736L;
+	private static final long serialVersionUID = 3619727994897682849L;
 
 	/**
 	 * 用钢铁匣公钥加密后的内容

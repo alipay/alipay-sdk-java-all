@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钢铁匣签约
  *
  * @author auto create
- * @since 1.0, 2018-12-21 15:10:37
+ * @since 1.0, 2021-10-12 19:00:14
  */
 public class AlipayUserSafeboxAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3198183936439774545L;
+	private static final long serialVersionUID = 3577447716963493683L;
 
 	/**
 	 * 蚂蚁统一会员ID

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景化商家营销活动修改
  *
  * @author auto create
- * @since 1.0, 2018-12-07 13:14:36
+ * @since 1.0, 2021-10-14 11:56:14
  */
 public class KoubeiMarketingCampaignMerchantActivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7473431166345521698L;
+	private static final long serialVersionUID = 4832565777975393681L;
 
 	/**
 	 * 活动ActivityId
@@ -24,7 +24,7 @@ public class KoubeiMarketingCampaignMerchantActivityModifyModel extends AlipayOb
 	private String activityId;
 
 	/**
-	 * 活动是否需要自动续期
+	 * 活动是否需要自动续期(已废弃)
 	 */
 	@ApiField("auto_delay_flag")
 	private Boolean autoDelayFlag;

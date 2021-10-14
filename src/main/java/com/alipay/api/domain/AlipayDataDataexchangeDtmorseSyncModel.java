@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩斯平台外部商户数据反馈接口
  *
  * @author auto create
- * @since 1.0, 2018-07-23 21:11:10
+ * @since 1.0, 2021-10-12 21:09:43
  */
 public class AlipayDataDataexchangeDtmorseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6896636493611178663L;
+	private static final long serialVersionUID = 7789248767136654273L;
 
 	/**
 	 * 外部商户发送给域内系统的信息

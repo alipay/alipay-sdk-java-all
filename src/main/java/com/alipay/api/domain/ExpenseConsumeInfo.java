@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2021-09-28 16:54:56
+ * @since 1.0, 2021-10-11 14:06:01
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2388252767357281949L;
+	private static final long serialVersionUID = 5683691784923631374L;
 
 	/**
 	 * 公司账号ID
@@ -26,7 +26,7 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String actualAccountNumber;
 
 	/**
-	 * 汇总批次id
+	 * 汇总批次id(废弃)
 	 */
 	@ApiField("batch_id")
 	private String batchId;
@@ -120,6 +120,12 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("standard_id")
 	private String standardId;
+
+	/**
+	 * 批次id
+	 */
+	@ApiField("summary_id")
+	private String summaryId;
 
 	/**
 	 * tp标志位
@@ -257,6 +263,13 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	}
 	public void setStandardId(String standardId) {
 		this.standardId = standardId;
+	}
+
+	public String getSummaryId() {
+		return this.summaryId;
+	}
+	public void setSummaryId(String summaryId) {
+		this.summaryId = summaryId;
 	}
 
 	public String getTpSign() {

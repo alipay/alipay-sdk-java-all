@@ -1,22 +1,35 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayBossFncGffundStandardvoucherBatchqueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayOpenAppOpenbizmockDesensitiveQueryResponse;
+import com.alipay.api.response.AlipayBossFncGffundStandardvoucherBatchqueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.open.app.openbizmock.desensitive.query request
+ * ALIPAY API: alipay.boss.fnc.gffund.standardvoucher.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2021-01-22 16:52:32
+ * @since 1.0, 2021-10-13 10:32:46
  */
-public class AlipayOpenAppOpenbizmockDesensitiveQueryRequest implements AlipayRequest<AlipayOpenAppOpenbizmockDesensitiveQueryResponse> {
+public class AlipayBossFncGffundStandardvoucherBatchqueryRequest implements AlipayRequest<AlipayBossFncGffundStandardvoucherBatchqueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 标准资金流水凭证批量查询
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -74,11 +87,12 @@ public class AlipayOpenAppOpenbizmockDesensitiveQueryRequest implements AlipayRe
 	}
 
 	public String getApiMethodName() {
-		return "alipay.open.app.openbizmock.desensitive.query";
+		return "alipay.boss.fnc.gffund.standardvoucher.batchquery";
 	}
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
@@ -92,8 +106,8 @@ public class AlipayOpenAppOpenbizmockDesensitiveQueryRequest implements AlipayRe
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayOpenAppOpenbizmockDesensitiveQueryResponse> getResponseClass() {
-		return AlipayOpenAppOpenbizmockDesensitiveQueryResponse.class;
+	public Class<AlipayBossFncGffundStandardvoucherBatchqueryResponse> getResponseClass() {
+		return AlipayBossFncGffundStandardvoucherBatchqueryResponse.class;
 	}
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学费码支付页面数据录入
  *
  * @author auto create
- * @since 1.0, 2021-08-30 13:59:50
+ * @since 1.0, 2021-10-14 15:52:47
  */
 public class AlipayCommerceEducateTuitioncodePagedataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7352316152569219795L;
+	private static final long serialVersionUID = 6215932243916991573L;
 
 	/**
 	 * 商户名称
@@ -32,7 +32,7 @@ public class AlipayCommerceEducateTuitioncodePagedataSendModel extends AlipayObj
 	private String courseName;
 
 	/**
-	 * 开课月份
+	 * 开课月份。开课月份必须早于结课月份，课程最大跨度时间为12个月
 	 */
 	@ApiField("course_start_month")
 	private String courseStartMonth;
@@ -56,6 +56,12 @@ public class AlipayCommerceEducateTuitioncodePagedataSendModel extends AlipayObj
 	private String logo;
 
 	/**
+	 * 外部业务编号。课程类信息传递课程编号，用于计算订单的打款规则
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
+
+	/**
 	 * 外部订单号
 	 */
 	@ApiField("out_order_no")
@@ -66,6 +72,12 @@ public class AlipayCommerceEducateTuitioncodePagedataSendModel extends AlipayObj
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
+
+	/**
+	 * 打款周期数。如果某个业务的打款周期由交易数据指定，而非业务的固定统一，则该字段必传
+	 */
+	@ApiField("period")
+	private Long period;
 
 	/**
 	 * 课程周期类型,固定写MONTH
@@ -140,6 +152,13 @@ public class AlipayCommerceEducateTuitioncodePagedataSendModel extends AlipayObj
 		this.logo = logo;
 	}
 
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
+	}
+
 	public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
@@ -152,6 +171,13 @@ public class AlipayCommerceEducateTuitioncodePagedataSendModel extends AlipayObj
 	}
 	public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
+	}
+
+	public Long getPeriod() {
+		return this.period;
+	}
+	public void setPeriod(Long period) {
+		this.period = period;
 	}
 
 	public String getPeriodType() {

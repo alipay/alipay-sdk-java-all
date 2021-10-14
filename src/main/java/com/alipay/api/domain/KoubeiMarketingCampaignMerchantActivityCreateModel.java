@@ -15,10 +15,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiMarketingCampaignMerchantActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8779145315412954441L;
+	private static final long serialVersionUID = 7762774699429991294L;
 
 	/**
-	 * 活动是否需要自动续期
+	 * 活动是否需要自动续期(已废弃)
 	 */
 	@ApiField("auto_delay_flag")
 	private Boolean autoDelayFlag;

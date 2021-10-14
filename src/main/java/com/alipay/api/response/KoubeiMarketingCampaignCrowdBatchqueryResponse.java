@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingCampaignCrowdBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5642557832149287171L;
+	private static final long serialVersionUID = 7418334196179147644L;
 
 	/** 
 	 * 人群组的基本信息，id表示人群分组的ID，name表示人群分组的名称，status表示人群分组的状态，目前只有status=ENABLE有效状态才返回，已经删除的为DISABLE的不返回

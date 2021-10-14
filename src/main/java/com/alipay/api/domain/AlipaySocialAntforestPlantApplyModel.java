@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialAntforestPlantApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2185718986444221739L;
+	private static final long serialVersionUID = 8357364449553675685L;
 
 	/**
 	 * 出账购买树种的账户id

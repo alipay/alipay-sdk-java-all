@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayOpenTestQueryModel;
+import com.alipay.api.domain.AlipayFundBailCollectionFinishModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayOpenTestQueryResponse;
+import com.alipay.api.response.AlipayFundBailCollectionFinishResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.open.test.query request
+ * ALIPAY API: alipay.fund.bail.collection.finish request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:47
+ * @since 1.0, 2021-10-12 14:32:46
  */
-public class AlipayOpenTestQueryRequest implements AlipayRequest<AlipayOpenTestQueryResponse> {
+public class AlipayFundBailCollectionFinishRequest implements AlipayRequest<AlipayFundBailCollectionFinishResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 伯益-测试-线上
+	* 保证金委托代扣案件终止
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayOpenTestQueryRequest implements AlipayRequest<AlipayOpenTestQ
 	}
 
 	public String getApiMethodName() {
-		return "alipay.open.test.query";
+		return "alipay.fund.bail.collection.finish";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayOpenTestQueryRequest implements AlipayRequest<AlipayOpenTestQ
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayOpenTestQueryResponse> getResponseClass() {
-		return AlipayOpenTestQueryResponse.class;
+	public Class<AlipayFundBailCollectionFinishResponse> getResponseClass() {
+		return AlipayFundBailCollectionFinishResponse.class;
 	}
 	
 

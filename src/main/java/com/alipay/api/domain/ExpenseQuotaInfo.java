@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额度信息
  *
  * @author auto create
- * @since 1.0, 2021-09-24 21:22:50
+ * @since 1.0, 2021-10-14 11:27:19
  */
 public class ExpenseQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4341619555485216435L;
+	private static final long serialVersionUID = 7886293953615799461L;
 
 	/**
 	 * 额度失效时间
@@ -32,6 +32,12 @@ public class ExpenseQuotaInfo extends AlipayObject {
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
+
+	/**
+	 * 额度是否冻结，冻结后额度不可用
+	 */
+	@ApiField("freeze")
+	private Boolean freeze;
 
 	/**
 	 * 额度所属者ID
@@ -109,6 +115,13 @@ EXPENSE_TYPE: 场景盖帽额度
 	}
 	public void setEnterpriseId(String enterpriseId) {
 		this.enterpriseId = enterpriseId;
+	}
+
+	public Boolean getFreeze() {
+		return this.freeze;
+	}
+	public void setFreeze(Boolean freeze) {
+		this.freeze = freeze;
 	}
 
 	public String getOwnerId() {

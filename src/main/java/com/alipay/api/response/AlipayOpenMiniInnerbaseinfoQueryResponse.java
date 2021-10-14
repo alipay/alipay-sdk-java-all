@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-07 17:35:21
+ * @since 1.0, 2021-10-11 14:52:57
  */
 public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8162792235495761714L;
+	private static final long serialVersionUID = 5456694112624389276L;
 
 	/** 
 	 * 小程序别名，简称
@@ -116,6 +116,12 @@ public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("owner_portrait")
 	private String ownerPortrait;
+
+	/** 
+	 * AUTO/自动更新、MANUAL/手动更新
+	 */
+	@ApiField("plugin_refresh_type")
+	private String pluginRefreshType;
 
 	/** 
 	 * 小程序客服邮箱
@@ -246,6 +252,13 @@ public class AlipayOpenMiniInnerbaseinfoQueryResponse extends AlipayResponse {
 	}
 	public String getOwnerPortrait( ) {
 		return this.ownerPortrait;
+	}
+
+	public void setPluginRefreshType(String pluginRefreshType) {
+		this.pluginRefreshType = pluginRefreshType;
+	}
+	public String getPluginRefreshType( ) {
+		return this.pluginRefreshType;
 	}
 
 	public void setServiceEmail(String serviceEmail) {
