@@ -12,11 +12,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.enterpriseconsume.summaryinvoicedetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-30 15:22:45
+ * @since 1.0, 2021-10-18 15:47:51
  */
 public class AlipayEbppInvoiceEnterpriseconsumeSummaryinvoicedetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1729421564683231965L;
+	private static final long serialVersionUID = 3861494331234875675L;
+
+	/** 
+	 * 企业汇总场景下，即企业ID
+	 */
+	@ApiField("account_id")
+	private String accountId;
 
 	/** 
 	 * 申请时间
@@ -25,7 +31,7 @@ public class AlipayEbppInvoiceEnterpriseconsumeSummaryinvoicedetailQueryResponse
 	private Date applyDate;
 
 	/** 
-	 * 账单批次id
+	 * 账单批次id（建议使用summary_id）
 	 */
 	@ApiField("batch_id")
 	private String batchId;
@@ -76,10 +82,23 @@ public class AlipayEbppInvoiceEnterpriseconsumeSummaryinvoicedetailQueryResponse
 	private String statusShowContent;
 
 	/** 
-	 * 企业汇总场景下，即企业ID
+	 * 账单批次id
+	 */
+	@ApiField("summary_id")
+	private String summaryId;
+
+	/** 
+	 * 企业汇总场景下，即企业ID（建议使用account_id）
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public void setAccountId(String accountId) {
+		this.accountId = accountId;
+	}
+	public String getAccountId( ) {
+		return this.accountId;
+	}
 
 	public void setApplyDate(Date applyDate) {
 		this.applyDate = applyDate;
@@ -128,6 +147,13 @@ public class AlipayEbppInvoiceEnterpriseconsumeSummaryinvoicedetailQueryResponse
 	}
 	public String getStatusShowContent( ) {
 		return this.statusShowContent;
+	}
+
+	public void setSummaryId(String summaryId) {
+		this.summaryId = summaryId;
+	}
+	public String getSummaryId( ) {
+		return this.summaryId;
 	}
 
 	public void setUserId(String userId) {

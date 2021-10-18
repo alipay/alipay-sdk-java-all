@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncGffundStandardvoucherBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4535294824618588384L;
+	private static final long serialVersionUID = 5539253153429931965L;
 
 	/** 
 	 * 当前页码

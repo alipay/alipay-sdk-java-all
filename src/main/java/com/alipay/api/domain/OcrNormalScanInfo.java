@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增值税发票、定额发票、卷式发票、过路费扫描模型
  *
  * @author auto create
- * @since 1.0, 2021-09-22 15:59:06
+ * @since 1.0, 2021-10-18 10:34:16
  */
 public class OcrNormalScanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5879326719387475998L;
+	private static final long serialVersionUID = 1166668761685293372L;
 
 	/**
 	 * 发票代码

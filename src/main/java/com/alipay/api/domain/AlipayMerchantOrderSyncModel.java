@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2021-09-16 16:01:50
+ * @since 1.0, 2021-10-15 19:08:39
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4638981218556821683L;
+	private static final long serialVersionUID = 6593553497351768455L;
 
 	/**
-	 * 订单金额，单位为元。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
+	 * 订单金额，单位为【元】。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -30,13 +30,13 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	private String buyerId;
 
 	/**
-	 * buyer_info与buyer_user_id必选其一
+	 * buyer_info与buyer_id必选其一
 	 */
 	@ApiField("buyer_info")
 	private UserInfomation buyerInfo;
 
 	/**
-	 * 优惠金额
+	 * 优惠金额，单位为【元】
 	 */
 	@ApiField("discount_amount")
 	private String discountAmount;
@@ -127,7 +127,7 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	private String partnerId;
 
 	/**
-	 * 支付金额，需要实际支付的金额。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
+	 * 支付金额，单位为【元】，需要实际支付的金额。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
@@ -158,7 +158,7 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	private String sendMsg;
 
 	/**
-	 * 服务code：传入小程序后台提报的服务id，将订单与服务关联，有利于提高服务曝光机会；入参服务id的类目须与订单类型相符，若不相符将会报错；如订单类型为“外卖”，则入参的服务ID所对应的服务类目也必须得是”外卖“；service_code 通过 alipay.open.app.appcontent.function.create(小程序服务创建)接口创建服务后获取。
+	 * 服务code：传入小程序后台提报的服务id，将订单与服务关联，有利于提高服务曝光机会；入参服务id的类目须与订单类型相符，若不相符将会报错；如订单类型为“外卖”，则入参的服务ID所对应的服务类目也必须得是”外卖“；service_code 通过 alipay.open.app.service.apply，(服务提报申请)接口创建服务后获取。
 	 */
 	@ApiField("service_code")
 	private String serviceCode;
@@ -168,6 +168,14 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	 */
 	@ApiField("shop_info")
 	private OrderShopInfo shopInfo;
+
+	/**
+	 * 用于区分用户下单的订单来源，如
+Alipay-支付宝端内（默认）
+DingTalk-钉钉小程序
+	 */
+	@ApiField("source_app")
+	private String sourceApp;
 
 	/**
 	 * 同步内容
@@ -364,6 +372,13 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	}
 	public void setShopInfo(OrderShopInfo shopInfo) {
 		this.shopInfo = shopInfo;
+	}
+
+	public String getSourceApp() {
+		return this.sourceApp;
+	}
+	public void setSourceApp(String sourceApp) {
+		this.sourceApp = sourceApp;
 	}
 
 	public String getSyncContent() {

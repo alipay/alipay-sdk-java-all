@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2697297771367766691L;
+	private static final long serialVersionUID = 7816418828852824745L;
 
 	/**
 	 * 商品描述
@@ -24,7 +24,7 @@ public class AntMerchantExpandItemOpenCreateModel extends AlipayObject {
 
 	/**
 	 * 商品扩展信息（具体KEY请参见产品文档）。
-小程序订单中心场景接入参见  <a href="https://opendocs.alipay.com/mini/00u9ga">快速接入</a>。
+小程序订单中心场景接入参见  <a href="https://opendocs.alipay.com/mini/024hj4">接入指南</a>。
 	 */
 	@ApiListField("ext_info")
 	@ApiField("item_ext_info")

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.customs.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-10 17:45:06
+ * @since 1.0, 2021-10-18 15:51:12
  */
 public class AlipayTradeCustomsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6144889368216889427L;
+	private static final long serialVersionUID = 4554158651642978392L;
 
 	/** 
 	 * 不存在记录的报关请求号。多个值用逗号分隔，单次最多10个;每个报关请求号String(32)

@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayCommerceEducateCampusSchoolAddModel;
+import com.alipay.api.domain.AlipayUserBillStatQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayCommerceEducateCampusSchoolAddResponse;
+import com.alipay.api.response.AlipayUserBillStatQueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.commerce.educate.campus.school.add request
+ * ALIPAY API: alipay.user.bill.stat.query request
  * 
  * @author auto create
- * @since 1.0, 2021-10-08 11:05:35
+ * @since 1.0, 2021-10-18 20:41:38
  */
-public class AlipayCommerceEducateCampusSchoolAddRequest implements AlipayRequest<AlipayCommerceEducateCampusSchoolAddResponse> {
+public class AlipayUserBillStatQueryRequest implements AlipayRequest<AlipayUserBillStatQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 服务商学校入驻
+	* 支付宝账单统计数据
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayCommerceEducateCampusSchoolAddRequest implements AlipayReques
 	}
 
 	public String getApiMethodName() {
-		return "alipay.commerce.educate.campus.school.add";
+		return "alipay.user.bill.stat.query";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayCommerceEducateCampusSchoolAddRequest implements AlipayReques
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayCommerceEducateCampusSchoolAddResponse> getResponseClass() {
-		return AlipayCommerceEducateCampusSchoolAddResponse.class;
+	public Class<AlipayUserBillStatQueryResponse> getResponseClass() {
+		return AlipayUserBillStatQueryResponse.class;
 	}
 	
 

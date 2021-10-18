@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceCityfacilitatorStationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2886736363898545442L;
+	private static final long serialVersionUID = 5356888271951365618L;
 
 	/** 
 	 * 支持设为起点的站点列表

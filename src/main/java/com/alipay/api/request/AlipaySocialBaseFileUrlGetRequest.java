@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayCommerceEducateCampusSchoolQueryModel;
+import com.alipay.api.domain.AlipaySocialBaseFileUrlGetModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayCommerceEducateCampusSchoolQueryResponse;
+import com.alipay.api.response.AlipaySocialBaseFileUrlGetResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.commerce.educate.campus.school.query request
+ * ALIPAY API: alipay.social.base.file.url.get request
  * 
  * @author auto create
- * @since 1.0, 2021-10-08 11:05:35
+ * @since 1.0, 2021-10-15 18:22:48
  */
-public class AlipayCommerceEducateCampusSchoolQueryRequest implements AlipayRequest<AlipayCommerceEducateCampusSchoolQueryResponse> {
+public class AlipaySocialBaseFileUrlGetRequest implements AlipayRequest<AlipaySocialBaseFileUrlGetResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 服务商学校入驻信息查询
+	* BC互动获取文件下载url
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayCommerceEducateCampusSchoolQueryRequest implements AlipayRequ
 	}
 
 	public String getApiMethodName() {
-		return "alipay.commerce.educate.campus.school.query";
+		return "alipay.social.base.file.url.get";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayCommerceEducateCampusSchoolQueryRequest implements AlipayRequ
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayCommerceEducateCampusSchoolQueryResponse> getResponseClass() {
-		return AlipayCommerceEducateCampusSchoolQueryResponse.class;
+	public Class<AlipaySocialBaseFileUrlGetResponse> getResponseClass() {
+		return AlipaySocialBaseFileUrlGetResponse.class;
 	}
 	
 

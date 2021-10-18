@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsDataDsbEstimateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1537665573275688772L;
+	private static final long serialVersionUID = 4866714813723656552L;
 
 	/** 
 	 * 定损结果置信度，小数，取值范围为0到1

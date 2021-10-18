@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3379671389382177895L;
+	private static final long serialVersionUID = 8288512956866215564L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。
@@ -60,7 +60,7 @@ M：手机校验码回填确认方式。
 
 	/**
 	 * 商户签约号，代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。
-格式规则：支持大写小写字母和数字，最长32位。
+自定义传入，格式规则：支持大写小写字母和数字，最长32位。
 商户系统按需传入，如果同一用户在同一产品码、同一签约场景下，签订了多份代扣协议，那么需要指定并传入该值。
 	 */
 	@ApiField("external_agreement_no")

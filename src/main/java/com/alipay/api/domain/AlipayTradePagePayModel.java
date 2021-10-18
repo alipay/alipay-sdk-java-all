@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3226538121862398726L;
+	private static final long serialVersionUID = 4715781175976117712L;
 
 	/**
 	 * 签约参数，支付后签约场景使用
@@ -112,7 +112,6 @@ PCWEB：PC端访问
 	/**
 	 * 公用回传参数。
 如果请求时传递了该参数，支付宝会在异步通知时将该参数原样返回。
-本参数必须进行UrlEncode之后才可以发送给支付宝。
 	 */
 	@ApiField("passback_params")
 	private String passbackParams;
@@ -196,7 +195,8 @@ PCWEB：PC端访问
 
 	/**
 	 * 订单绝对超时时间。
-格式为yyyy-MM-dd HH:mm。
+格式为yyyy-MM-dd HH:mm:ss。
+注：time_expire和timeout_express两者只需传入一个或者都不传，两者均传入时，优先使用time_expire。
 	 */
 	@ApiField("time_expire")
 	private String timeExpire;

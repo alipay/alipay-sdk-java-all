@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询账单关联的发票
  *
  * @author auto create
- * @since 1.0, 2021-10-14 17:14:00
+ * @since 1.0, 2021-10-18 16:24:37
  */
 public class AlipayBossFncGfsettleprodBillinvoiceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2661683826145671644L;
+	private static final long serialVersionUID = 7266754417149325752L;
+
+	/**
+	 * 申请单聚合id
+	 */
+	@ApiField("apply_relative_id")
+	private String applyRelativeId;
 
 	/**
 	 * 账单号
@@ -24,6 +30,13 @@ public class AlipayBossFncGfsettleprodBillinvoiceQueryModel extends AlipayObject
 	 */
 	@ApiField("seller_ip_role_id")
 	private String sellerIpRoleId;
+
+	public String getApplyRelativeId() {
+		return this.applyRelativeId;
+	}
+	public void setApplyRelativeId(String applyRelativeId) {
+		this.applyRelativeId = applyRelativeId;
+	}
 
 	public String getBillNo() {
 		return this.billNo;

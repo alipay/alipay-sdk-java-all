@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceSportsFacepayskinReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7273956467335294624L;
+	private static final long serialVersionUID = 4432136495243523627L;
 
 	/**
 	 * 北京时间的皮肤的过期日期,0点过期

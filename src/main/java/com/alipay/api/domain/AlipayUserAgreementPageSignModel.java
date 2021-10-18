@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4436752612183258745L;
+	private static final long serialVersionUID = 1678114451742818319L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -44,7 +44,7 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	/**
 	 * 商户签约号，代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。
 格式规则：支持大写小写字母和数字，最长32位。
-商户系统按需传入，如果同一用户在同一产品码、同一签约场景下，签订了多份代扣协议，那么需要指定并传入该值。
+商户系统按需自定义传入，如果同一用户在同一产品码、同一签约场景下，签订了多份代扣协议，那么需要指定并传入该值。
 	 */
 	@ApiField("external_agreement_no")
 	private String externalAgreementNo;

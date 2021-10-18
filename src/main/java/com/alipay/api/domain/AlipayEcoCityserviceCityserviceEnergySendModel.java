@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoCityserviceCityserviceEnergySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8664679388371136387L;
+	private static final long serialVersionUID = 7866741813346324485L;
 
 	/**
 	 * 扩展信息
@@ -24,7 +24,8 @@ public class AlipayEcoCityserviceCityserviceEnergySendModel extends AlipayObject
 	private List<EnergyExtRequest> extInfo;
 
 	/**
-	 * 外部业务号，用作幂等。同一场景下，一条外部业务号只可消费一次。
+	 * 外部业务号，用作幂等。
+自定义传入，同一场景下，一条外部业务号只可消费一次。
 	 */
 	@ApiField("outer_no")
 	private String outerNo;

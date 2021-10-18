@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppInvoiceOpenRedCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3365819159364789131L;
+	private static final long serialVersionUID = 4239691969617694794L;
 
 	/**
 	 * 用户申请开具的蓝票冲红时必须提供，用于交付用户发票，来自用户开票通知

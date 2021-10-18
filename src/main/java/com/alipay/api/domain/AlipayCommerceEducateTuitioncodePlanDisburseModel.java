@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 学费码打款请求
  *
  * @author auto create
- * @since 1.0, 2021-06-25 17:28:15
+ * @since 1.0, 2021-10-14 20:12:13
  */
 public class AlipayCommerceEducateTuitioncodePlanDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6871365351579267772L;
+	private static final long serialVersionUID = 4849747791275955154L;
 
 	/**
 	 * ISV订单号
@@ -20,10 +23,17 @@ public class AlipayCommerceEducateTuitioncodePlanDisburseModel extends AlipayObj
 	private String outOrderNo;
 
 	/**
-	 * 学费码打款计划编号
+	 * 学费码打款计划编号。优先使用plan_ids，如果是打款一个任务，传递一个编号即可
 	 */
 	@ApiField("plan_id")
 	private String planId;
+
+	/**
+	 * 批量打款的打款任务编号列表。建议不超过3个
+	 */
+	@ApiListField("plan_ids")
+	@ApiField("string")
+	private List<String> planIds;
 
 	/**
 	 * 2088401023137175
@@ -49,6 +59,13 @@ public class AlipayCommerceEducateTuitioncodePlanDisburseModel extends AlipayObj
 	}
 	public void setPlanId(String planId) {
 		this.planId = planId;
+	}
+
+	public List<String> getPlanIds() {
+		return this.planIds;
+	}
+	public void setPlanIds(List<String> planIds) {
+		this.planIds = planIds;
 	}
 
 	public String getSmid() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PortfolioInfoOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5698864829962567986L;
+	private static final long serialVersionUID = 6695886695513287439L;
 
 	/**
 	 * 头图素材id

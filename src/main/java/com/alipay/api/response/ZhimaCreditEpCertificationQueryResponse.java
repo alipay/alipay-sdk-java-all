@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-02 19:20:30
+ * @since 1.0, 2021-10-15 16:07:46
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1716926561338532479L;
+	private static final long serialVersionUID = 1887674643767434244L;
 
 	/** 
 	 * 代理函有效访问地址，有效时间2分钟，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
@@ -36,6 +36,18 @@ FAIL，代表用户未授权或授权失效
 	private String businessLicense;
 
 	/** 
+	 * 代理人认证渠道，取值如下：LPIDCARD代表法人身份证认证渠道；EMAIL代表企业邮箱认证渠道
+	 */
+	@ApiField("certify_channel")
+	private String certifyChannel;
+
+	/** 
+	 * 认证模式，取值如下：ATTORNEY代表代理人；LEGAL_PERSON代表法定代表人
+	 */
+	@ApiField("certify_mode")
+	private String certifyMode;
+
+	/** 
 	 * 认证状态，取值如下：
 SUCCESS，代表成功
 INIT，代表初始化
@@ -44,6 +56,12 @@ FAIL，代表失败
 	 */
 	@ApiField("certify_status")
 	private String certifyStatus;
+
+	/** 
+	 * 企业邮箱地址
+	 */
+	@ApiField("email_address")
+	private String emailAddress;
 
 	/** 
 	 * 统一社会信用代码或营业执照注册号，字段auth_status为SUCCESS时返回
@@ -96,11 +114,32 @@ FAIL，代表失败
 		return this.businessLicense;
 	}
 
+	public void setCertifyChannel(String certifyChannel) {
+		this.certifyChannel = certifyChannel;
+	}
+	public String getCertifyChannel( ) {
+		return this.certifyChannel;
+	}
+
+	public void setCertifyMode(String certifyMode) {
+		this.certifyMode = certifyMode;
+	}
+	public String getCertifyMode( ) {
+		return this.certifyMode;
+	}
+
 	public void setCertifyStatus(String certifyStatus) {
 		this.certifyStatus = certifyStatus;
 	}
 	public String getCertifyStatus( ) {
 		return this.certifyStatus;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+	public String getEmailAddress( ) {
+		return this.emailAddress;
 	}
 
 	public void setEpCertNo(String epCertNo) {
