@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业免押额度申请
  *
  * @author auto create
- * @since 1.0, 2018-03-16 13:47:50
+ * @since 1.0, 2021-10-27 17:15:27
  */
 public class ZhimaCreditEpFreedepositApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5273661169229274989L;
+	private static final long serialVersionUID = 7816399157551181873L;
 
 	/**
 	 * 商户业务流水号，由商户生成，每次业务唯一。

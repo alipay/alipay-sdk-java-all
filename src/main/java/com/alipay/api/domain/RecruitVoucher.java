@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 3547678554413972192L;
+	private static final long serialVersionUID = 6268731419248697979L;
 
 	/**
 	 * 券活动id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网证验证接口
  *
  * @author auto create
- * @since 1.0, 2019-01-14 14:46:41
+ * @since 1.0, 2021-10-25 11:14:39
  */
 public class AlipaySecurityProdCtidVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6267986712971851264L;
+	private static final long serialVersionUID = 3588235451859942422L;
 
 	/**
 	 * 身份证号码

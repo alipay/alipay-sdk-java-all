@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增开票规则绑定费控规则
  *
  * @author auto create
- * @since 1.0, 2021-09-24 18:18:47
+ * @since 1.0, 2021-10-25 15:50:38
  */
 public class AlipayEbppInvoiceEnterpriseconsumeOpenrulerelationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7354558455783282819L;
+	private static final long serialVersionUID = 7125878995732156739L;
 
 	/**
 	 * 企业签约企业合花ID-共同账号ID

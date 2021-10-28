@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayDataDataserviceShoppingmallrecShopQueryModel;
+import com.alipay.api.domain.ZhimaCustomerJobworthPositionAddModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayDataDataserviceShoppingmallrecShopQueryResponse;
+import com.alipay.api.response.ZhimaCustomerJobworthPositionAddResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.data.dataservice.shoppingmallrec.shop.query request
+ * ALIPAY API: zhima.customer.jobworth.position.add request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:12:40
+ * @since 1.0, 2021-10-22 11:10:32
  */
-public class AlipayDataDataserviceShoppingmallrecShopQueryRequest implements AlipayRequest<AlipayDataDataserviceShoppingmallrecShopQueryResponse> {
+public class ZhimaCustomerJobworthPositionAddRequest implements AlipayRequest<ZhimaCustomerJobworthPositionAddResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 商场店铺推荐
+	* 职得工作证岗位收集
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayDataDataserviceShoppingmallrecShopQueryRequest implements Ali
 	}
 
 	public String getApiMethodName() {
-		return "alipay.data.dataservice.shoppingmallrec.shop.query";
+		return "zhima.customer.jobworth.position.add";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayDataDataserviceShoppingmallrecShopQueryRequest implements Ali
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayDataDataserviceShoppingmallrecShopQueryResponse> getResponseClass() {
-		return AlipayDataDataserviceShoppingmallrecShopQueryResponse.class;
+	public Class<ZhimaCustomerJobworthPositionAddResponse> getResponseClass() {
+		return ZhimaCustomerJobworthPositionAddResponse.class;
 	}
 	
 

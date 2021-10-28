@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2021-10-18 10:25:07
+ * @since 1.0, 2021-10-27 14:38:49
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3634118485793141277L;
+	private static final long serialVersionUID = 8349557439145741677L;
 
 	/**
 	 * 公司账号ID
@@ -74,13 +74,25 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String employeeId;
 
 	/**
+	 * 商户id
+	 */
+	@ApiField("merchant_id")
+	private String merchantId;
+
+	/**
+	 * 门店id
+	 */
+	@ApiField("mshop_id")
+	private String mshopId;
+
+	/**
 	 * 开票模式
 	 */
 	@ApiField("open_model")
 	private String openModel;
 
 	/**
-	 * 退款交易关联正交易单号
+	 * 退款交易关联正交易单号(对应正交易的bill_no)
 	 */
 	@ApiField("original_voucher_id")
 	private String originalVoucherId;
@@ -120,6 +132,12 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("standard_id")
 	private String standardId;
+
+	/**
+	 * 外部门店id
+	 */
+	@ApiField("store_id")
+	private String storeId;
 
 	/**
 	 * 批次id
@@ -209,6 +227,20 @@ public class ExpenseConsumeInfo extends AlipayObject {
 		this.employeeId = employeeId;
 	}
 
+	public String getMerchantId() {
+		return this.merchantId;
+	}
+	public void setMerchantId(String merchantId) {
+		this.merchantId = merchantId;
+	}
+
+	public String getMshopId() {
+		return this.mshopId;
+	}
+	public void setMshopId(String mshopId) {
+		this.mshopId = mshopId;
+	}
+
 	public String getOpenModel() {
 		return this.openModel;
 	}
@@ -263,6 +295,13 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	}
 	public void setStandardId(String standardId) {
 		this.standardId = standardId;
+	}
+
+	public String getStoreId() {
+		return this.storeId;
+	}
+	public void setStoreId(String storeId) {
+		this.storeId = storeId;
 	}
 
 	public String getSummaryId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商家账户历史余额查询
  *
  * @author auto create
- * @since 1.0, 2019-10-11 10:58:28
+ * @since 1.0, 2021-10-27 20:09:57
  */
 public class AlipayDataBillBalancehisQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1558656144516131452L;
+	private static final long serialVersionUID = 8428995781343351715L;
 
 	/**
 	 * 查询指定自然日的起初余额和期末余额，biz_date与biz_month传入参数互斥

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户信用能力评估
  *
  * @author auto create
- * @since 1.0, 2019-01-03 16:09:34
+ * @since 1.0, 2021-10-27 17:15:18
  */
 public class ZhimaCreditEpRatingInnerInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1784227677615836648L;
+	private static final long serialVersionUID = 1397883681246753559L;
 
 	/**
 	 * 企业信用类目，支持以下值：

@@ -8,20 +8,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.bill.stat.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-18 20:41:38
+ * @since 1.0, 2021-10-27 21:25:34
  */
 public class AlipayUserBillStatQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6431421723298219886L;
+	private static final long serialVersionUID = 2196379527787332618L;
 
 	/** 
-	 * 实付金额，单位分
+	 * 实付金额，单位元
 	 */
 	@ApiField("expenditure_amount")
 	private String expenditureAmount;
 
 	/** 
-	 * 实收金额，单位分
+	 * 实收金额，单位元
 	 */
 	@ApiField("income_amount")
 	private String incomeAmount;

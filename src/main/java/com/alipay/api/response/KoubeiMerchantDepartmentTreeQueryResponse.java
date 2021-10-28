@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.department.tree.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-06 14:56:21
+ * @since 1.0, 2021-10-27 14:07:44
  */
 public class KoubeiMerchantDepartmentTreeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6488231778478639333L;
+	private static final long serialVersionUID = 2875244564725125761L;
 
 	/** 
 	 * 商户部门组织模型集合，根据返回的结果构造出商户的部门树

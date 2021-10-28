@@ -302,7 +302,8 @@ public class AlipaySignature {
         List<String> keys = new ArrayList<String>(sortedParams.keySet());
         Collections.sort(keys);
         int index = 0;
-        for (String key : keys) {
+        for (int i = 0; i < keys.size(); i++) {
+            String key = keys.get(i);
             String value = sortedParams.get(key);
             if (StringUtils.areNotEmpty(key, value)) {
                 content.append(index == 0 ? "" : "&").append(key).append("=").append(value);
@@ -477,10 +478,14 @@ public class AlipaySignature {
         List<String> keys = new ArrayList<String>(params.keySet());
         Collections.sort(keys);
 
+        int index = 0;
         for (int i = 0; i < keys.size(); i++) {
             String key = keys.get(i);
             String value = params.get(key);
-            content.append((i == 0 ? "" : "&") + key + "=" + value);
+            if (StringUtils.areNotEmpty(key, value)) {
+                content.append((index == 0 ? "" : "&") + key + "=" + value);
+                index++;
+            }
         }
 
         return content.toString();
@@ -497,10 +502,14 @@ public class AlipaySignature {
         List<String> keys = new ArrayList<String>(params.keySet());
         Collections.sort(keys);
 
+        int index = 0;
         for (int i = 0; i < keys.size(); i++) {
             String key = keys.get(i);
             String value = params.get(key);
-            content.append(i == 0 ? "" : "&").append(key).append("=").append(value);
+            if (StringUtils.areNotEmpty(key, value)) {
+                content.append(index == 0 ? "" : "&").append(key).append("=").append(value);
+                index++;
+            }
         }
 
         return content.toString();

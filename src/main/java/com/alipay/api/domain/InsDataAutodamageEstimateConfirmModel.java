@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsDataAutodamageEstimateConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2415186836569415575L;
+	private static final long serialVersionUID = 1531133744627471721L;
 
 	/**
 	 * 受损程度

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 站点线路信息。描述某个站点上某个线路模型
  *
  * @author auto create
- * @since 1.0, 2020-09-30 14:59:58
+ * @since 1.0, 2021-10-22 11:09:08
  */
 public class StationLine extends AlipayObject {
 
-	private static final long serialVersionUID = 8775428522499119284L;
+	private static final long serialVersionUID = 6437557388673484511L;
 
 	/**
 	 * 实时公交到站信息

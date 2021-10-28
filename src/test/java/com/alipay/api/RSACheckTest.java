@@ -78,4 +78,22 @@ public class RSACheckTest {
 
         assertThat(result, is(true));
     }
+
+    @Test
+    public void should_pass_rsa_check_when_sign_type_is_rsa3() throws AlipayApiException {
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("method","koubei.marketing.data.indicator.query");
+        params.put("app_id", "2019090366875133");
+        params.put("", "test");
+        params.put("test", null);
+        String privateKey = TestAccount.ProdCert.getConfig().getPrivateKey();
+        String sign = AlipaySignature.sign(params,privateKey,"utf-8","RSA2");
+        //given
+//        params.put("sign_type", "RSA2");
+        params.put("sign",sign);
+        //when
+        boolean result = AlipaySignature.verifyV2(params, publicKey, "utf-8", "RSA2");
+        //then
+        assertThat(result, is(true));
+    }
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商家账户充值，转账，提现查询
  *
  * @author auto create
- * @since 1.0, 2019-11-25 16:10:32
+ * @since 1.0, 2021-10-27 20:09:25
  */
 public class AlipayDataBillTransferQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5276258493379516889L;
+	private static final long serialVersionUID = 3387836312273485983L;
 
 	/**
 	 * 充值、转账、提现流水业务时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间

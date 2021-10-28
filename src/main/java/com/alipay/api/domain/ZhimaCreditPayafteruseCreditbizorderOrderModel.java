@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻后付免密下单
  *
  * @author auto create
- * @since 1.0, 2021-08-02 14:29:22
+ * @since 1.0, 2021-10-27 16:32:49
  */
 public class ZhimaCreditPayafteruseCreditbizorderOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5457236528571769681L;
+	private static final long serialVersionUID = 5248152663148719382L;
 
 	/**
 	 * 订单描述

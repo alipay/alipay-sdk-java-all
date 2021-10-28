@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2021-10-09 14:57:15
+ * @since 1.0, 2021-10-21 17:05:52
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5574186219327983924L;
+	private static final long serialVersionUID = 8781344966467655398L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -149,7 +149,6 @@ NOT_COMPLETE：转交易完成后不解冻剩余冻结金额；
 	/**
 	 * 公用回传参数。
 如果请求时传递了该参数，支付宝会在异步通知时将该参数原样返回。
-本参数必须进行UrlEncode之后才可以发送给支付宝。
 	 */
 	@ApiField("passback_params")
 	private String passbackParams;
@@ -270,6 +269,14 @@ json格式，详见结算参数说明。
 	 */
 	@ApiField("terminal_params")
 	private String terminalParams;
+
+	/**
+	 * 订单绝对超时时间。
+格式为yyyy-MM-dd HH:mm:ss。
+注：time_expire和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
+	 */
+	@ApiField("time_expire")
+	private String timeExpire;
 
 	/**
 	 * 订单相对超时时间。从交易创建时间开始计算。
@@ -541,6 +548,13 @@ json格式，详见结算参数说明。
 	}
 	public void setTerminalParams(String terminalParams) {
 		this.terminalParams = terminalParams;
+	}
+
+	public String getTimeExpire() {
+		return this.timeExpire;
+	}
+	public void setTimeExpire(String timeExpire) {
+		this.timeExpire = timeExpire;
 	}
 
 	public String getTimeoutExpress() {

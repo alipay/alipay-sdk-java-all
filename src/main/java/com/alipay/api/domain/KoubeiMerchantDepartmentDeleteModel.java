@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除商户部门
  *
  * @author auto create
- * @since 1.0, 2021-05-06 14:54:33
+ * @since 1.0, 2021-10-27 14:05:48
  */
 public class KoubeiMerchantDepartmentDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6165118189935713172L;
+	private static final long serialVersionUID = 8468613929944152311L;
 
 	/**
 	 * isv回传的auth_code，通过auth_code校验当前操作人与商户的关系

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大出行智能平台-时刻表任务-线路信息
  *
  * @author auto create
- * @since 1.0, 2020-08-18 21:31:50
+ * @since 1.0, 2021-10-26 21:56:23
  */
 public class TimeTableLineInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4841234841355131936L;
+	private static final long serialVersionUID = 7767597636516936688L;
 
 	/**
 	 * 自定义发车间隔列表，在指定时间区间内覆盖全局配置

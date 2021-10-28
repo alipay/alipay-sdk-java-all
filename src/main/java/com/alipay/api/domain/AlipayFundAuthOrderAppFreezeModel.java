@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上资金授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2021-08-23 16:53:21
+ * @since 1.0, 2021-10-19 14:49:00
  */
 public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1466111553183293195L;
+	private static final long serialVersionUID = 4254532497389962828L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位。
@@ -115,6 +115,14 @@ public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 	private String settleCurrency;
 
 	/**
+	 * 预授权订单相对超时时间。从商户客户端请求时间开始计算。
+预授权订单允许的最晚授权时间，逾期将关闭该笔订单。取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为90m。
+默认为15m。
+	 */
+	@ApiField("timeout_express")
+	private String timeoutExpress;
+
+	/**
 	 * 标价币种,  amount 对应的币种单位。支持澳元：AUD, 新西兰元：NZD, 台币：TWD, 美元：USD, 欧元：EUR, 英镑：GBP, 人民币：CNY
 	 */
 	@ApiField("trans_currency")
@@ -216,6 +224,13 @@ public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 	}
 	public void setSettleCurrency(String settleCurrency) {
 		this.settleCurrency = settleCurrency;
+	}
+
+	public String getTimeoutExpress() {
+		return this.timeoutExpress;
+	}
+	public void setTimeoutExpress(String timeoutExpress) {
+		this.timeoutExpress = timeoutExpress;
 	}
 
 	public String getTransCurrency() {

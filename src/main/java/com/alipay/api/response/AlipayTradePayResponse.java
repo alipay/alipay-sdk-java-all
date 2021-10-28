@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.VoucherDetail;
 
@@ -13,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-09 14:57:15
+ * @since 1.0, 2021-10-27 15:16:35
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8525493324964947681L;
+	private static final long serialVersionUID = 7575786675878295538L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -133,6 +134,12 @@ bluesea_1：蓝海活动优惠费率标签；
 	 */
 	@ApiField("discount_goods_detail")
 	private String discountGoodsDetail;
+
+	/** 
+	 * 因公付支付信息，只有入参的query_options中指定时才返回该字段信息
+	 */
+	@ApiField("enterprise_pay_info")
+	private EnterprisePayInfo enterprisePayInfo;
 
 	/** 
 	 * 交易支付使用的资金渠道。
@@ -375,6 +382,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	}
 	public String getDiscountGoodsDetail( ) {
 		return this.discountGoodsDetail;
+	}
+
+	public void setEnterprisePayInfo(EnterprisePayInfo enterprisePayInfo) {
+		this.enterprisePayInfo = enterprisePayInfo;
+	}
+	public EnterprisePayInfo getEnterprisePayInfo( ) {
+		return this.enterprisePayInfo;
 	}
 
 	public void setFundBillList(List<TradeFundBill> fundBillList) {

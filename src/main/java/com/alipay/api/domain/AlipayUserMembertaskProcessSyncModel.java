@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员任务进程推进接口
  *
  * @author auto create
- * @since 1.0, 2021-01-20 01:53:41
+ * @since 1.0, 2021-10-25 17:09:01
  */
 public class AlipayUserMembertaskProcessSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4425487791119336179L;
+	private static final long serialVersionUID = 1326793793671423635L;
+
+	/**
+	 * 标识目标业务的动态业务参数
+	 */
+	@ApiField("biz_param")
+	private String bizParam;
 
 	/**
 	 * 标识目标业务的业务大类
@@ -42,6 +48,13 @@ public class AlipayUserMembertaskProcessSyncModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getBizParam() {
+		return this.bizParam;
+	}
+	public void setBizParam(String bizParam) {
+		this.bizParam = bizParam;
+	}
 
 	public String getBizType() {
 		return this.bizType;

@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 修改分账场景描述
+ * 新增分账对手方名称字段
  *
  * @author auto create
- * @since 1.0, 2021-03-02 22:48:42
+ * @since 1.0, 2021-10-26 12:14:15
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 4496333328173335396L;
+	private static final long serialVersionUID = 3671627815653441792L;
 
 	/**
 	 * 分账的金额，单位为元
@@ -51,6 +51,12 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	 */
 	@ApiField("trans_in")
 	private String transIn;
+
+	/**
+	 * 分账收款方姓名，上送则进行姓名与支付宝账号的一致性校验，校验不一致则分账失败。不上送则不进行姓名校验
+	 */
+	@ApiField("trans_in_name")
+	private String transInName;
 
 	/**
 	 * 收入方账户类型。userId表示是支付宝账号对应的支付宝唯一用户号;cardAliasNo表示是卡编号;loginName表示是支付宝登录号；
@@ -110,6 +116,13 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	}
 	public void setTransIn(String transIn) {
 		this.transIn = transIn;
+	}
+
+	public String getTransInName() {
+		return this.transInName;
+	}
+	public void setTransInName(String transInName) {
+		this.transInName = transInName;
 	}
 
 	public String getTransInType() {

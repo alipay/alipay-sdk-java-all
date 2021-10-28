@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 子场馆入驻详情信息
  *
  * @author auto create
- * @since 1.0, 2021-06-11 10:41:31
+ * @since 1.0, 2021-10-21 09:55:34
  */
 public class SubVenueCreateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4259426688273972253L;
+	private static final long serialVersionUID = 6571317426779818513L;
 
 	/**
 	 * 入场要求
@@ -67,13 +67,14 @@ public class SubVenueCreateInfo extends AlipayObject {
 	private String openingHours;
 
 	/**
-	 * 服务商场馆ID
+	 * 子场馆在服务商的ID
 	 */
 	@ApiField("out_sub_venue_id")
 	private String outSubVenueId;
 
 	/**
-	 * 收款方支付宝账户（payment_method)为空或account时必传
+	 * （半中心化场馆）不填
+（中心化场馆）收款方支付宝账户，当payment_method为空或account时必传
 	 */
 	@ApiField("payee_account")
 	private String payeeAccount;
@@ -87,7 +88,9 @@ smid：通过smid收款
 	private String paymentMethod;
 
 	/**
-	 * 收款类型（indirect=间连/direct=直连）
+	 * （半中心化场馆）不填，
+（中心化场馆）收款类型
+（indirect=间连/direct=直连）
 直连：收款方为商户/场馆
 间连：收款方为服务商
 	 */
@@ -115,7 +118,8 @@ smid：通过smid收款
 	private String poster;
 
 	/**
-	 * 场馆售卖产品类型集合，逗号隔开
+	 * （半中心化场馆）不填
+（中心化场馆） 场馆售卖产品类型集合
 calendar：价格日历
 ticket：票券
 course: 课程

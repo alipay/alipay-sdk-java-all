@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 实时公交线路信息
  *
  * @author auto create
- * @since 1.0, 2020-11-04 10:31:45
+ * @since 1.0, 2021-10-22 11:09:08
  */
 public class BusRealtimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3677956359715982442L;
+	private static final long serialVersionUID = 1342857336988161123L;
 
 	/**
 	 * 线路id，线路的唯一标志。

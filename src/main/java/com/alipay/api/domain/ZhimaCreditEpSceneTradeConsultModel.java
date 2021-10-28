@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易评估咨询
  *
  * @author auto create
- * @since 1.0, 2019-04-17 16:52:00
+ * @since 1.0, 2021-10-27 17:13:31
  */
 public class ZhimaCreditEpSceneTradeConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4427872551118712372L;
+	private static final long serialVersionUID = 6588446637266754345L;
 
 	/**
 	 * 信用交易额度，单位为：人民币分，整型；

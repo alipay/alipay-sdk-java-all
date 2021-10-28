@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC生态发行订单数据同步
  *
  * @author auto create
- * @since 1.0, 2021-09-17 10:22:38
+ * @since 1.0, 2021-10-25 13:52:52
  */
 public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8646636194641637242L;
+	private static final long serialVersionUID = 6184572235764328248L;
 
 	/**
 	 * 收单方式，支付宝收单：ALIPAY;银行收单：BANK

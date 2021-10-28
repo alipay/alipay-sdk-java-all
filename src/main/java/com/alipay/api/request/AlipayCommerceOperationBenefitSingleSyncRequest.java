@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayCommerceTransportParkingReserveConfirmModel;
+import com.alipay.api.domain.AlipayCommerceOperationBenefitSingleSyncModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayCommerceTransportParkingReserveConfirmResponse;
+import com.alipay.api.response.AlipayCommerceOperationBenefitSingleSyncResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.commerce.transport.parking.reserve.confirm request
+ * ALIPAY API: alipay.commerce.operation.benefit.single.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-06-22 17:13:30
+ * @since 1.0, 2021-10-27 19:56:40
  */
-public class AlipayCommerceTransportParkingReserveConfirmRequest implements AlipayRequest<AlipayCommerceTransportParkingReserveConfirmResponse> {
+public class AlipayCommerceOperationBenefitSingleSyncRequest implements AlipayRequest<AlipayCommerceOperationBenefitSingleSyncResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 支付宝车位运营预约单创建确认
+	* 商家单个权益同步接口
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayCommerceTransportParkingReserveConfirmRequest implements Alip
 	}
 
 	public String getApiMethodName() {
-		return "alipay.commerce.transport.parking.reserve.confirm";
+		return "alipay.commerce.operation.benefit.single.sync";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayCommerceTransportParkingReserveConfirmRequest implements Alip
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayCommerceTransportParkingReserveConfirmResponse> getResponseClass() {
-		return AlipayCommerceTransportParkingReserveConfirmResponse.class;
+	public Class<AlipayCommerceOperationBenefitSingleSyncResponse> getResponseClass() {
+		return AlipayCommerceOperationBenefitSingleSyncResponse.class;
 	}
 	
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 特权对象，可以区分出通用特权与动态特权（有规则的权益）
  *
  * @author auto create
- * @since 1.0, 2021-10-11 11:03:10
+ * @since 1.0, 2021-10-19 09:19:47
  */
 public class PrivilegeBenefit extends AlipayObject {
 
-	private static final long serialVersionUID = 6852229613152733189L;
+	private static final long serialVersionUID = 3845366737677346228L;
 
 	/**
 	 * 权益内容，KV形式
@@ -59,6 +59,13 @@ public class PrivilegeBenefit extends AlipayObject {
 	 */
 	@ApiField("priority")
 	private String priority;
+
+	/**
+	 * ENABLE("已生效"),
+DISABLE("未生效");
+	 */
+	@ApiField("status")
+	private String status;
 
 	/**
 	 * 权益的副标题
@@ -125,6 +132,13 @@ public class PrivilegeBenefit extends AlipayObject {
 	}
 	public void setPriority(String priority) {
 		this.priority = priority;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getSubTitle() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业抬头模型
  *
  * @author auto create
- * @since 1.0, 2021-09-23 14:23:27
+ * @since 1.0, 2021-10-26 19:41:27
  */
 public class EnterpriseTitleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8225321587489952265L;
+	private static final long serialVersionUID = 3228196874292999454L;
 
 	/**
 	 * 详细地址

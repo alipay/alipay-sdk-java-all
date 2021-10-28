@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户自主监控自定义指标数据上报接口
  *
  * @author auto create
- * @since 1.0, 2019-03-20 14:35:39
+ * @since 1.0, 2021-10-22 16:28:20
  */
 public class AlipayCommerceDataCustommetricSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3342827926388822696L;
+	private static final long serialVersionUID = 5671659529561863665L;
 
 	/**
 	 * 自定义监控指标数据结构，商户与支付宝进行监控共建场景使用，用户按照数据结构自主上传

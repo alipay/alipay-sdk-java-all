@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.data.logdata.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-03-22 15:25:00
+ * @since 1.0, 2021-10-22 16:27:49
  */
 public class AlipayCommerceDataLogdataSyncRequest implements AlipayRequest<AlipayCommerceDataLogdataSyncResponse> {
 

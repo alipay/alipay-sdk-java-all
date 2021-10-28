@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FraudData extends AlipayObject {
 
-	private static final long serialVersionUID = 1683381145866189867L;
+	private static final long serialVersionUID = 8541735598869297654L;
 
 	/**
 	 * 设备id

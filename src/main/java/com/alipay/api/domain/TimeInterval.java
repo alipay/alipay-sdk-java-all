@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大出行智能平台-时刻表任务-自定义发车间隔
  *
  * @author auto create
- * @since 1.0, 2020-08-17 21:23:31
+ * @since 1.0, 2021-10-26 21:56:23
  */
 public class TimeInterval extends AlipayObject {
 
-	private static final long serialVersionUID = 8445938585264395779L;
+	private static final long serialVersionUID = 2711522478343172656L;
 
 	/**
 	 * 时间区间结束时刻（hh24:mi:ss）

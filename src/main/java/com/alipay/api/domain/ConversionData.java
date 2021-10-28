@@ -10,26 +10,33 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2021-10-15 15:20:43
+ * @since 1.0, 2021-10-20 23:03:58
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 2878485349533648562L;
+	private static final long serialVersionUID = 6787162265213435883L;
 
 	/**
-	 * 留资流水号，用于source=XLIGHT
+	 * 转化流水号，用于幂等
+
+对于source=XLIGHT，转化流水号来自灯火的留资明细
+对于source=DATASET/OTHER，转化流水号由调用方自定义
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
 
 	/**
-	 * 转化金额，单位分
+	 * 当source=DATASET或者OTHER时使用：
+
+转化金额，单位分
 	 */
 	@ApiField("conversion_amount")
 	private String conversionAmount;
 
 	/**
-	 * 转化事件ID
+	 * 当source=XLIGHT时使用:
+
+转化事件id，来自推广页关联转化事件id
 	 */
 	@ApiField("conversion_id")
 	private String conversionId;
@@ -41,7 +48,9 @@ public class ConversionData extends AlipayObject {
 	private Long conversionTime;
 
 	/**
-	 * 转化事件类型
+	 * 当source=XLIGHT时使用:
+
+转化事件类型
 	 */
 	@ApiField("conversion_type")
 	private String conversionType;
@@ -53,10 +62,23 @@ public class ConversionData extends AlipayObject {
 	private String creativeId;
 
 	/**
-	 * 数据集id
+	 * 当source=XLIGHT或者DATASET时使用：
+
+数据集id
 	 */
 	@ApiField("data_id")
 	private String dataId;
+
+	/**
+	 * 当source=OTHER时使用:
+
+数据类型：
+KR_MEMBER - 客如云入会
+KR_TRADE - 客如云交易
+TB_LIVE -  淘宝直播
+	 */
+	@ApiField("data_src_type")
+	private String dataSrcType;
 
 	/**
 	 * 单元ID
@@ -77,33 +99,61 @@ public class ConversionData extends AlipayObject {
 	private String principalId;
 
 	/**
-	 * 商家标志
+	 * 商家标志，可代替principal_id
 	 */
 	@ApiField("principal_tag")
 	private String principalTag;
 
 	/**
-	 * 留资数据列表，用于source=OTHER
+	 * 当source=DATASET或者OTHER时使用：
+
+转化属性列表
 	 */
 	@ApiListField("property_list")
 	@ApiField("conversion_property")
 	private List<ConversionProperty> propertyList;
 
 	/**
-	 * 留资来源：XLIGHT-灯火留资；OTHER-其它
+	 * 来源：
+XLIGHT-灯火留资
+DATASET-数据集
+OTHER-其它
 	 */
 	@ApiField("source")
 	private String source;
 
 	/**
-	 * 转化用户唯一标识
+	 * 当source=OTHER时使用：
+主体id，比如品牌id
+	 */
+	@ApiField("target_id")
+	private String targetId;
+
+	/**
+	 * 当source=OTHER时使用：
+
+主体类型：
+BRAND - 品牌
+STORE - 店铺
+LIVE - 直播
+等等
+	 */
+	@ApiField("target_type")
+	private String targetType;
+
+	/**
+	 * 当source=DATASET或者OTHER时使用：
+
+转化用户唯一标识
 	 */
 	@ApiField("uuid")
 	private String uuid;
 
 	/**
-	 * PID : 2088pid
-PHONE : 手机号
+	 * 当source=DATASET或者OTHER时使用：
+
+转化客户唯一标志类型：
+PID - 2088pid
 	 */
 	@ApiField("uuid_type")
 	private String uuidType;
@@ -157,6 +207,13 @@ PHONE : 手机号
 		this.dataId = dataId;
 	}
 
+	public String getDataSrcType() {
+		return this.dataSrcType;
+	}
+	public void setDataSrcType(String dataSrcType) {
+		this.dataSrcType = dataSrcType;
+	}
+
 	public String getGroupId() {
 		return this.groupId;
 	}
@@ -197,6 +254,20 @@ PHONE : 手机号
 	}
 	public void setSource(String source) {
 		this.source = source;
+	}
+
+	public String getTargetId() {
+		return this.targetId;
+	}
+	public void setTargetId(String targetId) {
+		this.targetId = targetId;
+	}
+
+	public String getTargetType() {
+		return this.targetType;
+	}
+	public void setTargetType(String targetType) {
+		this.targetType = targetType;
 	}
 
 	public String getUuid() {

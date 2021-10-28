@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 指纹注册
  *
  * @author auto create
- * @since 1.0, 2018-08-17 16:53:47
+ * @since 1.0, 2021-10-25 11:17:32
  */
 public class AlipaySecurityProdFingerprintApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7621885674619186459L;
+	private static final long serialVersionUID = 3191411681169119284L;
 
 	/**
 	 * IFAA协议的版本，目前为2.0

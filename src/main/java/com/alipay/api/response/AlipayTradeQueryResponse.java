@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.HbFqPayInfo;
 import com.alipay.api.domain.TradeSettleInfo;
@@ -15,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-16 16:06:33
+ * @since 1.0, 2021-10-19 08:27:44
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5366165312118259546L;
+	private static final long serialVersionUID = 2846521836653716228L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -126,6 +127,12 @@ bluesea_1：蓝海活动优惠费率标签；
 	private String discountGoodsDetail;
 
 	/** 
+	 * 因公付支付信息
+	 */
+	@ApiField("enterprise_pay_info")
+	private EnterprisePayInfo enterprisePayInfo;
+
+	/** 
 	 * 交易额外信息，特殊场景下与支付宝约定返回。
 json格式。
 	 */
@@ -177,6 +184,13 @@ json格式。
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/** 
+	 * 公用回传参数。
+返回支付时传入的passback_params参数信息
+	 */
+	@ApiField("passback_params")
+	private String passbackParams;
 
 	/** 
 	 * 支付币种订单金额
@@ -414,6 +428,13 @@ json格式。
 		return this.discountGoodsDetail;
 	}
 
+	public void setEnterprisePayInfo(EnterprisePayInfo enterprisePayInfo) {
+		this.enterprisePayInfo = enterprisePayInfo;
+	}
+	public EnterprisePayInfo getEnterprisePayInfo( ) {
+		return this.enterprisePayInfo;
+	}
+
 	public void setExtInfos(String extInfos) {
 		this.extInfos = extInfos;
 	}
@@ -468,6 +489,13 @@ json格式。
 	}
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
+	}
+
+	public void setPassbackParams(String passbackParams) {
+		this.passbackParams = passbackParams;
+	}
+	public String getPassbackParams( ) {
+		return this.passbackParams;
 	}
 
 	public void setPayAmount(String payAmount) {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信用服务履约同步(批量)
  *
  * @author auto create
- * @since 1.0, 2019-05-22 14:42:21
+ * @since 1.0, 2021-10-27 17:12:31
  */
 public class ZhimaCreditEpSceneFulfillmentlistSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3398346815367843575L;
+	private static final long serialVersionUID = 7391828584736684612L;
 
 	/**
 	 * 信用订单号，为<a href="https://opendocs.alipay.com/apis/api_8/zhima.credit.ep.scene.agreement.use">zhima.credit.ep.scene.agreement.use</a>接口加入信用服务后获取的credit_order_no（信用订单号）。

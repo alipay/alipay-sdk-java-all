@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2021-09-27 19:32:57
+ * @since 1.0, 2021-10-26 18:01:30
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4325386168311498134L;
+	private static final long serialVersionUID = 1571516628754949926L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -144,7 +144,10 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private String sellerId;
 
 	/**
-	 * 描述结算信息，json格式，详见结算参数说明
+	 * 结算信息。 
+json格式，详见结算参数说明，以下两种场景必传：
+1、互联网平台直付通场景 
+2、签约结算到卡且为业务汇总模式
 	 */
 	@ApiField("settle_info")
 	private SettleInfo settleInfo;
@@ -187,10 +190,15 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private String timeExpire;
 
 	/**
-	 * 订单相对超时时间。
-该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：5m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。 
-注：无线支付场景最小值为5m，低于5m支付超时时间按5m计算。
-注：time_express和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
+	 * 建议使用time_expire字段。
+
+订单相对超时时间。从买家确认支付核身后开始计算。
+该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：5m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
+默认值为15d。
+
+注：
+1. 无线支付场景最小值为5m，低于5m支付超时时间按5m计算。
+2. time_expire和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
 	 */
 	@ApiField("timeout_express")
 	private String timeoutExpress;

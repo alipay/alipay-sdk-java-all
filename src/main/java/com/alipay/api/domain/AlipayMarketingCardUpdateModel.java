@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡更新
  *
  * @author auto create
- * @since 1.0, 2021-08-18 14:18:43
+ * @since 1.0, 2021-10-26 15:29:44
  */
 public class AlipayMarketingCardUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3256512119439339179L;
+	private static final long serialVersionUID = 4361537143631178661L;
 
 	/**
 	 * 需要修改的最新卡信息
@@ -59,6 +59,12 @@ public class AlipayMarketingCardUpdateModel extends AlipayObject {
 	 */
 	@ApiField("occur_time")
 	private Date occurTime;
+
+	/**
+	 * 付费外卡信息，只供特定业务使用，通常接入无需关注
+	 */
+	@ApiField("paid_outer_card_info")
+	private PaidOuterCardExtraInfoDTO paidOuterCardInfo;
 
 	/**
 	 * 支付宝业务卡号，即通过<a href="">alipay.marketing.card.open</a>(会员卡开卡)接口开卡后获取的 card_info.biz_card_no 值。
@@ -113,6 +119,13 @@ BIZ_CARD：支付宝业务卡号（商户会员卡场景使用）。
 	}
 	public void setOccurTime(Date occurTime) {
 		this.occurTime = occurTime;
+	}
+
+	public PaidOuterCardExtraInfoDTO getPaidOuterCardInfo() {
+		return this.paidOuterCardInfo;
+	}
+	public void setPaidOuterCardInfo(PaidOuterCardExtraInfoDTO paidOuterCardInfo) {
+		this.paidOuterCardInfo = paidOuterCardInfo;
 	}
 
 	public String getTargetCardNo() {

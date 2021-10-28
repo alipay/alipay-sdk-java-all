@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 品牌box工单详情数据信息
  *
  * @author auto create
- * @since 1.0, 2021-09-17 18:02:47
+ * @since 1.0, 2021-10-26 18:28:37
  */
 public class SearchOrderDetailDataBrandItems extends AlipayObject {
 
-	private static final long serialVersionUID = 6124373773876991384L;
+	private static final long serialVersionUID = 8625654373758317659L;
 
 	/**
 	 * 工单详情bizid
@@ -33,6 +33,13 @@ public class SearchOrderDetailDataBrandItems extends AlipayObject {
 	 */
 	@ApiField("brand_box_keywords")
 	private String brandBoxKeywords;
+
+	/**
+	 * 工单详情数据信息
+	 */
+	@ApiListField("brand_detail_list")
+	@ApiField("search_order_brand_detail")
+	private List<SearchOrderBrandDetail> brandDetailList;
 
 	/**
 	 * 品牌展示模板类型
@@ -84,6 +91,13 @@ public class SearchOrderDetailDataBrandItems extends AlipayObject {
 	}
 	public void setBrandBoxKeywords(String brandBoxKeywords) {
 		this.brandBoxKeywords = brandBoxKeywords;
+	}
+
+	public List<SearchOrderBrandDetail> getBrandDetailList() {
+		return this.brandDetailList;
+	}
+	public void setBrandDetailList(List<SearchOrderBrandDetail> brandDetailList) {
+		this.brandDetailList = brandDetailList;
 	}
 
 	public String getBrandTemplateId() {

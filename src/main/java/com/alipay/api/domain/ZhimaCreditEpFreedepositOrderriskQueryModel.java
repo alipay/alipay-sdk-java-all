@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 免押订单风控查询
  *
  * @author auto create
- * @since 1.0, 2018-03-16 13:48:06
+ * @since 1.0, 2021-10-27 17:12:03
  */
 public class ZhimaCreditEpFreedepositOrderriskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2544774852243613386L;
+	private static final long serialVersionUID = 8387999969178327827L;
 
 	/**
 	 * 本次使用免押金额，分

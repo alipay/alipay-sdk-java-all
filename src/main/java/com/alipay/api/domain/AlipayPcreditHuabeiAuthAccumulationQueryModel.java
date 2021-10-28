@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单周期数据查询
  *
  * @author auto create
- * @since 1.0, 2021-09-29 17:23:20
+ * @since 1.0, 2021-10-26 22:24:50
  */
 public class AlipayPcreditHuabeiAuthAccumulationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8668937634278948833L;
+	private static final long serialVersionUID = 7796665453417531687L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。

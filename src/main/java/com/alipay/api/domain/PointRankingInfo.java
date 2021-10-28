@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PointRankingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7385552559812372359L;
+	private static final long serialVersionUID = 4554284416486556373L;
 
 	/**
 	 * 当前排名

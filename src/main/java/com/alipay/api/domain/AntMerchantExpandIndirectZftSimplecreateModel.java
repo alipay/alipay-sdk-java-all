@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户免证照进件
  *
  * @author auto create
- * @since 1.0, 2021-09-10 20:24:59
+ * @since 1.0, 2021-10-26 15:19:51
  */
 public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3183554973229146168L;
+	private static final long serialVersionUID = 6678312623426133885L;
 
 	/**
 	 * 补充证件图片，与additional_cert_no、additional_cert_type同时提供。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
@@ -41,25 +41,25 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private String aliasName;
 
 	/**
-	 * 结算支付宝账号，结算到商户支付宝账号时填写，默认值为与签约支付宝账号相同。本字段要求与签约支付宝账号同主体的实名认证支付宝账户(个体工商户可以与营业执照名称或法人名称相同)
+	 * 结算支付宝账号，结算账号使用支付宝账号时必填。本字段要求与商户名称name同名，且是实名认证支付宝账户(个体工商户可以与name或cert_name相同)
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
 
 	/**
-	 * 已实名认证支付宝账号，使用该支付宝账号签约直付通二级商户及后续服务，商户主体将与该支付宝账号相同
+	 * 签约支付宝账户，用于协议确认，及后续二级商户增值产品服务签约时使用。本字段要求与商户名称name同名(个体工商户可以与name或cert_name相同)，且是实名认证支付宝账户
 	 */
 	@ApiField("binding_alipay_logon_id")
 	private String bindingAlipayLogonId;
 
 	/**
-	 * 结算银行卡信息，如果结算到支付宝账号，则不需要填写。本业务当前只允许传入一张结算卡
+	 * 结算银行卡信息，如果结算到支付宝账号，则不需要填写。本业务当前只允许传入一张结算卡。个人类型商户不允许结算到银行卡
 	 */
 	@ApiField("biz_cards")
 	private SettleCardInfo bizCards;
 
 	/**
-	 * 经营地址。签约当面付必填。地址对象中省、市、区、地址必填，其余选填
+	 * 经营地址。使用当面付服务时必填。地址对象中省、市、区、地址必填，其余选填
 	 */
 	@ApiField("business_address")
 	private AddressInfo businessAddress;
@@ -83,7 +83,7 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private String externalId;
 
 	/**
-	 * 内景照，签约当面付必填。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
+	 * 内景照，使用当面付服务时必填。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("in_door_images")
 	private String inDoorImages;
@@ -108,7 +108,7 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private String mcc;
 
 	/**
-	 * 门头照，签约当面付必填。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
+	 * 门头照，使用当面付服务时必填。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("out_door_images")
 	private String outDoorImages;
@@ -140,7 +140,7 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private String signTimeWithIsv;
 
 	/**
-	 * 商户站点信息，包括网站、app、小程序站点。签约电脑支付或wap支付时，必须填充一个类型为01(网站)的SiteInfo对象，site_type/site_url/site_name必填；签约app支付时，必须填充类型为02(APP)或06(支付宝小程序)的SiteInfo对象，site_type/site_name必填
+	 * 商户站点信息，包括网站、app、小程序站点。使用电脑支付或wap支付服务时，必须填充一个类型为01(网站)的SiteInfo对象，site_type/site_url/site_name必填；使用app支付服务时，必须填充类型为02(APP)或06(支付宝小程序)的SiteInfo对象，site_type/site_name必填
 	 */
 	@ApiField("sites")
 	private SiteInfo sites;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上数用户信息核对身份查询接口
  *
  * @author auto create
- * @since 1.0, 2017-04-28 16:58:05
+ * @since 1.0, 2021-10-27 17:11:43
  */
 public class SsdataDataserviceDtevalIdentitycheckQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2775327984688721955L;
+	private static final long serialVersionUID = 8538515656371743318L;
 
 	/**
 	 * 工单流水号

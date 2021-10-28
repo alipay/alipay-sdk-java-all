@@ -2,6 +2,7 @@ package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.MerchantCard;
+import com.alipay.api.domain.PaidOuterCardExtraInfoDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -9,17 +10,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-18 14:19:49
+ * @since 1.0, 2021-10-26 15:40:33
  */
 public class AlipayMarketingCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3462832456852573453L;
+	private static final long serialVersionUID = 4194952365926588244L;
 
 	/** 
 	 * 商户卡信息
 	 */
 	@ApiField("card_info")
 	private MerchantCard cardInfo;
+
+	/** 
+	 * 付费外卡信息，只供特定业务使用，通常接入无需关注
+	 */
+	@ApiField("paid_outer_card_info")
+	private PaidOuterCardExtraInfoDTO paidOuterCardInfo;
 
 	/** 
 	 * 商户会员卡页面跳转到支付宝卡券详情页的pass_id，对应schema地址中的参数p，
@@ -39,6 +46,13 @@ public class AlipayMarketingCardQueryResponse extends AlipayResponse {
 	}
 	public MerchantCard getCardInfo( ) {
 		return this.cardInfo;
+	}
+
+	public void setPaidOuterCardInfo(PaidOuterCardExtraInfoDTO paidOuterCardInfo) {
+		this.paidOuterCardInfo = paidOuterCardInfo;
+	}
+	public PaidOuterCardExtraInfoDTO getPaidOuterCardInfo( ) {
+		return this.paidOuterCardInfo;
 	}
 
 	public void setPassId(String passId) {

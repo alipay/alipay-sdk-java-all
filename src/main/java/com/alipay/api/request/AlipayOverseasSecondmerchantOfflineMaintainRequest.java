@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayDataDataserviceShoppingmallrecVoucherQueryModel;
+import com.alipay.api.domain.AlipayOverseasSecondmerchantOfflineMaintainModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayDataDataserviceShoppingmallrecVoucherQueryResponse;
+import com.alipay.api.response.AlipayOverseasSecondmerchantOfflineMaintainResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.data.dataservice.shoppingmallrec.voucher.query request
+ * ALIPAY API: alipay.overseas.secondmerchant.offline.maintain request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:10:06
+ * @since 1.0, 2021-10-25 13:40:32
  */
-public class AlipayDataDataserviceShoppingmallrecVoucherQueryRequest implements AlipayRequest<AlipayDataDataserviceShoppingmallrecVoucherQueryResponse> {
+public class AlipayOverseasSecondmerchantOfflineMaintainRequest implements AlipayRequest<AlipayOverseasSecondmerchantOfflineMaintainResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 商场券推荐
+	* 海外商户报备接口
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayDataDataserviceShoppingmallrecVoucherQueryRequest implements 
 	}
 
 	public String getApiMethodName() {
-		return "alipay.data.dataservice.shoppingmallrec.voucher.query";
+		return "alipay.overseas.secondmerchant.offline.maintain";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayDataDataserviceShoppingmallrecVoucherQueryRequest implements 
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayDataDataserviceShoppingmallrecVoucherQueryResponse> getResponseClass() {
-		return AlipayDataDataserviceShoppingmallrecVoucherQueryResponse.class;
+	public Class<AlipayOverseasSecondmerchantOfflineMaintainResponse> getResponseClass() {
+		return AlipayOverseasSecondmerchantOfflineMaintainResponse.class;
 	}
 	
 

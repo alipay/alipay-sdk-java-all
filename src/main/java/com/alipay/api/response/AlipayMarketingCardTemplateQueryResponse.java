@@ -9,6 +9,7 @@ import com.alipay.api.domain.TemplateColumnInfoDTO;
 import com.alipay.api.domain.TemplateFieldRuleDTO;
 import com.alipay.api.domain.TemplateMdcodeNotifyConfDTO;
 import com.alipay.api.domain.TemplateOpenCardConfDTO;
+import com.alipay.api.domain.PaidOuterCardTemplateConfDTO;
 import com.alipay.api.domain.PubChannelDTO;
 import com.alipay.api.domain.TemplateBenefitInfoDTO;
 import com.alipay.api.domain.TemplateStyleInfoDTO;
@@ -19,11 +20,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-20 15:30:32
+ * @since 1.0, 2021-10-26 15:40:34
  */
 public class AlipayMarketingCardTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2741642864277243358L;
+	private static final long serialVersionUID = 5117296585151683786L;
 
 	/** 
 	 * 业务卡号前缀，由商户指定
@@ -96,6 +97,12 @@ OUT_MEMBER_CARD：外部权益卡
 	 */
 	@ApiField("open_card_conf")
 	private TemplateOpenCardConfDTO openCardConf;
+
+	/** 
+	 * 付费外卡配置。只供特定业务使用，通常接入无需关注
+	 */
+	@ApiField("paid_outer_card_conf")
+	private PaidOuterCardTemplateConfDTO paidOuterCardConf;
 
 	/** 
 	 * 卡模板投放渠道
@@ -201,6 +208,13 @@ OUT_MEMBER_CARD：外部权益卡
 	}
 	public TemplateOpenCardConfDTO getOpenCardConf( ) {
 		return this.openCardConf;
+	}
+
+	public void setPaidOuterCardConf(PaidOuterCardTemplateConfDTO paidOuterCardConf) {
+		this.paidOuterCardConf = paidOuterCardConf;
+	}
+	public PaidOuterCardTemplateConfDTO getPaidOuterCardConf( ) {
+		return this.paidOuterCardConf;
 	}
 
 	public void setPubChannels(List<PubChannelDTO> pubChannels) {

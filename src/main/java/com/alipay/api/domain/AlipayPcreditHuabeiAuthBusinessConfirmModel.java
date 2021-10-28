@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花芝业务信息确认接口
  *
  * @author auto create
- * @since 1.0, 2020-01-01 21:08:16
+ * @since 1.0, 2021-10-27 10:07:41
  */
 public class AlipayPcreditHuabeiAuthBusinessConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8312519186717787427L;
+	private static final long serialVersionUID = 4455671569533227947L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。

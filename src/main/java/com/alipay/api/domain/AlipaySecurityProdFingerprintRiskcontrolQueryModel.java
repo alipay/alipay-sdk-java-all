@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 指纹风险机型查询
  *
  * @author auto create
- * @since 1.0, 2018-08-17 16:53:25
+ * @since 1.0, 2021-10-25 11:17:43
  */
 public class AlipaySecurityProdFingerprintRiskcontrolQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3465671981958168425L;
+	private static final long serialVersionUID = 5155498651129292784L;
 
 	/**
 	 * aaid:指纹SDK获取到的aaid，与设备密钥一一对应，为IFAA定义的一个设备型号信息;

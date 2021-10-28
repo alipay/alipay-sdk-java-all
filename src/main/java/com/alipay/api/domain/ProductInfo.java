@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文体业务批量查询场馆产品信息SPI中的产品模型。
  *
  * @author auto create
- * @since 1.0, 2021-05-14 09:51:42
+ * @since 1.0, 2021-10-26 15:44:26
  */
 public class ProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4756331852533432476L;
+	private static final long serialVersionUID = 8842519813251145915L;
 
 	/**
 	 * 场馆的产品购买限制规则信息
@@ -112,6 +112,12 @@ public class ProductInfo extends AlipayObject {
 	 */
 	@ApiField("stock_count")
 	private Long stockCount;
+
+	/**
+	 * 核销时是否需要用户姓名，为true时需要用户姓名，为false为空值时不需要用户姓名，默认为空值不需要用户姓名。
+	 */
+	@ApiField("user_name_required")
+	private Boolean userNameRequired;
 
 	/**
 	 * 凭证类型：
@@ -242,6 +248,13 @@ public class ProductInfo extends AlipayObject {
 	}
 	public void setStockCount(Long stockCount) {
 		this.stockCount = stockCount;
+	}
+
+	public Boolean getUserNameRequired() {
+		return this.userNameRequired;
+	}
+	public void setUserNameRequired(Boolean userNameRequired) {
+		this.userNameRequired = userNameRequired;
 	}
 
 	public String getVoucherType() {

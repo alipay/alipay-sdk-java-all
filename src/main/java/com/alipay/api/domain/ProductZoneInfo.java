@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文体业务批量查询场馆产品信息SPI中的产品区间模型。
  *
  * @author auto create
- * @since 1.0, 2021-05-10 10:53:12
+ * @since 1.0, 2021-10-26 15:50:06
  */
 public class ProductZoneInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1398791398794782623L;
+	private static final long serialVersionUID = 7267483483534455664L;
 
 	/**
 	 * 结束时间
@@ -48,6 +48,12 @@ public class ProductZoneInfo extends AlipayObject {
 	 */
 	@ApiField("stock_count")
 	private Long stockCount;
+
+	/**
+	 * 商品规格。日历型票券商品必填，其他类型商品不需要填写。
+	 */
+	@ApiField("zone_name")
+	private String zoneName;
 
 	public String getEndTime() {
 		return this.endTime;
@@ -89,6 +95,13 @@ public class ProductZoneInfo extends AlipayObject {
 	}
 	public void setStockCount(Long stockCount) {
 		this.stockCount = stockCount;
+	}
+
+	public String getZoneName() {
+		return this.zoneName;
+	}
+	public void setZoneName(String zoneName) {
+		this.zoneName = zoneName;
 	}
 
 }

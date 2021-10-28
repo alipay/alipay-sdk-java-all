@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部链路小程序版本信息查询
  *
  * @author auto create
- * @since 1.0, 2020-02-10 10:52:35
+ * @since 1.0, 2021-10-20 17:42:25
  */
 public class AlipayOpenMiniInnerversionInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2455148841454953313L;
+	private static final long serialVersionUID = 3825167242555981296L;
 
 	/**
 	 * 业务来源，新接入方需要向支付宝申请专用来源，否则不予接入。https://yuque.antfin-inc.com/tinyapp-all/qddncu/bidushixiang

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡模板修改
  *
  * @author auto create
- * @since 1.0, 2020-10-23 15:19:20
+ * @since 1.0, 2021-10-26 15:29:36
  */
 public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5477567683733777661L;
+	private static final long serialVersionUID = 8381362479837175799L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -75,6 +75,12 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 	 */
 	@ApiField("open_card_conf")
 	private TemplateOpenCardConfDTO openCardConf;
+
+	/**
+	 * 付费外卡配置。只供特定业务使用，通常接入无需关注
+	 */
+	@ApiField("paid_outer_card_conf")
+	private PaidOuterCardTemplateConfDTO paidOuterCardConf;
 
 	/**
 	 * 卡模板投放渠道
@@ -191,6 +197,13 @@ mdbarcode: 商户动态条码，扫码得商户自主传入的码值。
 	}
 	public void setOpenCardConf(TemplateOpenCardConfDTO openCardConf) {
 		this.openCardConf = openCardConf;
+	}
+
+	public PaidOuterCardTemplateConfDTO getPaidOuterCardConf() {
+		return this.paidOuterCardConf;
+	}
+	public void setPaidOuterCardConf(PaidOuterCardTemplateConfDTO paidOuterCardConf) {
+		this.paidOuterCardConf = paidOuterCardConf;
 	}
 
 	public List<PubChannelDTO> getPubChannels() {
