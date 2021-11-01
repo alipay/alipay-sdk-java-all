@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户付款码皮肤信息
  *
  * @author auto create
- * @since 1.0, 2021-09-23 18:00:32
+ * @since 1.0, 2021-10-29 14:17:37
  */
 public class UserFacePaySkinInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7375254315599832528L;
+	private static final long serialVersionUID = 7369472518673949543L;
 
 	/**
 	 * 支持该皮肤的客户端最低版本
@@ -22,8 +22,7 @@ public class UserFacePaySkinInfo extends AlipayObject {
 	private String clientVersionLimit;
 
 	/**
-	 * 北京时间0点过期的日期(yyyy-MM-dd)
-若未领取/未授权 字段为空
+	 * 北京时间皮肤过期日期(yyyy-MM-dd)，当日的23点59分59秒，若未领取/未授权 字段为空
 	 */
 	@ApiField("expire_date")
 	private Date expireDate;

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InstAllocationQuotaVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1532487188659648567L;
+	private static final long serialVersionUID = 6483122778875349849L;
 
 	/**
 	 * 管控账号

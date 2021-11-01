@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户与店铺的关注关系
  *
  * @author auto create
- * @since 1.0, 2021-08-12 16:06:18
+ * @since 1.0, 2021-10-28 22:25:10
  */
 public class AntfortuneEquityShopCustrelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1863163865611249611L;
+	private static final long serialVersionUID = 1842616864459675621L;
 
 	/**
 	 * 蚂蚁统一会员ID

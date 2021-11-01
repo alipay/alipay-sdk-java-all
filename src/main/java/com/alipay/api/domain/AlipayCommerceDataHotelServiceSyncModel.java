@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店服务提报
  *
  * @author auto create
- * @since 1.0, 2021-07-01 20:44:20
+ * @since 1.0, 2021-10-29 11:19:57
  */
 public class AlipayCommerceDataHotelServiceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7632539274922462328L;
+	private static final long serialVersionUID = 3888893768687674479L;
 
 	/**
 	 * 酒店所在小程序的appid
@@ -26,10 +26,13 @@ public class AlipayCommerceDataHotelServiceSyncModel extends AlipayObject {
 	private HotelInfo hotelInfo;
 
 	/**
-	 * [SERVICE_CREATE：服务创建
-SERVICE_UPDATE：服务更新]
+	 * [SERVICE_CREATE：服务创建，
+SERVICE_UPDATE：服务更新，
+SERVICE_ONLINE: 服务上架，
+SERVICE_OFFLINE：服务下架
+]
 
-说明：值为SERVICE_CREATE时， 参数servic_id为空；值为SERVICE_UPDATE时， 参数servic_id必填
+说明：值为SERVICE_CREATE时， 参数servic_id为空；值为其他时， 参数servic_id必填
 	 */
 	@ApiField("operate_type")
 	private String operateType;

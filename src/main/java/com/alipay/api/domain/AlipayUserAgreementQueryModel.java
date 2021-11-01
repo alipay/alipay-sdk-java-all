@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人代扣协议查询接口
  *
  * @author auto create
- * @since 1.0, 2021-09-30 18:22:52
+ * @since 1.0, 2021-10-28 17:41:01
  */
 public class AlipayUserAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1196992926333413134L;
+	private static final long serialVersionUID = 6146522988533358259L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ） ，如果传了该参数，其他参数会被忽略
@@ -41,7 +41,7 @@ public class AlipayUserAgreementQueryModel extends AlipayObject {
 	private String externalAgreementNo;
 
 	/**
-	 * 协议产品码，商户和支付宝签约时确定，商户可咨询技术支持。周期扣款场景固定为：CYCLE_PAY_AUTH_P。
+	 * 协议产品码，商户和支付宝签约时确定，商户可咨询技术支持。
 	 */
 	@ApiField("personal_product_code")
 	private String personalProductCode;

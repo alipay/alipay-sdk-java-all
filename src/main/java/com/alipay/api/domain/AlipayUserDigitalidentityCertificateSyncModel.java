@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字身份电子凭证同步接口
  *
  * @author auto create
- * @since 1.0, 2021-09-01 16:24:08
+ * @since 1.0, 2021-10-29 15:32:59
  */
 public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6794297487876892484L;
+	private static final long serialVersionUID = 6891688125875356689L;
 
 	/**
 	 * 用户申领信息核验模式，该字段值与传入的用户姓名及证件号相关联。例如PLAIN模式下原文对比传入的用户申领信息与支付宝侧信息是否一致。
@@ -44,7 +44,10 @@ public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject 
 	private String status;
 
 	/**
-	 * 接口调用权限token，由支付宝侧下发。需携带相应token才可回流成功。
+	 * 接口调用权限token，由支付宝侧下发，需携带相应token才可回流成功。
+当用户从证件夹进入时，该参数通过跳转的url链接参数alipayKbCertSyncToken携带。如alipays://platformapi/startapp?appId=2021001169888888&page=pages/windowService/index/index&query=ac%3DaddCard%26alipayKbCertSyncToken%3D12345678
+当用户从其他渠道进入且需要回流时，那么通过在小程序引入以下插件来进行获取
+https://open.alipay.com/plugin/order-page?serviceCode=MP2021083100100571 
 	 */
 	@ApiField("sync_token")
 	private String syncToken;

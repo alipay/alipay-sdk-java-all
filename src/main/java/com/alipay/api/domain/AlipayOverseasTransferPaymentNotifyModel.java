@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTransferPaymentNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5734832354482186356L;
+	private static final long serialVersionUID = 3121767222439875345L;
 
 	/**
 	 * Only used for pass-through. In JSON map format.

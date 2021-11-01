@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动报名申请单明细
  *
  * @author auto create
- * @since 1.0, 2021-08-31 02:53:21
+ * @since 1.0, 2021-10-29 13:49:59
  */
 public class ActivityMerchantOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 2884828158115418689L;
+	private static final long serialVersionUID = 4412274933887821672L;
 
 	/**
 	 * 活动类型
@@ -36,6 +36,12 @@ public class ActivityMerchantOrder extends AlipayObject {
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 费率申请通过后实际生效的费率值，只有0或者0.001两种可能情况。当status字段返回TRUE时此字段有值，反之不返回费率信息
+	 */
+	@ApiField("rate")
+	private String rate;
 
 	public String getActivityType() {
 		return this.activityType;
@@ -63,6 +69,13 @@ public class ActivityMerchantOrder extends AlipayObject {
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getRate() {
+		return this.rate;
+	}
+	public void setRate(String rate) {
+		this.rate = rate;
 	}
 
 }

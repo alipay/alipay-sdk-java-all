@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardFrontTextDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2395964249938256141L;
+	private static final long serialVersionUID = 5556462155484397532L;
 
 	/**
 	 * 文案标签

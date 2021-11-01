@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.marketing.crowd.wshop.match request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:56
+ * @since 1.0, 2021-10-28 22:24:36
  */
 public class AntfortuneMarketingCrowdWshopMatchRequest implements AlipayRequest<AntfortuneMarketingCrowdWshopMatchResponse> {
 

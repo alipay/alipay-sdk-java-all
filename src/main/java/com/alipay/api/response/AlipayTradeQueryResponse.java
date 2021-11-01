@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-19 08:27:44
+ * @since 1.0, 2021-10-29 15:45:32
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2846521836653716228L;
+	private static final long serialVersionUID = 6762237638988575639L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -160,6 +160,18 @@ json格式。
 	 */
 	@ApiField("industry_sepc_detail")
 	private String industrySepcDetail;
+
+	/** 
+	 * 行业特殊信息-个账相关
+	 */
+	@ApiField("industry_sepc_detail_acc")
+	private String industrySepcDetailAcc;
+
+	/** 
+	 * 行业特殊信息-统筹相关
+	 */
+	@ApiField("industry_sepc_detail_gov")
+	private String industrySepcDetailGov;
 
 	/** 
 	 * 交易中用户支付的可开具发票的金额，单位为元，两位小数。该金额代表该笔交易中可以给用户开具发票的金额
@@ -461,6 +473,20 @@ json格式。
 	}
 	public String getIndustrySepcDetail( ) {
 		return this.industrySepcDetail;
+	}
+
+	public void setIndustrySepcDetailAcc(String industrySepcDetailAcc) {
+		this.industrySepcDetailAcc = industrySepcDetailAcc;
+	}
+	public String getIndustrySepcDetailAcc( ) {
+		return this.industrySepcDetailAcc;
+	}
+
+	public void setIndustrySepcDetailGov(String industrySepcDetailGov) {
+		this.industrySepcDetailGov = industrySepcDetailGov;
+	}
+	public String getIndustrySepcDetailGov( ) {
+		return this.industrySepcDetailGov;
 	}
 
 	public void setInvoiceAmount(String invoiceAmount) {

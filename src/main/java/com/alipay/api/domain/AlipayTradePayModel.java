@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2021-10-21 17:05:52
+ * @since 1.0, 2021-10-28 17:21:54
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8781344966467655398L;
+	private static final long serialVersionUID = 6429742349231792786L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资

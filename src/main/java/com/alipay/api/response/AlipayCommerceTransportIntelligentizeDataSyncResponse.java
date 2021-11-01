@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.intelligentize.data.sync response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-04 21:01:18
+ * @since 1.0, 2021-10-28 17:20:28
  */
 public class AlipayCommerceTransportIntelligentizeDataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1511882967365424917L;
+	private static final long serialVersionUID = 3685472962611642734L;
 
 	/** 
 	 * 同步成功的数据ID，如有多个使用英文半角逗号分隔

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.data.hotel.service.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-10 19:27:39
+ * @since 1.0, 2021-10-29 11:20:34
  */
 public class AlipayCommerceDataHotelServiceSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6744834664773334722L;
+	private static final long serialVersionUID = 3793127433962953618L;
 
 	/** 
 	 * 支付宝行业侧服务的标识
