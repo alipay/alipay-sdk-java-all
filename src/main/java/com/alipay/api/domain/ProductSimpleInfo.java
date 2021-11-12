@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文体业务订单的简化产品模型
  *
  * @author auto create
- * @since 1.0, 2021-10-26 15:44:57
+ * @since 1.0, 2021-11-09 09:56:37
  */
 public class ProductSimpleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2563655728885624424L;
+	private static final long serialVersionUID = 5283295864366678687L;
+
+	/**
+	 * 商品规格名称。可以是场地名称（比如羽毛球场地1）。当产品类型为日历型或者日历型票券时必填。
+	 */
+	@ApiField("category_name")
+	private String categoryName;
 
 	/**
 	 * 商品购买数量
@@ -56,6 +62,13 @@ public class ProductSimpleInfo extends AlipayObject {
 	 */
 	@ApiField("zone_name")
 	private String zoneName;
+
+	public String getCategoryName() {
+		return this.categoryName;
+	}
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
 
 	public Long getCount() {
 		return this.count;

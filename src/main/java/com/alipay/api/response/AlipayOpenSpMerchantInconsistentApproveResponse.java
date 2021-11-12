@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.merchant.inconsistent.approve response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-25 16:17:18
+ * @since 1.0, 2021-11-01 16:15:34
  */
 public class AlipayOpenSpMerchantInconsistentApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4833698843798497958L;
+	private static final long serialVersionUID = 6595499669846236764L;
 
 	/** 
 	 * 申请单据编号

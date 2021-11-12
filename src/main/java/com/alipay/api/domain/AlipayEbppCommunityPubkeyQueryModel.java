@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询公钥
  *
  * @author auto create
- * @since 1.0, 2021-01-13 17:05:14
+ * @since 1.0, 2021-11-09 14:34:26
  */
 public class AlipayEbppCommunityPubkeyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7738527673488572767L;
+	private static final long serialVersionUID = 6321862713529636742L;
 
 	/**
 	 * ISV短名(创建ISV时生成)

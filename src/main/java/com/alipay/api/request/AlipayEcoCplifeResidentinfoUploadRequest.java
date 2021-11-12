@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cplife.residentinfo.upload request
  * 
  * @author auto create
- * @since 1.0, 2021-04-09 14:45:52
+ * @since 1.0, 2021-11-09 14:31:01
  */
 public class AlipayEcoCplifeResidentinfoUploadRequest implements AlipayRequest<AlipayEcoCplifeResidentinfoUploadResponse> {
 

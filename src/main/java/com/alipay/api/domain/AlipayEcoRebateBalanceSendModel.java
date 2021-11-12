@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新可领取的集分宝余额
  *
  * @author auto create
- * @since 1.0, 2020-08-11 15:38:26
+ * @since 1.0, 2021-11-01 11:21:18
  */
 public class AlipayEcoRebateBalanceSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1723219535428434566L;
+	private static final long serialVersionUID = 8353185736835628738L;
 
 	/**
 	 * 用户订单明细

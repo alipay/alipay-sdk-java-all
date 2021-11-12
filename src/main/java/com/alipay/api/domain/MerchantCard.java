@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户卡信息
  *
  * @author auto create
- * @since 1.0, 2019-08-08 20:03:34
+ * @since 1.0, 2021-11-04 14:28:39
  */
 public class MerchantCard extends AlipayObject {
 
-	private static final long serialVersionUID = 1613222139965456995L;
+	private static final long serialVersionUID = 1799576427382298381L;
 
 	/**
 	 * 资金卡余额，单位：元，精确到小数点后两位。
@@ -31,6 +31,12 @@ public class MerchantCard extends AlipayObject {
 	 */
 	@ApiField("biz_card_no")
 	private String bizCardNo;
+
+	/**
+	 * 会员卡自定义资产值，只供特定业务使用，通常接入无需关注
+	 */
+	@ApiField("custom_assets")
+	private String customAssets;
 
 	/**
 	 * 商户外部会员卡卡号
@@ -109,6 +115,13 @@ public class MerchantCard extends AlipayObject {
 	}
 	public void setBizCardNo(String bizCardNo) {
 		this.bizCardNo = bizCardNo;
+	}
+
+	public String getCustomAssets() {
+		return this.customAssets;
+	}
+	public void setCustomAssets(String customAssets) {
+		this.customAssets = customAssets;
 	}
 
 	public String getExternalCardNo() {

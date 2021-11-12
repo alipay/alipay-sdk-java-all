@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6891688125875356689L;
+	private static final long serialVersionUID = 5815521512716923977L;
 
 	/**
 	 * 用户申领信息核验模式，该字段值与传入的用户姓名及证件号相关联。例如PLAIN模式下原文对比传入的用户申领信息与支付宝侧信息是否一致。
@@ -65,7 +65,7 @@ https://open.alipay.com/plugin/order-page?serviceCode=MP2021083100100571
 	private String userApplyCertType;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 蚂蚁统一会员ID，可以通过https://opendocs.alipay.com/apis/api_2/alipay.user.info.share 接口进行获取
 	 */
 	@ApiField("user_id")
 	private String userId;

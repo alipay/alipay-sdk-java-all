@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cplife.community.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2021-04-09 14:43:56
+ * @since 1.0, 2021-11-09 14:35:13
  */
 public class AlipayEcoCplifeCommunityBatchqueryRequest implements AlipayRequest<AlipayEcoCplifeCommunityBatchqueryResponse> {
 

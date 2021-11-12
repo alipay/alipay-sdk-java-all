@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 贸易金融授信申请
  *
  * @author auto create
- * @since 1.0, 2021-04-13 11:11:55
+ * @since 1.0, 2021-11-09 14:10:26
  */
 public class AnttechBlockchainFinanceTruspleCreditgrantapplySubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1468428333164263527L;
+	private static final long serialVersionUID = 5356275914643983994L;
 
 	/**
 	 * 资料附件列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公告删除
  *
  * @author auto create
- * @since 1.0, 2021-05-06 10:15:31
+ * @since 1.0, 2021-11-09 14:31:32
  */
 public class AlipayEbppCommunityNoticeDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2478323647821795913L;
+	private static final long serialVersionUID = 7143414582793923269L;
 
 	/**
 	 * 支付宝公告id

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业主证件申领
  *
  * @author auto create
- * @since 1.0, 2021-05-17 14:04:51
+ * @since 1.0, 2021-11-09 14:33:41
  */
 public class AlipayEbppCommunityOwnercardCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2636975957751195178L;
+	private static final long serialVersionUID = 2882243177426321662L;
 
 	/**
 	 * 支付宝uid

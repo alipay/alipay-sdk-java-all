@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.voucher.upload response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-10 16:30:13
+ * @since 1.0, 2021-11-05 15:09:37
  */
 public class AlipayCommerceCityfacilitatorVoucherUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1277351239745918762L;
+	private static final long serialVersionUID = 6688783825318788448L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 三方应用调智能助理
  *
  * @author auto create
- * @since 1.0, 2020-09-04 19:09:15
+ * @since 1.0, 2021-11-03 14:50:16
  */
 public class AlipayIserviceItaskOrderRecordSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7151298733335269917L;
+	private static final long serialVersionUID = 5218482816641187946L;
 
 	/**
 	 * 首页助理openapi请求入参

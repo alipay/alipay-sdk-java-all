@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小区房间删除
  *
  * @author auto create
- * @since 1.0, 2021-03-31 13:45:56
+ * @since 1.0, 2021-11-09 14:33:09
  */
 public class AlipayEbppCommunityRoomDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7591994935558398669L;
+	private static final long serialVersionUID = 1352756341211235693L;
 
 	/**
 	 * 小区短名, 创建小区时生成

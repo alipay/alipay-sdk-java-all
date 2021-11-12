@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.quotation.findata.send request
  * 
  * @author auto create
- * @since 1.0, 2021-04-09 11:02:05
+ * @since 1.0, 2021-11-02 12:25:19
  */
 public class AlipayFinanceQuotationFindataSendRequest implements AlipayRequest<AlipayFinanceQuotationFindataSendResponse> {
 

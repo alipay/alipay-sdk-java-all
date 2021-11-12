@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业主卡消息同步接口
  *
  * @author auto create
- * @since 1.0, 2021-07-05 17:00:38
+ * @since 1.0, 2021-11-09 14:33:51
  */
 public class AlipayEbppCommunityOwnercardmsgSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8272638156813167274L;
+	private static final long serialVersionUID = 8533792365257781366L;
 
 	/**
 	 * 产品类型：

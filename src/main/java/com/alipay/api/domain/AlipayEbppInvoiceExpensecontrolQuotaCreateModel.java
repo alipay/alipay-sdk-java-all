@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7865822247843394643L;
+	private static final long serialVersionUID = 8616298115279679963L;
 
 	/**
 	 * 企业签约企业合花ID-共同账号ID
@@ -62,14 +62,18 @@ EMPLOYEE: 员工
 
 	/**
 	 * 额度类型ID
-MEAL: 工作餐
+当 target_type=EXPENSE_TYPE 时
+MEAL: 工作餐；
+当 target_type=RULE_GROUP_AGGREGATION 时
+target_id: #规则聚合id#
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
-	 * 额度类型
-EXPENSE_TYPE: 费用类型额度
+	 * 额度生成维度
+EXPENSE_TYPE: 费用类型维度
+RULE_GROUP_AGGREGATION: 规则聚合维度
 	 */
 	@ApiField("target_type")
 	private String targetType;

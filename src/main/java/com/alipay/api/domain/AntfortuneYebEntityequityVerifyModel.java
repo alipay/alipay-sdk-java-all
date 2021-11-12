@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 实物权益核销回调
  *
  * @author auto create
- * @since 1.0, 2021-10-08 15:26:15
+ * @since 1.0, 2021-11-12 10:53:31
  */
 public class AntfortuneYebEntityequityVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5633226883695685524L;
+	private static final long serialVersionUID = 3466645852251591787L;
 
 	/**
 	 * 阿里云回调接口应用ID, appid这个名称是阿里云定义的

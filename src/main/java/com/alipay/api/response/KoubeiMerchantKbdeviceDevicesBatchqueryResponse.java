@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantKbdeviceDevicesBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4893888822957918341L;
+	private static final long serialVersionUID = 4544366513432821392L;
 
 	/** 
 	 * 门店下设备列表

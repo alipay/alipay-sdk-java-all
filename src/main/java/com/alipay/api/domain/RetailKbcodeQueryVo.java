@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RetailKbcodeQueryVo extends AlipayObject {
 
-	private static final long serialVersionUID = 3847323252334183646L;
+	private static final long serialVersionUID = 6582194671919822853L;
 
 	/**
 	 * 创建口碑码的批次号

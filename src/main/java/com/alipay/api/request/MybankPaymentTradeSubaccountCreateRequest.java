@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.payment.trade.subaccount.create request
  * 
  * @author auto create
- * @since 1.0, 2021-09-02 17:32:42
+ * @since 1.0, 2021-11-11 19:44:24
  */
 public class MybankPaymentTradeSubaccountCreateRequest implements AlipayRequest<MybankPaymentTradeSubaccountCreateResponse> {
 

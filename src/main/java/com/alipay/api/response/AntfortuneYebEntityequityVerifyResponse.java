@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.yeb.entityequity.verify response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-08 16:41:37
+ * @since 1.0, 2021-11-12 10:55:30
  */
 public class AntfortuneYebEntityequityVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8226761441284229469L;
+	private static final long serialVersionUID = 5239452829466869179L;
 
 	/** 
 	 * web层返回对象封装

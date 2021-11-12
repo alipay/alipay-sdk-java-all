@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取主站zid
  *
  * @author auto create
- * @since 1.0, 2018-03-13 17:10:17
+ * @since 1.0, 2021-11-09 11:17:30
  */
 public class ZolozIdentificationZolozidGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1567841638658781826L;
+	private static final long serialVersionUID = 7437955157519735271L;
 
 	/**
 	 * get region

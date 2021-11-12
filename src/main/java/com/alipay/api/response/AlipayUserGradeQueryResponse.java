@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.grade.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-22 10:59:49
+ * @since 1.0, 2021-11-05 15:13:37
  */
 public class AlipayUserGradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6775964483696635767L;
+	private static final long serialVersionUID = 2662822615682379244L;
 
 	/** 
 	 * 用户的蚂蚁会员积分余额

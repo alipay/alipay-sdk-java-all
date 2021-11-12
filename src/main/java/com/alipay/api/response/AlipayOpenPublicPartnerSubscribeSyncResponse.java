@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.partner.subscribe.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-23 10:51:12
+ * @since 1.0, 2021-11-05 15:01:46
  */
 public class AlipayOpenPublicPartnerSubscribeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2676159155441858951L;
+	private static final long serialVersionUID = 1528494727549524836L;
 
 	
 

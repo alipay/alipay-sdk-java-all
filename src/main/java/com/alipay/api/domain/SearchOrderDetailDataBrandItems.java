@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 品牌box工单详情数据信息
  *
  * @author auto create
- * @since 1.0, 2021-10-26 18:28:37
+ * @since 1.0, 2021-11-04 13:42:50
  */
 public class SearchOrderDetailDataBrandItems extends AlipayObject {
 
-	private static final long serialVersionUID = 1248994285818327642L;
+	private static final long serialVersionUID = 1145764832612919247L;
 
 	/**
 	 * 工单详情bizid
@@ -52,13 +52,6 @@ public class SearchOrderDetailDataBrandItems extends AlipayObject {
 	 */
 	@ApiField("channel")
 	private String channel;
-
-	/**
-	 * 工单详情数据信息
-	 */
-	@ApiListField("data")
-	@ApiField("search_order_brand_detail")
-	private List<SearchOrderBrandDetail> data;
 
 	/**
 	 * 工单详情数据merchant_type
@@ -112,13 +105,6 @@ public class SearchOrderDetailDataBrandItems extends AlipayObject {
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
-	}
-
-	public List<SearchOrderBrandDetail> getData() {
-		return this.data;
-	}
-	public void setData(List<SearchOrderBrandDetail> data) {
-		this.data = data;
 	}
 
 	public String getMerchantType() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 纯资金交易，充值，提现，转账等
  *
  * @author auto create
- * @since 1.0, 2021-10-22 15:44:25
+ * @since 1.0, 2021-11-10 17:36:25
  */
 public class FundOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8613935811746274649L;
+	private static final long serialVersionUID = 5178241442353785533L;
 
 	/**
 	 * 订单金额。单位为元，精确到小数点后两位，取值范围[0.01,100000000]

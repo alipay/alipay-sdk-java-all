@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mytesto.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-02 02:10:31
+ * @since 1.0, 2021-11-03 15:52:51
  */
 public class AlipayOpenMytestoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3431873346252911725L;
+	private static final long serialVersionUID = 4572867975994151895L;
 
 	
 

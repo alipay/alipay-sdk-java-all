@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改已上传的物业费账单数据
  *
  * @author auto create
- * @since 1.0, 2021-04-09 14:43:29
+ * @since 1.0, 2021-11-09 14:35:03
  */
 public class AlipayEcoCplifeBillModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7229542598781227222L;
+	private static final long serialVersionUID = 1776422392895774561L;
 
 	/**
 	 * 待修改的物业费账单应收明细条目列表，一次最多修改1000条明细条目。如果明细条目已被支付或在支付中，则无法被修改。接口会返回无法修改的明细条目ID列表。

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotbpaas.merchantorder.refresh request
  * 
  * @author auto create
- * @since 1.0, 2021-09-06 18:45:43
+ * @since 1.0, 2021-11-05 15:11:32
  */
 public class AlipayOpenIotbpaasMerchantorderRefreshRequest implements AlipayRequest<AlipayOpenIotbpaasMerchantorderRefreshResponse> {
 

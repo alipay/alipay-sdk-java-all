@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV创建
  *
  * @author auto create
- * @since 1.0, 2021-01-28 13:45:45
+ * @since 1.0, 2021-11-09 14:30:01
  */
 public class AlipayEbppCommunityIsvCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2313968811612861822L;
+	private static final long serialVersionUID = 4114429375576738723L;
 
 	/**
 	 * 更多账单跳转地址

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMallScanpurchasePreorderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8416396886799976788L;
+	private static final long serialVersionUID = 8312199538341877215L;
 
 	/**
 	 * 预订单编号

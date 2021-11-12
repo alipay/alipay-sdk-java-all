@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部业务平台会员ID，作为智能科技会员的外部关联ID
  *
  * @author auto create
- * @since 1.0, 2021-10-22 14:26:42
+ * @since 1.0, 2021-11-10 17:36:25
  */
 public class ReferenceId extends AlipayObject {
 
-	private static final long serialVersionUID = 3744541367231847452L;
+	private static final long serialVersionUID = 5618993723622499144L;
 
 	/**
 	 * 关联ID，外部业务平台会员ID

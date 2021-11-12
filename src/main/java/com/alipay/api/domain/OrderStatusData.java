@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请单申请状态
  *
  * @author auto create
- * @since 1.0, 2021-09-17 18:02:47
+ * @since 1.0, 2021-11-04 10:06:40
  */
 public class OrderStatusData extends AlipayObject {
 
-	private static final long serialVersionUID = 6686377136589548671L;
+	private static final long serialVersionUID = 8846187957152652479L;
 
 	/**
 	 * 申请单ID

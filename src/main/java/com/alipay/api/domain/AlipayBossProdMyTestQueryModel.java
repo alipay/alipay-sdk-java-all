@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossProdMyTestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7338963973643328463L;
+	private static final long serialVersionUID = 1487631727529641552L;
 
 	/**
-	 * 区
+	 * 区.
 	 */
 	@ApiField("area_code")
 	private String areaCode;

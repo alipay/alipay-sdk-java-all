@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:43:59
+ * @since 1.0, 2021-11-03 13:40:36
  */
 public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6165262585799769968L;
+	private static final long serialVersionUID = 5295785872198577265L;
 
 	/** 
 	 * 商户地址信息
@@ -122,6 +122,7 @@ public class AntMerchantExpandIndirectQueryResponse extends AlipayResponse {
 PC：网站支付
 APP：无线支付
 F2F：当面付
+WITHHOLD：代扣
 返回为空为不支持所有服务
 	 */
 	@ApiListField("service_codes")

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业费账单数据同步
  *
  * @author auto create
- * @since 1.0, 2021-04-09 14:45:44
+ * @since 1.0, 2021-11-09 14:30:56
  */
 public class AlipayEcoCplifeBillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4333285124739297922L;
+	private static final long serialVersionUID = 3143353757561231263L;
 
 	/**
 	 * 待同步的物业费账单应收明细条目ID

@@ -1,20 +1,17 @@
 package com.alipay.api.domain;
 
-import java.util.List;
-
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
-import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 搜索运营的申请单详情（基础信息、服务直达、品牌直达）
  *
  * @author auto create
- * @since 1.0, 2021-10-27 17:12:03
+ * @since 1.0, 2021-11-04 15:09:50
  */
 public class SearchOrderDetailData extends AlipayObject {
 
-	private static final long serialVersionUID = 7458288194641148787L;
+	private static final long serialVersionUID = 3571376677653915845L;
 
 	/**
 	 * 申请单类型 BASE：基础信息， BRAND_BOX：品牌直达，SERVICE_BOX服务直达
@@ -195,13 +192,6 @@ public class SearchOrderDetailData extends AlipayObject {
 	 */
 	@ApiField("service_name")
 	private String serviceName;
-
-	/**
-	 * 关联的服务状态信息
-	 */
-	@ApiListField("service_status_infos")
-	@ApiField("search_order_detail_data_info")
-	private List<SearchOrderDetailDataInfo> serviceStatusInfos;
 
 	/**
 	 * 申请单状态  AGREE、REJECT、AUDIT
@@ -435,13 +425,6 @@ public class SearchOrderDetailData extends AlipayObject {
 	}
 	public void setServiceName(String serviceName) {
 		this.serviceName = serviceName;
-	}
-
-	public List<SearchOrderDetailDataInfo> getServiceStatusInfos() {
-		return this.serviceStatusInfos;
-	}
-	public void setServiceStatusInfos(List<SearchOrderDetailDataInfo> serviceStatusInfos) {
-		this.serviceStatusInfos = serviceStatusInfos;
 	}
 
 	public String getStatus() {

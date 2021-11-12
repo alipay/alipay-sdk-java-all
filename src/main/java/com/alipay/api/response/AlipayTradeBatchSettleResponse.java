@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeBatchSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3511989271968819418L;
+	private static final long serialVersionUID = 4644779357554383535L;
 
 	/** 
 	 * 结算受理时间

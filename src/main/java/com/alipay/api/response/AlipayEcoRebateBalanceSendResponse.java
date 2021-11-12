@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.rebate.balance.send response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-26 14:52:34
+ * @since 1.0, 2021-11-01 11:21:18
  */
 public class AlipayEcoRebateBalanceSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8223529454882678326L;
+	private static final long serialVersionUID = 2573631895315886855L;
 
 	/** 
 	 * 给用户发放集分宝的数量

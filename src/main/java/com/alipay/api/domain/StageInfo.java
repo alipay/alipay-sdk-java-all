@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联赛阶段
  *
  * @author auto create
- * @since 1.0, 2020-10-30 11:53:20
+ * @since 1.0, 2021-11-04 16:30:42
  */
 public class StageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2169343359684452299L;
+	private static final long serialVersionUID = 5193674499944393262L;
 
 	/**
 	 * 分组

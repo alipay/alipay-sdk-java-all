@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报名商户信息
  *
  * @author auto create
- * @since 1.0, 2021-06-30 23:43:15
+ * @since 1.0, 2021-11-01 11:31:59
  */
 public class RecruitEnrollMerchant extends AlipayObject {
 
-	private static final long serialVersionUID = 3494597474379648287L;
+	private static final long serialVersionUID = 4774973818289282614L;
 
 	/**
-	 * 商户唯一ID(商户pid或商户smid)
+	 * 商户唯一ID(商户pid)
 	 */
 	@ApiField("merchant_uid")
 	private String merchantUid;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业账单批量动账接口
  *
  * @author auto create
- * @since 1.0, 2021-08-09 10:17:57
+ * @since 1.0, 2021-11-09 14:29:14
  */
 public class AlipayEbppCommunityExternalbillsyncUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6259424975836549139L;
+	private static final long serialVersionUID = 6699385746762658591L;
 
 	/**
 	 * 小区短名，本接口只支持按小区纬度动账

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碎屏险退保
  *
  * @author auto create
- * @since 1.0, 2021-08-20 14:14:41
+ * @since 1.0, 2021-11-09 20:54:19
  */
 public class AlipayInsSceneMobileScreenRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7225859497523524774L;
+	private static final long serialVersionUID = 2459895249619492588L;
 
 	/**
 	 * 请求渠道来源

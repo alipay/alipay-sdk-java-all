@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道卡信息变更
  *
  * @author auto create
- * @since 1.0, 2021-05-18 16:03:09
+ * @since 1.0, 2021-11-09 14:33:46
  */
 public class AlipayEbppCommunityOwnercardSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7729812569777843354L;
+	private static final long serialVersionUID = 5863747996938185362L;
 
 	/**
 	 * 支付宝uid

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 能量清单扩展信息
  *
  * @author auto create
- * @since 1.0, 2021-02-01 19:20:11
+ * @since 1.0, 2021-11-01 11:26:13
  */
 public class EnergyExtRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3558261668684931946L;
+	private static final long serialVersionUID = 7665733757354275946L;
 
 	/**
 	 * 扩展信息的key信息

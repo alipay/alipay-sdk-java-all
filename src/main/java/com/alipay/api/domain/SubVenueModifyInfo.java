@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆修子场馆详细信息
  *
  * @author auto create
- * @since 1.0, 2021-06-11 10:41:48
+ * @since 1.0, 2021-11-08 16:14:49
  */
 public class SubVenueModifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2131483235169723743L;
+	private static final long serialVersionUID = 5166877773594636566L;
 
 	/**
 	 * 入场要求
@@ -72,7 +72,7 @@ public class SubVenueModifyInfo extends AlipayObject {
 	private String optType;
 
 	/**
-	 * 服务商场馆ID
+	 * 子场馆在服务商的ID
 	 */
 	@ApiField("out_sub_venue_id")
 	private String outSubVenueId;
@@ -137,7 +137,7 @@ smid：通过smid收款
 	private String status;
 
 	/**
-	 * 支付宝场馆ID，新入驻可不传，修改已入驻必传
+	 * 支付宝子场馆ID，新入驻可不传，修改已入驻必传
 	 */
 	@ApiField("sub_venue_id")
 	private String subVenueId;

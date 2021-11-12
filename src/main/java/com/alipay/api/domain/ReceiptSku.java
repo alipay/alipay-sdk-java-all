@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子小票商品详情
  *
  * @author auto create
- * @since 1.0, 2021-10-28 21:09:25
+ * @since 1.0, 2021-11-12 10:57:46
  */
 public class ReceiptSku extends AlipayObject {
 
-	private static final long serialVersionUID = 8629623674741648893L;
+	private static final long serialVersionUID = 7211337143766242823L;
 
 	/**
 	 * 商品条形码

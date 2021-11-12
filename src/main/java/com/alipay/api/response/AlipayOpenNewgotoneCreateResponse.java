@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.newgotone.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-04-12 13:25:01
+ * @since 1.0, 2021-11-05 15:06:18
  */
 public class AlipayOpenNewgotoneCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7737599224194764923L;
+	private static final long serialVersionUID = 5671426879639629761L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金融数据接入
  *
  * @author auto create
- * @since 1.0, 2021-04-09 11:02:05
+ * @since 1.0, 2021-11-02 12:25:19
  */
 public class AlipayFinanceQuotationFindataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7646421549811841417L;
+	private static final long serialVersionUID = 1758172224993481261L;
 
 	/**
 	 * 业务类型。strategy_pool策略池,strategy_pool_detail策略池明细
