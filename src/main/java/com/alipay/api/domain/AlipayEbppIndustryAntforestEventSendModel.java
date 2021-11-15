@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业-蚂蚁森林能量事件上报接口
  *
  * @author auto create
- * @since 1.0, 2021-04-07 20:38:50
+ * @since 1.0, 2021-11-15 15:10:16
  */
 public class AlipayEbppIndustryAntforestEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5422326367925512397L;
+	private static final long serialVersionUID = 4314957646869385563L;
 
 	/**
 	 * 用于标识行业-蚂蚁森林能量事件的类别

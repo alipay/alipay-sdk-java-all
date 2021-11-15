@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MemberCardPrepaidPromotionPlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5511768661943185816L;
+	private static final long serialVersionUID = 1514627668743197746L;
 
 	/**
 	 * 储值方案权益金部分

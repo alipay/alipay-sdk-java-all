@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayEcoMycarCarmodelModifyModel;
+import com.alipay.api.domain.AlipaySocialBaseContentlibStandardcontentPublishModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayEcoMycarCarmodelModifyResponse;
+import com.alipay.api.response.AlipaySocialBaseContentlibStandardcontentPublishResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.eco.mycar.carmodel.modify request
+ * ALIPAY API: alipay.social.base.contentlib.standardcontent.publish request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2021-11-12 15:45:32
  */
-public class AlipayEcoMycarCarmodelModifyRequest implements AlipayRequest<AlipayEcoMycarCarmodelModifyResponse> {
+public class AlipaySocialBaseContentlibStandardcontentPublishRequest implements AlipayRequest<AlipaySocialBaseContentlibStandardcontentPublishResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 修改车型信息接口
+	* 内容发布接口
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayEcoMycarCarmodelModifyRequest implements AlipayRequest<Alipay
 	}
 
 	public String getApiMethodName() {
-		return "alipay.eco.mycar.carmodel.modify";
+		return "alipay.social.base.contentlib.standardcontent.publish";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayEcoMycarCarmodelModifyRequest implements AlipayRequest<Alipay
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayEcoMycarCarmodelModifyResponse> getResponseClass() {
-		return AlipayEcoMycarCarmodelModifyResponse.class;
+	public Class<AlipaySocialBaseContentlibStandardcontentPublishResponse> getResponseClass() {
+		return AlipaySocialBaseContentlibStandardcontentPublishResponse.class;
 	}
 	
 

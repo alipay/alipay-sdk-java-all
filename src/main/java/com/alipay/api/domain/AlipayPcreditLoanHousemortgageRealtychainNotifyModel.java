@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditLoanHousemortgageRealtychainNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5555727811349936221L;
+	private static final long serialVersionUID = 5836134175934534792L;
 
 	/**
 	 * 合同签署人-用户签约事件必传

@@ -3,6 +3,7 @@
  */
 package com.alipay.api.internal.util;
 
+import com.alipay.api.AlipayApiErrorEnum;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.internal.util.encrypt.Encrypt;
 import com.alipay.api.internal.util.encrypt.impl.AesEncrypt;
@@ -42,7 +43,7 @@ public class AlipayEncrypt {
 
         Encrypt encrypt = encryptManager.get(encryptType);
         if (encrypt == null) {
-            throw new AlipayApiException("当前不支持该算法类型：encrypeType=" + encryptType);
+            throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_TYPE_ERROR.getErrMsg() + encryptType);
         }
 
         return encrypt.encrypt(content, encryptKey, charset);
@@ -62,7 +63,7 @@ public class AlipayEncrypt {
                                         String charset) throws AlipayApiException {
         Encrypt encrypt = encryptManager.get(encryptType);
         if (encrypt == null) {
-            throw new AlipayApiException("当前不支持该算法类型：encrypeType=" + encryptType);
+            throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_TYPE_ERROR.getErrMsg() + encryptType);
         }
 
         return encrypt.decrypt(content, encryptKey, charset);

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayForPrivilegeRechargeCardUseLog extends AlipayObject {
 
-	private static final long serialVersionUID = 6828626664256659852L;
+	private static final long serialVersionUID = 8163389661117662156L;
 
 	/**
 	 * 交易总金额

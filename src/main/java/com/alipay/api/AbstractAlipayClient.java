@@ -126,6 +126,9 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         }
 
         //读取根证书（用来校验本地支付宝公钥证书失效后自动从网关下载的新支付宝公钥证书是否有效）
+        if (StringUtils.isEmpty(rootCertContent) && StringUtils.isEmpty(rootCertPath)) {
+            throw new AlipayApiException(AlipayApiErrorEnum.ROOT_CERT_EMPTY_ERROR);
+        }
         this.rootCertContent = StringUtils.isEmpty(rootCertContent) ? readFileToString(rootCertPath) : rootCertContent;
         //alipayRootCertSN根证书序列号
         if (AlipayConstants.SIGN_TYPE_SM2.equals(signType)) {
@@ -133,33 +136,44 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         } else {
             this.alipayRootCertSN = AntCertificationUtil.getRootCertSN(this.rootCertContent);
             if (StringUtils.isEmpty(this.alipayRootCertSN)) {
-                throw new AlipayApiException("AlipayRootCert Is Invalid");
+                throw new AlipayApiException(AlipayApiErrorEnum.ROOT_CERT_ERROR);
             }
         }
         //获取应用证书
-        this.cert = StringUtils.isEmpty(certContent) ? AntCertificationUtil.getCertFromPath(certPath)
-                : AntCertificationUtil.getCertFromContent(certContent);
-        //获取支付宝公钥证书
-        X509Certificate alipayPublicCert = StringUtils.isEmpty(alipayPublicCertContent) ?
-                AntCertificationUtil.getCertFromPath(alipayPublicCertPath) :
-                AntCertificationUtil.getCertFromContent(alipayPublicCertContent);
-
-        //appCertSN为最终发送给网关的应用证书序列号
-        this.appCertSN = AntCertificationUtil.getCertSN(cert);
-        if (StringUtils.isEmpty(this.appCertSN)) {
-            throw new AlipayApiException("AppCert Is Invalid");
+        if (StringUtils.isEmpty(certContent) && StringUtils.isEmpty(certPath)) {
+            throw new AlipayApiException(AlipayApiErrorEnum.APP_CERT_EMPTY_ERROR);
         }
-        //alipayCertSN为支付宝公钥证书序列号
-        this.alipayCertSN = AntCertificationUtil.getCertSN(alipayPublicCert);
-        //将公钥证书以序列号为key存入map
-        ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap = new ConcurrentHashMap<String, X509Certificate>();
-        alipayPublicCertMap.put(alipayCertSN, alipayPublicCert);
-        this.alipayPublicCertMap = alipayPublicCertMap;
-        //获取支付宝公钥以序列号为key存入map
-        PublicKey publicKey = alipayPublicCert.getPublicKey();
-        ConcurrentHashMap<String, String> alipayPublicKeyMap = new ConcurrentHashMap<String, String>();
-        alipayPublicKeyMap.put(alipayCertSN, Base64.encodeBase64String(publicKey.getEncoded()));
-        this.alipayPublicKeyMap = alipayPublicKeyMap;
+        try {
+            this.cert = StringUtils.isEmpty(certContent) ? AntCertificationUtil.getCertFromPath(certPath)
+                    : AntCertificationUtil.getCertFromContent(certContent);
+            //appCertSN为最终发送给网关的应用证书序列号
+            this.appCertSN = AntCertificationUtil.getCertSN(cert);
+        } catch (AlipayApiException e) {
+            AlipayLogger.logBizError("提取应用公钥证书失败");
+        }
+        if (StringUtils.isEmpty(this.appCertSN)) {
+            throw new AlipayApiException(AlipayApiErrorEnum.APP_CERT_ERROR);
+        }
+
+        //获取支付宝公钥证书
+        try {
+            X509Certificate alipayPublicCert = StringUtils.isEmpty(alipayPublicCertContent) ?
+                    AntCertificationUtil.getCertFromPath(alipayPublicCertPath) :
+                    AntCertificationUtil.getCertFromContent(alipayPublicCertContent);
+            //alipayCertSN为支付宝公钥证书序列号
+            this.alipayCertSN = AntCertificationUtil.getCertSN(alipayPublicCert);
+            //将公钥证书以序列号为key存入map
+            ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap = new ConcurrentHashMap<String, X509Certificate>();
+            alipayPublicCertMap.put(alipayCertSN, alipayPublicCert);
+            this.alipayPublicCertMap = alipayPublicCertMap;
+            //获取支付宝公钥以序列号为key存入map
+            PublicKey publicKey = alipayPublicCert.getPublicKey();
+            ConcurrentHashMap<String, String> alipayPublicKeyMap = new ConcurrentHashMap<String, String>();
+            alipayPublicKeyMap.put(alipayCertSN, Base64.encodeBase64String(publicKey.getEncoded()));
+            this.alipayPublicKeyMap = alipayPublicKeyMap;
+        }catch (AlipayApiException e){
+            throw new AlipayApiException(AlipayApiErrorEnum.ALIPAY_PUBLIC_CERT_ERROR, e);
+        }
     }
 
     private String readFileToString(String rootCertPath) throws AlipayApiException {
@@ -258,11 +272,11 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                                                                   boolean responseIsSuccess) throws AlipayApiException {
         CertItem certItem = parser.getCertItem(request, responseBody);
         if (certItem == null) {
-            throw new AlipayApiException("cert check fail: Body is Empty!");
+            throw new AlipayApiException(AlipayApiErrorEnum.CHECK_CERT_BODY_EMPTY_ERROR);
         }
         if (certItem.getCert() == null && responseIsSuccess
                 && !request.getApiMethodName().equals(AlipayOpenAppAlipaycertDownloadRequest.ALIPAYCERT_DOWNLOAD)) {
-            throw new AlipayApiException("cert check fail: ALIPAY_CERT_SN is Empty!");
+            throw new AlipayApiException(AlipayApiErrorEnum.CHECK_ALIPAY_CERT_SN_EMPTY_ERROR);
         }
         String alipayPublicKey = null;
         if (certItem.getCert() != null) {
@@ -280,7 +294,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                 parserCert = new ObjectJsonParser<AlipayOpenAppAlipaycertDownloadResponse>(alipayRequest.getResponseClass());
                 AlipayOpenAppAlipaycertDownloadResponse alipayResponse = parserCert.parse(respContent);
                 if (!alipayResponse.isSuccess()) {
-                    throw new AlipayApiException("支付宝公钥证书校验失败，请确认是否为支付宝签发的有效公钥证书");
+                    throw new AlipayApiException(AlipayApiErrorEnum.CHECK_ALIPAY_CERT_SN_ERROR);
                 }
                 String alipayCertContent = alipayResponse.getAlipayCertContent();
 
@@ -289,7 +303,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                     byte[] alipayCert = Base64.decodeBase64String(alipayCertContent);
                     String alipayPublicCertStr = new String(alipayCert);
                     if (!verifyCert(alipayPublicCertStr)) {
-                        throw new AlipayApiException("支付宝公钥证书校验失败，请确认是否为支付宝签发的有效公钥证书");
+                        throw new AlipayApiException(AlipayApiErrorEnum.CHECK_ALIPAY_CERT_SN_ERROR);
                     }
                     inputStream = new ByteArrayInputStream(alipayCert);
                     CertificateFactory cf = CertificateFactory.getInstance("X.509", "BC");
@@ -337,18 +351,17 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                             boolean jsonCheck = getSignChecker().check(srouceData, certItem.getSign(),
                                     this.signType, this.charset);
                             if (!jsonCheck) {
-                                throw new AlipayApiException(
-                                        "cert check fail: check Cert and Data Fail！JSON also！");
+                                throw new AlipayApiException(AlipayApiErrorEnum.CHECK_CERT_JSON_ERROR);
                             }
                         } else {
 
-                            throw new AlipayApiException("cert check fail: check Cert and Data Fail!");
+                            throw new AlipayApiException(AlipayApiErrorEnum.CHECK_CERT_ERROR);
                         }
                     }
                 }
             } else {
 
-                throw new AlipayApiException("cert check fail: check Cert and Data Fail! CertSN non-existent");
+                throw new AlipayApiException(AlipayApiErrorEnum.CHECK_CERT_EXIST_ERROR);
             }
         }
 
@@ -374,7 +387,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
         //如果根证书序列号非空，抛异常提示开发者使用certificateExecute
         if (!StringUtils.isEmpty(this.alipayRootCertSN)) {
-            throw new AlipayApiException("检测到证书相关参数已初始化，证书模式下请改为调用certificateExecute");
+            throw new AlipayApiException(AlipayApiErrorEnum.CERT_EXECUTE_ERROR);
         }
 
         AlipayParser<T> parser = null;
@@ -587,13 +600,13 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
             if (StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))) {
 
-                throw new AlipayApiException("当前API不支持加密请求");
+                throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_IS_NEED_ERROR);
             }
 
             // 需要加密必须设置密钥和加密算法
             if (StringUtils.isEmpty(this.encryptType) || getEncryptor() == null) {
 
-                throw new AlipayApiException("API请求要求加密，则必须设置密钥类型和加密器");
+                throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_EMPTY_ERROR);
             }
 
             String encryptContent = getEncryptor().encrypt(
@@ -751,13 +764,13 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
             if (StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))) {
 
-                throw new AlipayApiException("当前API不支持加密请求");
+                throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_IS_NEED_ERROR);
             }
 
             // 需要加密必须设置密钥和加密算法
             if (StringUtils.isEmpty(this.encryptType) || getEncryptor() == null) {
 
-                throw new AlipayApiException("API请求要求加密，则必须设置密钥类型和加密器");
+                throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_EMPTY_ERROR);
             }
 
             String encryptContent = getEncryptor().encrypt(
@@ -1030,11 +1043,16 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
             if (signItem == null) {
 
-                throw new AlipayApiException("sign check fail: Body is Empty!");
+                throw new AlipayApiException(AlipayApiErrorEnum.CHECK_SIGN_BODY_EMPTY_ERROR);
             }
 
             if (responseIsSucess
                     || (!responseIsSucess && !StringUtils.isEmpty(signItem.getSign()))) {
+
+                // RSA或RSA2时检查当前公钥是不是应用公钥
+                if ((AlipayConstants.SIGN_TYPE_RSA.equals(this.signType) || AlipayConstants.SIGN_TYPE_RSA2.equals(this.signType)) && checkAlipayPublicKey()) {
+                    throw new AlipayApiException(AlipayApiErrorEnum.CHECK_ALIPAY_PUBLIC_KEY_ERROR);
+                }
 
                 boolean rsaCheckContent = getSignChecker().check(signItem.getSignSourceDate(),
                         signItem.getSign(), this.signType, this.charset);
@@ -1051,17 +1069,32 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                                 this.signType, this.charset);
 
                         if (!jsonCheck) {
-                            throw new AlipayApiException(
-                                    "sign check fail: check Sign and Data Fail！JSON also！");
+                            throw new AlipayApiException(AlipayApiErrorEnum.CHECK_SIGN_JSON_ERROR);
                         }
                     } else {
 
-                        throw new AlipayApiException("sign check fail: check Sign and Data Fail!");
+                        throw new AlipayApiException(AlipayApiErrorEnum.CHECK_SIGN_ERROR);
                     }
                 }
             }
 
         }
+    }
+
+    /**
+     * 判断alipayPublicKey是否是应用公钥
+     *
+     * @return
+     */
+    public boolean checkAlipayPublicKey() {
+        String content = "checkAlipayPublicKey";
+        boolean rsaCheckContent = false;
+        try {
+            String signContent = getSigner().sign(content, this.signType, charset);
+            rsaCheckContent = getSignChecker().check(content, signContent, this.signType, this.charset);
+        } catch (Exception ignored) {
+        }
+        return rsaCheckContent;
     }
 
     /**
@@ -1078,6 +1111,10 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                                                                            AlipayParser<T> parser) throws AlipayApiException {
 
         String responseBody = (String) rt.get("rsp");
+
+        if (StringUtils.isEmpty(responseBody)) {
+            throw new AlipayApiException(AlipayApiErrorEnum.RESPONSE_BODY_EMPTY_ERROR);
+        }
 
         String realBody = null;
 

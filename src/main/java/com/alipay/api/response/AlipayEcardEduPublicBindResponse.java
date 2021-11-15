@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcardEduPublicBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7817986569839622445L;
+	private static final long serialVersionUID = 6136631436628312982L;
 
 	/** 
 	 * 机构编码

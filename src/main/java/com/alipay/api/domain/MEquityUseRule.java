@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MEquityUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6395628389178548921L;
+	private static final long serialVersionUID = 3364448616263144712L;
 
 	/**
 	 * 权益不可用时段信息，不可用时间段只支持周期维度DAY类型，举例：指定日期2018-12-12至2018-12-22时间段不可用，数据结构为：{"timeDimensionType":"DAY","times":"2018-12-12,2018-12-22"}，目前列表数据最多支持5组

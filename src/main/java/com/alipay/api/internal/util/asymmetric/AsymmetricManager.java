@@ -4,6 +4,7 @@
  */
 package com.alipay.api.internal.util.asymmetric;
 
+import com.alipay.api.AlipayApiErrorEnum;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayConstants;
 
@@ -22,7 +23,7 @@ public class AsymmetricManager {
         if (AlipayConstants.SIGN_TYPE_SM2.equals(type)) {
             return new SM2Encryptor();
         }
-        throw new AlipayApiException("无效的非对称加密类型:[\" + type + \"]，可选值为：RSA、RSA2和SM2。");
+        throw new AlipayApiException(String.format(AlipayApiErrorEnum.SIGN_TYPE_ERROR.getErrMsg(), type));
     }
 
 }

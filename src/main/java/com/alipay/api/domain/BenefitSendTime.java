@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BenefitSendTime extends AlipayObject {
 
-	private static final long serialVersionUID = 6311962659886563711L;
+	private static final long serialVersionUID = 1373242566388678757L;
 
 	/**
 	 * 代表限定周期时间类型

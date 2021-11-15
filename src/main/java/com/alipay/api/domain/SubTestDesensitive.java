@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SubTestDesensitive extends AlipayObject {
 
-	private static final long serialVersionUID = 8597627574637537731L;
+	private static final long serialVersionUID = 1742198941767116416L;
 
 	/**
 	 * 邮箱

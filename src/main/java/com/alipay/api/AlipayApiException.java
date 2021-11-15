@@ -21,8 +21,16 @@ public class AlipayApiException extends Exception {
         super(message, cause);
     }
 
+    public AlipayApiException(AlipayApiErrorEnum messageEnum, Throwable cause) {
+        super(messageEnum.getErrMsg(), cause);
+    }
+
     public AlipayApiException(String message) {
         super(message);
+    }
+
+    public AlipayApiException(AlipayApiErrorEnum messageEnum) {
+        super(messageEnum.getErrMsg());
     }
 
     public AlipayApiException(Throwable cause) {

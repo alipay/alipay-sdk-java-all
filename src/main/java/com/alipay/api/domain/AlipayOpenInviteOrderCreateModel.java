@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenInviteOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1349352238335949528L;
+	private static final long serialVersionUID = 8464954462223227117L;
 
 	/**
 	 * ISV 业务系统的申请单 id。由 ISV 自定义，支付宝会将该值拼接在 isv_return_url 后返回，ISV 可据此做业务处理。

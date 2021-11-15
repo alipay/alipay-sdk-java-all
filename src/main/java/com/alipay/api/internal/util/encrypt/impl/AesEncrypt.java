@@ -4,6 +4,7 @@
  */
 package com.alipay.api.internal.util.encrypt.impl;
 
+import com.alipay.api.AlipayApiErrorEnum;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.internal.util.codec.Base64;
 import com.alipay.api.internal.util.encrypt.Encrypt;
@@ -11,6 +12,7 @@ import com.alipay.api.internal.util.encrypt.Encrypt;
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.io.UnsupportedEncodingException;
 import java.security.GeneralSecurityException;
 
 /**
@@ -41,9 +43,11 @@ public class AesEncrypt implements Encrypt {
 
             byte[] encryptBytes = cipher.doFinal(content.getBytes(charset));
             return new String(Base64.encodeBase64(encryptBytes));
+        } catch (UnsupportedEncodingException e) {
+            throw new AlipayApiException(String.format(AlipayApiErrorEnum.ENCRYPT_ASE_CHARSET_ERROR.getErrMsg(), charset), e);
         } catch (Exception e) {
-            throw new AlipayApiException("AES加密失败：Aescontent = " + content + "; charset = "
-                    + charset, e);
+            throw new AlipayApiException(String.format(AlipayApiErrorEnum.ENCRYPT_ASE_ERROR.getErrMsg(),
+                    content, charset), e);
         }
     }
 
@@ -58,8 +62,8 @@ public class AesEncrypt implements Encrypt {
             byte[] cleanBytes = cipher.doFinal(Base64.decodeBase64(content.getBytes()));
             return new String(cleanBytes, charset);
         } catch (Exception e) {
-            throw new AlipayApiException("AES解密失败：Aescontent = " + content + "; charset = "
-                    + charset, e);
+            throw new AlipayApiException(String.format(AlipayApiErrorEnum.DECRYPT_ASE_ERROR.getErrMsg(),
+                    content, charset), e);
         }
     }
 

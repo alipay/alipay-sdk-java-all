@@ -4,8 +4,11 @@
  */
 package com.alipay.api.internal.util.asymmetric;
 
+import com.alipay.api.AlipayApiErrorEnum;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.internal.util.StringUtils;
+
+import java.io.UnsupportedEncodingException;
 
 /**
  * 非对称加密算法
@@ -18,10 +21,10 @@ public abstract class BaseAsymmetricEncryptor implements IAsymmetricEncryptor {
     public String decrypt(String cipherTextBase64, String charset, String privateKey) throws AlipayApiException {
         try {
             if (StringUtils.isEmpty(cipherTextBase64)) {
-                throw new AlipayApiException("密文不可为空");
+                throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_TEXT_EMPTY_ERROR);
             }
             if (StringUtils.isEmpty(privateKey)) {
-                throw new AlipayApiException("私钥不可为空");
+                throw new AlipayApiException(AlipayApiErrorEnum.SIGN_PRIVATE_KEY_EMPTY_ERROR);
             }
             if (StringUtils.isEmpty(charset)) {
                 charset = DEFAULT_CHARSET;
@@ -30,9 +33,9 @@ public abstract class BaseAsymmetricEncryptor implements IAsymmetricEncryptor {
 
         } catch (Exception e) {
 
-            String errorMessage = getAsymmetricType() + "非对称解密遭遇异常，请检查私钥格式是否正确。" + e.getMessage() +
-                    " cipherTextBase64=" + cipherTextBase64 + "，charset=" + charset + "，privateKeySize=" + privateKey.length();
-            throw new AlipayApiException(errorMessage,e);
+            String errorMessage = String.format(AlipayApiErrorEnum.DECRYPT_ERROR.getErrMsg(),
+                    getAsymmetricType(), e.getMessage(), cipherTextBase64, charset, privateKey == null ? 0 : privateKey.length());
+            throw new AlipayApiException(errorMessage, e);
         }
 
     }
@@ -40,10 +43,10 @@ public abstract class BaseAsymmetricEncryptor implements IAsymmetricEncryptor {
     public String encrypt(String plainText, String charset, String publicKey) throws AlipayApiException {
         try {
             if (StringUtils.isEmpty(plainText)) {
-                throw new AlipayApiException("密文不可为空");
+                throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_TEXT_EMPTY_ERROR);
             }
             if (StringUtils.isEmpty(publicKey)) {
-                throw new AlipayApiException("公钥不可为空");
+                throw new AlipayApiException(AlipayApiErrorEnum.SIGN_PUBLIC_KEY_EMPTY_ERROR);
             }
             if (StringUtils.isEmpty(charset)) {
                 charset = DEFAULT_CHARSET;
@@ -51,9 +54,9 @@ public abstract class BaseAsymmetricEncryptor implements IAsymmetricEncryptor {
             return doEncrypt(plainText, charset, publicKey);
         } catch (Exception e) {
 
-            String errorMessage = getAsymmetricType() + "非对称解密遭遇异常，请检查公钥格式是否正确。" + e.getMessage() +
-                    " plainText=" + plainText + "，charset=" + charset + "，publicKey=" + publicKey;
-            throw new AlipayApiException(errorMessage,e);
+            String errorMessage = String.format(AlipayApiErrorEnum.ENCRYPT_ERROR.getErrMsg(),
+                    getAsymmetricType(), e.getMessage(), plainText, charset, publicKey);
+            throw new AlipayApiException(errorMessage, e);
         }
 
     }
@@ -61,20 +64,26 @@ public abstract class BaseAsymmetricEncryptor implements IAsymmetricEncryptor {
     public String sign(String content, String charset, String privateKey) throws AlipayApiException {
         try {
             if (StringUtils.isEmpty(content)) {
-                throw new AlipayApiException("待签名内容不可为空");
+                throw new AlipayApiException(AlipayApiErrorEnum.SIGN_TEXT_EMPTY_ERROR);
             }
             if (StringUtils.isEmpty(privateKey)) {
-                throw new AlipayApiException("私钥不可为空");
+                throw new AlipayApiException(AlipayApiErrorEnum.SIGN_PRIVATE_KEY_EMPTY_ERROR);
             }
             if (StringUtils.isEmpty(charset)) {
                 charset = DEFAULT_CHARSET;
             }
             return doSign(content, charset, privateKey);
+        } catch (UnsupportedEncodingException e) {
+
+            String errorMessage = String.format(AlipayApiErrorEnum.SIGN_CHARSET_ERROR.getErrMsg(),
+                    getAsymmetricType(), charset);
+
+            throw new AlipayApiException(errorMessage, e);
         } catch (Exception e) {
 
-            String errorMessage = getAsymmetricType() + "签名遭遇异常，请检查私钥格式是否正确。" + e.getMessage() +
-                    " content=" + content + "，charset=" + charset + "，privateKeySize=" + privateKey.length();
-            throw new AlipayApiException(errorMessage,e);
+            String errorMessage = String.format(AlipayApiErrorEnum.SIGN_ERROR.getErrMsg(),
+                    getAsymmetricType(), e.getMessage(), content, charset, privateKey == null ? 0 : privateKey.length());
+            throw new AlipayApiException(errorMessage, e);
         }
 
     }
@@ -82,13 +91,13 @@ public abstract class BaseAsymmetricEncryptor implements IAsymmetricEncryptor {
     public boolean verify(String content, String charset, String publicKey, String sign) throws AlipayApiException {
         try {
             if (StringUtils.isEmpty(content)) {
-                throw new AlipayApiException("待验签内容不可为空");
+                throw new AlipayApiException(AlipayApiErrorEnum.VERIFY_TEXT_EMPTY_ERROR);
             }
             if (StringUtils.isEmpty(publicKey)) {
-                throw new AlipayApiException("公钥不可为空");
+                throw new AlipayApiException(AlipayApiErrorEnum.SIGN_PUBLIC_KEY_EMPTY_ERROR);
             }
             if (StringUtils.isEmpty(sign)) {
-                throw new AlipayApiException("签名串不可为空");
+                throw new AlipayApiException(AlipayApiErrorEnum.SIGN_EMPTY_ERROR);
             }
             if (StringUtils.isEmpty(charset)) {
                 charset = DEFAULT_CHARSET;
@@ -96,9 +105,9 @@ public abstract class BaseAsymmetricEncryptor implements IAsymmetricEncryptor {
             return doVerify(content, charset, publicKey, sign);
         } catch (Exception e) {
 
-            String errorMessage = getAsymmetricType() + "验签遭遇异常，请检查公钥格式是否正确。" + e.getMessage() +
-                    " content=" + content + "，charset=" + charset + "，publicKey=" + publicKey;
-            throw new AlipayApiException(errorMessage,e);
+            String errorMessage = String.format(AlipayApiErrorEnum.VERIFY_ERROR.getErrMsg(),
+                    getAsymmetricType(), e.getMessage(), content, charset, publicKey);
+            throw new AlipayApiException(errorMessage, e);
         }
     }
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碎屏险保障卡激活码查询
  *
  * @author auto create
- * @since 1.0, 2021-09-17 20:33:25
+ * @since 1.0, 2021-11-15 09:30:45
  */
 public class AlipayInsSceneMobileCodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7323771295728416723L;
+	private static final long serialVersionUID = 4155697476256847999L;
 
 	/**
 	 * 请求渠道

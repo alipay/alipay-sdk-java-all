@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.KoubeiAdvertCommissionSpecialadvcontentModifyModel;
+import com.alipay.api.domain.AlipaySocialBaseContentlibStandardcontentDeleteModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.KoubeiAdvertCommissionSpecialadvcontentModifyResponse;
+import com.alipay.api.response.AlipaySocialBaseContentlibStandardcontentDeleteResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: koubei.advert.commission.specialadvcontent.modify request
+ * ALIPAY API: alipay.social.base.contentlib.standardcontent.delete request
  * 
  * @author auto create
- * @since 1.0, 2020-09-29 17:17:16
+ * @since 1.0, 2021-11-12 15:45:32
  */
-public class KoubeiAdvertCommissionSpecialadvcontentModifyRequest implements AlipayRequest<KoubeiAdvertCommissionSpecialadvcontentModifyResponse> {
+public class AlipaySocialBaseContentlibStandardcontentDeleteRequest implements AlipayRequest<AlipaySocialBaseContentlibStandardcontentDeleteResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 特殊广告内容修改接口
+	* 内容删除
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class KoubeiAdvertCommissionSpecialadvcontentModifyRequest implements Ali
 	}
 
 	public String getApiMethodName() {
-		return "koubei.advert.commission.specialadvcontent.modify";
+		return "alipay.social.base.contentlib.standardcontent.delete";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class KoubeiAdvertCommissionSpecialadvcontentModifyRequest implements Ali
 		this.udfParams.put(key, value);
 	}
 
-	public Class<KoubeiAdvertCommissionSpecialadvcontentModifyResponse> getResponseClass() {
-		return KoubeiAdvertCommissionSpecialadvcontentModifyResponse.class;
+	public Class<AlipaySocialBaseContentlibStandardcontentDeleteResponse> getResponseClass() {
+		return AlipaySocialBaseContentlibStandardcontentDeleteResponse.class;
 	}
 	
 
