@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CarbonTrans extends AlipayObject {
 
-	private static final long serialVersionUID = 1249451471142157671L;
+	private static final long serialVersionUID = 8857929895279477233L;
 
 	/**
 	 * 当前查询出来的碳账户总能量值（日，月）

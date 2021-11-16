@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayOpenPublicLabelDeleteModel;
+import com.alipay.api.domain.AlipaySocialOpengreenEnergyCreateModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayOpenPublicLabelDeleteResponse;
+import com.alipay.api.response.AlipaySocialOpengreenEnergyCreateResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.open.public.label.delete request
+ * ALIPAY API: alipay.social.opengreen.energy.create request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:01:15
+ * @since 1.0, 2021-11-16 14:05:30
  */
-public class AlipayOpenPublicLabelDeleteRequest implements AlipayRequest<AlipayOpenPublicLabelDeleteResponse> {
+public class AlipaySocialOpengreenEnergyCreateRequest implements AlipayRequest<AlipaySocialOpengreenEnergyCreateResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 公众号标签管理-删除标签
+	* 生成绿色能量
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayOpenPublicLabelDeleteRequest implements AlipayRequest<AlipayO
 	}
 
 	public String getApiMethodName() {
-		return "alipay.open.public.label.delete";
+		return "alipay.social.opengreen.energy.create";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayOpenPublicLabelDeleteRequest implements AlipayRequest<AlipayO
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayOpenPublicLabelDeleteResponse> getResponseClass() {
-		return AlipayOpenPublicLabelDeleteResponse.class;
+	public Class<AlipaySocialOpengreenEnergyCreateResponse> getResponseClass() {
+		return AlipaySocialOpengreenEnergyCreateResponse.class;
 	}
 	
 

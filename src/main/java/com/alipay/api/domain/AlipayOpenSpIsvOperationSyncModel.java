@@ -7,17 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商作业数据回传
  *
  * @author auto create
- * @since 1.0, 2021-11-02 15:06:49
+ * @since 1.0, 2021-11-16 13:51:43
  */
 public class AlipayOpenSpIsvOperationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2291558995952539166L;
+	private static final long serialVersionUID = 1587431252843843718L;
+
+	/**
+	 * 客户类型，PERSONAL表示个人，ALIPAY_RECOMMEND表示支付宝推荐
+	 */
+	@ApiField("customer_type")
+	private String customerType;
+
+	/**
+	 * 拓展字段回传
+	 */
+	@ApiField("ext_info")
+	private OperationResultExtInfo extInfo;
 
 	/**
 	 * 实施结束时间
 	 */
 	@ApiField("implement_end_time")
 	private String implementEndTime;
+
+	/**
+	 * 实施对象名称
+	 */
+	@ApiField("implement_object_name")
+	private String implementObjectName;
 
 	/**
 	 * 实施地点
@@ -30,6 +48,12 @@ public class AlipayOpenSpIsvOperationSyncModel extends AlipayObject {
 	 */
 	@ApiField("implement_result")
 	private String implementResult;
+
+	/**
+	 * 实施结果的照片
+	 */
+	@ApiField("implement_result_image")
+	private String implementResultImage;
 
 	/**
 	 * 实施结果的备注
@@ -68,6 +92,18 @@ public class AlipayOpenSpIsvOperationSyncModel extends AlipayObject {
 	private String miniAppid;
 
 	/**
+	 * 拓展助手中的商机id
+	 */
+	@ApiField("oppor_id")
+	private String opporId;
+
+	/**
+	 * 下单订单号
+	 */
+	@ApiField("order_id")
+	private String orderId;
+
+	/**
 	 * 外部业务号，传isv系统生成的账单号，需要保证唯一
 	 */
 	@ApiField("out_biz_no")
@@ -80,16 +116,43 @@ public class AlipayOpenSpIsvOperationSyncModel extends AlipayObject {
 	private String promotorPid;
 
 	/**
+	 * 店铺id
+	 */
+	@ApiField("shop_id")
+	private String shopId;
+
+	/**
 	 * 推广服务商(S2)子账号pid
 	 */
 	@ApiField("sub_promotor_pid")
 	private String subPromotorPid;
+
+	public String getCustomerType() {
+		return this.customerType;
+	}
+	public void setCustomerType(String customerType) {
+		this.customerType = customerType;
+	}
+
+	public OperationResultExtInfo getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(OperationResultExtInfo extInfo) {
+		this.extInfo = extInfo;
+	}
 
 	public String getImplementEndTime() {
 		return this.implementEndTime;
 	}
 	public void setImplementEndTime(String implementEndTime) {
 		this.implementEndTime = implementEndTime;
+	}
+
+	public String getImplementObjectName() {
+		return this.implementObjectName;
+	}
+	public void setImplementObjectName(String implementObjectName) {
+		this.implementObjectName = implementObjectName;
 	}
 
 	public String getImplementPlace() {
@@ -104,6 +167,13 @@ public class AlipayOpenSpIsvOperationSyncModel extends AlipayObject {
 	}
 	public void setImplementResult(String implementResult) {
 		this.implementResult = implementResult;
+	}
+
+	public String getImplementResultImage() {
+		return this.implementResultImage;
+	}
+	public void setImplementResultImage(String implementResultImage) {
+		this.implementResultImage = implementResultImage;
 	}
 
 	public String getImplementResultRemark() {
@@ -148,6 +218,20 @@ public class AlipayOpenSpIsvOperationSyncModel extends AlipayObject {
 		this.miniAppid = miniAppid;
 	}
 
+	public String getOpporId() {
+		return this.opporId;
+	}
+	public void setOpporId(String opporId) {
+		this.opporId = opporId;
+	}
+
+	public String getOrderId() {
+		return this.orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
@@ -160,6 +244,13 @@ public class AlipayOpenSpIsvOperationSyncModel extends AlipayObject {
 	}
 	public void setPromotorPid(String promotorPid) {
 		this.promotorPid = promotorPid;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 	public String getSubPromotorPid() {

@@ -1,25 +1,26 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayInsSceneFamilydoctorItemBatchqueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayMobilePublicLabelUserAddResponse;
+import com.alipay.api.response.AlipayInsSceneFamilydoctorItemBatchqueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.mobile.public.label.user.add request
+ * ALIPAY API: alipay.ins.scene.familydoctor.item.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2021-06-23 14:42:46
+ * @since 1.0, 2021-11-16 15:40:33
  */
-public class AlipayMobilePublicLabelUserAddRequest implements AlipayRequest<AlipayMobilePublicLabelUserAddResponse> {
+public class AlipayInsSceneFamilydoctorItemBatchqueryRequest implements AlipayRequest<AlipayInsSceneFamilydoctorItemBatchqueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* json串，<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7386797.0.0.1l7WMo&treeId=53&articleId=103508&docType=1">详情请见</a>
+	* 家庭医生商品批量搜索查询接口
 	 */
 	private String bizContent;
 
@@ -86,7 +87,7 @@ public class AlipayMobilePublicLabelUserAddRequest implements AlipayRequest<Alip
 	}
 
 	public String getApiMethodName() {
-		return "alipay.mobile.public.label.user.add";
+		return "alipay.ins.scene.familydoctor.item.batchquery";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -105,8 +106,8 @@ public class AlipayMobilePublicLabelUserAddRequest implements AlipayRequest<Alip
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayMobilePublicLabelUserAddResponse> getResponseClass() {
-		return AlipayMobilePublicLabelUserAddResponse.class;
+	public Class<AlipayInsSceneFamilydoctorItemBatchqueryResponse> getResponseClass() {
+		return AlipayInsSceneFamilydoctorItemBatchqueryResponse.class;
 	}
 	
 

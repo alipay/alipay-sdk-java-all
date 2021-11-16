@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.customs.declare response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-10 17:45:43
+ * @since 1.0, 2021-11-16 15:47:48
  */
 public class AlipayTradeCustomsDeclareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3881956265133511393L;
+	private static final long serialVersionUID = 1785696759276365255L;
 
 	/** 
 	 * 支付宝报关流水号。
@@ -31,6 +31,12 @@ public class AlipayTradeCustomsDeclareResponse extends AlipayResponse {
 	 */
 	@ApiField("identity_check")
 	private String identityCheck;
+
+	/** 
+	 * 国际站外部订单号
+	 */
+	@ApiField("out_trade_no")
+	private String outTradeNo;
 
 	/** 
 	 * 支付机构注册号
@@ -81,6 +87,13 @@ public class AlipayTradeCustomsDeclareResponse extends AlipayResponse {
 	}
 	public String getIdentityCheck( ) {
 		return this.identityCheck;
+	}
+
+	public void setOutTradeNo(String outTradeNo) {
+		this.outTradeNo = outTradeNo;
+	}
+	public String getOutTradeNo( ) {
+		return this.outTradeNo;
 	}
 
 	public void setPayCode(String payCode) {

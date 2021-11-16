@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecruitVoucherRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3619762811184153331L;
+	private static final long serialVersionUID = 4387347918967875586L;
 
 	/**
 	 * 券优惠比例的最大值。20代表优惠比例最多是20%。券优惠券比例=券优惠面额/门槛金额。

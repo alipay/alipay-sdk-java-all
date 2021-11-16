@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SourceOffer extends AlipayObject {
 
-	private static final long serialVersionUID = 4182935788872733366L;
+	private static final long serialVersionUID = 5119653934888356379L;
 
 	/**
 	 * offerId

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingDataEquitySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1893454286237938397L;
+	private static final long serialVersionUID = 5759888779675361173L;
 
 	/**
 	 * biz_time

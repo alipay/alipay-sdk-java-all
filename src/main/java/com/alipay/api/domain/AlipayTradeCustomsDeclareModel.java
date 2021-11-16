@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单报关接口
  *
  * @author auto create
- * @since 1.0, 2021-08-10 17:45:43
+ * @since 1.0, 2021-11-16 15:28:07
  */
 public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5513961925213621593L;
+	private static final long serialVersionUID = 2859423644152252456L;
 
 	/**
 	 * 报关金额，单位为人民币“元”，精确到小数点后2位。
@@ -57,11 +57,23 @@ public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 	private String merchantCustomsName;
 
 	/**
+	 * 国际站商户标识
+	 */
+	@ApiField("merchant_id")
+	private String merchantId;
+
+	/**
 	 * 报关流水号。商户生成的用于唯一标识一次报关操作的业务编号。
-建议生成规则：yyyymmdd型8位日期拼接4位序列号。每个报关请求号仅允许传入：数字、英文字母、下划线”_”、短横线”－” 。长度6-32位前后不能有空格
+建议生成规则：yyyymmdd型8位日期拼接4位序列号。每个报关请求号仅允许传入：数字、英文字母、下划线”_”、短横线”－” 。长度6-64位前后不能有空格
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
+
+	/**
+	 * 国际站外部订单号
+	 */
+	@ApiField("out_trade_no")
+	private String outTradeNo;
 
 	/**
 	 * 拆单报关的商户子订单号。 用于区别拆单时不同子单。拆单时必须传入，否则会报INVALID_PARAMETER错误码。
@@ -124,11 +136,25 @@ public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 		this.merchantCustomsName = merchantCustomsName;
 	}
 
+	public String getMerchantId() {
+		return this.merchantId;
+	}
+	public void setMerchantId(String merchantId) {
+		this.merchantId = merchantId;
+	}
+
 	public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
+	}
+
+	public String getOutTradeNo() {
+		return this.outTradeNo;
+	}
+	public void setOutTradeNo(String outTradeNo) {
+		this.outTradeNo = outTradeNo;
 	}
 
 	public String getSubOutBizNo() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandTradeorderEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3647756234982173443L;
+	private static final long serialVersionUID = 6392218815967877362L;
 
 	/**
 	 * 物流事件：LOGISTICS_ORDER_PAID(支付成功)、LOGISTICS_ORDER_CANCEL(取消)、COURIER_RECEIVED_ORDER(配送员接单)、COURIER_ARRIVED_SHOP(配送员到店)、COURIER_OBTAINED_GOODS(配送员已取货)、COURIER_ARRIVED_DEST(配送员已到达目的地)、LOGISTICS_ORDER_CONFIRM(确认)

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbadvertSmartPromoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7339987414155549278L;
+	private static final long serialVersionUID = 6799515959572389458L;
 
 	/**
 	 * 智能营销分组ID

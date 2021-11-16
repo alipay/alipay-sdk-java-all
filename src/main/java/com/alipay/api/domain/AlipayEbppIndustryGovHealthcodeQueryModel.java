@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryGovHealthcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7225553786875564495L;
+	private static final long serialVersionUID = 6885594428643268223L;
 
 	/**
 	 * json格式的业务相关信息, 因健康码不同的省市存在个性化的业务参数需求，在本字段内传入

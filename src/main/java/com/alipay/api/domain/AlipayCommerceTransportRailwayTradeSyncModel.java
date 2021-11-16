@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportRailwayTradeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2864362349124648976L;
+	private static final long serialVersionUID = 6358241287729318943L;
 
 	/**
 	 * 业务日期，用于判断对账时间，格式为yyyyMMdd

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EquipmentAuthRemoveQueryBypageDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5878666523976511488L;
+	private static final long serialVersionUID = 7177954962948472443L;
 
 	/**
 	 * 机具编号
