@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DriverCarInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4661689959557495869L;
+	private static final long serialVersionUID = 5475636187917826195L;
 
 	/**
 	 * 是否开通高德聚合码

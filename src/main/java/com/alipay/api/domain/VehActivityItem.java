@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动项
  *
  * @author auto create
- * @since 1.0, 2021-05-31 15:52:07
+ * @since 1.0, 2021-11-19 16:18:56
  */
 public class VehActivityItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2544396682226669789L;
+	private static final long serialVersionUID = 7525849597383877487L;
 
 	/**
 	 * 活动id

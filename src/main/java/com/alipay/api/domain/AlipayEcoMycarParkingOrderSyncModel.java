@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单同步接口
  *
  * @author auto create
- * @since 1.0, 2021-11-15 20:56:18
+ * @since 1.0, 2021-11-19 15:53:41
  */
 public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1288895346893221468L;
+	private static final long serialVersionUID = 5698237264963296234L;
+
+	/**
+	 * 该笔停车交易需要返佣的对象实体PID，可能是商户，可能是ISV；只做下沉，用于离线表层面对账。
+	 */
+	@ApiField("agent_pid")
+	private String agentPid;
 
 	/**
 	 * 车牌
@@ -120,6 +126,13 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getAgentPid() {
+		return this.agentPid;
+	}
+	public void setAgentPid(String agentPid) {
+		this.agentPid = agentPid;
+	}
 
 	public String getCarNumber() {
 		return this.carNumber;

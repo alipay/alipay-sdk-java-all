@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 法务c端用户协议签约
  *
  * @author auto create
- * @since 1.0, 2021-11-12 14:00:44
+ * @since 1.0, 2021-11-17 10:38:49
  */
 public class AlipayBossProdAlcagmprodAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1525976315756427126L;
+	private static final long serialVersionUID = 3541344491321714464L;
 
 	/**
 	 * 法务C端协议分配的协议ID，用于唯一标识一个协议或复用协议。支持列表(批量签约)

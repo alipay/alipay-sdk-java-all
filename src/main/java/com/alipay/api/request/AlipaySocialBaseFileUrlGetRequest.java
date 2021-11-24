@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.file.url.get request
  * 
  * @author auto create
- * @since 1.0, 2021-10-15 18:22:48
+ * @since 1.0, 2021-11-19 15:25:33
  */
 public class AlipaySocialBaseFileUrlGetRequest implements AlipayRequest<AlipaySocialBaseFileUrlGetResponse> {
 

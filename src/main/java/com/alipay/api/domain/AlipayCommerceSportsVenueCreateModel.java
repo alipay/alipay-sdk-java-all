@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆入驻
  *
  * @author auto create
- * @since 1.0, 2021-04-23 17:29:45
+ * @since 1.0, 2021-11-16 20:05:13
  */
 public class AlipayCommerceSportsVenueCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8275996466637969682L;
+	private static final long serialVersionUID = 5514635956736512424L;
 
 	/**
 	 * 具体地址
@@ -47,6 +47,20 @@ public class AlipayCommerceSportsVenueCreateModel extends AlipayObject {
 	private String desc;
 
 	/**
+	 * 场馆更多服务链接：可从文体场馆页跳转进此链接，进入服务商的该场馆页面
+	 */
+	@ApiField("extra_service_url")
+	private String extraServiceUrl;
+
+	/**
+	 * 接入方式：
+空值/不传值/center  = 中心化 (场馆走文体中心统一规范）；
+half_center = 半中心化 （场馆走服务商的跳转链接）
+	 */
+	@ApiField("join_type")
+	private String joinType;
+
+	/**
 	 * 纬度
 	 */
 	@ApiField("latitude")
@@ -73,7 +87,7 @@ public class AlipayCommerceSportsVenueCreateModel extends AlipayObject {
 	private String openingHours;
 
 	/**
-	 * 服务商场馆ID
+	 * 主场馆在服务商的ID
 	 */
 	@ApiField("out_venue_id")
 	private String outVenueId;
@@ -106,10 +120,11 @@ public class AlipayCommerceSportsVenueCreateModel extends AlipayObject {
 	private String poster;
 
 	/**
-	 * 场馆售卖产品类型集合，逗号隔开
+	 * 场馆售卖产品类型集合
 calendar：价格日历
 ticket：票券
-course: 课程
+course: 课程。
+（注：中心化场馆必填，半中心化场馆不用填）
 	 */
 	@ApiListField("product_type_list")
 	@ApiField("string")
@@ -194,6 +209,20 @@ course: 课程
 	}
 	public void setDesc(String desc) {
 		this.desc = desc;
+	}
+
+	public String getExtraServiceUrl() {
+		return this.extraServiceUrl;
+	}
+	public void setExtraServiceUrl(String extraServiceUrl) {
+		this.extraServiceUrl = extraServiceUrl;
+	}
+
+	public String getJoinType() {
+		return this.joinType;
+	}
+	public void setJoinType(String joinType) {
+		this.joinType = joinType;
 	}
 
 	public String getLatitude() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.file.url.get response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-15 18:22:48
+ * @since 1.0, 2021-11-19 15:25:33
  */
 public class AlipaySocialBaseFileUrlGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8227494284883276432L;
+	private static final long serialVersionUID = 6421562449175959874L;
 
 	/** 
 	 * 带文件拓展名的文件名

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链金融场景订单提交
  *
  * @author auto create
- * @since 1.0, 2021-01-25 18:26:01
+ * @since 1.0, 2021-11-22 10:32:16
  */
 public class AnttechBlockchainDefinFinanceOrderSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5535122923435291892L;
+	private static final long serialVersionUID = 3192125948812672384L;
 
 	/**
 	 * 业务参数

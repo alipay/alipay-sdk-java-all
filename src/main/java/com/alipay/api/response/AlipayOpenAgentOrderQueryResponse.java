@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-30 19:47:37
+ * @since 1.0, 2021-11-23 21:51:01
  */
 public class AlipayOpenAgentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3365867898613246715L;
+	private static final long serialVersionUID = 7137893587779354682L;
 
 	/** 
 	 * 代理创建的应用ID，如果有代理商户创建应用，商户确认成功后，才返回应用ID，否则不返回。
@@ -35,6 +35,12 @@ public class AlipayOpenAgentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("merchant_pid")
 	private String merchantPid;
+
+	/** 
+	 * 签约单号
+	 */
+	@ApiField("order_no")
+	private String orderNo;
 
 	/** 
 	 * 支付宝商户入驻申请单状态，申请单状态包括：
@@ -87,6 +93,13 @@ MERCHANT_APPLY_ORDER_CANCELED=审核失败或商户拒绝，申请信息审核�
 	}
 	public String getMerchantPid( ) {
 		return this.merchantPid;
+	}
+
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
+	}
+	public String getOrderNo( ) {
+		return this.orderNo;
 	}
 
 	public void setOrderStatus(String orderStatus) {

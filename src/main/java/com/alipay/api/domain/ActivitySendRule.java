@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivitySendRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5195889262779563377L;
+	private static final long serialVersionUID = 1122465317178126467L;
 
 	/**
 	 * 设置此字段，允许指定单天最大发券数量。 限制: 每天发放张数*活动天数应小于等于优惠券发放总量

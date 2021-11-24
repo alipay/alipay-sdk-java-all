@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票订单模型
  *
  * @author auto create
- * @since 1.0, 2021-10-25 14:07:32
+ * @since 1.0, 2021-11-18 10:24:31
  */
 public class ReceiptSimpleOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6697674656799314154L;
+	private static final long serialVersionUID = 6585453735616671624L;
 
 	/**
 	 * 支付宝用户uid
@@ -68,7 +68,7 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	private Date orderCreateTime;
 
 	/**
-	 * 订单详情跳转链接,商户可自定义跳转到自己的小程序（落地页）
+	 * APPID,商户可自定义需要跳转到小程序（默认进入小程序首页）
 	 */
 	@ApiField("order_link")
 	private String orderLink;

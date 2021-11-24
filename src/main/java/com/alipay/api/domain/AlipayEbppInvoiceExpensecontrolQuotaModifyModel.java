@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改额度
  *
  * @author auto create
- * @since 1.0, 2021-10-13 20:15:22
+ * @since 1.0, 2021-11-19 11:46:41
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7447869476185172492L;
+	private static final long serialVersionUID = 8383741851568761421L;
 
 	/**
 	 * 企业签约企业合花ID-共同账号ID
@@ -44,13 +44,13 @@ UNFREEZE-额度解冻
 	private String amount;
 
 	/**
-	 * 外部幂等ID
+	 * 外部幂等ID（由外部指定不重复ID）
 	 */
 	@ApiField("outer_source_id")
 	private String outerSourceId;
 
 	/**
-	 * 外部平台编码
+	 * 外部平台编码（请联系对接人获取）
 	 */
 	@ApiField("platform")
 	private String platform;

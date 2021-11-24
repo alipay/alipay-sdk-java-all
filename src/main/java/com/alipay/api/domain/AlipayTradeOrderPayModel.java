@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4447947459492212936L;
+	private static final long serialVersionUID = 1612131764134351772L;
 
 	/**
 	 * 垫资支付模式。支付时需要垫资的场景才传入。具体传参需与支付宝约定。

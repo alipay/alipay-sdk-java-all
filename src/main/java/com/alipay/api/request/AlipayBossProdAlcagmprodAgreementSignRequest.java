@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.alcagmprod.agreement.sign request
  * 
  * @author auto create
- * @since 1.0, 2021-11-12 14:00:57
+ * @since 1.0, 2021-11-17 10:40:31
  */
 public class AlipayBossProdAlcagmprodAgreementSignRequest implements AlipayRequest<AlipayBossProdAlcagmprodAgreementSignResponse> {
 

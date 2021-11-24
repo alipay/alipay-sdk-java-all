@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCouponTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8386251231155699554L;
+	private static final long serialVersionUID = 6864221356459561183L;
 
 	/**
 	 * 创建红包模板时录入的品牌信息，由商户自定义，在通用模板中展示在红包LOGO下方。根据红包使用场景的不同，该信息的展示位置可能会有不同。
@@ -34,7 +34,7 @@ public class AlipayMarketingCouponTemplateCreateModel extends AlipayObject {
 	private String floorAmount;
 
 	/**
-	 * 出资人登录账号。用于发红包的资金会从该账号划拨到发红包专用账户上。当调用创建接口成功后，会返回付款订单页面，仅当前传入资金账号可进行付款，付款完成后红包变更为激活状态，可进行发放。
+	 * 出资人支付宝登录账号。用于发红包的资金会从该账号划拨到发红包专用账户上。当调用创建接口成功后，会返回付款订单页面，仅当前传入资金账号可进行付款，付款完成后红包变更为激活状态，可进行发放。
 	 */
 	@ApiField("fund_account")
 	private String fundAccount;

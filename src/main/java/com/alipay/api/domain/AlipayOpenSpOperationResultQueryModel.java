@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询服务商代运营操作结果
  *
  * @author auto create
- * @since 1.0, 2021-11-03 21:10:28
+ * @since 1.0, 2021-11-20 01:54:01
  */
 public class AlipayOpenSpOperationResultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3123528525652849688L;
+	private static final long serialVersionUID = 5184193339924346138L;
 
 	/**
 	 * 接入的产品编号。未传batch_no时必填，枚举如下：
@@ -41,6 +41,12 @@ batch_no提供基于操作批次的精确查询，只查询本操作批次的代
 	 */
 	@ApiField("batch_no")
 	private String batchNo;
+
+	/**
+	 * 场景授权列表结构结构：场景codeA:权限code1,权限code2;场景codeB:权限code1,权限code2;
+	 */
+	@ApiField("isv_scene_permissions")
+	private String isvScenePermissions;
 
 	/**
 	 * 支付宝商户号。支持间连、直连商户，值为2088开头。
@@ -76,6 +82,13 @@ batch_no提供基于操作批次的精确查询，只查询本操作批次的代
 	}
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
+	}
+
+	public String getIsvScenePermissions() {
+		return this.isvScenePermissions;
+	}
+	public void setIsvScenePermissions(String isvScenePermissions) {
+		this.isvScenePermissions = isvScenePermissions;
 	}
 
 	public String getMerchantNo() {

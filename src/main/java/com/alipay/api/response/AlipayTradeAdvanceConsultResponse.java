@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeAdvanceConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6238223133345432813L;
+	private static final long serialVersionUID = 6857371573854974381L;
 
 	/** 
 	 * true 代表当前时间点，用户允许垫资

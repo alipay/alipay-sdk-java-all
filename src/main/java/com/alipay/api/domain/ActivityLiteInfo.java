@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动摘要信息
  *
  * @author auto create
- * @since 1.0, 2021-11-16 17:02:58
+ * @since 1.0, 2021-11-22 15:38:40
  */
 public class ActivityLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2222429124338681616L;
+	private static final long serialVersionUID = 8113666278967649965L;
 
 	/**
 	 * 活动id
@@ -22,29 +22,17 @@ public class ActivityLiteInfo extends AlipayObject {
 	private String activityId;
 
 	/**
-	 * 展示信息
-	 */
-	@ApiField("activity_lite_display_info")
-	private ActivityLiteDisplayInfo activityLiteDisplayInfo;
-
-	/**
-	 * 核销规则
-	 */
-	@ApiField("activity_lite_use_rule")
-	private ActivityLiteUseRule activityLiteUseRule;
-
-	/**
 	 * 活动名称。 不对支付宝用户进行展示，仅供商家在后台管理活动使用。
 	 */
 	@ApiField("activity_name")
 	private String activityName;
 
 	/**
-	 * 活动状态，只有激活状态的活动可以领券
+	 * 活动状态
 枚举值： 
-ACTIVE:已激活
-PAUSE:已暂停 
-FINISHED:已停止
+ACTIVE:已激活，表示活动已经激活但未到发放时间
+SEND:可发放，表示活动已激活且已到活动发放时间，用户可以正常领取
+PAUSE:已暂停，表示商户临时暂停该活动，用户不能领取
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
@@ -74,31 +62,29 @@ FINISHED:已停止
 	private Date publishStartTime;
 
 	/**
+	 * 券展示规则
+	 */
+	@ApiField("voucher_display_lite_info")
+	private CommonVoucherDisplayLiteInfo voucherDisplayLiteInfo;
+
+	/**
 	 * 券类型。 
 枚举值： FIX_VOUCHER：满减券； DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER: 兑换券；
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
 
+	/**
+	 * 券核销规则
+	 */
+	@ApiField("voucher_use_rule_lite_info")
+	private CommonVoucherUseRuleLiteInfo voucherUseRuleLiteInfo;
+
 	public String getActivityId() {
 		return this.activityId;
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
-	}
-
-	public ActivityLiteDisplayInfo getActivityLiteDisplayInfo() {
-		return this.activityLiteDisplayInfo;
-	}
-	public void setActivityLiteDisplayInfo(ActivityLiteDisplayInfo activityLiteDisplayInfo) {
-		this.activityLiteDisplayInfo = activityLiteDisplayInfo;
-	}
-
-	public ActivityLiteUseRule getActivityLiteUseRule() {
-		return this.activityLiteUseRule;
-	}
-	public void setActivityLiteUseRule(ActivityLiteUseRule activityLiteUseRule) {
-		this.activityLiteUseRule = activityLiteUseRule;
 	}
 
 	public String getActivityName() {
@@ -143,11 +129,25 @@ FINISHED:已停止
 		this.publishStartTime = publishStartTime;
 	}
 
+	public CommonVoucherDisplayLiteInfo getVoucherDisplayLiteInfo() {
+		return this.voucherDisplayLiteInfo;
+	}
+	public void setVoucherDisplayLiteInfo(CommonVoucherDisplayLiteInfo voucherDisplayLiteInfo) {
+		this.voucherDisplayLiteInfo = voucherDisplayLiteInfo;
+	}
+
 	public String getVoucherType() {
 		return this.voucherType;
 	}
 	public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
+	}
+
+	public CommonVoucherUseRuleLiteInfo getVoucherUseRuleLiteInfo() {
+		return this.voucherUseRuleLiteInfo;
+	}
+	public void setVoucherUseRuleLiteInfo(CommonVoucherUseRuleLiteInfo voucherUseRuleLiteInfo) {
+		this.voucherUseRuleLiteInfo = voucherUseRuleLiteInfo;
 	}
 
 }

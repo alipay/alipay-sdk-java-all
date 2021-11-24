@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppCommunityPubkeyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4357667922127721933L;
+	private static final long serialVersionUID = 6168192823277227845L;
 
 	/** 
 	 * 公钥json的md5值，若与上次相同则无需更新到机具

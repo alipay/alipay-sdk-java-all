@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.expensecontrol.quota.query request
  * 
  * @author auto create
- * @since 1.0, 2021-09-25 18:35:30
+ * @since 1.0, 2021-11-19 11:46:58
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaQueryRequest implements AlipayRequest<AlipayEbppInvoiceExpensecontrolQuotaQueryResponse> {
 

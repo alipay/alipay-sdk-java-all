@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserFamilyShareRelationsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6282634883687273365L;
+	private static final long serialVersionUID = 8885411643995594148L;
 
 	/**
 	 * 共享关系过期时间

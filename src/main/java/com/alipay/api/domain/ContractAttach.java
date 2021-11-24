@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同文件model
  *
  * @author auto create
- * @since 1.0, 2021-11-12 14:33:20
+ * @since 1.0, 2021-11-23 17:57:02
  */
 public class ContractAttach extends AlipayObject {
 
-	private static final long serialVersionUID = 4352475695891635564L;
+	private static final long serialVersionUID = 7559128787216488239L;
 
 	/**
 	 * 合同附件业务状态 申请用印时传递 已定稿 CREATED 已创建 CONFIRMED 已定稿 DELETE 已删除

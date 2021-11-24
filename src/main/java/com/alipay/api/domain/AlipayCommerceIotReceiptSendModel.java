@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子小票信息发送接口
  *
  * @author auto create
- * @since 1.0, 2021-03-26 15:45:38
+ * @since 1.0, 2021-11-17 16:06:33
  */
 public class AlipayCommerceIotReceiptSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3418631373131562212L;
+	private static final long serialVersionUID = 2193912661217293849L;
 
 	/**
-	 * 用户支付宝uid
+	 * 用户支付宝uid，支付渠道为alipay时必填
 	 */
 	@ApiField("alipay_uid")
 	private String alipayUid;
+
+	/**
+	 * 业务appid，需要是同源appid。即同一个pid下的appid
+	 */
+	@ApiField("biz_app_id")
+	private String bizAppId;
 
 	/**
 	 * 电子小票详情信息
@@ -32,6 +38,15 @@ public class AlipayCommerceIotReceiptSendModel extends AlipayObject {
 	private String biztid;
 
 	/**
+	 * 支付渠道
+alipay=支付宝
+wechat=微信
+other=其余
+	 */
+	@ApiField("pay_channel")
+	private String payChannel;
+
+	/**
 	 * 直联商户填写pid，  pid和smid必填其一
 	 */
 	@ApiField("pid")
@@ -43,11 +58,24 @@ public class AlipayCommerceIotReceiptSendModel extends AlipayObject {
 	@ApiField("smid")
 	private String smid;
 
+	/**
+	 * 接入来源
+	 */
+	@ApiField("source")
+	private String source;
+
 	public String getAlipayUid() {
 		return this.alipayUid;
 	}
 	public void setAlipayUid(String alipayUid) {
 		this.alipayUid = alipayUid;
+	}
+
+	public String getBizAppId() {
+		return this.bizAppId;
+	}
+	public void setBizAppId(String bizAppId) {
+		this.bizAppId = bizAppId;
 	}
 
 	public ReceiptBizData getBizData() {
@@ -64,6 +92,13 @@ public class AlipayCommerceIotReceiptSendModel extends AlipayObject {
 		this.biztid = biztid;
 	}
 
+	public String getPayChannel() {
+		return this.payChannel;
+	}
+	public void setPayChannel(String payChannel) {
+		this.payChannel = payChannel;
+	}
+
 	public String getPid() {
 		return this.pid;
 	}
@@ -76,6 +111,13 @@ public class AlipayCommerceIotReceiptSendModel extends AlipayObject {
 	}
 	public void setSmid(String smid) {
 		this.smid = smid;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }

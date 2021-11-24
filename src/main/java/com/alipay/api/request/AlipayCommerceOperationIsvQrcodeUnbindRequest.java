@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.isv.qrcode.unbind request
  * 
  * @author auto create
- * @since 1.0, 2021-07-06 11:09:41
+ * @since 1.0, 2021-11-19 11:15:38
  */
 public class AlipayCommerceOperationIsvQrcodeUnbindRequest implements AlipayRequest<AlipayCommerceOperationIsvQrcodeUnbindResponse> {
 

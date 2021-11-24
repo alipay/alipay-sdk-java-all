@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆修改
  *
  * @author auto create
- * @since 1.0, 2021-10-13 14:39:20
+ * @since 1.0, 2021-11-16 20:16:07
  */
 public class AlipayCommerceSportsVenueModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4659777152244674685L;
+	private static final long serialVersionUID = 7784592819862937964L;
 
 	/**
 	 * 变更具体位置
@@ -47,6 +47,19 @@ public class AlipayCommerceSportsVenueModifyModel extends AlipayObject {
 	private String desc;
 
 	/**
+	 * 场馆更多服务链接：可从文体场馆页跳转进此链接，进入服务商的该场馆页面
+	 */
+	@ApiField("extra_service_url")
+	private String extraServiceUrl;
+
+	/**
+	 * 接入方式： center = 中心化 (场馆走文体中心统一规范）； half_center = 半中心化 （场馆走服务商的跳转链接）。
+半中心化场馆如修改为中心化场馆，请注意数据补全
+	 */
+	@ApiField("join_type")
+	private String joinType;
+
+	/**
 	 * 变更纬度
 	 */
 	@ApiField("latitude")
@@ -72,7 +85,7 @@ public class AlipayCommerceSportsVenueModifyModel extends AlipayObject {
 	private String openingHours;
 
 	/**
-	 * 服务商场馆ID，不可变更
+	 * 主场馆在服务商的id，不可变更
 	 */
 	@ApiField("out_venue_id")
 	private String outVenueId;
@@ -146,7 +159,7 @@ course: 课程
 	private String traffic;
 
 	/**
-	 * 支付宝场馆ID，不可变更
+	 * 支付宝主场馆ID，不可变更
 	 */
 	@ApiField("venue_id")
 	private String venueId;
@@ -198,6 +211,20 @@ course: 课程
 	}
 	public void setDesc(String desc) {
 		this.desc = desc;
+	}
+
+	public String getExtraServiceUrl() {
+		return this.extraServiceUrl;
+	}
+	public void setExtraServiceUrl(String extraServiceUrl) {
+		this.extraServiceUrl = extraServiceUrl;
+	}
+
+	public String getJoinType() {
+		return this.joinType;
+	}
+	public void setJoinType(String joinType) {
+		this.joinType = joinType;
 	}
 
 	public String getLatitude() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FaceAttrInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8894924166155488392L;
+	private static final long serialVersionUID = 8662114536582736917L;
 
 	/**
 	 * left,top,width,height 人脸图片中的人脸框的左上点和宽高，图片内坐标，无需脱敏

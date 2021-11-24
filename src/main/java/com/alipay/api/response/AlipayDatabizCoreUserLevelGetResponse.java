@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDatabizCoreUserLevelGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2746695936165757474L;
+	private static final long serialVersionUID = 7699932212921452577L;
 
 	/** 
 	 * 支付宝用户等级信息

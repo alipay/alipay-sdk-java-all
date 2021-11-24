@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 微信公众号绑定跳转url接口
  *
  * @author auto create
- * @since 1.0, 2021-08-27 14:53:29
+ * @since 1.0, 2021-11-19 11:04:29
  */
 public class AlipayCommerceOperationIsvQrcodeBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6184669379955737954L;
+	private static final long serialVersionUID = 2489968313975353148L;
 
 	/**
 	 * 业务场景

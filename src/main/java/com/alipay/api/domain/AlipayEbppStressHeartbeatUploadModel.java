@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序压测平台心跳接口
  *
  * @author auto create
- * @since 1.0, 2021-01-11 21:46:43
+ * @since 1.0, 2021-11-18 19:30:29
  */
 public class AlipayEbppStressHeartbeatUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5848437238764578455L;
+	private static final long serialVersionUID = 3492111766595335675L;
 
 	/**
 	 * 引擎错误原因

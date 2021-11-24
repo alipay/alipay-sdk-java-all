@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2021-10-11 17:20:26
+ * @since 1.0, 2021-11-18 10:23:59
  */
 public class ReceiptOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8619716565211569749L;
+	private static final long serialVersionUID = 5546354192971179682L;
 
 	/**
 	 * 支付宝用户uid; 是支付宝支付时，必填
@@ -105,6 +105,12 @@ public class ReceiptOrderDTO extends AlipayObject {
 	 */
 	@ApiField("order_create_time")
 	private Date orderCreateTime;
+
+	/**
+	 * APPID,商户可自定义需要跳转到小程序（默认进入小程序首页）
+	 */
+	@ApiField("order_link")
+	private String orderLink;
 
 	/**
 	 * 订单修改时间，一般不需要传入。用于订单状态或数据变化较快的顺序控制，order_modified_time较晚的同步会被最终存储，order_modified_time相同的两次同步可能会被幂等处理，FMCG按照行业标准化接入场景必须传入该字段控制乱序;时间格式:yyyy-MM-dd HH:mm:ss
@@ -281,6 +287,13 @@ public class ReceiptOrderDTO extends AlipayObject {
 	}
 	public void setOrderCreateTime(Date orderCreateTime) {
 		this.orderCreateTime = orderCreateTime;
+	}
+
+	public String getOrderLink() {
+		return this.orderLink;
+	}
+	public void setOrderLink(String orderLink) {
+		this.orderLink = orderLink;
 	}
 
 	public Date getOrderModifiedTime() {

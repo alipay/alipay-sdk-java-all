@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6383156391234346529L;
+	private static final long serialVersionUID = 3669832369228831798L;
 
 	/**
 	 * 企业签约企业合花ID-共同账号ID
@@ -28,13 +28,13 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	private String agreementNo;
 
 	/**
-	 * 额度失效时间
+	 * 额度失效时间（格式：yyyy-MM-dd HH:mm:ss）
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/**
-	 * 额度生效时间
+	 * 额度生效时间（格式：yyyy-MM-dd HH:mm:ss）
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;

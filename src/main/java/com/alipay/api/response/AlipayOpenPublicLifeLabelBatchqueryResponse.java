@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicLifeLabelBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3627172745913474647L;
+	private static final long serialVersionUID = 3844366384915329976L;
 
 	/** 
 	 * 标签列表

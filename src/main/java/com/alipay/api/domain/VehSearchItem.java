@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车主搜索项
  *
  * @author auto create
- * @since 1.0, 2021-06-01 16:41:30
+ * @since 1.0, 2021-11-17 18:01:09
  */
 public class VehSearchItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1458817215796145217L;
+	private static final long serialVersionUID = 8867437312838459655L;
 
 	/**
 	 * 地址

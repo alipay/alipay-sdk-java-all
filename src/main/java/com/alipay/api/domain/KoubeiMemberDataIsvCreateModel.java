@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMemberDataIsvCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5525259228697116543L;
+	private static final long serialVersionUID = 7817799449313455933L;
 
 	/**
 	 * 会员卡最近一次激活时间，格式：yyyy-MM-dd HH:MM:ss

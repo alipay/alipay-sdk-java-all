@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 向商户发起代运营操作
  *
  * @author auto create
- * @since 1.0, 2021-11-03 21:10:39
+ * @since 1.0, 2021-11-20 01:54:04
  */
 public class AlipayOpenSpOperationApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2646821323968711323L;
+	private static final long serialVersionUID = 2332775379435111286L;
 
 	/**
 	 * 接入的产品编号。 枚举如下：
@@ -28,6 +28,12 @@ public class AlipayOpenSpOperationApplyModel extends AlipayObject {
 	 */
 	@ApiField("alipay_account")
 	private String alipayAccount;
+
+	/**
+	 * 场景授权列表结构结构：场景codeA:权限code1,权限code2;场景codeB:权限code1,权限code2;
+	 */
+	@ApiField("isv_scene_permissions")
+	private String isvScenePermissions;
 
 	/**
 	 * 支付宝商户号。
@@ -63,6 +69,13 @@ public class AlipayOpenSpOperationApplyModel extends AlipayObject {
 	}
 	public void setAlipayAccount(String alipayAccount) {
 		this.alipayAccount = alipayAccount;
+	}
+
+	public String getIsvScenePermissions() {
+		return this.isvScenePermissions;
+	}
+	public void setIsvScenePermissions(String isvScenePermissions) {
+		this.isvScenePermissions = isvScenePermissions;
 	}
 
 	public String getMerchantNo() {

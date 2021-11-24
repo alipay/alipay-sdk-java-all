@@ -9,29 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户券详情
  *
  * @author auto create
- * @since 1.0, 2021-11-16 17:03:10
+ * @since 1.0, 2021-11-22 15:33:47
  */
 public class UserVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5873968168535517653L;
+	private static final long serialVersionUID = 2461825165514967916L;
 
 	/**
 	 * 活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
-
-	/**
-	 * 展示信息
-	 */
-	@ApiField("activity_lite_display_info")
-	private ActivityLiteDisplayInfo activityLiteDisplayInfo;
-
-	/**
-	 * 核销规则
-	 */
-	@ApiField("activity_lite_use_rule")
-	private ActivityLiteUseRule activityLiteUseRule;
 
 	/**
 	 * 券可用开始时间
@@ -58,6 +46,12 @@ public class UserVoucherInfo extends AlipayObject {
 	private Date createTime;
 
 	/**
+	 * 券展示信息
+	 */
+	@ApiField("voucher_display_lite_info")
+	private CommonVoucherDisplayLiteInfo voucherDisplayLiteInfo;
+
+	/**
 	 * 用户券id。支付宝为用户优惠券唯一分配的id。
 	 */
 	@ApiField("voucher_id")
@@ -74,6 +68,7 @@ public class UserVoucherInfo extends AlipayObject {
 枚举值
 SENDED：可用
 USED：已核销
+EXPIRED:已过期(可查询6个月内数据)
 	 */
 	@ApiField("voucher_status")
 	private String voucherStatus;
@@ -87,25 +82,17 @@ DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER:
 	@ApiField("voucher_type")
 	private String voucherType;
 
+	/**
+	 * 券核销规则
+	 */
+	@ApiField("voucher_use_rule_lite_info")
+	private CommonVoucherUseRuleLiteInfo voucherUseRuleLiteInfo;
+
 	public String getActivityId() {
 		return this.activityId;
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
-	}
-
-	public ActivityLiteDisplayInfo getActivityLiteDisplayInfo() {
-		return this.activityLiteDisplayInfo;
-	}
-	public void setActivityLiteDisplayInfo(ActivityLiteDisplayInfo activityLiteDisplayInfo) {
-		this.activityLiteDisplayInfo = activityLiteDisplayInfo;
-	}
-
-	public ActivityLiteUseRule getActivityLiteUseRule() {
-		return this.activityLiteUseRule;
-	}
-	public void setActivityLiteUseRule(ActivityLiteUseRule activityLiteUseRule) {
-		this.activityLiteUseRule = activityLiteUseRule;
 	}
 
 	public Date getAvailableBeginTime() {
@@ -136,6 +123,13 @@ DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER:
 		this.createTime = createTime;
 	}
 
+	public CommonVoucherDisplayLiteInfo getVoucherDisplayLiteInfo() {
+		return this.voucherDisplayLiteInfo;
+	}
+	public void setVoucherDisplayLiteInfo(CommonVoucherDisplayLiteInfo voucherDisplayLiteInfo) {
+		this.voucherDisplayLiteInfo = voucherDisplayLiteInfo;
+	}
+
 	public String getVoucherId() {
 		return this.voucherId;
 	}
@@ -162,6 +156,13 @@ DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER:
 	}
 	public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
+	}
+
+	public CommonVoucherUseRuleLiteInfo getVoucherUseRuleLiteInfo() {
+		return this.voucherUseRuleLiteInfo;
+	}
+	public void setVoucherUseRuleLiteInfo(CommonVoucherUseRuleLiteInfo voucherUseRuleLiteInfo) {
+		this.voucherUseRuleLiteInfo = voucherUseRuleLiteInfo;
 	}
 
 }

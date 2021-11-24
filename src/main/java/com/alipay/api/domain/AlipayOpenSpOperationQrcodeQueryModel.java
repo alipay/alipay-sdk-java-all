@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询代运营授权或者账号绑定二维码
  *
  * @author auto create
- * @since 1.0, 2021-11-03 21:10:14
+ * @since 1.0, 2021-11-20 01:54:01
  */
 public class AlipayOpenSpOperationQrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3638839984691186466L;
+	private static final long serialVersionUID = 3423815518313838814L;
 
 	/**
 	 * 接入的产品编号。
@@ -28,6 +28,12 @@ public class AlipayOpenSpOperationQrcodeQueryModel extends AlipayObject {
 	 */
 	@ApiField("alipay_account")
 	private String alipayAccount;
+
+	/**
+	 * 场景授权列表结构结构：场景codeA:权限code1,权限code2;场景codeB:权限code1,权限code2;
+	 */
+	@ApiField("isv_scene_permissions")
+	private String isvScenePermissions;
 
 	/**
 	 * 支付宝商户号。注意仅支持 2088 开头的间连商户。
@@ -63,6 +69,13 @@ public class AlipayOpenSpOperationQrcodeQueryModel extends AlipayObject {
 	}
 	public void setAlipayAccount(String alipayAccount) {
 		this.alipayAccount = alipayAccount;
+	}
+
+	public String getIsvScenePermissions() {
+		return this.isvScenePermissions;
+	}
+	public void setIsvScenePermissions(String isvScenePermissions) {
+		this.isvScenePermissions = isvScenePermissions;
 	}
 
 	public String getMerchantNo() {

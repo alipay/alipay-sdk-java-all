@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.venue.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-13 14:39:20
+ * @since 1.0, 2021-11-16 20:16:36
  */
 public class AlipayCommerceSportsVenueModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7686279749594553735L;
+	private static final long serialVersionUID = 6357757288482941299L;
 
 	/** 
 	 * 具体地址
@@ -46,6 +46,18 @@ public class AlipayCommerceSportsVenueModifyResponse extends AlipayResponse {
 	 */
 	@ApiField("desc")
 	private String desc;
+
+	/** 
+	 * 场馆更多服务链接：可从文体场馆页跳转进此链接，进入服务商的该场馆页面
+	 */
+	@ApiField("extra_service_url")
+	private String extraServiceUrl;
+
+	/** 
+	 * 接入方式： center = 中心化 (场馆走文体中心统一规范）； half_center = 半中心化 （场馆走服务商的跳转链接）。 半中心化场馆如修改为中心化场馆，请注意数据补全
+	 */
+	@ApiField("join_type")
+	private String joinType;
 
 	/** 
 	 * 纬度
@@ -199,6 +211,20 @@ course: 课程
 	}
 	public String getDesc( ) {
 		return this.desc;
+	}
+
+	public void setExtraServiceUrl(String extraServiceUrl) {
+		this.extraServiceUrl = extraServiceUrl;
+	}
+	public String getExtraServiceUrl( ) {
+		return this.extraServiceUrl;
+	}
+
+	public void setJoinType(String joinType) {
+		this.joinType = joinType;
+	}
+	public String getJoinType( ) {
+		return this.joinType;
 	}
 
 	public void setLatitude(String latitude) {
