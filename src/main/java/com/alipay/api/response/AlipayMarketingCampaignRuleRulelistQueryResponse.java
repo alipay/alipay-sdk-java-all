@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignRuleRulelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2256347783938126681L;
+	private static final long serialVersionUID = 3245951614829349862L;
 
 	/** 
 	 * [{"ruledesc":"圈人规则0","ruleid":"230291","status":"ENABLE"},

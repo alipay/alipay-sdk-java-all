@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IsvShopDishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5411253297778696248L;
+	private static final long serialVersionUID = 7869626141897874335L;
 
 	/**
 	 * 菜品库存。 alipay.offline.provider.shopaction.record回传点菜中的desc。建议ISV在拿到推荐的菜品的ID后，直接使用自己的菜品元数据，口碑元数据是ISV上传，实时性无法保证。

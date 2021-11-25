@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusRealtimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2254153743225157479L;
+	private static final long serialVersionUID = 4743672912887268551L;
 
 	/**
 	 * 线路id，线路的唯一标志。

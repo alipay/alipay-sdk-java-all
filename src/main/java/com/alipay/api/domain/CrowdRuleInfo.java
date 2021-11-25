@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CrowdRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7667925279446368391L;
+	private static final long serialVersionUID = 5415425299693296857L;
 
 	/**
 	 * 规则描述

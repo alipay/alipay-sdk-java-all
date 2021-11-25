@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderShopactionRecordModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2274986376949773433L;
+	private static final long serialVersionUID = 5274118619131138683L;
 
 	/**
 	 * 详情设置会根据action_type字段类型不同而格式不同，请详细查看开放平台文案，会详细说明如果设置，整体是json结构。参考文档：https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.u6pJ7Q&treeId=193&articleId=105281&docType=1#s1

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicMatchuserLabelCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1735846678866788915L;
+	private static final long serialVersionUID = 5859111635588936164L;
 
 	/** 
 	 * 用户打标失败数量

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryGovHealthcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6242845163423416514L;
+	private static final long serialVersionUID = 5315716741931642644L;
 
 	/** 
 	 * 码的颜色，红/黄/绿/审核中，分别对应如下: red/yellow/green/init,

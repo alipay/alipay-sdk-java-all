@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAgentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7137893587779354682L;
+	private static final long serialVersionUID = 1824249343139266626L;
 
 	/** 
 	 * 代理创建的应用ID，如果有代理商户创建应用，商户确认成功后，才返回应用ID，否则不返回。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantOrderRentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2584838455218514777L;
+	private static final long serialVersionUID = 1557491967462753398L;
 
 	/**
 	 * 外部订单号, 用于定位需要修改的订单

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserGroupshoppingBenefitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2886931728743472285L;
+	private static final long serialVersionUID = 4539186433554842435L;
 
 	/** 
 	 * 拼团支付宝权益透出金额

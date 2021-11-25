@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoantradeRepayBudgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7646461554261434887L;
+	private static final long serialVersionUID = 8593237888548725878L;
 
 	/**
 	 * 申请还款金额，如果budget_type为TOTAL_AMT，则填写还款总金额，如果为PRIN_AMT则填写还款本金

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityLimitationDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2349156168648439388L;
+	private static final long serialVersionUID = 1686349615766618643L;
 
 	/**
 	 * 限制份数，与限制类型对应的数量，必须是数字格式，且与限制类型的位置要对应。

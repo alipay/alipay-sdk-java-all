@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.message.dynamicicondata.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-25 13:47:34
+ * @since 1.0, 2021-11-24 21:46:50
  */
 public class AlipaySocialBaseMessageDynamicicondataModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2875597882372729353L;
+	private static final long serialVersionUID = 2426555622196927983L;
 
 	/** 
 	 * 此次操作结果

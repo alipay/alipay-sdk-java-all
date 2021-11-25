@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserInviteAwardReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8491799448157814392L;
+	private static final long serialVersionUID = 3841365827337939413L;
 
 	/** 
 	 * 支付宝老用户手机号绑定的脱敏后的账户名 ，多个账号用英文","分割

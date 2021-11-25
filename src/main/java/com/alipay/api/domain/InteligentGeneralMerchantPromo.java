@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InteligentGeneralMerchantPromo extends AlipayObject {
 
-	private static final long serialVersionUID = 5178571999542142154L;
+	private static final long serialVersionUID = 3354861445395255215L;
 
 	/**
 	 * 营销活动的id，如merchant_promo_type：CONSUME_SEND即消费送的活动id
