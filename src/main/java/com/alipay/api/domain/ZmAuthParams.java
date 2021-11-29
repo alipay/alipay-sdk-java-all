@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻授权参数
  *
  * @author auto create
- * @since 1.0, 2017-07-11 14:32:21
+ * @since 1.0, 2021-11-25 11:52:49
  */
 public class ZmAuthParams extends AlipayObject {
 
-	private static final long serialVersionUID = 1186865124891756248L;
+	private static final long serialVersionUID = 3221562358299665873L;
 
 	/**
 	 * 商户在芝麻端申请的appId

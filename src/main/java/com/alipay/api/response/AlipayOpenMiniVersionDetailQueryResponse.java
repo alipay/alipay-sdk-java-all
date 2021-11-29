@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.MiniAppAuditReason;
 import com.alipay.api.domain.MiniAppCategoryInfo;
 import com.alipay.api.domain.MiniPackageInfo;
 import com.alipay.api.domain.RegionInfo;
@@ -14,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.version.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-25 10:49:20
+ * @since 1.0, 2021-11-26 17:11:01
  */
 public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2321399697276948194L;
+	private static final long serialVersionUID = 4213758449332521476L;
 
 	/** 
 	 * 小程序应用描述
@@ -55,6 +56,29 @@ public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("app_version")
 	private String appVersion;
+
+	/** 
+	 * 准入审核结果：
+PASS：通过
+REJECT：驳回
+（提审时 audit_rule 传 BASE_PROMOTE 时有该字段）
+	 */
+	@ApiField("base_audit")
+	private String baseAudit;
+
+	/** 
+	 * 准入审核驳回原因
+（提审时 audit_rule 传 BASE_PROMOTE 时有该字段）
+	 */
+	@ApiField("base_audit_record")
+	private MiniAppAuditReason baseAuditRecord;
+
+	/** 
+	 * 是否可上架-true/false
+（提审时 audit_rule 传 BASE_PROMOTE 时有该字段）
+	 */
+	@ApiField("can_release")
+	private String canRelease;
 
 	/** 
 	 * 小程序版本提交审核的时间
@@ -118,6 +142,22 @@ public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 	@ApiListField("package_info_list")
 	@ApiField("mini_package_info")
 	private List<MiniPackageInfo> packageInfoList;
+
+	/** 
+	 * 营销审核结果：
+PASS：通过
+REJECT：驳回
+（提审时 audit_rule 传 BASE_PROMOTE 时有该字段）
+	 */
+	@ApiField("promote_audit")
+	private String promoteAudit;
+
+	/** 
+	 * 营销审核驳回原因
+（提审时 audit_rule 传 BASE_PROMOTE 时有该字段）
+	 */
+	@ApiField("promote_audit_record")
+	private MiniAppAuditReason promoteAuditRecord;
 
 	/** 
 	 * 审核驳回原因
@@ -217,6 +257,27 @@ public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 		return this.appVersion;
 	}
 
+	public void setBaseAudit(String baseAudit) {
+		this.baseAudit = baseAudit;
+	}
+	public String getBaseAudit( ) {
+		return this.baseAudit;
+	}
+
+	public void setBaseAuditRecord(MiniAppAuditReason baseAuditRecord) {
+		this.baseAuditRecord = baseAuditRecord;
+	}
+	public MiniAppAuditReason getBaseAuditRecord( ) {
+		return this.baseAuditRecord;
+	}
+
+	public void setCanRelease(String canRelease) {
+		this.canRelease = canRelease;
+	}
+	public String getCanRelease( ) {
+		return this.canRelease;
+	}
+
 	public void setGmtApplyAudit(String gmtApplyAudit) {
 		this.gmtApplyAudit = gmtApplyAudit;
 	}
@@ -285,6 +346,20 @@ public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 	}
 	public List<MiniPackageInfo> getPackageInfoList( ) {
 		return this.packageInfoList;
+	}
+
+	public void setPromoteAudit(String promoteAudit) {
+		this.promoteAudit = promoteAudit;
+	}
+	public String getPromoteAudit( ) {
+		return this.promoteAudit;
+	}
+
+	public void setPromoteAuditRecord(MiniAppAuditReason promoteAuditRecord) {
+		this.promoteAuditRecord = promoteAuditRecord;
+	}
+	public MiniAppAuditReason getPromoteAuditRecord( ) {
+		return this.promoteAuditRecord;
 	}
 
 	public void setRejectReason(String rejectReason) {

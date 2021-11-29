@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8896728975777825537L;
+	private static final long serialVersionUID = 8299457928872471564L;
 
 	/**
-	 * 用户申领信息核验模式，该字段值与传入的用户姓名及证件号相关联。例如PLAIN模式下原文对比传入的用户申领信息与支付宝侧信息是否一致。
+	 * 信息核验模式，该字段用于控制传入的信息与支付宝侧信息的核验对比方式，以防止凭证被归属到错误的用户。对比信息包括户姓名/证件号等。可选PLAIN/MD5
 	 */
 	@ApiField("apply_info_verify_mode")
 	private String applyInfoVerifyMode;
@@ -38,28 +38,28 @@ public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject 
 	private String extInfo;
 
 	/**
-	 * 凭证状态（表达新增/修改/删除状态）
+	 * 凭证状态（用于控制该凭证是否在用户证件夹是否可见，T-展示，F-不展示）
 	 */
 	@ApiField("status")
 	private String status;
 
 	/**
-	 * 接口调用权限token，由支付宝侧下发，需携带相应token才可回流成功。
+	 * 接口调用权限token，由支付宝侧下发，需携带相应token才可调用成功。
 当用户从证件夹进入时，该参数通过跳转的url链接参数alipayKbCertSyncToken携带。如alipays://platformapi/startapp?appId=2021001169888888&page=pages/windowService/index/index&query=ac%3DaddCard%26alipayKbCertSyncToken%3D12345678
-当用户从其他渠道进入且需要回流时，那么通过在小程序引入以下插件来进行获取
+当用户从其他渠道进入且需要在证件夹展示该证件时，那么通过在小程序引入以下插件来进行获取
 https://open.alipay.com/plugin/order-page?serviceCode=MP2021083100100571 
 	 */
 	@ApiField("sync_token")
 	private String syncToken;
 
 	/**
-	 * 用户申领时证件号，当前仅支持身份证号（用于已领取卡面脱敏展示）。在PLAIN模式下需传入证件号明文；MD5模式下需传入证件号MD5摘要
+	 * 证件号，当前仅支持身份证号（用于已领取卡面脱敏展示）。在PLAIN模式下需传入证件号明文；MD5模式下需传入证件号MD5摘要
 	 */
 	@ApiField("user_apply_cert_no")
 	private String userApplyCertNo;
 
 	/**
-	 * 用户申领时证件类型，当前仅支持身份证类型（IDENTITY_CARD）
+	 * 展示的证件类型，由支付宝分配，当前仅支持身份证（IDENTITY_CARD）
 	 */
 	@ApiField("user_apply_cert_type")
 	private String userApplyCertType;

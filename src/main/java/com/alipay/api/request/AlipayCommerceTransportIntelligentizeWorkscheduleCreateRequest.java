@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.intelligentize.workschedule.create request
  * 
  * @author auto create
- * @since 1.0, 2021-01-04 20:32:29
+ * @since 1.0, 2021-11-25 16:16:33
  */
 public class AlipayCommerceTransportIntelligentizeWorkscheduleCreateRequest implements AlipayRequest<AlipayCommerceTransportIntelligentizeWorkscheduleCreateResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.settlement.refund request
  * 
  * @author auto create
- * @since 1.0, 2020-03-27 10:30:37
+ * @since 1.0, 2021-11-25 19:03:49
  */
 public class AlipayCommerceTransportVehicleownerSettlementRefundRequest implements AlipayRequest<AlipayCommerceTransportVehicleownerSettlementRefundResponse> {
 

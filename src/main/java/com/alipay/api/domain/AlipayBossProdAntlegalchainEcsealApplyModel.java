@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 法链系统 签约文件申请电子印章
  *
  * @author auto create
- * @since 1.0, 2020-11-04 15:22:25
+ * @since 1.0, 2021-11-25 19:44:26
  */
 public class AlipayBossProdAntlegalchainEcsealApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5612123762344183523L;
+	private static final long serialVersionUID = 5628834712297368971L;
 
 	/**
 	 * 发起签约接口返回的baseDataId

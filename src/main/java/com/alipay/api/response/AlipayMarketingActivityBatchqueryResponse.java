@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-17 10:15:32
+ * @since 1.0, 2021-11-26 15:15:34
  */
 public class AlipayMarketingActivityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6119363211916317646L;
+	private static final long serialVersionUID = 1693869791324116461L;
 
 	/** 
 	 * 活动摘要信息
@@ -25,13 +25,13 @@ public class AlipayMarketingActivityBatchqueryResponse extends AlipayResponse {
 	private List<ActivityLiteInfo> activityLiteInfos;
 
 	/** 
-	 * 分页查询页码。必须为大于0的整数， 1表示第一页，2表示第2页，依次类推
+	 * 分页查询页码。
 	 */
 	@ApiField("page_num")
 	private Long pageNum;
 
 	/** 
-	 * 分页查询单页数据条数。必须为大于0的整数，最大值为30
+	 * 分页查询单页数据条数。
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

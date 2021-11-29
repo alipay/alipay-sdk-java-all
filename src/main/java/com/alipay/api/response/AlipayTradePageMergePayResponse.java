@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradePageMergePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1135717268781448423L;
+	private static final long serialVersionUID = 4853938673586549332L;
 
 	/** 
 	 * 如果和支付宝约定子订单必须同时支付成功或者同时失败时此参数才存在，取值有以下两种：

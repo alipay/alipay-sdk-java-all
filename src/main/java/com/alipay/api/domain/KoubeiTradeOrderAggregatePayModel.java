@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeOrderAggregatePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2436179696252621658L;
+	private static final long serialVersionUID = 7744917321731258339L;
 
 	/**
 	 * 微信或支付宝授权码

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayLifeassistantProdBillGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7554845247217793586L;
+	private static final long serialVersionUID = 7692684751867643371L;
 
 	/** 
 	 * 支付金额

@@ -2,9 +2,9 @@ package com.alipay.api.response;
 
 import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
-import com.alipay.api.domain.ActivityDisplayInfo;
-import com.alipay.api.domain.ActivitySendRule;
-import com.alipay.api.domain.ActivityUseRule;
+import com.alipay.api.domain.CommonVoucherDisplayInfo;
+import com.alipay.api.domain.CommonVoucherSendRule;
+import com.alipay.api.domain.CommonVoucherUseRule;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,17 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-17 10:15:32
+ * @since 1.0, 2021-11-25 22:41:01
  */
 public class AlipayMarketingActivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3649436652213173767L;
-
-	/** 
-	 * 券展示信息
-	 */
-	@ApiField("activity_display_info")
-	private ActivityDisplayInfo activityDisplayInfo;
+	private static final long serialVersionUID = 2171912535621935653L;
 
 	/** 
 	 * 活动id
@@ -37,22 +31,14 @@ public class AlipayMarketingActivityQueryResponse extends AlipayResponse {
 	private String activityName;
 
 	/** 
-	 * 券发放规则
-	 */
-	@ApiField("activity_send_rule")
-	private ActivitySendRule activitySendRule;
-
-	/** 
-	 * 活动状态 枚举值： INIT 未激活 ACTIVE：已激活 FINISHED：已停止 如果该值为空，说明活动还未创建成功。
+	 * 活动状态 
+枚举值： 
+ACTIVE:活动已激活，表示活动已经生效，等到活动开始(publish_start_time)之后用户就可以参与活动。
+PAUSE:活动已暂停，表示商户临时暂停该活动，该状态下用户不能参与活动
+FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(publish_end_time)不能再进行领取或修改等操作。
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
-
-	/** 
-	 * 核销规则
-	 */
-	@ApiField("activity_use_rule")
-	private ActivityUseRule activityUseRule;
 
 	/** 
 	 * 归属商户PID
@@ -61,7 +47,7 @@ public class AlipayMarketingActivityQueryResponse extends AlipayResponse {
 	private String belongMerchantId;
 
 	/** 
-	 * 券发放结束时间。 格式为：yyyy-MM-dd HH:mm:ss 限制： 券发放结束时间 publish_end_time 与 券发放开始时间 publish_start_time 间隔必须小于等于180天
+	 * 券发放结束时间。 格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("publish_end_time")
 	private Date publishEndTime;
@@ -73,17 +59,33 @@ public class AlipayMarketingActivityQueryResponse extends AlipayResponse {
 	private Date publishStartTime;
 
 	/** 
-	 * 优惠类型 枚举值： FIX_VOUCHER：固定面额满减券
+	 * 券展示信息
+	 */
+	@ApiField("voucher_display_info")
+	private CommonVoucherDisplayInfo voucherDisplayInfo;
+
+	/** 
+	 * 券发放规则
+	 */
+	@ApiField("voucher_send_rule")
+	private CommonVoucherSendRule voucherSendRule;
+
+	/** 
+	 * 券类型。 
+枚举值： 
+FIX_VOUCHER：满减券； 
+DISCOUNT_VOUCHER：折扣券；
+SPECIAL_VOUCHER：特价券；
+EXCHANGE_VOUCHER: 兑换券；
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
 
-	public void setActivityDisplayInfo(ActivityDisplayInfo activityDisplayInfo) {
-		this.activityDisplayInfo = activityDisplayInfo;
-	}
-	public ActivityDisplayInfo getActivityDisplayInfo( ) {
-		return this.activityDisplayInfo;
-	}
+	/** 
+	 * 券核销规则
+	 */
+	@ApiField("voucher_use_rule")
+	private CommonVoucherUseRule voucherUseRule;
 
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
@@ -99,25 +101,11 @@ public class AlipayMarketingActivityQueryResponse extends AlipayResponse {
 		return this.activityName;
 	}
 
-	public void setActivitySendRule(ActivitySendRule activitySendRule) {
-		this.activitySendRule = activitySendRule;
-	}
-	public ActivitySendRule getActivitySendRule( ) {
-		return this.activitySendRule;
-	}
-
 	public void setActivityStatus(String activityStatus) {
 		this.activityStatus = activityStatus;
 	}
 	public String getActivityStatus( ) {
 		return this.activityStatus;
-	}
-
-	public void setActivityUseRule(ActivityUseRule activityUseRule) {
-		this.activityUseRule = activityUseRule;
-	}
-	public ActivityUseRule getActivityUseRule( ) {
-		return this.activityUseRule;
 	}
 
 	public void setBelongMerchantId(String belongMerchantId) {
@@ -141,11 +129,32 @@ public class AlipayMarketingActivityQueryResponse extends AlipayResponse {
 		return this.publishStartTime;
 	}
 
+	public void setVoucherDisplayInfo(CommonVoucherDisplayInfo voucherDisplayInfo) {
+		this.voucherDisplayInfo = voucherDisplayInfo;
+	}
+	public CommonVoucherDisplayInfo getVoucherDisplayInfo( ) {
+		return this.voucherDisplayInfo;
+	}
+
+	public void setVoucherSendRule(CommonVoucherSendRule voucherSendRule) {
+		this.voucherSendRule = voucherSendRule;
+	}
+	public CommonVoucherSendRule getVoucherSendRule( ) {
+		return this.voucherSendRule;
+	}
+
 	public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
 	public String getVoucherType( ) {
 		return this.voucherType;
+	}
+
+	public void setVoucherUseRule(CommonVoucherUseRule voucherUseRule) {
+		this.voucherUseRule = voucherUseRule;
+	}
+	public CommonVoucherUseRule getVoucherUseRule( ) {
+		return this.voucherUseRule;
 	}
 
 }

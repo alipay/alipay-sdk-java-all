@@ -11,14 +11,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.qualified.investor.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-02 17:40:34
+ * @since 1.0, 2021-11-25 14:20:36
  */
 public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2792216491538724832L;
+	private static final long serialVersionUID = 6471861465633289835L;
 
 	/** 
-	 * 来之请求的签约协议号
+	 * 签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -30,10 +30,16 @@ public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayRespons
 	private String alipayTotalAsset;
 
 	/** 
-	 * 余额宝首次交易时间
+	 * 余额宝首次交易时间，格式yyyyMMdd
 	 */
 	@ApiField("first_yeb_trade_day")
 	private String firstYebTradeDay;
+
+	/** 
+	 * 是否有合投材料
+	 */
+	@ApiField("has_material")
+	private Boolean hasMaterial;
 
 	/** 
 	 * 材料列表
@@ -41,6 +47,12 @@ public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayRespons
 	@ApiListField("material_list")
 	@ApiField("investor_material_info")
 	private List<InvestorMaterialInfo> materialList;
+
+	/** 
+	 * 码商收入金额，单位元；精度到分
+	 */
+	@ApiField("total_income")
+	private String totalIncome;
 
 	/** 
 	 * traceId，用来唯一定位某次调用，方便问题排查
@@ -69,11 +81,25 @@ public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayRespons
 		return this.firstYebTradeDay;
 	}
 
+	public void setHasMaterial(Boolean hasMaterial) {
+		this.hasMaterial = hasMaterial;
+	}
+	public Boolean getHasMaterial( ) {
+		return this.hasMaterial;
+	}
+
 	public void setMaterialList(List<InvestorMaterialInfo> materialList) {
 		this.materialList = materialList;
 	}
 	public List<InvestorMaterialInfo> getMaterialList( ) {
 		return this.materialList;
+	}
+
+	public void setTotalIncome(String totalIncome) {
+		this.totalIncome = totalIncome;
+	}
+	public String getTotalIncome( ) {
+		return this.totalIncome;
 	}
 
 	public void setTraceId(String traceId) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询客户的所有币种对最新有效汇率
  *
  * @author auto create
- * @since 1.0, 2018-04-12 19:07:12
+ * @since 1.0, 2021-11-25 11:50:21
  */
 public class AlipayAccountExrateAllclientrateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2664647646633224687L;
+	private static final long serialVersionUID = 7662985797463573196L;
 
 	/**
 	 * 客户id，客户和报价中心签约时约定的信息

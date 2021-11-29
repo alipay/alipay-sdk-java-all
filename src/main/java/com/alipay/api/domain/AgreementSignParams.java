@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约参数，支付后签约场景使用
  *
  * @author auto create
- * @since 1.0, 2017-07-18 14:28:45
+ * @since 1.0, 2021-11-25 11:52:11
  */
 public class AgreementSignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2435369175421974423L;
+	private static final long serialVersionUID = 1664961651183685353L;
 
 	/**
 	 * 商户在芝麻端申请的appId

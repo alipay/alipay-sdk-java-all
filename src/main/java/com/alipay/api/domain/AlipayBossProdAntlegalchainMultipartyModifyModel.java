@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 法链系统 多方签约更新签约状态
  *
  * @author auto create
- * @since 1.0, 2020-11-04 15:22:02
+ * @since 1.0, 2021-11-25 19:44:39
  */
 public class AlipayBossProdAntlegalchainMultipartyModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7336281385461731944L;
+	private static final long serialVersionUID = 3586318852848212729L;
 
 	/**
 	 * 发起签约接口返回的baseDataId

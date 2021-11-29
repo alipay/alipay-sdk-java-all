@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2021-11-17 19:26:57
+ * @since 1.0, 2021-11-25 15:57:32
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1891334467723813534L;
+	private static final long serialVersionUID = 4621654669447199163L;
 
 	/**
 	 * 公司账号ID
@@ -146,7 +146,11 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String summaryId;
 
 	/**
-	 * tp标志位
+	 * 出资类型：
+PERSONAL:个人垫付
+ENTERPRISE:企业垫资
+TP:三方合作伙伴垫资
+ACCOUNTING:记账
 	 */
 	@ApiField("tp_sign")
 	private String tpSign;

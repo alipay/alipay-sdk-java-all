@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单确认结算接口
  *
  * @author auto create
- * @since 1.0, 2021-11-19 15:41:23
+ * @since 1.0, 2021-11-26 21:12:32
  */
 public class AlipayTradeSettleConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2162191612161143854L;
+	private static final long serialVersionUID = 8756947293962583455L;
+
+	/**
+	 * 扩展字段信息
+	 */
+	@ApiField("extend_params")
+	private SettleConfirmExtendParams extendParams;
 
 	/**
 	 * 确认结算请求流水号，开发者自行生成并保证唯一性，作为业务幂等性控制
@@ -30,6 +36,13 @@ public class AlipayTradeSettleConfirmModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public SettleConfirmExtendParams getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(SettleConfirmExtendParams extendParams) {
+		this.extendParams = extendParams;
+	}
 
 	public String getOutRequestNo() {
 		return this.outRequestNo;

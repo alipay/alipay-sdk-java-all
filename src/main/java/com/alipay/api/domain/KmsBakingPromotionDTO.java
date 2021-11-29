@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KmsBakingPromotionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3736614799514447311L;
+	private static final long serialVersionUID = 1481464583134566876L;
 
 	/**
 	 * 活动限制

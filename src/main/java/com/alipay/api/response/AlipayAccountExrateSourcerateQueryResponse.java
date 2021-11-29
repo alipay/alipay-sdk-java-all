@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.exrate.sourcerate.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-08 00:55:01
+ * @since 1.0, 2021-11-25 11:51:04
  */
 public class AlipayAccountExrateSourcerateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3573658293211789695L;
+	private static final long serialVersionUID = 5447111698138133585L;
 
 	/** 
 	 * 源汇率记录
