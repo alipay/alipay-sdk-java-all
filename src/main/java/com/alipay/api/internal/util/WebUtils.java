@@ -231,6 +231,7 @@ public class WebUtils {
                 }
                 conn.setConnectTimeout(connectTimeout);
                 conn.setReadTimeout(readTimeout);
+                conn.setChunkedStreamingMode(0);
             } catch (IOException e) {
                 Map<String, String> map = getParamsFromUrl(url);
                 AlipayLogger.logCommError(e, url, map.get("app_key"), map.get("method"), params);
@@ -259,7 +260,7 @@ public class WebUtils {
                             fileItem.getMimeType(), charset);
                     out.write(entryBoundaryBytes);
                     out.write(fileBytes);
-                    out.write(fileItem.getContent());
+                    fileItem.writeFileContent(out);
                 }
 
                 // 添加请求结束标志

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditSupplychainFactoringSelleradmitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4371154818969626173L;
+	private static final long serialVersionUID = 3127137453818851744L;
 
 	/**
 	 * isv支付宝id

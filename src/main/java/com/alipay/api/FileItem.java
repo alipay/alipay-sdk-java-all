@@ -15,7 +15,7 @@ public class FileItem {
     private String fileName;
     private String mimeType;
     private byte[] content;
-    private File   file;
+    private File file;
 
     /**
      * 基于本地文件的构造器。
@@ -67,9 +67,29 @@ public class FileItem {
 
     public String getMimeType() throws IOException {
         if (this.mimeType == null) {
-            this.mimeType = AlipayUtils.getMimeType(getContent());
+            this.mimeType = AlipayUtils.getMimeType(getFileHeader());
         }
         return this.mimeType;
+    }
+
+    public byte[] getFileHeader() throws IOException {
+        if (this.content == null && this.file != null && this.file.exists()) {
+            InputStream in = null;
+            try {
+                in = new FileInputStream(this.file);
+                byte[] bufferByte = new byte[16];
+                if ((in.read(bufferByte)) != -1) {
+                    return bufferByte;
+                }
+            } finally {
+                if (in != null) {
+                    in.close();
+                }
+            }
+            return null;
+        } else {
+            return this.content;
+        }
     }
 
     public byte[] getContent() throws IOException {
@@ -95,6 +115,30 @@ public class FileItem {
             }
         }
         return this.content;
+    }
+
+    public void writeFileContent(OutputStream out) throws IOException {
+        if (out == null) return;
+        if (this.content != null) {
+            out.write(this.content);
+        } else if (this.file != null && this.file.exists()) {
+            InputStream in = null;
+
+            try {
+                in = new FileInputStream(this.file);
+                int bytes;
+                byte[] bufferByte = new byte[1024 * 1024];
+                while ((bytes = in.read(bufferByte)) != -1) {
+                    out.write(bufferByte, 0, bytes);
+                }
+            } finally {
+                if (in != null) {
+                    in.close();
+                }
+            }
+        } else {
+            throw new IOException("文件字节流或文件为空");
+        }
     }
 
 }

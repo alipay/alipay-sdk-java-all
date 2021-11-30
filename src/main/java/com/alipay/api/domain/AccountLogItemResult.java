@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账务明细
  *
  * @author auto create
- * @since 1.0, 2021-11-19 15:05:23
+ * @since 1.0, 2021-11-30 10:00:35
  */
 public class AccountLogItemResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6453512128485345372L;
+	private static final long serialVersionUID = 8299836662279915556L;
 
 	/**
 	 * 支付宝账务流水号。对账使用，不脱敏
@@ -66,6 +66,12 @@ public class AccountLogItemResult extends AlipayObject {
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;
+
+	/**
+	 * 支付宝交易商户退款请求号。对应商户在调用收单退款接口openApi请求传入的outRequestNo参数值
+	 */
+	@ApiField("merchant_out_refund_no")
+	private String merchantOutRefundNo;
 
 	/**
 	 * 对方账户
@@ -158,6 +164,13 @@ public class AccountLogItemResult extends AlipayObject {
 	}
 	public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
+	}
+
+	public String getMerchantOutRefundNo() {
+		return this.merchantOutRefundNo;
+	}
+	public void setMerchantOutRefundNo(String merchantOutRefundNo) {
+		this.merchantOutRefundNo = merchantOutRefundNo;
 	}
 
 	public String getOtherAccount() {

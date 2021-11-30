@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandMccQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8745867523891248356L;
+	private static final long serialVersionUID = 3385919399118591571L;
 
 	/** 
 	 * mcc查询信息结果列表

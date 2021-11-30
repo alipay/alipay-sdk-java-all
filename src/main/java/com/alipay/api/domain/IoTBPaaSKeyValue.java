@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IoTBPaaSKeyValue extends AlipayObject {
 
-	private static final long serialVersionUID = 8436615446839362946L;
+	private static final long serialVersionUID = 3662856364262694313L;
 
 	/**
 	 * 参数名key

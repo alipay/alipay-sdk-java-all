@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆修子场馆详细信息
  *
  * @author auto create
- * @since 1.0, 2021-11-08 16:14:49
+ * @since 1.0, 2021-11-29 20:37:05
  */
 public class SubVenueModifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7132134135592391838L;
+	private static final long serialVersionUID = 8885388686836231118L;
 
 	/**
 	 * 入场要求
@@ -47,7 +47,7 @@ public class SubVenueModifyInfo extends AlipayObject {
 	private String equipmentRental;
 
 	/**
-	 * 场馆设置：1地板、2灯光、3淋浴、4餐饮、5WiFi ,6更衣室
+	 * 场馆设置（传数字）：1地板、2灯光、3淋浴、4餐饮、5WiFi 、6更衣室、7充电宝、8停车场、9休息区
 	 */
 	@ApiListField("facility_list")
 	@ApiField("number")

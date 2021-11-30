@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsOrderIstdretryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1797939791858326447L;
+	private static final long serialVersionUID = 3636342824512599858L;
 
 	/** 
 	 * 优惠券费用

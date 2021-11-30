@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCustomerContractRecordSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1656755936824496619L;
+	private static final long serialVersionUID = 1635833496988943714L;
 
 	/**
 	 * 本次业务流程唯一标识，一次电子合约流程中可能存在多次业务操作，比如有多次电子签名，每次业务操作有一个唯一标识，每次业务操作有多次存证记录

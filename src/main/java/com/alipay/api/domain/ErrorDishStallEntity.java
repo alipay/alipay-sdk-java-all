@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ErrorDishStallEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 8863435892144237787L;
+	private static final long serialVersionUID = 4576256523576681128L;
 
 	/**
 	 * 未关联档口菜品集合
