@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改绑定的银行卡
  *
  * @author auto create
- * @since 1.0, 2017-09-19 14:04:24
+ * @since 1.0, 2021-12-02 11:44:01
  */
 public class MybankCreditUserBankcardBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5123632729271472167L;
+	private static final long serialVersionUID = 3777291771392643714L;
 
 	/**
 	 * 银行卡持有人的姓名

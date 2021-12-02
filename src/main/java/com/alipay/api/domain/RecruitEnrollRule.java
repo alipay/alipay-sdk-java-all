@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitEnrollRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7848687643654296184L;
+	private static final long serialVersionUID = 1162439456917567854L;
 
 	/**
 	 * 最大数量

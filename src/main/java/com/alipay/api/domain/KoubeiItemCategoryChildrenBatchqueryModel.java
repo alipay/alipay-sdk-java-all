@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询标准后台类目
  *
  * @author auto create
- * @since 1.0, 2021-03-16 14:28:48
+ * @since 1.0, 2021-12-02 14:26:54
  */
 public class KoubeiItemCategoryChildrenBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2115546638272762925L;
+	private static final long serialVersionUID = 1438844113871292547L;
 
 	/**
 	 * 根类目ID. 参数非必传，不传该参数时查询所有的一级类目及递归子类目； 传该参数时，根据入参递归查询子类目信息的列表返回

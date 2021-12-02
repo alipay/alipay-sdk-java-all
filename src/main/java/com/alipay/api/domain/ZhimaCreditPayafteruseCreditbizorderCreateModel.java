@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻后付APP下单
  *
  * @author auto create
- * @since 1.0, 2021-08-02 14:29:44
+ * @since 1.0, 2021-12-01 15:33:27
  */
 public class ZhimaCreditPayafteruseCreditbizorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1146961469572861457L;
+	private static final long serialVersionUID = 5474513879525963251L;
 
 	/**
 	 * 订单描述
@@ -36,6 +36,18 @@ public class ZhimaCreditPayafteruseCreditbizorderCreateModel extends AlipayObjec
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
+
+	/**
+	 * 订单金额，该金额为当前订单扣款的累计最大额度。例如，下单时传递10.00，则扣款时最大支付金额为10元。若该参数不传，则默认使用商户签约时约定的上限额度。
+	 */
+	@ApiField("order_amount")
+	private String orderAmount;
+
+	/**
+	 * 商户外部协议号。不传该值时，默认使用out_order_no作为out_agreement_no使用
+	 */
+	@ApiField("out_agreement_no")
+	private String outAgreementNo;
 
 	/**
 	 * 商户外部订单号，保证不重复
@@ -93,6 +105,20 @@ public class ZhimaCreditPayafteruseCreditbizorderCreateModel extends AlipayObjec
 	}
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public String getOrderAmount() {
+		return this.orderAmount;
+	}
+	public void setOrderAmount(String orderAmount) {
+		this.orderAmount = orderAmount;
+	}
+
+	public String getOutAgreementNo() {
+		return this.outAgreementNo;
+	}
+	public void setOutAgreementNo(String outAgreementNo) {
+		this.outAgreementNo = outAgreementNo;
 	}
 
 	public String getOutOrderNo() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorDepositQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2855296283862988892L;
+	private static final long serialVersionUID = 6799917673442933146L;
 
 	/**
 	 * 交通卡号

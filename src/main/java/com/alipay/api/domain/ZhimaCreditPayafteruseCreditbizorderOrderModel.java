@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻后付免密下单
  *
  * @author auto create
- * @since 1.0, 2021-10-27 16:32:49
+ * @since 1.0, 2021-12-01 15:33:22
  */
 public class ZhimaCreditPayafteruseCreditbizorderOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6725716713938255398L;
+	private static final long serialVersionUID = 1759773695545694458L;
 
 	/**
 	 * 订单描述
@@ -36,6 +36,12 @@ public class ZhimaCreditPayafteruseCreditbizorderOrderModel extends AlipayObject
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
+
+	/**
+	 * 订单金额，该金额为当前订单扣款的累计最大额度。例如，下单时传递10.00，则扣款时最大支付金额为10元。若该参数不传，则默认使用商户签约时约定的上限额度。
+	 */
+	@ApiField("order_amount")
+	private String orderAmount;
 
 	/**
 	 * 商户外部订单号，保证不重复
@@ -82,6 +88,13 @@ public class ZhimaCreditPayafteruseCreditbizorderOrderModel extends AlipayObject
 	}
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public String getOrderAmount() {
+		return this.orderAmount;
+	}
+	public void setOrderAmount(String orderAmount) {
+		this.orderAmount = orderAmount;
 	}
 
 	public String getOutOrderNo() {

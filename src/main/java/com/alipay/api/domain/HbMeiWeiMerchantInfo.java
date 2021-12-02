@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 美味商家信息
  *
  * @author auto create
- * @since 1.0, 2021-07-29 17:34:19
+ * @since 1.0, 2021-12-01 20:59:01
  */
 public class HbMeiWeiMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6615516562849295149L;
+	private static final long serialVersionUID = 3766811981323789729L;
 
 	/**
 	 * 商家ID

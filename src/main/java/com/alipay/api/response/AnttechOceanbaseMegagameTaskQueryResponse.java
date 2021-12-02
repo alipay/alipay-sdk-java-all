@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.megagame.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-29 14:30:35
+ * @since 1.0, 2021-11-30 21:30:35
  */
 public class AnttechOceanbaseMegagameTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8418556452222645359L;
+	private static final long serialVersionUID = 4277692546353297526L;
 
 	/** 
 	 * 参赛选手的提测代码分支，推荐用master。支持自定义
@@ -25,6 +25,12 @@ public class AnttechOceanbaseMegagameTaskQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("commit_id")
 	private String commitId;
+
+	/** 
+	 * 参赛选手的git 代码仓库地址
+	 */
+	@ApiField("git_repo")
+	private String gitRepo;
 
 	/** 
 	 * 提测任务id
@@ -50,6 +56,13 @@ public class AnttechOceanbaseMegagameTaskQueryResponse extends AlipayResponse {
 	}
 	public String getCommitId( ) {
 		return this.commitId;
+	}
+
+	public void setGitRepo(String gitRepo) {
+		this.gitRepo = gitRepo;
+	}
+	public String getGitRepo( ) {
+		return this.gitRepo;
 	}
 
 	public void setId(Long id) {

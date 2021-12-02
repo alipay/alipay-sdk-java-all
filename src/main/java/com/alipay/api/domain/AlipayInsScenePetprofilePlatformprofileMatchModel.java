@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 宠物档案匹配
  *
  * @author auto create
- * @since 1.0, 2021-11-30 15:38:26
+ * @since 1.0, 2021-12-01 16:46:53
  */
 public class AlipayInsScenePetprofilePlatformprofileMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4557936772952766772L;
+	private static final long serialVersionUID = 8188236881657664444L;
+
+	/**
+	 * 宠物类型：狗(2000)/猫(1000)
+	 */
+	@ApiField("pet_type")
+	private String petType;
 
 	/**
 	 * 宠物照片列表，用于匹配宠物档案，支持鼻纹和正脸多张照片搜索
@@ -22,6 +28,13 @@ public class AlipayInsScenePetprofilePlatformprofileMatchModel extends AlipayObj
 	@ApiListField("photos")
 	@ApiField("pet_photo")
 	private List<PetPhoto> photos;
+
+	public String getPetType() {
+		return this.petType;
+	}
+	public void setPetType(String petType) {
+		this.petType = petType;
+	}
 
 	public List<PetPhoto> getPhotos() {
 		return this.photos;

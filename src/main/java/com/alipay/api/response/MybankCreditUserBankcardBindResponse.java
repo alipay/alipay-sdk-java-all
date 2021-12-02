@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.user.bankcard.bind response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:10:20
+ * @since 1.0, 2021-12-02 11:44:01
  */
 public class MybankCreditUserBankcardBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4719214661422763723L;
+	private static final long serialVersionUID = 1797375232174753798L;
 
 	
 

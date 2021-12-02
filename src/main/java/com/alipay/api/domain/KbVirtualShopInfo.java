@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbVirtualShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2884718775862221353L;
+	private static final long serialVersionUID = 1335592279369588336L;
 
 	/**
 	 * 门店信息

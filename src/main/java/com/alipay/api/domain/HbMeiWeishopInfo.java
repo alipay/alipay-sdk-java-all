@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 美味店铺信息对象
  *
  * @author auto create
- * @since 1.0, 2021-08-06 13:48:02
+ * @since 1.0, 2021-12-01 20:59:01
  */
 public class HbMeiWeishopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3887582877339974778L;
+	private static final long serialVersionUID = 2757666265297422965L;
 
 	/**
 	 * 所在城市code

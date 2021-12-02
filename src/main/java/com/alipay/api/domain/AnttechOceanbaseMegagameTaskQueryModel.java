@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取大赛提测任务
  *
  * @author auto create
- * @since 1.0, 2021-11-29 14:30:05
+ * @since 1.0, 2021-11-30 21:29:11
  */
 public class AnttechOceanbaseMegagameTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6394739562865971738L;
+	private static final long serialVersionUID = 6196138217224412296L;
 
 	/**
 	 * 获取任务时先获取超时任务，这里传入的是超时的分钟数。默认30分钟。

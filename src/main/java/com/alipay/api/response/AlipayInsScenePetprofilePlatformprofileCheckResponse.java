@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.petprofile.platformprofile.check response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-30 15:40:33
+ * @since 1.0, 2021-12-01 16:47:51
  */
 public class AlipayInsScenePetprofilePlatformprofileCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4137299751217739337L;
+	private static final long serialVersionUID = 5253832379589153984L;
 
 	/** 
 	 * 宠物照片核验通过后获取的照片URL
 	 */
 	@ApiField("file_url")
 	private String fileUrl;
+
+	/** 
+	 * 宠物照片校验结果描述
+	 */
+	@ApiField("verify_desc")
+	private String verifyDesc;
 
 	/** 
 	 * 宠物照片校验结果
@@ -31,6 +37,13 @@ public class AlipayInsScenePetprofilePlatformprofileCheckResponse extends Alipay
 	}
 	public String getFileUrl( ) {
 		return this.fileUrl;
+	}
+
+	public void setVerifyDesc(String verifyDesc) {
+		this.verifyDesc = verifyDesc;
+	}
+	public String getVerifyDesc( ) {
+		return this.verifyDesc;
 	}
 
 	public void setVerifyResult(Boolean verifyResult) {

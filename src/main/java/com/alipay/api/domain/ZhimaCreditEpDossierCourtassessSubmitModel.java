@@ -1,0 +1,68 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 涉诉风险评估订单状态提交
+ *
+ * @author auto create
+ * @since 1.0, 2021-12-02 13:57:55
+ */
+public class ZhimaCreditEpDossierCourtassessSubmitModel extends AlipayObject {
+
+	private static final long serialVersionUID = 2147886784713652149L;
+
+	/**
+	 * 订单号
+	 */
+	@ApiField("order_no")
+	private String orderNo;
+
+	/**
+	 * 业务场景，固定输入COURT_ASSESS
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
+
+	/**
+	 * 状态，成功：SUCCESS；失败：FAILURE
+	 */
+	@ApiField("status")
+	private String status;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	public String getOrderNo() {
+		return this.orderNo;
+	}
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
+	}
+
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+}

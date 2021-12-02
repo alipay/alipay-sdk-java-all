@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构代客户还款
  *
  * @author auto create
- * @since 1.0, 2017-09-19 14:04:54
+ * @since 1.0, 2021-12-02 11:49:31
  */
 public class MybankCreditLoantradeLoanarRepayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5346135549737869728L;
+	private static final long serialVersionUID = 8315595514258641973L;
 
 	/**
 	 * 贷款客户在网商的会员ID

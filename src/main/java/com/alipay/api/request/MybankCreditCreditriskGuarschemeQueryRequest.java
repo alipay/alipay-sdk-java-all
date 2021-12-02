@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.creditrisk.guarscheme.query request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:10:19
+ * @since 1.0, 2021-12-02 11:44:19
  */
 public class MybankCreditCreditriskGuarschemeQueryRequest implements AlipayRequest<MybankCreditCreditriskGuarschemeQueryResponse> {
 

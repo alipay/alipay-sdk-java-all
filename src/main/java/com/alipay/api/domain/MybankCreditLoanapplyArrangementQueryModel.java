@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商银行融资平台协议查询接口
  *
  * @author auto create
- * @since 1.0, 2017-09-25 21:10:21
+ * @since 1.0, 2021-12-02 11:42:55
  */
 public class MybankCreditLoanapplyArrangementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5768761942799829958L;
+	private static final long serialVersionUID = 6743589637395487165L;
 
 	/**
 	 * 产品代码，标识网商银行具体的产品，由网商银行预先分配好，接入方按网商银行的要求送。
