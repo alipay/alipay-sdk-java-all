@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdFingerprintRiskcontrolQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3557335684671484427L;
+	private static final long serialVersionUID = 3684471634398181271L;
 
 	/** 
 	 * IFAA服务端查询结果，true为支持指纹功能，false为不支持

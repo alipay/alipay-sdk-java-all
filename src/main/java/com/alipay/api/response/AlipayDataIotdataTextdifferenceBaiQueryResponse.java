@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataIotdataTextdifferenceBaiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8811362446414173721L;
+	private static final long serialVersionUID = 1591718217268216752L;
 
 	/** 
 	 * 差异化结果以json字符串呈现。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车主搜索项
  *
  * @author auto create
- * @since 1.0, 2021-11-17 18:01:09
+ * @since 1.0, 2021-12-03 20:00:04
  */
 public class VehSearchItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2441175469411189144L;
+	private static final long serialVersionUID = 7136188978955538331L;
 
 	/**
 	 * 地址
@@ -72,6 +72,13 @@ public class VehSearchItem extends AlipayObject {
 	@ApiListField("support_service_list")
 	@ApiField("veh_service_item")
 	private List<VehServiceItem> supportServiceList;
+
+	/**
+	 * 剩余停车位。
+业务场景为PARKING_SERVICE时才可能有值。
+	 */
+	@ApiField("surplus_parking_space")
+	private String surplusParkingSpace;
 
 	public String getAddress() {
 		return this.address;
@@ -134,6 +141,13 @@ public class VehSearchItem extends AlipayObject {
 	}
 	public void setSupportServiceList(List<VehServiceItem> supportServiceList) {
 		this.supportServiceList = supportServiceList;
+	}
+
+	public String getSurplusParkingSpace() {
+		return this.surplusParkingSpace;
+	}
+	public void setSurplusParkingSpace(String surplusParkingSpace) {
+		this.surplusParkingSpace = surplusParkingSpace;
 	}
 
 }

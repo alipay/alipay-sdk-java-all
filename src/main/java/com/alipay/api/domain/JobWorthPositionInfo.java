@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证商家传入的工作岗位信息
  *
  * @author auto create
- * @since 1.0, 2021-10-27 12:33:39
+ * @since 1.0, 2021-12-03 14:39:55
  */
 public class JobWorthPositionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5197737547971266426L;
+	private static final long serialVersionUID = 3639784313568364526L;
 
 	/**
 	 * 职位要求-年龄要求	无要求（不传）、28岁以上(OVER28)、40岁以下(BELOW40)、25岁～35岁(25TO35)
@@ -80,7 +80,7 @@ public class JobWorthPositionInfo extends AlipayObject {
 	private String positionId;
 
 	/**
-	 * 岗位对应的职业id，字段参考https://www.yuque.com/wx3dkp/gwckr4/bs03t3
+	 * 岗位对应的行业id，字段参考https://www.yuque.com/wx3dkp/gwckr4/bs03t3
 	 */
 	@ApiField("position_job_id")
 	private String positionJobId;
@@ -92,7 +92,7 @@ public class JobWorthPositionInfo extends AlipayObject {
 	private String positionJobName;
 
 	/**
-	 * 岗位对应的行业id，字段参考https://www.yuque.com/wx3dkp/gwckr4/bs03t3
+	 * 岗位对应的职业id，字段参考https://www.yuque.com/wx3dkp/gwckr4/bs03t3
 	 */
 	@ApiField("position_profession_id")
 	private String positionProfessionId;
@@ -134,7 +134,7 @@ public class JobWorthPositionInfo extends AlipayObject {
 	private String salaryType;
 
 	/**
-	 * 薪资单位，元/日(DAY)、元/次(TIME)、元/月(MONTH)、元/小时(HOUR)、元/件 (NUM)
+	 * 薪资单位，元/日(DAY)、元/次(TIME)、元/月(MONTH)、元/小时(HOUR)、元/件 (NUM)、元/周 (WEEK)、其他 (OTHER)
 	 */
 	@ApiField("salary_unit")
 	private String salaryUnit;
@@ -152,7 +152,7 @@ public class JobWorthPositionInfo extends AlipayObject {
 	private String skipUrl;
 
 	/**
-	 * 高德city code，例：北京010
+	 * 高德city code，例：北京010，线上工作9999
 	 */
 	@ApiField("work_city")
 	private String workCity;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AmpeExpressQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7416285273779853532L;
+	private static final long serialVersionUID = 7782926673227191824L;
 
 	/**
 	 * 快递包裹状态

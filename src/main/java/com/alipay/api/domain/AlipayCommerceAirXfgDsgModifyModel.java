@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 吃饭更好
  *
  * @author auto create
- * @since 1.0, 2018-01-18 15:24:45
+ * @since 1.0, 2021-12-06 09:57:35
  */
 public class AlipayCommerceAirXfgDsgModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5347581464181889878L;
+	private static final long serialVersionUID = 2433133971252341232L;
 
 	/**
 	 * 用户年龄

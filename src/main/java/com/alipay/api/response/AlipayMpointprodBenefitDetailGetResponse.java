@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMpointprodBenefitDetailGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1372258492335734485L;
+	private static final long serialVersionUID = 1685763772237748683L;
 
 	/** 
 	 * 权益详情列表

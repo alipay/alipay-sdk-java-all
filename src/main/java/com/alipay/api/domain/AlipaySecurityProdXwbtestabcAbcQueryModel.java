@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * xuwebio测试用
  *
  * @author auto create
- * @since 1.0, 2017-11-17 10:59:46
+ * @since 1.0, 2021-12-06 11:11:21
  */
 public class AlipaySecurityProdXwbtestabcAbcQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4612365469316866945L;
+	private static final long serialVersionUID = 4229384725835748387L;
 
 	/**
 	 * 1

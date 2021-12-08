@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于传输分享代付安全拓展参数
  *
  * @author auto create
- * @since 1.0, 2021-11-30 17:56:03
+ * @since 1.0, 2021-12-02 19:44:13
  */
 public class SharePeerPaySecurityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1542177463554835915L;
+	private static final long serialVersionUID = 2647711136526163556L;
 
 	/**
 	 * 来源应用

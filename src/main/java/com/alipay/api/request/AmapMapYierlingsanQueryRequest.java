@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: amap.map.yierlingsan.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2021-12-08 10:38:08
  */
 public class AmapMapYierlingsanQueryRequest implements AlipayRequest<AmapMapYierlingsanQueryResponse> {
 

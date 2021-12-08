@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分兑换奖品点击确认
  *
  * @author auto create
- * @since 1.0, 2021-10-09 11:18:21
+ * @since 1.0, 2021-12-06 14:40:14
  */
 public class AlipayCommerceOperationPromoterExchangeSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3657721818769166258L;
+	private static final long serialVersionUID = 6441652368826792261L;
 
 	/**
 	 * 交兑换订单时作为外部订单号,用于防重复提交
@@ -36,6 +36,12 @@ public class AlipayCommerceOperationPromoterExchangeSubmitModel extends AlipayOb
 	 */
 	@ApiField("point_amount")
 	private Long pointAmount;
+
+	/**
+	 * 任务code，唯一标识
+	 */
+	@ApiField("task_code")
+	private String taskCode;
 
 	/**
 	 * 店员id，点击提交的收银员id
@@ -69,6 +75,13 @@ public class AlipayCommerceOperationPromoterExchangeSubmitModel extends AlipayOb
 	}
 	public void setPointAmount(Long pointAmount) {
 		this.pointAmount = pointAmount;
+	}
+
+	public String getTaskCode() {
+		return this.taskCode;
+	}
+	public void setTaskCode(String taskCode) {
+		this.taskCode = taskCode;
 	}
 
 	public String getUserId() {

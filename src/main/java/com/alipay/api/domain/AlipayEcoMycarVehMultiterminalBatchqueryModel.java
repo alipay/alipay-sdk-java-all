@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 附近车场查询
  *
  * @author auto create
- * @since 1.0, 2021-10-25 11:14:45
+ * @since 1.0, 2021-12-06 20:37:52
  */
 public class AlipayEcoMycarVehMultiterminalBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7819582513163788862L;
+	private static final long serialVersionUID = 4766686114245931663L;
 
 	/**
 	 * 业务id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小目标打卡接口
  *
  * @author auto create
- * @since 1.0, 2020-02-25 22:49:26
+ * @since 1.0, 2021-12-08 10:44:04
  */
 public class AlipaySocialBaseQuestInstanceSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8446729681335431938L;
+	private static final long serialVersionUID = 2536371964645613741L;
 
 	/**
 	 * 小目标实例ID

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2021-11-24 15:42:34
+ * @since 1.0, 2021-12-06 11:11:40
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -61,6 +61,13 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	* 小程序版本号，请选择开发版本执行提交审核操作。
 	 */
 	private String appVersion;
+
+	/** 
+	* 审核类型：
+NONE： 不拆分准入、营销（默认）
+BASE_PROMOTE：准入、营销拆分审核
+	 */
+	private String auditRule;
 
 	/** 
 	* 小程序投放的端参数。例如投放到支付宝钱包是支付宝端。默认支付宝端。支持：
@@ -283,6 +290,13 @@ LOCATION-指定区域
 	}
 	public String getAppVersion() {
 		return this.appVersion;
+	}
+
+	public void setAuditRule(String auditRule) {
+		this.auditRule = auditRule;
+	}
+	public String getAuditRule() {
+		return this.auditRule;
 	}
 
 	public void setBundleId(String bundleId) {
@@ -547,6 +561,7 @@ LOCATION-指定区域
 		txtParams.put("app_name", this.appName);
 		txtParams.put("app_slogan", this.appSlogan);
 		txtParams.put("app_version", this.appVersion);
+		txtParams.put("audit_rule", this.auditRule);
 		txtParams.put("bundle_id", this.bundleId);
 		txtParams.put("license_name", this.licenseName);
 		txtParams.put("license_no", this.licenseNo);

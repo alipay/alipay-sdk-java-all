@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸设备绑定酒店和房间
  *
  * @author auto create
- * @since 1.0, 2021-11-01 14:42:34
+ * @since 1.0, 2021-12-02 19:45:46
  */
 public class AlipayOpenIotmbsRoomBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8844595767374569259L;
+	private static final long serialVersionUID = 3335779979896925374L;
 
 	/**
 	 * 设备激活编号

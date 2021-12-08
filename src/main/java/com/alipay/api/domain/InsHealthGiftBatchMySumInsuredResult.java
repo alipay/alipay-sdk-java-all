@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsHealthGiftBatchMySumInsuredResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6685229965168317213L;
+	private static final long serialVersionUID = 3581476641188451759L;
 
 	/**
 	 * 业务类型。免费医疗金 HEALTH_BEAN_SIMPLE_UPGRADE、守护金 HEALTH_GUARDIAN_GOLD、多收多宝新门诊 HEALTH_DSDB_NEW_OUTPATIENT

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.dds.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:12:43
+ * @since 1.0, 2021-12-08 10:37:19
  */
 public class AlipaySecurityProdDdsBatchqueryRequest implements AlipayRequest<AlipaySecurityProdDdsBatchqueryResponse> {
 

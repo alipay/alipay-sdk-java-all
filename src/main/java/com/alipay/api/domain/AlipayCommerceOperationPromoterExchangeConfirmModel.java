@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分兑换奖品确认视图
  *
  * @author auto create
- * @since 1.0, 2021-10-09 11:18:08
+ * @since 1.0, 2021-12-03 15:31:41
  */
 public class AlipayCommerceOperationPromoterExchangeConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6379732527254864562L;
+	private static final long serialVersionUID = 1346681145132325876L;
 
 	/**
 	 * 奖品code,唯一标识
@@ -24,6 +24,12 @@ public class AlipayCommerceOperationPromoterExchangeConfirmModel extends AlipayO
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * 任务code，唯一标识
+	 */
+	@ApiField("task_code")
+	private String taskCode;
 
 	/**
 	 * 店员id，点击提交的收银员id
@@ -43,6 +49,13 @@ public class AlipayCommerceOperationPromoterExchangeConfirmModel extends AlipayO
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public String getTaskCode() {
+		return this.taskCode;
+	}
+	public void setTaskCode(String taskCode) {
+		this.taskCode = taskCode;
 	}
 
 	public String getUserId() {

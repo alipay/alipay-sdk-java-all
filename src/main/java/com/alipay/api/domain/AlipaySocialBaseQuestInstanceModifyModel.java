@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小目标实例配置接口
  *
  * @author auto create
- * @since 1.0, 2020-02-25 22:50:00
+ * @since 1.0, 2021-12-08 10:44:23
  */
 public class AlipaySocialBaseQuestInstanceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5553618433827269791L;
+	private static final long serialVersionUID = 7357942927466643856L;
 
 	/**
 	 * 小目标唯一ID

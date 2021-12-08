@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询用户小目标目标实例接口
  *
  * @author auto create
- * @since 1.0, 2020-02-25 22:50:11
+ * @since 1.0, 2021-12-08 10:43:56
  */
 public class AlipaySocialBaseQuestInstanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2268752224727645978L;
+	private static final long serialVersionUID = 1834471889115543895L;
 
 	/**
 	 * 目标ID列表，列表长度不能超过20

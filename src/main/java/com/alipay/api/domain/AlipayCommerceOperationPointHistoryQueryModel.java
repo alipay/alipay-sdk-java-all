@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分明细
  *
  * @author auto create
- * @since 1.0, 2021-10-09 11:18:50
+ * @since 1.0, 2021-12-03 14:12:59
  */
 public class AlipayCommerceOperationPointHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4677254414564989393L;
+	private static final long serialVersionUID = 4746286857684647118L;
 
 	/**
 	 * 分页数
@@ -30,6 +30,12 @@ public class AlipayCommerceOperationPointHistoryQueryModel extends AlipayObject 
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * 任务code，唯一标识
+	 */
+	@ApiField("task_code")
+	private String taskCode;
 
 	/**
 	 * 店员id，点击提交的收银员id
@@ -56,6 +62,13 @@ public class AlipayCommerceOperationPointHistoryQueryModel extends AlipayObject 
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public String getTaskCode() {
+		return this.taskCode;
+	}
+	public void setTaskCode(String taskCode) {
+		this.taskCode = taskCode;
 	}
 
 	public String getUserId() {

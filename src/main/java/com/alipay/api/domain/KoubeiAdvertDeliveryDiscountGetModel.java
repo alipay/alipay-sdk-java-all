@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑广告推荐接口
  *
  * @author auto create
- * @since 1.0, 2018-03-01 15:55:14
+ * @since 1.0, 2021-12-06 11:11:54
  */
 public class KoubeiAdvertDeliveryDiscountGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2419711866611416697L;
+	private static final long serialVersionUID = 8484861983873166314L;
 
 	/**
 	 * 媒体编号，使用前需要找业务申请 ，不申请直接调用会失败
