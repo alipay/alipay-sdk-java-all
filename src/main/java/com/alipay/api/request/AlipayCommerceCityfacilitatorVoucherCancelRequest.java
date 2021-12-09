@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.cityfacilitator.voucher.cancel request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:09:27
+ * @since 1.0, 2021-12-08 21:30:48
  */
 public class AlipayCommerceCityfacilitatorVoucherCancelRequest implements AlipayRequest<AlipayCommerceCityfacilitatorVoucherCancelResponse> {
 

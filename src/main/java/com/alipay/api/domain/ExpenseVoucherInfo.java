@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证基础信息
  *
  * @author auto create
- * @since 1.0, 2021-06-08 17:56:15
+ * @since 1.0, 2021-12-08 17:22:54
  */
 public class ExpenseVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2258971579337376995L;
+	private static final long serialVersionUID = 8211215857282198394L;
 
 	/**
 	 * 企业支付宝用户id(对应凭证ownerid)

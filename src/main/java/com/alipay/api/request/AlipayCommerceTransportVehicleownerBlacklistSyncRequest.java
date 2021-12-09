@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.blacklist.sync request
  * 
  * @author auto create
- * @since 1.0, 2020-06-22 17:12:13
+ * @since 1.0, 2021-12-08 21:56:17
  */
 public class AlipayCommerceTransportVehicleownerBlacklistSyncRequest implements AlipayRequest<AlipayCommerceTransportVehicleownerBlacklistSyncResponse> {
 

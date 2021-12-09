@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.settle.settlementbill.cancel request
  * 
  * @author auto create
- * @since 1.0, 2020-09-09 11:57:26
+ * @since 1.0, 2021-12-08 21:26:13
  */
 public class AlipayBossFncSettleSettlementbillCancelRequest implements AlipayRequest<AlipayBossFncSettleSettlementbillCancelResponse> {
 

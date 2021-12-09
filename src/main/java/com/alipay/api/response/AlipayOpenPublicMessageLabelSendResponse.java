@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.message.label.send response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-23 10:49:22
+ * @since 1.0, 2021-12-09 00:30:34
  */
 public class AlipayOpenPublicMessageLabelSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3547666321766816765L;
+	private static final long serialVersionUID = 7617225275589173112L;
 
 	
 

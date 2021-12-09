@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.lottery.typelist.query request
  * 
  * @author auto create
- * @since 1.0, 2020-12-14 15:47:27
+ * @since 1.0, 2021-12-08 21:49:32
  */
 public class AlipayCommerceLotteryTypelistQueryRequest implements AlipayRequest<AlipayCommerceLotteryTypelistQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.agent.delete response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-10 14:22:29
+ * @since 1.0, 2021-12-08 23:11:34
  */
 public class AlipayIserviceCcmAgentDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7157331424975952576L;
+	private static final long serialVersionUID = 2856817497699653919L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.youkuvideo.auditcallback.send response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-29 16:10:00
+ * @since 1.0, 2021-12-08 23:45:58
  */
 public class AlipayOpenAppYoukuvideoAuditcallbackSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1595891323826594994L;
+	private static final long serialVersionUID = 6732797247284116359L;
 
 	
 

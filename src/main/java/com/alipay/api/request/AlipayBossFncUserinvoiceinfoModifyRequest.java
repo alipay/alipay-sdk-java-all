@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.userinvoiceinfo.modify request
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 10:41:47
+ * @since 1.0, 2021-12-08 21:26:29
  */
 public class AlipayBossFncUserinvoiceinfoModifyRequest implements AlipayRequest<AlipayBossFncUserinvoiceinfoModifyResponse> {
 

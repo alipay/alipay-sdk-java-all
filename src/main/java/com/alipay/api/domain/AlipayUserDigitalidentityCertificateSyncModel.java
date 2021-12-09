@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1349243872257194672L;
+	private static final long serialVersionUID = 1763459229174837788L;
 
 	/**
 	 * 信息核验模式，该字段用于控制传入的信息与支付宝侧信息的核验对比方式，以防止凭证被归属到错误的用户。对比信息包括户姓名/证件号等。可选PLAIN/MD5

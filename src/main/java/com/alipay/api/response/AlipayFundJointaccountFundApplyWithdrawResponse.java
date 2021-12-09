@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.fund.apply.withdraw response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-07 19:25:28
+ * @since 1.0, 2021-12-08 23:00:38
  */
 public class AlipayFundJointaccountFundApplyWithdrawResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8854251671615212417L;
+	private static final long serialVersionUID = 5548744731429393462L;
 
 	
 

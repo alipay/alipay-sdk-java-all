@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.api.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-10-27 11:10:14
+ * @since 1.0, 2021-12-08 23:34:00
  */
 public class AlipayOpenAppApiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1629346156261765842L;
+	private static final long serialVersionUID = 1734551617713612344L;
 
 	/** 
 	 * 应用可申请的接口出参敏感字段列表

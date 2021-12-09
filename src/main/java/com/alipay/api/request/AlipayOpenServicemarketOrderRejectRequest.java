@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.order.reject request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:12:30
+ * @since 1.0, 2021-12-09 00:39:06
  */
 public class AlipayOpenServicemarketOrderRejectRequest implements AlipayRequest<AlipayOpenServicemarketOrderRejectResponse> {
 

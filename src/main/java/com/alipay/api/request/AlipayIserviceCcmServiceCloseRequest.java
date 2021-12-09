@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.service.close request
  * 
  * @author auto create
- * @since 1.0, 2021-02-02 11:18:50
+ * @since 1.0, 2021-12-08 23:13:01
  */
 public class AlipayIserviceCcmServiceCloseRequest implements AlipayRequest<AlipayIserviceCcmServiceCloseResponse> {
 

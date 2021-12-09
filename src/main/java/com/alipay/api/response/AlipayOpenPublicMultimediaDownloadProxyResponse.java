@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.multimedia.download.proxy response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:11:56
+ * @since 1.0, 2021-12-09 00:31:11
  */
 public class AlipayOpenPublicMultimediaDownloadProxyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1391647273786599158L;
+	private static final long serialVersionUID = 6818153292686212717L;
 
 	
 

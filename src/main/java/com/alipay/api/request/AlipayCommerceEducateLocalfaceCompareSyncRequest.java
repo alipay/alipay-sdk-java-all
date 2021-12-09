@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.localface.compare.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-07-23 15:20:11
+ * @since 1.0, 2021-12-08 21:34:47
  */
 public class AlipayCommerceEducateLocalfaceCompareSyncRequest implements AlipayRequest<AlipayCommerceEducateLocalfaceCompareSyncResponse> {
 

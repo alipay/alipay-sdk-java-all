@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5393921433829692343L;
+	private static final long serialVersionUID = 3116974221463546537L;
 
 	/**
 	 * 删卡扩展参数，json格式。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.jointaccount.fund.apply.withdraw request
  * 
  * @author auto create
- * @since 1.0, 2021-09-07 19:25:28
+ * @since 1.0, 2021-12-08 23:00:38
  */
 public class AlipayFundJointaccountFundApplyWithdrawRequest implements AlipayRequest<AlipayFundJointaccountFundApplyWithdrawResponse> {
 

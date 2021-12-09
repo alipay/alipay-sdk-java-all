@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店服务提报
  *
  * @author auto create
- * @since 1.0, 2021-11-30 10:45:37
+ * @since 1.0, 2021-12-08 15:10:05
  */
 public class AlipayCommerceDataHotelServiceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2824957864462619116L;
+	private static final long serialVersionUID = 6327345834132119455L;
 
 	/**
 	 * 酒店所在小程序的appid

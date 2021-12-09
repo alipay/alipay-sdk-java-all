@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询企业可用商户信息
  *
  * @author auto create
- * @since 1.0, 2021-09-24 16:47:19
+ * @since 1.0, 2021-12-08 17:45:16
  */
 public class AlipayEbppInvoiceExpensesceneMerchantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1493787126353386115L;
+	private static final long serialVersionUID = 1751689158883433758L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -39,7 +39,7 @@ MEAL - 工作餐
 	private Long pageNum;
 
 	/**
-	 * 每页条数（最大100）
+	 * 每页行数（最大100）
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

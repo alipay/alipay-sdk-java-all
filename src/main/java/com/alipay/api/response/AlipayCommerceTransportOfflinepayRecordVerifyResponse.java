@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.offlinepay.record.verify response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:09:47
+ * @since 1.0, 2021-12-08 21:55:46
  */
 public class AlipayCommerceTransportOfflinepayRecordVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6523744639721425585L;
+	private static final long serialVersionUID = 5138949953684564361L;
 
 	
 

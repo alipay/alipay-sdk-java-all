@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.eprint.printer.delete response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-06 17:54:16
+ * @since 1.0, 2021-12-08 22:45:12
  */
 public class AlipayEcoEprintPrinterDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4386375586159831272L;
+	private static final long serialVersionUID = 1725669394573847653L;
 
 	
 

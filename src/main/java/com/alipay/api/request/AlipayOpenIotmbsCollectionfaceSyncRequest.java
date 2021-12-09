@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.collectionface.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-10-29 10:57:47
+ * @since 1.0, 2021-12-08 23:51:40
  */
 public class AlipayOpenIotmbsCollectionfaceSyncRequest implements AlipayRequest<AlipayOpenIotmbsCollectionfaceSyncResponse> {
 

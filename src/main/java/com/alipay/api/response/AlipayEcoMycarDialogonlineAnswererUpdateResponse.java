@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.dialogonline.answerer.update response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-31 11:45:28
+ * @since 1.0, 2021-12-08 22:47:57
  */
 public class AlipayEcoMycarDialogonlineAnswererUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4723171448883642349L;
+	private static final long serialVersionUID = 2399424449253749333L;
 
 	
 

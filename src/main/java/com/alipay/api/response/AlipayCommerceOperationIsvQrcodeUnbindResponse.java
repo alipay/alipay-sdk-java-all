@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.isv.qrcode.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 11:25:38
+ * @since 1.0, 2021-12-08 21:51:38
  */
 public class AlipayCommerceOperationIsvQrcodeUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3131228233733821772L;
+	private static final long serialVersionUID = 2523834948397123778L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.train.groups.add response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-06 15:51:16
+ * @since 1.0, 2021-12-08 21:37:13
  */
 public class AlipayCommerceEducateTrainGroupsAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2482471377594688466L;
+	private static final long serialVersionUID = 2515528666175845436L;
 
 	
 

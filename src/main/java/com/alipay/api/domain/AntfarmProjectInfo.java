@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntfarmProjectInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2818455748222687945L;
+	private static final long serialVersionUID = 1472126184391956723L;
 
 	/**
 	 * 捐赠项目 id

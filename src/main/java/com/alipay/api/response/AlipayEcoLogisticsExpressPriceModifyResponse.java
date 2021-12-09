@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.logistics.express.price.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:21
+ * @since 1.0, 2021-12-08 22:46:00
  */
 public class AlipayEcoLogisticsExpressPriceModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2589454817369982382L;
+	private static final long serialVersionUID = 8568612183364516765L;
 
 	
 

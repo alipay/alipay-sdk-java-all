@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.rule.crowd.delete response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-23 15:41:18
+ * @since 1.0, 2021-12-08 23:20:25
  */
 public class AlipayMarketingCampaignRuleCrowdDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7268115959243794991L;
+	private static final long serialVersionUID = 7186476935781517634L;
 
 	
 

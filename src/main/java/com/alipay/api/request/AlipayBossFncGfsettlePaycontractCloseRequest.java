@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfsettle.paycontract.close request
  * 
  * @author auto create
- * @since 1.0, 2021-09-28 14:27:35
+ * @since 1.0, 2021-12-08 21:22:56
  */
 public class AlipayBossFncGfsettlePaycontractCloseRequest implements AlipayRequest<AlipayBossFncGfsettlePaycontractCloseResponse> {
 

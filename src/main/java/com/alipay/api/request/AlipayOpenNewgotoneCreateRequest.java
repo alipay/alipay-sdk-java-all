@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.newgotone.create request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:06:18
+ * @since 1.0, 2021-12-09 00:21:38
  */
 public class AlipayOpenNewgotoneCreateRequest implements AlipayRequest<AlipayOpenNewgotoneCreateResponse> {
 

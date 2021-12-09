@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BoxDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6786879814976894348L;
+	private static final long serialVersionUID = 1344826868934317426L;
 
 	/**
 	 * 品牌box所属biz_id

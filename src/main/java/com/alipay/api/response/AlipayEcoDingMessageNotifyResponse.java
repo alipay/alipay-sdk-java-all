@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.ding.message.notify response.
  * 
  * @author auto create
- * @since 1.0, 2019-09-06 18:22:15
+ * @since 1.0, 2021-12-08 22:43:21
  */
 public class AlipayEcoDingMessageNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1772738369834875457L;
+	private static final long serialVersionUID = 4716879539164596249L;
 
 	
 

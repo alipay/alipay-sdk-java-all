@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.terminal.powerbank.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-20 17:15:50
+ * @since 1.0, 2021-12-08 21:55:35
  */
 public class AlipayCommerceTerminalPowerbankModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8798673686287363478L;
+	private static final long serialVersionUID = 3171495286271677593L;
 
 	
 

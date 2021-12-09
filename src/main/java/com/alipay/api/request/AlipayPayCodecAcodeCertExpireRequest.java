@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.codec.acode.cert.expire request
  * 
  * @author auto create
- * @since 1.0, 2019-11-27 17:34:02
+ * @since 1.0, 2021-12-09 00:42:20
  */
 public class AlipayPayCodecAcodeCertExpireRequest implements AlipayRequest<AlipayPayCodecAcodeCertExpireResponse> {
 

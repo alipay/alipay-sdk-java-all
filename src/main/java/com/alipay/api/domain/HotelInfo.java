@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店信息
  *
  * @author auto create
- * @since 1.0, 2021-06-24 22:17:02
+ * @since 1.0, 2021-12-08 14:00:55
  */
 public class HotelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2338895543853651946L;
+	private static final long serialVersionUID = 5247636731578656369L;
 
 	/**
 	 * 酒店品牌
@@ -66,6 +66,12 @@ public class HotelInfo extends AlipayObject {
 	 */
 	@ApiField("province")
 	private String province;
+
+	/**
+	 * 支付宝域店铺id
+	 */
+	@ApiField("shop_id")
+	private String shopId;
 
 	/**
 	 * 电话
@@ -134,6 +140,13 @@ public class HotelInfo extends AlipayObject {
 	}
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 	public String getTelephone() {

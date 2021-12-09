@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.bikeprice.data.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-15 16:17:33
+ * @since 1.0, 2021-12-08 21:59:20
  */
 public class AlipayDataAiserviceBikepriceDataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4749169328562289629L;
+	private static final long serialVersionUID = 8493689746621638996L;
 
 	
 

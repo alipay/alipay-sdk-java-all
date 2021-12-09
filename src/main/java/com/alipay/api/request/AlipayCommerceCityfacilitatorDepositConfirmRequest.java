@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.cityfacilitator.deposit.confirm request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2021-12-08 21:30:32
  */
 public class AlipayCommerceCityfacilitatorDepositConfirmRequest implements AlipayRequest<AlipayCommerceCityfacilitatorDepositConfirmResponse> {
 

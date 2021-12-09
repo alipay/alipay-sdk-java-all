@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.process.sign.verify request
  * 
  * @author auto create
- * @since 1.0, 2021-08-26 10:05:01
+ * @since 1.0, 2021-12-08 21:22:24
  */
 public class AlipayBossBaseProcessSignVerifyRequest implements AlipayRequest<AlipayBossBaseProcessSignVerifyResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部员工消费通知
  *
  * @author auto create
- * @since 1.0, 2021-10-14 15:58:39
+ * @since 1.0, 2021-12-08 22:18:31
  */
 public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5889498967949917556L;
+	private static final long serialVersionUID = 7296193798395949329L;
 
 	/**
 	 * 企业码账号

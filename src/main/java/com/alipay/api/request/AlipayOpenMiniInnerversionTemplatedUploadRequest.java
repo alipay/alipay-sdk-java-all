@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innerversion.templated.upload request
  * 
  * @author auto create
- * @since 1.0, 2021-08-09 11:28:01
+ * @since 1.0, 2021-12-09 00:09:48
  */
 public class AlipayOpenMiniInnerversionTemplatedUploadRequest implements AlipayRequest<AlipayOpenMiniInnerversionTemplatedUploadResponse> {
 

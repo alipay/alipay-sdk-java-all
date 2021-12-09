@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.silin.longnigh.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:01:00
+ * @since 1.0, 2021-12-08 23:44:06
  */
 public class AlipayOpenAppSilinLongnighQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8214762665975696946L;
+	private static final long serialVersionUID = 4171944877733184183L;
 
 	
 

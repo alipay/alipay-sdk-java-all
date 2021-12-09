@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.notify.retry request
  * 
  * @author auto create
- * @since 1.0, 2021-08-18 17:57:37
+ * @since 1.0, 2021-12-08 23:40:37
  */
 public class AlipayOpenAppNotifyRetryRequest implements AlipayRequest<AlipayOpenAppNotifyRetryResponse> {
 

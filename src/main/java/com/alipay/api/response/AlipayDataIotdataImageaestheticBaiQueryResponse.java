@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataIotdataImageaestheticBaiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5341838169155473724L;
+	private static final long serialVersionUID = 2858882189795169721L;
 
 	/** 
 	 * 返回图片URL、打分结果和错误信息

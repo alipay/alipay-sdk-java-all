@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.instantdelivery.merchantagreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-02 14:12:30
+ * @since 1.0, 2021-12-08 23:49:25
  */
 public class AlipayOpenInstantdeliveryMerchantagreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1776154741488879887L;
+	private static final long serialVersionUID = 1842859139156195644L;
 
 	/** 
 	 * 物流代扣协议的详细内容

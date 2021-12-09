@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.showwindow.content.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-24 09:35:25
+ * @since 1.0, 2021-12-08 23:22:52
  */
 public class AlipayMarketingShowwindowContentSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3776845397615862986L;
+	private static final long serialVersionUID = 8127974613829296374L;
 
 	
 

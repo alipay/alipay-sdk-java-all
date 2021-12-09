@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.isv.qrcode.bind request
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 11:25:38
+ * @since 1.0, 2021-12-08 21:51:03
  */
 public class AlipayCommerceOperationIsvQrcodeBindRequest implements AlipayRequest<AlipayCommerceOperationIsvQrcodeBindResponse> {
 

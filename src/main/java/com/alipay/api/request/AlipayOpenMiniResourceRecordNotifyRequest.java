@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.resource.record.notify request
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:44:07
+ * @since 1.0, 2021-12-09 00:17:33
  */
 public class AlipayOpenMiniResourceRecordNotifyRequest implements AlipayRequest<AlipayOpenMiniResourceRecordNotifyResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.template.delete response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-23 09:51:44
+ * @since 1.0, 2021-12-08 23:23:11
  */
 public class AlipayMarketingVoucherTemplateDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5157814251841944343L;
+	private static final long serialVersionUID = 8133891143622538959L;
 
 	
 
