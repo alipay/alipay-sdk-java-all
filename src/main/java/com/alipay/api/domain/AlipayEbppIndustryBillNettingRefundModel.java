@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppIndustryBillNettingRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3452743572125551514L;
+	private static final long serialVersionUID = 2367411825423751287L;
 
 	/**
 	 * 支付宝流水号。

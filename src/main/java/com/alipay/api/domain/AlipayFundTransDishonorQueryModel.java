@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransDishonorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2646189826821725166L;
+	private static final long serialVersionUID = 6745183633527918681L;
 
 	/**
 	 * 查询退票起始时间:（大于等于），格式为yyyyMMdd。

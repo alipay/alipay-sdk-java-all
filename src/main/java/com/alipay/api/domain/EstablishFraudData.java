@@ -12,7 +12,7 @@ Fraud data provided by Apple as outlined in separate Fraud SIA document, if appl
  */
 public class EstablishFraudData extends AlipayObject {
 
-	private static final long serialVersionUID = 2821619453864646578L;
+	private static final long serialVersionUID = 3559524833721148663L;
 
 	/**
 	 * Wallet所在设备的设备id映射的uuid。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdIfaatamMessagenotifySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1195179761459836956L;
+	private static final long serialVersionUID = 5872422868516386698L;
 
 	/**
 	 * 业务操作类型

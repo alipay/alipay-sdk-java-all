@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InviteMemberForm extends AlipayObject {
 
-	private static final long serialVersionUID = 1485135671312368124L;
+	private static final long serialVersionUID = 8282526583842896867L;
 
 	/**
 	 * 开户账号：<br>

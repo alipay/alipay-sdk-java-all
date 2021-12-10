@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbExtItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7324926635235538424L;
+	private static final long serialVersionUID = 6693538624554391136L;
 
 	/**
 	 * 品牌信息（目前支持3级品牌）

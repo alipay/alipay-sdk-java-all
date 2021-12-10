@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PosDishQryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8396452268364569325L;
+	private static final long serialVersionUID = 2713876265425996668L;
 
 	/**
 	 * 菜品类别

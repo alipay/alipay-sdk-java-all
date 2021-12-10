@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CampBaseDto extends AlipayObject {
 
-	private static final long serialVersionUID = 1724783289287627314L;
+	private static final long serialVersionUID = 6516841322973452993L;
 
 	/**
 	 * 活动工单列表

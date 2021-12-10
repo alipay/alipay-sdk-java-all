@@ -8,11 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.ecny.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-03 16:42:53
+ * @since 1.0, 2021-12-09 14:56:02
  */
 public class MybankEcnyTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3675232283574698859L;
+	private static final long serialVersionUID = 5397249283547149142L;
+
+	/** 
+	 * 买家钱包ID，支付成功时必填
+	 */
+	@ApiField("buyer_wallet_id")
+	private String buyerWalletId;
+
+	/** 
+	 * 买家钱包名称，支付成功时必填
+	 */
+	@ApiField("buyer_wallet_name")
+	private String buyerWalletName;
 
 	/** 
 	 * 调用方订单号
@@ -37,6 +49,20 @@ public class MybankEcnyTradeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("trade_status")
 	private String tradeStatus;
+
+	public void setBuyerWalletId(String buyerWalletId) {
+		this.buyerWalletId = buyerWalletId;
+	}
+	public String getBuyerWalletId( ) {
+		return this.buyerWalletId;
+	}
+
+	public void setBuyerWalletName(String buyerWalletName) {
+		this.buyerWalletName = buyerWalletName;
+	}
+	public String getBuyerWalletName( ) {
+		return this.buyerWalletName;
+	}
 
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;

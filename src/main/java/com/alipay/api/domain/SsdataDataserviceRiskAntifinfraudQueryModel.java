@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataDataserviceRiskAntifinfraudQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5264735752163339563L;
+	private static final long serialVersionUID = 5658247396385357619L;
 
 	/**
 	 * 行为发生时的Apdid值

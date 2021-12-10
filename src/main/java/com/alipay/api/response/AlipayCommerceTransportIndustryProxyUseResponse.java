@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.industry.proxy.use response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-23 11:13:14
+ * @since 1.0, 2021-12-09 15:47:05
  */
 public class AlipayCommerceTransportIndustryProxyUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3164815961962985684L;
+	private static final long serialVersionUID = 6197787948693335862L;
 
 	/** 
 	 * 行业代理响应，根据行业场景、行业事件的变化而不同

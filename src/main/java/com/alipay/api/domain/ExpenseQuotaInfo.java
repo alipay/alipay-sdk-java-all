@@ -6,23 +6,23 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 额度信息
+ * 余额信息
  *
  * @author auto create
- * @since 1.0, 2021-12-08 17:22:07
+ * @since 1.0, 2021-12-09 14:05:57
  */
 public class ExpenseQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4659475779915797276L;
+	private static final long serialVersionUID = 6443934215918527758L;
 
 	/**
-	 * 额度失效时间
+	 * 余额失效时间
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/**
-	 * 额度生效时间
+	 * 余额生效时间
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
@@ -34,64 +34,69 @@ public class ExpenseQuotaInfo extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 额度是否冻结，冻结后额度不可用
+	 * 余额是否冻结，冻结后因公付不可用
 	 */
 	@ApiField("freeze")
 	private Boolean freeze;
 
 	/**
-	 * 额度所属者ID
+	 * 余额所属者ID
 owner_type为员工时为员工支付宝ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 额度所属者类型
+	 * 余额所属者类型
 EMPLOYEE 员工
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
 
 	/**
-	 * 可用额度（单位分）
+	 * 可用余额（单位分）
 	 */
 	@ApiField("quota_available")
 	private String quotaAvailable;
 
 	/**
-	 * 额度ID
+	 * 余额ID
 	 */
 	@ApiField("quota_id")
 	private String quotaId;
 
 	/**
-	 * 锁定额度（单位分）
+	 * 锁定余额（单位分）
 	 */
 	@ApiField("quota_locked")
 	private String quotaLocked;
 
 	/**
-	 * 总额度（单位分）
+	 * 总余额（单位分）
 	 */
 	@ApiField("quota_total")
 	private String quotaTotal;
 
 	/**
-	 * 已用额度（单位分）
+	 * 已用余额（单位分）
 	 */
 	@ApiField("quota_used")
 	private String quotaUsed;
 
 	/**
-	 * 额度类型ID
+	 * 余额维度ID
+当 target_type=EXPENSE_TYPE 时，值为
+MEAL（工作餐）
+当target_type=RULE_GROUP_AGGREGATION 时，值为费控规则聚合ID
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
-	 * 额度类型
-EXPENSE_TYPE: 场景盖帽额度
+	 * 余额维度
+枚举值：
+EXPENSE_TYPE（费用类型维度），
+RULE_GROUP_AGGREGATION（规则聚合维度）
 	 */
 	@ApiField("target_type")
 	private String targetType;
