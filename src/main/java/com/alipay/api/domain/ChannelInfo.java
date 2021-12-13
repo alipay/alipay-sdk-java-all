@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 渠道信息
  *
  * @author auto create
- * @since 1.0, 2021-05-21 16:12:14
+ * @since 1.0, 2021-12-13 10:53:40
  */
 public class ChannelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6563225165436636597L;
+	private static final long serialVersionUID = 7765214316622918662L;
 
 	/**
 	 * 资产ID
@@ -80,6 +83,12 @@ public class ChannelInfo extends AlipayObject {
 	private String instId;
 
 	/**
+	 * 总授信额度：目前仅用与花呗分期
+	 */
+	@ApiField("limit_amount")
+	private String limitAmount;
+
+	/**
 	 * 渠道logo图片的url地址
 	 */
 	@ApiField("logo")
@@ -108,6 +117,13 @@ public class ChannelInfo extends AlipayObject {
 	 */
 	@ApiField("signed")
 	private Boolean signed;
+
+	/**
+	 * 子渠道列表：目前主要用于花呗分期的每期渠道
+	 */
+	@ApiListField("sub_channel_list")
+	@ApiField("sub_channel_list")
+	private List<SubChannelList> subChannelList;
 
 	public String getAssetId() {
 		return this.assetId;
@@ -186,6 +202,13 @@ public class ChannelInfo extends AlipayObject {
 		this.instId = instId;
 	}
 
+	public String getLimitAmount() {
+		return this.limitAmount;
+	}
+	public void setLimitAmount(String limitAmount) {
+		this.limitAmount = limitAmount;
+	}
+
 	public String getLogo() {
 		return this.logo;
 	}
@@ -219,6 +242,13 @@ public class ChannelInfo extends AlipayObject {
 	}
 	public void setSigned(Boolean signed) {
 		this.signed = signed;
+	}
+
+	public List<SubChannelList> getSubChannelList() {
+		return this.subChannelList;
+	}
+	public void setSubChannelList(List<SubChannelList> subChannelList) {
+		this.subChannelList = subChannelList;
 	}
 
 }

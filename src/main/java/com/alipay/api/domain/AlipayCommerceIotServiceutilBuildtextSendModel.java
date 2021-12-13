@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotServiceutilBuildtextSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5864629414241255427L;
+	private static final long serialVersionUID = 7229463113445425968L;
 
 	/**
 	 * 要合成语音文件的文本

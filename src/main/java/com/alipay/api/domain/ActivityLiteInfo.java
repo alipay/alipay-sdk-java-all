@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动摘要信息
  *
  * @author auto create
- * @since 1.0, 2021-11-22 15:38:40
+ * @since 1.0, 2021-12-13 15:19:27
  */
 public class ActivityLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7598364427494449382L;
+	private static final long serialVersionUID = 6663649772551938677L;
 
 	/**
 	 * 活动id
@@ -28,11 +28,11 @@ public class ActivityLiteInfo extends AlipayObject {
 	private String activityName;
 
 	/**
-	 * 活动状态
+	 * 活动状态 
 枚举值： 
-ACTIVE:已激活，表示活动已经激活但未到发放时间
-SEND:可发放，表示活动已激活且已到活动发放时间，用户可以正常领取
-PAUSE:已暂停，表示商户临时暂停该活动，用户不能领取
+ACTIVE:活动已激活，表示活动已经生效，等到活动开始(publish_start_time)之后用户就可以参与活动。
+PAUSE:活动已暂停，表示商户临时暂停该活动，该状态下用户不能参与活动
+FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(publish_end_time)不能再进行领取或修改等操作。
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;

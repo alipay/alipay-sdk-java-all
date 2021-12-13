@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 法务中台 电子用印请求
  *
  * @author auto create
- * @since 1.0, 2020-06-19 14:08:28
+ * @since 1.0, 2021-12-13 11:54:46
  */
 public class AlipayBossProdElecsealOrderApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5244665973123873417L;
+	private static final long serialVersionUID = 8527578295483992642L;
 
 	/**
 	 * 接入法务中台电子应用服务的主体，一般为app名称

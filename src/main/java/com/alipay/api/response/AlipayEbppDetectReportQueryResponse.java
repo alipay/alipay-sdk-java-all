@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.detect.report.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-26 10:58:25
+ * @since 1.0, 2021-12-13 16:10:58
  */
 public class AlipayEbppDetectReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7864925339545598823L;
+	private static final long serialVersionUID = 8849158493754381687L;
 
 	/** 
 	 * 注意：该字段废弃。
@@ -43,6 +45,13 @@ public class AlipayEbppDetectReportQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("detect_result")
 	private String detectResult;
+
+	/** 
+	 * 检测类型+检测项详细检出数据及部分统计数据
+	 */
+	@ApiListField("detect_result_detail_list")
+	@ApiField("string")
+	private List<String> detectResultDetailList;
 
 	/** 
 	 * 检测状态.
@@ -113,6 +122,13 @@ public class AlipayEbppDetectReportQueryResponse extends AlipayResponse {
 	}
 	public String getDetectResult( ) {
 		return this.detectResult;
+	}
+
+	public void setDetectResultDetailList(List<String> detectResultDetailList) {
+		this.detectResultDetailList = detectResultDetailList;
+	}
+	public List<String> getDetectResultDetailList( ) {
+		return this.detectResultDetailList;
 	}
 
 	public void setDetectStatus(Long detectStatus) {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.notify.send request
  * 
  * @author auto create
- * @since 1.0, 2021-12-03 10:46:38
+ * @since 1.0, 2021-12-13 11:35:40
  */
 public class AnttechOceanbaseNotifySendRequest implements AlipayRequest<AnttechOceanbaseNotifySendResponse> {
 

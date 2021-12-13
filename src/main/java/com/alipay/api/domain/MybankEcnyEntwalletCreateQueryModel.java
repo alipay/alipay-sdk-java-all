@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询数字人民币对公钱包开立进度
  *
  * @author auto create
- * @since 1.0, 2021-12-03 16:24:36
+ * @since 1.0, 2021-12-10 19:20:20
  */
 public class MybankEcnyEntwalletCreateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5598575883727364427L;
+	private static final long serialVersionUID = 4314428327276634595L;
 
 	/**
 	 * 单位证件号, 选择填写外部请求号时，字段必填

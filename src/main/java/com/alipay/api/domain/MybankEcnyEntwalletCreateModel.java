@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数字人民币对公钱包开立
  *
  * @author auto create
- * @since 1.0, 2021-12-03 16:34:53
+ * @since 1.0, 2021-12-10 19:20:02
  */
 public class MybankEcnyEntwalletCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3498352228465269558L;
+	private static final long serialVersionUID = 1672845539387871496L;
 
 	/**
 	 * 实控人信息

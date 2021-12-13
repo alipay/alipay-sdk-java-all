@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiAdvertCommissionRoleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7759828349118991391L;
+	private static final long serialVersionUID = 5729181512384865548L;
 
 	/** 
 	 * 角色拥有信息，无论是否拥有角色，都会返回“角色拥有信息”，如果没有，则返回没有开通。同时需要通过role_code ，查找对应角色的开通情况

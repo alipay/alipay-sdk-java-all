@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 准入任务检测结果查询
  *
  * @author auto create
- * @since 1.0, 2021-05-26 10:58:25
+ * @since 1.0, 2021-12-13 16:10:42
  */
 public class AlipayEbppDetectReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3618555783922851969L;
+	private static final long serialVersionUID = 6281544778964475238L;
 
 	/**
 	 * 业务类型

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据tokenID查询设备数据字段
  *
  * @author auto create
- * @since 1.0, 2019-12-17 17:01:15
+ * @since 1.0, 2021-12-13 19:52:10
  */
 public class AlipaySecurityProdDeviceinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6633484681167744562L;
+	private static final long serialVersionUID = 8297248652645616917L;
 
 	/**
 	 * biz_name，用于标识接入方名称，注意新接入的业务该字段为必填字段，请联系owner分配

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手动上传文件至法务平台OSS服务器
  *
  * @author auto create
- * @since 1.0, 2020-11-04 15:24:11
+ * @since 1.0, 2021-12-10 14:26:08
  */
 public class AlipayBossProdAntlawManualfileUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3582283414497833591L;
+	private static final long serialVersionUID = 7224884853486835834L;
 
 	/**
 	 * 业务编号

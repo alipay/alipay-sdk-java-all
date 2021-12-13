@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WorldBaseRPCResponseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4651292742916489958L;
+	private static final long serialVersionUID = 6141983714176875443L;
 
 	/**
 	 * 错误信息

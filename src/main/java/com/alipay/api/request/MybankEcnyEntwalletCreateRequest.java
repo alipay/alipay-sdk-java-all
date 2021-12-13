@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.ecny.entwallet.create request
  * 
  * @author auto create
- * @since 1.0, 2021-12-03 16:35:40
+ * @since 1.0, 2021-12-13 11:10:34
  */
 public class MybankEcnyEntwalletCreateRequest implements AlipayRequest<MybankEcnyEntwalletCreateResponse> {
 

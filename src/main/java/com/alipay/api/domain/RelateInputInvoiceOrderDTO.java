@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 关联发票请求
  *
  * @author auto create
- * @since 1.0, 2021-09-28 14:28:36
+ * @since 1.0, 2021-12-13 14:27:31
  */
 public class RelateInputInvoiceOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3673611426223673986L;
+	private static final long serialVersionUID = 6766242851674379324L;
 
 	/**
 	 * 发票附件名称
@@ -100,6 +100,13 @@ public class RelateInputInvoiceOrderDTO extends AlipayObject {
 	 */
 	@ApiField("invoice_date")
 	private String invoiceDate;
+
+	/**
+	 * 发票行信息
+	 */
+	@ApiListField("invoice_line_orders")
+	@ApiField("ap_invoice_line_order_request")
+	private List<ApInvoiceLineOrderRequest> invoiceLineOrders;
 
 	/**
 	 * 发票介质 01 电子,02 纸质
@@ -311,6 +318,13 @@ public class RelateInputInvoiceOrderDTO extends AlipayObject {
 	}
 	public void setInvoiceDate(String invoiceDate) {
 		this.invoiceDate = invoiceDate;
+	}
+
+	public List<ApInvoiceLineOrderRequest> getInvoiceLineOrders() {
+		return this.invoiceLineOrders;
+	}
+	public void setInvoiceLineOrders(List<ApInvoiceLineOrderRequest> invoiceLineOrders) {
+		this.invoiceLineOrders = invoiceLineOrders;
 	}
 
 	public String getInvoiceMaterial() {

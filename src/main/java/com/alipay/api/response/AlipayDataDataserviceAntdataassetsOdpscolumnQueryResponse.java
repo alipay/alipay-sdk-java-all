@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceAntdataassetsOdpscolumnQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5136916287638526785L;
+	private static final long serialVersionUID = 4586316238111634718L;
 
 	/** 
 	 * ODPS的列信息，包含ODPS字段名和字段类型

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 红包模板消耗信息
  *
  * @author auto create
- * @since 1.0, 2021-03-25 14:31:46
+ * @since 1.0, 2021-12-10 14:56:47
  */
 public class CouponTemplateConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4427423996648399499L;
+	private static final long serialVersionUID = 7176194899827181958L;
 
 	/**
 	 * 该活动上已领取红包金额，分为单位
@@ -40,7 +40,7 @@ public class CouponTemplateConsumeInfo extends AlipayObject {
 	private Long refundAmount;
 
 	/**
-	 * 该活动上已领取红包金额，分为单位
+	 * 该活动上已核销红包金额，分为单位
 888代表已领取8.88元
 
 请注意：该结果可能存在2个小时之内的时间延迟，特殊情况下可能延迟会更久
