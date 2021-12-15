@@ -10,20 +10,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改规则员工关系
  *
  * @author auto create
- * @since 1.0, 2021-10-12 09:44:47
+ * @since 1.0, 2021-12-14 17:55:44
  */
 public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8562915983367629635L;
+	private static final long serialVersionUID = 7423284792657921746L;
 
 	/**
-	 * 企业id-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 需要添加的员工Uid列表（一次最多50个）
+	 * 需要添加的员工UID列表
+特殊说明：一次最多50个
 	 */
 	@ApiListField("add_employee_list")
 	@ApiField("string")
@@ -36,14 +37,15 @@ public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends Alipa
 	private String agreementNo;
 
 	/**
-	 * 费控规则ID（可以线下获取，也可以通过接口添加创建）
+	 * 费控规则ID列表
 	 */
 	@ApiListField("group_id_list")
 	@ApiField("string")
 	private List<String> groupIdList;
 
 	/**
-	 * 需要移除的员工Uid列表（一次最多50个）
+	 * 需要移除的员工UID列表
+特殊说明：一次最多50个
 	 */
 	@ApiListField("remove_employee_list")
 	@ApiField("string")

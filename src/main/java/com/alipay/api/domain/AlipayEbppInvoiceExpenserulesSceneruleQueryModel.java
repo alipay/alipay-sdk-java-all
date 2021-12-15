@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 费控查询制度
  *
  * @author auto create
- * @since 1.0, 2021-12-08 16:26:19
+ * @since 1.0, 2021-12-14 17:57:00
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7364797218363646677L;
+	private static final long serialVersionUID = 6147747527842358311L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -38,7 +38,7 @@ public class AlipayEbppInvoiceExpenserulesSceneruleQueryModel extends AlipayObje
 	private Long pageSize;
 
 	/**
-	 * 制度id
+	 * 费控规则ID
 	 */
 	@ApiField("standard_id")
 	private String standardId;

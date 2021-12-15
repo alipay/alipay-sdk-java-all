@@ -10,20 +10,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改项目费控规则
  *
  * @author auto create
- * @since 1.0, 2021-12-08 14:58:33
+ * @since 1.0, 2021-12-14 17:51:10
  */
 public class AlipayEbppInvoiceExpenserulesProjectrulesModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1629763137193727674L;
+	private static final long serialVersionUID = 3569371469567144816L;
 
 	/**
-	 * 企业id-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 修改规则组中的规则明细-MODIFY_RULE
+	 * 修改操作
+枚举值：MODIFY_RULE（修改费控条件），仅支持MODIFY_RULE
 	 */
 	@ApiField("action")
 	private String action;
@@ -35,14 +36,14 @@ public class AlipayEbppInvoiceExpenserulesProjectrulesModifyModel extends Alipay
 	private String agreementNo;
 
 	/**
-	 * 规则组列表
+	 * 费控规则列表
 	 */
 	@ApiListField("expense_ctrl_rule_info_group_list")
 	@ApiField("expense_ctr_rule_group_info")
 	private List<ExpenseCtrRuleGroupInfo> expenseCtrlRuleInfoGroupList;
 
 	/**
-	 * 项目id
+	 * 项目ID
 	 */
 	@ApiField("project_id")
 	private String projectId;

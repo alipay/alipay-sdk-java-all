@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设置费控规则
  *
  * @author auto create
- * @since 1.0, 2021-12-08 14:58:20
+ * @since 1.0, 2021-12-14 17:55:03
  */
 public class AlipayEbppInvoiceExpenserulesProjectruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6871216623757619868L;
+	private static final long serialVersionUID = 1735993865184132765L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -42,21 +42,25 @@ public class AlipayEbppInvoiceExpenserulesProjectruleCreateModel extends AlipayO
 	private Date effectiveStartDate;
 
 	/**
-	 * 员工支付宝id列表（最大长度为50）
+	 * 员工支付宝ID列表
+特殊说明：单次传入的最大员工数为50，后续通过修改项目的员工列表接口进行员工调整
 	 */
 	@ApiListField("employee_list")
 	@ApiField("string")
 	private List<String> employeeList;
 
 	/**
-	 * 规则组列表
+	 * 费控规则列表
 	 */
 	@ApiListField("expense_ctrl_rule_info_group_list")
 	@ApiField("expense_ctr_rule_group_info")
 	private List<ExpenseCtrRuleGroupInfo> expenseCtrlRuleInfoGroupList;
 
 	/**
-	 * 项目名称（相同account_id下不可重复）
+	 * 项目名称
+约束：
+1）敏感词校验
+2）不能重复
 	 */
 	@ApiField("project_name")
 	private String projectName;

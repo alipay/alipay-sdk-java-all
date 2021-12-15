@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户领取付款码皮肤
  *
  * @author auto create
- * @since 1.0, 2021-10-29 14:21:35
+ * @since 1.0, 2021-12-14 15:14:50
  */
 public class AlipayCommerceSportsFacepayskinReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4851494327737698897L;
+	private static final long serialVersionUID = 5252674264443452823L;
+
+	/**
+	 * 支付宝客户端版本号
+	 */
+	@ApiField("client_version")
+	private String clientVersion;
 
 	/**
 	 * 北京时间的皮肤的过期日期,当日的23点59分59秒
@@ -33,6 +39,13 @@ public class AlipayCommerceSportsFacepayskinReceiveModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getClientVersion() {
+		return this.clientVersion;
+	}
+	public void setClientVersion(String clientVersion) {
+		this.clientVersion = clientVersion;
+	}
 
 	public Date getExpireDate() {
 		return this.expireDate;

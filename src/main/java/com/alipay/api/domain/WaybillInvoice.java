@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WaybillInvoice extends AlipayObject {
 
-	private static final long serialVersionUID = 6516934373256128224L;
+	private static final long serialVersionUID = 6784652738586118891L;
 
 	/**
 	 * 即时配送运单金额

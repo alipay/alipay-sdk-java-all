@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeTicketTicketcodeCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3186193784299337744L;
+	private static final long serialVersionUID = 3679235972181814133L;
 
 	/**
 	 * 订单号

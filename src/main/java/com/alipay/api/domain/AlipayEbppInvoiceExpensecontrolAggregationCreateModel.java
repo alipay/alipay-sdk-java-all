@@ -10,20 +10,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控聚合关系创建
  *
  * @author auto create
- * @since 1.0, 2021-12-08 21:07:02
+ * @since 1.0, 2021-12-14 17:53:43
  */
 public class AlipayEbppInvoiceExpensecontrolAggregationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7523412458868332442L;
+	private static final long serialVersionUID = 6291613986411231493L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
 	 * 聚合关系名称
+特殊说明：敏感词校验
 	 */
 	@ApiField("aggregation_name")
 	private String aggregationName;
@@ -35,7 +36,7 @@ public class AlipayEbppInvoiceExpensecontrolAggregationCreateModel extends Alipa
 	private String agreementNo;
 
 	/**
-	 * 规则ID列表
+	 * 费控规则ID列表
 	 */
 	@ApiListField("standard_id_list")
 	@ApiField("string")

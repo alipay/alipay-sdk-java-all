@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 项目规则信息
  *
  * @author auto create
- * @since 1.0, 2021-12-08 17:22:13
+ * @since 1.0, 2021-12-14 18:00:57
  */
 public class ProjectRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8425354295742468456L;
+	private static final long serialVersionUID = 2398718562125824186L;
 
 	/**
 	 * 有效期截止

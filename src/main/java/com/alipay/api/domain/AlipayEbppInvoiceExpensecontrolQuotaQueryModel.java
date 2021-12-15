@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询额度
  *
  * @author auto create
- * @since 1.0, 2021-12-08 15:00:58
+ * @since 1.0, 2021-12-14 17:52:12
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5733443598474584762L;
+	private static final long serialVersionUID = 7612439259213521976L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -29,14 +29,14 @@ public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject
 	private String agreementNo;
 
 	/**
-	 * 额度所属者ID
+	 * 余额所属者ID
 owner_type为员工时为员工支付宝ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 额度所属者类型
+	 * 余额所属者类型
 EMPLOYEE 员工
 	 */
 	@ApiField("owner_type")
@@ -55,23 +55,27 @@ EMPLOYEE 员工
 	private Long pageSize;
 
 	/**
-	 * 额度ID
-最大长度：10
+	 * 余额ID
+特殊说明：最多传入10个quota_id
 	 */
 	@ApiListField("quota_id_list")
 	@ApiField("string")
 	private List<String> quotaIdList;
 
 	/**
-	 * 额度类型ID
-MEAL: 工作餐
+	 * 余额维度ID
+当 target_type=EXPENSE_TYPE 时，值为
+MEAL（工作餐）
+当target_type=RULE_GROUP_AGGREGATION 时，值为费控规则聚合ID
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
-	 * 额度类型
-EXPENSE_TYPE: 场景盖帽额度
+	 * 余额维度
+枚举值：
+EXPENSE_TYPE（费用类型维度），
+RULE_GROUP_AGGREGATION（规则聚合维度）
 	 */
 	@ApiField("target_type")
 	private String targetType;

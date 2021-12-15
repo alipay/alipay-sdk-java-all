@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户付款码皮肤信息
  *
  * @author auto create
- * @since 1.0, 2021-10-29 14:17:37
+ * @since 1.0, 2021-12-14 15:22:30
  */
 public class UserFacePaySkinInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6266118479866254826L;
+	private static final long serialVersionUID = 6388577694134132159L;
 
 	/**
 	 * 支持该皮肤的客户端最低版本
@@ -32,6 +32,12 @@ public class UserFacePaySkinInfo extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 用户去查看,去设置的跳转地址
+	 */
+	@ApiField("setting_link")
+	private String settingLink;
 
 	/**
 	 * 皮肤ID
@@ -73,6 +79,13 @@ public class UserFacePaySkinInfo extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getSettingLink() {
+		return this.settingLink;
+	}
+	public void setSettingLink(String settingLink) {
+		this.settingLink = settingLink;
 	}
 
 	public String getSkinId() {

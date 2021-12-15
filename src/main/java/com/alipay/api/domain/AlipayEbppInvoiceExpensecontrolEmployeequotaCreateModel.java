@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建员工额度信息
  *
  * @author auto create
- * @since 1.0, 2021-10-13 16:45:07
+ * @since 1.0, 2021-12-14 17:50:16
  */
 public class AlipayEbppInvoiceExpensecontrolEmployeequotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3483415924664578286L;
+	private static final long serialVersionUID = 2768998945145354559L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -28,52 +28,52 @@ public class AlipayEbppInvoiceExpensecontrolEmployeequotaCreateModel extends Ali
 	private String agreementNo;
 
 	/**
-	 * 额度失效时间（默认有效期100年）
+	 * 余额失效时间（默认有效期100年）
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/**
-	 * 额度生效时间(默认当前时间)
+	 * 余额生效时间(默认当前时间)
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
 
 	/**
-	 * 外部幂等ID
+	 * 外部操作幂等ID（接入方接口调用幂等控制ID）
 	 */
 	@ApiField("outer_source_id")
 	private String outerSourceId;
 
 	/**
-	 * 额度所属者ID
+	 * 余额所属者ID
 owner_type为员工时为员工支付宝ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 额度所属者类型
+	 * 余额所属者类型
 EMPLOYEE: 员工
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
 
 	/**
-	 * 外部平台编码
+	 * 外部平台编码（通常为接入方大写英文缩写）
 	 */
 	@ApiField("platform")
 	private String platform;
 
 	/**
-	 * 额度模式，默认 DEFAULT_STANDARD
+	 * 余额同步模式，默认 DEFAULT_STANDARD
 	 */
 	@ApiField("quota_model")
 	private String quotaModel;
 
 	/**
-	 * 额度限制（单位分）
-限额：100000元
+	 * 余额，以（分）为单位
+特殊说明：余额不超过100000元
 	 */
 	@ApiField("quota_value")
 	private String quotaValue;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.facepayskin.receive request
  * 
  * @author auto create
- * @since 1.0, 2021-10-29 14:22:48
+ * @since 1.0, 2021-12-14 15:25:35
  */
 public class AlipayCommerceSportsFacepayskinReceiveRequest implements AlipayRequest<AlipayCommerceSportsFacepayskinReceiveResponse> {
 

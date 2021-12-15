@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建额度
  *
  * @author auto create
- * @since 1.0, 2021-12-08 15:00:48
+ * @since 1.0, 2021-12-14 17:50:36
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3831731175931911749L;
+	private static final long serialVersionUID = 7319387896127414357L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -28,52 +28,64 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	private String agreementNo;
 
 	/**
-	 * 额度失效时间（格式：yyyy-MM-dd HH:mm:ss）
+	 * 余额失效时间（格式：yyyy-MM-dd HH:mm:ss）
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/**
-	 * 额度生效时间（格式：yyyy-MM-dd HH:mm:ss）
+	 * 余额生效时间（格式：yyyy-MM-dd HH:mm:ss）
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
 
 	/**
-	 * 额度所属者ID
+	 * 外部操作幂等ID（接入方接口调用幂等控制ID）
+	 */
+	@ApiField("outer_source_id")
+	private String outerSourceId;
+
+	/**
+	 * 余额所属者ID
 owner_type为EMPLOYEE时为员工支付宝ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 额度所属者类型
+	 * 余额所属者类型
 EMPLOYEE: 员工
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
 
 	/**
-	 * 额度限制（分）
-限额：100000元
+	 * 外部平台编码（通常为接入方大写英文缩写）
+	 */
+	@ApiField("platform")
+	private String platform;
+
+	/**
+	 * 余额，以（分）为单位
+约束：余额不超过100000元
 	 */
 	@ApiField("quota_value")
 	private String quotaValue;
 
 	/**
-	 * 额度类型ID
-当 target_type=EXPENSE_TYPE 时
-MEAL: 工作餐；
-当 target_type=RULE_GROUP_AGGREGATION 时
-target_id: #规则聚合id#
+	 * 余额维度ID
+当 target_type=EXPENSE_TYPE 时，值为
+MEAL（工作餐）
+当target_type=RULE_GROUP_AGGREGATION 时，值为费控规则聚合ID
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
-	 * 额度生成维度
-EXPENSE_TYPE: 费用类型维度
-RULE_GROUP_AGGREGATION: 规则聚合维度
+	 * 余额维度
+枚举值：
+EXPENSE_TYPE（费用类型维度），
+RULE_GROUP_AGGREGATION（规则聚合维度
 	 */
 	@ApiField("target_type")
 	private String targetType;
@@ -106,6 +118,13 @@ RULE_GROUP_AGGREGATION: 规则聚合维度
 		this.effectiveStartDate = effectiveStartDate;
 	}
 
+	public String getOuterSourceId() {
+		return this.outerSourceId;
+	}
+	public void setOuterSourceId(String outerSourceId) {
+		this.outerSourceId = outerSourceId;
+	}
+
 	public String getOwnerId() {
 		return this.ownerId;
 	}
@@ -118,6 +137,13 @@ RULE_GROUP_AGGREGATION: 规则聚合维度
 	}
 	public void setOwnerType(String ownerType) {
 		this.ownerType = ownerType;
+	}
+
+	public String getPlatform() {
+		return this.platform;
+	}
+	public void setPlatform(String platform) {
+		this.platform = platform;
 	}
 
 	public String getQuotaValue() {

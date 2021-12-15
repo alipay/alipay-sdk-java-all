@@ -11,20 +11,22 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控制度修改
  *
  * @author auto create
- * @since 1.0, 2021-12-08 14:58:58
+ * @since 1.0, 2021-12-14 17:56:29
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6542744624645971656L;
+	private static final long serialVersionUID = 2374735492376629747L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 新增规则ADD_RULE/删除规则DELETE_RULE/修改规则MODIFY_RULE/修改制度基本信息MODIFY_STANDARD
+	 * 修改操作
+枚举值：
+ADD_RULE（新增费控条件），DELETE_RULE（删除费控条件），MODIFY_RULE（修改费控条件），MODIFY_STANDARD（修改费控规则基本信息）
 	 */
 	@ApiField("action")
 	private String action;
@@ -36,38 +38,47 @@ public class AlipayEbppInvoiceExpenserulesSceneruleModifyModel extends AlipayObj
 	private String agreementNo;
 
 	/**
-	 * 有效期截止（修改制度基本信息的ACTION必填）
+	 * 有效期截止
+特殊说明：修改费控规则基本信息时必传
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/**
-	 * 有效期起始（修改制度基本信息的ACTION必填）
+	 * 有效期起始
+特殊说明：修改费控规则基本信息时必传
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
 
 	/**
-	 * 规则列表，新增规则/修改规则/删除规则操作是必填
+	 * 费控规则条件列表 特殊说明：新增费控条件/修改费控条件/删除费控条件操作时必填
 	 */
 	@ApiListField("expense_ctrl_rule_info_list")
 	@ApiField("expense_ctr_rule_info")
 	private List<ExpenseCtrRuleInfo> expenseCtrlRuleInfoList;
 
 	/**
-	 * 费控规则说明(修改制度基本信息的ACTION，否，不传则删除)
+	 * 费控规则说明
+特殊说明：
+1）敏感词校验
+2）修改费控规则基本信息时必传
 	 */
 	@ApiField("standard_desc")
 	private String standardDesc;
 
 	/**
-	 * 制度id
+	 * 费控规则ID
 	 */
 	@ApiField("standard_id")
 	private String standardId;
 
 	/**
-	 * 制度名称，修改制度基本信息的ACTION必填)
+	 * 费控规则名称
+特殊说明：
+1）敏感词校验
+2）修改费控规则基本信息时必传
+3）不能重复，若需要重复联系支持人员定向放开
 	 */
 	@ApiField("standard_name")
 	private String standardName;

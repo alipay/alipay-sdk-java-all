@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 余额信息
  *
  * @author auto create
- * @since 1.0, 2021-12-09 14:05:57
+ * @since 1.0, 2021-12-14 18:00:44
  */
 public class ExpenseQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5695285528745593623L;
+	private static final long serialVersionUID = 7451246889292857884L;
 
 	/**
 	 * 余额失效时间

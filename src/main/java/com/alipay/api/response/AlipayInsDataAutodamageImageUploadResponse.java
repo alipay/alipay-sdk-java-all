@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsDataAutodamageImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5598546763612826526L;
+	private static final long serialVersionUID = 1391592385472941797L;
 
 	/** 
 	 * 图像文件在oss存储上的路径

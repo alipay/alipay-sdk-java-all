@@ -8,14 +8,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 费控查询详情
+ * 费控规则信息
  *
  * @author auto create
- * @since 1.0, 2021-12-08 16:36:05
+ * @since 1.0, 2021-12-14 18:00:23
  */
 public class StandardRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6229131165722792385L;
+	private static final long serialVersionUID = 3332838625685678861L;
 
 	/**
 	 * 有效期截止
@@ -30,7 +30,7 @@ public class StandardRuleInfo extends AlipayObject {
 	private Date effectiveStartDate;
 
 	/**
-	 * 规则列表
+	 * 费控条件列表
 	 */
 	@ApiListField("expense_ctrl_rule_info_list")
 	@ApiField("expense_ctr_rule_info")
@@ -43,13 +43,13 @@ public class StandardRuleInfo extends AlipayObject {
 	private String standardDesc;
 
 	/**
-	 * 制度id
+	 * 费控规则ID
 	 */
 	@ApiField("standard_id")
 	private String standardId;
 
 	/**
-	 * 制度名称
+	 * 费控规则名称
 	 */
 	@ApiField("standard_name")
 	private String standardName;

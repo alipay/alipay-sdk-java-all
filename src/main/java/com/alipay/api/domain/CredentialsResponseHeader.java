@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CredentialsResponseHeader extends AlipayObject {
 
-	private static final long serialVersionUID = 7318477474871746116L;
+	private static final long serialVersionUID = 3823661425695629453L;
 
 	/**
 	 * 200=成功，400=请求错误，403=bundle查询不到。 Status code used to indicate an error, or "200" for success.

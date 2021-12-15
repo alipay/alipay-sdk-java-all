@@ -10,20 +10,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改项目员工关系
  *
  * @author auto create
- * @since 1.0, 2021-10-12 09:44:14
+ * @since 1.0, 2021-12-14 17:55:25
  */
 public class AlipayEbppInvoiceExpenserulesProjectemployeeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8264842774839697353L;
+	private static final long serialVersionUID = 2265535938483562818L;
 
 	/**
-	 * 企业id-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 需要添加的员工支付宝id列表（一次最多50个，同时删除同一个ID则不生效）
+	 * 需要添加的员工UID列表
+约束：一次最多50个
 	 */
 	@ApiListField("add_employee_list")
 	@ApiField("string")
@@ -36,13 +37,14 @@ public class AlipayEbppInvoiceExpenserulesProjectemployeeModifyModel extends Ali
 	private String agreementNo;
 
 	/**
-	 * 项目id
+	 * 项目ID
 	 */
 	@ApiField("project_id")
 	private String projectId;
 
 	/**
-	 * 需要移除的员工支付宝id列表（一次最多50个，同时新增同一个ID则不生效）
+	 * 需要移除的员工UID列表
+约束：一次最多50个
 	 */
 	@ApiListField("remove_employee_list")
 	@ApiField("string")

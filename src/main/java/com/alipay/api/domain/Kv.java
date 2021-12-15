@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * kv 结构
  *
  * @author auto create
- * @since 1.0, 2021-11-30 11:22:17
+ * @since 1.0, 2021-12-14 23:07:34
  */
 public class Kv extends AlipayObject {
 
-	private static final long serialVersionUID = 7421928152842484888L;
+	private static final long serialVersionUID = 3747852986948187577L;
 
 	/**
 	 * 参数key

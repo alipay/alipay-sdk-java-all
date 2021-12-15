@@ -4,7 +4,7 @@
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <version>4.20.19.ALL</version>
+    <version>4.21.0.ALL</version>
     <name>alipay-sdk-java</name>
 
     <url>https://open.alipay.com</url>
@@ -64,7 +64,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.50</version>
+            <version>1.2.78</version>
         </dependency>
         <dependency>
             <groupId>org.bouncycastle</groupId>

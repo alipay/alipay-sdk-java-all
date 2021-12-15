@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RefundUnfreezeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5232243698343243326L;
+	private static final long serialVersionUID = 2356876754173993975L;
 
 	/**
 	 * 冻结单号
