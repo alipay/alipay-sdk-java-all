@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLotteryPresentlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1488521339585799663L;
+	private static final long serialVersionUID = 2857839764253446856L;
 
 	/**
 	 * 结束日期，格式为yyyyMMdd

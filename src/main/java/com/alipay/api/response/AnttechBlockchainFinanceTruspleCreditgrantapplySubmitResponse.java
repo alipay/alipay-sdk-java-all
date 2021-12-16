@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechBlockchainFinanceTruspleCreditgrantapplySubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6414372565954693111L;
+	private static final long serialVersionUID = 4827778145932157149L;
 
 	/** 
 	 * 机构授信编号

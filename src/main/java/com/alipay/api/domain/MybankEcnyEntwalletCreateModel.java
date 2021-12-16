@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数字人民币对公钱包开立
  *
  * @author auto create
- * @since 1.0, 2021-12-10 19:20:02
+ * @since 1.0, 2021-12-16 15:27:32
  */
 public class MybankEcnyEntwalletCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6629986617483797119L;
+	private static final long serialVersionUID = 1842981123713336324L;
 
 	/**
 	 * 实控人信息
@@ -23,13 +23,20 @@ public class MybankEcnyEntwalletCreateModel extends AlipayObject {
 	private UserBaseInfo actCtlInfo;
 
 	/**
-	 * 经办人/单位用户信息
+	 * 经办人/单位用户信息(经办人手机号和邮箱必填，便于接收开户意核实和开户结果的通知)
 	 */
 	@ApiField("applicant_info")
 	private UserBaseInfo applicantInfo;
 
 	/**
+	 * 受益人经常居住地或者工作单位地址
+	 */
+	@ApiField("beneficiary_address")
+	private EcnyAddressInfo beneficiaryAddress;
+
+	/**
 	 * 受益人信息
+(名称，证件类型，证件号码，证件有效期截止日期必填)
 	 */
 	@ApiField("beneficiary_info")
 	private UserBaseInfo beneficiaryInfo;
@@ -78,16 +85,6 @@ public class MybankEcnyEntwalletCreateModel extends AlipayObject {
 
 	/**
 	 * 单位证件类型：
-IT01	居民身份证
-IT02	军官证
-IT03	护照
-IT04	户口簿
-IT05	士兵证
-IT06	港澳往来内地通行证
-IT07	台湾同胞来往内地通行证
-IT08	临时身份证
-IT09	外国人居留证
-IT10	警官证
 IT11	营业执照
 IT12	组织机构代码
 IT13	税务登记证
@@ -166,6 +163,7 @@ IT99	其他
 
 	/**
 	 * 法定代表人/单位负责人用户信息
+(姓名，证件类型，证件号码，证件影印件，证件有效期截止日期必填)
 	 */
 	@ApiField("legal_rep_info")
 	private UserBaseInfo legalRepInfo;
@@ -216,6 +214,13 @@ IT99	其他
 	}
 	public void setApplicantInfo(UserBaseInfo applicantInfo) {
 		this.applicantInfo = applicantInfo;
+	}
+
+	public EcnyAddressInfo getBeneficiaryAddress() {
+		return this.beneficiaryAddress;
+	}
+	public void setBeneficiaryAddress(EcnyAddressInfo beneficiaryAddress) {
+		this.beneficiaryAddress = beneficiaryAddress;
 	}
 
 	public UserBaseInfo getBeneficiaryInfo() {

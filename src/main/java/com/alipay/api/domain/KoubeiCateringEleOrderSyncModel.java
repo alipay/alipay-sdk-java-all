@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringEleOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2355156425466394738L;
+	private static final long serialVersionUID = 1595359416539115279L;
 
 	/**
 	 * 饿了么数据回流action类型.包含ORDER_STATUS，ORDER_DELIVERY,ORDER_REFUND

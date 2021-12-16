@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketShopCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7848797234112659779L;
+	private static final long serialVersionUID = 8686852987943942846L;
 
 	/** 
 	 * 门店类目配置信息，包括能够开店的叶子节点类目信息，以及类目约束配置信息。

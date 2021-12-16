@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.message.send response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 17:26:21
+ * @since 1.0, 2021-12-15 15:55:39
  */
 public class AntfortuneStockMessageSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2475246688744113219L;
+	private static final long serialVersionUID = 1495347748412867564L;
 
 	/** 
 	 * 用户未签约

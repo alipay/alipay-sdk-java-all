@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 股票专用机构消息通道
  *
  * @author auto create
- * @since 1.0, 2021-12-06 17:26:20
+ * @since 1.0, 2021-12-15 15:54:35
  */
 public class AntfortuneStockMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3665683443262787317L;
+	private static final long serialVersionUID = 7566199439267625396L;
 
 	/**
 	 * 签约协议号（uid在某个机构处的唯一标识）

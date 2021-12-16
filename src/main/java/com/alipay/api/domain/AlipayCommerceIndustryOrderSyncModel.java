@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业服务标准化订单数据回流
  *
  * @author auto create
- * @since 1.0, 2021-08-05 16:52:27
+ * @since 1.0, 2021-12-15 21:11:30
  */
 public class AlipayCommerceIndustryOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3319179173351395325L;
+	private static final long serialVersionUID = 7788976486353919812L;
 
 	/**
 	 * 支付宝userid（用户在支付宝平台的2088开头16位id）
@@ -73,6 +73,7 @@ public class AlipayCommerceIndustryOrderSyncModel extends AlipayObject {
 
 	/**
 	 * 订单类型，枚举支持 ALIPAY_APPLETS：支付宝小程序产生的订单 ALIPAY_POS：收银POS产生的支付宝订单
+ ALIPAY_INDUSTRY：支付宝行业小程序
 	 */
 	@ApiField("order_source")
 	private String orderSource;

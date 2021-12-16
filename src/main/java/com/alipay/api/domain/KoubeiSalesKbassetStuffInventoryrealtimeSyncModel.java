@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiSalesKbassetStuffInventoryrealtimeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6531733684126591631L;
+	private static final long serialVersionUID = 1216579675143843817L;
 
 	/**
 	 * 扩展字段

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiCraftsmanDataWorkBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6212728234764313154L;
+	private static final long serialVersionUID = 2642587567918649789L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为

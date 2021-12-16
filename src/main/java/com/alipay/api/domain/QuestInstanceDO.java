@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class QuestInstanceDO extends AlipayObject {
 
-	private static final long serialVersionUID = 7715116322999882582L;
+	private static final long serialVersionUID = 3572553619471872538L;
 
 	/**
 	 * 跳转地址:若用户已添加目标，则返回打卡页，否则返回目标详情页地址

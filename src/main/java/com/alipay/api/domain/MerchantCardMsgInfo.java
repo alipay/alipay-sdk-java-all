@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantCardMsgInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7353969151895695184L;
+	private static final long serialVersionUID = 4473741469635611239L;
 
 	/**
 	 * 本次消息通知的变动积分，积分必须为数字型（可为浮点型，带2位小数点），格式非法则不发送消息。例如：

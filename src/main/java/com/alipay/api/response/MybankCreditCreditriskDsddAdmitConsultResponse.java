@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditCreditriskDsddAdmitConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6883159759711868459L;
+	private static final long serialVersionUID = 3119941948792743357L;
 
 	/** 
 	 * 在status为ADMIT时，此字段必填。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TiansuoIsvBindVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8545575926768618247L;
+	private static final long serialVersionUID = 3798829278559396731L;
 
 	/**
 	 * 间连商户入驻时填写的营业执照号
