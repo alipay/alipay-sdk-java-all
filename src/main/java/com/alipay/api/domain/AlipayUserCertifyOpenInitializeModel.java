@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝开放认证初始化服务
  *
  * @author auto create
- * @since 1.0, 2021-07-19 19:48:16
+ * @since 1.0, 2021-12-16 18:44:06
  */
 public class AlipayUserCertifyOpenInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4819381316883393248L;
+	private static final long serialVersionUID = 6826312954626615512L;
 
 	/**
 	 * 认证场景码。入参支持的认证场景码和商户签约的认证场景相关，取值如下:

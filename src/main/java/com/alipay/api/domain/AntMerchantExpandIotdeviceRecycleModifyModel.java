@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandIotdeviceRecycleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1274184839647573229L;
+	private static final long serialVersionUID = 3326991339281448478L;
 
 	/**
 	 * 设备SN

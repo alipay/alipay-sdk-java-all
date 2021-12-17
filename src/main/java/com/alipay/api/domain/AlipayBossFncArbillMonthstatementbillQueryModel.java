@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * AR对账单查询
  *
  * @author auto create
- * @since 1.0, 2019-10-25 14:08:52
+ * @since 1.0, 2021-12-16 18:12:36
  */
 public class AlipayBossFncArbillMonthstatementbillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3536314418217859916L;
+	private static final long serialVersionUID = 6769636899351933314L;
 
 	/**
 	 * 分析维度1

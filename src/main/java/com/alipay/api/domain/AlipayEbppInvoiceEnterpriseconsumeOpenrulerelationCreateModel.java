@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppInvoiceEnterpriseconsumeOpenrulerelationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8584251497497181541L;
+	private static final long serialVersionUID = 3394744164853671224L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -29,13 +29,13 @@ public class AlipayEbppInvoiceEnterpriseconsumeOpenrulerelationCreateModel exten
 	private String agreementNo;
 
 	/**
-	 * 开票规则id
+	 * 开票规则ID
 	 */
 	@ApiField("invoice_rule_id")
 	private String invoiceRuleId;
 
 	/**
-	 * 支付制度id列表
+	 * 费控规则ID列表
 	 */
 	@ApiListField("standard_id_list")
 	@ApiField("string")

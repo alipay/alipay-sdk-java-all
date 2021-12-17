@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayZmscoreZrankGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7782615795789464196L;
+	private static final long serialVersionUID = 7635761167321643348L;
 
 	/** 
 	 * 芝麻分分段

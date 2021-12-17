@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MybankCreditGuaranteeWriteoffPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1612842389575224642L;
+	private static final long serialVersionUID = 4815268477436669354L;
 
 	/**
 	 * 实际平账金额，单位分

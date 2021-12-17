@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceGasInfoGroupcouponQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6664379615493249158L;
+	private static final long serialVersionUID = 6861654346255474867L;
 
 	/** 
 	 * 当前页码,不填写默认查第1页

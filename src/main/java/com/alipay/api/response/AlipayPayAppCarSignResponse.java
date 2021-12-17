@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayAppCarSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6772399891386759642L;
+	private static final long serialVersionUID = 4225487992273141232L;
 
 	/** 
 	 * 上下文token

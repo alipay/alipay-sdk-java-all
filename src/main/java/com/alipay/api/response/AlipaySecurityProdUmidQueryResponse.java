@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdUmidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4475346574624642592L;
+	private static final long serialVersionUID = 1446834992171735343L;
 
 	/** 
 	 * umid:客户端对应的UMID值，从UMID系统获取。

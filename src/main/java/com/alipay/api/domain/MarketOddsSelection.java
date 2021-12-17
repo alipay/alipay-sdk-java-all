@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MarketOddsSelection extends AlipayObject {
 
-	private static final long serialVersionUID = 3687682326949325215L;
+	private static final long serialVersionUID = 5541798553429169462L;
 
 	/**
 	 * 不同玩法含义不一样

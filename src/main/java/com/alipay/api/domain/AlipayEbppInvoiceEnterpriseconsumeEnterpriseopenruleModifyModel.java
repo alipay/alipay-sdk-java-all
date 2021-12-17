@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7613283491594815441L;
+	private static final long serialVersionUID = 5827352863159531568L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -26,7 +26,7 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel ext
 	private String agreementNo;
 
 	/**
-	 * 开票规则id
+	 * 开票规则ID
 	 */
 	@ApiField("invoice_rule_id")
 	private String invoiceRuleId;
@@ -44,8 +44,8 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel ext
 	private String invoiceTitleId;
 
 	/**
-	 * 销方类型：TP开票、商户开票、商户优先
-枚举定义：MERCHANT（商户）、TP（TP）、MERCHANT_TP（商户优先，本期不支持）
+	 * 销方类型：TP开票、商户开票
+枚举定义：MERCHANT（商户）、TP（TP）
 	 */
 	@ApiField("seller_type")
 	private String sellerType;

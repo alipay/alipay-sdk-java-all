@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2123233482566769512L;
+	private static final long serialVersionUID = 5516234645535188218L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -52,8 +52,8 @@ SINGLE:单笔开
 	private String openMode;
 
 	/**
-	 * 销方类型：TP开票、商户开票、商户优先
-枚举定义：MERCHANT（商户）、TP（TP）、MERCHANT_TP（商户优先，本期不支持）、不填默认商户
+	 * 销方类型：TP开票、商户开票，
+枚举定义：MERCHANT（商户）、TP（TP），不填默认商户
 	 */
 	@ApiField("seller_type")
 	private String sellerType;

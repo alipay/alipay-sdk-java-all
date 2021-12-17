@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1852717561195124163L;
+	private static final long serialVersionUID = 4154379172364921959L;
 
 	/**
-	 * 企业签约企业合花ID-共同账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -26,13 +26,13 @@ public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryModel exten
 	private String agreementNo;
 
 	/**
-	 * 查询的第几页
+	 * 页码
 	 */
 	@ApiField("page_num")
 	private Long pageNum;
 
 	/**
-	 * 页大小
+	 * 每页行数
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
