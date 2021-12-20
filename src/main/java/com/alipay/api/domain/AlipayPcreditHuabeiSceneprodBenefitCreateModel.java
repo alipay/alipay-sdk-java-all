@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建花呗金权益
  *
  * @author auto create
- * @since 1.0, 2020-10-13 14:16:24
+ * @since 1.0, 2021-12-20 20:46:05
  */
 public class AlipayPcreditHuabeiSceneprodBenefitCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8668236843785795836L;
+	private static final long serialVersionUID = 3219827637245115862L;
 
 	/**
 	 * 权益渠道，用于控制投放场景

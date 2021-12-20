@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-15 16:07:46
+ * @since 1.0, 2021-12-20 11:17:51
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4799944686419534647L;
+	private static final long serialVersionUID = 3192413745993477628L;
 
 	/** 
 	 * 代理函有效访问地址，有效时间2分钟，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
@@ -46,6 +46,12 @@ FAIL，代表用户未授权或授权失效
 	 */
 	@ApiField("certify_mode")
 	private String certifyMode;
+
+	/** 
+	 * 认证人有效证件后四位，当职业身份认证时返回
+	 */
+	@ApiField("certify_person_card_no_postfix")
+	private String certifyPersonCardNoPostfix;
 
 	/** 
 	 * 认证状态，取值如下：
@@ -126,6 +132,13 @@ FAIL，代表失败
 	}
 	public String getCertifyMode( ) {
 		return this.certifyMode;
+	}
+
+	public void setCertifyPersonCardNoPostfix(String certifyPersonCardNoPostfix) {
+		this.certifyPersonCardNoPostfix = certifyPersonCardNoPostfix;
+	}
+	public String getCertifyPersonCardNoPostfix( ) {
+		return this.certifyPersonCardNoPostfix;
 	}
 
 	public void setCertifyStatus(String certifyStatus) {

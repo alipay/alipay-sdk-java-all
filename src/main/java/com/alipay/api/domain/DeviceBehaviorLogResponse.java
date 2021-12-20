@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeviceBehaviorLogResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3254398776957549188L;
+	private static final long serialVersionUID = 3884471541484726418L;
 
 	/**
 	 * 行为日志类型，SCAN_CDOE:扫码/HEARTBEAT:心跳

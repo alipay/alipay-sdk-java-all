@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmAuthParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7566549796138862117L;
+	private static final long serialVersionUID = 4369819393543335387L;
 
 	/**
 	 * 商户在芝麻端申请的appId

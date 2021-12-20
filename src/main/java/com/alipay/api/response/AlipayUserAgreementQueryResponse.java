@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-16 15:27:46
+ * @since 1.0, 2021-12-20 16:50:43
  */
 public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3164261336514367438L;
+	private static final long serialVersionUID = 6351243972754316334L;
 
 	/** 
 	 * 用户签约成功后的协议号
@@ -90,6 +90,12 @@ CUSTOMER:支付宝用户
 	 */
 	@ApiField("sign_time")
 	private String signTime;
+
+	/** 
+	 * 单笔代扣额度
+	 */
+	@ApiField("single_quota")
+	private String singleQuota;
 
 	/** 
 	 * 协议当前状态
@@ -204,6 +210,13 @@ CUSTOMER:支付宝用户
 	}
 	public String getSignTime( ) {
 		return this.signTime;
+	}
+
+	public void setSingleQuota(String singleQuota) {
+		this.singleQuota = singleQuota;
+	}
+	public String getSingleQuota( ) {
+		return this.singleQuota;
 	}
 
 	public void setStatus(String status) {

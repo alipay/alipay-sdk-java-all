@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家营销投放领域--代理的商户信息
  *
  * @author auto create
- * @since 1.0, 2021-08-19 13:55:26
+ * @since 1.0, 2021-12-20 16:29:00
  */
 public class DeliveryAgencyMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4842211154345637612L;
+	private static final long serialVersionUID = 7423894953121112773L;
 
 	/**
 	 * 合作业务类型 枚举值: 

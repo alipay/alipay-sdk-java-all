@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayAccountExratePricingNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1215182868227576699L;
+	private static final long serialVersionUID = 6599584653246614219L;
 
 	/**
 	 * 标识该汇率提供给哪个客户使用

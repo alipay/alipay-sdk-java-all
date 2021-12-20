@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingCampaignQrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3317638728128117353L;
+	private static final long serialVersionUID = 5686486728997814589L;
 
 	/** 
 	 * 二维码地址，可以根据这个地址生成二维码

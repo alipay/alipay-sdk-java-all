@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataAiserviceBikepriceGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3598833244248233655L;
+	private static final long serialVersionUID = 6343347383945162792L;
 
 	/**
 	 * 渠道来源，跳转到渠道(流量位)的上一级页面(由调用方定义渠道枚举，给出对应英文代码或中文解释)

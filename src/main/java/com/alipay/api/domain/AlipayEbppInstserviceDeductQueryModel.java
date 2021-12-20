@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣流程查询
  *
  * @author auto create
- * @since 1.0, 2020-07-02 15:54:20
+ * @since 1.0, 2021-12-17 14:22:29
  */
 public class AlipayEbppInstserviceDeductQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2795443518627539257L;
+	private static final long serialVersionUID = 8474428164394822863L;
 
 	/**
 	 * 户号（缴费场景是户号，话费场景是手机号）

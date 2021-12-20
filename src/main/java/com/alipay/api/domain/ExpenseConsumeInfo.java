@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2021-11-25 15:57:32
+ * @since 1.0, 2021-12-17 16:30:16
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6125755725195268359L;
+	private static final long serialVersionUID = 7745236186232652289L;
 
 	/**
-	 * 公司账号ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 实际出资账号（实际出资人实名认证名称)
+	 * 实际出资企业支付宝账号
 	 */
 	@ApiField("actual_account_number")
 	private String actualAccountNumber;
 
 	/**
-	 * 汇总批次id(废弃)
+	 * 汇总批次ID(废弃)
 	 */
 	@ApiField("batch_id")
 	private String batchId;
@@ -50,7 +50,7 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String categoryName;
 
 	/**
-	 * 账单金额
+	 * 账单金额（单位：元）
 	 */
 	@ApiField("consume_amount")
 	private String consumeAmount;
@@ -86,7 +86,7 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String mshopId;
 
 	/**
-	 * 开票模式
+	 * 开票模式（笔笔开：SINGLE，汇总开：SUMMARY）
 	 */
 	@ApiField("open_model")
 	private String openModel;
@@ -104,7 +104,7 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 企业代付金额
+	 * 企业支付金额（单位：元）
 	 */
 	@ApiField("p_pay_amount")
 	private String pPayAmount;
@@ -116,7 +116,7 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String payeeName;
 
 	/**
-	 * 费控制度中的项目编号
+	 * 费控规则中的项目ID
 	 */
 	@ApiField("project_id")
 	private String projectId;
@@ -128,7 +128,7 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String projiectId;
 
 	/**
-	 * 制度id
+	 * 费控规则ID
 	 */
 	@ApiField("standard_id")
 	private String standardId;
@@ -156,7 +156,7 @@ ACCOUNTING:记账
 	private String tpSign;
 
 	/**
-	 * 凭证id
+	 * 凭证ID
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;

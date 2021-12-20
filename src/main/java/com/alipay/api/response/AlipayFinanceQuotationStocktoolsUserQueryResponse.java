@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinanceQuotationStocktoolsUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2776956236444862486L;
+	private static final long serialVersionUID = 2451584628755898963L;
 
 	/** 
 	 * 是否存在有效的订阅。如果存在有效的订阅，说明用户是已经付费过的用户，可查看完整的服务内容。

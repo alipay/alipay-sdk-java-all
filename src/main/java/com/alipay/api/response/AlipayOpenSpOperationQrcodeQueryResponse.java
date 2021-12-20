@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.RecommendAccountDTO;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.operation.qrcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-22 10:10:33
+ * @since 1.0, 2021-12-17 23:21:01
  */
 public class AlipayOpenSpOperationQrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2346512852294264134L;
+	private static final long serialVersionUID = 3498649673648551248L;
 
 	/** 
 	 * 支付宝操作批次号
@@ -35,6 +37,13 @@ public class AlipayOpenSpOperationQrcodeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("qr_code_url")
 	private String qrCodeUrl;
+
+	/** 
+	 * 只针对服务商代间连商家发起代运营绑定、授权时，如果传递的alipay_account不符合绑定或授权要求，这个字段会返回推荐的商家支付宝账号列表，包括：支付宝账号和名称，为保护商家信息，账号和名称都按照规范脱敏。
+	 */
+	@ApiListField("recommend_account_list")
+	@ApiField("recommend_account_d_t_o")
+	private List<RecommendAccountDTO> recommendAccountList;
 
 	/** 
 	 * 只针对服务商代间连商家发起代运营绑定、授权时，这个字段会返回推荐的商家支付宝账号列表，包括：支付宝账号和名称，为保护商家信息，账号和名称都按照规范脱敏。
@@ -61,6 +70,13 @@ public class AlipayOpenSpOperationQrcodeQueryResponse extends AlipayResponse {
 	}
 	public String getQrCodeUrl( ) {
 		return this.qrCodeUrl;
+	}
+
+	public void setRecommendAccountList(List<RecommendAccountDTO> recommendAccountList) {
+		this.recommendAccountList = recommendAccountList;
+	}
+	public List<RecommendAccountDTO> getRecommendAccountList( ) {
+		return this.recommendAccountList;
 	}
 
 	public void setRecommendAccounts(RecommendAccountDTO recommendAccounts) {

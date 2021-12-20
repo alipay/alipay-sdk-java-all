@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicLifeAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4187415227419346967L;
+	private static final long serialVersionUID = 1746827321317971242L;
 
 	/** 
 	 * 过期时间，在过期时间之前需要拿refresh_token重新换取新的token使用

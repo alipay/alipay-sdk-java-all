@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业删除员工
  *
  * @author auto create
- * @since 1.0, 2021-06-09 11:09:52
+ * @since 1.0, 2021-12-20 11:27:47
  */
 public class AlipayFundJointaccountMemberUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6692623974457599876L;
+	private static final long serialVersionUID = 1881272673976483764L;
 
 	/**
 	 * 账本id
@@ -46,7 +46,7 @@ identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
 	private String identityType;
 
 	/**
-	 * 姓名
+	 * 姓名，账号类型为ALIPAY_LOGON_ID时必填
 	 */
 	@ApiField("name")
 	private String name;

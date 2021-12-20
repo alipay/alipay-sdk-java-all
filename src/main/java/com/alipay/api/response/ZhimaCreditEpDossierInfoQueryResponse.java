@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 11:06:11
+ * @since 1.0, 2021-12-17 16:17:52
  */
 public class ZhimaCreditEpDossierInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4198159985563987211L;
+	private static final long serialVersionUID = 2467131986212287494L;
 
 	/** 
 	 * 经营期限自
@@ -83,6 +83,12 @@ public class ZhimaCreditEpDossierInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_type")
 	private String epType;
+
+	/** 
+	 * 企业类别范围: ENTERPRISE(企业)， INDIVIDUAL（个体工商户), ORGANIZATION(组织机构)
+	 */
+	@ApiField("ep_type_scope")
+	private String epTypeScope;
 
 	/** 
 	 * 成立时间
@@ -201,6 +207,13 @@ public class ZhimaCreditEpDossierInfoQueryResponse extends AlipayResponse {
 	}
 	public String getEpType( ) {
 		return this.epType;
+	}
+
+	public void setEpTypeScope(String epTypeScope) {
+		this.epTypeScope = epTypeScope;
+	}
+	public String getEpTypeScope( ) {
+		return this.epTypeScope;
 	}
 
 	public void setEstablishedTime(String establishedTime) {

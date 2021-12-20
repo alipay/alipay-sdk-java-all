@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构服务订单回流
  *
  * @author auto create
- * @since 1.0, 2020-06-09 16:19:35
+ * @since 1.0, 2021-12-17 11:47:31
  */
 public class AlipayEbppInstserviceOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6216491444747741952L;
+	private static final long serialVersionUID = 6789766499378574872L;
 
 	/**
 	 * 手机号,户号，卡号等

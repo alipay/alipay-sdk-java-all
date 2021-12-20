@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtensionArea extends AlipayObject {
 
-	private static final long serialVersionUID = 6635116426412418796L;
+	private static final long serialVersionUID = 4386199672979435367L;
 
 	/**
 	 * 跳转链接，当type为"image"时必传，必须是https或alipays开头的url链接。已废弃

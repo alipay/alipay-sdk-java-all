@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * AR对账单查询
  *
  * @author auto create
- * @since 1.0, 2021-12-16 18:12:36
+ * @since 1.0, 2021-12-20 17:30:11
  */
 public class AlipayBossFncArbillMonthstatementbillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6769636899351933314L;
+	private static final long serialVersionUID = 7131982982338297144L;
 
 	/**
 	 * 分析维度1
@@ -118,6 +118,12 @@ public class AlipayBossFncArbillMonthstatementbillQueryModel extends AlipayObjec
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
+
+	/**
+	 * 是否不包含结算2.0的可开票单据（也就是07）
+	 */
+	@ApiField("no_include_unify_settle")
+	private String noIncludeUnifySettle;
 
 	/**
 	 * 起始页，分页时必须提供
@@ -284,6 +290,13 @@ public class AlipayBossFncArbillMonthstatementbillQueryModel extends AlipayObjec
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getNoIncludeUnifySettle() {
+		return this.noIncludeUnifySettle;
+	}
+	public void setNoIncludeUnifySettle(String noIncludeUnifySettle) {
+		this.noIncludeUnifySettle = noIncludeUnifySettle;
 	}
 
 	public Long getPageNo() {

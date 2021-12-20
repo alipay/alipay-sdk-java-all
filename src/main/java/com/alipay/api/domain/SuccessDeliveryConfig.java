@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建成功的投放信息配置
  *
  * @author auto create
- * @since 1.0, 2021-08-19 13:55:26
+ * @since 1.0, 2021-12-20 16:29:00
  */
 public class SuccessDeliveryConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4373352858688751168L;
+	private static final long serialVersionUID = 2739677586166799969L;
 
 	/**
 	 * 投放配置。

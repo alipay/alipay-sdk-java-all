@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.saas.payment.capture response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-16 16:50:43
+ * @since 1.0, 2021-12-17 17:42:55
  */
 public class AnttechBlockchainDefinSaasPaymentCaptureResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2479813397344464165L;
+	private static final long serialVersionUID = 5329886119338584497L;
 
 	/** 
 	 * 可用金额，单位为元。可用金额=总金额-已请款金额-已撤销金额。精确到小数点后两位，取值范围[0.01,100000000]
@@ -47,6 +47,12 @@ CLOSING(关单中);CLOSE_SUCCESS(关单成功);CLOSE_FAIL(关单失败);
 	@ApiField("out_order_id")
 	private String outOrderId;
 
+	/** 
+	 * 外部请求ID
+	 */
+	@ApiField("out_request_id")
+	private String outRequestId;
+
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
@@ -80,6 +86,13 @@ CLOSING(关单中);CLOSE_SUCCESS(关单成功);CLOSE_FAIL(关单失败);
 	}
 	public String getOutOrderId( ) {
 		return this.outOrderId;
+	}
+
+	public void setOutRequestId(String outRequestId) {
+		this.outRequestId = outRequestId;
+	}
+	public String getOutRequestId( ) {
+		return this.outRequestId;
 	}
 
 }

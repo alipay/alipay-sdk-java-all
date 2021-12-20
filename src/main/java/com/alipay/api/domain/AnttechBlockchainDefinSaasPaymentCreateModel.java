@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建交易
  *
  * @author auto create
- * @since 1.0, 2021-11-10 17:30:08
+ * @since 1.0, 2021-12-17 12:45:11
  */
 public class AnttechBlockchainDefinSaasPaymentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4113627766583673916L;
+	private static final long serialVersionUID = 6155398585355372216L;
 
 	/**
 	 * 收单交易，acquire_order和fund_order不能同时为空
@@ -36,6 +36,12 @@ public class AnttechBlockchainDefinSaasPaymentCreateModel extends AlipayObject {
 	 */
 	@ApiField("order_type")
 	private String orderType;
+
+	/**
+	 * 外部请求ID，可选
+	 */
+	@ApiField("out_request_id")
+	private String outRequestId;
 
 	/**
 	 * 会员所属业务平台在智能科技的会员ID
@@ -69,6 +75,13 @@ public class AnttechBlockchainDefinSaasPaymentCreateModel extends AlipayObject {
 	}
 	public void setOrderType(String orderType) {
 		this.orderType = orderType;
+	}
+
+	public String getOutRequestId() {
+		return this.outRequestId;
+	}
+	public void setOutRequestId(String outRequestId) {
+		this.outRequestId = outRequestId;
 	}
 
 	public String getPlatformMemberId() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.saas.payment.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-10 17:30:08
+ * @since 1.0, 2021-12-17 13:16:04
  */
 public class AnttechBlockchainDefinSaasPaymentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4664972713488312539L;
+	private static final long serialVersionUID = 5144164571197842141L;
 
 	/** 
 	 * 描述资金流的模型，通常资金流分为：SALE 销售模；AUTH_CAPTURE 预授权模式；

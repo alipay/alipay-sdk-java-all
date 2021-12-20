@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniTemplateUsageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1644786772866395461L;
+	private static final long serialVersionUID = 2246744756691867712L;
 
 	/**
 	 * 小程序投放的端参数，例如投放到支付宝钱包是支付宝端。默认支付宝端。支持：

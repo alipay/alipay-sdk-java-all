@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权请款
  *
  * @author auto create
- * @since 1.0, 2021-12-16 16:50:43
+ * @since 1.0, 2021-12-17 17:26:08
  */
 public class AnttechBlockchainDefinSaasPaymentCaptureModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3614697879868211168L;
+	private static final long serialVersionUID = 4736425237258527424L;
 
 	/**
 	 * 请款金额，单位为元。支持预授权后全额请款、或预授权后先部分撤销再部分请款。精确到小数点后两位，取值范围[0.01,100000000]
@@ -36,6 +36,12 @@ public class AnttechBlockchainDefinSaasPaymentCaptureModel extends AlipayObject 
 	 */
 	@ApiField("out_payer_id")
 	private ReferenceId outPayerId;
+
+	/**
+	 * 外部请求ID
+	 */
+	@ApiField("out_request_id")
+	private String outRequestId;
 
 	/**
 	 * 会员所属业务平台在智能科技的会员ID
@@ -69,6 +75,13 @@ public class AnttechBlockchainDefinSaasPaymentCaptureModel extends AlipayObject 
 	}
 	public void setOutPayerId(ReferenceId outPayerId) {
 		this.outPayerId = outPayerId;
+	}
+
+	public String getOutRequestId() {
+		return this.outRequestId;
+	}
+	public void setOutRequestId(String outRequestId) {
+		this.outRequestId = outRequestId;
 	}
 
 	public String getPlatformMemberId() {

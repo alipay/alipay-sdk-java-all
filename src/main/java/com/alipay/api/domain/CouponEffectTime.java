@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CouponEffectTime extends AlipayObject {
 
-	private static final long serialVersionUID = 6472173728276469947L;
+	private static final long serialVersionUID = 2723137481513766474L;
 
 	/**
 	 * 说明:当coupon_available_period_type不为空的时候且为ABSOLUTELY时，此处会有值

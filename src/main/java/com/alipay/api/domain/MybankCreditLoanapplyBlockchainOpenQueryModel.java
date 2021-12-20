@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoanapplyBlockchainOpenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2669274917766256445L;
+	private static final long serialVersionUID = 7389791486756364121L;
 
 	/**
 	 * 业务类型,BLOCKCHAIN_QUERY_EVENT,机构数据链上查询,SDK枚举获取 业务类型

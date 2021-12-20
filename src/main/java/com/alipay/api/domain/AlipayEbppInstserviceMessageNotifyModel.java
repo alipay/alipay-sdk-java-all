@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构服务通知
  *
  * @author auto create
- * @since 1.0, 2021-07-27 20:39:34
+ * @since 1.0, 2021-12-17 11:48:08
  */
 public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3548732696635754961L;
+	private static final long serialVersionUID = 8375429966738895321L;
 
 	/**
 	 * 余额

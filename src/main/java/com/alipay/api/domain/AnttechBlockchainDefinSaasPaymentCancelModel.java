@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权撤销
  *
  * @author auto create
- * @since 1.0, 2021-12-16 16:50:15
+ * @since 1.0, 2021-12-17 17:25:54
  */
 public class AnttechBlockchainDefinSaasPaymentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5355991646318278139L;
+	private static final long serialVersionUID = 8346948985912786494L;
 
 	/**
 	 * 撤销金额，单位为元。支持预授权后全额撤销、或预授权后部分撤销。精确到小数点后两位，取值范围[0.01,100000000]
@@ -36,6 +36,12 @@ public class AnttechBlockchainDefinSaasPaymentCancelModel extends AlipayObject {
 	 */
 	@ApiField("out_payer_id")
 	private ReferenceId outPayerId;
+
+	/**
+	 * 外部请求ID
+	 */
+	@ApiField("out_request_id")
+	private String outRequestId;
 
 	/**
 	 * 会员所属业务平台在智能科技的会员ID
@@ -69,6 +75,13 @@ public class AnttechBlockchainDefinSaasPaymentCancelModel extends AlipayObject {
 	}
 	public void setOutPayerId(ReferenceId outPayerId) {
 		this.outPayerId = outPayerId;
+	}
+
+	public String getOutRequestId() {
+		return this.outRequestId;
+	}
+	public void setOutRequestId(String outRequestId) {
+		this.outRequestId = outRequestId;
 	}
 
 	public String getPlatformMemberId() {
