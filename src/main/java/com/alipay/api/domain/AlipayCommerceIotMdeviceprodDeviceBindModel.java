@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备绑定
  *
  * @author auto create
- * @since 1.0, 2021-06-23 19:14:11
+ * @since 1.0, 2021-12-21 11:24:25
  */
 public class AlipayCommerceIotMdeviceprodDeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3336482173991778481L;
+	private static final long serialVersionUID = 4646136392839588193L;
 
 	/**
 	 * 设备唯一标识，设备id;identity_type='ID'时必填

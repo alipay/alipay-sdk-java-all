@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.pass.template.modify request
  * 
  * @author auto create
- * @since 1.0, 2020-09-03 15:39:45
+ * @since 1.0, 2021-12-21 22:02:24
  */
 public class AlipayUserPassTemplateModifyRequest implements AlipayRequest<AlipayUserPassTemplateModifyResponse> {
 

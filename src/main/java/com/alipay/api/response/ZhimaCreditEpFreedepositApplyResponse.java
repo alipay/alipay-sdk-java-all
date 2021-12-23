@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.freedeposit.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-27 17:15:27
+ * @since 1.0, 2021-12-21 22:46:30
  */
 public class ZhimaCreditEpFreedepositApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4761778535235558527L;
+	private static final long serialVersionUID = 5431415175131866351L;
 
 	
 

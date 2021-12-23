@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.pool.signadvance.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-20 14:20:19
+ * @since 1.0, 2021-12-21 22:43:49
  */
 public class MybankCreditSupplychainPoolSignadvanceSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3178988512489215528L;
+	private static final long serialVersionUID = 2817228791453333318L;
 
 	
 

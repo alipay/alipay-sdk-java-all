@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pai.proxy.redirect request
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2021-12-21 23:50:31
  */
 public class AlipayPaiProxyRedirectRequest implements AlipayRequest<AlipayPaiProxyRedirectResponse> {
 

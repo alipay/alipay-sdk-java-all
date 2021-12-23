@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2021-12-17 16:30:16
+ * @since 1.0, 2021-12-22 14:27:37
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7745236186232652289L;
+	private static final long serialVersionUID = 1382682448288762488L;
 
 	/**
 	 * 企业ID
@@ -86,7 +86,7 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String mshopId;
 
 	/**
-	 * 开票模式（笔笔开：SINGLE，汇总开：SUMMARY）
+	 * 开票模式（汇总开：ENTERPRISE_AUTO_BATCH）
 	 */
 	@ApiField("open_model")
 	private String openModel;
@@ -126,6 +126,18 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("projiect_id")
 	private String projiectId;
+
+	/**
+	 * 消费账单的退款金额
+	 */
+	@ApiField("refund_amount")
+	private String refundAmount;
+
+	/**
+	 * 消费账单的退款状态
+	 */
+	@ApiField("refund_status")
+	private String refundStatus;
 
 	/**
 	 * 费控规则ID
@@ -292,6 +304,20 @@ ACCOUNTING:记账
 	}
 	public void setProjiectId(String projiectId) {
 		this.projiectId = projiectId;
+	}
+
+	public String getRefundAmount() {
+		return this.refundAmount;
+	}
+	public void setRefundAmount(String refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+
+	public String getRefundStatus() {
+		return this.refundStatus;
+	}
+	public void setRefundStatus(String refundStatus) {
+		this.refundStatus = refundStatus;
 	}
 
 	public String getStandardId() {

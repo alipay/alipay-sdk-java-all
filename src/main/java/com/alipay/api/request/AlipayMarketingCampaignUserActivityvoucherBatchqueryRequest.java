@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.user.activityvoucher.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2021-08-04 17:35:22
+ * @since 1.0, 2021-12-21 23:35:46
  */
 public class AlipayMarketingCampaignUserActivityvoucherBatchqueryRequest implements AlipayRequest<AlipayMarketingCampaignUserActivityvoucherBatchqueryResponse> {
 

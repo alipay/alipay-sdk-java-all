@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantShopcodeCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4227839172185197342L;
+	private static final long serialVersionUID = 2754416958561922333L;
 
 	/** 
 	 * 门店码一级类目列表

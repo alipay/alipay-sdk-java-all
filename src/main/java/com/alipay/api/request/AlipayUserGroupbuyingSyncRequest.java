@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.groupbuying.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2021-12-21 21:59:05
  */
 public class AlipayUserGroupbuyingSyncRequest implements AlipayRequest<AlipayUserGroupbuyingSyncResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商报名规则
  *
  * @author auto create
- * @since 1.0, 2021-07-01 01:17:24
+ * @since 1.0, 2021-12-21 19:19:44
  */
 public class RecruitEnrollRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8753946836858463685L;
+	private static final long serialVersionUID = 7534348817214285154L;
 
 	/**
 	 * 最大数量
@@ -43,6 +43,7 @@ public class RecruitEnrollRule extends AlipayObject {
 小程序:MINI_APP;
 报名商户:ENROLL_MERCHANT;
 素材:MATERIAL;
+活动城市:CITY;
 	 */
 	@ApiField("type")
 	private String type;

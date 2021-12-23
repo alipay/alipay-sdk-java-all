@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.item.list.query request
  * 
  * @author auto create
- * @since 1.0, 2021-12-03 15:32:48
+ * @since 1.0, 2021-12-21 10:50:19
  */
 public class AlipayCommerceOperationItemListQueryRequest implements AlipayRequest<AlipayCommerceOperationItemListQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 我的排行
  *
  * @author auto create
- * @since 1.0, 2021-10-09 11:18:35
+ * @since 1.0, 2021-12-21 10:49:39
  */
 public class AlipayCommerceOperationPromoterRankingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8521834462288239528L;
+	private static final long serialVersionUID = 6651969865698652993L;
 
 	/**
 	 * 需要绑定的门店对映的pid

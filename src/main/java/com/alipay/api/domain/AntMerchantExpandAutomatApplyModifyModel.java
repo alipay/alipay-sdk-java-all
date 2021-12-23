@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户自助设备信息修改
  *
  * @author auto create
- * @since 1.0, 2021-01-19 14:51:31
+ * @since 1.0, 2021-12-21 11:26:47
  */
 public class AntMerchantExpandAutomatApplyModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2412932961687755381L;
+	private static final long serialVersionUID = 4859647572461719268L;
 
 	/**
 	 * 机具发货地址信息

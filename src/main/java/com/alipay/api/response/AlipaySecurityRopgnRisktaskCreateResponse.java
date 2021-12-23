@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.ropgn.risktask.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-31 20:10:28
+ * @since 1.0, 2021-12-21 21:48:23
  */
 public class AlipaySecurityRopgnRisktaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8253447449441331874L;
+	private static final long serialVersionUID = 8657189514899516761L;
 
 	
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.octoken.auth.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-03 19:20:22
+ * @since 1.0, 2021-12-21 23:05:05
  */
 public class AlipayCommerceMedicalOctokenAuthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5745413558938462529L;
+	private static final long serialVersionUID = 8881849156673746219L;
 
 	/** 
 	 * 医保电子凭证线上支付授权信息

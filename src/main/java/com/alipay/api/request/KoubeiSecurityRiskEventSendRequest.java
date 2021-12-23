@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.security.risk.event.send request
  * 
  * @author auto create
- * @since 1.0, 2020-08-10 11:21:44
+ * @since 1.0, 2021-12-21 22:37:50
  */
 public class KoubeiSecurityRiskEventSendRequest implements AlipayRequest<KoubeiSecurityRiskEventSendResponse> {
 

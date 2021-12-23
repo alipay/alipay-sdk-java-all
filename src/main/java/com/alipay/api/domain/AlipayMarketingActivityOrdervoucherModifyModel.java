@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单券修改
  *
  * @author auto create
- * @since 1.0, 2021-09-13 16:24:29
+ * @since 1.0, 2021-12-21 13:43:09
  */
 public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2375944431189895418L;
+	private static final long serialVersionUID = 7317999584345712498L;
 
 	/**
 	 * 活动id
@@ -22,7 +22,7 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	private String activityId;
 
 	/**
-	 * 引导用户配置
+	 * 引导用户配置。该值为空表示不修改。
 	 */
 	@ApiField("customer_guide")
 	private CustomerGuideModify customerGuide;
@@ -54,15 +54,20 @@ publish_end_time 与 券发放开始时间
 
 publish_start_time 间隔必须小于等于180天
 
-
-
 修改发放结束时间，只能延长，不允许缩短。
+该值为空表示不修改
 	 */
 	@ApiField("publish_end_time")
 	private Date publishEndTime;
 
 	/**
-	 * 券使用规则
+	 * 券展示信息。该值为空表示不修改。
+	 */
+	@ApiField("voucher_display_info")
+	private VoucherDisplayInfoModify voucherDisplayInfo;
+
+	/**
+	 * 券使用规则。该值为空表示不修改。
 	 */
 	@ApiField("voucher_use_rule")
 	private VoucherUseRuleModify voucherUseRule;
@@ -93,6 +98,13 @@ publish_start_time 间隔必须小于等于180天
 	}
 	public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
+	}
+
+	public VoucherDisplayInfoModify getVoucherDisplayInfo() {
+		return this.voucherDisplayInfo;
+	}
+	public void setVoucherDisplayInfo(VoucherDisplayInfoModify voucherDisplayInfo) {
+		this.voucherDisplayInfo = voucherDisplayInfo;
 	}
 
 	public VoucherUseRuleModify getVoucherUseRule() {

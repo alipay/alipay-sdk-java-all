@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付邀请员工
  *
  * @author auto create
- * @since 1.0, 2021-09-24 11:15:24
+ * @since 1.0, 2021-12-22 19:22:35
  */
 public class AlipayFundJointaccountMemberBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3295673586564745545L;
+	private static final long serialVersionUID = 8351121671214533284L;
 
 	/**
 	 * 账本ID
@@ -32,7 +32,7 @@ public class AlipayFundJointaccountMemberBindModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
-	 * 业务场景
+	 * 业务场景，联系支付宝分配
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -58,7 +58,7 @@ identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
 	private String identityType;
 
 	/**
-	 * 成员姓名
+	 * 成员姓名，账号类型为ALIPAY_LOGON_ID时必填
 	 */
 	@ApiField("name")
 	private String name;

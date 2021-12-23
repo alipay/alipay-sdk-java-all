@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialAntfarmDonationinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7785229326828854838L;
+	private static final long serialVersionUID = 2823623436911759672L;
 
 	/**
 	 * 蚂蚁统一会员ID

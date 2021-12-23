@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自助售货机入驻申请
  *
  * @author auto create
- * @since 1.0, 2020-06-03 22:45:10
+ * @since 1.0, 2021-12-21 11:27:10
  */
 public class AntMerchantExpandAutomatApplyUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5461475142854782119L;
+	private static final long serialVersionUID = 1489233165562992771L;
 
 	/**
 	 * 自助售卖机合作伙伴信息

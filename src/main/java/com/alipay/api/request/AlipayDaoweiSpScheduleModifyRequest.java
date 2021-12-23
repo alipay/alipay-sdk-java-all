@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.daowei.sp.schedule.modify request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 21:59:03
+ * @since 1.0, 2021-12-21 15:58:33
  */
 public class AlipayDaoweiSpScheduleModifyRequest implements AlipayRequest<AlipayDaoweiSpScheduleModifyResponse> {
 

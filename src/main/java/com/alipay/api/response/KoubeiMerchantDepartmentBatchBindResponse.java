@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.department.batch.bind response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-26 12:01:31
+ * @since 1.0, 2021-12-21 22:33:16
  */
 public class KoubeiMerchantDepartmentBatchBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1313342868731758127L;
+	private static final long serialVersionUID = 4848636887883631928L;
 
 	
 

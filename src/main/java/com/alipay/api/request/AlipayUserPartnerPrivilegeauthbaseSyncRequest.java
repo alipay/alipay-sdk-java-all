@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.partner.privilegeauthbase.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-09-06 11:10:28
+ * @since 1.0, 2021-12-21 22:02:06
  */
 public class AlipayUserPartnerPrivilegeauthbaseSyncRequest implements AlipayRequest<AlipayUserPartnerPrivilegeauthbaseSyncResponse> {
 

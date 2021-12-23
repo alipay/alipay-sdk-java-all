@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单优惠前置咨询
  *
  * @author auto create
- * @since 1.0, 2021-07-13 14:22:00
+ * @since 1.0, 2021-12-21 19:03:13
  */
 public class AlipayMarketingCampaignOrderVoucherConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1138293418975675784L;
+	private static final long serialVersionUID = 2661188621845348978L;
 
 	/**
 	 * 商品咨询请求列表（当需要咨询单品券时必传，如果某商品不希望参与本次单品优惠咨询则不传递对应信息即可）

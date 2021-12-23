@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 海外线上商户报备接口
  *
  * @author auto create
- * @since 1.0, 2021-10-25 15:25:13
+ * @since 1.0, 2021-12-22 17:15:58
  */
 public class AlipayOverseasSecondmerchantOnlineMaintainModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8593984118369661329L;
+	private static final long serialVersionUID = 8857127869163884677L;
 
 	/**
 	 * 联系人邮箱

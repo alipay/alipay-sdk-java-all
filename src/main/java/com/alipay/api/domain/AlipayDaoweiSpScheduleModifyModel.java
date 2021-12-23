@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新服务者可用时间接口
  *
  * @author auto create
- * @since 1.0, 2017-03-10 16:05:46
+ * @since 1.0, 2021-12-21 15:58:33
  */
 public class AlipayDaoweiSpScheduleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3381518127591188652L;
+	private static final long serialVersionUID = 5384932295492414222L;
 
 	/**
 	 * 服务者的可用时间表。其中Duration和Unit配合使用，例如duration=30，unit=MIN表示将一天分为以30分钟一小段的时间片段。Unit：目前支持MIN（分钟）。Date：YYYY-MM-DD格式。Bitmap：根据定义的间隔长度跟单位，将date的时间切分，例如将2016-11-29整天按30分钟为一段切分为48段： 111111111111111111111111111111111110000011111111 ， 其中0表示不可用，1表示可用，如果工作日全天可用则每个分段都为1

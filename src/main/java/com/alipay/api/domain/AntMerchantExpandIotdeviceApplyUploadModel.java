@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户合作设备入驻
  *
  * @author auto create
- * @since 1.0, 2021-09-06 17:08:23
+ * @since 1.0, 2021-12-21 11:25:03
  */
 public class AntMerchantExpandIotdeviceApplyUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1217692833696565344L;
+	private static final long serialVersionUID = 1421416521295361545L;
 
 	/**
 	 * 代申请商家支付宝账号PID(2088开头)

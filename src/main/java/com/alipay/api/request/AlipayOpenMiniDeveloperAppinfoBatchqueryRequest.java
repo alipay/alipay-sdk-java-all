@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.developer.appinfo.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2019-05-30 14:20:01
+ * @since 1.0, 2021-12-21 23:47:07
  */
 public class AlipayOpenMiniDeveloperAppinfoBatchqueryRequest implements AlipayRequest<AlipayOpenMiniDeveloperAppinfoBatchqueryResponse> {
 

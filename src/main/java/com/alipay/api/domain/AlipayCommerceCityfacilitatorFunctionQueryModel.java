@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 基于设备和城市查询当前支持的功能
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:20
+ * @since 1.0, 2021-12-21 15:57:25
  */
 public class AlipayCommerceCityfacilitatorFunctionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3579162577373997119L;
+	private static final long serialVersionUID = 1143937625983942644L;
 
 	/**
 	 * 城市国家标准编码

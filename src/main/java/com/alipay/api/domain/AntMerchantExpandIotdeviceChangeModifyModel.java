@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户合作设备信息变更
  *
  * @author auto create
- * @since 1.0, 2021-07-28 14:37:47
+ * @since 1.0, 2021-12-21 11:25:36
  */
 public class AntMerchantExpandIotdeviceChangeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5258241662724231774L;
+	private static final long serialVersionUID = 1136858333224374325L;
 
 	/**
 	 * 设备SN（不可变更，作为匹配对应信息主键）

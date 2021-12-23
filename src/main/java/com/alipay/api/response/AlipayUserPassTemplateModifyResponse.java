@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.pass.template.modify response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-03 15:39:45
+ * @since 1.0, 2021-12-21 22:02:24
  */
 public class AlipayUserPassTemplateModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4512235422583513554L;
+	private static final long serialVersionUID = 1684223626961679774L;
 
 	
 

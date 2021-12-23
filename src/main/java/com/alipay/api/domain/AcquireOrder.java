@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 收单交易
  *
  * @author auto create
- * @since 1.0, 2021-11-10 17:36:10
+ * @since 1.0, 2021-12-20 20:51:00
  */
 public class AcquireOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 2539223924343539592L;
+	private static final long serialVersionUID = 3198548569155171256L;
 
 	/**
 	 * 买家外部业务平台会员ID

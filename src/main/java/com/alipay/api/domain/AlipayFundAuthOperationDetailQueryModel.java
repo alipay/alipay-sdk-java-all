@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3553474621689376843L;
+	private static final long serialVersionUID = 7199752857974194213L;
 
 	/**
 	 * 支付宝授权资金订单号。
@@ -47,7 +47,9 @@ public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 	/**
 	 * 商户的授权资金操作流水号。
 与支付宝的授权资金操作流水号不能同时为空，二者都传入时，以支付宝的授权资金操作流水号为准，该参数与商户的授权资金订单号配对使用。
-该值与资金冻结时out_request_no一致
+查询冻结明细时，该值与发起冻结操作时传入的out_request_no一致；
+查询解冻明细时，该值与发起解冻操作时传入的out_request_no一致；
+查询支付明细时，该值与发起转支付操作时传入的out_trade_no一致。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.express.signcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-05 16:55:18
+ * @since 1.0, 2021-12-21 23:25:40
  */
 public class AlipayFinancialnetAuthExpressSigncardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2775376945995387961L;
+	private static final long serialVersionUID = 8516126269933541467L;
 
 	/** 
 	 * 服务成功时，且用户有相应的卡，该字段（列表类型）存在

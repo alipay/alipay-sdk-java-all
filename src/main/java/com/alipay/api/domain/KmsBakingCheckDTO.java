@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KmsBakingCheckDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3582971529514266519L;
+	private static final long serialVersionUID = 7763127239333171987L;
 
 	/**
 	 * 回传结束时间，格式yyyy-MM-dd HH:mm:ss

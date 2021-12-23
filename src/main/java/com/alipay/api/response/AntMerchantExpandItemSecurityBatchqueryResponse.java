@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandItemSecurityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8395447811819652876L;
+	private static final long serialVersionUID = 7266148493732215993L;
 
 	/** 
 	 * 商品列表

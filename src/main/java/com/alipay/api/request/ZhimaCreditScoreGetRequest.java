@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.score.get request
  * 
  * @author auto create
- * @since 1.0, 2021-06-15 13:59:54
+ * @since 1.0, 2021-12-22 00:46:51
  */
 public class ZhimaCreditScoreGetRequest implements AlipayRequest<ZhimaCreditScoreGetResponse> {
 

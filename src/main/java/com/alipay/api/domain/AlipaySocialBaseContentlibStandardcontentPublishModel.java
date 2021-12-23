@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1361742198643396493L;
+	private static final long serialVersionUID = 3311832183411268275L;
 
 	/**
 	 * 生活号+号ID，只有MCN机构为达人号ID发布内容才需要传入

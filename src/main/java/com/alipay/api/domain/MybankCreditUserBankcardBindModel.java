@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditUserBankcardBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7555775974544348742L;
+	private static final long serialVersionUID = 5425846476632381847L;
 
 	/**
 	 * 银行卡持有人的姓名

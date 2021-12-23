@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.newbenefit.modify request
  * 
  * @author auto create
- * @since 1.0, 2020-08-17 21:20:56
+ * @since 1.0, 2021-12-21 22:00:58
  */
 public class AlipayUserNewbenefitModifyRequest implements AlipayRequest<AlipayUserNewbenefitModifyResponse> {
 

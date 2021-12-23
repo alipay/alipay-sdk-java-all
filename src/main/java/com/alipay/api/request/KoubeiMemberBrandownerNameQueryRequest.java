@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.member.brandowner.name.query request
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 11:14:14
+ * @since 1.0, 2021-12-21 22:32:28
  */
 public class KoubeiMemberBrandownerNameQueryRequest implements AlipayRequest<KoubeiMemberBrandownerNameQueryResponse> {
 

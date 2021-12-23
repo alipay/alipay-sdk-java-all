@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.dapply.refund.confirm request
  * 
  * @author auto create
- * @since 1.0, 2019-08-21 19:50:34
+ * @since 1.0, 2021-12-21 11:31:05
  */
 public class AlipayCommerceIotDapplyRefundConfirmRequest implements AlipayRequest<AlipayCommerceIotDapplyRefundConfirmResponse> {
 

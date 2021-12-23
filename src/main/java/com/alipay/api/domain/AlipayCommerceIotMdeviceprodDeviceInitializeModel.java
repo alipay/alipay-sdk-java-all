@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机具激活
  *
  * @author auto create
- * @since 1.0, 2020-06-30 16:26:29
+ * @since 1.0, 2021-12-21 11:26:21
  */
 public class AlipayCommerceIotMdeviceprodDeviceInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7364885834635947954L;
+	private static final long serialVersionUID = 3279182277562613978L;
 
 	/**
 	 * 设备sn，通常置于设备标签中

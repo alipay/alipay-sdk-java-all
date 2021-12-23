@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.equity.shop.custrelation.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-28 22:25:10
+ * @since 1.0, 2021-12-22 00:29:45
  */
 public class AntfortuneEquityShopCustrelationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3325657512469341798L;
+	private static final long serialVersionUID = 6244789785891739313L;
 
 	/** 
 	 * 用户关注商户pid对应的财富号的时间

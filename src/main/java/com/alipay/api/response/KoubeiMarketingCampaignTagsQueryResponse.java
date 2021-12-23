@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.tags.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-14 09:47:05
+ * @since 1.0, 2021-12-21 22:30:02
  */
 public class KoubeiMarketingCampaignTagsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5655837114554622764L;
+	private static final long serialVersionUID = 1322123625471435332L;
 
 	/** 
 	 * 查询成功时返回人群标签信息查询失败时为空

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 奖品列表
  *
  * @author auto create
- * @since 1.0, 2021-10-09 11:19:05
+ * @since 1.0, 2021-12-21 16:09:16
  */
 public class ItemPrizeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8845149515418454153L;
+	private static final long serialVersionUID = 1763144587826587169L;
 
 	/**
 	 * 奖品是否能兑换

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommonPrizeModelVo extends AlipayObject {
 
-	private static final long serialVersionUID = 2776681264138129546L;
+	private static final long serialVersionUID = 7415975193718842567L;
 
 	/**
 	 * 奖品描述图片url

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.order.rent.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-26 13:55:09
+ * @since 1.0, 2021-12-21 22:49:43
  */
 public class ZhimaMerchantOrderRentSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1437226556197759651L;
+	private static final long serialVersionUID = 4321481621889128195L;
 
 	
 
