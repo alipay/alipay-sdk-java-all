@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySocialBaseChatGmemberDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5437466444224552689L;
+	private static final long serialVersionUID = 6197513984586717454L;
 
 	/**
 	 * 群id

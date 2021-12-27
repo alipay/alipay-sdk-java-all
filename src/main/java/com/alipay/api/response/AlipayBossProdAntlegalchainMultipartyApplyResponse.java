@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossProdAntlegalchainMultipartyApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1154556281872128518L;
+	private static final long serialVersionUID = 5121663957939629467L;
 
 	/** 
 	 * 法链业务ID,用于查询上链状态

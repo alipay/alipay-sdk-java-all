@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduAgeDemand extends AlipayObject {
 
-	private static final long serialVersionUID = 8613183594949666891L;
+	private static final long serialVersionUID = 6628924571668727422L;
 
 	/**
 	 * 结束年龄

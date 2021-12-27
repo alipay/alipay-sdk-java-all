@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingVoucherTemplatelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7258113491929712585L;
+	private static final long serialVersionUID = 5321569466964871617L;
 
 	/** 
 	 * 当前页码,页码从1开始

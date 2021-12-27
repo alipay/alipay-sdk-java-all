@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserApplepayProvisioningbundleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2697593973765593415L;
+	private static final long serialVersionUID = 8789997863836216134L;
 
 	/** 
 	 * 卡id(由固定前缀+32位数字构成)

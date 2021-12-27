@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicFollowBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2372627352488726645L;
+	private static final long serialVersionUID = 4535245657766349147L;
 
 	/** 
 	 * 本次调用获取的userId个数，最大值为10000

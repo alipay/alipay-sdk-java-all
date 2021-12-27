@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MemberCardPayEffectiveShopRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1684959993292841746L;
+	private static final long serialVersionUID = 7154157686958565154L;
 
 	/**
 	 * 线下店id列表，列表最大长度5000
