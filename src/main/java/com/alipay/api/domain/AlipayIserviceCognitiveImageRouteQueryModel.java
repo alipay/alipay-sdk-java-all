@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceCognitiveImageRouteQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3864914643544736288L;
+	private static final long serialVersionUID = 6457776196442695498L;
 
 	/**
 	 * 业务id

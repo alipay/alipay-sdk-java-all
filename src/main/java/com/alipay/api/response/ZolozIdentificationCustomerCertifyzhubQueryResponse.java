@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.customer.certifyzhub.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-16 14:50:41
+ * @since 1.0, 2021-12-24 19:15:37
  */
 public class ZolozIdentificationCustomerCertifyzhubQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8521231635369297142L;
+	private static final long serialVersionUID = 1519623339742483387L;
 
 	/** 
 	 * 是否为攻击
@@ -50,6 +50,12 @@ public class ZolozIdentificationCustomerCertifyzhubQueryResponse extends AlipayR
 	 */
 	@ApiField("zim_msg")
 	private String zimMsg;
+
+	/** 
+	 * 人脸识别token，目前用法是在客户端将作为秘钥用来解密人脸图片
+	 */
+	@ApiField("zim_token")
+	private String zimToken;
 
 	public void setAttack(Boolean attack) {
 		this.attack = attack;
@@ -91,6 +97,13 @@ public class ZolozIdentificationCustomerCertifyzhubQueryResponse extends AlipayR
 	}
 	public String getZimMsg( ) {
 		return this.zimMsg;
+	}
+
+	public void setZimToken(String zimToken) {
+		this.zimToken = zimToken;
+	}
+	public String getZimToken( ) {
+		return this.zimToken;
 	}
 
 }

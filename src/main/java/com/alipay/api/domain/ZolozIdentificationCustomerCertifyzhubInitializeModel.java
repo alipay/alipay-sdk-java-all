@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸服务初始化(一体化)
  *
  * @author auto create
- * @since 1.0, 2021-12-16 14:08:41
+ * @since 1.0, 2021-12-24 19:13:12
  */
 public class ZolozIdentificationCustomerCertifyzhubInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8377631479853826711L;
+	private static final long serialVersionUID = 6171142435285621483L;
 
 	/**
 	 * 设备token
@@ -50,7 +50,7 @@ public class ZolozIdentificationCustomerCertifyzhubInitializeModel extends Alipa
 	private String bizSceneName;
 
 	/**
-	 * 用于区分不同的业务场景，默认情况下不用填写，目前定义biz_type=3代表实人认证小程序
+	 * 用于区分不同的业务场景，默认情况下不用填写，目前定义biz_type=3代表实人认证小程序，biz_type=4代表钉钉团餐业务匿名注册，biz_type=5代表钉钉团餐业务实名比对
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -86,7 +86,7 @@ public class ZolozIdentificationCustomerCertifyzhubInitializeModel extends Alipa
 	private String devicetype;
 
 	/**
-	 * 0：匿名注册  1：匿名认证   2：实名认证
+	 * 0：匿名注册  1：匿名认证   2：实名认证   3：实名转匿名注册。
 	 */
 	@ApiField("face_type")
 	private Long faceType;
@@ -108,6 +108,13 @@ public class ZolozIdentificationCustomerCertifyzhubInitializeModel extends Alipa
 	 */
 	@ApiField("osversion")
 	private String osversion;
+
+	/**
+	 * true：代表后置摄像头
+false：代表前置摄像头
+	 */
+	@ApiField("use_back_camera")
+	private Boolean useBackCamera;
 
 	/**
 	 * 商户的用户id
@@ -225,6 +232,13 @@ public class ZolozIdentificationCustomerCertifyzhubInitializeModel extends Alipa
 	}
 	public void setOsversion(String osversion) {
 		this.osversion = osversion;
+	}
+
+	public Boolean getUseBackCamera() {
+		return this.useBackCamera;
+	}
+	public void setUseBackCamera(Boolean useBackCamera) {
+		this.useBackCamera = useBackCamera;
 	}
 
 	public String getUserId() {

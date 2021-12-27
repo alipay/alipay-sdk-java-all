@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 招商报名信息
  *
  * @author auto create
- * @since 1.0, 2021-07-01 01:17:33
+ * @since 1.0, 2021-12-23 18:12:49
  */
 public class RecruitEnrollInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2623714578612319944L;
+	private static final long serialVersionUID = 5129996321192417828L;
+
+	/**
+	 * 报名提交的活动城市码，详见<a href="https://opendocs.alipay.com/pre-open/02r07u" target="_blank">活动城市码</a>
+	 */
+	@ApiListField("cities")
+	@ApiField("string")
+	private List<String> cities;
 
 	/**
 	 * 报名商户
@@ -23,7 +30,7 @@ public class RecruitEnrollInfo extends AlipayObject {
 	private RecruitEnrollMerchant enrollMerchant;
 
 	/**
-	 * 报名需要提交的素材
+	 * 报名提交的素材
 	 */
 	@ApiListField("materials")
 	@ApiField("recruit_material")
@@ -42,6 +49,13 @@ public class RecruitEnrollInfo extends AlipayObject {
 	@ApiListField("vouchers")
 	@ApiField("recruit_voucher")
 	private List<RecruitVoucher> vouchers;
+
+	public List<String> getCities() {
+		return this.cities;
+	}
+	public void setCities(List<String> cities) {
+		this.cities = cities;
+	}
 
 	public RecruitEnrollMerchant getEnrollMerchant() {
 		return this.enrollMerchant;

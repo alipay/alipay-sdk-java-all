@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandMerchantIndividualCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4572377737399866541L;
+	private static final long serialVersionUID = 8692524683982991595L;
 
 	
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniShopRelationBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2845167524298113234L;
+	private static final long serialVersionUID = 6187766622998229155L;
 
 	/**
 	 * 门店信息，entity_id为平台侧门店id，property_list属性列表详见 <a href="https://opendocs.alipay.com/mini/00nvud">绑定门店</a>。

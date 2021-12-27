@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeAccountFundcompositionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6422984936475153468L;
+	private static final long serialVersionUID = 3187352819334315444L;
 
 	/**
 	 * 用户支付宝UID

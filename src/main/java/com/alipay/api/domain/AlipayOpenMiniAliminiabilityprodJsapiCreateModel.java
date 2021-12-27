@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniAliminiabilityprodJsapiCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4427768155693246814L;
+	private static final long serialVersionUID = 4192885456586483829L;
 
 	/**
 	 * api基本参数
