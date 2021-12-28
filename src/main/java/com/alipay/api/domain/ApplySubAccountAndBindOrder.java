@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 子户申请请求
  *
  * @author auto create
- * @since 1.0, 2020-08-28 14:18:12
+ * @since 1.0, 2021-12-27 20:18:51
  */
 public class ApplySubAccountAndBindOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 3715234217658548852L;
+	private static final long serialVersionUID = 6789249411741213752L;
 
 	/**
 	 * 机构ID，如ZL6、ZL7

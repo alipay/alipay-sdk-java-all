@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PublicMsgKeyword extends AlipayObject {
 
-	private static final long serialVersionUID = 2723432729182451773L;
+	private static final long serialVersionUID = 8619453626546196487L;
 
 	/**
 	 * 模板关键字名称

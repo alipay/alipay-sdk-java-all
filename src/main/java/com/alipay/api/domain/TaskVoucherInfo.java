@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务优惠券列表
  *
  * @author auto create
- * @since 1.0, 2021-12-21 18:58:20
+ * @since 1.0, 2021-12-27 14:54:59
  */
 public class TaskVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7135417952739339681L;
+	private static final long serialVersionUID = 4565369992548138549L;
+
+	/**
+	 * 当前门店优惠券核销笔数
+	 */
+	@ApiField("shop_voucher_sales_amount")
+	private Long shopVoucherSalesAmount;
 
 	/**
 	 * 优惠券面额
@@ -48,6 +54,13 @@ public class TaskVoucherInfo extends AlipayObject {
 	 */
 	@ApiField("voucher_usage_threshold")
 	private String voucherUsageThreshold;
+
+	public Long getShopVoucherSalesAmount() {
+		return this.shopVoucherSalesAmount;
+	}
+	public void setShopVoucherSalesAmount(Long shopVoucherSalesAmount) {
+		this.shopVoucherSalesAmount = shopVoucherSalesAmount;
+	}
 
 	public String getVoucherDenomination() {
 		return this.voucherDenomination;

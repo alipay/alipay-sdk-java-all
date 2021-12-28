@@ -141,4 +141,14 @@ public class FileItem {
         }
     }
 
+    public long fileContentLength() {
+        if (this.content != null) {
+            return this.content.length;
+        } else if (this.file != null && this.file.exists()) {
+            return this.file.length();
+        } else {
+            return 0;
+        }
+    }
+
 }

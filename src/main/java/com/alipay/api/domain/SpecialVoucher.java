@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 特价券详情 限制: 券类型voucher_type为特价券SPECIAL_VOUCHER时必传
  *
  * @author auto create
- * @since 1.0, 2021-08-23 14:15:53
+ * @since 1.0, 2021-12-27 14:57:40
  */
 public class SpecialVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 3478468392322373198L;
+	private static final long serialVersionUID = 5212194771165616288L;
 
 	/**
 	 * 门槛金额。

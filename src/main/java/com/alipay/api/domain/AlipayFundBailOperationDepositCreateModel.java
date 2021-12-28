@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建保证金缴纳单
  *
  * @author auto create
- * @since 1.0, 2021-12-17 17:17:13
+ * @since 1.0, 2021-12-27 14:26:50
  */
 public class AlipayFundBailOperationDepositCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2334953245341154191L;
+	private static final long serialVersionUID = 1846517878425549414L;
 
 	/**
 	 * 协议号，保证金唯一协议号

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合花账单关联详情查询
  *
  * @author auto create
- * @since 1.0, 2021-11-17 14:41:55
+ * @since 1.0, 2021-12-27 20:08:47
  */
 public class AlipayEbppInvoiceEnterpriseconsumeRelatedetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5312791826486188636L;
+	private static final long serialVersionUID = 4551586117559881337L;
 
 	/**
-	 * 企业支付宝ID
+	 * 企业ID
 	 */
 	@ApiField("account_id")
 	private String accountId;

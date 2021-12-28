@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataIotdataBusinessPointQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4327171349967242439L;
+	private static final long serialVersionUID = 7516415884696947682L;
 
 	/** 
 	 * 业务点位信息列表

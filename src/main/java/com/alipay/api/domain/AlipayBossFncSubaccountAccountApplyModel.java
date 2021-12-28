@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 财资主子户申请
  *
  * @author auto create
- * @since 1.0, 2020-08-31 19:43:31
+ * @since 1.0, 2021-12-27 20:14:24
  */
 public class AlipayBossFncSubaccountAccountApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1896915541936891877L;
+	private static final long serialVersionUID = 7423798158765321492L;
 
 	/**
 	 * 子户创建申请

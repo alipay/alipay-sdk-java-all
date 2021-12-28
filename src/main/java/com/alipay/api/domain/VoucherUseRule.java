@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券核销相关规则
  *
  * @author auto create
- * @since 1.0, 2021-08-23 14:15:53
+ * @since 1.0, 2021-12-27 14:57:40
  */
 public class VoucherUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5595523316958611966L;
+	private static final long serialVersionUID = 4595545814665551577L;
 
 	/**
 	 * 折扣券详情 限制: 券类型voucher_type为折扣券DISCOUNT_VOUCHER时必传

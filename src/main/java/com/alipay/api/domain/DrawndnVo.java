@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DrawndnVo extends AlipayObject {
 
-	private static final long serialVersionUID = 4638579134579577148L;
+	private static final long serialVersionUID = 3264478529314441238L;
 
 	/**
 	 * 实收利息，单位为元，小数点保留2位

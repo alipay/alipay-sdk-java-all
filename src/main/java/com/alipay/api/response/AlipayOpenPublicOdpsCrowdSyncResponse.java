@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicOdpsCrowdSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2195727783392425415L;
+	private static final long serialVersionUID = 5695262843855623686L;
 
 	/** 
 	 * 同步单号

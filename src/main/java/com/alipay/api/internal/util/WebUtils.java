@@ -11,12 +11,7 @@ import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.StringWriter;
+import java.io.*;
 import java.lang.reflect.Field;
 import java.net.HttpURLConnection;
 import java.net.InetSocketAddress;
@@ -231,7 +226,7 @@ public class WebUtils {
                 }
                 conn.setConnectTimeout(connectTimeout);
                 conn.setReadTimeout(readTimeout);
-                conn.setChunkedStreamingMode(0);
+                conn.setFixedLengthStreamingMode(getTotalLength(params, fileParams, boundary, charset));
             } catch (IOException e) {
                 Map<String, String> map = getParamsFromUrl(url);
                 AlipayLogger.logCommError(e, url, map.get("app_key"), map.get("method"), params);
@@ -306,6 +301,35 @@ public class WebUtils {
         entry.append(mimeType);
         entry.append("\r\n\r\n");
         return entry.toString().getBytes(charset);
+    }
+
+    private static long getTotalLength(Map<String, String> params, Map<String, FileItem> fileParams, String boundary, String charset) {
+        try {
+            byte[] entryBoundaryBytes = ("\r\n--" + boundary + "\r\n").getBytes(charset);
+            long length = 0;
+
+            Set<Entry<String, String>> textEntrySet = params.entrySet();
+            for (Entry<String, String> textEntry : textEntrySet) {
+                byte[] textBytes = getTextEntry(textEntry.getKey(), textEntry.getValue(),
+                        charset);
+                length += entryBoundaryBytes.length + textBytes.length;
+            }
+
+            Set<Entry<String, FileItem>> fileEntrySet = fileParams.entrySet();
+            for (Entry<String, FileItem> fileEntry : fileEntrySet) {
+                FileItem fileItem = fileEntry.getValue();
+                byte[] fileBytes = getFileEntry(fileEntry.getKey(), fileItem.getFileName(),
+                        fileItem.getMimeType(), charset);
+                length += entryBoundaryBytes.length + fileBytes.length + fileItem.fileContentLength();
+            }
+
+            byte[] endBoundaryBytes = ("\r\n--" + boundary + "--\r\n").getBytes(charset);
+            length += endBoundaryBytes.length;
+            return length;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     /**

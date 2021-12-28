@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 咨询后的活动结果信息
  *
  * @author auto create
- * @since 1.0, 2021-08-25 20:55:17
+ * @since 1.0, 2021-12-28 10:23:08
  */
 public class ConsultActivityResultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6767952997956529692L;
+	private static final long serialVersionUID = 6413425655484569458L;
 
 	/**
 	 * 活动id
@@ -29,6 +29,8 @@ COUNT_OVER_LIMIT：不可领取，次数超过限制
 BUDGET_NOT_ENOUGH：不可领取，预算不足
 
 ACTIVITY_NOT_START：活动未开始
+
+ACTIVITY_NOT_PERMISSION：商户没有权限发放该活动
 
 OTHER：不可领取，未知原因
 	 */
