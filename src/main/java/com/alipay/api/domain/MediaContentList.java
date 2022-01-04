@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * etc申请单资料列表
  *
  * @author auto create
- * @since 1.0, 2019-05-25 14:25:26
+ * @since 1.0, 2021-12-28 20:29:30
  */
 public class MediaContentList extends AlipayObject {
 
-	private static final long serialVersionUID = 6671518512648459595L;
+	private static final long serialVersionUID = 1383125233835351218L;
 
 	/**
 	 * 业务标识。

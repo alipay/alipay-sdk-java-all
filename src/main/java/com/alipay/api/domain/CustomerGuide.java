@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户引导配置
  *
  * @author auto create
- * @since 1.0, 2021-12-27 15:02:56
+ * @since 1.0, 2021-12-29 14:16:56
  */
 public class CustomerGuide extends AlipayObject {
 
-	private static final long serialVersionUID = 2729344899792144396L;
+	private static final long serialVersionUID = 1554428336497423316L;
 
 	/**
-	 * 卡包详情页可跳转的小程序appId。 限制： 该appId归属的pid必须和当前商户保持一致。 目前mini_app_id、store_ids、real_shop_ids必须三选一。
+	 * 卡包详情页可跳转的小程序appId。 限制： 该appId归属的pid必须和当前商户保持一致。 目前mini_app_id、shop_ids、real_shop_ids必须三选一。
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
@@ -40,15 +40,24 @@ public class CustomerGuide extends AlipayObject {
 限制：
 1、real_shop_ids中的门店id必须是代运营商业关系门店id。
 2、real_shop_ids如果包含重复的门店id会自动进行去重操作。
-3、目前mini_app_id、store_ids、real_shop_ids必须三选一。
-4、store_ids、real_shop_ids最多选择一种
+3、目前mini_app_id、shop_ids、real_shop_ids必须三选一。
+4、shop_ids、real_shop_ids最多选择一种
 	 */
 	@ApiListField("real_shop_ids")
 	@ApiField("string")
 	private List<String> realShopIds;
 
 	/**
-	 * 券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 
+	 * 券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。 限制： 1、shop_ids中的门店id必须是支付宝门店id。 2、shop_ids如果包含重复的门店id会自动进行去重操作。 3、目前mini_app_id、shop_ids、real_shop_ids必须三选一。 4、shop_ids、real_shop_ids最多选择一种
+	 */
+	@ApiListField("shop_ids")
+	@ApiField("string")
+	private List<String> shopIds;
+
+	/**
+	 * 该字段后续废弃
+
+券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 
  接口参数是列表类型。
 
  限制： 
@@ -80,6 +89,13 @@ public class CustomerGuide extends AlipayObject {
 	}
 	public void setRealShopIds(List<String> realShopIds) {
 		this.realShopIds = realShopIds;
+	}
+
+	public List<String> getShopIds() {
+		return this.shopIds;
+	}
+	public void setShopIds(List<String> shopIds) {
+		this.shopIds = shopIds;
 	}
 
 	public List<String> getStoreIds() {

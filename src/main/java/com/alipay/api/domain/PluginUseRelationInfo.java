@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 插件使用关系
  *
  * @author auto create
- * @since 1.0, 2021-07-21 14:07:03
+ * @since 1.0, 2021-12-28 22:23:17
  */
 public class PluginUseRelationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2494395174192233935L;
+	private static final long serialVersionUID = 5779352332417329667L;
 
 	/**
 	 * 邀测驳回原因

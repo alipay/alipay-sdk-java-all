@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDaoweiWeikeTaskviewQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2612764429916397499L;
+	private static final long serialVersionUID = 2283121642278813522L;
 
 	/**
 	 * 当前城市城市码,精确到地级市级别.城市编码参考最新国家标准http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑估清查询简化接口
  *
  * @author auto create
- * @since 1.0, 2020-09-08 17:10:06
+ * @since 1.0, 2022-01-04 10:38:41
  */
 public class KoubeiCateringDishEstimateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8694583168757931279L;
+	private static final long serialVersionUID = 5745232273265392143L;
 
 	/**
 	 * 外部门店id，外部门店id和口碑门店id，必须二选一必填，当都传入时，以口碑门店id为准

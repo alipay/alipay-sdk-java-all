@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-01 17:09:36
+ * @since 1.0, 2021-12-30 10:25:38
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5249757392265816264L;
+	private static final long serialVersionUID = 7354248614574527233L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -81,6 +81,24 @@ public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 特殊场景提供，当子单出现异常导致主单失败或者退款时，会提供此字段，用于透出子单具体的错误场景
+	 */
+	@ApiField("sub_order_error_code")
+	private String subOrderErrorCode;
+
+	/** 
+	 * 特殊场景提供，当子单出现异常导致主单失败或者退款时，会提供此字段，用于透出子单具体的错误场景
+	 */
+	@ApiField("sub_order_fail_reason")
+	private String subOrderFailReason;
+
+	/** 
+	 * 退款子单失败状态
+	 */
+	@ApiField("sub_order_status")
+	private String subOrderStatus;
 
 	/** 
 	 * 付款金额，收银台场景下付款成功后的支付金额，订单状态为SUCCESS才返回，其他状态不返回。
@@ -169,6 +187,27 @@ public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setSubOrderErrorCode(String subOrderErrorCode) {
+		this.subOrderErrorCode = subOrderErrorCode;
+	}
+	public String getSubOrderErrorCode( ) {
+		return this.subOrderErrorCode;
+	}
+
+	public void setSubOrderFailReason(String subOrderFailReason) {
+		this.subOrderFailReason = subOrderFailReason;
+	}
+	public String getSubOrderFailReason( ) {
+		return this.subOrderFailReason;
+	}
+
+	public void setSubOrderStatus(String subOrderStatus) {
+		this.subOrderStatus = subOrderStatus;
+	}
+	public String getSubOrderStatus( ) {
+		return this.subOrderStatus;
 	}
 
 	public void setTransAmount(String transAmount) {

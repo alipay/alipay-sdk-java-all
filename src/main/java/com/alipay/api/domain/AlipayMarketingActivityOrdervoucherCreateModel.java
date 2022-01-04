@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建订单券
  *
  * @author auto create
- * @since 1.0, 2021-12-21 13:47:53
+ * @since 1.0, 2021-12-28 16:28:14
  */
 public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6172446892253251739L;
+	private static final long serialVersionUID = 6637135543361451161L;
 
 	/**
 	 * 活动名称。
@@ -54,7 +54,7 @@ public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject
 枚举值：
 MERCHANT_UPLOAD：商户上传自定义code，发券时系统随机选取上传的券code发放
 
-MERCHANT_API：发奖时指定券码发奖，此模式无须提前上传券码。（该模式暂时只针对exchange_voucher生效）
+MERCHANT_API：发奖时指定券码发奖，此模式无须提前上传券码。
 	 */
 	@ApiField("code_mode")
 	private String codeMode;

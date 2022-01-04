@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsFacecheckSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4799399139154422849L;
+	private static final long serialVersionUID = 3262413386427295364L;
 
 	/**
 	 * 设备激活序号

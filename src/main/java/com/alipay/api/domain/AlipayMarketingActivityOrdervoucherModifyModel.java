@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单券修改
  *
  * @author auto create
- * @since 1.0, 2021-12-21 13:43:09
+ * @since 1.0, 2021-12-29 15:08:37
  */
 public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3394278127697752732L;
+	private static final long serialVersionUID = 8658173834624187341L;
 
 	/**
 	 * 活动id
@@ -38,24 +38,14 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	private String outBizNo;
 
 	/**
-	 * 券发放结束时间。
-
-
+	 * 券发放结束时间。该值为空表示不修改
 
 格式为：yyyy-MM-dd HH:mm:ss
 
-
-
 限制：
-
-券发放结束时间
-
-publish_end_time 与 券发放开始时间
-
-publish_start_time 间隔必须小于等于180天
-
-修改发放结束时间，只能延长，不允许缩短。
-该值为空表示不修改
+1、券发放结束时间publish_end_time 与 券发放开始时间publish_start_time 间隔必须小于等于180天
+2、修改发放结束时间，只能延长，不允许缩短。
+3、活动已到期或已停止修改结束时间不会生效
 	 */
 	@ApiField("publish_end_time")
 	private Date publishEndTime;

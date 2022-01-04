@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.openbizmock.apisdkgray.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-20 14:06:14
+ * @since 1.0, 2021-12-28 19:40:36
  */
 public class AlipayOpenAppOpenbizmockApisdkgrayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6432287584877374225L;
+	private static final long serialVersionUID = 2395873535978194723L;
 
 	/** 
 	 * 测试接口参数随便配置

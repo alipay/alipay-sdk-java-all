@@ -7,17 +7,25 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务列表
  *
  * @author auto create
- * @since 1.0, 2021-10-09 11:19:30
+ * @since 1.0, 2021-12-29 16:31:11
  */
 public class TaskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1849642645887188397L;
+	private static final long serialVersionUID = 3195111542236758659L;
 
 	/**
 	 * 已获得积分数
 	 */
 	@ApiField("earned_point")
 	private Long earnedPoint;
+
+	/**
+	 * 任务归属类型
+PLATFORM：平台
+THIRD_PARTY：三方
+	 */
+	@ApiField("owner_type")
+	private String ownerType;
 
 	/**
 	 * 任务code，唯一标识
@@ -50,6 +58,12 @@ public class TaskInfo extends AlipayObject {
 	private String taskName;
 
 	/**
+	 * 任务剩余积分数
+	 */
+	@ApiField("task_remain_point")
+	private Long taskRemainPoint;
+
+	/**
 	 * 任务开始时间；格式"yyyy.MM.dd"
 	 */
 	@ApiField("task_start_time")
@@ -76,6 +90,13 @@ FINISH：已完成
 	}
 	public void setEarnedPoint(Long earnedPoint) {
 		this.earnedPoint = earnedPoint;
+	}
+
+	public String getOwnerType() {
+		return this.ownerType;
+	}
+	public void setOwnerType(String ownerType) {
+		this.ownerType = ownerType;
 	}
 
 	public String getTaskCode() {
@@ -111,6 +132,13 @@ FINISH：已完成
 	}
 	public void setTaskName(String taskName) {
 		this.taskName = taskName;
+	}
+
+	public Long getTaskRemainPoint() {
+		return this.taskRemainPoint;
+	}
+	public void setTaskRemainPoint(Long taskRemainPoint) {
+		this.taskRemainPoint = taskRemainPoint;
 	}
 
 	public String getTaskStartTime() {

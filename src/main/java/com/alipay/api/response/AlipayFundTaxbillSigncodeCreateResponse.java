@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.taxbill.signcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-29 19:22:38
+ * @since 1.0, 2022-01-04 11:08:35
  */
 public class AlipayFundTaxbillSigncodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1764271663393739354L;
+	private static final long serialVersionUID = 7226655524461526569L;
 
 	/** 
 	 * 场景码

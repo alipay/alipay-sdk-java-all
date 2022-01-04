@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟类目菜品删除简化接口
  *
  * @author auto create
- * @since 1.0, 2021-01-04 15:44:57
+ * @since 1.0, 2022-01-04 10:33:14
  */
 public class KoubeiCateringDishVirtualcategoryDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8854548485629793479L;
+	private static final long serialVersionUID = 6255438796475959656L;
 
 	/**
 	 * 如果需要删除某一个类目时传入

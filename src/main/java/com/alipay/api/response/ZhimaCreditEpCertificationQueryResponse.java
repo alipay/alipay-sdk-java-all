@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-20 11:17:51
+ * @since 1.0, 2021-12-31 14:12:55
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5525218913659449675L;
+	private static final long serialVersionUID = 4129523349413284485L;
 
 	/** 
 	 * 代理函有效访问地址，有效时间2分钟，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
@@ -40,6 +42,13 @@ FAIL，代表用户未授权或授权失效
 	 */
 	@ApiField("certify_channel")
 	private String certifyChannel;
+
+	/** 
+	 * 认证失败原因列表，当certify_status=FAIL时返回
+	 */
+	@ApiListField("certify_fail_reasons")
+	@ApiField("string")
+	private List<String> certifyFailReasons;
 
 	/** 
 	 * 认证模式，取值如下：ATTORNEY代表代理人；LEGAL_PERSON代表法定代表人
@@ -125,6 +134,13 @@ FAIL，代表失败
 	}
 	public String getCertifyChannel( ) {
 		return this.certifyChannel;
+	}
+
+	public void setCertifyFailReasons(List<String> certifyFailReasons) {
+		this.certifyFailReasons = certifyFailReasons;
+	}
+	public List<String> getCertifyFailReasons( ) {
+		return this.certifyFailReasons;
 	}
 
 	public void setCertifyMode(String certifyMode) {

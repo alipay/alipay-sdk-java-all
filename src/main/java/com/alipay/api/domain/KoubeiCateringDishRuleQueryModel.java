@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 菜品规则规则查询通用API
  *
  * @author auto create
- * @since 1.0, 2020-09-08 17:20:22
+ * @since 1.0, 2022-01-04 10:40:04
  */
 public class KoubeiCateringDishRuleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2593726258543879987L;
+	private static final long serialVersionUID = 1277374476855748111L;
 
 	/**
 	 * 规则的类型，枚举值如下：

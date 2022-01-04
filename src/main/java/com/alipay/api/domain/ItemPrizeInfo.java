@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 奖品列表
  *
  * @author auto create
- * @since 1.0, 2021-12-21 16:09:16
+ * @since 1.0, 2021-12-28 21:12:47
  */
 public class ItemPrizeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4689451686118665565L;
+	private static final long serialVersionUID = 1885549759314244374L;
 
 	/**
 	 * 奖品是否能兑换
@@ -42,6 +42,12 @@ public class ItemPrizeInfo extends AlipayObject {
 	 */
 	@ApiField("item_price")
 	private String itemPrice;
+
+	/**
+	 * 奖品兑换需要积分数
+	 */
+	@ApiField("point_amount")
+	private Long pointAmount;
 
 	public Boolean getItemCanExchange() {
 		return this.itemCanExchange;
@@ -76,6 +82,13 @@ public class ItemPrizeInfo extends AlipayObject {
 	}
 	public void setItemPrice(String itemPrice) {
 		this.itemPrice = itemPrice;
+	}
+
+	public Long getPointAmount() {
+		return this.pointAmount;
+	}
+	public void setPointAmount(Long pointAmount) {
+		this.pointAmount = pointAmount;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容发布接口
  *
  * @author auto create
- * @since 1.0, 2021-11-12 15:44:34
+ * @since 1.0, 2021-12-29 11:23:56
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4838143415919597371L;
+	private static final long serialVersionUID = 1224877598878575245L;
 
 	/**
 	 * 生活号+号ID，只有MCN机构为达人号ID发布内容才需要传入

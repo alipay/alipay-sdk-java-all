@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询账户余额
  *
  * @author auto create
- * @since 1.0, 2021-12-21 11:17:59
+ * @since 1.0, 2021-12-31 16:34:35
  */
 public class AlipayEbppAccountBalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4225193255662158765L;
+	private static final long serialVersionUID = 3447229881281717362L;
 
 	/**
 	 * 机构的子户账号
