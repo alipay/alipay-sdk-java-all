@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 磋商成员列表
  *
  * @author auto create
- * @since 1.0, 2021-12-09 16:19:23
+ * @since 1.0, 2022-01-07 10:42:51
  */
 public class OpenApiMatterMemberDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5735456675957486441L;
+	private static final long serialVersionUID = 5663372188596828763L;
 
 	/**
 	 * 事项编码

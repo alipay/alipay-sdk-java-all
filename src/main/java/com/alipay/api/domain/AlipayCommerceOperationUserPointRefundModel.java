@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationUserPointRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1575693979638453892L;
+	private static final long serialVersionUID = 5359125614843968276L;
 
 	/**
 	 * 原始扣减积分的请求ID

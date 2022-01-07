@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.dossier.courtassess.submit request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:46:42
+ * @since 1.0, 2022-01-07 14:37:56
  */
 public class ZhimaCreditEpDossierCourtassessSubmitRequest implements AlipayRequest<ZhimaCreditEpDossierCourtassessSubmitResponse> {
 

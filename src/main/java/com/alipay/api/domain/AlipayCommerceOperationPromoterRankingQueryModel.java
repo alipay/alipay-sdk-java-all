@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 我的排行
  *
  * @author auto create
- * @since 1.0, 2021-12-21 10:49:39
+ * @since 1.0, 2022-01-06 14:33:20
  */
 public class AlipayCommerceOperationPromoterRankingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3193767767153887122L;
+	private static final long serialVersionUID = 2733854898762119176L;
 
 	/**
 	 * 需要绑定的门店对映的pid
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * 任务code，唯一标识
+	 */
+	@ApiField("task_code")
+	private String taskCode;
 
 	/**
 	 * total
@@ -36,6 +42,13 @@ public class AlipayCommerceOperationPromoterRankingQueryModel extends AlipayObje
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public String getTaskCode() {
+		return this.taskCode;
+	}
+	public void setTaskCode(String taskCode) {
+		this.taskCode = taskCode;
 	}
 
 	public String getType() {

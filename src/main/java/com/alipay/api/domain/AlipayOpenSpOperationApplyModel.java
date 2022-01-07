@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 向商户发起代运营操作
  *
  * @author auto create
- * @since 1.0, 2021-11-20 01:54:04
+ * @since 1.0, 2022-01-04 20:05:26
  */
 public class AlipayOpenSpOperationApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5379147583862669159L;
+	private static final long serialVersionUID = 5553794981243288438L;
 
 	/**
 	 * 接入的产品编号。 枚举如下：
@@ -31,6 +31,7 @@ public class AlipayOpenSpOperationApplyModel extends AlipayObject {
 
 	/**
 	 * 场景授权列表结构结构：场景codeA:权限code1,权限code2;场景codeB:权限code1,权限code2;
+和access_product_code只需要传一个
 	 */
 	@ApiField("isv_scene_permissions")
 	private String isvScenePermissions;

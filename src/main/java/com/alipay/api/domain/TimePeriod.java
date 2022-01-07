@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TimePeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 8443516766896673243L;
+	private static final long serialVersionUID = 4819663356861735335L;
 
 	/**
 	 * 自提时段开始时间，如05:00

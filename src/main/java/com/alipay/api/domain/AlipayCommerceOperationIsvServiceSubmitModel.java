@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  *  餐饮服务标准化服务申报
  *
  * @author auto create
- * @since 1.0, 2021-09-16 14:41:09
+ * @since 1.0, 2022-01-05 14:43:20
  */
 public class AlipayCommerceOperationIsvServiceSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4684469713435484645L;
+	private static final long serialVersionUID = 7534425374963926557L;
 
 	/**
 	 * 扩展字段，服务扩展字段，示例：key：service_levle，value：standard
@@ -28,6 +28,13 @@ public class AlipayCommerceOperationIsvServiceSubmitModel extends AlipayObject {
 	 */
 	@ApiField("merchant_info")
 	private CateringMerchantInfo merchantInfo;
+
+	/**
+	 * 服务营业时间(与门店营业时间二选一必填),示例：[{"business_time":[{"start_time":"10:00","end_time":"14:00"},{"start_time":"16:00","end_time":"20:00"}],"business_date":["周一","周二"]},{"business_time":[{"start_time":"08:00","end_time":"22:00"}],"business_date":["周三","周四","周五"]},{"business_time":[{"start_time":"08:00","end_time":"23:00"}],"business_date":["周六","周日"]}]
+	 */
+	@ApiListField("service_business_hours")
+	@ApiField("service_business_hours")
+	private List<ServiceBusinessHours> serviceBusinessHours;
 
 	/**
 	 * 描述此服务的内容
@@ -95,6 +102,13 @@ SERVICE_OFFLINE：服务下线
 	}
 	public void setMerchantInfo(CateringMerchantInfo merchantInfo) {
 		this.merchantInfo = merchantInfo;
+	}
+
+	public List<ServiceBusinessHours> getServiceBusinessHours() {
+		return this.serviceBusinessHours;
+	}
+	public void setServiceBusinessHours(List<ServiceBusinessHours> serviceBusinessHours) {
+		this.serviceBusinessHours = serviceBusinessHours;
 	}
 
 	public String getServiceDescription() {

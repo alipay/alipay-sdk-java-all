@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbdishVirtualDishSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8823535447161262318L;
+	private static final long serialVersionUID = 7855813845764824963L;
 
 	/**
 	 * 外部菜品id

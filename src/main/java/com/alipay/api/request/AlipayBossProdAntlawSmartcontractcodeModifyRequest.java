@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.antlaw.smartcontractcode.modify request
  * 
  * @author auto create
- * @since 1.0, 2021-12-10 14:25:42
+ * @since 1.0, 2022-01-04 20:45:08
  */
 public class AlipayBossProdAntlawSmartcontractcodeModifyRequest implements AlipayRequest<AlipayBossProdAntlawSmartcontractcodeModifyResponse> {
 

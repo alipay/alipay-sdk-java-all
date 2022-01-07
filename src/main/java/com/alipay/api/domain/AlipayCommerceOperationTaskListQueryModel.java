@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务列表
  *
  * @author auto create
- * @since 1.0, 2021-12-21 10:49:01
+ * @since 1.0, 2022-01-06 14:27:10
  */
 public class AlipayCommerceOperationTaskListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4175561816818518533L;
+	private static final long serialVersionUID = 1686482499119815568L;
 
 	/**
 	 * 分页数
@@ -34,6 +34,7 @@ public class AlipayCommerceOperationTaskListQueryModel extends AlipayObject {
 	/**
 	 * received: 已领取任务
 recommended: 推荐任务
+expired：已过期任务
 	 */
 	@ApiField("type")
 	private String type;

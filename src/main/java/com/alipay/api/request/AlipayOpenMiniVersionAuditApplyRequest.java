@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2021-12-13 11:30:33
+ * @since 1.0, 2022-01-05 14:55:36
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -203,6 +203,13 @@ LOCATION-指定区域
 	* 省市区信息。当region_type为LOCATION或传入city_code时，province_code不能为空；填写area_code时，province_code和city_code不能为空。只填province_code则全选该省；填写province_code和city_code则全选该市，以此类推。省市区code参见https://gw.alipayobjects.com/os/bmw-prod/0aab0319-13de-42b9-85cf-13877a5f78ed.xlsx
 	 */
 	private List<RegionInfo> serviceRegionInfo;
+
+	/** 
+	* 如果有绿通权益，是否使用绿通权益加速审核：
+加速（默认）：true
+不加速：false
+	 */
+	private String speedUp;
 
 	/** 
 	* 测试账号，是否需要填写请参见https://opendocs.alipay.com/mini/operation/standard/case/akxg6r#3.%20%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%E6%8F%90%E4%BA%A4%E4%B8%8D%E5%AE%8C%E6%95%B4
@@ -446,6 +453,13 @@ LOCATION-指定区域
 		return this.serviceRegionInfo;
 	}
 
+	public void setSpeedUp(String speedUp) {
+		this.speedUp = speedUp;
+	}
+	public String getSpeedUp() {
+		return this.speedUp;
+	}
+
 	public void setTestAccout(String testAccout) {
 		this.testAccout = testAccout;
 	}
@@ -572,6 +586,7 @@ LOCATION-指定区域
 		txtParams.put("service_email", this.serviceEmail);
 		txtParams.put("service_phone", this.servicePhone);
 		txtParams.put("service_region_info", this.serviceRegionInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.serviceRegionInfo, true));
+		txtParams.put("speed_up", this.speedUp);
 		txtParams.put("test_accout", this.testAccout);
 		txtParams.put("test_password", this.testPassword);
 		txtParams.put("version_desc", this.versionDesc);

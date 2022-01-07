@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcardEduDepositOrderAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1254557123411215419L;
+	private static final long serialVersionUID = 5326555844653314511L;
 
 	/** 
 	 * 支付申请流水号

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮服务标准化-外卖服务范围
  *
  * @author auto create
- * @since 1.0, 2021-09-14 14:56:08
+ * @since 1.0, 2022-01-05 14:43:20
  */
 public class TakeAwayScopeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1658945844927526156L;
+	private static final long serialVersionUID = 4439262464788264283L;
 
 	/**
 	 * 圆形范围半径（单位公里），type为CIRCULAR时必填，circular_area与polygon_area二选一

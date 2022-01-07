@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherDisplayInfoModify extends AlipayObject {
 
-	private static final long serialVersionUID = 3217497629459952494L;
+	private static final long serialVersionUID = 1883754453756225613L;
 
 	/**
 	 * 商家logo 需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_BRAND_LOGO，返回的resource_id即为该参数的值 限制: 服务商平台模式必传 上传图片尺寸600*600，支持格式：png、jpg、jpeg、bmp，大小不超过2MB

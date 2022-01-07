@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoRebateBalanceSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7588192786841453729L;
+	private static final long serialVersionUID = 6717496423742575175L;
 
 	/** 
 	 * 给用户发放集分宝的数量

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.operation.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-22 10:10:33
+ * @since 1.0, 2022-01-04 20:05:42
  */
 public class AlipayOpenSpOperationApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8841917255691352267L;
+	private static final long serialVersionUID = 2833293486589369682L;
 
 	/** 
 	 * 支付宝操作批次号

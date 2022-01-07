@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.opengreen.energy.create request
  * 
  * @author auto create
- * @since 1.0, 2021-12-22 00:11:04
+ * @since 1.0, 2022-01-05 16:37:57
  */
 public class AlipaySocialOpengreenEnergyCreateRequest implements AlipayRequest<AlipaySocialOpengreenEnergyCreateResponse> {
 

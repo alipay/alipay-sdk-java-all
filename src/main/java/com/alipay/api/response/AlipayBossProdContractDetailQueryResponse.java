@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.contract.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-09 16:52:50
+ * @since 1.0, 2022-01-06 21:16:12
  */
 public class AlipayBossProdContractDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7768139476947526161L;
+	private static final long serialVersionUID = 7768271165494311964L;
 
 	/** 
 	 * 请求code 200 成功 别的失败 ；失败ErrorCode编码请联系对接技术

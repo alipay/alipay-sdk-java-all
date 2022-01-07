@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同附件
  *
  * @author auto create
- * @since 1.0, 2021-12-09 16:19:46
+ * @since 1.0, 2022-01-07 10:42:51
  */
 public class ContractOpenApiAttachDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3112153769734642318L;
+	private static final long serialVersionUID = 3855186926824355282L;
 
 	/**
 	 * 文件地址

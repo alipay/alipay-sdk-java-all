@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFincoreComplianceCaasBlacklistConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1157818825334492388L;
+	private static final long serialVersionUID = 5359169799186231498L;
 
 	/** 
 	 * result_code + 咨询的结果code + 枚举值：ALLOW（允许，标识未在黑名单中）、NOT_ALLOW（标识在黑名单中）、UN_PROCESS（标识服务降级or未有准确结果，需要调用方兜底处理）

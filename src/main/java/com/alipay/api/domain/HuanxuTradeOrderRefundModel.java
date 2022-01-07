@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HuanxuTradeOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2192982841968742729L;
+	private static final long serialVersionUID = 7617392472277734989L;
 
 	/**
 	 * 用户身份识别值。根据type和issuer传入对应格式的值：若type为USER_ID，issuer为ALIPAY，则identity为2088开头的16位纯数字。若type为USER_ID，issuer为MERCHANT，则identity根据商户定义的格式传入。若type为BAR_CODE，issuer为ALIPAY，则identity为25~30开头的长度为16~24位数字的焕旭付款码（实际字符串长度以及规则可能会进行调整与优化，以开发者获取的付款码长度为准）

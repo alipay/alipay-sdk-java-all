@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VerifyInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6374451313157884688L;
+	private static final long serialVersionUID = 4211376328124618589L;
 
 	/**
 	 * 公司地址

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮服务标准化门店信息
  *
  * @author auto create
- * @since 1.0, 2021-07-13 16:13:05
+ * @since 1.0, 2022-01-05 14:43:20
  */
 public class CateringStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2774196635476267171L;
+	private static final long serialVersionUID = 7358475925687251154L;
 
 	/**
-	 * 门店营业时间
+	 * 门店营业时间；门店营业时间与服务营业时间二选一必填
 	 */
 	@ApiField("business_hours")
 	private BusinessHoursInfo businessHours;
