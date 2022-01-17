@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控制度添加
  *
  * @author auto create
- * @since 1.0, 2021-12-14 17:49:02
+ * @since 1.0, 2022-01-10 10:00:10
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3857752452744739982L;
+	private static final long serialVersionUID = 1828444934843523234L;
 
 	/**
 	 * 企业ID
@@ -57,6 +57,7 @@ public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObj
 3）如果费用类型为METRO，费控维度地铁卡类型（CARD_TYPE）对应的费控条件必须存在；
 4）如果因公场景为OVERTIME，费控维度时间段（ALARM_CLOCK_TIME）对应的费控条件必须存在；
 5）不能存在重复的费控维度对应的费控条件；
+6）非MEAL费用类型，商户仅支持MERCHANT，不支持MEAL_MERCHANT
 	 */
 	@ApiListField("expense_ctrl_rule_info_list")
 	@ApiField("expense_ctr_rule_info")
@@ -68,6 +69,12 @@ public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObj
 	 */
 	@ApiField("expense_type")
 	private String expenseType;
+
+	/**
+	 * 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略， 枚举值：PERSONAL（全部个人账户支付）
+	 */
+	@ApiField("payment_policy")
+	private String paymentPolicy;
 
 	/**
 	 * 因公场景
@@ -139,6 +146,13 @@ public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObj
 	}
 	public void setExpenseType(String expenseType) {
 		this.expenseType = expenseType;
+	}
+
+	public String getPaymentPolicy() {
+		return this.paymentPolicy;
+	}
+	public void setPaymentPolicy(String paymentPolicy) {
+		this.paymentPolicy = paymentPolicy;
 	}
 
 	public String getSceneType() {

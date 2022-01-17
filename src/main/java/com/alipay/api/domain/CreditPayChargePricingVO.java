@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付费用详情视图
  *
  * @author auto create
- * @since 1.0, 2019-07-12 14:25:34
+ * @since 1.0, 2022-01-13 16:21:55
  */
 public class CreditPayChargePricingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6599634638846917812L;
+	private static final long serialVersionUID = 3155232612149128948L;
 
 	/**
 	 * 实际费用，单位元
@@ -24,6 +24,12 @@ public class CreditPayChargePricingVO extends AlipayObject {
 	 */
 	@ApiField("actual_charge_rate")
 	private String actualChargeRate;
+
+	/**
+	 * 费用CODE
+	 */
+	@ApiField("charge_code")
+	private String chargeCode;
 
 	/**
 	 * 费用名目
@@ -55,6 +61,13 @@ public class CreditPayChargePricingVO extends AlipayObject {
 	}
 	public void setActualChargeRate(String actualChargeRate) {
 		this.actualChargeRate = actualChargeRate;
+	}
+
+	public String getChargeCode() {
+		return this.chargeCode;
+	}
+	public void setChargeCode(String chargeCode) {
+		this.chargeCode = chargeCode;
 	}
 
 	public String getChargeName() {

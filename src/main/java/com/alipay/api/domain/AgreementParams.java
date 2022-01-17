@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于传递用户和支付宝的协议相关信息，json格式
  *
  * @author auto create
- * @since 1.0, 2022-01-07 14:03:32
+ * @since 1.0, 2022-01-10 15:05:04
  */
 public class AgreementParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5475978188883135564L;
+	private static final long serialVersionUID = 4169514751422217146L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ）
@@ -30,6 +30,12 @@ public class AgreementParams extends AlipayObject {
 	 */
 	@ApiField("auth_confirm_no")
 	private String authConfirmNo;
+
+	/**
+	 * 商户代扣扣款许可
+	 */
+	@ApiField("deduct_permission")
+	private String deductPermission;
 
 	public String getAgreementNo() {
 		return this.agreementNo;
@@ -50,6 +56,13 @@ public class AgreementParams extends AlipayObject {
 	}
 	public void setAuthConfirmNo(String authConfirmNo) {
 		this.authConfirmNo = authConfirmNo;
+	}
+
+	public String getDeductPermission() {
+		return this.deductPermission;
+	}
+	public void setDeductPermission(String deductPermission) {
+		this.deductPermission = deductPermission;
 	}
 
 }

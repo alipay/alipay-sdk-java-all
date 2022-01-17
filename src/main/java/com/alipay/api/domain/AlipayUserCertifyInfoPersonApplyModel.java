@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人认证信息申请接口
  *
  * @author auto create
- * @since 1.0, 2021-12-16 16:07:02
+ * @since 1.0, 2022-01-14 11:09:54
  */
 public class AlipayUserCertifyInfoPersonApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7415144134266396385L;
+	private static final long serialVersionUID = 4193665435687647652L;
 
 	/**
 	 * 用户详细地址
@@ -42,6 +42,12 @@ public class AlipayUserCertifyInfoPersonApplyModel extends AlipayObject {
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 证件ID，标识证件档案中心的一次采集流水ID
+	 */
+	@ApiField("certificate_id")
+	private String certificateId;
 
 	/**
 	 * 用户住址的城市名称
@@ -130,6 +136,13 @@ public class AlipayUserCertifyInfoPersonApplyModel extends AlipayObject {
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getCertificateId() {
+		return this.certificateId;
+	}
+	public void setCertificateId(String certificateId) {
+		this.certificateId = certificateId;
 	}
 
 	public String getCity() {

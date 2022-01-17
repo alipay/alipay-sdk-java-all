@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据交易流水创建企业商户关系
  *
  * @author auto create
- * @since 1.0, 2021-12-10 09:51:51
+ * @since 1.0, 2022-01-11 16:47:40
  */
 public class AlipayEbppInvoiceEnterpriseMerchantrelationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2634322617297476683L;
+	private static final long serialVersionUID = 4661267483859367258L;
 
 	/**
 	 * 企业ID
@@ -30,6 +30,12 @@ public class AlipayEbppInvoiceEnterpriseMerchantrelationCreateModel extends Alip
 	 */
 	@ApiField("operator_id")
 	private String operatorId;
+
+	/**
+	 * 门店信息
+	 */
+	@ApiField("shop_info")
+	private EcShopInfo shopInfo;
 
 	/**
 	 * 交易流水号
@@ -56,6 +62,13 @@ public class AlipayEbppInvoiceEnterpriseMerchantrelationCreateModel extends Alip
 	}
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
+	}
+
+	public EcShopInfo getShopInfo() {
+		return this.shopInfo;
+	}
+	public void setShopInfo(EcShopInfo shopInfo) {
+		this.shopInfo = shopInfo;
 	}
 
 	public String getTradeNo() {

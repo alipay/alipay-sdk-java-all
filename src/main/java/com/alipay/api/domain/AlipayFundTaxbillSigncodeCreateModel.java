@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建签约吱口令
  *
  * @author auto create
- * @since 1.0, 2022-01-04 11:08:35
+ * @since 1.0, 2022-01-12 15:09:17
  */
 public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6472845928764543535L;
+	private static final long serialVersionUID = 3184314321578983346L;
 
 	/**
-	 * 回跳url
+	 * 签约完成之后用户点击签约完成的回跳url，自定义提供，只支持支付宝端内的小程序跳转和H5跳转，不支持APP间跳转。入无特殊需要，可忽略此字段。
 	 */
 	@ApiField("back_url")
 	private String backUrl;
@@ -32,7 +32,7 @@ public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 	private String contractorCode;
 
 	/**
-	 * 用户的签约支付宝账号，可选传递。如传递，则只有登录号匹配的用户才能进行签约
+	 * 用户的签约支付宝账号，默认必输，限定只有登录号匹配的支付宝用户才能进行签约。
 	 */
 	@ApiField("employee_alipay_logon_id")
 	private String employeeAlipayLogonId;
@@ -56,7 +56,7 @@ public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 	private String employerCode;
 
 	/**
-	 * 用户在用工企业的唯一性身份标识，用户单位自定义参数，用于用工单位识别雇员身份
+	 * 用户在用工企业的唯一性身份标识，用户单位自定义参数，用于用工单位识别雇员身份，签约完成后的异步通知回回传此参数。
 	 */
 	@ApiField("identification_in_belonging_employer")
 	private String identificationInBelongingEmployer;
@@ -68,7 +68,7 @@ public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 	private String productCode;
 
 	/**
-	 * 税优模式，有限枚举。1.TEMPORARY_TAX_REGISTRATION（临时税务登记 ）2. NATURAL_PERSON_LEVIED（自然人代征）
+	 * 税优模式，有限枚，实际传递的值依赖具体业务情况。1.TEMPORARY_TAX_REGISTRATION（临时税务登记 ）2. NATURAL_PERSON_LEVIED（自然人代征）
 	 */
 	@ApiField("tax_optimization_mode")
 	private String taxOptimizationMode;

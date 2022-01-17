@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.qrcode.bind request
  * 
  * @author auto create
- * @since 1.0, 2021-11-08 15:22:36
+ * @since 1.0, 2022-01-17 11:26:08
  */
 public class AlipayOpenMiniQrcodeBindRequest implements AlipayRequest<AlipayOpenMiniQrcodeBindResponse> {
 

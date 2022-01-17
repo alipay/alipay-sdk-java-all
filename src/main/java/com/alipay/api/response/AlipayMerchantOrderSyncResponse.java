@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.OrderDataDistributeInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,19 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-04 10:35:42
+ * @since 1.0, 2022-01-15 21:30:36
  */
 public class AlipayMerchantOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3667839248779234267L;
+	private static final long serialVersionUID = 6239655144863428153L;
+
+	/** 
+	 * 分发结果
+若未分发到场景侧，则会返回具体的未分发原因
+	 */
+	@ApiListField("distribute_result")
+	@ApiField("order_data_distribute_info")
+	private List<OrderDataDistributeInfo> distributeResult;
 
 	/** 
 	 * 支付宝订单号
@@ -32,6 +43,13 @@ public class AlipayMerchantOrderSyncResponse extends AlipayResponse {
 	 */
 	@ApiField("record_id")
 	private String recordId;
+
+	public void setDistributeResult(List<OrderDataDistributeInfo> distributeResult) {
+		this.distributeResult = distributeResult;
+	}
+	public List<OrderDataDistributeInfo> getDistributeResult( ) {
+		return this.distributeResult;
+	}
 
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;

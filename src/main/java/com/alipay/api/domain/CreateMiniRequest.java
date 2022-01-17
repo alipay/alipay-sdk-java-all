@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序创建请求
  *
  * @author auto create
- * @since 1.0, 2021-07-29 09:50:57
+ * @since 1.0, 2022-01-11 20:22:25
  */
 public class CreateMiniRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 2569687253197527173L;
+	private static final long serialVersionUID = 5611746683823362692L;
 
 	/**
 	 * 商家登录支付宝的邮箱帐号或手机号，当前仅支持企业支付宝帐号
@@ -48,6 +48,13 @@ public class CreateMiniRequest extends AlipayObject {
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
+
+	/**
+	 * 是否支持个人账号升级为个体工商户的账号类型
+true为支持
+	 */
+	@ApiField("is_individual")
+	private Boolean isIndividual;
 
 	/**
 	 * 商家法人名称
@@ -101,6 +108,13 @@ public class CreateMiniRequest extends AlipayObject {
 	}
 	public void setContactPhone(String contactPhone) {
 		this.contactPhone = contactPhone;
+	}
+
+	public Boolean getIsIndividual() {
+		return this.isIndividual;
+	}
+	public void setIsIndividual(Boolean isIndividual) {
+		this.isIndividual = isIndividual;
 	}
 
 	public String getLegalPersonalName() {

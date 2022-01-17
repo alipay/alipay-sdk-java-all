@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.ecsign.error.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:55
+ * @since 1.0, 2022-01-17 13:01:32
  */
 public class AlipayFinancialnetAuthEcsignErrorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3165256449837392798L;
+	private static final long serialVersionUID = 7567737888831547992L;
 
 	/** 
 	 * 错误信息

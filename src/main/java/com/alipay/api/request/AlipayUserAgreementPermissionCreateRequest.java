@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.agreement.permission.create request
  * 
  * @author auto create
- * @since 1.0, 2022-01-04 10:20:35
+ * @since 1.0, 2022-01-08 17:35:35
  */
 public class AlipayUserAgreementPermissionCreateRequest implements AlipayRequest<AlipayUserAgreementPermissionCreateResponse> {
 

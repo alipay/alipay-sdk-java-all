@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.sign response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:02:37
+ * @since 1.0, 2022-01-17 14:15:40
  */
 public class AlipayFundJointaccountSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2827249982345975128L;
+	private static final long serialVersionUID = 5498886796989857259L;
 
 	
 

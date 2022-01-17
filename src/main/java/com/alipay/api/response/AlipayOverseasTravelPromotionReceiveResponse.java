@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.promotion.receive response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-12 21:07:36
+ * @since 1.0, 2022-01-17 17:49:07
  */
 public class AlipayOverseasTravelPromotionReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3737614149163336257L;
+	private static final long serialVersionUID = 1341865632787998788L;
 
 	/** 
 	 * 券平台领券成功的券id

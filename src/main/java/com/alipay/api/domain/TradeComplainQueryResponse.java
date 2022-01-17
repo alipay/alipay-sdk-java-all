@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易纠纷查询结果
  *
  * @author auto create
- * @since 1.0, 2020-11-12 14:57:36
+ * @since 1.0, 2022-01-13 17:13:13
  */
 public class TradeComplainQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8422956361829779363L;
+	private static final long serialVersionUID = 1496912474822281892L;
 
 	/**
 	 * 支付宝侧投诉单号
@@ -91,7 +91,7 @@ public class TradeComplainQueryResponse extends AlipayObject {
 	private String status;
 
 	/**
-	 * 应用id，例如小程序id
+	 * 应用id，例如小程序id、生活号id、商家pid
 	 */
 	@ApiField("target_id")
 	private String targetId;
@@ -100,6 +100,7 @@ public class TradeComplainQueryResponse extends AlipayObject {
 	 * 应用类型
 小程序为：APPID
 生活号为：PUBLICID
+商家为：PID
 	 */
 	@ApiField("target_type")
 	private String targetType;

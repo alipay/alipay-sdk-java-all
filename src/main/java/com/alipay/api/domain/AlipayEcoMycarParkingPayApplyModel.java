@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarParkingPayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3584753779793167853L;
+	private static final long serialVersionUID = 7581774148227897183L;
 
 	/**
 	 * 进场时间(格式"YYYY-MM-DD HH:mm:ss"，24小时制)
@@ -44,7 +44,9 @@ public class AlipayEcoMycarParkingPayApplyModel extends AlipayObject {
 	private String payScene;
 
 	/**
-	 * 车牌颜色
+	 * 车牌颜色：
+BLUE("BLUE", "蓝色" );
+GREEN("GREEN", "绿色" );
 	 */
 	@ApiField("plate_color")
 	private String plateColor;

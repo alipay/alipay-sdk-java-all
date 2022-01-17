@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控规则信息
  *
  * @author auto create
- * @since 1.0, 2022-01-06 16:21:24
+ * @since 1.0, 2022-01-10 09:59:50
  */
 public class StandardRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2795514973532453228L;
+	private static final long serialVersionUID = 3813289577159983486L;
 
 	/**
 	 * 有效期截止
@@ -35,6 +35,12 @@ public class StandardRuleInfo extends AlipayObject {
 	@ApiListField("expense_ctrl_rule_info_list")
 	@ApiField("expense_ctr_rule_info")
 	private List<ExpenseCtrRuleInfo> expenseCtrlRuleInfoList;
+
+	/**
+	 * 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略， 枚举值：PERSONAL（全部个人账户支付）
+	 */
+	@ApiField("payment_policy")
+	private String paymentPolicy;
 
 	/**
 	 * 费控规则说明
@@ -73,6 +79,13 @@ public class StandardRuleInfo extends AlipayObject {
 	}
 	public void setExpenseCtrlRuleInfoList(List<ExpenseCtrRuleInfo> expenseCtrlRuleInfoList) {
 		this.expenseCtrlRuleInfoList = expenseCtrlRuleInfoList;
+	}
+
+	public String getPaymentPolicy() {
+		return this.paymentPolicy;
+	}
+	public void setPaymentPolicy(String paymentPolicy) {
+		this.paymentPolicy = paymentPolicy;
 	}
 
 	public String getStandardDesc() {

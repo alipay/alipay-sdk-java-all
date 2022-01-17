@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.scene.kids.close response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-26 17:15:31
+ * @since 1.0, 2022-01-14 16:36:34
  */
 public class AlipayCommerceEducateSceneKidsCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2674598217851881532L;
+	private static final long serialVersionUID = 8314271792284376876L;
 
 	/** 
 	 * 关闭业务是否成功

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境游发现店铺收藏接口
  *
  * @author auto create
- * @since 1.0, 2019-11-14 22:13:13
+ * @since 1.0, 2022-01-17 17:47:35
  */
 public class AlipayOverseasTravelShopFollowModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3637829387779814632L;
+	private static final long serialVersionUID = 4751163973712573629L;
 
 	/**
 	 * 取值说明：CONFIRM确认收藏/CANCEL取消收藏

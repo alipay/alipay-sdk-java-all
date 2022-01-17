@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车牌代扣状态查询API
  *
  * @author auto create
- * @since 1.0, 2021-08-13 15:13:21
+ * @since 1.0, 2022-01-12 14:12:46
  */
 public class AlipayEcoMycarParkingAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3656156383711465778L;
+	private static final long serialVersionUID = 5281585869597687416L;
 
 	/**
 	 * 支付宝用户ID；只有传入该参数才能准确的匹配车和用户的关系，否则有可能无法正确获取到用户的代扣状态。
@@ -30,6 +30,12 @@ public class AlipayEcoMycarParkingAgreementQueryModel extends AlipayObject {
 	 */
 	@ApiField("parking_id")
 	private String parkingId;
+
+	/**
+	 * 车牌颜色, 蓝-BLUE、绿-GREEN、黄-YELLOW、白-WHITE、黑-BLACK、黄绿色-LIMEGREEN
+	 */
+	@ApiField("plate_color")
+	private String plateColor;
 
 	/**
 	 * 接口版本号，不填则默认为v2.0，建议使用最新版v2.1
@@ -56,6 +62,13 @@ public class AlipayEcoMycarParkingAgreementQueryModel extends AlipayObject {
 	}
 	public void setParkingId(String parkingId) {
 		this.parkingId = parkingId;
+	}
+
+	public String getPlateColor() {
+		return this.plateColor;
+	}
+	public void setPlateColor(String plateColor) {
+		this.plateColor = plateColor;
 	}
 
 	public String getVer() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跨境游私域商品数据同步
  *
  * @author auto create
- * @since 1.0, 2021-09-02 19:32:33
+ * @since 1.0, 2022-01-17 17:48:28
  */
 public class AlipayOverseasTravelGoodsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4537642342949262536L;
+	private static final long serialVersionUID = 6118192399685141145L;
 
 	/**
 	 * 商品首图，外部商品图片地址

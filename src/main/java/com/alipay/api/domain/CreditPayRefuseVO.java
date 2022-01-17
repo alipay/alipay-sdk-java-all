@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付咨询拒绝详情视图
  *
  * @author auto create
- * @since 1.0, 2019-07-12 14:25:15
+ * @since 1.0, 2022-01-13 16:21:44
  */
 public class CreditPayRefuseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5851972227516668412L;
+	private static final long serialVersionUID = 3811366845359425579L;
 
 	/**
 	 * 拒绝码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创意关联物料元素
  *
  * @author auto create
- * @since 1.0, 2021-09-17 10:08:24
+ * @since 1.0, 2022-01-10 21:08:32
  */
 public class MaterialUnit extends AlipayObject {
 
-	private static final long serialVersionUID = 8641947925662889478L;
+	private static final long serialVersionUID = 5138236849963718465L;
 
 	/**
 	 * 创意元素C端渲染关联位置key值
@@ -24,6 +24,18 @@ public class MaterialUnit extends AlipayObject {
 	 */
 	@ApiField("material")
 	private String material;
+
+	/**
+	 * 播放次数
+	 */
+	@ApiField("play_frequency")
+	private Long playFrequency;
+
+	/**
+	 * 播放时长，单位/s
+	 */
+	@ApiField("play_time")
+	private Long playTime;
 
 	/**
 	 * 创意元素类型，IMG-图片；VIDEO-视频；TITLE-标题；DESC-描述
@@ -43,6 +55,20 @@ public class MaterialUnit extends AlipayObject {
 	}
 	public void setMaterial(String material) {
 		this.material = material;
+	}
+
+	public Long getPlayFrequency() {
+		return this.playFrequency;
+	}
+	public void setPlayFrequency(Long playFrequency) {
+		this.playFrequency = playFrequency;
+	}
+
+	public Long getPlayTime() {
+		return this.playTime;
+	}
+	public void setPlayTime(Long playTime) {
+		this.playTime = playTime;
 	}
 
 	public String getType() {

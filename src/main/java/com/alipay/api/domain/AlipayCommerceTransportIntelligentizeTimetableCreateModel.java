@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大出行智能平台-时刻表任务-创建
  *
  * @author auto create
- * @since 1.0, 2020-09-04 19:44:57
+ * @since 1.0, 2022-01-10 10:41:58
  */
 public class AlipayCommerceTransportIntelligentizeTimetableCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1496193686342678375L;
+	private static final long serialVersionUID = 4218528757351189315L;
 
 	/**
 	 * 城市代码

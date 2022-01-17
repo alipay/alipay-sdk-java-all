@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCertdocCertverifyConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7423158594612252758L;
+	private static final long serialVersionUID = 8582792379841216473L;
 
 	/**
 	 * 信息校验验证ID。通过<a href="https://opendocs.alipay.com/apis/api_2/alipay.user.certdoc.certverify.preconsult">alipay.user.certdoc.certverify.preconsult</a>(实名证件信息比对验证预咨询)接口获取。

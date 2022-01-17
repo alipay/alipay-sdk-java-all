@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenStsTokenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5672811568674786623L;
+	private static final long serialVersionUID = 3537233633361388487L;
 
 	/** 
 	 * 安全令牌失效时间（1970年1月1日00:00:00开始算起的毫秒数）

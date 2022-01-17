@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联普通二维码
  *
  * @author auto create
- * @since 1.0, 2021-11-08 15:22:36
+ * @since 1.0, 2022-01-17 11:26:08
  */
 public class AlipayOpenMiniQrcodeBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7864347974493516242L;
+	private static final long serialVersionUID = 1752673798767977982L;
 
 	/**
 	 * 匹配规则，仅支持EXACT（精确匹配）、FUZZY（模糊匹配）两个值。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增或修改创意
  *
  * @author auto create
- * @since 1.0, 2021-09-23 09:36:23
+ * @since 1.0, 2022-01-10 21:08:32
  */
 public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6131389291982788438L;
+	private static final long serialVersionUID = 1897887128826153368L;
 
 	/**
 	 * 创意交互行为属性实例值
@@ -103,6 +103,12 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 外部平台导入广告库后，广告投放订单对应的外部订单ID
+	 */
+	@ApiField("order_outer_id")
+	private String orderOuterId;
 
 	/**
 	 * 门店创意关联的城市ID列表，目前仅口碑使用
@@ -243,6 +249,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOrderOuterId() {
+		return this.orderOuterId;
+	}
+	public void setOrderOuterId(String orderOuterId) {
+		this.orderOuterId = orderOuterId;
 	}
 
 	public List<String> getRegionList() {

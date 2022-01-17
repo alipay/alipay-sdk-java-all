@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.tobank.transfer request
  * 
  * @author auto create
- * @since 1.0, 2021-12-14 13:47:55
+ * @since 1.0, 2022-01-17 17:59:46
  */
 public class AlipayFundTransTobankTransferRequest implements AlipayRequest<AlipayFundTransTobankTransferResponse> {
 

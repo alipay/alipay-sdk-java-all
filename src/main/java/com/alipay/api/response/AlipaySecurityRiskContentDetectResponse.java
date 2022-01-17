@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.content.detect response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-15 11:27:32
+ * @since 1.0, 2022-01-13 10:54:48
  */
 public class AlipaySecurityRiskContentDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6733591798413833589L;
+	private static final long serialVersionUID = 8747168569118483893L;
 
 	/** 
 	 * 表示处理结果，REJECTED表示拦截，PASSED表示放过。

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-13 15:15:23
+ * @since 1.0, 2022-01-17 14:34:05
  */
 public class AlipayEcoMycarParkingAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6413675749168595193L;
+	private static final long serialVersionUID = 7145448678829729183L;
 
 	/** 
 	 * 车牌垫资状态:
@@ -25,7 +25,7 @@ public class AlipayEcoMycarParkingAgreementQueryResponse extends AlipayResponse 
 	private String advanceStatus;
 
 	/** 
-	 * 用户签约的代扣场景字符集，多个英文逗号分割，当车场为ORC识别车牌的场景，返回值包含PLATE_PAY时，表示代扣协议可用。 当车场为ETC设备识别车牌，返回值包含ETC_PAY时表示协议可用。当用户未签约代扣场景时返回NO_AGREEMENT_SCENE
+	 * 用户签约的代扣场景字符集，多个英文逗号分割，当车场为ORC识别车牌的场景，返回值包含PLATE_PAY时，表示代扣协议可用。 当车场为ETC设备识别车牌，返回值包含ETC_PAY时表示协议可用。当用户未签约代扣场景|不可垫资|车场不允许代扣时返回NO_AGREEMENT_SCENE，用户NSF校验不通过时，返回NSF_CHECK_FAILED
 	 */
 	@ApiField("agreement_scene")
 	private String agreementScene;

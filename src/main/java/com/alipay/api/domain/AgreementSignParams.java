@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约参数，支付后签约场景使用
  *
  * @author auto create
- * @since 1.0, 2021-11-25 11:52:11
+ * @since 1.0, 2022-01-10 16:30:46
  */
 public class AgreementSignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 4415474128737576466L;
+	private static final long serialVersionUID = 7173476923915927843L;
 
 	/**
 	 * 商户在芝麻端申请的appId
@@ -68,6 +68,12 @@ public class AgreementSignParams extends AlipayObject {
 	 */
 	@ApiField("sign_validity_period")
 	private String signValidityPeriod;
+
+	/**
+	 * 此参数用于传递子商户信息，无特殊需求时不用关注。目前商户代扣、海外代扣、淘旅行信用住产品支持传入该参数（在销售方案中“是否允许自定义子商户信息”需要选是）。
+	 */
+	@ApiField("sub_merchant")
+	private SignMerchantParams subMerchant;
 
 	/**
 	 * 签约第三方主体类型。对于三方协议，表示当前用户和哪一类的第三方主体进行签约。
@@ -133,6 +139,13 @@ public class AgreementSignParams extends AlipayObject {
 	}
 	public void setSignValidityPeriod(String signValidityPeriod) {
 		this.signValidityPeriod = signValidityPeriod;
+	}
+
+	public SignMerchantParams getSubMerchant() {
+		return this.subMerchant;
+	}
+	public void setSubMerchant(SignMerchantParams subMerchant) {
+		this.subMerchant = subMerchant;
 	}
 
 	public String getThirdPartyType() {

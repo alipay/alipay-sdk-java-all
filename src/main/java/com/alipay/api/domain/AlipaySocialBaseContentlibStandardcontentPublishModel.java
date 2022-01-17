@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容发布接口
  *
  * @author auto create
- * @since 1.0, 2021-12-29 11:23:56
+ * @since 1.0, 2022-01-17 16:59:12
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7672652725318316253L;
+	private static final long serialVersionUID = 1285324494722617553L;
 
 	/**
-	 * 生活号+号ID，只有MCN机构为达人号ID发布内容才需要传入
+	 * 生活号+号ID。如果发送类型=自研/三方发送，不要传入；发送类型=mcn发送，请传入public_id【mcn机构绑定达人号ID】
 	 */
 	@ApiField("public_id")
 	private String publicId;
@@ -29,7 +29,7 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	private String sourceAuthor;
 
 	/**
-	 * 内容正文。类型为长图文，正文必须填写，并支持富文本格式；类型为短图文，正文必须填写，理解为短图文的文本部分
+	 * 内容正文。类型为短图文/视频，正文必须填写，理解为短图文/视频的文本部分，仅支持纯文本
 	 */
 	@ApiField("source_content")
 	private String sourceContent;

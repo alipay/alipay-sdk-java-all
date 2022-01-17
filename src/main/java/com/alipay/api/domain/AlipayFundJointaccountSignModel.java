@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业跳端签约
  *
  * @author auto create
- * @since 1.0, 2021-11-30 19:44:15
+ * @since 1.0, 2022-01-10 10:43:08
  */
 public class AlipayFundJointaccountSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5714734213826266251L;
+	private static final long serialVersionUID = 8848625673676773426L;
 
 	/**
 	 * 账本名称，传空采用默认规则命名，使用公司名称
@@ -76,6 +76,12 @@ public class AlipayFundJointaccountSignModel extends AlipayObject {
 	private List<InviteMemberForm> inviteeList;
 
 	/**
+	 * 开户用户名称，identity_type为ALIPAY_LOGON_ID时必填
+	 */
+	@ApiField("name")
+	private String name;
+
+	/**
 	 * 开户邀请倒计时（单位：秒），超时后撤销系统自动撤销开户操作。<br>
 补充说明：<br>
 -商户传递时，最长不可超过999999秒（约11天）<br>
@@ -90,6 +96,18 @@ public class AlipayFundJointaccountSignModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 外部实体ID，一般表述为外部操作人操作某个外部实体。比如企业码2284号
+	 */
+	@ApiField("out_entity_id")
+	private String outEntityId;
+
+	/**
+	 * ISV平台定义的共同账户开户来源
+	 */
+	@ApiField("out_source")
+	private String outSource;
 
 	/**
 	 * 产品码
@@ -153,6 +171,13 @@ public class AlipayFundJointaccountSignModel extends AlipayObject {
 		this.inviteeList = inviteeList;
 	}
 
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public String getOpenTimeout() {
 		return this.openTimeout;
 	}
@@ -165,6 +190,20 @@ public class AlipayFundJointaccountSignModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getOutEntityId() {
+		return this.outEntityId;
+	}
+	public void setOutEntityId(String outEntityId) {
+		this.outEntityId = outEntityId;
+	}
+
+	public String getOutSource() {
+		return this.outSource;
+	}
+	public void setOutSource(String outSource) {
+		this.outSource = outSource;
 	}
 
 	public String getProductCode() {

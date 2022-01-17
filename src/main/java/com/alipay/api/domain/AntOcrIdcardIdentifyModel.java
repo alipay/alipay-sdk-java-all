@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntOcrIdcardIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2624288584817793691L;
+	private static final long serialVersionUID = 8716379263931511137L;
 
 	/**
 	 * 图片地址

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品同步结果查询
  *
  * @author auto create
- * @since 1.0, 2021-09-02 19:32:29
+ * @since 1.0, 2022-01-17 17:48:14
  */
 public class AlipayOverseasTravelGoodsSyncresultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7124135132529835632L;
+	private static final long serialVersionUID = 3132616654668152822L;
 
 	/**
 	 * 外部商户或第三方的商品ID

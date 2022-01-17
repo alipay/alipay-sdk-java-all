@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信用支付利息定价
  *
  * @author auto create
- * @since 1.0, 2019-07-12 15:13:52
+ * @since 1.0, 2022-01-13 16:22:04
  */
 public class CreditPayIntPricingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5531787277183974945L;
+	private static final long serialVersionUID = 1548865775312445459L;
 
 	/**
 	 * 实际日利率，百分比形式

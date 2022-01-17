@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 全球游飞猪店铺数据发送接口
  *
  * @author auto create
- * @since 1.0, 2021-01-29 15:33:48
+ * @since 1.0, 2022-01-17 17:48:55
  */
 public class AlipayOverseasTravelFliggyShopTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6851793963626758339L;
+	private static final long serialVersionUID = 4758485976148361511L;
 
 	/**
 	 * 同步数据类型与实际数据

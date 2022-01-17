@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模版答题要素
  *
  * @author auto create
- * @since 1.0, 2021-12-22 21:51:51
+ * @since 1.0, 2022-01-13 15:28:12
  */
 public class TemplateAnswerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1432668275147754691L;
+	private static final long serialVersionUID = 8398975627988654732L;
 
 	/**
 	 * 答题对应的表达式
 	 */
 	@ApiField("exp")
 	private String exp;
+
+	/**
+	 * 初始值，可空
+	 */
+	@ApiField("initial_value")
+	private String initialValue;
 
 	/**
 	 * 标签名称
@@ -58,6 +64,13 @@ public class TemplateAnswerDTO extends AlipayObject {
 	}
 	public void setExp(String exp) {
 		this.exp = exp;
+	}
+
+	public String getInitialValue() {
+		return this.initialValue;
+	}
+	public void setInitialValue(String initialValue) {
+		this.initialValue = initialValue;
 	}
 
 	public String getLabelName() {

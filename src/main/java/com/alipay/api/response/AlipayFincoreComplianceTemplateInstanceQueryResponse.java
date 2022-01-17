@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.AnswerDTO;
 import com.alipay.api.domain.TemplateInstDTO;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.template.instance.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-23 14:30:40
+ * @since 1.0, 2022-01-17 15:50:39
  */
 public class AlipayFincoreComplianceTemplateInstanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1642125187217959962L;
+	private static final long serialVersionUID = 7594355113878399872L;
+
+	/** 
+	 * 对题结果
+	 */
+	@ApiField("answers")
+	private AnswerDTO answers;
 
 	/** 
 	 * 模版实例状态
@@ -26,6 +33,13 @@ public class AlipayFincoreComplianceTemplateInstanceQueryResponse extends Alipay
 	 */
 	@ApiField("template_instances")
 	private TemplateInstDTO templateInstances;
+
+	public void setAnswers(AnswerDTO answers) {
+		this.answers = answers;
+	}
+	public AnswerDTO getAnswers( ) {
+		return this.answers;
+	}
 
 	public void setStatus(String status) {
 		this.status = status;

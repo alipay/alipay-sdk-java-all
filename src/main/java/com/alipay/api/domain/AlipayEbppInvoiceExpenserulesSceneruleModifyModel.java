@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控制度修改
  *
  * @author auto create
- * @since 1.0, 2021-12-14 17:56:29
+ * @since 1.0, 2022-01-10 10:00:00
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1726449283622523347L;
+	private static final long serialVersionUID = 8263158838588984212L;
 
 	/**
 	 * 企业ID
@@ -57,6 +57,12 @@ ADD_RULE（新增费控条件），DELETE_RULE（删除费控条件），MODIFY_
 	@ApiListField("expense_ctrl_rule_info_list")
 	@ApiField("expense_ctr_rule_info")
 	private List<ExpenseCtrRuleInfo> expenseCtrlRuleInfoList;
+
+	/**
+	 * 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略， 枚举值：PERSONAL（全部个人账户支付）
+	 */
+	@ApiField("payment_policy")
+	private String paymentPolicy;
 
 	/**
 	 * 费控规则说明
@@ -123,6 +129,13 @@ ADD_RULE（新增费控条件），DELETE_RULE（删除费控条件），MODIFY_
 	}
 	public void setExpenseCtrlRuleInfoList(List<ExpenseCtrRuleInfo> expenseCtrlRuleInfoList) {
 		this.expenseCtrlRuleInfoList = expenseCtrlRuleInfoList;
+	}
+
+	public String getPaymentPolicy() {
+		return this.paymentPolicy;
+	}
+	public void setPaymentPolicy(String paymentPolicy) {
+		this.paymentPolicy = paymentPolicy;
 	}
 
 	public String getStandardDesc() {

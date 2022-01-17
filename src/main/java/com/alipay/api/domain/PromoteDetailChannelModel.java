@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoteDetailChannelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1569888126428288418L;
+	private static final long serialVersionUID = 2731634488276273385L;
 
 	/**
 	 * 渠道id

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝虎年福卡扣减接口
  *
  * @author auto create
- * @since 1.0, 2021-12-13 12:21:19
+ * @since 1.0, 2022-01-16 22:01:34
  */
 public class AlipayUserWufufukaAliyunExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2549963684533269998L;
+	private static final long serialVersionUID = 4533333715716299852L;
 
 	/**
 	 * 支付宝订单id+支付宝获取订单+无+url传递

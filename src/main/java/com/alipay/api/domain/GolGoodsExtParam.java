@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跨境营销线上电商商品扩展参数
  *
  * @author auto create
- * @since 1.0, 2021-08-27 11:06:43
+ * @since 1.0, 2022-01-17 17:49:53
  */
 public class GolGoodsExtParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1277311714697611696L;
+	private static final long serialVersionUID = 1575684367812935355L;
 
 	/**
 	 * 品牌名称

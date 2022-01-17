@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KdsOrderInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2848658832468323779L;
+	private static final long serialVersionUID = 4153325944525834694L;
 
 	/**
 	 * 订单业务产品类型.  "KB_ORDER_DISHES": 口碑c端点餐; "KB_RESERVATION": 口碑预约点餐; "KB_POS_ORDER_DISHES": 口碑B端盒子订单
