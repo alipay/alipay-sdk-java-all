@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建充值卡支付单
  *
  * @author auto create
- * @since 1.0, 2021-08-18 10:15:42
+ * @since 1.0, 2022-01-18 10:54:59
  */
 public class AlipayMerchantPayforprivilegePayCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2818179624712959376L;
+	private static final long serialVersionUID = 1475851722336157273L;
 
 	/**
 	 * 该字段已废弃，请使用user_id字段查询
@@ -26,10 +26,23 @@ public class AlipayMerchantPayforprivilegePayCreateModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
+	 * 付款人uid，异名充值场景必传，需要与支付宝确认是否开通该场景
+	 */
+	@ApiField("payer_user_id")
+	private String payerUserId;
+
+	/**
 	 * 充值方案ID
 	 */
 	@ApiField("promotion_plan_id")
 	private String promotionPlanId;
+
+	/**
+	 * 充值金额，单位元。
+在用户自定义金额充值场景中必传，需要与支付宝确认是否开通该场景
+	 */
+	@ApiField("recharge_amount")
+	private String rechargeAmount;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -51,11 +64,25 @@ public class AlipayMerchantPayforprivilegePayCreateModel extends AlipayObject {
 		this.outBizNo = outBizNo;
 	}
 
+	public String getPayerUserId() {
+		return this.payerUserId;
+	}
+	public void setPayerUserId(String payerUserId) {
+		this.payerUserId = payerUserId;
+	}
+
 	public String getPromotionPlanId() {
 		return this.promotionPlanId;
 	}
 	public void setPromotionPlanId(String promotionPlanId) {
 		this.promotionPlanId = promotionPlanId;
+	}
+
+	public String getRechargeAmount() {
+		return this.rechargeAmount;
+	}
+	public void setRechargeAmount(String rechargeAmount) {
+		this.rechargeAmount = rechargeAmount;
 	}
 
 	public String getUserId() {

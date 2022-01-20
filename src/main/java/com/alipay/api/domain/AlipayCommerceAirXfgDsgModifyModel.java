@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAirXfgDsgModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7787523925224512183L;
+	private static final long serialVersionUID = 5693221828772689584L;
 
 	/**
 	 * 用户年龄

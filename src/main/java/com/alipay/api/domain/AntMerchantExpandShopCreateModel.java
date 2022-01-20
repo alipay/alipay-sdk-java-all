@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3231674866912388678L;
+	private static final long serialVersionUID = 6368928194674423796L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。
@@ -46,8 +46,8 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	/**
 	 * 营业执照图片，需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
 注意：
-* 蚂蚁门店管理场景可选。
-* 间连 M1、M2商家创建门店，必须传入营业执照图片。
+* 通过蚂蚁门店管理能力创建门店时可选。
+* 间连 M1、M2 商家创建门店，必须传入营业执照图片。
 	 */
 	@ApiField("cert_image")
 	private String certImage;
@@ -62,7 +62,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	/**
 	 * 证件号码，请填写店铺营业执照号。
 注意：
-* 蚂蚁门店管理场景可选。
+* 通过蚂蚁门店管理能力创建门店时可选。
 * 间连 M1、M2商家创建门店，必须传入营业执照号。
 	 */
 	@ApiField("cert_no")
@@ -108,20 +108,20 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String ipRoleId;
 
 	/**
-	 * 法人身份证号。蚂蚁门店管理场景可选。
+	 * 法人身份证号。通过蚂蚁门店管理能力创建门店时可选。
 	 */
 	@ApiField("legal_cert_no")
 	private String legalCertNo;
 
 	/**
-	 * 法人名称。蚂蚁门店管理场景可选。
+	 * 法人名称。通过蚂蚁门店管理能力创建门店时可选。
 	 */
 	@ApiField("legal_name")
 	private String legalName;
 
 	/**
 	 * 营业执照授权函。需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
-蚂蚁门店管理场景可选。
+通过蚂蚁门店管理能力创建门店时可选。
 	 */
 	@ApiField("license_auth_letter_image")
 	private String licenseAuthLetterImage;
@@ -134,7 +134,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
 	/**
 	 * 门头照 id，需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
-蚂蚁门店管理场景可选。
+通过蚂蚁门店管理能力创建门店时可选。
 	 */
 	@ApiListField("out_door_images")
 	@ApiField("string")

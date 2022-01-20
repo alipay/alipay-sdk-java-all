@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.tradecomplain.query request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:14
+ * @since 1.0, 2022-01-18 16:57:51
  */
 public class AlipayMerchantTradecomplainQueryRequest implements AlipayRequest<AlipayMerchantTradecomplainQueryResponse> {
 

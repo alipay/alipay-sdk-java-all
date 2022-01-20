@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingToolFengdieTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8158336219961869878L;
+	private static final long serialVersionUID = 1454319427737457191L;
 
 	/** 
 	 * 开发者开发上传的H5模板列表

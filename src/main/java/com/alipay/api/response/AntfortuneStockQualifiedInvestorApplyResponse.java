@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.qualified.investor.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-25 14:20:36
+ * @since 1.0, 2022-01-20 11:15:37
  */
 public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8188436986566335833L;
+	private static final long serialVersionUID = 4486213121635159625L;
 
 	/** 
 	 * 签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/** 
+	 * 用户在支付宝总资产获取时间
+	 */
+	@ApiField("alipay_asset_time")
+	private String alipayAssetTime;
 
 	/** 
 	 * 支付宝金融总资产金额，单位元；精度到分
@@ -65,6 +71,13 @@ public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayRespons
 	}
 	public String getAgreementNo( ) {
 		return this.agreementNo;
+	}
+
+	public void setAlipayAssetTime(String alipayAssetTime) {
+		this.alipayAssetTime = alipayAssetTime;
+	}
+	public String getAlipayAssetTime( ) {
+		return this.alipayAssetTime;
 	}
 
 	public void setAlipayTotalAsset(String alipayTotalAsset) {

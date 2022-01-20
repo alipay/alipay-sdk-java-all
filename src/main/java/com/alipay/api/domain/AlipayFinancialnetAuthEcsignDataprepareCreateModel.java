@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签呗电子签约数据录入准备服务
  *
  * @author auto create
- * @since 1.0, 2020-04-25 18:13:52
+ * @since 1.0, 2022-01-20 11:26:33
  */
 public class AlipayFinancialnetAuthEcsignDataprepareCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2514857745369313313L;
+	private static final long serialVersionUID = 7137761372114248436L;
+
+	/**
+	 * 签约回跳类型
+	 */
+	@ApiField("back_type")
+	private String backType;
 
 	/**
 	 * 签约结束回跳地址
@@ -54,6 +60,19 @@ public class AlipayFinancialnetAuthEcsignDataprepareCreateModel extends AlipayOb
 	 */
 	@ApiField("solution_code")
 	private String solutionCode;
+
+	/**
+	 * 回跳地址
+	 */
+	@ApiField("third_part_schema")
+	private String thirdPartSchema;
+
+	public String getBackType() {
+		return this.backType;
+	}
+	public void setBackType(String backType) {
+		this.backType = backType;
+	}
 
 	public String getBackUrl() {
 		return this.backUrl;
@@ -102,6 +121,13 @@ public class AlipayFinancialnetAuthEcsignDataprepareCreateModel extends AlipayOb
 	}
 	public void setSolutionCode(String solutionCode) {
 		this.solutionCode = solutionCode;
+	}
+
+	public String getThirdPartSchema() {
+		return this.thirdPartSchema;
+	}
+	public void setThirdPartSchema(String thirdPartSchema) {
+		this.thirdPartSchema = thirdPartSchema;
 	}
 
 }

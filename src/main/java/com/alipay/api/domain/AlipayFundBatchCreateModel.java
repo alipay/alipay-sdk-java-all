@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批次下单接口
  *
  * @author auto create
- * @since 1.0, 2021-10-11 11:25:44
+ * @since 1.0, 2022-01-17 20:09:26
  */
 public class AlipayFundBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3299755833697635332L;
+	private static final long serialVersionUID = 5346977711693234921L;
 
 	/**
 	 * 业务场景。不同场景值不同，具体值联系支付宝确认。如：<a href="https://opendocs.alipay.com/open/022312">批量转账到支付宝账户</a> 场景固定为 MESSAGE_BATCH_PAY。
@@ -83,7 +83,7 @@ public class AlipayFundBatchCreateModel extends AlipayObject {
 	private String totalTransAmount;
 
 	/**
-	 * 收款信息列表
+	 * 收款信息列表。实际集合可以添加多个收款方信息，最多可以添加1000个收款方信息，如方案接入文档有特别说明，优先以接入文档为准
 	 */
 	@ApiListField("trans_order_list")
 	@ApiField("trans_order_detail")

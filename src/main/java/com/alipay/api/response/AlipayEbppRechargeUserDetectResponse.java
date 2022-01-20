@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppRechargeUserDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8873354323858561174L;
+	private static final long serialVersionUID = 7854149989725452241L;
 
 	/** 
 	 * 是否是合法用户

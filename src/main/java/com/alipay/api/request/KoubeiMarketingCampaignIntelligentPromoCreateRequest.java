@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.intelligent.promo.create request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-01-19 14:53:43
  */
 public class KoubeiMarketingCampaignIntelligentPromoCreateRequest implements AlipayRequest<KoubeiMarketingCampaignIntelligentPromoCreateResponse> {
 

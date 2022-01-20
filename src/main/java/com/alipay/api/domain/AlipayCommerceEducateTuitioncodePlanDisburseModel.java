@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 学费码打款请求
  *
  * @author auto create
- * @since 1.0, 2021-12-22 17:54:43
+ * @since 1.0, 2022-01-18 16:06:12
  */
 public class AlipayCommerceEducateTuitioncodePlanDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8721833557643991411L;
+	private static final long serialVersionUID = 6465734841791713134L;
 
 	/**
 	 * ISV订单号
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/**
+	 * 外部请求唯一编号，重复申请打款时不能相同。直连银行模式必填
+	 */
+	@ApiField("out_request_id")
+	private String outRequestId;
 
 	/**
 	 * 学费码打款计划编号。优先使用plan_ids，如果是打款一个任务，传递一个编号即可
@@ -52,6 +58,13 @@ public class AlipayCommerceEducateTuitioncodePlanDisburseModel extends AlipayObj
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getOutRequestId() {
+		return this.outRequestId;
+	}
+	public void setOutRequestId(String outRequestId) {
+		this.outRequestId = outRequestId;
 	}
 
 	public String getPlanId() {

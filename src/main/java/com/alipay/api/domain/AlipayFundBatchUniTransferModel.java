@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发转账接口
  *
  * @author auto create
- * @since 1.0, 2022-01-04 15:42:46
+ * @since 1.0, 2022-01-17 20:09:22
  */
 public class AlipayFundBatchUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7225794635446975984L;
+	private static final long serialVersionUID = 5585748726453364116L;
 
 	/**
 	 * 业务场景。不同场景值不同，具体值联系支付宝确认。
@@ -62,7 +62,7 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 	private String totalTransAmount;
 
 	/**
-	 * 收款信息列表
+	 * 收款信息列表。实际集合可以添加多个收款方信息，最多可以添加1000个收款方信息，如方案接入文档有特别说明，优先以接入文档为准
 	 */
 	@ApiField("trans_order_list")
 	private TransOrderDetail transOrderList;

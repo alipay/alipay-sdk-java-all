@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家兑换券
  *
  * @author auto create
- * @since 1.0, 2021-12-27 14:57:40
+ * @since 1.0, 2022-01-18 15:09:21
  */
 public class ExchangeVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 3255184725458697273L;
+	private static final long serialVersionUID = 1688875697793156945L;
 
 	/**
 	 * 券的价值

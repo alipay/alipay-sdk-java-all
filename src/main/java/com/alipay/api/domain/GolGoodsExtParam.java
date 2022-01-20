@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跨境营销线上电商商品扩展参数
  *
  * @author auto create
- * @since 1.0, 2022-01-17 17:49:53
+ * @since 1.0, 2022-01-19 14:33:55
  */
 public class GolGoodsExtParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1575684367812935355L;
+	private static final long serialVersionUID = 2542641692477233731L;
 
 	/**
 	 * 品牌名称
@@ -27,6 +27,12 @@ public class GolGoodsExtParam extends AlipayObject {
 	 */
 	@ApiField("description")
 	private String description;
+
+	/**
+	 * 商品优惠文案
+	 */
+	@ApiField("discount_content")
+	private String discountContent;
 
 	/**
 	 * 是否包税。
@@ -70,6 +76,13 @@ N - 不包税
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getDiscountContent() {
+		return this.discountContent;
+	}
+	public void setDiscountContent(String discountContent) {
+		this.discountContent = discountContent;
 	}
 
 	public String getIsTaxFree() {

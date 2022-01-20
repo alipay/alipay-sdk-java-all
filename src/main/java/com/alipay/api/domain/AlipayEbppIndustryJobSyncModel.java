@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2022-01-14 15:56:40
+ * @since 1.0, 2022-01-18 10:07:41
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7131772917315161616L;
+	private static final long serialVersionUID = 4475184972399655997L;
 
 	/**
 	 * 岗位详细地址。
@@ -119,19 +119,7 @@ CLOSED：招聘结束
 	private List<String> jobTags;
 
 	/**
-	 * 岗位类型，用于岗位筛选，以及岗位匹配等场景。
-
-枚举值：
-经营管理
-业务营销
-文员助力
-物流配送
-展会演出
-客服话务
-线上主播
-农林牧渔
-手工技能
-其他
+	 * 岗位类型，用于岗位筛选、岗位匹配等场景，具体枚举值在集成阶段提供
 	 */
 	@ApiField("job_type")
 	private String jobType;
