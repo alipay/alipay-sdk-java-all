@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.merge.precreate response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-28 23:15:54
+ * @since 1.0, 2022-01-21 10:45:45
  */
 public class AlipayTradeMergePrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3432127828666563616L;
+	private static final long serialVersionUID = 4439717747565217766L;
 
 	/** 
 	 * 合并子订单中所有订单的预创建结果
@@ -25,13 +25,13 @@ public class AlipayTradeMergePrecreateResponse extends AlipayResponse {
 	private List<PreOrderResult> orderDetailResults;
 
 	/** 
-	 * 如果和支付宝约定子订单必须同时支付成功或者同时失败并且请求时传递了out_merge_no时才存在
+	 * 如果和支付宝约定子订单必须同时支付成功或者同时失败并且请求时传递了out_merge_no时才存在。
 	 */
 	@ApiField("out_merge_no")
 	private String outMergeNo;
 
 	/** 
-	 * 如果预创建成功，支付宝返回该预下单号，后续商户使用该预下单号请求支付宝支付接口
+	 * 如果预创建成功，支付宝返回该预下单号，后续商户使用该预下单号请求支付宝支付接口。
 	 */
 	@ApiField("pre_order_no")
 	private String preOrderNo;

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceCognitiveKgopenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3565665252582726671L;
+	private static final long serialVersionUID = 4437396838198832666L;
 
 	/**
 	 * 所属在线服务的编码

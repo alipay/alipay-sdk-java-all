@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RechargeOrderTuitionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4898176158318996879L;
+	private static final long serialVersionUID = 2283692191556234753L;
 
 	/**
 	 * 订单创建时间

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TestCaseDomain extends AlipayObject {
 
-	private static final long serialVersionUID = 4549541941799842534L;
+	private static final long serialVersionUID = 8886447797621652286L;
 
 	/**
 	 * ISV的测试节点

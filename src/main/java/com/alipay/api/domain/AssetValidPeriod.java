@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AssetValidPeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 7797185819726188724L;
+	private static final long serialVersionUID = 7561744513612623259L;
 
 	/**
 	 * 权益实体的有效期，可以是相对模板过期时间基础上增加的时间也可以是绝对时间，相对时间：2d表示相对模板过期增加2天，10h表示增加10个小时，5m表示增加5分钟，绝对时间的格式为： yyyy-MM-dd HH:mm:ss

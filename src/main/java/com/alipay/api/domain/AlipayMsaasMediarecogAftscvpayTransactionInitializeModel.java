@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体afts平台视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2020-12-23 16:08:38
+ * @since 1.0, 2022-01-20 17:16:53
  */
 public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3423924646866613742L;
+	private static final long serialVersionUID = 8533381114528984993L;
 
 	/**
 	 * 商品信息,列表
@@ -64,6 +64,13 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	 */
 	@ApiField("uid")
 	private String uid;
+
+	/**
+	 * 货柜重力商品配置列表信息
+	 */
+	@ApiListField("weight_template")
+	@ApiField("weight_floor")
+	private List<WeightFloor> weightTemplate;
 
 	public List<GoodInfo> getGoodsInfos() {
 		return this.goodsInfos;
@@ -119,6 +126,13 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	}
 	public void setUid(String uid) {
 		this.uid = uid;
+	}
+
+	public List<WeightFloor> getWeightTemplate() {
+		return this.weightTemplate;
+	}
+	public void setWeightTemplate(List<WeightFloor> weightTemplate) {
+		this.weightTemplate = weightTemplate;
 	}
 
 }

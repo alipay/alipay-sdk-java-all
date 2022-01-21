@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringOrderPayDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7761242837539273963L;
+	private static final long serialVersionUID = 3446911984751327551L;
 
 	/**
 	 * 支付授权码，25~30开头的长度为16~24位的数字，实际字符串长度以开发者获取的付款码长度为准

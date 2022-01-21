@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransOperatorBindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4698211814725449174L;
+	private static final long serialVersionUID = 7165691829477495741L;
 
 	/** 
 	 * true:已绑定

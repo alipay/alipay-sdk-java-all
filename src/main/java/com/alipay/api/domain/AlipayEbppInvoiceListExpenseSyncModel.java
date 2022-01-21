@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppInvoiceListExpenseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3386637835859627841L;
+	private static final long serialVersionUID = 8782721967561143651L;
 
 	/**
 	 * 报销进度变更时间

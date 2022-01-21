@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝认证信息申请接口
  *
  * @author auto create
- * @since 1.0, 2022-01-20 10:21:44
+ * @since 1.0, 2022-01-21 11:21:17
  */
 public class AlipayUserCertifyInfoApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8588115594689113898L;
+	private static final long serialVersionUID = 7793221623949172228L;
 
 	/**
 	 * 委托书图片数据，根据biz_from参数确定是传base64字符串，还是传oss地址
@@ -172,6 +172,12 @@ public class AlipayUserCertifyInfoApplyModel extends AlipayObject {
 	 */
 	@ApiField("register_capital")
 	private String registerCapital;
+
+	/**
+	 * 豁免的校验类型，多个用逗号隔开
+	 */
+	@ApiField("remit_check")
+	private String remitCheck;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -359,6 +365,13 @@ public class AlipayUserCertifyInfoApplyModel extends AlipayObject {
 	}
 	public void setRegisterCapital(String registerCapital) {
 		this.registerCapital = registerCapital;
+	}
+
+	public String getRemitCheck() {
+		return this.remitCheck;
+	}
+	public void setRemitCheck(String remitCheck) {
+		this.remitCheck = remitCheck;
 	}
 
 	public String getUserId() {

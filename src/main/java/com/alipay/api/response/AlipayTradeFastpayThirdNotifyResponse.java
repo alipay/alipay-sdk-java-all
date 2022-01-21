@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeFastpayThirdNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1686264613599346462L;
+	private static final long serialVersionUID = 2492987595129371882L;
 
 	
 

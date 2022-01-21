@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialGiftOrderConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6286644279458896921L;
+	private static final long serialVersionUID = 5674219731189425863L;
 
 	/**
 	 * 商户通过该接口落卡包后，其支付宝卡包中对应实体（卡、券）的失效时间。该值可以选填。【注意：如果不填写，默认为生效时间后3年】。其时间规则可以在商户后台进行配置。
