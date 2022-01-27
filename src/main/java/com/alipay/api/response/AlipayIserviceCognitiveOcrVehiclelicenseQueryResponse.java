@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCognitiveOcrVehiclelicenseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2471953456511865252L;
+	private static final long serialVersionUID = 7187317994627772841L;
 
 	/** 
 	 * 核定载质量

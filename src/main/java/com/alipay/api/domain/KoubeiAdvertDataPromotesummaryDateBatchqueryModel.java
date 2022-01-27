@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiAdvertDataPromotesummaryDateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6665638551769694923L;
+	private static final long serialVersionUID = 2763927339371399225L;
 
 	/**
 	 * 广告id  

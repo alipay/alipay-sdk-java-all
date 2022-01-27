@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantKbcloudSubuserlogoutEffectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6648759557214874921L;
+	private static final long serialVersionUID = 8628994289218753152L;
 
 	/** 
 	 * 是否登出成功

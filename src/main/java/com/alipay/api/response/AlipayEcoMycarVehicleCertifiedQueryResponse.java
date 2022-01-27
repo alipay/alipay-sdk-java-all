@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarVehicleCertifiedQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7394337921416525378L;
+	private static final long serialVersionUID = 1188116812113215944L;
 
 	/** 
 	 * 认证结果列表

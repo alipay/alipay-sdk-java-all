@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.recruit.enroll.close response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:27:55
+ * @since 1.0, 2022-01-25 11:44:42
  */
 public class AlipayMarketingRecruitEnrollCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6377942685296647455L;
+	private static final long serialVersionUID = 1613649219287486793L;
 
 	
 

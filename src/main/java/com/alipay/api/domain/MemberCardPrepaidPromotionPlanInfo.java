@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡的储值优惠方案信息
  *
  * @author auto create
- * @since 1.0, 2021-08-18 16:02:06
+ * @since 1.0, 2022-01-25 17:19:16
  */
 public class MemberCardPrepaidPromotionPlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1586784692299238841L;
+	private static final long serialVersionUID = 8698711282681219376L;
 
 	/**
 	 * 储值方案权益金部分

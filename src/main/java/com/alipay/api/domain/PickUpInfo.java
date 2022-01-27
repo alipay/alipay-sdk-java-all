@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自提业务信息
  *
  * @author auto create
- * @since 1.0, 2021-09-18 16:00:47
+ * @since 1.0, 2022-01-26 11:11:10
  */
 public class PickUpInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5565741457435815594L;
+	private static final long serialVersionUID = 4214177913138272422L;
 
 	/**
 	 * 自提地址（展示的地址）
@@ -36,6 +36,12 @@ public class PickUpInfo extends AlipayObject {
 	 */
 	@ApiField("pick_up_type")
 	private String pickUpType;
+
+	/**
+	 * 桌号，点餐先付-送餐到桌场景必填
+	 */
+	@ApiField("table_num")
+	private String tableNum;
 
 	public String getPickUpAddress() {
 		return this.pickUpAddress;
@@ -63,6 +69,13 @@ public class PickUpInfo extends AlipayObject {
 	}
 	public void setPickUpType(String pickUpType) {
 		this.pickUpType = pickUpType;
+	}
+
+	public String getTableNum() {
+		return this.tableNum;
+	}
+	public void setTableNum(String tableNum) {
+		this.tableNum = tableNum;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InfoCode extends AlipayObject {
 
-	private static final long serialVersionUID = 7428157238576474648L;
+	private static final long serialVersionUID = 5542179192495294296L;
 
 	/**
 	 * 风险描述

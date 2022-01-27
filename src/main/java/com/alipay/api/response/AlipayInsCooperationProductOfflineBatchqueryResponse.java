@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsCooperationProductOfflineBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3528713789431638132L;
+	private static final long serialVersionUID = 8159236769147448647L;
 
 	/** 
 	 * 返回给机构的线下产品信息列表

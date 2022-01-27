@@ -11,11 +11,13 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskContentDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1421477666844936781L;
+	private static final long serialVersionUID = 1828351521737751666L;
 
 	/**
 	 * 需要识别的文本。
-注意：请勿传入包含特殊字符及双引号等，可能引起 json 格式化错误问题的字符。
+注意：
+* 请勿传入包含特殊字符及双引号等，可能引起 json 格式化错误问题的字符。
+* 目前暂仅针对国家涉政风险文案进行拦截，拦截规则将逐步升级。
 	 */
 	@ApiField("content")
 	private String content;

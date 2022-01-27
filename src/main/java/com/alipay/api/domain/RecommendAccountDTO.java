@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商向商家发起代运营操作，返回推荐的商家账号信息
  *
  * @author auto create
- * @since 1.0, 2020-12-31 15:40:48
+ * @since 1.0, 2022-01-25 19:39:28
  */
 public class RecommendAccountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1677488128628773815L;
+	private static final long serialVersionUID = 7378358364847924165L;
 
 	/**
 	 * 推荐商家支付宝登录账号，邮箱或手机号码，脱敏处理

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡线下核销规则
  *
  * @author auto create
- * @since 1.0, 2021-08-18 16:02:06
+ * @since 1.0, 2022-01-25 17:19:07
  */
 public class MemberCardPayEffectiveRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4783896341733798242L;
+	private static final long serialVersionUID = 5826448795531271863L;
 
 	/**
 	 * 会员卡线下核销的商品规则
