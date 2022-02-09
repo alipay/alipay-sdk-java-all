@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduOneCardDepositCardQueryResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8371142769154382333L;
+	private static final long serialVersionUID = 5775576253268579833L;
 
 	/**
 	 * 校园一卡通机构代码

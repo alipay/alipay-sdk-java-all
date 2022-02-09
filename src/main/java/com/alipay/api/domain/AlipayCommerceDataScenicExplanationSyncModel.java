@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 景区语音讲解服务补充景点信息
  *
  * @author auto create
- * @since 1.0, 2022-01-04 11:00:02
+ * @since 1.0, 2022-02-08 10:58:17
  */
 public class AlipayCommerceDataScenicExplanationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4583133269358225635L;
+	private static final long serialVersionUID = 8339761891373677735L;
 
 	/**
 	 * 该景区的小程序appid。

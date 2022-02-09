@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户工作证信息查询接口
  *
  * @author auto create
- * @since 1.0, 2022-01-07 15:22:45
+ * @since 1.0, 2022-01-27 18:36:48
  */
 public class AlipayUserJobcardInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2889659392774257131L;
+	private static final long serialVersionUID = 5435496984843244524L;
 
 	/**
 	 * 使用场景，如职位推荐

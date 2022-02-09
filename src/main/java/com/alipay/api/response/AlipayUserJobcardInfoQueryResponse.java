@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.jobcard.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-07 15:22:55
+ * @since 1.0, 2022-01-27 20:20:39
  */
 public class AlipayUserJobcardInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5859925687229345763L;
+	private static final long serialVersionUID = 1884951371945459325L;
 
 	/** 
 	 * 意向行政区域
 	 */
 	@ApiField("admin_area")
 	private String adminArea;
+
+	/** 
+	 * 性别;f：女；m：男
+	 */
+	@ApiField("gender")
+	private String gender;
 
 	/** 
 	 * 意向岗位，json数组
@@ -57,6 +63,12 @@ public class AlipayUserJobcardInfoQueryResponse extends AlipayResponse {
 	private String suitableAgeStatus;
 
 	/** 
+	 * 用户年龄
+	 */
+	@ApiField("user_age")
+	private Long userAge;
+
+	/** 
 	 * 姓名
 	 */
 	@ApiField("user_name")
@@ -73,6 +85,13 @@ public class AlipayUserJobcardInfoQueryResponse extends AlipayResponse {
 	}
 	public String getAdminArea( ) {
 		return this.adminArea;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getGender( ) {
+		return this.gender;
 	}
 
 	public void setIntentPostTag(String intentPostTag) {
@@ -115,6 +134,13 @@ public class AlipayUserJobcardInfoQueryResponse extends AlipayResponse {
 	}
 	public String getSuitableAgeStatus( ) {
 		return this.suitableAgeStatus;
+	}
+
+	public void setUserAge(Long userAge) {
+		this.userAge = userAge;
+	}
+	public Long getUserAge( ) {
+		return this.userAge;
 	}
 
 	public void setUserName(String userName) {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开放平台绿色能量信息查询
  *
  * @author auto create
- * @since 1.0, 2021-12-29 10:28:00
+ * @since 1.0, 2022-02-07 11:25:22
  */
 public class AlipaySocialOpengreenEnergyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8641351342256337153L;
+	private static final long serialVersionUID = 2111298268296678466L;
 
 	/**
 	 * 生成能量时传入的唯一键
@@ -43,6 +43,12 @@ public class AlipaySocialOpengreenEnergyQueryModel extends AlipayObject {
 	private List<String> greenActions;
 
 	/**
+	 * 商户接入绿色开发平台的id
+	 */
+	@ApiField("pid")
+	private String pid;
+
+	/**
 	 * 请求的来源，必填
 	 */
 	@ApiField("source")
@@ -53,6 +59,12 @@ public class AlipaySocialOpengreenEnergyQueryModel extends AlipayObject {
 	 */
 	@ApiField("start_time")
 	private Date startTime;
+
+	/**
+	 * 用户id
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getBizNo() {
 		return this.bizNo;
@@ -82,6 +94,13 @@ public class AlipaySocialOpengreenEnergyQueryModel extends AlipayObject {
 		this.greenActions = greenActions;
 	}
 
+	public String getPid() {
+		return this.pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
+	}
+
 	public String getSource() {
 		return this.source;
 	}
@@ -94,6 +113,13 @@ public class AlipaySocialOpengreenEnergyQueryModel extends AlipayObject {
 	}
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

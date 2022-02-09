@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SceneProdBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8352197983144865442L;
+	private static final long serialVersionUID = 7729556712853964579L;
 
 	/**
 	 * 账单类型，包括：正常，手续费，保证金 等类型，根据机构需求可以进行扩展。非必填，不填默认为正常。

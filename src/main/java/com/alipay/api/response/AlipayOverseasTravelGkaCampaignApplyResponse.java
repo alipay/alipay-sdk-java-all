@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelGkaCampaignApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1145463835394639768L;
+	private static final long serialVersionUID = 4659611863285588287L;
 
 	/** 
 	 * 奖品信息，发奖成功时返回

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DishList extends AlipayObject {
 
-	private static final long serialVersionUID = 7613729532339429439L;
+	private static final long serialVersionUID = 6779124561774988599L;
 
 	/**
 	 * 总价

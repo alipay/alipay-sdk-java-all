@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StockTaskResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2144735655286418933L;
+	private static final long serialVersionUID = 2374298538164244655L;
 
 	/**
 	 * 售价方式：CPP（按人次保量）、CPT（按时长售卖）

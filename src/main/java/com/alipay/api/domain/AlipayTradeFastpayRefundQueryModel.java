@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeFastpayRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5623519128184177496L;
+	private static final long serialVersionUID = 4293963614939197294L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用；

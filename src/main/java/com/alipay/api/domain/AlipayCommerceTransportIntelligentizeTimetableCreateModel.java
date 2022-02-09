@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大出行智能平台-时刻表任务-创建
  *
  * @author auto create
- * @since 1.0, 2022-01-10 10:41:58
+ * @since 1.0, 2022-02-08 17:13:39
  */
 public class AlipayCommerceTransportIntelligentizeTimetableCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6724147897988942543L;
+	private static final long serialVersionUID = 3462675721583876144L;
 
 	/**
 	 * 城市代码
@@ -52,6 +52,14 @@ public class AlipayCommerceTransportIntelligentizeTimetableCreateModel extends A
 	 */
 	@ApiField("service_task_name")
 	private String serviceTaskName;
+
+	/**
+	 * OD_BASE基于客流的时刻表任务；
+CUSTOMIZED_TRIP_COUNT_TIMETABLE基于车次数的时刻表任务;
+默认为基于客流的时刻表任务
+	 */
+	@ApiField("timetable_task_type")
+	private String timetableTaskType;
 
 	public String getCityCode() {
 		return this.cityCode;
@@ -93,6 +101,13 @@ public class AlipayCommerceTransportIntelligentizeTimetableCreateModel extends A
 	}
 	public void setServiceTaskName(String serviceTaskName) {
 		this.serviceTaskName = serviceTaskName;
+	}
+
+	public String getTimetableTaskType() {
+		return this.timetableTaskType;
+	}
+	public void setTimetableTaskType(String timetableTaskType) {
+		this.timetableTaskType = timetableTaskType;
 	}
 
 }
