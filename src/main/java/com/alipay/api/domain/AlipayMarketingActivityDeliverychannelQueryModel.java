@@ -7,18 +7,22 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可推广渠道
  *
  * @author auto create
- * @since 1.0, 2021-07-28 22:32:32
+ * @since 1.0, 2022-02-14 10:45:14
  */
 public class AlipayMarketingActivityDeliverychannelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3581529138992194413L;
+	private static final long serialVersionUID = 4665839579552967729L;
 
 	/**
 	 * 当前服务商所代理的商户信息.
 
 在查询可投放的渠道信息时，会使用商户信息来进行渠道权限、准入等条件的判断.
 
-如果代理商户信息中的businessType为ISV模式.则默认使用当前操作人的信息作为商户信息
+如果属于商户自运营，则该对象可以不填写。
+
+如果属于服务商自运营，则对象中的businessType设置为ISV模式.默认使用当前操作人的信息作为商户信息
+
+如果属于服务商代运营模式，则对象中的businessType设置为ISV_FOR_MERCHANT模式
 	 */
 	@ApiField("belong_merchant_info")
 	private DeliveryAgencyMerchantInfo belongMerchantInfo;

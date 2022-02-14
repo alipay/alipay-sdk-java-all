@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeBillDownloadurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6567356297393497633L;
+	private static final long serialVersionUID = 7533892497186499763L;
 
 	/** 
 	 * 账单下载地址

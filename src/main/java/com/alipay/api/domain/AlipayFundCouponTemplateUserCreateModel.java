@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundCouponTemplateUserCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2893847628847824786L;
+	private static final long serialVersionUID = 3298681138272716747L;
 
 	/**
 	 * 业务场景，不同的业务场景对应不同的发放策略，加入前需和红包侧确定，现有枚举值:standard_template_grant，代表基本皮肤发放策略，业务侧先将要发放的红包皮肤模板和红包侧审核同步，当皮肤模板在红包侧上线后发放

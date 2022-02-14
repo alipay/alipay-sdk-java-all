@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建解决方案主单
  *
  * @author auto create
- * @since 1.0, 2021-11-10 05:00:31
+ * @since 1.0, 2022-02-09 16:44:17
  */
 public class AlipayOpenSpIsvSignauthCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6662315374321192692L;
+	private static final long serialVersionUID = 5673764883765964254L;
 
 	/**
 	 * 代运营授权场景信息
@@ -29,6 +29,14 @@ public class AlipayOpenSpIsvSignauthCreateModel extends AlipayObject {
 	 */
 	@ApiField("merchant_logon_id")
 	private String merchantLogonId;
+
+	/**
+	 * 1表示需要，0表示不需要
+不传参数默认是需要（1）
+是否创建三方应用授权子任务，也就是是否需要给三方应用授权
+	 */
+	@ApiField("need_app_auth")
+	private String needAppAuth;
 
 	/**
 	 * 签约单号
@@ -49,6 +57,13 @@ public class AlipayOpenSpIsvSignauthCreateModel extends AlipayObject {
 	}
 	public void setMerchantLogonId(String merchantLogonId) {
 		this.merchantLogonId = merchantLogonId;
+	}
+
+	public String getNeedAppAuth() {
+		return this.needAppAuth;
+	}
+	public void setNeedAppAuth(String needAppAuth) {
+		this.needAppAuth = needAppAuth;
 	}
 
 	public String getSignOrderNo() {

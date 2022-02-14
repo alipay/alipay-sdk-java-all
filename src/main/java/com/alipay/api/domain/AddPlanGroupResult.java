@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AddPlanGroupResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3339536162594317831L;
+	private static final long serialVersionUID = 4128414235396814357L;
 
 	/**
 	 * 新增计划下单元后，返回的单元ID列表

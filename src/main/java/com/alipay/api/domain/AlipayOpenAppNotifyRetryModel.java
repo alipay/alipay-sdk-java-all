@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppNotifyRetryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3752244929482422211L;
+	private static final long serialVersionUID = 7647239771118839248L;
 
 	/**
 	 * notify_id_list+是+交易notifyId的列表

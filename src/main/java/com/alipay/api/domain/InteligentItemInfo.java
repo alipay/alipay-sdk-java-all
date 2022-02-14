@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InteligentItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4821344526646855677L;
+	private static final long serialVersionUID = 2286654778116896673L;
 
 	/**
 	 * 券适用的单品码列表

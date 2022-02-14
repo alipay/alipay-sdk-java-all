@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdEdgeColorfeedbackCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6721123315885531343L;
+	private static final long serialVersionUID = 3736969319849415565L;
 
 	/**
 	 * 该参数为业务反馈的自定义参数

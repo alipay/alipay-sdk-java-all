@@ -12,25 +12,40 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.delivery.stop response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-13 20:55:28
+ * @since 1.0, 2022-02-11 16:26:33
  */
 public class AlipayMarketingActivityDeliveryStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2794724325318182474L;
+	private static final long serialVersionUID = 7383433426187593783L;
 
 	/** 
-	 * 停止失败的投放配置列表
+	 * 投放计划id。
+	 */
+	@ApiField("delivery_id")
+	private String deliveryId;
+
+	/** 
+	 * [已废弃]
+停止失败的投放配置列表
 	 */
 	@ApiListField("error_delivery_config_list")
 	@ApiField("error_delivery_config")
 	private List<ErrorDeliveryConfig> errorDeliveryConfigList;
 
 	/** 
-	 * 停止成功的投放配置列表
+	 * [已废弃]
+停止成功的投放配置列表
 	 */
 	@ApiListField("success_delivery_config_list")
 	@ApiField("success_delivery_config")
 	private List<SuccessDeliveryConfig> successDeliveryConfigList;
+
+	public void setDeliveryId(String deliveryId) {
+		this.deliveryId = deliveryId;
+	}
+	public String getDeliveryId( ) {
+		return this.deliveryId;
+	}
 
 	public void setErrorDeliveryConfigList(List<ErrorDeliveryConfig> errorDeliveryConfigList) {
 		this.errorDeliveryConfigList = errorDeliveryConfigList;

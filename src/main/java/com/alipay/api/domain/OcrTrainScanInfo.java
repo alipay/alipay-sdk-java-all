@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OcrTrainScanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3228977967564586719L;
+	private static final long serialVersionUID = 1177486365846451974L;
 
 	/**
 	 * 目的地

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaskReceiveInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2384425549633763348L;
+	private static final long serialVersionUID = 3388287812339517361L;
 
 	/**
 	 * 结果描述

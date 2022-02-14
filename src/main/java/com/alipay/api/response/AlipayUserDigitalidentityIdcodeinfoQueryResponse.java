@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserDigitalidentityIdcodeinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2673271171157157769L;
+	private static final long serialVersionUID = 4772165397177479923L;
 
 	/** 
 	 * 用数据提供机构RSA加密后的AES秘钥，加密后进行了Base64编码。机构的公钥请接入时商户与机构线下对接，加解密签名验签工具请接入时与支付宝端本开放能力技术负责人对接获取。当user_data不为空时必填

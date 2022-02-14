@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3686719167152622391L;
+	private static final long serialVersionUID = 1127952893482625373L;
 
 	/**
 	 * 模板消息内容。商家/开发者将模板占位符替换为自定义内容。
@@ -21,7 +21,7 @@ public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 
 * 自定义消息内容仅需替换 value 后内容即可，其余内容请勿修改。如 {"keyword1": {"value" : "2021年01月"}。表示第一个关键字数据为"2021年01月" 。
 
-* value 最长为 50 个字。
+* value 最长为 50 个字符。
 	 */
 	@ApiField("data")
 	private String data;

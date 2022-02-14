@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignedFileInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5118383382242538871L;
+	private static final long serialVersionUID = 7883641549285271968L;
 
 	/**
 	 * 文档过期时间戳

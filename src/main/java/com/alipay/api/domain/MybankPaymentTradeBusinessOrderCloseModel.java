@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商银行订单关闭接口
  *
  * @author auto create
- * @since 1.0, 2021-09-02 17:32:16
+ * @since 1.0, 2022-02-09 14:41:51
  */
 public class MybankPaymentTradeBusinessOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2818724639741983826L;
+	private static final long serialVersionUID = 2523736973437321471L;
 
 	/**
 	 * 创建订单时返回的订单号
@@ -25,6 +25,18 @@ public class MybankPaymentTradeBusinessOrderCloseModel extends AlipayObject {
 	@ApiField("out_trade_no")
 	private String outTradeNo;
 
+	/**
+	 * 网商用户信息ID，一般是银行卡或者会员ID
+	 */
+	@ApiField("user_info_id")
+	private String userInfoId;
+
+	/**
+	 * 网商用户类型
+	 */
+	@ApiField("user_info_type")
+	private String userInfoType;
+
 	public String getOrderNo() {
 		return this.orderNo;
 	}
@@ -37,6 +49,20 @@ public class MybankPaymentTradeBusinessOrderCloseModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getUserInfoId() {
+		return this.userInfoId;
+	}
+	public void setUserInfoId(String userInfoId) {
+		this.userInfoId = userInfoId;
+	}
+
+	public String getUserInfoType() {
+		return this.userInfoType;
+	}
+	public void setUserInfoType(String userInfoType) {
+		this.userInfoType = userInfoType;
 	}
 
 }

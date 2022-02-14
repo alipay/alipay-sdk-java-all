@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.QrCodeRouteGroup;
 
 import com.alipay.api.AlipayResponse;
@@ -9,17 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.qrcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-18 09:46:02
+ * @since 1.0, 2022-02-14 15:41:34
  */
 public class AlipayOpenMiniQrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5281521958392981827L;
+	private static final long serialVersionUID = 2136382698163291996L;
 
 	/** 
-	 * 规则路由数据
+	 * 规则路由数据列表
 	 */
-	@ApiField("qr_code_route_groups")
-	private QrCodeRouteGroup qrCodeRouteGroups;
+	@ApiListField("qr_code_route_groups")
+	@ApiField("qr_code_route_group")
+	private List<QrCodeRouteGroup> qrCodeRouteGroups;
 
 	/** 
 	 * 数据总数
@@ -27,10 +30,10 @@ public class AlipayOpenMiniQrcodeQueryResponse extends AlipayResponse {
 	@ApiField("total_items")
 	private Long totalItems;
 
-	public void setQrCodeRouteGroups(QrCodeRouteGroup qrCodeRouteGroups) {
+	public void setQrCodeRouteGroups(List<QrCodeRouteGroup> qrCodeRouteGroups) {
 		this.qrCodeRouteGroups = qrCodeRouteGroups;
 	}
-	public QrCodeRouteGroup getQrCodeRouteGroups( ) {
+	public List<QrCodeRouteGroup> getQrCodeRouteGroups( ) {
 		return this.qrCodeRouteGroups;
 	}
 

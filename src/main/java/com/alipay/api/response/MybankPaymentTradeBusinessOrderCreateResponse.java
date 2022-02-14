@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.business.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-03 10:07:02
+ * @since 1.0, 2022-02-09 14:41:47
  */
 public class MybankPaymentTradeBusinessOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1613688677137637673L;
+	private static final long serialVersionUID = 2427456754723643396L;
+
+	/** 
+	 * 网商收银台地址，收银支付场景下涉及
+	 */
+	@ApiField("cashier_url")
+	private String cashierUrl;
 
 	/** 
 	 * 网商银行创建的业务单号
@@ -21,7 +27,7 @@ public class MybankPaymentTradeBusinessOrderCreateResponse extends AlipayRespons
 	private String orderNo;
 
 	/** 
-	 * 请求流水号
+	 * 请求流水号，对应out_trade_no
 	 */
 	@ApiField("request_no")
 	private String requestNo;
@@ -31,6 +37,13 @@ public class MybankPaymentTradeBusinessOrderCreateResponse extends AlipayRespons
 	 */
 	@ApiField("retry")
 	private String retry;
+
+	public void setCashierUrl(String cashierUrl) {
+		this.cashierUrl = cashierUrl;
+	}
+	public String getCashierUrl( ) {
+		return this.cashierUrl;
+	}
 
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;

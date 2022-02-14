@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataserviceHolographicFactorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7494127538945153857L;
+	private static final long serialVersionUID = 7863559565385232623L;
 
 	/**
 	 * 参数中文名称:业务id

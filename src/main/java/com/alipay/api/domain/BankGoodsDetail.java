@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2021-08-27 11:11:51
+ * @since 1.0, 2022-02-09 13:33:31
  */
 public class BankGoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2347129464138554516L;
+	private static final long serialVersionUID = 7858771293948637799L;
+
+	/**
+	 * 商品描述
+	 */
+	@ApiField("goods_desc")
+	private String goodsDesc;
 
 	/**
 	 * 商品ID
@@ -36,6 +42,13 @@ public class BankGoodsDetail extends AlipayObject {
 	 */
 	@ApiField("quantity")
 	private String quantity;
+
+	public String getGoodsDesc() {
+		return this.goodsDesc;
+	}
+	public void setGoodsDesc(String goodsDesc) {
+		this.goodsDesc = goodsDesc;
+	}
 
 	public String getGoodsId() {
 		return this.goodsId;

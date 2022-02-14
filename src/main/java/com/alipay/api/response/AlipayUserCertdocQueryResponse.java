@@ -18,7 +18,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCertdocQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2756772696388618961L;
+	private static final long serialVersionUID = 7586147231667866246L;
 
 	/** 
 	 * 进行授权的用户本人的驾驶证信息

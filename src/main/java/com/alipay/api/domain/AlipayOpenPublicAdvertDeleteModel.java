@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicAdvertDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1811384944419998272L;
+	private static final long serialVersionUID = 7681177895213133162L;
 
 	/**
 	 * 待删除的广告位分组标识

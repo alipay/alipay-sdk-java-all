@@ -10,25 +10,60 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放创建
  *
  * @author auto create
- * @since 1.0, 2021-08-26 14:52:30
+ * @since 1.0, 2022-02-09 15:02:25
  */
 public class AlipayMarketingActivityDeliveryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7687347677932782679L;
+	private static final long serialVersionUID = 4156775217971197185L;
 
 	/**
-	 * 当前服务商所代理的商户信息. 在投放创建时，会使用商户信息来进行权限、准入等条件的判断. 如果代理商户信息中的businessType为ISV模式.则默认使用当前操作人的信息作为商户信息
+	 * 当前服务商创建投放的商户信息。
+商户自研模式，则该对象可以不填写。
+服务商自研模式，则对象中的bussinessType设置为ISV，默认使用当前操作人的信息作为商户信息；
+服务商代运营模式，则对象中的bussinessType设置为ISV_FOR_MERCHANT。
 	 */
 	@ApiField("belong_merchant_info")
 	private DeliveryAgencyMerchantInfo belongMerchantInfo;
 
 	/**
-	 * 待创建的投放配置列表。
+	 * 投放计划基础信息。
+	 */
+	@ApiField("delivery_base_info")
+	private DeliveryBaseInfo deliveryBaseInfo;
+
+	/**
+	 * 投放的展位编码。 枚举值： 
+PAYMENT_RESULT：本店优惠(支付结果页)。
+	 */
+	@ApiField("delivery_booth_code")
+	private String deliveryBoothCode;
+
+	/**
+	 * [已废弃]
+待创建的投放配置列表。
 最大数量限制20个。
 	 */
 	@ApiListField("delivery_config_list")
 	@ApiField("delivery_config")
 	private List<DeliveryConfig> deliveryConfigList;
+
+	/**
+	 * 投放计划玩法配置。 限制：投放玩法配置有且仅能配置一个。
+	 */
+	@ApiField("delivery_play_config")
+	private DeliveryPlayConfig deliveryPlayConfig;
+
+	/**
+	 * 投放计划定向规则。
+	 */
+	@ApiField("delivery_target_rule")
+	private DeliveryTargetRule deliveryTargetRule;
+
+	/**
+	 * 外部业务单号，用作幂等控制。 幂等作用：请求返回与上一次相同的结果。 外部接入方需保证业务单号唯一。
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	public DeliveryAgencyMerchantInfo getBelongMerchantInfo() {
 		return this.belongMerchantInfo;
@@ -37,11 +72,46 @@ public class AlipayMarketingActivityDeliveryCreateModel extends AlipayObject {
 		this.belongMerchantInfo = belongMerchantInfo;
 	}
 
+	public DeliveryBaseInfo getDeliveryBaseInfo() {
+		return this.deliveryBaseInfo;
+	}
+	public void setDeliveryBaseInfo(DeliveryBaseInfo deliveryBaseInfo) {
+		this.deliveryBaseInfo = deliveryBaseInfo;
+	}
+
+	public String getDeliveryBoothCode() {
+		return this.deliveryBoothCode;
+	}
+	public void setDeliveryBoothCode(String deliveryBoothCode) {
+		this.deliveryBoothCode = deliveryBoothCode;
+	}
+
 	public List<DeliveryConfig> getDeliveryConfigList() {
 		return this.deliveryConfigList;
 	}
 	public void setDeliveryConfigList(List<DeliveryConfig> deliveryConfigList) {
 		this.deliveryConfigList = deliveryConfigList;
+	}
+
+	public DeliveryPlayConfig getDeliveryPlayConfig() {
+		return this.deliveryPlayConfig;
+	}
+	public void setDeliveryPlayConfig(DeliveryPlayConfig deliveryPlayConfig) {
+		this.deliveryPlayConfig = deliveryPlayConfig;
+	}
+
+	public DeliveryTargetRule getDeliveryTargetRule() {
+		return this.deliveryTargetRule;
+	}
+	public void setDeliveryTargetRule(DeliveryTargetRule deliveryTargetRule) {
+		this.deliveryTargetRule = deliveryTargetRule;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 }

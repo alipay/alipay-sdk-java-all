@@ -7,14 +7,19 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文件信息对象
  *
  * @author auto create
- * @since 1.0, 2021-05-07 20:39:26
+ * @since 1.0, 2022-02-10 17:47:34
  */
 public class FileInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8473484888823494461L;
+	private static final long serialVersionUID = 8167987266371217531L;
 
 	/**
-	 * 文件类型，唯一值，枚举。 VIDEO=视频;VOICE=语音;PICTURE=图片;TEXT=文本
+	 * 文件类型，唯一值，枚举。 
+VIDEO=视频;
+VOICE=语音;
+PICTURE=图片;
+TEXT=文本;
+DOC, DOCX, XLS, XLSX, PPT, PPTX=MS Office
 	 */
 	@ApiField("data_type")
 	private String dataType;
@@ -26,7 +31,7 @@ public class FileInfo extends AlipayObject {
 	private String fileBizType;
 
 	/**
-	 * 文件地址url
+	 * 文件地址url,图片大小推荐在10M以内
 	 */
 	@ApiField("file_url")
 	private String fileUrl;

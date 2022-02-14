@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.scene.token.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-02-08 17:11:42
+ * @since 1.0, 2022-02-10 14:42:09
  */
 public class AlipayCommerceEducateSceneTokenApplyRequest implements AlipayRequest<AlipayCommerceEducateSceneTokenApplyResponse> {
 
