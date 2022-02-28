@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动核销商品详情
  *
  * @author auto create
- * @since 1.0, 2021-11-16 11:24:23
+ * @since 1.0, 2022-02-23 14:18:37
  */
 public class ActivityGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7283545257283882583L;
+	private static final long serialVersionUID = 1399193347254484926L;
 
 	/**
 	 * 商品编码

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券展示信息
  *
  * @author auto create
- * @since 1.0, 2021-12-23 13:40:35
+ * @since 1.0, 2022-02-25 10:45:03
  */
 public class VoucherDisplayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5668911721415773564L;
+	private static final long serialVersionUID = 4685274479684128538L;
 
 	/**
 	 * 商家logo
@@ -45,6 +45,18 @@ alipay.marketing.material.image.upload接口上传图片，指定file_key为PROM
 	 */
 	@ApiField("brand_name")
 	private String brandName;
+
+	/**
+	 * 客服电话 限制: 客服电话和客服链接必须二选一
+	 */
+	@ApiField("customer_service_mobile")
+	private String customerServiceMobile;
+
+	/**
+	 * 客服链接 限制: 客服电话和客服链接必须二选一
+	 */
+	@ApiField("customer_service_url")
+	private String customerServiceUrl;
 
 	/**
 	 * 券补充说明，该字段为可运营字段，可描述商品特色
@@ -106,6 +118,20 @@ alipay.marketing.material.image.upload接口上传图片，指定file_key为PROM
 	}
 	public void setBrandName(String brandName) {
 		this.brandName = brandName;
+	}
+
+	public String getCustomerServiceMobile() {
+		return this.customerServiceMobile;
+	}
+	public void setCustomerServiceMobile(String customerServiceMobile) {
+		this.customerServiceMobile = customerServiceMobile;
+	}
+
+	public String getCustomerServiceUrl() {
+		return this.customerServiceUrl;
+	}
+	public void setCustomerServiceUrl(String customerServiceUrl) {
+		this.customerServiceUrl = customerServiceUrl;
 	}
 
 	public String getVoucherComment() {

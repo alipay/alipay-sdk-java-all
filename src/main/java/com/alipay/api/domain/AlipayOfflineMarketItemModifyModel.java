@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8545822172731899831L;
+	private static final long serialVersionUID = 7842563895797427631L;
 
 	/**
 	 * 审核规则。支付宝内部使用，外部商户不需填写此字段。

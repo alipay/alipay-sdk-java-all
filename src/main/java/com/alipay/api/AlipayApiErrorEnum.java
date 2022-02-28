@@ -32,7 +32,7 @@ public enum AlipayApiErrorEnum {
     DECRYPT_ERROR("DECRYPT_ERROR", "%s非对称解密遭遇异常，请检查私钥格式是否正确。%s cipherTextBase64=%s，charset=%s，privateKeySize=%d"),
     ENCRYPT_ERROR("ENCRYPT_ERROR", "%s非对称加密遭遇异常，请检查公钥格式是否正确。%s plainText=%s，charset=%s，publicKey=%s"),
     SIGN_ERROR("SIGN_ERROR", "%s签名遭遇异常，请检查私钥格式是否正确。%s content=%s，charset=%s，privateKeySize=%d"),
-    VERIFY_ERROR("VERIFY_ERROR", "%s验签遭遇异常，请检查公钥格式是否正确。%s content=%s，charset=%s，publicKey=%s"),
+    VERIFY_ERROR("VERIFY_ERROR", "%s验签遭遇异常，请检查公钥格式或签名是否正确。%s content=%s，charset=%s，publicKey=%s，sign=%s"),
     SIGN_CHARSET_ERROR("SIGN_CHARSET_ERROR", "%s签名遭遇异常，请检查编码格式是否正确。 charset=%s"),
 
     //加解密

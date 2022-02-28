@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家会员卡消息信息
  *
  * @author auto create
- * @since 1.0, 2021-07-08 14:46:53
+ * @since 1.0, 2022-02-21 15:46:41
  */
 public class MerchantCardMsgInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2682872948161368727L;
+	private static final long serialVersionUID = 3573145666612321686L;
 
 	/**
 	 * 本次消息通知的变动积分，积分必须为数字型（可为浮点型，带2位小数点），格式非法则不发送消息。例如：

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DriverTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2346231791371446547L;
+	private static final long serialVersionUID = 1118483517512227596L;
 
 	/**
 	 * 交易日期

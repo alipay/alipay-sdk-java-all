@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.contract.quicksettlement.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-19 14:05:49
+ * @since 1.0, 2022-02-28 10:33:16
  */
 public class AlipayTradeContractQuicksettlementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2491477286424591597L;
+	private static final long serialVersionUID = 3797643346414295448L;
 
 	/** 
 	 * 极速收总额度，单位元

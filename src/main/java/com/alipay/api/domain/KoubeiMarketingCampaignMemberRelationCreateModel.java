@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开通口碑商户会员
  *
  * @author auto create
- * @since 1.0, 2019-03-06 15:53:48
+ * @since 1.0, 2022-02-15 16:02:59
  */
 public class KoubeiMarketingCampaignMemberRelationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6438615989555912651L;
+	private static final long serialVersionUID = 4147871919727325181L;
 
 	/**
 	 * 会员开通时间

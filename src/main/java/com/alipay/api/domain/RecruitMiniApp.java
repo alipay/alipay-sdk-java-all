@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商报名提交的小程序信息
  *
  * @author auto create
- * @since 1.0, 2021-06-30 23:43:36
+ * @since 1.0, 2022-02-23 11:50:36
  */
 public class RecruitMiniApp extends AlipayObject {
 
-	private static final long serialVersionUID = 4495956222184599617L;
+	private static final long serialVersionUID = 3411618825889492256L;
 
 	/**
 	 * 小程序ID

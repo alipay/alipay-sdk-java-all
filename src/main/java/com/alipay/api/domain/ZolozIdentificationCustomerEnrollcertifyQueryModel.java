@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸注册或者认证的结果查询
  *
  * @author auto create
- * @since 1.0, 2020-12-18 15:37:04
+ * @since 1.0, 2022-02-18 16:11:50
  */
 public class ZolozIdentificationCustomerEnrollcertifyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4695144729898181439L;
+	private static final long serialVersionUID = 1866736838878733626L;
 
 	/**
 	 * 业务单据号，用于核对和排查

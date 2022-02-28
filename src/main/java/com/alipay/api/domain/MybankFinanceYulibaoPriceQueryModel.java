@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoPriceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1635796745273666343L;
+	private static final long serialVersionUID = 5253697557328324561L;
 
 	/**
 	 * 查询行情的截止日期，必须是格式为yyyyMMdd的日期字符串且日期要大于等于start_date，时间最大跨度为30天，如start_date为20160808，则end_date最大值为20160906

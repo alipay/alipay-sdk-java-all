@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开放平台绿色能量信息查询
  *
  * @author auto create
- * @since 1.0, 2022-02-07 11:25:22
+ * @since 1.0, 2022-02-25 17:25:24
  */
 public class AlipaySocialOpengreenEnergyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1272966275365845797L;
+	private static final long serialVersionUID = 7284373163382177787L;
 
 	/**
 	 * 生成能量时传入的唯一键

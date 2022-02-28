@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共同账户交易查询
  *
  * @author auto create
- * @since 1.0, 2022-01-27 10:16:52
+ * @since 1.0, 2022-02-23 14:47:44
  */
 public class AlipayFundJointaccountTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8267251423944381466L;
+	private static final long serialVersionUID = 3248171169199872216L;
 
 	/**
 	 * 企业账户ID
@@ -36,6 +36,12 @@ public class AlipayFundJointaccountTradeQueryModel extends AlipayObject {
 	 */
 	@ApiField("member_id")
 	private String memberId;
+
+	/**
+	 * 外部平台订单号。使用该参数查询时，返回结果见trade_info_list
+	 */
+	@ApiField("platform_order_id")
+	private String platformOrderId;
 
 	/**
 	 * 销售产品码
@@ -75,6 +81,13 @@ public class AlipayFundJointaccountTradeQueryModel extends AlipayObject {
 	}
 	public void setMemberId(String memberId) {
 		this.memberId = memberId;
+	}
+
+	public String getPlatformOrderId() {
+		return this.platformOrderId;
+	}
+	public void setPlatformOrderId(String platformOrderId) {
+		this.platformOrderId = platformOrderId;
 	}
 
 	public String getProductCode() {

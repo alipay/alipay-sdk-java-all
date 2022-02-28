@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.taxbill.sign.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-17 20:04:27
+ * @since 1.0, 2022-02-16 15:06:43
  */
 public class AlipayFundTaxbillSignUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4337555522264732817L;
+	private static final long serialVersionUID = 6397656111169496195L;
 
 	/** 
 	 * 解约受理结果
@@ -27,7 +27,7 @@ public class AlipayFundTaxbillSignUnsignResponse extends AlipayResponse {
 	private String agreementId;
 
 	/** 
-	 * 三方协议状态
+	 * 已弃用字段，签约结果状态请参考sign_status。三方协议状态（已过时）
 1.REGISTERED（已签约）
 2.TERMINATED（已解约）
 	 */
@@ -83,6 +83,12 @@ public class AlipayFundTaxbillSignUnsignResponse extends AlipayResponse {
 	private String productCode;
 
 	/** 
+	 * 用户的签约状态，如果解约处理成功，则返回此字段。参数取值为有限枚举：TERMINATED
+	 */
+	@ApiField("sign_status")
+	private String signStatus;
+
+	/** 
 	 * 税优模式，有限枚举。1.TEMPORARY_TAX_REGISTRATION（临时税务登记）2.NATURAL_PERSON_LEVIED（自然人代征）
 	 */
 	@ApiField("tax_optimization_mode")
@@ -95,7 +101,7 @@ public class AlipayFundTaxbillSignUnsignResponse extends AlipayResponse {
 	private String terminatedTime;
 
 	/** 
-	 * 用户在平台的会员状态。1.TAX_REGISTERED（完成税务注册）2.CONTRACT_TERMINATED（用户已解约）
+	 * 已弃用字段，签约结果状态请参考sign_status。用户在平台的会员状态（已过时）：1.TAX_REGISTERED（完成税务注册）2.CONTRACT_TERMINATED（用户已解约）
 	 */
 	@ApiField("user_status")
 	private String userStatus;
@@ -175,6 +181,13 @@ public class AlipayFundTaxbillSignUnsignResponse extends AlipayResponse {
 	}
 	public String getProductCode( ) {
 		return this.productCode;
+	}
+
+	public void setSignStatus(String signStatus) {
+		this.signStatus = signStatus;
+	}
+	public String getSignStatus( ) {
+		return this.signStatus;
 	}
 
 	public void setTaxOptimizationMode(String taxOptimizationMode) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动门店详情
  *
  * @author auto create
- * @since 1.0, 2021-11-16 11:24:35
+ * @since 1.0, 2022-02-23 14:15:43
  */
 public class ActivityShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7683839752657671715L;
+	private static final long serialVersionUID = 5834632114284335211L;
 
 	/**
 	 * 纬度，浮点型,小数点后最多保留6位

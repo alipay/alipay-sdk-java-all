@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁统一结算发票录入并关联
  *
  * @author auto create
- * @since 1.0, 2021-09-28 14:26:54
+ * @since 1.0, 2022-02-23 17:17:06
  */
 public class AlipayBossFncGfsettleprodPoinvoicerelateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3685672285797393851L;
+	private static final long serialVersionUID = 2522375532761324466L;
 
 	/**
 	 * 发票创建关联请求

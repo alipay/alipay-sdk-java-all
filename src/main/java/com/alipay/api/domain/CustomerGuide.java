@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户引导配置
  *
  * @author auto create
- * @since 1.0, 2022-01-18 15:09:15
+ * @since 1.0, 2022-02-25 10:44:42
  */
 public class CustomerGuide extends AlipayObject {
 
-	private static final long serialVersionUID = 1242825974379912116L;
+	private static final long serialVersionUID = 7179785955421678447L;
 
 	/**
-	 * 卡包详情页可跳转的小程序appId。 限制： 该appId归属的pid必须和当前商户保持一致。 目前mini_app_id、shop_ids、real_shop_ids必须三选一。
+	 * 券可用的小程序appId，卡包详情页可跳转到该appId 限制： 该appId归属的pid必须和当前商户保持一致。 目前mini_app_id、shop_ids、real_shop_ids必须三选一。
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
@@ -46,6 +46,17 @@ public class CustomerGuide extends AlipayObject {
 	@ApiListField("real_shop_ids")
 	@ApiField("string")
 	private List<String> realShopIds;
+
+	/**
+	 * 小程序服务编码，通过 alipay.open.app.appcontent.function.create(小程序服务创建)接口创建服务后获取。
+限制:
+1.只有mini_app_id有值时该值传入才会有效
+2.当前只支持一个服务code
+3.service_codes与mini_app_path只能且必须二选一
+	 */
+	@ApiListField("service_codes")
+	@ApiField("string")
+	private List<String> serviceCodes;
 
 	/**
 	 * 券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。 限制： 1、shop_ids中的门店id必须是支付宝门店id。 2、shop_ids如果包含重复的门店id会自动进行去重操作。 3、目前mini_app_id、shop_ids、real_shop_ids必须三选一。 4、shop_ids、real_shop_ids最多选择一种
@@ -89,6 +100,13 @@ public class CustomerGuide extends AlipayObject {
 	}
 	public void setRealShopIds(List<String> realShopIds) {
 		this.realShopIds = realShopIds;
+	}
+
+	public List<String> getServiceCodes() {
+		return this.serviceCodes;
+	}
+	public void setServiceCodes(List<String> serviceCodes) {
+		this.serviceCodes = serviceCodes;
 	}
 
 	public List<String> getShopIds() {

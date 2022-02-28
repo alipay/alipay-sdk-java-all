@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商报名规则
  *
  * @author auto create
- * @since 1.0, 2021-12-21 19:19:44
+ * @since 1.0, 2022-02-23 11:50:46
  */
 public class RecruitEnrollRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4276657386742681686L;
+	private static final long serialVersionUID = 4137367493843624648L;
 
 	/**
 	 * 最大数量

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报名规则数据
  *
  * @author auto create
- * @since 1.0, 2021-11-22 19:29:53
+ * @since 1.0, 2022-02-23 11:50:46
  */
 public class RecruitEnrollRuleData extends AlipayObject {
 
-	private static final long serialVersionUID = 1566749875412514887L;
+	private static final long serialVersionUID = 6123998631888363995L;
 
 	/**
 	 * 招商方案可提报的券的规则列表，不同的券有不同的规则。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商报名的素材
  *
  * @author auto create
- * @since 1.0, 2021-11-22 19:30:23
+ * @since 1.0, 2022-02-23 11:50:36
  */
 public class RecruitMaterial extends AlipayObject {
 
-	private static final long serialVersionUID = 3799725972316322574L;
+	private static final long serialVersionUID = 3434847548881483124L;
 
 	/**
 	 * 提报的素材内容，json字符串，使用时需要把此字符串解析成json对象。

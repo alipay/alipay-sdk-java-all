@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商方案详情查询
  *
  * @author auto create
- * @since 1.0, 2021-09-28 20:00:37
+ * @since 1.0, 2022-02-23 15:22:05
  */
 public class AlipayMarketingRecruitPlanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5484822935612399434L;
+	private static final long serialVersionUID = 6885719272711633532L;
 
 	/**
 	 * 招商方案ID

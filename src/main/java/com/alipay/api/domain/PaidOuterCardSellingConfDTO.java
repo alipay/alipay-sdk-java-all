@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 付费外卡售卖基础配置
  *
  * @author auto create
- * @since 1.0, 2021-08-19 15:38:02
+ * @since 1.0, 2022-02-21 15:46:35
  */
 public class PaidOuterCardSellingConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2331273322339741344L;
+	private static final long serialVersionUID = 4791457396359228285L;
 
 	/**
 	 * 售卖结束时间。

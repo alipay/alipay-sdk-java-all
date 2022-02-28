@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改券有效期对象
  *
  * @author auto create
- * @since 1.0, 2021-12-23 17:32:19
+ * @since 1.0, 2022-02-25 10:43:58
  */
 public class VoucherValidPeriodModify extends AlipayObject {
 
-	private static final long serialVersionUID = 8469264935764555425L;
+	private static final long serialVersionUID = 3614962873827732436L;
+
+	/**
+	 * 券可使用的开始时间。 格式为：yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("valid_begin_time")
+	private Date validBeginTime;
 
 	/**
 	 * 券生效后N天内可以使用。
@@ -40,6 +46,19 @@ public class VoucherValidPeriodModify extends AlipayObject {
 	@ApiField("valid_end_time")
 	private Date validEndTime;
 
+	/**
+	 * 用户领券后需要等待N天，券才可以生效。
+	 */
+	@ApiField("wait_days_after_receive")
+	private Long waitDaysAfterReceive;
+
+	public Date getValidBeginTime() {
+		return this.validBeginTime;
+	}
+	public void setValidBeginTime(Date validBeginTime) {
+		this.validBeginTime = validBeginTime;
+	}
+
 	public Long getValidDaysAfterReceive() {
 		return this.validDaysAfterReceive;
 	}
@@ -52,6 +71,13 @@ public class VoucherValidPeriodModify extends AlipayObject {
 	}
 	public void setValidEndTime(Date validEndTime) {
 		this.validEndTime = validEndTime;
+	}
+
+	public Long getWaitDaysAfterReceive() {
+		return this.waitDaysAfterReceive;
+	}
+	public void setWaitDaysAfterReceive(Long waitDaysAfterReceive) {
+		this.waitDaysAfterReceive = waitDaysAfterReceive;
 	}
 
 }

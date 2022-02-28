@@ -106,7 +106,7 @@ public abstract class BaseAsymmetricEncryptor implements IAsymmetricEncryptor {
         } catch (Exception e) {
 
             String errorMessage = String.format(AlipayApiErrorEnum.VERIFY_ERROR.getErrMsg(),
-                    getAsymmetricType(), e.getMessage(), content, charset, publicKey);
+                    getAsymmetricType(), e.getMessage(), content, charset, publicKey, sign);
             throw new AlipayApiException(errorMessage, e);
         }
     }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 拓展字段
  *
  * @author auto create
- * @since 1.0, 2021-06-18 16:56:24
+ * @since 1.0, 2022-02-23 10:19:09
  */
 public class BillSendExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6497153317434599569L;
+	private static final long serialVersionUID = 5448252277175849596L;
 
 	/**
 	 * 账单唤起收银台的方式：

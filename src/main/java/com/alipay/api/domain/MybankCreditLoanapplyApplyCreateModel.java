@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机构代客户申贷
  *
  * @author auto create
- * @since 1.0, 2018-11-14 16:42:19
+ * @since 1.0, 2022-02-17 13:47:47
  */
 public class MybankCreditLoanapplyApplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8198791121769428682L;
+	private static final long serialVersionUID = 2187344583485295881L;
 
 	/**
 	 * 客户的支付宝ID，注意：如果site为ALIPAY，此参数login_id和参数alipay_id至少有一个不能为空。

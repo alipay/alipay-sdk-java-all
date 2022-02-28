@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆驶出上送接口
  *
  * @author auto create
- * @since 1.0, 2021-10-27 15:57:38
+ * @since 1.0, 2022-02-25 20:05:36
  */
 public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2766139748734811668L;
+	private static final long serialVersionUID = 3498638626259139126L;
 
 	/**
 	 * 实际金额
@@ -50,6 +50,12 @@ public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 	private String exitId;
 
 	/**
+	 * 是否加密，默认为false
+	 */
+	@ApiField("is_encrypt_car_number")
+	private Boolean isEncryptCarNumber;
+
+	/**
 	 * 智能助理当前的跳转链接
 	 */
 	@ApiField("isv_url")
@@ -60,6 +66,12 @@ public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 	 */
 	@ApiField("order_amount")
 	private String orderAmount;
+
+	/**
+	 * 外部停车流水号(用于串通进场与出场信息)
+	 */
+	@ApiField("out_serial_no")
+	private String outSerialNo;
 
 	/**
 	 * 车辆离场时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制
@@ -126,6 +138,13 @@ public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 		this.exitId = exitId;
 	}
 
+	public Boolean getIsEncryptCarNumber() {
+		return this.isEncryptCarNumber;
+	}
+	public void setIsEncryptCarNumber(Boolean isEncryptCarNumber) {
+		this.isEncryptCarNumber = isEncryptCarNumber;
+	}
+
 	public String getIsvUrl() {
 		return this.isvUrl;
 	}
@@ -138,6 +157,13 @@ public class AlipayEcoMycarParkingExitinfoSyncModel extends AlipayObject {
 	}
 	public void setOrderAmount(String orderAmount) {
 		this.orderAmount = orderAmount;
+	}
+
+	public String getOutSerialNo() {
+		return this.outSerialNo;
+	}
+	public void setOutSerialNo(String outSerialNo) {
+		this.outSerialNo = outSerialNo;
 	}
 
 	public String getOutTime() {

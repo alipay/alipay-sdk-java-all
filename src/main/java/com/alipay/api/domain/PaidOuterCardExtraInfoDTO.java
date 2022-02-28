@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付费外卡信息
  *
  * @author auto create
- * @since 1.0, 2021-10-15 11:33:44
+ * @since 1.0, 2022-02-21 15:46:02
  */
 public class PaidOuterCardExtraInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5385768838915545192L;
+	private static final long serialVersionUID = 7275717394949549147L;
 
 	/**
 	 * 用户操作类型，枚举如下：

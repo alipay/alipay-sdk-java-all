@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 担保服务开通
  *
  * @author auto create
- * @since 1.0, 2021-09-26 17:29:28
+ * @since 1.0, 2022-02-15 15:26:16
  */
 public class MybankCreditGuaranteeContractSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3487393289668693223L;
+	private static final long serialVersionUID = 2462715343463295481L;
 
 	/**
 	 * 支付宝ID

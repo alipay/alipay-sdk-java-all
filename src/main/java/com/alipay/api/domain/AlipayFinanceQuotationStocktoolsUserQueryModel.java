@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询股票工具订阅状态
  *
  * @author auto create
- * @since 1.0, 2020-07-02 11:19:10
+ * @since 1.0, 2022-02-21 11:11:51
  */
 public class AlipayFinanceQuotationStocktoolsUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3614227563448185581L;
+	private static final long serialVersionUID = 4286751565226341954L;
 
 	/**
 	 * 股票工具供应商机构的配置ID，通常是XXZQ（XX证券），具体值待定。用途：1.确定购买的产品的供应商（用户购买的工具一定是属于某一家供应商的）。2.来源有效性校验。对应的PID与inst_org_id要能一一对应。

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InterTradeApprovalWorkflowOperateLogVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3791445675435294861L;
+	private static final long serialVersionUID = 8316294139325271189L;
 
 	/**
 	 * 节点业务类型

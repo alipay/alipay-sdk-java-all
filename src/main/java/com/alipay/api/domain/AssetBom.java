@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料bom结构
  *
  * @author auto create
- * @since 1.0, 2022-01-04 14:04:45
+ * @since 1.0, 2022-02-23 15:44:53
  */
 public class AssetBom extends AlipayObject {
 
-	private static final long serialVersionUID = 7464999767383568873L;
+	private static final long serialVersionUID = 7119538464289566857L;
 
 	/**
 	 * 扩展属性

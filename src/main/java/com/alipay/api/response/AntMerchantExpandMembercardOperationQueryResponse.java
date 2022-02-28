@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.membercard.operation.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-18 14:10:32
+ * @since 1.0, 2022-02-25 14:56:18
  */
 public class AntMerchantExpandMembercardOperationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5577486199959682243L;
+	private static final long serialVersionUID = 2836424516287644297L;
 
 	/** 
 	 * 最新的卡模版配置

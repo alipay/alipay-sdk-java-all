@@ -5,6 +5,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TradeFundBillDetail;
+import com.alipay.api.domain.TradeInfoDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-27 10:16:52
+ * @since 1.0, 2022-02-23 16:21:33
  */
 public class AlipayFundJointaccountTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3255156431384623192L;
+	private static final long serialVersionUID = 1273879734987581169L;
 
 	/** 
 	 * 买家ID
@@ -42,6 +43,13 @@ public class AlipayFundJointaccountTradeQueryResponse extends AlipayResponse {
 	@ApiListField("trade_fund_bill_list")
 	@ApiField("trade_fund_bill_detail")
 	private List<TradeFundBillDetail> tradeFundBillList;
+
+	/** 
+	 * 交易信息集合。查询为批量查询时，使用该结果返回
+	 */
+	@ApiListField("trade_info_list")
+	@ApiField("trade_info_d_t_o")
+	private List<TradeInfoDTO> tradeInfoList;
 
 	/** 
 	 * 交易单号
@@ -81,6 +89,13 @@ public class AlipayFundJointaccountTradeQueryResponse extends AlipayResponse {
 	}
 	public List<TradeFundBillDetail> getTradeFundBillList( ) {
 		return this.tradeFundBillList;
+	}
+
+	public void setTradeInfoList(List<TradeInfoDTO> tradeInfoList) {
+		this.tradeInfoList = tradeInfoList;
+	}
+	public List<TradeInfoDTO> getTradeInfoList( ) {
+		return this.tradeInfoList;
 	}
 
 	public void setTradeNo(String tradeNo) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业删除员工
  *
  * @author auto create
- * @since 1.0, 2022-02-10 11:09:23
+ * @since 1.0, 2022-02-23 16:22:56
  */
 public class AlipayFundJointaccountMemberUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5391627361932792965L;
+	private static final long serialVersionUID = 8435214331944417556L;
 
 	/**
 	 * 账本id

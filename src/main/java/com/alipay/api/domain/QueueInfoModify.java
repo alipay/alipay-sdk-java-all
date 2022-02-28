@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QueueInfoModify extends AlipayObject {
 
-	private static final long serialVersionUID = 3437156164917121447L;
+	private static final long serialVersionUID = 3112142861354788648L;
 
 	/**
 	 * 队列ID

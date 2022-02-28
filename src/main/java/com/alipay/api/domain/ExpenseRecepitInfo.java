@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小票信息
  *
  * @author auto create
- * @since 1.0, 2021-12-23 16:51:37
+ * @since 1.0, 2022-02-21 14:27:13
  */
 public class ExpenseRecepitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8394935937229159135L;
+	private static final long serialVersionUID = 4683646594247545559L;
 
 	/**
 	 * 商品单价（单位：分）

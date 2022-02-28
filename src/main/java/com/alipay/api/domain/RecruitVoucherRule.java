@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 招商方案可提报的券的规则
  *
  * @author auto create
- * @since 1.0, 2021-11-22 14:58:19
+ * @since 1.0, 2022-02-23 11:50:46
  */
 public class RecruitVoucherRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3671273736365681493L;
+	private static final long serialVersionUID = 3789669575146946715L;
 
 	/**
 	 * 券面额（每张代金券可以抵扣的金额）的的最大值。 币种为人民币，单位为元。小数点以后最多保留两位。 该字段为空时表示不限制。

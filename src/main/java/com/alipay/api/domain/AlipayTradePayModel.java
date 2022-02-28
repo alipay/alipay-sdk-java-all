@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2022-01-13 14:38:11
+ * @since 1.0, 2022-02-25 16:35:08
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6445413838688427793L;
+	private static final long serialVersionUID = 3592379232951846539L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -108,7 +108,7 @@ NOT_COMPLETE：转交易完成后不解冻剩余冻结金额；
 	private ExtUserInfo extUserInfo;
 
 	/**
-	 * 业务扩展参数
+	 * 业务扩展参数，二级参数字段会动态新增
 	 */
 	@ApiField("extend_params")
 	private ExtendParams extendParams;
@@ -181,7 +181,7 @@ PRE_AUTH：新当面资金授权产品；
 
 	/**
 	 * 返回参数选项。
-商户通过传递该参数来定制同步需要额外返回的信息字段，数组格式。如：["fund_bill_list","voucher_detail_list","discount_goods_detail"]
+商户通过传递该参数来定制同步需要额外返回的信息字段，数组格式。包括但不限于：["fund_bill_list","voucher_detail_list","enterprise_pay_info","discount_goods_detail","discount_amount","mdiscount_amount"]
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")

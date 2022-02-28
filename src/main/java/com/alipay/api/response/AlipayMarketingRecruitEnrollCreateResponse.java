@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.recruit.enroll.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-13 20:55:35
+ * @since 1.0, 2022-02-25 11:01:03
  */
 public class AlipayMarketingRecruitEnrollCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8733416758545271886L;
+	private static final long serialVersionUID = 8265636828596715927L;
 
 	/** 
 	 * 报名ID
@@ -21,7 +21,7 @@ public class AlipayMarketingRecruitEnrollCreateResponse extends AlipayResponse {
 	private String enrollId;
 
 	/** 
-	 * 外部业务号
+	 * 外部操作流水号。由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

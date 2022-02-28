@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * BC客户群入群状态咨询接口
  *
  * @author auto create
- * @since 1.0, 2021-07-16 09:59:33
+ * @since 1.0, 2022-02-25 11:13:46
  */
 public class AlipaySocialBaseBcgroupJoinedConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8338917979857463217L;
+	private static final long serialVersionUID = 6577289878173936842L;
 
 	/**
 	 * 商家/分组维度的业务标识ID

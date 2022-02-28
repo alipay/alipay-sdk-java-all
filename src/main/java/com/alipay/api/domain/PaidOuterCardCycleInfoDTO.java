@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户连续购买付费卡信息
  *
  * @author auto create
- * @since 1.0, 2021-10-15 11:16:29
+ * @since 1.0, 2022-02-21 15:46:09
  */
 public class PaidOuterCardCycleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4647352115981338697L;
+	private static final long serialVersionUID = 3743745251718765275L;
 
 	/**
 	 * 支付宝用户签约协议号

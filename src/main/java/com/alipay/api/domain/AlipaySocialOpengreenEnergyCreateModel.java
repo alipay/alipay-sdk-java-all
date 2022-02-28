@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成绿色能量
  *
  * @author auto create
- * @since 1.0, 2021-11-16 14:05:23
+ * @since 1.0, 2022-02-25 17:25:21
  */
 public class AlipaySocialOpengreenEnergyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1545983367133353711L;
+	private static final long serialVersionUID = 5495567757686751926L;
 
 	/**
 	 * 当前时间毫秒值

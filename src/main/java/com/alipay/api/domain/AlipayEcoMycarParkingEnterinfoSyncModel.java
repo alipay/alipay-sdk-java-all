@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆驶入上送接口
  *
  * @author auto create
- * @since 1.0, 2021-10-27 15:57:26
+ * @since 1.0, 2022-02-25 20:01:04
  */
 public class AlipayEcoMycarParkingEnterinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4282878564525496342L;
+	private static final long serialVersionUID = 2277715552114519745L;
 
 	/**
 	 * 是否启用车牌代扣状态查询功能，true为启用，false为停用
@@ -56,10 +56,22 @@ public class AlipayEcoMycarParkingEnterinfoSyncModel extends AlipayObject {
 	private String inTime;
 
 	/**
+	 * 是否加密，默认为false
+	 */
+	@ApiField("is_encrypt_car_number")
+	private Boolean isEncryptCarNumber;
+
+	/**
 	 * 智能助理当前的跳转链接
 	 */
 	@ApiField("isv_url")
 	private String isvUrl;
+
+	/**
+	 * 外部停车流水号(用于串通进场与出场信息)
+	 */
+	@ApiField("out_serial_no")
+	private String outSerialNo;
 
 	/**
 	 * 支付宝停车平台ID，由支付宝定义的该停车场标识，同一个isv或商户范围内唯一。通过 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口获取。
@@ -121,11 +133,25 @@ public class AlipayEcoMycarParkingEnterinfoSyncModel extends AlipayObject {
 		this.inTime = inTime;
 	}
 
+	public Boolean getIsEncryptCarNumber() {
+		return this.isEncryptCarNumber;
+	}
+	public void setIsEncryptCarNumber(Boolean isEncryptCarNumber) {
+		this.isEncryptCarNumber = isEncryptCarNumber;
+	}
+
 	public String getIsvUrl() {
 		return this.isvUrl;
 	}
 	public void setIsvUrl(String isvUrl) {
 		this.isvUrl = isvUrl;
+	}
+
+	public String getOutSerialNo() {
+		return this.outSerialNo;
+	}
+	public void setOutSerialNo(String outSerialNo) {
+		this.outSerialNo = outSerialNo;
 	}
 
 	public String getParkingId() {

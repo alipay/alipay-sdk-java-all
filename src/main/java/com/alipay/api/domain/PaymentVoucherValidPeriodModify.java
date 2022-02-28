@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付券核销时间修改
  *
  * @author auto create
- * @since 1.0, 2021-08-13 16:38:35
+ * @since 1.0, 2022-02-23 14:18:04
  */
 public class PaymentVoucherValidPeriodModify extends AlipayObject {
 
-	private static final long serialVersionUID = 3247225569477698859L;
+	private static final long serialVersionUID = 5349536222959975517L;
 
 	/**
 	 * 券生效后N天内可以使用。 限制： type为RELATIVE时可修改。 valid_days_after_receive必须大于0。 修改该时间，只允许延长，不允许缩短。
