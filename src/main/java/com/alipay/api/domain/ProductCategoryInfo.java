@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文体业务批量查询场馆产品信息SPI中的产品分类模型。
  *
  * @author auto create
- * @since 1.0, 2021-05-10 10:53:12
+ * @since 1.0, 2022-02-28 15:52:10
  */
 public class ProductCategoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5268655941656484898L;
+	private static final long serialVersionUID = 5417828598636859316L;
 
 	/**
 	 * 使用日期，暂不可跨天
@@ -29,7 +29,7 @@ public class ProductCategoryInfo extends AlipayObject {
 	private String desc;
 
 	/**
-	 * 类别名称
+	 * 类别名称。日历型商品使用场地名称例如“五人场A区”，日历型票券商品使用日期例如“1月1日”。
 	 */
 	@ApiField("name")
 	private String name;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpMerchantInconsistentApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5196173854928778247L;
+	private static final long serialVersionUID = 2219546362379266596L;
 
 	/** 
 	 * 申请单据编号

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZhimaCreditEpFreedepositOrderriskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6861956134232462379L;
+	private static final long serialVersionUID = 4688937532721324411L;
 
 	/**
 	 * 本次使用免押金额，分

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数据驱动-外部触发事件
  *
  * @author auto create
- * @since 1.0, 2018-12-12 11:50:21
+ * @since 1.0, 2022-03-01 10:59:55
  */
 public class AlipaySocialBaseIdpdrivenSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6615915659491256829L;
+	private static final long serialVersionUID = 7582736856683929717L;
 
 	/**
 	 * 参数名：asset_id

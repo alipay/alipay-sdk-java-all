@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4148889146728933216L;
+	private static final long serialVersionUID = 1621735126449398769L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -152,7 +152,7 @@ dbarcode: 动态条形码，扫码得到的码值可配合会员卡查询接口�
 (3) 动态码-商家自主生成码值（码值、时效性都由商户控制）
 mdqrcode: 商户动态二维码，扫码得商户自主传入的码值
 mdbarcode: 商户动态条码，扫码得商户自主传入的码值
-如需使用商户动态码，请联系支付宝技术支持获取相关文档。
+如需使用商户动态码，对接详情参见 <a href="https://opendocs.alipay.com/open/02y7gt">商户动态发码</a>。
 	 */
 	@ApiField("write_off_type")
 	private String writeOffType;

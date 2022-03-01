@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VehMessageEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 8543261821978143391L;
+	private static final long serialVersionUID = 4547143993961438216L;
 
 	/**
 	 * 证件号码.(certificate_type/certificate_number/certificate_username) 或者uid必须有一个不为空。两个都不为空则以uid为准. 该字段为敏感字段，须做md5处理后传输。示例中值的明文为310101198011110010.

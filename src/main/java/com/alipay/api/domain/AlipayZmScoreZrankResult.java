@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayZmScoreZrankResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5297953862626262341L;
+	private static final long serialVersionUID = 8443748719262429276L;
 
 	/**
 	 * 芝麻分分段 Z0-Z7

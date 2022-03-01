@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsServiceServicestatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2166759938567141934L;
+	private static final long serialVersionUID = 7236856525522281844L;
 
 	/**
 	 * 因为不同的服务产品、不同的供应商都具有差异化的服务状态和流程，服务状态流转的流程在健康管理服务系统中都可以自定义设置。

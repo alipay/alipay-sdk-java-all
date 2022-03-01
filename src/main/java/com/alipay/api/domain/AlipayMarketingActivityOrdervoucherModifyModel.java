@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单券修改
  *
  * @author auto create
- * @since 1.0, 2022-01-18 13:44:27
+ * @since 1.0, 2022-03-01 11:16:32
  */
 public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5361899566818912117L;
+	private static final long serialVersionUID = 2411458953993333669L;
 
 	/**
 	 * 活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
+
+	/**
+	 * 活动名称。 不对用户进行展示，仅供商家在后台管理活动使用。
+	 */
+	@ApiField("activity_name")
+	private String activityName;
 
 	/**
 	 * 引导用户配置。该值为空表示不修改。
@@ -51,10 +57,22 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	private Date publishEndTime;
 
 	/**
+	 * 券发放开始时间。 格式为：yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("publish_start_time")
+	private Date publishStartTime;
+
+	/**
 	 * 券展示信息。该值为空表示不修改。
 	 */
 	@ApiField("voucher_display_info")
 	private VoucherDisplayInfoModify voucherDisplayInfo;
+
+	/**
+	 * 券发放规则
+	 */
+	@ApiField("voucher_send_rule")
+	private VoucherSendRuleDetailModify voucherSendRule;
 
 	/**
 	 * 券使用规则。该值为空表示不修改。
@@ -67,6 +85,13 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
+	}
+
+	public String getActivityName() {
+		return this.activityName;
+	}
+	public void setActivityName(String activityName) {
+		this.activityName = activityName;
 	}
 
 	public CustomerGuideModify getCustomerGuide() {
@@ -90,11 +115,25 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 		this.publishEndTime = publishEndTime;
 	}
 
+	public Date getPublishStartTime() {
+		return this.publishStartTime;
+	}
+	public void setPublishStartTime(Date publishStartTime) {
+		this.publishStartTime = publishStartTime;
+	}
+
 	public VoucherDisplayInfoModify getVoucherDisplayInfo() {
 		return this.voucherDisplayInfo;
 	}
 	public void setVoucherDisplayInfo(VoucherDisplayInfoModify voucherDisplayInfo) {
 		this.voucherDisplayInfo = voucherDisplayInfo;
+	}
+
+	public VoucherSendRuleDetailModify getVoucherSendRule() {
+		return this.voucherSendRule;
+	}
+	public void setVoucherSendRule(VoucherSendRuleDetailModify voucherSendRule) {
+		this.voucherSendRule = voucherSendRule;
 	}
 
 	public VoucherUseRuleModify getVoucherUseRule() {

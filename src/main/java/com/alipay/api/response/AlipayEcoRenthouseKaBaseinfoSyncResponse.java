@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoRenthouseKaBaseinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2558136394659695693L;
+	private static final long serialVersionUID = 7621985936579167369L;
 
 	/** 
 	 * 返回kaCode唯一标识,用户查询ka信息时候用

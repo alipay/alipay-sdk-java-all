@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneTaskflowBatchCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8258386993126177374L;
+	private static final long serialVersionUID = 8647797728728471222L;
 
 	/** 
 	 * 任务流水列表

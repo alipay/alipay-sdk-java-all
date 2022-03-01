@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 因公付交易详情
  *
  * @author auto create
- * @since 1.0, 2022-02-15 10:59:02
+ * @since 1.0, 2022-03-01 14:03:46
  */
 public class TradeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3593845163241179995L;
+	private static final long serialVersionUID = 6671726958254814452L;
 
 	/**
 	 * 买家ID
@@ -34,6 +34,12 @@ public class TradeInfoDTO extends AlipayObject {
 	 */
 	@ApiField("platform_order_id")
 	private String platformOrderId;
+
+	/**
+	 * 订单总金额
+	 */
+	@ApiField("total_amount")
+	private String totalAmount;
 
 	/**
 	 * 订单总金额
@@ -79,6 +85,13 @@ public class TradeInfoDTO extends AlipayObject {
 	}
 	public void setPlatformOrderId(String platformOrderId) {
 		this.platformOrderId = platformOrderId;
+	}
+
+	public String getTotalAmount() {
+		return this.totalAmount;
+	}
+	public void setTotalAmount(String totalAmount) {
+		this.totalAmount = totalAmount;
 	}
 
 	public String getTradeAmount() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票业务数据
  *
  * @author auto create
- * @since 1.0, 2021-03-31 11:19:08
+ * @since 1.0, 2022-02-28 11:35:50
  */
 public class ReceiptBizData extends AlipayObject {
 
-	private static final long serialVersionUID = 4832849799269134664L;
+	private static final long serialVersionUID = 6379311374487258466L;
 
 	/**
 	 * 交易实付金额，单位分
@@ -30,10 +30,10 @@ public class ReceiptBizData extends AlipayObject {
 	private Date actualPayTime;
 
 	/**
-	 * 机具身份id
+	 * 找零金额，如8.0 表示找零8元
 	 */
-	@ApiField("biztid")
-	private String biztid;
+	@ApiField("change_amount")
+	private Long changeAmount;
 
 	/**
 	 * 币种（CNY-人命币）
@@ -83,6 +83,13 @@ public class ReceiptBizData extends AlipayObject {
 	 */
 	@ApiField("out_trade_id")
 	private String outTradeId;
+
+	/**
+	 * PAY_SUCCESS/PAY_FAIL
+支付成功，支付失败
+	 */
+	@ApiField("pay_status")
+	private String payStatus;
 
 	/**
 	 * 平台（tmall）优惠金额，单位分
@@ -147,11 +154,11 @@ public class ReceiptBizData extends AlipayObject {
 		this.actualPayTime = actualPayTime;
 	}
 
-	public String getBiztid() {
-		return this.biztid;
+	public Long getChangeAmount() {
+		return this.changeAmount;
 	}
-	public void setBiztid(String biztid) {
-		this.biztid = biztid;
+	public void setChangeAmount(Long changeAmount) {
+		this.changeAmount = changeAmount;
 	}
 
 	public String getCurrency() {
@@ -208,6 +215,13 @@ public class ReceiptBizData extends AlipayObject {
 	}
 	public void setOutTradeId(String outTradeId) {
 		this.outTradeId = outTradeId;
+	}
+
+	public String getPayStatus() {
+		return this.payStatus;
+	}
+	public void setPayStatus(String payStatus) {
+		this.payStatus = payStatus;
 	}
 
 	public Long getPlatformDiscountAmount() {

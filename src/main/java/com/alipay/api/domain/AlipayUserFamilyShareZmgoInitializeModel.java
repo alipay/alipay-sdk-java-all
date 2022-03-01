@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserFamilyShareZmgoInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2155151355685528954L;
+	private static final long serialVersionUID = 7518641768372256371L;
 
 	/**
 	 * 商户订单号

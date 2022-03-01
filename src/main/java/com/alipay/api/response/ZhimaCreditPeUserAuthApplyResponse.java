@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditPeUserAuthApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8379146829113391322L;
+	private static final long serialVersionUID = 6622479744245236416L;
 
 	/** 
 	 * 临时授权码，一次性有效，同时若超过有效期未使用，则会失效。有效期目前至少为5分钟，最长为24小时。请获取auth_code后尽快通过调用alipay.system.oauth.token接口获取访问令牌
