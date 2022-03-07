@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文体中心订单数据同步
  *
  * @author auto create
- * @since 1.0, 2021-11-09 09:56:37
+ * @since 1.0, 2022-03-03 14:42:02
  */
 public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8572221937594511634L;
+	private static final long serialVersionUID = 8454191992922595877L;
 
 	/**
 	 * 订单创建时间
@@ -23,7 +23,7 @@ public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 	private String createTime;
 
 	/**
-	 * 订单交易状态,pay_succ-已支付（若支持多次核销则在全部核销之前都是已支付状态）,refund_succ-已退款,verify_succ-已使用。
+	 * 订单交易状态,pay_succ-已支付（若支持多次核销则在全部核销之前都是已支付状态）,refund_succ-已退款,verify_proc-使用中（已入场但是还未结束）,verify_succ-已使用,overdue-已过期（超过使用时间未使用且未退款）
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
@@ -41,32 +41,26 @@ public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 	private String outOrderId;
 
 	/**
-	 * 收款方pid，对应交易的seller_id
+	 * isv子场馆id，与场馆入驻时一致，须保证系统内唯一。如果在场馆入驻时有子场馆则传入入住时的out_sub_venue_id；如果场馆入驻时不存在子场馆，则无须传入。
 	 */
-	@ApiField("payee_id")
-	private String payeeId;
+	@ApiField("out_sub_venue_id")
+	private String outSubVenueId;
 
 	/**
-	 * 订单商品信息列表
+	 * isv场馆id，与场馆入驻时一致，须保证系统内唯一。和venue_id之间至少存在一个
+	 */
+	@ApiField("out_venue_id")
+	private String outVenueId;
+
+	/**
+	 * 订单商品信息列表，目前仅支持1笔订单1条商品信息数据，即一笔订单只能包含1种商品。
 	 */
 	@ApiListField("product_group_list")
 	@ApiField("product_simple_info")
 	private List<ProductSimpleInfo> productGroupList;
 
 	/**
-	 * 退款截止时间。默认为空表示不能由用户发起退款；如果不为空，则在该时间之前用户可以发起退款。
-	 */
-	@ApiField("refund_end_time")
-	private String refundEndTime;
-
-	/**
-	 * 支付宝退款请求号，订单若为退款成功则该字段必填
-	 */
-	@ApiField("refund_request_no")
-	private String refundRequestNo;
-
-	/**
-	 * 支付宝子场馆ID，场馆入驻时支付宝返回的子场馆ID
+	 * 支付宝子场馆ID，场馆入驻时支付宝返回的子场馆ID。如果在场馆入驻时有子场馆则传入入驻时返回的sub_venue_id；如果场馆入驻时不存在子场馆，则无须传入。
 	 */
 	@ApiField("sub_venue_id")
 	private String subVenueId;
@@ -78,10 +72,11 @@ public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 	private String totalAmount;
 
 	/**
-	 * 支付宝交易号
+	 * 订单的交易信息列表，传入支付、退款等操作的信息。第一次同步必传；第一次同步之后如果没有交易变化则调用时可以不传本参数。每一条交易数据同步后不支持修改。
 	 */
-	@ApiField("trade_no")
-	private String tradeNo;
+	@ApiListField("trade_info_list")
+	@ApiField("venue_order_trade_info")
+	private List<VenueOrderTradeInfo> tradeInfoList;
 
 	/**
 	 * 买家支付宝用户ID,2088开头的16位纯数字
@@ -90,7 +85,7 @@ public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 	private String userId;
 
 	/**
-	 * 支付宝主场馆ID，场馆入驻时支付宝返回的主场馆ID
+	 * 支付宝主场馆ID，场馆入驻时支付宝返回的主场馆ID。和out_venue_id之间至少存在一个
 	 */
 	@ApiField("venue_id")
 	private String venueId;
@@ -123,11 +118,18 @@ public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 		this.outOrderId = outOrderId;
 	}
 
-	public String getPayeeId() {
-		return this.payeeId;
+	public String getOutSubVenueId() {
+		return this.outSubVenueId;
 	}
-	public void setPayeeId(String payeeId) {
-		this.payeeId = payeeId;
+	public void setOutSubVenueId(String outSubVenueId) {
+		this.outSubVenueId = outSubVenueId;
+	}
+
+	public String getOutVenueId() {
+		return this.outVenueId;
+	}
+	public void setOutVenueId(String outVenueId) {
+		this.outVenueId = outVenueId;
 	}
 
 	public List<ProductSimpleInfo> getProductGroupList() {
@@ -135,20 +137,6 @@ public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 	}
 	public void setProductGroupList(List<ProductSimpleInfo> productGroupList) {
 		this.productGroupList = productGroupList;
-	}
-
-	public String getRefundEndTime() {
-		return this.refundEndTime;
-	}
-	public void setRefundEndTime(String refundEndTime) {
-		this.refundEndTime = refundEndTime;
-	}
-
-	public String getRefundRequestNo() {
-		return this.refundRequestNo;
-	}
-	public void setRefundRequestNo(String refundRequestNo) {
-		this.refundRequestNo = refundRequestNo;
 	}
 
 	public String getSubVenueId() {
@@ -165,11 +153,11 @@ public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 		this.totalAmount = totalAmount;
 	}
 
-	public String getTradeNo() {
-		return this.tradeNo;
+	public List<VenueOrderTradeInfo> getTradeInfoList() {
+		return this.tradeInfoList;
 	}
-	public void setTradeNo(String tradeNo) {
-		this.tradeNo = tradeNo;
+	public void setTradeInfoList(List<VenueOrderTradeInfo> tradeInfoList) {
+		this.tradeInfoList = tradeInfoList;
 	}
 
 	public String getUserId() {

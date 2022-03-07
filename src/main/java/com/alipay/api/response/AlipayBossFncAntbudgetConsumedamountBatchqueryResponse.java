@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncAntbudgetConsumedamountBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5869253528553489616L;
+	private static final long serialVersionUID = 8436483149239385399L;
 
 	/** 
 	 * 根据BizUkIds查询出的占用情况

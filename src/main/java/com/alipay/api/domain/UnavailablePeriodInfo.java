@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnavailablePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8693618117927267852L;
+	private static final long serialVersionUID = 3434683296718242126L;
 
 	/**
 	 * 商品不可用时段结束日期。格式为YYYY-MM-DD，如2017-05-03

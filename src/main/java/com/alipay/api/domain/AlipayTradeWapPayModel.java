@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8235555399987311867L;
+	private static final long serialVersionUID = 1328548781862781771L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -109,8 +109,8 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	/**
 	 * 产品码。
 商家和支付宝签约的产品码。 枚举值（点击查看签约情况）：
-<a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/711/713">QUICK_WAP_WAY</a>：无线快捷支付产品。
-默认值为QUICK_WAP_PAY。
+<a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/711/713">QUICK_WAP_WAY</a>：手机网站支付产品。
+默认值为 QUICK_WAP_WAY。
 	 */
 	@ApiField("product_code")
 	private String productCode;

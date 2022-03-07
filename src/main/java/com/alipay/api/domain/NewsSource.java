@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索结果详情
  *
  * @author auto create
- * @since 1.0, 2021-12-22 17:28:08
+ * @since 1.0, 2022-03-03 10:47:04
  */
 public class NewsSource extends AlipayObject {
 
-	private static final long serialVersionUID = 5816971299655528966L;
+	private static final long serialVersionUID = 4426851728486494213L;
 
 	/**
 	 * 作者名
@@ -47,6 +47,12 @@ public class NewsSource extends AlipayObject {
 	 */
 	@ApiField("first_publish_media")
 	private String firstPublishMedia;
+
+	/**
+	 * 关键字高亮显示
+	 */
+	@ApiField("highlight")
+	private KeywordsHighlight highlight;
 
 	/**
 	 * 图片资源列表
@@ -156,6 +162,13 @@ public class NewsSource extends AlipayObject {
 	}
 	public void setFirstPublishMedia(String firstPublishMedia) {
 		this.firstPublishMedia = firstPublishMedia;
+	}
+
+	public KeywordsHighlight getHighlight() {
+		return this.highlight;
+	}
+	public void setHighlight(KeywordsHighlight highlight) {
+		this.highlight = highlight;
 	}
 
 	public List<String> getImages() {

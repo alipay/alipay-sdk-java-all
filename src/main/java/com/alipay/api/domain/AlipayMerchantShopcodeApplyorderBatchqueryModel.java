@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantShopcodeApplyorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3818124145366469497L;
+	private static final long serialVersionUID = 7259489157579151514L;
 
 	/**
 	 * 支付宝侧生成的开通流水编号，可以通过传入该参数查询指定流水编号的开通状态。

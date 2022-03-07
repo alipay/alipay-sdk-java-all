@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaginationDish extends AlipayObject {
 
-	private static final long serialVersionUID = 6482215315531162116L;
+	private static final long serialVersionUID = 2587766676119641457L;
 
 	/**
 	 * 出参列表

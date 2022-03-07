@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PetPhoto extends AlipayObject {
 
-	private static final long serialVersionUID = 2532622532214437691L;
+	private static final long serialVersionUID = 2886787975272577886L;
 
 	/**
 	 * 宠物照片类型，

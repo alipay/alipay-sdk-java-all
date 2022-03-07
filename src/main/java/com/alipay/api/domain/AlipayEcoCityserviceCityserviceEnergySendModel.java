@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 城服绿色能量发送通用接口
  *
  * @author auto create
- * @since 1.0, 2022-02-08 11:22:53
+ * @since 1.0, 2022-03-03 20:33:25
  */
 public class AlipayEcoCityserviceCityserviceEnergySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7712339327249751952L;
+	private static final long serialVersionUID = 6333118854231878679L;
 
 	/**
 	 * 扩展信息

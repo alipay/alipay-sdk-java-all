@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应付发票关联DTO
  *
  * @author auto create
- * @since 1.0, 2021-12-10 18:14:32
+ * @since 1.0, 2022-03-02 16:23:58
  */
 public class InputInvoiceBillLinkOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3587522743817613594L;
+	private static final long serialVersionUID = 5139627413878485193L;
 
 	/**
 	 * 账单号
 	 */
 	@ApiField("bill_no")
 	private String billNo;
+
+	/**
+	 * 外部单业务类型，默认为空 标识billNo为汇总单，否则billNo代表付款申请单ID
+	 */
+	@ApiField("out_bill_type")
+	private String outBillType;
 
 	/**
 	 * 关联金额
@@ -36,6 +42,13 @@ public class InputInvoiceBillLinkOrderDTO extends AlipayObject {
 	}
 	public void setBillNo(String billNo) {
 		this.billNo = billNo;
+	}
+
+	public String getOutBillType() {
+		return this.outBillType;
+	}
+	public void setOutBillType(String outBillType) {
+		this.outBillType = outBillType;
 	}
 
 	public MultiCurrencyMoneyOpenApi getRelateAmount() {

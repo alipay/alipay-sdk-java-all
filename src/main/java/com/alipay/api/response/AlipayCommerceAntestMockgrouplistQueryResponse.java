@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceAntestMockgrouplistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4523114485314126252L;
+	private static final long serialVersionUID = 7648787395682871348L;
 
 	/** 
 	 * 挡板集列表

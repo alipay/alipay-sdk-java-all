@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文体业务订单的简化产品模型
  *
  * @author auto create
- * @since 1.0, 2021-11-09 09:56:37
+ * @since 1.0, 2022-03-02 14:34:04
  */
 public class ProductSimpleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1152425597393118596L;
+	private static final long serialVersionUID = 5742824762629476588L;
 
 	/**
 	 * 商品规格名称。可以是场地名称（比如羽毛球场地1）。当产品类型为日历型或者日历型票券时必填。
@@ -28,7 +28,7 @@ public class ProductSimpleInfo extends AlipayObject {
 	private Long count;
 
 	/**
-	 * 商品使用结束时间
+	 * 商品使用结束时间（Date类型），结束时间非空时必须有开始时间传值，且开始时间必须早于结束时间
 	 */
 	@ApiField("end_time")
 	private String endTime;

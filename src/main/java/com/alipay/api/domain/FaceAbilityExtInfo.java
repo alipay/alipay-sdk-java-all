@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用人脸能力所需要等拓展参数信息
  *
  * @author auto create
- * @since 1.0, 2019-04-16 19:55:28
+ * @since 1.0, 2022-03-04 14:46:06
  */
 public class FaceAbilityExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1143511332421327933L;
+	private static final long serialVersionUID = 3419217729648816574L;
 
 	/**
 	 * 年龄

@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.delivery.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-28 11:16:45
+ * @since 1.0, 2022-03-02 16:21:36
  */
 public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8874919436273468439L;
+	private static final long serialVersionUID = 4249394882147747111L;
 
 	/** 
 	 * 投放计划基础信息。
@@ -32,6 +32,12 @@ PAYMENT_RESULT：本店优惠。
 	 */
 	@ApiField("delivery_booth_code")
 	private String deliveryBoothCode;
+
+	/** 
+	 * 投放计划错误信息描述，如投放计划审核失败时为审核失败原因。
+	 */
+	@ApiField("delivery_error_msg")
+	private String deliveryErrorMsg;
 
 	/** 
 	 * 投放计划id
@@ -77,6 +83,13 @@ PAYMENT_RESULT：本店优惠。
 	}
 	public String getDeliveryBoothCode( ) {
 		return this.deliveryBoothCode;
+	}
+
+	public void setDeliveryErrorMsg(String deliveryErrorMsg) {
+		this.deliveryErrorMsg = deliveryErrorMsg;
+	}
+	public String getDeliveryErrorMsg( ) {
+		return this.deliveryErrorMsg;
 	}
 
 	public void setDeliveryId(String deliveryId) {

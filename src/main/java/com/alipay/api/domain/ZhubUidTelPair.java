@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * zoloz应用查询到的支付宝用户号和手机号信息
  *
  * @author auto create
- * @since 1.0, 2018-07-20 00:30:44
+ * @since 1.0, 2022-03-04 14:48:59
  */
 public class ZhubUidTelPair extends AlipayObject {
 
-	private static final long serialVersionUID = 6549753597956692637L;
+	private static final long serialVersionUID = 6192383363763958734L;
 
 	/**
 	 * 手机号

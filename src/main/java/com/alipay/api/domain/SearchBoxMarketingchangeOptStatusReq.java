@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SearchBoxMarketingchangeOptStatusReq extends AlipayObject {
 
-	private static final long serialVersionUID = 7193869229345893634L;
+	private static final long serialVersionUID = 8639147329699864167L;
 
 	/**
 	 * 需修改至何种状态(支持撤销_CANCEL和删除_DELETE)

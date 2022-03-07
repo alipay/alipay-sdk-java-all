@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.dataservice.riskctl.submit request
  * 
  * @author auto create
- * @since 1.0, 2021-08-12 11:08:21
+ * @since 1.0, 2022-03-03 19:58:32
  */
 public class AnttechBlockchainDefinDataserviceRiskctlSubmitRequest implements AlipayRequest<AnttechBlockchainDefinDataserviceRiskctlSubmitResponse> {
 

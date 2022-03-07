@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundJointaccountDepositplanDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3118957138995113274L;
+	private static final long serialVersionUID = 7358925674411976685L;
 
 	/** 
 	 * 资金计划列表

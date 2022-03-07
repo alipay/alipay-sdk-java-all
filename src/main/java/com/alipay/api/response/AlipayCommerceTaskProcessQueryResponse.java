@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.task.process.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-17 15:56:37
+ * @since 1.0, 2022-03-02 14:17:56
  */
 public class AlipayCommerceTaskProcessQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1182561492468567433L;
+	private static final long serialVersionUID = 2326537148248591925L;
 
 	/** 
 	 * 支付宝用户id
