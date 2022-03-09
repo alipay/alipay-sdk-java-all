@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新理赔报案接口
  *
  * @author auto create
- * @since 1.0, 2020-07-08 09:48:34
+ * @since 1.0, 2022-03-08 13:29:58
  */
 public class AlipayInsSceneClaimNewreportCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8365718998237437463L;
+	private static final long serialVersionUID = 4358394966295673588L;
 
 	/**
 	 * 申报原因

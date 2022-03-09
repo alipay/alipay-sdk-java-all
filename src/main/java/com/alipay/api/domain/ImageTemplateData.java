@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ImageTemplateData extends AlipayObject {
 
-	private static final long serialVersionUID = 5455599962683213996L;
+	private static final long serialVersionUID = 8298149575238789512L;
 
 	/**
 	 * 图片高度

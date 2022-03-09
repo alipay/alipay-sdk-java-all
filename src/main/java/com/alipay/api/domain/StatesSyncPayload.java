@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StatesSyncPayload extends AlipayObject {
 
-	private static final long serialVersionUID = 1619595771315431193L;
+	private static final long serialVersionUID = 2498274466863986628L;
 
 	/**
 	 * 智能设备唯一ID

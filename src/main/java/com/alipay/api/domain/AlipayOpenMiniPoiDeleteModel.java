@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniPoiDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5444615866452341857L;
+	private static final long serialVersionUID = 4798561694641963653L;
 
 	/**
 	 * poi id，地理位置标记信息

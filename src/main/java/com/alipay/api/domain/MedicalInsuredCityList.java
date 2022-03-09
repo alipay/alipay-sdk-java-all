@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保电子凭证参保城市列表
  *
  * @author auto create
- * @since 1.0, 2021-06-21 16:25:00
+ * @since 1.0, 2022-03-08 10:14:03
  */
 public class MedicalInsuredCityList extends AlipayObject {
 
-	private static final long serialVersionUID = 7584456127337887863L;
+	private static final long serialVersionUID = 5624568725179383358L;
 
 	/**
 	 * 参保地城市编码(国标)

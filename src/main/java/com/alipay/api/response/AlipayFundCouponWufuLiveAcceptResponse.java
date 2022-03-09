@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundCouponWufuLiveAcceptResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7467244517221298571L;
+	private static final long serialVersionUID = 4731749653776346145L;
 
 	/** 
 	 * 奖品列表信息，prized=true时取第一个

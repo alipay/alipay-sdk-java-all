@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingActivityDeliveryStopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4331184535488352781L;
+	private static final long serialVersionUID = 3263519155971296522L;
 
 	/**
 	 * 当前服务商停止投放的商户信息。

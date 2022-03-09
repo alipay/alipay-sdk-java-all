@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DataDim extends AlipayObject {
 
-	private static final long serialVersionUID = 3667661647211552517L;
+	private static final long serialVersionUID = 6416663257569684463L;
 
 	/**
 	 * 维度名称，代表维度层级含义

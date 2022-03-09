@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarViolationCityPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7821515961892283735L;
+	private static final long serialVersionUID = 6583985437721842485L;
 
 	/**
 	 * 城市编码

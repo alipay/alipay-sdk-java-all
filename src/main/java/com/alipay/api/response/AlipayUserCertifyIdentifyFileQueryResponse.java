@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCertifyIdentifyFileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5862245971145574448L;
+	private static final long serialVersionUID = 4595136333879146126L;
 
 	/** 
 	 * 文件的base64数据，一般情况是小于2M的

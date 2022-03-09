@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2022-03-01 11:02:46
+ * @since 1.0, 2022-03-07 13:39:10
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5191779374286251983L;
+	private static final long serialVersionUID = 5355189486981796941L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -40,6 +40,12 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	 */
 	@ApiField("device_params")
 	private DeviceParams deviceParams;
+
+	/**
+	 * 签约有效时间限制，单位是秒，有效范围是0-86400，商户传入此字段会用商户传入的值否则使用支付宝侧默认值，在有效时间外进行签约，会进行安全拦截；（备注：此字段适用于需要开通安全防控的商户，且依赖商户传入生成签约时的时间戳字段timestamp）
+	 */
+	@ApiField("effect_time")
+	private Long effectTime;
 
 	/**
 	 * 商户签约号，代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。
@@ -192,6 +198,13 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	}
 	public void setDeviceParams(DeviceParams deviceParams) {
 		this.deviceParams = deviceParams;
+	}
+
+	public Long getEffectTime() {
+		return this.effectTime;
+	}
+	public void setEffectTime(Long effectTime) {
+		this.effectTime = effectTime;
 	}
 
 	public String getExternalAgreementNo() {

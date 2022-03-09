@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.taxi.driverinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2022-01-25 19:28:33
+ * @since 1.0, 2022-03-07 19:51:43
  */
 public class AlipayCommerceTransportTaxiDriverinfoQueryRequest implements AlipayRequest<AlipayCommerceTransportTaxiDriverinfoQueryResponse> {
 

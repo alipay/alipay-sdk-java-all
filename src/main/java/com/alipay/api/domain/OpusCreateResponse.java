@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpusCreateResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2613454974524327454L;
+	private static final long serialVersionUID = 5674244131885624849L;
 
 	/**
 	 * 作品外部id
