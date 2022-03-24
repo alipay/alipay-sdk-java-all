@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康服务标的刷新接口
  *
  * @author auto create
- * @since 1.0, 2022-01-07 10:12:33
+ * @since 1.0, 2022-03-15 15:13:39
  */
 public class AlipayInsSceneInshealthserviceprodItemRefreshModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7135595353167745881L;
+	private static final long serialVersionUID = 4166821782672347425L;
 
 	/**
 	 * 支付宝的服务产品编号

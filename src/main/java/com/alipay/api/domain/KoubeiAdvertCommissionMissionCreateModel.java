@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiAdvertCommissionMissionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5579747562197546563L;
+	private static final long serialVersionUID = 3868122812934798472L;
 
 	/**
 	 * 条款分如下三种条款，同时“单品券”只能设置固定金额，“全场券”只能设置  比例的。

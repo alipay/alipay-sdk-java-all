@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据用户已经在支付宝绑定过的医保卡为医疗行业提供收单支付服务。同时支持自费支付服务
  *
  * @author auto create
- * @since 1.0, 2021-11-02 11:05:28
+ * @since 1.0, 2022-03-14 10:24:43
  */
 public class AlipayCommerceMedicalInstcardCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7351518898794811592L;
+	private static final long serialVersionUID = 1126474263924147857L;
 
 	/**
 	 * 业务单据号

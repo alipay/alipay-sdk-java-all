@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘宝端内绑定支付宝token换取支付宝账号信息
  *
  * @author auto create
- * @since 1.0, 2022-02-16 15:26:30
+ * @since 1.0, 2022-03-21 19:06:54
  */
 public class AlipayUserAccountInfoTaobaoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6748996166521466123L;
+	private static final long serialVersionUID = 6421221644623984418L;
 
 	/**
 	 * target+否+手淘端内绑定支付宝账号+taobaoBindAlipay+固定值+仅支持手淘绑定支付宝链路使用

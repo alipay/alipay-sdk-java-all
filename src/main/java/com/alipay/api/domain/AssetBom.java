@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料bom结构
  *
  * @author auto create
- * @since 1.0, 2022-02-23 15:44:53
+ * @since 1.0, 2022-03-16 15:03:44
  */
 public class AssetBom extends AlipayObject {
 
-	private static final long serialVersionUID = 7541813488852278399L;
+	private static final long serialVersionUID = 4841841739452866577L;
+
+	/**
+	 * 物料子类型
+	 */
+	@ApiField("asset_sub_type")
+	private String assetSubType;
 
 	/**
 	 * 扩展属性
@@ -37,6 +43,18 @@ public class AssetBom extends AlipayObject {
 	private String effectImg;
 
 	/**
+	 * 物料是否包含码
+	 */
+	@ApiField("include_qrcode")
+	private String includeQrcode;
+
+	/**
+	 * 是否是套组物料
+	 */
+	@ApiField("is_suite")
+	private String isSuite;
+
+	/**
 	 * 物料id
 	 */
 	@ApiField("item_id")
@@ -47,6 +65,25 @@ public class AssetBom extends AlipayObject {
 	 */
 	@ApiField("item_name")
 	private String itemName;
+
+	/**
+	 * 物料类别
+	 */
+	@ApiField("item_type")
+	private String itemType;
+
+	/**
+	 * 物料信息查询的版本
+	 */
+	@ApiField("request_id")
+	private String requestId;
+
+	public String getAssetSubType() {
+		return this.assetSubType;
+	}
+	public void setAssetSubType(String assetSubType) {
+		this.assetSubType = assetSubType;
+	}
 
 	public List<AssetBomAttribute> getAttributes() {
 		return this.attributes;
@@ -69,6 +106,20 @@ public class AssetBom extends AlipayObject {
 		this.effectImg = effectImg;
 	}
 
+	public String getIncludeQrcode() {
+		return this.includeQrcode;
+	}
+	public void setIncludeQrcode(String includeQrcode) {
+		this.includeQrcode = includeQrcode;
+	}
+
+	public String getIsSuite() {
+		return this.isSuite;
+	}
+	public void setIsSuite(String isSuite) {
+		this.isSuite = isSuite;
+	}
+
 	public String getItemId() {
 		return this.itemId;
 	}
@@ -81,6 +132,20 @@ public class AssetBom extends AlipayObject {
 	}
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+
+	public String getItemType() {
+		return this.itemType;
+	}
+	public void setItemType(String itemType) {
+		this.itemType = itemType;
+	}
+
+	public String getRequestId() {
+		return this.requestId;
+	}
+	public void setRequestId(String requestId) {
+		this.requestId = requestId;
 	}
 
 }

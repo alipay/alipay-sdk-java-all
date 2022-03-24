@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: monitor.heartbeat.syn request
  * 
  * @author auto create
- * @since 1.0, 2021-09-13 21:05:29
+ * @since 1.0, 2022-03-10 16:31:12
  */
 public class MonitorHeartbeatSynRequest implements AlipayRequest<MonitorHeartbeatSynResponse> {
 

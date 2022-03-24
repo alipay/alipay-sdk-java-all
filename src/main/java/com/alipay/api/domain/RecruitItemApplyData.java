@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitItemApplyData extends AlipayObject {
 
-	private static final long serialVersionUID = 7793734345832819632L;
+	private static final long serialVersionUID = 8519532153947692553L;
 
 	/**
 	 * 活动价格，单位为元，活动期间以此价格售卖。注：预热期间仍然以原价售卖，但是不消耗活动的库存。

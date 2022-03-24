@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车交易受理咨询API
  *
  * @author auto create
- * @since 1.0, 2021-11-10 14:07:38
+ * @since 1.0, 2022-03-15 10:56:18
  */
 public class AlipayEcoMycarParkingPayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4248766326536785822L;
+	private static final long serialVersionUID = 8449293749627174386L;
 
 	/**
 	 * 进场时间(格式"YYYY-MM-DD HH:mm:ss"，24小时制)

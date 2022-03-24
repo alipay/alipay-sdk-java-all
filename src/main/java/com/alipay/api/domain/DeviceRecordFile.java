@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备档案文件
  *
  * @author auto create
- * @since 1.0, 2021-08-04 10:30:32
+ * @since 1.0, 2022-03-21 19:58:31
  */
 public class DeviceRecordFile extends AlipayObject {
 
-	private static final long serialVersionUID = 1173884413879271849L;
+	private static final long serialVersionUID = 7673156278278367421L;
 
 	/**
 	 * 1.直联商户三绑定必传：

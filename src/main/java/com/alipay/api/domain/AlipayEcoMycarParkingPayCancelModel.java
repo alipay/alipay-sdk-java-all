@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无感停车交易撤销API
  *
  * @author auto create
- * @since 1.0, 2021-11-10 11:39:06
+ * @since 1.0, 2022-03-15 10:56:44
  */
 public class AlipayEcoMycarParkingPayCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2529448232815175121L;
+	private static final long serialVersionUID = 4731214296324225636L;
 
 	/**
 	 * 进场时间(格式"YYYY-MM-DD HH:mm:ss"，24小时制)

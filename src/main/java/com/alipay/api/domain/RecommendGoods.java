@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推荐商品数据模型
  *
  * @author auto create
- * @since 1.0, 2021-02-26 14:09:40
+ * @since 1.0, 2022-03-21 19:58:38
  */
 public class RecommendGoods extends AlipayObject {
 
-	private static final long serialVersionUID = 2842785869632849788L;
+	private static final long serialVersionUID = 6213767638355752133L;
 
 	/**
 	 * 商品barcode

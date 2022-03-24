@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁企业信用企业档案页二维码接口
  *
  * @author auto create
- * @since 1.0, 2021-07-08 17:18:03
+ * @since 1.0, 2022-03-24 13:56:55
  */
 public class ZhimaCreditEpDossierQrcodeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5629729922257859943L;
+	private static final long serialVersionUID = 6484399391227713186L;
 
 	/**
 	 * 企业社会统一信用代码或营业执照注册号

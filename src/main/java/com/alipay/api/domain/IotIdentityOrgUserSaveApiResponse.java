@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 机构人员添加入参
+ * 返回结果
  *
  * @author auto create
- * @since 1.0, 2022-03-02 10:19:27
+ * @since 1.0, 2022-03-16 20:09:34
  */
-public class IotIdentityOrgCreateApiRequest extends AlipayObject {
+public class IotIdentityOrgUserSaveApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3289165751989141194L;
+	private static final long serialVersionUID = 4444582212156491813L;
 
 	/**
 	 * 人脸id

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2022-01-18 10:07:41
+ * @since 1.0, 2022-03-21 17:12:27
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2244796862536539473L;
+	private static final long serialVersionUID = 4677913425952555782L;
 
 	/**
 	 * 岗位详细地址。
@@ -144,7 +144,8 @@ NO_REQ：不要求芝麻工作证
 	private String outJobId;
 
 	/**
-	 * 薪资结算方式：
+	 * 薪资结算方式:
+小时结
 日结
 周结
 月结

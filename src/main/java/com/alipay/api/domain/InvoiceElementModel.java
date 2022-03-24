@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票要素模型
  *
  * @author auto create
- * @since 1.0, 2020-08-28 09:51:04
+ * @since 1.0, 2022-03-18 15:22:54
  */
 public class InvoiceElementModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3135514735724188643L;
+	private static final long serialVersionUID = 4326434826722535928L;
 
 	/**
 	 * 发票报销状态
@@ -31,6 +31,12 @@ EXPENSE_FINISHED－已报销
 	 */
 	@ApiField("extend_fields")
 	private String extendFields;
+
+	/**
+	 * 防伪校验码
+	 */
+	@ApiField("fake_code")
+	private String fakeCode;
 
 	/**
 	 * 发票是否有pdf文件
@@ -192,6 +198,13 @@ notMatch-未做匹配
 	}
 	public void setExtendFields(String extendFields) {
 		this.extendFields = extendFields;
+	}
+
+	public String getFakeCode() {
+		return this.fakeCode;
+	}
+	public void setFakeCode(String fakeCode) {
+		this.fakeCode = fakeCode;
 	}
 
 	public Boolean getHasPdfFile() {

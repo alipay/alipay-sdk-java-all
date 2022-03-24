@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.info.taobao.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-16 15:26:34
+ * @since 1.0, 2022-03-21 19:07:41
  */
 public class AlipayUserAccountInfoTaobaoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7478892512389796836L;
+	private static final long serialVersionUID = 1721418277756648524L;
 
 	/** 
 	 * alipay_user_id+是+手淘端内绑定支付宝账号+无+token获取+无
@@ -26,6 +26,12 @@ public class AlipayUserAccountInfoTaobaoQueryResponse extends AlipayResponse {
 	@ApiField("login_id")
 	private String loginId;
 
+	/** 
+	 * 用户类型
+	 */
+	@ApiField("user_type")
+	private String userType;
+
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
@@ -38,6 +44,13 @@ public class AlipayUserAccountInfoTaobaoQueryResponse extends AlipayResponse {
 	}
 	public String getLoginId( ) {
 		return this.loginId;
+	}
+
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+	public String getUserType( ) {
+		return this.userType;
 	}
 
 }

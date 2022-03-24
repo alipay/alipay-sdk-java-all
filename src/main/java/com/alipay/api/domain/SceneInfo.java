@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数据回流字段
  *
  * @author auto create
- * @since 1.0, 2021-06-25 11:12:47
+ * @since 1.0, 2022-03-17 19:34:52
  */
 public class SceneInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2445234359974745134L;
+	private static final long serialVersionUID = 7412247148165511987L;
 
 	/**
 	 * 证件号
@@ -72,6 +72,18 @@ public class SceneInfo extends AlipayObject {
 	 */
 	@ApiField("self_visit")
 	private String selfVisit;
+
+	/**
+	 * 数据来源，当前分为 zmJobCenter（数据来自工作证招聘场的点击）和 ka(合作商户的数据)
+	 */
+	@ApiField("source")
+	private String source;
+
+	/**
+	 * 数据的类型，当前暂时为edu(培训) 和 job(招聘)
+	 */
+	@ApiField("type")
+	private String type;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -153,6 +165,20 @@ public class SceneInfo extends AlipayObject {
 	}
 	public void setSelfVisit(String selfVisit) {
 		this.selfVisit = selfVisit;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getUserId() {

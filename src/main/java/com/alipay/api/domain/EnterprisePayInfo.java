@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付支付信息
  *
  * @author auto create
- * @since 1.0, 2021-10-13 16:52:41
+ * @since 1.0, 2022-03-11 21:53:36
  */
 public class EnterprisePayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8713895772312215857L;
+	private static final long serialVersionUID = 3267235996341964192L;
 
 	/**
 	 * 开票金额

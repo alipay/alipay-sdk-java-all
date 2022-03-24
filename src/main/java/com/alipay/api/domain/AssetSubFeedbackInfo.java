@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AssetSubFeedbackInfo 存放子信息
  *
  * @author auto create
- * @since 1.0, 2020-12-21 14:24:59
+ * @since 1.0, 2022-03-15 14:37:10
  */
 public class AssetSubFeedbackInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2352482911991517264L;
+	private static final long serialVersionUID = 7561877747944495525L;
 
 	/**
 	 * 返回的信息code

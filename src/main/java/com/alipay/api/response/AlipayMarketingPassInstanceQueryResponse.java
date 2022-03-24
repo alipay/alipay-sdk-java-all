@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingPassInstanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6572158934669789539L;
+	private static final long serialVersionUID = 3678229466948988318L;
 
 	/** 
 	 * 卡券实例列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家安心充配置查询
  *
  * @author auto create
- * @since 1.0, 2022-02-25 14:56:54
+ * @since 1.0, 2022-03-22 14:04:18
  */
 public class AntMerchantExpandMembercardConfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1589264475659367532L;
+	private static final long serialVersionUID = 3643614887955512398L;
 
 	/**
 	 * 商家的安心充配置的唯一编号，

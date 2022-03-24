@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备档案数据
  *
  * @author auto create
- * @since 1.0, 2021-07-19 21:09:42
+ * @since 1.0, 2022-03-21 19:58:31
  */
 public class DeviceRecords extends AlipayObject {
 
-	private static final long serialVersionUID = 1181831725269251738L;
+	private static final long serialVersionUID = 7212454389488259761L;
 
 	/**
 	 * 设备唯一标识

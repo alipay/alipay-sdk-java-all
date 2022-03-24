@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户当前路线信息接口
  *
  * @author auto create
- * @since 1.0, 2022-03-01 10:59:07
+ * @since 1.0, 2022-03-18 10:51:51
  */
 public class AlipaySocialAntsportsCurrentpathQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3837535734844438848L;
+	private static final long serialVersionUID = 6849463739319273881L;
 
 	/**
 	 * 日期。格式yyyy-MM-dd

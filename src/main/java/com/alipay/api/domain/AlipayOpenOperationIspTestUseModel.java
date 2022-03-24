@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISP链路调用测试
  *
  * @author auto create
- * @since 1.0, 2022-02-18 15:40:47
+ * @since 1.0, 2022-03-21 19:26:57
  */
 public class AlipayOpenOperationIspTestUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7564617157689458481L;
+	private static final long serialVersionUID = 4547646615992268571L;
 
 	/**
 	 * 测试输入app_id

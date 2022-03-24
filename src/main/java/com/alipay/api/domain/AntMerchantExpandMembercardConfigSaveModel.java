@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家安心充配置保存
  *
  * @author auto create
- * @since 1.0, 2021-09-13 10:23:03
+ * @since 1.0, 2022-03-22 15:08:45
  */
 public class AntMerchantExpandMembercardConfigSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6663795174939113231L;
+	private static final long serialVersionUID = 1143191842922286587L;
 
 	/**
 	 * 安心充会员卡面的详细信息
@@ -23,7 +23,7 @@ public class AntMerchantExpandMembercardConfigSaveModel extends AlipayObject {
 	private MemberCardTemplateConfig cardTemplateConfig;
 
 	/**
-	 * 操作会员卡的角色信息
+	 * 操作会员卡的角色信息，参数设置方式参考：接入指南 的说明
 	 */
 	@ApiField("operator")
 	private MemberCardOperator operator;
@@ -41,12 +41,14 @@ public class AntMerchantExpandMembercardConfigSaveModel extends AlipayObject {
  3. 限定特定的商品，如果同时存在，则只判断包含规则。
 
 当前限定了2，就不能生效1的规则。
+
+内部字段都是修改操作，如果字段内容为null，则表示不修改。
 	 */
 	@ApiField("pay_effective_rule")
 	private MemberCardPayEffectiveRule payEffectiveRule;
 
 	/**
-	 * 最大数量为5，安心充储值会有方案列表
+	 * 最大数量为6，安心充储值会有方案列表
 	 */
 	@ApiListField("prepaid_promotion_plans")
 	@ApiField("member_card_create_prepaid_promotion_plan_info")

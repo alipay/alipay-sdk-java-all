@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 审核内容风险结果
  *
  * @author auto create
- * @since 1.0, 2021-07-08 22:15:36
+ * @since 1.0, 2022-03-14 16:07:53
  */
 public class ContentRiskResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6726339557533228357L;
+	private static final long serialVersionUID = 3525818455444248222L;
 
 	/**
 	 * 风险详细信息

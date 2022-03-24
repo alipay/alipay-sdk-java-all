@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 维护和作废SR校验接口
  *
  * @author auto create
- * @since 1.0, 2021-08-31 20:52:15
+ * @since 1.0, 2022-03-21 22:22:51
  */
 public class AntProdpaasGrmcoreSrInvalidModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8262167866734415699L;
+	private static final long serialVersionUID = 1346272366522956625L;
 
 	/**
 	 * 环境标识，送“prod”
 	 */
 	@ApiField("env")
 	private String env;
+
+	/**
+	 * 项目编号
+	 */
+	@ApiField("program_code")
+	private String programCode;
 
 	/**
 	 * sr编号
@@ -47,6 +53,13 @@ public class AntProdpaasGrmcoreSrInvalidModel extends AlipayObject {
 	}
 	public void setEnv(String env) {
 		this.env = env;
+	}
+
+	public String getProgramCode() {
+		return this.programCode;
+	}
+	public void setProgramCode(String programCode) {
+		this.programCode = programCode;
 	}
 
 	public List<String> getSrNos() {

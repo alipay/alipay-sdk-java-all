@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取指定抬头的发票要素列表
  *
  * @author auto create
- * @since 1.0, 2020-05-20 15:51:53
+ * @since 1.0, 2022-03-22 15:56:10
  */
 public class AlipayEbppInvoiceTitleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5873237711423936592L;
+	private static final long serialVersionUID = 5826393448352714931L;
 
 	/**
 	 * 查询起始时间，精确到天（按开票日期查询）

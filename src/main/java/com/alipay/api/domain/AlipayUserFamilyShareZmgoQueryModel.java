@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭芝麻GO协议查询
  *
  * @author auto create
- * @since 1.0, 2021-02-05 16:33:56
+ * @since 1.0, 2022-03-14 11:25:16
  */
 public class AlipayUserFamilyShareZmgoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7756824949518221571L;
+	private static final long serialVersionUID = 2532255841563624533L;
 
 	/**
 	 * 默认未false。设置为true时同时查询个人版协议

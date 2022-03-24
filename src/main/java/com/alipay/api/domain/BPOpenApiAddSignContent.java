@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 加签内容
  *
  * @author auto create
- * @since 1.0, 2017-09-19 20:53:33
+ * @since 1.0, 2022-03-14 13:53:50
  */
 public class BPOpenApiAddSignContent extends AlipayObject {
 
-	private static final long serialVersionUID = 6686787756965279169L;
+	private static final long serialVersionUID = 1612216997531847985L;
 
 	/**
 	 * 自定义的条件跳转。JSON格式

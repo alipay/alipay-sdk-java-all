@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-24 18:51:36
+ * @since 1.0, 2022-03-24 14:26:10
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6839941564873815264L;
+	private static final long serialVersionUID = 5325912456878869869L;
 
 	/** 
 	 * 详细地址。
@@ -97,6 +97,30 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	 */
 	@ApiField("enrollment_time")
 	private String enrollmentTime;
+
+	/** 
+	 * 企业证照地址的详细地址（用户类型是公司用户才有该字段）【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+	 */
+	@ApiField("ent_license_address")
+	private String entLicenseAddress;
+
+	/** 
+	 * 企业证照地址所在地区或县（用户类型是公司用户才有该字段）【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+	 */
+	@ApiField("ent_license_area")
+	private String entLicenseArea;
+
+	/** 
+	 * 企业证照地址所在市（用户类型是公司用户才有该字段）【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+	 */
+	@ApiField("ent_license_city")
+	private String entLicenseCity;
+
+	/** 
+	 * 企业证照地址所在省份（用户类型是公司用户才有该字段）【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+	 */
+	@ApiField("ent_license_province")
+	private String entLicenseProvince;
 
 	/** 
 	 * 企业代理人证件有效期（用户类型是公司类型时才有此字段）。
@@ -443,6 +467,34 @@ W代表已注册，未激活的账户
 	}
 	public String getEnrollmentTime( ) {
 		return this.enrollmentTime;
+	}
+
+	public void setEntLicenseAddress(String entLicenseAddress) {
+		this.entLicenseAddress = entLicenseAddress;
+	}
+	public String getEntLicenseAddress( ) {
+		return this.entLicenseAddress;
+	}
+
+	public void setEntLicenseArea(String entLicenseArea) {
+		this.entLicenseArea = entLicenseArea;
+	}
+	public String getEntLicenseArea( ) {
+		return this.entLicenseArea;
+	}
+
+	public void setEntLicenseCity(String entLicenseCity) {
+		this.entLicenseCity = entLicenseCity;
+	}
+	public String getEntLicenseCity( ) {
+		return this.entLicenseCity;
+	}
+
+	public void setEntLicenseProvince(String entLicenseProvince) {
+		this.entLicenseProvince = entLicenseProvince;
+	}
+	public String getEntLicenseProvince( ) {
+		return this.entLicenseProvince;
 	}
 
 	public void setFirmAgentPersonCertExpiryDate(String firmAgentPersonCertExpiryDate) {

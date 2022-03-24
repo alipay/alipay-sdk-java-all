@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料详情查询接口
  *
  * @author auto create
- * @since 1.0, 2022-01-24 17:26:22
+ * @since 1.0, 2022-03-23 22:29:12
  */
 public class AntMerchantExpandAssetBomQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3646673261146971859L;
+	private static final long serialVersionUID = 6375249693277711694L;
 
 	/**
 	 * 物料id

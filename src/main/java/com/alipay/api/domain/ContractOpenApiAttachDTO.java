@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同附件
  *
  * @author auto create
- * @since 1.0, 2022-01-07 10:42:51
+ * @since 1.0, 2022-03-17 13:52:54
  */
 public class ContractOpenApiAttachDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2146976856937425335L;
+	private static final long serialVersionUID = 2445588643245353855L;
 
 	/**
 	 * 文件地址
@@ -30,6 +30,12 @@ public class ContractOpenApiAttachDTO extends AlipayObject {
 	 */
 	@ApiField("file_version")
 	private String fileVersion;
+
+	/**
+	 * 合同PDF文件
+	 */
+	@ApiField("pdf_file_location")
+	private String pdfFileLocation;
 
 	public String getFileLocation() {
 		return this.fileLocation;
@@ -50,6 +56,13 @@ public class ContractOpenApiAttachDTO extends AlipayObject {
 	}
 	public void setFileVersion(String fileVersion) {
 		this.fileVersion = fileVersion;
+	}
+
+	public String getPdfFileLocation() {
+		return this.pdfFileLocation;
+	}
+	public void setPdfFileLocation(String pdfFileLocation) {
+		this.pdfFileLocation = pdfFileLocation;
 	}
 
 }

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.servindustry.reservation.payshop.identify request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-03-22 10:00:54
  */
 public class KoubeiServindustryReservationPayshopIdentifyRequest implements AlipayRequest<KoubeiServindustryReservationPayshopIdentifyResponse> {
 

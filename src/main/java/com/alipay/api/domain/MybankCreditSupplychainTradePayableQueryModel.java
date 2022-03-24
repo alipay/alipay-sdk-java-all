@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询交易对应的应付款
  *
  * @author auto create
- * @since 1.0, 2018-07-28 01:08:59
+ * @since 1.0, 2022-03-10 16:26:16
  */
 public class MybankCreditSupplychainTradePayableQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4183449583388777297L;
+	private static final long serialVersionUID = 3864756125746481566L;
 
 	/**
 	 * 买家会员信息

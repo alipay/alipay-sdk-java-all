@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEtcBlacklistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6717236391527317445L;
+	private static final long serialVersionUID = 4116786965877964522L;
 
 	/**
 	 * ETC平台协议号

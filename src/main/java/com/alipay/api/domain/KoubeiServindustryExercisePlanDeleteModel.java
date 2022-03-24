@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiServindustryExercisePlanDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3114152633589485714L;
+	private static final long serialVersionUID = 7194493286388852214L;
 
 	/**
 	 * 运动计划类型。枚举：运动项目(ITEM),或课程(COURSE),单次记录(ITEM_SINGLE)

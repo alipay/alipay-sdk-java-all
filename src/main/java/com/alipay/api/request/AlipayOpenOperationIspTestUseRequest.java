@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.isp.test.use request
  * 
  * @author auto create
- * @since 1.0, 2022-02-18 15:41:43
+ * @since 1.0, 2022-03-21 19:26:57
  */
 public class AlipayOpenOperationIspTestUseRequest implements AlipayRequest<AlipayOpenOperationIspTestUseResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.verifyidentity.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-12 14:35:21
+ * @since 1.0, 2022-03-21 20:41:41
  */
 public class AlipaySecurityRiskVerifyidentityCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4217611218274799936L;
+	private static final long serialVersionUID = 8654339997315741943L;
 
 	/** 
 	 * 无

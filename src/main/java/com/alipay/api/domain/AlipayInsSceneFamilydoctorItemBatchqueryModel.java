@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 家庭医生商品批量搜索查询接口
  *
  * @author auto create
- * @since 1.0, 2022-03-03 16:42:40
+ * @since 1.0, 2022-03-15 15:12:17
  */
 public class AlipayInsSceneFamilydoctorItemBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6178298314171518428L;
+	private static final long serialVersionUID = 3394986255897693889L;
 
 	/**
 	 * 服务合约号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账务明细
  *
  * @author auto create
- * @since 1.0, 2021-11-30 10:00:35
+ * @since 1.0, 2022-03-22 21:21:17
  */
 public class AccountLogItemResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8693337294689663417L;
+	private static final long serialVersionUID = 8539654965918869748L;
 
 	/**
 	 * 支付宝账务流水号。对账使用，不脱敏
@@ -54,6 +54,12 @@ public class AccountLogItemResult extends AlipayObject {
 	 */
 	@ApiField("biz_orig_no")
 	private String bizOrigNo;
+
+	/**
+	 * 账单的补全信息，用于特殊场景，普通商户不需要传值，对账时可忽略。
+	 */
+	@ApiField("complement_info")
+	private String complementInfo;
 
 	/**
 	 * 收入/支出。表示收支。amount是正数，返回“收入”。amount是负数，返回“支出”
@@ -150,6 +156,13 @@ public class AccountLogItemResult extends AlipayObject {
 	}
 	public void setBizOrigNo(String bizOrigNo) {
 		this.bizOrigNo = bizOrigNo;
+	}
+
+	public String getComplementInfo() {
+		return this.complementInfo;
+	}
+	public void setComplementInfo(String complementInfo) {
+		this.complementInfo = complementInfo;
 	}
 
 	public String getDirection() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 判断是否旺铺
  *
  * @author auto create
- * @since 1.0, 2018-11-29 14:40:40
+ * @since 1.0, 2022-03-22 10:00:54
  */
 public class KoubeiServindustryReservationPayshopIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6738133282279242745L;
+	private static final long serialVersionUID = 2418464775145765792L;
 
 	/**
 	 * 店铺id

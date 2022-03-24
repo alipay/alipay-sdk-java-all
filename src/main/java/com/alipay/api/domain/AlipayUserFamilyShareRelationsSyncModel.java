@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 家人共享关系同步批量接口
  *
  * @author auto create
- * @since 1.0, 2021-01-20 01:12:53
+ * @since 1.0, 2022-03-14 11:27:35
  */
 public class AlipayUserFamilyShareRelationsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1188519271599962226L;
+	private static final long serialVersionUID = 8881327226179314446L;
 
 	/**
 	 * 共享关系过期时间

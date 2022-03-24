@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家安心充配置修改
  *
  * @author auto create
- * @since 1.0, 2021-09-10 19:44:06
+ * @since 1.0, 2022-03-22 15:08:53
  */
 public class AntMerchantExpandMembercardConfigModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3197277428157284626L;
+	private static final long serialVersionUID = 6568839392754249859L;
 
 	/**
 	 * 期望修改成的卡面信息
@@ -29,7 +29,7 @@ public class AntMerchantExpandMembercardConfigModifyModel extends AlipayObject {
 	private String memberProductId;
 
 	/**
-	 * 会员卡配置操作员信息
+	 * 会员卡配置操作员信息，参数设置方式参考：接入指南 的说明
 	 */
 	@ApiField("operator")
 	private MemberCardOperator operator;
@@ -46,15 +46,15 @@ public class AntMerchantExpandMembercardConfigModifyModel extends AlipayObject {
  2. 当前商家（M4）对应的smid -（暂未开放）
  3. 限定特定的商品，如果同时存在，则只判断包含规则。
 
-当前限定了2，就不能生效1的规则。
+当前限定了2，就不能生效1的规则。内部字段如果为null，则表示不修改已有配置。
 	 */
 	@ApiField("pay_effective_rule")
 	private MemberCardPayEffectiveRule payEffectiveRule;
 
 	/**
-	 * 最大数量为5，期望修改成的优惠方案列表：
+	 * 最大数量为6，期望修改成的优惠方案列表：
 如果不包含现有的优惠方案对象，则表示期望删除；
-如果包含了优惠对象，会校验充送方案是否存在，存在则修改，不存在则添加。
+如果包含了优惠对象，会校验充送方案是否存在，存在则修改（只支持修改状态），不存在则添加。
 	 */
 	@ApiListField("prepaid_promotion_plans")
 	@ApiField("member_card_create_prepaid_promotion_plan_info")

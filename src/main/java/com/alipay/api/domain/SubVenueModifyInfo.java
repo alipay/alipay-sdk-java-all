@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆修子场馆详细信息
  *
  * @author auto create
- * @since 1.0, 2021-11-29 20:37:05
+ * @since 1.0, 2022-03-22 16:50:34
  */
 public class SubVenueModifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1827972292925647938L;
+	private static final long serialVersionUID = 3827612544374411943L;
 
 	/**
 	 * 入场要求
@@ -169,7 +169,7 @@ smid：通过smid收款
 
 	/**
 	 * 场馆类型，
-01足球；02篮球；03乒乓球；04羽毛球；05台球；06射箭；07哒哒球；08游泳；09网球；10攀岩；11空手道；12跆拳道；14瑜伽；15搏击；16舞蹈；17艺术体操；18太极；19击剑；20水上运动；21滑雪；22健身；23轮滑；24排球；25门球；00其他运动
+01足球；02篮球；03乒乓球；04羽毛球；05台球；06射箭；07哒哒球；08游泳；09网球；10攀岩；11空手道；12跆拳道；14瑜伽；15搏击；16舞蹈；17艺术体操；18太极；19击剑；20水上运动；21滑雪；22健身；23滑冰；24排球；25门球；26轮滑；00其他运动
 	 */
 	@ApiField("venue_type")
 	private String venueType;

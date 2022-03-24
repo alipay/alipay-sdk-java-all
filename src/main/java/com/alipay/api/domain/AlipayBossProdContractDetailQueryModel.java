@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同中心合同详情查看
  *
  * @author auto create
- * @since 1.0, 2022-01-06 21:16:12
+ * @since 1.0, 2022-03-17 13:52:54
  */
 public class AlipayBossProdContractDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2673447673529937124L;
+	private static final long serialVersionUID = 1777498844955365226L;
 
 	/**
 	 * 业务流水号
@@ -24,6 +24,12 @@ public class AlipayBossProdContractDetailQueryModel extends AlipayObject {
 	 */
 	@ApiField("contract_code")
 	private String contractCode;
+
+	/**
+	 * 是否需要主合同的PDF版本
+	 */
+	@ApiField("is_pdf_required")
+	private Boolean isPdfRequired;
 
 	/**
 	 * 当前系统的名称
@@ -49,6 +55,13 @@ public class AlipayBossProdContractDetailQueryModel extends AlipayObject {
 	}
 	public void setContractCode(String contractCode) {
 		this.contractCode = contractCode;
+	}
+
+	public Boolean getIsPdfRequired() {
+		return this.isPdfRequired;
+	}
+	public void setIsPdfRequired(Boolean isPdfRequired) {
+		this.isPdfRequired = isPdfRequired;
 	}
 
 	public String getSourceSystemId() {

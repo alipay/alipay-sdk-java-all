@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康服务标的下架接口
  *
  * @author auto create
- * @since 1.0, 2022-01-04 22:45:13
+ * @since 1.0, 2022-03-15 15:15:31
  */
 public class AlipayInsSceneInshealthserviceprodItemOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1866397244674971843L;
+	private static final long serialVersionUID = 6246221562958559113L;
 
 	/**
 	 * 商品ID
