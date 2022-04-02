@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneYebAssetTradeUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8794632767429483165L;
+	private static final long serialVersionUID = 1563947894917814977L;
 
 	/** 
 	 * 订单号

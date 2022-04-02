@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险发票申请
  *
  * @author auto create
- * @since 1.0, 2019-08-26 17:23:54
+ * @since 1.0, 2022-03-28 17:13:09
  */
 public class AlipayInsSceneInvoiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4173215128936474467L;
+	private static final long serialVersionUID = 1766184135655837534L;
 
 	/**
 	 * 发票寄送类型;ELECTRONIC:电子发票;PAPER:纸质发票；BOTH:电子+纸质

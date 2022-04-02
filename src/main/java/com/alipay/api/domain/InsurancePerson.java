@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险人信息，如投保人和被保人
  *
  * @author auto create
- * @since 1.0, 2021-06-17 20:39:24
+ * @since 1.0, 2022-03-28 17:06:48
  */
 public class InsurancePerson extends AlipayObject {
 
-	private static final long serialVersionUID = 2855497659576788791L;
+	private static final long serialVersionUID = 5217691221331834927L;
 
 	/**
 	 * 支付宝2088账号/淘宝账号

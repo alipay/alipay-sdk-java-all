@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.open.iotvsp.orguserinfo.query
  *
  * @author auto create
- * @since 1.0, 2022-03-17 20:27:21
+ * @since 1.0, 2022-03-31 02:08:28
  */
 public class AlipayOpenIotvspOrguserCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5639872472891853628L;
+	private static final long serialVersionUID = 7159489351232459237L;
 
 	/**
 	 * 授权的appId
@@ -24,6 +24,12 @@ public class AlipayOpenIotvspOrguserCreateModel extends AlipayObject {
 	 */
 	@ApiField("authorize_app_pid")
 	private String authorizeAppPid;
+
+	/**
+	 * 人员数据的流水ID，用于核身组件初始化参数
+	 */
+	@ApiField("biz_id")
+	private String bizId;
 
 	/**
 	 * 证件号码
@@ -67,12 +73,6 @@ public class AlipayOpenIotvspOrguserCreateModel extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
-	/**
-	 * 用户外部id
-	 */
-	@ApiField("user_out_id")
-	private String userOutId;
-
 	public String getAuthorizeAppId() {
 		return this.authorizeAppId;
 	}
@@ -85,6 +85,13 @@ public class AlipayOpenIotvspOrguserCreateModel extends AlipayObject {
 	}
 	public void setAuthorizeAppPid(String authorizeAppPid) {
 		this.authorizeAppPid = authorizeAppPid;
+	}
+
+	public String getBizId() {
+		return this.bizId;
+	}
+	public void setBizId(String bizId) {
+		this.bizId = bizId;
 	}
 
 	public String getCertNo() {
@@ -134,13 +141,6 @@ public class AlipayOpenIotvspOrguserCreateModel extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getUserOutId() {
-		return this.userOutId;
-	}
-	public void setUserOutId(String userOutId) {
-		this.userOutId = userOutId;
 	}
 
 }

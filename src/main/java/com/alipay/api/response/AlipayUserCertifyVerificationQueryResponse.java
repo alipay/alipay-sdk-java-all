@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.verification.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-15 19:50:17
+ * @since 1.0, 2022-03-29 20:31:01
  */
 public class AlipayUserCertifyVerificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6125257884687629658L;
+	private static final long serialVersionUID = 2611226264331453123L;
 
 	/** 
 	 * 核验不一致原因
@@ -31,6 +31,12 @@ public class AlipayUserCertifyVerificationQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("result_msg")
 	private String resultMsg;
+
+	/** 
+	 * 核验比对分数
+	 */
+	@ApiField("score")
+	private String score;
 
 	/** 
 	 * 核验源
@@ -57,6 +63,13 @@ public class AlipayUserCertifyVerificationQueryResponse extends AlipayResponse {
 	}
 	public String getResultMsg( ) {
 		return this.resultMsg;
+	}
+
+	public void setScore(String score) {
+		this.score = score;
+	}
+	public String getScore( ) {
+		return this.score;
 	}
 
 	public void setSourceFrom(String sourceFrom) {

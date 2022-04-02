@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-24 14:26:10
+ * @since 1.0, 2022-03-29 19:21:43
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5325912456878869869L;
+	private static final long serialVersionUID = 5288443674898967559L;
 
 	/** 
 	 * 详细地址。
@@ -105,7 +105,7 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	private String entLicenseAddress;
 
 	/** 
-	 * 企业证照地址所在地区或县（用户类型是公司用户才有该字段）【注意】只有is_certified为T的时候才有意义，否则不保证准确性.
+	 * 企业证照地址所在地区或县（用户类型是公司用户才有该字段）【注意】只有is_certified为T的时候才有意义，否则不保证准确性，目前企业营业执照地址不含县(区)，area为空。
 	 */
 	@ApiField("ent_license_area")
 	private String entLicenseArea;

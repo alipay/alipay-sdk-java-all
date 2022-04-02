@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险营销标的活动列表查询
  *
  * @author auto create
- * @since 1.0, 2019-08-26 17:23:48
+ * @since 1.0, 2022-03-28 17:19:22
  */
 public class AlipayInsMarketingCampaignDecisionModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3497619836511466318L;
+	private static final long serialVersionUID = 8133177626835322648L;
 
 	/**
 	 * 描述营销活动涉及的业务类型

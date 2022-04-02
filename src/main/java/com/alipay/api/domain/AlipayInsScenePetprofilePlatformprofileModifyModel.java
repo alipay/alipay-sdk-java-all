@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 平台宠物档案修改
  *
  * @author auto create
- * @since 1.0, 2021-11-30 15:38:48
+ * @since 1.0, 2022-03-28 16:53:46
  */
 public class AlipayInsScenePetprofilePlatformprofileModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3584126949592236882L;
+	private static final long serialVersionUID = 5456613559464774324L;
 
 	/**
 	 * 宠物生日，档案生日不能早于2000年，且不能晚于当天。只能更新日期，不能更新年月:

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 视觉货柜商品选取放入
  *
  * @author auto create
- * @since 1.0, 2019-06-19 21:15:23
+ * @since 1.0, 2022-03-31 15:15:49
  */
 public class AlipayMsaasMediarecogMmtcaftscvMachinegoodsAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5516412147816584282L;
+	private static final long serialVersionUID = 5385259829563698153L;
 
 	/**
 	 * 当前请求选取商品算法Id

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险营销优惠预核销
  *
  * @author auto create
- * @since 1.0, 2019-08-26 17:23:36
+ * @since 1.0, 2022-03-28 17:19:31
  */
 public class AlipayInsMarketingDiscountPreuseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3177557469134835421L;
+	private static final long serialVersionUID = 3661242148333921686L;
 
 	/**
 	 * 保险营销账号Id

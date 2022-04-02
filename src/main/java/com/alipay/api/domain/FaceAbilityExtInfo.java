@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用人脸能力所需要等拓展参数信息
  *
  * @author auto create
- * @since 1.0, 2022-03-04 14:46:06
+ * @since 1.0, 2022-03-30 10:26:24
  */
 public class FaceAbilityExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8511338488944351884L;
+	private static final long serialVersionUID = 4544957217344798734L;
 
 	/**
 	 * 年龄
@@ -24,6 +24,12 @@ public class FaceAbilityExtInfo extends AlipayObject {
 	 */
 	@ApiField("algfactors")
 	private String algfactors;
+
+	/**
+	 * 模糊程度质量分
+	 */
+	@ApiField("blur")
+	private String blur;
 
 	/**
 	 * 姓名信息
@@ -76,10 +82,46 @@ centerRule：选择中心脸规则；
 	private String hasrisk;
 
 	/**
+	 * 综合质量分（不区分具体哪方面质量差）
+	 */
+	@ApiField("joint_quality")
+	private Long jointQuality;
+
+	/**
+	 * 光线质量分
+	 */
+	@ApiField("light")
+	private String light;
+
+	/**
+	 * 遮挡质量分
+	 */
+	@ApiField("occlusion")
+	private String occlusion;
+
+	/**
+	 * 姿态质量分
+	 */
+	@ApiField("pose")
+	private String pose;
+
+	/**
 	 * 质量分
 	 */
 	@ApiField("quality")
 	private String quality;
+
+	/**
+	 * 质量不合格时的质量返回码
+	 */
+	@ApiField("quality_code")
+	private String qualityCode;
+
+	/**
+	 * 质量是否合格
+	 */
+	@ApiField("qualityok")
+	private Boolean qualityok;
 
 	/**
 	 * 特征矩形区域"442,231,412,262"
@@ -111,6 +153,13 @@ centerRule：选择中心脸规则；
 	}
 	public void setAlgfactors(String algfactors) {
 		this.algfactors = algfactors;
+	}
+
+	public String getBlur() {
+		return this.blur;
+	}
+	public void setBlur(String blur) {
+		this.blur = blur;
 	}
 
 	public String getCertName() {
@@ -169,11 +218,53 @@ centerRule：选择中心脸规则；
 		this.hasrisk = hasrisk;
 	}
 
+	public Long getJointQuality() {
+		return this.jointQuality;
+	}
+	public void setJointQuality(Long jointQuality) {
+		this.jointQuality = jointQuality;
+	}
+
+	public String getLight() {
+		return this.light;
+	}
+	public void setLight(String light) {
+		this.light = light;
+	}
+
+	public String getOcclusion() {
+		return this.occlusion;
+	}
+	public void setOcclusion(String occlusion) {
+		this.occlusion = occlusion;
+	}
+
+	public String getPose() {
+		return this.pose;
+	}
+	public void setPose(String pose) {
+		this.pose = pose;
+	}
+
 	public String getQuality() {
 		return this.quality;
 	}
 	public void setQuality(String quality) {
 		this.quality = quality;
+	}
+
+	public String getQualityCode() {
+		return this.qualityCode;
+	}
+	public void setQualityCode(String qualityCode) {
+		this.qualityCode = qualityCode;
+	}
+
+	public Boolean getQualityok() {
+		return this.qualityok;
+	}
+	public void setQualityok(Boolean qualityok) {
+		this.qualityok = qualityok;
 	}
 
 	public String getRect() {

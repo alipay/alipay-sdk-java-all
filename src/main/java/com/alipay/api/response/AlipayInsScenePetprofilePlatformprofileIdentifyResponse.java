@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.petprofile.platformprofile.identify response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-30 15:40:33
+ * @since 1.0, 2022-03-28 16:54:10
  */
 public class AlipayInsScenePetprofilePlatformprofileIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8428924932893342295L;
+	private static final long serialVersionUID = 7761669999422447987L;
 
 	/** 
 	 * 核身结果，true表示同一只宠物，false表示非同一只宠物。

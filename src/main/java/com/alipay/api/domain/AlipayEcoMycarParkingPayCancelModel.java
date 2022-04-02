@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无感停车交易撤销API
  *
  * @author auto create
- * @since 1.0, 2022-03-15 10:56:44
+ * @since 1.0, 2022-03-26 11:06:52
  */
 public class AlipayEcoMycarParkingPayCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4731214296324225636L;
+	private static final long serialVersionUID = 8514438198516487325L;
 
 	/**
 	 * 进场时间(格式"YYYY-MM-DD HH:mm:ss"，24小时制)
@@ -24,6 +24,12 @@ public class AlipayEcoMycarParkingPayCancelModel extends AlipayObject {
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/**
+	 * 外部进场流水号，与serial_no不能同时为空
+	 */
+	@ApiField("out_serial_no")
+	private String outSerialNo;
 
 	/**
 	 * 出场时间(格式"YYYY-MM-DD HH:mm:ss"，24小时制)
@@ -68,7 +74,7 @@ public class AlipayEcoMycarParkingPayCancelModel extends AlipayObject {
 	private String sellerId;
 
 	/**
-	 * 进场流水号
+	 * 进场流水号，与out_serial_no不能同时为空
 	 */
 	@ApiField("serial_no")
 	private String serialNo;
@@ -97,6 +103,13 @@ public class AlipayEcoMycarParkingPayCancelModel extends AlipayObject {
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getOutSerialNo() {
+		return this.outSerialNo;
+	}
+	public void setOutSerialNo(String outSerialNo) {
+		this.outSerialNo = outSerialNo;
 	}
 
 	public String getOutTime() {

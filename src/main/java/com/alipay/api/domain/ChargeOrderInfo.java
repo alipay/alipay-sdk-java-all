@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电单据信息
  *
  * @author auto create
- * @since 1.0, 2022-02-14 13:41:52
+ * @since 1.0, 2022-03-29 09:46:57
  */
 public class ChargeOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2676978885487812497L;
+	private static final long serialVersionUID = 7548331318651517252L;
 
 	/**
 	 * 充电枪ID

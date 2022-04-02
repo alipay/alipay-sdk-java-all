@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放内容。
  *
  * @author auto create
- * @since 1.0, 2022-01-18 17:12:21
+ * @since 1.0, 2022-04-01 10:09:44
  */
 public class DeliveryContentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5566296749493724717L;
+	private static final long serialVersionUID = 7392167975568111872L;
 
 	/**
-	 * 活动对象，包括支付券和导码模式的商家券。
+	 * 活动对象。
 	 */
 	@ApiField("delivery_activity_content")
 	private DeliveryActivityContentInfo deliveryActivityContent;

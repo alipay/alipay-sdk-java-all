@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 委托代收付查询接口
  *
  * @author auto create
- * @since 1.0, 2020-06-04 21:00:10
+ * @since 1.0, 2022-04-01 13:44:11
  */
 public class AlipayFundTransEntrustQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6478531196715155985L;
+	private static final long serialVersionUID = 6183766231692114482L;
 
 	/**
 	 * 描述特定的业务场景，如果传递了out_biz_no则该字段为必传。

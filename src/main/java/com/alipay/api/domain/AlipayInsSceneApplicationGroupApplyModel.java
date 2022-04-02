@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多保单投保申请
  *
  * @author auto create
- * @since 1.0, 2019-08-26 16:49:02
+ * @since 1.0, 2022-03-28 17:17:35
  */
 public class AlipayInsSceneApplicationGroupApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5578328721888126474L;
+	private static final long serialVersionUID = 1153834193755796959L;
 
 	/**
 	 * 收件人

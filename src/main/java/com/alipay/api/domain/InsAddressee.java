@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单邮寄地址
  *
  * @author auto create
- * @since 1.0, 2020-04-27 17:22:45
+ * @since 1.0, 2022-03-28 17:20:21
  */
 public class InsAddressee extends AlipayObject {
 
-	private static final long serialVersionUID = 1176343298625118237L;
+	private static final long serialVersionUID = 3879871939267634221L;
 
 	/**
 	 * 收件人详细地址

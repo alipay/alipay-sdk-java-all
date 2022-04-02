@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询充值的消费记录
  *
  * @author auto create
- * @since 1.0, 2021-08-18 10:15:21
+ * @since 1.0, 2022-03-29 09:56:13
  */
 public class AlipayMerchantPayforprivilegeUselogBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8785186294633379674L;
+	private static final long serialVersionUID = 7856487711994985222L;
 
 	/**
 	 * 业务结束时间，包含该业务时间点，开始时间和结束时间不能超过一年

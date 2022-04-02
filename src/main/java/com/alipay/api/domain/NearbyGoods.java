@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NearbyGoods extends AlipayObject {
 
-	private static final long serialVersionUID = 6312792665666614253L;
+	private static final long serialVersionUID = 7548832594593723618L;
 
 	/**
 	 * 活动再减描述，前端直接展示即可

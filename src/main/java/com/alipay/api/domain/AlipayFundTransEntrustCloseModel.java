@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 委托支付订单关闭接口
  *
  * @author auto create
- * @since 1.0, 2020-06-04 21:00:49
+ * @since 1.0, 2022-04-01 13:44:42
  */
 public class AlipayFundTransEntrustCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2734912914687875523L;
+	private static final long serialVersionUID = 2874154899265889944L;
 
 	/**
 	 * CREDIT_SALE_REPAY

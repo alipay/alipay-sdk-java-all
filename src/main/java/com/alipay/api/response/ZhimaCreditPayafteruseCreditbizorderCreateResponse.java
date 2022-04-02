@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditbizorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:47:52
+ * @since 1.0, 2022-03-31 16:41:39
  */
 public class ZhimaCreditPayafteruseCreditbizorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4563649785538483183L;
+	private static final long serialVersionUID = 4682329895825517294L;
 
 	
 

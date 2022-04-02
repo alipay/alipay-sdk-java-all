@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class JFExportInputFieldModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2774131936117264773L;
+	private static final long serialVersionUID = 7461161852861922542L;
 
 	/**
 	 * STANDARD_DATA(标准数据)，对应的是查询机构账单请求中的参数，目前机构账单查询请求中包含billkey、ownerName和billDate这三个参数；EXTEND_DATA(拓展数据)，则以field_name为key，把用户输入的值放到拓展字段中

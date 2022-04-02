@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniInnerversionContentRollbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3734782947662147787L;
+	private static final long serialVersionUID = 3626148311432374734L;
 
 	/**
 	 * 业务场景来源

@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.entrust.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-04 21:00:20
+ * @since 1.0, 2022-04-01 13:44:11
  */
 public class AlipayFundTransEntrustQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5152591285856196346L;
+	private static final long serialVersionUID = 4155992492162454712L;
 
 	/** 
 	 * 该笔委托支付在支付宝系统内部的单据ID
 	 */
 	@ApiField("entrust_order_id")
 	private String entrustOrderId;
+
+	/** 
+	 * 失败原因
+	 */
+	@ApiField("fail_reason")
+	private String failReason;
 
 	/** 
 	 * 商户端的唯一订单号
@@ -55,6 +61,13 @@ public class AlipayFundTransEntrustQueryResponse extends AlipayResponse {
 	}
 	public String getEntrustOrderId( ) {
 		return this.entrustOrderId;
+	}
+
+	public void setFailReason(String failReason) {
+		this.failReason = failReason;
+	}
+	public String getFailReason( ) {
+		return this.failReason;
 	}
 
 	public void setOutBizNo(String outBizNo) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链产业保险电子保单查询
  *
  * @author auto create
- * @since 1.0, 2021-12-14 18:18:49
+ * @since 1.0, 2022-03-31 11:30:12
  */
 public class AnttechBlockchainDefinInsuranceEpolicyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3394758212887532438L;
+	private static final long serialVersionUID = 4585284647437517846L;
 
 	/**
 	 * 投保返回的交易流水号

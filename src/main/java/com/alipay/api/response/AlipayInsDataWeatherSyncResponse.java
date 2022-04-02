@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.weather.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:08:35
+ * @since 1.0, 2022-03-28 17:12:34
  */
 public class AlipayInsDataWeatherSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8645929462474428419L;
+	private static final long serialVersionUID = 3868149757166621787L;
 
 	
 

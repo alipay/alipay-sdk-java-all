@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 数据item
  *
  * @author auto create
- * @since 1.0, 2022-03-17 19:21:55
+ * @since 1.0, 2022-03-30 15:14:22
  */
 public class ApeDataItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2454527675546477396L;
+	private static final long serialVersionUID = 6657854875413587693L;
 
 	/**
 	 * 商品品牌。可以传输品牌id，也可传输品牌明文。
@@ -66,6 +69,13 @@ public class ApeDataItem extends AlipayObject {
 	 */
 	@ApiField("origin_price")
 	private String originPrice;
+
+	/**
+	 * 商品详情的图片列表
+	 */
+	@ApiListField("pic_url_list")
+	@ApiField("string")
+	private List<String> picUrlList;
 
 	/**
 	 * 商品累计点赞次数
@@ -200,6 +210,13 @@ public class ApeDataItem extends AlipayObject {
 	}
 	public void setOriginPrice(String originPrice) {
 		this.originPrice = originPrice;
+	}
+
+	public List<String> getPicUrlList() {
+		return this.picUrlList;
+	}
+	public void setPicUrlList(List<String> picUrlList) {
+		this.picUrlList = picUrlList;
 	}
 
 	public Long getPraiseCnt() {

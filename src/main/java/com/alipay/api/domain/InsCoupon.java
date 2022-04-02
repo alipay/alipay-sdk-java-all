@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险优惠权益
  *
  * @author auto create
- * @since 1.0, 2020-04-27 17:22:41
+ * @since 1.0, 2022-03-28 17:20:26
  */
 public class InsCoupon extends AlipayObject {
 
-	private static final long serialVersionUID = 3687485762481721149L;
+	private static final long serialVersionUID = 6739115174929465881L;
 
 	/**
 	 * 实际使用的权益值，可选不唯一，可能是金额（分），也可能是业务约定的其他描述

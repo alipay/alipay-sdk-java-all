@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.blacklist.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-17 20:31:35
+ * @since 1.0, 2022-03-24 20:51:41
  */
 public class AlipayCommerceTransportEtcBlacklistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8576739854172376183L;
+	private static final long serialVersionUID = 5589982518189859621L;
 
 	/** 
 	 * ETC_ADVANCE_OVERTIME

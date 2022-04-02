@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantOperatorSearchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7232276326626581589L;
+	private static final long serialVersionUID = 7723213466468194373L;
 
 	/** 
 	 * 根据不同条件查询返回的口碑商家中心操作员列表

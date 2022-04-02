@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品模板启用请求
  *
  * @author auto create
- * @since 1.0, 2019-01-04 11:55:34
+ * @since 1.0, 2022-03-31 14:49:03
  */
 public class AlipayMsaasMediarecogMmtcaftscvTemplateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5429982791381525976L;
+	private static final long serialVersionUID = 8372394381496673133L;
 
 	/**
 	 * 模板编号

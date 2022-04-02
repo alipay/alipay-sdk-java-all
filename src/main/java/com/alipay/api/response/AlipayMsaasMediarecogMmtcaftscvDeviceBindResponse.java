@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcaftscv.device.bind response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-28 15:17:24
+ * @since 1.0, 2022-03-31 15:00:47
  */
 public class AlipayMsaasMediarecogMmtcaftscvDeviceBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1433632927585856455L;
+	private static final long serialVersionUID = 3627714177225628396L;
 
 	/** 
 	 * 设备注册是否成功

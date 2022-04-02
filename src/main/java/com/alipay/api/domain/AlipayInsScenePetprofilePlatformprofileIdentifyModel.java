@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 宠物身份核验
  *
  * @author auto create
- * @since 1.0, 2021-11-30 15:38:38
+ * @since 1.0, 2022-03-28 16:54:10
  */
 public class AlipayInsScenePetprofilePlatformprofileIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4679597965577625365L;
+	private static final long serialVersionUID = 2458842399334666299L;
 
 	/**
 	 * 宠物ID

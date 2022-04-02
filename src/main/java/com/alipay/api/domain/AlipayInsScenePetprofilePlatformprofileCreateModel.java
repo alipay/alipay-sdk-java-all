@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 平台宠物档案创建
  *
  * @author auto create
- * @since 1.0, 2021-11-30 15:39:00
+ * @since 1.0, 2022-03-28 16:51:03
  */
 public class AlipayInsScenePetprofilePlatformprofileCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5745191991722212992L;
+	private static final long serialVersionUID = 3384157969718636217L;
 
 	/**
 	 * 生日 档案生日不能早于2000年，且不能晚于当天

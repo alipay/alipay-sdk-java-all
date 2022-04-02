@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票业务数据
  *
  * @author auto create
- * @since 1.0, 2022-02-28 11:35:50
+ * @since 1.0, 2022-04-01 11:05:39
  */
 public class ReceiptBizData extends AlipayObject {
 
-	private static final long serialVersionUID = 8423573638514822751L;
+	private static final long serialVersionUID = 5677629346448283254L;
 
 	/**
 	 * 交易实付金额，单位分
@@ -79,13 +79,19 @@ public class ReceiptBizData extends AlipayObject {
 	private List<ReceiptDiscountInfo> otherDiscountInfo;
 
 	/**
+	 * 外部业务id
+	 */
+	@ApiField("out_biz_id")
+	private String outBizId;
+
+	/**
 	 * 外部订单编号,小票编号
 	 */
 	@ApiField("out_trade_id")
 	private String outTradeId;
 
 	/**
-	 * PAY_SUCCESS/PAY_FAIL
+	 * success/fail
 支付成功，支付失败
 	 */
 	@ApiField("pay_status")
@@ -208,6 +214,13 @@ public class ReceiptBizData extends AlipayObject {
 	}
 	public void setOtherDiscountInfo(List<ReceiptDiscountInfo> otherDiscountInfo) {
 		this.otherDiscountInfo = otherDiscountInfo;
+	}
+
+	public String getOutBizId() {
+		return this.outBizId;
+	}
+	public void setOutBizId(String outBizId) {
+		this.outBizId = outBizId;
 	}
 
 	public String getOutTradeId() {

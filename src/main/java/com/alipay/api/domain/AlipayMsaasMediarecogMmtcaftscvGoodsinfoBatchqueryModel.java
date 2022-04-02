@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 视觉货柜商品信息批量查询
  *
  * @author auto create
- * @since 1.0, 2019-12-02 14:16:57
+ * @since 1.0, 2022-03-31 15:02:12
  */
 public class AlipayMsaasMediarecogMmtcaftscvGoodsinfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8825525755746239264L;
+	private static final long serialVersionUID = 8128284919289499818L;
 
 	/**
 	 * 算法id列表

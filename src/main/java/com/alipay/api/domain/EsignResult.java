@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约信息结果
  *
  * @author auto create
- * @since 1.0, 2021-07-14 15:04:33
+ * @since 1.0, 2022-03-30 16:59:21
  */
 public class EsignResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6781157852947351612L;
+	private static final long serialVersionUID = 4867159793869381439L;
 
 	/**
 	 * 用工企业和用户以及税筹ISV签订的三方协议的协议链接

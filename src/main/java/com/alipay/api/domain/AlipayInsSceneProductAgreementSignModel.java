@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签订商户商品协议
  *
  * @author auto create
- * @since 1.0, 2019-08-26 17:02:01
+ * @since 1.0, 2022-03-28 17:19:56
  */
 public class AlipayInsSceneProductAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7594512222811482429L;
+	private static final long serialVersionUID = 2774842489994688471L;
 
 	/**
 	 * 签约类型，参见com.alipay.insopenprod.common.service.facade.model.enums.InsSignTypeEnum
