@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAntarchiveFaceUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7198558815769421567L;
+	private static final long serialVersionUID = 3855168412326178684L;
 
 	/**
 	 * 业务场景

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 3485966553179179169L;
+	private static final long serialVersionUID = 3313949619229819825L;
 
 	/**
 	 * 券活动id。支持商家券（创建商家券请参考https://opendocs.alipay.com/apis/01xm17）和支付券（创建支付券请参考https://opendocs.alipay.com/pre-apis/027185，仅供受邀用户使用），取值均为返回结果的activity_id字段。

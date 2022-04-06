@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCplifePayResultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1288566672244466667L;
+	private static final long serialVersionUID = 2531292481472369799L;
 
 	/** 
 	 * 本次交易关联的账单详情

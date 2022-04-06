@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2897936791754964824L;
+	private static final long serialVersionUID = 3222229788822613312L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资

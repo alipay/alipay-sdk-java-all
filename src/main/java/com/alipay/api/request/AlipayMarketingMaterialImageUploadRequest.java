@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.BelongMerchantInfo;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,12 +14,18 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.material.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-04-01 16:24:45
+ * @since 1.0, 2022-04-02 20:01:42
  */
 public class AlipayMarketingMaterialImageUploadRequest implements AlipayUploadRequest<AlipayMarketingMaterialImageUploadResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 服务商代商户创建投放必选
+bussinessType设置为ISV_FOR_MERCHANT。
+	 */
+	private BelongMerchantInfo belongMerchantInfo;
 
 	/** 
 	* 图片的byte字节数组。图片大小限制为2M
@@ -34,6 +41,13 @@ public class AlipayMarketingMaterialImageUploadRequest implements AlipayUploadRe
 例如：alipay.marketing.activity.ordervoucher.create接口的voucher_image字段.就清楚描述了.需要使用该接口上传图片，同时指定file_key为PROMO_VOUCHER_IMAGE
 	 */
 	private String fileKey;
+
+	public void setBelongMerchantInfo(BelongMerchantInfo belongMerchantInfo) {
+		this.belongMerchantInfo = belongMerchantInfo;
+	}
+	public BelongMerchantInfo getBelongMerchantInfo() {
+		return this.belongMerchantInfo;
+	}
 
 	public void setFileContent(FileItem fileContent) {
 		this.fileContent = fileContent;
@@ -109,6 +123,7 @@ public class AlipayMarketingMaterialImageUploadRequest implements AlipayUploadRe
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("belong_merchant_info", this.belongMerchantInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.belongMerchantInfo, true));
 		txtParams.put("file_key", this.fileKey);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);

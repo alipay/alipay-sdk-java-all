@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantOrderPointQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3156454647443855585L;
+	private static final long serialVersionUID = 4444985875512747727L;
 
 	/**
 	 * 需要查询的积分类型，如家庭积分、会员积分、返佣积分等等

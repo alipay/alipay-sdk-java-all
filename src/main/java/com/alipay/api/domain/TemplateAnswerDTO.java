@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模版答题要素
  *
  * @author auto create
- * @since 1.0, 2022-01-13 15:28:12
+ * @since 1.0, 2022-04-06 16:05:38
  */
 public class TemplateAnswerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2214813136667811856L;
+	private static final long serialVersionUID = 3326317194637499884L;
 
 	/**
 	 * 答题对应的表达式

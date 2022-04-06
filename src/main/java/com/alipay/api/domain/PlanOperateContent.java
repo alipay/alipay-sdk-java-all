@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PlanOperateContent extends AlipayObject {
 
-	private static final long serialVersionUID = 2483992253513296924L;
+	private static final long serialVersionUID = 3473943965699237799L;
 
 	/**
 	 * 内容入参 key, 支持的枚举值: APP_SKIP_URL:小程序跳转链接, MEMBER_CARD_OPEN_URL: 会员卡开通链接, BENEFIT_TEXT: 权益文案

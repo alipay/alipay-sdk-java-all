@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserNewsceneTagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6756624734921917653L;
+	private static final long serialVersionUID = 2646487275847833621L;
 
 	/**
 	 * 用户主体信息。要求AlipayUserPrincipalInfo中的user_id、mobile(不加国家码)、email属性，有且只有一个非空。否则接口会忽略除去优先级最高的属性之外的其他属性。user_id优先级最高，mobile次之，email最后

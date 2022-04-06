@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlink.collect.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-01 15:36:36
+ * @since 1.0, 2022-04-02 14:37:17
  */
 public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8246953236191963372L;
+	private static final long serialVersionUID = 8511544412844583251L;
 
 	/** 
 	 * INIT表示任务还在初始化状态，COLLECT表示任务在进行中，END状态表示任务处理完成。

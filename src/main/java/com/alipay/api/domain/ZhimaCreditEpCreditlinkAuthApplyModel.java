@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业征信数据服务连接申请
  *
  * @author auto create
- * @since 1.0, 2022-04-01 15:31:30
+ * @since 1.0, 2022-04-02 14:35:56
  */
 public class ZhimaCreditEpCreditlinkAuthApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2765735454531929763L;
+	private static final long serialVersionUID = 1781451873529113918L;
 
 	/**
 	 * 授权回跳页面地址

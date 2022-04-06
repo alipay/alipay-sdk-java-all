@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.delivery.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-01 16:25:47
+ * @since 1.0, 2022-04-02 20:01:42
  */
 public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2225794139731315843L;
+	private static final long serialVersionUID = 8194792192657345564L;
 
 	/** 
 	 * 投放计划基础信息。
@@ -27,8 +27,7 @@ public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse
 	private DeliveryBaseInfo deliveryBaseInfo;
 
 	/** 
-	 * 投放的展位编码。 枚举值：
-PAYMENT_RESULT：本店优惠。
+	 * 投放的展位编码。
 	 */
 	@ApiField("delivery_booth_code")
 	private String deliveryBoothCode;

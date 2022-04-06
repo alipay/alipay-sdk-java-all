@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 答题选择要素
  *
  * @author auto create
- * @since 1.0, 2021-12-22 20:12:43
+ * @since 1.0, 2022-04-06 16:05:38
  */
 public class AnswerSelectDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8653954345141213258L;
+	private static final long serialVersionUID = 5379197987852651687L;
 
 	/**
 	 * 选择元素的标签提示

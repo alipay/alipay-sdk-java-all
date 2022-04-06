@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TuitionBankAccountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5266566329699113179L;
+	private static final long serialVersionUID = 1354848582628246814L;
 
 	/**
 	 * 银行收款账号
