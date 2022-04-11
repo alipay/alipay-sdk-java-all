@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券核销相关规则
  *
  * @author auto create
- * @since 1.0, 2021-12-27 14:57:40
+ * @since 1.0, 2022-04-08 22:27:16
  */
 public class VoucherUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6574325812741691686L;
+	private static final long serialVersionUID = 4712429474781465722L;
 
 	/**
 	 * 折扣券详情 限制: 券类型voucher_type为折扣券DISCOUNT_VOUCHER时必传
@@ -42,6 +42,12 @@ public class VoucherUseRule extends AlipayObject {
 	 */
 	@ApiField("special_voucher")
 	private SpecialVoucher specialVoucher;
+
+	/**
+	 * 商家券可用范围
+	 */
+	@ApiField("voucher_available_scope")
+	private VoucherAvailableScope voucherAvailableScope;
 
 	/**
 	 * 日期区间内可以使用优惠
@@ -75,6 +81,13 @@ public class VoucherUseRule extends AlipayObject {
 	}
 	public void setSpecialVoucher(SpecialVoucher specialVoucher) {
 		this.specialVoucher = specialVoucher;
+	}
+
+	public VoucherAvailableScope getVoucherAvailableScope() {
+		return this.voucherAvailableScope;
+	}
+	public void setVoucherAvailableScope(VoucherAvailableScope voucherAvailableScope) {
+		this.voucherAvailableScope = voucherAvailableScope;
 	}
 
 	public VoucherValidPeriod getVoucherValidPeriod() {

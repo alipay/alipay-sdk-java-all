@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiServindustryExercisePlanSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7268967377476353271L;
+	private static final long serialVersionUID = 6824616844326231723L;
 
 	/**
 	 * 数据版本号。linux时间戳，到毫秒级别。如果同步数据的版本号小于口碑服务器已有数据的版本号，则会被丢弃。

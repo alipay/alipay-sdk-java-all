@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateTuitioncodeMonitorCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3843785161956356738L;
+	private static final long serialVersionUID = 2815467896939562454L;
 
 	/**
 	 * 银行类型(浙江网商：ZJWS)

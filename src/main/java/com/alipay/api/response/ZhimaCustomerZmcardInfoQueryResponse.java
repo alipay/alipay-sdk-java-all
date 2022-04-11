@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.zmcard.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-21 10:01:32
+ * @since 1.0, 2022-04-08 14:01:41
  */
 public class ZhimaCustomerZmcardInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6797394589114494148L;
+	private static final long serialVersionUID = 1671279241215157424L;
 
 	/** 
-	 * 被查看人的信用等级
+	 * 被查看人的信用等级，范围[信用极好，信用优秀，信用良好，信用中等，信用较差]
 	 */
 	@ApiField("credit_level")
 	private String creditLevel;
+
+	/** 
+	 * 用户的芝麻分分级编码。分值范围[A,B,C,D,E]
+	 */
+	@ApiField("level_code")
+	private String levelCode;
 
 	/** 
 	 * 芝麻证h5跳转链接，若被查看人已经授权，则会返回此url，点击后进入芝麻证h5页面
@@ -38,6 +44,13 @@ zhima.credit.payafteruse.creditagreement.sign
 	}
 	public String getCreditLevel( ) {
 		return this.creditLevel;
+	}
+
+	public void setLevelCode(String levelCode) {
+		this.levelCode = levelCode;
+	}
+	public String getLevelCode( ) {
+		return this.levelCode;
 	}
 
 	public void setSkipUrl(String skipUrl) {

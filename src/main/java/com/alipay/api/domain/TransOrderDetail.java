@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TransOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3118851538763727437L;
+	private static final long serialVersionUID = 3645589485192129532L;
 
 	/**
 	 * JSON格式，传递业务扩展参数，具体业务参数取值请以接入文档示例为准！

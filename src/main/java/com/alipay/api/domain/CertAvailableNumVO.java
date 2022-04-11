@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CertAvailableNumVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2792216882939688365L;
+	private static final long serialVersionUID = 3696875479418646629L;
 
 	/**
 	 * 凭证可用点数。

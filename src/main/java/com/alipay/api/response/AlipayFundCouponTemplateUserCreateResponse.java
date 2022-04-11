@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundCouponTemplateUserCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8858661717272194471L;
+	private static final long serialVersionUID = 3134297853661315296L;
 
 	/** 
 	 * 红包皮肤模板信息

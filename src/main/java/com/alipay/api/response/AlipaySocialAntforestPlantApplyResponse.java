@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntforestPlantApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4298842479314234488L;
+	private static final long serialVersionUID = 7624337338595681397L;
 
 	/** 
 	 * 时间戳，记录的是业务在蚂蚁森林完成时间，可保存用户核对

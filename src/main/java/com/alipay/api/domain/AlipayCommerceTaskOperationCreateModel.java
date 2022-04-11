@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建行业任务模版
  *
  * @author auto create
- * @since 1.0, 2022-03-02 14:18:53
+ * @since 1.0, 2022-04-08 10:58:15
  */
 public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5254448723511985716L;
+	private static final long serialVersionUID = 2832352773115933249L;
 
 	/**
 	 * 来源渠道
@@ -70,10 +70,22 @@ public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 	private String scene;
 
 	/**
+	 * 场景类型
+	 */
+	@ApiField("scene_type")
+	private String sceneType;
+
+	/**
 	 * 开始时间
 	 */
 	@ApiField("start_time")
 	private Date startTime;
+
+	/**
+	 * 启动类型
+	 */
+	@ApiField("startup_type")
+	private String startupType;
 
 	/**
 	 * 任务指标数值
@@ -162,11 +174,25 @@ public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 		this.scene = scene;
 	}
 
+	public String getSceneType() {
+		return this.sceneType;
+	}
+	public void setSceneType(String sceneType) {
+		this.sceneType = sceneType;
+	}
+
 	public Date getStartTime() {
 		return this.startTime;
 	}
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
+	}
+
+	public String getStartupType() {
+		return this.startupType;
+	}
+	public void setStartupType(String startupType) {
+		this.startupType = startupType;
 	}
 
 	public String getTarget() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringOrderPayCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6866924896255261486L;
+	private static final long serialVersionUID = 1718438749427298376L;
 
 	/**
 	 * 外部支付订单号,唯一标识本次支付的requestID

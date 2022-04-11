@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 到账播报
  *
  * @author auto create
- * @since 1.0, 2021-09-22 17:15:30
+ * @since 1.0, 2022-04-11 15:44:07
  */
 public class AlipayCommerceIotDeviceTradevoiceSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6359157161369725874L;
+	private static final long serialVersionUID = 3315363868846533148L;
 
 	/**
-	 * 播报的金额
+	 * 播报的金额，必须大于0
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -38,7 +38,8 @@ public class AlipayCommerceIotDeviceTradevoiceSendModel extends AlipayObject {
 	private String smid;
 
 	/**
-	 * 交易订单id
+	 * 交易订单id,生产环境必传。
+工厂验收设备的时候可不传，通过白名单管控。
 	 */
 	@ApiField("trade_id")
 	private String tradeId;

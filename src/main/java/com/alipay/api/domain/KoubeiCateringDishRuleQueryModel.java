@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringDishRuleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1525758841949586475L;
+	private static final long serialVersionUID = 6543314958627957268L;
 
 	/**
 	 * 规则的类型，枚举值如下：

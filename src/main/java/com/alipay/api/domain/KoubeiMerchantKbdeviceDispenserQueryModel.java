@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMerchantKbdeviceDispenserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6157777743793439271L;
+	private static final long serialVersionUID = 2184938727621111576L;
 
 	/**
 	 * 取餐柜的唯一设备ID。通过<a href="https://opendocs.alipay.com/apis/api_3/koubei.merchant.kbdevice.devices.batchquery"> koubei.merchant.kbdevice.devices.batchquery</a>(查询门店下设备列表) 接口查询获得。

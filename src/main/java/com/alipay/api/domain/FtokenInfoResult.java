@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FtokenInfoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8226379678828461696L;
+	private static final long serialVersionUID = 2412856854857996473L;
 
 	/**
 	 * 离线ftoken

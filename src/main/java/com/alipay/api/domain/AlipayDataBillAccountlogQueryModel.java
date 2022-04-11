@@ -7,17 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商家账户账务明细查询
  *
  * @author auto create
- * @since 1.0, 2022-03-15 09:11:44
+ * @since 1.0, 2022-04-07 17:19:05
  */
 public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3273847111495782159L;
+	private static final long serialVersionUID = 3728941234473688671L;
+
+	/**
+	 * 协议授权码，特殊场景下使用
+	 */
+	@ApiField("agreement_no")
+	private String agreementNo;
+
+	/**
+	 * 协议产品码。特殊场景下使用
+	 */
+	@ApiField("agreement_product_code")
+	private String agreementProductCode;
 
 	/**
 	 * 支付宝订单号，通过支付宝订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
 	 */
 	@ApiField("alipay_order_no")
 	private String alipayOrderNo;
+
+	/**
+	 * 指定用户做账单查询
+	 */
+	@ApiField("bill_user_id")
+	private String billUserId;
 
 	/**
 	 * 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间
@@ -49,11 +67,38 @@ public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 	@ApiField("start_time")
 	private String startTime;
 
+	/**
+	 * 账务的类型代码，特殊场景下使用
+	 */
+	@ApiField("trans_code")
+	private String transCode;
+
+	public String getAgreementNo() {
+		return this.agreementNo;
+	}
+	public void setAgreementNo(String agreementNo) {
+		this.agreementNo = agreementNo;
+	}
+
+	public String getAgreementProductCode() {
+		return this.agreementProductCode;
+	}
+	public void setAgreementProductCode(String agreementProductCode) {
+		this.agreementProductCode = agreementProductCode;
+	}
+
 	public String getAlipayOrderNo() {
 		return this.alipayOrderNo;
 	}
 	public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
+	}
+
+	public String getBillUserId() {
+		return this.billUserId;
+	}
+	public void setBillUserId(String billUserId) {
+		this.billUserId = billUserId;
 	}
 
 	public String getEndTime() {
@@ -89,6 +134,13 @@ public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 	}
 	public void setStartTime(String startTime) {
 		this.startTime = startTime;
+	}
+
+	public String getTransCode() {
+		return this.transCode;
+	}
+	public void setTransCode(String transCode) {
+		this.transCode = transCode;
 	}
 
 }

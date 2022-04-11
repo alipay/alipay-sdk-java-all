@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8376791888174914121L;
+	private static final long serialVersionUID = 3874685777668696768L;
 
 	/**
 	 * 表示接口查询门店的业务渠道限制：ALL、 POS、不传。不传代表只查询普通门店，传入POS代表只查询简易门店，传入ALL代表查询普通门店和简易门店。

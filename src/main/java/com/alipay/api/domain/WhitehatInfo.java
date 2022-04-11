@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WhitehatInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3414897967425863226L;
+	private static final long serialVersionUID = 7359566259497277339L;
 
 	/**
 	 * 当前有效的安全币奖励

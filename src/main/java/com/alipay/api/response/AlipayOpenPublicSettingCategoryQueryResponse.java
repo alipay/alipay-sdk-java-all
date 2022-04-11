@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicSettingCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7836721642591498179L;
+	private static final long serialVersionUID = 6763327611124568642L;
 
 	/** 
 	 * 已设置的一级行业分类名称。

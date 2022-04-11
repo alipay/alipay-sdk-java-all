@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SyncVoiceVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6866752341329452843L;
+	private static final long serialVersionUID = 3274597984558412554L;
 
 	/**
 	 * 播报的金额

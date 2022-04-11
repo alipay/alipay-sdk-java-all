@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询舆情信息
  *
  * @author auto create
- * @since 1.0, 2021-12-22 17:28:08
+ * @since 1.0, 2022-04-07 17:13:23
  */
 public class ZhimaCreditEpYuqingBrmQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2493911613625467872L;
+	private static final long serialVersionUID = 4437711971298866742L;
 
 	/**
 	 * Unix 时间戳。查询起始时间（含 begin），精确到秒

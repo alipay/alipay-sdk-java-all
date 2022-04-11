@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推荐上下文
  *
  * @author auto create
- * @since 1.0, 2022-03-17 19:22:17
+ * @since 1.0, 2022-04-07 19:43:44
  */
 public class ApeRecContext extends AlipayObject {
 
-	private static final long serialVersionUID = 1376338451867753419L;
+	private static final long serialVersionUID = 6469377775132143248L;
 
 	/**
 	 * 用户当前城市编码
@@ -24,6 +24,12 @@ public class ApeRecContext extends AlipayObject {
 	 */
 	@ApiField("client_env")
 	private String clientEnv;
+
+	/**
+	 * 商品详情页当前商品的id，用于商品详情页的相关推荐（猜你喜欢）场景。
+	 */
+	@ApiField("current_item_id")
+	private String currentItemId;
 
 	/**
 	 * 用户设备id
@@ -55,6 +61,13 @@ public class ApeRecContext extends AlipayObject {
 	}
 	public void setClientEnv(String clientEnv) {
 		this.clientEnv = clientEnv;
+	}
+
+	public String getCurrentItemId() {
+		return this.currentItemId;
+	}
+	public void setCurrentItemId(String currentItemId) {
+		this.currentItemId = currentItemId;
 	}
 
 	public String getDeviceId() {

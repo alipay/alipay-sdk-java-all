@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构向支付宝发送出租车司机信息
  *
  * @author auto create
- * @since 1.0, 2020-02-26 14:20:51
+ * @since 1.0, 2022-04-07 21:47:02
  */
 public class AlipayCommerceTransportTaxiDriverSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5195723755362573344L;
+	private static final long serialVersionUID = 2597723842234975235L;
 
 	/**
 	 * 支付宝账号

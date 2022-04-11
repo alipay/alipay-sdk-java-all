@@ -5,6 +5,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.DepositBackInfo;
+import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.RefundRoyaltyResult;
 
@@ -14,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-11 20:45:37
+ * @since 1.0, 2022-04-10 15:16:45
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3538135488687418762L;
+	private static final long serialVersionUID = 6438468236442921598L;
 
 	/** 
 	 * 银行卡冲退信息。
@@ -26,6 +27,12 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("deposit_back_info")
 	private DepositBackInfo depositBackInfo;
+
+	/** 
+	 * 因公付退款信息，只有入参的query_options中指定enterprise_pay_info时才返回该字段信息
+	 */
+	@ApiField("enterprise_pay_info")
+	private EnterprisePayInfo enterprisePayInfo;
 
 	/** 
 	 * 退款失败错误码。只在使用异步退款接口情况下才会返回该字段
@@ -164,6 +171,13 @@ REFUND_SUCCESS 退款处理成功；
 	}
 	public DepositBackInfo getDepositBackInfo( ) {
 		return this.depositBackInfo;
+	}
+
+	public void setEnterprisePayInfo(EnterprisePayInfo enterprisePayInfo) {
+		this.enterprisePayInfo = enterprisePayInfo;
+	}
+	public EnterprisePayInfo getEnterprisePayInfo( ) {
+		return this.enterprisePayInfo;
 	}
 
 	public void setErrorCode(String errorCode) {

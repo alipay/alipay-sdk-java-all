@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻活动预创单
  *
  * @author auto create
- * @since 1.0, 2022-03-02 14:19:01
+ * @since 1.0, 2022-04-08 10:58:08
  */
 public class AlipayCommerceZhimaPreorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3737966929653234986L;
+	private static final long serialVersionUID = 3127558773622834639L;
 
 	/**
 	 * alipay_store_id
@@ -50,16 +52,28 @@ public class AlipayCommerceZhimaPreorderCreateModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
+	 * 任务开始时间
+	 */
+	@ApiField("start_time")
+	private Date startTime;
+
+	/**
 	 * storeId
 	 */
 	@ApiField("store_id")
 	private String storeId;
 
 	/**
-	 * 芝麻GO活动模版id
+	 * 外部任务模版id，如芝麻GO活动模版id
 	 */
 	@ApiField("template_id")
 	private String templateId;
+
+	/**
+	 * 外部模版类型
+	 */
+	@ApiField("template_type")
+	private String templateType;
 
 	/**
 	 * 超时关单时间 默认1H。1m～15d。m表示分钟，h表示小时，d表示天。该参数数值不接受小数点， 如1.5h，可转换为90m 签约超时关单时间依赖这个时间
@@ -109,6 +123,13 @@ public class AlipayCommerceZhimaPreorderCreateModel extends AlipayObject {
 		this.outBizNo = outBizNo;
 	}
 
+	public Date getStartTime() {
+		return this.startTime;
+	}
+	public void setStartTime(Date startTime) {
+		this.startTime = startTime;
+	}
+
 	public String getStoreId() {
 		return this.storeId;
 	}
@@ -121,6 +142,13 @@ public class AlipayCommerceZhimaPreorderCreateModel extends AlipayObject {
 	}
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
+	}
+
+	public String getTemplateType() {
+		return this.templateType;
+	}
+	public void setTemplateType(String templateType) {
+		this.templateType = templateType;
 	}
 
 	public String getTimeoutExpress() {

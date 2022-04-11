@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandIsvDeviceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2649814258133662179L;
+	private static final long serialVersionUID = 4189484499982581717L;
 
 	/**
 	 * 机具使用的业务场景：目前只支持团餐：CATERING_DEVICE

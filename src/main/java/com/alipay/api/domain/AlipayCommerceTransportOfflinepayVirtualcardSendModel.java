@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportOfflinepayVirtualcardSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5762244138597693118L;
+	private static final long serialVersionUID = 1484796469356366581L;
 
 	/**
 	 * 虚拟卡信息同步动作

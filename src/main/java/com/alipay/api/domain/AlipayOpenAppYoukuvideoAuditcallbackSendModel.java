@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppYoukuvideoAuditcallbackSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7747812955539484266L;
+	private static final long serialVersionUID = 5487421819398898769L;
 
 	/**
 	 * 审核后状态：allowed 审核通过，blocked 屏蔽驳回， censoring 审核中

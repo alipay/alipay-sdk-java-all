@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankMarketingMcaplatformLevelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6896568329191355165L;
+	private static final long serialVersionUID = 2579758378983258429L;
 
 	/**
 	 * biz_date，不唯一，绿色经营外部传入业务时间，无枚举值，可为空

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantOrderCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6392644779745279782L;
+	private static final long serialVersionUID = 4735652341667219226L;
 
 	/**
 	 * 不同的业务类型有不同的状态推进逻辑，同时对于支付的驱动有不同的处理方法。如阿里云的现金支付不需要订单驱动，阿里云的纯积分支付需要等待代扣成功消息才算支付成功。

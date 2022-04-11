@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建签约吱口令
  *
  * @author auto create
- * @since 1.0, 2022-03-08 14:55:29
+ * @since 1.0, 2022-04-07 17:19:51
  */
 public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7513314193823521696L;
+	private static final long serialVersionUID = 8263862644321282117L;
 
 	/**
 	 * 签约完成之后用户点击签约完成的回跳url，自定义提供，只支持支付宝端内的小程序跳转和H5跳转，不支持APP间跳转。入无特殊需要，可忽略此字段。
@@ -32,7 +32,7 @@ public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 	private String contractorCode;
 
 	/**
-	 * 用户的签约支付宝账号，默认必输，限定只有登录号匹配的支付宝用户才能进行签约。
+	 * 注意：过时字段，建议使用identity+identity_type字段。用户的签约支付宝账号，指定只有登录号匹配的支付宝用户才能进行签约。
 	 */
 	@ApiField("employee_alipay_logon_id")
 	private String employeeAlipayLogonId;
@@ -62,13 +62,35 @@ public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 	private String identificationInBelongingEmployer;
 
 	/**
+	 * 参与方的唯一标识，用于指定签约的支付宝账户，默认必输。如提供，则参与方的标识类型（identity_type)也不能为空。
+	 */
+	@ApiField("identity")
+	private String identity;
+
+	/**
+	 * 参与方的标识类型，默认必输。值为有限枚举，用于指定identity字段类型，如提供，参与方的唯一标识（identity)也不能为空，目前支持如下类型：
+1.ALIPAY_ACCOUNT_NO（支付宝账号）
+2.ALIPAY_USER_ID（支付宝ID）
+	 */
+	@ApiField("identity_type")
+	private String identityType;
+
+	/**
 	 * 产品码，固定值：TAX_BILL_PLATFORM
 	 */
 	@ApiField("product_code")
 	private String productCode;
 
 	/**
-	 * 税优模式，有限枚，实际传递的值依赖具体业务情况。1.TEMPORARY_TAX_REGISTRATION（临时税务登记 ）2. NATURAL_PERSON_LEVIED（自然人代征）
+	 * 签约码类型，有限枚举，指定sign_code的类型，默认为SHARE_CODE，支持：
+1.SHARE_CODE    （吱口令）
+2.SHORT_URL   （短链接）
+	 */
+	@ApiField("sign_code_type")
+	private String signCodeType;
+
+	/**
+	 * 税优模式，有限枚举，实际传递的值依赖具体业务情况。1.TEMPORARY_TAX_REGISTRATION（临时税务登记 ）2. NATURAL_PERSON_LEVIED（自然人代征）
 	 */
 	@ApiField("tax_optimization_mode")
 	private String taxOptimizationMode;
@@ -129,11 +151,32 @@ public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 		this.identificationInBelongingEmployer = identificationInBelongingEmployer;
 	}
 
+	public String getIdentity() {
+		return this.identity;
+	}
+	public void setIdentity(String identity) {
+		this.identity = identity;
+	}
+
+	public String getIdentityType() {
+		return this.identityType;
+	}
+	public void setIdentityType(String identityType) {
+		this.identityType = identityType;
+	}
+
 	public String getProductCode() {
 		return this.productCode;
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSignCodeType() {
+		return this.signCodeType;
+	}
+	public void setSignCodeType(String signCodeType) {
+		this.signCodeType = signCodeType;
 	}
 
 	public String getTaxOptimizationMode() {

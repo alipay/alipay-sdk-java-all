@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.yuqing.brm.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-23 12:02:56
+ * @since 1.0, 2022-04-07 17:16:44
  */
 public class ZhimaCreditEpYuqingBrmQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4432778523231691969L;
+	private static final long serialVersionUID = 6764521394728727968L;
 
 	/** 
 	 * 实体聚合结果

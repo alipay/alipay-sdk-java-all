@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class HbProductOrderQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8492752388522236722L;
+	private static final long serialVersionUID = 5255171893319441168L;
 
 	/**
 	 * 错误码

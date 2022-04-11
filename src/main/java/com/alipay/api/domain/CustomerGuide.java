@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户引导配置
  *
  * @author auto create
- * @since 1.0, 2022-02-25 10:44:42
+ * @since 1.0, 2022-04-09 19:45:39
  */
 public class CustomerGuide extends AlipayObject {
 
-	private static final long serialVersionUID = 2446511967151812244L;
+	private static final long serialVersionUID = 1573682319747261789L;
 
 	/**
 	 * 券可用的小程序appId，卡包详情页可跳转到该appId 限制： 该appId归属的pid必须和当前商户保持一致。 目前mini_app_id、shop_ids、real_shop_ids必须三选一。
@@ -81,6 +81,20 @@ public class CustomerGuide extends AlipayObject {
 	@ApiField("string")
 	private List<String> storeIds;
 
+	/**
+	 * 券发放引导信息。
+说明：
+当voucher_type=EXCHANGE_VOUCHER时，该字段必须填写。
+	 */
+	@ApiField("voucher_send_guide")
+	private VoucherSendGuide voucherSendGuide;
+
+	/**
+	 * 券核销引导
+	 */
+	@ApiField("voucher_use_guide")
+	private VoucherUseGuide voucherUseGuide;
+
 	public String getMiniAppId() {
 		return this.miniAppId;
 	}
@@ -121,6 +135,20 @@ public class CustomerGuide extends AlipayObject {
 	}
 	public void setStoreIds(List<String> storeIds) {
 		this.storeIds = storeIds;
+	}
+
+	public VoucherSendGuide getVoucherSendGuide() {
+		return this.voucherSendGuide;
+	}
+	public void setVoucherSendGuide(VoucherSendGuide voucherSendGuide) {
+		this.voucherSendGuide = voucherSendGuide;
+	}
+
+	public VoucherUseGuide getVoucherUseGuide() {
+		return this.voucherUseGuide;
+	}
+	public void setVoucherUseGuide(VoucherUseGuide voucherUseGuide) {
+		this.voucherUseGuide = voucherUseGuide;
 	}
 
 }

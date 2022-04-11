@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBusinessOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7419524682933924392L;
+	private static final long serialVersionUID = 4463973895252542178L;
 
 	/**
 	 * 买家身份信息。注：本接口只支持传入type为USER_ID，issuer为ALIPAY

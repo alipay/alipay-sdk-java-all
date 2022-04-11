@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.taxbill.signcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-08 14:55:29
+ * @since 1.0, 2022-04-07 20:31:43
  */
 public class AlipayFundTaxbillSigncodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5529349595245179195L;
+	private static final long serialVersionUID = 8249221511283371775L;
 
 	/** 
 	 * 场景码
@@ -27,10 +27,17 @@ public class AlipayFundTaxbillSigncodeCreateResponse extends AlipayResponse {
 	private String productCode;
 
 	/** 
-	 * 签约吱口令，请求成功响应时存在
+	 * 签约吱口令/签约短链接，请求成功响应时存在
 	 */
 	@ApiField("sign_code")
 	private String signCode;
+
+	/** 
+	 * 签约码类型，请求成功响应时存在，标明当前sign_code的类型，默认为SHARE_CODE。
+1. SHARE_CODE（吱口令） 2.SHORT_URL（短链接）
+	 */
+	@ApiField("sign_code_type")
+	private String signCodeType;
 
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
@@ -51,6 +58,13 @@ public class AlipayFundTaxbillSigncodeCreateResponse extends AlipayResponse {
 	}
 	public String getSignCode( ) {
 		return this.signCode;
+	}
+
+	public void setSignCodeType(String signCodeType) {
+		this.signCodeType = signCodeType;
+	}
+	public String getSignCodeType( ) {
+		return this.signCodeType;
 	}
 
 }

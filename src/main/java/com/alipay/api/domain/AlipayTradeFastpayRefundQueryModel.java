@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户可使用该接口查询自已通过alipay.trade.refund提交的退款请求是否执行成功。
  *
  * @author auto create
- * @since 1.0, 2022-03-11 20:45:37
+ * @since 1.0, 2022-04-10 15:06:12
  */
 public class AlipayTradeFastpayRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1676897333576946232L;
+	private static final long serialVersionUID = 7431993216671399996L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用；
