@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.deductresult.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-08 14:47:15
+ * @since 1.0, 2022-04-15 11:11:42
  */
 public class AlipayEbppInstserviceDeductresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1572487227473171649L;
+	private static final long serialVersionUID = 5268378797231553868L;
+
+	/** 
+	 * 单位：元
+	 */
+	@ApiField("deduct_amount")
+	private String deductAmount;
 
 	/** 
 	 * 支付宝流水号
@@ -39,12 +45,25 @@ public class AlipayEbppInstserviceDeductresultQueryResponse extends AlipayRespon
 	private String outOrderNo;
 
 	/** 
+	 * 时间格式：yyyyMMddHHmmss
+	 */
+	@ApiField("pay_time")
+	private String payTime;
+
+	/** 
 	 * 0:未知状态
 1:支付成功
 2:支付失败
 	 */
 	@ApiField("status")
 	private String status;
+
+	public void setDeductAmount(String deductAmount) {
+		this.deductAmount = deductAmount;
+	}
+	public String getDeductAmount( ) {
+		return this.deductAmount;
+	}
 
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
@@ -72,6 +91,13 @@ public class AlipayEbppInstserviceDeductresultQueryResponse extends AlipayRespon
 	}
 	public String getOutOrderNo( ) {
 		return this.outOrderNo;
+	}
+
+	public void setPayTime(String payTime) {
+		this.payTime = payTime;
+	}
+	public String getPayTime( ) {
+		return this.payTime;
 	}
 
 	public void setStatus(String status) {

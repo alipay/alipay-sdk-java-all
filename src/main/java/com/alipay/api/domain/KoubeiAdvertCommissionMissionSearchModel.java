@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 广告标的分页搜索接口
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:12
+ * @since 1.0, 2022-04-15 10:04:38
  */
 public class KoubeiAdvertCommissionMissionSearchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4396312251717966876L;
+	private static final long serialVersionUID = 4691967475665444938L;
 
 	/**
 	 * 分佣规则类型(枚举值key对应于请求对象中复杂类型的key)

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.task.template.publish request
  * 
  * @author auto create
- * @since 1.0, 2022-03-31 14:26:39
+ * @since 1.0, 2022-04-11 19:43:24
  */
 public class AlipayCommerceTaskTemplatePublishRequest implements AlipayRequest<AlipayCommerceTaskTemplatePublishResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加广告的渠道关系接口
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:28
+ * @since 1.0, 2022-04-15 09:59:19
  */
 public class KoubeiAdvertCommissionAdvchannelBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3465525893544938826L;
+	private static final long serialVersionUID = 1511736199442852877L;
 
 	/**
 	 * 广告id

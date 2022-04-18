@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 任务事件规则创建
  *
  * @author auto create
- * @since 1.0, 2022-03-31 14:23:36
+ * @since 1.0, 2022-04-11 19:43:11
  */
 public class AlipayCommerceTaskEventCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8717796619895357921L;
+	private static final long serialVersionUID = 4629277857756517278L;
 
 	/**
 	 * 规则事件

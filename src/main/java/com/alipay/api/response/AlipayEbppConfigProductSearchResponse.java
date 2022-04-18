@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppConfigProductSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4148135224641382793L;
+	private static final long serialVersionUID = 1534781189396745433L;
 
 	/** 
 	 * 出账机构简称例如杭州电力的简称为HZELECTRIC

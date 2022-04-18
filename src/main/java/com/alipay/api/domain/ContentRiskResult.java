@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 审核内容风险结果
  *
  * @author auto create
- * @since 1.0, 2022-03-14 16:07:53
+ * @since 1.0, 2022-04-13 14:02:25
  */
 public class ContentRiskResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3812212115683762254L;
+	private static final long serialVersionUID = 3617488361659239457L;
 
 	/**
 	 * 风险详细信息
@@ -22,6 +22,13 @@ public class ContentRiskResult extends AlipayObject {
 	@ApiListField("content_risk_details")
 	@ApiField("content_risk_detail")
 	private List<ContentRiskDetail> contentRiskDetails;
+
+	/**
+	 * 以文件为主维度的风险信息聚合结果
+	 */
+	@ApiListField("contents")
+	@ApiField("content_risks")
+	private List<ContentRisks> contents;
 
 	/**
 	 * 审核状态：枚举值，唯一 。
@@ -43,6 +50,13 @@ ROBOT_FAIL：机审失败
 	}
 	public void setContentRiskDetails(List<ContentRiskDetail> contentRiskDetails) {
 		this.contentRiskDetails = contentRiskDetails;
+	}
+
+	public List<ContentRisks> getContents() {
+		return this.contents;
+	}
+	public void setContents(List<ContentRisks> contents) {
+		this.contents = contents;
 	}
 
 	public String getResult() {

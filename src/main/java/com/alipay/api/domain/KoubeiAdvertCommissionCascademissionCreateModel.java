@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑客级联分佣任务创建
  *
  * @author auto create
- * @since 1.0, 2017-03-03 10:40:39
+ * @since 1.0, 2022-04-15 09:58:52
  */
 public class KoubeiAdvertCommissionCascademissionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8437494541269672815L;
+	private static final long serialVersionUID = 6114968728634543534L;
 
 	/**
 	 * 子任务的分佣配置

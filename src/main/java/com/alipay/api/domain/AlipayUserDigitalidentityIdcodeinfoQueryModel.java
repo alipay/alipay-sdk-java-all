@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDigitalidentityIdcodeinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2247249342491486432L;
+	private static final long serialVersionUID = 5485446916796597287L;
 
 	/**
 	 * 扫码用户二维码后解析出的码串值

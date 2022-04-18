@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.advert.commission.cascademission.create request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:13:25
+ * @since 1.0, 2022-04-15 09:58:52
  */
 public class KoubeiAdvertCommissionCascademissionCreateRequest implements AlipayRequest<KoubeiAdvertCommissionCascademissionCreateResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.commission.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-04-15 10:03:32
  */
 public class KoubeiAdvertCommissionBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8825992669179375885L;
+	private static final long serialVersionUID = 7198567348472684167L;
 
 	/** 
 	 * 账期(格式为yyyyMM)

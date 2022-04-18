@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询驿站宝案件信息
  *
  * @author auto create
- * @since 1.0, 2022-03-31 11:35:51
+ * @since 1.0, 2022-04-14 12:17:28
  */
 public class AnttechBlockchainDefinInsuranceReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2727351698557499527L;
+	private static final long serialVersionUID = 5873395155264584111L;
 
 	/**
 	 * 统一客户平台的业务线编码

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * koubei.advert.commission.promotedata.itemsummary
  *
  * @author auto create
- * @since 1.0, 2017-09-29 15:05:44
+ * @since 1.0, 2022-04-15 10:01:17
  */
 public class KoubeiAdvertDataPromotedetailBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7758939667488895483L;
+	private static final long serialVersionUID = 7666889566533363156L;
 
 	/**
 	 * 结束时间

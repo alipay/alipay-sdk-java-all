@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DishRecommend extends AlipayObject {
 
-	private static final long serialVersionUID = 2119446936178537511L;
+	private static final long serialVersionUID = 4836569994182562912L;
 
 	/**
 	 * 购买可能性/商品热度得分

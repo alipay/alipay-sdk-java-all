@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceCityfacilitatorDepositCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1352716549212422224L;
+	private static final long serialVersionUID = 1259559528412642736L;
 
 	
 

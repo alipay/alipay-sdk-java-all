@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.certification.apply request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:45:59
+ * @since 1.0, 2022-04-15 12:00:24
  */
 public class ZhimaCreditEpCertificationApplyRequest implements AlipayRequest<ZhimaCreditEpCertificationApplyResponse> {
 

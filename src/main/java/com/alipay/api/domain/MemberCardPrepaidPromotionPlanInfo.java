@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡的储值优惠方案信息
  *
  * @author auto create
- * @since 1.0, 2022-03-23 18:50:18
+ * @since 1.0, 2022-04-11 19:30:39
  */
 public class MemberCardPrepaidPromotionPlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5518928611338386212L;
+	private static final long serialVersionUID = 2554977385347857431L;
 
 	/**
 	 * 储值方案权益金部分
 	 */
 	@ApiField("benefit")
 	private String benefit;
+
+	/**
+	 * 储值方案赠送优惠券信息
+	 */
+	@ApiField("benefit_voucher_list")
+	private MemberCardVoucherBenefitInfo benefitVoucherList;
 
 	/**
 	 * 创建时间
@@ -68,6 +74,13 @@ public class MemberCardPrepaidPromotionPlanInfo extends AlipayObject {
 	}
 	public void setBenefit(String benefit) {
 		this.benefit = benefit;
+	}
+
+	public MemberCardVoucherBenefitInfo getBenefitVoucherList() {
+		return this.benefitVoucherList;
+	}
+	public void setBenefitVoucherList(MemberCardVoucherBenefitInfo benefitVoucherList) {
+		this.benefitVoucherList = benefitVoucherList;
 	}
 
 	public Date getCreateTime() {

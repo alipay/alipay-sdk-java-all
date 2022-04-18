@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询广告的推广信息
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:52
+ * @since 1.0, 2022-04-15 10:00:43
  */
 public class KoubeiAdvertCommissionAdvchannelBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5694978569543676375L;
+	private static final long serialVersionUID = 2266814519227214539L;
 
 	/**
 	 * 广告ID

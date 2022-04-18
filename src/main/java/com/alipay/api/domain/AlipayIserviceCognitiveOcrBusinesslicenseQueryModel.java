@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCognitiveOcrBusinesslicenseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4342473283831545582L;
+	private static final long serialVersionUID = 7148471172263658915L;
 
 	/**
 	 * 营业执照图片base64加密后内容

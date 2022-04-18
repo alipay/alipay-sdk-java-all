@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.DataFile;
 
 import com.alipay.api.AlipayResponse;
 
@@ -10,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlink.collect.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-02 14:37:17
+ * @since 1.0, 2022-04-14 15:41:45
  */
 public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2779739333232964554L;
+	private static final long serialVersionUID = 3668354976191189468L;
 
 	/** 
 	 * INIT表示任务还在初始化状态，COLLECT表示任务在进行中，END状态表示任务处理完成。
@@ -48,6 +49,13 @@ public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("file_num")
 	private Long fileNum;
+
+	/** 
+	 * 数据返回结果，包含数据类型和对应的访问地址
+	 */
+	@ApiListField("files")
+	@ApiField("data_file")
+	private List<DataFile> files;
 
 	/** 
 	 * 商户单号。与传入值一致
@@ -94,6 +102,13 @@ public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse 
 	}
 	public Long getFileNum( ) {
 		return this.fileNum;
+	}
+
+	public void setFiles(List<DataFile> files) {
+		this.files = files;
+	}
+	public List<DataFile> getFiles( ) {
+		return this.files;
 	}
 
 	public void setMerchantRequestId(String merchantRequestId) {

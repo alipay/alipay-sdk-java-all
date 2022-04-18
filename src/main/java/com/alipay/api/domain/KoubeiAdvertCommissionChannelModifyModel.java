@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑客渠道管理接口
  *
  * @author auto create
- * @since 1.0, 2017-03-03 10:40:56
+ * @since 1.0, 2022-04-15 10:01:50
  */
 public class KoubeiAdvertCommissionChannelModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4142146789628867715L;
+	private static final long serialVersionUID = 2452818857931573787L;
 
 	/**
 	 * 修改渠道信息(新增、删除、修改渠道不可同时为空)

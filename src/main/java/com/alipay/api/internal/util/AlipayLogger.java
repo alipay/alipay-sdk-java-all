@@ -127,16 +127,12 @@ public class AlipayLogger {
         df.setTimeZone(TimeZone.getTimeZone(AlipayConstants.DATE_TIMEZONE));
         String sdkName = AlipayConstants.SDK_VERSION;
         String urlStr = null;
+        //rspCode不再获取状态码，原因：https://baiyan.alipay.com/task/173959?bqlKey=8837cee
         String rspCode = "";
         if (conn != null) {
-            try {
-                urlStr = conn.getURL().toString();
-                rspCode = "HTTP_ERROR_" + conn.getResponseCode();
-            } catch (IOException ioe) {
-            }
+            urlStr = conn.getURL().toString();
         } else {
             urlStr = url;
-            rspCode = "";
         }
         StringBuilder sb = new StringBuilder();
         sb.append(df.format(new Date()));// 时间

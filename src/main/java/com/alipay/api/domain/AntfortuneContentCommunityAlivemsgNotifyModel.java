@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通知蚂蚁域直播相关消息变更
  *
  * @author auto create
- * @since 1.0, 2021-03-23 19:45:43
+ * @since 1.0, 2022-04-14 10:38:57
  */
 public class AntfortuneContentCommunityAlivemsgNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8355658312484984422L;
+	private static final long serialVersionUID = 3683395614971151676L;
 
 	/**
 	 * 淘宝直播id

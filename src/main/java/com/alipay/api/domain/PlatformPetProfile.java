@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 平台宠物档案
  *
  * @author auto create
- * @since 1.0, 2022-03-28 16:55:12
+ * @since 1.0, 2022-04-12 11:43:24
  */
 public class PlatformPetProfile extends AlipayObject {
 
-	private static final long serialVersionUID = 5443435272346422559L;
+	private static final long serialVersionUID = 6218159735821564732L;
 
 	/**
 	 * 宠物生日，生日不能早于2000年，且不能晚于当天
@@ -34,6 +34,12 @@ public class PlatformPetProfile extends AlipayObject {
 	 */
 	@ApiField("nick")
 	private String nick;
+
+	/**
+	 * 宠物档案petid
+	 */
+	@ApiField("pet_id")
+	private String petId;
 
 	/**
 	 * 宠物照片列表
@@ -73,6 +79,13 @@ public class PlatformPetProfile extends AlipayObject {
 	}
 	public void setNick(String nick) {
 		this.nick = nick;
+	}
+
+	public String getPetId() {
+		return this.petId;
+	}
+	public void setPetId(String petId) {
+		this.petId = petId;
 	}
 
 	public List<PetPhoto> getPhotos() {

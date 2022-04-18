@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.taxi.orderprice.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-18 19:57:37
+ * @since 1.0, 2022-04-13 15:31:59
  */
 public class AlipayCommerceTransportTaxiOrderpriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5425577975873219744L;
+	private static final long serialVersionUID = 8186349182993381951L;
 
 	/** 
 	 * 调度费(单位:分)

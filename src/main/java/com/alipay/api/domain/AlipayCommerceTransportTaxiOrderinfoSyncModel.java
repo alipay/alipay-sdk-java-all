@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车订单信息同步
  *
  * @author auto create
- * @since 1.0, 2021-08-18 19:55:57
+ * @since 1.0, 2022-04-13 15:31:30
  */
 public class AlipayCommerceTransportTaxiOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1161281927958687226L;
+	private static final long serialVersionUID = 7447486759891779561L;
 
 	/**
 	 * 订单渠道类型

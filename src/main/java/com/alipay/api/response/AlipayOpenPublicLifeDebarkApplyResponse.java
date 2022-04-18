@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicLifeDebarkApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3641977453273371983L;
+	private static final long serialVersionUID = 6484335738213444552L;
 
 	/** 
 	 * 下架成功后返回的提示

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑客分佣账单查询接口
  *
  * @author auto create
- * @since 1.0, 2017-09-29 15:05:35
+ * @since 1.0, 2022-04-15 10:03:32
  */
 public class KoubeiAdvertCommissionBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7715783319943422639L;
+	private static final long serialVersionUID = 1512111323996983845L;
 
 	/**
 	 * 账期(格式为yyyyMM)

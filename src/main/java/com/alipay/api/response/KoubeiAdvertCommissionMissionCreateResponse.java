@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.commission.mission.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-04-15 10:03:00
  */
 public class KoubeiAdvertCommissionMissionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6411113787265319491L;
+	private static final long serialVersionUID = 8276976765757862373L;
 
 	/** 
 	 * 分佣任务ID，需要保存，后续任务管理以及任务认领都需要任务ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑客签约查询
  *
  * @author auto create
- * @since 1.0, 2017-02-10 14:26:07
+ * @since 1.0, 2022-04-15 10:06:10
  */
 public class KoubeiAdvertCommissionRoleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3338544532536622278L;
+	private static final long serialVersionUID = 5362319453561211225L;
 
 	/**
 	 * 角色code码，如果不提供该字段，则会遍历所有角色，并返回user_identify是否拥有，

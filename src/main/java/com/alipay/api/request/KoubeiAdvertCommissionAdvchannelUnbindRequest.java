@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.advert.commission.advchannel.unbind request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:13:09
+ * @since 1.0, 2022-04-15 09:59:07
  */
 public class KoubeiAdvertCommissionAdvchannelUnbindRequest implements AlipayRequest<KoubeiAdvertCommissionAdvchannelUnbindResponse> {
 

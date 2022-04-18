@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.balance.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-14 23:37:30
+ * @since 1.0, 2022-04-13 23:26:43
  */
 public class AlipayDataBillBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4766686221932771634L;
+	private static final long serialVersionUID = 8722918534886117469L;
 
 	/** 
 	 * 账户可用余额
@@ -25,6 +25,12 @@ public class AlipayDataBillBalanceQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("freeze_amount")
 	private String freezeAmount;
+
+	/** 
+	 * 待结算金额
+	 */
+	@ApiField("settle_amount")
+	private String settleAmount;
 
 	/** 
 	 * 支付宝账户余额
@@ -44,6 +50,13 @@ public class AlipayDataBillBalanceQueryResponse extends AlipayResponse {
 	}
 	public String getFreezeAmount( ) {
 		return this.freezeAmount;
+	}
+
+	public void setSettleAmount(String settleAmount) {
+		this.settleAmount = settleAmount;
+	}
+	public String getSettleAmount( ) {
+		return this.settleAmount;
 	}
 
 	public void setTotalAmount(String totalAmount) {

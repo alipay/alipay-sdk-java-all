@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.advert.commission.advert.purchase response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:56
+ * @since 1.0, 2022-04-15 10:00:02
  */
 public class KoubeiAdvertCommissionAdvertPurchaseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6119468771911955859L;
+	private static final long serialVersionUID = 1848791368883932769L;
 
 	/** 
 	 * 主键Code结果，采购请求是批量形式的，每个identify，对应一个处理结果

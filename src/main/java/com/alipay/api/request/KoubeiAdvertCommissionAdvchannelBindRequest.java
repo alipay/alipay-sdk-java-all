@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.advert.commission.advchannel.bind request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:12:52
+ * @since 1.0, 2022-04-15 09:59:19
  */
 public class KoubeiAdvertCommissionAdvchannelBindRequest implements AlipayRequest<KoubeiAdvertCommissionAdvchannelBindResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-31 17:33:22
+ * @since 1.0, 2022-04-11 20:46:43
  */
 public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1831853674439648549L;
+	private static final long serialVersionUID = 6781851924143173118L;
 
 	/** 
 	 * 该笔资金操作流水opertion_id对应的操作金额，单位为：元（人民币）
@@ -38,6 +38,12 @@ public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("credit_merchant_ext")
 	private String creditMerchantExt;
+
+	/** 
+	 * 因公付业务信息
+	 */
+	@ApiField("enterprise_pay_info")
+	private String enterprisePayInfo;
 
 	/** 
 	 * 商户请求创建预授权订单时传入的扩展参数，仅返回商户自定义的扩展信息（merchantExt）
@@ -226,6 +232,13 @@ CLOSED：关闭
 	}
 	public String getCreditMerchantExt( ) {
 		return this.creditMerchantExt;
+	}
+
+	public void setEnterprisePayInfo(String enterprisePayInfo) {
+		this.enterprisePayInfo = enterprisePayInfo;
+	}
+	public String getEnterprisePayInfo( ) {
+		return this.enterprisePayInfo;
 	}
 
 	public void setExtraParam(String extraParam) {

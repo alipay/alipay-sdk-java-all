@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑客分佣创建
  *
  * @author auto create
- * @since 1.0, 2017-04-11 14:04:51
+ * @since 1.0, 2022-04-15 10:03:00
  */
 public class KoubeiAdvertCommissionMissionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7479264881762576567L;
+	private static final long serialVersionUID = 6431847474127326588L;
 
 	/**
 	 * 条款分如下三种条款，同时“单品券”只能设置固定金额，“全场券”只能设置  比例的。

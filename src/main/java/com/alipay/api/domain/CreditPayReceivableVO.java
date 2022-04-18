@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付应收视图
  *
  * @author auto create
- * @since 1.0, 2022-01-13 17:15:39
+ * @since 1.0, 2022-04-11 20:46:30
  */
 public class CreditPayReceivableVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7776983725665379392L;
+	private static final long serialVersionUID = 5245258962473476437L;
 
 	/**
 	 * 应收结清时间
@@ -24,6 +24,12 @@ public class CreditPayReceivableVO extends AlipayObject {
 	 */
 	@ApiField("create_time")
 	private String createTime;
+
+	/**
+	 * 应收到期日
+	 */
+	@ApiField("due_date")
+	private String dueDate;
 
 	/**
 	 * 应收生效时间
@@ -104,11 +110,11 @@ public class CreditPayReceivableVO extends AlipayObject {
 	private CreditPayMoneyVO refundAmt;
 
 	/**
-	 * CREATE：创建
-VALID：生效
-CLEAR：结清
-CANCEL：取消
-TRANSFER：转移
+	 * WAIT_CONFIRM：待确认
+RECEIVABLE：已生效且存在未收金额
+DUE_RECEIVED：已全额到期自动收款
+FACTORING_RECEIVED：已全额提前收款
+UNVALID：失效
 	 */
 	@ApiField("status")
 	private String status;
@@ -137,6 +143,13 @@ TRANSFER：转移
 	}
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
+	}
+
+	public String getDueDate() {
+		return this.dueDate;
+	}
+	public void setDueDate(String dueDate) {
+		this.dueDate = dueDate;
 	}
 
 	public String getEffectiveDate() {

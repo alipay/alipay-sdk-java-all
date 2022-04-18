@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaytoolRequestDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3161459636224285128L;
+	private static final long serialVersionUID = 6378338661856744833L;
 
 	/**
 	 * 支付工具金额。单位为元，精确到小数点后两位，取值范围[0.01,100000000]

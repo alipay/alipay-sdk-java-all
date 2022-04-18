@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BoothContentInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8235958628664972744L;
+	private static final long serialVersionUID = 8334779664934236454L;
 
 	/**
 	 * 展台名称
