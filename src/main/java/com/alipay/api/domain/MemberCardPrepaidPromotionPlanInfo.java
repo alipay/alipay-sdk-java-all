@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡的储值优惠方案信息
  *
  * @author auto create
- * @since 1.0, 2022-04-11 19:30:39
+ * @since 1.0, 2022-04-19 21:01:57
  */
 public class MemberCardPrepaidPromotionPlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2554977385347857431L;
+	private static final long serialVersionUID = 6273946336719237984L;
 
 	/**
 	 * 储值方案权益金部分
@@ -56,6 +56,18 @@ public class MemberCardPrepaidPromotionPlanInfo extends AlipayObject {
 	 */
 	@ApiField("promotion_plan_id")
 	private String promotionPlanId;
+
+	/**
+	 * 充值方案总次数限制
+	 */
+	@ApiField("publish_total_num")
+	private Long publishTotalNum;
+
+	/**
+	 * 充值方案剩余次数
+	 */
+	@ApiField("publish_total_remain_num")
+	private String publishTotalRemainNum;
 
 	/**
 	 * 储值方案开始时间
@@ -116,6 +128,20 @@ public class MemberCardPrepaidPromotionPlanInfo extends AlipayObject {
 	}
 	public void setPromotionPlanId(String promotionPlanId) {
 		this.promotionPlanId = promotionPlanId;
+	}
+
+	public Long getPublishTotalNum() {
+		return this.publishTotalNum;
+	}
+	public void setPublishTotalNum(Long publishTotalNum) {
+		this.publishTotalNum = publishTotalNum;
+	}
+
+	public String getPublishTotalRemainNum() {
+		return this.publishTotalRemainNum;
+	}
+	public void setPublishTotalRemainNum(String publishTotalRemainNum) {
+		this.publishTotalRemainNum = publishTotalRemainNum;
 	}
 
 	public Date getStartTime() {

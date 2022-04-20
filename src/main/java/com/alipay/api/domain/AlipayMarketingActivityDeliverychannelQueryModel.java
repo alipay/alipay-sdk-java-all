@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可推广渠道
  *
  * @author auto create
- * @since 1.0, 2022-02-14 10:45:14
+ * @since 1.0, 2022-04-20 15:01:51
  */
 public class AlipayMarketingActivityDeliverychannelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5712829864843894518L;
+	private static final long serialVersionUID = 7591929174973675176L;
 
 	/**
 	 * 当前服务商所代理的商户信息.

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗金权益预算追加
  *
  * @author auto create
- * @since 1.0, 2021-12-20 20:45:45
+ * @since 1.0, 2022-04-19 17:50:31
  */
 public class AlipayPcreditHuabeiSceneprodBenefitAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6111252268149862927L;
+	private static final long serialVersionUID = 3511356812861434516L;
 
 	/**
 	 * 权益ID，创建权益时返回的ID

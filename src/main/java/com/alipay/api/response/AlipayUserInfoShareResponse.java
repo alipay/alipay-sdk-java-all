@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-02 11:44:20
+ * @since 1.0, 2022-04-20 17:17:06
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5255323941151812766L;
+	private static final long serialVersionUID = 2128444767827942572L;
 
 	/** 
 	 * 详细地址。
@@ -85,6 +85,12 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 	@ApiListField("deliver_addresses")
 	@ApiField("alipay_user_deliver_address")
 	private List<AlipayUserDeliverAddress> deliverAddresses;
+
+	/** 
+	 * 展示名称，用于展示和识别用户。返回的值是支付宝账户的可用外标之一，根据展示名称产品规则可能返回手机号/邮箱/支付宝号其中的一个。同一个账户在不同的时期返回的展示名称可能随规则变化而变化。
+	 */
+	@ApiField("display_name")
+	private String displayName;
 
 	/** 
 	 * 优先获取email登录名，如果不存在，则返回mobile登录名
@@ -453,6 +459,13 @@ W代表已注册，未激活的账户
 	}
 	public List<AlipayUserDeliverAddress> getDeliverAddresses( ) {
 		return this.deliverAddresses;
+	}
+
+	public void setDisplayName(String displayName) {
+		this.displayName = displayName;
+	}
+	public String getDisplayName( ) {
+		return this.displayName;
 	}
 
 	public void setEmail(String email) {

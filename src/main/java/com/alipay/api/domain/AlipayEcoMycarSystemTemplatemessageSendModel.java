@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 系统模板消息发送
  *
  * @author auto create
- * @since 1.0, 2022-04-13 09:33:10
+ * @since 1.0, 2022-04-19 16:19:03
  */
 public class AlipayEcoMycarSystemTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8681287949347665749L;
+	private static final long serialVersionUID = 2323771428679994348L;
 
 	/**
 	 * 消息类容
 	 */
 	@ApiField("msg_content")
 	private MsgContent msgContent;
+
+	/**
+	 * 消息动态信息,支持商户可透传自定义内容消息，当消息类型为VEHICLE_IOV_CONTROL，则可支持品牌名称
+	 */
+	@ApiListField("msg_dynamic_datas")
+	@ApiField("msg_dynamic_data")
+	private List<MsgDynamicData> msgDynamicDatas;
 
 	/**
 	 * 消息业务id,唯一标记一条消息信息
@@ -55,6 +65,13 @@ public class AlipayEcoMycarSystemTemplatemessageSendModel extends AlipayObject {
 	}
 	public void setMsgContent(MsgContent msgContent) {
 		this.msgContent = msgContent;
+	}
+
+	public List<MsgDynamicData> getMsgDynamicDatas() {
+		return this.msgDynamicDatas;
+	}
+	public void setMsgDynamicDatas(List<MsgDynamicData> msgDynamicDatas) {
+		this.msgDynamicDatas = msgDynamicDatas;
 	}
 
 	public String getMsgId() {

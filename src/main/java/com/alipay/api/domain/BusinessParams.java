@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务信息参数
  *
  * @author auto create
- * @since 1.0, 2022-04-07 17:43:42
+ * @since 1.0, 2022-04-19 23:35:02
  */
 public class BusinessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2112816334718152449L;
+	private static final long serialVersionUID = 6551128672474147555L;
 
 	/**
 	 * 实际订单时间，在乘车码场景，传入的是用户刷码乘车时间
@@ -30,6 +30,12 @@ public class BusinessParams extends AlipayObject {
 	 */
 	@ApiField("card_type")
 	private String cardType;
+
+	/**
+	 * 因公付业务信息
+	 */
+	@ApiField("enterprise_pay_info")
+	private String enterprisePayInfo;
 
 	/**
 	 * 商户传入的交易税费。需要落地风控使用
@@ -56,6 +62,13 @@ public class BusinessParams extends AlipayObject {
 	}
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
+	}
+
+	public String getEnterprisePayInfo() {
+		return this.enterprisePayInfo;
+	}
+	public void setEnterprisePayInfo(String enterprisePayInfo) {
+		this.enterprisePayInfo = enterprisePayInfo;
 	}
 
 	public String getGoodTaxes() {

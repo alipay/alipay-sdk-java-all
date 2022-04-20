@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询导购员的推广码
  *
  * @author auto create
- * @since 1.0, 2022-03-24 13:24:10
+ * @since 1.0, 2022-04-18 19:19:07
  */
 public class AlipayCommerceYuntaskGuidedcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4794273283469363417L;
+	private static final long serialVersionUID = 3439425435124215547L;
 
 	/**
 	 * 导购员ID

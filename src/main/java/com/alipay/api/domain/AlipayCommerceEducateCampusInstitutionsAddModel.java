@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商学校信息入驻
  *
  * @author auto create
- * @since 1.0, 2022-02-14 14:12:10
+ * @since 1.0, 2022-04-18 20:13:04
  */
 public class AlipayCommerceEducateCampusInstitutionsAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7587759359579594851L;
+	private static final long serialVersionUID = 4869733731572838841L;
 
 	/**
 	 * 事业单位法人证书或办学许可证的图片
@@ -44,11 +44,7 @@ KINDERGARTEN（幼儿园）
 PRIMARY_SCHOOL（小学） 
 MIDDLE_SCHOOL（初中） 
 HIGH_SCHOOL（高中）
-UNIVERSITY（大学） 
 SECONDARY_VOCATIONAL_SCHOOL（中职中专） 
-TRAINING_SCHOOL（培训机构） 
-HIGHER_VOCATIONAL_SCHOOL（高职高专） 
-ADULT_EDUCATION（成人教育、函授）等
 注意：如果学校兼有多种属性，可以连写用英文逗号拆分，如：MIDDLE_SCHOOL,HIGH_SCHOOL 代表兼有初中部和高中部；
 	 */
 	@ApiField("learning_stage")

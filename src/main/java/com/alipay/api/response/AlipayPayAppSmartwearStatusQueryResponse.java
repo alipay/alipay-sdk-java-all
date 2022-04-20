@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayAppSmartwearStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5247353456466217118L;
+	private static final long serialVersionUID = 6111686269134114896L;
 
 	/** 
 	 * 设备型号

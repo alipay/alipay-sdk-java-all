@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.merchant.activity.pause request
  * 
  * @author auto create
- * @since 1.0, 2021-07-05 15:35:22
+ * @since 1.0, 2022-04-20 15:17:43
  */
 public class AlipayPcreditHuabeiMerchantActivityPauseRequest implements AlipayRequest<AlipayPcreditHuabeiMerchantActivityPauseResponse> {
 

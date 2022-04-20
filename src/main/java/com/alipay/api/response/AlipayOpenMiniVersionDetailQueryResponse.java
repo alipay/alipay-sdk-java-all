@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.version.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 15:12:47
+ * @since 1.0, 2022-04-18 17:04:43
  */
 public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8751156487131789368L;
+	private static final long serialVersionUID = 6852767675435954773L;
 
 	/** 
 	 * 小程序应用描述
@@ -204,7 +204,7 @@ REJECT：驳回
 	private String serviceRegionType;
 
 	/** 
-	 * 小程序版本状态，INIT-开发中，AUDITING-审核中，WAIT_RELEASE-审核通过，AUDIT_REJECT-审核驳回，RELEASE-已上架，GRAY-灰度中，OFFLINE-下架
+	 * 小程序版本状态，INIT-开发中，AUDITING-审核中，WAIT_RELEASE-待上架，AUDIT_REJECT-审核驳回，RELEASE-已上架，GRAY-灰度中，OFFLINE-已下架，AUDIT_OFFLINE-已被强制下架
 	 */
 	@ApiField("status")
 	private String status;

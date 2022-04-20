@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MorphoMiniMeta extends AlipayObject {
 
-	private static final long serialVersionUID = 5453185622934981366L;
+	private static final long serialVersionUID = 2144221287129277491L;
 
 	/**
 	 * 小程序的名称

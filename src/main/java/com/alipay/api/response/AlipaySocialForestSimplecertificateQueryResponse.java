@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialForestSimplecertificateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7283719117862784989L;
+	private static final long serialVersionUID = 1391387486595637269L;
 
 	/** 
 	 * 证书ID

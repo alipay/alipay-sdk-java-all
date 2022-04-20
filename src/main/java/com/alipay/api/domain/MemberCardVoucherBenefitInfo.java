@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家会员卡券权益信息
  *
  * @author auto create
- * @since 1.0, 2022-03-25 13:48:32
+ * @since 1.0, 2022-04-19 21:04:33
  */
 public class MemberCardVoucherBenefitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7468549784511794518L;
+	private static final long serialVersionUID = 8272466461957892251L;
 
 	/**
 	 * 券权益奖励次数
@@ -24,6 +24,12 @@ public class MemberCardVoucherBenefitInfo extends AlipayObject {
 	 */
 	@ApiField("voucher_activity_id")
 	private String voucherActivityId;
+
+	/**
+	 * 券类型
+	 */
+	@ApiField("voucher_type")
+	private String voucherType;
 
 	/**
 	 * 商家券 MERCHANT_VOUCHER
@@ -44,6 +50,13 @@ public class MemberCardVoucherBenefitInfo extends AlipayObject {
 	}
 	public void setVoucherActivityId(String voucherActivityId) {
 		this.voucherActivityId = voucherActivityId;
+	}
+
+	public String getVoucherType() {
+		return this.voucherType;
+	}
+	public void setVoucherType(String voucherType) {
+		this.voucherType = voucherType;
 	}
 
 	public String getVouvherType() {

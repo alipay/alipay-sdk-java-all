@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8311278995956584147L;
+	private static final long serialVersionUID = 7471567797273273233L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -113,10 +113,8 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 	private String promoParams;
 
 	/**
-	 * 协议签约场景，商户和支付宝签约时确定，商户可咨询技术支持。
-当传入商户签约号external_agreement_no时，场景不能为默认值DEFAULT|DEFAULT。
-代扣产品常见场景值参见：  https://opendocs.alipay.com/open/20190319114403226822/signscene。
-
+	 * 协议签约场景，商户可根据 <a href="https://opendocs.alipay.com/open/20190319114403226822/signscene">代扣产品常见场景值</a> 选择符合自身的行业场景。
+说明：当传入商户签约号 external_agreement_no 时，本参数必填，不能为默认值 DEFAULT|DEFAULT。
 	 */
 	@ApiField("sign_scene")
 	private String signScene;

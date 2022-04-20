@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayAppSmartwearStatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2224233141543798682L;
+	private static final long serialVersionUID = 8611291781326218291L;
 
 	/**
 	 * 设备型号

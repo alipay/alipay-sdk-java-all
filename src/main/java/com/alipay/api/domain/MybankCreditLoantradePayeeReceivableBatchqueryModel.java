@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付收方应收账款查询
  *
  * @author auto create
- * @since 1.0, 2022-02-09 10:51:53
+ * @since 1.0, 2022-04-19 19:08:18
  */
 public class MybankCreditLoantradePayeeReceivableBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2293157742161512958L;
+	private static final long serialVersionUID = 6128631497752526541L;
 
 	/**
 	 * 业务场景，由网商端指定
@@ -50,6 +50,9 @@ public class MybankCreditLoantradePayeeReceivableBatchqueryModel extends AlipayO
 
 	/**
 	 * 查询状态列表，入参为空表示全部查询
+WAIT_CONFIRM：待确认
+RECEIVABLE：已生效且存在未收金额 DUE_RECEIVED：已全额到期自动收款 FACTORING_RECEIVED：已全额提前收款 
+UNVALID：失效
 	 */
 	@ApiListField("status_list")
 	@ApiField("string")

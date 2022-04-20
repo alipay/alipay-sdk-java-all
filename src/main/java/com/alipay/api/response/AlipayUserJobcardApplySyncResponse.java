@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserJobcardApplySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2282759615957813851L;
+	private static final long serialVersionUID = 3167623194125811856L;
 
 	/** 
 	 * 职位申请ID，由职位申请系统内部生成唯一序列号
