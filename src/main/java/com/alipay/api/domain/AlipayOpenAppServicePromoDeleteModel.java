@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务推广删除
  *
  * @author auto create
- * @since 1.0, 2021-10-22 14:22:29
+ * @since 1.0, 2022-04-21 14:44:19
  */
 public class AlipayOpenAppServicePromoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7257587254936681339L;
+	private static final long serialVersionUID = 2854383675213183811L;
 
 	/**
 	 * 操作类型。枚举值如下：

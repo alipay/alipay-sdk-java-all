@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KdsInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8237287189689889468L;
+	private static final long serialVersionUID = 3329896823947692211L;
 
 	/**
 	 * 是否删除 false删除，true删除

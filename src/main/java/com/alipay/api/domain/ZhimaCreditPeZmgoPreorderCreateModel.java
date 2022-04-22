@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO签约预创单
  *
  * @author auto create
- * @since 1.0, 2022-04-08 14:23:50
+ * @since 1.0, 2022-04-21 17:35:29
  */
 public class ZhimaCreditPeZmgoPreorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2586957519121235524L;
+	private static final long serialVersionUID = 2752997352821291514L;
 
 	/**
 	 * 支付宝用户ID。同一个外部请求号，调用方要确保支付宝userId取值不变
@@ -46,6 +46,12 @@ public class ZhimaCreditPeZmgoPreorderCreateModel extends AlipayObject {
 	 */
 	@ApiField("ext_template_conf")
 	private ExtTemplateConf extTemplateConf;
+
+	/**
+	 * 扩展参数
+	 */
+	@ApiField("extend_params")
+	private PreOrderExtInfo extendParams;
 
 	/**
 	 * 冻结金额，单位：元
@@ -136,6 +142,13 @@ public class ZhimaCreditPeZmgoPreorderCreateModel extends AlipayObject {
 	}
 	public void setExtTemplateConf(ExtTemplateConf extTemplateConf) {
 		this.extTemplateConf = extTemplateConf;
+	}
+
+	public PreOrderExtInfo getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(PreOrderExtInfo extendParams) {
+		this.extendParams = extendParams;
 	}
 
 	public String getFreezeAmount() {

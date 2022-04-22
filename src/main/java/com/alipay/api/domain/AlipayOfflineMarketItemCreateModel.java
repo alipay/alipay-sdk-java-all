@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineMarketItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6174455314741834989L;
+	private static final long serialVersionUID = 4263336415123338537L;
 
 	/**
 	 * 商品审核上下文。支付宝内部使用，外部商户不需填写此字段

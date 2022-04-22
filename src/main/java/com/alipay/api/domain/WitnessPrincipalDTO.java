@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WitnessPrincipalDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1651446585188616596L;
+	private static final long serialVersionUID = 8175642812297674525L;
 
 	/**
 	 * 主体账号

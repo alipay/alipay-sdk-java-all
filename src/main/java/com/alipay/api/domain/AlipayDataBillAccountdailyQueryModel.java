@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户日变动余额信息查询接口
  *
  * @author auto create
- * @since 1.0, 2022-04-06 10:42:18
+ * @since 1.0, 2022-04-21 19:53:18
  */
 public class AlipayDataBillAccountdailyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4881331156659194788L;
+	private static final long serialVersionUID = 1667268332743713874L;
 
 	/**
 	 * 签约授权协议号。特殊场景使用

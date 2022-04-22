@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaymentSuccessPagePlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1572394391371558834L;
+	private static final long serialVersionUID = 8262158833824197618L;
 
 	/**
 	 * 创建支付后推荐方案时填写的收藏有礼活动id

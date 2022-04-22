@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4395358486315389695L;
+	private static final long serialVersionUID = 1485226338284818683L;
 
 	/**
 	 * 品牌介绍，5-15个中文字符
@@ -29,20 +29,20 @@ public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 	private String brandId;
 
 	/**
-	 * 自定义触发词，可配置1个，限1-8个中文字符
+	 * 自定义触发词，可配置1个，限1-8个中文字符。当brand_id为空时不支持设置此项
 	 */
 	@ApiListField("custom_keywords")
 	@ApiField("string")
 	private List<String> customKeywords;
 
 	/**
-	 * 氛围图片id，调用接口alipay.open.file.upload上传图片获取图片id。图片规范：https://opendocs.alipay.com/mini/operation/atmospheredesign
+	 * 氛围图片id，调用<a href="https://opendocs.alipay.com/pre-open/032j4c"> 支付宝文件上传接口 </a>上传图片获取图片id。当brand_id为空时不支持设置此项。<a href="https://opendocs.alipay.com/mini/operation/atmospheredesign"> 图片规范 </a>
 	 */
 	@ApiField("image_id")
 	private String imageId;
 
 	/**
-	 * 氛围图片名
+	 * 氛围图片名，当brand_id为空时不支持设置此项
 	 */
 	@ApiField("image_name")
 	private String imageName;

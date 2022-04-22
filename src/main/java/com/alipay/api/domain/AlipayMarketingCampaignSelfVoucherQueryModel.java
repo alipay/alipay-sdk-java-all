@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCampaignSelfVoucherQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6873733676442349124L;
+	private static final long serialVersionUID = 7491559858516477812L;
 
 	/**
 	 * 场景码：默认(DEFAULT) 

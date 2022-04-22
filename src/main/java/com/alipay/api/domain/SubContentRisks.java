@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 被拆分的子文件
  *
  * @author auto create
- * @since 1.0, 2022-04-13 14:02:25
+ * @since 1.0, 2022-04-22 10:54:01
  */
 public class SubContentRisks extends AlipayObject {
 
-	private static final long serialVersionUID = 7294516646542322316L;
+	private static final long serialVersionUID = 8546266126774593224L;
 
 	/**
 	 * 能否打标true/false
 	 */
 	@ApiField("can_mark")
 	private Boolean canMark;
+
+	/**
+	 * 额外扩展字段 某些属性并非所有子素材都包含
+frame_time：被拆分素材若是截帧形成的图片则代表该图片在原视频中的位置 单位：毫秒
+	 */
+	@ApiField("ext")
+	private String ext;
 
 	/**
 	 * 文件素材id，解语花生成的审核素材文件id,查询物料过审规则会用到这个file_id,物料维度打标也会用到这个file_id
@@ -64,6 +71,13 @@ public class SubContentRisks extends AlipayObject {
 	}
 	public void setCanMark(Boolean canMark) {
 		this.canMark = canMark;
+	}
+
+	public String getExt() {
+		return this.ext;
+	}
+	public void setExt(String ext) {
+		this.ext = ext;
 	}
 
 	public String getFileId() {

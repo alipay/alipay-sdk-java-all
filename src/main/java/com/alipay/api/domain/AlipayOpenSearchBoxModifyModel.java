@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7584753619962939968L;
+	private static final long serialVersionUID = 5767311175477236575L;
 
 	/**
-	 * 品牌介绍，5-15个中文字符。当module_type=BOX_EXCLUSIVE_BASE时传入
+	 * 品牌介绍，5-15个中文字符。当module_type=BOX_EXCLUSIVE_BASE时传入，当brand_id为空时不支持修改
 	 */
 	@ApiField("box_desc")
 	private String boxDesc;
@@ -35,19 +35,19 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 	private String brandId;
 
 	/**
-	 * 自定义关键词，可配置1个，限1-8个中文字符。当module_type=BOX_EXCLUSIVE_KEYWORD传入
+	 * 自定义关键词，可配置1个，限1-8个中文字符。当module_type=BOX_EXCLUSIVE_KEYWORD传入，当brand_id为空时不支持修改
 	 */
 	@ApiField("custom_keywords")
 	private String customKeywords;
 
 	/**
-	 * 氛围图片id，调用alipay.open.file.upload(支付宝文件上传接口https://opendocs.alipay.com/pre-open/032j4c)上传图片获取图片id。当module_type=BOX_ATMOSPHERE_IMAGE时传入。图片规范：https://opendocs.alipay.com/mini/operation/atmospheredesign
+	 * 氛围图片id，调用<a href="https://opendocs.alipay.com/pre-open/032j4c"> 支付宝文件上传接口 </a>上传图片获取图片id。当module_type=BOX_ATMOSPHERE_IMAGE时传入，当brand_id为空时不支持修改。<a href="https://opendocs.alipay.com/mini/operation/atmospheredesign"> 图片规范 </a>
 	 */
 	@ApiField("image_id")
 	private String imageId;
 
 	/**
-	 * 氛围图片名，当module_type=BOX_ATMOSPHERE_IMAGE时传入
+	 * 氛围图片名，当module_type=BOX_ATMOSPHERE_IMAGE时传入，当brand_id为空时不支持修改
 	 */
 	@ApiField("image_name")
 	private String imageName;
@@ -71,7 +71,7 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 	private String moduleType;
 
 	/**
-	 * 关联账号信息，可配置1-2个。当module_type=BOX_EXCLUSIVE_ACCOUNTS时传入
+	 * 关联账号信息，可配置1-2个。当module_type=BOX_EXCLUSIVE_ACCOUNTS时传入。当brand_id为空时不支持修改
 	 */
 	@ApiListField("related_accounts")
 	@ApiField("search_box_app_info")

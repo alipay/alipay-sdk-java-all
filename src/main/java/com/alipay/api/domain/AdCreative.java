@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AdCreative extends AlipayObject {
 
-	private static final long serialVersionUID = 6768211572667382946L;
+	private static final long serialVersionUID = 8852358898225887373L;
 
 	/**
 	 * 广告物料包含的物料列表

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketShopQuerydetailResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8273375826967878193L;
+	private static final long serialVersionUID = 7522414183876353312L;
 
 	/** 
 	 * 门店详细地址，注：不含省市区

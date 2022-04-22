@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntforestPlantConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1713995531987636982L;
+	private static final long serialVersionUID = 8878434516181214343L;
 
 	/** 
 	 * 当前账户可用能量

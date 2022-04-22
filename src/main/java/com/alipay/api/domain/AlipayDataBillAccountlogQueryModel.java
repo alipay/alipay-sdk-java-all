@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商家账户账务明细查询
  *
  * @author auto create
- * @since 1.0, 2022-04-07 17:19:05
+ * @since 1.0, 2022-04-21 19:53:13
  */
 public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8439529514712269179L;
+	private static final long serialVersionUID = 4213944254326176668L;
 
 	/**
 	 * 协议授权码，特殊场景下使用

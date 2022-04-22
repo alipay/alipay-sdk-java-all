@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppCommunityExternalbillsyncUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8872949629935821922L;
+	private static final long serialVersionUID = 3565556365664429743L;
 
 	/**
 	 * 小区短名，本接口只支持按小区纬度动账
