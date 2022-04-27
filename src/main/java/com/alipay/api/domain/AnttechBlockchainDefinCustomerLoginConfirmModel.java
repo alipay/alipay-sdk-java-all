@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 登录接口
  *
  * @author auto create
- * @since 1.0, 2020-09-23 16:02:04
+ * @since 1.0, 2022-04-27 09:23:40
  */
 public class AnttechBlockchainDefinCustomerLoginConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5781797615357376283L;
+	private static final long serialVersionUID = 6584836719936942284L;
 
 	/**
 	 * 验证码场景

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditSupplychainPoolCreditsignadmitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6684976714559815422L;
+	private static final long serialVersionUID = 7632359893255992633L;
 
 	/**
 	 * 客户支付宝登录号，在饿了么发薪贷场景是外包服务供应商的支付宝登录号

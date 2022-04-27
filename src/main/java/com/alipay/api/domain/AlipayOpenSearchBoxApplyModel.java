@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1485226338284818683L;
+	private static final long serialVersionUID = 7757885866784379757L;
 
 	/**
-	 * 品牌介绍，5-15个中文字符
+	 * 品牌介绍，5-15个中文字符，当brand_id为空是不支持设置此项
 	 */
 	@ApiField("box_desc")
 	private String boxDesc;
@@ -29,7 +29,7 @@ public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 	private String brandId;
 
 	/**
-	 * 自定义触发词，可配置1个，限1-8个中文字符。当brand_id为空时不支持设置此项
+	 * 自定义触发词，最多可配置6个，限1-8个中文字符。当brand_id为空时不支持设置此项
 	 */
 	@ApiListField("custom_keywords")
 	@ApiField("string")
@@ -48,7 +48,7 @@ public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 	private String imageName;
 
 	/**
-	 * 商户id，代运营模式下传入
+	 * 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;

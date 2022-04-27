@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6867942476142962117L;
+	private static final long serialVersionUID = 8561597479956135938L;
 
 	/**
 	 * 活动链接
@@ -35,7 +35,7 @@ public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 	private String endTime;
 
 	/**
-	 * 当material_type="IMAGE"时，为图片id；当material_type="VIDEO"时，为视频id。图片id可以通过调用接口alipay.open.file.upload上传图片，获取图片id。图片规范：https://opendocs.alipay.com/mini/operation/atmospheredesign
+	 * 当material_type="IMAGE"时，为图片id；当material_type="VIDEO"时，为视频id。图片id可以通过调用<a href="https://opendocs.alipay.com/pre-open/032j4c"> 支付宝文件上传接口 </a>上传图片，获取图片id。<a href="https://opendocs.alipay.com/mini/operation/atmospheredesign"> 图片规范 </a>
 	 */
 	@ApiField("material_id")
 	private String materialId;
@@ -47,7 +47,7 @@ public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 	private String materialType;
 
 	/**
-	 * 商户id，代运营模式下传入
+	 * 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;

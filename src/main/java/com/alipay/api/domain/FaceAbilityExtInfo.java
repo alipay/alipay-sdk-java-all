@@ -7,44 +7,44 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用人脸能力所需要等拓展参数信息
  *
  * @author auto create
- * @since 1.0, 2022-03-30 10:26:24
+ * @since 1.0, 2022-04-26 19:44:42
  */
 public class FaceAbilityExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1335387764862721419L;
+	private static final long serialVersionUID = 7187151376376561438L;
 
 	/**
-	 * 年龄
+	 * 已不支持
 	 */
 	@ApiField("age")
 	private String age;
 
 	/**
-	 * 算法的辅助因子如blur、pitch、yaw、roll值
+	 * 已不支持
 	 */
 	@ApiField("algfactors")
 	private String algfactors;
 
 	/**
-	 * 模糊程度质量分
+	 * 已不支持
 	 */
 	@ApiField("blur")
 	private String blur;
 
 	/**
-	 * 姓名信息
+	 * 已不支持
 	 */
 	@ApiField("cert_name")
 	private String certName;
 
 	/**
-	 * 证件号信息
+	 * 已不支持
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 证件类别
+	 * 已不支持
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -70,7 +70,7 @@ centerRule：选择中心脸规则；
 	private String faceDataType;
 
 	/**
-	 * 人脸加密后的特征
+	 * 已不支持
 	 */
 	@ApiField("feature")
 	private String feature;
@@ -82,31 +82,31 @@ centerRule：选择中心脸规则；
 	private String hasrisk;
 
 	/**
-	 * 综合质量分（不区分具体哪方面质量差）
+	 * 已不支持
 	 */
 	@ApiField("joint_quality")
 	private Long jointQuality;
 
 	/**
-	 * 光线质量分
+	 * 已不支持
 	 */
 	@ApiField("light")
 	private String light;
 
 	/**
-	 * 遮挡质量分
+	 * 已不支持
 	 */
 	@ApiField("occlusion")
 	private String occlusion;
 
 	/**
-	 * 姿态质量分
+	 * 已不支持
 	 */
 	@ApiField("pose")
 	private String pose;
 
 	/**
-	 * 质量分
+	 * 已不支持
 	 */
 	@ApiField("quality")
 	private String quality;
@@ -124,13 +124,13 @@ centerRule：选择中心脸规则；
 	private Boolean qualityok;
 
 	/**
-	 * 特征矩形区域"442,231,412,262"
+	 * 已不支持
 	 */
 	@ApiField("rect")
 	private String rect;
 
 	/**
-	 * 男女
+	 * 已不支持
 	 */
 	@ApiField("sex")
 	private String sex;

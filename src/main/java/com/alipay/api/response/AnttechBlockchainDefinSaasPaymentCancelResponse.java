@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.saas.payment.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-20 16:31:40
+ * @since 1.0, 2022-04-25 12:43:26
  */
 public class AnttechBlockchainDefinSaasPaymentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1169269719833745475L;
+	private static final long serialVersionUID = 6644927962969424852L;
 
 	/** 
 	 * 可用金额，单位为元。可用金额=总金额-已请款金额-已撤销金额。精确到小数点后两位，取值范围[0.01,100000000]

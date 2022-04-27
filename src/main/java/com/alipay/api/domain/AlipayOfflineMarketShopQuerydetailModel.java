@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统商通过该接口可以查询单个门店的详细信息，包括门店基础信息，门店状态等信息
  *
  * @author auto create
- * @since 1.0, 2019-06-03 11:21:17
+ * @since 1.0, 2022-04-22 15:56:27
  */
 public class AlipayOfflineMarketShopQuerydetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4757862319931495453L;
+	private static final long serialVersionUID = 7595867399662339147L;
 
 	/**
 	 * 服务商及商户调用情况下务必传递。操作人角色，默认商户操作:MERCHANT；服务商操作：PROVIDER；ISV: 不需要填写

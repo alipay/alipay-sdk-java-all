@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserMemberAlipaycardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3625153463648684997L;
+	private static final long serialVersionUID = 4699673136685241426L;
 
 	/**
 	 * 缓存是否可用，手淘在请求前先查uid的缓存，新用户请求未落缓存或者上次缓存已经被清空时为false

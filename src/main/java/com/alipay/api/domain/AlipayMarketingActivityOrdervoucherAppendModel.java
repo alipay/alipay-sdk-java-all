@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityOrdervoucherAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7574573254697242854L;
+	private static final long serialVersionUID = 6351384932842975682L;
 
 	/**
 	 * 活动id
@@ -41,8 +41,7 @@ public class AlipayMarketingActivityOrdervoucherAppendModel extends AlipayObject
 不可减少，只能增加。
 
 code_mode=
-MERCHANT_UPLOAD的情况下，
-voucher_quantity需要与导入码的总数量保持一致。
+MERCHANT_UPLOAD 的情况下，voucher_quantity 需要与导入码的总数量保持一致（即历史导入数量 + 追加导入数量）。
 	 */
 	@ApiField("voucher_quantity")
 	private Long voucherQuantity;

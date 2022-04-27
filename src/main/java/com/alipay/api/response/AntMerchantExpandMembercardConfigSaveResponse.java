@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.membercard.config.save response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-07 21:53:03
+ * @since 1.0, 2022-04-25 11:11:39
  */
 public class AntMerchantExpandMembercardConfigSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8588354742964441323L;
+	private static final long serialVersionUID = 5783794319887172693L;
 
 	/** 
 	 * 商家的安心充配置的唯一编号；

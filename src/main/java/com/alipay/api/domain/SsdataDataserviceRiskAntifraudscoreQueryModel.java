@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataDataserviceRiskAntifraudscoreQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7736813161949123339L;
+	private static final long serialVersionUID = 7495275685753591179L;
 
 	/**
 	 * 地址信息。省+市+区/县+详细地址，其中 省+市+区/县可以为空，长度不超过256，不要包含特殊字符，如","，"\"，"|"，"&"，"^"

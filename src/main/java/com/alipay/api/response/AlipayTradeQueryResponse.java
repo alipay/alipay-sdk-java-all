@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-25 16:58:56
+ * @since 1.0, 2022-04-24 11:31:42
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8489862124537596453L;
+	private static final long serialVersionUID = 5138446644653736512L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -150,7 +150,6 @@ json格式。
 	/** 
 	 * 若用户使用花呗分期支付，且商家开通返回此通知参数，则会返回花呗分期信息。json格式其它说明详见花呗分期信息说明。
 注意：商家需与支付宝约定后才返回本参数。
-
 	 */
 	@ApiField("hb_fq_pay_info")
 	private HbFqPayInfo hbFqPayInfo;

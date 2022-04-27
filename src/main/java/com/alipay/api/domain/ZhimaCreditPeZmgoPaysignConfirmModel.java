@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPeZmgoPaysignConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8627699224723916133L;
+	private static final long serialVersionUID = 6613419951667976727L;
 
 	/**
 	 * 用户id

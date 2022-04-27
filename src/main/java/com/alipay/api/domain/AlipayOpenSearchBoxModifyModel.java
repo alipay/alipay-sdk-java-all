@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5767311175477236575L;
+	private static final long serialVersionUID = 6564117371386252963L;
 
 	/**
 	 * 品牌介绍，5-15个中文字符。当module_type=BOX_EXCLUSIVE_BASE时传入，当brand_id为空时不支持修改
@@ -35,7 +35,7 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 	private String brandId;
 
 	/**
-	 * 自定义关键词，可配置1个，限1-8个中文字符。当module_type=BOX_EXCLUSIVE_KEYWORD传入，当brand_id为空时不支持修改
+	 * 自定义关键词，最多可配置6个，限1-8个中文字符。当module_type=BOX_EXCLUSIVE_KEYWORD传入，当brand_id为空时不支持修改
 	 */
 	@ApiField("custom_keywords")
 	private String customKeywords;
@@ -53,7 +53,7 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 	private String imageName;
 
 	/**
-	 * 商户id，代运营模式下传入
+	 * 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;

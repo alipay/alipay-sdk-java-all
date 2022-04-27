@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCustomerLiferecordSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4711226421981568879L;
+	private static final long serialVersionUID = 5531318168425238814L;
 
 	/**
 	 * 是否授权

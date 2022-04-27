@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户查询客资信息
  *
  * @author auto create
- * @since 1.0, 2021-09-10 23:43:32
+ * @since 1.0, 2022-04-27 17:07:00
  */
 public class KoubeiServindustryLeadsRecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1494651241672689224L;
+	private static final long serialVersionUID = 4494225385435396263L;
 
 	/**
 	 * 查询时间范围结束时间（客资创建时间）,不能早于查询时间范围的开始时间，查询时间范围要在三个月之内（开始和结束时间的跨度），不能超过三个月。

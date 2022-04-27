@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客资回传
  *
  * @author auto create
- * @since 1.0, 2021-08-31 17:35:37
+ * @since 1.0, 2022-04-27 17:07:23
  */
 public class KoubeiServindustryReservationLeadsModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2597763166546714481L;
+	private static final long serialVersionUID = 5487331742358779419L;
 
 	/**
 	 * 实际到店时间：status_mark==CUSTOMER_ARRIVED时，gmt_arrived不能为空

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundBailOrderMigrateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2445542264122571594L;
+	private static final long serialVersionUID = 1127943123718652349L;
 
 	/**
 	 * 保证金协议号

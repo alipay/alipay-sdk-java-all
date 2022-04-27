@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账号查询
  *
  * @author auto create
- * @since 1.0, 2021-12-24 16:36:46
+ * @since 1.0, 2022-04-25 13:57:14
  */
 public class AnttechBlockchainDefinSaasAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3654233421421528331L;
+	private static final long serialVersionUID = 3384198313549142143L;
 
 	/**
 	 * 账号状态过滤，默认查询所有状态账号；

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店摘要信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2019-06-07 22:37:26
+ * @since 1.0, 2022-04-22 15:56:34
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6191114491888932538L;
+	private static final long serialVersionUID = 2241525352557645852L;
 
 	/**
 	 * 表示接口查询门店的业务渠道限制：ALL、 POS、不传。不传代表只查询普通门店，传入POS代表只查询简易门店，传入ALL代表查询普通门店和简易门店。

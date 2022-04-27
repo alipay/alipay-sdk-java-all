@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSearchBoxactivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6752133436182149566L;
+	private static final long serialVersionUID = 7593745686687664883L;
 
 	/**
 	 * 搜索直达活动id
@@ -20,7 +20,7 @@ public class AlipayOpenSearchBoxactivityQueryModel extends AlipayObject {
 	private String boxActivityId;
 
 	/**
-	 * 商户id，代运营模式下传入
+	 * 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;

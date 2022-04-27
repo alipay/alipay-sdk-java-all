@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账务明细
  *
  * @author auto create
- * @since 1.0, 2022-04-07 17:19:06
+ * @since 1.0, 2022-04-24 16:37:20
  */
 public class AccountLogItemResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7177533551764341287L;
+	private static final long serialVersionUID = 6751351645192982283L;
 
 	/**
 	 * 支付宝账务流水号。对账使用，不脱敏
@@ -84,6 +84,12 @@ public class AccountLogItemResult extends AlipayObject {
 	 */
 	@ApiField("other_account")
 	private String otherAccount;
+
+	/**
+	 * 门店信息
+	 */
+	@ApiField("store_name")
+	private String storeName;
 
 	/**
 	 * 金额
@@ -191,6 +197,13 @@ public class AccountLogItemResult extends AlipayObject {
 	}
 	public void setOtherAccount(String otherAccount) {
 		this.otherAccount = otherAccount;
+	}
+
+	public String getStoreName() {
+		return this.storeName;
+	}
+	public void setStoreName(String storeName) {
+		this.storeName = storeName;
 	}
 
 	public String getTransAmount() {

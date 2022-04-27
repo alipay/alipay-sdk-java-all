@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAliyunbenefitReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6523413581955793353L;
+	private static final long serialVersionUID = 4773995387449857997L;
 
 	/**
 	 * 格式为yyyy-MM-dd HH:mm:ss ，业务操作时间用于对账，不传则以调用请求的当前时间计算

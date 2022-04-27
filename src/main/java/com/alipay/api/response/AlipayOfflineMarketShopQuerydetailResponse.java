@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.shop.querydetail response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:00:47
+ * @since 1.0, 2022-04-22 15:56:27
  */
 public class AlipayOfflineMarketShopQuerydetailResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7522414183876353312L;
+	private static final long serialVersionUID = 6528265288214828773L;
 
 	/** 
 	 * 门店详细地址，注：不含省市区

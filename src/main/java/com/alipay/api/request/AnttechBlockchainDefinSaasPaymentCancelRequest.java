@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.saas.payment.cancel request
  * 
  * @author auto create
- * @since 1.0, 2022-04-20 16:31:40
+ * @since 1.0, 2022-04-25 12:43:26
  */
 public class AnttechBlockchainDefinSaasPaymentCancelRequest implements AlipayRequest<AnttechBlockchainDefinSaasPaymentCancelResponse> {
 

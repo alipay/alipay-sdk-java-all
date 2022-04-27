@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送验证码
  *
  * @author auto create
- * @since 1.0, 2020-09-23 17:02:55
+ * @since 1.0, 2022-04-27 09:23:00
  */
 public class AnttechBlockchainDefinCustomerVerifycodeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5549975268686534423L;
+	private static final long serialVersionUID = 6171489447272271485L;
 
 	/**
 	 * 自定义的action，比如：LOGIN，REGISTER，MODIFY_PASSWORD等

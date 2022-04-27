@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建交易
  *
  * @author auto create
- * @since 1.0, 2021-12-17 12:45:11
+ * @since 1.0, 2022-04-25 12:43:53
  */
 public class AnttechBlockchainDefinSaasPaymentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8213622428664331598L;
+	private static final long serialVersionUID = 1829556838743437326L;
 
 	/**
 	 * 收单交易，acquire_order和fund_order不能同时为空

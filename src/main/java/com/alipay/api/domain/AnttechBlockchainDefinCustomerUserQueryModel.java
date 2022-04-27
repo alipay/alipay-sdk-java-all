@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询客户信息
  *
  * @author auto create
- * @since 1.0, 2020-12-15 19:31:34
+ * @since 1.0, 2022-04-27 09:24:45
  */
 public class AnttechBlockchainDefinCustomerUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5154642961626875566L;
+	private static final long serialVersionUID = 2888144244548471579L;
 
 	/**
 	 * DCHAIN("DCHAIN","供应链信用流转平台"), ABS("ABS","ABS资产流转平台"), BAMBOO("BAMBOO","BAMBOO项目"), LOGISTICS_FIN("LOGISTICS_FIN", "物流金融"), TRUSPLE("TRUSPLE", "跨境贸易金融平台");

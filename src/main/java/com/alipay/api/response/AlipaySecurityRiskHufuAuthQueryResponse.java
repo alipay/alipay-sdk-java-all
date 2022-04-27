@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityRiskHufuAuthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7233461139538981455L;
+	private static final long serialVersionUID = 3244872344833582845L;
 
 	/** 
 	 * 业务系统创建时传入的序列号

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AdPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 1842823856418915859L;
+	private static final long serialVersionUID = 1594974443152858751L;
 
 	/**
 	 * 注册用户返回的用户ID

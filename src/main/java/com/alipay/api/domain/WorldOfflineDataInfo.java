@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class WorldOfflineDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8135616956363714332L;
+	private static final long serialVersionUID = 7578985967526789997L;
 
 	/**
 	 * 生码模式

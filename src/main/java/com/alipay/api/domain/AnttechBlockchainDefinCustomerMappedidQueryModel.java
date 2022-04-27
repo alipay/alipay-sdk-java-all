@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过映射ID去查询会员信息
  *
  * @author auto create
- * @since 1.0, 2020-12-15 19:10:28
+ * @since 1.0, 2022-04-27 09:24:24
  */
 public class AnttechBlockchainDefinCustomerMappedidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7548944596663765421L;
+	private static final long serialVersionUID = 2663434696418599137L;
 
 	/**
 	 * DCHAIN("DCHAIN","供应链信用流转平台"),

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报案基本信息
  *
  * @author auto create
- * @since 1.0, 2022-04-14 12:22:18
+ * @since 1.0, 2022-04-27 10:13:37
  */
 public class ReportBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6836837678172498262L;
+	private static final long serialVersionUID = 4273458412241475638L;
 
 	/**
 	 * 出险时间
@@ -48,6 +48,12 @@ public class ReportBasicInfo extends AlipayObject {
 	 */
 	@ApiField("report_date")
 	private String reportDate;
+
+	/**
+	 * 报案唯一标识，申请理赔所关联的订单号，如一个订单会存在多次理赔，请用唯一标识
+	 */
+	@ApiField("report_unique_key")
+	private String reportUniqueKey;
 
 	/**
 	 * 报案人联系方式
@@ -107,6 +113,13 @@ public class ReportBasicInfo extends AlipayObject {
 	}
 	public void setReportDate(String reportDate) {
 		this.reportDate = reportDate;
+	}
+
+	public String getReportUniqueKey() {
+		return this.reportUniqueKey;
+	}
+	public void setReportUniqueKey(String reportUniqueKey) {
+		this.reportUniqueKey = reportUniqueKey;
 	}
 
 	public String getReporterContactInfo() {

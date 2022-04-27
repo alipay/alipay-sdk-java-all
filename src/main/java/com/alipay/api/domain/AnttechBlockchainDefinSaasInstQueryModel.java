@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链b2b资金服务机构信息查询
  *
  * @author auto create
- * @since 1.0, 2022-01-24 11:01:09
+ * @since 1.0, 2022-04-25 13:57:38
  */
 public class AnttechBlockchainDefinSaasInstQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4216741734424489734L;
+	private static final long serialVersionUID = 6183936174432832915L;
 
 	/**
 	 * 机构名称

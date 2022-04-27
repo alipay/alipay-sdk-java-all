@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 泛娱乐优惠商品上报
  *
  * @author auto create
- * @since 1.0, 2022-04-02 17:17:25
+ * @since 1.0, 2022-04-22 19:49:03
  */
 public class AlipayCommerceEntertainmentItemUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4492692385659649778L;
+	private static final long serialVersionUID = 1448316952129173258L;
 
 	/**
 	 * 商品是否启用（对客展示），true/false
@@ -52,10 +52,15 @@ json格式，请将需要传递的key和value字段放入map中，转成json str
 
 	/**
 	 * 商品计价类型:
-MONTH:月卡
-YEAR:年卡
-CM：连续包月
-CY：连续包年
+天卡：DAY
+周卡：WEEK
+月卡：MONTH
+季卡：QUARTER
+年卡：YEAR
+连续包周：CW
+连续包月：CM
+连续包季：CQ
+连续包年：CY
 	 */
 	@ApiField("pricing_type")
 	private String pricingType;
