@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceSportsFacepayskinReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4255269126637162962L;
+	private static final long serialVersionUID = 2563714513453314252L;
 
 	/** 
 	 * 用户付款码皮肤信息

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.brandsolution.enrollmerchant.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-27 13:52:26
+ * @since 1.0, 2022-05-05 17:13:08
  */
 public class AlipayCommerceOperationBrandsolutionEnrollmerchantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1839721888546463441L;
+	private static final long serialVersionUID = 3146281768656894983L;
 
 	/** 
 	 * 活动状态，枚举：WAIT_AUDIT（审核中）/AUDIT_FAIL（审核拒绝）/AUDIT_SUCCESS（审核通过）/PAUSE（暂停）

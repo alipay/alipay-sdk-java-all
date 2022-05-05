@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneYebAssetTradeUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4436949453631589844L;
+	private static final long serialVersionUID = 4665487436323164214L;
 
 	/**
 	 * 金额

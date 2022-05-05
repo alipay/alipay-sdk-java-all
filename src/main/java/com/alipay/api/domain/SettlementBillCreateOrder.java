@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SettlementBillCreateOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 3875579147579415228L;
+	private static final long serialVersionUID = 5596951688653176462L;
 
 	/**
 	 * 合同编号

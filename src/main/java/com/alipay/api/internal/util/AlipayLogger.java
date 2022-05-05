@@ -210,10 +210,11 @@ public class AlipayLogger {
     /**
      * 业务/系统错误日志
      */
-    public static void logBizError(String rsp, Map<String, Long> costTimeMap) {
+    public static void logBizError(String rsp, Map<String, Long> costTimeMap, Map<String, Object> rt) {
         if (!needEnableLogger) {
             return;
         }
+        rt = rt == null ? new HashMap<String, Object>() : rt;
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         df.setTimeZone(TimeZone.getTimeZone(AlipayConstants.DATE_TIMEZONE));
         StringBuilder sb = new StringBuilder();
@@ -227,6 +228,11 @@ public class AlipayLogger {
         sb.append("ms,");
         sb.append(costTimeMap.get("postCostTime"));
         sb.append("ms");
+        if (rt.containsKey("trace_id")) {
+            sb.append("^_^");
+            sb.append("trace_id:");
+            sb.append(rt.get("trace_id"));
+        }
         blog.error(sb.toString());
     }
 
@@ -285,6 +291,7 @@ public class AlipayLogger {
         if (!needEnableLogger) {
             return;
         }
+        rt = rt == null ? new HashMap<String, Object>() : rt;
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         df.setTimeZone(TimeZone.getTimeZone(AlipayConstants.DATE_TIMEZONE));
         StringBuilder sb = new StringBuilder();
@@ -318,6 +325,11 @@ public class AlipayLogger {
         sb.append("ms,");
         sb.append(costTimeMap.get("postCostTime"));
         sb.append("ms");
+        if (rt.containsKey("trace_id")) {
+            sb.append("^_^");
+            sb.append("trace_id:");
+            sb.append(rt.get("trace_id"));
+        }
         blog.error(sb.toString());
     }
 
@@ -329,6 +341,7 @@ public class AlipayLogger {
         if (!needEnableLogger) {
             return;
         }
+        rt = rt == null ? new HashMap<String, Object>() : rt;
         StringBuilder sb = new StringBuilder();
         sb.append("Summary");
         sb.append("^_^");
@@ -351,6 +364,11 @@ public class AlipayLogger {
         sb.append("ms,");
         sb.append(costTimeMap.get("postCostTime"));
         sb.append("ms");
+        if (rt.containsKey("trace_id")) {
+            sb.append("^_^");
+            sb.append("trace_id:");
+            sb.append(rt.get("trace_id"));
+        }
         ilog.info(sb.toString());
     }
 

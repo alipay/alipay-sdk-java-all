@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.department.batch.bind request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:33:16
+ * @since 1.0, 2022-05-05 17:42:24
  */
 public class KoubeiMerchantDepartmentBatchBindRequest implements AlipayRequest<KoubeiMerchantDepartmentBatchBindResponse> {
 

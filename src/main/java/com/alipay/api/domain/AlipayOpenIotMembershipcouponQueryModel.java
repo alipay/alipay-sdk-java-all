@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotMembershipcouponQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3418745866244497966L;
+	private static final long serialVersionUID = 5428889835581245669L;
 
 	/**
 	 * 小程序ID，来自于BPaaS注册的应用ID，取值通常和小程序的appId相同

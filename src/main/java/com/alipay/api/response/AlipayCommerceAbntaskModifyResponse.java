@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceAbntaskModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8734842666255882995L;
+	private static final long serialVersionUID = 5144675194553964997L;
 
 	/** 
 	 * 操作失败任务数量

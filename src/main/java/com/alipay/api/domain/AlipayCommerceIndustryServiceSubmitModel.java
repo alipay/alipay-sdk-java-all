@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 行业服务标准化服务提报
  *
  * @author auto create
- * @since 1.0, 2022-04-19 16:38:26
+ * @since 1.0, 2022-04-28 10:30:02
  */
 public class AlipayCommerceIndustryServiceSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8679869146374397716L;
+	private static final long serialVersionUID = 1898543385941172641L;
 
 	/**
 	 * 扩展字段，服务扩展字段，示例：key：service_sub_type，value：car_rental_day
@@ -28,6 +28,12 @@ public class AlipayCommerceIndustryServiceSubmitModel extends AlipayObject {
 	 */
 	@ApiField("industry_info")
 	private String industryInfo;
+
+	/**
+	 * 商户侧服务编码。回收行业会优先以该字段作为服务唯一键，如果没有传该字段，会用service_name作为服务唯一键。
+	 */
+	@ApiField("out_service_code")
+	private String outServiceCode;
 
 	/**
 	 * 服务动作 SERVICE_CREATE：服务创建 SERVICE_UPDATE：服务更新
@@ -76,6 +82,13 @@ DOOR_RECYCLING
 	}
 	public void setIndustryInfo(String industryInfo) {
 		this.industryInfo = industryInfo;
+	}
+
+	public String getOutServiceCode() {
+		return this.outServiceCode;
+	}
+	public void setOutServiceCode(String outServiceCode) {
+		this.outServiceCode = outServiceCode;
 	}
 
 	public String getServiceAction() {

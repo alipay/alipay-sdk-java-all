@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommerceMedicalBankcardCertificationQueryData extends AlipayObject {
 
-	private static final long serialVersionUID = 1451855228943716436L;
+	private static final long serialVersionUID = 8748939262583231282L;
 
 	/**
 	 * 响应时间戳。 格式为 yyyy-MM-dd HH:mm:ss。

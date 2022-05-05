@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationUserPointExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5784425466119413218L;
+	private static final long serialVersionUID = 1144814979983462428L;
 
 	/**
 	 * 积分核销ID，验证point与benefitId的一致性，才能使用对应的积分

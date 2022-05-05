@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 快消百万小店商家单品活动中止
  *
  * @author auto create
- * @since 1.0, 2022-04-20 19:16:49
+ * @since 1.0, 2022-04-29 16:44:54
  */
 public class AlipayCommerceOperationBrandsolutionMerchantactivityPauseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4455881778979541374L;
+	private static final long serialVersionUID = 8817132466788227991L;
 
 	/**
 	 * 活动唯一标识
@@ -23,7 +23,7 @@ public class AlipayCommerceOperationBrandsolutionMerchantactivityPauseModel exte
 	private String activityId;
 
 	/**
-	 * 商户pid，唯一标识
+	 * 商户pid，唯一标识，允许批量修改，单次最大10条
 	 */
 	@ApiListField("merchant_ids")
 	@ApiField("string")

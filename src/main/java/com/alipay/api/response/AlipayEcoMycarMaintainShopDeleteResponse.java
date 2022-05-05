@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarMaintainShopDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1896316769453973675L;
+	private static final long serialVersionUID = 8879731919111445387L;
 
 	
 

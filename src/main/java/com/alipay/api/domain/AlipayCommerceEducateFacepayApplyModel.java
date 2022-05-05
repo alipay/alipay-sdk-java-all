@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸开通支付申请
  *
  * @author auto create
- * @since 1.0, 2022-03-22 16:45:42
+ * @since 1.0, 2022-04-27 22:19:14
  */
 public class AlipayCommerceEducateFacepayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1598816149716275817L;
+	private static final long serialVersionUID = 4848928143639765148L;
 
 	/**
 	 * 扩展信息, json格式. 例如, 对不使用银行代扣, 可以传入{"useBankChannel":"NO"}；

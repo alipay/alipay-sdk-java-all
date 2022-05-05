@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPayDayRangePricingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4658277583655842913L;
+	private static final long serialVersionUID = 4642885654769561953L;
 
 	/**
 	 * 按天定价结束时间

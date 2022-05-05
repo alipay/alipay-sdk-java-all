@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiServindustryNatatoriumWaterqualityUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5721345986215533132L;
+	private static final long serialVersionUID = 4432391271277397815L;
 
 	
 

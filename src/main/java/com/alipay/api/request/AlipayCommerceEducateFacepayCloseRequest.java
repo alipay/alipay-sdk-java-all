@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.facepay.close request
  * 
  * @author auto create
- * @since 1.0, 2022-03-22 16:45:22
+ * @since 1.0, 2022-04-29 15:06:47
  */
 public class AlipayCommerceEducateFacepayCloseRequest implements AlipayRequest<AlipayCommerceEducateFacepayCloseResponse> {
 

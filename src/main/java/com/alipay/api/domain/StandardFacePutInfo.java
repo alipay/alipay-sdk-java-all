@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StandardFacePutInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2728896771473758788L;
+	private static final long serialVersionUID = 3123365241521938981L;
 
 	/**
 	 * 入库失败错误码

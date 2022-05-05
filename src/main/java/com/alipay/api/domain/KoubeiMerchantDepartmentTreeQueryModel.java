@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 组织部门树查询接口
  *
  * @author auto create
- * @since 1.0, 2021-10-27 14:07:44
+ * @since 1.0, 2022-05-05 17:42:01
  */
 public class KoubeiMerchantDepartmentTreeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5794653283324186763L;
+	private static final long serialVersionUID = 5357646741681137566L;
 
 	/**
 	 * isv回传的auth_code，通过auth_code校验当前操作人与商户的关系

@@ -30,10 +30,7 @@ public class CertificateRSACheckTest {
         parameters.put("app_id", "2019090366875133");
         parameters.put("sign_type", "RSA");
         parameters.put("sign",
-                "RkEZgdCVF4TF48+tVZlPLEUMgrOoff3TGynWtXRUmzMXxmsCX8Y9YtpZE+NNg/JGpYQ5htTDd8PXVqiG5fqvzE2g4ugDutr"
-                        + "++BeQ2eJQ1uhasp6VIPTSAPWHRD7FSXqZfOoWvxeFHF9WGnzXw5eueOdGMZYXdjhR6srj+ZAeJxyR402FVNbRuI"
-                        + "/hDZVq27xWi4CQ2ffdV0lf7E2V/HMUPXECbIKkTnLXrwJBmsLgTGbTDGf7pGo0y0rkRvdsg9BmPPswfTeq"
-                        + "/o2rlxD0XxrK1MPZ4uSPFhpdWVEyNchtXEfKoVsaYeVXV3cMfZi9zcKc6RCE8ezF9LxRJp1R0BxKEg==");
+                "a5NeWetvFNFg5EyjQ8UAxMHlih5kOAv7s33K+J5KBi9Gq2GTMj5EwOScPcHy2HFAMcRvHmc4pM8HG4Mj89OxNwfKPqR27TEMM0Sy2PdKqL5d5mPdabVtgB82htfcEofiHUdq99AzTyZOFJuj4XIm8cmHr4p4MrUdGOMnLNxvq9tG58ADCRvxmUqx99MbFHm5nmh8xHZ0oULBzxttMVQRwniY0oZzncJVX8UwdcQWJp+xhXUnRkrx0IU/ZLmLXQHcV2r0flka3KeXY9DthwB/gdomYvTTaPo+Aw8TxG230Q3Es6AT/QuOujuEGaHzA4oYchWLxTVUzeRcJBRmGzmLXA==");
         //when
         boolean result = AlipaySignature.rsaCertCheckV2(parameters, TestAccount.ProdCert.getConfig().getAppCertPath(), "utf-8", "RSA");
         //then
@@ -48,11 +45,7 @@ public class CertificateRSACheckTest {
         parameters.put("app_id", "2019090366875133");
         parameters.put("sign_type", "RSA2");
         parameters.put("sign",
-                "JzoDc8VxY1/w6yN9WdWV10aipS3YcRpK"
-                        + "+jw4xfLybf90ZK9L3AHLUJbNLWVnHW3IuLoJbBeSGVxSbPBhe4ggPklcYUkPowgtlZ6YlthuQDtjF23h2obXuXkQRd"
-                        + "+RPbDWvOA5AYQjsKH8uSHil5aRARewPIPhukl9Mn4HEovUccsBR/RirQFSGmGYiMM0zvhVSR7pXZDEhiADzvzAkvVVTI1"
-                        + "/HbNqcoBU4ctSPAGsuDPO/mah1+IwGQAuPP6xoEPL"
-                        + "+3zQ0wztQCwHT2o8aQmxFJ9a09q8ybRprHaNjCgTaLDeTWE0o1pllZIE8c7wnG3cOuj6quYjTcQyLm6P4M87Zw==");
+                "NQHIJKRCoCJCUXqzzK8WUtA/58m4/e3NGLutUFxFUD8udlauzRCgCINxDqs3atXrJ8KeSxpf8IU8nrnK7qzCQiYdj2XjfkXDrZllPEXlrelHitj9qpPqMXlAbP1HArNlBTpaGmq6hwvf/W50O/8kOjPEpmdpFcYZrlR/aA3uwdiOXHGNfd6p2wA7JjHiLQtPXGVm2oLLp+HDEtdhqxs66Br4bTQZPrQNKJrhqRcqwTzA5ZyDMQK724ECTYBI/+8PEvFCpi4Ny6piO78clFE/bSAuKCdhbivBzWDYkvmQymq0M86W3usljVENbnOyBatl7/y4f7S53Ht/yBmO/f+gYg==");
         //when
         boolean result = AlipaySignature.rsaCertCheckV2(parameters, TestAccount.ProdCert.getConfig().getAppCertPath(), "utf-8", "RSA2");
         //then
@@ -67,7 +60,7 @@ public class CertificateRSACheckTest {
         parameters.put("extra", "中文测试");
         parameters.put("sign_type", "RSA2");
         parameters.put("sign",
-                "KrRGUY3/2JX3KtlLgus8CbK0xuUIBDCpOdJkVzJDefez6HvlA8RA6uCVj2rrMd7DgVfarG5SROdSnkZbf8MLKHbVoFqi9w0QCvto9mc8n3ezfWejZECJVCZhbJ3OslB+4gij9+F70usrnCNEJZm02ntyNdVzcqMbgdRMB93BJIRC1jjmCotpXgXWrRdTb/SfhIAkoHqgGi2aCUHuLDInLGZCn8NeziGWMnFOic6/sE/nMpwriOmwLb2nyzD0fGiolwuuxlOGMcBHAb22J8XqchFHyCpbs2A/rWdJMjhUfqsErbtZQM93fi1xfL2pUa9RMWX0Q81Qk7iSEeHCR+NGyQ==");
+                "LhPRG5h6xo8Pk1tFIbiCt2S81S3jvDs5is9yO8uH87kVY0vpnOuxGgauKim9SnFGGxGmhQY4TJSrASlW6NsML2qIaxqsSFTNVUbct7MgdBBKqkoORNOq1gpLIymyI+G88qDaodOXkEAtUNYm4I6r1wkJVvdumrmRoHg8GcLpP//3J3hNELIJB2SC5SJ2pe4als+Psmjpd5xyK/qgDXf2qTmBooA0z673xqxjtd8H1FBlUCnGmTG3ClnGatmfjxIL0HF+PLyrmqzDO8UOjod0Kh2SwxH7zQikhr4VUihQ04MrP08nsGKjIPvZFAZiW7dnchVr4I/Tid0cbuthjmoWyw==");
 
         boolean result = AlipaySignature.rsaCertCheckV2(parameters, TestAccount.ProdCert.getConfig().getAppCertPath(), "utf-8", "RSA2");
 

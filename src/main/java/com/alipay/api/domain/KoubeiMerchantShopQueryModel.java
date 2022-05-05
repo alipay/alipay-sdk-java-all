@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询商户门店
  *
  * @author auto create
- * @since 1.0, 2021-10-26 12:01:50
+ * @since 1.0, 2022-05-05 17:44:11
  */
 public class KoubeiMerchantShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4492691278931719266L;
+	private static final long serialVersionUID = 7445747997776412768L;
 
 	/**
 	 * 用户从口碑商家中心页面跳转到ISV页面时url中带有的authCode值,用来ISV获取用户身份。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankEcnyTradeCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8596497314996927424L;
+	private static final long serialVersionUID = 5821545853931768589L;
 
 	/** 
 	 * 本次撤销触发的交易动作,接口调用成功且交易存在时返回。可能的返回值：

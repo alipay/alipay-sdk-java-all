@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.brandsolution.goodsstock.add request
  * 
  * @author auto create
- * @since 1.0, 2022-04-20 19:16:39
+ * @since 1.0, 2022-04-29 16:44:54
  */
 public class AlipayCommerceOperationBrandsolutionGoodsstockAddRequest implements AlipayRequest<AlipayCommerceOperationBrandsolutionGoodsstockAddResponse> {
 

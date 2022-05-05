@@ -469,11 +469,11 @@ public abstract class AbstractAlipayClient implements AlipayClient {
             return batchAlipayResponse;
         } catch (RuntimeException e) {
 
-            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap);
+            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap, rt);
             throw e;
         } catch (AlipayApiException e) {
 
-            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap);
+            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap, rt);
             throw new AlipayApiException(e);
         }
     }
@@ -497,9 +497,10 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         result.put("prepareTime", System.currentTimeMillis());
 
         String rsp = null;
+        Map<String, String> resHeaders = new HashMap<String, String>();
         try {
             rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
-                    connectTimeout, readTimeout, proxyHost, proxyPort, headers);
+                    connectTimeout, readTimeout, proxyHost, proxyPort, headers, resHeaders);
         } catch (IOException e) {
             throw new AlipayApiException(e);
         }
@@ -953,11 +954,11 @@ public abstract class AbstractAlipayClient implements AlipayClient {
             }
         } catch (RuntimeException e) {
 
-            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap);
+            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap, rt);
             throw e;
         } catch (AlipayApiException e) {
 
-            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap);
+            AlipayLogger.logBizError((String) rt.get("rsp"), costTimeMap, rt);
             throw new AlipayApiException(e);
         }
 
@@ -994,15 +995,16 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         result.put("prepareTime", System.currentTimeMillis());
 
         String rsp = null;
+        Map<String, String> resHeaders = new HashMap<String, String>();
         try {
             if (request instanceof AlipayUploadRequest) {
                 AlipayUploadRequest<T> uRequest = (AlipayUploadRequest<T>) request;
                 Map<String, FileItem> fileParams = AlipayUtils.cleanupMap(uRequest.getFileParams());
                 rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), fileParams,
-                        charset, connectTimeout, readTimeout, proxyHost, proxyPort, headers);
+                        charset, connectTimeout, readTimeout, proxyHost, proxyPort, headers, resHeaders);
             } else {
                 rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
-                        connectTimeout, readTimeout, proxyHost, proxyPort, headers);
+                        connectTimeout, readTimeout, proxyHost, proxyPort, headers, resHeaders);
             }
         } catch (SSLException e) {
             if (e.getMessage().contains("the trustAnchors parameter must be non-empty")
@@ -1020,6 +1022,9 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         result.put("protocalMustParams", requestHolder.getProtocalMustParams());
         result.put("protocalOptParams", requestHolder.getProtocalOptParams());
         result.put("url", url);
+        if (resHeaders.containsKey("trace_id")) {
+            result.put("trace_id", resHeaders.get("trace_id"));
+        }
         return result;
     }
 

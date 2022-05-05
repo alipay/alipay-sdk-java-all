@@ -73,9 +73,9 @@ public class TestAccount {
         public static AlipayConfig getConfig() {
             AlipayConfig config = new AlipayConfig();
             config.setServerUrl("https://openapi.alipay.com/gateway.do");
-            config.setAppId("2019091767145019");
+            config.setAppId("2021003126695331");
             config.setPrivateKey(getPrivateKey("ProdCert"));
-            config.setAppCertPath("src/test/resources/fixture/appCertPublicKey_2019091767145019.crt");
+            config.setAppCertPath("src/test/resources/fixture/appCertPublicKey_2021003126695331.crt");
             config.setAlipayPublicCertPath("src/test/resources/fixture/alipayCertPublicKey_RSA2.crt");
             config.setRootCertPath("src/test/resources/fixture/alipayRootCert.crt");
             return config;

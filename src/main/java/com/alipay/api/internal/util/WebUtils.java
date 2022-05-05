@@ -123,14 +123,14 @@ public class WebUtils {
      */
     public static String doPost(String url, Map<String, String> params, String charset,
                                 int connectTimeout, int readTimeout, String proxyHost,
-                                int proxyPort, Map<String, String> headers) throws IOException {
+                                int proxyPort, Map<String, String> headers, Map<String, String> resHeaders) throws IOException {
         String ctype = "application/x-www-form-urlencoded;charset=" + charset;
         String query = buildQuery(params, charset);
         byte[] content = {};
         if (query != null) {
             content = query.getBytes(charset);
         }
-        return doPost(url, ctype, content, connectTimeout, readTimeout, proxyHost, proxyPort, headers);
+        return doPost(url, ctype, content, connectTimeout, readTimeout, proxyHost, proxyPort, headers, resHeaders);
     }
 
     /**
@@ -147,7 +147,7 @@ public class WebUtils {
      * @throws IOException
      */
     public static String doPost(String url, String ctype, byte[] content, int connectTimeout,
-                                int readTimeout, String proxyHost, int proxyPort, Map<String, String> headers) throws IOException {
+                                int readTimeout, String proxyHost, int proxyPort, Map<String, String> headers, Map<String, String> resHeaders) throws IOException {
         HttpURLConnection conn = null;
         OutputStream out = null;
         String rsp = null;
@@ -170,6 +170,9 @@ public class WebUtils {
                 out = conn.getOutputStream();
                 out.write(content);
                 rsp = getResponseAsString(conn);
+                if (resHeaders != null) {
+                    resHeaders.put("trace_id", conn.getHeaderField("trace_id"));
+                }
             } catch (IOException e) {
                 Map<String, String> map = getParamsFromUrl(url);
                 AlipayLogger.logCommError(e, conn, map.get("app_key"), map.get("method"), content);
@@ -206,9 +209,9 @@ public class WebUtils {
     public static String doPost(String url, Map<String, String> params,
                                 Map<String, FileItem> fileParams, String charset,
                                 int connectTimeout, int readTimeout, String proxyHost,
-                                int proxyPort, Map<String, String> headers) throws IOException {
+                                int proxyPort, Map<String, String> headers, Map<String, String> resHeaders) throws IOException {
         if (fileParams == null || fileParams.isEmpty()) {
-            return doPost(url, params, charset, connectTimeout, readTimeout, proxyHost, proxyPort, headers);
+            return doPost(url, params, charset, connectTimeout, readTimeout, proxyHost, proxyPort, headers, resHeaders);
         }
 
         String boundary = System.currentTimeMillis() + ""; // 随机分隔线
@@ -262,6 +265,9 @@ public class WebUtils {
                 byte[] endBoundaryBytes = ("\r\n--" + boundary + "--\r\n").getBytes(charset);
                 out.write(endBoundaryBytes);
                 rsp = getResponseAsString(conn);
+                if (resHeaders != null) {
+                    resHeaders.put("trace_id", conn.getHeaderField("trace_id"));
+                }
             } catch (IOException e) {
                 Map<String, String> map = getParamsFromUrl(url);
                 AlipayLogger.logCommError(e, conn, map.get("app_key"), map.get("method"), params);

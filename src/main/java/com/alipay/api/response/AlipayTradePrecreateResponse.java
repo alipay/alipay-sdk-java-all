@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.precreate response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-06 13:36:36
+ * @since 1.0, 2022-05-05 14:45:49
  */
 public class AlipayTradePrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8159421771952884323L;
+	private static final long serialVersionUID = 4288274935124439135L;
 
 	/** 
 	 * 商户的订单号
@@ -21,7 +21,7 @@ public class AlipayTradePrecreateResponse extends AlipayResponse {
 	private String outTradeNo;
 
 	/** 
-	 * 当前预下单请求生成的二维码码串，可以用二维码生成工具根据该码串值生成对应的二维码
+	 * 当前预下单请求生成的二维码码串，有效时间2小时，可以用二维码生成工具根据该码串值生成对应的二维码
 	 */
 	@ApiField("qr_code")
 	private String qrCode;

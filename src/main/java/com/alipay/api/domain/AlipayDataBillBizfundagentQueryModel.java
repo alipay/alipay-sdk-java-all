@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillBizfundagentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8452185558771297754L;
+	private static final long serialVersionUID = 5351641262754988924L;
 
 	/**
 	 * ISV与商户授权协议号

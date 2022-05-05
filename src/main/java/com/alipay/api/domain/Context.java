@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Context extends AlipayObject {
 
-	private static final long serialVersionUID = 8419496815272412335L;
+	private static final long serialVersionUID = 6169627421185938423L;
 
 	/**
 	 * 底部链接描述文字，如“查看详情”，最多能传8个汉字或16个英文字符，长度超出会报错

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-20 17:17:06
+ * @since 1.0, 2022-04-28 11:21:39
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2626137693742245114L;
+	private static final long serialVersionUID = 2364481752159638331L;
 
 	/** 
 	 * 详细地址。
@@ -238,6 +238,12 @@ M：男性。
 	 */
 	@ApiField("identity_card_province")
 	private String identityCardProvince;
+
+	/** 
+	 * 是否是金融机构或特殊单位，"I"表示金融机构, "C"表示无余额账户的单位账户, "V", 表示虚拟主体(类似机构仅内部户无余额户), "N"表示非金融机构且非无余额账户的单位账户,"?"表示匿名用户
+	 */
+	@ApiField("inst_or_corp")
+	private String instOrCorp;
 
 	/** 
 	 * 余额账户是否被冻结。
@@ -627,6 +633,13 @@ W代表已注册，未激活的账户
 	}
 	public String getIdentityCardProvince( ) {
 		return this.identityCardProvince;
+	}
+
+	public void setInstOrCorp(String instOrCorp) {
+		this.instOrCorp = instOrCorp;
+	}
+	public String getInstOrCorp( ) {
+		return this.instOrCorp;
 	}
 
 	public void setIsBalanceFrozen(String isBalanceFrozen) {

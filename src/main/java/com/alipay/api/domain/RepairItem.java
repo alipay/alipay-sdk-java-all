@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RepairItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3715327912491186921L;
+	private static final long serialVersionUID = 4726716168254427855L;
 
 	/**
 	 * 配件编码

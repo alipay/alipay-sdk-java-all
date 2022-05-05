@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新增分账对手方名称字段
  *
  * @author auto create
- * @since 1.0, 2021-10-26 12:14:15
+ * @since 1.0, 2022-04-27 19:33:22
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 5887458134738815232L;
+	private static final long serialVersionUID = 8896871378187677167L;
 
 	/**
 	 * 分账的金额，单位为元

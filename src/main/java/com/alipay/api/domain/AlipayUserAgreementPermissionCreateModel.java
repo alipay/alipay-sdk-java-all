@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝协议支付许可创建接口
  *
  * @author auto create
- * @since 1.0, 2022-03-01 11:02:05
+ * @since 1.0, 2022-04-28 10:19:19
  */
 public class AlipayUserAgreementPermissionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5628768586898819358L;
+	private static final long serialVersionUID = 1557648142218616384L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ）

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4573645752294899193L;
+	private static final long serialVersionUID = 6599741394792166742L;
 
 	/**
 	 * 同步数据的列表

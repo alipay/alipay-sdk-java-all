@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncAntbudgetCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3551234832277528792L;
+	private static final long serialVersionUID = 1815786257723637613L;
 
 	/** 
 	 * 描述具体的错误信息，方便排查问题

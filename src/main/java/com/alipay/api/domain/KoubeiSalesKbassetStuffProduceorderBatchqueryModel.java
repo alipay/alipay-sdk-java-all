@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页获取口碑物料生产单
  *
  * @author auto create
- * @since 1.0, 2018-09-25 11:43:09
+ * @since 1.0, 2022-05-05 17:47:04
  */
 public class KoubeiSalesKbassetStuffProduceorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1136563988269444749L;
+	private static final long serialVersionUID = 7253646394657638759L;
 
 	/**
 	 * 每页容量：最小1，最大100

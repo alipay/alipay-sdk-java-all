@@ -15,15 +15,15 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-15 11:49:07
+ * @since 1.0, 2022-05-05 14:46:46
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1639439187659412629L;
+	private static final long serialVersionUID = 5885244745641474921L;
 
 	/** 
-	 * 银行卡冲退信息。
-该字段默认不返回；
+	 * 银行卡冲退信息；
+默认不返回该信息，需要在入参的query_options中指定"deposit_back_info"值时才返回该字段信息。
 	 */
 	@ApiField("deposit_back_info")
 	private DepositBackInfo depositBackInfo;

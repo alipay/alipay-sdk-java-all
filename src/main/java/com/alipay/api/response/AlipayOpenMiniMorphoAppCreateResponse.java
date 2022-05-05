@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniMorphoAppCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2713469495824189963L;
+	private static final long serialVersionUID = 5592652596352652844L;
 
 	/** 
 	 * 闪蝶应用ID
