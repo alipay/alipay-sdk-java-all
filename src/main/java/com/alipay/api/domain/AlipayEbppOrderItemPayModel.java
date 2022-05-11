@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业订单付款接口
  *
  * @author auto create
- * @since 1.0, 2021-04-07 20:39:16
+ * @since 1.0, 2022-05-11 16:33:10
  */
 public class AlipayEbppOrderItemPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6396987473873164754L;
+	private static final long serialVersionUID = 6297977891334471512L;
 
 	/**
 	 * 支付宝侧对预下单订单项的唯一标识

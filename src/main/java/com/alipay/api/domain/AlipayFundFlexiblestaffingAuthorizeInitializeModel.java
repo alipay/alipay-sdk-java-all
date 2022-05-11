@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工授权初始化
  *
  * @author auto create
- * @since 1.0, 2022-03-31 17:03:32
+ * @since 1.0, 2022-05-09 13:34:33
  */
 public class AlipayFundFlexiblestaffingAuthorizeInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5261246919481873933L;
+	private static final long serialVersionUID = 8386514367386716687L;
 
 	/**
 	 * 授权完成后的跳转地址，支持https的h5地址和小程序scheme url，不支持跳转支付宝端外app和页面。
@@ -36,6 +36,12 @@ public class AlipayFundFlexiblestaffingAuthorizeInitializeModel extends AlipayOb
 	 */
 	@ApiField("initialize_code_type")
 	private String initializeCodeType;
+
+	/**
+	 * 外部业务号，调用方自定义提供，授权结果推送和授权结果查询中都会提供此单号，用于串联授权流程
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 授权主体信息
@@ -75,6 +81,13 @@ public class AlipayFundFlexiblestaffingAuthorizeInitializeModel extends AlipayOb
 	}
 	public void setInitializeCodeType(String initializeCodeType) {
 		this.initializeCodeType = initializeCodeType;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public PrincipalPartyInfo getPrincipalPartyInfo() {

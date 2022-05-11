@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot门禁通过刷脸提交开门结果
  *
  * @author auto create
- * @since 1.0, 2021-10-29 10:08:20
+ * @since 1.0, 2022-05-07 10:52:15
  */
 public class AlipayOpenIotmbsDooropenresultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3672826666936197819L;
+	private static final long serialVersionUID = 2577974424981479787L;
 
 	/**
 	 * 设备激活序号

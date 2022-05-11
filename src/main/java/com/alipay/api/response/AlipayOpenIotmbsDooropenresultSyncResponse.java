@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.dooropenresult.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-29 10:10:33
+ * @since 1.0, 2022-05-07 10:52:15
  */
 public class AlipayOpenIotmbsDooropenresultSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7398956457332748894L;
+	private static final long serialVersionUID = 5445868192442447782L;
 
 	/** 
 	 * 成功true失败false

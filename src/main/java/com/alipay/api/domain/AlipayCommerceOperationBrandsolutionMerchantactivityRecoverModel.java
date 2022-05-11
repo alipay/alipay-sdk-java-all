@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 快消百万小店商家单品活动恢复
  *
  * @author auto create
- * @since 1.0, 2022-04-29 15:14:34
+ * @since 1.0, 2022-05-09 13:23:34
  */
 public class AlipayCommerceOperationBrandsolutionMerchantactivityRecoverModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7191144149263235417L;
+	private static final long serialVersionUID = 5587451863958271474L;
 
 	/**
 	 * 活动唯一标识

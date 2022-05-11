@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金转账页面支付接口
  *
  * @author auto create
- * @since 1.0, 2021-04-28 23:45:25
+ * @since 1.0, 2022-05-06 17:20:08
  */
 public class AlipayFundTransPagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3477874345928947743L;
+	private static final long serialVersionUID = 7247549498572484243L;
 
 	/**
 	 * 描述特定的业务场景，比如对党费缴纳场景需走党费专户
@@ -24,6 +24,12 @@ public class AlipayFundTransPagePayModel extends AlipayObject {
 	 */
 	@ApiField("business_params")
 	private String businessParams;
+
+	/**
+	 * 支付宝订单号，仅批量有密场景下生效
+	 */
+	@ApiField("order_id")
+	private String orderId;
 
 	/**
 	 * 转账订单的标题，用于在收银台和消费记录展示
@@ -97,6 +103,13 @@ public class AlipayFundTransPagePayModel extends AlipayObject {
 	}
 	public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
+	}
+
+	public String getOrderId() {
+		return this.orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
 	}
 
 	public String getOrderTitle() {

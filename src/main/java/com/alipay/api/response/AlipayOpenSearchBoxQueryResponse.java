@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.box.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-22 16:51:43
+ * @since 1.0, 2022-05-07 10:52:38
  */
 public class AlipayOpenSearchBoxQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1846684335798119238L;
+	private static final long serialVersionUID = 8279943486847383174L;
 
 	/** 
 	 * 搜索直达账号模块
@@ -40,7 +40,7 @@ public class AlipayOpenSearchBoxQueryResponse extends AlipayResponse {
 	private String boxId;
 
 	/** 
-	 * 搜索直达配置状态，INITIAL-初始/AUDIT-审核中/CANCEL-已取消/ONLINE-已上架/REJECT-驳回/OFFLINE-已下架/EXPIRE-已失效
+	 * 搜索直达配置状态，AUDIT-审核中/ONLINE-已上架/REJECT-驳回/OFFLINE-已下架
 	 */
 	@ApiField("box_status")
 	private String boxStatus;

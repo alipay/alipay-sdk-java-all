@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 系统模板消息发送
  *
  * @author auto create
- * @since 1.0, 2022-04-19 16:19:03
+ * @since 1.0, 2022-05-09 16:42:47
  */
 public class AlipayEcoMycarSystemTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2561375624132998293L;
+	private static final long serialVersionUID = 1816382355192838686L;
 
 	/**
 	 * 消息类容

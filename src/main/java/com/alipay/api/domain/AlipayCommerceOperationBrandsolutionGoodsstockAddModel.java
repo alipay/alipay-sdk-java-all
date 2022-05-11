@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 快消百万小店商家单品活动库存增加接口
  *
  * @author auto create
- * @since 1.0, 2022-04-29 16:44:54
+ * @since 1.0, 2022-05-09 13:23:16
  */
 public class AlipayCommerceOperationBrandsolutionGoodsstockAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6463547727753314418L;
+	private static final long serialVersionUID = 2714394159843144327L;
 
 	/**
 	 * 活动唯一标识

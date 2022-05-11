@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 即时到账批量退款接口
  *
  * @author auto create
- * @since 1.0, 2016-11-21 12:06:26
+ * @since 1.0, 2022-05-07 18:07:51
  */
 public class AlipayTradeBatchRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6321948732218124664L;
+	private static final long serialVersionUID = 3318276778624421343L;
 
 	/**
 	 * 每进行一次即时到账批量退款，都需要提供一个批次号，通过该批次号可以查询这一批次的退款交易记录。对于每一个合作伙伴，传递的每一个批次号都必须保证唯一性。

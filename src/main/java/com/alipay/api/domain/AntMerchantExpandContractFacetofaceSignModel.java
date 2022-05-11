@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandContractFacetofaceSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7195811972783213441L;
+	private static final long serialVersionUID = 4886248826173734998L;
 
 	/**
 	 * 营业执照授权函图片，个体工商户如果使用总公司或其他公司的营业执照认证需上传该授权函图片，通过ant.merchant.expand.image.upload接口上传营业执照授权函图片

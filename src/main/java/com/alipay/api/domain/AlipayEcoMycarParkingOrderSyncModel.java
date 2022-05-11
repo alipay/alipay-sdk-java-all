@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单同步接口
  *
  * @author auto create
- * @since 1.0, 2022-04-11 15:05:41
+ * @since 1.0, 2022-05-05 21:44:50
  */
 public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7311187366493785556L;
+	private static final long serialVersionUID = 5692744659165725215L;
 
 	/**
 	 * 该笔停车交易需要返佣的对象实体PID，可能是商户，可能是ISV；只做下沉，用于离线表层面对账。
@@ -76,6 +76,12 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	private String outParkingId;
 
 	/**
+	 * 出场时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制
+	 */
+	@ApiField("out_time")
+	private String outTime;
+
+	/**
 	 * 支付宝停车平台ID，由支付宝定义的该停车场标识，同一个isv或商户范围内唯一。通过 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口获取。
 	 */
 	@ApiField("parking_id")
@@ -100,6 +106,12 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	private String payMoney;
 
 	/**
+	 * 支付场景：INPARKINGLOT_PAY：场内在线缴费；ENTRANCE_EXIT_PAY：出入口缴费、VEH_DEVICE_PAY：车机缴费；会根据场景判断是否发放能量，当前只有场内支付场景会发能量，需要能量发放请与服务接入支持同学提前沟通。
+	 */
+	@ApiField("pay_scene")
+	private String payScene;
+
+	/**
 	 * 缴费时间, 格式"YYYYMM-DD HH:mm:ss"，24小时制
 	 */
 	@ApiField("pay_time")
@@ -107,9 +119,7 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 
 	/**
 	 * 付款方式，枚举支持：
-*1：支付宝在线缴费 。
-*2：支付宝代扣缴费。
-*FTF_IN_PARKINGLOT_PAY：用户通过支付宝场内主动扫码或者提前在线缴费。
+*1：支付宝在线缴费。
 	 */
 	@ApiField("pay_type")
 	private String payType;
@@ -197,6 +207,13 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 		this.outParkingId = outParkingId;
 	}
 
+	public String getOutTime() {
+		return this.outTime;
+	}
+	public void setOutTime(String outTime) {
+		this.outTime = outTime;
+	}
+
 	public String getParkingId() {
 		return this.parkingId;
 	}
@@ -223,6 +240,13 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	}
 	public void setPayMoney(String payMoney) {
 		this.payMoney = payMoney;
+	}
+
+	public String getPayScene() {
+		return this.payScene;
+	}
+	public void setPayScene(String payScene) {
+		this.payScene = payScene;
 	}
 
 	public String getPayTime() {

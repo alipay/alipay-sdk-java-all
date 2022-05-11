@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot根据人脸图片查询人脸唯一序号
  *
  * @author auto create
- * @since 1.0, 2021-10-29 10:07:35
+ * @since 1.0, 2022-05-07 10:52:59
  */
 public class AlipayOpenIotmbsFacedbCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7482325921262743611L;
+	private static final long serialVersionUID = 2756143936735242154L;
 
 	/**
 	 * 人脸ID

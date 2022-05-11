@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass新建卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2021-11-25 12:13:08
+ * @since 1.0, 2022-05-09 09:53:25
  */
 public class AlipayPassInstanceAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2669989293421623162L;
+	private static final long serialVersionUID = 2714319975752466449L;
 
 	/**
 	 * 支付宝用户识别信息，详见 <a href="https://opendocs.alipay.com/open/199/popvoucher#%E7%AC%AC%E4%BA%94%E6%AD%A5%EF%BC%9A%E8%B0%83%E7%94%A8%E6%8E%A5%E5%8F%A3%E5%8F%91%E5%88%B8">调用接口发券</a>。

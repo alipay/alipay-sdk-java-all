@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单项预创建接口
  *
  * @author auto create
- * @since 1.0, 2021-04-07 20:39:44
+ * @since 1.0, 2022-05-11 16:34:29
  */
 public class AlipayEbppOrderItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5348984928462889725L;
+	private static final long serialVersionUID = 5363339415941285656L;
 
 	/**
 	 * 预创单失效时间，此时间点后不允许再支付。

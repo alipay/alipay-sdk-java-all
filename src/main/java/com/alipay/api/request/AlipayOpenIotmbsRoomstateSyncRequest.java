@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.roomstate.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-10-29 10:10:33
+ * @since 1.0, 2022-05-07 10:52:30
  */
 public class AlipayOpenIotmbsRoomstateSyncRequest implements AlipayRequest<AlipayOpenIotmbsRoomstateSyncResponse> {
 

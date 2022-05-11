@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TemplateOpenCardConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6689658384424184421L;
+	private static final long serialVersionUID = 7568821713341264337L;
 
 	/**
 	 * 领卡权益信息

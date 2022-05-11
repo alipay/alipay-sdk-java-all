@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * LinkedMall下单之前调用积分扣减做权益兑换
  *
  * @author auto create
- * @since 1.0, 2022-04-19 19:53:38
+ * @since 1.0, 2022-05-09 20:28:54
  */
 public class AlipayMerchantMrchsurplmorderPointPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8361934635739122571L;
+	private static final long serialVersionUID = 6843645834554769958L;
 
 	/**
 	 * LinkedMall入驻的业务ID

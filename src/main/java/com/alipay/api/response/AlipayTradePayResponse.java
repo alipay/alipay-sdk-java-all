@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-19 23:12:35
+ * @since 1.0, 2022-05-07 19:36:48
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3559653235771829311L;
+	private static final long serialVersionUID = 8254458791162784115L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -82,6 +82,12 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	 */
 	@ApiField("buyer_user_type")
 	private String buyerUserType;
+
+	/** 
+	 * 是否可以转为app支付，仅当商户代扣失败场景才会返回该字段信息
+	 */
+	@ApiField("can_turn_to_app_pay")
+	private String canTurnToAppPay;
 
 	/** 
 	 * 支付宝卡余额
@@ -333,6 +339,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	}
 	public String getBuyerUserType( ) {
 		return this.buyerUserType;
+	}
+
+	public void setCanTurnToAppPay(String canTurnToAppPay) {
+		this.canTurnToAppPay = canTurnToAppPay;
+	}
+	public String getCanTurnToAppPay( ) {
+		return this.canTurnToAppPay;
 	}
 
 	public void setCardBalance(String cardBalance) {

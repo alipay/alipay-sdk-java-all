@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户流水VO
  *
  * @author auto create
- * @since 1.0, 2022-01-05 15:28:59
+ * @since 1.0, 2022-05-06 14:26:36
  */
 public class AccountingLogVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1287397833295327258L;
+	private static final long serialVersionUID = 5726416337924269293L;
 
 	/**
 	 * 交易账户
@@ -50,6 +50,12 @@ OUT:流出
 	 */
 	@ApiField("order_no")
 	private String orderNo;
+
+	/**
+	 * 对手方账户
+	 */
+	@ApiField("other_account")
+	private String otherAccount;
 
 	/**
 	 * 外部请求号,跟分账或提现的out_request_no保持一致
@@ -115,6 +121,13 @@ OUT:流出
 	}
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
+	}
+
+	public String getOtherAccount() {
+		return this.otherAccount;
+	}
+	public void setOtherAccount(String otherAccount) {
+		this.otherAccount = otherAccount;
 	}
 
 	public String getOutRequestNo() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.batch.settle response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-21 17:39:13
+ * @since 1.0, 2022-05-07 19:10:02
  */
 public class AlipayTradeBatchSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1731626993333616162L;
+	private static final long serialVersionUID = 1666163719841555256L;
 
 	/** 
 	 * 结算受理时间
@@ -39,7 +39,7 @@ SYSTEM_EXCEPTION：系统异常
 	private String resultCode;
 
 	/** 
-	 * 结算单据号
+	 * 结算单据号。仅当业务结果码为ACCEPT_SUCCESS 或 SUCCESS时，settle_no有效
 	 */
 	@ApiField("settle_no")
 	private String settleNo;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资金见证提现
  *
  * @author auto create
- * @since 1.0, 2022-01-13 16:43:29
+ * @since 1.0, 2022-05-06 16:15:13
  */
 public class AlipayFincoreFunddsFundWitnessWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2114369641648776293L;
+	private static final long serialVersionUID = 2887421875481217488L;
 
 	/**
 	 * 必填，外部流水号，幂等字段

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserFacePaySkinInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5145449521252613788L;
+	private static final long serialVersionUID = 3872832536153127152L;
 
 	/**
 	 * 支持该皮肤的客户端最低版本

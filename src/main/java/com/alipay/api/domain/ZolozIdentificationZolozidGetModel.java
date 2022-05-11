@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZolozIdentificationZolozidGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7884458988479418799L;
+	private static final long serialVersionUID = 5877471845747555161L;
 
 	/**
 	 * get region

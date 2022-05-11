@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserVirtualcardSignEffectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3874619631915468649L;
+	private static final long serialVersionUID = 4487153119456278914L;
 
 	/** 
 	 * 商户定义的卡号，card_type+card_no要控制唯一性

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot触发人脸采集动作
  *
  * @author auto create
- * @since 1.0, 2021-10-29 10:07:58
+ * @since 1.0, 2022-05-07 10:52:45
  */
 public class AlipayOpenIotmbsFacecheckSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2321443984341457729L;
+	private static final long serialVersionUID = 1796674388189452621L;
 
 	/**
 	 * 设备激活序号

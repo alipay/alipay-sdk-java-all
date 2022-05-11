@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放内容
  *
  * @author auto create
- * @since 1.0, 2022-04-24 11:05:40
+ * @since 1.0, 2022-05-09 21:20:20
  */
 public class DeliverySingleSendConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2796875578767446523L;
+	private static final long serialVersionUID = 2279342155614764469L;
+
+	/**
+	 * 推广内容配置
+	 */
+	@ApiField("delivery_content_config")
+	private DeliveryContentConfig deliveryContentConfig;
 
 	/**
 	 * 投放展位的投放内容。
 	 */
 	@ApiField("delivery_content_info")
 	private DeliveryContentInfo deliveryContentInfo;
+
+	public DeliveryContentConfig getDeliveryContentConfig() {
+		return this.deliveryContentConfig;
+	}
+	public void setDeliveryContentConfig(DeliveryContentConfig deliveryContentConfig) {
+		this.deliveryContentConfig = deliveryContentConfig;
+	}
 
 	public DeliveryContentInfo getDeliveryContentInfo() {
 		return this.deliveryContentInfo;

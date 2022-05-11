@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-03-09 14:59:56
+ * @since 1.0, 2022-05-10 19:45:56
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5151864537187425168L;
+	private static final long serialVersionUID = 3579566533312525385L;
 
 	/**
 	 * 订单金额，单位为【元】。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
@@ -79,9 +79,7 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	private List<OrderLogisticsInformationRequest> logisticsInfoList;
 
 	/**
-	 * 订单授权码
-利用订单同步前获取的formId作为订单授权码。订单授权码对应的小程序id与买家uid与同步订单的小程序id和买家uid一致
-注：自2022年1月14日起，该字段可无需填写
+	 * 本字段已废弃，无需填写！
 	 */
 	@ApiField("order_auth_code")
 	private String orderAuthCode;

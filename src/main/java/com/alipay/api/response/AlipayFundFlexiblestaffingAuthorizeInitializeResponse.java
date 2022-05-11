@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.authorize.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-22 17:31:49
+ * @since 1.0, 2022-05-09 14:06:39
  */
 public class AlipayFundFlexiblestaffingAuthorizeInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5172138129311728915L;
+	private static final long serialVersionUID = 5599817963711861654L;
 
 	/** 
 	 * 灵工授权场景码
@@ -31,6 +31,12 @@ public class AlipayFundFlexiblestaffingAuthorizeInitializeResponse extends Alipa
 	 */
 	@ApiField("initialize_code_type")
 	private String initializeCodeType;
+
+	/** 
+	 * 外部业务号，和接口输入的外部单号保持一致
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/** 
 	 * 灵工授权产品码
@@ -57,6 +63,13 @@ public class AlipayFundFlexiblestaffingAuthorizeInitializeResponse extends Alipa
 	}
 	public String getInitializeCodeType( ) {
 		return this.initializeCodeType;
+	}
+
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
+	}
+	public String getOutBizNo( ) {
+		return this.outBizNo;
 	}
 
 	public void setProductCode(String productCode) {

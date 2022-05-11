@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * app支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2022-04-24 12:02:33
+ * @since 1.0, 2022-05-11 17:49:17
  */
 public class AlipayTradeAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3785654673914663911L;
+	private static final long serialVersionUID = 7343871183819966182L;
 
 	/**
 	 * 签约参数。如果希望在sdk中支付并签约，需要在这里传入签约信息。
@@ -122,6 +122,13 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	 */
 	@ApiField("promo_params")
 	private String promoParams;
+
+	/**
+	 * 通知参数选项。 商户通过传递该参数来定制需要异步通知的额外字段，数组格式。包括但不限于：["fund_bill_list","voucher_detail_list","enterprise_pay_info","discount_goods_detail","discount_amount","mdiscount_amount"]
+	 */
+	@ApiListField("query_options")
+	@ApiField("string")
+	private List<String> queryOptions;
 
 	/**
 	 * 描述分账信息，json格式，详见分账参数说明
@@ -308,6 +315,13 @@ json格式，详见结算参数说明。
 	}
 	public void setPromoParams(String promoParams) {
 		this.promoParams = promoParams;
+	}
+
+	public List<String> getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(List<String> queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 	public RoyaltyInfo getRoyaltyInfo() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BookTime extends AlipayObject {
 
-	private static final long serialVersionUID = 2123183248852377839L;
+	private static final long serialVersionUID = 5681579148442396246L;
 
 	/**
 	 * 可预定时间段。格式： HH:mm:ss

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 泛娱乐优惠商品上报
  *
  * @author auto create
- * @since 1.0, 2022-04-22 19:49:03
+ * @since 1.0, 2022-05-10 11:37:12
  */
 public class AlipayCommerceEntertainmentItemUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1427359147124595696L;
+	private static final long serialVersionUID = 4147763954285485351L;
 
 	/**
 	 * 商品是否启用（对客展示），true/false

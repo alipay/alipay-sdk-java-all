@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankFinanceYulibaoTransHistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5459766929926565994L;
+	private static final long serialVersionUID = 1536836779496733994L;
 
 	/** 
 	 * 历史交易记录查询的当前页码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot房间设备上报事件
  *
  * @author auto create
- * @since 1.0, 2021-10-29 10:57:17
+ * @since 1.0, 2022-05-07 10:51:14
  */
 public class AlipayOpenIotroomdeviceEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5839335875127734621L;
+	private static final long serialVersionUID = 4735952835289654199L;
 
 	/**
 	 * 设备ID

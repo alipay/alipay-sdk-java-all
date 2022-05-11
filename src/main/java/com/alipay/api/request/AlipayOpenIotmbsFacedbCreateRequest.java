@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.facedb.create request
  * 
  * @author auto create
- * @since 1.0, 2021-10-29 10:07:48
+ * @since 1.0, 2022-05-07 10:52:59
  */
 public class AlipayOpenIotmbsFacedbCreateRequest implements AlipayRequest<AlipayOpenIotmbsFacedbCreateResponse> {
 

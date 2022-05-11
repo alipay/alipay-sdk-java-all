@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiServindustryExerciseMemberphoneSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8297423253855979795L;
+	private static final long serialVersionUID = 6354611953788988499L;
 
 	/** 
 	 * 健身用户手机号与健身用户id映射

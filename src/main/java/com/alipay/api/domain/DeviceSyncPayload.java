@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeviceSyncPayload extends AlipayObject {
 
-	private static final long serialVersionUID = 1855449235568634891L;
+	private static final long serialVersionUID = 6386468761329195262L;
 
 	/**
 	 * 触发行为:绑定、解绑、变更等

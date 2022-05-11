@@ -12,17 +12,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-28 11:21:39
+ * @since 1.0, 2022-05-11 14:41:42
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2364481752159638331L;
+	private static final long serialVersionUID = 5132622482715416239L;
 
 	/** 
 	 * 详细地址。
 	 */
 	@ApiField("address")
 	private String address;
+
+	/** 
+	 * 用户年龄，实名认证为T，且证件类型为身份证，则输出年龄字段，否则不输出
+	 */
+	@ApiField("age")
+	private String age;
 
 	/** 
 	 * 区县名称。
@@ -32,6 +38,7 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 
 	/** 
 	 * 用户头像地址。
+注意：如果没有数据（用户未设置）时不会返回该信息，请做好容错。
 	 */
 	@ApiField("avatar")
 	private String avatar;
@@ -246,6 +253,12 @@ M：男性。
 	private String instOrCorp;
 
 	/** 
+	 * T/F, 实名认证为T，且证件类型为身份证，则输出是否成年字段，否则不输出
+	 */
+	@ApiField("is_adult")
+	private String isAdult;
+
+	/** 
 	 * 余额账户是否被冻结。
 T--被冻结；F--未冻结
 	 */
@@ -290,6 +303,7 @@ T--被冻结；F--未冻结
 
 	/** 
 	 * 用户昵称。
+注意：如果没有数据（用户未设置）时不会返回该信息，请做好容错。
 	 */
 	@ApiField("nick_name")
 	private String nickName;
@@ -395,6 +409,13 @@ W代表已注册，未激活的账户
 	}
 	public String getAddress( ) {
 		return this.address;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+	public String getAge( ) {
+		return this.age;
 	}
 
 	public void setArea(String area) {
@@ -640,6 +661,13 @@ W代表已注册，未激活的账户
 	}
 	public String getInstOrCorp( ) {
 		return this.instOrCorp;
+	}
+
+	public void setIsAdult(String isAdult) {
+		this.isAdult = isAdult;
+	}
+	public String getIsAdult( ) {
+		return this.isAdult;
 	}
 
 	public void setIsBalanceFrozen(String isBalanceFrozen) {

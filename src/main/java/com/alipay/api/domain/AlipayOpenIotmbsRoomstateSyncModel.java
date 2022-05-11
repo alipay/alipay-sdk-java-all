@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot提交房间的场景开关状态
  *
  * @author auto create
- * @since 1.0, 2021-10-29 10:08:41
+ * @since 1.0, 2022-05-07 10:52:30
  */
 public class AlipayOpenIotmbsRoomstateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5229678318635444433L;
+	private static final long serialVersionUID = 6275747697225737452L;
 
 	/**
 	 * 设备激活序号

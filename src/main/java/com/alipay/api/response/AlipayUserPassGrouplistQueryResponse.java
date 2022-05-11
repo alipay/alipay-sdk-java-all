@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserPassGrouplistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1778221191258818915L;
+	private static final long serialVersionUID = 1467187824986813652L;
 
 	/** 
 	 * 券信息列表

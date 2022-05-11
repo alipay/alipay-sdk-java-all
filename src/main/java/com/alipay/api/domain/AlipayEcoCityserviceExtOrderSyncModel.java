@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易订单回流接口
  *
  * @author auto create
- * @since 1.0, 2022-03-01 10:45:53
+ * @since 1.0, 2022-05-07 16:46:19
  */
 public class AlipayEcoCityserviceExtOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7461422627423237225L;
+	private static final long serialVersionUID = 5795887382383383569L;
 
 	/**
 	 * appid，订单归属的小程序id，当order_type=1时 必填

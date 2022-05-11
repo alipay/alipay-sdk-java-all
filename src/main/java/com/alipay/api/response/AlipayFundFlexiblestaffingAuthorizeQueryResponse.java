@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.authorize.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-22 17:31:49
+ * @since 1.0, 2022-05-09 14:06:39
  */
 public class AlipayFundFlexiblestaffingAuthorizeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2271653542939749798L;
+	private static final long serialVersionUID = 1364672693412338848L;
 
 	/** 
 	 * 授权时间，格式：yyyy-MM-dd HH:mm:ss
@@ -31,6 +31,12 @@ public class AlipayFundFlexiblestaffingAuthorizeQueryResponse extends AlipayResp
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/** 
+	 * 外部业务号，取值为授权初始化接口中提供的out_biz_no单号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/** 
 	 * 授权主体的支付宝账户ID
@@ -69,6 +75,13 @@ public class AlipayFundFlexiblestaffingAuthorizeQueryResponse extends AlipayResp
 	}
 	public String getBizScene( ) {
 		return this.bizScene;
+	}
+
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
+	}
+	public String getOutBizNo( ) {
+		return this.outBizNo;
 	}
 
 	public void setPrincipalId(String principalId) {

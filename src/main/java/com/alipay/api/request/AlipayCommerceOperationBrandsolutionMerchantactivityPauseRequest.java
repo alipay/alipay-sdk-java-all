@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.brandsolution.merchantactivity.pause request
  * 
  * @author auto create
- * @since 1.0, 2022-04-29 16:44:54
+ * @since 1.0, 2022-05-09 13:23:18
  */
 public class AlipayCommerceOperationBrandsolutionMerchantactivityPauseRequest implements AlipayRequest<AlipayCommerceOperationBrandsolutionMerchantactivityPauseResponse> {
 

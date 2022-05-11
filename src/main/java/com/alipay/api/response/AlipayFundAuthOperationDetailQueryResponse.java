@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-11 20:46:43
+ * @since 1.0, 2022-05-06 18:16:47
  */
 public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8375451734635416576L;
+	private static final long serialVersionUID = 8365193679897479645L;
 
 	/** 
-	 * 该笔资金操作流水opertion_id对应的操作金额，单位为：元（人民币）
+	 * 该笔资金操作流水operation_id对应的操作金额，单位为：元（人民币）
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -28,7 +28,7 @@ public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 	private String authNo;
 
 	/** 
-	 * 该笔资金操作流水opertion_id对应的操作信用金额
+	 * 该笔资金操作流水operation_id对应的操作信用金额
 	 */
 	@ApiField("credit_amount")
 	private String creditAmount;
@@ -52,7 +52,7 @@ public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 	private String extraParam;
 
 	/** 
-	 * 该笔资金操作流水opertion_id对应的操作自有资金金额
+	 * 该笔资金操作流水operation_id对应的操作自有资金金额
 	 */
 	@ApiField("fund_amount")
 	private String fundAmount;
@@ -124,8 +124,7 @@ PAY：支付
 	private String payerUserId;
 
 	/** 
-	 * 预授权类型，目前支持 CREDIT_AUTH(信用预授权);
-商户可根据该标识来判断该笔预授权的类型，当返回值为"CREDIT_AUTH"表明该笔预授权为信用预授权，没有真实冻结资金；当返回值为空或者不为"CREDIT_AUTH"则表明该笔预授权为普通资金预授权，会冻结用户资金。
+	 * 预授权类型，信用预授权情况下值为 CREDIT_AUTH，表示该笔预授权为信用预授权，实际没有冻结用户资金；其它情况均不返回该字段。
 	 */
 	@ApiField("pre_auth_type")
 	private String preAuthType;
@@ -137,7 +136,7 @@ PAY：支付
 	private String remark;
 
 	/** 
-	 * 订单总共剩余的冻结金额，单位为：元（人民币）
+	 * 订单当前剩余冻结金额，单位为：元（人民币）。
 	 */
 	@ApiField("rest_amount")
 	private String restAmount;
