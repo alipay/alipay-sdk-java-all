@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用应用授权码（app_auth_code）换取或者刷新应用授权令牌(app_auth_token)
  *
  * @author auto create
- * @since 1.0, 2020-12-14 14:22:12
+ * @since 1.0, 2022-05-13 17:16:04
  */
 public class AlipayOpenAuthTokenAppModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4421629684477381424L;
+	private static final long serialVersionUID = 7864648589893819115L;
 
 	/**
 	 * 应用授权码，传入应用授权后得到的  app_auth_code。

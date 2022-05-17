@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiAuthRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8116785929128967413L;
+	private static final long serialVersionUID = 4536582617924258268L;
 
 	/**
 	 * 签约花芝的业务协议号，在签约成功、结算成功等通知中回回传给商户。

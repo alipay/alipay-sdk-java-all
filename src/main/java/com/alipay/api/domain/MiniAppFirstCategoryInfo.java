@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MiniAppFirstCategoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7473823429346746629L;
+	private static final long serialVersionUID = 8356333392842759997L;
 
 	/**
 	 * 旅行住宿

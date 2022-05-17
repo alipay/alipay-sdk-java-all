@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeskAreaEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 5227884369139576515L;
+	private static final long serialVersionUID = 8249572827869972731L;
 
 	/**
 	 * 区域Id（新增时无需设值）

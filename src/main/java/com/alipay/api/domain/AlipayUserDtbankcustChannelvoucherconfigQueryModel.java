@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道红包活动配置查询接口
  *
  * @author auto create
- * @since 1.0, 2021-10-15 19:37:12
+ * @since 1.0, 2022-05-12 15:58:51
  */
 public class AlipayUserDtbankcustChannelvoucherconfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6399364227962422159L;
+	private static final long serialVersionUID = 4827861684427589394L;
 
 	/**
 	 * 在开放活动平台配置活动的唯一id，唯一标志一个活动

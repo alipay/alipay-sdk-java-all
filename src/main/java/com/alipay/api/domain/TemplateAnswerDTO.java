@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模版答题要素
  *
  * @author auto create
- * @since 1.0, 2022-04-06 16:05:38
+ * @since 1.0, 2022-05-17 01:03:24
  */
 public class TemplateAnswerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8435923483573319228L;
+	private static final long serialVersionUID = 6473424531921543345L;
 
 	/**
 	 * 答题对应的表达式
@@ -33,6 +33,24 @@ public class TemplateAnswerDTO extends AlipayObject {
 	 */
 	@ApiField("label_name")
 	private String labelName;
+
+	/**
+	 * 父问卷表达式
+	 */
+	@ApiField("parent_exp")
+	private String parentExp;
+
+	/**
+	 * 父问卷唯一标识
+	 */
+	@ApiField("parent_id")
+	private String parentId;
+
+	/**
+	 * 父问卷结果
+	 */
+	@ApiField("parent_result")
+	private String parentResult;
 
 	/**
 	 * 表单提示
@@ -78,6 +96,27 @@ public class TemplateAnswerDTO extends AlipayObject {
 	}
 	public void setLabelName(String labelName) {
 		this.labelName = labelName;
+	}
+
+	public String getParentExp() {
+		return this.parentExp;
+	}
+	public void setParentExp(String parentExp) {
+		this.parentExp = parentExp;
+	}
+
+	public String getParentId() {
+		return this.parentId;
+	}
+	public void setParentId(String parentId) {
+		this.parentId = parentId;
+	}
+
+	public String getParentResult() {
+		return this.parentResult;
+	}
+	public void setParentResult(String parentResult) {
+		this.parentResult = parentResult;
 	}
 
 	public String getPlaceholder() {

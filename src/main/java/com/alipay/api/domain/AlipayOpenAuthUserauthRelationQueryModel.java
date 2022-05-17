@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 协议授权关系查询
  *
  * @author auto create
- * @since 1.0, 2022-04-22 14:28:30
+ * @since 1.0, 2022-05-13 17:15:05
  */
 public class AlipayOpenAuthUserauthRelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1748742171476677725L;
+	private static final long serialVersionUID = 8482345366727733584L;
 
 	/**
 	 * 支付宝用户uid

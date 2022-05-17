@@ -8,11 +8,11 @@ import com.alipay.api.internal.mapping.ApiField;
 限制：投放玩法配置有且仅能配置一个。
  *
  * @author auto create
- * @since 1.0, 2022-04-24 11:05:40
+ * @since 1.0, 2022-05-16 10:10:42
  */
 public class DeliveryPlayConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 7597881267773511977L;
+	private static final long serialVersionUID = 7336998842973171927L;
 
 	/**
 	 * 满额送玩法投放内容配置。

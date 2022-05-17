@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建行业任务模版
  *
  * @author auto create
- * @since 1.0, 2022-04-18 10:21:27
+ * @since 1.0, 2022-05-12 16:01:38
  */
 public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5145996658377597139L;
+	private static final long serialVersionUID = 7488548291878819787L;
 
 	/**
 	 * 来源渠道
@@ -76,6 +76,12 @@ public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 	private String sceneType;
 
 	/**
+	 * 任务适用门店范围类型(MULTI_SHOP-多门店任务，SINGLE_SHOP-单门店任务)
+	 */
+	@ApiField("shop_scope_type")
+	private String shopScopeType;
+
+	/**
 	 * 开始时间
 	 */
 	@ApiField("start_time")
@@ -98,6 +104,16 @@ public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 	 */
 	@ApiField("target_type")
 	private String targetType;
+
+	/**
+	 * 任务监听规则类型，监听范围包括账号(pid_smid)，门店(shop_store)，小程序(appId)：
+1. pid_smid_appId - 账号+小程序
+2. pid_smid_shop_store - 账号+门店
+3. pid_smid - 账号
+4. pid_smid_shop_store_appId - 账号+门店+小程序
+	 */
+	@ApiField("task_rule_type")
+	private String taskRuleType;
 
 	/**
 	 * 任务类型：ZMGO-芝麻GO活动
@@ -181,6 +197,13 @@ public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 		this.sceneType = sceneType;
 	}
 
+	public String getShopScopeType() {
+		return this.shopScopeType;
+	}
+	public void setShopScopeType(String shopScopeType) {
+		this.shopScopeType = shopScopeType;
+	}
+
 	public Date getStartTime() {
 		return this.startTime;
 	}
@@ -207,6 +230,13 @@ public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 	}
 	public void setTargetType(String targetType) {
 		this.targetType = targetType;
+	}
+
+	public String getTaskRuleType() {
+		return this.taskRuleType;
+	}
+	public void setTaskRuleType(String taskRuleType) {
+		this.taskRuleType = taskRuleType;
 	}
 
 	public String getType() {

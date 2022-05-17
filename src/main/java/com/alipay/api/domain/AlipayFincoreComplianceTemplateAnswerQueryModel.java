@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同模板答题要素查询
  *
  * @author auto create
- * @since 1.0, 2021-12-23 14:28:34
+ * @since 1.0, 2022-05-17 01:03:24
  */
 public class AlipayFincoreComplianceTemplateAnswerQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3454874713117841289L;
+	private static final long serialVersionUID = 7213531197127874129L;
+
+	/**
+	 * 业务要素
+	 */
+	@ApiField("biz_object_def_json")
+	private String bizObjectDefJson;
 
 	/**
 	 * 模版编码
@@ -24,6 +30,13 @@ public class AlipayFincoreComplianceTemplateAnswerQueryModel extends AlipayObjec
 	 */
 	@ApiField("tenant")
 	private String tenant;
+
+	public String getBizObjectDefJson() {
+		return this.bizObjectDefJson;
+	}
+	public void setBizObjectDefJson(String bizObjectDefJson) {
+		this.bizObjectDefJson = bizObjectDefJson;
+	}
 
 	public String getTemplateCode() {
 		return this.templateCode;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RightNoSendList extends AlipayObject {
 
-	private static final long serialVersionUID = 8261422443611576542L;
+	private static final long serialVersionUID = 8586266863995653539L;
 
 	/**
 	 * 错误码

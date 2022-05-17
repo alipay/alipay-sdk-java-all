@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户地址信息
  *
  * @author auto create
- * @since 1.0, 2021-04-07 21:04:06
+ * @since 1.0, 2022-05-16 20:27:48
  */
 public class AddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2792482195247721864L;
+	private static final long serialVersionUID = 6597579311278757744L;
 
 	/**
 	 * 地址。商户详细经营地址或人员所在地点
@@ -21,16 +21,12 @@ public class AddressInfo extends AlipayObject {
 
 	/**
 	 * 城市编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。
-（参考资料：
-http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
 	 */
 	@ApiField("city_code")
 	private String cityCode;
 
 	/**
 	 * 区县编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。
-（参考资料：
-http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
 	 */
 	@ApiField("district_code")
 	private String districtCode;
@@ -57,8 +53,6 @@ http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
 
 	/**
 	 * 省份编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。
-（参考资料：
-http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
 	 */
 	@ApiField("province_code")
 	private String provinceCode;

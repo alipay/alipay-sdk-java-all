@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoEduKtSettleinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3192975193354696338L;
+	private static final long serialVersionUID = 1756265681547597487L;
 
 	/** 
 	 * 账户类型

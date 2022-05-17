@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoCplifeBillModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6617614941365158828L;
+	private static final long serialVersionUID = 8458314161154422589L;
 
 	/**
 	 * 待修改的物业费账单应收明细条目列表，一次最多修改1000条明细条目。如果明细条目已被支付或在支付中，则无法被修改。接口会返回无法修改的明细条目ID列表。

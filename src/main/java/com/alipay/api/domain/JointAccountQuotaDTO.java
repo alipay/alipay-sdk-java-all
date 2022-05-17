@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JointAccountQuotaDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7312369172928931777L;
+	private static final long serialVersionUID = 7174868876121421147L;
 
 	/**
 	 * 额度维度

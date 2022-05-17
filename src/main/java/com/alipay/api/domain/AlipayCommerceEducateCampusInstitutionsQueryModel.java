@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育学校信息查询
  *
  * @author auto create
- * @since 1.0, 2022-02-14 14:12:09
+ * @since 1.0, 2022-05-13 15:10:19
  */
 public class AlipayCommerceEducateCampusInstitutionsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2666794868888715321L;
+	private static final long serialVersionUID = 8854865195198989444L;
 
 	/**
-	 * 市
+	 * 城市编码，编码标准为中华人民共和国行政区划代码，参见 2020年12月中华人民共和国县以上行政区划代码。
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -47,7 +47,7 @@ public class AlipayCommerceEducateCampusInstitutionsQueryModel extends AlipayObj
 	private String likeProperty;
 
 	/**
-	 * 省份
+	 * 省份编码，编码标准为中华人民共和国行政区划代码，参见 2020年12月中华人民共和国县以上行政区划代码。
 	 */
 	@ApiField("province_code")
 	private String provinceCode;

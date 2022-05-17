@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学校信息列表
  *
  * @author auto create
- * @since 1.0, 2022-01-14 17:19:11
+ * @since 1.0, 2022-05-13 15:10:20
  */
 public class SchoolSimpleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6829952456832711487L;
+	private static final long serialVersionUID = 8757499935398748689L;
 
 	/**
 	 * 校区信息

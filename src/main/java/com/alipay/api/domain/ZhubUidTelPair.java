@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhubUidTelPair extends AlipayObject {
 
-	private static final long serialVersionUID = 7871414636358222451L;
+	private static final long serialVersionUID = 4659514859915442269L;
 
 	/**
 	 * 手机号

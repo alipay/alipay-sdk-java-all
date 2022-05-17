@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发布花呗分期商家贴息方案实例
  *
  * @author auto create
- * @since 1.0, 2019-08-30 11:35:16
+ * @since 1.0, 2022-05-16 17:48:50
  */
 public class AlipayPcreditHuabeiDiscountSolutionOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7674864934113565726L;
+	private static final long serialVersionUID = 5514691841419549856L;
 
 	/**
 	 * solution_id，贴息方案实例id

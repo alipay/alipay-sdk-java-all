@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 鹰眼项目获取平台数据接口
  *
  * @author auto create
- * @since 1.0, 2019-11-19 14:11:42
+ * @since 1.0, 2022-05-12 12:12:09
  */
 public class AlipayDataRiskRtopobtsregQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3384816335126393698L;
+	private static final long serialVersionUID = 5376413844655644938L;
 
 	/**
 	 * rowkeys+不需要唯一+鹰眼项目，通过open api接口查询舆情

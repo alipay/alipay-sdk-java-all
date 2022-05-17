@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingCampaignCrowdCountResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7349967228928481545L;
+	private static final long serialVersionUID = 1734224758612446735L;
 
 	/** 
 	 * 各个细分维度的值，label为标签code，value为该标签各个标签值对应的统计信息，本示例表示pam_gender这个标签的男有100人，女有1000人满足入参指定的圈人条件

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StuStatusArchive extends AlipayObject {
 
-	private static final long serialVersionUID = 5657258126493648245L;
+	private static final long serialVersionUID = 5719339866374427865L;
 
 	/**
 	 * 所在学校名称

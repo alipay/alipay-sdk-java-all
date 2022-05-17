@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 美味店铺信息对象
  *
  * @author auto create
- * @since 1.0, 2021-12-01 20:59:01
+ * @since 1.0, 2022-05-16 16:38:36
  */
 public class HbMeiWeishopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5691284429155292777L;
+	private static final long serialVersionUID = 1514882351785552752L;
 
 	/**
 	 * 所在城市code
@@ -24,6 +24,12 @@ public class HbMeiWeishopInfo extends AlipayObject {
 	 */
 	@ApiField("city_name")
 	private String cityName;
+
+	/**
+	 * 门店logo地址
+	 */
+	@ApiField("logo")
+	private String logo;
 
 	/**
 	 * 平均金额,单位为分
@@ -91,6 +97,13 @@ public class HbMeiWeishopInfo extends AlipayObject {
 	}
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
+	}
+
+	public String getLogo() {
+		return this.logo;
+	}
+	public void setLogo(String logo) {
+		this.logo = logo;
 	}
 
 	public Long getPircePerAvgShop() {

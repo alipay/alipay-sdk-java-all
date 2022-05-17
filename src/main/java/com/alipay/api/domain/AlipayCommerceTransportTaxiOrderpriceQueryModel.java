@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车订单价格查询
  *
  * @author auto create
- * @since 1.0, 2022-04-13 15:31:59
+ * @since 1.0, 2022-05-13 20:32:47
  */
 public class AlipayCommerceTransportTaxiOrderpriceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8433533722469648613L;
+	private static final long serialVersionUID = 8423391511283795343L;
 
 	/**
 	 * 订单渠道类型

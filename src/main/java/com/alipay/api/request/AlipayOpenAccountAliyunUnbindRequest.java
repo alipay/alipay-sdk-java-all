@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.account.aliyun.unbind request
  * 
  * @author auto create
- * @since 1.0, 2020-12-14 14:26:36
+ * @since 1.0, 2022-05-13 17:20:42
  */
 public class AlipayOpenAccountAliyunUnbindRequest implements AlipayRequest<AlipayOpenAccountAliyunUnbindResponse> {
 

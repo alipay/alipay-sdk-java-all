@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金创新场景转账
  *
  * @author auto create
- * @since 1.0, 2022-05-09 21:09:07
+ * @since 1.0, 2022-05-13 20:49:08
  */
 public class AlipayFundTransInnovateAppCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7269737153985658621L;
+	private static final long serialVersionUID = 4213695229824565435L;
 
 	/**
 	 * 描述特定的业务场景，如果传递了out_biz_no则该字段为必传。
@@ -71,7 +71,7 @@ TRANSFER_TO_BANK_CARD
 	private String remark;
 
 	/**
-	 * 绝对超时时间，格式为yyyy-MM-dd HH:mm
+	 * 绝对超时时间，格式为yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("time_expire")
 	private Date timeExpire;

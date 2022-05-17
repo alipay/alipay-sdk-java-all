@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.borrow.entity.upload response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:48:55
+ * @since 1.0, 2022-05-13 15:54:11
  */
 public class ZhimaMerchantBorrowEntityUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6872218795997927462L;
+	private static final long serialVersionUID = 4423381955481657313L;
 
 	
 

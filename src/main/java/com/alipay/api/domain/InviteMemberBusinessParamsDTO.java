@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 成员邀请接口扩展字段模型
  *
  * @author auto create
- * @since 1.0, 2021-07-06 20:12:42
+ * @since 1.0, 2022-05-12 09:51:08
  */
 public class InviteMemberBusinessParamsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5693221159741719111L;
+	private static final long serialVersionUID = 8186493649338447778L;
 
 	/**
 	 * 企业员工工卡
