@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家营销购买下单接口
  *
  * @author auto create
- * @since 1.0, 2021-09-01 10:33:55
+ * @since 1.0, 2022-05-18 15:27:47
  */
 public class AlipayMarketingActivityOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3841776489118662897L;
+	private static final long serialVersionUID = 7673864689284479334L;
 
 	/**
 	 * 购买者的支付宝uid
@@ -23,7 +23,8 @@ public class AlipayMarketingActivityOrderCreateModel extends AlipayObject {
 	private String buyerId;
 
 	/**
-	 * 推广渠道信息。 由支付宝公私域跳转到服务商小程序时带入。例如 aalipays://platformapi/startapp?appId=2021002147682XXX&page=pages/main/mian&query=chInfo%3DchInfo_promotion 其中chInfo为支付宝带入投放渠道信息，需要在调用下单接口时传入
+	 * （待废弃）
+推广渠道信息。 由支付宝公私域跳转到服务商小程序时带入。例如 alipays://platformapi/startapp?appId=2021002147682XXX&page=pages/main/mian&query=chInfo%3DchInfo_promotion 其中chInfo为支付宝带入投放渠道信息，需要在调用下单接口时传入
 	 */
 	@ApiField("ch_info")
 	private String chInfo;
@@ -38,6 +39,12 @@ public class AlipayMarketingActivityOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/**
+	 * 投放埋点信息。由支付宝公私域跳转到服务商小程序时带入。例如alipays://platformapi/startapp?appId=2021002140648450&query=promoTraceInfo%3DUFJPTU9fU0NFTkVfSUQ9OkNCMTExOTk3MDBAO0BQT1NJVElPTl9DT0RFPTptb3JwaG9fYzQxYWY2，其中promoTraceInfo由支付宝带入投放埋点信息，需要在调用下单接口时传入
+	 */
+	@ApiField("promo_trace_info")
+	private String promoTraceInfo;
 
 	/**
 	 * 售卖活动信息列表。
@@ -81,6 +88,13 @@ sale_activity_info_list中所有商品单价*数量的总和。
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getPromoTraceInfo() {
+		return this.promoTraceInfo;
+	}
+	public void setPromoTraceInfo(String promoTraceInfo) {
+		this.promoTraceInfo = promoTraceInfo;
 	}
 
 	public List<SaleActivityInfo> getSaleActivityInfoList() {

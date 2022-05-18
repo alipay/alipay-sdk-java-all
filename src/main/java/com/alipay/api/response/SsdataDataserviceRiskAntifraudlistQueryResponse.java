@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataDataserviceRiskAntifraudlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2347715824564753193L;
+	private static final long serialVersionUID = 6844819629395118993L;
 
 	/** 
 	 * 蚁盾对于每一次请求返回的业务号。后续可以通过此业务号进行对账

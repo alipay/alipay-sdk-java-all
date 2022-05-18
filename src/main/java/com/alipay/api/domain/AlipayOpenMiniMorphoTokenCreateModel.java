@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniMorphoTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3359224814277169175L;
+	private static final long serialVersionUID = 6783829553977426795L;
 
 	/**
 	 * 闪蝶站点 ID

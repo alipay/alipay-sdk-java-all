@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserLoginStatusDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4367244176498857994L;
+	private static final long serialVersionUID = 4528935335532697156L;
 
 	/**
 	 * 口碑云子账号联系人邮箱

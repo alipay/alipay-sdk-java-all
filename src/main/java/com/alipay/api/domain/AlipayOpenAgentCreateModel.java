@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAgentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2269119493178428133L;
+	private static final long serialVersionUID = 7286223963656459442L;
 
 	/**
 	 * isv代操作的商户账号，可以是支付宝账号，也可以是pid（2088开头）

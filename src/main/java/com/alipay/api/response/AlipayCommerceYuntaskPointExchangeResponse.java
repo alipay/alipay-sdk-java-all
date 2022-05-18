@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.point.exchange response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-25 10:51:44
+ * @since 1.0, 2022-05-18 16:26:42
  */
 public class AlipayCommerceYuntaskPointExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5555777425173655772L;
+	private static final long serialVersionUID = 7241388728555499345L;
+
+	/** 
+	 * 积分流水id
+	 */
+	@ApiField("instruction_id")
+	private String instructionId;
 
 	/** 
 	 * 结果信息
@@ -31,6 +37,13 @@ public class AlipayCommerceYuntaskPointExchangeResponse extends AlipayResponse {
 	 */
 	@ApiField("result")
 	private Boolean result;
+
+	public void setInstructionId(String instructionId) {
+		this.instructionId = instructionId;
+	}
+	public String getInstructionId( ) {
+		return this.instructionId;
+	}
 
 	public void setMesssage(String messsage) {
 		this.messsage = messsage;

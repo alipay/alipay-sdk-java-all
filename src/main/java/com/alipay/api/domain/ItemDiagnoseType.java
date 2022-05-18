@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemDiagnoseType extends AlipayObject {
 
-	private static final long serialVersionUID = 1848855359466747741L;
+	private static final long serialVersionUID = 4253947831812168574L;
 
 	/**
 	 * 001是明星菜品，002是潜力菜品，003是其他菜品（除明星菜品和潜力菜品之外的其他一律作为其他菜品 编号为003）。

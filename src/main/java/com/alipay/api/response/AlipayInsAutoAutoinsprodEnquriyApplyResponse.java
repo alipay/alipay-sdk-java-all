@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsAutoAutoinsprodEnquriyApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6725761334844718151L;
+	private static final long serialVersionUID = 1562814236541316355L;
 
 	/** 
 	 * 车辆的品牌型号列表

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceDataCampaignSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6823313515175694725L;
+	private static final long serialVersionUID = 7829741464756829562L;
 
 	/**
 	 * 本次交易获得集点方式。目前支持扫码点餐：scanOrder、蜻蜓刷脸支付：facePay、当面付：faceToFace、储值卡支付：valueCard、在线支付：online。如有其它渠道需要和支付宝约定

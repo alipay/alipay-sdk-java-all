@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StdPublicBindAccount extends AlipayObject {
 
-	private static final long serialVersionUID = 1792939863997781293L;
+	private static final long serialVersionUID = 5875257545411384561L;
 
 	/**
 	 * 协议号是商户会员在支付宝公众账号中的唯一标识。

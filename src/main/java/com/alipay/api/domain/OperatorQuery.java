@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁操作员查询参数
  *
  * @author auto create
- * @since 1.0, 2020-08-21 10:22:38
+ * @since 1.0, 2022-05-17 19:54:48
  */
 public class OperatorQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 1327652747159237865L;
+	private static final long serialVersionUID = 7123275261345657187L;
 
 	/**
 	 * 查询操作员的唯一ID。类型由id_type决定

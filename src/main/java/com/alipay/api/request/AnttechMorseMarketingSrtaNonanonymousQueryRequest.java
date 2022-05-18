@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.morse.marketing.srta.nonanonymous.query request
  * 
  * @author auto create
- * @since 1.0, 2022-04-25 20:02:26
+ * @since 1.0, 2022-05-18 15:16:50
  */
 public class AnttechMorseMarketingSrtaNonanonymousQueryRequest implements AlipayRequest<AnttechMorseMarketingSrtaNonanonymousQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.testplatform.task.query request
  * 
  * @author auto create
- * @since 1.0, 2022-04-24 17:24:06
+ * @since 1.0, 2022-05-18 15:16:48
  */
 public class AnttechOceanbaseTestplatformTaskQueryRequest implements AlipayRequest<AnttechOceanbaseTestplatformTaskQueryResponse> {
 

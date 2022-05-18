@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2022-03-15 09:47:26
+ * @since 1.0, 2022-05-18 00:01:52
  */
 public class ReceiptOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2596751842221933638L;
+	private static final long serialVersionUID = 3151926563685318642L;
 
 	/**
 	 * 支付宝用户uid; 是支付宝支付时，必填
@@ -73,6 +73,24 @@ public class ReceiptOrderDTO extends AlipayObject {
 	@ApiListField("good_expiration_list")
 	@ApiField("good_expiration_list_d_t_o")
 	private List<GoodExpirationListDTO> goodExpirationList;
+
+	/**
+	 * [
+         {
+            "cup_type": "zhiyinbei",
+            "cups_amount": "1"
+          }
+ ]
+	 */
+	@ApiListField("green_cups_list")
+	@ApiField("green_cups_d_t_o")
+	private List<GreenCupsDTO> greenCupsList;
+
+	/**
+	 * 商家开发票链接
+	 */
+	@ApiField("invoice_entry")
+	private String invoiceEntry;
 
 	/**
 	 * 对接电子小票/无纸化小票能量发放时，必填; 其它场景，无需该字段; 字段含义: 是否接入支付宝电子小票; "0":不接入(商户自己有电子小票终端)；"1":接入; 接入场景:必须传入小票全量商品信息，用于在支付宝侧电子小票阵地展示给到C端用户;  不接入的商户且商户自己有终端实现了电子小票, 可以对接无纸化小票能量; 为空时，默认:"0"
@@ -259,6 +277,20 @@ public class ReceiptOrderDTO extends AlipayObject {
 	}
 	public void setGoodExpirationList(List<GoodExpirationListDTO> goodExpirationList) {
 		this.goodExpirationList = goodExpirationList;
+	}
+
+	public List<GreenCupsDTO> getGreenCupsList() {
+		return this.greenCupsList;
+	}
+	public void setGreenCupsList(List<GreenCupsDTO> greenCupsList) {
+		this.greenCupsList = greenCupsList;
+	}
+
+	public String getInvoiceEntry() {
+		return this.invoiceEntry;
+	}
+	public void setInvoiceEntry(String invoiceEntry) {
+		this.invoiceEntry = invoiceEntry;
 	}
 
 	public String getIsAlipayTicket() {

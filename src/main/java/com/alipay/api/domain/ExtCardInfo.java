@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4226877578242547927L;
+	private static final long serialVersionUID = 4862842268181721741L;
 
 	/**
 	 * 托管子户外卡户名

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁操作员关联账号信息
  *
  * @author auto create
- * @since 1.0, 2020-08-20 19:35:43
+ * @since 1.0, 2022-05-17 19:54:51
  */
 public class OperatorAccountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7195677677636386746L;
+	private static final long serialVersionUID = 4799947851957968744L;
 
 	/**
 	 * 关联账号ID

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecruitVoucherRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8294916738194856453L;
+	private static final long serialVersionUID = 8112964831588955521L;
 
 	/**
 	 * 券面额（每张代金券可以抵扣的金额）的的最大值。 币种为人民币，单位为元。小数点以后最多保留两位。 该字段为空时表示不限制。

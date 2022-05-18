@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.partnerships.stop request
  * 
  * @author auto create
- * @since 1.0, 2022-05-06 15:58:49
+ * @since 1.0, 2022-05-18 15:16:46
  */
 public class AlipayMarketingPartnershipsStopRequest implements AlipayRequest<AlipayMarketingPartnershipsStopResponse> {
 

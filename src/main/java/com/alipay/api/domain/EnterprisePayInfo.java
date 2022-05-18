@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付支付信息
  *
  * @author auto create
- * @since 1.0, 2022-04-07 18:10:40
+ * @since 1.0, 2022-05-17 10:36:14
  */
 public class EnterprisePayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8381433921136255297L;
+	private static final long serialVersionUID = 5285196382211795558L;
 
 	/**
 	 * 因公付业务信息
@@ -25,6 +25,12 @@ public class EnterprisePayInfo extends AlipayObject {
 	@ApiField("invoice_amount")
 	private String invoiceAmount;
 
+	/**
+	 * 是否包含因公付资产
+	 */
+	@ApiField("is_use_enterprise_pay")
+	private Boolean isUseEnterprisePay;
+
 	public String getBizInfo() {
 		return this.bizInfo;
 	}
@@ -37,6 +43,13 @@ public class EnterprisePayInfo extends AlipayObject {
 	}
 	public void setInvoiceAmount(String invoiceAmount) {
 		this.invoiceAmount = invoiceAmount;
+	}
+
+	public Boolean getIsUseEnterprisePay() {
+		return this.isUseEnterprisePay;
+	}
+	public void setIsUseEnterprisePay(Boolean isUseEnterprisePay) {
+		this.isUseEnterprisePay = isUseEnterprisePay;
 	}
 
 }

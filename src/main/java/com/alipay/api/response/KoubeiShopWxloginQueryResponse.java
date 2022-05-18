@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiShopWxloginQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3766463291359646417L;
+	private static final long serialVersionUID = 3393221585963222454L;
 
 	/** 
 	 * 用户唯一标识的 openid

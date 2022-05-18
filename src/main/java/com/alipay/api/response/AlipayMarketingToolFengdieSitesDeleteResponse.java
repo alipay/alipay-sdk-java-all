@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingToolFengdieSitesDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7411822982919473533L;
+	private static final long serialVersionUID = 5714695486897424227L;
 
 	/** 
 	 * 返回删除云凤蝶站点成功与失败的结果

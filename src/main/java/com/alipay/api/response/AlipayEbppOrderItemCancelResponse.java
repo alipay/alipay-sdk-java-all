@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppOrderItemCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2269788399194863993L;
+	private static final long serialVersionUID = 7878883548527353572L;
 
 	
 

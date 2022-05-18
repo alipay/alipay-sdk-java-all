@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡产品开通
  *
  * @author auto create
- * @since 1.0, 2022-03-18 16:46:38
+ * @since 1.0, 2022-05-17 19:53:24
  */
 public class AlipayCommerceOperationTimescardProductApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1215392263281157828L;
+	private static final long serialVersionUID = 3387539527514435546L;
+
+	/**
+	 * 预付宝：ALIPAY_YUFUBAO
+	 */
+	@ApiField("biz_from")
+	private String bizFrom;
 
 	/**
 	 * 字段已经废弃，无需传参
@@ -42,6 +48,19 @@ public class AlipayCommerceOperationTimescardProductApplyModel extends AlipayObj
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
+
+	/**
+	 * 次卡资金结算信息
+	 */
+	@ApiField("settle_info")
+	private FundSettleInfo settleInfo;
+
+	public String getBizFrom() {
+		return this.bizFrom;
+	}
+	public void setBizFrom(String bizFrom) {
+		this.bizFrom = bizFrom;
+	}
 
 	public String getIsvPartnerId() {
 		return this.isvPartnerId;
@@ -76,6 +95,13 @@ public class AlipayCommerceOperationTimescardProductApplyModel extends AlipayObj
 	}
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
+	}
+
+	public FundSettleInfo getSettleInfo() {
+		return this.settleInfo;
+	}
+	public void setSettleInfo(FundSettleInfo settleInfo) {
+		this.settleInfo = settleInfo;
 	}
 
 }

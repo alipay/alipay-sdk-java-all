@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.employment.product.consult request
  * 
  * @author auto create
- * @since 1.0, 2022-05-06 09:44:06
+ * @since 1.0, 2022-05-18 15:16:46
  */
 public class AlipayInsSceneEmploymentProductConsultRequest implements AlipayRequest<AlipayInsSceneEmploymentProductConsultResponse> {
 

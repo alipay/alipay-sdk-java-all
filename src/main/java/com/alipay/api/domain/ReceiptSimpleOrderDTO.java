@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票订单模型
  *
  * @author auto create
- * @since 1.0, 2022-03-11 17:54:20
+ * @since 1.0, 2022-05-18 00:02:44
  */
 public class ReceiptSimpleOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8323263697671266813L;
+	private static final long serialVersionUID = 1213128789564269428L;
 
 	/**
 	 * 支付宝用户uid
@@ -47,6 +47,12 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	@ApiListField("discount_info_list")
 	@ApiField("discount_info_data_d_t_o")
 	private List<DiscountInfoDataDTO> discountInfoList;
+
+	/**
+	 * 商户开发票链接。
+	 */
+	@ApiField("invoice_entry")
+	private String invoiceEntry;
 
 	/**
 	 * 商户商品信息列表;
@@ -179,6 +185,13 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	}
 	public void setDiscountInfoList(List<DiscountInfoDataDTO> discountInfoList) {
 		this.discountInfoList = discountInfoList;
+	}
+
+	public String getInvoiceEntry() {
+		return this.invoiceEntry;
+	}
+	public void setInvoiceEntry(String invoiceEntry) {
+		this.invoiceEntry = invoiceEntry;
 	}
 
 	public List<ItemOrderInfoDTO> getItemOrderList() {

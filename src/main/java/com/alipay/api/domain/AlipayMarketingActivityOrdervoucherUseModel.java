@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单券核销
  *
  * @author auto create
- * @since 1.0, 2021-12-22 15:02:49
+ * @since 1.0, 2022-05-18 10:06:34
  */
 public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4862588431484523193L;
+	private static final long serialVersionUID = 5619834725163467844L;
 
 	/**
 	 * 优惠券活动id
@@ -24,11 +24,7 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	private String activityId;
 
 	/**
-	 * 外部优惠券的核销时间。
-
-
-
-格式为：yyyy-MM-dd HH:mm:ss
+	 * 外部优惠券的核销时间，用于流水记录。 格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("biz_dt")
 	private Date bizDt;
@@ -65,7 +61,7 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	/**
 	 * 用户核销优惠券的代运营商业关系门店id，调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id。
 限制:
-传入的门店id必须是创建商家券customer_guide对象中real_shop_ids中的门店id。
+传入的门店id必须是创建商家券voucher_use_rule. voucher_available_scope. order_voucher_available_shop对象中real_shop_ids中的门店id
 	 */
 	@ApiField("real_shop_id")
 	private String realShopId;
@@ -73,7 +69,7 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	/**
 	 * 用户核销优惠券的支付门店id,调用接口ant.merchant.expand.shop.create创建门店返回的门店id。
 限制:
-传入的门店id必须是创建商家券customer_guide对象中store_ids中的门店id
+传入的门店id必须是创建商家券voucher_use_rule. voucher_available_scope. order_voucher_available_shop对象中shop_ids中的门店id
 	 */
 	@ApiField("store_id")
 	private String storeId;

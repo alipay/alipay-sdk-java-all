@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.crowd.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-27 16:50:11
+ * @since 1.0, 2022-05-18 15:16:46
  */
 public class DatadigitalFincloudFinsaasCrowdDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7563825745351745765L;
+	private static final long serialVersionUID = 1843141344429369755L;
 
 	/** 
 	 * 人群删除消息+不唯一+删除人群
