@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云测平台虚拟设备租用接口
  *
  * @author auto create
- * @since 1.0, 2021-01-11 13:38:58
+ * @since 1.0, 2022-05-19 19:28:39
  */
 public class AntLinkeDevopsMobiledeviceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1737243468316839776L;
+	private static final long serialVersionUID = 5655794474862992525L;
 
 	/**
 	 * device_id+唯一+如果包含则用来校验设备对应的信息+之前调用返回结果

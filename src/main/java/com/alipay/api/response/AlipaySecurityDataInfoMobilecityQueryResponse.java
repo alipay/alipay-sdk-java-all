@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityDataInfoMobilecityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1862576766176359954L;
+	private static final long serialVersionUID = 8622534193172813724L;
 
 	/** 
 	 * 手机归属地对象,三个field均为string类型,手机号前七,phoneNumber; ,省份province;,城市city;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣预签约token生成接口
  *
  * @author auto create
- * @since 1.0, 2021-01-12 15:59:12
+ * @since 1.0, 2022-05-19 09:55:50
  */
 public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8113155867859455787L;
+	private static final long serialVersionUID = 5768158417287243666L;
 
 	/**
 	 * 签约来源渠道，接入时与代扣约定
@@ -30,6 +30,12 @@ public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("bill_key")
 	private String billKey;
+
+	/**
+	 * 业务场景：flow(流量)、voice(语音话费)、telephone(固话)
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * 业务类型（例如通信，缴费，还款）
@@ -62,10 +68,22 @@ public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 	private String instId;
 
 	/**
+	 * 外部协议号
+	 */
+	@ApiField("out_agreement_id")
+	private String outAgreementId;
+
+	/**
 	 * PREPAID预付费，POSTPAID后付费
 	 */
 	@ApiField("pay_mode")
 	private String payMode;
+
+	/**
+	 * 签约的服务描述
+	 */
+	@ApiField("service_desc")
+	private String serviceDesc;
 
 	/**
 	 * 二级业务类型（例如话费，流量，水费，电费）
@@ -78,6 +96,12 @@ public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("threshold_amount")
 	private String thresholdAmount;
+
+	/**
+	 * 服务名称
+	 */
+	@ApiField("title")
+	private String title;
 
 	public String getAgentChannel() {
 		return this.agentChannel;
@@ -98,6 +122,13 @@ public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 	}
 	public void setBillKey(String billKey) {
 		this.billKey = billKey;
+	}
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
 	}
 
 	public String getBizType() {
@@ -135,11 +166,25 @@ public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 		this.instId = instId;
 	}
 
+	public String getOutAgreementId() {
+		return this.outAgreementId;
+	}
+	public void setOutAgreementId(String outAgreementId) {
+		this.outAgreementId = outAgreementId;
+	}
+
 	public String getPayMode() {
 		return this.payMode;
 	}
 	public void setPayMode(String payMode) {
 		this.payMode = payMode;
+	}
+
+	public String getServiceDesc() {
+		return this.serviceDesc;
+	}
+	public void setServiceDesc(String serviceDesc) {
+		this.serviceDesc = serviceDesc;
 	}
 
 	public String getSubBizType() {
@@ -154,6 +199,13 @@ public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 	}
 	public void setThresholdAmount(String thresholdAmount) {
 		this.thresholdAmount = thresholdAmount;
+	}
+
+	public String getTitle() {
+		return this.title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryAntforestEventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7176935199833261982L;
+	private static final long serialVersionUID = 6379596121715728669L;
 
 	
 

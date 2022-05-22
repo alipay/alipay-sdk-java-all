@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 3592311744299272787L;
+	private static final long serialVersionUID = 7497667649615177489L;
 
 	/**
 	 * 分账的金额，单位为元

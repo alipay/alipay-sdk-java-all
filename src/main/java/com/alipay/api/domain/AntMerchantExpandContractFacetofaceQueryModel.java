@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandContractFacetofaceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7426956988367458688L;
+	private static final long serialVersionUID = 1145387912455939137L;
 
 	/**
 	 * 支付宝端商户入驻申请单据号，通过调用ant.merchant.expand.contract.facetoface.sign接口返回的参数中获取

@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.CreditpaySubquota;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.creditpay.amount.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-15 14:47:58
+ * @since 1.0, 2022-05-20 11:41:44
  */
 public class MybankCreditSupplychainCreditpayAmountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7613879243586661871L;
+	private static final long serialVersionUID = 8356757724245988755L;
 
 	/** 
 	 * 准入标志
@@ -31,6 +34,13 @@ public class MybankCreditSupplychainCreditpayAmountQueryResponse extends AlipayR
 	 */
 	@ApiField("buyer_scene_id")
 	private String buyerSceneId;
+
+	/** 
+	 * 子额度类型
+	 */
+	@ApiListField("creditpay_sub_quotas")
+	@ApiField("creditpay_subquota")
+	private List<CreditpaySubquota> creditpaySubQuotas;
 
 	/** 
 	 * 是否签约
@@ -69,6 +79,13 @@ public class MybankCreditSupplychainCreditpayAmountQueryResponse extends AlipayR
 	}
 	public String getBuyerSceneId( ) {
 		return this.buyerSceneId;
+	}
+
+	public void setCreditpaySubQuotas(List<CreditpaySubquota> creditpaySubQuotas) {
+		this.creditpaySubQuotas = creditpaySubQuotas;
+	}
+	public List<CreditpaySubquota> getCreditpaySubQuotas( ) {
+		return this.creditpaySubQuotas;
 	}
 
 	public void setSigned(Boolean signed) {

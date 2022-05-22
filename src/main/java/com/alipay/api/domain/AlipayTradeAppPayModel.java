@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2493868563671985629L;
+	private static final long serialVersionUID = 6156189472557737392L;
 
 	/**
 	 * 签约参数。如果希望在sdk中支付并签约，需要在这里传入签约信息。
@@ -124,7 +124,7 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	private String promoParams;
 
 	/**
-	 * 通知参数选项。 商户通过传递该参数来定制需要异步通知的额外字段，数组格式。包括但不限于：["fund_bill_list","voucher_detail_list","enterprise_pay_info","discount_goods_detail","discount_amount","mdiscount_amount"]
+	 * 通知参数选项。 商户通过传递该参数来定制需要异步通知的额外字段，数组格式。包括但不限于：["fund_bill_list","voucher_detail_list","discount_goods_detail","discount_amount","mdiscount_amount"]
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")

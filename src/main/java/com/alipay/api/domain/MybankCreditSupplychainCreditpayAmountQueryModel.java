@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应商-1688和赊呗融合-额度查询接口
  *
  * @author auto create
- * @since 1.0, 2022-03-15 14:47:58
+ * @since 1.0, 2022-05-20 11:41:32
  */
 public class MybankCreditSupplychainCreditpayAmountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2693763489257985959L;
+	private static final long serialVersionUID = 8669944692859153822L;
+
+	/**
+	 * 品牌额度查询条件
+	 */
+	@ApiField("brand_quota_query_condition")
+	private BrandQuotaQueryCondition brandQuotaQueryCondition;
 
 	/**
 	 * 买方信息，这里是ISV的信息
@@ -30,6 +36,13 @@ public class MybankCreditSupplychainCreditpayAmountQueryModel extends AlipayObje
 	 */
 	@ApiField("trace_id")
 	private String traceId;
+
+	public BrandQuotaQueryCondition getBrandQuotaQueryCondition() {
+		return this.brandQuotaQueryCondition;
+	}
+	public void setBrandQuotaQueryCondition(BrandQuotaQueryCondition brandQuotaQueryCondition) {
+		this.brandQuotaQueryCondition = brandQuotaQueryCondition;
+	}
 
 	public Member getBuyer() {
 		return this.buyer;

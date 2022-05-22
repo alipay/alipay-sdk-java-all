@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayExscUserFirstsignGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4223666749777657167L;
+	private static final long serialVersionUID = 2271193281877781294L;
 
 	/** 
 	 * 返回结果的业务类型。首次快捷绑卡业务类型 （first_sign）

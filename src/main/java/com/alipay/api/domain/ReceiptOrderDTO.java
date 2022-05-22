@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2022-05-18 00:01:52
+ * @since 1.0, 2022-05-20 11:34:58
  */
 public class ReceiptOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3151926563685318642L;
+	private static final long serialVersionUID = 3379434884231347616L;
 
 	/**
 	 * 支付宝用户uid; 是支付宝支付时，必填
@@ -28,6 +28,17 @@ public class ReceiptOrderDTO extends AlipayObject {
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 绿色能量发放归属的商户信息。
+说明：
+如果该复杂对象不填。则默认为该绿色能量发放的归属者是调用者本人。
+如果填写，则认为该绿色能量发放的归属者是该商户。
+
+限制:服务商身份接入时必传
+	 */
+	@ApiField("belong_merchant_info")
+	private BelongMerchantInfoDTO belongMerchantInfo;
 
 	/**
 	 * 租借时长，精确到分钟;充电宝场景时，必填;
@@ -132,6 +143,14 @@ public class ReceiptOrderDTO extends AlipayObject {
 	private Date orderCreateTime;
 
 	/**
+	 * 订单商品列表; 环保行为:临期商品，补充替换包装
+、再生塑料包装、FSC认证包装、该商品列表必填
+	 */
+	@ApiListField("order_goods_list")
+	@ApiField("order_goods_d_t_o")
+	private List<OrderGoodsDTO> orderGoodsList;
+
+	/**
 	 * APPID,商户可自定义需要跳转到小程序（默认进入小程序首页）
 	 */
 	@ApiField("order_link")
@@ -228,6 +247,13 @@ public class ReceiptOrderDTO extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public BelongMerchantInfoDTO getBelongMerchantInfo() {
+		return this.belongMerchantInfo;
+	}
+	public void setBelongMerchantInfo(BelongMerchantInfoDTO belongMerchantInfo) {
+		this.belongMerchantInfo = belongMerchantInfo;
 	}
 
 	public Long getBorrowTime() {
@@ -333,6 +359,13 @@ public class ReceiptOrderDTO extends AlipayObject {
 	}
 	public void setOrderCreateTime(Date orderCreateTime) {
 		this.orderCreateTime = orderCreateTime;
+	}
+
+	public List<OrderGoodsDTO> getOrderGoodsList() {
+		return this.orderGoodsList;
+	}
+	public void setOrderGoodsList(List<OrderGoodsDTO> orderGoodsList) {
+		this.orderGoodsList = orderGoodsList;
 	}
 
 	public String getOrderLink() {

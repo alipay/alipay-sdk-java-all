@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LargeInfiniteCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4423954687133889568L;
+	private static final long serialVersionUID = 7638837313846435361L;
 
 	/**
 	 * 账户余额,单位:元,精确到小数点后两位

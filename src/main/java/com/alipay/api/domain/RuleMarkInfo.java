@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RuleMarkInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3565595569967763574L;
+	private static final long serialVersionUID = 5895694999294813711L;
 
 	/**
 	 * 机审反馈内容。一般当机审有误时，补充具体机审有误的说明。

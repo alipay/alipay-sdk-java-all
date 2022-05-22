@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预算释放
  *
  * @author auto create
- * @since 1.0, 2020-09-25 15:34:20
+ * @since 1.0, 2022-05-19 14:26:30
  */
 public class AlipayBossFncAntbudgetReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4225536945524815748L;
+	private static final long serialVersionUID = 2347854381512491125L;
 
 	/**
 	 * 预算申请金额，默认为人民币

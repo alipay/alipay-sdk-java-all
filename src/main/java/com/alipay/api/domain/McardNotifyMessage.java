@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class McardNotifyMessage extends AlipayObject {
 
-	private static final long serialVersionUID = 7151139129632943599L;
+	private static final long serialVersionUID = 5847412993916941147L;
 
 	/**
 	 * 用户提醒信息，按如下格式拼装，需要ISV提供change_reason。

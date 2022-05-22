@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟设备释放接口
  *
  * @author auto create
- * @since 1.0, 2021-01-11 13:45:37
+ * @since 1.0, 2022-05-19 19:29:02
  */
 public class AntLinkeDevopsMobiledeviceReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4822648578877874426L;
+	private static final long serialVersionUID = 8447737692318877483L;
 
 	/**
 	 * device_id+唯一+设备释放对象+antdevops.mobiledevice.get接口返回参数+必须先占用才能释放

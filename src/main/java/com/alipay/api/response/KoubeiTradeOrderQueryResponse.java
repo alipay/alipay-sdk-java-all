@@ -19,7 +19,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3337946369244357856L;
+	private static final long serialVersionUID = 7649262625394431866L;
 
 	/** 
 	 * 订单对应活动信息，多个商品情况下可能对应多个活动，故为列表;可根据此活动号查询活动名，以标注该购买的商品隶属于哪个活动。

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpSceneAgreementCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1827747995692161981L;
+	private static final long serialVersionUID = 8227826815659391159L;
 
 	/**
 	 * 业务取消时间，日期格式为 yyyy-MM-dd HH:mm:ss

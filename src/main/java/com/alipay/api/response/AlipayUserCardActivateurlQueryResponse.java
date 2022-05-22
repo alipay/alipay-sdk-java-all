@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCardActivateurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3596153346354585974L;
+	private static final long serialVersionUID = 2544413472644993999L;
 
 	/** 
 	 * 会员卡领卡链接(使用时需URLDecode解码)。商户获取此链接后可投放到服务窗消息、店铺二维码等。

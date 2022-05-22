@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CallCenterTradeApplyParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7287497624788955583L;
+	private static final long serialVersionUID = 7447947286556437911L;
 
 	/**
 	 * 系统商编号，该参数作为系统商返佣数据提取的依据，请填写系统商签约协议的PID

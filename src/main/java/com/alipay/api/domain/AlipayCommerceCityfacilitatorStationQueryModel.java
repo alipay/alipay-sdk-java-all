@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorStationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2123788341827471951L;
+	private static final long serialVersionUID = 4278538163214924297L;
 
 	/**
 	 * 城市编码请参考查询 <a href="http://www.mca.gov.cn/article/sj/xzqh/">中华人民共和国行政区划代码</a>。

@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.info.taobao.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-19 16:40:54
+ * @since 1.0, 2022-05-19 11:16:41
  */
 public class AlipayUserAccountInfoTaobaoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1737988259464845612L;
+	private static final long serialVersionUID = 4569638185778166239L;
 
 	/** 
 	 * alipay_user_id+是+手淘端内绑定支付宝账号+无+token获取+无
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/** 
+	 * 用户是否完成认证
+	 */
+	@ApiField("is_certified")
+	private String isCertified;
 
 	/** 
 	 * 脱敏支付宝外标+是+手淘端内绑定支付宝账号+无+token获取+无
@@ -37,6 +43,13 @@ public class AlipayUserAccountInfoTaobaoQueryResponse extends AlipayResponse {
 	}
 	public String getAlipayUserId( ) {
 		return this.alipayUserId;
+	}
+
+	public void setIsCertified(String isCertified) {
+		this.isCertified = isCertified;
+	}
+	public String getIsCertified( ) {
+		return this.isCertified;
 	}
 
 	public void setLoginId(String loginId) {

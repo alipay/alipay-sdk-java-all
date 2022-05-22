@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2887938224731268265L;
+	private static final long serialVersionUID = 1362756577312558288L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。
@@ -154,7 +154,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String settleAlipayLogonId;
 
 	/**
-	 * 新版门店类目标准二级类目code。类目标准及与原类目映射关系参见 <a href="https://ur.alipay.com/4cmn0n">支付宝门店类目-最新</a> 表格。
+	 * 新版门店类目标准二级类目code。类目标准及与原类目映射关系参见 <a href="https://gw.alipayobjects.com/os/bmw-prod/4b3f82df-e53e-4b84-bc41-fe025101e726.xlsx">支付宝门店类目-最新</a> 表格。
 	 */
 	@ApiField("shop_category")
 	private String shopCategory;

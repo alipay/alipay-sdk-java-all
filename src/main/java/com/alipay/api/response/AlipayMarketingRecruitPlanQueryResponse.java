@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.recruit.plan.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-06 20:33:11
+ * @since 1.0, 2022-05-19 11:17:18
  */
 public class AlipayMarketingRecruitPlanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1832459975436971622L;
+	private static final long serialVersionUID = 5567775925988767865L;
 
 	/** 
 	 * 招商方案描述：富文本内容，可能包含html标签
@@ -31,7 +31,10 @@ public class AlipayMarketingRecruitPlanQueryResponse extends AlipayResponse {
 	private Date enrollEndTime;
 
 	/** 
-	 * 招商报名规则
+	 * 招商报名规则。
+说明：
+1. 查询到的规则将用于 alipay.marketing.recruit.enroll.create(招商报名提交)接口。
+2. enroll_rules.required 为 true 时，enroll_rules.type 对应的内容类型在报名提交时必填。
 	 */
 	@ApiListField("enroll_rules")
 	@ApiField("recruit_enroll_rule")

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付资金条目模型
  *
  * @author auto create
- * @since 1.0, 2022-01-05 15:28:23
+ * @since 1.0, 2022-05-21 20:54:27
  */
 public class FdsPayFundItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5467183841554978496L;
+	private static final long serialVersionUID = 8165343433677992632L;
 
 	/**
 	 * 金额
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 资金业务信息
+	 */
+	@ApiField("fund_biz_info")
+	private String fundBizInfo;
 
 	/**
 	 * 条目id
@@ -60,6 +66,13 @@ public class FdsPayFundItemDTO extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getFundBizInfo() {
+		return this.fundBizInfo;
+	}
+	public void setFundBizInfo(String fundBizInfo) {
+		this.fundBizInfo = fundBizInfo;
 	}
 
 	public String getFundItemId() {

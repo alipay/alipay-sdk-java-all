@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AoiInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7864518993611597619L;
+	private static final long serialVersionUID = 4358797235811778885L;
 
 	/**
 	 * 生活圈名称

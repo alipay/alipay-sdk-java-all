@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PassTemplateDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2527471496193566497L;
+	private static final long serialVersionUID = 2632293484563899291L;
 
 	/**
 	 * 模板创建时间，格式"yyyy-MM-dd HH:mm:ss"

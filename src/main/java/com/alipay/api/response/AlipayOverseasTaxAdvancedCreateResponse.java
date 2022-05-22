@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTaxAdvancedCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4244535872528377376L;
+	private static final long serialVersionUID = 5333837278358966664L;
 
 	/** 
 	 * 线上预授权下单时返回，用于唤起收银台的参数，有效期15分钟。过期后无法唤起收银台，可以使用相同的out_tax_refund_no重新下单来获取新的order_str

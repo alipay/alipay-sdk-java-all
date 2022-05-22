@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金存管账户开户接口
  *
  * @author auto create
- * @since 1.0, 2022-01-13 16:44:01
+ * @since 1.0, 2022-05-20 17:22:19
  */
 public class AlipayFincoreFunddsAccountWitnessCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7373899936136533785L;
+	private static final long serialVersionUID = 4742716612316316243L;
 
 	/**
 	 * COMPANY-公司，INDIVIDUAL-个人
@@ -20,16 +20,22 @@ public class AlipayFincoreFunddsAccountWitnessCreateModel extends AlipayObject {
 	private String accountPrincipalType;
 
 	/**
-	 * 账户类型,目前仅支持ENTRUST_SUB_ACC子户
+	 * 账户类型,目前支持ENTRUST_SUB_ACC托管子户,INST_PARTNER_SUB_ACCOUNT银行企业结算子户
 	 */
 	@ApiField("account_type")
 	private String accountType;
 
 	/**
-	 * 可变ID，用来识别同一个user_id账户下面多维度账户。托管根据uid、productChannel、productCode、vid共同确定子户
+	 * 可变ID，用来识别同一个user_id账户下面多维度账户。当account_type=ENTRUST_SUB_ACC或INST_PARTNER_SUB_ACCOUNT时生效。
 	 */
 	@ApiField("external_entity_id")
 	private String externalEntityId;
+
+	/**
+	 * 外部机构账户相关要素,当accountPrincipalType=INST_PARTNER_SUB_ACCOUNT或INST_USER_SUB_ACCOUNT时必填
+	 */
+	@ApiField("inst_account_elements")
+	private InstAccountElementsDTO instAccountElements;
 
 	/**
 	 * 开户备注
@@ -74,6 +80,13 @@ public class AlipayFincoreFunddsAccountWitnessCreateModel extends AlipayObject {
 	}
 	public void setExternalEntityId(String externalEntityId) {
 		this.externalEntityId = externalEntityId;
+	}
+
+	public InstAccountElementsDTO getInstAccountElements() {
+		return this.instAccountElements;
+	}
+	public void setInstAccountElements(InstAccountElementsDTO instAccountElements) {
+		this.instAccountElements = instAccountElements;
 	}
 
 	public String getMemo() {

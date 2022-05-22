@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.antbudget.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-25 09:50:12
+ * @since 1.0, 2022-05-19 14:26:40
  */
 public class AlipayBossFncAntbudgetCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3293582262881872874L;
+	private static final long serialVersionUID = 7479191728325188852L;
 
 	/** 
 	 * 描述具体的错误信息，方便排查问题

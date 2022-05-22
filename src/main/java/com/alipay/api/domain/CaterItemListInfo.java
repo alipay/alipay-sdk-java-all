@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CaterItemListInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6621631559485749981L;
+	private static final long serialVersionUID = 5524916552827163593L;
 
 	/**
 	 * 商品最后修改时间。格式为YYYY-MM-DD HH:mm:ss

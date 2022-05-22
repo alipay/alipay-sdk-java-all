@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预算申请撤销
  *
  * @author auto create
- * @since 1.0, 2020-09-25 09:49:57
+ * @since 1.0, 2022-05-19 14:26:40
  */
 public class AlipayBossFncAntbudgetCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3176766274435146438L;
+	private static final long serialVersionUID = 5766652965151974882L;
 
 	/**
 	 * 业务预算申请code
