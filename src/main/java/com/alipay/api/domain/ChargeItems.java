@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChargeItems extends AlipayObject {
 
-	private static final long serialVersionUID = 4516393777167137447L;
+	private static final long serialVersionUID = 1839574215338265397L;
 
 	/**
 	 * 缴费项是否必选

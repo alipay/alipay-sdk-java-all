@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建odps人群
  *
  * @author auto create
- * @since 1.0, 2022-04-27 16:49:36
+ * @since 1.0, 2022-05-26 13:58:36
  */
 public class DatadigitalFincloudFinsaasCrowdOdpsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4513128175212882934L;
+	private static final long serialVersionUID = 3112285492715437322L;
 
 	/**
 	 * 人群基本信息

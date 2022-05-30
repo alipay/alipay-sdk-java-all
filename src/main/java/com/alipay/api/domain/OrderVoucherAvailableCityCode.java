@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家券可用城市信息
  *
  * @author auto create
- * @since 1.0, 2022-04-08 19:40:54
+ * @since 1.0, 2022-05-26 14:43:31
  */
 public class OrderVoucherAvailableCityCode extends AlipayObject {
 
-	private static final long serialVersionUID = 3324723567367656427L;
+	private static final long serialVersionUID = 7231467527871447138L;
 
 	/**
 	 * 是否全国。

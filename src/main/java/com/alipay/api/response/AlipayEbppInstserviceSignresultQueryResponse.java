@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.signresult.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-12 17:56:47
+ * @since 1.0, 2022-05-30 14:16:41
  */
 public class AlipayEbppInstserviceSignresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5516943319968523919L;
+	private static final long serialVersionUID = 5816477962428816181L;
 
 	/** 
 	 * 支付宝签约协议id
@@ -43,6 +44,24 @@ public class AlipayEbppInstserviceSignresultQueryResponse extends AlipayResponse
 	 */
 	@ApiField("out_agreement_id")
 	private String outAgreementId;
+
+	/** 
+	 * 代扣付费类型：PREPAID （预付费）、POSTPAID（后付费）
+	 */
+	@ApiField("payment_type")
+	private String paymentType;
+
+	/** 
+	 * 代扣产品类型。CZ_DIRECT_DEDUCT：充值直连代扣
+	 */
+	@ApiField("product_type")
+	private String productType;
+
+	/** 
+	 * 签约日期
+	 */
+	@ApiField("sign_date")
+	private Date signDate;
 
 	/** 
 	 * 签约状态：sign：已签约，unsign：已解约，not_sign：未签约，signing： 签约中
@@ -89,6 +108,27 @@ public class AlipayEbppInstserviceSignresultQueryResponse extends AlipayResponse
 	}
 	public String getOutAgreementId( ) {
 		return this.outAgreementId;
+	}
+
+	public void setPaymentType(String paymentType) {
+		this.paymentType = paymentType;
+	}
+	public String getPaymentType( ) {
+		return this.paymentType;
+	}
+
+	public void setProductType(String productType) {
+		this.productType = productType;
+	}
+	public String getProductType( ) {
+		return this.productType;
+	}
+
+	public void setSignDate(Date signDate) {
+		this.signDate = signDate;
+	}
+	public Date getSignDate( ) {
+		return this.signDate;
 	}
 
 	public void setStatus(String status) {

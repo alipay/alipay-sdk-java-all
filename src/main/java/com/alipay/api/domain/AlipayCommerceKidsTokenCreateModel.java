@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建token上下文
  *
  * @author auto create
- * @since 1.0, 2019-06-17 16:18:49
+ * @since 1.0, 2022-05-27 11:25:57
  */
 public class AlipayCommerceKidsTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5868463259648851413L;
+	private static final long serialVersionUID = 1346725211564282984L;
 
 	/**
 	 * 业务数据

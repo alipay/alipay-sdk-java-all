@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialBaseRelationCombinedQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8123861757334983818L;
+	private static final long serialVersionUID = 7745688612192124937L;
 
 	/**
 	 * 最大需要返回的列表值

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape用户行为上报
  *
  * @author auto create
- * @since 1.0, 2022-03-17 19:21:40
+ * @since 1.0, 2022-05-27 10:38:20
  */
 public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7235328437511655736L;
+	private static final long serialVersionUID = 8857594195653794432L;
 
 	/**
-	 * 行为类型：click、expose等
+	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）等
 	 */
 	@ApiField("action_type")
 	private String actionType;
@@ -26,16 +26,34 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	private String channel;
 
 	/**
-	 * 行为对应的itemId列表，如曝光的itemid
+	 * 行为对应的itemId列表，多个商品用,分割，如曝光的itemid、转化的itemid等。
 	 */
 	@ApiField("item_id_list")
 	private String itemIdList;
+
+	/**
+	 * 订单内商品的购买数量（例如一笔订单内买了1包抽纸和2瓶水），多个商品的购买数量用,分割，顺序跟item_id_list的顺序保持一致，一般只有下单/支付行为携带该字段。
+	 */
+	@ApiField("item_num")
+	private String itemNum;
 
 	/**
 	 * 埋点上报时间戳、单位 ms
 	 */
 	@ApiField("log_time")
 	private String logTime;
+
+	/**
+	 * 订单id，一般只有下单/支付行为携带该字段，用于统计效果数据（订单数，gmv指标）、或者归因层面标注conversion数据是否重复
+	 */
+	@ApiField("order_id")
+	private String orderId;
+
+	/**
+	 * 订单的实际(待)支付金额，一般只有下单/支付行为携带该字段。单位元。
+	 */
+	@ApiField("pay_amount")
+	private String payAmount;
 
 	/**
 	 * 每个item的展示位置序号position【非必要，最好有】，和item_id_list对应，逗号分割
@@ -88,11 +106,32 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 		this.itemIdList = itemIdList;
 	}
 
+	public String getItemNum() {
+		return this.itemNum;
+	}
+	public void setItemNum(String itemNum) {
+		this.itemNum = itemNum;
+	}
+
 	public String getLogTime() {
 		return this.logTime;
 	}
 	public void setLogTime(String logTime) {
 		this.logTime = logTime;
+	}
+
+	public String getOrderId() {
+		return this.orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+
+	public String getPayAmount() {
+		return this.payAmount;
+	}
+	public void setPayAmount(String payAmount) {
+		this.payAmount = payAmount;
 	}
 
 	public String getPos() {

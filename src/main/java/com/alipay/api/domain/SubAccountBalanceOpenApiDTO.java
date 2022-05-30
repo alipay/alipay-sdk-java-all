@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubAccountBalanceOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2213775452694642623L;
+	private static final long serialVersionUID = 4665643392252681689L;
 
 	/**
 	 * 可用余额

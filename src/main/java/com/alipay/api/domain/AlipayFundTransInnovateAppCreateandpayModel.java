@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金创新场景转账
  *
  * @author auto create
- * @since 1.0, 2022-05-13 20:49:08
+ * @since 1.0, 2022-05-23 14:31:41
  */
 public class AlipayFundTransInnovateAppCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8843953649718331348L;
+	private static final long serialVersionUID = 6541923528124683738L;
 
 	/**
 	 * 描述特定的业务场景，如果传递了out_biz_no则该字段为必传。

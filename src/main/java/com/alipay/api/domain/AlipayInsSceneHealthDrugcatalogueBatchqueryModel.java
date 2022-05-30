@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 健康门诊险药品目录批量查询接口
  *
  * @author auto create
- * @since 1.0, 2021-09-16 20:58:37
+ * @since 1.0, 2022-05-23 14:51:14
  */
 public class AlipayInsSceneHealthDrugcatalogueBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8679265341823991855L;
+	private static final long serialVersionUID = 3149787591958282935L;
 
 	/**
 	 * 蚂蚁合约单号

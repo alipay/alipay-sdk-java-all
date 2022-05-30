@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.innovate.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:16:45
+ * @since 1.0, 2022-05-23 14:36:45
  */
 public class AlipayFundTransInnovateOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8434796944748282721L;
+	private static final long serialVersionUID = 8611175555441924458L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -60,7 +60,7 @@ public class AlipayFundTransInnovateOrderQueryResponse extends AlipayResponse {
 	private Date payDate;
 
 	/** 
-	 * 转账单据状态。可能出现的状态如下： SUCCESS：转账成功； WAIT_PAY：等待支付； CLOSED：订单超时关闭； FAIL：失败（适用于"单笔转账到银行卡"）； DEALING：处理中（适用于"单笔转账到银行卡"）； REFUND：退票（适用于"单笔转账到银行卡"）；
+	 * 转账单据状态。可能出现的状态如下： SUCCESS：转账成功； WAIT_PAY：等待支付； CLOSE：订单超时关闭； FAIL：失败（适用于"单笔转账到银行卡"）； DEALING：处理中（适用于"单笔转账到银行卡"）； REFUND：退票（适用于"单笔转账到银行卡"）；
 	 */
 	@ApiField("status")
 	private String status;

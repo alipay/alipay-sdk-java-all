@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoanapplyQrcodeInvalidDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3178863981239965365L;
+	private static final long serialVersionUID = 6551199486645138713L;
 
 	/**
 	 * 需要失效的二维码的加密 token 信息

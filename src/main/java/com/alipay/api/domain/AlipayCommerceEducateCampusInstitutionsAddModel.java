@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商学校信息入驻
  *
  * @author auto create
- * @since 1.0, 2022-05-11 13:53:23
+ * @since 1.0, 2022-05-27 11:27:31
  */
 public class AlipayCommerceEducateCampusInstitutionsAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1525245654725888178L;
+	private static final long serialVersionUID = 4457969874245373691L;
 
 	/**
 	 * 事业单位法人证书或办学许可证的图片。入驻学校时，如果流入人工审核，会根据此图片进行辅助验证。

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建订单券
  *
  * @author auto create
- * @since 1.0, 2022-04-19 13:21:21
+ * @since 1.0, 2022-05-26 09:52:32
  */
 public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5212637994368238637L;
+	private static final long serialVersionUID = 4376572447717773864L;
 
 	/**
 	 * 活动名称。
@@ -30,7 +30,7 @@ public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject
 如果该复杂对象不填。则默认为该商家券活动的归属者是调用者本人。
 如果填写，则认为该商家券活动的归属者是该商户。
 
-限制:服务商身份接入时必传
+限制:自研商户可以不传，服务商身份接入时必传
 	 */
 	@ApiField("belong_merchant_info")
 	private BelongMerchantInfo belongMerchantInfo;
@@ -120,9 +120,12 @@ publish_start_time 间隔必须小于等于180天
 	 * 券类型。
 
 枚举值：
+商家券支持三类券类型：
 FIX_VOUCHER：满减券；
 DISCOUNT_VOUCHER：折扣券；
 SPECIAL_VOUCHER：特价券；
+
+兑换券仅支持一类券类型：
 EXCHANGE_VOUCHER: 兑换券；
 	 */
 	@ApiField("voucher_type")

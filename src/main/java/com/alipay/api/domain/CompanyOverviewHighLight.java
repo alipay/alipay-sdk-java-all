@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CompanyOverviewHighLight extends AlipayObject {
 
-	private static final long serialVersionUID = 2721417553297973239L;
+	private static final long serialVersionUID = 3218753617486465823L;
 
 	/**
 	 * 高亮文本。前端可以根据此字段内容高亮行文本中的部分文字。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询token上下文
  *
  * @author auto create
- * @since 1.0, 2019-06-17 16:18:57
+ * @since 1.0, 2022-05-27 11:26:24
  */
 public class AlipayCommerceKidsAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7689547797717298561L;
+	private static final long serialVersionUID = 7858521729277868228L;
 
 	/**
 	 * 登陆名

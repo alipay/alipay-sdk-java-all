@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸认证产品计费
  *
  * @author auto create
- * @since 1.0, 2022-04-15 17:53:52
+ * @since 1.0, 2022-05-26 20:43:01
  */
 public class DatadigitalFincloudGeneralsaasFaceFeeChargeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6576661458777423924L;
+	private static final long serialVersionUID = 3291986122923783647L;
 
 	/**
 	 * 云上人脸服务生成的单据号
@@ -28,7 +28,13 @@ public class DatadigitalFincloudGeneralsaasFaceFeeChargeModel extends AlipayObje
 	private String merchantId;
 
 	/**
-	 * 产品码
+	 * 云上核身的产品码
+	 */
+	@ApiField("product")
+	private String product;
+
+	/**
+	 * 该字段废弃不用。
 	 */
 	@ApiField("product_code")
 	private Date productCode;
@@ -57,6 +63,13 @@ public class DatadigitalFincloudGeneralsaasFaceFeeChargeModel extends AlipayObje
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public String getProduct() {
+		return this.product;
+	}
+	public void setProduct(String product) {
+		this.product = product;
 	}
 
 	public Date getProductCode() {

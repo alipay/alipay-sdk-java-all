@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模版答题要素
  *
  * @author auto create
- * @since 1.0, 2022-05-17 01:03:24
+ * @since 1.0, 2022-05-24 14:27:49
  */
 public class TemplateAnswerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5834697375882654238L;
+	private static final long serialVersionUID = 7716863584438236889L;
+
+	/**
+	 * 路径
+	 */
+	@ApiListField("attr_path")
+	@ApiField("attr_path_item_d_t_o")
+	private List<AttrPathItemDTO> attrPath;
 
 	/**
 	 * 答题对应的表达式
@@ -76,6 +83,13 @@ public class TemplateAnswerDTO extends AlipayObject {
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
+
+	public List<AttrPathItemDTO> getAttrPath() {
+		return this.attrPath;
+	}
+	public void setAttrPath(List<AttrPathItemDTO> attrPath) {
+		this.attrPath = attrPath;
+	}
 
 	public String getExp() {
 		return this.exp;

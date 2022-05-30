@@ -1,17 +1,43 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 云店券模版信息
+ * 超级导购券模版信息 
  *
  * @author auto create
- * @since 1.0, 2022-03-16 15:39:50
+ * @since 1.0, 2022-05-27 17:06:44
  */
 public class YunTaskVoucherTemplateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1497821863492148228L;
+	private static final long serialVersionUID = 2154524213676699343L;
+
+	/**
+	 * 模板创建时间。格式为：yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("create_time")
+	private Date createTime;
+
+	/**
+	 * 发放结束时间。格式为：yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("publish_end_time")
+	private Date publishEndTime;
+
+	/**
+	 * 券模板发放开始时间。格式为：yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("publish_start_time")
+	private Date publishStartTime;
+
+	/**
+	 * 模版状态
+	 */
+	@ApiField("status")
+	private String status;
 
 	/**
 	 * 券模版id
@@ -24,6 +50,34 @@ public class YunTaskVoucherTemplateInfo extends AlipayObject {
 	 */
 	@ApiField("voucher_name")
 	private String voucherName;
+
+	public Date getCreateTime() {
+		return this.createTime;
+	}
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public Date getPublishEndTime() {
+		return this.publishEndTime;
+	}
+	public void setPublishEndTime(Date publishEndTime) {
+		this.publishEndTime = publishEndTime;
+	}
+
+	public Date getPublishStartTime() {
+		return this.publishStartTime;
+	}
+	public void setPublishStartTime(Date publishStartTime) {
+		this.publishStartTime = publishStartTime;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 
 	public String getTemplateId() {
 		return this.templateId;

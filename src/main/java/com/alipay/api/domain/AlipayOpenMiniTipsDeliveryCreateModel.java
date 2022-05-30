@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序收藏tips引导投放创建
  *
  * @author auto create
- * @since 1.0, 2022-05-17 14:02:39
+ * @since 1.0, 2022-05-25 21:23:23
  */
 public class AlipayOpenMiniTipsDeliveryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8196561345745457442L;
+	private static final long serialVersionUID = 8327882413946284939L;
 
 	/**
 	 * 收藏引导文案内容，不得超过14个字

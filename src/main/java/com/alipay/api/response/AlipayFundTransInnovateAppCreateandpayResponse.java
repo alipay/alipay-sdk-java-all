@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.innovate.app.createandpay response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-13 20:51:43
+ * @since 1.0, 2022-05-23 18:11:40
  */
 public class AlipayFundTransInnovateAppCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4561932293745978972L;
+	private static final long serialVersionUID = 8259962242569618424L;
 
 	/** 
 	 * 该笔转账在支付宝系统内部的单据ID
@@ -27,7 +27,7 @@ public class AlipayFundTransInnovateAppCreateandpayResponse extends AlipayRespon
 	private String outBizNo;
 
 	/** 
-	 * SUCCESS：转账成功； WAIT_PAY：转账订单等待支付； CLOSED：订单超时关闭，截止订单支付超时时间(time_expire)仍未支付，单据状态会变更为CLOSED；
+	 * SUCCESS：转账成功； WAIT_PAY：转账订单等待支付； CLOSE：订单超时关闭，截止订单支付超时时间(time_expire)仍未支付，单据状态会变更为CLOSED；
 	 */
 	@ApiField("status")
 	private String status;

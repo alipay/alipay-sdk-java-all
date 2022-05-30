@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayAssetCardNewtemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8663566237412143694L;
+	private static final long serialVersionUID = 1872365128237266755L;
 
 	/**
 	 * 账户模式：借记/贷记/借贷合一账户模式

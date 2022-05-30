@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医疗行业医院数据上传接口
  *
  * @author auto create
- * @since 1.0, 2022-02-18 09:34:31
+ * @since 1.0, 2022-05-30 16:33:32
  */
 public class AlipayCommerceMedicalIndustrydataHospitalUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3559666137665531157L;
+	private static final long serialVersionUID = 8516782432688145626L;
 
 	/**
 	 * 医院信息

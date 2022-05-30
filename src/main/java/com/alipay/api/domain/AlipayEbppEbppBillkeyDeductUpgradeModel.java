@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 户号升级接口
  *
  * @author auto create
- * @since 1.0, 2022-04-24 14:16:38
+ * @since 1.0, 2022-05-26 11:22:12
  */
 public class AlipayEbppEbppBillkeyDeductUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6321267343497341833L;
+	private static final long serialVersionUID = 2135966132584472946L;
 
 	/**
 	 * 户号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券可用范围
  *
  * @author auto create
- * @since 1.0, 2022-04-08 21:47:14
+ * @since 1.0, 2022-05-26 14:43:31
  */
 public class VoucherAvailableScope extends AlipayObject {
 
-	private static final long serialVersionUID = 2571348366972248915L;
+	private static final long serialVersionUID = 6798254937639741397L;
 
 	/**
 	 * 券可用城市信息。 当voucher_available_type=CITY_CODE时，该字段必填。

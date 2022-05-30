@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻证信息查询
  *
  * @author auto create
- * @since 1.0, 2022-04-08 13:57:09
+ * @since 1.0, 2022-05-23 16:42:27
  */
 public class ZhimaCustomerZmcardInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7273663376332834789L;
+	private static final long serialVersionUID = 3475495542618573719L;
 
 	/**
 	 * 查看者的证件号或者支付宝用户UID,A申请查看B的芝麻证信息，则传入A的证件号，若是自己查看自己的，则传入自己的证件号，无法确定查看者，则传入空

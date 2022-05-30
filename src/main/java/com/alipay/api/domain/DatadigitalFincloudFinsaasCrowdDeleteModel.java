@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除人群
  *
  * @author auto create
- * @since 1.0, 2022-04-27 16:50:11
+ * @since 1.0, 2022-05-26 13:36:21
  */
 public class DatadigitalFincloudFinsaasCrowdDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8527795142272363229L;
+	private static final long serialVersionUID = 5754857956669741911L;
 
 	/**
 	 * 人群ID+唯一+删除人群

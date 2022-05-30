@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.instservice.signresult.query request
  * 
  * @author auto create
- * @since 1.0, 2022-05-12 17:56:47
+ * @since 1.0, 2022-05-30 14:16:41
  */
 public class AlipayEbppInstserviceSignresultQueryRequest implements AlipayRequest<AlipayEbppInstserviceSignresultQueryResponse> {
 

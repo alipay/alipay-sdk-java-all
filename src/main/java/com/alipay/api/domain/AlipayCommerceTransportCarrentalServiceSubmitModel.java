@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租车服务提报接口
  *
  * @author auto create
- * @since 1.0, 2021-08-17 13:12:22
+ * @since 1.0, 2022-05-25 10:20:53
  */
 public class AlipayCommerceTransportCarrentalServiceSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4695423487378841118L;
+	private static final long serialVersionUID = 8442883659469859521L;
 
 	/**
 	 * 扩展字段，服务扩展字段，示例：key：service_sub_type，value：car_rental_day

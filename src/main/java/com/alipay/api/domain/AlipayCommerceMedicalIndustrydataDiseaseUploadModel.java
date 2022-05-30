@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 疾病信息上传
  *
  * @author auto create
- * @since 1.0, 2022-02-18 09:33:13
+ * @since 1.0, 2022-05-30 16:33:55
  */
 public class AlipayCommerceMedicalIndustrydataDiseaseUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2336943269412522363L;
+	private static final long serialVersionUID = 5664946665897216831L;
 
 	/**
 	 * 疾病信息
