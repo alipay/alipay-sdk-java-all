@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商圈会员识别
  *
  * @author auto create
- * @since 1.0, 2018-06-19 15:49:06
+ * @since 1.0, 2022-06-02 11:13:15
  */
 public class KoubeiShopMallMemberIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7488128877371625375L;
+	private static final long serialVersionUID = 5364431687197424773L;
 
 	/**
 	 * 商圈ID

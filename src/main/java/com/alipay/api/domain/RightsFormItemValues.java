@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 立信权益表单模型
  *
  * @author auto create
- * @since 1.0, 2022-05-26 11:29:19
+ * @since 1.0, 2022-06-01 11:15:29
  */
 public class RightsFormItemValues extends AlipayObject {
 
-	private static final long serialVersionUID = 6698266629773319743L;
+	private static final long serialVersionUID = 3694166951267157622L;
 
 	/**
 	 * 企业统一社会信用代码
@@ -52,6 +53,12 @@ public class RightsFormItemValues extends AlipayObject {
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * 表单提交时间
+	 */
+	@ApiField("submit_time")
+	private Date submitTime;
 
 	/**
 	 * 用户的支付宝id
@@ -99,6 +106,13 @@ public class RightsFormItemValues extends AlipayObject {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public Date getSubmitTime() {
+		return this.submitTime;
+	}
+	public void setSubmitTime(Date submitTime) {
+		this.submitTime = submitTime;
 	}
 
 	public String getUserId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商圈会员卡信息查询
  *
  * @author auto create
- * @since 1.0, 2018-06-22 11:26:57
+ * @since 1.0, 2022-06-02 11:13:33
  */
 public class KoubeiShopMallCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3393466168229481899L;
+	private static final long serialVersionUID = 2594556926197618612L;
 
 	/**
 	 * 商圈ID

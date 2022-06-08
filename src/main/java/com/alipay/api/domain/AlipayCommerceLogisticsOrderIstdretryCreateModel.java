@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 重下即时配送订单
  *
  * @author auto create
- * @since 1.0, 2020-12-14 11:17:35
+ * @since 1.0, 2022-05-31 16:12:09
  */
 public class AlipayCommerceLogisticsOrderIstdretryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4724244127866826484L;
+	private static final long serialVersionUID = 6267565897429715275L;
 
 	/**
 	 * 消费者id， 如果consumer_source是alipay，则consumer_id必须是支付宝用户uid；如果consumer_source是wx，则consumer_id可以为空

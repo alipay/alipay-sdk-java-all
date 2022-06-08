@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 快消店铺展位内容创建接口
  *
  * @author auto create
- * @since 1.0, 2017-07-19 22:12:29
+ * @since 1.0, 2022-06-02 11:14:36
  */
 public class KoubeiMarketingCampaignRetailDmCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6441154874261965993L;
+	private static final long serialVersionUID = 8717911984432754439L;
 
 	/**
 	 * 第三方详情页链接：该商品/活动的详细介绍，注意：该字段需要过风控校验，不得传入敏感链接

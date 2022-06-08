@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.migrate response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-07 10:41:43
+ * @since 1.0, 2022-06-08 11:36:43
  */
 public class AlipayUserAgreementMigrateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7139848229854967344L;
+	private static final long serialVersionUID = 8237385327883311433L;
 
 	
 

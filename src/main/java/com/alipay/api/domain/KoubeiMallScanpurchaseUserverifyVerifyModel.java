@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户订单核销码核销
  *
  * @author auto create
- * @since 1.0, 2019-01-31 16:19:01
+ * @since 1.0, 2022-06-02 11:04:57
  */
 public class KoubeiMallScanpurchaseUserverifyVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5269248718133463176L;
+	private static final long serialVersionUID = 8594167644595343944L;
 
 	/**
 	 * 口碑店铺ID

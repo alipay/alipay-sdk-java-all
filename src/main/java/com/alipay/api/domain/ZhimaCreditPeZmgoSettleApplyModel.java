@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPeZmgoSettleApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3185556376912742659L;
+	private static final long serialVersionUID = 1677221578719159856L;
 
 	/**
 	 * DEFAULT_SETTLE 默认结算模式;
@@ -74,7 +74,7 @@ public class ZhimaCreditPeZmgoSettleApplyModel extends AlipayObject {
 	private String totalTaskCount;
 
 	/**
-	 * 芝麻GO结算时，需要传入的扣款单据号。来源于协议到期通知消息
+	 * 芝麻GO结算时，需要传入的扣款单据号。来源于协议到期通知消息，外部商户接入时，该参数必填
 	 */
 	@ApiField("withhold_plan_no")
 	private String withholdPlanNo;

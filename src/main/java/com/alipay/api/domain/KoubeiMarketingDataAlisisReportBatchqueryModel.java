@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报表列表查询接口
  *
  * @author auto create
- * @since 1.0, 2018-05-03 09:40:58
+ * @since 1.0, 2022-06-02 11:15:35
  */
 public class KoubeiMarketingDataAlisisReportBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3589145256662739996L;
+	private static final long serialVersionUID = 2741573836299791162L;
 
 	/**
 	 * 当前页码

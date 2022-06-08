@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询任务详情
  *
  * @author auto create
- * @since 1.0, 2022-03-24 20:42:50
+ * @since 1.0, 2022-05-30 20:18:26
  */
 public class AlipayCommerceYuntaskHunterGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6453168448864493526L;
+	private static final long serialVersionUID = 7661426545865142955L;
 
 	/**
 	 * 导购员id

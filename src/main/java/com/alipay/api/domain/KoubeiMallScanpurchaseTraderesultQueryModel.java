@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易结果页查询
  *
  * @author auto create
- * @since 1.0, 2019-01-23 20:29:25
+ * @since 1.0, 2022-06-02 11:06:02
  */
 public class KoubeiMallScanpurchaseTraderesultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6721748161972585558L;
+	private static final long serialVersionUID = 5471592858544878187L;
 
 	/**
 	 * 说明渠道，口碑app为 APP,  口碑tab 为TAB. 默认是TAB

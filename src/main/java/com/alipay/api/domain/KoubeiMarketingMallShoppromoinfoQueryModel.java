@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商圈店铺活动信息
  *
  * @author auto create
- * @since 1.0, 2018-08-22 11:33:13
+ * @since 1.0, 2022-06-02 11:17:53
  */
 public class KoubeiMarketingMallShoppromoinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5271293142332384169L;
+	private static final long serialVersionUID = 2193896296979339487L;
 
 	/**
 	 * 商圈id

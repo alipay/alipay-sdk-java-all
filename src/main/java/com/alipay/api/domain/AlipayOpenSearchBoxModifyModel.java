@@ -10,14 +10,15 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改搜索直达
  *
  * @author auto create
- * @since 1.0, 2022-04-19 19:28:21
+ * @since 1.0, 2022-05-30 20:08:04
  */
 public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7671481366183759277L;
+	private static final long serialVersionUID = 6115493283343289789L;
 
 	/**
-	 * 品牌介绍，5-15个中文字符。当module_type=BOX_EXCLUSIVE_BASE时传入，当brand_id为空时不支持修改
+	 * 品牌介绍，5-15个中文字符。当修改品牌介绍模块(module_type=BOX_EXCLUSIVE_BASE)时传入。
+小程序直达时不支持设置
 	 */
 	@ApiField("box_desc")
 	private String boxDesc;
@@ -29,25 +30,28 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 	private String boxId;
 
 	/**
-	 * 品牌id
+	 * 品牌id，参考<a href="https://opendocs.alipay.com/rules/029uy4"> 品牌认证说明 </a>
 	 */
 	@ApiField("brand_id")
 	private String brandId;
 
 	/**
-	 * 自定义关键词，最多可配置6个，限1-8个中文字符。当module_type=BOX_EXCLUSIVE_KEYWORD传入，当brand_id为空时不支持修改
+	 * 自定义关键词，最多可配置6个，限1-8个中文字符。当修改触发词模块时(module_type=BOX_EXCLUSIVE_KEYWORD)传入。
+小程序直达不支持设置
 	 */
 	@ApiField("custom_keywords")
 	private String customKeywords;
 
 	/**
-	 * 氛围图片id，调用<a href="https://opendocs.alipay.com/pre-open/032j4c"> 支付宝文件上传接口 </a>上传图片获取图片id。当module_type=BOX_ATMOSPHERE_IMAGE时传入，当brand_id为空时不支持修改。<a href="https://opendocs.alipay.com/mini/operation/atmospheredesign"> 图片规范 </a>
+	 * 氛围图片id，调用<a href="https://opendocs.alipay.com/mini/03hvkt"> 支付宝文件上传接口 </a>上传图片获取图片id(bizCode：search_box_atmosphere)。当修改氛围图模块(module_type=BOX_ATMOSPHERE_IMAGE)时传入。<a href="https://opendocs.alipay.com/mini/operation/atmospheredesign"> 图片规范 </a>
+小程序直达不支持设置
 	 */
 	@ApiField("image_id")
 	private String imageId;
 
 	/**
-	 * 氛围图片名，当module_type=BOX_ATMOSPHERE_IMAGE时传入，当brand_id为空时不支持修改
+	 * 氛围图片名，当修改氛围图模块(module_type=BOX_ATMOSPHERE_IMAGE)时传入。
+小程序直达不支持设置
 	 */
 	@ApiField("image_name")
 	private String imageName;
@@ -65,27 +69,28 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 	private String moduleId;
 
 	/**
-	 * 搜索直达模块类型，BOX_EXCLUSIVE_BASE-基础信息/BOX_EXCLUSIVE_KEYWORD-关键词/BOX_EXCLUSIVE_FUNCTIONS-功能服务/BOX_EXCLUSIVE_ACCOUNTS-关联账号/BOX_ATMOSPHERE_IMAGE-氛围图
+	 * 搜索直达模块类型，参考<a href="https://opendocs.alipay.com/mini/03fjba#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"> 搜索直达模块说明 </a>。取值范围：BOX_EXCLUSIVE_BASE-品牌介绍/BOX_EXCLUSIVE_KEYWORD-触发词/BOX_EXCLUSIVE_FUNCTIONS-常用服务/BOX_EXCLUSIVE_ACCOUNTS-官方账号/BOX_ATMOSPHERE_IMAGE-氛围图
 	 */
 	@ApiField("module_type")
 	private String moduleType;
 
 	/**
-	 * 关联账号信息，可配置1-2个。当module_type=BOX_EXCLUSIVE_ACCOUNTS时传入。当brand_id为空时不支持修改
+	 * 关联账号信息，可配置1-2个。当修改官方账号模块(module_type=BOX_EXCLUSIVE_ACCOUNTS)时传入。
+小程序直达不支持修改
 	 */
 	@ApiListField("related_accounts")
 	@ApiField("search_box_app_info")
 	private List<SearchBoxAppInfo> relatedAccounts;
 
 	/**
-	 * 服务信息，可配置1-4个。当module_type=BOX_EXCLUSIVE_FUNCTIONS时传入
+	 * 服务信息，服务必须审核通过才能申请搜索直达，可配置1-4个。当修改常用服务模块(module_type=BOX_EXCLUSIVE_FUNCTIONS)时传入
 	 */
 	@ApiListField("service_infos")
 	@ApiField("search_box_service_info")
 	private List<SearchBoxServiceInfo> serviceInfos;
 
 	/**
-	 * 小程序id，brand_id为空时必传
+	 * 小程序id，小程序直达时必传，需要和申请的商户主体保持一致，且符合<a href="https://opendocs.alipay.com/b/03al6e"> 准入类目 </a>
 	 */
 	@ApiField("target_appid")
 	private String targetAppid;

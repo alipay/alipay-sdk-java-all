@@ -1,17 +1,28 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 泛娱乐优惠商品上报
  *
  * @author auto create
- * @since 1.0, 2022-05-10 11:37:12
+ * @since 1.0, 2022-06-01 14:51:20
  */
 public class AlipayCommerceEntertainmentItemUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3523368935783749748L;
+	private static final long serialVersionUID = 8441145837776357968L;
+
+	/**
+	 * 业务场景码，不填默认为娱乐会员业务，可选枚举：
+CONSUME_GOLD（消费金积分兑换）
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * 商品是否启用（对客展示），true/false
@@ -66,6 +77,36 @@ json格式，请将需要传递的key和value字段放入map中，转成json str
 	private String pricingType;
 
 	/**
+	 * 优惠价，积分部分
+	 */
+	@ApiField("promote_point")
+	private Long promotePoint;
+
+	/**
+	 * 优惠价，现金部分（元）
+	 */
+	@ApiField("promote_price")
+	private String promotePrice;
+
+	/**
+	 * 优惠定价方式，不填默认为现金，可选枚举CASH（纯现金），CASH_POINT（现金加积分），POINT（纯积分）
+	 */
+	@ApiField("promote_price_mode")
+	private String promotePriceMode;
+
+	/**
+	 * 剩余库存
+	 */
+	@ApiField("remain_inventory")
+	private Long remainInventory;
+
+	/**
+	 * 积分商品规则ID，运营提供，非积分场景不用填
+	 */
+	@ApiField("rule_id")
+	private String ruleId;
+
+	/**
 	 * 可选类型有：
 VIDEO:影视
 MUSIC:音乐
@@ -74,10 +115,42 @@ MUSIC:音乐
 	private String serviceCategory;
 
 	/**
+	 * 商品标签，用于召回时筛选商品，积分场景必填
+	 */
+	@ApiListField("tags")
+	@ApiField("string")
+	private List<String> tags;
+
+	/**
+	 * 总库存
+	 */
+	@ApiField("total_inventory")
+	private Long totalInventory;
+
+	/**
 	 * 商品单价，单位元（人民币）
 	 */
 	@ApiField("unit_price")
 	private String unitPrice;
+
+	/**
+	 * 失效时间，不填默认长期有效
+	 */
+	@ApiField("valid_time_end")
+	private Date validTimeEnd;
+
+	/**
+	 * 生效时间，不填默认立即生效
+	 */
+	@ApiField("valid_time_start")
+	private Date validTimeStart;
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
+	}
 
 	public Boolean getEnable() {
 		return this.enable;
@@ -128,6 +201,41 @@ MUSIC:音乐
 		this.pricingType = pricingType;
 	}
 
+	public Long getPromotePoint() {
+		return this.promotePoint;
+	}
+	public void setPromotePoint(Long promotePoint) {
+		this.promotePoint = promotePoint;
+	}
+
+	public String getPromotePrice() {
+		return this.promotePrice;
+	}
+	public void setPromotePrice(String promotePrice) {
+		this.promotePrice = promotePrice;
+	}
+
+	public String getPromotePriceMode() {
+		return this.promotePriceMode;
+	}
+	public void setPromotePriceMode(String promotePriceMode) {
+		this.promotePriceMode = promotePriceMode;
+	}
+
+	public Long getRemainInventory() {
+		return this.remainInventory;
+	}
+	public void setRemainInventory(Long remainInventory) {
+		this.remainInventory = remainInventory;
+	}
+
+	public String getRuleId() {
+		return this.ruleId;
+	}
+	public void setRuleId(String ruleId) {
+		this.ruleId = ruleId;
+	}
+
 	public String getServiceCategory() {
 		return this.serviceCategory;
 	}
@@ -135,11 +243,39 @@ MUSIC:音乐
 		this.serviceCategory = serviceCategory;
 	}
 
+	public List<String> getTags() {
+		return this.tags;
+	}
+	public void setTags(List<String> tags) {
+		this.tags = tags;
+	}
+
+	public Long getTotalInventory() {
+		return this.totalInventory;
+	}
+	public void setTotalInventory(Long totalInventory) {
+		this.totalInventory = totalInventory;
+	}
+
 	public String getUnitPrice() {
 		return this.unitPrice;
 	}
 	public void setUnitPrice(String unitPrice) {
 		this.unitPrice = unitPrice;
+	}
+
+	public Date getValidTimeEnd() {
+		return this.validTimeEnd;
+	}
+	public void setValidTimeEnd(Date validTimeEnd) {
+		this.validTimeEnd = validTimeEnd;
+	}
+
+	public Date getValidTimeStart() {
+		return this.validTimeStart;
+	}
+	public void setValidTimeStart(Date validTimeStart) {
+		this.validTimeStart = validTimeStart;
 	}
 
 }

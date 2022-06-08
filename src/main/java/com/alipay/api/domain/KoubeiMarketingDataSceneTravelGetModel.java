@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取口碑商圈&店铺信息
  *
  * @author auto create
- * @since 1.0, 2018-08-17 10:19:01
+ * @since 1.0, 2022-06-02 11:11:02
  */
 public class KoubeiMarketingDataSceneTravelGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8741494261927868383L;
+	private static final long serialVersionUID = 4396572827735333961L;
 
 	/**
 	 * 出行营销场景业务参数

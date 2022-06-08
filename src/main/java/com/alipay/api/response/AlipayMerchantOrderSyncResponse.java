@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-26 16:47:21
+ * @since 1.0, 2022-05-31 14:56:41
  */
 public class AlipayMerchantOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5462248991193721243L;
+	private static final long serialVersionUID = 7861649873761586268L;
 
 	/** 
 	 * 分发结果
@@ -39,7 +39,7 @@ public class AlipayMerchantOrderSyncResponse extends AlipayResponse {
 
 	/** 
 	 * 同步订单记录id
-（同步小程序订单成功必返回record_id）
+（自2022年5月19日起，新接入商户，除点餐场景，该字段不再返回）
 	 */
 	@ApiField("record_id")
 	private String recordId;

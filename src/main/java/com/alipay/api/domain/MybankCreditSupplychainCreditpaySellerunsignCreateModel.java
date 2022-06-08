@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditSupplychainCreditpaySellerunsignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7758438761432297154L;
+	private static final long serialVersionUID = 4536952495714233652L;
 
 	/**
 	 * 合同编号

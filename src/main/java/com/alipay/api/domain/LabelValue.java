@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * keyvalue对
  *
  * @author auto create
- * @since 1.0, 2022-05-24 20:14:50
+ * @since 1.0, 2022-06-01 09:42:27
  */
 public class LabelValue extends AlipayObject {
 
-	private static final long serialVersionUID = 3261269683861714359L;
+	private static final long serialVersionUID = 3882431277866652828L;
 
 	/**
 	 * keyvalue对的key

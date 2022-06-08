@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易退款接口
  *
  * @author auto create
- * @since 1.0, 2022-05-23 15:20:19
+ * @since 1.0, 2022-05-30 21:11:08
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2349327392652126562L;
+	private static final long serialVersionUID = 7198558577867523523L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -58,6 +58,18 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	@ApiListField("query_options")
 	@ApiField("string")
 	private List<String> queryOptions;
+
+	/**
+	 * 指定垫资退款账号主体，可能是用户id或登录名
+	 */
+	@ApiField("refund_advance_account")
+	private String refundAdvanceAccount;
+
+	/**
+	 * 指定垫资退款账号的类型，取值范围：default，userId，loginName
+	 */
+	@ApiField("refund_advance_account_type")
+	private String refundAdvanceAccountType;
 
 	/**
 	 * 退款金额。
@@ -155,6 +167,20 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	}
 	public void setQueryOptions(List<String> queryOptions) {
 		this.queryOptions = queryOptions;
+	}
+
+	public String getRefundAdvanceAccount() {
+		return this.refundAdvanceAccount;
+	}
+	public void setRefundAdvanceAccount(String refundAdvanceAccount) {
+		this.refundAdvanceAccount = refundAdvanceAccount;
+	}
+
+	public String getRefundAdvanceAccountType() {
+		return this.refundAdvanceAccountType;
+	}
+	public void setRefundAdvanceAccountType(String refundAdvanceAccountType) {
+		this.refundAdvanceAccountType = refundAdvanceAccountType;
 	}
 
 	public String getRefundAmount() {

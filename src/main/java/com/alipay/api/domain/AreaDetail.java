@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AreaDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8282776599339584245L;
+	private static final long serialVersionUID = 1425636229458115222L;
 
 	/**
 	 * 国标六位行政区划代码；参考http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/。当area_name为“其他”等时该字段可能为空

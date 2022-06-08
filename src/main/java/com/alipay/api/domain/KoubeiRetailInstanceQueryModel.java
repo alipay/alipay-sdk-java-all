@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户券查询接口
  *
  * @author auto create
- * @since 1.0, 2017-09-27 18:08:35
+ * @since 1.0, 2022-06-02 11:16:57
  */
 public class KoubeiRetailInstanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2567644539375614769L;
+	private static final long serialVersionUID = 4599667164538523524L;
 
 	/**
 	 * 券或者电子DM单（VOUCHER、DM），如果字段为空返回VOUCHER类型

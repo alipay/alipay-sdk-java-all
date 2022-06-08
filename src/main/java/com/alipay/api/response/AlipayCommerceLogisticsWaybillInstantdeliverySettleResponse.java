@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.waybill.instantdelivery.settle response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 21:48:43
+ * @since 1.0, 2022-05-31 16:09:42
  */
 public class AlipayCommerceLogisticsWaybillInstantdeliverySettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8648774395139777827L;
+	private static final long serialVersionUID = 5671623836294161816L;
 
 	
 

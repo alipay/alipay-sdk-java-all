@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 财务相关主数据记录批量查询
  *
  * @author auto create
- * @since 1.0, 2021-09-27 20:52:17
+ * @since 1.0, 2022-06-06 17:35:50
  */
 public class AlipayBossFncGfmdmRecordsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4567617169879267744L;
+	private static final long serialVersionUID = 2453531466591953198L;
 
 	/**
 	 * 用于主数据项过滤指定信息的参数列表

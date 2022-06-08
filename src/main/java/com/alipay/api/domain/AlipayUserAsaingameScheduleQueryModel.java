@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询亚运行程单
  *
  * @author auto create
- * @since 1.0, 2022-05-26 15:01:00
+ * @since 1.0, 2022-06-05 21:00:34
  */
 public class AlipayUserAsaingameScheduleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4311792953828142323L;
+	private static final long serialVersionUID = 1439417585511188393L;
 
 	/**
 	 * 查询场景

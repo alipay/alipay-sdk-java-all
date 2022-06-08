@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.mdeviceprod.device.initialize request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 11:26:21
+ * @since 1.0, 2022-05-31 19:30:33
  */
 public class AlipayCommerceIotMdeviceprodDeviceInitializeRequest implements AlipayRequest<AlipayCommerceIotMdeviceprodDeviceInitializeResponse> {
 

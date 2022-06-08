@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业征信数据服务连接申请
  *
  * @author auto create
- * @since 1.0, 2022-04-02 14:35:56
+ * @since 1.0, 2022-05-31 10:52:19
  */
 public class ZhimaCreditEpCreditlinkAuthApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5466384943852831921L;
+	private static final long serialVersionUID = 7693692777475197741L;
 
 	/**
 	 * 授权回跳页面地址
@@ -30,6 +30,12 @@ public class ZhimaCreditEpCreditlinkAuthApplyModel extends AlipayObject {
 	 */
 	@ApiField("auth_notify_path")
 	private String authNotifyPath;
+
+	/**
+	 * 认证类型，请跟服务方获取
+	 */
+	@ApiField("certification_type")
+	private String certificationType;
 
 	/**
 	 * 已认证法人身份证号
@@ -81,7 +87,7 @@ public class ZhimaCreditEpCreditlinkAuthApplyModel extends AlipayObject {
 	private String merchantRequestId;
 
 	/**
-	 * 税票信息模型(在biz_type为TAXRECEIPT时，该字段为必填)
+	 * 税票信息模型(在data_type为TAXRECEIPT时，该字段为必填)
 	 */
 	@ApiField("tax_receipt_once_info")
 	private TaxReceiptOnceInfo taxReceiptOnceInfo;
@@ -105,6 +111,13 @@ public class ZhimaCreditEpCreditlinkAuthApplyModel extends AlipayObject {
 	}
 	public void setAuthNotifyPath(String authNotifyPath) {
 		this.authNotifyPath = authNotifyPath;
+	}
+
+	public String getCertificationType() {
+		return this.certificationType;
+	}
+	public void setCertificationType(String certificationType) {
+		this.certificationType = certificationType;
 	}
 
 	public String getCognizantCertNo() {

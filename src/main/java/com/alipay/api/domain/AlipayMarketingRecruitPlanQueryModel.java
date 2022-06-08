@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商方案详情查询
  *
  * @author auto create
- * @since 1.0, 2022-05-06 20:33:11
+ * @since 1.0, 2022-06-01 17:02:13
  */
 public class AlipayMarketingRecruitPlanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3376562979596821448L;
+	private static final long serialVersionUID = 1285349686642794351L;
+
+	/**
+	 * 查询可报名方案的目标商户信息。 说明： 如果该复杂对象不填。则默认为是查询调用者本人。 如果填写，则认为是查询该商户。 建议：服务商身份接入时必传，否则可报名方案不是针对代运营商户的。
+	 */
+	@ApiField("enroll_merchant")
+	private RecruitEnrollMerchant enrollMerchant;
 
 	/**
 	 * 招商方案ID
 	 */
 	@ApiField("plan_id")
 	private String planId;
+
+	public RecruitEnrollMerchant getEnrollMerchant() {
+		return this.enrollMerchant;
+	}
+	public void setEnrollMerchant(RecruitEnrollMerchant enrollMerchant) {
+		this.enrollMerchant = enrollMerchant;
+	}
 
 	public String getPlanId() {
 		return this.planId;

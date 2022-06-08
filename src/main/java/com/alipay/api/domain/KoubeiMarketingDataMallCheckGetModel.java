@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商圈圈子用户产生数据安全校验
  *
  * @author auto create
- * @since 1.0, 2018-06-20 13:41:41
+ * @since 1.0, 2022-06-02 11:10:00
  */
 public class KoubeiMarketingDataMallCheckGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8476487289258399439L;
+	private static final long serialVersionUID = 2318148248667742399L;
 
 	/**
 	 * 安全校验数据内容入参

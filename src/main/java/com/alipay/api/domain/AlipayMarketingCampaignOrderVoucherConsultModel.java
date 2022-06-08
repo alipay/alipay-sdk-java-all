@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单优惠前置咨询
  *
  * @author auto create
- * @since 1.0, 2021-12-21 19:03:13
+ * @since 1.0, 2022-06-07 22:45:38
  */
 public class AlipayMarketingCampaignOrderVoucherConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5566772222625881966L;
+	private static final long serialVersionUID = 4848633473819965231L;
+
+	/**
+	 * 业务参数大字段，优惠咨询的控制参数，json格式；目前支持传入useBigAmountSkipOrderThold为N来控制不使用大金额跳过优惠的订单门槛检查；默认不传；
+	 */
+	@ApiField("business_param")
+	private String businessParam;
 
 	/**
 	 * 商品咨询请求列表（当需要咨询单品券时必传，如果某商品不希望参与本次单品优惠咨询则不传递对应信息即可）
@@ -41,6 +47,13 @@ public class AlipayMarketingCampaignOrderVoucherConsultModel extends AlipayObjec
 	 */
 	@ApiField("specified_app_id")
 	private String specifiedAppId;
+
+	public String getBusinessParam() {
+		return this.businessParam;
+	}
+	public void setBusinessParam(String businessParam) {
+		this.businessParam = businessParam;
+	}
 
 	public List<ItemConsultRequest> getItemConsultList() {
 		return this.itemConsultList;

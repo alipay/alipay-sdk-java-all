@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预订单关闭接口
  *
  * @author auto create
- * @since 1.0, 2019-01-31 16:18:37
+ * @since 1.0, 2022-06-02 11:05:28
  */
 public class KoubeiMallScanpurchasePreorderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3447578586154979291L;
+	private static final long serialVersionUID = 6415641876396421456L;
 
 	/**
 	 * 预订单编号

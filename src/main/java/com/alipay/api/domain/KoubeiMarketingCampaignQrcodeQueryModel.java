@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑活动二维码查询接口
  *
  * @author auto create
- * @since 1.0, 2017-04-18 11:55:05
+ * @since 1.0, 2022-06-02 11:16:28
  */
 public class KoubeiMarketingCampaignQrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6874798293117562771L;
+	private static final long serialVersionUID = 7379254239723845258L;
 
 	/**
 	 * 活动id

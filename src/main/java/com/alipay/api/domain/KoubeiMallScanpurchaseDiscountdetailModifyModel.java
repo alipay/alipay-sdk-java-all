@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商圈场景交易优惠信息回传接口
  *
  * @author auto create
- * @since 1.0, 2019-01-31 16:18:52
+ * @since 1.0, 2022-06-02 11:05:44
  */
 public class KoubeiMallScanpurchaseDiscountdetailModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1641858615371795251L;
+	private static final long serialVersionUID = 7584498724221817853L;
 
 	/**
 	 * 蚂蚁统一会员ID

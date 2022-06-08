@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 快消行业 店铺页面已经置顶券和DM查询接口
  *
  * @author auto create
- * @since 1.0, 2017-09-27 18:08:19
+ * @since 1.0, 2022-06-02 11:10:18
  */
 public class KoubeiRetailTopinstanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6621341665725294979L;
+	private static final long serialVersionUID = 3161555971637863323L;
 
 	/**
 	 * 券或者电子DM单（VOUCHER、DM）

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达活动提报
  *
  * @author auto create
- * @since 1.0, 2022-04-20 14:02:46
+ * @since 1.0, 2022-06-06 11:24:03
  */
 public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1895296747362118367L;
+	private static final long serialVersionUID = 4752114691142971243L;
 
 	/**
-	 * 活动链接
+	 * 活动链接，必须为关联的小程序的页面链接（链接以 alipays 开头），可参考<a href="https://opendocs.alipay.com/support/01rb18"> 小程序scheme链接介绍 </a>
 	 */
 	@ApiField("action_url")
 	private String actionUrl;
@@ -29,13 +29,13 @@ public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 	private String boxId;
 
 	/**
-	 * 活动结束时间
+	 * 活动结束时间，开始和结束时间之间不得超过90天
 	 */
 	@ApiField("end_time")
 	private String endTime;
 
 	/**
-	 * 当material_type="IMAGE"时，为图片id；当material_type="VIDEO"时，为视频id。图片id可以通过调用<a href="https://opendocs.alipay.com/pre-open/032j4c"> 支付宝文件上传接口 </a>上传图片，获取图片id。<a href="https://opendocs.alipay.com/mini/operation/atmospheredesign"> 图片规范 </a>
+	 * 当material_type="IMAGE"时，为图片id；当material_type="VIDEO"时，为视频id。小程序直达仅支持图片类型。图片id可以通过调用<a href="https://opendocs.alipay.com/mini/03hvkt"> 支付宝文件上传接口 </a>上传图片，获取图片id(bizCode：search_box_banner)。<a href="https://opendocs.alipay.com/b/03al6f"> 图片规范 </a>
 	 */
 	@ApiField("material_id")
 	private String materialId;
@@ -53,13 +53,13 @@ public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 	private String merchantId;
 
 	/**
-	 * 活动开始时间
+	 * 活动开始时间，开始和结束时间之间不得超过90天
 	 */
 	@ApiField("start_time")
 	private String startTime;
 
 	/**
-	 * 跳转应用ID，当为品牌直达时必传
+	 * 跳转应用ID
 	 */
 	@ApiField("target_appid")
 	private String targetAppid;

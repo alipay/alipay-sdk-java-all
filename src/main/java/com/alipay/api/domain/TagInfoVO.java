@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TagInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2391144164719624494L;
+	private static final long serialVersionUID = 3181571537987825539L;
 
 	/**
 	 * 标签code

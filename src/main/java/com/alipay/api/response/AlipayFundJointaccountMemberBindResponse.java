@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.member.bind response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-23 15:41:09
+ * @since 1.0, 2022-06-08 14:06:14
  */
 public class AlipayFundJointaccountMemberBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4683485796526869888L;
+	private static final long serialVersionUID = 2838218924314669363L;
 
-	
+	/** 
+	 * 员工回应邀请链接
+	 */
+	@ApiField("reply_url")
+	private String replyUrl;
 
-	
+	public void setReplyUrl(String replyUrl) {
+		this.replyUrl = replyUrl;
+	}
+	public String getReplyUrl( ) {
+		return this.replyUrl;
+	}
 
 }

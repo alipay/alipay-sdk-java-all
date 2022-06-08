@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PointAccountLog extends AlipayObject {
 
-	private static final long serialVersionUID = 2411383867198782722L;
+	private static final long serialVersionUID = 7829259988341898952L;
 
 	/**
 	 * 账务流水号,与"我的集分宝"页面流水号保持一致

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot根据人脸图片查询人脸唯一序号
  *
  * @author auto create
- * @since 1.0, 2022-05-07 10:52:59
+ * @since 1.0, 2022-06-08 14:21:48
  */
 public class AlipayOpenIotmbsFacedbCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3113757573727429653L;
+	private static final long serialVersionUID = 7823279997741759742L;
 
 	/**
 	 * 人脸ID
@@ -36,6 +36,12 @@ public class AlipayOpenIotmbsFacedbCreateModel extends AlipayObject {
 	 */
 	@ApiField("project_id")
 	private String projectId;
+
+	/**
+	 * 设备sn号
+	 */
+	@ApiField("sn")
+	private String sn;
 
 	public String getFaceId() {
 		return this.faceId;
@@ -63,6 +69,13 @@ public class AlipayOpenIotmbsFacedbCreateModel extends AlipayObject {
 	}
 	public void setProjectId(String projectId) {
 		this.projectId = projectId;
+	}
+
+	public String getSn() {
+		return this.sn;
+	}
+	public void setSn(String sn) {
+		this.sn = sn;
 	}
 
 }

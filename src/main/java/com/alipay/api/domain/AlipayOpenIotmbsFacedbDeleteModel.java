@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot根据人脸id删除库中图片
  *
  * @author auto create
- * @since 1.0, 2022-05-07 10:52:04
+ * @since 1.0, 2022-06-08 14:29:41
  */
 public class AlipayOpenIotmbsFacedbDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2563612998291577974L;
+	private static final long serialVersionUID = 1456794349449599445L;
 
 	/**
 	 * 人脸ID
@@ -30,6 +30,12 @@ public class AlipayOpenIotmbsFacedbDeleteModel extends AlipayObject {
 	 */
 	@ApiField("project_id")
 	private String projectId;
+
+	/**
+	 * 设备sn
+	 */
+	@ApiField("sn")
+	private String sn;
 
 	public String getFaceId() {
 		return this.faceId;
@@ -50,6 +56,13 @@ public class AlipayOpenIotmbsFacedbDeleteModel extends AlipayObject {
 	}
 	public void setProjectId(String projectId) {
 		this.projectId = projectId;
+	}
+
+	public String getSn() {
+		return this.sn;
+	}
+	public void setSn(String sn) {
+		this.sn = sn;
 	}
 
 }

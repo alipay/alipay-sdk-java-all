@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.receipt.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-11 17:46:36
+ * @since 1.0, 2022-05-31 16:57:05
  */
 public class AlipayCommerceReceiptSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7894166575225648153L;
+	private static final long serialVersionUID = 8593594186371882556L;
 
 	
 

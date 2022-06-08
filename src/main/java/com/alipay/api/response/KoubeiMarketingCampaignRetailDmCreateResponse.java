@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.retail.dm.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-06-02 11:14:36
  */
 public class KoubeiMarketingCampaignRetailDmCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8561981698597451967L;
+	private static final long serialVersionUID = 5599874626642569841L;
 
 	/** 
 	 * 内容id：该活动/商品入库成功之后，会将该活动/商品的id返回，作为商品/活动的内容id

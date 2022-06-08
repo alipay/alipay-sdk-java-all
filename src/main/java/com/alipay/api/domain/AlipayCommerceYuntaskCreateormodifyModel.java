@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建/编辑云店任务模版
  *
  * @author auto create
- * @since 1.0, 2022-03-23 19:43:58
+ * @since 1.0, 2022-06-02 14:49:54
  */
 public class AlipayCommerceYuntaskCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6679529356167168643L;
+	private static final long serialVersionUID = 7743879813983575255L;
 
 	/**
 	 * 小程序appid

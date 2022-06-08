@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 扫码购下单接口
  *
  * @author auto create
- * @since 1.0, 2019-01-30 14:23:31
+ * @since 1.0, 2022-06-02 11:06:16
  */
 public class KoubeiMallScanpurchaseTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4411482425472591523L;
+	private static final long serialVersionUID = 2652182649196118367L;
 
 	/**
 	 * 预订单编号

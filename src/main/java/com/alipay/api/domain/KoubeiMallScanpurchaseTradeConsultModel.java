@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 扫码购场景商品优惠咨询
  *
  * @author auto create
- * @since 1.0, 2019-01-31 16:19:13
+ * @since 1.0, 2022-06-02 11:06:45
  */
 public class KoubeiMallScanpurchaseTradeConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5316939854914735238L;
+	private static final long serialVersionUID = 7849926891876642961L;
 
 	/**
 	 * 商品明细列表。注意：单品总金额不能大于订单金额

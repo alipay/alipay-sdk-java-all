@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-20 16:50:43
+ * @since 1.0, 2022-06-06 16:16:43
  */
 public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3331191128499426261L;
+	private static final long serialVersionUID = 5191825179974213926L;
 
 	/** 
 	 * 用户签约成功后的协议号
@@ -55,6 +55,18 @@ public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("invalid_time")
 	private String invalidTime;
+
+	/** 
+	 * 周期扣协议，上次扣款成功时间
+	 */
+	@ApiField("last_deduct_time")
+	private String lastDeductTime;
+
+	/** 
+	 * 周期扣协议，预计下次扣款时间
+	 */
+	@ApiField("next_deduct_time")
+	private String nextDeductTime;
 
 	/** 
 	 * 协议产品码，商户和支付宝签约时确定，不同业务场景对应不同的签约产品码。
@@ -175,6 +187,20 @@ CUSTOMER:支付宝用户
 	}
 	public String getInvalidTime( ) {
 		return this.invalidTime;
+	}
+
+	public void setLastDeductTime(String lastDeductTime) {
+		this.lastDeductTime = lastDeductTime;
+	}
+	public String getLastDeductTime( ) {
+		return this.lastDeductTime;
+	}
+
+	public void setNextDeductTime(String nextDeductTime) {
+		this.nextDeductTime = nextDeductTime;
+	}
+	public String getNextDeductTime( ) {
+		return this.nextDeductTime;
 	}
 
 	public void setPersonalProductCode(String personalProductCode) {

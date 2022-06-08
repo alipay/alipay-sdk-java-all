@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.HotelRoomFaceInfoRes;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.hoteldevice.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-07 10:51:44
+ * @since 1.0, 2022-06-08 14:31:41
  */
 public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2343159123617219953L;
+	private static final long serialVersionUID = 6386844518568386333L;
+
+	/** 
+	 * 设备绑定的人脸数据列表
+	 */
+	@ApiListField("face_list")
+	@ApiField("hotel_room_face_info_res")
+	private List<HotelRoomFaceInfoRes> faceList;
 
 	/** 
 	 * 刷脸组ID
@@ -31,6 +41,19 @@ public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("room_no")
 	private String roomNo;
+
+	/** 
+	 * 0:未入住，1:入住
+	 */
+	@ApiField("room_status")
+	private String roomStatus;
+
+	public void setFaceList(List<HotelRoomFaceInfoRes> faceList) {
+		this.faceList = faceList;
+	}
+	public List<HotelRoomFaceInfoRes> getFaceList( ) {
+		return this.faceList;
+	}
 
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
@@ -51,6 +74,13 @@ public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 	}
 	public String getRoomNo( ) {
 		return this.roomNo;
+	}
+
+	public void setRoomStatus(String roomStatus) {
+		this.roomStatus = roomStatus;
+	}
+	public String getRoomStatus( ) {
+		return this.roomStatus;
 	}
 
 }

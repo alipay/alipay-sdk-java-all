@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataservicePropertyBusinesspropertyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5325954242555424143L;
+	private static final long serialVersionUID = 6484146666934483438L;
 
 	/**
 	 * 业务负责人工号

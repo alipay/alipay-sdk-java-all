@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiLinkFundResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2549528638685928775L;
+	private static final long serialVersionUID = 1862879454133688614L;
 
 	/**
 	 * 基金数据

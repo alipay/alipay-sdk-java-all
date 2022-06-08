@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户维度券置顶接口
  *
  * @author auto create
- * @since 1.0, 2017-10-17 22:16:26
+ * @since 1.0, 2022-06-02 11:15:52
  */
 public class KoubeiRetailInstanceTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1684491493587935544L;
+	private static final long serialVersionUID = 4625595325252276191L;
 
 	/**
 	 * 置顶的券id列表信息，id的顺序指定置顶的券的顺序，如果空表示将原先的id删除。列表数量限制为20

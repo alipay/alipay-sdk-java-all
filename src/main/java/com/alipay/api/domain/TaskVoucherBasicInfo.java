@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务券信息
  *
  * @author auto create
- * @since 1.0, 2022-03-17 15:22:03
+ * @since 1.0, 2022-05-30 20:19:46
  */
 public class TaskVoucherBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7284576951129566896L;
+	private static final long serialVersionUID = 2517973519439926775L;
 
 	/**
 	 * 券图标

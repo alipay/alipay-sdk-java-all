@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业用户详情
  *
  * @author auto create
- * @since 1.0, 2022-05-10 10:58:58
+ * @since 1.0, 2022-06-07 11:45:57
  */
 public class EnterpriseCustomerInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6242657198873922129L;
+	private static final long serialVersionUID = 7431159644378187978L;
 
 	/**
 	 * 企业名称
@@ -24,6 +24,12 @@ public class EnterpriseCustomerInfoVO extends AlipayObject {
 	 */
 	@ApiField("enterprise_addr")
 	private String enterpriseAddr;
+
+	/**
+	 * 企业银行卡卡名
+	 */
+	@ApiField("enterprise_bank_card_name")
+	private String enterpriseBankCardName;
 
 	/**
 	 * 开户行名称（开票用）
@@ -73,6 +79,13 @@ public class EnterpriseCustomerInfoVO extends AlipayObject {
 	}
 	public void setEnterpriseAddr(String enterpriseAddr) {
 		this.enterpriseAddr = enterpriseAddr;
+	}
+
+	public String getEnterpriseBankCardName() {
+		return this.enterpriseBankCardName;
+	}
+	public void setEnterpriseBankCardName(String enterpriseBankCardName) {
+		this.enterpriseBankCardName = enterpriseBankCardName;
 	}
 
 	public String getEnterpriseBankName() {

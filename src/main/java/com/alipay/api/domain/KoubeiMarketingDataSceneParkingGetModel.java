@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户场景广告投放
  *
  * @author auto create
- * @since 1.0, 2018-06-14 18:15:29
+ * @since 1.0, 2022-06-02 11:03:29
  */
 public class KoubeiMarketingDataSceneParkingGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2893547677164337288L;
+	private static final long serialVersionUID = 2325671754579352959L;
 
 	/**
 	 * 停车场景业务参数

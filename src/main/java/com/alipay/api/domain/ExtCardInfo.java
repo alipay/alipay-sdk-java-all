@@ -4,53 +4,55 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 托管账户外卡信息
+ * 资金记账账簿外卡信息
  *
  * @author auto create
- * @since 1.0, 2020-03-10 22:52:32
+ * @since 1.0, 2022-06-05 11:30:45
  */
 public class ExtCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4581849187866599497L;
+	private static final long serialVersionUID = 1549165771252954365L;
 
 	/**
-	 * 托管子户外卡户名
+	 * 记账的外卡户名
 	 */
 	@ApiField("bank_acc_name")
 	private String bankAccName;
 
 	/**
-	 * 托管子户外卡开户行
+	 * 记账的外卡开户行
 	 */
 	@ApiField("card_bank")
 	private String cardBank;
 
 	/**
-	 * 托管子户外卡支行
+	 * 记账的外卡支行
 	 */
 	@ApiField("card_branch")
 	private String cardBranch;
 
 	/**
-	 * 托管子户外卡联行号
+	 * 记账的外卡联行号
 	 */
 	@ApiField("card_deposit")
 	private String cardDeposit;
 
 	/**
-	 * 托管子户外卡开户地址
+	 * 记账的外卡开户地址
 	 */
 	@ApiField("card_location")
 	private String cardLocation;
 
 	/**
-	 * 托管子户的外卡卡号
+	 * 记账的外卡卡号
 	 */
 	@ApiField("card_no")
 	private String cardNo;
 
 	/**
-	 * 托管子户外卡状态
+	 * 记账的外卡状态,
+A：正常状态; 
+其他：异常
 	 */
 	@ApiField("status")
 	private String status;

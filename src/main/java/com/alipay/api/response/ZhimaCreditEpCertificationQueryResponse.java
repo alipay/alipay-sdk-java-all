@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-15 12:00:10
+ * @since 1.0, 2022-06-06 17:46:42
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1639329823314397849L;
+	private static final long serialVersionUID = 4371681657635663293L;
 
 	/** 
 	 * 代理函有效访问地址，有效时间2分钟，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
@@ -42,6 +42,12 @@ FAIL，代表用户未授权或授权失效
 	 */
 	@ApiField("certify_channel")
 	private String certifyChannel;
+
+	/** 
+	 * 认证完成时间
+	 */
+	@ApiField("certify_end_date")
+	private String certifyEndDate;
 
 	/** 
 	 * 认证失败原因列表，当certify_status=FAIL时返回
@@ -134,6 +140,13 @@ FAIL，代表失败
 	}
 	public String getCertifyChannel( ) {
 		return this.certifyChannel;
+	}
+
+	public void setCertifyEndDate(String certifyEndDate) {
+		this.certifyEndDate = certifyEndDate;
+	}
+	public String getCertifyEndDate( ) {
+		return this.certifyEndDate;
 	}
 
 	public void setCertifyFailReasons(List<String> certifyFailReasons) {

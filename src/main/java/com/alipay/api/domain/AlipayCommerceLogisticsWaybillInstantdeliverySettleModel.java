@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即时配送运单结算
  *
  * @author auto create
- * @since 1.0, 2021-02-07 11:46:47
+ * @since 1.0, 2022-05-31 16:09:42
  */
 public class AlipayCommerceLogisticsWaybillInstantdeliverySettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6837548733162535297L;
+	private static final long serialVersionUID = 7634748186983439271L;
 
 	/**
 	 * 即时配送公司编码

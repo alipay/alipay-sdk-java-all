@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppJfexportBillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7742271912784255834L;
+	private static final long serialVersionUID = 4626123297829931215L;
 
 	/**
 	 * 支付金额,单位为：RMB 元。

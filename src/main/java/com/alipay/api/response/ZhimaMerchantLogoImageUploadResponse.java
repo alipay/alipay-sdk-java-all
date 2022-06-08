@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantLogoImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4552817328111175919L;
+	private static final long serialVersionUID = 5527722321312595366L;
 
 	/** 
 	 * 上传图片后生成的图片地址

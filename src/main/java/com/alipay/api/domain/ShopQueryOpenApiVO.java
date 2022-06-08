@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店分页查询详情
  *
  * @author auto create
- * @since 1.0, 2020-12-31 13:39:52
+ * @since 1.0, 2022-06-08 19:56:25
  */
 public class ShopQueryOpenApiVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7461751865224837464L;
+	private static final long serialVersionUID = 5641728881566847159L;
 
 	/**
 	 * 经营地址
@@ -52,6 +52,12 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * 当前名称、地址、经纬度信息准确一致，可用于数字化经营场景消费（01=已认证,02=待优化,99=未知）
+	 */
+	@ApiField("shop_info_status")
+	private String shopInfoStatus;
 
 	/**
 	 * 店铺名称
@@ -117,6 +123,13 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public String getShopInfoStatus() {
+		return this.shopInfoStatus;
+	}
+	public void setShopInfoStatus(String shopInfoStatus) {
+		this.shopInfoStatus = shopInfoStatus;
 	}
 
 	public String getShopName() {

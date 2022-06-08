@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VehicleMsgSendResultEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 2644542151397573143L;
+	private static final long serialVersionUID = 4538123892191773775L;
 
 	/**
 	 * identity字段：值为不大于64位的保证唯一的字符串；该字段用于保证消息唯一性，防止消息重复推送，相当于业务流水号，由接入方自行生成

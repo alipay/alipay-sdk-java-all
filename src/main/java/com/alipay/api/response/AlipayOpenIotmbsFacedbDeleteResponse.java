@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.facedb.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-07 10:52:04
+ * @since 1.0, 2022-06-08 14:31:41
  */
 public class AlipayOpenIotmbsFacedbDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8628266569141776158L;
+	private static final long serialVersionUID = 5583298741693399281L;
 
 	/** 
 	 * 成功true失败false

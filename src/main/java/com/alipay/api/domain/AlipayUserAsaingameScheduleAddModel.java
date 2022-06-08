@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  *  加入行程
  *
  * @author auto create
- * @since 1.0, 2022-05-26 16:01:03
+ * @since 1.0, 2022-06-05 21:00:13
  */
 public class AlipayUserAsaingameScheduleAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5128623378887646545L;
+	private static final long serialVersionUID = 1294776347431977144L;
 
 	/**
 	 * 如果要加入到某一天，则必传。 如果新建则非必传

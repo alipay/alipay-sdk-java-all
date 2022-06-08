@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取商圈店铺分类
  *
  * @author auto create
- * @since 1.0, 2018-07-04 21:31:07
+ * @since 1.0, 2022-06-02 11:14:04
  */
 public class KoubeiMarketingDataShopCategoryGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1895394458111157299L;
+	private static final long serialVersionUID = 8742676316443971483L;
 
 	/**
 	 * 该参数标识需要返回几个分类，多余的分类将会放于other字段中，最大值传入50，默认值10

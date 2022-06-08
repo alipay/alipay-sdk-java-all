@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预订单创建
  *
  * @author auto create
- * @since 1.0, 2019-01-31 16:18:56
+ * @since 1.0, 2022-06-02 11:06:51
  */
 public class KoubeiMallScanpurchasePreorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6738435282328196136L;
+	private static final long serialVersionUID = 8148219436232755786L;
 
 	/**
 	 * 业务场景码，分类：PURCHASE_CODE（扫码购场景）

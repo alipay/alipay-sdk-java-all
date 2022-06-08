@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContactFollower extends AlipayObject {
 
-	private static final long serialVersionUID = 3178324715424562734L;
+	private static final long serialVersionUID = 7688566128838467144L;
 
 	/**
 	 * 支付宝头像

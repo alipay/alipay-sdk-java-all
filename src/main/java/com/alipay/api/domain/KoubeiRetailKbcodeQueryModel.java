@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 快消行业口碑码查询接口
  *
  * @author auto create
- * @since 1.0, 2017-09-13 10:34:04
+ * @since 1.0, 2022-06-02 11:11:30
  */
 public class KoubeiRetailKbcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2616745492249839989L;
+	private static final long serialVersionUID = 6177996447423357659L;
 
 	/**
 	 * 创建码接口返回的批次id，如果不填写则查询这个带运营商户下所有开放接口生成的码
