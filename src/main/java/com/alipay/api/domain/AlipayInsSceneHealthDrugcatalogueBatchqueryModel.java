@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 健康门诊险药品目录批量查询接口
  *
  * @author auto create
- * @since 1.0, 2022-05-23 14:51:14
+ * @since 1.0, 2022-06-09 19:27:21
  */
 public class AlipayInsSceneHealthDrugcatalogueBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4729997259425847555L;
+	private static final long serialVersionUID = 1142186745911521552L;
 
 	/**
 	 * 蚂蚁合约单号
@@ -42,6 +42,13 @@ public class AlipayInsSceneHealthDrugcatalogueBatchqueryModel extends AlipayObje
 	@ApiField("string")
 	private List<String> generalNameList;
 
+	/**
+	 * 商品名称列表
+	 */
+	@ApiListField("item_name_list")
+	@ApiField("string")
+	private List<String> itemNameList;
+
 	public String getAntSerContractNo() {
 		return this.antSerContractNo;
 	}
@@ -68,6 +75,13 @@ public class AlipayInsSceneHealthDrugcatalogueBatchqueryModel extends AlipayObje
 	}
 	public void setGeneralNameList(List<String> generalNameList) {
 		this.generalNameList = generalNameList;
+	}
+
+	public List<String> getItemNameList() {
+		return this.itemNameList;
+	}
+	public void setItemNameList(List<String> itemNameList) {
+		this.itemNameList = itemNameList;
 	}
 
 }

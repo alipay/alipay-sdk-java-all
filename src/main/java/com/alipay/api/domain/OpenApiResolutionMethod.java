@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiResolutionMethod extends AlipayObject {
 
-	private static final long serialVersionUID = 3277826181896239951L;
+	private static final long serialVersionUID = 4272358145225827977L;
 
 	/**
 	 * Otp校验方法的标识

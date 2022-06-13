@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险域内企业员工模型
  *
  * @author auto create
- * @since 1.0, 2022-04-29 19:42:24
+ * @since 1.0, 2022-06-10 16:17:35
  */
 public class InsEmployee extends AlipayObject {
 
-	private static final long serialVersionUID = 7191499878846422465L;
+	private static final long serialVersionUID = 4193886687724417153L;
 
 	/**
 	 * 证件名称

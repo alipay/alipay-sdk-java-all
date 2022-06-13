@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财受理参与者模型
  *
  * @author auto create
- * @since 1.0, 2020-08-24 21:46:39
+ * @since 1.0, 2022-06-10 11:41:26
  */
 public class GFAOpenAPIParticipantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4719969393952942141L;
+	private static final long serialVersionUID = 1781765686334863742L;
 
 	/**
 	 * 参与者账户

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditQuotaDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1245411363581767274L;
+	private static final long serialVersionUID = 3513416719231417381L;
 
 	/**
 	 * 授信期限

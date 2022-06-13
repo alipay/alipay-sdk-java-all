@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车司机交易单信息
  *
  * @author auto create
- * @since 1.0, 2021-09-09 09:44:52
+ * @since 1.0, 2022-06-10 19:44:25
  */
 public class DriverTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5235966899458124154L;
+	private static final long serialVersionUID = 8693737925178413614L;
 
 	/**
 	 * 交易日期
@@ -24,6 +24,12 @@ public class DriverTradeInfo extends AlipayObject {
 	 */
 	@ApiField("driver_user_id")
 	private String driverUserId;
+
+	/**
+	 * Y-风控，N-不风控，null或空代表不风控
+	 */
+	@ApiField("risk_control")
+	private String riskControl;
 
 	/**
 	 * 交易单号
@@ -49,6 +55,13 @@ public class DriverTradeInfo extends AlipayObject {
 	}
 	public void setDriverUserId(String driverUserId) {
 		this.driverUserId = driverUserId;
+	}
+
+	public String getRiskControl() {
+		return this.riskControl;
+	}
+	public void setRiskControl(String riskControl) {
+		this.riskControl = riskControl;
 	}
 
 	public String getTradeNo() {

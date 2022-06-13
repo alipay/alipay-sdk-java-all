@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 资金预授权单笔操作明细查询接口
  *
  * @author auto create
- * @since 1.0, 2022-04-11 20:44:18
+ * @since 1.0, 2022-06-09 20:05:14
  */
 public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3375319693341265794L;
+	private static final long serialVersionUID = 3311224193278788738L;
 
 	/**
 	 * 支付宝授权资金订单号。
@@ -54,6 +57,13 @@ public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
+	/**
+	 * 需要查询的额外信息
+	 */
+	@ApiListField("query_options")
+	@ApiField("string")
+	private List<String> queryOptions;
+
 	public String getAuthNo() {
 		return this.authNo;
 	}
@@ -87,6 +97,13 @@ public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 	}
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
+	}
+
+	public List<String> getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(List<String> queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 }

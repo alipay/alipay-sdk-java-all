@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6115493283343289789L;
+	private static final long serialVersionUID = 3683857936349862314L;
 
 	/**
 	 * 品牌介绍，5-15个中文字符。当修改品牌介绍模块(module_type=BOX_EXCLUSIVE_BASE)时传入。
@@ -75,8 +75,7 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 	private String moduleType;
 
 	/**
-	 * 关联账号信息，可配置1-2个。当修改官方账号模块(module_type=BOX_EXCLUSIVE_ACCOUNTS)时传入。
-小程序直达不支持修改
+	 * 关联账号信息，可配置1-2个。传入账号需归属于商家主体。品牌直达修改官方账号(module_type=BOX_EXCLUSIVE_ACCOUNTS)时传入，小程序直达修改常用服务模块时也需传值。
 	 */
 	@ApiListField("related_accounts")
 	@ApiField("search_box_app_info")

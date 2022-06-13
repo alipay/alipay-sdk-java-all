@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.uni.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-30 15:28:31
+ * @since 1.0, 2022-06-10 20:16:42
  */
 public class AlipayFundTransUniTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7471173943872696277L;
+	private static final long serialVersionUID = 6745995933471593923L;
 
 	/** 
 	 * 支付宝转账订单号
@@ -34,7 +34,7 @@ public class AlipayFundTransUniTransferResponse extends AlipayResponse {
 
 	/** 
 	 * 转账单据状态。
-SUCCESS：成功；
+SUCCESS（该笔转账交易成功）：成功；
 FAIL：失败（具体失败原因请参见error_code以及fail_reason返回值）；
 DEALING：处理中（转账到支付宝账户不涉及）；
 REFUND：退票（转账到支付宝账户不涉及）；

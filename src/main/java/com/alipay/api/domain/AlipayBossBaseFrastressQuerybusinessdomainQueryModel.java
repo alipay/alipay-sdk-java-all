@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossBaseFrastressQuerybusinessdomainQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7345111344589335534L;
+	private static final long serialVersionUID = 5393322938633612776L;
 
 	/**
 	 * 是否需要递归【基础树】获取风险域的子节点 默认值 false

@@ -7,11 +7,19 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户券详情
  *
  * @author auto create
- * @since 1.0, 2021-11-25 22:40:43
+ * @since 1.0, 2022-06-10 20:27:53
  */
 public class AlipayMarketingActivityUserQueryvoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2427533971985793279L;
+	private static final long serialVersionUID = 5525948828499697811L;
+
+	/**
+	 * 活动id。
+限制:
+当传入voucher_code时该值必传
+	 */
+	@ApiField("activity_id")
+	private String activityId;
 
 	/**
 	 * 商户PID,默认为当前接口调用商户 
@@ -30,10 +38,27 @@ public class AlipayMarketingActivityUserQueryvoucherModel extends AlipayObject {
 	private String userId;
 
 	/**
+	 * 用户领取的商家券券码。
+限制: 
+voucher_id与voucher_code必须二选一
+	 */
+	@ApiField("voucher_code")
+	private String voucherCode;
+
+	/**
 	 * 用户券id。支付宝为用户优惠券唯一分配的id。
+限制:
+voucher_id与voucher_code必须二选一
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
+
+	public String getActivityId() {
+		return this.activityId;
+	}
+	public void setActivityId(String activityId) {
+		this.activityId = activityId;
+	}
 
 	public String getMerchantId() {
 		return this.merchantId;
@@ -47,6 +72,13 @@ public class AlipayMarketingActivityUserQueryvoucherModel extends AlipayObject {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getVoucherCode() {
+		return this.voucherCode;
+	}
+	public void setVoucherCode(String voucherCode) {
+		this.voucherCode = voucherCode;
 	}
 
 	public String getVoucherId() {

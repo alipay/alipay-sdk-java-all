@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步提测平台任务成绩
  *
  * @author auto create
- * @since 1.0, 2022-04-24 17:24:21
+ * @since 1.0, 2022-06-13 19:51:19
  */
 public class AnttechOceanbaseTestplatformTaskSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6399242559741367798L;
+	private static final long serialVersionUID = 6261475212942535117L;
 
 	/**
 	 * 提测时使用的代码分支

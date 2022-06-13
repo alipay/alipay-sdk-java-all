@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoLicenseOcrIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4756832781945163837L;
+	private static final long serialVersionUID = 7159764634961566289L;
 
 	/** 
 	 * 地址

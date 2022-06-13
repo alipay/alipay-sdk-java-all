@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OverseasTravelRate extends AlipayObject {
 
-	private static final long serialVersionUID = 2745278563692429284L;
+	private static final long serialVersionUID = 2284551722277113275L;
 
 	/**
 	 * 货币代码，ISO标准alpha- 3币种代码

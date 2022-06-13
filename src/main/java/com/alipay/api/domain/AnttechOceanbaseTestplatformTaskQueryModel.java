@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取ob开源官网提测平台待执行任务接口
  *
  * @author auto create
- * @since 1.0, 2022-04-24 17:24:06
+ * @since 1.0, 2022-06-13 19:50:42
  */
 public class AnttechOceanbaseTestplatformTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1862611232436985465L;
+	private static final long serialVersionUID = 5531652689277332966L;
 
 	/**
 	 * 筛选结束时间

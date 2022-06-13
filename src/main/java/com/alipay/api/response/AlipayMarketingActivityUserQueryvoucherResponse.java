@@ -12,17 +12,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.user.queryvoucher response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 23:35:39
+ * @since 1.0, 2022-06-10 21:01:56
  */
 public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1758685757699667638L;
+	private static final long serialVersionUID = 2556125797444459466L;
 
 	/** 
 	 * 活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
+
+	/** 
+	 * 若商家券操作过关联商户订单信息，则该字段返回商家券已关联的商户订单号。
+	 */
+	@ApiField("associate_trade_no")
+	private String associateTradeNo;
 
 	/** 
 	 * 可用开始时间
@@ -93,6 +99,13 @@ EXPIRED:已过期(只能查询6个月内数据)
 	}
 	public String getActivityId( ) {
 		return this.activityId;
+	}
+
+	public void setAssociateTradeNo(String associateTradeNo) {
+		this.associateTradeNo = associateTradeNo;
+	}
+	public String getAssociateTradeNo( ) {
+		return this.associateTradeNo;
 	}
 
 	public void setAvailableBeginTime(Date availableBeginTime) {

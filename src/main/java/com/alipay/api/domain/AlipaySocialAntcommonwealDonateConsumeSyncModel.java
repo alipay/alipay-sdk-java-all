@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialAntcommonwealDonateConsumeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2895857543278584139L;
+	private static final long serialVersionUID = 3631429372468346636L;
 
 	/**
 	 * 支付宝交易号

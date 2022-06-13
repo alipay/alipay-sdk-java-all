@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.check.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-08 10:51:43
+ * @since 1.0, 2022-06-13 14:31:41
  */
 public class DatadigitalFincloudGeneralsaasFaceCheckQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3765843623829355732L;
+	private static final long serialVersionUID = 3271851357482724259L;
 
 	/** 
 	 * 如果设置了need_alive_photo的值不为N，则该字段返回人脸照片的base64编码字符串。
@@ -21,7 +21,7 @@ public class DatadigitalFincloudGeneralsaasFaceCheckQueryResponse extends Alipay
 	private String alivePhoto;
 
 	/** 
-	 * 是否为攻击，true：本次判定为攻击；false：非攻击。
+	 * 已废弃
 	 */
 	@ApiField("attack_flag")
 	private String attackFlag;
@@ -39,7 +39,7 @@ public class DatadigitalFincloudGeneralsaasFaceCheckQueryResponse extends Alipay
 	private String quality;
 
 	/** 
-	 * double值，活体检测结果分数
+	 * 已废弃
 	 */
 	@ApiField("score")
 	private String score;

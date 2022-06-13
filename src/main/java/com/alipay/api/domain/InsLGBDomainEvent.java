@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工保领域事件
  *
  * @author auto create
- * @since 1.0, 2022-05-05 21:35:27
+ * @since 1.0, 2022-06-10 16:17:55
  */
 public class InsLGBDomainEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 1534899493765139196L;
+	private static final long serialVersionUID = 4154235622862493214L;
 
 	/**
 	 * 员工信息

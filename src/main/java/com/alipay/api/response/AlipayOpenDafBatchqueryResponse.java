@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenDafBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1861416684136489546L;
+	private static final long serialVersionUID = 8437291322741457247L;
 
 	
 

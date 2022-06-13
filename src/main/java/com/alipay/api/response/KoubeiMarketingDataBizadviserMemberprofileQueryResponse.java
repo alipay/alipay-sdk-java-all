@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingDataBizadviserMemberprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1872429571562768654L;
+	private static final long serialVersionUID = 2586779547837115417L;
 
 	/** 
 	 * result是一个所有结果集合的json串，里面有一下一些信息：

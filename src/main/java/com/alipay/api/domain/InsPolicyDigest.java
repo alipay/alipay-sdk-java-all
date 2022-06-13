@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单摘要(去除敏感信息)
  *
  * @author auto create
- * @since 1.0, 2022-05-10 15:00:03
+ * @since 1.0, 2022-06-10 16:17:17
  */
 public class InsPolicyDigest extends AlipayObject {
 
-	private static final long serialVersionUID = 1644697553928659741L;
+	private static final long serialVersionUID = 4796189122392593257L;
 
 	/**
 	 * 保单失效时间

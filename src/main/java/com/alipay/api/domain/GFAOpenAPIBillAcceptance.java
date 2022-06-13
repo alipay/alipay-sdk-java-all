@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财账单受理模型
  *
  * @author auto create
- * @since 1.0, 2020-08-27 20:00:00
+ * @since 1.0, 2022-06-10 11:41:26
  */
 public class GFAOpenAPIBillAcceptance extends AlipayObject {
 
-	private static final long serialVersionUID = 3837784161886643687L;
+	private static final long serialVersionUID = 1736764482742429137L;
 
 	/**
 	 * 摊销扩展信息

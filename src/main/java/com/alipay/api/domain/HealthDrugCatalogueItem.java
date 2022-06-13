@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康门诊险药品目录项
  *
  * @author auto create
- * @since 1.0, 2022-05-23 15:30:02
+ * @since 1.0, 2022-06-09 16:09:07
  */
 public class HealthDrugCatalogueItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7631531824118193168L;
+	private static final long serialVersionUID = 5575222976713319317L;
 
 	/**
 	 * 是否是目录内药品
@@ -30,6 +30,12 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	 */
 	@ApiField("drug_classification")
 	private String drugClassification;
+
+	/**
+	 * 处方药、非处方药的分类标识
+	 */
+	@ApiField("drug_type")
+	private String drugType;
 
 	/**
 	 * 药品通用名
@@ -122,6 +128,13 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	}
 	public void setDrugClassification(String drugClassification) {
 		this.drugClassification = drugClassification;
+	}
+
+	public String getDrugType() {
+		return this.drugType;
+	}
+	public void setDrugType(String drugType) {
+		this.drugType = drugType;
 	}
 
 	public String getGeneralName() {

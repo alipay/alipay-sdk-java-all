@@ -2,6 +2,7 @@ package com.alipay.api.response;
 
 import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.CreditRiskInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -9,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-06 18:16:47
+ * @since 1.0, 2022-06-09 20:06:50
  */
 public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7716213233943285979L;
+	private static final long serialVersionUID = 8816168321642897327L;
 
 	/** 
 	 * 该笔资金操作流水operation_id对应的操作金额，单位为：元（人民币）
@@ -38,6 +39,12 @@ public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("credit_merchant_ext")
 	private String creditMerchantExt;
+
+	/** 
+	 * 信用风险信息，如租物场景风险等级、履约历史等级等
+	 */
+	@ApiField("credit_risk_info")
+	private CreditRiskInfo creditRiskInfo;
 
 	/** 
 	 * 因公付业务信息
@@ -231,6 +238,13 @@ CLOSED：关闭
 	}
 	public String getCreditMerchantExt( ) {
 		return this.creditMerchantExt;
+	}
+
+	public void setCreditRiskInfo(CreditRiskInfo creditRiskInfo) {
+		this.creditRiskInfo = creditRiskInfo;
+	}
+	public CreditRiskInfo getCreditRiskInfo( ) {
+		return this.creditRiskInfo;
 	}
 
 	public void setEnterprisePayInfo(String enterprisePayInfo) {

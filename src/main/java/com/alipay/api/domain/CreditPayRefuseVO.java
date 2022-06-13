@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPayRefuseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5557852679987521336L;
+	private static final long serialVersionUID = 8142262213138444249L;
 
 	/**
 	 * 拒绝码

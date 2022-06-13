@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户商品信息列表; 电子小票场景时，必填
  *
  * @author auto create
- * @since 1.0, 2022-03-11 17:54:21
+ * @since 1.0, 2022-06-13 10:28:07
  */
 public class ItemOrderInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5597434618874637946L;
+	private static final long serialVersionUID = 6843897586585245221L;
 
 	/**
 	 * 商品条形码

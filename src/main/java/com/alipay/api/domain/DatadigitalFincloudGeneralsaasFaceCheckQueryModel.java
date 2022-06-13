@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸检测结果数据查询
  *
  * @author auto create
- * @since 1.0, 2022-06-08 10:47:03
+ * @since 1.0, 2022-06-13 14:29:40
  */
 public class DatadigitalFincloudGeneralsaasFaceCheckQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7254163438522577227L;
+	private static final long serialVersionUID = 4456873568244468988L;
 
 	/**
 	 * 传入初始化接口datadigital.fincloud.generalsaas.face.check.initialize 得到的certify_id
@@ -26,7 +26,7 @@ public class DatadigitalFincloudGeneralsaasFaceCheckQueryModel extends AlipayObj
 	private String needAlivePhoto;
 
 	/**
-	 * 是否需要返回攻击判断结果，非必填，默认 N。N表示不需要返回，Y表示需要返回
+	 * 该参数已废弃
 	 */
 	@ApiField("need_attack_result")
 	private String needAttackResult;
@@ -38,7 +38,7 @@ public class DatadigitalFincloudGeneralsaasFaceCheckQueryModel extends AlipayObj
 	private String needQualityScore;
 
 	/**
-	 * 是否需要返回活体检测分数，非必填，Y表示需要返回活体检测分数；N表示不需要。默认 Y
+	 * 该入参已经废弃。
 	 */
 	@ApiField("need_score")
 	private String needScore;
