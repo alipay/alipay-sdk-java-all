@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 操作员批量分页查询
  *
  * @author auto create
- * @since 1.0, 2022-05-05 17:43:37
+ * @since 1.0, 2022-06-17 16:46:37
  */
 public class KoubeiMerchantOperatorSearchBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8299879537458957879L;
+	private static final long serialVersionUID = 8379472761938553119L;
 
 	/**
 	 * 授权码

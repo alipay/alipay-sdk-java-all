@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证信息查询
  *
  * @author auto create
- * @since 1.0, 2021-09-10 16:31:56
+ * @since 1.0, 2022-06-14 16:23:54
  */
 public class ZhimaCustomerJobworthInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5824374484686948349L;
+	private static final long serialVersionUID = 8173155283153244284L;
 
 	/**
 	 * 若用户没有开通工作证或者芝麻，成功开通后回跳的链接
@@ -30,6 +30,12 @@ public class ZhimaCustomerJobworthInfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 外部订单号out_agreement_no
+	 */
+	@ApiField("conn_key")
+	private String connKey;
 
 	/**
 	 * 行业描述ID
@@ -74,6 +80,13 @@ public class ZhimaCustomerJobworthInfoQueryModel extends AlipayObject {
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getConnKey() {
+		return this.connKey;
+	}
+	public void setConnKey(String connKey) {
+		this.connKey = connKey;
 	}
 
 	public String getIndustryId() {

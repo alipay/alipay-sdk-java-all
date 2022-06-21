@@ -8,17 +8,35 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.srta.nonanonymous.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:16:50
+ * @since 1.0, 2022-06-21 15:41:42
  */
 public class AnttechMorseMarketingSrtaNonanonymousQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6394986819918351983L;
+	private static final long serialVersionUID = 2615611361329814134L;
 
 	/** 
 	 * 蚂蚁侧返回的唯一标识
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
+
+	/** 
+	 * 曝光命中的活动唯一标识，主要数据回调
+	 */
+	@ApiField("campaign_id")
+	private String campaignId;
+
+	/** 
+	 * 活动文案
+	 */
+	@ApiField("campaign_text")
+	private String campaignText;
+
+	/** 
+	 * 活动文案类型，如binding(绑卡)，activating（促活）
+	 */
+	@ApiField("campaign_text_type")
+	private String campaignTextType;
 
 	/** 
 	 * 优惠渠道
@@ -61,6 +79,27 @@ public class AnttechMorseMarketingSrtaNonanonymousQueryResponse extends AlipayRe
 	}
 	public String getBizNo( ) {
 		return this.bizNo;
+	}
+
+	public void setCampaignId(String campaignId) {
+		this.campaignId = campaignId;
+	}
+	public String getCampaignId( ) {
+		return this.campaignId;
+	}
+
+	public void setCampaignText(String campaignText) {
+		this.campaignText = campaignText;
+	}
+	public String getCampaignText( ) {
+		return this.campaignText;
+	}
+
+	public void setCampaignTextType(String campaignTextType) {
+		this.campaignTextType = campaignTextType;
+	}
+	public String getCampaignTextType( ) {
+		return this.campaignTextType;
 	}
 
 	public void setChannel(String channel) {

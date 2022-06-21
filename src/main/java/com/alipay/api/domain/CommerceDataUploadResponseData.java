@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用数据上传响应
  *
  * @author auto create
- * @since 1.0, 2022-02-17 14:46:56
+ * @since 1.0, 2022-06-20 14:30:42
  */
 public class CommerceDataUploadResponseData extends AlipayObject {
 
-	private static final long serialVersionUID = 1255223687575483251L;
+	private static final long serialVersionUID = 4614843965257667626L;
 
 	/**
 	 * 响应数据

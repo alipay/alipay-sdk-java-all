@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户登陆授权
  *
  * @author auto create
- * @since 1.0, 2022-03-28 14:59:41
+ * @since 1.0, 2022-06-14 12:07:07
  */
 public class AlipayUserInfoAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2799922416484879243L;
+	private static final long serialVersionUID = 8413573381811835377L;
 
 	/**
 	 * 接口权限值，枚举如下：

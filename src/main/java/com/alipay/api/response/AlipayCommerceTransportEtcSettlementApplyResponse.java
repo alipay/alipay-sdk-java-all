@@ -9,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.settlement.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-24 20:41:38
+ * @since 1.0, 2022-06-17 15:41:45
  */
 public class AlipayCommerceTransportEtcSettlementApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8211622278716758386L;
+	private static final long serialVersionUID = 7821674743348394877L;
+
+	/** 
+	 * 行程描述：行程号xxx
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/** 
 	 * 行程单id
@@ -34,6 +40,18 @@ public class AlipayCommerceTransportEtcSettlementApplyResponse extends AlipayRes
 	private String totalAmount;
 
 	/** 
+	 * 行程扣款阶段性错误信息：用户协议不存在
+	 */
+	@ApiField("trade_biz_code")
+	private String tradeBizCode;
+
+	/** 
+	 * 行程扣款阶段性错误信息
+	 */
+	@ApiField("trade_biz_msg")
+	private String tradeBizMsg;
+
+	/** 
 	 * 支付宝交易号，只有交易支付成功后才会返回
 	 */
 	@ApiField("trade_no")
@@ -51,6 +69,13 @@ public class AlipayCommerceTransportEtcSettlementApplyResponse extends AlipayRes
 	 */
 	@ApiField("trip_id")
 	private String tripId;
+
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+	public String getExtInfo( ) {
+		return this.extInfo;
+	}
 
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
@@ -71,6 +96,20 @@ public class AlipayCommerceTransportEtcSettlementApplyResponse extends AlipayRes
 	}
 	public String getTotalAmount( ) {
 		return this.totalAmount;
+	}
+
+	public void setTradeBizCode(String tradeBizCode) {
+		this.tradeBizCode = tradeBizCode;
+	}
+	public String getTradeBizCode( ) {
+		return this.tradeBizCode;
+	}
+
+	public void setTradeBizMsg(String tradeBizMsg) {
+		this.tradeBizMsg = tradeBizMsg;
+	}
+	public String getTradeBizMsg( ) {
+		return this.tradeBizMsg;
 	}
 
 	public void setTradeNo(String tradeNo) {

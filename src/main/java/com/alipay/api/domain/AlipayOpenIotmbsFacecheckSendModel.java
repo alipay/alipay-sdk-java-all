@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * iot触发人脸采集动作
  *
  * @author auto create
- * @since 1.0, 2022-05-07 10:52:45
+ * @since 1.0, 2022-06-15 18:57:51
  */
 public class AlipayOpenIotmbsFacecheckSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7776757169171236614L;
+	private static final long serialVersionUID = 8551533721694748844L;
 
 	/**
 	 * 设备激活序号
@@ -42,6 +45,13 @@ public class AlipayOpenIotmbsFacecheckSendModel extends AlipayObject {
 	 */
 	@ApiField("project_id")
 	private String projectId;
+
+	/**
+	 * 刷脸开门设备，sn列表
+	 */
+	@ApiListField("sn_list")
+	@ApiField("string")
+	private List<String> snList;
 
 	public String getDevId() {
 		return this.devId;
@@ -76,6 +86,13 @@ public class AlipayOpenIotmbsFacecheckSendModel extends AlipayObject {
 	}
 	public void setProjectId(String projectId) {
 		this.projectId = projectId;
+	}
+
+	public List<String> getSnList() {
+		return this.snList;
+	}
+	public void setSnList(List<String> snList) {
+		this.snList = snList;
 	}
 
 }

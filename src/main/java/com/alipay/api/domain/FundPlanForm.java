@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金计划详情
  *
  * @author auto create
- * @since 1.0, 2021-09-01 14:47:18
+ * @since 1.0, 2022-06-20 13:16:57
  */
 public class FundPlanForm extends AlipayObject {
 
-	private static final long serialVersionUID = 6574531594991466867L;
+	private static final long serialVersionUID = 8279524483261348444L;
 
 	/**
 	 * 自动充值金额（单位为元，必须大于0且最多小数点后两位）

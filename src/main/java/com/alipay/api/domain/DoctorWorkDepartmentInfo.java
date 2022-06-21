@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医生工作科室信息
  *
  * @author auto create
- * @since 1.0, 2022-02-17 14:40:08
+ * @since 1.0, 2022-06-20 14:30:48
  */
 public class DoctorWorkDepartmentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8271566717626618191L;
+	private static final long serialVersionUID = 6554652257818934388L;
 
 	/**
 	 * 科室id

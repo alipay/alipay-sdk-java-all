@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.settlement.refund response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-24 20:46:46
+ * @since 1.0, 2022-06-17 15:46:45
  */
 public class AlipayCommerceTransportEtcSettlementRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1796751498174286683L;
+	private static final long serialVersionUID = 8372435851676619635L;
 
 	/** 
 	 * 行程单id
@@ -40,11 +40,11 @@ public class AlipayCommerceTransportEtcSettlementRefundResponse extends AlipayRe
 	private String refundAmount;
 
 	/** 
-	 * 支付宝收单： 
-"I","未知，原请求单号需要重试"; 
-"RI", "退款中，原请求单号需要重试"; 
-"R", "已退款"; 
-"PR", "部分退款";
+	 * 支付宝收单： </br>
+"I","未知，原请求单号需要重试"; </br>
+"RI", "退款中，原请求单号需要重试"; </br>
+"R", "已退款"; </br>
+"F", "退款失败";</br>
 	 */
 	@ApiField("refund_status")
 	private String refundStatus;

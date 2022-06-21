@@ -11,22 +11,22 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserMpointAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8719418722516172712L;
+	private static final long serialVersionUID = 1787724917312443451L;
 
 	/**
-	 * 业务子场景，根据下单时的情况来制定
+	 * 业务子场景，由支付宝侧分配
 	 */
 	@ApiField("biz_sub_scene")
 	private String bizSubScene;
 
 	/**
-	 * 业务子类型，由会员方面分配
+	 * 业务子类型，由支付宝侧分配
 	 */
 	@ApiField("biz_sub_type")
 	private String bizSubType;
 
 	/**
-	 * 业务类型，由会员方面分配
+	 * 业务类型，由支付宝侧分配
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -44,7 +44,7 @@ public class AlipayUserMpointAddModel extends AlipayObject {
 	private String point;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 支付宝用户ID
 	 */
 	@ApiField("user_id")
 	private String userId;

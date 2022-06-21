@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 欠款交易详情同步接口
  *
  * @author auto create
- * @since 1.0, 2021-03-24 11:41:37
+ * @since 1.0, 2022-06-20 18:42:33
  */
 public class AlipayPayAppTradeArrearSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7722523419294838963L;
+	private static final long serialVersionUID = 3793194994749174229L;
 
 	/**
 	 * 业务场景

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自动攒计划调拨执行列表查询
  *
  * @author auto create
- * @since 1.0, 2021-09-07 19:23:46
+ * @since 1.0, 2022-06-20 13:15:03
  */
 public class AlipayFundJointaccountFundallocListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1484986171991264594L;
+	private static final long serialVersionUID = 6692773523456139362L;
 
 	/**
 	 * 合花群ID<br>

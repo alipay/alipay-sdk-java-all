@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.dossier.qrcode.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-03-24 13:56:55
+ * @since 1.0, 2022-06-14 15:46:36
  */
 public class ZhimaCreditEpDossierQrcodeApplyRequest implements AlipayRequest<ZhimaCreditEpDossierQrcodeApplyResponse> {
 

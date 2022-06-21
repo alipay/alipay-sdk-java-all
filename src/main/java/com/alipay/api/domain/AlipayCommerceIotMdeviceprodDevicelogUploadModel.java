@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上传设备行为日志
  *
  * @author auto create
- * @since 1.0, 2021-12-21 11:24:09
+ * @since 1.0, 2022-06-17 17:45:27
  */
 public class AlipayCommerceIotMdeviceprodDevicelogUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2628127758354861929L;
+	private static final long serialVersionUID = 3169833495724129162L;
 
 	/**
 	 * 行为日志主体

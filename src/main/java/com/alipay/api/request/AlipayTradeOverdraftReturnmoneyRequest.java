@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.overdraft.returnmoney request
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 10:26:57
+ * @since 1.0, 2022-06-14 14:35:25
  */
 public class AlipayTradeOverdraftReturnmoneyRequest implements AlipayRequest<AlipayTradeOverdraftReturnmoneyResponse> {
 

@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-25 16:48:26
+ * @since 1.0, 2022-06-21 14:01:46
  */
 public class AlipayMarketingActivityOrdervoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5593112129578974374L;
+	private static final long serialVersionUID = 5731857299244723875L;
 
 	/** 
 	 * 活动id
@@ -36,47 +36,29 @@ public class AlipayMarketingActivityOrdervoucherQueryResponse extends AlipayResp
 	private String activityName;
 
 	/** 
-	 * 活动操作状态
+	 * 活动操作状态。
 
+取值范围：
+1.CREATING：创建中。
+2.MODIFYING：修改中。
+3.APPENDING：追加中。
+4.FINISHEING：终止中。
 
-
-CREATING：创建中
-
-
-
-MODIFYING：修改中
-
-
-
-APPENDING：追加中
-
-
-
-FINISHEING：停止中
-
-
-
-如果该值为空，说明活动当前没有正在执行中的操作。
+限制：
+该值为空，说明活动当前没有正在执行中的操作。
 	 */
 	@ApiField("activity_operation_status")
 	private String activityOperationStatus;
 
 	/** 
-	 * 活动状态，状态枚举：
+	 * 活动状态。
 
+取值范围：
+1.ACTIVE：已激活（活动正常运行）。
+2.FINISHED：已终止（商家终止活动，不可再发放。
 
-
-ACTIVE：已激活
-
-
-
-FINISHED：已停止
-
-
-
-如果该值为空，说明活动还未创建成功。可以使用
-
-activity_operation_status字段判断活动是否处于CREATING状态。
+限制：
+1.该值为空，说明活动还未创建成功。可以使用 activity_operation_status字段判断活动是否处于CREATING状态。
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
@@ -136,7 +118,12 @@ activity_operation_status字段判断活动是否处于CREATING状态。
 
 	/** 
 	 * 券类型。
- 枚举值： FIX_VOUCHER：固定面额满减券 EXCHANGE_VOUCHER: 兑换券
+
+取值范围：
+1.FIX_VOUCHER：满减券。
+2.DISCOUNT_VOUCHER：折扣券。
+3.SPECIAL_VOUCHER：特价券。
+4.EXCHANGE_VOUCHER: 兑换券。
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;

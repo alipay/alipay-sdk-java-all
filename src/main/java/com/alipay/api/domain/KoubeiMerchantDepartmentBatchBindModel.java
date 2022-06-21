@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量绑定部门员工关系
  *
  * @author auto create
- * @since 1.0, 2022-05-05 17:42:24
+ * @since 1.0, 2022-06-17 16:47:40
  */
 public class KoubeiMerchantDepartmentBatchBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2285378949951939619L;
+	private static final long serialVersionUID = 4571791148222332831L;
 
 	/**
 	 * isv回传的auth_code，通过auth_code校验当前操作人与商户的关系

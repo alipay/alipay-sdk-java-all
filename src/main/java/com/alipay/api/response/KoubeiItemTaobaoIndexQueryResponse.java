@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.item.taobao.index.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:12:34
+ * @since 1.0, 2022-06-15 19:57:30
  */
 public class KoubeiItemTaobaoIndexQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3647329871486656348L;
+	private static final long serialVersionUID = 7878794727955947187L;
 
 	/** 
 	 * 栏目名称

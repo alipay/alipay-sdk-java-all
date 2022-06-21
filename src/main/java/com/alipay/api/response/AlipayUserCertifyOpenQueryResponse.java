@@ -1,8 +1,6 @@
 package com.alipay.api.response;
 
-import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
-import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -10,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.open.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-27 11:15:08
+ * @since 1.0, 2022-06-17 14:41:47
  */
 public class AlipayUserCertifyOpenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8249161333661115133L;
+	private static final long serialVersionUID = 8641223131629197337L;
 
 	/** 
 	 * 认证错误原因，扩展字段，默认不返回
@@ -37,9 +35,8 @@ public class AlipayUserCertifyOpenQueryResponse extends AlipayResponse {
 	/** 
 	 * 是否通过，通过为T，不通过为F
 	 */
-	@ApiListField("passed")
-	@ApiField("string")
-	private List<String> passed;
+	@ApiField("passed")
+	private String passed;
 
 	public void setFailReason(String failReason) {
 		this.failReason = failReason;
@@ -62,10 +59,10 @@ public class AlipayUserCertifyOpenQueryResponse extends AlipayResponse {
 		return this.materialInfo;
 	}
 
-	public void setPassed(List<String> passed) {
+	public void setPassed(String passed) {
 		this.passed = passed;
 	}
-	public List<String> getPassed( ) {
+	public String getPassed( ) {
 		return this.passed;
 	}
 

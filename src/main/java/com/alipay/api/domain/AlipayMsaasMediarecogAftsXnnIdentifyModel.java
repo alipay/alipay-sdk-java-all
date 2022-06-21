@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体xnn云平台算法调用
  *
  * @author auto create
- * @since 1.0, 2019-07-31 19:43:45
+ * @since 1.0, 2022-06-21 11:37:09
  */
 public class AlipayMsaasMediarecogAftsXnnIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8138383882972389281L;
+	private static final long serialVersionUID = 8631536635784293663L;
 
 	/**
 	 * 算法业务标识id，调用对应算法前请联系接口负责人获取

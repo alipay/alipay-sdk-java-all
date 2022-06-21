@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransGroupfundsFundbillsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2249979995391559545L;
+	private static final long serialVersionUID = 2174744322593391317L;
 
 	/** 
 	 * 批次状态,包括:  COLLECT:收款中, COLLECT_SUC: 全部收款完成, PAYMENT_SUC: 全部付款完成, CLOSE: 超时收款未完成已关闭，REFUND：付款部分未成功,部分退款

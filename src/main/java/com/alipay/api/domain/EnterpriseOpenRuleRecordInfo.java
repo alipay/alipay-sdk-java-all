@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则记录
  *
  * @author auto create
- * @since 1.0, 2022-06-13 11:55:53
+ * @since 1.0, 2022-06-20 13:45:30
  */
 public class EnterpriseOpenRuleRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2539812453541971286L;
+	private static final long serialVersionUID = 5312757785236326636L;
 
 	/**
 	 * 开票规则账单日
@@ -82,6 +82,12 @@ SINGLE:单笔开
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
+
+	/**
+	 * 开票规则标记： DEFAULT-默认 EMPLOYEE_TITLE_FIRST-员工签约抬头优先于开票规则
+	 */
+	@ApiField("tag")
+	private String tag;
 
 	public Long getBillMonthDay() {
 		return this.billMonthDay;
@@ -158,6 +164,13 @@ SINGLE:单笔开
 	}
 	public void setOwnerId(String ownerId) {
 		this.ownerId = ownerId;
+	}
+
+	public String getTag() {
+		return this.tag;
+	}
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
 
 }

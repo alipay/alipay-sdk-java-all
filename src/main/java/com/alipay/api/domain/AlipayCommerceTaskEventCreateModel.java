@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 任务事件规则创建
  *
  * @author auto create
- * @since 1.0, 2022-04-11 19:43:11
+ * @since 1.0, 2022-06-14 17:16:23
  */
 public class AlipayCommerceTaskEventCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4556225678413495663L;
+	private static final long serialVersionUID = 2176334454385199744L;
 
 	/**
 	 * 规则事件
@@ -28,6 +28,12 @@ public class AlipayCommerceTaskEventCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 任务规则配置
+	 */
+	@ApiField("rule_config")
+	private TaskRuleConfig ruleConfig;
 
 	/**
 	 * 任务模版id
@@ -47,6 +53,13 @@ public class AlipayCommerceTaskEventCreateModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public TaskRuleConfig getRuleConfig() {
+		return this.ruleConfig;
+	}
+	public void setRuleConfig(TaskRuleConfig ruleConfig) {
+		this.ruleConfig = ruleConfig;
 	}
 
 	public String getTemplateId() {

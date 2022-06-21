@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringDishMaterialQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2227679683193125164L;
+	private static final long serialVersionUID = 3897375253911333774L;
 
 	/**
 	 * 口碑内部加料id，若不为空，则为单条查询，page_size和page_no失效；如果为空，则为批量查询，page_size和page_no必传，否则为默认值

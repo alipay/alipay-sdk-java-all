@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2022-05-20 11:34:58
+ * @since 1.0, 2022-06-17 10:51:39
  */
 public class ReceiptOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4569596281851266712L;
+	private static final long serialVersionUID = 2764751467552259687L;
 
 	/**
 	 * 支付宝用户uid; 是支付宝支付时，必填
@@ -72,7 +72,7 @@ public class ReceiptOrderDTO extends AlipayObject {
 	private List<DiscountInfoDataDTO> discountInfoList;
 
 	/**
-	 * 有环保行为时，必填; 环保数据为空时，认为没有环保行为，将不发能量;
+	 * 有对应环保类型 符合字段“environmental_ext"中的环保字典值时，则必填；除此之外的环保类型时，该字段为空。请务必准确对照，如有疑问，请联系业务经理。
 	 */
 	@ApiListField("environmental_info")
 	@ApiField("enviromental_info_d_t_o")

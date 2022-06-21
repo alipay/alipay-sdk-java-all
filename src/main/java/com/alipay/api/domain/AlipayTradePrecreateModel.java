@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2022-05-24 16:13:06
+ * @since 1.0, 2022-06-14 14:24:43
  */
 public class AlipayTradePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7599482955938179963L;
+	private static final long serialVersionUID = 6519154812476225617L;
 
 	/**
 	 * 支付宝店铺编号。
@@ -42,6 +42,12 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	 */
 	@ApiField("buyer_logon_id")
 	private String buyerLogonId;
+
+	/**
+	 * 码类型，如果请求时传入了share_code，将在响应参数返回吱口令；如果为空，则默认为订单码
+	 */
+	@ApiField("code_type")
+	private String codeType;
 
 	/**
 	 * 禁用渠道,用户不可用指定渠道支付，多个渠道以逗号分割
@@ -242,6 +248,13 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	}
 	public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;
+	}
+
+	public String getCodeType() {
+		return this.codeType;
+	}
+	public void setCodeType(String codeType) {
+		this.codeType = codeType;
 	}
 
 	public String getDisablePayChannels() {

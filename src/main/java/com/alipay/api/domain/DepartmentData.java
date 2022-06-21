@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 科室数据
  *
  * @author auto create
- * @since 1.0, 2022-02-17 14:47:18
+ * @since 1.0, 2022-06-20 14:30:32
  */
 public class DepartmentData extends AlipayObject {
 
-	private static final long serialVersionUID = 6187294995616766996L;
+	private static final long serialVersionUID = 7274352858435271395L;
 
 	/**
 	 * 呼吸道疾病

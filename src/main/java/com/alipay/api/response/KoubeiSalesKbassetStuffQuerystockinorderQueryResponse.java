@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiSalesKbassetStuffQuerystockinorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3774421398371381386L;
+	private static final long serialVersionUID = 2787264588851291948L;
 
 	/** 
 	 * 异常码

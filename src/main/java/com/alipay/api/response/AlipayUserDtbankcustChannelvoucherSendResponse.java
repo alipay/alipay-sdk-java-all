@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.channelvoucher.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-09 14:24:08
+ * @since 1.0, 2022-06-15 15:21:42
  */
 public class AlipayUserDtbankcustChannelvoucherSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7316281234459635192L;
+	private static final long serialVersionUID = 4519353532117378339L;
+
+	/** 
+	 * 接收渠道红包的，脱敏后的支付宝登录号
+	 */
+	@ApiField("account_no")
+	private String accountNo;
 
 	/** 
 	 * 活动id
@@ -68,6 +74,13 @@ B.满10元随机立减1元到3元,则值是具体的金额，如果随机1.5元�
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
+
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
+	}
+	public String getAccountNo( ) {
+		return this.accountNo;
+	}
 
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;

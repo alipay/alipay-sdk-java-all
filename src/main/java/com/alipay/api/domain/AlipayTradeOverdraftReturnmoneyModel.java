@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 垫资追款结算
  *
  * @author auto create
- * @since 1.0, 2022-05-18 10:25:20
+ * @since 1.0, 2022-06-14 14:35:25
  */
 public class AlipayTradeOverdraftReturnmoneyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2516296878131581675L;
+	private static final long serialVersionUID = 7631634746638247978L;
 
 	/**
 	 * 退款时上送的外部退款请求号

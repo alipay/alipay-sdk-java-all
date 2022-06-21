@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 宠物档案匹配
  *
  * @author auto create
- * @since 1.0, 2021-12-01 16:46:53
+ * @since 1.0, 2022-06-14 12:05:37
  */
 public class AlipayInsScenePetprofilePlatformprofileMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3579425424745777182L;
+	private static final long serialVersionUID = 7329559565922558421L;
 
 	/**
 	 * 宠物类型：狗(2000)/猫(1000)

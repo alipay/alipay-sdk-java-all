@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工授权初始化
  *
  * @author auto create
- * @since 1.0, 2022-05-09 13:34:33
+ * @since 1.0, 2022-06-16 16:53:15
  */
 public class AlipayFundFlexiblestaffingAuthorizeInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1755164683835929741L;
+	private static final long serialVersionUID = 1768716799212754863L;
 
 	/**
 	 * 授权完成后的跳转地址，支持https的h5地址和小程序scheme url，不支持跳转支付宝端外app和页面。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数据item
  *
  * @author auto create
- * @since 1.0, 2022-03-30 15:14:22
+ * @since 1.0, 2022-06-16 19:33:52
  */
 public class ApeDataItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6729762397636856626L;
+	private static final long serialVersionUID = 7323519767851836319L;
 
 	/**
 	 * 商品品牌。可以传输品牌id，也可传输品牌明文。
@@ -136,6 +136,12 @@ public class ApeDataItem extends AlipayObject {
 	 */
 	@ApiField("status")
 	private Long status;
+
+	/**
+	 * 库存数量，库存数量为0的商品不会出现在推荐结果里面
+	 */
+	@ApiField("stock_num")
+	private Long stockNum;
 
 	/**
 	 * 商品标签，如首页展示标签“特惠”，“热卖”,或详情页“满50包邮”,“假一赔三”等。多值示例：“特惠$##$热卖"
@@ -287,6 +293,13 @@ public class ApeDataItem extends AlipayObject {
 	}
 	public void setStatus(Long status) {
 		this.status = status;
+	}
+
+	public Long getStockNum() {
+		return this.stockNum;
+	}
+	public void setStockNum(Long stockNum) {
+		this.stockNum = stockNum;
 	}
 
 	public String getTags() {

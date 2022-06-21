@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主ETC服务行程上送申请接口
  *
  * @author auto create
- * @since 1.0, 2022-02-21 20:50:42
+ * @since 1.0, 2022-06-17 15:41:37
  */
 public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7396544968597529434L;
+	private static final long serialVersionUID = 3345543636758833427L;
 
 	/**
 	 * ETC平台协议号
@@ -44,6 +44,12 @@ public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 行程描述
+	 */
+	@ApiField("memo")
+	private String memo;
 
 	/**
 	 * 发行方扣款订单号：
@@ -137,6 +143,13 @@ public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getMemo() {
+		return this.memo;
+	}
+	public void setMemo(String memo) {
+		this.memo = memo;
 	}
 
 	public String getOutOrderId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘抢购批量商品查询接口
  *
  * @author auto create
- * @since 1.0, 2017-12-01 11:22:32
+ * @since 1.0, 2022-06-15 19:57:30
  */
 public class KoubeiItemTaobaoIndexQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4184296494619372467L;
+	private static final long serialVersionUID = 1349426542135361548L;
 
 	/**
 	 * 城市编码

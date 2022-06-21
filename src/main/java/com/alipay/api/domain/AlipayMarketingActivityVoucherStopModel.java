@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 终止支付券
  *
  * @author auto create
- * @since 1.0, 2022-02-23 14:13:18
+ * @since 1.0, 2022-06-18 15:56:18
  */
 public class AlipayMarketingActivityVoucherStopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8865614331323639151L;
+	private static final long serialVersionUID = 4231958228735746152L;
 
 	/**
 	 * 活动id

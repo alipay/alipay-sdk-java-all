@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推荐item
  *
  * @author auto create
- * @since 1.0, 2022-03-17 19:22:17
+ * @since 1.0, 2022-06-16 19:33:13
  */
 public class ApeRecItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5659443416185212466L;
+	private static final long serialVersionUID = 7551473364889865388L;
 
 	/**
 	 * 物品id

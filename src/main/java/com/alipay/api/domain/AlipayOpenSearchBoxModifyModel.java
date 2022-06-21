@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改搜索直达
  *
  * @author auto create
- * @since 1.0, 2022-05-30 20:08:04
+ * @since 1.0, 2022-06-15 15:28:58
  */
 public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3683857936349862314L;
+	private static final long serialVersionUID = 1776656798139626236L;
 
 	/**
 	 * 品牌介绍，5-15个中文字符。当修改品牌介绍模块(module_type=BOX_EXCLUSIVE_BASE)时传入。
@@ -76,6 +76,7 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 
 	/**
 	 * 关联账号信息，可配置1-2个。传入账号需归属于商家主体。品牌直达修改官方账号(module_type=BOX_EXCLUSIVE_ACCOUNTS)时传入，小程序直达修改常用服务模块时也需传值。
+当为品牌直达时，数组中的第1个账号会被设置为"账号1"，也就是将作为搜索直达专区头部的跳转地址。
 	 */
 	@ApiListField("related_accounts")
 	@ApiField("search_box_app_info")

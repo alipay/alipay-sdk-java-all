@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 景区扩展信息
  *
  * @author auto create
- * @since 1.0, 2021-03-03 16:21:05
+ * @since 1.0, 2022-06-17 10:02:40
  */
 public class ScenicExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8812727173312719696L;
+	private static final long serialVersionUID = 8445134338796673519L;
 
 	/**
 	 * key的值

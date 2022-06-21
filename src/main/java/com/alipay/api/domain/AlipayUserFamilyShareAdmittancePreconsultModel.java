@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserFamilyShareAdmittancePreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4128896262454449112L;
+	private static final long serialVersionUID = 8456939427131876215L;
 
 	/**
 	 * 共享资源ID

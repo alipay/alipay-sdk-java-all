@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主ETC服务行程退款
  *
  * @author auto create
- * @since 1.0, 2022-02-17 19:32:26
+ * @since 1.0, 2022-06-17 15:41:59
  */
 public class AlipayCommerceTransportEtcSettlementRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3192726368374415936L;
+	private static final long serialVersionUID = 2391361593657527344L;
 
 	/**
 	 * ETC平台协议号
@@ -40,6 +40,12 @@ public class AlipayCommerceTransportEtcSettlementRefundModel extends AlipayObjec
 	@ApiField("refund_amount")
 	private String refundAmount;
 
+	/**
+	 * 退款原因描述：退费
+	 */
+	@ApiField("refund_reason")
+	private String refundReason;
+
 	public String getBizAgreementNo() {
 		return this.bizAgreementNo;
 	}
@@ -66,6 +72,13 @@ public class AlipayCommerceTransportEtcSettlementRefundModel extends AlipayObjec
 	}
 	public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
+	}
+
+	public String getRefundReason() {
+		return this.refundReason;
+	}
+	public void setRefundReason(String refundReason) {
+		this.refundReason = refundReason;
 	}
 
 }

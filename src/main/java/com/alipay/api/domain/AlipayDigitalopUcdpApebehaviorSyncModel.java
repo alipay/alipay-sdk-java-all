@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape用户行为上报
  *
  * @author auto create
- * @since 1.0, 2022-05-27 10:38:20
+ * @since 1.0, 2022-06-16 19:33:15
  */
 public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5521414657974986463L;
+	private static final long serialVersionUID = 1684322976282351763L;
 
 	/**
-	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）等
+	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）等
 	 */
 	@ApiField("action_type")
 	private String actionType;
@@ -80,10 +80,16 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	private String traceId;
 
 	/**
-	 * 用户唯一标识id，支付宝的用户填写支付宝的用户id。
+	 * 用户唯一标识id，可以是支付宝userid、商家自定义的userid等
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 用户id的类型，可选值：ALIPAY（支付宝userid）、CUSTOM（商家自定义的userid）
+	 */
+	@ApiField("user_id_type")
+	private String userIdType;
 
 	public String getActionType() {
 		return this.actionType;
@@ -167,6 +173,13 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getUserIdType() {
+		return this.userIdType;
+	}
+	public void setUserIdType(String userIdType) {
+		this.userIdType = userIdType;
 	}
 
 }

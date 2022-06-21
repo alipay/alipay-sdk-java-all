@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.precreate response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-24 16:13:06
+ * @since 1.0, 2022-06-14 14:26:41
  */
 public class AlipayTradePrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2844794578718353135L;
+	private static final long serialVersionUID = 5133311834833937254L;
 
 	/** 
 	 * 商户的订单号
@@ -26,6 +26,12 @@ public class AlipayTradePrecreateResponse extends AlipayResponse {
 	@ApiField("qr_code")
 	private String qrCode;
 
+	/** 
+	 * 当前预下单请求生成的吱口令码串，有效时间2小时，可以在支付宝app端访问对应内容
+	 */
+	@ApiField("share_code")
+	private String shareCode;
+
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
@@ -38,6 +44,13 @@ public class AlipayTradePrecreateResponse extends AlipayResponse {
 	}
 	public String getQrCode( ) {
 		return this.qrCode;
+	}
+
+	public void setShareCode(String shareCode) {
+		this.shareCode = shareCode;
+	}
+	public String getShareCode( ) {
+		return this.shareCode;
 	}
 
 }

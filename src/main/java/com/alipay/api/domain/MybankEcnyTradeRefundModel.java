@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankEcnyTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4282659337861616875L;
+	private static final long serialVersionUID = 2557681869493644477L;
 
 	/**
 	 * 退款请求号。标识一次退款请求，需要保证在交易号下唯一，如需部分退款，则此参数必传。

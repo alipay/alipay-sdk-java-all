@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料采购单获取接口
  *
  * @author auto create
- * @since 1.0, 2022-05-05 17:47:11
+ * @since 1.0, 2022-06-17 16:39:22
  */
 public class KoubeiSalesKbassetStuffPurchaseorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4621454261433742168L;
+	private static final long serialVersionUID = 6892631995427715373L;
 
 	/**
 	 * 每页大小：最小1，最大100

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCliveChatSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6653635369585277829L;
+	private static final long serialVersionUID = 2199558661575669694L;
 
 	/**
 	 * 消息内容

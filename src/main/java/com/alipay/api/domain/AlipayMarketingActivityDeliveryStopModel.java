@@ -10,15 +10,15 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停止投放
  *
  * @author auto create
- * @since 1.0, 2022-04-24 11:01:08
+ * @since 1.0, 2022-06-16 10:34:04
  */
 public class AlipayMarketingActivityDeliveryStopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4614957524692934825L;
+	private static final long serialVersionUID = 4819735979799881666L;
 
 	/**
-	 * 服务商代商户创建投放必选。
-bussinessType设置为ISV_FOR_MERCHANT。
+	 * 服务商代运营商户信息。
+限制: 服务商代运营模式必选
 	 */
 	@ApiField("belong_merchant_info")
 	private DeliveryAgencyMerchantInfo belongMerchantInfo;
@@ -33,7 +33,7 @@ bussinessType设置为ISV_FOR_MERCHANT。
 	private List<DeliveryConfig> deliveryConfigList;
 
 	/**
-	 * 投放计划id
+	 * 推广计划id
 	 */
 	@ApiField("delivery_id")
 	private String deliveryId;

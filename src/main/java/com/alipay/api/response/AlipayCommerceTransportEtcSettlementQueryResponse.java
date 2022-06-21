@@ -9,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.settlement.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-17 19:36:43
+ * @since 1.0, 2022-06-17 15:41:45
  */
 public class AlipayCommerceTransportEtcSettlementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3689487979933912183L;
+	private static final long serialVersionUID = 4573127843547735996L;
+
+	/** 
+	 * 行程描述等展示信息
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/** 
 	 * 行程单id
@@ -50,6 +56,13 @@ public class AlipayCommerceTransportEtcSettlementQueryResponse extends AlipayRes
 	 */
 	@ApiField("trip_id")
 	private String tripId;
+
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+	public String getExtInfo( ) {
+		return this.extInfo;
+	}
 
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;

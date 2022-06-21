@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.qrcode.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-24 13:56:55
+ * @since 1.0, 2022-06-14 15:46:36
  */
 public class ZhimaCreditEpDossierQrcodeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7575918499744842736L;
+	private static final long serialVersionUID = 4349787668748714336L;
 
 	/** 
 	 * 档案直跳地址，默认不返回

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 疾病基础数据
  *
  * @author auto create
- * @since 1.0, 2022-02-17 14:47:06
+ * @since 1.0, 2022-06-20 14:30:37
  */
 public class DiseaseBaseData extends AlipayObject {
 
-	private static final long serialVersionUID = 6337435332634518221L;
+	private static final long serialVersionUID = 6719329195681478361L;
 
 	/**
 	 * 临床症状

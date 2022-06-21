@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料单据获取成功反馈接口
  *
  * @author auto create
- * @since 1.0, 2022-05-05 17:46:23
+ * @since 1.0, 2022-06-17 16:40:38
  */
 public class KoubeiSalesKbassetStuffOrdersresultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3274267341776142122L;
+	private static final long serialVersionUID = 3261872624838866836L;
 
 	/**
 	 * 物料单据反馈列表，最大200条

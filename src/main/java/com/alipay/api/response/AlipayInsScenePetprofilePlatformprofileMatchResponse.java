@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.petprofile.platformprofile.match response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-01 16:47:51
+ * @since 1.0, 2022-06-14 12:05:37
  */
 public class AlipayInsScenePetprofilePlatformprofileMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8568329275588376816L;
+	private static final long serialVersionUID = 1855763624334624565L;
 
 	/** 
 	 * 匹配到的宠物档案列表，匹配程度由高到低。

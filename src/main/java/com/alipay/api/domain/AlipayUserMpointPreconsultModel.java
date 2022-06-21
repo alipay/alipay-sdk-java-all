@@ -7,35 +7,48 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员积分接入预咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-04-07 13:51:12
+ * @since 1.0, 2022-06-21 13:29:25
  */
 public class AlipayUserMpointPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3788949838411774267L;
+	private static final long serialVersionUID = 2259155881245492614L;
 
 	/**
-	 * 业务子类型，由会员方面分配
+	 * 业务子场景，由支付宝侧分配，在积分发放场景下要求必传
+	 */
+	@ApiField("biz_sub_scene")
+	private String bizSubScene;
+
+	/**
+	 * 业务子类型，由支付宝侧分配
 	 */
 	@ApiField("biz_sub_type")
 	private String bizSubType;
 
 	/**
-	 * 业务类型，由会员方面分配
+	 * 业务类型，由支付宝侧分配
 	 */
 	@ApiField("biz_type")
 	private String bizType;
 
 	/**
-	 * 目标操作的分数
+	 * 目标操作的积分数
 	 */
 	@ApiField("point")
 	private String point;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 支付宝用户ID
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getBizSubScene() {
+		return this.bizSubScene;
+	}
+	public void setBizSubScene(String bizSubScene) {
+		this.bizSubScene = bizSubScene;
+	}
 
 	public String getBizSubType() {
 		return this.bizSubType;

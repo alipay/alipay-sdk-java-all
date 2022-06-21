@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 双离线码在线解码API
  *
  * @author auto create
- * @since 1.0, 2020-04-02 21:02:42
+ * @since 1.0, 2022-06-20 18:43:29
  */
 public class AlipayPayCodecHschoolDecodeUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5896835621118552342L;
+	private static final long serialVersionUID = 3147143664812741594L;
 
 	/**
 	 * 码值
