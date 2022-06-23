@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2159279598798485159L;
+	private static final long serialVersionUID = 5152582532456932196L;
 
 	/**
 	 * 口碑商品所属的后台类目id，后台类目数据来源：开放接口koubei.item.category.children.batchquery（查询后台类目树接口）

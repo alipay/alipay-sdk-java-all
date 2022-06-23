@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeBillDownloadurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3228289246335918216L;
+	private static final long serialVersionUID = 8564279932981952196L;
 
 	/**
 	 * 账单数据的产生时间

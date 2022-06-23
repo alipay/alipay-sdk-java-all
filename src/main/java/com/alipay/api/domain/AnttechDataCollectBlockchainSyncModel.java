@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechDataCollectBlockchainSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1848878756867198267L;
+	private static final long serialVersionUID = 4515934921857458935L;
 
 	/**
 	 * 链上账号列表，JSON字符串

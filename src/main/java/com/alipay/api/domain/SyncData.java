@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步数据模型
  *
  * @author auto create
- * @since 1.0, 2021-12-14 16:08:20
+ * @since 1.0, 2022-06-23 20:34:18
  */
 public class SyncData extends AlipayObject {
 
-	private static final long serialVersionUID = 8666144972673437936L;
+	private static final long serialVersionUID = 7298755877447387812L;
 
 	/**
 	 * 字段field

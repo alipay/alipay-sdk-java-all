@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.digitalidentity.certificate.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 21:58:03
+ * @since 1.0, 2022-06-23 13:21:42
  */
 public class AlipayUserDigitalidentityCertificateSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4699475311968766327L;
+	private static final long serialVersionUID = 3881331462886457291L;
 
 	
 

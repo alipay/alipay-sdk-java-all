@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商圈积分结果回调通知
  *
  * @author auto create
- * @since 1.0, 2021-03-05 10:35:48
+ * @since 1.0, 2022-06-22 10:34:27
  */
 public class AlipayBusinessMallPointsNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6183417756336736663L;
+	private static final long serialVersionUID = 2329361945983826938L;
 
 	/**
 	 * 支付宝用户id

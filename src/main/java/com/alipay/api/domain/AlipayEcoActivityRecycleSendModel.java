@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 森林能量发放
  *
  * @author auto create
- * @since 1.0, 2022-06-08 22:44:23
+ * @since 1.0, 2022-06-22 17:32:42
  */
 public class AlipayEcoActivityRecycleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6538579566161354138L;
+	private static final long serialVersionUID = 4861499241855312543L;
 
 	/**
 	 * 买家的用户id

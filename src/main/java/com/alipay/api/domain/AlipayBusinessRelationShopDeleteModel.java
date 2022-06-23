@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝代运营商业关系门店删除
  *
  * @author auto create
- * @since 1.0, 2021-07-12 11:41:49
+ * @since 1.0, 2022-06-23 20:04:57
  */
 public class AlipayBusinessRelationShopDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5738124645681811124L;
+	private static final long serialVersionUID = 3372526514776823143L;
 
 	/**
 	 * 商业关系组织id 由组织信息创建接口返回或bd分配

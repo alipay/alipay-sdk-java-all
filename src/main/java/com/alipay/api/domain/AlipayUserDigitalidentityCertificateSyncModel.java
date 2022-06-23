@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字身份电子凭证同步接口
  *
  * @author auto create
- * @since 1.0, 2021-10-29 15:32:59
+ * @since 1.0, 2022-06-23 13:17:58
  */
 public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2374449151549967588L;
+	private static final long serialVersionUID = 7297423957544364432L;
 
 	/**
 	 * 含义：申领信息核验模式，该字段用于控制传入的信息与支付宝侧信息的核验对比方式，以防止凭证被归属到错误的用户。对比信息包括姓名/证件号等。 

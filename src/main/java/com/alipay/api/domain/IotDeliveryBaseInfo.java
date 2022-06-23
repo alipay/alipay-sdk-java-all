@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Iot投放计划基础信息
  *
  * @author auto create
- * @since 1.0, 2022-06-20 19:44:59
+ * @since 1.0, 2022-06-23 20:43:25
  */
 public class IotDeliveryBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7423131375337476866L;
+	private static final long serialVersionUID = 8338685981517775715L;
 
 	/**
 	 * 投放计划开始时间。
@@ -37,10 +37,16 @@ public class IotDeliveryBaseInfo extends AlipayObject {
 	private String deliveryName;
 
 	/**
-	 * 设备名单上传接口返回文件id
+	 * 设备名单上传接口返回文件id。在创建投放时传参使用，查询投放时不返回
 	 */
 	@ApiField("device_file_id")
 	private String deviceFileId;
+
+	/**
+	 * 文件链接，可通过此链接下载之前上传的机具文件，查询时返回，创建时无须传参
+	 */
+	@ApiField("device_file_url")
+	private String deviceFileUrl;
 
 	/**
 	 * 不投放门店列表
@@ -94,6 +100,13 @@ public class IotDeliveryBaseInfo extends AlipayObject {
 	}
 	public void setDeviceFileId(String deviceFileId) {
 		this.deviceFileId = deviceFileId;
+	}
+
+	public String getDeviceFileUrl() {
+		return this.deviceFileUrl;
+	}
+	public void setDeviceFileUrl(String deviceFileUrl) {
+		this.deviceFileUrl = deviceFileUrl;
 	}
 
 	public String getExcludeShopIds() {

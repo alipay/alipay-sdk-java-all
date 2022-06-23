@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountClearingcenterPayoffModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8724245823934624649L;
+	private static final long serialVersionUID = 4352291745616532164L;
 
 	/**
 	 * 是否高优先级处理登记薄

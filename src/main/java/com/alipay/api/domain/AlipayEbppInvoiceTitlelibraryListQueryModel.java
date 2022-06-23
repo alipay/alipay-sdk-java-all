@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票抬头库模糊列表模糊查询
  *
  * @author auto create
- * @since 1.0, 2022-03-09 19:33:19
+ * @since 1.0, 2022-06-22 09:59:14
  */
 public class AlipayEbppInvoiceTitlelibraryListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5658974485614184762L;
+	private static final long serialVersionUID = 4424813936615297116L;
 
 	/**
 	 * 模糊查询的抬头名称

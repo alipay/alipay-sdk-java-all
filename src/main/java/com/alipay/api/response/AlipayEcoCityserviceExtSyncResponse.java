@@ -1,5 +1,7 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.SyncDataResult;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.ext.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-14 16:10:38
+ * @since 1.0, 2022-06-23 20:36:43
  */
 public class AlipayEcoCityserviceExtSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8715278616214739443L;
+	private static final long serialVersionUID = 6587387353238235868L;
 
-	
+	/** 
+	 * 同步结果
+	 */
+	@ApiField("result")
+	private SyncDataResult result;
 
-	
+	public void setResult(SyncDataResult result) {
+		this.result = result;
+	}
+	public SyncDataResult getResult( ) {
+		return this.result;
+	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改额度
  *
  * @author auto create
- * @since 1.0, 2021-12-14 17:49:58
+ * @since 1.0, 2022-06-22 20:53:24
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3687517628713725384L;
+	private static final long serialVersionUID = 2822459165272683447L;
 
 	/**
 	 * 企业ID

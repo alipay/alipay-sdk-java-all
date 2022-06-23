@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票订单模型
  *
  * @author auto create
- * @since 1.0, 2022-06-13 10:28:07
+ * @since 1.0, 2022-06-22 13:24:53
  */
 public class ReceiptSimpleOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7565147987518495879L;
+	private static final long serialVersionUID = 6139294616722663355L;
+
+	/**
+	 * 支付宝支付方式对应的支付金额;
+	 */
+	@ApiField("alipay_amout")
+	private Long alipayAmout;
 
 	/**
 	 * 支付宝用户uid
@@ -62,6 +68,12 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	private List<ItemOrderInfoDTO> itemOrderList;
 
 	/**
+	 * 商家扩展信息
+	 */
+	@ApiField("merchant_extend_info")
+	private ReceiptMerchantExtendInfo merchantExtendInfo;
+
+	/**
 	 * 商户名字
 	 */
 	@ApiField("merchant_name")
@@ -96,6 +108,12 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	 */
 	@ApiField("order_type")
 	private String orderType;
+
+	/**
+	 * 其它支付金额；如果有除支付宝支付方式以外的所有支付方式金额(包括各类卡，现金等)，必填
+	 */
+	@ApiField("other_pay_amount")
+	private Long otherPayAmount;
 
 	/**
 	 * 外部商户订单号;out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
@@ -152,6 +170,13 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	@ApiField("trade_type")
 	private String tradeType;
 
+	public Long getAlipayAmout() {
+		return this.alipayAmout;
+	}
+	public void setAlipayAmout(Long alipayAmout) {
+		this.alipayAmout = alipayAmout;
+	}
+
 	public String getAlipayUid() {
 		return this.alipayUid;
 	}
@@ -201,6 +226,13 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 		this.itemOrderList = itemOrderList;
 	}
 
+	public ReceiptMerchantExtendInfo getMerchantExtendInfo() {
+		return this.merchantExtendInfo;
+	}
+	public void setMerchantExtendInfo(ReceiptMerchantExtendInfo merchantExtendInfo) {
+		this.merchantExtendInfo = merchantExtendInfo;
+	}
+
 	public String getMerchantName() {
 		return this.merchantName;
 	}
@@ -241,6 +273,13 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	}
 	public void setOrderType(String orderType) {
 		this.orderType = orderType;
+	}
+
+	public Long getOtherPayAmount() {
+		return this.otherPayAmount;
+	}
+	public void setOtherPayAmount(Long otherPayAmount) {
+		this.otherPayAmount = otherPayAmount;
 	}
 
 	public String getOutBizNo() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntforestEnergyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1686981548939778237L;
+	private static final long serialVersionUID = 8877253851514257645L;
 
 	/** 
 	 * 当前用户可用能量值（单位是g)

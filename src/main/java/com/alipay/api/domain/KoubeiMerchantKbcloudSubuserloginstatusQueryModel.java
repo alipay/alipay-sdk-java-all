@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMerchantKbcloudSubuserloginstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1544737939672394429L;
+	private static final long serialVersionUID = 7183311548245724397L;
 
 	/**
 	 * 登录的sessionId；session_id或sub_user_id必须传一个

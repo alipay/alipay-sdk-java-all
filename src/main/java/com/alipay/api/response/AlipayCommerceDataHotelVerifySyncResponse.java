@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.data.hotel.verify.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-17 16:26:45
+ * @since 1.0, 2022-06-23 11:01:46
  */
 public class AlipayCommerceDataHotelVerifySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2543267931785785416L;
+	private static final long serialVersionUID = 6398641254541963719L;
 
 	/** 
 	 * 错误信息具体描述

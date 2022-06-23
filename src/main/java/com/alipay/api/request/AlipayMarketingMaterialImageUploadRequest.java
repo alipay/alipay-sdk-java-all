@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.material.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-06-18 15:55:31
+ * @since 1.0, 2022-06-23 15:26:43
  */
 public class AlipayMarketingMaterialImageUploadRequest implements AlipayUploadRequest<AlipayMarketingMaterialImageUploadResponse> {
 
@@ -33,12 +33,18 @@ bussinessType设置为ISV_FOR_MERCHANT。
 	private FileItem fileContent;
 
 	/** 
-	* 文件业务标识.
+	* 文件业务标识。
 
-该字段某些场景下必选.
-具体该字段在哪些场景下需要传入，会在不同的接口处进行描述。
+枚举值
+alipay.marketing.activity.delivery.create接口中
+delivery_base_info.delivery_material.delivery_single_material.delivery_image
+当delivery_booth_code=PUBLIC_UNION，上传图片接口需指定file_key=PUBLIC_UNION_CHANNEL_PIC。上传图片尺寸600*600，支持格式：png、jpg、jpeg、bmp，大小不超过200kb；
+当delivery_booth_code=PAYMENT_RESULT，上传图片接口需指定file_key=DELIVERY_CHANNEL_PIC。上传图片尺寸600*600，支持格式：png、jpg、jpeg、bmp，大小不超过200kb。
+上传图片更多要求参考文档： https://render.alipay.com/p/c/18tpirlg12e8?operateFrom=BALIPAY
 
-例如：alipay.marketing.activity.ordervoucher.create接口的voucher_image字段.就清楚描述了.需要使用该接口上传图片，同时指定file_key为PROMO_VOUCHER_IMAGE
+alipay.marketing.activity.ordervoucher.create接口中
+voucher_display_info.brand_logo字段,file_key=PROMO_BRAND_LOGO，上传图片尺寸600*600，支持格式：png、jpg、jpeg、bmp，大小不超过2MB
+voucher_display_info.voucher_image字段,file_key=PROMO_VOUCHER_IMAGE,上传图片尺寸670*335，支持格式：png、jpg、jpeg、bmp，大小不超过2MB
 	 */
 	private String fileKey;
 
