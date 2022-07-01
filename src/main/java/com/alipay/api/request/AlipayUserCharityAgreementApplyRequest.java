@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.charity.agreement.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-03-01 14:46:38
+ * @since 1.0, 2022-06-30 20:02:16
  */
 public class AlipayUserCharityAgreementApplyRequest implements AlipayRequest<AlipayUserCharityAgreementApplyResponse> {
 

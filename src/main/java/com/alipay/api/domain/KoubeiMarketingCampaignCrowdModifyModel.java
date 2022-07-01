@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商户人群组修改接口
  *
  * @author auto create
- * @since 1.0, 2018-12-18 10:23:56
+ * @since 1.0, 2022-06-27 11:30:15
  */
 public class KoubeiMarketingCampaignCrowdModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5895314841767416799L;
+	private static final long serialVersionUID = 1297896786993694977L;
 
 	/**
 	 * 圈人的条件。 

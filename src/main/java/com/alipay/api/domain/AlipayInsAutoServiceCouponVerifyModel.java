@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsAutoServiceCouponVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5394337835923976316L;
+	private static final long serialVersionUID = 1114531284145163413L;
 
 	/**
 	 * 业务扩展数据,根据核销服务类型不同，业务相关扩展数据以json格式返回,蚂蚁根据json格式解析。

@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数据item
  *
  * @author auto create
- * @since 1.0, 2022-06-16 19:33:52
+ * @since 1.0, 2022-06-24 16:11:55
  */
 public class ApeDataItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6512636394787266953L;
+	private static final long serialVersionUID = 8243357764288251495L;
+
+	/**
+	 * 商品可用的城市列表
+	 */
+	@ApiListField("available_city_list")
+	@ApiField("string")
+	private List<String> availableCityList;
 
 	/**
 	 * 商品品牌。可以传输品牌id，也可传输品牌明文。
@@ -23,7 +30,7 @@ public class ApeDataItem extends AlipayObject {
 	private String brand;
 
 	/**
-	 * 商品不同级类目之间用$##$分隔，且自左向右类目层级逐渐细化。类目值推荐全部传名称，举例如“家电$##$电视$##$OLED电视”。某一段为空时直接传空字符串，如第二段为空， 则传“家电$##$$##$OLED电视”。
+	 * 商品不同级类目之间用$##$分隔，且自左向右类目层级逐渐细化。类目值推荐全部传名称，举例如“家电$##$电视$##$OLED电视”。某一段为空时直接传空字符串，如第二段为空， 则传“家电$##$$##$OLED电视”。如果有多个类目，多个类目之间用,分割。
 	 */
 	@ApiField("cate")
 	private String cate;
@@ -144,7 +151,7 @@ public class ApeDataItem extends AlipayObject {
 	private Long stockNum;
 
 	/**
-	 * 商品标签，如首页展示标签“特惠”，“热卖”,或详情页“满50包邮”,“假一赔三”等。多值示例：“特惠$##$热卖"
+	 * 商品标签，如首页展示标签“特惠”，“热卖”,或详情页“满50包邮”,“假一赔三”等。多值示例：“特惠,热卖"
 	 */
 	@ApiField("tags")
 	private String tags;
@@ -154,6 +161,13 @@ public class ApeDataItem extends AlipayObject {
 	 */
 	@ApiField("title")
 	private String title;
+
+	public List<String> getAvailableCityList() {
+		return this.availableCityList;
+	}
+	public void setAvailableCityList(List<String> availableCityList) {
+		this.availableCityList = availableCityList;
+	}
 
 	public String getBrand() {
 		return this.brand;

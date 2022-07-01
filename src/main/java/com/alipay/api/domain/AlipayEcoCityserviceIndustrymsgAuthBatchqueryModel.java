@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户行业授权状态批量查询接口
  *
  * @author auto create
- * @since 1.0, 2021-07-27 11:06:37
+ * @since 1.0, 2022-06-30 11:28:25
  */
 public class AlipayEcoCityserviceIndustrymsgAuthBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5446175921142745513L;
+	private static final long serialVersionUID = 6463858661815369392L;
 
 	/**
 	 * 用户身份信息列表，传入上限为100条

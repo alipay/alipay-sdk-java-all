@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.crowd.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-06-27 11:29:39
  */
 public class KoubeiMarketingCampaignCrowdBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3736948383513243373L;
+	private static final long serialVersionUID = 5539298949818193985L;
 
 	/** 
 	 * 人群组的基本信息，id表示人群分组的ID，name表示人群分组的名称，status表示人群分组的状态，目前只有status=ENABLE有效状态才返回，已经删除的为DISABLE的不返回

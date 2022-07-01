@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部企业员工信息上传接口
  *
  * @author auto create
- * @since 1.0, 2022-04-19 22:14:34
+ * @since 1.0, 2022-06-29 10:40:21
  */
 public class KoubeiMarketingDataEnterpriseStaffinfoUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8254783129331615395L;
+	private static final long serialVersionUID = 6793634628692587955L;
 
 	/**
 	 * 请求流水号，由ISV自定义，在ISV系统内唯一标示一次业务请求。

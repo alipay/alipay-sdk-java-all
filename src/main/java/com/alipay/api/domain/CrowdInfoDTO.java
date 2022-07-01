@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人群信息
  *
  * @author auto create
- * @since 1.0, 2022-04-27 11:54:47
+ * @since 1.0, 2022-06-27 21:21:35
  */
 public class CrowdInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1686434618588176274L;
+	private static final long serialVersionUID = 8448176928916318533L;
 
 	/**
 	 * 人群创建时间+不唯一
 	 */
 	@ApiField("create_time")
 	private String createTime;
+
+	/**
+	 * 创建人ID+唯一
+	 */
+	@ApiField("creator_id")
+	private String creatorId;
 
 	/**
 	 * 创建人+不唯一
@@ -62,6 +68,12 @@ public class CrowdInfoDTO extends AlipayObject {
 	private String status;
 
 	/**
+	 * 人群创建方式+不唯一
+	 */
+	@ApiField("type")
+	private String type;
+
+	/**
 	 * 人群更新时间+不唯一
 	 */
 	@ApiField("update_time")
@@ -72,6 +84,13 @@ public class CrowdInfoDTO extends AlipayObject {
 	}
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
+	}
+
+	public String getCreatorId() {
+		return this.creatorId;
+	}
+	public void setCreatorId(String creatorId) {
+		this.creatorId = creatorId;
 	}
 
 	public String getCreatorName() {
@@ -121,6 +140,13 @@ public class CrowdInfoDTO extends AlipayObject {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getUpdateTime() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务事件信息
  *
  * @author auto create
- * @since 1.0, 2022-06-13 17:38:21
+ * @since 1.0, 2022-06-24 11:58:31
  */
 public class TaskEventInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5451918454865578554L;
+	private static final long serialVersionUID = 7655383737383435695L;
 
 	/**
 	 * 任务事件id，任务事件类型是TRADE_SOURCE时，为支付宝交易号

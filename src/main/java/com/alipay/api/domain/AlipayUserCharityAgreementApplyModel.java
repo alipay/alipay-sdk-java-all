@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 爱心捐赠代扣协议签约
  *
  * @author auto create
- * @since 1.0, 2022-03-01 14:42:15
+ * @since 1.0, 2022-06-30 20:02:16
  */
 public class AlipayUserCharityAgreementApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8742945456184874975L;
+	private static final long serialVersionUID = 7245574322481371512L;
 
 	/**
 	 * 业务场景，由爱心捐赠系统配置及分配

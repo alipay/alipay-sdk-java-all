@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控制度添加
  *
  * @author auto create
- * @since 1.0, 2022-01-10 10:00:10
+ * @since 1.0, 2022-06-30 23:09:50
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2273573345747496328L;
+	private static final long serialVersionUID = 2849116449712778966L;
 
 	/**
 	 * 企业ID
@@ -52,7 +52,7 @@ public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObj
 	/**
 	 * 费控条件列表
 特殊说明：
-1）至少存在日额度（QUOTA_DAY）、月额度（QUOTA_MONTH）、有效期总额度（QUOTA_TOTAL）三者中的一个额度条件。特别：若企业给员工设置员工余额，可以联系支持人员定向放开约束；
+1）至少存在日额度（QUOTA_DAY）、月额度（QUOTA_MONTH）、有效期总额度（QUOTA_TOTAL）三者中的一个额度条件；
 2）如果费用类型为MEAL，费控维度商户（MEAL_MERCHANT）和商户类型（MCC）对应的费控条件必须存在其一且不能同时存在；
 3）如果费用类型为METRO，费控维度地铁卡类型（CARD_TYPE）对应的费控条件必须存在；
 4）如果因公场景为OVERTIME，费控维度时间段（ALARM_CLOCK_TIME）对应的费控条件必须存在；

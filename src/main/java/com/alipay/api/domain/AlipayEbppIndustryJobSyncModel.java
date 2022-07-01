@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2022-03-21 17:12:27
+ * @since 1.0, 2022-06-27 20:57:44
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3374479663251958994L;
+	private static final long serialVersionUID = 6184677646456578715L;
 
 	/**
 	 * 岗位详细地址。
@@ -142,6 +142,12 @@ NO_REQ：不要求芝麻工作证
 	 */
 	@ApiField("out_job_id")
 	private String outJobId;
+
+	/**
+	 * 岗位模式：QUANZHI-全职、JIANZHI-兼职
+	 */
+	@ApiField("part_time_mode")
+	private String partTimeMode;
 
 	/**
 	 * 薪资结算方式:
@@ -298,6 +304,13 @@ NO_REQ：不要求芝麻工作证
 	}
 	public void setOutJobId(String outJobId) {
 		this.outJobId = outJobId;
+	}
+
+	public String getPartTimeMode() {
+		return this.partTimeMode;
+	}
+	public void setPartTimeMode(String partTimeMode) {
+		this.partTimeMode = partTimeMode;
 	}
 
 	public String getPayPeriod() {

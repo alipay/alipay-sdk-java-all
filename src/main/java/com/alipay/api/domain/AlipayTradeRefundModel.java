@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易退款接口
  *
  * @author auto create
- * @since 1.0, 2022-05-30 21:11:08
+ * @since 1.0, 2022-06-30 21:34:37
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8815127263915881421L;
+	private static final long serialVersionUID = 3234772111215697968L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -53,7 +53,7 @@ public class AlipayTradeRefundModel extends AlipayObject {
 
 	/**
 	 * 查询选项。
-商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。支持：refund_detail_item_list：退款使用的资金渠道。
+商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。支持：refund_detail_item_list：退款使用的资金渠道；deposit_back_info：触发银行卡冲退信息通知；
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")
@@ -94,7 +94,7 @@ public class AlipayTradeRefundModel extends AlipayObject {
 
 	/**
 	 * 退款原因说明。
-商家自定义，将在对账单的退款明细中作为备注返回，同时会在商户和用户的pc退款账单详情中展示
+商家自定义，将在会在商户和用户的pc退款账单详情中展示
 	 */
 	@ApiField("refund_reason")
 	private String refundReason;

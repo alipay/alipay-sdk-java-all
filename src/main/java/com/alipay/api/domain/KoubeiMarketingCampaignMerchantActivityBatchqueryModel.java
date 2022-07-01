@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景化商家运营活动批量查询
  *
  * @author auto create
- * @since 1.0, 2018-11-30 10:40:33
+ * @since 1.0, 2022-06-27 11:31:12
  */
 public class KoubeiMarketingCampaignMerchantActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7717868148165587418L;
+	private static final long serialVersionUID = 4588271415683833235L;
 
 	/**
 	 * 活动所属场景，只支持单个场景，目前支持枚举类型：点餐场景：DISH、预点餐场景：PRE_DISH、菜单场景：MENU

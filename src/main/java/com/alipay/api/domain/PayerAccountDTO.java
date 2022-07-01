@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转入时付款方所指定的资产信息
  *
  * @author auto create
- * @since 1.0, 2021-09-01 14:07:32
+ * @since 1.0, 2022-06-28 10:28:24
  */
 public class PayerAccountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7278418877234546158L;
+	private static final long serialVersionUID = 2615525146555975243L;
 
 	/**
 	 * 资产展示名

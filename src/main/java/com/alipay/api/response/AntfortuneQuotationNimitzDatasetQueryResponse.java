@@ -12,24 +12,37 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.quotation.nimitz.dataset.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-14 10:31:45
+ * @since 1.0, 2022-06-30 11:26:50
  */
 public class AntfortuneQuotationNimitzDatasetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4296434146589665839L;
+	private static final long serialVersionUID = 2387899929367465163L;
 
 	/** 
-	 * 数据
+	 * Nimitz 数据查询返回值，json形式
+	 */
+	@ApiField("result")
+	private String result;
+
+	/** 
+	 * 已弃用，返回时不要填充此字段，填充了也不会处理。
 	 */
 	@ApiListField("result_data")
 	@ApiField("obj_rs_data_d_t_o")
 	private List<ObjRsDataDTO> resultData;
 
 	/** 
-	 * 状态信息
+	 * 已弃用，返回时不要填充此字段，填充了也不会处理。
 	 */
 	@ApiField("result_status")
 	private Status resultStatus;
+
+	public void setResult(String result) {
+		this.result = result;
+	}
+	public String getResult( ) {
+		return this.result;
+	}
 
 	public void setResultData(List<ObjRsDataDTO> resultData) {
 		this.resultData = resultData;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 身份证OCR识别
  *
  * @author auto create
- * @since 1.0, 2022-06-21 11:36:38
+ * @since 1.0, 2022-06-27 14:25:54
  */
 public class AntOcrIdcardIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8435331222846995726L;
+	private static final long serialVersionUID = 6421626571116356896L;
 
 	/**
 	 * 图片地址

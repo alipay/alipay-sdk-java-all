@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单信息同步
  *
  * @author auto create
- * @since 1.0, 2022-06-21 14:57:24
+ * @since 1.0, 2022-06-24 19:41:59
  */
 public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8793428858861257651L;
+	private static final long serialVersionUID = 6442895148146789683L;
 
 	/**
 	 * 支付宝ETC平台扣款协议号，与order_id参数 二选一。
@@ -36,6 +36,12 @@ public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject 
 	 */
 	@ApiField("card_no")
 	private String cardNo;
+
+	/**
+	 * 审核不通过原因标准码，审核不通过时可以传递此标准码，域内将优先以标准码为准。
+	 */
+	@ApiField("censor_code")
+	private String censorCode;
 
 	/**
 	 * 审核不通过原因， 审核不通过时必传
@@ -88,8 +94,6 @@ CENSOR_BLOCK：审核不通过 ；
 ACTIVATED：已激活； 
 UNMOUNTED：已注销； 
 CANCEL：取消；
-拉黑:ADD_BLACKLIST；
-解黑:REMOVE_BLACKLIST；
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
@@ -118,6 +122,78 @@ CANCEL：取消；
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * 行驶证信息-核定载人数
+	 */
+	@ApiField("vi_license_apc")
+	private String viLicenseApc;
+
+	/**
+	 * 行驶证信息-品牌车型
+	 */
+	@ApiField("vi_license_brand_model")
+	private String viLicenseBrandModel;
+
+	/**
+	 * 行驶证信息-车辆类型
+	 */
+	@ApiField("vi_license_car_type")
+	private String viLicenseCarType;
+
+	/**
+	 * 行驶证信息-发动机号
+	 */
+	@ApiField("vi_license_engine")
+	private String viLicenseEngine;
+
+	/**
+	 * 行驶证信息-总质量
+	 */
+	@ApiField("vi_license_gross_mass")
+	private String viLicenseGrossMass;
+
+	/**
+	 * 行驶证信息-发证时间
+	 */
+	@ApiField("vi_license_issue_date")
+	private String viLicenseIssueDate;
+
+	/**
+	 * 行驶证信息-外廓尺寸
+	 */
+	@ApiField("vi_license_overall_dinmension")
+	private String viLicenseOverallDinmension;
+
+	/**
+	 * 行驶证信息-车辆所有人
+	 */
+	@ApiField("vi_license_owner")
+	private String viLicenseOwner;
+
+	/**
+	 * 行驶证信息-注册时间
+	 */
+	@ApiField("vi_license_register_date")
+	private String viLicenseRegisterDate;
+
+	/**
+	 * 行驶证信息-整备质量
+	 */
+	@ApiField("vi_license_unladen_mass")
+	private String viLicenseUnladenMass;
+
+	/**
+	 * 行驶证信息-使用性质：运营/非营运
+	 */
+	@ApiField("vi_license_use_type")
+	private String viLicenseUseType;
+
+	/**
+	 * 行驶证信息-车辆识别号
+	 */
+	@ApiField("vi_license_vin")
+	private String viLicenseVin;
+
 	public String getBizAgreementNo() {
 		return this.bizAgreementNo;
 	}
@@ -144,6 +220,13 @@ CANCEL：取消；
 	}
 	public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
+	}
+
+	public String getCensorCode() {
+		return this.censorCode;
+	}
+	public void setCensorCode(String censorCode) {
+		this.censorCode = censorCode;
 	}
 
 	public String getCensorInfo() {
@@ -228,6 +311,90 @@ CANCEL：取消；
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getViLicenseApc() {
+		return this.viLicenseApc;
+	}
+	public void setViLicenseApc(String viLicenseApc) {
+		this.viLicenseApc = viLicenseApc;
+	}
+
+	public String getViLicenseBrandModel() {
+		return this.viLicenseBrandModel;
+	}
+	public void setViLicenseBrandModel(String viLicenseBrandModel) {
+		this.viLicenseBrandModel = viLicenseBrandModel;
+	}
+
+	public String getViLicenseCarType() {
+		return this.viLicenseCarType;
+	}
+	public void setViLicenseCarType(String viLicenseCarType) {
+		this.viLicenseCarType = viLicenseCarType;
+	}
+
+	public String getViLicenseEngine() {
+		return this.viLicenseEngine;
+	}
+	public void setViLicenseEngine(String viLicenseEngine) {
+		this.viLicenseEngine = viLicenseEngine;
+	}
+
+	public String getViLicenseGrossMass() {
+		return this.viLicenseGrossMass;
+	}
+	public void setViLicenseGrossMass(String viLicenseGrossMass) {
+		this.viLicenseGrossMass = viLicenseGrossMass;
+	}
+
+	public String getViLicenseIssueDate() {
+		return this.viLicenseIssueDate;
+	}
+	public void setViLicenseIssueDate(String viLicenseIssueDate) {
+		this.viLicenseIssueDate = viLicenseIssueDate;
+	}
+
+	public String getViLicenseOverallDinmension() {
+		return this.viLicenseOverallDinmension;
+	}
+	public void setViLicenseOverallDinmension(String viLicenseOverallDinmension) {
+		this.viLicenseOverallDinmension = viLicenseOverallDinmension;
+	}
+
+	public String getViLicenseOwner() {
+		return this.viLicenseOwner;
+	}
+	public void setViLicenseOwner(String viLicenseOwner) {
+		this.viLicenseOwner = viLicenseOwner;
+	}
+
+	public String getViLicenseRegisterDate() {
+		return this.viLicenseRegisterDate;
+	}
+	public void setViLicenseRegisterDate(String viLicenseRegisterDate) {
+		this.viLicenseRegisterDate = viLicenseRegisterDate;
+	}
+
+	public String getViLicenseUnladenMass() {
+		return this.viLicenseUnladenMass;
+	}
+	public void setViLicenseUnladenMass(String viLicenseUnladenMass) {
+		this.viLicenseUnladenMass = viLicenseUnladenMass;
+	}
+
+	public String getViLicenseUseType() {
+		return this.viLicenseUseType;
+	}
+	public void setViLicenseUseType(String viLicenseUseType) {
+		this.viLicenseUseType = viLicenseUseType;
+	}
+
+	public String getViLicenseVin() {
+		return this.viLicenseVin;
+	}
+	public void setViLicenseVin(String viLicenseVin) {
+		this.viLicenseVin = viLicenseVin;
 	}
 
 }

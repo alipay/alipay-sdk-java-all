@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.template.marketing.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-22 11:26:39
+ * @since 1.0, 2022-06-30 17:13:25
  */
 public class AlipayOpenMiniTemplateMarketingCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3811789274682865969L;
+	private static final long serialVersionUID = 3218723261745441362L;
 
 	
 

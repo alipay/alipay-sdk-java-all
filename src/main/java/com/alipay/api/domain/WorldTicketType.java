@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WorldTicketType extends AlipayObject {
 
-	private static final long serialVersionUID = 4863888136331768687L;
+	private static final long serialVersionUID = 5465321145821681267L;
 
 	/**
 	 * 票种代码

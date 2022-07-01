@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.violation.violationdetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-16 11:16:45
+ * @since 1.0, 2022-06-29 10:41:49
  */
 public class AlipayOpenViolationViolationdetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6487557516986222393L;
+	private static final long serialVersionUID = 5283827664993488474L;
 
 	/** 
 	 * 申诉截止日期。
@@ -125,7 +125,7 @@ RECTIFY_TIMEOUT ：整改已超时
 	private String violationReason;
 
 	/** 
-	 * 由GR侧生成的违规记录唯一标识
+	 * 支付宝侧生成的违规记录唯一标识
 	 */
 	@ApiField("violation_record_id")
 	private String violationRecordId;

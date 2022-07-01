@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.ftoken.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-16 16:50:29
+ * @since 1.0, 2022-06-24 17:41:43
  */
 public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4193118475485891838L;
+	private static final long serialVersionUID = 4253512938811962435L;
 
 	/** 
 	 * 年龄是否在指定范围内，未指定范围则返回空，true/false
@@ -28,6 +28,18 @@ public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayRespon
 	 */
 	@ApiField("authimg_base_64")
 	private String authimgBase64;
+
+	/** 
+	 * 证件姓名
+	 */
+	@ApiField("cert_name")
+	private String certName;
+
+	/** 
+	 * 身份证号码
+	 */
+	@ApiField("cert_no")
+	private String certNo;
 
 	/** 
 	 * 由ISV定义的对自然人唯一编码，举例可以是身份证号码和姓名的MD5值，或者是其他编码方式，要求脱敏、随机且在ISV可以唯一说明一个自然人
@@ -60,6 +72,20 @@ public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayRespon
 	}
 	public String getAuthimgBase64( ) {
 		return this.authimgBase64;
+	}
+
+	public void setCertName(String certName) {
+		this.certName = certName;
+	}
+	public String getCertName( ) {
+		return this.certName;
+	}
+
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
+	public String getCertNo( ) {
+		return this.certNo;
 	}
 
 	public void setFaceId(String faceId) {

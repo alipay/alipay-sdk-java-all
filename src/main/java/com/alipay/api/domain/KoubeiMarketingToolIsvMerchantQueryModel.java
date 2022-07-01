@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV查询商户列表接口
  *
  * @author auto create
- * @since 1.0, 2017-08-04 15:15:46
+ * @since 1.0, 2022-06-27 11:18:29
  */
 public class KoubeiMarketingToolIsvMerchantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4129413875952231752L;
+	private static final long serialVersionUID = 5628776832156946764L;
 
 	/**
 	 * 页码

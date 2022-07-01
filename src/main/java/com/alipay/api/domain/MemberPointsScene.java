@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MemberPointsScene extends AlipayObject {
 
-	private static final long serialVersionUID = 6276514655794365255L;
+	private static final long serialVersionUID = 1246139474124871617L;
 
 	/**
 	 * 用户兑换的内容。

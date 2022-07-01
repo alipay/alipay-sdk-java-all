@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人群列表查询
  *
  * @author auto create
- * @since 1.0, 2022-04-27 16:49:58
+ * @since 1.0, 2022-06-27 21:21:35
  */
 public class DatadigitalFincloudFinsaasCrowdListBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1289515127154731275L;
+	private static final long serialVersionUID = 4457347751381483872L;
 
 	/**
 	 * 操作人ID+唯一+人群列表查询

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CreditPayBillAssetVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5242442849235415152L;
+	private static final long serialVersionUID = 4234688416732313338L;
 
 	/**
 	 * 是否允许部分提前还款

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DashBoardMeta extends AlipayObject {
 
-	private static final long serialVersionUID = 6565789548377515643L;
+	private static final long serialVersionUID = 1273317132792619998L;
 
 	/**
 	 * 授权状态，值为true或者false

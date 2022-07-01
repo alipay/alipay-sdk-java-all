@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TaskInstanceInfo;
+import com.alipay.api.domain.TaskMarkerInfo;
 import com.alipay.api.domain.TaskVoucherBasicInfo;
 import com.alipay.api.domain.TaskPointRankInfo;
 
@@ -13,17 +14,24 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.hunter.get response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-30 20:18:26
+ * @since 1.0, 2022-06-30 20:56:47
  */
 public class AlipayCommerceYuntaskHunterGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6292685479134448959L;
+	private static final long serialVersionUID = 3879944111278533824L;
 
 	/** 
 	 * 任务信息
 	 */
 	@ApiField("task_instance_info")
 	private TaskInstanceInfo taskInstanceInfo;
+
+	/** 
+	 * 标的物信息
+	 */
+	@ApiListField("task_marker_info_list")
+	@ApiField("task_marker_info")
+	private List<TaskMarkerInfo> taskMarkerInfoList;
 
 	/** 
 	 * 任务券信息
@@ -44,6 +52,13 @@ public class AlipayCommerceYuntaskHunterGetResponse extends AlipayResponse {
 	}
 	public TaskInstanceInfo getTaskInstanceInfo( ) {
 		return this.taskInstanceInfo;
+	}
+
+	public void setTaskMarkerInfoList(List<TaskMarkerInfo> taskMarkerInfoList) {
+		this.taskMarkerInfoList = taskMarkerInfoList;
+	}
+	public List<TaskMarkerInfo> getTaskMarkerInfoList( ) {
+		return this.taskMarkerInfoList;
 	}
 
 	public void setTaskVoucherList(List<TaskVoucherBasicInfo> taskVoucherList) {

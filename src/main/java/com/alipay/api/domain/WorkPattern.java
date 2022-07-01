@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class WorkPattern extends AlipayObject {
 
-	private static final long serialVersionUID = 5164357625894631758L;
+	private static final long serialVersionUID = 4458921549672133495L;
 
 	/**
 	 * 线路方向

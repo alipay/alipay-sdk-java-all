@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.employment.event.send request
  * 
  * @author auto create
- * @since 1.0, 2022-06-15 14:21:41
+ * @since 1.0, 2022-06-24 13:51:45
  */
 public class AlipayInsSceneEmploymentEventSendRequest implements AlipayRequest<AlipayInsSceneEmploymentEventSendResponse> {
 

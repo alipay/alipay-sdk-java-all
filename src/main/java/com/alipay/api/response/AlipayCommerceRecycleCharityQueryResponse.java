@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRecycleCharityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5125983886199739925L;
+	private static final long serialVersionUID = 2453912929461128948L;
 
 	/** 
 	 * 公益捐赠项目列表

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡模板修改
  *
  * @author auto create
- * @since 1.0, 2022-02-15 10:44:23
+ * @since 1.0, 2022-06-30 11:11:24
  */
 public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1843448898845427149L;
+	private static final long serialVersionUID = 6356558371774324217L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -22,6 +22,12 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 	 */
 	@ApiField("biz_no_prefix")
 	private String bizNoPrefix;
+
+	/**
+	 * 业务卡号后缀长度，与biz_no_prefix配合，扣除系统预留2位，剩下对应seq长度。在生成卡号时，若seq位数不足前置补0，若seq位数超出则以实际为准。举例：设为10，其中8位用于生成seq，可覆盖1亿用户，即使seq超过1亿，生成卡号也不报错，但总长度不得超过32位。建议按需设置合适的值，以获得长度一致的业务卡号，建议长度20，性能更好。
+	 */
+	@ApiField("biz_no_suffix_len")
+	private String bizNoSuffixLen;
 
 	/**
 	 * 卡行动点配置；
@@ -104,6 +110,12 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 	private List<String> shopIds;
 
 	/**
+	 * spi_app_id：若使用openspi模式开卡，该字段必填，为实现spi.alipay.user.opencard.get接口的app_id
+	 */
+	@ApiField("spi_app_id")
+	private String spiAppId;
+
+	/**
 	 * 权益信息，
 1、在卡包的卡详情页面会自动添加权益栏位，展现会员卡特权，
 2、如果添加门店渠道，则可在门店页展现会员卡的权益
@@ -148,6 +160,13 @@ mdbarcode: 商户动态条码，扫码得商户自主传入的码值。
 	}
 	public void setBizNoPrefix(String bizNoPrefix) {
 		this.bizNoPrefix = bizNoPrefix;
+	}
+
+	public String getBizNoSuffixLen() {
+		return this.bizNoSuffixLen;
+	}
+	public void setBizNoSuffixLen(String bizNoSuffixLen) {
+		this.bizNoSuffixLen = bizNoSuffixLen;
 	}
 
 	public List<TemplateActionInfoDTO> getCardActionList() {
@@ -225,6 +244,13 @@ mdbarcode: 商户动态条码，扫码得商户自主传入的码值。
 	}
 	public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
+	}
+
+	public String getSpiAppId() {
+		return this.spiAppId;
+	}
+	public void setSpiAppId(String spiAppId) {
+		this.spiAppId = spiAppId;
 	}
 
 	public List<TemplateBenefitInfoDTO> getTemplateBenefitInfo() {

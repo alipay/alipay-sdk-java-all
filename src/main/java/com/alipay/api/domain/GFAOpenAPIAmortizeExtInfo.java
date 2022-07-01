@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财摊销扩展信息
  *
  * @author auto create
- * @since 1.0, 2022-06-10 11:41:26
+ * @since 1.0, 2022-06-29 15:14:37
  */
 public class GFAOpenAPIAmortizeExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8336649638144155561L;
+	private static final long serialVersionUID = 6128941447588594588L;
 
 	/**
 	 * 待摊销金额。（单位：各币种的“元”单位，精确到小数点后两位）
@@ -26,6 +26,12 @@ public class GFAOpenAPIAmortizeExtInfo extends AlipayObject {
 	 */
 	@ApiField("amortize_period_type")
 	private String amortizePeriodType;
+
+	/**
+	 * 摊销总天数
+	 */
+	@ApiField("amortize_total_day")
+	private String amortizeTotalDay;
 
 	/**
 	 * 摊销类型
@@ -69,6 +75,13 @@ public class GFAOpenAPIAmortizeExtInfo extends AlipayObject {
 	}
 	public void setAmortizePeriodType(String amortizePeriodType) {
 		this.amortizePeriodType = amortizePeriodType;
+	}
+
+	public String getAmortizeTotalDay() {
+		return this.amortizeTotalDay;
+	}
+	public void setAmortizeTotalDay(String amortizeTotalDay) {
+		this.amortizeTotalDay = amortizeTotalDay;
 	}
 
 	public String getAmortizeType() {

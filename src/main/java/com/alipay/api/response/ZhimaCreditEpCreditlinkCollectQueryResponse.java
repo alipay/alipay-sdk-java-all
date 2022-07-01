@@ -11,14 +11,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlink.collect.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-14 15:41:45
+ * @since 1.0, 2022-06-28 20:41:45
  */
 public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4836823931377532772L;
+	private static final long serialVersionUID = 4677226824787154941L;
 
 	/** 
-	 * INIT表示任务还在初始化状态，COLLECT表示任务在进行中，END状态表示任务处理完成。
+	 * 非文件模式下的数据返回结果。如果data_status为END，则该字段为空
+	 */
+	@ApiField("data_content")
+	private String dataContent;
+
+	/** 
+	 * INIT表示任务还在初始化状态，COLLECT表示任务在进行中，END表示任务处理完成，FAIL表示任务处理失败。
 	 */
 	@ApiField("data_status")
 	private String dataStatus;
@@ -68,6 +74,13 @@ public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("secret")
 	private String secret;
+
+	public void setDataContent(String dataContent) {
+		this.dataContent = dataContent;
+	}
+	public String getDataContent( ) {
+		return this.dataContent;
+	}
 
 	public void setDataStatus(String dataStatus) {
 		this.dataStatus = dataStatus;

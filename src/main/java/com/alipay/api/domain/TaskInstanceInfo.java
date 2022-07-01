@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询任务实例详情
  *
  * @author auto create
- * @since 1.0, 2022-05-30 20:19:37
+ * @since 1.0, 2022-06-27 14:23:50
  */
 public class TaskInstanceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8883839982733311596L;
+	private static final long serialVersionUID = 3833653943762499235L;
 
 	/**
 	 * 当前进度
@@ -32,6 +32,12 @@ public class TaskInstanceInfo extends AlipayObject {
 	 */
 	@ApiField("incentive_rule")
 	private String incentiveRule;
+
+	/**
+	 * 任务标的物推广数
+	 */
+	@ApiField("marker_promoted_count")
+	private Long markerPromotedCount;
 
 	/**
 	 * 任务最大激励笔数
@@ -133,6 +139,13 @@ FINISHED  任务完成
 	}
 	public void setIncentiveRule(String incentiveRule) {
 		this.incentiveRule = incentiveRule;
+	}
+
+	public Long getMarkerPromotedCount() {
+		return this.markerPromotedCount;
+	}
+	public void setMarkerPromotedCount(Long markerPromotedCount) {
+		this.markerPromotedCount = markerPromotedCount;
 	}
 
 	public Long getMaxIncentiveCount() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料配送指令对象, 包括物料配送的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 数量, 收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2021-09-01 15:06:14
+ * @since 1.0, 2022-06-28 16:07:51
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3431941689334481177L;
+	private static final long serialVersionUID = 1873959356753287794L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -224,6 +224,12 @@ yyyy-MM-dd HH：mm:ss
 	 */
 	@ApiField("to_address")
 	private AssetDeliveryAddress toAddress;
+
+	/**
+	 * 动作
+	 */
+	@ApiField("work_process")
+	private String workProcess;
 
 	public String getActionType() {
 		return this.actionType;
@@ -468,6 +474,13 @@ yyyy-MM-dd HH：mm:ss
 	}
 	public void setToAddress(AssetDeliveryAddress toAddress) {
 		this.toAddress = toAddress;
+	}
+
+	public String getWorkProcess() {
+		return this.workProcess;
+	}
+	public void setWorkProcess(String workProcess) {
+		this.workProcess = workProcess;
 	}
 
 }

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 接收饿了么推送爱心商家的交易订单信息
  *
  * @author auto create
- * @since 1.0, 2022-04-21 11:16:07
+ * @since 1.0, 2022-06-30 20:01:46
  */
 public class AlipaySocialAntcommonwealDonateConsumeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7782766411843768342L;
+	private static final long serialVersionUID = 6198277968542994685L;
 
 	/**
 	 * 支付宝交易号

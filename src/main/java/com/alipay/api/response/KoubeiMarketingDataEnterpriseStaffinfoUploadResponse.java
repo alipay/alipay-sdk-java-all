@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.enterprise.staffinfo.upload response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-19 22:14:34
+ * @since 1.0, 2022-06-29 10:40:21
  */
 public class KoubeiMarketingDataEnterpriseStaffinfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7413498215679766622L;
+	private static final long serialVersionUID = 1135196898612433494L;
 
 	/** 
 	 * 人群ID

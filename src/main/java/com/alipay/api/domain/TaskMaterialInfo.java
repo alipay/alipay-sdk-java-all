@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务素材信息
  *
  * @author auto create
- * @since 1.0, 2022-06-22 15:08:46
+ * @since 1.0, 2022-06-29 18:00:31
  */
 public class TaskMaterialInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5679793626591394714L;
+	private static final long serialVersionUID = 6574116842936327895L;
 
 	/**
 	 * 任务领奖按钮文案
@@ -36,6 +36,12 @@ public class TaskMaterialInfo extends AlipayObject {
 	 */
 	@ApiField("icon")
 	private String icon;
+
+	/**
+	 * 任务跳转链接
+	 */
+	@ApiField("link")
+	private String link;
 
 	/**
 	 * 任务副标题
@@ -75,6 +81,13 @@ public class TaskMaterialInfo extends AlipayObject {
 	}
 	public void setIcon(String icon) {
 		this.icon = icon;
+	}
+
+	public String getLink() {
+		return this.link;
+	}
+	public void setLink(String link) {
+		this.link = link;
 	}
 
 	public String getSubTitle() {

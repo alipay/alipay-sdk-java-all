@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.job.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-03-21 17:16:37
+ * @since 1.0, 2022-06-27 21:01:43
  */
 public class AlipayEbppIndustryJobSyncRequest implements AlipayRequest<AlipayEbppIndustryJobSyncResponse> {
 

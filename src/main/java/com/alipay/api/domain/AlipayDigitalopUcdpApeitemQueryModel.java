@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape推荐接口
  *
  * @author auto create
- * @since 1.0, 2022-06-16 19:33:13
+ * @since 1.0, 2022-06-24 16:11:26
  */
 public class AlipayDigitalopUcdpApeitemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5554134568458167141L;
+	private static final long serialVersionUID = 7632628781443347639L;
 
 	/**
 	 * 推荐上下文

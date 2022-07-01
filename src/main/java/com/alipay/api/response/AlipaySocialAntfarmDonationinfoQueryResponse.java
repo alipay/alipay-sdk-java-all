@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntfarmDonationinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4148613594782933825L;
+	private static final long serialVersionUID = 2748655714443969113L;
 
 	/** 
 	 * 当前用户捐赠爱心记录

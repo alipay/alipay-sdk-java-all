@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-06-16 19:33:52
+ * @since 1.0, 2022-06-24 16:11:56
  */
 public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4686731746931994616L;
+	private static final long serialVersionUID = 1637174815144764127L;
 
 	/**
 	 * 同步数据的列表

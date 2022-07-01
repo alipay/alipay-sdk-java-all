@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.hoteldevice.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-08 14:31:41
+ * @since 1.0, 2022-06-27 17:16:50
  */
 public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3472247685444431362L;
+	private static final long serialVersionUID = 2443391251313397884L;
 
 	/** 
 	 * 设备绑定的人脸数据列表
@@ -23,6 +23,13 @@ public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 	@ApiListField("face_list")
 	@ApiField("hotel_room_face_info_res")
 	private List<HotelRoomFaceInfoRes> faceList;
+
+	/** 
+	 * 下发设备开启的功能列表
+	 */
+	@ApiListField("function_list")
+	@ApiField("string")
+	private List<String> functionList;
 
 	/** 
 	 * 刷脸组ID
@@ -53,6 +60,13 @@ public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 	}
 	public List<HotelRoomFaceInfoRes> getFaceList( ) {
 		return this.faceList;
+	}
+
+	public void setFunctionList(List<String> functionList) {
+		this.functionList = functionList;
+	}
+	public List<String> getFunctionList( ) {
+		return this.functionList;
 	}
 
 	public void setGroupId(String groupId) {

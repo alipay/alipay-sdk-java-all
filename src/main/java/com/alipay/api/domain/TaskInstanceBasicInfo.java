@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询任务列表信息
  *
  * @author auto create
- * @since 1.0, 2022-03-17 15:19:14
+ * @since 1.0, 2022-06-27 14:24:09
  */
 public class TaskInstanceBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2586658885977573911L;
+	private static final long serialVersionUID = 3123224143557449329L;
 
 	/**
 	 * 任务图标
 	 */
 	@ApiField("logo")
 	private String logo;
+
+	/**
+	 * 标的物完成数
+	 */
+	@ApiField("marker_amount")
+	private Long markerAmount;
 
 	/**
 	 * 已经发放积分数量
@@ -84,6 +90,13 @@ EXPIRED  任务到期
 	}
 	public void setLogo(String logo) {
 		this.logo = logo;
+	}
+
+	public Long getMarkerAmount() {
+		return this.markerAmount;
+	}
+	public void setMarkerAmount(Long markerAmount) {
+		this.markerAmount = markerAmount;
 	}
 
 	public Long getPublishedPointAmount() {

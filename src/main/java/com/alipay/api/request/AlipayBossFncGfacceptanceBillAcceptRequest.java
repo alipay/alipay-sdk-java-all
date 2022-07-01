@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfacceptance.bill.accept request
  * 
  * @author auto create
- * @since 1.0, 2021-09-16 18:16:36
+ * @since 1.0, 2022-06-30 22:24:52
  */
 public class AlipayBossFncGfacceptanceBillAcceptRequest implements AlipayRequest<AlipayBossFncGfacceptanceBillAcceptResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财账单受理模型
  *
  * @author auto create
- * @since 1.0, 2022-06-10 11:41:26
+ * @since 1.0, 2022-06-30 21:21:55
  */
 public class GFAOpenAPIBillAcceptance extends AlipayObject {
 
-	private static final long serialVersionUID = 5131325258851489242L;
+	private static final long serialVersionUID = 8252368951678443594L;
 
 	/**
 	 * 摊销扩展信息
@@ -100,6 +100,12 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	private String outBusinessNo;
 
 	/**
+	 * 外部计税来源标识，当前只有 ibiztaxcore国际标识
+	 */
+	@ApiField("outer_tax_source")
+	private String outerTaxSource;
+
+	/**
 	 * 业务系统收付款状态
 	 */
 	@ApiField("pay_status")
@@ -170,6 +176,12 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	 */
 	@ApiField("system_origin")
 	private String systemOrigin;
+
+	/**
+	 * 外部计税信息。在外部计税时传入
+	 */
+	@ApiField("tax_info")
+	private GFAOpenAPIOuterTaxInfo taxInfo;
 
 	/**
 	 * 租户id
@@ -275,6 +287,13 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 		this.outBusinessNo = outBusinessNo;
 	}
 
+	public String getOuterTaxSource() {
+		return this.outerTaxSource;
+	}
+	public void setOuterTaxSource(String outerTaxSource) {
+		this.outerTaxSource = outerTaxSource;
+	}
+
 	public String getPayStatus() {
 		return this.payStatus;
 	}
@@ -357,6 +376,13 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	}
 	public void setSystemOrigin(String systemOrigin) {
 		this.systemOrigin = systemOrigin;
+	}
+
+	public GFAOpenAPIOuterTaxInfo getTaxInfo() {
+		return this.taxInfo;
+	}
+	public void setTaxInfo(GFAOpenAPIOuterTaxInfo taxInfo) {
+		this.taxInfo = taxInfo;
 	}
 
 	public String getTntInstId() {

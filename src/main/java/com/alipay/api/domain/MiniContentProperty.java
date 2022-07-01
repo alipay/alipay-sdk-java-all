@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MiniContentProperty extends AlipayObject {
 
-	private static final long serialVersionUID = 1596726254275864519L;
+	private static final long serialVersionUID = 7763761459226877164L;
 
 	/**
 	 * 属性key，必须是平台预先定义的，否则不允许录入

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot酒店房间信息查询
  *
  * @author auto create
- * @since 1.0, 2022-06-08 14:30:04
+ * @since 1.0, 2022-06-27 17:12:28
  */
 public class AlipayOpenIotmbsHoteldeviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7327266943175978995L;
+	private static final long serialVersionUID = 8364496799173885742L;
 
 	/**
 	 * 设备ID

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景化商家营销活动修改
  *
  * @author auto create
- * @since 1.0, 2021-10-14 11:56:14
+ * @since 1.0, 2022-06-29 10:45:37
  */
 public class KoubeiMarketingCampaignMerchantActivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8366653388728712744L;
+	private static final long serialVersionUID = 7258735862945371769L;
 
 	/**
 	 * 活动ActivityId

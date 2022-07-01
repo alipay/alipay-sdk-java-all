@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 任务规则配置类
  *
  * @author auto create
- * @since 1.0, 2022-06-14 17:16:23
+ * @since 1.0, 2022-06-24 11:54:17
  */
 public class TaskRuleConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1212244439148763849L;
+	private static final long serialVersionUID = 4226399541836615599L;
 
 	/**
 	 * 任务场景标签列表。场景枚举值：home_delivery（外卖）

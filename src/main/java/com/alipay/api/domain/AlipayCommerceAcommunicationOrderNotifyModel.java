@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值订单业务办理结果通知
  *
  * @author auto create
- * @since 1.0, 2022-06-20 11:36:17
+ * @since 1.0, 2022-06-29 14:42:00
  */
 public class AlipayCommerceAcommunicationOrderNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5839373397332637397L;
+	private static final long serialVersionUID = 3824428576247862552L;
 
 	/**
 	 * 支付宝侧订单号

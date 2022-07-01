@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.order.notify response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-20 11:36:43
+ * @since 1.0, 2022-06-29 14:42:00
  */
 public class AlipayCommerceAcommunicationOrderNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1842345139169839151L;
+	private static final long serialVersionUID = 3464534386817495242L;
 
 	/** 
 	 * 支付宝订单号

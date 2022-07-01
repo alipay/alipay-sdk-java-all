@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-08 11:01:44
+ * @since 1.0, 2022-06-30 21:34:37
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2156955874343895262L;
+	private static final long serialVersionUID = 1495586872824274738L;
 
 	/** 
 	 * 用户的登录id
@@ -44,7 +44,7 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private Date gmtRefundPay;
 
 	/** 
-	 * 是否有银行卡冲退
+	 * 是否有银行卡冲退，仅当query_options中传入deposit_back_info时返回
 	 */
 	@ApiField("has_deposit_back")
 	private String hasDepositBack;

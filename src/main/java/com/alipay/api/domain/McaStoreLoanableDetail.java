@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class McaStoreLoanableDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3781249191837357985L;
+	private static final long serialVersionUID = 5168633325154381781L;
 
 	/**
 	 * 是否准入

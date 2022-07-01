@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 资金创新场景转账
  *
  * @author auto create
- * @since 1.0, 2022-05-23 14:31:41
+ * @since 1.0, 2022-06-29 13:45:05
  */
 public class AlipayFundTransInnovateAppCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5111371847828225747L;
+	private static final long serialVersionUID = 1229662717567878125L;
 
 	/**
 	 * 描述特定的业务场景，如果传递了out_biz_no则该字段为必传。
@@ -47,6 +49,13 @@ sub_biz_scene 子场景
 	 */
 	@ApiField("payee_info")
 	private Participant payeeInfo;
+
+	/**
+	 * 付款指定支付渠道类型
+	 */
+	@ApiListField("payer_enable_channels_info_list")
+	@ApiField("payer_payment_d_t_o")
+	private List<PayerPaymentDTO> payerEnableChannelsInfoList;
 
 	/**
 	 * 付款用户账号信息，房租场景是必填
@@ -116,6 +125,13 @@ TRANSFER_TO_ALIPAY_ACCOUNT 产品取值范围[0.1,100000000]
 	}
 	public void setPayeeInfo(Participant payeeInfo) {
 		this.payeeInfo = payeeInfo;
+	}
+
+	public List<PayerPaymentDTO> getPayerEnableChannelsInfoList() {
+		return this.payerEnableChannelsInfoList;
+	}
+	public void setPayerEnableChannelsInfoList(List<PayerPaymentDTO> payerEnableChannelsInfoList) {
+		this.payerEnableChannelsInfoList = payerEnableChannelsInfoList;
 	}
 
 	public Participant getPayerInfo() {

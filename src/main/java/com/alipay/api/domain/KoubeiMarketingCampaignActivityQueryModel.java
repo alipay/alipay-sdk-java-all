@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动详情查询
  *
  * @author auto create
- * @since 1.0, 2017-11-03 14:54:15
+ * @since 1.0, 2022-06-27 11:16:52
  */
 public class KoubeiMarketingCampaignActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8163529758781211837L;
+	private static final long serialVersionUID = 8431252257356377337L;
 
 	/**
 	 * 活动id。通过 <a href="https://opendocs.alipay.com/apis/api_5/koubei.marketing.campaign.activity.create">koubei.marketing.campaign.activity.create</a>(活动创建接口)获取。

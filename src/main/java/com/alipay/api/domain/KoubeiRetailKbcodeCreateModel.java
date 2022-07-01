@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiRetailKbcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5464517519471834963L;
+	private static final long serialVersionUID = 8664522375495377589L;
 
 	/**
 	 * 口碑码绑定的附加信息列表，最大数量150

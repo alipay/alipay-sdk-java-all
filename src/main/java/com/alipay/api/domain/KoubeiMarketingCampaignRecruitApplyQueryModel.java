@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商商家报名分页查询接口
  *
  * @author auto create
- * @since 1.0, 2017-02-20 13:51:20
+ * @since 1.0, 2022-06-29 10:49:53
  */
 public class KoubeiMarketingCampaignRecruitApplyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7856876217139352384L;
+	private static final long serialVersionUID = 8454539658612346435L;
 
 	/**
 	 * 运营活动id

@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询权益中心用户填写表单
  *
  * @author auto create
- * @since 1.0, 2022-06-01 15:15:36
+ * @since 1.0, 2022-06-24 15:55:55
  */
 public class ZhimaCreditEpLixinUserfillformQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3792177855894642327L;
+	private static final long serialVersionUID = 4478929131337937427L;
+
+	/**
+	 * 表单提交结束时间，与表单开始时间组合前开后闭[start_time,end_time)
+	 */
+	@ApiField("end_time")
+	private Date endTime;
 
 	/**
 	 * 企业信用立信平台问卷的问卷ID
@@ -35,11 +42,24 @@ public class ZhimaCreditEpLixinUserfillformQueryModel extends AlipayObject {
 	private Long pageSize;
 
 	/**
+	 * 表单提交开始时间，与表单结束时间组合前开后闭[start_time,end_time)
+	 */
+	@ApiField("start_time")
+	private Date startTime;
+
+	/**
 	 * 支付宝用户id
 	 */
 	@ApiListField("user_id_list")
 	@ApiField("string")
 	private List<String> userIdList;
+
+	public Date getEndTime() {
+		return this.endTime;
+	}
+	public void setEndTime(Date endTime) {
+		this.endTime = endTime;
+	}
 
 	public Long getFormId() {
 		return this.formId;
@@ -60,6 +80,13 @@ public class ZhimaCreditEpLixinUserfillformQueryModel extends AlipayObject {
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public Date getStartTime() {
+		return this.startTime;
+	}
+	public void setStartTime(Date startTime) {
+		this.startTime = startTime;
 	}
 
 	public List<String> getUserIdList() {
