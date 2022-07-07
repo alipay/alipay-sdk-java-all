@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.order.cancel request
  * 
  * @author auto create
- * @since 1.0, 2019-05-13 20:58:29
+ * @since 1.0, 2022-07-01 16:26:03
  */
 public class KoubeiCateringOrderCancelRequest implements AlipayRequest<KoubeiCateringOrderCancelResponse> {
 

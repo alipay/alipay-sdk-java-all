@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备档案文件
  *
  * @author auto create
- * @since 1.0, 2022-06-10 13:34:28
+ * @since 1.0, 2022-07-06 14:28:48
  */
 public class DeviceRecordFile extends AlipayObject {
 
-	private static final long serialVersionUID = 4533152835328815777L;
+	private static final long serialVersionUID = 8893315429757823361L;
 
 	/**
 	 * 1.直联商户三绑定必传：
@@ -21,13 +21,11 @@ RECORDS_TYPE_SHOPID(shopid);
 RECORDS_TYPE_SMID（间连smid）、
 RECORDS_TYPE_PID(直连pid)、
 RECORDS_TYPE_SHOPID(shopid);
-3.极简绑定必传：
-RECORDS_TYPE_SMID（间连smid）
-4.极简绑定、可用绑定升级三绑定必传：
+3.可用绑定升级三绑定必传：
 RECORDS_TYPE_SMID（间连smid）、
 RECORDS_TYPE_PID(直连pid)、
 RECORDS_TYPE_SHOPID(shopid);
-5.可用绑定必传： RECORDS_TYPE_SMID（间连smid） 
+4.可用绑定必传： RECORDS_TYPE_SMID（间连smid）
 RECORDS_TYPE_PID(pid)
 	 */
 	@ApiField("records_type")

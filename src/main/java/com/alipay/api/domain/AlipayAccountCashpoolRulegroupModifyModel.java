@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayAccountCashpoolRulegroupModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6687824247578238465L;
+	private static final long serialVersionUID = 4225741559263132591L;
 
 	/**
 	 * 资金池唯一标识

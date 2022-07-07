@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 餐饮pos业务订单账单取消
  *
  * @author auto create
- * @since 1.0, 2018-05-28 13:30:20
+ * @since 1.0, 2022-07-01 16:27:02
  */
 public class KoubeiCateringOrderBillCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7341525516365213313L;
+	private static final long serialVersionUID = 1152692858193267361L;
 
 	/**
 	 * 取消类型：RENEW-退款并重新生成新订单（反结场景），REFUND-仅退款不生成新订单（先付撤销、外卖退款场景）

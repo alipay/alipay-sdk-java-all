@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantWeikeBilltaxModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8226491362542349744L;
+	private static final long serialVersionUID = 2279415881694581279L;
 
 	/**
 	 * 实际报税金额，单位元

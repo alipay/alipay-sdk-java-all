@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮pos业务订单修改
  *
  * @author auto create
- * @since 1.0, 2018-05-28 13:30:41
+ * @since 1.0, 2022-07-01 16:24:58
  */
 public class KoubeiCateringOrderInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4265411639314437136L;
+	private static final long serialVersionUID = 7525782265369659676L;
 
 	/**
 	 * 触发订单更新的操作类型，比如:

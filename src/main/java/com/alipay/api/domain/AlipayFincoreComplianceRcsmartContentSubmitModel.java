@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 解语花统一的内容审核接口
  *
  * @author auto create
- * @since 1.0, 2021-05-07 20:39:26
+ * @since 1.0, 2022-07-04 14:25:23
  */
 public class AlipayFincoreComplianceRcsmartContentSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1418676288738265212L;
+	private static final long serialVersionUID = 7168541981793931779L;
 
 	/**
 	 * app_name为调用方系统名称(英文名称),与分配的app_token一起做调用系统合法性校验。

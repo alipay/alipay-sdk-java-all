@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ConstraintInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3541194645386593849L;
+	private static final long serialVersionUID = 8527963367392432415L;
 
 	/**
 	 * 资金池ID

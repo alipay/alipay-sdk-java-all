@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 子订单明细
  *
  * @author auto create
- * @since 1.0, 2022-06-22 17:25:18
+ * @since 1.0, 2022-07-01 10:37:12
  */
 public class OrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5329455738957131573L;
+	private static final long serialVersionUID = 6869987533853227491L;
 
 	/**
 	 * 订单明细的应用唯一标识（16位纯数字），指商家的app_id。
@@ -62,13 +62,14 @@ public class OrderDetail extends AlipayObject {
 
 	/**
 	 * 卖家支付宝用户ID。
-如果该值为空，则默认为商户签约账号对应的支付宝用户ID
+如果该值与seller_logon_id同时为空，则卖家默认为app_id对应的支付宝用户ID
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
 
 	/**
-	 * 支持手机和Email格式,如果同时使用参数seller_logon_id和seller_id,以seller_id为准
+	 * 卖家支付宝logon_id
+支持手机和Email格式,如果该值与seller_id同时传入,将以seller_id为准
 	 */
 	@ApiField("seller_logon_id")
 	private String sellerLogonId;

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.entertainment.item.upload response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-01 14:51:40
+ * @since 1.0, 2022-07-01 13:36:48
  */
 public class AlipayCommerceEntertainmentItemUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4284595322212687737L;
+	private static final long serialVersionUID = 2799663688551422284L;
 
 	
 

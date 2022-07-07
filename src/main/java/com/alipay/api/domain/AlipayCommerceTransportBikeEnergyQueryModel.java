@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询单车骑行能量开关状态
  *
  * @author auto create
- * @since 1.0, 2022-06-06 14:16:29
+ * @since 1.0, 2022-07-06 19:57:14
  */
 public class AlipayCommerceTransportBikeEnergyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2497576577383924982L;
+	private static final long serialVersionUID = 4866197211289361345L;
 
 	/**
 	 * 蚂蚁统一会员ID

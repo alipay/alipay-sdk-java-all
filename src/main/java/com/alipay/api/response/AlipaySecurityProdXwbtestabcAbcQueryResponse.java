@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.xwbtestabc.abc.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-19 09:45:44
+ * @since 1.0, 2022-07-07 11:15:41
  */
 public class AlipaySecurityProdXwbtestabcAbcQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7686629319877131933L;
+	private static final long serialVersionUID = 2535897876553113811L;
 
 	/** 
 	 * 1

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑点餐订单后付商户冲正
  *
  * @author auto create
- * @since 1.0, 2019-04-19 20:13:22
+ * @since 1.0, 2022-07-01 16:26:03
  */
 public class KoubeiCateringOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6189878152368454397L;
+	private static final long serialVersionUID = 4287172179491241337L;
 
 	/**
 	 * 扩展信息，json对象格式，key和value都为字符串

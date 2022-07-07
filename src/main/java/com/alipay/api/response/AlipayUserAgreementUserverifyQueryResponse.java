@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.userverify.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-28 10:18:38
+ * @since 1.0, 2022-07-05 21:53:46
  */
 public class AlipayUserAgreementUserverifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1342289574869937499L;
+	private static final long serialVersionUID = 8884774758486576737L;
 
 	/** 
 	 * 用户信息是否匹配

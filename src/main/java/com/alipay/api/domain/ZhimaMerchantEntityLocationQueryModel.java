@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手机缺电充电宝位置提醒
  *
  * @author auto create
- * @since 1.0, 2021-06-02 21:16:26
+ * @since 1.0, 2022-07-05 22:11:48
  */
 public class ZhimaMerchantEntityLocationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6682883349141482942L;
+	private static final long serialVersionUID = 5343866339652615743L;
 
 	/**
 	 * 实体类目

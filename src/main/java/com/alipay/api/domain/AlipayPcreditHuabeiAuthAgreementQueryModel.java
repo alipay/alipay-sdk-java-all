@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享协议查询
  *
  * @author auto create
- * @since 1.0, 2020-04-23 16:16:32
+ * @since 1.0, 2022-07-01 16:50:42
  */
 public class AlipayPcreditHuabeiAuthAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8297498236857824872L;
+	private static final long serialVersionUID = 8558726974113815493L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花芝轻会员。传入该参数，会忽略其它所有参数。

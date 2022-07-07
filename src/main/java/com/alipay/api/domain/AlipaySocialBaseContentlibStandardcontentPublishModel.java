@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容发布接口
  *
  * @author auto create
- * @since 1.0, 2022-06-22 11:49:52
+ * @since 1.0, 2022-07-04 11:18:49
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5423326747894343815L;
+	private static final long serialVersionUID = 2553344215435399972L;
 
 	/**
 	 * 生活号+号ID。如果发送类型=自研/三方发送，不要传入；发送类型=mcn发送，请传入public_id【mcn机构绑定达人号ID】
@@ -23,7 +23,7 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	private String publicId;
 
 	/**
-	 * 作者
+	 * 作者；预留字段，当前不对用户透出
 	 */
 	@ApiField("source_author")
 	private String sourceAuthor;
@@ -48,7 +48,7 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	private List<SourceMediaInfo> sourceMediaInfos;
 
 	/**
-	 * 关联服务,目前只支持一个，offerId为关联的服务ID，目前只支持小程序，offerId为小程序ID，offerType为 mini_app
+	 * 内容关联服务，1个内容最多关联1个服务；offerId为关联的服务ID，支持小程序/小程序服务/优惠券活动
 	 */
 	@ApiListField("source_offers")
 	@ApiField("source_offer")
@@ -61,7 +61,7 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	private String sourcePublishDate;
 
 	/**
-	 * 文章的摘要
+	 * 文章摘要；预留字段，当前不对用户透出
 	 */
 	@ApiField("source_summary")
 	private String sourceSummary;

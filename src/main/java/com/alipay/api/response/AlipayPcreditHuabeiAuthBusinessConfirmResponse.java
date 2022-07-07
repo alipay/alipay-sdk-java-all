@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.business.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-27 10:07:41
+ * @since 1.0, 2022-07-01 16:41:09
  */
 public class AlipayPcreditHuabeiAuthBusinessConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4716631466783657811L;
+	private static final long serialVersionUID = 6289344387689243825L;
 
 	/** 
 	 * 业务信息回执失败原因描述

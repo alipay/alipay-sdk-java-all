@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 餐饮pos业务订单支付结果查询
  *
  * @author auto create
- * @since 1.0, 2018-04-14 17:41:14
+ * @since 1.0, 2022-07-01 16:23:43
  */
 public class KoubeiCateringOrderPayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1782922291959641686L;
+	private static final long serialVersionUID = 8835798254793193917L;
 
 	/**
 	 * 外部支付订单号,唯一标识本次支付的requestID

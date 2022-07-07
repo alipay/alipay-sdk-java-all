@@ -11,15 +11,16 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 泛娱乐优惠商品上报
  *
  * @author auto create
- * @since 1.0, 2022-06-01 14:51:20
+ * @since 1.0, 2022-07-01 13:36:22
  */
 public class AlipayCommerceEntertainmentItemUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2551881614459931443L;
+	private static final long serialVersionUID = 1699178758885889912L;
 
 	/**
 	 * 业务场景码，不填默认为娱乐会员业务，可选枚举：
 CONSUME_GOLD（消费金积分兑换）
+DEFAULT_CAMP（默认-娱乐会员优惠商品）
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -33,6 +34,9 @@ CONSUME_GOLD（消费金积分兑换）
 	/**
 	 * 商品扩展信息，具体传值根据商户及商品类型不同另行约定。
 json格式，请将需要传递的key和value字段放入map中，转成json string传入。
+
+通用扩展参数：
+merchant_display_priority 商品排序字段，正整数，数字越大优先级越高
 	 */
 	@ApiField("item_extended_info")
 	private String itemExtendedInfo;
@@ -108,8 +112,13 @@ json格式，请将需要传递的key和value字段放入map中，转成json str
 
 	/**
 	 * 可选类型有：
-VIDEO:影视
-MUSIC:音乐
+影视 VIDEO,
+游戏 GAME,
+音乐 MUSIC,
+在线阅读 ONLINE_READING,
+社交媒体 SOCIAL_MEDIA,
+工具 TOOLS,
+其他 OTHER
 	 */
 	@ApiField("service_category")
 	private String serviceCategory;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEduKtBillingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1531953881695782969L;
+	private static final long serialVersionUID = 2562896961744168783L;
 
 	/**
 	 * Isv pid

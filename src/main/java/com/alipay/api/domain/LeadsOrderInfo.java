@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LeadsOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8641381134465589841L;
+	private static final long serialVersionUID = 7128575141781478756L;
 
 	/**
 	 * 客资类型，如手艺人预约，直播客资，门店预约，商品购买等

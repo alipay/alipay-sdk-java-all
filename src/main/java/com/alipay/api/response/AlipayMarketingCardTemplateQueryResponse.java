@@ -20,11 +20,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-15 10:44:37
+ * @since 1.0, 2022-07-04 15:01:45
  */
 public class AlipayMarketingCardTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5167439575273284137L;
+	private static final long serialVersionUID = 6181448542267449782L;
 
 	/** 
 	 * 业务卡号前缀，由商户指定
@@ -124,6 +124,12 @@ OUT_MEMBER_CARD：外部权益卡
 	@ApiListField("shop_ids")
 	@ApiField("string")
 	private List<String> shopIds;
+
+	/** 
+	 * spi_app_id：若使用openspi模式开卡，该字段为创建模版时，设置的实现spi.alipay.user.opencard.get接口的app_id
+	 */
+	@ApiField("spi_app_id")
+	private String spiAppId;
 
 	/** 
 	 * 权益信息，
@@ -236,6 +242,13 @@ OUT_MEMBER_CARD：外部权益卡
 	}
 	public List<String> getShopIds( ) {
 		return this.shopIds;
+	}
+
+	public void setSpiAppId(String spiAppId) {
+		this.spiAppId = spiAppId;
+	}
+	public String getSpiAppId( ) {
+		return this.spiAppId;
 	}
 
 	public void setTemplateBenefitInfo(List<TemplateBenefitInfoDTO> templateBenefitInfo) {

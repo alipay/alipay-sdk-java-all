@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 餐饮pos业务订单支付
  *
  * @author auto create
- * @since 1.0, 2018-04-14 17:40:48
+ * @since 1.0, 2022-07-01 16:23:56
  */
 public class KoubeiCateringOrderPayDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6888556796955791237L;
+	private static final long serialVersionUID = 5542517287241499245L;
 
 	/**
 	 * 支付授权码，25~30开头的长度为16~24位的数字，实际字符串长度以开发者获取的付款码长度为准

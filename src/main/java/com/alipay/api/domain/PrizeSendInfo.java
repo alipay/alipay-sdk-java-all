@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务发奖流水详情
  *
  * @author auto create
- * @since 1.0, 2022-06-28 20:39:26
+ * @since 1.0, 2022-07-05 10:20:05
  */
 public class PrizeSendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7826858611451774169L;
+	private static final long serialVersionUID = 2569323773187862551L;
 
 	/**
 	 * 创建时间
@@ -31,7 +31,13 @@ public class PrizeSendInfo extends AlipayObject {
 	 * 发奖系数
 	 */
 	@ApiField("modulus")
-	private String modulus;
+	private Long modulus;
+
+	/**
+	 * 奖品价格
+	 */
+	@ApiField("price")
+	private String price;
 
 	/**
 	 * 奖品id
@@ -77,11 +83,18 @@ public class PrizeSendInfo extends AlipayObject {
 		this.gmtModified = gmtModified;
 	}
 
-	public String getModulus() {
+	public Long getModulus() {
 		return this.modulus;
 	}
-	public void setModulus(String modulus) {
+	public void setModulus(Long modulus) {
 		this.modulus = modulus;
+	}
+
+	public String getPrice() {
+		return this.price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
 	}
 
 	public String getPrizeId() {

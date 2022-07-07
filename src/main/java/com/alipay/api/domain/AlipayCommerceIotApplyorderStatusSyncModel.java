@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotApplyorderStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2516652431451953877L;
+	private static final long serialVersionUID = 4421839264122353278L;
 
 	/**
 	 * 申请单状态

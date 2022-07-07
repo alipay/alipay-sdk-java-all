@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.rcsmart.content.submit response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-02 11:58:38
+ * @since 1.0, 2022-07-04 14:25:23
  */
 public class AlipayFincoreComplianceRcsmartContentSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7422894125792843572L;
+	private static final long serialVersionUID = 2546766355125789233L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备档案拓展信息
  *
  * @author auto create
- * @since 1.0, 2022-06-10 13:34:28
+ * @since 1.0, 2022-07-06 14:40:10
  */
 public class DeviceExtParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5883521757249799138L;
+	private static final long serialVersionUID = 4826546288661416552L;
 
 	/**
 	 * 商户编号，由ISV定义，需要保证在ISV下唯一
@@ -34,7 +34,7 @@ public class DeviceExtParams extends AlipayObject {
 	private String paymentType;
 
 	/**
-	 * 极简绑定时必传，用于设备左上角展示，可以区分设备所在门店
+	 * 可用绑定时必传，用于设备左上角展示，可以区分设备所在门店
 	 */
 	@ApiField("shop_name")
 	private String shopName;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 票据平台票据状态更新
  *
  * @author auto create
- * @since 1.0, 2020-12-16 11:58:16
+ * @since 1.0, 2022-07-07 10:48:53
  */
 public class AlipayFundTransInvoiceStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2829842511435975517L;
+	private static final long serialVersionUID = 4736429796987974181L;
 
 	/**
 	 * 票据代码

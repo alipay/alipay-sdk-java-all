@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除会员关系
  *
  * @author auto create
- * @since 1.0, 2018-11-30 15:36:18
+ * @since 1.0, 2022-07-05 17:41:45
  */
 public class KoubeiMarketingCampaignMemberRelationUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6479851558983198556L;
+	private static final long serialVersionUID = 5288135311382586642L;
 
 	/**
 	 * 会员模版id

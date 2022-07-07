@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员模板失效
  *
  * @author auto create
- * @since 1.0, 2019-06-27 13:32:21
+ * @since 1.0, 2022-07-05 17:40:44
  */
 public class KoubeiMarketingCampaignMemberTemplateOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1847157326725119751L;
+	private static final long serialVersionUID = 8342631223329741975L;
 
 	/**
 	 * 会员模板id

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.invoice.fromisvnotify.modify response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-16 11:58:03
+ * @since 1.0, 2022-07-07 10:49:23
  */
 public class AlipayFundTransInvoiceFromisvnotifyModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2821384628663135536L;
+	private static final long serialVersionUID = 8675998976418295586L;
 
 	/** 
 	 * 票据详情页url

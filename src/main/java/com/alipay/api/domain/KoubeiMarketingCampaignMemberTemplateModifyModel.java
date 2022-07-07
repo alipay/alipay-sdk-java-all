@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改会员模板
  *
  * @author auto create
- * @since 1.0, 2019-04-02 15:52:38
+ * @since 1.0, 2022-07-05 17:41:01
  */
 public class KoubeiMarketingCampaignMemberTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6537378362399412467L;
+	private static final long serialVersionUID = 3197156229223455337L;
 
 	/**
 	 * 会员模板支持的端信息，

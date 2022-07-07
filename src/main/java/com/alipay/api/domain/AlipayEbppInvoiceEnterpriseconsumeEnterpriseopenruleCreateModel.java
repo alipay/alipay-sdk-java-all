@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则新增接口
  *
  * @author auto create
- * @since 1.0, 2022-06-09 15:13:42
+ * @since 1.0, 2022-07-04 14:58:59
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8132253621564538818L;
+	private static final long serialVersionUID = 2795483213837812569L;
 
 	/**
 	 * 企业ID
@@ -57,6 +57,12 @@ SINGLE:单笔开
 	 */
 	@ApiField("seller_type")
 	private String sellerType;
+
+	/**
+	 * 开票规则标记： DEFAULT-默认 EMPLOYEE_TITLE_FIRST-员工签约抬头优先于开票规则
+	 */
+	@ApiField("tag")
+	private String tag;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -105,6 +111,13 @@ SINGLE:单笔开
 	}
 	public void setSellerType(String sellerType) {
 		this.sellerType = sellerType;
+	}
+
+	public String getTag() {
+		return this.tag;
+	}
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
 
 }

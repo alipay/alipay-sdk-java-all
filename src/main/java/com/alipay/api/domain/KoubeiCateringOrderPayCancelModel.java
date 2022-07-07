@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 餐饮pos业务订单支付撤销
  *
  * @author auto create
- * @since 1.0, 2018-04-14 17:41:58
+ * @since 1.0, 2022-07-01 16:27:27
  */
 public class KoubeiCateringOrderPayCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8298149447187413632L;
+	private static final long serialVersionUID = 8653842158276556997L;
 
 	/**
 	 * 外部支付订单号,唯一标识本次支付的requestID

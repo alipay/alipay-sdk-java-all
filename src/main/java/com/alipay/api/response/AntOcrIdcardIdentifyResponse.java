@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.ocr.idcard.identify response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-27 14:25:54
+ * @since 1.0, 2022-07-04 13:56:29
  */
 public class AntOcrIdcardIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7181177717284369426L;
+	private static final long serialVersionUID = 8491487637274282656L;
 
 	/** 
 	 * 识别结果

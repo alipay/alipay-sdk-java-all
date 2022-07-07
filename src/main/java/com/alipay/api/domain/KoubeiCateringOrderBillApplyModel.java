@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮pos业务订单结账同步
  *
  * @author auto create
- * @since 1.0, 2018-05-28 13:30:38
+ * @since 1.0, 2022-07-01 16:26:50
  */
 public class KoubeiCateringOrderBillApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5751845386772262187L;
+	private static final long serialVersionUID = 5666188254781315646L;
 
 	/**
 	 * 应收金额
