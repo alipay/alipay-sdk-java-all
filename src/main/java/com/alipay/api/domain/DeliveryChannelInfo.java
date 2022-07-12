@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeliveryChannelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4296257795361675227L;
+	private static final long serialVersionUID = 6778835685972564682L;
 
 	/**
 	 * 展位码:boothCode表达的是具体渠道所属的展位码。例如：支付结果页PAY_RESULT

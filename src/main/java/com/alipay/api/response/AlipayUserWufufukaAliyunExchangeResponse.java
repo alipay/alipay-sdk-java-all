@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserWufufukaAliyunExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3341511362182614588L;
+	private static final long serialVersionUID = 6571667556858147114L;
 
 	/** 
 	 * 是否需要回退+否+业务方判断是否回退+true/false+支付宝判断+失败情况判断

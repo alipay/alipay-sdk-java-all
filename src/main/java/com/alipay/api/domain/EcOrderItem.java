@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码订单实体
  *
  * @author auto create
- * @since 1.0, 2022-06-28 13:56:15
+ * @since 1.0, 2022-07-12 14:21:46
  */
 public class EcOrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1771673228779922644L;
+	private static final long serialVersionUID = 7114975411599869859L;
 
 	/**
-	 * 企业ID
+	 * 共同账户ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -24,6 +24,18 @@ public class EcOrderItem extends AlipayObject {
 	 */
 	@ApiField("biz_out_no")
 	private String bizOutNo;
+
+	/**
+	 * 员工ID
+	 */
+	@ApiField("employee_id")
+	private String employeeId;
+
+	/**
+	 * 企业ID
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 创建时间
@@ -52,6 +64,8 @@ public class EcOrderItem extends AlipayObject {
 	/**
 	 * 订单类型
 METRO：地铁
+TAKEAWAY：外卖
+OTHER：其他
 	 */
 	@ApiField("order_type")
 	private String orderType;
@@ -86,6 +100,20 @@ METRO：地铁
 	}
 	public void setBizOutNo(String bizOutNo) {
 		this.bizOutNo = bizOutNo;
+	}
+
+	public String getEmployeeId() {
+		return this.employeeId;
+	}
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public String getGmtCreate() {

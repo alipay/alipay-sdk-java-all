@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控制度添加
  *
  * @author auto create
- * @since 1.0, 2022-06-30 23:09:50
+ * @since 1.0, 2022-07-11 21:27:15
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2137716264737813478L;
+	private static final long serialVersionUID = 4813569789958513762L;
 
 	/**
 	 * 企业ID
@@ -71,7 +71,7 @@ public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObj
 	private String expenseType;
 
 	/**
-	 * 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略， 枚举值：PERSONAL（全部个人账户支付）
+	 * 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略， 枚举值：PERSONAL（全部个人账户支付）, COMBINATION（因公账户和个人账户组合支付）
 	 */
 	@ApiField("payment_policy")
 	private String paymentPolicy;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发起文件存证上链请求
  *
  * @author auto create
- * @since 1.0, 2022-07-05 09:48:12
+ * @since 1.0, 2022-07-07 18:59:54
  */
 public class AlipayBossProdAntlegalchainFilenotaryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8563721582999555895L;
+	private static final long serialVersionUID = 8146818627311134581L;
 
 	/**
 	 * 业务应用英文名

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class TechriskTechriskTtYOnlineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4723761484643856827L;
+	private static final long serialVersionUID = 8349218337541157469L;
 
 	/** 
 	 * 1

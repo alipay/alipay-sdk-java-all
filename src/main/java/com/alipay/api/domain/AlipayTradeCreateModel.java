@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2022-06-29 20:59:37
+ * @since 1.0, 2022-07-12 10:37:10
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8243595474622195547L;
+	private static final long serialVersionUID = 4113726957735724551L;
 
 	/**
 	 * 支付宝店铺编号。

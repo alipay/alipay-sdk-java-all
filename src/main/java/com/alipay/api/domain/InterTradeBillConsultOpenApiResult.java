@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InterTradeBillConsultOpenApiResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6519716419899758336L;
+	private static final long serialVersionUID = 5231165729421867462L;
 
 	/**
 	 * 是否创建对手方计价明细

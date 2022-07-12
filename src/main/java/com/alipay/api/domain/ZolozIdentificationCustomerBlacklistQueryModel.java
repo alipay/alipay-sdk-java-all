@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZolozIdentificationCustomerBlacklistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4623663977889389196L;
+	private static final long serialVersionUID = 2252463462978448617L;
 
 	/**
 	 * 设备指纹

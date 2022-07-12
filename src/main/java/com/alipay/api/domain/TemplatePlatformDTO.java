@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplatePlatformDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4819163244951546867L;
+	private static final long serialVersionUID = 2526165949215568773L;
 
 	/**
 	 * 卡券所属业务线，如飞猪在其内部营销平台里，通过营销活动为新用户发放优惠券，那此处填写飞猪业务线：fliggy。支持自定义动态参数传值，但动态参数需定义为：$_r_biz_from_bu$。

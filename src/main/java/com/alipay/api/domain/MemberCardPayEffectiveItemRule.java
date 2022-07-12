@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MemberCardPayEffectiveItemRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6273373544139997465L;
+	private static final long serialVersionUID = 7424187956356492485L;
 
 	/**
 	 * 统一支付下单传递进来的商品编号，最大列表长度10000
