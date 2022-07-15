@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBusinessOrderRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4668144964788347581L;
+	private static final long serialVersionUID = 1137795194261913346L;
 
 	/** 
 	 * 退款时间。格式为：yyyy-MM-dd HH:mm:ss

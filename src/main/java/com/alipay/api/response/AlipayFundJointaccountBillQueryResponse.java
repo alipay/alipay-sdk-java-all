@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-13 16:01:46
+ * @since 1.0, 2022-07-14 17:50:01
  */
 public class AlipayFundJointaccountBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8189899358452618525L;
+	private static final long serialVersionUID = 5582713757226363356L;
 
 	/** 
 	 * 返回账单列表

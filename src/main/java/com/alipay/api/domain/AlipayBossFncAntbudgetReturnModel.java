@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预算释放
  *
  * @author auto create
- * @since 1.0, 2022-05-19 14:26:30
+ * @since 1.0, 2022-07-15 19:33:13
  */
 public class AlipayBossFncAntbudgetReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4611817979874869912L;
+	private static final long serialVersionUID = 7694131543987111627L;
 
 	/**
 	 * 预算申请金额，默认为人民币
@@ -38,6 +38,12 @@ public class AlipayBossFncAntbudgetReturnModel extends AlipayObject {
 	private String bizUkId;
 
 	/**
+	 * 币种编码
+	 */
+	@ApiField("currency_code")
+	private String currencyCode;
+
+	/**
 	 * 幂等字段
 	 */
 	@ApiField("idempotent_id")
@@ -51,6 +57,12 @@ BIZ_RETURN, 业务活动预算退回
 	 */
 	@ApiField("modify_type")
 	private String modifyType;
+
+	/**
+	 * 时区
+	 */
+	@ApiField("time_zone")
+	private String timeZone;
 
 	public String getAmount() {
 		return this.amount;
@@ -80,6 +92,13 @@ BIZ_RETURN, 业务活动预算退回
 		this.bizUkId = bizUkId;
 	}
 
+	public String getCurrencyCode() {
+		return this.currencyCode;
+	}
+	public void setCurrencyCode(String currencyCode) {
+		this.currencyCode = currencyCode;
+	}
+
 	public String getIdempotentId() {
 		return this.idempotentId;
 	}
@@ -92,6 +111,13 @@ BIZ_RETURN, 业务活动预算退回
 	}
 	public void setModifyType(String modifyType) {
 		this.modifyType = modifyType;
+	}
+
+	public String getTimeZone() {
+		return this.timeZone;
+	}
+	public void setTimeZone(String timeZone) {
+		this.timeZone = timeZone;
 	}
 
 }

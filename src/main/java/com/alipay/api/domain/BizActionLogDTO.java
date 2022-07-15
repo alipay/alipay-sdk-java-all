@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务活动预算申请记录
  *
  * @author auto create
- * @since 1.0, 2022-05-19 14:29:28
+ * @since 1.0, 2022-07-15 16:49:39
  */
 public class BizActionLogDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7179539237816551532L;
+	private static final long serialVersionUID = 5263419768846419496L;
 
 	/**
 	 * 金额
@@ -53,6 +53,12 @@ public class BizActionLogDTO extends AlipayObject {
 	 */
 	@ApiField("biz_uk_id")
 	private String bizUkId;
+
+	/**
+	 * 币种编码，不填默认156人民币
+	 */
+	@ApiField("currency_code")
+	private String currencyCode;
 
 	/**
 	 * 创建时间
@@ -122,6 +128,13 @@ public class BizActionLogDTO extends AlipayObject {
 	}
 	public void setBizUkId(String bizUkId) {
 		this.bizUkId = bizUkId;
+	}
+
+	public String getCurrencyCode() {
+		return this.currencyCode;
+	}
+	public void setCurrencyCode(String currencyCode) {
+		this.currencyCode = currencyCode;
 	}
 
 	public Date getGmtCreate() {

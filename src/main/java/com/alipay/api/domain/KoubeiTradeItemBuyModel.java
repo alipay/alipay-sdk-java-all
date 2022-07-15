@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeItemBuyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6466589757441937427L;
+	private static final long serialVersionUID = 3158293943559538387L;
 
 	/**
 	 * 预定用户的联系号码。要求合法的手机号码或者座机；该字段仅用于商品预定，商品预定场景为必填字段。如：0579-XXXXXXX；1526XXXXXXX

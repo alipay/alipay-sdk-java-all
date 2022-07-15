@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditbizorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-17 17:41:27
+ * @since 1.0, 2022-07-14 14:11:46
  */
 public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2481591433692754339L;
+	private static final long serialVersionUID = 6386253126191222749L;
 
 	/** 
 	 * 订单创建时间
@@ -22,7 +22,7 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	private Date createTime;
 
 	/** 
-	 * 芝麻先用后付开通协议号
+	 * 芝麻开通协议号
 	 */
 	@ApiField("credit_agreement_id")
 	private String creditAgreementId;
@@ -34,8 +34,7 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	private String creditBizOrderId;
 
 	/** 
-	 * 芝麻信用服务订单状态。INIT: 下单状态；TRADE_CLOSED: 订单取消或者交易全额退款； TRADE_FINISHED：扣款成功状态
-
+	 * 信用服务订单状态。INIT: 下单状态；TRADE_CLOSED: 订单取消或者交易全额退款； TRADE_FINISHED：扣款成功状态
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
@@ -47,7 +46,7 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	private String productCode;
 
 	/** 
-	 * 信用服务订单冻结金额
+	 * 信用服务订单金额
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
@@ -59,7 +58,7 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	private String tradeNo;
 
 	/** 
-	 * 芝麻服务ID
+	 * 芝麻信用服务ID
 	 */
 	@ApiField("zm_service_id")
 	private String zmServiceId;

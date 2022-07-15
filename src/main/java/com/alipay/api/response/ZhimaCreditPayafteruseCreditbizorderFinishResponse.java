@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditbizorder.finish response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-01 16:02:51
+ * @since 1.0, 2022-07-14 14:11:46
  */
 public class ZhimaCreditPayafteruseCreditbizorderFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6327962921936384355L;
+	private static final long serialVersionUID = 5317823149344431511L;
 
 	/** 
 	 * 信用服务订单号
@@ -21,7 +21,7 @@ public class ZhimaCreditPayafteruseCreditbizorderFinishResponse extends AlipayRe
 	private String creditBizOrderId;
 
 	/** 
-	 * 芝麻信用服务订单状态.INIT: 下单状态; TRADE_CLOSED: 订单取消或者交易全额退款； TRADE_FINISHED：扣款成功状态
+	 * 信用服务订单状态.INIT: 下单状态; TRADE_CLOSED: 订单取消或者交易全额退款； TRADE_FINISHED：扣款成功状态
 	 */
 	@ApiField("order_status")
 	private String orderStatus;

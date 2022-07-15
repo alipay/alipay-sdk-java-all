@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 先用后付记签约
  *
  * @author auto create
- * @since 1.0, 2022-03-31 16:38:04
+ * @since 1.0, 2022-07-14 13:59:50
  */
 public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8543376681736835632L;
+	private static final long serialVersionUID = 1512242893888773814L;
 
 	/**
-	 * 当用户进入芝麻先用后付开通页面后，点击左上角的回退按钮，中断开通流程，跳转回商户的页面地址。支持scheme协议。不传该链接时，默认返回上一级页面，由外部app唤起支付宝的情况，会返回支付宝首页。
+	 * 当用户进入信用服务开通/授权页面后，点击左上角的回退按钮，中断开通流程，跳转回商户的页面地址。支持scheme协议。不传该链接时，默认返回上一级页面，由外部app唤起支付宝的情况，会返回支付宝首页。
 	 */
 	@ApiField("cancel_back_link")
 	private String cancelBackLink;
@@ -44,19 +44,19 @@ public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject
 	private String outAgreementNo;
 
 	/**
-	 * 产品码，不填默认为 CREDIT_PAY_AFTER_USE。芝麻先用后付产品为CREDIT_PAY_AFTER_USE，其他产品请根据对应的技术支持文档传入。
+	 * 产品码，不填默认为 CREDIT_PAY_AFTER_USE。芝麻先享产品为CREDIT_PAY_AFTER_USE，其他产品请根据对应的技术支持文档传入。
 	 */
 	@ApiField("product_code")
 	private String productCode;
 
 	/**
-	 * 用户成功完成芝麻先用后付开通流程后，跳转回商户的页面地址。支持scheme协议。不传该链接时，默认返回上一级页面，由外部app 唤起支付宝的情况，会返回支付宝首页。
+	 * 用户成功完成信用服务开通/授权流程后，跳转回商户的页面地址。支持scheme协议。不传该链接时，默认返回上一级页面，由外部app 唤起支付宝的情况，会返回支付宝首页。
 	 */
 	@ApiField("return_back_link")
 	private String returnBackLink;
 
 	/**
-	 * 芝麻服务ID
+	 * 芝麻信用服务ID
 	 */
 	@ApiField("zm_service_id")
 	private String zmServiceId;

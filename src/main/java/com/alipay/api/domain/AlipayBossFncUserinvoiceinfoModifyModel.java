@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改用户开票资料
  *
  * @author auto create
- * @since 1.0, 2018-11-27 21:31:13
+ * @since 1.0, 2022-07-15 14:09:28
  */
 public class AlipayBossFncUserinvoiceinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4458147649634234625L;
+	private static final long serialVersionUID = 3262139511787574664L;
 
 	/**
 	 * 是否接受电子票 true:是，false:否

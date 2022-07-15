@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消预订单
  *
  * @author auto create
- * @since 1.0, 2021-04-30 16:46:37
+ * @since 1.0, 2022-07-13 12:14:10
  */
 public class AlipayOverseasOpenPreorderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2489372341773118274L;
+	private static final long serialVersionUID = 7646298951145188249L;
 
 	/**
 	 * 机构信息

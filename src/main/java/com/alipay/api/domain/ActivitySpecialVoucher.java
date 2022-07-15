@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 私域营销开放特价券详情
  *
  * @author auto create
- * @since 1.0, 2022-07-01 16:33:59
+ * @since 1.0, 2022-07-13 10:53:43
  */
 public class ActivitySpecialVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 7275363821284883267L;
+	private static final long serialVersionUID = 5375965472391942214L;
 
 	/**
 	 * 门槛金额。 限制： 币种为人民币，单位为元； 小数点以后最多保留两位； 取值范围:0.1<=x<= 50000; 说明： 该字段可不填，认为无门槛;

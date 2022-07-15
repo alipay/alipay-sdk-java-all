@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消订阅关系
  *
  * @author auto create
- * @since 1.0, 2021-04-09 17:40:04
+ * @since 1.0, 2022-07-14 16:23:49
  */
 public class AlipayOpenAppMessageTopicUnsubscribeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7572872672591565516L;
+	private static final long serialVersionUID = 5648633588817519645L;
 
 	/**
 	 * 授权令牌。

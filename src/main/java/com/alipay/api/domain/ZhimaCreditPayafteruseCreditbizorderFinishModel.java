@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 完结先享后付记账单
  *
  * @author auto create
- * @since 1.0, 2021-12-01 15:33:22
+ * @since 1.0, 2022-07-14 13:59:49
  */
 public class ZhimaCreditPayafteruseCreditbizorderFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1778588465422727318L;
+	private static final long serialVersionUID = 7511364766563355535L;
 
 	/**
 	 * 信用服务订单号
@@ -20,7 +20,9 @@ public class ZhimaCreditPayafteruseCreditbizorderFinishModel extends AlipayObjec
 	private String creditBizOrderId;
 
 	/**
-	 * 用户此订单是否守约。传true时，芝麻侧会显示用户该笔订单是守约完结的；传false时，芝麻侧会显示用户该笔订单取消。
+	 * 用户此订单是否守约。
+传true时，用户在芝麻信用-守约记录中，该笔订单是已守约状态；
+传false时，用户在芝麻信用-守约记录中，该笔订单是已取消状态。
 	 */
 	@ApiField("is_fulfilled")
 	private String isFulfilled;

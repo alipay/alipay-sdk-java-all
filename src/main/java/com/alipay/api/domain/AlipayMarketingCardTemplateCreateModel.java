@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡模板创建
  *
  * @author auto create
- * @since 1.0, 2022-02-15 10:43:58
+ * @since 1.0, 2022-07-15 10:53:47
  */
 public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5766772727781823645L;
+	private static final long serialVersionUID = 6331962977983761989L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -24,9 +24,7 @@ public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 	private String bizNoPrefix;
 
 	/**
-	 * 业务卡号后缀的长度，取值范围为[8,32]
-支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
-由于业务卡号最长不超过32位，所以biz_no_suffix_len <= 32 - biz_no_prefix的位数。注：biz_no_suffix_len一旦指定，在模板修改时不支持修改。
+	 * 业务卡号后缀长度，与biz_no_prefix配合，扣除系统预留2位，剩下对应seq长度。在生成卡号时，若seq位数不足前置补0，若seq位数超出则以实际为准。举例：设为10，其中8位用于生成seq，可覆盖1亿用户，即使seq超过1亿，生成卡号也不报错，但总长度不得超过32位。建议按需设置合适的值，以获得长度一致的业务卡号，建议长度20，性能更好。
 	 */
 	@ApiField("biz_no_suffix_len")
 	private String bizNoSuffixLen;
@@ -122,6 +120,12 @@ HUABEI_FUWU：花呗服务（只有需要花呗服务时，才需要加入该标
 	@ApiListField("shop_ids")
 	@ApiField("string")
 	private List<String> shopIds;
+
+	/**
+	 * spi_app_id:若使用openspi模式开卡，该字段必填，为实现spi.alipay.user.opencard.get接口的app_id
+	 */
+	@ApiField("spi_app_id")
+	private String spiAppId;
 
 	/**
 	 * 权益信息，
@@ -260,6 +264,13 @@ mdbarcode: 商户动态条码，扫码得商户自主传入的码值
 	}
 	public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
+	}
+
+	public String getSpiAppId() {
+		return this.spiAppId;
+	}
+	public void setSpiAppId(String spiAppId) {
+		this.spiAppId = spiAppId;
 	}
 
 	public List<TemplateBenefitInfoDTO> getTemplateBenefitInfo() {

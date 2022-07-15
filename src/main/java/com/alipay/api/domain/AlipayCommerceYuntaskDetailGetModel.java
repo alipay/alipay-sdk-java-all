@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询任务详情
  *
  * @author auto create
- * @since 1.0, 2022-03-24 09:48:55
+ * @since 1.0, 2022-07-13 13:27:12
  */
 public class AlipayCommerceYuntaskDetailGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6328878275762528859L;
+	private static final long serialVersionUID = 4452882792755989688L;
+
+	/**
+	 * 出资方pid，出资方模式下必传merchant_pid
+	 */
+	@ApiField("funder_id")
+	private String funderId;
 
 	/**
 	 * 商户pid
@@ -24,6 +30,13 @@ public class AlipayCommerceYuntaskDetailGetModel extends AlipayObject {
 	 */
 	@ApiField("task_template_id")
 	private String taskTemplateId;
+
+	public String getFunderId() {
+		return this.funderId;
+	}
+	public void setFunderId(String funderId) {
+		this.funderId = funderId;
+	}
 
 	public String getMerchantPid() {
 		return this.merchantPid;

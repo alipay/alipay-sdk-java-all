@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StuffStockOutOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 7234365853778552283L;
+	private static final long serialVersionUID = 1162835988981288643L;
 
 	/**
 	 * 市编号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融账单信息
  *
  * @author auto create
- * @since 1.0, 2019-02-28 19:04:45
+ * @since 1.0, 2022-07-14 10:46:48
  */
 public class SceneProdBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5899471612513121964L;
+	private static final long serialVersionUID = 2264853185863737977L;
 
 	/**
 	 * 账单类型，包括：正常，手续费，保证金 等类型，根据机构需求可以进行扩展。非必填，不填默认为正常。

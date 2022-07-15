@@ -7,23 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码订单查询
  *
  * @author auto create
- * @since 1.0, 2022-06-24 10:17:23
+ * @since 1.0, 2022-07-14 21:34:50
  */
 public class AlipayEbppInvoiceEcorderOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1876881469888588764L;
+	private static final long serialVersionUID = 5641396291255933379L;
 
 	/**
-	 * 企业ID
+	 * 共同账户ID，有企业ID可不传
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号，有企业ID可不传
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 企业ID
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 订单ID
@@ -49,6 +55,13 @@ public class AlipayEbppInvoiceEcorderOrderQueryModel extends AlipayObject {
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public String getOrderId() {

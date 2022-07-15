@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.overdraft.returnmoney response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-14 14:35:25
+ * @since 1.0, 2022-07-12 17:11:52
  */
 public class AlipayTradeOverdraftReturnmoneyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2676115626675149557L;
+	private static final long serialVersionUID = 3641155639393438368L;
+
+	/** 
+	 * 汇率（仅跨境追款执行成功后返回）
+	 */
+	@ApiField("exchange_rate")
+	private String exchangeRate;
 
 	/** 
 	 * 退款时上送的外部退款请求号
@@ -25,6 +31,24 @@ public class AlipayTradeOverdraftReturnmoneyResponse extends AlipayResponse {
 	 */
 	@ApiField("receive_account")
 	private String receiveAccount;
+
+	/** 
+	 * 追款人民币金额（仅追款执行成功后返回）
+	 */
+	@ApiField("return_amount")
+	private String returnAmount;
+
+	/** 
+	 * 追款外币金额（仅跨境追款执行成功后返回）
+	 */
+	@ApiField("return_foreign_amount")
+	private String returnForeignAmount;
+
+	/** 
+	 * 追款外币币种（仅跨境追款执行成功后返回）
+	 */
+	@ApiField("return_foreign_currency")
+	private String returnForeignCurrency;
 
 	/** 
 	 * 垫资追款结果。枚举值：
@@ -41,6 +65,13 @@ PROCESSING：追款中
 	@ApiField("success_time")
 	private String successTime;
 
+	public void setExchangeRate(String exchangeRate) {
+		this.exchangeRate = exchangeRate;
+	}
+	public String getExchangeRate( ) {
+		return this.exchangeRate;
+	}
+
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
@@ -53,6 +84,27 @@ PROCESSING：追款中
 	}
 	public String getReceiveAccount( ) {
 		return this.receiveAccount;
+	}
+
+	public void setReturnAmount(String returnAmount) {
+		this.returnAmount = returnAmount;
+	}
+	public String getReturnAmount( ) {
+		return this.returnAmount;
+	}
+
+	public void setReturnForeignAmount(String returnForeignAmount) {
+		this.returnForeignAmount = returnForeignAmount;
+	}
+	public String getReturnForeignAmount( ) {
+		return this.returnForeignAmount;
+	}
+
+	public void setReturnForeignCurrency(String returnForeignCurrency) {
+		this.returnForeignCurrency = returnForeignCurrency;
+	}
+	public String getReturnForeignCurrency( ) {
+		return this.returnForeignCurrency;
 	}
 
 	public void setReturnResult(String returnResult) {

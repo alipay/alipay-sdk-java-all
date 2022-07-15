@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻企业信用征信数据服务非实时创建
  *
  * @author auto create
- * @since 1.0, 2022-04-02 14:36:32
+ * @since 1.0, 2022-07-14 15:26:54
  */
 public class ZhimaCreditEpCreditlinkAuthCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3438591432386699964L;
+	private static final long serialVersionUID = 3789469817978476497L;
 
 	/**
 	 * 企业可信链接协议列表
@@ -24,7 +24,7 @@ public class ZhimaCreditEpCreditlinkAuthCreateModel extends AlipayObject {
 	private List<CreditLinkAgreementInfo> agreementInfoList;
 
 	/**
-	 * 授权商户ID，如果为空则使用merchant_request_id填充
+	 * 授权商户ID。针对授权方与取数方不一致的场景，传入取数方的商户ID。未传入时会默认使用接口发起方的商户ID进行填充
 	 */
 	@ApiField("auth_merchant_id")
 	private String authMerchantId;

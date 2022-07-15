@@ -8,80 +8,80 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.tips.statistic.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-25 21:56:43
+ * @since 1.0, 2022-07-14 16:36:47
  */
 public class AlipayOpenMiniTipsStatisticQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4483396731931571758L;
+	private static final long serialVersionUID = 5385496718386948115L;
 
 	/** 
-	 * 昨日小程序收藏人数
+	 * 昨日（接口调用当日的前一天）小程序收藏人数，时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("app_collect_cnt")
 	private Long appCollectCnt;
 
 	/** 
-	 * 昨日小程序访问人数
+	 * 昨日（接口调用当日的前一天）小程序访问人数。当小程序日访问量为0，或以活动维度查询，或时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("app_uv")
 	private Long appUv;
 
 	/** 
-	 * 收藏文案内容（仅以app维度查询时为空）
+	 * 收藏文案内容（仅以app维度查询时为空）,仅活动维度查询成功时返回。
 	 */
 	@ApiField("delivery_content")
 	private String deliveryContent;
 
 	/** 
-	 * 收藏引导投放活动ID（仅以app维度查询时为空）
+	 * 收藏引导投放活动ID（仅以app维度查询时为空）,仅活动维度查询成功时返回。
 	 */
 	@ApiField("delivery_id")
 	private String deliveryId;
 
 	/** 
-	 * 昨日收藏引导文案收藏转化率，数据为小数字符串类型，取小数点后两位，单位为百分比。
+	 * 昨日（接口调用当日的前一天）收藏引导文案收藏转化率，数据为小数字符串类型，取小数点后两位，单位为百分比。小程序曝光数为0，或时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("tips_collect_rate")
 	private String tipsCollectRate;
 
 	/** 
-	 * 昨日收藏引导文案收藏用户数
+	 * 昨日（接口调用当日的前一天）收藏引导文案收藏用户数，时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("tips_collect_uv")
 	private Long tipsCollectUv;
 
 	/** 
-	 * 昨日收藏引导文案曝光用户数
+	 * 昨日（接口调用当日的前一天）收藏引导文案曝光用户数，时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("tips_expo_uv")
 	private Long tipsExpoUv;
 
 	/** 
-	 * 截止到当日累计小程序收藏人数
+	 * 时间段内累计小程序收藏人数，时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("total_app_collect_cnt")
 	private Long totalAppCollectCnt;
 
 	/** 
-	 * 时间段内累计小程序访问人数
+	 * 时间段内累计小程序访问人数。当小程序日访问量为0，或以活动维度查询，或时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("total_app_uv")
 	private Long totalAppUv;
 
 	/** 
-	 * 时间段内收藏引导文案收藏转化率，数据为小数字符串类型，取小数点后两位，单位为百分比。
+	 * 时间段内收藏引导文案收藏转化率，数据为小数字符串类型，取小数点后两位，单位为百分比。小程序曝光数为0，或时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("total_tips_collect_rate")
 	private String totalTipsCollectRate;
 
 	/** 
-	 * 时间段内累计收藏引导文案收藏用户数
+	 * 时间段内累计收藏引导文案收藏用户数，时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("total_tips_collect_uv")
 	private Long totalTipsCollectUv;
 
 	/** 
-	 * 时间段内累计收藏引导文案曝光用户数
+	 * 时间段内累计收藏引导文案曝光用户数，仅当小程序/活动投放活动时返回。时间内未创建投放活动，则响应时不传出参数。
 	 */
 	@ApiField("total_tips_expo_uv")
 	private Long totalTipsExpoUv;

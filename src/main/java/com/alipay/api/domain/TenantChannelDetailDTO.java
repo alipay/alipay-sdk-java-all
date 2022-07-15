@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租户渠道信息
  *
  * @author auto create
- * @since 1.0, 2022-07-05 14:38:51
+ * @since 1.0, 2022-07-13 14:14:17
  */
 public class TenantChannelDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3529924996193963224L;
+	private static final long serialVersionUID = 2639994253147294744L;
 
 	/**
 	 * 渠道code + 唯一 + 渠道列表查询 + 数据库

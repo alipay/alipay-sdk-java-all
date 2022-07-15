@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多方安全风控风险咨询服务
  *
  * @author auto create
- * @since 1.0, 2022-06-17 14:18:45
+ * @since 1.0, 2022-07-14 11:06:50
  */
 public class AlipaySecurityRiskGravityConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3753131246651583165L;
+	private static final long serialVersionUID = 2174612626919381294L;
 
 	/**
 	 * 参数名：client_id+是否唯一：无需唯一+应用场景：已鉴权的调用方id，多方安全风控用该ID对调用方可调用的数据产品鉴权+枚举：无枚举+如何获取：多方安全风控与调用方协商+特殊说明：无

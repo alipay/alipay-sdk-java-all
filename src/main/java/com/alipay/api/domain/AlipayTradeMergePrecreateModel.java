@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeMergePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284591254518434873L;
+	private static final long serialVersionUID = 3527235672973772141L;
 
 	/**
 	 * 子订单详情
@@ -34,7 +34,7 @@ public class AlipayTradeMergePrecreateModel extends AlipayObject {
 格式为yyyy-MM-dd HH:mm:ss。
 
 注：
-1. 如果已经和支付宝约定要求子订单明细必须同时支付成功或者同时支付失败，则不需要填入该字段。
+1. 如果已经和支付宝约定要求子订单明细必须同时成功同时失败，则不需要填入该字段，默认为15分钟，此场景下如果需要支持自定义超时时间，请联系技术小二。
 2. time_expire和timeout_express两者只需传入一个或者都不传，两者均传入时，优先使用time_expire。
 	 */
 	@ApiField("time_expire")

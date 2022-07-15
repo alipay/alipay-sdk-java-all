@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 待开票申请信息
  *
  * @author auto create
- * @since 1.0, 2022-06-22 09:56:23
+ * @since 1.0, 2022-07-14 17:43:04
  */
 public class InvoiceApplyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4248947728998321967L;
+	private static final long serialVersionUID = 5394147625127274643L;
 
 	/**
 	 * 合计金额（申请开票总金额，含税）
@@ -31,6 +33,18 @@ public class InvoiceApplyDTO extends AlipayObject {
 	 */
 	@ApiField("batch_id")
 	private String batchId;
+
+	/**
+	 * 该申请批次对应的实际账单对应结束时间
+	 */
+	@ApiField("gmt_biz_end")
+	private Date gmtBizEnd;
+
+	/**
+	 * 该申请批次对应的实际账单对应起始时间
+	 */
+	@ApiField("gmt_biz_start")
+	private Date gmtBizStart;
 
 	/**
 	 * 开票（介质）类型
@@ -126,6 +140,20 @@ red: 红票
 	}
 	public void setBatchId(String batchId) {
 		this.batchId = batchId;
+	}
+
+	public Date getGmtBizEnd() {
+		return this.gmtBizEnd;
+	}
+	public void setGmtBizEnd(Date gmtBizEnd) {
+		this.gmtBizEnd = gmtBizEnd;
+	}
+
+	public Date getGmtBizStart() {
+		return this.gmtBizStart;
+	}
+	public void setGmtBizStart(Date gmtBizStart) {
+		this.gmtBizStart = gmtBizStart;
 	}
 
 	public String getInvoiceKind() {

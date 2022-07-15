@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.ocr.server.detect request
  * 
  * @author auto create
- * @since 1.0, 2022-07-12 10:56:46
+ * @since 1.0, 2022-07-13 18:56:43
  */
 public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements AlipayRequest<DatadigitalFincloudGeneralsaasOcrServerDetectResponse> {
 
@@ -23,11 +23,23 @@ public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements Ali
 	 */
 	private String ocrType;
 
+	/** 
+	* 客户业务单据号，请保证幂等性。
+	 */
+	private String outerOrderNo;
+
 	public void setOcrType(String ocrType) {
 		this.ocrType = ocrType;
 	}
 	public String getOcrType() {
 		return this.ocrType;
+	}
+
+	public void setOuterOrderNo(String outerOrderNo) {
+		this.outerOrderNo = outerOrderNo;
+	}
+	public String getOuterOrderNo() {
+		return this.outerOrderNo;
 	}
 	private String terminalType;
 	private String terminalInfo;	
@@ -92,6 +104,7 @@ public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements Ali
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("ocr_type", this.ocrType);
+		txtParams.put("outer_order_no", this.outerOrderNo);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

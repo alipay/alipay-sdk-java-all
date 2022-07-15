@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务活动预算申请Request
  *
  * @author auto create
- * @since 1.0, 2022-05-19 14:29:21
+ * @since 1.0, 2022-07-15 16:20:49
  */
 public class ApplyBizBudgetRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 2557478994184419683L;
+	private static final long serialVersionUID = 7699464534141863611L;
 
 	/**
-	 * 预算申请金额，人民币
+	 * 预算申请金额
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -58,6 +58,18 @@ APPEND_TO:增加到，将原有基础增加到100
 	 */
 	@ApiField("biz_uk_id")
 	private String bizUkId;
+
+	/**
+	 * 币种编码，如果不填写，默认为156人民币
+	 */
+	@ApiField("currency_code")
+	private String currencyCode;
+
+	/**
+	 * 时区
+	 */
+	@ApiField("time_zone")
+	private String timeZone;
 
 	public String getAmount() {
 		return this.amount;
@@ -106,6 +118,20 @@ APPEND_TO:增加到，将原有基础增加到100
 	}
 	public void setBizUkId(String bizUkId) {
 		this.bizUkId = bizUkId;
+	}
+
+	public String getCurrencyCode() {
+		return this.currencyCode;
+	}
+	public void setCurrencyCode(String currencyCode) {
+		this.currencyCode = currencyCode;
+	}
+
+	public String getTimeZone() {
+		return this.timeZone;
+	}
+	public void setTimeZone(String timeZone) {
+		this.timeZone = timeZone;
 	}
 
 }

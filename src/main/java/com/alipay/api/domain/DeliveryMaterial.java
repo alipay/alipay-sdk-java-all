@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放素材信息
  *
  * @author auto create
- * @since 1.0, 2022-07-08 14:32:33
+ * @since 1.0, 2022-07-13 15:41:08
  */
 public class DeliveryMaterial extends AlipayObject {
 
-	private static final long serialVersionUID = 6812914219524333865L;
+	private static final long serialVersionUID = 1255264959567824795L;
 
 	/**
 	 * 单素材对象

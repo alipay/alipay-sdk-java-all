@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.antbudget.return request
  * 
  * @author auto create
- * @since 1.0, 2022-05-19 14:26:30
+ * @since 1.0, 2022-07-15 19:36:45
  */
 public class AlipayBossFncAntbudgetReturnRequest implements AlipayRequest<AlipayBossFncAntbudgetReturnResponse> {
 

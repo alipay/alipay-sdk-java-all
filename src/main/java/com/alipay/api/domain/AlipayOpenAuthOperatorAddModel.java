@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加蚂蚁操作员
  *
  * @author auto create
- * @since 1.0, 2022-05-12 17:07:29
+ * @since 1.0, 2022-07-14 16:35:24
  */
 public class AlipayOpenAuthOperatorAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8497488418269379543L;
+	private static final long serialVersionUID = 6722291464986397218L;
 
 	/**
 	 * 添加蚂蚁操作员参数

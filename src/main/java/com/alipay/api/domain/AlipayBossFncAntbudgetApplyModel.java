@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预算申请
  *
  * @author auto create
- * @since 1.0, 2022-05-19 14:25:56
+ * @since 1.0, 2022-07-15 19:33:12
  */
 public class AlipayBossFncAntbudgetApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2883618699854432749L;
+	private static final long serialVersionUID = 6194712624674477374L;
 
 	/**
 	 * 申请参数列表
