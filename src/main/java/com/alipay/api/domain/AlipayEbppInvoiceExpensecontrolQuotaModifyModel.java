@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改额度
  *
  * @author auto create
- * @since 1.0, 2022-06-22 20:53:24
+ * @since 1.0, 2022-07-18 11:03:59
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3548227819124866735L;
+	private static final long serialVersionUID = 7337777763312699377L;
 
 	/**
 	 * 企业ID
@@ -42,6 +42,12 @@ DELETE-余额删除
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 企业ID
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 外部操作幂等ID（接入方接口调用幂等控制ID）
@@ -87,6 +93,13 @@ DELETE-余额删除
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public String getOuterSourceId() {

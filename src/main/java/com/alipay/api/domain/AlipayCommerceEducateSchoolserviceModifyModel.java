@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园搜索服务提报
  *
  * @author auto create
- * @since 1.0, 2022-05-13 14:38:51
+ * @since 1.0, 2022-07-18 15:00:35
  */
 public class AlipayCommerceEducateSchoolserviceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4569525181395318323L;
+	private static final long serialVersionUID = 5814591396146831359L;
 
 	/**
 	 * 服务关联的内容id
@@ -30,6 +30,12 @@ public class AlipayCommerceEducateSchoolserviceModifyModel extends AlipayObject 
 	 */
 	@ApiField("out_service_id")
 	private String outServiceId;
+
+	/**
+	 * 学校名称
+	 */
+	@ApiField("school_name")
+	private String schoolName;
 
 	/**
 	 * 服务code
@@ -74,6 +80,13 @@ public class AlipayCommerceEducateSchoolserviceModifyModel extends AlipayObject 
 	}
 	public void setOutServiceId(String outServiceId) {
 		this.outServiceId = outServiceId;
+	}
+
+	public String getSchoolName() {
+		return this.schoolName;
+	}
+	public void setSchoolName(String schoolName) {
+		this.schoolName = schoolName;
 	}
 
 	public String getServiceAppId() {

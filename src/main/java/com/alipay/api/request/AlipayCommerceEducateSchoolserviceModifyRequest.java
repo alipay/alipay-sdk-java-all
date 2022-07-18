@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.schoolservice.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-05-13 14:38:51
+ * @since 1.0, 2022-07-18 15:01:45
  */
 public class AlipayCommerceEducateSchoolserviceModifyRequest implements AlipayRequest<AlipayCommerceEducateSchoolserviceModifyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.activity.voucher.publish request
  * 
  * @author auto create
- * @since 1.0, 2022-02-23 14:12:31
+ * @since 1.0, 2022-07-17 18:39:35
  */
 public class AlipayMarketingActivityVoucherPublishRequest implements AlipayRequest<AlipayMarketingActivityVoucherPublishResponse> {
 

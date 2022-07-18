@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 私域营销开放兑换券详情
  *
  * @author auto create
- * @since 1.0, 2022-07-13 10:53:43
+ * @since 1.0, 2022-07-18 14:15:56
  */
 public class ActivityExchangeVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 4673923736393722739L;
+	private static final long serialVersionUID = 7281731287464432471L;
 
 	/**
 	 * 券的价值 限制： 币种为人民币，单位为元。小数点以后最多保留两位。 取值范围:0.1<=x<=3000

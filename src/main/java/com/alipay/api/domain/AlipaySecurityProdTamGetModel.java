@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供华为调用以获取TA的API
  *
  * @author auto create
- * @since 1.0, 2020-03-05 00:08:29
+ * @since 1.0, 2022-07-18 14:38:41
  */
 public class AlipaySecurityProdTamGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8669891834748677835L;
+	private static final long serialVersionUID = 5763539686193781633L;
 
 	/**
 	 * business_id业务流水号+唯一+用于和OEM厂商服务端唯一确定一笔业务，OEM厂商服务端请求TA数据时的请求需要带上这个id+由支付宝项目ifaatam生成发给OEM厂商服务端，OEM厂商服务端在后续请求中带上+64位的唯一值

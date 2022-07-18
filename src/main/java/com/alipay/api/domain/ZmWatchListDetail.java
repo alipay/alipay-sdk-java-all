@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZmWatchListDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6831847936555854383L;
+	private static final long serialVersionUID = 6693242619849759792L;
 
 	/**
 	 * 风险信息行业编码

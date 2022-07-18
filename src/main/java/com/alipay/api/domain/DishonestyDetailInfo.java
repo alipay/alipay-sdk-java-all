@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DishonestyDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8811952273829481328L;
+	private static final long serialVersionUID = 5675785577699564193L;
 
 	/**
 	 * 被执行人行为具体情况

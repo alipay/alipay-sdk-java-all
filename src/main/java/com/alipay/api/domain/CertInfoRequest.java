@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CertInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1364463943273948528L;
+	private static final long serialVersionUID = 1129127394672246243L;
 
 	/**
 	 * 用户证件名称MD5值。

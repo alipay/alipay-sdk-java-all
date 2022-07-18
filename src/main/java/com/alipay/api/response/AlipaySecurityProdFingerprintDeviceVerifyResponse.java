@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.fingerprint.device.verify response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 21:46:28
+ * @since 1.0, 2022-07-18 14:40:08
  */
 public class AlipaySecurityProdFingerprintDeviceVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1243768662357796249L;
+	private static final long serialVersionUID = 8497838826424888871L;
 
 	
 

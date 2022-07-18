@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingDataSceneTravelGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3584444194366564761L;
+	private static final long serialVersionUID = 3855838183124949865L;
 
 	/** 
 	 * 场景营销内容分组场景营

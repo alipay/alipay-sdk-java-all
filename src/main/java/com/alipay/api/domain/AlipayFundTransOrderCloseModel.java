@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1597365775395989529L;
+	private static final long serialVersionUID = 4887667541721514278L;
 
 	/**
 	 * 描述特定的业务场景，开放网关必须要的参数，在资金这里统一识别配置

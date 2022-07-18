@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁操作员联系方式信息
  *
  * @author auto create
- * @since 1.0, 2022-05-17 19:54:51
+ * @since 1.0, 2022-07-18 10:10:50
  */
 public class OperatorContactVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1366164318156344794L;
+	private static final long serialVersionUID = 2875487552139129755L;
 
 	/**
 	 * 联系方式类型，取值参考OperatorContactTypeEnum

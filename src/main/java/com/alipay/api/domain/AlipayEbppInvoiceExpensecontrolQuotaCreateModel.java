@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建额度
  *
  * @author auto create
- * @since 1.0, 2022-06-22 20:52:53
+ * @since 1.0, 2022-07-18 13:57:31
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2315173426446154929L;
+	private static final long serialVersionUID = 2857238656345124236L;
 
 	/**
 	 * 企业ID
@@ -38,6 +38,12 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
+
+	/**
+	 * 企业ID
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 外部操作幂等ID（接入方接口调用幂等控制ID）
@@ -116,6 +122,13 @@ RULE_GROUP_AGGREGATION（规则聚合维度
 	}
 	public void setEffectiveStartDate(Date effectiveStartDate) {
 		this.effectiveStartDate = effectiveStartDate;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public String getOuterSourceId() {

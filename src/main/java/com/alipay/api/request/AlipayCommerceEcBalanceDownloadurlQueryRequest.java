@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.balance.downloadurl.query request
  * 
  * @author auto create
- * @since 1.0, 2022-07-15 15:51:46
+ * @since 1.0, 2022-07-18 11:16:57
  */
 public class AlipayCommerceEcBalanceDownloadurlQueryRequest implements AlipayRequest<AlipayCommerceEcBalanceDownloadurlQueryResponse> {
 

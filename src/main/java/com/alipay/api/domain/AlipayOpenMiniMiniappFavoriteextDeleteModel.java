@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniMiniappFavoriteextDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2264869567864973949L;
+	private static final long serialVersionUID = 2581833518568134738L;
 
 	/**
 	 * 小程序收藏业务类型，需要申请分配

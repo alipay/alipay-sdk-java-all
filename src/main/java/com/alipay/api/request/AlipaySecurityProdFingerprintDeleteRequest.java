@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.fingerprint.delete request
  * 
  * @author auto create
- * @since 1.0, 2021-10-25 11:15:57
+ * @since 1.0, 2022-07-18 14:43:17
  */
 public class AlipaySecurityProdFingerprintDeleteRequest implements AlipayRequest<AlipaySecurityProdFingerprintDeleteResponse> {
 

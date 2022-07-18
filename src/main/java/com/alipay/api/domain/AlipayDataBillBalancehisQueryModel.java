@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillBalancehisQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3797834628983132448L;
+	private static final long serialVersionUID = 7243311492332251376L;
 
 	/**
 	 * 查询指定自然日的起初余额和期末余额，biz_date与biz_month传入参数互斥

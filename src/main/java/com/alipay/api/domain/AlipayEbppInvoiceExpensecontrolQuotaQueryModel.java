@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询额度
  *
  * @author auto create
- * @since 1.0, 2022-06-22 20:53:43
+ * @since 1.0, 2022-07-18 13:57:09
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5228656958837423326L;
+	private static final long serialVersionUID = 7298373419257378596L;
 
 	/**
 	 * 企业ID
@@ -27,6 +27,12 @@ public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 企业ID
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 余额所属者ID
@@ -92,6 +98,13 @@ RULE_GROUP_AGGREGATION（规则聚合维度）
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public String getOwnerId() {

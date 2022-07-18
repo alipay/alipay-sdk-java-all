@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GFAOpenAPICommand extends AlipayObject {
 
-	private static final long serialVersionUID = 7213459339364829862L;
+	private static final long serialVersionUID = 2134554664159594428L;
 
 	/**
 	 * 业财受理单id

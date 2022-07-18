@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 指纹校验初始化
  *
  * @author auto create
- * @since 1.0, 2021-10-25 11:16:21
+ * @since 1.0, 2022-07-18 14:42:56
  */
 public class AlipaySecurityProdFingerprintVerifyInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1483693316561275221L;
+	private static final long serialVersionUID = 5468821579853777671L;
 
 	/**
 	 * IFAA协议的版本，目前为2.0

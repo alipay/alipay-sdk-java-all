@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备公钥密钥查询服务
  *
  * @author auto create
- * @since 1.0, 2021-10-25 11:17:21
+ * @since 1.0, 2022-07-18 14:42:00
  */
 public class AlipaySecurityProdIfaaDevicepubkeyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8592695569647775724L;
+	private static final long serialVersionUID = 3333638493497177694L;
 
 	/**
 	 * 用于协商ECDH的publickey，base6编码

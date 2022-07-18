@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 校园搜索内容提报
  *
  * @author auto create
- * @since 1.0, 2022-05-13 14:39:21
+ * @since 1.0, 2022-07-18 15:00:36
  */
 public class AlipayCommerceEducateSchoolcontentModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5782118584186369631L;
+	private static final long serialVersionUID = 4522942582574489353L;
+
+	/**
+	 * 自动关联服务（默认true，推荐使用false）
+	 */
+	@ApiField("auto_bind")
+	private Boolean autoBind;
 
 	/**
 	 * 来源应用ID
@@ -66,6 +72,13 @@ public class AlipayCommerceEducateSchoolcontentModifyModel extends AlipayObject 
 	private String schoolName;
 
 	/**
+	 * 已上架服务id列表
+	 */
+	@ApiListField("service_ids")
+	@ApiField("string")
+	private List<String> serviceIds;
+
+	/**
 	 * 来源ID
 	 */
 	@ApiField("source_type")
@@ -84,6 +97,13 @@ public class AlipayCommerceEducateSchoolcontentModifyModel extends AlipayObject 
 	@ApiListField("video_data")
 	@ApiField("string")
 	private List<String> videoData;
+
+	public Boolean getAutoBind() {
+		return this.autoBind;
+	}
+	public void setAutoBind(Boolean autoBind) {
+		this.autoBind = autoBind;
+	}
 
 	public String getCarrierAppId() {
 		return this.carrierAppId;
@@ -139,6 +159,13 @@ public class AlipayCommerceEducateSchoolcontentModifyModel extends AlipayObject 
 	}
 	public void setSchoolName(String schoolName) {
 		this.schoolName = schoolName;
+	}
+
+	public List<String> getServiceIds() {
+		return this.serviceIds;
+	}
+	public void setServiceIds(List<String> serviceIds) {
+		this.serviceIds = serviceIds;
 	}
 
 	public String getSourceType() {
