@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户验证受理接口
  *
  * @author auto create
- * @since 1.0, 2021-04-12 12:04:04
+ * @since 1.0, 2022-07-22 13:44:12
  */
 public class AlipayAccountFinriskCompanyVerifyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1263352397567615752L;
+	private static final long serialVersionUID = 3219657965763782413L;
 
 	/**
 	 * 请求系统

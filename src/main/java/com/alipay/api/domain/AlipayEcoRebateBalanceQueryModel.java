@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoRebateBalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3136789317941911485L;
+	private static final long serialVersionUID = 4612169552124224712L;
 
 	/**
 	 * 商户侧唯一商品id，查询该商品的返利信息。

@@ -9,14 +9,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单券修改
  *
  * @author auto create
- * @since 1.0, 2022-07-09 15:20:35
+ * @since 1.0, 2022-07-21 13:34:48
  */
 public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3569587415811174133L;
+	private static final long serialVersionUID = 3357517833773793784L;
 
 	/**
-	 * 活动id
+	 * 活动基础信息
+	 */
+	@ApiField("activity_base_info")
+	private ActivityBaseInfo activityBaseInfo;
+
+	/**
+	 * 活动id1
 	 */
 	@ApiField("activity_id")
 	private String activityId;
@@ -32,6 +38,16 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	 */
 	@ApiField("customer_guide")
 	private CustomerGuideModify customerGuide;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 外部业务单号，用作幂等控制。
@@ -63,10 +79,40 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	private Date publishStartTime;
 
 	/**
+	 * 券可用范围
+	 */
+	@ApiField("voucher_available_scope_info")
+	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
+
+	/**
+	 * 可用范围修改类型。 ADD:增加可用范围 REMOVE:减少可用范围 MODIFY_ALL:修改全量可用范围
+	 */
+	@ApiField("voucher_available_scope_modify_type")
+	private String voucherAvailableScopeModifyType;
+
+	/**
+	 * 券引导详情
+	 */
+	@ApiField("voucher_customer_guide_info")
+	private VoucherCustomerGuideInfo voucherCustomerGuideInfo;
+
+	/**
 	 * 券展示信息。该值为空表示不修改。
 	 */
 	@ApiField("voucher_display_info")
 	private VoucherDisplayInfoModify voucherDisplayInfo;
+
+	/**
+	 * 券展示信息
+	 */
+	@ApiField("voucher_display_pattern_info")
+	private VoucherDisplayPatternInfo voucherDisplayPatternInfo;
+
+	/**
+	 * 券发放
+	 */
+	@ApiField("voucher_send_mode_info")
+	private VoucherSendModeInfo voucherSendModeInfo;
 
 	/**
 	 * 券发放规则
@@ -79,6 +125,19 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	 */
 	@ApiField("voucher_use_rule")
 	private VoucherUseRuleModify voucherUseRule;
+
+	/**
+	 * 券核销规则
+	 */
+	@ApiField("voucher_use_rule_info")
+	private VoucherUseRuleInfo voucherUseRuleInfo;
+
+	public ActivityBaseInfo getActivityBaseInfo() {
+		return this.activityBaseInfo;
+	}
+	public void setActivityBaseInfo(ActivityBaseInfo activityBaseInfo) {
+		this.activityBaseInfo = activityBaseInfo;
+	}
 
 	public String getActivityId() {
 		return this.activityId;
@@ -99,6 +158,13 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	}
 	public void setCustomerGuide(CustomerGuideModify customerGuide) {
 		this.customerGuide = customerGuide;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getOutBizNo() {
@@ -122,11 +188,46 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 		this.publishStartTime = publishStartTime;
 	}
 
+	public VoucherAvailableScopeInfo getVoucherAvailableScopeInfo() {
+		return this.voucherAvailableScopeInfo;
+	}
+	public void setVoucherAvailableScopeInfo(VoucherAvailableScopeInfo voucherAvailableScopeInfo) {
+		this.voucherAvailableScopeInfo = voucherAvailableScopeInfo;
+	}
+
+	public String getVoucherAvailableScopeModifyType() {
+		return this.voucherAvailableScopeModifyType;
+	}
+	public void setVoucherAvailableScopeModifyType(String voucherAvailableScopeModifyType) {
+		this.voucherAvailableScopeModifyType = voucherAvailableScopeModifyType;
+	}
+
+	public VoucherCustomerGuideInfo getVoucherCustomerGuideInfo() {
+		return this.voucherCustomerGuideInfo;
+	}
+	public void setVoucherCustomerGuideInfo(VoucherCustomerGuideInfo voucherCustomerGuideInfo) {
+		this.voucherCustomerGuideInfo = voucherCustomerGuideInfo;
+	}
+
 	public VoucherDisplayInfoModify getVoucherDisplayInfo() {
 		return this.voucherDisplayInfo;
 	}
 	public void setVoucherDisplayInfo(VoucherDisplayInfoModify voucherDisplayInfo) {
 		this.voucherDisplayInfo = voucherDisplayInfo;
+	}
+
+	public VoucherDisplayPatternInfo getVoucherDisplayPatternInfo() {
+		return this.voucherDisplayPatternInfo;
+	}
+	public void setVoucherDisplayPatternInfo(VoucherDisplayPatternInfo voucherDisplayPatternInfo) {
+		this.voucherDisplayPatternInfo = voucherDisplayPatternInfo;
+	}
+
+	public VoucherSendModeInfo getVoucherSendModeInfo() {
+		return this.voucherSendModeInfo;
+	}
+	public void setVoucherSendModeInfo(VoucherSendModeInfo voucherSendModeInfo) {
+		this.voucherSendModeInfo = voucherSendModeInfo;
 	}
 
 	public VoucherSendRuleDetailModify getVoucherSendRule() {
@@ -141,6 +242,13 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	}
 	public void setVoucherUseRule(VoucherUseRuleModify voucherUseRule) {
 		this.voucherUseRule = voucherUseRule;
+	}
+
+	public VoucherUseRuleInfo getVoucherUseRuleInfo() {
+		return this.voucherUseRuleInfo;
+	}
+	public void setVoucherUseRuleInfo(VoucherUseRuleInfo voucherUseRuleInfo) {
+		this.voucherUseRuleInfo = voucherUseRuleInfo;
 	}
 
 }

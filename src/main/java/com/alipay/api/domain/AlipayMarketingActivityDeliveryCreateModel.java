@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放创建
  *
  * @author auto create
- * @since 1.0, 2022-07-17 17:53:59
+ * @since 1.0, 2022-07-22 11:41:15
  */
 public class AlipayMarketingActivityDeliveryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2446129242932778366L;
+	private static final long serialVersionUID = 8374672887471374643L;
 
 	/**
 	 * 服务商代商户创建投放必选。
@@ -55,6 +55,16 @@ bussinessType设置为ISV_FOR_MERCHANT。
 	 */
 	@ApiField("delivery_target_rule")
 	private DeliveryTargetRule deliveryTargetRule;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 外部业务单号，用作幂等控制。 幂等作用：请求返回与上一次相同的结果。 外部接入方需保证业务单号唯一。
@@ -102,6 +112,13 @@ bussinessType设置为ISV_FOR_MERCHANT。
 	}
 	public void setDeliveryTargetRule(DeliveryTargetRule deliveryTargetRule) {
 		this.deliveryTargetRule = deliveryTargetRule;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getOutBizNo() {

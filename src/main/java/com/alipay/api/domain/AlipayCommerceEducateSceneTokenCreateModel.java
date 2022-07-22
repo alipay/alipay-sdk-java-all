@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育场景token生成处理器
  *
  * @author auto create
- * @since 1.0, 2022-04-27 22:33:36
+ * @since 1.0, 2022-07-20 21:04:12
  */
 public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5775583656331272728L;
+	private static final long serialVersionUID = 5391754226987797229L;
 
 	/**
 	 * 证件号码
@@ -38,13 +38,13 @@ public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 	private String parentPhone;
 
 	/**
-	 * 学校外标（即学校的统一信用编码）
+	 * 学校外标
 	 */
 	@ApiField("school_std_code")
 	private String schoolStdCode;
 
 	/**
-	 * 学生姓名
+	 * 学生/教职工/访客姓名
 	 */
 	@ApiField("student_name")
 	private String studentName;

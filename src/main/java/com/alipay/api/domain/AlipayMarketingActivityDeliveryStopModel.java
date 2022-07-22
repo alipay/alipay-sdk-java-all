@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停止投放
  *
  * @author auto create
- * @since 1.0, 2022-07-17 17:53:46
+ * @since 1.0, 2022-07-21 21:30:14
  */
 public class AlipayMarketingActivityDeliveryStopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7642226312468742559L;
+	private static final long serialVersionUID = 8571191596154794362L;
 
 	/**
 	 * 服务商代运营商户信息。
@@ -37,6 +37,16 @@ public class AlipayMarketingActivityDeliveryStopModel extends AlipayObject {
 	 */
 	@ApiField("delivery_id")
 	private String deliveryId;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 外部业务单号，用作幂等控制。 幂等作用： 再次请求返回与上一次相同的结果。 外部接入方需保证业务单号唯一。
@@ -63,6 +73,13 @@ public class AlipayMarketingActivityDeliveryStopModel extends AlipayObject {
 	}
 	public void setDeliveryId(String deliveryId) {
 		this.deliveryId = deliveryId;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getOutBizNo() {

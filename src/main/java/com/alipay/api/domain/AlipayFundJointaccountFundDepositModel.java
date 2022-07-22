@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值跳端
  *
  * @author auto create
- * @since 1.0, 2022-06-17 17:08:24
+ * @since 1.0, 2022-07-21 16:39:23
  */
 public class AlipayFundJointaccountFundDepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7255847312389548999L;
+	private static final long serialVersionUID = 6734919786636746273L;
 
 	/**
 	 * 合花群ID<br>
@@ -42,6 +42,14 @@ public class AlipayFundJointaccountFundDepositModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 业务渠道</br>
+补充说明：</br>
+需要商户侧必传，支付宝侧不做强校验
+	 */
+	@ApiField("channel")
+	private String channel;
 
 	/**
 	 * （发起人）用户唯一标识
@@ -101,6 +109,13 @@ public class AlipayFundJointaccountFundDepositModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
 
 	public String getIdentity() {

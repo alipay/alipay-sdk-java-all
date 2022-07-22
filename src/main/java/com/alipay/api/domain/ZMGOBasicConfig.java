@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板的基本信息配置
  *
  * @author auto create
- * @since 1.0, 2022-07-18 11:35:49
+ * @since 1.0, 2022-07-22 16:29:56
  */
 public class ZMGOBasicConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1483185743588289154L;
+	private static final long serialVersionUID = 2186661646545836486L;
 
 	/**
 	 * 商户在芝麻GO配置的业务身份编码
@@ -20,10 +20,22 @@ public class ZMGOBasicConfig extends AlipayObject {
 	private String bizType;
 
 	/**
+	 * 商家客服电话
+	 */
+	@ApiField("contact")
+	private String contact;
+
+	/**
 	 * 运营商商户支付宝ID。若非ISV代理模式，也就是商户自运营模式，此属性取值与partner_id一致。
 	 */
 	@ApiField("isv_pid")
 	private String isvPid;
+
+	/**
+	 * 商户LOGO
+	 */
+	@ApiField("merchant_custom_logo")
+	private String merchantCustomLogo;
 
 	/**
 	 * 外部业务单号，供幂等使用，需保证每次请求的值都不同
@@ -50,11 +62,25 @@ public class ZMGOBasicConfig extends AlipayObject {
 		this.bizType = bizType;
 	}
 
+	public String getContact() {
+		return this.contact;
+	}
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
 	public String getIsvPid() {
 		return this.isvPid;
 	}
 	public void setIsvPid(String isvPid) {
 		this.isvPid = isvPid;
+	}
+
+	public String getMerchantCustomLogo() {
+		return this.merchantCustomLogo;
+	}
+	public void setMerchantCustomLogo(String merchantCustomLogo) {
+		this.merchantCustomLogo = merchantCustomLogo;
 	}
 
 	public String getOutBizNo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条件查询用户券
  *
  * @author auto create
- * @since 1.0, 2021-11-22 17:56:18
+ * @since 1.0, 2022-07-21 13:36:11
  */
 public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3167587679394138781L;
+	private static final long serialVersionUID = 1431873638612883236L;
 
 	/**
 	 * 活动id
@@ -26,6 +26,16 @@ public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObj
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 分页查询页码。 
@@ -79,6 +89,13 @@ EXPIRED：已过期(可查询6个月内数据)
 	}
 	public void setBelongMerchantId(String belongMerchantId) {
 		this.belongMerchantId = belongMerchantId;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public Long getPageNum() {

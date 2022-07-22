@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 已经发放的券结果信息
  *
  * @author auto create
- * @since 1.0, 2022-06-22 20:47:02
+ * @since 1.0, 2022-07-18 18:51:31
  */
 public class SendVoucherInfoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4252329594424253242L;
+	private static final long serialVersionUID = 8639855478992668785L;
 
 	/**
 	 * 用户领券之后在服务商(商户)侧提供的券详情展示页面。在支付宝卡包中展示链接，用户点击可以跳转到服务商券详情页。 限制: 该字段在兑换券场景下必传。 链接必须是alipays开头的小程序链接，详见《小程序scheme链接介绍》https://opendocs.alipay.com/support/01rb18
@@ -29,7 +29,7 @@ public class SendVoucherInfoResult extends AlipayObject {
 	/**
 	 * 发奖后返回的与券码对应的券码使用链接，在支付宝卡包-券详情以二维码方式展示
 注意:
-该链接风控审核不通过，将继续使用券码生成二维码
+该链接审核不通过，将继续使用券码生成二维码
 	 */
 	@ApiField("voucher_code_url")
 	private String voucherCodeUrl;

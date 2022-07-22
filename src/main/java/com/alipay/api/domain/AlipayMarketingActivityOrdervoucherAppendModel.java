@@ -7,17 +7,27 @@ import com.alipay.api.internal.mapping.ApiField;
  * 追加订单券活动
  *
  * @author auto create
- * @since 1.0, 2022-01-09 22:08:45
+ * @since 1.0, 2022-07-21 21:44:49
  */
 public class AlipayMarketingActivityOrdervoucherAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2621887544686888526L;
+	private static final long serialVersionUID = 4571922692796547132L;
 
 	/**
 	 * 活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 外部业务单号，用作幂等控制。
@@ -51,6 +61,13 @@ MERCHANT_UPLOAD 的情况下，voucher_quantity 需要与导入码的总数量�
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getOutBizNo() {

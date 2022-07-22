@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动摘要信息
  *
  * @author auto create
- * @since 1.0, 2022-07-13 10:53:43
+ * @since 1.0, 2022-07-20 17:45:37
  */
 public class ActivityLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4863719512421174392L;
+	private static final long serialVersionUID = 2536531282841628934L;
+
+	/**
+	 * 活动基础信息
+	 */
+	@ApiField("activity_base_info")
+	private ActivityBaseInfo activityBaseInfo;
 
 	/**
 	 * 活动id
@@ -62,10 +68,34 @@ FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(p
 	private Date publishStartTime;
 
 	/**
+	 * 券可用范围
+	 */
+	@ApiField("voucher_available_scope_info")
+	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
+
+	/**
+	 * 券优惠信息
+	 */
+	@ApiField("voucher_deduct_info")
+	private VoucherDeductInfo voucherDeductInfo;
+
+	/**
 	 * 券展示规则
 	 */
 	@ApiField("voucher_display_lite_info")
 	private CommonVoucherDisplayLiteInfo voucherDisplayLiteInfo;
+
+	/**
+	 * 券展示信息
+	 */
+	@ApiField("voucher_display_pattern_info")
+	private VoucherDisplayPatternInfo voucherDisplayPatternInfo;
+
+	/**
+	 * 券发放
+	 */
+	@ApiField("voucher_send_mode_info")
+	private VoucherSendModeInfo voucherSendModeInfo;
 
 	/**
 	 * 券类型。 
@@ -75,10 +105,23 @@ FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(p
 	private String voucherType;
 
 	/**
+	 * 券核销
+	 */
+	@ApiField("voucher_use_rule_info")
+	private VoucherUseRuleInfo voucherUseRuleInfo;
+
+	/**
 	 * 券核销规则
 	 */
 	@ApiField("voucher_use_rule_lite_info")
 	private CommonVoucherUseRuleLiteInfo voucherUseRuleLiteInfo;
+
+	public ActivityBaseInfo getActivityBaseInfo() {
+		return this.activityBaseInfo;
+	}
+	public void setActivityBaseInfo(ActivityBaseInfo activityBaseInfo) {
+		this.activityBaseInfo = activityBaseInfo;
+	}
 
 	public String getActivityId() {
 		return this.activityId;
@@ -129,6 +172,20 @@ FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(p
 		this.publishStartTime = publishStartTime;
 	}
 
+	public VoucherAvailableScopeInfo getVoucherAvailableScopeInfo() {
+		return this.voucherAvailableScopeInfo;
+	}
+	public void setVoucherAvailableScopeInfo(VoucherAvailableScopeInfo voucherAvailableScopeInfo) {
+		this.voucherAvailableScopeInfo = voucherAvailableScopeInfo;
+	}
+
+	public VoucherDeductInfo getVoucherDeductInfo() {
+		return this.voucherDeductInfo;
+	}
+	public void setVoucherDeductInfo(VoucherDeductInfo voucherDeductInfo) {
+		this.voucherDeductInfo = voucherDeductInfo;
+	}
+
 	public CommonVoucherDisplayLiteInfo getVoucherDisplayLiteInfo() {
 		return this.voucherDisplayLiteInfo;
 	}
@@ -136,11 +193,32 @@ FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(p
 		this.voucherDisplayLiteInfo = voucherDisplayLiteInfo;
 	}
 
+	public VoucherDisplayPatternInfo getVoucherDisplayPatternInfo() {
+		return this.voucherDisplayPatternInfo;
+	}
+	public void setVoucherDisplayPatternInfo(VoucherDisplayPatternInfo voucherDisplayPatternInfo) {
+		this.voucherDisplayPatternInfo = voucherDisplayPatternInfo;
+	}
+
+	public VoucherSendModeInfo getVoucherSendModeInfo() {
+		return this.voucherSendModeInfo;
+	}
+	public void setVoucherSendModeInfo(VoucherSendModeInfo voucherSendModeInfo) {
+		this.voucherSendModeInfo = voucherSendModeInfo;
+	}
+
 	public String getVoucherType() {
 		return this.voucherType;
 	}
 	public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
+	}
+
+	public VoucherUseRuleInfo getVoucherUseRuleInfo() {
+		return this.voucherUseRuleInfo;
+	}
+	public void setVoucherUseRuleInfo(VoucherUseRuleInfo voucherUseRuleInfo) {
+		this.voucherUseRuleInfo = voucherUseRuleInfo;
 	}
 
 	public CommonVoucherUseRuleLiteInfo getVoucherUseRuleLiteInfo() {

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.life.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-17 13:51:45
+ * @since 1.0, 2022-07-20 15:46:44
  */
 public class AlipaySecurityLifeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8622763432629477692L;
+	private static final long serialVersionUID = 3542178558221823576L;
 
 	/** 
 	 * asfsdf

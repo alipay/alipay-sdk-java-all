@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 资金计划详情
+ * 资金转入计划详情
  *
  * @author auto create
- * @since 1.0, 2022-06-20 13:16:57
+ * @since 1.0, 2022-07-18 22:12:02
  */
 public class FundPlanForm extends AlipayObject {
 
-	private static final long serialVersionUID = 2727113822421834452L;
+	private static final long serialVersionUID = 4456531636222473892L;
 
 	/**
 	 * 自动充值金额（单位为元，必须大于0且最多小数点后两位）
@@ -38,6 +38,38 @@ public class FundPlanForm extends AlipayObject {
 	private String date;
 
 	/**
+	 * 金额，单位元</br>
+定额模式固定为0</br>
+递增模式根据用户输入决定</br>
+	 */
+	@ApiField("incremental_amount")
+	private String incrementalAmount;
+
+	/**
+	 * 商户侧单号（幂等字段）</br>
+补充说明：自动攒场景幂等逻辑（商户appid+out_biz_no），商户集成时需注意，如换号重复发起，则认为是一笔新的请求
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
+
+	/**
+	 * 计划模式</br>
+FIXED ：定额模式</br>
+INCREMENTAL ：递增模式
+	 */
+	@ApiField("plan_mode")
+	private String planMode;
+
+	/**
+	 * 计划总调拨次数，商户侧根据用户自定义/选择时长传递</br>
+用户选择为每日攒，则为天数[1-365]范围内</br>
+每周攒，则为周数[1-52]范围内，</br>
+每月攒，则为月数[1-12]范围内</br>
+	 */
+	@ApiField("plan_times")
+	private Long planTimes;
+
+	/**
 	 * 订单备注，长度超长会拒绝交易，可包括数字、字母、空格、汉字，但不能包括特殊字符、emoji等
 	 */
 	@ApiField("remark")
@@ -62,6 +94,34 @@ public class FundPlanForm extends AlipayObject {
 	}
 	public void setDate(String date) {
 		this.date = date;
+	}
+
+	public String getIncrementalAmount() {
+		return this.incrementalAmount;
+	}
+	public void setIncrementalAmount(String incrementalAmount) {
+		this.incrementalAmount = incrementalAmount;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
+	}
+
+	public String getPlanMode() {
+		return this.planMode;
+	}
+	public void setPlanMode(String planMode) {
+		this.planMode = planMode;
+	}
+
+	public Long getPlanTimes() {
+		return this.planTimes;
+	}
+	public void setPlanTimes(Long planTimes) {
+		this.planTimes = planTimes;
 	}
 
 	public String getRemark() {

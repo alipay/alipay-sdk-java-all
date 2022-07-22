@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.facepay.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-29 15:06:47
+ * @since 1.0, 2022-07-20 21:07:11
  */
 public class AlipayCommerceEducateFacepayApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1865757699824457777L;
+	private static final long serialVersionUID = 6797873239432616169L;
 
 	/** 
 	 * 申请token
@@ -21,13 +21,13 @@ public class AlipayCommerceEducateFacepayApplyResponse extends AlipayResponse {
 	private String applyToken;
 
 	/** 
-	 * 采集人脸学生uid
+	 * 刷脸用户id
 	 */
 	@ApiField("face_uid")
 	private String faceUid;
 
 	/** 
-	 * 学生所在学校外标(国标码)
+	 * 学校外标
 	 */
 	@ApiField("school_stdcode")
 	private String schoolStdcode;

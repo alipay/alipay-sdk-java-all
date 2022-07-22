@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.material.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-06-23 15:26:43
+ * @since 1.0, 2022-07-21 22:06:50
  */
 public class AlipayMarketingMaterialImageUploadRequest implements AlipayUploadRequest<AlipayMarketingMaterialImageUploadResponse> {
 
@@ -48,6 +48,15 @@ voucher_display_info.voucher_image字段,file_key=PROMO_VOUCHER_IMAGE,上传图�
 	 */
 	private String fileKey;
 
+	/** 
+	* 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	private String merchantAccessMode;
+
 	public void setBelongMerchantInfo(BelongMerchantInfo belongMerchantInfo) {
 		this.belongMerchantInfo = belongMerchantInfo;
 	}
@@ -67,6 +76,13 @@ voucher_display_info.voucher_image字段,file_key=PROMO_VOUCHER_IMAGE,上传图�
 	}
 	public String getFileKey() {
 		return this.fileKey;
+	}
+
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
+	}
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
 	}
 	private String terminalType;
 	private String terminalInfo;
@@ -131,6 +147,7 @@ voucher_display_info.voucher_image字段,file_key=PROMO_VOUCHER_IMAGE,上传图�
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("belong_merchant_info", this.belongMerchantInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.belongMerchantInfo, true));
 		txtParams.put("file_key", this.fileKey);
+		txtParams.put("merchant_access_mode", this.merchantAccessMode);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

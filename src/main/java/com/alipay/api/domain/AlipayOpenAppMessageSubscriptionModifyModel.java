@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 变更订阅关系属性
  *
  * @author auto create
- * @since 1.0, 2021-04-09 17:40:21
+ * @since 1.0, 2022-07-21 15:48:34
  */
 public class AlipayOpenAppMessageSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5786349417354967641L;
+	private static final long serialVersionUID = 1832938448148257856L;
 
 	/**
 	 * 授权令牌

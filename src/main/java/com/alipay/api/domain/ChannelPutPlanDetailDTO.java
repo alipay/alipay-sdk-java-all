@@ -11,23 +11,53 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放计划详情数据对象
  *
  * @author auto create
- * @since 1.0, 2022-07-05 14:39:32
+ * @since 1.0, 2022-07-21 22:00:37
  */
 public class ChannelPutPlanDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3361149539148834658L;
+	private static final long serialVersionUID = 5567425172552999565L;
 
 	/**
-	 * 自定义活动页面地址
+	 * 已有活动页面 code
 	 */
 	@ApiField("activity_page")
 	private String activityPage;
+
+	/**
+	 * 已有活动页面名称
+	 */
+	@ApiField("activity_page_name")
+	private String activityPageName;
+
+	/**
+	 * 已有活动页面链接
+	 */
+	@ApiField("activity_page_url")
+	private String activityPageUrl;
+
+	/**
+	 * 活动主标题
+	 */
+	@ApiField("activity_title")
+	private String activityTitle;
+
+	/**
+	 * 权益描述
+	 */
+	@ApiField("benefit_desc")
+	private String benefitDesc;
 
 	/**
 	 * 计费方式
 	 */
 	@ApiField("bill_way")
 	private String billWay;
+
+	/**
+	 * 渠道 code，渠道信息唯一标识
+	 */
+	@ApiField("channel_code")
+	private String channelCode;
 
 	/**
 	 * 投放计划绑定渠道 id
@@ -61,10 +91,23 @@ public class ChannelPutPlanDetailDTO extends AlipayObject {
 	private List<String> crowdIds;
 
 	/**
+	 * 人群信息
+	 */
+	@ApiListField("crowd_info")
+	@ApiField("channel_put_plan_crowd_d_t_o")
+	private List<ChannelPutPlanCrowdDTO> crowdInfo;
+
+	/**
 	 * 自定义活动页面地址
 	 */
 	@ApiField("customize_page")
 	private String customizePage;
+
+	/**
+	 * 详情页标题
+	 */
+	@ApiField("detail_page_title")
+	private String detailPageTitle;
 
 	/**
 	 * 创建时间
@@ -121,6 +164,12 @@ public class ChannelPutPlanDetailDTO extends AlipayObject {
 	private String pageType;
 
 	/**
+	 * 列表页展示图
+	 */
+	@ApiField("pic_url")
+	private String picUrl;
+
+	/**
 	 * 投放计划拒绝原因
 	 */
 	@ApiField("reject_reason")
@@ -157,11 +206,46 @@ public class ChannelPutPlanDetailDTO extends AlipayObject {
 		this.activityPage = activityPage;
 	}
 
+	public String getActivityPageName() {
+		return this.activityPageName;
+	}
+	public void setActivityPageName(String activityPageName) {
+		this.activityPageName = activityPageName;
+	}
+
+	public String getActivityPageUrl() {
+		return this.activityPageUrl;
+	}
+	public void setActivityPageUrl(String activityPageUrl) {
+		this.activityPageUrl = activityPageUrl;
+	}
+
+	public String getActivityTitle() {
+		return this.activityTitle;
+	}
+	public void setActivityTitle(String activityTitle) {
+		this.activityTitle = activityTitle;
+	}
+
+	public String getBenefitDesc() {
+		return this.benefitDesc;
+	}
+	public void setBenefitDesc(String benefitDesc) {
+		this.benefitDesc = benefitDesc;
+	}
+
 	public String getBillWay() {
 		return this.billWay;
 	}
 	public void setBillWay(String billWay) {
 		this.billWay = billWay;
+	}
+
+	public String getChannelCode() {
+		return this.channelCode;
+	}
+	public void setChannelCode(String channelCode) {
+		this.channelCode = channelCode;
 	}
 
 	public Long getChannelId() {
@@ -199,11 +283,25 @@ public class ChannelPutPlanDetailDTO extends AlipayObject {
 		this.crowdIds = crowdIds;
 	}
 
+	public List<ChannelPutPlanCrowdDTO> getCrowdInfo() {
+		return this.crowdInfo;
+	}
+	public void setCrowdInfo(List<ChannelPutPlanCrowdDTO> crowdInfo) {
+		this.crowdInfo = crowdInfo;
+	}
+
 	public String getCustomizePage() {
 		return this.customizePage;
 	}
 	public void setCustomizePage(String customizePage) {
 		this.customizePage = customizePage;
+	}
+
+	public String getDetailPageTitle() {
+		return this.detailPageTitle;
+	}
+	public void setDetailPageTitle(String detailPageTitle) {
+		this.detailPageTitle = detailPageTitle;
 	}
 
 	public Date getGmtCreate() {
@@ -267,6 +365,13 @@ public class ChannelPutPlanDetailDTO extends AlipayObject {
 	}
 	public void setPageType(String pageType) {
 		this.pageType = pageType;
+	}
+
+	public String getPicUrl() {
+		return this.picUrl;
+	}
+	public void setPicUrl(String picUrl) {
+		this.picUrl = picUrl;
 	}
 
 	public String getRejectReason() {

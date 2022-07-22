@@ -2,9 +2,15 @@ package com.alipay.api.response;
 
 import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.ActivityBaseInfo;
+import com.alipay.api.domain.VoucherAvailableScopeInfo;
+import com.alipay.api.domain.VoucherDeductInfo;
 import com.alipay.api.domain.CommonVoucherDisplayInfo;
+import com.alipay.api.domain.VoucherDisplayPatternInfo;
+import com.alipay.api.domain.VoucherSendModeInfo;
 import com.alipay.api.domain.CommonVoucherSendRule;
 import com.alipay.api.domain.CommonVoucherUseRule;
+import com.alipay.api.domain.VoucherUseRuleInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +18,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-20 20:10:39
+ * @since 1.0, 2022-07-21 22:06:55
  */
 public class AlipayMarketingActivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4257975166163771788L;
+	private static final long serialVersionUID = 1631849492563811231L;
+
+	/** 
+	 * 活动基础信息
+	 */
+	@ApiField("activity_base_info")
+	private ActivityBaseInfo activityBaseInfo;
 
 	/** 
 	 * 活动id
@@ -59,10 +71,34 @@ FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(p
 	private Date publishStartTime;
 
 	/** 
+	 * 可用范围
+	 */
+	@ApiField("voucher_available_scope_info")
+	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
+
+	/** 
+	 * 券优惠抵扣信息
+	 */
+	@ApiField("voucher_deduct_info")
+	private VoucherDeductInfo voucherDeductInfo;
+
+	/** 
 	 * 券展示信息
 	 */
 	@ApiField("voucher_display_info")
 	private CommonVoucherDisplayInfo voucherDisplayInfo;
+
+	/** 
+	 * 券展示信息
+	 */
+	@ApiField("voucher_display_pattern_info")
+	private VoucherDisplayPatternInfo voucherDisplayPatternInfo;
+
+	/** 
+	 * 券发放模式
+	 */
+	@ApiField("voucher_send_mode_info")
+	private VoucherSendModeInfo voucherSendModeInfo;
 
 	/** 
 	 * 券发放规则
@@ -86,6 +122,19 @@ EXCHANGE_VOUCHER: 兑换券；
 	 */
 	@ApiField("voucher_use_rule")
 	private CommonVoucherUseRule voucherUseRule;
+
+	/** 
+	 * 券核销规则
+	 */
+	@ApiField("voucher_use_rule_info")
+	private VoucherUseRuleInfo voucherUseRuleInfo;
+
+	public void setActivityBaseInfo(ActivityBaseInfo activityBaseInfo) {
+		this.activityBaseInfo = activityBaseInfo;
+	}
+	public ActivityBaseInfo getActivityBaseInfo( ) {
+		return this.activityBaseInfo;
+	}
 
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
@@ -129,11 +178,39 @@ EXCHANGE_VOUCHER: 兑换券；
 		return this.publishStartTime;
 	}
 
+	public void setVoucherAvailableScopeInfo(VoucherAvailableScopeInfo voucherAvailableScopeInfo) {
+		this.voucherAvailableScopeInfo = voucherAvailableScopeInfo;
+	}
+	public VoucherAvailableScopeInfo getVoucherAvailableScopeInfo( ) {
+		return this.voucherAvailableScopeInfo;
+	}
+
+	public void setVoucherDeductInfo(VoucherDeductInfo voucherDeductInfo) {
+		this.voucherDeductInfo = voucherDeductInfo;
+	}
+	public VoucherDeductInfo getVoucherDeductInfo( ) {
+		return this.voucherDeductInfo;
+	}
+
 	public void setVoucherDisplayInfo(CommonVoucherDisplayInfo voucherDisplayInfo) {
 		this.voucherDisplayInfo = voucherDisplayInfo;
 	}
 	public CommonVoucherDisplayInfo getVoucherDisplayInfo( ) {
 		return this.voucherDisplayInfo;
+	}
+
+	public void setVoucherDisplayPatternInfo(VoucherDisplayPatternInfo voucherDisplayPatternInfo) {
+		this.voucherDisplayPatternInfo = voucherDisplayPatternInfo;
+	}
+	public VoucherDisplayPatternInfo getVoucherDisplayPatternInfo( ) {
+		return this.voucherDisplayPatternInfo;
+	}
+
+	public void setVoucherSendModeInfo(VoucherSendModeInfo voucherSendModeInfo) {
+		this.voucherSendModeInfo = voucherSendModeInfo;
+	}
+	public VoucherSendModeInfo getVoucherSendModeInfo( ) {
+		return this.voucherSendModeInfo;
 	}
 
 	public void setVoucherSendRule(CommonVoucherSendRule voucherSendRule) {
@@ -155,6 +232,13 @@ EXCHANGE_VOUCHER: 兑换券；
 	}
 	public CommonVoucherUseRule getVoucherUseRule( ) {
 		return this.voucherUseRule;
+	}
+
+	public void setVoucherUseRuleInfo(VoucherUseRuleInfo voucherUseRuleInfo) {
+		this.voucherUseRuleInfo = voucherUseRuleInfo;
+	}
+	public VoucherUseRuleInfo getVoucherUseRuleInfo( ) {
+		return this.voucherUseRuleInfo;
 	}
 
 }

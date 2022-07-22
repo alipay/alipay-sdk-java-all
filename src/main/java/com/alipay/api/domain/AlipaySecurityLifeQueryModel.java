@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资源化停用启用调用资源全链路测试
  *
  * @author auto create
- * @since 1.0, 2022-06-17 13:50:12
+ * @since 1.0, 2022-07-20 15:41:48
  */
 public class AlipaySecurityLifeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4229881979582943742L;
+	private static final long serialVersionUID = 8236745854871166727L;
 
 	/**
 	 * asfsdf

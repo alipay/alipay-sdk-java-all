@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家营销活动咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-03-24 15:35:57
+ * @since 1.0, 2022-07-21 21:44:11
  */
 public class AlipayMarketingActivityConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1642947479557368757L;
+	private static final long serialVersionUID = 7632346914715784621L;
 
 	/**
 	 * 待咨询的活动信息列表
@@ -22,6 +22,16 @@ public class AlipayMarketingActivityConsultModel extends AlipayObject {
 	@ApiListField("consult_activity_info_list")
 	@ApiField("consult_activity_info")
 	private List<ConsultActivityInfo> consultActivityInfoList;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 商户PID,默认为当前接口调用商户 
@@ -44,6 +54,13 @@ public class AlipayMarketingActivityConsultModel extends AlipayObject {
 	}
 	public void setConsultActivityInfoList(List<ConsultActivityInfo> consultActivityInfoList) {
 		this.consultActivityInfoList = consultActivityInfoList;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getMerchantId() {

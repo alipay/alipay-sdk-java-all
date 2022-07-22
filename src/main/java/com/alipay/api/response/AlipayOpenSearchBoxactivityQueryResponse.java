@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.boxactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-06 17:06:59
+ * @since 1.0, 2022-07-18 16:51:49
  */
 public class AlipayOpenSearchBoxactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7162131831846654163L;
+	private static final long serialVersionUID = 2881681193659724344L;
 
 	/** 
 	 * 搜索直达活动id
@@ -31,7 +31,7 @@ public class AlipayOpenSearchBoxactivityQueryResponse extends AlipayResponse {
 	private String boxId;
 
 	/** 
-	 * 活动结束收件
+	 * 活动结束时间
 	 */
 	@ApiField("end_time")
 	private String endTime;

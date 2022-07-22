@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金计划
  *
  * @author auto create
- * @since 1.0, 2022-06-28 10:28:24
+ * @since 1.0, 2022-07-18 22:12:41
  */
 public class FundPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3163435848578786582L;
+	private static final long serialVersionUID = 1419878319663259163L;
 
 	/**
 	 * 合花群ID（与当前请求参数中传入值保持一致）
@@ -54,10 +54,32 @@ public class FundPlanDTO extends AlipayObject {
 	private String date;
 
 	/**
+	 * 计划创建后预计最终结束日期
+（yyyy-MM-dd HH:mm:ss.SSS）
+一直攒模式下无该字段返回
+	 */
+	@ApiField("end_date")
+	private String endDate;
+
+	/**
 	 * 当前合花群中的自动攒计划唯一标识（与当前请求参数中传入值保持一致）
 	 */
 	@ApiField("fund_plan_id")
 	private String fundPlanId;
+
+	/**
+	 * 金额，单位元</br>
+- 定额模式固定为0</br>
+- 递增模式根据用户输入决定</br>
+	 */
+	@ApiField("incremental_amount")
+	private String incrementalAmount;
+
+	/**
+	 * 初始金额，单位元
+	 */
+	@ApiField("initial_amount")
+	private String initialAmount;
 
 	/**
 	 * 当前计划预计下次开始执行时间（
@@ -68,10 +90,35 @@ yyyy-MM-dd HH:mm:ss.SSS）<br>
 	private String nextExecution;
 
 	/**
+	 * 商户侧单号（幂等字段）</br>
+补充说明：</br>
+与alipay.fund.jointaccount.sign开户+创建自动攒入参一致
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
+
+	/**
 	 * 转入时付款方所指定的资产信息
 	 */
 	@ApiField("payer_account")
 	private PayerAccountDTO payerAccount;
+
+	/**
+	 * 计划模式
+- FIXED ：定额模式
+- INCREMENTAL ：递增模式
+	 */
+	@ApiField("plan_mode")
+	private String planMode;
+
+	/**
+	 * 计划总调拨次数，喵喵记账侧根据用户自定义/选择时常
+用户选择为每日攒，则为天数[1-365]范围内
+每周攒，则为周数[1-52]范围内，
+每月攒，则为月数[1-12]范围内
+	 */
+	@ApiField("plan_times")
+	private Long planTimes;
 
 	/**
 	 * 订单备注<br>
@@ -79,6 +126,14 @@ yyyy-MM-dd HH:mm:ss.SSS）<br>
 	 */
 	@ApiField("remark")
 	private String remark;
+
+	/**
+	 * 计划创建后预计首次执行日期
+（yyyy-MM-dd HH:mm:ss.SSS）
+历史一直攒数据无该字段返回
+	 */
+	@ApiField("start_date")
+	private String startDate;
 
 	/**
 	 * 计划状态<br>
@@ -124,11 +179,32 @@ yyyy-MM-dd HH:mm:ss.SSS）<br>
 		this.date = date;
 	}
 
+	public String getEndDate() {
+		return this.endDate;
+	}
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
+	}
+
 	public String getFundPlanId() {
 		return this.fundPlanId;
 	}
 	public void setFundPlanId(String fundPlanId) {
 		this.fundPlanId = fundPlanId;
+	}
+
+	public String getIncrementalAmount() {
+		return this.incrementalAmount;
+	}
+	public void setIncrementalAmount(String incrementalAmount) {
+		this.incrementalAmount = incrementalAmount;
+	}
+
+	public String getInitialAmount() {
+		return this.initialAmount;
+	}
+	public void setInitialAmount(String initialAmount) {
+		this.initialAmount = initialAmount;
 	}
 
 	public String getNextExecution() {
@@ -138,6 +214,13 @@ yyyy-MM-dd HH:mm:ss.SSS）<br>
 		this.nextExecution = nextExecution;
 	}
 
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
+	}
+
 	public PayerAccountDTO getPayerAccount() {
 		return this.payerAccount;
 	}
@@ -145,11 +228,32 @@ yyyy-MM-dd HH:mm:ss.SSS）<br>
 		this.payerAccount = payerAccount;
 	}
 
+	public String getPlanMode() {
+		return this.planMode;
+	}
+	public void setPlanMode(String planMode) {
+		this.planMode = planMode;
+	}
+
+	public Long getPlanTimes() {
+		return this.planTimes;
+	}
+	public void setPlanTimes(Long planTimes) {
+		this.planTimes = planTimes;
+	}
+
 	public String getRemark() {
 		return this.remark;
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+
+	public String getStartDate() {
+		return this.startDate;
+	}
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
 	}
 
 	public String getStatus() {

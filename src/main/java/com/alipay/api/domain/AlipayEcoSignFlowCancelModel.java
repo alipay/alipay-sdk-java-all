@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签署流程撤销（E签宝）
  *
  * @author auto create
- * @since 1.0, 2019-12-26 21:36:12
+ * @since 1.0, 2022-07-21 15:48:58
  */
 public class AlipayEcoSignFlowCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4421433368156313394L;
+	private static final long serialVersionUID = 4488413966919782335L;
 
 	/**
 	 * 流程id，通过 <a href ="https://opendocs.alipay.com/apis/api_50/alipay.eco.contract.signflows.create">创建电子合同签署流程</a>(alipay.eco.contract.signflows.create)接口获取。

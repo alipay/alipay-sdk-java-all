@@ -10,15 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建支付宝素材
  *
  * @author auto create
- * @since 1.0, 2022-07-11 21:56:23
+ * @since 1.0, 2022-07-18 20:36:48
  */
 public class AlipayMarketingMaterialCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2319773439491371725L;
+	private static final long serialVersionUID = 3645813619234489933L;
 
 	/**
 	 * 素材字段列表，素材提报的具体内容，包含三种类型：图片、文本、链接。图片类型，则根据“图片资源上传接口（https://opendocs.alipay.com/pre-open/02bhlj）”中返回的resource_id字段值进行素材字段的设值。文本或链接类型，则按照实际需要设值即可，需满足具体的规范要求。规范要求详情请参见产品文档。
-提报内容示例如下：[{"field_name":"activityImage","field_value":["A*WXYTAswgww1"]},{"field_name":"sellingPoint","field_value":["双十二狂欢节权益2","双十二狂欢节权益1"]},{"field_name":"jump_url","field_value":["alipays://26plan_"]}]
 	 */
 	@ApiListField("material_fields")
 	@ApiField("material_field")

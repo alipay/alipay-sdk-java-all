@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-17 17:08:43
+ * @since 1.0, 2022-07-21 17:06:58
  */
 public class AlipayFundJointaccountDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1559212873325887586L;
+	private static final long serialVersionUID = 7328827272382438533L;
 
 	/** 
 	 * 合花群ID（支付宝侧生成）
@@ -44,6 +44,7 @@ public class AlipayFundJointaccountDetailQueryResponse extends AlipayResponse {
 -NORMAL：正常<br>
 -RELEASING：注销中<br>
 -RELEASED：已注销<br>
+- FREEZE：冻结
 	 */
 	@ApiField("account_status")
 	private String accountStatus;
@@ -113,6 +114,22 @@ public class AlipayFundJointaccountDetailQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/** 
+	 * 生息状态：</br>
+- MAKING    ：开启中</br>
+- MADE.       ：已开启</br>
+- CLEARING：关闭中</br>
+- NONE.       ：未生息
+	 */
+	@ApiField("profit_status")
+	private String profitStatus;
+
+	/** 
+	 * 昨日收益
+	 */
+	@ApiField("yesterday_profit")
+	private String yesterdayProfit;
 
 	public void setAccountId(String accountId) {
 		this.accountId = accountId;
@@ -210,6 +227,20 @@ public class AlipayFundJointaccountDetailQueryResponse extends AlipayResponse {
 	}
 	public String getProductCode( ) {
 		return this.productCode;
+	}
+
+	public void setProfitStatus(String profitStatus) {
+		this.profitStatus = profitStatus;
+	}
+	public String getProfitStatus( ) {
+		return this.profitStatus;
+	}
+
+	public void setYesterdayProfit(String yesterdayProfit) {
+		this.yesterdayProfit = yesterdayProfit;
+	}
+	public String getYesterdayProfit( ) {
+		return this.yesterdayProfit;
 	}
 
 }

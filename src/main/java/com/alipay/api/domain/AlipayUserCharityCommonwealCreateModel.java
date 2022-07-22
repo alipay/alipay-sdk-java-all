@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCharityCommonwealCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8797956762875386691L;
+	private static final long serialVersionUID = 5115876727389519858L;
 
 	/**
 	 * 业务时间；格式yyyy-MM-dd hh:mm:ss

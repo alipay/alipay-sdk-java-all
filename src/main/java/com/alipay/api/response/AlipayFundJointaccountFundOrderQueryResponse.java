@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.fund.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-20 17:04:24
+ * @since 1.0, 2022-07-21 17:06:58
  */
 public class AlipayFundJointaccountFundOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6146682448712917678L;
+	private static final long serialVersionUID = 4898638948494246456L;
 
 	/** 
 	 * 操作金额（单位为元，必须大于0且最多小数点后两位）

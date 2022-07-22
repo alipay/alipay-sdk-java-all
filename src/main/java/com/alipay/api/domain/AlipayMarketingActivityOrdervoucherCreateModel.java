@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建订单券
  *
  * @author auto create
- * @since 1.0, 2022-07-09 15:19:56
+ * @since 1.0, 2022-07-21 13:31:43
  */
 public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1244535829451643571L;
+	private static final long serialVersionUID = 6774112725556576649L;
+
+	/**
+	 * 活动基础信息
+	 */
+	@ApiField("activity_base_info")
+	private ActivityBaseInfo activityBaseInfo;
 
 	/**
 	 * 活动名称。
@@ -66,6 +72,16 @@ MERCHANT_API：发奖时指定券码发奖，此模式无须提前上传券码�
 	private CustomerGuide customerGuide;
 
 	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
+
+	/**
 	 * 外部业务单号，用作幂等控制。
 
 幂等作用：
@@ -105,10 +121,40 @@ publish_start_time 间隔必须小于等于180天
 	private Date publishStartTime;
 
 	/**
+	 * 券可用范围
+	 */
+	@ApiField("voucher_available_scope_info")
+	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
+
+	/**
+	 * 券引导详情
+	 */
+	@ApiField("voucher_customer_guide_info")
+	private VoucherCustomerGuideInfo voucherCustomerGuideInfo;
+
+	/**
+	 * 券优惠抵扣信息
+	 */
+	@ApiField("voucher_deduct_info")
+	private VoucherDeductInfo voucherDeductInfo;
+
+	/**
 	 * 券展示信息
 	 */
 	@ApiField("voucher_display_info")
 	private VoucherDisplayInfo voucherDisplayInfo;
+
+	/**
+	 * 券展示信息
+	 */
+	@ApiField("voucher_display_pattern_info")
+	private VoucherDisplayPatternInfo voucherDisplayPatternInfo;
+
+	/**
+	 * 券发放
+	 */
+	@ApiField("voucher_send_mode_info")
+	private VoucherSendModeInfo voucherSendModeInfo;
 
 	/**
 	 * 券发放规则
@@ -136,6 +182,19 @@ EXCHANGE_VOUCHER: 兑换券；
 	 */
 	@ApiField("voucher_use_rule")
 	private VoucherUseRule voucherUseRule;
+
+	/**
+	 * 券核销限制
+	 */
+	@ApiField("voucher_use_rule_info")
+	private VoucherUseRuleInfo voucherUseRuleInfo;
+
+	public ActivityBaseInfo getActivityBaseInfo() {
+		return this.activityBaseInfo;
+	}
+	public void setActivityBaseInfo(ActivityBaseInfo activityBaseInfo) {
+		this.activityBaseInfo = activityBaseInfo;
+	}
 
 	public String getActivityName() {
 		return this.activityName;
@@ -172,6 +231,13 @@ EXCHANGE_VOUCHER: 兑换券；
 		this.customerGuide = customerGuide;
 	}
 
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
+	}
+
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
@@ -193,11 +259,46 @@ EXCHANGE_VOUCHER: 兑换券；
 		this.publishStartTime = publishStartTime;
 	}
 
+	public VoucherAvailableScopeInfo getVoucherAvailableScopeInfo() {
+		return this.voucherAvailableScopeInfo;
+	}
+	public void setVoucherAvailableScopeInfo(VoucherAvailableScopeInfo voucherAvailableScopeInfo) {
+		this.voucherAvailableScopeInfo = voucherAvailableScopeInfo;
+	}
+
+	public VoucherCustomerGuideInfo getVoucherCustomerGuideInfo() {
+		return this.voucherCustomerGuideInfo;
+	}
+	public void setVoucherCustomerGuideInfo(VoucherCustomerGuideInfo voucherCustomerGuideInfo) {
+		this.voucherCustomerGuideInfo = voucherCustomerGuideInfo;
+	}
+
+	public VoucherDeductInfo getVoucherDeductInfo() {
+		return this.voucherDeductInfo;
+	}
+	public void setVoucherDeductInfo(VoucherDeductInfo voucherDeductInfo) {
+		this.voucherDeductInfo = voucherDeductInfo;
+	}
+
 	public VoucherDisplayInfo getVoucherDisplayInfo() {
 		return this.voucherDisplayInfo;
 	}
 	public void setVoucherDisplayInfo(VoucherDisplayInfo voucherDisplayInfo) {
 		this.voucherDisplayInfo = voucherDisplayInfo;
+	}
+
+	public VoucherDisplayPatternInfo getVoucherDisplayPatternInfo() {
+		return this.voucherDisplayPatternInfo;
+	}
+	public void setVoucherDisplayPatternInfo(VoucherDisplayPatternInfo voucherDisplayPatternInfo) {
+		this.voucherDisplayPatternInfo = voucherDisplayPatternInfo;
+	}
+
+	public VoucherSendModeInfo getVoucherSendModeInfo() {
+		return this.voucherSendModeInfo;
+	}
+	public void setVoucherSendModeInfo(VoucherSendModeInfo voucherSendModeInfo) {
+		this.voucherSendModeInfo = voucherSendModeInfo;
 	}
 
 	public VoucherSendRuleDetail getVoucherSendRule() {
@@ -219,6 +320,13 @@ EXCHANGE_VOUCHER: 兑换券；
 	}
 	public void setVoucherUseRule(VoucherUseRule voucherUseRule) {
 		this.voucherUseRule = voucherUseRule;
+	}
+
+	public VoucherUseRuleInfo getVoucherUseRuleInfo() {
+		return this.voucherUseRuleInfo;
+	}
+	public void setVoucherUseRuleInfo(VoucherUseRuleInfo voucherUseRuleInfo) {
+		this.voucherUseRuleInfo = voucherUseRuleInfo;
 	}
 
 }

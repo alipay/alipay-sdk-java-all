@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户券详情
  *
  * @author auto create
- * @since 1.0, 2022-07-01 15:03:15
+ * @since 1.0, 2022-07-21 13:32:34
  */
 public class AlipayMarketingActivityUserQueryvoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3335831557266992733L;
+	private static final long serialVersionUID = 1667515762338988854L;
 
 	/**
 	 * 活动id。
@@ -20,6 +20,16 @@ public class AlipayMarketingActivityUserQueryvoucherModel extends AlipayObject {
 	 */
 	@ApiField("activity_id")
 	private String activityId;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 商户PID,默认为当前接口调用商户 
@@ -58,6 +68,13 @@ voucher_id与voucher_code必须二选一
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getMerchantId() {

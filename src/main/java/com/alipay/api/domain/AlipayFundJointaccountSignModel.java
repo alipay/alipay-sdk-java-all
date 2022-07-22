@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业跳端签约
  *
  * @author auto create
- * @since 1.0, 2022-06-17 17:07:37
+ * @since 1.0, 2022-07-21 16:24:13
  */
 public class AlipayFundJointaccountSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1219537324553898823L;
+	private static final long serialVersionUID = 2873153871174391799L;
 
 	/**
 	 * 账本名称，传空采用默认规则命名，使用公司名称
@@ -49,6 +49,29 @@ public class AlipayFundJointaccountSignModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 业务渠道</br>
+补充说明：</br>
+需要商户侧必传，支付宝侧不做强校验
+	 */
+	@ApiField("channel")
+	private String channel;
+
+	/**
+	 * 资金转入计划详情</br>
+补充说明：</br>
+开户+手动转入场景，必传
+	 */
+	@ApiField("deposit")
+	private DepositForm deposit;
+
+	/**
+	 * 资金计划详情</br>
+补充说明：</br>开户+自动攒场景，必传
+	 */
+	@ApiField("fund_plan")
+	private FundPlanForm fundPlan;
 
 	/**
 	 * 开户账号：<br>
@@ -148,6 +171,27 @@ public class AlipayFundJointaccountSignModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
+	}
+
+	public DepositForm getDeposit() {
+		return this.deposit;
+	}
+	public void setDeposit(DepositForm deposit) {
+		this.deposit = deposit;
+	}
+
+	public FundPlanForm getFundPlan() {
+		return this.fundPlan;
+	}
+	public void setFundPlan(FundPlanForm fundPlan) {
+		this.fundPlan = fundPlan;
 	}
 
 	public String getIdentity() {

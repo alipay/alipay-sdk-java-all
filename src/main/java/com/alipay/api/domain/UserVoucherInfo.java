@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户券详情
  *
  * @author auto create
- * @since 1.0, 2022-07-01 16:33:59
+ * @since 1.0, 2022-07-20 18:00:44
  */
 public class UserVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1639614597287334217L;
+	private static final long serialVersionUID = 8658215152861525318L;
+
+	/**
+	 * 活动基础信息
+	 */
+	@ApiField("activity_base_info")
+	private ActivityBaseInfo activityBaseInfo;
 
 	/**
 	 * 活动id
@@ -46,10 +52,34 @@ public class UserVoucherInfo extends AlipayObject {
 	private Date createTime;
 
 	/**
+	 * 用户券实例信息
+	 */
+	@ApiField("user_voucher_base_info")
+	private UserVoucherBaseInfo userVoucherBaseInfo;
+
+	/**
+	 * 券可用范围
+	 */
+	@ApiField("voucher_available_scope_info")
+	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
+
+	/**
+	 * 券优惠信息
+	 */
+	@ApiField("voucher_deduct_info")
+	private VoucherDeductInfo voucherDeductInfo;
+
+	/**
 	 * 券展示信息
 	 */
 	@ApiField("voucher_display_lite_info")
 	private CommonVoucherDisplayLiteInfo voucherDisplayLiteInfo;
+
+	/**
+	 * 券展示信息
+	 */
+	@ApiField("voucher_display_pattern_info")
+	private VoucherDisplayPatternInfo voucherDisplayPatternInfo;
 
 	/**
 	 * 用户券id。支付宝为用户优惠券唯一分配的id。
@@ -62,6 +92,12 @@ public class UserVoucherInfo extends AlipayObject {
 	 */
 	@ApiField("voucher_name")
 	private String voucherName;
+
+	/**
+	 * 券发放信息
+	 */
+	@ApiField("voucher_send_mode_info")
+	private VoucherSendModeInfo voucherSendModeInfo;
 
 	/**
 	 * 券状态
@@ -87,6 +123,13 @@ DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER:
 	 */
 	@ApiField("voucher_use_rule_lite_info")
 	private CommonVoucherUseRuleLiteInfo voucherUseRuleLiteInfo;
+
+	public ActivityBaseInfo getActivityBaseInfo() {
+		return this.activityBaseInfo;
+	}
+	public void setActivityBaseInfo(ActivityBaseInfo activityBaseInfo) {
+		this.activityBaseInfo = activityBaseInfo;
+	}
 
 	public String getActivityId() {
 		return this.activityId;
@@ -123,11 +166,39 @@ DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER:
 		this.createTime = createTime;
 	}
 
+	public UserVoucherBaseInfo getUserVoucherBaseInfo() {
+		return this.userVoucherBaseInfo;
+	}
+	public void setUserVoucherBaseInfo(UserVoucherBaseInfo userVoucherBaseInfo) {
+		this.userVoucherBaseInfo = userVoucherBaseInfo;
+	}
+
+	public VoucherAvailableScopeInfo getVoucherAvailableScopeInfo() {
+		return this.voucherAvailableScopeInfo;
+	}
+	public void setVoucherAvailableScopeInfo(VoucherAvailableScopeInfo voucherAvailableScopeInfo) {
+		this.voucherAvailableScopeInfo = voucherAvailableScopeInfo;
+	}
+
+	public VoucherDeductInfo getVoucherDeductInfo() {
+		return this.voucherDeductInfo;
+	}
+	public void setVoucherDeductInfo(VoucherDeductInfo voucherDeductInfo) {
+		this.voucherDeductInfo = voucherDeductInfo;
+	}
+
 	public CommonVoucherDisplayLiteInfo getVoucherDisplayLiteInfo() {
 		return this.voucherDisplayLiteInfo;
 	}
 	public void setVoucherDisplayLiteInfo(CommonVoucherDisplayLiteInfo voucherDisplayLiteInfo) {
 		this.voucherDisplayLiteInfo = voucherDisplayLiteInfo;
+	}
+
+	public VoucherDisplayPatternInfo getVoucherDisplayPatternInfo() {
+		return this.voucherDisplayPatternInfo;
+	}
+	public void setVoucherDisplayPatternInfo(VoucherDisplayPatternInfo voucherDisplayPatternInfo) {
+		this.voucherDisplayPatternInfo = voucherDisplayPatternInfo;
 	}
 
 	public String getVoucherId() {
@@ -142,6 +213,13 @@ DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER:
 	}
 	public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
+	}
+
+	public VoucherSendModeInfo getVoucherSendModeInfo() {
+		return this.voucherSendModeInfo;
+	}
+	public void setVoucherSendModeInfo(VoucherSendModeInfo voucherSendModeInfo) {
+		this.voucherSendModeInfo = voucherSendModeInfo;
 	}
 
 	public String getVoucherStatus() {

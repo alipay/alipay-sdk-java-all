@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromotionRelationDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8276589829625697319L;
+	private static final long serialVersionUID = 2636144775824228431L;
 
 	/**
 	 * 申请推广时填写的申请理由

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询人脸库key接口
  *
  * @author auto create
- * @since 1.0, 2022-04-27 22:33:36
+ * @since 1.0, 2022-07-20 21:03:52
  */
 public class AlipayCommerceEducateFacefeatureGroupkeyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8653195284157879521L;
+	private static final long serialVersionUID = 2356629145496539947L;
 
 	/**
 	 * 人脸特征场景码
@@ -26,7 +26,7 @@ public class AlipayCommerceEducateFacefeatureGroupkeyQueryModel extends AlipayOb
 	private String isvName;
 
 	/**
-	 * 国家统一分配的学校社会信用代码
+	 * 学校外标
 	 */
 	@ApiField("school_stdcode")
 	private String schoolStdcode;

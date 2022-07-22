@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使券失效
  *
  * @author auto create
- * @since 1.0, 2021-07-03 11:04:18
+ * @since 1.0, 2022-07-21 21:43:47
  */
 public class AlipayMarketingActivityOrdervoucherInvalidModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6723813247935597337L;
+	private static final long serialVersionUID = 3579862539234876767L;
 
 	/**
 	 * 优惠券活动id
@@ -28,6 +28,16 @@ public class AlipayMarketingActivityOrdervoucherInvalidModel extends AlipayObjec
 	 */
 	@ApiField("biz_dt")
 	private Date bizDt;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 外部业务单号，用作幂等控制。
@@ -60,6 +70,13 @@ public class AlipayMarketingActivityOrdervoucherInvalidModel extends AlipayObjec
 	}
 	public void setBizDt(Date bizDt) {
 		this.bizDt = bizDt;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getOutBizNo() {

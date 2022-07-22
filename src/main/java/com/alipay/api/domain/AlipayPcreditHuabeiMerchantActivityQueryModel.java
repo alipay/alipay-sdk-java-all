@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗分期商家贴息活动查询接口
  *
  * @author auto create
- * @since 1.0, 2022-04-20 15:17:53
+ * @since 1.0, 2022-07-22 15:01:20
  */
 public class AlipayPcreditHuabeiMerchantActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3519283329159733411L;
+	private static final long serialVersionUID = 5495927515145953665L;
 
 	/**
 	 * 模版ID

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.sign.token.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-09 11:13:16
+ * @since 1.0, 2022-07-20 21:07:13
  */
 public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4378548233829937498L;
+	private static final long serialVersionUID = 7412573413539972942L;
 
 	/** 
 	 * 业务场景类型标识
@@ -21,7 +21,7 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	private String bizCode;
 
 	/** 
-	 * 需要将该字段返回给学校
+	 * 证件号码
 	 */
 	@ApiField("cert_no")
 	private String certNo;
@@ -33,13 +33,13 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	private String certType;
 
 	/** 
-	 * 家长支付宝账户的脱敏信息
+	 * 家长支付宝账户的脱敏信息（特例：特殊标识"ALREADY_RELEASED"，须通过技术支持反馈来关闭开通记录）
 	 */
 	@ApiField("parent_logon_id")
 	private String parentLogonId;
 
 	/** 
-	 * 家长uid。其为当前开通的支付宝会员id，用于支付，与刷脸uid不同（历史原因，部分学生和教职工本人开通，其刷脸uid与当前uid一致）
+	 * 用于开通一脸通行的支付宝账户 uid。如果是父母为孩子开通，则为父母支付宝 uid；如果是用户为本人开通，则为本人支付宝 uid。
 	 */
 	@ApiField("parent_user_id")
 	private String parentUserId;
@@ -63,13 +63,13 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	private String schoolFacePaymentStatus;
 
 	/** 
-	 * 学校外标（即学校的统一信用编码）
+	 * 学校外标
 	 */
 	@ApiField("school_stdcode")
 	private String schoolStdcode;
 
 	/** 
-	 * 用户uid。用于扫脸和刷脸支付
+	 * 刷脸用户id
 	 */
 	@ApiField("user_id")
 	private String userId;

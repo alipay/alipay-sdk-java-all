@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业查询代付账户详情
  *
  * @author auto create
- * @since 1.0, 2022-06-17 17:08:43
+ * @since 1.0, 2022-07-21 16:24:13
  */
 public class AlipayFundJointaccountDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2229982132975974251L;
+	private static final long serialVersionUID = 5117289618273352445L;
 
 	/**
 	 * 合花群ID（查询方式二：通过传入account_id+agreement_no查询）<br>
@@ -36,6 +36,14 @@ public class AlipayFundJointaccountDetailQueryModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 业务渠道</br>
+补充说明：</br>
+需要商户侧必传，支付宝侧不做强校验
+	 */
+	@ApiField("channel")
+	private String channel;
 
 	/**
 	 * 商户侧单号（查询方式一：通过传入
@@ -71,6 +79,13 @@ out_biz_no查询）<br>
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
 
 	public String getOutBizNo() {

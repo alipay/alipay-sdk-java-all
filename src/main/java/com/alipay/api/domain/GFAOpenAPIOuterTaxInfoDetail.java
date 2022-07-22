@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GFAOpenAPIOuterTaxInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1368391813281641895L;
+	private static final long serialVersionUID = 1621931159341822316L;
 
 	/**
 	 * 外部计税传入高精度税金。 需要处理为税金所属币种的最小单位。如人民币需要处理为分，日币需要处理最小单位元

@@ -8,16 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.voucher.append response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-18 15:57:10
+ * @since 1.0, 2022-07-21 22:06:50
  */
 public class AlipayMarketingActivityVoucherAppendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5144213119997447263L;
+	private static final long serialVersionUID = 4241411355215527391L;
 
 	/** 
 	 * 预充值链接
+
 限制
-1、有效时间3天
+有效时间3天
 	 */
 	@ApiField("recharge_url")
 	private String rechargeUrl;

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * K12一脸通行通过集采照片开通申请
  *
  * @author auto create
- * @since 1.0, 2022-04-27 22:33:34
+ * @since 1.0, 2022-07-20 21:03:51
  */
 public class AlipayCommerceEducateScenePhotoremoteApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1761848999397254629L;
+	private static final long serialVersionUID = 7864956685659996338L;
 
 	/**
-	 * 证件号。
+	 * 证件编号
 	 */
 	@ApiField("cert_no")
 	private String certNo;
@@ -44,13 +44,13 @@ public class AlipayCommerceEducateScenePhotoremoteApplyModel extends AlipayObjec
 	private String parentPhoneNumber;
 
 	/**
-	 * 学校外标（即学校的统一信用编码）。（注：若您不知道学校的统一信用编码，请联系对应的业务/产品咨询）
+	 * 学校外标
 	 */
 	@ApiField("school_std_code")
 	private String schoolStdCode;
 
 	/**
-	 * 学生姓名。
+	 * 学生/教职工/访客姓名
 	 */
 	@ApiField("student_name")
 	private String studentName;

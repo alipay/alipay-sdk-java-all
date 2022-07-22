@@ -11,11 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手动发放额度接口
  *
  * @author auto create
- * @since 1.0, 2022-07-16 13:36:07
+ * @since 1.0, 2022-07-21 20:16:52
  */
 public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8585357437383763145L;
+	private static final long serialVersionUID = 3867768935112892796L;
+
+	/**
+	 * 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用
+	 */
+	@ApiField("account_id")
+	private String accountId;
+
+	/**
+	 * 授权签约协议号
+	 */
+	@ApiField("agreement_no")
+	private String agreementNo;
 
 	/**
 	 * 发放批次号，用于幂等校验本次发放
@@ -36,7 +48,7 @@ public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel extends Alipay
 	private Date effectiveStartDate;
 
 	/**
-	 * 企业ID
+	 * 企业ID - 适用于在企业码PC端创建的企业账号
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -77,6 +89,20 @@ public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel extends Alipay
 	 */
 	@ApiField("share_mode")
 	private String shareMode;
+
+	public String getAccountId() {
+		return this.accountId;
+	}
+	public void setAccountId(String accountId) {
+		this.accountId = accountId;
+	}
+
+	public String getAgreementNo() {
+		return this.agreementNo;
+	}
+	public void setAgreementNo(String agreementNo) {
+		this.agreementNo = agreementNo;
+	}
 
 	public String getBatchNo() {
 		return this.batchNo;

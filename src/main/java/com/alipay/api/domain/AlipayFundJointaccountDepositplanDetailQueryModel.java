@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自动攒计划详情查询
  *
  * @author auto create
- * @since 1.0, 2022-06-20 13:14:48
+ * @since 1.0, 2022-07-21 16:30:14
  */
 public class AlipayFundJointaccountDepositplanDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2393883188716162956L;
+	private static final long serialVersionUID = 4223989858755636947L;
 
 	/**
 	 * 合花群ID<br>
@@ -40,6 +40,14 @@ public class AlipayFundJointaccountDepositplanDetailQueryModel extends AlipayObj
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 业务渠道</br>
+补充说明：</br>
+需要商户侧必传，支付宝侧不做强校验
+	 */
+	@ApiField("channel")
+	private String channel;
 
 	/**
 	 * 当前合花群中的自动攒计划唯一标识列表<br>
@@ -88,6 +96,13 @@ public class AlipayFundJointaccountDepositplanDetailQueryModel extends AlipayObj
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
 
 	public List<String> getFundPlanIdList() {

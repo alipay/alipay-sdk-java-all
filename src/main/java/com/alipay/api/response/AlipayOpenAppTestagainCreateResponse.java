@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.testagain.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-09 15:02:51
+ * @since 1.0, 2022-07-22 16:49:02
  */
 public class AlipayOpenAppTestagainCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8814423813437671639L;
+	private static final long serialVersionUID = 7578677661172885879L;
 
-	
+	/** 
+	 * 1313
+	 */
+	@ApiField("xxxxxx")
+	private String xxxxxx;
 
-	
+	public void setXxxxxx(String xxxxxx) {
+		this.xxxxxx = xxxxxx;
+	}
+	public String getXxxxxx( ) {
+		return this.xxxxxx;
+	}
 
 }

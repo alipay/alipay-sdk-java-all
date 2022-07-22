@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户创建芝麻GO模板接口
  *
  * @author auto create
- * @since 1.0, 2022-07-12 11:11:13
+ * @since 1.0, 2022-07-22 16:29:56
  */
 public class ZhimaMerchantZmgoTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4562723426118669842L;
+	private static final long serialVersionUID = 3251389819828527245L;
 
 	/**
 	 * 芝麻GO模板的基本信息1配置
 	 */
 	@ApiField("basic_config")
 	private ZMGOBasicConfig basicConfig;
+
+	/**
+	 * 芝麻GO模板拓展配置
+	 */
+	@ApiField("ext_config")
+	private ZMGOExtConfig extConfig;
 
 	/**
 	 * 芝麻GO模板义务配置，若为承诺模式，必传
@@ -54,6 +60,13 @@ public class ZhimaMerchantZmgoTemplateCreateModel extends AlipayObject {
 	}
 	public void setBasicConfig(ZMGOBasicConfig basicConfig) {
 		this.basicConfig = basicConfig;
+	}
+
+	public ZMGOExtConfig getExtConfig() {
+		return this.extConfig;
+	}
+	public void setExtConfig(ZMGOExtConfig extConfig) {
+		this.extConfig = extConfig;
 	}
 
 	public ZMGOObligationConfig getObligationConfig() {

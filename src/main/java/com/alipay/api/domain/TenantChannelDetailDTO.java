@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租户渠道信息
  *
  * @author auto create
- * @since 1.0, 2022-07-13 14:14:17
+ * @since 1.0, 2022-07-21 17:04:22
  */
 public class TenantChannelDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6596458694982965444L;
+	private static final long serialVersionUID = 2381964594848773343L;
 
 	/**
 	 * 渠道code + 唯一 + 渠道列表查询 + 数据库
@@ -48,6 +48,12 @@ public class TenantChannelDetailDTO extends AlipayObject {
 	 */
 	@ApiField("channel_type")
 	private String channelType;
+
+	/**
+	 * 表单模板id+唯一+渠道列表查询+数据库
+	 */
+	@ApiField("form_template_id")
+	private Long formTemplateId;
 
 	/**
 	 * 渠道图片+不唯一+渠道列表查询+数据库
@@ -113,6 +119,13 @@ public class TenantChannelDetailDTO extends AlipayObject {
 	}
 	public void setChannelType(String channelType) {
 		this.channelType = channelType;
+	}
+
+	public Long getFormTemplateId() {
+		return this.formTemplateId;
+	}
+	public void setFormTemplateId(Long formTemplateId) {
+		this.formTemplateId = formTemplateId;
 	}
 
 	public String getPicUrl() {

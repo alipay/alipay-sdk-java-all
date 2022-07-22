@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 可用城市修改
  *
  * @author auto create
- * @since 1.0, 2022-06-09 23:44:26
+ * @since 1.0, 2022-07-20 17:43:29
  */
 public class OrderVoucherAvailableCityCodeModify extends AlipayObject {
 
-	private static final long serialVersionUID = 4895865994341367481L;
+	private static final long serialVersionUID = 7646172818294935971L;
 
 	/**
 	 * 城市编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）

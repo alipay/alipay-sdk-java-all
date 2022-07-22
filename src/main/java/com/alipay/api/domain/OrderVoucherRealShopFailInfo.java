@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 失败的代运营商业关系门店信息
  *
  * @author auto create
- * @since 1.0, 2022-06-09 17:54:09
+ * @since 1.0, 2022-07-20 18:01:34
  */
 public class OrderVoucherRealShopFailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7463487769989856551L;
+	private static final long serialVersionUID = 5185491968356645512L;
 
 	/**
 	 * 请求失败提示信息

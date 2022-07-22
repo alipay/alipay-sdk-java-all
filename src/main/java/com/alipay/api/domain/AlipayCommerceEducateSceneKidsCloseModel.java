@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * K12业务关闭接口
  *
  * @author auto create
- * @since 1.0, 2022-04-27 22:33:42
+ * @since 1.0, 2022-07-20 21:03:54
  */
 public class AlipayCommerceEducateSceneKidsCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6895569328114941135L;
+	private static final long serialVersionUID = 1184993626457394465L;
 
 	/**
 	 * 业务场景码。SCHOOL_PAYMENT：校园支付，STUDENT_CARD：电子学生卡
@@ -39,13 +39,13 @@ public class AlipayCommerceEducateSceneKidsCloseModel extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 家长uid。（如果是关闭家长代开通，当前参数必选）
+	 * 用于开通一脸通行的支付宝账户 uid。如果是父母为孩子开通，则为父母支付宝 uid；如果是用户为本人开通，则为本人支付宝 uid（如果是关闭家长代开通，当前参数必选）
 	 */
 	@ApiField("parent_uid")
 	private String parentUid;
 
 	/**
-	 * 学校外标，即学校的统一信用编码。（当biz_code为SCHOOL_PAYMENT时，当前参数必选）
+	 * 学校外标（当biz_code为SCHOOL_PAYMENT时，当前参数必选）
 	 */
 	@ApiField("school_stdcode")
 	private String schoolStdcode;
@@ -59,8 +59,7 @@ SCHOOL_PAYMENT_FACEPAY_BANK：刷脸支付_ftoken}
 	private String subBizCode;
 
 	/**
-	 * 蚂蚁统一会员ID
-（当biz_code为SCHOOL_PAYMENT时，当前参数必选）
+	 * 刷脸用户id（当biz_code为SCHOOL_PAYMENT时，当前参数必选）
 	 */
 	@ApiField("user_id")
 	private String userId;

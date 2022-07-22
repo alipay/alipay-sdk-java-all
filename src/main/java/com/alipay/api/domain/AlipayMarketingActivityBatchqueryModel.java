@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条件查询活动列表
  *
  * @author auto create
- * @since 1.0, 2021-11-26 13:22:56
+ * @since 1.0, 2022-07-21 13:36:28
  */
 public class AlipayMarketingActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1496147836347613728L;
+	private static final long serialVersionUID = 6157684628476855771L;
 
 	/**
 	 * 活动状态 
@@ -20,6 +20,16 @@ ACTIVE:活动已激活，表示活动已经生效，等到活动开始(publish_s
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 商户PID,默认为当前接口调用商户
@@ -52,6 +62,13 @@ ACTIVE:活动已激活，表示活动已经生效，等到活动开始(publish_s
 	}
 	public void setActivityStatus(String activityStatus) {
 		this.activityStatus = activityStatus;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getMerchantId() {

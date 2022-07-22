@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单券核销
  *
  * @author auto create
- * @since 1.0, 2022-05-23 18:15:53
+ * @since 1.0, 2022-07-21 21:43:14
  */
 public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1466418518854892196L;
+	private static final long serialVersionUID = 5317582797336776849L;
 
 	/**
 	 * 优惠券活动id
@@ -41,6 +41,16 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail_d_t_o")
 	private List<GoodsDetailDTO> goodsDetail;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 外部业务单号，用作幂等控制。
@@ -144,6 +154,13 @@ OTHER_TRADE_CHANNEL：
 	}
 	public void setGoodsDetail(List<GoodsDetailDTO> goodsDetail) {
 		this.goodsDetail = goodsDetail;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getOutBizNo() {
