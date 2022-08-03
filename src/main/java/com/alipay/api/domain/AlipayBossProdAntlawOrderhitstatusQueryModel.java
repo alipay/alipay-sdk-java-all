@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询业务单号是否存在纸质用印或者纸质用印流程是否正常
  *
  * @author auto create
- * @since 1.0, 2021-12-10 14:26:44
+ * @since 1.0, 2022-07-28 20:13:37
  */
 public class AlipayBossProdAntlawOrderhitstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284621221314675878L;
+	private static final long serialVersionUID = 1376933951428155718L;
 
 	/**
 	 * 请求来源系统英文名称

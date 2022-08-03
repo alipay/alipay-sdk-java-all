@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道投放计划修改
  *
  * @author auto create
- * @since 1.0, 2022-07-05 14:39:07
+ * @since 1.0, 2022-07-27 15:13:12
  */
 public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3311939283732741933L;
+	private static final long serialVersionUID = 5254267178856365928L;
 
 	/**
 	 * 自由页面活动链接
 	 */
 	@ApiField("activity_page")
 	private String activityPage;
+
+	/**
+	 * 活动主标题
+	 */
+	@ApiField("activity_title")
+	private String activityTitle;
+
+	/**
+	 * 权益描述
+	 */
+	@ApiField("benefit_desc")
+	private String benefitDesc;
 
 	/**
 	 * 计费方式
@@ -42,6 +54,12 @@ public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 	 */
 	@ApiField("customize_page")
 	private String customizePage;
+
+	/**
+	 * 详情页标题
+	 */
+	@ApiField("detail_page_title")
+	private String detailPageTitle;
 
 	/**
 	 * 投放计划结束时间
@@ -80,6 +98,12 @@ public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 	private String pageType;
 
 	/**
+	 * 列表页展示图
+	 */
+	@ApiField("pic_url")
+	private String picUrl;
+
+	/**
 	 * 投放计划开始时间
 	 */
 	@ApiField("start_time")
@@ -102,6 +126,20 @@ public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 	}
 	public void setActivityPage(String activityPage) {
 		this.activityPage = activityPage;
+	}
+
+	public String getActivityTitle() {
+		return this.activityTitle;
+	}
+	public void setActivityTitle(String activityTitle) {
+		this.activityTitle = activityTitle;
+	}
+
+	public String getBenefitDesc() {
+		return this.benefitDesc;
+	}
+	public void setBenefitDesc(String benefitDesc) {
+		this.benefitDesc = benefitDesc;
 	}
 
 	public String getBillWay() {
@@ -130,6 +168,13 @@ public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 	}
 	public void setCustomizePage(String customizePage) {
 		this.customizePage = customizePage;
+	}
+
+	public String getDetailPageTitle() {
+		return this.detailPageTitle;
+	}
+	public void setDetailPageTitle(String detailPageTitle) {
+		this.detailPageTitle = detailPageTitle;
 	}
 
 	public String getEndTime() {
@@ -172,6 +217,13 @@ public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 	}
 	public void setPageType(String pageType) {
 		this.pageType = pageType;
+	}
+
+	public String getPicUrl() {
+		return this.picUrl;
+	}
+	public void setPicUrl(String picUrl) {
+		this.picUrl = picUrl;
 	}
 
 	public String getStartTime() {

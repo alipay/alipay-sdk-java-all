@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZmContractDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1824421189552481292L;
+	private static final long serialVersionUID = 1461816219624454254L;
 
 	/**
 	 * 取消的操作主体 用于区分是系统取消还是用户主动取消

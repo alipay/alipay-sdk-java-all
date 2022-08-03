@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2022-07-12 10:37:10
+ * @since 1.0, 2022-08-02 22:39:09
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2565448557985344981L;
+	private static final long serialVersionUID = 2559488391115562114L;
 
 	/**
 	 * 支付宝店铺编号。
@@ -137,6 +137,13 @@ buyer_logon_id和buyer_id两者传其一，和buyer_id不能同时为空，建�
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 返回参数选项。 商户通过传递该参数来定制需要额外返回的信息字段，数组格式。包括但不限于：["enterprise_pay_info","hyb_amount"]
+	 */
+	@ApiListField("query_options")
+	@ApiField("string")
+	private List<String> queryOptions;
 
 	/**
 	 * 收货人及地址信息
@@ -343,6 +350,13 @@ buyer_logon_id和buyer_id两者传其一，和buyer_id不能同时为空，建�
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public List<String> getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(List<String> queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 	public ReceiverAddressInfo getReceiverAddressInfo() {

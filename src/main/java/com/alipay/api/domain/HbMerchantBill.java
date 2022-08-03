@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户贴息账单
  *
  * @author auto create
- * @since 1.0, 2021-07-05 15:47:03
+ * @since 1.0, 2022-07-26 17:52:14
  */
 public class HbMerchantBill extends AlipayObject {
 
-	private static final long serialVersionUID = 3284384779443992564L;
+	private static final long serialVersionUID = 7848861817218722917L;
 
 	/**
 	 * 商家贴息金额

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 满减券
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:09:22
+ * @since 1.0, 2022-07-28 14:17:16
  */
 public class FixVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4775313329976527535L;
+	private static final long serialVersionUID = 2312258699297661795L;
 
 	/**
 	 * 面额，每张代金券可以抵扣的金额。 限制： 币种为人民币，单位为元。小数点以后最多保留两位。 取值范围:0.1<=x<=3000

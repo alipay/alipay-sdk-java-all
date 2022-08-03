@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 徐伟波测试toapi
  *
  * @author auto create
- * @since 1.0, 2018-03-28 16:33:28
+ * @since 1.0, 2022-07-26 16:34:18
  */
 public class AlipayOpenXwbtesttomsgapiSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7561832267355245585L;
+	private static final long serialVersionUID = 6643336833355958437L;
 
 	/**
 	 * 1

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预发测试资源化升级
  *
  * @author auto create
- * @since 1.0, 2022-06-17 13:30:18
+ * @since 1.0, 2022-07-29 17:24:33
  */
 public class AlipaySecurityShuanqBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6447989379982243283L;
+	private static final long serialVersionUID = 7148611898785867727L;
 
 	/**
 	 * 区

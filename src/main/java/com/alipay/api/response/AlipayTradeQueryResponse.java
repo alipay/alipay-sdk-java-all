@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-12 10:58:49
+ * @since 1.0, 2022-08-02 22:38:16
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6677523999194537462L;
+	private static final long serialVersionUID = 4169659897144947796L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -153,6 +153,12 @@ json格式。
 	 */
 	@ApiField("hb_fq_pay_info")
 	private HbFqPayInfo hbFqPayInfo;
+
+	/** 
+	 * 惠营宝回票金额
+	 */
+	@ApiField("hyb_amount")
+	private String hybAmount;
 
 	/** 
 	 * 行业特殊信息（例如在医保卡支付业务中，向用户返回医疗信息）。
@@ -465,6 +471,13 @@ json格式。
 	}
 	public HbFqPayInfo getHbFqPayInfo( ) {
 		return this.hbFqPayInfo;
+	}
+
+	public void setHybAmount(String hybAmount) {
+		this.hybAmount = hybAmount;
+	}
+	public String getHybAmount( ) {
+		return this.hybAmount;
 	}
 
 	public void setIndustrySepcDetail(String industrySepcDetail) {

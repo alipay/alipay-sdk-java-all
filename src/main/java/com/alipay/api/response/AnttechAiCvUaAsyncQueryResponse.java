@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.ua.async.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-04 15:16:49
+ * @since 1.0, 2022-08-03 18:36:41
  */
 public class AnttechAiCvUaAsyncQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8843683861833199792L;
+	private static final long serialVersionUID = 3469551595918271769L;
 
 	/** 
 	 * 结果访问机器域名
@@ -25,6 +25,12 @@ public class AnttechAiCvUaAsyncQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("result_code")
 	private String resultCode;
+
+	/** 
+	 * 预测结果详情
+	 */
+	@ApiField("result_detail")
+	private String resultDetail;
 
 	/** 
 	 * 返回结果msg
@@ -62,6 +68,13 @@ public class AnttechAiCvUaAsyncQueryResponse extends AlipayResponse {
 	}
 	public String getResultCode( ) {
 		return this.resultCode;
+	}
+
+	public void setResultDetail(String resultDetail) {
+		this.resultDetail = resultDetail;
+	}
+	public String getResultDetail( ) {
+		return this.resultDetail;
 	}
 
 	public void setResultMsg(String resultMsg) {

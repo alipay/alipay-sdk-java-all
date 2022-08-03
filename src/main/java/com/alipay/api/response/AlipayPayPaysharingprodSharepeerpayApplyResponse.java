@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.paysharingprod.sharepeerpay.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-21 22:28:50
+ * @since 1.0, 2022-08-01 16:46:44
  */
 public class AlipayPayPaysharingprodSharepeerpayApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8611819266531221162L;
+	private static final long serialVersionUID = 2849962136389467417L;
+
+	/** 
+	 * 支付宝好友分享代付链接
+	 */
+	@ApiField("firend_share_page_url")
+	private String firendSharePageUrl;
 
 	/** 
 	 * 代付单号
@@ -20,11 +26,57 @@ public class AlipayPayPaysharingprodSharepeerpayApplyResponse extends AlipayResp
 	@ApiField("peerpay_order_no")
 	private String peerpayOrderNo;
 
+	/** 
+	 * 分享代付二维码码值
+	 */
+	@ApiField("qrcode")
+	private String qrcode;
+
+	/** 
+	 * 分享代付二维码图片
+	 */
+	@ApiField("qrcode_image")
+	private String qrcodeImage;
+
+	/** 
+	 * 分享代付吱口令
+	 */
+	@ApiField("ztoken")
+	private String ztoken;
+
+	public void setFirendSharePageUrl(String firendSharePageUrl) {
+		this.firendSharePageUrl = firendSharePageUrl;
+	}
+	public String getFirendSharePageUrl( ) {
+		return this.firendSharePageUrl;
+	}
+
 	public void setPeerpayOrderNo(String peerpayOrderNo) {
 		this.peerpayOrderNo = peerpayOrderNo;
 	}
 	public String getPeerpayOrderNo( ) {
 		return this.peerpayOrderNo;
+	}
+
+	public void setQrcode(String qrcode) {
+		this.qrcode = qrcode;
+	}
+	public String getQrcode( ) {
+		return this.qrcode;
+	}
+
+	public void setQrcodeImage(String qrcodeImage) {
+		this.qrcodeImage = qrcodeImage;
+	}
+	public String getQrcodeImage( ) {
+		return this.qrcodeImage;
+	}
+
+	public void setZtoken(String ztoken) {
+		this.ztoken = ztoken;
+	}
+	public String getZtoken( ) {
+		return this.ztoken;
 	}
 
 }

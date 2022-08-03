@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机具离线码创建
  *
  * @author auto create
- * @since 1.0, 2019-04-26 15:40:19
+ * @since 1.0, 2022-07-26 10:11:58
  */
 public class AlipayCommerceAlideviceinfoOfflinecodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7613447514597849667L;
+	private static final long serialVersionUID = 4446648659789635683L;
 
 	/**
 	 * 绑定标识

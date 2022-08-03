@@ -10,17 +10,31 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放计划定向规则。
  *
  * @author auto create
- * @since 1.0, 2022-07-13 20:20:23
+ * @since 1.0, 2022-07-28 10:29:29
  */
 public class DeliveryTargetRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2615646189826951572L;
+	private static final long serialVersionUID = 3765778726525914779L;
+
+	/**
+	 * 指定品牌id。
+说明：如商户需选择某个品牌下维护的收款账号，请上传相关品牌id
+	 */
+	@ApiListField("brand_id_list")
+	@ApiField("string")
+	private List<String> brandIdList;
 
 	/**
 	 * 投放可用范围，当delivery_recall_mode=CITY_RECALL的时候必填。填写时deliveryAvailableScopeType必填。
 	 */
 	@ApiField("delivery_available_scope")
 	private DeliveryAvailableScope deliveryAvailableScope;
+
+	/**
+	 * 推广城市规则
+	 */
+	@ApiField("delivery_city_code_rule")
+	private DeliveryCityCodeRule deliveryCityCodeRule;
 
 	/**
 	 * 曝光商户选取列表。
@@ -30,6 +44,22 @@ public class DeliveryTargetRule extends AlipayObject {
 	@ApiListField("delivery_merchant_infos")
 	@ApiField("delivery_merchant_info")
 	private List<DeliveryMerchantInfo> deliveryMerchantInfos;
+
+	/**
+	 * 指定支付成功页模式。
+枚举值：
+MANUAL_INPUT_MERCHANT：指定收款账号
+IN_SERVICE_VOUCHER_MERCHANT：优惠券可核收款账号（仅支持支付券）
+收款账号相关规则:接入指南
+	 */
+	@ApiField("delivery_merchant_mode")
+	private String deliveryMerchantMode;
+
+	/**
+	 * 指定支付有礼曝光商户规则。
+	 */
+	@ApiField("delivery_merchant_rule")
+	private DeliveryMerchantRule deliveryMerchantRule;
 
 	/**
 	 * 推荐定向曝光订单优惠标记。
@@ -48,6 +78,19 @@ public class DeliveryTargetRule extends AlipayObject {
 	@ApiField("delivery_recall_mode")
 	private String deliveryRecallMode;
 
+	/**
+	 * 小程序推广可用。枚举值：SERVICE_DIRECT
+	 */
+	@ApiField("delivery_type")
+	private String deliveryType;
+
+	public List<String> getBrandIdList() {
+		return this.brandIdList;
+	}
+	public void setBrandIdList(List<String> brandIdList) {
+		this.brandIdList = brandIdList;
+	}
+
 	public DeliveryAvailableScope getDeliveryAvailableScope() {
 		return this.deliveryAvailableScope;
 	}
@@ -55,11 +98,32 @@ public class DeliveryTargetRule extends AlipayObject {
 		this.deliveryAvailableScope = deliveryAvailableScope;
 	}
 
+	public DeliveryCityCodeRule getDeliveryCityCodeRule() {
+		return this.deliveryCityCodeRule;
+	}
+	public void setDeliveryCityCodeRule(DeliveryCityCodeRule deliveryCityCodeRule) {
+		this.deliveryCityCodeRule = deliveryCityCodeRule;
+	}
+
 	public List<DeliveryMerchantInfo> getDeliveryMerchantInfos() {
 		return this.deliveryMerchantInfos;
 	}
 	public void setDeliveryMerchantInfos(List<DeliveryMerchantInfo> deliveryMerchantInfos) {
 		this.deliveryMerchantInfos = deliveryMerchantInfos;
+	}
+
+	public String getDeliveryMerchantMode() {
+		return this.deliveryMerchantMode;
+	}
+	public void setDeliveryMerchantMode(String deliveryMerchantMode) {
+		this.deliveryMerchantMode = deliveryMerchantMode;
+	}
+
+	public DeliveryMerchantRule getDeliveryMerchantRule() {
+		return this.deliveryMerchantRule;
+	}
+	public void setDeliveryMerchantRule(DeliveryMerchantRule deliveryMerchantRule) {
+		this.deliveryMerchantRule = deliveryMerchantRule;
 	}
 
 	public String getDeliveryPromoTags() {
@@ -74,6 +138,13 @@ public class DeliveryTargetRule extends AlipayObject {
 	}
 	public void setDeliveryRecallMode(String deliveryRecallMode) {
 		this.deliveryRecallMode = deliveryRecallMode;
+	}
+
+	public String getDeliveryType() {
+		return this.deliveryType;
+	}
+	public void setDeliveryType(String deliveryType) {
+		this.deliveryType = deliveryType;
 	}
 
 }

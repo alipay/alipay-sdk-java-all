@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-04 20:17:57
+ * @since 1.0, 2022-08-02 22:37:48
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5479696538458167826L;
+	private static final long serialVersionUID = 8434483679935423426L;
 
 	/** 
 	 * 用户的登录id
@@ -109,6 +109,12 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_fee")
 	private String refundFee;
+
+	/** 
+	 * 本次请求退惠营宝金额
+	 */
+	@ApiField("refund_hyb_amount")
+	private String refundHybAmount;
 
 	/** 
 	 * 退回的前置资产列表
@@ -238,6 +244,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	}
 	public String getRefundFee( ) {
 		return this.refundFee;
+	}
+
+	public void setRefundHybAmount(String refundHybAmount) {
+		this.refundHybAmount = refundHybAmount;
+	}
+	public String getRefundHybAmount( ) {
+		return this.refundHybAmount;
 	}
 
 	public void setRefundPresetPaytoolList(PresetPayToolInfo refundPresetPaytoolList) {

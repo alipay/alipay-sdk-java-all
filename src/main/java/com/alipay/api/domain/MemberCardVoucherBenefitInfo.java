@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MemberCardVoucherBenefitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7718931892341529591L;
+	private static final long serialVersionUID = 4267816359537639458L;
 
 	/**
 	 * 券权益奖励次数

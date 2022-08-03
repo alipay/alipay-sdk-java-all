@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KeywordsHighlight extends AlipayObject {
 
-	private static final long serialVersionUID = 7756435732669523388L;
+	private static final long serialVersionUID = 4619377844423987584L;
 
 	/**
 	 * 将搜索关键字用<em>进行高亮显示

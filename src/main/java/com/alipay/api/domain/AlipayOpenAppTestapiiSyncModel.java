@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试msgapi
  *
  * @author auto create
- * @since 1.0, 2018-10-15 18:57:55
+ * @since 1.0, 2022-07-26 16:35:29
  */
 public class AlipayOpenAppTestapiiSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8254622922248542927L;
+	private static final long serialVersionUID = 3569466736569284173L;
 
 	/**
 	 * v

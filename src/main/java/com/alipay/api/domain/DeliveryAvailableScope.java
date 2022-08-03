@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放可用范围
  *
  * @author auto create
- * @since 1.0, 2022-07-13 20:20:23
+ * @since 1.0, 2022-07-26 19:35:02
  */
 public class DeliveryAvailableScope extends AlipayObject {
 
-	private static final long serialVersionUID = 2248516745627152155L;
+	private static final long serialVersionUID = 2593666589288937337L;
 
 	/**
 	 * 投放城市编码，当delivery_available_scope_type=CITY_CODE，那么该对象必须填值。填值时all_city和city_codes两者二选一且必填。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无授权模式的查询对账单下载地址
  *
  * @author auto create
- * @since 1.0, 2022-07-08 00:07:40
+ * @since 1.0, 2022-07-25 15:12:13
  */
 public class AlipayDataDataserviceBillDownloadurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6144539137952494224L;
+	private static final long serialVersionUID = 4743975916735431669L;
 
 	/**
 	 * 账单时间： 
@@ -29,6 +29,12 @@ signcustomer：基于商户支付宝余额收入及支出等资金变动的账�
 	@ApiField("bill_type")
 	private String billType;
 
+	/**
+	 * 二级商户smid
+	 */
+	@ApiField("smid")
+	private String smid;
+
 	public String getBillDate() {
 		return this.billDate;
 	}
@@ -41,6 +47,13 @@ signcustomer：基于商户支付宝余额收入及支出等资金变动的账�
 	}
 	public void setBillType(String billType) {
 		this.billType = billType;
+	}
+
+	public String getSmid() {
+		return this.smid;
+	}
+	public void setSmid(String smid) {
+		this.smid = smid;
 	}
 
 }

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标的详情
  *
  * @author auto create
- * @since 1.0, 2022-05-10 10:59:06
+ * @since 1.0, 2022-07-26 16:14:28
  */
 public class BidDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6579291965352712767L;
+	private static final long serialVersionUID = 4114786449283144573L;
 
 	/**
 	 * 标的截止时间

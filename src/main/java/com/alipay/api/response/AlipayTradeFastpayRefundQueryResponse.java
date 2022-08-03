@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-04 20:17:13
+ * @since 1.0, 2022-08-02 22:37:35
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2691164681275185149L;
+	private static final long serialVersionUID = 2533262584769939167L;
 
 	/** 
 	 * 银行卡冲退信息；
@@ -117,6 +117,12 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	@ApiListField("refund_detail_item_list")
 	@ApiField("trade_fund_bill")
 	private List<TradeFundBill> refundDetailItemList;
+
+	/** 
+	 * 本次退款金额中退惠营宝的金额
+	 */
+	@ApiField("refund_hyb_amount")
+	private String refundHybAmount;
 
 	/** 
 	 * 发起退款时，传入的退款原因
@@ -269,6 +275,13 @@ REFUND_SUCCESS 退款处理成功；
 	}
 	public List<TradeFundBill> getRefundDetailItemList( ) {
 		return this.refundDetailItemList;
+	}
+
+	public void setRefundHybAmount(String refundHybAmount) {
+		this.refundHybAmount = refundHybAmount;
+	}
+	public String getRefundHybAmount( ) {
+		return this.refundHybAmount;
 	}
 
 	public void setRefundReason(String refundReason) {

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-05 16:36:45
+ * @since 1.0, 2022-07-26 16:17:34
  */
 public class AlipayMerchantOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2615317473186541357L;
+	private static final long serialVersionUID = 5588418688469267311L;
 
 	/** 
 	 * 分发结果

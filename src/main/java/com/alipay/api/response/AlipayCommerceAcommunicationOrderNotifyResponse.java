@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.order.notify response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-29 14:42:00
+ * @since 1.0, 2022-07-26 10:26:43
  */
 public class AlipayCommerceAcommunicationOrderNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7724882997853978911L;
+	private static final long serialVersionUID = 8712614625985625618L;
 
 	/** 
 	 * 支付宝订单号
@@ -28,7 +28,7 @@ public class AlipayCommerceAcommunicationOrderNotifyResponse extends AlipayRespo
 
 	/** 
 	 * SUCCESS结算成功
-FAIL失败退款
+FAILED失败退款
 	 */
 	@ApiField("status")
 	private String status;

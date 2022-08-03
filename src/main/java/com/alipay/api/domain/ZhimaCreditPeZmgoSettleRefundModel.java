@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO结算退款接口
  *
  * @author auto create
- * @since 1.0, 2021-08-10 15:57:14
+ * @since 1.0, 2022-07-29 11:36:01
  */
 public class ZhimaCreditPeZmgoSettleRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8479863857672672157L;
+	private static final long serialVersionUID = 2819183411173978193L;
 
 	/**
 	 * 签约芝麻GO的业务协议号，在签约成功、结算成功等通知中回回传给商户。

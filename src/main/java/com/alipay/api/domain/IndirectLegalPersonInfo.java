@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 法人身份信息
  *
  * @author auto create
- * @since 1.0, 2022-06-15 13:52:12
+ * @since 1.0, 2022-07-25 18:04:46
  */
 public class IndirectLegalPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7841558185973141541L;
+	private static final long serialVersionUID = 6641468665519272682L;
 
 	/**
 	 * 授权函照片（使用图片上传接口），当证件持有人类型为 经办人时，必须上传。其他情况，无需上传

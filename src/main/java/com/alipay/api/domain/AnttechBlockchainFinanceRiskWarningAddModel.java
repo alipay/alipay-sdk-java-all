@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风控预警信息提交
  *
  * @author auto create
- * @since 1.0, 2020-07-23 19:20:11
+ * @since 1.0, 2022-07-27 16:37:19
  */
 public class AnttechBlockchainFinanceRiskWarningAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7788769417796841156L;
+	private static final long serialVersionUID = 6269471385584946175L;
 
 	/**
 	 * 外部风控编号

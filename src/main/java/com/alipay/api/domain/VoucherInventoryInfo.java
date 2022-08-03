@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券库存信息
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:09:22
+ * @since 1.0, 2022-07-28 14:17:16
  */
 public class VoucherInventoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7291275244492829241L;
+	private static final long serialVersionUID = 4458561371163933415L;
 
 	/**
 	 * 已发放数量

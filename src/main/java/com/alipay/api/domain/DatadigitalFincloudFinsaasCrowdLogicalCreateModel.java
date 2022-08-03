@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建逻辑规则圈人
  *
  * @author auto create
- * @since 1.0, 2022-05-26 09:36:36
+ * @since 1.0, 2022-08-03 16:33:47
  */
 public class DatadigitalFincloudFinsaasCrowdLogicalCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6164314869759225771L;
+	private static final long serialVersionUID = 8169626341841543979L;
 
 	/**
 	 * 逻辑圈人人群基本信息+不唯一

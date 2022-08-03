@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 折扣券详情
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:09:22
+ * @since 1.0, 2022-07-28 14:17:16
  */
 public class DiscountVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2713836685389169196L;
+	private static final long serialVersionUID = 8842763391931619257L;
 
 	/**
 	 * 封顶金额。 限制： 币种为人民币，单位为元; 小数点以后最多保留两位; 取值范围:0.1<=x<=15000;

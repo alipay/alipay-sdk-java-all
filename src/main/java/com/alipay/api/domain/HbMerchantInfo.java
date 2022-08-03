@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗分期贴息商户信息模型
  *
  * @author auto create
- * @since 1.0, 2020-07-22 13:50:28
+ * @since 1.0, 2022-07-26 17:52:02
  */
 public class HbMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5661572532563197742L;
+	private static final long serialVersionUID = 4873786373518321974L;
 
 	/**
 	 * 描述收单模式，目前取值有 直联/间联/境外

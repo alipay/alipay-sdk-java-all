@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserUnicomOrderInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6264497762189855367L;
+	private static final long serialVersionUID = 4867539951897537653L;
 
 	/**
 	 * 订单变更时间，返回自January 1, 1970, 00:00:00 GMT至订单变更时刻的毫秒数, java代码获取示例：new Date().getTime()

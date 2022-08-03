@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据制度id分页查询制度下的员工
  *
  * @author auto create
- * @since 1.0, 2021-12-14 17:52:33
+ * @since 1.0, 2022-07-26 20:02:13
  */
 public class AlipayEbppInvoiceExpenserulesEmployeeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1436537583455476274L;
+	private static final long serialVersionUID = 2592434638194146558L;
 
 	/**
 	 * 企业ID
@@ -24,6 +24,12 @@ public class AlipayEbppInvoiceExpenserulesEmployeeQueryModel extends AlipayObjec
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 企业码企业id
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 页数
@@ -55,6 +61,13 @@ public class AlipayEbppInvoiceExpenserulesEmployeeQueryModel extends AlipayObjec
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public Long getPageNum() {

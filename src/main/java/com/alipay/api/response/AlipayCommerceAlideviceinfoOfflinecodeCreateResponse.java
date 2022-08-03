@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.alideviceinfo.offlinecode.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 10:41:58
+ * @since 1.0, 2022-07-26 10:11:58
  */
 public class AlipayCommerceAlideviceinfoOfflinecodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6312413761982313989L;
+	private static final long serialVersionUID = 7489288267218943565L;
 
 	/** 
 	 * 机具统一ID

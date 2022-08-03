@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CustomReportCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 5766569274731576777L;
+	private static final long serialVersionUID = 3154236841347489866L;
 
 	/**
 	 * 规则KEY-为空则为创建规则，否则更新规则

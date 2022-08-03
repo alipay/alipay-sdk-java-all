@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单报关接口
  *
  * @author auto create
- * @since 1.0, 2022-07-22 15:59:51
+ * @since 1.0, 2022-08-01 19:11:48
  */
 public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8827791689377529455L;
+	private static final long serialVersionUID = 1234388781146442537L;
 
 	/**
 	 * 报关金额，单位为人民币“元”，精确到小数点后2位。
@@ -26,7 +26,7 @@ public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 	private CustomsDeclareBuyerInfo buyerInfo;
 
 	/**
-	 * 海关编号（大小写皆可）。参见“ <a href="https://doc.open.alipay.com/docs/doc.htm?treeId=267&articleId=105883&docType=1">海关编号</a>”。
+	 * 海关编号（大小写皆可）。参见“ <a href="https://opendocs.alipay.com/pre-open/01x3kh#%E6%B5%B7%E5%85%B3%E7%BC%96%E5%8F%B7">海关编号</a>”。
 	 */
 	@ApiField("customs_place")
 	private String customsPlace;

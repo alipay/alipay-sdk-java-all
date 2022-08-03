@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.shuanq.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-06-17 13:31:42
+ * @since 1.0, 2022-07-29 17:26:42
  */
 public class AlipaySecurityShuanqBatchqueryRequest implements AlipayRequest<AlipaySecurityShuanqBatchqueryResponse> {
 

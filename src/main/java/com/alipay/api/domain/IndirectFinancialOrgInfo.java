@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 金融机构信息
  *
  * @author auto create
- * @since 1.0, 2022-06-15 13:50:00
+ * @since 1.0, 2022-07-25 18:04:25
  */
 public class IndirectFinancialOrgInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1511431384418188173L;
+	private static final long serialVersionUID = 5444273858182585127L;
 
 	/**
 	 * 金融机构许可证图片，最多五张（使用图片上传接口）

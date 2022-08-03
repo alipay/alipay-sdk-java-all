@@ -2,12 +2,21 @@ package com.alipay.api.response;
 
 import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.ActivityBaseInfo;
 import com.alipay.api.domain.PaymentVoucherBelongMerchantInfo;
 import com.alipay.api.domain.VoucherSummary;
+import com.alipay.api.domain.VoucherAvailableScopeInfo;
 import com.alipay.api.domain.PaymentVoucherBudgetInfo;
+import com.alipay.api.domain.VoucherBudgetSupplyInfo;
+import com.alipay.api.domain.VoucherCustomerGuideInfo;
+import com.alipay.api.domain.VoucherDeductInfo;
 import com.alipay.api.domain.PaymentVoucherDisplayInfo;
+import com.alipay.api.domain.VoucherDisplayPatternInfo;
+import com.alipay.api.domain.VoucherInventoryInfo;
+import com.alipay.api.domain.VoucherSendModeInfo;
 import com.alipay.api.domain.PaymentVoucherSendRule;
 import com.alipay.api.domain.PaymentVoucherUseRuleDetail;
+import com.alipay.api.domain.VoucherUseRuleInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -15,11 +24,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-21 16:55:05
+ * @since 1.0, 2022-08-03 14:21:39
  */
 public class AlipayMarketingActivityVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8794757299185188954L;
+	private static final long serialVersionUID = 8574965128184946256L;
+
+	/** 
+	 * 活动基础信息
+	 */
+	@ApiField("activity_base_info")
+	private ActivityBaseInfo activityBaseInfo;
 
 	/** 
 	 * 活动ID
@@ -69,16 +84,58 @@ FINISHED：已停止
 	private VoucherSummary summary;
 
 	/** 
+	 * 券可用范围
+	 */
+	@ApiField("voucher_available_scope_info")
+	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
+
+	/** 
 	 * 营销资金预算
 	 */
 	@ApiField("voucher_budget_info")
 	private PaymentVoucherBudgetInfo voucherBudgetInfo;
 
 	/** 
+	 * 资金信息
+	 */
+	@ApiField("voucher_budget_supply_info")
+	private VoucherBudgetSupplyInfo voucherBudgetSupplyInfo;
+
+	/** 
+	 * 券引导信息
+	 */
+	@ApiField("voucher_customer_guide_info")
+	private VoucherCustomerGuideInfo voucherCustomerGuideInfo;
+
+	/** 
+	 * 券优惠抵扣信息
+	 */
+	@ApiField("voucher_deduct_info")
+	private VoucherDeductInfo voucherDeductInfo;
+
+	/** 
 	 * 券详情页
 	 */
 	@ApiField("voucher_display_info")
 	private PaymentVoucherDisplayInfo voucherDisplayInfo;
+
+	/** 
+	 * 券展示信息
+	 */
+	@ApiField("voucher_display_pattern_info")
+	private VoucherDisplayPatternInfo voucherDisplayPatternInfo;
+
+	/** 
+	 * 券库存信息
+	 */
+	@ApiField("voucher_inventory_info")
+	private VoucherInventoryInfo voucherInventoryInfo;
+
+	/** 
+	 * 券发放详情
+	 */
+	@ApiField("voucher_send_mode_info")
+	private VoucherSendModeInfo voucherSendModeInfo;
 
 	/** 
 	 * 券发放规则
@@ -99,6 +156,19 @@ FIX_VOUCHER：固定面额满减券
 	 */
 	@ApiField("voucher_use_rule")
 	private PaymentVoucherUseRuleDetail voucherUseRule;
+
+	/** 
+	 * 券核销限制
+	 */
+	@ApiField("voucher_use_rule_info")
+	private VoucherUseRuleInfo voucherUseRuleInfo;
+
+	public void setActivityBaseInfo(ActivityBaseInfo activityBaseInfo) {
+		this.activityBaseInfo = activityBaseInfo;
+	}
+	public ActivityBaseInfo getActivityBaseInfo( ) {
+		return this.activityBaseInfo;
+	}
 
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
@@ -149,6 +219,13 @@ FIX_VOUCHER：固定面额满减券
 		return this.summary;
 	}
 
+	public void setVoucherAvailableScopeInfo(VoucherAvailableScopeInfo voucherAvailableScopeInfo) {
+		this.voucherAvailableScopeInfo = voucherAvailableScopeInfo;
+	}
+	public VoucherAvailableScopeInfo getVoucherAvailableScopeInfo( ) {
+		return this.voucherAvailableScopeInfo;
+	}
+
 	public void setVoucherBudgetInfo(PaymentVoucherBudgetInfo voucherBudgetInfo) {
 		this.voucherBudgetInfo = voucherBudgetInfo;
 	}
@@ -156,11 +233,53 @@ FIX_VOUCHER：固定面额满减券
 		return this.voucherBudgetInfo;
 	}
 
+	public void setVoucherBudgetSupplyInfo(VoucherBudgetSupplyInfo voucherBudgetSupplyInfo) {
+		this.voucherBudgetSupplyInfo = voucherBudgetSupplyInfo;
+	}
+	public VoucherBudgetSupplyInfo getVoucherBudgetSupplyInfo( ) {
+		return this.voucherBudgetSupplyInfo;
+	}
+
+	public void setVoucherCustomerGuideInfo(VoucherCustomerGuideInfo voucherCustomerGuideInfo) {
+		this.voucherCustomerGuideInfo = voucherCustomerGuideInfo;
+	}
+	public VoucherCustomerGuideInfo getVoucherCustomerGuideInfo( ) {
+		return this.voucherCustomerGuideInfo;
+	}
+
+	public void setVoucherDeductInfo(VoucherDeductInfo voucherDeductInfo) {
+		this.voucherDeductInfo = voucherDeductInfo;
+	}
+	public VoucherDeductInfo getVoucherDeductInfo( ) {
+		return this.voucherDeductInfo;
+	}
+
 	public void setVoucherDisplayInfo(PaymentVoucherDisplayInfo voucherDisplayInfo) {
 		this.voucherDisplayInfo = voucherDisplayInfo;
 	}
 	public PaymentVoucherDisplayInfo getVoucherDisplayInfo( ) {
 		return this.voucherDisplayInfo;
+	}
+
+	public void setVoucherDisplayPatternInfo(VoucherDisplayPatternInfo voucherDisplayPatternInfo) {
+		this.voucherDisplayPatternInfo = voucherDisplayPatternInfo;
+	}
+	public VoucherDisplayPatternInfo getVoucherDisplayPatternInfo( ) {
+		return this.voucherDisplayPatternInfo;
+	}
+
+	public void setVoucherInventoryInfo(VoucherInventoryInfo voucherInventoryInfo) {
+		this.voucherInventoryInfo = voucherInventoryInfo;
+	}
+	public VoucherInventoryInfo getVoucherInventoryInfo( ) {
+		return this.voucherInventoryInfo;
+	}
+
+	public void setVoucherSendModeInfo(VoucherSendModeInfo voucherSendModeInfo) {
+		this.voucherSendModeInfo = voucherSendModeInfo;
+	}
+	public VoucherSendModeInfo getVoucherSendModeInfo( ) {
+		return this.voucherSendModeInfo;
 	}
 
 	public void setVoucherSendRule(PaymentVoucherSendRule voucherSendRule) {
@@ -182,6 +301,13 @@ FIX_VOUCHER：固定面额满减券
 	}
 	public PaymentVoucherUseRuleDetail getVoucherUseRule( ) {
 		return this.voucherUseRule;
+	}
+
+	public void setVoucherUseRuleInfo(VoucherUseRuleInfo voucherUseRuleInfo) {
+		this.voucherUseRuleInfo = voucherUseRuleInfo;
+	}
+	public VoucherUseRuleInfo getVoucherUseRuleInfo( ) {
+		return this.voucherUseRuleInfo;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值订单业务办理结果通知
  *
  * @author auto create
- * @since 1.0, 2022-06-29 14:42:00
+ * @since 1.0, 2022-07-26 10:22:18
  */
 public class AlipayCommerceAcommunicationOrderNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2537462138796559729L;
+	private static final long serialVersionUID = 3245372314785199553L;
 
 	/**
 	 * 支付宝侧订单号
@@ -39,7 +39,7 @@ public class AlipayCommerceAcommunicationOrderNotifyModel extends AlipayObject {
 
 	/**
 	 * SUCCESS 业务办理成功
-FAIL 业务办理失败
+FAILED 业务办理失败
 在回调接口中只有终态
 	 */
 	@ApiField("out_order_status")

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2022-07-12 10:59:07
+ * @since 1.0, 2022-08-02 22:38:34
  */
 public class AlipayTradePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1777441818478855463L;
+	private static final long serialVersionUID = 8744643415571214625L;
 
 	/**
 	 * 支付宝店铺编号。
@@ -136,6 +136,13 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	 */
 	@ApiField("qr_code_timeout_express")
 	private String qrCodeTimeoutExpress;
+
+	/**
+	 * 返回参数选项。 商户通过传递该参数来定制需要额外返回的信息字段，数组格式。包括但不限于：["hyb_amount","enterprise_pay_info"]
+	 */
+	@ApiListField("query_options")
+	@ApiField("string")
+	private List<String> queryOptions;
 
 	/**
 	 * 描述分账信息，json格式。
@@ -339,6 +346,13 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	}
 	public void setQrCodeTimeoutExpress(String qrCodeTimeoutExpress) {
 		this.qrCodeTimeoutExpress = qrCodeTimeoutExpress;
+	}
+
+	public List<String> getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(List<String> queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 	public RoyaltyInfo getRoyaltyInfo() {

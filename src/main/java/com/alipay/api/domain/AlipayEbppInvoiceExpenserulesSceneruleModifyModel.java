@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控制度修改
  *
  * @author auto create
- * @since 1.0, 2022-07-11 21:27:51
+ * @since 1.0, 2022-07-26 20:11:27
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8862927649443125281L;
+	private static final long serialVersionUID = 4223543742593434854L;
 
 	/**
 	 * 企业ID
@@ -50,6 +50,12 @@ ADD_RULE（新增费控条件），DELETE_RULE（删除费控条件），MODIFY_
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
+
+	/**
+	 * 企业码企业id
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 费控规则条件列表 特殊说明：新增费控条件/修改费控条件/删除费控条件操作时必填
@@ -122,6 +128,13 @@ ADD_RULE（新增费控条件），DELETE_RULE（删除费控条件），MODIFY_
 	}
 	public void setEffectiveStartDate(Date effectiveStartDate) {
 		this.effectiveStartDate = effectiveStartDate;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public List<ExpenseCtrRuleInfo> getExpenseCtrlRuleInfoList() {

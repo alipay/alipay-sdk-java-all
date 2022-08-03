@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 费控查询制度
  *
  * @author auto create
- * @since 1.0, 2021-12-14 17:57:00
+ * @since 1.0, 2022-07-26 20:02:13
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3552178131842825456L;
+	private static final long serialVersionUID = 8827869283243177493L;
 
 	/**
 	 * 企业ID
@@ -24,6 +24,12 @@ public class AlipayEbppInvoiceExpenserulesSceneruleQueryModel extends AlipayObje
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 企业码企业id
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 页数
@@ -55,6 +61,13 @@ public class AlipayEbppInvoiceExpenserulesSceneruleQueryModel extends AlipayObje
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public Long getPageNum() {

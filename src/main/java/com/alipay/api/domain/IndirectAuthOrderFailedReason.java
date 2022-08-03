@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联意愿申请单审核失败原因
  *
  * @author auto create
- * @since 1.0, 2022-06-27 11:27:14
+ * @since 1.0, 2022-07-25 18:04:32
  */
 public class IndirectAuthOrderFailedReason extends AlipayObject {
 
-	private static final long serialVersionUID = 8125919557533332826L;
+	private static final long serialVersionUID = 3413189843538635171L;
 
 	/**
 	 * 审核失败字段

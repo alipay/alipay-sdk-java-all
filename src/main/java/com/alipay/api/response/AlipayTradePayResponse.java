@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-04 11:11:51
+ * @since 1.0, 2022-08-02 22:41:41
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6372921278947291642L;
+	private static final long serialVersionUID = 1136654381178743323L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -160,6 +160,12 @@ bluesea_1：蓝海活动优惠费率标签；
 	 */
 	@ApiField("gmt_payment")
 	private Date gmtPayment;
+
+	/** 
+	 * 惠营宝回票金额
+	 */
+	@ApiField("hyb_amount")
+	private String hybAmount;
 
 	/** 
 	 * 交易中可给用户开具发票的金额
@@ -416,6 +422,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	}
 	public Date getGmtPayment( ) {
 		return this.gmtPayment;
+	}
+
+	public void setHybAmount(String hybAmount) {
+		this.hybAmount = hybAmount;
+	}
+	public String getHybAmount( ) {
+		return this.hybAmount;
 	}
 
 	public void setInvoiceAmount(String invoiceAmount) {

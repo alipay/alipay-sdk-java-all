@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报关记录详情数据结构
  *
  * @author auto create
- * @since 1.0, 2016-11-09 19:11:58
+ * @since 1.0, 2022-07-29 14:54:45
  */
 public class CustomsDeclareRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8136375365999575357L;
+	private static final long serialVersionUID = 4231792144489249933L;
 
 	/**
 	 * 支付宝报关流水号。
@@ -26,7 +26,7 @@ public class CustomsDeclareRecordInfo extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 此记录所报关的海关编号，参见“海关编号”。
+	 * 此记录所报关的海关编号，参见“ <a href="https://opendocs.alipay.com/pre-open/01x3kh#%E6%B5%B7%E5%85%B3%E7%BC%96%E5%8F%B7">海关编号</a>”。
 	 */
 	@ApiField("customs_place")
 	private String customsPlace;

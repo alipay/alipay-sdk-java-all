@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneStockQualifiedInvestorApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8141584664199562833L;
+	private static final long serialVersionUID = 5825346149847539549L;
 
 	/**
 	 * 身份证号的md5值 32位 大写

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 版本模型
  *
  * @author auto create
- * @since 1.0, 2021-02-22 14:32:05
+ * @since 1.0, 2022-08-03 18:52:54
  */
 public class MiniAppVersionBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1359554557486497113L;
+	private static final long serialVersionUID = 6752317438425232973L;
 
 	/**
 	 * 开发者版本
@@ -51,6 +51,12 @@ public class MiniAppVersionBaseInfo extends AlipayObject {
 	 */
 	@ApiField("ext_json")
 	private String extJson;
+
+	/**
+	 * 包版本构建拓展参数
+	 */
+	@ApiField("extend_info")
+	private String extendInfo;
 
 	/**
 	 * 更新时间
@@ -188,6 +194,13 @@ public class MiniAppVersionBaseInfo extends AlipayObject {
 	}
 	public void setExtJson(String extJson) {
 		this.extJson = extJson;
+	}
+
+	public String getExtendInfo() {
+		return this.extendInfo;
+	}
+	public void setExtendInfo(String extendInfo) {
+		this.extendInfo = extendInfo;
 	}
 
 	public Date getGmtModified() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模方平台通用异步inference结果查询接口
  *
  * @author auto create
- * @since 1.0, 2022-07-04 15:14:12
+ * @since 1.0, 2022-08-03 18:32:56
  */
 public class AnttechAiCvUaAsyncQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6394339661623344744L;
+	private static final long serialVersionUID = 4369981777548272183L;
 
 	/**
 	 * 业务接入在m2平台申请的接入appid

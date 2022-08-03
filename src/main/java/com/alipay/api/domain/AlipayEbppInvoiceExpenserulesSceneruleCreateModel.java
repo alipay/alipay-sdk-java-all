@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控制度添加
  *
  * @author auto create
- * @since 1.0, 2022-07-11 21:27:15
+ * @since 1.0, 2022-07-26 20:11:27
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3484285553745254125L;
+	private static final long serialVersionUID = 2218567913253163665L;
 
 	/**
 	 * 企业ID
@@ -48,6 +48,12 @@ public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObj
 	@ApiListField("employee_list")
 	@ApiField("string")
 	private List<String> employeeList;
+
+	/**
+	 * 企业码企业id
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 费控条件列表
@@ -132,6 +138,13 @@ public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObj
 	}
 	public void setEmployeeList(List<String> employeeList) {
 		this.employeeList = employeeList;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public List<ExpenseCtrRuleInfo> getExpenseCtrlRuleInfoList() {

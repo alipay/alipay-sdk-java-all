@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2022-07-12 10:36:53
+ * @since 1.0, 2022-08-03 14:09:35
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1638459258694441818L;
+	private static final long serialVersionUID = 8739421365676542615L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -121,6 +121,13 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	 */
 	@ApiField("promo_params")
 	private String promoParams;
+
+	/**
+	 * 返回参数选项。 商户通过传递该参数来定制需要额外返回的信息字段，数组格式。包括但不限于：["hyb_amount","enterprise_pay_info"]
+	 */
+	@ApiListField("query_options")
+	@ApiField("string")
+	private List<String> queryOptions;
 
 	/**
 	 * 用户付款中途退出返回商户网站的地址
@@ -313,6 +320,13 @@ json格式，详见结算参数说明，以下两种场景必传：
 	}
 	public void setPromoParams(String promoParams) {
 		this.promoParams = promoParams;
+	}
+
+	public List<String> getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(List<String> queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 	public String getQuitUrl() {

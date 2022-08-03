@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayCodecApplepayCredentialsGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6698898645287959536L;
+	private static final long serialVersionUID = 6588266641225857296L;
 
 	/** 
 	 * 加密后的码列表。

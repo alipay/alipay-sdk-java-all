@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PointTransInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5794263585182114734L;
+	private static final long serialVersionUID = 8783351397727491997L;
 
 	/**
 	 * 流水发生业务时间。发放流水为发放时间，兑换流水为兑换扣减流水的时间

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4318526235133522281L;
+	private static final long serialVersionUID = 7281817637479353142L;
 
 	/**
 	 * 垫资支付模式。支付时需要垫资的场景才传入。具体传参需与支付宝约定。
@@ -65,7 +65,7 @@ CREDIT_FULFILLMENT_ZM表示基于芝麻授信的履约支付模式，比如芝�
 	private String orderPayMode;
 
 	/**
-	 * 商户请求号，标识一次请求的唯一id，用于幂等控制。部分履约支付场景下必传。
+	 * 商户请求号，标识一次请求的唯一id，用于幂等控制。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

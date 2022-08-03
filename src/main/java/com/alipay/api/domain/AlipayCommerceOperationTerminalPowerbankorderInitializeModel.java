@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationTerminalPowerbankorderInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2266356942367425887L;
+	private static final long serialVersionUID = 3885524682648311787L;
 
 	/**
 	 * 预授权单号，通过线上资金授权冻结接口获取

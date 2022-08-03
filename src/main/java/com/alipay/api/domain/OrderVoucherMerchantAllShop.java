@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderVoucherMerchantAllShop extends AlipayObject {
 
-	private static final long serialVersionUID = 6148454966883322223L;
+	private static final long serialVersionUID = 8848145813983248438L;
 
 	/**
 	 * 券不可使用的门店列表。指定商户全部门店可用时可通过该字段排除部分不可用门店。

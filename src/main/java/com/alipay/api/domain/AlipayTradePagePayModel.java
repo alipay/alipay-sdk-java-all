@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单下单并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2022-06-27 14:57:39
+ * @since 1.0, 2022-08-02 22:38:46
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4242689321896459588L;
+	private static final long serialVersionUID = 5763771653623258233L;
 
 	/**
 	 * 签约参数，支付后签约场景使用
@@ -153,6 +153,13 @@ PCWEB：PC端访问
 	 */
 	@ApiField("qrcode_width")
 	private Long qrcodeWidth;
+
+	/**
+	 * 返回参数选项。 商户通过传递该参数来定制需要额外返回的信息字段，数组格式。包括但不限于：["hyb_amount","enterprise_pay_info"]
+	 */
+	@ApiListField("query_options")
+	@ApiField("string")
+	private List<String> queryOptions;
 
 	/**
 	 * 请求来源地址。如果使用ALIAPP的集成方式，用户中途取消支付会返回该地址。
@@ -344,6 +351,13 @@ PCWEB：PC端访问
 	}
 	public void setQrcodeWidth(Long qrcodeWidth) {
 		this.qrcodeWidth = qrcodeWidth;
+	}
+
+	public List<String> getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(List<String> queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 	public String getRequestFromUrl() {

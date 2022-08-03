@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改规则员工关系
  *
  * @author auto create
- * @since 1.0, 2021-12-14 17:55:44
+ * @since 1.0, 2022-07-26 20:11:13
  */
 public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1532251845148613729L;
+	private static final long serialVersionUID = 7415795566964899524L;
 
 	/**
 	 * 企业ID
@@ -35,6 +35,12 @@ public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends Alipa
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 企业码企业id
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 费控规则ID列表
@@ -70,6 +76,13 @@ public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends Alipa
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public List<String> getGroupIdList() {
