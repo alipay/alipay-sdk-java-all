@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasFundInstitutionschoolinfCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8372374386629797167L;
+	private static final long serialVersionUID = 6113528578648476863L;
 
 	/**
 	 * 必填，必须是行业属性代码表中存在的最细分类的记录。

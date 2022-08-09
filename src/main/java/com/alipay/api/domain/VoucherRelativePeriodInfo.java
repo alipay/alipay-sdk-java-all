@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherRelativePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8447733671177527783L;
+	private static final long serialVersionUID = 7192668167762141288L;
 
 	/**
 	 * 券生效后N天内可以使用。 可以配合wait_days_after_receive字段使用。 

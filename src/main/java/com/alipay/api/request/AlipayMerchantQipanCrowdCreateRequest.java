@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.qipan.crowd.create request
  * 
  * @author auto create
- * @since 1.0, 2022-08-02 11:16:50
+ * @since 1.0, 2022-08-04 15:51:39
  */
 public class AlipayMerchantQipanCrowdCreateRequest implements AlipayRequest<AlipayMerchantQipanCrowdCreateResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.third.customer.service response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:12:10
+ * @since 1.0, 2022-08-05 19:30:26
  */
 public class AlipayOpenPublicThirdCustomerServiceResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3899513954911248297L;
+	private static final long serialVersionUID = 2481114713763213634L;
 
 	/** 
 	 * 授权给第三方渠道商的服务窗名称

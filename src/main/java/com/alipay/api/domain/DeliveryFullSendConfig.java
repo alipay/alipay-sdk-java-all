@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiField;
 说明：可投放的活动类型在满减玩法配置中进行说明。
  *
  * @author auto create
- * @since 1.0, 2022-05-16 10:10:42
+ * @since 1.0, 2022-08-08 13:14:25
  */
 public class DeliveryFullSendConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 6369399856334945266L;
+	private static final long serialVersionUID = 6263495898661691682L;
 
 	/**
 	 * 投放展位的投放内容。

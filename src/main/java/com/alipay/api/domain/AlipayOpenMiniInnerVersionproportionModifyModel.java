@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改版本基础库
  *
  * @author auto create
- * @since 1.0, 2022-07-14 11:40:21
+ * @since 1.0, 2022-08-05 14:15:13
  */
 public class AlipayOpenMiniInnerVersionproportionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3736236929878638557L;
+	private static final long serialVersionUID = 2383578425354821376L;
 
 	/**
 	 * 业务来源
@@ -24,6 +24,12 @@ public class AlipayOpenMiniInnerVersionproportionModifyModel extends AlipayObjec
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;
+
+	/**
+	 * 开发者id（平替操作员id）
+	 */
+	@ApiField("dev_id")
+	private String devId;
 
 	/**
 	 * 小程序id
@@ -55,6 +61,13 @@ public class AlipayOpenMiniInnerVersionproportionModifyModel extends AlipayObjec
 	}
 	public void setBundleId(String bundleId) {
 		this.bundleId = bundleId;
+	}
+
+	public String getDevId() {
+		return this.devId;
+	}
+	public void setDevId(String devId) {
+		this.devId = devId;
 	}
 
 	public String getMiniAppId() {

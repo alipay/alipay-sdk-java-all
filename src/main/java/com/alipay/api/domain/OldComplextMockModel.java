@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 老版本复杂对象模型
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-08-05 13:39:47
  */
 public class OldComplextMockModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7614293248526228634L;
+	private static final long serialVersionUID = 6141521577235664553L;
 
 	/**
 	 * biz_num

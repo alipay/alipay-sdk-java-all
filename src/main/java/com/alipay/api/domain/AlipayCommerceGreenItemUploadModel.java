@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量上传能量码
  *
  * @author auto create
- * @since 1.0, 2022-04-19 19:16:54
+ * @since 1.0, 2022-08-05 17:04:40
  */
 public class AlipayCommerceGreenItemUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2332495792622795943L;
+	private static final long serialVersionUID = 8393433756436713293L;
 
 	/**
 	 * 能量码归属的商户信息, 说明：

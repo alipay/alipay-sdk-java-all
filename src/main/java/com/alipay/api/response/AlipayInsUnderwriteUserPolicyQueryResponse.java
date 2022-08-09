@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsUnderwriteUserPolicyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3811179511575986725L;
+	private static final long serialVersionUID = 2339448699747183389L;
 
 	/** 
 	 * 查询到的用户拥有的保单列表，含所有查询状态对应的保单，排序规则按照，保险保障开始时间倒序

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MorphoPaginator extends AlipayObject {
 
-	private static final long serialVersionUID = 7544347435679283751L;
+	private static final long serialVersionUID = 6561288816193588593L;
 
 	/**
 	 * 总页数

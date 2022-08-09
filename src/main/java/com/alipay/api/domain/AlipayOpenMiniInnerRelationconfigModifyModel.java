@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改互跳配置
  *
  * @author auto create
- * @since 1.0, 2022-07-27 12:21:59
+ * @since 1.0, 2022-08-05 14:42:39
  */
 public class AlipayOpenMiniInnerRelationconfigModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8661931136674358844L;
+	private static final long serialVersionUID = 6827885885718427495L;
 
 	/**
 	 * 业务来源
 	 */
 	@ApiField("app_origin")
 	private String appOrigin;
+
+	/**
+	 * 开发者id（平替操作员id）
+	 */
+	@ApiField("dev_id")
+	private String devId;
 
 	/**
 	 * 业务小程序id
@@ -48,6 +54,13 @@ public class AlipayOpenMiniInnerRelationconfigModifyModel extends AlipayObject {
 	}
 	public void setAppOrigin(String appOrigin) {
 		this.appOrigin = appOrigin;
+	}
+
+	public String getDevId() {
+		return this.devId;
+	}
+	public void setDevId(String devId) {
+		this.devId = devId;
 	}
 
 	public String getMiniAppId() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiSecurityRiskEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2196784883848213752L;
+	private static final long serialVersionUID = 3295318645726847745L;
 
 	/**
 	 * 每一个事件码对应的扩展信息，是Map<String,String>的类型JSON格式化的字符串，具体内容与场景相关，请联系接口负责人获取相关文档。

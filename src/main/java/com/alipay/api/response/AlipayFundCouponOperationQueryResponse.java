@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundCouponOperationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5358877575326349136L;
+	private static final long serialVersionUID = 4188533711737846758L;
 
 	/** 
 	 * 该支付宝操作流水操作金额，单位为：元（人民币）

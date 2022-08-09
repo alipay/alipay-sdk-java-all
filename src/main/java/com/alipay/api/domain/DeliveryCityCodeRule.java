@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推广城市规则
  *
  * @author auto create
- * @since 1.0, 2022-07-27 20:09:24
+ * @since 1.0, 2022-08-08 10:33:37
  */
 public class DeliveryCityCodeRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7388195686977436649L;
+	private static final long serialVersionUID = 3441898713818377544L;
 
 	/**
 	 * 是否全国。 与city_codes二选一。只允许填true，否则不填。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板权利配置
  *
  * @author auto create
- * @since 1.0, 2022-06-27 17:56:44
+ * @since 1.0, 2022-08-08 14:42:02
  */
 public class ZMGORightConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5669687679554845286L;
+	private static final long serialVersionUID = 2363453358871389441L;
 
 	/**
 	 * 权益描述

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 法人身份信息
  *
  * @author auto create
- * @since 1.0, 2022-07-25 18:04:46
+ * @since 1.0, 2022-08-04 21:08:13
  */
 public class IndirectLegalPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6641468665519272682L;
+	private static final long serialVersionUID = 6156364778541342116L;
 
 	/**
 	 * 授权函照片（使用图片上传接口），当证件持有人类型为 经办人时，必须上传。其他情况，无需上传
@@ -20,13 +20,13 @@ public class IndirectLegalPersonInfo extends AlipayObject {
 	private String authLetterImg;
 
 	/**
-	 * 证件反面照（只有身份证类型需要上传反面，使用图片上传接口）
+	 * 法人/经营者证件反面照（使用图片上传接口的image_id）。当证件类型为身份证时，此字段必传；当证件类型为非身份证时，此字段非必传。
 	 */
 	@ApiField("card_back_img")
 	private String cardBackImg;
 
 	/**
-	 * 证件正面照（使用图片上传接口）
+	 * 法人/经营者证件正面照（使用图片上传接口返回的image_id）
 	 */
 	@ApiField("card_front_img")
 	private String cardFrontImg;

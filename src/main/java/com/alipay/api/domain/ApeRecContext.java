@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推荐上下文
  *
  * @author auto create
- * @since 1.0, 2022-06-24 16:11:26
+ * @since 1.0, 2022-08-05 14:43:00
  */
 public class ApeRecContext extends AlipayObject {
 
-	private static final long serialVersionUID = 6895378766695543486L;
+	private static final long serialVersionUID = 4427679376917319561L;
 
 	/**
 	 * 类目列表，推荐结果只会包含该类目的商品，为空时代表返回所有的商品。多个条件是与的关系。
@@ -46,6 +46,13 @@ public class ApeRecContext extends AlipayObject {
 	 */
 	@ApiField("device_id")
 	private String deviceId;
+
+	/**
+	 * 承接的itemId列表
+	 */
+	@ApiListField("landing_item_list")
+	@ApiField("string")
+	private List<String> landingItemList;
 
 	/**
 	 * 用户当前位置纬度
@@ -106,6 +113,13 @@ public class ApeRecContext extends AlipayObject {
 	}
 	public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
+	}
+
+	public List<String> getLandingItemList() {
+		return this.landingItemList;
+	}
+	public void setLandingItemList(List<String> landingItemList) {
+		this.landingItemList = landingItemList;
 	}
 
 	public String getLatitude() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数据item
  *
  * @author auto create
- * @since 1.0, 2022-06-24 16:11:55
+ * @since 1.0, 2022-08-08 20:25:15
  */
 public class ApeDataItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6143273236318529996L;
+	private static final long serialVersionUID = 7216721262477456866L;
 
 	/**
 	 * 商品可用的城市列表
@@ -28,6 +28,12 @@ public class ApeDataItem extends AlipayObject {
 	 */
 	@ApiField("brand")
 	private String brand;
+
+	/**
+	 * 商品购买链接
+	 */
+	@ApiField("buy_url")
+	private String buyUrl;
 
 	/**
 	 * 商品不同级类目之间用$##$分隔，且自左向右类目层级逐渐细化。类目值推荐全部传名称，举例如“家电$##$电视$##$OLED电视”。某一段为空时直接传空字符串，如第二段为空， 则传“家电$##$$##$OLED电视”。如果有多个类目，多个类目之间用,分割。
@@ -72,6 +78,12 @@ public class ApeDataItem extends AlipayObject {
 	private String id;
 
 	/**
+	 * 需要公域推广，默认情况下为false
+	 */
+	@ApiField("need_public_promo")
+	private Boolean needPublicPromo;
+
+	/**
 	 * 商品原价/划线价
 	 */
 	@ApiField("origin_price")
@@ -89,6 +101,13 @@ public class ApeDataItem extends AlipayObject {
 	 */
 	@ApiField("praise_cnt")
 	private Long praiseCnt;
+
+	/**
+	 * 商品的logo图片列表，可用于公域推广对用户展示的图片，建议600*600
+	 */
+	@ApiListField("promo_pic_url_list")
+	@ApiField("string")
+	private List<String> promoPicUrlList;
 
 	/**
 	 * 商品上架时间戳，精确到秒，如1520327038
@@ -176,6 +195,13 @@ public class ApeDataItem extends AlipayObject {
 		this.brand = brand;
 	}
 
+	public String getBuyUrl() {
+		return this.buyUrl;
+	}
+	public void setBuyUrl(String buyUrl) {
+		this.buyUrl = buyUrl;
+	}
+
 	public String getCate() {
 		return this.cate;
 	}
@@ -225,6 +251,13 @@ public class ApeDataItem extends AlipayObject {
 		this.id = id;
 	}
 
+	public Boolean getNeedPublicPromo() {
+		return this.needPublicPromo;
+	}
+	public void setNeedPublicPromo(Boolean needPublicPromo) {
+		this.needPublicPromo = needPublicPromo;
+	}
+
 	public String getOriginPrice() {
 		return this.originPrice;
 	}
@@ -244,6 +277,13 @@ public class ApeDataItem extends AlipayObject {
 	}
 	public void setPraiseCnt(Long praiseCnt) {
 		this.praiseCnt = praiseCnt;
+	}
+
+	public List<String> getPromoPicUrlList() {
+		return this.promoPicUrlList;
+	}
+	public void setPromoPicUrlList(List<String> promoPicUrlList) {
+		this.promoPicUrlList = promoPicUrlList;
 	}
 
 	public String getPubTime() {

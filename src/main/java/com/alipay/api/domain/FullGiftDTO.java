@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FullGiftDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2329726518865761919L;
+	private static final long serialVersionUID = 5619827287625182428L;
 
 	/**
 	 * 赠送金额，如果有阶梯规则，多个值用英文逗号分割，例如：10,20

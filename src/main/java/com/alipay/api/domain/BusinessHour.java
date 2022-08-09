@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BusinessHour extends AlipayObject {
 
-	private static final long serialVersionUID = 6652751335514644971L;
+	private static final long serialVersionUID = 3789537194927773893L;
 
 	/**
 	 * 营业截止日期。使用星期值枚举

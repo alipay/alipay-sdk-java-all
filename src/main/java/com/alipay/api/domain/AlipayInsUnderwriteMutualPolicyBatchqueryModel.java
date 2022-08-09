@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsUnderwriteMutualPolicyBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1355779176669484736L;
+	private static final long serialVersionUID = 2881268143617746371L;
 
 	/**
 	 * 渠道来源

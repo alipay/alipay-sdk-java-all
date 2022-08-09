@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手动发放额度接口
  *
  * @author auto create
- * @since 1.0, 2022-07-25 14:38:56
+ * @since 1.0, 2022-08-04 19:37:14
  */
 public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6235999635199479489L;
+	private static final long serialVersionUID = 8822441783575454786L;
 
 	/**
 	 * 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用

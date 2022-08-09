@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ecard.edu.balance.get request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:20
+ * @since 1.0, 2022-08-08 10:17:09
  */
 public class AlipayEcardEduBalanceGetRequest implements AlipayRequest<AlipayEcardEduBalanceGetResponse> {
 

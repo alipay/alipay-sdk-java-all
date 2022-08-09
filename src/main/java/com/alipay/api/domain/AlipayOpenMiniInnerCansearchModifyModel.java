@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改可搜索配置
  *
  * @author auto create
- * @since 1.0, 2022-07-26 14:32:42
+ * @since 1.0, 2022-08-05 14:25:14
  */
 public class AlipayOpenMiniInnerCansearchModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5154184547522347584L;
+	private static final long serialVersionUID = 8381832258779725258L;
 
 	/**
 	 * 业务来源
@@ -24,6 +24,12 @@ public class AlipayOpenMiniInnerCansearchModifyModel extends AlipayObject {
 	 */
 	@ApiField("can_search")
 	private Boolean canSearch;
+
+	/**
+	 * 开发者id(平替操作员id)
+	 */
+	@ApiField("dev_id")
+	private String devId;
 
 	/**
 	 * 小程序id
@@ -49,6 +55,13 @@ public class AlipayOpenMiniInnerCansearchModifyModel extends AlipayObject {
 	}
 	public void setCanSearch(Boolean canSearch) {
 		this.canSearch = canSearch;
+	}
+
+	public String getDevId() {
+		return this.devId;
+	}
+	public void setDevId(String devId) {
+		this.devId = devId;
 	}
 
 	public String getMiniAppId() {

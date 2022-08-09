@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossProdAntlawOrderhitstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2676685269679858625L;
+	private static final long serialVersionUID = 2345984758261165416L;
 
 	/** 
 	 * 是否存在有效的纸质用印, true表示存在, false表示不存在

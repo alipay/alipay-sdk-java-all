@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板开通配置
  *
  * @author auto create
- * @since 1.0, 2022-06-27 17:56:21
+ * @since 1.0, 2022-08-08 14:41:25
  */
 public class ZMGOOpenConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 6453352776186356936L;
+	private static final long serialVersionUID = 3756954997442154323L;
 
 	/**
 	 * 固定到期时间或每月的第几日。 （1）当period_mode为APPOINT_DATE时，取值固定日期，如"2022-06-01 00:00:00"，表示协议在6月1号0点到期; （2）当period_mode为FIX_DATE，取值"3"，表示协议在period_time个月后的3号到期。

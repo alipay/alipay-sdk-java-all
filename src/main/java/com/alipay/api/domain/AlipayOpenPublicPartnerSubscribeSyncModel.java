@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于为服务窗合作伙伴（如YunOS），提供订阅关系（关注与取消关注）同步功能
  *
  * @author auto create
- * @since 1.0, 2021-06-23 10:51:12
+ * @since 1.0, 2022-08-05 19:30:54
  */
 public class AlipayOpenPublicPartnerSubscribeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1337636525277362722L;
+	private static final long serialVersionUID = 2562368272747238494L;
 
 	/**
 	 * 是否接受服务窗消息

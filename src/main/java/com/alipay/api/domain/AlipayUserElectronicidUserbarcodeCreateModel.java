@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserElectronicidUserbarcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8538431374321225965L;
+	private static final long serialVersionUID = 6289447217467372966L;
 
 	/**
 	 * 机构方根据cert_id查到机构内部用户信息的唯一字符串。比如：身份证号+姓名 AES加密后的值；
