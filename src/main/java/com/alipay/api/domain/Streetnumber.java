@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Streetnumber extends AlipayObject {
 
-	private static final long serialVersionUID = 8291198356963289821L;
+	private static final long serialVersionUID = 1678942513412471494L;
 
 	/**
 	 * 街道方向

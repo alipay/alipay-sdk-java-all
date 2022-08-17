@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则新增接口
  *
  * @author auto create
- * @since 1.0, 2022-08-05 10:09:02
+ * @since 1.0, 2022-08-17 13:54:24
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7671241119618297415L;
+	private static final long serialVersionUID = 1153336273626293827L;
 
 	/**
-	 * 企业ID
+	 * 共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -30,6 +30,12 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel ext
 	 */
 	@ApiField("bill_month_day")
 	private Long billMonthDay;
+
+	/**
+	 * 企业id
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 开票规则名称
@@ -83,6 +89,13 @@ SINGLE:单笔开
 	}
 	public void setBillMonthDay(Long billMonthDay) {
 		this.billMonthDay = billMonthDay;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public String getInvoiceRuleName() {

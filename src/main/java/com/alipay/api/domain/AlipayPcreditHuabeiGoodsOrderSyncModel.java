@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗商家商品订单同步
  *
  * @author auto create
- * @since 1.0, 2021-12-31 09:39:45
+ * @since 1.0, 2022-08-11 18:46:28
  */
 public class AlipayPcreditHuabeiGoodsOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4671336275482924132L;
+	private static final long serialVersionUID = 4761676418522773363L;
 
 	/**
 	 * 支付宝订单ID

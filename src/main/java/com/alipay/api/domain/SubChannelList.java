@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubChannelList extends AlipayObject {
 
-	private static final long serialVersionUID = 7428398621289882835L;
+	private static final long serialVersionUID = 7798532361937763424L;
 
 	/**
 	 * 资产ID

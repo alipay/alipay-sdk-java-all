@@ -7,17 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文件信息对象
  *
  * @author auto create
- * @since 1.0, 2022-07-07 15:59:51
+ * @since 1.0, 2022-08-10 16:18:13
  */
 public class FileInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1576236551263185744L;
+	private static final long serialVersionUID = 1833519958792541562L;
 
 	/**
 	 * 文件类型，唯一值，枚举。 
 VIDEO=视频;
 VOICE=语音;
-PICTURE=图片;
+PICTURE/JPG/JPEG/PNG=图片;
 TEXT=文本;
 DOC, DOCX, XLS, XLSX, PPT, PPTX=MS Office
 	 */
@@ -35,6 +35,12 @@ DOC, DOCX, XLS, XLSX, PPT, PPTX=MS Office
 	 */
 	@ApiField("file_url")
 	private String fileUrl;
+
+	/**
+	 * 素材外部唯一标识用于风险匹配
+	 */
+	@ApiField("origin_file_id")
+	private String originFileId;
 
 	public String getDataType() {
 		return this.dataType;
@@ -55,6 +61,13 @@ DOC, DOCX, XLS, XLSX, PPT, PPTX=MS Office
 	}
 	public void setFileUrl(String fileUrl) {
 		this.fileUrl = fileUrl;
+	}
+
+	public String getOriginFileId() {
+		return this.originFileId;
+	}
+	public void setOriginFileId(String originFileId) {
+		this.originFileId = originFileId;
 	}
 
 }

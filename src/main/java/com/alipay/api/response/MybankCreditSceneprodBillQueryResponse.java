@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-22 15:30:44
+ * @since 1.0, 2022-08-16 12:01:45
  */
 public class MybankCreditSceneprodBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6117155576891256877L;
+	private static final long serialVersionUID = 2356518259554739876L;
 
 	/** 
 	 * 网商银行申请单号
@@ -35,6 +35,12 @@ public class MybankCreditSceneprodBillQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("drawdown_no")
 	private String drawdownNo;
+
+	/** 
+	 * 支用逾期天数
+	 */
+	@ApiField("ovd_days")
+	private String ovdDays;
 
 	/** 
 	 * 网商traceId，便于查询日志内容
@@ -61,6 +67,13 @@ public class MybankCreditSceneprodBillQueryResponse extends AlipayResponse {
 	}
 	public String getDrawdownNo( ) {
 		return this.drawdownNo;
+	}
+
+	public void setOvdDays(String ovdDays) {
+		this.ovdDays = ovdDays;
+	}
+	public String getOvdDays( ) {
+		return this.ovdDays;
 	}
 
 	public void setTraceId(String traceId) {

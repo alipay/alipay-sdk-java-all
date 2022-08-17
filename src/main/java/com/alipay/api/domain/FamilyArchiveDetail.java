@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FamilyArchiveDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3124595299943527497L;
+	private static final long serialVersionUID = 5528265262484164114L;
 
 	/**
 	 * 家庭档案中用户填写的详细地址

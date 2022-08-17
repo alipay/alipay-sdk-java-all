@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵活用工产品列表咨询推荐
  *
  * @author auto create
- * @since 1.0, 2022-05-06 09:26:45
+ * @since 1.0, 2022-08-15 13:31:13
  */
 public class AlipayInsSceneEmploymentProductConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8888246262952999236L;
+	private static final long serialVersionUID = 4568645425985896156L;
 
 	/**
 	 * 渠道

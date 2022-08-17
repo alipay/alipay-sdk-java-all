@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppCommunityRelationshipModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7564386922135144266L;
+	private static final long serialVersionUID = 5767613176973396548L;
 
 	/**
 	 * 每个小区默认的收款帐号为授权物业的支付宝账号，默认不用传该参数。 但为满足部分物业公司财务要求，允许开发者为每个小区服务传入一个指定的物业收款帐号，开发者需要在直付通中设置银行卡相关信息

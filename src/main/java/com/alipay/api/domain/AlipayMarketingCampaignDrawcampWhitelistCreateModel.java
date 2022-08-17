@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignDrawcampWhitelistCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6513951898139242288L;
+	private static final long serialVersionUID = 1443759284319994284L;
 
 	/**
 	 * 活动id

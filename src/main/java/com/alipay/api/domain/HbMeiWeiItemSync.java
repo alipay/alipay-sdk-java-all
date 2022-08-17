@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗美味宝贝同步信息请求
  *
  * @author auto create
- * @since 1.0, 2021-12-01 20:59:09
+ * @since 1.0, 2022-08-15 14:30:37
  */
 public class HbMeiWeiItemSync extends AlipayObject {
 
-	private static final long serialVersionUID = 2274218319369152871L;
+	private static final long serialVersionUID = 8352425797966124458L;
 
 	/**
 	 * 宝贝票面价值,单位为分

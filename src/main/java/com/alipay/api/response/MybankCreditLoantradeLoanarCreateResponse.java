@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditLoantradeLoanarCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4531833683684638163L;
+	private static final long serialVersionUID = 5226786669223666538L;
 
 	/** 
 	 * 事件流水号

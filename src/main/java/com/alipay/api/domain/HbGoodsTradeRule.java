@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗商品交易规则
  *
  * @author auto create
- * @since 1.0, 2021-12-31 15:13:04
+ * @since 1.0, 2022-08-15 14:29:58
  */
 public class HbGoodsTradeRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4388317987914998578L;
+	private static final long serialVersionUID = 3196794541985334147L;
 
 	/**
 	 * 最大购买次数

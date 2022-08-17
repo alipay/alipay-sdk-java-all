@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险SaaS两核风控获取预测数据
  *
  * @author auto create
- * @since 1.0, 2022-08-01 16:12:36
+ * @since 1.0, 2022-08-12 17:02:49
  */
 public class DatadigitalFincloudFinsaasInsuranceriskGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1388137748119231595L;
+	private static final long serialVersionUID = 7225555335597781943L;
 
 	/**
-	 * 身份证MD5或者hash码
+	 * 身份证MD5或者sha1码
 	 */
 	@ApiField("cert_no_code")
 	private String certNoCode;
@@ -26,6 +26,12 @@ public class DatadigitalFincloudFinsaasInsuranceriskGetModel extends AlipayObjec
 	 */
 	@ApiField("data_type")
 	private String dataType;
+
+	/**
+	 * 请求Id
+	 */
+	@ApiField("request_id")
+	private String requestId;
 
 	/**
 	 * 电话号码
@@ -45,6 +51,13 @@ public class DatadigitalFincloudFinsaasInsuranceriskGetModel extends AlipayObjec
 	}
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
+	}
+
+	public String getRequestId() {
+		return this.requestId;
+	}
+	public void setRequestId(String requestId) {
+		this.requestId = requestId;
 	}
 
 	public String getTelephoneNum() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达活动修改
  *
  * @author auto create
- * @since 1.0, 2022-06-06 11:24:04
+ * @since 1.0, 2022-08-09 11:07:10
  */
 public class AlipayOpenSearchBoxactivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7757536475983498748L;
+	private static final long serialVersionUID = 5325682275526813417L;
 
 	/**
 	 * 活动链接，必须为关联的小程序的页面链接（链接以 alipays 开头），可参考<a href="https://opendocs.alipay.com/support/01rb18"> 小程序scheme链接介绍 </a>

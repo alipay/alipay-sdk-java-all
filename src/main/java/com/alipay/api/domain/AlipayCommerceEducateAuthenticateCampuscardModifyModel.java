@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一卡通变更通知
  *
  * @author auto create
- * @since 1.0, 2022-08-01 16:15:46
+ * @since 1.0, 2022-08-15 09:55:04
  */
 public class AlipayCommerceEducateAuthenticateCampuscardModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8685818568679838617L;
+	private static final long serialVersionUID = 1415565635138121125L;
 
 	/**
 	 * 校区

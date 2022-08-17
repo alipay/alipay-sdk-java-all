@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付后扣、增消费金
  *
  * @author auto create
- * @since 1.0, 2022-05-25 13:57:40
+ * @since 1.0, 2022-08-15 11:17:46
  */
 public class AlipayOpenIpsponsorConsumegoldModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4877492187157224737L;
+	private static final long serialVersionUID = 4319575866371832164L;
 
 	/**
 	 * 用于标识具体扣、增消费金的值

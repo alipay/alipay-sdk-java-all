@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗商品库标签查询
  *
  * @author auto create
- * @since 1.0, 2021-12-31 09:40:21
+ * @since 1.0, 2022-08-11 18:46:11
  */
 public class AlipayPcreditHuabeiGoodsTagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4768744225716795229L;
+	private static final long serialVersionUID = 2564412495744952657L;
 
 	/**
 	 * 识别标识码

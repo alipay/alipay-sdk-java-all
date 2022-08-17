@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板开通配置
  *
  * @author auto create
- * @since 1.0, 2022-08-08 14:41:25
+ * @since 1.0, 2022-08-12 13:32:22
  */
 public class ZMGOOpenConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 3756954997442154323L;
+	private static final long serialVersionUID = 5476184415542232288L;
 
 	/**
 	 * 固定到期时间或每月的第几日。 （1）当period_mode为APPOINT_DATE时，取值固定日期，如"2022-06-01 00:00:00"，表示协议在6月1号0点到期; （2）当period_mode为FIX_DATE，取值"3"，表示协议在period_time个月后的3号到期。
@@ -30,6 +30,12 @@ public class ZMGOOpenConfig extends AlipayObject {
 	 */
 	@ApiField("custom_open_tip_list")
 	private String customOpenTipList;
+
+	/**
+	 * 规则详情
+	 */
+	@ApiField("custom_open_tips")
+	private String customOpenTips;
 
 	/**
 	 * 担保金额额度
@@ -81,6 +87,13 @@ public class ZMGOOpenConfig extends AlipayObject {
 	}
 	public void setCustomOpenTipList(String customOpenTipList) {
 		this.customOpenTipList = customOpenTipList;
+	}
+
+	public String getCustomOpenTips() {
+		return this.customOpenTips;
+	}
+	public void setCustomOpenTips(String customOpenTips) {
+		this.customOpenTips = customOpenTips;
 	}
 
 	public String getFreezeAmount() {

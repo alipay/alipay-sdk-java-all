@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保保险的商户(企业)信息
  *
  * @author auto create
- * @since 1.0, 2022-06-10 16:17:55
+ * @since 1.0, 2022-08-15 11:36:28
  */
 public class InsCompany extends AlipayObject {
 
-	private static final long serialVersionUID = 5663979366277259738L;
+	private static final long serialVersionUID = 1135151875991481564L;
 
 	/**
 	 * 支付宝账号ID
@@ -32,6 +32,12 @@ public class InsCompany extends AlipayObject {
 	private String certNo;
 
 	/**
+	 * 证件类型
+	 */
+	@ApiField("cert_type")
+	private String certType;
+
+	/**
 	 * 渠道用户ID
 	 */
 	@ApiField("channel_account_id")
@@ -42,6 +48,18 @@ public class InsCompany extends AlipayObject {
 	 */
 	@ApiField("channel_account_type")
 	private String channelAccountType;
+
+	/**
+	 * 企业社会信用编号
+	 */
+	@ApiField("company_cert_no")
+	private String companyCertNo;
+
+	/**
+	 * 企业中文名称
+	 */
+	@ApiField("company_name")
+	private String companyName;
 
 	/**
 	 * 手机号
@@ -70,6 +88,13 @@ public class InsCompany extends AlipayObject {
 		this.certNo = certNo;
 	}
 
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
+	}
+
 	public String getChannelAccountId() {
 		return this.channelAccountId;
 	}
@@ -82,6 +107,20 @@ public class InsCompany extends AlipayObject {
 	}
 	public void setChannelAccountType(String channelAccountType) {
 		this.channelAccountType = channelAccountType;
+	}
+
+	public String getCompanyCertNo() {
+		return this.companyCertNo;
+	}
+	public void setCompanyCertNo(String companyCertNo) {
+		this.companyCertNo = companyCertNo;
+	}
+
+	public String getCompanyName() {
+		return this.companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
 
 	public String getPhone() {

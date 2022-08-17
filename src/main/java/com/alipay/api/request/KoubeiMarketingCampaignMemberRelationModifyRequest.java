@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.member.relation.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-07-05 17:42:02
+ * @since 1.0, 2022-08-16 21:06:46
  */
 public class KoubeiMarketingCampaignMemberRelationModifyRequest implements AlipayRequest<KoubeiMarketingCampaignMemberRelationModifyResponse> {
 

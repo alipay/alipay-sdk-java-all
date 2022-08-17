@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.acquire.createandpay request
  * 
  * @author auto create
- * @since 1.0, 2022-05-17 20:46:02
+ * @since 1.0, 2022-08-15 14:54:53
  */
 public class AlipayAcquireCreateandpayRequest implements AlipayRequest<AlipayAcquireCreateandpayResponse> {
 

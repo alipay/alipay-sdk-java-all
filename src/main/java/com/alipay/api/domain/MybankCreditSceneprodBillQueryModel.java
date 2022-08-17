@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融账单查询接口
  *
  * @author auto create
- * @since 1.0, 2022-06-22 15:30:44
+ * @since 1.0, 2022-08-16 11:57:41
  */
 public class MybankCreditSceneprodBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1779575591459446782L;
+	private static final long serialVersionUID = 6786578974362642893L;
 
 	/**
 	 * 网商银行的申请单号，通过mybank.credit.sceneprod.loan.apply接口返回的applyno获取

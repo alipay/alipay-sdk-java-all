@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工保领域事件
  *
  * @author auto create
- * @since 1.0, 2022-06-14 14:15:34
+ * @since 1.0, 2022-08-17 10:47:15
  */
 public class InsLGBDomainEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 4373439581751557311L;
+	private static final long serialVersionUID = 7344687724613255285L;
 
 	/**
 	 * 员工信息
@@ -44,6 +44,12 @@ public class InsLGBDomainEvent extends AlipayObject {
 	 */
 	@ApiField("merchant")
 	private InsCompany merchant;
+
+	/**
+	 * 合作商信息
+	 */
+	@ApiField("partner_organization")
+	private InsPartnerOrganization partnerOrganization;
 
 	/**
 	 * 指定产品方案ID
@@ -84,6 +90,13 @@ public class InsLGBDomainEvent extends AlipayObject {
 	}
 	public void setMerchant(InsCompany merchant) {
 		this.merchant = merchant;
+	}
+
+	public InsPartnerOrganization getPartnerOrganization() {
+		return this.partnerOrganization;
+	}
+	public void setPartnerOrganization(InsPartnerOrganization partnerOrganization) {
+		this.partnerOrganization = partnerOrganization;
 	}
 
 	public String getProductPlanId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品类目返回
  *
  * @author auto create
- * @since 1.0, 2021-12-31 09:40:11
+ * @since 1.0, 2022-08-15 14:30:13
  */
 public class GoodsCategoryResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4521947569812484778L;
+	private static final long serialVersionUID = 3614498283672721773L;
 
 	/**
 	 * 类目code，格式：多级通过|(英文竖线相隔)

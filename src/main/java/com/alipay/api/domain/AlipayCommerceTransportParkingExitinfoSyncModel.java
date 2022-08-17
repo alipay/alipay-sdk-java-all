@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车离场信息同步接口
  *
  * @author auto create
- * @since 1.0, 2022-08-04 16:00:01
+ * @since 1.0, 2022-08-17 21:28:47
  */
 public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2898272158281994423L;
+	private static final long serialVersionUID = 3882951242289686596L;
 
 	/**
 	 * 车牌是否加密，true为加密，false为不加密，默认为false

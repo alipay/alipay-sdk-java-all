@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达准入咨询
  *
  * @author auto create
- * @since 1.0, 2022-06-21 15:34:25
+ * @since 1.0, 2022-08-09 11:05:24
  */
 public class AlipayOpenSearchBoxConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1782669496343331572L;
+	private static final long serialVersionUID = 4327172669162453235L;
 
 	/**
 	 * 品牌介绍，5-15个中文字符。 

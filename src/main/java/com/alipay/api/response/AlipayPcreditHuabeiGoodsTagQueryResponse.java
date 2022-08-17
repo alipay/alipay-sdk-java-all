@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.goods.tag.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-31 09:40:40
+ * @since 1.0, 2022-08-11 18:46:11
  */
 public class AlipayPcreditHuabeiGoodsTagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7665376673188598734L;
+	private static final long serialVersionUID = 3294485814138471715L;
 
 	/** 
 	 * 是否请求成功

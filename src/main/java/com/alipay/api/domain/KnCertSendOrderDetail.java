@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KnCertSendOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4891816651686574516L;
+	private static final long serialVersionUID = 1272335418568159556L;
 
 	/**
 	 * 在此凭证单据下，用户还剩余的有效凭证点数

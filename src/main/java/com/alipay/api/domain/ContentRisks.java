@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文件素材为主维度的风险信息
  *
  * @author auto create
- * @since 1.0, 2022-04-13 14:02:25
+ * @since 1.0, 2022-08-10 16:18:13
  */
 public class ContentRisks extends AlipayObject {
 
-	private static final long serialVersionUID = 1616955753959179946L;
+	private static final long serialVersionUID = 3898874818256527465L;
 
 	/**
 	 * 能否打标true/false
@@ -41,10 +41,22 @@ public class ContentRisks extends AlipayObject {
 	private String originFile;
 
 	/**
+	 * 素材外部唯一标识用于风险匹配
+	 */
+	@ApiField("origin_file_id")
+	private String originFileId;
+
+	/**
 	 * 原始文件名
 	 */
 	@ApiField("origin_name")
 	private String originName;
+
+	/**
+	 * 经过内部处理生成的父子层级素材
+	 */
+	@ApiField("parent_file_id")
+	private String parentFileId;
 
 	/**
 	 * 风险规则详情
@@ -88,11 +100,25 @@ public class ContentRisks extends AlipayObject {
 		this.originFile = originFile;
 	}
 
+	public String getOriginFileId() {
+		return this.originFileId;
+	}
+	public void setOriginFileId(String originFileId) {
+		this.originFileId = originFileId;
+	}
+
 	public String getOriginName() {
 		return this.originName;
 	}
 	public void setOriginName(String originName) {
 		this.originName = originName;
+	}
+
+	public String getParentFileId() {
+		return this.parentFileId;
+	}
+	public void setParentFileId(String parentFileId) {
+		this.parentFileId = parentFileId;
 	}
 
 	public List<ContentRiskDetail> getRisks() {

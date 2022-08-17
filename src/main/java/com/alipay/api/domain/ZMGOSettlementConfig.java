@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiField;
 
  *
  * @author auto create
- * @since 1.0, 2022-08-08 14:41:34
+ * @since 1.0, 2022-08-12 13:32:32
  */
 public class ZMGOSettlementConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8268616269546933599L;
+	private static final long serialVersionUID = 1218267663155172133L;
 
 	/**
 	 * 会员费扣费名称
@@ -27,6 +27,12 @@ public class ZMGOSettlementConfig extends AlipayObject {
 	 */
 	@ApiField("cycle_flex_withhold_config")
 	private ZMGOCycleFlexConfig cycleFlexWithholdConfig;
+
+	/**
+	 * 芝麻GO周期扣配置
+	 */
+	@ApiField("cycle_withhold_config")
+	private ZMGOCycleWithholdConfig cycleWithholdConfig;
 
 	/**
 	 * 预计结算延迟天数，当exp_stop_time_mode取值RELATIVE_DATE、ABSOLATE_DATE、ABSOLUTE_PLUS_1_DATE时，必传
@@ -72,6 +78,13 @@ public class ZMGOSettlementConfig extends AlipayObject {
 	}
 	public void setCycleFlexWithholdConfig(ZMGOCycleFlexConfig cycleFlexWithholdConfig) {
 		this.cycleFlexWithholdConfig = cycleFlexWithholdConfig;
+	}
+
+	public ZMGOCycleWithholdConfig getCycleWithholdConfig() {
+		return this.cycleWithholdConfig;
+	}
+	public void setCycleWithholdConfig(ZMGOCycleWithholdConfig cycleWithholdConfig) {
+		this.cycleWithholdConfig = cycleWithholdConfig;
 	}
 
 	public Long getExpStopDelayDays() {

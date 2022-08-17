@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 森林能量发放
  *
  * @author auto create
- * @since 1.0, 2022-06-22 17:32:42
+ * @since 1.0, 2022-08-16 16:06:49
  */
 public class AlipayEcoActivityRecycleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5248927244796649916L;
+	private static final long serialVersionUID = 5386723722313185362L;
 
 	/**
 	 * 买家的用户id
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * C端用户使用的绿色小程序appId
+	 */
+	@ApiField("energy_appid")
+	private String energyAppid;
 
 	/**
 	 * 发放的物品清单明细
@@ -52,6 +58,13 @@ public class AlipayEcoActivityRecycleSendModel extends AlipayObject {
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getEnergyAppid() {
+		return this.energyAppid;
+	}
+	public void setEnergyAppid(String energyAppid) {
+		this.energyAppid = energyAppid;
 	}
 
 	public List<EnergyGoodRequest> getItemList() {

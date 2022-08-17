@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 花呗美味商家宝贝同步接口
  *
  * @author auto create
- * @since 1.0, 2021-10-25 13:46:18
+ * @since 1.0, 2022-08-11 18:47:01
  */
 public class AlipayPcreditHuabeiMerchantGoodsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6344335364351589768L;
+	private static final long serialVersionUID = 3444428744814487883L;
 
 	/**
 	 * 同步的宝贝信息列表

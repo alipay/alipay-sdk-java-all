@@ -1,8 +1,10 @@
 package com.alipay.api.request;
 
+import java.util.HashMap;
 import java.util.Map;
 
-import com.alipay.api.AlipayRequest;
+import com.alipay.api.FileItem;
+import com.alipay.api.AlipayUploadRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
 import com.alipay.api.response.DatadigitalFincloudGeneralsaasOcrServerDetectResponse;
 import com.alipay.api.AlipayObject;
@@ -11,12 +13,17 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.ocr.server.detect request
  * 
  * @author auto create
- * @since 1.0, 2022-07-22 16:32:06
+ * @since 1.0, 2022-08-15 19:01:46
  */
-public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements AlipayRequest<DatadigitalFincloudGeneralsaasOcrServerDetectResponse> {
+public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasOcrServerDetectResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 二进制流图片，大小限制1M
+	 */
+	private FileItem fileContent;
 
 	/** 
 	* 可识别OCR类型。如，ID_CARD_FRONT 身份证正面；ID_CARD_FRONT 身份证反面等。具体支持的类型以接入文档为准。
@@ -27,6 +34,13 @@ public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements Ali
 	* 客户业务单据号，请保证幂等性。
 	 */
 	private String outerOrderNo;
+
+	public void setFileContent(FileItem fileContent) {
+		this.fileContent = fileContent;
+	}
+	public FileItem getFileContent() {
+		return this.fileContent;
+	}
 
 	public void setOcrType(String ocrType) {
 		this.ocrType = ocrType;
@@ -42,11 +56,11 @@ public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements Ali
 		return this.outerOrderNo;
 	}
 	private String terminalType;
-	private String terminalInfo;	
+	private String terminalInfo;
 	private String prodCode;
 	private String notifyUrl;
 	private String returnUrl;
-	private boolean needEncrypt=false;
+    private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
 	public String getNotifyUrl() {
@@ -68,7 +82,6 @@ public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements Ali
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
-
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
@@ -76,7 +89,7 @@ public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements Ali
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
-
+	
     public String getTerminalType(){
     	return this.terminalType;
     }
@@ -87,16 +100,16 @@ public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements Ali
 
     public String getTerminalInfo(){
     	return this.terminalInfo;
-    }	
-
-	public void setProdCode(String prodCode) {
-		this.prodCode=prodCode;
-	}
-
+    }
+	
 	public String getProdCode() {
 		return this.prodCode; 
 	}
-
+	
+	public void setProdCode(String prodCode) {
+		this.prodCode=prodCode;
+	}
+    
 	public String getApiMethodName() {
 		return "datadigital.fincloud.generalsaas.ocr.server.detect";
 	}
@@ -110,7 +123,7 @@ public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements Ali
 		}
 		return txtParams;
 	}
-
+	
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -118,12 +131,17 @@ public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements Ali
 		this.udfParams.put(key, value);
 	}
 
+	public Map<String, FileItem> getFileParams() {
+		Map<String, FileItem> params = new HashMap<String, FileItem>();
+		params.put("file_content", this.fileContent);
+		return params;
+	}
+
 	public Class<DatadigitalFincloudGeneralsaasOcrServerDetectResponse> getResponseClass() {
 		return DatadigitalFincloudGeneralsaasOcrServerDetectResponse.class;
 	}
 	
-
-    public boolean isNeedEncrypt() {
+	 public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }

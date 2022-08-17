@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品标签返回结果集
  *
  * @author auto create
- * @since 1.0, 2021-12-31 09:40:21
+ * @since 1.0, 2022-08-15 14:30:07
  */
 public class GoodsTagResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6118925757778132586L;
+	private static final long serialVersionUID = 8463571121928328686L;
 
 	/**
 	 * 标签code

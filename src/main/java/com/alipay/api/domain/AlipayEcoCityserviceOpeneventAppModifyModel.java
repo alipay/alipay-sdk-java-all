@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 光华平台服务入驻修改服务信息接口
  *
  * @author auto create
- * @since 1.0, 2022-06-07 13:55:37
+ * @since 1.0, 2022-08-17 11:48:13
  */
 public class AlipayEcoCityserviceOpeneventAppModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1439913953454466362L;
+	private static final long serialVersionUID = 6294932541836561217L;
 
 	/**
 	 * 光华平台服务入驻接口返回的唯一编码
@@ -24,6 +24,12 @@ public class AlipayEcoCityserviceOpeneventAppModifyModel extends AlipayObject {
 	 */
 	@ApiField("biz_code")
 	private String bizCode;
+
+	/**
+	 * 该参数是为了在进行服务信息变更的时候，允许只传入变更字段的内容。多个字段的变更用逗号分隔开来。如果该值不为空，则只会对该字段中的服务信息进行替换。注意，在 service_template_config 中出现的字段，则需要传入 service_template_config.${filed}.${filed}
+	 */
+	@ApiField("change_field_list")
+	private String changeFieldList;
 
 	/**
 	 * 服务介绍，不超过100个字，必填
@@ -91,6 +97,13 @@ public class AlipayEcoCityserviceOpeneventAppModifyModel extends AlipayObject {
 	}
 	public void setBizCode(String bizCode) {
 		this.bizCode = bizCode;
+	}
+
+	public String getChangeFieldList() {
+		return this.changeFieldList;
+	}
+	public void setChangeFieldList(String changeFieldList) {
+		this.changeFieldList = changeFieldList;
 	}
 
 	public String getServiceDesc() {

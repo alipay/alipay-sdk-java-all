@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 灵活用工批量投保
  *
  * @author auto create
- * @since 1.0, 2022-06-23 18:37:44
+ * @since 1.0, 2022-08-10 14:23:35
  */
 public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2844811371968198536L;
+	private static final long serialVersionUID = 8523442421362589239L;
 
 	/**
 	 * 批次号
@@ -30,7 +30,13 @@ public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject
 	private String channel;
 
 	/**
-	 * 员工信息
+	 * 录单模式默认是insure_time的第二个自然日0点生效。如有特殊需要，可指定生效时间。生效时间需要是第二个自然日之后。生效时间格式必须为自然日0点。
+	 */
+	@ApiField("effect_start_time")
+	private Date effectStartTime;
+
+	/**
+	 * 员工信息，一次最多支持传100个员工信息
 	 */
 	@ApiListField("employee_list")
 	@ApiField("ins_employee")
@@ -84,6 +90,13 @@ public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
+	}
+
+	public Date getEffectStartTime() {
+		return this.effectStartTime;
+	}
+	public void setEffectStartTime(Date effectStartTime) {
+		this.effectStartTime = effectStartTime;
 	}
 
 	public List<InsEmployee> getEmployeeList() {

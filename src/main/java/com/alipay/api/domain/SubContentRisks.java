@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 被拆分的子文件
  *
  * @author auto create
- * @since 1.0, 2022-04-22 10:54:01
+ * @since 1.0, 2022-08-10 16:18:13
  */
 public class SubContentRisks extends AlipayObject {
 
-	private static final long serialVersionUID = 2743839142216545364L;
+	private static final long serialVersionUID = 4889824531486825333L;
 
 	/**
 	 * 能否打标true/false
@@ -54,10 +54,22 @@ frame_time：被拆分素材若是截帧形成的图片则代表该图片在原�
 	private String originFile;
 
 	/**
+	 * 素材外部唯一标识用于风险匹配
+	 */
+	@ApiField("origin_file_id")
+	private String originFileId;
+
+	/**
 	 * 原始文件名
 	 */
 	@ApiField("origin_name")
 	private String originName;
+
+	/**
+	 * 经过内部处理生成的父子层级素材
+	 */
+	@ApiField("parent_file_id")
+	private String parentFileId;
 
 	/**
 	 * 风险规则详情
@@ -108,11 +120,25 @@ frame_time：被拆分素材若是截帧形成的图片则代表该图片在原�
 		this.originFile = originFile;
 	}
 
+	public String getOriginFileId() {
+		return this.originFileId;
+	}
+	public void setOriginFileId(String originFileId) {
+		this.originFileId = originFileId;
+	}
+
 	public String getOriginName() {
 		return this.originName;
 	}
 	public void setOriginName(String originName) {
 		this.originName = originName;
+	}
+
+	public String getParentFileId() {
+		return this.parentFileId;
+	}
+	public void setParentFileId(String parentFileId) {
+		this.parentFileId = parentFileId;
 	}
 
 	public List<ContentRiskDetail> getRisks() {
