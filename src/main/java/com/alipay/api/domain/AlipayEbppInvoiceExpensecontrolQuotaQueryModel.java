@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询额度
  *
  * @author auto create
- * @since 1.0, 2022-07-26 20:20:48
+ * @since 1.0, 2022-08-18 15:33:59
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1781943431896986665L;
+	private static final long serialVersionUID = 6278479947338555797L;
 
 	/**
-	 * 企业ID
+	 * 企业共同账户ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -35,14 +35,16 @@ public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject
 	private String enterpriseId;
 
 	/**
-	 * 余额所属者ID
-owner_type为员工时为员工支付宝ID
+	 * 额度所属者ID
+owner_type为EMPLOYEE时为员工支付宝ID
+owner_type为PHONE时为员工手机号
+owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 余额所属者类型
+	 * 额度所属者类型
 EMPLOYEE 员工
 	 */
 	@ApiField("owner_type")
@@ -61,7 +63,7 @@ EMPLOYEE 员工
 	private Long pageSize;
 
 	/**
-	 * 余额ID
+	 * 额度ID
 特殊说明：最多传入10个quota_id
 	 */
 	@ApiListField("quota_id_list")
@@ -69,19 +71,21 @@ EMPLOYEE 员工
 	private List<String> quotaIdList;
 
 	/**
-	 * 余额维度ID
+	 * 额度维度ID
 当 target_type=EXPENSE_TYPE 时，值为
 MEAL（工作餐）
 当target_type=RULE_GROUP_AGGREGATION 时，值为费控规则聚合ID
+当target_type=INSTITUTION 时，值为制度ID，target_type和target_id要正确对应，否则会导致查不到额度。
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
-	 * 余额维度
+	 * 额度维度
 枚举值：
 EXPENSE_TYPE（费用类型维度），
-RULE_GROUP_AGGREGATION（规则聚合维度）
+RULE_GROUP_AGGREGATION（规则聚合维度），
+INSTITUTION（制度维度）
 	 */
 	@ApiField("target_type")
 	private String targetType;

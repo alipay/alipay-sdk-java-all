@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝出行行业-铁路数据同步接口
  *
  * @author auto create
- * @since 1.0, 2021-07-10 15:35:51
+ * @since 1.0, 2022-08-18 17:31:02
  */
 public class AlipayCommerceTransportRailwayTradeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8382656861813146573L;
+	private static final long serialVersionUID = 2279227735526927165L;
 
 	/**
 	 * 业务日期，用于判断对账时间，格式为yyyyMMdd

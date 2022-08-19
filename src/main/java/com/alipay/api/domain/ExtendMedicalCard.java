@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtendMedicalCard extends AlipayObject {
 
-	private static final long serialVersionUID = 5459443643736729523L;
+	private static final long serialVersionUID = 8169273865487127126L;
 
 	/**
 	 * 签约状态为成功绑定为不可空

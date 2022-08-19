@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.expensecontrol.aggregation.create request
  * 
  * @author auto create
- * @since 1.0, 2021-12-14 17:53:43
+ * @since 1.0, 2022-08-18 15:35:39
  */
 public class AlipayEbppInvoiceExpensecontrolAggregationCreateRequest implements AlipayRequest<AlipayEbppInvoiceExpensecontrolAggregationCreateResponse> {
 

@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建额度
  *
  * @author auto create
- * @since 1.0, 2022-07-19 17:11:09
+ * @since 1.0, 2022-08-18 15:33:06
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7732146347184184946L;
+	private static final long serialVersionUID = 4676686445632596895L;
 
 	/**
-	 * 企业ID
+	 * 企业共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -28,13 +28,13 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	private String agreementNo;
 
 	/**
-	 * 余额失效时间（格式：yyyy-MM-dd HH:mm:ss）
+	 * 额度失效时间（格式：yyyy-MM-dd HH:mm:ss），额度类型为点券时必填，额度类型为余额时有默认值，无需填写
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/**
-	 * 余额生效时间（格式：yyyy-MM-dd HH:mm:ss）
+	 * 额度生效时间（格式：yyyy-MM-dd HH:mm:ss），额度类型为点券时必填，额度类型为余额时有默认值，无需填写
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
@@ -46,21 +46,23 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	private String enterpriseId;
 
 	/**
-	 * 外部操作幂等ID（接入方接口调用幂等控制ID）
+	 * 外部操作幂等ID（接入方接口调用幂等控制ID），创建额度类型为点券时必填
 	 */
 	@ApiField("outer_source_id")
 	private String outerSourceId;
 
 	/**
-	 * 余额所属者ID
-owner_type为EMPLOYEE时为员工支付宝ID
+	 * 额度所属者ID：
+owner_type为EMPLOYEE时填写员工支付宝ID；
+owner_type为ENTERPRISE_PAY_UID时填写员工企业码ID；
+owner_type为PHONE时填写员工手机号；
+owner_type为ENTERPRISE时填写企业ID。
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 余额所属者类型
-EMPLOYEE: 员工
+	 * 额度所属者类型，可通过设置该字段来指定操作的owner_id类型，如果设置企业额度则设置为ENTERPRISE
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
@@ -72,26 +74,34 @@ EMPLOYEE: 员工
 	private String platform;
 
 	/**
-	 * 余额，以（分）为单位
-约束：余额不超过100000元
+	 * 创建额度类型，支持点券和余额，不填写则默认为余额类型
+	 */
+	@ApiField("quota_type")
+	private String quotaType;
+
+	/**
+	 * 额度值，以（分）为单位
+约束：不超过100000元
 	 */
 	@ApiField("quota_value")
 	private String quotaValue;
 
 	/**
-	 * 余额维度ID
+	 * 额度维度ID
 当 target_type=EXPENSE_TYPE 时，值为
 MEAL（工作餐）
 当target_type=RULE_GROUP_AGGREGATION 时，值为费控规则聚合ID
+当target_type=INSTITUTION 时，值为制度ID
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
-	 * 余额维度
+	 * 额度维度
 枚举值：
 EXPENSE_TYPE（费用类型维度），
-RULE_GROUP_AGGREGATION（规则聚合维度
+RULE_GROUP_AGGREGATION（规则聚合维度），
+INSTITUTION（制度维度）
 	 */
 	@ApiField("target_type")
 	private String targetType;
@@ -157,6 +167,13 @@ RULE_GROUP_AGGREGATION（规则聚合维度
 	}
 	public void setPlatform(String platform) {
 		this.platform = platform;
+	}
+
+	public String getQuotaType() {
+		return this.quotaType;
+	}
+	public void setQuotaType(String quotaType) {
+		this.quotaType = quotaType;
 	}
 
 	public String getQuotaValue() {

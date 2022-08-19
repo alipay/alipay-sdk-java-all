@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸设备绑定酒店和房间
  *
  * @author auto create
- * @since 1.0, 2021-12-02 19:45:46
+ * @since 1.0, 2022-08-18 20:15:50
  */
 public class AlipayOpenIotmbsRoomBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6667879191694982647L;
+	private static final long serialVersionUID = 7316358794942678974L;
 
 	/**
 	 * 设备激活编号
@@ -24,6 +24,12 @@ public class AlipayOpenIotmbsRoomBindModel extends AlipayObject {
 	 */
 	@ApiField("device_type")
 	private Long deviceType;
+
+	/**
+	 * 楼层号
+	 */
+	@ApiField("floor_num")
+	private String floorNum;
 
 	/**
 	 * 酒店编号
@@ -67,6 +73,13 @@ public class AlipayOpenIotmbsRoomBindModel extends AlipayObject {
 	}
 	public void setDeviceType(Long deviceType) {
 		this.deviceType = deviceType;
+	}
+
+	public String getFloorNum() {
+		return this.floorNum;
+	}
+	public void setFloorNum(String floorNum) {
+		this.floorNum = floorNum;
 	}
 
 	public String getHotelId() {

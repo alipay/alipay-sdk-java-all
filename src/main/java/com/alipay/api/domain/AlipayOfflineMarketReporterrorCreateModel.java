@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketReporterrorCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2353281284292288763L;
+	private static final long serialVersionUID = 6379916758812935658L;
 
 	/**
 	 * 发生错误的时候，当前系统的毫秒数，系统会把当前时间构建成Date对象保存为错误发生时间

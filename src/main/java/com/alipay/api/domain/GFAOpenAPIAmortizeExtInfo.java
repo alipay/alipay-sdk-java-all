@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GFAOpenAPIAmortizeExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2115587372188623159L;
+	private static final long serialVersionUID = 2698643995495613953L;
 
 	/**
 	 * 待摊销金额。（单位：各币种的“元”单位，精确到小数点后两位）

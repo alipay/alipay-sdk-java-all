@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataAiserviceCloudbusSchedualconfigSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2455753178114625316L;
+	private static final long serialVersionUID = 4245436875731513988L;
 
 	/** 
 	 * 结果

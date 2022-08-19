@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新版花呗分期商家贴息活动创建接口
  *
  * @author auto create
- * @since 1.0, 2022-07-22 15:00:05
+ * @since 1.0, 2022-08-18 17:44:17
  */
 public class AlipayPcreditHuabeiMerchantActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3553898954456493721L;
+	private static final long serialVersionUID = 4282154733661424698L;
 
 	/**
 	 * 花呗分期商家贴息活动名称，长度不能超过30个汉字或字符
@@ -28,6 +28,12 @@ public class AlipayPcreditHuabeiMerchantActivityCreateModel extends AlipayObject
 	 */
 	@ApiField("amount_budget")
 	private String amountBudget;
+
+	/**
+	 * 贴息范围选择指定活动码后，必须传入活动码参数，活动码仅支持字母数字下划线且长度5-30以内，并且必须包含字母或者数字
+	 */
+	@ApiField("benefit_activity_code")
+	private String benefitActivityCode;
 
 	/**
 	 * 预算提醒邮件列表，邮箱必须符合邮箱地址规则，提醒邮箱个数不能超过5个,多个邮箱用逗号隔开
@@ -104,7 +110,7 @@ public class AlipayPcreditHuabeiMerchantActivityCreateModel extends AlipayObject
 	private Date startTime;
 
 	/**
-	 * ALL代表全场贴息 ORDER代表订单贴息，默认按照全场贴息处理
+	 * ALL代表全场贴息 ORDER代表订单贴息，benefit_activity_code代表指定活动码贴息，默认按照全场贴息处理
 	 */
 	@ApiField("subsidy_scope")
 	private String subsidyScope;
@@ -121,6 +127,13 @@ public class AlipayPcreditHuabeiMerchantActivityCreateModel extends AlipayObject
 	}
 	public void setAmountBudget(String amountBudget) {
 		this.amountBudget = amountBudget;
+	}
+
+	public String getBenefitActivityCode() {
+		return this.benefitActivityCode;
+	}
+	public void setBenefitActivityCode(String benefitActivityCode) {
+		this.benefitActivityCode = benefitActivityCode;
 	}
 
 	public String getBudgetWarningMailList() {

@@ -1,8 +1,10 @@
 package com.alipay.api.request;
 
+import java.util.HashMap;
 import java.util.Map;
 
-import com.alipay.api.AlipayRequest;
+import com.alipay.api.FileItem;
+import com.alipay.api.AlipayUploadRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
 import com.alipay.api.response.DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse;
 import com.alipay.api.AlipayObject;
@@ -11,9 +13,9 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.source.certify request
  * 
  * @author auto create
- * @since 1.0, 2022-04-15 17:51:40
+ * @since 1.0, 2022-08-18 16:16:51
  */
-public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements AlipayRequest<DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse> {
+public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
@@ -32,6 +34,11 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 	* 证件信息类型，大陆身份证：IDENTITY_CARD
 	 */
 	private String certType;
+
+	/** 
+	* 二进制流图片，大小限制1M
+	 */
+	private FileItem fileContent;
 
 	/** 
 	* 客户业务单据号
@@ -69,6 +76,13 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 		return this.certType;
 	}
 
+	public void setFileContent(FileItem fileContent) {
+		this.fileContent = fileContent;
+	}
+	public FileItem getFileContent() {
+		return this.fileContent;
+	}
+
 	public void setOuterBizNo(String outerBizNo) {
 		this.outerBizNo = outerBizNo;
 	}
@@ -90,11 +104,11 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 		return this.reserved;
 	}
 	private String terminalType;
-	private String terminalInfo;	
+	private String terminalInfo;
 	private String prodCode;
 	private String notifyUrl;
 	private String returnUrl;
-	private boolean needEncrypt=false;
+    private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
 	public String getNotifyUrl() {
@@ -116,7 +130,6 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
-
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
@@ -124,7 +137,7 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
-
+	
     public String getTerminalType(){
     	return this.terminalType;
     }
@@ -135,16 +148,16 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 
     public String getTerminalInfo(){
     	return this.terminalInfo;
-    }	
-
-	public void setProdCode(String prodCode) {
-		this.prodCode=prodCode;
-	}
-
+    }
+	
 	public String getProdCode() {
 		return this.prodCode; 
 	}
-
+	
+	public void setProdCode(String prodCode) {
+		this.prodCode=prodCode;
+	}
+    
 	public String getApiMethodName() {
 		return "datadigital.fincloud.generalsaas.face.source.certify";
 	}
@@ -162,7 +175,7 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 		}
 		return txtParams;
 	}
-
+	
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -170,12 +183,17 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 		this.udfParams.put(key, value);
 	}
 
+	public Map<String, FileItem> getFileParams() {
+		Map<String, FileItem> params = new HashMap<String, FileItem>();
+		params.put("file_content", this.fileContent);
+		return params;
+	}
+
 	public Class<DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse> getResponseClass() {
 		return DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse.class;
 	}
 	
-
-    public boolean isNeedEncrypt() {
+	 public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }

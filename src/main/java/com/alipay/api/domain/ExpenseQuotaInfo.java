@@ -6,23 +6,23 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 余额信息
+ * 额度信息
  *
  * @author auto create
- * @since 1.0, 2021-12-14 18:00:44
+ * @since 1.0, 2022-08-18 14:48:21
  */
 public class ExpenseQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5743627363439879987L;
+	private static final long serialVersionUID = 4663565169359719878L;
 
 	/**
-	 * 余额失效时间
+	 * 额度失效时间
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/**
-	 * 余额生效时间
+	 * 额度生效时间
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
@@ -34,69 +34,80 @@ public class ExpenseQuotaInfo extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 余额是否冻结，冻结后因公付不可用
+	 * 额度是否冻结，冻结后因公付不可用
 	 */
 	@ApiField("freeze")
 	private Boolean freeze;
 
 	/**
-	 * 余额所属者ID
-owner_type为员工时为员工支付宝ID
+	 * 额度所属者ID
+owner_type为EMPLOYEE时为员工支付宝ID
+owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
+owner_type为PHONE时为员工手机号
+owner_type为ENTERPRISE时为企业ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 余额所属者类型
+	 * 额度所属者id类型
 EMPLOYEE 员工
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
 
 	/**
-	 * 可用余额（单位分）
+	 * 可用金额（单位分）
 	 */
 	@ApiField("quota_available")
 	private String quotaAvailable;
 
 	/**
-	 * 余额ID
+	 * 额度ID
 	 */
 	@ApiField("quota_id")
 	private String quotaId;
 
 	/**
-	 * 锁定余额（单位分）
+	 * 锁定金额（单位分）
 	 */
 	@ApiField("quota_locked")
 	private String quotaLocked;
 
 	/**
-	 * 总余额（单位分）
+	 * 总金额（单位分）
 	 */
 	@ApiField("quota_total")
 	private String quotaTotal;
 
 	/**
-	 * 已用余额（单位分）
+	 * 额度类型
+	 */
+	@ApiField("quota_type")
+	private String quotaType;
+
+	/**
+	 * 已用金额（单位分）
 	 */
 	@ApiField("quota_used")
 	private String quotaUsed;
 
 	/**
-	 * 余额维度ID
+	 * 额度维度ID
 当 target_type=EXPENSE_TYPE 时，值为
 MEAL（工作餐）
 当target_type=RULE_GROUP_AGGREGATION 时，值为费控规则聚合ID
+当target_type=INSTITUTION 时，值为制度ID
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
-	 * 余额维度
+	 * 额度维度
 枚举值：
 EXPENSE_TYPE（费用类型维度），
-RULE_GROUP_AGGREGATION（规则聚合维度）
+RULE_GROUP_AGGREGATION（规则聚合维度）,
+INSTITUTION（制度）
 	 */
 	@ApiField("target_type")
 	private String targetType;
@@ -169,6 +180,13 @@ RULE_GROUP_AGGREGATION（规则聚合维度）
 	}
 	public void setQuotaTotal(String quotaTotal) {
 		this.quotaTotal = quotaTotal;
+	}
+
+	public String getQuotaType() {
+		return this.quotaType;
+	}
+	public void setQuotaType(String quotaType) {
+		this.quotaType = quotaType;
 	}
 
 	public String getQuotaUsed() {

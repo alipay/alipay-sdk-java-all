@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建/编辑云店任务模版
  *
  * @author auto create
- * @since 1.0, 2022-08-17 10:56:48
+ * @since 1.0, 2022-08-18 10:27:14
  */
 public class AlipayCommerceYuntaskCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2297927757666411323L;
+	private static final long serialVersionUID = 7216251747621365257L;
 
 	/**
-	 * 小程序appid
+	 * 小程序appid，支持带跳转链接
 	 */
 	@ApiField("applet_id")
 	private String appletId;

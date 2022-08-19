@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayExscUserFirstfundinpourGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2575691174987539243L;
+	private static final long serialVersionUID = 3477734834614335729L;
 
 	/** 
 	 * 返回结果的业务类型。首次资金流入业务类型 （first_fund_inpour）

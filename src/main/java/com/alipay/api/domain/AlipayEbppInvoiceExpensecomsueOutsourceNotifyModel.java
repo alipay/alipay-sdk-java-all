@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部员工消费通知
  *
  * @author auto create
- * @since 1.0, 2021-12-14 17:49:32
+ * @since 1.0, 2022-08-18 15:34:09
  */
 public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5376246497534987516L;
+	private static final long serialVersionUID = 6541591133914555927L;
 
 	/**
-	 * 企业ID
+	 * 企业共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -42,7 +42,7 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 
 	/**
 	 * 员工ID
-特殊说明：根据员工账号类型来决定为员工UID还是员工工号
+特殊说明：根据员工账号类型来决定为员工UID、员工工号、员工企业码ID或者员工手机号
 	 */
 	@ApiField("employee_id")
 	private String employeeId;
@@ -52,13 +52,20 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 枚举值：
 0（员工支付宝账号）
 1（ 员工工号）
+2（员工企业码id）
+3（员工手机号）
 	 */
 	@ApiField("employee_id_type")
 	private Long employeeIdType;
 
 	/**
-	 * 拓展参数
-如需使用，请联系技术支持
+	 * 企业id
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
+
+	/**
+	 * 拓展参数，如果控制消费的城市，可传入消费城市的adcode，如需使用，请联系技术支持
 	 */
 	@ApiField("extend")
 	private String extend;
@@ -138,6 +145,13 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	}
 	public void setEmployeeIdType(Long employeeIdType) {
 		this.employeeIdType = employeeIdType;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public String getExtend() {

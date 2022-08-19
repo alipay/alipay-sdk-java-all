@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OriTxnInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2456729229271369472L;
+	private static final long serialVersionUID = 4659538286615217721L;
 
 	/**
 	 * 原始交易描述分类。

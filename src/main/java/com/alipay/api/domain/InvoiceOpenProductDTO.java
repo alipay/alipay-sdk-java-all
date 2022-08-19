@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceOpenProductDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7732324985979113437L;
+	private static final long serialVersionUID = 6679155412855378948L;
 
 	/**
 	 * 税控产品发票类型 可选值：电票：0，纸质普票：1，纸质专票：2

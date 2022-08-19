@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.merchant.activity.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-22 15:01:20
+ * @since 1.0, 2022-08-18 17:46:48
  */
 public class AlipayPcreditHuabeiMerchantActivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1625575184422341179L;
+	private static final long serialVersionUID = 3645627464772482935L;
 
 	/** 
 	 * 出资户账号
@@ -25,6 +25,12 @@ public class AlipayPcreditHuabeiMerchantActivityQueryResponse extends AlipayResp
 	 */
 	@ApiField("aggr_id")
 	private String aggrId;
+
+	/** 
+	 * 活动码仅在subsidy_scope为benefit_activity_code时存在值，默认为空字符串
+	 */
+	@ApiField("benefit_activity_code")
+	private String benefitActivityCode;
 
 	/** 
 	 * 活动出资类型
@@ -41,6 +47,7 @@ public class AlipayPcreditHuabeiMerchantActivityQueryResponse extends AlipayResp
 	/** 
 	 * ALL代表全场贴息
 ORDER代表订单贴息
+benefit_activity_code代表指定活动码贴息
 	 */
 	@ApiField("subsidy_scope")
 	private String subsidyScope;
@@ -57,6 +64,13 @@ ORDER代表订单贴息
 	}
 	public String getAggrId( ) {
 		return this.aggrId;
+	}
+
+	public void setBenefitActivityCode(String benefitActivityCode) {
+		this.benefitActivityCode = benefitActivityCode;
+	}
+	public String getBenefitActivityCode( ) {
+		return this.benefitActivityCode;
 	}
 
 	public void setFundType(String fundType) {

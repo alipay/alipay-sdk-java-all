@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.enterprise.address.add request
  * 
  * @author auto create
- * @since 1.0, 2022-08-17 18:51:47
+ * @since 1.0, 2022-08-18 15:41:51
  */
 public class AlipayCommerceEcEnterpriseAddressAddRequest implements AlipayRequest<AlipayCommerceEcEnterpriseAddressAddResponse> {
 

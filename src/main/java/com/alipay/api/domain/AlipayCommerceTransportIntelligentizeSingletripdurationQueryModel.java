@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大出行智能平台-单程时间-查询
  *
  * @author auto create
- * @since 1.0, 2022-01-10 10:42:38
+ * @since 1.0, 2022-08-18 17:30:04
  */
 public class AlipayCommerceTransportIntelligentizeSingletripdurationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3545744543416794846L;
+	private static final long serialVersionUID = 1636591917374374149L;
 
 	/**
 	 * 聚合方式（MIN、MAX、MEAN、PERCENTILE_95）

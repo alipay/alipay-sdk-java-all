@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改规则员工关系
  *
  * @author auto create
- * @since 1.0, 2022-07-26 20:11:13
+ * @since 1.0, 2022-08-18 15:34:56
  */
 public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4772613459374897726L;
+	private static final long serialVersionUID = 2266392225844368532L;
 
 	/**
 	 * 企业ID

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherMiniAppUseGuideInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4746847244257555933L;
+	private static final long serialVersionUID = 8885433435961399428L;
 
 	/**
 	 * 小程序服务编码，通过 alipay.open.app.appcontent.function.create(小程序服务创建)接口创建服务后获取。 限制: 1.只有mini_app_id有值时该值传入才会有效 2.当前只支持一个服务code 3.service_codes与mini_app_path只能且必须二选一

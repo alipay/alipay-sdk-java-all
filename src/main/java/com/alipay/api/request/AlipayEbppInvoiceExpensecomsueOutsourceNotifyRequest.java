@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.expensecomsue.outsource.notify request
  * 
  * @author auto create
- * @since 1.0, 2021-12-14 17:50:35
+ * @since 1.0, 2022-08-18 15:36:44
  */
 public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyRequest implements AlipayRequest<AlipayEbppInvoiceExpensecomsueOutsourceNotifyResponse> {
 

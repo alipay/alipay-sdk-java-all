@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelContentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1217664924398616999L;
+	private static final long serialVersionUID = 7325677592541214232L;
 
 	/** 
 	 * 可选，仅当请求中的modified_date等于已落地内容的modified_date并且内容状态一致，认为幂等成功，返回Success

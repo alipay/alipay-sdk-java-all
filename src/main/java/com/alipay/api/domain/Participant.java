@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Participant extends AlipayObject {
 
-	private static final long serialVersionUID = 7753783326579485971L;
+	private static final long serialVersionUID = 7684216156682971822L;
 
 	/**
 	 * 如果identity_type为BANKCARD_NO需传递该参数，涉及属性如下：

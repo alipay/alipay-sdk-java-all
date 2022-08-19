@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBusinessOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7681321476461577739L;
+	private static final long serialVersionUID = 7455956535576515725L;
 
 	/** 
 	 * 买家用户详细信息。该返回中ext_profile_list为空。注：创建订单时的买家，请与付款方区分。

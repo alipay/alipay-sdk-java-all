@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻Go协议查询接口
  *
  * @author auto create
- * @since 1.0, 2021-03-11 15:08:44
+ * @since 1.0, 2022-08-18 14:40:49
  */
 public class ZhimaCreditPeZmgoAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8692483786845778877L;
+	private static final long serialVersionUID = 6827496157242392938L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花芝轻会员。传入该参数，会忽略其它所有参数。

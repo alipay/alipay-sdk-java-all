@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-11 15:08:44
+ * @since 1.0, 2022-08-18 14:57:09
  */
 public class ZhimaCreditPeZmgoAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4379548869964392149L;
+	private static final long serialVersionUID = 8895426659494866266L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花芝轻会员协议号。
@@ -27,7 +28,7 @@ public class ZhimaCreditPeZmgoAgreementQueryResponse extends AlipayResponse {
 	private String agreementName;
 
 	/** 
-	 * 协议状态。Y表示状态有效，N表示状态失效
+	 * 协议状态。Y表示状态有效，P表示状态失效中，N表示状态已失效
 	 */
 	@ApiField("agreement_status")
 	private String agreementStatus;
@@ -37,6 +38,24 @@ public class ZhimaCreditPeZmgoAgreementQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/** 
+	 * 代表签约芝麻GO所属业务类型
+	 */
+	@ApiField("biz_type")
+	private String bizType;
+
+	/** 
+	 * 该条芝麻GO协议签约时间
+	 */
+	@ApiField("sign_time")
+	private Date signTime;
+
+	/** 
+	 * 该芝麻GO协议开始时间
+	 */
+	@ApiField("start_time")
+	private Date startTime;
 
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
@@ -64,6 +83,27 @@ public class ZhimaCreditPeZmgoAgreementQueryResponse extends AlipayResponse {
 	}
 	public String getAlipayUserId( ) {
 		return this.alipayUserId;
+	}
+
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
+	}
+	public String getBizType( ) {
+		return this.bizType;
+	}
+
+	public void setSignTime(Date signTime) {
+		this.signTime = signTime;
+	}
+	public Date getSignTime( ) {
+		return this.signTime;
+	}
+
+	public void setStartTime(Date startTime) {
+		this.startTime = startTime;
+	}
+	public Date getStartTime( ) {
+		return this.startTime;
 	}
 
 }

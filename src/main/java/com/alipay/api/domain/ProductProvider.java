@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ProductProvider extends AlipayObject {
 
-	private static final long serialVersionUID = 5827759887522616434L;
+	private static final long serialVersionUID = 5699588339737633241L;
 
 	/**
 	 * 卡代英文名称 备注:淘宝交易为空

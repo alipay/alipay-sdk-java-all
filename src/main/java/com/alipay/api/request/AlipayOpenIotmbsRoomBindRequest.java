@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.room.bind request
  * 
  * @author auto create
- * @since 1.0, 2021-12-02 19:45:46
+ * @since 1.0, 2022-08-18 20:15:50
  */
 public class AlipayOpenIotmbsRoomBindRequest implements AlipayRequest<AlipayOpenIotmbsRoomBindResponse> {
 

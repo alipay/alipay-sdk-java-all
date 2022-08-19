@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecipientInfoOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 3872477634854268225L;
+	private static final long serialVersionUID = 6835575127896415991L;
 
 	/**
 	 * 收件地址的详细地址，寄出纸质发票时方便快递员找到地府

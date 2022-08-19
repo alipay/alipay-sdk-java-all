@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiAppleRequestHeader extends AlipayObject {
 
-	private static final long serialVersionUID = 1458172216428296658L;
+	private static final long serialVersionUID = 1194939337937742352L;
 
 	/**
 	 * 会话id，一般会在响应中带回给商户。

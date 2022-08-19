@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationUnofficialMaterialSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2117138171527782393L;
+	private static final long serialVersionUID = 4285891942638375432L;
 
 	/** 
 	 * 对应所插入非官方物料数据的唯一凭证
