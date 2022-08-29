@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺增加收单账号
  *
  * @author auto create
- * @since 1.0, 2022-07-01 17:42:28
+ * @since 1.0, 2022-08-26 14:15:15
  */
 public class AntMerchantExpandShopReceiptaccountSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6333535877148833795L;
+	private static final long serialVersionUID = 1665675887745262492L;
 
 	/**
 	 * 是否承诺收单账号信息准确。具体承诺信息可查看 <a href="https://gw.alipayobjects.com/os/bmw-prod/922bafa8-a712-4f79-aa32-6f08d7359a5c.docx">门店信息承诺函</a>。

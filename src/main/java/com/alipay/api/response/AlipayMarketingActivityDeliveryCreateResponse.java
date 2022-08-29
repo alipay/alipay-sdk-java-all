@@ -12,11 +12,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.delivery.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-01 14:06:54
+ * @since 1.0, 2022-08-19 16:21:50
  */
 public class AlipayMarketingActivityDeliveryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3547983317827931723L;
+	private static final long serialVersionUID = 7246185795634565552L;
+
+	/** 
+	 * 预览链接。
+可用于预览用户在承接页面领券的流程。
+	 */
+	@ApiField("delivery_guide_preview_url")
+	private String deliveryGuidePreviewUrl;
 
 	/** 
 	 * 投放计划id。
@@ -43,6 +50,13 @@ public class AlipayMarketingActivityDeliveryCreateResponse extends AlipayRespons
 	@ApiListField("success_delivery_config_list")
 	@ApiField("success_delivery_config")
 	private List<SuccessDeliveryConfig> successDeliveryConfigList;
+
+	public void setDeliveryGuidePreviewUrl(String deliveryGuidePreviewUrl) {
+		this.deliveryGuidePreviewUrl = deliveryGuidePreviewUrl;
+	}
+	public String getDeliveryGuidePreviewUrl( ) {
+		return this.deliveryGuidePreviewUrl;
+	}
 
 	public void setDeliveryId(String deliveryId) {
 		this.deliveryId = deliveryId;

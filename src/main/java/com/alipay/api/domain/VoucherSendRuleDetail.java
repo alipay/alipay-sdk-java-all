@@ -7,16 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券发放规则
  *
  * @author auto create
- * @since 1.0, 2022-02-23 14:18:41
+ * @since 1.0, 2022-08-24 14:39:34
  */
 public class VoucherSendRuleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5419841848277831243L;
+	private static final long serialVersionUID = 6673884713478121663L;
 
 	/**
-	 * 是否开启自然人领取限制。
-
-自然人表示按照身份证纬度进行领取限制。
+	 * 是否开启自然人领取限制。自然人表示按照身份证纬度进行领取限制。
 	 */
 	@ApiField("natural_person_limit")
 	private Boolean naturalPersonLimit;
@@ -29,26 +27,13 @@ public class VoucherSendRuleDetail extends AlipayObject {
 
 	/**
 	 * 发行券的数量。
-
-
-
-限制：
-
-code_mode=MERCHANT_UPLOAD模式下数量必须为0或者选择不填。
-
-
-
-其他模式下该数值必须是大于0的整数。
 	 */
 	@ApiField("voucher_quantity")
 	private Long voucherQuantity;
 
 	/**
-	 * 每人领取限制。
-
-默认按照支付宝uid进行领取限制;
-
-不填写或填入0，默认没有领取限制.
+	 * 每人领取限制。默认按照支付宝uid进行领取限制;
+不填写或填入0，默认没有领取限制。
 	 */
 	@ApiField("voucher_quantity_limit_per_user")
 	private Long voucherQuantityLimitPerUser;

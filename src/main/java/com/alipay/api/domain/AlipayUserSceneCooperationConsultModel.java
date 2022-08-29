@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserSceneCooperationConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5471958564452326853L;
+	private static final long serialVersionUID = 5141681519795638861L;
 
 	/**
 	 * 人传人场景码。如果商户需要接入人传人活动建立邀请关系，则需要设置此参数表示人传人场景。当前所有接入人传人的商户统一使用 CommerceService

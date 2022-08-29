@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 私域营销开放兑换券详情
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:03:58
+ * @since 1.0, 2022-08-24 14:40:53
  */
 public class ActivityExchangeVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 6747386335313846286L;
+	private static final long serialVersionUID = 1357718985879784216L;
 
 	/**
-	 * 券的价值 限制： 币种为人民币，单位为元。小数点以后最多保留两位。 取值范围:0.1<=x<=3000
+	 * 券的价值。
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/**
-	 * 优惠门槛金额，表示只有当订单金额大于等于门槛金额时券才能使用。该字段为空时表示无门槛。 门槛金额的校验由服务商(商户)核销时自行校验，支付宝侧只做展示使用。 币种为人民币，单位为元。小数点以后最多保留两位。 设置门槛：取值范围:0.1<=x<= 50000。 如果设置了门槛金额，则必须大于等于0.1，不可以等于0
+	 * 优惠门槛金额，表示只有当订单金额大于等于门槛金额时券才能使用。该字段为空时表示无门槛。 门槛金额的校验由服务商(商户)核销时自行校验，支付宝侧只做展示使用。 币种为人民币，单位为元。小数点以后最多保留两位。 设置门槛：取值范围:0.1<=x<= 50000。如果设置了门槛金额，则必须大于等于0.1，不可以等于0。
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;
@@ -38,7 +38,7 @@ public class ActivityExchangeVoucher extends AlipayObject {
 	private Boolean refundable;
 
 	/**
-	 * 用户购买优惠券需要支付的金额 限制： 币种为人民币，单位为元。小数点以后最多保留两位。 取值范围:0.1<=x<=3000
+	 * 用户购买优惠券需要支付的金额。
 	 */
 	@ApiField("sale_amount")
 	private String saleAmount;

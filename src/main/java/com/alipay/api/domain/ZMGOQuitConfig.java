@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板的退出信息配置
  *
  * @author auto create
- * @since 1.0, 2022-08-08 14:41:49
+ * @since 1.0, 2022-08-26 10:00:14
  */
 public class ZMGOQuitConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5468622629316174975L;
+	private static final long serialVersionUID = 1351487437891221962L;
 
 	/**
 	 * 退出提示

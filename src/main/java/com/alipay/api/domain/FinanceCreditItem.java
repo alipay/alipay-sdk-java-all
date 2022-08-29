@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FinanceCreditItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1493566358255863725L;
+	private static final long serialVersionUID = 6866383191118656972L;
 
 	/**
 	 * 授信id

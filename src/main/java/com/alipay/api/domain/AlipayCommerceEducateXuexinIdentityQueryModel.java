@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝标准用户学信网在校信息授权查询
  *
  * @author auto create
- * @since 1.0, 2022-06-30 17:26:55
+ * @since 1.0, 2022-08-25 14:17:47
  */
 public class AlipayCommerceEducateXuexinIdentityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4524939965248636887L;
+	private static final long serialVersionUID = 6535867967159128947L;
 
 	/**
 	 * 证件号

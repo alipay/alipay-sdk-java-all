@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订购产品方案
  *
  * @author auto create
- * @since 1.0, 2022-08-15 13:51:17
+ * @since 1.0, 2022-08-22 13:36:13
  */
 public class AlipayInsSceneEmploymentProductOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6679591751645399137L;
+	private static final long serialVersionUID = 5474158484559917671L;
 
 	/**
 	 * 渠道
@@ -33,6 +33,12 @@ public class AlipayInsSceneEmploymentProductOrderModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 保险合作商信息
+	 */
+	@ApiField("partner_organization")
+	private InsPartnerOrganization partnerOrganization;
 
 	/**
 	 * 订购产品对应的推荐流水号列表
@@ -66,6 +72,13 @@ public class AlipayInsSceneEmploymentProductOrderModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public InsPartnerOrganization getPartnerOrganization() {
+		return this.partnerOrganization;
+	}
+	public void setPartnerOrganization(InsPartnerOrganization partnerOrganization) {
+		this.partnerOrganization = partnerOrganization;
 	}
 
 	public List<String> getRecomFlowNoList() {

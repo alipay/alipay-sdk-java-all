@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户券实例基础信息
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:03:58
+ * @since 1.0, 2022-08-24 14:39:50
  */
 public class UserVoucherBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5394761879924817688L;
+	private static final long serialVersionUID = 8453721237668529697L;
 
 	/**
 	 * 若商家券操作过关联商户订单信息，则该字段返回商家券已关联的商户订单号。
@@ -34,7 +34,7 @@ public class UserVoucherBaseInfo extends AlipayObject {
 	private Date validBeginTime;
 
 	/**
-	 * 券可使用的结束时间。 格式为yyyy-MM-dd HH:mm:ss 限制： 券可使用的结束时间valid_end_time 必须大于 券的发放结束时间 publish_end_time
+	 * 券可使用的结束时间。 格式为yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("valid_end_time")
 	private Date validEndTime;
@@ -58,7 +58,7 @@ public class UserVoucherBaseInfo extends AlipayObject {
 	private String voucherName;
 
 	/**
-	 * 券状态： 枚举值: SENDED:可用 USED:已核销(即完全使用), EXPIRED:已过期(只能查询6个月内数据)
+	 * 券状态。SENDED:可用 USED:已核销(即完全使用), EXPIRED:已过期(只能查询6个月内数据)
 	 */
 	@ApiField("voucher_status")
 	private String voucherStatus;

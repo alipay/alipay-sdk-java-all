@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.enterinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-20 15:09:51
+ * @since 1.0, 2022-08-22 17:01:53
  */
 public class AlipayEcoMycarParkingEnterinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5318467344844652468L;
+	private static final long serialVersionUID = 6677865273551163899L;
 
 	/** 
 	 * 用户签约的代扣场景字符集，多个英文逗号分割，当车场为ORC识别车牌的场景，返回值包含PLATE_PAY时，表示代扣协议可用。 当车场为ETC设备识别车牌，返回值包含ETC_PAY时表示协议可用。当用户未签约任何代扣场景时返回NO_AGREEMENT_SCENE

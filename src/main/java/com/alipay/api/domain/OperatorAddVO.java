@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁操作员添加参数
  *
  * @author auto create
- * @since 1.0, 2020-08-24 15:02:23
+ * @since 1.0, 2022-08-26 10:29:57
  */
 public class OperatorAddVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5859521578946626554L;
+	private static final long serialVersionUID = 7457365289819819941L;
 
 	/**
 	 * 企业版操作员业务类型。其它类型操作员无需填写
@@ -80,6 +80,13 @@ public class OperatorAddVO extends AlipayObject {
 	 */
 	@ApiField("nick_name")
 	private String nickName;
+
+	/**
+	 * 初始角色码清单
+	 */
+	@ApiListField("role_codes")
+	@ApiField("string")
+	private List<String> roleCodes;
 
 	/**
 	 * 指定租户ID，新增值需联系蚂蚁操作员operator团队人工处理
@@ -148,6 +155,13 @@ public class OperatorAddVO extends AlipayObject {
 	}
 	public void setNickName(String nickName) {
 		this.nickName = nickName;
+	}
+
+	public List<String> getRoleCodes() {
+		return this.roleCodes;
+	}
+	public void setRoleCodes(List<String> roleCodes) {
+		this.roleCodes = roleCodes;
 	}
 
 	public String getTenantId() {

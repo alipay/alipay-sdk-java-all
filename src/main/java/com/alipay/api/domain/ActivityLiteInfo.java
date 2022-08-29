@@ -9,20 +9,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动摘要信息
  *
  * @author auto create
- * @since 1.0, 2022-07-20 17:45:37
+ * @since 1.0, 2022-08-24 17:41:45
  */
 public class ActivityLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5342291445284188997L;
+	private static final long serialVersionUID = 8313639427627157826L;
 
 	/**
-	 * 活动基础信息
+	 * 活动基础信息。
 	 */
 	@ApiField("activity_base_info")
 	private ActivityBaseInfo activityBaseInfo;
 
 	/**
-	 * 活动id
+	 * 活动 id。
 	 */
 	@ApiField("activity_id")
 	private String activityId;
@@ -34,84 +34,79 @@ public class ActivityLiteInfo extends AlipayObject {
 	private String activityName;
 
 	/**
-	 * 活动状态 
-枚举值： 
-ACTIVE:活动已激活，表示活动已经生效，等到活动开始(publish_start_time)之后用户就可以参与活动。
-PAUSE:活动已暂停，表示商户临时暂停该活动，该状态下用户不能参与活动
-FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(publish_end_time)不能再进行领取或修改等操作。
+	 * 活动状态。
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
 
 	/**
-	 * 归属商户PID
+	 * 归属商户 PID。
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
 
 	/**
-	 * 活动创建时间
+	 * 活动创建时间。
 	 */
 	@ApiField("create_time")
 	private Date createTime;
 
 	/**
-	 * 券发放结束时间。 格式为：yyyy-MM-dd HH:mm:ss 限制： 券发放结束时间 publish_end_time 与 券发放开始时间 publish_start_time 间隔必须小于等于180天
+	 * 券发放结束时间。格式为：yyyy-MM-dd HH:mm:ss。
 	 */
 	@ApiField("publish_end_time")
 	private String publishEndTime;
 
 	/**
-	 * 券发放开始时间。 格式为：yyyy-MM-dd HH:mm:ss
+	 * 券发放开始时间。格式为：yyyy-MM-dd HH:mm:ss。
 	 */
 	@ApiField("publish_start_time")
 	private Date publishStartTime;
 
 	/**
-	 * 券可用范围
+	 * 券可用范围。
 	 */
 	@ApiField("voucher_available_scope_info")
 	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
 
 	/**
-	 * 券优惠信息
+	 * 券优惠信息。
 	 */
 	@ApiField("voucher_deduct_info")
 	private VoucherDeductInfo voucherDeductInfo;
 
 	/**
-	 * 券展示规则
+	 * 券展示规则。
 	 */
 	@ApiField("voucher_display_lite_info")
 	private CommonVoucherDisplayLiteInfo voucherDisplayLiteInfo;
 
 	/**
-	 * 券展示信息
+	 * 券展示信息。
 	 */
 	@ApiField("voucher_display_pattern_info")
 	private VoucherDisplayPatternInfo voucherDisplayPatternInfo;
 
 	/**
-	 * 券发放
+	 * 券发放。
 	 */
 	@ApiField("voucher_send_mode_info")
 	private VoucherSendModeInfo voucherSendModeInfo;
 
 	/**
-	 * 券类型。 
-枚举值： FIX_VOUCHER：满减券； DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER: 兑换券；
+	 * 券类型。
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
 
 	/**
-	 * 券核销
+	 * 券核销。
 	 */
 	@ApiField("voucher_use_rule_info")
 	private VoucherUseRuleInfo voucherUseRuleInfo;
 
 	/**
-	 * 券核销规则
+	 * 券核销规则。
 	 */
 	@ApiField("voucher_use_rule_lite_info")
 	private CommonVoucherUseRuleLiteInfo voucherUseRuleLiteInfo;

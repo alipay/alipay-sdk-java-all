@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员标签查询接口
  *
  * @author auto create
- * @since 1.0, 2018-04-24 18:43:10
+ * @since 1.0, 2022-08-25 15:32:07
  */
 public class KoubeiMemberDataTagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3897155939695385625L;
+	private static final long serialVersionUID = 7755758983337219223L;
 
 	/**
 	 * isv的pid

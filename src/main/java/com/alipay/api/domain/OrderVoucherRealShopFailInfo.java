@@ -10,32 +10,27 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 失败的代运营商业关系门店信息
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:01:34
+ * @since 1.0, 2022-08-24 14:47:07
  */
 public class OrderVoucherRealShopFailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5215923443913293766L;
+	private static final long serialVersionUID = 4388821824257237896L;
 
 	/**
-	 * 请求失败提示信息
+	 * 请求失败提示信息。
 	 */
 	@ApiField("fail_message")
 	private String failMessage;
 
 	/**
 	 * 请求失败原因。
-枚举值:
-SHOP_INFO_NOT_PASS:门店信息不全
-SHOP_NOT_EXIST:门店不存在
-MERCHANT_SHOP_RELATION_NOT_EXIST:门店与商户没有关联关系
-ACTIVITY_SHOP_NOT_EXIST:活动不存在该门店
 	 */
 	@ApiListField("fail_reasons")
 	@ApiField("string")
 	private List<String> failReasons;
 
 	/**
-	 * 请求失败的代运营商业关系门店ID
+	 * 请求失败的代运营商业关系门店 ID。
 	 */
 	@ApiField("real_shop_id")
 	private String realShopId;

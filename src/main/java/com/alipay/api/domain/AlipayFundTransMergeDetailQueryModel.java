@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合并支付订单查询
  *
  * @author auto create
- * @since 1.0, 2021-02-23 14:24:02
+ * @since 1.0, 2022-08-25 19:49:47
  */
 public class AlipayFundTransMergeDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6177823876997842867L;
+	private static final long serialVersionUID = 1251535347934597589L;
 
 	/**
 	 * 业务的场景码

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券展示规则
  *
  * @author auto create
- * @since 1.0, 2022-02-23 14:17:49
+ * @since 1.0, 2022-08-24 14:39:20
  */
 public class CommonVoucherDisplayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2152869167678264567L;
+	private static final long serialVersionUID = 8828699431952416132L;
 
 	/**
-	 * 商家品牌logo链接
+	 * 商家品牌 logo 链接。
 	 */
 	@ApiField("brand_logo")
 	private String brandLogo;
@@ -35,14 +35,14 @@ public class CommonVoucherDisplayInfo extends AlipayObject {
 	private String voucherDescription;
 
 	/**
-	 * 券详情图片链接
+	 * 券详情图片链接。
 	 */
 	@ApiListField("voucher_detail_images")
 	@ApiField("string")
 	private List<String> voucherDetailImages;
 
 	/**
-	 * 券封面图链接
+	 * 券封面图链接。
 	 */
 	@ApiField("voucher_image")
 	private String voucherImage;

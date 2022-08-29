@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券核销引导
  *
  * @author auto create
- * @since 1.0, 2022-07-28 14:17:16
+ * @since 1.0, 2022-08-24 16:26:16
  */
 public class VoucherUseGuideInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2359869883242146315L;
+	private static final long serialVersionUID = 8882114139619356294L;
 
 	/**
 	 * 小程序核销引导
@@ -23,10 +23,7 @@ public class VoucherUseGuideInfo extends AlipayObject {
 	private VoucherMiniAppUseGuideInfo miniAppUseGuideInfo;
 
 	/**
-	 * OFFLINE_CODE 券码扫码核销
-MINI_APP 小程序线上核销
-SCAN_CODE 跳转付款码支付核销
-CAN_USE 展示可使用
+	 * 使用引导模式
 	 */
 	@ApiListField("use_guide_mode")
 	@ApiField("string")

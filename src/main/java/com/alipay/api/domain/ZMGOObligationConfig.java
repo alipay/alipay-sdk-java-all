@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板的义务配置模型
  *
  * @author auto create
- * @since 1.0, 2022-08-08 14:41:55
+ * @since 1.0, 2022-08-26 09:59:44
  */
 public class ZMGOObligationConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4551435474243245486L;
+	private static final long serialVersionUID = 2171745742578864169L;
 
 	/**
 	 * 完成任务所需的最少额度，当obligation_template取值为：OBTL002时必传

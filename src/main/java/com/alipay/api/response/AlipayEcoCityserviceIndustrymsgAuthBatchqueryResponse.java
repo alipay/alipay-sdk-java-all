@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCityserviceIndustrymsgAuthBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4844864557971322856L;
+	private static final long serialVersionUID = 8416223323653432758L;
 
 	/** 
 	 * 筛选出来的在市民中心已订阅行业动帐消息的用户信息列表

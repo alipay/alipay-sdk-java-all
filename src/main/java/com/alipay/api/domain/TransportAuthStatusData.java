@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TransportAuthStatusData extends AlipayObject {
 
-	private static final long serialVersionUID = 7454578873336943331L;
+	private static final long serialVersionUID = 6556347995283857523L;
 
 	/**
 	 * 授权状态。取值枚举为authed、unauthed。分别表示已授权、未授权

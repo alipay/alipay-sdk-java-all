@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改券使用规则配置
  *
  * @author auto create
- * @since 1.0, 2022-04-09 19:45:02
+ * @since 1.0, 2022-08-24 16:05:05
  */
 public class VoucherUseRuleModify extends AlipayObject {
 
-	private static final long serialVersionUID = 6498656264339641628L;
+	private static final long serialVersionUID = 4469667978896868152L;
 
 	/**
-	 * 兑换券详情
+	 * 兑换券详情。
 	 */
 	@ApiField("exchange_voucher")
 	private ExchangeVoucherModify exchangeVoucher;
 
 	/**
-	 * 券可用范围修改信息
+	 * 券可用范围修改信息。
 	 */
 	@ApiField("voucher_available_scope")
 	private VoucherAvailableScopeModify voucherAvailableScope;
 
 	/**
-	 * 日期区间内可以使用优惠
+	 * 日期区间内可以使用优惠。
 	 */
 	@ApiField("voucher_valid_period")
 	private VoucherValidPeriodModify voucherValidPeriod;

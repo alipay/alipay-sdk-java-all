@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券汇总信息
  *
  * @author auto create
- * @since 1.0, 2021-04-30 16:44:34
+ * @since 1.0, 2022-08-24 14:43:18
  */
 public class VoucherSummary extends AlipayObject {
 
-	private static final long serialVersionUID = 5449184326864845827L;
+	private static final long serialVersionUID = 4616315773355556822L;
 
 	/**
-	 * 券已发放数量
+	 * 券已发放数量。
 	 */
 	@ApiField("publish_count")
 	private Long publishCount;
 
 	/**
-	 * 券已核销数量
+	 * 券已核销数量。
 	 */
 	@ApiField("used_count")
 	private Long usedCount;

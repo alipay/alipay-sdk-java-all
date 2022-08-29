@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.merge.detail.query request
  * 
  * @author auto create
- * @since 1.0, 2022-07-25 15:33:11
+ * @since 1.0, 2022-08-25 19:51:44
  */
 public class AlipayFundTransMergeDetailQueryRequest implements AlipayRequest<AlipayFundTransMergeDetailQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspCbbpmSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2222996792477232335L;
+	private static final long serialVersionUID = 4769916199224111844L;
 
 	
 

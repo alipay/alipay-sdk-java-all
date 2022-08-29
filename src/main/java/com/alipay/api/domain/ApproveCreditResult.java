@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApproveCreditResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2854892864444966494L;
+	private static final long serialVersionUID = 4191574457919395274L;
 
 	/**
 	 * 费用列表，每个费用对象代码一个收费项； 若费用列表为空或空集合，表示不存在费用定价

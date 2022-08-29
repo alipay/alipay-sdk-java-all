@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.recruit.enroll.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-01 17:01:50
+ * @since 1.0, 2022-08-26 17:07:00
  */
 public class AlipayMarketingRecruitEnrollCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6769886414319214727L;
+	private static final long serialVersionUID = 4885491977362277531L;
 
 	/** 
 	 * 报名ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板的基本信息配置
  *
  * @author auto create
- * @since 1.0, 2022-07-22 16:29:56
+ * @since 1.0, 2022-08-26 10:00:29
  */
 public class ZMGOBasicConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8393845821656451137L;
+	private static final long serialVersionUID = 8696632199226371395L;
 
 	/**
 	 * 商户在芝麻GO配置的业务身份编码
@@ -54,6 +54,12 @@ public class ZMGOBasicConfig extends AlipayObject {
 	 */
 	@ApiField("template_name")
 	private String templateName;
+
+	/**
+	 * 模板编号
+	 */
+	@ApiField("template_no")
+	private String templateNo;
 
 	public String getBizType() {
 		return this.bizType;
@@ -102,6 +108,13 @@ public class ZMGOBasicConfig extends AlipayObject {
 	}
 	public void setTemplateName(String templateName) {
 		this.templateName = templateName;
+	}
+
+	public String getTemplateNo() {
+		return this.templateNo;
+	}
+	public void setTemplateNo(String templateNo) {
+		this.templateNo = templateNo;
 	}
 
 }

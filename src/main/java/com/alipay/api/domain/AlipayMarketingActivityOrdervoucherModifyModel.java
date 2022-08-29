@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单券修改
  *
  * @author auto create
- * @since 1.0, 2022-08-15 10:36:58
+ * @since 1.0, 2022-08-24 17:56:10
  */
 public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6862788512542137511L;
+	private static final long serialVersionUID = 8467741449869321553L;
 
 	/**
 	 * 活动基础信息
@@ -28,7 +28,7 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 	private String activityId;
 
 	/**
-	 * 活动名称。 不对用户进行展示，仅供商家在后台管理活动使用。
+	 * 活动名称。
 	 */
 	@ApiField("activity_name")
 	private String activityName;
@@ -41,33 +41,21 @@ public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject
 
 	/**
 	 * 商户接入模式
-
-枚举值
-SELF_MODE 商户自接入模式
-AGENCY_MODE 服务商代接入模式
 	 */
 	@ApiField("merchant_access_mode")
 	private String merchantAccessMode;
 
 	/**
 	 * 外部业务单号，用作幂等控制。
-
 幂等作用：
 参数不变的情况下，再次请求返回与上一次相同的结果。
-外部接入方需保证业务单号唯一。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
 	/**
 	 * 券发放结束时间。该值为空表示不修改
-
 格式为：yyyy-MM-dd HH:mm:ss
-
-限制：
-1、券发放结束时间publish_end_time 与 券发放开始时间publish_start_time 间隔必须小于等于180天
-2、修改发放结束时间，只能延长，不允许缩短。
-3、活动已到期或已停止修改结束时间不会生效
 	 */
 	@ApiField("publish_end_time")
 	private Date publishEndTime;
@@ -85,7 +73,7 @@ AGENCY_MODE 服务商代接入模式
 	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
 
 	/**
-	 * 可用范围修改类型。 ADD:增加可用范围 REMOVE:减少可用范围 MODIFY_ALL:修改全量可用范围
+	 * 可用范围修改类型。
 	 */
 	@ApiField("voucher_available_scope_modify_type")
 	private String voucherAvailableScopeModifyType;

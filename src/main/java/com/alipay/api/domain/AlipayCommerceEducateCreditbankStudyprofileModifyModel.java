@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 学分银行学生档案数据更新接口
  *
  * @author auto create
- * @since 1.0, 2020-12-17 10:48:22
+ * @since 1.0, 2022-08-19 17:21:04
  */
 public class AlipayCommerceEducateCreditbankStudyprofileModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2338414142125838118L;
+	private static final long serialVersionUID = 4235444233625179312L;
 
 	/**
 	 * 学分银行用户ID

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoCplifeBillDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1263629578545739399L;
+	private static final long serialVersionUID = 2898442667237719114L;
 
 	/**
 	 * 指定小区下待删除的物业费账单应收明细条目ID列表，一次最多删除1000条，如果明细条目已被支付或在支付中，则无法被删除。接口会返回无法删除的明细条目ID列表。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付费外卡售卖方案详情
  *
  * @author auto create
- * @since 1.0, 2022-02-21 15:46:35
+ * @since 1.0, 2022-08-25 18:10:57
  */
 public class PaidOuterCardPriceDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7384635474152456894L;
+	private static final long serialVersionUID = 4231431653126237739L;
 
 	/**
 	 * 方案描述

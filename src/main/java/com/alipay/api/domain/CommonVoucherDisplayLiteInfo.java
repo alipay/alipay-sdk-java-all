@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券展示摘要信息
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:00:44
+ * @since 1.0, 2022-08-24 14:39:53
  */
 public class CommonVoucherDisplayLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5267386373589536239L;
+	private static final long serialVersionUID = 8249262387352789269L;
 
 	/**
-	 * 商户品牌logo链接
+	 * 商户品牌 logo 链接。
 	 */
 	@ApiField("brand_logo")
 	private String brandLogo;
 
 	/**
-	 * 商户品牌名称。 如果不设置品牌名称，则默认使用支付宝商家系统中维护的商家别名。 如果没有维护商家别名，则使用默认名称： 商家优惠。 用户领取优惠券后，品牌名称会对用户进行展示
+	 * 商户品牌名称。 如果不设置品牌名称，则默认使用支付宝商家系统中维护的商家别名。 如果没有维护商家别名，则使用默认名称：商家优惠。 用户领取优惠券后，品牌名称会对用户进行展示。
 	 */
 	@ApiField("brand_name")
 	private String brandName;

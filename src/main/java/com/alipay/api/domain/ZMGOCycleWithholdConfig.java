@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻GO周期扣配置
  *
  * @author auto create
- * @since 1.0, 2022-08-10 15:20:55
+ * @since 1.0, 2022-08-26 10:00:06
  */
 public class ZMGOCycleWithholdConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1862431117217564739L;
+	private static final long serialVersionUID = 3787228625416335655L;
 
 	/**
 	 * 扣款计划

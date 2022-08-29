@@ -1,0 +1,30 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: mybank.credit.loantrade.guarletter.compensate.apply response.
+ * 
+ * @author auto create
+ * @since 1.0, 2022-08-24 17:38:17
+ */
+public class MybankCreditLoantradeGuarletterCompensateApplyResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 4562294189153691661L;
+
+	/** 
+	 * 赔付申请单单号
+	 */
+	@ApiField("apply_no")
+	private String applyNo;
+
+	public void setApplyNo(String applyNo) {
+		this.applyNo = applyNo;
+	}
+	public String getApplyNo( ) {
+		return this.applyNo;
+	}
+
+}

@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-15 16:08:14
+ * @since 1.0, 2022-08-25 14:13:05
  */
 public class AlipayMarketingActivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3367614124536167737L;
+	private static final long serialVersionUID = 6847458423547225666L;
 
 	/** 
 	 * 活动基础信息
@@ -43,11 +43,7 @@ public class AlipayMarketingActivityQueryResponse extends AlipayResponse {
 	private String activityName;
 
 	/** 
-	 * 活动状态 
-枚举值： 
-ACTIVE:活动已激活，表示活动已经生效，等到活动开始(publish_start_time)之后用户就可以参与活动。
-PAUSE:活动已暂停，表示商户临时暂停该活动，该状态下用户不能参与活动
-FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(publish_end_time)不能再进行领取或修改等操作。
+	 * 活动状态。活动已激活，表示活动已经生效，等到活动开始(publish_start_time)之后用户就可以参与活动。活动已暂停，表示商户临时暂停该活动，该状态下用户不能参与活动。活动已结束，表示商户主动停止活动或活动到期结束(publish_end_time)不能再进行领取或修改等操作。
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
@@ -107,12 +103,7 @@ FINISHED:活动已结束，表示商户主动停止活动或活动到期结束(p
 	private CommonVoucherSendRule voucherSendRule;
 
 	/** 
-	 * 券类型。 
-枚举值： 
-FIX_VOUCHER：满减券； 
-DISCOUNT_VOUCHER：折扣券；
-SPECIAL_VOUCHER：特价券；
-EXCHANGE_VOUCHER: 兑换券；
+	 * 券类型。
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataAiserviceSmartpriceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6843423967181499751L;
+	private static final long serialVersionUID = 3638386621537656692L;
 
 	/** 
 	 * 兼容V1.0。用户购买hellobike月卡的推荐价格，单位为分。

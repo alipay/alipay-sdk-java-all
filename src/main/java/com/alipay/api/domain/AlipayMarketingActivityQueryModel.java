@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询活动详情
  *
  * @author auto create
- * @since 1.0, 2022-08-15 16:08:14
+ * @since 1.0, 2022-08-25 14:13:05
  */
 public class AlipayMarketingActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7853278125544642719L;
+	private static final long serialVersionUID = 7434674923848171116L;
 
 	/**
 	 * 活动id
@@ -20,21 +20,13 @@ public class AlipayMarketingActivityQueryModel extends AlipayObject {
 	private String activityId;
 
 	/**
-	 * 商户接入模式
-
-枚举值
-SELF_MODE 商户自接入模式
-AGENCY_MODE 服务商代接入模式
+	 * 商户接入模式。
 	 */
 	@ApiField("merchant_access_mode")
 	private String merchantAccessMode;
 
 	/**
-	 * 商户PID,默认为当前接口调用商户 
-限制: 
-接口调用者必须有商户代运营权限。 
-
-代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83
+	 * 商户PID,默认为当前接口调用商户。
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;

@@ -7,36 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券发放方式
  *
  * @author auto create
- * @since 1.0, 2022-07-28 14:17:16
+ * @since 1.0, 2022-08-24 22:11:47
  */
 public class VoucherSendModeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3448879455717355653L;
+	private static final long serialVersionUID = 2314155952193798128L;
 
 	/**
-	 * 券包信息
+	 * 券包信息。
 	 */
 	@ApiField("voucher_package_mode_info")
 	private VoucherPackageModeInfo voucherPackageModeInfo;
 
 	/**
-	 * 券售卖信息
+	 * 券售卖信息。
 	 */
 	@ApiField("voucher_sale_mode_info")
 	private VoucherSaleModeInfo voucherSaleModeInfo;
 
 	/**
-	 * 券发放模式
-枚举值:
-SALE_MODE:售卖模式
-DIRECT_SEND_MODE:直领模式
-VOUCHER_PACKAGE:券包
+	 * 券发放模式。
 	 */
 	@ApiField("voucher_send_mode")
 	private String voucherSendMode;
 
 	/**
-	 * 券发放规则
+	 * 券发放规则。
 	 */
 	@ApiField("voucher_send_rule_info")
 	private VoucherSendRuleInfo voucherSendRuleInfo;

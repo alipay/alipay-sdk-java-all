@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.user.queryvoucher response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-15 19:34:10
+ * @since 1.0, 2022-08-25 15:39:31
  */
 public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7869837111345382666L;
+	private static final long serialVersionUID = 4463267947618475911L;
 
 	/** 
 	 * 活动基础信息
@@ -31,7 +31,7 @@ public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayRespo
 	private ActivityBaseInfo activityBaseInfo;
 
 	/** 
-	 * 活动id
+	 * 活动 id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
@@ -55,7 +55,7 @@ public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayRespo
 	private Date availableEndTime;
 
 	/** 
-	 * 券归属pid
+	 * 券归属 pid
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
@@ -109,17 +109,13 @@ public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayRespo
 	private CommonVoucherSendRule voucherSendRule;
 
 	/** 
-	 * 券状态： 
-枚举值:
-SENDED:可用
-USED:已核销(即完全使用),
-EXPIRED:已过期(只能查询6个月内数据)
+	 * 券状态。
 	 */
 	@ApiField("voucher_status")
 	private String voucherStatus;
 
 	/** 
-	 * 券类型。 枚举值： FIX_VOUCHER：满减券； DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER: 兑换券；
+	 * 券类型。
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵活用工产品列表咨询推荐
  *
  * @author auto create
- * @since 1.0, 2022-08-15 13:31:13
+ * @since 1.0, 2022-08-22 13:36:15
  */
 public class AlipayInsSceneEmploymentProductConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5834261685656178767L;
+	private static final long serialVersionUID = 7355115272479487797L;
 
 	/**
 	 * 渠道
@@ -24,6 +24,12 @@ public class AlipayInsSceneEmploymentProductConsultModel extends AlipayObject {
 	 */
 	@ApiField("merchant")
 	private InsCompany merchant;
+
+	/**
+	 * 保险合作商信息
+	 */
+	@ApiField("partner_organization")
+	private InsPartnerOrganization partnerOrganization;
 
 	/**
 	 * 场景码
@@ -43,6 +49,13 @@ public class AlipayInsSceneEmploymentProductConsultModel extends AlipayObject {
 	}
 	public void setMerchant(InsCompany merchant) {
 		this.merchant = merchant;
+	}
+
+	public InsPartnerOrganization getPartnerOrganization() {
+		return this.partnerOrganization;
+	}
+	public void setPartnerOrganization(InsPartnerOrganization partnerOrganization) {
+		this.partnerOrganization = partnerOrganization;
 	}
 
 	public String getSceneCode() {

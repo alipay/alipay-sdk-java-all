@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送灵工保领域事件
  *
  * @author auto create
- * @since 1.0, 2022-06-15 14:19:17
+ * @since 1.0, 2022-08-22 13:50:47
  */
 public class AlipayInsSceneEmploymentEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1214794886548314411L;
+	private static final long serialVersionUID = 7393988363146819485L;
 
 	/**
 	 * 渠道

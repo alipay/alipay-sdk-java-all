@@ -8,11 +8,11 @@ import com.alipay.api.internal.mapping.ApiField;
 学校    武汉理工大学
  *
  * @author auto create
- * @since 1.0, 2021-11-04 14:14:58
+ * @since 1.0, 2022-08-25 18:08:40
  */
 public class CardFrontTextDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1881562675226332198L;
+	private static final long serialVersionUID = 1335396735894723253L;
 
 	/**
 	 * 文案标签

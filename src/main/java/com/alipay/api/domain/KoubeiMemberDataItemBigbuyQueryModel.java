@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询超值抢购商品信息
  *
  * @author auto create
- * @since 1.0, 2019-01-02 15:47:30
+ * @since 1.0, 2022-08-25 15:39:05
  */
 public class KoubeiMemberDataItemBigbuyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5417476433334969515L;
+	private static final long serialVersionUID = 3197212255556187794L;
 
 	/**
 	 * 城市编码，国标码

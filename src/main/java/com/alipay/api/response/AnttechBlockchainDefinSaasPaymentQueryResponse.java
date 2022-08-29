@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.saas.payment.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-21 15:05:29
+ * @since 1.0, 2022-08-25 23:36:46
  */
 public class AnttechBlockchainDefinSaasPaymentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8147566348523696144L;
+	private static final long serialVersionUID = 1631125348564149759L;
 
 	/** 
 	 * 描述资金流的模型，通常资金流分为：SALE 销售模；AUTH_CAPTURE 预授权模式；
@@ -24,7 +24,7 @@ public class AnttechBlockchainDefinSaasPaymentQueryResponse extends AlipayRespon
 	 * 交易状态。INIT(初始创建);PAYING(支付处理中);PAY_SUCCESS(支付成功);PAY_FAIL(支付失败);
 CAPTURING(请款中);CAPTURE_SUCCESS(请款成功);CAPTURE_FAIL(请款失败);
 REFUNDING(退款中);REFUND_SUCCESS(退款成功);REFUND_FAIL(退款失败);
-CLOSING(关单中);CLOSE_SUCCESS(关单成功);CLOSE_FAIL(关单失败);
+CLOSING(关单中);CLOSE_SUCCESS(关单成功);CLOSE_FAIL(关单失败);PART_PROCESSING(部分处理中);PART_SUCCESS(部分请款部分退款)
 	 */
 	@ApiField("order_state")
 	private String orderState;

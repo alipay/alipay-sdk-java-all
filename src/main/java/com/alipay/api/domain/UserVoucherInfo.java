@@ -9,117 +9,110 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户券详情
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:00:44
+ * @since 1.0, 2022-08-24 17:41:58
  */
 public class UserVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5736574366618388379L;
+	private static final long serialVersionUID = 2666884633649458154L;
 
 	/**
-	 * 活动基础信息
+	 * 活动基础信息。
 	 */
 	@ApiField("activity_base_info")
 	private ActivityBaseInfo activityBaseInfo;
 
 	/**
-	 * 活动id
+	 * 活动 id。
 	 */
 	@ApiField("activity_id")
 	private String activityId;
 
 	/**
-	 * 券可用开始时间
+	 * 券可用开始时间。
 	 */
 	@ApiField("available_begin_time")
 	private Date availableBeginTime;
 
 	/**
-	 * 券可用结束时间
+	 * 券可用结束时间。
 	 */
 	@ApiField("available_end_time")
 	private Date availableEndTime;
 
 	/**
-	 * 券归属商户pid
+	 * 券归属商户 pid。
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
 
 	/**
-	 * 用户领券时间
+	 * 用户领券时间。
 	 */
 	@ApiField("create_time")
 	private Date createTime;
 
 	/**
-	 * 用户券实例信息
+	 * 用户券实例信息。
 	 */
 	@ApiField("user_voucher_base_info")
 	private UserVoucherBaseInfo userVoucherBaseInfo;
 
 	/**
-	 * 券可用范围
+	 * 券可用范围。
 	 */
 	@ApiField("voucher_available_scope_info")
 	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
 
 	/**
-	 * 券优惠信息
+	 * 券优惠信息。
 	 */
 	@ApiField("voucher_deduct_info")
 	private VoucherDeductInfo voucherDeductInfo;
 
 	/**
-	 * 券展示信息
+	 * 券展示信息。
 	 */
 	@ApiField("voucher_display_lite_info")
 	private CommonVoucherDisplayLiteInfo voucherDisplayLiteInfo;
 
 	/**
-	 * 券展示信息
+	 * 券展示信息。
 	 */
 	@ApiField("voucher_display_pattern_info")
 	private VoucherDisplayPatternInfo voucherDisplayPatternInfo;
 
 	/**
-	 * 用户券id。支付宝为用户优惠券唯一分配的id。
+	 * 用户券 id。支付宝为用户优惠券唯一分配的 id。
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
 
 	/**
-	 * 券名称。展示在支付宝卡包中的券名称
+	 * 券名称。展示在支付宝卡包中的券名称。
 	 */
 	@ApiField("voucher_name")
 	private String voucherName;
 
 	/**
-	 * 券发放信息
+	 * 券发放信息。
 	 */
 	@ApiField("voucher_send_mode_info")
 	private VoucherSendModeInfo voucherSendModeInfo;
 
 	/**
-	 * 券状态
-枚举值
-SENDED：可用
-USED：已核销
-EXPIRED:已过期(可查询6个月内数据)
+	 * 券状态。
 	 */
 	@ApiField("voucher_status")
 	private String voucherStatus;
 
 	/**
 	 * 券类型。
- 枚举值： 
-FIX_VOUCHER：满减券； 
-DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； EXCHANGE_VOUCHER: 兑换券；
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
 
 	/**
-	 * 券核销规则
+	 * 券核销规则。
 	 */
 	@ApiField("voucher_use_rule_lite_info")
 	private CommonVoucherUseRuleLiteInfo voucherUseRuleLiteInfo;

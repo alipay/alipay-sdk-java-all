@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可用范围结果详情
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:01:34
+ * @since 1.0, 2022-08-24 16:22:26
  */
 public class VoucherAvailableScopeResultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3359414786976418395L;
+	private static final long serialVersionUID = 7547542269462434912L;
 
 	/**
-	 * 可用地理位置
+	 * 可用地理位置。
 	 */
 	@ApiField("voucher_available_geography_scope_result_info")
 	private VoucherAvailableGeographyScopeResultInfo voucherAvailableGeographyScopeResultInfo;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 一脸通行人脸扩展信息修改
  *
  * @author auto create
- * @since 1.0, 2022-01-19 10:23:02
+ * @since 1.0, 2022-08-22 19:37:22
  */
 public class AlipayCommerceEducateFaceuserModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8156138527343677318L;
+	private static final long serialVersionUID = 4399384478549667436L;
 
 	/**
 	 * 业务码。可选的场景码有：{TRAFFIC:出行行业，BUSINESS:企业行业，SCENIC:景区行业，COMMUNITY:社区行业}

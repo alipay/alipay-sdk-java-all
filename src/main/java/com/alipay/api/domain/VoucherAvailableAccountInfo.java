@@ -10,21 +10,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 可用账号
  *
  * @author auto create
- * @since 1.0, 2022-07-28 14:17:16
+ * @since 1.0, 2022-08-24 14:39:24
  */
 public class VoucherAvailableAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1776461771883758294L;
+	private static final long serialVersionUID = 1637893794886252482L;
 
 	/**
-	 * 优惠券可核销的直连商户PID 限制： 1、available_pids和available_smids至少二选一。
+	 * 优惠券可核销的直连商户PID
 	 */
 	@ApiListField("available_pids")
 	@ApiField("string")
 	private List<String> availablePids;
 
 	/**
-	 * 优惠券可核销的间连商户SMID 限制： 1、available_pids和available_smids至少二选一。
+	 * 优惠券可核销的间连商户SMID
 	 */
 	@ApiListField("available_smids")
 	@ApiField("string")

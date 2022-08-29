@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 操作员基础信息
  *
  * @author auto create
- * @since 1.0, 2022-05-17 19:54:51
+ * @since 1.0, 2022-08-26 10:31:39
  */
 public class OperatorBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1577337216569832565L;
+	private static final long serialVersionUID = 3632294887993282793L;
 
 	/**
 	 * 关联账号列表
@@ -85,6 +85,13 @@ public class OperatorBasicInfo extends AlipayObject {
 	 */
 	@ApiField("rel_ip_role_type")
 	private String relIpRoleType;
+
+	/**
+	 * 角色列表
+	 */
+	@ApiListField("role_codes")
+	@ApiField("string")
+	private List<String> roleCodes;
 
 	/**
 	 * 操作员状态。枚举参考OperatorStatusEnum。
@@ -178,6 +185,13 @@ C=已删除
 	}
 	public void setRelIpRoleType(String relIpRoleType) {
 		this.relIpRoleType = relIpRoleType;
+	}
+
+	public List<String> getRoleCodes() {
+		return this.roleCodes;
+	}
+	public void setRoleCodes(List<String> roleCodes) {
+		this.roleCodes = roleCodes;
 	}
 
 	public String getStatus() {

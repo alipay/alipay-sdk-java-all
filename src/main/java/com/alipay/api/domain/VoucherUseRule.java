@@ -7,38 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券核销相关规则
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:01:33
+ * @since 1.0, 2022-08-24 15:53:52
  */
 public class VoucherUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6478656952199232114L;
+	private static final long serialVersionUID = 7825982989314286132L;
 
 	/**
-	 * 折扣券详情 限制: 券类型voucher_type为折扣券DISCOUNT_VOUCHER时必传
+	 * 折扣券详情
 	 */
 	@ApiField("discount_voucher")
 	private DiscountVoucher discountVoucher;
 
 	/**
 	 * 兑换券详情
-
-限制:
-券类型为兑换券时必传
 	 */
 	@ApiField("exchange_voucher")
 	private ExchangeVoucher exchangeVoucher;
 
 	/**
 	 * 满减券详情
-
-限制:
-券类型为满减券时必传
 	 */
 	@ApiField("fix_voucher")
 	private FixVoucher fixVoucher;
 
 	/**
-	 * 特价券详情 限制: 券类型voucher_type为特价券SPECIAL_VOUCHER时必传
+	 * 特价券详情
 	 */
 	@ApiField("special_voucher")
 	private SpecialVoucher specialVoucher;

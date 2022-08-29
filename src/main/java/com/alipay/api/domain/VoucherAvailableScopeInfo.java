@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券可用范围
  *
  * @author auto create
- * @since 1.0, 2022-07-28 14:17:16
+ * @since 1.0, 2022-08-24 16:04:29
  */
 public class VoucherAvailableScopeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7856658648446415876L;
+	private static final long serialVersionUID = 5698617195477868936L;
 
 	/**
-	 * 券可用账号
+	 * 券可用账号。
 	 */
 	@ApiField("voucher_available_account_info")
 	private VoucherAvailableAccountInfo voucherAvailableAccountInfo;
 
 	/**
-	 * 券可用小程序
+	 * 券可用小程序。
 	 */
 	@ApiField("voucher_available_app_info")
 	private VoucherAvailableAppInfo voucherAvailableAppInfo;
 
 	/**
-	 * 券可用地理位置
+	 * 券可用地理位置。
 	 */
 	@ApiField("voucher_available_geography_scope_info")
 	private VoucherAvailableGeographyScopeInfo voucherAvailableGeographyScopeInfo;
 
 	/**
-	 * 券可用商品
+	 * 券可用商品。
 	 */
 	@ApiField("voucher_available_goods_info")
 	private VoucherAvailableGoodsInfo voucherAvailableGoodsInfo;

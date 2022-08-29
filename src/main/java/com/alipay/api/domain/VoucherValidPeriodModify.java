@@ -9,45 +9,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改券有效期对象
  *
  * @author auto create
- * @since 1.0, 2022-02-25 10:43:58
+ * @since 1.0, 2022-08-24 14:45:48
  */
 public class VoucherValidPeriodModify extends AlipayObject {
 
-	private static final long serialVersionUID = 3197361454349856163L;
+	private static final long serialVersionUID = 3114249631394768768L;
 
 	/**
-	 * 券可使用的开始时间。 格式为：yyyy-MM-dd HH:mm:ss
+	 * 券可使用的开始时间。格式为：yyyy-MM-dd HH:mm:ss。
 	 */
 	@ApiField("valid_begin_time")
 	private Date validBeginTime;
 
 	/**
-	 * 券生效后N天内可以使用。
-
-
-限制：
-1、创建活动时传入时间类型type为RELATIVE时可修改。
-2、valid_days_after_receive必须大于0。
-3、修改该时间，只允许延长，不允许缩短。
+	 * 券生效后 N 天内可以使用。
 	 */
 	@ApiField("valid_days_after_receive")
 	private Long validDaysAfterReceive;
 
 	/**
-	 * 券可使用的结束时间。
-
-格式为yyyy-MM-dd HH:mm:ss
-
-限制：
-1、创建活动时传入时间类型type为ABSOLUTE才能修改。
-2、券可使用的结束时间valid_end_time 必须大于 券的发放结束时间publish_end_time
-3、修改券可使用的结束时间，只能延长，不允许缩短。
+	 * 券可使用的结束时间。格式为yyyy-MM-dd HH:mm:ss。
 	 */
 	@ApiField("valid_end_time")
 	private Date validEndTime;
 
 	/**
-	 * 用户领券后需要等待N天，券才可以生效。
+	 * 用户领券后需要等待 N 天，券才可以生效。
 	 */
 	@ApiField("wait_days_after_receive")
 	private Long waitDaysAfterReceive;

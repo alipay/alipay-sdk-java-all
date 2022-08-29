@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaskEventInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8512759622113211243L;
+	private static final long serialVersionUID = 1836713232971876446L;
 
 	/**
 	 * 任务事件id，任务事件类型是TRADE_SOURCE时，为支付宝交易号

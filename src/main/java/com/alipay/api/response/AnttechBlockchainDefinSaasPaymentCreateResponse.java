@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.AccountDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.saas.payment.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-21 11:42:10
+ * @since 1.0, 2022-08-25 22:26:45
  */
 public class AnttechBlockchainDefinSaasPaymentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1585528114571439881L;
+	private static final long serialVersionUID = 2335443696291252252L;
 
 	/** 
 	 * 描述资金流的模型，通常资金流分为：SALE 销售模；AUTH_CAPTURE 预授权模式；
@@ -46,6 +47,12 @@ CLOSING(关单中);CLOSE_SUCCESS(关单成功);CLOSE_FAIL(关单失败);
 	 */
 	@ApiField("out_payer_id")
 	private String outPayerId;
+
+	/** 
+	 * 收款方账号
+	 */
+	@ApiField("payee_account")
+	private AccountDTO payeeAccount;
 
 	/** 
 	 * 会员所属业务平台在智能科技的会员ID
@@ -86,6 +93,13 @@ CLOSING(关单中);CLOSE_SUCCESS(关单成功);CLOSE_FAIL(关单失败);
 	}
 	public String getOutPayerId( ) {
 		return this.outPayerId;
+	}
+
+	public void setPayeeAccount(AccountDTO payeeAccount) {
+		this.payeeAccount = payeeAccount;
+	}
+	public AccountDTO getPayeeAccount( ) {
+		return this.payeeAccount;
 	}
 
 	public void setPlatformMemberId(String platformMemberId) {

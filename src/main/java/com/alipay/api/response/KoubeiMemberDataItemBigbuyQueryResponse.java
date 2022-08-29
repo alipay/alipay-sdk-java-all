@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.member.data.item.bigbuy.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-08-25 15:39:05
  */
 public class KoubeiMemberDataItemBigbuyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7783656189538642687L;
+	private static final long serialVersionUID = 4321949352768599138L;
 
 	/** 
 	 * 超值抢购商品信息

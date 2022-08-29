@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KnPrizeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8874955318869961539L;
+	private static final long serialVersionUID = 3112942918271577155L;
 
 	/**
 	 * 支付宝营销海豚奖品生效时间，格式：yyyy-MM-dd HH:mm:ss

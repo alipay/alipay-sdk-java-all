@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.saas.payment.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-21 13:56:42
+ * @since 1.0, 2022-08-25 22:31:46
  */
 public class AnttechBlockchainDefinSaasPaymentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6889728849983748937L;
+	private static final long serialVersionUID = 1224729778256497981L;
 
 	/** 
 	 * 可用金额，单位为元。可用金额=总金额-已请款金额-已撤销金额。精确到小数点后两位，取值范围[0.01,100000000]
@@ -48,10 +48,16 @@ CLOSING(关单中);CLOSE_SUCCESS(关单成功);CLOSE_FAIL(关单失败);
 	private String outOrderId;
 
 	/** 
-	 * 外部请求ID
+	 * 外部请求ID，需要支持部分请款/退款的平台必填
 	 */
 	@ApiField("out_request_id")
 	private String outRequestId;
+
+	/** 
+	 * 资金操作状态。PROCESSING(处理中);SUCCESS(成功);FAIL(失败);
+	 */
+	@ApiField("state")
+	private String state;
 
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
@@ -93,6 +99,13 @@ CLOSING(关单中);CLOSE_SUCCESS(关单成功);CLOSE_FAIL(关单失败);
 	}
 	public String getOutRequestId( ) {
 		return this.outRequestId;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getState( ) {
+		return this.state;
 	}
 
 }

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户学生证信息同步
  *
  * @author auto create
- * @since 1.0, 2022-06-30 16:19:19
+ * @since 1.0, 2022-08-25 14:30:48
  */
 public class AlipayCommerceEducateCampusCardUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4752382216594817975L;
+	private static final long serialVersionUID = 1374266874563473665L;
 
 	/**
 	 * 业务来源，需要拆分子渠道的需要上送，例如：

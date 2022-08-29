@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 培训经历查询接口
  *
  * @author auto create
- * @since 1.0, 2021-02-22 16:35:53
+ * @since 1.0, 2022-08-19 17:21:21
  */
 public class AlipayCommerceEducateCreditbankTrainingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3855449245941231492L;
+	private static final long serialVersionUID = 7366921196689132868L;
 
 	/**
 	 * 学分银行ID

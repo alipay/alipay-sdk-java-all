@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loantrade.guarletter.apply.refund request
  * 
  * @author auto create
- * @since 1.0, 2022-07-12 12:38:34
+ * @since 1.0, 2022-08-24 17:39:24
  */
 public class MybankCreditLoantradeGuarletterApplyRefundRequest implements AlipayRequest<MybankCreditLoantradeGuarletterApplyRefundResponse> {
 

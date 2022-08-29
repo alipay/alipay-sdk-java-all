@@ -10,32 +10,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券展示信息
  *
  * @author auto create
- * @since 1.0, 2022-02-25 10:44:18
+ * @since 1.0, 2022-08-24 14:38:50
  */
 public class VoucherDisplayInfoModify extends AlipayObject {
 
-	private static final long serialVersionUID = 2491292653352758581L;
+	private static final long serialVersionUID = 1228572431167173166L;
 
 	/**
 	 * 商家logo 
-需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_BRAND_LOGO，返回的resource_id即为该参数的值 
-
-限制: 
-1、上传图片尺寸600*600，支持格式：png、jpg、jpeg、bmp，大小不超过2MB
-限制:
-2、若活动已报名中心化会场则该值不能修改，活动从中心化会场下线后该值可以继续修改
+需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_BRAND_LOGO，返回的resource_id即为该参数的值
 	 */
 	@ApiField("brand_logo")
 	private String brandLogo;
 
 	/**
-	 * 商户品牌名称。 
-注意:
-1、如果不设置品牌名称，则默认使用支付宝商家系统中维护的商家别名。 
-2、如果没有维护商家别名，则使用默认名称： 商家优惠。 
-3、用户领取优惠券后，品牌名称会对用户进行展示
-限制:
-1、若活动已报名中心化会场则该值不能修改，活动从中心化会场下线后该值可以继续修改
+	 * 商户品牌名称。
 	 */
 	@ApiField("brand_name")
 	private String brandName;
@@ -53,10 +42,7 @@ public class VoucherDisplayInfoModify extends AlipayObject {
 	private String customerServiceUrl;
 
 	/**
-	 * 券补充说明，该字段为可运营字段，可描述商品特色 会展示在用户支付宝卡包券详情页
-限制:
-1、只有兑换券可以修改该字段
-2、若活动已报名中心化会场则该值不能修改，活动从中心化会场下线后该值可以继续修改
+	 * 券补充说明，该字段为可运营字段，可描述商品特色 会展示在用户支付宝卡包券详情页。
 	 */
 	@ApiField("voucher_comment")
 	private String voucherComment;
@@ -68,20 +54,14 @@ public class VoucherDisplayInfoModify extends AlipayObject {
 	private String voucherDescription;
 
 	/**
-	 * 券详细图列表，会展示在用户支付宝卡包券详情页 需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_DETAIL_IMAGE ,接口返回的resource_id即为该参数的值 上传图片尺寸600*600，支持格式：png、jpg、jpeg、bmp，大小不超过2MB 限制 
-1、voucher_image填入，该值才能填入； 
-2、最多3张；
-3、若活动已报名中心化会场则该值不能修改，活动从中心化会场下线后该值可以继续修改
+	 * 券详细图列表，会展示在用户支付宝卡包券详情页 需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_DETAIL_IMAGE ,接口返回的resource_id即为该参数的值 上传图片尺寸600*600，支持格式：png、jpg、jpeg、bmp，大小不超过2MB。
 	 */
 	@ApiListField("voucher_detail_images")
 	@ApiField("string")
 	private List<String> voucherDetailImages;
 
 	/**
-	 * 券详情页封面图，会展示在用户支付宝卡包券详情页 需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_IMAGE，接口返回的resource_id即为该参数的值 
-限制:
-1、上传图片尺寸670*335，支持格式：png、jpg、jpeg、bmp，大小不超过2MB
-2、若活动已报名中心化会场则该值不能修改，活动从中心化会场下线后该值可以继续修改
+	 * 券详情页封面图，会展示在用户支付宝卡包券详情页 需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_IMAGE，接口返回的resource_id即为该参数的值。
 	 */
 	@ApiField("voucher_image")
 	private String voucherImage;

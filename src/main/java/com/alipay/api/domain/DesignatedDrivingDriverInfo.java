@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 附近空闲司机对象模型
  *
  * @author auto create
- * @since 1.0, 2022-01-18 11:43:19
+ * @since 1.0, 2022-08-23 16:31:48
  */
 public class DesignatedDrivingDriverInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5776486944747487646L;
+	private static final long serialVersionUID = 3138834845227569383L;
 
 	/**
 	 * 司机联系方式，可能是渠道处理后的电话

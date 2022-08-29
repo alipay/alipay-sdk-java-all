@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 私域营销开放特价券详情
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:03:58
+ * @since 1.0, 2022-08-24 14:41:20
  */
 public class ActivitySpecialVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 8579885352552338563L;
+	private static final long serialVersionUID = 6644136536521996159L;
 
 	/**
-	 * 门槛金额。 限制： 币种为人民币，单位为元； 小数点以后最多保留两位； 取值范围:0.1<=x<= 50000; 说明： 该字段可不填，认为无门槛;
+	 * 门槛金额。
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;
 
 	/**
-	 * 商品名称。 说明： 该字段可不填，填入则origin_amount必填。
+	 * 商品名称。说明：该字段可不填，填入 origin_amount 则必填。
 	 */
 	@ApiField("goods_name")
 	private String goodsName;
 
 	/**
-	 * 原价。 限制： 币种为人民币，单位为元。小数点以后最多保留两位; 取值范围:0.1<=x<=9999; 说明： 该字段可不填，填入则商品名称goods_name必填;
+	 * 原价。
 	 */
 	@ApiField("origin_amount")
 	private String originAmount;
 
 	/**
-	 * 特价，即：原价-特价=优惠金额。 限制： 币种为人民币，单位为元。小数点以后最多保留两位; 取值范围:0<=x<=999; 原价必须大于特价，即:origin_amount>special_amount;
+	 * 特价，即：原价-特价=优惠金额。
 	 */
 	@ApiField("special_amount")
 	private String specialAmount;

@@ -7,36 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户券详情
  *
  * @author auto create
- * @since 1.0, 2022-08-15 19:34:10
+ * @since 1.0, 2022-08-25 15:39:31
  */
 public class AlipayMarketingActivityUserQueryvoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8453182841417445747L;
+	private static final long serialVersionUID = 7369475157719279133L;
 
 	/**
-	 * 活动id。
-限制:
-当传入voucher_code时该值必传
+	 * 活动 id。
 	 */
 	@ApiField("activity_id")
 	private String activityId;
 
 	/**
-	 * 商户接入模式
-
-枚举值
-SELF_MODE 商户自接入模式
-AGENCY_MODE 服务商代接入模式
+	 * 商户接入模式。
 	 */
 	@ApiField("merchant_access_mode")
 	private String merchantAccessMode;
 
 	/**
-	 * 商户PID,默认为当前接口调用商户 
-限制: 
-接口调用者必须有商户代运营权限。 
-
-代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83
+	 * 商户 PID，默认为当前接口调用商户。
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
@@ -49,16 +39,12 @@ AGENCY_MODE 服务商代接入模式
 
 	/**
 	 * 用户领取的商家券券码。
-限制: 
-voucher_id与voucher_code必须二选一
 	 */
 	@ApiField("voucher_code")
 	private String voucherCode;
 
 	/**
-	 * 用户券id。支付宝为用户优惠券唯一分配的id。
-限制:
-voucher_id与voucher_code必须二选一
+	 * 用户券 id。支付宝为用户优惠券唯一分配的 id。
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.authorize.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-16 16:53:15
+ * @since 1.0, 2022-08-22 14:41:51
  */
 public class AlipayFundFlexiblestaffingAuthorizeInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8368486111964443337L;
+	private static final long serialVersionUID = 8746453199524814729L;
 
 	/** 
 	 * 灵工授权场景码
@@ -21,13 +21,13 @@ public class AlipayFundFlexiblestaffingAuthorizeInitializeResponse extends Alipa
 	private String bizScene;
 
 	/** 
-	 * 授权编码值，根据输入的code_type决定具体内容，比如code_type为SHORT_URL时，返回https短链
+	 * 授权编码值，根据输入的code_type决定具体内容，比如initialize_code_type为SHORT_URL时，返回https短链；为PAGE_PARAM时返回用于跳转小程序的页面参数
 	 */
 	@ApiField("initialize_code")
 	private String initializeCode;
 
 	/** 
-	 * 授权编码类型，有限枚举：1. SHORT_URL
+	 * 授权编码类型，有限枚举：1. SHORT_URL 2.PAGE_PARAM
 	 */
 	@ApiField("initialize_code_type")
 	private String initializeCodeType;

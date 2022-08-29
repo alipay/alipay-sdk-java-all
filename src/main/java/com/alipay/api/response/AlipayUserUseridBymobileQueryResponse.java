@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserUseridBymobileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6258454265896769823L;
+	private static final long serialVersionUID = 1725378861232755443L;
 
 	/** 
 	 * 绑定手机号对应的支付宝userId列表【注意：最多返回10个】

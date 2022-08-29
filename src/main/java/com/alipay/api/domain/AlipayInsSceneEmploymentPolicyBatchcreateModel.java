@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 灵活用工批量投保
  *
  * @author auto create
- * @since 1.0, 2022-08-10 14:23:35
+ * @since 1.0, 2022-08-22 13:36:13
  */
 public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2133987831364696675L;
+	private static final long serialVersionUID = 8717415688996434497L;
 
 	/**
 	 * 批次号
@@ -59,6 +59,12 @@ public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 保险合作商信息
+	 */
+	@ApiField("partner_organization")
+	private InsPartnerOrganization partnerOrganization;
 
 	/**
 	 * 保障期限
@@ -125,6 +131,13 @@ public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public InsPartnerOrganization getPartnerOrganization() {
+		return this.partnerOrganization;
+	}
+	public void setPartnerOrganization(InsPartnerOrganization partnerOrganization) {
+		this.partnerOrganization = partnerOrganization;
 	}
 
 	public String getPeriod() {

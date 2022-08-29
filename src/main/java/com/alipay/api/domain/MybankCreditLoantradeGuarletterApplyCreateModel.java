@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保函申请
  *
  * @author auto create
- * @since 1.0, 2022-05-24 14:17:53
+ * @since 1.0, 2022-08-24 17:36:32
  */
 public class MybankCreditLoantradeGuarletterApplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5242942561259135333L;
+	private static final long serialVersionUID = 4366391353695952968L;
 
 	/**
 	 * 申请金额
@@ -40,6 +40,12 @@ public class MybankCreditLoantradeGuarletterApplyCreateModel extends AlipayObjec
 	private EnterpriseCustomerInfoVO applyUserInfo;
 
 	/**
+	 * 投标人公钥
+	 */
+	@ApiField("apply_user_public_key")
+	private String applyUserPublicKey;
+
+	/**
 	 * 收益人信息（招标人信息）
 	 */
 	@ApiField("beneficiary_user_info")
@@ -50,6 +56,12 @@ public class MybankCreditLoantradeGuarletterApplyCreateModel extends AlipayObjec
 	 */
 	@ApiField("bid_detail")
 	private BidDetailVO bidDetail;
+
+	/**
+	 * 是否密文
+	 */
+	@ApiField("encrypted")
+	private Boolean encrypted;
 
 	/**
 	 * 担保到期时间
@@ -115,6 +127,13 @@ public class MybankCreditLoantradeGuarletterApplyCreateModel extends AlipayObjec
 		this.applyUserInfo = applyUserInfo;
 	}
 
+	public String getApplyUserPublicKey() {
+		return this.applyUserPublicKey;
+	}
+	public void setApplyUserPublicKey(String applyUserPublicKey) {
+		this.applyUserPublicKey = applyUserPublicKey;
+	}
+
 	public EnterpriseCustomerInfoVO getBeneficiaryUserInfo() {
 		return this.beneficiaryUserInfo;
 	}
@@ -127,6 +146,13 @@ public class MybankCreditLoantradeGuarletterApplyCreateModel extends AlipayObjec
 	}
 	public void setBidDetail(BidDetailVO bidDetail) {
 		this.bidDetail = bidDetail;
+	}
+
+	public Boolean getEncrypted() {
+		return this.encrypted;
+	}
+	public void setEncrypted(Boolean encrypted) {
+		this.encrypted = encrypted;
 	}
 
 	public Date getGuarEndDate() {

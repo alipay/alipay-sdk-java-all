@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁操作员查询参数
  *
  * @author auto create
- * @since 1.0, 2022-05-17 19:54:48
+ * @since 1.0, 2022-08-26 15:00:01
  */
 public class OperatorQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 6469193425333512117L;
+	private static final long serialVersionUID = 4326651135891592233L;
 
 	/**
 	 * 查询操作员的唯一ID。类型由id_type决定
@@ -39,6 +39,18 @@ LOGON_ID=id填操作员的登录号
 	@ApiField("logon_id_type")
 	private String logonIdType;
 
+	/**
+	 * 操作员所属主账号ID，ID类型由main_ip_role_type定义
+	 */
+	@ApiField("main_ip_role_id")
+	private String mainIpRoleId;
+
+	/**
+	 * 操作员所属主账号类型，枚举值参考RelIpRoleTypeEnum，取值范围： 1=支付宝商户客户customerId 2=支付宝商户PID 6=支付宝开放账号OID 7=蚂蚁通行证虚拟账号ID
+	 */
+	@ApiField("main_ip_role_type")
+	private String mainIpRoleType;
+
 	public String getId() {
 		return this.id;
 	}
@@ -58,6 +70,20 @@ LOGON_ID=id填操作员的登录号
 	}
 	public void setLogonIdType(String logonIdType) {
 		this.logonIdType = logonIdType;
+	}
+
+	public String getMainIpRoleId() {
+		return this.mainIpRoleId;
+	}
+	public void setMainIpRoleId(String mainIpRoleId) {
+		this.mainIpRoleId = mainIpRoleId;
+	}
+
+	public String getMainIpRoleType() {
+		return this.mainIpRoleType;
+	}
+	public void setMainIpRoleType(String mainIpRoleType) {
+		this.mainIpRoleType = mainIpRoleType;
 	}
 
 }

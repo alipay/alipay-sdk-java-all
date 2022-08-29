@@ -7,72 +7,56 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条件查询用户券
  *
  * @author auto create
- * @since 1.0, 2022-08-15 17:04:02
+ * @since 1.0, 2022-08-25 15:40:14
  */
 public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3735346677388644615L;
+	private static final long serialVersionUID = 6633167283619875795L;
 
 	/**
-	 * 活动id
+	 * 活动 id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
 
 	/**
 	 * 券归属商户
-限制:
-1.belong_merchant_id和sender_merchant_id必填一个，且只能二选一。
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
 
 	/**
 	 * 商户接入模式
-
-枚举值
-SELF_MODE 商户自接入模式
-AGENCY_MODE 服务商代接入模式
 	 */
 	@ApiField("merchant_access_mode")
 	private String merchantAccessMode;
 
 	/**
-	 * 分页查询页码。 
-限制: 必须为大于0的整数
+	 * 分页查询页码
 	 */
 	@ApiField("page_num")
 	private Long pageNum;
 
 	/**
-	 * 分页查询单页数据条数。 
-限制: 
-1.必须为大于0的整数 
-2.每页最大值为20
+	 * 分页查询单页数据条数
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
 
 	/**
 	 * 券发放商户
-限制:
-1.belong_merchant_id和sender_merchant_id必填一个，且只能二选一。
 	 */
 	@ApiField("sender_merchant_id")
 	private String senderMerchantId;
 
 	/**
-	 * 支付宝用户id
+	 * 支付宝用户 id
 	 */
 	@ApiField("user_id")
 	private String userId;
 
 	/**
-	 * 券状态
-枚举值 
-SENDED：可用 
-USED：已核销 
-EXPIRED：已过期(可查询6个月内数据)
+	 * 券状态，其中已过期状态可查询6个月内的数据
 	 */
 	@ApiField("voucher_status")
 	private String voucherStatus;

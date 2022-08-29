@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.OrderDataDistributeInfo;
+import com.alipay.api.domain.OrderDataSyncSuggestion;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-26 16:17:34
+ * @since 1.0, 2022-08-25 15:51:43
  */
 public class AlipayMerchantOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8542435924979856635L;
+	private static final long serialVersionUID = 7453917763738491336L;
 
 	/** 
 	 * 分发结果
@@ -44,6 +45,13 @@ public class AlipayMerchantOrderSyncResponse extends AlipayResponse {
 	@ApiField("record_id")
 	private String recordId;
 
+	/** 
+	 * 订单同步优化建议，供开发者参考
+	 */
+	@ApiListField("sync_suggestions")
+	@ApiField("order_data_sync_suggestion")
+	private List<OrderDataSyncSuggestion> syncSuggestions;
+
 	public void setDistributeResult(List<OrderDataDistributeInfo> distributeResult) {
 		this.distributeResult = distributeResult;
 	}
@@ -70,6 +78,13 @@ public class AlipayMerchantOrderSyncResponse extends AlipayResponse {
 	}
 	public String getRecordId( ) {
 		return this.recordId;
+	}
+
+	public void setSyncSuggestions(List<OrderDataSyncSuggestion> syncSuggestions) {
+		this.syncSuggestions = syncSuggestions;
+	}
+	public List<OrderDataSyncSuggestion> getSyncSuggestions( ) {
+		return this.syncSuggestions;
 	}
 
 }

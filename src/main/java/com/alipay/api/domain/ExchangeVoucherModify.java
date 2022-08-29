@@ -7,24 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 兑换券修改
  *
  * @author auto create
- * @since 1.0, 2022-07-20 17:43:29
+ * @since 1.0, 2022-08-24 14:45:29
  */
 public class ExchangeVoucherModify extends AlipayObject {
 
-	private static final long serialVersionUID = 1374314999267396689L;
+	private static final long serialVersionUID = 5837423831287678744L;
 
 	/**
-	 * 领(购)券详情页链接，从支付宝公域跳转到服务商(商户)自定义领(购)券详情页。
-限制:
-1、若活动已报名中心化会场则该值不能修改，活动从中心化会场下线后该值可以继续修改
+	 * 领（购）券详情页链接，从支付宝公域跳转到服务商（商户）自定义领（购）券详情页。
 	 */
 	@ApiField("voucher_detail_url")
 	private String voucherDetailUrl;
 
 	/**
-	 * 对消费者展示的券(商品)名称。
-限制:
-1、若活动已报名中心化会场则该值不能修改，活动从中心化会场下线后该值可以继续修改
+	 * 对消费者展示的券（商品）名称。
 	 */
 	@ApiField("voucher_name")
 	private String voucherName;

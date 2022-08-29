@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券可用商品
  *
  * @author auto create
- * @since 1.0, 2022-07-28 14:17:16
+ * @since 1.0, 2022-08-24 14:39:05
  */
 public class VoucherAvailableGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6697697597183426443L;
+	private static final long serialVersionUID = 6192242238975276415L;
 
 	/**
 	 * 可优惠商品编码，商家自定义商品编码。当用户支付时，交易中的商品编码和支付券配置的商品编码有任一匹配时，可以使用优惠券。
@@ -24,7 +24,7 @@ public class VoucherAvailableGoodsInfo extends AlipayObject {
 	private List<String> availableGoodsSkuIds;
 
 	/**
-	 * 不可核销商品编码，商家自定义商品编码。当用户支付时，交易中的商品编码和支付券配置的商品编码有任一匹配时，不可以使用优惠券。 限制: 1、available_goods与unavailable_goods_ids只能二选一或者同时为空
+	 * 不可核销商品编码，商家自定义商品编码。当用户支付时，交易中的商品编码和支付券配置的商品编码有任一匹配时，不可以使用优惠券。
 	 */
 	@ApiListField("exclude_goods_sku_ids")
 	@ApiField("string")
@@ -38,16 +38,12 @@ public class VoucherAvailableGoodsInfo extends AlipayObject {
 
 	/**
 	 * 商品名称。
-限制:
-1.兑换券、特价券必填
 	 */
 	@ApiField("goods_name")
 	private String goodsName;
 
 	/**
 	 * 商品原价
-限制：
-特价券必填
 	 */
 	@ApiField("origin_amount")
 	private String originAmount;

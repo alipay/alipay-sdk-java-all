@@ -7,41 +7,54 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券优惠抵扣信息
  *
  * @author auto create
- * @since 1.0, 2022-07-28 14:17:16
+ * @since 1.0, 2022-08-24 17:15:51
  */
 public class VoucherDeductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4551333775779893449L;
+	private static final long serialVersionUID = 6435453186594415757L;
 
 	/**
-	 * 折扣券详情 限制: 券类型voucher_type为折扣券DISCOUNT_VOUCHER时必传
+	 * 自定义券类型
+	 */
+	@ApiField("customer_define_voucher_info")
+	private CustomerDefineVoucherInfo customerDefineVoucherInfo;
+
+	/**
+	 * 折扣券详情。
 	 */
 	@ApiField("discount_voucher_info")
 	private DiscountVoucherInfo discountVoucherInfo;
 
 	/**
-	 * 兑换券详情 限制: 券类型为兑换券时必传
+	 * 兑换券详情。
 	 */
 	@ApiField("exchange_voucher_info")
 	private ExchangeVoucherInfo exchangeVoucherInfo;
 
 	/**
-	 * 满减券详情 限制: 券类型为满减券时必传
+	 * 满减券详情。
 	 */
 	@ApiField("fix_voucher_info")
 	private FixVoucherInfo fixVoucherInfo;
 
 	/**
-	 * 特价券详情 限制: 券类型voucher_type为特价券SPECIAL_VOUCHER时必传
+	 * 特价券详情。
 	 */
 	@ApiField("special_voucher_info")
 	private SpecialVoucherInfo specialVoucherInfo;
 
 	/**
-	 * 券类型。 枚举值： 商家券支持三类券类型： FIX_VOUCHER：满减券； DISCOUNT_VOUCHER：折扣券； SPECIAL_VOUCHER：特价券； 兑换券仅支持一类券类型： EXCHANGE_VOUCHER: 兑换券；
+	 * 券类型。
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
+
+	public CustomerDefineVoucherInfo getCustomerDefineVoucherInfo() {
+		return this.customerDefineVoucherInfo;
+	}
+	public void setCustomerDefineVoucherInfo(CustomerDefineVoucherInfo customerDefineVoucherInfo) {
+		this.customerDefineVoucherInfo = customerDefineVoucherInfo;
+	}
 
 	public DiscountVoucherInfo getDiscountVoucherInfo() {
 		return this.discountVoucherInfo;

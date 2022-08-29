@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户mcc信息查询
  *
  * @author auto create
- * @since 1.0, 2021-09-13 11:15:13
+ * @since 1.0, 2022-08-25 14:12:44
  */
 public class AntMerchantExpandMccQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4494355739746886132L;
+	private static final long serialVersionUID = 6737155793157977976L;
 
 	/**
 	 * 传入需要查询的code列表，以分号分隔；注：如果需要查询完整类目树，可以传入ROOT

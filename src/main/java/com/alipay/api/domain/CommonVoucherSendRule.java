@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券发放规则
  *
  * @author auto create
- * @since 1.0, 2022-02-23 14:16:55
+ * @since 1.0, 2022-08-24 14:39:34
  */
 public class CommonVoucherSendRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3326639451937269197L;
+	private static final long serialVersionUID = 1468982998254163671L;
 
 	/**
-	 * 设置此字段，允许指定单天最大发券数量。 限制: 每天发放张数*活动天数应小于等于优惠券发放总量
+	 * 设置此字段，允许指定单天最大发券数量。
 	 */
 	@ApiField("max_quantity_by_day")
 	private Long maxQuantityByDay;
@@ -32,25 +32,25 @@ public class CommonVoucherSendRule extends AlipayObject {
 	private Boolean phoneNumberLimit;
 
 	/**
-	 * 限制支付宝实名用户才能领取支付券,默认为false表示不限制 枚举值 true\false
+	 * 限制支付宝实名用户才能领取支付券，默认为false表示不限制。枚举值 true\false
 	 */
 	@ApiField("real_name_limit")
 	private Boolean realNameLimit;
 
 	/**
-	 * 发行券的总数量。 限制： 1、发放总个数最少1个 2、发放总个数最多99999999个
+	 * 发行券的总数量。
 	 */
 	@ApiField("voucher_quantity")
 	private Long voucherQuantity;
 
 	/**
-	 * 每人领取限制。 默认按照支付宝账号进行领取限制; 不填写或填入0表示没有领取限制.
+	 * 每人领取限制。 默认按照支付宝账号进行领取限制; 不填写或填入0表示没有领取限制。
 	 */
 	@ApiField("voucher_quantity_limit_per_user")
 	private Long voucherQuantityLimitPerUser;
 
 	/**
-	 * 周期限领配置,限制每人在固定周期内领取张数(voucher_quantity_limit_per_user),默认LIFE_CYCLE 枚举值为 DAY:每天 WEEK:每周 MONTH:每月 LIFE_CYCLE:整个活动周期
+	 * 周期限领配置,限制每人在固定周期内领取张数（voucher_quantity_limit_per_user），默认LIFE_CYCLE。
 	 */
 	@ApiField("voucher_quantity_limit_per_user_period_type")
 	private String voucherQuantityLimitPerUserPeriodType;

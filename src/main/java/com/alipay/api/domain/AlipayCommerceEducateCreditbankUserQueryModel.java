@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学分银行小程序用户绑定接口
  *
  * @author auto create
- * @since 1.0, 2021-02-22 16:34:22
+ * @since 1.0, 2022-08-19 17:22:21
  */
 public class AlipayCommerceEducateCreditbankUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6655269997787168637L;
+	private static final long serialVersionUID = 1551262251555552623L;
 
 	/**
 	 * 证件号

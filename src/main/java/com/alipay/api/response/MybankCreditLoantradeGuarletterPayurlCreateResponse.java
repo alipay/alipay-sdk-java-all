@@ -9,17 +9,41 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.guarletter.payurl.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-13 14:37:19
+ * @since 1.0, 2022-08-24 17:36:18
  */
 public class MybankCreditLoantradeGuarletterPayurlCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6369421676579238589L;
+	private static final long serialVersionUID = 7279432768569452681L;
 
 	/** 
 	 * 受理状态
 	 */
 	@ApiField("accept_result")
 	private String acceptResult;
+
+	/** 
+	 * 收费账户的账户名
+	 */
+	@ApiField("bank_card_name")
+	private String bankCardName;
+
+	/** 
+	 * 收费账户的账号
+	 */
+	@ApiField("bank_card_no")
+	private String bankCardNo;
+
+	/** 
+	 * 收费账户对应的银行名称
+	 */
+	@ApiField("bank_name")
+	private String bankName;
+
+	/** 
+	 * 标的编号
+	 */
+	@ApiField("bid_no")
+	private String bidNo;
 
 	/** 
 	 * 收费金额
@@ -44,6 +68,34 @@ public class MybankCreditLoantradeGuarletterPayurlCreateResponse extends AlipayR
 	}
 	public String getAcceptResult( ) {
 		return this.acceptResult;
+	}
+
+	public void setBankCardName(String bankCardName) {
+		this.bankCardName = bankCardName;
+	}
+	public String getBankCardName( ) {
+		return this.bankCardName;
+	}
+
+	public void setBankCardNo(String bankCardNo) {
+		this.bankCardNo = bankCardNo;
+	}
+	public String getBankCardNo( ) {
+		return this.bankCardNo;
+	}
+
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+	public String getBankName( ) {
+		return this.bankName;
+	}
+
+	public void setBidNo(String bidNo) {
+		this.bidNo = bidNo;
+	}
+	public String getBidNo( ) {
+		return this.bidNo;
 	}
 
 	public void setFeeAmt(CreditPayMoneyVO feeAmt) {

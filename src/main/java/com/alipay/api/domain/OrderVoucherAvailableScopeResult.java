@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结果
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:01:34
+ * @since 1.0, 2022-08-24 16:06:33
  */
 public class OrderVoucherAvailableScopeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5617857945513322758L;
+	private static final long serialVersionUID = 7512156342581774812L;
 
 	/**
-	 * 可用门店请求结果
+	 * 可用门店请求结果。
 	 */
 	@ApiField("order_voucher_available_shop_result")
 	private OrderVoucherAvailableShopResult orderVoucherAvailableShopResult;
 
 	/**
-	 * 可用范围类型。 枚举值： SHOP:可用门店 CITY_CODE:可用城市
+	 * 可用范围类型。
 	 */
 	@ApiField("voucher_available_type")
 	private String voucherAvailableType;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataPrinterUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3822381745132464813L;
+	private static final long serialVersionUID = 4644569462976751275L;
 
 	/**
 	 * 应用token

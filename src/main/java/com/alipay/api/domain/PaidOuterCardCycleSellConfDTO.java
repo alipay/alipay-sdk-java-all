@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 付费外卡连续售卖配置
  *
  * @author auto create
- * @since 1.0, 2022-02-21 15:46:35
+ * @since 1.0, 2022-08-25 18:10:57
  */
 public class PaidOuterCardCycleSellConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6821221253861144283L;
+	private static final long serialVersionUID = 3446649834817343474L;
 
 	/**
 	 * 用户开通连续购买地址

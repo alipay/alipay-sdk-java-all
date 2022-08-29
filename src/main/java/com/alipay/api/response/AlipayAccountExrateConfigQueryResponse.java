@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountExrateConfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6498175195596424886L;
+	private static final long serialVersionUID = 4439361387357212355L;
 
 	/** 
 	 * scheduler配置的自定义键值对

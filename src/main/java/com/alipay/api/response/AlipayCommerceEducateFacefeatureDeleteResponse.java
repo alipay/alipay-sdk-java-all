@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.facefeature.delete response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-23 15:19:41
+ * @since 1.0, 2022-08-22 19:37:51
  */
 public class AlipayCommerceEducateFacefeatureDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3872819985414248642L;
+	private static final long serialVersionUID = 6634315674957242232L;
 
 	/** 
 	 * 出库失败的faceId集合。

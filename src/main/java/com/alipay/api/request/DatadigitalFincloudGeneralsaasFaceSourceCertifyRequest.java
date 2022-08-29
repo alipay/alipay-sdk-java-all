@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.source.certify request
  * 
  * @author auto create
- * @since 1.0, 2022-08-18 16:16:51
+ * @since 1.0, 2022-08-19 17:56:44
  */
 public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse> {
 
@@ -108,7 +108,7 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 	private String prodCode;
 	private String notifyUrl;
 	private String returnUrl;
-    private boolean needEncrypt=false;
+    private boolean needEncrypt=true;
 	private AlipayObject bizModel=null;
 
 	public String getNotifyUrl() {

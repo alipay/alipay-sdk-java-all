@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权请款
  *
  * @author auto create
- * @since 1.0, 2022-07-21 11:42:33
+ * @since 1.0, 2022-08-25 22:12:12
  */
 public class AnttechBlockchainDefinSaasPaymentCaptureModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3258573378296424179L;
+	private static final long serialVersionUID = 7431857334723566647L;
 
 	/**
 	 * 请款金额，单位为元。支持预授权后全额请款、或预授权后先部分撤销再部分请款。精确到小数点后两位，取值范围[0.01,100000000]

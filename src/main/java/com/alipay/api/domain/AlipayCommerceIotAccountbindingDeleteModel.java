@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotAccountbindingDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4278511981817189237L;
+	private static final long serialVersionUID = 1812374879389821925L;
 
 	/**
 	 * 协议服务商id+唯一+指定操作数据归属于哪个协议服务商+协议服务商接入时由支付宝统一分配

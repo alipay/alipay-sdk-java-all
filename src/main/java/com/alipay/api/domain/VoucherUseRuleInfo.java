@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券核销规则
  *
  * @author auto create
- * @since 1.0, 2022-07-28 14:17:16
+ * @since 1.0, 2022-08-24 15:52:21
  */
 public class VoucherUseRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8745799614739157744L;
+	private static final long serialVersionUID = 1255974158865185918L;
 
 	/**
-	 * 核销次数限制
+	 * 核销次数限制。
 	 */
 	@ApiField("quantity_limit_per_user")
 	private Long quantityLimitPerUser;
 
 	/**
-	 * 核销周期
+	 * 核销周期。
 	 */
 	@ApiField("quantity_limit_per_user_period_type")
 	private String quantityLimitPerUserPeriodType;
 
 	/**
-	 * 券最大核销次数
+	 * 券最大核销次数。
 	 */
 	@ApiField("voucher_max_use_times")
 	private Long voucherMaxUseTimes;
 
 	/**
-	 * 券核销时间
+	 * 券核销时间。
 	 */
 	@ApiField("voucher_use_time_info")
 	private VoucherUseTimeInfo voucherUseTimeInfo;

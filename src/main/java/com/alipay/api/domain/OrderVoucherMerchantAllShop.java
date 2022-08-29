@@ -10,15 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户全部门店可用
  *
  * @author auto create
- * @since 1.0, 2022-07-20 18:01:34
+ * @since 1.0, 2022-08-24 14:42:09
  */
 public class OrderVoucherMerchantAllShop extends AlipayObject {
 
-	private static final long serialVersionUID = 1215584579895342376L;
+	private static final long serialVersionUID = 2266998646594318452L;
 
 	/**
-	 * 券不可使用的门店列表。指定商户全部门店可用时可通过该字段排除部分不可用门店。
-列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。 限制： 1、exclude_shop_ids中的门店id必须是支付宝门店id。 2、exclude_shop_ids如果包含重复的门店id会自动进行去重操作。
+	 * 券不可使用的门店列表。指定商户全部门店可用时可通过该字段排除部分不可用门店。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。
 	 */
 	@ApiListField("exclude_shop_ids")
 	@ApiField("string")

@@ -23,11 +23,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-17 09:27:16
+ * @since 1.0, 2022-08-24 22:21:43
  */
 public class AlipayMarketingActivityOrdervoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7494636921825848112L;
+	private static final long serialVersionUID = 7379927838311426657L;
 
 	/** 
 	 * 活动基础信息
@@ -42,50 +42,31 @@ public class AlipayMarketingActivityOrdervoucherQueryResponse extends AlipayResp
 	private String activityId;
 
 	/** 
-	 * 活动名称。
-
-不对用户进行展示，仅供商家在后台管理活动使用。
+	 * 活动名称。不对用户进行展示，仅供商家在后台管理活动使用。
 	 */
 	@ApiField("activity_name")
 	private String activityName;
 
 	/** 
-	 * 活动操作状态。
-
-取值范围：
-1.CREATING：创建中。
-2.MODIFYING：修改中。
-3.APPENDING：追加中。
-4.FINISHEING：终止中。
-
-限制：
-该值为空，说明活动当前没有正在执行中的操作。
+	 * 活动操作状态
 	 */
 	@ApiField("activity_operation_status")
 	private String activityOperationStatus;
 
 	/** 
-	 * 活动状态。
-
-取值范围：
-1.ACTIVE：已激活（活动正常运行）。
-2.FINISHED：已终止（商家终止活动，不可再发放。
-
-限制：
-1.该值为空，说明活动还未创建成功。可以使用 activity_operation_status字段判断活动是否处于CREATING状态。
+	 * 活动状态。已激活状态代表活动正常运行，已终止状态代表商家终止活动，不可再发放。
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
 
 	/** 
-	 * 活动所属的商户信息。
-如果为空.则是因为创建时未传入，默认为活动归属于接口的调用者。
+	 * 活动所属的商户信息
 	 */
 	@ApiField("belong_merchant_info")
 	private BelongMerchantInfo belongMerchantInfo;
 
 	/** 
-	 * 商家券业务标签，影响商家券对C端用户的展示形式。 枚举值 兑换券团购场景 GROUP_BUY_EXCHANGE_VOUCHER 兑换券代金场景 FIX_EXCHANGE_VOUCHER
+	 * 商家券业务标签，影响商家券对C端用户的展示形式。
 	 */
 	@ApiField("biz_tag")
 	private String bizTag;
@@ -97,17 +78,13 @@ public class AlipayMarketingActivityOrdervoucherQueryResponse extends AlipayResp
 	private CustomerGuide customerGuide;
 
 	/** 
-	 * 券发放结束时间。
-
-格式为：yyyy-MM-dd HH:mm:ss
+	 * 券发放结束时间。格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("publish_end_time")
 	private Date publishEndTime;
 
 	/** 
-	 * 券发放开始时间。
-
-格式为：yyyy-MM-dd HH:mm:ss
+	 * 券发放开始时间。格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("publish_start_time")
 	private Date publishStartTime;
@@ -167,13 +144,7 @@ public class AlipayMarketingActivityOrdervoucherQueryResponse extends AlipayResp
 	private VoucherSendRuleDetail voucherSendRule;
 
 	/** 
-	 * 券类型。
-
-取值范围：
-1.FIX_VOUCHER：满减券。
-2.DISCOUNT_VOUCHER：折扣券。
-3.SPECIAL_VOUCHER：特价券。
-4.EXCHANGE_VOUCHER: 兑换券。
+	 * 券类型
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;

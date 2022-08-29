@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付费外卡生命周期管理地址
  *
  * @author auto create
- * @since 1.0, 2022-02-21 15:46:35
+ * @since 1.0, 2022-08-25 18:10:57
  */
 public class PaidOuterCardManageUrlConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5511768298658682967L;
+	private static final long serialVersionUID = 4287221117647962156L;
 
 	/**
 	 * 连续购买管理地址。包括查看当前用户连续购买详情，关闭连续购买等功能

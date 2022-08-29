@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询授权状态
  *
  * @author auto create
- * @since 1.0, 2021-12-28 16:35:13
+ * @since 1.0, 2022-08-22 20:13:49
  */
 public class AlipayCommerceTransportAuthBindingGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7898333991951841282L;
+	private static final long serialVersionUID = 3169319668394546521L;
+
+	/**
+	 * 支付宝证件类型
+	 */
+	@ApiField("alipay_cert_type")
+	private String alipayCertType;
+
+	/**
+	 * 业务方证件类型。例如NI表示机票授权场景下的身份证类型
+	 */
+	@ApiField("biz_cert_type")
+	private String bizCertType;
 
 	/**
 	 * 证件号。证件类型对应的号码。当传入证件类型时，必须填本字段。
@@ -20,7 +32,7 @@ public class AlipayCommerceTransportAuthBindingGetModel extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 证件类型。取值枚举需要找开发人员咨询。例如IDENTITY_CARD表示身份证
+	 * 证件类型。取值枚举需要找开发人员咨询。例如IDENTITY_CARD表示身份证（已废弃，请使用biz_cert_type）
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -32,7 +44,7 @@ public class AlipayCommerceTransportAuthBindingGetModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 授权场景，标志具体是哪种授权数据。具体取值需要找开发人员分配。例如机票行程授权场景取值为FLIGHT_TRIP_AUTH
+	 * 授权场景，标志具体是哪种授权数据。具体取值需要找开发人员分配。例如机票行程授权场景取值为FLIGHT_SCHEDULE_PLUG_AUTH
 	 */
 	@ApiField("scene")
 	private String scene;
@@ -42,6 +54,20 @@ public class AlipayCommerceTransportAuthBindingGetModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getAlipayCertType() {
+		return this.alipayCertType;
+	}
+	public void setAlipayCertType(String alipayCertType) {
+		this.alipayCertType = alipayCertType;
+	}
+
+	public String getBizCertType() {
+		return this.bizCertType;
+	}
+	public void setBizCertType(String bizCertType) {
+		this.bizCertType = bizCertType;
+	}
 
 	public String getCertNo() {
 		return this.certNo;

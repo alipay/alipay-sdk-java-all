@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLogisticsFaceMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2252465547463774422L;
+	private static final long serialVersionUID = 7239812458515398767L;
 
 	/**
 	 * 业务类型标识，比如 刷脸开柜，刷脸支付, 值由支付宝分配

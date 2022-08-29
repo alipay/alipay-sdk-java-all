@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序操作员信息
  *
  * @author auto create
- * @since 1.0, 2022-06-30 10:35:14
+ * @since 1.0, 2022-08-23 19:27:36
  */
 public class OpenAppOperatorVo extends AlipayObject {
 
-	private static final long serialVersionUID = 6375299626261948723L;
+	private static final long serialVersionUID = 7266774572142417367L;
 
 	/**
 	 * 登录账号
 	 */
 	@ApiField("logon_id")
 	private String logonId;
+
+	/**
+	 * 昵称
+	 */
+	@ApiField("nick_name")
+	private String nickName;
+
+	/**
+	 * 用户头像
+	 */
+	@ApiField("portrait")
+	private String portrait;
 
 	/**
 	 * 角色
@@ -42,6 +54,20 @@ public class OpenAppOperatorVo extends AlipayObject {
 	}
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
+	}
+
+	public String getNickName() {
+		return this.nickName;
+	}
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+
+	public String getPortrait() {
+		return this.portrait;
+	}
+	public void setPortrait(String portrait) {
+		this.portrait = portrait;
 	}
 
 	public String getRole() {

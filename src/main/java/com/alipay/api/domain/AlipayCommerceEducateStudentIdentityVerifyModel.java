@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学生身份单次核验接口
  *
  * @author auto create
- * @since 1.0, 2022-06-30 17:26:41
+ * @since 1.0, 2022-08-19 11:01:49
  */
 public class AlipayCommerceEducateStudentIdentityVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3847173691598728829L;
+	private static final long serialVersionUID = 1869696835197555578L;
 
 	/**
 	 * 单次核验业务token

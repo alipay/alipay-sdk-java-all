@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 灵活用工保单退保
  *
  * @author auto create
- * @since 1.0, 2022-06-23 18:37:20
+ * @since 1.0, 2022-08-22 14:05:48
  */
 public class AlipayInsSceneEmploymentPolicyCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2226385454146549138L;
+	private static final long serialVersionUID = 5512549557989356875L;
 
 	/**
 	 * cainiao
@@ -33,6 +33,12 @@ public class AlipayInsSceneEmploymentPolicyCancelModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 保险合作商信息
+	 */
+	@ApiField("partner_organization")
+	private InsPartnerOrganization partnerOrganization;
 
 	/**
 	 * 保单号，一次最多50个
@@ -66,6 +72,13 @@ public class AlipayInsSceneEmploymentPolicyCancelModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public InsPartnerOrganization getPartnerOrganization() {
+		return this.partnerOrganization;
+	}
+	public void setPartnerOrganization(InsPartnerOrganization partnerOrganization) {
+		this.partnerOrganization = partnerOrganization;
 	}
 
 	public List<String> getPolicyNoList() {
