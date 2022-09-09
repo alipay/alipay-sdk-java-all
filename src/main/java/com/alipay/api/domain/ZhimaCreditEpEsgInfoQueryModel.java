@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业ESG信息查询
  *
  * @author auto create
- * @since 1.0, 2022-08-23 14:28:54
+ * @since 1.0, 2022-09-02 16:30:50
  */
 public class ZhimaCreditEpEsgInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8465379297422784375L;
+	private static final long serialVersionUID = 3671671956452668419L;
 
 	/**
 	 * 企业社会统一信用代码或营业执照注册号

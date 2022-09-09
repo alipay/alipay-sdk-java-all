@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 核酸到期提醒订阅状态更新
  *
  * @author auto create
- * @since 1.0, 2022-07-26 17:24:30
+ * @since 1.0, 2022-08-31 20:42:14
  */
 public class AlipayEbppIndustryNucleicremindSubscribeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3843274318591698674L;
+	private static final long serialVersionUID = 2481372952293956538L;
 
 	/**
 	 * 城市编码
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 订阅提醒时间列表,单位小时，必须不小于48
+	 */
+	@ApiListField("reminder_hour_list")
+	@ApiField("number")
+	private List<Long> reminderHourList;
 
 	/**
 	 * 订阅状态，1 订阅  0 退订 。
@@ -36,6 +46,13 @@ public class AlipayEbppIndustryNucleicremindSubscribeModifyModel extends AlipayO
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public List<Long> getReminderHourList() {
+		return this.reminderHourList;
+	}
+	public void setReminderHourList(List<Long> reminderHourList) {
+		this.reminderHourList = reminderHourList;
 	}
 
 	public String getStatus() {

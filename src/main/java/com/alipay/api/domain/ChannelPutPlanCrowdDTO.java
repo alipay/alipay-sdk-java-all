@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道中心人群信息对象
  *
  * @author auto create
- * @since 1.0, 2022-07-21 14:56:09
+ * @since 1.0, 2022-09-05 11:22:59
  */
 public class ChannelPutPlanCrowdDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1499387662719342161L;
+	private static final long serialVersionUID = 7331368996571125751L;
 
 	/**
 	 * 外部人群码

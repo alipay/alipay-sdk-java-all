@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniActivityTaskequityReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6198491249749876839L;
+	private static final long serialVersionUID = 1538386126211633362L;
 
 	/**
 	 * 任务完成的业务时间，用于做权益发放的原始时间戳，将以任务完成时间为准发放权益

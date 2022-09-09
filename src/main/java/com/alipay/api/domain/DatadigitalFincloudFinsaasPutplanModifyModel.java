@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道投放计划修改
  *
  * @author auto create
- * @since 1.0, 2022-07-27 15:13:12
+ * @since 1.0, 2022-09-05 10:48:42
  */
 public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4541827167698834179L;
+	private static final long serialVersionUID = 5392993221985728667L;
 
 	/**
 	 * 自由页面活动链接

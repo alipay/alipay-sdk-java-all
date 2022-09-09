@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险SaaS两核风控获取预测数据
  *
  * @author auto create
- * @since 1.0, 2022-08-12 17:02:49
+ * @since 1.0, 2022-08-30 16:37:51
  */
 public class DatadigitalFincloudFinsaasInsuranceriskGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3533952868693275425L;
+	private static final long serialVersionUID = 1359937591863279199L;
 
 	/**
 	 * 身份证MD5或者sha1码

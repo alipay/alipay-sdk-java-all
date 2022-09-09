@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InviteMemberBusinessParamsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2822659244287117468L;
+	private static final long serialVersionUID = 2362537729841941358L;
 
 	/**
 	 * 企业员工工卡

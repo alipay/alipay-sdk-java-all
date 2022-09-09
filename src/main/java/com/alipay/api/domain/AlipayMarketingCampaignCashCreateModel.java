@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignCashCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2871345983155536337L;
+	private static final long serialVersionUID = 5446853935367691961L;
 
 	/**
 	 * 红包名称,商户在查询列表、详情看到的名字,同时也会显示在商户付款页面。

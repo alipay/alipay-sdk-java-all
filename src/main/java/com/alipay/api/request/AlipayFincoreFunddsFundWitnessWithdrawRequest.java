@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.fundds.fund.witness.withdraw request
  * 
  * @author auto create
- * @since 1.0, 2022-06-11 17:07:06
+ * @since 1.0, 2022-08-30 15:11:24
  */
 public class AlipayFincoreFunddsFundWitnessWithdrawRequest implements AlipayRequest<AlipayFincoreFunddsFundWitnessWithdrawResponse> {
 

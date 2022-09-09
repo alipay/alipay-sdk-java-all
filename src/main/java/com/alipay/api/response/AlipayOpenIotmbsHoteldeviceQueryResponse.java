@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.hoteldevice.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-27 17:16:50
+ * @since 1.0, 2022-08-29 16:11:47
  */
 public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3753235344273869527L;
+	private static final long serialVersionUID = 4372315822159153547L;
 
 	/** 
 	 * 设备绑定的人脸数据列表
@@ -42,6 +42,12 @@ public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("hotel_name")
 	private String hotelName;
+
+	/** 
+	 * 心跳同步间隔时间，单位秒
+	 */
+	@ApiField("poll_time")
+	private String pollTime;
 
 	/** 
 	 * 设备绑定的房间号
@@ -81,6 +87,13 @@ public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 	}
 	public String getHotelName( ) {
 		return this.hotelName;
+	}
+
+	public void setPollTime(String pollTime) {
+		this.pollTime = pollTime;
+	}
+	public String getPollTime( ) {
+		return this.pollTime;
 	}
 
 	public void setRoomNo(String roomNo) {

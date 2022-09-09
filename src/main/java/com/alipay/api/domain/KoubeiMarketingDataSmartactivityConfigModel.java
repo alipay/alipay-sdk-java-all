@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户智能活动配置方案接口
  *
  * @author auto create
- * @since 1.0, 2022-06-27 11:32:56
+ * @since 1.0, 2022-09-06 14:07:36
  */
 public class KoubeiMarketingDataSmartactivityConfigModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1674892878615135527L;
+	private static final long serialVersionUID = 8545461751938454231L;
 
 	/**
 	 * 诊断结果CODE，目前有如下四个值

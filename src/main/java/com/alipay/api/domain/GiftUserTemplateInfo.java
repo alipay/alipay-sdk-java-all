@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户红包皮肤的数据信息，包括有效期起始，对应的视觉样式等等
  *
  * @author auto create
- * @since 1.0, 2022-08-24 17:14:16
+ * @since 1.0, 2022-09-01 21:02:48
  */
 public class GiftUserTemplateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4388864616748464293L;
+	private static final long serialVersionUID = 2316934124515999686L;
 
 	/**
 	 * 红包封面下半部分不带“开”字按钮的图片url

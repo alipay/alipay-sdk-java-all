@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易支付
  *
  * @author auto create
- * @since 1.0, 2022-07-13 10:56:18
+ * @since 1.0, 2022-08-29 16:12:13
  */
 public class MybankCreditSupplychainTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2443825893117265428L;
+	private static final long serialVersionUID = 1649443377568997524L;
 
 	/**
 	 * 买家信息
@@ -42,6 +42,12 @@ public class MybankCreditSupplychainTradePayModel extends AlipayObject {
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
+
+	/**
+	 * 运营商分期保理反接提前还款扣款账户
+	 */
+	@ApiField("pre_payment_account")
+	private Account prePaymentAccount;
 
 	/**
 	 * 幂等编号，用于幂等控制，格式 instIpRoleId_yyyymmddhhmmss_8位uniqId
@@ -94,6 +100,13 @@ public class MybankCreditSupplychainTradePayModel extends AlipayObject {
 	}
 	public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
+	}
+
+	public Account getPrePaymentAccount() {
+		return this.prePaymentAccount;
+	}
+	public void setPrePaymentAccount(Account prePaymentAccount) {
+		this.prePaymentAccount = prePaymentAccount;
 	}
 
 	public String getRequestId() {

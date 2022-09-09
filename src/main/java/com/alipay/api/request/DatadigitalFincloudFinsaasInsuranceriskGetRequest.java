@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.insurancerisk.get request
  * 
  * @author auto create
- * @since 1.0, 2022-08-12 17:06:59
+ * @since 1.0, 2022-09-02 11:41:25
  */
 public class DatadigitalFincloudFinsaasInsuranceriskGetRequest implements AlipayRequest<DatadigitalFincloudFinsaasInsuranceriskGetResponse> {
 

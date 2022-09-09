@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2022-07-12 14:21:57
+ * @since 1.0, 2022-09-05 16:52:44
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7544927588784148645L;
+	private static final long serialVersionUID = 3129124896962311669L;
 
 	/**
 	 * 共同账户ID
@@ -169,14 +169,13 @@ public class EcConsumeInfo extends AlipayObject {
 	private String peerPayerCardNo;
 
 	/**
-	 * 消费账单企业代付部分退款金额，单位：元
-未退款：0
+	 * 消费账单企业代付部分退款金额，单位：元。退款账单该值无意义，值为0。
 	 */
 	@ApiField("peer_refund_amount")
 	private String peerRefundAmount;
 
 	/**
-	 * 消费账单企业代付部分退款状态，默认为INIT，当消费账单有退款，该值会变为REFUND_PART或REFUND_FULL
+	 * 消费账单企业代付部分退款状态，默认为INIT。当消费账单有退款，该值会变为REFUND_PART或REFUND_FULL；退款账单该值无意义，为初始值INIT。
 未退款：INIT，
 部分退款：REFUND_PART，
 全额退款：REFUND_FULL

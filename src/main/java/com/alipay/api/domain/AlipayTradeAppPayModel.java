@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * app支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2022-08-05 16:19:04
+ * @since 1.0, 2022-09-02 16:05:57
  */
 public class AlipayTradeAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5588565175144555372L;
+	private static final long serialVersionUID = 7296466841131499816L;
 
 	/**
 	 * 签约参数。如果希望在sdk中支付并签约，需要在这里传入签约信息。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询类目所需资质信息
  *
  * @author auto create
- * @since 1.0, 2021-01-25 21:15:01
+ * @since 1.0, 2022-08-31 14:10:04
  */
 public class AlipayOpenMiniCategoryRequireQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8322251719885883718L;
+	private static final long serialVersionUID = 8766978438698697776L;
 
 	/**
 	 * 类目列表，不超过五个

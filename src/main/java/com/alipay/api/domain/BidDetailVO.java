@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标的详情
  *
  * @author auto create
- * @since 1.0, 2022-07-26 16:14:28
+ * @since 1.0, 2022-09-08 11:48:17
  */
 public class BidDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8439162344335489611L;
+	private static final long serialVersionUID = 8492565748391119527L;
 
 	/**
 	 * 标的截止时间
@@ -44,6 +44,13 @@ public class BidDetailVO extends AlipayObject {
 	 */
 	@ApiField("bid_open_date")
 	private Date bidOpenDate;
+
+	/**
+	 * 招标开始时间，密文开函时使用
+yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("bid_open_date_str")
+	private String bidOpenDateStr;
 
 	/**
 	 * 标的类别
@@ -102,6 +109,13 @@ public class BidDetailVO extends AlipayObject {
 	}
 	public void setBidOpenDate(Date bidOpenDate) {
 		this.bidOpenDate = bidOpenDate;
+	}
+
+	public String getBidOpenDateStr() {
+		return this.bidOpenDateStr;
+	}
+	public void setBidOpenDateStr(String bidOpenDateStr) {
+		this.bidOpenDateStr = bidOpenDateStr;
 	}
 
 	public String getBidType() {

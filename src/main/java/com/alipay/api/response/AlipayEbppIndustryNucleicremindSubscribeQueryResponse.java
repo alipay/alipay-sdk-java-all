@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.nucleicremind.subscribe.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-26 17:26:43
+ * @since 1.0, 2022-08-31 20:21:55
  */
 public class AlipayEbppIndustryNucleicremindSubscribeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3692538134753375198L;
+	private static final long serialVersionUID = 7594831617214793481L;
 
 	/** 
 	 * 有效时间，单位小时
@@ -20,6 +22,13 @@ public class AlipayEbppIndustryNucleicremindSubscribeQueryResponse extends Alipa
 	 */
 	@ApiField("effective_hour")
 	private String effectiveHour;
+
+	/** 
+	 * 返回用户订阅提醒的小时数列表
+	 */
+	@ApiListField("reminder_hour_list")
+	@ApiField("number")
+	private List<Long> reminderHourList;
 
 	/** 
 	 * 最新一次核酸报告时间，当订阅状态为已订阅时，改字段返回
@@ -38,6 +47,13 @@ public class AlipayEbppIndustryNucleicremindSubscribeQueryResponse extends Alipa
 	}
 	public String getEffectiveHour( ) {
 		return this.effectiveHour;
+	}
+
+	public void setReminderHourList(List<Long> reminderHourList) {
+		this.reminderHourList = reminderHourList;
+	}
+	public List<Long> getReminderHourList( ) {
+		return this.reminderHourList;
 	}
 
 	public void setResultTime(String resultTime) {

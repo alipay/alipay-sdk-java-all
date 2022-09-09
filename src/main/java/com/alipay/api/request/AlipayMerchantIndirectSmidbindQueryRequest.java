@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.smidbind.query request
  * 
  * @author auto create
- * @since 1.0, 2022-08-04 22:01:38
+ * @since 1.0, 2022-09-05 14:21:44
  */
 public class AlipayMerchantIndirectSmidbindQueryRequest implements AlipayRequest<AlipayMerchantIndirectSmidbindQueryResponse> {
 

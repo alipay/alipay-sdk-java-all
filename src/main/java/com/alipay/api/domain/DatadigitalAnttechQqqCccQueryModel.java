@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试测试支付宝
  *
  * @author auto create
- * @since 1.0, 2022-07-20 14:43:16
+ * @since 1.0, 2022-09-06 15:24:47
  */
 public class DatadigitalAnttechQqqCccQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3864324889993867512L;
+	private static final long serialVersionUID = 4671753492847899975L;
 
 	/**
 	 * 省份

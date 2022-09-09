@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁关联方识别
  *
  * @author auto create
- * @since 1.0, 2019-12-23 13:59:12
+ * @since 1.0, 2022-08-31 15:19:30
  */
 public class AlipayBossContractManagementIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7765165953854264645L;
+	private static final long serialVersionUID = 1364947796117825521L;
 
 	/**
 	 * 访问接口的来源（如：采购系统-ALI_PURCHASE_SYSTEM）

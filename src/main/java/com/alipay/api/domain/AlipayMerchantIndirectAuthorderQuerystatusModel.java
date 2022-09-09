@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询意愿申请单审核结果
  *
  * @author auto create
- * @since 1.0, 2022-08-04 21:09:14
+ * @since 1.0, 2022-09-05 14:09:49
  */
 public class AlipayMerchantIndirectAuthorderQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6633429491619244596L;
+	private static final long serialVersionUID = 4222245962538241693L;
 
 	/**
 	 * 商家认证申请单号，参数二选一
@@ -25,6 +25,13 @@ public class AlipayMerchantIndirectAuthorderQuerystatusModel extends AlipayObjec
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
+	/**
+	 * 1. 收单机构调用API提交申请单时，可选择是否指定单个服务商范围。非收单机构无需填写此字段。
+2. 此字段填写单个服务商pid信息：填写（即：单服务商提交认证方式），查询申请单返回的认证二维码qr_code和填写服务商对应，仅能认证填写服务商下的商户；不填写（即：全服务商提交认证方式），查询申请单返回的认证二维码qr_code和收单机构对应，可认证收单机构下全部商户。
+	 */
+	@ApiField("source")
+	private String source;
+
 	public String getOrderNo() {
 		return this.orderNo;
 	}
@@ -37,6 +44,13 @@ public class AlipayMerchantIndirectAuthorderQuerystatusModel extends AlipayObjec
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }

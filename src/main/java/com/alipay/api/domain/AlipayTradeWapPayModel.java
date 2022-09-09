@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2022-08-05 16:19:16
+ * @since 1.0, 2022-09-02 16:05:46
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4168638213137593328L;
+	private static final long serialVersionUID = 6338187888937234754L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系

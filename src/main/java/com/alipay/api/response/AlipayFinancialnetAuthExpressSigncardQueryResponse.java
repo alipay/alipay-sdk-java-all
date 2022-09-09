@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinancialnetAuthExpressSigncardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8133575389199128363L;
+	private static final long serialVersionUID = 6114867738388562222L;
 
 	/** 
 	 * 服务成功时，且用户有相应的卡，该字段（列表类型）存在

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请附件
  *
  * @author auto create
- * @since 1.0, 2022-07-26 16:14:07
+ * @since 1.0, 2022-09-08 11:48:50
  */
 public class ApplyAttatchmentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8412257946168164152L;
+	private static final long serialVersionUID = 8584457262524138555L;
 
 	/**
 	 * 保函开立申请书
@@ -54,6 +54,12 @@ public class ApplyAttatchmentVO extends AlipayObject {
 	 */
 	@ApiField("legal_person_cert")
 	private String legalPersonCert;
+
+	/**
+	 * 合并文档
+	 */
+	@ApiField("merge_doc")
+	private String mergeDoc;
 
 	public String getApplyDoc() {
 		return this.applyDoc;
@@ -102,6 +108,13 @@ public class ApplyAttatchmentVO extends AlipayObject {
 	}
 	public void setLegalPersonCert(String legalPersonCert) {
 		this.legalPersonCert = legalPersonCert;
+	}
+
+	public String getMergeDoc() {
+		return this.mergeDoc;
+	}
+	public void setMergeDoc(String mergeDoc) {
+		this.mergeDoc = mergeDoc;
 	}
 
 }

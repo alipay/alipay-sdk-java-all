@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑营销活动列表查询
  *
  * @author auto create
- * @since 1.0, 2022-06-27 11:20:59
+ * @since 1.0, 2022-09-06 15:51:54
  */
 public class KoubeiMarketingCampaignActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3286234961298494824L;
+	private static final long serialVersionUID = 8625869141555691349L;
 
 	/**
 	 * 操作人id，必须和operator_type配对存在，不填时默认是商户

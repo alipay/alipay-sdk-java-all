@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 主体证件信息
  *
  * @author auto create
- * @since 1.0, 2022-07-25 18:04:25
+ * @since 1.0, 2022-09-01 19:25:30
  */
 public class IndirectCertificateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7678379581174635564L;
+	private static final long serialVersionUID = 1196432142635388413L;
 
 	/**
 	 * 证照图片（使用图片上传接口）

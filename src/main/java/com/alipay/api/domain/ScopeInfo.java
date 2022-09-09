@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ScopeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4532534979266946578L;
+	private static final long serialVersionUID = 3311884744386335619L;
 
 	/**
 	 * 圆形范围半径（单位公里），type为CIRCULAR时必填

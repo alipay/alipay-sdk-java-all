@@ -1,25 +1,28 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 订购查询及报价结果
  *
  * @author auto create
- * @since 1.0, 2022-08-19 15:50:21
+ * @since 1.0, 2022-08-29 20:48:02
  */
 public class PurchaseQueryResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5456999369313269155L;
+	private static final long serialVersionUID = 4356971121891179585L;
 
 	/**
 	 * 协议条款
 	 */
-	@ApiField("agreement_list")
-	private InsAgreementDTO agreementList;
+	@ApiListField("agreement_list")
+	@ApiField("ins_agreement_d_t_o")
+	private List<InsAgreementDTO> agreementList;
 
 	/**
 	 * 开始生效时间，限时订购时有效
@@ -48,8 +51,9 @@ public class PurchaseQueryResultDTO extends AlipayObject {
 	/**
 	 * 保障方案列表
 	 */
-	@ApiField("insure_plans")
-	private PurchaseInsurePlanDTO insurePlans;
+	@ApiListField("insure_plans")
+	@ApiField("purchase_insure_plan_d_t_o")
+	private List<PurchaseInsurePlanDTO> insurePlans;
 
 	/**
 	 * 已出单量,按量订购时有效
@@ -154,10 +158,10 @@ ECOM_ITEM  商品
 	@ApiField("user_id")
 	private String userId;
 
-	public InsAgreementDTO getAgreementList() {
+	public List<InsAgreementDTO> getAgreementList() {
 		return this.agreementList;
 	}
-	public void setAgreementList(InsAgreementDTO agreementList) {
+	public void setAgreementList(List<InsAgreementDTO> agreementList) {
 		this.agreementList = agreementList;
 	}
 
@@ -189,10 +193,10 @@ ECOM_ITEM  商品
 		this.instName = instName;
 	}
 
-	public PurchaseInsurePlanDTO getInsurePlans() {
+	public List<PurchaseInsurePlanDTO> getInsurePlans() {
 		return this.insurePlans;
 	}
-	public void setInsurePlans(PurchaseInsurePlanDTO insurePlans) {
+	public void setInsurePlans(List<PurchaseInsurePlanDTO> insurePlans) {
 		this.insurePlans = insurePlans;
 	}
 

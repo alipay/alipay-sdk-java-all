@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.nucleicremind.subscribe.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-07-26 17:26:43
+ * @since 1.0, 2022-08-31 20:46:46
  */
 public class AlipayEbppIndustryNucleicremindSubscribeModifyRequest implements AlipayRequest<AlipayEbppIndustryNucleicremindSubscribeModifyResponse> {
 

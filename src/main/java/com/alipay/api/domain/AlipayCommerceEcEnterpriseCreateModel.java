@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业入驻
  *
  * @author auto create
- * @since 1.0, 2022-08-13 00:13:25
+ * @since 1.0, 2022-08-29 10:41:49
  */
 public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4877218811987219382L;
+	private static final long serialVersionUID = 1354152638749733626L;
+
+	/**
+	 * 企业简称
+	 */
+	@ApiField("enterprise_alias")
+	private String enterpriseAlias;
 
 	/**
 	 * 企业名称
@@ -33,6 +39,13 @@ ALIPAY_USER_ID(企业支付宝会员id)
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	public String getEnterpriseAlias() {
+		return this.enterpriseAlias;
+	}
+	public void setEnterpriseAlias(String enterpriseAlias) {
+		this.enterpriseAlias = enterpriseAlias;
+	}
 
 	public String getEnterpriseName() {
 		return this.enterpriseName;

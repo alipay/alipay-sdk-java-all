@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险投保前推荐结果
  *
  * @author auto create
- * @since 1.0, 2022-08-24 10:51:58
+ * @since 1.0, 2022-08-30 21:10:28
  */
 public class InsureRecommResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4838789979753737922L;
+	private static final long serialVersionUID = 5214747588293832815L;
 
 	/**
 	 * 协议条款
@@ -30,10 +30,22 @@ public class InsureRecommResultDTO extends AlipayObject {
 	private String instId;
 
 	/**
+	 * 保司图标
+	 */
+	@ApiField("inst_logo")
+	private String instLogo;
+
+	/**
 	 * 保险公司名称
 	 */
 	@ApiField("inst_name")
 	private String instName;
+
+	/**
+	 * 保司简称
+	 */
+	@ApiField("inst_short_name")
+	private String instShortName;
 
 	/**
 	 * 保障方案列表
@@ -116,11 +128,25 @@ public class InsureRecommResultDTO extends AlipayObject {
 		this.instId = instId;
 	}
 
+	public String getInstLogo() {
+		return this.instLogo;
+	}
+	public void setInstLogo(String instLogo) {
+		this.instLogo = instLogo;
+	}
+
 	public String getInstName() {
 		return this.instName;
 	}
 	public void setInstName(String instName) {
 		this.instName = instName;
+	}
+
+	public String getInstShortName() {
+		return this.instShortName;
+	}
+	public void setInstShortName(String instShortName) {
+		this.instShortName = instShortName;
 	}
 
 	public List<InsurePlanDTO> getInsurePlans() {

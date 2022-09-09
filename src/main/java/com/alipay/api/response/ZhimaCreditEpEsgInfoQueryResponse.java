@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.esg.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-23 14:31:44
+ * @since 1.0, 2022-09-02 16:31:47
  */
 public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4153289681947563714L;
+	private static final long serialVersionUID = 3391932189329592143L;
 
 	/** 
 	 * 近12个月内企业是否强制清算或破产
@@ -30,6 +30,12 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	private Boolean emiLicenBanNum12MFlag;
 
 	/** 
+	 * 企业处于吊销、注销/拟注销、停歇业状态
+	 */
+	@ApiField("ep_abn_status_flag")
+	private Boolean epAbnStatusFlag;
+
+	/** 
 	 * 近12个月内企业高管变动记录数
 	 */
 	@ApiField("ep_adm_team_adj_num_12_m")
@@ -40,6 +46,18 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_big_tax_illegal_num_12_m")
 	private Long epBigTaxIllegalNum12M;
+
+	/** 
+	 * 截至评价日期，企业最大股东持股占比
+	 */
+	@ApiField("ep_biggest_share_holder_ratio")
+	private String epBiggestShareHolderRatio;
+
+	/** 
+	 * 截至评价日期，企业是否存在逾期未结清债券
+	 */
+	@ApiField("ep_bond_default_flag")
+	private Boolean epBondDefaultFlag;
 
 	/** 
 	 * 近12个月内企业债券兑付违约记录数
@@ -85,10 +103,40 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	private List<String> epCetificateList;
 
 	/** 
+	 * 近12个月企业子公司是否存在重大风险
+	 */
+	@ApiField("ep_child_risk_12_m_flag")
+	private Boolean epChildRisk12MFlag;
+
+	/** 
+	 * 企业所在行业气候风险暴露程度，枚举值：ABCD
+	 */
+	@ApiField("ep_climate_risk_exp")
+	private String epClimateRiskExp;
+
+	/** 
+	 * 企业单位营收二氧化碳排放量行业均值
+	 */
+	@ApiField("ep_co_2_emi_per_rvn")
+	private String epCo2EmiPerRvn;
+
+	/** 
 	 * 近12个月内企业新增著作权记录数
 	 */
 	@ApiField("ep_copyright_add_num_12_m")
 	private Long epCopyrightAddNum12M;
+
+	/** 
+	 * 企业拥有著作权记录数（每万元注册资本）
+	 */
+	@ApiField("ep_copyright_total_num")
+	private String epCopyrightTotalNum;
+
+	/** 
+	 * 近12个月内企业贿赂腐败案件被诉记录数(每万元注册资本)
+	 */
+	@ApiField("ep_corrupt_brib_legal_case_num_12_m")
+	private String epCorruptBribLegalCaseNum12M;
 
 	/** 
 	 * 近12个月内发生刑事案件被诉次数
@@ -107,6 +155,12 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_down_rating_issuer_num_12_m")
 	private Long epDownRatingIssuerNum12M;
+
+	/** 
+	 * 企业单位营收能源消耗量行业均值
+	 */
+	@ApiField("ep_energy_consume_per_rvn")
+	private String epEnergyConsumePerRvn;
 
 	/** 
 	 * 近12个月内企业环境信用评价等级，例如："green","blue","yellow","red"
@@ -143,6 +197,18 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_env_penalty_top_type_12_m")
 	private String epEnvPenaltyTopType12M;
+
+	/** 
+	 * 近12个月内企业因虚假宣传受到行政处罚次数（每万元注册资本）
+	 */
+	@ApiField("ep_fake_prop_penalty_num_12_m")
+	private String epFakePropPenaltyNum12M;
+
+	/** 
+	 * 法定代表人
+	 */
+	@ApiField("ep_fd")
+	private String epFd;
 
 	/** 
 	 * 近12个月内企业消防行政处罚金额
@@ -193,6 +259,12 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	private Long epHolderEqtyFrezNum12M;
 
 	/** 
+	 * 近12个月内企业股东股权冻结/强制转让记录数
+	 */
+	@ApiField("ep_holder_eqty_frez_ratio_12_m")
+	private Long epHolderEqtyFrezRatio12M;
+
+	/** 
 	 * 近12个月内企业股东出质股权总数额(万元/万股)
 	 */
 	@ApiField("ep_holder_eqty_pledge_amt_12_m")
@@ -203,6 +275,12 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_holder_eqty_pledge_num_12_m")
 	private Long epHolderEqtyPledgeNum12M;
+
+	/** 
+	 * 近12个月内企业股东出质股权总金额占注册资本比例(%)
+	 */
+	@ApiField("ep_holder_eqty_pledge_ratio_12_m")
+	private String epHolderEqtyPledgeRatio12M;
 
 	/** 
 	 * 近12个月内企业发生劳动争议、人事争议被诉次数
@@ -229,10 +307,46 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	private String epHrPenaltyTopType12M;
 
 	/** 
+	 * 近12个月内企业危废行政处罚次数（每万元注册资本）
+	 */
+	@ApiField("ep_hzd_penalty_num_12_m")
+	private String epHzdPenaltyNum12M;
+
+	/** 
+	 * 近12个月内企业危废行政处罚最严重类型
+	 */
+	@ApiField("ep_hzd_penalty_top_type_12_m")
+	private String epHzdPenaltyTopType12M;
+
+	/** 
 	 * 近12个月内企业新增icp记录数
 	 */
 	@ApiField("ep_icp_add_num_12_m")
 	private Long epIcpAddNum12M;
+
+	/** 
+	 * 国民经济行业：一级
+	 */
+	@ApiField("ep_industry_lv_1_code")
+	private String epIndustryLv1Code;
+
+	/** 
+	 * 国民经济行业：二级
+	 */
+	@ApiField("ep_industry_lv_2_code")
+	private String epIndustryLv2Code;
+
+	/** 
+	 * 国民经济行业：三级
+	 */
+	@ApiField("ep_industry_lv_3_code")
+	private String epIndustryLv3Code;
+
+	/** 
+	 * 国民经济行业：四级
+	 */
+	@ApiField("ep_industry_lv_4_code")
+	private String epIndustryLv4Code;
 
 	/** 
 	 * 近12个月内企业投资人股权变更记录数
@@ -245,6 +359,24 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_ip_legal_case_num_12_m")
 	private Long epIpLegalCaseNum12M;
+
+	/** 
+	 * 企业是否披露上一年度年报
+	 */
+	@ApiField("ep_lastyear_ann_rpt_disclose_flag")
+	private Boolean epLastyearAnnRptDiscloseFlag;
+
+	/** 
+	 * 企业最近一期财务报表是否经过审计
+	 */
+	@ApiField("ep_latest_ann_rpt_audit_flag")
+	private Boolean epLatestAnnRptAuditFlag;
+
+	/** 
+	 * 企业最近一期财务报表审计意见类型
+	 */
+	@ApiField("ep_latest_ann_rpt_audit_opinion")
+	private String epLatestAnnRptAuditOpinion;
 
 	/** 
 	 * 近12个月内企业法定代表人变更记录数
@@ -265,10 +397,52 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	private Long epLostCreditHistNum12M;
 
 	/** 
+	 * 近12个月内企业母公司是否存在重大风险
+	 */
+	@ApiField("ep_mom_risk_12_m_flag")
+	private Boolean epMomRisk12MFlag;
+
+	/** 
 	 * 企业全称
 	 */
 	@ApiField("ep_name")
 	private String epName;
+
+	/** 
+	 * 近12个月内企业合营/联营公司是否存在重大风险
+	 */
+	@ApiField("ep_nephew_risk_12_m_flag")
+	private Boolean epNephewRisk12MFlag;
+
+	/** 
+	 * 经营范围
+	 */
+	@ApiField("ep_oprt_scope")
+	private String epOprtScope;
+
+	/** 
+	 * 注册资本
+	 */
+	@ApiField("ep_org_reg_cptl")
+	private String epOrgRegCptl;
+
+	/** 
+	 * 注册资本币种
+	 */
+	@ApiField("ep_org_reg_cptl_curcy")
+	private String epOrgRegCptlCurcy;
+
+	/** 
+	 * 成立日期
+	 */
+	@ApiField("ep_org_reg_time")
+	private Date epOrgRegTime;
+
+	/** 
+	 * 企业经营状态
+	 */
+	@ApiField("ep_org_status")
+	private String epOrgStatus;
 
 	/** 
 	 * 近12个月内企业发生其他案由争议被诉次数
@@ -301,6 +475,18 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	private Long epPatentAddNum12M;
 
 	/** 
+	 * 企业拥有专利记录数（每万元注册资本）
+	 */
+	@ApiField("ep_patent_total_num")
+	private String epPatentTotalNum;
+
+	/** 
+	 * 近12个月内企业涉及民间借贷纠纷案件被诉记录数(每万元注册资本)
+	 */
+	@ApiField("ep_private_lend_legal_case_num_12_m")
+	private String epPrivateLendLegalCaseNum12M;
+
+	/** 
 	 * 近12个月内企业产品质量行政处罚金额
 	 */
 	@ApiField("ep_qlty_penalty_amt_12_m")
@@ -317,6 +503,36 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_qlty_penalty_top_type_12_m")
 	private String epQltyPenaltyTopType12M;
+
+	/** 
+	 * 注册地址
+	 */
+	@ApiField("ep_reg_addr")
+	private String epRegAddr;
+
+	/** 
+	 * 近12个月内企业注册资本减少比例(%)
+	 */
+	@ApiField("ep_reg_cptl_adj_ratio_12_m")
+	private String epRegCptlAdjRatio12M;
+
+	/** 
+	 * 企业所处行业森林、草原、海洋、港口等单一资源的依赖强度，枚举值：ABCD
+	 */
+	@ApiField("ep_resource_other_dependence")
+	private String epResourceOtherDependence;
+
+	/** 
+	 * 企业所处行业水资源依赖程度，枚举：ABCD
+	 */
+	@ApiField("ep_resource_water_dependence")
+	private String epResourceWaterDependence;
+
+	/** 
+	 * 近12个月内企业实际控制方是否存在重大风险
+	 */
+	@ApiField("ep_root_risk_12_m_flag")
+	private Boolean epRootRisk12MFlag;
 
 	/** 
 	 * 近12个月内企业安监行政处罚罚款总额，单位元
@@ -341,6 +557,18 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_serious_illegal_list_flag")
 	private Boolean epSeriousIllegalListFlag;
+
+	/** 
+	 * 近12个月内企业同一控股股东（包含母公司、实际控制方）控制的其他公司是否存在重大风险
+	 */
+	@ApiField("ep_sibling_risk_12_m_flag")
+	private Boolean epSiblingRisk12MFlag;
+
+	/** 
+	 * 企业单位营收固体废弃物排放量行业均值
+	 */
+	@ApiField("ep_solid_emi_per_rvn")
+	private String epSolidEmiPerRvn;
 
 	/** 
 	 * 近12个月内企业员工人数变动率
@@ -383,6 +611,18 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_tax_penalty_top_type_12_m")
 	private String epTaxPenaltyTopType12M;
+
+	/** 
+	 * 近12个月内对企业实施共同控制/施加重大影响的投资方是否存在重大风险
+	 */
+	@ApiField("ep_uncle_risk_12_m_flag")
+	private Boolean epUncleRisk12MFlag;
+
+	/** 
+	 * 近12个月内企业不正当竞争案件被诉记录数
+	 */
+	@ApiField("ep_unfair_compt_legal_case_num_12_m")
+	private String epUnfairComptLegalCaseNum12M;
 
 	/** 
 	 * 评价时间
@@ -464,6 +704,13 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 		return this.emiLicenBanNum12MFlag;
 	}
 
+	public void setEpAbnStatusFlag(Boolean epAbnStatusFlag) {
+		this.epAbnStatusFlag = epAbnStatusFlag;
+	}
+	public Boolean getEpAbnStatusFlag( ) {
+		return this.epAbnStatusFlag;
+	}
+
 	public void setEpAdmTeamAdjNum12M(Long epAdmTeamAdjNum12M) {
 		this.epAdmTeamAdjNum12M = epAdmTeamAdjNum12M;
 	}
@@ -476,6 +723,20 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	}
 	public Long getEpBigTaxIllegalNum12M( ) {
 		return this.epBigTaxIllegalNum12M;
+	}
+
+	public void setEpBiggestShareHolderRatio(String epBiggestShareHolderRatio) {
+		this.epBiggestShareHolderRatio = epBiggestShareHolderRatio;
+	}
+	public String getEpBiggestShareHolderRatio( ) {
+		return this.epBiggestShareHolderRatio;
+	}
+
+	public void setEpBondDefaultFlag(Boolean epBondDefaultFlag) {
+		this.epBondDefaultFlag = epBondDefaultFlag;
+	}
+	public Boolean getEpBondDefaultFlag( ) {
+		return this.epBondDefaultFlag;
 	}
 
 	public void setEpBondDefaultsNum12M(Long epBondDefaultsNum12M) {
@@ -527,11 +788,46 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 		return this.epCetificateList;
 	}
 
+	public void setEpChildRisk12MFlag(Boolean epChildRisk12MFlag) {
+		this.epChildRisk12MFlag = epChildRisk12MFlag;
+	}
+	public Boolean getEpChildRisk12MFlag( ) {
+		return this.epChildRisk12MFlag;
+	}
+
+	public void setEpClimateRiskExp(String epClimateRiskExp) {
+		this.epClimateRiskExp = epClimateRiskExp;
+	}
+	public String getEpClimateRiskExp( ) {
+		return this.epClimateRiskExp;
+	}
+
+	public void setEpCo2EmiPerRvn(String epCo2EmiPerRvn) {
+		this.epCo2EmiPerRvn = epCo2EmiPerRvn;
+	}
+	public String getEpCo2EmiPerRvn( ) {
+		return this.epCo2EmiPerRvn;
+	}
+
 	public void setEpCopyrightAddNum12M(Long epCopyrightAddNum12M) {
 		this.epCopyrightAddNum12M = epCopyrightAddNum12M;
 	}
 	public Long getEpCopyrightAddNum12M( ) {
 		return this.epCopyrightAddNum12M;
+	}
+
+	public void setEpCopyrightTotalNum(String epCopyrightTotalNum) {
+		this.epCopyrightTotalNum = epCopyrightTotalNum;
+	}
+	public String getEpCopyrightTotalNum( ) {
+		return this.epCopyrightTotalNum;
+	}
+
+	public void setEpCorruptBribLegalCaseNum12M(String epCorruptBribLegalCaseNum12M) {
+		this.epCorruptBribLegalCaseNum12M = epCorruptBribLegalCaseNum12M;
+	}
+	public String getEpCorruptBribLegalCaseNum12M( ) {
+		return this.epCorruptBribLegalCaseNum12M;
 	}
 
 	public void setEpCriminalCaseNum12M(Long epCriminalCaseNum12M) {
@@ -553,6 +849,13 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	}
 	public Long getEpDownRatingIssuerNum12M( ) {
 		return this.epDownRatingIssuerNum12M;
+	}
+
+	public void setEpEnergyConsumePerRvn(String epEnergyConsumePerRvn) {
+		this.epEnergyConsumePerRvn = epEnergyConsumePerRvn;
+	}
+	public String getEpEnergyConsumePerRvn( ) {
+		return this.epEnergyConsumePerRvn;
 	}
 
 	public void setEpEnvEvaluate12M(String epEnvEvaluate12M) {
@@ -595,6 +898,20 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	}
 	public String getEpEnvPenaltyTopType12M( ) {
 		return this.epEnvPenaltyTopType12M;
+	}
+
+	public void setEpFakePropPenaltyNum12M(String epFakePropPenaltyNum12M) {
+		this.epFakePropPenaltyNum12M = epFakePropPenaltyNum12M;
+	}
+	public String getEpFakePropPenaltyNum12M( ) {
+		return this.epFakePropPenaltyNum12M;
+	}
+
+	public void setEpFd(String epFd) {
+		this.epFd = epFd;
+	}
+	public String getEpFd( ) {
+		return this.epFd;
 	}
 
 	public void setEpFirePenaltyAmt12M(String epFirePenaltyAmt12M) {
@@ -653,6 +970,13 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 		return this.epHolderEqtyFrezNum12M;
 	}
 
+	public void setEpHolderEqtyFrezRatio12M(Long epHolderEqtyFrezRatio12M) {
+		this.epHolderEqtyFrezRatio12M = epHolderEqtyFrezRatio12M;
+	}
+	public Long getEpHolderEqtyFrezRatio12M( ) {
+		return this.epHolderEqtyFrezRatio12M;
+	}
+
 	public void setEpHolderEqtyPledgeAmt12M(String epHolderEqtyPledgeAmt12M) {
 		this.epHolderEqtyPledgeAmt12M = epHolderEqtyPledgeAmt12M;
 	}
@@ -665,6 +989,13 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	}
 	public Long getEpHolderEqtyPledgeNum12M( ) {
 		return this.epHolderEqtyPledgeNum12M;
+	}
+
+	public void setEpHolderEqtyPledgeRatio12M(String epHolderEqtyPledgeRatio12M) {
+		this.epHolderEqtyPledgeRatio12M = epHolderEqtyPledgeRatio12M;
+	}
+	public String getEpHolderEqtyPledgeRatio12M( ) {
+		return this.epHolderEqtyPledgeRatio12M;
 	}
 
 	public void setEpHrLegalCaseNum12M(Long epHrLegalCaseNum12M) {
@@ -695,11 +1026,53 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 		return this.epHrPenaltyTopType12M;
 	}
 
+	public void setEpHzdPenaltyNum12M(String epHzdPenaltyNum12M) {
+		this.epHzdPenaltyNum12M = epHzdPenaltyNum12M;
+	}
+	public String getEpHzdPenaltyNum12M( ) {
+		return this.epHzdPenaltyNum12M;
+	}
+
+	public void setEpHzdPenaltyTopType12M(String epHzdPenaltyTopType12M) {
+		this.epHzdPenaltyTopType12M = epHzdPenaltyTopType12M;
+	}
+	public String getEpHzdPenaltyTopType12M( ) {
+		return this.epHzdPenaltyTopType12M;
+	}
+
 	public void setEpIcpAddNum12M(Long epIcpAddNum12M) {
 		this.epIcpAddNum12M = epIcpAddNum12M;
 	}
 	public Long getEpIcpAddNum12M( ) {
 		return this.epIcpAddNum12M;
+	}
+
+	public void setEpIndustryLv1Code(String epIndustryLv1Code) {
+		this.epIndustryLv1Code = epIndustryLv1Code;
+	}
+	public String getEpIndustryLv1Code( ) {
+		return this.epIndustryLv1Code;
+	}
+
+	public void setEpIndustryLv2Code(String epIndustryLv2Code) {
+		this.epIndustryLv2Code = epIndustryLv2Code;
+	}
+	public String getEpIndustryLv2Code( ) {
+		return this.epIndustryLv2Code;
+	}
+
+	public void setEpIndustryLv3Code(String epIndustryLv3Code) {
+		this.epIndustryLv3Code = epIndustryLv3Code;
+	}
+	public String getEpIndustryLv3Code( ) {
+		return this.epIndustryLv3Code;
+	}
+
+	public void setEpIndustryLv4Code(String epIndustryLv4Code) {
+		this.epIndustryLv4Code = epIndustryLv4Code;
+	}
+	public String getEpIndustryLv4Code( ) {
+		return this.epIndustryLv4Code;
 	}
 
 	public void setEpInvestorEqtyAdjNum12M(Long epInvestorEqtyAdjNum12M) {
@@ -714,6 +1087,27 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	}
 	public Long getEpIpLegalCaseNum12M( ) {
 		return this.epIpLegalCaseNum12M;
+	}
+
+	public void setEpLastyearAnnRptDiscloseFlag(Boolean epLastyearAnnRptDiscloseFlag) {
+		this.epLastyearAnnRptDiscloseFlag = epLastyearAnnRptDiscloseFlag;
+	}
+	public Boolean getEpLastyearAnnRptDiscloseFlag( ) {
+		return this.epLastyearAnnRptDiscloseFlag;
+	}
+
+	public void setEpLatestAnnRptAuditFlag(Boolean epLatestAnnRptAuditFlag) {
+		this.epLatestAnnRptAuditFlag = epLatestAnnRptAuditFlag;
+	}
+	public Boolean getEpLatestAnnRptAuditFlag( ) {
+		return this.epLatestAnnRptAuditFlag;
+	}
+
+	public void setEpLatestAnnRptAuditOpinion(String epLatestAnnRptAuditOpinion) {
+		this.epLatestAnnRptAuditOpinion = epLatestAnnRptAuditOpinion;
+	}
+	public String getEpLatestAnnRptAuditOpinion( ) {
+		return this.epLatestAnnRptAuditOpinion;
 	}
 
 	public void setEpLegalPersonAdjNum12M(Long epLegalPersonAdjNum12M) {
@@ -737,11 +1131,60 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 		return this.epLostCreditHistNum12M;
 	}
 
+	public void setEpMomRisk12MFlag(Boolean epMomRisk12MFlag) {
+		this.epMomRisk12MFlag = epMomRisk12MFlag;
+	}
+	public Boolean getEpMomRisk12MFlag( ) {
+		return this.epMomRisk12MFlag;
+	}
+
 	public void setEpName(String epName) {
 		this.epName = epName;
 	}
 	public String getEpName( ) {
 		return this.epName;
+	}
+
+	public void setEpNephewRisk12MFlag(Boolean epNephewRisk12MFlag) {
+		this.epNephewRisk12MFlag = epNephewRisk12MFlag;
+	}
+	public Boolean getEpNephewRisk12MFlag( ) {
+		return this.epNephewRisk12MFlag;
+	}
+
+	public void setEpOprtScope(String epOprtScope) {
+		this.epOprtScope = epOprtScope;
+	}
+	public String getEpOprtScope( ) {
+		return this.epOprtScope;
+	}
+
+	public void setEpOrgRegCptl(String epOrgRegCptl) {
+		this.epOrgRegCptl = epOrgRegCptl;
+	}
+	public String getEpOrgRegCptl( ) {
+		return this.epOrgRegCptl;
+	}
+
+	public void setEpOrgRegCptlCurcy(String epOrgRegCptlCurcy) {
+		this.epOrgRegCptlCurcy = epOrgRegCptlCurcy;
+	}
+	public String getEpOrgRegCptlCurcy( ) {
+		return this.epOrgRegCptlCurcy;
+	}
+
+	public void setEpOrgRegTime(Date epOrgRegTime) {
+		this.epOrgRegTime = epOrgRegTime;
+	}
+	public Date getEpOrgRegTime( ) {
+		return this.epOrgRegTime;
+	}
+
+	public void setEpOrgStatus(String epOrgStatus) {
+		this.epOrgStatus = epOrgStatus;
+	}
+	public String getEpOrgStatus( ) {
+		return this.epOrgStatus;
 	}
 
 	public void setEpOtherLegalCaseNum12M(String epOtherLegalCaseNum12M) {
@@ -779,6 +1222,20 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 		return this.epPatentAddNum12M;
 	}
 
+	public void setEpPatentTotalNum(String epPatentTotalNum) {
+		this.epPatentTotalNum = epPatentTotalNum;
+	}
+	public String getEpPatentTotalNum( ) {
+		return this.epPatentTotalNum;
+	}
+
+	public void setEpPrivateLendLegalCaseNum12M(String epPrivateLendLegalCaseNum12M) {
+		this.epPrivateLendLegalCaseNum12M = epPrivateLendLegalCaseNum12M;
+	}
+	public String getEpPrivateLendLegalCaseNum12M( ) {
+		return this.epPrivateLendLegalCaseNum12M;
+	}
+
 	public void setEpQltyPenaltyAmt12M(String epQltyPenaltyAmt12M) {
 		this.epQltyPenaltyAmt12M = epQltyPenaltyAmt12M;
 	}
@@ -798,6 +1255,41 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	}
 	public String getEpQltyPenaltyTopType12M( ) {
 		return this.epQltyPenaltyTopType12M;
+	}
+
+	public void setEpRegAddr(String epRegAddr) {
+		this.epRegAddr = epRegAddr;
+	}
+	public String getEpRegAddr( ) {
+		return this.epRegAddr;
+	}
+
+	public void setEpRegCptlAdjRatio12M(String epRegCptlAdjRatio12M) {
+		this.epRegCptlAdjRatio12M = epRegCptlAdjRatio12M;
+	}
+	public String getEpRegCptlAdjRatio12M( ) {
+		return this.epRegCptlAdjRatio12M;
+	}
+
+	public void setEpResourceOtherDependence(String epResourceOtherDependence) {
+		this.epResourceOtherDependence = epResourceOtherDependence;
+	}
+	public String getEpResourceOtherDependence( ) {
+		return this.epResourceOtherDependence;
+	}
+
+	public void setEpResourceWaterDependence(String epResourceWaterDependence) {
+		this.epResourceWaterDependence = epResourceWaterDependence;
+	}
+	public String getEpResourceWaterDependence( ) {
+		return this.epResourceWaterDependence;
+	}
+
+	public void setEpRootRisk12MFlag(Boolean epRootRisk12MFlag) {
+		this.epRootRisk12MFlag = epRootRisk12MFlag;
+	}
+	public Boolean getEpRootRisk12MFlag( ) {
+		return this.epRootRisk12MFlag;
 	}
 
 	public void setEpSecuPenaltyAmt12M(String epSecuPenaltyAmt12M) {
@@ -826,6 +1318,20 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	}
 	public Boolean getEpSeriousIllegalListFlag( ) {
 		return this.epSeriousIllegalListFlag;
+	}
+
+	public void setEpSiblingRisk12MFlag(Boolean epSiblingRisk12MFlag) {
+		this.epSiblingRisk12MFlag = epSiblingRisk12MFlag;
+	}
+	public Boolean getEpSiblingRisk12MFlag( ) {
+		return this.epSiblingRisk12MFlag;
+	}
+
+	public void setEpSolidEmiPerRvn(String epSolidEmiPerRvn) {
+		this.epSolidEmiPerRvn = epSolidEmiPerRvn;
+	}
+	public String getEpSolidEmiPerRvn( ) {
+		return this.epSolidEmiPerRvn;
 	}
 
 	public void setEpStaffNumAdjRate12M(String epStaffNumAdjRate12M) {
@@ -875,6 +1381,20 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	}
 	public String getEpTaxPenaltyTopType12M( ) {
 		return this.epTaxPenaltyTopType12M;
+	}
+
+	public void setEpUncleRisk12MFlag(Boolean epUncleRisk12MFlag) {
+		this.epUncleRisk12MFlag = epUncleRisk12MFlag;
+	}
+	public Boolean getEpUncleRisk12MFlag( ) {
+		return this.epUncleRisk12MFlag;
+	}
+
+	public void setEpUnfairComptLegalCaseNum12M(String epUnfairComptLegalCaseNum12M) {
+		this.epUnfairComptLegalCaseNum12M = epUnfairComptLegalCaseNum12M;
+	}
+	public String getEpUnfairComptLegalCaseNum12M( ) {
+		return this.epUnfairComptLegalCaseNum12M;
 	}
 
 	public void setEvaluateTime(Date evaluateTime) {

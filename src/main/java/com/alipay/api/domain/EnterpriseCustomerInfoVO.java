@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业用户详情
  *
  * @author auto create
- * @since 1.0, 2022-06-07 11:45:57
+ * @since 1.0, 2022-09-08 11:48:37
  */
 public class EnterpriseCustomerInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2482163789429174736L;
+	private static final long serialVersionUID = 7384369627844478384L;
 
 	/**
 	 * 企业名称
@@ -42,6 +42,12 @@ public class EnterpriseCustomerInfoVO extends AlipayObject {
 	 */
 	@ApiField("enterprise_bank_no")
 	private String enterpriseBankNo;
+
+	/**
+	 * 企业电话号码
+	 */
+	@ApiField("enterprise_phone")
+	private String enterprisePhone;
 
 	/**
 	 * 法人证件号码（身份证）
@@ -100,6 +106,13 @@ public class EnterpriseCustomerInfoVO extends AlipayObject {
 	}
 	public void setEnterpriseBankNo(String enterpriseBankNo) {
 		this.enterpriseBankNo = enterpriseBankNo;
+	}
+
+	public String getEnterprisePhone() {
+		return this.enterprisePhone;
+	}
+	public void setEnterprisePhone(String enterprisePhone) {
+		this.enterprisePhone = enterprisePhone;
 	}
 
 	public String getLegalCertNo() {

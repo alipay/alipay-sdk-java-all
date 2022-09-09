@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.employee.title.create request
  * 
  * @author auto create
- * @since 1.0, 2022-07-28 14:36:47
+ * @since 1.0, 2022-09-08 15:47:03
  */
 public class AlipayCommerceEcEmployeeTitleCreateRequest implements AlipayRequest<AlipayCommerceEcEmployeeTitleCreateResponse> {
 

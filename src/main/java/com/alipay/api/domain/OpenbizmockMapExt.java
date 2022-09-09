@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Openbizmock应用的Map结构
  *
  * @author auto create
- * @since 1.0, 2022-01-04 17:57:59
+ * @since 1.0, 2022-08-30 21:17:29
  */
 public class OpenbizmockMapExt extends AlipayObject {
 
-	private static final long serialVersionUID = 5148837715844874785L;
+	private static final long serialVersionUID = 3859934468419282622L;
 
 	/**
 	 * 参数的key

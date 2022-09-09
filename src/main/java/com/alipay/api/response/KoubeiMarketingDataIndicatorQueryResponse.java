@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.indicator.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-29 10:50:14
+ * @since 1.0, 2022-09-06 14:05:43
  */
 public class KoubeiMarketingDataIndicatorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6731641726234649618L;
+	private static final long serialVersionUID = 6253756476738355943L;
 
 	/** 
 	 * JSON格式数组，每个对象表示一个门店某个具体日期的指标信息，KEY为指标代码，VALUE为该指标对应的值,各biz_type入参以及返回值的详细信息参见<a href="https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.1AZ2QH&treeId=193&articleId=106028&docType=1">快速接入</a>

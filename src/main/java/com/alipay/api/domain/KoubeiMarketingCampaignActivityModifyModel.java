@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 活动修改接口
  *
  * @author auto create
- * @since 1.0, 2022-06-27 11:21:18
+ * @since 1.0, 2022-09-06 15:52:07
  */
 public class KoubeiMarketingCampaignActivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5898894114818399827L;
+	private static final long serialVersionUID = 8182237435655871991L;
 
 	/**
 	 * 是否自动续期活动，仅当活动下券的有效期均为相对有效期时才能设置成Y

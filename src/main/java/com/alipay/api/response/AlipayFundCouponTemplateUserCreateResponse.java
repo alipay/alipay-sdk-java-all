@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.GiftUserTemplateBoxInfo;
 import com.alipay.api.domain.GiftUserTemplateInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.template.user.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-28 16:17:51
+ * @since 1.0, 2022-09-01 21:07:13
  */
 public class AlipayFundCouponTemplateUserCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3578281384156282965L;
+	private static final long serialVersionUID = 7557791716553266383L;
+
+	/** 
+	 * 用户封面容器信息，包含封面生效时间区间以及封面、封底等图片、视频资源
+	 */
+	@ApiField("gift_user_template_box_info")
+	private GiftUserTemplateBoxInfo giftUserTemplateBoxInfo;
 
 	/** 
 	 * 红包皮肤模板信息
@@ -26,6 +33,13 @@ public class AlipayFundCouponTemplateUserCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("user_template_id")
 	private String userTemplateId;
+
+	public void setGiftUserTemplateBoxInfo(GiftUserTemplateBoxInfo giftUserTemplateBoxInfo) {
+		this.giftUserTemplateBoxInfo = giftUserTemplateBoxInfo;
+	}
+	public GiftUserTemplateBoxInfo getGiftUserTemplateBoxInfo( ) {
+		return this.giftUserTemplateBoxInfo;
+	}
 
 	public void setTemplateInfo(GiftUserTemplateInfo templateInfo) {
 		this.templateInfo = templateInfo;

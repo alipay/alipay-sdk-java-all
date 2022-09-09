@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放计划详情数据对象
  *
  * @author auto create
- * @since 1.0, 2022-07-21 22:00:37
+ * @since 1.0, 2022-09-05 11:22:59
  */
 public class ChannelPutPlanDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7659927956369162482L;
+	private static final long serialVersionUID = 1187664298147736363L;
 
 	/**
 	 * 已有活动页面 code

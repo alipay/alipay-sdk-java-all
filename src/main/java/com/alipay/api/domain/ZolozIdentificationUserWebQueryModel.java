@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * H5刷脸认证查询
  *
  * @author auto create
- * @since 1.0, 2019-07-09 20:11:47
+ * @since 1.0, 2022-08-29 17:51:46
  */
 public class ZolozIdentificationUserWebQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3286351699873295979L;
+	private static final long serialVersionUID = 4431854513917437426L;
 
 	/**
 	 * 商户请求的唯一标识，须与初始化传入的bizId保持一致

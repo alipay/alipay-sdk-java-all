@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingActivityConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1742654861161477991L;
+	private static final long serialVersionUID = 5145451825171657758L;
 
 	/**
 	 * 待咨询的活动信息列表
@@ -25,10 +25,6 @@ public class AlipayMarketingActivityConsultModel extends AlipayObject {
 
 	/**
 	 * 商户接入模式
-
-枚举值
-SELF_MODE 商户自接入模式
-AGENCY_MODE 服务商代接入模式
 	 */
 	@ApiField("merchant_access_mode")
 	private String merchantAccessMode;

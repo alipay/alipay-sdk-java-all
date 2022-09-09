@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.anttech.qqq.ccc.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-20 14:46:49
+ * @since 1.0, 2022-09-06 15:24:47
  */
 public class DatadigitalAnttechQqqCccQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6218319888833283115L;
+	private static final long serialVersionUID = 4683754572635771198L;
 
 	/** 
 	 * 证件号

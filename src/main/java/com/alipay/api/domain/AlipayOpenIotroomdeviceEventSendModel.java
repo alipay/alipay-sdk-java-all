@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot房间设备上报事件
  *
  * @author auto create
- * @since 1.0, 2022-06-08 14:21:42
+ * @since 1.0, 2022-08-29 16:10:14
  */
 public class AlipayOpenIotroomdeviceEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8579927464873367511L;
+	private static final long serialVersionUID = 6217156775943333732L;
 
 	/**
 	 * 设备ID
@@ -36,6 +36,12 @@ public class AlipayOpenIotroomdeviceEventSendModel extends AlipayObject {
 	 */
 	@ApiField("reason")
 	private String reason;
+
+	/**
+	 * 单次刷脸请求唯一请求id
+	 */
+	@ApiField("request_id")
+	private String requestId;
 
 	public String getBiztid() {
 		return this.biztid;
@@ -63,6 +69,13 @@ public class AlipayOpenIotroomdeviceEventSendModel extends AlipayObject {
 	}
 	public void setReason(String reason) {
 		this.reason = reason;
+	}
+
+	public String getRequestId() {
+		return this.requestId;
+	}
+	public void setRequestId(String requestId) {
+		this.requestId = requestId;
 	}
 
 }

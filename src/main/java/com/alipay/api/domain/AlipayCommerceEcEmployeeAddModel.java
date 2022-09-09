@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2022-08-13 00:13:46
+ * @since 1.0, 2022-09-07 09:50:15
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4282636565557862517L;
+	private static final long serialVersionUID = 5245729229593487687L;
+
+	/**
+	 * 员工所属部门
+	 */
+	@ApiListField("department_ids")
+	@ApiField("string")
+	private List<String> departmentIds;
 
 	/**
 	 * 员工邮箱
@@ -72,6 +79,13 @@ SUPER_ADMIN 超级管理员
 	@ApiListField("role_list")
 	@ApiField("string")
 	private List<String> roleList;
+
+	public List<String> getDepartmentIds() {
+		return this.departmentIds;
+	}
+	public void setDepartmentIds(List<String> departmentIds) {
+		this.departmentIds = departmentIds;
+	}
 
 	public String getEmployeeEmail() {
 		return this.employeeEmail;

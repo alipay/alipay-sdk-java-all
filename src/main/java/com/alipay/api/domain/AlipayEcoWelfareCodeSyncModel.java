@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoWelfareCodeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1454378417961569878L;
+	private static final long serialVersionUID = 1863913956871942263L;
 
 	/**
 	 * 支付宝账户USERID，和福利账户ID而选一，可以通过支付宝钱包用户信息共享接口获取支付宝账户ID

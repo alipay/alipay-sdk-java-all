@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaymentVoucherAvailableMerchant extends AlipayObject {
 
-	private static final long serialVersionUID = 7145561736428796854L;
+	private static final long serialVersionUID = 3117314536716352939L;
 
 	/**
 	 * 优惠券可核销的直连商户PID

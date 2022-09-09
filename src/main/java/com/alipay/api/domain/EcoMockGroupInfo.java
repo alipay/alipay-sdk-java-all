@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcoMockGroupInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1468976227156748953L;
+	private static final long serialVersionUID = 1237298376351517325L;
 
 	/**
 	 * appId

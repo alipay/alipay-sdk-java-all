@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用规则条件列表
  *
  * @author auto create
- * @since 1.0, 2022-08-17 17:17:22
+ * @since 1.0, 2022-09-01 21:33:57
  */
 public class StandardConditionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5725838611127758279L;
+	private static final long serialVersionUID = 2873875411338451549L;
 
 	/**
 	 * 条件类型
@@ -43,6 +43,12 @@ MULT_ISSUE_CITY(多发放城市)
 	private String ruleFactor;
 
 	/**
+	 * 费控条件ID
+	 */
+	@ApiField("rule_id")
+	private String ruleId;
+
+	/**
 	 * 费控条件名称 约束：敏感词校验
 	 */
 	@ApiField("rule_name")
@@ -65,6 +71,13 @@ MULT_ISSUE_CITY(多发放城市)
 	}
 	public void setRuleFactor(String ruleFactor) {
 		this.ruleFactor = ruleFactor;
+	}
+
+	public String getRuleId() {
+		return this.ruleId;
+	}
+	public void setRuleId(String ruleId) {
+		this.ruleId = ruleId;
 	}
 
 	public String getRuleName() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountExrateConfigSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1384967999359574367L;
+	private static final long serialVersionUID = 2593682951693227491L;
 
 	/**
 	 * 自定义规则，字符串的形式。国际要同步到主站的拓展信息

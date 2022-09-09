@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动下架接口
  *
  * @author auto create
- * @since 1.0, 2022-06-27 11:21:33
+ * @since 1.0, 2022-09-06 15:52:22
  */
 public class KoubeiMarketingCampaignActivityOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1874117276955398618L;
+	private static final long serialVersionUID = 1568815192541564576L;
 
 	/**
 	 * 活动id。通过 <a href="https://opendocs.alipay.com/apis/api_5/koubei.marketing.campaign.activity.create">koubei.marketing.campaign.activity.create</a>(活动创建接口)获取。

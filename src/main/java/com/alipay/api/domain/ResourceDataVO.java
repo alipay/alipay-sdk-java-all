@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ResourceDataVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4839926521297347763L;
+	private static final long serialVersionUID = 2224258598812314479L;
 
 	/**
 	 * 人均访问停留时长（ms） 聚合天数为多天时，则为日均指标

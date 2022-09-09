@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金存管账户开户接口
  *
  * @author auto create
- * @since 1.0, 2022-05-25 17:33:48
+ * @since 1.0, 2022-08-30 15:11:47
  */
 public class AlipayFincoreFunddsAccountWitnessCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2696592662941677685L;
+	private static final long serialVersionUID = 5226829676177949139L;
 
 	/**
 	 * COMPANY-公司，INDIVIDUAL-个人

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 补充材料信息
  *
  * @author auto create
- * @since 1.0, 2022-07-25 18:04:37
+ * @since 1.0, 2022-09-05 14:09:49
  */
 public class IndirectExtraCredentials extends AlipayObject {
 
-	private static final long serialVersionUID = 6611571175114588843L;
+	private static final long serialVersionUID = 4516621116946719415L;
 
 	/**
-	 * 待确认商户号列表，最多10个
+	 * 待确认商户号列表，最多20个
 	 */
 	@ApiListField("smid_list")
 	@ApiField("string")
