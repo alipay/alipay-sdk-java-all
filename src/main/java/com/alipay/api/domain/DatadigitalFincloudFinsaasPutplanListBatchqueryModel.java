@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道投放计划列表查询
  *
  * @author auto create
- * @since 1.0, 2022-07-05 14:39:49
+ * @since 1.0, 2022-09-13 22:49:13
  */
 public class DatadigitalFincloudFinsaasPutplanListBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3346529172238968797L;
+	private static final long serialVersionUID = 4857628353142768759L;
+
+	/**
+	 * 渠道类别+不唯一+租户渠道列表查询+数据库
+	 */
+	@ApiField("channel_category")
+	private String channelCategory;
 
 	/**
 	 * 投放计划名称
@@ -48,6 +54,13 @@ public class DatadigitalFincloudFinsaasPutplanListBatchqueryModel extends Alipay
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getChannelCategory() {
+		return this.channelCategory;
+	}
+	public void setChannelCategory(String channelCategory) {
+		this.channelCategory = channelCategory;
+	}
 
 	public String getName() {
 		return this.name;

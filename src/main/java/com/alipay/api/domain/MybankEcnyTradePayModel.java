@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数字人民币交易支付
  *
  * @author auto create
- * @since 1.0, 2021-12-03 16:42:56
+ * @since 1.0, 2022-09-14 16:04:15
  */
 public class MybankEcnyTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5859135122931756416L;
+	private static final long serialVersionUID = 5346319715215492515L;
 
 	/**
 	 * 支付授权码。不同支付场景授权码的具体内容不同
@@ -62,8 +62,7 @@ public class MybankEcnyTradePayModel extends AlipayObject {
 
 	/**
 	 * 调用方订单号。
-由调用方(商户或者收单受理机构)定义，64个字符以内，仅支持字母、数字、下划线且需保证在调用方不重复。
-用于幂等
+由调用方定义，64个字符以内，仅支持字母、数字、下划线。作为幂等字段，需保证在调用方内部不重复。
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;

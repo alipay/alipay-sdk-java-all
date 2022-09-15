@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CraftsmanWorkOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4733396587522511366L;
+	private static final long serialVersionUID = 3838736444893319876L;
 
 	/**
 	 * 口碑手艺人id。是创建手艺人接口koubei.craftsman.data.provider.create返回的craftsman_id，或通过查询手艺人信息接口koubei.craftsman.data.provider查询craftsman_id

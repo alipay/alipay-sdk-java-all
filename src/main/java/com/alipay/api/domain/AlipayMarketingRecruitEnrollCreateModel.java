@@ -7,17 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商方案详情查询
  *
  * @author auto create
- * @since 1.0, 2022-05-10 15:15:24
+ * @since 1.0, 2022-09-13 17:35:18
  */
 public class AlipayMarketingRecruitEnrollCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8546875781837749622L;
+	private static final long serialVersionUID = 2419411783431154498L;
 
 	/**
 	 * 报名信息
 	 */
 	@ApiField("enroll_info")
 	private RecruitEnrollInfo enrollInfo;
+
+	/**
+	 * 活动报名场景配置。
+枚举值：
+VOUCHER：券报名场景的报名；
+MINI_APP：小程序报名场景的报名；
+	 */
+	@ApiField("enroll_scene_type")
+	private String enrollSceneType;
 
 	/**
 	 * 外部操作流水号。由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。
@@ -36,6 +45,13 @@ public class AlipayMarketingRecruitEnrollCreateModel extends AlipayObject {
 	}
 	public void setEnrollInfo(RecruitEnrollInfo enrollInfo) {
 		this.enrollInfo = enrollInfo;
+	}
+
+	public String getEnrollSceneType() {
+		return this.enrollSceneType;
+	}
+	public void setEnrollSceneType(String enrollSceneType) {
+		this.enrollSceneType = enrollSceneType;
 	}
 
 	public String getOutBizNo() {

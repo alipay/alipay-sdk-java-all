@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商方案详情查询
  *
  * @author auto create
- * @since 1.0, 2022-06-01 17:02:13
+ * @since 1.0, 2022-09-10 22:01:14
  */
 public class AlipayMarketingRecruitPlanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8293458323917729912L;
+	private static final long serialVersionUID = 8563227384623656812L;
 
 	/**
 	 * 查询可报名方案的目标商户信息。 说明： 如果该复杂对象不填。则默认为是查询调用者本人。 如果填写，则认为是查询该商户。 建议：服务商身份接入时必传，否则可报名方案不是针对代运营商户的。

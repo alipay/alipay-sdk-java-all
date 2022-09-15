@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LogisticsCompanyIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 1846683541499796667L;
+	private static final long serialVersionUID = 5752695846988243527L;
 
 	/**
 	 * 即时配送公司编码，由支付宝分配

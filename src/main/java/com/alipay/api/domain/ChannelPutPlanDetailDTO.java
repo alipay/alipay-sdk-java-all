@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放计划详情数据对象
  *
  * @author auto create
- * @since 1.0, 2022-09-05 11:22:59
+ * @since 1.0, 2022-09-13 20:39:08
  */
 public class ChannelPutPlanDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1187664298147736363L;
+	private static final long serialVersionUID = 4571869772783871232L;
 
 	/**
 	 * 已有活动页面 code
@@ -174,6 +174,12 @@ public class ChannelPutPlanDetailDTO extends AlipayObject {
 	 */
 	@ApiField("reject_reason")
 	private String rejectReason;
+
+	/**
+	 * 投放描述+不唯一+投放计划修改+数据库获取
+	 */
+	@ApiField("rule_text")
+	private String ruleText;
 
 	/**
 	 * 投放计划状态值
@@ -379,6 +385,13 @@ public class ChannelPutPlanDetailDTO extends AlipayObject {
 	}
 	public void setRejectReason(String rejectReason) {
 		this.rejectReason = rejectReason;
+	}
+
+	public String getRuleText() {
+		return this.ruleText;
+	}
+	public void setRuleText(String ruleText) {
+		this.ruleText = ruleText;
 	}
 
 	public String getStatus() {

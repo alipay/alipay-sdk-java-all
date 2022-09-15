@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可报名的方案列表
  *
  * @author auto create
- * @since 1.0, 2022-06-01 17:02:10
+ * @since 1.0, 2022-09-10 22:01:17
  */
 public class AlipayMarketingRecruitPlanlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6681171754425636865L;
+	private static final long serialVersionUID = 6157278151575922512L;
 
 	/**
 	 * 查询可报名方案的目标商户信息。
@@ -24,6 +24,16 @@ public class AlipayMarketingRecruitPlanlistQueryModel extends AlipayObject {
 	 */
 	@ApiField("enroll_merchant")
 	private RecruitEnrollMerchant enrollMerchant;
+
+	/**
+	 * 活动报名场景配置。 
+枚举值：
+VOUCHER：券报名场景查询；
+MINI_APP：小程序报名场景查询；
+VOUCHER,MINI_APP：同时进行券报名场景和小程序报名场景的查询；
+	 */
+	@ApiField("enroll_scene_type")
+	private String enrollSceneType;
 
 	/**
 	 * 第几页，默认1（需要在1和999之间）
@@ -42,6 +52,13 @@ public class AlipayMarketingRecruitPlanlistQueryModel extends AlipayObject {
 	}
 	public void setEnrollMerchant(RecruitEnrollMerchant enrollMerchant) {
 		this.enrollMerchant = enrollMerchant;
+	}
+
+	public String getEnrollSceneType() {
+		return this.enrollSceneType;
+	}
+	public void setEnrollSceneType(String enrollSceneType) {
+		this.enrollSceneType = enrollSceneType;
 	}
 
 	public Long getPageNum() {

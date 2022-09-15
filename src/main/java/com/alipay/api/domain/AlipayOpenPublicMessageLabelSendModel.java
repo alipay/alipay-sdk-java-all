@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicMessageLabelSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3163367623891775342L;
+	private static final long serialVersionUID = 7175655838878722377L;
 
 	/**
 	 * 根据标签圈人的过滤器

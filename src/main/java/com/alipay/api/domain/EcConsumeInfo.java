@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2022-09-05 16:52:44
+ * @since 1.0, 2022-09-13 15:11:03
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3129124896962311669L;
+	private static final long serialVersionUID = 4865638366747791325L;
 
 	/**
 	 * 共同账户ID
@@ -42,6 +42,18 @@ public class EcConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("consume_amount")
 	private String consumeAmount;
+
+	/**
+	 * 员工消费记账分类
+	 */
+	@ApiField("consume_category")
+	private String consumeCategory;
+
+	/**
+	 * 员工消费记账备注
+	 */
+	@ApiField("consume_memo")
+	private String consumeMemo;
 
 	/**
 	 * 账单类型
@@ -261,6 +273,20 @@ OTHER：其他
 	}
 	public void setConsumeAmount(String consumeAmount) {
 		this.consumeAmount = consumeAmount;
+	}
+
+	public String getConsumeCategory() {
+		return this.consumeCategory;
+	}
+	public void setConsumeCategory(String consumeCategory) {
+		this.consumeCategory = consumeCategory;
+	}
+
+	public String getConsumeMemo() {
+		return this.consumeMemo;
+	}
+	public void setConsumeMemo(String consumeMemo) {
+		this.consumeMemo = consumeMemo;
 	}
 
 	public String getConsumeType() {

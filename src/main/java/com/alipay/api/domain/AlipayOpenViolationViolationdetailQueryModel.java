@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenViolationViolationdetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8595254861274949648L;
+	private static final long serialVersionUID = 1764682826348463627L;
 
 	/**
 	 * 支付宝侧生成的违规记录唯一标识

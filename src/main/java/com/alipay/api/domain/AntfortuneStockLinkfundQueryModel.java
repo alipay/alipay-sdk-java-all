@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询关联场外基金
  *
  * @author auto create
- * @since 1.0, 2022-02-25 22:03:44
+ * @since 1.0, 2022-09-13 15:00:18
  */
 public class AntfortuneStockLinkfundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1412614727481815412L;
+	private static final long serialVersionUID = 8114791284873286577L;
 
 	/**
 	 * 返回限制数，默认为1

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandTradeorderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5399458258645458772L;
+	private static final long serialVersionUID = 3353814868117744439L;
 
 	/**
 	 * 订单ID；订单唯一标识

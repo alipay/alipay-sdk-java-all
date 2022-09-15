@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationPointHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2763913188994383176L;
+	private static final long serialVersionUID = 5346462457454859854L;
 
 	/**
 	 * 分页数

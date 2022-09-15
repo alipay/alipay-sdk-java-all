@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMerchantDepartmentDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2814117497678767649L;
+	private static final long serialVersionUID = 1831347724144854513L;
 
 	/**
 	 * 人员管理场景的部门id

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEcConsumeDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2132597482161157735L;
+	private static final long serialVersionUID = 7267684275186249258L;
 
 	/**
 	 * 共同账户ID，有企业ID可不传
@@ -45,6 +45,7 @@ public class AlipayCommerceEcConsumeDetailQueryModel extends AlipayObject {
 查询关联退款账单：Refund
 查询关联订单：Order
 查询关联票据：Ticket
+查询关联多媒体凭证：Multimedia
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")

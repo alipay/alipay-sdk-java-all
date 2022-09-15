@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建行业任务模版
  *
  * @author auto create
- * @since 1.0, 2022-06-30 14:52:53
+ * @since 1.0, 2022-09-13 10:55:49
  */
 public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7733683384848447197L;
+	private static final long serialVersionUID = 2128369886231138327L;
 
 	/**
 	 * 来源渠道
@@ -74,6 +74,12 @@ public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 	 */
 	@ApiField("scene_type")
 	private String sceneType;
+
+	/**
+	 * 默认结算到品牌
+	 */
+	@ApiField("settle_type")
+	private String settleType;
 
 	/**
 	 * 任务适用门店范围类型(MULTI_SHOP-多门店任务，SINGLE_SHOP-单门店任务)
@@ -195,6 +201,13 @@ public class AlipayCommerceTaskOperationCreateModel extends AlipayObject {
 	}
 	public void setSceneType(String sceneType) {
 		this.sceneType = sceneType;
+	}
+
+	public String getSettleType() {
+		return this.settleType;
+	}
+	public void setSettleType(String settleType) {
+		this.settleType = settleType;
 	}
 
 	public String getShopScopeType() {

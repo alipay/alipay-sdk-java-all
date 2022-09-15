@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.recruit.enroll.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-02 15:31:50
+ * @since 1.0, 2022-09-13 14:26:50
  */
 public class AlipayMarketingRecruitEnrollQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6724823933783217812L;
+	private static final long serialVersionUID = 7388326983421468656L;
 
 	/** 
 	 * 报名ID
@@ -27,6 +27,14 @@ public class AlipayMarketingRecruitEnrollQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("enroll_info")
 	private RecruitEnrollInfo enrollInfo;
+
+	/** 
+	 * 报名所属的活动报名场景。
+枚举值： VOUCHER：属于券报名场景；
+MINI_APP：属于小程序报名场景；
+	 */
+	@ApiField("enroll_scene_type")
+	private String enrollSceneType;
 
 	/** 
 	 * 报名时间
@@ -70,6 +78,13 @@ public class AlipayMarketingRecruitEnrollQueryResponse extends AlipayResponse {
 	}
 	public RecruitEnrollInfo getEnrollInfo( ) {
 		return this.enrollInfo;
+	}
+
+	public void setEnrollSceneType(String enrollSceneType) {
+		this.enrollSceneType = enrollSceneType;
+	}
+	public String getEnrollSceneType( ) {
+		return this.enrollSceneType;
 	}
 
 	public void setEnrollTime(Date enrollTime) {

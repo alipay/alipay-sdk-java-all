@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.esg.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-02 16:31:47
+ * @since 1.0, 2022-09-14 16:43:08
  */
 public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3391932189329592143L;
+	private static final long serialVersionUID = 5874992772455761247L;
 
 	/** 
 	 * 近12个月内企业是否强制清算或破产

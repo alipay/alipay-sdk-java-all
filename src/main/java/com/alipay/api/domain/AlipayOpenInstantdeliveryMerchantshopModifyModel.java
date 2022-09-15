@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 即时配送商家门店更新
  *
  * @author auto create
- * @since 1.0, 2020-09-27 21:07:26
+ * @since 1.0, 2022-09-14 20:30:01
  */
 public class AlipayOpenInstantdeliveryMerchantshopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2194752238555186132L;
+	private static final long serialVersionUID = 1578952242161622236L;
 
 	/**
 	 * 联系人姓名

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 即时配送商家账户创建
  *
  * @author auto create
- * @since 1.0, 2020-09-27 21:08:01
+ * @since 1.0, 2022-09-14 20:30:50
  */
 public class AlipayOpenInstantdeliveryAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2442839371868991238L;
+	private static final long serialVersionUID = 4814574683665585842L;
 
 	/**
 	 * 配送公司编码

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放计划数据传输对象
  *
  * @author auto create
- * @since 1.0, 2022-07-05 14:39:49
+ * @since 1.0, 2022-09-13 22:49:13
  */
 public class ChannelPutPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3578667941949312873L;
+	private static final long serialVersionUID = 8335958473438494335L;
 
 	/**
 	 * 已有活动页面地址
@@ -29,9 +29,24 @@ public class ChannelPutPlanDTO extends AlipayObject {
 
 	/**
 	 * 渠道关联业务 id，比如运营活动 id
+一期回填的是运营增长活动 id
+V1.1 版本开始废弃
 	 */
 	@ApiField("channel_biz_id")
 	private Long channelBizId;
+
+	/**
+	 * 渠道关联业务 id，比如运营活动 id
+一期回填的是运营增长活动 id
+	 */
+	@ApiField("channel_biz_id_str")
+	private String channelBizIdStr;
+
+	/**
+	 * 渠道类别+不唯一+租户渠道列表查询+数据库
+	 */
+	@ApiField("channel_categorychannel_category")
+	private String channelCategorychannelCategory;
 
 	/**
 	 * 渠道 id
@@ -190,6 +205,20 @@ public class ChannelPutPlanDTO extends AlipayObject {
 	}
 	public void setChannelBizId(Long channelBizId) {
 		this.channelBizId = channelBizId;
+	}
+
+	public String getChannelBizIdStr() {
+		return this.channelBizIdStr;
+	}
+	public void setChannelBizIdStr(String channelBizIdStr) {
+		this.channelBizIdStr = channelBizIdStr;
+	}
+
+	public String getChannelCategorychannelCategory() {
+		return this.channelCategorychannelCategory;
+	}
+	public void setChannelCategorychannelCategory(String channelCategorychannelCategory) {
+		this.channelCategorychannelCategory = channelCategorychannelCategory;
 	}
 
 	public Long getChannelId() {

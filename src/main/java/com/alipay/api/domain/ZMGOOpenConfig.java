@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板开通配置
  *
  * @author auto create
- * @since 1.0, 2022-08-26 09:59:37
+ * @since 1.0, 2022-09-13 11:30:44
  */
 public class ZMGOOpenConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8638573336916996117L;
+	private static final long serialVersionUID = 2147771455196167989L;
 
 	/**
 	 * 固定到期时间或每月的第几日。 （1）当period_mode为APPOINT_DATE时，取值固定日期，如"2022-06-01 00:00:00"，表示协议在6月1号0点到期; （2）当period_mode为FIX_DATE，取值"3"，表示协议在period_time个月后的3号到期。
@@ -61,6 +61,18 @@ public class ZMGOOpenConfig extends AlipayObject {
 	 */
 	@ApiField("period_time")
 	private String periodTime;
+
+	/**
+	 * 是否展示签约完成页
+	 */
+	@ApiField("show_sign_success_page")
+	private Boolean showSignSuccessPage;
+
+	/**
+	 * 签约完成页任务按钮描述，当展示签约完成页=true的时候 改内容必填
+	 */
+	@ApiField("sign_success_task_button_desc")
+	private String signSuccessTaskButtonDesc;
 
 	/**
 	 * 是否支持延期特权
@@ -122,6 +134,20 @@ public class ZMGOOpenConfig extends AlipayObject {
 	}
 	public void setPeriodTime(String periodTime) {
 		this.periodTime = periodTime;
+	}
+
+	public Boolean getShowSignSuccessPage() {
+		return this.showSignSuccessPage;
+	}
+	public void setShowSignSuccessPage(Boolean showSignSuccessPage) {
+		this.showSignSuccessPage = showSignSuccessPage;
+	}
+
+	public String getSignSuccessTaskButtonDesc() {
+		return this.signSuccessTaskButtonDesc;
+	}
+	public void setSignSuccessTaskButtonDesc(String signSuccessTaskButtonDesc) {
+		this.signSuccessTaskButtonDesc = signSuccessTaskButtonDesc;
 	}
 
 	public Boolean getSupportExpireDeferral() {

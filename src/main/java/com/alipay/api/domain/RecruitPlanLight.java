@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商方案
  *
  * @author auto create
- * @since 1.0, 2022-02-23 11:51:14
+ * @since 1.0, 2022-09-10 17:16:59
  */
 public class RecruitPlanLight extends AlipayObject {
 
-	private static final long serialVersionUID = 1325142883242126479L;
+	private static final long serialVersionUID = 4366298955291411521L;
 
 	/**
 	 * 招商方案描述：富文本内容，可能包含html标签
@@ -26,6 +26,15 @@ public class RecruitPlanLight extends AlipayObject {
 	 */
 	@ApiField("enroll_end_time")
 	private Date enrollEndTime;
+
+	/**
+	 * 招商方案所属报名场景
+枚举值：
+VOUCHER：券报名场景；
+MINI_APP：小程序报名场景；
+	 */
+	@ApiField("enroll_scene_type")
+	private String enrollSceneType;
 
 	/**
 	 * 报名开始时间
@@ -69,6 +78,13 @@ public class RecruitPlanLight extends AlipayObject {
 	}
 	public void setEnrollEndTime(Date enrollEndTime) {
 		this.enrollEndTime = enrollEndTime;
+	}
+
+	public String getEnrollSceneType() {
+		return this.enrollSceneType;
+	}
+	public void setEnrollSceneType(String enrollSceneType) {
+		this.enrollSceneType = enrollSceneType;
 	}
 
 	public Date getEnrollStartTime() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放平台openhome创建站内信
  *
  * @author auto create
- * @since 1.0, 2019-01-18 16:18:17
+ * @since 1.0, 2022-09-14 23:52:18
  */
 public class AlipayOpenOperationPlatformNoticeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3554341128671819891L;
+	private static final long serialVersionUID = 2668439995825846275L;
 
 	/**
 	 * 站内信内容字段

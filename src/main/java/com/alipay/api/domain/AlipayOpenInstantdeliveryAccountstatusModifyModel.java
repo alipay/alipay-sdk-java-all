@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * testhaha
  *
  * @author auto create
- * @since 1.0, 2020-09-26 22:42:01
+ * @since 1.0, 2022-09-14 20:29:31
  */
 public class AlipayOpenInstantdeliveryAccountstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6337116314836189941L;
+	private static final long serialVersionUID = 2499395195372188744L;
 
 	/**
 	 * 要更新的商家账户列表

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.putplan.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-09-05 10:48:42
+ * @since 1.0, 2022-09-13 22:51:49
  */
 public class DatadigitalFincloudFinsaasPutplanModifyRequest implements AlipayRequest<DatadigitalFincloudFinsaasPutplanModifyResponse> {
 

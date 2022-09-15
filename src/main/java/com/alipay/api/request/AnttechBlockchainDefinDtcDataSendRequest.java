@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.dtc.data.send request
  * 
  * @author auto create
- * @since 1.0, 2022-06-22 17:21:48
+ * @since 1.0, 2022-09-13 15:22:03
  */
 public class AnttechBlockchainDefinDtcDataSendRequest implements AlipayRequest<AnttechBlockchainDefinDtcDataSendResponse> {
 

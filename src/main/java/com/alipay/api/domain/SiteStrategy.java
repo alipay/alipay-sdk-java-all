@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SiteStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 5535746893646448846L;
+	private static final long serialVersionUID = 4441617833313819366L;
 
 	/**
 	 * 点位距离，单位km

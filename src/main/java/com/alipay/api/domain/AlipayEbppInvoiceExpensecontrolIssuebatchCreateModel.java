@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2827559498785857858L;
+	private static final long serialVersionUID = 2198369729765637561L;
 
 	/**
 	 * 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用
@@ -85,7 +85,7 @@ public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel extends Alipay
 	private String quotaType;
 
 	/**
-	 * 额度分享类型（1：可转赠 2 不可转赠）
+	 * 是否可转赠，枚举：0（不可转赠）、1（可转赠）
 	 */
 	@ApiField("share_mode")
 	private String shareMode;

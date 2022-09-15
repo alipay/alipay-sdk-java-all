@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道投放计划修改
  *
  * @author auto create
- * @since 1.0, 2022-09-05 10:48:42
+ * @since 1.0, 2022-09-13 22:49:15
  */
 public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5392993221985728667L;
+	private static final long serialVersionUID = 1754984255771728112L;
 
 	/**
 	 * 自由页面活动链接
@@ -102,6 +102,12 @@ public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 	 */
 	@ApiField("pic_url")
 	private String picUrl;
+
+	/**
+	 * 投放描述+不唯一+投放计划修改+数据库获取
+	 */
+	@ApiField("rule_text")
+	private String ruleText;
 
 	/**
 	 * 投放计划开始时间
@@ -224,6 +230,13 @@ public class DatadigitalFincloudFinsaasPutplanModifyModel extends AlipayObject {
 	}
 	public void setPicUrl(String picUrl) {
 		this.picUrl = picUrl;
+	}
+
+	public String getRuleText() {
+		return this.ruleText;
+	}
+	public void setRuleText(String ruleText) {
+		this.ruleText = ruleText;
 	}
 
 	public String getStartTime() {

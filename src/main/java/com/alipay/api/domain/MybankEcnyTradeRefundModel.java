@@ -7,23 +7,27 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人民币交易退款
  *
  * @author auto create
- * @since 1.0, 2021-12-03 16:43:09
+ * @since 1.0, 2022-09-14 16:04:15
  */
 public class MybankEcnyTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1566979378137289247L;
+	private static final long serialVersionUID = 6567562159738526886L;
 
 	/**
-	 * 退款请求号。标识一次退款请求，需要保证在交易号下唯一，如需部分退款，则此参数必传。
+	 * 商户ID
+	 */
+	@ApiField("merchant_id")
+	private String merchantId;
+
+	/**
+	 * 退款请求号。标识一次退款请求，需要保证在交易号下唯一。
 注：针对同一次退款请求，如果调用接口失败或异常了，重试时需要保证退款请求号不能变更，防止该笔交易重复退款。运营机构会保证同样的退款请求号多次请求只会退一次。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
 	/**
-	 * 调用方订单号。由调用方(商户或者收单受理机构)定义，64个字符以内，仅支持字母、数字、下划线且需保证在调用方不重复。
-out_trade_no与trade_no二选一
-用于幂等
+	 * 调用方订单号
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
@@ -41,11 +45,17 @@ out_trade_no与trade_no二选一
 	private String refundReason;
 
 	/**
-	 * 运营机构交易号。和商户订单号 out_trade_no 不能同时为空。
-out_trade_no与trade_no二选一
+	 * 运营机构交易号
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public String getMerchantId() {
+		return this.merchantId;
+	}
+	public void setMerchantId(String merchantId) {
+		this.merchantId = merchantId;
+	}
 
 	public String getOutRequestNo() {
 		return this.outRequestNo;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取活体照片
  *
  * @author auto create
- * @since 1.0, 2021-05-13 16:35:33
+ * @since 1.0, 2022-09-14 21:35:46
  */
 public class ZolozIdentificationCustomerCertifyConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8477677342562126869L;
+	private static final long serialVersionUID = 8654291526279693637L;
 
 	/**
 	 * 商户请求的唯一标志，该标识作为对账的关键信息，商户要保证其唯一性

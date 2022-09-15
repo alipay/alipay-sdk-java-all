@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 即时配送商家门店审核状态更新
  *
  * @author auto create
- * @since 1.0, 2020-09-26 20:18:11
+ * @since 1.0, 2022-09-14 20:28:58
  */
 public class AlipayOpenInstantdeliveryMerchantshopstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1364429519333629955L;
+	private static final long serialVersionUID = 2595896165543932858L;
 
 	/**
 	 * 要更新的商家门店列表

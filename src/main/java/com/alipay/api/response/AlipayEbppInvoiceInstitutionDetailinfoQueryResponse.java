@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.detailinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-06 10:46:50
+ * @since 1.0, 2022-09-14 19:07:49
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4416138591149618573L;
+	private static final long serialVersionUID = 6831817312642999482L;
 
 	/** 
 	 * 制度生效结束时间，最小粒度为天，最早是当日，结束时间以23:59:59结尾，结束时间最大值不超过2100-01-01 00:00:00
