@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 税务授权结果通知处理器
  *
  * @author auto create
- * @since 1.0, 2021-08-26 11:15:33
+ * @since 1.0, 2022-09-19 15:32:15
  */
 public class MybankCreditLoanapplyTaxOpenSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2635341181296516465L;
+	private static final long serialVersionUID = 1698968648995174828L;
 
 	/**
 	 * 此场景固定使用TAX_APPLET_AUTH_NOTICE

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataDataserviceRiskRtopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2314127983442473827L;
+	private static final long serialVersionUID = 5165242273475831667L;
 
 	/**
 	 * rowkeys+不需要唯一+蚁盾风险大脑项目，监管科技平台需要通过open api接口查询后端的反洗钱数据+非枚举+由用户检索的数据组成的参数+无特殊说明

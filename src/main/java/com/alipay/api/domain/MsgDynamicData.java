@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MsgDynamicData extends AlipayObject {
 
-	private static final long serialVersionUID = 3587665145796733874L;
+	private static final long serialVersionUID = 5732456581266653211L;
 
 	/**
 	 * 品牌名称

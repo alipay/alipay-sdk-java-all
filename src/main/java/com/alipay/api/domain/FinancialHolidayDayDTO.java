@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FinancialHolidayDayDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2121519127441353279L;
+	private static final long serialVersionUID = 1689872656463352767L;
 
 	/**
 	 * 日

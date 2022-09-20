@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class HealthCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7673115981984755669L;
+	private static final long serialVersionUID = 7895584364427959342L;
 
 	/**
 	 * 用户真实健康卡数据信息

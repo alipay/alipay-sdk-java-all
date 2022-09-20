@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序创建请求
  *
  * @author auto create
- * @since 1.0, 2022-07-19 23:54:28
+ * @since 1.0, 2022-09-15 18:03:19
  */
 public class CreateMiniRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6178486211422864336L;
+	private static final long serialVersionUID = 3797981535717979885L;
 
 	/**
 	 * 商家登录支付宝的邮箱帐号或手机号，当前仅支持企业支付宝帐号
@@ -63,7 +63,7 @@ true为支持
 	private String legalPersonalName;
 
 	/**
-	 * 营业执照图片的Base64编码字符串，图片大小不能超过2M
+	 * 营业执照图片的Base64编码字符串，图片大小不能超过2M。将is_individual设置为true，当传入该参数后，如果商家账号不是个体工商户类型，将同时为商家升级账号。
 	 */
 	@ApiField("license_pic")
 	private String licensePic;

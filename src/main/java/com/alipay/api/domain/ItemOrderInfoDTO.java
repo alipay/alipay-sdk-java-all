@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户商品信息列表; 电子小票场景时，必填
  *
  * @author auto create
- * @since 1.0, 2022-09-01 17:31:05
+ * @since 1.0, 2022-09-15 10:16:17
  */
 public class ItemOrderInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1419337245258719638L;
+	private static final long serialVersionUID = 2743734287437137782L;
 
 	/**
 	 * 商品条形码
@@ -38,7 +38,7 @@ public class ItemOrderInfoDTO extends AlipayObject {
 	private Long quantity;
 
 	/**
-	 * 商品数量（精度: 小数点后三位）
+	 * 商品数量（精度: 小数点后三位），使用商品功能时必填
 	 */
 	@ApiField("quantity_dec")
 	private String quantityDec;
@@ -50,7 +50,7 @@ public class ItemOrderInfoDTO extends AlipayObject {
 	private String skuId;
 
 	/**
-	 * 商品销售总价（精度: 小数点后两位，单位：元）
+	 * 商品销售总价（精度: 小数点后两位，单位：元），使用商品功能必填
 	 */
 	@ApiField("sku_total_price")
 	private String skuTotalPrice;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户下架代金券
  *
  * @author auto create
- * @since 1.0, 2019-05-07 10:06:24
+ * @since 1.0, 2022-09-19 15:11:24
  */
 public class KoubeiMarketingCampaignItemMerchantactivityCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1687138473336668331L;
+	private static final long serialVersionUID = 5659795789618613421L;
 
 	/**
 	 * 活动id。通过 <a href="https://opendocs.alipay.com/pre-apis/api_pre/koubei.marketing.campaign.item.merchantactivity.create">koubei.marketing.campaign.item.merchantactivity.create</a>(商户创建商品代金券)获取。

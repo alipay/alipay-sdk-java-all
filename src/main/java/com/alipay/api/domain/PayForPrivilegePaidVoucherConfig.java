@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayForPrivilegePaidVoucherConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8193643582836198659L;
+	private static final long serialVersionUID = 7267351838929699498L;
 
 	/**
 	 * 消费者充值赠送的该类型有偿券的数量

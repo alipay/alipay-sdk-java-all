@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试openapi
  *
  * @author auto create
- * @since 1.0, 2022-07-22 16:49:02
+ * @since 1.0, 2022-09-15 09:57:28
  */
 public class AlipayOpenAppTestagainCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3344584446872815387L;
+	private static final long serialVersionUID = 6623831937282562776L;
+
+	/**
+	 * 在门店消费用户的标识
+	 */
+	@ApiField("buyer_openid")
+	private String buyerOpenid;
 
 	/**
 	 * 金额
 	 */
 	@ApiField("xxxxxx")
 	private String xxxxxx;
+
+	public String getBuyerOpenid() {
+		return this.buyerOpenid;
+	}
+	public void setBuyerOpenid(String buyerOpenid) {
+		this.buyerOpenid = buyerOpenid;
+	}
 
 	public String getXxxxxx() {
 		return this.xxxxxx;

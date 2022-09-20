@@ -8,17 +8,69 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.testagain.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-15 09:48:47
+ * @since 1.0, 2022-09-15 09:57:49
  */
 public class AlipayOpenAppTestagainCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6352543154629398933L;
+	private static final long serialVersionUID = 8571935286713885459L;
+
+	/** 
+	 * xxxx
+	 */
+	@ApiField("buyer_id")
+	private String buyerId;
+
+	/** 
+	 * xxxx
+	 */
+	@ApiField("buyer_openid")
+	private String buyerOpenid;
+
+	/** 
+	 * 纬度
+	 */
+	@ApiField("test")
+	private String test;
+
+	/** 
+	 * sasasa
+	 */
+	@ApiField("test_openid")
+	private String testOpenid;
 
 	/** 
 	 * 1313
 	 */
 	@ApiField("xxxxxx")
 	private String xxxxxx;
+
+	public void setBuyerId(String buyerId) {
+		this.buyerId = buyerId;
+	}
+	public String getBuyerId( ) {
+		return this.buyerId;
+	}
+
+	public void setBuyerOpenid(String buyerOpenid) {
+		this.buyerOpenid = buyerOpenid;
+	}
+	public String getBuyerOpenid( ) {
+		return this.buyerOpenid;
+	}
+
+	public void setTest(String test) {
+		this.test = test;
+	}
+	public String getTest( ) {
+		return this.test;
+	}
+
+	public void setTestOpenid(String testOpenid) {
+		this.testOpenid = testOpenid;
+	}
+	public String getTestOpenid( ) {
+		return this.testOpenid;
+	}
 
 	public void setXxxxxx(String xxxxxx) {
 		this.xxxxxx = xxxxxx;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链 机构侧通知发送 / 文件上链
  *
  * @author auto create
- * @since 1.0, 2021-09-02 10:23:12
+ * @since 1.0, 2022-09-19 15:45:05
  */
 public class MybankCreditLoanapplyBlockchainOpenSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8537884265159756527L;
+	private static final long serialVersionUID = 8736412393198432226L;
 
 	/**
 	 * 业务类型,NOTICE_SEND_EVENT,机构侧通知发送 ,SDK枚举获取 业务类型,UPLOAD_FILE_FOR_CHAIN_EVENT,文件上链请求,SDK枚举获取 业务类

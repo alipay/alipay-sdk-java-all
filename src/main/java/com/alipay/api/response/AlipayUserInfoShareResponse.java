@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-30 20:07:12
+ * @since 1.0, 2022-09-16 14:21:55
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7729786799877843612L;
+	private static final long serialVersionUID = 8792376685352735921L;
 
 	/** 
 	 * 详细地址。
@@ -264,6 +264,12 @@ T--被冻结；F--未冻结
 	 */
 	@ApiField("is_balance_frozen")
 	private String isBalanceFrozen;
+
+	/** 
+	 * 账户是否被冻结，T/F，T冻结，F未冻结
+	 */
+	@ApiField("is_blocked")
+	private String isBlocked;
 
 	/** 
 	 * 是否通过实名认证。T是通过 F是没有实名认证。
@@ -675,6 +681,13 @@ W代表已注册，未激活的账户
 	}
 	public String getIsBalanceFrozen( ) {
 		return this.isBalanceFrozen;
+	}
+
+	public void setIsBlocked(String isBlocked) {
+		this.isBlocked = isBlocked;
+	}
+	public String getIsBlocked( ) {
+		return this.isBlocked;
 	}
 
 	public void setIsCertified(String isCertified) {

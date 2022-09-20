@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁乐驾车主车辆保存服务
  *
  * @author auto create
- * @since 1.0, 2022-03-28 17:18:43
+ * @since 1.0, 2022-09-16 17:41:02
  */
 public class AlipayInsAutoCarSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3583285918622259685L;
+	private static final long serialVersionUID = 7895978333144782627L;
 
 	/**
 	 * 车牌号

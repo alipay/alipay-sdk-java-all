@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票订单模型
  *
  * @author auto create
- * @since 1.0, 2022-06-22 13:24:53
+ * @since 1.0, 2022-09-15 10:19:38
  */
 public class ReceiptSimpleOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5333776594329937973L;
+	private static final long serialVersionUID = 2578572816138973876L;
+
+	/**
+	 * 支付宝支付方式对应支付金额
+	 */
+	@ApiField("alipay_amount")
+	private Long alipayAmount;
 
 	/**
 	 * 支付宝支付方式对应的支付金额;
@@ -128,7 +134,7 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	private String payAmount;
 
 	/**
-	 * 支付类型:alipay:支付宝，cashpay：现金，otherpay：其它; 支付宝支付时，必填; 
+	 * 支付类型:alipay:支付宝，otherpay：其它; 支付宝支付时，必填; 
 森林能量发放仅支持支付宝支付("alipay")和0元订单("otherpay")
 	 */
 	@ApiField("pay_type")
@@ -169,6 +175,13 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	 */
 	@ApiField("trade_type")
 	private String tradeType;
+
+	public Long getAlipayAmount() {
+		return this.alipayAmount;
+	}
+	public void setAlipayAmount(Long alipayAmount) {
+		this.alipayAmount = alipayAmount;
+	}
 
 	public Long getAlipayAmout() {
 		return this.alipayAmout;

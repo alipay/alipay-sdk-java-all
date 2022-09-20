@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝账号入驻开放平台有效性检查
  *
  * @author auto create
- * @since 1.0, 2020-07-27 16:26:14
+ * @since 1.0, 2022-09-19 11:03:58
  */
 public class AlipayOpenAppDeveloperCheckdevelopervalidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1356731426286672674L;
+	private static final long serialVersionUID = 8744468916858693944L;
 
 	/**
 	 * 支付宝账号

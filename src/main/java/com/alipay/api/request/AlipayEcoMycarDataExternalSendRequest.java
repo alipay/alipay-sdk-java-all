@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.data.external.send request
  * 
  * @author auto create
- * @since 1.0, 2020-07-30 15:16:25
+ * @since 1.0, 2022-09-16 17:11:01
  */
 public class AlipayEcoMycarDataExternalSendRequest implements AlipayRequest<AlipayEcoMycarDataExternalSendResponse> {
 

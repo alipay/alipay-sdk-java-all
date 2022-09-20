@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.quotation.quotetrade.nimitzdata.query request
  * 
  * @author auto create
- * @since 1.0, 2022-09-13 10:36:55
+ * @since 1.0, 2022-09-19 21:16:53
  */
 public class AlipayFinanceQuotationQuotetradeNimitzdataQueryRequest implements AlipayRequest<AlipayFinanceQuotationQuotetradeNimitzdataQueryResponse> {
 

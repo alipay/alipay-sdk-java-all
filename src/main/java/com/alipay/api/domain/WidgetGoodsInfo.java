@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  *  小部件商品信息模型
  *
  * @author auto create
- * @since 1.0, 2022-08-29 10:49:33
+ * @since 1.0, 2022-09-15 10:41:35
  */
 public class WidgetGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1564993426425971952L;
+	private static final long serialVersionUID = 5271891243261949732L;
 
 	/**
 	 * 该商品的小程序购买链接
@@ -83,7 +83,7 @@ public class WidgetGoodsInfo extends AlipayObject {
 	 * 剩余库存
 	 */
 	@ApiField("remaining_quantity")
-	private String remainingQuantity;
+	private Long remainingQuantity;
 
 	/**
 	 * 单位"元"的售价，传入数字，不需要传入"元"
@@ -95,7 +95,7 @@ public class WidgetGoodsInfo extends AlipayObject {
 	 * 已售数量
 	 */
 	@ApiField("sold_quantity")
-	private String soldQuantity;
+	private Long soldQuantity;
 
 	/**
 	 * 总库存量
@@ -180,10 +180,10 @@ public class WidgetGoodsInfo extends AlipayObject {
 		this.publishCities = publishCities;
 	}
 
-	public String getRemainingQuantity() {
+	public Long getRemainingQuantity() {
 		return this.remainingQuantity;
 	}
-	public void setRemainingQuantity(String remainingQuantity) {
+	public void setRemainingQuantity(Long remainingQuantity) {
 		this.remainingQuantity = remainingQuantity;
 	}
 
@@ -194,10 +194,10 @@ public class WidgetGoodsInfo extends AlipayObject {
 		this.sellPrice = sellPrice;
 	}
 
-	public String getSoldQuantity() {
+	public Long getSoldQuantity() {
 		return this.soldQuantity;
 	}
-	public void setSoldQuantity(String soldQuantity) {
+	public void setSoldQuantity(Long soldQuantity) {
 		this.soldQuantity = soldQuantity;
 	}
 

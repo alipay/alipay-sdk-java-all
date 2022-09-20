@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询客户申请中采集的数据
  *
  * @author auto create
- * @since 1.0, 2021-12-02 11:45:45
+ * @since 1.0, 2022-09-19 15:43:50
  */
 public class MybankCreditLoanapplyDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1243312478596583975L;
+	private static final long serialVersionUID = 8639987553915389237L;
 
 	/**
 	 * 对应业务类型相关的单号。若业务类型为1的话，则该值为申贷接口返回的sub_apply_no 子申请单号。

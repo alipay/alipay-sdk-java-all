@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业关系门店交易数据详细信息
  *
  * @author auto create
- * @since 1.0, 2022-07-05 19:33:30
+ * @since 1.0, 2022-09-16 10:30:58
  */
 public class BusinessRelationShopTradeDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8272489271367344452L;
+	private static final long serialVersionUID = 3217955785226373869L;
 
 	/**
 	 * 支付时间
@@ -25,6 +25,12 @@ public class BusinessRelationShopTradeDetailInfo extends AlipayObject {
 	@ApiField("trade_amount")
 	private String tradeAmount;
 
+	/**
+	 * 交易订单号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
+
 	public String getGmtPayment() {
 		return this.gmtPayment;
 	}
@@ -37,6 +43,13 @@ public class BusinessRelationShopTradeDetailInfo extends AlipayObject {
 	}
 	public void setTradeAmount(String tradeAmount) {
 		this.tradeAmount = tradeAmount;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
 	}
 
 }

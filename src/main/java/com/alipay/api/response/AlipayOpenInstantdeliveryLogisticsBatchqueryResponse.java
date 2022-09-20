@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenInstantdeliveryLogisticsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3194779552953331898L;
+	private static final long serialVersionUID = 6287816317178163437L;
 
 	/** 
 	 * 支持的即时配送公司列表

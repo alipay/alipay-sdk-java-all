@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ManjiangTestab
  *
  * @author auto create
- * @since 1.0, 2022-05-05 12:07:24
+ * @since 1.0, 2022-09-17 21:39:46
  */
 public class ManjiangTestab extends AlipayObject {
 
-	private static final long serialVersionUID = 3719443655125814917L;
+	private static final long serialVersionUID = 4626247599553411229L;
 
 	/**
 	 * 1
