@@ -2,6 +2,7 @@ package com.alipay.api.domain;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import java.util.List;
 
 /**
  * 批量代发转账接口
@@ -65,7 +66,7 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 	 * 收款信息列表。实际集合可以添加多个收款方信息，最多可以添加1000个收款方信息，如方案接入文档有特别说明，优先以接入文档为准
 	 */
 	@ApiField("trans_order_list")
-	private TransOrderDetail transOrderList;
+	private List<TransOrderDetail> transOrderList;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -123,10 +124,10 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 		this.totalTransAmount = totalTransAmount;
 	}
 
-	public TransOrderDetail getTransOrderList() {
+	public List<TransOrderDetail> getTransOrderList() {
 		return this.transOrderList;
 	}
-	public void setTransOrderList(TransOrderDetail transOrderList) {
+	public void setTransOrderList(List<TransOrderDetail> transOrderList) {
 		this.transOrderList = transOrderList;
 	}
 
