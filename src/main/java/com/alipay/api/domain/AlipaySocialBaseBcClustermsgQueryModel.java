@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取群发记录
  *
  * @author auto create
- * @since 1.0, 2022-02-25 10:59:49
+ * @since 1.0, 2022-09-20 19:28:09
  */
 public class AlipaySocialBaseBcClustermsgQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8564415745326879284L;
+	private static final long serialVersionUID = 1752362957843666619L;
 
 	/**
 	 * 操作的商家标识id，可选，默认是应用app下的pid；如果填写第三方商家标识id，需要保证app下的pid是该商家的管理员

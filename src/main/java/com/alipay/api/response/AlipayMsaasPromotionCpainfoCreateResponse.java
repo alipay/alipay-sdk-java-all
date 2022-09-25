@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.promotion.cpainfo.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:30:08
+ * @since 1.0, 2022-09-23 11:38:40
  */
 public class AlipayMsaasPromotionCpainfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4757557167257115132L;
+	private static final long serialVersionUID = 4647977654877331886L;
 
 	
 

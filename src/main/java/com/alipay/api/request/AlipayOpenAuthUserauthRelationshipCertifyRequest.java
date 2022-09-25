@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.auth.userauth.relationship.certify request
  * 
  * @author auto create
- * @since 1.0, 2022-05-13 17:22:32
+ * @since 1.0, 2022-09-22 14:26:34
  */
 public class AlipayOpenAuthUserauthRelationshipCertifyRequest implements AlipayRequest<AlipayOpenAuthUserauthRelationshipCertifyResponse> {
 

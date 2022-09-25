@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝用户联通手机卡信息同步接口
  *
  * @author auto create
- * @since 1.0, 2016-12-22 21:53:37
+ * @since 1.0, 2022-09-21 18:12:42
  */
 public class AlipayUserUnicomCardInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5875797249381443849L;
+	private static final long serialVersionUID = 6222457718471443711L;
 
 	/**
 	 * 状态发生变更的时间，返回自January 1, 1970, 00:00:00 GMT至手机号状态变更发生时的毫秒数, java代码获取示例：new Date().getTime()

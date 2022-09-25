@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 我淘支付宝大卡片（老CARD）信息查询
  *
  * @author auto create
- * @since 1.0, 2020-06-17 15:02:06
+ * @since 1.0, 2022-09-22 20:08:13
  */
 public class AlipayUserMemberAlipaybigcardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4299853581794851875L;
+	private static final long serialVersionUID = 7538938443942756286L;
 
 	/**
 	 * 缓存是否可用，手淘在请求前先查uid的缓存，新用户请求未落缓存或者上次缓存已经被清空时为false

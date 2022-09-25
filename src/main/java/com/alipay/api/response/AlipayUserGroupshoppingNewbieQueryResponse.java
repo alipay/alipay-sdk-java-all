@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.groupshopping.newbie.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-09-21 18:10:15
  */
 public class AlipayUserGroupshoppingNewbieQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4176148691775823619L;
+	private static final long serialVersionUID = 8117487812828664315L;
 
 	/** 
 	 * 是否可参与一元团

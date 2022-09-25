@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益宝权益发放openapi接口
  *
  * @author auto create
- * @since 1.0, 2022-04-15 10:22:37
+ * @since 1.0, 2022-09-22 19:14:17
  */
 public class AlipayUserQuanyibaoOpenbenefitSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8763128456662755641L;
+	private static final long serialVersionUID = 3166131325619379367L;
 
 	/**
 	 * 支付宝登录账号，支持邮箱和手机号格式，与alipay_user_id字段必须选填一个

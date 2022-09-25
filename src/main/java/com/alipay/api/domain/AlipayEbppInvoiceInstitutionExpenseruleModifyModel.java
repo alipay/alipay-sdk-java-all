@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 编辑使用规则
  *
  * @author auto create
- * @since 1.0, 2022-09-14 10:59:12
+ * @since 1.0, 2022-09-23 15:37:13
  */
 public class AlipayEbppInvoiceInstitutionExpenseruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4625138267443949944L;
+	private static final long serialVersionUID = 8848622137635123331L;
 
 	/**
-	 * 企业共同账户id
+	 * 企业共同账户id，和授权签约协议号共同使用。
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -32,7 +32,7 @@ MODIFY_RULE（修改使用条件），MODIFY_BASIC_INFO（修改规则基本信�
 	private String action;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -73,6 +73,13 @@ MODIFY_RULE（修改使用条件），MODIFY_BASIC_INFO（修改规则基本信�
 	 */
 	@ApiField("payment_policy")
 	private String paymentPolicy;
+
+	/**
+	 * 规则条件列表
+	 */
+	@ApiListField("standard_condition_info_list")
+	@ApiField("standard_condition_info")
+	private List<StandardConditionInfo> standardConditionInfoList;
 
 	/**
 	 * 规则描述（敏感词校验）
@@ -153,6 +160,13 @@ MODIFY_RULE（修改使用条件），MODIFY_BASIC_INFO（修改规则基本信�
 	}
 	public void setPaymentPolicy(String paymentPolicy) {
 		this.paymentPolicy = paymentPolicy;
+	}
+
+	public List<StandardConditionInfo> getStandardConditionInfoList() {
+		return this.standardConditionInfoList;
+	}
+	public void setStandardConditionInfoList(List<StandardConditionInfo> standardConditionInfoList) {
+		this.standardConditionInfoList = standardConditionInfoList;
 	}
 
 	public String getStandardDesc() {

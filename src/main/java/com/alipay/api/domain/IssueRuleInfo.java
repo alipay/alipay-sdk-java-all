@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发放规则信息
  *
  * @author auto create
- * @since 1.0, 2022-09-16 10:03:26
+ * @since 1.0, 2022-09-22 18:05:43
  */
 public class IssueRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8884339384876313691L;
+	private static final long serialVersionUID = 2667634473285874642L;
 
 	/**
 	 * 生效周期，不限："{\"all\":true}"，默认为不限
@@ -46,6 +46,12 @@ public class IssueRuleInfo extends AlipayObject {
 	 */
 	@ApiField("issue_end_date")
 	private Date issueEndDate;
+
+	/**
+	 * 发放规则id，创建时无需填写
+	 */
+	@ApiField("issue_rule_id")
+	private String issueRuleId;
 
 	/**
 	 * 发放规则名称
@@ -116,6 +122,13 @@ public class IssueRuleInfo extends AlipayObject {
 	}
 	public void setIssueEndDate(Date issueEndDate) {
 		this.issueEndDate = issueEndDate;
+	}
+
+	public String getIssueRuleId() {
+		return this.issueRuleId;
+	}
+	public void setIssueRuleId(String issueRuleId) {
+		this.issueRuleId = issueRuleId;
 	}
 
 	public String getIssueRuleName() {

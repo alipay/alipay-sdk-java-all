@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AmapMapYierlingsanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6241377457255579194L;
+	private static final long serialVersionUID = 3688215515778771124L;
 
 	
 

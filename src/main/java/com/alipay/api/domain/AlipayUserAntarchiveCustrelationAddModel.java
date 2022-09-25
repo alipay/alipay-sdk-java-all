@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加蚂蚁档案客户关联
  *
  * @author auto create
- * @since 1.0, 2020-09-03 15:59:26
+ * @since 1.0, 2022-09-22 16:09:50
  */
 public class AlipayUserAntarchiveCustrelationAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3289194955127174742L;
+	private static final long serialVersionUID = 8766564355811672845L;
 
 	/**
 	 * 待关联客户id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝拼团查询是否有一元拼资格
  *
  * @author auto create
- * @since 1.0, 2018-08-24 11:23:47
+ * @since 1.0, 2022-09-21 18:10:15
  */
 public class AlipayUserGroupshoppingNewbieQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7881851948198177291L;
+	private static final long serialVersionUID = 4152178669719513942L;
 
 	/**
 	 * 支付宝淘宝拼团的组团id

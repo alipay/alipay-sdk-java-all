@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取用户参与活动状态
  *
  * @author auto create
- * @since 1.0, 2017-09-28 11:02:50
+ * @since 1.0, 2022-09-23 17:55:40
  */
 public class AlipayInsAutoUserCampaignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6198951446892976738L;
+	private static final long serialVersionUID = 3138717141581448317L;
 
 	/**
 	 * 车险活动类型编码。

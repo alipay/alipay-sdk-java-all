@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容数据的结构
  *
  * @author auto create
- * @since 1.0, 2022-08-05 14:42:56
+ * @since 1.0, 2022-09-20 15:33:49
  */
 public class ApeContentItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3191121538884621775L;
+	private static final long serialVersionUID = 3644437973716616894L;
 
 	/**
 	 * 作者粉丝数
@@ -156,6 +156,12 @@ public class ApeContentItem extends AlipayObject {
 	 */
 	@ApiField("related_goods_ids")
 	private String relatedGoodsIds;
+
+	/**
+	 * 数据类型
+	 */
+	@ApiField("row_type")
+	private String rowType;
 
 	/**
 	 * 内容累计分享次数
@@ -383,6 +389,13 @@ public class ApeContentItem extends AlipayObject {
 	}
 	public void setRelatedGoodsIds(String relatedGoodsIds) {
 		this.relatedGoodsIds = relatedGoodsIds;
+	}
+
+	public String getRowType() {
+		return this.rowType;
+	}
+	public void setRowType(String rowType) {
+		this.rowType = rowType;
 	}
 
 	public Long getShareCnt() {

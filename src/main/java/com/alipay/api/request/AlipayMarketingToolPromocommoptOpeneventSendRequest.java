@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.tool.promocommopt.openevent.send request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:22:54
+ * @since 1.0, 2022-09-22 19:42:29
  */
 public class AlipayMarketingToolPromocommoptOpeneventSendRequest implements AlipayRequest<AlipayMarketingToolPromocommoptOpeneventSendResponse> {
 

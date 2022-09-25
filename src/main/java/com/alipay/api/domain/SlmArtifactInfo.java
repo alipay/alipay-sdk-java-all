@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用例截图信息
  *
  * @author auto create
- * @since 1.0, 2022-09-15 20:44:12
+ * @since 1.0, 2022-09-21 14:47:25
  */
 public class SlmArtifactInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5348834137919286138L;
+	private static final long serialVersionUID = 5563952684965272558L;
 
 	/**
 	 * 图片名称

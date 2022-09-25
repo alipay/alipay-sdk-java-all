@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCustomerAuthMutualviewApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1245671249492395712L;
+	private static final long serialVersionUID = 6677486599871194253L;
 
 	/** 
 	 * 查询用户信用状态的id

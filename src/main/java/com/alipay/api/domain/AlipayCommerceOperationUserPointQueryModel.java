@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户积分
  *
  * @author auto create
- * @since 1.0, 2021-08-02 14:54:01
+ * @since 1.0, 2022-09-23 15:44:23
  */
 public class AlipayCommerceOperationUserPointQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4419231255526693229L;
+	private static final long serialVersionUID = 6381293551682937612L;
 
 	/**
 	 * 场景代码，由行业运营平台分配，提供枚举值。

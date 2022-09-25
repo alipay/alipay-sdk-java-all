@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 拉新邀请任务兑换确认
  *
  * @author auto create
- * @since 1.0, 2018-12-28 11:31:32
+ * @since 1.0, 2022-09-21 18:10:44
  */
 public class AlipayUserInvitetaskExchangeConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7868646547346956613L;
+	private static final long serialVersionUID = 1564396412645116285L;
 
 	/**
 	 * 猫超券兑换金额,单位:分

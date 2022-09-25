@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设置群欢迎语及群公告等其他设置
  *
  * @author auto create
- * @since 1.0, 2022-02-25 11:01:40
+ * @since 1.0, 2022-09-20 19:27:27
  */
 public class AlipaySocialBaseBcClustersettingModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2267343832128974253L;
+	private static final long serialVersionUID = 2113246652539639644L;
 
 	/**
 	 * 客户群分组id，此id唯一，分组下会管理一系列的客户群

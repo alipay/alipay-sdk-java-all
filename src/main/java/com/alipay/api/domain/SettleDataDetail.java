@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算数据详情入参
  *
  * @author auto create
- * @since 1.0, 2022-04-21 09:46:54
+ * @since 1.0, 2022-09-21 10:03:24
  */
 public class SettleDataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4881519853774269464L;
+	private static final long serialVersionUID = 8663342864822655729L;
 
 	/**
 	 * 结算指标详情数据
 	 */
 	@ApiField("data_detail")
 	private String dataDetail;
+
+	/**
+	 * openid
+	 */
+	@ApiField("openid")
+	private String openid;
 
 	/**
 	 * 用户ID
@@ -30,6 +36,13 @@ public class SettleDataDetail extends AlipayObject {
 	}
 	public void setDataDetail(String dataDetail) {
 		this.dataDetail = dataDetail;
+	}
+
+	public String getOpenid() {
+		return this.openid;
+	}
+	public void setOpenid(String openid) {
+		this.openid = openid;
 	}
 
 	public String getUserId() {

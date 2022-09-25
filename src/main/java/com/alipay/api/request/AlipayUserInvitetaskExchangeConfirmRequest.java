@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.invitetask.exchange.confirm request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-09-21 18:10:44
  */
 public class AlipayUserInvitetaskExchangeConfirmRequest implements AlipayRequest<AlipayUserInvitetaskExchangeConfirmResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * Auth授权token回调接口
  *
  * @author auto create
- * @since 1.0, 2020-10-15 16:45:41
+ * @since 1.0, 2022-09-23 11:42:15
  */
 public class AlipayMsaasItapUserCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7153256575426269589L;
+	private static final long serialVersionUID = 7825522384396469268L;
 
 	/**
 	 * 用户认证消息体

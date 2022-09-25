@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁宝卡联通流量查询接口
  *
  * @author auto create
- * @since 1.0, 2018-09-03 12:25:27
+ * @since 1.0, 2022-09-21 18:13:18
  */
 public class AlipayUserUnicomDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6593735815411391964L;
+	private static final long serialVersionUID = 5677161415862968852L;
 
 	/**
 	 * 蚂蚁统一会员ID

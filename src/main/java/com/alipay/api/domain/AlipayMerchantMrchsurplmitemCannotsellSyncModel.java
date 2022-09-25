@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantMrchsurplmitemCannotsellSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1331113218538258647L;
+	private static final long serialVersionUID = 5258437452996279464L;
 
 	/**
 	 * 业务ID

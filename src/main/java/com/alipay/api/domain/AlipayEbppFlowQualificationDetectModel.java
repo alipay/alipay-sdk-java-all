@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppFlowQualificationDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7775298823726535589L;
+	private static final long serialVersionUID = 4169342255459592475L;
 
 	/**
 	 * 需要校验的用户手机号

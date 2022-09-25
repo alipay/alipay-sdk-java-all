@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券核销规则
  *
  * @author auto create
- * @since 1.0, 2022-08-24 15:52:21
+ * @since 1.0, 2022-09-25 10:13:57
  */
 public class VoucherUseRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4219333748684916188L;
+	private static final long serialVersionUID = 2436744545649476724L;
 
 	/**
 	 * 核销次数限制。
@@ -30,6 +30,12 @@ public class VoucherUseRuleInfo extends AlipayObject {
 	 */
 	@ApiField("voucher_max_use_times")
 	private Long voucherMaxUseTimes;
+
+	/**
+	 * 自定义扩展信息
+	 */
+	@ApiField("voucher_use_ext_info")
+	private String voucherUseExtInfo;
 
 	/**
 	 * 券核销时间。
@@ -56,6 +62,13 @@ public class VoucherUseRuleInfo extends AlipayObject {
 	}
 	public void setVoucherMaxUseTimes(Long voucherMaxUseTimes) {
 		this.voucherMaxUseTimes = voucherMaxUseTimes;
+	}
+
+	public String getVoucherUseExtInfo() {
+		return this.voucherUseExtInfo;
+	}
+	public void setVoucherUseExtInfo(String voucherUseExtInfo) {
+		this.voucherUseExtInfo = voucherUseExtInfo;
 	}
 
 	public VoucherUseTimeInfo getVoucherUseTimeInfo() {

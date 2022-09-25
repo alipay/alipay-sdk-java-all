@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 惠支付通用开放平台事件接入接口
  *
  * @author auto create
- * @since 1.0, 2018-07-30 15:26:46
+ * @since 1.0, 2022-09-22 19:42:29
  */
 public class AlipayMarketingToolPromocommoptOpeneventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2187269955451621563L;
+	private static final long serialVersionUID = 1355681143652756985L;
 
 	/**
 	 * 外部事件发生时间，必须是（yyyy-MM-dd HH:mm:ss）格式

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询凭证信息
  *
  * @author auto create
- * @since 1.0, 2016-10-13 19:51:03
+ * @since 1.0, 2022-09-23 11:27:01
  */
 public class AlipayInsMarketingCertificateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8893248963948629927L;
+	private static final long serialVersionUID = 1749197766744646417L;
 
 	/**
 	 * 32

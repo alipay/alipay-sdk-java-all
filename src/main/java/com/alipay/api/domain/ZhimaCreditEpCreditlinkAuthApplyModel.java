@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业征信数据服务连接申请
  *
  * @author auto create
- * @since 1.0, 2022-05-31 10:52:19
+ * @since 1.0, 2022-09-23 15:19:49
  */
 public class ZhimaCreditEpCreditlinkAuthApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2222896848188286125L;
+	private static final long serialVersionUID = 8261893234978821341L;
 
 	/**
 	 * 授权回跳页面地址
@@ -32,7 +32,7 @@ public class ZhimaCreditEpCreditlinkAuthApplyModel extends AlipayObject {
 	private String authNotifyPath;
 
 	/**
-	 * 认证类型，请跟服务方获取
+	 * 认证类型，请联系服务提供方获取
 	 */
 	@ApiField("certification_type")
 	private String certificationType;
@@ -50,7 +50,7 @@ public class ZhimaCreditEpCreditlinkAuthApplyModel extends AlipayObject {
 	private String cognizantName;
 
 	/**
-	 * 连接数据类型，请跟服务方获取
+	 * 信用链接数据类型，请联系服务提供方获取
 	 */
 	@ApiField("data_type")
 	private String dataType;
@@ -68,14 +68,14 @@ public class ZhimaCreditEpCreditlinkAuthApplyModel extends AlipayObject {
 	private String epName;
 
 	/**
-	 * 信用链接类型，一次性和周期性，请跟服务方获取
+	 * 信用链接类型，请联系服务提供方确认对应类型
 	 */
 	@ApiField("link_type")
 	private String linkType;
 
 	/**
 	 * 商户需要在授权回跳时需要带回的透传字段（
-回跳auth_callback时候）
+回跳auth_callback_path时）
 	 */
 	@ApiField("merchant_context")
 	private String merchantContext;

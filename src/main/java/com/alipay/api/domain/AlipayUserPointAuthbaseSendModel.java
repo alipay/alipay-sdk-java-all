@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户积分发放接口（无需授权）
  *
  * @author auto create
- * @since 1.0, 2019-07-22 11:00:33
+ * @since 1.0, 2022-09-21 18:11:57
  */
 public class AlipayUserPointAuthbaseSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1714389938718714556L;
+	private static final long serialVersionUID = 2392923192175977474L;
 
 	/**
 	 * 扩展信息，用于对该笔业务调用的补充说明

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分组消息群发
  *
  * @author auto create
- * @since 1.0, 2022-02-25 11:01:21
+ * @since 1.0, 2022-09-20 19:27:44
  */
 public class AlipaySocialBaseBcClustermsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7718664737456217742L;
+	private static final long serialVersionUID = 3814982572891483339L;
 
 	/**
 	 * 是否at所有人

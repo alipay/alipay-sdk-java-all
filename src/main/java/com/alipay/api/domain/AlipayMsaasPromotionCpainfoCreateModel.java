@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 此api为了让第三方渠道端调用 ，记录他们的调用数据，然后根据数据比对进行计费功能
  *
  * @author auto create
- * @since 1.0, 2021-04-20 13:48:22
+ * @since 1.0, 2022-09-23 11:38:40
  */
 public class AlipayMsaasPromotionCpainfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5785771252831478978L;
+	private static final long serialVersionUID = 4436846683429359287L;
 
 	/**
 	 * 唯一应用

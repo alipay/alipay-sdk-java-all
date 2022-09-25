@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险理赔案件材料上传确认
  *
  * @author auto create
- * @since 1.0, 2022-03-28 17:18:19
+ * @since 1.0, 2022-09-23 16:28:33
  */
 public class AlipayInsSceneClaimAttachmentConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4763946192732418288L;
+	private static final long serialVersionUID = 6377929273427873722L;
 
 	/**
 	 * 理赔申请报案号，通过理赔申请【alipay.ins.scene.claim.apply】接口的返回字段claim_report_no获取

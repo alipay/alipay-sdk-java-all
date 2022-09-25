@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户积分兑换
  *
  * @author auto create
- * @since 1.0, 2021-08-02 14:53:59
+ * @since 1.0, 2022-09-23 15:44:43
  */
 public class AlipayCommerceOperationUserPointExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8765738221754692251L;
+	private static final long serialVersionUID = 5392169664755231359L;
 
 	/**
 	 * 积分核销ID，验证point与benefitId的一致性，才能使用对应的积分

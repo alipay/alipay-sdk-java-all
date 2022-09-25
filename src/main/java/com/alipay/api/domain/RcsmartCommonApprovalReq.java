@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RcsmartCommonApprovalReq extends AlipayObject {
 
-	private static final long serialVersionUID = 8162664598391812382L;
+	private static final long serialVersionUID = 4111927833929567827L;
 
 	/**
 	 * 业务ID，一个业务bizId代表当前业务，可以包含多个场景，与scene_code之间为一对多的关系。 @结月分配

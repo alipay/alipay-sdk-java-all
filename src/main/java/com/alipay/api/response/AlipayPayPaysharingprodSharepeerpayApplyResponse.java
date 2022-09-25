@@ -8,17 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.paysharingprod.sharepeerpay.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-01 16:46:44
+ * @since 1.0, 2022-09-22 15:16:47
  */
 public class AlipayPayPaysharingprodSharepeerpayApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8128381762835388795L;
+	private static final long serialVersionUID = 1168734569781458245L;
 
 	/** 
 	 * 支付宝好友分享代付链接
 	 */
-	@ApiField("firend_share_page_url")
-	private String firendSharePageUrl;
+	@ApiField("friend_share_page_url")
+	private String friendSharePageUrl;
 
 	/** 
 	 * 代付单号
@@ -44,11 +44,11 @@ public class AlipayPayPaysharingprodSharepeerpayApplyResponse extends AlipayResp
 	@ApiField("ztoken")
 	private String ztoken;
 
-	public void setFirendSharePageUrl(String firendSharePageUrl) {
-		this.firendSharePageUrl = firendSharePageUrl;
+	public void setFriendSharePageUrl(String friendSharePageUrl) {
+		this.friendSharePageUrl = friendSharePageUrl;
 	}
-	public String getFirendSharePageUrl( ) {
-		return this.firendSharePageUrl;
+	public String getFriendSharePageUrl( ) {
+		return this.friendSharePageUrl;
 	}
 
 	public void setPeerpayOrderNo(String peerpayOrderNo) {

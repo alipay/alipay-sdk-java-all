@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员新人权限咨询接口
  *
  * @author auto create
- * @since 1.0, 2020-09-18 10:45:15
+ * @since 1.0, 2022-09-21 18:09:30
  */
 public class AlipayUserAccountNewbieBenefitConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4642932917654315219L;
+	private static final long serialVersionUID = 5615576935426251278L;
 
 	/**
 	 * 扩展信息，json格式字符串。

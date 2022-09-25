@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易流水精简信息查询
  *
  * @author auto create
- * @since 1.0, 2019-08-13 16:47:26
+ * @since 1.0, 2022-09-23 14:36:58
  */
 public class AlipayUserBillSimpleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8448925254219858884L;
+	private static final long serialVersionUID = 8517281476298118881L;
 
 	/**
 	 * 28位或32位支付宝交易流水号

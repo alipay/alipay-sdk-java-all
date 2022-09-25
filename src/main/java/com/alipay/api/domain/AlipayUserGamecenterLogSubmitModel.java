@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 玩一玩游戏中心平台三方游戏厂商错误日志提交接口
  *
  * @author auto create
- * @since 1.0, 2022-08-25 20:27:09
+ * @since 1.0, 2022-09-22 19:13:37
  */
 public class AlipayUserGamecenterLogSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7844648252728529671L;
+	private static final long serialVersionUID = 5121531486825464846L;
 
 	/**
 	 * 支付宝用户ID

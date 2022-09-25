@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotbpaasLavidabilldetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2762854678511483784L;
+	private static final long serialVersionUID = 4164541474738265373L;
 
 	/** 
 	 * 交易号

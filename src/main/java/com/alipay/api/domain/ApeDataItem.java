@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数据item
  *
  * @author auto create
- * @since 1.0, 2022-08-08 20:25:15
+ * @since 1.0, 2022-09-20 15:33:49
  */
 public class ApeDataItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5476652438521293361L;
+	private static final long serialVersionUID = 2776925966133975267L;
 
 	/**
 	 * 商品可用的城市列表
@@ -30,7 +30,7 @@ public class ApeDataItem extends AlipayObject {
 	private String brand;
 
 	/**
-	 * 商品购买链接
+	 * 支付宝小程序的商品详情页面
 	 */
 	@ApiField("buy_url")
 	private String buyUrl;
@@ -120,6 +120,12 @@ public class ApeDataItem extends AlipayObject {
 	 */
 	@ApiField("rating")
 	private String rating;
+
+	/**
+	 * 数据类型
+	 */
+	@ApiField("row_type")
+	private String rowType;
 
 	/**
 	 * 商品累积销量
@@ -298,6 +304,13 @@ public class ApeDataItem extends AlipayObject {
 	}
 	public void setRating(String rating) {
 		this.rating = rating;
+	}
+
+	public String getRowType() {
+		return this.rowType;
+	}
+	public void setRowType(String rowType) {
+		this.rowType = rowType;
 	}
 
 	public Long getSaleNumber() {

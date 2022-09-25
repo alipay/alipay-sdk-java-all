@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CPCommunitySet extends AlipayObject {
 
-	private static final long serialVersionUID = 6427421644657381277L;
+	private static final long serialVersionUID = 1545635779644661295L;
 
 	/**
 	 * 支付宝社区小区统一编号。

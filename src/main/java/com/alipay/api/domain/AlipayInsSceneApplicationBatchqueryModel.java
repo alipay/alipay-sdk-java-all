@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保单列表查询
  *
  * @author auto create
- * @since 1.0, 2022-03-28 17:17:46
+ * @since 1.0, 2022-09-23 16:30:41
  */
 public class AlipayInsSceneApplicationBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5451731122259839745L;
+	private static final long serialVersionUID = 4251411558621749947L;
 
 	/**
 	 * 投保人

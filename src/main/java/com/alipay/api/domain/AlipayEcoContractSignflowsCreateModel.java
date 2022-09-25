@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建电子合同签署流程(E签宝)
  *
  * @author auto create
- * @since 1.0, 2020-08-21 15:25:42
+ * @since 1.0, 2022-09-21 18:33:53
  */
 public class AlipayEcoContractSignflowsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6833848481412851749L;
+	private static final long serialVersionUID = 3194937662819277596L;
 
 	/**
 	 * 附件信息（附件可作为合同的辅助证明材料，无需签署。需通过文件直传接口上传附件，获取文件id后添加）。注意事项参见 <a href="https://opendocs.alipay.com/mini/00kr2w">文件流上传方法</a>。

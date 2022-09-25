@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险产品询价申请
  *
  * @author auto create
- * @since 1.0, 2019-08-26 16:45:52
+ * @since 1.0, 2022-09-23 16:03:24
  */
 public class AlipayInsSceneProductInquiryApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1215143542427978493L;
+	private static final long serialVersionUID = 4428916188142658239L;
 
 	/**
 	 * 保险产品的投保人,当产品价格和投保人有关时候需传值

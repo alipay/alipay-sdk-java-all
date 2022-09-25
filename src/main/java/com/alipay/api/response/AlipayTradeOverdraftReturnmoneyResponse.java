@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.overdraft.returnmoney response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-13 21:46:08
+ * @since 1.0, 2022-09-23 10:46:51
  */
 public class AlipayTradeOverdraftReturnmoneyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1585683961559865417L;
+	private static final long serialVersionUID = 8642131177815235815L;
 
 	/** 
 	 * 汇率（仅跨境追款执行成功后返回）
@@ -21,7 +21,7 @@ public class AlipayTradeOverdraftReturnmoneyResponse extends AlipayResponse {
 	private String exchangeRate;
 
 	/** 
-	 * 退款时上送的外部退款请求号
+	 * 追款请求号
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -31,6 +31,12 @@ public class AlipayTradeOverdraftReturnmoneyResponse extends AlipayResponse {
 	 */
 	@ApiField("receive_account")
 	private String receiveAccount;
+
+	/** 
+	 * 退款时上传的外部请求号
+	 */
+	@ApiField("refund_out_request_no")
+	private String refundOutRequestNo;
 
 	/** 
 	 * 追款人民币金额（仅追款执行成功后返回）
@@ -84,6 +90,13 @@ PROCESSING：追款中
 	}
 	public String getReceiveAccount( ) {
 		return this.receiveAccount;
+	}
+
+	public void setRefundOutRequestNo(String refundOutRequestNo) {
+		this.refundOutRequestNo = refundOutRequestNo;
+	}
+	public String getRefundOutRequestNo( ) {
+		return this.refundOutRequestNo;
 	}
 
 	public void setReturnAmount(String returnAmount) {

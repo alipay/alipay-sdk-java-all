@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFundJointaccountFundApplyWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5283788729216676491L;
+	private static final long serialVersionUID = 8782554519331671472L;
 
 	/**
 	 * 合花群ID<br>

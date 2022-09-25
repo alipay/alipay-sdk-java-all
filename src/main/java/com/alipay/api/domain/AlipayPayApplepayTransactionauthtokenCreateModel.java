@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 注册拉取支付结果的权限authToken
  *
  * @author auto create
- * @since 1.0, 2020-04-03 14:19:59
+ * @since 1.0, 2022-09-23 14:02:28
  */
 public class AlipayPayApplepayTransactionauthtokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7589814117363622757L;
+	private static final long serialVersionUID = 8571515791419266533L;
 
 	/**
 	 * 设备id

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 惠支付对集团的权益同步接口
  *
  * @author auto create
- * @since 1.0, 2017-12-26 14:06:29
+ * @since 1.0, 2022-09-22 19:42:14
  */
 public class AlipayMarketingDataEquitySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5188266987524376676L;
+	private static final long serialVersionUID = 2666471919877351928L;
 
 	/**
 	 * biz_time

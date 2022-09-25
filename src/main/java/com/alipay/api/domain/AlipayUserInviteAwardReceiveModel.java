@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝用户拉新奖品抽奖接口
  *
  * @author auto create
- * @since 1.0, 2017-12-07 20:42:10
+ * @since 1.0, 2022-09-21 18:11:35
  */
 public class AlipayUserInviteAwardReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7387113599822737747L;
+	private static final long serialVersionUID = 3888375624232168396L;
 
 	/**
 	 * 用户扫码抽奖输入的手机号，手机号和用户ID必须有一个非空，如果两者都有，则优先取user_id的值作为后续发奖的用户账号

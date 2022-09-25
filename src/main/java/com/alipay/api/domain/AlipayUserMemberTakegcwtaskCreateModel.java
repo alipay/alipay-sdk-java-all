@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 领取广场舞大赛任务
  *
  * @author auto create
- * @since 1.0, 2019-10-18 17:30:26
+ * @since 1.0, 2022-09-22 20:09:00
  */
 public class AlipayUserMemberTakegcwtaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3696756218572852521L;
+	private static final long serialVersionUID = 6525661878912281711L;
 
 	/**
 	 * 蚂蚁统一会员ID，16位2088开头。

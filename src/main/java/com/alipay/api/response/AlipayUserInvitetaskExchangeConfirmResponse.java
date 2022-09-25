@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.invitetask.exchange.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-09-21 18:10:44
  */
 public class AlipayUserInvitetaskExchangeConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5699131941778948117L;
+	private static final long serialVersionUID = 8397339561129227634L;
 
 	/** 
 	 * true-确认成功，可以进行下一步的代扣、发货

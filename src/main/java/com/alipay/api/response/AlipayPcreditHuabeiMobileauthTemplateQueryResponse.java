@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiMobileauthTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6367621528992212927L;
+	private static final long serialVersionUID = 3522671184875244159L;
 
 	/** 
 	 * 模板查询返回JSON信息，参考

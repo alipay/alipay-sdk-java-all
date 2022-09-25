@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.relation.combined.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-22 00:08:51
+ * @since 1.0, 2022-09-22 10:37:31
  */
 public class AlipaySocialBaseRelationCombinedQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7671961159584467727L;
+	private static final long serialVersionUID = 3162627271163359294L;
 
 	/** 
 	 * 复合关系数据

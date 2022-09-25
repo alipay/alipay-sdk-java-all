@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 财务域多币种金额
  *
  * @author auto create
- * @since 1.0, 2022-03-02 15:10:51
+ * @since 1.0, 2022-09-21 15:44:36
  */
 public class MultiCurrencyMoneyOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 4165758955262495445L;
+	private static final long serialVersionUID = 3614834777862992519L;
 
 	/**
 	 * 分

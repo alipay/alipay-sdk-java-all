@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditSupplychainPrepaymentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8112617896965246561L;
+	private static final long serialVersionUID = 3151678213914782526L;
 
 	/** 
 	 * 受理事件单编号

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益宝扣减结果通知开放接口
  *
  * @author auto create
- * @since 1.0, 2022-07-04 20:51:17
+ * @since 1.0, 2022-09-22 19:13:48
  */
 public class AlipayUserQuanyibaoPointdeductSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5161741988919783231L;
+	private static final long serialVersionUID = 8467189318366421946L;
 
 	/**
 	 * 权益宝业务号，对一笔兑换业务的唯一标识，可以用来做幂等

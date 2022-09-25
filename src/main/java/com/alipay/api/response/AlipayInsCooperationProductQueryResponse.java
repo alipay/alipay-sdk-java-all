@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.cooperation.product.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-28 17:18:31
+ * @since 1.0, 2022-09-23 16:27:54
  */
 public class AlipayInsCooperationProductQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5212874333543341184L;
+	private static final long serialVersionUID = 6644591222637162759L;
 
 	/** 
 	 * 保险产品

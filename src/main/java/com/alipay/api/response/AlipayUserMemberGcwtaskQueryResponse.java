@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.member.gcwtask.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 17:30:26
+ * @since 1.0, 2022-09-22 20:09:17
  */
 public class AlipayUserMemberGcwtaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6325414692998923549L;
+	private static final long serialVersionUID = 7156767849221695837L;
 
 	/** 
 	 * 结果码，如果失败会返回失败的结果码

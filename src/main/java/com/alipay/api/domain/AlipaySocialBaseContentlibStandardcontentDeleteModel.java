@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容删除
  *
  * @author auto create
- * @since 1.0, 2021-11-12 15:44:24
+ * @since 1.0, 2022-09-22 21:43:38
  */
 public class AlipaySocialBaseContentlibStandardcontentDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2513884417136116111L;
+	private static final long serialVersionUID = 2322976945562464112L;
 
 	/**
 	 * 内容ID

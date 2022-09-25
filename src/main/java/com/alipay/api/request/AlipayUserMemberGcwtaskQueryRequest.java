@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.member.gcwtask.query request
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 17:30:26
+ * @since 1.0, 2022-09-22 20:09:17
  */
 public class AlipayUserMemberGcwtaskQueryRequest implements AlipayRequest<AlipayUserMemberGcwtaskQueryResponse> {
 

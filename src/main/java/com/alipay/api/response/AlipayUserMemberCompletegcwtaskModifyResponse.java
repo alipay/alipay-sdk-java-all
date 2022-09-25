@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.member.completegcwtask.modify response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 17:30:40
+ * @since 1.0, 2022-09-22 20:08:47
  */
 public class AlipayUserMemberCompletegcwtaskModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2562391278828557568L;
+	private static final long serialVersionUID = 5859311958546427569L;
 
 	/** 
 	 * 结果码

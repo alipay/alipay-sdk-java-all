@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集点活动配置接口
  *
  * @author auto create
- * @since 1.0, 2021-01-07 16:33:57
+ * @since 1.0, 2022-09-23 14:27:01
  */
 public class AlipayCommerceDataCampaignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2659761887593196939L;
+	private static final long serialVersionUID = 7716673722457314988L;
 
 	/**
 	 * 集点活动任务完成时用户得到的集点奖品名称，用于在服务提醒消息中进行展示

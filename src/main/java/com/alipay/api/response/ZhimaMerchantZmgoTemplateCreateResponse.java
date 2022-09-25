@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.zmgo.template.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-13 11:32:01
+ * @since 1.0, 2022-09-20 17:42:01
  */
 public class ZhimaMerchantZmgoTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5833144798397543595L;
+	private static final long serialVersionUID = 8757271758361113858L;
 
 	/** 
 	 * 芝麻GO模板号

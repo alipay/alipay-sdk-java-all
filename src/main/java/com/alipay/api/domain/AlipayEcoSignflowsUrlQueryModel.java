@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取签署地址
  *
  * @author auto create
- * @since 1.0, 2020-05-06 11:46:41
+ * @since 1.0, 2022-09-21 16:30:16
  */
 public class AlipayEcoSignflowsUrlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2276711264388975295L;
+	private static final long serialVersionUID = 7889737397673922213L;
 
 	/**
 	 * 流程id，通过 <a href ="https://opendocs.alipay.com/apis/api_50/alipay.eco.contract.signflows.create">创建电子合同签署流程</a>(alipay.eco.contract.signflows.create)接口获取。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.auto.carowner.userdata.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:06:06
+ * @since 1.0, 2022-09-23 10:42:25
  */
 public class AlipayInsAutoCarownerUserdataSyncRequest implements AlipayRequest<AlipayInsAutoCarownerUserdataSyncResponse> {
 

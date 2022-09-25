@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付有礼商业化任务完结接口
  *
  * @author auto create
- * @since 1.0, 2021-12-17 15:14:45
+ * @since 1.0, 2022-09-22 20:20:53
  */
 public class AlipayCommerceEducateCampusBiztaskFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4875355438399462226L;
+	private static final long serialVersionUID = 5642152125691978691L;
 
 	/**
 	 * 任务渠道来源

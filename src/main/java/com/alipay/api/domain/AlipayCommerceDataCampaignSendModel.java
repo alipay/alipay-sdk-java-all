@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集点数据回流接口
  *
  * @author auto create
- * @since 1.0, 2021-01-07 16:34:41
+ * @since 1.0, 2022-09-23 11:28:39
  */
 public class AlipayCommerceDataCampaignSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4226544664728844339L;
+	private static final long serialVersionUID = 6167456882856266949L;
 
 	/**
 	 * 本次交易获得集点方式。目前支持扫码点餐：scanOrder、蜻蜓刷脸支付：facePay、当面付：faceToFace、储值卡支付：valueCard、在线支付：online。如有其它渠道需要和支付宝约定

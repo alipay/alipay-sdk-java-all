@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.aggrepay.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-17 14:41:46
+ * @since 1.0, 2022-09-23 16:56:56
  */
 public class AlipayPayAggrepayOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7188217751968639978L;
+	private static final long serialVersionUID = 3247869879229184971L;
 
 	/** 
 	 * 微信支付参数相关信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多媒体OCR行驶证识别
  *
  * @author auto create
- * @since 1.0, 2017-12-13 10:47:42
+ * @since 1.0, 2022-09-21 11:23:09
  */
 public class AlipayMsaasMediarecogAftsCertIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8659466145666146434L;
+	private static final long serialVersionUID = 3344346754423268992L;
 
 	/**
 	 * 扩展入参

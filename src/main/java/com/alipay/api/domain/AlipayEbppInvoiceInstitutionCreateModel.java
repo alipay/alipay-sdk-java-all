@@ -11,32 +11,32 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 制度新增
  *
  * @author auto create
- * @since 1.0, 2022-09-14 19:13:42
+ * @since 1.0, 2022-09-23 15:37:13
  */
 public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4681638357843118834L;
+	private static final long serialVersionUID = 4723269388637132737L;
 
 	/**
-	 * 企业共同账户id（条件必填）
+	 * 企业共同账户id，和授权签约协议号共同使用。
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号（条件必填）
+	 * 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
-	 * 制度生效结束时间，最小粒度为天，最早是当日
+	 * 制度生效结束时间，最小粒度为天，结束时间不早于起始时间，时分秒必须为23:59:59，最晚不超过2222-01-01 23:59:59
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/**
-	 * 制度生效起始时间，最小粒度为天，最早是当日
+	 * 制度生效起始时间，最小粒度为天，最早是当日，时分秒必须为00:00:00。
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
@@ -66,7 +66,7 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	private String institutionName;
 
 	/**
-	 * 发放规则列表（可空）
+	 * 发放规则列表（可空），一个制度下最多创建10条发放规则。
 	 */
 	@ApiListField("issue_rule_info_list")
 	@ApiField("issue_rule_info")
@@ -79,7 +79,7 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	private String sceneType;
 
 	/**
-	 * 使用规则列表
+	 * 使用规则列表，一个制度下最多创建10条使用规则。
 	 */
 	@ApiListField("standard_info_list")
 	@ApiField("standard_info")

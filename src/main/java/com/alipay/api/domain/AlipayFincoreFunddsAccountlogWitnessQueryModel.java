@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户流水查询
  *
  * @author auto create
- * @since 1.0, 2022-08-30 15:13:29
+ * @since 1.0, 2022-09-20 17:02:13
  */
 public class AlipayFincoreFunddsAccountlogWitnessQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6324591217134672551L;
+	private static final long serialVersionUID = 3511573364366142218L;
 
 	/**
 	 * 子户account_no,查询监管户流水不需要填写
@@ -26,6 +26,12 @@ ENTRUST_SUB_ACC-托管子户
 	 */
 	@ApiField("account_type")
 	private String accountType;
+
+	/**
+	 * 此字段专门用于：存管户在支付宝收单类型入金场景下，按照支付宝交易单号查询该入金账务流水。
+	 */
+	@ApiField("biz_no")
+	private String bizNo;
 
 	/**
 	 * 结束时间，yyyy-mm-dd hh:mm:ss形式
@@ -76,6 +82,13 @@ ENTRUST_SUB_ACC-托管子户
 	}
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
+	}
+
+	public String getBizNo() {
+		return this.bizNo;
+	}
+	public void setBizNo(String bizNo) {
+		this.bizNo = bizNo;
 	}
 
 	public String getEndTime() {

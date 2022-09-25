@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAssetPointPointprodBudgetlibAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1394795641152638729L;
+	private static final long serialVersionUID = 3285783136659561856L;
 
 	/** 
 	 * 当order_no发生幂等时返回的错误信息

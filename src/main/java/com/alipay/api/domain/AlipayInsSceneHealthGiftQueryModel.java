@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康险赠险权益查询接口
  *
  * @author auto create
- * @since 1.0, 2018-12-07 14:09:16
+ * @since 1.0, 2022-09-21 10:55:43
  */
 public class AlipayInsSceneHealthGiftQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2577566184887771348L;
+	private static final long serialVersionUID = 2619666983797191825L;
 
 	/**
 	 * 查询某范围内某渠道领取的保额的止期，注意，只对sourceGainedSumInsured字段生效

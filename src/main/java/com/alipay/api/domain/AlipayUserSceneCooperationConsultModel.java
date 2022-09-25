@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝用户场景合作咨询
  *
  * @author auto create
- * @since 1.0, 2021-03-29 11:04:18
+ * @since 1.0, 2022-09-21 18:07:54
  */
 public class AlipayUserSceneCooperationConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1895478591117879212L;
+	private static final long serialVersionUID = 8854332127521397741L;
 
 	/**
 	 * 人传人场景码。如果商户需要接入人传人活动建立邀请关系，则需要设置此参数表示人传人场景。当前所有接入人传人的商户统一使用 CommerceService

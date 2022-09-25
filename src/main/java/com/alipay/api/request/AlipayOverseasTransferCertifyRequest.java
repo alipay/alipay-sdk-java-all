@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.transfer.certify request
  * 
  * @author auto create
- * @since 1.0, 2021-07-15 16:32:37
+ * @since 1.0, 2022-09-21 18:26:05
  */
 public class AlipayOverseasTransferCertifyRequest implements AlipayRequest<AlipayOverseasTransferCertifyResponse> {
 

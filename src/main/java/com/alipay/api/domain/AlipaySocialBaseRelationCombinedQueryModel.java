@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支付宝好友、可能认识的人，并根据具体的业务数据过滤。
  *
  * @author auto create
- * @since 1.0, 2020-10-30 14:48:57
+ * @since 1.0, 2022-09-22 10:37:31
  */
 public class AlipaySocialBaseRelationCombinedQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2136983717858439995L;
+	private static final long serialVersionUID = 7444373298752623875L;
 
 	/**
 	 * 最大需要返回的列表值

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.member.completegcwtask.modify request
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 17:30:40
+ * @since 1.0, 2022-09-22 20:08:47
  */
 public class AlipayUserMemberCompletegcwtaskModifyRequest implements AlipayRequest<AlipayUserMemberCompletegcwtaskModifyResponse> {
 

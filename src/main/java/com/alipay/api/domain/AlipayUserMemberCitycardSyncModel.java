@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区域运营城市会员卡同步
  *
  * @author auto create
- * @since 1.0, 2022-04-01 10:19:01
+ * @since 1.0, 2022-09-22 20:09:30
  */
 public class AlipayUserMemberCitycardSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7868128427882895865L;
+	private static final long serialVersionUID = 4231174937214688696L;
 
 	/**
 	 * 支付宝用户id

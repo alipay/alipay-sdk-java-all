@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 垫资追款结算
  *
  * @author auto create
- * @since 1.0, 2022-08-13 21:46:08
+ * @since 1.0, 2022-09-23 10:41:49
  */
 public class AlipayTradeOverdraftReturnmoneyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5482647893242951275L;
+	private static final long serialVersionUID = 1499731784149579624L;
 
 	/**
-	 * 退款时上送的外部退款请求号
+	 * 追款请求号
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -24,6 +24,12 @@ public class AlipayTradeOverdraftReturnmoneyModel extends AlipayObject {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 退款时上传的外部请求号。仅特定商户可选
+	 */
+	@ApiField("refund_out_request_no")
+	private String refundOutRequestNo;
 
 	/**
 	 * 支付宝交易号。 和商户订单号 out_trade_no 不能同时为空。
@@ -43,6 +49,13 @@ public class AlipayTradeOverdraftReturnmoneyModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getRefundOutRequestNo() {
+		return this.refundOutRequestNo;
+	}
+	public void setRefundOutRequestNo(String refundOutRequestNo) {
+		this.refundOutRequestNo = refundOutRequestNo;
 	}
 
 	public String getTradeNo() {

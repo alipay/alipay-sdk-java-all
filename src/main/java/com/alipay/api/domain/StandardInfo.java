@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 使用规则列表
+ * 使用规则
  *
  * @author auto create
- * @since 1.0, 2022-08-29 20:53:27
+ * @since 1.0, 2022-09-22 19:33:47
  */
 public class StandardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5165665493831926333L;
+	private static final long serialVersionUID = 5496832286489861695L;
 
 	/**
 	 * 消费模式，不填为默认模式，枚举值：COUPON_ONLY（仅支持点券）
@@ -28,7 +28,13 @@ DEFAULT（默认模式）
 	private String consumeMode;
 
 	/**
-	 * 开票规则id
+	 * 费用类型子类，当制度的费用类型为MEAL时，支持到店、外卖；当费用类型为非MEAL时，与费用类型保持一致
+	 */
+	@ApiField("expense_type_sub_category")
+	private String expenseTypeSubCategory;
+
+	/**
+	 * 开票规则id，可通过接口alipay.ebpp.invoice.enterpriseconsume.enterpriseopenrule.create 创建并得到开票规则ID
 	 */
 	@ApiField("open_rule_id")
 	private String openRuleId;
@@ -53,6 +59,18 @@ DEFAULT（默认模式）
 	private List<StandardConditionInfo> standardConditionInfoList;
 
 	/**
+	 * 使用规则描述(敏感词校验)
+	 */
+	@ApiField("standard_desc")
+	private String standardDesc;
+
+	/**
+	 * 制度ID（创建使用规则时非必填）
+	 */
+	@ApiField("standard_id")
+	private String standardId;
+
+	/**
 	 * 规则名称
 	 */
 	@ApiField("standard_name")
@@ -63,6 +81,13 @@ DEFAULT（默认模式）
 	}
 	public void setConsumeMode(String consumeMode) {
 		this.consumeMode = consumeMode;
+	}
+
+	public String getExpenseTypeSubCategory() {
+		return this.expenseTypeSubCategory;
+	}
+	public void setExpenseTypeSubCategory(String expenseTypeSubCategory) {
+		this.expenseTypeSubCategory = expenseTypeSubCategory;
 	}
 
 	public String getOpenRuleId() {
@@ -91,6 +116,20 @@ DEFAULT（默认模式）
 	}
 	public void setStandardConditionInfoList(List<StandardConditionInfo> standardConditionInfoList) {
 		this.standardConditionInfoList = standardConditionInfoList;
+	}
+
+	public String getStandardDesc() {
+		return this.standardDesc;
+	}
+	public void setStandardDesc(String standardDesc) {
+		this.standardDesc = standardDesc;
+	}
+
+	public String getStandardId() {
+		return this.standardId;
+	}
+	public void setStandardId(String standardId) {
+		this.standardId = standardId;
 	}
 
 	public String getStandardName() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务同步
  *
  * @author auto create
- * @since 1.0, 2019-12-04 19:59:24
+ * @since 1.0, 2022-09-21 16:36:55
  */
 public class AlipayOpenAppServiceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3524653583451426665L;
+	private static final long serialVersionUID = 3843862346323285727L;
 
 	/**
 	 * 服务地址

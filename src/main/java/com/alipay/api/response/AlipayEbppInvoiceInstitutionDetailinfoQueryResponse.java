@@ -13,26 +13,26 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.detailinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-14 19:07:49
+ * @since 1.0, 2022-09-23 20:01:49
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4187986144723247511L;
+	private static final long serialVersionUID = 8544946134378238428L;
 
 	/** 
-	 * 制度生效结束时间，最小粒度为天，最早是当日，结束时间以23:59:59结尾，结束时间最大值不超过2100-01-01 00:00:00
+	 * 制度生效结束时间，最小粒度为天，结束时间不早于起始时间，时分秒必须为23:59:59，最晚不超过2222-01-01 23:59:59
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/** 
-	 * 制度生效起始时间，最小粒度为天，最早是当日，起始时间以00:00:00结束
+	 * 制度生效起始时间，最小粒度为天，最早是当日，时分秒必须为00:00:00。
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
 
 	/** 
-	 * 费用类型 枚举值：MEAL（餐饮），METRO（地铁），DEFAULT（通用
+	 * 费用类型 枚举值：MEAL（餐饮），DEFAULT（通用）
 	 */
 	@ApiField("expense_type")
 	private String expenseType;
@@ -63,7 +63,7 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	private List<IssueRuleInfo> issueRuleInfoList;
 
 	/** 
-	 * 因公场景 枚举值：OVERTIME（加班），SUBSIDY（补贴福利），TRAVEL（差旅），ENTERTAIN（招待），CITYTRAFFIC（市内交通），NIGHT（夜间）
+	 * 因公场景 ，枚举值：OVERTIME（加班），SUBSIDY（补贴福利），TRAVEL（差旅），ENTERTAIN（招待），DEFAULT（通用）
 	 */
 	@ApiField("scene_type")
 	private String sceneType;

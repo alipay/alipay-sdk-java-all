@@ -1,26 +1,29 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 创建费控使用规则
  *
  * @author auto create
- * @since 1.0, 2022-09-14 10:59:47
+ * @since 1.0, 2022-09-23 15:36:50
  */
 public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3822917117248448524L;
+	private static final long serialVersionUID = 2499891262818625769L;
 
 	/**
-	 * 企业共同账户id
+	 * 企业共同账户id，和授权签约协议号共同使用。
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -44,6 +47,12 @@ public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayOb
 	private ExpenseCtrRuleInfo expenseCtrlRuleInfoList;
 
 	/**
+	 * 费用类型子类，当制度的费用类型为MEAL时，支持到店、外卖；当费用类型为非MEAL时，与费用类型保持一致
+	 */
+	@ApiField("expense_type_sub_category")
+	private String expenseTypeSubCategory;
+
+	/**
 	 * 制度id
 	 */
 	@ApiField("institution_id")
@@ -60,6 +69,13 @@ public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayOb
 	 */
 	@ApiField("payment_policy")
 	private String paymentPolicy;
+
+	/**
+	 * 使用规则条件列表
+	 */
+	@ApiListField("standard_condition_info_list")
+	@ApiField("standard_condition_info")
+	private List<StandardConditionInfo> standardConditionInfoList;
 
 	/**
 	 * 使用规则描述(敏感词校验)
@@ -108,6 +124,13 @@ public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayOb
 		this.expenseCtrlRuleInfoList = expenseCtrlRuleInfoList;
 	}
 
+	public String getExpenseTypeSubCategory() {
+		return this.expenseTypeSubCategory;
+	}
+	public void setExpenseTypeSubCategory(String expenseTypeSubCategory) {
+		this.expenseTypeSubCategory = expenseTypeSubCategory;
+	}
+
 	public String getInstitutionId() {
 		return this.institutionId;
 	}
@@ -127,6 +150,13 @@ public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayOb
 	}
 	public void setPaymentPolicy(String paymentPolicy) {
 		this.paymentPolicy = paymentPolicy;
+	}
+
+	public List<StandardConditionInfo> getStandardConditionInfoList() {
+		return this.standardConditionInfoList;
+	}
+	public void setStandardConditionInfoList(List<StandardConditionInfo> standardConditionInfoList) {
+		this.standardConditionInfoList = standardConditionInfoList;
 	}
 
 	public String getStandardDesc() {

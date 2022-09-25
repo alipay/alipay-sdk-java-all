@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 赠险标准发放
  *
  * @author auto create
- * @since 1.0, 2022-03-25 17:46:26
+ * @since 1.0, 2022-09-20 10:57:57
  */
 public class AlipayInsMarketingGiftSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1285343759621427783L;
+	private static final long serialVersionUID = 8325564137688382767L;
 
 	/**
 	 * 渠道规则编码

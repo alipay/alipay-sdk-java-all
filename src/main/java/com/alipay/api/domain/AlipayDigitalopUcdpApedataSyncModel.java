@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-08-08 20:25:15
+ * @since 1.0, 2022-09-20 15:33:49
  */
 public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2581946999469496229L;
+	private static final long serialVersionUID = 2212112992547467847L;
 
 	/**
 	 * 内容数据的列表
@@ -24,7 +24,7 @@ public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 	private List<ApeContentItem> contentList;
 
 	/**
-	 * 同步数据的列表
+	 * 商品数据的列表
 	 */
 	@ApiListField("data_list")
 	@ApiField("ape_data_item")
@@ -41,6 +41,13 @@ public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 	 */
 	@ApiField("project_id")
 	private String projectId;
+
+	/**
+	 * 本地零售商品
+	 */
+	@ApiListField("retail_item_list")
+	@ApiField("ape_retail_item")
+	private List<ApeRetailItem> retailItemList;
 
 	public List<ApeContentItem> getContentList() {
 		return this.contentList;
@@ -68,6 +75,13 @@ public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 	}
 	public void setProjectId(String projectId) {
 		this.projectId = projectId;
+	}
+
+	public List<ApeRetailItem> getRetailItemList() {
+		return this.retailItemList;
+	}
+	public void setRetailItemList(List<ApeRetailItem> retailItemList) {
+		this.retailItemList = retailItemList;
 	}
 
 }
