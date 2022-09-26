@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 饿了么订单状态推送接口
  *
  * @author auto create
- * @since 1.0, 2019-10-09 15:48:01
+ * @since 1.0, 2022-09-26 16:06:44
  */
 public class KoubeiCateringEleOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8161768568549195137L;
+	private static final long serialVersionUID = 5834744195542516861L;
 
 	/**
 	 * 饿了么数据回流action类型.包含ORDER_STATUS，ORDER_DELIVERY,ORDER_REFUND

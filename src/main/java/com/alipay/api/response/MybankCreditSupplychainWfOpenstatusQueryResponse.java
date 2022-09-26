@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditSupplychainWfOpenstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1695645578127187941L;
+	private static final long serialVersionUID = 2159177289872149219L;
 
 	/** 
 	 * 开通状态

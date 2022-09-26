@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossFncGfsettleprodInvoiceBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8673159658294979352L;
+	private static final long serialVersionUID = 1327661357615321126L;
 
 	/**
 	 * OU

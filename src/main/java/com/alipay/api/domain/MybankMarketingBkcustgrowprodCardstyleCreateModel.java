@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商卡皮肤创建
  *
  * @author auto create
- * @since 1.0, 2021-12-27 11:49:18
+ * @since 1.0, 2022-09-26 18:14:56
  */
 public class MybankMarketingBkcustgrowprodCardstyleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7654758351187228656L;
+	private static final long serialVersionUID = 6283869719581688379L;
 
 	/**
 	 * alipay_user_id, 不唯一，用于卡皮肤创建，无枚举值，支付宝uid

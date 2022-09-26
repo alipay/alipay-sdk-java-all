@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 视觉货柜产品化设备注册
  *
  * @author auto create
- * @since 1.0, 2022-03-31 15:00:47
+ * @since 1.0, 2022-09-26 11:18:16
  */
 public class AlipayMsaasMediarecogMmtcaftscvDeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1329247343699745368L;
+	private static final long serialVersionUID = 8391326154192722294L;
 
 	/**
 	 * IOT统一设备id

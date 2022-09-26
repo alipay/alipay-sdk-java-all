@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营任务模糊查询
  *
  * @author auto create
- * @since 1.0, 2022-04-27 16:49:01
+ * @since 1.0, 2022-09-26 10:19:48
  */
 public class DatadigitalFincloudFinsaasOperationtaskBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2366847962111317314L;
+	private static final long serialVersionUID = 4582595857959185992L;
 
 	/**
 	 * execution_time + 运营活动查询 + 前端
@@ -24,6 +24,12 @@ public class DatadigitalFincloudFinsaasOperationtaskBatchqueryModel extends Alip
 	 */
 	@ApiField("operation_task_name")
 	private String operationTaskName;
+
+	/**
+	 * operation_task_type + 运营任务查询
+	 */
+	@ApiField("operation_task_type")
+	private String operationTaskType;
 
 	/**
 	 * page_num + 运营任务查询 + 前端
@@ -73,6 +79,13 @@ public class DatadigitalFincloudFinsaasOperationtaskBatchqueryModel extends Alip
 	}
 	public void setOperationTaskName(String operationTaskName) {
 		this.operationTaskName = operationTaskName;
+	}
+
+	public String getOperationTaskType() {
+		return this.operationTaskType;
+	}
+	public void setOperationTaskType(String operationTaskType) {
+		this.operationTaskType = operationTaskType;
 	}
 
 	public Long getPageNum() {

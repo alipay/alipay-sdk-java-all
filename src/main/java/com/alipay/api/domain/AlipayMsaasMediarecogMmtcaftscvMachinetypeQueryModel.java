@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 视觉货柜机型查询
  *
  * @author auto create
- * @since 1.0, 2022-03-31 15:11:54
+ * @since 1.0, 2022-09-26 11:17:46
  */
 public class AlipayMsaasMediarecogMmtcaftscvMachinetypeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5856151542474851583L;
+	private static final long serialVersionUID = 5576942569685435548L;
 
 	/**
 	 * 类型(0:商品库机型, 1:摆放模板机型)

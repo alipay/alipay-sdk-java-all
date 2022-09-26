@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5724549737383887995L;
+	private static final long serialVersionUID = 5641565815722539244L;
 
 	/**
 	 * 圆形二维码颜色（十六进制颜色色值），仅圆形二维码支持颜色设置，方形二维码默认为黑色。
@@ -26,7 +26,7 @@ public class AlipayOpenAppQrcodeCreateModel extends AlipayObject {
 	private String describe;
 
 	/**
-	 * 小程序的启动参数，打开小程序的query ，在小程序 onLaunch的方法中获取
+	 * 小程序的启动参数，打开小程序的query ，在小程序 onLaunch的方法中获取。可查看 <a href= "https://opendocs.alipay.com/support/01rb2a">如何获取各种场景的启动参数</a>。
 	 */
 	@ApiField("query_param")
 	private String queryParam;

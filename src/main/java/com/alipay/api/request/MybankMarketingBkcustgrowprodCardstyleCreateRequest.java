@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.marketing.bkcustgrowprod.cardstyle.create request
  * 
  * @author auto create
- * @since 1.0, 2021-12-27 11:56:02
+ * @since 1.0, 2022-09-26 18:14:56
  */
 public class MybankMarketingBkcustgrowprodCardstyleCreateRequest implements AlipayRequest<MybankMarketingBkcustgrowprodCardstyleCreateResponse> {
 

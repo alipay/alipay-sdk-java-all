@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class UserCrowdConditions extends AlipayObject {
 
-	private static final long serialVersionUID = 6345335386897456328L;
+	private static final long serialVersionUID = 7449281932673599223L;
 
 	/**
 	 * 最爱这家店的人

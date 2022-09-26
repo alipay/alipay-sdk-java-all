@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QueryProvCityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2446133679617355738L;
+	private static final long serialVersionUID = 4469693533957551767L;
 
 	/**
 	 * 省市编号

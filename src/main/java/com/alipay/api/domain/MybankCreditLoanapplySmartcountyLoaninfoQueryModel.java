@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支付宝用户网商贷信息-智慧县域小程序专用
  *
  * @author auto create
- * @since 1.0, 2019-07-30 16:18:59
+ * @since 1.0, 2022-09-26 19:10:06
  */
 public class MybankCreditLoanapplySmartcountyLoaninfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2458741349658941857L;
+	private static final long serialVersionUID = 3694279519623377289L;
 
 	/**
 	 * 蚂蚁统一会员ID

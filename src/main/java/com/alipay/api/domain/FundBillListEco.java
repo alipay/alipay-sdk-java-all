@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundBillListEco extends AlipayObject {
 
-	private static final long serialVersionUID = 5242913665165981419L;
+	private static final long serialVersionUID = 5761854196174944165L;
 
 	/**
 	 * 该支付工具类型所使用的金额

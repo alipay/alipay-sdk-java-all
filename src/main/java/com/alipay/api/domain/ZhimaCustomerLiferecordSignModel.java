@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻生活记录签约授权
  *
  * @author auto create
- * @since 1.0, 2021-07-05 15:56:31
+ * @since 1.0, 2022-09-26 15:00:52
  */
 public class ZhimaCustomerLiferecordSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3285521469441748494L;
+	private static final long serialVersionUID = 4212957117315564367L;
 
 	/**
 	 * 是否授权
@@ -44,6 +44,12 @@ public class ZhimaCustomerLiferecordSignModel extends AlipayObject {
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -84,6 +90,13 @@ public class ZhimaCustomerLiferecordSignModel extends AlipayObject {
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

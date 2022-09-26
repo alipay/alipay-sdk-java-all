@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体afts平台视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2022-03-31 14:48:35
+ * @since 1.0, 2022-09-26 11:18:43
  */
 public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5252172313986165386L;
+	private static final long serialVersionUID = 2438917277456821625L;
 
 	/**
 	 * 商品信息,列表
