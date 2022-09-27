@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券展示摘要信息
  *
  * @author auto create
- * @since 1.0, 2022-08-24 14:39:53
+ * @since 1.0, 2022-09-27 13:22:21
  */
 public class CommonVoucherDisplayLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6796146758226857442L;
+	private static final long serialVersionUID = 5361356223697117964L;
 
 	/**
 	 * 商户品牌 logo 链接。

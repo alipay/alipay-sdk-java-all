@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotDeviceserviceCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4742679571172988812L;
+	private static final long serialVersionUID = 4871423682497771398L;
 
 	/**
 	 * 协议服务商定义的设备服务id+不唯一+用于指定要撤销的服务+协议服务商在创建该服务时指定的该服务的id+该字段不是必填字段，如果不指定，则会撤销该协议服务商的默认设备服务实例

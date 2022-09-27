@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditSupplychainWfBilldetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6131964658931248378L;
+	private static final long serialVersionUID = 6227872783654675375L;
 
 	/** 
 	 * 账单明细集合

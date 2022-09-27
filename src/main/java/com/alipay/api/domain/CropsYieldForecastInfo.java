@@ -1,0 +1,81 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 作物产量预估信息
+ *
+ * @author auto create
+ * @since 1.0, 2022-09-27 14:30:23
+ */
+public class CropsYieldForecastInfo extends AlipayObject {
+
+	private static final long serialVersionUID = 7199325498868122756L;
+
+	/**
+	 * 数据实际年份，YYYY
+	 */
+	@ApiField("actual_year")
+	private String actualYear;
+
+	/**
+	 * 附加信息
+	 */
+	@ApiField("addition_info")
+	private String additionInfo;
+
+	/**
+	 * 作物编码
+	 */
+	@ApiField("crop_code")
+	private String cropCode;
+
+	/**
+	 * 亩产量，单位KG/亩
+	 */
+	@ApiField("per_unit_yield")
+	private String perUnitYield;
+
+	/**
+	 * 总产量，单位KG
+	 */
+	@ApiField("total_yield")
+	private String totalYield;
+
+	public String getActualYear() {
+		return this.actualYear;
+	}
+	public void setActualYear(String actualYear) {
+		this.actualYear = actualYear;
+	}
+
+	public String getAdditionInfo() {
+		return this.additionInfo;
+	}
+	public void setAdditionInfo(String additionInfo) {
+		this.additionInfo = additionInfo;
+	}
+
+	public String getCropCode() {
+		return this.cropCode;
+	}
+	public void setCropCode(String cropCode) {
+		this.cropCode = cropCode;
+	}
+
+	public String getPerUnitYield() {
+		return this.perUnitYield;
+	}
+	public void setPerUnitYield(String perUnitYield) {
+		this.perUnitYield = perUnitYield;
+	}
+
+	public String getTotalYield() {
+		return this.totalYield;
+	}
+	public void setTotalYield(String totalYield) {
+		this.totalYield = totalYield;
+	}
+
+}

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZMGoOutDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4841527689915592173L;
+	private static final long serialVersionUID = 8568653445199921796L;
 
 	/**
 	 * 商户回传的优惠金额，如用户享受的红包金额，单位元

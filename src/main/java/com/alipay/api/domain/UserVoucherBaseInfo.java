@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户券实例基础信息
  *
  * @author auto create
- * @since 1.0, 2022-08-24 14:39:50
+ * @since 1.0, 2022-09-27 13:22:21
  */
 public class UserVoucherBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1789921868765568542L;
+	private static final long serialVersionUID = 7453355133676865391L;
 
 	/**
 	 * 若商家券操作过关联商户订单信息，则该字段返回商家券已关联的商户订单号。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCertDocVehicleLicense extends AlipayObject {
 
-	private static final long serialVersionUID = 6165286587331872396L;
+	private static final long serialVersionUID = 3241284999561289856L;
 
 	/**
 	 * base64编码后的主页照片

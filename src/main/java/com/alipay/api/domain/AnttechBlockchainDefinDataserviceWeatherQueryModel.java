@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数据资产查询接口
  *
  * @author auto create
- * @since 1.0, 2022-09-26 11:59:00
+ * @since 1.0, 2022-09-27 17:52:36
  */
 public class AnttechBlockchainDefinDataserviceWeatherQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1226889863473954413L;
+	private static final long serialVersionUID = 4662776149317658439L;
 
 	/**
 	 * 纬度

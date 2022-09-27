@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自定义优惠规则
  *
  * @author auto create
- * @since 1.0, 2022-08-29 16:11:37
+ * @since 1.0, 2022-09-27 13:22:21
  */
 public class CustomerDefineDeductRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6611216288585941619L;
+	private static final long serialVersionUID = 4865127213967243223L;
 
 	/**
 	 * 自定义优惠规则描述

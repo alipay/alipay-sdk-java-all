@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟商品订单扩展信心
  *
  * @author auto create
- * @since 1.0, 2022-03-16 10:13:45
+ * @since 1.0, 2022-09-27 19:15:21
  */
 public class VirtualItemOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6565878777654667647L;
+	private static final long serialVersionUID = 1869938865585246226L;
 
 	/**
 	 * 小程序appId

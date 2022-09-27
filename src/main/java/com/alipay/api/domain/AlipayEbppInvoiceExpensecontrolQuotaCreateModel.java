@@ -9,20 +9,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建额度
  *
  * @author auto create
- * @since 1.0, 2022-08-18 15:33:06
+ * @since 1.0, 2022-09-26 22:09:14
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7217773717361763936L;
+	private static final long serialVersionUID = 6546279324947867165L;
 
 	/**
-	 * 企业共同账户id
+	 * 企业共同账户id，和授权签约协议号共同使用。
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -81,7 +81,7 @@ owner_type为ENTERPRISE时填写企业ID。
 
 	/**
 	 * 额度值，以（分）为单位
-约束：不超过100000元
+约束：个人额度不超过100000元，企业额度不超过100000000元
 	 */
 	@ApiField("quota_value")
 	private String quotaValue;
