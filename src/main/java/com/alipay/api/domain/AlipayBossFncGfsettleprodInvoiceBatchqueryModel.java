@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票查询
  *
  * @author auto create
- * @since 1.0, 2022-09-16 15:44:03
+ * @since 1.0, 2022-09-28 10:50:20
  */
 public class AlipayBossFncGfsettleprodInvoiceBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8486134984627524696L;
+	private static final long serialVersionUID = 4899357313136458556L;
+
+	/**
+	 * 业务身份id
+	 */
+	@ApiListField("business_identify_ids")
+	@ApiField("string")
+	private List<String> businessIdentifyIds;
 
 	/**
 	 * OU
@@ -129,6 +136,13 @@ public class AlipayBossFncGfsettleprodInvoiceBatchqueryModel extends AlipayObjec
 	@ApiListField("seller_ip_role_ids")
 	@ApiField("string")
 	private List<String> sellerIpRoleIds;
+
+	public List<String> getBusinessIdentifyIds() {
+		return this.businessIdentifyIds;
+	}
+	public void setBusinessIdentifyIds(List<String> businessIdentifyIds) {
+		this.businessIdentifyIds = businessIdentifyIds;
+	}
 
 	public List<String> getBuyerInstIdList() {
 		return this.buyerInstIdList;

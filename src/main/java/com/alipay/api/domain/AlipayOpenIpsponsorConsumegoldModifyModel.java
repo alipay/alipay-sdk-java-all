@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIpsponsorConsumegoldModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4697384334764299598L;
+	private static final long serialVersionUID = 8311169662286388729L;
 
 	/**
 	 * 用于标识具体扣、增消费金的值

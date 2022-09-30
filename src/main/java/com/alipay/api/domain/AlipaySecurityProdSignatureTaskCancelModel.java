@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝可信电子签名任务撤销
  *
  * @author auto create
- * @since 1.0, 2017-12-20 15:25:04
+ * @since 1.0, 2022-09-28 18:14:10
  */
 public class AlipaySecurityProdSignatureTaskCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8146777143166514134L;
+	private static final long serialVersionUID = 5675974366265211368L;
 
 	/**
 	 * 业务流水号，与初始化接口保持一致

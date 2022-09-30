@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一结算付款条款失效
  *
  * @author auto create
- * @since 1.0, 2021-09-28 14:27:35
+ * @since 1.0, 2022-09-30 15:19:06
  */
 public class AlipayBossFncGfsettlePaycontractCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8285595968966244639L;
+	private static final long serialVersionUID = 7548169782829394682L;
 
 	/**
 	 * 付款条款基础信息

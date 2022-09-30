@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.signature.task.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-09-28 18:13:53
  */
 public class AlipaySecurityProdSignatureTaskQueryRequest implements AlipayRequest<AlipaySecurityProdSignatureTaskQueryResponse> {
 

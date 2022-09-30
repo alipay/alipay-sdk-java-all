@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.zhima.submerchant.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-09-13 10:56:49
+ * @since 1.0, 2022-09-28 14:01:49
  */
 public class AlipayCommerceZhimaSubmerchantSyncRequest implements AlipayRequest<AlipayCommerceZhimaSubmerchantSyncResponse> {
 

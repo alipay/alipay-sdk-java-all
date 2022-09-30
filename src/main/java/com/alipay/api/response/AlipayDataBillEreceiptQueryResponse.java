@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.ereceipt.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-27 20:08:29
+ * @since 1.0, 2022-09-30 15:38:01
  */
 public class AlipayDataBillEreceiptQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6392197816883965525L;
+	private static final long serialVersionUID = 4563828228766379859L;
 
 	/** 
-	 * 下载链接，status 为 SUCCESS 时返回。用户可以使用此http链接下载文件内容。有效时间为 20s。 
+	 * 下载链接，status 为 SUCCESS 时返回。用户可以使用此http链接下载文件内容。有效时间为 30s。 
 生成文件为PDF格式，下载即可获取电子回单 PDF 内容。
 	 */
 	@ApiField("download_url")

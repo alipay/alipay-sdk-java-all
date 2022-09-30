@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.signature.task.apply response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-09-28 18:13:34
  */
 public class AlipaySecurityProdSignatureTaskApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3269497448435868955L;
+	private static final long serialVersionUID = 1443632467839889836L;
 
 	/** 
 	 * 签约订单id，关联了若干个签约任务id。

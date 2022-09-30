@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.anttech.qqq.ccc.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-06 15:24:47
+ * @since 1.0, 2022-09-30 09:56:48
  */
 public class DatadigitalAnttechQqqCccQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6626818646627664532L;
+	private static final long serialVersionUID = 4763728633265995198L;
 
 	/** 
 	 * 证件号
@@ -20,11 +22,51 @@ public class DatadigitalAnttechQqqCccQueryResponse extends AlipayResponse {
 	@ApiField("cert_no")
 	private String certNo;
 
+	/** 
+	 * 市
+	 */
+	@ApiListField("city_code_open_id")
+	@ApiField("string")
+	private List<String> cityCodeOpenId;
+
+	/** 
+	 * dgf
+	 */
+	@ApiField("city_cppp_open_id")
+	private String cityCpppOpenId;
+
+	/** 
+	 * 省份
+	 */
+	@ApiField("province_code_open_id")
+	private String provinceCodeOpenId;
+
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 	public String getCertNo( ) {
 		return this.certNo;
+	}
+
+	public void setCityCodeOpenId(List<String> cityCodeOpenId) {
+		this.cityCodeOpenId = cityCodeOpenId;
+	}
+	public List<String> getCityCodeOpenId( ) {
+		return this.cityCodeOpenId;
+	}
+
+	public void setCityCpppOpenId(String cityCpppOpenId) {
+		this.cityCpppOpenId = cityCpppOpenId;
+	}
+	public String getCityCpppOpenId( ) {
+		return this.cityCpppOpenId;
+	}
+
+	public void setProvinceCodeOpenId(String provinceCodeOpenId) {
+		this.provinceCodeOpenId = provinceCodeOpenId;
+	}
+	public String getProvinceCodeOpenId( ) {
+		return this.provinceCodeOpenId;
 	}
 
 }

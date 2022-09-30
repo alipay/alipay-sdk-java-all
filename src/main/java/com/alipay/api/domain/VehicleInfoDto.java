@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆信息 + 用户证件类型、hash值
  *
  * @author auto create
- * @since 1.0, 2021-07-01 18:15:09
+ * @since 1.0, 2022-09-30 10:05:23
  */
 public class VehicleInfoDto extends AlipayObject {
 
-	private static final long serialVersionUID = 5285493165852281851L;
+	private static final long serialVersionUID = 4364134999731584531L;
 
 	/**
 	 * 品牌名称
@@ -84,6 +84,12 @@ public class VehicleInfoDto extends AlipayObject {
 	 */
 	@ApiField("model_name")
 	private String modelName;
+
+	/**
+	 * 用户支付宝id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 所有人
@@ -215,6 +221,13 @@ public class VehicleInfoDto extends AlipayObject {
 	}
 	public void setModelName(String modelName) {
 		this.modelName = modelName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOwner() {

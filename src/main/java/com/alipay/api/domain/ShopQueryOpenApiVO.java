@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店分页查询详情
  *
  * @author auto create
- * @since 1.0, 2022-06-08 19:56:25
+ * @since 1.0, 2022-09-29 23:40:35
  */
 public class ShopQueryOpenApiVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7176524316517281454L;
+	private static final long serialVersionUID = 6848683893195497713L;
 
 	/**
 	 * 经营地址
@@ -43,6 +43,12 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 
 	/**
 	 * 新版门店类目标准二级类目code。类目标准及与原shop_category映射关系参见文档https://ur.alipay.com/3oJ26c0veETkLXgTbtQnYY
+	 */
+	@ApiField("new_shop_category")
+	private String newShopCategory;
+
+	/**
+	 * 店铺类目，取值参见文件https://mif-pub.alipayobjects.com/ShopCategory.xlsx 中的三级门店类目
 	 */
 	@ApiField("shop_category")
 	private String shopCategory;
@@ -109,6 +115,13 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 	}
 	public void setContactPhone(String contactPhone) {
 		this.contactPhone = contactPhone;
+	}
+
+	public String getNewShopCategory() {
+		return this.newShopCategory;
+	}
+	public void setNewShopCategory(String newShopCategory) {
+		this.newShopCategory = newShopCategory;
 	}
 
 	public String getShopCategory() {

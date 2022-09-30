@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.tool.prizesend.auth response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:03:48
+ * @since 1.0, 2022-09-28 11:40:56
  */
 public class KoubeiMarketingToolPrizesendAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8737143316145635168L;
+	private static final long serialVersionUID = 2458469476893261892L;
 
 	/** 
 	 * 发奖token，用于校验商户是否有权限给制定用户发奖

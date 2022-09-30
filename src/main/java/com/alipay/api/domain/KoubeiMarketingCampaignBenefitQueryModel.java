@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑权益查询接口
  *
  * @author auto create
- * @since 1.0, 2018-09-19 14:16:23
+ * @since 1.0, 2022-09-28 11:43:26
  */
 public class KoubeiMarketingCampaignBenefitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7857776497597222432L;
+	private static final long serialVersionUID = 6359383619511829336L;
 
 	/**
 	 * 权益id

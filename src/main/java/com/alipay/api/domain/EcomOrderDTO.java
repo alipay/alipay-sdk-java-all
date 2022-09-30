@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 场景开放平台电商订单模型
  *
  * @author auto create
- * @since 1.0, 2022-09-21 11:21:15
+ * @since 1.0, 2022-09-28 14:42:04
  */
 public class EcomOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6414465342694391367L;
+	private static final long serialVersionUID = 5483484399945298986L;
 
 	/**
 	 * 实际支付金额
@@ -140,6 +142,13 @@ public class EcomOrderDTO extends AlipayObject {
 	 */
 	@ApiField("seller_nick")
 	private String sellerNick;
+
+	/**
+	 * 子订单列表
+	 */
+	@ApiListField("sub_order_list")
+	@ApiField("ecom_sub_order_d_t_o")
+	private List<EcomSubOrderDTO> subOrderList;
 
 	/**
 	 * 交易结束时间
@@ -292,6 +301,13 @@ public class EcomOrderDTO extends AlipayObject {
 	}
 	public void setSellerNick(String sellerNick) {
 		this.sellerNick = sellerNick;
+	}
+
+	public List<EcomSubOrderDTO> getSubOrderList() {
+		return this.subOrderList;
+	}
+	public void setSubOrderList(List<EcomSubOrderDTO> subOrderList) {
+		this.subOrderList = subOrderList;
 	}
 
 	public Date getTradeEndTime() {

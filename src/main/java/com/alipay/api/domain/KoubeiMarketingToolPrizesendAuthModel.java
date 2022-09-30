@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发券授权
  *
  * @author auto create
- * @since 1.0, 2016-10-09 11:45:06
+ * @since 1.0, 2022-09-28 11:40:56
  */
 public class KoubeiMarketingToolPrizesendAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4688887281343816377L;
+	private static final long serialVersionUID = 2361417414551693848L;
 
 	/**
 	 * 奖品ID

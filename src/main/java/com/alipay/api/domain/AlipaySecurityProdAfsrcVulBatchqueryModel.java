@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 白帽子漏洞批量查询接口
  *
  * @author auto create
- * @since 1.0, 2018-11-25 14:36:44
+ * @since 1.0, 2022-09-29 11:44:18
  */
 public class AlipaySecurityProdAfsrcVulBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3523613532412473219L;
+	private static final long serialVersionUID = 5572992419985775676L;
 
 	/**
 	 * 蚂蚁统一会员ID

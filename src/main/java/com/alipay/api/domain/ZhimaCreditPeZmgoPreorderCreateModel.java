@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO签约预创单
  *
  * @author auto create
- * @since 1.0, 2022-04-21 17:35:29
+ * @since 1.0, 2022-09-29 17:57:15
  */
 public class ZhimaCreditPeZmgoPreorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2111323559644839139L;
+	private static final long serialVersionUID = 5636891416734535992L;
 
 	/**
 	 * 支付宝用户ID。同一个外部请求号，调用方要确保支付宝userId取值不变

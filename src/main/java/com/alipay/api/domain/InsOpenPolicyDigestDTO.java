@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单摘要数据
  *
  * @author auto create
- * @since 1.0, 2022-08-19 15:19:44
+ * @since 1.0, 2022-09-28 14:42:21
  */
 public class InsOpenPolicyDigestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7459923518474965644L;
+	private static final long serialVersionUID = 5432968281112872416L;
 
 	/**
 	 * 保险公司id
@@ -53,10 +53,22 @@ public class InsOpenPolicyDigestDTO extends AlipayObject {
 	private String preOrderId;
 
 	/**
+	 * 保费，单位分
+	 */
+	@ApiField("premium")
+	private Long premium;
+
+	/**
 	 * 产品编码，标识某一类产品 :YFX (运费险),JYBZ(交易保障险),SHX(售后险)
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 保额，单位分
+	 */
+	@ApiField("sum_insured")
+	private Long sumInsured;
 
 	public String getInstId() {
 		return this.instId;
@@ -100,11 +112,25 @@ public class InsOpenPolicyDigestDTO extends AlipayObject {
 		this.preOrderId = preOrderId;
 	}
 
+	public Long getPremium() {
+		return this.premium;
+	}
+	public void setPremium(Long premium) {
+		this.premium = premium;
+	}
+
 	public String getProductCode() {
 		return this.productCode;
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public Long getSumInsured() {
+		return this.sumInsured;
+	}
+	public void setSumInsured(Long sumInsured) {
+		this.sumInsured = sumInsured;
 	}
 
 }

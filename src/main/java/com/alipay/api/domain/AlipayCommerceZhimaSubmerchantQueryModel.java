@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO查询二级商户进件结果
  *
  * @author auto create
- * @since 1.0, 2022-09-13 10:55:12
+ * @since 1.0, 2022-09-28 13:56:34
  */
 public class AlipayCommerceZhimaSubmerchantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2773363535936192767L;
+	private static final long serialVersionUID = 3677485597526628582L;
 
 	/**
 	 * 结算支付宝账号的登陆号

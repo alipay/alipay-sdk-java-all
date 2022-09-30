@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 付款条款
  *
  * @author auto create
- * @since 1.0, 2021-09-28 14:29:25
+ * @since 1.0, 2022-09-30 14:56:13
  */
 public class PayContractDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2622884211152997157L;
+	private static final long serialVersionUID = 3739645341467247798L;
 
 	/**
 	 * 账号扩展属性，主要是国际付款涉及到的swfitcode信息
@@ -94,6 +94,12 @@ public class PayContractDTO extends AlipayObject {
 	 */
 	@ApiField("ip_role_source")
 	private String ipRoleSource;
+
+	/**
+	 * 发起人/操作者的域账号，发起审批后作为展示需要
+	 */
+	@ApiField("operator_domain_id")
+	private String operatorDomainId;
 
 	/**
 	 * 付款条款明细
@@ -215,6 +221,13 @@ public class PayContractDTO extends AlipayObject {
 	}
 	public void setIpRoleSource(String ipRoleSource) {
 		this.ipRoleSource = ipRoleSource;
+	}
+
+	public String getOperatorDomainId() {
+		return this.operatorDomainId;
+	}
+	public void setOperatorDomainId(String operatorDomainId) {
+		this.operatorDomainId = operatorDomainId;
 	}
 
 	public List<PayContractItemDTO> getPayContractItems() {

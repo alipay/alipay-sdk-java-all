@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MerchantCard extends AlipayObject {
 
-	private static final long serialVersionUID = 8163967934244329996L;
+	private static final long serialVersionUID = 5664138778447229445L;
 
 	/**
 	 * 资金卡余额，单位：元，精确到小数点后两位。

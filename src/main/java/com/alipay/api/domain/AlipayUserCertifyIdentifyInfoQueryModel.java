@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCertifyIdentifyInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8517474669792543593L;
+	private static final long serialVersionUID = 1862439543396449614L;
 
 	/**
 	 * havana_id

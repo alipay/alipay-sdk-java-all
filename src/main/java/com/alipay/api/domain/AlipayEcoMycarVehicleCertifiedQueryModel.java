@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车主车辆认证查询
  *
  * @author auto create
- * @since 1.0, 2021-05-14 10:23:30
+ * @since 1.0, 2022-09-30 11:12:15
  */
 public class AlipayEcoMycarVehicleCertifiedQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2377121124837283216L;
+	private static final long serialVersionUID = 3789776822899623488L;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 车牌列表
@@ -28,6 +34,13 @@ public class AlipayEcoMycarVehicleCertifiedQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public List<String> getPlateNoList() {
 		return this.plateNoList;

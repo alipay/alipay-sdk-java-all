@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建微信订单
  *
  * @author auto create
- * @since 1.0, 2022-09-23 16:52:46
+ * @since 1.0, 2022-09-29 17:30:14
  */
 public class AlipayPayAggrepayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3282246184333945193L;
+	private static final long serialVersionUID = 1624391258945135889L;
 
 	/**
 	 * 微信用户openid

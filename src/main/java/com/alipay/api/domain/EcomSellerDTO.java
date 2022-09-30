@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商卖家模型
  *
  * @author auto create
- * @since 1.0, 2022-09-21 17:48:35
+ * @since 1.0, 2022-09-28 14:41:45
  */
 public class EcomSellerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7845641733637338299L;
+	private static final long serialVersionUID = 3156927769774482786L;
 
 	/**
 	 * 支付宝账号id
@@ -66,6 +66,18 @@ public class EcomSellerDTO extends AlipayObject {
 	 */
 	@ApiField("id_card_type")
 	private String idCardType;
+
+	/**
+	 * 卖家主营类目的平台全量订单数（近30天）
+	 */
+	@ApiField("main_cat_order_count_of_platform")
+	private Long mainCatOrderCountOfPlatform;
+
+	/**
+	 * 卖家主营类目的平台全量订单退换货率（近30天）
+	 */
+	@ApiField("main_cat_refund_exchange_rate_of_platform")
+	private String mainCatRefundExchangeRateOfPlatform;
 
 	/**
 	 * 手机号
@@ -170,6 +182,20 @@ public class EcomSellerDTO extends AlipayObject {
 	}
 	public void setIdCardType(String idCardType) {
 		this.idCardType = idCardType;
+	}
+
+	public Long getMainCatOrderCountOfPlatform() {
+		return this.mainCatOrderCountOfPlatform;
+	}
+	public void setMainCatOrderCountOfPlatform(Long mainCatOrderCountOfPlatform) {
+		this.mainCatOrderCountOfPlatform = mainCatOrderCountOfPlatform;
+	}
+
+	public String getMainCatRefundExchangeRateOfPlatform() {
+		return this.mainCatRefundExchangeRateOfPlatform;
+	}
+	public void setMainCatRefundExchangeRateOfPlatform(String mainCatRefundExchangeRateOfPlatform) {
+		this.mainCatRefundExchangeRateOfPlatform = mainCatRefundExchangeRateOfPlatform;
 	}
 
 	public String getPhone() {

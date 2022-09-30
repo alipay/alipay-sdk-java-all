@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付款条款查询
  *
  * @author auto create
- * @since 1.0, 2021-09-28 14:27:17
+ * @since 1.0, 2022-09-30 15:19:22
  */
 public class AlipayBossFncGfsettlePaycontractQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1128973924282824755L;
+	private static final long serialVersionUID = 4785948126891252411L;
 
 	/**
 	 * 查询条件

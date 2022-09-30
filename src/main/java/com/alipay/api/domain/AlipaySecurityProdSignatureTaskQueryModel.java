@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝可信电子签名结果查询
  *
  * @author auto create
- * @since 1.0, 2017-12-20 15:24:43
+ * @since 1.0, 2022-09-28 18:13:53
  */
 public class AlipaySecurityProdSignatureTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2559256526491665385L;
+	private static final long serialVersionUID = 6876848291273443383L;
 
 	/**
 	 * 业务类型唯一标识。调用前联系支付宝服务提供方，由电子签名平台统一分配。

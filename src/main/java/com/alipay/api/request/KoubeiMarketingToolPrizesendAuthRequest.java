@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.tool.prizesend.auth request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:03:48
+ * @since 1.0, 2022-09-28 11:40:56
  */
 public class KoubeiMarketingToolPrizesendAuthRequest implements AlipayRequest<KoubeiMarketingToolPrizesendAuthResponse> {
 

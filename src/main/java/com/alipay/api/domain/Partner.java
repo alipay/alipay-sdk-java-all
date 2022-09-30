@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Partner extends AlipayObject {
 
-	private static final long serialVersionUID = 3873257779217198121L;
+	private static final long serialVersionUID = 4215924223629327467L;
 
 	/**
 	 * 是否用印主题

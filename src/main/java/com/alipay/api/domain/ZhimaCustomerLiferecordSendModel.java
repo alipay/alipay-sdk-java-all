@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合作商户回传用户的生活记录信息，推进用户生活记录任务
  *
  * @author auto create
- * @since 1.0, 2021-06-18 09:38:39
+ * @since 1.0, 2022-09-29 14:41:15
  */
 public class ZhimaCustomerLiferecordSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7755975649598994586L;
+	private static final long serialVersionUID = 3157325179721372797L;
 
 	/**
 	 * 业务时间，标准时间格式：yyyy-MM-dd HH:mm:ss
@@ -47,6 +47,12 @@ public class ZhimaCustomerLiferecordSendModel extends AlipayObject {
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -99,6 +105,13 @@ public class ZhimaCustomerLiferecordSendModel extends AlipayObject {
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

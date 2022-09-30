@@ -7,11 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试测试支付宝
  *
  * @author auto create
- * @since 1.0, 2022-09-06 15:24:47
+ * @since 1.0, 2022-09-30 09:54:22
  */
 public class DatadigitalAnttechQqqCccQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7834333234399389399L;
+	private static final long serialVersionUID = 6156778288233224751L;
+
+	/**
+	 * dh
+	 */
+	@ApiField("babab")
+	private String babab;
+
+	/**
+	 * dgbhr
+	 */
+	@ApiField("er_1_openid")
+	private String er1Openid;
+
+	/**
+	 * dfg
+	 */
+	@ApiField("pppp")
+	private String pppp;
 
 	/**
 	 * 省份
@@ -24,6 +42,27 @@ public class DatadigitalAnttechQqqCccQueryModel extends AlipayObject {
 	 */
 	@ApiField("re")
 	private String re;
+
+	public String getBabab() {
+		return this.babab;
+	}
+	public void setBabab(String babab) {
+		this.babab = babab;
+	}
+
+	public String getEr1Openid() {
+		return this.er1Openid;
+	}
+	public void setEr1Openid(String er1Openid) {
+		this.er1Openid = er1Openid;
+	}
+
+	public String getPppp() {
+		return this.pppp;
+	}
+	public void setPppp(String pppp) {
+		this.pppp = pppp;
+	}
 
 	public String getProvinceCode() {
 		return this.provinceCode;

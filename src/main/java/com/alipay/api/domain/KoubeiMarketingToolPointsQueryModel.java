@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集点查询
  *
  * @author auto create
- * @since 1.0, 2016-10-09 11:45:18
+ * @since 1.0, 2022-09-28 11:41:19
  */
 public class KoubeiMarketingToolPointsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8117147152145184615L;
+	private static final long serialVersionUID = 5158194758857665346L;
 
 	/**
 	 * 活动积分帐户

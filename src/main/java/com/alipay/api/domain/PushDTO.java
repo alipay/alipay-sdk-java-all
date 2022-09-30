@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推进数据DTO,包含推进类型和推进值等属性
  *
  * @author auto create
- * @since 1.0, 2021-06-18 09:38:39
+ * @since 1.0, 2022-09-29 14:41:15
  */
 public class PushDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2448154396234229388L;
+	private static final long serialVersionUID = 4324389839837392913L;
 
 	/**
-	 * 推进计算类型，如计次:cal_count
+	 * 推进计算类型，如计次:CAL_COUNT
 	 */
 	@ApiField("cal_type")
 	private String calType;

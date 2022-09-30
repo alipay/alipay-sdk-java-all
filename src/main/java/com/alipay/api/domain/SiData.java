@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社保保险数据
  *
  * @author auto create
- * @since 1.0, 2018-12-26 17:18:44
+ * @since 1.0, 2022-09-28 16:54:54
  */
 public class SiData extends AlipayObject {
 
-	private static final long serialVersionUID = 7476565117228213388L;
+	private static final long serialVersionUID = 3283411467659249682L;
 
 	/**
 	 * 唯一定位一次报文请求，由商户生成， 确保唯一

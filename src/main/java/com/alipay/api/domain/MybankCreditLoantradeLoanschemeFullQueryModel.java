@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询客户完整贷款方案
  *
  * @author auto create
- * @since 1.0, 2022-09-19 15:47:41
+ * @since 1.0, 2022-09-29 17:22:56
  */
 public class MybankCreditLoantradeLoanschemeFullQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6487265495336986192L;
+	private static final long serialVersionUID = 6883535231971719878L;
 
 	/**
 	 * 支付宝会员id，支付宝内部用于标识会员的唯一ID，以2088开头，不是支付宝登录账号

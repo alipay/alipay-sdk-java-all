@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询千牛网商有数widget的数据
  *
  * @author auto create
- * @since 1.0, 2017-09-12 12:15:08
+ * @since 1.0, 2022-09-29 14:08:33
  */
 public class MybankCreditCreditriskWidgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5217591268495528335L;
+	private static final long serialVersionUID = 1677295786146512829L;
 
 	/**
 	 * 支付宝userid

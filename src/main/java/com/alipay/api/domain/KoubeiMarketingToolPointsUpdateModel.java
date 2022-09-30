@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新卡积分
  *
  * @author auto create
- * @since 1.0, 2016-11-15 18:49:47
+ * @since 1.0, 2022-09-28 11:40:15
  */
 public class KoubeiMarketingToolPointsUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4893695459627219629L;
+	private static final long serialVersionUID = 3145348826152182473L;
 
 	/**
 	 * 活动集点帐户ID, 开发者通过查询集点活动详情获取

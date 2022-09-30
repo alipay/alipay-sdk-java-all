@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育场景token生成处理器
  *
  * @author auto create
- * @since 1.0, 2022-07-20 21:04:12
+ * @since 1.0, 2022-09-29 17:14:50
  */
 public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3293966222398537635L;
+	private static final long serialVersionUID = 1257222179644429719L;
 
 	/**
 	 * 证件号码
@@ -30,6 +30,12 @@ public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("operator_user_id")
 	private String operatorUserId;
+
+	/**
+	 * 服务商内部唯一ID，升级token模式后必须提供，默认可以不填
+	 */
+	@ApiField("out_user_id")
+	private String outUserId;
 
 	/**
 	 * 家长手机号码。
@@ -76,6 +82,13 @@ SCHOOL_FACE_PASS_NAVIGATE：校园一脸通行跳转（生成的token用于个�
 	}
 	public void setOperatorUserId(String operatorUserId) {
 		this.operatorUserId = operatorUserId;
+	}
+
+	public String getOutUserId() {
+		return this.outUserId;
+	}
+	public void setOutUserId(String outUserId) {
+		this.outUserId = outUserId;
 	}
 
 	public String getParentPhone() {

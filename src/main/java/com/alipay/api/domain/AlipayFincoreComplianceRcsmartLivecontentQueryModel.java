@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解语花直播审核结果查询
  *
  * @author auto create
- * @since 1.0, 2022-09-20 16:07:05
+ * @since 1.0, 2022-09-30 11:15:49
  */
 public class AlipayFincoreComplianceRcsmartLivecontentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6328932668471617678L;
+	private static final long serialVersionUID = 7738274428698852617L;
 
 	/**
 	 * app_name为调用方系统名称(英文)，与分配的app_token一起做调用系统合法性校验

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆认证状态查询结果
  *
  * @author auto create
- * @since 1.0, 2020-09-14 13:49:16
+ * @since 1.0, 2022-09-29 10:42:17
  */
 public class PlateNoCertDto extends AlipayObject {
 
-	private static final long serialVersionUID = 2373398752978824822L;
+	private static final long serialVersionUID = 4256891858461131163L;
 
 	/**
 	 * true，false

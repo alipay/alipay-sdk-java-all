@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 白帽子信息查询接口
  *
  * @author auto create
- * @since 1.0, 2018-11-25 14:36:52
+ * @since 1.0, 2022-09-29 11:44:02
  */
 public class AlipaySecurityProdAfsrcWhitehatinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4484944941877674453L;
+	private static final long serialVersionUID = 8329554782435669998L;
 
 	/**
 	 * HavanaId(淘宝uid)

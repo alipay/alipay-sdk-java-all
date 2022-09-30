@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MultiStagePayLineInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7869714853595538775L;
+	private static final long serialVersionUID = 1558328232387252524L;
 
 	/**
 	 * 多次支付中的1次支付金额

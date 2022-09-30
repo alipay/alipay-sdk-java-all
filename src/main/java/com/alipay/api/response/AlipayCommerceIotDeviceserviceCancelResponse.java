@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.deviceservice.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 21:44:10
+ * @since 1.0, 2022-09-29 16:30:54
  */
 public class AlipayCommerceIotDeviceserviceCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8888648427158347857L;
+	private static final long serialVersionUID = 7617314735347513833L;
 
 	
 

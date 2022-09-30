@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台对外开放场景链接
  *
  * @author auto create
- * @since 1.0, 2022-08-19 14:24:38
+ * @since 1.0, 2022-09-28 14:41:58
  */
 public class InsPolicyLinkDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4598682392341822567L;
+	private static final long serialVersionUID = 8246774928623991191L;
 
 	/**
 	 * 授权token
@@ -28,10 +28,16 @@ public class InsPolicyLinkDTO extends AlipayObject {
 	private String authedUrl;
 
 	/**
-	 * 过期时间
+	 * url过期时间
 	 */
 	@ApiField("expiration")
 	private Date expiration;
+
+	/**
+	 * 保单状态
+	 */
+	@ApiField("policy_status")
+	private String policyStatus;
 
 	/**
 	 * 产品名称
@@ -76,6 +82,13 @@ public class InsPolicyLinkDTO extends AlipayObject {
 	}
 	public void setExpiration(Date expiration) {
 		this.expiration = expiration;
+	}
+
+	public String getPolicyStatus() {
+		return this.policyStatus;
+	}
+	public void setPolicyStatus(String policyStatus) {
+		this.policyStatus = policyStatus;
 	}
 
 	public String getProductCode() {

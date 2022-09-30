@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.benefit.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-09-28 11:43:26
  */
 public class KoubeiMarketingCampaignBenefitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6753663852811342454L;
+	private static final long serialVersionUID = 7132634866494469357L;
 
 	/** 
 	 * benefitQueryInfo: 权益查询接口返回的具体权益信息

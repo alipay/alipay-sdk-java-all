@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零花钱授权查询
  *
  * @author auto create
- * @since 1.0, 2020-12-15 10:20:32
+ * @since 1.0, 2022-09-29 10:34:49
  */
 public class AlipayPayAppPocketmoneyAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2229538584364662277L;
+	private static final long serialVersionUID = 5522452777945152761L;
 
 	/**
 	 * 设备ID

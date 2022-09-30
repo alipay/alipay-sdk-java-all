@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁保电商物流模型
  *
  * @author auto create
- * @since 1.0, 2022-09-21 11:21:15
+ * @since 1.0, 2022-09-28 11:32:34
  */
 public class EcomLogisticsOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2129595836585725773L;
+	private static final long serialVersionUID = 7811857522737537648L;
 
 	/**
 	 * 物流公司编码
@@ -116,6 +116,12 @@ public class EcomLogisticsOrderDTO extends AlipayObject {
 	 */
 	@ApiField("recipient_town")
 	private String recipientTown;
+
+	/**
+	 * 是否拒签
+	 */
+	@ApiField("refusal")
+	private Boolean refusal;
 
 	/**
 	 * 发货地址
@@ -288,6 +294,13 @@ public class EcomLogisticsOrderDTO extends AlipayObject {
 	}
 	public void setRecipientTown(String recipientTown) {
 		this.recipientTown = recipientTown;
+	}
+
+	public Boolean getRefusal() {
+		return this.refusal;
+	}
+	public void setRefusal(Boolean refusal) {
+		this.refusal = refusal;
 	}
 
 	public String getSenderAddress() {

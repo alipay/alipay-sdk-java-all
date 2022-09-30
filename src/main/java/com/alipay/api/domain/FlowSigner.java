@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FlowSigner extends AlipayObject {
 
-	private static final long serialVersionUID = 6468296787735556861L;
+	private static final long serialVersionUID = 8441675228626238683L;
 
 	/**
 	 * 创建流程时指定的企业唯一标识，仅签署主体为企业时返回
