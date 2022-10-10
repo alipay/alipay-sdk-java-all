@@ -8,6 +8,7 @@ import com.alipay.api.domain.CropsHarvestForecastInfo;
 import com.alipay.api.domain.CropsHarvestProgressInfo;
 import com.alipay.api.domain.CropsPlantingInfo;
 import com.alipay.api.domain.CropsSoilMoistureInfo;
+import com.alipay.api.domain.AgWeatherDisasterInfo;
 import com.alipay.api.domain.AgWeatherForecastInfo;
 import com.alipay.api.domain.CropsYieldForecastInfo;
 
@@ -17,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.dataservice.cropbase.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-27 15:16:50
+ * @since 1.0, 2022-10-10 19:46:55
  */
 public class AnttechBlockchainDefinDataserviceCropbaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7413529825819689879L;
+	private static final long serialVersionUID = 4195154273345823311L;
 
 	/** 
 	 * 作物编码列表
@@ -81,7 +82,7 @@ public class AnttechBlockchainDefinDataserviceCropbaseQueryResponse extends Alip
 	 * 农业气象灾害预警
 	 */
 	@ApiField("weather_disaster_info")
-	private AgWeatherForecastInfo weatherDisasterInfo;
+	private AgWeatherDisasterInfo weatherDisasterInfo;
 
 	/** 
 	 * 农业气象预报数据(1007)
@@ -152,10 +153,10 @@ public class AnttechBlockchainDefinDataserviceCropbaseQueryResponse extends Alip
 		return this.updateDate;
 	}
 
-	public void setWeatherDisasterInfo(AgWeatherForecastInfo weatherDisasterInfo) {
+	public void setWeatherDisasterInfo(AgWeatherDisasterInfo weatherDisasterInfo) {
 		this.weatherDisasterInfo = weatherDisasterInfo;
 	}
-	public AgWeatherForecastInfo getWeatherDisasterInfo( ) {
+	public AgWeatherDisasterInfo getWeatherDisasterInfo( ) {
 		return this.weatherDisasterInfo;
 	}
 

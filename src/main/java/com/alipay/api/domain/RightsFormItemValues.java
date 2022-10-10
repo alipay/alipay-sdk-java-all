@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 立信权益表单模型
  *
  * @author auto create
- * @since 1.0, 2022-06-01 11:15:29
+ * @since 1.0, 2022-10-09 14:52:50
  */
 public class RightsFormItemValues extends AlipayObject {
 
-	private static final long serialVersionUID = 3835854266657819319L;
+	private static final long serialVersionUID = 4188472829195213843L;
 
 	/**
 	 * 企业统一社会信用代码
@@ -40,6 +40,12 @@ public class RightsFormItemValues extends AlipayObject {
 	 */
 	@ApiField("legal_person")
 	private String legalPerson;
+
+	/**
+	 * 用户的支付宝用户open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 表单中的其他字段
@@ -92,6 +98,13 @@ public class RightsFormItemValues extends AlipayObject {
 	}
 	public void setLegalPerson(String legalPerson) {
 		this.legalPerson = legalPerson;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<LabelValue> getOtherFields() {

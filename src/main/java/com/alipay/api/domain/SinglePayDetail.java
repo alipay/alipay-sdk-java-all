@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小额支付单笔支付
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @since 1.0, 2022-10-10 10:41:14
  */
 public class SinglePayDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3455166451528921351L;
+	private static final long serialVersionUID = 2571261439654696626L;
 
 	/**
 	 * 支付宝冻结订单号

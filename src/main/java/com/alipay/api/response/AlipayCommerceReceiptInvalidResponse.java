@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.receipt.invalid response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-30 20:18:58
+ * @since 1.0, 2022-10-10 16:28:16
  */
 public class AlipayCommerceReceiptInvalidResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3266943811288151595L;
+	private static final long serialVersionUID = 8846449511843757291L;
 
 	
 

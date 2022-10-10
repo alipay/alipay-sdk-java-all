@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询设计saas的页面模版列表
  *
  * @author auto create
- * @since 1.0, 2022-07-21 14:57:12
+ * @since 1.0, 2022-10-09 11:32:13
  */
 public class DatadigitalFincloudFinsaasDesignPagetemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8149462683614912368L;
+	private static final long serialVersionUID = 2119125967821575313L;
 
 	/**
 	 * 创建人id
@@ -24,6 +24,12 @@ public class DatadigitalFincloudFinsaasDesignPagetemplateBatchqueryModel extends
 	 */
 	@ApiField("creator_name")
 	private String creatorName;
+
+	/**
+	 * 不传即查询所有类型活动
+	 */
+	@ApiField("operation_task_type")
+	private String operationTaskType;
 
 	/**
 	 * 页面名字
@@ -67,6 +73,13 @@ public class DatadigitalFincloudFinsaasDesignPagetemplateBatchqueryModel extends
 	}
 	public void setCreatorName(String creatorName) {
 		this.creatorName = creatorName;
+	}
+
+	public String getOperationTaskType() {
+		return this.operationTaskType;
+	}
+	public void setOperationTaskType(String operationTaskType) {
+		this.operationTaskType = operationTaskType;
 	}
 
 	public String getPageName() {

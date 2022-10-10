@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.job.contract.create request
  * 
  * @author auto create
- * @since 1.0, 2022-09-24 16:11:55
+ * @since 1.0, 2022-10-10 14:26:49
  */
 public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadRequest<AlipayEbppIndustryJobContractCreateResponse> {
 
@@ -51,6 +51,11 @@ public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadR
 	* 企业法人名称
 	 */
 	private String legalPersonName;
+
+	/** 
+	* 蚂蚁统一会员ID
+	 */
+	private String openId;
 
 	/** 
 	* 外部订单号
@@ -117,6 +122,13 @@ public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadR
 	}
 	public String getLegalPersonName() {
 		return this.legalPersonName;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setOuterBizNo(String outerBizNo) {
@@ -219,6 +231,7 @@ public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadR
 		txtParams.put("company_name", this.companyName);
 		txtParams.put("legal_person_cert_no", this.legalPersonCertNo);
 		txtParams.put("legal_person_name", this.legalPersonName);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("outer_biz_no", this.outerBizNo);
 		txtParams.put("sign_area", this.signArea == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.signArea, true));
 		txtParams.put("sign_platform", this.signPlatform);

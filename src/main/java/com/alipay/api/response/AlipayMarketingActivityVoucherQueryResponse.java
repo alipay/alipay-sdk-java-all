@@ -24,11 +24,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-15 15:18:11
+ * @since 1.0, 2022-09-30 17:36:59
  */
 public class AlipayMarketingActivityVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7827833884616638367L;
+	private static final long serialVersionUID = 5328842542233261865L;
 
 	/** 
 	 * 活动基础信息
@@ -37,7 +37,7 @@ public class AlipayMarketingActivityVoucherQueryResponse extends AlipayResponse 
 	private ActivityBaseInfo activityBaseInfo;
 
 	/** 
-	 * 活动ID
+	 * 活动 ID
 	 */
 	@ApiField("activity_id")
 	private String activityId;
@@ -49,11 +49,7 @@ public class AlipayMarketingActivityVoucherQueryResponse extends AlipayResponse 
 	private String activityName;
 
 	/** 
-	 * 活动状态
-枚举值：
-INIT 未激活 
-ACTIVE：已激活
-FINISHED：已停止 
+	 * 活动状态。
 如果该值为空，说明活动还未创建成功。
 	 */
 	@ApiField("activity_status")
@@ -66,7 +62,7 @@ FINISHED：已停止
 	private PaymentVoucherBelongMerchantInfo belongMerchantInfo;
 
 	/** 
-	 * 券发放结束时间。 格式为：yyyy-MM-dd HH:mm:ss 限制： 券发放结束时间 publish_end_time 与 券发放开始时间 publish_start_time 间隔必须小于等于180天
+	 * 券发放结束时间。 格式为：yyyy-MM-dd HH:mm:ss。
 	 */
 	@ApiField("publish_end_time")
 	private Date publishEndTime;
@@ -144,9 +140,7 @@ FINISHED：已停止
 	private PaymentVoucherSendRule voucherSendRule;
 
 	/** 
-	 * 优惠类型 
-枚举值： 
-FIX_VOUCHER：固定面额满减券
+	 * 优惠类型。
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;

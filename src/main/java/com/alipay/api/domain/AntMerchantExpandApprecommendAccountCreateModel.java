@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联账号和小程序
  *
  * @author auto create
- * @since 1.0, 2022-07-13 11:09:11
+ * @since 1.0, 2022-10-10 12:07:58
  */
 public class AntMerchantExpandApprecommendAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2614395734137463937L;
+	private static final long serialVersionUID = 4326242428962396359L;
 
 	/**
 	 * 待绑定账号PID

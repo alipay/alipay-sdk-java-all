@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链金融业务的上传文件信息
  *
  * @author auto create
- * @since 1.0, 2020-04-29 22:10:09
+ * @since 1.0, 2022-10-09 15:39:03
  */
 public class FinanceFileInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6364655925719246324L;
+	private static final long serialVersionUID = 7888566758674975539L;
 
 	/**
 	 * 文件内容hash

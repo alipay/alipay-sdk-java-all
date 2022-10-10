@@ -10,11 +10,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家用户人群包创建
  *
  * @author auto create
- * @since 1.0, 2022-08-02 10:29:22
+ * @since 1.0, 2022-09-30 23:38:14
  */
 public class AlipayMerchantQipanCrowdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7783822144924871339L;
+	private static final long serialVersionUID = 2698744416975338635L;
+
+	/**
+	 * 人群应用渠道。<br>
+未传值或传入渠道均非法时 采用默认渠道，默认渠道：支付结果页AA、繁星激励。<br>
+传入值时，以商户入参为准。
+	 */
+	@ApiListField("apply_channel_list")
+	@ApiField("string")
+	private List<String> applyChannelList;
 
 	/**
 	 * 人群描述
@@ -42,6 +51,13 @@ public class AlipayMerchantQipanCrowdCreateModel extends AlipayObject {
 	@ApiListField("user_list")
 	@ApiField("qipan_merchant_crowd_user")
 	private List<QipanMerchantCrowdUser> userList;
+
+	public List<String> getApplyChannelList() {
+		return this.applyChannelList;
+	}
+	public void setApplyChannelList(List<String> applyChannelList) {
+		this.applyChannelList = applyChannelList;
+	}
 
 	public String getCrowdDesc() {
 		return this.crowdDesc;

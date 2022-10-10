@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 轻会员页面签约接口
  *
  * @author auto create
- * @since 1.0, 2022-07-01 17:10:59
+ * @since 1.0, 2022-10-10 13:58:53
  */
 public class AlipayPcreditHuabeiAuthSignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3531781511886529733L;
+	private static final long serialVersionUID = 2291667144584441498L;
 
 	/**
 	 * 支付宝的用户id。用于水平校验，当传入用户id与实际唤起支付宝用户id不一致时，签约申请失败。特殊业务(用户在商户侧已经绑定了支付宝A，不允许支付宝B进行开通花芝)需求定制，无特殊需求时不要传入此商户

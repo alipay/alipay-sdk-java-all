@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灯火数据回传接口
  *
  * @author auto create
- * @since 1.0, 2020-01-14 10:05:35
+ * @since 1.0, 2022-10-08 15:06:48
  */
 public class AlipayDataDataserviceDmpserviceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2637996845713554172L;
+	private static final long serialVersionUID = 2434515217954499979L;
 
 	/**
 	 * 转化id

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建支付券
  *
  * @author auto create
- * @since 1.0, 2022-09-25 10:44:30
+ * @since 1.0, 2022-09-30 16:43:49
  */
 public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6152253783739432354L;
+	private static final long serialVersionUID = 7896265526447167996L;
 
 	/**
 	 * 活动基础信息
@@ -35,16 +35,12 @@ public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 
 	/**
 	 * 商户接入模式
-
-枚举值
-SELF_MODE 商户自接入模式
-AGENCY_MODE 服务商代接入模式
 	 */
 	@ApiField("merchant_access_mode")
 	private String merchantAccessMode;
 
 	/**
-	 * 外部业务单号，用作幂等控制。
+	 * 用作幂等控制。
 
 幂等作用：
 参数不变的情况下，再次请求返回与上一次相同的结果。

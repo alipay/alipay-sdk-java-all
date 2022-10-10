@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 知识库-类目-创建
  *
  * @author auto create
- * @since 1.0, 2021-01-26 15:20:57
+ * @since 1.0, 2022-10-10 12:37:14
  */
 public class AlipayIserviceCcmSwTreeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2221896454697816577L;
+	private static final long serialVersionUID = 8226443364863839665L;
 
 	/**
 	 * 子部门ID，不传为默认部门

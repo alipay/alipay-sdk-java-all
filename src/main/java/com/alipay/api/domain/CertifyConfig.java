@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店扫码核验业务场景下， 插件小程序页面展示的配置
  *
  * @author auto create
- * @since 1.0, 2022-06-17 14:03:35
+ * @since 1.0, 2022-10-10 14:21:49
  */
 public class CertifyConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4499541393721424414L;
+	private static final long serialVersionUID = 2684483413957557631L;
 
 	/**
 	 * 核验模式，可选范围：【FACE : 人脸认证 ，
@@ -28,8 +28,7 @@ public class CertifyConfig extends AlipayObject {
 	private String needAddress;
 
 	/**
-	 * 结果页是否展示认证ID，可选范围【0， 1】
-0不需要，1需要，不填写或填错默认1
+	 * 结果页是否需要展示支付宝侧登记码，可选范围【0， 1】0不需要，1需要，不填写或填错默认1。若不需要展示支付宝侧登记码，则需要isv实时返回isv侧登记码，不返回则不显示登记码
 	 */
 	@ApiField("need_certify_id")
 	private String needCertifyId;

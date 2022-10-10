@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询权益中心用户填写表单
  *
  * @author auto create
- * @since 1.0, 2022-06-24 15:55:55
+ * @since 1.0, 2022-10-09 14:52:50
  */
 public class ZhimaCreditEpLixinUserfillformQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7289548239856447659L;
+	private static final long serialVersionUID = 3823721278689765471L;
 
 	/**
 	 * 表单提交结束时间，与表单开始时间组合前开后闭[start_time,end_time)
@@ -28,6 +28,13 @@ public class ZhimaCreditEpLixinUserfillformQueryModel extends AlipayObject {
 	 */
 	@ApiField("form_id")
 	private Long formId;
+
+	/**
+	 * 支付宝用户openId列表
+	 */
+	@ApiListField("open_id_list")
+	@ApiField("string")
+	private List<String> openIdList;
 
 	/**
 	 * 分页请求的页码，从1开始
@@ -66,6 +73,13 @@ public class ZhimaCreditEpLixinUserfillformQueryModel extends AlipayObject {
 	}
 	public void setFormId(Long formId) {
 		this.formId = formId;
+	}
+
+	public List<String> getOpenIdList() {
+		return this.openIdList;
+	}
+	public void setOpenIdList(List<String> openIdList) {
+		this.openIdList = openIdList;
 	}
 
 	public Long getPageIndex() {

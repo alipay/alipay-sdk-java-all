@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作物产量预估信息
  *
  * @author auto create
- * @since 1.0, 2022-09-27 14:30:23
+ * @since 1.0, 2022-10-08 18:22:26
  */
 public class CropsYieldForecastInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7563726385625333235L;
+	private static final long serialVersionUID = 3787884555936617251L;
+
+	/**
+	 * 数据实际日期，YYYYMMDD
+	 */
+	@ApiField("actual_date")
+	private String actualDate;
 
 	/**
 	 * 数据实际年份，YYYY
@@ -42,6 +48,13 @@ public class CropsYieldForecastInfo extends AlipayObject {
 	 */
 	@ApiField("total_yield")
 	private String totalYield;
+
+	public String getActualDate() {
+		return this.actualDate;
+	}
+	public void setActualDate(String actualDate) {
+		this.actualDate = actualDate;
+	}
 
 	public String getActualYear() {
 		return this.actualYear;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序成员模型
  *
  * @author auto create
- * @since 1.0, 2022-09-29 10:56:50
+ * @since 1.0, 2022-10-10 16:07:23
  */
 public class AppMemberInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7811772933791779347L;
+	private static final long serialVersionUID = 6813141719458343836L;
 
 	/**
 	 * 邀请时间
@@ -36,6 +36,12 @@ public class AppMemberInfo extends AlipayObject {
 	 */
 	@ApiField("nick_name")
 	private String nickName;
+
+	/**
+	 * 支付宝用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 头像地址
@@ -87,6 +93,13 @@ public class AppMemberInfo extends AlipayObject {
 	}
 	public void setNickName(String nickName) {
 		this.nickName = nickName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPortrait() {

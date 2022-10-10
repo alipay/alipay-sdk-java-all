@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大出行智能平台-排班任务-创建
  *
  * @author auto create
- * @since 1.0, 2022-09-21 16:38:52
+ * @since 1.0, 2022-10-09 16:57:35
  */
 public class AlipayCommerceTransportIntelligentizeWorkscheduleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6354621791232368965L;
+	private static final long serialVersionUID = 7699985667169369726L;
 
 	/**
 	 * 城市代码
@@ -29,7 +29,7 @@ public class AlipayCommerceTransportIntelligentizeWorkscheduleCreateModel extend
 	private String corpId;
 
 	/**
-	 * 下行首站的临时停车容量，大于等于0整数
+	 * （注意：该字段已废弃）下行首站的临时停车容量，大于等于0整数
 	 */
 	@ApiField("down_first_station_capacity")
 	private Long downFirstStationCapacity;
@@ -86,7 +86,7 @@ public class AlipayCommerceTransportIntelligentizeWorkscheduleCreateModel extend
 	private Long tripBreakTime;
 
 	/**
-	 * 上行首站的临时停车容量，大于等于0整数
+	 * （注意：该字段已废弃）上行首站的临时停车容量，大于等于0整数
 	 */
 	@ApiField("up_first_station_capacity")
 	private Long upFirstStationCapacity;
@@ -97,6 +97,17 @@ public class AlipayCommerceTransportIntelligentizeWorkscheduleCreateModel extend
 	@ApiListField("work_pattern_list")
 	@ApiField("work_pattern")
 	private List<WorkPattern> workPatternList;
+
+	/**
+	 * 不同的排班模式对应不同的排班算法。目前支持：
+HUMAN_LIKE_BY_WORK_PATTERN：仿人工排班（基于班型）
+HUMAN_LIKE_BY_MATRIX_TEMPLATE：仿人工排班（基于矩阵模板）
+DELICATE_BY_WORK_PATTERN_TEMPLATE：精细化排班（基于班型模板）
+USE_RECOMMENDED_PARAMS_WITH_TIMETABLE_PRIORITY：使用推荐参数排班（时刻表优先）
+USE_RECOMMENDED_PARAMS_WITH_RESOURCE_PRIORITY：使用推荐参数排班（人车资源优先）
+	 */
+	@ApiField("work_schedule_mode")
+	private String workScheduleMode;
 
 	public String getCityCode() {
 		return this.cityCode;
@@ -180,6 +191,13 @@ public class AlipayCommerceTransportIntelligentizeWorkscheduleCreateModel extend
 	}
 	public void setWorkPatternList(List<WorkPattern> workPatternList) {
 		this.workPatternList = workPatternList;
+	}
+
+	public String getWorkScheduleMode() {
+		return this.workScheduleMode;
+	}
+	public void setWorkScheduleMode(String workScheduleMode) {
+		this.workScheduleMode = workScheduleMode;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改项目基础信息
  *
  * @author auto create
- * @since 1.0, 2022-02-17 10:57:00
+ * @since 1.0, 2022-10-10 14:31:43
  */
 public class AlipayEbppInvoiceExpenserulesProjectinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4783885553944537929L;
+	private static final long serialVersionUID = 2369179564281429217L;
 
 	/**
 	 * 企业ID

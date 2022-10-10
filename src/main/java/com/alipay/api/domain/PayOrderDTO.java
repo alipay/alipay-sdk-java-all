@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险电商支付单据
  *
  * @author auto create
- * @since 1.0, 2022-09-23 12:00:40
+ * @since 1.0, 2022-10-09 15:12:40
  */
 public class PayOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3577543536281884829L;
+	private static final long serialVersionUID = 4815712435656612331L;
 
 	/**
 	 * 买家实际支付金额

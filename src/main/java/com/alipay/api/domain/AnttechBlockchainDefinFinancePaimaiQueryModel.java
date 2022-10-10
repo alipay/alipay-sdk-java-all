@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 双链通拍卖业务查询接口
  *
  * @author auto create
- * @since 1.0, 2021-11-20 19:21:23
+ * @since 1.0, 2022-10-10 12:50:42
  */
 public class AnttechBlockchainDefinFinancePaimaiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6848673769892757931L;
+	private static final long serialVersionUID = 8824961571344756279L;
 
 	/**
 	 * base64编码的业务参数

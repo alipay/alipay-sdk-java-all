@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应收账款融资业务提交
  *
  * @author auto create
- * @since 1.0, 2020-06-02 16:18:20
+ * @since 1.0, 2022-10-10 15:41:14
  */
 public class AnttechBlockchainDefinFinanceArSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5676162159532558288L;
+	private static final long serialVersionUID = 8667392423989426349L;
 
 	/**
 	 * base64编码的业务参数

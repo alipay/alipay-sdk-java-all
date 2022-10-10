@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询森林碳账户日数据
  *
  * @author auto create
- * @since 1.0, 2021-11-17 17:12:59
+ * @since 1.0, 2022-10-09 11:11:45
  */
 public class AlipaySocialAntforestCarbondayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7247493413164953523L;
+	private static final long serialVersionUID = 8317318731249533892L;
 
 	/**
 	 * 碳账户绿色场景类型，类型为字符串数组。

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotbpaas.devicebind.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-06 18:45:58
+ * @since 1.0, 2022-10-10 11:05:23
  */
 public class AlipayOpenIotbpaasDevicebindApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6692517473975454953L;
+	private static final long serialVersionUID = 4715569728156232948L;
 
 	/** 
 	 * 绑定信息

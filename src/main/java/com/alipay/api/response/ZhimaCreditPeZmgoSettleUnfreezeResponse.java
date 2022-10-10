@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.settle.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-28 16:28:20
+ * @since 1.0, 2022-10-10 14:09:33
  */
 public class ZhimaCreditPeZmgoSettleUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5192841133278639262L;
+	private static final long serialVersionUID = 5822558969517751489L;
 
 	/** 
 	 * 失败原因

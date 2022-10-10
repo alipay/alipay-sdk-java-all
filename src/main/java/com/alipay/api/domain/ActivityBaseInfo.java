@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动基础信息
  *
  * @author auto create
- * @since 1.0, 2022-09-21 10:56:52
+ * @since 1.0, 2022-10-08 16:44:03
  */
 public class ActivityBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4579122412783793699L;
+	private static final long serialVersionUID = 1766669687188611799L;
 
 	/**
 	 * 活动id
@@ -30,6 +30,12 @@ public class ActivityBaseInfo extends AlipayObject {
 	 */
 	@ApiField("activity_operation_status")
 	private String activityOperationStatus;
+
+	/**
+	 * 券活动产品类型
+	 */
+	@ApiField("activity_product_type")
+	private String activityProductType;
 
 	/**
 	 * 活动状态。 已激活状态表示活动正常运行。已终止状态表示商家终止活动，不可再发放。
@@ -68,6 +74,13 @@ public class ActivityBaseInfo extends AlipayObject {
 	}
 	public void setActivityOperationStatus(String activityOperationStatus) {
 		this.activityOperationStatus = activityOperationStatus;
+	}
+
+	public String getActivityProductType() {
+		return this.activityProductType;
+	}
+	public void setActivityProductType(String activityProductType) {
+		this.activityProductType = activityProductType;
 	}
 
 	public String getActivityStatus() {

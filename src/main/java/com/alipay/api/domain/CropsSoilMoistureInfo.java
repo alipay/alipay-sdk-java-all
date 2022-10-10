@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作物土壤墒情信息
  *
  * @author auto create
- * @since 1.0, 2022-09-27 15:09:22
+ * @since 1.0, 2022-10-08 18:19:28
  */
 public class CropsSoilMoistureInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3877411168783343876L;
+	private static final long serialVersionUID = 4842617999148643883L;
 
 	/**
 	 * 数据实际日期，YYYYMMDD
@@ -30,6 +30,12 @@ public class CropsSoilMoistureInfo extends AlipayObject {
 	 */
 	@ApiField("crop_code")
 	private String cropCode;
+
+	/**
+	 * 预测日期，YYYYMMDD
+	 */
+	@ApiField("forecast_date")
+	private String forecastDate;
 
 	/**
 	 * 风险监测指数，值域0～1
@@ -62,6 +68,13 @@ public class CropsSoilMoistureInfo extends AlipayObject {
 	}
 	public void setCropCode(String cropCode) {
 		this.cropCode = cropCode;
+	}
+
+	public String getForecastDate() {
+		return this.forecastDate;
+	}
+	public void setForecastDate(String forecastDate) {
+		this.forecastDate = forecastDate;
 	}
 
 	public String getRiskIndex() {

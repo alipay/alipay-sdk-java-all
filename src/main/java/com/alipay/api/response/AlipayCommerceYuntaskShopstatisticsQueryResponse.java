@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.shopstatistics.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-27 20:41:43
+ * @since 1.0, 2022-10-10 16:28:45
  */
 public class AlipayCommerceYuntaskShopstatisticsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7436887182248337694L;
+	private static final long serialVersionUID = 2335737951135876284L;
 
 	/** 
 	 * 分页

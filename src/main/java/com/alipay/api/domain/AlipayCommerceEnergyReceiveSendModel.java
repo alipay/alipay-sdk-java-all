@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * FSC用户能量领取接口
  *
  * @author auto create
- * @since 1.0, 2022-08-05 17:05:39
+ * @since 1.0, 2022-10-10 16:27:36
  */
 public class AlipayCommerceEnergyReceiveSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4886458941715927363L;
+	private static final long serialVersionUID = 4573369275337554663L;
 
 	/**
 	 * 支付宝用户uid;

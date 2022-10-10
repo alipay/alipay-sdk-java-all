@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 农业气象灾害预警信息
  *
  * @author auto create
- * @since 1.0, 2022-09-27 14:29:35
+ * @since 1.0, 2022-10-08 18:20:31
  */
 public class AgWeatherDisasterInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3217622711958914694L;
+	private static final long serialVersionUID = 4574894932614771385L;
+
+	/**
+	 * 数据实际日期，YYYYMMDD
+	 */
+	@ApiField("actual_date")
+	private String actualDate;
 
 	/**
 	 * 附加信息
@@ -60,6 +66,13 @@ public class AgWeatherDisasterInfo extends AlipayObject {
 	 */
 	@ApiField("rainstorm_level")
 	private Long rainstormLevel;
+
+	public String getActualDate() {
+		return this.actualDate;
+	}
+	public void setActualDate(String actualDate) {
+		this.actualDate = actualDate;
+	}
 
 	public String getAdditionInfo() {
 		return this.additionInfo;

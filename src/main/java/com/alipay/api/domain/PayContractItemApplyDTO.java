@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付款条款
  *
  * @author auto create
- * @since 1.0, 2021-09-28 14:29:41
+ * @since 1.0, 2022-10-10 11:17:46
  */
 public class PayContractItemApplyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1346367249299162427L;
+	private static final long serialVersionUID = 8358172434486831754L;
 
 	/**
 	 * 已收票金额
@@ -36,6 +36,12 @@ public class PayContractItemApplyDTO extends AlipayObject {
 	 */
 	@ApiField("item_type")
 	private String itemType;
+
+	/**
+	 * 此付款条款是否需要审批
+	 */
+	@ApiField("need_audit")
+	private Boolean needAudit;
 
 	/**
 	 * 是否有票
@@ -129,6 +135,13 @@ public class PayContractItemApplyDTO extends AlipayObject {
 	}
 	public void setItemType(String itemType) {
 		this.itemType = itemType;
+	}
+
+	public Boolean getNeedAudit() {
+		return this.needAudit;
+	}
+	public void setNeedAudit(Boolean needAudit) {
+		this.needAudit = needAudit;
 	}
 
 	public Boolean getNeedInvoice() {

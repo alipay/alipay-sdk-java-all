@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部账单查询
  *
  * @author auto create
- * @since 1.0, 2021-11-09 14:32:04
+ * @since 1.0, 2022-10-08 15:40:30
  */
 public class AlipayEbppMerchantExternalbillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3411475871371533683L;
+	private static final long serialVersionUID = 5577542261478173779L;
 
 	/**
 	 * 小区短名, 小区创建时生成

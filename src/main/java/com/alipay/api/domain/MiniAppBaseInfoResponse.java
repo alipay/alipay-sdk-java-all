@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序基础信息
  *
  * @author auto create
- * @since 1.0, 2022-08-21 16:14:58
+ * @since 1.0, 2022-10-10 16:37:17
  */
 public class MiniAppBaseInfoResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2619849869471943922L;
+	private static final long serialVersionUID = 2838264775742832541L;
 
 	/**
 	 * 小程序描述
@@ -42,6 +42,12 @@ public class MiniAppBaseInfoResponse extends AlipayObject {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * 小程序归属者ID
+	 */
+	@ApiField("oid")
+	private String oid;
 
 	/**
 	 * 小程序状态
@@ -82,6 +88,13 @@ public class MiniAppBaseInfoResponse extends AlipayObject {
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public String getOid() {
+		return this.oid;
+	}
+	public void setOid(String oid) {
+		this.oid = oid;
 	}
 
 	public String getStatus() {

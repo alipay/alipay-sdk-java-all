@@ -8,20 +8,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.iot.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-26 11:15:00
+ * @since 1.0, 2022-10-09 11:51:52
  */
 public class AlipayMerchantIndirectIotQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5371675778911734633L;
+	private static final long serialVersionUID = 2572272569641849351L;
 
 	/** 
-	 * 内容id，下发如果是阿里云等平台可以播报的，是一种内容id
+	 * 内容id，不同物联网平台值类型不一样
 	 */
 	@ApiField("content_id")
 	private String contentId;
 
 	/** 
-	 * 代表内容id可以播报的平台
+	 * 固定枚举值（阿里云物联网平台：ALIYUN，支付宝物联网平台：SDK）
 	 */
 	@ApiField("content_type")
 	private String contentType;

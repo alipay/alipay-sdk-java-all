@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.trusple.companycreditinquiry.submit request
  * 
  * @author auto create
- * @since 1.0, 2021-11-09 14:09:39
+ * @since 1.0, 2022-10-10 13:51:52
  */
 public class AnttechBlockchainFinanceTruspleCompanycreditinquirySubmitRequest implements AlipayRequest<AnttechBlockchainFinanceTruspleCompanycreditinquirySubmitResponse> {
 

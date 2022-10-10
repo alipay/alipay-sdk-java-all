@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户发票包的明细信息
  *
  * @author auto create
- * @since 1.0, 2020-11-05 15:06:12
+ * @since 1.0, 2022-10-10 14:32:16
  */
 public class AlipayEbppInvoiceEinvpackageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2229666412464418362L;
+	private static final long serialVersionUID = 5476685181511895714L;
 
 	/**
 	 * 加密过的uid。获取详情参见 <a href="https://opendocs.alipay.com/open/017fwh">"推"模式发票报销</a>。

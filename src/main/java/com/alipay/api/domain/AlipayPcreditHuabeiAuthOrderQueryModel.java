@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享订单查询接口
  *
  * @author auto create
- * @since 1.0, 2020-04-28 19:55:44
+ * @since 1.0, 2022-10-09 17:23:54
  */
 public class AlipayPcreditHuabeiAuthOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5481245981735471111L;
+	private static final long serialVersionUID = 3741818114817413953L;
 
 	/**
 	 * 买家在支付宝的用户id。通过userid+请求流水号组合查询时，此字段不可为空。

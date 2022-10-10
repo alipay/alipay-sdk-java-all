@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询用户碳账户月数据
  *
  * @author auto create
- * @since 1.0, 2021-11-17 16:27:59
+ * @since 1.0, 2022-10-09 11:06:51
  */
 public class AlipaySocialAntforestCarbonmonthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4668864656418266143L;
+	private static final long serialVersionUID = 7417171382114232884L;
 
 	/**
 	 * 接口文档提供的绿色场景类型

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceSportsGamesFriendlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4717283115677275744L;
+	private static final long serialVersionUID = 7581638948741592279L;
 
 	/** 
 	 * 好友信息集合

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 包裹授权关系
  *
  * @author auto create
- * @since 1.0, 2020-07-02 10:03:46
+ * @since 1.0, 2022-10-10 16:22:45
  */
 public class PkgAuthRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 6148523126688255662L;
+	private static final long serialVersionUID = 1748613947591385125L;
 
 	/**
 	 * 手机号

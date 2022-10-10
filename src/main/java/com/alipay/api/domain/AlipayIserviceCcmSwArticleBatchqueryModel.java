@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 知识库-问答-查询
  *
  * @author auto create
- * @since 1.0, 2021-01-26 15:21:23
+ * @since 1.0, 2022-10-10 12:36:48
  */
 public class AlipayIserviceCcmSwArticleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8379748519118117329L;
+	private static final long serialVersionUID = 1331882432881522879L;
 
 	/**
 	 * 所属类目ID，如果search_all_category为true则不用填

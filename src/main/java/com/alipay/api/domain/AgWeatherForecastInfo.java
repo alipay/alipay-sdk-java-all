@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 农业气象预测信息
  *
  * @author auto create
- * @since 1.0, 2022-09-27 14:30:15
+ * @since 1.0, 2022-10-08 18:19:42
  */
 public class AgWeatherForecastInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6376332186684277984L;
+	private static final long serialVersionUID = 5648494951614424481L;
+
+	/**
+	 * 数据实际日期，YYYYMMDD
+	 */
+	@ApiField("actual_date")
+	private String actualDate;
 
 	/**
 	 * 附加信息
@@ -48,6 +54,13 @@ public class AgWeatherForecastInfo extends AlipayObject {
 	 */
 	@ApiField("wind_speed")
 	private String windSpeed;
+
+	public String getActualDate() {
+		return this.actualDate;
+	}
+	public void setActualDate(String actualDate) {
+		this.actualDate = actualDate;
+	}
 
 	public String getAdditionInfo() {
 		return this.additionInfo;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取报销授权令牌
  *
  * @author auto create
- * @since 1.0, 2020-08-18 14:51:01
+ * @since 1.0, 2022-10-10 14:33:23
  */
 public class AlipayEbppInvoiceIsvtokenReimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2576763542655116256L;
+	private static final long serialVersionUID = 2385165614151323289L;
 
 	/**
 	 * 报销软件app对应的isv app code，由支付宝进行分配。详情参见 <a href="https://opendocs.alipay.com/open/017fwh">"推"模式发票报销</a>
