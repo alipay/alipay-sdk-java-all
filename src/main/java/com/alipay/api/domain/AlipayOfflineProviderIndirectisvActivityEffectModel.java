@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderIndirectisvActivityEffectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3273612143113525385L;
+	private static final long serialVersionUID = 2288646618874187991L;
 
 	/**
 	 * 活动生效时间

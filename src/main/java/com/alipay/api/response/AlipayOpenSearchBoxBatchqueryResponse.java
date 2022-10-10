@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSearchBoxBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5563436796962414931L;
+	private static final long serialVersionUID = 7194441283414333338L;
 
 	/** 
 	 * 搜索直达基础信息

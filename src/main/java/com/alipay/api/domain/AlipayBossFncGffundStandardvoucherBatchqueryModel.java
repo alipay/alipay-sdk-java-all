@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncGffundStandardvoucherBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3291983776743682792L;
+	private static final long serialVersionUID = 4637293757444357182L;
 
 	/**
 	 * 标准流水查询请求体

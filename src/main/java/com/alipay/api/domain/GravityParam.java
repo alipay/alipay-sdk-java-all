@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GravityParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1792932679369477461L;
+	private static final long serialVersionUID = 7756752939878467774L;
 
 	/**
 	 * 属性名：content+是否唯一：无需唯一+场景：多方安全风控服务参数值+枚举：无枚举值+如何获取：调用方根据不同风控产品所需参数对其加密后传入（是否加密根据数安、隐私审批结果决定，由多方安全风控平台提供）+特殊说明：如需加密，密文加密方式为AES(SHA256(data))，AES秘钥为随机生成的128位会话秘钥

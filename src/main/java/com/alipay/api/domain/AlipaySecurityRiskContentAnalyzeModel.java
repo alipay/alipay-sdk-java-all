@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityRiskContentAnalyzeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4183877223247782866L;
+	private static final long serialVersionUID = 7813425765494638443L;
 
 	/**
 	 * 内容的发表账户号，用于将需要检测的内容（文本、链接、图片、音视频）等和账户进行关联

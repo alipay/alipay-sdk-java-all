@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TemplateEvoucherDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8245953315951756191L;
+	private static final long serialVersionUID = 5214629722859761852L;
 
 	/**
 	 * 卡券特性，不同类型pass对应的特定属性

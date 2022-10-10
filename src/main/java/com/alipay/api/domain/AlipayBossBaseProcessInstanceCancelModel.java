@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossBaseProcessInstanceCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7851692123949158952L;
+	private static final long serialVersionUID = 4423756629238432792L;
 
 	/**
 	 * 备注

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CourseSKUInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5668254187248528589L;
+	private static final long serialVersionUID = 7586242262638762576L;
 
 	/**
 	 * 课程数量

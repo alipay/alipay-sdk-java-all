@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HuanxuTradeAccountserviceCardCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6483697528426668449L;
+	private static final long serialVersionUID = 3837738295413132947L;
 
 	/**
 	 * 银行卡信息
