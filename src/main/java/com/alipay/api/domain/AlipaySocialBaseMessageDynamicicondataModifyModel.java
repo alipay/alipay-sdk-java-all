@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应用中心-微动效-数据管理服务
  *
  * @author auto create
- * @since 1.0, 2022-01-10 10:44:52
+ * @since 1.0, 2022-10-12 15:59:29
  */
 public class AlipaySocialBaseMessageDynamicicondataModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3734295495231915398L;
+	private static final long serialVersionUID = 1432195552476416833L;
 
 	/**
 	 * 微动效业务编码
@@ -32,6 +32,12 @@ DEL-删除数据
 	 */
 	@ApiField("op_type")
 	private String opType;
+
+	/**
+	 * 开放身份标示id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝userId
@@ -58,6 +64,13 @@ DEL-删除数据
 	}
 	public void setOpType(String opType) {
 		this.opType = opType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

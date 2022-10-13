@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单查询
  *
  * @author auto create
- * @since 1.0, 2022-03-08 13:29:37
+ * @since 1.0, 2022-10-12 18:35:48
  */
 public class AlipayInsSceneApplicationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1114835237716821852L;
+	private static final long serialVersionUID = 7878364987892645928L;
 
 	/**
 	 * 投保订单号;当商户生成的外部投保业务号不传时则必传

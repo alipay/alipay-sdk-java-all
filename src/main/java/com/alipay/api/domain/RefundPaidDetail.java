@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 退已打款计划明细
  *
  * @author auto create
- * @since 1.0, 2021-04-25 17:10:56
+ * @since 1.0, 2022-10-13 17:21:18
  */
 public class RefundPaidDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4751256682165636785L;
+	private static final long serialVersionUID = 8659433547672394643L;
 
 	/**
 	 * 退已打款计划编号

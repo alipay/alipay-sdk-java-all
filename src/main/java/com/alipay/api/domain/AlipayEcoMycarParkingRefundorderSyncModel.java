@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车退款订单同步接口
  *
  * @author auto create
- * @since 1.0, 2022-04-29 13:58:56
+ * @since 1.0, 2022-10-12 15:39:12
  */
 public class AlipayEcoMycarParkingRefundorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6226275646564862665L;
+	private static final long serialVersionUID = 8334511577711771545L;
 
 	/**
 	 * 订单对应的车牌号

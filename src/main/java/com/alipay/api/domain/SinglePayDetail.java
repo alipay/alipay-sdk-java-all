@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小额支付单笔支付
  *
  * @author auto create
- * @since 1.0, 2022-10-10 10:41:14
+ * @since 1.0, 2022-10-13 16:07:11
  */
 public class SinglePayDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6372232248536222466L;
+	private static final long serialVersionUID = 2382671581817828833L;
 
 	/**
 	 * 支付宝冻结订单号
@@ -44,6 +44,12 @@ public class SinglePayDetail extends AlipayObject {
 	 */
 	@ApiField("pay_url")
 	private String payUrl;
+
+	/**
+	 * 收款方OpenId
+	 */
+	@ApiField("receive_open_id")
+	private String receiveOpenId;
 
 	/**
 	 * 收款人的userId
@@ -96,6 +102,13 @@ public class SinglePayDetail extends AlipayObject {
 	}
 	public void setPayUrl(String payUrl) {
 		this.payUrl = payUrl;
+	}
+
+	public String getReceiveOpenId() {
+		return this.receiveOpenId;
+	}
+	public void setReceiveOpenId(String receiveOpenId) {
+		this.receiveOpenId = receiveOpenId;
 	}
 
 	public String getReceiveUserId() {

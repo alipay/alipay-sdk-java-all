@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好友列表的模型对象
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-10-11 17:18:35
  */
 public class FriendListVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3393643541936957761L;
+	private static final long serialVersionUID = 7785334726419625666L;
 
 	/**
 	 * 头像的服务地址

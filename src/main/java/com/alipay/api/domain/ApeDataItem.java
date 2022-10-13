@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数据item
  *
  * @author auto create
- * @since 1.0, 2022-09-20 15:33:49
+ * @since 1.0, 2022-10-12 19:11:14
  */
 public class ApeDataItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5247525664673151277L;
+	private static final long serialVersionUID = 1732977854412125769L;
 
 	/**
 	 * 商品可用的城市列表
@@ -76,6 +76,12 @@ public class ApeDataItem extends AlipayObject {
 	 */
 	@ApiField("id")
 	private String id;
+
+	/**
+	 * 商品归属的小程序ID
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
 
 	/**
 	 * 需要公域推广，默认情况下为false
@@ -255,6 +261,13 @@ public class ApeDataItem extends AlipayObject {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public String getMiniAppId() {
+		return this.miniAppId;
+	}
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
 	}
 
 	public Boolean getNeedPublicPromo() {

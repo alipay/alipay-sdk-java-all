@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape推荐接口
  *
  * @author auto create
- * @since 1.0, 2022-08-05 14:43:00
+ * @since 1.0, 2022-10-12 19:28:50
  */
 public class AlipayDigitalopUcdpApeitemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8527247561413681814L;
+	private static final long serialVersionUID = 6711614534727812876L;
 
 	/**
 	 * 推荐上下文
@@ -61,7 +61,7 @@ public class AlipayDigitalopUcdpApeitemQueryModel extends AlipayObject {
 	private String relevantId;
 
 	/**
-	 * 标识一次用户会话的id，用于分页。
+	 * 标识一次用户会话的id，用于稳定分页。如果翻页过程中，item_total_count为0，说明分页数据失效，请重新请求第一页以刷新数据。
 	 */
 	@ApiField("session_id")
 	private String sessionId;

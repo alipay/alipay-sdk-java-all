@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.channel.consult response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-21 20:01:42
+ * @since 1.0, 2022-10-11 11:16:52
  */
 public class AlipayPayAppChannelConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8389942316479823364L;
+	private static final long serialVersionUID = 5285191387399862741L;
 
 	/** 
 	 * 渠道信息列表
@@ -30,6 +30,12 @@ public class AlipayPayAppChannelConsultResponse extends AlipayResponse {
 	@ApiField("pre_consult_id")
 	private String preConsultId;
 
+	/** 
+	 * 虚拟账号
+	 */
+	@ApiField("virtual_alipay_user_id")
+	private String virtualAlipayUserId;
+
 	public void setChannelInfoList(List<ChannelInfo> channelInfoList) {
 		this.channelInfoList = channelInfoList;
 	}
@@ -42,6 +48,13 @@ public class AlipayPayAppChannelConsultResponse extends AlipayResponse {
 	}
 	public String getPreConsultId( ) {
 		return this.preConsultId;
+	}
+
+	public void setVirtualAlipayUserId(String virtualAlipayUserId) {
+		this.virtualAlipayUserId = virtualAlipayUserId;
+	}
+	public String getVirtualAlipayUserId( ) {
+		return this.virtualAlipayUserId;
 	}
 
 }

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.validate response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 11:48:09
+ * @since 1.0, 2022-10-12 17:01:50
  */
 public class AlipayUserValidateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5367575411795751768L;
+	private static final long serialVersionUID = 5237548517176455314L;
 
 	/** 
 	 * 支付宝userId
@@ -25,6 +25,12 @@ public class AlipayUserValidateResponse extends AlipayResponse {
 	 */
 	@ApiField("certified")
 	private String certified;
+
+	/** 
+	 * 支付宝OpenId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 隐藏的真实姓名，如 *三(张三)
@@ -44,6 +50,13 @@ public class AlipayUserValidateResponse extends AlipayResponse {
 	}
 	public String getCertified( ) {
 		return this.certified;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setRealName(String realName) {

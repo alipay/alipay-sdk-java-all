@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退税单创建
  *
  * @author auto create
- * @since 1.0, 2020-09-16 14:13:15
+ * @since 1.0, 2022-10-11 17:05:59
  */
 public class AlipayOverseasTaxNeworderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3878552771945659643L;
+	private static final long serialVersionUID = 1858556733758553327L;
 
 	/**
 	 * 支付宝userId

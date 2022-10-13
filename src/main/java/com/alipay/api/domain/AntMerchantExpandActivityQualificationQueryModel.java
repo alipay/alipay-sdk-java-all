@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家服务活动平台活动资格查询
  *
  * @author auto create
- * @since 1.0, 2022-09-27 11:02:32
+ * @since 1.0, 2022-10-11 11:35:12
  */
 public class AntMerchantExpandActivityQualificationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4618358753125743526L;
+	private static final long serialVersionUID = 4352876729714485348L;
 
 	/**
 	 * 商家活动平台活动编码

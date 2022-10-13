@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.dish.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 18:24:25
+ * @since 1.0, 2022-10-11 12:02:49
  */
 public class AlipayOfflineProviderDishQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4632876165552584919L;
+	private static final long serialVersionUID = 6816978273986318921L;
 
 	/** 
 	 * 总共有多少条菜品信息。可用于计算分页。

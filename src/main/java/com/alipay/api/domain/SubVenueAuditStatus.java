@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 子场馆审核状态
  *
  * @author auto create
- * @since 1.0, 2021-04-01 15:36:15
+ * @since 1.0, 2022-10-13 15:25:32
  */
 public class SubVenueAuditStatus extends AlipayObject {
 
-	private static final long serialVersionUID = 1617215639144756998L;
+	private static final long serialVersionUID = 1458942673755911723L;
 
 	/**
 	 * 服务商对应的子场馆ID

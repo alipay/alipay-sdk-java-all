@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联商户运营活动报名接口
  *
  * @author auto create
- * @since 1.0, 2021-08-31 02:53:33
+ * @since 1.0, 2022-10-13 10:10:35
  */
 public class AntMerchantExpandIndirectActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6892922837316692257L;
+	private static final long serialVersionUID = 5749661821621695367L;
 
 	/**
 	 * 活动类型，间连商户报名的支付宝活动类型。

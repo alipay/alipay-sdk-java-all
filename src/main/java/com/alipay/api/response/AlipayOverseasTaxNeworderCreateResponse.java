@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.neworder.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:51
+ * @since 1.0, 2022-10-11 17:05:59
  */
 public class AlipayOverseasTaxNeworderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3524881617996638152L;
+	private static final long serialVersionUID = 7165698147673676591L;
 
 	/** 
 	 * 纸质退税单号

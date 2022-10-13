@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券模板预算查询
  *
  * @author auto create
- * @since 1.0, 2021-02-01 11:19:11
+ * @since 1.0, 2022-10-12 19:39:11
  */
 public class AlipayAssetVoucherTemplateInfoQuerybudgetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8753656966495551922L;
+	private static final long serialVersionUID = 5466544745513582747L;
 
 	/**
 	 * 是否查询实时数据，true：查询实时数据，false：查询非实时数据(5分钟延迟)

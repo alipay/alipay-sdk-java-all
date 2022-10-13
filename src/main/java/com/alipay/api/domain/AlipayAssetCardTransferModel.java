@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.asset.card.transfer(外部商户标准卡资产转移)
  *
  * @author auto create
- * @since 1.0, 2019-04-28 14:48:45
+ * @since 1.0, 2022-10-12 19:38:08
  */
 public class AlipayAssetCardTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3497845697477981571L;
+	private static final long serialVersionUID = 7855392193181391486L;
 
 	/**
 	 * 转移金额，单位元

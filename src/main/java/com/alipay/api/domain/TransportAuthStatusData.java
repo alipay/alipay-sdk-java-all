@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出行授权状态数据
  *
  * @author auto create
- * @since 1.0, 2021-12-28 16:35:13
+ * @since 1.0, 2022-10-13 15:28:56
  */
 public class TransportAuthStatusData extends AlipayObject {
 
-	private static final long serialVersionUID = 2394248436195762226L;
+	private static final long serialVersionUID = 8853724996516191988L;
 
 	/**
 	 * 授权状态。取值枚举为authed、unauthed。分别表示已授权、未授权

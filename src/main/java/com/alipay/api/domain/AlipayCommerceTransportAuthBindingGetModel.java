@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询授权状态
  *
  * @author auto create
- * @since 1.0, 2022-08-22 20:13:49
+ * @since 1.0, 2022-10-13 10:40:44
  */
 public class AlipayCommerceTransportAuthBindingGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5842324638515255214L;
+	private static final long serialVersionUID = 2385697988876232129L;
 
 	/**
 	 * 支付宝证件类型

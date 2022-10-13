@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销活动人群活动消耗回调
  *
  * @author auto create
- * @since 1.0, 2022-09-15 09:37:16
+ * @since 1.0, 2022-10-11 15:12:14
  */
 public class AnttechMorseMarketingRtaCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4197744931341417925L;
+	private static final long serialVersionUID = 3411158786283143454L;
 
 	/**
 	 * 活动id描述用户使用这个活动消耗预算，该活动必须是被场景侧曝光过的活动

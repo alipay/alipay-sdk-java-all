@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阿里云保险管家对话同步审核接口
  *
  * @author auto create
- * @since 1.0, 2022-09-28 16:46:23
+ * @since 1.0, 2022-10-12 10:38:13
  */
 public class AlipayFincoreComplianceRcsmartQtdialogueCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4676551139382391952L;
+	private static final long serialVersionUID = 4896424297916277421L;
 
 	/**
 	 * app_name为调用方系统名称(英文名称),与分配的app_token一起做调用系统合法性校验。

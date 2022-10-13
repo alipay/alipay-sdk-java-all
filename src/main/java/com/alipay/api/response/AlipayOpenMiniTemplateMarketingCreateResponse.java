@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.template.marketing.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-30 17:13:25
+ * @since 1.0, 2022-10-11 19:26:50
  */
 public class AlipayOpenMiniTemplateMarketingCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5453664119961244964L;
+	private static final long serialVersionUID = 3594653519583383856L;
 
-	
+	/** 
+	 * 投放详情主键id
+	 */
+	@ApiField("detail_id")
+	private String detailId;
 
-	
+	public void setDetailId(String detailId) {
+		this.detailId = detailId;
+	}
+	public String getDetailId( ) {
+		return this.detailId;
+	}
 
 }

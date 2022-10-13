@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销-SRTA活动非匿名人群查询
  *
  * @author auto create
- * @since 1.0, 2022-06-21 15:36:47
+ * @since 1.0, 2022-10-11 15:11:48
  */
 public class AnttechMorseMarketingSrtaNonanonymousQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6656411542899621176L;
+	private static final long serialVersionUID = 2775469114849181784L;
 
 	/**
 	 * 扩展字段
@@ -21,10 +21,17 @@ public class AnttechMorseMarketingSrtaNonanonymousQueryModel extends AlipayObjec
 
 	/**
 	 * 手机号 hash后的值；
- uid和mobile_sha_256二选一
+ open_id和mobile_sha_256二选一
 	 */
 	@ApiField("mobile_sha_256")
 	private String mobileSha256;
+
+	/**
+	 * 支付宝用户的open_id， open_id和
+mobile_sha256二选一
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单金额
@@ -39,8 +46,7 @@ public class AnttechMorseMarketingSrtaNonanonymousQueryModel extends AlipayObjec
 	private String reqId;
 
 	/**
-	 * 用户id，可以使用2088账号，可以使用hash后的匿名用户id是； uid和
-mobile_sha256二选一
+	 * 用户id，后面将废弃
 	 */
 	@ApiField("uid")
 	private String uid;
@@ -57,6 +63,13 @@ mobile_sha256二选一
 	}
 	public void setMobileSha256(String mobileSha256) {
 		this.mobileSha256 = mobileSha256;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderAmount() {

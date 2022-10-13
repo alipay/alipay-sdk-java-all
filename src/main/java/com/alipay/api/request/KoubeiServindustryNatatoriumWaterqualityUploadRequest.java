@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.servindustry.natatorium.waterquality.upload request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:40:34
+ * @since 1.0, 2022-10-11 12:10:25
  */
 public class KoubeiServindustryNatatoriumWaterqualityUploadRequest implements AlipayRequest<KoubeiServindustryNatatoriumWaterqualityUploadResponse> {
 

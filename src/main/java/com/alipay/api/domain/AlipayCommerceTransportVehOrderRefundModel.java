@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车主订单退款
  *
  * @author auto create
- * @since 1.0, 2021-06-05 19:36:10
+ * @since 1.0, 2022-10-13 16:03:37
  */
 public class AlipayCommerceTransportVehOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3442599111217377458L;
+	private static final long serialVersionUID = 8182224112714243843L;
 
 	/**
 	 * 车主系统订单号，商户订单同步到车主系统时，会在获取到此订单号。请注意，该订单号属于车主系统业务订单号。

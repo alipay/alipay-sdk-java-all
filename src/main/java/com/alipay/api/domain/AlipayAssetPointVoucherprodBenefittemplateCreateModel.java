@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建权益模板
  *
  * @author auto create
- * @since 1.0, 2021-04-27 23:57:38
+ * @since 1.0, 2022-10-12 19:38:03
  */
 public class AlipayAssetPointVoucherprodBenefittemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4438971368548849711L;
+	private static final long serialVersionUID = 3464656967839375423L;
 
 	/**
 	 * 资产类型，要创建的资产的类型，BENEFIT_TEMPLATE表示权益模板，由支付宝权益结算平台定义

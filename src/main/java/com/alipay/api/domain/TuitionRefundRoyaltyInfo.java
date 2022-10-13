@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学费码退分账信息
  *
  * @author auto create
- * @since 1.0, 2021-04-21 11:57:06
+ * @since 1.0, 2022-10-13 17:21:18
  */
 public class TuitionRefundRoyaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1376247748843765623L;
+	private static final long serialVersionUID = 8369996121323862436L;
 
 	/**
 	 * 退分账金额，单位元

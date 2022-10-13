@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户授权状态API
  *
  * @author auto create
- * @since 1.0, 2021-10-25 13:09:33
+ * @since 1.0, 2022-10-12 15:55:49
  */
 public class AlipayEcoMycarUserAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4789746983697586854L;
+	private static final long serialVersionUID = 5722191728642371723L;
 
 	/**
 	 * 支付宝用户ID

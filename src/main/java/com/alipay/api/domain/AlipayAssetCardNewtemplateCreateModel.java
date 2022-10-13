@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部商户标准卡模板创建
  *
  * @author auto create
- * @since 1.0, 2022-03-01 22:12:23
+ * @since 1.0, 2022-10-12 19:37:41
  */
 public class AlipayAssetCardNewtemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4624898526564918897L;
+	private static final long serialVersionUID = 2116785793554532788L;
 
 	/**
 	 * 账户模式：借记/贷记/借贷合一账户模式

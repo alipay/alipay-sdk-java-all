@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑菜品热度查询
  *
  * @author auto create
- * @since 1.0, 2017-07-03 14:41:32
+ * @since 1.0, 2022-10-11 12:02:49
  */
 public class AlipayOfflineProviderDishQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4458951964581269715L;
+	private static final long serialVersionUID = 4573387768297432631L;
 
 	/**
 	 * 数据是根据alipay.offline.provider.shopaction.record的插入菜品接口获取，对应字段是：dishTypeName。

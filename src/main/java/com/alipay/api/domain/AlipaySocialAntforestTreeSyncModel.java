@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步外部证书到蚂蚁森林
  *
  * @author auto create
- * @since 1.0, 2022-10-09 11:11:34
+ * @since 1.0, 2022-10-12 20:27:49
  */
 public class AlipaySocialAntforestTreeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5681459211324765538L;
+	private static final long serialVersionUID = 8488343974643952522L;
 
 	/**
 	 * 待同步的证书的来源账户id
@@ -30,6 +30,12 @@ public class AlipaySocialAntforestTreeSyncModel extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 待同步证书的所属用户，蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 待同步证书的所属用户，蚂蚁统一会员ID
@@ -56,6 +62,13 @@ public class AlipaySocialAntforestTreeSyncModel extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

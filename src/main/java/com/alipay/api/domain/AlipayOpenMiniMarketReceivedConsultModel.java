@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 全域营销投放下指定用户是否领券校验
  *
  * @author auto create
- * @since 1.0, 2022-06-07 11:58:47
+ * @since 1.0, 2022-10-13 14:38:16
  */
 public class AlipayOpenMiniMarketReceivedConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5387678372744275776L;
+	private static final long serialVersionUID = 7675535615324784457L;
 
 	/**
 	 * 投放活动id
@@ -34,6 +34,12 @@ public class AlipayOpenMiniMarketReceivedConsultModel extends AlipayObject {
 	 */
 	@ApiField("multi_deliver")
 	private Boolean multiDeliver;
+
+	/**
+	 * 商户小程序中的用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -60,6 +66,13 @@ public class AlipayOpenMiniMarketReceivedConsultModel extends AlipayObject {
 	}
 	public void setMultiDeliver(Boolean multiDeliver) {
 		this.multiDeliver = multiDeliver;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

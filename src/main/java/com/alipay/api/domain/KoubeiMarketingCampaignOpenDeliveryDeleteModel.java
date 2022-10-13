@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv删除店铺自定义展示内容的接口
  *
  * @author auto create
- * @since 1.0, 2018-01-17 14:48:17
+ * @since 1.0, 2022-10-11 12:00:07
  */
 public class KoubeiMarketingCampaignOpenDeliveryDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1676272983922253474L;
+	private static final long serialVersionUID = 6273889413742324936L;
 
 	/**
 	 * 要删除店铺页投放内容的类型。目前支持的类型有：1. gift_card

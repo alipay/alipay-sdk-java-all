@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 超级导购券模版信息 
  *
  * @author auto create
- * @since 1.0, 2022-05-27 17:06:44
+ * @since 1.0, 2022-10-11 17:40:17
  */
 public class YunTaskVoucherTemplateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3576987893944931662L;
+	private static final long serialVersionUID = 6779565163346735225L;
 
 	/**
 	 * 模板创建时间。格式为：yyyy-MM-dd HH:mm:ss

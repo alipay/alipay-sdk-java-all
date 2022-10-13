@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑智慧餐厅精准营销用户人群分组操作接口
  *
  * @author auto create
- * @since 1.0, 2018-04-04 15:13:40
+ * @since 1.0, 2022-10-11 12:06:33
  */
 public class KoubeiCateringCrowdgroupConditionSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7273346915273916365L;
+	private static final long serialVersionUID = 6531864467124575925L;
 
 	/**
 	 * 人群规则（创建，更新的时候必填）

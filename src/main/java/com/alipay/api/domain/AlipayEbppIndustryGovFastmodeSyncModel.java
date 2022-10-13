@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 政务快速接入同步接口
  *
  * @author auto create
- * @since 1.0, 2022-07-26 17:19:46
+ * @since 1.0, 2022-10-12 14:48:21
  */
 public class AlipayEbppIndustryGovFastmodeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8477669983641238875L;
+	private static final long serialVersionUID = 4514998484243916567L;
 
 	/**
 	 * 业务类型
@@ -34,6 +34,12 @@ public class AlipayEbppIndustryGovFastmodeSyncModel extends AlipayObject {
 	@ApiListField("keyword_list")
 	@ApiField("common_keyword")
 	private List<CommonKeyword> keywordList;
+
+	/**
+	 * 蚂蚁开放平台OpenId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 机构编码，bizType的二级分类，不传默认为“normal”
@@ -66,6 +72,13 @@ public class AlipayEbppIndustryGovFastmodeSyncModel extends AlipayObject {
 	}
 	public void setKeywordList(List<CommonKeyword> keywordList) {
 		this.keywordList = keywordList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrgCode() {

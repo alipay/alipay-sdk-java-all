@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集分宝积分库查询
  *
  * @author auto create
- * @since 1.0, 2019-08-29 17:45:49
+ * @since 1.0, 2022-10-12 19:35:00
  */
 public class AlipayAssetPointPointprodPointlibQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8658238352846132785L;
+	private static final long serialVersionUID = 4558866922973863539L;
 
 	/**
 	 * 集分宝积分库ID

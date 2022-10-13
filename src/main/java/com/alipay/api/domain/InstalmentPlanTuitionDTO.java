@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分期扣款任务列表
  *
  * @author auto create
- * @since 1.0, 2020-10-26 13:20:31
+ * @since 1.0, 2022-10-13 18:37:07
  */
 public class InstalmentPlanTuitionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8416168212935698446L;
+	private static final long serialVersionUID = 3447664494245124553L;
 
 	/**
 	 * 扣款金额， 类似11.12格式

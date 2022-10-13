@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.bike.energy.query request
  * 
  * @author auto create
- * @since 1.0, 2022-08-04 19:51:38
+ * @since 1.0, 2022-10-13 10:51:22
  */
 public class AlipayCommerceTransportBikeEnergyQueryRequest implements AlipayRequest<AlipayCommerceTransportBikeEnergyQueryResponse> {
 

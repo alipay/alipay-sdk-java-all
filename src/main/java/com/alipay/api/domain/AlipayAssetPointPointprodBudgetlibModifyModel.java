@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预算库有效期修改
  *
  * @author auto create
- * @since 1.0, 2019-08-29 17:46:37
+ * @since 1.0, 2022-10-12 19:35:06
  */
 public class AlipayAssetPointPointprodBudgetlibModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7727726616546324751L;
+	private static final long serialVersionUID = 6345177417646894481L;
 
 	/**
 	 * 预算库编码

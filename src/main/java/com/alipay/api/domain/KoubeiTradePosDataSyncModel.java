@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一体机全量数据回流
  *
  * @author auto create
- * @since 1.0, 2019-03-27 16:37:57
+ * @since 1.0, 2022-10-11 12:05:54
  */
 public class KoubeiTradePosDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5638162692524812898L;
+	private static final long serialVersionUID = 5237455578891221158L;
 
 	/**
 	 * 回流规则码，不同的规则码对应不同的回流规范，枚举如下

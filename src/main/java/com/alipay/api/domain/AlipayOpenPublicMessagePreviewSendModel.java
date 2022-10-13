@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预览消息发送接口
  *
  * @author auto create
- * @since 1.0, 2020-07-03 23:41:41
+ * @since 1.0, 2022-10-12 17:24:48
  */
 public class AlipayOpenPublicMessagePreviewSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8117868665964777169L;
+	private static final long serialVersionUID = 2498116842561747389L;
 
 	/**
 	 * 预览用户登录id列表，每次做多发送5个用户，且这5个用户必须是生活号的管理员或者是操作员。多个 id 用 "," 分隔。

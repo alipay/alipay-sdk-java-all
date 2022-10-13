@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 地铁购票发码退款
  *
  * @author auto create
- * @since 1.0, 2019-10-10 16:32:08
+ * @since 1.0, 2022-10-12 19:57:34
  */
 public class AlipayCommerceCityfacilitatorVoucherRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1239276912182479798L;
+	private static final long serialVersionUID = 5665422648679372325L;
 
 	/**
 	 * 城市编码请参考查询 <a href="http://www.mca.gov.cn/article/sj/xzqh/">中华人民共和国行政区划代码</a>。

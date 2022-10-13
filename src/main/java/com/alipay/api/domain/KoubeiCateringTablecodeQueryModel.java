@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扫一扫查询桌码信息
  *
  * @author auto create
- * @since 1.0, 2017-06-15 23:44:52
+ * @since 1.0, 2022-10-11 12:08:03
  */
 public class KoubeiCateringTablecodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1765825619455835948L;
+	private static final long serialVersionUID = 7625611749928118512L;
 
 	/**
 	 * 用户在isv界面通过扫一扫传入的url文本

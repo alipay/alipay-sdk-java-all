@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.card.account.close response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-07 17:07:12
+ * @since 1.0, 2022-10-12 19:37:10
  */
 public class AlipayAssetCardAccountCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5812193882899994254L;
+	private static final long serialVersionUID = 5884898741214777598L;
 
 	
 

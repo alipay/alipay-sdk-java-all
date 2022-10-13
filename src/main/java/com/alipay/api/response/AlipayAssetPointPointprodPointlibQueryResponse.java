@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.pointprod.pointlib.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-08-30 17:14:12
+ * @since 1.0, 2022-10-12 19:35:00
  */
 public class AlipayAssetPointPointprodPointlibQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4561343535568643858L;
+	private static final long serialVersionUID = 4846219922732446364L;
 
 	/** 
 	 * 集分宝积分库查询结果，包含积分库ID，名称，余额等

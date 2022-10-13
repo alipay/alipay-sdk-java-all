@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分流水信息
  *
  * @author auto create
- * @since 1.0, 2022-03-17 15:19:32
+ * @since 1.0, 2022-10-11 17:40:22
  */
 public class PointInstruction extends AlipayObject {
 
-	private static final long serialVersionUID = 1745856924141496858L;
+	private static final long serialVersionUID = 4866197443752358763L;
 
 	/**
 	 * 流水动作

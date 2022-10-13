@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.station.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-02 11:20:17
+ * @since 1.0, 2022-10-12 19:58:52
  */
 public class AlipayCommerceCityfacilitatorStationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1543243846887645384L;
+	private static final long serialVersionUID = 1149191729785962637L;
 
 	/** 
 	 * 支持设为起点的站点列表

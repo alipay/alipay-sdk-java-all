@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.natatorium.waterquality.upload response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:40:34
+ * @since 1.0, 2022-10-11 12:10:25
  */
 public class KoubeiServindustryNatatoriumWaterqualityUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4363677829735351627L;
+	private static final long serialVersionUID = 6698271986588675328L;
 
 	
 

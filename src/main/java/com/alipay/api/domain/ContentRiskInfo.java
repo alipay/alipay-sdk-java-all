@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 风险内容信息
  *
  * @author auto create
- * @since 1.0, 2022-08-23 19:47:49
+ * @since 1.0, 2022-10-13 10:23:15
  */
 public class ContentRiskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4729175531812328684L;
+	private static final long serialVersionUID = 7652335283441298885L;
 
 	/**
 	 * 文件类型
@@ -47,6 +47,13 @@ url方式传输
 	@ApiListField("risk_info_list")
 	@ApiField("risk_info")
 	private List<RiskInfo> riskInfoList;
+
+	/**
+	 * 子素材风险信息列表
+	 */
+	@ApiListField("sub_content_risk_info_list")
+	@ApiField("sub_content_risk_info")
+	private List<SubContentRiskInfo> subContentRiskInfoList;
 
 	public String getContentFileType() {
 		return this.contentFileType;
@@ -81,6 +88,13 @@ url方式传输
 	}
 	public void setRiskInfoList(List<RiskInfo> riskInfoList) {
 		this.riskInfoList = riskInfoList;
+	}
+
+	public List<SubContentRiskInfo> getSubContentRiskInfoList() {
+		return this.subContentRiskInfoList;
+	}
+	public void setSubContentRiskInfoList(List<SubContentRiskInfo> subContentRiskInfoList) {
+		this.subContentRiskInfoList = subContentRiskInfoList;
 	}
 
 }

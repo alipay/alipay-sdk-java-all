@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解语花审核内容类
  *
  * @author auto create
- * @since 1.0, 2022-08-26 11:07:03
+ * @since 1.0, 2022-10-13 10:11:05
  */
 public class RcsmartAuditContent extends AlipayObject {
 
-	private static final long serialVersionUID = 8541518164337338711L;
+	private static final long serialVersionUID = 5613945758992722135L;
 
 	/**
 	 * 素材业务类型，默认default。特殊场景需根据规则约定勿随意填写，随意填写会导致审核异常。
@@ -31,7 +31,7 @@ PICTURE传外部url，图片文件建议不超过4M,单张传入图像最短边�
 	/**
 	 * 素材传输方式,枚举
 目前支持
-文字-WORDS/图片-PICTURE
+文字-WORDS/图片-PICTURE/音频-VOICE/文件-FILE
 	 */
 	@ApiField("content_type")
 	private String contentType;

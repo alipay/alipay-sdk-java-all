@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流水查询
  *
  * @author auto create
- * @since 1.0, 2021-04-27 23:58:35
+ * @since 1.0, 2022-10-12 19:38:26
  */
 public class AlipayAssetPointVoucherprodAssetbillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2588433458456938368L;
+	private static final long serialVersionUID = 1649885966262165865L;
 
 	/**
 	 * 资产id，要查询流水的模版id

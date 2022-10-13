@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链资产还款证明
  *
  * @author auto create
- * @since 1.0, 2021-08-16 10:24:10
+ * @since 1.0, 2022-10-12 12:46:18
  */
 public class AnttechBlockchainFinanceAssetRepaymentProveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2826912361548721276L;
+	private static final long serialVersionUID = 5597368732542479384L;
 
 	/**
 	 * 资产包ID

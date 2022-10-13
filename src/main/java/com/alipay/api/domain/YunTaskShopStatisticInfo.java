@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 超级导购任务门店维度统计数据
  *
  * @author auto create
- * @since 1.0, 2022-06-27 14:24:32
+ * @since 1.0, 2022-10-11 17:39:19
  */
 public class YunTaskShopStatisticInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5521427594728611172L;
+	private static final long serialVersionUID = 8573145628375685225L;
 
 	/**
 	 * 任务总领取数

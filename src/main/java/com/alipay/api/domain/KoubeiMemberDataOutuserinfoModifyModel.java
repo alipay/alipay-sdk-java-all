@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑第三方用户信息更新接口
  *
  * @author auto create
- * @since 1.0, 2019-02-21 16:44:01
+ * @since 1.0, 2022-10-11 11:58:58
  */
 public class KoubeiMemberDataOutuserinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5457899363276257377L;
+	private static final long serialVersionUID = 2394999664498847972L;
 
 	/**
 	 * http://avatar_url.com

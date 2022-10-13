@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上拉包接口
  *
  * @author auto create
- * @since 1.0, 2019-09-16 11:48:31
+ * @since 1.0, 2022-10-11 10:59:15
  */
 public class AlipayOpenMiniDeploypackageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3151585191745767725L;
+	private static final long serialVersionUID = 6177674349156287395L;
 
 	/**
 	 * 端标识
@@ -60,6 +60,12 @@ public class AlipayOpenMiniDeploypackageQueryModel extends AlipayObject {
 	 */
 	@ApiField("local_app_info")
 	private String localAppInfo;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 平台标识
@@ -169,6 +175,13 @@ public class AlipayOpenMiniDeploypackageQueryModel extends AlipayObject {
 	}
 	public void setLocalAppInfo(String localAppInfo) {
 		this.localAppInfo = localAppInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPlatform() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 咨询对应账户是否能够兑换相应的项目
  *
  * @author auto create
- * @since 1.0, 2022-10-09 11:12:13
+ * @since 1.0, 2022-10-12 21:20:15
  */
 public class AlipaySocialAntforestPlantConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6576525832282172998L;
+	private static final long serialVersionUID = 1817875457986489956L;
 
 	/**
 	 * 出账购买树种的账户id
@@ -24,6 +24,12 @@ public class AlipaySocialAntforestPlantConsultModel extends AlipayObject {
 	 */
 	@ApiField("apply_type")
 	private String applyType;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 项目id，需要配合其他查询接口，查询到相关的项目之后使用。不限于树种，还包括保护地等
@@ -49,6 +55,13 @@ public class AlipaySocialAntforestPlantConsultModel extends AlipayObject {
 	}
 	public void setApplyType(String applyType) {
 		this.applyType = applyType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProjectId() {

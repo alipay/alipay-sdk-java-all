@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PosBillPayChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 1114444222666387383L;
+	private static final long serialVersionUID = 4353143841432436528L;
 
 	/**
 	 * 支付渠道类型:

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户集分宝流水明细查询
  *
  * @author auto create
- * @since 1.0, 2016-05-25 12:03:12
+ * @since 1.0, 2022-10-12 19:35:43
  */
 public class AlipayAssetPointAccountlogQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8275677633664982972L;
+	private static final long serialVersionUID = 8779157659293579836L;
 
 	/**
 	 * 用户流水查询起始时间

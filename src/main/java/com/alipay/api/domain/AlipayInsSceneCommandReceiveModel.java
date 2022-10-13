@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 命令接收
  *
  * @author auto create
- * @since 1.0, 2022-03-28 17:19:13
+ * @since 1.0, 2022-10-12 18:36:07
  */
 public class AlipayInsSceneCommandReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3519573726657694623L;
+	private static final long serialVersionUID = 5837326745867291449L;
 
 	/**
 	 * 命令对象

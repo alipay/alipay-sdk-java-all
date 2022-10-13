@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * isv订购口碑插件接口
  *
  * @author auto create
- * @since 1.0, 2018-03-23 14:20:46
+ * @since 1.0, 2022-10-11 12:10:09
  */
 public class KoubeiCateringCommodityOrderBuyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7626569297253319347L;
+	private static final long serialVersionUID = 2888256573887981199L;
 
 	/**
 	 * 订购服务时订购人id(订购人是操作员的时候，agent_Id为操作员个人Id)

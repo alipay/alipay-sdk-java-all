@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 社保动账数据回流
  *
  * @author auto create
- * @since 1.0, 2021-03-10 12:04:36
+ * @since 1.0, 2022-10-12 15:38:23
  */
 public class AlipayEcoMedicalcareSiDataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6832318484742817397L;
+	private static final long serialVersionUID = 3565695817357359242L;
 
 	/**
 	 * 场景标识

@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体afts平台视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2022-09-26 11:18:43
+ * @since 1.0, 2022-10-11 17:07:49
  */
 public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7314758654355816671L;
+	private static final long serialVersionUID = 3896213998766463545L;
+
+	/**
+	 * 货柜类型，static为静态货柜，dynamic为动态货柜
+	 */
+	@ApiField("device_identify_type")
+	private String deviceIdentifyType;
 
 	/**
 	 * 商品信息,列表
@@ -71,6 +77,13 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	@ApiListField("weight_template")
 	@ApiField("weight_floor")
 	private List<WeightFloor> weightTemplate;
+
+	public String getDeviceIdentifyType() {
+		return this.deviceIdentifyType;
+	}
+	public void setDeviceIdentifyType(String deviceIdentifyType) {
+		this.deviceIdentifyType = deviceIdentifyType;
+	}
 
 	public List<GoodInfo> getGoodsInfos() {
 		return this.goodsInfos;

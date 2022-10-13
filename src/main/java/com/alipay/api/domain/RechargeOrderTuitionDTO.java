@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 学费码充值订单
  *
  * @author auto create
- * @since 1.0, 2020-10-27 10:54:13
+ * @since 1.0, 2022-10-13 18:37:07
  */
 public class RechargeOrderTuitionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1431382487476993499L;
+	private static final long serialVersionUID = 3497642747391344165L;
 
 	/**
 	 * 订单创建时间

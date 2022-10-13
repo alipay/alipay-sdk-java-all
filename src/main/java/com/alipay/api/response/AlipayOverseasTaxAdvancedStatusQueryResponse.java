@@ -9,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.advanced.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-08 11:26:16
+ * @since 1.0, 2022-10-12 13:46:48
  */
 public class AlipayOverseasTaxAdvancedStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1379732416373352635L;
+	private static final long serialVersionUID = 2828189369261719614L;
 
 	/** 
 	 * 用付款码下单并冻结成功后会返回支付宝用户id
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/** 
+	 * 用付款码下单并冻结成功后会返回支付宝用户openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 退税机构业务流水号
@@ -57,6 +63,13 @@ public class AlipayOverseasTaxAdvancedStatusQueryResponse extends AlipayResponse
 	}
 	public String getAlipayUserId( ) {
 		return this.alipayUserId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutTaxRefundNo(String outTaxRefundNo) {

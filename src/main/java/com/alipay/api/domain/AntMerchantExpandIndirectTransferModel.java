@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连商户转移给银联网联接口
  *
  * @author auto create
- * @since 1.0, 2021-06-17 10:40:11
+ * @since 1.0, 2022-10-12 20:10:35
  */
 public class AntMerchantExpandIndirectTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6558369216253986739L;
+	private static final long serialVersionUID = 2744934472793655185L;
 
 	/**
 	 * 商户编号，由机构定义，需要保证在机构下唯一，与sub_merchant_id二选一

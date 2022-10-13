@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-09-20 15:33:49
+ * @since 1.0, 2022-10-12 19:11:14
  */
 public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4338931858834856578L;
+	private static final long serialVersionUID = 2149638876876766324L;
 
 	/**
 	 * 内容数据的列表
@@ -35,6 +35,13 @@ public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 	 */
 	@ApiField("data_type")
 	private String dataType;
+
+	/**
+	 * 通用物品列表
+	 */
+	@ApiListField("generic_item_list")
+	@ApiField("ape_generic_item")
+	private List<ApeGenericItem> genericItemList;
 
 	/**
 	 * 商家在蚂蚁推荐引擎创建的项目id，调用前需要找蚂蚁技术获取。
@@ -68,6 +75,13 @@ public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 	}
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
+	}
+
+	public List<ApeGenericItem> getGenericItemList() {
+		return this.genericItemList;
+	}
+	public void setGenericItemList(List<ApeGenericItem> genericItemList) {
+		this.genericItemList = genericItemList;
 	}
 
 	public String getProjectId() {

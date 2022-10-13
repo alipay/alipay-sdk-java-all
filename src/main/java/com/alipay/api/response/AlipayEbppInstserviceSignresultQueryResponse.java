@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.signresult.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-30 14:16:41
+ * @since 1.0, 2022-10-13 15:47:02
  */
 public class AlipayEbppInstserviceSignresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2519324468159835645L;
+	private static final long serialVersionUID = 6343814136166876315L;
 
 	/** 
 	 * 支付宝签约协议id
@@ -26,6 +26,12 @@ public class AlipayEbppInstserviceSignresultQueryResponse extends AlipayResponse
 	 */
 	@ApiField("bill_key")
 	private String billKey;
+
+	/** 
+	 * 代扣金额，单位：元
+	 */
+	@ApiField("deduct_amount")
+	private String deductAmount;
 
 	/** 
 	 * 签约机构编码
@@ -87,6 +93,13 @@ public class AlipayEbppInstserviceSignresultQueryResponse extends AlipayResponse
 	}
 	public String getBillKey( ) {
 		return this.billKey;
+	}
+
+	public void setDeductAmount(String deductAmount) {
+		this.deductAmount = deductAmount;
+	}
+	public String getDeductAmount( ) {
+		return this.deductAmount;
 	}
 
 	public void setInstId(String instId) {

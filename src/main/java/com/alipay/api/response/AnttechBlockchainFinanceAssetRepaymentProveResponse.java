@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.asset.repayment.prove response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-16 10:25:25
+ * @since 1.0, 2022-10-12 12:46:18
  */
 public class AnttechBlockchainFinanceAssetRepaymentProveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6267683596124747621L;
+	private static final long serialVersionUID = 7261387257888531424L;
 
 	/** 
 	 * 是否受理

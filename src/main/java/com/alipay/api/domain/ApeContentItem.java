@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容数据的结构
  *
  * @author auto create
- * @since 1.0, 2022-09-20 15:33:49
+ * @since 1.0, 2022-10-12 19:11:14
  */
 public class ApeContentItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5469996994145763324L;
+	private static final long serialVersionUID = 3851737127362942417L;
 
 	/**
 	 * 作者粉丝数
@@ -126,6 +126,12 @@ public class ApeContentItem extends AlipayObject {
 	 */
 	@ApiField("location_tag")
 	private String locationTag;
+
+	/**
+	 * 商品归属的小程序ID
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
 
 	/**
 	 * 可选	图片url，如果多张图，头图放在前面，使用$##$链接多个url
@@ -354,6 +360,13 @@ public class ApeContentItem extends AlipayObject {
 	}
 	public void setLocationTag(String locationTag) {
 		this.locationTag = locationTag;
+	}
+
+	public String getMiniAppId() {
+		return this.miniAppId;
+	}
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
 	}
 
 	public String getPicUrl() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户在采购完集分宝后可以通过此接口发放集分宝
  *
  * @author auto create
- * @since 1.0, 2016-01-29 15:45:22
+ * @since 1.0, 2022-10-12 19:34:36
  */
 public class AlipayAssetPointOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8112892723645443334L;
+	private static final long serialVersionUID = 5225753915953297888L;
 
 	/**
 	 * 向用户展示集分宝发放备注

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAddressDefaultaddressQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5871373658841332992L;
+	private static final long serialVersionUID = 5343133314141591472L;
 
 	/** 
 	 * 用户默认收货地址。取值逻辑：1，如果用户有设置默认地址，则返回该地址；2，如果用户有添加地址但没设置默认地址，取最近修改的地址；3，如果用户没有地址，该字段没有值。

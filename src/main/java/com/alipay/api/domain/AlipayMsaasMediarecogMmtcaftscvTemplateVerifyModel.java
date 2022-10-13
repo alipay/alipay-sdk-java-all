@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 货品模板商品集识别精确度校验
  *
  * @author auto create
- * @since 1.0, 2019-01-04 11:54:46
+ * @since 1.0, 2022-10-11 16:16:14
  */
 public class AlipayMsaasMediarecogMmtcaftscvTemplateVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8566248798668792561L;
+	private static final long serialVersionUID = 6346375258453295451L;
 
 	/**
 	 * 商品Id列表
@@ -22,6 +22,12 @@ public class AlipayMsaasMediarecogMmtcaftscvTemplateVerifyModel extends AlipayOb
 	@ApiListField("algorithm_goods_ids")
 	@ApiField("string")
 	private List<String> algorithmGoodsIds;
+
+	/**
+	 * 设备类型，static静态货柜，dynamic为动态货柜
+	 */
+	@ApiField("device_identify_type")
+	private String deviceIdentifyType;
 
 	/**
 	 * 商品数量
@@ -47,11 +53,25 @@ public class AlipayMsaasMediarecogMmtcaftscvTemplateVerifyModel extends AlipayOb
 	@ApiField("template_id")
 	private String templateId;
 
+	/**
+	 * 商品id冲突校验白名单，逗号分隔字符串对List。例如，一个商品有ABC三个外观，需传入["A,B", "B,C", "A,C"]
+	 */
+	@ApiListField("white_list")
+	@ApiField("string")
+	private List<String> whiteList;
+
 	public List<String> getAlgorithmGoodsIds() {
 		return this.algorithmGoodsIds;
 	}
 	public void setAlgorithmGoodsIds(List<String> algorithmGoodsIds) {
 		this.algorithmGoodsIds = algorithmGoodsIds;
+	}
+
+	public String getDeviceIdentifyType() {
+		return this.deviceIdentifyType;
+	}
+	public void setDeviceIdentifyType(String deviceIdentifyType) {
+		this.deviceIdentifyType = deviceIdentifyType;
 	}
 
 	public Long getGoodCount() {
@@ -80,6 +100,13 @@ public class AlipayMsaasMediarecogMmtcaftscvTemplateVerifyModel extends AlipayOb
 	}
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
+	}
+
+	public List<String> getWhiteList() {
+		return this.whiteList;
+	}
+	public void setWhiteList(List<String> whiteList) {
+		this.whiteList = whiteList;
 	}
 
 }

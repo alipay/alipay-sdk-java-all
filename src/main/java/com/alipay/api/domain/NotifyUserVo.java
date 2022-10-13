@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅用户vo
  *
  * @author auto create
- * @since 1.0, 2021-01-09 19:14:58
+ * @since 1.0, 2022-10-13 11:25:56
  */
 public class NotifyUserVo extends AlipayObject {
 
-	private static final long serialVersionUID = 5895632787755299148L;
+	private static final long serialVersionUID = 1473957947546874426L;
 
 	/**
 	 * 删除标志，已删除：deleted, 未删除:not_deleted

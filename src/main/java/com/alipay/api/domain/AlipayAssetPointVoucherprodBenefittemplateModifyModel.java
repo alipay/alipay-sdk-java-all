@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益模版有效期修改
  *
  * @author auto create
- * @since 1.0, 2021-04-27 23:59:08
+ * @since 1.0, 2022-10-12 19:38:57
  */
 public class AlipayAssetPointVoucherprodBenefittemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3717789923749224519L;
+	private static final long serialVersionUID = 8628911715898885766L;
 
 	/**
 	 * 资产id，需要修改的权益模版的id

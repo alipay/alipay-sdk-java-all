@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建签约吱口令
  *
  * @author auto create
- * @since 1.0, 2022-08-01 10:44:49
+ * @since 1.0, 2022-10-11 17:31:49
  */
 public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4341857432956721723L;
+	private static final long serialVersionUID = 8148835288856588878L;
 
 	/**
 	 * 签约完成之后用户点击签约完成的回跳url，自定义提供，只支持支付宝端内的小程序跳转和H5跳转，不支持APP间跳转。入无特殊需要，可忽略此字段。
@@ -74,6 +74,12 @@ public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 外部业务单号，自定义提供。如果不为空，则会在alipay.fund.taxbill.sign.completed的通知消息中提供，方便识别签约用户。注意：out_biz_no不参与签约流程的幂等，只用于流程串联
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 产品码，固定值：TAX_BILL_PLATFORM
@@ -163,6 +169,13 @@ public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public String getProductCode() {

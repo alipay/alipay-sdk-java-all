@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.medicalcare.si.data.send request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 22:47:25
+ * @since 1.0, 2022-10-12 15:38:23
  */
 public class AlipayEcoMedicalcareSiDataSendRequest implements AlipayRequest<AlipayEcoMedicalcareSiDataSendResponse> {
 

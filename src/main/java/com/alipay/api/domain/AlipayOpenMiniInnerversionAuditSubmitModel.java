@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2184788436977869375L;
+	private static final long serialVersionUID = 7413539645637871651L;
 
 	/**
-	 * 小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考https://docs.alipay.com/isv/10325，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。
+	 * 小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考<a href=‘https://opendocs.alipay.com/b/03al2m’>开放服务类目</a>，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。
 	 */
 	@ApiField("app_category_ids")
 	private String appCategoryIds;
@@ -71,7 +71,7 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	private String bundleId;
 
 	/**
-	 * 提交审核营业执照信息，部分小程序类目需要营业执照信息，需要营业执照的类目请参照https://docs.alipay.com/isv/10325。模板和插件不需要资质
+	 * 提交审核营业执照信息，部分小程序类目需要营业执照信息，需要营业执照的类目请参照 <a href=‘https://opendocs.alipay.com/b/03al2m’>开放服务类目</a>。模板和插件不需要资质
 	 */
 	@ApiField("license_info")
 	private AuditLicenseInfo licenseInfo;
@@ -89,13 +89,13 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	private String miniAppId;
 
 	/**
-	 * 新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询mini_category_list，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。使用后不再读取app_category_ids值，老前台类目将废弃
+	 * 新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可以通过 <a href='https://opendocs.alipay.com/mini/03l8c6'>alipay.open.mini.category.query</a>（小程序类目树查询接口）查询mini_category_list，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。使用后不再读取app_category_ids值，老前台类目将废弃
 	 */
 	@ApiField("mini_category_ids")
 	private String miniCategoryIds;
 
 	/**
-	 * 门头照图片地址，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要营业执照信息，如果不填默认采用当前小程序门头照图片
+	 * 门头照图片地址，部分小程序类目需要提交，参照 <a href=‘https://opendocs.alipay.com/b/03al2m’>开放服务类目</a> 中是否需要营业执照信息，如果不填默认采用当前小程序门头照图片
 	 */
 	@ApiField("out_door_pic")
 	private String outDoorPic;

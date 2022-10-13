@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即时配送运单结算
  *
  * @author auto create
- * @since 1.0, 2022-05-31 16:09:42
+ * @since 1.0, 2022-10-11 14:27:14
  */
 public class AlipayCommerceLogisticsWaybillInstantdeliverySettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1135236964443447563L;
+	private static final long serialVersionUID = 6778683857247671943L;
+
+	/**
+	 * 取消上门费
+	 */
+	@ApiField("cancel_fee")
+	private String cancelFee;
 
 	/**
 	 * 即时配送公司编码
@@ -42,6 +48,13 @@ public class AlipayCommerceLogisticsWaybillInstantdeliverySettleModel extends Al
 	 */
 	@ApiField("waybill_status")
 	private String waybillStatus;
+
+	public String getCancelFee() {
+		return this.cancelFee;
+	}
+	public void setCancelFee(String cancelFee) {
+		this.cancelFee = cancelFee;
+	}
 
 	public String getLogisticsCode() {
 		return this.logisticsCode;

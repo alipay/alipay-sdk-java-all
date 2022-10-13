@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业代扣申请结果查询
  *
  * @author auto create
- * @since 1.0, 2022-05-09 20:32:17
+ * @since 1.0, 2022-10-12 16:28:14
  */
 public class AlipayEbppInstserviceDeductresultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7471745924827211992L;
+	private static final long serialVersionUID = 5314843887814844188L;
 
 	/**
 	 * 申请代扣时的流水号

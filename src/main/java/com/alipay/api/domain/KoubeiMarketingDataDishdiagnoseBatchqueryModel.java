@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据条件查询推荐菜
  *
  * @author auto create
- * @since 1.0, 2017-07-03 14:41:41
+ * @since 1.0, 2022-10-11 12:04:51
  */
 public class KoubeiMarketingDataDishdiagnoseBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6541373716542126873L;
+	private static final long serialVersionUID = 6781591168921663459L;
 
 	/**
 	 * 查询菜品类型：

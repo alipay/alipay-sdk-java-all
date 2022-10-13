@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 超级导购券包信息
  *
  * @author auto create
- * @since 1.0, 2022-06-27 14:24:44
+ * @since 1.0, 2022-10-11 17:39:08
  */
 public class YunTaskVoucherPackageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7482511143228241983L;
+	private static final long serialVersionUID = 8816731642161197976L;
 
 	/**
 	 * 券包名称

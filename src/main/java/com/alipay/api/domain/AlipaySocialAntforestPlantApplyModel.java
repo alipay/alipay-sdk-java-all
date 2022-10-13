@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 兑换蚂蚁森林树种
  *
  * @author auto create
- * @since 1.0, 2022-10-09 11:12:21
+ * @since 1.0, 2022-10-11 20:35:14
  */
 public class AlipaySocialAntforestPlantApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2343387944649265152L;
+	private static final long serialVersionUID = 8774279755533825565L;
 
 	/**
 	 * 出账购买树种的账户id
@@ -34,6 +34,12 @@ public class AlipaySocialAntforestPlantApplyModel extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 发起该行为的支付宝用户 蚂蚁统一会员ID，可选
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 用于幂等操作
@@ -78,6 +84,13 @@ public class AlipaySocialAntforestPlantApplyModel extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

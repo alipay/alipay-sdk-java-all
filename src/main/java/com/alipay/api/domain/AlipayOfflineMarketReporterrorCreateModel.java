@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上报线下服务异常
  *
  * @author auto create
- * @since 1.0, 2017-07-03 14:41:37
+ * @since 1.0, 2022-10-11 12:03:08
  */
 public class AlipayOfflineMarketReporterrorCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6383623257882826539L;
+	private static final long serialVersionUID = 6771445127141389851L;
 
 	/**
 	 * 发生错误的时候，当前系统的毫秒数，系统会把当前时间构建成Date对象保存为错误发生时间

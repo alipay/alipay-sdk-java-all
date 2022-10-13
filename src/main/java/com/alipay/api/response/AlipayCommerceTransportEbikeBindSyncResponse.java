@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ebike.bind.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-13 11:56:45
+ * @since 1.0, 2022-10-13 10:48:07
  */
 public class AlipayCommerceTransportEbikeBindSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6144153976613275671L;
+	private static final long serialVersionUID = 3837277923256127763L;
 
 	/** 
 	 * 结果码
