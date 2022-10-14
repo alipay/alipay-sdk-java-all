@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询学段类目关系
  *
  * @author auto create
- * @since 1.0, 2020-08-19 20:15:42
+ * @since 1.0, 2022-10-14 14:36:29
  */
 public class AlipayCommerceEducateTrainStagecaterelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3196368798357269673L;
+	private static final long serialVersionUID = 4168143335651157936L;
 
 	/**
 	 * 产品码

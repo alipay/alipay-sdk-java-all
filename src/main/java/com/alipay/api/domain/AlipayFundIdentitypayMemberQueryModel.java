@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专享价成员信息查询接口
  *
  * @author auto create
- * @since 1.0, 2022-08-11 14:27:37
+ * @since 1.0, 2022-10-14 01:33:11
  */
 public class AlipayFundIdentitypayMemberQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3497828624718416755L;
+	private static final long serialVersionUID = 8336658653989791257L;
 
 	/**
 	 * 查询签约信息场景码
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 签约方账号,当identity_type为ALIPAY_USER_ID时，是2088xx，当identity_type为ALIPAY_LOGON_ID时，是支付宝登录号
+	 */
+	@ApiField("identity")
+	private String identity;
+
+	/**
+	 * 签约方类型(ALIPAY_LOGON_ID或ALIPAY_USER_ID)
+	 */
+	@ApiField("identity_type")
+	private String identityType;
 
 	/**
 	 * 外部成员Id（全局唯一）
@@ -54,6 +66,20 @@ public class AlipayFundIdentitypayMemberQueryModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getIdentity() {
+		return this.identity;
+	}
+	public void setIdentity(String identity) {
+		this.identity = identity;
+	}
+
+	public String getIdentityType() {
+		return this.identityType;
+	}
+	public void setIdentityType(String identityType) {
+		this.identityType = identityType;
 	}
 
 	public String getOutMemberId() {

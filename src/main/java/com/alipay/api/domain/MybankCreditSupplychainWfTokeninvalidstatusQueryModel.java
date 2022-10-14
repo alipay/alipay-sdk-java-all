@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditSupplychainWfTokeninvalidstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2333193623598927248L;
+	private static final long serialVersionUID = 3273667471624783237L;
 
 	/**
 	 * 幂等id

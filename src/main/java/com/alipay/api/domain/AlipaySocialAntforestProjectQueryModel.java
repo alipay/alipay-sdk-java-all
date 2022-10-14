@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 树项目基本信息查询
  *
  * @author auto create
- * @since 1.0, 2022-10-09 11:11:20
+ * @since 1.0, 2022-10-13 23:16:14
  */
 public class AlipaySocialAntforestProjectQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7425396572164852947L;
+	private static final long serialVersionUID = 4121531667127226453L;
+
+	/**
+	 * 蚂蚁统一会员ID，执行该查询操作的支付宝用户
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 请求类型，不同类型查询的树项目可能不同，默认可不选择，由运营同学进行项目的绑定操作
@@ -24,6 +30,13 @@ public class AlipaySocialAntforestProjectQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getQueryType() {
 		return this.queryType;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.train.recommend.query request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:12:36
+ * @since 1.0, 2022-10-14 14:36:03
  */
 public class AlipayCommerceEducateTrainRecommendQueryRequest implements AlipayRequest<AlipayCommerceEducateTrainRecommendQueryResponse> {
 

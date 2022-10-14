@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZMGOObligationConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5755158662837636171L;
+	private static final long serialVersionUID = 5621411566416894495L;
 
 	/**
 	 * 完成任务所需的最少额度，当obligation_template取值为：OBTL002时必传

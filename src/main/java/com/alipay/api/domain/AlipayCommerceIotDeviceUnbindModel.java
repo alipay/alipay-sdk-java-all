@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotDeviceUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8627364713812342888L;
+	private static final long serialVersionUID = 7518319958747379958L;
 
 	/**
 	 * 应用类型，目前只支持小程序MINI_APP
@@ -50,13 +50,13 @@ public class AlipayCommerceIotDeviceUnbindModel extends AlipayObject {
 	private String equipmentType;
 
 	/**
-	 * 商户编号，由ISV定义，需要保证在ISV下唯一
+	 * 商户编号，由服务商定义，需要保证在服务商下唯一
 	 */
 	@ApiField("external_id")
 	private String externalId;
 
 	/**
-	 * external_id对应的secret秘钥
+	 * external_id 对应的 secret 密钥。
 	 */
 	@ApiField("external_id_secret")
 	private String externalIdSecret;
@@ -92,7 +92,7 @@ public class AlipayCommerceIotDeviceUnbindModel extends AlipayObject {
 	private String shopId;
 
 	/**
-	 * 受理商户的ISV在支付宝的pid
+	 * 受理商户的服务商在支付宝的pid
 	 */
 	@ApiField("source")
 	private String source;

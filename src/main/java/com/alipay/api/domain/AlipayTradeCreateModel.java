@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2022-09-13 13:24:58
+ * @since 1.0, 2022-10-14 02:23:48
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8561134159666821587L;
+	private static final long serialVersionUID = 6814285712475797727L;
 
 	/**
 	 * 支付宝店铺编号。
@@ -22,6 +22,12 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	 */
 	@ApiField("alipay_store_id")
 	private String alipayStoreId;
+
+	/**
+	 * 间联交易下，由收单机构上送的信息
+	 */
+	@ApiField("bkagent_req_info")
+	private BkAgentReqInfo bkagentReqInfo;
 
 	/**
 	 * 订单附加信息。
@@ -238,6 +244,13 @@ buyer_logon_id和buyer_id两者传其一，和buyer_id不能同时为空，建�
 	}
 	public void setAlipayStoreId(String alipayStoreId) {
 		this.alipayStoreId = alipayStoreId;
+	}
+
+	public BkAgentReqInfo getBkagentReqInfo() {
+		return this.bkagentReqInfo;
+	}
+	public void setBkagentReqInfo(BkAgentReqInfo bkagentReqInfo) {
+		this.bkagentReqInfo = bkagentReqInfo;
 	}
 
 	public String getBody() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayYebLqdDataResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2774978579353233923L;
+	private static final long serialVersionUID = 3434781725796554866L;
 
 	/**
 	 * 申购预测，单位:元

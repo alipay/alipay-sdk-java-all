@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * iot触发人脸采集动作
  *
  * @author auto create
- * @since 1.0, 2022-06-15 18:57:51
+ * @since 1.0, 2022-10-14 13:45:41
  */
 public class AlipayOpenIotmbsFacecheckSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3122112529564492195L;
+	private static final long serialVersionUID = 5577274845364742956L;
 
 	/**
 	 * 设备激活序号
@@ -27,6 +27,12 @@ public class AlipayOpenIotmbsFacecheckSendModel extends AlipayObject {
 	 */
 	@ApiField("face_id")
 	private String faceId;
+
+	/**
+	 * floor_num（用户入住楼层），非必填，用于梯控场景，酒店用户入住后，刷脸乘电梯，仅拥有入住楼层按钮权限。
+	 */
+	@ApiField("floor_num")
+	private String floorNum;
 
 	/**
 	 * 外部传入的请求序号
@@ -65,6 +71,13 @@ public class AlipayOpenIotmbsFacecheckSendModel extends AlipayObject {
 	}
 	public void setFaceId(String faceId) {
 		this.faceId = faceId;
+	}
+
+	public String getFloorNum() {
+		return this.floorNum;
+	}
+	public void setFloorNum(String floorNum) {
+		this.floorNum = floorNum;
 	}
 
 	public String getOutRequestId() {

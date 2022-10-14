@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主服务订单退款
  *
  * @author auto create
- * @since 1.0, 2020-03-27 10:30:34
+ * @since 1.0, 2022-10-14 11:50:07
  */
 public class AlipayCommerceTransportVehicleownerSettlementRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2648866445914374865L;
+	private static final long serialVersionUID = 6282112731234982677L;
 
 	/**
 	 * 业务协议号，通过外部单号发起时这个参数必传；

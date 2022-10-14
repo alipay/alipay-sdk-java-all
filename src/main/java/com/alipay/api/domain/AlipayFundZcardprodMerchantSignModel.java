@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户开通账户
  *
  * @author auto create
- * @since 1.0, 2022-09-23 11:20:10
+ * @since 1.0, 2022-10-14 01:33:49
  */
 public class AlipayFundZcardprodMerchantSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2169921279422898533L;
+	private static final long serialVersionUID = 2185993442273456844L;
 
 	/**
 	 * 账户名称

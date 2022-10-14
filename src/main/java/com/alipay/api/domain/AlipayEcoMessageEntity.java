@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 城服消息实体类型
  *
  * @author auto create
- * @since 1.0, 2022-06-22 15:34:38
+ * @since 1.0, 2022-10-14 12:13:17
  */
 public class AlipayEcoMessageEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 5514749348126929272L;
+	private static final long serialVersionUID = 2875524595585652816L;
 
 	/**
 	 * (certificate_type/certificate_number/用户名字) 或者 alipay_user_id  必须有一个不为空。两个都不为空则以alipay_user_id为准

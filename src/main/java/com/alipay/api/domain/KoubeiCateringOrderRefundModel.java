@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5284358786664685122L;
+	private static final long serialVersionUID = 7266447957278339746L;
 
 	/**
 	 * 退款金额

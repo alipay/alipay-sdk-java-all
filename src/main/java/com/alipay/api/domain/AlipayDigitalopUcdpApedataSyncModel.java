@@ -10,21 +10,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:11:14
+ * @since 1.0, 2022-10-14 12:00:21
  */
 public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2149638876876766324L;
+	private static final long serialVersionUID = 8819723183262171834L;
 
 	/**
-	 * 内容数据的列表
+	 * 内容数据的列表（商品列表，内容列表，本地零售商品列表，通用物品列表，四个模型只能选一个传，且单次列表数量不要超过100）
 	 */
 	@ApiListField("content_list")
 	@ApiField("ape_content_item")
 	private List<ApeContentItem> contentList;
 
 	/**
-	 * 商品数据的列表
+	 * 商品数据的列表（商品列表，内容列表，本地零售商品列表，通用物品列表，四个模型只能选一个传，且单次列表数量不要超过100）
 	 */
 	@ApiListField("data_list")
 	@ApiField("ape_data_item")
@@ -37,7 +37,7 @@ public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 	private String dataType;
 
 	/**
-	 * 通用物品列表
+	 * 通用物品列表（商品列表，内容列表，本地零售商品列表，通用物品列表，四个模型只能选一个传，且单次列表数量不要超过100）
 	 */
 	@ApiListField("generic_item_list")
 	@ApiField("ape_generic_item")
@@ -50,7 +50,7 @@ public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 	private String projectId;
 
 	/**
-	 * 本地零售商品
+	 * 本地零售商品列表（商品列表，内容列表，本地零售商品列表，通用物品列表，四个模型只能选一个传，且单次列表数量不要超过100）
 	 */
 	@ApiListField("retail_item_list")
 	@ApiField("ape_retail_item")

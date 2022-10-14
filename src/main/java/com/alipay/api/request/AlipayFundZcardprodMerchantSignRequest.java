@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.zcardprod.merchant.sign request
  * 
  * @author auto create
- * @since 1.0, 2022-09-23 11:21:52
+ * @since 1.0, 2022-10-14 01:36:48
  */
 public class AlipayFundZcardprodMerchantSignRequest implements AlipayRequest<AlipayFundZcardprodMerchantSignResponse> {
 

@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.BkAgentRespInfo;
 import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.VoucherDetail;
@@ -14,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-21 10:17:01
+ * @since 1.0, 2022-10-14 02:21:51
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5888315716768164574L;
+	private static final long serialVersionUID = 7339527912616422785L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -42,6 +43,12 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	 */
 	@ApiField("auth_trade_pay_mode")
 	private String authTradePayMode;
+
+	/** 
+	 * 间联交易下，返回给机构的信息
+	 */
+	@ApiField("bkagent_resp_info")
+	private BkAgentRespInfo bkagentRespInfo;
 
 	/** 
 	 * 商户传入业务信息，具体值要和支付宝约定
@@ -303,6 +310,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	}
 	public String getAuthTradePayMode( ) {
 		return this.authTradePayMode;
+	}
+
+	public void setBkagentRespInfo(BkAgentRespInfo bkagentRespInfo) {
+		this.bkagentRespInfo = bkagentRespInfo;
+	}
+	public BkAgentRespInfo getBkagentRespInfo( ) {
+		return this.bkagentRespInfo;
 	}
 
 	public void setBusinessParams(String businessParams) {

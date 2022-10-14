@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.BkAgentRespInfo;
 import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.HbFqPayInfo;
@@ -16,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-08 17:04:21
+ * @since 1.0, 2022-10-14 02:21:58
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3691138612341965457L;
+	private static final long serialVersionUID = 6516215241169293912L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -40,6 +41,13 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("auth_trade_pay_mode")
 	private String authTradePayMode;
+
+	/** 
+	 * 间联交易下，返回给机构的信
+息
+	 */
+	@ApiField("bkagent_resp_info")
+	private BkAgentRespInfo bkagentRespInfo;
 
 	/** 
 	 * 订单描述；
@@ -359,6 +367,13 @@ json格式。
 	}
 	public String getAuthTradePayMode( ) {
 		return this.authTradePayMode;
+	}
+
+	public void setBkagentRespInfo(BkAgentRespInfo bkagentRespInfo) {
+		this.bkagentRespInfo = bkagentRespInfo;
+	}
+	public BkAgentRespInfo getBkagentRespInfo( ) {
+		return this.bkagentRespInfo;
 	}
 
 	public void setBody(String body) {

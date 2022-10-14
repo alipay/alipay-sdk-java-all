@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiServindustryReservationResourceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6672667885781431378L;
+	private static final long serialVersionUID = 2186491651782732741L;
 
 	/**
 	 * 口碑为第三方ISV分配的渠道标识，如K米的渠道为KMI

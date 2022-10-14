@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 农作物汇总信息查询
  *
  * @author auto create
- * @since 1.0, 2022-09-27 15:12:37
+ * @since 1.0, 2022-10-14 21:11:49
  */
 public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6577631117838532557L;
+	private static final long serialVersionUID = 2785158414649824884L;
 
 	/**
 	 * 作物编码条件汇总
@@ -39,6 +39,12 @@ public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends Alipa
 	 */
 	@ApiField("is_harvested")
 	private Boolean isHarvested;
+
+	/**
+	 * 当为true时，返回每个作物类型对应的地块编码列表。考虑到性能，不必要时建议设置为false。
+	 */
+	@ApiField("need_region_codes")
+	private Boolean needRegionCodes;
 
 	/**
 	 * 区块编码列表
@@ -73,6 +79,13 @@ public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends Alipa
 	}
 	public void setIsHarvested(Boolean isHarvested) {
 		this.isHarvested = isHarvested;
+	}
+
+	public Boolean getNeedRegionCodes() {
+		return this.needRegionCodes;
+	}
+	public void setNeedRegionCodes(Boolean needRegionCodes) {
+		this.needRegionCodes = needRegionCodes;
 	}
 
 	public List<String> getRegionCodes() {

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.settlement.refund response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-25 19:03:49
+ * @since 1.0, 2022-10-14 11:50:07
  */
 public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5113445336595358615L;
+	private static final long serialVersionUID = 7813667447378615217L;
 
 	/** 
 	 * 买家在支付宝的用户id
@@ -26,6 +26,12 @@ public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends
 	 */
 	@ApiField("gmt_refund_pay")
 	private Date gmtRefundPay;
+
+	/** 
+	 * 应用维度的用户Id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 退款外部请求号，多次退款会有
@@ -47,10 +53,12 @@ public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends
 
 	/** 
 	 * 支付宝收单：
+"I","未知，原请求单号需要重试";
 "RI", "退款中";
 "R", "已退款";
 "PR", "部分退款";
 银行收单：
+"I","未知，原请求单号需要重试";
 "PART_PROCESS_REFUND", "受理部分退款";
 "IN_PROCESSING_REFUND", "受理退款中";
 "PROCESS_REFUND", "已受理退款".
@@ -76,6 +84,13 @@ public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends
 	}
 	public Date getGmtRefundPay( ) {
 		return this.gmtRefundPay;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutRequestNo(String outRequestNo) {

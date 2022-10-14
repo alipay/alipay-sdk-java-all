@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专项价成员签约接口
  *
  * @author auto create
- * @since 1.0, 2022-08-11 14:28:02
+ * @since 1.0, 2022-10-14 01:33:50
  */
 public class AlipayFundIdentitypayMemberSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6257629189389577535L;
+	private static final long serialVersionUID = 8351535461573498985L;
 
 	/**
 	 * 物业审核
@@ -24,6 +24,18 @@ public class AlipayFundIdentitypayMemberSignModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 签约方账号,当identity_type为ALIPAY_USER_ID时，是2088xx，当identity_type为ALIPAY_LOGON_ID时，是支付宝登录号
+	 */
+	@ApiField("identity")
+	private String identity;
+
+	/**
+	 * 签约方类型(ALIPAY_USER_ID或ALIPAY_LOGON_ID)
+	 */
+	@ApiField("identity_type")
+	private String identityType;
 
 	/**
 	 * 成员昵称
@@ -50,6 +62,12 @@ public class AlipayFundIdentitypayMemberSignModel extends AlipayObject {
 	private String productCode;
 
 	/**
+	 * 成员真实姓名(当identity_type为ALIPAY_LOGON_ID时，real_name不能为空且传入真实姓名，进行一致性校验。当identity_type为ALIPAY_USER_ID秋娥real_name不为空时，请传入真实姓名，进行一致性校验)
+	 */
+	@ApiField("real_name")
+	private String realName;
+
+	/**
 	 * 子场景码
 	 */
 	@ApiField("sub_biz_scene")
@@ -73,6 +91,20 @@ public class AlipayFundIdentitypayMemberSignModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getIdentity() {
+		return this.identity;
+	}
+	public void setIdentity(String identity) {
+		this.identity = identity;
+	}
+
+	public String getIdentityType() {
+		return this.identityType;
+	}
+	public void setIdentityType(String identityType) {
+		this.identityType = identityType;
 	}
 
 	public String getMemberName() {
@@ -101,6 +133,13 @@ public class AlipayFundIdentitypayMemberSignModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getRealName() {
+		return this.realName;
+	}
+	public void setRealName(String realName) {
+		this.realName = realName;
 	}
 
 	public String getSubBizScene() {

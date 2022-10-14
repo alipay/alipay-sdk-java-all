@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.facecheck.send request
  * 
  * @author auto create
- * @since 1.0, 2022-10-11 17:02:05
+ * @since 1.0, 2022-10-14 13:46:49
  */
 public class AlipayOpenIotmbsFacecheckSendRequest implements AlipayRequest<AlipayOpenIotmbsFacecheckSendResponse> {
 

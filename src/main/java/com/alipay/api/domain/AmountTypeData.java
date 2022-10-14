@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AmountTypeData extends AlipayObject {
 
-	private static final long serialVersionUID = 8341639142178366984L;
+	private static final long serialVersionUID = 6127398346249123721L;
 
 	/**
 	 * 累计类型为金额类型的累计名称。为必传入参。

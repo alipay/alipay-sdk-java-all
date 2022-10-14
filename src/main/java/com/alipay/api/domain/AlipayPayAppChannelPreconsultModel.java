@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayPayAppChannelPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6444125797397598365L;
+	private static final long serialVersionUID = 8239197425254736848L;
 
 	/**
 	 * 对一笔交易的具体描述信息。如果是多种商品，请将商品描述字符串累加传给body。

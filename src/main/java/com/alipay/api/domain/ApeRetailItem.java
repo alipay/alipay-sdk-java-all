@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地零售商品
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:11:14
+ * @since 1.0, 2022-10-14 12:00:21
  */
 public class ApeRetailItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6148539824291212334L;
+	private static final long serialVersionUID = 1768466815459362183L;
 
 	/**
 	 * 商品可售时间
@@ -48,7 +48,13 @@ public class ApeRetailItem extends AlipayObject {
 	private String description;
 
 	/**
-	 * 商品唯一id，即spu_id
+	 * 商品ID，id里面传物品id和shopId的拼接，这里传物品id
+	 */
+	@ApiField("goods_id")
+	private String goodsId;
+
+	/**
+	 * 商品id和shopId的拼接，拼接规则为物品id+“&”+shopId
 	 */
 	@ApiField("id")
 	private String id;
@@ -161,6 +167,13 @@ public class ApeRetailItem extends AlipayObject {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getGoodsId() {
+		return this.goodsId;
+	}
+	public void setGoodsId(String goodsId) {
+		this.goodsId = goodsId;
 	}
 
 	public String getId() {

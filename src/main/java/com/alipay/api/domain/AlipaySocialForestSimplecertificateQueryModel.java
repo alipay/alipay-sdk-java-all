@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialForestSimplecertificateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1831257579748913296L;
+	private static final long serialVersionUID = 3777153477948498527L;
 
 	/**
 	 * 年份

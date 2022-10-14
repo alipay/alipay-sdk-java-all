@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6622154658349824512L;
+	private static final long serialVersionUID = 8266623125935148127L;
 
 	/**
 	 * 开户产品码。如果查询托管子户余额，必传且必须传入与开户时传入的值一致。

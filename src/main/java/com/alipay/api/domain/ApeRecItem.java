@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推荐item
  *
  * @author auto create
- * @since 1.0, 2022-10-13 16:32:19
+ * @since 1.0, 2022-10-14 10:21:19
  */
 public class ApeRecItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4893225628617494769L;
+	private static final long serialVersionUID = 7489222661148755941L;
 
 	/**
 	 * 物品id
 	 */
 	@ApiField("id")
 	private String id;
+
+	/**
+	 * 关键字段
+	 */
+	@ApiField("key_words")
+	private String keyWords;
 
 	/**
 	 * item的打分
@@ -30,6 +36,13 @@ public class ApeRecItem extends AlipayObject {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public String getKeyWords() {
+		return this.keyWords;
+	}
+	public void setKeyWords(String keyWords) {
+		this.keyWords = keyWords;
 	}
 
 	public String getScore() {

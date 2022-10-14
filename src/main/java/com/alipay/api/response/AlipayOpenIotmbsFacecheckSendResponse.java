@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.facecheck.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-11 17:02:05
+ * @since 1.0, 2022-10-14 13:46:49
  */
 public class AlipayOpenIotmbsFacecheckSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5121456673269774724L;
+	private static final long serialVersionUID = 1677891553886762617L;
 
 	/** 
 	 * 成功true失败false

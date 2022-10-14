@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LegalRepresentativeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2265955869523384738L;
+	private static final long serialVersionUID = 1856845779639953575L;
 
 	/**
 	 * 法人证件有效期，YYYY-MM-DD格式

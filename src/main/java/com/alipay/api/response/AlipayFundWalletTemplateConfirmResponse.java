@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.template.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 19:42:28
+ * @since 1.0, 2022-10-14 16:16:50
  */
 public class AlipayFundWalletTemplateConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3861164619992137455L;
+	private static final long serialVersionUID = 6165628457682385527L;
 
 	/** 
 	 * 钱包场景
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/** 
+	 * 销售产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/** 
 	 * 钱包模版id
@@ -31,6 +37,13 @@ public class AlipayFundWalletTemplateConfirmResponse extends AlipayResponse {
 	}
 	public String getBizScene( ) {
 		return this.bizScene;
+	}
+
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+	public String getProductCode( ) {
+		return this.productCode;
 	}
 
 	public void setWalletTemplateId(String walletTemplateId) {

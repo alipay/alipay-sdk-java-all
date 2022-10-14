@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceHellobikeLogSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1799883386581672332L;
+	private static final long serialVersionUID = 1526599986398361557L;
 
 	/**
 	 * 业务类型，表示用户在参与hellobike月卡打折活动中发生的业务操作（领券和购买月卡）；有两个枚举值：getvoucher:领券；pay:购买月卡；该参数由hellobike调用方所执行的业务操作确定取值。

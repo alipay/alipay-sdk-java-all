@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot根据人脸图片查询人脸唯一序号
  *
  * @author auto create
- * @since 1.0, 2022-06-08 14:21:48
+ * @since 1.0, 2022-10-14 11:03:15
  */
 public class AlipayOpenIotmbsFacedbCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3353439556914889241L;
+	private static final long serialVersionUID = 2682723411182679172L;
 
 	/**
 	 * 人脸ID
@@ -24,6 +24,12 @@ public class AlipayOpenIotmbsFacedbCreateModel extends AlipayObject {
 	 */
 	@ApiField("face_image")
 	private String faceImage;
+
+	/**
+	 * floor_num（用户入住楼层），非必填，用于梯控场景，酒店用户入住后，刷脸乘电梯，仅拥有入住楼层按钮权限。
+	 */
+	@ApiField("floor_num")
+	private String floorNum;
 
 	/**
 	 * 手机号码
@@ -55,6 +61,13 @@ public class AlipayOpenIotmbsFacedbCreateModel extends AlipayObject {
 	}
 	public void setFaceImage(String faceImage) {
 		this.faceImage = faceImage;
+	}
+
+	public String getFloorNum() {
+		return this.floorNum;
+	}
+	public void setFloorNum(String floorNum) {
+		this.floorNum = floorNum;
 	}
 
 	public String getPhoneNo() {

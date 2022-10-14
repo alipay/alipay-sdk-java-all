@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户签约美味不用等接口
  *
  * @author auto create
- * @since 1.0, 2020-11-26 21:10:05
+ * @since 1.0, 2022-10-14 16:33:28
  */
 public class KoubeiCateringMerchantTmallSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1742719794266737718L;
+	private static final long serialVersionUID = 8617997694274896562L;
 
 	/**
 	 * 业务类型，标识商户操作类型是签约还是解约操作，枚举值：SIGN表示签约、UNSIGN表示解约

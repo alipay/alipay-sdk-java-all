@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaOpenKaifangKaifangQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1622748939487512673L;
+	private static final long serialVersionUID = 3391422596712462382L;
 
 	/** 
 	 * 555

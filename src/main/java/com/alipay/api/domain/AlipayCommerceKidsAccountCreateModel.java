@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceKidsAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1629379697787857569L;
+	private static final long serialVersionUID = 6432163659941159182L;
 
 	/**
 	 * 与child_cert_type对应，如果child_cert_type为IDENTITY_CARD，对应的取值为身份证号
