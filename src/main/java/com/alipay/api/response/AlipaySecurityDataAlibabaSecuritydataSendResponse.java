@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.data.alibaba.securitydata.send response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-08 16:35:16
+ * @since 1.0, 2022-10-21 18:12:34
  */
 public class AlipaySecurityDataAlibabaSecuritydataSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4676563734134142517L;
+	private static final long serialVersionUID = 6399455383795924723L;
 
 	/** 
 	 * 返回数据写入后详细信息，一般为数据唯一key

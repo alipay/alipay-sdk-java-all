@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneOpenprodPermissionAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2829854123429976788L;
+	private static final long serialVersionUID = 2199317525943199373L;
 
 	/**
 	 * 授权类型:PURCHASE_MODULE(订购组件token),INSURE_MODULE(投保组件token),(POLICY_DETAIL)保单详情页token

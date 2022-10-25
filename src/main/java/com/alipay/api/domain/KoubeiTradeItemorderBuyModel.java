@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品下单购买
  *
  * @author auto create
- * @since 1.0, 2020-06-04 14:52:46
+ * @since 1.0, 2022-10-18 13:52:21
  */
 public class KoubeiTradeItemorderBuyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1351461328319512259L;
+	private static final long serialVersionUID = 6121942144295765474L;
 
 	/**
 	 * 业务产品

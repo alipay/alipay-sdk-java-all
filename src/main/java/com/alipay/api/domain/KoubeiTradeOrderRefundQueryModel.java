@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 聚合支付退款单详情查询
  *
  * @author auto create
- * @since 1.0, 2020-01-03 14:49:19
+ * @since 1.0, 2022-10-18 13:53:10
  */
 public class KoubeiTradeOrderRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1689445538272817935L;
+	private static final long serialVersionUID = 6775647482714886229L;
 
 	/**
 	 * 口碑侧订单号

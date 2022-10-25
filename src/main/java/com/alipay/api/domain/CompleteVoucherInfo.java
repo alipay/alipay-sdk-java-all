@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票详细信息
  *
  * @author auto create
- * @since 1.0, 2021-10-26 19:42:09
+ * @since 1.0, 2022-10-21 11:54:46
  */
 public class CompleteVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8764219367211243789L;
+	private static final long serialVersionUID = 2277817572318585678L;
 
 	/**
 	 * 防伪码
@@ -89,6 +89,12 @@ public class CompleteVoucherInfo extends AlipayObject {
 	 */
 	@ApiField("invoice_no")
 	private String invoiceNo;
+
+	/**
+	 * 发票来源，取值范围 SUMMARY_INVOICE_AUTO_OPEN 汇总开票系统自动开票，SUMMARY_INVOICE_MERCHANT_UPLOAD 汇总开票商户手动上传
+	 */
+	@ApiField("invoice_source")
+	private String invoiceSource;
 
 	/**
 	 * 发票抬头
@@ -286,6 +292,13 @@ public class CompleteVoucherInfo extends AlipayObject {
 	}
 	public void setInvoiceNo(String invoiceNo) {
 		this.invoiceNo = invoiceNo;
+	}
+
+	public String getInvoiceSource() {
+		return this.invoiceSource;
+	}
+	public void setInvoiceSource(String invoiceSource) {
+		this.invoiceSource = invoiceSource;
 	}
 
 	public String getInvoiceTitle() {

@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.detailinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-11 09:43:11
+ * @since 1.0, 2022-10-24 22:06:57
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3114958556423926631L;
+	private static final long serialVersionUID = 8234837597835148432L;
 
 	/** 
 	 * 制度生效结束时间，最小粒度为天，结束时间不早于起始时间，时分秒必须为23:59:59，最晚不超过2222-01-01 23:59:59
@@ -67,6 +67,13 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	 */
 	@ApiField("scene_type")
 	private String sceneType;
+
+	/** 
+	 * 使用规则列表
+	 */
+	@ApiListField("standard_info_detail_list")
+	@ApiField("standard_info")
+	private List<StandardInfo> standardInfoDetailList;
 
 	/** 
 	 * 使用规则列表
@@ -128,6 +135,13 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	}
 	public String getSceneType( ) {
 		return this.sceneType;
+	}
+
+	public void setStandardInfoDetailList(List<StandardInfo> standardInfoDetailList) {
+		this.standardInfoDetailList = standardInfoDetailList;
+	}
+	public List<StandardInfo> getStandardInfoDetailList( ) {
+		return this.standardInfoDetailList;
 	}
 
 	public void setStandardInfoList(StandardInfo standardInfoList) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车司机车辆信息
  *
  * @author auto create
- * @since 1.0, 2021-09-09 09:44:44
+ * @since 1.0, 2022-10-19 16:19:49
  */
 public class DriverCarInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5653434519592143591L;
+	private static final long serialVersionUID = 2534837856714729119L;
 
 	/**
 	 * 是否开通高德聚合码

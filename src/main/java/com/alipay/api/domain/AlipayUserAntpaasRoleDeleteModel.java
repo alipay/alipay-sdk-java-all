@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁通行证角色解绑
  *
  * @author auto create
- * @since 1.0, 2018-08-20 12:05:31
+ * @since 1.0, 2022-10-17 20:16:21
  */
 public class AlipayUserAntpaasRoleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2814611182356471395L;
+	private static final long serialVersionUID = 8798388226898233497L;
 
 	/**
 	 * 业务场景

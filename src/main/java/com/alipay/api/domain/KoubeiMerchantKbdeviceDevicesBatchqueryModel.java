@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询门店下设备列表
  *
  * @author auto create
- * @since 1.0, 2018-12-27 14:36:08
+ * @since 1.0, 2022-10-18 11:18:22
  */
 public class KoubeiMerchantKbdeviceDevicesBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2162915785198756139L;
+	private static final long serialVersionUID = 6236559375925341549L;
 
 	/**
 	 * 需要筛选的设备类型。目前仅支持 FOOD_DISPENSER （取餐柜）类型的设备查询，必须填写FOOD_DISPENSER。

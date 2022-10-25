@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2518171634956187384L;
+	private static final long serialVersionUID = 7489421928388464991L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -61,7 +61,7 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 	/**
 	 * 字段规则列表，会员卡开卡过程中，会员卡信息的生成规则，
 例如：卡有效期为开卡后两年内有效，则设置为：DATE_IN_FUTURE
-注意：商户会员卡场景不支持修改该内容。
+注意：商家会员卡场景不支持修改该内容。
 
 	 */
 	@ApiListField("field_rule_list")

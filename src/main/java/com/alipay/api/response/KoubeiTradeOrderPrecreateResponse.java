@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.order.precreate response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-10 16:57:59
+ * @since 1.0, 2022-10-18 13:52:54
  */
 public class KoubeiTradeOrderPrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8846788441332896891L;
+	private static final long serialVersionUID = 4414996195945574819L;
 
 	/** 
 	 * 订单号，唯一标识口碑侧一笔订单

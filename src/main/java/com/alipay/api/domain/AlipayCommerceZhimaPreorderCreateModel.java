@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻活动预创单
  *
  * @author auto create
- * @since 1.0, 2022-06-30 14:55:00
+ * @since 1.0, 2022-10-18 15:26:25
  */
 public class AlipayCommerceZhimaPreorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4842778412156686154L;
+	private static final long serialVersionUID = 8514972859536381638L;
 
 	/**
 	 * alipay_store_id

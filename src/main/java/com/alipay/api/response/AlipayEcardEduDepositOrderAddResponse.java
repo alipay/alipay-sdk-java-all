@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ecard.edu.deposit.order.add response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-31 20:40:46
+ * @since 1.0, 2022-10-20 15:58:16
  */
 public class AlipayEcardEduDepositOrderAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3825696695259282771L;
+	private static final long serialVersionUID = 4331487499626823911L;
 
 	/** 
 	 * 支付申请流水号

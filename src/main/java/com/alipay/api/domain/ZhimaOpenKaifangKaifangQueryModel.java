@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaOpenKaifangKaifangQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2286677963213955233L;
+	private static final long serialVersionUID = 8525259317437471841L;
 
 	/**
 	 * 证件号

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.sync.simple.send request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 22:07:53
+ * @since 1.0, 2022-10-24 17:58:32
  */
 public class AlipayEbppInvoiceSyncSimpleSendRequest implements AlipayRequest<AlipayEbppInvoiceSyncSimpleSendResponse> {
 

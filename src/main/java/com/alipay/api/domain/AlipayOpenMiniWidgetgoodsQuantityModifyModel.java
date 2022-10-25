@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小部件商品库存修改
  *
  * @author auto create
- * @since 1.0, 2022-10-10 14:31:28
+ * @since 1.0, 2022-10-24 14:42:13
  */
 public class AlipayOpenMiniWidgetgoodsQuantityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7528216186538184372L;
+	private static final long serialVersionUID = 4661259768714318526L;
 
 	/**
 	 * 商品的唯一标识，根据该字段修改商品

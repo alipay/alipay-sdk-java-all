@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdFingerprintDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3231429927188862849L;
+	private static final long serialVersionUID = 8124158933237218378L;
 
 	/** 
 	 * 去注册阶段服务端返回的协议体数据，对应《IFAA本地免密技术规范》中的IFAFMessage，内容中包含服务端的去注册数据。

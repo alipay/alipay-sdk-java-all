@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 光华平台服务入驻创建服务接口
  *
  * @author auto create
- * @since 1.0, 2022-04-29 18:12:27
+ * @since 1.0, 2022-10-24 14:34:16
  */
 public class AlipayEcoCityserviceOpeneventAppCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7261795248792652618L;
+	private static final long serialVersionUID = 3431357753386186612L;
 
 	/**
 	 * 服务入驻所选择的行业编码
@@ -36,6 +36,12 @@ public class AlipayEcoCityserviceOpeneventAppCreateModel extends AlipayObject {
 	 */
 	@ApiField("service_guide")
 	private String serviceGuide;
+
+	/**
+	 * 服务的标签列表，用来标明服务的一些特征属性
+	 */
+	@ApiField("service_labels")
+	private String serviceLabels;
 
 	/**
 	 * 服务名称
@@ -99,6 +105,13 @@ public class AlipayEcoCityserviceOpeneventAppCreateModel extends AlipayObject {
 	}
 	public void setServiceGuide(String serviceGuide) {
 		this.serviceGuide = serviceGuide;
+	}
+
+	public String getServiceLabels() {
+		return this.serviceLabels;
+	}
+	public void setServiceLabels(String serviceLabels) {
+		this.serviceLabels = serviceLabels;
 	}
 
 	public String getServiceName() {

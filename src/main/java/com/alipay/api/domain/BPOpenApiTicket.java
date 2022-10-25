@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 流程实例工单
  *
  * @author auto create
- * @since 1.0, 2021-07-16 15:04:10
+ * @since 1.0, 2022-10-19 20:13:27
  */
 public class BPOpenApiTicket extends AlipayObject {
 
-	private static final long serialVersionUID = 3666853171355445518L;
+	private static final long serialVersionUID = 8589421332714592362L;
 
 	/**
 	 * 附件

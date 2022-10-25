@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.saving.pass.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-14 19:10:08
+ * @since 1.0, 2022-10-25 10:25:20
  */
 public class AntMerchantExpandSavingPassQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6176663216237488994L;
+	private static final long serialVersionUID = 1831645211624482658L;
 
 	/** 
 	 * 省卡咨询结果可购买的商品信息

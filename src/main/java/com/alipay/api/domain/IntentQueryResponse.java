@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot的响应类
  *
  * @author auto create
- * @since 1.0, 2020-07-07 21:37:06
+ * @since 1.0, 2022-10-19 14:59:10
  */
 public class IntentQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2436451454947822583L;
+	private static final long serialVersionUID = 8681229499125373291L;
 
 	/**
 	 * 对应用户的queryId

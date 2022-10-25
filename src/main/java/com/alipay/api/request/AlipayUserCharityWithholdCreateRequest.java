@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.charity.withhold.create request
  * 
  * @author auto create
- * @since 1.0, 2022-03-01 14:46:38
+ * @since 1.0, 2022-10-24 17:09:26
  */
 public class AlipayUserCharityWithholdCreateRequest implements AlipayRequest<AlipayUserCharityWithholdCreateResponse> {
 

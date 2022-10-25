@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 法务c端用户协议签约查询
  *
  * @author auto create
- * @since 1.0, 2022-08-25 19:08:09
+ * @since 1.0, 2022-10-17 16:22:08
  */
 public class AlipayBossProdAlcagmprodAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5717519412617428212L;
+	private static final long serialVersionUID = 1712757623584379268L;
 
 	/**
 	 * 法务C端协议分配的协议ID，用于唯一标识一个协议或复用协议。

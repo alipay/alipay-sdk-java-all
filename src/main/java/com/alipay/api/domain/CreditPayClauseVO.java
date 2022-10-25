@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付咨询条款信息
  *
  * @author auto create
- * @since 1.0, 2019-07-12 14:25:40
+ * @since 1.0, 2022-10-18 20:16:30
  */
 public class CreditPayClauseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5372366725958351278L;
+	private static final long serialVersionUID = 5552437777563549648L;
 
 	/**
 	 * 合同密钥

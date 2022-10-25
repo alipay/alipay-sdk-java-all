@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车司机交易单信息
  *
  * @author auto create
- * @since 1.0, 2022-06-10 19:44:25
+ * @since 1.0, 2022-10-19 16:01:06
  */
 public class DriverTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8519623319256337983L;
+	private static final long serialVersionUID = 4262859777893786129L;
 
 	/**
 	 * 交易日期

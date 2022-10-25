@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.bill.downloadurl.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-03 14:58:06
+ * @since 1.0, 2022-10-19 11:38:24
  */
 public class KoubeiTradeBillDownloadurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5444472921337598323L;
+	private static final long serialVersionUID = 8729422856682152116L;
 
 	/** 
 	 * 账单下载地址

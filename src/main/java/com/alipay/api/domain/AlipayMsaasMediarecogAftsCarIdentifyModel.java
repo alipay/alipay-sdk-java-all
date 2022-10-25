@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多媒体算法车减排识别
  *
  * @author auto create
- * @since 1.0, 2017-08-22 16:23:52
+ * @since 1.0, 2022-10-18 11:24:49
  */
 public class AlipayMsaasMediarecogAftsCarIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8756112821995456727L;
+	private static final long serialVersionUID = 8686254243539123256L;
 
 	/**
 	 * 扩展入参

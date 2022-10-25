@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询对账下载地址
  *
  * @author auto create
- * @since 1.0, 2020-01-03 14:57:59
+ * @since 1.0, 2022-10-19 11:38:24
  */
 public class KoubeiTradeBillDownloadurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1334789776595691842L;
+	private static final long serialVersionUID = 5779648482231689211L;
 
 	/**
 	 * 账单数据的产生时间

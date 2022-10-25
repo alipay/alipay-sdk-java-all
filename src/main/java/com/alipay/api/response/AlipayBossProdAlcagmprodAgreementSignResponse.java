@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.alcagmprod.agreement.sign response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-17 10:40:31
+ * @since 1.0, 2022-10-17 16:22:49
  */
 public class AlipayBossProdAlcagmprodAgreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7537681456376131599L;
+	private static final long serialVersionUID = 8719925773239844546L;
 
 	/** 
 	 * 是否处理成功

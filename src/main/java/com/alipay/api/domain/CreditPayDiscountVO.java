@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付折扣视图
  *
  * @author auto create
- * @since 1.0, 2019-07-12 14:25:48
+ * @since 1.0, 2022-10-18 20:16:30
  */
 public class CreditPayDiscountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4649461212223526695L;
+	private static final long serialVersionUID = 1149135452816423737L;
 
 	/**
 	 * 折扣描述

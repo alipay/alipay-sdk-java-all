@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车离场信息同步接口
  *
  * @author auto create
- * @since 1.0, 2022-08-17 21:28:47
+ * @since 1.0, 2022-10-24 19:24:49
  */
 public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4654926986162935642L;
+	private static final long serialVersionUID = 1756935675797451776L;
 
 	/**
 	 * 车牌是否加密，true为加密，false为不加密，默认为false
@@ -28,7 +28,7 @@ public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObjec
 	private String outSerialNo;
 
 	/**
-	 * 车辆入场的时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制，请保证服务器时间准确，入场时间不应晚于当前网络时间
+	 * 车辆出场的时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制，请保证服务器时间准确，出场时间不应晚于当前网络时间，也不当早于入场时间。
 	 */
 	@ApiField("out_time")
 	private Date outTime;
@@ -52,7 +52,8 @@ public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObjec
 	private String plateNo;
 
 	/**
-	 * 停车缴费/停车订单的服务页面地址。必须是支付宝小程序URL（无需转换https），详见：https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F
+	 * 停车服务页面地址。
+1、服务商停车服务页面地址必须是支付宝小程序URL（无需转换https），详见：https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F 2、若服务商没有服务链接，可传输支付宝停车官方小程序的服务链接：alipays://platformapi/startapp?appId=2021001102642986&page=pages%2Fparking-fee%2Findex 3、若此次对接的是无感支付，则服务链接传输为：alipays://platformapi/startapp?appId=2021001102642986&page=%2Fpages%2Fparking-bill%2Findex
 	 */
 	@ApiField("service_url")
 	private String serviceUrl;

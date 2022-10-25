@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingDataDishdiagnosetypeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5845235355376992179L;
+	private static final long serialVersionUID = 3665826469525494853L;
 
 	/** 
 	 * 菜品类型列表。

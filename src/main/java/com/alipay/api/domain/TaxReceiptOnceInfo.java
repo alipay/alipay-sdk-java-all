@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业征信数据服务连接-税票信息单次申请模型
  *
  * @author auto create
- * @since 1.0, 2022-04-01 15:31:30
+ * @since 1.0, 2022-10-21 10:45:03
  */
 public class TaxReceiptOnceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8256777564552694238L;
+	private static final long serialVersionUID = 7684142431447143983L;
 
 	/**
 	 * 已认证的法人手机号

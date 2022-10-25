@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.base.process.task.addsign response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-25 14:01:40
+ * @since 1.0, 2022-10-20 15:48:11
  */
 public class AlipayBossBaseProcessTaskAddsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1882525485762332667L;
+	private static final long serialVersionUID = 5799271419621959786L;
 
 	/** 
 	 * 业务上下文，JSON格式

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LendingDataList extends AlipayObject {
 
-	private static final long serialVersionUID = 1331591425312769821L;
+	private static final long serialVersionUID = 1551924353918431559L;
 
 	/**
 	 * 最新 FBA 库存价值（基于上架货品价格）

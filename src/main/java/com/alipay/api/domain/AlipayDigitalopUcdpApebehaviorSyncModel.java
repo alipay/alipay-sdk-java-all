@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape用户行为上报
  *
  * @author auto create
- * @since 1.0, 2022-07-29 15:24:51
+ * @since 1.0, 2022-10-24 17:32:14
  */
 public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7329258525139264948L;
+	private static final long serialVersionUID = 7848356965183763965L;
 
 	/**
 	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）等
@@ -48,6 +48,12 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 用户在视频处的停留时长（单位为ms）
+	 */
+	@ApiField("page_stay")
+	private String pageStay;
 
 	/**
 	 * 订单的实际(待)支付金额，一般只有下单/支付行为携带该字段。单位元。
@@ -91,6 +97,18 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	@ApiField("user_id_type")
 	private String userIdType;
 
+	/**
+	 * 视频的总时长（单位为s）
+	 */
+	@ApiField("video_duration")
+	private String videoDuration;
+
+	/**
+	 * 视频的播放时长（单位为ms）
+	 */
+	@ApiField("video_play")
+	private String videoPlay;
+
 	public String getActionType() {
 		return this.actionType;
 	}
@@ -131,6 +149,13 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getPageStay() {
+		return this.pageStay;
+	}
+	public void setPageStay(String pageStay) {
+		this.pageStay = pageStay;
 	}
 
 	public String getPayAmount() {
@@ -180,6 +205,20 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	}
 	public void setUserIdType(String userIdType) {
 		this.userIdType = userIdType;
+	}
+
+	public String getVideoDuration() {
+		return this.videoDuration;
+	}
+	public void setVideoDuration(String videoDuration) {
+		this.videoDuration = videoDuration;
+	}
+
+	public String getVideoPlay() {
+		return this.videoPlay;
+	}
+	public void setVideoPlay(String videoPlay) {
+		this.videoPlay = videoPlay;
 	}
 
 }

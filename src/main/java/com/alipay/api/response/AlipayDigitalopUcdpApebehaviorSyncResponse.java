@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalop.ucdp.apebehavior.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-29 15:24:51
+ * @since 1.0, 2022-10-24 17:36:53
  */
 public class AlipayDigitalopUcdpApebehaviorSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8326331492181993593L;
+	private static final long serialVersionUID = 6261544538935268886L;
 
 	/** 
 	 * 请求链路标识，用于排查问题

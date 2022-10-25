@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主服务订单查询接口
  *
  * @author auto create
- * @since 1.0, 2022-10-14 19:52:15
+ * @since 1.0, 2022-10-17 16:05:40
  */
 public class AlipayCommerceTransportVehicleownerSettlementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6268627835132943517L;
+	private static final long serialVersionUID = 8663376836965697983L;
 
 	/**
 	 * 业务扣款协议号，由用户申请办理时生成并同步给外部。非支付宝收单必传。

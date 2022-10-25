@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付资产基础视图
  *
  * @author auto create
- * @since 1.0, 2020-08-06 10:50:09
+ * @since 1.0, 2022-10-19 13:52:22
  */
 public class CreditPayAssetBaseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6359229685324364771L;
+	private static final long serialVersionUID = 4795459771734752715L;
 
 	/**
 	 * 可用额度，部分场景可能会被过滤不透出
@@ -32,6 +32,12 @@ public class CreditPayAssetBaseVO extends AlipayObject {
 	 */
 	@ApiField("enable")
 	private Boolean enable;
+
+	/**
+	 * 客户是否有网商二类户
+	 */
+	@ApiField("has_current_account")
+	private Boolean hasCurrentAccount;
 
 	/**
 	 * 资产名称-贷款支付，赊呗
@@ -100,6 +106,13 @@ public class CreditPayAssetBaseVO extends AlipayObject {
 	}
 	public void setEnable(Boolean enable) {
 		this.enable = enable;
+	}
+
+	public Boolean getHasCurrentAccount() {
+		return this.hasCurrentAccount;
+	}
+	public void setHasCurrentAccount(Boolean hasCurrentAccount) {
+		this.hasCurrentAccount = hasCurrentAccount;
 	}
 
 	public String getName() {

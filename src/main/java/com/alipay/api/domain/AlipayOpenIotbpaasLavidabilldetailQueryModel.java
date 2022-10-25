@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Lavida小键盘账单交易详情查询
  *
  * @author auto create
- * @since 1.0, 2021-09-16 11:45:57
+ * @since 1.0, 2022-10-17 11:12:07
  */
 public class AlipayOpenIotbpaasLavidabilldetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5433694833974925941L;
+	private static final long serialVersionUID = 1391835968924747787L;
 
 	/**
 	 * 收款时间或者退款时间，yyyy-MM-dd HH:mm:ss格式

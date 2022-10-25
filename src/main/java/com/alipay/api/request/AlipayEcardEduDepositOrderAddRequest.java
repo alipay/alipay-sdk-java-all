@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ecard.edu.deposit.order.add request
  * 
  * @author auto create
- * @since 1.0, 2021-07-31 20:40:46
+ * @since 1.0, 2022-10-20 15:58:16
  */
 public class AlipayEcardEduDepositOrderAddRequest implements AlipayRequest<AlipayEcardEduDepositOrderAddResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 按天定价视图
  *
  * @author auto create
- * @since 1.0, 2019-07-12 14:25:43
+ * @since 1.0, 2022-10-18 20:16:30
  */
 public class CreditPayDayRangePricingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1473158566259636748L;
+	private static final long serialVersionUID = 7316787337574696456L;
 
 	/**
 	 * 按天定价结束时间

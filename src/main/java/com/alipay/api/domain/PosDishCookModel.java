@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PosDishCookModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2368452691177634962L;
+	private static final long serialVersionUID = 3148169591339467144L;
 
 	/**
 	 * 渠道    eatin堂食，takeout外卖,paipai 扫码,kbb2c 口碑点餐

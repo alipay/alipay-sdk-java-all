@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付期限视图
  *
  * @author auto create
- * @since 1.0, 2019-07-12 14:25:25
+ * @since 1.0, 2022-10-18 20:16:30
  */
 public class CreditPayTermVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1737448319895217244L;
+	private static final long serialVersionUID = 4262968163816854442L;
 
 	/**
 	 * 期限结束日期

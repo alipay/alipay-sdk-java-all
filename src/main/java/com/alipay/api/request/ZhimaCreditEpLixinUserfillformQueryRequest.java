@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.lixin.userfillform.query request
  * 
  * @author auto create
- * @since 1.0, 2022-10-09 14:56:48
+ * @since 1.0, 2022-10-17 10:00:58
  */
 public class ZhimaCreditEpLixinUserfillformQueryRequest implements AlipayRequest<ZhimaCreditEpLixinUserfillformQueryResponse> {
 

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.settlement.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-10 20:31:16
+ * @since 1.0, 2022-10-24 11:16:49
  */
 public class AlipayCommerceTransportVehicleownerSettlementApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6217575752317282942L;
+	private static final long serialVersionUID = 3663832637136955463L;
 
 	/** 
 	 * 收单机构渠道码，该字段不返回默认为ALIPAY
@@ -49,6 +49,12 @@ public class AlipayCommerceTransportVehicleownerSettlementApplyResponse extends 
 	 */
 	@ApiField("gmt_payment")
 	private Date gmtPayment;
+
+	/** 
+	 * 应用维度的用户Id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 商户订单号
@@ -129,6 +135,13 @@ public class AlipayCommerceTransportVehicleownerSettlementApplyResponse extends 
 	}
 	public Date getGmtPayment( ) {
 		return this.gmtPayment;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutTradeNo(String outTradeNo) {

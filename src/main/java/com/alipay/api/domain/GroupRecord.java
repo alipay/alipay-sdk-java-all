@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class GroupRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 2575882187769799636L;
+	private static final long serialVersionUID = 8538551555357969568L;
 
 	/**
 	 * 本次返回的结果数量

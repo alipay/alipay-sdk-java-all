@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商机数CRM用户信息上传
  *
  * @author auto create
- * @since 1.0, 2022-07-14 11:44:58
+ * @since 1.0, 2022-10-15 11:00:49
  */
 public class AlipayMerchantUserUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5728346851954765816L;
+	private static final long serialVersionUID = 2285565976488819572L;
 
 	/**
 	 * 商家用户列表，注意：上传数量不能大于1000

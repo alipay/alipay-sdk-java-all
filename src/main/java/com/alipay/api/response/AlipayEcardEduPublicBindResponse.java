@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ecard.edu.public.bind response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:21
+ * @since 1.0, 2022-10-20 15:57:59
  */
 public class AlipayEcardEduPublicBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3431467554429279131L;
+	private static final long serialVersionUID = 3174797199831751526L;
 
 	/** 
 	 * 机构编码

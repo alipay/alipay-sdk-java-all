@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2022-08-02 22:38:34
+ * @since 1.0, 2022-10-17 10:36:05
  */
 public class AlipayTradePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6226384179232919145L;
+	private static final long serialVersionUID = 5586157488197762132L;
 
 	/**
 	 * 支付宝店铺编号。
@@ -23,6 +23,12 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	 */
 	@ApiField("alipay_store_id")
 	private String alipayStoreId;
+
+	/**
+	 * 间联交易下，由收单机构上送的信息
+	 */
+	@ApiField("bkagent_req_info")
+	private BkAgentReqInfo bkagentReqInfo;
 
 	/**
 	 * 订单附加信息。
@@ -234,6 +240,13 @@ public class AlipayTradePrecreateModel extends AlipayObject {
 	}
 	public void setAlipayStoreId(String alipayStoreId) {
 		this.alipayStoreId = alipayStoreId;
+	}
+
+	public BkAgentReqInfo getBkagentReqInfo() {
+		return this.bkagentReqInfo;
+	}
+	public void setBkagentReqInfo(BkAgentReqInfo bkagentReqInfo) {
+		this.bkagentReqInfo = bkagentReqInfo;
 	}
 
 	public String getBody() {

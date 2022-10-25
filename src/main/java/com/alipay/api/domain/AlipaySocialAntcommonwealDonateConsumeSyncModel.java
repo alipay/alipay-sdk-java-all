@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 接收饿了么推送爱心商家的交易订单信息
  *
  * @author auto create
- * @since 1.0, 2022-06-30 20:01:46
+ * @since 1.0, 2022-10-24 15:37:49
  */
 public class AlipaySocialAntcommonwealDonateConsumeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8885746442947494272L;
+	private static final long serialVersionUID = 5741876557983793287L;
 
 	/**
 	 * 支付宝交易号
@@ -38,6 +38,12 @@ public class AlipaySocialAntcommonwealDonateConsumeSyncModel extends AlipayObjec
 	 */
 	@ApiField("gmt_trade_finished")
 	private Date gmtTradeFinished;
+
+	/**
+	 * 交易发起用户user_id对应的open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部商户Id
@@ -113,6 +119,13 @@ public class AlipaySocialAntcommonwealDonateConsumeSyncModel extends AlipayObjec
 	}
 	public void setGmtTradeFinished(Date gmtTradeFinished) {
 		this.gmtTradeFinished = gmtTradeFinished;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutMerchantId() {

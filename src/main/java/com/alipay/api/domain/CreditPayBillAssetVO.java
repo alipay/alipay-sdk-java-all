@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 账单资产视图
  *
  * @author auto create
- * @since 1.0, 2019-07-12 15:54:34
+ * @since 1.0, 2022-10-18 20:16:30
  */
 public class CreditPayBillAssetVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4671997438487921245L;
+	private static final long serialVersionUID = 4535152386258451468L;
 
 	/**
 	 * 是否允许部分提前还款

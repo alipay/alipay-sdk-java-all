@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户创建开票申请接口
  *
  * @author auto create
- * @since 1.0, 2020-07-10 21:12:55
+ * @since 1.0, 2022-10-24 16:06:45
  */
 public class AlipayEbppInvoiceOpenRedCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6255761865873138224L;
+	private static final long serialVersionUID = 1545886585546358764L;
 
 	/**
 	 * 用户申请开具的蓝票冲红时必须提供，用于交付用户发票，来自用户开票通知

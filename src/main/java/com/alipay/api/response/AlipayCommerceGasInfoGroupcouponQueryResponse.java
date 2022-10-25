@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.gas.info.groupcoupon.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-11-25 20:40:14
+ * @since 1.0, 2022-10-21 11:17:24
  */
 public class AlipayCommerceGasInfoGroupcouponQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4223157229231416672L;
+	private static final long serialVersionUID = 1454113253748983814L;
 
 	/** 
 	 * 当前页码,不填写默认查第1页

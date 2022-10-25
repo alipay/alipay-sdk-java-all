@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新流程工单业务上下文
  *
  * @author auto create
- * @since 1.0, 2022-03-25 14:00:00
+ * @since 1.0, 2022-10-20 15:48:23
  */
 public class AlipayBossBaseProcessTaskUpdatecontextModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3798449129259135284L;
+	private static final long serialVersionUID = 6864865196451575829L;
 
 	/**
 	 * 业务上下文

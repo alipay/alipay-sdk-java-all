@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechOceanbaseMegagameTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5135587347649585134L;
+	private static final long serialVersionUID = 6454814964746992751L;
 
 	/** 
 	 * 参赛选手的提测代码分支，推荐用master。支持自定义

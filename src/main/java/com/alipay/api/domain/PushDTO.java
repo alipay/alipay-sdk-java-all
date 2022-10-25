@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PushDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1835412567795952494L;
+	private static final long serialVersionUID = 4195499176987855898L;
 
 	/**
 	 * 推进计算类型，如计次:CAL_COUNT

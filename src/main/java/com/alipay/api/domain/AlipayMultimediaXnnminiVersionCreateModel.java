@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * xnn小程序创建版本
  *
  * @author auto create
- * @since 1.0, 2020-11-19 16:00:47
+ * @since 1.0, 2022-10-20 14:21:30
  */
 public class AlipayMultimediaXnnminiVersionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8832179286521458766L;
+	private static final long serialVersionUID = 1694122666797475549L;
 
 	/**
 	 * 业务id

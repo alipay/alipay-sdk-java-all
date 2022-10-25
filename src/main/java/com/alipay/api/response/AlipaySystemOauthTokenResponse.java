@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.system.oauth.token response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-26 16:42:00
+ * @since 1.0, 2022-10-24 23:11:50
  */
 public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1215694388786118828L;
+	private static final long serialVersionUID = 8575736539122329425L;
 
 	/** 
 	 * 访问令牌。通过该令牌调用需要授权类接口
@@ -46,6 +46,12 @@ public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 	private String expiresIn;
 
 	/** 
+	 * 支付宝用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/** 
 	 * 刷新令牌的有效时间，单位是秒。
 	 */
 	@ApiField("re_expires_in")
@@ -56,6 +62,13 @@ public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 	 */
 	@ApiField("refresh_token")
 	private String refreshToken;
+
+	/** 
+	 * union_id是支付宝用户在开放平台的唯一标识符，在配置应用分组后会返回该值。
+同一用户的union_id在同一分组内应用的union_id一致。
+	 */
+	@ApiField("union_id")
+	private String unionId;
 
 	/** 
 	 * 支付宝用户的唯一标识。以2088开头的16位数字。
@@ -98,6 +111,13 @@ public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 		return this.expiresIn;
 	}
 
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
+	}
+
 	public void setReExpiresIn(String reExpiresIn) {
 		this.reExpiresIn = reExpiresIn;
 	}
@@ -110,6 +130,13 @@ public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 	}
 	public String getRefreshToken( ) {
 		return this.refreshToken;
+	}
+
+	public void setUnionId(String unionId) {
+		this.unionId = unionId;
+	}
+	public String getUnionId( ) {
+		return this.unionId;
 	}
 
 	public void setUserId(String userId) {

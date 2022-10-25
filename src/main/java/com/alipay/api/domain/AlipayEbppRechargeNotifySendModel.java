@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送支付宝手机充值超时提醒与补偿
  *
  * @author auto create
- * @since 1.0, 2017-06-06 15:12:19
+ * @since 1.0, 2022-10-18 17:07:22
  */
 public class AlipayEbppRechargeNotifySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3527837593552976922L;
+	private static final long serialVersionUID = 6413865567413192217L;
 
 	/**
 	 * 充值面额或者优惠面额

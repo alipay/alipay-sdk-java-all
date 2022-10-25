@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付还款视图
  *
  * @author auto create
- * @since 1.0, 2019-07-12 14:25:37
+ * @since 1.0, 2022-10-18 20:16:30
  */
 public class CreditPayRepayVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5898388143223887897L;
+	private static final long serialVersionUID = 4568341637371658359L;
 
 	/**
 	 * 首期合并天数，如果距离本月还款日不足首期合并天数，将推迟到下个月还款

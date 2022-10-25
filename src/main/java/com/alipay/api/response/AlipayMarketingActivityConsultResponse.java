@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.consult response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-07 18:19:47
+ * @since 1.0, 2022-10-25 10:21:49
  */
 public class AlipayMarketingActivityConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4679887244894992632L;
+	private static final long serialVersionUID = 1818877545335779785L;
 
 	/** 
 	 * 咨询后的活动结果信息
@@ -23,6 +23,12 @@ public class AlipayMarketingActivityConsultResponse extends AlipayResponse {
 	@ApiListField("consult_result_info_list")
 	@ApiField("consult_activity_result_info")
 	private List<ConsultActivityResultInfo> consultResultInfoList;
+
+	/** 
+	 * 领券的用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 领券的用户uid
@@ -35,6 +41,13 @@ public class AlipayMarketingActivityConsultResponse extends AlipayResponse {
 	}
 	public List<ConsultActivityResultInfo> getConsultResultInfoList( ) {
 		return this.consultResultInfoList;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setUserId(String userId) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO页面签约接口
  *
  * @author auto create
- * @since 1.0, 2021-02-24 16:56:34
+ * @since 1.0, 2022-10-24 11:25:37
  */
 public class ZhimaCreditPeZmgoSignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1678599178239916543L;
+	private static final long serialVersionUID = 3777489316636552235L;
 
 	/**
 	 * 支付宝的用户id。用于水平校验，当传入用户id与实际唤起支付宝用户id不一致时，签约申请失败。特殊业务(用户在商户侧已经绑定了支付宝A，不允许支付宝B进行开通芝麻GO)需求定制，无特殊需求时不要传入此参数

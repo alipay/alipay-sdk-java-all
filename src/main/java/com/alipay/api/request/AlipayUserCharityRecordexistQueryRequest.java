@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.charity.recordexist.query request
  * 
  * @author auto create
- * @since 1.0, 2022-10-09 15:13:07
+ * @since 1.0, 2022-10-21 16:00:50
  */
 public class AlipayUserCharityRecordexistQueryRequest implements AlipayRequest<AlipayUserCharityRecordexistQueryResponse> {
 

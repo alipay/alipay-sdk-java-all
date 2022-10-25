@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 口碑商品交易退货接口
  *
  * @author auto create
- * @since 1.0, 2020-06-04 14:51:42
+ * @since 1.0, 2022-10-18 13:52:37
  */
 public class KoubeiTradeItemorderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2611314767917698382L;
+	private static final long serialVersionUID = 5796118569554973261L;
 
 	/**
 	 * 口碑订单号，可通过 <a href="https://opendocs.alipay.com/apis/api_1/koubei.trade.itemorder.buy">koubei.trade.itemorder.buy</a>(口碑商品交易购买接口)获取。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateTuitioncodeFundtransferQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3228282214489142987L;
+	private static final long serialVersionUID = 4328863645856961255L;
 
 	/**
 	 * 资金划拨操作类型：DISBURSE - 打款；REFUND - 退款

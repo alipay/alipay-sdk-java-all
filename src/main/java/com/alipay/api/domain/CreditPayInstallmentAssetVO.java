@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信用支付贷款分期资产视图
  *
  * @author auto create
- * @since 1.0, 2019-07-12 16:20:27
+ * @since 1.0, 2022-10-18 20:16:30
  */
 public class CreditPayInstallmentAssetVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3636593552497447383L;
+	private static final long serialVersionUID = 4711631227951633162L;
 
 	/**
 	 * 信用支付资产详情基础信息

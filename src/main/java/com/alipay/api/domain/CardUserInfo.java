@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 持卡人信息
  *
  * @author auto create
- * @since 1.0, 2019-08-08 20:05:05
+ * @since 1.0, 2022-10-18 15:35:46
  */
 public class CardUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3736525867592274776L;
+	private static final long serialVersionUID = 3148926296413313677L;
 
 	/**
 	 * 用户唯一标识, 根据user_id_type类型来定 （目前暂支持支付宝userId）

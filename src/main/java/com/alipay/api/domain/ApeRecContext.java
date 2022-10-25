@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推荐上下文
  *
  * @author auto create
- * @since 1.0, 2022-08-05 14:43:00
+ * @since 1.0, 2022-10-19 11:24:00
  */
 public class ApeRecContext extends AlipayObject {
 
-	private static final long serialVersionUID = 2393679731564318529L;
+	private static final long serialVersionUID = 4595742819668681497L;
 
 	/**
 	 * 类目列表，推荐结果只会包含该类目的商品，为空时代表返回所有的商品。多个条件是与的关系。

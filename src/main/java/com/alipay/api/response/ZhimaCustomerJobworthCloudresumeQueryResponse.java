@@ -19,7 +19,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7599383864152176534L;
+	private static final long serialVersionUID = 6148391284692686956L;
 
 	/** 
 	 * 出身日期

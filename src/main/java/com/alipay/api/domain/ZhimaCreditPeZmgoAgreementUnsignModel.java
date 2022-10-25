@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO协议解约
  *
  * @author auto create
- * @since 1.0, 2022-10-11 10:29:24
+ * @since 1.0, 2022-10-24 11:13:53
  */
 public class ZhimaCreditPeZmgoAgreementUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3298482629145592692L;
+	private static final long serialVersionUID = 1282581365346846246L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。

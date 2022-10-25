@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户碳积分记录
  *
  * @author auto create
- * @since 1.0, 2022-05-23 14:12:10
+ * @since 1.0, 2022-10-19 16:35:15
  */
 public class AlipayCommerceTransportCarbonDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5661683364389596926L;
+	private static final long serialVersionUID = 5739459341859265243L;
 
 	/**
 	 * 业务结束时间  yyyy-MM-dd HH:mm:ss 格式

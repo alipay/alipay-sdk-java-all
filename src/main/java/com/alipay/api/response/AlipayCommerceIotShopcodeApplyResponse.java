@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.shopcode.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 21:46:18
+ * @since 1.0, 2022-10-17 11:12:21
  */
 public class AlipayCommerceIotShopcodeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5484915668313938363L;
+	private static final long serialVersionUID = 3488756993724191784L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送阿里集团风控数据到蚂蚁
  *
  * @author auto create
- * @since 1.0, 2021-03-08 16:33:47
+ * @since 1.0, 2022-10-21 18:12:34
  */
 public class AlipaySecurityDataAlibabaSecuritydataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1495637877844142677L;
+	private static final long serialVersionUID = 5372781573271188469L;
 
 	/**
 	 * 业务描述信息

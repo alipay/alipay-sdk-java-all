@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家营销活动咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-10-07 18:19:47
+ * @since 1.0, 2022-10-25 10:19:15
  */
 public class AlipayMarketingActivityConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5377119876644929751L;
+	private static final long serialVersionUID = 6851977546268355518L;
 
 	/**
 	 * 待咨询的活动信息列表
@@ -38,6 +38,12 @@ public class AlipayMarketingActivityConsultModel extends AlipayObject {
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
+
+	/**
+	 * 领券的用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 领券的用户uid
@@ -64,6 +70,13 @@ public class AlipayMarketingActivityConsultModel extends AlipayObject {
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

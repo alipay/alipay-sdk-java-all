@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 反洗钱风险资产记录详情
  *
  * @author auto create
- * @since 1.0, 2020-05-26 13:40:45
+ * @since 1.0, 2022-10-21 17:49:39
  */
 public class AmlAssetRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 3878362228149512198L;
+	private static final long serialVersionUID = 4651254787817383389L;
 
 	/**
 	 * 数据生效时间

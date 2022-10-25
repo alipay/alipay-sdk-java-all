@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EventInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3835949494588952866L;
+	private static final long serialVersionUID = 2361675263522951673L;
 
 	/**
 	 * 设备指纹token

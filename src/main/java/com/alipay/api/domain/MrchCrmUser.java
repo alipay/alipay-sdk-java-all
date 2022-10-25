@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家CRM用户
  *
  * @author auto create
- * @since 1.0, 2022-07-14 11:44:58
+ * @since 1.0, 2022-10-15 11:00:49
  */
 public class MrchCrmUser extends AlipayObject {
 
-	private static final long serialVersionUID = 3892577859526217966L;
+	private static final long serialVersionUID = 7257949391243599363L;
 
 	/**
 	 * 用户身份信息密文，加密方式如下：
@@ -25,7 +25,7 @@ public class MrchCrmUser extends AlipayObject {
 	private String encryptIdentityId;
 
 	/**
-	 * 用身份信息类型-手机号、邮箱，枚举如下：
+	 * 用户身份信息类型-手机号、邮箱，枚举如下：
 mobile-手机号码，email-邮箱
 	 */
 	@ApiField("encrypt_identity_type")

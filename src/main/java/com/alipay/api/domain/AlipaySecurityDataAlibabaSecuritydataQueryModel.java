@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁风控数据查询接口(阿里内部调用)
  *
  * @author auto create
- * @since 1.0, 2021-04-27 19:03:46
+ * @since 1.0, 2022-10-21 18:12:05
  */
 public class AlipaySecurityDataAlibabaSecuritydataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7385495436823419232L;
+	private static final long serialVersionUID = 2553181144779252946L;
 
 	/**
 	 * 业务方调用唯一标识，可以是traceID

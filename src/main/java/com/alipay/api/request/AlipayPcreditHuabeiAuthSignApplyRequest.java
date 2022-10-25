@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.auth.sign.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-10-14 17:39:25
+ * @since 1.0, 2022-10-17 11:45:12
  */
 public class AlipayPcreditHuabeiAuthSignApplyRequest implements AlipayRequest<AlipayPcreditHuabeiAuthSignApplyResponse> {
 

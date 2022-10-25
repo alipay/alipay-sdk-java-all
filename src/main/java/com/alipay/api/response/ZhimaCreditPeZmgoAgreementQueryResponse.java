@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-18 14:57:09
+ * @since 1.0, 2022-10-24 11:14:31
  */
 public class ZhimaCreditPeZmgoAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3499232577724519328L;
+	private static final long serialVersionUID = 4427394362432647589L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花芝轻会员协议号。

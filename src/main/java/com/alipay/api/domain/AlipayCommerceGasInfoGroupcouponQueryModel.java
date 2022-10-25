@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.gas.coupon.merchant.query
  *
  * @author auto create
- * @since 1.0, 2020-11-25 20:39:57
+ * @since 1.0, 2022-10-21 11:17:24
  */
 public class AlipayCommerceGasInfoGroupcouponQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4372926478788465543L;
+	private static final long serialVersionUID = 4171395932575594947L;
 
 	/**
 	 * 劵创建结束时间:格式yyyy-MM-dd HH:mm:ss

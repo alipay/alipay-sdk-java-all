@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试测试支付宝
  *
  * @author auto create
- * @since 1.0, 2022-09-30 09:54:22
+ * @since 1.0, 2022-10-24 16:39:37
  */
 public class DatadigitalAnttechQqqCccQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3161895652648674351L;
+	private static final long serialVersionUID = 4514856456989521459L;
 
 	/**
 	 * dh
@@ -26,7 +26,7 @@ public class DatadigitalAnttechQqqCccQueryModel extends AlipayObject {
 	private String er1Openid;
 
 	/**
-	 * dfg
+	 * 和金龟换酒那几个号结构化
 	 */
 	@ApiField("pppp")
 	private String pppp;
