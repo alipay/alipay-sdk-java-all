@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台电商子订单模型
  *
  * @author auto create
- * @since 1.0, 2022-09-28 11:31:18
+ * @since 1.0, 2022-10-27 10:56:15
  */
 public class EcomSubOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3662185963735351238L;
+	private static final long serialVersionUID = 6282376639475376156L;
 
 	/**
 	 * 购买数量

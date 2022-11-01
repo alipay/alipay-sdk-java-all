@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家营销购买下单接口
  *
  * @author auto create
- * @since 1.0, 2022-10-07 18:24:45
+ * @since 1.0, 2022-10-27 00:48:14
  */
 public class AlipayMarketingActivityOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7144484873533813865L;
+	private static final long serialVersionUID = 1288684468693121542L;
 
 	/**
 	 * 购买者的支付宝uid
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * 购买者的支付宝用户openId
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * （待废弃）
@@ -74,6 +80,13 @@ sale_activity_info_list中所有商品单价*数量的总和。
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public String getChInfo() {

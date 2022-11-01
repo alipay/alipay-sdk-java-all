@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构资金管理账户同步
  *
  * @author auto create
- * @since 1.0, 2020-07-06 11:20:55
+ * @since 1.0, 2022-10-28 17:18:33
  */
 public class AlipayAccountInstfundAccountSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2691251178884797492L;
+	private static final long serialVersionUID = 4596692895759685366L;
 
 	/**
 	 * 账号信息

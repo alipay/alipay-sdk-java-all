@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易单明细
  *
  * @author auto create
- * @since 1.0, 2021-06-08 16:56:50
+ * @since 1.0, 2022-10-31 20:42:50
  */
 public class TradeFundBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2295189664227519548L;
+	private static final long serialVersionUID = 5383453851655891191L;
 
 	/**
 	 * 交易金额

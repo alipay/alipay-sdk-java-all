@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门票信息
  *
  * @author auto create
- * @since 1.0, 2021-06-16 10:22:00
+ * @since 1.0, 2022-10-26 16:04:49
  */
 public class ScenicTicketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3259189448687572353L;
+	private static final long serialVersionUID = 6269138433843799162L;
 
 	/**
 	 * 自动检票时间
@@ -51,7 +51,7 @@ IDENTITY_CARD_AND_QR_CODE：凭二维码或身份证入园
 	private List<ScenicExtInfo> extInfo;
 
 	/**
-	 * 具体不可用的日期
+	 * 具体不可用的日期， 长度最大为100
 	 */
 	@ApiListField("invalid_dates")
 	@ApiField("date")
@@ -117,7 +117,7 @@ REFUND_FAILURE("REFUND_FAILURE",退票失败)
 	private String ticketName;
 
 	/**
-	 * 单据号
+	 * 单据号，确保同一笔订单下单据号唯一
 	 */
 	@ApiField("ticket_no")
 	private String ticketNo;

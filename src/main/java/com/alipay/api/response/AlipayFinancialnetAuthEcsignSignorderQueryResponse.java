@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.ecsign.signorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-17 13:02:01
+ * @since 1.0, 2022-10-28 10:16:48
  */
 public class AlipayFinancialnetAuthEcsignSignorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6538892864126753774L;
+	private static final long serialVersionUID = 6154311939263714559L;
 
 	/** 
 	 * 附加信息
@@ -31,6 +31,12 @@ public class AlipayFinancialnetAuthEcsignSignorderQueryResponse extends AlipayRe
 	 */
 	@ApiField("gmt_modified")
 	private String gmtModified;
+
+	/** 
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 签约单状态
@@ -87,6 +93,13 @@ public class AlipayFinancialnetAuthEcsignSignorderQueryResponse extends AlipayRe
 	}
 	public String getGmtModified( ) {
 		return this.gmtModified;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrderStatus(String orderStatus) {

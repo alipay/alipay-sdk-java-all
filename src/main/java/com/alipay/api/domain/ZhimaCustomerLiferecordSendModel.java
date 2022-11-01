@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合作商户回传用户的生活记录信息，推进用户生活记录任务
  *
  * @author auto create
- * @since 1.0, 2022-09-29 14:41:15
+ * @since 1.0, 2022-10-27 17:26:15
  */
 public class ZhimaCustomerLiferecordSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1657876843816172961L;
+	private static final long serialVersionUID = 1248636779471394422L;
 
 	/**
 	 * 业务时间，标准时间格式：yyyy-MM-dd HH:mm:ss
@@ -59,6 +59,12 @@ public class ZhimaCustomerLiferecordSendModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 推进任务外部业务号，用于推进某个指定的生活记录任务，通过该id进行关联查询
+	 */
+	@ApiField("push_record_out_biz_no")
+	private String pushRecordOutBizNo;
 
 	/**
 	 * 场景
@@ -119,6 +125,13 @@ public class ZhimaCustomerLiferecordSendModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getPushRecordOutBizNo() {
+		return this.pushRecordOutBizNo;
+	}
+	public void setPushRecordOutBizNo(String pushRecordOutBizNo) {
+		this.pushRecordOutBizNo = pushRecordOutBizNo;
 	}
 
 	public String getScene() {

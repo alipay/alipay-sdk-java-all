@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户可使用券包查询
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:28:55
+ * @since 1.0, 2022-10-31 19:50:46
  */
 public class AlipayCommerceYuntaskSalegiftpackageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5813776747353543181L;
+	private static final long serialVersionUID = 5436226286141727936L;
 
 	/**
 	 * 商家pid

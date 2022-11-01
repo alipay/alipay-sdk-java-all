@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 客户群群组详情
  *
  * @author auto create
- * @since 1.0, 2022-01-24 14:28:18
+ * @since 1.0, 2022-10-31 17:44:26
  */
 public class BcGroupClusterDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7649588857115974717L;
+	private static final long serialVersionUID = 6471594816833773117L;
 
 	/**
 	 * 一个分组下会管理多个普通支付宝群，此参数表示如果分组下一个群人数已满，是否自动创建新群

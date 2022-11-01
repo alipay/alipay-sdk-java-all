@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 绿色小票批量查询接口
  *
  * @author auto create
- * @since 1.0, 2022-01-13 19:40:23
+ * @since 1.0, 2022-10-31 19:47:08
  */
 public class AlipayCommerceReceiptBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1714857584589135119L;
+	private static final long serialVersionUID = 7137661518327845959L;
 
 	/**
 	 * 请求等级

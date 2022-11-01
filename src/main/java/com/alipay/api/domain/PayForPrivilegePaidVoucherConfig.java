@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充享惠业务有偿券配置
  *
  * @author auto create
- * @since 1.0, 2022-03-29 10:46:56
+ * @since 1.0, 2022-10-31 21:54:26
  */
 public class PayForPrivilegePaidVoucherConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1673551496591297889L;
+	private static final long serialVersionUID = 6752198722625116327L;
 
 	/**
 	 * 消费者充值赠送的该类型有偿券的数量

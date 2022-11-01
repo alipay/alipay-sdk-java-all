@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ErrorCodeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8655731622133437998L;
+	private static final long serialVersionUID = 5661962591526665244L;
 
 	/**
 	 * jsapi参数描述

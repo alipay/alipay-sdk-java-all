@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.agreement.sign response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 16:29:32
+ * @since 1.0, 2022-10-31 19:50:37
  */
 public class AlipayCommerceYuntaskAgreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8466946218954261988L;
+	private static final long serialVersionUID = 2793353818131418826L;
 
 	/** 
 	 * 响应为表单格式，可嵌入页面，具体以返回的结果为准

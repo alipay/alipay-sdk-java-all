@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC生态发行订单数据同步
  *
  * @author auto create
- * @since 1.0, 2021-10-25 13:52:52
+ * @since 1.0, 2022-10-26 14:15:47
  */
 public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4438511625399624418L;
+	private static final long serialVersionUID = 5269489127278365413L;
 
 	/**
-	 * 收单方式，支付宝收单：ALIPAY;银行收单：BANK
+	 * 收单方式。支付宝收单：ALIPAY；银行收单：BANK；建行-支付宝轮扣收单：CCB_ZS；
 	 */
 	@ApiField("acquire_inst")
 	private String acquireInst;
@@ -32,6 +32,18 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 	 */
 	@ApiField("agree_id")
 	private String agreeId;
+
+	/**
+	 * 订单申请场景（可空，默认为ONLINE。ONLINE：线上；OFFLINE：线下）
+	 */
+	@ApiField("apply_scene")
+	private String applyScene;
+
+	/**
+	 * 订单的业务来源（可空，无默认值）
+	 */
+	@ApiField("apply_sub_scene")
+	private String applySubScene;
 
 	/**
 	 * 申请类型,
@@ -107,6 +119,12 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 	 */
 	@ApiField("gross_mass")
 	private String grossMass;
+
+	/**
+	 * 蚂蚁会员统一ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单状态；
@@ -282,6 +300,20 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 		this.agreeId = agreeId;
 	}
 
+	public String getApplyScene() {
+		return this.applyScene;
+	}
+	public void setApplyScene(String applyScene) {
+		this.applyScene = applyScene;
+	}
+
+	public String getApplySubScene() {
+		return this.applySubScene;
+	}
+	public void setApplySubScene(String applySubScene) {
+		this.applySubScene = applySubScene;
+	}
+
 	public String getApplyType() {
 		return this.applyType;
 	}
@@ -364,6 +396,13 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 	}
 	public void setGrossMass(String grossMass) {
 		this.grossMass = grossMass;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderStatus() {

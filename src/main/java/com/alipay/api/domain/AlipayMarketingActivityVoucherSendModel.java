@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发放支付券
  *
  * @author auto create
- * @since 1.0, 2022-10-07 18:22:38
+ * @since 1.0, 2022-10-26 10:52:13
  */
 public class AlipayMarketingActivityVoucherSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4245593656711222953L;
+	private static final long serialVersionUID = 3584839972219753147L;
 
 	/**
 	 * 优惠券活动id
@@ -28,6 +28,12 @@ AGENCY_MODE 服务商代接入模式
 	 */
 	@ApiField("merchant_access_mode")
 	private String merchantAccessMode;
+
+	/**
+	 * 领券的支付宝用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务单号，用作幂等控制。
@@ -58,6 +64,13 @@ AGENCY_MODE 服务商代接入模式
 	}
 	public void setMerchantAccessMode(String merchantAccessMode) {
 		this.merchantAccessMode = merchantAccessMode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

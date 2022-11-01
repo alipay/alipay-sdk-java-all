@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 全球游飞猪店铺数据发送接口
  *
  * @author auto create
- * @since 1.0, 2022-01-17 17:48:55
+ * @since 1.0, 2022-10-27 10:38:14
  */
 public class AlipayOverseasTravelFliggyShopTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3657254423987625728L;
+	private static final long serialVersionUID = 6357699492822283756L;
 
 	/**
 	 * 同步数据类型与实际数据
 	 */
 	@ApiField("data")
 	private String data;
+
+	/**
+	 * 用户id，与user_id_type配合使用，暂时仅支持集团havanaId和支付宝2088开头的16位数字ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 请求唯一id，只能是大小写字母及数字。不带业务含义，可以由uuid等随机生成，用于唯一标识一笔业务，方便与外部排查问题
@@ -42,6 +48,13 @@ public class AlipayOverseasTravelFliggyShopTransferModel extends AlipayObject {
 	}
 	public void setData(String data) {
 		this.data = data;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUniqueId() {

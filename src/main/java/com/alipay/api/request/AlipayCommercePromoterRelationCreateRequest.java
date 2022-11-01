@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.promoter.relation.create request
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 16:30:27
+ * @since 1.0, 2022-10-31 19:49:40
  */
 public class AlipayCommercePromoterRelationCreateRequest implements AlipayRequest<AlipayCommercePromoterRelationCreateResponse> {
 

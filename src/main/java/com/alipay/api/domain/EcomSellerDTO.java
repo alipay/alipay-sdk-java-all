@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商卖家模型
  *
  * @author auto create
- * @since 1.0, 2022-10-09 15:12:24
+ * @since 1.0, 2022-10-27 14:04:09
  */
 public class EcomSellerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7142449261168849514L;
+	private static final long serialVersionUID = 3719965657136122993L;
 
 	/**
 	 * 支付宝账号id
 	 */
 	@ApiField("alipay_id")
 	private String alipayId;
+
+	/**
+	 * 支付宝账号id
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 卖家标
@@ -126,6 +132,13 @@ public class EcomSellerDTO extends AlipayObject {
 	}
 	public void setAlipayId(String alipayId) {
 		this.alipayId = alipayId;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAttributes() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查询商户会员交易明细
  *
  * @author auto create
- * @since 1.0, 2022-04-18 15:36:48
+ * @since 1.0, 2022-10-25 22:49:54
  */
 public class AntMerchantExpandMembercardTransactionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4565889372933163379L;
+	private static final long serialVersionUID = 3452479422976327145L;
 
 	/**
 	 * 交易明细类型，指定要查询的明细类型，枚举如下：

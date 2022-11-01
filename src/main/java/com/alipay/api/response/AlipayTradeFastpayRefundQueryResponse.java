@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-17 10:36:23
+ * @since 1.0, 2022-10-28 17:45:11
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5747987468634669818L;
+	private static final long serialVersionUID = 5135912385361199717L;
 
 	/** 
 	 * 银行卡冲退信息；

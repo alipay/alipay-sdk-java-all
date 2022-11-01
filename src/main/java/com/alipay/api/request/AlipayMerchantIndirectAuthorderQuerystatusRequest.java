@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.authorder.querystatus request
  * 
  * @author auto create
- * @since 1.0, 2022-10-12 15:11:55
+ * @since 1.0, 2022-10-27 21:51:51
  */
 public class AlipayMerchantIndirectAuthorderQuerystatusRequest implements AlipayRequest<AlipayMerchantIndirectAuthorderQuerystatusResponse> {
 

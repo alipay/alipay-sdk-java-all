@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV回流订单状态更新接口
  *
  * @author auto create
- * @since 1.0, 2021-03-16 21:44:31
+ * @since 1.0, 2022-10-26 11:11:32
  */
 public class AlipayCommerceEducateTradeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3222661888578728513L;
+	private static final long serialVersionUID = 1753587993447198912L;
 
 	/**
 	 * 教育账单编号

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心充的配置
  *
  * @author auto create
- * @since 1.0, 2022-03-22 10:29:48
+ * @since 1.0, 2022-10-31 21:54:41
  */
 public class MemberCardTemplateConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1438493957428654279L;
+	private static final long serialVersionUID = 7377517976864143329L;
 
 	/**
 	 * 附加项列表

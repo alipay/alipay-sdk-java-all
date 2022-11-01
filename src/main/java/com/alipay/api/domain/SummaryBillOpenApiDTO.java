@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汇总账单信息openapi
  *
  * @author auto create
- * @since 1.0, 2021-12-01 21:21:20
+ * @since 1.0, 2022-11-01 15:31:09
  */
 public class SummaryBillOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3771438857143568822L;
+	private static final long serialVersionUID = 3394752982846222653L;
 
 	/**
 	 * 调账金额

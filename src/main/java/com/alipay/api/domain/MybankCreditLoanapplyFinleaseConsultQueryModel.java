@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 赊呗分月付用户准入查询
  *
  * @author auto create
- * @since 1.0, 2022-05-10 14:51:22
+ * @since 1.0, 2022-10-28 11:31:17
  */
 public class MybankCreditLoanapplyFinleaseConsultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2194751642232769481L;
+	private static final long serialVersionUID = 3292298387225858632L;
 
 	/**
 	 * 公司名称

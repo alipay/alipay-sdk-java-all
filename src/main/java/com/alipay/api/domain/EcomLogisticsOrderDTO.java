@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁保电商物流模型
  *
  * @author auto create
- * @since 1.0, 2022-09-28 11:32:34
+ * @since 1.0, 2022-10-27 10:56:15
  */
 public class EcomLogisticsOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2429477339471714587L;
+	private static final long serialVersionUID = 8854885863898224894L;
 
 	/**
 	 * 物流公司编码

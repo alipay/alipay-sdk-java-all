@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot请求类
  *
  * @author auto create
- * @since 1.0, 2022-10-19 14:58:50
+ * @since 1.0, 2022-11-01 09:26:56
  */
 public class IntentQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 2563194358249728975L;
+	private static final long serialVersionUID = 4844172944319338326L;
 
 	/**
 	 * 用户的请求来自的操作动作来源
@@ -48,6 +48,12 @@ public class IntentQueryRequest extends AlipayObject {
 	 */
 	@ApiField("nlu_json_param")
 	private String nluJsonParam;
+
+	/**
+	 * 全局唯一 open id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 用户输入的query
@@ -125,6 +131,13 @@ public class IntentQueryRequest extends AlipayObject {
 	}
 	public void setNluJsonParam(String nluJsonParam) {
 		this.nluJsonParam = nluJsonParam;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getQuery() {

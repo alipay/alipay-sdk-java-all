@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分期扣款任务列表
  *
  * @author auto create
- * @since 1.0, 2022-10-13 18:37:07
+ * @since 1.0, 2022-10-27 12:38:55
  */
 public class InstalmentPlanTuitionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3883698584824319133L;
+	private static final long serialVersionUID = 7229823188187978565L;
 
 	/**
 	 * 扣款金额， 类似11.12格式
@@ -38,6 +38,12 @@ public class InstalmentPlanTuitionDTO extends AlipayObject {
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
+
+	/**
+	 * 支付宝用户pid
+	 */
+	@ApiField("plan_open_id")
+	private String planOpenId;
 
 	/**
 	 * 扣款调度时间
@@ -106,6 +112,13 @@ public class InstalmentPlanTuitionDTO extends AlipayObject {
 	}
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
+	}
+
+	public String getPlanOpenId() {
+		return this.planOpenId;
+	}
+	public void setPlanOpenId(String planOpenId) {
+		this.planOpenId = planOpenId;
 	}
 
 	public Date getScheduleTime() {

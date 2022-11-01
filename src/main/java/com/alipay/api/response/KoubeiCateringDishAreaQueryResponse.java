@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringDishAreaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8419465468989887359L;
+	private static final long serialVersionUID = 7535191781412771656L;
 
 	/** 
 	 * 返回餐区大模型列表

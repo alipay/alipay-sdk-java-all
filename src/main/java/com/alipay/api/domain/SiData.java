@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社保保险数据
  *
  * @author auto create
- * @since 1.0, 2022-10-12 15:49:10
+ * @since 1.0, 2022-10-27 15:49:57
  */
 public class SiData extends AlipayObject {
 
-	private static final long serialVersionUID = 6789718396787383979L;
+	private static final long serialVersionUID = 1267166232955112629L;
 
 	/**
 	 * 唯一定位一次报文请求，由商户生成， 确保唯一
@@ -51,6 +51,14 @@ public class SiData extends AlipayObject {
 	 */
 	@ApiField("target_mobile")
 	private String targetMobile;
+
+	/**
+	 * 支付宝用户ID,可以通过获取会员信息产品 获取支付宝用户ID
+证件信息和userid同时存在以userid为主
+target_user_id>target_idcard
+	 */
+	@ApiField("target_open_id")
+	private String targetOpenId;
 
 	/**
 	 * 社会保障卡卡号
@@ -130,6 +138,13 @@ target_user_id>target_idcard
 	}
 	public void setTargetMobile(String targetMobile) {
 		this.targetMobile = targetMobile;
+	}
+
+	public String getTargetOpenId() {
+		return this.targetOpenId;
+	}
+	public void setTargetOpenId(String targetOpenId) {
+		this.targetOpenId = targetOpenId;
 	}
 
 	public String getTargetSicardNo() {

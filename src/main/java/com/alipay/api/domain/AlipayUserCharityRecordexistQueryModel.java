@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询是否在支付宝公益捐赠的接口
  *
  * @author auto create
- * @since 1.0, 2022-10-09 15:13:07
+ * @since 1.0, 2022-10-25 21:06:13
  */
 public class AlipayUserCharityRecordexistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2181862751225736398L;
+	private static final long serialVersionUID = 6259588164798842269L;
 
 	/**
 	 * 公益的业务类型(缺省是所有类型)
@@ -26,6 +26,12 @@ public class AlipayUserCharityRecordexistQueryModel extends AlipayObject {
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 支付宝用户user_id对应的open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户和支付宝交互时，用于代表支付宝分配给商户ID
@@ -57,6 +63,13 @@ public class AlipayUserCharityRecordexistQueryModel extends AlipayObject {
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPartnerId() {

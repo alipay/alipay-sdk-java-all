@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 景区订单同步
  *
  * @author auto create
- * @since 1.0, 2021-06-25 20:25:29
+ * @since 1.0, 2022-10-26 16:04:49
  */
 public class AlipayBusinessOrderOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3492512399694184376L;
+	private static final long serialVersionUID = 7673562597917113496L;
 
 	/**
 	 * 金额
@@ -30,7 +30,7 @@ public class AlipayBusinessOrderOrderinfoSyncModel extends AlipayObject {
 	private String buyerId;
 
 	/**
-	 * 联系人信息
+	 * 联系人信息，限制最大长度为20
 	 */
 	@ApiListField("contact")
 	@ApiField("contact")
@@ -48,6 +48,12 @@ public class AlipayBusinessOrderOrderinfoSyncModel extends AlipayObject {
 	@ApiListField("ext_info")
 	@ApiField("scenic_ext_info")
 	private List<ScenicExtInfo> extInfo;
+
+	/**
+	 * open_id是用户（UserId）在应用（AppId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单属性
@@ -130,7 +136,7 @@ TICKET("TICKET","门票订单")
 	private String partnerId;
 
 	/**
-	 * Passengers
+	 * Passengers， 限制最大长度为20
 	 */
 	@ApiListField("passengers")
 	@ApiField("passengers")
@@ -277,6 +283,13 @@ H5("H5", "H5")
 	}
 	public void setExtInfo(List<ScenicExtInfo> extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderCharacter() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家会员交易明细
  *
  * @author auto create
- * @since 1.0, 2022-04-15 16:19:43
+ * @since 1.0, 2022-10-31 21:53:42
  */
 public class MemberCardUserTransactionDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5553376397928315246L;
+	private static final long serialVersionUID = 7314928883895963232L;
 
 	/**
 	 * 储值总金额，单位元。

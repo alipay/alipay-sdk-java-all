@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金指令门面
  *
  * @author auto create
- * @since 1.0, 2020-09-24 19:03:26
+ * @since 1.0, 2022-10-28 17:19:04
  */
 public class AlipayAccountInstfundWithdrawApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5438721232252381189L;
+	private static final long serialVersionUID = 7462879729235878965L;
 
 	/**
 	 * 提现卡户名

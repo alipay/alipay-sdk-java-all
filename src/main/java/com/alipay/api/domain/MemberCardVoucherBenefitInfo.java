@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家会员卡券权益信息
  *
  * @author auto create
- * @since 1.0, 2022-04-19 21:04:33
+ * @since 1.0, 2022-10-31 21:54:41
  */
 public class MemberCardVoucherBenefitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5638232646699147193L;
+	private static final long serialVersionUID = 5822227116298513528L;
 
 	/**
 	 * 券权益奖励次数

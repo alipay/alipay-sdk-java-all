@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * BC互动，B端实体对应的实际用户信息模型
  *
  * @author auto create
- * @since 1.0, 2020-06-08 15:20:47
+ * @since 1.0, 2022-11-01 12:02:25
  */
 public class BcBusinessUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3514692938575547141L;
+	private static final long serialVersionUID = 1285424677299298322L;
 
 	/**
 	 * BC互动，B端实体对应的实际B端操作人员的头像地址
@@ -24,6 +24,12 @@ public class BcBusinessUserInfo extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 商家openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * BC互动，B端实体对应的实际B端操作人员的用户帐号id
@@ -43,6 +49,13 @@ public class BcBusinessUserInfo extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUid() {

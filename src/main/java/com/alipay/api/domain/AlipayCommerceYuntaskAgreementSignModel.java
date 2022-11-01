@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云店资金代扣授权
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:29:32
+ * @since 1.0, 2022-10-31 19:50:37
  */
 public class AlipayCommerceYuntaskAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5655567777948693231L;
+	private static final long serialVersionUID = 7315682866991285814L;
 
 	/**
 	 * 商户签约号，代扣协议中标示用户的唯一签约号，同一

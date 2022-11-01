@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 爱心捐赠代扣发起
  *
  * @author auto create
- * @since 1.0, 2022-03-01 14:41:59
+ * @since 1.0, 2022-10-25 21:05:15
  */
 public class AlipayUserCharityWithholdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1659238437225431231L;
+	private static final long serialVersionUID = 3891567936817216939L;
 
 	/**
 	 * 业务场景，由爱心捐赠系统配置及分配
@@ -30,6 +30,12 @@ public class AlipayUserCharityWithholdCreateModel extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 交易用户的user_id对应的open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -80,6 +86,13 @@ public class AlipayUserCharityWithholdCreateModel extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

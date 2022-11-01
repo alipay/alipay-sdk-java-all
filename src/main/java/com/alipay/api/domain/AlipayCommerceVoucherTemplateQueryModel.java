@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云店A发A券核销场景生效中的券模版列表查询
  *
  * @author auto create
- * @since 1.0, 2022-06-01 18:52:46
+ * @since 1.0, 2022-10-31 19:51:01
  */
 public class AlipayCommerceVoucherTemplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1189215815137111354L;
+	private static final long serialVersionUID = 3877746285926431363L;
 
 	/**
 	 * 页数，起始页是1

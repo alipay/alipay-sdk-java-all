@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderDishQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8362752488214645242L;
+	private static final long serialVersionUID = 4331832111216685881L;
 
 	/** 
 	 * 总共有多少条菜品信息。可用于计算分页。

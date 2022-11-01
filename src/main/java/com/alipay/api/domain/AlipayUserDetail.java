@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员信息详情
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:41
+ * @since 1.0, 2022-11-01 14:19:57
  */
 public class AlipayUserDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3353617344112594328L;
+	private static final long serialVersionUID = 6622666545225453946L;
 
 	/**
 	 * 支付宝用户userId

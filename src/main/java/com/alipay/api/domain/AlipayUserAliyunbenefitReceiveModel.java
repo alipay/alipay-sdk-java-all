@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员阿里云权益兑换接口
  *
  * @author auto create
- * @since 1.0, 2021-01-07 22:42:59
+ * @since 1.0, 2022-10-28 20:17:49
  */
 public class AlipayUserAliyunbenefitReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5679755589399856355L;
+	private static final long serialVersionUID = 6113334324551381464L;
 
 	/**
 	 * 格式为yyyy-MM-dd HH:mm:ss ，业务操作时间用于对账，不传则以调用请求的当前时间计算
@@ -32,6 +32,12 @@ public class AlipayUserAliyunbenefitReceiveModel extends AlipayObject {
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 统一开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号码，即调用方的业务流水号
@@ -76,6 +82,13 @@ public class AlipayUserAliyunbenefitReceiveModel extends AlipayObject {
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

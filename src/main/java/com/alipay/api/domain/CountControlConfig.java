@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CountControlConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2885495997777766794L;
+	private static final long serialVersionUID = 7569543122568559517L;
 
 	/**
 	 * 每天次数

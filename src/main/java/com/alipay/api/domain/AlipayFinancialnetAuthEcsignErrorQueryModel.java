@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签呗电子签约单错误查询
  *
  * @author auto create
- * @since 1.0, 2022-01-17 13:01:32
+ * @since 1.0, 2022-10-26 15:36:00
  */
 public class AlipayFinancialnetAuthEcsignErrorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1398274247443843946L;
+	private static final long serialVersionUID = 6843549317954398442L;
 
 	/**
 	 * 证件号

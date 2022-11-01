@@ -11,11 +11,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝群详情
  *
  * @author auto create
- * @since 1.0, 2022-01-24 19:49:19
+ * @since 1.0, 2022-10-31 19:26:55
  */
 public class GroupDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8119635367559697626L;
+	private static final long serialVersionUID = 4118665264861855332L;
+
+	/**
+	 * 管理员商家id
+	 */
+	@ApiListField("admin_open_ids")
+	@ApiField("string")
+	private List<String> adminOpenIds;
 
 	/**
 	 * 群管理员user_id
@@ -49,6 +56,12 @@ public class GroupDetail extends AlipayObject {
 	private String groupName;
 
 	/**
+	 * 群主商家openId
+	 */
+	@ApiField("master_open_id")
+	private String masterOpenId;
+
+	/**
 	 * 群主的user_id
 	 */
 	@ApiField("master_user_id")
@@ -72,6 +85,13 @@ public class GroupDetail extends AlipayObject {
 	 */
 	@ApiField("notice")
 	private String notice;
+
+	public List<String> getAdminOpenIds() {
+		return this.adminOpenIds;
+	}
+	public void setAdminOpenIds(List<String> adminOpenIds) {
+		this.adminOpenIds = adminOpenIds;
+	}
 
 	public List<String> getAdminUserIds() {
 		return this.adminUserIds;
@@ -106,6 +126,13 @@ public class GroupDetail extends AlipayObject {
 	}
 	public void setGroupName(String groupName) {
 		this.groupName = groupName;
+	}
+
+	public String getMasterOpenId() {
+		return this.masterOpenId;
+	}
+	public void setMasterOpenId(String masterOpenId) {
+		this.masterOpenId = masterOpenId;
 	}
 
 	public String getMasterUserId() {

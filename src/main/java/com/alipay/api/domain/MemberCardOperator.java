@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡操作员信息
  *
  * @author auto create
- * @since 1.0, 2022-03-22 10:29:40
+ * @since 1.0, 2022-10-31 21:54:41
  */
 public class MemberCardOperator extends AlipayObject {
 
-	private static final long serialVersionUID = 3884461615643674597L;
+	private static final long serialVersionUID = 3386696724383271157L;
 
 	/**
 	 * 当op_type=spcenter_isv_op(SSB代运营场景)时，对应的op_id是代运营服务商S2的操作员账号，ext_op_id是代运营服务商S2的主账号，主账号需要先获取商家的代运营授权。

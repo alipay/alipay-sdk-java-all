@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理车辆及设备信息变更
  *
  * @author auto create
- * @since 1.0, 2022-05-05 18:08:10
+ * @since 1.0, 2022-10-26 20:19:05
  */
 public class AlipayCommerceTransportEtcInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7121891888114563775L;
+	private static final long serialVersionUID = 6176135274337624723L;
 
 	/**
 	 * 支付宝侧业务协议号，在订单同步接口中会同步给外部机构。与biz_agreement_no参数，两者二选一必传。

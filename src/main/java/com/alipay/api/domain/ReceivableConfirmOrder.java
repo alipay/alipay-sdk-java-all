@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ReceivableConfirmOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6548975816224971271L;
+	private static final long serialVersionUID = 2156883435217181894L;
 
 	/**
 	 * 合约号

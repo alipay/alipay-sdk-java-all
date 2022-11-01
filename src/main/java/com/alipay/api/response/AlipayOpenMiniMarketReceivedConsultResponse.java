@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniMarketReceivedConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7681341495449756951L;
+	private static final long serialVersionUID = 1356931123523115148L;
 
 	/** 
 	 * true为已经领过券，false为未领取

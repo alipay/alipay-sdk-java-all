@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共同账户账单明细
  *
  * @author auto create
- * @since 1.0, 2022-06-17 15:42:49
+ * @since 1.0, 2022-11-01 10:46:40
  */
 public class JointAccountBillDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8771566699366338779L;
+	private static final long serialVersionUID = 6599962567973455863L;
 
 	/**
 	 * 共同账户ID
@@ -48,6 +48,12 @@ public class JointAccountBillDetailDTO extends AlipayObject {
 	 */
 	@ApiField("in_out")
 	private String inOut;
+
+	/**
+	 * 外部交易单号，正向支付为外部交易单号，逆向退款是为外部退款单号
+	 */
+	@ApiField("out_trade_no")
+	private String outTradeNo;
 
 	/**
 	 * 账单标题
@@ -101,6 +107,13 @@ public class JointAccountBillDetailDTO extends AlipayObject {
 	}
 	public void setInOut(String inOut) {
 		this.inOut = inOut;
+	}
+
+	public String getOutTradeNo() {
+		return this.outTradeNo;
+	}
+	public void setOutTradeNo(String outTradeNo) {
+		this.outTradeNo = outTradeNo;
 	}
 
 	public String getTitle() {

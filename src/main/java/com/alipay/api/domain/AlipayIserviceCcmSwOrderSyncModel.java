@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品订单同步
  *
  * @author auto create
- * @since 1.0, 2022-05-18 16:10:18
+ * @since 1.0, 2022-10-26 15:53:14
  */
 public class AlipayIserviceCcmSwOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1587775498431446729L;
+	private static final long serialVersionUID = 6689735573535872631L;
 
 	/**
 	 * 订单金额
@@ -91,7 +91,7 @@ public class AlipayIserviceCcmSwOrderSyncModel extends AlipayObject {
 	private String subStatus;
 
 	/**
-	 * 下单用户id
+	 * 下单用户id(外部系统ID)
 	 */
 	@ApiField("user_id")
 	private String userId;

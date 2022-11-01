@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跨境游优惠信息获取
  *
  * @author auto create
- * @since 1.0, 2022-01-17 17:49:20
+ * @since 1.0, 2022-10-27 10:37:50
  */
 public class AlipayOverseasTravelPromotionGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4455533975676278311L;
+	private static final long serialVersionUID = 1749561649754781534L;
 
 	/**
 	 * 蚂蚁LBS基础设施定义的商圈码列表
@@ -60,6 +60,12 @@ public class AlipayOverseasTravelPromotionGetModel extends AlipayObject {
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * 用户id，与user_id_type配合使用，暂时仅支持集团havanaId和支付宝2088开头的16位数字ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 分页数，从1开始，默认为1
@@ -163,6 +169,13 @@ public class AlipayOverseasTravelPromotionGetModel extends AlipayObject {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getPageNo() {

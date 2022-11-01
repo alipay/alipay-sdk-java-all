@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.customertag.save request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 21:57:47
+ * @since 1.0, 2022-10-28 16:46:49
  */
 public class AlipayUserCustomertagSaveRequest implements AlipayRequest<AlipayUserCustomertagSaveResponse> {
 

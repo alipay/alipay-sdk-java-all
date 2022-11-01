@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡修改请求参数
  *
  * @author auto create
- * @since 1.0, 2022-03-22 13:57:04
+ * @since 1.0, 2022-10-31 21:54:41
  */
 public class MemberCardSetModifyRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6515765932619549896L;
+	private static final long serialVersionUID = 3552876493866464838L;
 
 	/**
 	 * 期望修改成的卡面信息

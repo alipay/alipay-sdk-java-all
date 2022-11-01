@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 学费码充值订单
  *
  * @author auto create
- * @since 1.0, 2022-10-13 18:37:07
+ * @since 1.0, 2022-10-27 12:40:43
  */
 public class RechargeOrderTuitionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1566661912713285842L;
+	private static final long serialVersionUID = 1414647182223831532L;
 
 	/**
 	 * 订单创建时间
@@ -115,6 +115,12 @@ public class RechargeOrderTuitionDTO extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * 缴费用户的支付宝pid
+	 */
+	@ApiField("user_open_id")
+	private String userOpenId;
+
 	public Date getCreateTime() {
 		return this.createTime;
 	}
@@ -211,6 +217,13 @@ public class RechargeOrderTuitionDTO extends AlipayObject {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getUserOpenId() {
+		return this.userOpenId;
+	}
+	public void setUserOpenId(String userOpenId) {
+		this.userOpenId = userOpenId;
 	}
 
 }

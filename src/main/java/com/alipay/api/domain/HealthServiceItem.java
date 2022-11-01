@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁健康服务平台的商品模型
  *
  * @author auto create
- * @since 1.0, 2021-03-16 14:22:32
+ * @since 1.0, 2022-10-26 19:34:46
  */
 public class HealthServiceItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7419465361461583665L;
+	private static final long serialVersionUID = 3376651674665644978L;
 
 	/**
 	 * 商品编号

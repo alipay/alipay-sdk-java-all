@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡模板头部设置
  *
  * @author auto create
- * @since 1.0, 2022-01-25 17:19:07
+ * @since 1.0, 2022-10-31 21:54:41
  */
 public class MemberCardTemplateHeaderConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 3288338372191367573L;
+	private static final long serialVersionUID = 1855859125853656346L;
 
 	/**
 	 * 卡模板头部logo图片URL, 通过https://docs.open.alipay.com/common/105258 接口上传图片获得

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建进件记录
  *
  * @author auto create
- * @since 1.0, 2021-05-21 10:14:04
+ * @since 1.0, 2022-10-28 11:09:14
  */
 public class AlipayFinancialnetPromotionApplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4744735899868158184L;
+	private static final long serialVersionUID = 3831793376646899552L;
+
+	/**
+	 * 申请人支付宝UID
+	 */
+	@ApiField("apply_open_id")
+	private String applyOpenId;
 
 	/**
 	 * 额度申请需要传入：
@@ -78,6 +84,12 @@ public class AlipayFinancialnetPromotionApplyCreateModel extends AlipayObject {
 	/**
 	 * 推广人支付宝UID
 	 */
+	@ApiField("promote_open_id")
+	private String promoteOpenId;
+
+	/**
+	 * 推广人支付宝UID
+	 */
 	@ApiField("promote_user_id")
 	private String promoteUserId;
 
@@ -86,6 +98,13 @@ public class AlipayFinancialnetPromotionApplyCreateModel extends AlipayObject {
 	 */
 	@ApiField("sign_info")
 	private SignInfo signInfo;
+
+	public String getApplyOpenId() {
+		return this.applyOpenId;
+	}
+	public void setApplyOpenId(String applyOpenId) {
+		this.applyOpenId = applyOpenId;
+	}
 
 	public String getApplyTemplateInfo() {
 		return this.applyTemplateInfo;
@@ -155,6 +174,13 @@ public class AlipayFinancialnetPromotionApplyCreateModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getPromoteOpenId() {
+		return this.promoteOpenId;
+	}
+	public void setPromoteOpenId(String promoteOpenId) {
+		this.promoteOpenId = promoteOpenId;
 	}
 
 	public String getPromoteUserId() {

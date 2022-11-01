@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充享惠卡模板头部配置
  *
  * @author auto create
- * @since 1.0, 2022-03-29 10:47:01
+ * @since 1.0, 2022-10-31 21:53:57
  */
 public class PayForPrivilegeCardTemplateHeaderConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4176184616382871356L;
+	private static final long serialVersionUID = 2155439985983426872L;
 
 	/**
 	 * 卡模板头部logo图片URL，通过https://docs.open.alipay.com/common/105258 接口上传图片获得

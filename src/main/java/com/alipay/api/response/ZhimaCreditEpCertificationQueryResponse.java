@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-20 10:32:29
+ * @since 1.0, 2022-10-31 11:21:49
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8621916193438581117L;
+	private static final long serialVersionUID = 2698857619793682767L;
 
 	/** 
 	 * 代理函有效访问地址，有效时间2分钟，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
@@ -97,6 +97,12 @@ FAIL，代表失败
 	private String epName;
 
 	/** 
+	 * 该企业是否有立信企业芝麻证 true:有;false:无
+	 */
+	@ApiField("has_li_xin_certificate")
+	private Boolean hasLiXinCertificate;
+
+	/** 
 	 * 法人身份证反面有效访问定制，有效时间2分钟，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
 	 */
 	@ApiField("legal_person_id_card_back")
@@ -107,6 +113,12 @@ FAIL，代表失败
 	 */
 	@ApiField("legal_person_id_card_front")
 	private String legalPersonIdCardFront;
+
+	/** 
+	 * 是否是立信企业 true:是;false:否
+	 */
+	@ApiField("li_xin_ep")
+	private Boolean liXinEp;
 
 	/** 
 	 * 个人用户姓名，字段auth_status为SUCCESS时返回
@@ -198,6 +210,13 @@ FAIL，代表失败
 		return this.epName;
 	}
 
+	public void setHasLiXinCertificate(Boolean hasLiXinCertificate) {
+		this.hasLiXinCertificate = hasLiXinCertificate;
+	}
+	public Boolean getHasLiXinCertificate( ) {
+		return this.hasLiXinCertificate;
+	}
+
 	public void setLegalPersonIdCardBack(String legalPersonIdCardBack) {
 		this.legalPersonIdCardBack = legalPersonIdCardBack;
 	}
@@ -210,6 +229,13 @@ FAIL，代表失败
 	}
 	public String getLegalPersonIdCardFront( ) {
 		return this.legalPersonIdCardFront;
+	}
+
+	public void setLiXinEp(Boolean liXinEp) {
+		this.liXinEp = liXinEp;
+	}
+	public Boolean getLiXinEp( ) {
+		return this.liXinEp;
 	}
 
 	public void setUserName(String userName) {

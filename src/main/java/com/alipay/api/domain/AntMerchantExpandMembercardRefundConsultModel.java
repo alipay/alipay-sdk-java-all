@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家安心充退卡咨询
  *
  * @author auto create
- * @since 1.0, 2022-04-24 14:03:08
+ * @since 1.0, 2022-10-27 20:05:13
  */
 public class AntMerchantExpandMembercardRefundConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2819573476229287137L;
+	private static final long serialVersionUID = 3518887351474159172L;
 
 	/**
 	 * 商家的安心充配置的唯一编号
 	 */
 	@ApiField("member_product_id")
 	private String memberProductId;
+
+	/**
+	 * 用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -30,6 +36,13 @@ public class AntMerchantExpandMembercardRefundConsultModel extends AlipayObject 
 	}
 	public void setMemberProductId(String memberProductId) {
 		this.memberProductId = memberProductId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

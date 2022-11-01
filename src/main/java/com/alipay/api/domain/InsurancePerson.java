@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险人信息，如投保人和被保人
  *
  * @author auto create
- * @since 1.0, 2022-03-28 17:06:48
+ * @since 1.0, 2022-10-31 13:37:01
  */
 public class InsurancePerson extends AlipayObject {
 
-	private static final long serialVersionUID = 6178613222939263421L;
+	private static final long serialVersionUID = 7295219438561125196L;
 
 	/**
 	 * 支付宝2088账号/淘宝账号
@@ -44,6 +44,12 @@ public class InsurancePerson extends AlipayObject {
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * OpenId是用户（UserId）在应用（AppId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 手机号
@@ -84,6 +90,13 @@ public class InsurancePerson extends AlipayObject {
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPhone() {

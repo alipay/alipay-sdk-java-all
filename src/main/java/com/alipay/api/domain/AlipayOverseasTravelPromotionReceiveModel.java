@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境游优惠领取
  *
  * @author auto create
- * @since 1.0, 2022-01-17 17:49:07
+ * @since 1.0, 2022-10-27 10:38:13
  */
 public class AlipayOverseasTravelPromotionReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4274913991447633889L;
+	private static final long serialVersionUID = 2454839528784158347L;
 
 	/**
 	 * 多端统一渠道信息，与服务提供方协商分配，为空则默认取appId
 	 */
 	@ApiField("ch_info")
 	private String chInfo;
+
+	/**
+	 * 用户id，与user_id_type配合使用，暂时仅支持集团havanaId和支付宝2088开头的16位数字ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 发现平台优惠id
@@ -48,6 +54,13 @@ public class AlipayOverseasTravelPromotionReceiveModel extends AlipayObject {
 	}
 	public void setChInfo(String chInfo) {
 		this.chInfo = chInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPromotionId() {

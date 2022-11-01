@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社交聊天群的概要信息
  *
  * @author auto create
- * @since 1.0, 2022-01-24 19:51:00
+ * @since 1.0, 2022-10-27 20:45:34
  */
 public class GroupBrief extends AlipayObject {
 
-	private static final long serialVersionUID = 1729983912233268983L;
+	private static final long serialVersionUID = 5268433824523128848L;
 
 	/**
 	 * 群创建时间
@@ -44,6 +44,12 @@ public class GroupBrief extends AlipayObject {
 	 */
 	@ApiField("master_uid")
 	private String masterUid;
+
+	/**
+	 * 商家open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	public Date getGmtCreate() {
 		return this.gmtCreate;
@@ -78,6 +84,13 @@ public class GroupBrief extends AlipayObject {
 	}
 	public void setMasterUid(String masterUid) {
 		this.masterUid = masterUid;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 }

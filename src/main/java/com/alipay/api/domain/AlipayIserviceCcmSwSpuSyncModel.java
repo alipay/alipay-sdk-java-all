@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品库-商品信息同步
  *
  * @author auto create
- * @since 1.0, 2022-05-18 16:10:43
+ * @since 1.0, 2022-10-26 15:54:13
  */
 public class AlipayIserviceCcmSwSpuSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8343858645792762916L;
+	private static final long serialVersionUID = 8333283118332339934L;
 
 	/**
 	 * 商品属性列表

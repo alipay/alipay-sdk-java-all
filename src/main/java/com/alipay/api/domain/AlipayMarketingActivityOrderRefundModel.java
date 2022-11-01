@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家营销订单退款接口
  *
  * @author auto create
- * @since 1.0, 2022-10-07 18:24:38
+ * @since 1.0, 2022-10-27 01:12:13
  */
 public class AlipayMarketingActivityOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1858637493446167497L;
+	private static final long serialVersionUID = 7332133816257922949L;
 
 	/**
 	 * 购买者的支付宝uid.
@@ -23,6 +23,14 @@ public class AlipayMarketingActivityOrderRefundModel extends AlipayObject {
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * 购买者的支付宝openId
+
+用于水平权限校验。
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 购买商家兑换券的营销订单号。
@@ -62,6 +70,13 @@ AUTO_EXPIRE：过期自动退款
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public String getOrderNo() {

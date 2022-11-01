@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝增加群成员
  *
  * @author auto create
- * @since 1.0, 2019-09-03 16:28:53
+ * @since 1.0, 2022-10-27 17:36:00
  */
 public class AlipaySocialBaseGroupmemberAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2671793933222556238L;
+	private static final long serialVersionUID = 2645288366867815276L;
 
 	/**
 	 * 加人的时候，是否需要校验加人者和被加的人的好友关系

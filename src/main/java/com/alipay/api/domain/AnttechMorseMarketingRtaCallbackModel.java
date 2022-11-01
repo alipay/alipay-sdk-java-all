@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销活动人群活动消耗回调
  *
  * @author auto create
- * @since 1.0, 2022-10-11 15:12:14
+ * @since 1.0, 2022-11-01 16:50:28
  */
 public class AnttechMorseMarketingRtaCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4373349595485927255L;
+	private static final long serialVersionUID = 4885324358648297756L;
 
 	/**
 	 * 活动id描述用户使用这个活动消耗预算，该活动必须是被场景侧曝光过的活动
@@ -38,6 +38,12 @@ public class AnttechMorseMarketingRtaCallbackModel extends AlipayObject {
 	 */
 	@ApiField("mobile_sha_256")
 	private String mobileSha256;
+
+	/**
+	 * 外部业务号，业务的标识由商户生成，可以设置成订单号，如果不填写，默认采用trade_no作为外部请求号处理
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 支付金额，单位元，用于标识用户支付的金额
@@ -101,6 +107,13 @@ public class AnttechMorseMarketingRtaCallbackModel extends AlipayObject {
 	}
 	public void setMobileSha256(String mobileSha256) {
 		this.mobileSha256 = mobileSha256;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public String getPaymentAmt() {

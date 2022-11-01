@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图片消息数据
  *
  * @author auto create
- * @since 1.0, 2022-01-24 19:53:23
+ * @since 1.0, 2022-10-31 17:43:53
  */
 public class ImageTemplateData extends AlipayObject {
 
-	private static final long serialVersionUID = 4794418679357396851L;
+	private static final long serialVersionUID = 5625472612188391217L;
 
 	/**
 	 * 图片高度

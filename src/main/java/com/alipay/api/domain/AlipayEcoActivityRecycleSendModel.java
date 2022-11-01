@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 森林能量发放
  *
  * @author auto create
- * @since 1.0, 2022-08-16 16:06:49
+ * @since 1.0, 2022-11-01 15:21:15
  */
 public class AlipayEcoActivityRecycleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1741486242929873122L;
+	private static final long serialVersionUID = 2343281273983468616L;
 
 	/**
 	 * 买家的用户id
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * 买家的用户id
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * C端用户使用的绿色小程序appId
@@ -53,11 +59,24 @@ public class AlipayEcoActivityRecycleSendModel extends AlipayObject {
 	@ApiField("seller_id")
 	private String sellerId;
 
+	/**
+	 * 卖家的用户id
+	 */
+	@ApiField("seller_open_id")
+	private String sellerOpenId;
+
 	public String getBuyerId() {
 		return this.buyerId;
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public String getEnergyAppid() {
@@ -93,6 +112,13 @@ public class AlipayEcoActivityRecycleSendModel extends AlipayObject {
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public String getSellerOpenId() {
+		return this.sellerOpenId;
+	}
+	public void setSellerOpenId(String sellerOpenId) {
+		this.sellerOpenId = sellerOpenId;
 	}
 
 }

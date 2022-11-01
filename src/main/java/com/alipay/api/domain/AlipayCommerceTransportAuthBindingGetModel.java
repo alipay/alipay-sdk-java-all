@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询授权状态
  *
  * @author auto create
- * @since 1.0, 2022-10-13 10:40:44
+ * @since 1.0, 2022-10-27 14:18:13
  */
 public class AlipayCommerceTransportAuthBindingGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7683822532979715663L;
+	private static final long serialVersionUID = 7873641648577228786L;
 
 	/**
 	 * 支付宝证件类型
@@ -36,6 +36,18 @@ public class AlipayCommerceTransportAuthBindingGetModel extends AlipayObject {
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 查询授权的渠道，如小程序首页：MINIAPP_HOME，订单同步：ORDER_SYNC
+	 */
+	@ApiField("channel")
+	private String channel;
+
+	/**
+	 * 蚂蚁统一会员ID（对外）。当没有传证件类型时，必须传本字段。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号，唯一标志本次请求
@@ -81,6 +93,20 @@ public class AlipayCommerceTransportAuthBindingGetModel extends AlipayObject {
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

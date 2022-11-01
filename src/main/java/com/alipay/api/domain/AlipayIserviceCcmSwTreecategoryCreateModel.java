@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 知识库-节点-创建
  *
  * @author auto create
- * @since 1.0, 2022-10-10 12:38:08
+ * @since 1.0, 2022-10-26 14:59:47
  */
 public class AlipayIserviceCcmSwTreecategoryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7598666658572645664L;
+	private static final long serialVersionUID = 4171638953488645364L;
 
 	/**
 	 * 子部门ID，不传为默认部门

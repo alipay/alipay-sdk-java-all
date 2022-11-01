@@ -7,17 +7,38 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC行程账单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2021-09-29 15:14:16
+ * @since 1.0, 2022-10-26 15:33:15
  */
 public class AlipayCommerceTransportEtcTripSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7886624356135813512L;
+	private static final long serialVersionUID = 3514332484295363218L;
+
+	/**
+	 * 垫资状态（
+0：无垫资；
+1：有垫资；
+2：垫资已偿还；）
+	 */
+	@ApiField("advance_status")
+	private String advanceStatus;
 
 	/**
 	 * 高速场景数据
 	 */
 	@ApiField("highway_data")
 	private HighwaySceneData highwayData;
+
+	/**
+	 * 蚂蚁会员统一ID
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 外部业务号，对应用户该笔ETC申请单号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 外部订单号,商户端唯一
@@ -90,7 +111,7 @@ public class AlipayCommerceTransportEtcTripSyncModel extends AlipayObject {
 	private String tradeNo;
 
 	/**
-	 * 交易状态； S：扣款成功； R: 退款成功；
+	 * 支付宝交易状态（S：扣款成功； R: 退款成功）银行交易状态（PROCESS_SUCCESS：受理成功；PROCESS_FAIL：受理失败；）
 	 */
 	@ApiField("trade_status")
 	private String tradeStatus;
@@ -101,11 +122,32 @@ public class AlipayCommerceTransportEtcTripSyncModel extends AlipayObject {
 	@ApiField("uid")
 	private String uid;
 
+	public String getAdvanceStatus() {
+		return this.advanceStatus;
+	}
+	public void setAdvanceStatus(String advanceStatus) {
+		this.advanceStatus = advanceStatus;
+	}
+
 	public HighwaySceneData getHighwayData() {
 		return this.highwayData;
 	}
 	public void setHighwayData(HighwaySceneData highwayData) {
 		this.highwayData = highwayData;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public String getOutTradeNo() {

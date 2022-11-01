@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分组消息记录
  *
  * @author auto create
- * @since 1.0, 2022-01-24 19:52:38
+ * @since 1.0, 2022-10-31 17:44:21
  */
 public class BcClusterMsgRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 8223628783191319213L;
+	private static final long serialVersionUID = 8339112817958727811L;
 
 	/**
 	 * 业务方id，消息发送时可传入，消息列表返回

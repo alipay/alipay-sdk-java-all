@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学费码充值配置对象
  *
  * @author auto create
- * @since 1.0, 2022-10-13 18:37:07
+ * @since 1.0, 2022-10-27 12:31:31
  */
 public class RechargeConfigTuitionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8184267554263673122L;
+	private static final long serialVersionUID = 7437999448254992279L;
 
 	/**
 	 * 外部传入扩展字段，系统不管控该字段内容

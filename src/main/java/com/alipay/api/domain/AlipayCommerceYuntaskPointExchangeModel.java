@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员兑换积分
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:30:10
+ * @since 1.0, 2022-10-31 19:48:59
  */
 public class AlipayCommerceYuntaskPointExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7577275135224798573L;
+	private static final long serialVersionUID = 6782459866993517433L;
 
 	/**
 	 * 导购员id

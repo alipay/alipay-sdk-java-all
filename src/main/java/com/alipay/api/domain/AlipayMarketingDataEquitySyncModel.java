@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 惠支付对集团的权益同步接口
  *
  * @author auto create
- * @since 1.0, 2022-09-22 19:42:14
+ * @since 1.0, 2022-10-26 14:34:47
  */
 public class AlipayMarketingDataEquitySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8439583738879518971L;
+	private static final long serialVersionUID = 2586535233591793694L;
 
 	/**
 	 * biz_time
@@ -44,6 +44,12 @@ public class AlipayMarketingDataEquitySyncModel extends AlipayObject {
 	 */
 	@ApiField("equity_info")
 	private EquityInfo equityInfo;
+
+	/**
+	 * 支付宝openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * original_biz_no
@@ -102,6 +108,13 @@ public class AlipayMarketingDataEquitySyncModel extends AlipayObject {
 	}
 	public void setEquityInfo(EquityInfo equityInfo) {
 		this.equityInfo = equityInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOriginalBizNo() {

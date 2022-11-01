@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人工打标规则结果提交
  *
  * @author auto create
- * @since 1.0, 2022-09-30 11:16:12
+ * @since 1.0, 2022-10-28 10:39:19
  */
 public class AlipayFincoreComplianceRcsmartRulemarkSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6132657598585848378L;
+	private static final long serialVersionUID = 6843794381477974792L;
 
 	/**
 	 * app_name为调用方系统名称(英文)，与分配的app_token一起做调用系统合法性校验

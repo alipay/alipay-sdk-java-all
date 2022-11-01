@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 惠支付通用开放平台事件接入接口
  *
  * @author auto create
- * @since 1.0, 2022-09-22 19:42:29
+ * @since 1.0, 2022-10-26 21:51:15
  */
 public class AlipayMarketingToolPromocommoptOpeneventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2217484252683254533L;
+	private static final long serialVersionUID = 4743746976736934769L;
 
 	/**
 	 * 外部事件发生时间，必须是（yyyy-MM-dd HH:mm:ss）格式
@@ -48,6 +48,12 @@ content_id：内容ID（必填）
 	 */
 	@ApiField("longitude")
 	private Long longitude;
+
+	/**
+	 * 支付宝用户openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 事件唯一编号，用来做幂等控制。每一次用户在商户所发生的事件，out_biz_no都不能一样。比如用户每次进入停车场、离开停车场的out_biz_no不能一样。
@@ -94,6 +100,13 @@ content_id：内容ID（必填）
 	}
 	public void setLongitude(Long longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

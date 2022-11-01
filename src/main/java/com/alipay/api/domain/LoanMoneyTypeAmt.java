@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LoanMoneyTypeAmt extends AlipayObject {
 
-	private static final long serialVersionUID = 5395982369234668964L;
+	private static final long serialVersionUID = 1516517815897559729L;
 
 	/**
 	 * 费用

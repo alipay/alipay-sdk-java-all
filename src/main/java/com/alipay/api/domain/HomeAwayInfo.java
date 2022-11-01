@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 主客队数据
  *
  * @author auto create
- * @since 1.0, 2022-10-13 15:25:09
+ * @since 1.0, 2022-11-01 12:01:58
  */
 public class HomeAwayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4793697257278425182L;
+	private static final long serialVersionUID = 5772382862113465698L;
 
 	/**
 	 * 客队数据

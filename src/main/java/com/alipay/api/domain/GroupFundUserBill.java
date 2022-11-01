@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupFundUserBill extends AlipayObject {
 
-	private static final long serialVersionUID = 4329914431617898382L;
+	private static final long serialVersionUID = 7449719665369775246L;
 
 	/**
 	 * 实际待收待付金额，两位小数点的整数，单位元

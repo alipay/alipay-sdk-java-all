@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 景区小交通订单回流接口
  *
  * @author auto create
- * @since 1.0, 2022-10-12 10:43:24
+ * @since 1.0, 2022-10-26 14:19:49
  */
 public class AlipayBusinessOrderScenicTrafficSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3442833111381958532L;
+	private static final long serialVersionUID = 5497628315669617549L;
 
 	/**
 	 * 订单金额
@@ -57,6 +57,12 @@ pay_amount：80.00
 	 */
 	@ApiField("ext_info")
 	private ScenicExtInfo extInfo;
+
+	/**
+	 * open_id是用户（UserId）在应用（AppId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单创建时间，该值不可变。
@@ -211,6 +217,13 @@ REFUND_FAILURE 退票失败。
 	}
 	public void setExtInfo(ScenicExtInfo extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Date getOrderCreateTime() {

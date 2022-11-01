@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GiftTemplateButtonBox extends AlipayObject {
 
-	private static final long serialVersionUID = 5531687793143878153L;
+	private static final long serialVersionUID = 8478998445567499282L;
 
 	/**
 	 * 开红包按钮，用于拆红包页

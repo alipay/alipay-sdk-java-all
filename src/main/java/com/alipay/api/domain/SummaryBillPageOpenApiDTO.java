@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 汇总账单分页信息
  *
  * @author auto create
- * @since 1.0, 2021-12-10 11:49:51
+ * @since 1.0, 2022-11-01 15:31:09
  */
 public class SummaryBillPageOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4791527129214781375L;
+	private static final long serialVersionUID = 7742814529344541751L;
 
 	/**
 	 * 当前页数

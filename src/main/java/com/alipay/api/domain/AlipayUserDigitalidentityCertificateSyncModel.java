@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字身份电子凭证同步接口
  *
  * @author auto create
- * @since 1.0, 2022-10-12 11:02:42
+ * @since 1.0, 2022-11-01 19:22:15
  */
 public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7148631498577454324L;
+	private static final long serialVersionUID = 3239845818649316579L;
 
 	/**
 	 * 含义：申领信息核验模式，该字段用于控制传入的信息与支付宝侧信息的核验对比方式，以防止凭证被归属到错误的用户。对比信息包括姓名/证件号等。 
@@ -46,6 +46,12 @@ public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject 
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 含义：支付宝用户的openId，是用户（userId）在应用（AppId）下的唯一用户标识（新接入的ISV必传open_id，不传user_id）。网关会将传入的open_id字段的值转换为user_id（2088格式），并放入与之映射的原user_id字段，并移除open_id参数，业务系统获取到的参数仅有user_id。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 含义：凭证状态（用于控制该凭证是否在用户证件夹是否可见）
@@ -129,6 +135,13 @@ F：不展示，当用户在机构页面将凭证删除时，需要传送该值�
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getStatus() {

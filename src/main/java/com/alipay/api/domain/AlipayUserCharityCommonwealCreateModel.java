@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝公益账户-公益数据接入接口
  *
  * @author auto create
- * @since 1.0, 2022-10-09 15:23:51
+ * @since 1.0, 2022-10-25 21:05:15
  */
 public class AlipayUserCharityCommonwealCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5286684598251386142L;
+	private static final long serialVersionUID = 7223592134599766468L;
 
 	/**
 	 * 业务时间；格式yyyy-MM-dd hh:mm:ss
@@ -30,6 +30,12 @@ public class AlipayUserCharityCommonwealCreateModel extends AlipayObject {
 	 */
 	@ApiField("numerical")
 	private Long numerical;
+
+	/**
+	 * 蚂蚁统一会员Id 对应的open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 其他业务信息，JSON格式；
@@ -74,6 +80,13 @@ public class AlipayUserCharityCommonwealCreateModel extends AlipayObject {
 	}
 	public void setNumerical(Long numerical) {
 		this.numerical = numerical;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOriginalData() {

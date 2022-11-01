@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.accountbook.notify.subscribe request
  * 
  * @author auto create
- * @since 1.0, 2021-11-04 14:16:40
+ * @since 1.0, 2022-10-31 11:13:25
  */
 public class AlipayFundAccountbookNotifySubscribeRequest implements AlipayRequest<AlipayFundAccountbookNotifySubscribeResponse> {
 

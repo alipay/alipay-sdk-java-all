@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.sw.tree.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 12:36:31
+ * @since 1.0, 2022-10-26 14:31:50
  */
 public class AlipayIserviceCcmSwTreeBatchqueryRequest implements AlipayRequest<AlipayIserviceCcmSwTreeBatchqueryResponse> {
 

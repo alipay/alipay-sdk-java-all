@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡创建储值优惠方案
  *
  * @author auto create
- * @since 1.0, 2022-04-21 16:22:38
+ * @since 1.0, 2022-10-31 21:54:41
  */
 public class MemberCardCreatePrepaidPromotionPlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5716385149918371868L;
+	private static final long serialVersionUID = 5735875289239432284L;
 
 	/**
 	 * 充值方案权益金部分，单位是元，且必须是整数，最小为0，权益金不超过5000元

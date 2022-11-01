@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 录入机构群信息
  *
  * @author auto create
- * @since 1.0, 2022-10-14 14:35:33
+ * @since 1.0, 2022-10-26 11:11:14
  */
 public class AlipayCommerceEducateTrainGroupsAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5811731858728262878L;
+	private static final long serialVersionUID = 3873457868523465618L;
 
 	/**
 	 * 机构群id

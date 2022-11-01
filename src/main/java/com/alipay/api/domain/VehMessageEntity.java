@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主统一消息实体类型
  *
  * @author auto create
- * @since 1.0, 2020-03-06 14:27:51
+ * @since 1.0, 2022-10-25 16:15:28
  */
 public class VehMessageEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 7756571314136235263L;
+	private static final long serialVersionUID = 7666484624556566312L;
 
 	/**
 	 * 证件号码.(certificate_type/certificate_number/certificate_username) 或者uid必须有一个不为空。两个都不为空则以uid为准. 该字段为敏感字段，须做md5处理后传输。示例中值的明文为310101198011110010.

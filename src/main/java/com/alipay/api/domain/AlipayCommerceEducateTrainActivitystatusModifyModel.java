@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支课堂课程领取状态更新
  *
  * @author auto create
- * @since 1.0, 2022-10-14 14:35:49
+ * @since 1.0, 2022-10-26 11:10:46
  */
 public class AlipayCommerceEducateTrainActivitystatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8848545559458892478L;
+	private static final long serialVersionUID = 2719767194252458696L;
 
 	/**
 	 * 活动 id

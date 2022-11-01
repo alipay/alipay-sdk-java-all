@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发放商家券
  *
  * @author auto create
- * @since 1.0, 2022-07-17 18:39:16
+ * @since 1.0, 2022-10-26 13:55:14
  */
 public class AlipayMarketingActivityOrdervoucherSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2411998514862392887L;
+	private static final long serialVersionUID = 7674791444935618256L;
 
 	/**
 	 * 优惠券活动id
@@ -46,6 +46,12 @@ aalipays://platformapi/startapp?appId=2021002147682XXX&page=pages/main/mian&quer
 	 */
 	@ApiField("merchant_order_url")
 	private String merchantOrderUrl;
+
+	/**
+	 * 支付宝用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务单号，用作幂等控制。
@@ -107,6 +113,13 @@ ZHIFUBAO_TRADE_CHANNEL： 支付宝交易渠道
 	}
 	public void setMerchantOrderUrl(String merchantOrderUrl) {
 		this.merchantOrderUrl = merchantOrderUrl;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

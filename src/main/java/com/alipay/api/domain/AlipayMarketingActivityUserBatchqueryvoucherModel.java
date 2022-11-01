@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条件查询用户券
  *
  * @author auto create
- * @since 1.0, 2022-10-13 16:23:22
+ * @since 1.0, 2022-10-26 14:24:13
  */
 public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7216627396553362297L;
+	private static final long serialVersionUID = 5638976369953288253L;
 
 	/**
 	 * 活动 id
@@ -30,6 +30,12 @@ public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObj
 	 */
 	@ApiField("merchant_access_mode")
 	private String merchantAccessMode;
+
+	/**
+	 * 支付宝用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 分页查询页码
@@ -80,6 +86,13 @@ public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObj
 	}
 	public void setMerchantAccessMode(String merchantAccessMode) {
 		this.merchantAccessMode = merchantAccessMode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getPageNum() {

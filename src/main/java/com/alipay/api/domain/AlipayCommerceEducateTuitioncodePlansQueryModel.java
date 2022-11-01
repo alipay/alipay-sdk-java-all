@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学费码已到账明细查询
  *
  * @author auto create
- * @since 1.0, 2020-12-08 19:23:54
+ * @since 1.0, 2022-10-26 11:13:03
  */
 public class AlipayCommerceEducateTuitioncodePlansQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2144346912794718341L;
+	private static final long serialVersionUID = 5672966298118278187L;
 
 	/**
 	 * 是否包含订单信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁企业信用认证初始化
  *
  * @author auto create
- * @since 1.0, 2022-06-14 17:06:56
+ * @since 1.0, 2022-10-28 17:16:13
  */
 public class ZhimaCreditEpCertificationInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3615499515681467518L;
+	private static final long serialVersionUID = 5158315336771847956L;
 
 	/**
 	 * 支付宝登陆账号(邮箱或者手机号)
@@ -42,6 +42,12 @@ public class ZhimaCreditEpCertificationInitializeModel extends AlipayObject {
 	 */
 	@ApiField("ep_name")
 	private String epName;
+
+	/**
+	 * openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户唯一业务流水号，由大小写字母和数字构成
@@ -106,6 +112,13 @@ public class ZhimaCreditEpCertificationInitializeModel extends AlipayObject {
 	}
 	public void setEpName(String epName) {
 		this.epName = epName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrgBizNo() {

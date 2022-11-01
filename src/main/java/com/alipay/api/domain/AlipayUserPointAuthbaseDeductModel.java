@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁会员积分扣减接口
  *
  * @author auto create
- * @since 1.0, 2020-08-17 21:19:41
+ * @since 1.0, 2022-10-28 21:19:13
  */
 public class AlipayUserPointAuthbaseDeductModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3226644498248147672L;
+	private static final long serialVersionUID = 6572932172952142779L;
 
 	/**
 	 * 蚂蚁会员平台上的权益所对应的编号
@@ -32,6 +32,12 @@ public class AlipayUserPointAuthbaseDeductModel extends AlipayObject {
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 统一开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 业务流水号，会用于幂等性校验，所以请保证每次请求的业务流水号的唯一性
@@ -70,6 +76,13 @@ public class AlipayUserPointAuthbaseDeductModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

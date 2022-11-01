@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员电子证件信息保存
  *
  * @author auto create
- * @since 1.0, 2020-08-27 15:38:28
+ * @since 1.0, 2022-11-01 11:02:05
  */
 public class AlipayUserCertdocSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7185386914956874619L;
+	private static final long serialVersionUID = 7354259181197351512L;
 
 	/**
 	 * 证件号
@@ -58,6 +58,12 @@ REAL_ESTATE_WARRANTS:不动产证;
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 含义：支付宝用户的openId，是用户（user_id）在应用（AppId）下的唯一用户标识（新接入的ISV必传open_id，不传user_id）。网关会将传入的open_id字段的值转换为user_id（2088格式），并放入与之映射的原user_id字段，并移除open_id参数，业务系统获取到的参数仅有user_id。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 证件图片集合
@@ -104,6 +110,13 @@ REAL_ESTATE_WARRANTS:不动产证;
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<OpenCertPic> getPicList() {

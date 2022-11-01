@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保保险的商户(企业)信息
  *
  * @author auto create
- * @since 1.0, 2022-08-15 11:36:28
+ * @since 1.0, 2022-10-27 19:56:02
  */
 public class InsCompany extends AlipayObject {
 
-	private static final long serialVersionUID = 8833432748767516782L;
+	private static final long serialVersionUID = 1846115554815343488L;
 
 	/**
 	 * 支付宝账号ID
 	 */
 	@ApiField("alipay_account_no")
 	private String alipayAccountNo;
+
+	/**
+	 * 支付宝账号ID
+	 */
+	@ApiField("alipay_account_open_id")
+	private String alipayAccountOpenId;
 
 	/**
 	 * 商户/企业名称
@@ -33,6 +39,8 @@ public class InsCompany extends AlipayObject {
 
 	/**
 	 * 证件类型
+社会信用编号 23
+身份证号 10
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -72,6 +80,13 @@ public class InsCompany extends AlipayObject {
 	}
 	public void setAlipayAccountNo(String alipayAccountNo) {
 		this.alipayAccountNo = alipayAccountNo;
+	}
+
+	public String getAlipayAccountOpenId() {
+		return this.alipayAccountOpenId;
+	}
+	public void setAlipayAccountOpenId(String alipayAccountOpenId) {
+		this.alipayAccountOpenId = alipayAccountOpenId;
 	}
 
 	public String getCertName() {

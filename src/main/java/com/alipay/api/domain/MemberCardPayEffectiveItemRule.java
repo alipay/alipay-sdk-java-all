@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡核销的商品范围规则
  *
  * @author auto create
- * @since 1.0, 2022-01-25 17:19:08
+ * @since 1.0, 2022-10-31 21:54:41
  */
 public class MemberCardPayEffectiveItemRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3528769596212789157L;
+	private static final long serialVersionUID = 1876468772267723183L;
 
 	/**
 	 * 统一支付下单传递进来的商品编号，最大列表长度10000

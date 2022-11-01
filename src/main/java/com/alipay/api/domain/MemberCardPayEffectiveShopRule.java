@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡核销有效线下店范围
  *
  * @author auto create
- * @since 1.0, 2022-01-25 17:19:08
+ * @since 1.0, 2022-10-31 21:54:41
  */
 public class MemberCardPayEffectiveShopRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4792224127997582821L;
+	private static final long serialVersionUID = 3795245789268584651L;
 
 	/**
 	 * 线下店id列表，列表最大长度5000

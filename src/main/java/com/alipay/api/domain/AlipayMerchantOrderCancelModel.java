@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 业务订单撤销接口
  *
  * @author auto create
- * @since 1.0, 2019-11-27 20:38:15
+ * @since 1.0, 2022-11-01 11:34:25
  */
 public class AlipayMerchantOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7699156645615517593L;
+	private static final long serialVersionUID = 1187864534796422419L;
 
 	/**
 	 * 业务场景，某些场景下操作的不是用户本身的订单，而是用户所在群体的订单的情况下，必传

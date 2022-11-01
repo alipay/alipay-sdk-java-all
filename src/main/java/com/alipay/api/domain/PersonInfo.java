@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8763341348464259678L;
+	private static final long serialVersionUID = 7294122422369451394L;
 
 	/**
 	 * 身份证有效期开始日,格式（yyyy-MM-dd）

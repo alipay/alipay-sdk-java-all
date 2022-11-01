@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 接入蚂蚁签约索引中心
  *
  * @author auto create
- * @since 1.0, 2021-09-08 11:41:43
+ * @since 1.0, 2022-10-28 20:21:15
  */
 public class AnttechBlockchainSignIndexCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2197774479185891875L;
+	private static final long serialVersionUID = 1181586975679642382L;
 
 	/**
 	 * 应用名，必填， 如cif
@@ -44,6 +44,12 @@ public class AnttechBlockchainSignIndexCreateModel extends AlipayObject {
 	 */
 	@ApiField("biz_unique_key")
 	private String bizUniqueKey;
+
+	/**
+	 * 0xxxca
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 签约主体ID， 必填， 请填签约用户的userId
@@ -114,6 +120,13 @@ public class AnttechBlockchainSignIndexCreateModel extends AlipayObject {
 	}
 	public void setBizUniqueKey(String bizUniqueKey) {
 		this.bizUniqueKey = bizUniqueKey;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPrincipalId() {

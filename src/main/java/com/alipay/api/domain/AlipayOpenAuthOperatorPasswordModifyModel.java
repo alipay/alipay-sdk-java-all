@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改蚂蚁操作员登录密码
  *
  * @author auto create
- * @since 1.0, 2022-07-14 16:35:44
+ * @since 1.0, 2022-10-27 17:38:28
  */
 public class AlipayOpenAuthOperatorPasswordModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5193392171452262885L;
+	private static final long serialVersionUID = 8857121375143841387L;
 
 	/**
 	 * 新的密码

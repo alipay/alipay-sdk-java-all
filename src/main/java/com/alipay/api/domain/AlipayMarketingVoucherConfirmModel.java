@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingVoucherConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1391412499267381852L;
+	private static final long serialVersionUID = 2845674675458478389L;
 
 	/**
 	 * 用于决定在用户确认领券后是否重定向。可枚举：true表示需要重定向，false表示不需要重定向，不区分大小写

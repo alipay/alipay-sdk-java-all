@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 积分回退接口
  *
  * @author auto create
- * @since 1.0, 2019-11-13 12:04:21
+ * @since 1.0, 2022-11-01 11:33:39
  */
 public class AlipayMerchantOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3823268275121837636L;
+	private static final long serialVersionUID = 8445657522734416668L;
 
 	/**
 	 * 业务场景，某些场景下操作的不是用户本身的订单，而是用户所在群体的订单的情况下，必传

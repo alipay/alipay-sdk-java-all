@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeOrderRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5473994717394124744L;
+	private static final long serialVersionUID = 4115855413372112333L;
 
 	/** 
 	 * 退款成功时间

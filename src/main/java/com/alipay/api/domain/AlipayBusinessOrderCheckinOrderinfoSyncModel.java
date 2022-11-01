@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 酒店住中订单同步
  *
  * @author auto create
- * @since 1.0, 2022-10-12 17:01:00
+ * @since 1.0, 2022-10-27 14:20:16
  */
 public class AlipayBusinessOrderCheckinOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7231197544555442646L;
+	private static final long serialVersionUID = 4774542137128485574L;
 
 	/**
 	 * 酒店入住小程序
@@ -77,6 +77,12 @@ public class AlipayBusinessOrderCheckinOrderinfoSyncModel extends AlipayObject {
 	 */
 	@ApiField("member_level")
 	private String memberLevel;
+
+	/**
+	 * open_id是用户（UserId）在应用（AppId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 入住订单创建时间
@@ -217,6 +223,13 @@ CHECK_OUT 离店
 	}
 	public void setMemberLevel(String memberLevel) {
 		this.memberLevel = memberLevel;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Date getOrderCreateTime() {

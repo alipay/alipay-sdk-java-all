@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 酒店订单同步
  *
  * @author auto create
- * @since 1.0, 2022-10-12 17:00:40
+ * @since 1.0, 2022-10-27 14:20:13
  */
 public class AlipayBusinessOrderOrderinfoHotelSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2427743673559753796L;
+	private static final long serialVersionUID = 1115813429311414266L;
 
 	/**
 	 * 订单总金额（不包含任何优惠的金额）
@@ -95,6 +95,12 @@ public class AlipayBusinessOrderOrderinfoHotelSyncModel extends AlipayObject {
 	 */
 	@ApiField("membership_grade")
 	private String membershipGrade;
+
+	/**
+	 * open_id是用户（UserId）在应用（AppId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单创建时间
@@ -274,6 +280,13 @@ CLOSED--订单关闭
 	}
 	public void setMembershipGrade(String membershipGrade) {
 		this.membershipGrade = membershipGrade;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Date getOrderCreateTime() {

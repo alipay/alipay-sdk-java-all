@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinancialnetAuthCardbinPrivateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8315251936313382545L;
+	private static final long serialVersionUID = 4556626832395761325L;
 
 	/** 
 	 * 卡类型，CC为信用卡，DC为借记卡

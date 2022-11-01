@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ArrangementConditionGroupSelector extends AlipayObject {
 
-	private static final long serialVersionUID = 4135487677765116444L;
+	private static final long serialVersionUID = 6841967534938348675L;
 
 	/**
 	 * 是否选择最新的产品条件,默认为TRUE

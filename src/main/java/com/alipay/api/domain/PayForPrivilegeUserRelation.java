@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充享惠业务用户与商户的关系
  *
  * @author auto create
- * @since 1.0, 2022-03-29 10:47:06
+ * @since 1.0, 2022-10-31 21:53:49
  */
 public class PayForPrivilegeUserRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 3137448573219135743L;
+	private static final long serialVersionUID = 6372219827271533381L;
 
 	/**
 	 * 关系建立时间

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.micropay.order.direct.pay request
  * 
  * @author auto create
- * @since 1.0, 2022-10-13 16:11:59
+ * @since 1.0, 2022-11-01 14:16:51
  */
 public class AlipayMicropayOrderDirectPayRequest implements AlipayRequest<AlipayMicropayOrderDirectPayResponse> {
 
@@ -32,6 +32,11 @@ public class AlipayMicropayOrderDirectPayRequest implements AlipayRequest<Alipay
 	* 支付备注
 	 */
 	private String memo;
+
+	/** 
+	* 收款方OpenId
+	 */
+	private String receiveOpenId;
 
 	/** 
 	* 收款方的支付宝ID
@@ -62,6 +67,13 @@ public class AlipayMicropayOrderDirectPayRequest implements AlipayRequest<Alipay
 	}
 	public String getMemo() {
 		return this.memo;
+	}
+
+	public void setReceiveOpenId(String receiveOpenId) {
+		this.receiveOpenId = receiveOpenId;
+	}
+	public String getReceiveOpenId() {
+		return this.receiveOpenId;
 	}
 
 	public void setReceiveUserId(String receiveUserId) {
@@ -142,6 +154,7 @@ public class AlipayMicropayOrderDirectPayRequest implements AlipayRequest<Alipay
 		txtParams.put("alipay_order_no", this.alipayOrderNo);
 		txtParams.put("amount", this.amount);
 		txtParams.put("memo", this.memo);
+		txtParams.put("receive_open_id", this.receiveOpenId);
 		txtParams.put("receive_user_id", this.receiveUserId);
 		txtParams.put("transfer_out_order_no", this.transferOutOrderNo);
 		if(udfParams != null) {

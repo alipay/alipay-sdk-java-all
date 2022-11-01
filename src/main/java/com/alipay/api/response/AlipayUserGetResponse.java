@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.get response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-22 16:11:55
+ * @since 1.0, 2022-11-01 14:37:36
  */
 public class AlipayUserGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4746792279823436419L;
+	private static final long serialVersionUID = 8243923895314729113L;
 
 	/** 
 	 * 支付宝用户信息

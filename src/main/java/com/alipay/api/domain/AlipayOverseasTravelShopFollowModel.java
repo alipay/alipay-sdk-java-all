@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境游发现店铺收藏接口
  *
  * @author auto create
- * @since 1.0, 2022-01-17 17:47:35
+ * @since 1.0, 2022-10-27 10:38:13
  */
 public class AlipayOverseasTravelShopFollowModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4526367859467541148L;
+	private static final long serialVersionUID = 1358256627117685391L;
 
 	/**
 	 * 取值说明：CONFIRM确认收藏/CANCEL取消收藏
@@ -24,6 +24,12 @@ public class AlipayOverseasTravelShopFollowModel extends AlipayObject {
 	 */
 	@ApiField("ch_info")
 	private String chInfo;
+
+	/**
+	 * 用户id，与user_id_type配合使用，暂时仅支持集团havanaId和支付宝2088开头的16位数字ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝跨境游店铺ID
@@ -61,6 +67,13 @@ public class AlipayOverseasTravelShopFollowModel extends AlipayObject {
 	}
 	public void setChInfo(String chInfo) {
 		this.chInfo = chInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getShopId() {

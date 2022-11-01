@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增值服务的sku
  *
  * @author auto create
- * @since 1.0, 2021-03-02 13:43:03
+ * @since 1.0, 2022-10-26 19:34:46
  */
 public class HealthServiceSku extends AlipayObject {
 
-	private static final long serialVersionUID = 4643947534243854294L;
+	private static final long serialVersionUID = 4847341356873977179L;
 
 	/**
 	 * 商家sku条形码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员关系绑定
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:30:27
+ * @since 1.0, 2022-10-31 19:49:40
  */
 public class AlipayCommercePromoterRelationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8259694258548241552L;
+	private static final long serialVersionUID = 3195183416841669614L;
 
 	/**
 	 * 商家id

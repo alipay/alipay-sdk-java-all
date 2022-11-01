@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 记账本通知取消订阅接口
  *
  * @author auto create
- * @since 1.0, 2021-11-04 13:12:28
+ * @since 1.0, 2022-10-31 11:13:04
  */
 public class AlipayFundAccountbookNotifyUnsubscribeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4188359449737961993L;
+	private static final long serialVersionUID = 4673934743753989182L;
 
 	/**
 	 * 记账本ID

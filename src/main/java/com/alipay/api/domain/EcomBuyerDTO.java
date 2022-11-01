@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放平台电商买家模型
  *
  * @author auto create
- * @since 1.0, 2022-10-09 15:12:14
+ * @since 1.0, 2022-10-27 14:04:19
  */
 public class EcomBuyerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4242511396966864135L;
+	private static final long serialVersionUID = 7891617241919755977L;
 
 	/**
 	 * 支付宝账号id
 	 */
 	@ApiField("alipay_id")
 	private String alipayId;
+
+	/**
+	 * 支付宝账号id
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 银行卡持卡人姓名:资金账号类型为银行卡时，必传
@@ -108,6 +114,13 @@ public class EcomBuyerDTO extends AlipayObject {
 	}
 	public void setAlipayId(String alipayId) {
 		this.alipayId = alipayId;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getBankCardHolderName() {

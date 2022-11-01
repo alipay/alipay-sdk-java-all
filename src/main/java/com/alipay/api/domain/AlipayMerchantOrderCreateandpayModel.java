@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单创建并支付
  *
  * @author auto create
- * @since 1.0, 2019-12-25 13:21:43
+ * @since 1.0, 2022-11-01 11:34:04
  */
 public class AlipayMerchantOrderCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3657112227562998836L;
+	private static final long serialVersionUID = 2835445967938352977L;
 
 	/**
 	 * 不同的业务类型有不同的状态推进逻辑，同时对于支付的驱动有不同的处理方法。如阿里云的现金支付不需要订单驱动，阿里云的纯积分支付需要等待代扣成功消息才算支付成功。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝社交聊天，消息内带push提醒的push信息模型
  *
  * @author auto create
- * @since 1.0, 2020-06-08 15:46:26
+ * @since 1.0, 2022-10-31 22:06:08
  */
 public class NotifyParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1553865259913675348L;
+	private static final long serialVersionUID = 4394291691179974568L;
 
 	/**
 	 * 消息push的内容，根据serviceCode对应的模版中的key进行值替换模版中的具体文案，格式为Map<String, String>转json

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钢铁匣保存记录
  *
  * @author auto create
- * @since 1.0, 2022-10-13 17:09:40
+ * @since 1.0, 2022-10-28 14:37:13
  */
 public class AlipayUserSafeboxRecordSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3781144812586576427L;
+	private static final long serialVersionUID = 6227513742926691366L;
 
 	/**
 	 * 用钢铁匣公钥加密后的内容
@@ -24,6 +24,12 @@ public class AlipayUserSafeboxRecordSaveModel extends AlipayObject {
 	 */
 	@ApiField("key_version")
 	private String keyVersion;
+
+	/**
+	 * 用户（UserId）在应用（AppId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 钢铁匣为接入方提供的应用场景码。一个APPID可以对应多个场景码
@@ -61,6 +67,13 @@ public class AlipayUserSafeboxRecordSaveModel extends AlipayObject {
 	}
 	public void setKeyVersion(String keyVersion) {
 		this.keyVersion = keyVersion;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneCode() {

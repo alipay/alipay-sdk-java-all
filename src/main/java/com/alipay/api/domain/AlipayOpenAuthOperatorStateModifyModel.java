@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁操作员状态修改
  *
  * @author auto create
- * @since 1.0, 2022-08-26 10:26:45
+ * @since 1.0, 2022-10-27 17:37:43
  */
 public class AlipayOpenAuthOperatorStateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1293757245121464191L;
+	private static final long serialVersionUID = 1811627686161525627L;
 
 	/**
 	 * 修改动作。取值如下：

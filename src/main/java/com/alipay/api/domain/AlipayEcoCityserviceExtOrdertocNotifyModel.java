@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 光华通用订单同步
  *
  * @author auto create
- * @since 1.0, 2022-09-14 15:01:50
+ * @since 1.0, 2022-11-01 16:33:49
  */
 public class AlipayEcoCityserviceExtOrdertocNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6242933682298635554L;
+	private static final long serialVersionUID = 3136328626387342568L;
 
 	/**
 	 * 光华平台服务编码
 	 */
 	@ApiField("app_code")
 	private String appCode;
+
+	/**
+	 * 城市编码
+	 */
+	@ApiField("city_code")
+	private String cityCode;
 
 	/**
 	 * 扩展信息
@@ -39,6 +45,12 @@ public class AlipayEcoCityserviceExtOrdertocNotifyModel extends AlipayObject {
 	 */
 	@ApiField("industry_type")
 	private Long industryType;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单金额
@@ -77,6 +89,12 @@ public class AlipayEcoCityserviceExtOrdertocNotifyModel extends AlipayObject {
 	private String status;
 
 	/**
+	 * 跳转地址
+	 */
+	@ApiField("target_url")
+	private String targetUrl;
+
+	/**
 	 * 模板Id
 请联系BD获取
 	 */
@@ -94,6 +112,13 @@ public class AlipayEcoCityserviceExtOrdertocNotifyModel extends AlipayObject {
 	}
 	public void setAppCode(String appCode) {
 		this.appCode = appCode;
+	}
+
+	public String getCityCode() {
+		return this.cityCode;
+	}
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
 	}
 
 	public String getExtInfo() {
@@ -115,6 +140,13 @@ public class AlipayEcoCityserviceExtOrdertocNotifyModel extends AlipayObject {
 	}
 	public void setIndustryType(Long industryType) {
 		this.industryType = industryType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderAmount() {
@@ -157,6 +189,13 @@ public class AlipayEcoCityserviceExtOrdertocNotifyModel extends AlipayObject {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getTargetUrl() {
+		return this.targetUrl;
+	}
+	public void setTargetUrl(String targetUrl) {
+		this.targetUrl = targetUrl;
 	}
 
 	public Long getTemplateId() {

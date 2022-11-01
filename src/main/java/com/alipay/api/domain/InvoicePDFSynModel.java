@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoicePDFSynModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6518332656322562164L;
+	private static final long serialVersionUID = 8357895292255954974L;
 
 	/**
 	 * 支付宝开票申请id。

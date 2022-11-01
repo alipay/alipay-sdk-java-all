@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.point.authbase.deduct request
  * 
  * @author auto create
- * @since 1.0, 2022-10-25 02:12:43
+ * @since 1.0, 2022-10-28 21:21:50
  */
 public class AlipayUserPointAuthbaseDeductRequest implements AlipayRequest<AlipayUserPointAuthbaseDeductResponse> {
 
