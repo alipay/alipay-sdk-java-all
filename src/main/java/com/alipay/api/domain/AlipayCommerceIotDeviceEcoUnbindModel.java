@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotDeviceEcoUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6761592395177549444L;
+	private static final long serialVersionUID = 1145382251481825485L;
 
 	/**
 	 * 绑定类型，可选项[SUB_MERCHANT]

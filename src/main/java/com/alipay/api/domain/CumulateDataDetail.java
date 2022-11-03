@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CumulateDataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5394544424321289288L;
+	private static final long serialVersionUID = 3525451278412282196L;
 
 	/**
 	 * 数据回传的动作类型，正向或逆向。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BccEventDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3695426726144234433L;
+	private static final long serialVersionUID = 5792836638937631834L;
 
 	/**
 	 * 活动id

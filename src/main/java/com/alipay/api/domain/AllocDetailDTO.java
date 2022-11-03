@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AllocDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1533899434455278728L;
+	private static final long serialVersionUID = 6637688141566871643L;
 
 	/**
 	 * 合花群ID（与当前请求参数中传入值保持一致）

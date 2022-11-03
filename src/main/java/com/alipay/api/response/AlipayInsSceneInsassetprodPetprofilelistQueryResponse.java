@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneInsassetprodPetprofilelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2242338941844673517L;
+	private static final long serialVersionUID = 1444797684868988294L;
 
 	/** 
 	 * 列表

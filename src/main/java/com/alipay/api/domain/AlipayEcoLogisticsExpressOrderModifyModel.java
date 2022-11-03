@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoLogisticsExpressOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7437463981557358513L;
+	private static final long serialVersionUID = 6458948539767967217L;
 
 	/**
 	 * 接单类型，已接单状态时必填

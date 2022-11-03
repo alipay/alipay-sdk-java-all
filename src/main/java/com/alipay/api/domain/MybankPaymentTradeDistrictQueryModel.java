@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankPaymentTradeDistrictQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5468785674825951429L;
+	private static final long serialVersionUID = 1887797676549187585L;
 
 	/**
 	 * 父级行政地区编码。

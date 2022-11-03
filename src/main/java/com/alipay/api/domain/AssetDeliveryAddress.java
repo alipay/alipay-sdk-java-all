@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AssetDeliveryAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 1626377276926154658L;
+	private static final long serialVersionUID = 2648596647836527589L;
 
 	/**
 	 * 详细地址

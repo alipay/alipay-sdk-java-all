@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAssetCardDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1794756632165996199L;
+	private static final long serialVersionUID = 4371929445299723896L;
 
 	/**
 	 * 打款金额

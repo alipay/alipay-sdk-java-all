@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LifeRecommendArticles extends AlipayObject {
 
-	private static final long serialVersionUID = 1236273813899131584L;
+	private static final long serialVersionUID = 2187947584893932878L;
 
 	/**
 	 * 文章id

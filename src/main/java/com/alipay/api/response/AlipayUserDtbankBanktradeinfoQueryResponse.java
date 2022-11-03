@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserDtbankBanktradeinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5567131632172964353L;
+	private static final long serialVersionUID = 2698929142927619538L;
 
 	/** 
 	 * 卡类型
