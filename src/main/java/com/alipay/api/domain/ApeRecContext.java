@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推荐上下文
  *
  * @author auto create
- * @since 1.0, 2022-10-19 11:24:00
+ * @since 1.0, 2022-11-02 16:36:15
  */
 public class ApeRecContext extends AlipayObject {
 
-	private static final long serialVersionUID = 2235959267659422298L;
+	private static final long serialVersionUID = 5164328959413616164L;
 
 	/**
 	 * 类目列表，推荐结果只会包含该类目的商品，为空时代表返回所有的商品。多个条件是与的关系。
@@ -61,6 +61,12 @@ public class ApeRecContext extends AlipayObject {
 	private String latitude;
 
 	/**
+	 * 通过LBS召回的距离，范围是[100,50 000],如果不传则会默认是5000米。此数据单位为米。
+	 */
+	@ApiField("lbs_distance")
+	private Long lbsDistance;
+
+	/**
 	 * 用户当前位置经度
 	 */
 	@ApiField("longitude")
@@ -72,6 +78,13 @@ public class ApeRecContext extends AlipayObject {
 	@ApiListField("other_index_list")
 	@ApiField("string")
 	private List<String> otherIndexList;
+
+	/**
+	 * 选品池id list
+	 */
+	@ApiListField("select_id_list")
+	@ApiField("string")
+	private List<String> selectIdList;
 
 	/**
 	 * 标签列表，推荐结果只会包含该标签的商品，为空时代表返回所有的商品。多个条件是与的关系。
@@ -129,6 +142,13 @@ public class ApeRecContext extends AlipayObject {
 		this.latitude = latitude;
 	}
 
+	public Long getLbsDistance() {
+		return this.lbsDistance;
+	}
+	public void setLbsDistance(Long lbsDistance) {
+		this.lbsDistance = lbsDistance;
+	}
+
 	public String getLongitude() {
 		return this.longitude;
 	}
@@ -141,6 +161,13 @@ public class ApeRecContext extends AlipayObject {
 	}
 	public void setOtherIndexList(List<String> otherIndexList) {
 		this.otherIndexList = otherIndexList;
+	}
+
+	public List<String> getSelectIdList() {
+		return this.selectIdList;
+	}
+	public void setSelectIdList(List<String> selectIdList) {
+		this.selectIdList = selectIdList;
 	}
 
 	public List<String> getTags() {

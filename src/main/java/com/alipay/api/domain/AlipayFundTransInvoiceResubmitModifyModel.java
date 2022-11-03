@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 票据平台异常订单开票接口
  *
  * @author auto create
- * @since 1.0, 2020-12-16 11:59:21
+ * @since 1.0, 2022-11-02 11:39:55
  */
 public class AlipayFundTransInvoiceResubmitModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5796929729369241373L;
+	private static final long serialVersionUID = 5821957464287783433L;
 
 	/**
 	 * 业务ID

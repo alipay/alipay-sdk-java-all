@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.authorder.create request
  * 
  * @author auto create
- * @since 1.0, 2022-09-26 16:51:47
+ * @since 1.0, 2022-11-02 10:51:31
  */
 public class AlipayMerchantIndirectAuthorderCreateRequest implements AlipayRequest<AlipayMerchantIndirectAuthorderCreateResponse> {
 

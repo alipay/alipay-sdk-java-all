@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 业务记录查询接口
  *
  * @author auto create
- * @since 1.0, 2018-06-01 16:06:49
+ * @since 1.0, 2022-11-01 21:07:12
  */
 public class AlipayCommerceBusinessorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3358475855366261631L;
+	private static final long serialVersionUID = 4356443333591723511L;
 
 	/**
 	 * 查询办事记录的时间区间中的开始时间，格式为yyyy-MM-dd HH:mm:ss

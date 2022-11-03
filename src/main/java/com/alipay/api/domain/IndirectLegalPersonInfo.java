@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 法人身份信息
  *
  * @author auto create
- * @since 1.0, 2022-09-01 19:25:21
+ * @since 1.0, 2022-11-02 10:50:16
  */
 public class IndirectLegalPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5487169166757985823L;
+	private static final long serialVersionUID = 4387574178376822757L;
 
 	/**
 	 * 授权函照片（使用图片上传接口），当证件持有人类型为 经办人时，必须上传。其他情况，无需上传
@@ -38,7 +38,7 @@ public class IndirectLegalPersonInfo extends AlipayObject {
 	private String cardNo;
 
 	/**
-	 * 证件类型，枚举值：中国大陆居民-身份证(RESIDENT)、其他国家或地区居民-护照(PASSPORT)、中国港澳居民-来往内地通行证(PASSPORT_HK_MO)、中国台湾居民-来往大陆通行证(PASSPORT_TWN)、个体户/企业/事业单位/社会组织：可选择任一证件类型，政府机关、小微商户仅支持身份证类型。
+	 * 证件类型，枚举值：中国大陆居民-身份证(RESIDENT)、其他国家或地区居民-护照(PASSPORT)、中国港澳居民-来往内地通行证(PASSPORT_HK_MO)、中国台湾居民-来往大陆通行证(PASSPORT_TWN)、港澳居民居住证（RESIDENCE_PERMIT_HM）、台湾居民居住证（RESIDENCE_PERMIT_TW）、外国人永久居住证（PERMANENT_RESIDENCE_FOREIGNER）。个体户/企业/事业单位/社会组织：可选择任一证件类型，政府机关、小微商户仅支持身份证类型。
 	 */
 	@ApiField("card_type")
 	private String cardType;

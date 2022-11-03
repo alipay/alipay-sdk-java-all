@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商家物流运单同步接口
  *
  * @author auto create
- * @since 1.0, 2020-03-17 10:48:18
+ * @since 1.0, 2022-11-02 17:26:14
  */
 public class AlipayCommerceLogisticsWaybillMinimctSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5742944579992368954L;
+	private static final long serialVersionUID = 7871988263986773245L;
 
 	/**
 	 * 物流公司编码，具体详见接口开发文档
@@ -28,6 +28,12 @@ public class AlipayCommerceLogisticsWaybillMinimctSyncModel extends AlipayObject
 	@ApiListField("merchant_ext_info")
 	@ApiField("param_ext_info")
 	private List<ParamExtInfo> merchantExtInfo;
+
+	/**
+	 * 收件人手机号
+	 */
+	@ApiField("receiver_mobile")
+	private String receiverMobile;
 
 	/**
 	 * 运单号
@@ -47,6 +53,13 @@ public class AlipayCommerceLogisticsWaybillMinimctSyncModel extends AlipayObject
 	}
 	public void setMerchantExtInfo(List<ParamExtInfo> merchantExtInfo) {
 		this.merchantExtInfo = merchantExtInfo;
+	}
+
+	public String getReceiverMobile() {
+		return this.receiverMobile;
+	}
+	public void setReceiverMobile(String receiverMobile) {
+		this.receiverMobile = receiverMobile;
 	}
 
 	public String getWaybillNo() {

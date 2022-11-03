@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租车服务标准化订单数据回流
  *
  * @author auto create
- * @since 1.0, 2021-07-12 20:55:13
+ * @since 1.0, 2022-11-01 20:06:29
  */
 public class AlipayCommerceTransportCarrentalOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4613684637557413945L;
+	private static final long serialVersionUID = 4377586485976137977L;
 
 	/**
 	 * 支付宝userid（用户在支付宝平台的2088开头16位id）

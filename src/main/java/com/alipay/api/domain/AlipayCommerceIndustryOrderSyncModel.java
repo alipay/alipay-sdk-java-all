@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业服务标准化订单数据回流
  *
  * @author auto create
- * @since 1.0, 2022-06-23 16:16:49
+ * @since 1.0, 2022-11-02 14:35:49
  */
 public class AlipayCommerceIndustryOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6743194685258878528L;
+	private static final long serialVersionUID = 3615689435147327454L;
 
 	/**
 	 * 支付宝userid（用户在支付宝平台的2088开头16位id）
@@ -40,6 +40,12 @@ public class AlipayCommerceIndustryOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单总金额
@@ -143,6 +149,13 @@ public class AlipayCommerceIndustryOrderSyncModel extends AlipayObject {
 	}
 	public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderAmount() {

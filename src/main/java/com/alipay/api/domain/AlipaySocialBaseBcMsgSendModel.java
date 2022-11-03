@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * BC互动消息发送接口
  *
  * @author auto create
- * @since 1.0, 2020-06-09 19:14:47
+ * @since 1.0, 2022-11-02 17:59:51
  */
 public class AlipaySocialBaseBcMsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5184839791898171813L;
+	private static final long serialVersionUID = 3815865332755691321L;
 
 	/**
 	 * BC消息，收到消息的客户端的最低版本号，如收到消息的最低版本低于该字段，怎客户端不会收到消息
@@ -58,6 +58,12 @@ public class AlipaySocialBaseBcMsgSendModel extends AlipayObject {
 	 */
 	@ApiField("client_msg_id")
 	private String clientMsgId;
+
+	/**
+	 * bc互动c端商家openId
+	 */
+	@ApiField("consumer_open_id")
+	private String consumerOpenId;
 
 	/**
 	 * BC互动，C端帐号，如C端在支付宝内则为支付宝统一用户id
@@ -130,6 +136,12 @@ public class AlipaySocialBaseBcMsgSendModel extends AlipayObject {
 	private String receiverId;
 
 	/**
+	 * 接收方商家openId
+	 */
+	@ApiField("receiver_open_id")
+	private String receiverOpenId;
+
+	/**
 	 * BC互动消息，发送者类型，标识是B端还是C端，枚举： C端传1，B端传2
 	 */
 	@ApiField("receiver_user_type")
@@ -146,6 +158,12 @@ public class AlipaySocialBaseBcMsgSendModel extends AlipayObject {
 	 */
 	@ApiField("sender_id")
 	private String senderId;
+
+	/**
+	 * 发送方openId
+	 */
+	@ApiField("sender_open_id")
+	private String senderOpenId;
 
 	/**
 	 * BC互动关系id，C端id+B端id+关系类型组成唯一值，调用绑定关系接口返回的sessionId
@@ -212,6 +230,13 @@ public class AlipaySocialBaseBcMsgSendModel extends AlipayObject {
 	}
 	public void setClientMsgId(String clientMsgId) {
 		this.clientMsgId = clientMsgId;
+	}
+
+	public String getConsumerOpenId() {
+		return this.consumerOpenId;
+	}
+	public void setConsumerOpenId(String consumerOpenId) {
+		this.consumerOpenId = consumerOpenId;
 	}
 
 	public String getConsumerUserId() {
@@ -291,6 +316,13 @@ public class AlipaySocialBaseBcMsgSendModel extends AlipayObject {
 		this.receiverId = receiverId;
 	}
 
+	public String getReceiverOpenId() {
+		return this.receiverOpenId;
+	}
+	public void setReceiverOpenId(String receiverOpenId) {
+		this.receiverOpenId = receiverOpenId;
+	}
+
 	public String getReceiverUserType() {
 		return this.receiverUserType;
 	}
@@ -310,6 +342,13 @@ public class AlipaySocialBaseBcMsgSendModel extends AlipayObject {
 	}
 	public void setSenderId(String senderId) {
 		this.senderId = senderId;
+	}
+
+	public String getSenderOpenId() {
+		return this.senderOpenId;
+	}
+	public void setSenderOpenId(String senderOpenId) {
+		this.senderOpenId = senderOpenId;
 	}
 
 	public String getSessionId() {

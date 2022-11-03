@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户授权token创建接口
  *
  * @author auto create
- * @since 1.0, 2022-09-22 14:25:32
+ * @since 1.0, 2022-11-02 20:05:16
  */
 public class AlipayOpenAuthUserauthTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8236777189139175453L;
+	private static final long serialVersionUID = 2436876647753745128L;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 生成token所关联的scope，半角逗号分隔的列表
@@ -24,6 +30,13 @@ public class AlipayOpenAuthUserauthTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getScopes() {
 		return this.scopes;

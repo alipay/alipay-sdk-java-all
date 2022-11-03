@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.tablecode.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-11 12:08:03
+ * @since 1.0, 2022-11-02 16:34:39
  */
 public class KoubeiCateringTablecodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5817511688963715999L;
+	private static final long serialVersionUID = 4191244186838517358L;
 
 	/** 
 	 * 返回值为shop_code表示只返回了门店码 返回值为table_code表示返回了桌码跟门店码

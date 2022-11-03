@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataAiserviceSgxGatewayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7758123691377947285L;
+	private static final long serialVersionUID = 6763517766466411924L;
 
 	/** 
 	 * request_uuid ：对应用户请求的唯一id，用于定位请求具体对应到哪一次调用。所有调用场景都会返回改值 。该值由用户请求中传入

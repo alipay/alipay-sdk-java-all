@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * BC客户群入群状态咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-09-20 19:26:57
+ * @since 1.0, 2022-11-02 17:46:17
  */
 public class AlipaySocialBaseBcgroupJoinedConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5747931385813683783L;
+	private static final long serialVersionUID = 1351744816335264283L;
 
 	/**
 	 * 商家/分组维度的业务标识ID
 	 */
 	@ApiField("business_id")
 	private String businessId;
+
+	/**
+	 * 商家open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * BC客户群租户ID，找产品/技术同学咨询业务所对应的租户ID
@@ -36,6 +42,13 @@ public class AlipaySocialBaseBcgroupJoinedConsultModel extends AlipayObject {
 	}
 	public void setBusinessId(String businessId) {
 		this.businessId = businessId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getTenantId() {

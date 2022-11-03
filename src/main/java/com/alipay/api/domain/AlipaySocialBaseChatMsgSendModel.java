@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝单聊发消息
  *
  * @author auto create
- * @since 1.0, 2022-10-31 20:11:15
+ * @since 1.0, 2022-11-02 17:44:13
  */
 public class AlipaySocialBaseChatMsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1172373542499943862L;
+	private static final long serialVersionUID = 3129261961725625224L;
 
 	/**
 	 * 消息简短描述，显示在会话列表上，必填
@@ -57,6 +57,12 @@ public class AlipaySocialBaseChatMsgSendModel extends AlipayObject {
 	 */
 	@ApiField("receiver_id")
 	private String receiverId;
+
+	/**
+	 * 接收消息者openId
+	 */
+	@ApiField("receiver_open_id")
+	private String receiverOpenId;
 
 	/**
 	 * 模板code值，根据这个值获取对应的模板填充数据协议
@@ -128,6 +134,13 @@ public class AlipaySocialBaseChatMsgSendModel extends AlipayObject {
 	}
 	public void setReceiverId(String receiverId) {
 		this.receiverId = receiverId;
+	}
+
+	public String getReceiverOpenId() {
+		return this.receiverOpenId;
+	}
+	public void setReceiverOpenId(String receiverOpenId) {
+		this.receiverOpenId = receiverOpenId;
 	}
 
 	public String getTemplateCode() {

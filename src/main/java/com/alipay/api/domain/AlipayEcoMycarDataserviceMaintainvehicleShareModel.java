@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarDataserviceMaintainvehicleShareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6458338744954647732L;
+	private static final long serialVersionUID = 1894251943311781839L;
 
 	/**
 	 * 车辆ID

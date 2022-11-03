@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证信息查询
  *
  * @author auto create
- * @since 1.0, 2022-11-01 11:39:04
+ * @since 1.0, 2022-11-02 10:21:09
  */
 public class ZhimaCustomerJobworthInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2887122457796447493L;
+	private static final long serialVersionUID = 8162752772158294979L;
 
 	/**
 	 * 若用户没有开通工作证或者芝麻，成功开通后回跳的链接 ，支持http或schema地址

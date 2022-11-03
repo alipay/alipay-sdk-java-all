@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 农作物基础信息批量查询
  *
  * @author auto create
- * @since 1.0, 2022-11-01 15:47:14
+ * @since 1.0, 2022-11-02 15:59:16
  */
 public class AnttechBlockchainDefinDataserviceCropbaseBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5337728163247852214L;
+	private static final long serialVersionUID = 2553335274561288272L;
 
 	/**
 	 * 根据作物编码条件搜索
@@ -64,6 +64,12 @@ public class AnttechBlockchainDefinDataserviceCropbaseBatchqueryModel extends Al
 	@ApiListField("region_codes")
 	@ApiField("string")
 	private List<String> regionCodes;
+
+	/**
+	 * 区块分组编码
+	 */
+	@ApiField("region_group_code")
+	private String regionGroupCode;
 
 	public String getCropCode() {
 		return this.cropCode;
@@ -119,6 +125,13 @@ public class AnttechBlockchainDefinDataserviceCropbaseBatchqueryModel extends Al
 	}
 	public void setRegionCodes(List<String> regionCodes) {
 		this.regionCodes = regionCodes;
+	}
+
+	public String getRegionGroupCode() {
+		return this.regionGroupCode;
+	}
+	public void setRegionGroupCode(String regionGroupCode) {
+		this.regionGroupCode = regionGroupCode;
 	}
 
 }

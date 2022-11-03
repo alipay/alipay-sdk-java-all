@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.invoice.resubmit.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:04:33
+ * @since 1.0, 2022-11-02 11:39:55
  */
 public class AlipayFundTransInvoiceResubmitModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6115317859376717226L;
+	private static final long serialVersionUID = 8154511144547522366L;
 
 	
 

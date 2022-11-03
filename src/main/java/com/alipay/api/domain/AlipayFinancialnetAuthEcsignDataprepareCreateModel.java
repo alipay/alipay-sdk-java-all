@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签呗电子签约数据录入准备服务
  *
  * @author auto create
- * @since 1.0, 2022-10-26 15:35:00
+ * @since 1.0, 2022-11-02 13:23:15
  */
 public class AlipayFinancialnetAuthEcsignDataprepareCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5792173576169756361L;
+	private static final long serialVersionUID = 8811193896178227923L;
 
 	/**
 	 * 签约回跳类型

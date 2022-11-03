@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5518988995229591352L;
+	private static final long serialVersionUID = 8582361267146293793L;
 
 	/**
 	 * 单位

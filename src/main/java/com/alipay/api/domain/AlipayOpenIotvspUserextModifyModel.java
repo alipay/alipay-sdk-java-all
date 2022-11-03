@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户额外信息（ext）更新接口
  *
  * @author auto create
- * @since 1.0, 2022-10-25 10:16:18
+ * @since 1.0, 2022-11-02 20:40:15
  */
 public class AlipayOpenIotvspUserextModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3145456126298673641L;
+	private static final long serialVersionUID = 7799373458486476459L;
 
 	/**
 	 * 姓名
@@ -36,6 +36,12 @@ public class AlipayOpenIotvspUserextModifyModel extends AlipayObject {
 	 */
 	@ApiField("component_out_id")
 	private String componentOutId;
+
+	/**
+	 * 扩展信息，ISV自定义
+	 */
+	@ApiField("ext")
+	private String ext;
 
 	/**
 	 * ISV的PID
@@ -81,6 +87,13 @@ public class AlipayOpenIotvspUserextModifyModel extends AlipayObject {
 	}
 	public void setComponentOutId(String componentOutId) {
 		this.componentOutId = componentOutId;
+	}
+
+	public String getExt() {
+		return this.ext;
+	}
+	public void setExt(String ext) {
+		this.ext = ext;
 	}
 
 	public String getIsvPid() {
