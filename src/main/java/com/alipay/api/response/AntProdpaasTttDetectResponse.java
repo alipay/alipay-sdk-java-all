@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.prodpaas.ttt.detect response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-16 16:56:47
+ * @since 1.0, 2022-11-07 20:49:58
  */
 public class AntProdpaasTttDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3462319999465454638L;
+	private static final long serialVersionUID = 1893336557634739276L;
 
 	/** 
 	 * 手机号码

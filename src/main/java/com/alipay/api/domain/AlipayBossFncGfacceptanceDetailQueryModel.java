@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财受理详情查询
  *
  * @author auto create
- * @since 1.0, 2021-09-16 18:17:31
+ * @since 1.0, 2022-11-08 14:57:34
  */
 public class AlipayBossFncGfacceptanceDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6125986591726388176L;
+	private static final long serialVersionUID = 2758642533138186356L;
 
 	/**
 	 * 16位。支付宝UID或者2088000000000XX0，倒数2、3位数字用来决策LDC ZoneUid和分库位

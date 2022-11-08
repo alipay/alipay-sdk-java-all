@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayOpenAppQqwAaatestConfirmModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.qqw.aaatest.confirm request
  * 
  * @author auto create
- * @since 1.0, 2022-05-09 20:26:44
+ * @since 1.0, 2022-11-03 14:55:12
  */
 public class AlipayOpenAppQqwAaatestConfirmRequest implements AlipayRequest<AlipayOpenAppQqwAaatestConfirmResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* aaatest
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayOpenAppQqwAaatestConfirmRequest implements AlipayRequest<Alip
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

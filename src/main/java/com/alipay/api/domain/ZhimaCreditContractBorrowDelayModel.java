@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 借还合约延期接口
  *
  * @author auto create
- * @since 1.0, 2021-07-30 14:35:22
+ * @since 1.0, 2022-11-03 11:49:35
  */
 public class ZhimaCreditContractBorrowDelayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3531681168257183474L;
+	private static final long serialVersionUID = 5376231545241981286L;
 
 	/**
 	 * 外部类目,样例：图书馆:BOOK

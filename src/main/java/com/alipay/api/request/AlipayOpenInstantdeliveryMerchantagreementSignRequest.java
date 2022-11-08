@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.instantdelivery.merchantagreement.sign request
  * 
  * @author auto create
- * @since 1.0, 2020-12-02 14:12:30
+ * @since 1.0, 2022-11-08 10:41:36
  */
 public class AlipayOpenInstantdeliveryMerchantagreementSignRequest implements AlipayRequest<AlipayOpenInstantdeliveryMerchantagreementSignResponse> {
 

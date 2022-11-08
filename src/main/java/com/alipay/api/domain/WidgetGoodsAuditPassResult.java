@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小部件商品审核通过结果
  *
  * @author auto create
- * @since 1.0, 2022-09-08 19:10:03
+ * @since 1.0, 2022-11-03 19:50:01
  */
 public class WidgetGoodsAuditPassResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2661947541746915671L;
+	private static final long serialVersionUID = 1443891925547962587L;
 
 	/**
 	 * 支付宝商品内部唯一标识

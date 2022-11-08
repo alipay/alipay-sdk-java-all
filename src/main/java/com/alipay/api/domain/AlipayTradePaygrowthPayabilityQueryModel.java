@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户支付宝账户支付能力
  *
  * @author auto create
- * @since 1.0, 2021-02-22 14:33:43
+ * @since 1.0, 2022-11-04 16:44:51
  */
 public class AlipayTradePaygrowthPayabilityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8451374187923521322L;
+	private static final long serialVersionUID = 5386386285892542432L;
 
 	/**
 	 * 业务标识，用于支付场景，需要根据具体的支付类型传值。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.carbonmonth.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-12 17:01:50
+ * @since 1.0, 2022-11-04 18:12:42
  */
 public class AlipaySocialAntforestCarbonmonthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5263182128763988139L;
+	private static final long serialVersionUID = 6474869722832878513L;
 
 	/** 
 	 * 是否开通森林

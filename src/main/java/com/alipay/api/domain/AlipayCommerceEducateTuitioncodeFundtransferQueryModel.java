@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学费码资金划拨详情查询接口
  *
  * @author auto create
- * @since 1.0, 2022-09-27 15:50:09
+ * @since 1.0, 2022-11-03 16:05:50
  */
 public class AlipayCommerceEducateTuitioncodeFundtransferQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8193345279931734583L;
+	private static final long serialVersionUID = 6643353986429715132L;
+
+	/**
+	 * 订单付款人的支付宝用户编号
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 资金划拨操作类型：DISBURSE - 打款；REFUND - 退款
@@ -42,6 +48,13 @@ public class AlipayCommerceEducateTuitioncodeFundtransferQueryModel extends Alip
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOperationType() {
 		return this.operationType;

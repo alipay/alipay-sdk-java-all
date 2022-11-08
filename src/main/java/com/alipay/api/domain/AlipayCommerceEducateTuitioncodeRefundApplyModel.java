@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 学费码退款申请
  *
  * @author auto create
- * @since 1.0, 2021-04-25 17:10:56
+ * @since 1.0, 2022-11-03 15:55:14
  */
 public class AlipayCommerceEducateTuitioncodeRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1112529339951854455L;
+	private static final long serialVersionUID = 2839486257816716611L;
+
+	/**
+	 * 订单支付人支付宝编号
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部商户的订单编号
@@ -57,6 +63,19 @@ public class AlipayCommerceEducateTuitioncodeRefundApplyModel extends AlipayObje
 	@ApiField("smid")
 	private String smid;
 
+	/**
+	 * 订单支付人支付宝编号
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
@@ -97,6 +116,13 @@ public class AlipayCommerceEducateTuitioncodeRefundApplyModel extends AlipayObje
 	}
 	public void setSmid(String smid) {
 		this.smid = smid;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

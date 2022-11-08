@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppAraterWaitratealgorankQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3882252166712885651L;
+	private static final long serialVersionUID = 5647514772553639814L;
 
 	/**
 	 * 业务扩展参数

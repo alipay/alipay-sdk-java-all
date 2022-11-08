@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2022-11-01 22:20:16
+ * @since 1.0, 2022-11-04 16:25:15
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6372843872611178775L;
+	private static final long serialVersionUID = 5212158869612434172L;
 
 	/**
 	 * 员工所属部门

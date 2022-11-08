@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自定义备注元素
  *
  * @author auto create
- * @since 1.0, 2020-06-19 10:21:52
+ * @since 1.0, 2022-11-03 11:24:36
  */
 public class MemoElement extends AlipayObject {
 
-	private static final long serialVersionUID = 5277858682973869276L;
+	private static final long serialVersionUID = 8823132931119864425L;
 
 	/**
 	 * 是否是常量，默认常量

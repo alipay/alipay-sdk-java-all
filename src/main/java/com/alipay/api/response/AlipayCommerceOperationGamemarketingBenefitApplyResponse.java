@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationGamemarketingBenefitApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7886388876726977768L;
+	private static final long serialVersionUID = 3773716137677273873L;
 
 	/** 
 	 * 返回值是个卡券兑换码的列表

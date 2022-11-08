@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺分页查询接口
  *
  * @author auto create
- * @since 1.0, 2022-10-25 21:38:52
+ * @since 1.0, 2022-11-07 15:40:15
  */
 public class AntMerchantExpandShopPageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3892943957635871525L;
+	private static final long serialVersionUID = 2624813998634472314L;
 
 	/**
 	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。特别说明：IoT设备三绑定场景统一填写商户pid

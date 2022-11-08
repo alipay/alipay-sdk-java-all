@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即时配送中商家代扣协议签署
  *
  * @author auto create
- * @since 1.0, 2020-12-01 17:07:02
+ * @since 1.0, 2022-11-08 10:41:36
  */
 public class AlipayOpenInstantdeliveryMerchantagreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6622345839318187331L;
+	private static final long serialVersionUID = 7418443387743663218L;
 
 	/**
 	 * 蚂蚁统一会员ID

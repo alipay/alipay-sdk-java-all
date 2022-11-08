@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.card.disburse response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-12 19:38:36
+ * @since 1.0, 2022-11-04 10:27:11
  */
 public class AlipayAssetCardDisburseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4224822534651464271L;
+	private static final long serialVersionUID = 5528489616333917998L;
 
 	/** 
 	 * 订单号

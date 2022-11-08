@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查账单接口
  *
  * @author auto create
- * @since 1.0, 2022-06-27 20:15:35
+ * @since 1.0, 2022-11-08 09:58:26
  */
 public class AlipayEbppBillchargeBillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7577789186467185438L;
+	private static final long serialVersionUID = 2435197487478821356L;
 
 	/**
 	 * 待查账的户号列表

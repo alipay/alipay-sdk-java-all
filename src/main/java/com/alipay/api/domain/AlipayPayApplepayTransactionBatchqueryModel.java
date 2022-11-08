@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支付记录列表
  *
  * @author auto create
- * @since 1.0, 2022-09-23 14:02:09
+ * @since 1.0, 2022-11-03 15:10:32
  */
 public class AlipayPayApplepayTransactionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4544225741361738229L;
+	private static final long serialVersionUID = 5753376488858741669L;
 
 	/**
 	 * 拉取结果权限authToken

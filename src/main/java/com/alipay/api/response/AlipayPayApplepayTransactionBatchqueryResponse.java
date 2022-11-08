@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.applepay.transaction.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-23 14:02:08
+ * @since 1.0, 2022-11-03 15:10:32
  */
 public class AlipayPayApplepayTransactionBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4495226365179955398L;
+	private static final long serialVersionUID = 6695857112797493761L;
 
 	/** 
 	 * 时间戳

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.tuitioncode.refund.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-03 09:50:43
+ * @since 1.0, 2022-11-04 18:12:33
  */
 public class AlipayCommerceEducateTuitioncodeRefundApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7869493248162236171L;
+	private static final long serialVersionUID = 3599759547368225658L;
 
 	
 

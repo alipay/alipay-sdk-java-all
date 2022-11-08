@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 借还合约取消接口
  *
  * @author auto create
- * @since 1.0, 2021-07-30 14:36:58
+ * @since 1.0, 2022-11-03 11:50:01
  */
 public class ZhimaCreditContractBorrowCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6673874876318623342L;
+	private static final long serialVersionUID = 5873384368635298122L;
 
 	/**
 	 * 外部类目,样例：图书馆:BOOK

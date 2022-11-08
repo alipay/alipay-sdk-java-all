@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityRiskAntifraudBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6318871815691462373L;
+	private static final long serialVersionUID = 8432173562659336979L;
 
 	/** 
 	 * 供应商关系列表+company_list是两个有关系的供应商，detail字段描述了具体的关系，detail为jsonArray表示两者之间可能的多种关系

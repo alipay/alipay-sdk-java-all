@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费账单更新
  *
  * @author auto create
- * @since 1.0, 2021-08-27 17:11:39
+ * @since 1.0, 2022-11-03 16:05:14
  */
 public class AlipayCommerceEducateBillServiceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5789945917514472457L;
+	private static final long serialVersionUID = 7557199461579569883L;
 
 	/**
 	 * 支付宝外部交易号
 	 */
 	@ApiField("isv_order_no")
 	private String isvOrderNo;
+
+	/**
+	 * 实际付款人编号
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 交易单状态：
@@ -57,6 +63,13 @@ public class AlipayCommerceEducateBillServiceModifyModel extends AlipayObject {
 	}
 	public void setIsvOrderNo(String isvOrderNo) {
 		this.isvOrderNo = isvOrderNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderStatus() {

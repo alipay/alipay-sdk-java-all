@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2022-10-11 16:16:14
+ * @since 1.0, 2022-11-03 15:40:14
  */
 public class AlipayMsaasMediarecogMmtcaftscvTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4566848785178777153L;
+	private static final long serialVersionUID = 3855449516143369714L;
 
 	/**
 	 * 货柜类型，static为静态柜，dynamic为动态柜
@@ -28,6 +28,12 @@ public class AlipayMsaasMediarecogMmtcaftscvTransactionInitializeModel extends A
 	@ApiListField("goods_infos")
 	@ApiField("good_info")
 	private List<GoodInfo> goodsInfos;
+
+	/**
+	 * 用户uid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 一键开柜链路唯一识别id
@@ -78,6 +84,13 @@ public class AlipayMsaasMediarecogMmtcaftscvTransactionInitializeModel extends A
 	}
 	public void setGoodsInfos(List<GoodInfo> goodsInfos) {
 		this.goodsInfos = goodsInfos;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getReqId() {

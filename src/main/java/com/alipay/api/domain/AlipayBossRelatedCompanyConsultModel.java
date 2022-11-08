@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossRelatedCompanyConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5834568918542662626L;
+	private static final long serialVersionUID = 5887792887196255178L;
 
 	/**
 	 * 咨询发生时间（单位；毫秒）

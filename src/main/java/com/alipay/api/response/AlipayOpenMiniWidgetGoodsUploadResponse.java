@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.widget.goods.upload response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-24 14:36:50
+ * @since 1.0, 2022-11-07 19:36:37
  */
 public class AlipayOpenMiniWidgetGoodsUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5868848418891532929L;
+	private static final long serialVersionUID = 7116174388943577789L;
 
 	/** 
 	 * 商品提交生成的唯一标识，用于查询商品信息的审核状态

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构资金池调拨规则
  *
  * @author auto create
- * @since 1.0, 2020-06-19 17:51:29
+ * @since 1.0, 2022-11-03 11:24:36
  */
 public class InstCashPoolAllocationRuleVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8228174519662186911L;
+	private static final long serialVersionUID = 6785575151479728691L;
 
 	/**
 	 * 机构账号

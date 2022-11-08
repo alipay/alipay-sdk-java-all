@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人民币商户签约进度查询
  *
  * @author auto create
- * @since 1.0, 2021-12-03 16:35:29
+ * @since 1.0, 2022-11-07 16:20:53
  */
 public class MybankEcnyMerchantSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8472884294417552714L;
+	private static final long serialVersionUID = 5821473513456871627L;
 
 	/**
 	 * 外部请求号和受理流水号两者必填一项

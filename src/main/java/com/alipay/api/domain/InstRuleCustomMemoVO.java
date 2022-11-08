@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机构自定义备注规则
  *
  * @author auto create
- * @since 1.0, 2020-06-19 15:41:04
+ * @since 1.0, 2022-11-03 11:24:36
  */
 public class InstRuleCustomMemoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8629173686628364526L;
+	private static final long serialVersionUID = 4276349128934539212L;
 
 	/**
 	 * 备注要素

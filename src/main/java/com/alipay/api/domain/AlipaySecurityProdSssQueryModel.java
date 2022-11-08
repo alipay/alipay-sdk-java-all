@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 金柚测试3.0接口
  *
  * @author auto create
- * @since 1.0, 2022-10-31 17:29:27
+ * @since 1.0, 2022-11-03 20:14:49
  */
 public class AlipaySecurityProdSssQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2763721529751298951L;
+	private static final long serialVersionUID = 4111915945734895361L;
 
 	/**
 	 * 1
@@ -29,7 +29,7 @@ public class AlipaySecurityProdSssQueryModel extends AlipayObject {
 	private String aaaOpenId;
 
 	/**
-	 * 1
+	 * activity_id 词条描述
 	 */
 	@ApiField("bbb")
 	private String bbb;
@@ -40,6 +40,12 @@ public class AlipaySecurityProdSssQueryModel extends AlipayObject {
 	@ApiListField("tesst")
 	@ApiField("promise_detail")
 	private List<PromiseDetail> tesst;
+
+	/**
+	 * 111
+	 */
+	@ApiField("xxx")
+	private JinyouTestFive xxx;
 
 	public String getAaa() {
 		return this.aaa;
@@ -67,6 +73,13 @@ public class AlipaySecurityProdSssQueryModel extends AlipayObject {
 	}
 	public void setTesst(List<PromiseDetail> tesst) {
 		this.tesst = tesst;
+	}
+
+	public JinyouTestFive getXxx() {
+		return this.xxx;
+	}
+	public void setXxx(JinyouTestFive xxx) {
+		this.xxx = xxx;
 	}
 
 }

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店长查询门店维度任务统计数据
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:28:45
+ * @since 1.0, 2022-11-07 14:48:16
  */
 public class AlipayCommerceYuntaskShopstatisticsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4685897132768426462L;
+	private static final long serialVersionUID = 3737257835786213814L;
 
 	/**
 	 * 导购员id
 	 */
 	@ApiField("hunter_id")
 	private String hunterId;
+
+	/**
+	 * 导购员id
+	 */
+	@ApiField("hunter_open_id")
+	private String hunterOpenId;
 
 	/**
 	 * 商家pid
@@ -56,6 +62,13 @@ FINISHED 已经结束的任务
 	}
 	public void setHunterId(String hunterId) {
 		this.hunterId = hunterId;
+	}
+
+	public String getHunterOpenId() {
+		return this.hunterOpenId;
+	}
+	public void setHunterOpenId(String hunterOpenId) {
+		this.hunterOpenId = hunterOpenId;
 	}
 
 	public String getMerchantPid() {

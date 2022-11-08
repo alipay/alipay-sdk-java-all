@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业数据发送接口
  *
  * @author auto create
- * @since 1.0, 2018-01-03 12:12:19
+ * @since 1.0, 2022-11-08 10:59:13
  */
 public class AlipayCommerceDataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5388197436861546831L;
+	private static final long serialVersionUID = 7114591263923431955L;
 
 	/**
 	 * 场景的来源渠道，比如场景
@@ -36,6 +36,12 @@ op_code,channel,version共同确定参数是否
 	 */
 	@ApiField("op_data")
 	private String opData;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景标识,由支付宝分配
@@ -104,6 +110,13 @@ BINDING_MOBILE_NO:支付宝账号绑定的手机号
 	}
 	public void setOpData(String opData) {
 		this.opData = opData;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneCode() {

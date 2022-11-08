@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 学费码打款请求
  *
  * @author auto create
- * @since 1.0, 2022-01-18 16:06:12
+ * @since 1.0, 2022-11-03 15:53:15
  */
 public class AlipayCommerceEducateTuitioncodePlanDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8868661348121898946L;
+	private static final long serialVersionUID = 1222913697197797838L;
+
+	/**
+	 * 订单支付人支付宝用户编号
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * ISV订单号
@@ -52,6 +58,13 @@ public class AlipayCommerceEducateTuitioncodePlanDisburseModel extends AlipayObj
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOutOrderNo() {
 		return this.outOrderNo;

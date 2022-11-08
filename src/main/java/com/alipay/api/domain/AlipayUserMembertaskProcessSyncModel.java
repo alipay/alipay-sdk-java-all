@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员任务进程推进接口
  *
  * @author auto create
- * @since 1.0, 2021-10-25 17:09:01
+ * @since 1.0, 2022-11-03 15:22:50
  */
 public class AlipayUserMembertaskProcessSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5478447954243184642L;
+	private static final long serialVersionUID = 5288924775946487587L;
 
 	/**
 	 * 标识目标业务的动态业务参数
@@ -30,6 +30,12 @@ public class AlipayUserMembertaskProcessSyncModel extends AlipayObject {
 	 */
 	@ApiField("money")
 	private String money;
+
+	/**
+	 * 蚂蚁统一开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 幂等ID，对于交易类业务可为交易流水号，一次性业务可为userId，外围业务控制。在系统异常重试时需要确保传入同样的流水号
@@ -68,6 +74,13 @@ public class AlipayUserMembertaskProcessSyncModel extends AlipayObject {
 	}
 	public void setMoney(String money) {
 		this.money = money;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

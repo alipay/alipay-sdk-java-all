@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻分等级查询
  *
  * @author auto create
- * @since 1.0, 2021-11-30 11:30:12
+ * @since 1.0, 2022-11-03 17:30:06
  */
 public class ZhimaCreditPeLevelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8582823695144851443L;
+	private static final long serialVersionUID = 4413845882335485172L;
 
 	/**
 	 * 产品码，直接使用［示例］给出的值

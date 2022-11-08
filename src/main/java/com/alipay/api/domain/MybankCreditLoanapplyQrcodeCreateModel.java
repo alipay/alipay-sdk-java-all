@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoanapplyQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6671751684382648659L;
+	private static final long serialVersionUID = 7114123668464656268L;
 
 	/**
 	 * 银行账户的类型，1 : 对私账户 2：对公账户

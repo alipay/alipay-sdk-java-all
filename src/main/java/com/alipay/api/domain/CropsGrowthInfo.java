@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作物生长情况信息
  *
  * @author auto create
- * @since 1.0, 2022-09-27 15:09:31
+ * @since 1.0, 2022-11-03 18:18:46
  */
 public class CropsGrowthInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8385417445258164329L;
+	private static final long serialVersionUID = 6339513135968344652L;
 
 	/**
 	 * 数据实际日期，YYYYMMDD
@@ -56,7 +56,7 @@ public class CropsGrowthInfo extends AlipayObject {
 	private String strongestArea;
 
 	/**
-	 * 长势预警值，值域-1～1
+	 * 长势预警值，值域-1～0
 	 */
 	@ApiField("warn")
 	private String warn;

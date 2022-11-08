@@ -1,23 +1,39 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 门店信息
  *
  * @author auto create
- * @since 1.0, 2020-06-20 11:00:22
+ * @since 1.0, 2022-11-08 11:45:16
  */
 public class OrderShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8613116139883338459L;
+	private static final long serialVersionUID = 3579194716278274529L;
 
 	/**
 	 * 店铺地址
 	 */
 	@ApiField("address")
 	private String address;
+
+	/**
+	 * 蚂蚁门店shop_id
+	 */
+	@ApiField("alipay_shop_id")
+	private String alipayShopId;
+
+	/**
+	 * 门店其他业务属性，不同业务场景KEY枚举值不同，使用前请参考产品文档
+	 */
+	@ApiListField("ext_info")
+	@ApiField("order_ext_info")
+	private List<OrderExtInfo> extInfo;
 
 	/**
 	 * 商户门店id
@@ -45,11 +61,31 @@ public class OrderShopInfo extends AlipayObject {
 	@ApiField("phone_num")
 	private String phoneNum;
 
+	/**
+	 * 仅当alipay_shop_id字段值为非标准蚂蚁门店时使用，其他场景无需传入
+	 */
+	@ApiField("type")
+	private String type;
+
 	public String getAddress() {
 		return this.address;
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public String getAlipayShopId() {
+		return this.alipayShopId;
+	}
+	public void setAlipayShopId(String alipayShopId) {
+		this.alipayShopId = alipayShopId;
+	}
+
+	public List<OrderExtInfo> getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(List<OrderExtInfo> extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getMerchantShopId() {
@@ -78,6 +114,13 @@ public class OrderShopInfo extends AlipayObject {
 	}
 	public void setPhoneNum(String phoneNum) {
 		this.phoneNum = phoneNum;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

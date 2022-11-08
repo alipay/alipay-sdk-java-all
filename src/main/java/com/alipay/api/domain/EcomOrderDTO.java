@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景开放平台电商订单模型
  *
  * @author auto create
- * @since 1.0, 2022-10-27 10:56:15
+ * @since 1.0, 2022-11-03 17:59:27
  */
 public class EcomOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5333546163836335821L;
+	private static final long serialVersionUID = 5169344595247846691L;
 
 	/**
 	 * 实际支付金额
@@ -151,10 +151,22 @@ public class EcomOrderDTO extends AlipayObject {
 	private List<EcomSubOrderDTO> subOrderList;
 
 	/**
+	 * 交易天数
+	 */
+	@ApiField("trade_days")
+	private Long tradeDays;
+
+	/**
 	 * 交易结束时间
 	 */
 	@ApiField("trade_end_time")
 	private Date tradeEndTime;
+
+	/**
+	 * 交易开始时间
+	 */
+	@ApiField("trade_start_time")
+	private Date tradeStartTime;
 
 	public Long getActualPayFee() {
 		return this.actualPayFee;
@@ -310,11 +322,25 @@ public class EcomOrderDTO extends AlipayObject {
 		this.subOrderList = subOrderList;
 	}
 
+	public Long getTradeDays() {
+		return this.tradeDays;
+	}
+	public void setTradeDays(Long tradeDays) {
+		this.tradeDays = tradeDays;
+	}
+
 	public Date getTradeEndTime() {
 		return this.tradeEndTime;
 	}
 	public void setTradeEndTime(Date tradeEndTime) {
 		this.tradeEndTime = tradeEndTime;
+	}
+
+	public Date getTradeStartTime() {
+		return this.tradeStartTime;
+	}
+	public void setTradeStartTime(Date tradeStartTime) {
+		this.tradeStartTime = tradeStartTime;
 	}
 
 }

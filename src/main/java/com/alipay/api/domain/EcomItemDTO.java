@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品模型
  *
  * @author auto create
- * @since 1.0, 2022-10-27 10:56:15
+ * @since 1.0, 2022-11-03 16:42:51
  */
 public class EcomItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5816168384118552824L;
+	private static final long serialVersionUID = 8629921246141558279L;
 
 	/**
 	 * 类目历史30天完结父订单数
@@ -26,6 +26,12 @@ public class EcomItemDTO extends AlipayObject {
 	private String catOrderRefundExchangeRate;
 
 	/**
+	 * NEW(全新),CONDITION_99_NEW( 99成新),CONDITION_98_NEW( 98成新),CONDITION_95_NEW( 95成新),CONDITION_90_NEW( 90成新),CONDITION_80_NEW( 80成新),
+	 */
+	@ApiField("item_condition")
+	private String itemCondition;
+
+	/**
 	 * 商品详情
 	 */
 	@ApiField("item_detail")
@@ -36,6 +42,12 @@ public class EcomItemDTO extends AlipayObject {
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 商品型号
+	 */
+	@ApiField("item_model")
+	private String itemModel;
 
 	/**
 	 * 商品图片
@@ -54,6 +66,12 @@ public class EcomItemDTO extends AlipayObject {
 	 */
 	@ApiField("item_title")
 	private String itemTitle;
+
+	/**
+	 * 商品自身价值
+	 */
+	@ApiField("item_value")
+	private Long itemValue;
 
 	/**
 	 * 叶子类目id
@@ -111,6 +129,13 @@ public class EcomItemDTO extends AlipayObject {
 		this.catOrderRefundExchangeRate = catOrderRefundExchangeRate;
 	}
 
+	public String getItemCondition() {
+		return this.itemCondition;
+	}
+	public void setItemCondition(String itemCondition) {
+		this.itemCondition = itemCondition;
+	}
+
 	public EcomItemExtendDetailDTO getItemDetail() {
 		return this.itemDetail;
 	}
@@ -123,6 +148,13 @@ public class EcomItemDTO extends AlipayObject {
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getItemModel() {
+		return this.itemModel;
+	}
+	public void setItemModel(String itemModel) {
+		this.itemModel = itemModel;
 	}
 
 	public String getItemPictUrl() {
@@ -144,6 +176,13 @@ public class EcomItemDTO extends AlipayObject {
 	}
 	public void setItemTitle(String itemTitle) {
 		this.itemTitle = itemTitle;
+	}
+
+	public Long getItemValue() {
+		return this.itemValue;
+	}
+	public void setItemValue(Long itemValue) {
+		this.itemValue = itemValue;
 	}
 
 	public String getLeafCatId() {

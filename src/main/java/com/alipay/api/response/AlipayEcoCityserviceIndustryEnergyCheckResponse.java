@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.industry.energy.check response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-25 13:44:08
+ * @since 1.0, 2022-11-03 15:46:32
  */
 public class AlipayEcoCityserviceIndustryEnergyCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8492115868366575916L;
+	private static final long serialVersionUID = 6427322189664893874L;
 
 	/** 
 	 * 返回场景下的额度检查结果，有额度limited=false，无额度limited=true

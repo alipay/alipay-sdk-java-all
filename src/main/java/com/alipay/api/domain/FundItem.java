@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金明细模型
  *
  * @author auto create
- * @since 1.0, 2021-05-13 09:54:21
+ * @since 1.0, 2022-11-07 16:26:58
  */
 public class FundItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6199926622756892113L;
+	private static final long serialVersionUID = 6818222233659192337L;
 
 	/**
 	 * 金额，单位元

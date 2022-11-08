@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScenicAuditInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6295385768534828722L;
+	private static final long serialVersionUID = 4152537476533462889L;
 
 	/**
 	 * 审核信息

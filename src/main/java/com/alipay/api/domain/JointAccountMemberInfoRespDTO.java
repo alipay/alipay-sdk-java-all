@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 已加入合花群的成员信息
  *
  * @author auto create
- * @since 1.0, 2021-09-01 15:19:02
+ * @since 1.0, 2022-11-03 11:49:00
  */
 public class JointAccountMemberInfoRespDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8431291354434494746L;
+	private static final long serialVersionUID = 5123174981595212458L;
 
 	/**
 	 * 成员角色：<br>

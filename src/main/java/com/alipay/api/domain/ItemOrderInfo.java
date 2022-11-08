@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单商品信息
  *
  * @author auto create
- * @since 1.0, 2021-10-11 04:36:40
+ * @since 1.0, 2022-11-08 11:45:35
  */
 public class ItemOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8712845564969331552L;
+	private static final long serialVersionUID = 2156877598555943891L;
 
 	/**
 	 * 扩展信息，请参见产品文档。小程序订单助手业务中，扩展参数必须传递素材id；其他业务场景参见对应的产品文档。
@@ -47,6 +47,18 @@ public class ItemOrderInfo extends AlipayObject {
 	 */
 	@ApiField("sku_id")
 	private String skuId;
+
+	/**
+	 * 商品状态枚举，默认无需传入，如需使用请联系业务负责人
+	 */
+	@ApiField("status")
+	private String status;
+
+	/**
+	 * 商品状态描述，默认无需传入，如需使用请联系业务负责人
+	 */
+	@ApiField("status_desc")
+	private String statusDesc;
 
 	/**
 	 * 商品规格
@@ -94,6 +106,20 @@ public class ItemOrderInfo extends AlipayObject {
 	}
 	public void setSkuId(String skuId) {
 		this.skuId = skuId;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getStatusDesc() {
+		return this.statusDesc;
+	}
+	public void setStatusDesc(String statusDesc) {
+		this.statusDesc = statusDesc;
 	}
 
 	public String getUnit() {

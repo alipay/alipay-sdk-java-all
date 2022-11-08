@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查询商户会员交易明细
  *
  * @author auto create
- * @since 1.0, 2022-10-25 22:49:54
+ * @since 1.0, 2022-11-07 17:05:50
  */
 public class AntMerchantExpandMembercardTransactionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1522511284523841282L;
+	private static final long serialVersionUID = 3666172765482123129L;
 
 	/**
 	 * 交易明细类型，指定要查询的明细类型，枚举如下：
@@ -38,6 +38,12 @@ RETURN=退卡
 	 */
 	@ApiField("member_product_id")
 	private String memberProductId;
+
+	/**
+	 * 蚂蚁统一会员ID，指定则查询指定用户的交易记录，不指定则查所有用户的交易记录
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 查询的页数，从1开始，最大1000
@@ -82,6 +88,13 @@ RETURN=退卡
 	}
 	public void setMemberProductId(String memberProductId) {
 		this.memberProductId = memberProductId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getPageNum() {

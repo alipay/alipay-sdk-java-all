@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大出行智能平台-轮班任务-创建
  *
  * @author auto create
- * @since 1.0, 2022-08-18 17:29:51
+ * @since 1.0, 2022-11-03 14:44:39
  */
 public class AlipayCommerceTransportIntelligentizeWorkshiftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4352292433499592237L;
+	private static final long serialVersionUID = 6698492718913849964L;
 
 	/**
 	 * 城市代码

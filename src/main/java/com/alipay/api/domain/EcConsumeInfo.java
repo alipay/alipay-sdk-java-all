@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2022-09-13 15:11:03
+ * @since 1.0, 2022-11-04 16:25:20
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6147922527649157635L;
+	private static final long serialVersionUID = 4176697186188885115L;
 
 	/**
 	 * 共同账户ID
@@ -77,7 +77,7 @@ public class EcConsumeInfo extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 费控规则ID
+	 * 使用规则ID
 	 */
 	@ApiField("expense_rule_group_id")
 	private String expenseRuleGroupId;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.drawcamp.consult request
  * 
  * @author auto create
- * @since 1.0, 2021-01-13 10:45:48
+ * @since 1.0, 2022-11-08 14:30:52
  */
 public class AlipayMarketingCampaignDrawcampConsultRequest implements AlipayRequest<AlipayMarketingCampaignDrawcampConsultResponse> {
 

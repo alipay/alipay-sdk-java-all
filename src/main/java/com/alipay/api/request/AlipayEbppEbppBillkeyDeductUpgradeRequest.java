@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.ebpp.billkey.deduct.upgrade request
  * 
  * @author auto create
- * @since 1.0, 2022-05-26 11:22:12
+ * @since 1.0, 2022-11-07 15:58:26
  */
 public class AlipayEbppEbppBillkeyDeductUpgradeRequest implements AlipayRequest<AlipayEbppEbppBillkeyDeductUpgradeResponse> {
 

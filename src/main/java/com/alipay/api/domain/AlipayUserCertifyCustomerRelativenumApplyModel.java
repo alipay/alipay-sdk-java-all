@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扩展客户的认证关联数
  *
  * @author auto create
- * @since 1.0, 2021-03-18 16:47:31
+ * @since 1.0, 2022-11-08 15:19:05
  */
 public class AlipayUserCertifyCustomerRelativenumApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3159549596188876364L;
+	private static final long serialVersionUID = 4267975649276759559L;
 
 	/**
 	 * 业务单据号
@@ -24,6 +24,12 @@ public class AlipayUserCertifyCustomerRelativenumApplyModel extends AlipayObject
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 用户在应用（AppId）下的用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -43,6 +49,13 @@ public class AlipayUserCertifyCustomerRelativenumApplyModel extends AlipayObject
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

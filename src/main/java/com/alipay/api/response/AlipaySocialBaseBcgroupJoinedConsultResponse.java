@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.bcgroup.joined.consult response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 17:46:34
+ * @since 1.0, 2022-11-04 18:12:57
  */
 public class AlipaySocialBaseBcgroupJoinedConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4524582291642575696L;
+	private static final long serialVersionUID = 6389489561541814973L;
 
 	/** 
 	 * 入群状态。true为已经入群，false为未入群。

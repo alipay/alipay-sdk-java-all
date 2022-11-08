@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户身份信息查询
  *
  * @author auto create
- * @since 1.0, 2020-11-14 21:10:26
+ * @since 1.0, 2022-11-08 15:18:27
  */
 public class AlipayUserCertifyIdentifyInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8687592883366649225L;
+	private static final long serialVersionUID = 3431953317729483772L;
 
 	/**
 	 * havana_id
@@ -24,6 +24,12 @@ public class AlipayUserCertifyIdentifyInfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("logon_id")
 	private String logonId;
+
+	/**
+	 * 用户在应用（AppId）下的用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -43,6 +49,13 @@ public class AlipayUserCertifyIdentifyInfoQueryModel extends AlipayObject {
 	}
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

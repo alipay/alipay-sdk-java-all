@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询导购员的推广码
  *
  * @author auto create
- * @since 1.0, 2022-05-17 20:28:47
+ * @since 1.0, 2022-11-07 16:02:49
  */
 public class AlipayCommerceYuntaskGuidedcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4492439757413999456L;
+	private static final long serialVersionUID = 4639788149524296664L;
 
 	/**
 	 * 导购员ID
 	 */
 	@ApiField("hunter_id")
 	private String hunterId;
+
+	/**
+	 * 导购员ID
+	 */
+	@ApiField("hunter_open_id")
+	private String hunterOpenId;
 
 	/**
 	 * 零售商的pid
@@ -36,6 +42,13 @@ public class AlipayCommerceYuntaskGuidedcodeQueryModel extends AlipayObject {
 	}
 	public void setHunterId(String hunterId) {
 		this.hunterId = hunterId;
+	}
+
+	public String getHunterOpenId() {
+		return this.hunterOpenId;
+	}
+	public void setHunterOpenId(String hunterOpenId) {
+		this.hunterOpenId = hunterOpenId;
 	}
 
 	public String getMerchantPid() {

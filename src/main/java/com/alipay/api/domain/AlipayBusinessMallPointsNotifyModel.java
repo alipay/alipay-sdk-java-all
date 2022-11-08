@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商圈积分结果回调通知
  *
  * @author auto create
- * @since 1.0, 2022-08-16 10:06:49
+ * @since 1.0, 2022-11-03 10:56:16
  */
 public class AlipayBusinessMallPointsNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3426815188372141547L;
+	private static final long serialVersionUID = 7682384833687899675L;
 
 	/**
 	 * 支付宝用户id
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * buyer_open_id是用户（UserId）在应用（AppId）下的唯一用户标识
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 用于标明此单是否获得积分，
@@ -64,6 +70,13 @@ false为未获得
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public Boolean getEarnPoints() {

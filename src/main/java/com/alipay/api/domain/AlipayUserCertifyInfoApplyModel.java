@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝认证信息申请接口
  *
  * @author auto create
- * @since 1.0, 2022-10-24 11:39:36
+ * @since 1.0, 2022-11-08 15:20:11
  */
 public class AlipayUserCertifyInfoApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6727719547594957972L;
+	private static final long serialVersionUID = 5435375374853645247L;
 
 	/**
 	 * 委托书图片数据，根据biz_from参数确定是传base64字符串，还是传oss地址
@@ -106,6 +106,12 @@ public class AlipayUserCertifyInfoApplyModel extends AlipayObject {
 	 */
 	@ApiField("legal_name")
 	private String legalName;
+
+	/**
+	 * 用户在应用（AppId）下的用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 住所，填写营业执照号上的住所（经营地址）信息
@@ -288,6 +294,13 @@ public class AlipayUserCertifyInfoApplyModel extends AlipayObject {
 	}
 	public void setLegalName(String legalName) {
 		this.legalName = legalName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrgAddress() {

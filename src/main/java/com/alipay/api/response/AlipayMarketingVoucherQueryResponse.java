@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-12 19:37:26
+ * @since 1.0, 2022-11-04 10:28:09
  */
 public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7379988714559217266L;
+	private static final long serialVersionUID = 7345723973471535991L;
 
 	/** 
 	 * 券余额(元)

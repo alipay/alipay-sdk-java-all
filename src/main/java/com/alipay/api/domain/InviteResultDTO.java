@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约时邀请的成员信息（快照）
  *
  * @author auto create
- * @since 1.0, 2021-09-01 15:19:09
+ * @since 1.0, 2022-11-03 11:48:38
  */
 public class InviteResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1324776276575273772L;
+	private static final long serialVersionUID = 1367843758874465389L;
 
 	/**
 	 * （被邀请人）用户唯一标识<br>

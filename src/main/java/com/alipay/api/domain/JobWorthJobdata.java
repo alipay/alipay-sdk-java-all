@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工作证职业数据回流接口字段
  *
  * @author auto create
- * @since 1.0, 2022-05-07 10:14:59
+ * @since 1.0, 2022-11-08 17:09:22
  */
 public class JobWorthJobdata extends AlipayObject {
 
-	private static final long serialVersionUID = 3846126656235169922L;
+	private static final long serialVersionUID = 6815797164169869699L;
 
 	/**
 	 * 证书编号
@@ -48,6 +48,12 @@ public class JobWorthJobdata extends AlipayObject {
 	 */
 	@ApiField("education_status")
 	private String educationStatus;
+
+	/**
+	 * 工作证图片上传接口返回的id
+	 */
+	@ApiField("head_pic_id")
+	private String headPicId;
 
 	/**
 	 * 求职意向，城市
@@ -227,6 +233,13 @@ public class JobWorthJobdata extends AlipayObject {
 	}
 	public void setEducationStatus(String educationStatus) {
 		this.educationStatus = educationStatus;
+	}
+
+	public String getHeadPicId() {
+		return this.headPicId;
+	}
+	public void setHeadPicId(String headPicId) {
+		this.headPicId = headPicId;
 	}
 
 	public String getIntentionCity() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.risktask.create request
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 18:46:34
+ * @since 1.0, 2022-11-04 18:12:37
  */
 public class AlipaySecurityProdRisktaskCreateRequest implements AlipayRequest<AlipaySecurityProdRisktaskCreateResponse> {
 

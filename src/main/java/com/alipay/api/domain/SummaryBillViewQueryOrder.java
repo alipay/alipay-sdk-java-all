@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 账单查询请求
  *
  * @author auto create
- * @since 1.0, 2021-12-01 21:21:33
+ * @since 1.0, 2022-11-03 16:34:12
  */
 public class SummaryBillViewQueryOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8116236633479231741L;
+	private static final long serialVersionUID = 8732875418991268228L;
 
 	/**
 	 * 合约号
@@ -27,6 +27,13 @@ public class SummaryBillViewQueryOrder extends AlipayObject {
 	 */
 	@ApiField("bill_end_month")
 	private String billEndMonth;
+
+	/**
+	 * 账单号
+	 */
+	@ApiListField("bill_nos")
+	@ApiField("string")
+	private List<String> billNos;
 
 	/**
 	 * 账单月份
@@ -46,6 +53,19 @@ UNCHECKED("unchecked", "未出账"),
 	 */
 	@ApiField("bill_status_list")
 	private String billStatusList;
+
+	/**
+	 * 业务产品码列表
+	 */
+	@ApiListField("biz_pd_code_list")
+	@ApiField("string")
+	private List<String> bizPdCodeList;
+
+	/**
+	 * 资金结算时点
+	 */
+	@ApiField("fund_settle_time")
+	private String fundSettleTime;
 
 	/**
 	 * 机构OU
@@ -94,6 +114,12 @@ UNCHECKED("unchecked", "未出账"),
 	private List<String> settleTimeTypeList;
 
 	/**
+	 * 来源系统
+	 */
+	@ApiField("source")
+	private String source;
+
+	/**
 	 * 扩展汇总维度1 （智科业务是：外部合约号outContractId，前端给到参数“outContractId=XXXX”)
 	 */
 	@ApiField("summary_dmsn_1")
@@ -113,6 +139,13 @@ UNCHECKED("unchecked", "未出账"),
 		this.billEndMonth = billEndMonth;
 	}
 
+	public List<String> getBillNos() {
+		return this.billNos;
+	}
+	public void setBillNos(List<String> billNos) {
+		this.billNos = billNos;
+	}
+
 	public String getBillStartMonth() {
 		return this.billStartMonth;
 	}
@@ -125,6 +158,20 @@ UNCHECKED("unchecked", "未出账"),
 	}
 	public void setBillStatusList(String billStatusList) {
 		this.billStatusList = billStatusList;
+	}
+
+	public List<String> getBizPdCodeList() {
+		return this.bizPdCodeList;
+	}
+	public void setBizPdCodeList(List<String> bizPdCodeList) {
+		this.bizPdCodeList = bizPdCodeList;
+	}
+
+	public String getFundSettleTime() {
+		return this.fundSettleTime;
+	}
+	public void setFundSettleTime(String fundSettleTime) {
+		this.fundSettleTime = fundSettleTime;
 	}
 
 	public List<String> getInstIdList() {
@@ -174,6 +221,13 @@ UNCHECKED("unchecked", "未出账"),
 	}
 	public void setSettleTimeTypeList(List<String> settleTimeTypeList) {
 		this.settleTimeTypeList = settleTimeTypeList;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 	public String getSummaryDmsn1() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票申请状态变更
  *
  * @author auto create
- * @since 1.0, 2021-08-13 15:04:23
+ * @since 1.0, 2022-11-08 13:48:14
  */
 public class AlipayEbppInvoiceApplyStatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4166319175936884773L;
+	private static final long serialVersionUID = 7279863319769343543L;
 
 	/**
 	 * 发票申请ID，由阿里发票平台生成。字母或数字组成。

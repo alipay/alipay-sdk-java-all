@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出账机构与城市信息对象信息
  *
  * @author auto create
- * @since 1.0, 2017-05-22 17:13:48
+ * @since 1.0, 2022-11-07 19:31:00
  */
 public class QueryUserChargeInstAndAreaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6727498914396497834L;
+	private static final long serialVersionUID = 1551754476666488179L;
 
 	/**
 	 * 出账机构简称

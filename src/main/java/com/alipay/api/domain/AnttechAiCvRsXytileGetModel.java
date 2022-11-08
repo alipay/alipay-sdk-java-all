@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiCvRsXytileGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1836729658771357811L;
+	private static final long serialVersionUID = 4658196821566245882L;
 
 	/**
 	 * 101：玉米

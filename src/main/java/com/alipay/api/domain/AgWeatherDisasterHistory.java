@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 农业气象历史灾害统计信息
  *
  * @author auto create
- * @since 1.0, 2022-09-27 14:30:00
+ * @since 1.0, 2022-11-03 18:24:58
  */
 public class AgWeatherDisasterHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 5698882559133981442L;
+	private static final long serialVersionUID = 4264328855273916917L;
 
 	/**
 	 * 数据生产日期，YYYYMMDD
@@ -26,7 +26,8 @@ public class AgWeatherDisasterHistory extends AlipayObject {
 	private String highTemperatureDays;
 
 	/**
-	 * 高温一年灾害等级
+	 * 高温一年灾害频率等级：
+0-无风险，1-极低频，2-较低频，3-中度，4-较高频，5-极高频
 	 */
 	@ApiField("high_temperature_level")
 	private String highTemperatureLevel;
@@ -38,7 +39,8 @@ public class AgWeatherDisasterHistory extends AlipayObject {
 	private String lowTemperatureDays;
 
 	/**
-	 * 低温一年灾害等级
+	 * 低温一年灾害频率等级：
+0-无风险，1-极低频，2-较低频，3-中度，4-较高频，5-极高频
 	 */
 	@ApiField("low_temperature_level")
 	private String lowTemperatureLevel;
@@ -50,7 +52,8 @@ public class AgWeatherDisasterHistory extends AlipayObject {
 	private String rainstormDays;
 
 	/**
-	 * 暴雨一年灾害等级
+	 * 暴雨一年灾害频率等级：
+0-无风险，1-极低频，2-较低频，3-中度，4-较高频，5-极高频
 	 */
 	@ApiField("rainstorm_level")
 	private String rainstormLevel;

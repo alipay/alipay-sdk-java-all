@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 调拨额度配置
  *
  * @author auto create
- * @since 1.0, 2020-06-24 16:27:52
+ * @since 1.0, 2022-11-03 11:24:22
  */
 public class InstAllocationQuotaVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5299873788879315783L;
+	private static final long serialVersionUID = 1663776278275963212L;
 
 	/**
 	 * 管控账号

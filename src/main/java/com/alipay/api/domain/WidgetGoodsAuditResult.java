@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小部件商品审核结果
  *
  * @author auto create
- * @since 1.0, 2022-09-01 17:08:06
+ * @since 1.0, 2022-11-03 19:49:28
  */
 public class WidgetGoodsAuditResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5873188476115446372L;
+	private static final long serialVersionUID = 7217984714293659637L;
 
 	/**
 	 * 审核的备注

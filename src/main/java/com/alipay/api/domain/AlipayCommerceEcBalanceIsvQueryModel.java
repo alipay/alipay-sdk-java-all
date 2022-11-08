@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv对账单文件下载接口
  *
  * @author auto create
- * @since 1.0, 2022-10-17 16:11:48
+ * @since 1.0, 2022-11-04 14:51:00
  */
 public class AlipayCommerceEcBalanceIsvQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8373311861372383515L;
+	private static final long serialVersionUID = 5621775446483134785L;
 
 	/**
 	 * 账单时间： 日账单格式为yyyy-MM-dd，最早可下载2016年1月1日开始的日账单。不支持下载当日账单，只能下载前一日24点前的账单数据（T+1），当日数据一般于次日 9 点前生成，特殊情况可能延迟。

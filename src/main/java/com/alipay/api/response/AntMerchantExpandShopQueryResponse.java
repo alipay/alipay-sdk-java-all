@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-31 20:57:04
+ * @since 1.0, 2022-11-07 18:31:44
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6785789129785662269L;
+	private static final long serialVersionUID = 6666829111942543461L;
 
 	/** 
 	 * 品牌id
@@ -121,7 +121,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private String memo;
 
 	/** 
-	 * 新版门店类目标准二级类目code。类目标准及与原shop_category映射关系参见文档https://ur.alipay.com/3oJ26c0veETkLXgTbtQnYY
+	 * 新版门店类目标准二级类目code。类目标准及与原shop_category映射关系参见文档https://gw.alipayobjects.com/os/bmw-prod/4b3f82df-e53e-4b84-bc41-fe025101e726.xlsx
 	 */
 	@ApiField("new_shop_category")
 	private String newShopCategory;

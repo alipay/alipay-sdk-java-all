@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人认证信息申请接口
  *
  * @author auto create
- * @since 1.0, 2022-10-24 11:36:45
+ * @since 1.0, 2022-11-08 15:19:47
  */
 public class AlipayUserCertifyInfoPersonApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2358789865182446855L;
+	private static final long serialVersionUID = 4182671391125237696L;
 
 	/**
 	 * 用户详细地址
@@ -72,6 +72,12 @@ public class AlipayUserCertifyInfoPersonApplyModel extends AlipayObject {
 	 */
 	@ApiField("mobile")
 	private String mobile;
+
+	/**
+	 * 用户在应用（AppId）下的用户唯一标识。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 用户地址的省份信息
@@ -171,6 +177,13 @@ public class AlipayUserCertifyInfoPersonApplyModel extends AlipayObject {
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProvince() {

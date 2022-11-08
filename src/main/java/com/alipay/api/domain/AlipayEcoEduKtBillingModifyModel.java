@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费账单状态同步接口
  *
  * @author auto create
- * @since 1.0, 2021-08-30 16:49:41
+ * @since 1.0, 2022-11-03 10:43:15
  */
 public class AlipayEcoEduKtBillingModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4827329869866381435L;
+	private static final long serialVersionUID = 2369738999943171848L;
 
 	/**
 	 * 成功Y，失败N
@@ -30,6 +30,12 @@ public class AlipayEcoEduKtBillingModifyModel extends AlipayObject {
 	 */
 	@ApiField("buyer_user_id")
 	private String buyerUserId;
+
+	/**
+	 * 支付宝返回的买家支付宝用户id加密后信息
+	 */
+	@ApiField("buyer_user_open_id")
+	private String buyerUserOpenId;
 
 	/**
 	 * 本次退款是否发生了资金变化
@@ -110,6 +116,13 @@ buyer_user_id, refund_detail_item_list;
 	}
 	public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;
+	}
+
+	public String getBuyerUserOpenId() {
+		return this.buyerUserOpenId;
+	}
+	public void setBuyerUserOpenId(String buyerUserOpenId) {
+		this.buyerUserOpenId = buyerUserOpenId;
 	}
 
 	public String getFundChange() {

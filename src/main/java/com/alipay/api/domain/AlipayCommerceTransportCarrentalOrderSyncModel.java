@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租车服务标准化订单数据回流
  *
  * @author auto create
- * @since 1.0, 2022-11-01 20:06:29
+ * @since 1.0, 2022-11-03 14:06:14
  */
 public class AlipayCommerceTransportCarrentalOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4667853218299547474L;
+	private static final long serialVersionUID = 2229532716382324819L;
 
 	/**
 	 * 支付宝userid（用户在支付宝平台的2088开头16位id）
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 租车信息
@@ -178,6 +184,13 @@ FINISHED
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public CarRentalInfo getCarRentalInfo() {

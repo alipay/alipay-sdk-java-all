@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户授权关系校验
  *
  * @author auto create
- * @since 1.0, 2022-09-22 14:26:34
+ * @since 1.0, 2022-11-03 21:59:15
  */
 public class AlipayOpenAuthUserauthRelationshipCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5798916817411126182L;
+	private static final long serialVersionUID = 4436263798933644548L;
 
 	/**
 	 * 操作接口名字
 	 */
 	@ApiField("action")
 	private String action;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -30,6 +36,13 @@ public class AlipayOpenAuthUserauthRelationshipCertifyModel extends AlipayObject
 	}
 	public void setAction(String action) {
 		this.action = action;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

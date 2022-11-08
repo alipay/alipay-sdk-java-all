@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 15:51:46
+ * @since 1.0, 2022-11-07 17:37:25
  */
 public class AnttechBlockchainFinanceFileUploadRequest implements AlipayUploadRequest<AnttechBlockchainFinanceFileUploadResponse> {
 

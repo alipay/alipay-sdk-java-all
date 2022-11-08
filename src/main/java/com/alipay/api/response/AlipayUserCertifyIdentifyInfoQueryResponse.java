@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.identify.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:10:09
+ * @since 1.0, 2022-11-08 15:18:27
  */
 public class AlipayUserCertifyIdentifyInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1819428279458578449L;
+	private static final long serialVersionUID = 7634457897415832739L;
 
 	/** 
 	 * 如果是个人账号，就是个人的名字，如果是企业账号，就是企业名称
@@ -69,6 +69,12 @@ public class AlipayUserCertifyIdentifyInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("logon_id")
 	private String logonId;
+
+	/** 
+	 * 用户在应用（AppId）下的用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 企业客户维度的证件有效期，格式为yyyyMMdd或者“长期”
@@ -267,6 +273,13 @@ public class AlipayUserCertifyIdentifyInfoQueryResponse extends AlipayResponse {
 	}
 	public String getLogonId( ) {
 		return this.logonId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrgCustomerExpireDate(String orgCustomerExpireDate) {

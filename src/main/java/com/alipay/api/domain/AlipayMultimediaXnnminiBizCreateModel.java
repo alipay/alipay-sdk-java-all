@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * xnn小程序创建业务
  *
  * @author auto create
- * @since 1.0, 2022-10-20 14:22:02
+ * @since 1.0, 2022-11-03 21:36:49
  */
 public class AlipayMultimediaXnnminiBizCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7419815365152216236L;
+	private static final long serialVersionUID = 7743596538516979675L;
 
 	/**
 	 * 业务描述
@@ -30,6 +30,12 @@ public class AlipayMultimediaXnnminiBizCreateModel extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 模型创建用户
@@ -56,6 +62,13 @@ public class AlipayMultimediaXnnminiBizCreateModel extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

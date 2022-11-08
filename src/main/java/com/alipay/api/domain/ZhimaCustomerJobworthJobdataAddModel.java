@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 工作证职业数据回流接口
  *
  * @author auto create
- * @since 1.0, 2022-05-07 10:14:59
+ * @since 1.0, 2022-11-08 17:09:22
  */
 public class ZhimaCustomerJobworthJobdataAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8485363321273342458L;
+	private static final long serialVersionUID = 8834822598673584235L;
 
 	/**
 	 * 身份证证件号
@@ -40,6 +40,12 @@ public class ZhimaCustomerJobworthJobdataAddModel extends AlipayObject {
 	@ApiListField("job_data_list")
 	@ApiField("job_worth_jobdata")
 	private List<JobWorthJobdata> jobDataList;
+
+	/**
+	 * 支付宝uid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝uid
@@ -79,6 +85,13 @@ public class ZhimaCustomerJobworthJobdataAddModel extends AlipayObject {
 	}
 	public void setJobDataList(List<JobWorthJobdata> jobDataList) {
 		this.jobDataList = jobDataList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

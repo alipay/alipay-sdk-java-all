@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用认证风险识别
  *
  * @author auto create
- * @since 1.0, 2022-10-28 15:28:02
+ * @since 1.0, 2022-11-07 10:43:14
  */
 public class ZhimaCreditEpCertificationRiskIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4185812735871556822L;
+	private static final long serialVersionUID = 5467645938931451458L;
 
 	/**
 	 * 统一社会信用代码或营业执照注册号risk_identify_type=ENTERPRISE 必填

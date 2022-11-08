@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 教育缴费定向同步接口
  *
  * @author auto create
- * @since 1.0, 2021-08-30 17:09:58
+ * @since 1.0, 2022-11-03 10:43:14
  */
 public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8464891453743233963L;
+	private static final long serialVersionUID = 8229551546536576359L;
 
 	/**
 	 * 如果所在学校分校区，传入分校区编号，不传默认为总校或无分校区
@@ -120,6 +120,12 @@ public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 	 */
 	@ApiField("pay_user_id")
 	private String payUserId;
+
+	/**
+	 * 支付宝用户编号的加密信息
+	 */
+	@ApiField("pay_user_open_id")
+	private String payUserOpenId;
 
 	/**
 	 * 学校所在省
@@ -360,6 +366,13 @@ public class AlipayEcoEduKtBillingSyncModel extends AlipayObject {
 	}
 	public void setPayUserId(String payUserId) {
 		this.payUserId = payUserId;
+	}
+
+	public String getPayUserOpenId() {
+		return this.payUserOpenId;
+	}
+	public void setPayUserOpenId(String payUserOpenId) {
+		this.payUserOpenId = payUserOpenId;
 	}
 
 	public String getProvince() {

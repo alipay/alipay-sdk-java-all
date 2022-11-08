@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汇总账单信息openapi
  *
  * @author auto create
- * @since 1.0, 2022-11-01 15:31:09
+ * @since 1.0, 2022-11-03 16:34:44
  */
 public class SummaryBillOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7717877833916312426L;
+	private static final long serialVersionUID = 8155195243713951257L;
 
 	/**
 	 * 调账金额
@@ -45,6 +45,18 @@ CONFIRMED("confirmed", "账单已确认");
 	 */
 	@ApiField("bill_status")
 	private String billStatus;
+
+	/**
+	 * 业财身份编码
+	 */
+	@ApiField("biz_pd_code")
+	private String bizPdCode;
+
+	/**
+	 * 资金结算时点
+	 */
+	@ApiField("fund_settle_time")
+	private String fundSettleTime;
 
 	/**
 	 * 机构OU
@@ -90,6 +102,12 @@ real、delayed
 	@ApiField("settled_amount")
 	private MultiCurrencyMoneyOpenApi settledAmount;
 
+	/**
+	 * 调用者系统名称
+	 */
+	@ApiField("source")
+	private String source;
+
 	public MultiCurrencyMoneyOpenApi getAdjustAmount() {
 		return this.adjustAmount;
 	}
@@ -123,6 +141,20 @@ real、delayed
 	}
 	public void setBillStatus(String billStatus) {
 		this.billStatus = billStatus;
+	}
+
+	public String getBizPdCode() {
+		return this.bizPdCode;
+	}
+	public void setBizPdCode(String bizPdCode) {
+		this.bizPdCode = bizPdCode;
+	}
+
+	public String getFundSettleTime() {
+		return this.fundSettleTime;
+	}
+	public void setFundSettleTime(String fundSettleTime) {
+		this.fundSettleTime = fundSettleTime;
 	}
 
 	public String getInstId() {
@@ -172,6 +204,13 @@ real、delayed
 	}
 	public void setSettledAmount(MultiCurrencyMoneyOpenApi settledAmount) {
 		this.settledAmount = settledAmount;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }

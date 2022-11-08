@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 抗原检测
  *
  * @author auto create
- * @since 1.0, 2022-04-27 20:54:31
+ * @since 1.0, 2022-11-04 13:59:48
  */
 public class AlipayMsaasMediarecogMmtcapiAntigenIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4877752427543492423L;
+	private static final long serialVersionUID = 6461827248513842387L;
 
 	/**
 	 * 算法业务标识id，调用对应算法前请联系接口负责人获取
@@ -28,6 +28,12 @@ public class AlipayMsaasMediarecogMmtcapiAntigenIdentifyModel extends AlipayObje
 	@ApiListField("image_info_list")
 	@ApiField("image_infos")
 	private List<ImageInfos> imageInfoList;
+
+	/**
+	 * 蚂蚁统一开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 自定义参数，json格式
@@ -53,6 +59,13 @@ public class AlipayMsaasMediarecogMmtcapiAntigenIdentifyModel extends AlipayObje
 	}
 	public void setImageInfoList(List<ImageInfos> imageInfoList) {
 		this.imageInfoList = imageInfoList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getParams() {

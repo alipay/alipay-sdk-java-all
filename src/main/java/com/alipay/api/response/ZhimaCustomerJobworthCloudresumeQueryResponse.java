@@ -5,6 +5,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.CloudResumeCertificateInfo;
 import com.alipay.api.domain.CloudResumeEducationExperience;
+import com.alipay.api.domain.CloudResumeHeadPic;
 import com.alipay.api.domain.CloudResumePositionIntention;
 import com.alipay.api.domain.CloudResumeSkillInfo;
 import com.alipay.api.domain.CloudResumeWorkExperience;
@@ -15,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.cloudresume.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-07 10:01:42
+ * @since 1.0, 2022-11-04 18:12:35
  */
 public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7524765421963926531L;
+	private static final long serialVersionUID = 5641757323577435626L;
 
 	/** 
 	 * 出身日期
@@ -52,6 +53,12 @@ public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayRespons
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/** 
+	 * 智能简历头像
+	 */
+	@ApiField("pic_url")
+	private CloudResumeHeadPic picUrl;
 
 	/** 
 	 * 求职期望
@@ -119,6 +126,13 @@ public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayRespons
 	}
 	public String getPhone( ) {
 		return this.phone;
+	}
+
+	public void setPicUrl(CloudResumeHeadPic picUrl) {
+		this.picUrl = picUrl;
+	}
+	public CloudResumeHeadPic getPicUrl( ) {
+		return this.picUrl;
 	}
 
 	public void setPositionIntentions(List<CloudResumePositionIntention> positionIntentions) {

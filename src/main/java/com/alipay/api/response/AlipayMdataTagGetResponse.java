@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMdataTagGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8539147431687246284L;
+	private static final long serialVersionUID = 6448619611993525538L;
 
 	/** 
 	 * 查询到的标签值, JSON字符串

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金池账户关联VO
  *
  * @author auto create
- * @since 1.0, 2020-06-24 16:26:21
+ * @since 1.0, 2022-11-03 11:24:32
  */
 public class InstCashPoolAccountMappingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5782682112259649721L;
+	private static final long serialVersionUID = 7733427161316199895L;
 
 	/**
 	 * 资金池唯一标识
