@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMemberBrandownerNameQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1141259664358851663L;
+	private static final long serialVersionUID = 8522714143517965653L;
 
 	/** 
 	 * 品牌商名称

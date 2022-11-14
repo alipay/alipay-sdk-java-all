@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放计划基础信息
  *
  * @author auto create
- * @since 1.0, 2022-08-08 15:15:40
+ * @since 1.0, 2022-11-11 10:04:57
  */
 public class DeliveryBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6684575847621484767L;
+	private static final long serialVersionUID = 8169533667828119378L;
 
 	/**
 	 * 投放计划开始时间。 格式为：yyyy-MM-dd HH:mm:ss。

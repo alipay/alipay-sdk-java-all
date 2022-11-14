@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则绑定关系
  *
  * @author auto create
- * @since 1.0, 2022-06-13 11:55:53
+ * @since 1.0, 2022-11-11 14:14:24
  */
 public class EnterpriseOpenRuleRelationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8769353891791562832L;
+	private static final long serialVersionUID = 5822226235971475693L;
+
+	/**
+	 * 企业ID【推荐使用】
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 创建时间
@@ -28,7 +34,7 @@ public class EnterpriseOpenRuleRelationInfo extends AlipayObject {
 	private Date gmtModified;
 
 	/**
-	 * 所有者id（企业情况下=enterpriseId）
+	 * 企业共同账户ID【不推荐使用】
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
@@ -38,6 +44,13 @@ public class EnterpriseOpenRuleRelationInfo extends AlipayObject {
 	 */
 	@ApiField("standard_id")
 	private String standardId;
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
+	}
 
 	public Date getGmtCreate() {
 		return this.gmtCreate;

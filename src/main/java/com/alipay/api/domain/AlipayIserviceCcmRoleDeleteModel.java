@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除角色
  *
  * @author auto create
- * @since 1.0, 2020-12-10 14:24:47
+ * @since 1.0, 2022-11-09 11:17:00
  */
 public class AlipayIserviceCcmRoleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4684116998251419197L;
+	private static final long serialVersionUID = 8591686744225351115L;
 
 	/**
 	 * 部门id（即租户实例ID、数据权限ID），如果不传入，使用租户id

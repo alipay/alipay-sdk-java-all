@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 抬头信息
  *
  * @author auto create
- * @since 1.0, 2022-11-08 16:27:49
+ * @since 1.0, 2022-11-10 10:07:21
  */
 public class InvoiceTitleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3692299431234527541L;
+	private static final long serialVersionUID = 7761896213396351896L;
 
 	/**
 	 * 是否为用户设置默认抬头
@@ -39,6 +39,12 @@ true（默认抬头）
 	 */
 	@ApiField("open_bank_name")
 	private String openBankName;
+
+	/**
+	 * 支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 纳税人识别号
@@ -117,6 +123,13 @@ CORPORATION（单位）
 	}
 	public void setOpenBankName(String openBankName) {
 		this.openBankName = openBankName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getTaxRegisterNo() {

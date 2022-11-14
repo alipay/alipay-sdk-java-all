@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardPriceResponseItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1713632345725547745L;
+	private static final long serialVersionUID = 5458897647332745446L;
 
 	/**
 	 * 优惠卡类型，枚举值为 mcard,qcard,hycard,ycard,tcard

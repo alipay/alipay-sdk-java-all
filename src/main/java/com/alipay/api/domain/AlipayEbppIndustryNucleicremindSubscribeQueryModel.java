@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 核酸到期提醒订阅状态查询
  *
  * @author auto create
- * @since 1.0, 2022-08-31 20:20:13
+ * @since 1.0, 2022-11-09 11:15:14
  */
 public class AlipayEbppIndustryNucleicremindSubscribeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2667648544755497955L;
+	private static final long serialVersionUID = 8412916989827666167L;
 
 	/**
 	 * 城市编码
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 支付宝会员id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝会员id
@@ -30,6 +36,13 @@ public class AlipayEbppIndustryNucleicremindSubscribeQueryModel extends AlipayOb
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

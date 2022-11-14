@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除客服接口
  *
  * @author auto create
- * @since 1.0, 2020-12-10 14:22:24
+ * @since 1.0, 2022-11-09 11:17:43
  */
 public class AlipayIserviceCcmAgentDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2696323887614123365L;
+	private static final long serialVersionUID = 3726185671828579897L;
 
 	/**
 	 * 客服id

@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核酸到期提醒订阅状态更新
  *
  * @author auto create
- * @since 1.0, 2022-08-31 20:42:14
+ * @since 1.0, 2022-11-11 17:15:14
  */
 public class AlipayEbppIndustryNucleicremindSubscribeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7866389979857725965L;
+	private static final long serialVersionUID = 3158216862656983676L;
 
 	/**
 	 * 城市编码
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订阅提醒时间列表,单位小时，必须不小于48
@@ -46,6 +52,13 @@ public class AlipayEbppIndustryNucleicremindSubscribeModifyModel extends AlipayO
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<Long> getReminderHourList() {

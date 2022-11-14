@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.guarletter.bidwin.notify response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-24 17:39:16
+ * @since 1.0, 2022-11-10 18:50:40
  */
 public class MybankCreditLoantradeGuarletterBidwinNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3645122838244874168L;
+	private static final long serialVersionUID = 7315547862319415175L;
 
 	/** 
 	 * 申请单号

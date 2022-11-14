@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZolozAuthenticationCustomerFacemanageDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2321743683518591614L;
+	private static final long serialVersionUID = 6251369865297221152L;
 
 	/**
 	 * 地域编码

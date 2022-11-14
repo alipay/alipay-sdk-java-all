@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝用户冻结明细信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @since 1.0, 2022-11-09 17:57:42
  */
 public class AccountFreeze extends AlipayObject {
 
-	private static final long serialVersionUID = 3564159211594264992L;
+	private static final long serialVersionUID = 7198222748276137534L;
 
 	/**
 	 * 冻结金额

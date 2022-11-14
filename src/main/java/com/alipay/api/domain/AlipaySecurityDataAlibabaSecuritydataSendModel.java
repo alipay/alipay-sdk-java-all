@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送阿里集团风控数据到蚂蚁
  *
  * @author auto create
- * @since 1.0, 2022-10-21 18:12:34
+ * @since 1.0, 2022-11-14 11:59:57
  */
 public class AlipaySecurityDataAlibabaSecuritydataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2192659244995979199L;
+	private static final long serialVersionUID = 3712191396784499118L;
 
 	/**
 	 * 业务描述信息
@@ -42,6 +42,12 @@ public class AlipaySecurityDataAlibabaSecuritydataSendModel extends AlipayObject
 	 */
 	@ApiField("main_target_value")
 	private String mainTargetValue;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 一级属性
@@ -142,6 +148,13 @@ public class AlipaySecurityDataAlibabaSecuritydataSendModel extends AlipayObject
 	}
 	public void setMainTargetValue(String mainTargetValue) {
 		this.mainTargetValue = mainTargetValue;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProperty() {

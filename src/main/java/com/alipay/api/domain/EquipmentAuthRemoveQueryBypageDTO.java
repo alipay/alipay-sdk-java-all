@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机具解绑按照条件分页查询返回对象
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:57:45
  */
 public class EquipmentAuthRemoveQueryBypageDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7388782374826128771L;
+	private static final long serialVersionUID = 1111474713519799568L;
 
 	/**
 	 * 机具编号

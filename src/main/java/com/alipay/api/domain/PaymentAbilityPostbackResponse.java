@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付能力回传结果信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:57:47
  */
 public class PaymentAbilityPostbackResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6442824274119834841L;
+	private static final long serialVersionUID = 3733668282656693792L;
 
 	/**
 	 * 错误的订单信息

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 消费记录信息-主记录
  *
  * @author auto create
- * @since 1.0, 2022-11-08 17:40:21
+ * @since 1.0, 2022-11-08 20:11:10
  */
 public class ConsumeRecordAOPModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3611926423914453839L;
+	private static final long serialVersionUID = 5542471298145741687L;
 
 	/**
 	 * 接入渠道

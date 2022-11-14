@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部计税信息。在外部计税时传入
  *
  * @author auto create
- * @since 1.0, 2022-06-29 15:14:26
+ * @since 1.0, 2022-11-09 14:40:22
  */
 public class GFAOpenAPIOuterTaxInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3536637422677642666L;
+	private static final long serialVersionUID = 5195159191695943115L;
 
 	/**
 	 * 外部计税明细列表，支持一费多税模式

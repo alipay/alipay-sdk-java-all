@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则记录
  *
  * @author auto create
- * @since 1.0, 2022-06-20 13:45:30
+ * @since 1.0, 2022-11-11 14:14:37
  */
 public class EnterpriseOpenRuleRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2145897658323854278L;
+	private static final long serialVersionUID = 4357276466547527244L;
 
 	/**
 	 * 开票规则账单日
@@ -26,6 +26,12 @@ public class EnterpriseOpenRuleRecordInfo extends AlipayObject {
 	 */
 	@ApiField("effective_start")
 	private Date effectiveStart;
+
+	/**
+	 * 企业ID【推荐使用】
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 创建时间
@@ -78,7 +84,7 @@ SINGLE:单笔开
 	private String openType;
 
 	/**
-	 * 所有者id（企业情况下=enterpriseId）
+	 * 企业共同账户ID【不推荐使用】
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
@@ -101,6 +107,13 @@ SINGLE:单笔开
 	}
 	public void setEffectiveStart(Date effectiveStart) {
 		this.effectiveStart = effectiveStart;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public Date getGmtCreate() {

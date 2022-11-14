@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用服务产品交易退款
  *
  * @author auto create
- * @since 1.0, 2021-03-12 10:52:47
+ * @since 1.0, 2022-11-09 16:34:01
  */
 public class ZhimaCreditPeIndustryTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6883633326238856612L;
+	private static final long serialVersionUID = 4893218939527441472L;
 
 	/**
 	 * 退款金额,单位元,支持两位小数

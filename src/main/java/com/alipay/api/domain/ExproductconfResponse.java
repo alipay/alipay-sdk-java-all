@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 产品（学校）模型-输出参数
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:37
+ * @since 1.0, 2022-11-09 17:57:45
  */
 public class ExproductconfResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2297662547189312951L;
+	private static final long serialVersionUID = 4784923799768815196L;
 
 	/**
 	 * 出账机构

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 算法档案检测
  *
  * @author auto create
- * @since 1.0, 2022-03-28 10:21:32
+ * @since 1.0, 2022-11-10 17:13:38
  */
 public class AlipayFincoreComplianceApccenterAlgorithmarchiveDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4582976586863351522L;
+	private static final long serialVersionUID = 5394782125455963392L;
 
 	/**
 	 * 平台算法唯一编码

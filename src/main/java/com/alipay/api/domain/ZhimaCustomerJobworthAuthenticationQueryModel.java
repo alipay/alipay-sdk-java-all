@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得身份认证查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-01 13:59:03
+ * @since 1.0, 2022-11-11 17:05:52
  */
 public class ZhimaCustomerJobworthAuthenticationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2138355744733835226L;
+	private static final long serialVersionUID = 5225876431994678778L;
 
 	/**
 	 * 证件号
@@ -42,6 +42,13 @@ public class ZhimaCustomerJobworthAuthenticationQueryModel extends AlipayObject 
 	 */
 	@ApiField("once_token")
 	private String onceToken;
+
+	/**
+	 * 蚂蚁统一会员ID
+和身份证任选一个传入
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * exact:精确查询,dim:模糊查询
@@ -95,6 +102,13 @@ public class ZhimaCustomerJobworthAuthenticationQueryModel extends AlipayObject 
 	}
 	public void setOnceToken(String onceToken) {
 		this.onceToken = onceToken;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getQueryType() {

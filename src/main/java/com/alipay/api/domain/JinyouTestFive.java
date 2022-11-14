@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * JinyouTestFive
  *
  * @author auto create
- * @since 1.0, 2022-09-13 23:46:08
+ * @since 1.0, 2022-11-10 15:14:22
  */
 public class JinyouTestFive extends AlipayObject {
 
-	private static final long serialVersionUID = 4149388589932182784L;
+	private static final long serialVersionUID = 3826255244752578248L;
 
 	/**
 	 * 11

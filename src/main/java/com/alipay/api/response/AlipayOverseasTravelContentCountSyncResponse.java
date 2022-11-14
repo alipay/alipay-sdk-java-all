@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelContentCountSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7618533272849932945L;
+	private static final long serialVersionUID = 8376118711333338845L;
 
 	/** 
 	 * 详细错误码。可选，当code=40004，sub_code=BUSINESS_ERROR，不为为空

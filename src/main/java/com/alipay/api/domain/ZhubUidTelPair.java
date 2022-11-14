@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * zoloz应用查询到的支付宝用户号和手机号信息
  *
  * @author auto create
- * @since 1.0, 2022-03-04 14:48:59
+ * @since 1.0, 2022-11-10 16:11:55
  */
 public class ZhubUidTelPair extends AlipayObject {
 
-	private static final long serialVersionUID = 5884197638643388549L;
+	private static final long serialVersionUID = 6445891558819142118L;
+
+	/**
+	 * 支付宝用户open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 手机号
@@ -24,6 +30,13 @@ public class ZhubUidTelPair extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getPhone() {
 		return this.phone;

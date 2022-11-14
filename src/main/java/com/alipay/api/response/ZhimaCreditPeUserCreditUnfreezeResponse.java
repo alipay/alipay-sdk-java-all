@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.credit.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:54
+ * @since 1.0, 2022-11-14 14:19:14
  */
 public class ZhimaCreditPeUserCreditUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8499436175658635539L;
+	private static final long serialVersionUID = 2557138633926244562L;
 
 	/** 
 	 * 解冻成功额度，单位为元，取值范围[0.01,100000000]，精确到小数点后2位

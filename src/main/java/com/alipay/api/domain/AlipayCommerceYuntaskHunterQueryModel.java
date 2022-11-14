@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询导购员任务列表
  *
  * @author auto create
- * @since 1.0, 2022-03-25 10:51:26
+ * @since 1.0, 2022-11-09 15:06:50
  */
 public class AlipayCommerceYuntaskHunterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8852574187614997295L;
+	private static final long serialVersionUID = 6652733952792636647L;
 
 	/**
 	 * 导购员id
 	 */
 	@ApiField("hunter_id")
 	private String hunterId;
+
+	/**
+	 * 导购员id
+	 */
+	@ApiField("hunter_open_id")
+	private String hunterOpenId;
 
 	/**
 	 * 商家id
@@ -58,6 +64,13 @@ EXCHANGEABLE：可兑换的任务
 	}
 	public void setHunterId(String hunterId) {
 		this.hunterId = hunterId;
+	}
+
+	public String getHunterOpenId() {
+		return this.hunterOpenId;
+	}
+	public void setHunterOpenId(String hunterOpenId) {
+		this.hunterOpenId = hunterOpenId;
 	}
 
 	public String getMerchantPid() {

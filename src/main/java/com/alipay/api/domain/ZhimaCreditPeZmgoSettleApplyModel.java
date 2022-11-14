@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO结算申请
  *
  * @author auto create
- * @since 1.0, 2021-09-07 15:18:58
+ * @since 1.0, 2022-11-14 11:52:50
  */
 public class ZhimaCreditPeZmgoSettleApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1894526819655312885L;
+	private static final long serialVersionUID = 2452148266257813697L;
 
 	/**
 	 * DEFAULT_SETTLE 默认结算模式;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cityservice.ext.ordertoc.notify request
  * 
  * @author auto create
- * @since 1.0, 2022-11-01 16:36:50
+ * @since 1.0, 2022-11-14 11:16:37
  */
 public class AlipayEcoCityserviceExtOrdertocNotifyRequest implements AlipayRequest<AlipayEcoCityserviceExtOrdertocNotifyResponse> {
 

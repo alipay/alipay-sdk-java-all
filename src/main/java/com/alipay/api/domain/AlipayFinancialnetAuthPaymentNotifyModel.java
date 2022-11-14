@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金融资源领取回调通知
  *
  * @author auto create
- * @since 1.0, 2021-01-15 11:33:33
+ * @since 1.0, 2022-11-14 13:19:49
  */
 public class AlipayFinancialnetAuthPaymentNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7416965975335582212L;
+	private static final long serialVersionUID = 1451324589265763217L;
 
 	/**
 	 * 商品资源基础价值

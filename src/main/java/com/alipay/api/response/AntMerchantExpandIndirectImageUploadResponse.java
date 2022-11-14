@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.image.upload response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-22 18:41:50
+ * @since 1.0, 2022-11-10 13:50:40
  */
 public class AntMerchantExpandIndirectImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2457461674916218752L;
+	private static final long serialVersionUID = 7278456721446386396L;
 
 	/** 
 	 * 图片在文件存储平台的标识

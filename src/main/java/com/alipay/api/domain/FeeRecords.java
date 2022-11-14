@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 费用记录
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:57:45
  */
 public class FeeRecords extends AlipayObject {
 
-	private static final long serialVersionUID = 2779548547583674673L;
+	private static final long serialVersionUID = 7517964681351157217L;
 
 	/**
 	 * 费用余额，单位为元，小数点保留2位

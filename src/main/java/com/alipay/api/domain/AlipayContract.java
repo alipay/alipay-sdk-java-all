@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户订购信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:59:41
  */
 public class AlipayContract extends AlipayObject {
 
-	private static final long serialVersionUID = 6652278381782284235L;
+	private static final long serialVersionUID = 3655371638168733552L;
 
 	/**
 	 * 支付宝用户ID

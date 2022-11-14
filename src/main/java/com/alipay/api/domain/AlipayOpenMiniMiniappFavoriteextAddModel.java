@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序收藏添加实体
  *
  * @author auto create
- * @since 1.0, 2019-11-21 19:57:17
+ * @since 1.0, 2022-11-14 10:17:02
  */
 public class AlipayOpenMiniMiniappFavoriteextAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5833954771415887846L;
+	private static final long serialVersionUID = 2627333771242397392L;
 
 	/**
 	 * 小程序收藏业务类型，需要申请分配

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放计划定向规则。
  *
  * @author auto create
- * @since 1.0, 2022-08-08 10:33:37
+ * @since 1.0, 2022-11-11 10:05:31
  */
 public class DeliveryTargetRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7799479375397484611L;
+	private static final long serialVersionUID = 3534912629297862169L;
 
 	/**
 	 * 指定品牌id。

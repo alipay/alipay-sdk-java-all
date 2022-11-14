@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.creditpay.amount.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-20 11:41:44
+ * @since 1.0, 2022-11-10 17:23:40
  */
 public class MybankCreditSupplychainCreditpayAmountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6536731578992771542L;
+	private static final long serialVersionUID = 3692388632358842367L;
 
 	/** 
 	 * 准入标志

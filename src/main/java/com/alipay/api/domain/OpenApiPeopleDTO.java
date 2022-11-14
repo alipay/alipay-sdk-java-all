@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同干系人
  *
  * @author auto create
- * @since 1.0, 2022-01-07 10:42:51
+ * @since 1.0, 2022-11-09 16:04:05
  */
 public class OpenApiPeopleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3573889827839244892L;
+	private static final long serialVersionUID = 4717915786283478782L;
 
 	/**
 	 * 花名

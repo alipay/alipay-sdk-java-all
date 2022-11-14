@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 农作物基础信息批量查询
  *
  * @author auto create
- * @since 1.0, 2022-11-02 15:59:16
+ * @since 1.0, 2022-11-14 13:32:15
  */
 public class AnttechBlockchainDefinDataserviceCropbaseBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3369634495936416618L;
+	private static final long serialVersionUID = 4578511871437943588L;
 
 	/**
 	 * 根据作物编码条件搜索
@@ -39,6 +39,30 @@ public class AnttechBlockchainDefinDataserviceCropbaseBatchqueryModel extends Al
 	 */
 	@ApiField("is_harvested")
 	private Boolean isHarvested;
+
+	/**
+	 * 是否高温风险
+	 */
+	@ApiField("is_high_temperature_risk")
+	private Boolean isHighTemperatureRisk;
+
+	/**
+	 * 是否低温风险
+	 */
+	@ApiField("is_low_temperature_risk")
+	private Boolean isLowTemperatureRisk;
+
+	/**
+	 * 是否暴雨风险
+	 */
+	@ApiField("is_rainstorm_risk")
+	private Boolean isRainstormRisk;
+
+	/**
+	 * 是否墒情风险
+	 */
+	@ApiField("is_soil_moisture_risk")
+	private Boolean isSoilMoistureRisk;
 
 	/**
 	 * 当为true时，仅返回地块相关作物编码字段，同时接受页大小开放
@@ -97,6 +121,34 @@ public class AnttechBlockchainDefinDataserviceCropbaseBatchqueryModel extends Al
 	}
 	public void setIsHarvested(Boolean isHarvested) {
 		this.isHarvested = isHarvested;
+	}
+
+	public Boolean getIsHighTemperatureRisk() {
+		return this.isHighTemperatureRisk;
+	}
+	public void setIsHighTemperatureRisk(Boolean isHighTemperatureRisk) {
+		this.isHighTemperatureRisk = isHighTemperatureRisk;
+	}
+
+	public Boolean getIsLowTemperatureRisk() {
+		return this.isLowTemperatureRisk;
+	}
+	public void setIsLowTemperatureRisk(Boolean isLowTemperatureRisk) {
+		this.isLowTemperatureRisk = isLowTemperatureRisk;
+	}
+
+	public Boolean getIsRainstormRisk() {
+		return this.isRainstormRisk;
+	}
+	public void setIsRainstormRisk(Boolean isRainstormRisk) {
+		this.isRainstormRisk = isRainstormRisk;
+	}
+
+	public Boolean getIsSoilMoistureRisk() {
+		return this.isSoilMoistureRisk;
+	}
+	public void setIsSoilMoistureRisk(Boolean isSoilMoistureRisk) {
+		this.isSoilMoistureRisk = isSoilMoistureRisk;
 	}
 
 	public Boolean getNeedCropOnly() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.activity.taskequity.receive response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-28 17:01:29
+ * @since 1.0, 2022-11-14 10:17:34
  */
 public class AlipayOpenMiniActivityTaskequityReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3274271715928817488L;
+	private static final long serialVersionUID = 2593652867986649869L;
 
 	/** 
 	 * 状态码，返回SUCCESS时表示正常，其他值时表示异常情况

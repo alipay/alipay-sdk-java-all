@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * aa收款查询详情
  *
  * @author auto create
- * @since 1.0, 2018-07-20 12:10:02
+ * @since 1.0, 2022-11-10 11:16:47
  */
 public class AlipayFundTransAacollectBatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8172554122851615383L;
+	private static final long serialVersionUID = 8389814774986289452L;
 
 	/**
 	 * 批次号

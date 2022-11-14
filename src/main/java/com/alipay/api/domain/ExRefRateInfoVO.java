@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:57:45
  */
 public class ExRefRateInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7312316779153658319L;
+	private static final long serialVersionUID = 3348665823288236723L;
 
 	/**
 	 * 货币对

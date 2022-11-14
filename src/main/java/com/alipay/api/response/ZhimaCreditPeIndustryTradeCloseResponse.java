@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.industry.trade.close response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-12 10:53:26
+ * @since 1.0, 2022-11-09 16:33:26
  */
 public class ZhimaCreditPeIndustryTradeCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7351479144974846842L;
+	private static final long serialVersionUID = 4832181754824571742L;
 
 	/** 
 	 * 传入的资金单号

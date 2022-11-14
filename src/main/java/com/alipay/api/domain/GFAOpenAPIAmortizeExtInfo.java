@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财摊销扩展信息
  *
  * @author auto create
- * @since 1.0, 2022-06-29 15:14:37
+ * @since 1.0, 2022-11-09 14:40:22
  */
 public class GFAOpenAPIAmortizeExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7777943688756412967L;
+	private static final long serialVersionUID = 1816931158975638181L;
 
 	/**
 	 * 待摊销金额。（单位：各币种的“元”单位，精确到小数点后两位）

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主统一消息实体类型
  *
  * @author auto create
- * @since 1.0, 2022-10-25 16:15:28
+ * @since 1.0, 2022-11-14 12:56:55
  */
 public class VehMessageEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 4399124889555641473L;
+	private static final long serialVersionUID = 4162561779135857347L;
 
 	/**
 	 * 证件号码.(certificate_type/certificate_number/certificate_username) 或者uid必须有一个不为空。两个都不为空则以uid为准. 该字段为敏感字段，须做md5处理后传输。示例中值的明文为310101198011110010.
@@ -48,6 +48,12 @@ public class VehMessageEntity extends AlipayObject {
 	 */
 	@ApiField("msg_template_id")
 	private String msgTemplateId;
+
+	/**
+	 * (certificate_type/certificate_number/用户名字) 或者open_id必须有一个不为空。两个都不为空则以open_id为准
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * identity字段：值为不大于64位的保证唯一的字符串；该字段用于保证消息唯一性，防止消息重复推送，相当于业务流水号，由接入方自行生成
@@ -107,6 +113,13 @@ public class VehMessageEntity extends AlipayObject {
 	}
 	public void setMsgTemplateId(String msgTemplateId) {
 		this.msgTemplateId = msgTemplateId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutMsgId() {

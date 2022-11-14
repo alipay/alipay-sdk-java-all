@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡更新
  *
  * @author auto create
- * @since 1.0, 2022-08-17 10:41:42
+ * @since 1.0, 2022-11-08 21:27:53
  */
 public class AlipayMarketingCardUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5255391851938373785L;
+	private static final long serialVersionUID = 7298554556137328857L;
 
 	/**
 	 * 需要修改的最新卡信息

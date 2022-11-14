@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财受理结果
  *
  * @author auto create
- * @since 1.0, 2020-08-24 21:46:54
+ * @since 1.0, 2022-11-09 15:18:31
  */
 public class GFAOpenAPIAcceptanceResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3217569644867581976L;
+	private static final long serialVersionUID = 3329172357965748282L;
 
 	/**
 	 * 受理单id

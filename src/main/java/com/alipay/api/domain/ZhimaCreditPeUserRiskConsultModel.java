@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个人信用准入评估
  *
  * @author auto create
- * @since 1.0, 2021-03-12 14:08:57
+ * @since 1.0, 2022-11-14 14:18:57
  */
 public class ZhimaCreditPeUserRiskConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4461784774942177317L;
+	private static final long serialVersionUID = 7414211159672266139L;
 
 	/**
 	 * 申请免押额度，取值范围[0.01,100000000]，精确到小数点后2位

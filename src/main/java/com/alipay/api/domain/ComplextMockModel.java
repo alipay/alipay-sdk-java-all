@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 负责对象mock模型
  *
  * @author auto create
- * @since 1.0, 2016-10-27 16:59:24
+ * @since 1.0, 2022-11-09 17:57:45
  */
 public class ComplextMockModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1158398689544984524L;
+	private static final long serialVersionUID = 6528443232344993676L;
 
 	/**
 	 * biz_model

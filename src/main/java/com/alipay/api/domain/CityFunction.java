@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 城市信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:57:45
  */
 public class CityFunction extends AlipayObject {
 
-	private static final long serialVersionUID = 1247577761465922735L;
+	private static final long serialVersionUID = 5697588385795964171L;
 
 	/**
 	 * 城市标准编码

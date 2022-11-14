@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * JinyouTestThree
  *
  * @author auto create
- * @since 1.0, 2022-09-13 23:40:23
+ * @since 1.0, 2022-11-10 15:15:22
  */
 public class JinyouTestThree extends AlipayObject {
 
-	private static final long serialVersionUID = 3374246582781924486L;
+	private static final long serialVersionUID = 7767812679693341433L;
 
 	/**
 	 * 11
@@ -22,7 +22,7 @@ public class JinyouTestThree extends AlipayObject {
 	private JinyouTestTwo th1F;
 
 	/**
-	 * 1
+	 * 无枚举值
 	 */
 	@ApiField("th_2_n")
 	private Date th2N;

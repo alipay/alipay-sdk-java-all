@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财受理外部计税明细信息
  *
  * @author auto create
- * @since 1.0, 2022-06-29 14:07:20
+ * @since 1.0, 2022-11-09 14:40:22
  */
 public class GFAOpenAPIOuterTaxInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8324721594834992562L;
+	private static final long serialVersionUID = 6156653736383979411L;
 
 	/**
 	 * 外部计税传入高精度税金。 需要处理为税金所属币种的最小单位。如人民币需要处理为分，日币需要处理最小单位元

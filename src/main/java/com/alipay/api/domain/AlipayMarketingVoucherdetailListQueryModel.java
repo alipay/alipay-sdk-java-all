@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户票记录
  *
  * @author auto create
- * @since 1.0, 2022-10-26 11:56:22
+ * @since 1.0, 2022-11-13 19:19:51
  */
 public class AlipayMarketingVoucherdetailListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4834563641883191822L;
+	private static final long serialVersionUID = 7857376134254688311L;
+
+	/**
+	 * 支付宝用户的openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 当前第几页，从1开始
@@ -36,6 +42,13 @@ public class AlipayMarketingVoucherdetailListQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public Long getPageNum() {
 		return this.pageNum;

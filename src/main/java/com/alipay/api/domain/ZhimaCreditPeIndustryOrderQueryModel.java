@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用服务产品订单查询
  *
  * @author auto create
- * @since 1.0, 2021-03-12 10:53:01
+ * @since 1.0, 2022-11-09 16:33:49
  */
 public class ZhimaCreditPeIndustryOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2625116527268375719L;
+	private static final long serialVersionUID = 4449598174347598815L;
 
 	/**
 	 * 扩展信息字段，格式:json，注意，如果字符串对应的json对象包含中文字符，需要对包含中文的字段进行编码

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝积分会员权益信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @since 1.0, 2022-11-09 17:57:44
  */
 public class BenefitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2662361588228922829L;
+	private static final long serialVersionUID = 4287744859752578631L;
 
 	/**
 	 * 权益信息id

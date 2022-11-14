@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-17 11:15:24
+ * @since 1.0, 2022-11-08 21:26:40
  */
 public class AlipayMarketingCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6814982149533817949L;
+	private static final long serialVersionUID = 2719823397781563191L;
 
 	/** 
 	 * 商户卡信息

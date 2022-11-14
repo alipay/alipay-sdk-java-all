@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建角色
  *
  * @author auto create
- * @since 1.0, 2020-12-10 14:25:18
+ * @since 1.0, 2022-11-09 11:19:28
  */
 public class AlipayIserviceCcmRoleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5236979559287884953L;
+	private static final long serialVersionUID = 3872311117824283374L;
 
 	/**
 	 * 部门id（即租户实例ID、数据权限ID）

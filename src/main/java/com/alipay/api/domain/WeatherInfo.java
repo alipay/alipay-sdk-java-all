@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 气象信息
  *
  * @author auto create
- * @since 1.0, 2022-11-01 10:24:14
+ * @since 1.0, 2022-11-10 16:56:14
  */
 public class WeatherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2452288338128764269L;
+	private static final long serialVersionUID = 8464594475153571194L;
+
+	/**
+	 * 附加信息
+	 */
+	@ApiField("addition_info")
+	private String additionInfo;
 
 	/**
 	 * 数据预报时间
@@ -42,6 +48,13 @@ public class WeatherInfo extends AlipayObject {
 	 */
 	@ApiField("wind_speed")
 	private String windSpeed;
+
+	public String getAdditionInfo() {
+		return this.additionInfo;
+	}
+	public void setAdditionInfo(String additionInfo) {
+		this.additionInfo = additionInfo;
+	}
 
 	public String getForecastDate() {
 		return this.forecastDate;

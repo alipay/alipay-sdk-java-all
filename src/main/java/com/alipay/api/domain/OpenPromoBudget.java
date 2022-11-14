@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放活动－预算
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:57:47
  */
 public class OpenPromoBudget extends AlipayObject {
 
-	private static final long serialVersionUID = 4541445482537454723L;
+	private static final long serialVersionUID = 7719536748868637467L;
 
 	/**
 	 * 预算数量，支持1～999999999之间。默认为999999999

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.recruit.planlist.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-10 22:01:50
+ * @since 1.0, 2022-11-14 14:21:39
  */
 public class AlipayMarketingRecruitPlanlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6896436189297888487L;
+	private static final long serialVersionUID = 7573861839846382452L;
 
 	/** 
 	 * 方案列表

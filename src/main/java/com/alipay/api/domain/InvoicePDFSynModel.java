@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票同步简单模式下的发票信息入参模型
  *
  * @author auto create
- * @since 1.0, 2022-10-24 19:28:12
+ * @since 1.0, 2022-11-10 10:45:15
  */
 public class InvoicePDFSynModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8393967324936865958L;
+	private static final long serialVersionUID = 4544427344142349265L;
 
 	/**
 	 * 支付宝开票申请id。
@@ -46,6 +46,12 @@ JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	 */
 	@ApiField("file_download_url")
 	private String fileDownloadUrl;
+
+	/**
+	 * 支付宝用户id，当apply_id为空时，open_id必填
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部ISV的唯一发票标识
@@ -99,6 +105,13 @@ JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	}
 	public void setFileDownloadUrl(String fileDownloadUrl) {
 		this.fileDownloadUrl = fileDownloadUrl;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutInvoiceId() {

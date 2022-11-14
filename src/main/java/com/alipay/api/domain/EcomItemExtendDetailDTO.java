@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2022-10-27 10:56:15
+ * @since 1.0, 2022-11-10 10:58:46
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3364978832674893669L;
+	private static final long serialVersionUID = 6821374236161467877L;
 
 	/**
 	 * extInfo
@@ -48,6 +48,12 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	 */
 	@ApiField("game_name")
 	private String gameName;
+
+	/**
+	 * 设备是否支持锁定
+	 */
+	@ApiField("lockable_device")
+	private Boolean lockableDevice;
 
 	public String getExtInfo() {
 		return this.extInfo;
@@ -89,6 +95,13 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	}
 	public void setGameName(String gameName) {
 		this.gameName = gameName;
+	}
+
+	public Boolean getLockableDevice() {
+		return this.lockableDevice;
+	}
+	public void setLockableDevice(Boolean lockableDevice) {
+		this.lockableDevice = lockableDevice;
 	}
 
 }

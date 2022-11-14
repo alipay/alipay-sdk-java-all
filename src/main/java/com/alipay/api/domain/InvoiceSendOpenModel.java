@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票同步场景下的发票入参模型
  *
  * @author auto create
- * @since 1.0, 2021-05-31 10:30:51
+ * @since 1.0, 2022-11-10 11:21:43
  */
 public class InvoiceSendOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5555817777164939128L;
+	private static final long serialVersionUID = 2866318271113225529L;
 
 	/**
 	 * 支付宝端的申请id。如果在开票过程中，是通过支付宝提交的申请到机构端，支付宝会带上开票申请在支付宝生成的申请id，机构在回传发票的时候只需要回传这个申请id，不用获取用户的uid，支付宝可以根据申请id将发票归集到对应的用户名下
@@ -123,6 +123,12 @@ FINANCIAL_ELECTRONIC_BILL:财政电子票据;
 	 */
 	@ApiField("invoice_type")
 	private String invoiceType;
+
+	/**
+	 * 支付宝用户userId，当发送红字发票时，即invoice_type＝RED时，可选填；或者apply_id不为空的时候，可选填；其他情况必填。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 红票情况下，必须填入原始蓝票的发票代码。
@@ -320,6 +326,13 @@ FINANCIAL_ELECTRONIC_BILL:财政电子票据;
 	}
 	public void setInvoiceType(String invoiceType) {
 		this.invoiceType = invoiceType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOriBlueInvCode() {

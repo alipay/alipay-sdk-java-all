@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出账机构接口输出参数列表 ChargeInstResult{ List<ChargeInstMode>}对象
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:57:45
  */
 public class ChargeInstMode extends AlipayObject {
 
-	private static final long serialVersionUID = 4448847857672956275L;
+	private static final long serialVersionUID = 6875284642332261261L;
 
 	/**
 	 * 机构简称(英文名称)

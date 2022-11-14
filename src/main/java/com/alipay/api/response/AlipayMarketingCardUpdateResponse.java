@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.update response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-17 11:15:13
+ * @since 1.0, 2022-11-08 21:27:53
  */
 public class AlipayMarketingCardUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2625578983479773721L;
+	private static final long serialVersionUID = 8667521445133793116L;
 
 	/** 
 	 * 二级错误处理结果（如果公用返回结果为false，则可以看这个接口判断明细原因）

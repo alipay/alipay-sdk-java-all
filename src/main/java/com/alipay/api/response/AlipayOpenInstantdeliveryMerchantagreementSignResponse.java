@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenInstantdeliveryMerchantagreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7331416319421435679L;
+	private static final long serialVersionUID = 6621879699712954297L;
 
 	/** 
 	 * 授权二维码的url, 必须用传入的uid进行扫码

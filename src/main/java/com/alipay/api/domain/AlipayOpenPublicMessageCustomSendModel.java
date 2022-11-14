@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 异步单发消息
  *
  * @author auto create
- * @since 1.0, 2022-08-19 11:32:31
+ * @since 1.0, 2022-11-14 11:31:34
  */
 public class AlipayOpenPublicMessageCustomSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2595512375861323714L;
+	private static final long serialVersionUID = 4766392885569415247L;
 
 	/**
 	 * msg_type为image-text，本参数必填。

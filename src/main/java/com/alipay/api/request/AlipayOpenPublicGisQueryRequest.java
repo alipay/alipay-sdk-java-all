@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.gis.query request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:06:28
+ * @since 1.0, 2022-11-14 11:26:49
  */
 public class AlipayOpenPublicGisQueryRequest implements AlipayRequest<AlipayOpenPublicGisQueryResponse> {
 

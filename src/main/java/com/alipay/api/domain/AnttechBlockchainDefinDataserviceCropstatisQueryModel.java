@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 农作物汇总信息查询
  *
  * @author auto create
- * @since 1.0, 2022-11-02 17:31:52
+ * @since 1.0, 2022-11-14 13:32:15
  */
 public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6786944893882336742L;
+	private static final long serialVersionUID = 6573643144562232231L;
 
 	/**
 	 * 作物编码条件汇总
@@ -39,6 +39,30 @@ public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends Alipa
 	 */
 	@ApiField("is_harvested")
 	private Boolean isHarvested;
+
+	/**
+	 * 是否高温风险
+	 */
+	@ApiField("is_high_temperature_risk")
+	private Boolean isHighTemperatureRisk;
+
+	/**
+	 * 是否低温风险
+	 */
+	@ApiField("is_low_temperature_risk")
+	private Boolean isLowTemperatureRisk;
+
+	/**
+	 * 是否暴雨风险
+	 */
+	@ApiField("is_rainstorm_risk")
+	private Boolean isRainstormRisk;
+
+	/**
+	 * 是否墒情风险
+	 */
+	@ApiField("is_soil_moisture_risk")
+	private Boolean isSoilMoistureRisk;
 
 	/**
 	 * 当为true时，返回每个作物类型对应的地块编码列表。考虑到性能，不必要时建议设置为false。
@@ -85,6 +109,34 @@ public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends Alipa
 	}
 	public void setIsHarvested(Boolean isHarvested) {
 		this.isHarvested = isHarvested;
+	}
+
+	public Boolean getIsHighTemperatureRisk() {
+		return this.isHighTemperatureRisk;
+	}
+	public void setIsHighTemperatureRisk(Boolean isHighTemperatureRisk) {
+		this.isHighTemperatureRisk = isHighTemperatureRisk;
+	}
+
+	public Boolean getIsLowTemperatureRisk() {
+		return this.isLowTemperatureRisk;
+	}
+	public void setIsLowTemperatureRisk(Boolean isLowTemperatureRisk) {
+		this.isLowTemperatureRisk = isLowTemperatureRisk;
+	}
+
+	public Boolean getIsRainstormRisk() {
+		return this.isRainstormRisk;
+	}
+	public void setIsRainstormRisk(Boolean isRainstormRisk) {
+		this.isRainstormRisk = isRainstormRisk;
+	}
+
+	public Boolean getIsSoilMoistureRisk() {
+		return this.isSoilMoistureRisk;
+	}
+	public void setIsSoilMoistureRisk(Boolean isSoilMoistureRisk) {
+		this.isSoilMoistureRisk = isSoilMoistureRisk;
 	}
 
 	public Boolean getNeedRegionCodes() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户的机构配置信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:57:46
  */
 public class MerchantInstConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 7693918639717359695L;
+	private static final long serialVersionUID = 2855897312214945695L;
 
 	/**
 	 * 机构短名称，既是合作机构的英文简称，用来标识该机构的唯一性；

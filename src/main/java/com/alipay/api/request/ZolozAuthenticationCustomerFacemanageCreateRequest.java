@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.authentication.customer.facemanage.create request
  * 
  * @author auto create
- * @since 1.0, 2022-10-20 10:33:12
+ * @since 1.0, 2022-11-10 09:57:04
  */
 public class ZolozAuthenticationCustomerFacemanageCreateRequest implements AlipayRequest<ZolozAuthenticationCustomerFacemanageCreateResponse> {
 

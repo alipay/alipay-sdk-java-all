@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 品牌额度查询条件
  *
  * @author auto create
- * @since 1.0, 2022-04-18 15:41:39
+ * @since 1.0, 2022-11-10 17:23:02
  */
 public class BrandQuotaQueryCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 6396226573812656479L;
+	private static final long serialVersionUID = 6251879997437483795L;
 
 	/**
 	 * 是否查询可使用商家列表,true时不用填seller信息,false时必填seller信息

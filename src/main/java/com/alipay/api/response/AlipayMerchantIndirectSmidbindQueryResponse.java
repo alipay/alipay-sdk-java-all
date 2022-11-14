@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantIndirectSmidbindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4521463448591381581L;
+	private static final long serialVersionUID = 8622978563268795857L;
 
 	/** 
 	 * 确认状态，枚举：已确认（AUTHORIZED）/未确认（UNAUTHORIZED）/已销户（CLOSED）/smid不存在（SMID_NOT_EXIST）

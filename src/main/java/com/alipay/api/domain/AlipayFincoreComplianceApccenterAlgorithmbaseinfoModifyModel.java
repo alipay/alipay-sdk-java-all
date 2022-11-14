@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 算法档案修改基本信息
  *
  * @author auto create
- * @since 1.0, 2022-03-25 14:46:30
+ * @since 1.0, 2022-11-10 17:13:04
  */
 public class AlipayFincoreComplianceApccenterAlgorithmbaseinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1438588783757677977L;
+	private static final long serialVersionUID = 8683312371342463526L;
 
 	/**
 	 * 平台算法唯一编码

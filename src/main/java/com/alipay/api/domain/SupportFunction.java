@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支持的功能
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:37
+ * @since 1.0, 2022-11-09 17:57:48
  */
 public class SupportFunction extends AlipayObject {
 
-	private static final long serialVersionUID = 3366284468226696234L;
+	private static final long serialVersionUID = 8761566868274859494L;
 
 	/**
 	 * 卡名称

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业信用统一预测接口
  *
  * @author auto create
- * @since 1.0, 2022-09-28 09:55:44
+ * @since 1.0, 2022-11-11 12:54:03
  */
 public class ZhimaOpenAppModelpredictQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4285266482748488644L;
+	private static final long serialVersionUID = 7145942977868564523L;
 
 	/**
 	 * 模型标识，具体走哪个预测平台及模型

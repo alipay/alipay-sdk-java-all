@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbTicketUseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2416511996416559327L;
+	private static final long serialVersionUID = 8439725143533244515L;
 
 	/**
 	 * 用户购买券的时候实际支付的金额，单位为元，精确到小数点后两位

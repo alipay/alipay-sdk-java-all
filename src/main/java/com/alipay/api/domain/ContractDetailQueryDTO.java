@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合同详情
  *
  * @author auto create
- * @since 1.0, 2022-01-07 10:42:51
+ * @since 1.0, 2022-11-09 16:04:05
  */
 public class ContractDetailQueryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2576338424278885892L;
+	private static final long serialVersionUID = 4126658118835218399L;
 
 	/**
 	 * 合同金额

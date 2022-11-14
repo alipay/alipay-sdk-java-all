@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蓝牙设备信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2022-11-09 17:57:44
  */
 public class BeaconDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3495652352144343799L;
+	private static final long serialVersionUID = 8597838511616836228L;
 
 	/**
 	 * 设备类型

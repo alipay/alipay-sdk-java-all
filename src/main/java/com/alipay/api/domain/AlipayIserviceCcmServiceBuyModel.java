@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租户开通isv服务接口
  *
  * @author auto create
- * @since 1.0, 2020-10-19 16:45:21
+ * @since 1.0, 2022-11-09 11:18:41
  */
 public class AlipayIserviceCcmServiceBuyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1284189332152954316L;
+	private static final long serialVersionUID = 5446811853243184964L;
 
 	/**
 	 * 服务代码。通过<a href="https://opendocs.alipay.com/apis/01dmgh">alipay.iservice.ccm.service.initialize</a>(isv服务初始化接口) 获取。

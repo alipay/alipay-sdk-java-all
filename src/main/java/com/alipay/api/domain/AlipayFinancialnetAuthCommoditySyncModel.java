@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 金融资源场景商品等数据同步
  *
  * @author auto create
- * @since 1.0, 2021-01-15 11:33:14
+ * @since 1.0, 2022-11-14 13:19:15
  */
 public class AlipayFinancialnetAuthCommoditySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1712395819893749153L;
+	private static final long serialVersionUID = 4459519359929997229L;
 
 	/**
 	 * 同步商品信息

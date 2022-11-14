@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开票规则信息
  *
  * @author auto create
- * @since 1.0, 2022-06-13 11:55:53
+ * @since 1.0, 2022-11-11 14:13:58
  */
 public class EnterpriseOpenRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3479852726113862577L;
+	private static final long serialVersionUID = 7211317482285944627L;
+
+	/**
+	 * 企业ID
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 当前生效和下次生效的开票规则记录
@@ -56,7 +62,7 @@ public class EnterpriseOpenRuleInfo extends AlipayObject {
 	private String invoiceRuleName;
 
 	/**
-	 * 所有者id（企业情况下=enterpriseId）
+	 * 原企业共同账户ID（不推荐使用）
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
@@ -67,6 +73,13 @@ public class EnterpriseOpenRuleInfo extends AlipayObject {
 	 */
 	@ApiField("seller_type")
 	private String sellerType;
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
+	}
 
 	public List<EnterpriseOpenRuleRecordInfo> getEnterpriseOpenRuleRecordInfoList() {
 		return this.enterpriseOpenRuleRecordInfoList;

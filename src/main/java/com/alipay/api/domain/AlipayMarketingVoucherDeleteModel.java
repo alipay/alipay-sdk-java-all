@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作废票
  *
  * @author auto create
- * @since 1.0, 2022-10-26 11:57:28
+ * @since 1.0, 2022-11-13 19:46:16
  */
 public class AlipayMarketingVoucherDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6537191641454216789L;
+	private static final long serialVersionUID = 4875988669265135357L;
+
+	/**
+	 * 支付宝用户的openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部唯一业务号，用于做幂等控制
@@ -30,6 +36,13 @@ public class AlipayMarketingVoucherDeleteModel extends AlipayObject {
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOutBizNo() {
 		return this.outBizNo;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanCollateralCarQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6194871816346256973L;
+	private static final long serialVersionUID = 2485182862257582293L;
 
 	/** 
 	 * 用户常住地，参考标准的行政区域编号（http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/），如：

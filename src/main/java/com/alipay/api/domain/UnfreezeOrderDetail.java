@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 冻结订单详情
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:37
+ * @since 1.0, 2022-11-09 17:57:48
  */
 public class UnfreezeOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2791518169153732247L;
+	private static final long serialVersionUID = 4778826116141944144L;
 
 	/**
 	 * 支付宝订单号
