@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 经营参谋数据报表处理器
  *
  * @author auto create
- * @since 1.0, 2022-09-26 16:16:33
+ * @since 1.0, 2022-11-22 15:14:43
  */
 public class KoubeiMarketingDataBizadviserMyreportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1377724762221569316L;
+	private static final long serialVersionUID = 2543984491184114375L;
 
 	/**
 	 * 非必须参数，uniq_key不同，参数也不同：

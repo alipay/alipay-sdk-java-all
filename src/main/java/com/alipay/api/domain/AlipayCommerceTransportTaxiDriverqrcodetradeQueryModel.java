@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车司机线下收钱码交易查询
  *
  * @author auto create
- * @since 1.0, 2022-10-17 11:37:55
+ * @since 1.0, 2022-11-23 14:17:50
  */
 public class AlipayCommerceTransportTaxiDriverqrcodetradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1545782143435169189L;
+	private static final long serialVersionUID = 5723277467796376684L;
 
 	/**
 	 * 交易开始时间
 	 */
 	@ApiField("begin_time")
 	private String beginTime;
+
+	/**
+	 * 支付宝open_id
+	 */
+	@ApiField("driver_open_id")
+	private String driverOpenId;
 
 	/**
 	 * 支付宝uid
@@ -36,6 +42,13 @@ public class AlipayCommerceTransportTaxiDriverqrcodetradeQueryModel extends Alip
 	}
 	public void setBeginTime(String beginTime) {
 		this.beginTime = beginTime;
+	}
+
+	public String getDriverOpenId() {
+		return this.driverOpenId;
+	}
+	public void setDriverOpenId(String driverOpenId) {
+		this.driverOpenId = driverOpenId;
 	}
 
 	public String getDriverUserId() {

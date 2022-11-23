@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InteligentDataCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 6384529691898656499L;
+	private static final long serialVersionUID = 1865147861275737773L;
 
 	/**
 	 * 数据类型，支持枚举：文本：STRING；数值：NUMBER；长整型：LONG；浮点型：DOUBLE；日期：DATE；布尔：BOOLEAN；金额：MONEY

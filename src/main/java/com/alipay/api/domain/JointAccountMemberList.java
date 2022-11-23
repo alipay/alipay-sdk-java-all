@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工列表
  *
  * @author auto create
- * @since 1.0, 2021-01-25 21:35:01
+ * @since 1.0, 2022-11-22 14:06:02
  */
 public class JointAccountMemberList extends AlipayObject {
 
-	private static final long serialVersionUID = 2769361733657886858L;
+	private static final long serialVersionUID = 8428811586724615783L;
 
 	/**
 	 * 额度模型

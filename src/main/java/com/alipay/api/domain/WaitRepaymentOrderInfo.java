@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 待还订单信息
  *
  * @author auto create
- * @since 1.0, 2019-05-27 19:53:16
+ * @since 1.0, 2022-11-18 14:14:17
  */
 public class WaitRepaymentOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8226781851745615726L;
+	private static final long serialVersionUID = 1738349197325455128L;
 
 	/**
 	 * 垫资单id
@@ -30,6 +30,12 @@ public class WaitRepaymentOrderInfo extends AlipayObject {
 	 */
 	@ApiField("biz_product")
 	private String bizProduct;
+
+	/**
+	 * 买家的支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 原始的业务单号，通常为支付宝交易号
@@ -62,6 +68,13 @@ public class WaitRepaymentOrderInfo extends AlipayObject {
 	}
 	public void setBizProduct(String bizProduct) {
 		this.bizProduct = bizProduct;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrigBizOrderId() {

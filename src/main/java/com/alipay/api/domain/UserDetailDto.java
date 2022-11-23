@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户信息模型
  *
  * @author auto create
- * @since 1.0, 2022-02-08 17:11:03
+ * @since 1.0, 2022-11-23 14:40:43
  */
 public class UserDetailDto extends AlipayObject {
 
-	private static final long serialVersionUID = 1758553775223651976L;
+	private static final long serialVersionUID = 8679944466613335259L;
+
+	/**
+	 * 开通人绑定的支付宝openId
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝学校内标
@@ -42,6 +48,13 @@ public class UserDetailDto extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipaySchoolId() {
 		return this.alipaySchoolId;

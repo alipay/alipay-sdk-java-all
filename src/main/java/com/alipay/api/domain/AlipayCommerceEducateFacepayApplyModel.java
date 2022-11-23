@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸开通支付申请
  *
  * @author auto create
- * @since 1.0, 2022-09-29 16:47:54
+ * @since 1.0, 2022-11-17 14:54:13
  */
 public class AlipayCommerceEducateFacepayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1741173891733274665L;
+	private static final long serialVersionUID = 7323131168732594876L;
 
 	/**
 	 * 扩展信息, json格式. 例如, 对不使用银行代扣, 可以传入{"useBankChannel":"NO"}；
@@ -20,6 +20,12 @@ public class AlipayCommerceEducateFacepayApplyModel extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 刷脸用户openId
+	 */
+	@ApiField("face_open_id")
+	private String faceOpenId;
 
 	/**
 	 * 刷脸用户id
@@ -46,6 +52,13 @@ COLLEGE  --  高校场景
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getFaceOpenId() {
+		return this.faceOpenId;
+	}
+	public void setFaceOpenId(String faceOpenId) {
+		this.faceOpenId = faceOpenId;
 	}
 
 	public String getFaceUid() {

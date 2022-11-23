@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员充值余额查询
  *
  * @author auto create
- * @since 1.0, 2021-08-18 10:15:59
+ * @since 1.0, 2022-11-18 17:25:52
  */
 public class AlipayMerchantPayforprivilegeMemberremainingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4632863641432979186L;
+	private static final long serialVersionUID = 2279552797723285568L;
 
 	/**
 	 * 该字段已废弃，请通过user_id查询
 	 */
 	@ApiField("member_id")
 	private String memberId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -30,6 +36,13 @@ public class AlipayMerchantPayforprivilegeMemberremainingQueryModel extends Alip
 	}
 	public void setMemberId(String memberId) {
 		this.memberId = memberId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

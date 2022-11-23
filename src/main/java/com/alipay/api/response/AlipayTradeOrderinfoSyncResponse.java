@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.orderinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-17 19:41:03
+ * @since 1.0, 2022-11-21 20:06:37
  */
 public class AlipayTradeOrderinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6239351659423776843L;
+	private static final long serialVersionUID = 5665135743597127376L;
+
+	/** 
+	 * 买家支付宝用户唯一标识
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/** 
 	 * 买家在支付宝的用户id
@@ -31,6 +37,13 @@ public class AlipayTradeOrderinfoSyncResponse extends AlipayResponse {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
+	}
+	public String getBuyerOpenId( ) {
+		return this.buyerOpenId;
+	}
 
 	public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;

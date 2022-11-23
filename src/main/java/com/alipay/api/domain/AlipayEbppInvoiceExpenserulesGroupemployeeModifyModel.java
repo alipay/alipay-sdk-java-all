@@ -10,25 +10,34 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改规则员工关系
  *
  * @author auto create
- * @since 1.0, 2022-08-18 15:34:56
+ * @since 1.0, 2022-11-18 23:34:16
  */
 public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7635743531895285354L;
+	private static final long serialVersionUID = 8297573924588692597L;
 
 	/**
-	 * 企业ID
+	 * 企业共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 需要添加的员工UID列表
+	 * 未切换 open_id 时请使用此字段：
+需要添加的员工UID列表
 特殊说明：一次最多50个
 	 */
 	@ApiListField("add_employee_list")
 	@ApiField("string")
 	private List<String> addEmployeeList;
+
+	/**
+	 * 切换 open_id 后请使用此字段：
+需要添加的open_id/企业码员工ID列表 特殊说明：一次最多50个
+	 */
+	@ApiListField("add_employee_open_id_list")
+	@ApiField("string")
+	private List<String> addEmployeeOpenIdList;
 
 	/**
 	 * 授权签约协议号
@@ -50,12 +59,21 @@ public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends Alipa
 	private List<String> groupIdList;
 
 	/**
-	 * 需要移除的员工UID列表
+	 * 未切换 open_id 时请使用此字段：
+需要移除的员工UID列表
 特殊说明：一次最多50个
 	 */
 	@ApiListField("remove_employee_list")
 	@ApiField("string")
 	private List<String> removeEmployeeList;
+
+	/**
+	 * 切换 open_id 后请使用此字段：
+需要移除的open_id/企业码员工ID列表 特殊说明：一次最多50个
+	 */
+	@ApiListField("remove_employee_open_id_list")
+	@ApiField("string")
+	private List<String> removeEmployeeOpenIdList;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -69,6 +87,13 @@ public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends Alipa
 	}
 	public void setAddEmployeeList(List<String> addEmployeeList) {
 		this.addEmployeeList = addEmployeeList;
+	}
+
+	public List<String> getAddEmployeeOpenIdList() {
+		return this.addEmployeeOpenIdList;
+	}
+	public void setAddEmployeeOpenIdList(List<String> addEmployeeOpenIdList) {
+		this.addEmployeeOpenIdList = addEmployeeOpenIdList;
 	}
 
 	public String getAgreementNo() {
@@ -97,6 +122,13 @@ public class AlipayEbppInvoiceExpenserulesGroupemployeeModifyModel extends Alipa
 	}
 	public void setRemoveEmployeeList(List<String> removeEmployeeList) {
 		this.removeEmployeeList = removeEmployeeList;
+	}
+
+	public List<String> getRemoveEmployeeOpenIdList() {
+		return this.removeEmployeeOpenIdList;
+	}
+	public void setRemoveEmployeeOpenIdList(List<String> removeEmployeeOpenIdList) {
+		this.removeEmployeeOpenIdList = removeEmployeeOpenIdList;
 	}
 
 }

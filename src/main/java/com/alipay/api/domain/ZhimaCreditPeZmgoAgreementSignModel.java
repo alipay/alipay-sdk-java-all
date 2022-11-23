@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO协议签约
  *
  * @author auto create
- * @since 1.0, 2021-10-15 17:34:15
+ * @since 1.0, 2022-11-16 17:54:39
  */
 public class ZhimaCreditPeZmgoAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5528137448222762515L;
+	private static final long serialVersionUID = 7426918827494656358L;
 
 	/**
 	 * 支付宝用户ID
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户ID
@@ -36,6 +42,13 @@ public class ZhimaCreditPeZmgoAgreementSignModel extends AlipayObject {
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPartnerId() {

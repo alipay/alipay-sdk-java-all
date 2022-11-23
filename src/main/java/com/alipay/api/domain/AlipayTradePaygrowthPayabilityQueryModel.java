@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户支付宝账户支付能力
  *
  * @author auto create
- * @since 1.0, 2022-11-04 16:44:51
+ * @since 1.0, 2022-11-21 20:23:49
  */
 public class AlipayTradePaygrowthPayabilityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2576521652518682123L;
+	private static final long serialVersionUID = 5351778978765684227L;
 
 	/**
 	 * 业务标识，用于支付场景，需要根据具体的支付类型传值。
 	 */
 	@ApiField("biz_identity")
 	private String bizIdentity;
+
+	/**
+	 * 支付宝openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 实际支付金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]
@@ -42,6 +48,13 @@ public class AlipayTradePaygrowthPayabilityQueryModel extends AlipayObject {
 	}
 	public void setBizIdentity(String bizIdentity) {
 		this.bizIdentity = bizIdentity;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRealPayAmount() {

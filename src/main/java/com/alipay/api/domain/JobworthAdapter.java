@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证信息匹配度查询条件
  *
  * @author auto create
- * @since 1.0, 2021-06-25 11:13:16
+ * @since 1.0, 2022-11-15 14:47:14
  */
 public class JobworthAdapter extends AlipayObject {
 
-	private static final long serialVersionUID = 2311635768181525745L;
+	private static final long serialVersionUID = 1639437411752331553L;
 
 	/**
 	 * 两个数字 使用英文逗号隔开，-1代表没要求。eg:18,35表示18岁到35岁，-1,40表示40岁以下

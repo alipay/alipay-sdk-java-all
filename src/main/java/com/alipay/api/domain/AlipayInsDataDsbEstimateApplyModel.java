@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 定损宝提交车险图像定损请求
  *
  * @author auto create
- * @since 1.0, 2021-03-08 11:21:21
+ * @since 1.0, 2022-11-21 15:16:57
  */
 public class AlipayInsDataDsbEstimateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2752981936243538567L;
+	private static final long serialVersionUID = 1879434164758512666L;
 
 	/**
 	 * 事发地区编码，取值参考提供的统一编码标准文档

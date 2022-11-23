@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 城服消息实体类型
  *
  * @author auto create
- * @since 1.0, 2022-10-14 12:13:17
+ * @since 1.0, 2022-11-17 22:31:41
  */
 public class AlipayEcoMessageEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 7428363268648525863L;
+	private static final long serialVersionUID = 8148973633253332163L;
 
 	/**
 	 * (certificate_type/certificate_number/用户名字) 或者 alipay_user_id  必须有一个不为空。两个都不为空则以alipay_user_id为准
@@ -75,6 +75,12 @@ public class AlipayEcoMessageEntity extends AlipayObject {
 	 */
 	@ApiField("msg_type")
 	private Long msgType;
+
+	/**
+	 * (certificate_type/certificate_number/用户名字) 或者 open_id  必须有一个不为空。两个都不为空则以open_id为准
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 消息跳转url
@@ -156,6 +162,13 @@ public class AlipayEcoMessageEntity extends AlipayObject {
 	}
 	public void setMsgType(Long msgType) {
 		this.msgType = msgType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getTargetUrl() {

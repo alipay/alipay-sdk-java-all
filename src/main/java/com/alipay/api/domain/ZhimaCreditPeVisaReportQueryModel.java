@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用签证报告获取接口
  *
  * @author auto create
- * @since 1.0, 2021-11-30 19:46:46
+ * @since 1.0, 2022-11-16 16:17:50
  */
 public class ZhimaCreditPeVisaReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6114737772619295439L;
+	private static final long serialVersionUID = 3831419875676495864L;
 
 	/**
 	 * 接口是否要返回报告文件
 	 */
 	@ApiField("include_file")
 	private Boolean includeFile;
+
+	/**
+	 * 用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 申请场景，报告申请国家
@@ -36,6 +42,13 @@ public class ZhimaCreditPeVisaReportQueryModel extends AlipayObject {
 	}
 	public void setIncludeFile(Boolean includeFile) {
 		this.includeFile = includeFile;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneCode() {

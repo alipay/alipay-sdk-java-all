@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.RefundChargeInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.PresetPayToolInfo;
 
@@ -13,17 +14,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 16:03:07
+ * @since 1.0, 2022-11-21 20:06:38
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2116944646266895836L;
+	private static final long serialVersionUID = 3581888215227763745L;
 
 	/** 
 	 * 用户的登录id
 	 */
 	@ApiField("buyer_logon_id")
 	private String buyerLogonId;
+
+	/** 
+	 * 买家支付宝用户唯一标识
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/** 
 	 * 买家在支付宝的用户id
@@ -90,6 +97,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private String refundChargeAmount;
 
 	/** 
+	 * 退费信息
+	 */
+	@ApiListField("refund_charge_info_list")
+	@ApiField("refund_charge_info")
+	private List<RefundChargeInfo> refundChargeInfoList;
+
+	/** 
 	 * 退款币种信息
 	 */
 	@ApiField("refund_currency")
@@ -153,6 +167,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	}
 	public String getBuyerLogonId( ) {
 		return this.buyerLogonId;
+	}
+
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
+	}
+	public String getBuyerOpenId( ) {
+		return this.buyerOpenId;
 	}
 
 	public void setBuyerUserId(String buyerUserId) {
@@ -223,6 +244,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	}
 	public String getRefundChargeAmount( ) {
 		return this.refundChargeAmount;
+	}
+
+	public void setRefundChargeInfoList(List<RefundChargeInfo> refundChargeInfoList) {
+		this.refundChargeInfoList = refundChargeInfoList;
+	}
+	public List<RefundChargeInfo> getRefundChargeInfoList( ) {
+		return this.refundChargeInfoList;
 	}
 
 	public void setRefundCurrency(String refundCurrency) {

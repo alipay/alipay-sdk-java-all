@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.servicemarket.order.reject response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-09 00:39:06
+ * @since 1.0, 2022-11-23 11:42:01
  */
 public class AlipayOpenServicemarketOrderRejectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3789565174178817662L;
+	private static final long serialVersionUID = 2615612657318841747L;
 
 	
 

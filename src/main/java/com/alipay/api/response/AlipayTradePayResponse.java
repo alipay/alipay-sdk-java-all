@@ -5,6 +5,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.BkAgentRespInfo;
+import com.alipay.api.domain.ChargeInfo;
 import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.VoucherDetail;
@@ -15,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-11 14:26:37
+ * @since 1.0, 2022-11-23 00:21:34
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8753943991756961531L;
+	private static final long serialVersionUID = 5399347837545349828L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -63,6 +64,12 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	 */
 	@ApiField("buyer_logon_id")
 	private String buyerLogonId;
+
+	/** 
+	 * 买家支付宝用户唯一标识
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/** 
 	 * 买家付款的金额
@@ -122,6 +129,12 @@ bluesea_1：蓝海活动优惠费率标签；
 	 */
 	@ApiField("charge_flags")
 	private String chargeFlags;
+
+	/** 
+	 * 计费信息列表
+	 */
+	@ApiField("charge_info_list")
+	private ChargeInfo chargeInfoList;
 
 	/** 
 	 * 信用业务单号。信用支付场景才有值。先用后付产品里是芝麻订单号。
@@ -333,6 +346,13 @@ bluesea_1：蓝海活动优惠费率标签；
 		return this.buyerLogonId;
 	}
 
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
+	}
+	public String getBuyerOpenId( ) {
+		return this.buyerOpenId;
+	}
+
 	public void setBuyerPayAmount(String buyerPayAmount) {
 		this.buyerPayAmount = buyerPayAmount;
 	}
@@ -387,6 +407,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	}
 	public String getChargeFlags( ) {
 		return this.chargeFlags;
+	}
+
+	public void setChargeInfoList(ChargeInfo chargeInfoList) {
+		this.chargeInfoList = chargeInfoList;
+	}
+	public ChargeInfo getChargeInfoList( ) {
+		return this.chargeInfoList;
 	}
 
 	public void setCreditBizOrderId(String creditBizOrderId) {

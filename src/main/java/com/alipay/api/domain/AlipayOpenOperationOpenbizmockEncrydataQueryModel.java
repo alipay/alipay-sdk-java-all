@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试专用_此接口类型为强制加密接口
  *
  * @author auto create
- * @since 1.0, 2022-10-10 18:36:21
+ * @since 1.0, 2022-11-21 14:26:33
  */
 public class AlipayOpenOperationOpenbizmockEncrydataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5815952621658594745L;
+	private static final long serialVersionUID = 3276246256669489737L;
 
 	/**
 	 * 测试

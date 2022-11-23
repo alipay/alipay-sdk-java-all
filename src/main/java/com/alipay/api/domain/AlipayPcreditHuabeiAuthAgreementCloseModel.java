@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享会员协议关闭接口
  *
  * @author auto create
- * @since 1.0, 2019-11-22 11:56:59
+ * @since 1.0, 2022-11-16 19:32:13
  */
 public class AlipayPcreditHuabeiAuthAgreementCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7873414923397844258L;
+	private static final long serialVersionUID = 6522366485243625372L;
 
 	/**
 	 * 花芝协议号，支付宝系统中用以唯一标识用户签约记录的编号，即花芝协议号。
@@ -24,6 +24,12 @@ public class AlipayPcreditHuabeiAuthAgreementCloseModel extends AlipayObject {
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 买家在支付宝的用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部请求号
@@ -55,6 +61,13 @@ public class AlipayPcreditHuabeiAuthAgreementCloseModel extends AlipayObject {
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutRequestNo() {

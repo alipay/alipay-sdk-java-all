@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡实例列表查询
  *
  * @author auto create
- * @since 1.0, 2022-09-27 17:26:56
+ * @since 1.0, 2022-11-19 13:55:13
  */
 public class AlipayCommerceOperationTimescardInstanceBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8428387884281215834L;
+	private static final long serialVersionUID = 5833613518479297271L;
 
 	/**
 	 * 字段已废弃，无需传参
 	 */
 	@ApiField("isv_partner_id")
 	private String isvPartnerId;
+
+	/**
+	 * 用户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 页码
@@ -60,6 +66,13 @@ public class AlipayCommerceOperationTimescardInstanceBatchqueryModel extends Ali
 	}
 	public void setIsvPartnerId(String isvPartnerId) {
 		this.isvPartnerId = isvPartnerId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPageNum() {

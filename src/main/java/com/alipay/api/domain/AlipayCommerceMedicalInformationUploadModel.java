@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业挂号报备接口
  *
  * @author auto create
- * @since 1.0, 2022-02-17 14:08:37
+ * @since 1.0, 2022-11-14 19:13:14
  */
 public class AlipayCommerceMedicalInformationUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8728616122365283355L;
+	private static final long serialVersionUID = 1139875193563722449L;
 
 	/**
 	 * 支付授权码
@@ -84,6 +84,12 @@ public class AlipayCommerceMedicalInformationUploadModel extends AlipayObject {
 	 */
 	@ApiField("medical_card_inst_id")
 	private String medicalCardInstId;
+
+	/**
+	 * 买家id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 医疗机构名称
@@ -232,6 +238,13 @@ public class AlipayCommerceMedicalInformationUploadModel extends AlipayObject {
 	}
 	public void setMedicalCardInstId(String medicalCardInstId) {
 		this.medicalCardInstId = medicalCardInstId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrgName() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 司机信息变更接口
  *
  * @author auto create
- * @since 1.0, 2022-10-17 11:36:35
+ * @since 1.0, 2022-11-22 14:21:14
  */
 public class AlipayCommerceTransportTaxiDriverinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1852683715543478836L;
+	private static final long serialVersionUID = 7849284319133821132L;
 
 	/**
 	 * 流水号
@@ -24,6 +24,12 @@ public class AlipayCommerceTransportTaxiDriverinfoModifyModel extends AlipayObje
 	 */
 	@ApiField("driver_car_info")
 	private DriverCarInfo driverCarInfo;
+
+	/**
+	 * 司机open_id
+	 */
+	@ApiField("driver_open_id")
+	private String driverOpenId;
 
 	/**
 	 * 司机uid
@@ -49,6 +55,13 @@ public class AlipayCommerceTransportTaxiDriverinfoModifyModel extends AlipayObje
 	}
 	public void setDriverCarInfo(DriverCarInfo driverCarInfo) {
 		this.driverCarInfo = driverCarInfo;
+	}
+
+	public String getDriverOpenId() {
+		return this.driverOpenId;
+	}
+	public void setDriverOpenId(String driverOpenId) {
+		this.driverOpenId = driverOpenId;
 	}
 
 	public String getDriverUserId() {

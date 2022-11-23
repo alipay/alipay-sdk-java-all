@@ -5,6 +5,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.BkAgentRespInfo;
+import com.alipay.api.domain.ChargeInfo;
 import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.HbFqPayInfo;
@@ -17,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-17 10:36:54
+ * @since 1.0, 2022-11-23 00:21:34
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5362891278754454169L;
+	private static final long serialVersionUID = 8292412553634956135L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -61,6 +62,12 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("buyer_logon_id")
 	private String buyerLogonId;
+
+	/** 
+	 * 买家支付宝用户唯一标识
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/** 
 	 * 买家实付金额，单位为元，两位小数。该金额代表该笔交易买家实际支付的金额，不包含商户折扣等金额
@@ -108,6 +115,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	 */
 	@ApiField("charge_flags")
 	private String chargeFlags;
+
+	/** 
+	 * 计费信息列表
+	 */
+	@ApiListField("charge_info_list")
+	@ApiField("charge_info")
+	private List<ChargeInfo> chargeInfoList;
 
 	/** 
 	 * 信用业务单号。信用支付场景才有值，先用后付产品里是芝麻订单号。
@@ -390,6 +404,13 @@ json格式。
 		return this.buyerLogonId;
 	}
 
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
+	}
+	public String getBuyerOpenId( ) {
+		return this.buyerOpenId;
+	}
+
 	public void setBuyerPayAmount(String buyerPayAmount) {
 		this.buyerPayAmount = buyerPayAmount;
 	}
@@ -430,6 +451,13 @@ json格式。
 	}
 	public String getChargeFlags( ) {
 		return this.chargeFlags;
+	}
+
+	public void setChargeInfoList(List<ChargeInfo> chargeInfoList) {
+		this.chargeInfoList = chargeInfoList;
+	}
+	public List<ChargeInfo> getChargeInfoList( ) {
+		return this.chargeInfoList;
 	}
 
 	public void setCreditBizOrderId(String creditBizOrderId) {

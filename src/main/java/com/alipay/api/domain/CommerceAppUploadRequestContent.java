@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租户应用服务数据
  *
  * @author auto create
- * @since 1.0, 2021-07-02 15:22:35
+ * @since 1.0, 2022-11-17 20:49:02
  */
 public class CommerceAppUploadRequestContent extends AlipayObject {
 
-	private static final long serialVersionUID = 6614362671788272514L;
+	private static final long serialVersionUID = 4742179747537158567L;
 
 	/**
 	 * 租户应用业务流程ID

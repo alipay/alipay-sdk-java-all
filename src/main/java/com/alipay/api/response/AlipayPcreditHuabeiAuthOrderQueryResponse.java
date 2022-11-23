@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-09 17:23:54
+ * @since 1.0, 2022-11-16 19:41:34
  */
 public class AlipayPcreditHuabeiAuthOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3259766976492495641L;
+	private static final long serialVersionUID = 5192448879142121957L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号。
@@ -38,6 +38,12 @@ public class AlipayPcreditHuabeiAuthOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("gmt_trans")
 	private Date gmtTrans;
+
+	/** 
+	 * 支付宝用户userId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 商户业务订单的简单描述，如商品名称等，长度不超过100个字母或50个汉字
@@ -107,6 +113,13 @@ public class AlipayPcreditHuabeiAuthOrderQueryResponse extends AlipayResponse {
 	}
 	public Date getGmtTrans( ) {
 		return this.gmtTrans;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrderTitle(String orderTitle) {

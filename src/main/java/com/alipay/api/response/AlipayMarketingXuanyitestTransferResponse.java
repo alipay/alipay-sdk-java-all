@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.xuanyitest.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-16 17:51:48
+ * @since 1.0, 2022-11-16 14:35:36
  */
 public class AlipayMarketingXuanyitestTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7116247767823324739L;
+	private static final long serialVersionUID = 7299555434151864966L;
 
 	/** 
 	 * 12

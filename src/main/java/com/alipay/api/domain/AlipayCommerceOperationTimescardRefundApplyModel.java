@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡退卡申请
  *
  * @author auto create
- * @since 1.0, 2022-09-27 17:30:13
+ * @since 1.0, 2022-11-18 19:58:48
  */
 public class AlipayCommerceOperationTimescardRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7678169576489988134L;
+	private static final long serialVersionUID = 8613454989757719736L;
 
 	/**
 	 * 次卡id
 	 */
 	@ApiField("card_id")
 	private String cardId;
+
+	/**
+	 * 用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景码
@@ -36,6 +42,13 @@ public class AlipayCommerceOperationTimescardRefundApplyModel extends AlipayObje
 	}
 	public void setCardId(String cardId) {
 		this.cardId = cardId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneCode() {

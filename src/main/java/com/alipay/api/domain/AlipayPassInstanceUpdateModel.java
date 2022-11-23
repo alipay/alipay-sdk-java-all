@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass更新卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2022-11-09 17:06:25
+ * @since 1.0, 2022-11-18 16:11:16
  */
 public class AlipayPassInstanceUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5363542623166195243L;
+	private static final long serialVersionUID = 7145736382166834516L;
 
 	/**
 	 * 代理商代替商户发放卡券后，再代替商户更新卡券时，此值为商户的pid/appid
 	 */
 	@ApiField("channel_id")
 	private String channelId;
+
+	/**
+	 * 支付宝用户ID，新接入商户必填，历史已接入商户请尽快补传
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户指定卡券唯一值，卡券JSON模板中fileInfo->serialNumber字段对应的值
@@ -60,6 +66,13 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	}
 	public void setChannelId(String channelId) {
 		this.channelId = channelId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSerialNumber() {

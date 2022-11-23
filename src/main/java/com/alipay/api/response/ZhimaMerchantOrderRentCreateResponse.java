@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.order.rent.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:44:13
+ * @since 1.0, 2022-11-16 12:07:02
  */
 public class ZhimaMerchantOrderRentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4688748864415661288L;
+	private static final long serialVersionUID = 4286554669482892451L;
 
 	/** 
 	 * 是否准入：
@@ -27,6 +27,12 @@ N-不准入
 	 */
 	@ApiField("invoke_state")
 	private String invokeState;
+
+	/** 
+	 * 借用者的open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 芝麻信用借还订单号
@@ -58,6 +64,13 @@ N-不准入
 	}
 	public String getInvokeState( ) {
 		return this.invokeState;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrderNo(String orderNo) {

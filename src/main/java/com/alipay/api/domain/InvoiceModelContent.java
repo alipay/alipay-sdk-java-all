@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票详情模型
  *
  * @author auto create
- * @since 1.0, 2022-11-10 11:05:45
+ * @since 1.0, 2022-11-21 19:56:54
  */
 public class InvoiceModelContent extends AlipayObject {
 
-	private static final long serialVersionUID = 1879348626992539311L;
+	private static final long serialVersionUID = 5657648629327212777L;
 
 	/**
 	 * 支付宝端的申请id。如果在开票过程中，是通过支付宝提交的申请到机构端，支付宝会带上开票申请在支付宝生成的申请id，机构在回传发票的时候只需要回传这个申请id，不用获取用户的uid，支付宝可以根据申请id将发票归集到对应的用户名下
@@ -29,10 +29,9 @@ public class InvoiceModelContent extends AlipayObject {
 	private String extendFields;
 
 	/**
-	 * 下载的发票文件类型
-可选值：
+	 * 下载的发票文件类型，可选值：
 pdf（发票原文件）
-ofd (发票原文件）
+ofd（发票原文件）
 jpg（发票原文件缩略图）
 	 */
 	@ApiField("file_download_type")

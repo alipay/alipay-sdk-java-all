@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息
  *
  * @author auto create
- * @since 1.0, 2022-11-07 09:50:45
+ * @since 1.0, 2022-11-17 16:47:17
  */
 public class EmployeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2363626552349477719L;
+	private static final long serialVersionUID = 8535912712546914783L;
 
 	/**
 	 * 是否激活，可选值：ACTIVATED-已激活；UNACTIVATED-未激活；ACTIVATING-激活中
@@ -70,6 +70,12 @@ public class EmployeeInfoDTO extends AlipayObject {
 	 */
 	@ApiField("mobile")
 	private String mobile;
+
+	/**
+	 * 用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 角色列表，可选值：USER-用户；ADMIM-管理员 SUPER_ADMIN-超级管理员
@@ -145,6 +151,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<String> getRoleList() {

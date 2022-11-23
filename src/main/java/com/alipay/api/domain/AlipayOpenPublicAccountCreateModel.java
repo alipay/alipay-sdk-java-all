@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加绑定商户会员号
  *
  * @author auto create
- * @since 1.0, 2022-11-14 11:25:50
+ * @since 1.0, 2022-11-18 14:09:20
  */
 public class AlipayOpenPublicAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1675275997198758758L;
+	private static final long serialVersionUID = 6555768141277688334L;
 
 	/**
 	 * 账户添加成功，在支付宝与其对应的协议号。如果账户重复添加，接口保证幂等依然视为添加成功，返回此前该账户在支付宝对应的协议号。其他异常该字段不存在。
@@ -36,6 +36,12 @@ public class AlipayOpenPublicAccountCreateModel extends AlipayObject {
 	 */
 	@ApiField("from_user_id")
 	private String fromUserId;
+
+	/**
+	 * 支付宝用户的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 要绑定的商户会员的真实姓名，最长10个汉字
@@ -75,6 +81,13 @@ public class AlipayOpenPublicAccountCreateModel extends AlipayObject {
 	}
 	public void setFromUserId(String fromUserId) {
 		this.fromUserId = fromUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRealName() {

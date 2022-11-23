@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 户号升级接口
  *
  * @author auto create
- * @since 1.0, 2022-11-07 15:58:26
+ * @since 1.0, 2022-11-18 13:49:14
  */
 public class AlipayEbppEbppBillkeyDeductUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3872467935785999568L;
+	private static final long serialVersionUID = 1682634414131552986L;
 
 	/**
 	 * 户号
@@ -36,6 +36,12 @@ public class AlipayEbppEbppBillkeyDeductUpgradeModel extends AlipayObject {
 	 */
 	@ApiField("chargeoff_inst")
 	private String chargeoffInst;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 二级业务参数
@@ -75,6 +81,13 @@ public class AlipayEbppEbppBillkeyDeductUpgradeModel extends AlipayObject {
 	}
 	public void setChargeoffInst(String chargeoffInst) {
 		this.chargeoffInst = chargeoffInst;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSubBizType() {

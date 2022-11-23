@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.member.data.isv.create request
  * 
  * @author auto create
- * @since 1.0, 2022-10-11 11:59:14
+ * @since 1.0, 2022-11-22 15:14:19
  */
 public class KoubeiMemberDataIsvCreateRequest implements AlipayRequest<KoubeiMemberDataIsvCreateResponse> {
 

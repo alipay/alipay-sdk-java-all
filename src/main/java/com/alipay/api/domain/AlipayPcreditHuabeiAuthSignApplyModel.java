@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 轻会员页面签约接口
  *
  * @author auto create
- * @since 1.0, 2022-10-17 11:45:12
+ * @since 1.0, 2022-11-17 16:36:51
  */
 public class AlipayPcreditHuabeiAuthSignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1262524118542758738L;
+	private static final long serialVersionUID = 7699981348823639169L;
 
 	/**
 	 * 支付宝的用户id。用于水平校验，当传入用户id与实际唤起支付宝用户id不一致时，签约申请失败。特殊业务(用户在商户侧已经绑定了支付宝A，不允许支付宝B进行开通花芝)需求定制，无特殊需求时不要传入此商户
@@ -30,6 +30,12 @@ public class AlipayPcreditHuabeiAuthSignApplyModel extends AlipayObject {
 	 */
 	@ApiField("freeze_amount")
 	private String freezeAmount;
+
+	/**
+	 * 支付宝的用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部请求号，对应一次请求交互流水，由调用方生成
@@ -80,6 +86,13 @@ public class AlipayPcreditHuabeiAuthSignApplyModel extends AlipayObject {
 	}
 	public void setFreezeAmount(String freezeAmount) {
 		this.freezeAmount = freezeAmount;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutRequestNo() {

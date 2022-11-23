@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询额度
  *
  * @author auto create
- * @since 1.0, 2022-08-18 15:33:59
+ * @since 1.0, 2022-11-18 23:34:14
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1559818354421879384L;
+	private static final long serialVersionUID = 2756625843471517565L;
 
 	/**
 	 * 企业共同账户ID
@@ -35,13 +35,19 @@ public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject
 	private String enterpriseId;
 
 	/**
-	 * 额度所属者ID
+	 * 切换open_id前请使用：额度所属者ID
 owner_type为EMPLOYEE时为员工支付宝ID
 owner_type为PHONE时为员工手机号
 owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
+
+	/**
+	 * 切换open_id后请使用：额度所属者ID owner_type为EMPLOYEE时为员工open_id owner_type为PHONE时为员工手机号 owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
+	 */
+	@ApiField("owner_open_id")
+	private String ownerOpenId;
 
 	/**
 	 * 额度所属者类型
@@ -116,6 +122,13 @@ INSTITUTION（制度维度）
 	}
 	public void setOwnerId(String ownerId) {
 		this.ownerId = ownerId;
+	}
+
+	public String getOwnerOpenId() {
+		return this.ownerOpenId;
+	}
+	public void setOwnerOpenId(String ownerOpenId) {
+		this.ownerOpenId = ownerOpenId;
 	}
 
 	public String getOwnerType() {

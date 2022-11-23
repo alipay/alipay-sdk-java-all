@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape选品模型
  *
  * @author auto create
- * @since 1.0, 2022-11-02 14:24:09
+ * @since 1.0, 2022-11-16 22:06:16
  */
 public class ApeSelect extends AlipayObject {
 
-	private static final long serialVersionUID = 6147597576928895377L;
+	private static final long serialVersionUID = 6437336829444526132L;
 
 	/**
 	 * 物品的唯一id（允许存在英文）

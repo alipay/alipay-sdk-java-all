@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 玩一玩游戏中心平台三方游戏厂商错误日志提交接口
  *
  * @author auto create
- * @since 1.0, 2022-09-22 19:13:37
+ * @since 1.0, 2022-11-18 15:29:15
  */
 public class AlipayUserGamecenterLogSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1691782153594248574L;
+	private static final long serialVersionUID = 8819576791482134529L;
 
 	/**
 	 * 支付宝用户ID
@@ -34,6 +34,12 @@ DELAY_SUBMIT - 数据将延迟上传
 	 */
 	@ApiField("error_desc")
 	private String errorDesc;
+
+	/**
+	 * 商户app_id维度下的用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 出现异常的openapi接口名字
@@ -66,6 +72,13 @@ DELAY_SUBMIT - 数据将延迟上传
 	}
 	public void setErrorDesc(String errorDesc) {
 		this.errorDesc = errorDesc;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOpenapiName() {

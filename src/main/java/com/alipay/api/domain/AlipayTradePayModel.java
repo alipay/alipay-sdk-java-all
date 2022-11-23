@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2022-10-17 10:35:12
+ * @since 1.0, 2022-11-21 17:22:48
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4252399544832266556L;
+	private static final long serialVersionUID = 4187918497819469429L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -89,6 +89,12 @@ NOT_COMPLETE：转交易完成后不解冻剩余冻结金额；
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * 买家支付宝用户唯一标识
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 禁用支付渠道。
@@ -278,7 +284,7 @@ json格式，详见结算参数说明。
 
 	/**
 	 * 订单绝对超时时间。
-格式为yyyy-MM-dd HH:mm:ss。
+格式为yyyy-MM-dd HH:mm:ss。超时时间范围：1m~15d。
 注：time_expire和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
 	 */
 	@ApiField("time_expire")
@@ -386,6 +392,13 @@ json格式，详见结算参数说明。
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public String getDisablePayChannels() {

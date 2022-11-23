@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.pdeduct.sign.add request
  * 
  * @author auto create
- * @since 1.0, 2022-06-01 15:21:14
+ * @since 1.0, 2022-11-21 17:01:36
  */
 public class AlipayEbppPdeductSignAddRequest implements AlipayRequest<AlipayEbppPdeductSignAddResponse> {
 
@@ -81,6 +81,11 @@ min_age: 允许的最小买家年龄,min_age为整数，必须大于等于0.
 	* 通知方式设置，可为空
 	 */
 	private String notifyConfig;
+
+	/** 
+	* 用户UserId在应用AppId下的唯一用户标识
+	 */
+	private String openId;
 
 	/** 
 	* 外部产生的协议ID
@@ -206,6 +211,13 @@ min_age: 允许的最小买家年龄,min_age为整数，必须大于等于0.
 	}
 	public String getNotifyConfig() {
 		return this.notifyConfig;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setOutAgreementId(String outAgreementId) {
@@ -335,6 +347,7 @@ min_age: 允许的最小买家年龄,min_age为整数，必须大于等于0.
 		txtParams.put("ext_user_info", this.extUserInfo);
 		txtParams.put("extend_field", this.extendField);
 		txtParams.put("notify_config", this.notifyConfig);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("out_agreement_id", this.outAgreementId);
 		txtParams.put("owner_name", this.ownerName);
 		txtParams.put("pay_config", this.payConfig);

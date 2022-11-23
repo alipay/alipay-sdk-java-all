@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗额度授权解冻接口
  *
  * @author auto create
- * @since 1.0, 2021-10-26 22:21:51
+ * @since 1.0, 2022-11-16 19:31:48
  */
 public class AlipayPcreditHuabeiAuthOrderUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3534839728184822994L;
+	private static final long serialVersionUID = 7636712765391957523L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号
@@ -30,6 +30,12 @@ public class AlipayPcreditHuabeiAuthOrderUnfreezeModel extends AlipayObject {
 	 */
 	@ApiField("need_terminated")
 	private String needTerminated;
+
+	/**
+	 * 买家在支付宝的用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户业务订单的简单描述，如商品名称等，长度不超过100个字母或50个汉字
@@ -74,6 +80,13 @@ public class AlipayPcreditHuabeiAuthOrderUnfreezeModel extends AlipayObject {
 	}
 	public void setNeedTerminated(String needTerminated) {
 		this.needTerminated = needTerminated;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderTitle() {

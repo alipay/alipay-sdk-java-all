@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟卡信息查询结果
  *
  * @author auto create
- * @since 1.0, 2022-11-09 18:04:35
+ * @since 1.0, 2022-11-15 10:13:45
  */
 public class AlipayQueryCardModelResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4877467714866843256L;
+	private static final long serialVersionUID = 1481518741246943495L;
 
 	/**
 	 * 卡余额
@@ -54,6 +54,12 @@ public class AlipayQueryCardModelResult extends AlipayObject {
 	 */
 	@ApiField("last_update_time")
 	private String lastUpdateTime;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户卡状态
@@ -126,6 +132,13 @@ public class AlipayQueryCardModelResult extends AlipayObject {
 	}
 	public void setLastUpdateTime(String lastUpdateTime) {
 		this.lastUpdateTime = lastUpdateTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getStatusCode() {

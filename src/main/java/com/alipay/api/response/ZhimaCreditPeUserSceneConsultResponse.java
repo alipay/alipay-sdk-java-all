@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.scene.consult response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-14 14:11:11
+ * @since 1.0, 2022-11-16 20:11:38
  */
 public class ZhimaCreditPeUserSceneConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3836849786569327496L;
+	private static final long serialVersionUID = 5448119169173233779L;
 
 	/** 
 	 * 展示给C看的文案，json格式字符串

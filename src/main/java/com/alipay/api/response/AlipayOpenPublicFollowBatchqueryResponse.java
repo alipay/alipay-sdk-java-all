@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.follow.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-13 20:10:24
+ * @since 1.0, 2022-11-18 15:56:36
  */
 public class AlipayOpenPublicFollowBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3172934273617765617L;
+	private static final long serialVersionUID = 2398162151675831345L;
 
 	/** 
 	 * 本次调用获取的userId个数，最大值为10000
@@ -27,6 +27,19 @@ public class AlipayOpenPublicFollowBatchqueryResponse extends AlipayResponse {
 	 */
 	@ApiField("next_user_id")
 	private String nextUserId;
+
+	/** 
+	 * 支付宝用户的
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/** 
+	 * 支付宝用户的唯一标识列表
+	 */
+	@ApiListField("open_id_list")
+	@ApiField("string")
+	private List<String> openIdList;
 
 	/** 
 	 * 用户的userId列表
@@ -47,6 +60,20 @@ public class AlipayOpenPublicFollowBatchqueryResponse extends AlipayResponse {
 	}
 	public String getNextUserId( ) {
 		return this.nextUserId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
+	}
+
+	public void setOpenIdList(List<String> openIdList) {
+		this.openIdList = openIdList;
+	}
+	public List<String> getOpenIdList( ) {
+		return this.openIdList;
 	}
 
 	public void setUserIdList(List<String> userIdList) {

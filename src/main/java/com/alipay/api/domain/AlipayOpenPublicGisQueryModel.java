@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取用户地理位置
  *
  * @author auto create
- * @since 1.0, 2022-11-14 11:26:49
+ * @since 1.0, 2022-11-18 15:53:16
  */
 public class AlipayOpenPublicGisQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2865696116874883341L;
+	private static final long serialVersionUID = 2531326521632695155L;
+
+	/**
+	 * 支付宝用户的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 该用户的userId
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getUserId() {
 		return this.userId;

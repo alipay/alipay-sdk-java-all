@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报销状态批量同步开放接口
  *
  * @author auto create
- * @since 1.0, 2020-09-16 10:14:55
+ * @since 1.0, 2022-11-19 16:24:51
  */
 public class AlipayEbppInvoiceListExpenseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1393968596797786151L;
+	private static final long serialVersionUID = 5229555271365755716L;
 
 	/**
 	 * 报销进度变更时间
@@ -46,6 +46,12 @@ public class AlipayEbppInvoiceListExpenseSyncModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 用户uid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * EXPENSE_APPLY:报销申请提交;EXPENSE_APPROVAL_PASS:报销申请审核通过;EXPENSE_FINISHED:报销申请完成;EXPENSE_CANCEL:报销申请撤回
@@ -92,6 +98,13 @@ public class AlipayEbppInvoiceListExpenseSyncModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getStatus() {

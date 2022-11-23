@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金授权发码接口
  *
  * @author auto create
- * @since 1.0, 2022-03-07 19:33:20
+ * @since 1.0, 2022-11-21 22:09:16
  */
 public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6113425695356392473L;
+	private static final long serialVersionUID = 6545937769282551564L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位。
@@ -19,6 +19,12 @@ public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 业务参数，如风控参数outRiskInfo等。
+	 */
+	@ApiField("business_params")
+	private String businessParams;
 
 	/**
 	 * 无特殊需要请勿传入；商户可用该参数禁用支付渠道。
@@ -127,6 +133,13 @@ public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(String businessParams) {
+		this.businessParams = businessParams;
 	}
 
 	public String getDisablePayChannels() {

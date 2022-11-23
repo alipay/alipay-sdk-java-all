@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AMZ的3PL标准字段，WF透传给网商，网商需感知数据逻辑（黄色高亮为样例）
  *
  * @author auto create
- * @since 1.0, 2022-05-17 14:31:08
+ * @since 1.0, 2022-11-18 17:17:10
  */
 public class LendingDataList extends AlipayObject {
 
-	private static final long serialVersionUID = 4456197929214331234L;
+	private static final long serialVersionUID = 6317214232658674288L;
 
 	/**
 	 * 最新 FBA 库存价值（基于上架货品价格）

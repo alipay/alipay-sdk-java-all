@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务通知发送
  *
  * @author auto create
- * @since 1.0, 2021-09-02 17:26:50
+ * @since 1.0, 2022-11-18 21:27:48
  */
 public class AlipayEcoMycarVehicleServicenotifySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1795372965321233725L;
+	private static final long serialVersionUID = 4272829296953756262L;
 
 	/**
 	 * 商户业务响应码
@@ -24,6 +24,12 @@ public class AlipayEcoMycarVehicleServicenotifySendModel extends AlipayObject {
 	 */
 	@ApiField("merchant_status_desc")
 	private String merchantStatusDesc;
+
+	/**
+	 * 支付宝用户openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 服务操作的业务时间戳
@@ -85,6 +91,13 @@ public class AlipayEcoMycarVehicleServicenotifySendModel extends AlipayObject {
 	}
 	public void setMerchantStatusDesc(String merchantStatusDesc) {
 		this.merchantStatusDesc = merchantStatusDesc;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getServiceOperateTimestamp() {

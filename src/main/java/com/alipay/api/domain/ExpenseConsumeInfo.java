@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2022-02-21 14:27:13
+ * @since 1.0, 2022-11-18 15:10:22
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5251646879262557787L;
+	private static final long serialVersionUID = 5684856128155235328L;
 
 	/**
 	 * 企业ID
@@ -72,6 +72,12 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("employee_id")
 	private String employeeId;
+
+	/**
+	 * 所属员工支付宝uid
+	 */
+	@ApiField("employee_open_id")
+	private String employeeOpenId;
 
 	/**
 	 * 商户id
@@ -241,6 +247,13 @@ ACCOUNTING:记账
 	}
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeOpenId() {
+		return this.employeeOpenId;
+	}
+	public void setEmployeeOpenId(String employeeOpenId) {
+		this.employeeOpenId = employeeOpenId;
 	}
 
 	public String getMerchantId() {

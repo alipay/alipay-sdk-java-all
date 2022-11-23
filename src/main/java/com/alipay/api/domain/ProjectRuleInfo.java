@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 项目规则信息
  *
  * @author auto create
- * @since 1.0, 2022-11-04 11:23:33
+ * @since 1.0, 2022-11-19 12:00:15
  */
 public class ProjectRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3821748241214541736L;
+	private static final long serialVersionUID = 5876845989121335713L;
 
 	/**
 	 * 有效期截止
@@ -30,11 +30,18 @@ public class ProjectRuleInfo extends AlipayObject {
 	private Date effectiveStartDate;
 
 	/**
-	 * 员工uid列表
+	 * 切换open_id前请使用此字段：员工uid列表
 	 */
 	@ApiListField("employee_list")
 	@ApiField("string")
 	private List<String> employeeList;
+
+	/**
+	 * 切换open_id后请使用此字段：员工open_id列表
+	 */
+	@ApiListField("employee_open_id_list")
+	@ApiField("string")
+	private List<String> employeeOpenIdList;
 
 	/**
 	 * 规则组列表
@@ -74,6 +81,13 @@ public class ProjectRuleInfo extends AlipayObject {
 	}
 	public void setEmployeeList(List<String> employeeList) {
 		this.employeeList = employeeList;
+	}
+
+	public List<String> getEmployeeOpenIdList() {
+		return this.employeeOpenIdList;
+	}
+	public void setEmployeeOpenIdList(List<String> employeeOpenIdList) {
+		this.employeeOpenIdList = employeeOpenIdList;
 	}
 
 	public List<ExpenseCtrRuleGroupInfo> getExpenseCtrlRuleInfoGroupList() {

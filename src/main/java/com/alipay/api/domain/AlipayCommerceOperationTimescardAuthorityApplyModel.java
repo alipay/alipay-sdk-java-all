@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权添加
  *
  * @author auto create
- * @since 1.0, 2022-09-27 17:30:29
+ * @since 1.0, 2022-11-18 19:58:48
  */
 public class AlipayCommerceOperationTimescardAuthorityApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5176535153745598443L;
+	private static final long serialVersionUID = 1123444921492489278L;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景码固定值HARDRESSING
@@ -24,6 +30,13 @@ public class AlipayCommerceOperationTimescardAuthorityApplyModel extends AlipayO
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getSceneCode() {
 		return this.sceneCode;

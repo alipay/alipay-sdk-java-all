@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对应商品有环保类型时，需要返回;一个商品可能有多个环保类型
  *
  * @author auto create
- * @since 1.0, 2022-06-07 09:57:35
+ * @since 1.0, 2022-11-18 13:39:41
  */
 public class Environmental extends AlipayObject {
 
-	private static final long serialVersionUID = 1168139136867385338L;
+	private static final long serialVersionUID = 7352613438971757687L;
 
 	/**
 	 * 对应环保类型，可以发放的能量数

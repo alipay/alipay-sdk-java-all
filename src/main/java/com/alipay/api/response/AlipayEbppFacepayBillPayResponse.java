@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.facepay.bill.pay response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-23 09:22:34
+ * @since 1.0, 2022-11-21 14:31:15
  */
 public class AlipayEbppFacepayBillPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8167759998824894983L;
+	private static final long serialVersionUID = 6128671384163814521L;
 
 	/** 
 	 * 支付宝交易流水号
@@ -48,6 +48,12 @@ BIZ_FAIL: 业务失败（用户支付的资金会原路退回）。对缴税来�
 	 */
 	@ApiField("inst_no")
 	private String instNo;
+
+	/** 
+	 * 用户UserId在应用AppId下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * ISV流水号，用于控制幂等，须确保全局唯一（缴税业务：可采用{征收机关代码}-{外部申报号}的形式）
@@ -111,6 +117,13 @@ UNKNOWN - 状态未知（得到此状态，需轮询2次，每隔5s一次，若�
 	}
 	public String getInstNo( ) {
 		return this.instNo;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutOrderNo(String outOrderNo) {

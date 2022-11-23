@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.billcharge.order.batchcreate response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-08 09:58:07
+ * @since 1.0, 2022-11-18 13:41:34
  */
 public class AlipayEbppBillchargeOrderBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7336269277455847832L;
+	private static final long serialVersionUID = 4786426966879237619L;
+
+	/** 
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 主订单流水号
@@ -54,6 +60,13 @@ I-等待付款 P-已支付 C-单据关闭
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
+	}
 
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;

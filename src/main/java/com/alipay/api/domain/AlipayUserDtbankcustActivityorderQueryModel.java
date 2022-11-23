@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查活动流水发放接口
  *
  * @author auto create
- * @since 1.0, 2022-09-22 11:30:30
+ * @since 1.0, 2022-11-18 16:00:50
  */
 public class AlipayUserDtbankcustActivityorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8472171915459975959L;
+	private static final long serialVersionUID = 7118794693939826134L;
 
 	/**
 	 * 数字分行活动id，activity_order_id为空时必填
@@ -32,6 +32,12 @@ public class AlipayUserDtbankcustActivityorderQueryModel extends AlipayObject {
 	 */
 	@ApiField("logon_id")
 	private String logonId;
+
+	/**
+	 * 本字段映射use_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号，activity_order_id为空时必填
@@ -72,6 +78,13 @@ public class AlipayUserDtbankcustActivityorderQueryModel extends AlipayObject {
 	}
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

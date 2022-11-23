@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-04 18:12:37
+ * @since 1.0, 2022-11-18 16:56:39
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6882624153499577755L;
+	private static final long serialVersionUID = 6223929214564638423L;
 
 	/** 
 	 * 详细地址。
@@ -315,6 +315,12 @@ T--被冻结；F--未冻结
 	private String nickName;
 
 	/** 
+	 * 支付宝用户的openId。
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/** 
 	 * 组织机构代码（用户类型是公司类型时才有此字段）。
 	 */
 	@ApiField("organization_code")
@@ -337,6 +343,12 @@ T--被冻结；F--未冻结
 	 */
 	@ApiField("person_cert_expiry_date")
 	private String personCertExpiryDate;
+
+	/** 
+	 * 证件起始日期（用户类型是个人的时候才可能有此字段，不保证准确，同时有可能为空）。
+	 */
+	@ApiField("person_cert_issue_date")
+	private String personCertIssueDate;
 
 	/** 
 	 * 个人证件图片（用户类型是个人的时候才有此字段）。
@@ -739,6 +751,13 @@ W代表已注册，未激活的账户
 		return this.nickName;
 	}
 
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
+	}
+
 	public void setOrganizationCode(String organizationCode) {
 		this.organizationCode = organizationCode;
 	}
@@ -765,6 +784,13 @@ W代表已注册，未激活的账户
 	}
 	public String getPersonCertExpiryDate( ) {
 		return this.personCertExpiryDate;
+	}
+
+	public void setPersonCertIssueDate(String personCertIssueDate) {
+		this.personCertIssueDate = personCertIssueDate;
+	}
+	public String getPersonCertIssueDate( ) {
+		return this.personCertIssueDate;
 	}
 
 	public void setPersonPictures(List<AlipayUserPicture> personPictures) {

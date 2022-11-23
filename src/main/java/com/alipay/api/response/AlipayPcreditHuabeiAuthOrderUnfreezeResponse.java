@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.order.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-26 22:21:51
+ * @since 1.0, 2022-11-16 19:41:39
  */
 public class AlipayPcreditHuabeiAuthOrderUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3716724163481318381L;
+	private static final long serialVersionUID = 4176188715918542291L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号
@@ -44,6 +44,12 @@ public class AlipayPcreditHuabeiAuthOrderUnfreezeResponse extends AlipayResponse
 	 */
 	@ApiField("gmt_trans")
 	private Date gmtTrans;
+
+	/** 
+	 * 买家在支付宝的用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 商户本次操作的请求流水号，用于标识请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。由商户传入，最终返回给商户。
@@ -108,6 +114,13 @@ public class AlipayPcreditHuabeiAuthOrderUnfreezeResponse extends AlipayResponse
 	}
 	public Date getGmtTrans( ) {
 		return this.gmtTrans;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutRequestNo(String outRequestNo) {

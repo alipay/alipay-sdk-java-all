@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集分宝发放接口
  *
  * @author auto create
- * @since 1.0, 2022-09-22 19:12:09
+ * @since 1.0, 2022-11-21 16:53:49
  */
 public class AlipayUserAlipaypointSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4774281968948823993L;
+	private static final long serialVersionUID = 1254588616463425249L;
 
 	/**
 	 * 签约商户的集分宝的预算库，扣除此预算库的集分宝发放给用户。会校验budgetcode和业务方appId的签约商户pid的关联关系，若无关则发放失败。
@@ -24,6 +24,12 @@ public class AlipayUserAlipaypointSendModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 被发放集分宝用户ID，商户app_id维度下的用户标识，与user_account字段二选一。 建议优先使该字段指定发放用户，接口性能更佳
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 接入方自己交易的唯一流水ID号，不同交易请保证幂等号唯一性，集分宝服务将依据该字段来进行幂等控制，重试请求不要更换幂等号，需要慎重传递，否则可能会造成损失。
@@ -62,6 +68,13 @@ public class AlipayUserAlipaypointSendModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPartnerBizNo() {

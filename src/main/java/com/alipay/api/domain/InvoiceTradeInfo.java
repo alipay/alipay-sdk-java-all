@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票管家交易信息模型
  *
  * @author auto create
- * @since 1.0, 2022-11-09 18:03:59
+ * @since 1.0, 2022-11-21 19:00:24
  */
 public class InvoiceTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7121475752889958853L;
+	private static final long serialVersionUID = 5895665464154918534L;
 
 	/**
 	 * 支付宝交易号（字段于2017-02-21废弃，请勿使用）
@@ -65,6 +65,12 @@ public class InvoiceTradeInfo extends AlipayObject {
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
+
+	/**
+	 * 交易的买家支付宝账户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户交易订单号
@@ -182,6 +188,13 @@ public class InvoiceTradeInfo extends AlipayObject {
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

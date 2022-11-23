@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步数据到支付宝等APP
  *
  * @author auto create
- * @since 1.0, 2020-03-06 12:37:02
+ * @since 1.0, 2022-11-15 19:58:45
  */
 public class AlipayMsaasSyncSingledataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5339299232257198682L;
+	private static final long serialVersionUID = 6248673799358687846L;
 
 	/**
 	 * 支持的最大客户端app版本号

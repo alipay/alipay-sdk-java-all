@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资金预授权单笔操作明细查询接口
  *
  * @author auto create
- * @since 1.0, 2022-06-09 20:05:14
+ * @since 1.0, 2022-11-21 19:52:57
  */
 public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3131152997297153637L;
+	private static final long serialVersionUID = 1712717456766338945L;
 
 	/**
 	 * 支付宝授权资金订单号。

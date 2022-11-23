@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可退余额
  *
  * @author auto create
- * @since 1.0, 2022-09-27 17:30:45
+ * @since 1.0, 2022-11-18 19:58:16
  */
 public class AlipayCommerceOperationTimescardRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2488965718611373486L;
+	private static final long serialVersionUID = 5311164764537499347L;
 
 	/**
 	 * 次卡id
 	 */
 	@ApiField("card_id")
 	private String cardId;
+
+	/**
+	 * 用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景码
@@ -36,6 +42,13 @@ public class AlipayCommerceOperationTimescardRefundQueryModel extends AlipayObje
 	}
 	public void setCardId(String cardId) {
 		this.cardId = cardId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneCode() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻约定快速发约接口
  *
  * @author auto create
- * @since 1.0, 2021-05-17 10:40:52
+ * @since 1.0, 2022-11-16 15:38:15
  */
 public class ZhimaMerchantContractQuickCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8473641197993766647L;
+	private static final long serialVersionUID = 8345277727338418312L;
 
 	/**
 	 * 此类目为分配给商户在内容下的不同类目分类，（如直播/电影类目）
@@ -102,6 +102,12 @@ fufilment_period_type=default时必选
 	 */
 	@ApiField("offer_creater_name")
 	private String offerCreaterName;
+
+	/**
+	 * 发约创建者主体id(商户pid/用户芝麻id/支付宝用户id/淘宝用户id)
+	 */
+	@ApiField("offer_creater_open_id")
+	private String offerCreaterOpenId;
 
 	/**
 	 * 发约创建者类型：
@@ -239,6 +245,13 @@ TAOBAO_ROLE:淘宝用户
 	}
 	public void setOfferCreaterName(String offerCreaterName) {
 		this.offerCreaterName = offerCreaterName;
+	}
+
+	public String getOfferCreaterOpenId() {
+		return this.offerCreaterOpenId;
+	}
+	public void setOfferCreaterOpenId(String offerCreaterOpenId) {
+		this.offerCreaterOpenId = offerCreaterOpenId;
 	}
 
 	public String getOfferCreaterType() {

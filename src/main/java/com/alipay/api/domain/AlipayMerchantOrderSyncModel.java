@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-11-07 19:07:34
+ * @since 1.0, 2022-11-22 11:18:49
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7117145979186591364L;
+	private static final long serialVersionUID = 3641831479741325246L;
 
 	/**
 	 * 订单金额，单位为【元】。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
@@ -34,6 +34,12 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("buyer_info")
 	private UserInfomation buyerInfo;
+
+	/**
+	 * OpenId是用户（buyer_id）在应用（AppId）下的唯一用户标识.
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 优惠金额，单位为【元】
@@ -230,6 +236,13 @@ DingTalk-钉钉小程序
 	}
 	public void setBuyerInfo(UserInfomation buyerInfo) {
 		this.buyerInfo = buyerInfo;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public String getDiscountAmount() {

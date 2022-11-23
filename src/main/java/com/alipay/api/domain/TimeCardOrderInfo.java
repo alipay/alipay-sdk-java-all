@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡订单信息
  *
  * @author auto create
- * @since 1.0, 2022-09-27 19:14:36
+ * @since 1.0, 2022-11-18 19:58:14
  */
 public class TimeCardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5725783295542267893L;
+	private static final long serialVersionUID = 3726992785478677413L;
 
 	/**
 	 * 次卡商品id
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单金额，单位为分
@@ -54,6 +60,13 @@ public class TimeCardOrderInfo extends AlipayObject {
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderAmount() {

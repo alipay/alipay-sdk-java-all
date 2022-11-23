@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.pdeduct.pay request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 23:17:22
+ * @since 1.0, 2022-11-21 20:21:40
  */
 public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPdeductPayResponse> {
 
@@ -60,6 +60,11 @@ public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPded
 	* 备注信息
 	 */
 	private String memo;
+
+	/** 
+	* 用户UserId在应用AppId下的唯一用户标识
+	 */
+	private String openId;
 
 	/** 
 	* 商户外部业务流水号
@@ -135,6 +140,13 @@ public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPded
 	}
 	public String getMemo() {
 		return this.memo;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setOutOrderNo(String outOrderNo) {
@@ -234,6 +246,7 @@ public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPded
 		txtParams.put("extend_field", this.extendField);
 		txtParams.put("fine_amount", this.fineAmount);
 		txtParams.put("memo", this.memo);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("out_order_no", this.outOrderNo);
 		txtParams.put("pay_amount", this.payAmount);
 		txtParams.put("pid", this.pid);

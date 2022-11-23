@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证信息匹配度查询
  *
  * @author auto create
- * @since 1.0, 2021-06-25 17:12:12
+ * @since 1.0, 2022-11-15 14:47:14
  */
 public class ZhimaCustomerJobworthAdapterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7242566633564268637L;
+	private static final long serialVersionUID = 2396739562772517569L;
 
 	/**
 	 * 匹配的参数"edu_level":"",//学历等级；"skill_certificate":""//证书和等级，证书和等级之间使用英文逗号隔开，等级可以为null eg:维修电工,四级/中级技能；"age":"",//两个数字 使用英文逗号隔开，-1代表没要求。eg:18,35表示18岁到35岁，-1,40表示40岁以下；"gender":"",//男｜女  要求这2个汉字二选一；"city":"",//cityCode 要求使用的高德cityCode；"recommend":""//推荐次数
@@ -36,6 +36,12 @@ public class ZhimaCustomerJobworthAdapterQueryModel extends AlipayObject {
 	 */
 	@ApiField("job_name")
 	private String jobName;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -75,6 +81,13 @@ public class ZhimaCustomerJobworthAdapterQueryModel extends AlipayObject {
 	}
 	public void setJobName(String jobName) {
 		this.jobName = jobName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

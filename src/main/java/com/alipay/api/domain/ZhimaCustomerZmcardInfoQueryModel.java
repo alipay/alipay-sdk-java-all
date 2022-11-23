@@ -7,11 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻证信息查询
  *
  * @author auto create
- * @since 1.0, 2022-11-03 13:45:17
+ * @since 1.0, 2022-11-14 20:59:14
  */
 public class ZhimaCustomerZmcardInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6443432687682589833L;
+	private static final long serialVersionUID = 5577113377316635181L;
+
+	/**
+	 * 特性列表 默认不用传
+特性1,特性2 多个特性用,分割 传入COMPAT_V1代表兼容V1版本
+	 */
+	@ApiField("features")
+	private String features;
 
 	/**
 	 * 查看者的证件号或者支付宝用户UID,A申请查看B的芝麻证信息，则传入A的证件号，若是自己查看自己的，则传入自己的证件号，无法确定查看者，则传入空
@@ -44,6 +51,13 @@ MINI_APP：支付宝小程序
 	 */
 	@ApiField("source")
 	private String source;
+
+	public String getFeatures() {
+		return this.features;
+	}
+	public void setFeatures(String features) {
+		this.features = features;
+	}
 
 	public String getGuestCertNo() {
 		return this.guestCertNo;

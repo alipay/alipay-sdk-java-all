@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构红包权益删除接口
  *
  * @author auto create
- * @since 1.0, 2022-10-12 16:29:56
+ * @since 1.0, 2022-11-21 15:22:50
  */
 public class AlipayEbppInstserviceVoucherDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3213283958285573789L;
+	private static final long serialVersionUID = 7814915945982119714L;
 
 	/**
 	 * 业务发生时间
@@ -30,6 +30,12 @@ public class AlipayEbppInstserviceVoucherDeleteModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -62,6 +68,13 @@ public class AlipayEbppInstserviceVoucherDeleteModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

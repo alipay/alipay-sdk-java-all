@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.ContractSignRsp;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,23 +11,37 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.contract.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 14:26:49
+ * @since 1.0, 2022-11-16 14:56:35
  */
 public class AlipayEbppIndustryJobContractCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7213916645379853243L;
+	private static final long serialVersionUID = 4218835659166477417L;
 
 	/** 
-	 * 电子合同用户签署地址，企业已自动签署
+	 * 电子合同签署信息返回结果，如果是自动签署场景下无返回内容，可通过查询接口(alipay.ebpp.industry.job.contract.query) 获取签署内容
 	 */
-	@ApiField("sign_url")
-	private String signUrl;
+	@ApiListField("sign_rsp_list")
+	@ApiField("contract_sign_rsp")
+	private List<ContractSignRsp> signRspList;
 
-	public void setSignUrl(String signUrl) {
-		this.signUrl = signUrl;
+	/** 
+	 * 是否成功
+	 */
+	@ApiField("success")
+	private Boolean success;
+
+	public void setSignRspList(List<ContractSignRsp> signRspList) {
+		this.signRspList = signRspList;
 	}
-	public String getSignUrl( ) {
-		return this.signUrl;
+	public List<ContractSignRsp> getSignRspList( ) {
+		return this.signRspList;
+	}
+
+	public void setSuccess(Boolean success) {
+		this.success = success;
+	}
+	public Boolean getSuccess( ) {
+		return this.success;
 	}
 
 }

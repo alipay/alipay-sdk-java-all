@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改制度下适配范围
  *
  * @author auto create
- * @since 1.0, 2022-08-18 15:34:29
+ * @since 1.0, 2022-11-18 23:35:15
  */
 public class AlipayEbppInvoiceInstitutionScopeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8523473929963193344L;
+	private static final long serialVersionUID = 7552187378579376993L;
 
 	/**
 	 * 企业共同账户id
@@ -29,12 +29,19 @@ public class AlipayEbppInvoiceInstitutionScopeModifyModel extends AlipayObject {
 	private String adapterType;
 
 	/**
-	 * adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工支付宝id，员工企业码id和员工手机号）;
+	 * 未切换open_id时请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工支付宝id，员工企业码id和员工手机号）;
 adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
 	 */
 	@ApiListField("add_owner_id_list")
 	@ApiField("string")
 	private List<String> addOwnerIdList;
+
+	/**
+	 * 切换open_id后请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工open_id，员工企业码id和员工手机号）; adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+	 */
+	@ApiListField("add_owner_open_id_list")
+	@ApiField("string")
+	private List<String> addOwnerOpenIdList;
 
 	/**
 	 * 授权签约协议号
@@ -61,11 +68,18 @@ adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
 	private String ownerType;
 
 	/**
-	 * adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工支付宝id，员工企业码id和员工手机号）; adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+	 * 未切换open_id时请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工支付宝id，员工企业码id和员工手机号）; adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
 	 */
 	@ApiListField("remove_owner_id_list")
 	@ApiField("string")
 	private List<String> removeOwnerIdList;
+
+	/**
+	 * 切换open_id后请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工open_id，员工企业码id和员工手机号）; adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+	 */
+	@ApiListField("remove_owner_open_id_list")
+	@ApiField("string")
+	private List<String> removeOwnerOpenIdList;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -86,6 +100,13 @@ adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
 	}
 	public void setAddOwnerIdList(List<String> addOwnerIdList) {
 		this.addOwnerIdList = addOwnerIdList;
+	}
+
+	public List<String> getAddOwnerOpenIdList() {
+		return this.addOwnerOpenIdList;
+	}
+	public void setAddOwnerOpenIdList(List<String> addOwnerOpenIdList) {
+		this.addOwnerOpenIdList = addOwnerOpenIdList;
 	}
 
 	public String getAgreementNo() {
@@ -121,6 +142,13 @@ adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
 	}
 	public void setRemoveOwnerIdList(List<String> removeOwnerIdList) {
 		this.removeOwnerIdList = removeOwnerIdList;
+	}
+
+	public List<String> getRemoveOwnerOpenIdList() {
+		return this.removeOwnerOpenIdList;
+	}
+	public void setRemoveOwnerOpenIdList(List<String> removeOwnerOpenIdList) {
+		this.removeOwnerOpenIdList = removeOwnerOpenIdList;
 	}
 
 }

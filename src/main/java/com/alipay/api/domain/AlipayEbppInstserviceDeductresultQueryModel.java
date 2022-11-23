@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业代扣申请结果查询
  *
  * @author auto create
- * @since 1.0, 2022-10-12 16:28:14
+ * @since 1.0, 2022-11-21 17:25:49
  */
 public class AlipayEbppInstserviceDeductresultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3729415283829627645L;
+	private static final long serialVersionUID = 3358565545641617837L;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 申请代扣时的流水号
@@ -24,6 +30,13 @@ public class AlipayEbppInstserviceDeductresultQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOutOrderNo() {
 		return this.outOrderNo;

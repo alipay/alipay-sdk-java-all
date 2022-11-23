@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2022-11-04 16:25:15
+ * @since 1.0, 2022-11-22 17:27:51
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7111831292331322976L;
+	private static final long serialVersionUID = 6554624429136288252L;
 
 	/**
 	 * 员工所属部门
@@ -61,6 +61,12 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	 */
 	@ApiField("identity")
 	private String identity;
+
+	/**
+	 * 当identity_type为ALIPAY_USER_ID时，此字段传入open_id
+	 */
+	@ApiField("identity_open_id")
+	private String identityOpenId;
 
 	/**
 	 * 身份类型
@@ -127,6 +133,13 @@ SUPER_ADMIN 超级管理员
 	}
 	public void setIdentity(String identity) {
 		this.identity = identity;
+	}
+
+	public String getIdentityOpenId() {
+		return this.identityOpenId;
+	}
+	public void setIdentityOpenId(String identityOpenId) {
+		this.identityOpenId = identityOpenId;
 	}
 
 	public String getIdentityType() {

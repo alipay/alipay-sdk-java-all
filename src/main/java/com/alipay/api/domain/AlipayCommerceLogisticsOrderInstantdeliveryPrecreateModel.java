@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预下即时配送订单
  *
  * @author auto create
- * @since 1.0, 2022-10-14 10:32:46
+ * @since 1.0, 2022-11-22 15:30:14
  */
 public class AlipayCommerceLogisticsOrderInstantdeliveryPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4829997518923221851L;
+	private static final long serialVersionUID = 4329119235825746494L;
 
 	/**
 	 * 消费者id， 如果consumer_source是alipay，则consumer_id必须是支付宝用户uid；如果consumer_source是wx，则consumer_id可以为空
@@ -53,6 +53,12 @@ public class AlipayCommerceLogisticsOrderInstantdeliveryPrecreateModel extends A
 	@ApiListField("logistics_companies")
 	@ApiField("logistics_company_istd")
 	private List<LogisticsCompanyIstd> logisticsCompanies;
+
+	/**
+	 * 消费者id， 如果consumer_source是alipay，则consumer_id必须是支付宝用户uid；如果consumer_source是wx，则consumer_id可以为空
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 即时配送订单扩展
@@ -124,6 +130,13 @@ public class AlipayCommerceLogisticsOrderInstantdeliveryPrecreateModel extends A
 	}
 	public void setLogisticsCompanies(List<LogisticsCompanyIstd> logisticsCompanies) {
 		this.logisticsCompanies = logisticsCompanies;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public OrderExtIstdForPreOrder getOrderExtIstd() {

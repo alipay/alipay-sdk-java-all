@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.pdeduct.bill.pay.status request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 23:17:06
+ * @since 1.0, 2022-11-18 16:37:41
  */
 public class AlipayEbppPdeductBillPayStatusRequest implements AlipayRequest<AlipayEbppPdeductBillPayStatusResponse> {
 
@@ -24,6 +24,11 @@ public class AlipayEbppPdeductBillPayStatusRequest implements AlipayRequest<Alip
 	private String agreementId;
 
 	/** 
+	* 用户UserId在应用AppId下的唯一用户标识
+	 */
+	private String openId;
+
+	/** 
 	* 商户代扣业务流水
 	 */
 	private String outOrderNo;
@@ -33,6 +38,13 @@ public class AlipayEbppPdeductBillPayStatusRequest implements AlipayRequest<Alip
 	}
 	public String getAgreementId() {
 		return this.agreementId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setOutOrderNo(String outOrderNo) {
@@ -104,6 +116,7 @@ public class AlipayEbppPdeductBillPayStatusRequest implements AlipayRequest<Alip
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("agreement_id", this.agreementId);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("out_order_no", this.outOrderNo);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);

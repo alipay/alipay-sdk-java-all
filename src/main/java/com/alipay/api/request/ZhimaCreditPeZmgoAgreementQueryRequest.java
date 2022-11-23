@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.pe.zmgo.agreement.query request
  * 
  * @author auto create
- * @since 1.0, 2022-10-24 11:14:31
+ * @since 1.0, 2022-11-15 20:51:41
  */
 public class ZhimaCreditPeZmgoAgreementQueryRequest implements AlipayRequest<ZhimaCreditPeZmgoAgreementQueryResponse> {
 

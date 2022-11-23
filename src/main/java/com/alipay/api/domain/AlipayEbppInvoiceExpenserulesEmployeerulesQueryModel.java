@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询指定企业员工已绑定的所有费控规则
  *
  * @author auto create
- * @since 1.0, 2022-10-11 20:25:00
+ * @since 1.0, 2022-11-18 23:35:48
  */
 public class AlipayEbppInvoiceExpenserulesEmployeerulesQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5553127494699147881L;
+	private static final long serialVersionUID = 6866935483398948676L;
 
 	/**
 	 * 企业ID
@@ -26,10 +26,16 @@ public class AlipayEbppInvoiceExpenserulesEmployeerulesQueryModel extends Alipay
 	private String agreementNo;
 
 	/**
-	 * 员工ID
+	 * 未切换open_id时使用此字段：员工ID
 	 */
 	@ApiField("employee_id")
 	private String employeeId;
+
+	/**
+	 * 切换open_id后使用此字段：员工的open_id
+	 */
+	@ApiField("employee_open_id")
+	private String employeeOpenId;
 
 	/**
 	 * 页码，默认值为1
@@ -62,6 +68,13 @@ public class AlipayEbppInvoiceExpenserulesEmployeerulesQueryModel extends Alipay
 	}
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeOpenId() {
+		return this.employeeOpenId;
+	}
+	public void setEmployeeOpenId(String employeeOpenId) {
+		this.employeeOpenId = employeeOpenId;
 	}
 
 	public Long getPageNum() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业设置员工规则
  *
  * @author auto create
- * @since 1.0, 2021-03-18 10:44:47
+ * @since 1.0, 2022-11-21 14:48:29
  */
 public class AlipayFundJointaccountMemberruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8217424518648361534L;
+	private static final long serialVersionUID = 8756543216922351716L;
 
 	/**
 	 * 账户ID

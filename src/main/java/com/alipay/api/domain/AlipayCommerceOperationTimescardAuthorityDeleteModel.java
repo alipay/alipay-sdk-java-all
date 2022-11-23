@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权删除
  *
  * @author auto create
- * @since 1.0, 2022-09-27 17:30:58
+ * @since 1.0, 2022-11-21 10:47:14
  */
 public class AlipayCommerceOperationTimescardAuthorityDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7223941675572469349L;
+	private static final long serialVersionUID = 8511699165429361932L;
+
+	/**
+	 * 店员支付宝账户
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景码
@@ -24,6 +30,13 @@ public class AlipayCommerceOperationTimescardAuthorityDeleteModel extends Alipay
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getSceneCode() {
 		return this.sceneCode;

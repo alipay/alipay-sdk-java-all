@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝出租车司机交易订单列表查询
  *
  * @author auto create
- * @since 1.0, 2022-02-17 11:12:50
+ * @since 1.0, 2022-11-22 14:11:15
  */
 public class AlipayCommerceTransportTaxiOrderlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5687395115161311162L;
+	private static final long serialVersionUID = 5534411464744831423L;
 
 	/**
 	 * 查询结束时间，未填默认取当前时间
 	 */
 	@ApiField("end_time")
 	private String endTime;
+
+	/**
+	 * 乘客open_id
+	 */
+	@ApiField("passenger_open_id")
+	private String passengerOpenId;
 
 	/**
 	 * 乘客userId
@@ -36,6 +42,13 @@ public class AlipayCommerceTransportTaxiOrderlistQueryModel extends AlipayObject
 	}
 	public void setEndTime(String endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getPassengerOpenId() {
+		return this.passengerOpenId;
+	}
+	public void setPassengerOpenId(String passengerOpenId) {
+		this.passengerOpenId = passengerOpenId;
 	}
 
 	public String getPassengerUserId() {

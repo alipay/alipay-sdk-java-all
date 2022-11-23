@@ -1,7 +1,8 @@
 package com.alipay.api.request;
 
 import java.util.List;
-import com.alipay.api.domain.ContractSignArea;
+import com.alipay.api.domain.ContractCompanyInfo;
+import com.alipay.api.domain.ContractUserInfo;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,7 +16,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.job.contract.create request
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 14:26:49
+ * @since 1.0, 2022-11-16 14:56:35
  */
 public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadRequest<AlipayEbppIndustryJobContractCreateResponse> {
 
@@ -23,19 +24,9 @@ public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadR
 	private String apiVersion="1.0";
 
 	/** 
-	* 用户身份证号码
+	* 企业列表
 	 */
-	private String certNo;
-
-	/** 
-	* 企业信用代码或者营业执照注册号
-	 */
-	private String companyCertNo;
-
-	/** 
-	* 企业名称
-	 */
-	private String companyName;
+	private List<ContractCompanyInfo> companyList;
 
 	/** 
 	* 上传文件的二进制流
@@ -43,29 +34,9 @@ public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadR
 	private FileItem fileContent;
 
 	/** 
-	* 企业法人身份证号码
-	 */
-	private String legalPersonCertNo;
-
-	/** 
-	* 企业法人名称
-	 */
-	private String legalPersonName;
-
-	/** 
-	* 蚂蚁统一会员ID
-	 */
-	private String openId;
-
-	/** 
 	* 外部订单号
 	 */
 	private String outerBizNo;
-
-	/** 
-	* 电子合同签署区配置，必须包含个人和企业两部分信息
-	 */
-	private List<ContractSignArea> signArea;
 
 	/** 
 	* 签署平台: H5 或者 ALIPAY
@@ -73,34 +44,15 @@ public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadR
 	private String signPlatform;
 
 	/** 
-	* 蚂蚁统一会员ID
+	* 合同用户列表
 	 */
-	private String userId;
+	private List<ContractUserInfo> userList;
 
-	/** 
-	* 用户名称
-	 */
-	private String userName;
-
-	public void setCertNo(String certNo) {
-		this.certNo = certNo;
+	public void setCompanyList(List<ContractCompanyInfo> companyList) {
+		this.companyList = companyList;
 	}
-	public String getCertNo() {
-		return this.certNo;
-	}
-
-	public void setCompanyCertNo(String companyCertNo) {
-		this.companyCertNo = companyCertNo;
-	}
-	public String getCompanyCertNo() {
-		return this.companyCertNo;
-	}
-
-	public void setCompanyName(String companyName) {
-		this.companyName = companyName;
-	}
-	public String getCompanyName() {
-		return this.companyName;
+	public List<ContractCompanyInfo> getCompanyList() {
+		return this.companyList;
 	}
 
 	public void setFileContent(FileItem fileContent) {
@@ -110,39 +62,11 @@ public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadR
 		return this.fileContent;
 	}
 
-	public void setLegalPersonCertNo(String legalPersonCertNo) {
-		this.legalPersonCertNo = legalPersonCertNo;
-	}
-	public String getLegalPersonCertNo() {
-		return this.legalPersonCertNo;
-	}
-
-	public void setLegalPersonName(String legalPersonName) {
-		this.legalPersonName = legalPersonName;
-	}
-	public String getLegalPersonName() {
-		return this.legalPersonName;
-	}
-
-	public void setOpenId(String openId) {
-		this.openId = openId;
-	}
-	public String getOpenId() {
-		return this.openId;
-	}
-
 	public void setOuterBizNo(String outerBizNo) {
 		this.outerBizNo = outerBizNo;
 	}
 	public String getOuterBizNo() {
 		return this.outerBizNo;
-	}
-
-	public void setSignArea(List<ContractSignArea> signArea) {
-		this.signArea = signArea;
-	}
-	public List<ContractSignArea> getSignArea() {
-		return this.signArea;
 	}
 
 	public void setSignPlatform(String signPlatform) {
@@ -152,18 +76,11 @@ public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadR
 		return this.signPlatform;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setUserList(List<ContractUserInfo> userList) {
+		this.userList = userList;
 	}
-	public String getUserId() {
-		return this.userId;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-	public String getUserName() {
-		return this.userName;
+	public List<ContractUserInfo> getUserList() {
+		return this.userList;
 	}
 	private String terminalType;
 	private String terminalInfo;
@@ -226,17 +143,10 @@ public class AlipayEbppIndustryJobContractCreateRequest implements AlipayUploadR
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
-		txtParams.put("cert_no", this.certNo);
-		txtParams.put("company_cert_no", this.companyCertNo);
-		txtParams.put("company_name", this.companyName);
-		txtParams.put("legal_person_cert_no", this.legalPersonCertNo);
-		txtParams.put("legal_person_name", this.legalPersonName);
-		txtParams.put("open_id", this.openId);
+		txtParams.put("company_list", this.companyList == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.companyList, true));
 		txtParams.put("outer_biz_no", this.outerBizNo);
-		txtParams.put("sign_area", this.signArea == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.signArea, true));
 		txtParams.put("sign_platform", this.signPlatform);
-		txtParams.put("user_id", this.userId);
-		txtParams.put("user_name", this.userName);
+		txtParams.put("user_list", this.userList == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.userList, true));
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

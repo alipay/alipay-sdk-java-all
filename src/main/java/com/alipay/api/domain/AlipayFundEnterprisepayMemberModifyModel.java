@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 因公付更新员工资金协议
  *
  * @author auto create
- * @since 1.0, 2022-06-07 16:31:37
+ * @since 1.0, 2022-11-21 14:46:48
  */
 public class AlipayFundEnterprisepayMemberModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2224852488174537272L;
+	private static final long serialVersionUID = 2878882445815962827L;
 
 	/**
 	 * 企业签约账户ID

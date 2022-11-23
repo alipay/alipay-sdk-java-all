@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账条款明细
  *
  * @author auto create
- * @since 1.0, 2022-05-07 16:28:41
+ * @since 1.0, 2022-11-16 19:59:39
  */
 public class RoyaltyDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7635292914721363614L;
+	private static final long serialVersionUID = 8243825165868128183L;
 
 	/**
 	 * 分账金额，单位为元

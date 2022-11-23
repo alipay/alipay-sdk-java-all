@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySocialOpengreenEnergyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1647951764244418126L;
+	private static final long serialVersionUID = 3255811133147296736L;
 
 	/**
 	 * 生成能量时传入的唯一键

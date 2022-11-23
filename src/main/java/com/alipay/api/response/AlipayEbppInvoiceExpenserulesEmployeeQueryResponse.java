@@ -10,18 +10,25 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.expenserules.employee.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-18 15:35:21
+ * @since 1.0, 2022-11-18 23:41:34
  */
 public class AlipayEbppInvoiceExpenserulesEmployeeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6694988697341325859L;
+	private static final long serialVersionUID = 2894638821996143586L;
 
 	/** 
-	 * 员工列表
+	 * 切换open_id前请使用此字段：员工列表
 	 */
 	@ApiListField("employee_list")
 	@ApiField("string")
 	private List<String> employeeList;
+
+	/** 
+	 * 切换open_id后请使用此字段：员工open_id列表
+	 */
+	@ApiListField("employee_open_id_list")
+	@ApiField("string")
+	private List<String> employeeOpenIdList;
 
 	/** 
 	 * 当前页数
@@ -46,6 +53,13 @@ public class AlipayEbppInvoiceExpenserulesEmployeeQueryResponse extends AlipayRe
 	}
 	public List<String> getEmployeeList( ) {
 		return this.employeeList;
+	}
+
+	public void setEmployeeOpenIdList(List<String> employeeOpenIdList) {
+		this.employeeOpenIdList = employeeOpenIdList;
+	}
+	public List<String> getEmployeeOpenIdList( ) {
+		return this.employeeOpenIdList;
 	}
 
 	public void setPageNum(Long pageNum) {

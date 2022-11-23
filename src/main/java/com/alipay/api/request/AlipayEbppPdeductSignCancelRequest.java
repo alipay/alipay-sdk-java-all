@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.pdeduct.sign.cancel request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 23:17:54
+ * @since 1.0, 2022-11-21 20:21:49
  */
 public class AlipayEbppPdeductSignCancelRequest implements AlipayRequest<AlipayEbppPdeductSignCancelResponse> {
 
@@ -32,6 +32,11 @@ public class AlipayEbppPdeductSignCancelRequest implements AlipayRequest<AlipayE
 	* 支付宝代扣协议ID
 	 */
 	private String agreementId;
+
+	/** 
+	* 用户UserId在应用AppId下的唯一用户标识
+	 */
+	private String openId;
 
 	/** 
 	* 需要用户首先处于登陆态，然后访问https://ebppprod.alipay.com/deduct/enterMobileicPayPassword.htm?cb=自己指定的回跳连接地址,访问页面后会进到独立密码校验页，用户输入密码校验成功后，会生成token回调到指定的回跳地址，如果设置cb=www.baidu.com则最后回调的内容是www.baidu.com?token=312314ADFDSFAS,然后签约时直接取得地址后token的值即可
@@ -62,6 +67,13 @@ public class AlipayEbppPdeductSignCancelRequest implements AlipayRequest<AlipayE
 	}
 	public String getAgreementId() {
 		return this.agreementId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setPayPasswordToken(String payPasswordToken) {
@@ -142,6 +154,7 @@ public class AlipayEbppPdeductSignCancelRequest implements AlipayRequest<AlipayE
 		txtParams.put("agent_channel", this.agentChannel);
 		txtParams.put("agent_code", this.agentCode);
 		txtParams.put("agreement_id", this.agreementId);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("pay_password_token", this.payPasswordToken);
 		txtParams.put("user_id", this.userId);
 		if(udfParams != null) {

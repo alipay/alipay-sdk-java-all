@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序发送模板消息
  *
  * @author auto create
- * @since 1.0, 2022-10-31 19:49:29
+ * @since 1.0, 2022-11-18 15:12:49
  */
 public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2362272252628295165L;
+	private static final long serialVersionUID = 8719841821212932451L;
 
 	/**
 	 * 模板消息内容。商家/开发者将模板占位符替换为自定义内容。
@@ -40,6 +40,12 @@ public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 	 */
 	@ApiField("page")
 	private String page;
+
+	/**
+	 * 支付宝openId，用于支付宝用户在当前应用下的用户标识。
+	 */
+	@ApiField("to_open_id")
+	private String toOpenId;
 
 	/**
 	 * 接收模板消息的用户 user_id，一般为2088开头的16为数字。
@@ -73,6 +79,13 @@ public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 	}
 	public void setPage(String page) {
 		this.page = page;
+	}
+
+	public String getToOpenId() {
+		return this.toOpenId;
+	}
+	public void setToOpenId(String toOpenId) {
+		this.toOpenId = toOpenId;
 	}
 
 	public String getToUserId() {

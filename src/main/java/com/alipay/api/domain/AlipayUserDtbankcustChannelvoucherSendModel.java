@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字分行通用红包发放接口
  *
  * @author auto create
- * @since 1.0, 2022-10-11 19:54:15
+ * @since 1.0, 2022-11-18 16:01:50
  */
 public class AlipayUserDtbankcustChannelvoucherSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3448461941364113936L;
+	private static final long serialVersionUID = 6484175355723659469L;
 
 	/**
 	 * 数字分行活动id
@@ -27,14 +27,19 @@ public class AlipayUserDtbankcustChannelvoucherSendModel extends AlipayObject {
 	private String logonId;
 
 	/**
+	 * 映射user_id
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 外部业务号
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
 	/**
-	 * 用户手机号。user_id，logon_id，phone_id不能同时为空，优先级依次降低。
-注：该参数将先匹配用户手机号对应支付宝账号，若不存在，则再匹配用户手机号绑定支付宝账号。若用户手机号绑定多个支付宝账号，则以系统判定的常用支付宝账号为准。请优先使用user_id和logon_id。
+	 * 该参数将先匹配用户手机号对应支付宝账号，若存在且完成实名认证则以此支付宝账号发放，若该支付宝账号未完成实名认证则发放失败；若用户手机号对应支付宝账号不存在，则再匹配用户手机号绑定支付宝账号。若用户手机号绑定多个支付宝账号，则以系统判定的常用支付宝账号为准。请优先使用user_id和logon_id。
 	 */
 	@ApiField("phone_id")
 	private String phoneId;
@@ -58,6 +63,13 @@ public class AlipayUserDtbankcustChannelvoucherSendModel extends AlipayObject {
 	}
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

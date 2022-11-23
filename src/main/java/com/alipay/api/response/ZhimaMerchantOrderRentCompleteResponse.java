@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.order.rent.complete response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:44:13
+ * @since 1.0, 2022-11-15 15:41:36
  */
 public class ZhimaMerchantOrderRentCompleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1146359574667785224L;
+	private static final long serialVersionUID = 2154337126256121634L;
 
 	/** 
 	 * 资金流水号，用于商户与支付宝进行对账
 	 */
 	@ApiField("alipay_fund_order_no")
 	private String alipayFundOrderNo;
+
+	/** 
+	 * 借用人支付宝open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 信用借还的订单号
@@ -37,6 +43,13 @@ public class ZhimaMerchantOrderRentCompleteResponse extends AlipayResponse {
 	}
 	public String getAlipayFundOrderNo( ) {
 		return this.alipayFundOrderNo;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrderNo(String orderNo) {

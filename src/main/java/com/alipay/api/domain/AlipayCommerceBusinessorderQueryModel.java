@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 业务记录查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-03 16:14:57
+ * @since 1.0, 2022-11-14 20:07:05
  */
 public class AlipayCommerceBusinessorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3136494193334972565L;
+	private static final long serialVersionUID = 1765456344957294844L;
 
 	/**
 	 * 查询办事记录的时间区间中的开始时间，格式为yyyy-MM-dd HH:mm:ss
@@ -33,6 +33,12 @@ public class AlipayCommerceBusinessorderQueryModel extends AlipayObject {
 	 */
 	@ApiField("isv_appid")
 	private String isvAppid;
+
+	/**
+	 * 用户open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 分页查询的起始页数
@@ -84,6 +90,13 @@ public class AlipayCommerceBusinessorderQueryModel extends AlipayObject {
 	}
 	public void setIsvAppid(String isvAppid) {
 		this.isvAppid = isvAppid;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPageNum() {

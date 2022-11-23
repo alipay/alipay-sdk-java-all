@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.transfer.certify response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-09 10:14:28
+ * @since 1.0, 2022-11-14 17:36:34
  */
 public class AlipayOverseasTransferCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4534341249565929839L;
+	private static final long serialVersionUID = 5528933569199878777L;
 
 	/** 
 	 * 是否有默认卡
@@ -26,6 +26,12 @@ public class AlipayOverseasTransferCertifyResponse extends AlipayResponse {
 	@ApiField("pass_through_info")
 	private String passThroughInfo;
 
+	/** 
+	 * 用于透传主站错误码描述
+	 */
+	@ApiField("result_msg")
+	private String resultMsg;
+
 	public void setHasDefaultCard(String hasDefaultCard) {
 		this.hasDefaultCard = hasDefaultCard;
 	}
@@ -38,6 +44,13 @@ public class AlipayOverseasTransferCertifyResponse extends AlipayResponse {
 	}
 	public String getPassThroughInfo( ) {
 		return this.passThroughInfo;
+	}
+
+	public void setResultMsg(String resultMsg) {
+		this.resultMsg = resultMsg;
+	}
+	public String getResultMsg( ) {
+		return this.resultMsg;
 	}
 
 }

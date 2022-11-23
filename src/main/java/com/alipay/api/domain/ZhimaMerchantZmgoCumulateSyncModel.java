@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家芝麻GO数据回传接口
  *
  * @author auto create
- * @since 1.0, 2022-10-10 14:11:20
+ * @since 1.0, 2022-11-15 20:13:16
  */
 public class ZhimaMerchantZmgoCumulateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6245681792797589256L;
+	private static final long serialVersionUID = 2699999932916923586L;
 
 	/**
 	 * 芝麻go协议号，唯一标识一个芝麻go协议。
@@ -54,6 +54,12 @@ DISCOUNT - 优惠型
 	 */
 	@ApiField("discount_type_sync_data")
 	private DiscountTypeSyncData discountTypeSyncData;
+
+	/**
+	 * 用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号，唯一标识一笔回传数据。
@@ -135,6 +141,13 @@ UPDATE - 修改数据
 	}
 	public void setDiscountTypeSyncData(DiscountTypeSyncData discountTypeSyncData) {
 		this.discountTypeSyncData = discountTypeSyncData;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

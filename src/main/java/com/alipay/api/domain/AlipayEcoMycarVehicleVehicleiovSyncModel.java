@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车联数据同步
  *
  * @author auto create
- * @since 1.0, 2021-09-02 17:26:59
+ * @since 1.0, 2022-11-18 21:47:14
  */
 public class AlipayEcoMycarVehicleVehicleiovSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2822814824732238282L;
+	private static final long serialVersionUID = 8781724759199978361L;
 
 	/**
 	 * 扩展字段
@@ -34,6 +34,12 @@ public class AlipayEcoMycarVehicleVehicleiovSyncModel extends AlipayObject {
 	 */
 	@ApiField("iov_seq_no")
 	private String iovSeqNo;
+
+	/**
+	 * 支付宝用户openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 当前系统时间戳
@@ -78,6 +84,13 @@ public class AlipayEcoMycarVehicleVehicleiovSyncModel extends AlipayObject {
 	}
 	public void setIovSeqNo(String iovSeqNo) {
 		this.iovSeqNo = iovSeqNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSystemTimestamp() {

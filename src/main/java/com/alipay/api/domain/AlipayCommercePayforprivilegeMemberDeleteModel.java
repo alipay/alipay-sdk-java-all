@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心充会员退卡
  *
  * @author auto create
- * @since 1.0, 2022-01-18 09:20:50
+ * @since 1.0, 2022-11-18 17:27:13
  */
 public class AlipayCommercePayforprivilegeMemberDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1155989397137645437L;
+	private static final long serialVersionUID = 8566911742474447952L;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -24,6 +30,13 @@ public class AlipayCommercePayforprivilegeMemberDeleteModel extends AlipayObject
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOutBizNo() {
 		return this.outBizNo;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2022-10-17 10:35:48
+ * @since 1.0, 2022-11-21 17:31:44
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5318861423923721352L;
+	private static final long serialVersionUID = 4316224328733346554L;
 
 	/**
 	 * 支付宝店铺编号。
@@ -57,6 +57,12 @@ buyer_logon_id和buyer_id两者传其一，和buyer_id不能同时为空，建�
 	 */
 	@ApiField("buyer_logon_id")
 	private String buyerLogonId;
+
+	/**
+	 * 买家支付宝用户唯一标识
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 禁用渠道,用户不可用指定渠道支付，多个渠道以逗号分割
@@ -279,6 +285,13 @@ buyer_logon_id和buyer_id两者传其一，和buyer_id不能同时为空，建�
 	}
 	public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public String getDisablePayChannels() {

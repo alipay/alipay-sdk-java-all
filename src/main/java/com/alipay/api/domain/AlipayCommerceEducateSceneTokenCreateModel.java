@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育场景token生成处理器
  *
  * @author auto create
- * @since 1.0, 2022-09-29 17:14:50
+ * @since 1.0, 2022-11-17 14:53:49
  */
 public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284464238385976164L;
+	private static final long serialVersionUID = 7147772596227827552L;
 
 	/**
 	 * 证件号码
@@ -24,6 +24,12 @@ public class AlipayCommerceEducateSceneTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 采集人员的支付宝openId。（当sub_code为SCHOOL_PAYMENT_REMOTE_OPEN_ACCOUNT时，当前参数必选）
+	 */
+	@ApiField("operator_open_id")
+	private String operatorOpenId;
 
 	/**
 	 * 采集人员的支付宝会员标识。（当sub_code为SCHOOL_PAYMENT_REMOTE_OPEN_ACCOUNT时，当前参数必选）
@@ -75,6 +81,13 @@ SCHOOL_FACE_PASS_NAVIGATE：校园一脸通行跳转（生成的token用于个�
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getOperatorOpenId() {
+		return this.operatorOpenId;
+	}
+	public void setOperatorOpenId(String operatorOpenId) {
+		this.operatorOpenId = operatorOpenId;
 	}
 
 	public String getOperatorUserId() {

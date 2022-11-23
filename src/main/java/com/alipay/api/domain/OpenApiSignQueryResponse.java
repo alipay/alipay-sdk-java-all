@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户签约协议信息
  *
  * @author auto create
- * @since 1.0, 2018-01-05 15:32:09
+ * @since 1.0, 2022-11-16 18:09:05
  */
 public class OpenApiSignQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1668199813829421371L;
+	private static final long serialVersionUID = 1454653212789763531L;
 
 	/**
 	 * 用户签约成功后的协议号

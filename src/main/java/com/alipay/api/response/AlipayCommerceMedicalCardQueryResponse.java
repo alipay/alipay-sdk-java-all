@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 16:39:45
+ * @since 1.0, 2022-11-14 20:36:56
  */
 public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1638367575975718158L;
+	private static final long serialVersionUID = 2248731242719763355L;
 
 	/** 
 	 * 签约协议号
@@ -105,6 +105,12 @@ OTHER_BIND(不同账号绑卡)
 	 */
 	@ApiField("medical_card_type")
 	private String medicalCardType;
+
+	/** 
+	 * 买家支付宝账号对应的支付宝唯一用户号。以2088开头的纯16位数字
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * bind_satus= OTHER_BIND情况下输出,买家支付宝账号，将用*号屏蔽部分内容
@@ -227,6 +233,13 @@ OTHER_BIND(不同账号绑卡)
 	}
 	public String getMedicalCardType( ) {
 		return this.medicalCardType;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOtherUserLogonId(String otherUserLogonId) {

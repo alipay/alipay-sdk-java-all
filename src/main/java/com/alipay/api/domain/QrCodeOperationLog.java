@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 能量码操作日志
  *
  * @author auto create
- * @since 1.0, 2022-04-08 12:53:58
+ * @since 1.0, 2022-11-18 13:39:59
  */
 public class QrCodeOperationLog extends AlipayObject {
 
-	private static final long serialVersionUID = 1195127226595259433L;
+	private static final long serialVersionUID = 2391827135137788362L;
 
 	/**
 	 * 能量码所属的goods_id

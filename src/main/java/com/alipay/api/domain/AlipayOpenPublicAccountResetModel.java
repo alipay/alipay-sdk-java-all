@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 重新设置绑定商家会员号
  *
  * @author auto create
- * @since 1.0, 2022-11-14 11:26:29
+ * @since 1.0, 2022-11-18 15:54:15
  */
 public class AlipayOpenPublicAccountResetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8436746873171629848L;
+	private static final long serialVersionUID = 3583513367719313373L;
 
 	/**
 	 * 需要重置的协议号，商户会员在支付宝生活号账号中的唯一标识。
@@ -38,6 +38,12 @@ public class AlipayOpenPublicAccountResetModel extends AlipayObject {
 	 */
 	@ApiField("from_user_id")
 	private String fromUserId;
+
+	/**
+	 * 支付宝用户的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 要绑定的商户会员的真实姓名，最长10个汉字
@@ -77,6 +83,13 @@ public class AlipayOpenPublicAccountResetModel extends AlipayObject {
 	}
 	public void setFromUserId(String fromUserId) {
 		this.fromUserId = fromUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRealName() {

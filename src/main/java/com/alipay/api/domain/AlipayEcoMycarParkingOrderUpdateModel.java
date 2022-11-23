@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单更新接口
  *
  * @author auto create
- * @since 1.0, 2022-10-12 15:40:47
+ * @since 1.0, 2022-11-16 14:53:50
  */
 public class AlipayEcoMycarParkingOrderUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7212826454847264346L;
+	private static final long serialVersionUID = 1241692924638791613L;
+
+	/**
+	 * 应用用户ID，唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝支付流水号，系统唯一
@@ -33,6 +39,13 @@ public class AlipayEcoMycarParkingOrderUpdateModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOrderNo() {
 		return this.orderNo;

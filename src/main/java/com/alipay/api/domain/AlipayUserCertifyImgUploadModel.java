@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCertifyImgUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5266813591455725815L;
+	private static final long serialVersionUID = 6491174584961729918L;
 
 	/**
 	 * 业务来源，用于支付宝认证系统识别是哪个业务方

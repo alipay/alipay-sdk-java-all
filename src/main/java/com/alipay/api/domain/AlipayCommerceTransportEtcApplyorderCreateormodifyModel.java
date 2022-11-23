@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2022-09-14 17:09:13
+ * @since 1.0, 2022-11-23 13:27:14
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6556748629486653885L;
+	private static final long serialVersionUID = 1222385985294594496L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新
@@ -30,6 +30,12 @@ public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends Ali
 	 */
 	@ApiField("mobile_no")
 	private String mobileNo;
+
+	/**
+	 * 蚂蚁会员统一ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 审核资料提交状态。WAIT_SUBMIT：信息待提交；SUBMITTED：信息已提交。
@@ -170,6 +176,13 @@ LIMEGREEN: 黄绿色。
 	}
 	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderCensorStatus() {

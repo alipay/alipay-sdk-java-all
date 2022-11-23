@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.scopepageinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-29 20:04:40
+ * @since 1.0, 2022-11-18 23:41:35
  */
 public class AlipayEbppInvoiceInstitutionScopepageinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2269652972412291586L;
+	private static final long serialVersionUID = 2183141228657211218L;
 
 	/** 
 	 * 制度下人员生效范围，枚举值：
@@ -26,7 +26,20 @@ EMPLOYEE_DEPARTMENT(部门)
 	private String adapterType;
 
 	/** 
-	 * 员工id列表，如owner_type为phone返回员工手机号
+	 * 切换 open_id 后请使用此字段：
+adapter_type为：
+EMPLOYEE_DEPARTMENT：返回部门ID
+EMPLOYEE_SELECT：当owner_type为PHONE时返回手机号，其他值则根据对接方式返回open_id，或企业码员工ID
+	 */
+	@ApiListField("onwer_open_id_list")
+	@ApiField("string")
+	private List<String> onwerOpenIdList;
+
+	/** 
+	 * 未切换 open_id 时请使用此字段：
+adapter_type为：
+EMPLOYEE_DEPARTMENT：返回部门ID
+EMPLOYEE_SELECT：当owner_type为PHONE时返回手机号，其他值则根据对接方式返回支付宝用户ID，或企业码员工ID
 	 */
 	@ApiListField("owner_id_list")
 	@ApiField("string")
@@ -55,6 +68,13 @@ EMPLOYEE_DEPARTMENT(部门)
 	}
 	public String getAdapterType( ) {
 		return this.adapterType;
+	}
+
+	public void setOnwerOpenIdList(List<String> onwerOpenIdList) {
+		this.onwerOpenIdList = onwerOpenIdList;
+	}
+	public List<String> getOnwerOpenIdList( ) {
+		return this.onwerOpenIdList;
 	}
 
 	public void setOwnerIdList(List<String> ownerIdList) {

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.testaaa.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-25 16:30:03
+ * @since 1.0, 2022-11-18 10:37:31
  */
 public class SsdataDataserviceTestaaaSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5854727121416935143L;
+	private static final long serialVersionUID = 5284471425971196743L;
 
 	
 

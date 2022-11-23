@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用订单追赔操作申请接口
  *
  * @author auto create
- * @since 1.0, 2019-05-30 15:30:52
+ * @since 1.0, 2022-11-16 22:00:15
  */
 public class ZhimaCreditOrderRepaymentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8442765723692516548L;
+	private static final long serialVersionUID = 7699142391741381742L;
 
 	/**
 	 * 追赔操作类型，目前支持：
@@ -28,6 +28,12 @@ action_type 为 CREATE 时该值不可为空；
 	 */
 	@ApiField("category")
 	private String category;
+
+	/**
+	 * 蚂蚁统一会员ID，确保传入与业务订单相匹配的会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * Json 字符串，订单对应业务信息同步，会影响订单C端展现；
@@ -74,6 +80,13 @@ action_type 为 CREATE 时该值不可为空；
 	}
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderInfo() {

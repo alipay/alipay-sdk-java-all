@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国家医保局线上业务下单支付接口
  *
  * @author auto create
- * @since 1.0, 2022-06-29 15:54:09
+ * @since 1.0, 2022-11-16 10:40:49
  */
 public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4394336321423824359L;
+	private static final long serialVersionUID = 3443177222497238371L;
 
 	/**
 	 * 个人账户支付金额
@@ -62,6 +62,12 @@ public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject 
 	 */
 	@ApiField("merchant_name")
 	private String merchantName;
+
+	/**
+	 * 支付宝用户Id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 定点医疗机构编码
@@ -165,6 +171,13 @@ public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject 
 	}
 	public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrgNo() {

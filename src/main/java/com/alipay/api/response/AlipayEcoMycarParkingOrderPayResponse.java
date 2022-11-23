@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.order.pay response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-19 10:33:12
+ * @since 1.0, 2022-11-18 10:26:37
  */
 public class AlipayEcoMycarParkingOrderPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8379185364267528684L;
+	private static final long serialVersionUID = 1768499385465213561L;
 
 	/** 
 	 * 垫资金额，不返回表示没有走垫资非空表示垫资支付的金额
@@ -39,6 +39,12 @@ public class AlipayEcoMycarParkingOrderPayResponse extends AlipayResponse {
 	 */
 	@ApiField("gmt_payment")
 	private String gmtPayment;
+
+	/** 
+	 * 应用用户ID,支付宝用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 对应商户网站的订单系统中的唯一订单号，非支付宝交易号。
@@ -92,6 +98,13 @@ public class AlipayEcoMycarParkingOrderPayResponse extends AlipayResponse {
 	}
 	public String getGmtPayment( ) {
 		return this.gmtPayment;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutTradeNo(String outTradeNo) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业代扣合约版解约
  *
  * @author auto create
- * @since 1.0, 2022-10-12 16:29:37
+ * @since 1.0, 2022-11-21 15:44:50
  */
 public class AlipayEbppInstserviceContractdeductUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1681469844633227591L;
+	private static final long serialVersionUID = 7764454991112553399L;
 
 	/**
 	 * 代扣签约协议号
@@ -24,6 +24,12 @@ public class AlipayEbppInstserviceContractdeductUnsignModel extends AlipayObject
 	 */
 	@ApiField("bill_key")
 	private String billKey;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 用户签约的支付宝账号id
@@ -43,6 +49,13 @@ public class AlipayEbppInstserviceContractdeductUnsignModel extends AlipayObject
 	}
 	public void setBillKey(String billKey) {
 		this.billKey = billKey;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣签约
  *
  * @author auto create
- * @since 1.0, 2022-10-12 16:28:36
+ * @since 1.0, 2022-11-22 17:08:50
  */
 public class AlipayEbppInstserviceDeductSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6248176674186129113L;
+	private static final long serialVersionUID = 4739939461857689928L;
 
 	/**
 	 * 签约来源渠道，接入时与代扣约定
@@ -54,6 +54,12 @@ public class AlipayEbppInstserviceDeductSignModel extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * PREPAID预付费，POSTPAID后付费
@@ -126,6 +132,13 @@ public class AlipayEbppInstserviceDeductSignModel extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPayMode() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.applepay.transactionauthtoken.create request
  * 
  * @author auto create
- * @since 1.0, 2022-11-03 15:10:21
+ * @since 1.0, 2022-11-21 11:13:53
  */
 public class AlipayPayApplepayTransactionauthtokenCreateRequest implements AlipayRequest<AlipayPayApplepayTransactionauthtokenCreateResponse> {
 

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 恢复任务
  *
  * @author auto create
- * @since 1.0, 2022-03-24 09:45:14
+ * @since 1.0, 2022-11-16 19:45:51
  */
 public class AlipayCommerceYuntaskResumeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2497846221661815985L;
+	private static final long serialVersionUID = 1168393898891776228L;
 
 	/**
 	 * 商户pid， 代运营模式需要
 	 */
 	@ApiField("merchant_pid")
 	private String merchantPid;
+
+	/**
+	 * 操作者uid
+	 */
+	@ApiField("operate_open_id")
+	private String operateOpenId;
 
 	/**
 	 * 操作者uid
@@ -36,6 +42,13 @@ public class AlipayCommerceYuntaskResumeModel extends AlipayObject {
 	}
 	public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
+	}
+
+	public String getOperateOpenId() {
+		return this.operateOpenId;
+	}
+	public void setOperateOpenId(String operateOpenId) {
+		this.operateOpenId = operateOpenId;
 	}
 
 	public String getOperateUserId() {

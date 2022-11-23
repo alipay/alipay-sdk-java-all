@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业场景运营权益申请
  *
  * @author auto create
- * @since 1.0, 2022-09-23 15:45:38
+ * @since 1.0, 2022-11-16 11:13:49
  */
 public class AlipayCommerceOperationContentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7236595557968992611L;
+	private static final long serialVersionUID = 2125518668746846189L;
 
 	/**
 	 * 展台
@@ -44,6 +44,12 @@ prize_id : 奖品 id , ( 指定奖品返奖场景 )
 	 */
 	@ApiField("ext_params")
 	private String extParams;
+
+	/**
+	 * 蚂蚁统一open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号，只由可由字母、数字、下划线组成。同一个活动中不可重复，相同的外部业务号会被幂等并返回之前的结果。不填时，系统会生成一个默认固定的外部业务号。
@@ -102,6 +108,13 @@ prize_id : 奖品 id , ( 指定奖品返奖场景 )
 	}
 	public void setExtParams(String extParams) {
 		this.extParams = extParams;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.enterpriseconsume.summaryinvoicedetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-05 11:41:05
+ * @since 1.0, 2022-11-18 20:10:25
  */
 public class AlipayEbppInvoiceEnterpriseconsumeSummaryinvoicedetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7383333268219892227L;
+	private static final long serialVersionUID = 3725867153872174674L;
 
 	/** 
 	 * 企业汇总场景下，即企业ID
@@ -88,7 +88,7 @@ public class AlipayEbppInvoiceEnterpriseconsumeSummaryinvoicedetailQueryResponse
 	private String summaryId;
 
 	/** 
-	 * 企业汇总场景下，即企业ID（建议使用account_id）
+	 * 企业汇总场景下，即企业ID（请使用account_id）
 	 */
 	@ApiField("user_id")
 	private String userId;

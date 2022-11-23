@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2022-11-04 16:25:20
+ * @since 1.0, 2022-11-18 15:10:40
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5478695598515283646L;
+	private static final long serialVersionUID = 7385327811779799687L;
 
 	/**
 	 * 共同账户ID
@@ -147,6 +147,12 @@ public class EcConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("merchant_name")
 	private String merchantName;
+
+	/**
+	 * 员工支付宝UID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单完结标识
@@ -385,6 +391,13 @@ OTHER：其他
 	}
 	public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderCompleteLabel() {

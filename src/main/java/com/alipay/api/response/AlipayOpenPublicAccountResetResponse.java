@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.account.reset response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-14 11:26:29
+ * @since 1.0, 2022-11-18 15:56:36
  */
 public class AlipayOpenPublicAccountResetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2327838497891783747L;
+	private static final long serialVersionUID = 4174173441754778649L;
 
 	/** 
 	 * 重置后的协议号，商户会员在支付宝服务窗账号中的唯一标识

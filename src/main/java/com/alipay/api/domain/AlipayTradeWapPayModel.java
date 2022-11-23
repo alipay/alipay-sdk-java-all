@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2022-09-02 16:05:46
+ * @since 1.0, 2022-11-21 17:19:43
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6434833663353892311L;
+	private static final long serialVersionUID = 4342375124872842966L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -190,7 +190,7 @@ json格式，详见结算参数说明，以下两种场景必传：
 
 	/**
 	 * 订单绝对超时时间。
-格式为yyyy-MM-dd HH:mm:ss。
+格式为yyyy-MM-dd HH:mm:ss。超时时间范围：1m~15d。
 注：time_express和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
 	 */
 	@ApiField("time_expire")

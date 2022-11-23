@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-14 09:56:43
+ * @since 1.0, 2022-11-21 20:01:37
  */
 public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4113461956652296666L;
+	private static final long serialVersionUID = 6198793455641629352L;
 
 	/** 
 	 * 该笔资金操作流水operation_id对应的操作金额，单位为：元（人民币）
@@ -123,6 +123,12 @@ PAY：支付
 	 */
 	@ApiField("payer_logon_id")
 	private String payerLogonId;
+
+	/** 
+	 * 支付宝openId，用户（userId）在应用（appId）下的唯一标识。
+	 */
+	@ApiField("payer_open_id")
+	private String payerOpenId;
 
 	/** 
 	 * 付款方支付宝账号对应的支付宝唯一用户号，以2088开头的16位纯数字组成
@@ -329,6 +335,13 @@ CLOSED：关闭
 	}
 	public String getPayerLogonId( ) {
 		return this.payerLogonId;
+	}
+
+	public void setPayerOpenId(String payerOpenId) {
+		this.payerOpenId = payerOpenId;
+	}
+	public String getPayerOpenId( ) {
+		return this.payerOpenId;
 	}
 
 	public void setPayerUserId(String payerUserId) {

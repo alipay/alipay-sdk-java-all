@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易订单中，对应的商品列表中有对应的环保类型，能量发放结果
  *
  * @author auto create
- * @since 1.0, 2022-06-14 17:19:40
+ * @since 1.0, 2022-11-18 13:39:52
  */
 public class OrderGoodDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4446923152342485397L;
+	private static final long serialVersionUID = 7528178453994579429L;
 
 	/**
 	 * 对应订单有环保类型时，能量发放结果

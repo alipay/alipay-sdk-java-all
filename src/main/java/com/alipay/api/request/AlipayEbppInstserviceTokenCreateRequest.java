@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.instservice.token.create request
  * 
  * @author auto create
- * @since 1.0, 2022-09-14 17:16:09
+ * @since 1.0, 2022-11-21 15:26:41
  */
 public class AlipayEbppInstserviceTokenCreateRequest implements AlipayRequest<AlipayEbppInstserviceTokenCreateResponse> {
 

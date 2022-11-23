@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻约定BC场景履约事件同步
  *
  * @author auto create
- * @since 1.0, 2022-11-11 17:57:23
+ * @since 1.0, 2022-11-16 15:38:15
  */
 public class ZhimaCustomerFulfillmentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4225765642818584834L;
+	private static final long serialVersionUID = 3521338216786878943L;
 
 	/**
 	 * 扩展参数
@@ -26,6 +26,12 @@ public class ZhimaCustomerFulfillmentSyncModel extends AlipayObject {
 	 */
 	@ApiField("gmt_service")
 	private Date gmtService;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 芝麻信用service_id,由芝麻信用提供
@@ -75,6 +81,13 @@ public class ZhimaCustomerFulfillmentSyncModel extends AlipayObject {
 	}
 	public void setGmtService(Date gmtService) {
 		this.gmtService = gmtService;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getServiceId() {

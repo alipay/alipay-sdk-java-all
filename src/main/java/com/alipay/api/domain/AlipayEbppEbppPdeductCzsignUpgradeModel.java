@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值协议升级接口
  *
  * @author auto create
- * @since 1.0, 2020-06-23 14:18:49
+ * @since 1.0, 2022-11-18 16:55:15
  */
 public class AlipayEbppEbppPdeductCzsignUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6585977554975493854L;
+	private static final long serialVersionUID = 6756982643743529694L;
 
 	/**
 	 * 行业代扣协议ID
 	 */
 	@ApiField("agreement_id")
 	private String agreementId;
+
+	/**
+	 * 修复的金额数字
+	 */
+	@ApiField("fix_amount")
+	private Long fixAmount;
 
 	/**
 	 * 机构PID
@@ -30,6 +36,13 @@ public class AlipayEbppEbppPdeductCzsignUpgradeModel extends AlipayObject {
 	}
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
+	}
+
+	public Long getFixAmount() {
+		return this.fixAmount;
+	}
+	public void setFixAmount(Long fixAmount) {
+		this.fixAmount = fixAmount;
 	}
 
 	public String getPid() {

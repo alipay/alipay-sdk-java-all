@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻go商户数据回传
  *
  * @author auto create
- * @since 1.0, 2021-03-11 15:07:04
+ * @since 1.0, 2022-11-16 12:01:31
  */
 public class ZhimaCreditPeZmgoCumulationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1416366675346492591L;
+	private static final long serialVersionUID = 4284999485153246923L;
 
 	/**
 	 * 芝麻go协议号，唯一标识一个芝麻go协议。为必传入参。
@@ -63,6 +63,12 @@ public class ZhimaCreditPeZmgoCumulationSyncModel extends AlipayObject {
 	 */
 	@ApiField("has_alipay_trade")
 	private Boolean hasAlipayTrade;
+
+	/**
+	 * 用户userId，蚂蚁统一会员ID，为必传入参。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号。需保证唯一，为必传入参。
@@ -149,6 +155,13 @@ public class ZhimaCreditPeZmgoCumulationSyncModel extends AlipayObject {
 	}
 	public void setHasAlipayTrade(Boolean hasAlipayTrade) {
 		this.hasAlipayTrade = hasAlipayTrade;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

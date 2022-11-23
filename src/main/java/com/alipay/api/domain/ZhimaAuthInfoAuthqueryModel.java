@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询是否授权的接口
  *
  * @author auto create
- * @since 1.0, 2018-09-20 15:02:28
+ * @since 1.0, 2022-11-17 15:21:49
  */
 public class ZhimaAuthInfoAuthqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3676212441765142756L;
+	private static final long serialVersionUID = 6852739751328685764L;
 
 	/**
 	 * 当前授权查询的类型，分为企业信用产品授权查询和个人信用产品授权查询；默认为个人信用授权查询即为C2B。枚举如下：

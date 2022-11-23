@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC订单签约信息查询
  *
  * @author auto create
- * @since 1.0, 2022-06-23 10:37:16
+ * @since 1.0, 2022-11-23 13:27:16
  */
 public class AlipayCommerceTransportEtcSigninfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7745559971856774355L;
+	private static final long serialVersionUID = 2768168181635782143L;
 
 	/**
 	 * 支付宝ETC订单号
 	 */
 	@ApiField("alipay_order_id")
 	private String alipayOrderId;
+
+	/**
+	 * 蚂蚁会员统一ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户ETC订单号
@@ -36,6 +42,13 @@ public class AlipayCommerceTransportEtcSigninfoQueryModel extends AlipayObject {
 	}
 	public void setAlipayOrderId(String alipayOrderId) {
 		this.alipayOrderId = alipayOrderId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutOrderId() {

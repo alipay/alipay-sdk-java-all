@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证信息查询
  *
  * @author auto create
- * @since 1.0, 2022-11-02 10:21:09
+ * @since 1.0, 2022-11-16 11:46:26
  */
 public class ZhimaCustomerJobworthInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8239345416485991965L;
+	private static final long serialVersionUID = 2892486688423518968L;
 
 	/**
 	 * 若用户没有开通工作证或者芝麻，成功开通后回跳的链接 ，支持http或schema地址
@@ -87,6 +87,13 @@ public class ZhimaCustomerJobworthInfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("ka_visitor_id")
 	private String kaVisitorId;
+
+	/**
+	 * 蚂蚁统一会员ID ，为2088开头的唯一标识
+选择支付宝uid检验时必传，支付宝uid或身份证+身份证类型 查询2选1，都设置时uid优先
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID ，为2088开头的唯一标识
@@ -204,6 +211,13 @@ C = company  or P = person
 	}
 	public void setKaVisitorId(String kaVisitorId) {
 		this.kaVisitorId = kaVisitorId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 点餐菜品推荐
  *
  * @author auto create
- * @since 1.0, 2022-06-21 16:52:32
+ * @since 1.0, 2022-11-22 14:59:43
  */
 public class KoubeiCateringDishRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1465799896288873193L;
+	private static final long serialVersionUID = 5416382619437187319L;
 
 	/**
 	 * 【已废弃】用户已点的主菜品ID，传入时作为推荐菜品参考。

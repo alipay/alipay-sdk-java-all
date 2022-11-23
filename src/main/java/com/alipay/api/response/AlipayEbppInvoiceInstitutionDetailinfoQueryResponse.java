@@ -13,11 +13,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.detailinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 19:36:36
+ * @since 1.0, 2022-11-18 23:41:33
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5151424376672328699L;
+	private static final long serialVersionUID = 2689986919144143371L;
+
+	/** 
+	 * 制度启用停用状态
+0-停用，1-启用
+	 */
+	@ApiField("effective")
+	private String effective;
 
 	/** 
 	 * 制度生效结束时间，最小粒度为天，结束时间不早于起始时间，时分秒必须为23:59:59，最晚不超过2222-01-01 23:59:59
@@ -76,10 +83,17 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	private List<StandardInfo> standardInfoDetailList;
 
 	/** 
-	 * 使用规则列表
+	 * 使用规则列表（已废弃，请使用：standard_info_detail_list）
 	 */
 	@ApiField("standard_info_list")
 	private StandardInfo standardInfoList;
+
+	public void setEffective(String effective) {
+		this.effective = effective;
+	}
+	public String getEffective( ) {
+		return this.effective;
+	}
 
 	public void setEffectiveEndDate(Date effectiveEndDate) {
 		this.effectiveEndDate = effectiveEndDate;

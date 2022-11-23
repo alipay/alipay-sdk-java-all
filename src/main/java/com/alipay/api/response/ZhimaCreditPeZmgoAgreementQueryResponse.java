@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-24 11:14:31
+ * @since 1.0, 2022-11-15 20:51:41
  */
 public class ZhimaCreditPeZmgoAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5539621627374585858L;
+	private static final long serialVersionUID = 4639484294817846277L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花芝轻会员协议号。
@@ -44,6 +44,12 @@ public class ZhimaCreditPeZmgoAgreementQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/** 
+	 * 支付宝用户userId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 该条芝麻GO协议签约时间
@@ -90,6 +96,13 @@ public class ZhimaCreditPeZmgoAgreementQueryResponse extends AlipayResponse {
 	}
 	public String getBizType( ) {
 		return this.bizType;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setSignTime(Date signTime) {

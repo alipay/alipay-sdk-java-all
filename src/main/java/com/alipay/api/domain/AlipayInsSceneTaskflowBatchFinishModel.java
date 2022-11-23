@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量失效任务流水
  *
  * @author auto create
- * @since 1.0, 2020-07-27 22:20:57
+ * @since 1.0, 2022-11-15 19:58:10
  */
 public class AlipayInsSceneTaskflowBatchFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8411468777393357612L;
+	private static final long serialVersionUID = 8147368413799354483L;
 
 	/**
 	 * 扩展信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡消费记录
  *
  * @author auto create
- * @since 1.0, 2022-09-27 19:14:08
+ * @since 1.0, 2022-11-18 19:58:49
  */
 public class TimeCardConsumerRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5547478232932417599L;
+	private static final long serialVersionUID = 8365171224228252598L;
 
 	/**
 	 * 金额
@@ -48,6 +48,12 @@ public class TimeCardConsumerRecordInfo extends AlipayObject {
 	 */
 	@ApiField("log_type")
 	private String logType;
+
+	/**
+	 * 用户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务标识
@@ -107,6 +113,13 @@ public class TimeCardConsumerRecordInfo extends AlipayObject {
 	}
 	public void setLogType(String logType) {
 		this.logType = logType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

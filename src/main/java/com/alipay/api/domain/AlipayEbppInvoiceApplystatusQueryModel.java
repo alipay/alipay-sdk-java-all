@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据外部订单号查询开票状态
  *
  * @author auto create
- * @since 1.0, 2020-08-29 14:47:50
+ * @since 1.0, 2022-11-19 16:11:48
  */
 public class AlipayEbppInvoiceApplystatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7368823563194561886L;
+	private static final long serialVersionUID = 8173993188961191571L;
 
 	/**
 	 * 定义商户的一级简称,用于标识商户品牌，对应于商户入驻时填写的"商户品牌简称"。 如：肯德基：KFC

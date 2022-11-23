@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalop.ucdp.apeitem.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 16:36:31
+ * @since 1.0, 2022-11-18 18:11:35
  */
 public class AlipayDigitalopUcdpApeitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4315756261867477493L;
+	private static final long serialVersionUID = 5122571552629914863L;
 
 	/** 
 	 * 可推荐的商品总数

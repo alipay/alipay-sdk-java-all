@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理图片等其他资源获取
  *
  * @author auto create
- * @since 1.0, 2022-02-17 18:30:55
+ * @since 1.0, 2022-11-18 10:29:14
  */
 public class AlipayCommerceTransportEtcResouceGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6227862929593366179L;
+	private static final long serialVersionUID = 8856466425972558193L;
 
 	/**
 	 * 业务标识。 

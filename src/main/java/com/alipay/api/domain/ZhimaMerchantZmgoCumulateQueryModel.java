@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 累计数据查询接口
  *
  * @author auto create
- * @since 1.0, 2022-10-10 14:06:54
+ * @since 1.0, 2022-11-15 20:13:14
  */
 public class ZhimaMerchantZmgoCumulateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8878792346229998276L;
+	private static final long serialVersionUID = 5226369721429243286L;
 
 	/**
 	 * 芝麻go协议号，唯一标识一个芝麻go协议。
@@ -26,6 +26,12 @@ public class ZhimaMerchantZmgoCumulateQueryModel extends AlipayObject {
 	 */
 	@ApiField("need_detail")
 	private Boolean needDetail;
+
+	/**
+	 * 用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 分页参数，当need_detail=true时需要，代表当前页数，从1开始。
@@ -63,6 +69,13 @@ public class ZhimaMerchantZmgoCumulateQueryModel extends AlipayObject {
 	}
 	public void setNeedDetail(Boolean needDetail) {
 		this.needDetail = needDetail;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getPageNo() {

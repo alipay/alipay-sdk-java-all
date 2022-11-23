@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定损宝查询图像定损结果
  *
  * @author auto create
- * @since 1.0, 2021-03-08 11:21:34
+ * @since 1.0, 2022-11-21 15:17:13
  */
 public class AlipayInsDataDsbEstimateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5235482774146799295L;
+	private static final long serialVersionUID = 5865918386347874971L;
 
 	/**
 	 * 定损单号

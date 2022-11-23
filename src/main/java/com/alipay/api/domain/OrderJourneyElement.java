@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 行程元素
  *
  * @author auto create
- * @since 1.0, 2021-01-20 20:08:55
+ * @since 1.0, 2022-11-17 20:03:46
  */
 public class OrderJourneyElement extends AlipayObject {
 
-	private static final long serialVersionUID = 3221724475539286488L;
+	private static final long serialVersionUID = 3124413378219783796L;
 
 	/**
 	 * 达到地信息

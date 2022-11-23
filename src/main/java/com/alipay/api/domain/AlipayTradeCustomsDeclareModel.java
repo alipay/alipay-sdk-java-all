@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单报关接口
  *
  * @author auto create
- * @since 1.0, 2022-08-01 19:11:48
+ * @since 1.0, 2022-11-21 17:14:14
  */
 public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4565588461189112237L;
+	private static final long serialVersionUID = 8383545656185196177L;
 
 	/**
 	 * 报关金额，单位为人民币“元”，精确到小数点后2位。
@@ -36,6 +36,12 @@ public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 	 */
 	@ApiField("declare_mode")
 	private Long declareMode;
+
+	/**
+	 * 定金在支付宝系统中的交易流水号，最长64位。当该参数不为空时，代表为”定金+尾款“报关场景。
+	 */
+	@ApiField("deposit_trade_no")
+	private String depositTradeNo;
 
 	/**
 	 * 商户控制本单是否拆单的报关参数。
@@ -113,6 +119,13 @@ public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 	}
 	public void setDeclareMode(Long declareMode) {
 		this.declareMode = declareMode;
+	}
+
+	public String getDepositTradeNo() {
+		return this.depositTradeNo;
+	}
+	public void setDepositTradeNo(String depositTradeNo) {
+		this.depositTradeNo = depositTradeNo;
 	}
 
 	public String getIsSplit() {

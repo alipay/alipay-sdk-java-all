@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.yuntask.refuse request
  * 
  * @author auto create
- * @since 1.0, 2022-06-27 11:26:45
+ * @since 1.0, 2022-11-16 19:41:33
  */
 public class AlipayCommerceYuntaskRefuseRequest implements AlipayRequest<AlipayCommerceYuntaskRefuseResponse> {
 

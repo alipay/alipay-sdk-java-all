@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 灵活用工批量投保
  *
  * @author auto create
- * @since 1.0, 2022-08-22 13:36:13
+ * @since 1.0, 2022-11-17 19:22:50
  */
 public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5233236294656881784L;
+	private static final long serialVersionUID = 4254125516873571453L;
 
 	/**
 	 * 批次号
@@ -24,7 +24,7 @@ public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject
 	private String batchNo;
 
 	/**
-	 * 渠道
+	 * 渠道，对接时由蚂蚁保技术提供
 	 */
 	@ApiField("channel")
 	private String channel;
@@ -79,7 +79,7 @@ public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject
 	private String recomFlowNo;
 
 	/**
-	 * 投保场景
+	 * 投保场景，对接时由蚂蚁保技术提供
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

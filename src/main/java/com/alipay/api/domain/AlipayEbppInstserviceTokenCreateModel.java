@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣预签约token生成接口
  *
  * @author auto create
- * @since 1.0, 2022-05-19 09:55:50
+ * @since 1.0, 2022-11-21 15:22:49
  */
 public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1554538584536113894L;
+	private static final long serialVersionUID = 6138911492815146318L;
 
 	/**
 	 * 签约来源渠道，接入时与代扣约定
@@ -30,6 +30,15 @@ public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("bill_key")
 	private String billKey;
+
+	/**
+	 * 可传：固定充/低额充/账单充（
+低额充：THRESHOLD_DEDUCT、
+固定充：REGULAR_QUOTA_DEDUCT、
+账单充：BILL_DEDUCT )，仅支持传英文
+	 */
+	@ApiField("bill_type")
+	private String billType;
 
 	/**
 	 * 业务场景：flow(流量)、voice(语音话费)、telephone(固话)
@@ -122,6 +131,13 @@ public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 	}
 	public void setBillKey(String billKey) {
 		this.billKey = billKey;
+	}
+
+	public String getBillType() {
+		return this.billType;
+	}
+	public void setBillType(String billType) {
+		this.billType = billType;
 	}
 
 	public String getBizScene() {

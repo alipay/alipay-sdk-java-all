@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模板订阅关系查询
  *
  * @author auto create
- * @since 1.0, 2022-06-22 01:16:46
+ * @since 1.0, 2022-11-18 14:51:14
  */
 public class AlipayOpenAppMessagetemplateSubscribeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7167162833646312792L;
+	private static final long serialVersionUID = 7178635663911338572L;
+
+	/**
+	 * 支付宝openId，用于支付宝用户在当前应用下的用户标识。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 消息模板id，可以填写多个，最多不超过3个。模板id需要保持同一个应用主体，并且展示在同一个订阅组件中的模板id。
@@ -26,10 +32,16 @@ public class AlipayOpenAppMessagetemplateSubscribeQueryModel extends AlipayObjec
 
 	/**
 	 * 订阅消息模板用户的支付宝唯一标识，2088开头。
-
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public List<String> getTemplateIdList() {
 		return this.templateIdList;

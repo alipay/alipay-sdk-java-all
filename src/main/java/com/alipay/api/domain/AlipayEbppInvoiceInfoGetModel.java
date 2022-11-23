@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子发票查询接口
  *
  * @author auto create
- * @since 1.0, 2020-05-20 15:50:38
+ * @since 1.0, 2022-11-22 20:23:32
  */
 public class AlipayEbppInvoiceInfoGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5643918322244566711L;
+	private static final long serialVersionUID = 5158124115114669632L;
 
 	/**
 	 * 发票代码
@@ -24,6 +24,12 @@ public class AlipayEbppInvoiceInfoGetModel extends AlipayObject {
 	 */
 	@ApiField("invoice_no")
 	private String invoiceNo;
+
+	/**
+	 * 用户id，当用户发起发票查询时，可以先通过用户授权获取当前访问用户的userId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 用户id，当用户发起发票查询时，可以先通过用户授权获取当前访问用户的userId
@@ -43,6 +49,13 @@ public class AlipayEbppInvoiceInfoGetModel extends AlipayObject {
 	}
 	public void setInvoiceNo(String invoiceNo) {
 		this.invoiceNo = invoiceNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

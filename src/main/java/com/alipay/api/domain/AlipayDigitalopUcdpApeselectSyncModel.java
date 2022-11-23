@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape选品数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-11-02 14:24:09
+ * @since 1.0, 2022-11-16 22:06:16
  */
 public class AlipayDigitalopUcdpApeselectSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4227326351885691643L;
+	private static final long serialVersionUID = 3713743115566321813L;
 
 	/**
 	 * 商家在蚂蚁推荐引擎创建的项目id，调用前需要找蚂蚁技术获取。

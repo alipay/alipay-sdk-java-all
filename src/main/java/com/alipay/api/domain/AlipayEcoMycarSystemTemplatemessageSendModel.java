@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 系统模板消息发送
  *
  * @author auto create
- * @since 1.0, 2022-05-09 16:42:47
+ * @since 1.0, 2022-11-18 21:27:15
  */
 public class AlipayEcoMycarSystemTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6798595723371729122L;
+	private static final long serialVersionUID = 4291387794912938564L;
 
 	/**
 	 * 消息类容
@@ -47,6 +47,12 @@ public class AlipayEcoMycarSystemTemplatemessageSendModel extends AlipayObject {
 	 */
 	@ApiField("msg_type")
 	private String msgType;
+
+	/**
+	 * 支付宝用户openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 跳转消息详情所需要的动态参数
@@ -93,6 +99,13 @@ public class AlipayEcoMycarSystemTemplatemessageSendModel extends AlipayObject {
 	}
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getParams() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单周期数据查询
  *
  * @author auto create
- * @since 1.0, 2021-10-26 22:24:50
+ * @since 1.0, 2022-11-16 19:31:17
  */
 public class AlipayPcreditHuabeiAuthAccumulationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8199973378127873863L;
+	private static final long serialVersionUID = 4155184462668496621L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。
@@ -24,6 +24,12 @@ public class AlipayPcreditHuabeiAuthAccumulationQueryModel extends AlipayObject 
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 买家在支付宝的用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 协议结算周期，使用支付宝端回传的周期信息。
@@ -43,6 +49,13 @@ public class AlipayPcreditHuabeiAuthAccumulationQueryModel extends AlipayObject 
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPeriod() {

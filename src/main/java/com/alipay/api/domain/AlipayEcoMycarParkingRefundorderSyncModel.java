@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车退款订单同步接口
  *
  * @author auto create
- * @since 1.0, 2022-10-12 15:39:12
+ * @since 1.0, 2022-11-16 14:41:50
  */
 public class AlipayEcoMycarParkingRefundorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1728484421449995659L;
+	private static final long serialVersionUID = 8315518988455992681L;
 
 	/**
 	 * 订单对应的车牌号
 	 */
 	@ApiField("car_number")
 	private String carNumber;
+
+	/**
+	 * 应用维度用户ID，唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝支付流水trade_no，系统唯一
@@ -54,6 +60,13 @@ public class AlipayEcoMycarParkingRefundorderSyncModel extends AlipayObject {
 	}
 	public void setCarNumber(String carNumber) {
 		this.carNumber = carNumber;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderNo() {

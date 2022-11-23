@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单信息同步
  *
  * @author auto create
- * @since 1.0, 2022-06-24 19:41:59
+ * @since 1.0, 2022-11-22 19:18:16
  */
 public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8826124827713999782L;
+	private static final long serialVersionUID = 1897495817792541136L;
 
 	/**
 	 * 支付宝ETC平台扣款协议号，与order_id参数 二选一。
@@ -78,6 +78,12 @@ public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject 
 	 */
 	@ApiField("need_refund")
 	private Boolean needRefund;
+
+	/**
+	 * 蚂蚁会员统一ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝侧订单号
@@ -269,6 +275,13 @@ CANCEL：取消；
 	}
 	public void setNeedRefund(Boolean needRefund) {
 		this.needRefund = needRefund;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderId() {

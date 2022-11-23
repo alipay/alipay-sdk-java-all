@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 玩一玩游戏中心平台存量数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-09-22 19:13:14
+ * @since 1.0, 2022-11-18 15:29:16
  */
 public class AlipayUserGamecenterHistorygameactionSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6729381326137822364L;
+	private static final long serialVersionUID = 4757539296297318899L;
 
 	/**
 	 * 在第三方游戏中，用户在游戏中的行动编码。
@@ -38,6 +38,12 @@ public class AlipayUserGamecenterHistorygameactionSubmitModel extends AlipayObje
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 商户app_id维度下的用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 数据的全局唯一标识。用于幂等
@@ -71,6 +77,13 @@ public class AlipayUserGamecenterHistorygameactionSubmitModel extends AlipayObje
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

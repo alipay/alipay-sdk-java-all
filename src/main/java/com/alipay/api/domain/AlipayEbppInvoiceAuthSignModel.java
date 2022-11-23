@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票授权关系同步
  *
  * @author auto create
- * @since 1.0, 2020-05-20 15:40:34
+ * @since 1.0, 2022-11-19 16:25:15
  */
 public class AlipayEbppInvoiceAuthSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6252762315392755925L;
+	private static final long serialVersionUID = 1745946861568321356L;
 
 	/**
 	 * 发票授权类型，可选值：INVOICE_AUTO_SYNC（发票自动回传）
@@ -32,6 +32,12 @@ INVOICE_TWOWAY_AUTO_SYNC（发票双向自动回传）
 	 */
 	@ApiField("m_short_name")
 	private String mShortName;
+
+	/**
+	 * 支付宝用户userId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝用户userId
@@ -58,6 +64,13 @@ INVOICE_TWOWAY_AUTO_SYNC（发票双向自动回传）
 	}
 	public void setmShortName(String mShortName) {
 		this.mShortName = mShortName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

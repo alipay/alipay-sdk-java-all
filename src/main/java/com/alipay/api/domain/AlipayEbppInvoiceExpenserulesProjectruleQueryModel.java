@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询费控规则
  *
  * @author auto create
- * @since 1.0, 2022-10-10 14:30:14
+ * @since 1.0, 2022-11-18 23:35:16
  */
 public class AlipayEbppInvoiceExpenserulesProjectruleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2146558322477567777L;
+	private static final long serialVersionUID = 6646576433748334973L;
 
 	/**
-	 * 企业ID
+	 * 共同账号ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -30,6 +30,12 @@ public class AlipayEbppInvoiceExpenserulesProjectruleQueryModel extends AlipayOb
 	 */
 	@ApiField("employee_id")
 	private String employeeId;
+
+	/**
+	 * 切换open_id后请使用：员工open_id（可空）
+	 */
+	@ApiField("employee_open_id")
+	private String employeeOpenId;
 
 	/**
 	 * 页数
@@ -68,6 +74,13 @@ public class AlipayEbppInvoiceExpenserulesProjectruleQueryModel extends AlipayOb
 	}
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeOpenId() {
+		return this.employeeOpenId;
+	}
+	public void setEmployeeOpenId(String employeeOpenId) {
+		this.employeeOpenId = employeeOpenId;
 	}
 
 	public Long getPageNum() {

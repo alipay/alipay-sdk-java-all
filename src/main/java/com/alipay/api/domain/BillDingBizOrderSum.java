@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BillDingBizOrderSum extends AlipayObject {
 
-	private static final long serialVersionUID = 1246437668267789398L;
+	private static final long serialVersionUID = 2295254918731646531L;
 
 	/**
 	 * 日期展示, 月份2018-07,日期2018-07-10

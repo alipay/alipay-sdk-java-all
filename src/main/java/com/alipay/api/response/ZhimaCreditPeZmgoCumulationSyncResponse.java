@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.cumulation.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-11 15:07:04
+ * @since 1.0, 2022-11-16 12:59:02
  */
 public class ZhimaCreditPeZmgoCumulationSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8657571295437844356L;
+	private static final long serialVersionUID = 6339363142769184424L;
 
 	/** 
 	 * 芝麻go协议号，唯一标识一个芝麻go协议。
@@ -27,6 +27,13 @@ public class ZhimaCreditPeZmgoCumulationSyncResponse extends AlipayResponse {
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
+
+	/** 
+	 * 用户userId，蚂蚁统一会员ID。
+累计成功后返回此字段。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 外部业务号。需保证唯一，若接口调用失败，提示信息为更换幂等号，商户更换此字段重新发起调用。
@@ -54,6 +61,13 @@ public class ZhimaCreditPeZmgoCumulationSyncResponse extends AlipayResponse {
 	}
 	public String getFailReason( ) {
 		return this.failReason;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutBizNo(String outBizNo) {

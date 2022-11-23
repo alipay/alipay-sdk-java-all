@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.pdeduct.bill.pay.status response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 23:17:06
+ * @since 1.0, 2022-11-18 16:37:41
  */
 public class AlipayEbppPdeductBillPayStatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1258516333921198673L;
+	private static final long serialVersionUID = 1842971275635199741L;
 
 	/** 
 	 * 支付宝协议流水
 	 */
 	@ApiField("agreement_id")
 	private String agreementId;
+
+	/** 
+	 * 用户UserId在应用AppId下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 支付宝流billNo
@@ -58,6 +64,13 @@ public class AlipayEbppPdeductBillPayStatusResponse extends AlipayResponse {
 	}
 	public String getAgreementId( ) {
 		return this.agreementId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrderNo(String orderNo) {

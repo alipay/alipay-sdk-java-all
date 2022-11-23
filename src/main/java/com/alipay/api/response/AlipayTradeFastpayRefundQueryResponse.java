@@ -6,6 +6,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.DepositBackInfo;
 import com.alipay.api.domain.EnterprisePayInfo;
+import com.alipay.api.domain.RefundChargeInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.RefundRoyaltyResult;
 
@@ -15,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-28 17:45:11
+ * @since 1.0, 2022-11-21 20:06:37
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6689644855657819829L;
+	private static final long serialVersionUID = 4158954399249329518L;
 
 	/** 
 	 * 银行卡冲退信息；
@@ -109,6 +110,13 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_charge_amount")
 	private String refundChargeAmount;
+
+	/** 
+	 * 退费信息
+	 */
+	@ApiListField("refund_charge_info_list")
+	@ApiField("refund_charge_info")
+	private List<RefundChargeInfo> refundChargeInfoList;
 
 	/** 
 	 * 本次退款使用的资金渠道；
@@ -268,6 +276,13 @@ REFUND_SUCCESS 退款处理成功；
 	}
 	public String getRefundChargeAmount( ) {
 		return this.refundChargeAmount;
+	}
+
+	public void setRefundChargeInfoList(List<RefundChargeInfo> refundChargeInfoList) {
+		this.refundChargeInfoList = refundChargeInfoList;
+	}
+	public List<RefundChargeInfo> getRefundChargeInfoList( ) {
+		return this.refundChargeInfoList;
 	}
 
 	public void setRefundDetailItemList(List<TradeFundBill> refundDetailItemList) {

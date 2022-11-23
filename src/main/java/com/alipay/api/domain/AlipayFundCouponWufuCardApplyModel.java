@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 五福获取惊喜福卡
  *
  * @author auto create
- * @since 1.0, 2021-12-14 14:18:42
+ * @since 1.0, 2022-11-18 11:19:34
  */
 public class AlipayFundCouponWufuCardApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1639437532128153217L;
+	private static final long serialVersionUID = 4589473784583557543L;
 
 	/**
 	 * 唯一请求码

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建/编辑云店任务模版
  *
  * @author auto create
- * @since 1.0, 2022-08-18 10:27:14
+ * @since 1.0, 2022-11-16 19:52:15
  */
 public class AlipayCommerceYuntaskCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4498182413371973563L;
+	private static final long serialVersionUID = 6237794696818149788L;
 
 	/**
 	 * 小程序appid，支持带跳转链接
@@ -72,6 +72,12 @@ ALGOLADDER 算法阶梯
 	/**
 	 * 操作者uid
 	 */
+	@ApiField("operate_open_id")
+	private String operateOpenId;
+
+	/**
+	 * 操作者uid
+	 */
 	@ApiField("operate_user_id")
 	private String operateUserId;
 
@@ -98,6 +104,12 @@ ALGOLADDER 算法阶梯
 	 */
 	@ApiField("plan_info")
 	private PlanInfo planInfo;
+
+	/**
+	 * 支持统一物料码激励到店长, 默认false
+	 */
+	@ApiField("support_unified_material_code")
+	private Boolean supportUnifiedMaterialCode;
 
 	/**
 	 * 任务描述
@@ -193,6 +205,13 @@ IOT lot核销
 		this.merchantPid = merchantPid;
 	}
 
+	public String getOperateOpenId() {
+		return this.operateOpenId;
+	}
+	public void setOperateOpenId(String operateOpenId) {
+		this.operateOpenId = operateOpenId;
+	}
+
 	public String getOperateUserId() {
 		return this.operateUserId;
 	}
@@ -226,6 +245,13 @@ IOT lot核销
 	}
 	public void setPlanInfo(PlanInfo planInfo) {
 		this.planInfo = planInfo;
+	}
+
+	public Boolean getSupportUnifiedMaterialCode() {
+		return this.supportUnifiedMaterialCode;
+	}
+	public void setSupportUnifiedMaterialCode(Boolean supportUnifiedMaterialCode) {
+		this.supportUnifiedMaterialCode = supportUnifiedMaterialCode;
 	}
 
 	public String getTaskDesc() {

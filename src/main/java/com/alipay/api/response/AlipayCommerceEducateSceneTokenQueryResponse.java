@@ -10,17 +10,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.scene.token.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-11 14:06:43
+ * @since 1.0, 2022-11-17 14:56:34
  */
 public class AlipayCommerceEducateSceneTokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6324469452358222994L;
+	private static final long serialVersionUID = 1332811173269126892L;
 
 	/** 
 	 * 业务场景类型标识
 	 */
 	@ApiField("biz_code")
 	private String bizCode;
+
+	/** 
+	 * 刷脸用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 用户外部ID。（服务商内部唯一ID，唯一关联一位学生/教职工)
@@ -33,6 +39,12 @@ public class AlipayCommerceEducateSceneTokenQueryResponse extends AlipayResponse
 	 */
 	@ApiField("parent_logon_id")
 	private String parentLogonId;
+
+	/** 
+	 * 如果是父母为孩子开通，则为父母支付宝openid；如果是用户为本人开通，则为本人支付宝openid。
+	 */
+	@ApiField("parent_open_id")
+	private String parentOpenId;
 
 	/** 
 	 * 如果是父母为孩子开通，则为父母支付宝uid；如果是用户为本人开通，则为本人支付宝uid。
@@ -84,6 +96,13 @@ public class AlipayCommerceEducateSceneTokenQueryResponse extends AlipayResponse
 		return this.bizCode;
 	}
 
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
+	}
+
 	public void setOutUserId(String outUserId) {
 		this.outUserId = outUserId;
 	}
@@ -96,6 +115,13 @@ public class AlipayCommerceEducateSceneTokenQueryResponse extends AlipayResponse
 	}
 	public String getParentLogonId( ) {
 		return this.parentLogonId;
+	}
+
+	public void setParentOpenId(String parentOpenId) {
+		this.parentOpenId = parentOpenId;
+	}
+	public String getParentOpenId( ) {
+		return this.parentOpenId;
 	}
 
 	public void setParentUserId(String parentUserId) {

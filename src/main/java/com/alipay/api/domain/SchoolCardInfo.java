@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园卡基本信息
  *
  * @author auto create
- * @since 1.0, 2021-08-10 17:17:44
+ * @since 1.0, 2022-11-17 21:43:14
  */
 public class SchoolCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7821595993161923334L;
+	private static final long serialVersionUID = 5226964459191731613L;
 
 	/**
 	 * 支付宝校园卡卡号
@@ -54,6 +54,12 @@ public class SchoolCardInfo extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 支付宝用户的userId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 一卡通实体卡号
@@ -144,6 +150,13 @@ public class SchoolCardInfo extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPhysicalCardNumber() {

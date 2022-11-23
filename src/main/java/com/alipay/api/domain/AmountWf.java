@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * wf金额对象
  *
  * @author auto create
- * @since 1.0, 2022-05-17 10:00:38
+ * @since 1.0, 2022-11-18 17:17:17
  */
 public class AmountWf extends AlipayObject {
 
-	private static final long serialVersionUID = 7182325857475543441L;
+	private static final long serialVersionUID = 4423847132511689132L;
 
 	/**
 	 * 币种

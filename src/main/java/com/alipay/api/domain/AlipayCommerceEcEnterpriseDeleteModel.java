@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业注销
  *
  * @author auto create
- * @since 1.0, 2022-09-06 16:49:53
+ * @since 1.0, 2022-11-18 23:04:49
  */
 public class AlipayCommerceEcEnterpriseDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5726358394263219199L;
+	private static final long serialVersionUID = 2515777416214773322L;
 
 	/**
 	 * 企业id

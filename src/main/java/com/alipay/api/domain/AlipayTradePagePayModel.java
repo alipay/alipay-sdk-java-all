@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单下单并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2022-11-04 14:03:22
+ * @since 1.0, 2022-11-21 17:21:36
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6249963475488922838L;
+	private static final long serialVersionUID = 7546796722813445447L;
 
 	/**
 	 * 签约参数，支付后签约场景使用
@@ -202,7 +202,7 @@ PCWEB：PC端访问
 
 	/**
 	 * 订单绝对超时时间。
-格式为yyyy-MM-dd HH:mm:ss。
+格式为yyyy-MM-dd HH:mm:ss。超时时间范围：1m~15d。
 注：time_expire和timeout_express两者只需传入一个或者都不传，两者均传入时，优先使用time_expire。
 	 */
 	@ApiField("time_expire")

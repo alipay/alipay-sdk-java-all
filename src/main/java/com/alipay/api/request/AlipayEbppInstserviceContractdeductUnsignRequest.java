@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.instservice.contractdeduct.unsign request
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 16:57:11
+ * @since 1.0, 2022-11-21 15:51:42
  */
 public class AlipayEbppInstserviceContractdeductUnsignRequest implements AlipayRequest<AlipayEbppInstserviceContractdeductUnsignResponse> {
 

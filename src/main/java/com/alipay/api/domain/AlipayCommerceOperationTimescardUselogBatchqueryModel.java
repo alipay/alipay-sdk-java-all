@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡使用记录查询
  *
  * @author auto create
- * @since 1.0, 2022-09-27 17:25:58
+ * @since 1.0, 2022-11-18 19:58:15
  */
 public class AlipayCommerceOperationTimescardUselogBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2377846932936122541L;
+	private static final long serialVersionUID = 3516385369868139748L;
 
 	/**
 	 * 卡号
@@ -30,6 +30,12 @@ public class AlipayCommerceOperationTimescardUselogBatchqueryModel extends Alipa
 	 */
 	@ApiField("log_time_start")
 	private String logTimeStart;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 分页码
@@ -74,6 +80,13 @@ public class AlipayCommerceOperationTimescardUselogBatchqueryModel extends Alipa
 	}
 	public void setLogTimeStart(String logTimeStart) {
 		this.logTimeStart = logTimeStart;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getPageNum() {

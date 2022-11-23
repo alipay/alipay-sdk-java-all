@@ -9,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.twostage.common.use response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-20 18:41:37
+ * @since 1.0, 2022-11-22 16:56:34
  */
 public class AlipayUserTwostageCommonUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5525925255921317157L;
+	private static final long serialVersionUID = 8432328961895793547L;
+
+	/** 
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 支付宝用户userId信息，因为用户已经在客户端给商户的小程序授权了，并且商户要通过userId信息挂接优惠券信息，所以可以无需脱敏返回给商户。
@@ -26,6 +32,13 @@ public class AlipayUserTwostageCommonUseResponse extends AlipayResponse {
 	 */
 	@ApiField("user_identity_info")
 	private UserIdentityInfo userIdentityInfo;
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
+	}
 
 	public void setUserId(String userId) {
 		this.userId = userId;

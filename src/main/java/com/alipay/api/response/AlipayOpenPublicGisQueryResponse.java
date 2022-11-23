@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.gis.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-14 11:26:49
+ * @since 1.0, 2022-11-18 15:56:36
  */
 public class AlipayOpenPublicGisQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7333236395254272353L;
+	private static final long serialVersionUID = 2417445761295846683L;
 
 	/** 
 	 * 精确度

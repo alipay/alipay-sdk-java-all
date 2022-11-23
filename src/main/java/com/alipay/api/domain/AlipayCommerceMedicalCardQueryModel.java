@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗机构根据用户userId查询该账户的医保卡相关信息
  *
  * @author auto create
- * @since 1.0, 2020-10-19 19:57:47
+ * @since 1.0, 2022-11-14 20:36:56
  */
 public class AlipayCommerceMedicalCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2697427911649776775L;
+	private static final long serialVersionUID = 5448924582762958417L;
 
 	/**
 	 * 支付授权码
@@ -44,6 +44,13 @@ public class AlipayCommerceMedicalCardQueryModel extends AlipayObject {
 	 */
 	@ApiField("ins_type")
 	private String insType;
+
+	/**
+	 * 买家支付宝账号对应的支付宝唯一用户号。
+以2088开头的纯16位数字。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 跳回的地址
@@ -99,6 +106,13 @@ public class AlipayCommerceMedicalCardQueryModel extends AlipayObject {
 	}
 	public void setInsType(String insType) {
 		this.insType = insType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getReturnUrl() {

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预咨询接口
  *
  * @author auto create
- * @since 1.0, 2021-09-26 20:14:40
+ * @since 1.0, 2022-11-16 16:50:49
  */
 public class ZhimaCreditPeZmgoPreConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8226658956432292913L;
+	private static final long serialVersionUID = 3784183413679924465L;
 
 	/**
 	 * 用户id
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户ID
@@ -48,6 +54,13 @@ public class ZhimaCreditPeZmgoPreConsultModel extends AlipayObject {
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPartnerId() {

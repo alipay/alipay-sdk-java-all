@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 16:12:30
+ * @since 1.0, 2022-11-18 16:16:37
  */
 public class AlipayFundJointaccountDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5867192617184139664L;
+	private static final long serialVersionUID = 6668551888714146963L;
 
 	/** 
 	 * 合花群ID（支付宝侧生成）
@@ -79,6 +79,12 @@ public class AlipayFundJointaccountDetailQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("creator_id")
 	private String creatorId;
+
+	/** 
+	 * （创建人）支付宝侧用户唯一标识
+	 */
+	@ApiField("creator_open_id")
+	private String creatorOpenId;
 
 	/** 
 	 * （创建人）商户侧用户唯一标识<br>
@@ -192,6 +198,13 @@ public class AlipayFundJointaccountDetailQueryResponse extends AlipayResponse {
 	}
 	public String getCreatorId( ) {
 		return this.creatorId;
+	}
+
+	public void setCreatorOpenId(String creatorOpenId) {
+		this.creatorOpenId = creatorOpenId;
+	}
+	public String getCreatorOpenId( ) {
+		return this.creatorOpenId;
 	}
 
 	public void setCreatorOutId(String creatorOutId) {

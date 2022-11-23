@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 包含员工和抬头关系的模型
  *
  * @author auto create
- * @since 1.0, 2022-11-03 23:08:23
+ * @since 1.0, 2022-11-17 16:47:07
  */
 public class EmployeeTitleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5193124927264377129L;
+	private static final long serialVersionUID = 4893615771851243167L;
 
 	/**
 	 * 共同账户id,与enterprise_id两者必填其一
@@ -42,6 +42,12 @@ public class EmployeeTitleDTO extends AlipayObject {
 	 */
 	@ApiField("modify_by")
 	private String modifyBy;
+
+	/**
+	 * 员工支付宝账号open_id,与employee_id两者必填其一
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 抬头id
@@ -94,6 +100,13 @@ public class EmployeeTitleDTO extends AlipayObject {
 	}
 	public void setModifyBy(String modifyBy) {
 		this.modifyBy = modifyBy;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getTitleId() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险消费门户权益流水创建
  *
  * @author auto create
- * @since 1.0, 2020-07-27 22:20:49
+ * @since 1.0, 2022-11-15 19:58:24
  */
 public class AlipayInsSceneTaskflowBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5478285726852883873L;
+	private static final long serialVersionUID = 2561153217314948457L;
 
 	/**
 	 * 数量

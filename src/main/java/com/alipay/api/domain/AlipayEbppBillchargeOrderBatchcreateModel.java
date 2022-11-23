@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量创单接口
  *
  * @author auto create
- * @since 1.0, 2022-11-08 09:58:07
+ * @since 1.0, 2022-11-18 13:39:12
  */
 public class AlipayEbppBillchargeOrderBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4344745573293554562L;
+	private static final long serialVersionUID = 7851193998464489811L;
 
 	/**
 	 * 账单列表
@@ -22,6 +22,12 @@ public class AlipayEbppBillchargeOrderBatchcreateModel extends AlipayObject {
 	@ApiListField("bill_list")
 	@ApiField("selected_bill_info")
 	private List<SelectedBillInfo> billList;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 1234567890
@@ -52,6 +58,13 @@ public class AlipayEbppBillchargeOrderBatchcreateModel extends AlipayObject {
 	}
 	public void setBillList(List<SelectedBillInfo> billList) {
 		this.billList = billList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizId() {

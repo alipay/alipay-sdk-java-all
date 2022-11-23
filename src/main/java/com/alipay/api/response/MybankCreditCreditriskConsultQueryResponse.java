@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.creditrisk.consult.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-26 20:29:08
+ * @since 1.0, 2022-11-18 15:23:36
  */
 public class MybankCreditCreditriskConsultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6259983915542876452L;
+	private static final long serialVersionUID = 4198695658338831661L;
 
 	/** 
 	 * 可贷额度，单位元

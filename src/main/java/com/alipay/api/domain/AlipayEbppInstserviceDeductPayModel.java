@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣
  *
  * @author auto create
- * @since 1.0, 2022-03-07 14:50:50
+ * @since 1.0, 2022-11-22 17:12:51
  */
 public class AlipayEbppInstserviceDeductPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4269945156345189528L;
+	private static final long serialVersionUID = 1614179698287134526L;
 
 	/**
 	 * 支付宝代扣协议Id
@@ -54,6 +54,12 @@ public class AlipayEbppInstserviceDeductPayModel extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户外部业务流水号（用做幂等字段）
@@ -126,6 +132,13 @@ public class AlipayEbppInstserviceDeductPayModel extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutOrderNo() {

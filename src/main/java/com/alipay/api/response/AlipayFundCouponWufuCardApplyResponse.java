@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.wufu.card.apply response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-14 14:20:36
+ * @since 1.0, 2022-11-18 11:19:34
  */
 public class AlipayFundCouponWufuCardApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5578515835762364272L;
+	private static final long serialVersionUID = 6334356671611914132L;
 
 	
 

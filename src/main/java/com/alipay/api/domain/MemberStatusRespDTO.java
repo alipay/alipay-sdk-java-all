@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员企关系状态返回
  *
  * @author auto create
- * @since 1.0, 2021-06-08 16:49:31
+ * @since 1.0, 2022-11-22 15:25:31
  */
 public class MemberStatusRespDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3862746319725167442L;
+	private static final long serialVersionUID = 2256929715282527731L;
 
 	/**
 	 * 员工当前状态：

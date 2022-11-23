@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易直接支付接口
  *
  * @author auto create
- * @since 1.0, 2022-10-23 21:57:49
+ * @since 1.0, 2022-11-21 17:20:59
  */
 public class AlipayTradeOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8389982353486678348L;
+	private static final long serialVersionUID = 5573896471925725227L;
 
 	/**
 	 * 垫资支付模式。支付时需要垫资的场景才传入。具体传参需与支付宝约定。
@@ -31,6 +31,15 @@ CREDIT_FULFILLMENT_ZM 表示先用后付产品履约动作支持芝麻垫资。
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * 买家支付宝用户唯一标识
+
+注：
+1.用于校验与已存交易中的买家是否相等
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 买家支付明细
@@ -103,6 +112,13 @@ CREDIT_FULFILLMENT_ZM表示基于芝麻授信的履约支付模式，比如芝�
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public List<BuyerPayDetail> getBuyerPayDetail() {

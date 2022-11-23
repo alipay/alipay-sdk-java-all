@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.signresult.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 16:53:54
+ * @since 1.0, 2022-11-22 10:46:37
  */
 public class AlipayEbppInstserviceSignresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4323121946195747395L;
+	private static final long serialVersionUID = 5868853231382758737L;
 
 	/** 
 	 * 支付宝签约协议id
@@ -44,6 +44,12 @@ public class AlipayEbppInstserviceSignresultQueryResponse extends AlipayResponse
 	 */
 	@ApiField("login_id")
 	private String loginId;
+
+	/** 
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 外部协议号
@@ -114,6 +120,13 @@ public class AlipayEbppInstserviceSignresultQueryResponse extends AlipayResponse
 	}
 	public String getLoginId( ) {
 		return this.loginId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutAgreementId(String outAgreementId) {

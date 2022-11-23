@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享订单查询接口
  *
  * @author auto create
- * @since 1.0, 2022-10-09 17:23:54
+ * @since 1.0, 2022-11-16 19:31:14
  */
 public class AlipayPcreditHuabeiAuthOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3471139531649139593L;
+	private static final long serialVersionUID = 3219751235621265779L;
 
 	/**
 	 * 买家在支付宝的用户id。通过userid+请求流水号组合查询时，此字段不可为空。
@@ -24,6 +24,12 @@ public class AlipayPcreditHuabeiAuthOrderQueryModel extends AlipayObject {
 	 */
 	@ApiField("auth_opt_id")
 	private String authOptId;
+
+	/**
+	 * 买家在支付宝的用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户原先调用冻结、解冻接口传入的请求流水号。按照流水号查询订单时，此字段不能为空。
@@ -43,6 +49,13 @@ public class AlipayPcreditHuabeiAuthOrderQueryModel extends AlipayObject {
 	}
 	public void setAuthOptId(String authOptId) {
 		this.authOptId = authOptId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutRequestNo() {

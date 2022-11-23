@@ -5,6 +5,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.VoucherBillDetail;
+import com.alipay.api.domain.VcpDiscountInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-04 10:28:09
+ * @since 1.0, 2022-11-22 16:51:36
  */
 public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8449299768233761953L;
+	private static final long serialVersionUID = 8715642588325815574L;
 
 	/** 
 	 * 券余额(元)
@@ -30,6 +31,12 @@ public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 	@ApiListField("bill_details")
 	@ApiField("voucher_bill_detail")
 	private List<VoucherBillDetail> billDetails;
+
+	/** 
+	 * 折扣信息
+	 */
+	@ApiField("discount_info")
+	private VcpDiscountInfo discountInfo;
 
 	/** 
 	 * 扩展信息,JSON格式
@@ -60,6 +67,12 @@ public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/** 
+	 * 券所属用户ID(映射openId)
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 券状态。枚举值如下：
@@ -98,6 +111,12 @@ EXPIRED：已过期。
 	private String userId;
 
 	/** 
+	 * 券核销规则信息
+	 */
+	@ApiField("voucher_description")
+	private String voucherDescription;
+
+	/** 
 	 * 券ID(同入参券ID)
 	 */
 	@ApiField("voucher_id")
@@ -115,6 +134,13 @@ EXPIRED：已过期。
 	}
 	public List<VoucherBillDetail> getBillDetails( ) {
 		return this.billDetails;
+	}
+
+	public void setDiscountInfo(VcpDiscountInfo discountInfo) {
+		this.discountInfo = discountInfo;
+	}
+	public VcpDiscountInfo getDiscountInfo( ) {
+		return this.discountInfo;
 	}
 
 	public void setExtendInfo(String extendInfo) {
@@ -152,6 +178,13 @@ EXPIRED：已过期。
 		return this.name;
 	}
 
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
+	}
+
 	public void setStatus(String status) {
 		this.status = status;
 	}
@@ -178,6 +211,13 @@ EXPIRED：已过期。
 	}
 	public String getUserId( ) {
 		return this.userId;
+	}
+
+	public void setVoucherDescription(String voucherDescription) {
+		this.voucherDescription = voucherDescription;
+	}
+	public String getVoucherDescription( ) {
+		return this.voucherDescription;
 	}
 
 	public void setVoucherId(String voucherId) {

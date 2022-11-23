@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心充余额提现
  *
  * @author auto create
- * @since 1.0, 2022-01-18 09:20:59
+ * @since 1.0, 2022-11-18 17:27:14
  */
 public class AlipayCommercePayforprivilegeBalanceWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6318825151867485341L;
+	private static final long serialVersionUID = 5227271459199251333L;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -30,6 +36,13 @@ public class AlipayCommercePayforprivilegeBalanceWithdrawModel extends AlipayObj
 	 */
 	@ApiField("withdraw_amount")
 	private String withdrawAmount;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOutBizNo() {
 		return this.outBizNo;

@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询用户权益列表
  *
  * @author auto create
- * @since 1.0, 2021-12-22 19:57:05
+ * @since 1.0, 2022-11-18 16:32:50
  */
 public class AlipayCommerceOperationUserBenefitBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6586594381374245771L;
+	private static final long serialVersionUID = 8112474754855181292L;
+
+	/**
+	 * 开放平台用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 页码
@@ -40,6 +46,13 @@ public class AlipayCommerceOperationUserBenefitBatchqueryModel extends AlipayObj
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getPageNum() {
 		return this.pageNum;

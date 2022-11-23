@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建额度
  *
  * @author auto create
- * @since 1.0, 2022-09-26 22:09:14
+ * @since 1.0, 2022-11-18 23:36:13
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6777252335371229112L;
+	private static final long serialVersionUID = 2397631726275992423L;
 
 	/**
 	 * 企业共同账户id，和授权签约协议号共同使用。
@@ -52,7 +52,7 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	private String outerSourceId;
 
 	/**
-	 * 额度所属者ID：
+	 * 额度所属者ID（未切换open_id请使用此字段）：
 owner_type为EMPLOYEE时填写员工支付宝ID；
 owner_type为ENTERPRISE_PAY_UID时填写员工企业码ID；
 owner_type为PHONE时填写员工手机号；
@@ -60,6 +60,12 @@ owner_type为ENTERPRISE时填写企业ID。
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
+
+	/**
+	 * 额度所属者ID（切换open_id后请使用此字段）： owner_type为EMPLOYEE时填写open_id； owner_type为ENTERPRISE_PAY_UID时填写员工企业码ID； owner_type为PHONE时填写员工手机号； owner_type为ENTERPRISE时填写企业ID。
+	 */
+	@ApiField("owner_open_id")
+	private String ownerOpenId;
 
 	/**
 	 * 额度所属者类型，可通过设置该字段来指定操作的owner_id类型，如果设置企业额度则设置为ENTERPRISE
@@ -153,6 +159,13 @@ INSTITUTION（制度维度）
 	}
 	public void setOwnerId(String ownerId) {
 		this.ownerId = ownerId;
+	}
+
+	public String getOwnerOpenId() {
+		return this.ownerOpenId;
+	}
+	public void setOwnerOpenId(String ownerOpenId) {
+		this.ownerOpenId = ownerOpenId;
 	}
 
 	public String getOwnerType() {

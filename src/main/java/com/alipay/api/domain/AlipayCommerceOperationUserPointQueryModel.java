@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户积分
  *
  * @author auto create
- * @since 1.0, 2022-09-23 15:44:23
+ * @since 1.0, 2022-11-16 11:37:13
  */
 public class AlipayCommerceOperationUserPointQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2716991214175256259L;
+	private static final long serialVersionUID = 6774628656389784926L;
+
+	/**
+	 * 蚂蚁统一open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景代码，由行业运营平台分配，提供枚举值。
@@ -32,6 +38,13 @@ bigTrip-出行
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getSceneCode() {
 		return this.sceneCode;

@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设置费控规则
  *
  * @author auto create
- * @since 1.0, 2022-11-03 21:38:00
+ * @since 1.0, 2022-11-18 23:35:13
  */
 public class AlipayEbppInvoiceExpenserulesProjectruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7698495956168348571L;
+	private static final long serialVersionUID = 3342242444691137362L;
 
 	/**
-	 * 企业ID
+	 * 共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -42,12 +42,19 @@ public class AlipayEbppInvoiceExpenserulesProjectruleCreateModel extends AlipayO
 	private Date effectiveStartDate;
 
 	/**
-	 * 员工支付宝ID列表
+	 * 切换open_id前使用此字段：员工支付宝ID列表
 特殊说明：单次传入的最大员工数为50，后续通过修改项目的员工列表接口进行员工调整
 	 */
 	@ApiListField("employee_list")
 	@ApiField("string")
 	private List<String> employeeList;
+
+	/**
+	 * 切换open_id后使用此字段：员工open_id列表 特殊说明：单次传入的最大员工数为50，后续通过修改项目的员工列表接口进行员工调整
+	 */
+	@ApiListField("employee_open_id_list")
+	@ApiField("string")
+	private List<String> employeeOpenIdList;
 
 	/**
 	 * 费控规则列表
@@ -98,6 +105,13 @@ public class AlipayEbppInvoiceExpenserulesProjectruleCreateModel extends AlipayO
 	}
 	public void setEmployeeList(List<String> employeeList) {
 		this.employeeList = employeeList;
+	}
+
+	public List<String> getEmployeeOpenIdList() {
+		return this.employeeOpenIdList;
+	}
+	public void setEmployeeOpenIdList(List<String> employeeOpenIdList) {
+		this.employeeOpenIdList = employeeOpenIdList;
 	}
 
 	public List<ExpenseCtrRuleGroupInfo> getExpenseCtrlRuleInfoGroupList() {

@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡订单批量查询
  *
  * @author auto create
- * @since 1.0, 2022-09-27 17:26:13
+ * @since 1.0, 2022-11-18 19:58:14
  */
 public class AlipayCommerceOperationTimescardOrderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5713339299899877955L;
+	private static final long serialVersionUID = 5286454824631647394L;
 
 	/**
 	 * 次卡商品id
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单查询时间范围-结束时间
@@ -62,6 +68,13 @@ public class AlipayCommerceOperationTimescardOrderBatchqueryModel extends Alipay
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderTimeEnd() {

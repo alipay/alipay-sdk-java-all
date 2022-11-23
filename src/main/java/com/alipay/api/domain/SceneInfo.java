@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数据回流字段
  *
  * @author auto create
- * @since 1.0, 2022-03-17 19:34:52
+ * @since 1.0, 2022-11-15 11:00:51
  */
 public class SceneInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7717647563961649266L;
+	private static final long serialVersionUID = 8552511543136587568L;
 
 	/**
 	 * 证件号
@@ -60,6 +60,12 @@ public class SceneInfo extends AlipayObject {
 	 */
 	@ApiField("job_name")
 	private String jobName;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 发生时间的时间戳
@@ -151,6 +157,13 @@ public class SceneInfo extends AlipayObject {
 	}
 	public void setJobName(String jobName) {
 		this.jobName = jobName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneTime() {

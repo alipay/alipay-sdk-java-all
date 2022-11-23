@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付企业签约
  *
  * @author auto create
- * @since 1.0, 2022-07-12 19:55:08
+ * @since 1.0, 2022-11-21 22:48:50
  */
 public class AlipayFundEnterprisepaySignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5775311417581134285L;
+	private static final long serialVersionUID = 2822553942266942778L;
 
 	/**
 	 * 企业简称，传空采用默认规则命名，使用公司名称
@@ -24,6 +24,12 @@ public class AlipayFundEnterprisepaySignModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 特殊场景下扩展字段
+	 */
+	@ApiField("ext_params")
+	private String extParams;
 
 	/**
 	 * 开户账号：
@@ -86,6 +92,13 @@ public class AlipayFundEnterprisepaySignModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getExtParams() {
+		return this.extParams;
+	}
+	public void setExtParams(String extParams) {
+		this.extParams = extParams;
 	}
 
 	public String getIdentity() {

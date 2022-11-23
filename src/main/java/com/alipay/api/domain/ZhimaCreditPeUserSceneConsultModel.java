@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用受理评估接口（场景维度准入&盖帽额度咨询）
  *
  * @author auto create
- * @since 1.0, 2022-11-14 14:11:11
+ * @since 1.0, 2022-11-16 20:07:50
  */
 public class ZhimaCreditPeUserSceneConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4492673557311652853L;
+	private static final long serialVersionUID = 4381176599629847817L;
 
 	/**
 	 * 申请免押额度，取值范围[0.01,100000000]，精确到小数点后2位
@@ -24,6 +24,12 @@ public class ZhimaCreditPeUserSceneConsultModel extends AlipayObject {
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * 买家的蚂蚁统一会员ID
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 芝麻信用类目码，由芝麻信用侧分配
@@ -61,6 +67,13 @@ public class ZhimaCreditPeUserSceneConsultModel extends AlipayObject {
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public String getCategoryCode() {

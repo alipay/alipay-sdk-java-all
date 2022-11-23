@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 包裹授权关系
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:22:45
+ * @since 1.0, 2022-11-18 11:07:15
  */
 public class PkgAuthRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 4369684541164142759L;
+	private static final long serialVersionUID = 8595869694294881351L;
 
 	/**
 	 * 手机号
 	 */
 	@ApiField("mobile")
 	private String mobile;
+
+	/**
+	 * 支付宝uid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 家人称谓
@@ -36,6 +42,13 @@ public class PkgAuthRelation extends AlipayObject {
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRole() {

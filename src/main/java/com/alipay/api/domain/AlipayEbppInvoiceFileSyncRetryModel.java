@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文件同步补偿接口
  *
  * @author auto create
- * @since 1.0, 2022-10-24 16:05:30
+ * @since 1.0, 2022-11-19 00:20:13
  */
 public class AlipayEbppInvoiceFileSyncRetryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8245269425254228963L;
+	private static final long serialVersionUID = 7261772199866229499L;
 
 	/**
 	 * 发票代码
@@ -42,6 +42,12 @@ public class AlipayEbppInvoiceFileSyncRetryModel extends AlipayObject {
 	 */
 	@ApiField("m_short_name")
 	private String mShortName;
+
+	/**
+	 * 蚂蚁统一会员ID，该字段未传的情况下，商户简称和外部交易流水号必填
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部交易流水号，userId未传的情况下，该字段必填
@@ -88,6 +94,13 @@ public class AlipayEbppInvoiceFileSyncRetryModel extends AlipayObject {
 	}
 	public void setmShortName(String mShortName) {
 		this.mShortName = mShortName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

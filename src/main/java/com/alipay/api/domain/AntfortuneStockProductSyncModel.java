@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构产品信息同步
  *
  * @author auto create
- * @since 1.0, 2022-07-06 19:42:22
+ * @since 1.0, 2022-11-18 09:21:07
  */
 public class AntfortuneStockProductSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1891517595841746172L;
+	private static final long serialVersionUID = 2825185848125274719L;
 
 	/**
 	 * 扩展信息

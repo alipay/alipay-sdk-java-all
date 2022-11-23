@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活号用户匹配器
  *
  * @author auto create
- * @since 1.0, 2022-10-26 20:49:10
+ * @since 1.0, 2022-11-15 17:38:11
  */
 public class Matcher extends AlipayObject {
 
-	private static final long serialVersionUID = 1546813699668743739L;
+	private static final long serialVersionUID = 2173342423534546981L;
 
 	/**
 	 * 身份证号码，与user_id、mobile_no不能同时为空
@@ -24,6 +24,12 @@ public class Matcher extends AlipayObject {
 	 */
 	@ApiField("mobile_no")
 	private String mobileNo;
+
+	/**
+	 * 支付宝用户openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝用户id，2088开头16位长度的字符串，与mobile_no、identity_card不能同时为空
@@ -43,6 +49,13 @@ public class Matcher extends AlipayObject {
 	}
 	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

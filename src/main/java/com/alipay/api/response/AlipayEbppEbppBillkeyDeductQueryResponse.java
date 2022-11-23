@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.ebpp.billkey.deduct.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 16:01:57
+ * @since 1.0, 2022-11-18 13:51:37
  */
 public class AlipayEbppEbppBillkeyDeductQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8499153312211956874L;
+	private static final long serialVersionUID = 4611667146565635678L;
 
 	/** 
 	 * 户号
@@ -31,6 +31,12 @@ public class AlipayEbppEbppBillkeyDeductQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("charge_inst")
 	private String chargeInst;
+
+	/** 
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 二级业务
@@ -63,6 +69,13 @@ public class AlipayEbppEbppBillkeyDeductQueryResponse extends AlipayResponse {
 	}
 	public String getChargeInst( ) {
 		return this.chargeInst;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setSubBizType(String subBizType) {

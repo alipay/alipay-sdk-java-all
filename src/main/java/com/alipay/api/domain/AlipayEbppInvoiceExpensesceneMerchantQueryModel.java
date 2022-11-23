@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询企业可用商户信息
  *
  * @author auto create
- * @since 1.0, 2021-12-08 17:45:16
+ * @since 1.0, 2022-11-21 20:07:16
  */
 public class AlipayEbppInvoiceExpensesceneMerchantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4543227435982974619L;
+	private static final long serialVersionUID = 5239543899443299572L;
 
 	/**
-	 * 企业ID
+	 * 共同账户ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -24,6 +24,12 @@ public class AlipayEbppInvoiceExpensesceneMerchantQueryModel extends AlipayObjec
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 企业ID
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 费用类型
@@ -68,6 +74,13 @@ MEAL - 工作餐
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public String getExpenseType() {

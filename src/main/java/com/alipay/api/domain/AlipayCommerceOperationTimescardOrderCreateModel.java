@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡商品下单
  *
  * @author auto create
- * @since 1.0, 2022-09-27 17:27:30
+ * @since 1.0, 2022-11-20 15:17:15
  */
 public class AlipayCommerceOperationTimescardOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3697595492898813992L;
+	private static final long serialVersionUID = 3253175696752337797L;
 
 	/**
 	 * 扩展信息
@@ -30,6 +30,12 @@ public class AlipayCommerceOperationTimescardOrderCreateModel extends AlipayObje
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -74,6 +80,13 @@ public class AlipayCommerceOperationTimescardOrderCreateModel extends AlipayObje
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

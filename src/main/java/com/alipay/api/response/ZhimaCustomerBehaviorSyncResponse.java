@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.behavior.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-17 10:40:30
+ * @since 1.0, 2022-11-14 17:56:33
  */
 public class ZhimaCustomerBehaviorSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3425373464918413863L;
+	private static final long serialVersionUID = 5372749569294973867L;
 
 	/** 
 	 * 行为合约号

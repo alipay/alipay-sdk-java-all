@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销任务完成触发
  *
  * @author auto create
- * @since 1.0, 2022-07-12 10:08:02
+ * @since 1.0, 2022-11-14 21:04:32
  */
 public class AlipayMarketingCampaignTaskSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2364766467284484881L;
+	private static final long serialVersionUID = 6555577496134195359L;
 
 	/**
 	 * 参数名：外部业务单号

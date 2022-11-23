@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.trade.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-11 10:38:09
+ * @since 1.0, 2022-11-18 10:26:38
  */
 public class AlipayEcoMycarTradeOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8637265415412577251L;
+	private static final long serialVersionUID = 1859546287218667945L;
 
 	/** 
 	 * 车主平台交易号，交易订单唯一标记。与车主业务平台订单号相同。
@@ -73,6 +73,12 @@ public class AlipayEcoMycarTradeOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("gmt_updated")
 	private String gmtUpdated;
+
+	/** 
+	 * 应用维度用户ID，唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 外部订单号
@@ -197,6 +203,13 @@ public class AlipayEcoMycarTradeOrderQueryResponse extends AlipayResponse {
 	}
 	public String getGmtUpdated( ) {
 		return this.gmtUpdated;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutBizTradeNo(String outBizTradeNo) {

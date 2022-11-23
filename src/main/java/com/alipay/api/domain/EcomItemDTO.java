@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品模型
  *
  * @author auto create
- * @since 1.0, 2022-11-03 16:42:51
+ * @since 1.0, 2022-11-18 14:13:10
  */
 public class EcomItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7329543638296715967L;
+	private static final long serialVersionUID = 6211565846579965164L;
+
+	/**
+	 * 买断金额
+	 */
+	@ApiField("buyout_money")
+	private Long buyoutMoney;
 
 	/**
 	 * 类目历史30天完结父订单数
@@ -114,6 +120,13 @@ public class EcomItemDTO extends AlipayObject {
 	 */
 	@ApiField("sku_min_price")
 	private Long skuMinPrice;
+
+	public Long getBuyoutMoney() {
+		return this.buyoutMoney;
+	}
+	public void setBuyoutMoney(Long buyoutMoney) {
+		this.buyoutMoney = buyoutMoney;
+	}
 
 	public Long getCatOrderCount() {
 		return this.catOrderCount;

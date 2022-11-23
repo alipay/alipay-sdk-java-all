@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询赊呗订单
  *
  * @author auto create
- * @since 1.0, 2020-07-15 16:59:09
+ * @since 1.0, 2022-11-18 15:17:56
  */
 public class MybankCreditSupplychainCreditpayOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5723669984752188689L;
+	private static final long serialVersionUID = 7642768471545468435L;
 
 	/**
 	 * 支付宝Id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国家医保局线上业务身份核验信息授权查询接口
  *
  * @author auto create
- * @since 1.0, 2021-12-28 20:07:12
+ * @since 1.0, 2022-11-15 14:09:15
  */
 public class AlipayCommerceMedicalAuthinfoAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7786383341927747596L;
+	private static final long serialVersionUID = 4776759585365617615L;
 
 	/**
 	 * 支付宝用户Id
@@ -42,6 +42,12 @@ public class AlipayCommerceMedicalAuthinfoAuthQueryModel extends AlipayObject {
 	 */
 	@ApiField("ol_biz_type_code")
 	private String olBizTypeCode;
+
+	/**
+	 * 支付宝用户Id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * olBizTypeCode=04107(医保移动支付业务)时必传
@@ -100,6 +106,13 @@ public class AlipayCommerceMedicalAuthinfoAuthQueryModel extends AlipayObject {
 	}
 	public void setOlBizTypeCode(String olBizTypeCode) {
 		this.olBizTypeCode = olBizTypeCode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrgAppId() {

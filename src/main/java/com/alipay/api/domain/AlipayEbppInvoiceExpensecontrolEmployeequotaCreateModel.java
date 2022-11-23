@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建员工额度信息
  *
  * @author auto create
- * @since 1.0, 2022-08-18 15:35:56
+ * @since 1.0, 2022-11-18 23:36:16
  */
 public class AlipayEbppInvoiceExpensecontrolEmployeequotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2716168179223533984L;
+	private static final long serialVersionUID = 8517766945156225824L;
 
 	/**
-	 * 企业ID
+	 * 共同账号ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -46,11 +46,17 @@ public class AlipayEbppInvoiceExpensecontrolEmployeequotaCreateModel extends Ali
 	private String outerSourceId;
 
 	/**
-	 * 余额所属者ID
+	 * 切换open_id前请使用：余额所属者ID
 owner_type为员工时为员工支付宝ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
+
+	/**
+	 * 切换open_id后请使用：余额所属者ID owner_type为员工时为员工open_id
+	 */
+	@ApiField("owner_open_id")
+	private String ownerOpenId;
 
 	/**
 	 * 余额所属者类型
@@ -118,6 +124,13 @@ EMPLOYEE: 员工
 	}
 	public void setOwnerId(String ownerId) {
 		this.ownerId = ownerId;
+	}
+
+	public String getOwnerOpenId() {
+		return this.ownerOpenId;
+	}
+	public void setOwnerOpenId(String ownerOpenId) {
+		this.ownerOpenId = ownerOpenId;
 	}
 
 	public String getOwnerType() {

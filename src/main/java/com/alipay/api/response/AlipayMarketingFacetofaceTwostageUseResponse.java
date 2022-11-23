@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.facetoface.twostage.use response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-20 18:41:10
+ * @since 1.0, 2022-11-22 20:11:36
  */
 public class AlipayMarketingFacetofaceTwostageUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5371367965155643996L;
+	private static final long serialVersionUID = 7289529474392655626L;
 
 	/** 
 	 * 业务扩展数据
@@ -25,6 +25,12 @@ public class AlipayMarketingFacetofaceTwostageUseResponse extends AlipayResponse
 	 */
 	@ApiField("havana_id")
 	private String havanaId;
+
+	/** 
+	 * openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * otp校验结果
@@ -50,6 +56,13 @@ public class AlipayMarketingFacetofaceTwostageUseResponse extends AlipayResponse
 	}
 	public String getHavanaId( ) {
 		return this.havanaId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOtpVerify(String otpVerify) {

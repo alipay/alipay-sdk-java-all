@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改员工抬头信息
  *
  * @author auto create
- * @since 1.0, 2022-09-08 15:47:17
+ * @since 1.0, 2022-11-18 23:03:49
  */
 public class AlipayCommerceEcEmployeeTitleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4497552458911889389L;
+	private static final long serialVersionUID = 1571819377528731873L;
 
 	/**
 	 * 共同账号id，与enterprise_id两者必填其一
@@ -54,6 +54,12 @@ public class AlipayCommerceEcEmployeeTitleModifyModel extends AlipayObject {
 	 */
 	@ApiField("old_title_id")
 	private String oldTitleId;
+
+	/**
+	 * 支付宝open_id，与employee_id两者必填其一
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 员工抬头关系标
@@ -114,6 +120,13 @@ public class AlipayCommerceEcEmployeeTitleModifyModel extends AlipayObject {
 	}
 	public void setOldTitleId(String oldTitleId) {
 		this.oldTitleId = oldTitleId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getTitleTag() {

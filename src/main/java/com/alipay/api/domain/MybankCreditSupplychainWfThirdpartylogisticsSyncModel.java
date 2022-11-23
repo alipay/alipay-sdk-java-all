@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * WF极速回款业务3PL数据同步
  *
  * @author auto create
- * @since 1.0, 2022-05-17 14:31:44
+ * @since 1.0, 2022-11-16 14:16:28
  */
 public class MybankCreditSupplychainWfThirdpartylogisticsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8174774992345513469L;
+	private static final long serialVersionUID = 4272178288513571689L;
 
 	/**
 	 * WF站点的ipay user id，我们用做siteUserId

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公共事业缴费直连代扣异步扣款支付接口
  *
  * @author auto create
- * @since 1.0, 2022-06-01 15:20:24
+ * @since 1.0, 2022-11-21 15:46:16
  */
 public class AlipayEbppPdeductAsyncPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4325145315689271546L;
+	private static final long serialVersionUID = 6447519797481627364L;
 
 	/**
 	 * 分配给外部机构发起扣款时的渠道码。朗新为LANGXIN
@@ -60,6 +60,12 @@ public class AlipayEbppPdeductAsyncPayModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 用户UserId在应用AppId下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户外部业务流水号
@@ -139,6 +145,13 @@ public class AlipayEbppPdeductAsyncPayModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutOrderNo() {

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechBlockchainFinanceAssetDevicelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7482491326119259518L;
+	private static final long serialVersionUID = 8353192417377524444L;
 
 	/** 
 	 * 查询的设备信息列表，为空表示未查询到结果。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文体运动任务完成的事件消息发送
  *
  * @author auto create
- * @since 1.0, 2022-07-04 16:01:26
+ * @since 1.0, 2022-11-21 19:54:35
  */
 public class AlipayCommerceSportsUsertaskCompletedSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4399618788864626838L;
+	private static final long serialVersionUID = 5773867798134776462L;
 
 	/**
 	 * 非必填,用户在支付宝APP或服务商小程序选择的城市code
@@ -25,6 +25,12 @@ public class AlipayCommerceSportsUsertaskCompletedSyncModel extends AlipayObject
 	 */
 	@ApiField("completed_time")
 	private String completedTime;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 服务商自己的业务号。
@@ -56,6 +62,13 @@ public class AlipayCommerceSportsUsertaskCompletedSyncModel extends AlipayObject
 	}
 	public void setCompletedTime(String completedTime) {
 		this.completedTime = completedTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

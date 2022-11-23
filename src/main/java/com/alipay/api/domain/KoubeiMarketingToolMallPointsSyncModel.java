@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口碑商圈集卡数据保存接口
  *
  * @author auto create
- * @since 1.0, 2022-10-11 11:59:33
+ * @since 1.0, 2022-11-22 15:13:09
  */
 public class KoubeiMarketingToolMallPointsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5432138417259911967L;
+	private static final long serialVersionUID = 1818815977168989282L;
 
 	/**
 	 * 活动id

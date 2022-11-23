@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批次资金模型。
  *
  * @author auto create
- * @since 1.0, 2022-11-08 20:11:10
+ * @since 1.0, 2022-11-17 20:39:08
  */
 public class BatchFundItemAOPModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2139547324238474375L;
+	private static final long serialVersionUID = 5496668677552192699L;
 
 	/**
 	 * 批次号

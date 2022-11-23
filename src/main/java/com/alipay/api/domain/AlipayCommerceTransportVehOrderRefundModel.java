@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车主订单退款
  *
  * @author auto create
- * @since 1.0, 2022-10-13 16:03:37
+ * @since 1.0, 2022-11-16 15:03:14
  */
 public class AlipayCommerceTransportVehOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5779534436365646323L;
+	private static final long serialVersionUID = 4725218285355751138L;
 
 	/**
 	 * 车主系统订单号，商户订单同步到车主系统时，会在获取到此订单号。请注意，该订单号属于车主系统业务订单号。
 	 */
 	@ApiField("alipay_order_no")
 	private String alipayOrderNo;
+
+	/**
+	 * 应用维度用户ID，唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单类型，使用时务必联系业务或解决方案。
@@ -64,6 +70,13 @@ public class AlipayCommerceTransportVehOrderRefundModel extends AlipayObject {
 	}
 	public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderType() {

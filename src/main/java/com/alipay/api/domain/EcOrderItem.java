@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码订单实体
  *
  * @author auto create
- * @since 1.0, 2022-07-12 14:21:46
+ * @since 1.0, 2022-11-18 15:10:15
  */
 public class EcOrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3685867757272483493L;
+	private static final long serialVersionUID = 7615614246684933968L;
 
 	/**
 	 * 共同账户ID
@@ -48,6 +48,12 @@ public class EcOrderItem extends AlipayObject {
 	 */
 	@ApiField("gmt_modified")
 	private String gmtModified;
+
+	/**
+	 * 用户支付宝UID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单内容，JSON格式。
@@ -128,6 +134,13 @@ OTHER：其他
 	}
 	public void setGmtModified(String gmtModified) {
 		this.gmtModified = gmtModified;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderContent() {

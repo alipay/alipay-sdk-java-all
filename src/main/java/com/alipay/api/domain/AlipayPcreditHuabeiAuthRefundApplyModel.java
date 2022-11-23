@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花芝结算扣款费用逆向退款申请
  *
  * @author auto create
- * @since 1.0, 2022-10-10 14:08:28
+ * @since 1.0, 2022-11-16 20:18:49
  */
 public class AlipayPcreditHuabeiAuthRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3739636875749261771L;
+	private static final long serialVersionUID = 7812558832686977264L;
 
 	/**
 	 * 签约花芝的业务协议号，在签约成功、结算成功等通知中回回传给商户。
@@ -36,6 +36,12 @@ public class AlipayPcreditHuabeiAuthRefundApplyModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 支付宝用户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部请求号
@@ -96,6 +102,13 @@ WITHHOLD_FEE_REFUND 周期扣款金额退款
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutRequestNo() {

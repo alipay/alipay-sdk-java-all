@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.tbsign.consult response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-11 20:30:19
+ * @since 1.0, 2022-11-14 15:40:15
  */
 public class ZhimaCreditPeZmgoTbsignConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6647354789754914471L;
+	private static final long serialVersionUID = 4569446241482827824L;
 
 	/** 
 	 * 签约咨询返回的JSON信息

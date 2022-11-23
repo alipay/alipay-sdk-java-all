@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费直连代扣签约前置校验
  *
  * @author auto create
- * @since 1.0, 2021-04-29 15:27:20
+ * @since 1.0, 2022-11-21 16:51:50
  */
 public class AlipayEbppPdeductSignValidateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1413549218228589677L;
+	private static final long serialVersionUID = 8744458499868341861L;
 
 	/**
 	 * 机构签约代扣来源渠道
@@ -65,6 +65,12 @@ TX：手机充值
 	 */
 	@ApiField("notify_config")
 	private String notifyConfig;
+
+	/**
+	 * 用户UserId在应用AppId下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部机构签约的协议id
@@ -171,6 +177,13 @@ CZ：手机充值
 	}
 	public void setNotifyConfig(String notifyConfig) {
 		this.notifyConfig = notifyConfig;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutAgreementId() {

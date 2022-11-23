@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.ftoken.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-10 09:56:27
+ * @since 1.0, 2022-11-15 15:16:35
  */
 public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3436299912369894393L;
+	private static final long serialVersionUID = 1285278417867798546L;
 
 	/** 
 	 * 年龄是否在指定范围内，未指定范围则返回空，true/false
@@ -46,6 +46,12 @@ public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayRespon
 	 */
 	@ApiField("face_id")
 	private String faceId;
+
+	/** 
+	 * 支付宝用户open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 支付宝uid
@@ -93,6 +99,13 @@ public class ZolozAuthenticationCustomerFtokenQueryResponse extends AlipayRespon
 	}
 	public String getFaceId( ) {
 		return this.faceId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setUid(String uid) {

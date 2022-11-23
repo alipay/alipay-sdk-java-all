@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.contractdeduct.sign response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 16:57:17
+ * @since 1.0, 2022-11-21 17:41:36
  */
 public class AlipayEbppInstserviceContractdeductSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4622268548672191631L;
+	private static final long serialVersionUID = 4846222139432556483L;
 
 	
 

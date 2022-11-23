@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景开放平台电商订单模型
  *
  * @author auto create
- * @since 1.0, 2022-11-03 17:59:27
+ * @since 1.0, 2022-11-18 14:13:23
  */
 public class EcomOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1475794369544772284L;
+	private static final long serialVersionUID = 3498681573686818956L;
 
 	/**
 	 * 实际支付金额
@@ -46,6 +46,12 @@ public class EcomOrderDTO extends AlipayObject {
 	 */
 	@ApiField("buyer_nick")
 	private String buyerNick;
+
+	/**
+	 * 免押金额
+	 */
+	@ApiField("credit_deposit_money")
+	private Long creditDepositMoney;
 
 	/**
 	 * 优惠金额
@@ -88,6 +94,12 @@ public class EcomOrderDTO extends AlipayObject {
 	 */
 	@ApiField("item_title")
 	private String itemTitle;
+
+	/**
+	 * 商品总价值
+	 */
+	@ApiField("item_total_value")
+	private Long itemTotalValue;
 
 	/**
 	 * 物流单
@@ -203,6 +215,13 @@ public class EcomOrderDTO extends AlipayObject {
 		this.buyerNick = buyerNick;
 	}
 
+	public Long getCreditDepositMoney() {
+		return this.creditDepositMoney;
+	}
+	public void setCreditDepositMoney(Long creditDepositMoney) {
+		this.creditDepositMoney = creditDepositMoney;
+	}
+
 	public Long getDiscountFee() {
 		return this.discountFee;
 	}
@@ -250,6 +269,13 @@ public class EcomOrderDTO extends AlipayObject {
 	}
 	public void setItemTitle(String itemTitle) {
 		this.itemTitle = itemTitle;
+	}
+
+	public Long getItemTotalValue() {
+		return this.itemTotalValue;
+	}
+	public void setItemTotalValue(Long itemTotalValue) {
+		this.itemTotalValue = itemTotalValue;
 	}
 
 	public EcomLogisticsOrderDTO getLogisticsOrder() {

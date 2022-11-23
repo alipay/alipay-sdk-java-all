@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.taxno.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 14:29:43
+ * @since 1.0, 2022-11-19 16:51:33
  */
 public class AlipayEbppInvoiceTaxnoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4346961868143375412L;
+	private static final long serialVersionUID = 7834326167583137719L;
 
 	/** 
 	 * 发票要素列表
@@ -23,6 +23,12 @@ public class AlipayEbppInvoiceTaxnoBatchqueryResponse extends AlipayResponse {
 	@ApiListField("invoice_element_list")
 	@ApiField("invoice_element_model")
 	private List<InvoiceElementModel> invoiceElementList;
+
+	/** 
+	 * 支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 支付宝用户id
@@ -35,6 +41,13 @@ public class AlipayEbppInvoiceTaxnoBatchqueryResponse extends AlipayResponse {
 	}
 	public List<InvoiceElementModel> getInvoiceElementList( ) {
 		return this.invoiceElementList;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setUserId(String userId) {

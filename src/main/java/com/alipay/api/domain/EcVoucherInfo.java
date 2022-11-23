@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码凭证详情
  *
  * @author auto create
- * @since 1.0, 2022-08-18 23:43:37
+ * @since 1.0, 2022-11-18 15:10:08
  */
 public class EcVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1779475176337898216L;
+	private static final long serialVersionUID = 4725643482292852163L;
 
 	/**
 	 * 共同账户ID
@@ -30,6 +30,12 @@ public class EcVoucherInfo extends AlipayObject {
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
+
+	/**
+	 * 员工支付宝UID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 员工支付宝UID
@@ -86,6 +92,13 @@ public class EcVoucherInfo extends AlipayObject {
 	}
 	public void setEnterpriseId(String enterpriseId) {
 		this.enterpriseId = enterpriseId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

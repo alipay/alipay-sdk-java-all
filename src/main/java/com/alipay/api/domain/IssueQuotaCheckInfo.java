@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额度发放校验详情
  *
  * @author auto create
- * @since 1.0, 2022-08-17 10:14:45
+ * @since 1.0, 2022-11-19 12:00:21
  */
 public class IssueQuotaCheckInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4122964953675758669L;
+	private static final long serialVersionUID = 6331898466772852833L;
 
 	/**
 	 * 发放金额
@@ -26,10 +26,16 @@ public class IssueQuotaCheckInfo extends AlipayObject {
 	private String message;
 
 	/**
-	 * owner_id
+	 * 入参的 owner_id
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
+
+	/**
+	 * 入参的  owner_open_id
+	 */
+	@ApiField("owner_open_id")
+	private String ownerOpenId;
 
 	/**
 	 * owner_type
@@ -68,6 +74,13 @@ public class IssueQuotaCheckInfo extends AlipayObject {
 	}
 	public void setOwnerId(String ownerId) {
 		this.ownerId = ownerId;
+	}
+
+	public String getOwnerOpenId() {
+		return this.ownerOpenId;
+	}
+	public void setOwnerOpenId(String ownerOpenId) {
+		this.ownerOpenId = ownerOpenId;
 	}
 
 	public String getOwnerType() {

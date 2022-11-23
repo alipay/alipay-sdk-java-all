@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证基础信息
  *
  * @author auto create
- * @since 1.0, 2021-12-20 14:26:36
+ * @since 1.0, 2022-11-18 15:10:27
  */
 public class ExpenseVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6299496873228493938L;
+	private static final long serialVersionUID = 1262195668541686997L;
 
 	/**
 	 * 企业支付宝用户id(对应凭证ownerid)
@@ -34,6 +34,12 @@ public class ExpenseVoucherInfo extends AlipayObject {
 	private String employeeId;
 
 	/**
+	 * 员工ID
+	 */
+	@ApiField("employee_open_id")
+	private String employeeOpenId;
+
+	/**
 	 * 扩展预留
 	 */
 	@ApiField("extension")
@@ -52,13 +58,13 @@ public class ExpenseVoucherInfo extends AlipayObject {
 	private Date gmtModified;
 
 	/**
-	 * 行业
+	 * 行业属性值（从支付宝主账单复制）
 	 */
 	@ApiField("industry")
 	private String industry;
 
 	/**
-	 * 是否冲抵凭证：0 否；1 是(如:红票)
+	 * 是否冲抵凭证：0 否（蓝票）；1 是(如:红票)
 	 */
 	@ApiField("is_off_set")
 	private String isOffSet;
@@ -70,7 +76,7 @@ public class ExpenseVoucherInfo extends AlipayObject {
 	private String medium;
 
 	/**
-	 * 外部唯一id
+	 * 外部唯一ID（和凭证类型有关，如果发票类型为发票号码+发票编码，如果是账单，则为账单号）
 	 */
 	@ApiField("outer_source_id")
 	private String outerSourceId;
@@ -162,6 +168,13 @@ COMMON_INVOICE-通用发票）
 	}
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeOpenId() {
+		return this.employeeOpenId;
+	}
+	public void setEmployeeOpenId(String employeeOpenId) {
+		this.employeeOpenId = employeeOpenId;
 	}
 
 	public String getExtension() {

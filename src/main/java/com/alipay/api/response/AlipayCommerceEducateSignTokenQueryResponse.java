@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.sign.token.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-20 21:07:13
+ * @since 1.0, 2022-11-17 14:56:34
  */
 public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1767636986482452646L;
+	private static final long serialVersionUID = 3754587432628162112L;
 
 	/** 
 	 * 业务场景类型标识
@@ -33,10 +33,22 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 	private String certType;
 
 	/** 
+	 * 刷脸用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/** 
 	 * 家长支付宝账户的脱敏信息（特例：特殊标识"ALREADY_RELEASED"，须通过技术支持反馈来关闭开通记录）
 	 */
 	@ApiField("parent_logon_id")
 	private String parentLogonId;
+
+	/** 
+	 * 用于开通一脸通行的支付宝账户 openId。如果是父母为孩子开通，则为父母支付宝 openId；如果是用户为本人开通，则为本人支付宝 openId。
+	 */
+	@ApiField("parent_open_id")
+	private String parentOpenId;
 
 	/** 
 	 * 用于开通一脸通行的支付宝账户 uid。如果是父母为孩子开通，则为父母支付宝 uid；如果是用户为本人开通，则为本人支付宝 uid。
@@ -95,11 +107,25 @@ public class AlipayCommerceEducateSignTokenQueryResponse extends AlipayResponse 
 		return this.certType;
 	}
 
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
+	}
+
 	public void setParentLogonId(String parentLogonId) {
 		this.parentLogonId = parentLogonId;
 	}
 	public String getParentLogonId( ) {
 		return this.parentLogonId;
+	}
+
+	public void setParentOpenId(String parentOpenId) {
+		this.parentOpenId = parentOpenId;
+	}
+	public String getParentOpenId( ) {
+		return this.parentOpenId;
 	}
 
 	public void setParentUserId(String parentUserId) {

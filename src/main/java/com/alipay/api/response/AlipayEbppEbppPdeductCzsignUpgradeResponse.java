@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.ebpp.pdeduct.czsign.upgrade response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 16:56:58
+ * @since 1.0, 2022-11-18 16:55:15
  */
 public class AlipayEbppEbppPdeductCzsignUpgradeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1497916869747682627L;
+	private static final long serialVersionUID = 6794115938636396732L;
 
 	/** 
 	 * 错误信息文案
@@ -21,10 +21,16 @@ public class AlipayEbppEbppPdeductCzsignUpgradeResponse extends AlipayResponse {
 	private String errorMessage;
 
 	/** 
-	 * 升级后新的协议ID
+	 * 升级后新的协议ID（如果只涉及金额更改则协议id与之前一致）
 	 */
 	@ApiField("new_agreement_id")
 	private String newAgreementId;
+
+	/** 
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 当前更新结果是否成功
@@ -50,6 +56,13 @@ public class AlipayEbppEbppPdeductCzsignUpgradeResponse extends AlipayResponse {
 	}
 	public String getNewAgreementId( ) {
 		return this.newAgreementId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setSuccess(Boolean success) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 全面开放下公众平台的绑定账户
  *
  * @author auto create
- * @since 1.0, 2022-11-14 11:25:31
+ * @since 1.0, 2022-11-16 10:44:14
  */
 public class StdPublicBindAccount extends AlipayObject {
 
-	private static final long serialVersionUID = 4173285961313586744L;
+	private static final long serialVersionUID = 6173418267611581389L;
 
 	/**
 	 * 协议号是商户会员在支付宝公众账号中的唯一标识。
@@ -42,6 +42,12 @@ public class StdPublicBindAccount extends AlipayObject {
 	 */
 	@ApiField("from_user_id")
 	private String fromUserId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 绑定的商户会员的真实姓名，最长10个汉字。
@@ -82,6 +88,13 @@ public class StdPublicBindAccount extends AlipayObject {
 	}
 	public void setFromUserId(String fromUserId) {
 		this.fromUserId = fromUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRealName() {

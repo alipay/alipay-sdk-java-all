@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 操作员详情
  *
  * @author auto create
- * @since 1.0, 2022-09-28 10:10:17
+ * @since 1.0, 2022-11-19 11:56:00
  */
 public class AuthorityDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1174711283561558821L;
+	private static final long serialVersionUID = 4697198368771268939L;
+
+	/**
+	 * 用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户id
@@ -24,6 +30,13 @@ public class AuthorityDetailResponse extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getPartnerId() {
 		return this.partnerId;

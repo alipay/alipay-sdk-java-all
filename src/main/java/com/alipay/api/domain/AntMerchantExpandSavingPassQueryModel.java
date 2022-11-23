@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 省卡购买咨询
  *
  * @author auto create
- * @since 1.0, 2022-10-25 10:25:20
+ * @since 1.0, 2022-11-18 16:32:49
  */
 public class AntMerchantExpandSavingPassQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4297532855739873674L;
+	private static final long serialVersionUID = 1376647145838738771L;
 
 	/**
 	 * 咨询来源渠道
 	 */
 	@ApiField("ch_info")
 	private String chInfo;
+
+	/**
+	 * 用户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商家ID
@@ -42,6 +48,13 @@ public class AntMerchantExpandSavingPassQueryModel extends AlipayObject {
 	}
 	public void setChInfo(String chInfo) {
 		this.chInfo = chInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPid() {

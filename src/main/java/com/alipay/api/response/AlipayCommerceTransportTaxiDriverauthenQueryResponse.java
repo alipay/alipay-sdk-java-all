@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.taxi.driverauthen.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 23:06:44
+ * @since 1.0, 2022-11-22 14:26:34
  */
 public class AlipayCommerceTransportTaxiDriverauthenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1458581526276794865L;
+	private static final long serialVersionUID = 6677359337147881872L;
 
 	/** 
 	 * 司机认证状态
@@ -25,6 +25,12 @@ public class AlipayCommerceTransportTaxiDriverauthenQueryResponse extends Alipay
 	 */
 	@ApiField("driver_id")
 	private String driverId;
+
+	/** 
+	 * 司机支付宝open_id
+	 */
+	@ApiField("driver_open_id")
+	private String driverOpenId;
 
 	/** 
 	 * 司机支付宝uid
@@ -44,6 +50,13 @@ public class AlipayCommerceTransportTaxiDriverauthenQueryResponse extends Alipay
 	}
 	public String getDriverId( ) {
 		return this.driverId;
+	}
+
+	public void setDriverOpenId(String driverOpenId) {
+		this.driverOpenId = driverOpenId;
+	}
+	public String getDriverOpenId( ) {
+		return this.driverOpenId;
 	}
 
 	public void setDriverUserId(String driverUserId) {

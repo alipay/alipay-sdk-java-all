@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出资方确认任务
  *
  * @author auto create
- * @since 1.0, 2022-03-24 09:49:05
+ * @since 1.0, 2022-11-16 19:23:50
  */
 public class AlipayCommerceYuntaskConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1318566442353252778L;
+	private static final long serialVersionUID = 7655771736921611644L;
 
 	/**
 	 * 出资方id
@@ -24,6 +24,12 @@ public class AlipayCommerceYuntaskConfirmModel extends AlipayObject {
 	 */
 	@ApiField("funder_type")
 	private String funderType;
+
+	/**
+	 * 操作者uid
+	 */
+	@ApiField("operate_open_id")
+	private String operateOpenId;
 
 	/**
 	 * 操作者uid
@@ -55,6 +61,13 @@ public class AlipayCommerceYuntaskConfirmModel extends AlipayObject {
 	}
 	public void setFunderType(String funderType) {
 		this.funderType = funderType;
+	}
+
+	public String getOperateOpenId() {
+		return this.operateOpenId;
+	}
+	public void setOperateOpenId(String operateOpenId) {
+		this.operateOpenId = operateOpenId;
 	}
 
 	public String getOperateUserId() {

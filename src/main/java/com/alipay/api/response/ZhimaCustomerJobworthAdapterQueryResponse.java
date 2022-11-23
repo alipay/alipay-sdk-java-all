@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.adapter.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 10:09:57
+ * @since 1.0, 2022-11-15 14:47:15
  */
 public class ZhimaCustomerJobworthAdapterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5693316228238795611L;
+	private static final long serialVersionUID = 6572287466998648868L;
 
 	/** 
 	 * 匹配度

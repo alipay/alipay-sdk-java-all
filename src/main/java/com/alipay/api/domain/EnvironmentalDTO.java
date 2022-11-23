@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对应订单有环保类型时，能量发放结果
  *
  * @author auto create
- * @since 1.0, 2022-06-08 10:53:58
+ * @since 1.0, 2022-11-18 13:39:52
  */
 public class EnvironmentalDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3462844519395988534L;
+	private static final long serialVersionUID = 5396393499726728827L;
 
 	/**
 	 * 一个环保行为实际发放的数量

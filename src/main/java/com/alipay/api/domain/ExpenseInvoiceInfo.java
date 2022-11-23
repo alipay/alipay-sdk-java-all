@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 费控报销发票凭证数据
  *
  * @author auto create
- * @since 1.0, 2022-02-21 14:27:13
+ * @since 1.0, 2022-11-18 15:10:33
  */
 public class ExpenseInvoiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5524384338574468841L;
+	private static final long serialVersionUID = 2523591958342772144L;
 
 	/**
 	 * 员工ID
 	 */
 	@ApiField("employee_id")
 	private String employeeId;
+
+	/**
+	 * 员工ID
+	 */
+	@ApiField("employee_open_id")
+	private String employeeOpenId;
 
 	/**
 	 * 电子发票结构化信息
@@ -66,6 +72,13 @@ public class ExpenseInvoiceInfo extends AlipayObject {
 	}
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeOpenId() {
+		return this.employeeOpenId;
+	}
+	public void setEmployeeOpenId(String employeeOpenId) {
+		this.employeeOpenId = employeeOpenId;
 	}
 
 	public InvoiceOutputInfo getInvoiceOutputInfo() {

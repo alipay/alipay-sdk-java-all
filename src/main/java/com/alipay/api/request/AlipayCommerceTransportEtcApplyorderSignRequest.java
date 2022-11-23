@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.etc.applyorder.sign request
  * 
  * @author auto create
- * @since 1.0, 2022-10-31 10:10:47
+ * @since 1.0, 2022-11-23 13:31:35
  */
 public class AlipayCommerceTransportEtcApplyorderSignRequest implements AlipayRequest<AlipayCommerceTransportEtcApplyorderSignResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直连代扣协议查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-07 16:58:20
+ * @since 1.0, 2022-11-21 17:00:17
  */
 public class AlipayEbppPdeductSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5557131636833535552L;
+	private static final long serialVersionUID = 2691364761568766839L;
 
 	/**
 	 * 支付宝代扣协议Id。若协议id不传递，则需要保证业务类型、子业务类型、出账机构、户号必传
@@ -40,6 +40,12 @@ TX：手机充值
 	 */
 	@ApiField("charge_inst")
 	private String chargeInst;
+
+	/**
+	 * 用户UserId在应用AppId下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 业务子类型。
@@ -88,6 +94,13 @@ CZ：手机充值
 	}
 	public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSubBizType() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户积分兑换
  *
  * @author auto create
- * @since 1.0, 2022-09-23 15:44:43
+ * @since 1.0, 2022-11-16 11:13:16
  */
 public class AlipayCommerceOperationUserPointExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2313116912493847419L;
+	private static final long serialVersionUID = 5724568193145965243L;
 
 	/**
 	 * 积分核销ID，验证point与benefitId的一致性，才能使用对应的积分
@@ -36,6 +36,12 @@ public class AlipayCommerceOperationUserPointExchangeModel extends AlipayObject 
 	 */
 	@ApiField("item_name")
 	private String itemName;
+
+	/**
+	 * 蚂蚁open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 将要扣减的用户积分
@@ -94,6 +100,13 @@ public class AlipayCommerceOperationUserPointExchangeModel extends AlipayObject 
 	}
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getPoint() {

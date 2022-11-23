@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗先享订单关闭接口
  *
  * @author auto create
- * @since 1.0, 2022-10-08 16:10:00
+ * @since 1.0, 2022-11-14 16:35:57
  */
 public class AlipayPcreditHuabeiAuthOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3259988854519165844L;
+	private static final long serialVersionUID = 8472653468892752124L;
 
 	/**
 	 * 支付宝userId

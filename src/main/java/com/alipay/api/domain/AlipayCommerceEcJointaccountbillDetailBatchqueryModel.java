@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业账单批量分页查询
  *
  * @author auto create
- * @since 1.0, 2022-07-22 09:48:32
+ * @since 1.0, 2022-11-18 19:45:49
  */
 public class AlipayCommerceEcJointaccountbillDetailBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7832561474685757379L;
+	private static final long serialVersionUID = 1151682568918188335L;
 
 	/**
 	 * 业务场景。不传默认为ISV_DEFAULT
@@ -32,13 +32,19 @@ public class AlipayCommerceEcJointaccountbillDetailBatchqueryModel extends Alipa
 	private String enterpriseId;
 
 	/**
+	 * 员工支付宝UID
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 页数。本参数为空或小于1默认显示第一页；如果输入的值大于总页数，则返回最后一页数据。
 	 */
 	@ApiField("page_num")
 	private String pageNum;
 
 	/**
-	 * 20	每页大小。本参数为空或小于1默认20条；超过20条默认按20条查询；不足20条则按实际记录数返回。
+	 * 每页大小。本参数为空或小于1默认20条；超过20条默认按20条查询；不足20条则按实际记录数返回。
 	 */
 	@ApiField("page_size")
 	private String pageSize;
@@ -74,6 +80,13 @@ public class AlipayCommerceEcJointaccountbillDetailBatchqueryModel extends Alipa
 	}
 	public void setEnterpriseId(String enterpriseId) {
 		this.enterpriseId = enterpriseId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPageNum() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单同步接口
  *
  * @author auto create
- * @since 1.0, 2022-10-12 15:38:37
+ * @since 1.0, 2022-11-16 15:03:14
  */
 public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8631878116371671858L;
+	private static final long serialVersionUID = 1549287223552723435L;
 
 	/**
 	 * 该笔停车交易需要返佣的对象实体PID，可能是商户，可能是ISV；只做下沉，用于离线表层面对账。
@@ -42,6 +42,12 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("in_time")
 	private String inTime;
+
+	/**
+	 * 应用用户ID，唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝支付流水，系统唯一
@@ -170,6 +176,13 @@ public class AlipayEcoMycarParkingOrderSyncModel extends AlipayObject {
 	}
 	public void setInTime(String inTime) {
 		this.inTime = inTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderNo() {

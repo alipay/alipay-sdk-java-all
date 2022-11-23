@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣签约结果接口
  *
  * @author auto create
- * @since 1.0, 2022-10-13 15:42:51
+ * @since 1.0, 2022-11-21 20:02:48
  */
 public class AlipayEbppInstserviceSignresultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2114771185595124173L;
+	private static final long serialVersionUID = 4844528453279896136L;
 
 	/**
 	 * 户号（缴费场景是户号，话费场景是手机号）
@@ -36,6 +36,12 @@ public class AlipayEbppInstserviceSignresultQueryModel extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 二级业务类型。例：充值(CZ)，水费(WATER)，电费(ELECTRIC)
@@ -75,6 +81,13 @@ public class AlipayEbppInstserviceSignresultQueryModel extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSubBizType() {

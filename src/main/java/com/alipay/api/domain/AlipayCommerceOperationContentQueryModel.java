@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 行业场景运营内容投放
  *
  * @author auto create
- * @since 1.0, 2022-09-23 15:45:20
+ * @since 1.0, 2022-11-16 11:13:50
  */
 public class AlipayCommerceOperationContentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2339975866567962393L;
+	private static final long serialVersionUID = 4292847363156199628L;
 
 	/**
 	 * 展台
@@ -46,6 +46,12 @@ public class AlipayCommerceOperationContentQueryModel extends AlipayObject {
 	 */
 	@ApiField("ext_params")
 	private String extParams;
+
+	/**
+	 * 蚂蚁统一open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 分页查询页码
@@ -110,6 +116,13 @@ public class AlipayCommerceOperationContentQueryModel extends AlipayObject {
 	}
 	public void setExtParams(String extParams) {
 		this.extParams = extParams;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPageNumber() {

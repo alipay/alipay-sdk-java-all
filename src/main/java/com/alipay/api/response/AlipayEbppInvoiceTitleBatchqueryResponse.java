@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.title.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-22 15:56:10
+ * @since 1.0, 2022-11-19 00:21:37
  */
 public class AlipayEbppInvoiceTitleBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7538356841893999974L;
+	private static final long serialVersionUID = 1638629352445817939L;
 
 	/** 
 	 * 发票要素列表
@@ -23,6 +23,12 @@ public class AlipayEbppInvoiceTitleBatchqueryResponse extends AlipayResponse {
 	@ApiListField("invoice_element_list")
 	@ApiField("invoice_element_model")
 	private List<InvoiceElementModel> invoiceElementList;
+
+	/** 
+	 * 支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 依据条件查询到的发票总条数
@@ -41,6 +47,13 @@ public class AlipayEbppInvoiceTitleBatchqueryResponse extends AlipayResponse {
 	}
 	public List<InvoiceElementModel> getInvoiceElementList( ) {
 		return this.invoiceElementList;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setTotalCount(Long totalCount) {

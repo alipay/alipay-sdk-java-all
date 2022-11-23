@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.content.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-04 10:09:42
+ * @since 1.0, 2022-11-16 11:16:34
  */
 public class AlipayCommerceOperationContentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3177611858575381877L;
+	private static final long serialVersionUID = 5248876515613666485L;
 
 	/** 
 	 * 内容信息列表 , json 格式 , 每一个展台对应一个 内容列表 .  每一个内容信息模型对应 : ContentInfoModel

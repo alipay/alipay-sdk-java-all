@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请开具发票
  *
  * @author auto create
- * @since 1.0, 2020-11-18 11:27:16
+ * @since 1.0, 2022-11-23 10:06:50
  */
 public class AlipayEbppInvoiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5149655295234842437L;
+	private static final long serialVersionUID = 7185863549711326334L;
 
 	/**
 	 * 执行动作：申请开票/申请红冲
@@ -41,6 +41,12 @@ PAYEE:销售方;PAYER:购买方
 	 */
 	@ApiField("m_short_name")
 	private String mShortName;
+
+	/**
+	 * 支付宝用户id，支付宝用户的唯一标识。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 定义商户的二级简称,用于标识商户品牌下的分支机构，如门店，对应于商户入驻时填写的"商户门店简称"。
@@ -82,6 +88,13 @@ PAYEE:销售方;PAYER:购买方
 	}
 	public void setmShortName(String mShortName) {
 		this.mShortName = mShortName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSubMShortName() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业代扣签约确认
  *
  * @author auto create
- * @since 1.0, 2020-02-14 16:58:14
+ * @since 1.0, 2022-11-18 13:39:50
  */
 public class AlipayEbppPdeductSignConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5425465921697316898L;
+	private static final long serialVersionUID = 6765574224468851446L;
 
 	/**
 	 * 机构签约代扣来源渠道
@@ -55,6 +55,12 @@ PUBLICPLATFORM：服务窗
 	 */
 	@ApiField("extend_field")
 	private String extendField;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部产生的协议ID
@@ -133,6 +139,13 @@ PUBLICPLATFORM：服务窗
 	}
 	public void setExtendField(String extendField) {
 		this.extendField = extendField;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutAgreementId() {

@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道卡信息变更
  *
  * @author auto create
- * @since 1.0, 2022-11-07 17:30:31
+ * @since 1.0, 2022-11-18 13:40:15
  */
 public class AlipayEbppCommunityOwnercardSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8569164723117948193L;
+	private static final long serialVersionUID = 5621453648116464714L;
+
+	/**
+	 * 支付宝uid
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝uid
@@ -92,6 +98,13 @@ HANGZHOU_OWNER_CARD
 	 */
 	@ApiField("user_type")
 	private String userType;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;

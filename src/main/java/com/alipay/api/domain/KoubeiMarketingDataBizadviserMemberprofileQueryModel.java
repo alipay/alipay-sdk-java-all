@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 经营参谋会员人物画像查询
  *
  * @author auto create
- * @since 1.0, 2022-10-11 12:04:35
+ * @since 1.0, 2022-11-22 14:57:45
  */
 public class KoubeiMarketingDataBizadviserMemberprofileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5397862788326593599L;
+	private static final long serialVersionUID = 3546554174628954612L;
 
 	/**
 	 * 会员分层，可传 ALL/4/3/2/1  五个值

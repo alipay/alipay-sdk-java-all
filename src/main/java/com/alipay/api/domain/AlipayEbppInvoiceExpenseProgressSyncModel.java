@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票报销处理进度同步
  *
  * @author auto create
- * @since 1.0, 2022-06-20 16:41:09
+ * @since 1.0, 2022-11-19 16:24:48
  */
 public class AlipayEbppInvoiceExpenseProgressSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7889417545876726856L;
+	private static final long serialVersionUID = 6228869571683657751L;
 
 	/**
 	 * 同步申请id，每次发起同步时生成，isv每次请求需要保证唯一
@@ -61,6 +61,12 @@ public class AlipayEbppInvoiceExpenseProgressSyncModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * open_id，支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 报销操作。枚举值如下：
@@ -131,6 +137,13 @@ public class AlipayEbppInvoiceExpenseProgressSyncModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getStatus() {

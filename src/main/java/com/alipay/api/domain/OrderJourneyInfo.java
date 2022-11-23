@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单行程信息
  *
  * @author auto create
- * @since 1.0, 2021-01-20 20:59:13
+ * @since 1.0, 2022-11-17 20:03:46
  */
 public class OrderJourneyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6783322953348793527L;
+	private static final long serialVersionUID = 1462746965299732842L;
 
 	/**
 	 * 操作动作

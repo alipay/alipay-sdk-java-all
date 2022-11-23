@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取报销发票详细信息
  *
  * @author auto create
- * @since 1.0, 2022-06-22 09:58:03
+ * @since 1.0, 2022-11-19 16:12:51
  */
 public class AlipayEbppInvoiceDetailOutputQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2734698764483453891L;
+	private static final long serialVersionUID = 3739418684596125762L;
 
 	/**
 	 * 发票代码
@@ -26,6 +26,12 @@ public class AlipayEbppInvoiceDetailOutputQueryModel extends AlipayObject {
 	 */
 	@ApiField("invoice_no")
 	private String invoiceNo;
+
+	/**
+	 * 支付宝用户 id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 获取发票明细应用场景。固定为 INVOICE_EXPENSE  表示发票报销。
@@ -57,6 +63,13 @@ public class AlipayEbppInvoiceDetailOutputQueryModel extends AlipayObject {
 	}
 	public void setInvoiceNo(String invoiceNo) {
 		this.invoiceNo = invoiceNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getScene() {

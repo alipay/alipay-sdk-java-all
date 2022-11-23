@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建充值卡支付单
  *
  * @author auto create
- * @since 1.0, 2022-01-18 10:54:59
+ * @since 1.0, 2022-11-18 17:24:52
  */
 public class AlipayMerchantPayforprivilegePayCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8147243626751678535L;
+	private static final long serialVersionUID = 8853556629381493958L;
 
 	/**
 	 * 该字段已废弃，请使用user_id字段查询
 	 */
 	@ApiField("member_id")
 	private String memberId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号，用于幂等控制一次充值行为
@@ -55,6 +61,13 @@ public class AlipayMerchantPayforprivilegePayCreateModel extends AlipayObject {
 	}
 	public void setMemberId(String memberId) {
 		this.memberId = memberId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

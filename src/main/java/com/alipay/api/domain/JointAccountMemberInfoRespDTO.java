@@ -4,14 +4,20 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 已加入合花群的成员信息
+ * openId改造
  *
  * @author auto create
- * @since 1.0, 2022-11-03 11:49:00
+ * @since 1.0, 2022-11-17 22:45:22
  */
 public class JointAccountMemberInfoRespDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5511543443817844592L;
+	private static final long serialVersionUID = 1567695363634754342L;
+
+	/**
+	 * （群成员）支付宝侧用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 成员角色：<br>
@@ -27,6 +33,13 @@ public class JointAccountMemberInfoRespDTO extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOperateRole() {
 		return this.operateRole;

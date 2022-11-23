@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业因公账单查询
  *
  * @author auto create
- * @since 1.0, 2022-02-21 14:02:10
+ * @since 1.0, 2022-11-18 17:24:50
  */
 public class AlipayEbppInvoiceEnterpriseconsumeConsumeBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8634932749851196742L;
+	private static final long serialVersionUID = 5887755953827253825L;
 
 	/**
 	 * 企业ID
@@ -47,6 +47,13 @@ public class AlipayEbppInvoiceEnterpriseconsumeConsumeBatchqueryModel extends Al
 	@ApiListField("employee_list")
 	@ApiField("string")
 	private List<String> employeeList;
+
+	/**
+	 * 员工支付宝UID列表，单次传入最大员工数量为10
+	 */
+	@ApiListField("employee_open_ids")
+	@ApiField("string")
+	private List<String> employeeOpenIds;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -81,6 +88,13 @@ public class AlipayEbppInvoiceEnterpriseconsumeConsumeBatchqueryModel extends Al
 	}
 	public void setEmployeeList(List<String> employeeList) {
 		this.employeeList = employeeList;
+	}
+
+	public List<String> getEmployeeOpenIds() {
+		return this.employeeOpenIds;
+	}
+	public void setEmployeeOpenIds(List<String> employeeOpenIds) {
+		this.employeeOpenIds = employeeOpenIds;
 	}
 
 }

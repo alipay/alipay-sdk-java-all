@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ETC发行方信息查询
  *
  * @author auto create
- * @since 1.0, 2022-06-30 20:39:16
+ * @since 1.0, 2022-11-22 14:01:49
  */
 public class AlipayCommerceTransportEtcSellerconfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4284836559972118125L;
+	private static final long serialVersionUID = 6723849764654294756L;
 
 	/**
 	 * 外部宿主商户（ISV）的appid
@@ -27,6 +27,12 @@ public class AlipayCommerceTransportEtcSellerconfigQueryModel extends AlipayObje
 	 */
 	@ApiField("agent_pid")
 	private String agentPid;
+
+	/**
+	 * 蚂蚁会员统一ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 需要查询的发行方信息配置类目
@@ -59,6 +65,13 @@ public class AlipayCommerceTransportEtcSellerconfigQueryModel extends AlipayObje
 	}
 	public void setAgentPid(String agentPid) {
 		this.agentPid = agentPid;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<String> getQueryScopes() {

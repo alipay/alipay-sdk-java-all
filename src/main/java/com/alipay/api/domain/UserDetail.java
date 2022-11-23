@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * userid测试
  *
  * @author auto create
- * @since 1.0, 2022-09-25 11:54:08
+ * @since 1.0, 2022-11-21 22:00:22
  */
 public class UserDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3255654822688519976L;
+	private static final long serialVersionUID = 1141215521266238113L;
 
 	/**
 	 * userid列表

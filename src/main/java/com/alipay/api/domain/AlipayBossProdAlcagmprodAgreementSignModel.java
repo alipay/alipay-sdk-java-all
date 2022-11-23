@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 法务c端用户协议签约
  *
  * @author auto create
- * @since 1.0, 2022-10-17 16:22:49
+ * @since 1.0, 2022-11-23 10:09:50
  */
 public class AlipayBossProdAlcagmprodAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2766769695913992818L;
+	private static final long serialVersionUID = 5465724899219377568L;
 
 	/**
 	 * 法务C端协议分配的协议ID，用于唯一标识一个协议或复用协议。支持列表(批量签约)
@@ -23,6 +23,12 @@ public class AlipayBossProdAlcagmprodAgreementSignModel extends AlipayObject {
 	@ApiListField("agreement_id_list")
 	@ApiField("string")
 	private List<String> agreementIdList;
+
+	/**
+	 * 蚂蚁统一会员ID升级至openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 一般是户号/订单号/2088等；
@@ -74,6 +80,13 @@ public class AlipayBossProdAlcagmprodAgreementSignModel extends AlipayObject {
 	}
 	public void setAgreementIdList(List<String> agreementIdList) {
 		this.agreementIdList = agreementIdList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutSignNo() {

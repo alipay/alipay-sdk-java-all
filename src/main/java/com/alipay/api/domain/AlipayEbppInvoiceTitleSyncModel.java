@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子发票抬头添加
  *
  * @author auto create
- * @since 1.0, 2020-05-20 15:51:05
+ * @since 1.0, 2022-11-19 00:31:15
  */
 public class AlipayEbppInvoiceTitleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1594465691963426576L;
+	private static final long serialVersionUID = 7849691764895981266L;
 
 	/**
 	 * 开户银行账号
@@ -24,6 +24,12 @@ public class AlipayEbppInvoiceTitleSyncModel extends AlipayObject {
 	 */
 	@ApiField("open_bank_name")
 	private String openBankName;
+
+	/**
+	 * 支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 税号
@@ -67,6 +73,13 @@ public class AlipayEbppInvoiceTitleSyncModel extends AlipayObject {
 	}
 	public void setOpenBankName(String openBankName) {
 		this.openBankName = openBankName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getTaxRegisterNo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询权益流水列表
  *
  * @author auto create
- * @since 1.0, 2020-07-27 22:20:42
+ * @since 1.0, 2022-11-15 19:57:50
  */
 public class AlipayInsSceneTaskflowBatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4568124868557161847L;
+	private static final long serialVersionUID = 8743273975418546925L;
 
 	/**
 	 * 蚂蚁统一会员ID

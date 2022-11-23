@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 刷脸用户信息查询
  *
  * @author auto create
- * @since 1.0, 2021-12-24 18:01:52
+ * @since 1.0, 2022-11-17 14:54:16
  */
 public class AlipayCommerceEducateSceneUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1421396849784485981L;
+	private static final long serialVersionUID = 5894228492968882958L;
+
+	/**
+	 * 开通人绑定的支付宝openid
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝学校内标
@@ -38,6 +44,12 @@ public class AlipayCommerceEducateSceneUserQueryModel extends AlipayObject {
 	private String certType;
 
 	/**
+	 * 学生（教职工）的刷脸openId。刷脸openId与用户三要素二选一，都传优先使用刷脸openId
+	 */
+	@ApiField("face_open_id")
+	private String faceOpenId;
+
+	/**
 	 * 学生（教职工）的刷脸UID。刷脸UID与用户三要素二选一，都传优先使用刷脸UID
 	 */
 	@ApiField("face_user_id")
@@ -48,6 +60,13 @@ public class AlipayCommerceEducateSceneUserQueryModel extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipaySchoolId() {
 		return this.alipaySchoolId;
@@ -75,6 +94,13 @@ public class AlipayCommerceEducateSceneUserQueryModel extends AlipayObject {
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getFaceOpenId() {
+		return this.faceOpenId;
+	}
+	public void setFaceOpenId(String faceOpenId) {
+		this.faceOpenId = faceOpenId;
 	}
 
 	public String getFaceUserId() {

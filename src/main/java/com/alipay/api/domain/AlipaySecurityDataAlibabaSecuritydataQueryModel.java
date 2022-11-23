@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁风控数据查询接口(阿里内部调用)
  *
  * @author auto create
- * @since 1.0, 2022-10-21 18:12:05
+ * @since 1.0, 2022-11-16 14:30:14
  */
 public class AlipaySecurityDataAlibabaSecuritydataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5742544753673612235L;
+	private static final long serialVersionUID = 8213386463837154162L;
 
 	/**
 	 * 业务方调用唯一标识，可以是traceID
 	 */
 	@ApiField("biz_id")
 	private String bizId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 查询服务名，由服务方给定
@@ -54,6 +60,13 @@ public class AlipaySecurityDataAlibabaSecuritydataQueryModel extends AlipayObjec
 	}
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getServiceName() {

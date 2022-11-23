@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 因公付交易详情
  *
  * @author auto create
- * @since 1.0, 2022-10-31 20:42:50
+ * @since 1.0, 2022-11-22 15:25:20
  */
 public class TradeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6276276215825377627L;
+	private static final long serialVersionUID = 7889886414984166897L;
 
 	/**
 	 * 买家ID

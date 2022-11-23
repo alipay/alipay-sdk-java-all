@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险大脑数据查询
  *
  * @author auto create
- * @since 1.0, 2019-07-29 16:06:43
+ * @since 1.0, 2022-11-14 16:07:45
  */
 public class AlipaySecurityRiskOfflinevarsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4725189955787669675L;
+	private static final long serialVersionUID = 3847228592991512914L;
 
 	/**
 	 * 查询离线变量的主键

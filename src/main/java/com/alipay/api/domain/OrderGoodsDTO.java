@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiField;
 、再生塑料包装、FSC认证包装、该商品列表必填
  *
  * @author auto create
- * @since 1.0, 2022-05-19 15:30:45
+ * @since 1.0, 2022-11-18 13:39:19
  */
 public class OrderGoodsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2715445686314558411L;
+	private static final long serialVersionUID = 6617585873934576551L;
 
 	/**
 	 * 商品数量(FSC的情况下，必填)

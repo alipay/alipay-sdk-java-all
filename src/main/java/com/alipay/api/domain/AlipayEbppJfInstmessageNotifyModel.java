@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活缴费机构消息通知
  *
  * @author auto create
- * @since 1.0, 2022-11-08 09:56:55
+ * @since 1.0, 2022-11-18 13:39:49
  */
 public class AlipayEbppJfInstmessageNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1367297644595289948L;
+	private static final long serialVersionUID = 1167186995176985938L;
 
 	/**
 	 * 地址
@@ -84,6 +84,12 @@ public class AlipayEbppJfInstmessageNotifyModel extends AlipayObject {
 	 */
 	@ApiField("inst_time")
 	private String instTime;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 组织代码，支付宝分配
@@ -215,6 +221,13 @@ public class AlipayEbppJfInstmessageNotifyModel extends AlipayObject {
 	}
 	public void setInstTime(String instTime) {
 		this.instTime = instTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrgCode() {

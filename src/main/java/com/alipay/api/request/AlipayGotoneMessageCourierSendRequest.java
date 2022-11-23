@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.gotone.message.courier.send request
  * 
  * @author auto create
- * @since 1.0, 2022-11-10 15:22:55
+ * @since 1.0, 2022-11-18 13:51:37
  */
 public class AlipayGotoneMessageCourierSendRequest implements AlipayRequest<AlipayGotoneMessageCourierSendResponse> {
 
@@ -27,6 +27,11 @@ public class AlipayGotoneMessageCourierSendRequest implements AlipayRequest<Alip
 	* 扩展信息。IMEI表示钱包客户端IMEI号；CURRENT_STEP表示消息进度节点,必须为数字； IS_CORRECT表示当前节点是正常还是异常分支，必须为Y或者N; todoPublicId表示钱包公众号id。注意：上诉key值必须严格匹配，大小写敏感
 	 */
 	private String extInfo;
+
+	/** 
+	* 支付宝openId
+	 */
+	private String openId;
 
 	/** 
 	* 业务配置码serviceCode
@@ -50,6 +55,13 @@ public class AlipayGotoneMessageCourierSendRequest implements AlipayRequest<Alip
 	}
 	public String getExtInfo() {
 		return this.extInfo;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setServiceCode(String serviceCode) {
@@ -129,6 +141,7 @@ public class AlipayGotoneMessageCourierSendRequest implements AlipayRequest<Alip
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("arguments", this.arguments);
 		txtParams.put("ext_info", this.extInfo);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("service_code", this.serviceCode);
 		txtParams.put("user_id", this.userId);
 		if(udfParams != null) {

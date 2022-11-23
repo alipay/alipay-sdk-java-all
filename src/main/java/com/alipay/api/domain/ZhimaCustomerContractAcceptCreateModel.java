@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 约定应约接口
  *
  * @author auto create
- * @since 1.0, 2021-05-17 10:40:16
+ * @since 1.0, 2022-11-16 15:38:14
  */
 public class ZhimaCustomerContractAcceptCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6428746861263433298L;
+	private static final long serialVersionUID = 8894373988477213777L;
 
 	/**
 	 * 业务主体id，比如淘宝id
@@ -30,6 +30,12 @@ public class ZhimaCustomerContractAcceptCreateModel extends AlipayObject {
 	 */
 	@ApiField("contract_no")
 	private String contractNo;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -56,6 +62,13 @@ public class ZhimaCustomerContractAcceptCreateModel extends AlipayObject {
 	}
 	public void setContractNo(String contractNo) {
 		this.contractNo = contractNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

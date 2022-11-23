@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO结算退款接口
  *
  * @author auto create
- * @since 1.0, 2022-11-14 11:52:44
+ * @since 1.0, 2022-11-15 16:18:59
  */
 public class ZhimaCreditPeZmgoSettleRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8512718468661173379L;
+	private static final long serialVersionUID = 5359455585267726296L;
 
 	/**
 	 * 签约芝麻GO的业务协议号，在签约成功、结算成功等通知中回回传给商户。
 	 */
 	@ApiField("agreement_id")
 	private String agreementId;
+
+	/**
+	 * 支付宝用户ID
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝用户ID
@@ -68,6 +74,13 @@ MEMBER_FEE_REFUND 会员费结算退款 ，WITHHOLD_FEE_REFUND 周期扣款金�
 	}
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAlipayUserId() {
