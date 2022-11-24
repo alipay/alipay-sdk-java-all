@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣签约结果批量查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-18 17:36:36
+ * @since 1.0, 2022-11-24 16:44:51
  */
 public class AlipayEbppInstserviceSignresultBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7217885383438644797L;
+	private static final long serialVersionUID = 5899227448395834351L;
 
 	/**
 	 * 业务类型（例如通信，缴费，还款）

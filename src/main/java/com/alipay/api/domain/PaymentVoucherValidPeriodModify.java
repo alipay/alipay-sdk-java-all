@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentVoucherValidPeriodModify extends AlipayObject {
 
-	private static final long serialVersionUID = 3299919995869744175L;
+	private static final long serialVersionUID = 3377166359858917584L;
 
 	/**
 	 * 券生效后N天内可以使用。 限制： type为RELATIVE时可修改。 valid_days_after_receive必须大于0。 修改该时间，只允许延长，不允许缩短。

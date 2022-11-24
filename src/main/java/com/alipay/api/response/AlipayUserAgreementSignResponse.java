@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.sign response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-11 20:56:54
+ * @since 1.0, 2022-11-23 16:21:36
  */
 public class AlipayUserAgreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5767181185477212238L;
+	private static final long serialVersionUID = 1628496731971587563L;
 
 	/** 
 	 * 在无需用户确认且签约成功的场景下，会同步返回签约协议号。
@@ -25,6 +25,12 @@ public class AlipayUserAgreementSignResponse extends AlipayResponse {
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
+
+	/** 
+	 * 签约申请成功的场景下，会同步返回用户签约的支付宝账号对应的支付宝唯一用户id。
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/** 
 	 * 签约申请成功的场景下，会同步返回用户签约的支付宝账号对应的支付宝唯一用户id。
@@ -65,6 +71,13 @@ public class AlipayUserAgreementSignResponse extends AlipayResponse {
 	}
 	public String getAlipayLogonId( ) {
 		return this.alipayLogonId;
+	}
+
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
+	public String getAlipayOpenId( ) {
+		return this.alipayOpenId;
 	}
 
 	public void setAlipayUserId(String alipayUserId) {

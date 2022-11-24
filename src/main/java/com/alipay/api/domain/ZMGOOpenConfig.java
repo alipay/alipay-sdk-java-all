@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板开通配置
  *
  * @author auto create
- * @since 1.0, 2022-09-13 11:30:44
+ * @since 1.0, 2022-11-24 10:55:23
  */
 public class ZMGOOpenConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 3639358382176659345L;
+	private static final long serialVersionUID = 1164723754231825715L;
 
 	/**
 	 * 固定到期时间或每月的第几日。 （1）当period_mode为APPOINT_DATE时，取值固定日期，如"2022-06-01 00:00:00"，表示协议在6月1号0点到期; （2）当period_mode为FIX_DATE，取值"3"，表示协议在period_time个月后的3号到期。
@@ -67,6 +67,12 @@ public class ZMGOOpenConfig extends AlipayObject {
 	 */
 	@ApiField("show_sign_success_page")
 	private Boolean showSignSuccessPage;
+
+	/**
+	 * 用户签约商户活动到期
+	 */
+	@ApiField("sign_again_schema")
+	private String signAgainSchema;
 
 	/**
 	 * 签约完成页任务按钮描述，当展示签约完成页=true的时候 改内容必填
@@ -141,6 +147,13 @@ public class ZMGOOpenConfig extends AlipayObject {
 	}
 	public void setShowSignSuccessPage(Boolean showSignSuccessPage) {
 		this.showSignSuccessPage = showSignSuccessPage;
+	}
+
+	public String getSignAgainSchema() {
+		return this.signAgainSchema;
+	}
+	public void setSignAgainSchema(String signAgainSchema) {
+		this.signAgainSchema = signAgainSchema;
 	}
 
 	public String getSignSuccessTaskButtonDesc() {

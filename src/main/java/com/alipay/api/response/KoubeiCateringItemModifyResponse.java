@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringItemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1845912454763538357L;
+	private static final long serialVersionUID = 1229462511283327977L;
 
 	/** 
 	 * 口碑体系内部商品的唯一标识

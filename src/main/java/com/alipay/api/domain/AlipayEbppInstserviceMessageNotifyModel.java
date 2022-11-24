@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构服务通知
  *
  * @author auto create
- * @since 1.0, 2021-12-17 11:48:08
+ * @since 1.0, 2022-11-24 19:57:16
  */
 public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7394418785862869125L;
+	private static final long serialVersionUID = 1492775946955821941L;
 
 	/**
 	 * 余额
@@ -96,6 +96,12 @@ public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 	 */
 	@ApiField("notify_type")
 	private String notifyType;
+
+	/**
+	 * 支付宝用户的open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 二级业务类型，话费，流量，水费，电费等
@@ -223,6 +229,13 @@ public class AlipayEbppInstserviceMessageNotifyModel extends AlipayObject {
 	}
 	public void setNotifyType(String notifyType) {
 		this.notifyType = notifyType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSubBizType() {

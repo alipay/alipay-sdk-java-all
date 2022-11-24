@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenInviteOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3435113727686731877L;
+	private static final long serialVersionUID = 1313318396419554163L;
 
 	/** 
 	 * 商家支付宝账号对应的ID，2088开头

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查账单接口
  *
  * @author auto create
- * @since 1.0, 2022-11-08 09:58:26
+ * @since 1.0, 2022-11-24 14:41:17
  */
 public class AlipayEbppBillchargeBillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5172863746186892117L;
+	private static final long serialVersionUID = 1737835126166367843L;
 
 	/**
 	 * 待查账的户号列表
@@ -22,6 +22,12 @@ public class AlipayEbppBillchargeBillBatchqueryModel extends AlipayObject {
 	@ApiListField("billkey_list")
 	@ApiField("bill_key_info")
 	private List<BillKeyInfo> billkeyList;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 来源渠道，由支付宝侧分配
@@ -40,6 +46,13 @@ public class AlipayEbppBillchargeBillBatchqueryModel extends AlipayObject {
 	}
 	public void setBillkeyList(List<BillKeyInfo> billkeyList) {
 		this.billkeyList = billkeyList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSource() {

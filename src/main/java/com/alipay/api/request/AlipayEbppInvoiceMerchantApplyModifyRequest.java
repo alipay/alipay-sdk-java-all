@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.merchant.apply.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-06-22 09:58:31
+ * @since 1.0, 2022-11-23 15:27:36
  */
 public class AlipayEbppInvoiceMerchantApplyModifyRequest implements AlipayRequest<AlipayEbppInvoiceMerchantApplyModifyResponse> {
 

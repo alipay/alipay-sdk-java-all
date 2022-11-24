@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生态设备解绑
  *
  * @author auto create
- * @since 1.0, 2021-09-22 11:32:49
+ * @since 1.0, 2022-11-24 11:06:07
  */
 public class AlipayCommerceIotDeviceEcoUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6691962841729145243L;
+	private static final long serialVersionUID = 5845812878551464875L;
 
 	/**
-	 * 绑定类型，可选项[SUB_MERCHANT]
+	 * 绑定类型，可选项[SUB_MERCHANT,DIRECT_MERCHANT]
 	 */
 	@ApiField("bind_type")
 	private String bindType;
 
 	/**
-	 * 绑定用户id
+	 * 绑定用户id，间联绑定请填入smid，直连绑定填商户pid
 	 */
 	@ApiField("bind_user_id")
 	private String bindUserId;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构签解约回调
  *
  * @author auto create
- * @since 1.0, 2020-06-30 15:28:53
+ * @since 1.0, 2022-11-24 14:46:50
  */
 public class AlipayEbppInstserviceDeductConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2376231356672392634L;
+	private static final long serialVersionUID = 4377987616368441571L;
 
 	/**
 	 * 签约ID
@@ -54,6 +54,12 @@ public class AlipayEbppInstserviceDeductConfirmModel extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部协议号
@@ -133,6 +139,13 @@ false代表本次操作失败
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutAgreementId() {

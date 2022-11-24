@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.promotask.take response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-21 16:41:35
+ * @since 1.0, 2022-11-24 15:21:41
  */
 public class AlipayMerchantIndirectPromotaskTakeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3489533859647792117L;
+	private static final long serialVersionUID = 7142613971368225173L;
 
 	/** 
 	 * 支付宝侧生产的商家任务编号

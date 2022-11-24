@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票申请状态变更
  *
  * @author auto create
- * @since 1.0, 2022-06-22 09:58:31
+ * @since 1.0, 2022-11-23 15:27:36
  */
 public class AlipayEbppInvoiceMerchantApplyModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4237568731575978718L;
+	private static final long serialVersionUID = 7314239823641763549L;
 
 	/**
 	 * 发票申请ID, 由支付宝发票平台生成，申请单唯一标识，接口幂等字段.

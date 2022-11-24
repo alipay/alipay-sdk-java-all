@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅中心订阅状态查询
  *
  * @author auto create
- * @since 1.0, 2022-10-13 10:36:32
+ * @since 1.0, 2022-11-23 17:34:16
  */
 public class AlipayCommerceTransportNotifycenterNotifyuserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7144676917218641652L;
+	private static final long serialVersionUID = 5498996821157714535L;
 
 	/**
 	 * 订阅服务唯一标识
@@ -24,6 +24,18 @@ public class AlipayCommerceTransportNotifycenterNotifyuserQueryModel extends Ali
 	 */
 	@ApiField("notify_object")
 	private String notifyObject;
+
+	/**
+	 * 订阅实体的值，ETC订阅实体为人，则为open_id
+	 */
+	@ApiField("notify_object_open_id")
+	private String notifyObjectOpenId;
+
+	/**
+	 * 蚂蚁统一会员ID（对外）
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -43,6 +55,20 @@ public class AlipayCommerceTransportNotifycenterNotifyuserQueryModel extends Ali
 	}
 	public void setNotifyObject(String notifyObject) {
 		this.notifyObject = notifyObject;
+	}
+
+	public String getNotifyObjectOpenId() {
+		return this.notifyObjectOpenId;
+	}
+	public void setNotifyObjectOpenId(String notifyObjectOpenId) {
+		this.notifyObjectOpenId = notifyObjectOpenId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

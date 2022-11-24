@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板的义务配置模型
  *
  * @author auto create
- * @since 1.0, 2022-08-26 09:59:44
+ * @since 1.0, 2022-11-24 10:55:35
  */
 public class ZMGOObligationConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4738347225254488942L;
+	private static final long serialVersionUID = 6693318222621361114L;
+
+	/**
+	 * 芝麻GO管理页做任务按钮对应链接
+	 */
+	@ApiField("benefit_url")
+	private String benefitUrl;
 
 	/**
 	 * 完成任务所需的最少额度，当obligation_template取值为：OBTL002时必传
@@ -39,6 +45,19 @@ public class ZMGOObligationConfig extends AlipayObject {
 	@ApiField("promise_type_desc")
 	private String promiseTypeDesc;
 
+	/**
+	 * 芝麻GO管理页任务进度重定向链接
+	 */
+	@ApiField("task_progress_redirect_schema")
+	private String taskProgressRedirectSchema;
+
+	public String getBenefitUrl() {
+		return this.benefitUrl;
+	}
+	public void setBenefitUrl(String benefitUrl) {
+		this.benefitUrl = benefitUrl;
+	}
+
 	public String getObligationAmount() {
 		return this.obligationAmount;
 	}
@@ -65,6 +84,13 @@ public class ZMGOObligationConfig extends AlipayObject {
 	}
 	public void setPromiseTypeDesc(String promiseTypeDesc) {
 		this.promiseTypeDesc = promiseTypeDesc;
+	}
+
+	public String getTaskProgressRedirectSchema() {
+		return this.taskProgressRedirectSchema;
+	}
+	public void setTaskProgressRedirectSchema(String taskProgressRedirectSchema) {
+		this.taskProgressRedirectSchema = taskProgressRedirectSchema;
 	}
 
 }

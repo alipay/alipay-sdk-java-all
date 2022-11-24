@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.sign.effect response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-18 14:09:37
+ * @since 1.0, 2022-11-23 16:06:52
  */
 public class AlipayUserAgreementSignEffectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1861314194787428667L;
+	private static final long serialVersionUID = 6472218247445193951L;
 
 	/** 
 	 * 支付宝用户协议号, 用户签约成功后的支付宝协议号.
@@ -72,6 +72,14 @@ CUSTOMER:支付宝用户
 	 */
 	@ApiField("principal_id")
 	private String principalId;
+
+	/** 
+	 * 签约主体标识。
+当principal_type为CARD 时，该字段为支付宝用户号;
+当principal_type为CUSTOMER时，该字段为支付宝用户标识。一个用户可能有多个支付宝账号，即多个支付宝用户号，但只有一个是支付宝用户标识。
+	 */
+	@ApiField("principal_open_id")
+	private String principalOpenId;
 
 	/** 
 	 * 签约协议的场景。
@@ -177,6 +185,13 @@ CUSTOMER:支付宝用户
 	}
 	public String getPrincipalId( ) {
 		return this.principalId;
+	}
+
+	public void setPrincipalOpenId(String principalOpenId) {
+		this.principalOpenId = principalOpenId;
+	}
+	public String getPrincipalOpenId( ) {
+		return this.principalOpenId;
 	}
 
 	public void setSignScene(String signScene) {

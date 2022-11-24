@@ -7,17 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人代扣协议批量查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-11 17:54:41
+ * @since 1.0, 2022-11-23 15:49:25
  */
 public class AlipayUserAgreementBatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2191927144634527348L;
+	private static final long serialVersionUID = 7216371853131194613L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。本参数与alipay_user_id 不可同时为空，若都填写，则以alipay_user_id 为准。
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
+
+	/**
+	 * 用户的支付宝账号对应 的支付宝唯一用户号，
+本参数与 alipay_logon_id 不 可同时为空，若都填写，则 以本参数为准，优先级高于 alipay_logon_id。
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 用户的支付宝账号对应 的支付宝唯一用户号，以 2088 开头的 16 位纯数字 组成;
@@ -61,6 +68,13 @@ public class AlipayUserAgreementBatchQueryModel extends AlipayObject {
 	}
 	public void setAlipayLogonId(String alipayLogonId) {
 		this.alipayLogonId = alipayLogonId;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAlipayUserId() {

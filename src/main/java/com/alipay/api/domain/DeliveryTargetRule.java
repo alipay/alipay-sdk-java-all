@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放计划定向规则。
  *
  * @author auto create
- * @since 1.0, 2022-11-11 10:05:31
+ * @since 1.0, 2022-11-24 17:51:28
  */
 public class DeliveryTargetRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5449264985282762182L;
+	private static final long serialVersionUID = 1133949264529588328L;
 
 	/**
 	 * 指定品牌id。
@@ -79,6 +79,12 @@ IN_SERVICE_VOUCHER_MERCHANT：优惠券可核收款账号（仅支持支付券�
 	private String deliveryRecallMode;
 
 	/**
+	 * 指定搜索直达投放区块
+	 */
+	@ApiField("delivery_search_box_rule")
+	private DeliverySearchBoxRule deliverySearchBoxRule;
+
+	/**
 	 * 小程序推广可用。枚举值：SERVICE_DIRECT
 	 */
 	@ApiField("delivery_type")
@@ -138,6 +144,13 @@ IN_SERVICE_VOUCHER_MERCHANT：优惠券可核收款账号（仅支持支付券�
 	}
 	public void setDeliveryRecallMode(String deliveryRecallMode) {
 		this.deliveryRecallMode = deliveryRecallMode;
+	}
+
+	public DeliverySearchBoxRule getDeliverySearchBoxRule() {
+		return this.deliverySearchBoxRule;
+	}
+	public void setDeliverySearchBoxRule(DeliverySearchBoxRule deliverySearchBoxRule) {
+		this.deliverySearchBoxRule = deliverySearchBoxRule;
 	}
 
 	public String getDeliveryType() {

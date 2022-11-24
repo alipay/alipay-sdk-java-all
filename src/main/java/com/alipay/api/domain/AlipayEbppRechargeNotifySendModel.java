@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送支付宝手机充值超时提醒与补偿
  *
  * @author auto create
- * @since 1.0, 2022-10-18 17:07:22
+ * @since 1.0, 2022-11-24 15:00:49
  */
 public class AlipayEbppRechargeNotifySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1365156559972137557L;
+	private static final long serialVersionUID = 7622515922182245334L;
 
 	/**
 	 * 充值面额或者优惠面额
@@ -33,9 +33,17 @@ public class AlipayEbppRechargeNotifySendModel extends AlipayObject {
 
 	/**
 	 * 阿里通信通知类型
+TX:超时提醒
+BC:超时补偿
 	 */
 	@ApiField("notify_type")
 	private String notifyType;
+
+	/**
+	 * 支付宝用户open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部用户id
@@ -81,6 +89,13 @@ public class AlipayEbppRechargeNotifySendModel extends AlipayObject {
 	}
 	public void setNotifyType(String notifyType) {
 		this.notifyType = notifyType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutUserId() {

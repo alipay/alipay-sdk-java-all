@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.verifyidentity.miniapp.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-21 10:02:01
+ * @since 1.0, 2022-11-24 16:40:49
  */
 public class AlipaySecurityRiskVerifyidentityMiniappConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6857486128814899637L;
+	private static final long serialVersionUID = 8433191982823996397L;
 
 	/** 
 	 * 身份核实校验结果失败时，返回的失败错误码

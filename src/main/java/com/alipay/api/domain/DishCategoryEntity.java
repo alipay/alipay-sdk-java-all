@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DishCategoryEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 7677244682852723595L;
+	private static final long serialVersionUID = 3598862267613475992L;
 
 	/**
 	 * 分类ID

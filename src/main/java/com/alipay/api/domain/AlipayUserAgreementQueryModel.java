@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人代扣协议查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-08 16:22:56
+ * @since 1.0, 2022-11-23 16:20:15
  */
 public class AlipayUserAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6762735535651171432L;
+	private static final long serialVersionUID = 1155299621943657287L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ） ，如果传了该参数，其他参数会被忽略
@@ -24,6 +24,13 @@ public class AlipayUserAgreementQueryModel extends AlipayObject {
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
+
+	/**
+	 * 用户的支付宝账号对应 的支付宝唯一用户号，
+本参数与alipay_logon_id若都填写，则以本参数为准，优先级高于 alipay_logon_id。
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 用户的支付宝账号对应 的支付宝唯一用户号，以 2088 开头的 16 位纯数字 组成。
@@ -77,6 +84,13 @@ public class AlipayUserAgreementQueryModel extends AlipayObject {
 	}
 	public void setAlipayLogonId(String alipayLogonId) {
 		this.alipayLogonId = alipayLogonId;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAlipayUserId() {

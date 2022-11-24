@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构初始化核身
  *
  * @author auto create
- * @since 1.0, 2022-10-12 16:33:15
+ * @since 1.0, 2022-11-24 14:38:48
  */
 public class AlipayEbppInstserviceIdentityInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4372253558689536178L;
+	private static final long serialVersionUID = 4482779155735482513L;
 
 	/**
 	 * 户号（缴费场景是户号，话费场景是手机号）
@@ -42,6 +42,12 @@ public class AlipayEbppInstserviceIdentityInitializeModel extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 二级业务类型（例如话费，流量，水费，电费）
@@ -88,6 +94,13 @@ public class AlipayEbppInstserviceIdentityInitializeModel extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSubBizType() {

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板权利配置
  *
  * @author auto create
- * @since 1.0, 2022-08-26 10:00:46
+ * @since 1.0, 2022-11-24 10:55:47
  */
 public class ZMGORightConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4585667776727471445L;
+	private static final long serialVersionUID = 6526385745782818835L;
+
+	/**
+	 * 芝麻GO管理页已享优惠进度的重定向链接
+	 */
+	@ApiField("cumulative_preferential_redirect_schema")
+	private String cumulativePreferentialRedirectSchema;
 
 	/**
 	 * 权益描述
@@ -24,6 +30,13 @@ public class ZMGORightConfig extends AlipayObject {
 	 */
 	@ApiField("custom_sub_benefit_desc")
 	private String customSubBenefitDesc;
+
+	public String getCumulativePreferentialRedirectSchema() {
+		return this.cumulativePreferentialRedirectSchema;
+	}
+	public void setCumulativePreferentialRedirectSchema(String cumulativePreferentialRedirectSchema) {
+		this.cumulativePreferentialRedirectSchema = cumulativePreferentialRedirectSchema;
+	}
 
 	public String getCustomBenefitDesc() {
 		return this.customBenefitDesc;

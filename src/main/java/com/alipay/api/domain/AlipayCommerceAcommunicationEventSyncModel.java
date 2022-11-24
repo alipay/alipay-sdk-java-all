@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值中心外部机构订单状态同步
  *
  * @author auto create
- * @since 1.0, 2022-09-27 10:03:58
+ * @since 1.0, 2022-11-24 16:07:50
  */
 public class AlipayCommerceAcommunicationEventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2189567428685492731L;
+	private static final long serialVersionUID = 4155994441724135841L;
 
 	/**
 	 * 手机号,卡号,户号等
@@ -58,6 +58,12 @@ public class AlipayCommerceAcommunicationEventSyncModel extends AlipayObject {
 	 */
 	@ApiField("flow_id")
 	private String flowId;
+
+	/**
+	 * 支付宝用户open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 合作伙伴名称
@@ -136,6 +142,13 @@ public class AlipayCommerceAcommunicationEventSyncModel extends AlipayObject {
 	}
 	public void setFlowId(String flowId) {
 		this.flowId = flowId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPartnerName() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝个人协议签约接口
  *
  * @author auto create
- * @since 1.0, 2022-11-11 20:56:54
+ * @since 1.0, 2022-11-23 16:20:16
  */
 public class AlipayUserAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6195349779161598152L;
+	private static final long serialVersionUID = 6596724414448799912L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。
@@ -22,6 +22,12 @@ public class AlipayUserAgreementSignModel extends AlipayObject {
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
+
+	/**
+	 * 用户的支付宝id，本参数与alipay_logon_id不可同时为空，若都填写，则以本参数为准，优先级高于alipay_logon_id。
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 用户的支付宝id，本参数与alipay_logon_id不可同时为空，若都填写，则以本参数为准，优先级高于alipay_logon_id。
@@ -183,6 +189,13 @@ sub_merchant_service_description (子商户服务描述)
 	}
 	public void setAlipayLogonId(String alipayLogonId) {
 		this.alipayLogonId = alipayLogonId;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAlipayUserId() {

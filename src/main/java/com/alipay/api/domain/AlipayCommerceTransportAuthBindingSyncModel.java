@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户授权绑定关系同步
  *
  * @author auto create
- * @since 1.0, 2021-06-08 19:05:12
+ * @since 1.0, 2022-11-23 17:34:16
  */
 public class AlipayCommerceTransportAuthBindingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2374959421377492812L;
+	private static final long serialVersionUID = 1875983947415796939L;
 
 	/**
 	 * 同步动作类型。取值bind、unbind。表示绑定和取消绑定
@@ -24,6 +24,12 @@ public class AlipayCommerceTransportAuthBindingSyncModel extends AlipayObject {
 	 */
 	@ApiField("auth_scene")
 	private String authScene;
+
+	/**
+	 * 蚂蚁统一会员ID（对外）
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -49,6 +55,13 @@ public class AlipayCommerceTransportAuthBindingSyncModel extends AlipayObject {
 	}
 	public void setAuthScene(String authScene) {
 		this.authScene = authScene;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

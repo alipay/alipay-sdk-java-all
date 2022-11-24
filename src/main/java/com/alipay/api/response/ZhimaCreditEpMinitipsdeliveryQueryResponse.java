@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.minitipsdelivery.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-22 23:36:34
+ * @since 1.0, 2022-11-24 00:26:34
  */
 public class ZhimaCreditEpMinitipsdeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5685392744541685572L;
+	private static final long serialVersionUID = 8699391631442624214L;
 
 	/** 
 	 * 布尔值，有描述，有注意事项，必须

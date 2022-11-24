@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncGfaccenterConsolidationAcceptResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4787213775561679348L;
+	private static final long serialVersionUID = 5591127423747519684L;
 
 	/** 
 	 * 是否并账成功

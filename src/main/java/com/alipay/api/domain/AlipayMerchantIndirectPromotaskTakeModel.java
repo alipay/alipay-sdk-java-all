@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连营销任务领取
  *
  * @author auto create
- * @since 1.0, 2022-11-21 16:37:01
+ * @since 1.0, 2022-11-24 15:18:48
  */
 public class AlipayMerchantIndirectPromotaskTakeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3358566883479743746L;
+	private static final long serialVersionUID = 2687516971974989682L;
 
 	/**
 	 * 业务场景编码，接入时参考业务接入文档由支付宝侧分配。
@@ -38,6 +38,12 @@ public class AlipayMerchantIndirectPromotaskTakeModel extends AlipayObject {
 	 */
 	@ApiField("take_time")
 	private Date takeTime;
+
+	/**
+	 * 支付宝侧返回的任务目标值，数值类型
+	 */
+	@ApiField("target_value")
+	private Long targetValue;
 
 	/**
 	 * 任务英文编号
@@ -77,6 +83,13 @@ public class AlipayMerchantIndirectPromotaskTakeModel extends AlipayObject {
 	}
 	public void setTakeTime(Date takeTime) {
 		this.takeTime = takeTime;
+	}
+
+	public Long getTargetValue() {
+		return this.targetValue;
+	}
+	public void setTargetValue(Long targetValue) {
+		this.targetValue = targetValue;
 	}
 
 	public String getTaskCode() {

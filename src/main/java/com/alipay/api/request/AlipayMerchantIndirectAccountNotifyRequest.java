@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.account.notify request
  * 
  * @author auto create
- * @since 1.0, 2022-09-21 13:22:04
+ * @since 1.0, 2022-11-23 17:11:20
  */
 public class AlipayMerchantIndirectAccountNotifyRequest implements AlipayRequest<AlipayMerchantIndirectAccountNotifyResponse> {
 

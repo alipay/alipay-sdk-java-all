@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditLoanBeikeaccountInterestfreeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1573617362134332937L;
+	private static final long serialVersionUID = 2471674765988327548L;
 
 	/**
 	 * 扣减和发放的时候需要用到的金额，无小数，必须为正整数

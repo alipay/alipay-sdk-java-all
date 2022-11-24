@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车高价值订单同步
  *
  * @author auto create
- * @since 1.0, 2022-04-02 17:53:19
+ * @since 1.0, 2022-11-24 20:24:50
  */
 public class AlipayCommerceTransportTaxiHighvalueorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1729463133777451589L;
+	private static final long serialVersionUID = 1782164458911137692L;
 
 	/**
 	 * 渠道
@@ -54,6 +54,12 @@ public class AlipayCommerceTransportTaxiHighvalueorderSyncModel extends AlipayOb
 	 */
 	@ApiField("estimate_pick_up_time")
 	private String estimatePickUpTime;
+
+	/**
+	 * 是否为高价值订单,取值为true/false
+	 */
+	@ApiField("is_high_value")
+	private Boolean isHighValue;
 
 	/**
 	 * 外部订单号
@@ -132,6 +138,13 @@ public class AlipayCommerceTransportTaxiHighvalueorderSyncModel extends AlipayOb
 	}
 	public void setEstimatePickUpTime(String estimatePickUpTime) {
 		this.estimatePickUpTime = estimatePickUpTime;
+	}
+
+	public Boolean getIsHighValue() {
+		return this.isHighValue;
+	}
+	public void setIsHighValue(Boolean isHighValue) {
+		this.isHighValue = isHighValue;
 	}
 
 	public String getOrderId() {

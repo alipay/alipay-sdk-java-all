@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量结算详情
  *
  * @author auto create
- * @since 1.0, 2022-11-10 19:21:32
+ * @since 1.0, 2022-11-24 17:19:06
  */
 public class BatchSettleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6326282366634863892L;
+	private static final long serialVersionUID = 6244575366212387231L;
 
 	/**
 	 * 结算金额，单位为元
@@ -50,6 +50,12 @@ public class BatchSettleDetail extends AlipayObject {
 	 */
 	@ApiField("settle_account_id_type")
 	private String settleAccountIdType;
+
+	/**
+	 * 结算账户的OpenId，本参数是用户在该应用（AppId）下的唯一用户标识。
+	 */
+	@ApiField("settle_account_open_id")
+	private String settleAccountOpenId;
 
 	/**
 	 * 结算账户类型。
@@ -125,6 +131,13 @@ SecondMerchant：结算主体为二级商户
 	}
 	public void setSettleAccountIdType(String settleAccountIdType) {
 		this.settleAccountIdType = settleAccountIdType;
+	}
+
+	public String getSettleAccountOpenId() {
+		return this.settleAccountOpenId;
+	}
+	public void setSettleAccountOpenId(String settleAccountOpenId) {
+		this.settleAccountOpenId = settleAccountOpenId;
 	}
 
 	public String getSettleAccountType() {

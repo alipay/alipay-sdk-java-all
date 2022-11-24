@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.shake.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-16 16:03:12
+ * @since 1.0, 2022-11-23 19:31:35
  */
 public class AlipayMobileShakeUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6868196736655687966L;
+	private static final long serialVersionUID = 7546386489217438941L;
 
 	/** 
 	 * 对应的业务信息
@@ -25,6 +25,12 @@ public class AlipayMobileShakeUserQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("logon_id")
 	private String logonId;
+
+	/** 
+	 * openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 对应的核销数据
@@ -50,6 +56,13 @@ public class AlipayMobileShakeUserQueryResponse extends AlipayResponse {
 	}
 	public String getLogonId( ) {
 		return this.logonId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setPassId(String passId) {

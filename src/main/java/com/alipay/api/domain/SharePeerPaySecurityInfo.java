@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SharePeerPaySecurityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7338556637976682449L;
+	private static final long serialVersionUID = 8151563388378117415L;
 
 	/**
 	 * 来源应用

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣解约
  *
  * @author auto create
- * @since 1.0, 2022-05-27 17:12:58
+ * @since 1.0, 2022-11-24 14:39:15
  */
 public class AlipayEbppInstserviceDeductUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1164426163328127161L;
+	private static final long serialVersionUID = 8219222166258517159L;
 
 	/**
 	 * 签约ID
@@ -48,6 +48,12 @@ public class AlipayEbppInstserviceDeductUnsignModel extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 二级业务类型（例如话费，流量，水费，电费）
@@ -107,6 +113,13 @@ public class AlipayEbppInstserviceDeductUnsignModel extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSubBizType() {

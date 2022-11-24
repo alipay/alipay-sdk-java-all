@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构服务订单回流
  *
  * @author auto create
- * @since 1.0, 2021-12-17 11:47:31
+ * @since 1.0, 2022-11-24 17:04:14
  */
 public class AlipayEbppInstserviceOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8863587669466788773L;
+	private static final long serialVersionUID = 5288854461782288765L;
 
 	/**
 	 * 手机号,户号，卡号等
@@ -48,6 +48,12 @@ public class AlipayEbppInstserviceOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("inst")
 	private String inst;
+
+	/**
+	 * 支付宝用户的open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 操作动作
@@ -119,6 +125,13 @@ public class AlipayEbppInstserviceOrderCreateModel extends AlipayObject {
 	}
 	public void setInst(String inst) {
 		this.inst = inst;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOperation() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单消息接口
  *
  * @author auto create
- * @since 1.0, 2022-03-02 11:39:18
+ * @since 1.0, 2022-11-24 11:36:17
  */
 public class AlipayCommerceBillMsgApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4159184864813226771L;
+	private static final long serialVersionUID = 3181299169578659581L;
 
 	/**
 	 * 支付宝userId

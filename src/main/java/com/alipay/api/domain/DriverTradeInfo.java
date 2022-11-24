@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车司机交易单信息
  *
  * @author auto create
- * @since 1.0, 2022-10-19 16:01:06
+ * @since 1.0, 2022-11-23 15:07:51
  */
 public class DriverTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1781796477342847545L;
+	private static final long serialVersionUID = 5449337784667124329L;
 
 	/**
 	 * 交易日期
 	 */
 	@ApiField("create_date")
 	private String createDate;
+
+	/**
+	 * 支付宝司机open_id
+	 */
+	@ApiField("driver_open_id")
+	private String driverOpenId;
 
 	/**
 	 * 支付宝司机uid
@@ -48,6 +54,13 @@ public class DriverTradeInfo extends AlipayObject {
 	}
 	public void setCreateDate(String createDate) {
 		this.createDate = createDate;
+	}
+
+	public String getDriverOpenId() {
+		return this.driverOpenId;
+	}
+	public void setDriverOpenId(String driverOpenId) {
+		this.driverOpenId = driverOpenId;
 	}
 
 	public String getDriverUserId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝资金账户资产查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-08 21:31:25
+ * @since 1.0, 2022-11-23 21:02:27
  */
 public class AlipayFundAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8843172468919827455L;
+	private static final long serialVersionUID = 4816197422984835332L;
 
 	/**
 	 * 开户产品码。如果查询托管子户余额，必传且必须传入与开户时传入的值一致。
@@ -30,6 +30,12 @@ public class AlipayFundAccountQueryModel extends AlipayObject {
 	 */
 	@ApiField("account_type")
 	private String accountType;
+
+	/**
+	 * 支付宝openId
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝会员 id。
@@ -68,6 +74,13 @@ public class AlipayFundAccountQueryModel extends AlipayObject {
 	}
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAlipayUserId() {

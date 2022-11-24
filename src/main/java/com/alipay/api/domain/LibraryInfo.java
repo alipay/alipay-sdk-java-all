@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LibraryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6714672819637399749L;
+	private static final long serialVersionUID = 6572771744254486573L;
 
 	/**
 	 * 知识库ID
