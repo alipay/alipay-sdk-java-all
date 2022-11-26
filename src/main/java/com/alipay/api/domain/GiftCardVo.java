@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 礼品卡对客展示对象
  *
  * @author auto create
- * @since 1.0, 2022-10-14 14:51:01
+ * @since 1.0, 2022-11-25 16:49:15
  */
 public class GiftCardVo extends AlipayObject {
 
-	private static final long serialVersionUID = 6541444349195737297L;
+	private static final long serialVersionUID = 1188851941493881689L;
 
 	/**
 	 * 可用余额
@@ -62,10 +62,22 @@ public class GiftCardVo extends AlipayObject {
 	private String giftCardStatus;
 
 	/**
+	 * 创建时间
+	 */
+	@ApiField("gmt_create")
+	private String gmtCreate;
+
+	/**
 	 * 采购方id
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
+
+	/**
+	 * 子账户详情
+	 */
+	@ApiField("sub_account_info")
+	private CardSubAccountResult subAccountInfo;
 
 	/**
 	 * 卡绑定的用户id
@@ -135,11 +147,25 @@ public class GiftCardVo extends AlipayObject {
 		this.giftCardStatus = giftCardStatus;
 	}
 
+	public String getGmtCreate() {
+		return this.gmtCreate;
+	}
+	public void setGmtCreate(String gmtCreate) {
+		this.gmtCreate = gmtCreate;
+	}
+
 	public String getMerchantId() {
 		return this.merchantId;
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public CardSubAccountResult getSubAccountInfo() {
+		return this.subAccountInfo;
+	}
+	public void setSubAccountInfo(CardSubAccountResult subAccountInfo) {
+		this.subAccountInfo = subAccountInfo;
 	}
 
 	public String getUserId() {

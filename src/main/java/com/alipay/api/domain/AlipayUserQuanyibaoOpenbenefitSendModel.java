@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益宝权益发放openapi接口
  *
  * @author auto create
- * @since 1.0, 2022-09-22 19:14:17
+ * @since 1.0, 2022-11-25 16:22:15
  */
 public class AlipayUserQuanyibaoOpenbenefitSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1713741723686796319L;
+	private static final long serialVersionUID = 4171774957359759198L;
 
 	/**
 	 * 支付宝登录账号，支持邮箱和手机号格式，与alipay_user_id字段必须选填一个
@@ -46,6 +46,12 @@ public class AlipayUserQuanyibaoOpenbenefitSendModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 商户app_id维度下的用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 权益发放第三方业务号，权益宝会使用该字段做幂等，请保证该值唯一
@@ -86,6 +92,13 @@ public class AlipayUserQuanyibaoOpenbenefitSendModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getThirdBizNo() {

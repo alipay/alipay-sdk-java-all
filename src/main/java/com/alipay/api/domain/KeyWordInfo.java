@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序-搜索运营-关键词信息
  *
  * @author auto create
- * @since 1.0, 2022-11-17 14:49:44
+ * @since 1.0, 2022-11-25 12:43:13
  */
 public class KeyWordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5413239381519233816L;
+	private static final long serialVersionUID = 3161965442575547141L;
 
 	/**
 	 * 审核单号

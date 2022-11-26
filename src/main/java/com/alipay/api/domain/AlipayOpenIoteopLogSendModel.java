@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenIoteopLogSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6525674999953191218L;
+	private static final long serialVersionUID = 7874484452921453731L;
 
 	/**
 	 * 错误码

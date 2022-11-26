@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PoCumAccruedBalanceAmtDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8359187199763765814L;
+	private static final long serialVersionUID = 1289165851554189871L;
 
 	/**
 	 * 累计预提金额

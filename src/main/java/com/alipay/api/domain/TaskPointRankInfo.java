@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaskPointRankInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4642689912274925744L;
+	private static final long serialVersionUID = 4741266254242188388L;
 
 	/**
 	 * 距离前一名积分差距

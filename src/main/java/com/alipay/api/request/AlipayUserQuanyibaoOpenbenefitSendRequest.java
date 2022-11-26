@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.quanyibao.openbenefit.send request
  * 
  * @author auto create
- * @since 1.0, 2022-09-22 19:14:17
+ * @since 1.0, 2022-11-25 16:26:37
  */
 public class AlipayUserQuanyibaoOpenbenefitSendRequest implements AlipayRequest<AlipayUserQuanyibaoOpenbenefitSendResponse> {
 

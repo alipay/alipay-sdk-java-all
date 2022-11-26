@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账明细
  *
  * @author auto create
- * @since 1.0, 2022-09-08 20:09:38
+ * @since 1.0, 2022-11-24 21:17:38
  */
 public class RoyaltyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4752648289883182691L;
+	private static final long serialVersionUID = 3576193441936969448L;
 
 	/**
 	 * 分账金额
@@ -58,6 +58,12 @@ public class RoyaltyDetail extends AlipayObject {
 	private String transIn;
 
 	/**
+	 * 分账转入方的OpenId，OpenId为用户在该应用下支付宝的唯一用户标识。
+	 */
+	@ApiField("trans_in_open_id")
+	private String transInOpenId;
+
+	/**
 	 * 分账转入账号类型，userId表示是支付宝账号对应的支付宝唯一用户号，loginName表示是支付宝登录号，secondMerchantID表示是二级商户id。
 只有在operation_type为replenish_refund(退补差)，transfer(分账)才返回该字段
 	 */
@@ -69,6 +75,12 @@ public class RoyaltyDetail extends AlipayObject {
 	 */
 	@ApiField("trans_out")
 	private String transOut;
+
+	/**
+	 * 分账转出方的OpenId，OpenId为用户在该应用下支付宝内的唯一用户标识。
+	 */
+	@ApiField("trans_out_open_id")
+	private String transOutOpenId;
 
 	/**
 	 * 分账转出账号类型，userId表示是支付宝账号对应的支付宝唯一用户号，loginName表示是支付宝登录号，secondMerchantID表示是二级商户id。
@@ -126,6 +138,13 @@ public class RoyaltyDetail extends AlipayObject {
 		this.transIn = transIn;
 	}
 
+	public String getTransInOpenId() {
+		return this.transInOpenId;
+	}
+	public void setTransInOpenId(String transInOpenId) {
+		this.transInOpenId = transInOpenId;
+	}
+
 	public String getTransInType() {
 		return this.transInType;
 	}
@@ -138,6 +157,13 @@ public class RoyaltyDetail extends AlipayObject {
 	}
 	public void setTransOut(String transOut) {
 		this.transOut = transOut;
+	}
+
+	public String getTransOutOpenId() {
+		return this.transOutOpenId;
+	}
+	public void setTransOutOpenId(String transOutOpenId) {
+		this.transOutOpenId = transOutOpenId;
 	}
 
 	public String getTransOutType() {

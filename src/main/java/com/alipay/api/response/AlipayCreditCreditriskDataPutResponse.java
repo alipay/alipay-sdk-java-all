@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.credit.creditrisk.data.put response.
  * 
  * @author auto create
- * @since 1.0, 2020-09-03 17:21:59
+ * @since 1.0, 2022-11-25 15:26:24
  */
 public class AlipayCreditCreditriskDataPutResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8879292419346713859L;
+	private static final long serialVersionUID = 2875566926571797378L;
 
 	/** 
 	 * 返回该条数据在网商的唯一ID

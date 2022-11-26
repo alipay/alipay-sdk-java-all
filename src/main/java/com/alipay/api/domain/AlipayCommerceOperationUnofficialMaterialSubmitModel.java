@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扫码点餐非官方物料数据上传
  *
  * @author auto create
- * @since 1.0, 2021-08-24 19:49:18
+ * @since 1.0, 2022-11-25 17:14:41
  */
 public class AlipayCommerceOperationUnofficialMaterialSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6147329671412926761L;
+	private static final long serialVersionUID = 2277231683145586467L;
 
 	/**
 	 * 服务商身份，选择此字段，此PID为签约物料激励协议的pid（为奖励政策结算PID，请谨慎填写），isv_pid和open_seller_pid，只能一个字段有值。

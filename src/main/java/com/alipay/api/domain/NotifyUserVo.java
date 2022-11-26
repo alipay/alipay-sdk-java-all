@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅用户vo
  *
  * @author auto create
- * @since 1.0, 2022-10-13 11:25:56
+ * @since 1.0, 2022-11-25 15:38:20
  */
 public class NotifyUserVo extends AlipayObject {
 
-	private static final long serialVersionUID = 3792555836469119831L;
+	private static final long serialVersionUID = 5877884343735221526L;
 
 	/**
 	 * 删除标志，已删除：deleted, 未删除:not_deleted
@@ -30,6 +30,18 @@ public class NotifyUserVo extends AlipayObject {
 	 */
 	@ApiField("notify_object")
 	private String notifyObject;
+
+	/**
+	 * 订阅实体（uid为对外版本的openId）
+	 */
+	@ApiField("notify_object_open_id")
+	private String notifyObjectOpenId;
+
+	/**
+	 * 用户id（对外）
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订阅状态
@@ -62,6 +74,20 @@ public class NotifyUserVo extends AlipayObject {
 	}
 	public void setNotifyObject(String notifyObject) {
 		this.notifyObject = notifyObject;
+	}
+
+	public String getNotifyObjectOpenId() {
+		return this.notifyObjectOpenId;
+	}
+	public void setNotifyObjectOpenId(String notifyObjectOpenId) {
+		this.notifyObjectOpenId = notifyObjectOpenId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getStatus() {

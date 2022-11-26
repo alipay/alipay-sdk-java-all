@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceDataScenicQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3588955989613926361L;
+	private static final long serialVersionUID = 3641668397677579538L;
 
 	/** 
 	 * 景区分页信息

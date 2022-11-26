@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 请款分账查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-10 19:28:42
+ * @since 1.0, 2022-11-24 21:46:15
  */
 public class AlipayTradeBatchTransferQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2381688342784985194L;
+	private static final long serialVersionUID = 2356781213214861655L;
 
 	/**
 	 * 扩展字段

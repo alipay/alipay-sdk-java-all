@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportTaxiHeatmapQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1118398747984596122L;
+	private static final long serialVersionUID = 7735624556236785156L;
 
 	/** 
 	 * 热力图数据	参见HeatMapData

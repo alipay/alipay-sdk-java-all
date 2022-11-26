@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询亲子关系，返回亲子关系信息
  *
  * @author auto create
- * @since 1.0, 2020-12-04 18:01:45
+ * @since 1.0, 2022-11-25 10:12:20
  */
 public class UserInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8236439126344513852L;
+	private static final long serialVersionUID = 7223534249231739576L;
 
 	/**
 	 * 孩子生日
