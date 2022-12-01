@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证信息查询
  *
  * @author auto create
- * @since 1.0, 2022-11-16 11:46:26
+ * @since 1.0, 2022-12-01 20:36:49
  */
 public class ZhimaCustomerJobworthInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8272133436926837636L;
+	private static final long serialVersionUID = 1734345417352361759L;
 
 	/**
 	 * 若用户没有开通工作证或者芝麻，成功开通后回跳的链接 ，支持http或schema地址
@@ -32,6 +32,12 @@ public class ZhimaCustomerJobworthInfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 子场景
+	 */
+	@ApiField("cloud_resume_scene")
+	private String cloudResumeScene;
 
 	/**
 	 * 公司社会统一代码h5页面访客展示使用
@@ -148,6 +154,13 @@ C = company  or P = person
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getCloudResumeScene() {
+		return this.cloudResumeScene;
+	}
+	public void setCloudResumeScene(String cloudResumeScene) {
+		this.cloudResumeScene = cloudResumeScene;
 	}
 
 	public String getCompanyCertificate() {

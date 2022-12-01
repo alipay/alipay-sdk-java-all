@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电商申请报案
  *
  * @author auto create
- * @since 1.0, 2022-08-30 22:09:12
+ * @since 1.0, 2022-11-28 18:18:21
  */
 public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5316445716328943419L;
+	private static final long serialVersionUID = 8887512512335211587L;
 
 	/**
 	 * 申请报案金额（单位：分）

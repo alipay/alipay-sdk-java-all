@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-11-24 19:57:13
+ * @since 1.0, 2022-12-01 21:21:21
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -41,7 +41,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 
 	/** 
 	* 小程序logo图标，图片格式仅支持 jpeg,png,jpg,PNG,JPG ,JPEG格式，不支持 bmp,gif,BMP,GIF格式。建议上传像素为180*180 px，logo图片最大 2M，图片高度与宽度必须一致。
-如果不填默认采用当前小程序 logo 图标。
+如果不填默认采用当前小程序 logo 图标。如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。
 	 */
 	private FileItem appLogo;
 
@@ -175,6 +175,7 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	* 小程序服务区域类型，支持：
 GLOBAL-全球
 CHINA-中国
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。
 LOCATION-指定区域
 	 */
 	private String regionType;
@@ -200,19 +201,20 @@ LOCATION-指定区域
 	private FileItem secondSpecialLicensePic;
 
 	/** 
-	* 小程序客服邮箱，如果不填默认采用当前小程序的应用客服邮箱，小程序客服电话和邮箱至少输入一个。
-注意：2021年7月1日后，该字段将逐步灰度为可选字段，请按可选开发。 
+	* 小程序客服邮箱，如果不填默认采用当前小程序的应用客服邮箱，小程序客服电话和邮箱至少输入一个。如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。
+注意：2021年7月1日后，该字段将逐步灰度为可选字段，请按可选开发。
 	 */
 	private String serviceEmail;
 
 	/** 
-	* 小程序客服电话，长度限制5~30个字符，仅支持包含数字和-。如果不填默认采用当前小程序的应用客服电话，小程序客服电话和邮箱至少输入一个。
+	* 小程序客服电话，长度限制5~30个字符，仅支持包含数字和-。如果不填默认采用当前小程序的应用客服电话，小程序客服电话和邮箱至少输入一个。如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。
 注意：2021年7月1日后，该字段将逐步灰度为必填字段，请按必填开发。
 	 */
 	private String servicePhone;
 
 	/** 
 	* 省市区信息。当region_type为LOCATION或传入city_code时，province_code不能为空；填写area_code时，province_code和city_code不能为空。只填province_code则全选该省；填写province_code和city_code则全选该市，以此类推。省市区code参见https://gw.alipayobjects.com/os/bmw-prod/0aab0319-13de-42b9-85cf-13877a5f78ed.xlsx
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。
 	 */
 	private List<RegionInfo> serviceRegionInfo;
 

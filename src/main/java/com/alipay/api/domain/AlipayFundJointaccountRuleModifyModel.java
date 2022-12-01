@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业账户规则设置
  *
  * @author auto create
- * @since 1.0, 2022-11-21 14:49:37
+ * @since 1.0, 2022-11-28 15:40:25
  */
 public class AlipayFundJointaccountRuleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2113472311497959499L;
+	private static final long serialVersionUID = 8387563118871329214L;
 
 	/**
 	 * 账本ID

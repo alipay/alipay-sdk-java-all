@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工列表
  *
  * @author auto create
- * @since 1.0, 2022-11-22 14:06:02
+ * @since 1.0, 2022-11-30 17:10:07
  */
 public class JointAccountMemberList extends AlipayObject {
 
-	private static final long serialVersionUID = 8378866682969579993L;
+	private static final long serialVersionUID = 1796759739692425499L;
 
 	/**
 	 * 额度模型
@@ -22,6 +22,12 @@ public class JointAccountMemberList extends AlipayObject {
 	@ApiListField("account_quota")
 	@ApiField("joint_account_quota_d_t_o")
 	private List<JointAccountQuotaDTO> accountQuota;
+
+	/**
+	 * 成员openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 成员ID
@@ -34,6 +40,13 @@ public class JointAccountMemberList extends AlipayObject {
 	}
 	public void setAccountQuota(List<JointAccountQuotaDTO> accountQuota) {
 		this.accountQuota = accountQuota;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

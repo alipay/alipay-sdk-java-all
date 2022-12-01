@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改待解付登记薄
  *
  * @author auto create
- * @since 1.0, 2020-06-28 09:59:12
+ * @since 1.0, 2022-12-01 11:05:33
  */
 public class AlipayAccountClearingcenterPayoffModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2589892183681479676L;
+	private static final long serialVersionUID = 1599326696635659541L;
 
 	/**
 	 * 是否高优先级处理登记薄

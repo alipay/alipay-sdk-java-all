@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitValidPeriodDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2268883434839115656L;
+	private static final long serialVersionUID = 8268461476489316746L;
 
 	/**
 	 * 当type为 RELATIVE时，该字段必填

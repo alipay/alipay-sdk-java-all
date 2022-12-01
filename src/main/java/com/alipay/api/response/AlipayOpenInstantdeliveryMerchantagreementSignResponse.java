@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.instantdelivery.merchantagreement.sign response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-18 11:07:23
+ * @since 1.0, 2022-11-26 23:01:34
  */
 public class AlipayOpenInstantdeliveryMerchantagreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2784749153775893495L;
+	private static final long serialVersionUID = 3114669312917461542L;
 
 	/** 
 	 * 授权二维码的url, 必须用传入的uid进行扫码

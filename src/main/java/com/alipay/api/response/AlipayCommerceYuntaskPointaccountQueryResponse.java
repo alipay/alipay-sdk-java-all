@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceYuntaskPointaccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7134915236179643756L;
+	private static final long serialVersionUID = 5161995578629494186L;
 
 	/** 
 	 * 积分余额

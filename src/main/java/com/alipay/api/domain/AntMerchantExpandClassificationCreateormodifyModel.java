@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁商家标签单条保存
  *
  * @author auto create
- * @since 1.0, 2022-11-25 10:48:46
+ * @since 1.0, 2022-11-29 10:36:47
  */
 public class AntMerchantExpandClassificationCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5743385475752236237L;
+	private static final long serialVersionUID = 6191264561356877769L;
 
 	/**
 	 * 标签Key（英文标识），不存在的Key是无法执行的

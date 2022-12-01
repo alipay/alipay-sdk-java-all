@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云存储文件基本信息
  *
  * @author auto create
- * @since 1.0, 2022-09-14 14:31:35
+ * @since 1.0, 2022-11-30 11:01:15
  */
 public class FileBaseInfoResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5881755899582465428L;
+	private static final long serialVersionUID = 1721759819991654122L;
 
 	/**
 	 * 文件绝对路径
 	 */
 	@ApiField("absolute_path")
 	private String absolutePath;
+
+	/**
+	 * 文件访问地址
+	 */
+	@ApiField("download_url")
+	private String downloadUrl;
 
 	/**
 	 * 是否生效,true:是，false:否
@@ -54,6 +60,13 @@ public class FileBaseInfoResponse extends AlipayObject {
 	}
 	public void setAbsolutePath(String absolutePath) {
 		this.absolutePath = absolutePath;
+	}
+
+	public String getDownloadUrl() {
+		return this.downloadUrl;
+	}
+	public void setDownloadUrl(String downloadUrl) {
+		this.downloadUrl = downloadUrl;
 	}
 
 	public Boolean getEnable() {

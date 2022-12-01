@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 票务消息通知接口
  *
  * @author auto create
- * @since 1.0, 2019-07-30 17:51:52
+ * @since 1.0, 2022-11-29 15:40:17
  */
 public class AlipayCommerceTransportMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5685159565883298631L;
+	private static final long serialVersionUID = 4514511176126614919L;
 
 	/**
 	 * 卡类型
@@ -45,6 +45,13 @@ public class AlipayCommerceTransportMessageSendModel extends AlipayObject {
 	 */
 	@ApiField("notify_type")
 	private String notifyType;
+
+	/**
+	 * 目标用户ID（对外版）列表，最大支持50个。
+	 */
+	@ApiListField("open_ids")
+	@ApiField("string")
+	private List<String> openIds;
 
 	/**
 	 * 目标用户ID列表，最大支持50个。
@@ -86,6 +93,13 @@ public class AlipayCommerceTransportMessageSendModel extends AlipayObject {
 	}
 	public void setNotifyType(String notifyType) {
 		this.notifyType = notifyType;
+	}
+
+	public List<String> getOpenIds() {
+		return this.openIds;
+	}
+	public void setOpenIds(List<String> openIds) {
+		this.openIds = openIds;
 	}
 
 	public List<String> getUserIds() {

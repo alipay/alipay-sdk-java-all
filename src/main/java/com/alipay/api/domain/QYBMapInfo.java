@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QYBMapInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5751584796764679844L;
+	private static final long serialVersionUID = 1751815281214217949L;
 
 	/**
 	 * map里的key值

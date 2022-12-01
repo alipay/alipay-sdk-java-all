@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险代扣协议签约
  *
  * @author auto create
- * @since 1.0, 2022-10-12 18:35:27
+ * @since 1.0, 2022-11-29 16:59:14
  */
 public class AlipayInsSceneProductSignConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5289173517819119458L;
+	private static final long serialVersionUID = 5758432325779532494L;
+
+	/**
+	 * 支付宝会员openID，替代之前传入的2088账号，后续会通过灰度过度不再传入2088，用此id替代
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 产品编码
@@ -24,6 +30,13 @@ public class AlipayInsSceneProductSignConfirmModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getProdCode() {
 		return this.prodCode;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-16 11:46:34
+ * @since 1.0, 2022-12-01 20:41:35
  */
 public class ZhimaCustomerJobworthInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5789565643355492467L;
+	private static final long serialVersionUID = 1738236788854555729L;
 
 	/** 
 	 * 受理台单号作为jsapi的一个参数。如果不使用jsapi可以忽略
@@ -37,6 +37,12 @@ public class ZhimaCustomerJobworthInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("picture_url")
 	private String pictureUrl;
+
+	/** 
+	 * 场景授权结果
+	 */
+	@ApiField("scene_result")
+	private Boolean sceneResult;
 
 	/** 
 	 * 业务编码
@@ -88,6 +94,13 @@ public class ZhimaCustomerJobworthInfoQueryResponse extends AlipayResponse {
 	}
 	public String getPictureUrl( ) {
 		return this.pictureUrl;
+	}
+
+	public void setSceneResult(Boolean sceneResult) {
+		this.sceneResult = sceneResult;
+	}
+	public Boolean getSceneResult( ) {
+		return this.sceneResult;
 	}
 
 	public void setSubCode(String subCode) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金融资源领取回调通知
  *
  * @author auto create
- * @since 1.0, 2022-11-14 13:19:49
+ * @since 1.0, 2022-11-28 14:29:14
  */
 public class AlipayFinancialnetAuthPaymentNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4357678954564223853L;
+	private static final long serialVersionUID = 3142279327285794317L;
 
 	/**
 	 * 商品资源基础价值
@@ -36,6 +36,12 @@ public class AlipayFinancialnetAuthPaymentNotifyModel extends AlipayObject {
 	 */
 	@ApiField("commodity_type")
 	private String commodityType;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部资源品类的id（长度<128）
@@ -99,6 +105,13 @@ public class AlipayFinancialnetAuthPaymentNotifyModel extends AlipayObject {
 	}
 	public void setCommodityType(String commodityType) {
 		this.commodityType = commodityType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutCommodityId() {

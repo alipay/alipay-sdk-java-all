@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MStepCashRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4254164131273394435L;
+	private static final long serialVersionUID = 3684144225611877953L;
 
 	/**
 	 * 优惠金额(单位:分)

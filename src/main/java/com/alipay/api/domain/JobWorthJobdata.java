@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工作证职业数据回流接口字段
  *
  * @author auto create
- * @since 1.0, 2022-11-08 17:09:22
+ * @since 1.0, 2022-12-01 19:14:17
  */
 public class JobWorthJobdata extends AlipayObject {
 
-	private static final long serialVersionUID = 4497675398446882349L;
+	private static final long serialVersionUID = 6478218837285322541L;
+
+	/**
+	 * 证书发证机构
+	 */
+	@ApiField("certificate_grant_institution")
+	private String certificateGrantInstitution;
 
 	/**
 	 * 证书编号
 	 */
 	@ApiField("certificate_id")
 	private String certificateId;
+
+	/**
+	 * 证书等级：中文
+	 */
+	@ApiField("certificate_level")
+	private String certificateLevel;
 
 	/**
 	 * 证书名称
@@ -50,6 +62,12 @@ public class JobWorthJobdata extends AlipayObject {
 	private String educationStatus;
 
 	/**
+	 * 考试分数
+	 */
+	@ApiField("exam_score")
+	private String examScore;
+
+	/**
 	 * 工作证图片上传接口返回的id
 	 */
 	@ApiField("head_pic_id")
@@ -60,6 +78,12 @@ public class JobWorthJobdata extends AlipayObject {
 	 */
 	@ApiField("intention_city")
 	private String intentionCity;
+
+	/**
+	 * 发证日期，ms时间戳
+	 */
+	@ApiField("issue_date")
+	private String issueDate;
 
 	/**
 	 * 岗位对应的职业id，字段参考https://www.yuque.com/wx3dkp/gwckr4/bs03t3
@@ -164,6 +188,18 @@ public class JobWorthJobdata extends AlipayObject {
 	private String type;
 
 	/**
+	 * 有效期：开始结束 ms 时间戳
+	 */
+	@ApiField("valid_date_end")
+	private String validDateEnd;
+
+	/**
+	 * 有效期：开始时间 ms时间戳
+	 */
+	@ApiField("valid_date_start")
+	private String validDateStart;
+
+	/**
 	 * 工作描述
 	 */
 	@ApiField("work_desc")
@@ -193,11 +229,25 @@ public class JobWorthJobdata extends AlipayObject {
 	@ApiField("year")
 	private String year;
 
+	public String getCertificateGrantInstitution() {
+		return this.certificateGrantInstitution;
+	}
+	public void setCertificateGrantInstitution(String certificateGrantInstitution) {
+		this.certificateGrantInstitution = certificateGrantInstitution;
+	}
+
 	public String getCertificateId() {
 		return this.certificateId;
 	}
 	public void setCertificateId(String certificateId) {
 		this.certificateId = certificateId;
+	}
+
+	public String getCertificateLevel() {
+		return this.certificateLevel;
+	}
+	public void setCertificateLevel(String certificateLevel) {
+		this.certificateLevel = certificateLevel;
 	}
 
 	public String getCertificateName() {
@@ -235,6 +285,13 @@ public class JobWorthJobdata extends AlipayObject {
 		this.educationStatus = educationStatus;
 	}
 
+	public String getExamScore() {
+		return this.examScore;
+	}
+	public void setExamScore(String examScore) {
+		this.examScore = examScore;
+	}
+
 	public String getHeadPicId() {
 		return this.headPicId;
 	}
@@ -247,6 +304,13 @@ public class JobWorthJobdata extends AlipayObject {
 	}
 	public void setIntentionCity(String intentionCity) {
 		this.intentionCity = intentionCity;
+	}
+
+	public String getIssueDate() {
+		return this.issueDate;
+	}
+	public void setIssueDate(String issueDate) {
+		this.issueDate = issueDate;
 	}
 
 	public String getJobId() {
@@ -366,6 +430,20 @@ public class JobWorthJobdata extends AlipayObject {
 	}
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	public String getValidDateEnd() {
+		return this.validDateEnd;
+	}
+	public void setValidDateEnd(String validDateEnd) {
+		this.validDateEnd = validDateEnd;
+	}
+
+	public String getValidDateStart() {
+		return this.validDateStart;
+	}
+	public void setValidDateStart(String validDateStart) {
+		this.validDateStart = validDateStart;
 	}
 
 	public String getWorkDesc() {

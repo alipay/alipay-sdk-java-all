@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 不可用时间段
  *
  * @author auto create
- * @since 1.0, 2018-09-03 14:58:58
+ * @since 1.0, 2022-12-01 17:52:36
  */
 public class UnAvailableTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5691529237884197388L;
+	private static final long serialVersionUID = 4418486976346245269L;
 
 	/**
 	 * 起始时间

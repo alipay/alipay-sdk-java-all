@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 归属商户信息
  *
  * @author auto create
- * @since 1.0, 2022-10-26 13:40:09
+ * @since 1.0, 2022-11-28 16:26:21
  */
 public class BelongGreenMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1143492561477237533L;
+	private static final long serialVersionUID = 6327931627632957428L;
 
 	/**
 	 * 合作业务类型. 枚举值如下： 
@@ -19,6 +19,12 @@ ISV_FOR_MERCHANT 服务商代运营模式  （SOP请参考 https://opendocs.alip
 	 */
 	@ApiField("business_type")
 	private String businessType;
+
+	/**
+	 * 商户openid
+	 */
+	@ApiField("merchant_open_id")
+	private String merchantOpenId;
 
 	/**
 	 * 商户PID
@@ -31,6 +37,13 @@ ISV_FOR_MERCHANT 服务商代运营模式  （SOP请参考 https://opendocs.alip
 	}
 	public void setBusinessType(String businessType) {
 		this.businessType = businessType;
+	}
+
+	public String getMerchantOpenId() {
+		return this.merchantOpenId;
+	}
+	public void setMerchantOpenId(String merchantOpenId) {
+		this.merchantOpenId = merchantOpenId;
 	}
 
 	public String getMerchantPid() {

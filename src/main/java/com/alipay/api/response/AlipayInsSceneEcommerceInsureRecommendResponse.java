@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.InsureRecommResultDTO;
+import com.alipay.api.domain.InsOpenRejectResultDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.ecommerce.insure.recommend response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-30 22:26:44
+ * @since 1.0, 2022-11-28 19:06:43
  */
 public class AlipayInsSceneEcommerceInsureRecommendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2644687794478662318L;
+	private static final long serialVersionUID = 8253378466219114943L;
 
 	/** 
 	 * 推荐结果
@@ -24,11 +25,25 @@ public class AlipayInsSceneEcommerceInsureRecommendResponse extends AlipayRespon
 	@ApiField("insure_recomm_result_d_t_o")
 	private List<InsureRecommResultDTO> recommendResults;
 
+	/** 
+	 * 拦截原因
+	 */
+	@ApiListField("reject_results")
+	@ApiField("ins_open_reject_result_d_t_o")
+	private List<InsOpenRejectResultDTO> rejectResults;
+
 	public void setRecommendResults(List<InsureRecommResultDTO> recommendResults) {
 		this.recommendResults = recommendResults;
 	}
 	public List<InsureRecommResultDTO> getRecommendResults( ) {
 		return this.recommendResults;
+	}
+
+	public void setRejectResults(List<InsOpenRejectResultDTO> rejectResults) {
+		this.rejectResults = rejectResults;
+	}
+	public List<InsOpenRejectResultDTO> getRejectResults( ) {
+		return this.rejectResults;
 	}
 
 }

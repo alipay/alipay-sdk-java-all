@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链-1688和赊呗融合-卖家签约
  *
  * @author auto create
- * @since 1.0, 2020-03-04 11:21:07
+ * @since 1.0, 2022-12-01 17:46:34
  */
 public class MybankCreditSupplychainCreditpaySellersignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6786484737442491937L;
+	private static final long serialVersionUID = 2837188665481557541L;
 
 	/**
 	 * 平台类型

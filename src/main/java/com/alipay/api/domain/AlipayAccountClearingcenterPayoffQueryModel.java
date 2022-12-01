@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询解付登记薄信息
  *
  * @author auto create
- * @since 1.0, 2020-06-28 09:59:20
+ * @since 1.0, 2022-12-01 11:03:17
  */
 public class AlipayAccountClearingcenterPayoffQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5634752334351284431L;
+	private static final long serialVersionUID = 4388556491525635578L;
 
 	/**
 	 * 币种

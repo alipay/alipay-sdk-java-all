@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户前置营销内容咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-06-07 13:41:42
+ * @since 1.0, 2022-11-29 21:48:50
  */
 public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1148576268937362827L;
+	private static final long serialVersionUID = 8496587612622229582L;
 
 	/**
 	 * 业务场景，用于区分商户具体的咨场景，示例：ORDER_PAGE：下单页营销咨询；其他新场景接入时需与支付宝协商约定
@@ -63,6 +63,12 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	private List<GoodsDetail> goodsDetail;
 
 	/**
+	 * 商户用户id
+	 */
+	@ApiField("merchant_user_id")
+	private String merchantUserId;
+
+	/**
 	 * 已废弃不支持
 	 */
 	@ApiField("mobile")
@@ -85,6 +91,12 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	 */
 	@ApiField("need_return_tag")
 	private Boolean needReturnTag;
+
+	/**
+	 * OpenId是用户在应用下的唯一用户标识。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户订单号,64个字符以内、可包含字母、数字、下划线；需保证在商户端不重复
@@ -178,6 +190,13 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 		this.goodsDetail = goodsDetail;
 	}
 
+	public String getMerchantUserId() {
+		return this.merchantUserId;
+	}
+	public void setMerchantUserId(String merchantUserId) {
+		this.merchantUserId = merchantUserId;
+	}
+
 	public String getMobile() {
 		return this.mobile;
 	}
@@ -204,6 +223,13 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	}
 	public void setNeedReturnTag(Boolean needReturnTag) {
 		this.needReturnTag = needReturnTag;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutTradeNo() {

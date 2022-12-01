@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账结算扩展参数
  *
  * @author auto create
- * @since 1.0, 2021-04-23 09:17:43
+ * @since 1.0, 2022-11-29 21:00:22
  */
 public class SettleExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8357452269888411284L;
+	private static final long serialVersionUID = 2235656454558461839L;
 
 	/**
 	 * 本笔交易的分账操作是否已完结，可传入的值：true/false。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardTemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4591849336443227325L;
+	private static final long serialVersionUID = 6117245287294822178L;
 
 	/**
 	 *  查询起始页码，第一页为 1。

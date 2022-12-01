@@ -8,17 +8,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlink.auth.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 17:06:46
+ * @since 1.0, 2022-11-28 16:41:38
  */
 public class ZhimaCreditEpCreditlinkAuthCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2436688952987943583L;
+	private static final long serialVersionUID = 2539249829911329887L;
+
+	/** 
+	 * 业务订单号
+	 */
+	@ApiField("biz_no")
+	private String bizNo;
 
 	/** 
 	 * 授权有效时间
 	 */
 	@ApiField("expire_time")
 	private String expireTime;
+
+	public void setBizNo(String bizNo) {
+		this.bizNo = bizNo;
+	}
+	public String getBizNo( ) {
+		return this.bizNo;
+	}
 
 	public void setExpireTime(String expireTime) {
 		this.expireTime = expireTime;

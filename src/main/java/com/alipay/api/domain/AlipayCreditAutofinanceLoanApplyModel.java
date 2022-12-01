@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCreditAutofinanceLoanApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1664113243343528724L;
+	private static final long serialVersionUID = 6647594429991479241L;
 
 	/**
 	 * 区域

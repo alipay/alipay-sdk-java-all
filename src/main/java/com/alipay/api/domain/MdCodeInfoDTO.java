@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户动态码回传信息模型。包含动态码的码值、过期时间等信息。
  *
  * @author auto create
- * @since 1.0, 2022-08-25 18:08:40
+ * @since 1.0, 2022-12-01 14:47:54
  */
 public class MdCodeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2535547966558781722L;
+	private static final long serialVersionUID = 6515929257465268133L;
 
 	/**
 	 * 本次回传动态码的状态：

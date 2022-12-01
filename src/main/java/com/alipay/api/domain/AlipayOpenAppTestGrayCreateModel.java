@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * openapi-oas3.0灰度
  *
  * @author auto create
- * @since 1.0, 2022-11-23 14:26:49
+ * @since 1.0, 2022-11-29 10:53:24
  */
 public class AlipayOpenAppTestGrayCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7638881844646689647L;
+	private static final long serialVersionUID = 8344433647956996924L;
 
 	/**
 	 * a

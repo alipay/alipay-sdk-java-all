@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.promotask.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-11-21 15:31:36
+ * @since 1.0, 2022-12-01 01:31:36
  */
 public class AlipayMerchantIndirectPromotaskSyncRequest implements AlipayRequest<AlipayMerchantIndirectPromotaskSyncResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HuanxuTradeOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1768679941897828329L;
+	private static final long serialVersionUID = 5538323256474581627L;
 
 	/**
 	 * 支付、打款、退款时候焕旭返回的唯一凭证id，调用方查询时候建议优先传入该值，内部处理时优先以该值为准。instruction_id和out_request_no不能同时为空。

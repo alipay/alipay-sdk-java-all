@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * K12一脸通行通过集采照片开通申请
  *
  * @author auto create
- * @since 1.0, 2022-07-20 21:03:51
+ * @since 1.0, 2022-11-30 10:48:16
  */
 public class AlipayCommerceEducateScenePhotoremoteApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8345216416478737519L;
+	private static final long serialVersionUID = 6436829927893933682L;
 
 	/**
 	 * 证件编号
@@ -36,6 +36,12 @@ public class AlipayCommerceEducateScenePhotoremoteApplyModel extends AlipayObjec
 	 */
 	@ApiField("out_photo_id")
 	private String outPhotoId;
+
+	/**
+	 * 用户外部ID。（服务商内部唯一ID，唯一关联一位学生/教职工)
+	 */
+	@ApiField("out_user_id")
+	private String outUserId;
 
 	/**
 	 * 学生家长支付宝账号绑定的手机号。
@@ -81,6 +87,13 @@ public class AlipayCommerceEducateScenePhotoremoteApplyModel extends AlipayObjec
 	}
 	public void setOutPhotoId(String outPhotoId) {
 		this.outPhotoId = outPhotoId;
+	}
+
+	public String getOutUserId() {
+		return this.outUserId;
+	}
+	public void setOutUserId(String outUserId) {
+		this.outUserId = outUserId;
 	}
 
 	public String getParentPhoneNumber() {

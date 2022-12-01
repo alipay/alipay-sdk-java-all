@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 绿色能量发放归属的商户信息
  *
  * @author auto create
- * @since 1.0, 2022-11-18 13:39:19
+ * @since 1.0, 2022-11-30 17:13:16
  */
 public class BelongMerchantInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6134451957689395576L;
+	private static final long serialVersionUID = 3764312165713673516L;
 
 	/**
 	 * 合作业务类型,默认为ISV_FOR_MERCHANT
@@ -27,6 +27,12 @@ ISV_FOR_MERCHANT 服务商代运营模式
 	@ApiField("merchant_id")
 	private String merchantId;
 
+	/**
+	 * 商户PID;限制:1、服务商代运营模式必传
+	 */
+	@ApiField("merchant_open_id")
+	private String merchantOpenId;
+
 	public String getBusinessType() {
 		return this.businessType;
 	}
@@ -39,6 +45,13 @@ ISV_FOR_MERCHANT 服务商代运营模式
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public String getMerchantOpenId() {
+		return this.merchantOpenId;
+	}
+	public void setMerchantOpenId(String merchantOpenId) {
+		this.merchantOpenId = merchantOpenId;
 	}
 
 }

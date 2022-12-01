@@ -10,11 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2022-11-17 16:15:23
+ * @since 1.0, 2022-11-30 21:51:49
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1141794244553427424L;
+	private static final long serialVersionUID = 2422921444939119389L;
+
+	/**
+	 * 不限      UNLIMITED
+高中      H
+技校      T
+中专      S
+大专      C
+本科      B
+硕士      M
+博士      D
+	 */
+	@ApiField("academic_require")
+	private String academicRequire;
 
 	/**
 	 * 岗位详细地址。
@@ -91,6 +104,12 @@ CLOSED：招聘结束
 	 */
 	@ApiField("hire_status")
 	private String hireStatus;
+
+	/**
+	 * 岗位详情内容
+	 */
+	@ApiField("job_detail")
+	private String jobDetail;
 
 	/**
 	 * 岗位的小程序详情页URL
@@ -194,6 +213,25 @@ NO_REQ：不要求芝麻工作证
 	@ApiField("work_online")
 	private Boolean workOnline;
 
+	/**
+	 * 不限       UNLIMITED
+1年以下    LESS_THAN_ONE_YEAR
+1-2年      ONE_TO_TWO
+3-5年      THREE_TO_FIVE
+6-7年      SIX_TO_SEVEN
+8-10年     EIGHT_TO_TEN
+10年以上   MORE_THAN_TEN_YEARS
+	 */
+	@ApiField("working_years")
+	private String workingYears;
+
+	public String getAcademicRequire() {
+		return this.academicRequire;
+	}
+	public void setAcademicRequire(String academicRequire) {
+		this.academicRequire = academicRequire;
+	}
+
 	public JobAddress getAddress() {
 		return this.address;
 	}
@@ -255,6 +293,13 @@ NO_REQ：不要求芝麻工作证
 	}
 	public void setHireStatus(String hireStatus) {
 		this.hireStatus = hireStatus;
+	}
+
+	public String getJobDetail() {
+		return this.jobDetail;
+	}
+	public void setJobDetail(String jobDetail) {
+		this.jobDetail = jobDetail;
 	}
 
 	public String getJobDetailUrl() {
@@ -346,6 +391,13 @@ NO_REQ：不要求芝麻工作证
 	}
 	public void setWorkOnline(Boolean workOnline) {
 		this.workOnline = workOnline;
+	}
+
+	public String getWorkingYears() {
+		return this.workingYears;
+	}
+	public void setWorkingYears(String workingYears) {
+		this.workingYears = workingYears;
 	}
 
 }

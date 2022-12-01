@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 咨询参与方信息
  *
  * @author auto create
- * @since 1.0, 2022-08-22 11:18:50
+ * @since 1.0, 2022-11-30 20:34:32
  */
 public class PariticipantDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6514344443619272568L;
+	private static final long serialVersionUID = 6784647939522377153L;
 
 	/**
 	 * 参与方的唯一标识

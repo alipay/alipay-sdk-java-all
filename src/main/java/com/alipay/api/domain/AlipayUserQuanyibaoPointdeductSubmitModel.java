@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益宝扣减结果通知开放接口
  *
  * @author auto create
- * @since 1.0, 2022-09-22 19:13:48
+ * @since 1.0, 2022-11-28 17:21:14
  */
 public class AlipayUserQuanyibaoPointdeductSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8222152185654899113L;
+	private static final long serialVersionUID = 6579717189429993639L;
 
 	/**
 	 * 权益宝业务号，对一笔兑换业务的唯一标识，可以用来做幂等
@@ -40,6 +40,12 @@ public class AlipayUserQuanyibaoPointdeductSubmitModel extends AlipayObject {
 	@ApiListField("ext_info_list")
 	@ApiField("q_y_b_map_info")
 	private List<QYBMapInfo> extInfoList;
+
+	/**
+	 * 商户app_id维度下的用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号，与权益宝业务号唯一对应
@@ -79,6 +85,13 @@ public class AlipayUserQuanyibaoPointdeductSubmitModel extends AlipayObject {
 	}
 	public void setExtInfoList(List<QYBMapInfo> extInfoList) {
 		this.extInfoList = extInfoList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getThirdBizNo() {

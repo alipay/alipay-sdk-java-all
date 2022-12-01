@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二方机构根标签据查询有效券信息
  *
  * @author auto create
- * @since 1.0, 2022-11-24 16:25:58
+ * @since 1.0, 2022-12-01 21:18:14
  */
 public class AlipayMarketingVoucherBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3435557848322226924L;
+	private static final long serialVersionUID = 2145647421641537568L;
 
 	/**
 	 * 券业务编码
@@ -47,13 +47,13 @@ public class AlipayMarketingVoucherBatchqueryModel extends AlipayObject {
 	 * 当前页数
 	 */
 	@ApiField("page_num")
-	private Long pageNum;
+	private String pageNum;
 
 	/**
 	 * 每页显示条数
 	 */
 	@ApiField("page_size")
-	private Long pageSize;
+	private String pageSize;
 
 	/**
 	 * 券产品码列表
@@ -122,17 +122,17 @@ public class AlipayMarketingVoucherBatchqueryModel extends AlipayObject {
 		this.freezeCodes = freezeCodes;
 	}
 
-	public Long getPageNum() {
+	public String getPageNum() {
 		return this.pageNum;
 	}
-	public void setPageNum(Long pageNum) {
+	public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
 
-	public Long getPageSize() {
+	public String getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(Long pageSize) {
+	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 

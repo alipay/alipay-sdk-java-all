@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小部件商品查询返回信息模型
  *
  * @author auto create
- * @since 1.0, 2022-09-08 14:20:17
+ * @since 1.0, 2022-11-29 20:32:15
  */
 public class GoodsQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1852626292988827191L;
+	private static final long serialVersionUID = 5326212728316991919L;
 
 	/**
 	 * 支付宝内部商品唯一标识

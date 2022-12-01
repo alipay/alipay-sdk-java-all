@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户碳积分记录
  *
  * @author auto create
- * @since 1.0, 2022-10-19 16:35:15
+ * @since 1.0, 2022-11-29 15:40:17
  */
 public class AlipayCommerceTransportCarbonDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8288556223126424431L;
+	private static final long serialVersionUID = 5451673457594794266L;
 
 	/**
 	 * 业务结束时间  yyyy-MM-dd HH:mm:ss 格式
@@ -38,6 +38,12 @@ public class AlipayCommerceTransportCarbonDataQueryModel extends AlipayObject {
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 蚂蚁统一会员ID（对外openId版本）
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -71,6 +77,13 @@ public class AlipayCommerceTransportCarbonDataQueryModel extends AlipayObject {
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品可用时间段
  *
  * @author auto create
- * @since 1.0, 2018-09-03 14:58:58
+ * @since 1.0, 2022-12-01 17:52:36
  */
 public class AvailableTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2894438364166164352L;
+	private static final long serialVersionUID = 7748589423186315248L;
 
 	/**
 	 * limit_period_unit为WEEK_DAY，周范围内日单位[1,7]，limit_period_unit 为DAY，月范围内日单位[1,31]

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.message.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-17 17:59:50
+ * @since 1.0, 2022-11-29 15:40:18
  */
 public class AlipayCommerceTransportMessageSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4412169468738193578L;
+	private static final long serialVersionUID = 1324464892339316739L;
 
 	/** 
 	 * 请求失败时返回的子错误码信息
@@ -27,10 +27,22 @@ public class AlipayCommerceTransportMessageSendResponse extends AlipayResponse {
 	private String errorMessage;
 
 	/** 
+	 * 失败的支付宝用户id（对外版）列表
+	 */
+	@ApiField("failed_open_ids")
+	private String failedOpenIds;
+
+	/** 
 	 * 失败的支付宝用户id列表。
 	 */
 	@ApiField("failed_user_ids")
 	private String failedUserIds;
+
+	/** 
+	 * 业务成功标志。true表示业务成功，false表示业务失败。
+	 */
+	@ApiField("success")
+	private Boolean success;
 
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
@@ -46,11 +58,25 @@ public class AlipayCommerceTransportMessageSendResponse extends AlipayResponse {
 		return this.errorMessage;
 	}
 
+	public void setFailedOpenIds(String failedOpenIds) {
+		this.failedOpenIds = failedOpenIds;
+	}
+	public String getFailedOpenIds( ) {
+		return this.failedOpenIds;
+	}
+
 	public void setFailedUserIds(String failedUserIds) {
 		this.failedUserIds = failedUserIds;
 	}
 	public String getFailedUserIds( ) {
 		return this.failedUserIds;
+	}
+
+	public void setSuccess(Boolean success) {
+		this.success = success;
+	}
+	public Boolean getSuccess( ) {
+		return this.success;
 	}
 
 }

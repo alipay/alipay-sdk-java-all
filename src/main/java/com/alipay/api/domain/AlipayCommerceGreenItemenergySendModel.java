@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 给绿色相关商品发放能量
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:27:55
+ * @since 1.0, 2022-11-30 15:04:50
  */
 public class AlipayCommerceGreenItemenergySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8395328383759488937L;
+	private static final long serialVersionUID = 2319485356571531815L;
+
+	/**
+	 * 支付宝openid
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝用户ID
@@ -70,6 +76,13 @@ public class AlipayCommerceGreenItemenergySendModel extends AlipayObject {
 	 */
 	@ApiField("scan_time")
 	private Date scanTime;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUid() {
 		return this.alipayUid;

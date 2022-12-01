@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEtcApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5287955629232812272L;
+	private static final long serialVersionUID = 2711775295785388159L;
 
 	/**
 	 * 卡片有效期

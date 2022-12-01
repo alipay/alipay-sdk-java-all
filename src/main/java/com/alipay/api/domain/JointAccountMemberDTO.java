@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共同账户成员模型（无登录号信息）
  *
  * @author auto create
- * @since 1.0, 2022-11-21 23:18:18
+ * @since 1.0, 2022-12-01 15:11:28
  */
 public class JointAccountMemberDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3239298261293868872L;
+	private static final long serialVersionUID = 1486363844434586252L;
 
 	/**
 	 * 额度模型
@@ -30,6 +30,12 @@ public class JointAccountMemberDTO extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 成员状态
@@ -62,6 +68,13 @@ public class JointAccountMemberDTO extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getStatus() {

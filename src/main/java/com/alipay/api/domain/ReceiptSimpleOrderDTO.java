@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子小票订单模型
  *
  * @author auto create
- * @since 1.0, 2022-10-11 17:38:53
+ * @since 1.0, 2022-11-30 17:12:48
  */
 public class ReceiptSimpleOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7324665768246814921L;
+	private static final long serialVersionUID = 6866841997176456424L;
 
 	/**
 	 * 支付宝支付方式对应支付金额
@@ -28,6 +28,12 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	 */
 	@ApiField("alipay_amout")
 	private Long alipayAmout;
+
+	/**
+	 * 支付宝openid
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝用户uid
@@ -188,6 +194,13 @@ public class ReceiptSimpleOrderDTO extends AlipayObject {
 	}
 	public void setAlipayAmout(Long alipayAmout) {
 		this.alipayAmout = alipayAmout;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAlipayUid() {

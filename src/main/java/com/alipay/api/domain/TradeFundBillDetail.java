@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易单明细
  *
  * @author auto create
- * @since 1.0, 2022-11-21 23:18:48
+ * @since 1.0, 2022-12-01 16:25:50
  */
 public class TradeFundBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5542197375163896763L;
+	private static final long serialVersionUID = 6245445272649136794L;
 
 	/**
 	 * 交易金额
@@ -32,6 +32,12 @@ public class TradeFundBillDetail extends AlipayObject {
 	 */
 	@ApiField("asset_user_id")
 	private String assetUserId;
+
+	/**
+	 * 资产的属主openid
+	 */
+	@ApiField("asset_user_open_id")
+	private String assetUserOpenId;
 
 	/**
 	 * 支付业务类型
@@ -74,6 +80,13 @@ REFUND-退款
 	}
 	public void setAssetUserId(String assetUserId) {
 		this.assetUserId = assetUserId;
+	}
+
+	public String getAssetUserOpenId() {
+		return this.assetUserOpenId;
+	}
+	public void setAssetUserOpenId(String assetUserOpenId) {
+		this.assetUserOpenId = assetUserOpenId;
 	}
 
 	public String getBizPayType() {

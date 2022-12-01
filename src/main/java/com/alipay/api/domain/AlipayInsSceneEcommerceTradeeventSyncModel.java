@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易事件同步接口
  *
  * @author auto create
- * @since 1.0, 2022-11-09 18:32:50
+ * @since 1.0, 2022-11-28 18:47:47
  */
 public class AlipayInsSceneEcommerceTradeeventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2785625355425373145L;
+	private static final long serialVersionUID = 2213213526261298434L;
 
 	/**
 	 * 买家

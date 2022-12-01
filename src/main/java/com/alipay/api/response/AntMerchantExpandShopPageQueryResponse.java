@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.page.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-23 10:21:39
+ * @since 1.0, 2022-11-29 20:30:47
  */
 public class AntMerchantExpandShopPageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2615914753716681344L;
+	private static final long serialVersionUID = 1611178684886263231L;
 
 	/** 
 	 * 门店详情

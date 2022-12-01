@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LoginForm extends AlipayObject {
 
-	private static final long serialVersionUID = 8849447572241448571L;
+	private static final long serialVersionUID = 1716827159367697344L;
 
 	/**
 	 * 图片验证码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户机构账户余额查询
  *
  * @author auto create
- * @since 1.0, 2021-09-07 15:08:11
+ * @since 1.0, 2022-11-28 16:19:34
  */
 public class AlipayFinancialnetAuthBalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4345612486674468727L;
+	private static final long serialVersionUID = 3571227326858224358L;
 
 	/**
 	 * 业务扩展ID，关联外部业务数据ID
@@ -42,6 +42,12 @@ public class AlipayFinancialnetAuthBalanceQueryModel extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 产品id
@@ -100,6 +106,13 @@ public class AlipayFinancialnetAuthBalanceQueryModel extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProductId() {

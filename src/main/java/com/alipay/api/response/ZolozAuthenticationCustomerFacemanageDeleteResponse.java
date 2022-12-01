@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.facemanage.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-23 10:22:56
+ * @since 1.0, 2022-11-27 15:11:13
  */
 public class ZolozAuthenticationCustomerFacemanageDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5273122542771851557L;
+	private static final long serialVersionUID = 3652367787319855923L;
 
 	/** 
 	 * 返回值

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连营销任务状态同步
  *
  * @author auto create
- * @since 1.0, 2022-11-21 15:30:07
+ * @since 1.0, 2022-12-01 01:25:50
  */
 public class AlipayMerchantIndirectPromotaskSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1434637144866737128L;
+	private static final long serialVersionUID = 4594469431996384772L;
 
 	/**
 	 * 业务场景编码，接入时参考业务接入文档由支付宝侧分配。
@@ -46,10 +46,15 @@ public class AlipayMerchantIndirectPromotaskSyncModel extends AlipayObject {
 	private Date taskEndTime;
 
 	/**
+	 * 任务实例ID，领取任务后有效
+	 */
+	@ApiField("task_id")
+	private String taskId;
+
+	/**
 	 * 任务状态，枚举值：
-- START，任务开始
-- CANCEL，任务取消
-- FINISH，任务完成
+1. FINISH，结束任务(任务已完成)
+2. UN_FINISH，任务结束((任务未完成))
 	 */
 	@ApiField("task_state")
 	private String taskState;
@@ -87,6 +92,13 @@ public class AlipayMerchantIndirectPromotaskSyncModel extends AlipayObject {
 	}
 	public void setTaskEndTime(Date taskEndTime) {
 		this.taskEndTime = taskEndTime;
+	}
+
+	public String getTaskId() {
+		return this.taskId;
+	}
+	public void setTaskId(String taskId) {
+		this.taskId = taskId;
 	}
 
 	public String getTaskState() {

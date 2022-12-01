@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻企业信用征信数据服务非实时创建
  *
  * @author auto create
- * @since 1.0, 2022-09-23 15:19:48
+ * @since 1.0, 2022-11-28 16:40:50
  */
 public class ZhimaCreditEpCreditlinkAuthCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2118515946518873166L;
+	private static final long serialVersionUID = 2532213621784545854L;
 
 	/**
 	 * 企业可信链接协议列表
@@ -28,6 +28,12 @@ public class ZhimaCreditEpCreditlinkAuthCreateModel extends AlipayObject {
 	 */
 	@ApiField("auth_merchant_id")
 	private String authMerchantId;
+
+	/**
+	 * 授权过期时间。格式"yyyy-MM-dd HH:mm:ss"。
+	 */
+	@ApiField("authorization_expire_time")
+	private String authorizationExpireTime;
 
 	/**
 	 * 法人身份证号
@@ -89,6 +95,13 @@ public class ZhimaCreditEpCreditlinkAuthCreateModel extends AlipayObject {
 	}
 	public void setAuthMerchantId(String authMerchantId) {
 		this.authMerchantId = authMerchantId;
+	}
+
+	public String getAuthorizationExpireTime() {
+		return this.authorizationExpireTime;
+	}
+	public void setAuthorizationExpireTime(String authorizationExpireTime) {
+		this.authorizationExpireTime = authorizationExpireTime;
 	}
 
 	public String getCognizantCertNo() {

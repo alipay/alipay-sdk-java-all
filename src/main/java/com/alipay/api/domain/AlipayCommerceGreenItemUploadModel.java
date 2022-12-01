@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量上传能量码
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:27:45
+ * @since 1.0, 2022-11-30 15:04:50
  */
 public class AlipayCommerceGreenItemUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4589527772925616848L;
+	private static final long serialVersionUID = 4853396286612898939L;
 
 	/**
 	 * 能量码归属的商户信息, 说明：
@@ -44,13 +44,13 @@ public class AlipayCommerceGreenItemUploadModel extends AlipayObject {
 	private String goodsId;
 
 	/**
-	 * 商品名称
+	 * 商品名称，当data_operation传入1的时候必填
 	 */
 	@ApiField("goods_name")
 	private String goodsName;
 
 	/**
-	 * 能量码列表，最多不能超过100条。
+	 * 能量码列表，格式由商户自定义上传，最多不能超过100条。
 	 */
 	@ApiListField("qr_code_list")
 	@ApiField("string")

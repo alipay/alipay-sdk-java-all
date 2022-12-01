@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算详情信息
  *
  * @author auto create
- * @since 1.0, 2020-05-07 14:32:13
+ * @since 1.0, 2022-11-30 21:16:45
  */
 public class SettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8637123836762889387L;
+	private static final long serialVersionUID = 4568816644885877789L;
 
 	/**
 	 * 结算的金额，单位为元。在创建订单和支付接口时必须和交易金额相同。在结算确认接口时必须等于交易金额减去已退款金额。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟数字人开放接口调用
  *
  * @author auto create
- * @since 1.0, 2022-11-18 16:42:14
+ * @since 1.0, 2022-11-29 17:10:14
  */
 public class AlipayIserviceCcmRobotAvatarbaseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1379952389317524237L;
+	private static final long serialVersionUID = 8418935289277249971L;
 
 	/**
 	 * method_params:对应target_method请求方法的具体传参值k-v map
@@ -25,6 +25,12 @@ public class AlipayIserviceCcmRobotAvatarbaseQueryModel extends AlipayObject {
 	@ApiField("target_method")
 	private String targetMethod;
 
+	/**
+	 * 租户code&租户id，对于子部门客户需要上传子部门id
+	 */
+	@ApiField("tenant_code")
+	private String tenantCode;
+
 	public String getMethodParams() {
 		return this.methodParams;
 	}
@@ -37,6 +43,13 @@ public class AlipayIserviceCcmRobotAvatarbaseQueryModel extends AlipayObject {
 	}
 	public void setTargetMethod(String targetMethod) {
 		this.targetMethod = targetMethod;
+	}
+
+	public String getTenantCode() {
+		return this.tenantCode;
+	}
+	public void setTenantCode(String tenantCode) {
+		this.tenantCode = tenantCode;
 	}
 
 }

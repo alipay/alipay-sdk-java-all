@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * context 保存操作者信息
  *
  * @author auto create
- * @since 1.0, 2016-12-22 09:37:28
+ * @since 1.0, 2022-12-01 17:52:45
  */
 public class KoubeiOperationContext extends AlipayObject {
 
-	private static final long serialVersionUID = 3558862877486656556L;
+	private static final long serialVersionUID = 5444963447788312156L;
 
 	/**
 	 * 如果是isv代操作，请传入ISV；如果是其他角色（商户MERCHANT、服务商PROVIDER、服务商员工S_STAFF、商户员工M_STAFF）操作，不用填写。
