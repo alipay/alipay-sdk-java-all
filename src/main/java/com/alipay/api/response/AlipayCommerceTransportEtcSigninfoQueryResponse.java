@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.signinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-23 13:31:44
+ * @since 1.0, 2022-12-05 15:31:34
  */
 public class AlipayCommerceTransportEtcSigninfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7764483824298427847L;
+	private static final long serialVersionUID = 6625746879394431788L;
 
 	/** 
 	 * 支付宝ETC平台代扣协议号，该协议号是经过ETC业务域包装过的，只有该业务域能解析。

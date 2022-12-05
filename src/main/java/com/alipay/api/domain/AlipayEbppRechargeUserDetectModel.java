@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值双v用户合法检测
  *
  * @author auto create
- * @since 1.0, 2019-08-30 18:58:42
+ * @since 1.0, 2022-12-05 17:27:49
  */
 public class AlipayEbppRechargeUserDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4799369627437221488L;
+	private static final long serialVersionUID = 8351783229614728351L;
 
 	/**
 	 * 手机号码

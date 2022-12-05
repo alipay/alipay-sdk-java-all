@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多媒体OCR行驶证识别
  *
  * @author auto create
- * @since 1.0, 2022-09-21 11:23:09
+ * @since 1.0, 2022-12-05 19:47:15
  */
 public class AlipayMsaasMediarecogAftsCertIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8829123519137696838L;
+	private static final long serialVersionUID = 5675287936946996776L;
 
 	/**
 	 * 扩展入参
@@ -24,6 +24,12 @@ public class AlipayMsaasMediarecogAftsCertIdentifyModel extends AlipayObject {
 	 */
 	@ApiField("h")
 	private Long h;
+
+	/**
+	 * 蚂蚁统一开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 车牌号
@@ -73,6 +79,13 @@ public class AlipayMsaasMediarecogAftsCertIdentifyModel extends AlipayObject {
 	}
 	public void setH(Long h) {
 		this.h = h;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPlateNumber() {

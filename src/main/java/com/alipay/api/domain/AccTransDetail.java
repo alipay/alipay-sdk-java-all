@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccTransDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4412215897692297514L;
+	private static final long serialVersionUID = 2895454199148115587L;
 
 	/**
 	 * 支付宝订单号。仅付汇失败后，商户重试时填写。首次批次请求时设置为空，否则会失败。

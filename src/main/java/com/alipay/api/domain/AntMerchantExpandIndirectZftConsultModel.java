@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通商户创建预校验咨询
  *
  * @author auto create
- * @since 1.0, 2022-11-11 22:25:55
+ * @since 1.0, 2022-12-01 21:49:14
  */
 public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1838925162585655746L;
+	private static final long serialVersionUID = 3182963396951986318L;
 
 	/**
 	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名。如果涉及当面付场景，请填写线下店铺名称
@@ -104,6 +104,18 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private List<String> inDoorImages;
 
 	/**
+	 * （平替原来的info_source_uid字段，如果能拿到openId，请传本字段，原字段留空）。信息关联的openId
+	 */
+	@ApiField("info_source_open_id")
+	private String infoSourceOpenId;
+
+	/**
+	 * （已废弃，请使用info_source_open_id）。信息关联的uid
+	 */
+	@ApiField("info_source_uid")
+	private String infoSourceUid;
+
+	/**
 	 * 开票资料信息
 	 */
 	@ApiField("invoice_info")
@@ -175,6 +187,18 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	@ApiListField("out_door_images")
 	@ApiField("string")
 	private List<String> outDoorImages;
+
+	/**
+	 * （已废弃，请使用oversea_settle_open_id）境外结算账号
+	 */
+	@ApiField("oversea_settle_account")
+	private String overseaSettleAccount;
+
+	/**
+	 * （平替原来的oversea_settle_open_id字段，如能够获取到该场景的open_id，请传本字段，原字段留空）境外结算账号
+	 */
+	@ApiField("oversea_settle_open_id")
+	private String overseaSettleOpenId;
 
 	/**
 	 * 商户行业资质，当商户是特殊行业时必填。每项行业资质信息中，industry_qualification_type和industry_qualification_image均必填
@@ -307,6 +331,20 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 		this.inDoorImages = inDoorImages;
 	}
 
+	public String getInfoSourceOpenId() {
+		return this.infoSourceOpenId;
+	}
+	public void setInfoSourceOpenId(String infoSourceOpenId) {
+		this.infoSourceOpenId = infoSourceOpenId;
+	}
+
+	public String getInfoSourceUid() {
+		return this.infoSourceUid;
+	}
+	public void setInfoSourceUid(String infoSourceUid) {
+		this.infoSourceUid = infoSourceUid;
+	}
+
 	public MerchantInvoiceInfo getInvoiceInfo() {
 		return this.invoiceInfo;
 	}
@@ -389,6 +427,20 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	}
 	public void setOutDoorImages(List<String> outDoorImages) {
 		this.outDoorImages = outDoorImages;
+	}
+
+	public String getOverseaSettleAccount() {
+		return this.overseaSettleAccount;
+	}
+	public void setOverseaSettleAccount(String overseaSettleAccount) {
+		this.overseaSettleAccount = overseaSettleAccount;
+	}
+
+	public String getOverseaSettleOpenId() {
+		return this.overseaSettleOpenId;
+	}
+	public void setOverseaSettleOpenId(String overseaSettleOpenId) {
+		this.overseaSettleOpenId = overseaSettleOpenId;
 	}
 
 	public List<IndustryQualificationInfo> getQualifications() {

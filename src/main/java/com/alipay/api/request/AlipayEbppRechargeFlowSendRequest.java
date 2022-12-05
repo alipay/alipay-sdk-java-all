@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.recharge.flow.send request
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 15:56:23
+ * @since 1.0, 2022-12-05 17:27:30
  */
 public class AlipayEbppRechargeFlowSendRequest implements AlipayRequest<AlipayEbppRechargeFlowSendResponse> {
 

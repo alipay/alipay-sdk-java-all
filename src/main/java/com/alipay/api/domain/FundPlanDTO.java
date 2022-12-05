@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金计划
  *
  * @author auto create
- * @since 1.0, 2022-07-18 22:12:41
+ * @since 1.0, 2022-12-05 14:58:42
  */
 public class FundPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6598285151161667423L;
+	private static final long serialVersionUID = 2745272225452147317L;
 
 	/**
 	 * 合花群ID（与当前请求参数中传入值保持一致）

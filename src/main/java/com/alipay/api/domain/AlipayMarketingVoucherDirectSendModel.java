@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券平台直发券接口
  *
  * @author auto create
- * @since 1.0, 2021-03-10 10:26:55
+ * @since 1.0, 2022-12-02 21:44:54
  */
 public class AlipayMarketingVoucherDirectSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7468554664844716237L;
+	private static final long serialVersionUID = 8445548976922591459L;
 
 	/**
 	 * 券金额(单位:分)
@@ -38,6 +38,12 @@ public class AlipayMarketingVoucherDirectSendModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * OPENID(支付宝用户2088账号对应的OPENID)
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 业务订单号，每次操作不可重复。
@@ -83,6 +89,13 @@ public class AlipayMarketingVoucherDirectSendModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 中移动流量增送资格检测
  *
  * @author auto create
- * @since 1.0, 2018-12-29 15:17:57
+ * @since 1.0, 2022-12-05 17:26:48
  */
 public class AlipayEbppFlowQualificationDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8574818257535391886L;
+	private static final long serialVersionUID = 3868739412737576198L;
 
 	/**
 	 * 需要校验的用户手机号

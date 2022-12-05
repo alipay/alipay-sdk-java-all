@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序-搜索运营-关键词信息
  *
  * @author auto create
- * @since 1.0, 2022-11-25 12:43:13
+ * @since 1.0, 2022-12-02 16:34:56
  */
 public class KeyWordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6224292278451833874L;
+	private static final long serialVersionUID = 5573326792379728475L;
 
 	/**
 	 * 审核单号
@@ -26,7 +26,7 @@ public class KeyWordInfo extends AlipayObject {
 	private String auditKeyWord;
 
 	/**
-	 * 审核信息
+	 * 审核人的备注信息
 	 */
 	@ApiField("audit_reason")
 	private String auditReason;
@@ -56,7 +56,7 @@ public class KeyWordInfo extends AlipayObject {
 	private String keyWord;
 
 	/**
-	 * 状态
+	 * 关键词当前状态
 	 */
 	@ApiField("status")
 	private String status;

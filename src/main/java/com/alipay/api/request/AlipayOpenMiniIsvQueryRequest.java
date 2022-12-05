@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.isv.query request
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 23:46:01
+ * @since 1.0, 2022-12-05 13:51:35
  */
 public class AlipayOpenMiniIsvQueryRequest implements AlipayRequest<AlipayOpenMiniIsvQueryResponse> {
 

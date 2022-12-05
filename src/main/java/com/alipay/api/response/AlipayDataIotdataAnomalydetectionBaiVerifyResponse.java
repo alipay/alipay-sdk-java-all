@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataIotdataAnomalydetectionBaiVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2896678376434597539L;
+	private static final long serialVersionUID = 7873382617985574518L;
 
 	/** 
 	 * 结果为json字串，表示异常的详细信息，例如货物异常是新增和消失区域在图像上的坐标值

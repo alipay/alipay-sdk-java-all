@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.common.notify.send request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:13
+ * @since 1.0, 2022-12-05 18:57:34
  */
 public class AlipayEbppCommonNotifySendRequest implements AlipayRequest<AlipayEbppCommonNotifySendResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销抽奖活动咨询
  *
  * @author auto create
- * @since 1.0, 2022-11-14 20:56:54
+ * @since 1.0, 2022-12-05 15:49:49
  */
 public class AlipayMarketingCampaignDrawcampConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5854742286992594192L;
+	private static final long serialVersionUID = 7756541893419958561L;
 
 	/**
 	 * 营销海豚活动id
@@ -24,6 +24,12 @@ public class AlipayMarketingCampaignDrawcampConsultModel extends AlipayObject {
 	 */
 	@ApiField("ext_params")
 	private ConsultExtParams extParams;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 指定过滤奖品id列表，最多支持10个，多个奖品用英文逗号分割，为空时咨询活动下所有的奖品
@@ -55,6 +61,13 @@ public class AlipayMarketingCampaignDrawcampConsultModel extends AlipayObject {
 	}
 	public void setExtParams(ConsultExtParams extParams) {
 		this.extParams = extParams;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPrizeIdList() {

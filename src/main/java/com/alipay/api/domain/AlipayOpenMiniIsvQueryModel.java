@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv查询小程序预创建申请
  *
  * @author auto create
- * @since 1.0, 2022-11-02 23:46:01
+ * @since 1.0, 2022-12-05 13:12:14
  */
 public class AlipayOpenMiniIsvQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1729895869819479328L;
+	private static final long serialVersionUID = 6824445442581467453L;
 
 	/**
 	 * 服务商代商家创建小程序，由支付宝开放平台返回的订单号用于后续查询处理进展。

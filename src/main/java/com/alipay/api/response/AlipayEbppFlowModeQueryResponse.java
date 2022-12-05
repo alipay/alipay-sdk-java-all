@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.flow.mode.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:19
+ * @since 1.0, 2022-12-05 17:26:17
  */
 public class AlipayEbppFlowModeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8177438117272699169L;
+	private static final long serialVersionUID = 2472472182425537466L;
 
 	/** 
 	 * 抽奖活动id

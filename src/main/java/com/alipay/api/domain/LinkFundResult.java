@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LinkFundResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3418331281317246338L;
+	private static final long serialVersionUID = 7837495866258789794L;
 
 	/**
 	 * 基金代码

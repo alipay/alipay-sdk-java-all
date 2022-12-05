@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SpiVoiceCallback extends AlipayObject {
 
-	private static final long serialVersionUID = 1723938923559575644L;
+	private static final long serialVersionUID = 6859326852648329352L;
 
 	/**
 	 * 阿里云语音编号

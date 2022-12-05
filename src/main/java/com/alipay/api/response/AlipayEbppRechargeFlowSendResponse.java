@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.recharge.flow.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 15:56:23
+ * @since 1.0, 2022-12-05 17:27:30
  */
 public class AlipayEbppRechargeFlowSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7457147261894298341L;
+	private static final long serialVersionUID = 1854661742671777169L;
 
 	/** 
 	 * 扩展字段

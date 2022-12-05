@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 非中国大陆用户领取虚拟卡
  *
  * @author auto create
- * @since 1.0, 2020-03-24 17:40:09
+ * @since 1.0, 2022-12-02 18:12:04
  */
 public class AlipayCommerceTransportWorldVirtualcardApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7669427397947137673L;
+	private static final long serialVersionUID = 6414266174562634596L;
 
 	/**
 	 * 虚拟卡行为，暂时只有海外用户领卡WORLD_ISSUE

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-12-01 21:21:21
+ * @since 1.0, 2022-12-02 15:41:35
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -28,7 +28,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private String appCategoryIds;
 
 	/** 
-	* 长度限制 20~400 个字符。
+	* 小程序描述，长度限制 20~400 个字符。
 如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息
 	 */
 	private String appDesc;
@@ -46,14 +46,14 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private FileItem appLogo;
 
 	/** 
-	* 长度限制 3~30 个字符，仅支持包含中文、数字、英文、下划线、+、-。
+	* 小程序名称，长度限制 3~30 个字符，仅支持包含中文、数字、英文、下划线、+、-。
 如果不填默认采用当前小程序应用名称，如无默认值则必填，不可为空。
 如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息
 	 */
 	private String appName;
 
 	/** 
-	* 一句话描述小程序功能，长度限制 10~32个字符。
+	* 小程序简介，一句话描述小程序功能，长度限制 10~32个字符。
 如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息
 	 */
 	private String appSlogan;
@@ -132,13 +132,13 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	private FileItem fourthScreenShot;
 
 	/** 
-	* 部分小程序类目需要提交，可通过https://opendocs.alipay.com/mini/03l8c8 查询类目是否需要上传营业执照信息。参照https://opendocs.alipay.com/mini/operation/material 要求填写营业执照信息。
+	* 营业执照名称，部分小程序类目需要提交，可通过https://opendocs.alipay.com/mini/03l8c8 查询类目是否需要上传营业执照信息。参照https://opendocs.alipay.com/mini/operation/material 要求填写营业执照信息。
 如果选择的类目不需要该信息，则可不填。如果选择的类目需要该信息，如果商户之前在平台上传过该信息，也允许不填
 	 */
 	private String licenseName;
 
 	/** 
-	* 部分小程序类目需要提交，可通过https://opendocs.alipay.com/mini/03l8c8 查询类目是否需要上传营业执照信息。参照https://opendocs.alipay.com/mini/operation/material 要求填写营业执照信息。
+	* 营业执照证件号，部分小程序类目需要提交，可通过https://opendocs.alipay.com/mini/03l8c8 查询类目是否需要上传营业执照信息。参照https://opendocs.alipay.com/mini/operation/material 要求填写营业执照信息。
 
 如果选择的类目不需要该信息，则可不填。如果选择的类目需要该信息，如果商户之前在平台上传过该信息，也允许不填
 	 */
@@ -165,7 +165,7 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	private String miniCategoryIds;
 
 	/** 
-	* 不能超过 4MB，最大宽度 2160 px，最大高度 3840 px。图片格式仅支持 png,jpg,PNG,JPG 格式。
+	* 门头照，不能超过 4MB，最大宽度 2160 px，最大高度 3840 px。图片格式仅支持 png,jpg,PNG,JPG 格式。
 部分小程序类目需要提交，可通过https://opendocs.alipay.com/mini/03l8c8 查询类目是否需要上传门头照信息。参照https://opendocs.alipay.com/mini/operation/material 要求填写门头照信息。
 如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。
 	 */

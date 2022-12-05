@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序撤销审核
  *
  * @author auto create
- * @since 1.0, 2022-09-02 11:19:49
+ * @since 1.0, 2022-12-04 22:26:53
  */
 public class AlipayOpenMiniVersionAuditCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3528488341344715986L;
+	private static final long serialVersionUID = 8163539967587377196L;
 
 	/**
 	 * 商家小程序审核中的版本号, 不传默认撤消正在审核中的版本。

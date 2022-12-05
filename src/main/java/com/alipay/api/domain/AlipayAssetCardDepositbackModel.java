@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 储值卡指定充值单退款
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:37:36
+ * @since 1.0, 2022-12-02 21:45:12
  */
 public class AlipayAssetCardDepositbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1244359542373658232L;
+	private static final long serialVersionUID = 3449944973771381322L;
 
 	/**
 	 * 业务时间
@@ -44,6 +44,12 @@ public class AlipayAssetCardDepositbackModel extends AlipayObject {
 	 */
 	@ApiField("fund_scene")
 	private String fundScene;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝原始充值订单号
@@ -102,6 +108,13 @@ public class AlipayAssetCardDepositbackModel extends AlipayObject {
 	}
 	public void setFundScene(String fundScene) {
 		this.fundScene = fundScene;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOriginalBillNo() {

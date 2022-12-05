@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC订单签约信息查询
  *
  * @author auto create
- * @since 1.0, 2022-11-23 13:27:16
+ * @since 1.0, 2022-12-05 15:31:34
  */
 public class AlipayCommerceTransportEtcSigninfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2115597241943127836L;
+	private static final long serialVersionUID = 5484443595361984338L;
 
 	/**
 	 * 支付宝ETC订单号

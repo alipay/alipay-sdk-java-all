@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingMaterialCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1128638852916437494L;
+	private static final long serialVersionUID = 5253383992537416967L;
 
 	/**
 	 * 素材字段列表，素材提报的具体内容，包含三种类型：图片、文本、链接。图片类型，则根据“图片资源上传接口（https://opendocs.alipay.com/pre-open/02bhlj）”中返回的resource_id字段值进行素材字段的设值。文本或链接类型，则按照实际需要设值即可，需满足具体的规范要求。规范要求详情请参见产品文档。

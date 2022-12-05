@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UniCardFixVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4463543456791223646L;
+	private static final long serialVersionUID = 1852588212273885615L;
 
 	/**
 	 * 券活动id

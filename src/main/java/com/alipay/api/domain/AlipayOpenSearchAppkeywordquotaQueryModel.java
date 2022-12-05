@@ -1,0 +1,29 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 查询小程序可配置关键词数  
+ *
+ * @author auto create
+ * @since 1.0, 2022-12-02 14:33:32
+ */
+public class AlipayOpenSearchAppkeywordquotaQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 2719326751947873995L;
+
+	/**
+	 * 小程序id
+	 */
+	@ApiField("target_appid")
+	private String targetAppid;
+
+	public String getTargetAppid() {
+		return this.targetAppid;
+	}
+	public void setTargetAppid(String targetAppid) {
+		this.targetAppid = targetAppid;
+	}
+
+}

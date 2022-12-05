@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户创建
  *
  * @author auto create
- * @since 1.0, 2022-04-15 17:32:49
+ * @since 1.0, 2022-12-01 21:49:18
  */
 public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3625928794454773517L;
+	private static final long serialVersionUID = 1646655517824288653L;
 
 	/**
 	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名。如果涉及当面付场景，请填写线下店铺名称
@@ -104,6 +104,18 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private List<String> inDoorImages;
 
 	/**
+	 * （平替原来的info_source_uid字段，如果能拿到openId，请传本字段，原字段留空）。信息关联的openId
+	 */
+	@ApiField("info_source_open_id")
+	private String infoSourceOpenId;
+
+	/**
+	 * （已废弃，请使用info_source_open_id）。信息关联的uid
+	 */
+	@ApiField("info_source_uid")
+	private String infoSourceUid;
+
+	/**
 	 * 开票资料信息
 	 */
 	@ApiField("invoice_info")
@@ -146,8 +158,7 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String licenseAuthLetterImage;
 
 	/**
-	 * 商户类别码mcc，参见https://gw.alipayobjects.com/os/bmw-prod/b28421ce-0ddf-422f-9e9c-c2c3c7f30c73.xlsx
-特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质要在qualifications中上传，会有人工审核。
+	 * 商户类别码 mcc，可查看  <a href="https://mdn.alipayobjects.com/portal_mdssth/afts/file/A*-EYjSJ2soV0AAAAAAAAAAAAAAQAAAQ">进件MCC与资质要求 202211.xlsx</a>，特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质要在 qualifications 中上传，会有人工审核。
 	 */
 	@ApiField("mcc")
 	private String mcc;
@@ -183,6 +194,18 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	@ApiListField("out_door_images")
 	@ApiField("string")
 	private List<String> outDoorImages;
+
+	/**
+	 * （已废弃，请使用oversea_settle_open_id）境外结算账号
+	 */
+	@ApiField("oversea_settle_account")
+	private String overseaSettleAccount;
+
+	/**
+	 * （平替原来的oversea_settle_open_id字段，如能够获取到该场景的open_id，请传本字段，原字段留空）境外结算账号
+	 */
+	@ApiField("oversea_settle_open_id")
+	private String overseaSettleOpenId;
 
 	/**
 	 * 商户行业资质，当商户是特殊行业时必填。每项行业资质信息中，industry_qualification_type和industry_qualification_image均必填
@@ -315,6 +338,20 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 		this.inDoorImages = inDoorImages;
 	}
 
+	public String getInfoSourceOpenId() {
+		return this.infoSourceOpenId;
+	}
+	public void setInfoSourceOpenId(String infoSourceOpenId) {
+		this.infoSourceOpenId = infoSourceOpenId;
+	}
+
+	public String getInfoSourceUid() {
+		return this.infoSourceUid;
+	}
+	public void setInfoSourceUid(String infoSourceUid) {
+		this.infoSourceUid = infoSourceUid;
+	}
+
 	public MerchantInvoiceInfo getInvoiceInfo() {
 		return this.invoiceInfo;
 	}
@@ -397,6 +434,20 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	}
 	public void setOutDoorImages(List<String> outDoorImages) {
 		this.outDoorImages = outDoorImages;
+	}
+
+	public String getOverseaSettleAccount() {
+		return this.overseaSettleAccount;
+	}
+	public void setOverseaSettleAccount(String overseaSettleAccount) {
+		this.overseaSettleAccount = overseaSettleAccount;
+	}
+
+	public String getOverseaSettleOpenId() {
+		return this.overseaSettleOpenId;
+	}
+	public void setOverseaSettleOpenId(String overseaSettleOpenId) {
+		this.overseaSettleOpenId = overseaSettleOpenId;
 	}
 
 	public List<IndustryQualificationInfo> getQualifications() {

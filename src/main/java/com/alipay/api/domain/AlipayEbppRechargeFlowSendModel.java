@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送流量接口
  *
  * @author auto create
- * @since 1.0, 2022-11-07 15:56:23
+ * @since 1.0, 2022-12-05 17:27:30
  */
 public class AlipayEbppRechargeFlowSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7236362292364458382L;
+	private static final long serialVersionUID = 2511414851155335973L;
 
 	/**
 	 * 绑定手机号

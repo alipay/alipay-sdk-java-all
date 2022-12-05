@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AiOcrTableRow extends AlipayObject {
 
-	private static final long serialVersionUID = 6735127359422624517L;
+	private static final long serialVersionUID = 3239685881521496647L;
 
 	/**
 	 * table一行的内容

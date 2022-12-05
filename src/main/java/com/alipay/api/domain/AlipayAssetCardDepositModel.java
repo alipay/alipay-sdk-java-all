@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 储值卡充值下单
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:37:31
+ * @since 1.0, 2022-12-02 21:45:19
  */
 public class AlipayAssetCardDepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7216318225296642717L;
+	private static final long serialVersionUID = 2153386415758399935L;
 
 	/**
 	 * 充值资金金额，单位元
@@ -50,6 +50,12 @@ public class AlipayAssetCardDepositModel extends AlipayObject {
 	 */
 	@ApiField("fund_scence")
 	private String fundScence;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 卡产品码
@@ -109,6 +115,13 @@ public class AlipayAssetCardDepositModel extends AlipayObject {
 	}
 	public void setFundScence(String fundScence) {
 		this.fundScence = fundScence;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProductCode() {

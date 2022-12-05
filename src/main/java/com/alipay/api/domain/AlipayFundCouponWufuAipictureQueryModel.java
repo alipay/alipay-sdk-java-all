@@ -1,0 +1,55 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 五福AI年画查询
+ *
+ * @author auto create
+ * @since 1.0, 2022-12-02 16:25:26
+ */
+public class AlipayFundCouponWufuAipictureQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 8131162546817816686L;
+
+	/**
+	 * 蚂蚁统一开放id
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 场景码，由支付宝侧生成
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+}

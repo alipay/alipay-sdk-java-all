@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.facepay.bill.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 22:05:15
+ * @since 1.0, 2022-12-05 16:11:15
  */
 public class AlipayEbppFacepayBillCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2341343924289576698L;
+	private static final long serialVersionUID = 5611911429643744337L;
 
 	
 

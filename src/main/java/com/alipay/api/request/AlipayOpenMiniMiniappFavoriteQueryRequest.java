@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.miniapp.favorite.query request
  * 
  * @author auto create
- * @since 1.0, 2022-11-22 10:06:25
+ * @since 1.0, 2022-12-05 01:53:34
  */
 public class AlipayOpenMiniMiniappFavoriteQueryRequest implements AlipayRequest<AlipayOpenMiniMiniappFavoriteQueryResponse> {
 

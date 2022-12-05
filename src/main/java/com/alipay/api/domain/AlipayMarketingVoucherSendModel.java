@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发券接口
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:37:54
+ * @since 1.0, 2022-12-02 21:44:44
  */
 public class AlipayMarketingVoucherSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8647813287926914928L;
+	private static final long serialVersionUID = 7626342938855134176L;
 
 	/**
 	 * 券金额。浮点数，格式为#.00，单位是元。红包发放时填写，其它情形不能填
@@ -36,6 +36,12 @@ public class AlipayMarketingVoucherSendModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 支付宝用户ID 。user_id, login_id, taobao_nick不能同时为空，优先级依次降低
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务订单号，用于幂等控制，相同template_id和out_biz_no认为是同一次业务
@@ -88,6 +94,13 @@ public class AlipayMarketingVoucherSendModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

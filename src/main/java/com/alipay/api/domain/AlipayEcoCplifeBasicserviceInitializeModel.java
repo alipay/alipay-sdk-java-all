@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCplifeBasicserviceInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2496362213232334798L;
+	private static final long serialVersionUID = 6695949335223216384L;
 
 	/**
 	 * 若服务类型为物业缴费账单模式，每个小区默认的收款帐号为授权物业的支付宝账号，默认不用传该参数。

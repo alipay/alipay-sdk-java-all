@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.asset.card.disburse(打款)
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:38:36
+ * @since 1.0, 2022-12-02 21:45:03
  */
 public class AlipayAssetCardDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2211487824112687441L;
+	private static final long serialVersionUID = 6445919764826572171L;
 
 	/**
 	 * 打款金额
@@ -55,6 +55,18 @@ public class AlipayAssetCardDisburseModel extends AlipayObject {
 	 */
 	@ApiField("fund_scence")
 	private String fundScence;
+
+	/**
+	 * 支付宝用户id映射
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 收款方支付宝用户id映射
+	 */
+	@ApiField("payee_open_id")
+	private String payeeOpenId;
 
 	/**
 	 * 收款方支付宝用户id
@@ -127,6 +139,20 @@ public class AlipayAssetCardDisburseModel extends AlipayObject {
 	}
 	public void setFundScence(String fundScence) {
 		this.fundScence = fundScence;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
+	public String getPayeeOpenId() {
+		return this.payeeOpenId;
+	}
+	public void setPayeeOpenId(String payeeOpenId) {
+		this.payeeOpenId = payeeOpenId;
 	}
 
 	public String getPayeeUserId() {

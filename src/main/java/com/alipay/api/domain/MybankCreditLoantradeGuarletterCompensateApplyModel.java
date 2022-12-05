@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoantradeGuarletterCompensateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2758815282753224338L;
+	private static final long serialVersionUID = 1313513643937581886L;
 
 	/**
 	 * 理赔申请的发起人的证件号

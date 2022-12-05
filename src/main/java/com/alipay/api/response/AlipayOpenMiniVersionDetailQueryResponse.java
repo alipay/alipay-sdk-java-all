@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.version.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-13 14:26:33
+ * @since 1.0, 2022-12-05 13:51:36
  */
 public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7138231496878212598L;
+	private static final long serialVersionUID = 2432321377824431369L;
 
 	/** 
 	 * 小程序应用描述

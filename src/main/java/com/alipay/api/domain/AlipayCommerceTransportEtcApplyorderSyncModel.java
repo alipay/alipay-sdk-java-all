@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单信息同步
  *
  * @author auto create
- * @since 1.0, 2022-11-22 19:18:16
+ * @since 1.0, 2022-12-05 15:30:15
  */
 public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8474257927618424132L;
+	private static final long serialVersionUID = 7793457868744163917L;
 
 	/**
 	 * 支付宝ETC平台扣款协议号，与order_id参数 二选一。

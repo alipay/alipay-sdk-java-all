@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 兑换流量结果查询
  *
  * @author auto create
- * @since 1.0, 2018-11-13 20:59:54
+ * @since 1.0, 2022-12-05 17:27:06
  */
 public class AlipayEbppFlowStatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2297965876926444623L;
+	private static final long serialVersionUID = 7682184293688959419L;
 
 	/**
 	 * 扩展字段

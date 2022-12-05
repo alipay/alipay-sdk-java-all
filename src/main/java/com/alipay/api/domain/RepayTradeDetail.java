@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RepayTradeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2224616875951815735L;
+	private static final long serialVersionUID = 3552491171667411431L;
 
 	/**
 	 * 交易还款金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]

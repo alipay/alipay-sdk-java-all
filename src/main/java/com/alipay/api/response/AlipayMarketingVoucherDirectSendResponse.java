@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.direct.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-16 19:31:31
+ * @since 1.0, 2022-12-02 21:44:54
  */
 public class AlipayMarketingVoucherDirectSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6574711734887395747L;
+	private static final long serialVersionUID = 1775153984969311298L;
 
 	/** 
 	 * 资产编码
@@ -83,6 +83,12 @@ public class AlipayMarketingVoucherDirectSendResponse extends AlipayResponse {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/** 
+	 * 用户的支付宝账号对应的支付宝唯一用户号映射的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 产品编码
@@ -211,6 +217,13 @@ description：券描述信息。
 	}
 	public String getName( ) {
 		return this.name;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setProductCode(String productCode) {

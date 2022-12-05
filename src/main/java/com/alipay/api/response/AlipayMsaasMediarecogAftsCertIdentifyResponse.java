@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.afts.cert.identify response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-08 17:03:44
+ * @since 1.0, 2022-12-05 19:47:15
  */
 public class AlipayMsaasMediarecogAftsCertIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5543738687558731167L;
+	private static final long serialVersionUID = 6247381743358231594L;
 
 	/** 
 	 * 浮点数，属于该证件类型的概率

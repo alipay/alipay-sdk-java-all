@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数字分行活动列表查询接口
  *
  * @author auto create
- * @since 1.0, 2022-09-29 14:31:23
+ * @since 1.0, 2022-12-02 16:14:36
  */
 public class AlipayUserDtbankcustActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1652182639472793828L;
+	private static final long serialVersionUID = 2484322183937572513L;
 
 	/**
 	 * 活动类型列表：

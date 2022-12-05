@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransPagePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5775528916597297844L;
+	private static final long serialVersionUID = 3283395689223426817L;
 
 	/** 
 	 * 该笔转账在支付宝系统内部的单据ID

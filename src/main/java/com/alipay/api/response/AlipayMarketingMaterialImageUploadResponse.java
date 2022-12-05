@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.material.image.upload response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-01 16:44:39
+ * @since 1.0, 2022-12-05 17:01:57
  */
 public class AlipayMarketingMaterialImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5531366237588995496L;
+	private static final long serialVersionUID = 2679681334928596281L;
 
 	/** 
-	 * 图片是否优化过。系统会根据要求，对上传的图片做尺寸的优化。
+	 * 图片是否优化过。系统会根据要求，若上传的图片不符合要求的尺寸，会对上传的图片做尺寸的优化。
 	 */
 	@ApiField("resource_enhance")
 	private Boolean resourceEnhance;

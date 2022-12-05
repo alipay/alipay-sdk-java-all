@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityRiskAmlAnalyzeSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6585468879993379749L;
+	private static final long serialVersionUID = 1823472936155479926L;
 
 	/** 
 	 * 反洗钱分析结果，ACCEPT：无风险；REJECT：有风险，拒绝；REVIEW：有疑似风险，由业务端决定是否放行

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取医保电子凭证线上支付授权信息
  *
  * @author auto create
- * @since 1.0, 2021-08-03 19:18:12
+ * @since 1.0, 2022-12-02 16:14:16
  */
 public class AlipayCommerceMedicalOctokenAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6282819118184175587L;
+	private static final long serialVersionUID = 5348558381254331161L;
 
 	/**
 	 * 支付宝用户Id
@@ -42,6 +42,12 @@ public class AlipayCommerceMedicalOctokenAuthQueryModel extends AlipayObject {
 	 */
 	@ApiField("ol_biz_type_code")
 	private String olBizTypeCode;
+
+	/**
+	 * 支付宝用户Id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 定点医药机构编码
@@ -112,6 +118,13 @@ public class AlipayCommerceMedicalOctokenAuthQueryModel extends AlipayObject {
 	}
 	public void setOlBizTypeCode(String olBizTypeCode) {
 		this.olBizTypeCode = olBizTypeCode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrgCfcId() {

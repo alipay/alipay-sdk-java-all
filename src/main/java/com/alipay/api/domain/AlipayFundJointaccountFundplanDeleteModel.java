@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除自动攒计划
  *
  * @author auto create
- * @since 1.0, 2021-09-07 19:24:05
+ * @since 1.0, 2022-12-05 14:05:42
  */
 public class AlipayFundJointaccountFundplanDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1234848985521446597L;
+	private static final long serialVersionUID = 7566494259917549133L;
 
 	/**
 	 * 合花群ID<br>
