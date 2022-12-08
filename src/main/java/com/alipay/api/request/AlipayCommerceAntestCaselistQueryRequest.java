@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.antest.caselist.query request
  * 
  * @author auto create
- * @since 1.0, 2020-04-21 15:50:09
+ * @since 1.0, 2022-12-08 12:57:20
  */
 public class AlipayCommerceAntestCaselistQueryRequest implements AlipayRequest<AlipayCommerceAntestCaselistQueryResponse> {
 

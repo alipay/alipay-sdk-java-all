@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二方机构根标签据查询有效券信息
  *
  * @author auto create
- * @since 1.0, 2022-12-01 21:18:14
+ * @since 1.0, 2022-12-05 20:36:28
  */
 public class AlipayMarketingVoucherBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4481827747227489125L;
+	private static final long serialVersionUID = 6132913598857978416L;
 
 	/**
 	 * 券业务编码

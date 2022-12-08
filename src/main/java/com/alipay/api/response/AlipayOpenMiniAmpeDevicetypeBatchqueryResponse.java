@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.devicetype.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-06 10:10:13
+ * @since 1.0, 2022-12-08 05:07:34
  */
 public class AlipayOpenMiniAmpeDevicetypeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7654444519877641241L;
+	private static final long serialVersionUID = 6615974664565878965L;
 
 	/** 
 	 * 设备类型列表

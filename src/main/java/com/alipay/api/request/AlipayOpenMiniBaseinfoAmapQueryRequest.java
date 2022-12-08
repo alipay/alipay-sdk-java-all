@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.baseinfo.amap.query request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:46
+ * @since 1.0, 2022-12-08 13:43:20
  */
 public class AlipayOpenMiniBaseinfoAmapQueryRequest implements AlipayRequest<AlipayOpenMiniBaseinfoAmapQueryResponse> {
 

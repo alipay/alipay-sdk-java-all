@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.prodmode.unionbank.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-15 10:00:52
+ * @since 1.0, 2022-12-08 11:48:31
  */
 public class AlipayEbppProdmodeUnionbankQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1787899196913414384L;
+	private static final long serialVersionUID = 3698718382117777484L;
 
 	/** 
 	 * 银联编号

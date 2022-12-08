@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.ticketcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-03 17:25:29
+ * @since 1.0, 2022-12-07 18:41:30
  */
 public class KoubeiTradeTicketTicketcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8735899821648431113L;
+	private static final long serialVersionUID = 8576385454115124819L;
 
 	/** 
 	 * 非次卡场景，表示同一订单下同类凭证的可核销份数； 次卡场景，表示可用核销份数。

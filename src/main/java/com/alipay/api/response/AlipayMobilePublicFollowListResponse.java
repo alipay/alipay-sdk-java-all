@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.public.follow.list response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-13 20:10:59
+ * @since 1.0, 2022-12-07 19:47:18
  */
 public class AlipayMobilePublicFollowListResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7689158286481758499L;
+	private static final long serialVersionUID = 6545192564352131662L;
 
 	/** 
 	 * 返回结果码，如200，标识成功

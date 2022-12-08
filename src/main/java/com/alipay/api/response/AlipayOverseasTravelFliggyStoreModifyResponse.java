@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.fliggy.store.modify response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-03 11:17:17
+ * @since 1.0, 2022-12-08 14:36:18
  */
 public class AlipayOverseasTravelFliggyStoreModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4635636522683657124L;
+	private static final long serialVersionUID = 1571119586675114356L;
 
 	/** 
 	 * 错误码

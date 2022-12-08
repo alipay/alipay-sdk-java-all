@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云验收检测结果提交
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:16
+ * @since 1.0, 2022-12-07 11:01:56
  */
 public class KoubeiQualityTestCloudacptCheckresultSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1679163558223126912L;
+	private static final long serialVersionUID = 2451937642761568128L;
 
 	/**
 	 * 活动id

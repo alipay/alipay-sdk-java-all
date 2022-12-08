@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.autodamage.image.upload response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 05:29:52
  */
 public class AlipayInsDataAutodamageImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4234561272453694723L;
+	private static final long serialVersionUID = 1391879799818248165L;
 
 	/** 
 	 * 图像文件在oss存储上的路径

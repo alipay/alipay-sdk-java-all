@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.train.tags.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-28 20:40:46
+ * @since 1.0, 2022-12-08 00:32:28
  */
 public class AlipayCommerceEducateTrainTagsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3575482912598432314L;
+	private static final long serialVersionUID = 3457548767742445614L;
 
 	/** 
 	 * 标签信息列表

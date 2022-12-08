@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易还款账单付款单创建并支付接口
  *
  * @author auto create
- * @since 1.0, 2020-10-09 11:27:13
+ * @since 1.0, 2022-12-08 12:17:11
  */
 public class AlipayTradeRepaybillOrderCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6268924218245492566L;
+	private static final long serialVersionUID = 8618813258276286961L;
 
 	/**
 	 * 还款协议号

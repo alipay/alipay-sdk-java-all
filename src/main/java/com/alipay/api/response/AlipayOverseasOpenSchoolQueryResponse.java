@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.school.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-13 12:15:51
+ * @since 1.0, 2022-12-08 02:33:56
  */
 public class AlipayOverseasOpenSchoolQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4534142534597769146L;
+	private static final long serialVersionUID = 3274872828638195728L;
 
 	/** 
 	 * 留学汇款对isv返回结果

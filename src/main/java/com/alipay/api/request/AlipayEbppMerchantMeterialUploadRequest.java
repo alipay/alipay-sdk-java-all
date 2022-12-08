@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.merchant.meterial.upload request
  * 
  * @author auto create
- * @since 1.0, 2021-11-09 14:34:37
+ * @since 1.0, 2022-12-08 14:22:45
  */
 public class AlipayEbppMerchantMeterialUploadRequest implements AlipayUploadRequest<AlipayEbppMerchantMeterialUploadResponse> {
 

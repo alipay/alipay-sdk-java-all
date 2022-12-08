@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.fastpay.third.notify request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 21:51:03
+ * @since 1.0, 2022-12-08 05:54:15
  */
 public class AlipayTradeFastpayThirdNotifyRequest implements AlipayRequest<AlipayTradeFastpayThirdNotifyResponse> {
 

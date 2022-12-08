@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除搜索关键词
  *
  * @author auto create
- * @since 1.0, 2022-12-02 14:35:29
+ * @since 1.0, 2022-12-07 20:04:03
  */
 public class AlipayOpenSearchAppkeywordDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3444782125767526628L;
+	private static final long serialVersionUID = 7253899553476575529L;
 
 	/**
 	 * 关键词配置ID

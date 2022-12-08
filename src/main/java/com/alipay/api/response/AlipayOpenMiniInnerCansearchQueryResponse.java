@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.inner.cansearch.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-27 12:26:41
+ * @since 1.0, 2022-12-08 03:30:17
  */
 public class AlipayOpenMiniInnerCansearchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1848525119185585592L;
+	private static final long serialVersionUID = 8846888759889536384L;
 
 	/** 
 	 * 该小程序是否可搜索

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻快招商户侧简历投递同步
  *
  * @author auto create
- * @since 1.0, 2022-11-14 16:02:10
+ * @since 1.0, 2022-12-07 15:38:08
  */
 public class ZhimaCustomerJobworthQuickhireSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5116811447859464365L;
+	private static final long serialVersionUID = 6265158175331832355L;
 
 	/**
 	 * 投递者年龄
@@ -26,6 +26,12 @@ public class ZhimaCustomerJobworthQuickhireSubmitModel extends AlipayObject {
 	 */
 	@ApiField("contact_no")
 	private String contactNo;
+
+	/**
+	 * 商户侧投递唯一ID，后续芝麻快招同步给商户侧联系情况或者其他信息时候商户侧用此ID进行关联
+	 */
+	@ApiField("deliver_id")
+	private String deliverId;
 
 	/**
 	 * 标准时间格式：yyyy-MM-dd HH:mm:ss
@@ -93,6 +99,13 @@ public class ZhimaCustomerJobworthQuickhireSubmitModel extends AlipayObject {
 	}
 	public void setContactNo(String contactNo) {
 		this.contactNo = contactNo;
+	}
+
+	public String getDeliverId() {
+		return this.deliverId;
+	}
+	public void setDeliverId(String deliverId) {
+		this.deliverId = deliverId;
 	}
 
 	public Date getDeliverTime() {

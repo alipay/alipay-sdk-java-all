@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.dataservice.cropbase.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-11-14 13:36:34
+ * @since 1.0, 2022-12-08 04:56:39
  */
 public class AnttechBlockchainDefinDataserviceCropbaseBatchqueryRequest implements AlipayRequest<AnttechBlockchainDefinDataserviceCropbaseBatchqueryResponse> {
 

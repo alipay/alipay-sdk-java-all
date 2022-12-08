@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备订单创建
  *
  * @author auto create
- * @since 1.0, 2021-08-24 20:32:33
+ * @since 1.0, 2022-12-07 10:44:19
  */
 public class AlipayCommerceOperationTerminalPowerbankorderInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4688895947787866728L;
+	private static final long serialVersionUID = 4625511816333213472L;
 
 	/**
 	 * 预授权单号，通过线上资金授权冻结接口获取

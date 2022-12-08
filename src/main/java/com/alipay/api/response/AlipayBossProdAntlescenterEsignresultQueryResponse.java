@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlescenter.esignresult.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-21 15:10:53
+ * @since 1.0, 2022-12-08 06:53:57
  */
 public class AlipayBossProdAntlescenterEsignresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3173367613864519981L;
+	private static final long serialVersionUID = 8791157599464786715L;
 
 	/** 
 	 * 系统来源名称

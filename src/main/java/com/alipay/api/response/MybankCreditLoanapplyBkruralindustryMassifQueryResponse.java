@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.bkruralindustry.massif.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-22 10:12:54
+ * @since 1.0, 2022-12-07 16:28:38
  */
 public class MybankCreditLoanapplyBkruralindustryMassifQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8817335562731498265L;
+	private static final long serialVersionUID = 1634748949698497763L;
 
 	/** 
 	 * 地块列表信息

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.eprint.code.notify response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 22:44:09
+ * @since 1.0, 2022-12-08 10:11:37
  */
 public class AlipayEcoEprintCodeNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2658483966241713232L;
+	private static final long serialVersionUID = 4865529689929949366L;
 
 	
 

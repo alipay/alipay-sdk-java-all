@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.aliyunbenefit.sync response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-27 20:11:17
+ * @since 1.0, 2022-12-08 11:14:55
  */
 public class AlipayUserAliyunbenefitSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4228373271265156262L;
+	private static final long serialVersionUID = 1132844856152913625L;
 
 	/** 
 	 * 权益Id

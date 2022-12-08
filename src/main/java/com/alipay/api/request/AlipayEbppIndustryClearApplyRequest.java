@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.clear.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-07-12 21:06:52
+ * @since 1.0, 2022-12-07 19:09:38
  */
 public class AlipayEbppIndustryClearApplyRequest implements AlipayRequest<AlipayEbppIndustryClearApplyResponse> {
 

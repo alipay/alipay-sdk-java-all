@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.timescard.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-27 14:56:37
+ * @since 1.0, 2022-12-07 18:31:39
  */
 public class AlipayCommerceOperationTimescardRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4181864355519628324L;
+	private static final long serialVersionUID = 3113775582885335491L;
 
 	/** 
 	 * 可退金额，精确到分

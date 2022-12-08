@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.asiangames.hotelstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-19 20:21:41
+ * @since 1.0, 2022-12-08 14:31:30
  */
 public class AlipayCommerceAsiangamesHotelstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1754219915339256272L;
+	private static final long serialVersionUID = 7899219143737567393L;
 
 	/** 
 	 * 列表展示

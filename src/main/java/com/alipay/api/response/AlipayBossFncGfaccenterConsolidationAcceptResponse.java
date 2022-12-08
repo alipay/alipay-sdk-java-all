@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfaccenter.consolidation.accept response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-21 20:36:43
+ * @since 1.0, 2022-12-08 09:55:40
  */
 public class AlipayBossFncGfaccenterConsolidationAcceptResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3671542344532383837L;
+	private static final long serialVersionUID = 4844648739783133158L;
 
 	/** 
 	 * 是否并账成功

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.antest.taskstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-21 15:47:24
+ * @since 1.0, 2022-12-07 23:53:15
  */
 public class AlipayCommerceAntestTaskstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2113794247475993522L;
+	private static final long serialVersionUID = 4754513564115972993L;
 
 	/** 
 	 * 任务状态： INIT 已创建，EXECUTING 执行中，FINISH 已完成，CANCEL 已取消

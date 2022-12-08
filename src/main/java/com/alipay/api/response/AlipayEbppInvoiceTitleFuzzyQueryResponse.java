@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.title.fuzzy.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-24 15:31:50
+ * @since 1.0, 2022-12-08 03:26:46
  */
 public class AlipayEbppInvoiceTitleFuzzyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8397252347515212126L;
+	private static final long serialVersionUID = 3132143471848615162L;
 
 	/** 
 	 * 企业名称列表

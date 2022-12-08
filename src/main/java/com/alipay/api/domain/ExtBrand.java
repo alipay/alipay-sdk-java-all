@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtBrand extends AlipayObject {
 
-	private static final long serialVersionUID = 8357821771647753164L;
+	private static final long serialVersionUID = 3832612741143397745L;
 
 	/**
 	 * 品牌编码

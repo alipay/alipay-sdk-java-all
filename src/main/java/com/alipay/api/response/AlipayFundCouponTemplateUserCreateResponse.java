@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.template.user.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 15:01:40
+ * @since 1.0, 2022-12-06 17:36:42
  */
 public class AlipayFundCouponTemplateUserCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1246521544171718855L;
+	private static final long serialVersionUID = 4653896866451213918L;
 
 	/** 
 	 * 用户封面容器信息，包含封面生效时间区间以及封面、封底等图片、视频资源
@@ -23,13 +23,13 @@ public class AlipayFundCouponTemplateUserCreateResponse extends AlipayResponse {
 	private GiftUserTemplateBoxInfo giftUserTemplateBoxInfo;
 
 	/** 
-	 * 红包皮肤模板信息
+	 * 红包封面模板信息
 	 */
 	@ApiField("template_info")
 	private GiftUserTemplateInfo templateInfo;
 
 	/** 
-	 * 和user_id一起，唯一标识发放给该用户的一个红包皮肤实例，需要业务方记录维护用户该皮肤实例的状态
+	 * 和user_id一起，唯一标识发放给该用户的一个红包封面实例，需要业务方记录维护用户该封面实例的状态
 	 */
 	@ApiField("user_template_id")
 	private String userTemplateId;

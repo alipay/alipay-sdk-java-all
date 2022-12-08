@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.caas.blacklist.consult request
  * 
  * @author auto create
- * @since 1.0, 2021-01-29 14:55:16
+ * @since 1.0, 2022-12-08 09:25:34
  */
 public class AlipayFincoreComplianceCaasBlacklistConsultRequest implements AlipayRequest<AlipayFincoreComplianceCaasBlacklistConsultResponse> {
 

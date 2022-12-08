@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.crowd.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 18:07:14
+ * @since 1.0, 2022-12-07 17:31:40
  */
 public class AlipayMerchantQipanCrowdModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5214629698614233555L;
+	private static final long serialVersionUID = 7562597491635118611L;
 
 	
 

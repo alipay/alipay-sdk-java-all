@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.payment.notify request
  * 
  * @author auto create
- * @since 1.0, 2022-11-28 14:31:36
+ * @since 1.0, 2022-12-08 13:21:40
  */
 public class AlipayFinancialnetAuthPaymentNotifyRequest implements AlipayRequest<AlipayFinancialnetAuthPaymentNotifyResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.fingerprint.riskcontrol.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-18 14:41:34
+ * @since 1.0, 2022-12-07 18:27:05
  */
 public class AlipaySecurityProdFingerprintRiskcontrolQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5215894134657593922L;
+	private static final long serialVersionUID = 8286612895687768918L;
 
 	/** 
 	 * IFAA服务端查询结果，true为支持指纹功能，false为不支持

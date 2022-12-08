@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.ampe.enter.apply request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 23:46:19
+ * @since 1.0, 2022-12-08 07:28:51
  */
 public class AlipayOpenMiniAmpeEnterApplyRequest implements AlipayUploadRequest<AlipayOpenMiniAmpeEnterApplyResponse> {
 

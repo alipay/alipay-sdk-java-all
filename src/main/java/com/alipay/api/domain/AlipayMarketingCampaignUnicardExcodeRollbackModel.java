@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联营卡兑换码回滚作废
  *
  * @author auto create
- * @since 1.0, 2022-07-22 19:55:23
+ * @since 1.0, 2022-12-07 10:53:06
  */
 public class AlipayMarketingCampaignUnicardExcodeRollbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5832227583478428387L;
+	private static final long serialVersionUID = 1143628457257881336L;
 
 	/**
 	 * 支付宝内部生成的兑换码，商家可用该兑换码作为商品出售，用户用兑换码可来支付宝兑换权益。

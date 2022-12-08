@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.brandsolution.goodsstock.add response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:16:44
+ * @since 1.0, 2022-12-08 14:08:39
  */
 public class AlipayCommerceOperationBrandsolutionGoodsstockAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7592376862327525775L;
+	private static final long serialVersionUID = 8155349587852223274L;
 
 	/** 
 	 * 批量修改结果

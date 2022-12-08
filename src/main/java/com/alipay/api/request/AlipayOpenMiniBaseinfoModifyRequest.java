@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.baseinfo.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 00:16:33
+ * @since 1.0, 2022-12-07 16:26:38
  */
 public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<AlipayOpenMiniBaseinfoModifyResponse> {
 
@@ -26,44 +26,53 @@ public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<
 	private String appCategoryIds;
 
 	/** 
-	* 小程序应用描述，20-200个字。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
+	* 小程序描述，长度限制 20~400 个字符。
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息
+
 	 */
 	private String appDesc;
 
 	/** 
-	* 小程序应用英文名称。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
+	* 小程序应用英文名称。长度限制 3~30 个字符，仅支持包含中文、数字、英文、下划线、+、-。
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过alipay.open.mini.baseinfo.query查询当前小程序信息
 	 */
 	private String appEnglishName;
 
 	/** 
-	* 小程序应用logo图标，图片格式必须为：png、jpeg、jpg，建议上传像素为180*180。
-若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
+	* 小程序logo图标，图片格式仅支持 jpeg,png,jpg,PNG,JPG ,JPEG格式，不支持 bmp,gif,BMP,GIF格式。建议上传像素为180*180 px，logo图片最大 2M，图片高度与宽度必须一致。
+如果不填默认采用当前小程序 logo 图标。如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。
 	 */
 	private FileItem appLogo;
 
 	/** 
-	* 小程序应用名称。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
+	* 小程序名称。长度限制 3~30 个字符，仅支持包含中文、数字、英文、下划线、+、-。
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过alipay.open.mini.baseinfo.query查询当前小程序信息
 	 */
 	private String appName;
 
 	/** 
-	* 小程序应用简介，一句话描述小程序功能。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
+	* 小程序简介，一句话描述小程序功能，长度限制 10~32个字符。
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过alipay.open.mini.baseinfo.query查询当前小程序信息
 	 */
 	private String appSlogan;
 
 	/** 
-	* 新小程序前台类目。格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目。详细类目可以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询mini_category_list。
-如需申请用户信息则该项必填，否则应用后台不会展示用户信息申请入口；通过接口申请用户信息会被直接驳回。
+	* 新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query
+接口查询mini_category_list。
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息
+注意：个人开发者不得使用企业类目。
 	 */
 	private String miniCategoryIds;
 
 	/** 
-	* 小程序客服邮箱。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
+	* 小程序客服邮箱，如果不填默认采用当前小程序的应用客服邮箱，小程序客服电话和邮箱至少输入一个。如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。
+注意：2021年7月1日后，该字段将逐步灰度为可选字段，请按可选开发。
 	 */
 	private String serviceEmail;
 
 	/** 
-	* 小程序客服电话。若小程序应用未设置该项内容时必传，若小程序应用已设置且无需修改则无需传入。
+	* 小程序客服电话，长度限制5~30个字符，仅支持包含数字和-。如果不填默认采用当前小程序的应用客服电话，小程序客服电话和邮箱至少输入一个。如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。
+注意：2021年7月1日后，该字段将逐步灰度为必填字段，请按必填开发。
 	 */
 	private String servicePhone;
 

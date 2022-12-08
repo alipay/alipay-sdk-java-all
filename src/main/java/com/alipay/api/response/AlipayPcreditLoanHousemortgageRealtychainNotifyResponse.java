@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.housemortgage.realtychain.notify response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-09 00:44:42
+ * @since 1.0, 2022-12-08 05:30:11
  */
 public class AlipayPcreditLoanHousemortgageRealtychainNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6694997677961154564L;
+	private static final long serialVersionUID = 8171831544599317292L;
 
 	
 

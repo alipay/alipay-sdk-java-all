@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据uid查询用户签约保证金信息
  *
  * @author auto create
- * @since 1.0, 2022-05-07 11:30:41
+ * @since 1.0, 2022-12-06 10:22:06
  */
 public class AlipayFundBailOrderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4478394654665915992L;
+	private static final long serialVersionUID = 3591242253226648834L;
 
 	/**
 	 * 蚂蚁统一会员ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保证金资金迁移
  *
  * @author auto create
- * @since 1.0, 2022-01-19 10:11:42
+ * @since 1.0, 2022-12-06 10:25:19
  */
 public class AlipayFundBailOrderMigrateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6591377567162449443L;
+	private static final long serialVersionUID = 8882551537268859421L;
 
 	/**
 	 * 保证金协议号

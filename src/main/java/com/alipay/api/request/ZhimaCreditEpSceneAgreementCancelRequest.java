@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.scene.agreement.cancel request
  * 
  * @author auto create
- * @since 1.0, 2021-10-27 17:12:43
+ * @since 1.0, 2022-12-07 19:01:17
  */
 public class ZhimaCreditEpSceneAgreementCancelRequest implements AlipayRequest<ZhimaCreditEpSceneAgreementCancelResponse> {
 

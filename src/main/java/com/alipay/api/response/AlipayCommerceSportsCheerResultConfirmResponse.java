@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.cheer.result.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-14 13:40:20
+ * @since 1.0, 2022-12-08 04:43:01
  */
 public class AlipayCommerceSportsCheerResultConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8789365246933497799L;
+	private static final long serialVersionUID = 7556749757881876344L;
 
 	/** 
 	 * 用户流水号

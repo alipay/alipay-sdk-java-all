@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.aliyunbenefit.receive request
  * 
  * @author auto create
- * @since 1.0, 2022-10-28 20:21:51
+ * @since 1.0, 2022-12-08 03:51:38
  */
 public class AlipayUserAliyunbenefitReceiveRequest implements AlipayRequest<AlipayUserAliyunbenefitReceiveResponse> {
 

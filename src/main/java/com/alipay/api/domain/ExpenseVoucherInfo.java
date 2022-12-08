@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExpenseVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6888477392758549332L;
+	private static final long serialVersionUID = 5216372689793413811L;
 
 	/**
 	 * 企业支付宝用户id(对应凭证ownerid)

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.account.add request
  * 
  * @author auto create
- * @since 1.0, 2021-06-23 10:50:01
+ * @since 1.0, 2022-12-07 16:43:08
  */
 public class AlipayMobilePublicAccountAddRequest implements AlipayRequest<AlipayMobilePublicAccountAddResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.brandsolution.enrollmerchant.query request
  * 
  * @author auto create
- * @since 1.0, 2022-05-24 10:56:40
+ * @since 1.0, 2022-12-08 11:41:06
  */
 public class AlipayCommerceOperationBrandsolutionEnrollmerchantQueryRequest implements AlipayRequest<AlipayCommerceOperationBrandsolutionEnrollmerchantQueryResponse> {
 

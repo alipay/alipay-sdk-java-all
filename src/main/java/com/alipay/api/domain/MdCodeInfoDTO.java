@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MdCodeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6541334825368227465L;
+	private static final long serialVersionUID = 3219753276664555438L;
 
 	/**
 	 * 本次回传动态码的状态：

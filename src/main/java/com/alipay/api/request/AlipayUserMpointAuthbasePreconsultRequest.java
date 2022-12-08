@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.mpoint.authbase.preconsult request
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:16:54
+ * @since 1.0, 2022-12-08 01:24:47
  */
 public class AlipayUserMpointAuthbasePreconsultRequest implements AlipayRequest<AlipayUserMpointAuthbasePreconsultResponse> {
 

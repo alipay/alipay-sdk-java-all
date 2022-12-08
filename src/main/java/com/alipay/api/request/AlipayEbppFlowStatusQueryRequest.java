@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.flow.status.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 17:27:06
+ * @since 1.0, 2022-12-08 00:15:42
  */
 public class AlipayEbppFlowStatusQueryRequest implements AlipayRequest<AlipayEbppFlowStatusQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.clearingcenter.payoff.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-01 11:05:33
+ * @since 1.0, 2022-12-08 10:50:53
  */
 public class AlipayAccountClearingcenterPayoffModifyRequest implements AlipayRequest<AlipayAccountClearingcenterPayoffModifyResponse> {
 

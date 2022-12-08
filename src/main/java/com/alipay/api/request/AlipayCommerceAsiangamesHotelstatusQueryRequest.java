@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.asiangames.hotelstatus.query request
  * 
  * @author auto create
- * @since 1.0, 2022-05-19 20:21:41
+ * @since 1.0, 2022-12-08 14:31:30
  */
 public class AlipayCommerceAsiangamesHotelstatusQueryRequest implements AlipayRequest<AlipayCommerceAsiangamesHotelstatusQueryResponse> {
 

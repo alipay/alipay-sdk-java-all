@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ad.principaldmp.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-05-08 11:46:54
+ * @since 1.0, 2022-12-07 19:13:31
  */
 public class AlipayDataDataserviceAdPrincipaldmpSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1157596827636746378L;
+	private static final long serialVersionUID = 5145498667953487332L;
 
 	/** 
 	 * 关联结果：true-成功；false-失败

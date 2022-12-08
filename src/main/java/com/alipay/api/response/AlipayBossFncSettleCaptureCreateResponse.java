@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.settle.capture.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-26 17:41:15
+ * @since 1.0, 2022-12-08 05:31:20
  */
 public class AlipayBossFncSettleCaptureCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4329642386453262544L;
+	private static final long serialVersionUID = 8271426929598778754L;
 
 	/** 
 	 * 请款创建数据对象

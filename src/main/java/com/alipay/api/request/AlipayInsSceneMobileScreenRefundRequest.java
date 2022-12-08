@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.mobile.screen.refund request
  * 
  * @author auto create
- * @since 1.0, 2022-07-04 09:56:07
+ * @since 1.0, 2022-12-07 17:13:22
  */
 public class AlipayInsSceneMobileScreenRefundRequest implements AlipayRequest<AlipayInsSceneMobileScreenRefundResponse> {
 

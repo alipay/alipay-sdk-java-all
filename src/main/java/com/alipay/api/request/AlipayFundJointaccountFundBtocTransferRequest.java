@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.jointaccount.fund.btoc.transfer request
  * 
  * @author auto create
- * @since 1.0, 2022-07-16 09:48:29
+ * @since 1.0, 2022-12-07 16:03:43
  */
 public class AlipayFundJointaccountFundBtocTransferRequest implements AlipayRequest<AlipayFundJointaccountFundBtocTransferResponse> {
 

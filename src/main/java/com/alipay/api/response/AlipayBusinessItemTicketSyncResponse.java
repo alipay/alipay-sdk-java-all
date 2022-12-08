@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.item.ticket.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-27 21:35:20
+ * @since 1.0, 2022-12-08 04:30:27
  */
 public class AlipayBusinessItemTicketSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6658379383696614385L;
+	private static final long serialVersionUID = 8173832137948417519L;
 
 	/** 
 	 * 支付宝门票商品id

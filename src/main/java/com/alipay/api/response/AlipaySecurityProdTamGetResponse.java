@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.tam.get response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-18 14:38:41
+ * @since 1.0, 2022-12-08 13:11:36
  */
 public class AlipaySecurityProdTamGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8862774354676157552L;
+	private static final long serialVersionUID = 2836377419456945998L;
 
 	/** 
 	 * encrypted_ta_bin（ta二进制文件的加密字符串）+ 不唯一+用于传递加密后的ta文件给OEM厂商服务端+获取方式为支付宝服务端加密后生成+特殊说明：输入框长度有限，示例值并非真实的值，实际文件长度可能会超过4096

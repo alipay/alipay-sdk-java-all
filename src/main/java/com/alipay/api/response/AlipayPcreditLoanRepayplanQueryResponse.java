@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.repayplan.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 04:03:36
  */
 public class AlipayPcreditLoanRepayplanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8669112124971452178L;
+	private static final long serialVersionUID = 2492148533484431437L;
 
 	/** 
 	 * 贷款合约编号，每笔用户贷款申请时，放款签约时生成的唯一合约编号，作为用户贷款账单的唯一标识

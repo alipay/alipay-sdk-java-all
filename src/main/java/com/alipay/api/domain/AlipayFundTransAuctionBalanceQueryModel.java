@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘宝司法拍卖余额查询
  *
  * @author auto create
- * @since 1.0, 2018-01-23 12:16:13
+ * @since 1.0, 2022-12-06 17:07:34
  */
 public class AlipayFundTransAuctionBalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1575139189291173472L;
+	private static final long serialVersionUID = 4351367582151738387L;
 
 	/**
 	 * 业务id，唯一业务标识

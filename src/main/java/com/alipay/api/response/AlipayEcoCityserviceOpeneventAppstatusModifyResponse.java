@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.openevent.appstatus.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-20 15:46:39
+ * @since 1.0, 2022-12-07 17:52:45
  */
 public class AlipayEcoCityserviceOpeneventAppstatusModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1295645783363193439L;
+	private static final long serialVersionUID = 7287888544412286779L;
 
 	
 

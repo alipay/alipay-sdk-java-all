@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.mall.event.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-02 11:08:27
+ * @since 1.0, 2022-12-08 02:38:58
  */
 public class KoubeiMallEventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8748844925213817369L;
+	private static final long serialVersionUID = 7231952795676966996L;
 
 	/** 
 	 * 事件ID

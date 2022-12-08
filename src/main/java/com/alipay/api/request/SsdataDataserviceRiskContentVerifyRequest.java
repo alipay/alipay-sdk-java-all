@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.risk.content.verify request
  * 
  * @author auto create
- * @since 1.0, 2019-07-29 16:05:35
+ * @since 1.0, 2022-12-08 08:14:06
  */
 public class SsdataDataserviceRiskContentVerifyRequest implements AlipayRequest<SsdataDataserviceRiskContentVerifyResponse> {
 

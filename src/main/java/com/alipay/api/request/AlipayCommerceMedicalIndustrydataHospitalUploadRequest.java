@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.industrydata.hospital.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-05-30 16:33:32
+ * @since 1.0, 2022-12-07 17:46:42
  */
 public class AlipayCommerceMedicalIndustrydataHospitalUploadRequest implements AlipayRequest<AlipayCommerceMedicalIndustrydataHospitalUploadResponse> {
 

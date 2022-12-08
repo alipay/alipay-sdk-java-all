@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.hrcampuscore.niukeexam.result.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-01 21:36:54
+ * @since 1.0, 2022-12-07 16:00:27
  */
 public class AlipayDigitalmgmtHrcampuscoreNiukeexamResultSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8383927519732471259L;
+	private static final long serialVersionUID = 4228871817917346578L;
 
 	/** 
 	 * 牛客考试结果回调结果

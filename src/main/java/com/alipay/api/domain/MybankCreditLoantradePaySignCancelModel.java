@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付解约接口
  *
  * @author auto create
- * @since 1.0, 2021-12-27 11:58:56
+ * @since 1.0, 2022-12-06 10:59:34
  */
 public class MybankCreditLoantradePaySignCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3724414639946488249L;
+	private static final long serialVersionUID = 8748254193421175497L;
 
 	/**
 	 * 支付宝ID

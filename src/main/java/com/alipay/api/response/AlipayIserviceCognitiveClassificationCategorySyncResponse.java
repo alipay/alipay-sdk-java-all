@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.classification.category.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-22 12:50:01
+ * @since 1.0, 2022-12-08 03:10:46
  */
 public class AlipayIserviceCognitiveClassificationCategorySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8633254419518769222L;
+	private static final long serialVersionUID = 4215638889939423734L;
 
 	/** 
 	 * 错误code

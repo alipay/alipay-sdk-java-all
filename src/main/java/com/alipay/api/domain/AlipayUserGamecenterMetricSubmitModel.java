@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserGamecenterMetricSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8281864464113327113L;
+	private static final long serialVersionUID = 5782441256783889456L;
 
 	/**
 	 * 游戏侧业务指标内容，格式为json，key为指标编码，value为指标值

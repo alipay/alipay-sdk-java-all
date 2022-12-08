@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.finrisk.company.verify.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-22 13:44:12
+ * @since 1.0, 2022-12-08 12:33:10
  */
 public class AlipayAccountFinriskCompanyVerifyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1381745757211124593L;
+	private static final long serialVersionUID = 6796669757364963257L;
 
 	/** 
 	 * 二代结果码

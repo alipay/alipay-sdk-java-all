@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.bail.order.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:16:50
+ * @since 1.0, 2022-12-06 10:22:06
  */
 public class AlipayFundBailOrderBatchqueryRequest implements AlipayRequest<AlipayFundBailOrderBatchqueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.agreement.userverify.query request
  * 
  * @author auto create
- * @since 1.0, 2022-11-11 21:07:54
+ * @since 1.0, 2022-12-07 17:31:19
  */
 public class AlipayUserAgreementUserverifyQueryRequest implements AlipayRequest<AlipayUserAgreementUserverifyQueryResponse> {
 

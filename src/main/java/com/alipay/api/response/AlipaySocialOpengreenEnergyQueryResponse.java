@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.opengreen.energy.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-26 11:01:54
+ * @since 1.0, 2022-12-08 10:41:39
  */
 public class AlipaySocialOpengreenEnergyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7522236852747424699L;
+	private static final long serialVersionUID = 3472941127662614854L;
 
 	/** 
 	 * 查询所获得的能量信息

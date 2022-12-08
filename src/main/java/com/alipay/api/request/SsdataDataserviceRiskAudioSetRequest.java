@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.risk.audio.set request
  * 
  * @author auto create
- * @since 1.0, 2019-07-29 16:06:21
+ * @since 1.0, 2022-12-08 06:54:51
  */
 public class SsdataDataserviceRiskAudioSetRequest implements AlipayRequest<SsdataDataserviceRiskAudioSetResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.membercard.refund.submit response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-07 19:36:36
+ * @since 1.0, 2022-12-07 20:01:39
  */
 public class AntMerchantExpandMembercardRefundSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7675244628769373392L;
+	private static final long serialVersionUID = 7374874449398867461L;
 
 	/** 
 	 * 退款金额（单位：元）

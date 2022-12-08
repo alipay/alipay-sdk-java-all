@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 团体资金用户流水查询接口
  *
  * @author auto create
- * @since 1.0, 2019-05-17 12:01:30
+ * @since 1.0, 2022-12-06 19:45:09
  */
 public class AlipayFundTransGroupfundsUserbillsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5619264528347263534L;
+	private static final long serialVersionUID = 4298854619863266532L;
 
 	/**
 	 * 指定具体活动对应的批次号列表，不超过20个批次

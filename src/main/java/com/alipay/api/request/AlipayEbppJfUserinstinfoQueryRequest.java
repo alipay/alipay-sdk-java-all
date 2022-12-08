@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.jf.userinstinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 23:16:34
+ * @since 1.0, 2022-12-08 04:32:17
  */
 public class AlipayEbppJfUserinstinfoQueryRequest implements AlipayRequest<AlipayEbppJfUserinstinfoQueryResponse> {
 

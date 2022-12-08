@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询额度信息
  *
  * @author auto create
- * @since 1.0, 2022-12-02 16:27:45
+ * @since 1.0, 2022-12-06 17:52:12
  */
 public class AlipayFundEnterprisepayQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3645891972349825951L;
+	private static final long serialVersionUID = 7265473365244444719L;
 
 	/**
 	 * 企业签约账户ID

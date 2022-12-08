@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.relation.alipayaccount.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-16 20:11:43
+ * @since 1.0, 2022-12-08 10:42:56
  */
 public class AlipayBusinessRelationAlipayaccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1871934549917566999L;
+	private static final long serialVersionUID = 8624846568153169299L;
 
 	/** 
 	 * 商业关系收单pid支付宝账号

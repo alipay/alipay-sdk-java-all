@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.settlement.refund response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-14 11:50:07
+ * @since 1.0, 2022-12-08 10:45:42
  */
 public class AlipayCommerceTransportVehicleownerSettlementRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7654762615113279293L;
+	private static final long serialVersionUID = 3865375127963651956L;
 
 	/** 
 	 * 买家在支付宝的用户id

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antpaas.token.third.trust.login response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-22 00:16:24
+ * @since 1.0, 2022-12-08 08:15:56
  */
 public class AlipayUserAntpaasTokenThirdTrustLoginResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3577415877721931194L;
+	private static final long serialVersionUID = 6183664448181369749L;
 
 	/** 
 	 * third_trust_token：用户免登的一次性token；后续使用改token进行免登请求。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 团体资金预付款(资金单据创建)
  *
  * @author auto create
- * @since 1.0, 2019-05-17 11:53:48
+ * @since 1.0, 2022-12-06 19:45:35
  */
 public class AlipayFundTransGroupfundsPayorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3417827657714692265L;
+	private static final long serialVersionUID = 4712538277561239757L;
 
 	/**
 	 * 付款活动关联的批次号

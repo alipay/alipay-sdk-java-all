@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.disassociate response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-07 18:24:17
+ * @since 1.0, 2022-12-06 17:54:29
  */
 public class AlipayMarketingActivityOrdervoucherDisassociateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7115695389143325936L;
+	private static final long serialVersionUID = 3541735185722391939L;
 
 	/** 
 	 * 支付宝系统取消关联订单成功的时间。 格式为：yyyy-MM-dd HH:mm:ss

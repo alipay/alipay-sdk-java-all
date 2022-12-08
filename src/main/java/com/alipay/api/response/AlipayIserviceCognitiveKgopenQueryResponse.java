@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.kgopen.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-11-19 23:50:43
+ * @since 1.0, 2022-12-08 09:09:30
  */
 public class AlipayIserviceCognitiveKgopenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5555392596644582572L;
+	private static final long serialVersionUID = 2551693924687635586L;
 
 	/** 
 	 * 返回数据

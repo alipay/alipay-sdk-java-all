@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.groupfunds.fundbills.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-17 17:45:01
+ * @since 1.0, 2022-12-08 05:02:39
  */
 public class AlipayFundTransGroupfundsFundbillsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7524419269755875124L;
+	private static final long serialVersionUID = 7275575598929324641L;
 
 	/** 
 	 * 批次状态,包括:  COLLECT:收款中, COLLECT_SUC: 全部收款完成, PAYMENT_SUC: 全部付款完成, CLOSE: 超时收款未完成已关闭，REFUND：付款部分未成功,部分退款

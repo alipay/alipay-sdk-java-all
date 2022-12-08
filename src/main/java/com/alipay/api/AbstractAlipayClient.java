@@ -5,15 +5,7 @@ package com.alipay.api;
 
 import com.alipay.api.internal.parser.json.ObjectJsonParser;
 import com.alipay.api.internal.parser.xml.ObjectXmlParser;
-import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.internal.util.AlipayLogger;
-import com.alipay.api.internal.util.AlipaySignature;
-import com.alipay.api.internal.util.AlipayUtils;
-import com.alipay.api.internal.util.AntCertificationUtil;
-import com.alipay.api.internal.util.LoadTestUtil;
-import com.alipay.api.internal.util.RequestParametersHolder;
-import com.alipay.api.internal.util.StringUtils;
-import com.alipay.api.internal.util.WebUtils;
+import com.alipay.api.internal.util.*;
 import com.alipay.api.internal.util.codec.Base64;
 import com.alipay.api.internal.util.file.FileUtils;
 import com.alipay.api.internal.util.json.JSONWriter;
@@ -77,6 +69,9 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     private   ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap;
     private   ConcurrentHashMap<String, String>          alipayPublicKeyMap;
     private   Map<String, String>                        headers;
+    private   int                                        maxIdleConnections = 0;
+    private   long                                       keepAliveDuration = 10000L;
+    private   AbstractHttpClient                         customizedHttpClient;
 
     public AbstractAlipayClient(String serverUrl, String appId, String format,
                                 String charset, String signType) {
@@ -1000,11 +995,13 @@ public abstract class AbstractAlipayClient implements AlipayClient {
             if (request instanceof AlipayUploadRequest) {
                 AlipayUploadRequest<T> uRequest = (AlipayUploadRequest<T>) request;
                 Map<String, FileItem> fileParams = AlipayUtils.cleanupMap(uRequest.getFileParams());
-                rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), fileParams,
-                        charset, connectTimeout, readTimeout, proxyHost, proxyPort, headers, resHeaders);
+                rsp = customizedHttpClient == null ? WebUtils.doPost(url, requestHolder.getApplicationParams(), fileParams,
+                        charset, connectTimeout, readTimeout, proxyHost, proxyPort, headers, resHeaders)
+                        : customizedHttpClient.doPost(url, requestHolder.getApplicationParams(), fileParams, charset, resHeaders);
             } else {
-                rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
-                        connectTimeout, readTimeout, proxyHost, proxyPort, headers, resHeaders);
+                rsp = customizedHttpClient == null ? WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
+                        connectTimeout, readTimeout, proxyHost, proxyPort, headers, resHeaders)
+                        : customizedHttpClient.doPost(url, requestHolder.getApplicationParams(), charset, resHeaders);
             }
         } catch (SSLException e) {
             if (e.getMessage().contains("the trustAnchors parameter must be non-empty")
@@ -1198,6 +1195,34 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
     void setAlipayPublicCertMap(ConcurrentHashMap<String, X509Certificate> alipayPublicCertMap) {
         this.alipayPublicCertMap = alipayPublicCertMap;
+    }
+
+    public void setMaxIdleConnections(int maxIdleConnections) {
+        this.maxIdleConnections = maxIdleConnections;
+    }
+
+    public void setKeepAliveDuration(long keepAliveDuration) throws AlipayApiException {
+        if (keepAliveDuration > 60000) {
+            throw new AlipayApiException(AlipayApiErrorEnum.KEEPALIVE_DURATION_ERROR);
+        }
+        this.keepAliveDuration = keepAliveDuration;
+    }
+
+    public void setCustomizedHttpClient(AbstractHttpClient customizedHttpClient) {
+        this.customizedHttpClient = customizedHttpClient;
+        if (this.customizedHttpClient == null && maxIdleConnections > 0) {
+            this.customizedHttpClient = new HttpClientUtil();
+        }
+        //初始化变量
+        if (this.customizedHttpClient != null) {
+            this.customizedHttpClient.setConnectTimeout(connectTimeout);
+            this.customizedHttpClient.setReadTimeout(readTimeout);
+            this.customizedHttpClient.setCustomHeaders(headers);
+            this.customizedHttpClient.setProxyHost(proxyHost);
+            this.customizedHttpClient.setProxyPort(proxyPort);
+            this.customizedHttpClient.setMaxIdleConnections(maxIdleConnections);
+            this.customizedHttpClient.setKeepAliveDuration(keepAliveDuration);
+        }
     }
 
     public abstract Signer getSigner();

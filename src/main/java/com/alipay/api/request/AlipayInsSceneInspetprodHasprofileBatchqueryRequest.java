@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.inspetprod.hasprofile.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-01-14 13:55:36
+ * @since 1.0, 2022-12-07 18:35:45
  */
 public class AlipayInsSceneInspetprodHasprofileBatchqueryRequest implements AlipayRequest<AlipayInsSceneInspetprodHasprofileBatchqueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.partner.menu.query request
  * 
  * @author auto create
- * @since 1.0, 2022-08-05 19:32:15
+ * @since 1.0, 2022-12-08 14:39:44
  */
 public class AlipayOpenPublicPartnerMenuQueryRequest implements AlipayRequest<AlipayOpenPublicPartnerMenuQueryResponse> {
 

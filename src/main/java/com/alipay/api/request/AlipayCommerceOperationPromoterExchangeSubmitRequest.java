@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.promoter.exchange.submit request
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 15:00:35
+ * @since 1.0, 2022-12-07 18:39:58
  */
 public class AlipayCommerceOperationPromoterExchangeSubmitRequest implements AlipayRequest<AlipayCommerceOperationPromoterExchangeSubmitResponse> {
 

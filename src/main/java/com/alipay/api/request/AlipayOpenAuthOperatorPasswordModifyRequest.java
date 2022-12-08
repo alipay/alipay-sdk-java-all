@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.auth.operator.password.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-10-27 17:38:28
+ * @since 1.0, 2022-12-08 06:13:57
  */
 public class AlipayOpenAuthOperatorPasswordModifyRequest implements AlipayRequest<AlipayOpenAuthOperatorPasswordModifyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.auth.order.freeze request
  * 
  * @author auto create
- * @since 1.0, 2022-11-29 16:26:36
+ * @since 1.0, 2022-12-06 18:41:39
  */
 public class AlipayFundAuthOrderFreezeRequest implements AlipayRequest<AlipayFundAuthOrderFreezeResponse> {
 

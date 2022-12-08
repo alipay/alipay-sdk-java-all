@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.invmode.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-31 21:14:23
+ * @since 1.0, 2022-12-08 07:35:19
  */
 public class AlipayBossFncInvmodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7562153219127211274L;
+	private static final long serialVersionUID = 6487152636895462132L;
 
 	/** 
 	 * 是否调用成功

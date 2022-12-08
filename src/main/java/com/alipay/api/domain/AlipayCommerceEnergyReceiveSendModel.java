@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * FSC用户能量领取接口
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:27:36
+ * @since 1.0, 2022-12-06 20:07:49
  */
 public class AlipayCommerceEnergyReceiveSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8626838976867132574L;
+	private static final long serialVersionUID = 8543656175291888834L;
+
+	/**
+	 * 支付宝openid
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝用户uid;
@@ -53,6 +59,13 @@ public class AlipayCommerceEnergyReceiveSendModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUid() {
 		return this.alipayUid;

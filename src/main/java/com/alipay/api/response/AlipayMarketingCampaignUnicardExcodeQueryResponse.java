@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.unicard.excode.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-23 11:31:41
+ * @since 1.0, 2022-12-07 17:17:17
  */
 public class AlipayMarketingCampaignUnicardExcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6255337779185811345L;
+	private static final long serialVersionUID = 6166992493797696966L;
 
 	/** 
 	 * 兑换码是否可以兑换

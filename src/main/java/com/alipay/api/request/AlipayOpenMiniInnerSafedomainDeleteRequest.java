@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.inner.safedomain.delete request
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:16:49
+ * @since 1.0, 2022-12-08 01:59:10
  */
 public class AlipayOpenMiniInnerSafedomainDeleteRequest implements AlipayRequest<AlipayOpenMiniInnerSafedomainDeleteResponse> {
 

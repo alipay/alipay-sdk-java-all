@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.auth.info.authquery request
  * 
  * @author auto create
- * @since 1.0, 2022-11-17 15:26:36
+ * @since 1.0, 2022-12-07 16:01:39
  */
 public class ZhimaAuthInfoAuthqueryRequest implements AlipayRequest<ZhimaAuthInfoAuthqueryResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.config.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-17 19:22:00
+ * @since 1.0, 2022-12-06 17:57:19
  */
 public class AlipayEcoMycarParkingConfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3432715978694351612L;
+	private static final long serialVersionUID = 7386177569411759277L;
 
 	/** 
 	 * 签约支付宝账号，开发者通过ISV系统配置信息注册接口(alipay.eco.mycar.parking.config.set)传入的参数值

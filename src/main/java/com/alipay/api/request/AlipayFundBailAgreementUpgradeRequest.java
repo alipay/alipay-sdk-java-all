@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.bail.agreement.upgrade request
  * 
  * @author auto create
- * @since 1.0, 2022-01-19 10:12:51
+ * @since 1.0, 2022-12-08 11:02:01
  */
 public class AlipayFundBailAgreementUpgradeRequest implements AlipayRequest<AlipayFundBailAgreementUpgradeResponse> {
 

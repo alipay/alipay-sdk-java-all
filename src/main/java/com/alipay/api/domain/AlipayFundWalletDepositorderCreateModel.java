@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户充值创建订单
  *
  * @author auto create
- * @since 1.0, 2022-10-26 20:58:05
+ * @since 1.0, 2022-12-06 01:09:49
  */
 public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1581725163861561612L;
+	private static final long serialVersionUID = 6823117837175394151L;
 
 	/**
 	 * 充值的本金金额
@@ -26,6 +26,12 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 膨胀金的生效开始日期
+	 */
+	@ApiField("effective_end_date")
+	private String effectiveEndDate;
 
 	/**
 	 * 充值的膨胀金额
@@ -69,6 +75,18 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	@ApiField("time_expire")
 	private Date timeExpire;
 
+	/**
+	 * 钱包id
+	 */
+	@ApiField("user_wallet_id")
+	private String userWalletId;
+
+	/**
+	 * 膨胀金的生效结束日期
+	 */
+	@ApiField("valid_date")
+	private String validDate;
+
 	public String getAmount() {
 		return this.amount;
 	}
@@ -81,6 +99,13 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getEffectiveEndDate() {
+		return this.effectiveEndDate;
+	}
+	public void setEffectiveEndDate(String effectiveEndDate) {
+		this.effectiveEndDate = effectiveEndDate;
 	}
 
 	public String getExpandAmount() {
@@ -130,6 +155,20 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	}
 	public void setTimeExpire(Date timeExpire) {
 		this.timeExpire = timeExpire;
+	}
+
+	public String getUserWalletId() {
+		return this.userWalletId;
+	}
+	public void setUserWalletId(String userWalletId) {
+		this.userWalletId = userWalletId;
+	}
+
+	public String getValidDate() {
+		return this.validDate;
+	}
+	public void setValidDate(String validDate) {
+		this.validDate = validDate;
 	}
 
 }

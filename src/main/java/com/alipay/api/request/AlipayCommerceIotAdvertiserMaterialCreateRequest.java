@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.advertiser.material.create request
  * 
  * @author auto create
- * @since 1.0, 2021-06-16 16:42:42
+ * @since 1.0, 2022-12-07 23:40:04
  */
 public class AlipayCommerceIotAdvertiserMaterialCreateRequest implements AlipayUploadRequest<AlipayCommerceIotAdvertiserMaterialCreateResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.mrchsurplmorder.point.pay response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:16:45
+ * @since 1.0, 2022-12-07 17:35:23
  */
 public class AlipayMerchantMrchsurplmorderPointPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8827475132219451655L;
+	private static final long serialVersionUID = 1827337547239286482L;
 
 	
 

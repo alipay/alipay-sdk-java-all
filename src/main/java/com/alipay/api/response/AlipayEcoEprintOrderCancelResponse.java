@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.eprint.order.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 22:44:24
+ * @since 1.0, 2022-12-08 08:05:02
  */
 public class AlipayEcoEprintOrderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1413333374483168891L;
+	private static final long serialVersionUID = 6236877282246513639L;
 
 	
 

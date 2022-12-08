@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TravelScene extends AlipayObject {
 
-	private static final long serialVersionUID = 3521649352892679448L;
+	private static final long serialVersionUID = 6226827994452515122L;
 
 	/**
 	 * 出行场景，综合体入参列表

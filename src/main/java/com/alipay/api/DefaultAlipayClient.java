@@ -49,6 +49,9 @@ public class DefaultAlipayClient extends AbstractAlipayClient {
         setHeaders(alipayConfig.getCustomHeaders());
         setConnectTimeout(alipayConfig.getConnectTimeout());
         setReadTimeout(alipayConfig.getReadTimeout());
+        setMaxIdleConnections(alipayConfig.getMaxIdleConnections());
+        setKeepAliveDuration(alipayConfig.getKeepAliveDuration());
+        setCustomizedHttpClient(alipayConfig.getCustomizedHttpClient());
     }
 
     public DefaultAlipayClient(String serverUrl, String appId, String privateKey) {

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.wifi.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 10:41:49
+ * @since 1.0, 2022-12-08 12:45:06
  */
 public class AlipayCommerceIotWifiStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4882435982653446892L;
+	private static final long serialVersionUID = 2251632254952499275L;
 
 	/** 
 	 * 当前wifi名称

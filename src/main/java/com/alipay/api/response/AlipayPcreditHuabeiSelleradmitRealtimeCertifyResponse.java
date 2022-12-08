@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.selleradmit.realtime.certify response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:48
+ * @since 1.0, 2022-12-07 20:40:53
  */
 public class AlipayPcreditHuabeiSelleradmitRealtimeCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6416777481959771541L;
+	private static final long serialVersionUID = 7484677869245661216L;
 
 	/** 
 	 * 不准入原因码

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.weike.bill.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:26:41
+ * @since 1.0, 2022-12-08 00:04:04
  */
 public class AlipayMerchantWeikeBillModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3574724558822656638L;
+	private static final long serialVersionUID = 2539659589439287239L;
 
 	
 

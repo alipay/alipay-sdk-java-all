@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.finance.yulibao.capital.purchase request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:04:04
+ * @since 1.0, 2022-12-07 17:15:31
  */
 public class MybankFinanceYulibaoCapitalPurchaseRequest implements AlipayRequest<MybankFinanceYulibaoCapitalPurchaseResponse> {
 

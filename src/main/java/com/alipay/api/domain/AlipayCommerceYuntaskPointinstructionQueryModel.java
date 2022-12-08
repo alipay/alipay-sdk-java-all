@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询积分流水
  *
  * @author auto create
- * @since 1.0, 2022-10-31 19:50:04
+ * @since 1.0, 2022-12-07 15:02:51
  */
 public class AlipayCommerceYuntaskPointinstructionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2199885534722714185L;
+	private static final long serialVersionUID = 2197669649457993672L;
 
 	/**
 	 * 导购员id
 	 */
 	@ApiField("hunter_id")
 	private String hunterId;
+
+	/**
+	 * 导购员id
+	 */
+	@ApiField("hunter_open_id")
+	private String hunterOpenId;
 
 	/**
 	 * 积分流水id
@@ -54,6 +60,13 @@ public class AlipayCommerceYuntaskPointinstructionQueryModel extends AlipayObjec
 	}
 	public void setHunterId(String hunterId) {
 		this.hunterId = hunterId;
+	}
+
+	public String getHunterOpenId() {
+		return this.hunterOpenId;
+	}
+	public void setHunterOpenId(String hunterOpenId) {
+		this.hunterOpenId = hunterOpenId;
 	}
 
 	public String getInstructionId() {

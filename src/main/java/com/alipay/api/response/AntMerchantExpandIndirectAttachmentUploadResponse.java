@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.attachment.upload response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-17 10:43:51
+ * @since 1.0, 2022-12-08 05:36:19
  */
 public class AntMerchantExpandIndirectAttachmentUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6843127693181877516L;
+	private static final long serialVersionUID = 3633994481344329115L;
 
 	/** 
 	 * 商户在支付宝入驻成功后，生成的支付宝内全局唯一的商户编号

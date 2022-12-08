@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.megagame.task.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:12:55
+ * @since 1.0, 2022-12-08 10:57:23
  */
 public class AnttechOceanbaseMegagameTaskSyncRequest implements AlipayRequest<AnttechOceanbaseMegagameTaskSyncResponse> {
 

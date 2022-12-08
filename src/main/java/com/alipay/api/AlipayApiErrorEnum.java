@@ -44,7 +44,9 @@ public enum AlipayApiErrorEnum {
     ENCRYPT_ASE_CHARSET_ERROR("ENCRYPT_ASE_CHARSET_ERROR", "AES加密失败，请检查编码格式是否正确：charset = %s"),
     DECRYPT_ASE_ERROR("DECRYPT_ASE_ERROR", "AES解密失败：Aescontent = %s; charset = %s"),
     ENCRYPT_ASE_V2_ERROR("ENCRYPT_ASE_V2_ERROR", "AES_V2加密失败：Aescontent = %s; charset = %s"),
-    DECRYPT_ASE_V2_ERROR("DECRYPT_ASE_V2_ERROR", "AES_V2解密失败：Aescontent = %s; charset = %s");
+    DECRYPT_ASE_V2_ERROR("DECRYPT_ASE_V2_ERROR", "AES_V2解密失败：Aescontent = %s; charset = %s"),
+
+    KEEPALIVE_DURATION_ERROR("KEEPALIVE_DURATION_ERROR", "最大存活时间不能超过60s");
 
     private String errCode;
     private String errMsg;

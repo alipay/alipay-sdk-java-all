@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.sales.kbasset.stuff.feedbackstockorder.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-05-31 00:05:01
+ * @since 1.0, 2022-12-08 08:05:21
  */
 public class KoubeiSalesKbassetStuffFeedbackstockorderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4113185916342662616L;
+	private static final long serialVersionUID = 2816146815996724935L;
 
 	/** 
 	 * erp单号

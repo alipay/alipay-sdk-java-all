@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.item.merchantactivity.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-09-19 15:11:18
+ * @since 1.0, 2022-12-07 19:36:06
  */
 public class KoubeiMarketingCampaignItemMerchantactivityModifyRequest implements AlipayRequest<KoubeiMarketingCampaignItemMerchantactivityModifyResponse> {
 

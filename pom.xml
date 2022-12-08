@@ -4,7 +4,7 @@
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <version>4.34.90.ALL</version>
+    <version>4.35.0.ALL</version>
     <name>alipay-sdk-java</name>
 
     <url>https://open.alipay.com</url>
@@ -75,6 +75,11 @@
             <groupId>dom4j</groupId>
             <artifactId>dom4j</artifactId>
             <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.12.13</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

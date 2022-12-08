@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.questionnare.task.verify response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:16
+ * @since 1.0, 2022-12-08 12:06:28
  */
 public class AlipaySocialQuestionnareTaskVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8279718723421997432L;
+	private static final long serialVersionUID = 5246938896664661562L;
 
 	/** 
 	 * 业务扩展字段JSON格式

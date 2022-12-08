@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.quotation.protocol.authorize.subscribe request
  * 
  * @author auto create
- * @since 1.0, 2022-08-26 11:01:46
+ * @since 1.0, 2022-12-08 09:01:40
  */
 public class AlipayFinanceQuotationProtocolAuthorizeSubscribeRequest implements AlipayRequest<AlipayFinanceQuotationProtocolAuthorizeSubscribeResponse> {
 

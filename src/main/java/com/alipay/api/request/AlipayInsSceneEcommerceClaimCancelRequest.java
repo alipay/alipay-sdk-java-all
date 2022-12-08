@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.ecommerce.claim.cancel request
  * 
  * @author auto create
- * @since 1.0, 2022-08-29 20:41:46
+ * @since 1.0, 2022-12-07 18:11:50
  */
 public class AlipayInsSceneEcommerceClaimCancelRequest implements AlipayRequest<AlipayInsSceneEcommerceClaimCancelResponse> {
 

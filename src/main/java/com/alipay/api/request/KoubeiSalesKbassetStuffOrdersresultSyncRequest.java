@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.sales.kbasset.stuff.ordersresult.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-06-17 16:40:38
+ * @since 1.0, 2022-12-08 03:04:37
  */
 public class KoubeiSalesKbassetStuffOrdersresultSyncRequest implements AlipayRequest<KoubeiSalesKbassetStuffOrdersresultSyncResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.remit.fxtradeorder.create request
  * 
  * @author auto create
- * @since 1.0, 2019-10-12 17:15:53
+ * @since 1.0, 2022-12-08 11:21:39
  */
 public class AlipayOverseasRemitFxtradeorderCreateRequest implements AlipayRequest<AlipayOverseasRemitFxtradeorderCreateResponse> {
 

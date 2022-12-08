@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 团体资金用户收付款权限预校验
  *
  * @author auto create
- * @since 1.0, 2019-05-17 11:54:22
+ * @since 1.0, 2022-12-06 19:45:54
  */
 public class AlipayFundTransGroupfundsPayauthConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2715132218229961763L;
+	private static final long serialVersionUID = 8136481177529332249L;
 
 	/**
 	 * 当前发起资金操作用户支付宝账户ID

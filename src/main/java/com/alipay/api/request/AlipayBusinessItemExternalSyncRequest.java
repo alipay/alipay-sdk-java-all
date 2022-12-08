@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.business.item.external.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 10:37:59
  */
 public class AlipayBusinessItemExternalSyncRequest implements AlipayRequest<AlipayBusinessItemExternalSyncResponse> {
 

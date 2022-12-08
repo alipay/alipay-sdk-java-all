@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.questionnare.fatigue.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 21:50:32
+ * @since 1.0, 2022-12-07 23:25:33
  */
 public class AlipaySocialQuestionnareFatigueSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8588124352751411145L;
+	private static final long serialVersionUID = 7128447736473779524L;
 
 	
 

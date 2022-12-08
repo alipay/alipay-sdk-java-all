@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.scene.agreement.use request
  * 
  * @author auto create
- * @since 1.0, 2021-10-27 17:12:55
+ * @since 1.0, 2022-12-07 15:23:14
  */
 public class ZhimaCreditEpSceneAgreementUseRequest implements AlipayRequest<ZhimaCreditEpSceneAgreementUseResponse> {
 

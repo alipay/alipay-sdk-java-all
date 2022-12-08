@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.wufufuka.aliyun.finish response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-10 15:56:02
+ * @since 1.0, 2022-12-08 07:49:25
  */
 public class AlipayUserWufufukaAliyunFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1349239386323128963L;
+	private static final long serialVersionUID = 7369684431939644887L;
 
 	/** 
 	 * 是否需要重试，接口失败情况下，根据该字段判断是否需要重试

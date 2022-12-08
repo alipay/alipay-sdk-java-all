@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.collateral.operation.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-09 00:43:55
+ * @since 1.0, 2022-12-08 06:08:37
  */
 public class AlipayPcreditLoanCollateralOperationSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1377433222254566515L;
+	private static final long serialVersionUID = 5823249681893537268L;
 
 	
 

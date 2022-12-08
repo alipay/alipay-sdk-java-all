@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.antdao.mypoints.publish response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-03 13:21:25
+ * @since 1.0, 2022-12-08 10:44:29
  */
 public class AnttechBlockchainFinanceAntdaoMypointsPublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2861364571376144618L;
+	private static final long serialVersionUID = 4237362215769524564L;
 
 	/** 
 	 * 集分宝卡密短链

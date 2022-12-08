@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.beacon.device.delete response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2022-12-07 17:28:49
  */
 public class AlipayMobileBeaconDeviceDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6867574346628627812L;
+	private static final long serialVersionUID = 3585317247125155697L;
 
 	/** 
 	 * 操作返回码

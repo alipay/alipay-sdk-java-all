@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.message.content.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-13 20:11:07
+ * @since 1.0, 2022-12-07 17:50:38
  */
 public class AlipayOpenPublicMessageContentModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3379668348297745312L;
+	private static final long serialVersionUID = 5777457566966222452L;
 
 	/** 
 	 * 内容id

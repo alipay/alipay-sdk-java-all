@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.taxbill.sign.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-11 18:26:54
+ * @since 1.0, 2022-12-07 16:37:10
  */
 public class AlipayFundTaxbillSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6783945999216455466L;
+	private static final long serialVersionUID = 8358215985122996245L;
 
 	/** 
 	 * 场景码

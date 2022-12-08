@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.attachment.upload.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-11-19 16:02:06
+ * @since 1.0, 2022-12-08 08:49:13
  */
 public class AntMerchantExpandAttachmentUploadSyncRequest implements AlipayUploadRequest<AntMerchantExpandAttachmentUploadSyncResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.ebpp.pdeduct.czsign.upgrade response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-18 16:55:15
+ * @since 1.0, 2022-12-08 07:29:10
  */
 public class AlipayEbppEbppPdeductCzsignUpgradeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7651181615516255378L;
+	private static final long serialVersionUID = 8548877846696464625L;
 
 	/** 
 	 * 错误信息文案

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.dsb.estimate.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-21 15:17:13
+ * @since 1.0, 2022-12-08 03:29:59
  */
 public class AlipayInsDataDsbEstimateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1244257128139735352L;
+	private static final long serialVersionUID = 5791623243918881387L;
 
 	/** 
 	 * 定损结果置信度，小数，取值范围为0到1

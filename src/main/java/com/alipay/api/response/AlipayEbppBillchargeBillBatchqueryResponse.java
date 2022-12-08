@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.billcharge.bill.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-24 14:41:37
+ * @since 1.0, 2022-12-07 17:36:39
  */
 public class AlipayEbppBillchargeBillBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7318192236985239156L;
+	private static final long serialVersionUID = 4592834622667929275L;
 
 	
 

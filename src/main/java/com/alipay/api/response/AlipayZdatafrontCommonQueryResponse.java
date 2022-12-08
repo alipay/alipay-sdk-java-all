@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.zdatafront.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-06 10:15:37
+ * @since 1.0, 2022-12-07 19:58:40
  */
 public class AlipayZdatafrontCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1414393166589547579L;
+	private static final long serialVersionUID = 6222644392157919333L;
 
 	/** 
 	 * 数据的时间戳：

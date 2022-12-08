@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账实时人群标签更新
  *
  * @author auto create
- * @since 1.0, 2019-08-14 20:23:10
+ * @since 1.0, 2022-12-06 16:50:19
  */
 public class AlipayFundTransIcrowdTagModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1411857343186171335L;
+	private static final long serialVersionUID = 3487154688944558164L;
 
 	/**
 	 * 手机号码，与user_id不可同时为空

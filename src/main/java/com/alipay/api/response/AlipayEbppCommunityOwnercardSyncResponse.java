@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.ownercard.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-18 13:41:34
+ * @since 1.0, 2022-12-08 05:51:38
  */
 public class AlipayEbppCommunityOwnercardSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2615183782925348293L;
+	private static final long serialVersionUID = 7167639963222442448L;
 
 	/** 
 	 * 支付宝证件id

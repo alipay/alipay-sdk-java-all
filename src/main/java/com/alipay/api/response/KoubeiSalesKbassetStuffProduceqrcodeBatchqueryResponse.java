@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.sales.kbasset.stuff.produceqrcode.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 07:17:55
  */
 public class KoubeiSalesKbassetStuffProduceqrcodeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1315138493727598721L;
+	private static final long serialVersionUID = 6467751843669174593L;
 
 	/** 
 	 * 当前是否还有生产指令可以拉取；注意如果该值为false，也只有提示当前没有更多生产指令了，不代表后面没有生产指令，商户自己需要制定策略定时去拉取

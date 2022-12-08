@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antarchive.face.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-09-22 16:09:29
+ * @since 1.0, 2022-12-08 14:06:09
  */
 public class AlipayUserAntarchiveFaceUploadRequest implements AlipayRequest<AlipayUserAntarchiveFaceUploadResponse> {
 

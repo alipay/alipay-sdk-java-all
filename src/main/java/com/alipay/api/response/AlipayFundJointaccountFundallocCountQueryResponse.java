@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.fundalloc.count.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 14:06:57
+ * @since 1.0, 2022-12-07 17:31:51
  */
 public class AlipayFundJointaccountFundallocCountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3797387525122869829L;
+	private static final long serialVersionUID = 2745925544574127732L;
 
 	/** 
 	 * 自动攒计划的调拨汇总金额（单位为元，必须大于0且最多小数点后两位）

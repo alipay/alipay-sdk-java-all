@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销任务报名
  *
  * @author auto create
- * @since 1.0, 2022-11-14 21:05:16
+ * @since 1.0, 2022-12-07 11:37:15
  */
 public class AlipayMarketingCampaignTaskSignupModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6249738755894743686L;
+	private static final long serialVersionUID = 6838282519328833446L;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 参数名：外部业务单号
@@ -38,6 +44,13 @@ public class AlipayMarketingCampaignTaskSignupModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOutBizNo() {
 		return this.outBizNo;

@@ -4,6 +4,8 @@
  */
 package com.alipay.api;
 
+import com.alipay.api.internal.util.AbstractHttpClient;
+
 import java.util.Map;
 
 /**
@@ -112,6 +114,21 @@ public class AlipayConfig {
      * 读取超时，单位：毫秒
      */
     private int readTimeout = 15000;
+
+    /**
+     * 连接池最大空闲连接数
+     */
+    private int maxIdleConnections = 0;
+
+    /**
+     * 存活时间，单位：毫秒
+     */
+    private long keepAliveDuration = 10000L;
+
+    /**
+     * 定制httpClient的类实例（需继承AbstractHttpClient）
+     */
+    private AbstractHttpClient customizedHttpClient;
 
     /**
      * Getter method for property <tt>serverUrl</tt>.
@@ -471,5 +488,59 @@ public class AlipayConfig {
      */
     public void setReadTimeout(int readTimeout) {
         this.readTimeout = readTimeout;
+    }
+
+    /**
+     * Getter method for property <tt>maxIdleConnections</tt>.
+     *
+     * @return property value of maxIdleConnections
+     */
+    public int getMaxIdleConnections() {
+        return maxIdleConnections;
+    }
+
+    /**
+     * Setter method for property <tt>maxIdleConnections</tt>.
+     *
+     * @param maxIdleConnections value to be assigned to property maxIdleConnections
+     */
+    public void setMaxIdleConnections(int maxIdleConnections) {
+        this.maxIdleConnections = maxIdleConnections;
+    }
+
+    /**
+     * Getter method for property <tt>keepAliveDuration</tt>.
+     *
+     * @return property value of keepAliveDuration
+     */
+    public long getKeepAliveDuration() {
+        return keepAliveDuration;
+    }
+
+    /**
+     * Setter method for property <tt>keepAliveDuration</tt>.
+     *
+     * @param keepAliveDuration value to be assigned to property keepAliveDuration
+     */
+    public void setKeepAliveDuration(long keepAliveDuration) {
+        this.keepAliveDuration = keepAliveDuration;
+    }
+
+    /**
+     * Getter method for property <tt>customizedHttpClient</tt>.
+     *
+     * @return property value of customizedHttpClient
+     */
+    public AbstractHttpClient getCustomizedHttpClient() {
+        return customizedHttpClient;
+    }
+
+    /**
+     * Setter method for property <tt>customizedHttpClient</tt>.
+     *
+     * @param customizedHttpClient value to be assigned to property customizedHttpClient
+     */
+    public void setCustomizedHttpClient(AbstractHttpClient customizedHttpClient) {
+        this.customizedHttpClient = customizedHttpClient;
     }
 }

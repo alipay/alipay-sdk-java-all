@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.formtemplate.relations.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-21 21:11:40
+ * @since 1.0, 2022-12-08 14:17:08
  */
 public class DatadigitalFincloudFinsaasFormtemplateRelationsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7131189932833115688L;
+	private static final long serialVersionUID = 2665713652789145535L;
 
 	/** 
 	 * form_template_relations + 关联关系查询 + 数据库。

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.payforprivilege.promotionplan.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-17 17:42:57
+ * @since 1.0, 2022-12-08 06:30:22
  */
 public class AlipayMerchantPayforprivilegePromotionplanCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4211662671843489778L;
+	private static final long serialVersionUID = 2253799185413418561L;
 
 	/** 
 	 * 充值方案，当前接口创建的充值方案

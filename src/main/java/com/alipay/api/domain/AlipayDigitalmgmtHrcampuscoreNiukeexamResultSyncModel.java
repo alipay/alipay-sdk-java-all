@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtHrcampuscoreNiukeexamResultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1575727515515739797L;
+	private static final long serialVersionUID = 6115549877362335319L;
 
 	/**
 	 * 牛客回调参数请求对象

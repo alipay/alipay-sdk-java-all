@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.cityservice.energy.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-03 20:36:43
+ * @since 1.0, 2022-12-07 19:41:11
  */
 public class AlipayEcoCityserviceCityserviceEnergySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2231894891623367743L;
+	private static final long serialVersionUID = 4296665847196925161L;
 
 	/** 
 	 * 发放的能量总额，单位：克

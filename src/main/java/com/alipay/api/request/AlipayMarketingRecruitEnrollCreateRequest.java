@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.recruit.enroll.create request
  * 
  * @author auto create
- * @since 1.0, 2022-09-16 11:51:52
+ * @since 1.0, 2022-12-08 04:36:47
  */
 public class AlipayMarketingRecruitEnrollCreateRequest implements AlipayRequest<AlipayMarketingRecruitEnrollCreateResponse> {
 

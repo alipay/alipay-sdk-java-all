@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.antbudget.return response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-15 19:36:45
+ * @since 1.0, 2022-12-07 23:38:38
  */
 public class AlipayBossFncAntbudgetReturnResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8411519768281898575L;
+	private static final long serialVersionUID = 2757748124692853292L;
 
 	/** 
 	 * 退回成功后的记录id

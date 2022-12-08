@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部指定买家
  *
  * @author auto create
- * @since 1.0, 2022-11-14 17:53:47
+ * @since 1.0, 2022-12-07 18:49:40
  */
 public class ExtUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4614947514227994469L;
+	private static final long serialVersionUID = 4439795416165796538L;
 
 	/**
 	 * 买家证件号。
@@ -42,6 +42,12 @@ HOKOU：户口本。如有其它类型需要支持，请与蚂蚁金服工作人
 	 */
 	@ApiField("fix_buyer")
 	private String fixBuyer;
+
+	/**
+	 * 买家加密身份信息。当指定了此参数且指定need_check_info=true时，支付宝会对买家身份进行校验，校验逻辑为买家姓名、买家证件号拼接后的字符串，以sha256算法utf-8编码计算hash，若与传入的值不匹配则会拦截本次支付。注意：如果同时指定了用户明文身份信息（name，cert_type，cert_no中任意一个），则忽略identity_hash以明文参数校验。
+	 */
+	@ApiField("identity_hash")
+	private String identityHash;
 
 	/**
 	 * 允许的最小买家年龄。
@@ -96,6 +102,13 @@ HOKOU：户口本。如有其它类型需要支持，请与蚂蚁金服工作人
 	}
 	public void setFixBuyer(String fixBuyer) {
 		this.fixBuyer = fixBuyer;
+	}
+
+	public String getIdentityHash() {
+		return this.identityHash;
+	}
+	public void setIdentityHash(String identityHash) {
+		this.identityHash = identityHash;
 	}
 
 	public String getMinAge() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.issalary.settledata.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-21 09:51:40
+ * @since 1.0, 2022-12-07 19:31:32
  */
 public class AlipayIserviceIssalarySettledataCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3482835495287668494L;
+	private static final long serialVersionUID = 4829251899573382167L;
 
 	/** 
 	 * 操作结果信息

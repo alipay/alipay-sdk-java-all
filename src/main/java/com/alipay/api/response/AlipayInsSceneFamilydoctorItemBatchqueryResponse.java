@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.familydoctor.item.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-15 15:12:17
+ * @since 1.0, 2022-12-08 13:48:32
  */
 public class AlipayInsSceneFamilydoctorItemBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3391899434874338362L;
+	private static final long serialVersionUID = 1831887667696711839L;
 
 	/** 
 	 * 药品列表

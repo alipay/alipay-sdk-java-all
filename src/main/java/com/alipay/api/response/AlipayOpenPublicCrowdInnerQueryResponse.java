@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.crowd.inner.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-01 15:29:59
+ * @since 1.0, 2022-12-08 06:52:27
  */
 public class AlipayOpenPublicCrowdInnerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4716225472557689994L;
+	private static final long serialVersionUID = 8485661628284476891L;
 
 	/** 
 	 * 人群摘要信息

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.promo.ticket.push response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-31 11:37:53
+ * @since 1.0, 2022-12-08 14:36:34
  */
 public class AlipayEcoMycarPromoTicketPushResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7567172858125269326L;
+	private static final long serialVersionUID = 1694334659496498522L;
 
 	/** 
 	 * 处理结果返回码

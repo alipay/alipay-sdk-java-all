@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.dataservice.regioninfo.query request
  * 
  * @author auto create
- * @since 1.0, 2022-10-14 10:06:56
+ * @since 1.0, 2022-12-08 14:11:38
  */
 public class AnttechBlockchainDefinDataserviceRegioninfoQueryRequest implements AlipayRequest<AnttechBlockchainDefinDataserviceRegioninfoQueryResponse> {
 

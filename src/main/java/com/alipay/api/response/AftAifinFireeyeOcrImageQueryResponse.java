@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: aft.aifin.fireeye.ocr.image.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-07 19:26:02
  */
 public class AftAifinFireeyeOcrImageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1571415234499644562L;
+	private static final long serialVersionUID = 4873889618779822183L;
 
 	/** 
 	 * 识别结果字段，这个是一个JSON字符串

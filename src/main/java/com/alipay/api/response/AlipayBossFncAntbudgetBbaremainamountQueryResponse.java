@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.antbudget.bbaremainamount.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-03 15:50:21
+ * @since 1.0, 2022-12-08 14:18:34
  */
 public class AlipayBossFncAntbudgetBbaremainamountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8383458627444818345L;
+	private static final long serialVersionUID = 4154883291593212531L;
 
 	/** 
 	 * BBA可用、剩余金额

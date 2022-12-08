@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.dataservice.violationinfo.share request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 23:21:59
+ * @since 1.0, 2022-12-08 14:34:35
  */
 public class AlipayEcoMycarDataserviceViolationinfoShareRequest implements AlipayRequest<AlipayEcoMycarDataserviceViolationinfoShareResponse> {
 

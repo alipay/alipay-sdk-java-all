@@ -91,6 +91,15 @@ public class WebUtils {
     }
 
     /**
+     * Getter method for property <tt>needCheckServerTrusted</tt>.
+     *
+     * @return property value of needCheckServerTrusted
+     */
+    public static boolean isNeedCheckServerTrusted() {
+        return needCheckServerTrusted;
+    }
+
+    /**
      * 设置KeepAlive连接超时时间，一次HTTP请求完成后，底层TCP连接将尝试尽量保持该超时时间后才关闭，以便其他HTTP请求复用TCP连接
      * <p>
      * KeepAlive连接超时时间设置为0，表示使用默认的KeepAlive连接缓存时长（目前为5s）
@@ -286,7 +295,7 @@ public class WebUtils {
         return rsp;
     }
 
-    private static byte[] getTextEntry(String fieldName, String fieldValue,
+    public static byte[] getTextEntry(String fieldName, String fieldValue,
                                        String charset) throws IOException {
         StringBuilder entry = new StringBuilder();
         entry.append("Content-Disposition:form-data;name=\"");
@@ -296,7 +305,7 @@ public class WebUtils {
         return entry.toString().getBytes(charset);
     }
 
-    private static byte[] getFileEntry(String fieldName, String fileName, String mimeType,
+    public static  byte[] getFileEntry(String fieldName, String fileName, String mimeType,
                                        String charset) throws IOException {
         StringBuilder entry = new StringBuilder();
         entry.append("Content-Disposition:form-data;name=\"");
@@ -612,7 +621,7 @@ public class WebUtils {
         return result;
     }
 
-    private static Map<String, String> getParamsFromUrl(String url) {
+    public static Map<String, String> getParamsFromUrl(String url) {
         Map<String, String> map = null;
         if (url != null && url.indexOf('?') != -1) {
             map = splitUrlQuery(url.substring(url.indexOf('?') + 1));

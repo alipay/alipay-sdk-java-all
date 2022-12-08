@@ -10,26 +10,37 @@ import com.alipay.api.response.AlipayOfflineMaterialImageUploadResponse;
 import com.alipay.api.response.AlipayOpenOperationOpenbizmockBizQueryResponse;
 import com.alipay.api.response.AlipayTradeCreateResponse;
 import org.junit.After;
-import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@RunWith(Parameterized.class)
 public class ExecuteTest {
     @Rule
     public final ExpectedException expectedException = ExpectedException.none();
     private AlipayClient alipayClient;
 
-    @Before
-    public void setUp() throws AlipayApiException {
-        alipayClient = new DefaultAlipayClient(TestAccount.Sandbox.getConfig());
+    public ExecuteTest(AlipayClient alipayClient) {
+        this.alipayClient = alipayClient;
+    }
+
+    @Parameterized.Parameters
+    public static List<AlipayClient> setUp() throws AlipayApiException {
+        List<AlipayClient> list = new ArrayList<AlipayClient>();
+        list.add(new DefaultAlipayClient(TestAccount.Sandbox.getConfig()));
+        list.add(new DefaultAlipayClient(TestAccount.Sandbox.getConfigForConnection()));
+        return list;
     }
 
     @After
@@ -146,6 +157,59 @@ public class ExecuteTest {
         sendOneNormalRequest();
 
         Thread.sleep(5000);
+        sendOneNormalRequest();
+    }
+
+    @Test
+    public void should_be_able_to_parse_xml_format_response_for_okhttp() throws AlipayApiException {
+        //given
+        AlipayConfig config = Sandbox.getConfigForConnection();
+        config.setFormat("xml");
+        alipayClient = new DefaultAlipayClient(config);
+        AlipayTradeCreateRequest request = getTradeCreateRequest();
+        //when
+        AlipayTradeCreateResponse response = alipayClient.execute(request);
+        //then
+        assertThat(response.isSuccess(), is(true));
+        assertThat(response.getCode(), is("10000"));
+    }
+
+    @Test
+    public void should_be_able_to_parse_xml_format_response_when_encrypted_for_okhttp() throws AlipayApiException {
+        //given
+        AlipayConfig config = Sandbox.getConfigForConnection();
+        config.setFormat("xml");
+        alipayClient = new DefaultAlipayClient(config);
+        AlipayTradeCreateRequest request = getTradeCreateRequest();
+        request.setNeedEncrypt(true);
+        //when
+        AlipayTradeCreateResponse response = alipayClient.execute(request);
+        //then
+        assertThat(response.isSuccess(), is(true));
+        assertThat(response.getCode(), is("10000"));
+    }
+
+    @Test
+    public void should_return_false_when_app_not_set_private_key_for_okhttp() throws AlipayApiException {
+        //given
+        //访问线上一个没有设置公私钥对的APP
+        AlipayConfig config = TestAccount.Sandbox.getConfigForConnection();
+        config.setServerUrl("https://openapi.alipay.com/gateway.do");
+        config.setAppId(TestAccount.NOT_SET_KEY_APP_ID);
+        alipayClient = new DefaultAlipayClient(config);
+        //when
+        AlipayTradeCreateResponse response = alipayClient.execute(getTradeCreateRequest());
+        //then
+        assertThat(response.isSuccess(), is(false));
+        assertThat(response.getSubMsg(), containsString("应用未配置对应签名算法的公钥或者证书"));
+    }
+
+    @Test
+    public void should_failed_when_visit_untrusted_gateway_for_okhttp() throws AlipayApiException {
+        AlipayConfig config = TestAccount.Sandbox.getConfigForConnection();
+        config.setServerUrl(TestAccount.Sandbox.UNTRUSTED_GATEWAY);
+        alipayClient = new DefaultAlipayClient(config);
+        expectedException.expectMessage("javax.net.ssl.SSLPeerUnverifiedException: Hostname 110.75.231.10 not verified:");
         sendOneNormalRequest();
     }
 

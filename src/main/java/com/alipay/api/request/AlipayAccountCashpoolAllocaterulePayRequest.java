@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.cashpool.allocaterule.pay request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 21:19:12
+ * @since 1.0, 2022-12-08 09:37:38
  */
 public class AlipayAccountCashpoolAllocaterulePayRequest implements AlipayRequest<AlipayAccountCashpoolAllocaterulePayResponse> {
 

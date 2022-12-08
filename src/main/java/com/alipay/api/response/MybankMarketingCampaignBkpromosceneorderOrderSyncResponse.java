@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.campaign.bkpromosceneorder.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-28 11:52:03
+ * @since 1.0, 2022-12-07 17:38:01
  */
 public class MybankMarketingCampaignBkpromosceneorderOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6735656636554176982L;
+	private static final long serialVersionUID = 1486596867512872911L;
 
 	/** 
 	 * 将请求参数中的request_id返回

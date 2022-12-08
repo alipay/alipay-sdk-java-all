@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.salegiftpackage.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-31 19:50:46
+ * @since 1.0, 2022-12-08 10:52:06
  */
 public class AlipayCommerceYuntaskSalegiftpackageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2343639923247868957L;
+	private static final long serialVersionUID = 5182831761294564644L;
 
 	/** 
 	 * 分页页码

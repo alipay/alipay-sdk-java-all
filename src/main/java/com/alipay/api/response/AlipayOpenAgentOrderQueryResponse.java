@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-22 10:20:34
+ * @since 1.0, 2022-12-07 15:22:02
  */
 public class AlipayOpenAgentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3251886297572362833L;
+	private static final long serialVersionUID = 4638678138758331167L;
 
 	/** 
 	 * 代理创建的应用ID，如果有代理商户创建应用，商户确认成功后，才返回应用ID，否则不返回。

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.lottery.campresult.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-01-07 19:35:53
+ * @since 1.0, 2022-12-08 13:15:12
  */
 public class AlipayOpenLotteryCampresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5427115991328212167L;
+	private static final long serialVersionUID = 8865534429326294284L;
 
 	/** 
 	 * 中奖结果名单

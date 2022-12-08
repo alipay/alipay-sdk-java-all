@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.baseorder.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-17 18:02:55
+ * @since 1.0, 2022-12-07 18:10:05
  */
 public class AlipayOpenSearchBaseorderModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8546339311999864659L;
+	private static final long serialVersionUID = 8147684837937768621L;
 
 	/** 
 	 * 工单id

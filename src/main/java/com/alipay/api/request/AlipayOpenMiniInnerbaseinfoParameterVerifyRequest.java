@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.parameter.verify request
  * 
  * @author auto create
- * @since 1.0, 2021-12-09 00:00:49
+ * @since 1.0, 2022-12-08 13:04:24
  */
 public class AlipayOpenMiniInnerbaseinfoParameterVerifyRequest implements AlipayRequest<AlipayOpenMiniInnerbaseinfoParameterVerifyResponse> {
 

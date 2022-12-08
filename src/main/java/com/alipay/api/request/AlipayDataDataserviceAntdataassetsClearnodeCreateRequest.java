@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.antdataassets.clearnode.create request
  * 
  * @author auto create
- * @since 1.0, 2019-04-30 14:25:27
+ * @since 1.0, 2022-12-08 00:22:32
  */
 public class AlipayDataDataserviceAntdataassetsClearnodeCreateRequest implements AlipayRequest<AlipayDataDataserviceAntdataassetsClearnodeCreateResponse> {
 

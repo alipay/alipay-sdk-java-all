@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.yeb.asset.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-26 17:25:15
+ * @since 1.0, 2022-12-08 14:28:58
  */
 public class AntfortuneYebAssetOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5574933956271747643L;
+	private static final long serialVersionUID = 2135699996569829564L;
 
 	/** 
 	 * 订单关闭方

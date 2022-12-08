@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loantrade.pay.sign.cancel request
  * 
  * @author auto create
- * @since 1.0, 2021-12-27 11:58:56
+ * @since 1.0, 2022-12-08 09:19:49
  */
 public class MybankCreditLoantradePaySignCancelRequest implements AlipayRequest<MybankCreditLoantradePaySignCancelResponse> {
 

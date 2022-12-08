@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.prodmode.instshortname.query request
  * 
  * @author auto create
- * @since 1.0, 2020-06-15 09:58:06
+ * @since 1.0, 2022-12-08 09:02:02
  */
 public class AlipayEbppProdmodeInstshortnameQueryRequest implements AlipayRequest<AlipayEbppProdmodeInstshortnameQueryResponse> {
 

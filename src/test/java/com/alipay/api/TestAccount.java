@@ -42,6 +42,16 @@ public class TestAccount {
         public static final String UNTRUSTED_GATEWAY = "https://110.75.231.10/gateway.do";
 
         public static AlipayConfig getConfig() {
+            return getObject();
+        }
+
+        public static AlipayConfig getConfigForConnection() {
+            AlipayConfig config = getObject();
+            config.setMaxIdleConnections(5);
+            return config;
+        }
+
+        public static AlipayConfig getObject() {
             AlipayConfig config = new AlipayConfig();
             config.setServerUrl("https://openapi.alipaydev.com/gateway.do");
             config.setAlipayPublicKey(
@@ -71,6 +81,16 @@ public class TestAccount {
 
     public static class ProdCert {
         public static AlipayConfig getConfig() {
+            return getObject();
+        }
+
+        public static AlipayConfig getConfigForConnection() {
+            AlipayConfig config = getObject();
+            config.setMaxIdleConnections(5);
+            return config;
+        }
+
+        public static AlipayConfig getObject() {
             AlipayConfig config = new AlipayConfig();
             config.setServerUrl("https://openapi.alipay.com/gateway.do");
             config.setAppId("2021003126695331");

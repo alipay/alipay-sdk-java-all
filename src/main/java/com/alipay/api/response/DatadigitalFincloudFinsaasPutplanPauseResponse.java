@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.putplan.pause response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-21 17:31:38
+ * @since 1.0, 2022-12-08 06:25:36
  */
 public class DatadigitalFincloudFinsaasPutplanPauseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5282463232957743911L;
+	private static final long serialVersionUID = 2369459772236837259L;
 
 	/** 
 	 * 描述信息

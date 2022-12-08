@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.devicemodel.add response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:46
+ * @since 1.0, 2022-12-08 03:57:01
  */
 public class AlipayOpenMiniAmpeDevicemodelAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7897945974174441596L;
+	private static final long serialVersionUID = 7522622276754469591L;
 
 	/** 
 	 * 设备机型id

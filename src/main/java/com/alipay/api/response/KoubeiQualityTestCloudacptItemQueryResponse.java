@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.quality.test.cloudacpt.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-15 11:28:23
+ * @since 1.0, 2022-12-08 14:42:58
  */
 public class KoubeiQualityTestCloudacptItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5197687921521643412L;
+	private static final long serialVersionUID = 6796219736424897766L;
 
 	/** 
 	 * 活动id

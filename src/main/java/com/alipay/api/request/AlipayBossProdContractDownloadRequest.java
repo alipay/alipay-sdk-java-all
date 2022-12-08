@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.contract.download request
  * 
  * @author auto create
- * @since 1.0, 2021-11-12 14:35:34
+ * @since 1.0, 2022-12-08 10:21:10
  */
 public class AlipayBossProdContractDownloadRequest implements AlipayRequest<AlipayBossProdContractDownloadResponse> {
 

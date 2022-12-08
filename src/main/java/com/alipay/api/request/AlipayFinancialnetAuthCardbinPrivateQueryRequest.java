@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.cardbin.private.query request
  * 
  * @author auto create
- * @since 1.0, 2022-11-03 14:35:06
+ * @since 1.0, 2022-12-08 00:06:14
  */
 public class AlipayFinancialnetAuthCardbinPrivateQueryRequest implements AlipayRequest<AlipayFinancialnetAuthCardbinPrivateQueryResponse> {
 

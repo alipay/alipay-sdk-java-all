@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员关系解绑
  *
  * @author auto create
- * @since 1.0, 2022-10-31 19:49:19
+ * @since 1.0, 2022-12-07 15:02:49
  */
 public class AlipayCommercePromoterRelationDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2866825656751671823L;
+	private static final long serialVersionUID = 2691545379677989157L;
 
 	/**
 	 * 商家id
@@ -24,6 +24,12 @@ public class AlipayCommercePromoterRelationDeleteModel extends AlipayObject {
 	 */
 	@ApiField("promoter_id")
 	private String promoterId;
+
+	/**
+	 * 导购员id
+	 */
+	@ApiField("promoter_open_id")
+	private String promoterOpenId;
 
 	/**
 	 * 店铺id
@@ -43,6 +49,13 @@ public class AlipayCommercePromoterRelationDeleteModel extends AlipayObject {
 	}
 	public void setPromoterId(String promoterId) {
 		this.promoterId = promoterId;
+	}
+
+	public String getPromoterOpenId() {
+		return this.promoterOpenId;
+	}
+	public void setPromoterOpenId(String promoterOpenId) {
+		this.promoterOpenId = promoterOpenId;
 	}
 
 	public String getShopId() {

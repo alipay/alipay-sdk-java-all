@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.instfund.withdraw.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-28 17:19:04
+ * @since 1.0, 2022-12-08 13:41:23
  */
 public class AlipayAccountInstfundWithdrawApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3814371129782847249L;
+	private static final long serialVersionUID = 2549419268122745667L;
 
 	/** 
 	 * 资金指令唯一标识

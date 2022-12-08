@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.policy.rds.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-23 14:11:39
+ * @since 1.0, 2022-12-08 13:21:41
  */
 public class AlipaySecurityRiskPolicyRdsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1357846261318849743L;
+	private static final long serialVersionUID = 5224841761166224586L;
 
 	/** 
 	 * 人机识别结果。返回HUMAN表示识别结果为人；返回ROBOT表示识别结果为机器。只有返回ROBOT时，业务才执行拦截动作，其它返回值均不做拦截。

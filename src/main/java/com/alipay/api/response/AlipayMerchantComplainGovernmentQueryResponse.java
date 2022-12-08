@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.complain.government.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-10 12:55:21
+ * @since 1.0, 2022-12-08 12:20:38
  */
 public class AlipayMerchantComplainGovernmentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8616595312447392453L;
+	private static final long serialVersionUID = 8869949897791284953L;
 
 	/** 
 	 * 授权码

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.finance.yulibao.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-02 11:20:01
+ * @since 1.0, 2022-12-07 15:45:27
  */
 public class MybankFinanceYulibaoAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4292968763443246225L;
+	private static final long serialVersionUID = 8898855655246717515L;
 
 	/** 
 	 * 可用份额，单位为元

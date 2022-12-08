@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.drawcamp.whitelist.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-23 15:41:04
+ * @since 1.0, 2022-12-08 14:33:36
  */
 public class AlipayMarketingCampaignDrawcampWhitelistCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3414571953494522289L;
+	private static final long serialVersionUID = 6748459266955983467L;
 
 	/** 
 	 * 操作结果状态，业务维度，网关返回成功状态码并且业务维度返回true才成功

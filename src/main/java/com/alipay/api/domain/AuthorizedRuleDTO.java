@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AuthorizedRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2328545228723668613L;
+	private static final long serialVersionUID = 7484778215169254885L;
 
 	/**
 	 * 授权商户列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.campaign.bkpromosceneorder.point.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-22 20:16:55
+ * @since 1.0, 2022-12-08 06:39:18
  */
 public class MybankMarketingCampaignBkpromosceneorderPointQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8196814626884536421L;
+	private static final long serialVersionUID = 8513495861155568164L;
 
 	/** 
 	 * 用户当前的可用积分

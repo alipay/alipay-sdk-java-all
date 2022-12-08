@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.qrcode.delete response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-31 19:36:46
+ * @since 1.0, 2022-12-07 15:15:19
  */
 public class MybankPaymentTradeQrcodeDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1479623366515252488L;
+	private static final long serialVersionUID = 3528611956425169967L;
 
 	/** 
 	 * true:失效成功 false:失效失败

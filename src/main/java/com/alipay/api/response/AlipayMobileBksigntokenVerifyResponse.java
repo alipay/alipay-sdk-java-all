@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.bksigntoken.verify response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-24 23:10:56
+ * @since 1.0, 2022-12-07 17:58:15
  */
 public class AlipayMobileBksigntokenVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6125353345624797963L;
+	private static final long serialVersionUID = 4585364653473139585L;
 
 	/** 
 	 * 返回值创建时间

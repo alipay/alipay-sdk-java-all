@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.store.shopcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:10:16
+ * @since 1.0, 2022-12-08 02:28:23
  */
 public class AlipayMerchantStoreShopcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1231133994527929294L;
+	private static final long serialVersionUID = 6398958635483955464L;
 
 	/** 
 	 * 申请流水ID

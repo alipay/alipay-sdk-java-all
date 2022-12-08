@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.logo.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-11-15 10:30:36
+ * @since 1.0, 2022-12-07 17:50:56
  */
 public class ZhimaMerchantLogoImageUploadRequest implements AlipayUploadRequest<ZhimaMerchantLogoImageUploadResponse> {
 

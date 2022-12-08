@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.asaingame.schedule.add response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-05 21:01:42
+ * @since 1.0, 2022-12-07 19:51:27
  */
 public class AlipayUserAsaingameScheduleAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8698913434584817561L;
+	private static final long serialVersionUID = 2251942226957485541L;
 
 	/** 
 	 * 业务错误码

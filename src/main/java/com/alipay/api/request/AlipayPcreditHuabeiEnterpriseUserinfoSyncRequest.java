@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.enterprise.userinfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-12-09 00:43:07
+ * @since 1.0, 2022-12-07 23:59:22
  */
 public class AlipayPcreditHuabeiEnterpriseUserinfoSyncRequest implements AlipayRequest<AlipayPcreditHuabeiEnterpriseUserinfoSyncResponse> {
 

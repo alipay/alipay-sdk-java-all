@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.sign.status.query request
  * 
  * @author auto create
- * @since 1.0, 2021-12-29 14:38:14
+ * @since 1.0, 2022-12-08 11:47:53
  */
 public class AlipayFincoreComplianceSignStatusQueryRequest implements AlipayRequest<AlipayFincoreComplianceSignStatusQueryResponse> {
 

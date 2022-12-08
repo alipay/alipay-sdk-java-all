@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.pe.industry.trade.refund request
  * 
  * @author auto create
- * @since 1.0, 2022-11-09 16:34:01
+ * @since 1.0, 2022-12-08 02:25:42
  */
 public class ZhimaCreditPeIndustryTradeRefundRequest implements AlipayRequest<ZhimaCreditPeIndustryTradeRefundResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.safebox.record.save request
  * 
  * @author auto create
- * @since 1.0, 2022-10-31 10:31:49
+ * @since 1.0, 2022-12-07 23:46:38
  */
 public class AlipayUserSafeboxRecordSaveRequest implements AlipayRequest<AlipayUserSafeboxRecordSaveResponse> {
 

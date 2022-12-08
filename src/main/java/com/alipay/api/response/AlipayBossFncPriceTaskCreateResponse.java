@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.price.task.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-08 20:05:01
+ * @since 1.0, 2022-12-08 12:13:19
  */
 public class AlipayBossFncPriceTaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4643823147434853741L;
+	private static final long serialVersionUID = 4279283591897643251L;
 
 	/** 
 	 * 结果码

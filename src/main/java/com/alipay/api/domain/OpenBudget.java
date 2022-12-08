@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开放平台预算信息
  *
  * @author auto create
- * @since 1.0, 2022-12-02 15:55:11
+ * @since 1.0, 2022-12-08 16:55:18
  */
 public class OpenBudget extends AlipayObject {
 
-	private static final long serialVersionUID = 6222419956973442618L;
+	private static final long serialVersionUID = 5749966926814589161L;
 
 	/**
 	 * 警告接收人

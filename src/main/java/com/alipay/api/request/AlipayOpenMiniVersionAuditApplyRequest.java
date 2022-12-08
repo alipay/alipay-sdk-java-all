@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-12-02 15:41:35
+ * @since 1.0, 2022-12-07 10:56:38
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -67,13 +67,13 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	* 审核类型：
 NONE： 不拆分准入、营销（默认）
 BASE_PROMOTE：准入、营销拆分审核
-建议设置成“BASE_PROMOTE”，小程序将会更容易上架（但会限制模糊搜索、一些公域投放等）
+建议设置成“BASE_PROMOTE”，小程序将会更容易上架。将小程序发布审核拆分成“准入”、“营销”。原先小程序需要两个环节都审核通过才能上架，现在小程序只需要准入通过即可上架，但是无法在营销场景（支付宝泛搜、支付宝首页推荐等）展现给用户，小程序可通过精搜或者扫码等方式使用。如果小程序需要进行营销，可发布新版本，当准入&营销都通过后，小程序也可被营销。点击查看支付宝小程序营销规范：https://opendocs.alipay.com/b/03al2q
 	 */
 	private String auditRule;
 
 	/** 
 	* 审核通过后是否自动上架，
-自动上架：true；不自动上架（默认）：false
+自动上架：true；不自动上架（默认）：false。
 如果小程序上架前无需特殊处理，建议设置成true，平台将会在小程序审核通过时自动将其上架
 	 */
 	private String autoOnline;
@@ -219,7 +219,7 @@ LOCATION-指定区域
 	private List<RegionInfo> serviceRegionInfo;
 
 	/** 
-	* 如果有绿通权益，是否使用绿通权益加速审核：
+	* 如果有审核加急权益，是否使用审核加急权益加速审核：
 加速（默认）：true
 不加速：false
 	 */

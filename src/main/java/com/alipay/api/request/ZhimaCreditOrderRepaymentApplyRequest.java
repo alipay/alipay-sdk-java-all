@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.order.repayment.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-11-16 22:01:33
+ * @since 1.0, 2022-12-07 18:16:38
  */
 public class ZhimaCreditOrderRepaymentApplyRequest implements AlipayRequest<ZhimaCreditOrderRepaymentApplyResponse> {
 

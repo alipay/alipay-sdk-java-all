@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.mapplyorder.query request
  * 
  * @author auto create
- * @since 1.0, 2021-04-19 16:57:00
+ * @since 1.0, 2022-12-07 19:04:53
  */
 public class AntMerchantExpandMapplyorderQueryRequest implements AlipayRequest<AntMerchantExpandMapplyorderQueryResponse> {
 

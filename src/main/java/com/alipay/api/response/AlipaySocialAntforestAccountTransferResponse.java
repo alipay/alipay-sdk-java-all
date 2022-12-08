@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.account.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-13 23:01:50
+ * @since 1.0, 2022-12-08 07:51:39
  */
 public class AlipaySocialAntforestAccountTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7798436944577789823L;
+	private static final long serialVersionUID = 8585372131188489338L;
 
 	/** 
 	 * 业务完成的时间，即单据的流水号生成时间，业务方可与transfer_id一同存储，后续账账核对的时候可以用于解决跨天问题

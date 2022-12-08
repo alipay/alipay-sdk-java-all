@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.roomstate.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-07 10:52:30
+ * @since 1.0, 2022-12-08 09:36:26
  */
 public class AlipayOpenIotmbsRoomstateSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7261635893875117747L;
+	private static final long serialVersionUID = 6182686397298137435L;
 
 	/** 
 	 * 成功true失败false

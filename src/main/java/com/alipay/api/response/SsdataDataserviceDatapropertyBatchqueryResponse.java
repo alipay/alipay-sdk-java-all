@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.dataproperty.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-12 20:00:42
+ * @since 1.0, 2022-12-08 02:13:43
  */
 public class SsdataDataserviceDatapropertyBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4747267121524522157L;
+	private static final long serialVersionUID = 4134159435354733615L;
 
 	/** 
 	 * 服务端处理响应id

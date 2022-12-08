@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单同步时订单交易信息的数据，包括交易单号、交易金额、收款人、付款人信息、交易类型等。
  *
  * @author auto create
- * @since 1.0, 2022-03-02 14:33:56
+ * @since 1.0, 2022-12-06 14:33:33
  */
 public class VenueOrderTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8685314722642437777L;
+	private static final long serialVersionUID = 4312453396133593754L;
 
 	/**
 	 * 金额(单位：元)，保留两位小数。支付时为订单金额、退款时为交易退款金额
@@ -32,6 +32,12 @@ public class VenueOrderTradeInfo extends AlipayObject {
 	 */
 	@ApiField("id")
 	private String id;
+
+	/**
+	 * 买家支付宝OPENID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 该交易操作发起的时间
@@ -88,6 +94,13 @@ public class VenueOrderTradeInfo extends AlipayObject {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Date getOperationTime() {

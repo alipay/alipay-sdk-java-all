@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.lottery.camp.certify request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:52:05
+ * @since 1.0, 2022-12-08 04:14:23
  */
 public class AlipayOpenLotteryCampCertifyRequest implements AlipayRequest<AlipayOpenLotteryCampCertifyResponse> {
 

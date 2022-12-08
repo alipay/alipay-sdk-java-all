@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.sound.set request
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 11:05:48
+ * @since 1.0, 2022-12-08 04:58:47
  */
 public class AlipayDataSoundSetRequest implements AlipayRequest<AlipayDataSoundSetResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.version.audit.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-04 22:46:37
+ * @since 1.0, 2022-12-06 17:36:42
  */
 public class AlipayOpenMiniVersionAuditCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3878623849964356382L;
+	private static final long serialVersionUID = 6288176959283847851L;
 
 	
 

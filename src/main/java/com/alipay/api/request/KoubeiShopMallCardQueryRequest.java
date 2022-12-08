@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.shop.mall.card.query request
  * 
  * @author auto create
- * @since 1.0, 2022-06-02 11:13:33
+ * @since 1.0, 2022-12-08 00:06:50
  */
 public class KoubeiShopMallCardQueryRequest implements AlipayRequest<KoubeiShopMallCardQueryResponse> {
 

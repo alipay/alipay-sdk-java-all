@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.function.query request
  * 
  * @author auto create
- * @since 1.0, 2022-11-09 11:17:15
+ * @since 1.0, 2022-12-07 14:55:36
  */
 public class AlipayIserviceCcmFunctionQueryRequest implements AlipayRequest<AlipayIserviceCcmFunctionQueryResponse> {
 

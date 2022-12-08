@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: huanxu.trade.accountservice.card.certify request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 22:12:36
+ * @since 1.0, 2022-12-08 01:55:19
  */
 public class HuanxuTradeAccountserviceCardCertifyRequest implements AlipayRequest<HuanxuTradeAccountserviceCardCertifyResponse> {
 

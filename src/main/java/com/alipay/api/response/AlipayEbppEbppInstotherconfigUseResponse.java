@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.ebpp.instotherconfig.use response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-20 17:26:46
+ * @since 1.0, 2022-12-07 17:51:51
  */
 public class AlipayEbppEbppInstotherconfigUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1782888962371861832L;
+	private static final long serialVersionUID = 7497289365329418916L;
 
 	/** 
 	 * 当前页面

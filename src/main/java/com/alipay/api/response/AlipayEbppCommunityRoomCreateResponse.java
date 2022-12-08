@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.room.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-09 14:30:07
+ * @since 1.0, 2022-12-07 20:52:05
  */
 public class AlipayEbppCommunityRoomCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3342145574339233491L;
+	private static final long serialVersionUID = 5171328583566496952L;
 
 	/** 
 	 * 在支付宝app中，该房间的跳转地址

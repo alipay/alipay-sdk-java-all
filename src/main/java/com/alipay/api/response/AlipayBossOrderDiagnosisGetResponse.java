@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.order.diagnosis.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-16 15:20:01
+ * @since 1.0, 2022-12-08 04:11:23
  */
 public class AlipayBossOrderDiagnosisGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6792263416399141566L;
+	private static final long serialVersionUID = 3177462454287867159L;
 
 	/** 
 	 * 诊断模型

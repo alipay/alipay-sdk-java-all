@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 兑换券核销接口
  *
  * @author auto create
- * @since 1.0, 2022-12-02 23:33:47
+ * @since 1.0, 2022-12-05 20:37:31
  */
 public class AlipayMarketingExchangevoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5394751581433583535L;
+	private static final long serialVersionUID = 2791241798625321558L;
 
 	/**
 	 * 支付宝用户ID(映射的openId) ，必须保证待使用的券ID归属于该支付宝用户ID

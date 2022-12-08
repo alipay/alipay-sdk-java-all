@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 进件设备交易订单完结
  *
  * @author auto create
- * @since 1.0, 2021-08-24 20:32:28
+ * @since 1.0, 2022-12-07 10:43:29
  */
 public class AlipayCommerceOperationTerminalPowerbankorderFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3368562448829327139L;
+	private static final long serialVersionUID = 5461253849433657723L;
 
 	/**
 	 * 完结订单时在哪个设备

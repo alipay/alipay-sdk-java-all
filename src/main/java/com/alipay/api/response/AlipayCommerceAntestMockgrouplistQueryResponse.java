@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.antest.mockgrouplist.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-04-21 15:50:09
+ * @since 1.0, 2022-12-08 04:43:55
  */
 public class AlipayCommerceAntestMockgrouplistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1131457424963687641L;
+	private static final long serialVersionUID = 2629964187319434429L;
 
 	/** 
 	 * 挡板集列表

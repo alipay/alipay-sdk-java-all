@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbank.banktradeinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-27 10:10:29
+ * @since 1.0, 2022-12-07 19:25:06
  */
 public class AlipayUserDtbankBanktradeinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3666144597988358174L;
+	private static final long serialVersionUID = 3233871275244161555L;
 
 	/** 
 	 * 卡类型

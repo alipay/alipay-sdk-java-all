@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.voice.paystatus.send response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 21:47:52
+ * @since 1.0, 2022-12-07 20:31:49
  */
 public class AlipayCommerceIotVoicePaystatusSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3765531393721754878L;
+	private static final long serialVersionUID = 7382217858532792145L;
 
 	
 

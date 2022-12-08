@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.setintentiondata.set response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-09 00:18:21
+ * @since 1.0, 2022-12-07 23:39:47
  */
 public class AlipayOpenMiniSetintentiondataSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8592874859384916124L;
+	private static final long serialVersionUID = 2423454779429988792L;
 
 	
 

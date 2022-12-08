@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 因公付设置额度规则
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:11:48
+ * @since 1.0, 2022-12-06 22:06:49
  */
 public class AlipayFundEnterprisepayQuotaruleSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7715675848859547275L;
+	private static final long serialVersionUID = 8868459344686664494L;
 
 	/**
 	 * 企业签约账户ID
@@ -41,9 +41,7 @@ public class AlipayFundEnterprisepayQuotaruleSetModel extends AlipayObject {
 	private String memberId;
 
 	/**
-	 * 操作类型：
-ACCOUNT-账户（支持单笔，月）
-MEMBER-成员（支持单笔，日，月，年，终身累计，自定义周期）
+	 * 操作类型： ACCOUNT-账户（支持单笔，月） MEMBER-成员（支持单笔，日，月，季度，年，终身累计，自定义周期，一次性额度）
 	 */
 	@ApiField("operation_type")
 	private String operationType;

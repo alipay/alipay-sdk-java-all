@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.deviceinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-13 19:52:10
+ * @since 1.0, 2022-12-08 04:07:11
  */
 public class AlipaySecurityProdDeviceinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2266541982181821656L;
+	private static final long serialVersionUID = 7297464333156913237L;
 
 	/** 
 	 * device_info，查询返回的设备数据字段JSON字符串

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antiep.scene.send request
  * 
  * @author auto create
- * @since 1.0, 2020-02-27 09:40:05
+ * @since 1.0, 2022-12-08 12:01:48
  */
 public class AlipaySocialAntiepSceneSendRequest implements AlipayRequest<AlipaySocialAntiepSceneSendResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.ai.cv.ua.async.query request
  * 
  * @author auto create
- * @since 1.0, 2022-08-03 18:36:41
+ * @since 1.0, 2022-12-08 08:07:52
  */
 public class AnttechAiCvUaAsyncQueryRequest implements AlipayRequest<AnttechAiCvUaAsyncQueryResponse> {
 

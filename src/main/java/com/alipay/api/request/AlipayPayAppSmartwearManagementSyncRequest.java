@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.smartwear.management.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-07-27 10:41:42
+ * @since 1.0, 2022-12-07 18:10:35
  */
 public class AlipayPayAppSmartwearManagementSyncRequest implements AlipayRequest<AlipayPayAppSmartwearManagementSyncResponse> {
 

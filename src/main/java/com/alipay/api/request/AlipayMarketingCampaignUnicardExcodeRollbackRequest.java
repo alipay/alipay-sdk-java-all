@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.unicard.excode.rollback request
  * 
  * @author auto create
- * @since 1.0, 2022-07-23 11:31:41
+ * @since 1.0, 2022-12-07 16:33:59
  */
 public class AlipayMarketingCampaignUnicardExcodeRollbackRequest implements AlipayRequest<AlipayMarketingCampaignUnicardExcodeRollbackResponse> {
 

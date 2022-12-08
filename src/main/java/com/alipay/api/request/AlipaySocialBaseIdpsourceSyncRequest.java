@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.idpsource.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 21:49:43
+ * @since 1.0, 2022-12-08 03:37:21
  */
 public class AlipaySocialBaseIdpsourceSyncRequest implements AlipayRequest<AlipaySocialBaseIdpsourceSyncResponse> {
 

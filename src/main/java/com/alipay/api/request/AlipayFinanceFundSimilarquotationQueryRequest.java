@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.fund.similarquotation.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 06:30:01
  */
 public class AlipayFinanceFundSimilarquotationQueryRequest implements AlipayRequest<AlipayFinanceFundSimilarquotationQueryResponse> {
 

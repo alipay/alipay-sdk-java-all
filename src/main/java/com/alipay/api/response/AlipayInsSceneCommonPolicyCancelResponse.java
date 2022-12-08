@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.common.policy.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-24 16:21:37
+ * @since 1.0, 2022-12-07 19:21:42
  */
 public class AlipayInsSceneCommonPolicyCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2558987138351351725L;
+	private static final long serialVersionUID = 2744271567983628625L;
 
 	/** 
 	 * 批单号

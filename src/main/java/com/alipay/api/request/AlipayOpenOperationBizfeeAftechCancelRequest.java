@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.bizfee.aftech.cancel request
  * 
  * @author auto create
- * @since 1.0, 2019-07-08 20:45:01
+ * @since 1.0, 2022-12-08 12:44:11
  */
 public class AlipayOpenOperationBizfeeAftechCancelRequest implements AlipayRequest<AlipayOpenOperationBizfeeAftechCancelResponse> {
 

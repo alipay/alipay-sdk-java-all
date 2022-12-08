@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.mrchsurplmorder.point.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-19 18:46:41
+ * @since 1.0, 2022-12-07 19:12:16
  */
 public class AlipayMerchantMrchsurplmorderPointQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6659166661699494752L;
+	private static final long serialVersionUID = 8377816417894437527L;
 
 	/** 
 	 * 用户当前的可用积分

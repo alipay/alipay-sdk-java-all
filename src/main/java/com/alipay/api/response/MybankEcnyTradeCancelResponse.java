@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.ecny.trade.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-14 17:10:10
+ * @since 1.0, 2022-12-08 13:07:30
  */
 public class MybankEcnyTradeCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7648842342742377619L;
+	private static final long serialVersionUID = 3456123138917255431L;
 
 	/** 
 	 * 本次撤销触发的交易动作,接口调用成功且交易存在时返回。可能的返回值：

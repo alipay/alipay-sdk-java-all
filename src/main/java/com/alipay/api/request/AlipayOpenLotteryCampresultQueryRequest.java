@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.lottery.campresult.query request
  * 
  * @author auto create
- * @since 1.0, 2020-01-07 19:35:53
+ * @since 1.0, 2022-12-08 13:15:12
  */
 public class AlipayOpenLotteryCampresultQueryRequest implements AlipayRequest<AlipayOpenLotteryCampresultQueryResponse> {
 

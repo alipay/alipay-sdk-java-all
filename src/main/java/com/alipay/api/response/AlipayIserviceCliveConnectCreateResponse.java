@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.clive.connect.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-27 15:17:47
+ * @since 1.0, 2022-12-07 19:59:55
  */
 public class AlipayIserviceCliveConnectCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1326828166288474123L;
+	private static final long serialVersionUID = 7316163556519928611L;
 
 	/** 
 	 * 响应

@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.mall.discount.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-02 11:08:11
+ * @since 1.0, 2022-12-08 13:56:12
  */
 public class KoubeiMarketingDataMallDiscountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3359314833735848976L;
+	private static final long serialVersionUID = 1834365558122578892L;
 
 	/** 
 	 * 集卡信息列表（最多50条）

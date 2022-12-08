@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.activity.taskequity.receive request
  * 
  * @author auto create
- * @since 1.0, 2022-11-14 10:17:34
+ * @since 1.0, 2022-12-08 02:16:51
  */
 public class AlipayOpenMiniActivityTaskequityReceiveRequest implements AlipayRequest<AlipayOpenMiniActivityTaskequityReceiveResponse> {
 

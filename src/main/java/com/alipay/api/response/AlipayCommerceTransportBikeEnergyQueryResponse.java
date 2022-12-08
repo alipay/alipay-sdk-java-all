@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.bike.energy.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-29 15:41:43
+ * @since 1.0, 2022-12-08 11:46:38
  */
 public class AlipayCommerceTransportBikeEnergyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2676278885611596294L;
+	private static final long serialVersionUID = 3157657747679279317L;
 
 	/** 
 	 * 用户是否开启能量开关

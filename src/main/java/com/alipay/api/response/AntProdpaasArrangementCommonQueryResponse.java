@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.prodpaas.arrangement.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 14:14:09
  */
 public class AntProdpaasArrangementCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2811534644556137638L;
+	private static final long serialVersionUID = 7712819674589545716L;
 
 	/** 
 	 * 合约信息标准VO，一条合约一个记录

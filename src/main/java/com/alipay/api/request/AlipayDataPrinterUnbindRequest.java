@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.printer.unbind request
  * 
  * @author auto create
- * @since 1.0, 2019-10-18 11:07:16
+ * @since 1.0, 2022-12-08 03:44:06
  */
 public class AlipayDataPrinterUnbindRequest implements AlipayRequest<AlipayDataPrinterUnbindResponse> {
 

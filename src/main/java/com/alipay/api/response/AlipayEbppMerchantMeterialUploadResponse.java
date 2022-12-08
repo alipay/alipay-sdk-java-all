@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.merchant.meterial.upload response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-09 14:34:37
+ * @since 1.0, 2022-12-08 14:22:45
  */
 public class AlipayEbppMerchantMeterialUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1828184579997597424L;
+	private static final long serialVersionUID = 3571691276357182784L;
 
 	/** 
 	 * 文件对应的MD5值, 用于文件完整性校验

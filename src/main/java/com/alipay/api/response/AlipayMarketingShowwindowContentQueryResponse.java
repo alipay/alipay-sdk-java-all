@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.showwindow.content.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-05 00:38:20
+ * @since 1.0, 2022-12-08 08:48:54
  */
 public class AlipayMarketingShowwindowContentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8177897383427579991L;
+	private static final long serialVersionUID = 4183249692367316587L;
 
 	/** 
 	 * 每个设备的节目投放状态

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.wf.settlementnotice.query request
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:16:58
+ * @since 1.0, 2022-12-08 09:08:20
  */
 public class MybankCreditSupplychainWfSettlementnoticeQueryRequest implements AlipayRequest<MybankCreditSupplychainWfSettlementnoticeQueryResponse> {
 

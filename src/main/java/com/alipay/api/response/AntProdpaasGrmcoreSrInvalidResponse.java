@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.prodpaas.grmcore.sr.invalid response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-21 22:26:38
+ * @since 1.0, 2022-12-08 12:19:58
  */
 public class AntProdpaasGrmcoreSrInvalidResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8153559312444963153L;
+	private static final long serialVersionUID = 8245558136896375287L;
 
 	/** 
 	 * 是否同意维护或作废

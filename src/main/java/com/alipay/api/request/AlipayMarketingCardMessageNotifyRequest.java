@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.card.message.notify request
  * 
  * @author auto create
- * @since 1.0, 2022-11-24 11:31:37
+ * @since 1.0, 2022-12-06 16:06:57
  */
 public class AlipayMarketingCardMessageNotifyRequest implements AlipayRequest<AlipayMarketingCardMessageNotifyResponse> {
 

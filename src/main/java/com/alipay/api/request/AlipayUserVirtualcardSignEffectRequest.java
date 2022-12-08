@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.virtualcard.sign.effect request
  * 
  * @author auto create
- * @since 1.0, 2022-11-12 21:11:47
+ * @since 1.0, 2022-12-08 02:26:52
  */
 public class AlipayUserVirtualcardSignEffectRequest implements AlipayRequest<AlipayUserVirtualcardSignEffectResponse> {
 

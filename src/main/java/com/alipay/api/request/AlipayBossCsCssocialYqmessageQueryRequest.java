@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.cs.cssocial.yqmessage.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 11:13:06
  */
 public class AlipayBossCsCssocialYqmessageQueryRequest implements AlipayRequest<AlipayBossCsCssocialYqmessageQueryResponse> {
 

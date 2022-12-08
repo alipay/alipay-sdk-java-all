@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.mrchsurplmitem.cannotsell.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-19 19:56:40
+ * @since 1.0, 2022-12-07 15:55:26
  */
 public class AlipayMerchantMrchsurplmitemCannotsellSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7551526354639326596L;
+	private static final long serialVersionUID = 1797183857558576994L;
 
 	/** 
 	 * 将请求中的ID直接返回

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.itap.user.certify request
  * 
  * @author auto create
- * @since 1.0, 2022-09-23 11:42:15
+ * @since 1.0, 2022-12-08 14:35:59
  */
 public class AlipayMsaasItapUserCertifyRequest implements AlipayRequest<AlipayMsaasItapUserCertifyResponse> {
 

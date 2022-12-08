@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.charity.withhold.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-24 15:41:49
+ * @since 1.0, 2022-12-08 01:11:39
  */
 public class AlipayUserCharityWithholdQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6568493716585678245L;
+	private static final long serialVersionUID = 5175134558549133361L;
 
 	/** 
 	 * 代扣结果 WITHHOLD_INPROCESS 代扣中 WITHHOLD_SUCCESS 代扣成功 WITHHOLD_FAIL 代扣失败

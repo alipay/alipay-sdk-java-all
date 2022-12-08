@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.poi.powerbanklocation.query request
  * 
  * @author auto create
- * @since 1.0, 2021-06-11 16:37:37
+ * @since 1.0, 2022-12-07 10:44:33
  */
 public class AlipayCommercePoiPowerbanklocationQueryRequest implements AlipayRequest<AlipayCommercePoiPowerbanklocationQueryResponse> {
 

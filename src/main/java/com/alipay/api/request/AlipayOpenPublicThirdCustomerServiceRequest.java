@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.third.customer.service request
  * 
  * @author auto create
- * @since 1.0, 2022-08-05 19:30:26
+ * @since 1.0, 2022-12-07 15:47:30
  */
 public class AlipayOpenPublicThirdCustomerServiceRequest implements AlipayRequest<AlipayOpenPublicThirdCustomerServiceResponse> {
 

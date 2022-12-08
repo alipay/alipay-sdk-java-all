@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.msg.ding.send request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:05:53
+ * @since 1.0, 2022-12-08 02:58:55
  */
 public class AlipayOpenAppMsgDingSendRequest implements AlipayRequest<AlipayOpenAppMsgDingSendResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.auth.secondparty.token.verify request
  * 
  * @author auto create
- * @since 1.0, 2020-08-24 17:22:44
+ * @since 1.0, 2022-12-08 03:31:10
  */
 public class AlipayUserAuthSecondpartyTokenVerifyRequest implements AlipayRequest<AlipayUserAuthSecondpartyTokenVerifyResponse> {
 

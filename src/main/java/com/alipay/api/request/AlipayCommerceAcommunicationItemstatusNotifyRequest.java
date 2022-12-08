@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.itemstatus.notify request
  * 
  * @author auto create
- * @since 1.0, 2022-06-20 21:21:45
+ * @since 1.0, 2022-12-07 23:23:31
  */
 public class AlipayCommerceAcommunicationItemstatusNotifyRequest implements AlipayRequest<AlipayCommerceAcommunicationItemstatusNotifyResponse> {
 

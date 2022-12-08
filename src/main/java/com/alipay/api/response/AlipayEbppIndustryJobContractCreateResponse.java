@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.contract.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-16 14:56:35
+ * @since 1.0, 2022-12-08 00:06:59
  */
 public class AlipayEbppIndustryJobContractCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3482648621763849649L;
+	private static final long serialVersionUID = 7739823113267492914L;
 
 	/** 
 	 * 电子合同签署信息返回结果，如果是自动签署场景下无返回内容，可通过查询接口(alipay.ebpp.industry.job.contract.query) 获取签署内容

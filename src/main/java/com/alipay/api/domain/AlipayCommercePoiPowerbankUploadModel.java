@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电宝点位上传
  *
  * @author auto create
- * @since 1.0, 2021-07-16 19:12:40
+ * @since 1.0, 2022-12-07 10:43:11
  */
 public class AlipayCommercePoiPowerbankUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8222314767666556835L;
+	private static final long serialVersionUID = 2842391578791782568L;
 
 	/**
 	 * 地址描述

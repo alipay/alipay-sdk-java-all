@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.base.process.task.take response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-25 14:06:48
+ * @since 1.0, 2022-12-08 14:04:11
  */
 public class AlipayBossBaseProcessTaskTakeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2759199456742957757L;
+	private static final long serialVersionUID = 1833387151977323783L;
 
 	
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.parking.goods.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-19 11:56:21
+ * @since 1.0, 2022-12-08 13:37:58
  */
 public class AlipayCommerceTransportParkingGoodsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4566128398237724722L;
+	private static final long serialVersionUID = 6661478711593453296L;
 
 	/** 
 	 * 商品列表

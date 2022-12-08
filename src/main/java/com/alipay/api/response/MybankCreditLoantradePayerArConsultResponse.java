@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.payer.ar.consult response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-10 17:23:54
+ * @since 1.0, 2022-12-07 17:51:13
  */
 public class MybankCreditLoantradePayerArConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4879582796864784592L;
+	private static final long serialVersionUID = 8641698622914743847L;
 
 	/** 
 	 * 是否准入

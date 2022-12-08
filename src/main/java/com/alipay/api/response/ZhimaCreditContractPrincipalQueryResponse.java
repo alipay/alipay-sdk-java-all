@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.contract.principal.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-30 14:34:55
+ * @since 1.0, 2022-12-07 18:04:27
  */
 public class ZhimaCreditContractPrincipalQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4625292143651961917L;
+	private static final long serialVersionUID = 1357335945189642511L;
 
 	/** 
 	 * 是否需要授权。仅当mode=1时需要进行处理，此时用户需要手动在手机上完成授权操作，商户可在机具上给出相关提示，如：请在手机上确认。

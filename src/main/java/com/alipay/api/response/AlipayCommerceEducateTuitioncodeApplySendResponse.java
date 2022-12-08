@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.tuitioncode.apply.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-18 16:06:41
+ * @since 1.0, 2022-12-07 18:59:28
  */
 public class AlipayCommerceEducateTuitioncodeApplySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3522739665171383167L;
+	private static final long serialVersionUID = 4686467552193211144L;
 
 	/** 
 	 * 申请id

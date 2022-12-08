@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建AA收款、江湖救急、活动收款等，调用此接口获取收款详情
  *
  * @author auto create
- * @since 1.0, 2017-02-13 17:29:50
+ * @since 1.0, 2022-12-06 16:51:31
  */
 public class AlipayFundTransBatchQuerybatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4688835823795346176L;
+	private static final long serialVersionUID = 1523286493214333236L;
 
 	/**
 	 * 批次编号，创建批次时返回的批次编号

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.order.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-19 16:53:57
+ * @since 1.0, 2022-12-06 18:44:46
  */
 public class AlipayFundAuthOrderUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1272854544326756972L;
+	private static final long serialVersionUID = 4894816542992311274L;
 
 	/** 
 	 * 本次操作解冻的金额，单位为：元（人民币），精确到小数点后两位，取值范围：[0.01,100000000.00]

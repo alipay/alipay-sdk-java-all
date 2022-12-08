@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分享代付申请
  *
  * @author auto create
- * @since 1.0, 2022-09-22 15:13:59
+ * @since 1.0, 2022-12-08 14:47:04
  */
 public class AlipayPayPaysharingprodSharepeerpayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8763224935651657952L;
+	private static final long serialVersionUID = 1448195728787482193L;
 
 	/**
 	 * 支付宝userId，表示代付订单申请人

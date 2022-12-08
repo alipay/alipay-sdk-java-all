@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.service.coupon.verify response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 07:11:56
  */
 public class AlipayInsAutoServiceCouponVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6711231793763848141L;
+	private static final long serialVersionUID = 1282678481185479855L;
 
 	/** 
 	 * 核销同步结果，返回成功或失败。

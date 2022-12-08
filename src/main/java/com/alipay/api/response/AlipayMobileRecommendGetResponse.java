@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.recommend.get response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:14
+ * @since 1.0, 2022-12-07 17:01:19
  */
 public class AlipayMobileRecommendGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4355824963672729773L;
+	private static final long serialVersionUID = 7643143933975778237L;
 
 	/** 
 	 * 推荐结果的扩展信息

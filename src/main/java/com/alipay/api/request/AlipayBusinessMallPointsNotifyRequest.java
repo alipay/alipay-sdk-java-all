@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.business.mall.points.notify request
  * 
  * @author auto create
- * @since 1.0, 2022-11-03 10:56:32
+ * @since 1.0, 2022-12-08 11:56:40
  */
 public class AlipayBusinessMallPointsNotifyRequest implements AlipayRequest<AlipayBusinessMallPointsNotifyResponse> {
 

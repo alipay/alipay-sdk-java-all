@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保证金委托代扣案件终止
  *
  * @author auto create
- * @since 1.0, 2021-10-12 14:32:03
+ * @since 1.0, 2022-12-06 10:22:16
  */
 public class AlipayFundBailCollectionFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1552789269987113256L;
+	private static final long serialVersionUID = 7129754959285594347L;
 
 	/**
 	 * 代扣协议号，对应唯一的保证金代扣协议及保证金资金池

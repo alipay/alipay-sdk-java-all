@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.codec.acode.decode.use response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:44:09
+ * @since 1.0, 2022-12-08 13:16:55
  */
 public class AlipayPayCodecAcodeDecodeUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2276182884635377982L;
+	private static final long serialVersionUID = 1744227428685898535L;
 
 	/** 
 	 * 业务身份标识符

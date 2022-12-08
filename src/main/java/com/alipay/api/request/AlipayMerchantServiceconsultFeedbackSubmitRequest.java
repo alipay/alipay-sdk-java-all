@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.serviceconsult.feedback.submit request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:25:53
+ * @since 1.0, 2022-12-07 18:54:53
  */
 public class AlipayMerchantServiceconsultFeedbackSubmitRequest implements AlipayRequest<AlipayMerchantServiceconsultFeedbackSubmitResponse> {
 

@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.membercard.config.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-10 14:02:28
+ * @since 1.0, 2022-12-07 15:48:57
  */
 public class AntMerchantExpandMembercardConfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2537676684635997157L;
+	private static final long serialVersionUID = 6787236713984948349L;
 
 	/** 
 	 * 安心充会员卡面的详细信息

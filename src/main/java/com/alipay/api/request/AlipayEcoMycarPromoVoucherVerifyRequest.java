@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.promo.voucher.verify request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 22:53:46
+ * @since 1.0, 2022-12-07 16:16:15
  */
 public class AlipayEcoMycarPromoVoucherVerifyRequest implements AlipayRequest<AlipayEcoMycarPromoVoucherVerifyResponse> {
 

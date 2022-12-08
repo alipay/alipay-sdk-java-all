@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保证金协议升级
  *
  * @author auto create
- * @since 1.0, 2022-01-19 10:11:59
+ * @since 1.0, 2022-12-06 10:24:58
  */
 public class AlipayFundBailAgreementUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7659169152832892549L;
+	private static final long serialVersionUID = 7688917755859621769L;
 
 	/**
 	 * 待升级保证金协议号

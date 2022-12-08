@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.service.sign response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:23
+ * @since 1.0, 2022-12-08 12:27:15
  */
 public class AlipayTradeServiceSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5236541187222754618L;
+	private static final long serialVersionUID = 6327348957927143885L;
 
 	/** 
 	 * 无限付产品的转入卡信息，服务类型为LARGE_INFINITE时返回。

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.collectright.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-25 11:11:34
+ * @since 1.0, 2022-12-08 14:03:52
  */
 public class AlipayOpenMiniAmpeCollectrightQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2218869748635252851L;
+	private static final long serialVersionUID = 5676833458845652527L;
 
 	/** 
 	 * true为有上报权限

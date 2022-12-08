@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.family.share.zmgo.initialize request
  * 
  * @author auto create
- * @since 1.0, 2021-01-20 11:01:21
+ * @since 1.0, 2022-12-07 19:19:40
  */
 public class AlipayUserFamilyShareZmgoInitializeRequest implements AlipayRequest<AlipayUserFamilyShareZmgoInitializeResponse> {
 

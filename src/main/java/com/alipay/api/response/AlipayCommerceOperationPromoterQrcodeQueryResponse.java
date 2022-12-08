@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.promoter.qrcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-08 15:10:32
+ * @since 1.0, 2022-12-07 19:43:38
  */
 public class AlipayCommerceOperationPromoterQrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2878539165681324183L;
+	private static final long serialVersionUID = 4798738461663421283L;
 
 	/** 
 	 * 推广码链接

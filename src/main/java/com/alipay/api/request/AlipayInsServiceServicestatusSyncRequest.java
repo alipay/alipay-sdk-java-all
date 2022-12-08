@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.service.servicestatus.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-12-10 10:22:49
+ * @since 1.0, 2022-12-07 16:14:27
  */
 public class AlipayInsServiceServicestatusSyncRequest implements AlipayRequest<AlipayInsServiceServicestatusSyncResponse> {
 

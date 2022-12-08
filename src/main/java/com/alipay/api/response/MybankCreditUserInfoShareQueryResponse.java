@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.user.info.share.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:13
+ * @since 1.0, 2022-12-07 18:58:32
  */
 public class MybankCreditUserInfoShareQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8626952182826727157L;
+	private static final long serialVersionUID = 8734314713246833216L;
 
 	/** 
 	 * 用户头像地址

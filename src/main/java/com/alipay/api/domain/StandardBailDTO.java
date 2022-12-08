@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商城保证金DTO
  *
  * @author auto create
- * @since 1.0, 2022-05-07 11:30:41
+ * @since 1.0, 2022-12-08 15:37:45
  */
 public class StandardBailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6664816956246654342L;
+	private static final long serialVersionUID = 5425215167293626233L;
 
 	/**
 	 * 保证金剩余可用余额
@@ -43,6 +43,18 @@ public class StandardBailDTO extends AlipayObject {
 	 */
 	@ApiField("migrate_to")
 	private String migrateTo;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 平台uid
+	 */
+	@ApiField("partner_open_id")
+	private String partnerOpenId;
 
 	/**
 	 * 平台uid
@@ -101,6 +113,20 @@ public class StandardBailDTO extends AlipayObject {
 	}
 	public void setMigrateTo(String migrateTo) {
 		this.migrateTo = migrateTo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
+	public String getPartnerOpenId() {
+		return this.partnerOpenId;
+	}
+	public void setPartnerOpenId(String partnerOpenId) {
+		this.partnerOpenId = partnerOpenId;
 	}
 
 	public String getPartnerUserId() {

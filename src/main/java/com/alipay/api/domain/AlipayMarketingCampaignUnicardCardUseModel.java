@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益使用
  *
  * @author auto create
- * @since 1.0, 2022-07-22 19:55:11
+ * @since 1.0, 2022-12-07 10:53:23
  */
 public class AlipayMarketingCampaignUnicardCardUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4871597635865493629L;
+	private static final long serialVersionUID = 2462758753525433656L;
 
 	/**
 	 * 权益使用接口，商户备注扩展信息

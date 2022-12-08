@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.youkuvideo.auditcallback.send request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:45:58
+ * @since 1.0, 2022-12-08 05:48:34
  */
 public class AlipayOpenAppYoukuvideoAuditcallbackSendRequest implements AlipayRequest<AlipayOpenAppYoukuvideoAuditcallbackSendResponse> {
 

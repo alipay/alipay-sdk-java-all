@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cplife.notice.publish request
  * 
  * @author auto create
- * @since 1.0, 2021-11-09 14:30:50
+ * @since 1.0, 2022-12-07 18:58:14
  */
 public class AlipayEcoCplifeNoticePublishRequest implements AlipayRequest<AlipayEcoCplifeNoticePublishResponse> {
 

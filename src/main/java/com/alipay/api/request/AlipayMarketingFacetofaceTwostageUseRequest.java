@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.facetoface.twostage.use request
  * 
  * @author auto create
- * @since 1.0, 2022-11-22 20:11:36
+ * @since 1.0, 2022-12-08 13:41:42
  */
 public class AlipayMarketingFacetofaceTwostageUseRequest implements AlipayRequest<AlipayMarketingFacetofaceTwostageUseResponse> {
 

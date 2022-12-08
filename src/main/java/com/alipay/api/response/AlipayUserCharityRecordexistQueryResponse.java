@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.charity.recordexist.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-25 21:06:54
+ * @since 1.0, 2022-12-08 04:01:40
  */
 public class AlipayUserCharityRecordexistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3351482666726551123L;
+	private static final long serialVersionUID = 7612623961696875696L;
 
 	/** 
 	 * 是否有过捐赠记录(有:true,否:false)

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.payment.notify response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-28 14:31:36
+ * @since 1.0, 2022-12-08 13:21:40
  */
 public class AlipayFinancialnetAuthPaymentNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2139237583468161514L;
+	private static final long serialVersionUID = 5567776151654515238L;
 
 	/** 
 	 * 响应结果码

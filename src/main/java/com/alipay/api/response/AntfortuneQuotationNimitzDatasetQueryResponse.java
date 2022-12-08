@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.quotation.nimitz.dataset.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-30 11:26:50
+ * @since 1.0, 2022-12-08 02:44:52
  */
 public class AntfortuneQuotationNimitzDatasetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5332594871791235739L;
+	private static final long serialVersionUID = 6732364365119471899L;
 
 	/** 
 	 * Nimitz 数据查询返回值，json形式

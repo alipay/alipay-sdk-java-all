@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.subaccount.balance.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-08-31 19:45:13
+ * @since 1.0, 2022-12-08 08:51:19
  */
 public class AlipayBossProdSubaccountBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7529956578661782384L;
+	private static final long serialVersionUID = 2715117843962218597L;
 
 	/** 
 	 * 子户余额信息

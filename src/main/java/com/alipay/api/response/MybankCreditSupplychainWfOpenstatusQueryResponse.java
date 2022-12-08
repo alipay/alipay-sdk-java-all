@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.openstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:21:53
+ * @since 1.0, 2022-12-07 23:31:19
  */
 public class MybankCreditSupplychainWfOpenstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3451882145868746139L;
+	private static final long serialVersionUID = 5242371266362889893L;
 
 	/** 
 	 * 开通状态

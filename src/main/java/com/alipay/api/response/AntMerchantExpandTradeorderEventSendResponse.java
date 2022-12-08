@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.tradeorder.event.send response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-21 21:15:00
+ * @since 1.0, 2022-12-08 02:57:44
  */
 public class AntMerchantExpandTradeorderEventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3549285732198646158L;
+	private static final long serialVersionUID = 7762155156682277877L;
 
 	/** 
 	 * 物流单状态：WAIT_PAY(待支付)、PAID(已支付)、WAIT_PAY_TIMEOUT(超时未支付)、COURIER_CONFIRMED(快递员已接单)、COURIER_ARRIVED_SEND(快递员已到达寄送点)、GOODS_PICKED(已取件)、GOODS_DELIVERED(已送达)、FINISHED(已完结)

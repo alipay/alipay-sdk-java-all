@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.recharge.user.detect response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 17:27:49
+ * @since 1.0, 2022-12-08 00:32:11
  */
 public class AlipayEbppRechargeUserDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2654272812884712998L;
+	private static final long serialVersionUID = 5863758194656538862L;
 
 	/** 
 	 * 是否是合法用户

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放平台资金信息
  *
  * @author auto create
- * @since 1.0, 2022-12-02 15:57:11
+ * @since 1.0, 2022-12-08 15:43:09
  */
 public class OpenFundInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2275567919958569326L;
+	private static final long serialVersionUID = 8253766692425619367L;
 
 	/**
 	 * 预算

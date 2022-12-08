@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用交易金融支付接口
  *
  * @author auto create
- * @since 1.0, 2020-10-09 11:27:34
+ * @since 1.0, 2022-12-08 13:31:24
  */
 public class AlipayTradeCreditFinancePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3199831199489122339L;
+	private static final long serialVersionUID = 8517313239228427938L;
 
 	/**
 	 * 本次需要支付的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]

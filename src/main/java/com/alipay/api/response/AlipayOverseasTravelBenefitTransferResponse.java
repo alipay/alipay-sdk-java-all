@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.benefit.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-17 18:11:36
+ * @since 1.0, 2022-12-08 08:01:40
  */
 public class AlipayOverseasTravelBenefitTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3817925229388861131L;
+	private static final long serialVersionUID = 5437511536744234983L;
 
 	/** 
 	 * 权益详情链接

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.saas.payment.check response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-25 21:01:50
+ * @since 1.0, 2022-12-07 15:16:16
  */
 public class AnttechBlockchainDefinSaasPaymentCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8618414846296963371L;
+	private static final long serialVersionUID = 3281778233631618224L;
 
 	/** 
 	 * 检查是否通过。PASS(检查通过);NOT_PASS(检查不通过)

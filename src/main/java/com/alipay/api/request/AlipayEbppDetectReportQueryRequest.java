@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.detect.report.query request
  * 
  * @author auto create
- * @since 1.0, 2021-12-13 16:10:58
+ * @since 1.0, 2022-12-07 20:38:51
  */
 public class AlipayEbppDetectReportQueryRequest implements AlipayRequest<AlipayEbppDetectReportQueryResponse> {
 

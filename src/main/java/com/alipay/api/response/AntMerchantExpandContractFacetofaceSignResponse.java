@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.contract.facetoface.sign response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:54
+ * @since 1.0, 2022-12-07 18:34:09
  */
 public class AntMerchantExpandContractFacetofaceSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5667666354791135324L;
+	private static final long serialVersionUID = 2897999446831976785L;
 
 	/** 
 	 * 支付宝端商户入驻申请单据号

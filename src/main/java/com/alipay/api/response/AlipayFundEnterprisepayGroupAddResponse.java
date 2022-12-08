@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.enterprisepay.group.add response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-04 14:26:43
+ * @since 1.0, 2022-12-07 18:08:29
  */
 public class AlipayFundEnterprisepayGroupAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2534446566862275173L;
+	private static final long serialVersionUID = 5749317997512159769L;
 
 	/** 
 	 * 因公付账户ID

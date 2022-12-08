@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.risktask.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-04 18:12:37
+ * @since 1.0, 2022-12-07 16:31:42
  */
 public class AlipaySecurityProdRisktaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8768737996226726514L;
+	private static final long serialVersionUID = 2648269473983775993L;
 
 	/** 
 	 * 成功创建的审理任务ID

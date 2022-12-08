@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 中奖信息查询
  *
  * @author auto create
- * @since 1.0, 2021-06-23 15:39:11
+ * @since 1.0, 2022-12-06 12:08:14
  */
 public class AlipayMarketingCampaignPrizeSendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2233752669439785941L;
+	private static final long serialVersionUID = 2121245994636982653L;
 
 	/**
 	 * 活动id
 	 */
 	@ApiField("camp_id")
 	private String campId;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -30,6 +36,13 @@ public class AlipayMarketingCampaignPrizeSendQueryModel extends AlipayObject {
 	}
 	public void setCampId(String campId) {
 		this.campId = campId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

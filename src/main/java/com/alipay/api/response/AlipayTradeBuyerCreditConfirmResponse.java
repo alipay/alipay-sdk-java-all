@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.buyer.credit.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2020-07-10 19:39:50
+ * @since 1.0, 2022-12-08 10:35:46
  */
 public class AlipayTradeBuyerCreditConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4678499958721876261L;
+	private static final long serialVersionUID = 2333466686883576374L;
 
 	/** 
 	 * 标识买家授信额度的来源

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.dish.virtualcategory.delete request
  * 
  * @author auto create
- * @since 1.0, 2022-01-04 10:33:14
+ * @since 1.0, 2022-12-08 06:45:50
  */
 public class KoubeiCateringDishVirtualcategoryDeleteRequest implements AlipayRequest<KoubeiCateringDishVirtualcategoryDeleteResponse> {
 

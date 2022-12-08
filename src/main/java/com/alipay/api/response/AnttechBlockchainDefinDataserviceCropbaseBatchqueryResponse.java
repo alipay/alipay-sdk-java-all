@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.dataservice.cropbase.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-14 13:36:34
+ * @since 1.0, 2022-12-08 04:56:39
  */
 public class AnttechBlockchainDefinDataserviceCropbaseBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5188371136662498538L;
+	private static final long serialVersionUID = 5466972268432371279L;
 
 	/** 
 	 * 农作物基础信息列表

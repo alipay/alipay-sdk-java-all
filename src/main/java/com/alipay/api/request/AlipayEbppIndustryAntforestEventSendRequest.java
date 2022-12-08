@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.antforest.event.send request
  * 
  * @author auto create
- * @since 1.0, 2022-11-08 10:36:34
+ * @since 1.0, 2022-12-08 02:26:38
  */
 public class AlipayEbppIndustryAntforestEventSendRequest implements AlipayRequest<AlipayEbppIndustryAntforestEventSendResponse> {
 

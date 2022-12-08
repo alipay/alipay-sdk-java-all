@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.iot.merchantplan.createormodify request
  * 
  * @author auto create
- * @since 1.0, 2021-09-29 15:02:59
+ * @since 1.0, 2022-12-08 10:47:15
  */
 public class AlipayMarketingIotMerchantplanCreateormodifyRequest implements AlipayRequest<AlipayMarketingIotMerchantplanCreateormodifyResponse> {
 

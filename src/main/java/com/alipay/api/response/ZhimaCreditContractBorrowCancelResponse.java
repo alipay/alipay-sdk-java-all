@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.contract.borrow.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-03 11:50:01
+ * @since 1.0, 2022-12-07 19:29:47
  */
 public class ZhimaCreditContractBorrowCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8579933696135563329L;
+	private static final long serialVersionUID = 1531445293492263792L;
 
 	
 

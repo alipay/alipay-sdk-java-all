@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.pbcinstitution.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-14 10:16:36
+ * @since 1.0, 2022-12-08 10:56:39
  */
 public class AlipayFinancialnetAuthPbcinstitutionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2175883348388496471L;
+	private static final long serialVersionUID = 6841195997928185766L;
 
 	/** 
 	 * 联行号查询结果

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通知机构用户出库状态信息对象
  *
  * @author auto create
- * @since 1.0, 2022-04-11 09:52:52
+ * @since 1.0, 2022-12-07 16:42:36
  */
 public class IotVspOrgUserDeleteNotifyUserInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7648857672454454217L;
+	private static final long serialVersionUID = 3321568477389711468L;
 
 	/**
 	 * 返回状态描述

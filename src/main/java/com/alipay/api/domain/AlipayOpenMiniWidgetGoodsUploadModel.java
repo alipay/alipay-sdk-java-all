@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小部件商品上传
  *
  * @author auto create
- * @since 1.0, 2022-10-24 14:30:15
+ * @since 1.0, 2022-12-06 13:21:14
  */
 public class AlipayOpenMiniWidgetGoodsUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2328579241471447675L;
+	private static final long serialVersionUID = 5376649646896593443L;
 
 	/**
 	 * 商品信息列表

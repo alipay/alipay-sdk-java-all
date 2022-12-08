@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.paymenthub.refund response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-23 22:00:11
+ * @since 1.0, 2022-12-08 01:22:45
  */
 public class AlipayBusinessPaymenthubRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3397948844846213661L;
+	private static final long serialVersionUID = 8723588127736361222L;
 
 	/** 
 	 * 聚合支付的支付渠道，支付宝分配。

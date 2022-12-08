@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.flow.qualification.detect response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 17:26:48
+ * @since 1.0, 2022-12-08 06:17:34
  */
 public class AlipayEbppFlowQualificationDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6514885984721721318L;
+	private static final long serialVersionUID = 5785764533421449195L;
 
 	/** 
 	 * 子业务码

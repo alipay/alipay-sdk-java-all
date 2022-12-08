@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.gift.order.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 12:01:28
  */
 public class AlipaySocialGiftOrderConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1361641334342172276L;
+	private static final long serialVersionUID = 4224675467385226251L;
 
 	/** 
 	 * 本次操作的订单id，与该接口入参order_id一致

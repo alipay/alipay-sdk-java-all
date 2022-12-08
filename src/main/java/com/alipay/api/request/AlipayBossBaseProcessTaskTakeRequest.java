@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.process.task.take request
  * 
  * @author auto create
- * @since 1.0, 2022-03-25 14:06:48
+ * @since 1.0, 2022-12-08 14:04:11
  */
 public class AlipayBossBaseProcessTaskTakeRequest implements AlipayRequest<AlipayBossBaseProcessTaskTakeResponse> {
 

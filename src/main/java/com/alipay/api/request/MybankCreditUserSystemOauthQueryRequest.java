@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.user.system.oauth.query request
  * 
  * @author auto create
- * @since 1.0, 2020-06-12 10:36:16
+ * @since 1.0, 2022-12-07 19:08:24
  */
 public class MybankCreditUserSystemOauthQueryRequest implements AlipayRequest<MybankCreditUserSystemOauthQueryResponse> {
 

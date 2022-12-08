@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 资金计划
+ * openId改造
  *
  * @author auto create
- * @since 1.0, 2022-12-05 14:58:42
+ * @since 1.0, 2022-12-07 15:07:44
  */
 public class FundPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2745272225452147317L;
+	private static final long serialVersionUID = 2726775954275745722L;
 
 	/**
 	 * 合花群ID（与当前请求参数中传入值保持一致）
@@ -42,6 +42,13 @@ public class FundPlanDTO extends AlipayObject {
 	 */
 	@ApiField("creator_id")
 	private String creatorId;
+
+	/**
+	 * （创建人）支付宝侧用户唯一标识<br>
+补充说明：该字段与alipay.fund.jointaccount.fundplan.create请求参数中传入值保持一致
+	 */
+	@ApiField("creator_open_id")
+	private String creatorOpenId;
 
 	/**
 	 * 转入周期值，需要与calendar_type字段配合计算传入时间<br>
@@ -170,6 +177,13 @@ yyyy-MM-dd HH:mm:ss.SSS）<br>
 	}
 	public void setCreatorId(String creatorId) {
 		this.creatorId = creatorId;
+	}
+
+	public String getCreatorOpenId() {
+		return this.creatorOpenId;
+	}
+	public void setCreatorOpenId(String creatorOpenId) {
+		this.creatorOpenId = creatorOpenId;
 	}
 
 	public String getDate() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝转账单据关闭接口
  *
  * @author auto create
- * @since 1.0, 2019-05-17 12:01:13
+ * @since 1.0, 2022-12-06 19:47:13
  */
 public class AlipayFundTransBillCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8592615958517639659L;
+	private static final long serialVersionUID = 4755336921997816711L;
 
 	/**
 	 * 支付宝转账单据号

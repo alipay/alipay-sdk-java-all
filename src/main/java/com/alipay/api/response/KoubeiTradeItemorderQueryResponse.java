@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.itemorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-21 15:05:03
+ * @since 1.0, 2022-12-07 18:33:14
  */
 public class KoubeiTradeItemorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5533663297334282252L;
+	private static final long serialVersionUID = 5817244269399513545L;
 
 	/** 
 	 * 业务产品

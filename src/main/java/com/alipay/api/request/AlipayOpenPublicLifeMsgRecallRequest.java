@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.msg.recall request
  * 
  * @author auto create
- * @since 1.0, 2022-10-12 17:25:45
+ * @since 1.0, 2022-12-07 19:05:08
  */
 public class AlipayOpenPublicLifeMsgRecallRequest implements AlipayRequest<AlipayOpenPublicLifeMsgRecallResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.public.template.message.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-12 17:24:30
+ * @since 1.0, 2022-12-07 19:31:48
  */
 public class AlipayMobilePublicTemplateMessageDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8858522249569368598L;
+	private static final long serialVersionUID = 5222335488635378992L;
 
 	
 

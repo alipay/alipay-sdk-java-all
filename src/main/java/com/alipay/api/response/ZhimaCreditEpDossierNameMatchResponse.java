@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.name.match response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-14 15:46:21
+ * @since 1.0, 2022-12-07 17:27:45
  */
 public class ZhimaCreditEpDossierNameMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1515353928183116266L;
+	private static final long serialVersionUID = 4381896368458539881L;
 
 	/** 
 	 * 企业简版档案信息

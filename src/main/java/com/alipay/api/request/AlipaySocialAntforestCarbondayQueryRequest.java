@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antforest.carbonday.query request
  * 
  * @author auto create
- * @since 1.0, 2022-10-11 15:34:15
+ * @since 1.0, 2022-12-08 03:16:38
  */
 public class AlipaySocialAntforestCarbondayQueryRequest implements AlipayRequest<AlipaySocialAntforestCarbondayQueryResponse> {
 

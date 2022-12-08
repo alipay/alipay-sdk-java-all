@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.activity.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-13 10:10:35
+ * @since 1.0, 2022-12-08 08:30:57
  */
 public class AntMerchantExpandIndirectActivityCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6452454291797288668L;
+	private static final long serialVersionUID = 7115714874189183298L;
 
 	/** 
 	 * 是否存在已报名的同类型活动。（不包含报名中活动，如存在报名中活动，会以错误码告知）

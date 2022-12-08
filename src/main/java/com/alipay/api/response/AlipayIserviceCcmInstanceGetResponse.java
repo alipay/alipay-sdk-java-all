@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.instance.get response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-09 11:19:38
+ * @since 1.0, 2022-12-07 19:22:47
  */
 public class AlipayIserviceCcmInstanceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5214953167994137996L;
+	private static final long serialVersionUID = 1888736255695828786L;
 
 	/** 
 	 * 创建时间

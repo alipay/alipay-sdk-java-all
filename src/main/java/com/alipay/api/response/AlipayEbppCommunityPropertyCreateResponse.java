@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.property.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-09 14:33:56
+ * @since 1.0, 2022-12-08 02:23:37
  */
 public class AlipayEbppCommunityPropertyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2774186186325437987L;
+	private static final long serialVersionUID = 8665967294364784497L;
 
 	/** 
 	 * 外部联系人

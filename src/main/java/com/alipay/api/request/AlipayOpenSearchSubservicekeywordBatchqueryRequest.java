@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.search.subservicekeyword.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-12-02 14:32:45
+ * @since 1.0, 2022-12-07 20:10:44
  */
 public class AlipayOpenSearchSubservicekeywordBatchqueryRequest implements AlipayRequest<AlipayOpenSearchSubservicekeywordBatchqueryResponse> {
 

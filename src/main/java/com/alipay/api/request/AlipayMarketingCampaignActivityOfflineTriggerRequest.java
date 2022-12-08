@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.activity.offline.trigger request
  * 
  * @author auto create
- * @since 1.0, 2021-11-05 15:05:29
+ * @since 1.0, 2022-12-07 19:12:53
  */
 public class AlipayMarketingCampaignActivityOfflineTriggerRequest implements AlipayRequest<AlipayMarketingCampaignActivityOfflineTriggerResponse> {
 

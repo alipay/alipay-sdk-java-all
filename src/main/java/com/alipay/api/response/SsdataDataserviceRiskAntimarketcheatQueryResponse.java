@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.antimarketcheat.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:49
+ * @since 1.0, 2022-12-08 12:10:12
  */
 public class SsdataDataserviceRiskAntimarketcheatQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1289622428225967994L;
+	private static final long serialVersionUID = 8434893283842769483L;
 
 	/** 
 	 * 风险解释，从垃圾注册、虚假交易、名单库、身份冒用和不良记录等5个方面描述作弊风险

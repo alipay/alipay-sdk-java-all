@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.self.activity.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 14:21:17
+ * @since 1.0, 2022-12-07 16:28:47
  */
 public class AlipayMarketingCampaignSelfActivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3415954757234714153L;
+	private static final long serialVersionUID = 2284512612979768758L;
 
 	/** 
 	 * 活动结束时间，即券可领取结束时间，格式为yyyy-MM-dd HH:mm:ss

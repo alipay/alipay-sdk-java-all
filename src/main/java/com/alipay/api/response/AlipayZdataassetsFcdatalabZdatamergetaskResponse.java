@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.zdataassets.fcdatalab.zdatamergetask response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2022-12-07 17:54:51
  */
 public class AlipayZdataassetsFcdatalabZdatamergetaskResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7481538546679724192L;
+	private static final long serialVersionUID = 1479283747347551591L;
 
 	/** 
 	 * 返回结果

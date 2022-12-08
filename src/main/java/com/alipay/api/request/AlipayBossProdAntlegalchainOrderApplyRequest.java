@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.antlegalchain.order.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-05-19 14:43:28
+ * @since 1.0, 2022-12-08 01:03:51
  */
 public class AlipayBossProdAntlegalchainOrderApplyRequest implements AlipayRequest<AlipayBossProdAntlegalchainOrderApplyResponse> {
 

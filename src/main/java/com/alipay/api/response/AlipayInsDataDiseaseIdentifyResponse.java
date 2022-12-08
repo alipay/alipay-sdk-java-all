@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.disease.identify response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:57
+ * @since 1.0, 2022-12-08 02:36:17
  */
 public class AlipayInsDataDiseaseIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8284244819659254276L;
+	private static final long serialVersionUID = 6186291212188735178L;
 
 	/** 
 	 * 疾病标准编码

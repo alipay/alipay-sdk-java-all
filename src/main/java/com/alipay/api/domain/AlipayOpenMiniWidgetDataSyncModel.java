@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序橱窗数据同步
  *
  * @author auto create
- * @since 1.0, 2022-11-21 16:48:03
+ * @since 1.0, 2022-12-05 22:11:14
  */
 public class AlipayOpenMiniWidgetDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8762372417111939349L;
+	private static final long serialVersionUID = 6852732829653712284L;
 
 	/**
 	 * 活动信息列表
@@ -28,6 +28,13 @@ public class AlipayOpenMiniWidgetDataSyncModel extends AlipayObject {
 	 */
 	@ApiField("data_type")
 	private String dataType;
+
+	/**
+	 * 商品信息列表
+	 */
+	@ApiListField("goods_list")
+	@ApiField("widget_goods_info")
+	private List<WidgetGoodsInfo> goodsList;
 
 	/**
 	 * 商家小程序ID
@@ -53,6 +60,13 @@ public class AlipayOpenMiniWidgetDataSyncModel extends AlipayObject {
 	}
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
+	}
+
+	public List<WidgetGoodsInfo> getGoodsList() {
+		return this.goodsList;
+	}
+	public void setGoodsList(List<WidgetGoodsInfo> goodsList) {
+		this.goodsList = goodsList;
 	}
 
 	public String getMiniAppId() {

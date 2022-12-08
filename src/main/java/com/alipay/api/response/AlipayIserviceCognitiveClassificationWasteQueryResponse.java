@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.classification.waste.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:13
+ * @since 1.0, 2022-12-08 03:17:53
  */
 public class AlipayIserviceCognitiveClassificationWasteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6184898351989263547L;
+	private static final long serialVersionUID = 7124375817793943618L;
 
 	/** 
 	 * 识别类型

@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机构协议授权订阅
  *
  * @author auto create
- * @since 1.0, 2022-08-26 10:58:19
+ * @since 1.0, 2022-12-07 21:01:15
  */
 public class AlipayFinanceQuotationProtocolAuthorizeSubscribeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4135263726474888459L;
+	private static final long serialVersionUID = 7475926173528428943L;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 与蚂蚁业务方约定的类型，同时约定$orgCode值
@@ -41,6 +47,13 @@ public class AlipayFinanceQuotationProtocolAuthorizeSubscribeModel extends Alipa
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public List<String> getProtocolTypeList() {
 		return this.protocolTypeList;

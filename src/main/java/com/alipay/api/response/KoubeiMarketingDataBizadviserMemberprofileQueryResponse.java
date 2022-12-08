@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.bizadviser.memberprofile.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-22 14:57:45
+ * @since 1.0, 2022-12-07 17:46:58
  */
 public class KoubeiMarketingDataBizadviserMemberprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1678452496825944536L;
+	private static final long serialVersionUID = 8144316322316444736L;
 
 	/** 
 	 * result是一个所有结果集合的json串，里面有一下一些信息：

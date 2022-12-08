@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付付方还款信息咨询
  *
  * @author auto create
- * @since 1.0, 2022-02-09 10:51:43
+ * @since 1.0, 2022-12-06 10:59:13
  */
 public class MybankCreditLoantradePayerBillrepayConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1266746249376141341L;
+	private static final long serialVersionUID = 5891761414252845216L;
 
 	/**
 	 * 指定账单号，为空查询所有账单

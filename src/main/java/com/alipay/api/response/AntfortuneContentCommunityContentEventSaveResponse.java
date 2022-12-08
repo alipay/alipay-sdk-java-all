@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.content.community.content.event.save response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-29 11:56:40
+ * @since 1.0, 2022-12-08 06:53:39
  */
 public class AntfortuneContentCommunityContentEventSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7627718815661719157L;
+	private static final long serialVersionUID = 8812143247858637754L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.jobcard.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-27 20:20:39
+ * @since 1.0, 2022-12-07 17:23:24
  */
 public class AlipayUserJobcardInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7497942298214915724L;
+	private static final long serialVersionUID = 1598344811433269163L;
 
 	/** 
 	 * 意向行政区域

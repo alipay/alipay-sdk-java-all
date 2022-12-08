@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.disassociate request
  * 
  * @author auto create
- * @since 1.0, 2022-10-07 18:24:17
+ * @since 1.0, 2022-12-06 17:54:29
  */
 public class AlipayMarketingActivityOrdervoucherDisassociateRequest implements AlipayRequest<AlipayMarketingActivityOrdervoucherDisassociateResponse> {
 

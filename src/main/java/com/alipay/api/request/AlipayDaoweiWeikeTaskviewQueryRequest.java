@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.daowei.weike.taskview.query request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2022-12-08 13:24:04
  */
 public class AlipayDaoweiWeikeTaskviewQueryRequest implements AlipayRequest<AlipayDaoweiWeikeTaskviewQueryResponse> {
 

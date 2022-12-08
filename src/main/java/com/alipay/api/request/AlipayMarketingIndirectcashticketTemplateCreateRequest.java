@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.indirectcashticket.template.create request
  * 
  * @author auto create
- * @since 1.0, 2019-12-09 11:11:28
+ * @since 1.0, 2022-12-08 10:44:49
  */
 public class AlipayMarketingIndirectcashticketTemplateCreateRequest implements AlipayRequest<AlipayMarketingIndirectcashticketTemplateCreateResponse> {
 

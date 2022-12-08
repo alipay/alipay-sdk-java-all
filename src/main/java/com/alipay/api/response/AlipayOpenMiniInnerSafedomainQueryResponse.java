@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.inner.safedomain.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-18 15:16:50
+ * @since 1.0, 2022-12-08 08:21:46
  */
 public class AlipayOpenMiniInnerSafedomainQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8663646313487175938L;
+	private static final long serialVersionUID = 8582322315545272811L;
 
 	/** 
 	 * 允许添加的最大域名数量限制

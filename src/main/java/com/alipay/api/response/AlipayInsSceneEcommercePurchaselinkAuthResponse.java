@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.ecommerce.purchaselink.auth response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-29 12:22:00
+ * @since 1.0, 2022-12-07 16:26:26
  */
 public class AlipayInsSceneEcommercePurchaselinkAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7245955139981939122L;
+	private static final long serialVersionUID = 5617899678126292296L;
 
 	/** 
 	 * 授权token

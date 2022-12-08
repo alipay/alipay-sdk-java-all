@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.device.report.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-01-12 20:00:26
+ * @since 1.0, 2022-12-08 03:41:26
  */
 public class AlipayCommerceIotDeviceReportUploadRequest implements AlipayRequest<AlipayCommerceIotDeviceReportUploadResponse> {
 
