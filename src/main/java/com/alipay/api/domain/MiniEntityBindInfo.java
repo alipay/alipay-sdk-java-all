@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序与其他实体绑定信息
  *
  * @author auto create
- * @since 1.0, 2020-11-10 13:57:54
+ * @since 1.0, 2022-12-15 19:38:16
  */
 public class MiniEntityBindInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1445479284977968961L;
+	private static final long serialVersionUID = 1432797391199586293L;
 
 	/**
 	 * 实体id

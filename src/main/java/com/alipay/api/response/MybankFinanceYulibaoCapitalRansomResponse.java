@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankFinanceYulibaoCapitalRansomResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7157162365786829765L;
+	private static final long serialVersionUID = 8539889875615124895L;
 
 	/** 
 	 * 余利宝内部的交易流水号

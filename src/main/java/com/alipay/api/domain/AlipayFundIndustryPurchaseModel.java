@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业基金申购
  *
  * @author auto create
- * @since 1.0, 2022-11-22 16:18:52
+ * @since 1.0, 2022-12-08 19:17:49
  */
 public class AlipayFundIndustryPurchaseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3888993617759212674L;
+	private static final long serialVersionUID = 4359396142292828142L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，调用签约接口成功时返回。
@@ -34,8 +34,13 @@ public class AlipayFundIndustryPurchaseModel extends AlipayObject {
 	private Date gmtPay;
 
 	/**
-	 * 开放用户id，appid+uid维度唯一。
-与user_id二选一。
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 已废弃，勿用。请使用open_id字段
 	 */
 	@ApiField("openid")
 	private String openid;
@@ -82,6 +87,13 @@ public class AlipayFundIndustryPurchaseModel extends AlipayObject {
 	}
 	public void setGmtPay(Date gmtPay) {
 		this.gmtPay = gmtPay;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOpenid() {

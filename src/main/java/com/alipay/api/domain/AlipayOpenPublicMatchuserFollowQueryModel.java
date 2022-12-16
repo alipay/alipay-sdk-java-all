@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活号用户关注情况高级查询接口
  *
  * @author auto create
- * @since 1.0, 2019-12-27 18:55:06
+ * @since 1.0, 2022-12-12 14:09:33
  */
 public class AlipayOpenPublicMatchuserFollowQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7629256854336961438L;
+	private static final long serialVersionUID = 7217165652269329233L;
 
 	/**
 	 * 身份证号码

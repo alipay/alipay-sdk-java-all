@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.account.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:21:25
+ * @since 1.0, 2022-12-14 20:07:02
  */
 public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadRequest<AlipayOpenPublicLifeAccountCreateResponse> {
 
@@ -60,6 +60,11 @@ public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadReq
 	* logo图片，需上传图片原始二进制流，此图片显示在支付宝客户端生活号主页上方位置，后缀是jpg或者jpeg，图片大小限制1mb
 	 */
 	private FileItem logo;
+
+	/** 
+	* 支付宝用户唯一标识
+	 */
+	private String openId;
 
 	/** 
 	* 支付宝用户id，由支付宝同学提供用户id，为该生活号对应pid
@@ -120,6 +125,13 @@ public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadReq
 	}
 	public FileItem getLogo() {
 		return this.logo;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setUserId(String userId) {
@@ -195,6 +207,7 @@ public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadReq
 		txtParams.put("content", this.content);
 		txtParams.put("customer_tel", this.customerTel);
 		txtParams.put("life_name", this.lifeName);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("user_id", this.userId);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);

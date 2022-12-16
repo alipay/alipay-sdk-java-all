@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.operator.bind.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:38:46
+ * @since 1.0, 2022-12-15 14:45:44
  */
 public class AlipayFundTransOperatorBindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7142434181751732476L;
+	private static final long serialVersionUID = 6395279349338855421L;
 
 	/** 
 	 * true:已绑定

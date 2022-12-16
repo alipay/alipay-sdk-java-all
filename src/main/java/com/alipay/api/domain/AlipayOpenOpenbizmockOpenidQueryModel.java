@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * openid内部测试接口
  *
  * @author auto create
- * @since 1.0, 2022-10-10 21:11:14
+ * @since 1.0, 2022-12-08 20:16:20
  */
 public class AlipayOpenOpenbizmockOpenidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4219954667516821517L;
+	private static final long serialVersionUID = 8536524122223258642L;
 
 	/**
 	 * openid复杂参数

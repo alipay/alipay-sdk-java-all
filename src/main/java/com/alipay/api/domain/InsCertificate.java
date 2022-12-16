@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsCertificate extends AlipayObject {
 
-	private static final long serialVersionUID = 3397171495822492712L;
+	private static final long serialVersionUID = 5467339415137226538L;
 
 	/**
 	 * 发奖凭证ID

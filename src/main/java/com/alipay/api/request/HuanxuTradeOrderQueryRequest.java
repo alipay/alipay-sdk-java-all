@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: huanxu.trade.order.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:49:20
+ * @since 1.0, 2022-12-16 11:18:15
  */
 public class HuanxuTradeOrderQueryRequest implements AlipayRequest<HuanxuTradeOrderQueryResponse> {
 

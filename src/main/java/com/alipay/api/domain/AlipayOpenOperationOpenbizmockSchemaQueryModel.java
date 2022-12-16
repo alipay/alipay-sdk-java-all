@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成schema测试
  *
  * @author auto create
- * @since 1.0, 2022-12-07 19:17:43
+ * @since 1.0, 2022-12-14 15:04:50
  */
 public class AlipayOpenOperationOpenbizmockSchemaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3413182758897612714L;
+	private static final long serialVersionUID = 8643518245197293465L;
 
 	/**
 	 * test

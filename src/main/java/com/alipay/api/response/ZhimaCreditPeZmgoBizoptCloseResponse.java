@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditPeZmgoBizoptCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8255863975936943387L;
+	private static final long serialVersionUID = 1253994453885893775L;
 
 	/** 
 	 * 芝麻GO签约申请时生成的签约申请单据号

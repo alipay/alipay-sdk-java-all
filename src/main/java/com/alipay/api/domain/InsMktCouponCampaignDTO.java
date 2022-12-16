@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsMktCouponCampaignDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5561227831338115456L;
+	private static final long serialVersionUID = 8532184659792718556L;
 
 	/**
 	 * 活动核销截止时间

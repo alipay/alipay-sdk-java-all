@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查询用户付款码皮肤信息
  *
  * @author auto create
- * @since 1.0, 2021-12-14 15:20:38
+ * @since 1.0, 2022-12-12 15:18:50
  */
 public class AlipayCommerceSportsFacepayskinBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1614443913446155913L;
+	private static final long serialVersionUID = 4341246145252447122L;
 
 	/**
 	 * 支付宝客户端版本号
 	 */
 	@ApiField("client_version")
 	private String clientVersion;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 付款码皮肤ID集合
@@ -40,6 +46,13 @@ public class AlipayCommerceSportsFacepayskinBatchqueryModel extends AlipayObject
 	}
 	public void setClientVersion(String clientVersion) {
 		this.clientVersion = clientVersion;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<String> getSkinIdList() {

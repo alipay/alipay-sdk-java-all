@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 当成付扣款接口
  *
  * @author auto create
- * @since 1.0, 2022-11-21 14:31:15
+ * @since 1.0, 2022-12-15 16:57:28
  */
 public class AlipayEbppFacepayBillPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7331332336392543817L;
+	private static final long serialVersionUID = 1815576768487863679L;
 
 	/**
 	 * 账期

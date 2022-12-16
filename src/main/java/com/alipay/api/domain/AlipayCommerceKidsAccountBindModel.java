@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 儿童账户关联
  *
  * @author auto create
- * @since 1.0, 2019-08-08 11:22:41
+ * @since 1.0, 2022-12-12 17:24:50
  */
 public class AlipayCommerceKidsAccountBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2852493932815981429L;
+	private static final long serialVersionUID = 2515796795848841182L;
 
 	/**
 	 * 与child_cert_type对应，如果child_cert_type为IDENTITY_CARD，对应的取值为身份证号
@@ -48,6 +48,12 @@ public class AlipayCommerceKidsAccountBindModel extends AlipayObject {
 	 */
 	@ApiField("contact_mobile")
 	private String contactMobile;
+
+	/**
+	 * 家长支付宝openid，创建的账户将会同时与家长绑定关系
+	 */
+	@ApiField("parent_open_id")
+	private String parentOpenId;
 
 	/**
 	 * 家长支付宝userId，创建的账户将会同时与家长绑定关系
@@ -113,6 +119,13 @@ public class AlipayCommerceKidsAccountBindModel extends AlipayObject {
 	}
 	public void setContactMobile(String contactMobile) {
 		this.contactMobile = contactMobile;
+	}
+
+	public String getParentOpenId() {
+		return this.parentOpenId;
+	}
+	public void setParentOpenId(String parentOpenId) {
+		this.parentOpenId = parentOpenId;
 	}
 
 	public String getParentUid() {

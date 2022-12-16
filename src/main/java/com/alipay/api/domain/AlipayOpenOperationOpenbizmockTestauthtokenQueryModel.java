@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户授权令牌测试
  *
  * @author auto create
- * @since 1.0, 2022-11-01 16:36:41
+ * @since 1.0, 2022-12-13 14:46:40
  */
 public class AlipayOpenOperationOpenbizmockTestauthtokenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7572331617778722917L;
+	private static final long serialVersionUID = 5776454722472616264L;
 
 	/**
 	 * 测试专用

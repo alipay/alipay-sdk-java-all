@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ka外部平台一键入驻生活号
  *
  * @author auto create
- * @since 1.0, 2021-06-23 14:41:44
+ * @since 1.0, 2022-12-14 19:41:14
  */
 public class AlipayOpenPublicLifeaccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8432917124594556214L;
+	private static final long serialVersionUID = 5476328929221632167L;
 
 	/**
 	 * 勾选同意生活号协议（true：同意，false：不同意）
@@ -100,6 +100,12 @@ public class AlipayOpenPublicLifeaccountCreateModel extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 支付宝用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 平台帐号id（比如1688帐号id）
@@ -215,6 +221,13 @@ public class AlipayOpenPublicLifeaccountCreateModel extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPlatformAccountId() {

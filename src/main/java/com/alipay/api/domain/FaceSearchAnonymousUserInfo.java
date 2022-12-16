@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FaceSearchAnonymousUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1271457891156648338L;
+	private static final long serialVersionUID = 2721452326466511369L;
 
 	/**
 	 * 商户标识

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车支付信息同步接口
  *
  * @author auto create
- * @since 1.0, 2022-10-24 19:25:13
+ * @since 1.0, 2022-12-14 15:03:50
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2248182599928818659L;
+	private static final long serialVersionUID = 4823969532741358299L;
 
 	/**
 	 * 停车场内缴费后，允许出场的免费时长分钟数
@@ -26,6 +26,12 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayOb
 	 */
 	@ApiField("is_encrypt_plate_no")
 	private Boolean isEncryptPlateNo;
+
+	/**
+	 * 蚂蚁会员统一ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部停车流水号(用于串通进场与出场信息)
@@ -76,6 +82,13 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayOb
 	}
 	public void setIsEncryptPlateNo(Boolean isEncryptPlateNo) {
 		this.isEncryptPlateNo = isEncryptPlateNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutSerialNo() {

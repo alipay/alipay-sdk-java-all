@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场馆订单发放绿色能量检查接口
  *
  * @author auto create
- * @since 1.0, 2022-07-15 10:32:49
+ * @since 1.0, 2022-12-09 17:05:18
  */
 public class AlipayCommerceSportsGreenenergyCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2414924755585516617L;
+	private static final long serialVersionUID = 3788884767791873792L;
+
+	/**
+	 * 用户支付宝OPENID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单交易状态，verify_succ-已使用，目前仅支持对已使用的订单发放能量
@@ -48,6 +54,13 @@ public class AlipayCommerceSportsGreenenergyCheckModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOrderStatus() {
 		return this.orderStatus;

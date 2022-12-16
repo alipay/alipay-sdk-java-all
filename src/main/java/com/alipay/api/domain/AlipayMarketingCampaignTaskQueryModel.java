@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询营销任务列表
  *
  * @author auto create
- * @since 1.0, 2022-11-14 21:05:04
+ * @since 1.0, 2022-12-09 14:15:17
  */
 public class AlipayMarketingCampaignTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4722425615141744465L;
+	private static final long serialVersionUID = 5257135589517725277L;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 任务中心id
@@ -34,6 +40,13 @@ public class AlipayMarketingCampaignTaskQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getTaskCenId() {
 		return this.taskCenId;

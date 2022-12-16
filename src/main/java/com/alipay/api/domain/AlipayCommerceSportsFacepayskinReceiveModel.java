@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户领取付款码皮肤
  *
  * @author auto create
- * @since 1.0, 2021-12-14 15:14:50
+ * @since 1.0, 2022-12-12 19:24:49
  */
 public class AlipayCommerceSportsFacepayskinReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1349361462795778733L;
+	private static final long serialVersionUID = 7714617963549478374L;
 
 	/**
 	 * 支付宝客户端版本号
@@ -27,6 +27,12 @@ public class AlipayCommerceSportsFacepayskinReceiveModel extends AlipayObject {
 	 */
 	@ApiField("expire_date")
 	private Date expireDate;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 付款码皮肤ID
@@ -52,6 +58,13 @@ public class AlipayCommerceSportsFacepayskinReceiveModel extends AlipayObject {
 	}
 	public void setExpireDate(Date expireDate) {
 		this.expireDate = expireDate;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSkinId() {

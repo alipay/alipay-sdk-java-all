@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.data.autodamage.estimate.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:56:02
+ * @since 1.0, 2022-12-13 13:56:20
  */
 public class AlipayInsDataAutodamageEstimateApplyRequest implements AlipayRequest<AlipayInsDataAutodamageEstimateApplyResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合同详情
  *
  * @author auto create
- * @since 1.0, 2022-11-09 16:04:05
+ * @since 1.0, 2022-12-12 20:28:34
  */
 public class ContractDetailQueryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2256134735531374797L;
+	private static final long serialVersionUID = 2141794559955412747L;
 
 	/**
 	 * 合同金额
@@ -46,6 +46,13 @@ public class ContractDetailQueryDTO extends AlipayObject {
 	 */
 	@ApiField("apply_start_time")
 	private String applyStartTime;
+
+	/**
+	 * 审批操作记录信息
+	 */
+	@ApiListField("approve_node_info_list")
+	@ApiField("approve_node_page_group_d_t_o")
+	private List<ApproveNodePageGroupDTO> approveNodeInfoList;
 
 	/**
 	 * 自动续约周期
@@ -282,6 +289,13 @@ public class ContractDetailQueryDTO extends AlipayObject {
 	private String payer;
 
 	/**
+	 * 支付条款
+	 */
+	@ApiListField("payment_terms_list")
+	@ApiField("open_api_payment_terms_d_t_o")
+	private List<OpenApiPaymentTermsDTO> paymentTermsList;
+
+	/**
 	 * 实体章用印备注
 	 */
 	@ApiField("remarks_on_printing")
@@ -362,6 +376,13 @@ public class ContractDetailQueryDTO extends AlipayObject {
 	}
 	public void setApplyStartTime(String applyStartTime) {
 		this.applyStartTime = applyStartTime;
+	}
+
+	public List<ApproveNodePageGroupDTO> getApproveNodeInfoList() {
+		return this.approveNodeInfoList;
+	}
+	public void setApproveNodeInfoList(List<ApproveNodePageGroupDTO> approveNodeInfoList) {
+		this.approveNodeInfoList = approveNodeInfoList;
 	}
 
 	public Long getAutoRenewPeriod() {
@@ -628,6 +649,13 @@ public class ContractDetailQueryDTO extends AlipayObject {
 	}
 	public void setPayer(String payer) {
 		this.payer = payer;
+	}
+
+	public List<OpenApiPaymentTermsDTO> getPaymentTermsList() {
+		return this.paymentTermsList;
+	}
+	public void setPaymentTermsList(List<OpenApiPaymentTermsDTO> paymentTermsList) {
+		this.paymentTermsList = paymentTermsList;
 	}
 
 	public String getRemarksOnPrinting() {

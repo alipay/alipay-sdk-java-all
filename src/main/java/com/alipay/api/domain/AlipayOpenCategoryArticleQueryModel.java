@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 类目维度内容资讯文章个性化推荐查询
  *
  * @author auto create
- * @since 1.0, 2017-09-26 13:28:21
+ * @since 1.0, 2022-12-12 14:09:55
  */
 public class AlipayOpenCategoryArticleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5765591995923765877L;
+	private static final long serialVersionUID = 3622129581271986999L;
 
 	/**
 	 * ID  类目名称

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车险权益使用资格查询
  *
  * @author auto create
- * @since 1.0, 2020-01-08 19:54:36
+ * @since 1.0, 2022-12-13 14:10:15
  */
 public class AlipayInsAutoBenefitCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3264836331584615731L;
+	private static final long serialVersionUID = 8279221498819992155L;
 
 	/**
 	 * 支付宝权益编码标识

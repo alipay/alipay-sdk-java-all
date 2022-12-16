@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrafficProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8689767335261713475L;
+	private static final long serialVersionUID = 4839723547337615613L;
 
 	/**
 	 * 出发地名称，对于BUS类型该字段必填。

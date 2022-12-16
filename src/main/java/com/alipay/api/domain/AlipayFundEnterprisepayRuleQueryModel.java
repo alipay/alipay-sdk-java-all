@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 因公付查询规则
  *
  * @author auto create
- * @since 1.0, 2022-08-23 23:10:10
+ * @since 1.0, 2022-12-13 08:45:23
  */
 public class AlipayFundEnterprisepayRuleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1864952163293481356L;
+	private static final long serialVersionUID = 2541869932176519962L;
 
 	/**
 	 * 企业签约账户ID

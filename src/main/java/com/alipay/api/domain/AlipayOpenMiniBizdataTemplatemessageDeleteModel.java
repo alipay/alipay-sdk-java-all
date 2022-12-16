@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序服务信息删除
  *
  * @author auto create
- * @since 1.0, 2019-12-03 20:10:06
+ * @since 1.0, 2022-12-15 16:49:00
  */
 public class AlipayOpenMiniBizdataTemplatemessageDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3755245789284545541L;
+	private static final long serialVersionUID = 6555279695582277755L;
 
 	/**
 	 * 商户业务流水id，应该是商户侧数据的唯一键

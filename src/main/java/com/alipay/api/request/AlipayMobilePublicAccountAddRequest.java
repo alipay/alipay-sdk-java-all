@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.account.add request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:43:08
+ * @since 1.0, 2022-12-15 15:56:39
  */
 public class AlipayMobilePublicAccountAddRequest implements AlipayRequest<AlipayMobilePublicAccountAddResponse> {
 
@@ -42,6 +42,11 @@ public class AlipayMobilePublicAccountAddRequest implements AlipayRequest<Alipay
 	* 关注者标识
 	 */
 	private String fromUserId;
+
+	/** 
+	* 支付宝用户唯一标识（关注者）
+	 */
+	private String openId;
 
 	/** 
 	* 绑定账户的用户名
@@ -81,6 +86,13 @@ public class AlipayMobilePublicAccountAddRequest implements AlipayRequest<Alipay
 	}
 	public String getFromUserId() {
 		return this.fromUserId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setRealName(String realName) {
@@ -156,6 +168,7 @@ public class AlipayMobilePublicAccountAddRequest implements AlipayRequest<Alipay
 		txtParams.put("biz_content", this.bizContent);
 		txtParams.put("display_name", this.displayName);
 		txtParams.put("from_user_id", this.fromUserId);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("real_name", this.realName);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);

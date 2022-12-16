@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 提交车险图像定损请求
  *
  * @author auto create
- * @since 1.0, 2017-07-28 15:30:17
+ * @since 1.0, 2022-12-13 13:56:20
  */
 public class AlipayInsDataAutodamageEstimateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8276755172598483164L;
+	private static final long serialVersionUID = 1224446164441431741L;
 
 	/**
 	 * 车险商业险保单号

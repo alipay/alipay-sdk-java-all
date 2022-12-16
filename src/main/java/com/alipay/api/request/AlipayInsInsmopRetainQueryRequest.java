@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.insmop.retain.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:46:36
+ * @since 1.0, 2022-12-08 21:01:37
  */
 public class AlipayInsInsmopRetainQueryRequest implements AlipayRequest<AlipayInsInsmopRetainQueryResponse> {
 

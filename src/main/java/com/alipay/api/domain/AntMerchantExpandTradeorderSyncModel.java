@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单创建
  *
  * @author auto create
- * @since 1.0, 2022-09-26 15:39:01
+ * @since 1.0, 2022-12-14 15:21:50
  */
 public class AntMerchantExpandTradeorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1499678383586873452L;
+	private static final long serialVersionUID = 5269614255589359351L;
 
 	/**
 	 * 订单金额（单位：分）
@@ -27,6 +27,12 @@ public class AntMerchantExpandTradeorderSyncModel extends AlipayObject {
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * 用户(buyer_user_id)在应用(appId)下的唯一标识
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 扩展信息（键值对列表，有重复的键后者覆盖前者，建议唯一，以免出现不可预期的结果）
@@ -121,6 +127,13 @@ public class AntMerchantExpandTradeorderSyncModel extends AlipayObject {
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public List<OrderExtInfo> getExtInfo() {

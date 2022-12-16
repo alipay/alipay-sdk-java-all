@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.antbudget.groupbudget.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 00:49:19
+ * @since 1.0, 2022-12-09 11:29:13
  */
 public class AlipayBossFncAntbudgetGroupbudgetBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2157545731254346337L;
+	private static final long serialVersionUID = 2321273675324598823L;
 
 	/** 
 	 * 返回数据，集团预算列表集合

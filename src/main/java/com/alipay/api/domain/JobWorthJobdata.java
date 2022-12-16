@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工作证职业数据回流接口字段
  *
  * @author auto create
- * @since 1.0, 2022-12-01 19:14:17
+ * @since 1.0, 2022-12-09 14:56:54
  */
 public class JobWorthJobdata extends AlipayObject {
 
-	private static final long serialVersionUID = 6172363684625971791L;
+	private static final long serialVersionUID = 4468636531565464499L;
 
 	/**
 	 * 证书发证机构
@@ -56,6 +56,18 @@ public class JobWorthJobdata extends AlipayObject {
 	private String degree;
 
 	/**
+	 * 商户侧投递岗位id
+	 */
+	@ApiField("delivery_position_id")
+	private String deliveryPositionId;
+
+	/**
+	 * 投递时间戳
+	 */
+	@ApiField("delivery_time")
+	private Long deliveryTime;
+
+	/**
 	 * 教育状态只有两种，GRADUATE(毕业)，STUDY（未毕业）
 	 */
 	@ApiField("education_status")
@@ -74,7 +86,7 @@ public class JobWorthJobdata extends AlipayObject {
 	private String headPicId;
 
 	/**
-	 * 求职意向，城市
+	 * 求职意向，城市的adccode  例如110000（北京市）
 	 */
 	@ApiField("intention_city")
 	private String intentionCity;
@@ -276,6 +288,20 @@ public class JobWorthJobdata extends AlipayObject {
 	}
 	public void setDegree(String degree) {
 		this.degree = degree;
+	}
+
+	public String getDeliveryPositionId() {
+		return this.deliveryPositionId;
+	}
+	public void setDeliveryPositionId(String deliveryPositionId) {
+		this.deliveryPositionId = deliveryPositionId;
+	}
+
+	public Long getDeliveryTime() {
+		return this.deliveryTime;
+	}
+	public void setDeliveryTime(Long deliveryTime) {
+		this.deliveryTime = deliveryTime;
 	}
 
 	public String getEducationStatus() {

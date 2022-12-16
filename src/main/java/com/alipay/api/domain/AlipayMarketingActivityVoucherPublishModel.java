@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 激活支付券
  *
  * @author auto create
- * @since 1.0, 2022-12-07 19:48:08
+ * @since 1.0, 2022-12-12 11:13:59
  */
 public class AlipayMarketingActivityVoucherPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8727479715949925822L;
+	private static final long serialVersionUID = 2371988787953828847L;
 
 	/**
 	 * 活动id

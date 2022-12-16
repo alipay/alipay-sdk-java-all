@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * alipay.open.mini.miniapp.collectingstatus.modify
  *
  * @author auto create
- * @since 1.0, 2018-12-26 15:47:30
+ * @since 1.0, 2022-12-15 12:05:10
  */
 public class AlipayOpenMiniMiniappFavoritegiftQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6388876818977973224L;
+	private static final long serialVersionUID = 6166972878729829976L;
 
 	/**
 	 * 收藏有礼查询每个小程序相关信息的列表

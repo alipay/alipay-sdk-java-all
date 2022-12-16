@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.lifeassistant.prod.bill.get request
  * 
  * @author auto create
- * @since 1.0, 2022-10-10 20:50:03
+ * @since 1.0, 2022-12-15 15:06:49
  */
 public class AlipayLifeassistantProdBillGetRequest implements AlipayRequest<AlipayLifeassistantProdBillGetResponse> {
 
@@ -31,6 +31,11 @@ public class AlipayLifeassistantProdBillGetRequest implements AlipayRequest<Alip
 10001——新浪
 	 */
 	private String mType;
+
+	/** 
+	* 付款方外部用户ID
+	 */
+	private String openId;
 
 	/** 
 	* 支付宝订单号
@@ -54,6 +59,13 @@ public class AlipayLifeassistantProdBillGetRequest implements AlipayRequest<Alip
 	}
 	public String getmType() {
 		return this.mType;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setOrderId(String orderId) {
@@ -133,6 +145,7 @@ public class AlipayLifeassistantProdBillGetRequest implements AlipayRequest<Alip
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("biz_type", this.bizType);
 		txtParams.put("m_type", this.mType);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("order_id", this.orderId);
 		txtParams.put("uid", this.uid);
 		if(udfParams != null) {

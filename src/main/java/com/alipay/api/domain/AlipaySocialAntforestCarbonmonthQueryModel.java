@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySocialAntforestCarbonmonthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2429836928199574513L;
+	private static final long serialVersionUID = 5893351448849814722L;
 
 	/**
 	 * 接口文档提供的绿色场景类型

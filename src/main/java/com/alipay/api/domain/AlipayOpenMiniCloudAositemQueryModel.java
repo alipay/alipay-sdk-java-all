@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ai open search搜索接口
  *
  * @author auto create
- * @since 1.0, 2022-11-25 11:45:54
+ * @since 1.0, 2022-12-13 15:09:49
  */
 public class AlipayOpenMiniCloudAositemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6218163453326588379L;
+	private static final long serialVersionUID = 5439825424211546116L;
+
+	/**
+	 * 需要进行聚合返回的字段，如需要对搜索的结果的发货地字段进行聚合，则将发货地对应的字段名称传给后段既可
+	 */
+	@ApiField("aggregation_field")
+	private String aggregationField;
 
 	/**
 	 * 类目列表，搜索结果只会包含该类目的商品，为空时代表返回所有的商品。多个条件是与的关系。
@@ -78,6 +84,12 @@ public class AlipayOpenMiniCloudAositemQueryModel extends AlipayObject {
 	private String longitude;
 
 	/**
+	 * 用户唯一标识id，可以是支付宝userid、商家自定义的userid等
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 排序字段，"+"对应字段名 按字段正序，"-"对应字段名 按字段降序，支持指定多个。
 	 */
 	@ApiListField("orders")
@@ -132,6 +144,13 @@ public class AlipayOpenMiniCloudAositemQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id_type")
 	private String userIdType;
+
+	public String getAggregationField() {
+		return this.aggregationField;
+	}
+	public void setAggregationField(String aggregationField) {
+		this.aggregationField = aggregationField;
+	}
 
 	public List<String> getCate() {
 		return this.cate;
@@ -194,6 +213,13 @@ public class AlipayOpenMiniCloudAositemQueryModel extends AlipayObject {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<String> getOrders() {

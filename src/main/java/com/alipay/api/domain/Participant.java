@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账的收、付款参与方
  *
  * @author auto create
- * @since 1.0, 2022-11-24 16:10:56
+ * @since 1.0, 2022-12-09 15:41:44
  */
 public class Participant extends AlipayObject {
 
-	private static final long serialVersionUID = 2248387241347172581L;
+	private static final long serialVersionUID = 5155157156489341223L;
 
 	/**
 	 * 如果identity_type为BANKCARD_NO需传递该参数，涉及属性如下：

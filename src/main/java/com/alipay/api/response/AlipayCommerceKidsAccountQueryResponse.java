@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.kids.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 14:25:37
+ * @since 1.0, 2022-12-12 17:26:42
  */
 public class AlipayCommerceKidsAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3885794951574674617L;
+	private static final long serialVersionUID = 7179549635545444748L;
 
 	/** 
 	 * 登陆名
 	 */
 	@ApiField("login_name")
 	private String loginName;
+
+	/** 
+	 * 会员openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 会员id
@@ -31,6 +37,13 @@ public class AlipayCommerceKidsAccountQueryResponse extends AlipayResponse {
 	}
 	public String getLoginName( ) {
 		return this.loginName;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setUserId(String userId) {

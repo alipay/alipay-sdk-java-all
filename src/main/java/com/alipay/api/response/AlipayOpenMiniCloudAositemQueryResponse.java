@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.cloud.aositem.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-28 17:06:40
+ * @since 1.0, 2022-12-13 15:16:38
  */
 public class AlipayOpenMiniCloudAositemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5884366725516847814L;
+	private static final long serialVersionUID = 6648737873364928339L;
+
+	/** 
+	 * 返回请求参数中对应aggregation_field指定要聚合的字段的值
+	 */
+	@ApiField("aggregation_result")
+	private String aggregationResult;
 
 	/** 
 	 * 结果总量
@@ -35,6 +41,13 @@ public class AlipayOpenMiniCloudAositemQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("trace_id")
 	private String traceId;
+
+	public void setAggregationResult(String aggregationResult) {
+		this.aggregationResult = aggregationResult;
+	}
+	public String getAggregationResult( ) {
+		return this.aggregationResult;
+	}
 
 	public void setItemTotalCount(Long itemTotalCount) {
 		this.itemTotalCount = itemTotalCount;

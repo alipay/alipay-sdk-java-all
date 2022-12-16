@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户小程序业务数据入参
  *
  * @author auto create
- * @since 1.0, 2019-12-03 20:05:25
+ * @since 1.0, 2022-12-15 19:38:21
  */
 public class UserAppBizDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5469142653345999797L;
+	private static final long serialVersionUID = 1422497128839715369L;
 
 	/**
 	 * 信息分类，详见功能包说明，动态变更的

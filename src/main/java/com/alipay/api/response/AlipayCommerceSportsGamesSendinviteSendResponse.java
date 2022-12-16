@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.games.sendinvite.send response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 21:53:52
+ * @since 1.0, 2022-12-13 13:26:38
  */
 public class AlipayCommerceSportsGamesSendinviteSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6349872979281192343L;
+	private static final long serialVersionUID = 7715662265776737299L;
 
 	
 

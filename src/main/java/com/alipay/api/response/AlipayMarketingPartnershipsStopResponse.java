@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.partnerships.stop response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-19 14:22:35
+ * @since 1.0, 2022-12-15 21:52:22
  */
 public class AlipayMarketingPartnershipsStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6112287498879783884L;
+	private static final long serialVersionUID = 3847226336121151177L;
 
 	/** 
 	 * 合作状态，枚举值： ESTABLISHED：已建立 TERMINATED：已终止

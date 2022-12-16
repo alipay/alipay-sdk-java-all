@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.open.public.tmall.follow.create(品牌号关注关系同步)
  *
  * @author auto create
- * @since 1.0, 2021-03-10 17:26:04
+ * @since 1.0, 2022-12-14 19:10:49
  */
 public class AlipayOpenPublicFollowCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4296526892995339713L;
+	private static final long serialVersionUID = 5428545289314533252L;
+
+	/**
+	 * 支付宝用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 来源，目前只有"tmall"
@@ -24,6 +30,13 @@ public class AlipayOpenPublicFollowCreateModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getSource() {
 		return this.source;

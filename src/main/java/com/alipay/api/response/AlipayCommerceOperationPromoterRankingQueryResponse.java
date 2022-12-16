@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationPromoterRankingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1648828194378663619L;
+	private static final long serialVersionUID = 4717362367928733367L;
 
 	/** 
 	 * 排名信息

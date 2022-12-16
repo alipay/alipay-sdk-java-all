@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险干系人
  *
  * @author auto create
- * @since 1.0, 2021-09-02 15:58:39
+ * @since 1.0, 2022-12-14 10:20:36
  */
 public class InsPerson extends AlipayObject {
 
-	private static final long serialVersionUID = 4617846348199993479L;
+	private static final long serialVersionUID = 8347574253662493618L;
 
 	/**
 	 * 地址
@@ -40,6 +40,18 @@ public class InsPerson extends AlipayObject {
 	private String bizData;
 
 	/**
+	 * 证件生效日期，提供给银保监会用于实名查验，"yyyy-mm-dd"格式
+	 */
+	@ApiField("cert_effective_date")
+	private String certEffectiveDate;
+
+	/**
+	 * 证件失效日期，提供给银保监会用于实名查验，"yyyy-mm-dd"格式，若超过或等于2999-01-01代表长期生效
+	 */
+	@ApiField("cert_expiration_date")
+	private String certExpirationDate;
+
+	/**
 	 * 证件上名称;如果渠道账号字段没填则必填
 	 */
 	@ApiField("cert_name")
@@ -63,6 +75,12 @@ public class InsPerson extends AlipayObject {
 	 */
 	@ApiField("channel_user_id")
 	private String channelUserId;
+
+	/**
+	 * channel_user_id为支付宝id时对应的openid
+	 */
+	@ApiField("channel_user_open_id")
+	private String channelUserOpenId;
 
 	/**
 	 * 渠道账号来源;1:支付宝账号 2:淘宝账号;如果证件类型字段没填则必填
@@ -93,6 +111,12 @@ public class InsPerson extends AlipayObject {
 	 */
 	@ApiField("nationality")
 	private String nationality;
+
+	/**
+	 * user_id为支付宝id时对应的openid
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 电话号码
@@ -140,6 +164,20 @@ public class InsPerson extends AlipayObject {
 		this.bizData = bizData;
 	}
 
+	public String getCertEffectiveDate() {
+		return this.certEffectiveDate;
+	}
+	public void setCertEffectiveDate(String certEffectiveDate) {
+		this.certEffectiveDate = certEffectiveDate;
+	}
+
+	public String getCertExpirationDate() {
+		return this.certExpirationDate;
+	}
+	public void setCertExpirationDate(String certExpirationDate) {
+		this.certExpirationDate = certExpirationDate;
+	}
+
 	public String getCertName() {
 		return this.certName;
 	}
@@ -166,6 +204,13 @@ public class InsPerson extends AlipayObject {
 	}
 	public void setChannelUserId(String channelUserId) {
 		this.channelUserId = channelUserId;
+	}
+
+	public String getChannelUserOpenId() {
+		return this.channelUserOpenId;
+	}
+	public void setChannelUserOpenId(String channelUserOpenId) {
+		this.channelUserOpenId = channelUserOpenId;
 	}
 
 	public String getChannelUserSource() {
@@ -201,6 +246,13 @@ public class InsPerson extends AlipayObject {
 	}
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPhone() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 焕旭科技聚合支付产品支付指令关闭接口
  *
  * @author auto create
- * @since 1.0, 2021-03-17 20:20:23
+ * @since 1.0, 2022-12-16 11:18:21
  */
 public class HuanxuTradeOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2325826576971897737L;
+	private static final long serialVersionUID = 4586533119729834335L;
 
 	/**
 	 * 支付id，焕旭针对每一笔支付请求生成的唯一支付凭证

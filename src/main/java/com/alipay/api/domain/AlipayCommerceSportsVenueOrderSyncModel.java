@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文体中心订单数据同步
  *
  * @author auto create
- * @since 1.0, 2022-03-08 22:41:34
+ * @since 1.0, 2022-12-09 17:05:17
  */
 public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1571162533888363948L;
+	private static final long serialVersionUID = 7755678366828486829L;
 
 	/**
 	 * 订单创建时间
 	 */
 	@ApiField("create_time")
 	private String createTime;
+
+	/**
+	 * 买家支付宝OPENID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单交易状态,pay_succ-已支付（若支持多次核销则在全部核销之前都是已支付状态）,refund_succ-已退款,verify_proc-使用中（已入场但是还未结束）,verify_succ-已使用,overdue-已过期（超过使用时间未使用且未退款）
@@ -95,6 +101,13 @@ public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 	}
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderStatus() {

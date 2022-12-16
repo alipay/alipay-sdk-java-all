@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好友信息VO
  *
  * @author auto create
- * @since 1.0, 2021-02-08 10:46:45
+ * @since 1.0, 2022-12-12 16:13:50
  */
 public class FriendVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3855243716142296785L;
+	private static final long serialVersionUID = 4338817427268516842L;
 
 	/**
 	 * 好友open_id

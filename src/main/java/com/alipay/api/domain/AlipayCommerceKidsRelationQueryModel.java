@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 亲子关系查询
  *
  * @author auto create
- * @since 1.0, 2020-12-04 18:01:45
+ * @since 1.0, 2022-12-12 17:24:51
  */
 public class AlipayCommerceKidsRelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6877237121139818883L;
+	private static final long serialVersionUID = 2483325869176592437L;
+
+	/**
+	 * 家长支付宝openid，用于查询与该家长关联的孩子
+	 */
+	@ApiField("parent_open_id")
+	private String parentOpenId;
 
 	/**
 	 * 家长支付宝userId，用于查询与该家长关联的孩子
@@ -30,6 +36,13 @@ public class AlipayCommerceKidsRelationQueryModel extends AlipayObject {
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
+
+	public String getParentOpenId() {
+		return this.parentOpenId;
+	}
+	public void setParentOpenId(String parentOpenId) {
+		this.parentOpenId = parentOpenId;
+	}
 
 	public String getParentUid() {
 		return this.parentUid;

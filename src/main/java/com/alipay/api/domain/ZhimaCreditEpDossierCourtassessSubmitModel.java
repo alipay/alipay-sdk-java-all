@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 涉诉风险评估订单状态提交
  *
  * @author auto create
- * @since 1.0, 2022-01-07 14:37:33
+ * @since 1.0, 2022-12-16 08:56:28
  */
 public class ZhimaCreditEpDossierCourtassessSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1238181254267452576L;
+	private static final long serialVersionUID = 7872823699293127426L;
 
 	/**
 	 * 订单号

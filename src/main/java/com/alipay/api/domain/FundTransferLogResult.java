@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云店资金转账记录
  *
  * @author auto create
- * @since 1.0, 2022-05-30 20:20:31
+ * @since 1.0, 2022-12-14 11:56:55
  */
 public class FundTransferLogResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7618139822398426582L;
+	private static final long serialVersionUID = 2546324169864753228L;
 
 	/**
 	 * 转账金额
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 失败原因
+	 */
+	@ApiField("fail_reason")
+	private String failReason;
 
 	/**
 	 * 资金操作备注
@@ -30,6 +36,12 @@ public class FundTransferLogResult extends AlipayObject {
 	 */
 	@ApiField("source_account")
 	private String sourceAccount;
+
+	/**
+	 * 转账日志记录状态
+	 */
+	@ApiField("status")
+	private String status;
 
 	/**
 	 * 目标账户
@@ -64,6 +76,13 @@ WITHDRAW：提现
 		this.amount = amount;
 	}
 
+	public String getFailReason() {
+		return this.failReason;
+	}
+	public void setFailReason(String failReason) {
+		this.failReason = failReason;
+	}
+
 	public String getRemark() {
 		return this.remark;
 	}
@@ -76,6 +95,13 @@ WITHDRAW：提现
 	}
 	public void setSourceAccount(String sourceAccount) {
 		this.sourceAccount = sourceAccount;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getTargetAccount() {

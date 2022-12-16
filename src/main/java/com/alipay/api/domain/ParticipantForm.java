@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 场景钱包参与者信息
+ * 增加openID映射
  *
  * @author auto create
- * @since 1.0, 2022-08-01 11:51:20
+ * @since 1.0, 2022-12-13 14:59:09
  */
 public class ParticipantForm extends AlipayObject {
 
-	private static final long serialVersionUID = 4723961138386157651L;
+	private static final long serialVersionUID = 1878289956213897218L;
 
 	/**
 	 * 扩展信息
@@ -30,6 +30,12 @@ public class ParticipantForm extends AlipayObject {
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 参与者账号
+	 */
+	@ApiField("principal_open_id")
+	private String principalOpenId;
 
 	public String getExtInfo() {
 		return this.extInfo;
@@ -50,6 +56,13 @@ public class ParticipantForm extends AlipayObject {
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getPrincipalOpenId() {
+		return this.principalOpenId;
+	}
+	public void setPrincipalOpenId(String principalOpenId) {
+		this.principalOpenId = principalOpenId;
 	}
 
 }

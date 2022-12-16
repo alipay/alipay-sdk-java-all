@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.unitedopencoupon.config.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 17:08:39
+ * @since 1.0, 2022-12-12 14:26:38
  */
 public class AlipayMarketingCampaignUnitedopencouponConfigQueryRequest implements AlipayRequest<AlipayMarketingCampaignUnitedopencouponConfigQueryResponse> {
 

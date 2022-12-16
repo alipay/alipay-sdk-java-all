@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.iotdata.batchcreate response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 11:16:38
+ * @since 1.0, 2022-12-09 19:26:38
  */
 public class AlipayMerchantIndirectIotdataBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6584242269637787195L;
+	private static final long serialVersionUID = 5522148247262167647L;
 
 	/** 
 	 * 失败记录详情

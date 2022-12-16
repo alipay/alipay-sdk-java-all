@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业抬头新增
  *
  * @author auto create
- * @since 1.0, 2022-11-22 09:59:25
+ * @since 1.0, 2022-12-14 14:40:15
  */
 public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6743372851124573913L;
+	private static final long serialVersionUID = 6355876174555739734L;
 
 	/**
-	 * 企业ID
+	 * 共同账户id，与enterprise_id两者必填其一
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -42,6 +42,12 @@ public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleCreateModel extends A
 	 */
 	@ApiField("bank_name")
 	private String bankName;
+
+	/**
+	 * 企业id，与account_id两者必填其一
+	 */
+	@ApiField("enterprise_id")
+	private String enterpriseId;
 
 	/**
 	 * 税号
@@ -94,6 +100,13 @@ public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleCreateModel extends A
 	}
 	public void setBankName(String bankName) {
 		this.bankName = bankName;
+	}
+
+	public String getEnterpriseId() {
+		return this.enterpriseId;
+	}
+	public void setEnterpriseId(String enterpriseId) {
+		this.enterpriseId = enterpriseId;
 	}
 
 	public String getTaxRegisterNo() {

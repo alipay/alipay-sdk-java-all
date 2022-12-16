@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherUseTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8112698163175133375L;
+	private static final long serialVersionUID = 3357639891321698119L;
 
 	/**
 	 * 券绝对时间可用。

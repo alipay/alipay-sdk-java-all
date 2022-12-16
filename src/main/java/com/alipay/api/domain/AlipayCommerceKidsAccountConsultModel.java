@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 儿童账户咨询
  *
  * @author auto create
- * @since 1.0, 2020-01-07 11:03:58
+ * @since 1.0, 2022-12-12 17:24:50
  */
 public class AlipayCommerceKidsAccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4128237729121271398L;
+	private static final long serialVersionUID = 5399163546985859912L;
 
 	/**
 	 * 与child_cert_type对应，如果child_cert_type为IDENTITY_CARD，对应的取值为身份证号
@@ -32,10 +32,22 @@ public class AlipayCommerceKidsAccountConsultModel extends AlipayObject {
 	private InfoSource infoSource;
 
 	/**
+	 * 当前操作者支付宝openid
+	 */
+	@ApiField("operator_open_id")
+	private String operatorOpenId;
+
+	/**
 	 * 当前操作者支付宝userId
 	 */
 	@ApiField("operator_uid")
 	private String operatorUid;
+
+	/**
+	 * 家长支付宝openid，用于查询与该家长关联的孩子
+	 */
+	@ApiField("parent_open_id")
+	private String parentOpenId;
 
 	/**
 	 * 家长支付宝userId，用于查询与该家长关联的孩子
@@ -70,11 +82,25 @@ public class AlipayCommerceKidsAccountConsultModel extends AlipayObject {
 		this.infoSource = infoSource;
 	}
 
+	public String getOperatorOpenId() {
+		return this.operatorOpenId;
+	}
+	public void setOperatorOpenId(String operatorOpenId) {
+		this.operatorOpenId = operatorOpenId;
+	}
+
 	public String getOperatorUid() {
 		return this.operatorUid;
 	}
 	public void setOperatorUid(String operatorUid) {
 		this.operatorUid = operatorUid;
+	}
+
+	public String getParentOpenId() {
+		return this.parentOpenId;
+	}
+	public void setParentOpenId(String parentOpenId) {
+		this.parentOpenId = parentOpenId;
 	}
 
 	public String getParentUid() {

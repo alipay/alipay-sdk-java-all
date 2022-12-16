@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生效策略条件组建
  *
  * @author auto create
- * @since 1.0, 2020-05-06 19:07:46
+ * @since 1.0, 2022-12-15 17:46:10
  */
 public class OpenApiValidStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 2674751445861627499L;
+	private static final long serialVersionUID = 4461913495247761865L;
 
 	/**
 	 * 失效时间

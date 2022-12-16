@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务模版信息
  *
  * @author auto create
- * @since 1.0, 2022-03-17 15:18:28
+ * @since 1.0, 2022-12-13 15:30:35
  */
 public class YunTaskTemplateInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8475676132613656628L;
+	private static final long serialVersionUID = 2333775442443599251L;
 
 	/**
 	 * 小程序id
@@ -110,6 +110,12 @@ ALGOLADDER 算法阶梯
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 支持同码激励
+	 */
+	@ApiField("support_unified_material_code")
+	private Boolean supportUnifiedMaterialCode;
 
 	/**
 	 * 任务描述
@@ -243,6 +249,13 @@ ALGOLADDER 算法阶梯
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public Boolean getSupportUnifiedMaterialCode() {
+		return this.supportUnifiedMaterialCode;
+	}
+	public void setSupportUnifiedMaterialCode(Boolean supportUnifiedMaterialCode) {
+		this.supportUnifiedMaterialCode = supportUnifiedMaterialCode;
 	}
 
 	public String getTaskDesc() {

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家生活号信息查询
  *
  * @author auto create
- * @since 1.0, 2021-01-25 16:28:52
+ * @since 1.0, 2022-12-14 17:18:50
  */
 public class AlipayOpenPublicSummaryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1341677991498563573L;
+	private static final long serialVersionUID = 4213774979145649269L;
+
+	/**
+	 * 支付宝用户的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户ID
@@ -24,6 +30,13 @@ public class AlipayOpenPublicSummaryQueryModel extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getPartnerId() {
 		return this.partnerId;

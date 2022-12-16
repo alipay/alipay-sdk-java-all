@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 语音播报数据记录详情
  *
  * @author auto create
- * @since 1.0, 2022-12-05 10:22:30
+ * @since 1.0, 2022-12-09 19:26:15
  */
 public class SpeechRecordDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2221544324942374313L;
+	private static final long serialVersionUID = 1452195398774939844L;
 
 	/**
 	 * 播报关联的支付宝运营计划id

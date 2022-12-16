@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.auto.service.coupon.verify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:11:56
+ * @since 1.0, 2022-12-13 14:10:01
  */
 public class AlipayInsAutoServiceCouponVerifyRequest implements AlipayRequest<AlipayInsAutoServiceCouponVerifyResponse> {
 

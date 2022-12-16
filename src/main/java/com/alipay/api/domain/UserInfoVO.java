@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询亲子关系，返回亲子关系信息
  *
  * @author auto create
- * @since 1.0, 2022-11-25 10:12:20
+ * @since 1.0, 2022-12-12 17:24:51
  */
 public class UserInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7618685165186837619L;
+	private static final long serialVersionUID = 1659238411722858733L;
 
 	/**
 	 * 孩子生日
@@ -30,6 +30,12 @@ public class UserInfoVO extends AlipayObject {
 	 */
 	@ApiField("nick_name")
 	private String nickName;
+
+	/**
+	 * 孩子OpenID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 孩子UID
@@ -56,6 +62,13 @@ public class UserInfoVO extends AlipayObject {
 	}
 	public void setNickName(String nickName) {
 		this.nickName = nickName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

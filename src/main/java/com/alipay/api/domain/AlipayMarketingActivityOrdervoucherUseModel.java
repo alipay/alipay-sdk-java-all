@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单券核销
  *
  * @author auto create
- * @since 1.0, 2022-08-19 14:22:17
+ * @since 1.0, 2022-12-09 19:38:50
  */
 public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3193249946749985268L;
+	private static final long serialVersionUID = 1863212941816233246L;
 
 	/**
 	 * 优惠券活动id
@@ -135,6 +135,12 @@ OTHER_TRADE_CHANNEL：
 	@ApiField("voucher_code")
 	private String voucherCode;
 
+	/**
+	 * 券核销详情
+	 */
+	@ApiField("voucher_use_detail_info")
+	private VoucherUseDetailInfo voucherUseDetailInfo;
+
 	public String getActivityId() {
 		return this.activityId;
 	}
@@ -210,6 +216,13 @@ OTHER_TRADE_CHANNEL：
 	}
 	public void setVoucherCode(String voucherCode) {
 		this.voucherCode = voucherCode;
+	}
+
+	public VoucherUseDetailInfo getVoucherUseDetailInfo() {
+		return this.voucherUseDetailInfo;
+	}
+	public void setVoucherUseDetailInfo(VoucherUseDetailInfo voucherUseDetailInfo) {
+		this.voucherUseDetailInfo = voucherUseDetailInfo;
 	}
 
 }

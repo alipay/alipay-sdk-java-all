@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车离场信息同步接口
  *
  * @author auto create
- * @since 1.0, 2022-10-24 19:24:49
+ * @since 1.0, 2022-12-14 15:03:50
  */
 public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7684674348293567239L;
+	private static final long serialVersionUID = 3456896756945588351L;
 
 	/**
 	 * 车牌是否加密，true为加密，false为不加密，默认为false
 	 */
 	@ApiField("is_encrypt_plate_no")
 	private Boolean isEncryptPlateNo;
+
+	/**
+	 * 蚂蚁会员统一ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部停车流水号(用于串通进场与出场信息)
@@ -63,6 +69,13 @@ public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObjec
 	}
 	public void setIsEncryptPlateNo(Boolean isEncryptPlateNo) {
 		this.isEncryptPlateNo = isEncryptPlateNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutSerialNo() {

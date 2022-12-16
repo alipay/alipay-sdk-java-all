@@ -7,11 +7,39 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2022-11-29 16:35:08
+ * @since 1.0, 2022-12-15 19:15:57
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5719912539581578692L;
+	private static final long serialVersionUID = 2258611138771828438L;
+
+	/**
+	 * cardType + 唯一 + 储值卡类目投保场景 + 通过上下游约定获取
+枚举类型：
+    STORED("STORED", "储值卡"),
+    FREQUENCY("FREQUENCY", "次卡"),
+    TERM("TERM", "周期卡"),
+	 */
+	@ApiField("card_type")
+	private String cardType;
+
+	/**
+	 * 储值卡可用金额，单位分
+	 */
+	@ApiField("card_use_amount")
+	private Long cardUseAmount;
+
+	/**
+	 * 储值卡可用次数
+	 */
+	@ApiField("card_use_count")
+	private Long cardUseCount;
+
+	/**
+	 * 储值卡使用周期，单位天
+	 */
+	@ApiField("card_use_period")
+	private Long cardUsePeriod;
 
 	/**
 	 * extInfo
@@ -54,6 +82,34 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	 */
 	@ApiField("lockable_device")
 	private Boolean lockableDevice;
+
+	public String getCardType() {
+		return this.cardType;
+	}
+	public void setCardType(String cardType) {
+		this.cardType = cardType;
+	}
+
+	public Long getCardUseAmount() {
+		return this.cardUseAmount;
+	}
+	public void setCardUseAmount(Long cardUseAmount) {
+		this.cardUseAmount = cardUseAmount;
+	}
+
+	public Long getCardUseCount() {
+		return this.cardUseCount;
+	}
+	public void setCardUseCount(Long cardUseCount) {
+		this.cardUseCount = cardUseCount;
+	}
+
+	public Long getCardUsePeriod() {
+		return this.cardUsePeriod;
+	}
+	public void setCardUsePeriod(Long cardUsePeriod) {
+		this.cardUsePeriod = cardUsePeriod;
+	}
 
 	public String getExtInfo() {
 		return this.extInfo;

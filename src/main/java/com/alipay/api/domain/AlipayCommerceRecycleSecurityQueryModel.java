@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安全回收-用户风险等级查询接口
  *
  * @author auto create
- * @since 1.0, 2022-10-28 19:28:12
+ * @since 1.0, 2022-12-09 17:36:51
  */
 public class AlipayCommerceRecycleSecurityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2181744593868912584L;
+	private static final long serialVersionUID = 6428464657253213137L;
 
 	/**
 	 * 风险咨询主体设备号
@@ -32,6 +32,12 @@ public class AlipayCommerceRecycleSecurityQueryModel extends AlipayObject {
 	 */
 	@ApiField("mobile")
 	private String mobile;
+
+	/**
+	 * 风险咨询主体的支付宝账号
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 预估回收价格，单位元。
@@ -70,6 +76,13 @@ public class AlipayCommerceRecycleSecurityQueryModel extends AlipayObject {
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderAmount() {

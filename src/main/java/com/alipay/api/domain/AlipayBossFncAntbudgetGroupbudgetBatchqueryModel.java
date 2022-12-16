@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 有权限的集团预算基础信息和可用余额查询
  *
  * @author auto create
- * @since 1.0, 2021-09-17 16:51:46
+ * @since 1.0, 2022-12-08 19:01:40
  */
 public class AlipayBossFncAntbudgetGroupbudgetBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8494776913579794187L;
+	private static final long serialVersionUID = 2672218574429166178L;
 
 	/**
 	 * 财年，例如：2021

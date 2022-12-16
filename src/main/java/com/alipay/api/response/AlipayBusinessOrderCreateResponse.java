@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBusinessOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3449455276398436978L;
+	private static final long serialVersionUID = 8677711336826516494L;
 
 	/** 
 	 * 订单创建确认营销信息。订单有营销信息时返回该参数。注：promotion_list包含商户券信息与平台营销信息如阿里红包等；use_mode与入参selected_marketing中的use_mode值相同

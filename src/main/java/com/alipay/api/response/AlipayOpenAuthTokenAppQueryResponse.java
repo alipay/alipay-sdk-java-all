@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.auth.token.app.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 16:51:39
+ * @since 1.0, 2022-12-13 16:53:46
  */
 public class AlipayOpenAuthTokenAppQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4655619934297493348L;
+	private static final long serialVersionUID = 2666775959937136615L;
 
 	/** 
 	 * 授权商户的appid
@@ -49,7 +49,7 @@ public class AlipayOpenAuthTokenAppQueryResponse extends AlipayResponse {
 	private Long expiresIn;
 
 	/** 
-	 * 当商家选择全权委托授权时值为true，未选择时为false。当前仅对试点服务商开放此字段。
+	 * 当商家选择全权委托授权时值为true，未选择时为false。
 	 */
 	@ApiField("is_by_app_auth")
 	private Boolean isByAppAuth;

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票资料收件人信息
  *
  * @author auto create
- * @since 1.0, 2019-12-17 17:00:53
+ * @since 1.0, 2022-12-13 16:29:33
  */
 public class UserMailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4649977754556651783L;
+	private static final long serialVersionUID = 6267184638164672313L;
 
 	/**
 	 * 收件人地址
@@ -44,6 +44,12 @@ public class UserMailInfoVO extends AlipayObject {
 	 */
 	@ApiField("detail_address")
 	private String detailAddress;
+
+	/**
+	 * 邮件人的电子邮箱
+	 */
+	@ApiField("email")
+	private String email;
 
 	/**
 	 * 创建时间
@@ -126,6 +132,13 @@ public class UserMailInfoVO extends AlipayObject {
 	}
 	public void setDetailAddress(String detailAddress) {
 		this.detailAddress = detailAddress;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public Date getGmtCreate() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家券退券
  *
  * @author auto create
- * @since 1.0, 2022-08-19 12:58:45
+ * @since 1.0, 2022-12-09 21:46:16
  */
 public class AlipayMarketingActivityOrdervoucherRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7289985697165131763L;
+	private static final long serialVersionUID = 3316115378955149874L;
 
 	/**
 	 * 优惠券活动id
@@ -79,6 +79,12 @@ AGENCY_MODE 服务商代接入模式
 	@ApiField("voucher_code")
 	private String voucherCode;
 
+	/**
+	 * 券取消核销详情
+	 */
+	@ApiField("voucher_refund_detail_info")
+	private VoucherRefundDetailInfo voucherRefundDetailInfo;
+
 	public String getActivityId() {
 		return this.activityId;
 	}
@@ -119,6 +125,13 @@ AGENCY_MODE 服务商代接入模式
 	}
 	public void setVoucherCode(String voucherCode) {
 		this.voucherCode = voucherCode;
+	}
+
+	public VoucherRefundDetailInfo getVoucherRefundDetailInfo() {
+		return this.voucherRefundDetailInfo;
+	}
+	public void setVoucherRefundDetailInfo(VoucherRefundDetailInfo voucherRefundDetailInfo) {
+		this.voucherRefundDetailInfo = voucherRefundDetailInfo;
 	}
 
 }

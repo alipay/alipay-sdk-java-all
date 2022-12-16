@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支付宝好友列表
  *
  * @author auto create
- * @since 1.0, 2021-01-14 15:25:14
+ * @since 1.0, 2022-12-13 16:04:52
  */
 public class AlipayCommerceSportsGamesFriendlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7122281894468832135L;
+	private static final long serialVersionUID = 4272589423479191139L;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getUserId() {
 		return this.userId;

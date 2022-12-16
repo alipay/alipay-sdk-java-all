@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单创建并支付
  *
  * @author auto create
- * @since 1.0, 2022-11-01 11:34:04
+ * @since 1.0, 2022-12-14 15:32:15
  */
 public class AlipayMerchantOrderCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8398489476528568744L;
+	private static final long serialVersionUID = 8674363131948996745L;
 
 	/**
 	 * 不同的业务类型有不同的状态推进逻辑，同时对于支付的驱动有不同的处理方法。如阿里云的现金支付不需要订单驱动，阿里云的纯积分支付需要等待代扣成功消息才算支付成功。
@@ -41,6 +41,12 @@ public class AlipayMerchantOrderCreateandpayModel extends AlipayObject {
 	@ApiListField("goods_infos")
 	@ApiField("goods_information")
 	private List<GoodsInformation> goodsInfos;
+
+	/**
+	 * 用户(buyer中的identity)在应用(appid)下的唯一标识，当issuer为ALIPAY且type为USER_ID时使用
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单金额，比如[{"type":"MONEY","amount":88.66},{"type":"FAMILY_POINT","amount":2000}]，代表订单中所有商品需要支付的总金额是88.66元+2000家庭积分。
@@ -100,6 +106,13 @@ public class AlipayMerchantOrderCreateandpayModel extends AlipayObject {
 	}
 	public void setGoodsInfos(List<GoodsInformation> goodsInfos) {
 		this.goodsInfos = goodsInfos;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<PriceInformation> getOrderAmount() {
