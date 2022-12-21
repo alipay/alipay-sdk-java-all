@@ -108,9 +108,9 @@ public class Main {
 [SDK文档首页](https://docs.open.alipay.com/54/103419/)
 
 ## 公告
-支付宝开放平台OpenAPI配套服务端Java SDK（alipay-sdk-java）在4.34.0之前使用了不安全的Fastjson版本（详见：[关于Fastjson漏洞预警的公告](https://opendocs.alipay.com/rules/03f7dr) ）。
+经监测，开源的Java开发组件Fastjson存在远程代码执行漏洞，攻击者可利用上述漏洞远程执行任意代码。Java SDK（alipay-sdk-java）在4.34.0版本之前使用了存在漏洞的Fastjson版本（详见：[关于Fastjson漏洞预警的公告](https://opendocs.alipay.com/rules/03f7dr) ）。
 
-建议将SDK升级至4.34.0或其之后版本以修复该安全漏洞（如已是更新版本请忽略，无需任何操作），SDK会保持向下兼容，理论上不会对业务有负面影响。但仍强烈建议升级后进行业务功能的回归验证，以免不可预见的兼容性问题影响业务正常运行。
+建议将上述SDK升级至 4.34.0 及以上版本（如已是更新版本请忽略，无需任何操作），以免出现风险或损失。
 
 升级说明：
 请将项目中对Java SDK的Maven依赖的版本号更新到`4.34.0.ALL`或以上，如下所示：
@@ -121,6 +121,10 @@ public class Main {
     <version>4.34.0.ALL</version>
 </dependency>
 ```
+
+温馨提示：
+1）强烈建议开发者在升级后进行业务功能的回归验证，以免出现不可预见的兼容性问题影响业务正常运行。
+2）如若遇到特殊情况导致升级失败，请进行代码回滚，修改POM引用的原版本。
 
 ## 问题
 不管您在使用SDK的过程中遇到任何问题，欢迎前往 [支付宝开放社区](https://forum.alipay.com/mini-app/channel/1100001)  发帖与支付宝工作人员和其他开发者一起交流。
