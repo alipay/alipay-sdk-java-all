@@ -101,11 +101,26 @@ public class Main {
 }
 ```
 
-##快速排查
+## 快速排查
 当response.isSuccess()返回false时，您可通过日志查看trace_id。trace_id可提供给支付宝技术支持用于问题的快速排查
 
 ## 文档
 [SDK文档首页](https://docs.open.alipay.com/54/103419/)
+
+## 公告
+支付宝开放平台OpenAPI配套服务端Java SDK（alipay-sdk-java）在4.34.0之前使用了不安全的Fastjson版本（详见：[关于Fastjson漏洞预警的公告](https://opendocs.alipay.com/rules/03f7dr) ）。
+
+建议将SDK升级至4.34.0或其之后版本以修复该安全漏洞（如已是更新版本请忽略，无需任何操作），SDK会保持向下兼容，理论上不会对业务有负面影响。但仍强烈建议升级后进行业务功能的回归验证，以免不可预见的兼容性问题影响业务正常运行。
+
+升级说明：
+请将项目中对Java SDK的Maven依赖的版本号更新到`4.34.0.ALL`或以上，如下所示：
+```xml
+<dependency>
+    <groupId>com.alipay.sdk</groupId>
+    <artifactId>alipay-sdk-java</artifactId>
+    <version>4.34.0.ALL</version>
+</dependency>
+```
 
 ## 问题
 不管您在使用SDK的过程中遇到任何问题，欢迎前往 [支付宝开放社区](https://forum.alipay.com/mini-app/channel/1100001)  发帖与支付宝工作人员和其他开发者一起交流。
