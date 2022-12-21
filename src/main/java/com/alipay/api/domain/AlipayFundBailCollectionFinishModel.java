@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保证金委托代扣案件终止
  *
  * @author auto create
- * @since 1.0, 2022-12-06 10:22:16
+ * @since 1.0, 2022-12-20 21:32:14
  */
 public class AlipayFundBailCollectionFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4693219492447746374L;
+	private static final long serialVersionUID = 6567178743876994444L;
 
 	/**
 	 * 代扣协议号，对应唯一的保证金代扣协议及保证金资金池
@@ -30,6 +30,12 @@ public class AlipayFundBailCollectionFinishModel extends AlipayObject {
 	 */
 	@ApiField("out_collection_no")
 	private String outCollectionNo;
+
+	/**
+	 * 催收案件主体，请输入2088开头的16位uid
+	 */
+	@ApiField("principal_open_id")
+	private String principalOpenId;
 
 	/**
 	 * 催收案件主体，请输入2088开头的16位uid
@@ -62,6 +68,13 @@ public class AlipayFundBailCollectionFinishModel extends AlipayObject {
 	}
 	public void setOutCollectionNo(String outCollectionNo) {
 		this.outCollectionNo = outCollectionNo;
+	}
+
+	public String getPrincipalOpenId() {
+		return this.principalOpenId;
+	}
+	public void setPrincipalOpenId(String principalOpenId) {
+		this.principalOpenId = principalOpenId;
 	}
 
 	public String getPrincipalUserId() {

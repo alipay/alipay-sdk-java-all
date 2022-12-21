@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户风险服务输出
  *
  * @author auto create
- * @since 1.0, 2022-11-17 10:29:21
+ * @since 1.0, 2022-12-20 17:17:49
  */
 public class AlipaySecurityRiskCustomerriskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1124795874173593863L;
+	private static final long serialVersionUID = 1619777664748531872L;
 
 	/**
 	 * 用于查询银行卡号是否有风险
@@ -56,6 +56,12 @@ public class AlipaySecurityRiskCustomerriskQueryModel extends AlipayObject {
 	private String mobileNo;
 
 	/**
+	 * 支付宝openId
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 查询商户风险类型时：支持以下三种：riskinfo_cert_no（身份证风险查询）,riskinfo_bank_card_no（银行卡风险查询），riskinfo_business_license_no（营业执照风险查询）
 查询ISV风险类型时：支持以下二种：riskinfo_cert_no_isv（服务商法人身份证风险查询），riskinfo_business_license_no_isv（营业执照风险查询）。
 营销作弊风险场景：riskinfo_marketing
@@ -64,6 +70,12 @@ public class AlipaySecurityRiskCustomerriskQueryModel extends AlipayObject {
 	 */
 	@ApiField("risk_type")
 	private String riskType;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getBankCardNo() {
 		return this.bankCardNo;
@@ -114,11 +126,25 @@ public class AlipaySecurityRiskCustomerriskQueryModel extends AlipayObject {
 		this.mobileNo = mobileNo;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getRiskType() {
 		return this.riskType;
 	}
 	public void setRiskType(String riskType) {
 		this.riskType = riskType;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

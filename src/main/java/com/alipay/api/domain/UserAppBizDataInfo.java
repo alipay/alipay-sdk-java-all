@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户小程序业务数据入参
  *
  * @author auto create
- * @since 1.0, 2022-12-15 19:38:21
+ * @since 1.0, 2022-12-16 18:17:29
  */
 public class UserAppBizDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1422497128839715369L;
+	private static final long serialVersionUID = 8538424899683942488L;
 
 	/**
 	 * 信息分类，详见功能包说明，动态变更的
@@ -48,6 +48,12 @@ public class UserAppBizDataInfo extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 业务开始时间，毫秒时间戳
@@ -113,6 +119,13 @@ public class UserAppBizDataInfo extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getStartTime() {

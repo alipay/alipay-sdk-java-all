@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自动攒计划调拨统计查询
  *
  * @author auto create
- * @since 1.0, 2022-12-05 14:06:57
+ * @since 1.0, 2022-12-16 19:55:50
  */
 public class AlipayFundJointaccountFundallocCountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7275847465215376781L;
+	private static final long serialVersionUID = 6771634294544887211L;
 
 	/**
 	 * 合花群ID<br>
@@ -59,6 +59,12 @@ public class AlipayFundJointaccountFundallocCountQueryModel extends AlipayObject
 	private String identityType;
 
 	/**
+	 * （发起人）用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 销售产品码
 	 */
 	@ApiField("product_code")
@@ -104,6 +110,13 @@ public class AlipayFundJointaccountFundallocCountQueryModel extends AlipayObject
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProductCode() {

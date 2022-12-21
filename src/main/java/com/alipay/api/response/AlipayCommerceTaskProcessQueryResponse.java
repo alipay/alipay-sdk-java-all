@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.task.process.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-18 15:26:50
+ * @since 1.0, 2022-12-16 16:07:06
  */
 public class AlipayCommerceTaskProcessQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4862338317754875683L;
+	private static final long serialVersionUID = 7343326697886558687L;
 
 	/** 
 	 * 支付宝用户id
@@ -31,6 +31,12 @@ public class AlipayCommerceTaskProcessQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("current")
 	private String current;
+
+	/** 
+	 * 支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 任务指标数值
@@ -75,6 +81,13 @@ public class AlipayCommerceTaskProcessQueryResponse extends AlipayResponse {
 	}
 	public String getCurrent( ) {
 		return this.current;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setTarget(String target) {

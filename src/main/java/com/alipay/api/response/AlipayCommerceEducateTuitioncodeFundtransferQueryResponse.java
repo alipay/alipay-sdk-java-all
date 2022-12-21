@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.tuitioncode.fundtransfer.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-04 18:12:50
+ * @since 1.0, 2022-12-19 15:36:40
  */
 public class AlipayCommerceEducateTuitioncodeFundtransferQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8122557356482312241L;
+	private static final long serialVersionUID = 5823314637335972192L;
 
 	/** 
 	 * 资金划拨单的理论划拨金额

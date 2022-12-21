@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除自动攒计划
  *
  * @author auto create
- * @since 1.0, 2022-12-05 14:05:42
+ * @since 1.0, 2022-12-16 19:44:16
  */
 public class AlipayFundJointaccountFundplanDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2276927524733578328L;
+	private static final long serialVersionUID = 3253979434245934331L;
 
 	/**
 	 * 合花群ID<br>
@@ -60,6 +60,12 @@ ALIPAY_USER_ID：支付宝侧用户唯一标识
 	private String identityType;
 
 	/**
+	 * （发起人）用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 销售产品码
 	 */
 	@ApiField("product_code")
@@ -105,6 +111,13 @@ ALIPAY_USER_ID：支付宝侧用户唯一标识
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProductCode() {

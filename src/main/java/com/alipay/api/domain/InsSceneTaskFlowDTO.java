@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景任务流水
  *
  * @author auto create
- * @since 1.0, 2020-07-27 22:20:42
+ * @since 1.0, 2022-12-19 17:37:15
  */
 public class InsSceneTaskFlowDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2244966926935298157L;
+	private static final long serialVersionUID = 3765483999547426561L;
 
 	/**
 	 * 过期时间

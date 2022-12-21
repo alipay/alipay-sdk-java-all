@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.cardinfo.check request
  * 
  * @author auto create
- * @since 1.0, 2022-11-29 19:26:37
+ * @since 1.0, 2022-12-19 16:16:40
  */
 public class AlipayFinancialnetAuthCardinfoCheckRequest implements AlipayRequest<AlipayFinancialnetAuthCardinfoCheckResponse> {
 

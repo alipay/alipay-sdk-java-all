@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻活动预创单
  *
  * @author auto create
- * @since 1.0, 2022-10-18 15:26:25
+ * @since 1.0, 2022-12-16 16:22:54
  */
 public class AlipayCommerceZhimaPreorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6396197579753328776L;
+	private static final long serialVersionUID = 3146626478832559234L;
 
 	/**
 	 * alipay_store_id
@@ -38,6 +38,12 @@ public class AlipayCommerceZhimaPreorderCreateModel extends AlipayObject {
 	 */
 	@ApiField("isv_pid")
 	private String isvPid;
+
+	/**
+	 * 支付宝用户ID。同一个外部请求号，调用方要确保支付宝userId取值不变
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 开放平台appId
@@ -107,6 +113,13 @@ public class AlipayCommerceZhimaPreorderCreateModel extends AlipayObject {
 	}
 	public void setIsvPid(String isvPid) {
 		this.isvPid = isvPid;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOpenapiAppId() {

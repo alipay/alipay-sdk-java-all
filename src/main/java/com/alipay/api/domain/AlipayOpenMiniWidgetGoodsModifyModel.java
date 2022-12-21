@@ -1,23 +1,32 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 小部件商品修改
  *
  * @author auto create
- * @since 1.0, 2022-12-06 15:16:32
+ * @since 1.0, 2022-12-20 21:08:50
  */
 public class AlipayOpenMiniWidgetGoodsModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5713263118438769546L;
+	private static final long serialVersionUID = 3654198487659241324L;
 
 	/**
 	 * 需要修改的商品小程序购买链接
 	 */
 	@ApiField("buying_url")
 	private String buyingUrl;
+
+	/**
+	 * 需要修改的商品品牌
+	 */
+	@ApiField("goods_brand")
+	private String goodsBrand;
 
 	/**
 	 * 需要修改的商品辅助说明文案
@@ -62,6 +71,12 @@ public class AlipayOpenMiniWidgetGoodsModifyModel extends AlipayObject {
 	private String mainPicUrl;
 
 	/**
+	 * 是否需要进行公域推广
+	 */
+	@ApiField("need_public_promo")
+	private Boolean needPublicPromo;
+
+	/**
 	 * 需要修改的商品排序，自然整数, 数字越小越靠前
 	 */
 	@ApiField("order_number")
@@ -85,11 +100,25 @@ public class AlipayOpenMiniWidgetGoodsModifyModel extends AlipayObject {
 	@ApiField("sell_price")
 	private String sellPrice;
 
+	/**
+	 * 需要修改的商品卖点标签
+	 */
+	@ApiListField("sell_tag_list")
+	@ApiField("string")
+	private List<String> sellTagList;
+
 	public String getBuyingUrl() {
 		return this.buyingUrl;
 	}
 	public void setBuyingUrl(String buyingUrl) {
 		this.buyingUrl = buyingUrl;
+	}
+
+	public String getGoodsBrand() {
+		return this.goodsBrand;
+	}
+	public void setGoodsBrand(String goodsBrand) {
+		this.goodsBrand = goodsBrand;
 	}
 
 	public String getGoodsComment() {
@@ -141,6 +170,13 @@ public class AlipayOpenMiniWidgetGoodsModifyModel extends AlipayObject {
 		this.mainPicUrl = mainPicUrl;
 	}
 
+	public Boolean getNeedPublicPromo() {
+		return this.needPublicPromo;
+	}
+	public void setNeedPublicPromo(Boolean needPublicPromo) {
+		this.needPublicPromo = needPublicPromo;
+	}
+
 	public Long getOrderNumber() {
 		return this.orderNumber;
 	}
@@ -167,6 +203,13 @@ public class AlipayOpenMiniWidgetGoodsModifyModel extends AlipayObject {
 	}
 	public void setSellPrice(String sellPrice) {
 		this.sellPrice = sellPrice;
+	}
+
+	public List<String> getSellTagList() {
+		return this.sellTagList;
+	}
+	public void setSellTagList(List<String> sellTagList) {
+		this.sellTagList = sellTagList;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共享资金-修改账户信息
  *
  * @author auto create
- * @since 1.0, 2022-12-05 13:44:22
+ * @since 1.0, 2022-12-16 19:33:48
  */
 public class AlipayFundJointaccountAccountModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2872131416448763223L;
+	private static final long serialVersionUID = 7673161424693492852L;
 
 	/**
 	 * 账户ID</br>
@@ -69,6 +69,12 @@ ALIPAY_USER_ID：支付宝侧用户唯一标识
 	private String modifyItems;
 
 	/**
+	 * （发起人）支付宝侧用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 销售产品码
 	 */
 	@ApiField("product_code")
@@ -121,6 +127,13 @@ ALIPAY_USER_ID：支付宝侧用户唯一标识
 	}
 	public void setModifyItems(String modifyItems) {
 		this.modifyItems = modifyItems;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProductCode() {

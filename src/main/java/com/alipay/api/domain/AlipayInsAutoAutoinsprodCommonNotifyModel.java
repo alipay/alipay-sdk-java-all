@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用B端通知接口
  *
  * @author auto create
- * @since 1.0, 2021-08-26 15:39:54
+ * @since 1.0, 2022-12-16 15:35:52
  */
 public class AlipayInsAutoAutoinsprodCommonNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3768683924946461513L;
+	private static final long serialVersionUID = 4726374291838837383L;
 
 	/**
 	 * 业务内容 具体内容按照业务类型对应的key值传输

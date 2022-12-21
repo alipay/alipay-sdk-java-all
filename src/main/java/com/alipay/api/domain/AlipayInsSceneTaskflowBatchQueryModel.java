@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询权益流水列表
  *
  * @author auto create
- * @since 1.0, 2022-11-15 19:57:50
+ * @since 1.0, 2022-12-19 17:37:15
  */
 public class AlipayInsSceneTaskflowBatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5498838328869133436L;
+	private static final long serialVersionUID = 5263239572937666485L;
+
+	/**
+	 * 支付宝账号openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getUserId() {
 		return this.userId;

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCampaignSelfActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1735962391756215875L;
+	private static final long serialVersionUID = 6423154151926945666L;
 
 	/**
 	 * 是否需要券核销范围信息（包括pid列表、门店id列表和小程序appid列表，由于字段可能较大默认不返回，业务方也请慎用。pid列表:PID，门店id列表:SHOP_ID，小程序appid列表:APP_ID）

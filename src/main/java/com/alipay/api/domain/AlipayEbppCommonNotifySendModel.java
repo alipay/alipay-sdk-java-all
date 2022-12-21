@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部机构对用户的通知接口
  *
  * @author auto create
- * @since 1.0, 2022-12-05 18:57:34
+ * @since 1.0, 2022-12-16 19:22:14
  */
 public class AlipayEbppCommonNotifySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6692666215286533545L;
+	private static final long serialVersionUID = 6253392734824315624L;
 
 	/**
 	 * 水电燃等机构为用户分配的户号
@@ -43,6 +43,12 @@ JF-缴费
 	 */
 	@ApiField("notify_type")
 	private String notifyType;
+
+	/**
+	 * 支付宝用户id，可空，用于特定场景下向指定用户发送通知
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 子业务类型英文名称:
@@ -92,6 +98,13 @@ WATER-水
 	}
 	public void setNotifyType(String notifyType) {
 		this.notifyType = notifyType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSubBizType() {

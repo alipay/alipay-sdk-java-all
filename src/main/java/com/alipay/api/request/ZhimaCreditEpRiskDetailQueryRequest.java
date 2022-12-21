@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.risk.detail.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 10:01:37
+ * @since 1.0, 2022-12-19 16:06:49
  */
 public class ZhimaCreditEpRiskDetailQueryRequest implements AlipayRequest<ZhimaCreditEpRiskDetailQueryResponse> {
 

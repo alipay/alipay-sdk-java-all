@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用认证风险识别
  *
  * @author auto create
- * @since 1.0, 2022-11-07 10:43:14
+ * @since 1.0, 2022-12-20 17:49:03
  */
 public class ZhimaCreditEpCertificationRiskIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7444811436319353179L;
+	private static final long serialVersionUID = 1662266645747228444L;
+
+	/**
+	 * 一次认证的唯一标识,在商户调用认证初始化接口的时候获取。risk_identify_type=BIZNO 必填
+	 */
+	@ApiField("biz_no")
+	private String bizNo;
 
 	/**
 	 * 统一社会信用代码或营业执照注册号risk_identify_type=ENTERPRISE 必填
@@ -26,7 +32,7 @@ public class ZhimaCreditEpCertificationRiskIdentifyModel extends AlipayObject {
 	private String epName;
 
 	/**
-	 * 风险识别类别，可传入ENTERPRISE或者PERSON，用于认证场景，通过传入不同的类别返回不同的风险结果
+	 * 风险识别类别，可传入ENTERPRISE或者PERSON或者BIZNO，用于认证场景，通过传入不同的类别返回不同的风险结果
 	 */
 	@ApiField("risk_identify_type")
 	private String riskIdentifyType;
@@ -42,6 +48,13 @@ public class ZhimaCreditEpCertificationRiskIdentifyModel extends AlipayObject {
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	public String getBizNo() {
+		return this.bizNo;
+	}
+	public void setBizNo(String bizNo) {
+		this.bizNo = bizNo;
+	}
 
 	public String getEpCertNo() {
 		return this.epCertNo;

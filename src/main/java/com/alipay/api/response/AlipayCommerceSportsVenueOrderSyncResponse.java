@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceSportsVenueOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8848649584324459819L;
+	private static final long serialVersionUID = 1241367626543424259L;
 
 	/** 
 	 * 支付宝业务订单唯一ID

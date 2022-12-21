@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险消费门户权益流水创建
  *
  * @author auto create
- * @since 1.0, 2022-11-15 19:58:24
+ * @since 1.0, 2022-12-19 17:57:44
  */
 public class AlipayInsSceneTaskflowBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5552334137431651736L;
+	private static final long serialVersionUID = 2753233844568682612L;
 
 	/**
 	 * 数量
@@ -32,6 +32,12 @@ public class AlipayInsSceneTaskflowBatchCreateModel extends AlipayObject {
 	 */
 	@ApiField("extra_map")
 	private String extraMap;
+
+	/**
+	 * 支付宝openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -70,6 +76,13 @@ public class AlipayInsSceneTaskflowBatchCreateModel extends AlipayObject {
 	}
 	public void setExtraMap(String extraMap) {
 		this.extraMap = extraMap;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

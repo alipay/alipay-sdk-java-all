@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构代扣预签约token生成接口
  *
  * @author auto create
- * @since 1.0, 2022-11-21 15:22:49
+ * @since 1.0, 2022-12-20 12:10:35
  */
 public class AlipayEbppInstserviceTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3569212362377112494L;
+	private static final long serialVersionUID = 2265254496575681295L;
 
 	/**
 	 * 签约来源渠道，接入时与代扣约定

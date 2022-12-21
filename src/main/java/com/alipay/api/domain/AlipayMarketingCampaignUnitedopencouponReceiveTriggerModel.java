@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignUnitedopencouponReceiveTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7388681671999889722L;
+	private static final long serialVersionUID = 1711688842378553447L;
 
 	/**
 	 * 用户支付宝绑定手机号。user_id、login_id、bind_mobile三个参数至少有一个非空。

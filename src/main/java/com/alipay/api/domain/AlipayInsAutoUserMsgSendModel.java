@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车险内用户消息发送接口
  *
  * @author auto create
- * @since 1.0, 2022-12-13 11:24:28
+ * @since 1.0, 2022-12-16 15:36:50
  */
 public class AlipayInsAutoUserMsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4623733591284553416L;
+	private static final long serialVersionUID = 5771649251983153583L;
 
 	/**
 	 * 业务发生时间

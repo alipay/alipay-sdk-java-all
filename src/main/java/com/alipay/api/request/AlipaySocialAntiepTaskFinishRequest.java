@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antiep.task.finish request
  * 
  * @author auto create
- * @since 1.0, 2022-10-26 15:41:50
+ * @since 1.0, 2022-12-19 16:26:41
  */
 public class AlipaySocialAntiepTaskFinishRequest implements AlipayRequest<AlipaySocialAntiepTaskFinishResponse> {
 

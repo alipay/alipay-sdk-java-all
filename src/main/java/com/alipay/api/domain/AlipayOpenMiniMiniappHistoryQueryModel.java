@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 最近使用的小程序列表查询
  *
  * @author auto create
- * @since 1.0, 2022-11-14 09:50:30
+ * @since 1.0, 2022-12-20 13:23:50
  */
 public class AlipayOpenMiniMiniappHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8213183672728976392L;
+	private static final long serialVersionUID = 3144457663753816532L;
 
 	/**
 	 * 管控的令牌
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 请求的列表长度
@@ -36,6 +42,13 @@ public class AlipayOpenMiniMiniappHistoryQueryModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSize() {

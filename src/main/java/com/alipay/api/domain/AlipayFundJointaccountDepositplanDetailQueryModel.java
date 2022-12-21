@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自动攒计划详情查询
  *
  * @author auto create
- * @since 1.0, 2022-12-05 13:44:52
+ * @since 1.0, 2022-12-16 19:55:16
  */
 public class AlipayFundJointaccountDepositplanDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6652825264313568956L;
+	private static final long serialVersionUID = 2823323755528513232L;
 
 	/**
 	 * 合花群ID<br>
@@ -72,6 +72,12 @@ public class AlipayFundJointaccountDepositplanDetailQueryModel extends AlipayObj
 	private String identityType;
 
 	/**
+	 * （发起人）用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 销售产品码
 	 */
 	@ApiField("product_code")
@@ -124,6 +130,13 @@ public class AlipayFundJointaccountDepositplanDetailQueryModel extends AlipayObj
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProductCode() {

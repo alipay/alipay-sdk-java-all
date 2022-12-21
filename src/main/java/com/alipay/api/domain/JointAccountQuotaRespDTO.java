@@ -7,11 +7,25 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共同账户额度模型
  *
  * @author auto create
- * @since 1.0, 2022-10-09 16:30:33
+ * @since 1.0, 2022-12-19 14:52:11
  */
 public class JointAccountQuotaRespDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4246519318464791287L;
+	private static final long serialVersionUID = 8581617524719552486L;
+
+	/**
+	 * 额度生效起始日期，精确到分钟。
+格式：yyyy-MM-dd HH:mm
+	 */
+	@ApiField("custom_begin_date")
+	private String customBeginDate;
+
+	/**
+	 * 额度失效结束日期，精确到分钟。
+格式：yyyy-MM-dd HH:mm
+	 */
+	@ApiField("custom_end_date")
+	private String customEndDate;
 
 	/**
 	 * 额度维度
@@ -26,6 +40,12 @@ public class JointAccountQuotaRespDTO extends AlipayObject {
 	private String quotaRemain;
 
 	/**
+	 * 展示额度剩余可用次数，-1表示无限次
+	 */
+	@ApiField("quota_remain_count")
+	private String quotaRemainCount;
+
+	/**
 	 * 协议额度
 	 */
 	@ApiField("quota_total")
@@ -36,6 +56,20 @@ public class JointAccountQuotaRespDTO extends AlipayObject {
 	 */
 	@ApiField("quota_used")
 	private String quotaUsed;
+
+	public String getCustomBeginDate() {
+		return this.customBeginDate;
+	}
+	public void setCustomBeginDate(String customBeginDate) {
+		this.customBeginDate = customBeginDate;
+	}
+
+	public String getCustomEndDate() {
+		return this.customEndDate;
+	}
+	public void setCustomEndDate(String customEndDate) {
+		this.customEndDate = customEndDate;
+	}
 
 	public String getQuotaDimension() {
 		return this.quotaDimension;
@@ -49,6 +83,13 @@ public class JointAccountQuotaRespDTO extends AlipayObject {
 	}
 	public void setQuotaRemain(String quotaRemain) {
 		this.quotaRemain = quotaRemain;
+	}
+
+	public String getQuotaRemainCount() {
+		return this.quotaRemainCount;
+	}
+	public void setQuotaRemainCount(String quotaRemainCount) {
+		this.quotaRemainCount = quotaRemainCount;
 	}
 
 	public String getQuotaTotal() {

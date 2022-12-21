@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个人用户开通场景钱包
  *
  * @author auto create
- * @since 1.0, 2022-12-06 01:09:57
+ * @since 1.0, 2022-12-16 21:19:50
  */
 public class AlipayFundWalletSceneSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2698321285395539122L;
+	private static final long serialVersionUID = 6295217854299195179L;
 
 	/**
 	 * 钱包业务的场景吗
@@ -24,6 +24,12 @@ public class AlipayFundWalletSceneSignModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("principal_open_id")
+	private String principalOpenId;
 
 	/**
 	 * 产品码
@@ -55,6 +61,13 @@ public class AlipayFundWalletSceneSignModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getPrincipalOpenId() {
+		return this.principalOpenId;
+	}
+	public void setPrincipalOpenId(String principalOpenId) {
+		this.principalOpenId = principalOpenId;
 	}
 
 	public String getProductCode() {

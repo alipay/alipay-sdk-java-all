@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用受理服务解约
  *
  * @author auto create
- * @since 1.0, 2022-11-14 14:17:13
+ * @since 1.0, 2022-12-19 15:23:49
  */
 public class ZhimaCreditPeUserContractUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4226226497818923652L;
+	private static final long serialVersionUID = 4285873258562934414L;
 
 	/**
 	 * 芝麻信用场景，由芝麻信用侧分配，如：天猫信用购，淘宝租赁等
 	 */
 	@ApiField("credit_scene")
 	private String creditScene;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -30,6 +36,13 @@ public class ZhimaCreditPeUserContractUnsignModel extends AlipayObject {
 	}
 	public void setCreditScene(String creditScene) {
 		this.creditScene = creditScene;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

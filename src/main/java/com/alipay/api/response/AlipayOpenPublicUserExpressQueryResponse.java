@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.user.express.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-12 14:11:22
+ * @since 1.0, 2022-12-17 20:21:37
  */
 public class AlipayOpenPublicUserExpressQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4581362853117764367L;
+	private static final long serialVersionUID = 7871488759982179283L;
 
 	/** 
 	 * 是否为快捷绑卡用户
 	 */
 	@ApiField("express_user")
 	private Boolean expressUser;
+
+	/** 
+	 * 支付宝用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 蚂蚁统一会员ID
@@ -31,6 +37,13 @@ public class AlipayOpenPublicUserExpressQueryResponse extends AlipayResponse {
 	}
 	public Boolean getExpressUser( ) {
 		return this.expressUser;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setUserId(String userId) {

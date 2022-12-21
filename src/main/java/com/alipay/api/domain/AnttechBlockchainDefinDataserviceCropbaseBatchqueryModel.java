@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 农作物基础信息批量查询
  *
  * @author auto create
- * @since 1.0, 2022-11-14 13:32:15
+ * @since 1.0, 2022-12-20 14:53:34
  */
 public class AnttechBlockchainDefinDataserviceCropbaseBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3264115924767877596L;
+	private static final long serialVersionUID = 3348187165386772419L;
 
 	/**
 	 * 根据作物编码条件搜索

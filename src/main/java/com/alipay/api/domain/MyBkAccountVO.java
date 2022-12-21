@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账号信息
  *
  * @author auto create
- * @since 1.0, 2017-05-19 11:45:40
+ * @since 1.0, 2022-12-20 14:15:56
  */
 public class MyBkAccountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7572622843142414194L;
+	private static final long serialVersionUID = 1248746365648312978L;
 
 	/**
 	 * 账号外标，如支付宝登录号

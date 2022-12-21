@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构红包权益删除接口
  *
  * @author auto create
- * @since 1.0, 2022-11-21 15:22:50
+ * @since 1.0, 2022-12-20 12:13:02
  */
 public class AlipayEbppInstserviceVoucherDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2315727988696517525L;
+	private static final long serialVersionUID = 4797962542252146448L;
 
 	/**
 	 * 业务发生时间

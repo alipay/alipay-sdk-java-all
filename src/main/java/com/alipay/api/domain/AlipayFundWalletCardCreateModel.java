@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 采购方激活、用户绑定
  *
  * @author auto create
- * @since 1.0, 2022-10-14 14:51:07
+ * @since 1.0, 2022-12-19 19:56:14
  */
 public class AlipayFundWalletCardCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4821837872329432175L;
+	private static final long serialVersionUID = 8226847988819672854L;
 
 	/**
 	 * 业务场景

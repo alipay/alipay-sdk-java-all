@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsUnderwriteUserPolicyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5645788758229334767L;
+	private static final long serialVersionUID = 8583145593699835366L;
 
 	/**
 	 * 页码，必须为大于0的整数， 1表示第一页，2表示第2页，依次类推。不填默认值为1

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车险用户数据同步
  *
  * @author auto create
- * @since 1.0, 2022-09-23 10:42:25
+ * @since 1.0, 2022-12-16 15:38:25
  */
 public class AlipayInsAutoCarownerUserdataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3717189189824722594L;
+	private static final long serialVersionUID = 5645593334385663866L;
 
 	/**
 	 * 发动机号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Kv extends AlipayObject {
 
-	private static final long serialVersionUID = 2182197522499235194L;
+	private static final long serialVersionUID = 5414557295169458859L;
 
 	/**
 	 * 参数key

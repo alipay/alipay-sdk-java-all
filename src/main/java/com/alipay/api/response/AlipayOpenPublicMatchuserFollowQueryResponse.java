@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.matchuser.follow.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-12 14:09:33
+ * @since 1.0, 2022-12-16 14:32:53
  */
 public class AlipayOpenPublicMatchuserFollowQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6244683854869622169L;
+	private static final long serialVersionUID = 5715438111313825614L;
 
 	/** 
 	 * 用户是否关注，T代表已关注，F代表未关注
 	 */
 	@ApiField("is_follow")
 	private String isFollow;
+
+	/** 
+	 * 支付宝用户的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 支付宝用户id，2088开头的16位长度字符串
@@ -31,6 +37,13 @@ public class AlipayOpenPublicMatchuserFollowQueryResponse extends AlipayResponse
 	}
 	public String getIsFollow( ) {
 		return this.isFollow;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setUserId(String userId) {

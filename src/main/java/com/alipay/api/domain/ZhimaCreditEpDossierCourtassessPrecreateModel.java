@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 涉诉风险评估预下单
  *
  * @author auto create
- * @since 1.0, 2021-12-21 20:29:10
+ * @since 1.0, 2022-12-16 13:43:50
  */
 public class ZhimaCreditEpDossierCourtassessPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4825467324796152134L;
+	private static final long serialVersionUID = 7817197852621482964L;
 
 	/**
 	 * 入口来源
 	 */
 	@ApiField("derived_from")
 	private String derivedFrom;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 业务场景，COURT_ASSESS表示涉诉风险评估
@@ -36,6 +42,13 @@ public class ZhimaCreditEpDossierCourtassessPrecreateModel extends AlipayObject 
 	}
 	public void setDerivedFrom(String derivedFrom) {
 		this.derivedFrom = derivedFrom;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneCode() {

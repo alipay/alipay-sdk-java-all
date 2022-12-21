@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenOpenbizmockPidwhiteModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5636473388642842142L;
+	private static final long serialVersionUID = 7362369662155217448L;
 
 	/**
 	 * APPID

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.auth.userauth.relationship.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-14 19:06:48
+ * @since 1.0, 2022-12-19 16:21:41
  */
 public class AlipayOpenAuthUserauthRelationshipQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4618843159566147137L;
+	private static final long serialVersionUID = 7438788813553631859L;
 
 	/** 
 	 * 授权结果查询结果，可以转换为为Map<String,Boolean>格式

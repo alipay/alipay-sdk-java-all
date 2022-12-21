@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserPassInstancebatchAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6794923757641479722L;
+	private static final long serialVersionUID = 3342959119637439978L;
 
 	/** 
 	 * opType表示操作类型，目前固定为ADD。errorCode和errorMsg对应错误信息。passList是券实例列表，仅当发券成功才有值，其中：

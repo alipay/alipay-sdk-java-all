@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险场景生活号消息发送服务
  *
  * @author auto create
- * @since 1.0, 2020-08-13 15:01:35
+ * @since 1.0, 2022-12-20 10:23:43
  */
 public class AlipayInsSceneLifemssageSingleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3334936573199765674L;
+	private static final long serialVersionUID = 2458174649181677837L;
 
 	/**
 	 * 外部业务号

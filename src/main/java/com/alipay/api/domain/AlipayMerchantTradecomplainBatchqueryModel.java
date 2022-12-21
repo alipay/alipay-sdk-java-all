@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询交易投诉列表
  *
  * @author auto create
- * @since 1.0, 2022-10-17 20:53:51
+ * @since 1.0, 2022-12-19 14:33:51
  */
 public class AlipayMerchantTradecomplainBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3772244692354956247L;
+	private static final long serialVersionUID = 2896142765976748448L;
 
 	/**
 	 * 查询开始时间
@@ -47,14 +47,14 @@ public class AlipayMerchantTradecomplainBatchqueryModel extends AlipayObject {
 	private Long pageSize;
 
 	/**
-	 * 投诉工单状态
-商家处理中：MERCHANT_PROCESSING
-商家已反馈：MERCHANT_FEEDBACKED
-投诉已完结：FINISHED
-投诉已撤销：CANCELLED
-平台处理中：PLATFORM_PROCESSING
-平台处理完结：PLATFORM_FINISH
-系统关闭：CLOSED
+	 * 状态如下
+待处理：MERCHANT_PROCESSING 
+已处理：MERCHANT_FEEDBACKED 
+投诉完结：FINISHED 
+投诉关闭：CANCELLED 
+客服处理中：PLATFORM_PROCESSING 
+客服处理完结：PLATFORM_FINISH 
+投诉关闭：CLOSED
 	 */
 	@ApiField("status")
 	private String status;

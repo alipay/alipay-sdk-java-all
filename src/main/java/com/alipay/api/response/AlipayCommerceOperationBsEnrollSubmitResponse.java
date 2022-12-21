@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationBsEnrollSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2277462291323728788L;
+	private static final long serialVersionUID = 8591244252585969687L;
 
 	/** 
 	 * 处理失败的参与者列表

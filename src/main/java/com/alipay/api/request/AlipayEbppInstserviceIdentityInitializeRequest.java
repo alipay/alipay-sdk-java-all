@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.instservice.identity.initialize request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:56:38
+ * @since 1.0, 2022-12-20 12:11:36
  */
 public class AlipayEbppInstserviceIdentityInitializeRequest implements AlipayRequest<AlipayEbppInstserviceIdentityInitializeResponse> {
 

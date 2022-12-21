@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用受理评估接口（订单维度准入&可用额度咨询）
  *
  * @author auto create
- * @since 1.0, 2022-11-14 14:13:22
+ * @since 1.0, 2022-12-16 21:56:15
  */
 public class ZhimaCreditPeUserOrderConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6125242368395656582L;
+	private static final long serialVersionUID = 6282725223428185166L;
 
 	/**
 	 * 申请免押金额，取值范围[0.01,100000000]，精确到小数点后2位
@@ -42,6 +42,12 @@ public class ZhimaCreditPeUserOrderConsultModel extends AlipayObject {
 	 */
 	@ApiField("ext_params")
 	private String extParams;
+
+	/**
+	 * 买家的蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 接入商家的订单号
@@ -100,6 +106,13 @@ public class ZhimaCreditPeUserOrderConsultModel extends AlipayObject {
 	}
 	public void setExtParams(String extParams) {
 		this.extParams = extParams;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutOrderNo() {

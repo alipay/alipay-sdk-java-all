@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序橱窗数据同步
  *
  * @author auto create
- * @since 1.0, 2022-12-05 22:11:14
+ * @since 1.0, 2022-12-20 14:13:49
  */
 public class AlipayOpenMiniWidgetDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2311762215439599899L;
+	private static final long serialVersionUID = 6735655334649124754L;
 
 	/**
 	 * 活动信息列表

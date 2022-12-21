@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.autocheck.task.trigger request
  * 
  * @author auto create
- * @since 1.0, 2022-10-27 09:16:57
+ * @since 1.0, 2022-12-19 16:21:44
  */
 public class AlipayOpenMiniAutocheckTaskTriggerRequest implements AlipayRequest<AlipayOpenMiniAutocheckTaskTriggerResponse> {
 

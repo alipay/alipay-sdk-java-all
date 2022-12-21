@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商积分兑换结果通知
  *
  * @author auto create
- * @since 1.0, 2022-09-20 17:46:58
+ * @since 1.0, 2022-12-20 12:11:12
  */
 public class AlipayEbppInstserviceExchangeresultNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6245791339683933426L;
+	private static final long serialVersionUID = 8453127588317356783L;
 
 	/**
 	 * 手机号码

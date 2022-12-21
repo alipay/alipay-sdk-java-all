@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.refund response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 01:41:39
+ * @since 1.0, 2022-12-19 00:41:39
  */
 public class AlipayFundWalletRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5175978841779965564L;
+	private static final long serialVersionUID = 5192319769122719623L;
 
 	/** 
 	 * 原路退实际退款金额

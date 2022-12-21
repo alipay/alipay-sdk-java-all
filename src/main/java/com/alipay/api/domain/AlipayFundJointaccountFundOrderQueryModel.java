@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询资金单据
  *
  * @author auto create
- * @since 1.0, 2022-12-06 10:37:32
+ * @since 1.0, 2022-12-16 19:44:17
  */
 public class AlipayFundJointaccountFundOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4257862629624893276L;
+	private static final long serialVersionUID = 7194111942984718445L;
 
 	/**
 	 * 合花群ID <br/>
@@ -55,6 +55,15 @@ biz_trans_id查询） <br/>
 	 */
 	@ApiField("channel")
 	private String channel;
+
+	/**
+	 * 发起人）支付宝侧用户唯一标识
+补充说明：
+- 发起人可为C端用户
+- 发起人也可为B端商户
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 资金操作类型：<br/>
@@ -124,6 +133,13 @@ out_biz_no查询） <br/>
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOperateType() {

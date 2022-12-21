@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.miniapp.favoriteext.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 01:54:21
+ * @since 1.0, 2022-12-16 16:26:39
  */
 public class AlipayOpenMiniMiniappFavoriteextDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2773264728595322994L;
+	private static final long serialVersionUID = 1895864584712363455L;
 
 	/** 
 	 * 成功：true

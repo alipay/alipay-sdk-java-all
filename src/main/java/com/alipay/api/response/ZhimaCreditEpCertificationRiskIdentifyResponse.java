@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.risk.identify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-13 14:39:39
+ * @since 1.0, 2022-12-20 18:07:24
  */
 public class ZhimaCreditEpCertificationRiskIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1163571966777255241L;
+	private static final long serialVersionUID = 2242876196185268894L;
 
 	/** 
 	 * 认证风险识别结果集合
@@ -23,11 +23,24 @@ public class ZhimaCreditEpCertificationRiskIdentifyResponse extends AlipayRespon
 	@ApiField("string")
 	private List<String> riskIdentifyResult;
 
+	/** 
+	 * 空壳企业等级，描述企业空壳程度。
+	 */
+	@ApiField("shell_company_level")
+	private String shellCompanyLevel;
+
 	public void setRiskIdentifyResult(List<String> riskIdentifyResult) {
 		this.riskIdentifyResult = riskIdentifyResult;
 	}
 	public List<String> getRiskIdentifyResult( ) {
 		return this.riskIdentifyResult;
+	}
+
+	public void setShellCompanyLevel(String shellCompanyLevel) {
+		this.shellCompanyLevel = shellCompanyLevel;
+	}
+	public String getShellCompanyLevel( ) {
+		return this.shellCompanyLevel;
 	}
 
 }

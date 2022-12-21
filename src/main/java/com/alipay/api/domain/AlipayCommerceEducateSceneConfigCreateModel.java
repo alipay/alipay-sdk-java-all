@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一脸通行服务配置申请
  *
  * @author auto create
- * @since 1.0, 2022-12-07 17:24:23
+ * @since 1.0, 2022-12-19 13:50:15
  */
 public class AlipayCommerceEducateSceneConfigCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1186145887735593458L;
+	private static final long serialVersionUID = 6287466227746154375L;
 
 	/**
 	 * 经营场景，若传签约收款商户pid，则经营场景必传

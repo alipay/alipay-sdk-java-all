@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.instservice.voucher.delete request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:46:40
+ * @since 1.0, 2022-12-20 12:13:02
  */
 public class AlipayEbppInstserviceVoucherDeleteRequest implements AlipayRequest<AlipayEbppInstserviceVoucherDeleteResponse> {
 

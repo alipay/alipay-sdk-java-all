@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FileUploadExtraParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3885947826817855621L;
+	private static final long serialVersionUID = 1434671536411998411L;
 
 	/**
 	 * 是否同步上传到其他平台。素材类型为视频且需要同步优酷，请必传入参数youku，素材接口将代上传到优酷账号；素材类型为图片，无需传入参数

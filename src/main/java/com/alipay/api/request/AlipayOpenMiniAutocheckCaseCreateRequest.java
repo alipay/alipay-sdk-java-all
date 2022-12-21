@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.autocheck.case.create request
  * 
  * @author auto create
- * @since 1.0, 2022-10-27 09:16:52
+ * @since 1.0, 2022-12-19 16:21:44
  */
 public class AlipayOpenMiniAutocheckCaseCreateRequest implements AlipayRequest<AlipayOpenMiniAutocheckCaseCreateResponse> {
 

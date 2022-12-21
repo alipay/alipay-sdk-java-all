@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包原路退接口
  *
  * @author auto create
- * @since 1.0, 2022-12-06 01:09:57
+ * @since 1.0, 2022-12-16 21:19:51
  */
 public class AlipayFundWalletRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8682838551189637365L;
+	private static final long serialVersionUID = 4894996431266766531L;
 
 	/**
 	 * 金额
@@ -36,6 +36,12 @@ public class AlipayFundWalletRefundModel extends AlipayObject {
 	 */
 	@ApiField("principal_id")
 	private String principalId;
+
+	/**
+	 * 用户唯一表示
+	 */
+	@ApiField("principal_open_id")
+	private String principalOpenId;
 
 	/**
 	 * alipay_user_id代表支付宝用户id mechant_user_id代表商户id
@@ -81,6 +87,13 @@ public class AlipayFundWalletRefundModel extends AlipayObject {
 	}
 	public void setPrincipalId(String principalId) {
 		this.principalId = principalId;
+	}
+
+	public String getPrincipalOpenId() {
+		return this.principalOpenId;
+	}
+	public void setPrincipalOpenId(String principalOpenId) {
+		this.principalOpenId = principalOpenId;
 	}
 
 	public String getPrincipalType() {

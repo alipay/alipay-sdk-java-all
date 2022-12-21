@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 参与者实体。目前的场景就是贷款各阶段的请求可能会关联一个or多个“人or企业or其他”，这个结构用于描述参与贷款的关联到的实体。比方说一个人来申请贷款，评估的时候会关联他拥有的企业、他的配偶、他的父母等。
  *
  * @author auto create
- * @since 1.0, 2017-08-07 13:55:00
+ * @since 1.0, 2022-12-20 14:16:16
  */
 public class InvolvedEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 8793157885842536162L;
+	private static final long serialVersionUID = 8838899186885476269L;
 
 	/**
 	 * 实体身份编码-个人是身份证号码、企业是工商注册号、会员是会员编号-具体的数字编号

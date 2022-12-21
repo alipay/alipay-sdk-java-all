@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构签解约回调
  *
  * @author auto create
- * @since 1.0, 2022-11-24 14:46:50
+ * @since 1.0, 2022-12-20 12:12:01
  */
 public class AlipayEbppInstserviceDeductConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4378444792971216433L;
+	private static final long serialVersionUID = 6812562237333318688L;
 
 	/**
 	 * 签约ID

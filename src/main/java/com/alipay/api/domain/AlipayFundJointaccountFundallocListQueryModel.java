@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自动攒计划调拨执行列表查询
  *
  * @author auto create
- * @since 1.0, 2022-12-05 13:43:28
+ * @since 1.0, 2022-12-16 19:33:50
  */
 public class AlipayFundJointaccountFundallocListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5341989488363341559L;
+	private static final long serialVersionUID = 1171763293748464924L;
 
 	/**
 	 * 合花群ID<br>
@@ -77,6 +77,12 @@ public class AlipayFundJointaccountFundallocListQueryModel extends AlipayObject 
 	 */
 	@ApiField("last_id")
 	private String lastId;
+
+	/**
+	 * （发起人）用户唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 从起始标识往后查询多少条调拨记录<br>
@@ -158,6 +164,13 @@ public class AlipayFundJointaccountFundallocListQueryModel extends AlipayObject 
 	}
 	public void setLastId(String lastId) {
 		this.lastId = lastId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getPageSize() {

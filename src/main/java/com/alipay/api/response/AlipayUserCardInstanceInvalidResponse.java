@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.card.instance.invalid response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-04 10:36:32
+ * @since 1.0, 2022-12-19 16:26:41
  */
 public class AlipayUserCardInstanceInvalidResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5838547815435556898L;
+	private static final long serialVersionUID = 1845181972789982163L;
 
 	
 

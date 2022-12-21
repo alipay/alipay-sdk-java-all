@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包销户
  *
  * @author auto create
- * @since 1.0, 2022-11-15 14:54:39
+ * @since 1.0, 2022-12-16 21:44:50
  */
 public class AlipayFundWalletDestroyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3763972257592866411L;
+	private static final long serialVersionUID = 6793725653376849597L;
 
 	/**
 	 * 金额
@@ -36,6 +36,12 @@ public class AlipayFundWalletDestroyModel extends AlipayObject {
 	 */
 	@ApiField("principal_id")
 	private String principalId;
+
+	/**
+	 * openid
+	 */
+	@ApiField("principal_open_id")
+	private String principalOpenId;
 
 	/**
 	 * 枚举值
@@ -77,6 +83,13 @@ mechant_user_id
 	}
 	public void setPrincipalId(String principalId) {
 		this.principalId = principalId;
+	}
+
+	public String getPrincipalOpenId() {
+		return this.principalOpenId;
+	}
+	public void setPrincipalOpenId(String principalOpenId) {
+		this.principalOpenId = principalOpenId;
 	}
 
 	public String getPrincipalType() {

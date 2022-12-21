@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.credit.product.sign response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-11 22:25:09
+ * @since 1.0, 2022-12-16 16:59:56
  */
 public class AlipayTradeCreditProductSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8218158686156359758L;
+	private static final long serialVersionUID = 1729883291244183824L;
 
 	/** 
 	 * 合约批次号；成功场景下才会返回

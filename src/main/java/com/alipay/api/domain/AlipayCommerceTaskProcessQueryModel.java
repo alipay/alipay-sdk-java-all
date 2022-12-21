@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询行业任务进度信息
  *
  * @author auto create
- * @since 1.0, 2022-10-18 15:26:50
+ * @since 1.0, 2022-12-16 16:06:51
  */
 public class AlipayCommerceTaskProcessQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4756487416594833615L;
+	private static final long serialVersionUID = 3777374866868193912L;
 
 	/**
 	 * 支付宝用户id
@@ -30,6 +30,12 @@ public class AlipayCommerceTaskProcessQueryModel extends AlipayObject {
 	 */
 	@ApiField("channel")
 	private String channel;
+
+	/**
+	 * 支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 任务类型
@@ -56,6 +62,13 @@ public class AlipayCommerceTaskProcessQueryModel extends AlipayObject {
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getType() {

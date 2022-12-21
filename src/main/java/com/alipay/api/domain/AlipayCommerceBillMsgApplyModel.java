@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单消息接口
  *
  * @author auto create
- * @since 1.0, 2022-11-24 11:36:17
+ * @since 1.0, 2022-12-19 13:49:50
  */
 public class AlipayCommerceBillMsgApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3561788752564221739L;
+	private static final long serialVersionUID = 6418499135489751357L;
 
 	/**
 	 * 支付宝userId
@@ -36,6 +36,12 @@ public class AlipayCommerceBillMsgApplyModel extends AlipayObject {
 	 */
 	@ApiField("msg_type")
 	private String msgType;
+
+	/**
+	 * 蚂蚁开放平台openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -69,6 +75,13 @@ public class AlipayCommerceBillMsgApplyModel extends AlipayObject {
 	}
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金场景钱包金额查询接口
  *
  * @author auto create
- * @since 1.0, 2022-12-06 01:09:44
+ * @since 1.0, 2022-12-16 21:19:50
  */
 public class AlipayFundWalletConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5292586197952999259L;
+	private static final long serialVersionUID = 7363716125428485916L;
 
 	/**
 	 * 业务场景
@@ -24,6 +24,12 @@ public class AlipayFundWalletConsultModel extends AlipayObject {
 	 */
 	@ApiField("principal_id")
 	private String principalId;
+
+	/**
+	 * 用户主体标识
+	 */
+	@ApiField("principal_open_id")
+	private String principalOpenId;
 
 	/**
 	 * alipay_user_id代表支付宝用户id
@@ -65,6 +71,13 @@ DESTROY_INFO：销户资金查询
 	}
 	public void setPrincipalId(String principalId) {
 		this.principalId = principalId;
+	}
+
+	public String getPrincipalOpenId() {
+		return this.principalOpenId;
+	}
+	public void setPrincipalOpenId(String principalOpenId) {
+		this.principalOpenId = principalOpenId;
 	}
 
 	public String getPrincipalType() {

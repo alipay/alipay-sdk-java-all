@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用受理订单信息同步
  *
  * @author auto create
- * @since 1.0, 2022-12-15 17:15:28
+ * @since 1.0, 2022-12-19 12:22:56
  */
 public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3396766259693416697L;
+	private static final long serialVersionUID = 2345729534397545158L;
 
 	/**
 	 * 买家的支付宝用户id
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/**
+	 * 买家的支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单待同步信息，不能为空，json格式字符串，自定义key需要提前与接口owner进行沟通确认
@@ -66,6 +72,13 @@ public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 	}
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderInfo() {

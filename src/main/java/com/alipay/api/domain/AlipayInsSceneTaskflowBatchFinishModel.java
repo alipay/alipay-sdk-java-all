@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量失效任务流水
  *
  * @author auto create
- * @since 1.0, 2022-11-15 19:58:10
+ * @since 1.0, 2022-12-19 17:57:43
  */
 public class AlipayInsSceneTaskflowBatchFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2146138579694893813L;
+	private static final long serialVersionUID = 3141191127551444577L;
 
 	/**
 	 * 扩展信息
 	 */
 	@ApiField("extra_map")
 	private String extraMap;
+
+	/**
+	 * 支付宝账号openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -46,6 +52,13 @@ public class AlipayInsSceneTaskflowBatchFinishModel extends AlipayObject {
 	}
 	public void setExtraMap(String extraMap) {
 		this.extraMap = extraMap;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

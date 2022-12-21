@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.shop.mantestsds.send request
  * 
  * @author auto create
- * @since 1.0, 2022-08-16 17:51:50
+ * @since 1.0, 2022-12-19 16:32:05
  */
 public class KoubeiShopMantestsdsSendRequest implements AlipayRequest<KoubeiShopMantestsdsSendResponse> {
 

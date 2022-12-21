@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityDataAmlassetBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2895355531225762886L;
+	private static final long serialVersionUID = 4512677563625927481L;
 
 	/**
 	 * 资产的类型，包括LABEL、AML_LIST等

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.scene.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-15 15:56:13
+ * @since 1.0, 2022-12-16 22:16:40
  */
 public class ZhimaCreditPeUserScenePreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5855745337917746686L;
+	private static final long serialVersionUID = 5885395472139615534L;
 
 	/** 
 	 * 极速退开通标识true 开通 false 否
@@ -43,6 +43,12 @@ public class ZhimaCreditPeUserScenePreconsultResponse extends AlipayResponse {
 	 */
 	@ApiField("eval_invoke_id")
 	private String evalInvokeId;
+
+	/** 
+	 * 买家的蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 场景等级 A,B ,C等,A B C D分别代表业务方不同的差异化服务
@@ -95,6 +101,13 @@ public class ZhimaCreditPeUserScenePreconsultResponse extends AlipayResponse {
 	}
 	public String getEvalInvokeId( ) {
 		return this.evalInvokeId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setSceneLevel(String sceneLevel) {

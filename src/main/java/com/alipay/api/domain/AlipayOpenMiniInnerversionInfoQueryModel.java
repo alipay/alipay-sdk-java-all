@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniInnerversionInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1865135225911617513L;
+	private static final long serialVersionUID = 8368583666759477111L;
 
 	/**
 	 * 业务来源，新接入方需要向支付宝申请专用来源，否则不予接入。https://yuque.antfin-inc.com/tinyapp-all/qddncu/bidushixiang

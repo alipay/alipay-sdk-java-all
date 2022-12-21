@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通微账余额查询
  *
  * @author auto create
- * @since 1.0, 2022-09-28 17:50:42
+ * @since 1.0, 2022-12-16 15:39:15
  */
 public class AlipayTradeSettleReceivablesQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5743781271424626366L;
+	private static final long serialVersionUID = 7124917826521927922L;
 
 	/**
 	 * 收单产品码，商家和支付宝签约的产品码
@@ -38,13 +38,20 @@ public class AlipayTradeSettleReceivablesQueryModel extends AlipayObject {
 	private String outRequestNo;
 
 	/**
-	 * 查询历史日期，格式为 yyyyMMdd ，取值范围为昨日起至往前30日内；
+	 * 当trade_no不为空时，该字段不生效。
+查询历史日期，格式为 yyyyMMdd ，取值范围为昨日起至往前30日内；
 不传入时，查询实时待结算余额返回；
 传入过去某一天日期，查询对应日期的日终待结算余额返回（注意：日常场景下，昨日日终待结算余额只可在当天 02:00 后查询，在当天 02:00 前查询返回查询错误；大促场景下昨日日终可查时间会适当延后）；
-传入过去某一天非近30天内，返回参数错误；
+传入过去某一天非近30天内，返回参数错误。
 	 */
 	@ApiField("query_his_date")
 	private String queryHisDate;
+
+	/**
+	 * 支付宝交易号，当该笔交易为直付通账期模式，查询该笔交易待确认结算金额时必传
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	public String getBizProduct() {
 		return this.bizProduct;
@@ -79,6 +86,13 @@ public class AlipayTradeSettleReceivablesQueryModel extends AlipayObject {
 	}
 	public void setQueryHisDate(String queryHisDate) {
 		this.queryHisDate = queryHisDate;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
 	}
 
 }

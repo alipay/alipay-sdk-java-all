@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZftSubMerchantOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1466821519245343988L;
+	private static final long serialVersionUID = 2284347698319129935L;
 
 	/**
 	 * 是否开通线上预授权

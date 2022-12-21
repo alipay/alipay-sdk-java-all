@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询生活号用户是否存在快捷绑卡
  *
  * @author auto create
- * @since 1.0, 2022-12-12 14:11:22
+ * @since 1.0, 2022-12-17 20:20:51
  */
 public class AlipayOpenPublicUserExpressQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7424746567497839851L;
+	private static final long serialVersionUID = 2174961163444377692L;
 
 	/**
 	 * 银行机构ID

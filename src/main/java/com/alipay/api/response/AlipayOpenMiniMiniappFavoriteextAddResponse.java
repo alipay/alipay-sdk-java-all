@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.miniapp.favoriteext.add response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 01:53:59
+ * @since 1.0, 2022-12-16 16:26:39
  */
 public class AlipayOpenMiniMiniappFavoriteextAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4698461717736772833L;
+	private static final long serialVersionUID = 3734388679192519765L;
 
 	/** 
 	 * 成功：true

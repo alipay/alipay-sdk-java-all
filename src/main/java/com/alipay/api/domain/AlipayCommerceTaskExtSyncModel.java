@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业任务信息同步
  *
  * @author auto create
- * @since 1.0, 2022-10-18 15:26:38
+ * @since 1.0, 2022-12-16 16:07:50
  */
 public class AlipayCommerceTaskExtSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4877536696248649916L;
+	private static final long serialVersionUID = 7486761698434682949L;
 
 	/**
 	 * 支付宝用户ID
@@ -36,6 +36,12 @@ public class AlipayCommerceTaskExtSyncModel extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 支付宝用户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -81,6 +87,13 @@ public class AlipayCommerceTaskExtSyncModel extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

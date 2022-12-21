@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序服务关键词的审核工单的状态
  *
  * @author auto create
- * @since 1.0, 2022-12-12 11:04:41
+ * @since 1.0, 2022-12-20 11:28:51
  */
 public class AlipayOpenSearchSubservicekeywordQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6335414133792523114L;
+	private static final long serialVersionUID = 5233469153858958938L;
 
 	/**
 	 * 审核工单id，提报接口的返回值

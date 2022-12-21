@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.widget.goods.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-12 10:16:37
+ * @since 1.0, 2022-12-21 10:06:46
  */
 public class AlipayOpenMiniWidgetGoodsModifyRequest implements AlipayRequest<AlipayOpenMiniWidgetGoodsModifyResponse> {
 
