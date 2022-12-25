@@ -1,11 +1,14 @@
 .idea
 .DS_Store
-target
 *.iml
 *.ipr
 *.iws
+*.class
+*.jar
+*.war
+*.ear
 
-sdkSource/alipay-sdk-java-sources.zip
-sdkSource/alipay-sdk-java-sources
-publish/alipay-sdk-java-all
-publish/alipay-sdk-JAVA-*.zip
+**/target
+target
+.gradle
+build
