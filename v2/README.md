@@ -118,7 +118,7 @@ public class Main {
 <dependency>
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
-    <version>4.34.0.ALL</version>
+    <version>4.35.9.ALL</version>
 </dependency>
 ```
 
