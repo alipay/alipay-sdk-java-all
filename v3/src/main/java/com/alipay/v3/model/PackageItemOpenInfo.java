@@ -139,7 +139,7 @@ public class PackageItemOpenInfo {
    * @return fileDownloadUrl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "http://txffp.oss-cn-beijing.aliyuncs.com/zfb/11b7678a6ab04271afd2c4dfd0f75039?Expires=1574665315&OSSAccessKeyId=LTAIYAJbICRhyCD8&Signature=%2BD6AX5gswetzBdz0YcGhD0OgPKE%3D", value = "发票文件下载链接")
+  @ApiModelProperty(example = "http://txffp.oss-cn-beijing.aliyuncs.com/zfb/11b7678a6ab04271afd2c4dfd0f75039", value = "发票文件下载链接")
 
   public String getFileDownloadUrl() {
     return fileDownloadUrl;

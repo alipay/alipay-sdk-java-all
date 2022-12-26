@@ -201,9 +201,9 @@ public class ApiClient {
         json = new JSON();
 
         // Set default User-Agent.
-        setUserAgent("OpenAPI-Generator/1.0.0.ALL/java");
+        setUserAgent("OpenAPI-Generator/1.0.1.ALL/java");
         //Set default sdkVersion
-        setSdkVersion("OpenAPI-Generator/1.0.0.ALL/java");
+        setSdkVersion("OpenAPI-Generator/1.0.1.ALL/java");
 
         authentications = new HashMap<String, Authentication>();
     }
@@ -1552,7 +1552,7 @@ public class ApiClient {
     public String buildQuery(Map<String, String> params, String serverUrl, boolean isNeedUrl) {
         String url = null;
         if (isNeedUrl) {
-            url = Strings.isNullOrEmpty(serverUrl) ? basePath : serverUrl;
+            url = Strings.isNullOrEmpty(serverUrl) ? basePath + "/gateway.do" : serverUrl;
         }
         if (params == null || params.isEmpty()) {
             return url;

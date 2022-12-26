@@ -40,7 +40,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.alipay.sdk</groupId>
   <artifactId>alipay-sdk-java-v3</artifactId>
-  <version>1.0.0.ALL</version>
+  <version>1.0.1.ALL</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -56,7 +56,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.alipay.sdk:alipay-sdk-java-v3:1.0.0.ALL"
+     implementation "com.alipay.sdk:alipay-sdk-java-v3:1.0.1.ALL"
   }
 ```
 
@@ -70,7 +70,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/alipay-sdk-java-v3-1.0.0.ALL.jar`
+* `target/alipay-sdk-java-v3-1.0.1.ALL.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
