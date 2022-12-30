@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**cancel**](AlipayOpenMiniMiniappBrandApi.md#cancel) | **POST** /v3/alipay/open/mini/miniapp/brand/cancel | 小程序品牌提交认证后取消品牌认证 |
-| [**query**](AlipayOpenMiniMiniappBrandApi.md#query) | **POST** /v3/alipay/open/mini/miniapp/brand/query | 小程序品牌提交认证后查询品牌审核结果以及商户已有品牌 |
+| [**query**](AlipayOpenMiniMiniappBrandApi.md#query) | **GET** /v3/alipay/open/mini/miniapp/brand/query | 小程序品牌提交认证后查询品牌审核结果以及商户已有品牌 |
 | [**submit**](AlipayOpenMiniMiniappBrandApi.md#submit) | **POST** /v3/alipay/open/mini/miniapp/brand/submit | 小程序品牌提交认证 |
 | [**upload**](AlipayOpenMiniMiniappBrandApi.md#upload) | **POST** /v3/alipay/open/mini/miniapp/brand/upload | 小程序品牌提交认证时上传用户资质以及身份信息 |
 

@@ -5,7 +5,7 @@
     <artifactId>alipay-sdk-java-v3</artifactId>
     <packaging>jar</packaging>
     <name>alipay-sdk-java-v3</name>
-    <version>1.0.1.ALL</version>
+    <version>1.0.2.ALL</version>
     <url>https://open.alipay.com</url>
     <description>Alipay OAS3.0 SDK for Java</description>
     <scm>

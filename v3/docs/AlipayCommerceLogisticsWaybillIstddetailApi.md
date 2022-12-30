@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayCommerceLogisticsWaybillIstddetailApi.md#query) | **POST** /v3/alipay/commerce/logistics/waybill/istddetail/query | 查询即时配送运单详情 |
+| [**query**](AlipayCommerceLogisticsWaybillIstddetailApi.md#query) | **GET** /v3/alipay/commerce/logistics/waybill/istddetail/query | 查询即时配送运单详情 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayCommerceLogisticsWaybillIstddetailQueryResponseModel query(alipayCommerceLogisticsWaybillIstddetailQueryModel)
+> AlipayCommerceLogisticsWaybillIstddetailQueryResponseModel query(shopNo, outOrderNo, orderNo, logisticsCode, waybillNo)
 
 查询即时配送运单详情
 
@@ -38,9 +38,13 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayCommerceLogisticsWaybillIstddetailApi apiInstance = new AlipayCommerceLogisticsWaybillIstddetailApi(defaultClient);
-    AlipayCommerceLogisticsWaybillIstddetailQueryModel alipayCommerceLogisticsWaybillIstddetailQueryModel = new AlipayCommerceLogisticsWaybillIstddetailQueryModel(); // AlipayCommerceLogisticsWaybillIstddetailQueryModel | 
+    String shopNo = "shopno001"; // String | 商家门店编号
+    String outOrderNo = "2020090411140000000000777000216122"; // String | 商家订单号
+    String orderNo = "2020090411130000000000772400280352"; // String | 支付宝订单流水号
+    String logisticsCode = "FENGNIAO"; // String | 即时配送公司编码
+    String waybillNo = "waybillno001"; // String | 即时配送运单编号
     try {
-      AlipayCommerceLogisticsWaybillIstddetailQueryResponseModel result = apiInstance.query(alipayCommerceLogisticsWaybillIstddetailQueryModel);
+      AlipayCommerceLogisticsWaybillIstddetailQueryResponseModel result = apiInstance.query(shopNo, outOrderNo, orderNo, logisticsCode, waybillNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceLogisticsWaybillIstddetailApi#query");
@@ -57,7 +61,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayCommerceLogisticsWaybillIstddetailQueryModel** | **AlipayCommerceLogisticsWaybillIstddetailQueryModel**|  | [optional] |
+| **shopNo** | **String**| 商家门店编号 | [optional] |
+| **outOrderNo** | **String**| 商家订单号 | [optional] |
+| **orderNo** | **String**| 支付宝订单流水号 | [optional] |
+| **logisticsCode** | **String**| 即时配送公司编码 | [optional] |
+| **waybillNo** | **String**| 即时配送运单编号 | [optional] |
 
 ### Return type
 
@@ -69,7 +77,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

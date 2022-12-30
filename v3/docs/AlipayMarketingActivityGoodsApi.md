@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayMarketingActivityGoodsBatchqueryResponseModel batchquery(activityId, merchantId, goodsUseType, pageNum, pageSize)
+> AlipayMarketingActivityGoodsBatchqueryResponseModel batchquery(activityId, merchantId, goodsUseType, pageNum, pageSize, productVersion, merchantAccessMode)
 
 查询活动适用商品
 
@@ -43,8 +43,10 @@ public class Example {
     String goodsUseType = "AVAILABLE"; // String | 活动单品类型。 枚举值: AVAILABLE 可用商品 UNAVAILABLE 不可用商品
     Integer pageNum = 1; // Integer | 分页查询页码。 限制: 必须为大于0的整数
     Integer pageSize = 20; // Integer | 分页查询单页数据条数。 限制: 1.必须为大于0的整数 2.每页最大值为20
+    String productVersion = "2.0.0"; // String | 版本号  枚举值: 2.0.0
+    String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式  枚举值 SELF_MODE 商户自接入模式 AGENCY_MODE 服务商代接入模式
     try {
-      AlipayMarketingActivityGoodsBatchqueryResponseModel result = apiInstance.batchquery(activityId, merchantId, goodsUseType, pageNum, pageSize);
+      AlipayMarketingActivityGoodsBatchqueryResponseModel result = apiInstance.batchquery(activityId, merchantId, goodsUseType, pageNum, pageSize, productVersion, merchantAccessMode);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingActivityGoodsApi#batchquery");
@@ -66,6 +68,8 @@ public class Example {
 | **goodsUseType** | **String**| 活动单品类型。 枚举值: AVAILABLE 可用商品 UNAVAILABLE 不可用商品 | [optional] |
 | **pageNum** | **Integer**| 分页查询页码。 限制: 必须为大于0的整数 | [optional] |
 | **pageSize** | **Integer**| 分页查询单页数据条数。 限制: 1.必须为大于0的整数 2.每页最大值为20 | [optional] |
+| **productVersion** | **String**| 版本号  枚举值: 2.0.0 | [optional] |
+| **merchantAccessMode** | **String**| 商户接入模式  枚举值 SELF_MODE 商户自接入模式 AGENCY_MODE 服务商代接入模式 | [optional] |
 
 ### Return type
 

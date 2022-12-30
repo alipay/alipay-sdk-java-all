@@ -7,7 +7,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | [**batchquery**](AlipayOpenInstantdeliveryMerchantshopApi.md#batchquery) | **POST** /v3/alipay/open/instantdelivery/merchantshop/batchquery | 即时配送商家门店分页查询 |
 | [**create**](AlipayOpenInstantdeliveryMerchantshopApi.md#create) | **POST** /v3/alipay/open/instantdelivery/merchantshop/create | 即时配送商家门店创建 |
 | [**modify**](AlipayOpenInstantdeliveryMerchantshopApi.md#modify) | **POST** /v3/alipay/open/instantdelivery/merchantshop/modify | 即时配送商家门店更新 |
-| [**query**](AlipayOpenInstantdeliveryMerchantshopApi.md#query) | **POST** /v3/alipay/open/instantdelivery/merchantshop/query | 即时配送商家门店详情查询 |
+| [**query**](AlipayOpenInstantdeliveryMerchantshopApi.md#query) | **GET** /v3/alipay/open/instantdelivery/merchantshop/query | 即时配送商家门店详情查询 |
 
 
 <a name="batchquery"></a>
@@ -225,7 +225,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayOpenInstantdeliveryMerchantshopQueryResponseModel query(alipayOpenInstantdeliveryMerchantshopQueryModel)
+> AlipayOpenInstantdeliveryMerchantshopQueryResponseModel query(shopNo)
 
 即时配送商家门店详情查询
 
@@ -254,9 +254,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenInstantdeliveryMerchantshopApi apiInstance = new AlipayOpenInstantdeliveryMerchantshopApi(defaultClient);
-    AlipayOpenInstantdeliveryMerchantshopQueryModel alipayOpenInstantdeliveryMerchantshopQueryModel = new AlipayOpenInstantdeliveryMerchantshopQueryModel(); // AlipayOpenInstantdeliveryMerchantshopQueryModel | 
+    String shopNo = "1000"; // String | 商家门店编码。
     try {
-      AlipayOpenInstantdeliveryMerchantshopQueryResponseModel result = apiInstance.query(alipayOpenInstantdeliveryMerchantshopQueryModel);
+      AlipayOpenInstantdeliveryMerchantshopQueryResponseModel result = apiInstance.query(shopNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenInstantdeliveryMerchantshopApi#query");
@@ -273,7 +273,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayOpenInstantdeliveryMerchantshopQueryModel** | **AlipayOpenInstantdeliveryMerchantshopQueryModel**|  | [optional] |
+| **shopNo** | **String**| 商家门店编码。 | [optional] |
 
 ### Return type
 
@@ -285,7 +285,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

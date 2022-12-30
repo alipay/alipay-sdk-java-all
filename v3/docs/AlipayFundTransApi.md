@@ -4,8 +4,80 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
+| [**pay**](AlipayFundTransApi.md#pay) | **POST** /v3/alipay/fund/trans/pay | 资金支付接口 |
 | [**refund**](AlipayFundTransApi.md#refund) | **POST** /v3/alipay/fund/trans/refund | 资金退回接口 |
 
+
+<a name="pay"></a>
+# **pay**
+> AlipayFundTransPayResponseModel pay(alipayFundTransPayModel)
+
+资金支付接口
+
+付款方通过协议、二维码、声波、人脸等方式，通过本接口提交给支付宝直接完成支付。
+
+### Example
+```java
+// Import classes:
+import com.alipay.v3.ApiClient;
+import com.alipay.v3.ApiException;
+import com.alipay.v3.Configuration;
+import com.alipay.v3.util.*;
+import com.alipay.v3.api.models.*;
+import com.alipay.v3.api.AlipayFundTransApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://openapi.alipay.com");
+    // 设置alipayConfig参数（全局设置一次）
+    AlipayConfig config = new AlipayConfig();
+    config.setAppId("app_id");
+    config.setPrivateKey("private_key");
+    config.setAlipayPublicKey("alipay_public_key");
+    config.setEncryptKey("encrypt_key");
+    defaultClient.setAlipayConfig(config);
+
+    AlipayFundTransApi apiInstance = new AlipayFundTransApi(defaultClient);
+    AlipayFundTransPayModel alipayFundTransPayModel = new AlipayFundTransPayModel(); // AlipayFundTransPayModel | 
+    try {
+      AlipayFundTransPayResponseModel result = apiInstance.pay(alipayFundTransPayModel);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling AlipayFundTransApi#pay");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayFundTransPayModel** | **AlipayFundTransPayModel**|  | [optional] |
+
+### Return type
+
+**AlipayFundTransPayResponseModel**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | common response |  -  |
+| **0** | 请求失败 |  -  |
 
 <a name="refund"></a>
 # **refund**

@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**get**](AlipayEbppInvoiceTitleListApi.md#get) | **POST** /v3/alipay/ebpp/invoice/title/list/get | 获取指定用户所有的有效抬头列表 |
+| [**get**](AlipayEbppInvoiceTitleListApi.md#get) | **GET** /v3/alipay/ebpp/invoice/title/list/get | 获取指定用户所有的有效抬头列表 |
 
 
 <a name="get"></a>
 # **get**
-> AlipayEbppInvoiceTitleListGetResponseModel get(authToken, alipayEbppInvoiceTitleListGetModel)
+> AlipayEbppInvoiceTitleListGetResponseModel get(authToken, userId)
 
 获取指定用户所有的有效抬头列表
 
@@ -39,9 +39,9 @@ public class Example {
 
     AlipayEbppInvoiceTitleListApi apiInstance = new AlipayEbppInvoiceTitleListApi(defaultClient);
     String authToken = "authToken_example"; // String | 用户授权令牌
-    AlipayEbppInvoiceTitleListGetModel alipayEbppInvoiceTitleListGetModel = new AlipayEbppInvoiceTitleListGetModel(); // AlipayEbppInvoiceTitleListGetModel | 
+    String userId = "2088000000000000"; // String | 支付宝用户id
     try {
-      AlipayEbppInvoiceTitleListGetResponseModel result = apiInstance.get(authToken, alipayEbppInvoiceTitleListGetModel);
+      AlipayEbppInvoiceTitleListGetResponseModel result = apiInstance.get(authToken, userId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceTitleListApi#get");
@@ -59,7 +59,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **authToken** | **String**| 用户授权令牌 | [optional] |
-| **alipayEbppInvoiceTitleListGetModel** | **AlipayEbppInvoiceTitleListGetModel**|  | [optional] |
+| **userId** | **String**| 支付宝用户id | [optional] |
 
 ### Return type
 
@@ -71,7 +71,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

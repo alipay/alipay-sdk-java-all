@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](ZhimaMerchantZmgoTemplateApi.md#create) | **POST** /v3/zhima/merchant/zmgo/template/create | 商户创建芝麻GO模板接口 |
-| [**query**](ZhimaMerchantZmgoTemplateApi.md#query) | **POST** /v3/zhima/merchant/zmgo/template/query | 芝麻GO模板查询 |
+| [**query**](ZhimaMerchantZmgoTemplateApi.md#query) | **GET** /v3/zhima/merchant/zmgo/template/query | 芝麻GO模板查询 |
 
 
 <a name="create"></a>
@@ -81,7 +81,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> ZhimaMerchantZmgoTemplateQueryResponseModel query(zhimaMerchantZmgoTemplateQueryModel)
+> ZhimaMerchantZmgoTemplateQueryResponseModel query(templateNo, partnerId)
 
 芝麻GO模板查询
 
@@ -110,9 +110,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     ZhimaMerchantZmgoTemplateApi apiInstance = new ZhimaMerchantZmgoTemplateApi(defaultClient);
-    ZhimaMerchantZmgoTemplateQueryModel zhimaMerchantZmgoTemplateQueryModel = new ZhimaMerchantZmgoTemplateQueryModel(); // ZhimaMerchantZmgoTemplateQueryModel | 
+    String templateNo = "ZMGO_TPL2021061601004538"; // String | 模板ID，由创建模板接口返回结果提供
+    String partnerId = "208830****697946"; // String | 商户ID
     try {
-      ZhimaMerchantZmgoTemplateQueryResponseModel result = apiInstance.query(zhimaMerchantZmgoTemplateQueryModel);
+      ZhimaMerchantZmgoTemplateQueryResponseModel result = apiInstance.query(templateNo, partnerId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ZhimaMerchantZmgoTemplateApi#query");
@@ -129,7 +130,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **zhimaMerchantZmgoTemplateQueryModel** | **ZhimaMerchantZmgoTemplateQueryModel**|  | [optional] |
+| **templateNo** | **String**| 模板ID，由创建模板接口返回结果提供 | [optional] |
+| **partnerId** | **String**| 商户ID | [optional] |
 
 ### Return type
 
@@ -141,7 +143,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

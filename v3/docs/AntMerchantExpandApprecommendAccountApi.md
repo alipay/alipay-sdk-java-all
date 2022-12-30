@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AntMerchantExpandApprecommendAccountApi.md#create) | **POST** /v3/ant/merchant/expand/apprecommend/account/create | 关联账号和小程序 |
-| [**delete**](AntMerchantExpandApprecommendAccountApi.md#delete) | **POST** /v3/ant/merchant/expand/apprecommend/account/delete | 取消关联账号和小程序 |
+| [**delete**](AntMerchantExpandApprecommendAccountApi.md#delete) | **DELETE** /v3/ant/merchant/expand/apprecommend/account/delete | 取消关联账号和小程序 |
 | [**query**](AntMerchantExpandApprecommendAccountApi.md#query) | **GET** /v3/ant/merchant/expand/apprecommend/account/query | 查询已关联指定APP的账号列表 |
 
 
@@ -82,7 +82,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(antMerchantExpandApprecommendAccountDeleteModel)
+> Object delete(appNo, accNo)
 
 取消关联账号和小程序
 
@@ -111,9 +111,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AntMerchantExpandApprecommendAccountApi apiInstance = new AntMerchantExpandApprecommendAccountApi(defaultClient);
-    AntMerchantExpandApprecommendAccountDeleteModel antMerchantExpandApprecommendAccountDeleteModel = new AntMerchantExpandApprecommendAccountDeleteModel(); // AntMerchantExpandApprecommendAccountDeleteModel | 
+    String appNo = "2021000155639069"; // String | 待解绑小程序的app_id
+    String accNo = "2088001969784501"; // String | 待解绑账号PID
     try {
-      Object result = apiInstance.delete(antMerchantExpandApprecommendAccountDeleteModel);
+      Object result = apiInstance.delete(appNo, accNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AntMerchantExpandApprecommendAccountApi#delete");
@@ -130,7 +131,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **antMerchantExpandApprecommendAccountDeleteModel** | **AntMerchantExpandApprecommendAccountDeleteModel**|  | [optional] |
+| **appNo** | **String**| 待解绑小程序的app_id | [optional] |
+| **accNo** | **String**| 待解绑账号PID | [optional] |
 
 ### Return type
 
@@ -142,7 +144,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

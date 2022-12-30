@@ -7,6 +7,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | [**apply**](AlipayOpenSearchSubservicekeywordApi.md#apply) | **POST** /v3/alipay/open/search/subservicekeyword/apply | 提报服务关键词 |
 | [**batchquery**](AlipayOpenSearchSubservicekeywordApi.md#batchquery) | **GET** /v3/alipay/open/search/subservicekeyword/batchquery | 服务关键词批量查询接口 |
 | [**delete**](AlipayOpenSearchSubservicekeywordApi.md#delete) | **POST** /v3/alipay/open/search/subservicekeyword/delete | 删除服务关键词 |
+| [**querystatus**](AlipayOpenSearchSubservicekeywordApi.md#querystatus) | **GET** /v3/alipay/open/search/subservicekeyword/querystatus | 查询小程序服务关键词的审核工单的状态 |
 
 
 <a name="apply"></a>
@@ -220,6 +221,79 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | common response |  -  |
+| **0** | 请求失败 |  -  |
+
+<a name="querystatus"></a>
+# **querystatus**
+> AlipayOpenSearchSubservicekeywordQuerystatusResponseModel querystatus(targetAppid, applyNo)
+
+查询小程序服务关键词的审核工单的状态
+
+查询小程序服务关键词的审核工单的状态
+
+### Example
+```java
+// Import classes:
+import com.alipay.v3.ApiClient;
+import com.alipay.v3.ApiException;
+import com.alipay.v3.Configuration;
+import com.alipay.v3.util.*;
+import com.alipay.v3.api.models.*;
+import com.alipay.v3.api.AlipayOpenSearchSubservicekeywordApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://openapi.alipay.com");
+    // 设置alipayConfig参数（全局设置一次）
+    AlipayConfig config = new AlipayConfig();
+    config.setAppId("app_id");
+    config.setPrivateKey("private_key");
+    config.setAlipayPublicKey("alipay_public_key");
+    config.setEncryptKey("encrypt_key");
+    defaultClient.setAlipayConfig(config);
+
+    AlipayOpenSearchSubservicekeywordApi apiInstance = new AlipayOpenSearchSubservicekeywordApi(defaultClient);
+    String targetAppid = "2021001112626071"; // String | 小程序id
+    String applyNo = "20220519000000108026"; // String | 审核工单id，提报接口的返回值
+    try {
+      AlipayOpenSearchSubservicekeywordQuerystatusResponseModel result = apiInstance.querystatus(targetAppid, applyNo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling AlipayOpenSearchSubservicekeywordApi#querystatus");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **targetAppid** | **String**| 小程序id | [optional] |
+| **applyNo** | **String**| 审核工单id，提报接口的返回值 | [optional] |
+
+### Return type
+
+**AlipayOpenSearchSubservicekeywordQuerystatusResponseModel**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

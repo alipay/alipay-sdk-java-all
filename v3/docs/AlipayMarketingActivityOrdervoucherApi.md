@@ -6,6 +6,7 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**append**](AlipayMarketingActivityOrdervoucherApi.md#append) | **PATCH** /v3/alipay/marketing/ordervoucher/activity/{activity_id}/append | 修改商家券活动发券数量上限 |
 | [**associate**](AlipayMarketingActivityOrdervoucherApi.md#associate) | **POST** /v3/alipay/marketing/activity/ordervoucher/associate | 关联订单信息 |
+| [**codecount**](AlipayMarketingActivityOrdervoucherApi.md#codecount) | **GET** /v3/alipay/marketing/ordervoucher/activity/{activity_id}/voucher/codecount | 统计商家券券码数量 |
 | [**codedeposit**](AlipayMarketingActivityOrdervoucherApi.md#codedeposit) | **POST** /v3/alipay/marketing/ordervoucher/activity/{activity_id}/voucher/codedeposit | 同步商家券券码 |
 | [**create**](AlipayMarketingActivityOrdervoucherApi.md#create) | **POST** /v3/alipay/marketing/ordervoucher/activity | 创建商家券活动 |
 | [**disassociate**](AlipayMarketingActivityOrdervoucherApi.md#disassociate) | **POST** /v3/alipay/marketing/activity/ordervoucher/disassociate | 取消关联订单信息 |
@@ -152,6 +153,79 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | common response |  -  |
+| **0** | 请求失败 |  -  |
+
+<a name="codecount"></a>
+# **codecount**
+> AlipayMarketingActivityOrdervoucherCodecountResponseModel codecount(activityId, merchantAccessMode)
+
+统计商家券券码数量
+
+商家调用该接口查询活动中的有效券码个数。接口同步返回查询结果。
+
+### Example
+```java
+// Import classes:
+import com.alipay.v3.ApiClient;
+import com.alipay.v3.ApiException;
+import com.alipay.v3.Configuration;
+import com.alipay.v3.util.*;
+import com.alipay.v3.api.models.*;
+import com.alipay.v3.api.AlipayMarketingActivityOrdervoucherApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://openapi.alipay.com");
+    // 设置alipayConfig参数（全局设置一次）
+    AlipayConfig config = new AlipayConfig();
+    config.setAppId("app_id");
+    config.setPrivateKey("private_key");
+    config.setAlipayPublicKey("alipay_public_key");
+    config.setEncryptKey("encrypt_key");
+    defaultClient.setAlipayConfig(config);
+
+    AlipayMarketingActivityOrdervoucherApi apiInstance = new AlipayMarketingActivityOrdervoucherApi(defaultClient);
+    String activityId = "2016042700826004508401111111"; // String | 活动id
+    String merchantAccessMode = "SELF_MODE"; // String | 商户接入模式  枚举值 SELF_MODE 商户自接入模式 AGENCY_MODE 服务商代接入模式
+    try {
+      AlipayMarketingActivityOrdervoucherCodecountResponseModel result = apiInstance.codecount(activityId, merchantAccessMode);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling AlipayMarketingActivityOrdervoucherApi#codecount");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **activityId** | **String**| 活动id | |
+| **merchantAccessMode** | **String**| 商户接入模式  枚举值 SELF_MODE 商户自接入模式 AGENCY_MODE 服务商代接入模式 | [optional] |
+
+### Return type
+
+**AlipayMarketingActivityOrdervoucherCodecountResponseModel**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
