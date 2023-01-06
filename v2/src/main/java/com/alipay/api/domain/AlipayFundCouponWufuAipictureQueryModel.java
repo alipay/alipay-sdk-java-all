@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 五福AI年画查询
  *
  * @author auto create
- * @since 1.0, 2022-12-02 16:25:26
+ * @since 1.0, 2023-01-05 16:12:16
  */
 public class AlipayFundCouponWufuAipictureQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2566215971349385737L;
+	private static final long serialVersionUID = 6238668525183384362L;
 
 	/**
 	 * 蚂蚁统一开放id

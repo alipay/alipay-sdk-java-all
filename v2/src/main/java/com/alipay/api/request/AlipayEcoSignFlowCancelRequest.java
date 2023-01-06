@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.sign.flow.cancel request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 15:46:06
+ * @since 1.0, 2023-01-04 18:22:45
  */
 public class AlipayEcoSignFlowCancelRequest implements AlipayRequest<AlipayEcoSignFlowCancelResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证信息
  *
  * @author auto create
- * @since 1.0, 2020-06-20 11:00:36
+ * @since 1.0, 2022-12-29 14:05:39
  */
 public class TicketInfoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6849773249136474975L;
+	private static final long serialVersionUID = 7816256881277715318L;
 
 	/**
 	 * 地址

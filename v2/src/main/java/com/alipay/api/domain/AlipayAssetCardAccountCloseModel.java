@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 注销网商账户接口
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:37:10
+ * @since 1.0, 2022-12-29 19:33:49
  */
 public class AlipayAssetCardAccountCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7531167289121326274L;
+	private static final long serialVersionUID = 4177662822463256474L;
 
 	/**
 	 * 资产id
@@ -38,6 +38,12 @@ public class AlipayAssetCardAccountCloseModel extends AlipayObject {
 	 */
 	@ApiField("extend_info")
 	private String extendInfo;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 卡产品码
@@ -83,6 +89,13 @@ public class AlipayAssetCardAccountCloseModel extends AlipayObject {
 	}
 	public void setExtendInfo(String extendInfo) {
 		this.extendInfo = extendInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProductCode() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序发送模板消息
  *
  * @author auto create
- * @since 1.0, 2022-11-18 15:12:49
+ * @since 1.0, 2022-12-26 15:57:14
  */
 public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6128286717751189534L;
+	private static final long serialVersionUID = 8566665215211699786L;
 
 	/**
 	 * 模板消息内容。商家/开发者将模板占位符替换为自定义内容。
@@ -55,7 +55,7 @@ public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 	private String toUserId;
 
 	/**
-	 * 商家在商家自运营中心选用的消息模板ID，详情参见 <a href="https://opendocs.alipay.com/mini/01rnqx#%E9%80%89%E7%94%A8%E6%B6%88%E6%81%AF%E6%A8%A1%E6%9D%BF">选用消息模板</a> 。
+	 * 商家在商家自运营中心选用的消息模板ID，详情参见 <a href="https://opendocs.alipay.com/mini/01rnqx#%E8%AE%A2%E9%98%85%E6%B6%88%E6%81%AF">选用消息模板</a> 。
 	 */
 	@ApiField("user_template_id")
 	private String userTemplateId;

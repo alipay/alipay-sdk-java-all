@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC3.0黑名单查询
  *
  * @author auto create
- * @since 1.0, 2022-02-17 20:31:17
+ * @since 1.0, 2022-12-21 14:27:15
  */
 public class AlipayCommerceTransportEtcBlacklistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7579635725126796984L;
+	private static final long serialVersionUID = 7648968519882611845L;
 
 	/**
 	 * ETC平台协议号

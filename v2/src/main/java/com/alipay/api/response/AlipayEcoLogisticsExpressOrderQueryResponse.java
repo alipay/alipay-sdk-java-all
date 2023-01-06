@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.logistics.express.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:32:22
+ * @since 1.0, 2023-01-05 10:15:43
  */
 public class AlipayEcoLogisticsExpressOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1786565647195474469L;
+	private static final long serialVersionUID = 6594957918943748389L;
 
 	/** 
 	 * 接单类型，已接单状态时必填

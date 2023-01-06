@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.agreement.quota.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:37:15
+ * @since 1.0, 2023-01-04 23:17:50
  */
 public class AlipayFundAgreementQuotaQueryRequest implements AlipayRequest<AlipayFundAgreementQuotaQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.tradecomplain.feedback.submit request
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 14:36:39
+ * @since 1.0, 2023-01-04 20:21:41
  */
 public class AlipayMerchantTradecomplainFeedbackSubmitRequest implements AlipayRequest<AlipayMerchantTradecomplainFeedbackSubmitResponse> {
 

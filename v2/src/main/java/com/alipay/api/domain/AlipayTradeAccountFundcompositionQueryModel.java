@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付配套服务专户资金组成查询接口
  *
  * @author auto create
- * @since 1.0, 2021-07-13 20:44:04
+ * @since 1.0, 2022-12-30 14:43:50
  */
 public class AlipayTradeAccountFundcompositionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6175132988393844832L;
+	private static final long serialVersionUID = 4379695426881867456L;
+
+	/**
+	 * 用户的蚂蚁统一会员ID
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 用户支付宝UID
@@ -36,6 +42,13 @@ public class AlipayTradeAccountFundcompositionQueryModel extends AlipayObject {
 	 */
 	@ApiField("sub_biz_type")
 	private String subBizType;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;

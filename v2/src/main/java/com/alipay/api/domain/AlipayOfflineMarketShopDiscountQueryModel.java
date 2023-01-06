@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 基于门店id的优惠查询服务
  *
  * @author auto create
- * @since 1.0, 2018-01-05 10:43:59
+ * @since 1.0, 2022-12-30 14:44:52
  */
 public class AlipayOfflineMarketShopDiscountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4277985954352252633L;
+	private static final long serialVersionUID = 2472896694627571849L;
 
 	/**
 	 * 活动业务类型列表。当 query_type 为MERCHANT 且 user_id 不为空时生效，将对返回结果进行过滤，返回列表中指定业务类型的活动。默认为空，代表不过滤，返回所有活动。
@@ -26,6 +26,12 @@ public class AlipayOfflineMarketShopDiscountQueryModel extends AlipayObject {
 	@ApiListField("camp_biz_type_list")
 	@ApiField("string")
 	private List<String> campBizTypeList;
+
+	/**
+	 * 用户id，当query_type为MERCHANT时生效，如果查询的优惠活动需要过用户规则，则用户id必须传入，目前只支持查询活动列表的场景;
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 查询类型，暂仅支持：MERCHANT(商户活动)。 如果不传递该参数或者指定参数值，出参只返回item_list，discount_list， 反之返回camp_num,camp_list。
@@ -41,7 +47,7 @@ public class AlipayOfflineMarketShopDiscountQueryModel extends AlipayObject {
 	private String shopId;
 
 	/**
-	 * 用户id，当query_type为MERCHANT时生效，如果查询的优惠活动需要过用户规则，则用户id必须传入，目前只支持查询活动列表的场景
+	 * 用户id，当query_type为MERCHANT时生效，如果查询的优惠活动需要过用户规则，则用户id必须传入，目前只支持查询活动列表的场景;
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -51,6 +57,13 @@ public class AlipayOfflineMarketShopDiscountQueryModel extends AlipayObject {
 	}
 	public void setCampBizTypeList(List<String> campBizTypeList) {
 		this.campBizTypeList = campBizTypeList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getQueryType() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票受理单据
  *
  * @author auto create
- * @since 1.0, 2022-12-16 09:52:25
+ * @since 1.0, 2022-12-28 18:04:25
  */
 public class InvoiceApplyOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 1556718938933334955L;
+	private static final long serialVersionUID = 7897527899374214734L;
 
 	/**
 	 * 金额
@@ -90,6 +90,12 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	 */
 	@ApiField("service_mth")
 	private String serviceMth;
+
+	/**
+	 * 外部单据来源系统标识和开票时一致
+	 */
+	@ApiField("source")
+	private String source;
 
 	/**
 	 * 税率
@@ -192,6 +198,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	}
 	public void setServiceMth(String serviceMth) {
 		this.serviceMth = serviceMth;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 	public String getTaxRate() {

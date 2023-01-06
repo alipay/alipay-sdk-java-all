@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品元素
  *
  * @author auto create
- * @since 1.0, 2022-11-25 11:45:01
+ * @since 1.0, 2022-12-26 11:46:14
  */
 public class GoodItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2495486297832837759L;
+	private static final long serialVersionUID = 1415392135455457163L;
 
 	/**
 	 * 商品可用的城市列表
@@ -60,6 +60,12 @@ public class GoodItem extends AlipayObject {
 	private String currentPrice;
 
 	/**
+	 * 非负数。保留两位小数。币种默认CNY。
+	 */
+	@ApiField("deposit_amount")
+	private String depositAmount;
+
+	/**
 	 * 商品图片数量
 	 */
 	@ApiField("detail_pic_num")
@@ -70,6 +76,24 @@ public class GoodItem extends AlipayObject {
 	 */
 	@ApiField("detail_url")
 	private String detailUrl;
+
+	/**
+	 * 未定义在标准字段内的字段，可以通过扩展json字段进行同步
+	 */
+	@ApiField("ext_json")
+	private String extJson;
+
+	/**
+	 * 租赁商品的新日描述
+	 */
+	@ApiField("fresh_degree")
+	private String freshDegree;
+
+	/**
+	 * 用户在小程序前端感知的类目值
+	 */
+	@ApiField("front_end_category")
+	private String frontEndCategory;
 
 	/**
 	 * 物品的唯一id
@@ -116,16 +140,52 @@ public class GoodItem extends AlipayObject {
 	private String rating;
 
 	/**
+	 * 商品最小租赁天数
+	 */
+	@ApiField("rental_date")
+	private String rentalDate;
+
+	/**
+	 * 商品是否支持租满即送
+	 */
+	@ApiField("rental_free")
+	private String rentalFree;
+
+	/**
 	 * 物品类型
 	 */
 	@ApiField("row_type")
 	private String rowType;
 
 	/**
+	 * 商品支持自提：1：支持 2：不支持 3：满足条件支持
+	 */
+	@ApiField("self_pickup")
+	private String selfPickup;
+
+	/**
+	 * 百分比，值范国0.00%-100.00%，保留两位小数
+	 */
+	@ApiField("shipment_rate")
+	private String shipmentRate;
+
+	/**
+	 * 商品支持的发货城市列表
+	 */
+	@ApiField("shipments")
+	private String shipments;
+
+	/**
 	 * 商品所属店铺id（如有）
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * 商品所在店铺对应的店铺名称
+	 */
+	@ApiField("shop_name")
+	private String shopName;
 
 	/**
 	 * spu维度的id
@@ -144,6 +204,12 @@ public class GoodItem extends AlipayObject {
 	 */
 	@ApiField("stock_num")
 	private Long stockNum;
+
+	/**
+	 * 非负数，保留两位小数，值范国0.00-5.00分
+	 */
+	@ApiField("store_rating")
+	private String storeRating;
 
 	/**
 	 * 商品标签，如首页展示标签“特惠”，“热卖”,或详情页“满50包邮”,“假一赔三”等。多值示例：“特惠,热卖"
@@ -206,6 +272,13 @@ public class GoodItem extends AlipayObject {
 		this.currentPrice = currentPrice;
 	}
 
+	public String getDepositAmount() {
+		return this.depositAmount;
+	}
+	public void setDepositAmount(String depositAmount) {
+		this.depositAmount = depositAmount;
+	}
+
 	public Long getDetailPicNum() {
 		return this.detailPicNum;
 	}
@@ -218,6 +291,27 @@ public class GoodItem extends AlipayObject {
 	}
 	public void setDetailUrl(String detailUrl) {
 		this.detailUrl = detailUrl;
+	}
+
+	public String getExtJson() {
+		return this.extJson;
+	}
+	public void setExtJson(String extJson) {
+		this.extJson = extJson;
+	}
+
+	public String getFreshDegree() {
+		return this.freshDegree;
+	}
+	public void setFreshDegree(String freshDegree) {
+		this.freshDegree = freshDegree;
+	}
+
+	public String getFrontEndCategory() {
+		return this.frontEndCategory;
+	}
+	public void setFrontEndCategory(String frontEndCategory) {
+		this.frontEndCategory = frontEndCategory;
 	}
 
 	public String getId() {
@@ -269,6 +363,20 @@ public class GoodItem extends AlipayObject {
 		this.rating = rating;
 	}
 
+	public String getRentalDate() {
+		return this.rentalDate;
+	}
+	public void setRentalDate(String rentalDate) {
+		this.rentalDate = rentalDate;
+	}
+
+	public String getRentalFree() {
+		return this.rentalFree;
+	}
+	public void setRentalFree(String rentalFree) {
+		this.rentalFree = rentalFree;
+	}
+
 	public String getRowType() {
 		return this.rowType;
 	}
@@ -276,11 +384,39 @@ public class GoodItem extends AlipayObject {
 		this.rowType = rowType;
 	}
 
+	public String getSelfPickup() {
+		return this.selfPickup;
+	}
+	public void setSelfPickup(String selfPickup) {
+		this.selfPickup = selfPickup;
+	}
+
+	public String getShipmentRate() {
+		return this.shipmentRate;
+	}
+	public void setShipmentRate(String shipmentRate) {
+		this.shipmentRate = shipmentRate;
+	}
+
+	public String getShipments() {
+		return this.shipments;
+	}
+	public void setShipments(String shipments) {
+		this.shipments = shipments;
+	}
+
 	public String getShopId() {
 		return this.shopId;
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public String getShopName() {
+		return this.shopName;
+	}
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
 	}
 
 	public String getSpuId() {
@@ -302,6 +438,13 @@ public class GoodItem extends AlipayObject {
 	}
 	public void setStockNum(Long stockNum) {
 		this.stockNum = stockNum;
+	}
+
+	public String getStoreRating() {
+		return this.storeRating;
+	}
+	public void setStoreRating(String storeRating) {
+		this.storeRating = storeRating;
 	}
 
 	public String getTags() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.scene.use response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:55:34
+ * @since 1.0, 2023-01-04 19:28:24
  */
 public class ZhimaCustomerJobworthSceneUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5216485451889123836L;
+	private static final long serialVersionUID = 1533784999263355244L;
 
 	/** 
 	 * 业务编码

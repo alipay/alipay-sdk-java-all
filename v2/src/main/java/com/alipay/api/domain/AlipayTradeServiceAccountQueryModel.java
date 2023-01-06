@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户信息查询
  *
  * @author auto create
- * @since 1.0, 2021-03-23 11:22:55
+ * @since 1.0, 2023-01-04 10:49:53
  */
 public class AlipayTradeServiceAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7818144252489118436L;
+	private static final long serialVersionUID = 1676235366249491351L;
+
+	/**
+	 * 蚂蚁统一会员id
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 用户支付宝UID
@@ -30,6 +36,13 @@ public class AlipayTradeServiceAccountQueryModel extends AlipayObject {
 	 */
 	@ApiField("sub_biz_type")
 	private String subBizType;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;

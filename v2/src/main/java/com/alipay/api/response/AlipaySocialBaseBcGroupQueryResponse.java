@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.bc.group.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:19:00
+ * @since 1.0, 2023-01-04 23:03:21
  */
 public class AlipaySocialBaseBcGroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3231316562915923669L;
+	private static final long serialVersionUID = 8248636841464132133L;
 
 	/** 
 	 * 支付宝群详情

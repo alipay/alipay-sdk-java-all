@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.ocr.imageclassify.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:57:20
+ * @since 1.0, 2023-01-05 10:58:49
  */
 public class AlipayIserviceCognitiveOcrImageclassifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4574198241823927741L;
+	private static final long serialVersionUID = 7529473862834927823L;
 
 	/** 
 	 * 图像分类类型

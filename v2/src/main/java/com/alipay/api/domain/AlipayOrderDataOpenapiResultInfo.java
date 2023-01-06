@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2020-06-20 11:00:36
+ * @since 1.0, 2022-12-30 12:00:18
  */
 public class AlipayOrderDataOpenapiResultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7421992662972368291L;
+	private static final long serialVersionUID = 3714786892523854695L;
 
 	/**
 	 * 订单金额，单位为元
@@ -99,6 +99,12 @@ public class AlipayOrderDataOpenapiResultInfo extends AlipayObject {
 	 */
 	@ApiField("merchant_user_id")
 	private String merchantUserId;
+
+	/**
+	 * OpenId是用户在应用（AppId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝小程序订单详情地址链接
@@ -267,6 +273,13 @@ REFUNDED-已退款
 	}
 	public void setMerchantUserId(String merchantUserId) {
 		this.merchantUserId = merchantUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderDetailLinkPage() {

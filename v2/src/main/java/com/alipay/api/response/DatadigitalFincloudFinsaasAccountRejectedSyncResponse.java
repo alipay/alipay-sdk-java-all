@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.account.rejected.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:02:09
+ * @since 1.0, 2023-01-04 23:42:18
  */
 public class DatadigitalFincloudFinsaasAccountRejectedSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4687975575293394248L;
+	private static final long serialVersionUID = 7627279975921631541L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连数据文件提交
  *
  * @author auto create
- * @since 1.0, 2022-11-24 14:18:54
+ * @since 1.0, 2023-01-05 22:56:18
  */
 public class AlipayMerchantIndirectFiletaskSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7451876183867545625L;
+	private static final long serialVersionUID = 6541924123526232142L;
 
 	/**
 	 * 业务场景，根据具体接入的业务确定，由平台分配而来。

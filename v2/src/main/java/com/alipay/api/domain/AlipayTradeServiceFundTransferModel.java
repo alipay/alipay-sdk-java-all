@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账接口
  *
  * @author auto create
- * @since 1.0, 2021-03-23 11:22:33
+ * @since 1.0, 2022-12-30 14:20:51
  */
 public class AlipayTradeServiceFundTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2157898383543588244L;
+	private static final long serialVersionUID = 5879993928338111187L;
 
 	/**
 	 * 转账金额，单位:元，精确到小数点后两位
@@ -32,10 +32,22 @@ public class AlipayTradeServiceFundTransferModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
+	 * 收款人的蚂蚁统一会员id
+	 */
+	@ApiField("payee_open_id")
+	private String payeeOpenId;
+
+	/**
 	 * 收款者支付宝UID
 	 */
 	@ApiField("payee_user_id")
 	private String payeeUserId;
+
+	/**
+	 * 付款人的蚂蚁统一会员id
+	 */
+	@ApiField("payer_open_id")
+	private String payerOpenId;
 
 	/**
 	 * 付款者支付宝UID
@@ -70,11 +82,25 @@ public class AlipayTradeServiceFundTransferModel extends AlipayObject {
 		this.outBizNo = outBizNo;
 	}
 
+	public String getPayeeOpenId() {
+		return this.payeeOpenId;
+	}
+	public void setPayeeOpenId(String payeeOpenId) {
+		this.payeeOpenId = payeeOpenId;
+	}
+
 	public String getPayeeUserId() {
 		return this.payeeUserId;
 	}
 	public void setPayeeUserId(String payeeUserId) {
 		this.payeeUserId = payeeUserId;
+	}
+
+	public String getPayerOpenId() {
+		return this.payerOpenId;
+	}
+	public void setPayerOpenId(String payerOpenId) {
+		this.payerOpenId = payerOpenId;
 	}
 
 	public String getPayerUserId() {

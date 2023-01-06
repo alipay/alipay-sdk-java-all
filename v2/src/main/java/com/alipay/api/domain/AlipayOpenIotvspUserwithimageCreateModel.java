@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 录入机构用户信息（人员图片可选）
  *
  * @author auto create
- * @since 1.0, 2022-06-13 23:04:34
+ * @since 1.0, 2022-12-29 21:13:50
  */
 public class AlipayOpenIotvspUserwithimageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7674783167627866193L;
+	private static final long serialVersionUID = 1576166486844847634L;
 
 	/**
 	 * 姓名
@@ -72,6 +72,12 @@ public class AlipayOpenIotvspUserwithimageCreateModel extends AlipayObject {
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * isv自定义的用户唯一标识
+	 */
+	@ApiField("vid")
+	private String vid;
 
 	public String getCertName() {
 		return this.certName;
@@ -141,6 +147,13 @@ public class AlipayOpenIotvspUserwithimageCreateModel extends AlipayObject {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getVid() {
+		return this.vid;
+	}
+	public void setVid(String vid) {
+		this.vid = vid;
 	}
 
 }

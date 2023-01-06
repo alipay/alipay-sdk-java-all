@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.risk.identify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-20 18:07:24
+ * @since 1.0, 2023-01-04 21:11:37
  */
 public class ZhimaCreditEpCertificationRiskIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2242876196185268894L;
+	private static final long serialVersionUID = 3783596649383383723L;
 
 	/** 
 	 * 认证风险识别结果集合

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景金融资产信息查询接口
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:39:06
+ * @since 1.0, 2023-01-04 14:34:20
  */
 public class MybankCreditSceneprodDataBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8728141269811686698L;
+	private static final long serialVersionUID = 8741911961129579111L;
 
 	/**
 	 * 订单信息查询参数+ 复杂类型中包括申请单号和客户支付宝uid，通过传递这个列表数据进行批量查询订单信息+ 其中的app_seqno是网商银行的申请单号，通过mybank.credit.sceneprod.loan.apply接口返回的apply_no获取，其中site_user_id是客户的支付宝id，机构通过服务窗获取。

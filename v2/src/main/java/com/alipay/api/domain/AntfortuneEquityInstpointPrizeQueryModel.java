@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分奖品分页查询
  *
  * @author auto create
- * @since 1.0, 2019-05-01 11:19:12
+ * @since 1.0, 2023-01-04 13:50:39
  */
 public class AntfortuneEquityInstpointPrizeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5322819786166615652L;
+	private static final long serialVersionUID = 5764553312921688289L;
 
 	/**
 	 * 当前页数，取值[1,50]整数

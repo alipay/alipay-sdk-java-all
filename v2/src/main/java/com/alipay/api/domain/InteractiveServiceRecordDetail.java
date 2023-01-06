@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交互式风控用户交互记录详情
  *
  * @author auto create
- * @since 1.0, 2022-10-28 10:37:39
+ * @since 1.0, 2022-12-27 10:29:16
  */
 public class InteractiveServiceRecordDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1834847567823779932L;
+	private static final long serialVersionUID = 7762939965258989717L;
 
 	/**
 	 * 批量任务id
@@ -64,6 +64,12 @@ public class InteractiveServiceRecordDetail extends AlipayObject {
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 交互时长，单位秒，如10秒
+	 */
+	@ApiField("interact_duration")
+	private Long interactDuration;
 
 	/**
 	 * 流程标签，代表调用或交互结果
@@ -175,6 +181,13 @@ public class InteractiveServiceRecordDetail extends AlipayObject {
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public Long getInteractDuration() {
+		return this.interactDuration;
+	}
+	public void setInteractDuration(Long interactDuration) {
+		this.interactDuration = interactDuration;
 	}
 
 	public String getInteractResult() {

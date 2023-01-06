@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.prodmode.unionbank.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:48:31
+ * @since 1.0, 2023-01-05 10:09:30
  */
 public class AlipayEbppProdmodeUnionbankQueryRequest implements AlipayRequest<AlipayEbppProdmodeUnionbankQueryResponse> {
 

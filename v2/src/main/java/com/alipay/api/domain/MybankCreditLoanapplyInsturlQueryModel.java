@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构跳转链接查询接口
  *
  * @author auto create
- * @since 1.0, 2018-09-17 17:57:19
+ * @since 1.0, 2022-12-30 10:39:49
  */
 public class MybankCreditLoanapplyInsturlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6233184713151498496L;
+	private static final long serialVersionUID = 8221398537625197158L;
 
 	/**
 	 * 机构合约编号，商户接入企业信贷业务时自动分配，获取地址：https://partner.mybank.cn/cooperation/myCooperation.htm，路径：我的合作-查看详情-开发接口调用-接口合约编号；
@@ -60,6 +60,12 @@ public class MybankCreditLoanapplyInsturlQueryModel extends AlipayObject {
 	 */
 	@ApiField("op_pd_code")
 	private String opPdCode;
+
+	/**
+	 * 机构内部客户的支付宝ID，当biz_type为Dsd时，cert_no +user_name或者user_id不能同时为null。作用：校验机构提供的用户和支付宝当前登录的用户为同一用户，即用户合法性校验。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 入驻的机构的渠道编号，由业务接口人来分配
@@ -139,6 +145,13 @@ public class MybankCreditLoanapplyInsturlQueryModel extends AlipayObject {
 	}
 	public void setOpPdCode(String opPdCode) {
 		this.opPdCode = opPdCode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrgChannelCode() {

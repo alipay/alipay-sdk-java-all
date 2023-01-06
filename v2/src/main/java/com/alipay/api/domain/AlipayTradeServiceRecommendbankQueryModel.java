@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询推荐银行渠道
  *
  * @author auto create
- * @since 1.0, 2021-03-23 11:23:09
+ * @since 1.0, 2022-12-30 14:20:15
  */
 public class AlipayTradeServiceRecommendbankQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1277414622746944321L;
+	private static final long serialVersionUID = 4239743721879468719L;
+
+	/**
+	 * 用户支付宝UID
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 用户支付宝UID
@@ -30,6 +36,13 @@ public class AlipayTradeServiceRecommendbankQueryModel extends AlipayObject {
 	 */
 	@ApiField("sub_biz_type")
 	private String subBizType;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;

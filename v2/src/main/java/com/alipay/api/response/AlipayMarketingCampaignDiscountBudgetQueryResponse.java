@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.discount.budget.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:33:22
+ * @since 1.0, 2023-01-04 18:06:30
  */
 public class AlipayMarketingCampaignDiscountBudgetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7735932559729781552L;
+	private static final long serialVersionUID = 1789348613792473323L;
 
 	/** 
 	 * 预算ID

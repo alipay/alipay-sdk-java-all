@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.doc.template.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:04:25
+ * @since 1.0, 2023-01-04 18:26:28
  */
 public class AlipayEcoDocTemplateCreateRequest implements AlipayRequest<AlipayEcoDocTemplateCreateResponse> {
 

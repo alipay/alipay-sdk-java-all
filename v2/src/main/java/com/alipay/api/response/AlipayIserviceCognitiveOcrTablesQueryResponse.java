@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.ocr.tables.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 20:43:49
+ * @since 1.0, 2023-01-05 10:59:22
  */
 public class AlipayIserviceCognitiveOcrTablesQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7311921129481988625L;
+	private static final long serialVersionUID = 8558936216468251864L;
 
 	/** 
 	 * true：识别成功

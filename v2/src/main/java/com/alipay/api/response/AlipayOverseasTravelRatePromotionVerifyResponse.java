@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.rate.promotion.verify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:19:40
+ * @since 1.0, 2023-01-03 13:26:37
  */
 public class AlipayOverseasTravelRatePromotionVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1356132286276121936L;
+	private static final long serialVersionUID = 6833432596324196346L;
 
 	/** 
 	 * 业务结果编码

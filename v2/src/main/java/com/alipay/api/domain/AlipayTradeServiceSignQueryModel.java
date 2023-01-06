@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付配套服务协议签约查询接口
  *
  * @author auto create
- * @since 1.0, 2021-07-13 20:44:19
+ * @since 1.0, 2022-12-30 14:20:21
  */
 public class AlipayTradeServiceSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2498811366395273192L;
+	private static final long serialVersionUID = 5495952137529338158L;
+
+	/**
+	 * 用户蚂蚁统一会员id
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 用户支付宝UID
@@ -30,6 +36,13 @@ public class AlipayTradeServiceSignQueryModel extends AlipayObject {
 	 */
 	@ApiField("service_type")
 	private String serviceType;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;

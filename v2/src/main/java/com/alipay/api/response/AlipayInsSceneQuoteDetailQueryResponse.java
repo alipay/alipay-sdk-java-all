@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.quote.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:52:42
+ * @since 1.0, 2023-01-04 23:39:41
  */
 public class AlipayInsSceneQuoteDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2673523672493935883L;
+	private static final long serialVersionUID = 3851939149836676152L;
 
 	/** 
 	 * 报价详情

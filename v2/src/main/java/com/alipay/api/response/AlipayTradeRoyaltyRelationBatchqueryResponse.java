@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.royalty.relation.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 18:47:03
+ * @since 1.0, 2023-01-04 23:42:01
  */
 public class AlipayTradeRoyaltyRelationBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3767658838498282845L;
+	private static final long serialVersionUID = 6646241211298695987L;
 
 	/** 
 	 * 当前页数

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.doctemplate.settingurl.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:59:05
+ * @since 1.0, 2023-01-04 22:17:02
  */
 public class AlipayEcoDoctemplateSettingurlQueryRequest implements AlipayRequest<AlipayEcoDoctemplateSettingurlQueryResponse> {
 

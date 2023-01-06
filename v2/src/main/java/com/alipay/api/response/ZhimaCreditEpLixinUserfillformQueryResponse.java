@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.lixin.userfillform.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:41:42
+ * @since 1.0, 2023-01-04 23:56:44
  */
 public class ZhimaCreditEpLixinUserfillformQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6333463345682188417L;
+	private static final long serialVersionUID = 5427159266952375252L;
 
 	/** 
 	 * 分页请求时候是否有下一页

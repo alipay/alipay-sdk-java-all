@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.timescard.item.offline request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 15:04:27
+ * @since 1.0, 2023-01-04 23:08:54
  */
 public class AlipayCommerceOperationTimescardItemOfflineRequest implements AlipayRequest<AlipayCommerceOperationTimescardItemOfflineResponse> {
 

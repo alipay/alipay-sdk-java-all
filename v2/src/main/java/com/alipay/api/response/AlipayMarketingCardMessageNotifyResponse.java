@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.message.notify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 16:06:57
+ * @since 1.0, 2023-01-04 20:16:40
  */
 public class AlipayMarketingCardMessageNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2275153712878889698L;
+	private static final long serialVersionUID = 7837431791892243976L;
 
 	/** 
 	 * 二级错误处理结果（如果公用返回结果为false，则可以看这个接口判断明细原因） 如果公用返回为true，则该字段为空

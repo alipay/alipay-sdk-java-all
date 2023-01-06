@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.department.label.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:02:31
+ * @since 1.0, 2023-01-05 10:51:42
  */
 public class KoubeiMerchantDepartmentLabelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2811961554692834326L;
+	private static final long serialVersionUID = 3181694698721255189L;
 
 	/** 
 	 * 人员组织可用的部门标签列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构积分兑换奖品
  *
  * @author auto create
- * @since 1.0, 2019-05-01 11:19:43
+ * @since 1.0, 2023-01-04 13:51:30
  */
 public class AntfortuneEquityInstpointPrizeexchangeUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6694178622378213579L;
+	private static final long serialVersionUID = 3543493562842637858L;
 
 	/**
 	 * 手机号码，1864234324324。实物奖品兑换时本字段必填

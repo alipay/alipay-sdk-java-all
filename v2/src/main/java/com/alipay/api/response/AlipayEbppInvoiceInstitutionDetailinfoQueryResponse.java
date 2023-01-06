@@ -13,11 +13,19 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.detailinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-18 23:41:33
+ * @since 1.0, 2023-01-05 00:46:40
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3221918224671695332L;
+	private static final long serialVersionUID = 2664695617423578618L;
+
+	/** 
+	 * 费控咨询模式
+0-支付宝内部计算
+1-咨询外部服务商
+	 */
+	@ApiField("consult_mode")
+	private String consultMode;
 
 	/** 
 	 * 制度启用停用状态
@@ -87,6 +95,13 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	 */
 	@ApiField("standard_info_list")
 	private StandardInfo standardInfoList;
+
+	public void setConsultMode(String consultMode) {
+		this.consultMode = consultMode;
+	}
+	public String getConsultMode( ) {
+		return this.consultMode;
+	}
 
 	public void setEffective(String effective) {
 		this.effective = effective;

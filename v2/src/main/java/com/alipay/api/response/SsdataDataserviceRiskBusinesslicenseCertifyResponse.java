@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.businesslicense.certify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:26:54
+ * @since 1.0, 2023-01-05 10:21:55
  */
 public class SsdataDataserviceRiskBusinesslicenseCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3445987799172974211L;
+	private static final long serialVersionUID = 6772989677254932274L;
 
 	/** 
 	 * 营业执照的公司地址

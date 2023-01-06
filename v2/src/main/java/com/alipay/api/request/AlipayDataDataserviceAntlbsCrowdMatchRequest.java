@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.antlbs.crowd.match request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:04:10
+ * @since 1.0, 2023-01-05 10:59:05
  */
 public class AlipayDataDataserviceAntlbsCrowdMatchRequest implements AlipayRequest<AlipayDataDataserviceAntlbsCrowdMatchResponse> {
 

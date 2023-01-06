@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.policy.surrender.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:32:54
+ * @since 1.0, 2023-01-05 11:37:12
  */
 public class AlipayInsScenePolicySurrenderApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3789644437116961294L;
+	private static final long serialVersionUID = 6467344966594737787L;
 
 	/** 
 	 * 蚂蚁保险平台生成的保单号

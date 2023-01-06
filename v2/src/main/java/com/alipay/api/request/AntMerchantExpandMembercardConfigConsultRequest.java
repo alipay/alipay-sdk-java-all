@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.membercard.config.consult request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:07:12
+ * @since 1.0, 2023-01-04 22:58:30
  */
 public class AntMerchantExpandMembercardConfigConsultRequest implements AlipayRequest<AntMerchantExpandMembercardConfigConsultResponse> {
 

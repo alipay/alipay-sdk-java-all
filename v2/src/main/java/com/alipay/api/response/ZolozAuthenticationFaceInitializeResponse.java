@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.face.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:22:15
+ * @since 1.0, 2023-01-05 11:10:36
  */
 public class ZolozAuthenticationFaceInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4611537545555198821L;
+	private static final long serialVersionUID = 5314218943227991798L;
 
 	/** 
 	 * 由客户端解析的非明文字符串数据

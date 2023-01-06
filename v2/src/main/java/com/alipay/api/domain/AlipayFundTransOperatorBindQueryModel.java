@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 操作员关联主账号查询
  *
  * @author auto create
- * @since 1.0, 2022-12-13 16:03:21
+ * @since 1.0, 2022-12-27 15:08:15
  */
 public class AlipayFundTransOperatorBindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5263693857464975774L;
+	private static final long serialVersionUID = 6496595745732387258L;
 
 	/**
 	 * 业务场景码，默认DEFAULT
@@ -20,10 +20,22 @@ public class AlipayFundTransOperatorBindQueryModel extends AlipayObject {
 	private String bizScene;
 
 	/**
+	 * 企业支付宝主账号openid
+	 */
+	@ApiField("master_open_id")
+	private String masterOpenId;
+
+	/**
 	 * 企业支付宝主账号
 	 */
 	@ApiField("master_user_id")
 	private String masterUserId;
+
+	/**
+	 * 操作员支付宝账号openid
+	 */
+	@ApiField("operator_open_id")
+	private String operatorOpenId;
 
 	/**
 	 * 操作员支付宝账号
@@ -45,11 +57,25 @@ salary_platform_daily_salary
 		this.bizScene = bizScene;
 	}
 
+	public String getMasterOpenId() {
+		return this.masterOpenId;
+	}
+	public void setMasterOpenId(String masterOpenId) {
+		this.masterOpenId = masterOpenId;
+	}
+
 	public String getMasterUserId() {
 		return this.masterUserId;
 	}
 	public void setMasterUserId(String masterUserId) {
 		this.masterUserId = masterUserId;
+	}
+
+	public String getOperatorOpenId() {
+		return this.operatorOpenId;
+	}
+	public void setOperatorOpenId(String operatorOpenId) {
+		this.operatorOpenId = operatorOpenId;
 	}
 
 	public String getOperatorUserId() {

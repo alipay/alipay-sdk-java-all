@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.anchor.info.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-13 14:37:39
+ * @since 1.0, 2023-01-04 21:31:38
  */
 public class AlipayMerchantAnchorInfoQueryRequest implements AlipayRequest<AlipayMerchantAnchorInfoQueryResponse> {
 

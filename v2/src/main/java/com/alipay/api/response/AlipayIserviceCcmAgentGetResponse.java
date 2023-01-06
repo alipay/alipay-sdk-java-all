@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.agent.get response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 14:51:02
+ * @since 1.0, 2023-01-04 18:34:15
  */
 public class AlipayIserviceCcmAgentGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4139594225178539599L;
+	private static final long serialVersionUID = 6214121494248686471L;
 
 	/** 
 	 * 热线接入方式： 0：话机 1：电脑耳机；2：webrtc

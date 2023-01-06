@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 余额宝外部渠道广告投放决策接口
  *
  * @author auto create
- * @since 1.0, 2019-01-28 15:18:51
+ * @since 1.0, 2022-12-26 18:04:43
  */
 public class AntfortuneYebInfoAdvertisingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8734856816449478662L;
+	private static final long serialVersionUID = 2554656751394844136L;
 
 	/**
 	 * 参数名:mobile

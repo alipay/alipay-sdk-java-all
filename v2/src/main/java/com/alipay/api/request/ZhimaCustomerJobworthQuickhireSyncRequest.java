@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.jobworth.quickhire.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-11-23 15:26:37
+ * @since 1.0, 2023-01-04 20:16:40
  */
 public class ZhimaCustomerJobworthQuickhireSyncRequest implements AlipayRequest<ZhimaCustomerJobworthQuickhireSyncResponse> {
 

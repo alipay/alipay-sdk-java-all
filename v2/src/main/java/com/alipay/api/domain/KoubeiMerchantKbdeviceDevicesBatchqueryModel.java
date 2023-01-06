@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMerchantKbdeviceDevicesBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1893183387283824157L;
+	private static final long serialVersionUID = 7188991669586187314L;
 
 	/**
 	 * 需要筛选的设备类型。目前仅支持 FOOD_DISPENSER （取餐柜）类型的设备查询，必须填写FOOD_DISPENSER。

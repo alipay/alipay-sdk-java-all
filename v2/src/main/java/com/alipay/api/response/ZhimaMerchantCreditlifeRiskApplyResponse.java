@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.creditlife.risk.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 00:31:02
+ * @since 1.0, 2023-01-05 10:26:14
  */
 public class ZhimaMerchantCreditlifeRiskApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5587234232432399243L;
+	private static final long serialVersionUID = 2672688239582979755L;
 
 	/** 
 	 * 用户在商端的身份标识，如果在接口的入参中存在该参数，芝麻网关会自动转化

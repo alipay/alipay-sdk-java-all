@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * advanced open search数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-11-25 11:45:01
+ * @since 1.0, 2022-12-26 11:46:14
  */
 public class AlipayOpenMiniCloudAosdataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6196151432378916282L;
+	private static final long serialVersionUID = 7781518888892899266L;
 
 	/**
 	 * 内容数据的列表（商品列表，内容列表，本地零售商品列表，通用物品列表，四个模型只能选一个传，且单次列表数量不要超过100）

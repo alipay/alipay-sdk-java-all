@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗额度授权协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2022-11-25 17:22:35
+ * @since 1.0, 2022-12-28 15:54:06
  */
 public class AlipayPcreditHuabeiAuthPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1646854745199151195L;
+	private static final long serialVersionUID = 7838388949373734816L;
 
 	/**
 	 * 花呗先享签约场景，商户和支付宝签约时确定，商户接入时需要咨询技术支持。

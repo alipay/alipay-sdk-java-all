@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-09 17:10:31
+ * @since 1.0, 2023-01-04 21:16:38
  */
 public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4642529924278987428L;
+	private static final long serialVersionUID = 2128783519363934888L;
 
 	/** 
 	 * 券余额(元)
@@ -43,6 +43,12 @@ public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("extend_info")
 	private String extendInfo;
+
+	/** 
+	 * 冻结金额
+	 */
+	@ApiField("freeze_amount")
+	private String freezeAmount;
 
 	/** 
 	 * 券激活时间(券可以使用起始时间)
@@ -75,6 +81,12 @@ public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 	private String openId;
 
 	/** 
+	 * 回收金额
+	 */
+	@ApiField("recycle_amount")
+	private String recycleAmount;
+
+	/** 
 	 * 券状态。枚举值如下：
 ENABLED：可用；
 DISABLED：不可用；
@@ -103,6 +115,12 @@ EXPIRED：已过期。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
+
+	/** 
+	 * 已转移金额
+	 */
+	@ApiField("transfer_amount")
+	private String transferAmount;
 
 	/** 
 	 * 券所属用户ID
@@ -150,6 +168,13 @@ EXPIRED：已过期。
 		return this.extendInfo;
 	}
 
+	public void setFreezeAmount(String freezeAmount) {
+		this.freezeAmount = freezeAmount;
+	}
+	public String getFreezeAmount( ) {
+		return this.freezeAmount;
+	}
+
 	public void setGmtActive(Date gmtActive) {
 		this.gmtActive = gmtActive;
 	}
@@ -185,6 +210,13 @@ EXPIRED：已过期。
 		return this.openId;
 	}
 
+	public void setRecycleAmount(String recycleAmount) {
+		this.recycleAmount = recycleAmount;
+	}
+	public String getRecycleAmount( ) {
+		return this.recycleAmount;
+	}
+
 	public void setStatus(String status) {
 		this.status = status;
 	}
@@ -204,6 +236,13 @@ EXPIRED：已过期。
 	}
 	public String getTotalAmount( ) {
 		return this.totalAmount;
+	}
+
+	public void setTransferAmount(String transferAmount) {
+		this.transferAmount = transferAmount;
+	}
+	public String getTransferAmount( ) {
+		return this.transferAmount;
 	}
 
 	public void setUserId(String userId) {

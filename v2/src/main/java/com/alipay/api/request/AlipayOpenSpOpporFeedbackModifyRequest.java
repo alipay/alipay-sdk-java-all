@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.oppor.feedback.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 19:25:38
+ * @since 1.0, 2023-01-04 23:29:04
  */
 public class AlipayOpenSpOpporFeedbackModifyRequest implements AlipayRequest<AlipayOpenSpOpporFeedbackModifyResponse> {
 

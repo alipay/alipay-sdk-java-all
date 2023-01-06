@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.scene.kids.close request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:21:40
+ * @since 1.0, 2023-01-05 00:16:40
  */
 public class AlipayCommerceEducateSceneKidsCloseRequest implements AlipayRequest<AlipayCommerceEducateSceneKidsCloseResponse> {
 

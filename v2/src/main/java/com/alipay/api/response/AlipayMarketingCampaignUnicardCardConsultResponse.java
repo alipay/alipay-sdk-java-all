@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.unicard.card.consult response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:45:18
+ * @since 1.0, 2023-01-04 19:37:57
  */
 public class AlipayMarketingCampaignUnicardCardConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4518534927891549246L;
+	private static final long serialVersionUID = 7673195266157511511L;
 
 	/** 
 	 * 联营卡卡状态

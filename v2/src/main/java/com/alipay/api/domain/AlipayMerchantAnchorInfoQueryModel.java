@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询主播ID
  *
  * @author auto create
- * @since 1.0, 2022-12-09 20:13:41
+ * @since 1.0, 2022-12-29 14:06:16
  */
 public class AlipayMerchantAnchorInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5556447938952921184L;
+	private static final long serialVersionUID = 5169819153148973512L;
 
 	/**
 	 * 蚂蚁统一会员ID

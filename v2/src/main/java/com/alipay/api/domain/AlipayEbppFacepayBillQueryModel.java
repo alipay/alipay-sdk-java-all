@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费当面付账单状态查询接口
  *
  * @author auto create
- * @since 1.0, 2022-05-11 16:34:08
+ * @since 1.0, 2022-12-26 16:36:16
  */
 public class AlipayEbppFacepayBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1712129956176925134L;
+	private static final long serialVersionUID = 4588349274925279844L;
 
 	/**
 	 * 支付宝交易流水号(和user_id、user_identity_code三者至少传一个) 
@@ -19,6 +19,13 @@ public class AlipayEbppFacepayBillQueryModel extends AlipayObject {
 	 */
 	@ApiField("bill_no")
 	private String billNo;
+
+	/**
+	 * 支付宝用户ID(和user_identity_code、bill_no三者至少传一个) 
+（缴税业务：out_order_no/user_id/bill_no都可以不传）
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * ISV流水号，用于控制幂等，须确保全局唯一。
@@ -46,6 +53,13 @@ public class AlipayEbppFacepayBillQueryModel extends AlipayObject {
 	}
 	public void setBillNo(String billNo) {
 		this.billNo = billNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutOrderNo() {

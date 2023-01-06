@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: aft.finsecure.riskplus.security.policy.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:23:05
+ * @since 1.0, 2023-01-04 18:12:35
  */
 public class AftFinsecureRiskplusSecurityPolicyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7714816438583528983L;
+	private static final long serialVersionUID = 8236932677937356257L;
 
 	/** 
 	 * 风险咨询情况下返回的风险等级，风险处理不会返回该值

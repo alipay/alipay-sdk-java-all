@@ -7,17 +7,27 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询券可用门店
  *
  * @author auto create
- * @since 1.0, 2021-11-25 22:40:47
+ * @since 1.0, 2022-12-23 14:42:15
  */
 public class AlipayMarketingActivityShopBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7697599983896926872L;
+	private static final long serialVersionUID = 3156263846469423875L;
 
 	/**
 	 * 活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 商户PID,默认为当前接口调用商户 
@@ -46,11 +56,27 @@ public class AlipayMarketingActivityShopBatchqueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private Long pageSize;
 
+	/**
+	 * 版本号
+
+枚举值:
+2.0.0
+	 */
+	@ApiField("product_version")
+	private String productVersion;
+
 	public String getActivityId() {
 		return this.activityId;
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getMerchantId() {
@@ -72,6 +98,13 @@ public class AlipayMarketingActivityShopBatchqueryModel extends AlipayObject {
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getProductVersion() {
+		return this.productVersion;
+	}
+	public void setProductVersion(String productVersion) {
+		this.productVersion = productVersion;
 	}
 
 }

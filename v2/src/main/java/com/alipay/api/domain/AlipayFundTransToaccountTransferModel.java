@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单笔转账到支付宝账户接口
  *
  * @author auto create
- * @since 1.0, 2022-03-22 21:05:40
+ * @since 1.0, 2023-01-03 15:37:52
  */
 public class AlipayFundTransToaccountTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3363664291922199363L;
+	private static final long serialVersionUID = 8564771271639265825L;
 
 	/**
 	 * 转账金额，单位：元。
@@ -52,6 +52,7 @@ public class AlipayFundTransToaccountTransferModel extends AlipayObject {
 	 * 收款方账户类型。可取值：
 1、ALIPAY_USERID：支付宝账号对应的支付宝唯一用户号。以2088开头的16位纯数字组成。
 2、ALIPAY_LOGONID：支付宝登录号，支持邮箱和手机号格式。
+2、ALIPAY_OPENID：支付宝openid
 	 */
 	@ApiField("payee_type")
 	private String payeeType;

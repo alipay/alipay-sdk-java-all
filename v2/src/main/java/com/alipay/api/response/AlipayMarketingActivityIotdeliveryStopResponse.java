@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.iotdelivery.stop response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:17:05
+ * @since 1.0, 2023-01-04 23:33:40
  */
 public class AlipayMarketingActivityIotdeliveryStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4465195545799154945L;
+	private static final long serialVersionUID = 5172965761195119181L;
 
 	/** 
 	 * 投放计划id

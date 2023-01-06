@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.family.share.admittance.preconsult request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:47:14
+ * @since 1.0, 2023-01-03 10:55:52
  */
 public class AlipayUserFamilyShareAdmittancePreconsultRequest implements AlipayRequest<AlipayUserFamilyShareAdmittancePreconsultResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 聚合支付资金退款接口
  *
  * @author auto create
- * @since 1.0, 2020-03-23 21:59:09
+ * @since 1.0, 2022-12-26 14:45:45
  */
 public class AlipayBusinessPaymenthubRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4415595823597711979L;
+	private static final long serialVersionUID = 1281243163941243624L;
 
 	/**
 	 * 支付的收款方信息，如果涉及多收款方需传入该信息

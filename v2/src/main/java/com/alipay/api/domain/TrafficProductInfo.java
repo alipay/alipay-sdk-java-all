@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 景区小交通产品信息。
  *
  * @author auto create
- * @since 1.0, 2021-09-01 10:16:14
+ * @since 1.0, 2022-12-26 11:38:59
  */
 public class TrafficProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3295181315414533748L;
+	private static final long serialVersionUID = 1637817328727797547L;
 
 	/**
 	 * 出发地名称，对于BUS类型该字段必填。

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝货品推广计划创建
  *
  * @author auto create
- * @since 1.0, 2022-12-20 13:42:18
+ * @since 1.0, 2022-12-29 20:52:16
  */
 public class AlipayMerchantLiveItemplanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1268414179725148779L;
+	private static final long serialVersionUID = 2137753753494358113L;
 
 	/**
 	 * 投放内容，数组，内容为具体条目

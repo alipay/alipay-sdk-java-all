@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.mall.scanpurchase.traderesult.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:23:20
+ * @since 1.0, 2023-01-05 11:29:38
  */
 public class KoubeiMallScanpurchaseTraderesultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4594684973843233778L;
+	private static final long serialVersionUID = 2452825282919781996L;
 
 	/** 
 	 * banner的位置广告图片。json格式数据

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 聚合支付产品操作指令查询接口
  *
  * @author auto create
- * @since 1.0, 2020-03-23 21:59:40
+ * @since 1.0, 2022-12-26 14:46:14
  */
 public class AlipayBusinessPaymenthubQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6355324614386426139L;
+	private static final long serialVersionUID = 6488888914297714192L;
 
 	/**
 	 * 支付、打款、退款时候支付宝返回的唯一凭证id，调用方查询时候建议优先传入该值，内部处理时优先以该值为准。instruction_id和out_request_no不能同时为空。

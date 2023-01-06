@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 景区小交通票务信息。
  *
  * @author auto create
- * @since 1.0, 2021-09-01 10:16:14
+ * @since 1.0, 2022-12-26 11:38:59
  */
 public class ScenicTrafficTicketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3792463854231958823L;
+	private static final long serialVersionUID = 1835296182157578974L;
 
 	/**
 	 * 检票时间

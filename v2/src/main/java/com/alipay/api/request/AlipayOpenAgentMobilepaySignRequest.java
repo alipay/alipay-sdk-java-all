@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.mobilepay.sign request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:19:13
+ * @since 1.0, 2023-01-04 22:56:46
  */
 public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<AlipayOpenAgentMobilepaySignResponse> {
 

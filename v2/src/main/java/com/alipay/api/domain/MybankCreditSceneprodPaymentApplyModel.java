@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景金融代收付申请
  *
  * @author auto create
- * @since 1.0, 2019-05-15 14:07:26
+ * @since 1.0, 2023-01-04 15:05:49
  */
 public class MybankCreditSceneprodPaymentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4147548514378155398L;
+	private static final long serialVersionUID = 4563186632363811614L;
 
 	/**
 	 * 业务金额，单位分

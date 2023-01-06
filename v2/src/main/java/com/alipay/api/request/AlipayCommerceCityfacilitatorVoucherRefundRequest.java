@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.cityfacilitator.voucher.refund request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:32:43
+ * @since 1.0, 2023-01-05 00:03:26
  */
 public class AlipayCommerceCityfacilitatorVoucherRefundRequest implements AlipayRequest<AlipayCommerceCityfacilitatorVoucherRefundResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度编辑
  *
  * @author auto create
- * @since 1.0, 2022-11-11 13:34:38
+ * @since 1.0, 2022-12-23 15:46:15
  */
 public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1531179333565951375L;
+	private static final long serialVersionUID = 4669118717785379779L;
 
 	/**
 	 * 企业共同账户id（条件必填）
@@ -26,6 +26,14 @@ public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 费控咨询模式：
+0-支付宝内部计算
+1-咨询外部服务商
+	 */
+	@ApiField("consult_mode")
+	private String consultMode;
 
 	/**
 	 * 制度是否启用（可空），"0"为停用，"1"为启用
@@ -81,6 +89,13 @@ public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getConsultMode() {
+		return this.consultMode;
+	}
+	public void setConsultMode(String consultMode) {
+		this.consultMode = consultMode;
 	}
 
 	public String getEffective() {

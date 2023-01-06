@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.agent.schedulelog.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:24:55
+ * @since 1.0, 2023-01-04 22:33:20
  */
 public class AlipayIserviceCcmAgentSchedulelogQueryRequest implements AlipayRequest<AlipayIserviceCcmAgentSchedulelogQueryResponse> {
 

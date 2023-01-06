@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.servicemarket.order.item.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 17:23:48
+ * @since 1.0, 2023-01-04 21:37:19
  */
 public class AlipayOpenServicemarketOrderItemCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7628432265669589457L;
+	private static final long serialVersionUID = 6773538249851298375L;
 
 	
 

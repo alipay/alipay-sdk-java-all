@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专享价成员信息查询接口
  *
  * @author auto create
- * @since 1.0, 2022-12-16 10:27:56
+ * @since 1.0, 2022-12-30 16:22:15
  */
 public class AlipayFundIdentitypayMemberQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1613679612157387147L;
+	private static final long serialVersionUID = 5468328411916867451L;
 
 	/**
 	 * 查询签约信息场景码
@@ -20,16 +20,22 @@ public class AlipayFundIdentitypayMemberQueryModel extends AlipayObject {
 	private String bizScene;
 
 	/**
-	 * 签约方账号,当identity_type为ALIPAY_USER_ID时，是2088xx，当identity_type为ALIPAY_LOGON_ID时，是支付宝登录号
+	 * 签约方账号,当identity_type为ALIPAY_USER_ID时，是2088xx，当identity_type为ALIPAY_LOGON_ID时，是支付宝登录号，当identity_type为ALIPAY_OPEN_ID时，是支付宝openId
 	 */
 	@ApiField("identity")
 	private String identity;
 
 	/**
-	 * 签约方类型(ALIPAY_LOGON_ID或ALIPAY_USER_ID)
+	 * 签约方类型(ALIPAY_USER_ID或ALIPAY_LOGON_ID或ALIPAY_OPEN_ID)
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 支付宝openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部成员Id（全局唯一）
@@ -80,6 +86,13 @@ public class AlipayFundIdentitypayMemberQueryModel extends AlipayObject {
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutMemberId() {

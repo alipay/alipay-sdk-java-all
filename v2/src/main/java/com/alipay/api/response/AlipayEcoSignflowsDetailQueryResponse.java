@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.signflows.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:29:29
+ * @since 1.0, 2023-01-04 22:13:53
  */
 public class AlipayEcoSignflowsDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6111619331391353454L;
+	private static final long serialVersionUID = 5882549574142563557L;
 
 	/** 
 	 * 创建流程时平台上传的附件及签署时用户上传的附件或身份证

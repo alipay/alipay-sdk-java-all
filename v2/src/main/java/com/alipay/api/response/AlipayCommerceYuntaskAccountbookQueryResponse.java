@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.FundAccountBookInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,17 +11,24 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.accountbook.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-30 20:18:48
+ * @since 1.0, 2022-12-27 10:12:41
  */
 public class AlipayCommerceYuntaskAccountbookQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7849758141528476349L;
+	private static final long serialVersionUID = 1842954398911591662L;
 
 	/** 
 	 * 记账本id
 	 */
 	@ApiField("account_book_id")
 	private String accountBookId;
+
+	/** 
+	 * 账本信息
+	 */
+	@ApiListField("account_book_info")
+	@ApiField("fund_account_book_info")
+	private List<FundAccountBookInfo> accountBookInfo;
 
 	/** 
 	 * 可用余额
@@ -32,11 +42,36 @@ public class AlipayCommerceYuntaskAccountbookQueryResponse extends AlipayRespons
 	@ApiField("card_no")
 	private String cardNo;
 
+	/** 
+	 * 页码
+	 */
+	@ApiField("page")
+	private Long page;
+
+	/** 
+	 * 页面大小
+	 */
+	@ApiField("page_size")
+	private Long pageSize;
+
+	/** 
+	 * 总数
+	 */
+	@ApiField("total_size")
+	private Long totalSize;
+
 	public void setAccountBookId(String accountBookId) {
 		this.accountBookId = accountBookId;
 	}
 	public String getAccountBookId( ) {
 		return this.accountBookId;
+	}
+
+	public void setAccountBookInfo(List<FundAccountBookInfo> accountBookInfo) {
+		this.accountBookInfo = accountBookInfo;
+	}
+	public List<FundAccountBookInfo> getAccountBookInfo( ) {
+		return this.accountBookInfo;
 	}
 
 	public void setAvailableAmount(String availableAmount) {
@@ -51,6 +86,27 @@ public class AlipayCommerceYuntaskAccountbookQueryResponse extends AlipayRespons
 	}
 	public String getCardNo( ) {
 		return this.cardNo;
+	}
+
+	public void setPage(Long page) {
+		this.page = page;
+	}
+	public Long getPage( ) {
+		return this.page;
+	}
+
+	public void setPageSize(Long pageSize) {
+		this.pageSize = pageSize;
+	}
+	public Long getPageSize( ) {
+		return this.pageSize;
+	}
+
+	public void setTotalSize(Long totalSize) {
+		this.totalSize = totalSize;
+	}
+	public Long getTotalSize( ) {
+		return this.totalSize;
 	}
 
 }

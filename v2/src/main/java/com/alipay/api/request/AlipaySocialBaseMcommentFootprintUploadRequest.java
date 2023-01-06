@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.mcomment.footprint.upload request
  * 
  * @author auto create
- * @since 1.0, 2020-03-23 15:05:11
+ * @since 1.0, 2022-12-30 17:03:36
  */
 public class AlipaySocialBaseMcommentFootprintUploadRequest implements AlipayRequest<AlipaySocialBaseMcommentFootprintUploadResponse> {
 

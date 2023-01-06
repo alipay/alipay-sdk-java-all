@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 兑换券核销接口
  *
  * @author auto create
- * @since 1.0, 2022-12-05 20:37:31
+ * @since 1.0, 2022-12-22 14:02:51
  */
 public class AlipayMarketingExchangevoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7712996366257917399L;
+	private static final long serialVersionUID = 1128541884866764773L;
+
+	/**
+	 * 业务上下文
+	 */
+	@ApiField("biz_context")
+	private String bizContext;
+
+	/**
+	 * 是否需要校验规则
+	 */
+	@ApiField("need_rule_check")
+	private Boolean needRuleCheck;
 
 	/**
 	 * 支付宝用户ID(映射的openId) ，必须保证待使用的券ID归属于该支付宝用户ID
@@ -36,6 +48,20 @@ public class AlipayMarketingExchangevoucherUseModel extends AlipayObject {
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
+
+	public String getBizContext() {
+		return this.bizContext;
+	}
+	public void setBizContext(String bizContext) {
+		this.bizContext = bizContext;
+	}
+
+	public Boolean getNeedRuleCheck() {
+		return this.needRuleCheck;
+	}
+	public void setNeedRuleCheck(Boolean needRuleCheck) {
+		this.needRuleCheck = needRuleCheck;
+	}
 
 	public String getOpenId() {
 		return this.openId;

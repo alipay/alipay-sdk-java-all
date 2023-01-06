@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfcenter.banklogtransfer.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:03:25
+ * @since 1.0, 2023-01-04 19:14:46
  */
 public class AlipayBossFncGfcenterBanklogtransferCreateRequest implements AlipayRequest<AlipayBossFncGfcenterBanklogtransferCreateResponse> {
 

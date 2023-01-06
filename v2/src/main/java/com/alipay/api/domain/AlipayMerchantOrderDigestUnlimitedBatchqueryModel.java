@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单消费数据列表查询
  *
  * @author auto create
- * @since 1.0, 2020-06-20 10:58:28
+ * @since 1.0, 2023-01-03 10:57:15
  */
 public class AlipayMerchantOrderDigestUnlimitedBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1776791794599813257L;
+	private static final long serialVersionUID = 4466731331628787921L;
 
 	/**
 	 * 买家支付宝用户id
@@ -38,6 +38,12 @@ public class AlipayMerchantOrderDigestUnlimitedBatchqueryModel extends AlipayObj
 	 */
 	@ApiField("merchant_user_id")
 	private String merchantUserId;
+
+	/**
+	 * OpenId是用户在应用（AppId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 所需查询的订单来源
@@ -92,6 +98,13 @@ TINY_APP-来自小程序的订单
 	}
 	public void setMerchantUserId(String merchantUserId) {
 		this.merchantUserId = merchantUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderSource() {

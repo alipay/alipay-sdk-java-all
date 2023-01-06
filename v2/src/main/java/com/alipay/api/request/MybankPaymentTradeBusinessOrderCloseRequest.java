@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.payment.trade.business.order.close request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:29:19
+ * @since 1.0, 2023-01-05 15:06:34
  */
 public class MybankPaymentTradeBusinessOrderCloseRequest implements AlipayRequest<MybankPaymentTradeBusinessOrderCloseResponse> {
 

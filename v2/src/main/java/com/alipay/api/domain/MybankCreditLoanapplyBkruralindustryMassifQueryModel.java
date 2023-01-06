@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询地块列表信息
  *
  * @author auto create
- * @since 1.0, 2021-12-22 10:12:40
+ * @since 1.0, 2022-12-30 11:14:03
  */
 public class MybankCreditLoanapplyBkruralindustryMassifQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4526714975217327281L;
+	private static final long serialVersionUID = 5469619782752242774L;
 
 	/**
 	 * 流水id

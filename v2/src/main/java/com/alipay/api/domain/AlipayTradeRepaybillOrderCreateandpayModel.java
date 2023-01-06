@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易还款账单付款单创建并支付接口
  *
  * @author auto create
- * @since 1.0, 2022-12-08 12:17:11
+ * @since 1.0, 2022-12-30 16:05:15
  */
 public class AlipayTradeRepaybillOrderCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8327432382969499215L;
+	private static final long serialVersionUID = 2845123126332981938L;
 
 	/**
 	 * 还款协议号
@@ -42,6 +42,12 @@ public class AlipayTradeRepaybillOrderCreateandpayModel extends AlipayObject {
 	 */
 	@ApiField("passback_params")
 	private String passbackParams;
+
+	/**
+	 * 还款付款方对应的蚂蚁统一id
+	 */
+	@ApiField("payer_open_id")
+	private String payerOpenId;
 
 	/**
 	 * 还款的付款uid
@@ -118,6 +124,13 @@ public class AlipayTradeRepaybillOrderCreateandpayModel extends AlipayObject {
 	}
 	public void setPassbackParams(String passbackParams) {
 		this.passbackParams = passbackParams;
+	}
+
+	public String getPayerOpenId() {
+		return this.payerOpenId;
+	}
+	public void setPayerOpenId(String payerOpenId) {
+		this.payerOpenId = payerOpenId;
 	}
 
 	public String getPayerUserId() {

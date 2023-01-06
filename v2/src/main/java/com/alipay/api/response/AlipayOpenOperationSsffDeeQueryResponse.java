@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.ssff.dee.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:21:08
+ * @since 1.0, 2023-01-04 22:15:36
  */
 public class AlipayOpenOperationSsffDeeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4784821658662983578L;
+	private static final long serialVersionUID = 7436384937346817636L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.member.data.isv.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 16:09:04
+ * @since 1.0, 2023-01-04 18:06:48
  */
 public class KoubeiMemberDataIsvCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5253488752519491998L;
+	private static final long serialVersionUID = 2238389732686673642L;
 
 	
 

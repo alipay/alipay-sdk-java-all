@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户已签约卡信息
  *
  * @author auto create
- * @since 1.0, 2021-01-05 16:55:13
+ * @since 1.0, 2023-01-04 19:42:31
  */
 public class AlipayFinancialnetAuthExpressSigncardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7318745827916663547L;
+	private static final long serialVersionUID = 2176397176576222248L;
 
 	/**
 	 * 业务标识

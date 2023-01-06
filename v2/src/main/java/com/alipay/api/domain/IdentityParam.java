@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户身份信息对象
  *
  * @author auto create
- * @since 1.0, 2018-07-31 12:02:23
+ * @since 1.0, 2022-12-28 14:51:22
  */
 public class IdentityParam extends AlipayObject {
 
-	private static final long serialVersionUID = 2843997886543268594L;
+	private static final long serialVersionUID = 1864787853219421286L;
 
 	/**
 	 * 姓名
@@ -36,6 +36,12 @@ public class IdentityParam extends AlipayObject {
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 用户id
@@ -69,6 +75,13 @@ public class IdentityParam extends AlipayObject {
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

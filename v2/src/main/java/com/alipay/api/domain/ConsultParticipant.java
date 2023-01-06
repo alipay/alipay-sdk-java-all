@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 咨询参与方信息
  *
  * @author auto create
- * @since 1.0, 2022-12-06 14:51:27
+ * @since 1.0, 2022-12-29 16:22:00
  */
 public class ConsultParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 2688654751382793877L;
+	private static final long serialVersionUID = 5688612653133325497L;
 
 	/**
 	 * 参与方的唯一标识

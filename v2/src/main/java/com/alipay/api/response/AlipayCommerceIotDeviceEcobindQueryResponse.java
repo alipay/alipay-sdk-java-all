@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.ecobind.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 15:36:38
+ * @since 1.0, 2023-01-05 00:36:43
  */
 public class AlipayCommerceIotDeviceEcobindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5235777974347517343L;
+	private static final long serialVersionUID = 3878145985191984848L;
 
 	/** 
 	 * 可选项[Y,N]，Y表示有绑定数据，N表示没有绑定数据

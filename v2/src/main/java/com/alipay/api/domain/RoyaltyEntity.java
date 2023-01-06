@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账主体信息
  *
  * @author auto create
- * @since 1.0, 2022-11-24 17:20:30
+ * @since 1.0, 2022-12-21 14:36:19
  */
 public class RoyaltyEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 1854182468452749714L;
+	private static final long serialVersionUID = 5612539826293395829L;
 
 	/**
 	 * 分账接收方账号。

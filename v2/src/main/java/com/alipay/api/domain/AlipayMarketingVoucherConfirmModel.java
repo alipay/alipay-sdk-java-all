@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户确认领券
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:38:50
+ * @since 1.0, 2022-12-29 16:56:20
  */
 public class AlipayMarketingVoucherConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2817559437536783186L;
+	private static final long serialVersionUID = 5678274138822569621L;
 
 	/**
 	 * 用于决定在用户确认领券后是否重定向。可枚举：true表示需要重定向，false表示不需要重定向，不区分大小写
 	 */
 	@ApiField("need_redirect")
 	private Boolean needRedirect;
+
+	/**
+	 * 支付宝用户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务单号。用作幂等控制。同一个template_id、user_id、out_biz_no返回相同的发券码
@@ -54,6 +60,13 @@ public class AlipayMarketingVoucherConfirmModel extends AlipayObject {
 	}
 	public void setNeedRedirect(Boolean needRedirect) {
 		this.needRedirect = needRedirect;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

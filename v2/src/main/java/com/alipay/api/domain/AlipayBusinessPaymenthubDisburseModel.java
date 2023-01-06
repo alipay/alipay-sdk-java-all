@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 聚合支付资金打款接口
  *
  * @author auto create
- * @since 1.0, 2020-03-23 21:59:46
+ * @since 1.0, 2022-12-26 14:46:34
  */
 public class AlipayBusinessPaymenthubDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8163868321529223294L;
+	private static final long serialVersionUID = 8755497324745361445L;
 
 	/**
 	 * 打款金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]

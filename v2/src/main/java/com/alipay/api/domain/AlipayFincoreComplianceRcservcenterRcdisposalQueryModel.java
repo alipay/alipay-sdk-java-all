@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合规服务处置平台当面付商户处罚状态查询接口
  *
  * @author auto create
- * @since 1.0, 2022-12-21 10:10:52
+ * @since 1.0, 2022-12-27 21:02:51
  */
 public class AlipayFincoreComplianceRcservcenterRcdisposalQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2433149286561251627L;
+	private static final long serialVersionUID = 2359152427722123914L;
 
 	/**
 	 * 需求code

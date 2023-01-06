@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付券归属商户信息
  *
  * @author auto create
- * @since 1.0, 2022-02-23 14:18:56
+ * @since 1.0, 2022-12-27 10:30:38
  */
 public class PaymentVoucherBelongMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1836618482485115682L;
+	private static final long serialVersionUID = 2176929477177784154L;
 
 	/**
 	 * 商户支付宝id，默认品牌名和品牌logo将从该商户信息中获取

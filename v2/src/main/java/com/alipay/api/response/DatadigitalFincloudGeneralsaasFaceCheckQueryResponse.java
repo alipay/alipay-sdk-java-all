@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.check.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 18:37:48
+ * @since 1.0, 2023-01-04 19:38:48
  */
 public class DatadigitalFincloudGeneralsaasFaceCheckQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1238921856521987319L;
+	private static final long serialVersionUID = 3852283468984278266L;
 
 	/** 
 	 * 如果设置了need_alive_photo的值不为N，则该字段返回人脸照片的base64编码字符串。

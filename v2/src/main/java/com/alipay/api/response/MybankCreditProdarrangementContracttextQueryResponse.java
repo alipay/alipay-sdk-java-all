@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.prodarrangement.contracttext.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:12:47
+ * @since 1.0, 2023-01-05 10:27:03
  */
 public class MybankCreditProdarrangementContracttextQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3416776823926784836L;
+	private static final long serialVersionUID = 5686791323499593313L;
 
 	/** 
 	 * 合同内容

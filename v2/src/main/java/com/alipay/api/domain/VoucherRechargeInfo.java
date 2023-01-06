@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值详情
  *
  * @author auto create
- * @since 1.0, 2022-07-28 14:17:16
+ * @since 1.0, 2022-12-27 10:13:57
  */
 public class VoucherRechargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5222345463476711617L;
+	private static final long serialVersionUID = 5552958751855267625L;
 
 	/**
 	 * 预充值方式。 

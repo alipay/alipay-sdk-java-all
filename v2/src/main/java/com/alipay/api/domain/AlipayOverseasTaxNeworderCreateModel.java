@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退税单创建
  *
  * @author auto create
- * @since 1.0, 2022-10-11 17:05:59
+ * @since 1.0, 2022-12-29 16:34:51
  */
 public class AlipayOverseasTaxNeworderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3237682131311372496L;
+	private static final long serialVersionUID = 7127756548289977487L;
 
 	/**
 	 * 支付宝userId
@@ -50,6 +50,12 @@ public class AlipayOverseasTaxNeworderCreateModel extends AlipayObject {
 	 */
 	@ApiField("nationality")
 	private String nationality;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部退税商户ID，商户在退税机构的ID，一键退税必填
@@ -145,6 +151,13 @@ public class AlipayOverseasTaxNeworderCreateModel extends AlipayObject {
 	}
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutMerchantId() {

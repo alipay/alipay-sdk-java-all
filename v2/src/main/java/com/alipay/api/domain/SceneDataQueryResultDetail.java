@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汽车金融数据查询返回值
  *
  * @author auto create
- * @since 1.0, 2022-07-14 10:47:33
+ * @since 1.0, 2023-01-05 14:20:12
  */
 public class SceneDataQueryResultDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6716373144619383529L;
+	private static final long serialVersionUID = 1535251493775397552L;
 
 	/**
 	 * 网商银行申请单号

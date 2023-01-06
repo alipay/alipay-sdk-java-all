@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.user.open.certify.certify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:32:56
+ * @since 1.0, 2023-01-04 22:19:18
  */
 public class MybankCreditUserOpenCertifyCertifyRequest implements AlipayRequest<MybankCreditUserOpenCertifyCertifyResponse> {
 

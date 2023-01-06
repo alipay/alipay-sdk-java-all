@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则查询
  *
  * @author auto create
- * @since 1.0, 2022-08-17 13:54:59
+ * @since 1.0, 2022-12-21 11:30:16
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5418649866873199958L;
+	private static final long serialVersionUID = 5629174684252726787L;
 
 	/**
 	 * 共同账户id
@@ -20,7 +20,7 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleQueryModel exte
 	private String accountId;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号（仅使用account_id时必传）
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;

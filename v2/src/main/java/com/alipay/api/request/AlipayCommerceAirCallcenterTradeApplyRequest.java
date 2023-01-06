@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.air.callcenter.trade.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:47:00
+ * @since 1.0, 2023-01-04 22:16:45
  */
 public class AlipayCommerceAirCallcenterTradeApplyRequest implements AlipayRequest<AlipayCommerceAirCallcenterTradeApplyResponse> {
 

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditGuaranteeSelleradmittanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6651126123745851272L;
+	private static final long serialVersionUID = 5164895376741657965L;
 
 	/** 
 	 * 查询decision是否准入。为空表示不准入

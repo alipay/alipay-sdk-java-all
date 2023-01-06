@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支付宝用户是否存在有效家庭
  *
  * @author auto create
- * @since 1.0, 2020-07-23 14:51:22
+ * @since 1.0, 2023-01-03 18:10:11
  */
 public class AlipayUserFamilyRelationValidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2558744291627929446L;
+	private static final long serialVersionUID = 3729138365657493276L;
 
 	/**
 	 * 是否需要强一致查询，无特殊要求传false即可。

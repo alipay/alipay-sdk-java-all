@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.data.batch.feedback request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 15:00:05
+ * @since 1.0, 2023-01-04 21:33:45
  */
 public class ZhimaDataBatchFeedbackRequest implements AlipayUploadRequest<ZhimaDataBatchFeedbackResponse> {
 

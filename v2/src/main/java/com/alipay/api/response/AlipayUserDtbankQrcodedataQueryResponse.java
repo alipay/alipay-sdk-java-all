@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbank.qrcodedata.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:35:27
+ * @since 1.0, 2023-01-04 20:01:12
  */
 public class AlipayUserDtbankQrcodedataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4498241494437854955L;
+	private static final long serialVersionUID = 6632734653951753634L;
 
 	/** 
 	 * 引导绑卡数量

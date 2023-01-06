@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 绿色小票退换货
  *
  * @author auto create
- * @since 1.0, 2022-10-10 16:28:16
+ * @since 1.0, 2022-12-30 17:30:53
  */
 public class AlipayCommerceReceiptInvalidModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7598838749359482481L;
+	private static final long serialVersionUID = 1539224839224728366L;
+
+	/**
+	 * 支付宝用户openid
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝用户uid
@@ -38,6 +44,13 @@ public class AlipayCommerceReceiptInvalidModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUid() {
 		return this.alipayUid;

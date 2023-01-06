@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.filetask.submit response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:21:38
+ * @since 1.0, 2023-01-05 23:01:37
  */
 public class AlipayMerchantIndirectFiletaskSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6192548388796153489L;
+	private static final long serialVersionUID = 7311335765528789626L;
+
+	/** 
+	 * 数据文件任务提交后，为任务文件分配的编号
+	 */
+	@ApiField("task_file_no")
+	private String taskFileNo;
 
 	/** 
 	 * 文件任务处理结果
@@ -25,6 +31,13 @@ public class AlipayMerchantIndirectFiletaskSubmitResponse extends AlipayResponse
 	 */
 	@ApiField("task_state_desc")
 	private String taskStateDesc;
+
+	public void setTaskFileNo(String taskFileNo) {
+		this.taskFileNo = taskFileNo;
+	}
+	public String getTaskFileNo( ) {
+		return this.taskFileNo;
+	}
 
 	public void setTaskState(String taskState) {
 		this.taskState = taskState;

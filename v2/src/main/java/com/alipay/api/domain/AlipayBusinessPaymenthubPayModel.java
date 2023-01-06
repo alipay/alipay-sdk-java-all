@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 聚合支付下单支付接口
  *
  * @author auto create
- * @since 1.0, 2020-03-23 21:59:55
+ * @since 1.0, 2022-12-26 14:46:59
  */
 public class AlipayBusinessPaymenthubPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8871573625649844429L;
+	private static final long serialVersionUID = 3722278797843224562L;
 
 	/**
 	 * 聚合支付的支付渠道，支付宝分配。

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.life.account.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-14 20:07:02
+ * @since 1.0, 2023-01-05 01:01:38
  */
 public class AlipayOpenPublicLifeAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5759314826859277978L;
+	private static final long serialVersionUID = 4732352986544716368L;
 
 	/** 
 	 * 过期时间，在过期时间之前需要拿refresh_token重新换取新的token使用

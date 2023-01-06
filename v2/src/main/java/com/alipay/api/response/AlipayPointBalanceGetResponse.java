@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.point.balance.get response.
  * 
  * @author auto create
- * @since 1.0, 2022-10-12 19:33:41
+ * @since 1.0, 2023-01-04 16:37:43
  */
 public class AlipayPointBalanceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7321758414426764658L;
+	private static final long serialVersionUID = 3571587629723381955L;
 
 	/** 
 	 * 用户的集分宝余额

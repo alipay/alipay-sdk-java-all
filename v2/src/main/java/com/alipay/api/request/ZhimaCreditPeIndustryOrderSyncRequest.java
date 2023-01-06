@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.pe.industry.order.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:36:12
+ * @since 1.0, 2022-12-29 10:37:41
  */
 public class ZhimaCreditPeIndustryOrderSyncRequest implements AlipayRequest<ZhimaCreditPeIndustryOrderSyncResponse> {
 

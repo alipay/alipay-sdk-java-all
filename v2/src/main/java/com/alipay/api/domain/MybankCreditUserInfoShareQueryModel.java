@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权令牌换取用户授权身份信息
  *
  * @author auto create
- * @since 1.0, 2020-06-12 10:36:00
+ * @since 1.0, 2022-12-30 12:02:19
  */
 public class MybankCreditUserInfoShareQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6384644934879898442L;
+	private static final long serialVersionUID = 2465424445117283152L;
 
 	/**
 	 * 访问令牌。通过该令牌调用需要授权类接口.

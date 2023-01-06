@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关闭子商户信息工单
  *
  * @author auto create
- * @since 1.0, 2022-12-15 16:13:49
+ * @since 1.0, 2023-01-05 16:06:51
  */
 public class ZhimaMerchantSubsidiariesCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2424171544852444326L;
+	private static final long serialVersionUID = 4184984329322235549L;
 
 	/**
 	 * 工单标识

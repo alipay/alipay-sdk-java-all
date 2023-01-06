@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.scene.rating.initialize request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:23:16
+ * @since 1.0, 2023-01-04 18:14:08
  */
 public class ZhimaCreditEpSceneRatingInitializeRequest implements AlipayRequest<ZhimaCreditEpSceneRatingInitializeResponse> {
 

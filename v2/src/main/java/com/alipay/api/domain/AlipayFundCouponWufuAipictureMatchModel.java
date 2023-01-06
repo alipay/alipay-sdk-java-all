@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ai年画匹配性判定
  *
  * @author auto create
- * @since 1.0, 2022-12-02 16:23:23
+ * @since 1.0, 2023-01-05 16:11:50
  */
 public class AlipayFundCouponWufuAipictureMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5444874563395612362L;
+	private static final long serialVersionUID = 7581873139572669121L;
 
 	/**
 	 * 图片ID

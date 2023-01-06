@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.membercard.transaction.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:26:39
+ * @since 1.0, 2023-01-04 20:31:40
  */
 public class AntMerchantExpandMembercardTransactionBatchqueryRequest implements AlipayRequest<AntMerchantExpandMembercardTransactionBatchqueryResponse> {
 

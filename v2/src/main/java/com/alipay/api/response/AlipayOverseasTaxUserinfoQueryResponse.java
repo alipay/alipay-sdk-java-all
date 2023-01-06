@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.userinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 08:58:54
+ * @since 1.0, 2023-01-04 17:01:37
  */
 public class AlipayOverseasTaxUserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1817486695217248145L;
+	private static final long serialVersionUID = 6463548912364875926L;
 
 	/** 
 	 * 用户是否符合支付宝退税资金收款条件。包括用户状态，认证状态等的校验。true为符合支付宝退税资金收款条件，false为不符合
@@ -35,6 +35,12 @@ USER_ACCOUNT_FREEZED，用户已被冻结，终结流程。
 	 */
 	@ApiField("logon_id")
 	private String logonId;
+
+	/** 
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 用户Id:蚂蚁统一会员ID,唯一
@@ -67,6 +73,13 @@ USER_ACCOUNT_FREEZED，用户已被冻结，终结流程。
 	}
 	public String getLogonId( ) {
 		return this.logonId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setUserId(String userId) {

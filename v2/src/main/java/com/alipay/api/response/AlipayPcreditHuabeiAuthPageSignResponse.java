@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.page.sign response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-25 17:22:35
+ * @since 1.0, 2022-12-28 15:54:06
  */
 public class AlipayPcreditHuabeiAuthPageSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7387486486613932542L;
+	private static final long serialVersionUID = 2595487327734796463L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号。只有签约成功时才会返回。后续涉及到用户已冻结额度的操作，都需要传入该协议号。请妥善保存，并在系统内建立好如下关联关系：(商户自有用户id, 支付宝用户alipay_user_id, 花呗先享协议号)

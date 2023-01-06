@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 制度新增
  *
  * @author auto create
- * @since 1.0, 2022-10-11 09:43:20
+ * @since 1.0, 2022-12-23 15:33:16
  */
 public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7513719296789672448L;
+	private static final long serialVersionUID = 4326615129572267582L;
 
 	/**
 	 * 企业共同账户id，和授权签约协议号共同使用。
@@ -28,6 +28,14 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 费控咨询模式，默认为0
+0-支付宝内部计算
+1-咨询外部服务商
+	 */
+	@ApiField("consult_mode")
+	private String consultMode;
 
 	/**
 	 * 制度生效结束时间，最小粒度为天，结束时间不早于起始时间，时分秒必须为23:59:59，最晚不超过2222-01-01 23:59:59
@@ -97,6 +105,13 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getConsultMode() {
+		return this.consultMode;
+	}
+	public void setConsultMode(String consultMode) {
+		this.consultMode = consultMode;
 	}
 
 	public Date getEffectiveEndDate() {

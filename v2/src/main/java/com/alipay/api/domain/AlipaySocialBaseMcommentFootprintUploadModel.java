@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 足迹上传
  *
  * @author auto create
- * @since 1.0, 2020-03-23 15:04:16
+ * @since 1.0, 2022-12-30 12:36:51
  */
 public class AlipaySocialBaseMcommentFootprintUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5781832528181285358L;
+	private static final long serialVersionUID = 7855961753436133311L;
 
 	/**
 	 * 足迹服务分配的业务码
@@ -48,6 +48,12 @@ public class AlipaySocialBaseMcommentFootprintUploadModel extends AlipayObject {
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 上报数据来源
@@ -101,6 +107,13 @@ public class AlipaySocialBaseMcommentFootprintUploadModel extends AlipayObject {
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSource() {

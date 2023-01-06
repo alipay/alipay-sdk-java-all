@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校验领取权益资格
  *
  * @author auto create
- * @since 1.0, 2020-03-25 11:38:05
+ * @since 1.0, 2023-01-03 11:26:50
  */
 public class AlipayOverseasTravelRatePromotionVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7697549927292925555L;
+	private static final long serialVersionUID = 1292152383639166692L;
 
 	/**
 	 * 业务扩展参数
 	 */
 	@ApiField("extend_param")
 	private String extendParam;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 跨境游发现平台优惠id
@@ -36,6 +42,13 @@ public class AlipayOverseasTravelRatePromotionVerifyModel extends AlipayObject {
 	}
 	public void setExtendParam(String extendParam) {
 		this.extendParam = extendParam;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getTravelPromotionId() {

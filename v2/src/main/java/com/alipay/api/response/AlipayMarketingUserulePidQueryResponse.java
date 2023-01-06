@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.userule.pid.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:40:36
+ * @since 1.0, 2023-01-04 21:50:47
  */
 public class AlipayMarketingUserulePidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6433854991891629122L;
+	private static final long serialVersionUID = 6219119895587459226L;
 
 	/** 
 	 * 满足条件的所有pid，多个pid使用英文逗号隔开

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单业务中，商户的前置费用明细条目
  *
  * @author auto create
- * @since 1.0, 2020-06-20 11:00:36
+ * @since 1.0, 2022-12-29 14:05:39
  */
 public class PreAmountClauseResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2682686368644455295L;
+	private static final long serialVersionUID = 7646782546893399351L;
 
 	/**
 	 * 具体的金额

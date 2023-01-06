@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地零售商品
  *
  * @author auto create
- * @since 1.0, 2022-10-14 12:00:21
+ * @since 1.0, 2022-12-22 14:21:53
  */
 public class ApeRetailItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6497944878756929895L;
+	private static final long serialVersionUID = 8198366654581199727L;
 
 	/**
 	 * 商品可售时间
@@ -66,6 +66,12 @@ public class ApeRetailItem extends AlipayObject {
 	private String ipRoleId;
 
 	/**
+	 * 加密的userId
+	 */
+	@ApiField("ip_role_open_id")
+	private String ipRoleOpenId;
+
+	/**
 	 * 商品归属的小程序ID
 	 */
 	@ApiField("mini_app_id")
@@ -92,7 +98,7 @@ public class ApeRetailItem extends AlipayObject {
 	private List<String> promoPicUrlList;
 
 	/**
-	 * 数据类型
+	 * 门店零售商品的数据类型，如果是用门店零售商品，请传SHOP_GOODS，如果不传，默认为GOODS。有且仅有SHOP_GOODS类型的商品支持LBS。
 	 */
 	@ApiField("row_type")
 	private String rowType;
@@ -188,6 +194,13 @@ public class ApeRetailItem extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getIpRoleOpenId() {
+		return this.ipRoleOpenId;
+	}
+	public void setIpRoleOpenId(String ipRoleOpenId) {
+		this.ipRoleOpenId = ipRoleOpenId;
 	}
 
 	public String getMiniAppId() {

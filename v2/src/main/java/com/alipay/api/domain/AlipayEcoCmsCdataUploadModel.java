@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCmsCdataUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7549885754918627545L;
+	private static final long serialVersionUID = 8426563831139734267L;
 
 	/**
 	 * 属性-消息投放的单个行业页面(如教育的某个幼儿园)

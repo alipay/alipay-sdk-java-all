@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.advertising.operate response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:50:58
+ * @since 1.0, 2023-01-05 10:30:51
  */
 public class KoubeiMarketingAdvertisingOperateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3716566168242778742L;
+	private static final long serialVersionUID = 7836815113149385924L;
 
 	/** 
 	 * 正常操作返回当前操作的广告id。如果操作失败，返回的广告id为空

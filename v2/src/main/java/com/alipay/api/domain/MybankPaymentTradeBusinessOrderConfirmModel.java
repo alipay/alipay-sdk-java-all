@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商银行交易确认接口
  *
  * @author auto create
- * @since 1.0, 2022-02-09 11:02:37
+ * @since 1.0, 2023-01-05 15:04:24
  */
 public class MybankPaymentTradeBusinessOrderConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6638289164523585295L;
+	private static final long serialVersionUID = 1469945352879266677L;
 
 	/**
 	 * 金额，单位元

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.esg.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:26:37
+ * @since 1.0, 2022-12-29 12:16:38
  */
 public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3577573183736717959L;
+	private static final long serialVersionUID = 5199892697771127339L;
 
 	/** 
 	 * 近12个月内企业是否强制清算或破产
@@ -263,6 +263,12 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_holder_eqty_frez_ratio_12_m")
 	private Long epHolderEqtyFrezRatio12M;
+
+	/** 
+	 * 近12个月内企业股东股权冻结/强制转让总额占注册资本比例(%)
+	 */
+	@ApiField("ep_holder_eqty_frez_ratio_12_m_new")
+	private String epHolderEqtyFrezRatio12MNew;
 
 	/** 
 	 * 近12个月内企业股东出质股权总数额(万元/万股)
@@ -975,6 +981,13 @@ public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 	}
 	public Long getEpHolderEqtyFrezRatio12M( ) {
 		return this.epHolderEqtyFrezRatio12M;
+	}
+
+	public void setEpHolderEqtyFrezRatio12MNew(String epHolderEqtyFrezRatio12MNew) {
+		this.epHolderEqtyFrezRatio12MNew = epHolderEqtyFrezRatio12MNew;
+	}
+	public String getEpHolderEqtyFrezRatio12MNew( ) {
+		return this.epHolderEqtyFrezRatio12MNew;
 	}
 
 	public void setEpHolderEqtyPledgeAmt12M(String epHolderEqtyPledgeAmt12M) {

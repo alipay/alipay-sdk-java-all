@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.zmgo.cumulate.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 17:51:40
+ * @since 1.0, 2023-01-04 20:56:39
  */
 public class ZhimaMerchantZmgoCumulateSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8376415811861263249L;
+	private static final long serialVersionUID = 2336691864281742538L;
 
 	/** 
 	 * 芝麻go协议号，唯一标识一个芝麻go协议。

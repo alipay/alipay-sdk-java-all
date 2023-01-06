@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合同详情
  *
  * @author auto create
- * @since 1.0, 2022-12-12 20:28:34
+ * @since 1.0, 2022-12-21 18:41:08
  */
 public class ContractDetailQueryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7562792236471153115L;
+	private static final long serialVersionUID = 4187911196542251971L;
 
 	/**
 	 * 合同金额
@@ -281,6 +281,20 @@ public class ContractDetailQueryDTO extends AlipayObject {
 	 */
 	@ApiField("number")
 	private Long number;
+
+	/**
+	 * 对方关联公司列表
+	 */
+	@ApiListField("other_relate_company_list")
+	@ApiField("open_api_partner_d_t_o")
+	private List<OpenApiPartnerDTO> otherRelateCompanyList;
+
+	/**
+	 * 我方关联公司列表
+	 */
+	@ApiListField("our_relate_company_list")
+	@ApiField("open_api_partner_d_t_o")
+	private List<OpenApiPartnerDTO> ourRelateCompanyList;
 
 	/**
 	 * 付款方
@@ -642,6 +656,20 @@ public class ContractDetailQueryDTO extends AlipayObject {
 	}
 	public void setNumber(Long number) {
 		this.number = number;
+	}
+
+	public List<OpenApiPartnerDTO> getOtherRelateCompanyList() {
+		return this.otherRelateCompanyList;
+	}
+	public void setOtherRelateCompanyList(List<OpenApiPartnerDTO> otherRelateCompanyList) {
+		this.otherRelateCompanyList = otherRelateCompanyList;
+	}
+
+	public List<OpenApiPartnerDTO> getOurRelateCompanyList() {
+		return this.ourRelateCompanyList;
+	}
+	public void setOurRelateCompanyList(List<OpenApiPartnerDTO> ourRelateCompanyList) {
+		this.ourRelateCompanyList = ourRelateCompanyList;
 	}
 
 	public String getPayer() {

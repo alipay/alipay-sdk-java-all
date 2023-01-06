@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.underwrite.mutual.policy.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:49:46
+ * @since 1.0, 2023-01-05 10:50:53
  */
 public class AlipayInsUnderwriteMutualPolicyBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8225889622589734217L;
+	private static final long serialVersionUID = 8779375425457947525L;
 
 	/** 
 	 * 宝贝计划ID

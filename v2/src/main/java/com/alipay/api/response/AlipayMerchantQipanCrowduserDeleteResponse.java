@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.crowduser.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:55:52
+ * @since 1.0, 2023-01-04 19:45:49
  */
 public class AlipayMerchantQipanCrowduserDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8317658797571778469L;
+	private static final long serialVersionUID = 2452668163239421273L;
 
 	
 

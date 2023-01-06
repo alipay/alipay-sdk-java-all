@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlink.collect.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:57:59
+ * @since 1.0, 2023-01-04 23:30:13
  */
 public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3834245386132459811L;
+	private static final long serialVersionUID = 2771954934193628122L;
 
 	/** 
 	 * 非文件模式下的数据返回结果。如果data_status为END，则该字段为空

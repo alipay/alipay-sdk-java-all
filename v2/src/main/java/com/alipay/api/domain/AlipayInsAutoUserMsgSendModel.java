@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车险内用户消息发送接口
  *
  * @author auto create
- * @since 1.0, 2022-12-16 15:36:50
+ * @since 1.0, 2022-12-28 16:55:51
  */
 public class AlipayInsAutoUserMsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5771649251983153583L;
+	private static final long serialVersionUID = 4521413963287971741L;
 
 	/**
 	 * 业务发生时间
@@ -29,6 +29,12 @@ public class AlipayInsAutoUserMsgSendModel extends AlipayObject {
 	@ApiListField("extend_info")
 	@ApiField("auto_mkt_touch_extend_info_entry")
 	private List<AutoMktTouchExtendInfoEntry> extendInfo;
+
+	/**
+	 * 支付宝用户标识openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -73,6 +79,13 @@ public class AlipayInsAutoUserMsgSendModel extends AlipayObject {
 	}
 	public void setExtendInfo(List<AutoMktTouchExtendInfoEntry> extendInfo) {
 		this.extendInfo = extendInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

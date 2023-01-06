@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商客户打标-增加或修改标签
  *
  * @author auto create
- * @since 1.0, 2019-09-25 09:59:53
+ * @since 1.0, 2022-12-29 11:24:28
  */
 public class MybankPaymentTradeUserclassificationCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7679319977147727869L;
+	private static final long serialVersionUID = 8849947338328757897L;
 
 	/**
 	 * 用户分类类别

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.insassetprod.petprofile.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:53:03
+ * @since 1.0, 2023-01-04 22:34:11
  */
 public class AlipayInsSceneInsassetprodPetprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4261834848163215672L;
+	private static final long serialVersionUID = 4319636151297676133L;
 
 	/** 
 	 * 算法识别的宠物种类code编码

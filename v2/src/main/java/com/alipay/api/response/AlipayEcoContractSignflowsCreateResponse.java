@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.contract.signflows.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-21 18:33:53
+ * @since 1.0, 2023-01-04 20:21:07
  */
 public class AlipayEcoContractSignflowsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1488471889415423726L;
+	private static final long serialVersionUID = 6469948297714419983L;
 
 	/** 
 	 * 电子合同流程id（需记录到业务系统中，后续相关服务调用都基于此ID）

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 因公付设置额度规则
  *
  * @author auto create
- * @since 1.0, 2022-12-13 08:44:55
+ * @since 1.0, 2023-01-05 16:51:18
  */
 public class AlipayFundEnterprisepayQuotaruleSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7676934777385186219L;
+	private static final long serialVersionUID = 3428819956516822351L;
 
 	/**
-	 * 企业签约账户ID
+	 * 企业签约共同账户ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -35,10 +35,16 @@ public class AlipayFundEnterprisepayQuotaruleSetModel extends AlipayObject {
 	private String bizScene;
 
 	/**
-	 * 用户ID，当操作类型=MEMBER 时必填
+	 * 成员支付宝ID，当操作类型=MEMBER时，member_id和open_id必填其一
 	 */
 	@ApiField("member_id")
 	private String memberId;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 操作类型： ACCOUNT-账户（支持单笔，月） MEMBER-成员（支持单笔，日，月，季度，年，终身累计，自定义周期，一次性额度）
@@ -54,8 +60,8 @@ public class AlipayFundEnterprisepayQuotaruleSetModel extends AlipayObject {
 
 	/**
 	 * 额度列表：
-额度类型不可重复：
-额度金额：单位为元，精确到分（整数或小数点后两位及以内的小数）；金额设置为-1表示无限制额度。
+额度类型不可重复。
+额度金额：单位为元，精确到分（整数或小数点后两位及以内的小数）；金额设置为-1表示无限制额度（一次性额度不支持-1）。
 	 */
 	@ApiListField("quota_list")
 	@ApiField("joint_account_quota_d_t_o")
@@ -87,6 +93,13 @@ public class AlipayFundEnterprisepayQuotaruleSetModel extends AlipayObject {
 	}
 	public void setMemberId(String memberId) {
 		this.memberId = memberId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOperationType() {

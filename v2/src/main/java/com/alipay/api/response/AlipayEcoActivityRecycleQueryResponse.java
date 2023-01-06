@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.activity.recycle.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:30:04
+ * @since 1.0, 2023-01-04 22:36:26
  */
 public class AlipayEcoActivityRecycleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7319552461818644488L;
+	private static final long serialVersionUID = 8812869494619548891L;
 
 	/** 
 	 * 能量返回结果列表

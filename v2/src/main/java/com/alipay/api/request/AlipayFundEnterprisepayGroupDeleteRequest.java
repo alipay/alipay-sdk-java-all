@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.enterprisepay.group.delete request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:21:50
+ * @since 1.0, 2023-01-04 23:24:07
  */
 public class AlipayFundEnterprisepayGroupDeleteRequest implements AlipayRequest<AlipayFundEnterprisepayGroupDeleteResponse> {
 

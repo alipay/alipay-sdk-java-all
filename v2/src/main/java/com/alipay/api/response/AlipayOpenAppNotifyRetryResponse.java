@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.notify.retry response.
  * 
  * @author auto create
- * @since 1.0, 2022-05-26 21:33:22
+ * @since 1.0, 2023-01-04 21:00:56
  */
 public class AlipayOpenAppNotifyRetryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5752241249635521117L;
+	private static final long serialVersionUID = 3227454679985135187L;
 
 	
 

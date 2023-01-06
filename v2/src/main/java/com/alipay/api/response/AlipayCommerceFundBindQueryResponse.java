@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fund.bind.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:51:40
+ * @since 1.0, 2023-01-03 20:31:37
  */
 public class AlipayCommerceFundBindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3434698979324382363L;
+	private static final long serialVersionUID = 8258767323985383824L;
 
 	/** 
 	 * 银行卡信息，用户授权银行卡信息后返回
@@ -41,7 +41,7 @@ public class AlipayCommerceFundBindQueryResponse extends AlipayResponse {
 	private String certNo;
 
 	/** 
-	 * 绑卡用户的证件类型。0:身份证 1:护照 2:军官证 3:士兵证 4:回乡证 5:临时身份证 6:户口簿 7:警官证 8:台胞证 9:营业执照10:其它证件 11:港澳居民来往内地通行证 12:台湾居民来往大陆通行证 13:台湾居民居住证 14:港澳居民居住证 15:港澳身份证 16:外国人永久居住证
+	 * 绑卡用户的证件类型：0（身份证）
 	 */
 	@ApiField("cert_type")
 	private String certType;

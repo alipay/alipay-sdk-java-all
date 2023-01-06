@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付邀请员工
  *
  * @author auto create
- * @since 1.0, 2022-12-19 16:09:24
+ * @since 1.0, 2023-01-05 16:51:15
  */
 public class AlipayFundJointaccountMemberBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6574812544417993244L;
+	private static final long serialVersionUID = 3322638666664899478L;
 
 	/**
 	 * 账本ID
@@ -46,16 +46,26 @@ public class AlipayFundJointaccountMemberBindModel extends AlipayObject {
 	/**
 	 * 成员账号：
 identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
-是ALIPAY_LOGON_ID 填支付宝登录号
+是ALIPAY_LOGON_ID 填支付宝登录号；
+是ALIPAY_OPEN_ID 填支付宝openId
 	 */
 	@ApiField("identity")
 	private String identity;
 
 	/**
-	 * 账号类型，目前支持如下类型： 1、ALIPAY_USER_ID 支付宝的会员ID 2、ALIPAY_LOGON_ID：支付宝登录号，支持邮箱和手机号格式
+	 * 账号类型，目前支持如下类型：
+1、ALIPAY_USER_ID 支付宝的会员ID 
+2、ALIPAY_LOGON_ID：支付宝登录号，支持邮箱和手机号格式
+3、ALIPAY_OPEN_ID：支付宝openId
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 被邀请人的身份信息
+	 */
+	@ApiField("identity_verified_info")
+	private IdentityVerifiedInfoDTO identityVerifiedInfo;
 
 	/**
 	 * 成员姓名，账号类型为ALIPAY_LOGON_ID时必填
@@ -116,6 +126,13 @@ identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public IdentityVerifiedInfoDTO getIdentityVerifiedInfo() {
+		return this.identityVerifiedInfo;
+	}
+	public void setIdentityVerifiedInfo(IdentityVerifiedInfoDTO identityVerifiedInfo) {
+		this.identityVerifiedInfo = identityVerifiedInfo;
 	}
 
 	public String getName() {

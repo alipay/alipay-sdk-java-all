@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询额度信息
  *
  * @author auto create
- * @since 1.0, 2022-12-06 17:52:12
+ * @since 1.0, 2023-01-05 15:52:16
  */
 public class AlipayFundEnterprisepayQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1744642711157728852L;
+	private static final long serialVersionUID = 8796975793296721613L;
 
 	/**
 	 * 企业签约账户ID
@@ -32,7 +32,7 @@ public class AlipayFundEnterprisepayQuotaQueryModel extends AlipayObject {
 	private String bizScene;
 
 	/**
-	 * 用户ID，当操作类型=MEMBER 时必填
+	 * 用户支付宝ID，当操作类型=MEMBER时， member_id和open_id必填其一
 	 */
 	@ApiField("member_id")
 	private String memberId;

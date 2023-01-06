@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.card.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-04 10:24:36
+ * @since 1.0, 2022-12-29 19:16:41
  */
 public class AlipayAssetCardTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8233616471464149593L;
+	private static final long serialVersionUID = 5676263171658497749L;
 
 	/** 
 	 * 支付宝订单id

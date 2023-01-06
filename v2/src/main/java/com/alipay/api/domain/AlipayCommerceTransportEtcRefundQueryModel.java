@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主ETC服务行程退款查询
  *
  * @author auto create
- * @since 1.0, 2022-12-02 18:20:12
+ * @since 1.0, 2022-12-21 14:27:14
  */
 public class AlipayCommerceTransportEtcRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4229174415486611243L;
+	private static final long serialVersionUID = 1447374891328315537L;
 
 	/**
 	 * ETC平台协议号

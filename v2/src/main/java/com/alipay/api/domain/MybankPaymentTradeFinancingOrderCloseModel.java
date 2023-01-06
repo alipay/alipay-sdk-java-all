@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商银行预付融资订单关闭
  *
  * @author auto create
- * @since 1.0, 2018-12-14 19:37:42
+ * @since 1.0, 2023-01-05 15:07:13
  */
 public class MybankPaymentTradeFinancingOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7281735354721556552L;
+	private static final long serialVersionUID = 6349648197928142688L;
 
 	/**
 	 * 扩展字段，JSON格式 URLEncoder.encode(String,"UTF-8")

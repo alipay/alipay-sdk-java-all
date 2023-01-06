@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云店资金转账记录
  *
  * @author auto create
- * @since 1.0, 2022-12-14 11:56:55
+ * @since 1.0, 2022-12-27 10:20:10
  */
 public class FundTransferLogResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1356715548522147523L;
+	private static final long serialVersionUID = 5762698224183427334L;
 
 	/**
 	 * 转账金额

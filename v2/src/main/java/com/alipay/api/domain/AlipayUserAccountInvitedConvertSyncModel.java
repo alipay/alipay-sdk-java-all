@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 被邀请者淘宝端转化同步
  *
  * @author auto create
- * @since 1.0, 2022-09-21 18:09:06
+ * @since 1.0, 2022-12-29 11:22:48
  */
 public class AlipayUserAccountInvitedConvertSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4354236882154213878L;
+	private static final long serialVersionUID = 4698675479757271377L;
 
 	/**
 	 * 转化标签

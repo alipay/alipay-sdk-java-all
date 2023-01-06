@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合约还款计划
  *
  * @author auto create
- * @since 1.0, 2022-07-14 10:47:44
+ * @since 1.0, 2023-01-05 14:19:59
  */
 public class InstRepayPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 7446346696197749441L;
+	private static final long serialVersionUID = 1294365197636682774L;
 
 	/**
 	 * 是否是当期。 默认值为不是当期计划。如果合约最后一期计划都已经逾期，就不再存在当期计划，合约下所有计划明细的该值都为false

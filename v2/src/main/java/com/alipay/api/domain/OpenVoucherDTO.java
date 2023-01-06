@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券信息vo
  *
  * @author auto create
- * @since 1.0, 2022-11-30 15:07:23
+ * @since 1.0, 2023-01-04 15:22:42
  */
 public class OpenVoucherDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4514746744533659665L;
+	private static final long serialVersionUID = 3131921575591228194L;
 
 	/**
 	 * 可用金额，单位元

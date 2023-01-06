@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.contentlib.standardcontent.publish response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:06:33
+ * @since 1.0, 2023-01-05 01:11:41
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7528442998176257997L;
+	private static final long serialVersionUID = 1489579511778692692L;
 
 	/** 
 	 * 内容发布后生成的ID，请业务方保存到本地（用于关联查询内容详情、删除内容等其他开放接口）

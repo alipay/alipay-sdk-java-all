@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户授权关系查询
  *
  * @author auto create
- * @since 1.0, 2022-11-14 19:05:04
+ * @since 1.0, 2022-12-22 11:15:16
  */
 public class AlipayOpenAuthUserauthRelationshipQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3621621699317484437L;
+	private static final long serialVersionUID = 1424348471372432248L;
 
 	/**
 	 * 蚂蚁统一会员ID，蚂蚁统一会员ID，如果已完成openid改造，则此值必传

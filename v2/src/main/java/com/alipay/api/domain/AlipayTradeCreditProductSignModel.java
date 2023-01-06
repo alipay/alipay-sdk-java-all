@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户签约统一入口
  *
  * @author auto create
- * @since 1.0, 2020-05-11 22:24:42
+ * @since 1.0, 2022-12-30 14:20:14
  */
 public class AlipayTradeCreditProductSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8536943253521446373L;
+	private static final long serialVersionUID = 6263249485142365341L;
 
 	/**
 	 * 扩展值
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景码
@@ -42,6 +48,13 @@ public class AlipayTradeCreditProductSignModel extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneCode() {

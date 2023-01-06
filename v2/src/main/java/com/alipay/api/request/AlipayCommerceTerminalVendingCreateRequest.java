@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.terminal.vending.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 15:15:56
+ * @since 1.0, 2023-01-04 22:52:45
  */
 public class AlipayCommerceTerminalVendingCreateRequest implements AlipayRequest<AlipayCommerceTerminalVendingCreateResponse> {
 

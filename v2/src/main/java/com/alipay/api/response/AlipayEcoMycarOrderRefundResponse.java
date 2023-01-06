@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:39:44
+ * @since 1.0, 2023-01-05 10:14:38
  */
 public class AlipayEcoMycarOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3272253363955267354L;
+	private static final long serialVersionUID = 1523496626914995959L;
 
 	/** 
 	 * 失败原因

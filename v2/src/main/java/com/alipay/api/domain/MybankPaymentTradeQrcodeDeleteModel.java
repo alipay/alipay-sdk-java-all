@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二维码失效
  *
  * @author auto create
- * @since 1.0, 2019-12-31 19:36:41
+ * @since 1.0, 2023-01-05 15:07:37
  */
 public class MybankPaymentTradeQrcodeDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3557345476264414689L;
+	private static final long serialVersionUID = 4148153158532359628L;
 
 	/**
 	 * 加密token

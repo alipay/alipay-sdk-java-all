@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-04 10:23:49
+ * @since 1.0, 2022-12-29 16:56:42
  */
 public class AlipayMarketingVoucherConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1564977261868412332L;
+	private static final long serialVersionUID = 3354553659878761921L;
 
 	/** 
 	 * 用于决定在用户确认领券后是否重定向。可枚举：true表示需要重定向，false表示不需要重定向
 	 */
 	@ApiField("need_redirect")
 	private Boolean needRedirect;
+
+	/** 
+	 * 支付宝用户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 外部业务单号
@@ -61,6 +67,13 @@ public class AlipayMarketingVoucherConfirmResponse extends AlipayResponse {
 	}
 	public Boolean getNeedRedirect( ) {
 		return this.needRedirect;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutBizNo(String outBizNo) {

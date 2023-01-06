@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付账单查询
  *
  * @author auto create
- * @since 1.0, 2022-11-21 14:47:28
+ * @since 1.0, 2022-12-29 16:17:40
  */
 public class AlipayFundJointaccountBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6844744283751156816L;
+	private static final long serialVersionUID = 1685936913428884958L;
 
 	/**
 	 * 账户ID
@@ -36,6 +36,12 @@ public class AlipayFundJointaccountBillQueryModel extends AlipayObject {
 	 */
 	@ApiField("end_date")
 	private String endDate;
+
+	/**
+	 * 员工的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 采用分页查询，本参数为空或0默认显示第一页。如果输入的值大于总页数，则支付宝返回最后一页数据
@@ -93,6 +99,13 @@ public class AlipayFundJointaccountBillQueryModel extends AlipayObject {
 	}
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPageNum() {

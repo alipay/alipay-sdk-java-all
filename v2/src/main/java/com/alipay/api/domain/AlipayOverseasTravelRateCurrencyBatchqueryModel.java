@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境游汇率币种批量查询
  *
  * @author auto create
- * @since 1.0, 2020-03-25 11:37:54
+ * @since 1.0, 2022-12-29 14:07:56
  */
 public class AlipayOverseasTravelRateCurrencyBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2835735433673915346L;
+	private static final long serialVersionUID = 1636457786271383936L;
 
 	/**
 	 * 业务类型:

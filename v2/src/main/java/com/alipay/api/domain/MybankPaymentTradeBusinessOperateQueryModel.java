@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商银行操作单查询
  *
  * @author auto create
- * @since 1.0, 2022-02-09 11:03:02
+ * @since 1.0, 2023-01-05 15:05:42
  */
 public class MybankPaymentTradeBusinessOperateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5163632869318165748L;
+	private static final long serialVersionUID = 5547823518858651794L;
 
 	/**
 	 * 创建订单时返回的订单号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共同账户账单明细
  *
  * @author auto create
- * @since 1.0, 2022-11-21 23:18:01
+ * @since 1.0, 2023-01-03 17:26:34
  */
 public class JointAccountBillDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3166211686213439469L;
+	private static final long serialVersionUID = 3694153962425345553L;
 
 	/**
 	 * 共同账户ID
@@ -50,10 +50,28 @@ public class JointAccountBillDetailDTO extends AlipayObject {
 	private String inOut;
 
 	/**
+	 * 共同账户消费的成员openid
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 外部交易单号，正向支付为外部交易单号，逆向退款是为外部退款单号
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 间连商户显示二级商户全名，直连、直付通则显示一级商户全名。企业商户该字段不脱敏，非企业商户该字段会脱敏
+	 */
+	@ApiField("seller_full_name")
+	private String sellerFullName;
+
+	/**
+	 * 收款方登录号信息。间连商户显示二级商户的登录号信息；直连、直付通显示一级商户的登录号信息；该字段脱敏
+	 */
+	@ApiField("seller_logon_id")
+	private String sellerLogonId;
 
 	/**
 	 * 账单标题
@@ -109,11 +127,32 @@ public class JointAccountBillDetailDTO extends AlipayObject {
 		this.inOut = inOut;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getSellerFullName() {
+		return this.sellerFullName;
+	}
+	public void setSellerFullName(String sellerFullName) {
+		this.sellerFullName = sellerFullName;
+	}
+
+	public String getSellerLogonId() {
+		return this.sellerLogonId;
+	}
+	public void setSellerLogonId(String sellerLogonId) {
+		this.sellerLogonId = sellerLogonId;
 	}
 
 	public String getTitle() {

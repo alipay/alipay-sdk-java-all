@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * demo-跨境游单个汇率查询接口
  *
  * @author auto create
- * @since 1.0, 2020-03-25 11:37:34
+ * @since 1.0, 2023-01-03 11:26:49
  */
 public class AlipayOverseasTravelRateRateinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7722128856243552131L;
+	private static final long serialVersionUID = 7879654327791545498L;
 
 	/**
 	 * 用户当前所在国家的国家码，ISO-3166标准三位数字国家码。
@@ -54,6 +54,12 @@ public class AlipayOverseasTravelRateRateinfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -101,6 +107,13 @@ public class AlipayOverseasTravelRateRateinfoQueryModel extends AlipayObject {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

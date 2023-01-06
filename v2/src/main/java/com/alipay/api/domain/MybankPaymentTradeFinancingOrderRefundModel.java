@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商银行预付融资订单退款
  *
  * @author auto create
- * @since 1.0, 2018-12-14 19:37:49
+ * @since 1.0, 2023-01-05 15:07:02
  */
 public class MybankPaymentTradeFinancingOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6541485796787959163L;
+	private static final long serialVersionUID = 6715449542415684997L;
 
 	/**
 	 * 退款金额，单位：分

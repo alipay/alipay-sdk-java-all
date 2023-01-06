@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.bksigntoken.verify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:58:15
+ * @since 1.0, 2023-01-04 18:28:28
  */
 public class AlipayMobileBksigntokenVerifyRequest implements AlipayRequest<AlipayMobileBksigntokenVerifyResponse> {
 

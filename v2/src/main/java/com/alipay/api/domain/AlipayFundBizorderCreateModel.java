@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务订单创建
  *
  * @author auto create
- * @since 1.0, 2020-08-27 11:50:21
+ * @since 1.0, 2022-12-27 13:56:07
  */
 public class AlipayFundBizorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4511255317123825559L;
+	private static final long serialVersionUID = 6147232114959631952L;
 
 	/**
 	 * 转账请求的扩展参数，具体请与支付宝工程师联系

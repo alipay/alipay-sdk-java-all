@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.dtbankcust.channelvoucher.send request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:41:41
+ * @since 1.0, 2023-01-04 20:21:40
  */
 public class AlipayUserDtbankcustChannelvoucherSendRequest implements AlipayRequest<AlipayUserDtbankcustChannelvoucherSendResponse> {
 

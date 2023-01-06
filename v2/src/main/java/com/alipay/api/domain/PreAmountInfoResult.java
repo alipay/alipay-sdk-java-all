@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单业务中，商户的前置费用信息
  *
  * @author auto create
- * @since 1.0, 2020-06-20 11:00:36
+ * @since 1.0, 2022-12-29 14:05:39
  */
 public class PreAmountInfoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4287729623238427613L;
+	private static final long serialVersionUID = 6199327576521788814L;
 
 	/**
 	 * 前置费用明细列表

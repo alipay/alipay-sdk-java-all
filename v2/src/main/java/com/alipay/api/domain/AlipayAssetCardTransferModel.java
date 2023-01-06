@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.asset.card.transfer(外部商户标准卡资产转移)
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:38:08
+ * @since 1.0, 2022-12-29 19:12:51
  */
 public class AlipayAssetCardTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5331254561268263727L;
+	private static final long serialVersionUID = 7636427366565569648L;
 
 	/**
 	 * 转移金额，单位元
@@ -54,6 +54,18 @@ public class AlipayAssetCardTransferModel extends AlipayObject {
 	 */
 	@ApiField("fund_scence")
 	private String fundScence;
+
+	/**
+	 * 支付宝用户userId映射
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 接收方支付宝用户id映射
+	 */
+	@ApiField("receive_open_id")
+	private String receiveOpenId;
 
 	/**
 	 * 接收方支付宝用户id
@@ -120,6 +132,20 @@ public class AlipayAssetCardTransferModel extends AlipayObject {
 	}
 	public void setFundScence(String fundScence) {
 		this.fundScence = fundScence;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
+	public String getReceiveOpenId() {
+		return this.receiveOpenId;
+	}
+	public void setReceiveOpenId(String receiveOpenId) {
+		this.receiveOpenId = receiveOpenId;
 	}
 
 	public String getReceiveUserId() {

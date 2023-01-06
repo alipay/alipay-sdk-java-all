@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.metainfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:23:48
+ * @since 1.0, 2023-01-05 10:17:04
  */
 public class SsdataDataserviceMetainfoSyncRequest implements AlipayRequest<SsdataDataserviceMetainfoSyncResponse> {
 

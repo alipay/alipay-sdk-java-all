@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.terminal.powerbankorder.finish request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:31:51
+ * @since 1.0, 2023-01-04 22:52:10
  */
 public class AlipayCommerceOperationTerminalPowerbankorderFinishRequest implements AlipayRequest<AlipayCommerceOperationTerminalPowerbankorderFinishResponse> {
 

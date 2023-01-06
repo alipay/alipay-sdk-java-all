@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财受理参与者模型
  *
  * @author auto create
- * @since 1.0, 2022-11-09 14:40:22
+ * @since 1.0, 2023-01-04 14:28:11
  */
 public class GFAOpenAPIParticipantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7191127244146246529L;
+	private static final long serialVersionUID = 1548452233629676598L;
 
 	/**
 	 * 参与者账户
@@ -36,6 +36,18 @@ public class GFAOpenAPIParticipantInfo extends AlipayObject {
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
+
+	/**
+	 * 3位。用于标识入参ip_role_id为UID或者PID
+	 */
+	@ApiField("ip_role_id_type")
+	private String ipRoleIdType;
+
+	/**
+	 * 参与者角色id（如支付宝中的uid）
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 参与者扩展信息。Map<String, String> 类型 JSON 字符串
@@ -69,6 +81,20 @@ public class GFAOpenAPIParticipantInfo extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getIpRoleIdType() {
+		return this.ipRoleIdType;
+	}
+	public void setIpRoleIdType(String ipRoleIdType) {
+		this.ipRoleIdType = ipRoleIdType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProperties() {

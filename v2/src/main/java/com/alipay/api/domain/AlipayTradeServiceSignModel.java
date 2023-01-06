@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大额无限付产品个人签约
  *
  * @author auto create
- * @since 1.0, 2021-03-23 11:23:33
+ * @since 1.0, 2022-12-30 14:20:21
  */
 public class AlipayTradeServiceSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4849458917459633884L;
+	private static final long serialVersionUID = 1827492525283561288L;
 
 	/**
 	 * 用户发生协议签约的设备终端标识，支付宝分配，目前支持PC/APP
 	 */
 	@ApiField("access_channel")
 	private String accessChannel;
+
+	/**
+	 * 用户支付宝的统一身份id
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 用户的支付宝id
@@ -62,6 +68,13 @@ ETC_B2B:区块链ETC_B2B
 	}
 	public void setAccessChannel(String accessChannel) {
 		this.accessChannel = accessChannel;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAlipayUserId() {

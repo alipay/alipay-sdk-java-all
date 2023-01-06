@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.bill.downloadurl.get request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:09:28
+ * @since 1.0, 2023-01-04 21:44:39
  */
 public class AlipayDataBillDownloadurlGetRequest implements AlipayRequest<AlipayDataBillDownloadurlGetResponse> {
 

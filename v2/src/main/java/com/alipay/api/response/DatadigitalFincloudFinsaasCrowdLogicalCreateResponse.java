@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.crowd.logical.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:57:35
+ * @since 1.0, 2023-01-04 19:47:00
  */
 public class DatadigitalFincloudFinsaasCrowdLogicalCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2294234167969422269L;
+	private static final long serialVersionUID = 3682519651938546358L;
 
 	/** 
 	 * 人群ID+唯一

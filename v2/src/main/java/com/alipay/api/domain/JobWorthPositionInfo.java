@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证商家传入的工作岗位信息
  *
  * @author auto create
- * @since 1.0, 2022-07-12 14:15:50
+ * @since 1.0, 2023-01-05 13:59:47
  */
 public class JobWorthPositionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4751392398754254558L;
+	private static final long serialVersionUID = 5792477739253816622L;
 
 	/**
 	 * 职位要求-年龄要求	无要求（不传）、28岁以上(OVER28)、40岁以下(BELOW40)、25岁～35岁(25TO35)
@@ -21,12 +21,14 @@ public class JobWorthPositionInfo extends AlipayObject {
 
 	/**
 	 * 福利，现有标签，最多5个标签，使用英文,分割
+参考
+https://www.yuque.com/docs/share/805e9840-ae9d-499c-b566-46b3b8c9fb2d?# 《4.1 服务端接入----职位传入接口》的1.3.1.1
 	 */
 	@ApiField("benefit")
 	private String benefit;
 
 	/**
-	 * 技能、证书等要求，比如学历、健康证、普通话或其他技能证书等,参考https://www.yuque.com/wx3dkp/gwckr4/bs03t3
+	 * 技能、证书等要求，比如学历、健康证、普通话或其他技能证书等
 	 */
 	@ApiField("certifications")
 	private String certifications;
@@ -36,6 +38,12 @@ public class JobWorthPositionInfo extends AlipayObject {
 	 */
 	@ApiField("company_certificate")
 	private String companyCertificate;
+
+	/**
+	 * 上传的aftsid
+	 */
+	@ApiField("company_logo_afts_id")
+	private String companyLogoAftsId;
 
 	/**
 	 * 企业工商全称
@@ -62,7 +70,7 @@ public class JobWorthPositionInfo extends AlipayObject {
 	private String gender;
 
 	/**
-	 * 合作方jobId
+	 * 合作方岗位id自定义保持唯一性
 	 */
 	@ApiField("ka_position_id")
 	private String kaPositionId;
@@ -74,13 +82,13 @@ public class JobWorthPositionInfo extends AlipayObject {
 	private String positionDesc;
 
 	/**
-	 * 工作证岗位库的职位主键，只有更新职位信息时需要传入
+	 * 工作证岗位库的职位主键，只有更新职位信息时需要传入。第一次传入岗位后返回
 	 */
 	@ApiField("position_id")
 	private String positionId;
 
 	/**
-	 * 岗位对应的行业id，字段参考https://www.yuque.com/wx3dkp/gwckr4/bs03t3
+	 * 岗位对应的行业id，字段参考https://www.yuque.com/docs/share/805e9840-ae9d-499c-b566-46b3b8c9fb2d?# 《4.1 服务端接入----职位传入接口》的1.3.1.2
 	 */
 	@ApiField("position_job_id")
 	private String positionJobId;
@@ -92,7 +100,7 @@ public class JobWorthPositionInfo extends AlipayObject {
 	private String positionJobName;
 
 	/**
-	 * 岗位对应的职业id，字段参考https://www.yuque.com/wx3dkp/gwckr4/bs03t3
+	 * 岗位对应的职业id，字段参考https://www.yuque.com/docs/share/805e9840-ae9d-499c-b566-46b3b8c9fb2d?# 《4.1 服务端接入----职位传入接口》的1.3.1.2
 	 */
 	@ApiField("position_profession_id")
 	private String positionProfessionId;
@@ -153,6 +161,7 @@ public class JobWorthPositionInfo extends AlipayObject {
 
 	/**
 	 * 高德city code，例：北京010，线上工作9999
+参考https://www.yuque.com/docs/share/805e9840-ae9d-499c-b566-46b3b8c9fb2d?# 《4.1 服务端接入----职位传入接口》的1.3.1.3
 	 */
 	@ApiField("work_city")
 	private String workCity;
@@ -165,6 +174,7 @@ public class JobWorthPositionInfo extends AlipayObject {
 
 	/**
 	 * 工作地所在的区县,使用高德的adcode，例：朝阳区110105
+参考https://www.yuque.com/docs/share/805e9840-ae9d-499c-b566-46b3b8c9fb2d?# 《4.1 服务端接入----职位传入接口》的1.3.1.2
 	 */
 	@ApiField("work_region")
 	private String workRegion;
@@ -201,6 +211,13 @@ public class JobWorthPositionInfo extends AlipayObject {
 	}
 	public void setCompanyCertificate(String companyCertificate) {
 		this.companyCertificate = companyCertificate;
+	}
+
+	public String getCompanyLogoAftsId() {
+		return this.companyLogoAftsId;
+	}
+	public void setCompanyLogoAftsId(String companyLogoAftsId) {
+		this.companyLogoAftsId = companyLogoAftsId;
 	}
 
 	public String getCompanyName() {

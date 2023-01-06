@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.content.community.label.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:13:21
+ * @since 1.0, 2023-01-05 11:26:22
  */
 public class AntfortuneContentCommunityLabelQueryRequest implements AlipayRequest<AntfortuneContentCommunityLabelQueryResponse> {
 

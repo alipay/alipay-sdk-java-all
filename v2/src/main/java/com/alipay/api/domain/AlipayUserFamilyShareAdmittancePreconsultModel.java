@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭共享准入预咨询
  *
  * @author auto create
- * @since 1.0, 2022-03-14 11:26:21
+ * @since 1.0, 2023-01-03 10:55:52
  */
 public class AlipayUserFamilyShareAdmittancePreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1352553138788926154L;
+	private static final long serialVersionUID = 3647634829296983913L;
 
 	/**
 	 * 共享资源ID

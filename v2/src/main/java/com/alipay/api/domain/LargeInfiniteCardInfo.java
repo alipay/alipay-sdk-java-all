@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无限付的虚拟卡信息
  *
  * @author auto create
- * @since 1.0, 2021-01-08 09:34:45
+ * @since 1.0, 2022-12-29 15:28:32
  */
 public class LargeInfiniteCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3781895928338487926L;
+	private static final long serialVersionUID = 7428582957525498668L;
 
 	/**
 	 * 账户余额,单位:元,精确到小数点后两位

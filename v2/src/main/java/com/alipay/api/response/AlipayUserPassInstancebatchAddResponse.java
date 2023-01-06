@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.pass.instancebatch.add response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:16:42
+ * @since 1.0, 2023-01-05 00:36:43
  */
 public class AlipayUserPassInstancebatchAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3342959119637439978L;
+	private static final long serialVersionUID = 3111981126158958165L;
 
 	/** 
 	 * opType表示操作类型，目前固定为ADD。errorCode和errorMsg对应错误信息。passList是券实例列表，仅当发券成功才有值，其中：

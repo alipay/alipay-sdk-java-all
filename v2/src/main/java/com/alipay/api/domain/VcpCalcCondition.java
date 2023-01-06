@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券计算条件
  *
  * @author auto create
- * @since 1.0, 2022-11-14 19:34:29
+ * @since 1.0, 2022-12-22 11:22:22
  */
 public class VcpCalcCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 5559958512126754598L;
+	private static final long serialVersionUID = 4633699831919632888L;
 
 	/**
 	 * 前置条件，如买A送B这类优惠，A则是B享受优惠的前置条件

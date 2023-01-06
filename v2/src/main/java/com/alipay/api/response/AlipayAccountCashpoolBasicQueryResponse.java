@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountCashpoolBasicQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7375669714527247128L;
+	private static final long serialVersionUID = 6162543627387942415L;
 
 	/** 
 	 * 资金池总数量

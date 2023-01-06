@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.device.info.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 13:16:37
+ * @since 1.0, 2023-01-05 10:50:04
  */
 public class AlipayUserAccountDeviceInfoUploadRequest implements AlipayRequest<AlipayUserAccountDeviceInfoUploadResponse> {
 

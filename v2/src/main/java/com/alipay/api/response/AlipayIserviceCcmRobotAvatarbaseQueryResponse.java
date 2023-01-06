@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.robot.avatarbase.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-29 17:16:35
+ * @since 1.0, 2023-01-05 00:46:42
  */
 public class AlipayIserviceCcmRobotAvatarbaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2426358443477131965L;
+	private static final long serialVersionUID = 3414337119374449823L;
 
 	/** 
 	 * result:方法调用返回值响应 k-v map

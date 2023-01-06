@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI年画高清图生成
  *
  * @author auto create
- * @since 1.0, 2022-12-02 16:23:37
+ * @since 1.0, 2023-01-05 16:11:16
  */
 public class AlipayFundCouponWufuHdaipictureCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5544824142335322132L;
+	private static final long serialVersionUID = 4185928785864484188L;
 
 	/**
 	 * 支付宝订单ID

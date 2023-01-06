@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过ftoken查询云端比对结果请求
  *
  * @author auto create
- * @since 1.0, 2021-11-12 09:23:48
+ * @since 1.0, 2022-12-28 14:51:30
  */
 public class FtokenInfoQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 7894243684645942457L;
+	private static final long serialVersionUID = 5127389784881728839L;
 
 	/**
 	 * 金额
@@ -30,6 +30,12 @@ public class FtokenInfoQuery extends AlipayObject {
 	 */
 	@ApiField("ftoken")
 	private String ftoken;
+
+	/**
+	 * 支付宝账户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝账户uid
@@ -56,6 +62,13 @@ public class FtokenInfoQuery extends AlipayObject {
 	}
 	public void setFtoken(String ftoken) {
 		this.ftoken = ftoken;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUid() {

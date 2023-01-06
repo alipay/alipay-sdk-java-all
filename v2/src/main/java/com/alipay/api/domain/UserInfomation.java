@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户信息
  *
  * @author auto create
- * @since 1.0, 2021-08-30 10:48:04
+ * @since 1.0, 2022-12-26 16:08:09
  */
 public class UserInfomation extends AlipayObject {
 
-	private static final long serialVersionUID = 6675698625567574489L;
+	private static final long serialVersionUID = 5713816798791788343L;
 
 	/**
 	 * 证件号
@@ -23,7 +23,7 @@ public class UserInfomation extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 身份证：IDENTITY_CARD、护照：PASSPORT、军官证：OFFICER_CARD、士兵证：SOLDIER_CARD、户口本：HOKOU等。如有其它类型需要支持，请与蚂蚁金服工作人员联系。
+	 * 身份证：IDENTITY_CARD、护照：PASSPORT、军官证：OFFICER_CARD、士兵证：SOLDIER_CARD、户口本：HOKOU等。
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -46,6 +46,12 @@ public class UserInfomation extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 用户（user_id）在应用（appId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝uid
@@ -86,6 +92,13 @@ public class UserInfomation extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

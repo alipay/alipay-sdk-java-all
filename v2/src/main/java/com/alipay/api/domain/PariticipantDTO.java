@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 咨询参与方信息
  *
  * @author auto create
- * @since 1.0, 2022-11-30 20:34:32
+ * @since 1.0, 2022-12-29 16:21:54
  */
 public class PariticipantDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2671716315823929534L;
+	private static final long serialVersionUID = 6477373962794378763L;
 
 	/**
 	 * 参与方的唯一标识
@@ -27,6 +27,12 @@ public class PariticipantDTO extends AlipayObject {
 	@ApiField("identity_type")
 	private String identityType;
 
+	/**
+	 * 参与方名称
+	 */
+	@ApiField("name")
+	private String name;
+
 	public String getIdentity() {
 		return this.identity;
 	}
@@ -39,6 +45,13 @@ public class PariticipantDTO extends AlipayObject {
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

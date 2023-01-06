@@ -9,11 +9,19 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度基本信息
  *
  * @author auto create
- * @since 1.0, 2022-08-29 20:52:48
+ * @since 1.0, 2022-12-27 15:19:10
  */
 public class InstitutionBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5363767392277378861L;
+	private static final long serialVersionUID = 1338281854451534259L;
+
+	/**
+	 * 费控咨询模式
+0-支付宝内部计算
+1-咨询外部服务商
+	 */
+	@ApiField("consult_mode")
+	private String consultMode;
 
 	/**
 	 * 制度是否启用,1启用0不启用
@@ -50,6 +58,13 @@ public class InstitutionBasicInfo extends AlipayObject {
 	 */
 	@ApiField("institution_name")
 	private String institutionName;
+
+	public String getConsultMode() {
+		return this.consultMode;
+	}
+	public void setConsultMode(String consultMode) {
+		this.consultMode = consultMode;
+	}
 
 	public String getEffective() {
 		return this.effective;

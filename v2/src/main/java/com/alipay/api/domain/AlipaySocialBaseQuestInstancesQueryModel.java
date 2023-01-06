@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询小目标实例信息
  *
  * @author auto create
- * @since 1.0, 2019-08-19 14:50:48
+ * @since 1.0, 2022-12-30 12:36:49
  */
 public class AlipaySocialBaseQuestInstancesQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2297514611626616145L;
+	private static final long serialVersionUID = 5452386362814311783L;
+
+	/**
+	 * openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 目标ID列表，列表长度不能超过20
@@ -34,6 +40,13 @@ public class AlipaySocialBaseQuestInstancesQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public List<String> getQuestIds() {
 		return this.questIds;

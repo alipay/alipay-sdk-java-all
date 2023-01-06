@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电动车绑定信息
  *
  * @author auto create
- * @since 1.0, 2022-12-07 10:14:57
+ * @since 1.0, 2022-12-22 14:17:31
  */
 public class EbikeBindInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6283669959887815419L;
+	private static final long serialVersionUID = 5736312315614838353L;
 
 	/**
 	 * 电动车品牌唯一标识
@@ -24,6 +24,12 @@ public class EbikeBindInfo extends AlipayObject {
 	 */
 	@ApiField("brand_name")
 	private String brandName;
+
+	/**
+	 * 设备是否支持上报里程
+	 */
+	@ApiField("can_report_riding_distance")
+	private Boolean canReportRidingDistance;
 
 	/**
 	 * 智能电动车名称
@@ -55,6 +61,13 @@ public class EbikeBindInfo extends AlipayObject {
 	}
 	public void setBrandName(String brandName) {
 		this.brandName = brandName;
+	}
+
+	public Boolean getCanReportRidingDistance() {
+		return this.canReportRidingDistance;
+	}
+	public void setCanReportRidingDistance(Boolean canReportRidingDistance) {
+		this.canReportRidingDistance = canReportRidingDistance;
 	}
 
 	public String getEbikeName() {

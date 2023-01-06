@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.bill.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:07:45
+ * @since 1.0, 2023-01-04 17:52:57
  */
 public class AlipayEcoCplifeBillDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2891463239558898892L;
+	private static final long serialVersionUID = 7546937899171221629L;
 
 	/** 
 	 * 不允许删除（支付中或者支付完成）的账单明细条目列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.ededuct.forecast.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:50:13
+ * @since 1.0, 2023-01-04 18:49:19
  */
 public class AlipayEbppEdeductForecastQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1215373435267786274L;
+	private static final long serialVersionUID = 8128324899954331144L;
 
 	/** 
 	 * 是否符合预期，true则说明符合预测，false则说明不符合预测，需要进行拦截。

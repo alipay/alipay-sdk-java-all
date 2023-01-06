@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.url.deviceverify.add response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:32:05
+ * @since 1.0, 2023-01-05 09:59:46
  */
 public class AlipayMobileUrlDeviceverifyAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4573543533529134421L;
+	private static final long serialVersionUID = 3537266419435356991L;
 
 	/** 
 	 * 返回业务操作是否成功

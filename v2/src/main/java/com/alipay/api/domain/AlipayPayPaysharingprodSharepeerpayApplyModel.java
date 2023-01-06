@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分享代付申请
  *
  * @author auto create
- * @since 1.0, 2022-12-08 14:47:04
+ * @since 1.0, 2022-12-29 15:01:50
  */
 public class AlipayPayPaysharingprodSharepeerpayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8493736578424918964L;
+	private static final long serialVersionUID = 3328572494187343249L;
 
 	/**
 	 * 支付宝userId，表示代付订单申请人
@@ -24,6 +24,12 @@ public class AlipayPayPaysharingprodSharepeerpayApplyModel extends AlipayObject 
 	 */
 	@ApiField("alipay_trade_no")
 	private String alipayTradeNo;
+
+	/**
+	 * 代付申请人
+	 */
+	@ApiField("applyer_open_id")
+	private String applyerOpenId;
 
 	/**
 	 * 如果没有传入alipay_user_id，该external_user_token需要传入用于申请人用户发现
@@ -49,6 +55,13 @@ public class AlipayPayPaysharingprodSharepeerpayApplyModel extends AlipayObject 
 	}
 	public void setAlipayTradeNo(String alipayTradeNo) {
 		this.alipayTradeNo = alipayTradeNo;
+	}
+
+	public String getApplyerOpenId() {
+		return this.applyerOpenId;
+	}
+	public void setApplyerOpenId(String applyerOpenId) {
+		this.applyerOpenId = applyerOpenId;
 	}
 
 	public String getExternalUserToken() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部商户标准卡退款
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:39:20
+ * @since 1.0, 2022-12-29 17:23:49
  */
 public class AlipayAssetCardReturnRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1793533387969926883L;
+	private static final long serialVersionUID = 5657185498384497716L;
 
 	/**
 	 * 资产id
@@ -58,6 +58,12 @@ public class AlipayAssetCardReturnRefundModel extends AlipayObject {
 	 */
 	@ApiField("is_cancel")
 	private String isCancel;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 操作人id
@@ -155,6 +161,13 @@ public class AlipayAssetCardReturnRefundModel extends AlipayObject {
 	}
 	public void setIsCancel(String isCancel) {
 		this.isCancel = isCancel;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOperator() {

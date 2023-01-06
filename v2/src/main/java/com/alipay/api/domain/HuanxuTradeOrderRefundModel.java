@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 焕旭科技聚合支付资金退款接口
  *
  * @author auto create
- * @since 1.0, 2022-12-16 11:18:32
+ * @since 1.0, 2022-12-30 17:33:30
  */
 public class HuanxuTradeOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8453697966153153115L;
+	private static final long serialVersionUID = 8676558353554826189L;
 
 	/**
 	 * 用户身份识别值。根据type和issuer传入对应格式的值：若type为USER_ID，issuer为ALIPAY，则identity为2088开头的16位纯数字。若type为USER_ID，issuer为MERCHANT，则identity根据商户定义的格式传入。若type为BAR_CODE，issuer为ALIPAY，则identity为25~30开头的长度为16~24位数字的焕旭付款码（实际字符串长度以及规则可能会进行调整与优化，以开发者获取的付款码长度为准）

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付前置渠道咨询
  *
  * @author auto create
- * @since 1.0, 2022-12-08 17:39:49
+ * @since 1.0, 2022-12-30 15:20:20
  */
 public class AlipayPayAppChannelConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7766539987334322614L;
+	private static final long serialVersionUID = 6434573524567673795L;
 
 	/**
 	 * 订单金额
@@ -46,6 +46,12 @@ public class AlipayPayAppChannelConsultModel extends AlipayObject {
 	 */
 	@ApiField("ext_params")
 	private BizExtInfo extParams;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -86,6 +92,13 @@ public class AlipayPayAppChannelConsultModel extends AlipayObject {
 	}
 	public void setExtParams(BizExtInfo extParams) {
 		this.extParams = extParams;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

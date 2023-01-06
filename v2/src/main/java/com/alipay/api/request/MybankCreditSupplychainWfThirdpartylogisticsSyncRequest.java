@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.wf.thirdpartylogistics.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-11-16 14:16:28
+ * @since 1.0, 2022-12-21 17:01:40
  */
 public class MybankCreditSupplychainWfThirdpartylogisticsSyncRequest implements AlipayRequest<MybankCreditSupplychainWfThirdpartylogisticsSyncResponse> {
 

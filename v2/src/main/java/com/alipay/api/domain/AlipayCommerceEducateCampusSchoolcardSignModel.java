@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝校园卡开通
  *
  * @author auto create
- * @since 1.0, 2022-06-14 17:27:56
+ * @since 1.0, 2022-12-26 14:46:18
  */
 public class AlipayCommerceEducateCampusSchoolcardSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4789377452233559118L;
+	private static final long serialVersionUID = 1171273275713668734L;
 
 	/**
 	 * 学校签约的签约ID，由支付宝生成，分配给商户
@@ -50,6 +50,14 @@ identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 学生支付宝账号：
+identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
+是ALIPAY_LOGON_ID 填支付宝登录号
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 学校内标，一般为2088开头的16位数字。支付宝分配，可直接咨询支付宝对接小二，也可通过开放平台接口查询
@@ -103,6 +111,13 @@ identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSchoolId() {

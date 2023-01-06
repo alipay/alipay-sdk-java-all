@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.authentication.customer.smilelive.initialize request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:42:20
+ * @since 1.0, 2023-01-05 10:35:59
  */
 public class ZolozAuthenticationCustomerSmileliveInitializeRequest implements AlipayRequest<ZolozAuthenticationCustomerSmileliveInitializeResponse> {
 

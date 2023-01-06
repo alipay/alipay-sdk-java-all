@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商银行预付融资订单创建
  *
  * @author auto create
- * @since 1.0, 2018-12-14 19:37:28
+ * @since 1.0, 2023-01-05 15:07:25
  */
 public class MybankPaymentTradeFinancingOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8737891224968258951L;
+	private static final long serialVersionUID = 2868955515216545531L;
 
 	/**
 	 * 交易金额，单位：分

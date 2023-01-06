@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 哥伦布问卷疲劳度同步客户端接口
  *
  * @author auto create
- * @since 1.0, 2020-12-16 11:59:50
+ * @since 1.0, 2022-12-30 12:36:15
  */
 public class AlipaySocialQuestionnareFatigueSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6163636741434379894L;
+	private static final long serialVersionUID = 4814276429651912262L;
 
 	/**
 	 * 异步问卷投递时间
@@ -24,6 +24,12 @@ public class AlipaySocialQuestionnareFatigueSyncModel extends AlipayObject {
 	 */
 	@ApiField("channel_type")
 	private String channelType;
+
+	/**
+	 * 已异步投递问券的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 问券Id
@@ -56,6 +62,13 @@ public class AlipaySocialQuestionnareFatigueSyncModel extends AlipayObject {
 	}
 	public void setChannelType(String channelType) {
 		this.channelType = channelType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getQstnId() {

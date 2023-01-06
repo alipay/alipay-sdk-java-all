@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.alideviceinfo.offlinecode.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:37:07
+ * @since 1.0, 2023-01-05 11:39:56
  */
 public class AlipayCommerceAlideviceinfoOfflinecodeCreateRequest implements AlipayRequest<AlipayCommerceAlideviceinfoOfflinecodeCreateResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展信息，Map类型，格式{"key":"value"}
  *
  * @author auto create
- * @since 1.0, 2021-10-14 14:16:27
+ * @since 1.0, 2022-12-22 14:40:24
  */
 public class BizExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4227576192245369525L;
+	private static final long serialVersionUID = 4358267495459426254L;
 
 	/**
 	 * key-value

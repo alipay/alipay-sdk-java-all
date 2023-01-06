@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车险权益使用资格查询
  *
  * @author auto create
- * @since 1.0, 2022-12-13 14:10:15
+ * @since 1.0, 2022-12-28 16:56:00
  */
 public class AlipayInsAutoBenefitCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6662611787483619942L;
+	private static final long serialVersionUID = 8713793198446456441L;
 
 	/**
 	 * 支付宝权益编码标识
@@ -24,6 +24,12 @@ public class AlipayInsAutoBenefitCheckavailableModel extends AlipayObject {
 	 */
 	@ApiField("extend")
 	private String extend;
+
+	/**
+	 * 支付宝用户标识openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝用户标识
@@ -43,6 +49,13 @@ public class AlipayInsAutoBenefitCheckavailableModel extends AlipayObject {
 	}
 	public void setExtend(String extend) {
 		this.extend = extend;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

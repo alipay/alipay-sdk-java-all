@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2022-12-05 22:05:08
+ * @since 1.0, 2022-12-26 14:31:13
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7593739853638845757L;
+	private static final long serialVersionUID = 5571771311467877326L;
 
 	/**
 	 * 业务场景
@@ -20,7 +20,7 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	private String bizScene;
 
 	/**
-	 * 登录号
+	 * 如果是ALIPAY_USER_ID，则传用户账号；如果是ALIPAY_LOGIN_ID，则传手机号
 	 */
 	@ApiField("identity")
 	private String identity;
@@ -44,7 +44,7 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	private String productCode;
 
 	/**
-	 * 真实姓名
+	 * 如果账号类型是ALIPAY_LOGIN_ID，则必传用户真实姓名，进行信息校验
 	 */
 	@ApiField("real_name")
 	private String realName;

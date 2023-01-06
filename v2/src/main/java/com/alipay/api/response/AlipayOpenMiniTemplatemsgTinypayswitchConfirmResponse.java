@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.templatemsg.tinypayswitch.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 17:30:59
+ * @since 1.0, 2023-01-04 19:42:01
  */
 public class AlipayOpenMiniTemplatemsgTinypayswitchConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3227454749962621777L;
+	private static final long serialVersionUID = 6757183144788441159L;
 
 	
 

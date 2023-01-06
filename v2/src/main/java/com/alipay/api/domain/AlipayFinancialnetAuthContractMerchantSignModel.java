@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构商户签约服务
  *
  * @author auto create
- * @since 1.0, 2022-06-10 14:43:02
+ * @since 1.0, 2023-01-04 15:54:15
  */
 public class AlipayFinancialnetAuthContractMerchantSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2711526784966613429L;
+	private static final long serialVersionUID = 8814547665127445786L;
 
 	/**
 	 * 商家银行账号
@@ -36,6 +36,12 @@ public class AlipayFinancialnetAuthContractMerchantSignModel extends AlipayObjec
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景码
@@ -81,6 +87,13 @@ public class AlipayFinancialnetAuthContractMerchantSignModel extends AlipayObjec
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneCode() {

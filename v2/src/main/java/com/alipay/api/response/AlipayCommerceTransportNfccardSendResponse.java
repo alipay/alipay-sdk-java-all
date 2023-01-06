@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.nfccard.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:24:18
+ * @since 1.0, 2023-01-04 22:50:11
  */
 public class AlipayCommerceTransportNfccardSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3298373412325933395L;
+	private static final long serialVersionUID = 2574211215893748774L;
 
 	
 

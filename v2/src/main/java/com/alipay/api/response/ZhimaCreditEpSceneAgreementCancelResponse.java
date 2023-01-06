@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.scene.agreement.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:01:17
+ * @since 1.0, 2023-01-04 22:05:00
  */
 public class ZhimaCreditEpSceneAgreementCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7869917975145427483L;
+	private static final long serialVersionUID = 2364949428811191534L;
 
 	/** 
 	 * 信用订单号

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniBenefitMultibundleConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3589236513858773563L;
+	private static final long serialVersionUID = 8221848192416942894L;
 
 	/** 
 	 * 券内容

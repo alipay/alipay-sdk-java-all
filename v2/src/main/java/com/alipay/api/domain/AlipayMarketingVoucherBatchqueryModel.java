@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二方机构根标签据查询有效券信息
  *
  * @author auto create
- * @since 1.0, 2022-12-05 20:36:28
+ * @since 1.0, 2022-12-22 11:22:22
  */
 public class AlipayMarketingVoucherBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6822327266271539881L;
+	private static final long serialVersionUID = 7671488442329962891L;
 
 	/**
 	 * 券业务编码
@@ -61,6 +61,12 @@ public class AlipayMarketingVoucherBatchqueryModel extends AlipayObject {
 	@ApiListField("product_codes")
 	@ApiField("string")
 	private List<String> productCodes;
+
+	/**
+	 * 查询排序类型，可选（drawTime：券领取时间，startTime：券开始使用时间）
+	 */
+	@ApiField("sort_type")
+	private String sortType;
 
 	/**
 	 * ENABLED查询可用券
@@ -141,6 +147,13 @@ public class AlipayMarketingVoucherBatchqueryModel extends AlipayObject {
 	}
 	public void setProductCodes(List<String> productCodes) {
 		this.productCodes = productCodes;
+	}
+
+	public String getSortType() {
+		return this.sortType;
+	}
+	public void setSortType(String sortType) {
+		this.sortType = sortType;
 	}
 
 	public List<String> getStatusList() {

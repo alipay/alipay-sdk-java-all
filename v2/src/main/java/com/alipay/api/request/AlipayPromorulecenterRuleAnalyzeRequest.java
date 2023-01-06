@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.promorulecenter.rule.analyze request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:31:01
+ * @since 1.0, 2023-01-04 21:31:38
  */
 public class AlipayPromorulecenterRuleAnalyzeRequest implements AlipayRequest<AlipayPromorulecenterRuleAnalyzeResponse> {
 
@@ -22,6 +22,11 @@ public class AlipayPromorulecenterRuleAnalyzeRequest implements AlipayRequest<Al
 	* 业务id
 	 */
 	private String bizId;
+
+	/** 
+	* 支付宝用户id
+	 */
+	private String openId;
 
 	/** 
 	* 规则id
@@ -38,6 +43,13 @@ public class AlipayPromorulecenterRuleAnalyzeRequest implements AlipayRequest<Al
 	}
 	public String getBizId() {
 		return this.bizId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setRuleUuid(String ruleUuid) {
@@ -116,6 +128,7 @@ public class AlipayPromorulecenterRuleAnalyzeRequest implements AlipayRequest<Al
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("biz_id", this.bizId);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("rule_uuid", this.ruleUuid);
 		txtParams.put("user_id", this.userId);
 		if(udfParams != null) {

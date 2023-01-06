@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape用户行为上报
  *
  * @author auto create
- * @since 1.0, 2022-10-24 17:32:14
+ * @since 1.0, 2022-12-26 16:56:50
  */
 public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3368846443948896474L;
+	private static final long serialVersionUID = 1312411575554375949L;
 
 	/**
 	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）等
@@ -42,6 +42,12 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	 */
 	@ApiField("log_time")
 	private String logTime;
+
+	/**
+	 * 加密userId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单id，一般只有下单/支付行为携带该字段，用于统计效果数据（订单数，gmv指标）、或者归因层面标注conversion数据是否重复
@@ -142,6 +148,13 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	}
 	public void setLogTime(String logTime) {
 		this.logTime = logTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderId() {

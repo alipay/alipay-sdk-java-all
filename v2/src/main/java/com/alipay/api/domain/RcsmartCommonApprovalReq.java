@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 解语花审核内容请求类
  *
  * @author auto create
- * @since 1.0, 2022-08-23 19:47:55
+ * @since 1.0, 2022-12-26 11:24:04
  */
 public class RcsmartCommonApprovalReq extends AlipayObject {
 
-	private static final long serialVersionUID = 8563329786488124399L;
+	private static final long serialVersionUID = 5832984785851561742L;
 
 	/**
 	 * 业务ID，一个业务bizId代表当前业务，可以包含多个场景，与scene_code之间为一对多的关系。 @结月分配
@@ -27,6 +27,12 @@ public class RcsmartCommonApprovalReq extends AlipayObject {
 	 */
 	@ApiField("ext_param")
 	private String extParam;
+
+	/**
+	 * 请求的父级工单ID
+	 */
+	@ApiField("parent_request_id")
+	private String parentRequestId;
 
 	/**
 	 * 请求Id，与app_name组成唯一健，保证业务请求幂等性，同时在请求完毕后，获取业务风险详情信息结果使用
@@ -53,6 +59,13 @@ public class RcsmartCommonApprovalReq extends AlipayObject {
 	}
 	public void setExtParam(String extParam) {
 		this.extParam = extParam;
+	}
+
+	public String getParentRequestId() {
+		return this.parentRequestId;
+	}
+	public void setParentRequestId(String parentRequestId) {
+		this.parentRequestId = parentRequestId;
 	}
 
 	public String getRequestId() {

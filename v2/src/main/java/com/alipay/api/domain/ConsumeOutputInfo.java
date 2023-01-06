@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单记录输出模型
  *
  * @author auto create
- * @since 1.0, 2020-08-07 15:12:52
+ * @since 1.0, 2022-12-26 20:28:02
  */
 public class ConsumeOutputInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2171682744473259199L;
+	private static final long serialVersionUID = 2139393615534995484L;
 
 	/**
 	 * 支付宝交易号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消关联账号和小程序
  *
  * @author auto create
- * @since 1.0, 2022-10-10 12:08:57
+ * @since 1.0, 2022-12-27 20:00:51
  */
 public class AntMerchantExpandApprecommendAccountDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7673638999339191562L;
+	private static final long serialVersionUID = 4188171939365174194L;
 
 	/**
 	 * 待解绑账号PID

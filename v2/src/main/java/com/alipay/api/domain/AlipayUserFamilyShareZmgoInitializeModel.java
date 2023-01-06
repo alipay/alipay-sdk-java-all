@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 初始化家庭芝麻GO共享组件
  *
  * @author auto create
- * @since 1.0, 2021-01-20 11:00:51
+ * @since 1.0, 2023-01-03 10:52:55
  */
 public class AlipayUserFamilyShareZmgoInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2311797529486855282L;
+	private static final long serialVersionUID = 2118547681363119894L;
 
 	/**
 	 * 商户订单号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 目标实例数据实体
  *
  * @author auto create
- * @since 1.0, 2019-08-19 14:50:48
+ * @since 1.0, 2022-12-30 12:36:49
  */
 public class QuestInstanceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4575922148964952884L;
+	private static final long serialVersionUID = 8144188297978298438L;
 
 	/**
 	 * 跳转地址:若用户已添加目标，则返回打卡页地址，否则返回目标详情页地址

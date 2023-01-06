@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云店记账本数据
  *
  * @author auto create
- * @since 1.0, 2022-12-14 11:15:39
+ * @since 1.0, 2022-12-27 10:20:23
  */
 public class FundAccountBookInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7636366418563594321L;
+	private static final long serialVersionUID = 5726783115444228451L;
 
 	/**
 	 * 记账本id

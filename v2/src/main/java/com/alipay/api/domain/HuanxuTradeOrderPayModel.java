@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 焕旭科技聚合支付下单支付接口
  *
  * @author auto create
- * @since 1.0, 2022-12-16 11:17:33
+ * @since 1.0, 2022-12-30 17:32:33
  */
 public class HuanxuTradeOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4865768355172456296L;
+	private static final long serialVersionUID = 3714156899164797351L;
 
 	/**
 	 * 聚合支付的支付渠道，焕旭分配。

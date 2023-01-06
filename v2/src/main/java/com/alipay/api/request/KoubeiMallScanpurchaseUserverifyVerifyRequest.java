@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.mall.scanpurchase.userverify.verify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:06:16
+ * @since 1.0, 2023-01-05 11:30:10
  */
 public class KoubeiMallScanpurchaseUserverifyVerifyRequest implements AlipayRequest<KoubeiMallScanpurchaseUserverifyVerifyResponse> {
 

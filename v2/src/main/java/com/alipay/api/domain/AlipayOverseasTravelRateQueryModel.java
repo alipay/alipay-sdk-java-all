@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨境游汇率查询接口
  *
  * @author auto create
- * @since 1.0, 2018-06-02 16:26:31
+ * @since 1.0, 2022-12-29 14:49:20
  */
 public class AlipayOverseasTravelRateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7722718769592232557L;
+	private static final long serialVersionUID = 3479985726128877957L;
 
 	/**
 	 * 用户当前所在国家的国家码，ISO-3166标准三位数字国家码，currency、countryCode、longitude & latitude三者不能同时为空

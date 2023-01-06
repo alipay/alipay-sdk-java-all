@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.clive.visitor.offline response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 14:56:16
+ * @since 1.0, 2023-01-04 22:49:37
  */
 public class AlipayIserviceCliveVisitorOfflineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7439371236629472152L;
+	private static final long serialVersionUID = 8613561783534367854L;
 
 	
 

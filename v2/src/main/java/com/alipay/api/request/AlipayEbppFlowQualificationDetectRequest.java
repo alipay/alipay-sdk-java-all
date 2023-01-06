@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.flow.qualification.detect request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:17:34
+ * @since 1.0, 2023-01-05 11:30:26
  */
 public class AlipayEbppFlowQualificationDetectRequest implements AlipayRequest<AlipayEbppFlowQualificationDetectResponse> {
 

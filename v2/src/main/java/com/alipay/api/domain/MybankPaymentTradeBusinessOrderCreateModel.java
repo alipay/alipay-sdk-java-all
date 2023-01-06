@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 网商银行创建业务订单接口
  *
  * @author auto create
- * @since 1.0, 2022-02-09 14:41:46
+ * @since 1.0, 2023-01-05 15:06:50
  */
 public class MybankPaymentTradeBusinessOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8551666512687368361L;
+	private static final long serialVersionUID = 3758199123285418737L;
 
 	/**
 	 * 金额，单位：元，精确到小数点后两位

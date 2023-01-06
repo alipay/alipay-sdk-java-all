@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险凭证批量创建
  *
  * @author auto create
- * @since 1.0, 2022-09-23 11:26:41
+ * @since 1.0, 2022-12-28 10:58:27
  */
 public class AlipayInsMarketingCertificateBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3325921595524489789L;
+	private static final long serialVersionUID = 1297775131872286717L;
 
 	/**
 	 * 批量创建凭证请求

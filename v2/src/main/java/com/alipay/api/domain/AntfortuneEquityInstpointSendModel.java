@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 财富开放机构积分发放接口
  *
  * @author auto create
- * @since 1.0, 2019-05-01 11:19:37
+ * @since 1.0, 2023-01-04 13:51:54
  */
 public class AntfortuneEquityInstpointSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6534371116284597762L;
+	private static final long serialVersionUID = 8536221683418747646L;
 
 	/**
 	 * 积分发放备注

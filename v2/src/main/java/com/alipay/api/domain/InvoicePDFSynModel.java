@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票同步简单模式下的发票信息入参模型
  *
  * @author auto create
- * @since 1.0, 2022-11-10 10:45:15
+ * @since 1.0, 2022-12-26 16:47:34
  */
 public class InvoicePDFSynModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5232478467657968611L;
+	private static final long serialVersionUID = 5419685692957893176L;
 
 	/**
 	 * 支付宝开票申请id。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机构积分流水查询
  *
  * @author auto create
- * @since 1.0, 2019-05-01 11:19:29
+ * @since 1.0, 2023-01-04 13:51:07
  */
 public class AntfortuneEquityInstpointTransQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3713143463517144762L;
+	private static final long serialVersionUID = 4112239725599552247L;
 
 	/**
 	 * 查询流水的结束时间。与start_time的时间跨度不超过6个月

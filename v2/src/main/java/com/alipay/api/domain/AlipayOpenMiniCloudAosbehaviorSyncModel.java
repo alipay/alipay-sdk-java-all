@@ -7,14 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * ai open search用户行为上报
  *
  * @author auto create
- * @since 1.0, 2022-11-25 11:45:38
+ * @since 1.0, 2022-12-26 11:46:07
  */
 public class AlipayOpenMiniCloudAosbehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7734976721335974297L;
+	private static final long serialVersionUID = 1618584491625383727L;
 
 	/**
-	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）等
+	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）、hot_expose（热搜曝光）、hot_click（热搜点击）suggest_expose（推荐词曝光）、suggest_click（推荐词点击）、
+comp_expose（补全词曝光）、comp_click（补全词点击）、hint_expose（底纹曝光）、hint_click（底纹点击）、search_click（搜索点击）、search_expose（搜索曝光）
 	 */
 	@ApiField("action_type")
 	private String actionType;
@@ -42,6 +43,12 @@ public class AlipayOpenMiniCloudAosbehaviorSyncModel extends AlipayObject {
 	 */
 	@ApiField("log_time")
 	private String logTime;
+
+	/**
+	 * 用户唯一标识id，可以是支付宝userid、商家自定义的userid等
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单id，一般只有下单/支付行为携带该字段，用于统计效果数据（订单数，gmv指标）、或者归因层面标注conversion数据是否重复
@@ -72,6 +79,12 @@ public class AlipayOpenMiniCloudAosbehaviorSyncModel extends AlipayObject {
 	 */
 	@ApiField("project_id")
 	private String projectId;
+
+	/**
+	 * 搜索词
+	 */
+	@ApiField("query")
+	private String query;
 
 	/**
 	 * SPM(Super Position Model)全称超级位置模型，主要用于标识行为发生的位置。SPM位置编码由A/B/C/D四段构成， 各分段分别代表 A:业务， B:页面， C:页面区块， D:区块内点位。段之间用$##$分隔，即A$##$B$##$C$##$D，spm各段建议传明文。允许某一段为空，为空时以_代替。
@@ -144,6 +157,13 @@ public class AlipayOpenMiniCloudAosbehaviorSyncModel extends AlipayObject {
 		this.logTime = logTime;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getOrderId() {
 		return this.orderId;
 	}
@@ -177,6 +197,13 @@ public class AlipayOpenMiniCloudAosbehaviorSyncModel extends AlipayObject {
 	}
 	public void setProjectId(String projectId) {
 		this.projectId = projectId;
+	}
+
+	public String getQuery() {
+		return this.query;
+	}
+	public void setQuery(String query) {
+		this.query = query;
 	}
 
 	public String getSpm() {

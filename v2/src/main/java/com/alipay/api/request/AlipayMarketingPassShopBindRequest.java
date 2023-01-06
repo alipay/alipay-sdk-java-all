@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.pass.shop.bind request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:25:15
+ * @since 1.0, 2023-01-05 10:43:18
  */
 public class AlipayMarketingPassShopBindRequest implements AlipayRequest<AlipayMarketingPassShopBindResponse> {
 

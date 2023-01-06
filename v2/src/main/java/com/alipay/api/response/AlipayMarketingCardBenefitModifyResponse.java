@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.benefit.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-06 16:06:57
+ * @since 1.0, 2023-01-04 21:47:42
  */
 public class AlipayMarketingCardBenefitModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1653958919866928956L;
+	private static final long serialVersionUID = 4872431114652735812L;
 
 	/** 
 	 * 权益修改结果；true成功：false失败

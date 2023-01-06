@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.air.callcenter.trade.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:47:00
+ * @since 1.0, 2023-01-04 22:16:45
  */
 public class AlipayCommerceAirCallcenterTradeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4353773739338743241L;
+	private static final long serialVersionUID = 7323553634146397265L;
 
 	
 

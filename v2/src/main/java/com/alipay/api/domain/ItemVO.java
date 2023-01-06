@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品
  *
  * @author auto create
- * @since 1.0, 2022-12-15 20:11:26
+ * @since 1.0, 2022-12-23 14:25:17
  */
 public class ItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6517851531962625139L;
+	private static final long serialVersionUID = 8641172239217622679L;
 
 	/**
 	 * 条形码信息，应用于扫一扫场景
@@ -41,6 +41,12 @@ public class ItemVO extends AlipayObject {
 	private String feature;
 
 	/**
+	 * 是否有价格：true-有价格，false-无价格
+	 */
+	@ApiField("has_price")
+	private Boolean hasPrice;
+
+	/**
 	 * 详情图url列表，不超过3个图片
 	 */
 	@ApiListField("image_list")
@@ -60,7 +66,7 @@ public class ItemVO extends AlipayObject {
 	private String mainImage;
 
 	/**
-	 * 商品原价，分为单位
+	 * 商品原价，分为单位。has_price为true时才可能有值
 	 */
 	@ApiField("original_price")
 	private String originalPrice;
@@ -78,10 +84,16 @@ public class ItemVO extends AlipayObject {
 	private String platformItemId;
 
 	/**
-	 * 商品价格，分为单位
+	 * 商品价格，分为单位。has_price为true时才有值
 	 */
 	@ApiField("price")
 	private String price;
+
+	/**
+	 * 价格单元，在has_price为true时可设置。和商品价格、商品原价（数值的单位保持为分）配合使用，扩展单位描述。枚举值：元、元/小时、元/日、元/周、元/月、元/季、元/年、元/次、元/场、元起、m2。
+	 */
+	@ApiField("price_unit")
+	private String priceUnit;
 
 	/**
 	 * 商品详情页URL
@@ -127,6 +139,13 @@ public class ItemVO extends AlipayObject {
 	}
 	public void setFeature(String feature) {
 		this.feature = feature;
+	}
+
+	public Boolean getHasPrice() {
+		return this.hasPrice;
+	}
+	public void setHasPrice(Boolean hasPrice) {
+		this.hasPrice = hasPrice;
 	}
 
 	public List<String> getImageList() {
@@ -176,6 +195,13 @@ public class ItemVO extends AlipayObject {
 	}
 	public void setPrice(String price) {
 		this.price = price;
+	}
+
+	public String getPriceUnit() {
+		return this.priceUnit;
+	}
+	public void setPriceUnit(String priceUnit) {
+		this.priceUnit = priceUnit;
 	}
 
 	public String getSrcPath() {

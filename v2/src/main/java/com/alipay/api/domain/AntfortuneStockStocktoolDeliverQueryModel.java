@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁财富证券小程序用户准入查询
  *
  * @author auto create
- * @since 1.0, 2022-02-21 11:12:06
+ * @since 1.0, 2022-12-21 20:27:16
  */
 public class AntfortuneStockStocktoolDeliverQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3882763193937695866L;
+	private static final long serialVersionUID = 4184362186466279373L;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 查询用户是否能在某个展位下透出，支持批量查询
@@ -28,6 +34,13 @@ public class AntfortuneStockStocktoolDeliverQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public List<String> getPositionList() {
 		return this.positionList;

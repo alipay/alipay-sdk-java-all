@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape推荐接口
  *
  * @author auto create
- * @since 1.0, 2022-11-18 18:09:45
+ * @since 1.0, 2022-12-26 19:01:18
  */
 public class AlipayDigitalopUcdpApeitemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5396743891965584569L;
+	private static final long serialVersionUID = 3312842562678476316L;
 
 	/**
 	 * 推荐上下文
@@ -35,6 +35,12 @@ public class AlipayDigitalopUcdpApeitemQueryModel extends AlipayObject {
 	@ApiListField("item_id_list")
 	@ApiField("string")
 	private List<String> itemIdList;
+
+	/**
+	 * 加密userID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 当前页码，第一页是1
@@ -97,6 +103,13 @@ public class AlipayDigitalopUcdpApeitemQueryModel extends AlipayObject {
 	}
 	public void setItemIdList(List<String> itemIdList) {
 		this.itemIdList = itemIdList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getPageNum() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 农作物汇总信息查询
  *
  * @author auto create
- * @since 1.0, 2022-12-20 14:53:18
+ * @since 1.0, 2022-12-22 14:40:16
  */
 public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1592161587545991791L;
+	private static final long serialVersionUID = 3462287885272584563L;
 
 	/**
 	 * 作物编码条件汇总
@@ -27,6 +27,12 @@ public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends Alipa
 	 */
 	@ApiField("growth_strength")
 	private Long growthStrength;
+
+	/**
+	 * 是否有墒情/长势/气候等风险
+	 */
+	@ApiField("is_certain_risk")
+	private Boolean isCertainRisk;
 
 	/**
 	 * 长势是否预警条件汇总
@@ -95,6 +101,13 @@ public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends Alipa
 	}
 	public void setGrowthStrength(Long growthStrength) {
 		this.growthStrength = growthStrength;
+	}
+
+	public Boolean getIsCertainRisk() {
+		return this.isCertainRisk;
+	}
+	public void setIsCertainRisk(Boolean isCertainRisk) {
+		this.isCertainRisk = isCertainRisk;
 	}
 
 	public Boolean getIsGrowthWarn() {

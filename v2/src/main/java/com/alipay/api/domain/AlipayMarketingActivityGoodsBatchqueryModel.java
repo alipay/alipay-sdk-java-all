@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询券可用单品
  *
  * @author auto create
- * @since 1.0, 2021-11-25 22:40:48
+ * @since 1.0, 2022-12-23 14:42:49
  */
 public class AlipayMarketingActivityGoodsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5198915118223949981L;
+	private static final long serialVersionUID = 8367526636965738984L;
 
 	/**
 	 * 活动id
@@ -27,6 +27,16 @@ UNAVAILABLE 不可用商品
 	 */
 	@ApiField("goods_use_type")
 	private String goodsUseType;
+
+	/**
+	 * 商户接入模式
+
+枚举值
+SELF_MODE 商户自接入模式
+AGENCY_MODE 服务商代接入模式
+	 */
+	@ApiField("merchant_access_mode")
+	private String merchantAccessMode;
 
 	/**
 	 * 商户PID,默认为当前接口调用商户 
@@ -55,6 +65,15 @@ UNAVAILABLE 不可用商品
 	@ApiField("page_size")
 	private Long pageSize;
 
+	/**
+	 * 版本号
+
+枚举值:
+2.0.0
+	 */
+	@ApiField("product_version")
+	private String productVersion;
+
 	public String getActivityId() {
 		return this.activityId;
 	}
@@ -67,6 +86,13 @@ UNAVAILABLE 不可用商品
 	}
 	public void setGoodsUseType(String goodsUseType) {
 		this.goodsUseType = goodsUseType;
+	}
+
+	public String getMerchantAccessMode() {
+		return this.merchantAccessMode;
+	}
+	public void setMerchantAccessMode(String merchantAccessMode) {
+		this.merchantAccessMode = merchantAccessMode;
 	}
 
 	public String getMerchantId() {
@@ -88,6 +114,13 @@ UNAVAILABLE 不可用商品
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getProductVersion() {
+		return this.productVersion;
+	}
+	public void setProductVersion(String productVersion) {
+		this.productVersion = productVersion;
 	}
 
 }
