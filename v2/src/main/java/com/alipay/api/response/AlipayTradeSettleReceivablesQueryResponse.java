@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.settle.receivables.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-16 15:41:49
+ * @since 1.0, 2023-01-11 01:46:42
  */
 public class AlipayTradeSettleReceivablesQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4861448674724133613L;
+	private static final long serialVersionUID = 2582277575683175829L;
 
 	/** 
 	 * 直付通请款模式下的结算在途金额，发起结算后 T+N 日到账场景下的处理中金额，人民币，单位为元

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证岗位收集
  *
  * @author auto create
- * @since 1.0, 2022-06-28 17:00:03
+ * @since 1.0, 2023-01-06 14:31:49
  */
 public class ZhimaCustomerJobworthPositionAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4331674492959312132L;
+	private static final long serialVersionUID = 6447485677544622592L;
 
 	/**
 	 * 职位信息

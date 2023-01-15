@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.multimedia.xnnmini.version.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:36:44
+ * @since 1.0, 2023-01-11 09:36:41
  */
 public class AlipayMultimediaXnnminiVersionCreateRequest implements AlipayRequest<AlipayMultimediaXnnminiVersionCreateResponse> {
 

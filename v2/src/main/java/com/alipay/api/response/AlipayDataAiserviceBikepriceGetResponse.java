@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.bikeprice.get response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 12:49:00
+ * @since 1.0, 2023-01-11 07:17:24
  */
 public class AlipayDataAiserviceBikepriceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4579993913831566511L;
+	private static final long serialVersionUID = 7376673387116266849L;
 
 	/** 
 	 * 返回结果列表

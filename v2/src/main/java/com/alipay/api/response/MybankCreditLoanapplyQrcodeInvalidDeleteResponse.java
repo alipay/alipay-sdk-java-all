@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.qrcode.invalid.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 12:25:19
+ * @since 1.0, 2023-01-10 22:28:59
  */
 public class MybankCreditLoanapplyQrcodeInvalidDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2487896487938662618L;
+	private static final long serialVersionUID = 3893613296771383239L;
 
 	/** 
 	 * true:失效成功 false:失效失败

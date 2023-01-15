@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序版本提交审核
  *
  * @author auto create
- * @since 1.0, 2023-01-05 17:11:15
+ * @since 1.0, 2023-01-08 00:21:53
  */
 public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6256966833358492435L;
+	private static final long serialVersionUID = 3527276642699427379L;
 
 	/**
 	 * 小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考<a href=‘https://opendocs.alipay.com/b/03al2m’>开放服务类目</a>，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。
@@ -93,6 +93,12 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	 */
 	@ApiField("mini_category_ids")
 	private String miniCategoryIds;
+
+	/**
+	 * 小程序所属PID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 门头照图片地址，部分小程序类目需要提交，参照 <a href=‘https://opendocs.alipay.com/b/03al2m’>开放服务类目</a> 中是否需要营业执照信息，如果不填默认采用当前小程序门头照图片
@@ -226,6 +232,13 @@ public class AlipayOpenMiniInnerversionAuditSubmitModel extends AlipayObject {
 	}
 	public void setMiniCategoryIds(String miniCategoryIds) {
 		this.miniCategoryIds = miniCategoryIds;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutDoorPic() {

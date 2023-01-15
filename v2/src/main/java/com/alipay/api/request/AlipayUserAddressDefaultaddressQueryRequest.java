@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.address.defaultaddress.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-29 11:16:39
+ * @since 1.0, 2023-01-11 10:11:38
  */
 public class AlipayUserAddressDefaultaddressQueryRequest implements AlipayRequest<AlipayUserAddressDefaultaddressQueryResponse> {
 

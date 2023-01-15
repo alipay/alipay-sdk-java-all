@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 赠险标准发放
  *
  * @author auto create
- * @since 1.0, 2022-09-20 10:57:57
+ * @since 1.0, 2023-01-10 20:48:29
  */
 public class AlipayInsMarketingGiftSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3381114749634433482L;
+	private static final long serialVersionUID = 6381766649899322957L;
 
 	/**
 	 * 渠道规则编码
@@ -45,8 +45,20 @@ false 需要用户手动点击领取
 	/**
 	 * 被保人uid，被保人是当前用户则选择当前user_id
 	 */
+	@ApiField("insured_open_id")
+	private String insuredOpenId;
+
+	/**
+	 * 被保人uid，被保人是当前用户则选择当前user_id
+	 */
 	@ApiField("insured_user_id")
 	private String insuredUserId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 唯一性的外部业务号，幂等单号
@@ -107,11 +119,25 @@ false 需要用户手动点击领取
 		this.giftProdCode = giftProdCode;
 	}
 
+	public String getInsuredOpenId() {
+		return this.insuredOpenId;
+	}
+	public void setInsuredOpenId(String insuredOpenId) {
+		this.insuredOpenId = insuredOpenId;
+	}
+
 	public String getInsuredUserId() {
 		return this.insuredUserId;
 	}
 	public void setInsuredUserId(String insuredUserId) {
 		this.insuredUserId = insuredUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

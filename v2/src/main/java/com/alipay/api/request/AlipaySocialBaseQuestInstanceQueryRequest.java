@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.quest.instance.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-29 15:37:17
+ * @since 1.0, 2023-01-10 22:59:35
  */
 public class AlipaySocialBaseQuestInstanceQueryRequest implements AlipayRequest<AlipaySocialBaseQuestInstanceQueryResponse> {
 

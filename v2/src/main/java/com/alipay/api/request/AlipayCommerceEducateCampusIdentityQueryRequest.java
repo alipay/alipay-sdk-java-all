@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.campus.identity.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:15:50
+ * @since 1.0, 2023-01-11 00:07:18
  */
 public class AlipayCommerceEducateCampusIdentityQueryRequest implements AlipayRequest<AlipayCommerceEducateCampusIdentityQueryResponse> {
 

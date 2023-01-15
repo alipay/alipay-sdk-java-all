@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.alloc.sign.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 18:31:38
+ * @since 1.0, 2023-01-12 13:37:59
  */
 public class AlipayFundAllocSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3735346758456113661L;
+	private static final long serialVersionUID = 5497262729828935824L;
 
 	/** 
 	 * 授权协议号

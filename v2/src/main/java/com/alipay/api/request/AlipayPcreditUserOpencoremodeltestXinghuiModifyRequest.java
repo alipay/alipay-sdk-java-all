@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.user.opencoremodeltest.xinghui.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-14 14:31:38
+ * @since 1.0, 2023-01-11 02:36:39
  */
 public class AlipayPcreditUserOpencoremodeltestXinghuiModifyRequest implements AlipayRequest<AlipayPcreditUserOpencoremodeltestXinghuiModifyResponse> {
 

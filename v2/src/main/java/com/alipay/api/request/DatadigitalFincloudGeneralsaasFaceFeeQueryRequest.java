@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayCommerceIotMsgcenterSendModel;
+import com.alipay.api.domain.DatadigitalFincloudGeneralsaasFaceFeeQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayCommerceIotMsgcenterSendResponse;
+import com.alipay.api.response.DatadigitalFincloudGeneralsaasFaceFeeQueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.commerce.iot.msgcenter.send request
+ * ALIPAY API: datadigital.fincloud.generalsaas.face.fee.query request
  * 
  * @author auto create
- * @since 1.0, 2022-09-23 18:00:21
+ * @since 1.0, 2023-01-13 17:16:43
  */
-public class AlipayCommerceIotMsgcenterSendRequest implements AlipayRequest<AlipayCommerceIotMsgcenterSendResponse> {
+public class DatadigitalFincloudGeneralsaasFaceFeeQueryRequest implements AlipayRequest<DatadigitalFincloudGeneralsaasFaceFeeQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 设备中心消息发送
+	* 单据计费情况查询
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayCommerceIotMsgcenterSendRequest implements AlipayRequest<Alip
 	}
 
 	public String getApiMethodName() {
-		return "alipay.commerce.iot.msgcenter.send";
+		return "datadigital.fincloud.generalsaas.face.fee.query";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayCommerceIotMsgcenterSendRequest implements AlipayRequest<Alip
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayCommerceIotMsgcenterSendResponse> getResponseClass() {
-		return AlipayCommerceIotMsgcenterSendResponse.class;
+	public Class<DatadigitalFincloudGeneralsaasFaceFeeQueryResponse> getResponseClass() {
+		return DatadigitalFincloudGeneralsaasFaceFeeQueryResponse.class;
 	}
 	
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.scene.cooperation.consult response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 12:34:22
+ * @since 1.0, 2023-01-11 06:27:31
  */
 public class AlipayUserSceneCooperationConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4338288431498177978L;
+	private static final long serialVersionUID = 8641652697453619244L;
 
 	/** 
 	 * 脱敏后的支付宝登录号

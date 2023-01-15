@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.itap.user.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 08:58:00
+ * @since 1.0, 2023-01-11 06:39:33
  */
 public class AlipayMsaasItapUserConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4443452943282475196L;
+	private static final long serialVersionUID = 8292125793744613942L;
 
 	/** 
 	 * Itap统一返回结果模型

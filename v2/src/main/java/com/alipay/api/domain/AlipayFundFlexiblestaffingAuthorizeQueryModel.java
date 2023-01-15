@@ -7,29 +7,41 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工授权结果查询
  *
  * @author auto create
- * @since 1.0, 2022-11-30 21:03:28
+ * @since 1.0, 2023-01-10 16:50:12
  */
 public class AlipayFundFlexiblestaffingAuthorizeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1517351636588148798L;
+	private static final long serialVersionUID = 4533971426152423392L;
 
 	/**
-	 * 灵工授权业务场景码，固定值：DEFAULT
+	 * 灵工授权业务场景码，默认：DEFAULT。使用独立授权资产产品时，传递AUTHORIZE
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
 
 	/**
-	 * 灵工授权成功的用户支付宝登录号，与principal_id不能同时为空
+	 * 【已废弃字段】灵工授权成功的用户支付宝登录号
 	 */
 	@ApiField("principal_account_no")
 	private String principalAccountNo;
 
 	/**
-	 * 授权用户的alipayUserId，如果同时传递principal_account_no和principalId，优先通过principalId查询，与principal_account_no不能同时为空
+	 * 授权用户的主体Id，与pirincipal_type组合使用。
 	 */
 	@ApiField("principal_id")
 	private String principalId;
+
+	/**
+	 * 授权人名称
+	 */
+	@ApiField("principal_name")
+	private String principalName;
+
+	/**
+	 * 授权主体类型
+	 */
+	@ApiField("principal_type")
+	private String principalType;
 
 	/**
 	 * 灵工授权产品码，固定值：FLEXIBLE_STAFFING
@@ -56,6 +68,20 @@ public class AlipayFundFlexiblestaffingAuthorizeQueryModel extends AlipayObject 
 	}
 	public void setPrincipalId(String principalId) {
 		this.principalId = principalId;
+	}
+
+	public String getPrincipalName() {
+		return this.principalName;
+	}
+	public void setPrincipalName(String principalName) {
+		this.principalName = principalName;
+	}
+
+	public String getPrincipalType() {
+		return this.principalType;
+	}
+	public void setPrincipalType(String principalType) {
+		this.principalType = principalType;
 	}
 
 	public String getProductCode() {

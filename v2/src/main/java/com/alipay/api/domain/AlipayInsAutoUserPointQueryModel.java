@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取用户油量信息
  *
  * @author auto create
- * @since 1.0, 2022-09-23 11:46:38
+ * @since 1.0, 2023-01-10 20:48:19
  */
 public class AlipayInsAutoUserPointQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5482338265568746955L;
+	private static final long serialVersionUID = 2331771168353545983L;
 
 	/**
 	 * 车险活动类型编码。
@@ -19,6 +19,12 @@ public class AlipayInsAutoUserPointQueryModel extends AlipayObject {
 	 */
 	@ApiField("auto_campaign_type")
 	private String autoCampaignType;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -31,6 +37,13 @@ public class AlipayInsAutoUserPointQueryModel extends AlipayObject {
 	}
 	public void setAutoCampaignType(String autoCampaignType) {
 		this.autoCampaignType = autoCampaignType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

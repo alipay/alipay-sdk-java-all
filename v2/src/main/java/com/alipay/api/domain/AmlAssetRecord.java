@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 反洗钱风险资产记录详情
  *
  * @author auto create
- * @since 1.0, 2022-10-21 17:49:39
+ * @since 1.0, 2023-01-06 17:52:11
  */
 public class AmlAssetRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 5567835312455783846L;
+	private static final long serialVersionUID = 8721745185349124615L;
 
 	/**
 	 * 数据生效时间
@@ -26,6 +26,12 @@ public class AmlAssetRecord extends AlipayObject {
 	 */
 	@ApiField("lid")
 	private String lid;
+
+	/**
+	 * 客户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 客户ID
@@ -51,6 +57,13 @@ public class AmlAssetRecord extends AlipayObject {
 	}
 	public void setLid(String lid) {
 		this.lid = lid;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUid() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 咨询各个场景是否准入
  *
  * @author auto create
- * @since 1.0, 2022-11-18 15:23:36
+ * @since 1.0, 2023-01-11 16:49:17
  */
 public class MybankCreditCreditriskConsultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1384554645853132836L;
+	private static final long serialVersionUID = 2323497216448255759L;
 
 	/**
 	 * 关联实体，咨询者可以添加一些关联实体比方说一个企业、一个会员账号、一个自然人等来作为咨询材料辅助咨询判断
@@ -40,6 +40,12 @@ public class MybankCreditCreditriskConsultQueryModel extends AlipayObject {
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
+
+	/**
+	 * OpenId是某个用户在某个应用下的唯一用户标识， 对于同一个用户，不同应用拿到的OpenId是不同的，而且对于同一个应用，不同用户的OpenId是唯一的
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 机构对商户的识别id
@@ -110,6 +116,13 @@ public class MybankCreditCreditriskConsultQueryModel extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutDistinguishId() {

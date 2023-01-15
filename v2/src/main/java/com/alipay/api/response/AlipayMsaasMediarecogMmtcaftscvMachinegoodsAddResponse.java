@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcaftscv.machinegoods.add response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:51:31
+ * @since 1.0, 2023-01-11 05:14:36
  */
 public class AlipayMsaasMediarecogMmtcaftscvMachinegoodsAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1814965284621331122L;
+	private static final long serialVersionUID = 1597267334328521873L;
 
 	/** 
 	 * 柜内区域状态

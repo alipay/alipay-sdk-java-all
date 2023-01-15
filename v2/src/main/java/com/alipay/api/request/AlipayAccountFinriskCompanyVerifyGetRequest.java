@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.finrisk.company.verify.get request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 08:32:32
+ * @since 1.0, 2023-01-11 04:45:29
  */
 public class AlipayAccountFinriskCompanyVerifyGetRequest implements AlipayRequest<AlipayAccountFinriskCompanyVerifyGetResponse> {
 

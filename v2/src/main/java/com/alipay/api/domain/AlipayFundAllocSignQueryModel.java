@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询授权协议
  *
  * @author auto create
- * @since 1.0, 2023-01-04 18:30:29
+ * @since 1.0, 2023-01-12 13:37:59
  */
 public class AlipayFundAllocSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1227894688213784349L;
+	private static final long serialVersionUID = 7688781416228965365L;
 
 	/**
-	 * 授权协议号
+	 * 协议号，与「外部请求号」二选一传入即可
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -26,7 +26,7 @@ public class AlipayFundAllocSignQueryModel extends AlipayObject {
 	private String bizScene;
 
 	/**
-	 * 外部请求号，平台唯一，幂等控制
+	 * 外部请求号，与「协议号」二选一传入即可
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

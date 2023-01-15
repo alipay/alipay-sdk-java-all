@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.bizinfo.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:39:00
+ * @since 1.0, 2023-01-11 04:01:53
  */
 public class AlipayEbppIndustryBizinfoApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1851122172113592745L;
+	private static final long serialVersionUID = 7678164797659144881L;
 
 	/** 
 	 * 业务能力码，标识业务场景

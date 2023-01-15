@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.mall.points.notify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:56:40
+ * @since 1.0, 2023-01-11 09:11:41
  */
 public class AlipayBusinessMallPointsNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8273832135144916397L;
+	private static final long serialVersionUID = 6716868633272758817L;
 
 	
 

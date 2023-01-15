@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构专户查询是否用户已开户
  *
  * @author auto create
- * @since 1.0, 2021-03-04 14:33:13
+ * @since 1.0, 2023-01-12 23:02:51
  */
 public class AlipayFinancialnetAuthSpaccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5273826832819649624L;
+	private static final long serialVersionUID = 4564226531863217119L;
 
 	/**
 	 * 业务标识ID
 	 */
 	@ApiField("biz_identity")
 	private String bizIdentity;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 签约产品ID
@@ -36,6 +42,13 @@ public class AlipayFinancialnetAuthSpaccountConsultModel extends AlipayObject {
 	}
 	public void setBizIdentity(String bizIdentity) {
 		this.bizIdentity = bizIdentity;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSignProductId() {

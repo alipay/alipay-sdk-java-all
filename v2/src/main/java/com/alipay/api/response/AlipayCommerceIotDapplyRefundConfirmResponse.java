@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.dapply.refund.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:28:58
+ * @since 1.0, 2023-01-10 22:21:12
  */
 public class AlipayCommerceIotDapplyRefundConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6779673828223573556L;
+	private static final long serialVersionUID = 1573663422613575321L;
 
 	/** 
 	 * 物料申请单号

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.assetdelivery.complete.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:58:20
+ * @since 1.0, 2023-01-11 08:13:24
  */
 public class AntMerchantExpandAssetdeliveryCompleteSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6166875395783579426L;
+	private static final long serialVersionUID = 6328252688297485445L;
 
 	/** 
 	 * 配送反馈处理结果

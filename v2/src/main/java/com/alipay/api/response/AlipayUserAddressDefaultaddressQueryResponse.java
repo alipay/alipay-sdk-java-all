@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.address.defaultaddress.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-29 11:16:39
+ * @since 1.0, 2023-01-11 10:11:38
  */
 public class AlipayUserAddressDefaultaddressQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1836335814513488172L;
+	private static final long serialVersionUID = 3463356623378197576L;
 
 	/** 
 	 * 用户默认收货地址。取值逻辑：1，如果用户有设置默认地址，则返回该地址；2，如果用户有添加地址但没设置默认地址，取最近修改的地址；3，如果用户没有地址，该字段没有值。

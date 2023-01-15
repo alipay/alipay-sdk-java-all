@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.traffic.code.verify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:41:39
+ * @since 1.0, 2023-01-10 22:49:08
  */
 public class AlipayEcoTrafficCodeVerifyRequest implements AlipayRequest<AlipayEcoTrafficCodeVerifyResponse> {
 

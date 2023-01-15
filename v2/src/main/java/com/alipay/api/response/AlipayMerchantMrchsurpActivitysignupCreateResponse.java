@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.mrchsurp.activitysignup.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:49:45
+ * @since 1.0, 2023-01-11 07:30:51
  */
 public class AlipayMerchantMrchsurpActivitysignupCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4361861879656889872L;
+	private static final long serialVersionUID = 7353513826569968258L;
 
 	/** 
 	 * 报名成功后返回报名记录ID，报名失败无该字段

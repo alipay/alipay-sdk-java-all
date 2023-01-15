@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.factoring.afterloaninfo.save request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:27:45
+ * @since 1.0, 2023-01-11 07:32:27
  */
 public class MybankCreditSupplychainFactoringAfterloaninfoSaveRequest implements AlipayRequest<MybankCreditSupplychainFactoringAfterloaninfoSaveResponse> {
 

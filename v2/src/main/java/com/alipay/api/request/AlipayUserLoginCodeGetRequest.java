@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.login.code.get request
  * 
  * @author auto create
- * @since 1.0, 2022-11-22 20:41:35
+ * @since 1.0, 2023-01-11 02:01:41
  */
 public class AlipayUserLoginCodeGetRequest implements AlipayRequest<AlipayUserLoginCodeGetResponse> {
 

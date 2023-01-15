@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.card.level.set response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-15 17:26:35
+ * @since 1.0, 2023-01-11 08:56:39
  */
 public class AlipayUserCardLevelSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2646747742942382868L;
+	private static final long serialVersionUID = 4447426737674617429L;
 
 	
 

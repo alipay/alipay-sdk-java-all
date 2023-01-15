@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.wf.limitamount.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 12:41:31
+ * @since 1.0, 2023-01-11 00:51:11
  */
 public class MybankCreditSupplychainWfLimitamountQueryRequest implements AlipayRequest<MybankCreditSupplychainWfLimitamountQueryResponse> {
 

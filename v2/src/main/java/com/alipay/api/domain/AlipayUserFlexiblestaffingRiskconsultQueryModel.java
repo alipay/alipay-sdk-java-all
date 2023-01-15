@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风控咨询结果查询
  *
  * @author auto create
- * @since 1.0, 2022-11-30 18:19:53
+ * @since 1.0, 2023-01-10 16:41:10
  */
 public class AlipayUserFlexiblestaffingRiskconsultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3585813325974284568L;
+	private static final long serialVersionUID = 6636373948861823629L;
 
 	/**
 	 * 场景码
@@ -32,8 +32,7 @@ public class AlipayUserFlexiblestaffingRiskconsultQueryModel extends AlipayObjec
 	private String enterpriseName;
 
 	/**
-	 * 转账的外部单号，如果是转账过程中的咨询结果查询，可以传入外部单号；
-否则可以不传。
+	 * 咨询或者转账的外部单号，新逻辑幂等，外部单号必传
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询地块列表信息
  *
  * @author auto create
- * @since 1.0, 2022-12-30 11:14:03
+ * @since 1.0, 2023-01-11 16:49:26
  */
 public class MybankCreditLoanapplyBkruralindustryMassifQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5469619782752242774L;
+	private static final long serialVersionUID = 3316763684845742732L;
 
 	/**
 	 * 流水id
 	 */
 	@ApiField("business_no")
 	private String businessNo;
+
+	/**
+	 * OpenId是某个用户在某个应用下的唯一用户标识， 对于同一个用户，不同应用拿到的OpenId是不同的，而且对于同一个应用，不同用户的OpenId是唯一的
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 请求id
@@ -36,6 +42,13 @@ public class MybankCreditLoanapplyBkruralindustryMassifQueryModel extends Alipay
 	}
 	public void setBusinessNo(String businessNo) {
 		this.businessNo = businessNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRequestId() {

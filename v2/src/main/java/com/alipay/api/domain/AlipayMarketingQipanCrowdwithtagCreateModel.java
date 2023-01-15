@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据棋盘标签创建人群
  *
  * @author auto create
- * @since 1.0, 2023-01-04 10:32:46
+ * @since 1.0, 2023-01-09 10:43:50
  */
 public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2571846897595449896L;
+	private static final long serialVersionUID = 5271262513349458185L;
 
 	/**
-	 * 安全应用范围
+	 * 安全应用范围，参考文档
 	 */
 	@ApiListField("apply_channel_list")
 	@ApiField("string")
@@ -28,6 +28,12 @@ public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 	 */
 	@ApiField("crowd_desc")
 	private String crowdDesc;
+
+	/**
+	 * 人群id，人群加工必选
+	 */
+	@ApiField("crowd_id")
+	private String crowdId;
 
 	/**
 	 * 商家棋盘人群名称
@@ -54,6 +60,13 @@ public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 	}
 	public void setCrowdDesc(String crowdDesc) {
 		this.crowdDesc = crowdDesc;
+	}
+
+	public String getCrowdId() {
+		return this.crowdId;
+	}
+	public void setCrowdId(String crowdId) {
+		this.crowdId = crowdId;
 	}
 
 	public String getCrowdName() {

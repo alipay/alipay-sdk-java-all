@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分佣结果查询
  *
  * @author auto create
- * @since 1.0, 2023-01-05 15:49:01
+ * @since 1.0, 2023-01-12 17:39:55
  */
 public class AlipayFundAllocTransferQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4627747664876363324L;
+	private static final long serialVersionUID = 8485498948835414221L;
 
 	/**
 	 * 场景码，联系支付宝分配

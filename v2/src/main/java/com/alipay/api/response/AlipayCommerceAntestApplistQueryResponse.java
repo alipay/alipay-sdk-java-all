@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.antest.applist.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:50:56
+ * @since 1.0, 2023-01-11 06:18:27
  */
 public class AlipayCommerceAntestApplistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8498435654261699543L;
+	private static final long serialVersionUID = 1154688927752411987L;
 
 	/** 
 	 * 小程序列表

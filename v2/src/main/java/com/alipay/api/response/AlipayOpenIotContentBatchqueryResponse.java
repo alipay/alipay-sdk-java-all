@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iot.content.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 16:21:42
+ * @since 1.0, 2023-01-11 02:06:46
  */
 public class AlipayOpenIotContentBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2814527431118766667L;
+	private static final long serialVersionUID = 8297392697684551944L;
 
 	/** 
 	 * 格式取决于查询数据的场景

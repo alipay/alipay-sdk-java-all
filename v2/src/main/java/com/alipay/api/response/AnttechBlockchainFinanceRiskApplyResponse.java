@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.risk.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:19:26
+ * @since 1.0, 2023-01-11 06:17:39
  */
 public class AnttechBlockchainFinanceRiskApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3579191431162883735L;
+	private static final long serialVersionUID = 7797961447927569136L;
 
 	/** 
 	 * 外部风控编号

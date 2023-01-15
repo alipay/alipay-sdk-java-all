@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.retail.wms.inboundwork.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:54:39
+ * @since 1.0, 2023-01-11 04:09:49
  */
 public class KoubeiRetailWmsInboundworkModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8432188624422728784L;
+	private static final long serialVersionUID = 8353718435985331781L;
 
 	
 

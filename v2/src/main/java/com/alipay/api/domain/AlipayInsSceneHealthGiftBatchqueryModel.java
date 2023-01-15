@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 健康险赠险权益批量查询接口
  *
  * @author auto create
- * @since 1.0, 2022-09-20 10:59:09
+ * @since 1.0, 2023-01-10 20:48:08
  */
 public class AlipayInsSceneHealthGiftBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5539279727711768199L;
+	private static final long serialVersionUID = 4444292889894755531L;
 
 	/**
 	 * 赠险业务标志 HEALTH_BEAN_SIMPLE_UPGRADE 免费医疗金、HEALTH_GUARDIAN_GOLD 守护金、HEALTH_DSDB_NEW_OUTPATIENT 多收多宝新门诊
@@ -29,6 +29,12 @@ public class AlipayInsSceneHealthGiftBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * health_gift_batch_gain_sum_insured_list	健康险赠险待领取权益，目前包含待领取保额，准入
@@ -80,6 +86,13 @@ gained_sum_insured_by_source 赠险从某个source领取的保额
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<String> getOperationList() {

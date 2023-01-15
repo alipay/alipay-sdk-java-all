@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退还用户积分
  *
  * @author auto create
- * @since 1.0, 2022-09-20 11:08:05
+ * @since 1.0, 2023-01-10 20:47:46
  */
 public class AlipayInsAutoUserOilRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8647169572287979842L;
+	private static final long serialVersionUID = 6656832441757191362L;
 
 	/**
 	 * 原始使用积分时候的request_id，只有使用过的积分才能返回
 	 */
 	@ApiField("exchange_request_id")
 	private String exchangeRequestId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 退回原因
@@ -48,6 +54,13 @@ public class AlipayInsAutoUserOilRefundModel extends AlipayObject {
 	}
 	public void setExchangeRequestId(String exchangeRequestId) {
 		this.exchangeRequestId = exchangeRequestId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getReason() {

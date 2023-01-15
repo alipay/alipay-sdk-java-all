@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.questionnare.gray.upgrade response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:52:56
+ * @since 1.0, 2023-01-11 06:30:11
  */
 public class AlipaySocialQuestionnareGrayUpgradeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5341922225597224879L;
+	private static final long serialVersionUID = 6259753267138954946L;
 
 	/** 
 	 * 业务扩展参数

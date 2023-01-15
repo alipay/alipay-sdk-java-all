@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.asset.register.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:14:12
+ * @since 1.0, 2023-01-10 23:38:39
  */
 public class AnttechBlockchainFinanceAssetRegisterApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8768827617181468792L;
+	private static final long serialVersionUID = 4697634969146472815L;
 
 	/** 
 	 * 资产登记申请结果，不同资产类型不同，比如可能包含代签名原始数据等。

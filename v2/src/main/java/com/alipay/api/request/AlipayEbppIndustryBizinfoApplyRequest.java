@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.bizinfo.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:39:00
+ * @since 1.0, 2023-01-11 04:01:53
  */
 public class AlipayEbppIndustryBizinfoApplyRequest implements AlipayRequest<AlipayEbppIndustryBizinfoApplyResponse> {
 

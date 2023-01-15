@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.profile.sn.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:05:20
+ * @since 1.0, 2023-01-11 05:56:08
  */
 public class AlipayCommerceIotProfileSnBatchqueryRequest implements AlipayRequest<AlipayCommerceIotProfileSnBatchqueryResponse> {
 

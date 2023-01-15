@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.marketing.discount.preuse request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:16:56
+ * @since 1.0, 2023-01-11 03:27:23
  */
 public class AlipayInsMarketingDiscountPreuseRequest implements AlipayRequest<AlipayInsMarketingDiscountPreuseResponse> {
 

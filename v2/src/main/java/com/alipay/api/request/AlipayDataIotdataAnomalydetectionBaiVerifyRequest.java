@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.iotdata.anomalydetection.bai.verify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:39:26
+ * @since 1.0, 2023-01-10 22:45:06
  */
 public class AlipayDataIotdataAnomalydetectionBaiVerifyRequest implements AlipayRequest<AlipayDataIotdataAnomalydetectionBaiVerifyResponse> {
 

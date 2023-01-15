@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 棋盘人群洞察画像值
  *
  * @author auto create
- * @since 1.0, 2022-12-30 15:23:19
+ * @since 1.0, 2023-01-12 20:57:15
  */
 public class PortraitValue extends AlipayObject {
 
-	private static final long serialVersionUID = 5335122187942161849L;
+	private static final long serialVersionUID = 6512961686263697731L;
 
 	/**
 	 * 棋盘人群画像值对应的数量

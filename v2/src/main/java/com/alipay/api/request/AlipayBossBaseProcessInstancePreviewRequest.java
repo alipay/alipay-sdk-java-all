@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.process.instance.preview request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 13:33:25
+ * @since 1.0, 2023-01-11 08:09:05
  */
 public class AlipayBossBaseProcessInstancePreviewRequest implements AlipayRequest<AlipayBossBaseProcessInstancePreviewResponse> {
 

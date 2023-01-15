@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlaw.orderhitstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:30:26
+ * @since 1.0, 2023-01-11 08:00:05
  */
 public class AlipayBossProdAntlawOrderhitstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8444579148789168341L;
+	private static final long serialVersionUID = 4271733255955855562L;
 
 	/** 
 	 * 是否存在有效的纸质用印, true表示存在, false表示不存在

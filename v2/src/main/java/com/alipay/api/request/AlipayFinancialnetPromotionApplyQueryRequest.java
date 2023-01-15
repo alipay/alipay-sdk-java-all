@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.promotion.apply.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:07:05
+ * @since 1.0, 2023-01-11 02:16:39
  */
 public class AlipayFinancialnetPromotionApplyQueryRequest implements AlipayRequest<AlipayFinancialnetPromotionApplyQueryResponse> {
 

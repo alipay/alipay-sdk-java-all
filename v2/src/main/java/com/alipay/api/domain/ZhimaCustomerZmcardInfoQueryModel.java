@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻证信息查询
  *
  * @author auto create
- * @since 1.0, 2022-11-14 20:59:14
+ * @since 1.0, 2023-01-13 00:01:57
  */
 public class ZhimaCustomerZmcardInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8665182897274134949L;
+	private static final long serialVersionUID = 5491587816381996245L;
 
 	/**
 	 * 特性列表 默认不用传

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融订单资产转让
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:59:03
+ * @since 1.0, 2023-01-06 15:21:43
  */
 public class MybankCreditSceneprodLoanAssetTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7216252359993248561L;
+	private static final long serialVersionUID = 5735527917115759969L;
 
 	/**
 	 * 接收资产方的网商银行账户, 内标，200开头，不是8888开头的

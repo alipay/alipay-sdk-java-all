@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.prodpaas.grmcore.sr.invalid request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 12:19:58
+ * @since 1.0, 2023-01-11 08:09:21
  */
 public class AntProdpaasGrmcoreSrInvalidRequest implements AlipayRequest<AntProdpaasGrmcoreSrInvalidResponse> {
 

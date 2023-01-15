@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康险赠险权益查询接口
  *
  * @author auto create
- * @since 1.0, 2022-09-21 10:55:43
+ * @since 1.0, 2023-01-10 20:48:21
  */
 public class AlipayInsSceneHealthGiftQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1447347828378818983L;
+	private static final long serialVersionUID = 2426852786863544914L;
 
 	/**
 	 * 查询某范围内某渠道领取的保额的止期，注意，只对sourceGainedSumInsured字段生效
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 用户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 赠险的产品组标识，例如免费医疗金的COMMON_GIFT_INSURANCE_PRODUCT_GROUP
@@ -50,6 +56,13 @@ public class AlipayInsSceneHealthGiftQueryModel extends AlipayObject {
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProductGroupBizType() {

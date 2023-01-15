@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 农村埋点信息
  *
  * @author auto create
- * @since 1.0, 2021-12-22 10:14:01
+ * @since 1.0, 2023-01-11 16:49:28
  */
 public class MybankCreditLoanapplyBkruralindustryTrackAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8318428272198792694L;
+	private static final long serialVersionUID = 5556255565694854872L;
 
 	/**
 	 * 业务编号
@@ -30,6 +30,12 @@ public class MybankCreditLoanapplyBkruralindustryTrackAddModel extends AlipayObj
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 代表唯一的请求
@@ -74,6 +80,13 @@ public class MybankCreditLoanapplyBkruralindustryTrackAddModel extends AlipayObj
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRequestId() {

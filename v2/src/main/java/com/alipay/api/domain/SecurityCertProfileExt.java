@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 密钥证书的配置信息
  *
  * @author auto create
- * @since 1.0, 2022-11-02 15:42:15
+ * @since 1.0, 2023-01-12 13:29:25
  */
 public class SecurityCertProfileExt extends AlipayObject {
 
-	private static final long serialVersionUID = 6415644741194267427L;
+	private static final long serialVersionUID = 7879342512829712263L;
 
 	/**
 	 * 账号类型

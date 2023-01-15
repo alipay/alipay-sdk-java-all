@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 专家问诊医生状态实时同步接口
  *
  * @author auto create
- * @since 1.0, 2022-12-27 11:50:49
+ * @since 1.0, 2023-01-12 20:13:20
  */
 public class AlipayCommerceMedicalIndustrydataInquirydoctorstatusUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5113961371663762761L;
+	private static final long serialVersionUID = 7823191656275217434L;
 
 	/**
 	 * 医生问诊状态信息列表

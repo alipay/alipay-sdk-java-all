@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 作物统计信息
  *
  * @author auto create
- * @since 1.0, 2022-10-14 19:06:37
+ * @since 1.0, 2023-01-13 16:25:36
  */
 public class CropsStatisticsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5186948212548493221L;
+	private static final long serialVersionUID = 2851665428947918483L;
 
 	/**
 	 * 附加信息
@@ -53,10 +53,22 @@ public class CropsStatisticsInfo extends AlipayObject {
 	private String growthGeneralAreaSum;
 
 	/**
+	 * 长势一般地块数
+	 */
+	@ApiField("growth_general_plot_count")
+	private Long growthGeneralPlotCount;
+
+	/**
 	 * 长势较强面积
 	 */
 	@ApiField("growth_stronger_area_sum")
 	private String growthStrongerAreaSum;
+
+	/**
+	 * 长势较强地块数
+	 */
+	@ApiField("growth_stronger_plot_count")
+	private Long growthStrongerPlotCount;
 
 	/**
 	 * 长势极强面积
@@ -65,16 +77,34 @@ public class CropsStatisticsInfo extends AlipayObject {
 	private String growthStrongestAreaSum;
 
 	/**
+	 * 长势极强地块数
+	 */
+	@ApiField("growth_strongest_plot_count")
+	private Long growthStrongestPlotCount;
+
+	/**
 	 * 长势较弱面积
 	 */
 	@ApiField("growth_weaker_area_sum")
 	private String growthWeakerAreaSum;
 
 	/**
+	 * 长势较弱地块数
+	 */
+	@ApiField("growth_weaker_plot_count")
+	private Long growthWeakerPlotCount;
+
+	/**
 	 * 长势极弱种植面积
 	 */
 	@ApiField("growth_weakest_area_sum")
 	private String growthWeakestAreaSum;
+
+	/**
+	 * 长势极弱地块数
+	 */
+	@ApiField("growth_weakest_plot_count")
+	private Long growthWeakestPlotCount;
 
 	/**
 	 * 收割进度值，单位0～1
@@ -203,11 +233,25 @@ public class CropsStatisticsInfo extends AlipayObject {
 		this.growthGeneralAreaSum = growthGeneralAreaSum;
 	}
 
+	public Long getGrowthGeneralPlotCount() {
+		return this.growthGeneralPlotCount;
+	}
+	public void setGrowthGeneralPlotCount(Long growthGeneralPlotCount) {
+		this.growthGeneralPlotCount = growthGeneralPlotCount;
+	}
+
 	public String getGrowthStrongerAreaSum() {
 		return this.growthStrongerAreaSum;
 	}
 	public void setGrowthStrongerAreaSum(String growthStrongerAreaSum) {
 		this.growthStrongerAreaSum = growthStrongerAreaSum;
+	}
+
+	public Long getGrowthStrongerPlotCount() {
+		return this.growthStrongerPlotCount;
+	}
+	public void setGrowthStrongerPlotCount(Long growthStrongerPlotCount) {
+		this.growthStrongerPlotCount = growthStrongerPlotCount;
 	}
 
 	public String getGrowthStrongestAreaSum() {
@@ -217,6 +261,13 @@ public class CropsStatisticsInfo extends AlipayObject {
 		this.growthStrongestAreaSum = growthStrongestAreaSum;
 	}
 
+	public Long getGrowthStrongestPlotCount() {
+		return this.growthStrongestPlotCount;
+	}
+	public void setGrowthStrongestPlotCount(Long growthStrongestPlotCount) {
+		this.growthStrongestPlotCount = growthStrongestPlotCount;
+	}
+
 	public String getGrowthWeakerAreaSum() {
 		return this.growthWeakerAreaSum;
 	}
@@ -224,11 +275,25 @@ public class CropsStatisticsInfo extends AlipayObject {
 		this.growthWeakerAreaSum = growthWeakerAreaSum;
 	}
 
+	public Long getGrowthWeakerPlotCount() {
+		return this.growthWeakerPlotCount;
+	}
+	public void setGrowthWeakerPlotCount(Long growthWeakerPlotCount) {
+		this.growthWeakerPlotCount = growthWeakerPlotCount;
+	}
+
 	public String getGrowthWeakestAreaSum() {
 		return this.growthWeakestAreaSum;
 	}
 	public void setGrowthWeakestAreaSum(String growthWeakestAreaSum) {
 		this.growthWeakestAreaSum = growthWeakestAreaSum;
+	}
+
+	public Long getGrowthWeakestPlotCount() {
+		return this.growthWeakestPlotCount;
+	}
+	public void setGrowthWeakestPlotCount(Long growthWeakestPlotCount) {
+		this.growthWeakestPlotCount = growthWeakestPlotCount;
 	}
 
 	public String getHarvestProgressValue() {

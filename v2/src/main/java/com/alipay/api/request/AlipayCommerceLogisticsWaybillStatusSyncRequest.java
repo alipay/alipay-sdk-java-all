@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.waybill.status.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-12-15 16:41:38
+ * @since 1.0, 2023-01-11 02:56:37
  */
 public class AlipayCommerceLogisticsWaybillStatusSyncRequest implements AlipayRequest<AlipayCommerceLogisticsWaybillStatusSyncResponse> {
 

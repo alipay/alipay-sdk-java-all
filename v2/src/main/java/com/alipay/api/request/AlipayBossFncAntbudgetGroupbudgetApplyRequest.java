@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.antbudget.groupbudget.apply request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 14:22:24
+ * @since 1.0, 2023-01-11 07:35:57
  */
 public class AlipayBossFncAntbudgetGroupbudgetApplyRequest implements AlipayRequest<AlipayBossFncAntbudgetGroupbudgetApplyResponse> {
 

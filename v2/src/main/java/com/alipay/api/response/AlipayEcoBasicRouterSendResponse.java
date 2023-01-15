@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.basic.router.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:57:16
+ * @since 1.0, 2023-01-11 03:49:51
  */
 public class AlipayEcoBasicRouterSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8746696687593175114L;
+	private static final long serialVersionUID = 5128859177287263948L;
 
 	/** 
 	 * 路由返回的数据

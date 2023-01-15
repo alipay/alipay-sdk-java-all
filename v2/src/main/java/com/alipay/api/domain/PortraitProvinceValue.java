@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 常住省市画像数据结构-省级结构
  *
  * @author auto create
- * @since 1.0, 2023-01-03 20:19:32
+ * @since 1.0, 2023-01-12 20:45:49
  */
 public class PortraitProvinceValue extends AlipayObject {
 
-	private static final long serialVersionUID = 7314952732377861981L;
+	private static final long serialVersionUID = 1866772451768978482L;
 
 	/**
 	 * 国标地区编码

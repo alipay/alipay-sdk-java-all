@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ad.stocktask.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:43:18
+ * @since 1.0, 2023-01-11 04:26:42
  */
 public class AlipayCommerceTransportAdStocktaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2628747838353635773L;
+	private static final long serialVersionUID = 4394858116682583857L;
 
 	/** 
 	 * 库存任务执行情况

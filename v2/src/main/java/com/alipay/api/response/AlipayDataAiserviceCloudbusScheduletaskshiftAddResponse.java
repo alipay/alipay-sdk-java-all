@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.cloudbus.scheduletaskshift.add response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:23:02
+ * @since 1.0, 2023-01-11 06:05:34
  */
 public class AlipayDataAiserviceCloudbusScheduletaskshiftAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3196875839828917716L;
+	private static final long serialVersionUID = 5669654664339194164L;
 
 	/** 
 	 * 结果

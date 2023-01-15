@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.marketing.gift.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-14 14:53:50
+ * @since 1.0, 2023-01-11 08:51:44
  */
 public class AlipayInsMarketingGiftQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7467418418351517884L;
+	private static final long serialVersionUID = 7843594163111669948L;
 
 	/** 
 	 * 渠道规则码
@@ -28,6 +28,12 @@ public class AlipayInsMarketingGiftQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("gift_prod_code")
 	private String giftProdCode;
+
+	/** 
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 是否开通
@@ -60,6 +66,13 @@ public class AlipayInsMarketingGiftQueryResponse extends AlipayResponse {
 	}
 	public String getGiftProdCode( ) {
 		return this.giftProdCode;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOpened(Boolean opened) {

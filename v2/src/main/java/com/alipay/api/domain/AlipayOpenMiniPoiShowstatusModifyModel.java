@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序修改POI展示状态
  *
  * @author auto create
- * @since 1.0, 2018-12-29 16:33:30
+ * @since 1.0, 2023-01-09 11:43:17
  */
 public class AlipayOpenMiniPoiShowstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6541971996726245353L;
+	private static final long serialVersionUID = 7879131179386343299L;
 
 	/**
 	 * poi id，地理位置标记信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序查询POI信息
  *
  * @author auto create
- * @since 1.0, 2018-12-29 16:33:02
+ * @since 1.0, 2023-01-09 11:43:27
  */
 public class AlipayOpenMiniPoiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5496765569322965162L;
+	private static final long serialVersionUID = 2458125642485145269L;
 
 	/**
 	 * 页码，起始页码为1

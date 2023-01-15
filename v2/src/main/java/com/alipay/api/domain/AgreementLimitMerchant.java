@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权商户列表信息
  *
  * @author auto create
- * @since 1.0, 2023-01-04 18:30:29
+ * @since 1.0, 2023-01-10 21:15:15
  */
 public class AgreementLimitMerchant extends AlipayObject {
 
-	private static final long serialVersionUID = 4852491341433834297L;
+	private static final long serialVersionUID = 4459911225319259256L;
 
 	/**
 	 * 授权商户id

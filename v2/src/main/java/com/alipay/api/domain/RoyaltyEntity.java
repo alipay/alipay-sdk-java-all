@@ -7,22 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账主体信息
  *
  * @author auto create
- * @since 1.0, 2022-12-21 14:36:19
+ * @since 1.0, 2023-01-11 11:58:27
  */
 public class RoyaltyEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 5612539826293395829L;
+	private static final long serialVersionUID = 2386431888242757939L;
 
 	/**
-	 * 分账接收方账号。
-当分账方类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；
-当分账方类型是loginName时，本参数为用户的支付宝登录号。
+	 * 分账接收方账号。 当分账方类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字； 当分账方类型是loginName时，本参数为用户的支付宝登录号；当分账方类型是openId时，本参数传递支付宝openId信息。
 	 */
 	@ApiField("account")
 	private String account;
 
 	/**
-	 * 分账接收方OpenId。本参数为分账接收方在该应用（AppId）下的唯一用户标识。
+	 * 分账接收方openId，本参数为分账接收方在该应用（AppId）下的唯一用户标识，仅用于分账关系查询接口出参。
 	 */
 	@ApiField("account_open_id")
 	private String accountOpenId;
@@ -56,8 +54,7 @@ public class RoyaltyEntity extends AlipayObject {
 	private String name;
 
 	/**
-	 * 分账接收方方类型。
-userId：表示是支付宝账号对应的支付宝唯一用户号；loginName：表示是支付宝登录号
+	 * 分账接收方方类型。 userId：表示是支付宝账号对应的支付宝唯一用户号；loginName：表示是支付宝登录号；openId：表示支付宝openId。
 	 */
 	@ApiField("type")
 	private String type;

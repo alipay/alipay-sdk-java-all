@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.data.info.ipaddrinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:25:53
+ * @since 1.0, 2023-01-11 04:29:07
  */
 public class AlipaySecurityDataInfoIpaddrinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6179417298299448834L;
+	private static final long serialVersionUID = 2852167312497692725L;
 
 	/** 
 	 * ip_addr_lbs_info:IP地址归属地对象。其中province为IP地址归属地的省，city为IP地址归属地的城市

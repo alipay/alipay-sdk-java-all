@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.invoice.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:11:39
+ * @since 1.0, 2023-01-11 07:04:31
  */
 public class AlipayBossFncGfsettleprodInvoiceDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1524624684287134658L;
+	private static final long serialVersionUID = 8223144154714964543L;
 
 	
 

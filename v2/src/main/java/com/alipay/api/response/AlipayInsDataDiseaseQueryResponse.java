@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.disease.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:41:15
+ * @since 1.0, 2023-01-11 05:06:34
  */
 public class AlipayInsDataDiseaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7361281351427842199L;
+	private static final long serialVersionUID = 2513376551763551613L;
 
 	/** 
 	 * 匹配的疾病

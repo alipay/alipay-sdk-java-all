@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antarchive.custrelation.add request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 20:31:31
+ * @since 1.0, 2023-01-10 23:36:46
  */
 public class AlipayUserAntarchiveCustrelationAddRequest implements AlipayRequest<AlipayUserAntarchiveCustrelationAddResponse> {
 

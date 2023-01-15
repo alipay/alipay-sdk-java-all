@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.recruitenrolledinfo.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:37:32
+ * @since 1.0, 2023-01-11 08:09:53
  */
 public class AlipayCommerceYuntaskRecruitenrolledinfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4431973496542637241L;
+	private static final long serialVersionUID = 5778136473868883734L;
 
 	/** 
 	 * 招商报名记录

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.rate.currency.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-12-29 14:07:56
+ * @since 1.0, 2023-01-11 06:08:17
  */
 public class AlipayOverseasTravelRateCurrencyBatchqueryRequest implements AlipayRequest<AlipayOverseasTravelRateCurrencyBatchqueryResponse> {
 

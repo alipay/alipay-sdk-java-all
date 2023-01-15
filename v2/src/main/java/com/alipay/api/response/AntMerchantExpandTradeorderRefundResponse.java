@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.tradeorder.refund response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:35:56
+ * @since 1.0, 2023-01-11 04:39:17
  */
 public class AntMerchantExpandTradeorderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5262958682186976929L;
+	private static final long serialVersionUID = 4358362288638862347L;
 
 	/** 
 	 * 买家ID

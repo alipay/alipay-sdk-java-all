@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.deduct.sign response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-20 12:10:48
+ * @since 1.0, 2023-01-11 01:56:41
  */
 public class AlipayEbppInstserviceDeductSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3672394359543749147L;
+	private static final long serialVersionUID = 8738754551269524541L;
 
 	/** 
 	 * 错误码

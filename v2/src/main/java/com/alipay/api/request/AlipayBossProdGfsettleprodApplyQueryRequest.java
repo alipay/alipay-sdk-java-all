@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.gfsettleprod.apply.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:36:17
+ * @since 1.0, 2023-01-11 07:42:27
  */
 public class AlipayBossProdGfsettleprodApplyQueryRequest implements AlipayRequest<AlipayBossProdGfsettleprodApplyQueryResponse> {
 

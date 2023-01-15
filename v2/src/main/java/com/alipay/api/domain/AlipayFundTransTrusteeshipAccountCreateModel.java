@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建托管账号接口
  *
  * @author auto create
- * @since 1.0, 2022-12-16 16:13:59
+ * @since 1.0, 2023-01-09 15:59:51
  */
 public class AlipayFundTransTrusteeshipAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5179349879428978265L;
+	private static final long serialVersionUID = 2524281614161534135L;
 
 	/**
 	 * 开户产品码，开户的具体业务类型
@@ -24,6 +24,12 @@ public class AlipayFundTransTrusteeshipAccountCreateModel extends AlipayObject {
 	 */
 	@ApiField("account_scene_code")
 	private String accountSceneCode;
+
+	/**
+	 * 支付宝用户openid
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝用户id
@@ -58,6 +64,13 @@ public class AlipayFundTransTrusteeshipAccountCreateModel extends AlipayObject {
 	}
 	public void setAccountSceneCode(String accountSceneCode) {
 		this.accountSceneCode = accountSceneCode;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAlipayUserId() {

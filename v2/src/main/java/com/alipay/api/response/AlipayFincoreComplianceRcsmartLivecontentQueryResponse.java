@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.rcsmart.livecontent.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 14:36:41
+ * @since 1.0, 2023-01-11 01:41:44
  */
 public class AlipayFincoreComplianceRcsmartLivecontentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4566441113713711975L;
+	private static final long serialVersionUID = 5415524785814624429L;
 
 	/** 
 	 * 直播信息列表

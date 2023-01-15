@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.open.app.risktag.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 00:24:36
+ * @since 1.0, 2023-01-11 08:23:22
  */
 public class ZhimaOpenAppRisktagQueryRequest implements AlipayRequest<ZhimaOpenAppRisktagQueryResponse> {
 

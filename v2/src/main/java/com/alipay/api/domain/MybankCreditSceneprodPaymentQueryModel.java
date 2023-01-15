@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融代收付结果查询
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:37:34
+ * @since 1.0, 2023-01-09 17:28:58
  */
 public class MybankCreditSceneprodPaymentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6731917479832729768L;
+	private static final long serialVersionUID = 2656242599657723356L;
 
 	/**
 	 * 网商内部代收付申请单编号，外部机构根据此编号查询申请状态。

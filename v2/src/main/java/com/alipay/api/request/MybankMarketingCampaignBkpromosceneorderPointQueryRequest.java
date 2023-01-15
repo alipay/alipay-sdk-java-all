@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.marketing.campaign.bkpromosceneorder.point.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:39:18
+ * @since 1.0, 2023-01-11 08:26:03
  */
 public class MybankMarketingCampaignBkpromosceneorderPointQueryRequest implements AlipayRequest<MybankMarketingCampaignBkpromosceneorderPointQueryResponse> {
 

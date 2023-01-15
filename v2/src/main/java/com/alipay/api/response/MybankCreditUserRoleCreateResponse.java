@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.user.role.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:36:04
+ * @since 1.0, 2023-01-13 14:51:37
  */
 public class MybankCreditUserRoleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8491473171974178995L;
+	private static final long serialVersionUID = 5782295948159863148L;
 
 	/** 
 	 * 参与者

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.testplatform.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:00:14
+ * @since 1.0, 2023-01-11 01:15:50
  */
 public class AnttechOceanbaseTestplatformTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2249958461542427115L;
+	private static final long serialVersionUID = 3334242447225224573L;
 
 	/** 
 	 * 提测代码的分支

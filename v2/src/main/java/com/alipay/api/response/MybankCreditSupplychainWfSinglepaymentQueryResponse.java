@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.singlepayment.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 00:09:13
+ * @since 1.0, 2023-01-11 00:55:38
  */
 public class MybankCreditSupplychainWfSinglepaymentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7446844522168969261L;
+	private static final long serialVersionUID = 8418311391828834366L;
 
 	/** 
 	 * 未还清总金额

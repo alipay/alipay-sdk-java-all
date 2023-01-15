@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.charity.commonweal.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:11:39
+ * @since 1.0, 2023-01-11 02:01:44
  */
 public class AlipayUserCharityCommonwealCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2128958237121327585L;
+	private static final long serialVersionUID = 3785967238514878644L;
 
 	
 

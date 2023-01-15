@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 酒店住中订单同步
  *
  * @author auto create
- * @since 1.0, 2022-10-27 14:20:16
+ * @since 1.0, 2023-01-06 15:54:52
  */
 public class AlipayBusinessOrderCheckinOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6398653862264628146L;
+	private static final long serialVersionUID = 1479942676556949684L;
 
 	/**
 	 * 酒店入住小程序
@@ -48,7 +48,7 @@ public class AlipayBusinessOrderCheckinOrderinfoSyncModel extends AlipayObject {
 	private String checkOutTime;
 
 	/**
-	 * 扩展信息
+	 * 扩展信息。回流的key值请提前联系支付宝侧人员配置，否则回流的key值不会被消费。
 	 */
 	@ApiListField("ext_info")
 	@ApiField("scenic_ext_info")
@@ -137,7 +137,7 @@ CHECK_OUT 离店
 	private String remindLink;
 
 	/**
-	 * 酒店入住信息，包含房型信息和入住人。
+	 * 酒店入住信息，包含房型信息和入住人。最大长度均限制为5，超出部分不会被消费。
 	 */
 	@ApiListField("room_info")
 	@ApiField("hotel_room_info")

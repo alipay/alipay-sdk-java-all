@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.iotdata.bai.cargocount.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:48:15
+ * @since 1.0, 2023-01-10 22:50:12
  */
 public class AlipayDataIotdataBaiCargocountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2414734436625265341L;
+	private static final long serialVersionUID = 2438483334298669978L;
 
 	/** 
 	 * JSON字符串，包含盘点结果详情，如检测到每个货物的中心点坐标

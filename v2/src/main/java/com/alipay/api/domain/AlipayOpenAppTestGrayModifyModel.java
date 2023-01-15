@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * put
  *
  * @author auto create
- * @since 1.0, 2022-11-14 22:06:38
+ * @since 1.0, 2023-01-09 15:57:19
  */
 public class AlipayOpenAppTestGrayModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6544184155829899795L;
+	private static final long serialVersionUID = 1358164323334274589L;
 
 	/**
 	 * 详细地址
@@ -42,6 +42,12 @@ public class AlipayOpenAppTestGrayModifyModel extends AlipayObject {
 	 */
 	@ApiField("d")
 	private String d;
+
+	/**
+	 * 1
+	 */
+	@ApiField("e")
+	private String e;
 
 	/**
 	 * 1
@@ -88,6 +94,13 @@ public class AlipayOpenAppTestGrayModifyModel extends AlipayObject {
 	}
 	public void setD(String d) {
 		this.d = d;
+	}
+
+	public String getE() {
+		return this.e;
+	}
+	public void setE(String e) {
+		this.e = e;
 	}
 
 	public String getOpenId() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.account.fundcomposition.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-30 14:46:38
+ * @since 1.0, 2023-01-11 03:06:47
  */
 public class AlipayTradeAccountFundcompositionQueryRequest implements AlipayRequest<AlipayTradeAccountFundcompositionQueryResponse> {
 

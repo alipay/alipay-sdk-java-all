@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业信息
  *
  * @author auto create
- * @since 1.0, 2022-09-19 22:37:07
+ * @since 1.0, 2023-01-06 14:03:50
  */
 public class EnterpriseInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3874793437737169858L;
+	private static final long serialVersionUID = 8789331723754281883L;
 
 	/**
 	 * 账户id
@@ -26,6 +26,12 @@ public class EnterpriseInfoDTO extends AlipayObject {
 	 */
 	@ApiField("activate")
 	private String activate;
+
+	/**
+	 * 企业认证等级 10初级认证  30 高级认证
+	 */
+	@ApiField("auth_level")
+	private String authLevel;
 
 	/**
 	 * 认证状态 
@@ -118,6 +124,13 @@ NO_AUTH：未认证 IN_AUTH：认证中 HAS_AUTH：已认证
 	}
 	public void setActivate(String activate) {
 		this.activate = activate;
+	}
+
+	public String getAuthLevel() {
+		return this.authLevel;
+	}
+	public void setAuthLevel(String authLevel) {
+		this.authLevel = authLevel;
 	}
 
 	public String getAuthStatus() {

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.quotation.protocol.authorize.unsubscribe response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 13:01:41
+ * @since 1.0, 2023-01-11 01:56:42
  */
 public class AlipayFinanceQuotationProtocolAuthorizeUnsubscribeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6626565935177713766L;
+	private static final long serialVersionUID = 2529454572636489949L;
 
 	/** 
 	 * 协议最终是否订阅的结果

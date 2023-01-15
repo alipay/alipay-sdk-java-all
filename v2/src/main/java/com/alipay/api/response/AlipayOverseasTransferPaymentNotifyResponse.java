@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.transfer.payment.notify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:41:21
+ * @since 1.0, 2023-01-11 06:37:25
  */
 public class AlipayOverseasTransferPaymentNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7141511358749625857L;
+	private static final long serialVersionUID = 4515288353292752345L;
 
 	/** 
 	 * 扩展字段

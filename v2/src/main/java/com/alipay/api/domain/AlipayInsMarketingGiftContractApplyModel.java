@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 赠险合约保单开通
  *
  * @author auto create
- * @since 1.0, 2022-09-20 10:58:34
+ * @since 1.0, 2023-01-10 20:46:41
  */
 public class AlipayInsMarketingGiftContractApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5168651998514543224L;
+	private static final long serialVersionUID = 6296439294164472359L;
 
 	/**
 	 * 租客等信息
@@ -48,6 +48,12 @@ public class AlipayInsMarketingGiftContractApplyModel extends AlipayObject {
 	 */
 	@ApiField("ins_apply_product_coverage_dto")
 	private InsApplyProductCoverageDTO insApplyProductCoverageDto;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -125,6 +131,13 @@ public class AlipayInsMarketingGiftContractApplyModel extends AlipayObject {
 	}
 	public void setInsApplyProductCoverageDto(InsApplyProductCoverageDTO insApplyProductCoverageDto) {
 		this.insApplyProductCoverageDto = insApplyProductCoverageDto;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

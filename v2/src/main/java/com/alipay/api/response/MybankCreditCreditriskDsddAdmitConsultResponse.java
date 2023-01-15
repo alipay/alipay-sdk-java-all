@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.creditrisk.dsdd.admit.consult response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:17:24
+ * @since 1.0, 2023-01-11 05:44:55
  */
 public class MybankCreditCreditriskDsddAdmitConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8312856612567661998L;
+	private static final long serialVersionUID = 3725164416313747144L;
 
 	/** 
 	 * 在status为ADMIT时，此字段必填。

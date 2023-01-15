@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 趋势图对象
  *
  * @author auto create
- * @since 1.0, 2022-12-30 18:02:44
+ * @since 1.0, 2023-01-12 20:52:43
  */
 public class IndexTrendVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5136991965759812983L;
+	private static final long serialVersionUID = 5237819796327515546L;
 
 	/**
 	 * 一个数据对应的结束日期（含边界），格式yyyymmdd

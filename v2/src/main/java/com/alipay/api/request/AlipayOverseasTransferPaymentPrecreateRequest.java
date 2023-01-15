@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.transfer.payment.precreate request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:28:58
+ * @since 1.0, 2023-01-10 23:42:07
  */
 public class AlipayOverseasTransferPaymentPrecreateRequest implements AlipayRequest<AlipayOverseasTransferPaymentPrecreateResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.priceoptimizer.get request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:38:22
+ * @since 1.0, 2023-01-11 05:18:55
  */
 public class AlipayDataAiservicePriceoptimizerGetRequest implements AlipayRequest<AlipayDataAiservicePriceoptimizerGetResponse> {
 

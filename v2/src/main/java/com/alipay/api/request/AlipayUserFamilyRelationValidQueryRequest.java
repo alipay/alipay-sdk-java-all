@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.family.relation.valid.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-03 18:10:11
+ * @since 1.0, 2023-01-11 08:16:22
  */
 public class AlipayUserFamilyRelationValidQueryRequest implements AlipayRequest<AlipayUserFamilyRelationValidQueryResponse> {
 

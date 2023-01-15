@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.autocheck.case.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 16:21:44
+ * @since 1.0, 2023-01-11 01:36:46
  */
 public class AlipayOpenMiniAutocheckCaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8285912959692669245L;
+	private static final long serialVersionUID = 8616173198681368264L;
 
 	/** 
 	 * 业务线

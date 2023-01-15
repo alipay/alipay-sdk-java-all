@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.digitalidentity.healthcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:19:11
+ * @since 1.0, 2023-01-10 23:49:23
  */
 public class AlipayUserDigitalidentityHealthcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1357544292413767162L;
+	private static final long serialVersionUID = 3837787672576391675L;
 
 	/** 
 	 * 健康卡输出聚合信息

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.text.voice.notify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:49:27
+ * @since 1.0, 2023-01-10 22:35:10
  */
 public class AlipayEcoTextVoiceNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2273193688738975854L;
+	private static final long serialVersionUID = 8253544417651987353L;
 
 	
 

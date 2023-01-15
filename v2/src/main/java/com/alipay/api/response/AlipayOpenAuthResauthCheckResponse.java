@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.auth.resauth.check response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:22:33
+ * @since 1.0, 2023-01-11 08:13:57
  */
 public class AlipayOpenAuthResauthCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7547888242345569538L;
+	private static final long serialVersionUID = 3764478341442593784L;
 
 	/** 
 	 * 是否授权，1：授权/0：未授权

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.world.cardscript.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:53:01
+ * @since 1.0, 2023-01-10 22:48:04
  */
 public class AlipayCommerceTransportWorldCardscriptQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1248743594126348743L;
+	private static final long serialVersionUID = 4662192621857134197L;
 
 	/** 
 	 * 查询脚本的时间

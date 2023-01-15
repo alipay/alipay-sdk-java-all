@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.user.oil.exchange response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-14 14:54:57
+ * @since 1.0, 2023-01-10 22:25:45
  */
 public class AlipayInsAutoUserOilExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2572717946779383887L;
+	private static final long serialVersionUID = 3589542134183796116L;
 
 	
 

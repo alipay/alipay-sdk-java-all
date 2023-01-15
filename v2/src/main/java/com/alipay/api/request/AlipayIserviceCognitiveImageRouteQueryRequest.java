@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.cognitive.image.route.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 13:10:58
+ * @since 1.0, 2023-01-11 04:25:05
  */
 public class AlipayIserviceCognitiveImageRouteQueryRequest implements AlipayRequest<AlipayIserviceCognitiveImageRouteQueryResponse> {
 

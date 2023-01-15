@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.mindv.jobsbyuser.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:52:39
+ * @since 1.0, 2023-01-11 04:24:33
  */
 public class AlipayIserviceMindvJobsbyuserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1542672818568689263L;
+	private static final long serialVersionUID = 7498112687663854928L;
 
 	/** 
 	 * 用户填写的任务id列表

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.bpaas.service.bind response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:53:38
+ * @since 1.0, 2023-01-11 00:06:46
  */
 public class AlipayOpenBpaasServiceBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8253685627611911442L;
+	private static final long serialVersionUID = 3254164443686671169L;
 
 	
 

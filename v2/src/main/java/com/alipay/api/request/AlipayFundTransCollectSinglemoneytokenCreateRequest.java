@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.collect.singlemoneytoken.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 00:53:23
+ * @since 1.0, 2023-01-11 04:19:44
  */
 public class AlipayFundTransCollectSinglemoneytokenCreateRequest implements AlipayRequest<AlipayFundTransCollectSinglemoneytokenCreateResponse> {
 

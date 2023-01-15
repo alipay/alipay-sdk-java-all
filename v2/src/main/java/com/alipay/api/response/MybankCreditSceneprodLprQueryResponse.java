@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.lpr.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:14:41
+ * @since 1.0, 2023-01-10 23:59:18
  */
 public class MybankCreditSceneprodLprQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7865575414711217184L;
+	private static final long serialVersionUID = 1553791698852736897L;
 
 	/** 
 	 * 贷款利率基于LPR基准利率数据。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.cognitive.ocr.vehicledashboard.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:42:55
+ * @since 1.0, 2023-01-10 22:13:28
  */
 public class AlipayIserviceCognitiveOcrVehicledashboardQueryRequest implements AlipayRequest<AlipayIserviceCognitiveOcrVehicledashboardQueryResponse> {
 

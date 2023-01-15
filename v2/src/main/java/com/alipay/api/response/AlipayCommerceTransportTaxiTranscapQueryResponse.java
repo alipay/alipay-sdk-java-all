@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.taxi.transcap.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:26:48
+ * @since 1.0, 2023-01-11 08:41:49
  */
 public class AlipayCommerceTransportTaxiTranscapQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8123772954831176484L;
+	private static final long serialVersionUID = 5368562329722931419L;
 
 	/** 
 	 * 车牌号

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.authorize.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:07:19
+ * @since 1.0, 2023-01-10 16:51:37
  */
 public class AlipayFundFlexiblestaffingAuthorizeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4552394947431984718L;
+	private static final long serialVersionUID = 6753392849312728846L;
 
 	/** 
 	 * 授权时间，格式：yyyy-MM-dd HH:mm:ss
@@ -43,6 +43,12 @@ public class AlipayFundFlexiblestaffingAuthorizeQueryResponse extends AlipayResp
 	 */
 	@ApiField("principal_id")
 	private String principalId;
+
+	/** 
+	 * 授权主体的openId，当当前AppId支持openId时，返回openId，否则默认为空
+	 */
+	@ApiField("principal_open_id")
+	private String principalOpenId;
 
 	/** 
 	 * 灵工授权产品码
@@ -89,6 +95,13 @@ public class AlipayFundFlexiblestaffingAuthorizeQueryResponse extends AlipayResp
 	}
 	public String getPrincipalId( ) {
 		return this.principalId;
+	}
+
+	public void setPrincipalOpenId(String principalOpenId) {
+		this.principalOpenId = principalOpenId;
+	}
+	public String getPrincipalOpenId( ) {
+		return this.principalOpenId;
 	}
 
 	public void setProductCode(String productCode) {

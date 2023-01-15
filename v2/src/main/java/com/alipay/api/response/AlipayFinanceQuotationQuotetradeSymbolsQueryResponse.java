@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.quotation.quotetrade.symbols.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 12:17:44
+ * @since 1.0, 2023-01-10 23:55:33
  */
 public class AlipayFinanceQuotationQuotetradeSymbolsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3268189196653241622L;
+	private static final long serialVersionUID = 8566651829732631356L;
 
 	/** 
 	 * 股票的唯一代码：symbol=code.market

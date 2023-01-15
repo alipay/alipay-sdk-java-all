@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.taskflow.batch.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 17:41:42
+ * @since 1.0, 2023-01-11 09:51:39
  */
 public class AlipayInsSceneTaskflowBatchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1875341155184734491L;
+	private static final long serialVersionUID = 6549342785671336532L;
 
 	/** 
 	 * 任务流水列表

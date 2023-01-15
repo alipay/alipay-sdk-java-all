@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.iris.verify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 20:53:36
+ * @since 1.0, 2023-01-11 03:32:28
  */
 public class AlipaySecurityProdIrisVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5433281196757287682L;
+	private static final long serialVersionUID = 1161293424642469687L;
 
 	/** 
 	 * 虹膜校验关联token，用于二次校验

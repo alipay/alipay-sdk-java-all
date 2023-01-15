@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.amount.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:22:37
+ * @since 1.0, 2023-01-11 00:10:32
  */
 public class AlipayOverseasOpenAmountPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7274715787998696987L;
+	private static final long serialVersionUID = 1852755733748449681L;
 
 	/** 
 	 * 缴费金额信息

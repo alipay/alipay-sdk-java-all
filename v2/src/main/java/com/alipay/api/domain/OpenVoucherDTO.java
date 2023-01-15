@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券信息vo
  *
  * @author auto create
- * @since 1.0, 2023-01-04 15:22:42
+ * @since 1.0, 2023-01-13 14:14:28
  */
 public class OpenVoucherDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3131921575591228194L;
+	private static final long serialVersionUID = 1585648855819535649L;
 
 	/**
 	 * 可用金额，单位元
@@ -56,6 +56,12 @@ public class OpenVoucherDTO extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 券产品编码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 券状态
@@ -134,6 +140,13 @@ public class OpenVoucherDTO extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getStatus() {

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.entertainment.order.upload response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:02:06
+ * @since 1.0, 2023-01-11 03:54:08
  */
 public class AlipayEcoEntertainmentOrderUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4711452942582179921L;
+	private static final long serialVersionUID = 1322844214163487634L;
 
 	
 

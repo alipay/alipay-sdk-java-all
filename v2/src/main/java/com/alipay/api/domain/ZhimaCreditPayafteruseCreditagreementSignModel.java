@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5882885333151943891L;
+	private static final long serialVersionUID = 3643565275916845533L;
 
 	/**
 	 * 当用户进入信用服务开通/授权页面后，点击左上角的回退按钮，中断开通流程，跳转回商户的页面地址。支持scheme协议。不传该链接时，默认返回上一级页面，由外部app唤起支付宝的情况，会返回支付宝首页。
@@ -50,7 +50,7 @@ public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject
 	private String productCode;
 
 	/**
-	 * 用户成功完成信用服务开通/授权流程后，跳转回商户的页面地址。支持scheme协议。不传该链接时，默认返回上一级页面，由外部app 唤起支付宝的情况，会返回支付宝首页。
+	 * 用户信用服务开通流程结束后，不区分用户开通成功/失败，跳转回商家页面，该字段代表跳转回商家的页面地址。支持scheme协议。不传该链接时，默认返回上一级页面，由外部app唤起支付宝的情况，会返回支付宝首页。
 	 */
 	@ApiField("return_back_link")
 	private String returnBackLink;

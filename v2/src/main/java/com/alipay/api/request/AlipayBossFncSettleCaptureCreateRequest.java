@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.settle.capture.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:31:20
+ * @since 1.0, 2023-01-10 23:08:18
  */
 public class AlipayBossFncSettleCaptureCreateRequest implements AlipayRequest<AlipayBossFncSettleCaptureCreateResponse> {
 

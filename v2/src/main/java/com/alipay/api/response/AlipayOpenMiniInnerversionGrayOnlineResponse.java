@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerversion.gray.online response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:29:46
+ * @since 1.0, 2023-01-11 01:23:05
  */
 public class AlipayOpenMiniInnerversionGrayOnlineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6384285754966954312L;
+	private static final long serialVersionUID = 5446193483932269532L;
 
 	
 

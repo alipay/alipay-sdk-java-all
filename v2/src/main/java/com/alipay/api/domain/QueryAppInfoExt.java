@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 包含了一个应用的基本信息, 如应用名称等
  *
  * @author auto create
- * @since 1.0, 2022-11-02 15:36:17
+ * @since 1.0, 2023-01-12 13:29:30
  */
 public class QueryAppInfoExt extends AlipayObject {
 
-	private static final long serialVersionUID = 4751539328653873765L;
+	private static final long serialVersionUID = 3592742668674565133L;
 
 	/**
 	 * 该应用的应用名称

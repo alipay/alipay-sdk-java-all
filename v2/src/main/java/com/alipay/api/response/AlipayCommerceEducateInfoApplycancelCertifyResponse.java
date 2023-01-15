@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.info.applycancel.certify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:11:19
+ * @since 1.0, 2023-01-11 00:17:37
  */
 public class AlipayCommerceEducateInfoApplycancelCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8562969431786258196L;
+	private static final long serialVersionUID = 3347225625845348466L;
 
 	
 

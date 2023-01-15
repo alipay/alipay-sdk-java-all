@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取用户参与活动状态
  *
  * @author auto create
- * @since 1.0, 2022-09-23 17:55:40
+ * @since 1.0, 2023-01-10 20:47:53
  */
 public class AlipayInsAutoUserCampaignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4199251632611174476L;
+	private static final long serialVersionUID = 8753418919381226139L;
 
 	/**
 	 * 车险活动类型编码。
@@ -19,6 +19,12 @@ public class AlipayInsAutoUserCampaignQueryModel extends AlipayObject {
 	 */
 	@ApiField("auto_campaign_type")
 	private String autoCampaignType;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -31,6 +37,13 @@ public class AlipayInsAutoUserCampaignQueryModel extends AlipayObject {
 	}
 	public void setAutoCampaignType(String autoCampaignType) {
 		this.autoCampaignType = autoCampaignType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

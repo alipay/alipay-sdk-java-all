@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商客户打标-增加或修改标签
  *
  * @author auto create
- * @since 1.0, 2022-12-29 11:24:28
+ * @since 1.0, 2023-01-12 16:26:09
  */
 public class MybankPaymentTradeUserclassificationCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8849947338328757897L;
+	private static final long serialVersionUID = 5221385944385773249L;
 
 	/**
 	 * 用户分类类别
@@ -24,6 +24,12 @@ public class MybankPaymentTradeUserclassificationCreateormodifyModel extends Ali
 	 */
 	@ApiField("classification_value")
 	private String classificationValue;
+
+	/**
+	 * 开放平台的开放id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -43,6 +49,13 @@ public class MybankPaymentTradeUserclassificationCreateormodifyModel extends Ali
 	}
 	public void setClassificationValue(String classificationValue) {
 		this.classificationValue = classificationValue;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

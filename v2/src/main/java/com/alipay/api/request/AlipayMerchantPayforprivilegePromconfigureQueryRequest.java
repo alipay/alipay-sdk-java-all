@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.payforprivilege.promconfigure.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:00:03
+ * @since 1.0, 2023-01-11 07:30:19
  */
 public class AlipayMerchantPayforprivilegePromconfigureQueryRequest implements AlipayRequest<AlipayMerchantPayforprivilegePromconfigureQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业融资数据采集平台对外的数据提交接口
  *
  * @author auto create
- * @since 1.0, 2020-09-03 17:21:59
+ * @since 1.0, 2023-01-11 16:49:33
  */
 public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3183583417775122258L;
+	private static final long serialVersionUID = 4352341336917625464L;
 
 	/**
 	 * 数据类别,ISV注册成为网商银行的会员，达成数据合作服务，约定数据模型，由网商分配给ISV的数据模型的类别
@@ -54,6 +54,12 @@ public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 	 */
 	@ApiField("objectcontent")
 	private String objectcontent;
+
+	/**
+	 * OpenId是某个用户在某个应用下的唯一用户标识， 对于同一个用户，不同应用拿到的OpenId是不同的，而且对于同一个应用，不同用户的OpenId是唯一的
+	 */
+	@ApiField("openid")
+	private String openid;
 
 	/**
 	 * 采集任务ID
@@ -108,6 +114,13 @@ public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 	}
 	public void setObjectcontent(String objectcontent) {
 		this.objectcontent = objectcontent;
+	}
+
+	public String getOpenid() {
+		return this.openid;
+	}
+	public void setOpenid(String openid) {
+		this.openid = openid;
 	}
 
 	public String getTaskid() {

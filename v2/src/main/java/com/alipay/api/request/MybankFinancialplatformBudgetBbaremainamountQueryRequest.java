@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.financialplatform.budget.bbaremainamount.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 16:36:39
+ * @since 1.0, 2023-01-11 09:36:40
  */
 public class MybankFinancialplatformBudgetBbaremainamountQueryRequest implements AlipayRequest<MybankFinancialplatformBudgetBbaremainamountQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融贷款方案查询
  *
  * @author auto create
- * @since 1.0, 2018-01-23 11:44:32
+ * @since 1.0, 2023-01-09 17:28:34
  */
 public class MybankCreditSceneprodPlanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3672773427451716535L;
+	private static final long serialVersionUID = 3522745638839969282L;
 
 	/**
 	 * 数据来源渠道，从服务窗调用开放平台接口的是OPENAPI, 手机端为APP，天猫调用是TMALL

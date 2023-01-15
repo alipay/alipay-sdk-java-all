@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.mindv.snapshot.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:08:27
+ * @since 1.0, 2023-01-11 04:24:01
  */
 public class AlipayIserviceMindvSnapshotQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1231754918815771826L;
+	private static final long serialVersionUID = 6241167192218738199L;
 
 	/** 
 	 * 快照创建时间

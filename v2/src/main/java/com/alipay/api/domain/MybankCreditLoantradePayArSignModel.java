@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付统一签约接口
  *
  * @author auto create
- * @since 1.0, 2022-12-06 10:59:40
+ * @since 1.0, 2023-01-12 14:24:25
  */
 public class MybankCreditLoantradePayArSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3687869152619675372L;
+	private static final long serialVersionUID = 1883793533261725222L;
 
 	/**
 	 * 用户支付宝ID

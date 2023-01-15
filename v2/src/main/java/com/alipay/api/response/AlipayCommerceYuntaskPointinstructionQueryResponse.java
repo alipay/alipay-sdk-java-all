@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.pointinstruction.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:36:38
+ * @since 1.0, 2023-01-11 02:51:37
  */
 public class AlipayCommerceYuntaskPointinstructionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8248641984217671359L;
+	private static final long serialVersionUID = 1774635446966854518L;
 
 	/** 
 	 * 积分流水信息

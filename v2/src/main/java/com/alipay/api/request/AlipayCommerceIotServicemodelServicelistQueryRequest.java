@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.servicemodel.servicelist.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:06:58
+ * @since 1.0, 2023-01-11 07:17:56
  */
 public class AlipayCommerceIotServicemodelServicelistQueryRequest implements AlipayRequest<AlipayCommerceIotServicemodelServicelistQueryResponse> {
 

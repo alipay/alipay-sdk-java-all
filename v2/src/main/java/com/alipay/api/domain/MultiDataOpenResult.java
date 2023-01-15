@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 人群行为分析数据
+ * 棋盘行为分析数据
  *
  * @author auto create
- * @since 1.0, 2023-01-05 17:19:51
+ * @since 1.0, 2023-01-12 20:55:03
  */
 public class MultiDataOpenResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7666718697713971432L;
+	private static final long serialVersionUID = 2458878825838292663L;
 
 	/**
 	 * 所有区间对应的用户平均数量

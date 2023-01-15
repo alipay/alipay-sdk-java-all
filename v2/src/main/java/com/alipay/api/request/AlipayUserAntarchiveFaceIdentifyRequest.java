@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antarchive.face.identify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:44:59
+ * @since 1.0, 2023-01-11 06:43:17
  */
 public class AlipayUserAntarchiveFaceIdentifyRequest implements AlipayRequest<AlipayUserAntarchiveFaceIdentifyResponse> {
 

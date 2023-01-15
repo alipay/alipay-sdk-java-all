@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序版本信息查询
  *
  * @author auto create
- * @since 1.0, 2021-07-22 15:38:33
+ * @since 1.0, 2023-01-09 11:43:47
  */
 public class AlipayOpenMiniInnerversionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7274956295751118511L;
+	private static final long serialVersionUID = 7229732472899298763L;
 
 	/**
 	 * 端参数，可不选，默认支付宝端

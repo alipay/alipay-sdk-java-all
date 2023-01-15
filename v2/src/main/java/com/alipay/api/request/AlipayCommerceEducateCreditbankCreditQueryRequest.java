@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.creditbank.credit.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:32:11
+ * @since 1.0, 2023-01-11 07:11:15
  */
 public class AlipayCommerceEducateCreditbankCreditQueryRequest implements AlipayRequest<AlipayCommerceEducateCreditbankCreditQueryResponse> {
 

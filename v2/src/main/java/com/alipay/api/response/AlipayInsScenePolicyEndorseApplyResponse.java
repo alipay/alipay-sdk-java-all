@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.policy.endorse.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:43:07
+ * @since 1.0, 2023-01-11 06:52:39
  */
 public class AlipayInsScenePolicyEndorseApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6517932286461737385L;
+	private static final long serialVersionUID = 7156299349611565641L;
 
 	/** 
 	 * 批单号

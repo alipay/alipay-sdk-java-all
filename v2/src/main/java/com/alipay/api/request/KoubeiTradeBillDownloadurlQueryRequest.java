@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.trade.bill.downloadurl.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:26:28
+ * @since 1.0, 2023-01-11 05:52:56
  */
 public class KoubeiTradeBillDownloadurlQueryRequest implements AlipayRequest<KoubeiTradeBillDownloadurlQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户攒油请求
  *
  * @author auto create
- * @since 1.0, 2022-10-08 16:25:18
+ * @since 1.0, 2023-01-10 20:47:10
  */
 public class AlipayInsAutoUserPointReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3834572768722865863L;
+	private static final long serialVersionUID = 5363631715397872213L;
 
 	/**
 	 * 车险活动类型编码。
@@ -26,6 +26,12 @@ BIZ_END_TIME:业务结束时间，值为时间戳
 	 */
 	@ApiField("extend_info")
 	private String extendInfo;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 比如某种业务标准外部订单号,比如交易外部订单号，代表商户端自己订单号
@@ -59,6 +65,13 @@ BIZ_END_TIME:业务结束时间，值为时间戳
 	}
 	public void setExtendInfo(String extendInfo) {
 		this.extendInfo = extendInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

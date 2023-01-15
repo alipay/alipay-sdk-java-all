@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.schoolcontent.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:55:25
+ * @since 1.0, 2023-01-11 01:14:29
  */
 public class AlipayCommerceEducateSchoolcontentModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6335428247769411435L;
+	private static final long serialVersionUID = 7498777315249665542L;
 
 	/** 
 	 * 支付宝返回的内容唯一Id

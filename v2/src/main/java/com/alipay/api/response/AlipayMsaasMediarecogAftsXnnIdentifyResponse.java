@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.afts.xnn.identify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 19:51:40
+ * @since 1.0, 2023-01-11 01:41:45
  */
 public class AlipayMsaasMediarecogAftsXnnIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5438739747925173496L;
+	private static final long serialVersionUID = 4211236332529432248L;
 
 	/** 
 	 * 算法返回结果，json字符串

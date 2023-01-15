@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户日计步数查询
  *
  * @author auto create
- * @since 1.0, 2023-01-03 13:45:40
+ * @since 1.0, 2023-01-06 17:24:19
  */
 public class AlipayUserStepcounterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1746421214912314269L;
+	private static final long serialVersionUID = 1458695646691616886L;
 
 	/**
 	 * 商户要查询步数的日期。如果不传入此参数，则返回用户当日步数。
 	 */
 	@ApiField("count_date")
 	private String countDate;
+
+	/**
+	 * OpenId是用户（UserId）在应用（AppId）下的唯一用户标识。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 请求方唯一标识。每一个外部商户都会分配一个业务方标识，请使用钉钉联系支付宝小二骁然获取此标识。
@@ -42,6 +48,13 @@ public class AlipayUserStepcounterQueryModel extends AlipayObject {
 	}
 	public void setCountDate(String countDate) {
 		this.countDate = countDate;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPartnerId() {

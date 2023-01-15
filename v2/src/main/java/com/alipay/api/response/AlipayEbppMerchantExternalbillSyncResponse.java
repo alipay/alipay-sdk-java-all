@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.merchant.externalbill.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 00:23:25
+ * @since 1.0, 2023-01-11 00:29:47
  */
 public class AlipayEbppMerchantExternalbillSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4884366941243973699L;
+	private static final long serialVersionUID = 1574845155488921668L;
 
 	/** 
 	 * yyyyMMdd+0(DB_FLAG)+0070(SYSTEM_FLAG)+018(SUB_BIZ_FLAG,新建)+0000(预留)+DB_SPLIT(BIZ_TYPE+SUB_BIZTYPE+MERCHANT_CODE, 2位)+TABLE_FLAG(OBJECT_ID, 2位)+8位全局唯一nextValue

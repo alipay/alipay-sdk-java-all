@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.finrisk.markrisk.datafactor.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:41:03
+ * @since 1.0, 2023-01-11 04:58:11
  */
 public class AlipayAccountFinriskMarkriskDatafactorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2373652239483521871L;
+	private static final long serialVersionUID = 5758313211383829131L;
 
 	/** 
 	 * json格式表示的计算结果，含多字段. 包括当前损益计算的货币对，预测金额，兑换渠道，交易日期，平盘价格，平盘金额，分级报价，汇率，汇率来源，汇率来源日期，场景，试算金额，交易主体，具体损益金额，交易类型，时区，产品码，补贴金额，已实现损益，未实现损益

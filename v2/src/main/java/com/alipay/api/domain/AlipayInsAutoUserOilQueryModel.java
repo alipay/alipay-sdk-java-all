@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户爱攒油信息
  *
  * @author auto create
- * @since 1.0, 2019-07-04 17:22:32
+ * @since 1.0, 2023-01-10 20:47:31
  */
 public class AlipayInsAutoUserOilQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1513213431666743851L;
+	private static final long serialVersionUID = 2387636224829153238L;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 车险开发分配，source+scene_type决定了返回的内容
@@ -30,6 +36,13 @@ public class AlipayInsAutoUserOilQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getSceneType() {
 		return this.sceneType;

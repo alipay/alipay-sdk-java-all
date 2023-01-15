@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.icrowd.tag.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:45:32
+ * @since 1.0, 2023-01-10 22:29:47
  */
 public class AlipayFundTransIcrowdTagModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2822931274825849167L;
+	private static final long serialVersionUID = 4718813171566733942L;
 
 	
 

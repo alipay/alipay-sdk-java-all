@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.ecny.merchant.sign.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:32:57
+ * @since 1.0, 2023-01-11 00:40:38
  */
 public class MybankEcnyMerchantSignQueryRequest implements AlipayRequest<MybankEcnyMerchantSignQueryResponse> {
 

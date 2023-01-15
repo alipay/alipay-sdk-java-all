@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 棋盘-人群画像-常住城市分布数据结构，针对市级
  *
  * @author auto create
- * @since 1.0, 2023-01-03 20:12:00
+ * @since 1.0, 2023-01-12 20:45:49
  */
 public class PortraitCityValue extends AlipayObject {
 
-	private static final long serialVersionUID = 3363731265715146852L;
+	private static final long serialVersionUID = 5697846269247417766L;
 
 	/**
 	 * 城市地区编码，唯一，遵循国标

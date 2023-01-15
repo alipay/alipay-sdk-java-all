@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.pointprod.budgetlib.return response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:46:13
+ * @since 1.0, 2023-01-11 05:24:00
  */
 public class AlipayAssetPointPointprodBudgetlibReturnResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7627287969951942296L;
+	private static final long serialVersionUID = 3525388698921561773L;
 
 	/** 
 	 * 预算库回收失败时的错误信息

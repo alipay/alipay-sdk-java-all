@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 赠险产品是否开通查询
  *
  * @author auto create
- * @since 1.0, 2022-09-20 10:58:17
+ * @since 1.0, 2023-01-10 20:49:17
  */
 public class AlipayInsMarketingGiftQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2573977346796979189L;
+	private static final long serialVersionUID = 1696852792746365454L;
 
 	/**
 	 * 渠道规则编码
@@ -37,8 +37,20 @@ public class AlipayInsMarketingGiftQueryModel extends AlipayObject {
 	/**
 	 * 被保人uid，被保人是当前用户则选择当前user_id
 	 */
+	@ApiField("insured_open_id")
+	private String insuredOpenId;
+
+	/**
+	 * 被保人uid，被保人是当前用户则选择当前user_id
+	 */
 	@ApiField("insured_user_id")
 	private String insuredUserId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 和申请人的关系类型，1本人
@@ -86,11 +98,25 @@ public class AlipayInsMarketingGiftQueryModel extends AlipayObject {
 		this.giftProdCode = giftProdCode;
 	}
 
+	public String getInsuredOpenId() {
+		return this.insuredOpenId;
+	}
+	public void setInsuredOpenId(String insuredOpenId) {
+		this.insuredOpenId = insuredOpenId;
+	}
+
 	public String getInsuredUserId() {
 		return this.insuredUserId;
 	}
 	public void setInsuredUserId(String insuredUserId) {
 		this.insuredUserId = insuredUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getRelationToApply() {

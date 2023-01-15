@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.advertiser.material.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:35:51
+ * @since 1.0, 2023-01-10 22:28:43
  */
 public class AlipayCommerceIotAdvertiserMaterialQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8255467247513191484L;
+	private static final long serialVersionUID = 5795396714825416556L;
 
 	/** 
 	 * 物料id

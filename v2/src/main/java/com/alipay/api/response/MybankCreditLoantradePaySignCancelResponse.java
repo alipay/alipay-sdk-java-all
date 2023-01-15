@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.pay.sign.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:19:49
+ * @since 1.0, 2023-01-12 14:23:22
  */
 public class MybankCreditLoantradePaySignCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8217584973727671653L;
+	private static final long serialVersionUID = 5764534446536985625L;
 
 	
 

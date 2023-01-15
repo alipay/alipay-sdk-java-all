@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.content.community.open.secuai.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:38:51
+ * @since 1.0, 2023-01-11 05:03:49
  */
 public class AntfortuneContentCommunityOpenSecuaiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1481285535746451559L;
+	private static final long serialVersionUID = 2466153229186396796L;
 
 	/** 
 	 * 存储json序列化后的业务结果

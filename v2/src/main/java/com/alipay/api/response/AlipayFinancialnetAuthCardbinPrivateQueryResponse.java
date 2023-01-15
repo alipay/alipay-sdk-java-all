@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.cardbin.private.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 00:06:14
+ * @since 1.0, 2023-01-11 06:30:27
  */
 public class AlipayFinancialnetAuthCardbinPrivateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8371513896981936719L;
+	private static final long serialVersionUID = 5678639124388858376L;
 
 	/** 
 	 * 卡类型，CC为信用卡，DC为借记卡

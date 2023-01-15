@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商卡皮肤创建
  *
  * @author auto create
- * @since 1.0, 2022-09-26 18:14:56
+ * @since 1.0, 2023-01-06 14:25:16
  */
 public class MybankMarketingBkcustgrowprodCardstyleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4254114644931114666L;
+	private static final long serialVersionUID = 2338689316149557496L;
 
 	/**
 	 * alipay_user_id, 不唯一，用于卡皮肤创建，无枚举值，支付宝uid
@@ -30,6 +30,12 @@ public class MybankMarketingBkcustgrowprodCardstyleCreateModel extends AlipayObj
 	 */
 	@ApiField("need_link")
 	private Boolean needLink;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * selected, 是否选中，不唯一，Boolean类型，不传默认为false
@@ -80,6 +86,13 @@ public class MybankMarketingBkcustgrowprodCardstyleCreateModel extends AlipayObj
 	}
 	public void setNeedLink(Boolean needLink) {
 		this.needLink = needLink;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Boolean getSelected() {

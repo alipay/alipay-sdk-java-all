@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.codec.qrcodecache.add request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 08:27:52
+ * @since 1.0, 2023-01-10 23:08:51
  */
 public class AlipayPayCodecQrcodecacheAddRequest implements AlipayRequest<AlipayPayCodecQrcodecacheAddResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝出行行业-行业代理接口
  *
  * @author auto create
- * @since 1.0, 2022-11-09 17:36:53
+ * @since 1.0, 2023-01-11 13:14:16
  */
 public class AlipayCommerceTransportIndustryProxyUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2284729695841465395L;
+	private static final long serialVersionUID = 5239259221955497698L;
 
 	/**
 	 * 描述当前行业代理请求的请求事件
@@ -32,13 +32,19 @@ public class AlipayCommerceTransportIndustryProxyUseModel extends AlipayObject {
 	private String industryScene;
 
 	/**
+	 * 网关open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 支持商户接入此业务的系统服务商id
 	 */
 	@ApiField("sys_service_provider_id")
 	private String sysServiceProviderId;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 商户特殊用户ID|蚂蚁统一会员ID
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -62,6 +68,13 @@ public class AlipayCommerceTransportIndustryProxyUseModel extends AlipayObject {
 	}
 	public void setIndustryScene(String industryScene) {
 		this.industryScene = industryScene;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSysServiceProviderId() {

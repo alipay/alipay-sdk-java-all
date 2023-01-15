@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.open.app.modelpredict.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:06:40
+ * @since 1.0, 2023-01-11 02:31:40
  */
 public class ZhimaOpenAppModelpredictQueryRequest implements AlipayRequest<ZhimaOpenAppModelpredictQueryResponse> {
 

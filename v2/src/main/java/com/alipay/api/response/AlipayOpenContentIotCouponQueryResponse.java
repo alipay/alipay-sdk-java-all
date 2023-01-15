@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.content.iot.coupon.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:52:03
+ * @since 1.0, 2023-01-11 00:27:53
  */
 public class AlipayOpenContentIotCouponQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1334699369832286435L;
+	private static final long serialVersionUID = 8347584711236464217L;
 
 	/** 
 	 * 加密后的下一步rpc操作信息，用于客户编排操作流程

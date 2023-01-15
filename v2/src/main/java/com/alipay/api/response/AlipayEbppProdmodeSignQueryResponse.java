@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.prodmode.sign.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 08:02:47
+ * @since 1.0, 2023-01-11 03:30:35
  */
 public class AlipayEbppProdmodeSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7186173179582893436L;
+	private static final long serialVersionUID = 4119164766143312752L;
 
 	/** 
 	 * 返回签约信息数据对象，主要包含:产品编码、产品版本、生效时间、到期时间等

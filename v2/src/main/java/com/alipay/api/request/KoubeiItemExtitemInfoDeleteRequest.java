@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.item.extitem.info.delete request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:39:46
+ * @since 1.0, 2023-01-11 03:50:39
  */
 public class KoubeiItemExtitemInfoDeleteRequest implements AlipayRequest<KoubeiItemExtitemInfoDeleteResponse> {
 

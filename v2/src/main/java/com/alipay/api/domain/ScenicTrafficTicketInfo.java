@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 景区小交通票务信息。
  *
  * @author auto create
- * @since 1.0, 2022-12-26 11:38:59
+ * @since 1.0, 2023-01-06 13:54:15
  */
 public class ScenicTrafficTicketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1835296182157578974L;
+	private static final long serialVersionUID = 8567181846669675734L;
 
 	/**
 	 * 检票时间
@@ -34,10 +36,17 @@ public class ScenicTrafficTicketInfo extends AlipayObject {
 	private String destinationOuterScenicId;
 
 	/**
-	 * 扩展信息
+	 * 扩展信息【废弃】
 	 */
 	@ApiField("ext_info")
 	private ScenicExtInfo extInfo;
+
+	/**
+	 * 扩展信息。回流的key值请提前联系支付宝侧人员配置，否则回流的key值不会被消费
+	 */
+	@ApiListField("ext_infos")
+	@ApiField("scenic_ext_info")
+	private List<ScenicExtInfo> extInfos;
 
 	/**
 	 * 乘客信息。
@@ -137,6 +146,13 @@ POINT 时间点。
 	}
 	public void setExtInfo(ScenicExtInfo extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public List<ScenicExtInfo> getExtInfos() {
+		return this.extInfos;
+	}
+	public void setExtInfos(List<ScenicExtInfo> extInfos) {
+		this.extInfos = extInfos;
 	}
 
 	public ScenicTrafficUserInfo getPassengers() {

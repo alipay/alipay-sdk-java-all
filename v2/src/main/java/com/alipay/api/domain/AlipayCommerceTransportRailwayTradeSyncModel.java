@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝出行行业-铁路数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-08-18 17:31:02
+ * @since 1.0, 2023-01-06 19:58:19
  */
 public class AlipayCommerceTransportRailwayTradeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3673924516938621633L;
+	private static final long serialVersionUID = 4245651662192542113L;
 
 	/**
 	 * 业务日期，用于判断对账时间，格式为yyyyMMdd
@@ -30,6 +30,12 @@ public class AlipayCommerceTransportRailwayTradeSyncModel extends AlipayObject {
 	 */
 	@ApiField("ext_param")
 	private String extParam;
+
+	/**
+	 * 用户的蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 当前订单金额，精确到分
@@ -98,6 +104,13 @@ public class AlipayCommerceTransportRailwayTradeSyncModel extends AlipayObject {
 	}
 	public void setExtParam(String extParam) {
 		this.extParam = extParam;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderAmount() {

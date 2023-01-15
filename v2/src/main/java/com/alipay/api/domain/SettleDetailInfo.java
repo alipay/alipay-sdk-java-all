@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算详情信息
  *
  * @author auto create
- * @since 1.0, 2022-11-30 21:16:45
+ * @since 1.0, 2023-01-12 15:34:06
  */
 public class SettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3569542649495724383L;
+	private static final long serialVersionUID = 7231946615839394649L;
 
 	/**
-	 * 结算的金额，单位为元。在创建订单和支付接口时必须和交易金额相同。在结算确认接口时必须等于交易金额减去已退款金额。
+	 * 仅在直付通账期模式场景下，单笔交易需要分多次发起部分确认结算时使用，表示本次确认结算的实际结算金额。传递本字段后，原amount字段不再生效，结算金额以本字段为准。
+	 */
+	@ApiField("actual_amount")
+	private String actualAmount;
+
+	/**
+	 * 结算的金额，单位为元。在创建订单和支付接口时必须和交易金额相同。在结算确认接口时必须等于交易金额减去已退款金额。直付通账期模式下，如使用部分结算能力、传递了actual_amount字段，则忽略本字段的校验、可不传。
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -56,6 +62,13 @@ defaultSettle：表示结算到商户进件时设置的默认结算账号，结�
 	 */
 	@ApiField("trans_in_type")
 	private String transInType;
+
+	public String getActualAmount() {
+		return this.actualAmount;
+	}
+	public void setActualAmount(String actualAmount) {
+		this.actualAmount = actualAmount;
+	}
 
 	public String getAmount() {
 		return this.amount;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.accountlist.query request
  * 
  * @author auto create
- * @since 1.0, 2022-11-28 11:33:50
+ * @since 1.0, 2023-01-11 08:19:20
  */
 public class AlipayFinancialnetAccountlistQueryRequest implements AlipayRequest<AlipayFinancialnetAccountlistQueryResponse> {
 

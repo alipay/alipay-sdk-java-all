@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.system.oauth.token response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:31:42
+ * @since 1.0, 2023-01-07 19:36:37
  */
 public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2515859894898443497L;
+	private static final long serialVersionUID = 5847545283268472657L;
 
 	/** 
 	 * 访问令牌。通过该令牌调用需要授权类接口
@@ -65,7 +65,7 @@ public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 
 	/** 
 	 * union_id是支付宝用户在开放平台的唯一标识符，在配置应用分组后会返回该值。
-同一用户的union_id在同一分组内应用的union_id一致。
+同一用户的union_id在同一分组内应用保持一致。
 	 */
 	@ApiField("union_id")
 	private String unionId;

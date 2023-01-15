@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.user.opencoremodeltest.xinghui.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-14 14:31:38
+ * @since 1.0, 2023-01-11 02:36:39
  */
 public class AlipayPcreditUserOpencoremodeltestXinghuiModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3631748838323361674L;
+	private static final long serialVersionUID = 7131772549979927445L;
 
 	/** 
 	 * 12

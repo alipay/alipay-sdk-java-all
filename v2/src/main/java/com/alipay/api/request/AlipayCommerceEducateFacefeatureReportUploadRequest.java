@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.facefeature.report.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:46:52
+ * @since 1.0, 2023-01-10 22:40:00
  */
 public class AlipayCommerceEducateFacefeatureReportUploadRequest implements AlipayRequest<AlipayCommerceEducateFacefeatureReportUploadResponse> {
 

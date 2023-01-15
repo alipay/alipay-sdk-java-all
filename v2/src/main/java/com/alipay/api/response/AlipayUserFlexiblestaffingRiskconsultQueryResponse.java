@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.flexiblestaffing.riskconsult.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-29 17:19:09
+ * @since 1.0, 2023-01-11 02:46:37
  */
 public class AlipayUserFlexiblestaffingRiskconsultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3267555122517496157L;
+	private static final long serialVersionUID = 2762135497966225451L;
 
 	/** 
 	 * 场景码
@@ -34,7 +34,7 @@ public class AlipayUserFlexiblestaffingRiskconsultQueryResponse extends AlipayRe
 	private String chargeType;
 
 	/** 
-	 * 咨询参与方信息
+	 * 【已废弃】咨询参与方信息，默认不返回
 	 */
 	@ApiField("consult_party")
 	private ConsultParticipant consultParty;

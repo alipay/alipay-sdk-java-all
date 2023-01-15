@@ -17,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.openbizmocktools.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 15:43:16
+ * @since 1.0, 2023-01-12 13:33:39
  */
 public class AlipayOpenOpenbizmocktoolsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4345378463325314379L;
+	private static final long serialVersionUID = 6842842223569845635L;
 
 	/** 
 	 * 查询GroupID关系得到的结果

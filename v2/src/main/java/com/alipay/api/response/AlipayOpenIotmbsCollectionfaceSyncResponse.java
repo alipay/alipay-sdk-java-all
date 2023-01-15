@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.collectionface.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 12:22:45
+ * @since 1.0, 2023-01-11 07:53:23
  */
 public class AlipayOpenIotmbsCollectionfaceSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6263926332517699825L;
+	private static final long serialVersionUID = 8486829736232426195L;
 
 	
 

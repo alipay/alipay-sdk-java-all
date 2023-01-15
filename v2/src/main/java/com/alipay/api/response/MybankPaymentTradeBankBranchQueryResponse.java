@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.bank.branch.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:08:57
+ * @since 1.0, 2023-01-10 23:39:27
  */
 public class MybankPaymentTradeBankBranchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6781627791413748942L;
+	private static final long serialVersionUID = 4172952381372997753L;
 
 	/** 
 	 * Institution列表

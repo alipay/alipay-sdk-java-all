@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.greenenergy.deposit response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-09 17:12:07
+ * @since 1.0, 2023-01-11 02:01:41
  */
 public class AlipayCommerceSportsGreenenergyDepositResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5564218835156434413L;
+	private static final long serialVersionUID = 5477676117252133124L;
 
 	
 

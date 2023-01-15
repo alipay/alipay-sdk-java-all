@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.sales.kbasset.stuff.produceqrcode.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:17:55
+ * @since 1.0, 2023-01-11 03:45:34
  */
 public class KoubeiSalesKbassetStuffProduceqrcodeBatchqueryRequest implements AlipayRequest<KoubeiSalesKbassetStuffProduceqrcodeBatchqueryResponse> {
 

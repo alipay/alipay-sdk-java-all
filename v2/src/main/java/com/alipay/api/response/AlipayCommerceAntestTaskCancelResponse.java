@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.antest.task.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:08:59
+ * @since 1.0, 2023-01-11 06:19:47
  */
 public class AlipayCommerceAntestTaskCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8852214339422378346L;
+	private static final long serialVersionUID = 1458398412297749964L;
 
 	
 

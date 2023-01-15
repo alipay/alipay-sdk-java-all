@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antsports.currentpath.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-03 13:50:18
+ * @since 1.0, 2023-01-10 23:51:38
  */
 public class AlipaySocialAntsportsCurrentpathQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2444599191933372473L;
+	private static final long serialVersionUID = 7425884727419852218L;
 
 	/** 
 	 * 运动数据今日已消费步数

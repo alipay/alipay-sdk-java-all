@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.auth.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 12:32:49
+ * @since 1.0, 2023-01-11 03:43:10
  */
 public class AlipayUserAgreementAuthApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8493958579768691462L;
+	private static final long serialVersionUID = 8328823966432385829L;
 
 	/** 
 	 * 鉴权申请token，其格式和内容，由支付宝定义。在鉴权确认的过程中，商户可根据申请操作成功时返回的申请token，进行后续的确认操作。

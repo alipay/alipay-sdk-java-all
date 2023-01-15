@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.invoice.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:31:02
+ * @since 1.0, 2023-01-10 23:57:10
  */
 public class AlipayBossFncGfsettleprodInvoiceQueryRequest implements AlipayRequest<AlipayBossFncGfsettleprodInvoiceQueryResponse> {
 

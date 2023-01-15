@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.user.role.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:36:04
+ * @since 1.0, 2023-01-13 14:51:37
  */
 public class MybankCreditUserRoleCreateRequest implements AlipayRequest<MybankCreditUserRoleCreateResponse> {
 

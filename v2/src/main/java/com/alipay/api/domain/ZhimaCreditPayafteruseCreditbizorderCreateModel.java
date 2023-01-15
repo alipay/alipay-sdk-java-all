@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPayafteruseCreditbizorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1321925513324275114L;
+	private static final long serialVersionUID = 6567941545259522254L;
 
 	/**
 	 * 只有当传递了order_amount时，该参数才有意义； 1）该参数不传时，默认为ORDER_AMOUNT。 2）传ORDER_AMOUNT时，表示order_amount传入的金额为后付金额，在发起扣款时，最大扣款支付金额为order_amount传入的值； 3）传RISK_AMOUNT时，表示ORDER_AMOUNT传入的金额为风险预估金额，在发起扣款时，最大扣款支付金额为商户签约时约定的上限额度。
@@ -68,7 +68,7 @@ public class ZhimaCreditPayafteruseCreditbizorderCreateModel extends AlipayObjec
 	private String productCode;
 
 	/**
-	 * 用户成功完成芝麻先享开通流程后，跳转回商户的页面地址。不传该链接时，默认返回上一级页面，由外部app唤起支付宝的情况，会返回支付宝首页。
+	 * 用户芝麻先享开通并下单流程结束后，不区分用户开通并下单成功/失败，跳转回商家页面，该字段代表跳转回商家的页面地址。不传该链接时，默认返回上一级页面，由外部app唤起支付宝的情况，会返回支付宝首页。
 	 */
 	@ApiField("return_back_link")
 	private String returnBackLink;

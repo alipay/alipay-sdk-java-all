@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业代理收单接口
  *
  * @author auto create
- * @since 1.0, 2022-12-05 09:44:00
+ * @since 1.0, 2023-01-06 19:58:51
  */
 public class AlipayCommerceTradeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2817682875195685886L;
+	private static final long serialVersionUID = 1833232724313561725L;
 
 	/**
 	 * 订单费用详情，用于在订单确认页面展示
@@ -36,6 +36,12 @@ public class AlipayCommerceTradeApplyModel extends AlipayObject {
 	 */
 	@ApiField("op_code")
 	private String opCode;
+
+	/**
+	 * 网关openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景的数据表示. json 数组格式，根据场景不同的模型传入不同参数，由支付宝负责提供参数集合
@@ -93,6 +99,13 @@ public class AlipayCommerceTradeApplyModel extends AlipayObject {
 	}
 	public void setOpCode(String opCode) {
 		this.opCode = opCode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderDetail() {

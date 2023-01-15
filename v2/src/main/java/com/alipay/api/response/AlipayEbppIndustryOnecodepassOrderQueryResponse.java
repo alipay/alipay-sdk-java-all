@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.onecodepass.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-20 19:51:40
+ * @since 1.0, 2023-01-11 02:46:39
  */
 public class AlipayEbppIndustryOnecodepassOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6856326199128829595L;
+	private static final long serialVersionUID = 4139519988131488554L;
 
 	/** 
 	 * 买家实付金额，单位为元，两位小数。该金额代表该笔交易买家实际支付的金额，不包含商户折扣等金额

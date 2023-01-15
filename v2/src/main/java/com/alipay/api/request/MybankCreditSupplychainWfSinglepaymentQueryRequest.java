@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.wf.singlepayment.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 00:09:13
+ * @since 1.0, 2023-01-11 00:55:38
  */
 public class MybankCreditSupplychainWfSinglepaymentQueryRequest implements AlipayRequest<MybankCreditSupplychainWfSinglepaymentQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.mall.trade.subscribe response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:57:10
+ * @since 1.0, 2023-01-11 05:21:20
  */
 public class KoubeiMarketingMallTradeSubscribeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3859644423824912946L;
+	private static final long serialVersionUID = 3477414161261238261L;
 
 	/** 
 	 * 申请工单id（用以查询申请工单状态）

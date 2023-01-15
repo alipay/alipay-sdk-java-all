@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.ar.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:15:06
+ * @since 1.0, 2023-01-11 04:59:32
  */
 public class MybankCreditSupplychainArUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4642487973875949224L;
+	private static final long serialVersionUID = 7179928268749767777L;
 
 	/** 
 	 * 解约结果：true/false

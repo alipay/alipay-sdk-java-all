@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.bail.agreement.upgrade response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:02:01
+ * @since 1.0, 2023-01-11 00:48:12
  */
 public class AlipayFundBailAgreementUpgradeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3889851362999127359L;
+	private static final long serialVersionUID = 5337356825895962436L;
 
 	/** 
 	 * 错误码

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.basic.router.send request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:57:16
+ * @since 1.0, 2023-01-11 03:49:51
  */
 public class AlipayEcoBasicRouterSendRequest implements AlipayRequest<AlipayEcoBasicRouterSendResponse> {
 

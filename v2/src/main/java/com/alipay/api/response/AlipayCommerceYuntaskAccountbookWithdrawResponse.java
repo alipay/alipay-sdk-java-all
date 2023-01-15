@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.accountbook.withdraw response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-28 16:51:41
+ * @since 1.0, 2023-01-11 03:07:53
  */
 public class AlipayCommerceYuntaskAccountbookWithdrawResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6252719738359194251L;
+	private static final long serialVersionUID = 2381891113862986473L;
 
 	/** 
 	 * 处理成功金额

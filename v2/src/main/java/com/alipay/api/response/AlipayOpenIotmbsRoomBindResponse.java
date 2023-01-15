@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.room.bind response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:12:14
+ * @since 1.0, 2023-01-11 00:47:07
  */
 public class AlipayOpenIotmbsRoomBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6778952884378992628L;
+	private static final long serialVersionUID = 3597225622513638446L;
 
 	/** 
 	 * 成功为true，失败为false

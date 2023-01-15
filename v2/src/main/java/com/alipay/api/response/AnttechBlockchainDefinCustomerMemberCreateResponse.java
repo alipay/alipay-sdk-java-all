@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.customer.member.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:20:56
+ * @since 1.0, 2023-01-11 07:07:14
  */
 public class AnttechBlockchainDefinCustomerMemberCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2393311265964759875L;
+	private static final long serialVersionUID = 7195766814528558817L;
 
 	/** 
 	 * 中台会员唯一ID

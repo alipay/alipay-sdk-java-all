@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转帐分佣-授权签约申请
  *
  * @author auto create
- * @since 1.0, 2023-01-05 19:38:04
+ * @since 1.0, 2023-01-12 17:40:02
  */
 public class AlipayFundAllocSignAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2445564674868435781L;
+	private static final long serialVersionUID = 6318358328266991428L;
 
 	/**
 	 * 产品码由支付宝分配

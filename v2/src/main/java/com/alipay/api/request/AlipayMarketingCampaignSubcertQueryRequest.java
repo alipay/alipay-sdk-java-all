@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.subcert.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 20:52:43
+ * @since 1.0, 2023-01-11 06:50:31
  */
 public class AlipayMarketingCampaignSubcertQueryRequest implements AlipayRequest<AlipayMarketingCampaignSubcertQueryResponse> {
 

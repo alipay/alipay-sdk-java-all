@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.afts.cert.identify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-05 19:51:39
+ * @since 1.0, 2023-01-11 01:41:41
  */
 public class AlipayMsaasMediarecogAftsCertIdentifyRequest implements AlipayRequest<AlipayMsaasMediarecogAftsCertIdentifyResponse> {
 

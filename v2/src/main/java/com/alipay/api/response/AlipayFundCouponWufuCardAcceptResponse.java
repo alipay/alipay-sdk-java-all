@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.wufu.card.accept response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:18:36
+ * @since 1.0, 2023-01-11 05:58:32
  */
 public class AlipayFundCouponWufuCardAcceptResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6895735758561596362L;
+	private static final long serialVersionUID = 3291219119264694554L;
 
 	/** 
 	 * 福卡名称

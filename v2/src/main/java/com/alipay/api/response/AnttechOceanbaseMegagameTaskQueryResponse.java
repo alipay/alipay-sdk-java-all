@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.megagame.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:55:59
+ * @since 1.0, 2023-01-11 08:01:26
  */
 public class AnttechOceanbaseMegagameTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5728858973279951774L;
+	private static final long serialVersionUID = 6592474846319192916L;
 
 	/** 
 	 * 参赛选手的提测代码分支，推荐用master。支持自定义

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.credit.autofinance.loan.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 02:09:03
+ * @since 1.0, 2023-01-11 03:55:28
  */
 public class AlipayCreditAutofinanceLoanApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3837227727821436851L;
+	private static final long serialVersionUID = 7172459322267931351L;
 
 	/** 
 	 * 汽车金融内部订单号

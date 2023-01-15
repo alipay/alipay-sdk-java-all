@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.train.stagecaterelation.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:59:30
+ * @since 1.0, 2023-01-11 06:46:14
  */
 public class AlipayCommerceEducateTrainStagecaterelationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3251914677775167655L;
+	private static final long serialVersionUID = 1436498662545253276L;
 
 	/** 
 	 * 学段分组信息

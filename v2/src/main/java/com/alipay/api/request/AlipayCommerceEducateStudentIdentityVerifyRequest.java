@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.student.identity.verify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:49:22
+ * @since 1.0, 2023-01-11 01:20:58
  */
 public class AlipayCommerceEducateStudentIdentityVerifyRequest implements AlipayRequest<AlipayCommerceEducateStudentIdentityVerifyResponse> {
 

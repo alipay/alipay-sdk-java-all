@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户订购信息
  *
  * @author auto create
- * @since 1.0, 2022-11-09 17:59:41
+ * @since 1.0, 2023-01-12 11:38:53
  */
 public class AlipayContract extends AlipayObject {
 
-	private static final long serialVersionUID = 5662599767446334262L;
+	private static final long serialVersionUID = 6267424352183229723L;
+
+	/**
+	 * 支付宝用户OpenID
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝用户ID
@@ -50,6 +56,13 @@ public class AlipayContract extends AlipayObject {
 	 */
 	@ApiField("subscribe")
 	private Boolean subscribe;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;

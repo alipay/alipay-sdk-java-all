@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.bkruralindustry.track.add request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 19:33:38
+ * @since 1.0, 2023-01-11 16:49:28
  */
 public class MybankCreditLoanapplyBkruralindustryTrackAddRequest implements AlipayRequest<MybankCreditLoanapplyBkruralindustryTrackAddResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣减用户积分
  *
  * @author auto create
- * @since 1.0, 2019-07-04 17:22:15
+ * @since 1.0, 2023-01-10 20:47:09
  */
 public class AlipayInsAutoUserOilExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1682434269393733994L;
+	private static final long serialVersionUID = 7114585367376832328L;
 
 	/**
 	 * 验证point与benefitId的一致性，才能使用对应的积分
@@ -32,6 +32,12 @@ public class AlipayInsAutoUserOilExchangeModel extends AlipayObject {
 	 */
 	@ApiField("oil")
 	private Long oil;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 请求业务单号，单号一致的两次请求将保证幂等
@@ -76,6 +82,13 @@ public class AlipayInsAutoUserOilExchangeModel extends AlipayObject {
 	}
 	public void setOil(Long oil) {
 		this.oil = oil;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRequestId() {

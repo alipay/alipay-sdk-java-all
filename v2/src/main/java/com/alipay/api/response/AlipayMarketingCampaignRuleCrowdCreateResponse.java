@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.rule.crowd.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:43:43
+ * @since 1.0, 2023-01-11 03:33:00
  */
 public class AlipayMarketingCampaignRuleCrowdCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1494221385342224375L;
+	private static final long serialVersionUID = 6632964764738373865L;
 
 	/** 
 	 * 圈人规则id

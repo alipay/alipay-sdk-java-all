@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.consum.ratio.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:08:01
+ * @since 1.0, 2023-01-11 05:29:22
  */
 public class AlipayDataDataserviceConsumRatioQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7446694181554654481L;
+	private static final long serialVersionUID = 5511346648519313912L;
 
 	/** 
 	 * 占比数据接口返回数据结构

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.operator.search.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:45:17
+ * @since 1.0, 2023-01-11 04:02:57
  */
 public class KoubeiMerchantOperatorSearchQueryRequest implements AlipayRequest<KoubeiMerchantOperatorSearchQueryResponse> {
 

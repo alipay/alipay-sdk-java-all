@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 人群看板分析数据
+ * 棋盘看板分析结果数据
  *
  * @author auto create
- * @since 1.0, 2023-01-05 17:18:55
+ * @since 1.0, 2023-01-12 20:59:12
  */
 public class BoardIndex extends AlipayObject {
 
-	private static final long serialVersionUID = 7631346634458271638L;
+	private static final long serialVersionUID = 4419885987252148452L;
 
 	/**
 	 * 指标描述tips
@@ -38,7 +38,7 @@ public class BoardIndex extends AlipayObject {
 	private String indexValue;
 
 	/**
-	 * 数据产出日期
+	 * 数据产出日期，格式yyyyMMdd
 	 */
 	@ApiField("report_date")
 	private String reportDate;

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易订单回流接口
  *
  * @author auto create
- * @since 1.0, 2022-05-07 16:46:19
+ * @since 1.0, 2023-01-10 16:27:53
  */
 public class AlipayEcoCityserviceExtOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8171899898894938819L;
+	private static final long serialVersionUID = 7854354426219335687L;
+
+	/**
+	 * 当回流的订单需要根据在光华平台录入的服务相关信息进行分佣的时候，需要传入在光华平台录入的服务的appCode 字段
+	 */
+	@ApiField("app_code")
+	private String appCode;
 
 	/**
 	 * appid，订单归属的小程序id，当order_type=1时 必填
@@ -26,7 +32,7 @@ public class AlipayEcoCityserviceExtOrderSyncModel extends AlipayObject {
 	private String body;
 
 	/**
-	 * buyer_id，订单买家的支付宝uid，当order_type=1时 必填。buyer_id不可以和商户pid一样。
+	 * buyer_id，服务用户的uid
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
@@ -48,6 +54,12 @@ public class AlipayEcoCityserviceExtOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("gmt_service")
 	private String gmtService;
+
+	/**
+	 * open_id，订单买家的支付宝open_id，当order_type=1时 必填。open_id映射到的uid不可以和商户pid一样。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * order_type，必填字段，枚举可数。枚举值 '1' 代表正向收费订单，'2' 代表逆向退费订单，由调用方根据业务数据填写。
@@ -105,6 +117,13 @@ public class AlipayEcoCityserviceExtOrderSyncModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	public String getAppCode() {
+		return this.appCode;
+	}
+	public void setAppCode(String appCode) {
+		this.appCode = appCode;
+	}
+
 	public String getAppid() {
 		return this.appid;
 	}
@@ -145,6 +164,13 @@ public class AlipayEcoCityserviceExtOrderSyncModel extends AlipayObject {
 	}
 	public void setGmtService(String gmtService) {
 		this.gmtService = gmtService;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderType() {

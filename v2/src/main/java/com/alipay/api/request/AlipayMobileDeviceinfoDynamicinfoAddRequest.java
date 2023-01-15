@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.deviceinfo.dynamicinfo.add request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 13:51:35
+ * @since 1.0, 2023-01-11 03:32:44
  */
 public class AlipayMobileDeviceinfoDynamicinfoAddRequest implements AlipayRequest<AlipayMobileDeviceinfoDynamicinfoAddResponse> {
 

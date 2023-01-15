@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.limitamount.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 12:41:31
+ * @since 1.0, 2023-01-11 00:51:11
  */
 public class MybankCreditSupplychainWfLimitamountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8826543432591123339L;
+	private static final long serialVersionUID = 7814656227423114323L;
 
 	/** 
 	 * 是否准入

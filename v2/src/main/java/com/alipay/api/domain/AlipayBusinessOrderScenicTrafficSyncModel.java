@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 景区小交通订单回流接口
  *
  * @author auto create
- * @since 1.0, 2022-10-26 14:19:49
+ * @since 1.0, 2023-01-06 13:54:15
  */
 public class AlipayBusinessOrderScenicTrafficSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8592351928825954997L;
+	private static final long serialVersionUID = 2585887736196215918L;
 
 	/**
 	 * 订单金额
@@ -53,10 +53,17 @@ pay_amount：80.00
 	private String discountAmount;
 
 	/**
-	 * 扩展信息
+	 * 扩展信息【废弃】
 	 */
 	@ApiField("ext_info")
 	private ScenicExtInfo extInfo;
+
+	/**
+	 * 扩展信息。回流的key值请提前联系支付宝侧人员配置，否则回流的key值不会被消费
+	 */
+	@ApiListField("ext_infos")
+	@ApiField("scenic_ext_info")
+	private List<ScenicExtInfo> extInfos;
 
 	/**
 	 * open_id是用户（UserId）在应用（AppId）下的唯一用户标识
@@ -159,7 +166,7 @@ REFUND_FAILURE 退票失败。
 	private Date refundTime;
 
 	/**
-	 * 票务信息
+	 * 票务信息。 最大长度限制为10，超出部分不会被消费
 	 */
 	@ApiListField("ticket_info")
 	@ApiField("scenic_traffic_ticket_info")
@@ -217,6 +224,13 @@ REFUND_FAILURE 退票失败。
 	}
 	public void setExtInfo(ScenicExtInfo extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public List<ScenicExtInfo> getExtInfos() {
+		return this.extInfos;
+	}
+	public void setExtInfos(List<ScenicExtInfo> extInfos) {
+		this.extInfos = extInfos;
 	}
 
 	public String getOpenId() {

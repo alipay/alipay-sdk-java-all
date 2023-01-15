@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.channel.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:35:37
+ * @since 1.0, 2023-01-11 01:14:45
  */
 public class DatadigitalFincloudFinsaasChannelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4173414446378723586L;
+	private static final long serialVersionUID = 1499881824728449675L;
 
 	/** 
 	 * 渠道code+唯一+获取渠道详情+从数据库获取

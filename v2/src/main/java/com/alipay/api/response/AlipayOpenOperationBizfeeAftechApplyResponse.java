@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.bizfee.aftech.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:58:23
+ * @since 1.0, 2023-01-11 05:45:11
  */
 public class AlipayOpenOperationBizfeeAftechApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6653291697662818433L;
+	private static final long serialVersionUID = 1587798155368557163L;
 
 	/** 
 	 * 结果码

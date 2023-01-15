@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.contract.process.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:07:10
+ * @since 1.0, 2023-01-10 23:08:35
  */
 public class AlipayEcoContractProcessDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6788288716138564736L;
+	private static final long serialVersionUID = 1673711232556767231L;
 
 	
 

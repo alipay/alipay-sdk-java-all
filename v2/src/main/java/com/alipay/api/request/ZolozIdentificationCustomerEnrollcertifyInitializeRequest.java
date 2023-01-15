@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.identification.customer.enrollcertify.initialize request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:49:43
+ * @since 1.0, 2023-01-11 08:05:51
  */
 public class ZolozIdentificationCustomerEnrollcertifyInitializeRequest implements AlipayRequest<ZolozIdentificationCustomerEnrollcertifyInitializeResponse> {
 

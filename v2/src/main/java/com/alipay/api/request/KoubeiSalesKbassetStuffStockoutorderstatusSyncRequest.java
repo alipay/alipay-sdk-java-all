@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.sales.kbasset.stuff.stockoutorderstatus.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 09:41:24
+ * @since 1.0, 2023-01-11 05:07:39
  */
 public class KoubeiSalesKbassetStuffStockoutorderstatusSyncRequest implements AlipayRequest<KoubeiSalesKbassetStuffStockoutorderstatusSyncResponse> {
 

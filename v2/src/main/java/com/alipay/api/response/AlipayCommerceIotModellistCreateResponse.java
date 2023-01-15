@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.modellist.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:19:01
+ * @since 1.0, 2023-01-11 03:48:30
  */
 public class AlipayCommerceIotModellistCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5128929273896362877L;
+	private static final long serialVersionUID = 3759266182586383425L;
 
 	/** 
 	 * 重复的型号id列表，当所请求创建的型号已经存在时，则将已存在的型号id列表通过该字段返回

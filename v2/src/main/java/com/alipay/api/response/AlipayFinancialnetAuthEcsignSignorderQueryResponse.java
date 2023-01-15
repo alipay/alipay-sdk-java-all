@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.ecsign.signorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:41:39
+ * @since 1.0, 2023-01-11 02:16:39
  */
 public class AlipayFinancialnetAuthEcsignSignorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7148227473553261882L;
+	private static final long serialVersionUID = 1619744671175448949L;
 
 	/** 
 	 * 附加信息

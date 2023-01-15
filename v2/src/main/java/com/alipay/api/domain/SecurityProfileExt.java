@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户密钥的一些配置信息
  *
  * @author auto create
- * @since 1.0, 2022-11-02 15:42:59
+ * @since 1.0, 2023-01-12 13:29:11
  */
 public class SecurityProfileExt extends AlipayObject {
 
-	private static final long serialVersionUID = 2263864992445171913L;
+	private static final long serialVersionUID = 5266226122751739353L;
 
 	/**
 	 * 密钥类型

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.kids.relation.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-12 17:24:51
+ * @since 1.0, 2023-01-11 08:01:10
  */
 public class AlipayCommerceKidsRelationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1518352282246231448L;
+	private static final long serialVersionUID = 2824147775187489393L;
 
 	/** 
 	 * 孩子信息列表

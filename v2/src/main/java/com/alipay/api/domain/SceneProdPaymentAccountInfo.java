@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融代收付交易方信息
  *
  * @author auto create
- * @since 1.0, 2019-05-21 16:18:21
+ * @since 1.0, 2023-01-06 11:03:59
  */
 public class SceneProdPaymentAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4355434727518387276L;
+	private static final long serialVersionUID = 1529313251843188661L;
 
 	/**
 	 * 账号外标，如支付宝登录号,网商银行卡卡号
@@ -92,10 +92,22 @@ public class SceneProdPaymentAccountInfo extends AlipayObject {
 	private String ipRoleId;
 
 	/**
+	 * 该笔账号涉及业务的贷款类型
+	 */
+	@ApiField("loan_type")
+	private String loanType;
+
+	/**
 	 * 账单备注
 	 */
 	@ApiField("payment_mark")
 	private String paymentMark;
+
+	/**
+	 * 涉及该账号的账号序号
+	 */
+	@ApiField("seq_no")
+	private String seqNo;
 
 	public String getAccountExtNo() {
 		return this.accountExtNo;
@@ -188,11 +200,25 @@ public class SceneProdPaymentAccountInfo extends AlipayObject {
 		this.ipRoleId = ipRoleId;
 	}
 
+	public String getLoanType() {
+		return this.loanType;
+	}
+	public void setLoanType(String loanType) {
+		this.loanType = loanType;
+	}
+
 	public String getPaymentMark() {
 		return this.paymentMark;
 	}
 	public void setPaymentMark(String paymentMark) {
 		this.paymentMark = paymentMark;
+	}
+
+	public String getSeqNo() {
+		return this.seqNo;
+	}
+	public void setSeqNo(String seqNo) {
+		this.seqNo = seqNo;
 	}
 
 }

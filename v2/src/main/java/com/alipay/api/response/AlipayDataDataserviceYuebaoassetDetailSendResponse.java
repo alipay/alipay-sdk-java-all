@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.yuebaoasset.detail.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 20:59:29
+ * @since 1.0, 2023-01-11 03:29:31
  */
 public class AlipayDataDataserviceYuebaoassetDetailSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1858298484585875299L;
+	private static final long serialVersionUID = 4147297475961261642L;
 
 	/** 
 	 * yeb_asset_data_num:本次录入数据条数。

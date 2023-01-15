@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.codec.applepay.establish.set request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:39:04
+ * @since 1.0, 2023-01-10 23:28:44
  */
 public class AlipayPayCodecApplepayEstablishSetRequest implements AlipayRequest<AlipayPayCodecApplepayEstablishSetResponse> {
 

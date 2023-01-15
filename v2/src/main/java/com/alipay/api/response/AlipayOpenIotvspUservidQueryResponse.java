@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.uservid.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 16:31:54
+ * @since 1.0, 2023-01-11 08:40:18
  */
 public class AlipayOpenIotvspUservidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7319979971959185242L;
+	private static final long serialVersionUID = 8376733748227658181L;
 
 	/** 
 	 * 返回刷脸vid

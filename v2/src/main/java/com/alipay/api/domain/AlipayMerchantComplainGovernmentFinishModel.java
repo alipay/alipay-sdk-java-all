@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 平台完结线下交易投诉工单
  *
  * @author auto create
- * @since 1.0, 2021-06-10 12:53:47
+ * @since 1.0, 2023-01-12 10:57:16
  */
 public class AlipayMerchantComplainGovernmentFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284383211546939478L;
+	private static final long serialVersionUID = 8626486913635922136L;
 
 	/**
 	 * 支付宝侧投诉工单号

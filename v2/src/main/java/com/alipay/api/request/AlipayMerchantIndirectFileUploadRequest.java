@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 13:06:40
+ * @since 1.0, 2023-01-11 02:41:39
  */
 public class AlipayMerchantIndirectFileUploadRequest implements AlipayUploadRequest<AlipayMerchantIndirectFileUploadResponse> {
 

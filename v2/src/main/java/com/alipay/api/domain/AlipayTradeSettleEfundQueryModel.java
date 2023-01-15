@@ -1,0 +1,42 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 集团电商待结算户查询
+ *
+ * @author auto create
+ * @since 1.0, 2023-01-12 23:51:42
+ */
+public class AlipayTradeSettleEfundQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 8414195712552664214L;
+
+	/**
+	 * 卖家userId，支付宝userId
+	 */
+	@ApiField("seller_user_id")
+	private String sellerUserId;
+
+	/**
+	 * 管控资金业务类型
+	 */
+	@ApiField("settle_biz_type")
+	private String settleBizType;
+
+	public String getSellerUserId() {
+		return this.sellerUserId;
+	}
+	public void setSellerUserId(String sellerUserId) {
+		this.sellerUserId = sellerUserId;
+	}
+
+	public String getSettleBizType() {
+		return this.settleBizType;
+	}
+	public void setSettleBizType(String settleBizType) {
+		this.settleBizType = settleBizType;
+	}
+
+}

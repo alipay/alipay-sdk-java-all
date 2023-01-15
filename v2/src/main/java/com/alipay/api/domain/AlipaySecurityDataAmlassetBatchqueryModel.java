@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反洗钱风险资产查询开放API
  *
  * @author auto create
- * @since 1.0, 2022-10-19 14:58:36
+ * @since 1.0, 2023-01-06 17:52:11
  */
 public class AlipaySecurityDataAmlassetBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8636277943377393256L;
+	private static final long serialVersionUID = 2121774412114943744L;
 
 	/**
 	 * 资产的类型，包括LABEL、AML_LIST等
@@ -33,6 +33,13 @@ public class AlipaySecurityDataAmlassetBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("lid")
 	private String lid;
+
+	/**
+	 * 客户ID列表
+	 */
+	@ApiListField("open_ids")
+	@ApiField("string")
+	private List<String> openIds;
 
 	/**
 	 * 客户ID列表
@@ -60,6 +67,13 @@ public class AlipaySecurityDataAmlassetBatchqueryModel extends AlipayObject {
 	}
 	public void setLid(String lid) {
 		this.lid = lid;
+	}
+
+	public List<String> getOpenIds() {
+		return this.openIds;
+	}
+	public void setOpenIds(List<String> openIds) {
+		this.openIds = openIds;
 	}
 
 	public List<String> getUids() {

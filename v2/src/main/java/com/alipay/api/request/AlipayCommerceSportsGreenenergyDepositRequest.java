@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.greenenergy.deposit request
  * 
  * @author auto create
- * @since 1.0, 2022-12-09 17:12:07
+ * @since 1.0, 2023-01-11 02:01:41
  */
 public class AlipayCommerceSportsGreenenergyDepositRequest implements AlipayRequest<AlipayCommerceSportsGreenenergyDepositResponse> {
 

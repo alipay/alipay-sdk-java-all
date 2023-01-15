@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.design.page.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:28:09
+ * @since 1.0, 2023-01-11 08:26:52
  */
 public class DatadigitalFincloudFinsaasDesignPageBatchqueryRequest implements AlipayRequest<DatadigitalFincloudFinsaasDesignPageBatchqueryResponse> {
 

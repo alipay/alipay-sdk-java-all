@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.medicalcare.si.data.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 04:40:38
+ * @since 1.0, 2023-01-11 07:13:55
  */
 public class AlipayEcoMedicalcareSiDataSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5276366923543129319L;
+	private static final long serialVersionUID = 2176843544234588885L;
 
 	
 

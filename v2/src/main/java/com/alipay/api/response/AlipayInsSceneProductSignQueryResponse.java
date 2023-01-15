@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.product.sign.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:51:38
+ * @since 1.0, 2023-01-11 02:01:41
  */
 public class AlipayInsSceneProductSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5519152351627766781L;
+	private static final long serialVersionUID = 1667432716452559315L;
 
 	/** 
 	 * 支付宝代扣协议ID

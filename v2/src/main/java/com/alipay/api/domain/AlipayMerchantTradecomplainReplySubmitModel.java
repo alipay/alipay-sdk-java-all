@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家留言回复
  *
  * @author auto create
- * @since 1.0, 2022-12-19 14:35:17
+ * @since 1.0, 2023-01-12 10:58:06
  */
 public class AlipayMerchantTradecomplainReplySubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8318459696727162838L;
+	private static final long serialVersionUID = 4355244394311934639L;
 
 	/**
 	 * 支付宝侧投诉单号

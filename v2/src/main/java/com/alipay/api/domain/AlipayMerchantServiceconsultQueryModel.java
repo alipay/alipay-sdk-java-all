@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询单条服务咨询详情
  *
  * @author auto create
- * @since 1.0, 2020-11-16 14:15:24
+ * @since 1.0, 2023-01-12 10:58:56
  */
 public class AlipayMerchantServiceconsultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2639281196847563292L;
+	private static final long serialVersionUID = 5564776271535157546L;
 
 	/**
 	 * 支付宝侧服务咨询工单号

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.quality.test.shield.testcase.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:17:08
+ * @since 1.0, 2023-01-11 05:57:44
  */
 public class KoubeiQualityTestShieldTestcaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2234225297189173513L;
+	private static final long serialVersionUID = 3435872998316372192L;
 
 	/** 
 	 * 测试用例列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.voice.question.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:50:03
+ * @since 1.0, 2023-01-11 06:51:51
  */
 public class AlipaySecurityProdVoiceQuestionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8767579791956775894L;
+	private static final long serialVersionUID = 3691884213334612238L;
 
 	/** 
 	 * 问题推荐结果

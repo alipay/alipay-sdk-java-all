@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.usertrade.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:15:48
+ * @since 1.0, 2023-01-12 20:02:08
  */
 public class AlipayFundUsertradeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6878334627371525296L;
+	private static final long serialVersionUID = 3173292429453891545L;
 
 	/** 
 	 * 拉取的结束时间，格式yyyy-MM-dd HH:mm:ss

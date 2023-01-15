@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.venue.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-09 17:11:54
+ * @since 1.0, 2023-01-11 02:01:41
  */
 public class AlipayCommerceSportsVenueOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3831436328444613968L;
+	private static final long serialVersionUID = 7618646827367389991L;
 
 	/** 
 	 * 支付宝业务订单唯一ID

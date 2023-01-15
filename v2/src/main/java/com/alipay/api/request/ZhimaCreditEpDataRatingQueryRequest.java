@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.data.rating.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 06:24:26
+ * @since 1.0, 2023-01-10 22:55:17
  */
 public class ZhimaCreditEpDataRatingQueryRequest implements AlipayRequest<ZhimaCreditEpDataRatingQueryResponse> {
 

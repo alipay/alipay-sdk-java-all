@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.octoken.auth.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-02 16:16:38
+ * @since 1.0, 2023-01-11 09:11:41
  */
 public class AlipayCommerceMedicalOctokenAuthQueryRequest implements AlipayRequest<AlipayCommerceMedicalOctokenAuthQueryResponse> {
 

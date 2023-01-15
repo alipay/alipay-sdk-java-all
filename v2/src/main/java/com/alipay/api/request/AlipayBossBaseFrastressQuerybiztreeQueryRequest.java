@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.frastress.querybiztree.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 08:48:35
+ * @since 1.0, 2023-01-11 00:59:24
  */
 public class AlipayBossBaseFrastressQuerybiztreeQueryRequest implements AlipayRequest<AlipayBossBaseFrastressQuerybiztreeQueryResponse> {
 

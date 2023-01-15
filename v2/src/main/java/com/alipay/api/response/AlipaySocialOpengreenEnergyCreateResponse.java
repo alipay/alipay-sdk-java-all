@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.opengreen.energy.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 08:09:28
+ * @since 1.0, 2023-01-11 01:11:31
  */
 public class AlipaySocialOpengreenEnergyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6735374829514364983L;
+	private static final long serialVersionUID = 4358765512993359755L;
 
 	/** 
 	 * 生成能量的场景以及g数

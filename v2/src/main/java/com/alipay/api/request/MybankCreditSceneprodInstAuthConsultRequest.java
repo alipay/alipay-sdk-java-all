@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.sceneprod.inst.auth.consult request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 14:40:47
+ * @since 1.0, 2023-01-10 23:06:57
  */
 public class MybankCreditSceneprodInstAuthConsultRequest implements AlipayRequest<MybankCreditSceneprodInstAuthConsultResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.resume response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:01:39
+ * @since 1.0, 2023-01-11 02:21:40
  */
 public class AlipayCommerceYuntaskResumeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6569934659319149378L;
+	private static final long serialVersionUID = 5363589916336413784L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcapi.antigen.identify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 08:16:39
+ * @since 1.0, 2023-01-11 08:51:44
  */
 public class AlipayMsaasMediarecogMmtcapiAntigenIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4524679774434581644L;
+	private static final long serialVersionUID = 6279164812296571467L;
 
 	/** 
 	 * 算法返回结果，json字符串，无敏感信息

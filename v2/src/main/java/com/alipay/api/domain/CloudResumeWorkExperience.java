@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CloudResumeWorkExperience extends AlipayObject {
 
-	private static final long serialVersionUID = 5227399963749885748L;
+	private static final long serialVersionUID = 4386127724183733971L;
 
 	/**
 	 * 公司名称

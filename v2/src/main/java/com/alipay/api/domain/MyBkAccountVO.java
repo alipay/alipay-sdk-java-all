@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账号信息
  *
  * @author auto create
- * @since 1.0, 2022-12-20 14:15:56
+ * @since 1.0, 2023-01-13 16:09:12
  */
 public class MyBkAccountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5673165618626491785L;
+	private static final long serialVersionUID = 8299221975829979558L;
 
 	/**
 	 * 账号外标，如支付宝登录号
@@ -48,6 +48,12 @@ public class MyBkAccountVO extends AlipayObject {
 	 */
 	@ApiField("account_type")
 	private String accountType;
+
+	/**
+	 * OpenId是某个用户在某个应用下的唯一用户标识， 对于同一个用户，不同应用拿到的OpenId是不同的，而且对于同一个应用，不同用户的OpenId是唯一的
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 是否可用，Y-可用；N-不可用
@@ -119,6 +125,13 @@ public class MyBkAccountVO extends AlipayObject {
 	}
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getAvailable() {

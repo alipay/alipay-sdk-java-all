@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行情尼米兹数据查询
  *
  * @author auto create
- * @since 1.0, 2022-06-30 11:24:21
+ * @since 1.0, 2023-01-09 16:52:15
  */
 public class AntfortuneQuotationNimitzDatasetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284778186217435246L;
+	private static final long serialVersionUID = 3652812845336726442L;
 
 	/**
 	 * Nimitz 查询语境

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.liferecord.quit request
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 16:36:40
+ * @since 1.0, 2023-01-11 02:08:20
  */
 public class ZhimaCustomerLiferecordQuitRequest implements AlipayRequest<ZhimaCustomerLiferecordQuitResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.title.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-19 00:31:34
+ * @since 1.0, 2023-01-11 02:06:45
  */
 public class AlipayEbppInvoiceTitleSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5477215121836419731L;
+	private static final long serialVersionUID = 6518289476933149567L;
 
 	
 

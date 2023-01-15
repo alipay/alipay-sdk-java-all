@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部商户步数同步接口
  *
  * @author auto create
- * @since 1.0, 2023-01-03 13:50:50
+ * @since 1.0, 2023-01-06 17:28:52
  */
 public class AlipayUserStepcounterSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4556671246664281383L;
+	private static final long serialVersionUID = 2628445292642136226L;
 
 	/**
 	 * 年龄数据。是外部商户系统中录入的用户年龄数据
@@ -62,6 +62,12 @@ public class AlipayUserStepcounterSyncModel extends AlipayObject {
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * OpenId是用户（UserId）在应用（AppId）下的唯一用户标识。
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商户系统的用户uid。是外部商户系统中的用户唯一id
@@ -147,6 +153,13 @@ public class AlipayUserStepcounterSyncModel extends AlipayObject {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutUserId() {

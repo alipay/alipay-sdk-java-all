@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:46:36
+ * @since 1.0, 2023-01-11 08:25:31
  */
 public class MybankCreditSceneprodBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3262785999135556121L;
+	private static final long serialVersionUID = 8265812739614363334L;
 
 	/** 
 	 * 网商银行申请单号

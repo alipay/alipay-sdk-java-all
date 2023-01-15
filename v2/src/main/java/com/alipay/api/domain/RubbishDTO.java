@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RubbishDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8119466585937336712L;
+	private static final long serialVersionUID = 8416989939425965238L;
 
 	/**
 	 * 垃圾类别

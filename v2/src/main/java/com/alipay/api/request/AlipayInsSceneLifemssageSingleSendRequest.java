@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.lifemssage.single.send request
  * 
  * @author auto create
- * @since 1.0, 2022-12-29 14:41:38
+ * @since 1.0, 2023-01-11 03:06:46
  */
 public class AlipayInsSceneLifemssageSingleSendRequest implements AlipayRequest<AlipayInsSceneLifemssageSingleSendResponse> {
 

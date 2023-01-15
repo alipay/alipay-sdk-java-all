@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.quest.instance.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-29 15:37:17
+ * @since 1.0, 2023-01-10 22:59:35
  */
 public class AlipaySocialBaseQuestInstanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6789711188842275689L;
+	private static final long serialVersionUID = 2687134712751592127L;
 
 	/** 
 	 * 返回请求小目标实例集合

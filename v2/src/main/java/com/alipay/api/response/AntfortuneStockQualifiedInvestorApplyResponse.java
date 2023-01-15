@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.qualified.investor.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 23:53:50
+ * @since 1.0, 2023-01-11 00:52:32
  */
 public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1654724238184321684L;
+	private static final long serialVersionUID = 5898741468138416866L;
 
 	/** 
 	 * 签约协议号

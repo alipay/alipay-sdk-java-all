@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.spaccount.consult response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-04 14:33:13
+ * @since 1.0, 2023-01-13 09:58:14
  */
 public class AlipayFinancialnetAuthSpaccountConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5455968827534667219L;
+	private static final long serialVersionUID = 2137846988758548998L;
 
 	/** 
 	 * 若已开户，则为脱敏后已开户登录号
@@ -49,6 +49,12 @@ public class AlipayFinancialnetAuthSpaccountConsultResponse extends AlipayRespon
 	 */
 	@ApiField("opened_account_user_id")
 	private String openedAccountUserId;
+
+	/** 
+	 * 已开专户的uid对应的openId
+	 */
+	@ApiField("opened_account_user_open_id")
+	private String openedAccountUserOpenId;
 
 	public void setDisplayOpenedAccountLogonId(String displayOpenedAccountLogonId) {
 		this.displayOpenedAccountLogonId = displayOpenedAccountLogonId;
@@ -90,6 +96,13 @@ public class AlipayFinancialnetAuthSpaccountConsultResponse extends AlipayRespon
 	}
 	public String getOpenedAccountUserId( ) {
 		return this.openedAccountUserId;
+	}
+
+	public void setOpenedAccountUserOpenId(String openedAccountUserOpenId) {
+		this.openedAccountUserOpenId = openedAccountUserOpenId;
+	}
+	public String getOpenedAccountUserOpenId( ) {
+		return this.openedAccountUserOpenId;
 	}
 
 }

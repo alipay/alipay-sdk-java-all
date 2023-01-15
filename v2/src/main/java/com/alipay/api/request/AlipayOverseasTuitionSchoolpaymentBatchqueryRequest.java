@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.tuition.schoolpayment.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 10:50:35
+ * @since 1.0, 2023-01-10 23:37:50
  */
 public class AlipayOverseasTuitionSchoolpaymentBatchqueryRequest implements AlipayRequest<AlipayOverseasTuitionSchoolpaymentBatchqueryResponse> {
 

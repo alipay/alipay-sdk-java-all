@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 作物综合信息
  *
  * @author auto create
- * @since 1.0, 2022-09-27 15:13:59
+ * @since 1.0, 2023-01-13 17:57:55
  */
 public class CropsComplexInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4822313829179285359L;
+	private static final long serialVersionUID = 3732324847549651192L;
 
 	/**
 	 * 作物编码列表
@@ -50,6 +50,12 @@ public class CropsComplexInfo extends AlipayObject {
 	@ApiListField("planting_info")
 	@ApiField("crops_planting_info")
 	private List<CropsPlantingInfo> plantingInfo;
+
+	/**
+	 * 地块面积
+	 */
+	@ApiField("plot_area")
+	private String plotArea;
 
 	/**
 	 * 区域编码
@@ -122,6 +128,13 @@ public class CropsComplexInfo extends AlipayObject {
 	}
 	public void setPlantingInfo(List<CropsPlantingInfo> plantingInfo) {
 		this.plantingInfo = plantingInfo;
+	}
+
+	public String getPlotArea() {
+		return this.plotArea;
+	}
+	public void setPlotArea(String plotArea) {
+		this.plotArea = plotArea;
 	}
 
 	public String getRegionCode() {

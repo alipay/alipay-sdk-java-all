@@ -13,17 +13,29 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:16:38
+ * @since 1.0, 2023-01-13 15:46:37
  */
 public class AlipayMarketingVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2128783519363934888L;
+	private static final long serialVersionUID = 7594372297464166228L;
+
+	/** 
+	 * 是否当前可以使用
+	 */
+	@ApiField("available")
+	private Boolean available;
 
 	/** 
 	 * 券余额(元)
 	 */
 	@ApiField("available_amount")
 	private String availableAmount;
+
+	/** 
+	 * 可用次数
+	 */
+	@ApiField("available_count")
+	private Long availableCount;
 
 	/** 
 	 * 券交易账单信息(核销交易信息、交易退款信息等可能存在多条)
@@ -117,10 +129,22 @@ EXPIRED：已过期。
 	private String totalAmount;
 
 	/** 
+	 * 总次数
+	 */
+	@ApiField("total_count")
+	private Long totalCount;
+
+	/** 
 	 * 已转移金额
 	 */
 	@ApiField("transfer_amount")
 	private String transferAmount;
+
+	/** 
+	 * 已使用次数
+	 */
+	@ApiField("used_count")
+	private Long usedCount;
 
 	/** 
 	 * 券所属用户ID
@@ -140,11 +164,25 @@ EXPIRED：已过期。
 	@ApiField("voucher_id")
 	private String voucherId;
 
+	public void setAvailable(Boolean available) {
+		this.available = available;
+	}
+	public Boolean getAvailable( ) {
+		return this.available;
+	}
+
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
 	public String getAvailableAmount( ) {
 		return this.availableAmount;
+	}
+
+	public void setAvailableCount(Long availableCount) {
+		this.availableCount = availableCount;
+	}
+	public Long getAvailableCount( ) {
+		return this.availableCount;
 	}
 
 	public void setBillDetails(List<VoucherBillDetail> billDetails) {
@@ -238,11 +276,25 @@ EXPIRED：已过期。
 		return this.totalAmount;
 	}
 
+	public void setTotalCount(Long totalCount) {
+		this.totalCount = totalCount;
+	}
+	public Long getTotalCount( ) {
+		return this.totalCount;
+	}
+
 	public void setTransferAmount(String transferAmount) {
 		this.transferAmount = transferAmount;
 	}
 	public String getTransferAmount( ) {
 		return this.transferAmount;
+	}
+
+	public void setUsedCount(Long usedCount) {
+		this.usedCount = usedCount;
+	}
+	public Long getUsedCount( ) {
+		return this.usedCount;
 	}
 
 	public void setUserId(String userId) {

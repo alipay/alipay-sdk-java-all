@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约信息结果
  *
  * @author auto create
- * @since 1.0, 2022-03-30 16:59:21
+ * @since 1.0, 2023-01-12 11:07:45
  */
 public class EsignResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4662266889233751191L;
+	private static final long serialVersionUID = 8299595139321546415L;
+
+	/**
+	 * 用工企业和用户以及税筹服务商签订的三方协议的协议ID
+	 */
+	@ApiField("agreement_id")
+	private String agreementId;
 
 	/**
 	 * 用工企业和用户以及税筹ISV签订的三方协议的协议链接
@@ -39,6 +45,12 @@ SUMMARY_DECLARATION（汇总申报）
 	private String contractorName;
 
 	/**
+	 * 用户签约授权的支付宝账号登陆标识，默认脱敏。
+	 */
+	@ApiField("employee_alipay_logon_id")
+	private String employeeAlipayLogonId;
+
+	/**
 	 * 用工企业入驻后平台后，平台提供的企业编码
 	 */
 	@ApiField("employer_code")
@@ -49,6 +61,12 @@ SUMMARY_DECLARATION（汇总申报）
 	 */
 	@ApiField("identification_in_belonging_employer")
 	private String identificationInBelongingEmployer;
+
+	/**
+	 * 签约流程创建时提供的out_biz_no，如流程创建的时候未提供，则查询结果也为空
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 发薪模式，有限枚举。
@@ -84,6 +102,21 @@ DIRECT_PAYMENT（直接发薪）
 	@ApiField("termination_time")
 	private String terminationTime;
 
+	/**
+	 * 用工企业和灵工服务商的二方合作状态，有限枚举：
+ 1、SIGNED（已签约）
+ 2、TERMINATED(已解约)
+	 */
+	@ApiField("two_party_status")
+	private String twoPartyStatus;
+
+	public String getAgreementId() {
+		return this.agreementId;
+	}
+	public void setAgreementId(String agreementId) {
+		this.agreementId = agreementId;
+	}
+
 	public String getAgreementUrl() {
 		return this.agreementUrl;
 	}
@@ -112,6 +145,13 @@ DIRECT_PAYMENT（直接发薪）
 		this.contractorName = contractorName;
 	}
 
+	public String getEmployeeAlipayLogonId() {
+		return this.employeeAlipayLogonId;
+	}
+	public void setEmployeeAlipayLogonId(String employeeAlipayLogonId) {
+		this.employeeAlipayLogonId = employeeAlipayLogonId;
+	}
+
 	public String getEmployerCode() {
 		return this.employerCode;
 	}
@@ -124,6 +164,13 @@ DIRECT_PAYMENT（直接发薪）
 	}
 	public void setIdentificationInBelongingEmployer(String identificationInBelongingEmployer) {
 		this.identificationInBelongingEmployer = identificationInBelongingEmployer;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public String getPaySalaryModeEnum() {
@@ -159,6 +206,13 @@ DIRECT_PAYMENT（直接发薪）
 	}
 	public void setTerminationTime(String terminationTime) {
 		this.terminationTime = terminationTime;
+	}
+
+	public String getTwoPartyStatus() {
+		return this.twoPartyStatus;
+	}
+	public void setTwoPartyStatus(String twoPartyStatus) {
+		this.twoPartyStatus = twoPartyStatus;
 	}
 
 }

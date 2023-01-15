@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.afsrc.vul.create request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 03:09:52
+ * @since 1.0, 2023-01-11 04:42:14
  */
 public class AlipaySecurityProdAfsrcVulCreateRequest implements AlipayUploadRequest<AlipaySecurityProdAfsrcVulCreateResponse> {
 

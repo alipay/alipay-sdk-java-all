@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 地址信息
  *
  * @author auto create
- * @since 1.0, 2023-01-04 14:06:30
+ * @since 1.0, 2023-01-09 21:06:59
  */
 public class BusinessAddressDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5143445281386689882L;
+	private static final long serialVersionUID = 2484845383844858154L;
 
 	/**
 	 * 所在地市（代码）

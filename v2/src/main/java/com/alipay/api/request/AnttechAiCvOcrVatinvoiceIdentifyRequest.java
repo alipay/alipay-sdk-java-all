@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.ai.cv.ocr.vatinvoice.identify request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:19:46
+ * @since 1.0, 2023-01-11 06:17:24
  */
 public class AnttechAiCvOcrVatinvoiceIdentifyRequest implements AlipayRequest<AnttechAiCvOcrVatinvoiceIdentifyResponse> {
 

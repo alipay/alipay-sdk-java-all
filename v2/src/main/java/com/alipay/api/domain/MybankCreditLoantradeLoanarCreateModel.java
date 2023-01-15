@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机构代客户签署合约并放款
  *
  * @author auto create
- * @since 1.0, 2022-09-19 15:49:06
+ * @since 1.0, 2023-01-11 16:49:18
  */
 public class MybankCreditLoantradeLoanarCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1193624842786353997L;
+	private static final long serialVersionUID = 1134192912193199223L;
 
 	/**
 	 * 收款账号外标
@@ -59,6 +59,12 @@ public class MybankCreditLoantradeLoanarCreateModel extends AlipayObject {
 	 */
 	@ApiField("account_no")
 	private String accountNo;
+
+	/**
+	 * OpenId是某个用户在某个应用下的唯一用户标识， 对于同一个用户，不同应用拿到的OpenId是不同的，而且对于同一个应用，不同用户的OpenId是唯一的
+	 */
+	@ApiField("account_no_open_id")
+	private String accountNoOpenId;
 
 	/**
 	 * 收款方账户类型，枚举值有：
@@ -169,6 +175,12 @@ D：日
 	private Boolean needSignContract;
 
 	/**
+	 * OpenId是某个用户在某个应用下的唯一用户标识， 对于同一个用户，不同应用拿到的OpenId是不同的，而且对于同一个应用，不同用户的OpenId是唯一的
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 客户签约的销售产品编码，由网商银行事先分配给外部机构
 	 */
 	@ApiField("pd_code")
@@ -264,6 +276,13 @@ D：日
 	}
 	public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
+	}
+
+	public String getAccountNoOpenId() {
+		return this.accountNoOpenId;
+	}
+	public void setAccountNoOpenId(String accountNoOpenId) {
+		this.accountNoOpenId = accountNoOpenId;
 	}
 
 	public String getAccountType() {
@@ -376,6 +395,13 @@ D：日
 	}
 	public void setNeedSignContract(Boolean needSignContract) {
 		this.needSignContract = needSignContract;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPdCode() {

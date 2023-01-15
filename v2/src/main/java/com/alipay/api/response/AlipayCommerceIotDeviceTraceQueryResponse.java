@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.trace.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 01:48:52
+ * @since 1.0, 2023-01-11 05:32:03
  */
 public class AlipayCommerceIotDeviceTraceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5765554938921452336L;
+	private static final long serialVersionUID = 7237851853746573782L;
 
 	/** 
 	 * 返回了这段时间内设备的轨迹

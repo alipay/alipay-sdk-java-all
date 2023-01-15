@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DishonorOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 4561662581815349258L;
+	private static final long serialVersionUID = 8633889624547968467L;
 
 	/**
 	 * 退票金额：单位：元。

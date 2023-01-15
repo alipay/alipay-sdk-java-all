@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CheckPointVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4326385171852899625L;
+	private static final long serialVersionUID = 1331373126319525782L;
 
 	/**
 	 * 检查点是否通过

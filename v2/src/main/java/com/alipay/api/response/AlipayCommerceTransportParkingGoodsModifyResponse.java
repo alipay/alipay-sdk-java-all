@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.parking.goods.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 07:01:04
+ * @since 1.0, 2023-01-10 23:00:23
  */
 public class AlipayCommerceTransportParkingGoodsModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2897159714456391836L;
+	private static final long serialVersionUID = 4595632926163274128L;
 
 	/** 
 	 * 支付宝商品唯一ID

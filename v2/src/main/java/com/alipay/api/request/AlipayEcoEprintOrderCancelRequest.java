@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.eprint.order.cancel request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 08:05:02
+ * @since 1.0, 2023-01-11 05:32:51
  */
 public class AlipayEcoEprintOrderCancelRequest implements AlipayRequest<AlipayEcoEprintOrderCancelResponse> {
 
