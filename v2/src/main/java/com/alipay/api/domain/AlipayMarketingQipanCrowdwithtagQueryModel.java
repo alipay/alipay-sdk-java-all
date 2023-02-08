@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 标签圈选预估人群规模
  *
  * @author auto create
- * @since 1.0, 2023-01-09 10:18:51
+ * @since 1.0, 2023-01-17 15:49:21
  */
 public class AlipayMarketingQipanCrowdwithtagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8755961997827161199L;
+	private static final long serialVersionUID = 7817236878333946818L;
 
 	/**
 	 * 人群code，人群二次加工时必传

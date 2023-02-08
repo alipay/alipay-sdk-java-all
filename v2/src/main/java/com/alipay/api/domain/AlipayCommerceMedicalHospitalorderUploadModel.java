@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗机构医院订单上传接口
  *
  * @author auto create
- * @since 1.0, 2022-03-23 15:31:16
+ * @since 1.0, 2023-02-07 16:35:52
  */
 public class AlipayCommerceMedicalHospitalorderUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5782581197376831967L;
+	private static final long serialVersionUID = 7253796988467774256L;
 
 	/**
 	 * 订单金额

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCustomerJobworthPictureUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8364874353557854626L;
+	private static final long serialVersionUID = 6362495766715713753L;
 
 	/** 
 	 * 图片返回ID

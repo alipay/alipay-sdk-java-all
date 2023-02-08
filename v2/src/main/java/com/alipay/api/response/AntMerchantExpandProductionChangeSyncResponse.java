@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.production.change.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:44:25
+ * @since 1.0, 2023-02-06 14:19:10
  */
 public class AntMerchantExpandProductionChangeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6577635467933967592L;
+	private static final long serialVersionUID = 1328881247483422155L;
 
 	/** 
 	 * errorCode

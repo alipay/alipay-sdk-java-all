@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 3C租赁网商受托代扣URL地址获取
  *
  * @author auto create
- * @since 1.0, 2022-09-29 13:44:02
+ * @since 1.0, 2023-02-03 14:43:51
  */
 public class MybankCreditLoanapplyFinleaseTokenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3423899447532254471L;
+	private static final long serialVersionUID = 4812434655361592225L;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -42,6 +42,12 @@ public class MybankCreditLoanapplyFinleaseTokenQueryModel extends AlipayObject {
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
+
+	/**
+	 * 商户统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 操作类型
@@ -94,6 +100,13 @@ public class MybankCreditLoanapplyFinleaseTokenQueryModel extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOptionType() {

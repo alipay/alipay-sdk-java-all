@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.interactiveprod.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 11:59:21
+ * @since 1.0, 2023-01-18 11:16:37
  */
 public class AlipaySecurityProdInteractiveprodInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2446227835531889628L;
+	private static final long serialVersionUID = 8577254371549383164L;
 
 	/** 
 	 * 扩展参数，JSON格式
@@ -21,7 +21,7 @@ public class AlipaySecurityProdInteractiveprodInitializeResponse extends AlipayR
 	private String extParams;
 
 	/** 
-	 * 交互Id，格式为SSP_CONTEXT_bizId_userId
+	 * 交互Id，格式为SSP_CONTEXT_bizId
 	 */
 	@ApiField("interact_id")
 	private String interactId;

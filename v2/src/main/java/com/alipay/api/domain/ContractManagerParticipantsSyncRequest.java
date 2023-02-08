@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 参与人
  *
  * @author auto create
- * @since 1.0, 2020-05-25 09:43:10
+ * @since 1.0, 2023-01-30 10:26:17
  */
 public class ContractManagerParticipantsSyncRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6626781422335978318L;
+	private static final long serialVersionUID = 1149159755453351827L;
 
 	/**
 	 * 参与人名称
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 支付宝账号openidId,数组关联多个支付宝账号 （如果未注册支付宝账号 则为空）
+	 */
+	@ApiListField("open_ids")
+	@ApiField("string")
+	private List<String> openIds;
 
 	/**
 	 * 参与人主体名称
@@ -64,6 +71,13 @@ public class ContractManagerParticipantsSyncRequest extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public List<String> getOpenIds() {
+		return this.openIds;
+	}
+	public void setOpenIds(List<String> openIds) {
+		this.openIds = openIds;
 	}
 
 	public String getPrincipalName() {

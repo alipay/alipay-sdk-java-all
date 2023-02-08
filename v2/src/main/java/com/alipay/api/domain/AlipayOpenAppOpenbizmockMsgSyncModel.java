@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * cechsi
  *
  * @author auto create
- * @since 1.0, 2022-09-14 20:32:38
+ * @since 1.0, 2023-01-30 19:08:30
  */
 public class AlipayOpenAppOpenbizmockMsgSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5552966741677782914L;
+	private static final long serialVersionUID = 6127243467666727781L;
 
 	/**
 	 * 1

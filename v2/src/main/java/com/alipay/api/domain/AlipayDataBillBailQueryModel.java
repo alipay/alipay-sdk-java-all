@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillBailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1865623235415859452L;
+	private static final long serialVersionUID = 4889932818451373153L;
 
 	/**
 	 * 保证金类型，目前支持TMALL_BAIL-天猫保证金，TAOBAO_BAIL-淘宝保证金

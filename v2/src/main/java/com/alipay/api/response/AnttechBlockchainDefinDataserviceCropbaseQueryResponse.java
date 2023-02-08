@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.dataservice.cropbase.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:51:40
+ * @since 1.0, 2023-02-02 15:06:41
  */
 public class AnttechBlockchainDefinDataserviceCropbaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6214556547283359163L;
+	private static final long serialVersionUID = 1871636928311589694L;
 
 	/** 
 	 * 作物编码列表
@@ -58,6 +58,12 @@ public class AnttechBlockchainDefinDataserviceCropbaseQueryResponse extends Alip
 	@ApiListField("planting_info")
 	@ApiField("crops_planting_info")
 	private List<CropsPlantingInfo> plantingInfo;
+
+	/** 
+	 * 地块面积
+	 */
+	@ApiField("plot_area")
+	private String plotArea;
 
 	/** 
 	 * 区域编码
@@ -130,6 +136,13 @@ public class AnttechBlockchainDefinDataserviceCropbaseQueryResponse extends Alip
 	}
 	public List<CropsPlantingInfo> getPlantingInfo( ) {
 		return this.plantingInfo;
+	}
+
+	public void setPlotArea(String plotArea) {
+		this.plotArea = plotArea;
+	}
+	public String getPlotArea( ) {
+		return this.plotArea;
 	}
 
 	public void setRegionCode(String regionCode) {

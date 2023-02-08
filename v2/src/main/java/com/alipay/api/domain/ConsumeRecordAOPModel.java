@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 消费记录信息-主记录
  *
  * @author auto create
- * @since 1.0, 2022-11-08 20:11:10
+ * @since 1.0, 2023-01-30 20:03:19
  */
 public class ConsumeRecordAOPModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7728537532961779831L;
+	private static final long serialVersionUID = 1766999774134814947L;
 
 	/**
 	 * 接入渠道
@@ -247,6 +247,12 @@ public class ConsumeRecordAOPModel extends AlipayObject {
 	private String oppositeNickName;
 
 	/**
+	 * 对方卡号
+	 */
+	@ApiField("opposite_open_id")
+	private String oppositeOpenId;
+
+	/**
 	 * 消费记录原标题
 	 */
 	@ApiField("orig_consume_title")
@@ -281,6 +287,12 @@ public class ConsumeRecordAOPModel extends AlipayObject {
 	 */
 	@ApiField("owner_nick")
 	private String ownerNick;
+
+	/**
+	 * 本方卡号
+	 */
+	@ApiField("owner_open_id")
+	private String ownerOpenId;
 
 	/**
 	 * 合作伙伴ID
@@ -596,6 +608,13 @@ public class ConsumeRecordAOPModel extends AlipayObject {
 		this.oppositeNickName = oppositeNickName;
 	}
 
+	public String getOppositeOpenId() {
+		return this.oppositeOpenId;
+	}
+	public void setOppositeOpenId(String oppositeOpenId) {
+		this.oppositeOpenId = oppositeOpenId;
+	}
+
 	public String getOrigConsumeTitle() {
 		return this.origConsumeTitle;
 	}
@@ -636,6 +655,13 @@ public class ConsumeRecordAOPModel extends AlipayObject {
 	}
 	public void setOwnerNick(String ownerNick) {
 		this.ownerNick = ownerNick;
+	}
+
+	public String getOwnerOpenId() {
+		return this.ownerOpenId;
+	}
+	public void setOwnerOpenId(String ownerOpenId) {
+		this.ownerOpenId = ownerOpenId;
 	}
 
 	public String getPartnerId() {

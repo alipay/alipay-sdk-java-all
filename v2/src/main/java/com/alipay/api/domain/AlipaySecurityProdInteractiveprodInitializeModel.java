@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 初始化交互式风控产品
  *
  * @author auto create
- * @since 1.0, 2022-04-07 19:37:26
+ * @since 1.0, 2023-01-18 10:57:34
  */
 public class AlipaySecurityProdInteractiveprodInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1569995536989288671L;
+	private static final long serialVersionUID = 1719874367236755881L;
 
 	/**
-	 * 业务Id，全局唯一id，可以是uuid
+	 * 业务id，标识唯一一次调用，全局唯一，可以是uuid
 	 */
 	@ApiField("biz_id")
 	private String bizId;
@@ -26,25 +26,31 @@ public class AlipaySecurityProdInteractiveprodInitializeModel extends AlipayObje
 	private String bizRequestParams;
 
 	/**
-	 * 是否需要推荐，若为false，需在biz_request_params中传递productList
+	 * 是否走策略推荐，若为true，则由策略动态决策，默认为false
 	 */
 	@ApiField("need_consult")
 	private Boolean needConsult;
 
 	/**
-	 * 场景Id，格式为systemName_bizProduct_bizProdNode_accessChannel，标识系统-产品-产品节点-接入渠道
+	 * 用户（user_id）在应用（appId）下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 场景id，格式为systemName_bizProduct_bizProdNode_accessChannel，标识系统-产品-产品节点-接入渠道
 	 */
 	@ApiField("scene_id")
 	private String sceneId;
 
 	/**
-	 * 租户id
+	 * 租户id，用以区分各商户，例如公司名称英文缩写
 	 */
 	@ApiField("tenant_id")
 	private String tenantId;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 用户id，用以标识单个用户，可以为用户支付宝账号
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -68,6 +74,13 @@ public class AlipaySecurityProdInteractiveprodInitializeModel extends AlipayObje
 	}
 	public void setNeedConsult(Boolean needConsult) {
 		this.needConsult = needConsult;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneId() {

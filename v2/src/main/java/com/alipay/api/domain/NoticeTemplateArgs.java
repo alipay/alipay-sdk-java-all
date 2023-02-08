@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NoticeTemplateArgs extends AlipayObject {
 
-	private static final long serialVersionUID = 4565863659735917545L;
+	private static final long serialVersionUID = 7655779623768893626L;
 
 	/**
 	 * 课程开始时间

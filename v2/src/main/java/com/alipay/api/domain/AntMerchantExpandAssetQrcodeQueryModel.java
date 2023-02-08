@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 码值信息查询接口
  *
  * @author auto create
- * @since 1.0, 2021-11-25 16:11:15
+ * @since 1.0, 2023-02-06 14:18:59
  */
 public class AntMerchantExpandAssetQrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2843776997886642312L;
+	private static final long serialVersionUID = 1513342548228275657L;
 
 	/**
 	 * 二维码编码

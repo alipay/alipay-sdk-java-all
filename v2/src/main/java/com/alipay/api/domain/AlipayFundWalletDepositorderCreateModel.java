@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户充值创建订单
  *
  * @author auto create
- * @since 1.0, 2022-12-16 21:33:49
+ * @since 1.0, 2023-02-06 13:52:54
  */
 public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8773721215624431663L;
+	private static final long serialVersionUID = 6198283837516361449L;
 
 	/**
 	 * 充值的本金金额
@@ -40,7 +40,7 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	private String expandAmount;
 
 	/**
-	 * 标题
+	 * 会展示在用户个人消费记录备注，默认为专属钱包充值
 	 */
 	@ApiField("order_title")
 	private String orderTitle;
@@ -58,13 +58,20 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	private ParticipantForm payeeInfo;
 
 	/**
+	 * 如何是app充值使用mobile
+如果是pc充值使用PC
+	 */
+	@ApiField("platform")
+	private String platform;
+
+	/**
 	 * 销售产品码
 	 */
 	@ApiField("product_code")
 	private String productCode;
 
 	/**
-	 * 备注
+	 * 会展示在用户个人消费记录备注，默认为专属钱包充值
 	 */
 	@ApiField("remark")
 	private String remark;
@@ -134,6 +141,13 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	}
 	public void setPayeeInfo(ParticipantForm payeeInfo) {
 		this.payeeInfo = payeeInfo;
+	}
+
+	public String getPlatform() {
+		return this.platform;
+	}
+	public void setPlatform(String platform) {
+		this.platform = platform;
 	}
 
 	public String getProductCode() {

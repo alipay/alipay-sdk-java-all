@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.pcbenefitcore.bfactivitfacade.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-20 20:40:11
+ * @since 1.0, 2023-02-02 19:15:46
  */
 public class AlipayPcreditHuabeiPcbenefitcoreBfactivitfacadeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7572195273413813162L;
+	private static final long serialVersionUID = 4288613899321186278L;
 
 	/** 
 	 * 错误信息，参考通用错误格式

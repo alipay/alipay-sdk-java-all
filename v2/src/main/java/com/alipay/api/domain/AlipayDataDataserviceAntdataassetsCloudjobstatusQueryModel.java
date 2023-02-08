@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAntdataassetsCloudjobstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3275679952218566559L;
+	private static final long serialVersionUID = 8321522486323165223L;
 
 	/**
 	 * 分区信息

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 人群洞察分析数据
+ * 画像分析数据
  *
  * @author auto create
- * @since 1.0, 2022-12-30 17:54:11
+ * @since 1.0, 2023-01-30 11:15:28
  */
 public class PortraitDataVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5563443381266344178L;
+	private static final long serialVersionUID = 3623447694375328268L;
 
 	/**
 	 * 覆盖率，画像值中去除未知和其他后的总量占当前画像总量的比例

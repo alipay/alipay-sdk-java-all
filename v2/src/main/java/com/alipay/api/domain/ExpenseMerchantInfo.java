@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户信息
  *
  * @author auto create
- * @since 1.0, 2021-09-24 16:47:19
+ * @since 1.0, 2023-02-01 17:50:32
  */
 public class ExpenseMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8761162532482199945L;
+	private static final long serialVersionUID = 2372316582758162259L;
 
 	/**
 	 * 商户名称
 	 */
 	@ApiField("merchant_name")
 	private String merchantName;
+
+	/**
+	 * 商户ID
+	 */
+	@ApiField("pid")
+	private String pid;
 
 	/**
 	 * 商户角色ID
@@ -50,6 +56,13 @@ public class ExpenseMerchantInfo extends AlipayObject {
 	}
 	public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
+	}
+
+	public String getPid() {
+		return this.pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
 	}
 
 	public String getRoleId() {

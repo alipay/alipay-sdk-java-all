@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.mindv.answers.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:05:23
+ * @since 1.0, 2023-02-03 16:05:17
  */
 public class AlipayIserviceMindvAnswersBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1571386783258328635L;
+	private static final long serialVersionUID = 2721891168173425737L;
 
 	/** 
 	 * 当前分页码_和入参保持一致

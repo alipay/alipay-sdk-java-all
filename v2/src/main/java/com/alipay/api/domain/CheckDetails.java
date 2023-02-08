@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 检测详情
  *
  * @author auto create
- * @since 1.0, 2022-05-23 11:32:48
+ * @since 1.0, 2023-02-06 14:15:41
  */
 public class CheckDetails extends AlipayObject {
 
-	private static final long serialVersionUID = 8783375454633945327L;
+	private static final long serialVersionUID = 1744498635669974481L;
 
 	/**
 	 * 替换旧SN的新SN

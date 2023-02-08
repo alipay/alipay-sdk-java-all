@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝账户风险风险
  *
  * @author auto create
- * @since 1.0, 2021-04-01 10:25:33
+ * @since 1.0, 2023-02-07 17:00:15
  */
 public class AlipaySecurityRiskCustomerriskrankGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6655579267954319993L;
+	private static final long serialVersionUID = 2375523364548218785L;
 
 	/**
 	 * 证件号码，除了场景id必填，其他几个参数不能同时为空
@@ -30,6 +30,12 @@ public class AlipaySecurityRiskCustomerriskrankGetModel extends AlipayObject {
 	 */
 	@ApiField("mobile")
 	private String mobile;
+
+	/**
+	 * 支付宝账户id ，除了场景id必填，其他几个参数不能同时为空
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 场景id
@@ -62,6 +68,13 @@ public class AlipaySecurityRiskCustomerriskrankGetModel extends AlipayObject {
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSceneId() {

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 赊呗分月付用户准入查询
  *
  * @author auto create
- * @since 1.0, 2022-10-28 11:31:17
+ * @since 1.0, 2023-02-03 14:43:49
  */
 public class MybankCreditLoanapplyFinleaseConsultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8476651879998663322L;
+	private static final long serialVersionUID = 6827278521849134865L;
 
 	/**
 	 * 公司名称
 	 */
 	@ApiField("corporationname")
 	private String corporationname;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 工商注册号
@@ -36,6 +42,13 @@ public class MybankCreditLoanapplyFinleaseConsultQueryModel extends AlipayObject
 	}
 	public void setCorporationname(String corporationname) {
 		this.corporationname = corporationname;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRegistrationno() {

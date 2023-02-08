@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.auth.userauth.token.create request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:51:40
+ * @since 1.0, 2023-02-01 17:21:00
  */
 public class AlipayOpenAuthUserauthTokenCreateRequest implements AlipayRequest<AlipayOpenAuthUserauthTokenCreateResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸核身初始化
  *
  * @author auto create
- * @since 1.0, 2022-07-22 17:47:03
+ * @since 1.0, 2023-01-16 11:51:39
  */
 public class DatadigitalFincloudGeneralsaasFaceVerificationInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6584285725168915112L;
+	private static final long serialVersionUID = 6281191372689342246L;
 
 	/**
 	 * 人脸核身具体类型目前仅支持：DATA_DIGITAL_BIZ_CODE_FACE_VERIFICATION

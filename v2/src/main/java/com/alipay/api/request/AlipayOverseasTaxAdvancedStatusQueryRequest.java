@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.tax.advanced.status.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:51:40
+ * @since 1.0, 2023-01-31 18:00:35
  */
 public class AlipayOverseasTaxAdvancedStatusQueryRequest implements AlipayRequest<AlipayOverseasTaxAdvancedStatusQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询有效子凭证详细信息
  *
  * @author auto create
- * @since 1.0, 2021-06-23 15:39:21
+ * @since 1.0, 2023-02-07 16:11:15
  */
 public class AlipayMarketingCampaignSubcertQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8126373198861814952L;
+	private static final long serialVersionUID = 1883393977233139973L;
 
 	/**
 	 * 用户登录账号名：邮箱或手机号。已知支付宝账号的活动触发调用中，user_id与login_id至少有一个非空，都非空时，以user_id为准。
@@ -24,6 +24,12 @@ public class AlipayMarketingCampaignSubcertQueryModel extends AlipayObject {
 	 */
 	@ApiField("lot_num")
 	private String lotNum;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝用户uid：支付宝用户唯一标识。该参数用于已知支付宝账号的活动触发。user_id、login_id两个参数至少有一个非空。
@@ -43,6 +49,13 @@ public class AlipayMarketingCampaignSubcertQueryModel extends AlipayObject {
 	}
 	public void setLotNum(String lotNum) {
 		this.lotNum = lotNum;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

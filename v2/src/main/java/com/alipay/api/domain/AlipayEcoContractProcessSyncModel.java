@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签署平台合同流程同步
  *
  * @author auto create
- * @since 1.0, 2020-05-28 11:05:33
+ * @since 1.0, 2023-01-30 10:26:17
  */
 public class AlipayEcoContractProcessSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4658335436938547791L;
+	private static final long serialVersionUID = 5349459465187777122L;
 
 	/**
 	 * MCCCode

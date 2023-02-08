@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 农作物基础信息查询
  *
  * @author auto create
- * @since 1.0, 2022-10-10 19:45:48
+ * @since 1.0, 2023-02-02 15:06:17
  */
 public class AnttechBlockchainDefinDataserviceCropbaseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1177349143276877772L;
+	private static final long serialVersionUID = 2539191193213713489L;
 
 	/**
 	 * 区域编码，省市区镇四级编码或区块ID

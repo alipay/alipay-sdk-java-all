@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 每条结算明细
  *
  * @author auto create
- * @since 1.0, 2022-08-29 18:05:33
+ * @since 1.0, 2023-02-03 18:04:32
  */
 public class BizFundSettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1445267386151452849L;
+	private static final long serialVersionUID = 7618919665461137327L;
 
 	/**
 	 * 入账金额

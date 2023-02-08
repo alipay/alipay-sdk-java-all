@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.bill.simple.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-10 15:40:34
+ * @since 1.0, 2023-01-30 14:51:39
  */
 public class AlipayUserBillSimpleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4795778432965553229L;
+	private static final long serialVersionUID = 5619262366343835822L;
 
 	/** 
 	 * 交易金额/转账金额。单位为元

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金明细模型
  *
  * @author auto create
- * @since 1.0, 2022-11-08 20:11:10
+ * @since 1.0, 2023-01-30 20:03:19
  */
 public class FundItemAOPModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1695958649326391259L;
+	private static final long serialVersionUID = 4245816948243856681L;
 
 	/**
 	 * 财务外部单据号
@@ -196,6 +196,12 @@ public class FundItemAOPModel extends AlipayObject {
 	private String fundToolOwnerCardNo;
 
 	/**
+	 * fundToolBelongToCROwner为false时，该字段记录资金工具的实际拥有者
+	 */
+	@ApiField("fund_tool_owner_open_id")
+	private String fundToolOwnerOpenId;
+
+	/**
 	 * 面向用户的资金工具类型
 	 */
 	@ApiField("fund_tool_type_for_crowner")
@@ -238,10 +244,22 @@ public class FundItemAOPModel extends AlipayObject {
 	private String oppositeBizCardNo;
 
 	/**
+	 * 导致该资金变动在业务上的另一方的卡别名。
+	 */
+	@ApiField("opposite_biz_open_id")
+	private String oppositeBizOpenId;
+
+	/**
 	 * 导致该资金变动在资金上的另一方的卡别名。
 	 */
 	@ApiField("opposite_fund_card_no")
 	private String oppositeFundCardNo;
+
+	/**
+	 * 导致该资金变动在资金上的另一方的卡别名。
+	 */
+	@ApiField("opposite_fund_open_id")
+	private String oppositeFundOpenId;
 
 	/**
 	 * 外部请求号
@@ -254,6 +272,12 @@ public class FundItemAOPModel extends AlipayObject {
 	 */
 	@ApiField("owner_card_no")
 	private String ownerCardNo;
+
+	/**
+	 * 本方卡号
+	 */
+	@ApiField("owner_open_id")
+	private String ownerOpenId;
 
 	/**
 	 * 银行卡退款进度状态
@@ -501,6 +525,13 @@ public class FundItemAOPModel extends AlipayObject {
 		this.fundToolOwnerCardNo = fundToolOwnerCardNo;
 	}
 
+	public String getFundToolOwnerOpenId() {
+		return this.fundToolOwnerOpenId;
+	}
+	public void setFundToolOwnerOpenId(String fundToolOwnerOpenId) {
+		this.fundToolOwnerOpenId = fundToolOwnerOpenId;
+	}
+
 	public String getFundToolTypeForCrowner() {
 		return this.fundToolTypeForCrowner;
 	}
@@ -550,11 +581,25 @@ public class FundItemAOPModel extends AlipayObject {
 		this.oppositeBizCardNo = oppositeBizCardNo;
 	}
 
+	public String getOppositeBizOpenId() {
+		return this.oppositeBizOpenId;
+	}
+	public void setOppositeBizOpenId(String oppositeBizOpenId) {
+		this.oppositeBizOpenId = oppositeBizOpenId;
+	}
+
 	public String getOppositeFundCardNo() {
 		return this.oppositeFundCardNo;
 	}
 	public void setOppositeFundCardNo(String oppositeFundCardNo) {
 		this.oppositeFundCardNo = oppositeFundCardNo;
+	}
+
+	public String getOppositeFundOpenId() {
+		return this.oppositeFundOpenId;
+	}
+	public void setOppositeFundOpenId(String oppositeFundOpenId) {
+		this.oppositeFundOpenId = oppositeFundOpenId;
 	}
 
 	public String getOutRequestNo() {
@@ -569,6 +614,13 @@ public class FundItemAOPModel extends AlipayObject {
 	}
 	public void setOwnerCardNo(String ownerCardNo) {
 		this.ownerCardNo = ownerCardNo;
+	}
+
+	public String getOwnerOpenId() {
+		return this.ownerOpenId;
+	}
+	public void setOwnerOpenId(String ownerOpenId) {
+		this.ownerOpenId = ownerOpenId;
 	}
 
 	public String getRefundBankStatus() {

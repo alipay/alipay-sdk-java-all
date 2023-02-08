@@ -7,17 +7,25 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付企业签约
  *
  * @author auto create
- * @since 1.0, 2022-12-22 14:37:22
+ * @since 1.0, 2023-01-31 19:55:20
  */
 public class AlipayFundEnterprisepaySignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8297622494612567921L;
+	private static final long serialVersionUID = 3565148791675472294L;
 
 	/**
 	 * 企业简称，传空采用默认规则命名，使用公司名称
 	 */
 	@ApiField("account_name")
 	private String accountName;
+
+	/**
+	 * 指定签约终端类型
+PC-电脑浏览器
+MOBILE-手机端
+	 */
+	@ApiField("appoint_sign_terminal")
+	private String appointSignTerminal;
 
 	/**
 	 * 业务场景，联系支付宝分配
@@ -35,7 +43,8 @@ public class AlipayFundEnterprisepaySignModel extends AlipayObject {
 	 * 开户账号：
 当identity_type是ALIPAY_USER_ID时填支付宝会员ID（2088开头）；
 当identity_type是ALIPAY_LOGON_ID 时填支付宝登录号；
-当identity_type是OUT_USER_ID时填外部平台的用户uid
+当identity_type是OUT_USER_ID时填外部平台的用户uid;
+当identity_type是ALIPAY_OPEN_ID时填用户openId
 	 */
 	@ApiField("identity")
 	private String identity;
@@ -85,6 +94,13 @@ public class AlipayFundEnterprisepaySignModel extends AlipayObject {
 	}
 	public void setAccountName(String accountName) {
 		this.accountName = accountName;
+	}
+
+	public String getAppointSignTerminal() {
+		return this.appointSignTerminal;
+	}
+	public void setAppointSignTerminal(String appointSignTerminal) {
+		this.appointSignTerminal = appointSignTerminal;
 	}
 
 	public String getBizScene() {

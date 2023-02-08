@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.normalpay.operate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:08:07
+ * @since 1.0, 2023-02-06 10:56:15
  */
 public class MybankPaymentTradeNormalpayOperateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7844717898379899337L;
+	private static final long serialVersionUID = 3136517965871357983L;
 
 	/** 
 	 * 预期交易金额，交易请求时的金额，单位:分

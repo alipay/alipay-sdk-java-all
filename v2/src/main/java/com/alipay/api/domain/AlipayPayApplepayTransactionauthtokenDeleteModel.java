@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 注销拉取支付结果通知的权限authToken
  *
  * @author auto create
- * @since 1.0, 2022-11-03 15:10:42
+ * @since 1.0, 2023-01-31 17:05:51
  */
 public class AlipayPayApplepayTransactionauthtokenDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8341629378167699486L;
+	private static final long serialVersionUID = 8619715878997842318L;
 
 	/**
 	 * 设备id
@@ -46,6 +46,12 @@ public class AlipayPayApplepayTransactionauthtokenDeleteModel extends AlipayObje
 	 */
 	@ApiField("reference_identifier")
 	private String referenceIdentifier;
+
+	/**
+	 * uid
+	 */
+	@ApiField("reference_open_id")
+	private String referenceOpenId;
 
 	public String getDeviceIdentifier() {
 		return this.deviceIdentifier;
@@ -80,6 +86,13 @@ public class AlipayPayApplepayTransactionauthtokenDeleteModel extends AlipayObje
 	}
 	public void setReferenceIdentifier(String referenceIdentifier) {
 		this.referenceIdentifier = referenceIdentifier;
+	}
+
+	public String getReferenceOpenId() {
+		return this.referenceOpenId;
+	}
+	public void setReferenceOpenId(String referenceOpenId) {
+		this.referenceOpenId = referenceOpenId;
 	}
 
 }

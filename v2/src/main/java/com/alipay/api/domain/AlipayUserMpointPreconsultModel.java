@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员积分接入预咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-08-04 19:13:46
+ * @since 1.0, 2023-01-30 13:14:17
  */
 public class AlipayUserMpointPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4383172978881618912L;
+	private static final long serialVersionUID = 1359954169381461387L;
 
 	/**
 	 * 业务子场景，由支付宝侧分配，在积分发放场景下要求必传
@@ -30,6 +30,12 @@ public class AlipayUserMpointPreconsultModel extends AlipayObject {
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 目标操作的积分数
@@ -62,6 +68,13 @@ public class AlipayUserMpointPreconsultModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPoint() {

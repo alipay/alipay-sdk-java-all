@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社区互娱平台场景上报行为
  *
  * @author auto create
- * @since 1.0, 2020-02-27 09:40:02
+ * @since 1.0, 2023-02-07 11:55:43
  */
 public class AlipaySocialAntiepSceneSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1847389761669833823L;
+	private static final long serialVersionUID = 1879511965579378617L;
 
 	/**
 	 * 行为业务参数，用于业务流处理时所需参数转换，map<String,String> 的 json格式

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 流程信息
  *
  * @author auto create
- * @since 1.0, 2020-05-27 18:20:10
+ * @since 1.0, 2023-01-30 10:26:17
  */
 public class ContractManagerProcessSyncRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7668874167595723657L;
+	private static final long serialVersionUID = 8556652716159175865L;
 
 	/**
 	 * 签署文档内容摘要

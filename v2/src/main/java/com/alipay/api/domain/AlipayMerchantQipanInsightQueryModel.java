@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 棋盘开放-人群洞察分析
  *
  * @author auto create
- * @since 1.0, 2023-01-05 17:19:11
+ * @since 1.0, 2023-01-30 14:40:50
  */
 public class AlipayMerchantQipanInsightQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4375483571684525532L;
+	private static final long serialVersionUID = 5274563971991754923L;
 
 	/**
 	 * 人群id，按人群分析时必传

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票详情模型
  *
  * @author auto create
- * @since 1.0, 2022-12-26 16:47:12
+ * @since 1.0, 2023-02-07 15:10:36
  */
 public class InvoiceModelContent extends AlipayObject {
 
-	private static final long serialVersionUID = 4246598887352896865L;
+	private static final long serialVersionUID = 5829796769611977178L;
 
 	/**
 	 * 支付宝端的申请id。如果在开票过程中，是通过支付宝提交的申请到机构端，支付宝会带上开票申请在支付宝生成的申请id，机构在回传发票的时候只需要回传这个申请id，不用获取用户的uid，支付宝可以根据申请id将发票归集到对应的用户名下
@@ -39,7 +39,7 @@ jpg（发票原文件缩略图）
 
 	/**
 	 * 发票原文件下载地址
-1.当tax_type=PLAIN时，
+1.当tax_type=PLAIN、ALL_ELECTRONIC_GENERAL或ALL_ELECTRONIC_SPECIAL时，
 file_download_url必传
 且file_download_type取值范围为pdf或ofd；
 2.当tax_type=SPECIAL时，
@@ -75,7 +75,7 @@ file_download_type可以传入pdf，ofd，jpg
 	private String invoiceAmount;
 
 	/**
-	 * 发票代码，国税局生成的唯一值，不可为空串
+	 * 发票代码，为国税局生成的唯一值，全电票时为空，其他情况不可为空
 	 */
 	@ApiField("invoice_code")
 	private String invoiceCode;
@@ -146,7 +146,7 @@ red（红票）
 	private String openId;
 
 	/**
-	 * 仅用于同步红票，原始蓝票发票代码，同步红票时必传
+	 * 仅用于同步红票，原始蓝票发票代码，同步红票时必传（全电票时为空）
 	 */
 	@ApiField("original_blue_invoice_code")
 	private String originalBlueInvoiceCode;
@@ -222,6 +222,8 @@ red（红票）
 	 * 税种
 可选值：
 PLAIN：增值税电子普通发票
+ALL_ELECTRONIC_GENERAL：电子发票（普通发票）
+ALL_ELECTRONIC_SPECIAL：电子发票（增值税专用发票）
 SPECIAL：增值税专用发票
 PLAIN_INVOICE:增值税普通发票
 FINANCIAL_ELECTRONIC_BILL:财政电子票据

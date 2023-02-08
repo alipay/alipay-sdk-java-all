@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员积分接入预咨询接口（需要用户授权）
  *
  * @author auto create
- * @since 1.0, 2022-05-11 10:45:41
+ * @since 1.0, 2023-01-16 16:05:11
  */
 public class AlipayUserMpointAuthbasePreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3155168412625371863L;
+	private static final long serialVersionUID = 1779582547983321956L;
 
 	/**
 	 * 业务子类型，由会员方面分配

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图文分析-按文章查询数据接口
  *
  * @author auto create
- * @since 1.0, 2020-04-07 10:53:38
+ * @since 1.0, 2023-02-02 11:19:53
  */
 public class AlipayOpenPublicSinglearticleDataBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8451482221923658582L;
+	private static final long serialVersionUID = 5277158418216644177L;
 
 	/**
 	 * 数据开始日期，时间格式为 "yyyyMMdd" 。

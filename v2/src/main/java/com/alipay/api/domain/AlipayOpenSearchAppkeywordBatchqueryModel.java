@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序已配置关键词
  *
  * @author auto create
- * @since 1.0, 2022-12-27 10:20:50
+ * @since 1.0, 2023-02-03 16:27:14
  */
 public class AlipayOpenSearchAppkeywordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8444511926482425942L;
+	private static final long serialVersionUID = 4719727394346676143L;
 
 	/**
 	 * 当前页
@@ -24,6 +24,12 @@ public class AlipayOpenSearchAppkeywordBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 关键词的状态，枚举值，不传该字段表示查询所有状态
+	 */
+	@ApiField("status")
+	private String status;
 
 	/**
 	 * 小程序id
@@ -43,6 +49,13 @@ public class AlipayOpenSearchAppkeywordBatchqueryModel extends AlipayObject {
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getTargetAppid() {

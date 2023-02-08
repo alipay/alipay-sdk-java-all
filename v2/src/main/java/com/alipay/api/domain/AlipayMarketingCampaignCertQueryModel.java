@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户有效的凭证详细信息，营销新平台使用
  *
  * @author auto create
- * @since 1.0, 2020-05-19 14:51:59
+ * @since 1.0, 2023-02-07 16:11:21
  */
 public class AlipayMarketingCampaignCertQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3342629141711663437L;
+	private static final long serialVersionUID = 4237384129611999958L;
 
 	/**
 	 * 营销平台凭证批次号，可能是数字和字母的组合
@@ -24,6 +24,12 @@ public class AlipayMarketingCampaignCertQueryModel extends AlipayObject {
 	 */
 	@ApiField("login_id")
 	private String loginId;
+
+	/**
+	 * open_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID：支付宝用户唯一标识。该参数用于已知支付宝账号的活动触发。user_id、login_id两个参数至少有一个非空。
@@ -43,6 +49,13 @@ public class AlipayMarketingCampaignCertQueryModel extends AlipayObject {
 	}
 	public void setLoginId(String loginId) {
 		this.loginId = loginId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

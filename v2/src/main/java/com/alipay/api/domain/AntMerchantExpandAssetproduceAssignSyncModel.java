@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 生产指令接收反馈接口
  *
  * @author auto create
- * @since 1.0, 2021-11-19 16:03:01
+ * @since 1.0, 2023-02-06 14:22:07
  */
 public class AntMerchantExpandAssetproduceAssignSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8687462758182532996L;
+	private static final long serialVersionUID = 2599218635725245887L;
 
 	/**
 	 * 生产指令接收情况，最多200条

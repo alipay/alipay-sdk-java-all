@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.settle.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-01-12 16:46:44
+ * @since 1.0, 2023-01-17 16:08:07
  */
 public class AlipayTradeSettleConfirmRequest implements AlipayRequest<AlipayTradeSettleConfirmResponse> {
 

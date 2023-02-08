@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家用户人群包中追加用户
  *
  * @author auto create
- * @since 1.0, 2022-09-30 19:31:38
+ * @since 1.0, 2023-01-17 20:27:15
  */
 public class AlipayMerchantQipanCrowduserAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3165963855745113257L;
+	private static final long serialVersionUID = 4494161695936295281L;
 
 	/**
 	 * 支付宝人群code

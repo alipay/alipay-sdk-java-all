@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询商家人群
  *
  * @author auto create
- * @since 1.0, 2022-08-02 10:29:30
+ * @since 1.0, 2023-01-17 20:27:17
  */
 public class AlipayMerchantQipanCrowdQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5881126732735476155L;
+	private static final long serialVersionUID = 8376325952194469277L;
 
 	/**
 	 * 支付宝人群code

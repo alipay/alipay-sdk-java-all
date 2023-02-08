@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7842978416837829686L;
+	private static final long serialVersionUID = 8878781134351326851L;
 
 	/**
 	 * 企业共同账户id，和授权签约协议号共同使用。
@@ -30,9 +30,9 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
-	 * 费控咨询模式，默认为0
+	 * 费控咨询模式，默认为0。
 0-支付宝内部计算
-1-咨询外部服务商
+1-咨询外部服务商（此模式不可创建发放规则，不可创建额度相关规则的条件，消费模式需为"默认"）
 	 */
 	@ApiField("consult_mode")
 	private String consultMode;
@@ -74,7 +74,7 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	private String institutionName;
 
 	/**
-	 * 发放规则列表（可空），一个制度下最多创建10条发放规则。
+	 * 发放规则列表（可空），一个制度下最多创建10条发放规则。咨询模式为“咨询外部服务商”时不可用
 	 */
 	@ApiListField("issue_rule_info_list")
 	@ApiField("issue_rule_info")

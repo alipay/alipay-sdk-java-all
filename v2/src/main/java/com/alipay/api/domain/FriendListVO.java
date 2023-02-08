@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好友列表的模型对象
  *
  * @author auto create
- * @since 1.0, 2022-10-11 17:18:35
+ * @since 1.0, 2023-02-06 16:02:13
  */
 public class FriendListVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8593869281588196369L;
+	private static final long serialVersionUID = 4181148752351482528L;
 
 	/**
 	 * 头像的服务地址
 	 */
 	@ApiField("head_img")
 	private String headImg;
+
+	/**
+	 * open_id用于原user_id字段映射
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 是否双向好友
@@ -42,6 +48,13 @@ public class FriendListVO extends AlipayObject {
 	}
 	public void setHeadImg(String headImg) {
 		this.headImg = headImg;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Boolean getRealFriend() {

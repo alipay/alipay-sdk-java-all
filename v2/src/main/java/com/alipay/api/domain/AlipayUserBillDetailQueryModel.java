@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询消费记录详情
  *
  * @author auto create
- * @since 1.0, 2022-11-02 14:45:44
+ * @since 1.0, 2023-01-31 16:27:51
  */
 public class AlipayUserBillDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2281625955934294721L;
+	private static final long serialVersionUID = 8694371221239726796L;
 
 	/**
 	 * 账单内部业务流水号，是查询单条账单的必传参数

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权退税完成确认
  *
  * @author auto create
- * @since 1.0, 2020-06-08 11:25:33
+ * @since 1.0, 2023-01-31 18:00:55
  */
 public class AlipayOverseasTaxAdvancedUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7165522632857361915L;
+	private static final long serialVersionUID = 5112666341877474849L;
 
 	/**
 	 * 支付宝退税资金订单号

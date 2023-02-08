@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FeeValue extends AlipayObject {
 
-	private static final long serialVersionUID = 6757953573617445581L;
+	private static final long serialVersionUID = 7856974175913664673L;
 
 	/**
 	 * 保底费率

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 3c租赁网商委托代扣签约结果查询
  *
  * @author auto create
- * @since 1.0, 2022-09-29 13:43:33
+ * @since 1.0, 2023-02-03 14:43:50
  */
 public class MybankCreditLoanapplyFinleaseSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3198916395172574795L;
+	private static final long serialVersionUID = 1854444166267332213L;
 
 	/**
 	 * 事件类型

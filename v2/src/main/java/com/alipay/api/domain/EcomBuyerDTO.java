@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放平台电商买家模型
  *
  * @author auto create
- * @since 1.0, 2023-01-09 17:04:47
+ * @since 1.0, 2023-01-16 10:16:10
  */
 public class EcomBuyerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6818596688498256411L;
+	private static final long serialVersionUID = 4584481372899372764L;
 
 	/**
 	 * 买家联系地址
@@ -84,6 +84,12 @@ public class EcomBuyerDTO extends AlipayObject {
 	 */
 	@ApiField("buyer_order_refund_exchange_rate")
 	private String buyerOrderRefundExchangeRate;
+
+	/**
+	 * 买家标签数据
+	 */
+	@ApiField("buyer_tag_data")
+	private String buyerTagData;
 
 	/**
 	 * 身份证号
@@ -197,6 +203,13 @@ public class EcomBuyerDTO extends AlipayObject {
 	}
 	public void setBuyerOrderRefundExchangeRate(String buyerOrderRefundExchangeRate) {
 		this.buyerOrderRefundExchangeRate = buyerOrderRefundExchangeRate;
+	}
+
+	public String getBuyerTagData() {
+		return this.buyerTagData;
+	}
+	public void setBuyerTagData(String buyerTagData) {
+		this.buyerTagData = buyerTagData;
 	}
 
 	public String getIdCardNo() {

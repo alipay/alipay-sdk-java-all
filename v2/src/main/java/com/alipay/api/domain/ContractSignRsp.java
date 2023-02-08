@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子合同签署信息返回结果信息
  *
  * @author auto create
- * @since 1.0, 2022-11-16 14:53:29
+ * @since 1.0, 2023-01-30 11:33:02
  */
 public class ContractSignRsp extends AlipayObject {
 
-	private static final long serialVersionUID = 8679426888771452858L;
+	private static final long serialVersionUID = 4819167826791446769L;
 
 	/**
 	 * 用户id映射openId

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 单个主记录+对应资金明细信息模型
  *
  * @author auto create
- * @since 1.0, 2022-11-11 10:37:13
+ * @since 1.0, 2023-01-30 20:03:19
  */
 public class SingleFundDetailItemAOPModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2719871476531948388L;
+	private static final long serialVersionUID = 3147576214167892792L;
 
 	/**
 	 * 批次资金明细模型列表

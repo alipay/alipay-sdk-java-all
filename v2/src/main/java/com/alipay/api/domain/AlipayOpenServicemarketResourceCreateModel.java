@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资源上报
  *
  * @author auto create
- * @since 1.0, 2020-08-12 16:51:33
+ * @since 1.0, 2023-01-30 19:35:54
  */
 public class AlipayOpenServicemarketResourceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6732745584192337682L;
+	private static final long serialVersionUID = 3294291432683327358L;
 
 	/**
 	 * 资源消耗记录
@@ -34,6 +34,12 @@ public class AlipayOpenServicemarketResourceCreateModel extends AlipayObject {
 	 */
 	@ApiField("execution_time_start")
 	private String executionTimeStart;
+
+	/**
+	 * 描述
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 资源上报接口,订单消息里面的商品code
@@ -85,6 +91,13 @@ public class AlipayOpenServicemarketResourceCreateModel extends AlipayObject {
 	}
 	public void setExecutionTimeStart(String executionTimeStart) {
 		this.executionTimeStart = executionTimeStart;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOuterCode() {

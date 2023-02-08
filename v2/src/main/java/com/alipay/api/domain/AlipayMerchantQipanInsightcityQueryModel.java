@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 棋盘开放洞察城市查询接口
  *
  * @author auto create
- * @since 1.0, 2023-01-05 17:20:13
+ * @since 1.0, 2023-01-30 14:41:14
  */
 public class AlipayMerchantQipanInsightcityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1679169586634229272L;
+	private static final long serialVersionUID = 7552445573931564753L;
 
 	/**
 	 * 人群id，按人群分析时必传
@@ -26,7 +26,7 @@ public class AlipayMerchantQipanInsightcityQueryModel extends AlipayObject {
 	private String relationType;
 
 	/**
-	 * 数据日期，格式yyyyMMdd，非必填。由于数据每天可能有变化，可以指定数据对应的日期，指定后可以查询日期对应的数据计算结果，不填默认返回前一天的数据
+	 * 数据日期，格式yyyyMMdd，非必填。由于数据每天可能有变化，可以指定数据对应的日期，指定后可以查询日期对应的数据计算结果，不填默认返回前一天的数据。
 	 */
 	@ApiField("report_date")
 	private String reportDate;

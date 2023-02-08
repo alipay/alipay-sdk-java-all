@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.isv.fastregister.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 01:11:37
+ * @since 1.0, 2023-02-06 11:16:39
  */
 public class AlipayOpenMiniIsvFastregisterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1882447139145289223L;
+	private static final long serialVersionUID = 1654838729659127466L;
 
 	/** 
 	 * 小程序应用名
@@ -45,7 +45,9 @@ public class AlipayOpenMiniIsvFastregisterQueryResponse extends AlipayResponse {
 	private String outOrderNo;
 
 	/** 
-	 * 试用小程序状态，PRECREATE 待授权确认 PROCESS 已授权使用中 SUCCESS 已转正 FAILED 已失败
+	 * WAIT_CONFIRM待确认创建，
+CONFIRM_TIMEOUT待创建确认授权超时，
+CREATE_MINI_APP_SUCCESS创建应用成功，CREATE_MINI_APP_FAILED创建应用失败，CANCELLED已注销，CERTIFY_SUCCESS认证成功，CERTIFY_FAILED认证失败，CERTIFY_OPERATOR管理员认证中，CERTIFY_MERCHANT法人认证中
 	 */
 	@ApiField("status")
 	private String status;

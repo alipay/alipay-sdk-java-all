@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 下达产线信息回传
  *
  * @author auto create
- * @since 1.0, 2021-11-24 23:37:06
+ * @since 1.0, 2023-02-06 14:19:21
  */
 public class AntMerchantExpandProductionOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2342752435243748919L;
+	private static final long serialVersionUID = 5381287294142852498L;
 
 	/**
 	 * 总数（该项目单下达到产线的总数）

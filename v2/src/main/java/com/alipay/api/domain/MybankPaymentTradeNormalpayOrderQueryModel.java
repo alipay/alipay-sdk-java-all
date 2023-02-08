@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付订单查询
  *
  * @author auto create
- * @since 1.0, 2021-04-13 20:30:40
+ * @since 1.0, 2023-02-06 10:56:26
  */
 public class MybankPaymentTradeNormalpayOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2167181812542323614L;
+	private static final long serialVersionUID = 6364463945498313717L;
 
 	/**
 	 * 渠道类型，表示请求的来源，ANT_OPEN=蚂蚁开放平台，使用request_no查询时，该字段必传

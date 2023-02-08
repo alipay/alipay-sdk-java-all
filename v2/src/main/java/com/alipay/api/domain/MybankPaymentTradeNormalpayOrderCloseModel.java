@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付关闭订单
  *
  * @author auto create
- * @since 1.0, 2021-04-12 10:56:26
+ * @since 1.0, 2023-02-06 10:56:04
  */
 public class MybankPaymentTradeNormalpayOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8419462289836572194L;
+	private static final long serialVersionUID = 6288275568592399961L;
 
 	/**
 	 * 网商订单号

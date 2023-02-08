@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户限制模型
  *
  * @author auto create
- * @since 1.0, 2022-12-19 14:52:00
+ * @since 1.0, 2023-02-07 10:10:44
  */
 public class MerchantLimit extends AlipayObject {
 
-	private static final long serialVersionUID = 6436841587572737947L;
+	private static final long serialVersionUID = 8772631974474183965L;
 
 	/**
 	 * 限制的商户列表。商户的SMID或者PID。若想设置无限制类型，则只传单个ALL值

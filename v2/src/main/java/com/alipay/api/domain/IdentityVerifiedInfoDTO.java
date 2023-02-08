@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同人身份信息校验模型
  *
  * @author auto create
- * @since 1.0, 2023-01-03 15:25:33
+ * @since 1.0, 2023-02-07 10:10:28
  */
 public class IdentityVerifiedInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3496936341374167738L;
+	private static final long serialVersionUID = 8323149952529965848L;
 
 	/**
 	 * MD5加密处理后的证件号

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序核验服务结果确认接口
  *
  * @author auto create
- * @since 1.0, 2022-09-19 14:24:26
+ * @since 1.0, 2023-01-31 20:43:15
  */
 public class AlipaySecurityRiskVerifyidentityMiniappConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7746756143811932744L;
+	private static final long serialVersionUID = 2379212461111174263L;
 
 	/**
 	 * 业务的业务流水号，例如订单id
 	 */
 	@ApiField("challenge")
 	private String challenge;
+
+	/**
+	 * 蚂蚁统一会员ID，验证时会与做身份认证时候会话中的openid做比对，如不相符核验结果不通过
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 蚂蚁统一会员ID，验证时会与做身份认证时候会话中的userId做比对，如不相符核验结果不通过
@@ -36,6 +42,13 @@ public class AlipaySecurityRiskVerifyidentityMiniappConfirmModel extends AlipayO
 	}
 	public void setChallenge(String challenge) {
 		this.challenge = challenge;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

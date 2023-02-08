@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务关键词批量查询
  *
  * @author auto create
- * @since 1.0, 2022-12-27 10:21:14
+ * @since 1.0, 2023-02-02 17:07:52
  */
 public class AlipayOpenSearchSubservicekeywordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1523327551853159543L;
+	private static final long serialVersionUID = 1336596712618218163L;
 
 	/**
 	 * 分页参数，分页查询时使用
@@ -26,7 +26,7 @@ public class AlipayOpenSearchSubservicekeywordBatchqueryModel extends AlipayObje
 	private Long pageSize;
 
 	/**
-	 * 审核状态，服务关键词的审核状态，枚举值
+	 * 审核状态，服务关键词的审核状态，枚举值，不传该字段表示查询所有状态
 	 */
 	@ApiField("status")
 	private String status;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员积分退还接口
  *
  * @author auto create
- * @since 1.0, 2023-01-12 19:30:04
+ * @since 1.0, 2023-01-30 13:13:15
  */
 public class AlipayUserMpointRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6523925244755588811L;
+	private static final long serialVersionUID = 7269918566627764995L;
 
 	/**
 	 * 业务子类型，由会员方面分配
@@ -24,6 +24,12 @@ public class AlipayUserMpointRefundModel extends AlipayObject {
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 业务流水号，用来映射需要回退积分的订单号，与调用扣减积分接口时传入的值一致。
@@ -49,6 +55,13 @@ public class AlipayUserMpointRefundModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

@@ -10,14 +10,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 20:16:40
+ * @since 1.0, 2023-02-02 15:36:38
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3423793333314578495L;
+	private static final long serialVersionUID = 2437651791773751782L;
 
 	/** 
-	 * 代理函有效访问地址，有效时间2分钟，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
+	 * 代理函有效访问地址，有效时间1小时，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
 	 */
 	@ApiField("attorney_letter")
 	private String attorneyLetter;
@@ -32,7 +32,7 @@ FAIL，代表用户未授权或授权失效
 	private String authStatus;
 
 	/** 
-	 * 营业执照有效访问地址，有效时间2分钟，接口返回后开始计时，字段auth_status为SUCCESS时返回，特定场景下返回
+	 * 营业执照有效访问地址，有效时间1小时，接口返回后开始计时，字段auth_status为SUCCESS时返回，特定场景下返回
 	 */
 	@ApiField("business_license")
 	private String businessLicense;
@@ -103,13 +103,13 @@ FAIL，代表失败
 	private Boolean hasLiXinCertificate;
 
 	/** 
-	 * 法人身份证反面有效访问定制，有效时间2分钟，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
+	 * 法人身份证反面有效访问定制，有效时间1小时，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
 	 */
 	@ApiField("legal_person_id_card_back")
 	private String legalPersonIdCardBack;
 
 	/** 
-	 * 法人身份证正面有效访问地址，有效时间2分钟，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
+	 * 法人身份证正面有效访问地址，有效时间1小时，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
 	 */
 	@ApiField("legal_person_id_card_front")
 	private String legalPersonIdCardFront;

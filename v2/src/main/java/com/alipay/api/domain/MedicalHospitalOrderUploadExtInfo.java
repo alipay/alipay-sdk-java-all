@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗机构医院订单上传接口入参ext_info
  *
  * @author auto create
- * @since 1.0, 2022-03-23 15:31:16
+ * @since 1.0, 2023-02-07 16:35:52
  */
 public class MedicalHospitalOrderUploadExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1713535933178992676L;
+	private static final long serialVersionUID = 6713665774494145813L;
 
 	/**
 	 * 叫号进度页面跳转链接，支付宝小程序链接
@@ -125,6 +125,12 @@ public class MedicalHospitalOrderUploadExtInfo extends AlipayObject {
 	private String hospitalRegisterId;
 
 	/**
+	 * 是否本人挂号：是/否/未知
+	 */
+	@ApiField("is_done_by_self")
+	private String isDoneBySelf;
+
+	/**
 	 * 就诊/检查序号
 	 */
 	@ApiField("medical_num")
@@ -141,6 +147,13 @@ public class MedicalHospitalOrderUploadExtInfo extends AlipayObject {
 	 */
 	@ApiField("merchant_order_link_page")
 	private String merchantOrderLinkPage;
+
+	/**
+	 * 医院小程序链接：HOSPITAL_TINYAPP_LINK
+区域平台小程序链接：REGIONAL_PLATFORM_TINYAPP_LINK
+	 */
+	@ApiField("merchant_order_link_type")
+	private String merchantOrderLinkType;
 
 	/**
 	 * 导航地址页面跳转链接，支付宝小程序链接
@@ -165,6 +178,12 @@ public class MedicalHospitalOrderUploadExtInfo extends AlipayObject {
 	 */
 	@ApiField("scheduled_time")
 	private String scheduledTime;
+
+	/**
+	 * 温馨提示，文本类型，最长200个中文字
+	 */
+	@ApiField("summary_tip")
+	private String summaryTip;
 
 	/**
 	 * 取药地址
@@ -334,6 +353,13 @@ public class MedicalHospitalOrderUploadExtInfo extends AlipayObject {
 		this.hospitalRegisterId = hospitalRegisterId;
 	}
 
+	public String getIsDoneBySelf() {
+		return this.isDoneBySelf;
+	}
+	public void setIsDoneBySelf(String isDoneBySelf) {
+		this.isDoneBySelf = isDoneBySelf;
+	}
+
 	public String getMedicalNum() {
 		return this.medicalNum;
 	}
@@ -353,6 +379,13 @@ public class MedicalHospitalOrderUploadExtInfo extends AlipayObject {
 	}
 	public void setMerchantOrderLinkPage(String merchantOrderLinkPage) {
 		this.merchantOrderLinkPage = merchantOrderLinkPage;
+	}
+
+	public String getMerchantOrderLinkType() {
+		return this.merchantOrderLinkType;
+	}
+	public void setMerchantOrderLinkType(String merchantOrderLinkType) {
+		this.merchantOrderLinkType = merchantOrderLinkType;
 	}
 
 	public String getNavigation() {
@@ -381,6 +414,13 @@ public class MedicalHospitalOrderUploadExtInfo extends AlipayObject {
 	}
 	public void setScheduledTime(String scheduledTime) {
 		this.scheduledTime = scheduledTime;
+	}
+
+	public String getSummaryTip() {
+		return this.summaryTip;
+	}
+	public void setSummaryTip(String summaryTip) {
+		this.summaryTip = summaryTip;
 	}
 
 	public String getTakeMedicineLoc() {

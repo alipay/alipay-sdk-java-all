@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝交易明细
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @since 1.0, 2023-02-03 14:51:36
  */
 public class TradeRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 8172487425363328466L;
+	private static final long serialVersionUID = 8111575449679642569L;
 
 	/**
 	 * 支付宝订单号
@@ -58,6 +58,12 @@ public class TradeRecord extends AlipayObject {
 	private String oppositeName;
 
 	/**
+	 * 对手方openid
+	 */
+	@ApiField("opposite_open_id")
+	private String oppositeOpenId;
+
+	/**
 	 * 对方支付宝账号
 	 */
 	@ApiField("opposite_user_id")
@@ -98,6 +104,12 @@ public class TradeRecord extends AlipayObject {
 	 */
 	@ApiField("owner_name")
 	private String ownerName;
+
+	/**
+	 * 本方支付宝账号OPOENID
+	 */
+	@ApiField("owner_open_id")
+	private String ownerOpenId;
 
 	/**
 	 * 本方支付宝账号
@@ -172,6 +184,13 @@ public class TradeRecord extends AlipayObject {
 		this.oppositeName = oppositeName;
 	}
 
+	public String getOppositeOpenId() {
+		return this.oppositeOpenId;
+	}
+	public void setOppositeOpenId(String oppositeOpenId) {
+		this.oppositeOpenId = oppositeOpenId;
+	}
+
 	public String getOppositeUserId() {
 		return this.oppositeUserId;
 	}
@@ -219,6 +238,13 @@ public class TradeRecord extends AlipayObject {
 	}
 	public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
+	}
+
+	public String getOwnerOpenId() {
+		return this.ownerOpenId;
+	}
+	public void setOwnerOpenId(String ownerOpenId) {
+		this.ownerOpenId = ownerOpenId;
 	}
 
 	public String getOwnerUserId() {

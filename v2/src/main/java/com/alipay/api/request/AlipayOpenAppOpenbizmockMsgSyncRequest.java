@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.openbizmock.msg.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-09-14 20:36:48
+ * @since 1.0, 2023-01-30 19:08:30
  */
 public class AlipayOpenAppOpenbizmockMsgSyncRequest implements AlipayRequest<AlipayOpenAppOpenbizmockMsgSyncResponse> {
 

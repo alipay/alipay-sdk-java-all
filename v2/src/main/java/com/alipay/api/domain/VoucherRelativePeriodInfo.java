@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券相对核销时间
  *
  * @author auto create
- * @since 1.0, 2022-09-20 11:28:07
+ * @since 1.0, 2023-02-07 13:57:21
  */
 public class VoucherRelativePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4559881353572985377L;
+	private static final long serialVersionUID = 8462786135336717459L;
 
 	/**
 	 * 券生效后 N 天内可以使用。 可以配合wait_days_after_receive 字段使用。

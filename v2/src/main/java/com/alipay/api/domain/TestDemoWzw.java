@@ -7,11 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * test
  *
  * @author auto create
- * @since 1.0, 2023-01-11 22:19:05
+ * @since 1.0, 2023-01-17 10:10:18
  */
 public class TestDemoWzw extends AlipayObject {
 
-	private static final long serialVersionUID = 2836642351726993466L;
+	private static final long serialVersionUID = 7297751359638844516L;
+
+	/**
+	 * 88
+	 */
+	@ApiField("aaopen_id")
+	private String aaopenId;
+
+	/**
+	 * 88
+	 */
+	@ApiField("aauids")
+	private String aauids;
+
+	/**
+	 * 88
+	 */
+	@ApiField("id_type")
+	private String idType;
 
 	/**
 	 * test
@@ -24,6 +42,27 @@ public class TestDemoWzw extends AlipayObject {
 	 */
 	@ApiField("uid")
 	private String uid;
+
+	public String getAaopenId() {
+		return this.aaopenId;
+	}
+	public void setAaopenId(String aaopenId) {
+		this.aaopenId = aaopenId;
+	}
+
+	public String getAauids() {
+		return this.aauids;
+	}
+	public void setAauids(String aauids) {
+		this.aauids = aauids;
+	}
+
+	public String getIdType() {
+		return this.idType;
+	}
+	public void setIdType(String idType) {
+		this.idType = idType;
+	}
 
 	public String getOidOpenId() {
 		return this.oidOpenId;

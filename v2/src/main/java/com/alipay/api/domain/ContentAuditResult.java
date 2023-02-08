@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 解语花风险内容结果
  *
  * @author auto create
- * @since 1.0, 2022-08-26 11:07:32
+ * @since 1.0, 2023-02-07 13:49:14
  */
 public class ContentAuditResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3513114811755384956L;
+	private static final long serialVersionUID = 5228335827491489312L;
 
 	/**
 	 * 全量素材风险信息列表
@@ -22,6 +22,12 @@ public class ContentAuditResult extends AlipayObject {
 	@ApiListField("content_risk_info_list")
 	@ApiField("content_risk_info")
 	private List<ContentRiskInfo> contentRiskInfoList;
+
+	/**
+	 * 机审是否完成
+	 */
+	@ApiField("robot_check_finished")
+	private Boolean robotCheckFinished;
 
 	/**
 	 * 工单维度机审结果，枚举值。
@@ -45,6 +51,13 @@ ROBOT_FAIL：机审失败
 	}
 	public void setContentRiskInfoList(List<ContentRiskInfo> contentRiskInfoList) {
 		this.contentRiskInfoList = contentRiskInfoList;
+	}
+
+	public Boolean getRobotCheckFinished() {
+		return this.robotCheckFinished;
+	}
+	public void setRobotCheckFinished(Boolean robotCheckFinished) {
+		this.robotCheckFinished = robotCheckFinished;
 	}
 
 	public String getRobotStatus() {

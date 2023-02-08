@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC生态发行订单数据同步
  *
  * @author auto create
- * @since 1.0, 2022-10-26 14:15:47
+ * @since 1.0, 2023-01-17 19:29:15
  */
 public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7552788969866526684L;
+	private static final long serialVersionUID = 2731779475819758694L;
 
 	/**
 	 * 收单方式。支付宝收单：ALIPAY；银行收单：BANK；建行-支付宝轮扣收单：CCB_ZS；
@@ -129,16 +129,19 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 	/**
 	 * 订单状态；
 0、ORDER_CREATE：创建订单；
-1、INFO_SUBMIT：信息已提交；
-2、CENSOR_PASS：审核通过；
-3、CENSOR_BLOCK：审核驳回；
-4、DELIVERYED：已发货；
-5、RECEIVED：已收货；
-6、ACTIVATED：已激活；
-7、UNMOUNTED：已注销；
-8、ADD_BLACK：拉黑；
-9、REMOVE_BLACK：解黑；
-10、CANCEL：取消；
+1、PAYED：订单支付；
+2、INFO_SUBMIT：信息已提交；
+3、BANK_SIGNED：已签约银行代扣；
+4、ALIPAY_SIGNED：已签约支付宝代扣；
+5、CENSOR_PASS：审核通过；
+6、CENSOR_BLOCK：审核驳回；
+7、DELIVERYED：已发货；
+8、RECEIVED：已收货；
+9、ACTIVATED：已激活；
+10、UNMOUNTED：已注销；
+11、ADD_BLACK：拉黑；
+12、REMOVE_BLACK：解黑；
+13、CANCEL：取消；
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
@@ -230,6 +233,12 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 	 */
 	@ApiField("traction_mass")
 	private String tractionMass;
+
+	/**
+	 * 订单支付交易号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	/**
 	 * 整备质量
@@ -466,6 +475,13 @@ public class AlipayCommerceTransportEtcEcodataSyncModel extends AlipayObject {
 	}
 	public void setTractionMass(String tractionMass) {
 		this.tractionMass = tractionMass;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
 	}
 
 	public String getUnladenMass() {

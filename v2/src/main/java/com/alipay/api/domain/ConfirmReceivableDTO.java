@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConfirmReceivableDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4843595436961239916L;
+	private static final long serialVersionUID = 3868595978149933872L;
 
 	/**
 	 * 确认模式，支持ONE_TIME和BY_STRATEGY

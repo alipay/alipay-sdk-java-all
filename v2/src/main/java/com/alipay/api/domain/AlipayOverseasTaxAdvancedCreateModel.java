@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权退税下单
  *
  * @author auto create
- * @since 1.0, 2020-06-08 11:26:05
+ * @since 1.0, 2023-01-31 18:01:05
  */
 public class AlipayOverseasTaxAdvancedCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7864142252945941883L;
+	private static final long serialVersionUID = 2788653624627186557L;
 
 	/**
 	 * 纸质退税单号，合并退税时需要传多个，逗号分隔，tax_refund_scene_type=09时只支持一个docId

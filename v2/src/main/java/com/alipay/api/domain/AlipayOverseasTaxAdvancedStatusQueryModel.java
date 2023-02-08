@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权退税状态查询
  *
  * @author auto create
- * @since 1.0, 2022-10-12 13:42:48
+ * @since 1.0, 2023-01-31 18:00:35
  */
 public class AlipayOverseasTaxAdvancedStatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6823299251256699953L;
+	private static final long serialVersionUID = 8175866319232628316L;
 
 	/**
 	 * 退税机构业务流水号，唯一，只能包含字母、数字

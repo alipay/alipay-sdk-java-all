@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.sellerconfig.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 17:06:44
+ * @since 1.0, 2023-01-31 16:16:37
  */
 public class AlipayCommerceTransportEtcSellerconfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3327353934927295662L;
+	private static final long serialVersionUID = 2511547697659573383L;
 
 	/** 
 	 * 查询得到的发行方静态信息（图片、文字等配置信息）

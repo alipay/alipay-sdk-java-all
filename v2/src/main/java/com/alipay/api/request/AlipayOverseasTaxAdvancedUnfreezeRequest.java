@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.tax.advanced.unfreeze request
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:20:08
+ * @since 1.0, 2023-01-31 18:00:55
  */
 public class AlipayOverseasTaxAdvancedUnfreezeRequest implements AlipayRequest<AlipayOverseasTaxAdvancedUnfreezeResponse> {
 

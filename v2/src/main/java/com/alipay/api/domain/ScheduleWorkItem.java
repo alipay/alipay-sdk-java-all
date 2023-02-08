@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScheduleWorkItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3322747718961372425L;
+	private static final long serialVersionUID = 3759325168916917112L;
 
 	/**
 	 * 该班次总里程

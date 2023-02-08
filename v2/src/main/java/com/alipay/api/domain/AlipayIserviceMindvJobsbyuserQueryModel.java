@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小蚁触角_查询用户作答过的任务
  *
  * @author auto create
- * @since 1.0, 2018-09-19 16:55:37
+ * @since 1.0, 2023-02-03 16:41:05
  */
 public class AlipayIserviceMindvJobsbyuserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4119871153468227485L;
+	private static final long serialVersionUID = 8347858864552783743L;
 
 	/**
 	 * 对应账号类型下的唯一账号主键_用以区分对应的填写用户

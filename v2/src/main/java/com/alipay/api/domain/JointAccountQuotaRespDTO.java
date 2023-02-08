@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共同账户额度模型
  *
  * @author auto create
- * @since 1.0, 2022-12-19 14:52:11
+ * @since 1.0, 2023-02-07 10:10:36
  */
 public class JointAccountQuotaRespDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4797934542949264396L;
+	private static final long serialVersionUID = 6843436226685331464L;
 
 	/**
 	 * 额度生效起始日期，精确到分钟。

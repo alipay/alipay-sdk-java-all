@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险明细
  *
  * @author auto create
- * @since 1.0, 2022-08-22 14:17:58
+ * @since 1.0, 2023-02-07 13:49:05
  */
 public class RiskInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7312575838352542353L;
+	private static final long serialVersionUID = 7679471424656466754L;
+
+	/**
+	 * 对话下标
+	 */
+	@ApiField("dialog_index")
+	private String dialogIndex;
 
 	/**
 	 * 命中词
@@ -26,6 +32,12 @@ public class RiskInfoDetail extends AlipayObject {
 	private String hitWordIndex;
 
 	/**
+	 * 命中词类别（全文/对话 FULL_TEXT/DIALOGUE）
+	 */
+	@ApiField("hit_word_type")
+	private String hitWordType;
+
+	/**
 	 * 数组中8个数字分别代表左上、右上、右下、左下的坐标信息
 	 */
 	@ApiField("new_picture_frame")
@@ -36,6 +48,13 @@ public class RiskInfoDetail extends AlipayObject {
 	 */
 	@ApiField("picture_frame")
 	private String pictureFrame;
+
+	public String getDialogIndex() {
+		return this.dialogIndex;
+	}
+	public void setDialogIndex(String dialogIndex) {
+		this.dialogIndex = dialogIndex;
+	}
 
 	public String getHitWord() {
 		return this.hitWord;
@@ -49,6 +68,13 @@ public class RiskInfoDetail extends AlipayObject {
 	}
 	public void setHitWordIndex(String hitWordIndex) {
 		this.hitWordIndex = hitWordIndex;
+	}
+
+	public String getHitWordType() {
+		return this.hitWordType;
+	}
+	public void setHitWordType(String hitWordType) {
+		this.hitWordType = hitWordType;
 	}
 
 	public String getNewPictureFrame() {

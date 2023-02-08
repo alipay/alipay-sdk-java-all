@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppAppcontentFunctionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6223823868152644796L;
+	private static final long serialVersionUID = 4188274216254154793L;
 
 	/** 
 	 * 服务区域编码；默认值为1，表示全国范围；编码参考高德地图JS API相关下载中的行政区编码与城市编码表：https://lbs.amap.com/api/javascript-api/download/

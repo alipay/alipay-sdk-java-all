@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.funditem.get request
  * 
  * @author auto create
- * @since 1.0, 2022-05-24 11:18:43
+ * @since 1.0, 2023-01-30 20:06:41
  */
 public class AlipayUserFunditemGetRequest implements AlipayRequest<AlipayUserFunditemGetResponse> {
 

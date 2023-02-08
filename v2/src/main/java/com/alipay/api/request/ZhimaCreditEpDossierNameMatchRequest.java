@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.dossier.name.match request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:27:45
+ * @since 1.0, 2023-01-16 14:51:38
  */
 public class ZhimaCreditEpDossierNameMatchRequest implements AlipayRequest<ZhimaCreditEpDossierNameMatchResponse> {
 

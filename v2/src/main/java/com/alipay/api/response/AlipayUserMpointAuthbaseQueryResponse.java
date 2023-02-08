@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.mpoint.authbase.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 10:41:54
+ * @since 1.0, 2023-01-30 13:13:15
  */
 public class AlipayUserMpointAuthbaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6221532896536119528L;
+	private static final long serialVersionUID = 7894615745853428337L;
 
 	/** 
 	 * 支付宝用户的蚂蚁会员积分余额
@@ -26,6 +28,13 @@ public class AlipayUserMpointAuthbaseQueryResponse extends AlipayResponse {
 	@ApiField("grade")
 	private String grade;
 
+	/** 
+	 * 会员的联名身份
+	 */
+	@ApiListField("joint_info")
+	@ApiField("string")
+	private List<String> jointInfo;
+
 	public void setBalance(Long balance) {
 		this.balance = balance;
 	}
@@ -38,6 +47,13 @@ public class AlipayUserMpointAuthbaseQueryResponse extends AlipayResponse {
 	}
 	public String getGrade( ) {
 		return this.grade;
+	}
+
+	public void setJointInfo(List<String> jointInfo) {
+		this.jointInfo = jointInfo;
+	}
+	public List<String> getJointInfo( ) {
+		return this.jointInfo;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用于回调使用
  *
  * @author auto create
- * @since 1.0, 2022-03-16 15:03:29
+ * @since 1.0, 2023-02-06 14:15:57
  */
 public class AssetCallbackInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7155378729921914941L;
+	private static final long serialVersionUID = 2281193859386544773L;
 
 	/**
 	 * 是哪一个交互动作之后的回调

@@ -7,23 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 棋盘开放趋势图分析接口
  *
  * @author auto create
- * @since 1.0, 2023-01-05 17:20:01
+ * @since 1.0, 2023-01-30 14:41:15
  */
 public class AlipayMerchantQipanTrendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4214421368591663454L;
+	private static final long serialVersionUID = 5841563243793933732L;
 
 	/**
-	 * 指标key，由棋盘注册，全局唯一
+	 * 指标key，由棋盘注册，全局唯一，查询内容参考：<a href="https://opendocs.alipay.com/pre-open/04phhq#%E8%B6%8B%E5%8A%BF%E5%88%86%E6%9E%90%E4%B8%8D%E5%90%8Cindex_key%E6%9F%A5%E8%AF%A2" target="_blank">趋势分析不同index_key查询</a>
 	 */
 	@ApiField("index_key")
 	private String indexKey;
 
 	/**
-	 * 请求参数，如关系类型、聚合维度
+	 * 趋势数据请求参数，如起止时间、关系类型、聚合维度等。
 	 */
 	@ApiField("request_params")
-	private String requestParams;
+	private TrendQueryRequest requestParams;
 
 	public String getIndexKey() {
 		return this.indexKey;
@@ -32,10 +32,10 @@ public class AlipayMerchantQipanTrendQueryModel extends AlipayObject {
 		this.indexKey = indexKey;
 	}
 
-	public String getRequestParams() {
+	public TrendQueryRequest getRequestParams() {
 		return this.requestParams;
 	}
-	public void setRequestParams(String requestParams) {
+	public void setRequestParams(TrendQueryRequest requestParams) {
 		this.requestParams = requestParams;
 	}
 

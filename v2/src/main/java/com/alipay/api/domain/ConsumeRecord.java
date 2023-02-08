@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 消费记录模型
  *
  * @author auto create
- * @since 1.0, 2021-04-27 16:12:09
+ * @since 1.0, 2023-01-31 19:26:02
  */
 public class ConsumeRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 5112635224863676383L;
+	private static final long serialVersionUID = 3328814794376839312L;
 
 	/**
 	 * 支付宝订单号
@@ -36,7 +36,7 @@ public class ConsumeRecord extends AlipayObject {
 	private String bizStateDesc;
 
 	/**
-	 * 账单金额，单位分
+	 * 账单金额，单位元
 	 */
 	@ApiField("consume_fee")
 	private String consumeFee;
@@ -77,6 +77,12 @@ public class ConsumeRecord extends AlipayObject {
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;
+
+	/**
+	 * 本方卡号
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 对方展示logo
@@ -182,6 +188,13 @@ public class ConsumeRecord extends AlipayObject {
 	}
 	public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOppositeLogo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询企业可用商户信息
  *
  * @author auto create
- * @since 1.0, 2022-11-21 20:07:16
+ * @since 1.0, 2023-02-02 13:55:50
  */
 public class AlipayEbppInvoiceExpensesceneMerchantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5558571822259948398L;
+	private static final long serialVersionUID = 8539861162584541993L;
 
 	/**
 	 * 共同账户ID
@@ -49,6 +49,12 @@ MEAL - 工作餐
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 商户ID
+	 */
+	@ApiField("pid")
+	private String pid;
 
 	/**
 	 * 商户ID
@@ -102,6 +108,13 @@ MEAL - 工作餐
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getPid() {
+		return this.pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
 	}
 
 	public String getRoleId() {

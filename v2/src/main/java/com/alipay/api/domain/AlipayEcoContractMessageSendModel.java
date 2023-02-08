@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签署平台消息推送
  *
  * @author auto create
- * @since 1.0, 2020-05-25 16:11:21
+ * @since 1.0, 2023-01-30 10:27:16
  */
 public class AlipayEcoContractMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1325341665989624115L;
+	private static final long serialVersionUID = 5887511415368861172L;
 
 	/**
 	 * 调用批次号
@@ -52,6 +52,13 @@ public class AlipayEcoContractMessageSendModel extends AlipayObject {
 	 */
 	@ApiField("msg_template_id")
 	private String msgTemplateId;
+
+	/**
+	 * 支付宝账号openId,数组关联多个支付宝账号 （如果未注册支付宝账号 则为空）
+	 */
+	@ApiListField("open_ids")
+	@ApiField("string")
+	private List<String> openIds;
 
 	/**
 	 * 签署平台的代码
@@ -106,6 +113,13 @@ public class AlipayEcoContractMessageSendModel extends AlipayObject {
 	}
 	public void setMsgTemplateId(String msgTemplateId) {
 		this.msgTemplateId = msgTemplateId;
+	}
+
+	public List<String> getOpenIds() {
+		return this.openIds;
+	}
+	public void setOpenIds(List<String> openIds) {
+		this.openIds = openIds;
 	}
 
 	public String getSignPlatformCode() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户绑定关系同步接口
  *
  * @author auto create
- * @since 1.0, 2020-04-27 15:19:54
+ * @since 1.0, 2023-02-01 14:08:51
  */
 public class AlipayUserAccountBindingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4526625862574362253L;
+	private static final long serialVersionUID = 2322967449231757155L;
 
 	/**
 	 * 支付宝用户ID
@@ -44,6 +44,12 @@ public class AlipayUserAccountBindingSyncModel extends AlipayObject {
 	 */
 	@ApiField("modify_time")
 	private Date modifyTime;
+
+	/**
+	 * 支付宝用户开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 淘宝绑定关系领域枚举：
@@ -96,6 +102,13 @@ public class AlipayUserAccountBindingSyncModel extends AlipayObject {
 	}
 	public void setModifyTime(Date modifyTime) {
 		this.modifyTime = modifyTime;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRealm() {

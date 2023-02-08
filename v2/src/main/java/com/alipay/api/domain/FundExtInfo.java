@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出资扩展信息
  *
  * @author auto create
- * @since 1.0, 2022-06-06 20:06:23
+ * @since 1.0, 2023-02-07 10:10:50
  */
 public class FundExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4172184483785389175L;
+	private static final long serialVersionUID = 8437374138388595227L;
 
 	/**
 	 * 出资主体账号，fund_identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransInnovateOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5623183862517979335L;
+	private static final long serialVersionUID = 7324881889219826182L;
 
 	/**
 	 * 描述特定的业务场景，如果传递了out_biz_no则该字段为必传。房租为：HOUSE_RENT

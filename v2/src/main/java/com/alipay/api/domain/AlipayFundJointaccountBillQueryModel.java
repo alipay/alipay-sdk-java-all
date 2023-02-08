@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付账单查询
  *
  * @author auto create
- * @since 1.0, 2022-12-29 16:17:40
+ * @since 1.0, 2023-02-01 17:01:50
  */
 public class AlipayFundJointaccountBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4134554466332253857L;
+	private static final long serialVersionUID = 8137799315224358744L;
 
 	/**
 	 * 账户ID

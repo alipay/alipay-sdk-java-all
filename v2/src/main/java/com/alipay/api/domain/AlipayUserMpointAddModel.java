@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员积分发放接口（需要用户授权）
  *
  * @author auto create
- * @since 1.0, 2022-08-04 19:14:15
+ * @since 1.0, 2023-01-30 13:13:22
  */
 public class AlipayUserMpointAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6399711152244419177L;
+	private static final long serialVersionUID = 7579572836481872958L;
 
 	/**
 	 * 业务子场景，由支付宝侧分配
@@ -30,6 +30,12 @@ public class AlipayUserMpointAddModel extends AlipayObject {
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 业务流水号，会用于幂等性校验，所以请保证每次请求的业务流水号的唯一性
@@ -68,6 +74,13 @@ public class AlipayUserMpointAddModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.wallet.scene.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-01-09 14:35:07
+ * @since 1.0, 2023-01-31 01:36:37
  */
 public class AlipayFundWalletSceneSignRequest implements AlipayRequest<AlipayFundWalletSceneSignResponse> {
 

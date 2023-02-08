@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandItemSecurityDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7825126465633381998L;
+	private static final long serialVersionUID = 2881884783247478787L;
 
 	/**
 	 * 商品ID

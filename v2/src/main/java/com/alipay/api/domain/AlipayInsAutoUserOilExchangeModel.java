@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsAutoUserOilExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7114585367376832328L;
+	private static final long serialVersionUID = 7335215799796835371L;
 
 	/**
 	 * 验证point与benefitId的一致性，才能使用对应的积分

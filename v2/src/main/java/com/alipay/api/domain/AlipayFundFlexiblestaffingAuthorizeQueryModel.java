@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工授权结果查询
  *
  * @author auto create
- * @since 1.0, 2023-01-10 16:50:12
+ * @since 1.0, 2023-01-16 10:38:37
  */
 public class AlipayFundFlexiblestaffingAuthorizeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4533971426152423392L;
+	private static final long serialVersionUID = 4558388526459214153L;
 
 	/**
 	 * 灵工授权业务场景码，默认：DEFAULT。使用独立授权资产产品时，传递AUTHORIZE
