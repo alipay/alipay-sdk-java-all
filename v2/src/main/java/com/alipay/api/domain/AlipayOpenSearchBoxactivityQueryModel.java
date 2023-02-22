@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 搜索直达活动详情
  *
  * @author auto create
- * @since 1.0, 2022-11-15 19:32:54
+ * @since 1.0, 2023-02-08 17:04:16
  */
 public class AlipayOpenSearchBoxactivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5293727964948322236L;
+	private static final long serialVersionUID = 4423675531739866537L;
 
 	/**
 	 * 搜索直达活动id

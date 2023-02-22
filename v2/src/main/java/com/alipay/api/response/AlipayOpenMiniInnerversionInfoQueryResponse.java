@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerversion.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-02 17:10:36
+ * @since 1.0, 2023-02-14 17:07:18
  */
 public class AlipayOpenMiniInnerversionInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2844654698644282858L;
+	private static final long serialVersionUID = 2335173819799349988L;
 
 	/** 
 	 * 版本号
@@ -96,6 +96,12 @@ public class AlipayOpenMiniInnerversionInfoQueryResponse extends AlipayResponse 
 	@ApiListField("plugin_refs")
 	@ApiField("mini_app_plugin_info")
 	private List<MiniAppPluginInfo> pluginRefs;
+
+	/** 
+	 * 流程id
+	 */
+	@ApiField("process_task_id")
+	private String processTaskId;
 
 	/** 
 	 * 审核失败原因
@@ -240,6 +246,13 @@ public class AlipayOpenMiniInnerversionInfoQueryResponse extends AlipayResponse 
 	}
 	public List<MiniAppPluginInfo> getPluginRefs( ) {
 		return this.pluginRefs;
+	}
+
+	public void setProcessTaskId(String processTaskId) {
+		this.processTaskId = processTaskId;
+	}
+	public String getProcessTaskId( ) {
+		return this.processTaskId;
 	}
 
 	public void setRejectReason(String rejectReason) {

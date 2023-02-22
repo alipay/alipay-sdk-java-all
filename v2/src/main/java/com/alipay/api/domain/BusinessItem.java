@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车场业务归属模型
  *
  * @author auto create
- * @since 1.0, 2022-01-11 10:42:51
+ * @since 1.0, 2023-02-21 12:03:52
  */
 public class BusinessItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8225263252877332555L;
+	private static final long serialVersionUID = 6551241437541744774L;
 
 	/**
 	 * 业务归属appid
@@ -33,6 +33,7 @@ public class BusinessItem extends AlipayObject {
 
 	/**
 	 * 业务类型ONLINE_PAY(在线缴费) 、AGREEMENT_PAY(无感停车)
+DEVICE_ONLINE_PAY(车机在线缴费)
 	 */
 	@ApiField("business_type")
 	private String businessType;

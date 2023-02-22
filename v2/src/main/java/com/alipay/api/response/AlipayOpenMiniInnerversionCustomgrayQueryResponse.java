@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerversion.customgray.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:10:29
+ * @since 1.0, 2023-02-15 11:46:38
  */
 public class AlipayOpenMiniInnerversionCustomgrayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3521331967219998537L;
+	private static final long serialVersionUID = 5293656798729143668L;
 
 	/** 
 	 * 灰度分组列表
@@ -31,6 +31,12 @@ public class AlipayOpenMiniInnerversionCustomgrayQueryResponse extends AlipayRes
 	@ApiField("mini_app_custom_gray_member_info_dto")
 	private List<MiniAppCustomGrayMemberInfoDto> memberInfos;
 
+	/** 
+	 * 总数
+	 */
+	@ApiField("total_count")
+	private Long totalCount;
+
 	public void setGrayGroups(MiniAppCustomGrayGroupDto grayGroups) {
 		this.grayGroups = grayGroups;
 	}
@@ -43,6 +49,13 @@ public class AlipayOpenMiniInnerversionCustomgrayQueryResponse extends AlipayRes
 	}
 	public List<MiniAppCustomGrayMemberInfoDto> getMemberInfos( ) {
 		return this.memberInfos;
+	}
+
+	public void setTotalCount(Long totalCount) {
+		this.totalCount = totalCount;
+	}
+	public Long getTotalCount( ) {
+		return this.totalCount;
 	}
 
 }

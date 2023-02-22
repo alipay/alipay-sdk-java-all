@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 业务订单撤销接口
  *
  * @author auto create
- * @since 1.0, 2022-12-14 15:21:50
+ * @since 1.0, 2023-02-13 11:34:51
  */
 public class AlipayMerchantOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8422824723134841442L;
+	private static final long serialVersionUID = 4143537833845618877L;
 
 	/**
 	 * 业务场景，某些场景下操作的不是用户本身的订单，而是用户所在群体的订单的情况下，必传
@@ -34,12 +34,6 @@ public class AlipayMerchantOrderCancelModel extends AlipayObject {
 	@ApiListField("ext_info")
 	@ApiField("order_ext_info")
 	private List<OrderExtInfo> extInfo;
-
-	/**
-	 * 用户(identity)在应用(appid)下的唯一标识，当issuer为ALIPAY且type为USER_ID时使用
-	 */
-	@ApiField("open_id")
-	private String openId;
 
 	/**
 	 * 下单并支付的时候返回的订单号，与外部请求号两者之间必须传一个
@@ -72,13 +66,6 @@ public class AlipayMerchantOrderCancelModel extends AlipayObject {
 	}
 	public void setExtInfo(List<OrderExtInfo> extInfo) {
 		this.extInfo = extInfo;
-	}
-
-	public String getOpenId() {
-		return this.openId;
-	}
-	public void setOpenId(String openId) {
-		this.openId = openId;
 	}
 
 	public String getOrderId() {

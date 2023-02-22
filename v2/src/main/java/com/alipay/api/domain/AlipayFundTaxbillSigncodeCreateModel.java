@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建签约吱口令
  *
  * @author auto create
- * @since 1.0, 2023-01-06 16:31:31
+ * @since 1.0, 2023-02-13 15:03:15
  */
 public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2181921737619422594L;
+	private static final long serialVersionUID = 7621168882682977334L;
 
 	/**
 	 * 签约完成之后用户点击签约完成的回跳url，自定义提供，只支持支付宝端内的小程序跳转和H5跳转，不支持APP间跳转。入无特殊需要，可忽略此字段。
@@ -71,6 +71,7 @@ public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 	 * 参与方的标识类型，默认必输。值为有限枚举，用于指定identity字段类型，如提供，参与方的唯一标识（identity)也不能为空，目前支持如下类型：
 1.ALIPAY_ACCOUNT_NO（支付宝账号）
 2.ALIPAY_USER_ID（支付宝ID）
+3.ALIPAY_OPEN_ID（支付宝用户的OPENID）
 	 */
 	@ApiField("identity_type")
 	private String identityType;

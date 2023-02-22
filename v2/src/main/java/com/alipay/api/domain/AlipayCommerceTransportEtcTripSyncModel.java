@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC行程账单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2022-10-26 15:33:15
+ * @since 1.0, 2023-02-10 13:20:49
  */
 public class AlipayCommerceTransportEtcTripSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2772961759649655229L;
+	private static final long serialVersionUID = 7487193268885123147L;
 
 	/**
 	 * 垫资状态（
@@ -111,7 +111,7 @@ public class AlipayCommerceTransportEtcTripSyncModel extends AlipayObject {
 	private String tradeNo;
 
 	/**
-	 * 支付宝交易状态（S：扣款成功； R: 退款成功）银行交易状态（PROCESS_SUCCESS：受理成功；PROCESS_FAIL：受理失败；）
+	 * 支付宝交易状态（S：扣款成功； R: 退款成功）银行交易状态（IN_PROCESSING：处理中，PROCESS_SUCCESS：受理成功；PROCESS_FAIL：受理失败；）
 	 */
 	@ApiField("trade_status")
 	private String tradeStatus;

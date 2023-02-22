@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达活动提报
  *
  * @author auto create
- * @since 1.0, 2022-11-18 10:32:52
+ * @since 1.0, 2023-02-08 17:32:50
  */
 public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1181785281193674721L;
+	private static final long serialVersionUID = 8596612817841695718L;
 
 	/**
 	 * 活动链接，必须为关联的小程序的页面链接（链接以 alipays 开头），可参考<a href="https://opendocs.alipay.com/support/01rb18"> 小程序scheme链接介绍 </a>
 	 */
 	@ApiField("action_url")
 	private String actionUrl;
+
+	/**
+	 * 创建banner活动时，可添加底纹推广词，有机会在首页搜索框内展示，提升banner活动曝光机会
+	 */
+	@ApiField("background_word")
+	private String backgroundWord;
 
 	/**
 	 * 搜索直达配置id
@@ -35,7 +41,7 @@ public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 	private String endTime;
 
 	/**
-	 * 当material_type="IMAGE"时，为图片id；当material_type="VIDEO"时，为视频id。小程序直达仅支持图片类型。图片id可以通过调用<a href="https://opendocs.alipay.com/mini/03hvkt"> 支付宝文件上传接口 </a>上传图片，获取图片id(bizCode：search_box_banner)。<a href="https://opendocs.alipay.com/b/03al6f"> 图片规范 </a>
+	 * 当material_type="IMAGE"时，为图片id；当material_type="VIDEO"时，为视频id。小程序直达仅支持图片类型。图片id可以通过调用<a href="https://opendocs.alipay.com/mini/03hvl1?ref=api"> 支付宝文件上传接口 </a>上传图片，获取图片id(bizCode：search_box_banner)。<a href="https://opendocs.alipay.com/b/03al6f"> 图片规范 </a>
 	 */
 	@ApiField("material_id")
 	private String materialId;
@@ -94,6 +100,13 @@ public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 	}
 	public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
+	}
+
+	public String getBackgroundWord() {
+		return this.backgroundWord;
+	}
+	public void setBackgroundWord(String backgroundWord) {
+		this.backgroundWord = backgroundWord;
 	}
 
 	public String getBoxId() {

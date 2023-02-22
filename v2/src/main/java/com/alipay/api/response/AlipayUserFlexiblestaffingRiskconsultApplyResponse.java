@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.RiskApplyConsult;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.flexiblestaffing.riskconsult.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-16 10:41:40
+ * @since 1.0, 2023-02-22 15:21:38
  */
 public class AlipayUserFlexiblestaffingRiskconsultApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2846366125448217882L;
+	private static final long serialVersionUID = 5136769985762325185L;
 
 	/** 
 	 * 场景码
@@ -42,8 +44,9 @@ public class AlipayUserFlexiblestaffingRiskconsultApplyResponse extends AlipayRe
 	/** 
 	 * 风险咨询结果集
 	 */
-	@ApiField("risk_results")
-	private RiskApplyConsult riskResults;
+	@ApiListField("risk_results")
+	@ApiField("risk_apply_consult")
+	private List<RiskApplyConsult> riskResults;
 
 	/** 
 	 * 建议风险等级
@@ -79,10 +82,10 @@ public class AlipayUserFlexiblestaffingRiskconsultApplyResponse extends AlipayRe
 		return this.productCode;
 	}
 
-	public void setRiskResults(RiskApplyConsult riskResults) {
+	public void setRiskResults(List<RiskApplyConsult> riskResults) {
 		this.riskResults = riskResults;
 	}
-	public RiskApplyConsult getRiskResults( ) {
+	public List<RiskApplyConsult> getRiskResults( ) {
 		return this.riskResults;
 	}
 

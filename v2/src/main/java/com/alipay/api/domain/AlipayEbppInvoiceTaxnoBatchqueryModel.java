@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取指定企业税号的用户发票要素列表
  *
  * @author auto create
- * @since 1.0, 2022-11-19 16:24:48
+ * @since 1.0, 2023-02-20 21:28:49
  */
 public class AlipayEbppInvoiceTaxnoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4452635267463628892L;
+	private static final long serialVersionUID = 3852998821761824295L;
 
 	/**
 	 * 默认值为false。true为输出交易信息，false为不输出交易信息。
@@ -37,6 +37,8 @@ start_invoice_date和end_invoice_date传值要求
 	 * 查询票种列表。枚举值如下：
 *PLAIN：增值税电子普通发票；
 *SPECIAL：增值税专用发票；
+*ALL_ELECTRONIC_GENERAL： "电子发票（普通发票）;
+*ALL_ELECTRONIC_SPECIAL： "电子发票（专用发票）;
 *PLAIN_INVOICE：增值税普通发票；
 *PAPER_INVOICE：增值税普通发票（卷式）；
 *SALSE_INVOICE：机动车销售统一发票。

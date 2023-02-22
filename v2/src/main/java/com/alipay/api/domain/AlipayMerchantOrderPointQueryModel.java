@@ -7,18 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单相关积分查询
  *
  * @author auto create
- * @since 1.0, 2022-12-14 15:32:16
+ * @since 1.0, 2023-02-13 13:25:49
  */
 public class AlipayMerchantOrderPointQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4341873138856639646L;
-
-	/**
-	 * 用户(user中的identity)在应用(appid)下的唯一标识，当issuer为ALIPAY且type为USER_ID时使用
-openid改造，新增open_id字段和相关错误码
-	 */
-	@ApiField("open_id")
-	private String openId;
+	private static final long serialVersionUID = 3818693485221612331L;
 
 	/**
 	 * 需要查询的积分类型，如家庭积分、会员积分、返佣积分等等
@@ -31,13 +24,6 @@ openid改造，新增open_id字段和相关错误码
 	 */
 	@ApiField("user")
 	private UserIdentity user;
-
-	public String getOpenId() {
-		return this.openId;
-	}
-	public void setOpenId(String openId) {
-		this.openId = openId;
-	}
 
 	public String getPointType() {
 		return this.pointType;

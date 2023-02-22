@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多端小程序-真机预览接口
  *
  * @author auto create
- * @since 1.0, 2022-12-21 14:31:35
+ * @since 1.0, 2023-02-08 14:08:17
  */
 public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6243989312963898984L;
+	private static final long serialVersionUID = 6356133575887554367L;
 
 	/**
 	 * 构建参数- JSAPI 权限文件, JSON 字符串
@@ -23,7 +23,7 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	private String buildJsPermission;
 
 	/**
-	 * 构建参数-IDE 构建好的包地址
+	 * 构建参数-IDE 构建好的包地址，如果是免加签场景该字段对应的是加签后的包地址
 	 */
 	@ApiField("build_pkg_url")
 	private String buildPkgUrl;
@@ -33,6 +33,18 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	 */
 	@ApiField("build_plugin_url")
 	private String buildPluginUrl;
+
+	/**
+	 * 包大小,免加签场景这里指加签包大小
+	 */
+	@ApiField("builded_package_size")
+	private Long buildedPackageSize;
+
+	/**
+	 * 构建好的插件包大小，对应免加签场景是加签后的包地址大小
+	 */
+	@ApiField("builded_plugin_size")
+	private Long buildedPluginSize;
 
 	/**
 	 * 一个端的标识，用于区分不同的客户端，每接入一个客户端，都需要向小程序应用中心申请bundelId入驻
@@ -65,7 +77,7 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	private String miniAppId;
 
 	/**
-	 * 构建参数-IDE 构建好的appx2.0包地址
+	 * 构建参数-IDE 构建好的appx2.0包地址，如果是免加签场景该字段对应的是加签后的包地址
 	 */
 	@ApiField("new_build_pkg_url")
 	private String newBuildPkgUrl;
@@ -76,6 +88,24 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	 */
 	@ApiField("new_build_plugin_url")
 	private String newBuildPluginUrl;
+
+	/**
+	 * 包大小,免加签场景这里指加签包大小
+	 */
+	@ApiField("new_builded_package_size")
+	private Long newBuildedPackageSize;
+
+	/**
+	 * appx2.0构建好的插件包大小,免加签场景是加签后的包大小
+	 */
+	@ApiField("new_builded_plugin_size")
+	private Long newBuildedPluginSize;
+
+	/**
+	 * 是否免加签，当true的时候代表不需要加签即传过来的包地址是加签好的地址
+	 */
+	@ApiField("no_sign")
+	private Boolean noSign;
 
 	/**
 	 * 小程序代码中引用的插件列表，包含插件id和插件版本信息
@@ -116,6 +146,20 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	}
 	public void setBuildPluginUrl(String buildPluginUrl) {
 		this.buildPluginUrl = buildPluginUrl;
+	}
+
+	public Long getBuildedPackageSize() {
+		return this.buildedPackageSize;
+	}
+	public void setBuildedPackageSize(Long buildedPackageSize) {
+		this.buildedPackageSize = buildedPackageSize;
+	}
+
+	public Long getBuildedPluginSize() {
+		return this.buildedPluginSize;
+	}
+	public void setBuildedPluginSize(Long buildedPluginSize) {
+		this.buildedPluginSize = buildedPluginSize;
 	}
 
 	public String getBundleId() {
@@ -165,6 +209,27 @@ public class AlipayOpenMiniInnerversionPreviewUploadModel extends AlipayObject {
 	}
 	public void setNewBuildPluginUrl(String newBuildPluginUrl) {
 		this.newBuildPluginUrl = newBuildPluginUrl;
+	}
+
+	public Long getNewBuildedPackageSize() {
+		return this.newBuildedPackageSize;
+	}
+	public void setNewBuildedPackageSize(Long newBuildedPackageSize) {
+		this.newBuildedPackageSize = newBuildedPackageSize;
+	}
+
+	public Long getNewBuildedPluginSize() {
+		return this.newBuildedPluginSize;
+	}
+	public void setNewBuildedPluginSize(Long newBuildedPluginSize) {
+		this.newBuildedPluginSize = newBuildedPluginSize;
+	}
+
+	public Boolean getNoSign() {
+		return this.noSign;
+	}
+	public void setNoSign(Boolean noSign) {
+		this.noSign = noSign;
 	}
 
 	public List<MiniAppPluginReference> getPluginRefs() {

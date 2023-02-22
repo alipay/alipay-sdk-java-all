@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务上下文包括环境信息和用户信息
  *
  * @author auto create
- * @since 1.0, 2018-09-18 10:50:24
+ * @since 1.0, 2023-02-20 19:56:11
  */
 public class ServiceContext extends AlipayObject {
 
-	private static final long serialVersionUID = 6191725673314882853L;
+	private static final long serialVersionUID = 5887984631465721195L;
 
 	/**
 	 * 客户端IP
@@ -24,6 +24,12 @@ public class ServiceContext extends AlipayObject {
 	 */
 	@ApiField("client_pcidguid")
 	private String clientPcidguid;
+
+	/**
+	 * 用户ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 服务器名
@@ -55,6 +61,13 @@ public class ServiceContext extends AlipayObject {
 	}
 	public void setClientPcidguid(String clientPcidguid) {
 		this.clientPcidguid = clientPcidguid;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getServerName() {

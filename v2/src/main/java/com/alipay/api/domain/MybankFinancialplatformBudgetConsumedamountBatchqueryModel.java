@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 网商根据bizUkId查询占用金额
  *
  * @author auto create
- * @since 1.0, 2022-11-15 17:58:55
+ * @since 1.0, 2023-02-08 12:43:34
  */
 public class MybankFinancialplatformBudgetConsumedamountBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1287855842249948285L;
+	private static final long serialVersionUID = 5783861392718623525L;
 
 	/**
 	 * 业务活动唯一id集合

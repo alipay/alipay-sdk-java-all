@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户免证照进件
  *
  * @author auto create
- * @since 1.0, 2022-04-15 17:25:51
+ * @since 1.0, 2023-02-20 20:34:51
  */
 public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5888694727537162726L;
+	private static final long serialVersionUID = 2292571235943816823L;
 
 	/**
 	 * 补充证件图片，与additional_cert_no、additional_cert_type同时提供。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
@@ -35,25 +35,25 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private String additionalCertType;
 
 	/**
-	 * 商户别名。支付宝收银台及账单中的商户名称会展示此处设置的别名。如果涉及支付宝APP内的支付，支付结果页也会展示该别名；如果涉及当面付场景，请填写线下店铺名称
+	 * 商户别名。支付宝收银台及账单中的商户名称会展示此处设置的别名。如果涉及支付宝APP内的支付，支付结果页也会展示该别名；如果涉及线下当面付场景，请填写线下店铺名称
 	 */
 	@ApiField("alias_name")
 	private String aliasName;
 
 	/**
-	 * 结算支付宝账号，结算账号使用支付宝账号时必填。本字段要求与商户名称name同名，且是实名认证支付宝账户(个体工商户可以与name或cert_name相同)
+	 * 结算支付宝账号，结算账号使用支付宝账号时必填，本字段指定交易资金结算的具体支付宝账号，与binding_alipay_logon_id同主体的支付宝账号即可
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
 
 	/**
-	 * 签约支付宝账户，用于协议确认，及后续二级商户增值产品服务签约时使用。本字段要求与商户名称name同名(个体工商户可以与name或cert_name相同)，且是实名认证支付宝账户
+	 * 签约支付宝账户。需使用实名认证支付宝账号，使用该支付宝账号签约直付通二级商户及后续服务，商户主体与该支付宝账号主体相同
 	 */
 	@ApiField("binding_alipay_logon_id")
 	private String bindingAlipayLogonId;
 
 	/**
-	 * 结算银行卡信息，如果结算到支付宝账号，则不需要填写。本业务当前只允许传入一张结算卡。个人类型商户不允许结算到银行卡
+	 * 结算银行卡信息，结算账号使用银行卡时必填。本业务当前只允许传入一张结算卡。个人类型商户不允许结算到银行卡
 	 */
 	@ApiField("biz_cards")
 	private SettleCardInfo bizCards;
@@ -71,13 +71,13 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private ContactInfo contactInfos;
 
 	/**
-	 * 默认结算规则。当调用收单接口，结算条款中设置默认结算规则时，交易资金将结算至此处设置的默认结算目标账户中。其详细描述及收单接口传参示例参考功能包文档
+	 * 默认结算规则。当调用收单接口，settle_info中设置默认结算规则（defaultSettle）时，交易资金将结算至此处设置的默认结算目标账户中。其详细描述及收单接口传参示例参考功能包文档
 	 */
 	@ApiField("default_settle_rule")
 	private DefaultSettleRule defaultSettleRule;
 
 	/**
-	 * 商户编号，由机构定义，需要保证在机构下唯一
+	 * 商户编号，由一级商户定义，保证在一级商户下唯一即可
 	 */
 	@ApiField("external_id")
 	private String externalId;
@@ -89,20 +89,31 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private String inDoorImages;
 
 	/**
+	 * （平替原来的info_source_uid字段，如果能拿到openId，请传本字段，原字段留空）。信息关联的openId
+	 */
+	@ApiField("info_source_open_id")
+	private String infoSourceOpenId;
+
+	/**
+	 * （已废弃，请使用info_source_open_id）。信息关联的uid
+	 */
+	@ApiField("info_source_uid")
+	private String infoSourceUid;
+
+	/**
 	 * 开票资料信息
 	 */
 	@ApiField("invoice_info")
 	private MerchantInvoiceInfo invoiceInfo;
 
 	/**
-	 * 授权函。当商户名与结算卡户名不一致（模板参考https://gw.alipayobjects.com/os/skylark-tools/public/files/d5fcbe7463d7159a0d362da417d157ed.docx），或涉及外籍法人（这种情况上传任意能证明身份的图片）时必填，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
+	 * 授权函。当商户名与结算卡户名不一致。《说明函》模板参考https://opendocs.alipay.com/open/direct-payment/cg5mkp#%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99。涉及外籍法人（这种情况上传任意能证明身份的图片）时必填，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("license_auth_letter_image")
 	private String licenseAuthLetterImage;
 
 	/**
-	 * 商户类别码mcc，参见https://gw.alipayobjects.com/os/bmw-prod/e5dbb27b-1d8d-442e-be9e-6e52971ce7c3.xlsx
-特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质在qualifications字段中上传，会有人工审核
+	 * 商户类别码 mcc，可查看  <a href="https://mdn.alipayobjects.com/portal_mdssth/afts/file/A*-EYjSJ2soV0AAAAAAAAAAAAAAQAAAQ">进件MCC与资质要求 202211.xlsx</a>，特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质要在 qualifications 中上传，会有人工审核。
 	 */
 	@ApiField("mcc")
 	private String mcc;
@@ -114,7 +125,19 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private String outDoorImages;
 
 	/**
-	 * 商户行业资质图片，当商户是特殊行业时必填。每项行业资质信息中，industry_qualification_type和industry_qualification_image均必填。
+	 * （已废弃，请使用oversea_settle_open_id）境外结算账号
+	 */
+	@ApiField("oversea_settle_account")
+	private String overseaSettleAccount;
+
+	/**
+	 * （平替原来的oversea_settle_open_id字段，如能够获取到该场景的open_id，请传本字段，原字段留空）境外结算账号
+	 */
+	@ApiField("oversea_settle_open_id")
+	private String overseaSettleOpenId;
+
+	/**
+	 * 商户行业资质图片，当商户的经营类目选择了特殊行业时该字段必填，需要特殊行业资质文件。每项行业资质信息中，industry_qualification_type和industry_qualification_image均必填。
 	 */
 	@ApiListField("qualifications")
 	@ApiField("industry_qualification_info")
@@ -229,6 +252,20 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 		this.inDoorImages = inDoorImages;
 	}
 
+	public String getInfoSourceOpenId() {
+		return this.infoSourceOpenId;
+	}
+	public void setInfoSourceOpenId(String infoSourceOpenId) {
+		this.infoSourceOpenId = infoSourceOpenId;
+	}
+
+	public String getInfoSourceUid() {
+		return this.infoSourceUid;
+	}
+	public void setInfoSourceUid(String infoSourceUid) {
+		this.infoSourceUid = infoSourceUid;
+	}
+
 	public MerchantInvoiceInfo getInvoiceInfo() {
 		return this.invoiceInfo;
 	}
@@ -255,6 +292,20 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	}
 	public void setOutDoorImages(String outDoorImages) {
 		this.outDoorImages = outDoorImages;
+	}
+
+	public String getOverseaSettleAccount() {
+		return this.overseaSettleAccount;
+	}
+	public void setOverseaSettleAccount(String overseaSettleAccount) {
+		this.overseaSettleAccount = overseaSettleAccount;
+	}
+
+	public String getOverseaSettleOpenId() {
+		return this.overseaSettleOpenId;
+	}
+	public void setOverseaSettleOpenId(String overseaSettleOpenId) {
+		this.overseaSettleOpenId = overseaSettleOpenId;
 	}
 
 	public List<IndustryQualificationInfo> getQualifications() {

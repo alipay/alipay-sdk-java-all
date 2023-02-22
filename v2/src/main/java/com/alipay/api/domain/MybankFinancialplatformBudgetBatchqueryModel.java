@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商分页查询活动预算
  *
  * @author auto create
- * @since 1.0, 2022-11-15 17:58:44
+ * @since 1.0, 2023-02-08 12:43:35
  */
 public class MybankFinancialplatformBudgetBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6273438312453613454L;
+	private static final long serialVersionUID = 2651897192119341653L;
 
 	/**
 	 * PURCHASE("PURCHASE", "采购")

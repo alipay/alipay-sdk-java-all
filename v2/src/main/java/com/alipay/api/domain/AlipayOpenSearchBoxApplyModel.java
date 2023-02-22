@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建搜索直达
  *
  * @author auto create
- * @since 1.0, 2022-11-30 11:55:27
+ * @since 1.0, 2023-02-08 17:11:14
  */
 public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5789824654258789799L;
+	private static final long serialVersionUID = 2711781618378423924L;
+
+	/**
+	 * 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词
+	 */
+	@ApiListField("area_keywords")
+	@ApiField("string")
+	private List<String> areaKeywords;
 
 	/**
 	 * 品牌介绍，5-15个中文字符。
@@ -30,6 +37,19 @@ public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 	private String brandId;
 
 	/**
+	 * 可通过配置来开启商圈权益模块，关闭后搜索直达不展示商圈权益模块
+	 */
+	@ApiField("business_benefit_switch")
+	private Boolean businessBenefitSwitch;
+
+	/**
+	 * 小程序已关联商圈时，可添加商圈id（目前仅对品牌直达开放，小程序直达暂未开放）
+	 */
+	@ApiListField("business_district_ids")
+	@ApiField("string")
+	private List<String> businessDistrictIds;
+
+	/**
 	 * 自定义触发词，最多可配置6个，限1-8个中文字符。
 小程序直达不支持设置此项
 	 */
@@ -38,7 +58,7 @@ public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 	private List<String> customKeywords;
 
 	/**
-	 * 氛围图片id，调用<a href="https://opendocs.alipay.com/mini/03hvkt"> 支付宝文件上传接口 </a>上传图片获取图片id(bizCode：search_box_atmosphere)。<a href="https://opendocs.alipay.com/b/03al6f"> 图片规范 </a>
+	 * 氛围图片id，调用 <a href="https://opendocs.alipay.com/mini/03hvl1?ref=api">支付宝文件上传接口</a> 上传图片获取图片id(bizCode：search_box_atmosphere)。 <a href="https://opendocs.alipay.com/b/03al6f">图片规范</a> 
 小程序直达不支持设置此项。
 	 */
 	@ApiField("image_id")
@@ -79,6 +99,13 @@ public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 	@ApiField("target_appid")
 	private String targetAppid;
 
+	public List<String> getAreaKeywords() {
+		return this.areaKeywords;
+	}
+	public void setAreaKeywords(List<String> areaKeywords) {
+		this.areaKeywords = areaKeywords;
+	}
+
 	public String getBoxDesc() {
 		return this.boxDesc;
 	}
@@ -91,6 +118,20 @@ public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 	}
 	public void setBrandId(String brandId) {
 		this.brandId = brandId;
+	}
+
+	public Boolean getBusinessBenefitSwitch() {
+		return this.businessBenefitSwitch;
+	}
+	public void setBusinessBenefitSwitch(Boolean businessBenefitSwitch) {
+		this.businessBenefitSwitch = businessBenefitSwitch;
+	}
+
+	public List<String> getBusinessDistrictIds() {
+		return this.businessDistrictIds;
+	}
+	public void setBusinessDistrictIds(List<String> businessDistrictIds) {
+		this.businessDistrictIds = businessDistrictIds;
 	}
 
 	public List<String> getCustomKeywords() {

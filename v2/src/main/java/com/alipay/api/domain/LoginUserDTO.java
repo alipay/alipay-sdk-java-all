@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 参与者-租户DTO
  *
  * @author auto create
- * @since 1.0, 2022-11-16 14:24:49
+ * @since 1.0, 2023-02-22 19:09:01
  */
 public class LoginUserDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3172221571685638225L;
+	private static final long serialVersionUID = 6477311322573177651L;
 
 	/**
 	 * ipRoleId-否-操作员唯一标识-无枚举-被调方返回值-无特殊说明
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
+
+	/**
+	 * LabelDTO 不唯一 作为map拓展字段 无枚举 调用方提供 无特殊说明
+	 */
+	@ApiField("tenant_ext_info")
+	private LabelDTO tenantExtInfo;
 
 	/**
 	 * tenantId-否-租户唯一标识-无枚举-被调方返回值-无特殊说明
@@ -36,6 +42,13 @@ public class LoginUserDTO extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public LabelDTO getTenantExtInfo() {
+		return this.tenantExtInfo;
+	}
+	public void setTenantExtInfo(LabelDTO tenantExtInfo) {
+		this.tenantExtInfo = tenantExtInfo;
 	}
 
 	public String getTenantId() {

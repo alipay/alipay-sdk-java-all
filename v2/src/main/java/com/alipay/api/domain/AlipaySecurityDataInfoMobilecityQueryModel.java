@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手机号归属信息查询
  *
  * @author auto create
- * @since 1.0, 2017-01-03 17:38:43
+ * @since 1.0, 2023-02-10 14:05:56
  */
 public class AlipaySecurityDataInfoMobilecityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3387215786564296847L;
+	private static final long serialVersionUID = 2183961939226494747L;
 
 	/**
 	 * 电话号码

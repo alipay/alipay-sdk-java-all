@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗卖家实时准入风控
  *
  * @author auto create
- * @since 1.0, 2020-07-15 10:05:07
+ * @since 1.0, 2023-02-13 15:00:31
  */
 public class AlipayPcreditHuabeiSelleradmitRealtimeCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4293336429788266537L;
+	private static final long serialVersionUID = 2897221817577995195L;
 
 	/**
 	 * 支付宝id

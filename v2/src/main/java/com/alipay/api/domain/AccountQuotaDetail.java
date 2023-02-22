@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccountQuotaDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7261556544175719541L;
+	private static final long serialVersionUID = 5286898712334562943L;
 
 	/**
 	 * 周期内的额度上限

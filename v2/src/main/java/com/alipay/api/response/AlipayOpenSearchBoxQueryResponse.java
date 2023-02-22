@@ -4,7 +4,9 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.SearchBoxAccountModule;
+import com.alipay.api.domain.SearchBoxAreaKeyWordModule;
 import com.alipay.api.domain.SearchBoxBasicInfoModule;
+import com.alipay.api.domain.BoxBusinessDistrictModule;
 import com.alipay.api.domain.SearchBoxKeyWordModule;
 import com.alipay.api.domain.SearchBoxImageModule;
 import com.alipay.api.domain.SearchBoxServiceModule;
@@ -15,17 +17,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.box.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:07:55
+ * @since 1.0, 2023-02-09 11:06:41
  */
 public class AlipayOpenSearchBoxQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3128435412332734896L;
+	private static final long serialVersionUID = 2172757581696657774L;
 
 	/** 
 	 * 搜索直达账号模块
 	 */
 	@ApiField("account_module")
 	private SearchBoxAccountModule accountModule;
+
+	/** 
+	 * 地域触发词
+	 */
+	@ApiField("area_keyword_module")
+	private SearchBoxAreaKeyWordModule areaKeywordModule;
 
 	/** 
 	 * 搜索直达基础信息模块
@@ -44,6 +52,12 @@ public class AlipayOpenSearchBoxQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("box_status")
 	private String boxStatus;
+
+	/** 
+	 * 商圈信息
+	 */
+	@ApiField("business_district_module")
+	private BoxBusinessDistrictModule businessDistrictModule;
 
 	/** 
 	 * 搜索直达默认触发词，由系统生成，无法修改
@@ -83,6 +97,13 @@ public class AlipayOpenSearchBoxQueryResponse extends AlipayResponse {
 		return this.accountModule;
 	}
 
+	public void setAreaKeywordModule(SearchBoxAreaKeyWordModule areaKeywordModule) {
+		this.areaKeywordModule = areaKeywordModule;
+	}
+	public SearchBoxAreaKeyWordModule getAreaKeywordModule( ) {
+		return this.areaKeywordModule;
+	}
+
 	public void setBasicInfoModule(SearchBoxBasicInfoModule basicInfoModule) {
 		this.basicInfoModule = basicInfoModule;
 	}
@@ -102,6 +123,13 @@ public class AlipayOpenSearchBoxQueryResponse extends AlipayResponse {
 	}
 	public String getBoxStatus( ) {
 		return this.boxStatus;
+	}
+
+	public void setBusinessDistrictModule(BoxBusinessDistrictModule businessDistrictModule) {
+		this.businessDistrictModule = businessDistrictModule;
+	}
+	public BoxBusinessDistrictModule getBusinessDistrictModule( ) {
+		return this.businessDistrictModule;
 	}
 
 	public void setDefaultKeywords(List<String> defaultKeywords) {

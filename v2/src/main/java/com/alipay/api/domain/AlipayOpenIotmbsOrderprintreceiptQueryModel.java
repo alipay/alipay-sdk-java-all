@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询如意订单信息
  *
  * @author auto create
- * @since 1.0, 2023-01-11 14:27:53
+ * @since 1.0, 2023-02-14 10:05:15
  */
 public class AlipayOpenIotmbsOrderprintreceiptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8788379337539296254L;
+	private static final long serialVersionUID = 3844821837581314925L;
 
 	/**
 	 * 订单中心产生的32位指令id

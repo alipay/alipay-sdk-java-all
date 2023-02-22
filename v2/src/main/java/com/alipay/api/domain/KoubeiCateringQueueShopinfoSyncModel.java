@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringQueueShopinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8535616637661894462L;
+	private static final long serialVersionUID = 4763665342888431891L;
 
 	/**
 	 * 过号是否作废。返回0表示作废；非0表示不作废，并以数字表示过号延几桌。如返回1，表示延一桌，返回2则是延两桌。

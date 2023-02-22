@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连商户信息补录
  *
  * @author auto create
- * @since 1.0, 2021-09-03 17:54:09
+ * @since 1.0, 2023-02-08 16:51:50
  */
 public class AntMerchantExpandIndirectSupplementCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6886428758653841924L;
+	private static final long serialVersionUID = 3657766651967236199L;
 
 	/**
 	 * logo图片，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。

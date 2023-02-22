@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业查询员工列表
  *
  * @author auto create
- * @since 1.0, 2022-11-21 14:48:10
+ * @since 1.0, 2023-02-10 10:18:14
  */
 public class AlipayFundJointaccountMemberQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2161165312786459322L;
+	private static final long serialVersionUID = 2273576848874155831L;
 
 	/**
 	 * 账户ID
@@ -30,6 +30,12 @@ public class AlipayFundJointaccountMemberQueryModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 员工的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 采用分页查询，本参数为空或0默认显示第一页。如果输入的值大于总页数，则支付宝返回最后一页数据。
@@ -74,6 +80,13 @@ public class AlipayFundJointaccountMemberQueryModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPageNum() {

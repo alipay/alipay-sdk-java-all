@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoxCrowdMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3213784167459719263L;
+	private static final long serialVersionUID = 8353651429333364549L;
 
 	/**
 	 * 客群码

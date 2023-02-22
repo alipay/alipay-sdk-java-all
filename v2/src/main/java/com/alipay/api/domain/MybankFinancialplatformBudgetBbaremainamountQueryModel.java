@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网商BBA可用/剩余金额查询
  *
  * @author auto create
- * @since 1.0, 2022-11-15 17:59:05
+ * @since 1.0, 2023-02-08 12:44:04
  */
 public class MybankFinancialplatformBudgetBbaremainamountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7859989966783542796L;
+	private static final long serialVersionUID = 6414175762155626359L;
 
 	/**
 	 * 业务预算申请Code

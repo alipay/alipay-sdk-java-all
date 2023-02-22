@@ -7,22 +7,22 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销发票原件查询
  *
  * @author auto create
- * @since 1.0, 2023-01-03 19:22:22
+ * @since 1.0, 2023-02-20 21:29:15
  */
 public class AlipayEbppInvoiceFileOutputQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4812159964126476245L;
+	private static final long serialVersionUID = 3469576629915665646L;
 
 	/**
 	 * 发票代码
-字段长度（10-12位）
+字段长度（10-12位），全电票时为空
 	 */
 	@ApiField("invoice_code")
 	private String invoiceCode;
 
 	/**
 	 * 发票号码
-字段长度（8-10位）
+字段长度（8-10位），全电票时为20位
 	 */
 	@ApiField("invoice_no")
 	private String invoiceNo;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序用户灰度分组查询
  *
  * @author auto create
- * @since 1.0, 2023-01-04 16:46:42
+ * @since 1.0, 2023-02-15 11:45:54
  */
 public class AlipayOpenMiniInnerversionCustomgrayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3171652557332116262L;
+	private static final long serialVersionUID = 8363169184839418385L;
 
 	/**
 	 * 操作类型

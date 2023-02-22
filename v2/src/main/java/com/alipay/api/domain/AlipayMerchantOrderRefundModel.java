@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 积分回退接口
  *
  * @author auto create
- * @since 1.0, 2022-12-14 15:21:52
+ * @since 1.0, 2023-02-13 13:25:15
  */
 public class AlipayMerchantOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7789989154953344225L;
+	private static final long serialVersionUID = 5239933289652183294L;
 
 	/**
 	 * 业务场景，某些场景下操作的不是用户本身的订单，而是用户所在群体的订单的情况下，必传
@@ -34,12 +34,6 @@ public class AlipayMerchantOrderRefundModel extends AlipayObject {
 	@ApiListField("ext_info")
 	@ApiField("order_ext_info")
 	private List<OrderExtInfo> extInfo;
-
-	/**
-	 * 用户(buyer中的identiidentity)在应用(appId)下的唯一标识，当type为USER_ID且issuer为ALIPAY时使用
-	 */
-	@ApiField("open_id")
-	private String openId;
 
 	/**
 	 * 下单并支付的时候返回的订单号，与外部请求号两者之间必须传一个
@@ -85,13 +79,6 @@ public class AlipayMerchantOrderRefundModel extends AlipayObject {
 	}
 	public void setExtInfo(List<OrderExtInfo> extInfo) {
 		this.extInfo = extInfo;
-	}
-
-	public String getOpenId() {
-		return this.openId;
-	}
-	public void setOpenId(String openId) {
-		this.openId = openId;
 	}
 
 	public String getOrderId() {

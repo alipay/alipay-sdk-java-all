@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票要素模型
  *
  * @author auto create
- * @since 1.0, 2022-03-30 15:49:29
+ * @since 1.0, 2023-02-20 16:49:50
  */
 public class InvoiceElementModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3375467712421454566L;
+	private static final long serialVersionUID = 3341358271781231993L;
 
 	/**
 	 * 发票报销状态
@@ -81,6 +81,8 @@ false:存在异常
 可选值
 PLAIN：增值税电子普通发票
 SPECIAL：增值税专用发票
+ALL_ELECTRONIC_GENERAL： "电子发票（普通发票）
+ALL_ELECTRONIC_SPECIAL： "电子发票（专用发票）
 PLAIN_INVOICE:增值税普通发票
 PAPER_INVOICE:增值税普通发票（卷式）
 SALSE_INVOICE:机动车销售统一发票

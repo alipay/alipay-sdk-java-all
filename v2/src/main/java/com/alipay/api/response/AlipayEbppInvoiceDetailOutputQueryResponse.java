@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.detail.output.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 00:36:43
+ * @since 1.0, 2023-02-22 10:07:16
  */
 public class AlipayEbppInvoiceDetailOutputQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1562524389726646859L;
+	private static final long serialVersionUID = 6164943544451825562L;
 
 	/** 
 	 * 防伪码，发票校验码
@@ -63,6 +63,7 @@ true－已上传
 
 	/** 
 	 * 发票代码
+（全电票为空）
 	 */
 	@ApiField("invoice_code")
 	private String invoiceCode;
@@ -190,6 +191,8 @@ TRANSFERRED－已转交
 	 * 票种
 PLAIN：增值税电子普通发票
 SPECIAL：增值税专用发票
+ALL_ELECTRONIC_GENERAL：电子发票（普通发票）
+ALL_ELECTRONIC_SPECIAL：电子发票（增值税专用发票）
 PLAIN_INVOICE:增值税普通发票
 PAPER_INVOICE:增值税普通发票（卷式）
 SALSE_INVOICE:机动车销售统一发票

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝收藏足迹上报接口
  *
  * @author auto create
- * @since 1.0, 2022-12-29 12:52:53
+ * @since 1.0, 2023-02-13 14:53:35
  */
 public class AlipaySocialBaseMcommentFootprintSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4468618637681663175L;
+	private static final long serialVersionUID = 7372146119313859386L;
 
 	/**
 	 * 足迹服务分配的业务码

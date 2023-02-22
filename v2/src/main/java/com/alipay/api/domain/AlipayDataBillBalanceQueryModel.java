@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商家账户当前余额查询
  *
  * @author auto create
- * @since 1.0, 2023-01-16 16:35:57
+ * @since 1.0, 2023-02-21 16:27:50
  */
 public class AlipayDataBillBalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1181691736853796159L;
+	private static final long serialVersionUID = 8862159767749721355L;
 
 	/**
 	 * 目标查询账户（仅支持部分场景，查询自身时候不需要传递当前字段）。

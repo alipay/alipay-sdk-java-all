@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即时配送订单扩展(仅预下单openapi中使用)
  *
  * @author auto create
- * @since 1.0, 2021-03-24 10:06:06
+ * @since 1.0, 2023-02-17 11:47:31
  */
 public class OrderExtIstdForPreOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1333147182714811156L;
+	private static final long serialVersionUID = 5344881356562362762L;
 
 	/**
 	 * 骑手应付金额

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账比例查询
  *
  * @author auto create
- * @since 1.0, 2022-09-14 19:39:09
+ * @since 1.0, 2023-02-07 20:58:26
  */
 public class AlipayTradeRoyaltyRateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6422641336952853483L;
+	private static final long serialVersionUID = 4588375372538937467L;
 
 	/**
 	 * 外部请求号，由商家自定义。32个字符以内，仅可包含字母、数字、下划线。需保证在商户端不重复。

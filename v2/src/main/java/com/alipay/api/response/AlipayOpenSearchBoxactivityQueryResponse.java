@@ -12,11 +12,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.boxactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:17:01
+ * @since 1.0, 2023-02-09 11:06:40
  */
 public class AlipayOpenSearchBoxactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2148964294799243388L;
+	private static final long serialVersionUID = 5885482539227386427L;
+
+	/** 
+	 * 底纹词
+	 */
+	@ApiField("background_word")
+	private String backgroundWord;
 
 	/** 
 	 * 搜索直达活动id
@@ -108,6 +114,13 @@ public class AlipayOpenSearchBoxactivityQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("video_info")
 	private SearchBoxActivityVideoInfo videoInfo;
+
+	public void setBackgroundWord(String backgroundWord) {
+		this.backgroundWord = backgroundWord;
+	}
+	public String getBackgroundWord( ) {
+		return this.backgroundWord;
+	}
 
 	public void setBoxActivityId(String boxActivityId) {
 		this.boxActivityId = boxActivityId;

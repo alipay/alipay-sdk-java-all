@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券绝对核销周期
  *
  * @author auto create
- * @since 1.0, 2023-02-07 13:57:07
+ * @since 1.0, 2023-02-13 19:11:43
  */
 public class VoucherAbsolutePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6196599355362235184L;
+	private static final long serialVersionUID = 8839434815155541642L;
+
+	/**
+	 * 核销时间限制
+	 */
+	@ApiField("time_restrict_info")
+	private TimeRestrictInfo timeRestrictInfo;
 
 	/**
 	 * 券可使用的开始时间。 格式为：yyyy-MM-dd HH:mm:ss。
@@ -26,6 +32,13 @@ public class VoucherAbsolutePeriodInfo extends AlipayObject {
 	 */
 	@ApiField("valid_end_time")
 	private Date validEndTime;
+
+	public TimeRestrictInfo getTimeRestrictInfo() {
+		return this.timeRestrictInfo;
+	}
+	public void setTimeRestrictInfo(TimeRestrictInfo timeRestrictInfo) {
+		this.timeRestrictInfo = timeRestrictInfo;
+	}
 
 	public Date getValidBeginTime() {
 		return this.validBeginTime;

@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达活动修改
  *
  * @author auto create
- * @since 1.0, 2022-11-15 19:31:56
+ * @since 1.0, 2023-02-08 15:50:49
  */
 public class AlipayOpenSearchBoxactivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7819598876464396379L;
+	private static final long serialVersionUID = 8337389778662716374L;
 
 	/**
 	 * 活动链接，必须为关联的小程序的页面链接（链接以 alipays 开头），可参考<a href="https://opendocs.alipay.com/support/01rb18"> 小程序scheme链接介绍 </a>
 	 */
 	@ApiField("action_url")
 	private String actionUrl;
+
+	/**
+	 * 创建banner活动时，可添加底纹推广词，有机会在首页搜索框内展示，提升banner活动曝光机会
+	 */
+	@ApiField("background_word")
+	private String backgroundWord;
 
 	/**
 	 * 搜索直达活动id
@@ -94,6 +100,13 @@ public class AlipayOpenSearchBoxactivityModifyModel extends AlipayObject {
 	}
 	public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
+	}
+
+	public String getBackgroundWord() {
+		return this.backgroundWord;
+	}
+	public void setBackgroundWord(String backgroundWord) {
+		this.backgroundWord = backgroundWord;
 	}
 
 	public String getBoxActivityId() {

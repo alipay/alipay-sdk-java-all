@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手淘小程序产物包免构建版本上传
  *
  * @author auto create
- * @since 1.0, 2022-12-26 15:26:51
+ * @since 1.0, 2023-02-08 14:08:17
  */
 public class AlipayOpenMiniInnerversionNobuildUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2522696157695981255L;
+	private static final long serialVersionUID = 8269638144319925697L;
 
 	/**
 	 * 扩展信息，比如adaptorName、tinycliVersion、tinycliName、import-module、allowPrecompile、extJson、allowInstallDependency、aggregationMainAppId，如果没有特殊要求，tinycliVersion版本请用最新的： https://registry.npm.alibaba-inc.com/@alipay/tiny-cli/huoban-prod
@@ -117,6 +117,12 @@ public class AlipayOpenMiniInnerversionNobuildUploadModel extends AlipayObject {
 	 */
 	@ApiField("new_builded_plugin_url")
 	private String newBuildedPluginUrl;
+
+	/**
+	 * 否免加签, true的时候代表传过来的是加签后的包地址
+	 */
+	@ApiField("no_sign")
+	private Boolean noSign;
 
 	/**
 	 * 小程序代码中引用的插件列表，包含插件id和插件版本信息，业务方需要自行解析源码包的app.json里面的plugins信息
@@ -249,6 +255,13 @@ public class AlipayOpenMiniInnerversionNobuildUploadModel extends AlipayObject {
 	}
 	public void setNewBuildedPluginUrl(String newBuildedPluginUrl) {
 		this.newBuildedPluginUrl = newBuildedPluginUrl;
+	}
+
+	public Boolean getNoSign() {
+		return this.noSign;
+	}
+	public void setNoSign(Boolean noSign) {
+		this.noSign = noSign;
 	}
 
 	public List<MiniAppPluginReference> getPluginRefs() {

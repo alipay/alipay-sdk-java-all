@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMsaasMediarecogMmtcaftscvTemplateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3547678189766596342L;
+	private static final long serialVersionUID = 7434116921842662449L;
 
 	/**
 	 * 模板编号

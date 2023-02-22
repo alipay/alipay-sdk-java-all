@@ -8,17 +8,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 00:53:43
+ * @since 1.0, 2023-02-13 18:56:37
  */
 public class AntMerchantExpandShopCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2893377551233185712L;
+	private static final long serialVersionUID = 3754912831424652578L;
+
+	/** 
+	 * 触发幂等时返回已存在的门店shopId
+	 */
+	@ApiField("exist_shop_id")
+	private String existShopId;
 
 	/** 
 	 * 申请单id
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	public void setExistShopId(String existShopId) {
+		this.existShopId = existShopId;
+	}
+	public String getExistShopId( ) {
+		return this.existShopId;
+	}
 
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;

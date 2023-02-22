@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.gotone.message.mail.send request
  * 
  * @author auto create
- * @since 1.0, 2023-02-06 19:41:08
+ * @since 1.0, 2023-02-14 11:31:39
  */
 public class AlipayGotoneMessageMailSendRequest implements AlipayRequest<AlipayGotoneMessageMailSendResponse> {
 
@@ -22,6 +22,11 @@ public class AlipayGotoneMessageMailSendRequest implements AlipayRequest<AlipayG
 	* 模板参数
 	 */
 	private String arguments;
+
+	/** 
+	* 支付宝openId，用于支付宝用户在当前应用下的用户标识。
+	 */
+	private String openId;
 
 	/** 
 	* 收件人邮箱地址
@@ -48,6 +53,13 @@ public class AlipayGotoneMessageMailSendRequest implements AlipayRequest<AlipayG
 	}
 	public String getArguments() {
 		return this.arguments;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setReceiver(String receiver) {
@@ -140,6 +152,7 @@ public class AlipayGotoneMessageMailSendRequest implements AlipayRequest<AlipayG
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("arguments", this.arguments);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("receiver", this.receiver);
 		txtParams.put("service_code", this.serviceCode);
 		txtParams.put("subject", this.subject);

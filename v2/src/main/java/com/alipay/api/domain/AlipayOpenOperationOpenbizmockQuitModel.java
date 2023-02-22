@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * openapi测试用
  *
  * @author auto create
- * @since 1.0, 2022-11-18 16:50:58
+ * @since 1.0, 2023-02-13 23:55:59
  */
 public class AlipayOpenOperationOpenbizmockQuitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1177291769195973236L;
+	private static final long serialVersionUID = 2724191737777515329L;
 
 	/**
 	 * userid
@@ -25,6 +25,12 @@ public class AlipayOpenOperationOpenbizmockQuitModel extends AlipayObject {
 	@ApiField("userid")
 	private String userid;
 
+	/**
+	 * 1
+	 */
+	@ApiField("xixihha")
+	private String xixihha;
+
 	public String getOpenId() {
 		return this.openId;
 	}
@@ -37,6 +43,13 @@ public class AlipayOpenOperationOpenbizmockQuitModel extends AlipayObject {
 	}
 	public void setUserid(String userid) {
 		this.userid = userid;
+	}
+
+	public String getXixihha() {
+		return this.xixihha;
+	}
+	public void setXixihha(String xixihha) {
+		this.xixihha = xixihha;
 	}
 
 }

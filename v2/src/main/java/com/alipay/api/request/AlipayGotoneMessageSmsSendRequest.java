@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.gotone.message.sms.send request
  * 
  * @author auto create
- * @since 1.0, 2023-02-06 21:36:05
+ * @since 1.0, 2023-02-13 17:01:37
  */
 public class AlipayGotoneMessageSmsSendRequest implements AlipayRequest<AlipayGotoneMessageSmsSendResponse> {
 
@@ -27,6 +27,11 @@ public class AlipayGotoneMessageSmsSendRequest implements AlipayRequest<AlipayGo
 	* 接收短信手机号
 	 */
 	private String mobile;
+
+	/** 
+	* 支付宝openId，用于支付宝用户在当前应用下的用户标识。
+	 */
+	private String openId;
 
 	/** 
 	* 短信模板对应的serviceCode
@@ -50,6 +55,13 @@ public class AlipayGotoneMessageSmsSendRequest implements AlipayRequest<AlipayGo
 	}
 	public String getMobile() {
 		return this.mobile;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId() {
+		return this.openId;
 	}
 
 	public void setServiceCode(String serviceCode) {
@@ -129,6 +141,7 @@ public class AlipayGotoneMessageSmsSendRequest implements AlipayRequest<AlipayGo
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("arguments", this.arguments);
 		txtParams.put("mobile", this.mobile);
+		txtParams.put("open_id", this.openId);
 		txtParams.put("service_code", this.serviceCode);
 		txtParams.put("user_id", this.userId);
 		if(udfParams != null) {

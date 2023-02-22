@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询子账本电子回单状态(incubating)
  *
  * @author auto create
- * @since 1.0, 2021-09-02 19:32:06
+ * @since 1.0, 2023-02-21 14:55:15
  */
 public class AlipayDataBillAccountbookereceiptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6621374678553683281L;
+	private static final long serialVersionUID = 8843332551746589347L;
 
 	/**
 	 * 协议号
