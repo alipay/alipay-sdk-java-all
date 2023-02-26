@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContributeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7415126672832388329L;
+	private static final long serialVersionUID = 3415322595588946174L;
 
 	/**
 	 * 出资方金额

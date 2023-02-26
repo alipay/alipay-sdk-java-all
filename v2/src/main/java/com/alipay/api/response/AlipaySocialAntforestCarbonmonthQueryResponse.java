@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntforestCarbonmonthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7542872372634754489L;
+	private static final long serialVersionUID = 5686189913663652652L;
 
 	/** 
 	 * 是否开通森林

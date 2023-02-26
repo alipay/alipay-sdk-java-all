@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消费者通知信息
  *
  * @author auto create
- * @since 1.0, 2023-02-17 11:46:43
+ * @since 1.0, 2023-02-23 16:30:44
  */
 public class ConsumerNotifyIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 2514947358168616622L;
+	private static final long serialVersionUID = 2173762773647314742L;
 
 	/**
 	 * 商品数量

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 三方商户对接智能助理
  *
  * @author auto create
- * @since 1.0, 2023-01-31 19:48:03
+ * @since 1.0, 2023-02-24 11:25:16
  */
 public class AlipayIserviceItaskMerchantRecordSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3439769635117343139L;
+	private static final long serialVersionUID = 2182858595189471622L;
 
 	/**
 	 * 业务标识
@@ -36,6 +36,12 @@ public class AlipayIserviceItaskMerchantRecordSyncModel extends AlipayObject {
 	 */
 	@ApiField("buyer_info")
 	private BuyerInfo buyerInfo;
+
+	/**
+	 * buyer_id的open_id映射字段
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 内容扩展参数
@@ -93,6 +99,13 @@ public class AlipayIserviceItaskMerchantRecordSyncModel extends AlipayObject {
 	}
 	public void setBuyerInfo(BuyerInfo buyerInfo) {
 		this.buyerInfo = buyerInfo;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public HomeNormalApiContent getContent() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主服务高速场景数据
  *
  * @author auto create
- * @since 1.0, 2020-05-06 15:22:18
+ * @since 1.0, 2023-02-24 14:06:57
  */
 public class HighwaySceneData extends AlipayObject {
 
-	private static final long serialVersionUID = 7411739172866352976L;
+	private static final long serialVersionUID = 1687423266816624151L;
 
 	/**
 	 * 车辆类：
@@ -74,6 +74,12 @@ truck:货车
 	 */
 	@ApiField("lane_no")
 	private String laneNo;
+
+	/**
+	 * 发行方/路网原始行程Id，对账使用
+	 */
+	@ApiField("out_trip_id")
+	private String outTripId;
 
 	/**
 	 * 本交易进站省份，使用国家区域编码
@@ -219,6 +225,13 @@ EXPAND_TYPE：拓展消费交易类型，对应具体交易场景 [ETC_PARKING,E
 	}
 	public void setLaneNo(String laneNo) {
 		this.laneNo = laneNo;
+	}
+
+	public String getOutTripId() {
+		return this.outTripId;
+	}
+	public void setOutTripId(String outTripId) {
+		this.outTripId = outTripId;
 	}
 
 	public String getStartProvinceCode() {

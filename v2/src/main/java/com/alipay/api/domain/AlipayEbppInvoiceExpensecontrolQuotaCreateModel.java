@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建额度
  *
  * @author auto create
- * @since 1.0, 2023-02-14 16:46:50
+ * @since 1.0, 2023-02-24 23:17:50
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4641945764449839277L;
+	private static final long serialVersionUID = 4721962985753695731L;
 
 	/**
 	 * 企业共同账户id，和授权签约协议号共同使用。
@@ -91,6 +91,13 @@ owner_type为ENTERPRISE时填写企业ID。
 	 */
 	@ApiField("quota_value")
 	private String quotaValue;
+
+	/**
+	 * 0:不可转赠（注：不传模式为0）
+1:可以转增（注：只有quota_type=COUPON,可设置）
+	 */
+	@ApiField("share_mode")
+	private String shareMode;
 
 	/**
 	 * 额度维度ID
@@ -194,6 +201,13 @@ INSTITUTION（制度维度）
 	}
 	public void setQuotaValue(String quotaValue) {
 		this.quotaValue = quotaValue;
+	}
+
+	public String getShareMode() {
+		return this.shareMode;
+	}
+	public void setShareMode(String shareMode) {
+		this.shareMode = shareMode;
 	}
 
 	public String getTargetId() {

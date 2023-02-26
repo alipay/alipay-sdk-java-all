@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingVoucherStockUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5142811299989149127L;
+	private static final long serialVersionUID = 5739783723219595924L;
 
 	/** 
 	 * 返回如果为空，说明没有核销成功；如果不为空，长度一定是28，表示的是核销序号。该值唯一对应一个券码，即入参中的entity_no
