@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.blueseaactivity.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 18:45:33
+ * @since 1.0, 2023-03-01 19:04:57
  */
 public class AlipayOpenSpBlueseaactivityModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3784771536972187836L;
+	private static final long serialVersionUID = 4875424655436356811L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:09:55
+ * @since 1.0, 2023-03-01 18:48:07
  */
 public class AlipayUserAgreementTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3614975261618739241L;
+	private static final long serialVersionUID = 5182884331923124966L;
 
 	/** 
 	 * 单次金额限制

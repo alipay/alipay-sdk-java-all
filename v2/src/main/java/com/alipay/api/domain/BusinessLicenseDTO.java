@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营业执照
  *
  * @author auto create
- * @since 1.0, 2023-01-09 21:06:59
+ * @since 1.0, 2023-03-03 17:12:22
  */
 public class BusinessLicenseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8651251528153173791L;
+	private static final long serialVersionUID = 4368163539954278291L;
 
 	/**
 	 * 认证手机号码:营业执照法人手机号码

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阿里集团专用产品开通申请
  *
  * @author auto create
- * @since 1.0, 2023-02-15 19:23:10
+ * @since 1.0, 2023-03-06 20:46:14
  */
 public class AlipayOpenAligroupProductopenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7166587454845336373L;
+	private static final long serialVersionUID = 1811411212675825967L;
 
 	/**
 	 * 申请资质信息

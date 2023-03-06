@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 余额宝资产订单查询
  *
  * @author auto create
- * @since 1.0, 2021-02-26 17:23:57
+ * @since 1.0, 2023-03-01 16:11:46
  */
 public class AntfortuneYebAssetOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6431899469324971679L;
+	private static final long serialVersionUID = 3299327572857167943L;
 
 	/**
 	 * 外部业务号

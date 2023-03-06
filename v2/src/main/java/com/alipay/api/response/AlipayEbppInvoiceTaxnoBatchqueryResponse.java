@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppInvoiceTaxnoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5771259262357634378L;
+	private static final long serialVersionUID = 5261378471393214575L;
 
 	/** 
 	 * 发票要素列表

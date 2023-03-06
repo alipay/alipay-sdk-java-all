@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户数据上报信息同步
  *
  * @author auto create
- * @since 1.0, 2022-12-20 14:49:24
+ * @since 1.0, 2023-03-03 13:57:13
  */
 public class AlipayCommerceSportsOnlinegameUsergamedataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1382498378862568718L;
+	private static final long serialVersionUID = 1857153915345261881L;
 
 	/**
 	 * 运动结束时间

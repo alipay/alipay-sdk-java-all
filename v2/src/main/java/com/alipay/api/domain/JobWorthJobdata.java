@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工作证职业数据回流接口字段
  *
  * @author auto create
- * @since 1.0, 2022-12-09 14:56:54
+ * @since 1.0, 2023-03-03 14:32:56
  */
 public class JobWorthJobdata extends AlipayObject {
 
-	private static final long serialVersionUID = 6683236435148645715L;
+	private static final long serialVersionUID = 1571328321919929628L;
 
 	/**
 	 * 证书发证机构
@@ -72,6 +72,12 @@ public class JobWorthJobdata extends AlipayObject {
 	 */
 	@ApiField("education_status")
 	private String educationStatus;
+
+	/**
+	 * 报名流水号
+	 */
+	@ApiField("entry_no")
+	private String entryNo;
 
 	/**
 	 * 考试分数
@@ -212,6 +218,12 @@ public class JobWorthJobdata extends AlipayObject {
 	private String validDateStart;
 
 	/**
+	 * 校验状态
+	 */
+	@ApiField("verify_status")
+	private String verifyStatus;
+
+	/**
 	 * 工作描述
 	 */
 	@ApiField("work_desc")
@@ -309,6 +321,13 @@ public class JobWorthJobdata extends AlipayObject {
 	}
 	public void setEducationStatus(String educationStatus) {
 		this.educationStatus = educationStatus;
+	}
+
+	public String getEntryNo() {
+		return this.entryNo;
+	}
+	public void setEntryNo(String entryNo) {
+		this.entryNo = entryNo;
 	}
 
 	public String getExamScore() {
@@ -470,6 +489,13 @@ public class JobWorthJobdata extends AlipayObject {
 	}
 	public void setValidDateStart(String validDateStart) {
 		this.validDateStart = validDateStart;
+	}
+
+	public String getVerifyStatus() {
+		return this.verifyStatus;
+	}
+	public void setVerifyStatus(String verifyStatus) {
+		this.verifyStatus = verifyStatus;
 	}
 
 	public String getWorkDesc() {

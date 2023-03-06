@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 橡实接口：查询迭代版本信息
  *
  * @author auto create
- * @since 1.0, 2022-06-08 17:47:42
+ * @since 1.0, 2023-02-28 18:04:17
  */
 public class AnttechBlockchainVersionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7777577562524631852L;
+	private static final long serialVersionUID = 4782764176742591657L;
 
 	/**
 	 * 商务ID

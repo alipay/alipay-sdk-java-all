@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.setting.category.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 17:59:30
+ * @since 1.0, 2023-03-01 19:16:44
  */
 public class AlipayOpenPublicSettingCategoryQueryRequest implements AlipayRequest<AlipayOpenPublicSettingCategoryQueryResponse> {
 

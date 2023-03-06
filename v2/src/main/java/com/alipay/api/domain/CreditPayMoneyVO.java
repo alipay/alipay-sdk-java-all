@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多币种金额
  *
  * @author auto create
- * @since 1.0, 2022-01-13 16:21:32
+ * @since 1.0, 2023-03-06 11:34:07
  */
 public class CreditPayMoneyVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3282515382929518284L;
+	private static final long serialVersionUID = 3816945321966213215L;
 
 	/**
 	 * 金额，单位元

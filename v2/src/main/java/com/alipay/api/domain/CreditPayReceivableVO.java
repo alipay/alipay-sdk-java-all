@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付应收视图
  *
  * @author auto create
- * @since 1.0, 2022-04-11 20:46:30
+ * @since 1.0, 2023-03-06 11:34:07
  */
 public class CreditPayReceivableVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7873495862593839959L;
+	private static final long serialVersionUID = 1762575447352596251L;
 
 	/**
 	 * 应收结清时间

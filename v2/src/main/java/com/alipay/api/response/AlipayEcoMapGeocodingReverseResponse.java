@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMapGeocodingReverseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3388219745727581764L;
+	private static final long serialVersionUID = 3432382373561721688L;
 
 	/** 
 	 * 城市名称

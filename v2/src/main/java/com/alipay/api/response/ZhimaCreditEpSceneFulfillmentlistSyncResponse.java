@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.scene.fulfillmentlist.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 18:16:08
+ * @since 1.0, 2023-03-01 19:12:18
  */
 public class ZhimaCreditEpSceneFulfillmentlistSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7477942674764742323L;
+	private static final long serialVersionUID = 8616223668794864225L;
 
 	/** 
 	 * 履约同步结果列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸能力接口
  *
  * @author auto create
- * @since 1.0, 2022-06-15 10:03:49
+ * @since 1.0, 2023-03-03 16:10:00
  */
 public class ZolozAuthenticationCustomerFaceabilityIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4431572656559431174L;
+	private static final long serialVersionUID = 7819582878731941487L;
 
 	/**
 	 * 无

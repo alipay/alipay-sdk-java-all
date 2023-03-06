@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝开放认证初始化服务
  *
  * @author auto create
- * @since 1.0, 2022-11-22 18:23:10
+ * @since 1.0, 2023-03-01 14:25:16
  */
 public class AlipayUserCertifyOpenInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2283182712188136655L;
+	private static final long serialVersionUID = 6545754743739869664L;
 
 	/**
 	 * 认证场景码。入参支持的认证场景码和商户签约的认证场景相关，取值如下:
@@ -30,29 +30,16 @@ SMART_FACE：多因子快捷认证
 	private String faceContrastPicture;
 
 	/**
-	 * 需要验证的身份信息(json)字段说明如下：
-identity_type：
-身份信息参数类型，固定为 CERT_INFO
-cert_name：真实姓名，必填
-cert_no：证件号码，必填
-phone_no：手机号码，选填
-cert_type：证件类型，必填，枚举支持：
-IDENTITY_CARD：身份证
-HOME_VISIT_PERMIT_HK_MC：港澳通行证
-HOME_VISIT_PERMIT_TAIWAN：台湾通行证
-RESIDENCE_PERMIT_HK_MC：港澳居住证
-RESIDENCE_PERMIT_TAIWAN：台湾居住证
+	 * 需要验证的身份信息
 	 */
 	@ApiField("identity_param")
-	private String identityParam;
+	private OpenCertifyIdentityParam identityParam;
 
 	/**
-	 * 商户个性化配置，格式为json，详细支持的字段说明为：
-return_url：需要回跳的目标地址，必填，一般指定为商户业务页面
-face_reserve_strategy：人脸保存策略，非必填；reserve(保存活体人脸)/never(不保存活体人脸)，不传默认为reserve
+	 * 商户个性化配置
 	 */
 	@ApiField("merchant_config")
-	private String merchantConfig;
+	private OpenCertifyMerchantConfig merchantConfig;
 
 	/**
 	 * 商户请求的唯一标识，商户要保证其唯一性，值为32位长度的字母数字组合。建议：前面几位字符是商户自定义的简称，中间可以使用一段时间，后段可以使用一个随机或递增序列
@@ -74,17 +61,17 @@ face_reserve_strategy：人脸保存策略，非必填；reserve(保存活体人
 		this.faceContrastPicture = faceContrastPicture;
 	}
 
-	public String getIdentityParam() {
+	public OpenCertifyIdentityParam getIdentityParam() {
 		return this.identityParam;
 	}
-	public void setIdentityParam(String identityParam) {
+	public void setIdentityParam(OpenCertifyIdentityParam identityParam) {
 		this.identityParam = identityParam;
 	}
 
-	public String getMerchantConfig() {
+	public OpenCertifyMerchantConfig getMerchantConfig() {
 		return this.merchantConfig;
 	}
-	public void setMerchantConfig(String merchantConfig) {
+	public void setMerchantConfig(OpenCertifyMerchantConfig merchantConfig) {
 		this.merchantConfig = merchantConfig;
 	}
 

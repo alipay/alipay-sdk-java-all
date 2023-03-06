@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.yeb.asset.trade.unfreeze request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:59:07
+ * @since 1.0, 2023-03-03 16:36:38
  */
 public class AntfortuneYebAssetTradeUnfreezeRequest implements AlipayRequest<AntfortuneYebAssetTradeUnfreezeResponse> {
 

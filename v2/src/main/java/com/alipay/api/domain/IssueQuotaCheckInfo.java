@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额度发放校验详情
  *
  * @author auto create
- * @since 1.0, 2022-11-19 12:00:21
+ * @since 1.0, 2023-02-27 20:09:03
  */
 public class IssueQuotaCheckInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3632216497691811374L;
+	private static final long serialVersionUID = 3729713227342466274L;
 
 	/**
 	 * 发放金额

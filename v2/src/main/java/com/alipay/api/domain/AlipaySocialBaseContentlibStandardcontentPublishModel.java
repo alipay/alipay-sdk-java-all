@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容发布接口
  *
  * @author auto create
- * @since 1.0, 2023-02-08 15:00:15
+ * @since 1.0, 2023-02-27 21:00:15
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5133986215846331233L;
+	private static final long serialVersionUID = 7893927929589554146L;
+
+	/**
+	 * 内容分发范围。1 - 所有人可见，2 - 分发范围受限。
+	 */
+	@ApiField("permission_status")
+	private String permissionStatus;
 
 	/**
 	 * 生活号+号ID。如果发送类型=自研/三方发送，不要传入；发送类型=mcn发送，请传入public_id【mcn机构绑定达人号ID】
@@ -77,6 +83,13 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	 */
 	@ApiField("source_type")
 	private String sourceType;
+
+	public String getPermissionStatus() {
+		return this.permissionStatus;
+	}
+	public void setPermissionStatus(String permissionStatus) {
+		this.permissionStatus = permissionStatus;
+	}
 
 	public String getPublicId() {
 		return this.publicId;

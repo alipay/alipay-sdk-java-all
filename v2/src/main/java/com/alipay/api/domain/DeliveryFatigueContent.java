@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容疲劳度配置
  *
  * @author auto create
- * @since 1.0, 2023-02-21 15:16:20
+ * @since 1.0, 2023-02-28 11:26:08
  */
 public class DeliveryFatigueContent extends AlipayObject {
 
-	private static final long serialVersionUID = 8454799577243451258L;
+	private static final long serialVersionUID = 8524549846571744652L;
 
 	/**
 	 * 内容id

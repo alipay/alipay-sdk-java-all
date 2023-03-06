@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除发放规则
  *
  * @author auto create
- * @since 1.0, 2022-08-18 09:47:58
+ * @since 1.0, 2023-02-27 20:03:08
  */
 public class AlipayEbppInvoiceIssueruleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7166737829553693694L;
+	private static final long serialVersionUID = 1434656345466644171L;
 
 	/**
 	 * 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用

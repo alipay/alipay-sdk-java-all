@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateCampuscardAuthorizedQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2337149517453161318L;
+	private static final long serialVersionUID = 1441956832895258245L;
 
 	/** 
 	 * 学生的校园卡列表

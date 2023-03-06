@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解冻余额宝资产
  *
  * @author auto create
- * @since 1.0, 2020-11-30 20:09:30
+ * @since 1.0, 2023-03-03 16:31:51
  */
 public class AntfortuneYebAssetTradeUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8363986254568677521L;
+	private static final long serialVersionUID = 3624115737739551686L;
 
 	/**
 	 * 金额
@@ -24,6 +24,12 @@ public class AntfortuneYebAssetTradeUnfreezeModel extends AlipayObject {
 	 */
 	@ApiField("freeze_code")
 	private String freezeCode;
+
+	/**
+	 * 用户UserId在应用AppId下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -49,6 +55,13 @@ public class AntfortuneYebAssetTradeUnfreezeModel extends AlipayObject {
 	}
 	public void setFreezeCode(String freezeCode) {
 		this.freezeCode = freezeCode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {

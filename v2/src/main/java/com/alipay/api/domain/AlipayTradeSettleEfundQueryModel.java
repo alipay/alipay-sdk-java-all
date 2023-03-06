@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集团电商待结算户查询
  *
  * @author auto create
- * @since 1.0, 2023-01-12 23:51:42
+ * @since 1.0, 2023-03-02 13:10:50
  */
 public class AlipayTradeSettleEfundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7373122397735522679L;
+	private static final long serialVersionUID = 3615528751152417175L;
 
 	/**
-	 * 卖家userId，支付宝userId
+	 * 卖家openId
+	 */
+	@ApiField("seller_open_id")
+	private String sellerOpenId;
+
+	/**
+	 * 卖家userId
 	 */
 	@ApiField("seller_user_id")
 	private String sellerUserId;
@@ -24,6 +30,13 @@ public class AlipayTradeSettleEfundQueryModel extends AlipayObject {
 	 */
 	@ApiField("settle_biz_type")
 	private String settleBizType;
+
+	public String getSellerOpenId() {
+		return this.sellerOpenId;
+	}
+	public void setSellerOpenId(String sellerOpenId) {
+		this.sellerOpenId = sellerOpenId;
+	}
 
 	public String getSellerUserId() {
 		return this.sellerUserId;

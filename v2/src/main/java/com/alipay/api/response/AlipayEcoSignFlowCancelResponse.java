@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.sign.flow.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 18:22:45
+ * @since 1.0, 2023-03-01 19:10:17
  */
 public class AlipayEcoSignFlowCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2226682619315132237L;
+	private static final long serialVersionUID = 6315585355482779231L;
 
 	
 

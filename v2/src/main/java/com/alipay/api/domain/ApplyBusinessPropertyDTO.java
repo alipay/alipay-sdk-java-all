@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开通 经营资质信息
  *
  * @author auto create
- * @since 1.0, 2023-01-09 21:06:59
+ * @since 1.0, 2023-03-03 17:12:22
  */
 public class ApplyBusinessPropertyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2878935819117953783L;
+	private static final long serialVersionUID = 8855141565715812344L;
 
 	/**
 	 * 联系人信息

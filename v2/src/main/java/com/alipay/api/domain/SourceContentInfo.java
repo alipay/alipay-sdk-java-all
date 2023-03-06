@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容详情
  *
  * @author auto create
- * @since 1.0, 2023-02-14 17:12:03
+ * @since 1.0, 2023-02-27 15:09:34
  */
 public class SourceContentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3658343277851163423L;
+	private static final long serialVersionUID = 8896393413545243215L;
 
 	/**
 	 * 内容ID
@@ -27,6 +27,12 @@ public class SourceContentInfo extends AlipayObject {
 	 */
 	@ApiField("link")
 	private String link;
+
+	/**
+	 * 内容分发范围。0 - 仅创作者自己可见，1 - 所有人可见，2 - 分发范围受限。
+	 */
+	@ApiField("permission_status")
+	private String permissionStatus;
 
 	/**
 	 * 作者
@@ -108,6 +114,13 @@ HIGH_QUALITY: 优质
 	}
 	public void setLink(String link) {
 		this.link = link;
+	}
+
+	public String getPermissionStatus() {
+		return this.permissionStatus;
+	}
+	public void setPermissionStatus(String permissionStatus) {
+		this.permissionStatus = permissionStatus;
 	}
 
 	public String getSourceAuthor() {

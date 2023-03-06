@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控规则
  *
  * @author auto create
- * @since 1.0, 2022-11-04 11:23:33
+ * @since 1.0, 2023-02-27 20:09:06
  */
 public class ExpenseCtrRuleGroupInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3644589492791184999L;
+	private static final long serialVersionUID = 5337399512356764211L;
 
 	/**
 	 * 费控条件列表

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.finance.yulibao.account.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:40:26
+ * @since 1.0, 2023-03-01 18:58:20
  */
 public class MybankFinanceYulibaoAccountQueryRequest implements AlipayRequest<MybankFinanceYulibaoAccountQueryResponse> {
 

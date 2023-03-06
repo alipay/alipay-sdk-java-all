@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialOpengreenEnergyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2266225365447348616L;
+	private static final long serialVersionUID = 2893879342686792584L;
 
 	/**
 	 * 当前时间毫秒值

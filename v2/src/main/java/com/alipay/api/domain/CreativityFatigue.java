@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增长平台创意疲劳度模型
  *
  * @author auto create
- * @since 1.0, 2023-02-21 15:16:13
+ * @since 1.0, 2023-02-28 11:26:08
  */
 public class CreativityFatigue extends AlipayObject {
 
-	private static final long serialVersionUID = 7779926178642276126L;
+	private static final long serialVersionUID = 4783962351371174789L;
 
 	/**
 	 * 展位内容id

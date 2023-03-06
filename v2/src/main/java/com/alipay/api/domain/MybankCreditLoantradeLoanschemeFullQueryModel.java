@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询客户完整贷款方案
  *
  * @author auto create
- * @since 1.0, 2022-09-29 17:22:56
+ * @since 1.0, 2023-03-02 20:32:49
  */
 public class MybankCreditLoantradeLoanschemeFullQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7519186542177175135L;
+	private static final long serialVersionUID = 5161748985586231175L;
 
 	/**
 	 * 支付宝会员id，支付宝内部用于标识会员的唯一ID，以2088开头，不是支付宝登录账号
 	 */
 	@ApiField("alipay_id")
 	private String alipayId;
+
+	/**
+	 * OpenId是某个用户在某个应用下的唯一用户标识， 对于同一个用户，不同应用拿到的OpenId是不同的，而且对于同一个应用，不同用户的OpenId是唯一的
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支用金额，默认单位是人民币，精确到小数点两位，单位元
@@ -107,6 +113,13 @@ public class MybankCreditLoantradeLoanschemeFullQueryModel extends AlipayObject 
 	}
 	public void setAlipayId(String alipayId) {
 		this.alipayId = alipayId;
+	}
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
 	}
 
 	public String getApplyAmt() {

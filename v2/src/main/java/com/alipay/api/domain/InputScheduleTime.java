@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InputScheduleTime extends AlipayObject {
 
-	private static final long serialVersionUID = 2464191479822855392L;
+	private static final long serialVersionUID = 1725286628222985769L;
 
 	/**
 	 * 车容量

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阅读听书频道专辑信息同步接口
  *
  * @author auto create
- * @since 1.0, 2023-02-02 10:58:54
+ * @since 1.0, 2023-03-03 15:27:50
  */
 public class AlipayUserAntbooksAlbumSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6153324482982496166L;
+	private static final long serialVersionUID = 7395695847248552425L;
 
 	/**
 	 * 专辑整体时长，单位秒
@@ -101,6 +101,13 @@ public class AlipayUserAntbooksAlbumSyncModel extends AlipayObject {
 	 */
 	@ApiField("create_time")
 	private Date createTime;
+
+	/**
+	 * 拓展信息List，内部为AlbumExtInfo对象，其中包含两个字段key及value，以此实现业务上的Map<String, String>
+	 */
+	@ApiListField("ext_info_list")
+	@ApiField("album_ext_info")
+	private List<AlbumExtInfo> extInfoList;
 
 	/**
 	 * 专辑名称，用于对C端用户展示。
@@ -263,6 +270,13 @@ DELETE：专辑下架
 	}
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
+	}
+
+	public List<AlbumExtInfo> getExtInfoList() {
+		return this.extInfoList;
+	}
+	public void setExtInfoList(List<AlbumExtInfo> extInfoList) {
+		this.extInfoList = extInfoList;
 	}
 
 	public String getName() {

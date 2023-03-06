@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集团电商资金管控
  *
  * @author auto create
- * @since 1.0, 2023-01-06 20:53:42
+ * @since 1.0, 2023-03-02 13:28:50
  */
 public class AlipayTradeSettleEfundUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3634238766916934771L;
+	private static final long serialVersionUID = 8574837468646477166L;
 
 	/**
 	 * 解冻金额，单位元
@@ -38,7 +38,13 @@ public class AlipayTradeSettleEfundUnfreezeModel extends AlipayObject {
 	private String outRequestNo;
 
 	/**
-	 * 卖家userId，支付宝uid
+	 * 卖家openId
+	 */
+	@ApiField("seller_open_id")
+	private String sellerOpenId;
+
+	/**
+	 * 卖家userId
 	 */
 	@ApiField("seller_user_id")
 	private String sellerUserId;
@@ -75,6 +81,13 @@ public class AlipayTradeSettleEfundUnfreezeModel extends AlipayObject {
 	}
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
+	}
+
+	public String getSellerOpenId() {
+		return this.sellerOpenId;
+	}
+	public void setSellerOpenId(String sellerOpenId) {
+		this.sellerOpenId = sellerOpenId;
 	}
 
 	public String getSellerUserId() {

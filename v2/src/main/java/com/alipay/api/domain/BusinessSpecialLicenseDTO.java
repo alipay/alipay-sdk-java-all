@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 特殊资质信息
  *
  * @author auto create
- * @since 1.0, 2023-01-09 21:06:59
+ * @since 1.0, 2023-03-03 17:12:22
  */
 public class BusinessSpecialLicenseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8528241433481443187L;
+	private static final long serialVersionUID = 5293533796873548179L;
 
 	/**
 	 * 特殊资质图片

@@ -21,7 +21,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenOpenbizmocktoolsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7185244227344489237L;
+	private static final long serialVersionUID = 2136473175224391824L;
 
 	/** 
 	 * 查询GroupID关系得到的结果

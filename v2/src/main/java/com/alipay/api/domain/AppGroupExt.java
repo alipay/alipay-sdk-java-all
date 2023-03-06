@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AppGroupExt extends AlipayObject {
 
-	private static final long serialVersionUID = 8533616574718791772L;
+	private static final long serialVersionUID = 5121916581672794179L;
 
 	/**
 	 * 多个描述GroupId关系的对象

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.contentlib.standardcontent.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 19:15:21
+ * @since 1.0, 2023-02-28 18:01:38
  */
 public class AlipaySocialBaseContentlibStandardcontentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8683423568934643857L;
+	private static final long serialVersionUID = 3547911132969467656L;
 
 	/** 
 	 * 内容ID
@@ -29,6 +29,12 @@ public class AlipaySocialBaseContentlibStandardcontentQueryResponse extends Alip
 	 */
 	@ApiField("link")
 	private String link;
+
+	/** 
+	 * 内容分发范围。0 - 仅创作者自己可见，1 - 所有人可见，2 - 分发范围受限。
+	 */
+	@ApiField("permission_status")
+	private String permissionStatus;
 
 	/** 
 	 * 作者
@@ -111,6 +117,13 @@ public class AlipaySocialBaseContentlibStandardcontentQueryResponse extends Alip
 	}
 	public String getLink( ) {
 		return this.link;
+	}
+
+	public void setPermissionStatus(String permissionStatus) {
+		this.permissionStatus = permissionStatus;
+	}
+	public String getPermissionStatus( ) {
+		return this.permissionStatus;
 	}
 
 	public void setSourceAuthor(String sourceAuthor) {

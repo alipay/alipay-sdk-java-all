@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpDossierLiteDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8393832897736194496L;
+	private static final long serialVersionUID = 7543631949816369652L;
 
 	/**
 	 * 统一社会信用代码或营业执照注册号

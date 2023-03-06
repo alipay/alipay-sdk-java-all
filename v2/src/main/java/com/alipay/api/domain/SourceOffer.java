@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容所带的服务
  *
  * @author auto create
- * @since 1.0, 2023-02-14 17:12:03
+ * @since 1.0, 2023-02-27 15:09:22
  */
 public class SourceOffer extends AlipayObject {
 
-	private static final long serialVersionUID = 3525173144579265454L;
+	private static final long serialVersionUID = 6144897894944986178L;
 
 	/**
 	 * offerId，根据offer类型对应不同ID。支持小程序的APPID/小程序服务的服务编码/优惠券的活动ID
@@ -20,7 +20,7 @@ public class SourceOffer extends AlipayObject {
 	private String offerId;
 
 	/**
-	 * offer类型。目前仅支持小程序（mini_app/service）、小程序服务（subservice）、营销活动（voucher）。
+	 * offer类型。目前仅支持小程序（mini_app/service）、小程序服务（subservice）、营销活动（voucher）、商品(goods)。
 注意：其中“小程序”offer类型，在发布接口请用mini_app，查询接口返回为service
 	 */
 	@ApiField("offer_type")

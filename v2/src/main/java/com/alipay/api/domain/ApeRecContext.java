@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推荐上下文
  *
  * @author auto create
- * @since 1.0, 2022-11-02 16:36:15
+ * @since 1.0, 2023-03-06 17:02:51
  */
 public class ApeRecContext extends AlipayObject {
 
-	private static final long serialVersionUID = 4152616898618889867L;
+	private static final long serialVersionUID = 8728972749924123327L;
+
+	/**
+	 * 黑名单的索引列表，用于将推荐列表中包含该索引值的商品进行过滤
+	 */
+	@ApiListField("black_index_list")
+	@ApiField("string")
+	private List<String> blackIndexList;
 
 	/**
 	 * 类目列表，推荐结果只会包含该类目的商品，为空时代表返回所有的商品。多个条件是与的关系。
@@ -92,6 +99,13 @@ public class ApeRecContext extends AlipayObject {
 	@ApiListField("tags")
 	@ApiField("string")
 	private List<String> tags;
+
+	public List<String> getBlackIndexList() {
+		return this.blackIndexList;
+	}
+	public void setBlackIndexList(List<String> blackIndexList) {
+		this.blackIndexList = blackIndexList;
+	}
 
 	public List<String> getCate() {
 		return this.cate;

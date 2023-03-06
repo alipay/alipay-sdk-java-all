@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用例步骤
  *
  * @author auto create
- * @since 1.0, 2022-09-19 16:37:22
+ * @since 1.0, 2023-02-27 16:33:36
  */
 public class UseCaseStepInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6747551892871842685L;
+	private static final long serialVersionUID = 1431554192834644777L;
 
 	/**
 	 * 方法描述

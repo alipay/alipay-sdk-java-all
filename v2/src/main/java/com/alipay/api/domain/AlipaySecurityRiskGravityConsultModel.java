@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityRiskGravityConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7644853273392861619L;
+	private static final long serialVersionUID = 7228195876375132481L;
 
 	/**
 	 * 参数名：client_id+是否唯一：无需唯一+应用场景：已鉴权的调用方id，多方安全风控用该ID对调用方可调用的数据产品鉴权+枚举：无枚举+如何获取：多方安全风控与调用方协商+特殊说明：无

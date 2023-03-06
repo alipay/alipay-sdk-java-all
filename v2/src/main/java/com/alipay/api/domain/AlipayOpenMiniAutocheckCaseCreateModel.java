@@ -10,11 +10,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 百格用例创建
  *
  * @author auto create
- * @since 1.0, 2022-10-27 09:16:31
+ * @since 1.0, 2023-03-03 22:35:15
  */
 public class AlipayOpenMiniAutocheckCaseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7899466576762344941L;
+	private static final long serialVersionUID = 8868478864133545831L;
+
+	/**
+	 * 业务线
+	 */
+	@ApiField("biz_line_name")
+	private String bizLineName;
+
+	/**
+	 * 用例执行时的小程序类型
+	 */
+	@ApiField("case_app_type")
+	private String caseAppType;
+
+	/**
+	 * slm上的用例ID，在用例类型为脚本时必填，多个用例ID之间用,分割
+	 */
+	@ApiField("case_ids")
+	private String caseIds;
 
 	/**
 	 * 针对用例进行描述
@@ -52,6 +70,39 @@ public class AlipayOpenMiniAutocheckCaseCreateModel extends AlipayObject {
 	 */
 	@ApiField("time_out")
 	private String timeOut;
+
+	/**
+	 * slm脚本用例中使用到的参数
+	 */
+	@ApiField("use_case_exe_map")
+	private String useCaseExeMap;
+
+	/**
+	 * 用例类型
+	 */
+	@ApiField("use_case_type")
+	private String useCaseType;
+
+	public String getBizLineName() {
+		return this.bizLineName;
+	}
+	public void setBizLineName(String bizLineName) {
+		this.bizLineName = bizLineName;
+	}
+
+	public String getCaseAppType() {
+		return this.caseAppType;
+	}
+	public void setCaseAppType(String caseAppType) {
+		this.caseAppType = caseAppType;
+	}
+
+	public String getCaseIds() {
+		return this.caseIds;
+	}
+	public void setCaseIds(String caseIds) {
+		this.caseIds = caseIds;
+	}
 
 	public String getCaseIntro() {
 		return this.caseIntro;
@@ -93,6 +144,20 @@ public class AlipayOpenMiniAutocheckCaseCreateModel extends AlipayObject {
 	}
 	public void setTimeOut(String timeOut) {
 		this.timeOut = timeOut;
+	}
+
+	public String getUseCaseExeMap() {
+		return this.useCaseExeMap;
+	}
+	public void setUseCaseExeMap(String useCaseExeMap) {
+		this.useCaseExeMap = useCaseExeMap;
+	}
+
+	public String getUseCaseType() {
+		return this.useCaseType;
+	}
+	public void setUseCaseType(String useCaseType) {
+		this.useCaseType = useCaseType;
 	}
 
 }

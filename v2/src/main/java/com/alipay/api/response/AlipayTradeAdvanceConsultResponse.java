@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.advance.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 20:55:44
+ * @since 1.0, 2023-03-01 19:00:04
  */
 public class AlipayTradeAdvanceConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5746441785674559124L;
+	private static final long serialVersionUID = 5817381326652745715L;
 
 	/** 
 	 * true 代表当前时间点，用户允许垫资

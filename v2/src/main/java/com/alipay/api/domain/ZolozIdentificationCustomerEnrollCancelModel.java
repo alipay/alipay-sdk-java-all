@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除匿名注册的留底照片
  *
  * @author auto create
- * @since 1.0, 2022-04-14 20:36:58
+ * @since 1.0, 2023-03-03 16:09:10
  */
 public class ZolozIdentificationCustomerEnrollCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4311527129888851885L;
+	private static final long serialVersionUID = 7178418755328469745L;
 
 	/**
 	 * 商户请求的唯一标志，该标识作为对账的关键信息，商户要保证其唯一性

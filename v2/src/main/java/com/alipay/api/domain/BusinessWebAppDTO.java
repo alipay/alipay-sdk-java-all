@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * WEB应用
  *
  * @author auto create
- * @since 1.0, 2023-01-09 21:06:59
+ * @since 1.0, 2023-03-03 17:12:22
  */
 public class BusinessWebAppDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7691325157732314992L;
+	private static final long serialVersionUID = 2645526361784996633L;
 
 	/**
 	 * 测试账户

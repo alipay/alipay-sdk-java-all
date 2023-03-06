@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 橡实平台版本信息对象
  *
  * @author auto create
- * @since 1.0, 2022-12-07 16:31:52
+ * @since 1.0, 2023-02-28 18:04:17
  */
 public class IterationVersionInfoDeliverObj extends AlipayObject {
 
-	private static final long serialVersionUID = 5767242261668552423L;
+	private static final long serialVersionUID = 3445819723526866992L;
 
 	/**
 	 * 验收用例
@@ -98,6 +100,12 @@ public class IterationVersionInfoDeliverObj extends AlipayObject {
 	private String l3Code;
 
 	/**
+	 * 迭代版本部署的硬件平台信息
+	 */
+	@ApiField("multiplatform")
+	private String multiplatform;
+
+	/**
 	 * 性能测试报告
 	 */
 	@ApiField("performance_test_report")
@@ -120,6 +128,12 @@ public class IterationVersionInfoDeliverObj extends AlipayObject {
 	 */
 	@ApiField("security_white_paper")
 	private String securityWhitePaper;
+
+	/**
+	 * 版本创建的时间
+	 */
+	@ApiField("stamp_time")
+	private Date stampTime;
 
 	/**
 	 * 系统设计说明书（系分）/技术白皮书
@@ -279,6 +293,13 @@ public class IterationVersionInfoDeliverObj extends AlipayObject {
 		this.l3Code = l3Code;
 	}
 
+	public String getMultiplatform() {
+		return this.multiplatform;
+	}
+	public void setMultiplatform(String multiplatform) {
+		this.multiplatform = multiplatform;
+	}
+
 	public String getPerformanceTestReport() {
 		return this.performanceTestReport;
 	}
@@ -305,6 +326,13 @@ public class IterationVersionInfoDeliverObj extends AlipayObject {
 	}
 	public void setSecurityWhitePaper(String securityWhitePaper) {
 		this.securityWhitePaper = securityWhitePaper;
+	}
+
+	public Date getStampTime() {
+		return this.stampTime;
+	}
+	public void setStampTime(Date stampTime) {
+		this.stampTime = stampTime;
 	}
 
 	public String getSysDesignSpecification() {

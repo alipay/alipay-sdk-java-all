@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV代创建试用小程序
  *
  * @author auto create
- * @since 1.0, 2022-12-28 11:32:51
+ * @since 1.0, 2023-03-01 09:51:33
  */
 public class AlipayOpenMiniIsvFastregisterCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2861477333249235525L;
+	private static final long serialVersionUID = 2743439545911545626L;
 
 	/**
 	 * 小程序名称，昵称半自动设定，强制后缀“的试用小程序”。且该参数会进行关键字检查，如果命中品牌关键字则会报错。
@@ -27,16 +27,16 @@ public class AlipayOpenMiniIsvFastregisterCreateModel extends AlipayObject {
 	private String authNotifyUrl;
 
 	/**
-	 * openId
-	 */
-	@ApiField("open_id")
-	private String openId;
-
-	/**
 	 * 外部订单号
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/**
+	 * 商户2088
+	 */
+	@ApiField("uid")
+	private String uid;
 
 	public String getAppName() {
 		return this.appName;
@@ -52,18 +52,18 @@ public class AlipayOpenMiniIsvFastregisterCreateModel extends AlipayObject {
 		this.authNotifyUrl = authNotifyUrl;
 	}
 
-	public String getOpenId() {
-		return this.openId;
-	}
-	public void setOpenId(String openId) {
-		this.openId = openId;
-	}
-
 	public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getUid() {
+		return this.uid;
+	}
+	public void setUid(String uid) {
+		this.uid = uid;
 	}
 
 }

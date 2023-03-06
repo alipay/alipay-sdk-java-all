@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IotEmergencyLogIndexSaveOpenMqRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4711953196863944249L;
+	private static final long serialVersionUID = 4568215177287125651L;
 
 	/**
 	 * 指标id
