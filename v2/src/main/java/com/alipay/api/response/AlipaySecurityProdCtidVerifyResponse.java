@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.ctid.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:52:48
+ * @since 1.0, 2023-03-12 22:21:46
  */
 public class AlipaySecurityProdCtidVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8881969252189617155L;
+	private static final long serialVersionUID = 6166679772885272278L;
 
 	/** 
 	 * 结果码

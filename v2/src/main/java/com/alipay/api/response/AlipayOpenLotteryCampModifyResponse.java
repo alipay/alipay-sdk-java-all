@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.lottery.camp.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:52:37
+ * @since 1.0, 2023-03-12 21:19:21
  */
 public class AlipayOpenLotteryCampModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3515438178655384239L;
+	private static final long serialVersionUID = 5739947716381465335L;
 
 	/** 
 	 * 抽奖活动ID

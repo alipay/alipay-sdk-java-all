@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.finlease.token.query request
  * 
  * @author auto create
- * @since 1.0, 2023-02-03 14:46:39
+ * @since 1.0, 2023-03-13 00:21:45
  */
 public class MybankCreditLoanapplyFinleaseTokenQueryRequest implements AlipayRequest<MybankCreditLoanapplyFinleaseTokenQueryResponse> {
 

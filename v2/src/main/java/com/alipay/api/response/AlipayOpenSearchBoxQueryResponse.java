@@ -17,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.box.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-09 11:06:41
+ * @since 1.0, 2023-03-12 22:01:40
  */
 public class AlipayOpenSearchBoxQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2864911234454258684L;
+	private static final long serialVersionUID = 1733599356946152936L;
 
 	/** 
 	 * 搜索直达账号模块

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.metainfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:17:04
+ * @since 1.0, 2023-03-13 08:06:00
  */
 public class SsdataDataserviceMetainfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8333544138939732892L;
+	private static final long serialVersionUID = 3577671539972151396L;
 
 	/** 
 	 * 是否同步成功

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.reservation.payshop.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:25:50
+ * @since 1.0, 2023-03-13 00:13:34
  */
 public class KoubeiServindustryReservationPayshopIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6425646278149821645L;
+	private static final long serialVersionUID = 4663748139127237648L;
 
 	/** 
 	 * 是否付费店铺

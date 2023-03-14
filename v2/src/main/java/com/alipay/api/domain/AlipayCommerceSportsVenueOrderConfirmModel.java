@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单确认（异步接口）
  *
  * @author auto create
- * @since 1.0, 2021-05-20 16:07:01
+ * @since 1.0, 2023-03-13 19:52:55
  */
 public class AlipayCommerceSportsVenueOrderConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2578621533487148619L;
+	private static final long serialVersionUID = 4737393372611199598L;
 
 	/**
 	 * 订单确认描述

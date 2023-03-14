@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalop.ucdp.apeproject.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:51:44
+ * @since 1.0, 2023-03-12 18:46:46
  */
 public class AlipayDigitalopUcdpApeprojectCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2652865317714914936L;
+	private static final long serialVersionUID = 5812439798269513726L;
 
 	/** 
 	 * 新创建的projectID

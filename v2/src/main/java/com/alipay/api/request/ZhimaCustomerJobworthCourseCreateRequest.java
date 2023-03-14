@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.jobworth.course.create request
  * 
  * @author auto create
- * @since 1.0, 2023-02-24 11:31:46
+ * @since 1.0, 2023-03-13 00:51:38
  */
 public class ZhimaCustomerJobworthCourseCreateRequest implements AlipayRequest<ZhimaCustomerJobworthCourseCreateResponse> {
 

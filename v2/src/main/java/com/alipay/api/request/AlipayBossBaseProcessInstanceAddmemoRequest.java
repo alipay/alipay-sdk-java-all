@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.process.instance.addmemo request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:58:03
+ * @since 1.0, 2023-03-13 01:05:17
  */
 public class AlipayBossBaseProcessInstanceAddmemoRequest implements AlipayRequest<AlipayBossBaseProcessInstanceAddmemoResponse> {
 

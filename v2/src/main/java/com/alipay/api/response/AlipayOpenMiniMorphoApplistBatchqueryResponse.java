@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.morpho.applist.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:49:28
+ * @since 1.0, 2023-03-12 21:41:15
  */
 public class AlipayOpenMiniMorphoApplistBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5785288127676239556L;
+	private static final long serialVersionUID = 2215332157782255612L;
 
 	/** 
 	 * 应用列表

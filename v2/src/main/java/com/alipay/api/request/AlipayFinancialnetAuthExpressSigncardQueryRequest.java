@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.express.signcard.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-12 16:56:40
+ * @since 1.0, 2023-03-13 03:06:39
  */
 public class AlipayFinancialnetAuthExpressSigncardQueryRequest implements AlipayRequest<AlipayFinancialnetAuthExpressSigncardQueryResponse> {
 

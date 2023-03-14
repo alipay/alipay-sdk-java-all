@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoinsprod.policy.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:25:34
+ * @since 1.0, 2023-03-13 03:25:16
  */
 public class AlipayInsAutoAutoinsprodPolicyApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4558494258713372615L;
+	private static final long serialVersionUID = 8112481946358961665L;
 
 	/** 
 	 * 车险询价申请号

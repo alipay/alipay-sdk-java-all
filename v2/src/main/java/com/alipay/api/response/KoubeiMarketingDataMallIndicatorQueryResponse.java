@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.mall.indicator.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 03:40:29
+ * @since 1.0, 2023-03-13 00:01:23
  */
 public class KoubeiMarketingDataMallIndicatorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5147329696962321289L;
+	private static final long serialVersionUID = 4333889565178916389L;
 
 	/** 
 	 * JSON格式数组，每个对象表示一个门店某个具体日期的指标信息，KEY为指标代码，VALUE为该指标对应的值。注意返回的json数组和查询的字段biz_type的值的不同会有差异，并且返回值会直接展示返回对象的字段。对应关系为:

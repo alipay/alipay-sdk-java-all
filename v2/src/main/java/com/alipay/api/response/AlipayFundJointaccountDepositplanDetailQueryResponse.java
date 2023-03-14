@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.depositplan.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 00:56:38
+ * @since 1.0, 2023-03-13 03:16:40
  */
 public class AlipayFundJointaccountDepositplanDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1588423354982954426L;
+	private static final long serialVersionUID = 8462778261381937916L;
 
 	/** 
 	 * 资金计划列表

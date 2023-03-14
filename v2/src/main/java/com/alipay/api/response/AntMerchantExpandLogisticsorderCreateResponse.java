@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.logisticsorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:50:06
+ * @since 1.0, 2023-03-13 06:43:42
  */
 public class AntMerchantExpandLogisticsorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8632294215789143749L;
+	private static final long serialVersionUID = 7111862458532267262L;
 
 	/** 
 	 * 物流单id

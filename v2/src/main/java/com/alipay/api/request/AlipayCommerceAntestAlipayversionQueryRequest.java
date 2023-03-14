@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.antest.alipayversion.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 18:35:00
+ * @since 1.0, 2023-03-12 17:25:20
  */
 public class AlipayCommerceAntestAlipayversionQueryRequest implements AlipayRequest<AlipayCommerceAntestAlipayversionQueryResponse> {
 

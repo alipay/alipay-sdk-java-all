@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.family.share.zmgo.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:35:51
+ * @since 1.0, 2023-03-13 06:26:24
  */
 public class AlipayUserFamilyShareZmgoInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2525561975112413946L;
+	private static final long serialVersionUID = 4452646238638514551L;
 
 	/** 
 	 * 共享组件链接

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-09 15:31:40
+ * @since 1.0, 2023-03-12 19:51:43
  */
 public class AlipayFundWalletCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4358611389226951283L;
+	private static final long serialVersionUID = 2651188974585817265L;
 
 	/** 
 	 * 礼品卡对客展示

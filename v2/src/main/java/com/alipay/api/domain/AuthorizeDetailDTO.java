@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收单主体明细
  *
  * @author auto create
- * @since 1.0, 2021-01-25 21:13:24
+ * @since 1.0, 2023-03-07 19:54:35
  */
 public class AuthorizeDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1599119137655526547L;
+	private static final long serialVersionUID = 8774319172125254196L;
 
 	/**
 	 * 收单主体PID

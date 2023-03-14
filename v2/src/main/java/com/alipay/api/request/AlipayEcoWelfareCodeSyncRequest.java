@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.welfare.code.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:58:50
+ * @since 1.0, 2023-03-13 02:59:24
  */
 public class AlipayEcoWelfareCodeSyncRequest implements AlipayRequest<AlipayEcoWelfareCodeSyncResponse> {
 

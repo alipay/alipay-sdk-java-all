@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁健康服务平台服务单状态同步API接口
  *
  * @author auto create
- * @since 1.0, 2021-12-10 10:21:52
+ * @since 1.0, 2023-03-08 12:59:05
  */
 public class AlipayInsServiceServicestatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1627185995213622541L;
+	private static final long serialVersionUID = 1191661351899678597L;
 
 	/**
 	 * 因为不同的服务产品、不同的供应商都具有差异化的服务状态和流程，服务状态流转的流程在健康管理服务系统中都可以自定义设置。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.rcservsmart.customizerule.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-02-23 20:31:45
+ * @since 1.0, 2023-03-12 19:31:39
  */
 public class AlipayFincoreComplianceRcservsmartCustomizeruleModifyRequest implements AlipayRequest<AlipayFincoreComplianceRcservsmartCustomizeruleModifyResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.bail.operation.deposit.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 02:51:37
+ * @since 1.0, 2023-03-12 19:36:41
  */
 public class AlipayFundBailOperationDepositCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8723249589394216259L;
+	private static final long serialVersionUID = 3783131951583912131L;
 
 	/** 
 	 * 保证金协议号

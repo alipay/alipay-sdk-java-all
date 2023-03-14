@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联系人信息
  *
  * @author auto create
- * @since 1.0, 2022-09-01 19:25:39
+ * @since 1.0, 2023-03-08 16:42:16
  */
 public class IndirectContactPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7183765912131971643L;
+	private static final long serialVersionUID = 4349671767146289214L;
 
 	/**
 	 * 联系人身份证号
 	 */
 	@ApiField("contact_card_no")
 	private String contactCardNo;
+
+	/**
+	 * 联系人证件类型，枚举值：中国大陆居民-身份证(RESIDENT)、其他国家或地区居民-护照(PASSPORT)、中国港澳居民-来往内地通行证(PASSPORT_HK_MO)、中国台湾居民-来往大陆通行证(PASSPORT_TWN)、港澳居民居住证（RESIDENCE_PERMIT_HM）、台湾居民居住证（RESIDENCE_PERMIT_TW）、外国人永久居住证（PERMANENT_RESIDENCE_FOREIGNER）。个体户/企业/事业单位/社会组织：可选择任一证件类型。小微商户仅支持身份证类型。
+	 */
+	@ApiField("contact_cert_type")
+	private String contactCertType;
 
 	/**
 	 * 联系人姓名
@@ -36,6 +42,13 @@ public class IndirectContactPersonInfo extends AlipayObject {
 	}
 	public void setContactCardNo(String contactCardNo) {
 		this.contactCardNo = contactCardNo;
+	}
+
+	public String getContactCertType() {
+		return this.contactCertType;
+	}
+	public void setContactCertType(String contactCertType) {
+		this.contactCertType = contactCertType;
 	}
 
 	public String getContactName() {

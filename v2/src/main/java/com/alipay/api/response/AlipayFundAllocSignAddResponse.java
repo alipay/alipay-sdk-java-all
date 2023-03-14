@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.alloc.sign.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-12 18:21:39
+ * @since 1.0, 2023-03-12 19:36:40
  */
 public class AlipayFundAllocSignAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6514699553276694143L;
+	private static final long serialVersionUID = 6438567167669262213L;
 
 	/** 
 	 * 用于关联本次请求

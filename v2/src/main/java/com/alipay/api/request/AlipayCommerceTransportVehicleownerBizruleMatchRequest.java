@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.bizrule.match request
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:16:08
+ * @since 1.0, 2023-03-12 18:23:04
  */
 public class AlipayCommerceTransportVehicleownerBizruleMatchRequest implements AlipayRequest<AlipayCommerceTransportVehicleownerBizruleMatchResponse> {
 

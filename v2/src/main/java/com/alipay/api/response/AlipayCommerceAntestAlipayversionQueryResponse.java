@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.antest.alipayversion.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 18:35:00
+ * @since 1.0, 2023-03-12 17:25:20
  */
 public class AlipayCommerceAntestAlipayversionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1712768612987894637L;
+	private static final long serialVersionUID = 1493652346476182361L;
 
 	/** 
 	 * 支付宝版本

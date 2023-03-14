@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CrowdTarget extends AlipayObject {
 
-	private static final long serialVersionUID = 6455767496291982531L;
+	private static final long serialVersionUID = 8496945883511311925L;
 
 	/**
 	 * 目标用户id，如淘宝userid

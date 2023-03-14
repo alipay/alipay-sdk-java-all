@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certify.customer.relativenum.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 09:26:41
+ * @since 1.0, 2023-03-12 23:06:44
  */
 public class AlipayUserCertifyCustomerRelativenumApplyRequest implements AlipayRequest<AlipayUserCertifyCustomerRelativenumApplyResponse> {
 

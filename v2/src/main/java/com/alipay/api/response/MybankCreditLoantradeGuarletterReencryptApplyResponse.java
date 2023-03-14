@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.guarletter.reencrypt.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:31:45
+ * @since 1.0, 2023-03-13 00:21:23
  */
 public class MybankCreditLoantradeGuarletterReencryptApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6629477875421695686L;
+	private static final long serialVersionUID = 4621825749548617421L;
 
 	/** 
 	 * 重新加密保函申请单号

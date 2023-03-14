@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.tuitioncode.orderdetail.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:43:54
+ * @since 1.0, 2023-03-13 01:36:06
  */
 public class AlipayCommerceEducateTuitioncodeOrderdetailQueryRequest implements AlipayRequest<AlipayCommerceEducateTuitioncodeOrderdetailQueryResponse> {
 

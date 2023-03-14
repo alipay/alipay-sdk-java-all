@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gffund.standardvoucher.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:51:46
+ * @since 1.0, 2023-03-12 16:56:23
  */
 public class AlipayBossFncGffundStandardvoucherBatchqueryRequest implements AlipayRequest<AlipayBossFncGffundStandardvoucherBatchqueryResponse> {
 

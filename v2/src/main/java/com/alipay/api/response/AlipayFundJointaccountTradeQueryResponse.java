@@ -13,17 +13,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:00:40
+ * @since 1.0, 2023-03-13 03:21:42
  */
 public class AlipayFundJointaccountTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7668171272998975416L;
+	private static final long serialVersionUID = 5568334664716789725L;
 
 	/** 
 	 * 买家ID
 	 */
 	@ApiField("buyer_id")
 	private String buyerId;
+
+	/** 
+	 * 买家的openId
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/** 
 	 * 交易创建时间
@@ -68,6 +74,13 @@ public class AlipayFundJointaccountTradeQueryResponse extends AlipayResponse {
 	}
 	public String getBuyerId( ) {
 		return this.buyerId;
+	}
+
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
+	}
+	public String getBuyerOpenId( ) {
+		return this.buyerOpenId;
 	}
 
 	public void setCreateTime(Date createTime) {

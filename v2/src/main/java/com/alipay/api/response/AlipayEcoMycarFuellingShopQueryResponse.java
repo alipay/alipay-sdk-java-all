@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.fuelling.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 03:35:24
+ * @since 1.0, 2023-03-12 19:18:46
  */
 public class AlipayEcoMycarFuellingShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3513974448627297638L;
+	private static final long serialVersionUID = 2168973426382636691L;
 
 	/** 
 	 * 门店地址

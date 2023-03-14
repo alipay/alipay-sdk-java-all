@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.rta.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-28 17:31:39
+ * @since 1.0, 2023-03-13 07:06:39
  */
 public class AnttechMorseMarketingRtaTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5439645237653434687L;
+	private static final long serialVersionUID = 5469675758819754124L;
 
 	/** 
 	 * 业务唯一标识，标识本次查询的唯一识别号，用于问题定位

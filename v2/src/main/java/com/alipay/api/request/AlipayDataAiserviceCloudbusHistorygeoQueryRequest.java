@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.cloudbus.historygeo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:25:04
+ * @since 1.0, 2023-03-12 18:28:45
  */
 public class AlipayDataAiserviceCloudbusHistorygeoQueryRequest implements AlipayRequest<AlipayDataAiserviceCloudbusHistorygeoQueryResponse> {
 

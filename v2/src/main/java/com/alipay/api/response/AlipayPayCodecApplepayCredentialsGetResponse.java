@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.codec.applepay.credentials.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:34:28
+ * @since 1.0, 2023-03-12 22:12:38
  */
 public class AlipayPayCodecApplepayCredentialsGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7672452133134261418L;
+	private static final long serialVersionUID = 7392642672213533963L;
 
 	/** 
 	 * 加密后的码列表。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:43:36
+ * @since 1.0, 2023-03-12 17:21:45
  */
 public class AlipayBusinessOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8395575856876129493L;
+	private static final long serialVersionUID = 5858378834149341374L;
 
 	/** 
 	 * 商户外部订单号

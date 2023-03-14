@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.yeb.asset.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 16:11:46
+ * @since 1.0, 2023-03-12 23:31:39
  */
 public class AntfortuneYebAssetOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1141949573118937618L;
+	private static final long serialVersionUID = 2569414973318894913L;
 
 	/** 
 	 * 订单关闭方
@@ -38,6 +38,12 @@ public class AntfortuneYebAssetOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("gmt_create")
 	private Date gmtCreate;
+
+	/** 
+	 * 用户UserId在应用AppId下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 订单号
@@ -95,6 +101,13 @@ public class AntfortuneYebAssetOrderQueryResponse extends AlipayResponse {
 	}
 	public Date getGmtCreate( ) {
 		return this.gmtCreate;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrderNo(String orderNo) {

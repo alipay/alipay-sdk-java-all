@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.nucleicacid.code.verify response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-12 15:16:41
+ * @since 1.0, 2023-03-12 18:51:41
  */
 public class AlipayEbppIndustryNucleicacidCodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7558147163464815558L;
+	private static final long serialVersionUID = 4687857761849298694L;
 
 	/** 
 	 * 机构业务号，用于关联机构侧存储的用户信息，核验失败时可能为空

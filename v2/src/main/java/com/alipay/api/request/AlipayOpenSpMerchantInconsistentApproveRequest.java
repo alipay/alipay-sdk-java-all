@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.merchant.inconsistent.approve request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:59:05
+ * @since 1.0, 2023-03-13 05:37:51
  */
 public class AlipayOpenSpMerchantInconsistentApproveRequest implements AlipayRequest<AlipayOpenSpMerchantInconsistentApproveResponse> {
 

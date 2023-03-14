@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.employment.product.consult response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 15:11:49
+ * @since 1.0, 2023-03-13 03:32:42
  */
 public class AlipayInsSceneEmploymentProductConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7563155191173358595L;
+	private static final long serialVersionUID = 8389254149116824426L;
 
 	/** 
 	 * 推荐的产品方案列表

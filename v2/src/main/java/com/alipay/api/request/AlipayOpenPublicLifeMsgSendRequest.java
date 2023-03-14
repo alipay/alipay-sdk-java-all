@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.msg.send request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:34:33
+ * @since 1.0, 2023-03-13 05:25:42
  */
 public class AlipayOpenPublicLifeMsgSendRequest implements AlipayUploadRequest<AlipayOpenPublicLifeMsgSendResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.searchbox.downgrade.save request
  * 
  * @author auto create
- * @since 1.0, 2023-02-06 11:26:39
+ * @since 1.0, 2023-03-13 05:36:39
  */
 public class AlipayOpenSearchboxDowngradeSaveRequest implements AlipayRequest<AlipayOpenSearchboxDowngradeSaveResponse> {
 

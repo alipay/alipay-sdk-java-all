@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antiep.scene.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-07 11:55:43
+ * @since 1.0, 2023-03-12 22:33:12
  */
 public class AlipaySocialAntiepSceneSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3139587179993519776L;
+	private static final long serialVersionUID = 6247275649374722273L;
 
 	/** 
 	 * 上报行为的结果描述

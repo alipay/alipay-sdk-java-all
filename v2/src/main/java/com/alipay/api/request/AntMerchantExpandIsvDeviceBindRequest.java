@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.isv.device.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:03:10
+ * @since 1.0, 2023-03-12 23:16:52
  */
 public class AntMerchantExpandIsvDeviceBindRequest implements AlipayRequest<AntMerchantExpandIsvDeviceBindResponse> {
 

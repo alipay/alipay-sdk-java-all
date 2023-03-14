@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.scenetype.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:58:29
+ * @since 1.0, 2023-03-12 18:43:17
  */
 public class AlipayDigitalmgmtScenetypeQueryRequest implements AlipayRequest<AlipayDigitalmgmtScenetypeQueryResponse> {
 

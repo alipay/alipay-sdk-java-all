@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.bail.order.migrate response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 02:56:38
+ * @since 1.0, 2023-03-13 03:16:39
  */
 public class AlipayFundBailOrderMigrateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3593399287466912751L;
+	private static final long serialVersionUID = 6873417341394775882L;
 
 	/** 
 	 * 错误码

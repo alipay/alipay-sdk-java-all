@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.activity.recycle.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 20:11:42
+ * @since 1.0, 2023-03-13 02:46:43
  */
 public class AlipayEcoActivityRecycleSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3856873219197438643L;
+	private static final long serialVersionUID = 8824841562863893774L;
 
 	/** 
 	 * 发放的能量总额，单位克: g

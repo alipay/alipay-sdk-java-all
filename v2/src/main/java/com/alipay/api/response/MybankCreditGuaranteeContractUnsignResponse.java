@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.guarantee.contract.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:06:29
+ * @since 1.0, 2023-03-13 07:44:44
  */
 public class MybankCreditGuaranteeContractUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1353261614887889927L;
+	private static final long serialVersionUID = 6399648997437724517L;
 
 	/** 
 	 * 合约号。调用成功则返回对应签约的合约号。

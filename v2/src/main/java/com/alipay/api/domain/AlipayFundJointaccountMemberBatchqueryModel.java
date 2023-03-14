@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业批量查询员工信息（分页）
  *
  * @author auto create
- * @since 1.0, 2022-11-21 14:47:50
+ * @since 1.0, 2023-03-07 21:43:16
  */
 public class AlipayFundJointaccountMemberBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5687879531719264416L;
+	private static final long serialVersionUID = 7379227869978493637L;
 
 	/**
 	 * 共同账户ID
@@ -43,6 +43,12 @@ public class AlipayFundJointaccountMemberBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 按游标查询，传入上次查询最后一个用户的openId
+	 */
+	@ApiField("last_open_id")
+	private String lastOpenId;
 
 	/**
 	 * 按游标查询，传入上次查询最后一个用户ID，适用于逐页查询。优先级大于page_num
@@ -101,6 +107,13 @@ public class AlipayFundJointaccountMemberBatchqueryModel extends AlipayObject {
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getLastOpenId() {
+		return this.lastOpenId;
+	}
+	public void setLastOpenId(String lastOpenId) {
+		this.lastOpenId = lastOpenId;
 	}
 
 	public String getLastUserId() {

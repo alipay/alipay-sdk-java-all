@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.promotion.recommend.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 00:11:43
+ * @since 1.0, 2023-03-13 02:06:44
  */
 public class AlipayCommerceTransportPromotionRecommendQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6196153277258478526L;
+	private static final long serialVersionUID = 8617462696963657248L;
 
 	/** 
 	 * 使用优惠的门槛金额

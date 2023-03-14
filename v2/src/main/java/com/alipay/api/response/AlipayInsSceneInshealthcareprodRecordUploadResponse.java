@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.inshealthcareprod.record.upload response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:27:44
+ * @since 1.0, 2023-03-12 20:03:13
  */
 public class AlipayInsSceneInshealthcareprodRecordUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3581847714652333313L;
+	private static final long serialVersionUID = 6812777353836284772L;
 
 	
 

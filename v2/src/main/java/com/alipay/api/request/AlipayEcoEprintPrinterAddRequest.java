@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.eprint.printer.add request
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:33:17
+ * @since 1.0, 2023-03-13 02:50:21
  */
 public class AlipayEcoEprintPrinterAddRequest implements AlipayRequest<AlipayEcoEprintPrinterAddResponse> {
 

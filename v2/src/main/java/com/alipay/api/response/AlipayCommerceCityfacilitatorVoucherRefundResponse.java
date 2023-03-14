@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.voucher.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 18:37:57
+ * @since 1.0, 2023-03-13 01:24:00
  */
 public class AlipayCommerceCityfacilitatorVoucherRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5336955274679581223L;
+	private static final long serialVersionUID = 4799872169657138532L;
 
 	
 

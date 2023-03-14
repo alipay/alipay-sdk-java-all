@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.carrental.service.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 19:04:30
+ * @since 1.0, 2023-03-13 01:59:33
  */
 public class AlipayCommerceTransportCarrentalServiceSubmitRequest implements AlipayRequest<AlipayCommerceTransportCarrentalServiceSubmitResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.marketing.campaign.bkpromosceneorder.point.refund request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:18:49
+ * @since 1.0, 2023-03-13 08:00:55
  */
 public class MybankMarketingCampaignBkpromosceneorderPointRefundRequest implements AlipayRequest<MybankMarketingCampaignBkpromosceneorderPointRefundResponse> {
 

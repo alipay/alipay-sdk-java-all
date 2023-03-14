@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.warmcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:13:58
+ * @since 1.0, 2023-03-12 20:32:53
  */
 public class AlipayMarketingCampaignWarmcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2357962594576967421L;
+	private static final long serialVersionUID = 3392258912358132369L;
 
 	/** 
 	 * 是否领过暖心卡

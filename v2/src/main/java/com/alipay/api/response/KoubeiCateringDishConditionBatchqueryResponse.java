@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.condition.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:54:49
+ * @since 1.0, 2023-03-13 07:11:10
  */
 public class KoubeiCateringDishConditionBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7123944784796425834L;
+	private static final long serialVersionUID = 4581185342119468871L;
 
 	/** 
 	 * 菜品分页信息

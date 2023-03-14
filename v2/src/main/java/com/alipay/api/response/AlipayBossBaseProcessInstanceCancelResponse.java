@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.base.process.instance.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:43:28
+ * @since 1.0, 2023-03-12 16:51:31
  */
 public class AlipayBossBaseProcessInstanceCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4643664732415474496L;
+	private static final long serialVersionUID = 8465878914949569169L;
 
 	
 

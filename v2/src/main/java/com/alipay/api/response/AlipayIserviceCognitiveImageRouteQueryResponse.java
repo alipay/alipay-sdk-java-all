@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.image.route.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:25:05
+ * @since 1.0, 2023-03-13 03:43:26
  */
 public class AlipayIserviceCognitiveImageRouteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6238368584173167616L;
+	private static final long serialVersionUID = 8826588788212211716L;
 
 	/** 
 	 * 错误码

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.auth.zhimaper.inner.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 03:55:12
+ * @since 1.0, 2023-03-13 06:20:17
  */
 public class AlipayUserAuthZhimaperInnerApplyRequest implements AlipayRequest<AlipayUserAuthZhimaperInnerApplyResponse> {
 

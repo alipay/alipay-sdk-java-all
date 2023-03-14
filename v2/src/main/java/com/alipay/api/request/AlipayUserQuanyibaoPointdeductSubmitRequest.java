@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.quanyibao.pointdeduct.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:01:41
+ * @since 1.0, 2023-03-12 23:11:40
  */
 public class AlipayUserQuanyibaoPointdeductSubmitRequest implements AlipayRequest<AlipayUserQuanyibaoPointdeductSubmitResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.equipment.auth.querybypage response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:14:07
+ * @since 1.0, 2023-03-13 04:30:49
  */
 public class AlipayOfflineProviderEquipmentAuthQuerybypageResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1498597413326347727L;
+	private static final long serialVersionUID = 7629123942571459188L;
 
 	/** 
 	 * 机具解绑按照条件分页查询返回信息

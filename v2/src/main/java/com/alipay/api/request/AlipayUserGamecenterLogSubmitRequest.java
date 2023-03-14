@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.gamecenter.log.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:01:41
+ * @since 1.0, 2023-03-13 06:31:42
  */
 public class AlipayUserGamecenterLogSubmitRequest implements AlipayRequest<AlipayUserGamecenterLogSubmitResponse> {
 

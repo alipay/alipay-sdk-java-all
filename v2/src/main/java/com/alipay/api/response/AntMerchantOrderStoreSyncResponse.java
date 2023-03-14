@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.order.store.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:09:23
+ * @since 1.0, 2023-03-12 23:25:02
  */
 public class AntMerchantOrderStoreSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8541229572338823893L;
+	private static final long serialVersionUID = 3262992931183154688L;
 
 	/** 
 	 * 订单的ID

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.operator.logonpassword.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-08 19:36:38
+ * @since 1.0, 2023-03-13 06:26:39
  */
 public class AlipayUserAccountOperatorLogonpasswordVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7245663961388328565L;
+	private static final long serialVersionUID = 8284792285939398942L;
 
 	/** 
 	 * PASSWORD_NOT_MATCH 密码不匹配

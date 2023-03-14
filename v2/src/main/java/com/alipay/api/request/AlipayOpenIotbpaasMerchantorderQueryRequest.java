@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotbpaas.merchantorder.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:08:02
+ * @since 1.0, 2023-03-13 04:45:37
  */
 public class AlipayOpenIotbpaasMerchantorderQueryRequest implements AlipayRequest<AlipayOpenIotbpaasMerchantorderQueryResponse> {
 

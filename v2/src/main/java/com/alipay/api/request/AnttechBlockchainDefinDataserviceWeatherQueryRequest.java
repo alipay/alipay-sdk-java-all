@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.dataservice.weather.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:46:43
+ * @since 1.0, 2023-03-12 23:36:43
  */
 public class AnttechBlockchainDefinDataserviceWeatherQueryRequest implements AlipayRequest<AnttechBlockchainDefinDataserviceWeatherQueryResponse> {
 

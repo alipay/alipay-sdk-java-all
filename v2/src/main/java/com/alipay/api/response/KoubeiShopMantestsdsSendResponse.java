@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.shop.mantestsds.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:21:54
+ * @since 1.0, 2023-03-13 07:42:07
  */
 public class KoubeiShopMantestsdsSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4816199534958775863L;
+	private static final long serialVersionUID = 6688213871459274216L;
 
 	
 

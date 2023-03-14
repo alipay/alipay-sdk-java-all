@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.benefitbudget.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:56:39
+ * @since 1.0, 2023-03-12 22:11:45
  */
 public class AlipayOverseasTravelBenefitbudgetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1582124126449283729L;
+	private static final long serialVersionUID = 6582393967843939784L;
 
 	/** 
 	 * 预算详情列表

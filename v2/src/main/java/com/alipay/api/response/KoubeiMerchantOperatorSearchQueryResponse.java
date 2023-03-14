@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.operator.search.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:02:57
+ * @since 1.0, 2023-03-13 00:05:39
  */
 public class KoubeiMerchantOperatorSearchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6789518885528961646L;
+	private static final long serialVersionUID = 2125299696457133428L;
 
 	/** 
 	 * 根据不同条件查询返回的口碑商家中心操作员列表

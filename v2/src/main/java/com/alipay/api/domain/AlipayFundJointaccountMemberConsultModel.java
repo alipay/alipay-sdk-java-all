@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员企关系咨询
  *
  * @author auto create
- * @since 1.0, 2022-11-22 15:33:58
+ * @since 1.0, 2023-03-07 21:43:16
  */
 public class AlipayFundJointaccountMemberConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1131847833738867676L;
+	private static final long serialVersionUID = 8539159225243189457L;
 
 	/**
 	 * 企业ID
@@ -33,6 +33,13 @@ public class AlipayFundJointaccountMemberConsultModel extends AlipayObject {
 	 */
 	@ApiField("business_params")
 	private String businessParams;
+
+	/**
+	 * 要检查的员工openId
+	 */
+	@ApiListField("open_id_list")
+	@ApiField("string")
+	private List<String> openIdList;
 
 	/**
 	 * 要检查的员工ID
@@ -60,6 +67,13 @@ public class AlipayFundJointaccountMemberConsultModel extends AlipayObject {
 	}
 	public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
+	}
+
+	public List<String> getOpenIdList() {
+		return this.openIdList;
+	}
+	public void setOpenIdList(List<String> openIdList) {
+		this.openIdList = openIdList;
 	}
 
 	public List<String> getUserIdList() {

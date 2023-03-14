@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.customer.certify.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:32:44
+ * @since 1.0, 2023-03-13 08:24:25
  */
 public class ZolozIdentificationCustomerCertifyConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5611937727459347194L;
+	private static final long serialVersionUID = 1284622224524534915L;
 
 	/** 
 	 * 业务单据号，用于核对和排查

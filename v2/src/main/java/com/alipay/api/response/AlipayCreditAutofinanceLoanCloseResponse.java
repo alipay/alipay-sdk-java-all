@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.credit.autofinance.loan.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:06:32
+ * @since 1.0, 2023-03-13 02:11:03
  */
 public class AlipayCreditAutofinanceLoanCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1218848934666848643L;
+	private static final long serialVersionUID = 4449287877544355855L;
 
 	/** 
 	 * 外部平台订单号,64个字符以内、只能包含字母、数字、下划线；需保证在外部平台端不重复

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.signatory.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:20:33
+ * @since 1.0, 2023-03-13 06:31:56
  */
 public class AlipayUserSignatoryInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4538217417567374742L;
+	private static final long serialVersionUID = 3471942486524819297L;
 
 	/** 
 	 * 出参

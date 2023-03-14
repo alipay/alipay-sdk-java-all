@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.alloc.sign.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-01-12 18:21:39
+ * @since 1.0, 2023-03-13 03:11:39
  */
 public class AlipayFundAllocSignDeleteRequest implements AlipayRequest<AlipayFundAllocSignDeleteResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.mobileauth.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:35:17
+ * @since 1.0, 2023-03-12 22:16:10
  */
 public class AlipayPcreditHuabeiMobileauthTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2532975976263197931L;
+	private static final long serialVersionUID = 6549676647958972544L;
 
 	/** 
 	 * 模板查询返回JSON信息，参考

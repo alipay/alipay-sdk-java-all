@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.retail.kbcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:30:02
+ * @since 1.0, 2023-03-13 00:06:34
  */
 public class KoubeiRetailKbcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2767628724178958469L;
+	private static final long serialVersionUID = 5275155561835367664L;
 
 	/** 
 	 * 口碑码生成批次id，可用于查询接口

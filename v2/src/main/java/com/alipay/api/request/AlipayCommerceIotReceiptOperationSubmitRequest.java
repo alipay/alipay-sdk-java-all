@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.receipt.operation.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:14:36
+ * @since 1.0, 2023-03-12 17:57:07
  */
 public class AlipayCommerceIotReceiptOperationSubmitRequest implements AlipayRequest<AlipayCommerceIotReceiptOperationSubmitResponse> {
 

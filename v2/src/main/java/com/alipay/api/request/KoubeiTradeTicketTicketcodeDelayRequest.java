@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.trade.ticket.ticketcode.delay request
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 18:52:20
+ * @since 1.0, 2023-03-13 00:16:32
  */
 public class KoubeiTradeTicketTicketcodeDelayRequest implements AlipayRequest<KoubeiTradeTicketTicketcodeDelayResponse> {
 

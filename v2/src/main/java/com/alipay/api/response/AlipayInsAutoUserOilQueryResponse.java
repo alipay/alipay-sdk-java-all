@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.user.oil.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:00:39
+ * @since 1.0, 2023-03-13 03:26:39
  */
 public class AlipayInsAutoUserOilQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7469852599878996297L;
+	private static final long serialVersionUID = 4863364723792724213L;
 
 	/** 
 	 * 累计攒油量（不包含未收取油量）

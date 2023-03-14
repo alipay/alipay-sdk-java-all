@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.zdataassets.easyservice request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 17:44:16
+ * @since 1.0, 2023-03-13 06:33:56
  */
 public class AlipayZdataassetsEasyserviceRequest implements AlipayRequest<AlipayZdataassetsEasyserviceResponse> {
 

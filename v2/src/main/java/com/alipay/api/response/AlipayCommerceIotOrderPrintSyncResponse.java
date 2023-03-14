@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.order.print.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:13:00
+ * @since 1.0, 2023-03-13 01:43:38
  */
 public class AlipayCommerceIotOrderPrintSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6372599991725227832L;
+	private static final long serialVersionUID = 2343687935338897857L;
 
 	
 

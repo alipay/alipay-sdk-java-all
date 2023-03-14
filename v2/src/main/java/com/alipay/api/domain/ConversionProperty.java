@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留资数据
  *
  * @author auto create
- * @since 1.0, 2021-10-19 17:46:42
+ * @since 1.0, 2023-03-10 16:11:34
  */
 public class ConversionProperty extends AlipayObject {
 
-	private static final long serialVersionUID = 6359219342433143362L;
+	private static final long serialVersionUID = 5147879552129184486L;
 
 	/**
 	 * 业务转化数据属性

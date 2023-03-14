@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户会员站点以及身份信息
  *
  * @author auto create
- * @since 1.0, 2023-03-03 13:56:53
+ * @since 1.0, 2023-03-13 13:49:00
  */
 public class Member extends AlipayObject {
 
-	private static final long serialVersionUID = 1467253736244549311L;
+	private static final long serialVersionUID = 2892919626672251917L;
 
 	/**
 	 * 网商银行参与者会员ID
@@ -36,6 +36,12 @@ public class Member extends AlipayObject {
 	 */
 	@ApiField("site_login_id")
 	private String siteLoginId;
+
+	/**
+	 * 会员站点ID映射
+	 */
+	@ApiField("site_open_id")
+	private String siteOpenId;
 
 	/**
 	 * 会员站点ID
@@ -75,6 +81,13 @@ public class Member extends AlipayObject {
 	}
 	public void setSiteLoginId(String siteLoginId) {
 		this.siteLoginId = siteLoginId;
+	}
+
+	public String getSiteOpenId() {
+		return this.siteOpenId;
+	}
+	public void setSiteOpenId(String siteOpenId) {
+		this.siteOpenId = siteOpenId;
 	}
 
 	public String getSiteUserId() {

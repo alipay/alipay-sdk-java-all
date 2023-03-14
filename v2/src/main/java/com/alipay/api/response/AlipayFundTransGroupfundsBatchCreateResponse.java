@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.groupfunds.batch.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:16:29
+ * @since 1.0, 2023-03-12 19:47:16
  */
 public class AlipayFundTransGroupfundsBatchCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2393692998195562573L;
+	private static final long serialVersionUID = 4156426794649754533L;
 
 	/** 
 	 * 团体资金批次号,后续业务流水以及预付款业务透传

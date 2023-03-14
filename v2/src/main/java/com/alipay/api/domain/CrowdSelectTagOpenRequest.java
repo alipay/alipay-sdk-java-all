@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CrowdSelectTagOpenRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3463948428181296385L;
+	private static final long serialVersionUID = 7851786861479642228L;
 
 	/**
 	 * 圈选标签值

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.intl.brand.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:41:45
+ * @since 1.0, 2023-03-12 22:11:45
  */
 public class AlipayOverseasTravelIntlBrandSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5334129667864325315L;
+	private static final long serialVersionUID = 8869367257667359521L;
 
 	/** 
 	 * 结果

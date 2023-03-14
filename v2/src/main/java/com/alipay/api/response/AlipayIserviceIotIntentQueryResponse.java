@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.iot.intent.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:33:33
+ * @since 1.0, 2023-03-12 20:17:02
  */
 public class AlipayIserviceIotIntentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4835253346488733547L;
+	private static final long serialVersionUID = 5353497838442989584L;
 
 	/** 
 	 * iot的响应类

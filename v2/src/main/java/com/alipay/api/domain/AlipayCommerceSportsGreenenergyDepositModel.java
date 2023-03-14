@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场馆订单发放绿色能量接口
  *
  * @author auto create
- * @since 1.0, 2022-12-09 17:05:16
+ * @since 1.0, 2023-03-13 19:53:44
  */
 public class AlipayCommerceSportsGreenenergyDepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8191656658392836996L;
+	private static final long serialVersionUID = 5848197665157221886L;
 
 	/**
 	 * 用户支付宝OPENID

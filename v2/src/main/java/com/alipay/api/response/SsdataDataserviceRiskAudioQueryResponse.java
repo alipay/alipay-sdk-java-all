@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.audio.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 03:59:13
+ * @since 1.0, 2023-03-13 08:06:33
  */
 public class SsdataDataserviceRiskAudioQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1485495755868253961L;
+	private static final long serialVersionUID = 5785315487483276818L;
 
 	/** 
 	 * 命中的用户自定义的关键词列表及选择的模型命中分数

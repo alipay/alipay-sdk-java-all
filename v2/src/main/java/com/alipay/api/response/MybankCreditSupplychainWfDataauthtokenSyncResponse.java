@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.dataauthtoken.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 09:46:39
+ * @since 1.0, 2023-03-13 00:31:41
  */
 public class MybankCreditSupplychainWfDataauthtokenSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6835166773191593341L;
+	private static final long serialVersionUID = 6784229835488612514L;
 
 	/** 
 	 * 请求受理成功与否

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.merchant.type.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:31:57
+ * @since 1.0, 2023-03-12 23:20:01
  */
 public class AntMerchantExpandMerchantTypeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1148987625421419591L;
+	private static final long serialVersionUID = 5744526584458544926L;
 
 	/** 
 	 * 返回值及对应含义如下：

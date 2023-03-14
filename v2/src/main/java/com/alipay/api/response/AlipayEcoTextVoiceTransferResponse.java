@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.text.voice.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:33:40
+ * @since 1.0, 2023-03-13 02:59:02
  */
 public class AlipayEcoTextVoiceTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8326853863656858434L;
+	private static final long serialVersionUID = 8644864171684859712L;
 
 	/** 
 	 * 阿里云语音编号

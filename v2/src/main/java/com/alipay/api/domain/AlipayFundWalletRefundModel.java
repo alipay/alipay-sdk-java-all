@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包原路退接口
  *
  * @author auto create
- * @since 1.0, 2022-12-16 21:19:51
+ * @since 1.0, 2023-03-08 17:21:51
  */
 public class AlipayFundWalletRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7763555981389417866L;
+	private static final long serialVersionUID = 8758115292826898229L;
 
 	/**
 	 * 金额
@@ -24,6 +24,12 @@ public class AlipayFundWalletRefundModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 原充值单号
+	 */
+	@ApiField("original_deposit_order_id")
+	private String originalDepositOrderId;
 
 	/**
 	 * 用户唯一请求标识
@@ -56,6 +62,12 @@ public class AlipayFundWalletRefundModel extends AlipayObject {
 	private String productCode;
 
 	/**
+	 * 提现策略
+	 */
+	@ApiField("refund_strategy")
+	private String refundStrategy;
+
+	/**
 	 * 钱包id
 	 */
 	@ApiField("user_wallet_id")
@@ -73,6 +85,13 @@ public class AlipayFundWalletRefundModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getOriginalDepositOrderId() {
+		return this.originalDepositOrderId;
+	}
+	public void setOriginalDepositOrderId(String originalDepositOrderId) {
+		this.originalDepositOrderId = originalDepositOrderId;
 	}
 
 	public String getOutBizNo() {
@@ -108,6 +127,13 @@ public class AlipayFundWalletRefundModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getRefundStrategy() {
+		return this.refundStrategy;
+	}
+	public void setRefundStrategy(String refundStrategy) {
+		this.refundStrategy = refundStrategy;
 	}
 
 	public String getUserWalletId() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.relation.shop.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 19:24:41
+ * @since 1.0, 2023-03-13 01:20:04
  */
 public class AlipayBusinessRelationShopModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2528325369188146851L;
+	private static final long serialVersionUID = 3357379599624126268L;
 
 	/** 
 	 * 基于商业关系的代运营门店id

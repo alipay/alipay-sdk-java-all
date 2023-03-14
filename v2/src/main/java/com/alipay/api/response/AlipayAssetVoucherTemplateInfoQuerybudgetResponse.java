@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.voucher.template.info.querybudget response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 15:33:32
+ * @since 1.0, 2023-03-12 16:50:13
  */
 public class AlipayAssetVoucherTemplateInfoQuerybudgetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2843283681337843522L;
+	private static final long serialVersionUID = 8467525782842861212L;
 
 	/** 
 	 * 券模板预算列表

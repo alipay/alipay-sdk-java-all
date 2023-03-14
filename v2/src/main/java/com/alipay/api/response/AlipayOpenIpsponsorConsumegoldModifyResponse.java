@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.ipsponsor.consumegold.modify response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-15 11:17:46
+ * @since 1.0, 2023-03-13 05:01:42
  */
 public class AlipayOpenIpsponsorConsumegoldModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6391712347157219829L;
+	private static final long serialVersionUID = 1811288296515259191L;
 
 	
 

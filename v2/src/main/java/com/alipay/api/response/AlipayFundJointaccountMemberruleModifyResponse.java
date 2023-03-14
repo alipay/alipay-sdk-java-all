@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.memberrule.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 00:43:26
+ * @since 1.0, 2023-03-13 03:21:42
  */
 public class AlipayFundJointaccountMemberruleModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6215154768997547284L;
+	private static final long serialVersionUID = 1687699549944467176L;
 
 	
 

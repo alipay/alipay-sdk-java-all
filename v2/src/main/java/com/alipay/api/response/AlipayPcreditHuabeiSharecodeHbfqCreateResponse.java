@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.sharecode.hbfq.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 23:19:16
+ * @since 1.0, 2023-03-13 05:52:30
  */
 public class AlipayPcreditHuabeiSharecodeHbfqCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4661435843259832239L;
+	private static final long serialVersionUID = 5863669165652695546L;
 
 	/** 
 	 * 吱口令失效时间，若为空则表示永久有效

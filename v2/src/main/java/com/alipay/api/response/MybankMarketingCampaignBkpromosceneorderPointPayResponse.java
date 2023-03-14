@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.campaign.bkpromosceneorder.point.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:19:05
+ * @since 1.0, 2023-03-13 08:00:33
  */
 public class MybankMarketingCampaignBkpromosceneorderPointPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4476313332168189413L;
+	private static final long serialVersionUID = 4813636673748435559L;
 
 	
 

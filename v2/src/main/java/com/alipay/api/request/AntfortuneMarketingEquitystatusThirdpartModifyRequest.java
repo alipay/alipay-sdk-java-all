@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.marketing.equitystatus.thirdpart.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 23:17:33
+ * @since 1.0, 2023-03-13 06:50:17
  */
 public class AntfortuneMarketingEquitystatusThirdpartModifyRequest implements AlipayRequest<AntfortuneMarketingEquitystatusThirdpartModifyResponse> {
 

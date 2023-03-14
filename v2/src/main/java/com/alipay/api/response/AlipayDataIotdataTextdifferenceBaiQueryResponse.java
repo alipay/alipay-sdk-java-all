@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.iotdata.textdifference.bai.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:26:50
+ * @since 1.0, 2023-03-12 18:41:26
  */
 public class AlipayDataIotdataTextdifferenceBaiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3863558331417852728L;
+	private static final long serialVersionUID = 4732614146514178179L;
 
 	/** 
 	 * 差异化结果以json字符串呈现。

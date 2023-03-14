@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cms.cdata.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 03:23:22
+ * @since 1.0, 2023-03-13 02:46:06
  */
 public class AlipayEcoCmsCdataUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7361236511733338194L;
+	private static final long serialVersionUID = 5147984413623938978L;
 
 	/** 
 	 * 投放消息ID

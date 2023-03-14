@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.risk.httpproxy.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:11:37
+ * @since 1.0, 2023-03-12 23:36:44
  */
 public class AnttechBlockchainRiskHttpproxyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6454227687177957974L;
+	private static final long serialVersionUID = 5722398587521358114L;
 
 	/** 
 	 * 返回接口数据，例如mps模型，只有标签和评分，无个人敏感信息

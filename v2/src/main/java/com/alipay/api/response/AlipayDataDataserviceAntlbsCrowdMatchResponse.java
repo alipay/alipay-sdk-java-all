@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.antlbs.crowd.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:59:05
+ * @since 1.0, 2023-03-13 02:18:51
  */
 public class AlipayDataDataserviceAntlbsCrowdMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2225568961599226983L;
+	private static final long serialVersionUID = 5784564892737826487L;
 
 	/** 
 	 * 匹配结果，入参中每个客群码都会返回是否匹配，即使该客群不存在

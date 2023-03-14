@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.arater.waitratealgorank.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:15:50
+ * @since 1.0, 2023-03-13 04:34:17
  */
 public class AlipayOpenAppAraterWaitratealgorankQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7645419888559128487L;
+	private static final long serialVersionUID = 7152251291469553976L;
 
 	/** 
 	 * 待评价列表打分结果

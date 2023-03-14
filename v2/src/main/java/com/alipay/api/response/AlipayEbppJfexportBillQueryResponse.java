@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.jfexport.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:19:46
+ * @since 1.0, 2023-03-13 02:40:18
  */
 public class AlipayEbppJfexportBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8559424681847298743L;
+	private static final long serialVersionUID = 5122517582194896467L;
 
 	/** 
 	 * 支付的总金额，单位为：RMB元。默认返回空，实际金额已销账、对账为准。

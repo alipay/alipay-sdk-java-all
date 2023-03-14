@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.point.history.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 19:15:38
+ * @since 1.0, 2023-03-13 01:51:07
  */
 public class AlipayCommerceOperationPointHistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8694643884681536488L;
+	private static final long serialVersionUID = 3435866344312844921L;
 
 	/** 
 	 * 是否存在下一页

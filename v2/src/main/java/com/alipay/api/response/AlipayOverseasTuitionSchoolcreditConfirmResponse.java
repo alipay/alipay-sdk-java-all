@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tuition.schoolcredit.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:20:57
+ * @since 1.0, 2023-03-13 05:44:54
  */
 public class AlipayOverseasTuitionSchoolcreditConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4855633585996125368L;
+	private static final long serialVersionUID = 4452896648421145493L;
 
 	/** 
 	 * 业务透传保留字段，json map格式

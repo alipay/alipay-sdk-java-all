@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.subaccount.balance.freeze response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:45:58
+ * @since 1.0, 2023-03-12 17:02:25
  */
 public class AlipayBossFncSubaccountBalanceFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5777132212263526345L;
+	private static final long serialVersionUID = 1716774619631638669L;
 
 	/** 
 	 * 子户余额冻结结果open api数据传输对象

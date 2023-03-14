@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.pkgauthrelation.authtome.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 09:06:45
+ * @since 1.0, 2023-03-13 01:51:44
  */
 public class AlipayCommerceLogisticsPkgauthrelationAuthtomeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1676237825544871642L;
+	private static final long serialVersionUID = 4628624439422864652L;
 
 	/** 
 	 * 授权关系列表

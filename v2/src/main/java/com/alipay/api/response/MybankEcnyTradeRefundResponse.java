@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.ecny.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:39:30
+ * @since 1.0, 2023-03-13 00:32:19
  */
 public class MybankEcnyTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3541862531665163547L;
+	private static final long serialVersionUID = 1625786814366522928L;
 
 	/** 
 	 * 本次退款是否发生了资金变化：Y-是；N-否

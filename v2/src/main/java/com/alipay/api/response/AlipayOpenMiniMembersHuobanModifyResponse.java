@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.members.huoban.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:40:37
+ * @since 1.0, 2023-03-12 21:38:07
  */
 public class AlipayOpenMiniMembersHuobanModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8141668432563173325L;
+	private static final long serialVersionUID = 2637245414433947986L;
 
 	
 

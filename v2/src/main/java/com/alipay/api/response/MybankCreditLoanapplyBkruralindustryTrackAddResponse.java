@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.bkruralindustry.track.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 16:49:28
+ * @since 1.0, 2023-03-13 00:18:35
  */
 public class MybankCreditLoanapplyBkruralindustryTrackAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8616472972829182354L;
+	private static final long serialVersionUID = 5535247517142931993L;
 
 	/** 
 	 * 是否成功

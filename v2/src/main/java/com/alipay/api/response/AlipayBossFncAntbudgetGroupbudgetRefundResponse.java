@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.antbudget.groupbudget.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:36:13
+ * @since 1.0, 2023-03-13 01:08:36
  */
 public class AlipayBossFncAntbudgetGroupbudgetRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2672488492664163832L;
+	private static final long serialVersionUID = 3784696285316183597L;
 
 	/** 
 	 * 释放结果，如果成功，返回集团预算编码集合

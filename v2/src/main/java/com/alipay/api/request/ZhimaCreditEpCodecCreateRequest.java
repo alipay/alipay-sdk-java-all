@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.codec.create request
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:03:42
+ * @since 1.0, 2023-03-13 08:08:59
  */
 public class ZhimaCreditEpCodecCreateRequest implements AlipayUploadRequest<ZhimaCreditEpCodecCreateResponse> {
 

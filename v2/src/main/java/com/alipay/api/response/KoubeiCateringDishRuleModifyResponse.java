@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.rule.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:48:02
+ * @since 1.0, 2023-03-12 23:47:17
  */
 public class KoubeiCateringDishRuleModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3356671797718794813L;
+	private static final long serialVersionUID = 6834614611223359925L;
 
 	
 

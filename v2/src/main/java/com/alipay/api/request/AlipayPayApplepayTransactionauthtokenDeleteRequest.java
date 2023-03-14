@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.applepay.transactionauthtoken.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-01-31 17:07:09
+ * @since 1.0, 2023-03-12 22:16:39
  */
 public class AlipayPayApplepayTransactionauthtokenDeleteRequest implements AlipayRequest<AlipayPayApplepayTransactionauthtokenDeleteResponse> {
 

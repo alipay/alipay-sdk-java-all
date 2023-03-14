@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlegalchain.ndalist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 15:46:39
+ * @since 1.0, 2023-03-12 17:06:39
  */
 public class AlipayBossProdAntlegalchainNdalistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6113979717624247394L;
+	private static final long serialVersionUID = 6893246363712316891L;
 
 	/** 
 	 * 每页条数

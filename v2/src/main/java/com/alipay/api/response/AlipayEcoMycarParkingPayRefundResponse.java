@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.pay.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:57:21
+ * @since 1.0, 2023-03-13 02:55:49
  */
 public class AlipayEcoMycarParkingPayRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3143149389729175795L;
+	private static final long serialVersionUID = 1317589814536667555L;
 
 	/** 
 	 * 业务返回码

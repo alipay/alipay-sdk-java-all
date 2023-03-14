@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.benefit.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 19:18:12
+ * @since 1.0, 2023-03-13 04:01:58
  */
 public class AlipayMarketingCardBenefitDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2581341628761698516L;
+	private static final long serialVersionUID = 2167491141585632151L;
 
 	/** 
 	 * 权益删除结果；true成功，false失败

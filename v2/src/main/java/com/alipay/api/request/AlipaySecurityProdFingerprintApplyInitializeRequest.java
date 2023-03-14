@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.fingerprint.apply.initialize request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:45:45
+ * @since 1.0, 2023-03-12 22:22:30
  */
 public class AlipaySecurityProdFingerprintApplyInitializeRequest implements AlipayRequest<AlipaySecurityProdFingerprintApplyInitializeResponse> {
 

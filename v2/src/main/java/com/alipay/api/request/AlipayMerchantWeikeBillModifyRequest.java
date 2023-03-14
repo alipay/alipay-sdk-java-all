@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.weike.bill.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:05:14
+ * @since 1.0, 2023-03-12 20:54:04
  */
 public class AlipayMerchantWeikeBillModifyRequest implements AlipayRequest<AlipayMerchantWeikeBillModifyResponse> {
 

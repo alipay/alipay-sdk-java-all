@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.enterpriseexctrl.employertitle.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:11:38
+ * @since 1.0, 2023-03-13 02:36:39
  */
 public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1691366844146449189L;
+	private static final long serialVersionUID = 6734728725288346345L;
 
 	/** 
 	 * 返回码

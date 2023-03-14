@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * idType测试复杂结构
  *
  * @author auto create
- * @since 1.0, 2023-03-02 18:18:40
+ * @since 1.0, 2023-03-07 19:19:22
  */
 public class IdTypeTestComplexParam extends AlipayObject {
 
-	private static final long serialVersionUID = 5331916753628297359L;
+	private static final long serialVersionUID = 5581991252365728674L;
 
 	/**
 	 * idType
@@ -53,6 +53,44 @@ public class IdTypeTestComplexParam extends AlipayObject {
 	@ApiListField("b_user_id_list")
 	@ApiField("string")
 	private List<String> bUserIdList;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_a_id_type")
+	private String expectAIdType;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_a_open_id")
+	private String expectAOpenId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_a_user_id")
+	private String expectAUserId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_b_id_type_list")
+	private String expectBIdTypeList;
+
+	/**
+	 * 1
+	 */
+	@ApiListField("expect_b_open_id_list")
+	@ApiField("string")
+	private List<String> expectBOpenIdList;
+
+	/**
+	 * 1
+	 */
+	@ApiListField("expect_b_user_id_list")
+	@ApiField("string")
+	private List<String> expectBUserIdList;
 
 	public String getaIdType() {
 		return this.aIdType;
@@ -94,6 +132,48 @@ public class IdTypeTestComplexParam extends AlipayObject {
 	}
 	public void setbUserIdList(List<String> bUserIdList) {
 		this.bUserIdList = bUserIdList;
+	}
+
+	public String getExpectAIdType() {
+		return this.expectAIdType;
+	}
+	public void setExpectAIdType(String expectAIdType) {
+		this.expectAIdType = expectAIdType;
+	}
+
+	public String getExpectAOpenId() {
+		return this.expectAOpenId;
+	}
+	public void setExpectAOpenId(String expectAOpenId) {
+		this.expectAOpenId = expectAOpenId;
+	}
+
+	public String getExpectAUserId() {
+		return this.expectAUserId;
+	}
+	public void setExpectAUserId(String expectAUserId) {
+		this.expectAUserId = expectAUserId;
+	}
+
+	public String getExpectBIdTypeList() {
+		return this.expectBIdTypeList;
+	}
+	public void setExpectBIdTypeList(String expectBIdTypeList) {
+		this.expectBIdTypeList = expectBIdTypeList;
+	}
+
+	public List<String> getExpectBOpenIdList() {
+		return this.expectBOpenIdList;
+	}
+	public void setExpectBOpenIdList(List<String> expectBOpenIdList) {
+		this.expectBOpenIdList = expectBOpenIdList;
+	}
+
+	public List<String> getExpectBUserIdList() {
+		return this.expectBUserIdList;
+	}
+	public void setExpectBUserIdList(List<String> expectBUserIdList) {
+		this.expectBUserIdList = expectBUserIdList;
 	}
 
 }

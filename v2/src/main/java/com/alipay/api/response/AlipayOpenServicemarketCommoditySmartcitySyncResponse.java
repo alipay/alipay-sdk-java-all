@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.servicemarket.commodity.smartcity.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:06:16
+ * @since 1.0, 2023-03-12 22:00:13
  */
 public class AlipayOpenServicemarketCommoditySmartcitySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3565975122681358375L;
+	private static final long serialVersionUID = 2833443187472885444L;
 
 	
 

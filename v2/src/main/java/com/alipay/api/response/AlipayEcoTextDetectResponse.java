@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.text.detect response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:34:59
+ * @since 1.0, 2023-03-13 02:58:40
  */
 public class AlipayEcoTextDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8152232854575419235L;
+	private static final long serialVersionUID = 5126488734434696724L;
 
 	/** 
 	 * 检测结果

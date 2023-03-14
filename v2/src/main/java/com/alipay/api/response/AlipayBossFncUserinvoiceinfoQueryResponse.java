@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.userinvoiceinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:01:17
+ * @since 1.0, 2023-03-12 17:03:18
  */
 public class AlipayBossFncUserinvoiceinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1157793366178967389L;
+	private static final long serialVersionUID = 4282514515561637635L;
 
 	/** 
 	 * 查询返回结果：开票资料

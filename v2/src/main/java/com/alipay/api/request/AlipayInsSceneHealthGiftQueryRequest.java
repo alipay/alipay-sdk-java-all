@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.health.gift.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:41:41
+ * @since 1.0, 2023-03-13 03:36:42
  */
 public class AlipayInsSceneHealthGiftQueryRequest implements AlipayRequest<AlipayInsSceneHealthGiftQueryResponse> {
 

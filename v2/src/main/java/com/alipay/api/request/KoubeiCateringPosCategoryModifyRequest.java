@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.pos.category.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:34:59
+ * @since 1.0, 2023-03-13 07:18:16
  */
 public class KoubeiCateringPosCategoryModifyRequest implements AlipayRequest<KoubeiCateringPosCategoryModifyResponse> {
 

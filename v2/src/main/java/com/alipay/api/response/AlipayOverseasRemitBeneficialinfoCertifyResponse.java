@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.remit.beneficialinfo.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:15:47
+ * @since 1.0, 2023-03-12 22:04:20
  */
 public class AlipayOverseasRemitBeneficialinfoCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7341346111391748181L;
+	private static final long serialVersionUID = 5142592191269215136L;
 
 	/** 
 	 * 是否有默认收款卡号

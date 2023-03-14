@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alios.open.auto.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 20:26:40
+ * @since 1.0, 2023-03-12 16:46:40
  */
 public class AliosOpenAutoInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4619279868234524687L;
+	private static final long serialVersionUID = 1334366785598374544L;
 
 	/** 
 	 * 发动机号

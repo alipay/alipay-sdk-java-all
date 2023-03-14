@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.applycompetition.works.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:23:04
+ * @since 1.0, 2023-03-13 01:29:05
  */
 public class AlipayCommerceEducateApplycompetitionWorksSyncRequest implements AlipayRequest<AlipayCommerceEducateApplycompetitionWorksSyncResponse> {
 

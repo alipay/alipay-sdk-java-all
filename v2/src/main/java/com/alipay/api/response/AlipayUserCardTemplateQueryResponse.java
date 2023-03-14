@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.card.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:51:44
+ * @since 1.0, 2023-03-12 23:06:45
  */
 public class AlipayUserCardTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6457829235574634695L;
+	private static final long serialVersionUID = 8729311628754621128L;
 
 	/** 
 	 * background_url：在支付宝卡包展示的背景图片地址，通过alipay.offline.material.image.upload接口上传图片资源获取(https://opendocs.alipay.com/open/02qth8)

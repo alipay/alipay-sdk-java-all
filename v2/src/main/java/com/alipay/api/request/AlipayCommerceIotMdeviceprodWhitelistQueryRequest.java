@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.mdeviceprod.whitelist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:22:33
+ * @since 1.0, 2023-03-13 01:43:16
  */
 public class AlipayCommerceIotMdeviceprodWhitelistQueryRequest implements AlipayRequest<AlipayCommerceIotMdeviceprodWhitelistQueryResponse> {
 

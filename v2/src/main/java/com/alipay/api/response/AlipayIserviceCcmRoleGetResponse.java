@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.role.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:31:37
+ * @since 1.0, 2023-03-13 03:40:42
  */
 public class AlipayIserviceCcmRoleGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2694192573238414612L;
+	private static final long serialVersionUID = 3237713148953643762L;
 
 	/** 
 	 * 部门id（即租户实例ID、数据权限ID）

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.renthouse.publicrent.applyschedule.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:45:27
+ * @since 1.0, 2023-03-12 19:26:53
  */
 public class AlipayEcoRenthousePublicrentApplyscheduleSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1528152253642728916L;
+	private static final long serialVersionUID = 1528548156755846717L;
 
 	
 

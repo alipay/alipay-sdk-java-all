@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.retail.wms.outboundorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:16:15
+ * @since 1.0, 2023-03-13 07:37:23
  */
 public class KoubeiRetailWmsOutboundorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4186424144632759314L;
+	private static final long serialVersionUID = 1381212983166971254L;
 
 	/** 
 	 * 出库通知单号

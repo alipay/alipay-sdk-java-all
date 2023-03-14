@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.service.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 18:44:52
+ * @since 1.0, 2023-03-13 03:41:18
  */
 public class AlipayIserviceCcmServiceInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7844915437989139635L;
+	private static final long serialVersionUID = 2184418391816729889L;
 
 	/** 
 	 * spi在ccm中的唯一标识，与biz_code一一对应

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.bill.batch.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 17:53:15
+ * @since 1.0, 2023-03-13 02:47:02
  */
 public class AlipayEcoCplifeBillBatchUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2347328416844917398L;
+	private static final long serialVersionUID = 6131889459296213824L;
 
 	/** 
 	 * 成功导入所有条目集合中的条目，则回传请求中的批次号

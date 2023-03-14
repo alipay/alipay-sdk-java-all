@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.matchuser.label.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 19:00:20
+ * @since 1.0, 2023-03-13 05:26:05
  */
 public class AlipayOpenPublicMatchuserLabelCreateRequest implements AlipayRequest<AlipayOpenPublicMatchuserLabelCreateResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 收单规则
  *
  * @author auto create
- * @since 1.0, 2021-01-25 21:34:54
+ * @since 1.0, 2023-03-07 19:54:35
  */
 public class AuthorizedRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8521366753457477381L;
+	private static final long serialVersionUID = 1757489771611718484L;
 
 	/**
 	 * 授权商户列表

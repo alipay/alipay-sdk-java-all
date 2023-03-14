@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.device.upgradeapp.create request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:05:58
+ * @since 1.0, 2023-03-13 01:42:00
  */
 public class AlipayCommerceIotDeviceUpgradeappCreateRequest implements AlipayRequest<AlipayCommerceIotDeviceUpgradeappCreateResponse> {
 

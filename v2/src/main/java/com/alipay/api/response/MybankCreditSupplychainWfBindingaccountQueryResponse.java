@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.bindingaccount.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:10:59
+ * @since 1.0, 2023-03-13 07:56:17
  */
 public class MybankCreditSupplychainWfBindingaccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1568438772659381885L;
+	private static final long serialVersionUID = 2335626595938661422L;
 
 	/** 
 	 * 支付宝id

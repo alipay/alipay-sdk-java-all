@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotbpaas.operationdata.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:23:38
+ * @since 1.0, 2023-03-12 21:16:58
  */
 public class AlipayOpenIotbpaasOperationdataUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3167422821182885714L;
+	private static final long serialVersionUID = 1714176891121516733L;
 
 	/** 
 	 * 操作是否成功

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.service.miniappnearbypoipage.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:26:41
+ * @since 1.0, 2023-03-12 21:08:41
  */
 public class AlipayOpenAppServiceMiniappnearbypoipageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1781218174744156974L;
+	private static final long serialVersionUID = 4838898269759944921L;
 
 	/** 
 	 * 服务poi信息列表

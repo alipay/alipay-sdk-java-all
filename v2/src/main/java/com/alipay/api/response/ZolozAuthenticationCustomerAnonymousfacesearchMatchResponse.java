@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.anonymousfacesearch.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:01:00
+ * @since 1.0, 2023-03-13 08:23:04
  */
 public class ZolozAuthenticationCustomerAnonymousfacesearchMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7843648322712835334L;
+	private static final long serialVersionUID = 1658574372563792948L;
 
 	/** 
 	 * 搜索到的人脸候选集

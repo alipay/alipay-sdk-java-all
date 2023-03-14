@@ -10,11 +10,67 @@ import com.alipay.api.internal.mapping.ApiListField;
  * idType测试复杂类型
  *
  * @author auto create
- * @since 1.0, 2023-02-15 14:51:09
+ * @since 1.0, 2023-03-07 18:58:09
  */
 public class IdTypeUserDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3526497387345293827L;
+	private static final long serialVersionUID = 7472438215376732137L;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_id_type_1")
+	private String expectIdType1;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_id_type_2")
+	private String expectIdType2;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_id_type_3")
+	private String expectIdType3;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_list_string_open_id")
+	private String expectListStringOpenId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_list_string_user_id")
+	private String expectListStringUserId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_open_id")
+	private String expectOpenId;
+
+	/**
+	 * 1
+	 */
+	@ApiListField("expect_open_id_list")
+	@ApiField("string")
+	private List<String> expectOpenIdList;
+
+	/**
+	 * 1
+	 */
+	@ApiField("expect_user_id")
+	private String expectUserId;
+
+	/**
+	 * 1
+	 */
+	@ApiListField("expect_user_id_list")
+	@ApiField("string")
+	private List<String> expectUserIdList;
 
 	/**
 	 * idType
@@ -71,6 +127,69 @@ public class IdTypeUserDetail extends AlipayObject {
 	@ApiListField("user_id_list")
 	@ApiField("string")
 	private List<String> userIdList;
+
+	public String getExpectIdType1() {
+		return this.expectIdType1;
+	}
+	public void setExpectIdType1(String expectIdType1) {
+		this.expectIdType1 = expectIdType1;
+	}
+
+	public String getExpectIdType2() {
+		return this.expectIdType2;
+	}
+	public void setExpectIdType2(String expectIdType2) {
+		this.expectIdType2 = expectIdType2;
+	}
+
+	public String getExpectIdType3() {
+		return this.expectIdType3;
+	}
+	public void setExpectIdType3(String expectIdType3) {
+		this.expectIdType3 = expectIdType3;
+	}
+
+	public String getExpectListStringOpenId() {
+		return this.expectListStringOpenId;
+	}
+	public void setExpectListStringOpenId(String expectListStringOpenId) {
+		this.expectListStringOpenId = expectListStringOpenId;
+	}
+
+	public String getExpectListStringUserId() {
+		return this.expectListStringUserId;
+	}
+	public void setExpectListStringUserId(String expectListStringUserId) {
+		this.expectListStringUserId = expectListStringUserId;
+	}
+
+	public String getExpectOpenId() {
+		return this.expectOpenId;
+	}
+	public void setExpectOpenId(String expectOpenId) {
+		this.expectOpenId = expectOpenId;
+	}
+
+	public List<String> getExpectOpenIdList() {
+		return this.expectOpenIdList;
+	}
+	public void setExpectOpenIdList(List<String> expectOpenIdList) {
+		this.expectOpenIdList = expectOpenIdList;
+	}
+
+	public String getExpectUserId() {
+		return this.expectUserId;
+	}
+	public void setExpectUserId(String expectUserId) {
+		this.expectUserId = expectUserId;
+	}
+
+	public List<String> getExpectUserIdList() {
+		return this.expectUserIdList;
+	}
+	public void setExpectUserIdList(List<String> expectUserIdList) {
+		this.expectUserIdList = expectUserIdList;
+	}
 
 	public String getIdType1() {
 		return this.idType1;

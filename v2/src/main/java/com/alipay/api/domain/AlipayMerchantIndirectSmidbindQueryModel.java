@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取商户意愿确认状态
  *
  * @author auto create
- * @since 1.0, 2022-10-28 11:14:15
+ * @since 1.0, 2023-03-08 17:48:20
  */
 public class AlipayMerchantIndirectSmidbindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5394255271895664182L;
+	private static final long serialVersionUID = 7332524794864512949L;
 
 	/**
 	 * 支付宝商户id

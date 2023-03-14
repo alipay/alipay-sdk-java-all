@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.facepay.bill.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 02:51:38
+ * @since 1.0, 2023-03-12 18:51:39
  */
 public class AlipayEbppFacepayBillCancelRequest implements AlipayRequest<AlipayEbppFacepayBillCancelResponse> {
 

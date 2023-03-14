@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.subcert.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-08 18:03:07
+ * @since 1.0, 2023-03-13 04:16:39
  */
 public class AlipayMarketingCampaignSubcertQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4541762267119577672L;
+	private static final long serialVersionUID = 6762312716122763951L;
 
 	/** 
 	 * 子凭证详细信息

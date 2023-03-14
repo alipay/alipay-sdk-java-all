@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.ampe.miniapp.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:37:09
+ * @since 1.0, 2023-03-13 04:53:36
  */
 public class AlipayOpenMiniAmpeMiniappUnbindRequest implements AlipayRequest<AlipayOpenMiniAmpeMiniappUnbindResponse> {
 

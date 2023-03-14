@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cplife.roominfo.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 23:12:20
+ * @since 1.0, 2023-03-13 02:48:48
  */
 public class AlipayEcoCplifeRoominfoDeleteRequest implements AlipayRequest<AlipayEcoCplifeRoominfoDeleteResponse> {
 

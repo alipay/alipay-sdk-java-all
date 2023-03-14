@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeTicketTicketcodeDelayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8551178116665489775L;
+	private static final long serialVersionUID = 3269179449413885635L;
 
 	/**
 	 * 券码类型。默认INTERNAL_CODE。枚举值如下：

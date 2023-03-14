@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.marketing.mcaplatform.constract.sign request
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 05:31:37
+ * @since 1.0, 2023-03-13 08:01:17
  */
 public class MybankMarketingMcaplatformConstractSignRequest implements AlipayRequest<MybankMarketingMcaplatformConstractSignResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.tfjs.model.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:20:51
+ * @since 1.0, 2023-03-12 23:29:50
  */
 public class AnttechAiCvTfjsModelBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3847178292899831313L;
+	private static final long serialVersionUID = 6468987776861928626L;
 
 	/** 
 	 * jsonString内容，不涉及商户敏感信息

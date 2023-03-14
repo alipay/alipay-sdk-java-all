@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.industry.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:16:20
+ * @since 1.0, 2023-03-13 00:44:31
  */
 public class ZhimaCreditPeIndustryTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8343794116412731296L;
+	private static final long serialVersionUID = 3698764595453554296L;
 
 	/** 
 	 * 交易资金流水号

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.settlement.reverse response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-27 11:14:47
+ * @since 1.0, 2023-03-12 18:19:46
  */
 public class AlipayCommerceTransportEtcSettlementReverseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2326791443379133952L;
+	private static final long serialVersionUID = 2274963354438782383L;
 
 	/** 
 	 * 商户行程单id

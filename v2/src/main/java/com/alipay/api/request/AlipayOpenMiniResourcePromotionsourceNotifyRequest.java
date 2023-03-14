@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.resource.promotionsource.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:43:44
+ * @since 1.0, 2023-03-13 05:13:32
  */
 public class AlipayOpenMiniResourcePromotionsourceNotifyRequest implements AlipayRequest<AlipayOpenMiniResourcePromotionsourceNotifyResponse> {
 

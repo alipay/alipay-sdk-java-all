@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.ols.chatrecord.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 18:58:15
+ * @since 1.0, 2023-03-12 20:09:38
  */
 public class AlipayIserviceCcmOlsChatrecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3845693799297596341L;
+	private static final long serialVersionUID = 4251442497881187324L;
 
 	/** 
 	 * 客服id

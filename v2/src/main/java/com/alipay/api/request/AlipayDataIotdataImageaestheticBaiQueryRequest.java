@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.iotdata.imageaesthetic.bai.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:30:59
+ * @since 1.0, 2023-03-12 18:40:54
  */
 public class AlipayDataIotdataImageaestheticBaiQueryRequest implements AlipayRequest<AlipayDataIotdataImageaestheticBaiQueryResponse> {
 

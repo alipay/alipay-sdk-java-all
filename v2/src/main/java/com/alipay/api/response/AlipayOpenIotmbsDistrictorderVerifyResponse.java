@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.districtorder.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-03 15:21:38
+ * @since 1.0, 2023-03-12 21:26:39
  */
 public class AlipayOpenIotmbsDistrictorderVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1394892683413541583L;
+	private static final long serialVersionUID = 4399321547689722291L;
 
 	
 

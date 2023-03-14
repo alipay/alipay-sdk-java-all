@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.fliggy.authority.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:05:35
+ * @since 1.0, 2023-03-12 22:08:23
  */
 public class AlipayOverseasTravelFliggyAuthorityQueryRequest implements AlipayRequest<AlipayOverseasTravelFliggyAuthorityQueryResponse> {
 

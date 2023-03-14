@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.marketing.crowd.wshop.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:05:07
+ * @since 1.0, 2023-03-12 23:27:15
  */
 public class AntfortuneMarketingCrowdWshopMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2491721893139847365L;
+	private static final long serialVersionUID = 4841551257955316587L;
 
 	/** 
 	 * 用户是否匹配人群，枚举值：true/false

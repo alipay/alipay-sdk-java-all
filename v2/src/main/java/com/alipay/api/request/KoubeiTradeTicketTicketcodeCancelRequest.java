@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.trade.ticket.ticketcode.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 19:06:55
+ * @since 1.0, 2023-03-13 07:43:04
  */
 public class KoubeiTradeTicketTicketcodeCancelRequest implements AlipayRequest<KoubeiTradeTicketTicketcodeCancelResponse> {
 

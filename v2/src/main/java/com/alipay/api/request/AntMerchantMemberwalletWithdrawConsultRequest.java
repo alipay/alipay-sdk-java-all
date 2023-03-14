@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.memberwallet.withdraw.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 19:30:42
+ * @since 1.0, 2023-03-12 23:24:40
  */
 public class AntMerchantMemberwalletWithdrawConsultRequest implements AlipayRequest<AntMerchantMemberwalletWithdrawConsultResponse> {
 

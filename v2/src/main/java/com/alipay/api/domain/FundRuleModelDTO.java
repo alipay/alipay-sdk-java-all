@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出资规则模型
  *
  * @author auto create
- * @since 1.0, 2023-02-22 16:46:25
+ * @since 1.0, 2023-03-10 11:02:35
  */
 public class FundRuleModelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4732173392955912491L;
+	private static final long serialVersionUID = 3766542462756345229L;
 
 	/**
 	 * 出资协议号，由出资协议创建时获取

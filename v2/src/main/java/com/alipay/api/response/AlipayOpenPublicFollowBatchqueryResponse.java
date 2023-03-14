@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.follow.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:07:17
+ * @since 1.0, 2023-03-13 05:26:42
  */
 public class AlipayOpenPublicFollowBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4426351396756187798L;
+	private static final long serialVersionUID = 1774499967354632692L;
 
 	/** 
 	 * 本次调用获取的userId个数，最大值为10000

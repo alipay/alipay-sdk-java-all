@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.auth.resauth.check request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:13:57
+ * @since 1.0, 2023-03-12 21:12:16
  */
 public class AlipayOpenAuthResauthCheckRequest implements AlipayRequest<AlipayOpenAuthResauthCheckResponse> {
 

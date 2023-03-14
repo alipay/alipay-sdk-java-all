@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.contract.offer.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 19:09:17
+ * @since 1.0, 2023-03-13 00:52:26
  */
 public class ZhimaMerchantContractOfferModifyRequest implements AlipayRequest<ZhimaMerchantContractOfferModifyResponse> {
 

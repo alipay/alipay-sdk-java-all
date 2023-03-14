@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.org.identity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 23:56:44
+ * @since 1.0, 2023-03-12 23:06:46
  */
 public class AlipayUserCertifyOrgIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2137589855381421622L;
+	private static final long serialVersionUID = 7112885726952156536L;
 
 	/** 
 	 * 企业主体证件上记载的地址(详细地址)

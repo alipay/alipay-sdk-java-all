@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.apprecommend.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 23:35:54
+ * @since 1.0, 2023-03-12 23:10:58
  */
 public class AntMerchantExpandApprecommendAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3756141258553119231L;
+	private static final long serialVersionUID = 4869916566994148998L;
 
 	/** 
 	 * 账号列表

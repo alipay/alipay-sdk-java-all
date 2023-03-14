@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.sms.send request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:32:19
+ * @since 1.0, 2023-03-12 19:28:05
  */
 public class AlipayEcoSmsSendRequest implements AlipayRequest<AlipayEcoSmsSendResponse> {
 

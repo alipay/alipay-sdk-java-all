@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 余额宝资产订单查询
  *
  * @author auto create
- * @since 1.0, 2023-03-01 16:11:46
+ * @since 1.0, 2023-03-10 16:40:49
  */
 public class AntfortuneYebAssetOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3299327572857167943L;
+	private static final long serialVersionUID = 1454175877675577924L;
+
+	/**
+	 * 用户UserId在应用AppId下的唯一用户标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 外部业务号
@@ -24,6 +30,13 @@ public class AntfortuneYebAssetOrderQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOutBizNo() {
 		return this.outBizNo;

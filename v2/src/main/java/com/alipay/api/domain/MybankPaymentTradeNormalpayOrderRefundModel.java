@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 普通支付订单退款
  *
  * @author auto create
- * @since 1.0, 2021-04-13 20:31:24
+ * @since 1.0, 2023-03-08 17:32:35
  */
 public class MybankPaymentTradeNormalpayOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2821583428669567291L;
+	private static final long serialVersionUID = 2519361165573133319L;
 
 	/**
 	 * 金额，单位：分

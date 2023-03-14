@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.onecodepass.order.close request
  * 
  * @author auto create
- * @since 1.0, 2023-02-24 10:16:38
+ * @since 1.0, 2023-03-13 02:31:39
  */
 public class AlipayEbppIndustryOnecodepassOrderCloseRequest implements AlipayRequest<AlipayEbppIndustryOnecodepassOrderCloseResponse> {
 

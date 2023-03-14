@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.applogo.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:19:30
+ * @since 1.0, 2023-03-13 05:01:32
  */
 public class AlipayOpenMiniInnerbaseinfoApplogoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8741264315372927139L;
+	private static final long serialVersionUID = 8867838861925252616L;
 
 	/** 
 	 * 上传图片结果地址。

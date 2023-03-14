@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.itemstatus.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:18:47
+ * @since 1.0, 2023-03-13 01:21:00
  */
 public class AlipayCommerceAcommunicationItemstatusNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6662967155576691235L;
+	private static final long serialVersionUID = 3585438272884541567L;
 
 	
 

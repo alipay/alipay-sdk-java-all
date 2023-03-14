@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.cloudbus.available.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:29:15
+ * @since 1.0, 2023-03-12 18:28:35
  */
 public class AlipayDataAiserviceCloudbusAvailableQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7381329567521328852L;
+	private static final long serialVersionUID = 5643993817718795266L;
 
 	/** 
 	 * 城市可用时间和用户geohash可用额度

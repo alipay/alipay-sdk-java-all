@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.pubkey.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:56:53
+ * @since 1.0, 2023-03-12 18:47:09
  */
 public class AlipayEbppCommunityPubkeyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8238973922997924998L;
+	private static final long serialVersionUID = 6687433771561326613L;
 
 	/** 
 	 * 公钥json的md5值，若与上次相同则无需更新到机具

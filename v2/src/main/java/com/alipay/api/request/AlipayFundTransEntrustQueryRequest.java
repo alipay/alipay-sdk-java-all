@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.entrust.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:57:31
+ * @since 1.0, 2023-03-13 03:20:07
  */
 public class AlipayFundTransEntrustQueryRequest implements AlipayRequest<AlipayFundTransEntrustQueryResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gffund.standardvoucher.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:51:46
+ * @since 1.0, 2023-03-12 16:56:23
  */
 public class AlipayBossFncGffundStandardvoucherBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7127687253168956496L;
+	private static final long serialVersionUID = 1624579523573782287L;
 
 	/** 
 	 * 当前页码

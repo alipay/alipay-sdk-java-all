@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联营计划-报名参与者
  *
  * @author auto create
- * @since 1.0, 2022-12-30 11:34:31
+ * @since 1.0, 2023-03-08 14:57:05
  */
 public class BsEnrollParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 6777633444946528395L;
+	private static final long serialVersionUID = 7236196668217731146L;
 
 	/**
 	 * 调用方自定义的外部商户编号，可以为空

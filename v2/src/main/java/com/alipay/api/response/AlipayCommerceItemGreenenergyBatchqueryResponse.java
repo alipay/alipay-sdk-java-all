@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.item.greenenergy.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 09:11:40
+ * @since 1.0, 2023-03-12 18:01:41
  */
 public class AlipayCommerceItemGreenenergyBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4713444183749112132L;
+	private static final long serialVersionUID = 2556893614579188784L;
 
 	/** 
 	 * 能量领取流水

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.pcreditamount.queryprocessor.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:13:41
+ * @since 1.0, 2023-03-12 22:16:31
  */
 public class AlipayPcreditHuabeiPcreditamountQueryprocessorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1791414252788293346L;
+	private static final long serialVersionUID = 7423442955979627229L;
 
 	/** 
 	 * 报错原因

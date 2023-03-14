@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条形码信息
  *
  * @author auto create
- * @since 1.0, 2023-03-03 14:23:54
+ * @since 1.0, 2023-03-13 10:28:29
  */
 public class BarcodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6371931793719267992L;
+	private static final long serialVersionUID = 1489286398534744259L;
 
 	/**
 	 * 条形码数字字符串

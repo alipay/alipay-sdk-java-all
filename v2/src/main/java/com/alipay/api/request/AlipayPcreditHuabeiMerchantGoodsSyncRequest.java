@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.merchant.goods.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:37:20
+ * @since 1.0, 2023-03-13 05:50:40
  */
 public class AlipayPcreditHuabeiMerchantGoodsSyncRequest implements AlipayRequest<AlipayPcreditHuabeiMerchantGoodsSyncResponse> {
 

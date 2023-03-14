@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.user.benefit.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:46:42
+ * @since 1.0, 2023-03-12 18:11:46
  */
 public class AlipayCommerceOperationUserBenefitBatchqueryRequest implements AlipayRequest<AlipayCommerceOperationUserBenefitBatchqueryResponse> {
 

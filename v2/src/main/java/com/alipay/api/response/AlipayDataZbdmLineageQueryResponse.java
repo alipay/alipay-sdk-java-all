@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.zbdm.lineage.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:48:52
+ * @since 1.0, 2023-03-13 02:23:42
  */
 public class AlipayDataZbdmLineageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5823329921197457388L;
+	private static final long serialVersionUID = 4536154799988895237L;
 
 	/** 
 	 * 参数名：返回血缘探索的边集合

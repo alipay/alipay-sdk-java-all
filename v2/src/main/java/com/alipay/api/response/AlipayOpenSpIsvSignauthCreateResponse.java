@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.isv.signauth.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 19:19:46
+ * @since 1.0, 2023-03-13 05:37:27
  */
 public class AlipayOpenSpIsvSignauthCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6544821949523763373L;
+	private static final long serialVersionUID = 8861243318698232492L;
 
 	/** 
 	 * 签约授权一体化主单ID

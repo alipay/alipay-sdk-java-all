@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.isv.bill.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 19:11:33
+ * @since 1.0, 2023-03-12 22:02:00
  */
 public class AlipayOpenSpIsvBillSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1199199871343219537L;
+	private static final long serialVersionUID = 1756971367445222487L;
 
 	/** 
 	 * 返回true或者flase，ture代表账单回传成功，false表示账单回传失败

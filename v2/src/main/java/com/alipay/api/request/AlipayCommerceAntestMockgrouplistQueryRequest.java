@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.antest.mockgrouplist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:18:59
+ * @since 1.0, 2023-03-13 01:21:44
  */
 public class AlipayCommerceAntestMockgrouplistQueryRequest implements AlipayRequest<AlipayCommerceAntestMockgrouplistQueryResponse> {
 

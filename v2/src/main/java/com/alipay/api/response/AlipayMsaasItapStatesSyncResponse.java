@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.itap.states.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:39:49
+ * @since 1.0, 2023-03-13 04:25:12
  */
 public class AlipayMsaasItapStatesSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3362463476553165152L;
+	private static final long serialVersionUID = 6847358855532681949L;
 
 	/** 
 	 * Itap统一放回结果模型

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 贷记资产用户模型
  *
  * @author auto create
- * @since 1.0, 2022-11-10 17:23:08
+ * @since 1.0, 2023-03-13 13:48:41
  */
 public class CreditPayUserVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4725379372372458624L;
+	private static final long serialVersionUID = 5534423961135322725L;
+
+	/**
+	 * 开放id
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝UID，可选
@@ -58,8 +64,21 @@ ps. cert_no一定不存在
 	/**
 	 * 可选，如果站点用户ID存在，site一定存在
 	 */
+	@ApiField("site_open_id")
+	private String siteOpenId;
+
+	/**
+	 * 可选，如果站点用户ID存在，site一定存在
+	 */
 	@ApiField("site_user_id")
 	private String siteUserId;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;
@@ -101,6 +120,13 @@ ps. cert_no一定不存在
 	}
 	public void setSite(String site) {
 		this.site = site;
+	}
+
+	public String getSiteOpenId() {
+		return this.siteOpenId;
+	}
+	public void setSiteOpenId(String siteOpenId) {
+		this.siteOpenId = siteOpenId;
 	}
 
 	public String getSiteUserId() {

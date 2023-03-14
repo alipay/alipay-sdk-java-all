@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.closeloop.data.upload request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:55:12
+ * @since 1.0, 2023-03-13 00:51:51
  */
 public class ZhimaMerchantCloseloopDataUploadRequest implements AlipayUploadRequest<ZhimaMerchantCloseloopDataUploadResponse> {
 

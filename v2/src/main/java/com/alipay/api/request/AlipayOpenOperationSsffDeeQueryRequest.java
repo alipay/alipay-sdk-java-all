@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.ssff.dee.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:15:36
+ * @since 1.0, 2023-03-13 05:21:43
  */
 public class AlipayOpenOperationSsffDeeQueryRequest implements AlipayRequest<AlipayOpenOperationSsffDeeQueryResponse> {
 

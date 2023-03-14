@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.open.preorder.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:18:29
+ * @since 1.0, 2023-03-13 05:39:13
  */
 public class AlipayOverseasOpenPreorderCancelRequest implements AlipayRequest<AlipayOverseasOpenPreorderCancelResponse> {
 

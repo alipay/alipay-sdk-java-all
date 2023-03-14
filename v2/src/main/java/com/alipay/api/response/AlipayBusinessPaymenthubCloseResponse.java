@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.paymenthub.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:04:41
+ * @since 1.0, 2023-03-13 01:19:06
  */
 public class AlipayBusinessPaymenthubCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3216849528763381675L;
+	private static final long serialVersionUID = 8584396512774458477L;
 
 	/** 
 	 * 聚合支付的支付渠道，支付宝分配。

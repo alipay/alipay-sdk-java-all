@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.facepayskin.receive response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 02:08:20
+ * @since 1.0, 2023-03-12 18:16:46
  */
 public class AlipayCommerceSportsFacepayskinReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7589456341542849135L;
+	private static final long serialVersionUID = 1687611687926111837L;
 
 	/** 
 	 * 用户付款码皮肤信息

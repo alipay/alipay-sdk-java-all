@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文体中心订单数据同步
  *
  * @author auto create
- * @since 1.0, 2022-12-09 17:05:17
+ * @since 1.0, 2023-03-13 19:53:54
  */
 public class AlipayCommerceSportsVenueOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8775945771617163918L;
+	private static final long serialVersionUID = 4396873763875189556L;
 
 	/**
 	 * 订单创建时间

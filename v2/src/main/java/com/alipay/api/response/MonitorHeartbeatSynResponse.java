@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: monitor.heartbeat.syn response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:31:18
+ * @since 1.0, 2023-03-14 09:59:49
  */
 public class MonitorHeartbeatSynResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4349643747735988646L;
+	private static final long serialVersionUID = 5848812632416178189L;
 
 	/** 
 	 * 商户pid

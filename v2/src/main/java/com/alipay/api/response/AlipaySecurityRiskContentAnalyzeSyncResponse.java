@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.content.analyze.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 09:31:39
+ * @since 1.0, 2023-03-13 06:01:41
  */
 public class AlipaySecurityRiskContentAnalyzeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3741659125449982746L;
+	private static final long serialVersionUID = 7595881568561427191L;
 
 	/** 
 	 * 唯一请求ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝收藏足迹上报接口
  *
  * @author auto create
- * @since 1.0, 2023-02-13 14:53:35
+ * @since 1.0, 2023-03-09 21:46:53
  */
 public class AlipaySocialBaseMcommentFootprintSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1711616699151722287L;
+	private static final long serialVersionUID = 5745691691727466127L;
 
 	/**
 	 * 足迹服务分配的业务码
@@ -48,6 +48,12 @@ public class AlipaySocialBaseMcommentFootprintSendModel extends AlipayObject {
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 用于openId的改造，将openId转成支付宝内部的userId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 上报数据来源
@@ -101,6 +107,13 @@ public class AlipaySocialBaseMcommentFootprintSendModel extends AlipayObject {
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSource() {

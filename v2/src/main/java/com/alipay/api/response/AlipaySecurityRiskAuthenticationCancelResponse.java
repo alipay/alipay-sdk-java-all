@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.authentication.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:34:22
+ * @since 1.0, 2023-03-13 05:59:02
  */
 public class AlipaySecurityRiskAuthenticationCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8497658248478479289L;
+	private static final long serialVersionUID = 7393113873527728181L;
 
 	/** 
 	 * 返回取消结果

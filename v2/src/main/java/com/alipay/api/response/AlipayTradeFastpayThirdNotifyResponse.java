@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.third.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:31:55
+ * @since 1.0, 2023-03-12 22:44:33
  */
 public class AlipayTradeFastpayThirdNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6187819661471575119L;
+	private static final long serialVersionUID = 3889361574433884913L;
 
 	
 

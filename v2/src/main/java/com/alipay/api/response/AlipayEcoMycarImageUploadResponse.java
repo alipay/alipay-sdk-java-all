@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.image.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 03:26:02
+ * @since 1.0, 2023-03-12 19:18:57
  */
 public class AlipayEcoMycarImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3667598626273291598L;
+	private static final long serialVersionUID = 7478928826839133676L;
 
 	/** 
 	 * 图片Id

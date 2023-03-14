@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.policy.links.auth request
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 23:39:24
+ * @since 1.0, 2023-03-13 03:37:25
  */
 public class AlipayInsScenePolicyLinksAuthRequest implements AlipayRequest<AlipayInsScenePolicyLinksAuthResponse> {
 

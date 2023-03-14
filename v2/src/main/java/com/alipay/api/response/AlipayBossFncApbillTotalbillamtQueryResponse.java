@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.apbill.totalbillamt.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:10:43
+ * @since 1.0, 2023-03-12 16:54:08
  */
 public class AlipayBossFncApbillTotalbillamtQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8788338774599825568L;
+	private static final long serialVersionUID = 6653897324437824277L;
 
 	/** 
 	 * 汇总调整金额

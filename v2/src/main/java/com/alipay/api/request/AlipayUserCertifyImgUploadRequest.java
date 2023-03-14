@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certify.img.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:50:06
+ * @since 1.0, 2023-03-12 22:58:37
  */
 public class AlipayUserCertifyImgUploadRequest implements AlipayRequest<AlipayUserCertifyImgUploadResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.lottery.region.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:52:05
+ * @since 1.0, 2023-03-13 04:51:26
  */
 public class AlipayOpenLotteryRegionGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7175847599721467399L;
+	private static final long serialVersionUID = 7759771667571435241L;
 
 	/** 
 	 * 入驻商家专区信息

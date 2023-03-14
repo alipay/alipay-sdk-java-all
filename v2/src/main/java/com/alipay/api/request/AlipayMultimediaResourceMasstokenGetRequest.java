@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.multimedia.resource.masstoken.get request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:20:35
+ * @since 1.0, 2023-03-13 04:28:30
  */
 public class AlipayMultimediaResourceMasstokenGetRequest implements AlipayRequest<AlipayMultimediaResourceMasstokenGetResponse> {
 

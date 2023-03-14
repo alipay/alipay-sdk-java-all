@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.royalty.relation.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-13 16:24:07
+ * @since 1.0, 2023-03-13 06:26:44
  */
 public class AlipayTradeRoyaltyRelationBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6577175734374458466L;
+	private static final long serialVersionUID = 2715282952555374787L;
 
 	/** 
 	 * SUCCESS：分账关系绑定成功；

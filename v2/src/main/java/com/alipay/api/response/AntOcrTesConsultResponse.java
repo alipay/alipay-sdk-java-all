@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.ocr.tes.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-13 21:13:01
+ * @since 1.0, 2023-03-13 06:48:14
  */
 public class AntOcrTesConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4567818996652647694L;
+	private static final long serialVersionUID = 3843284711683455531L;
 
 	/** 
 	 * q

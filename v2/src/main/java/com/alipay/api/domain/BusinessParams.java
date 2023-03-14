@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务信息参数
  *
  * @author auto create
- * @since 1.0, 2022-12-15 15:39:01
+ * @since 1.0, 2023-03-13 17:17:04
  */
 public class BusinessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6675421416392558766L;
+	private static final long serialVersionUID = 3443544386269331767L;
 
 	/**
 	 * 实际订单时间，在乘车码场景，传入的是用户刷码乘车时间
@@ -48,6 +48,14 @@ public class BusinessParams extends AlipayObject {
 	 */
 	@ApiField("good_taxes")
 	private String goodTaxes;
+
+	/**
+	 * 商户端创建订单的 IP，须上传正确的用户端外网 IP，支持 ipv4/ipv6 格式；
+mc_create_trade_ip和mcCreateTradeIp（旧）参数描述相同，首选mc_create_trade_ip入参，请勿重复入参；
+如已入参mcCreateTradeIp（旧），无需新增入参mc_create_trade_ip。
+	 */
+	@ApiField("mc_create_trade_ip")
+	private String mcCreateTradeIp;
 
 	public String getActualOrderTime() {
 		return this.actualOrderTime;
@@ -89,6 +97,13 @@ public class BusinessParams extends AlipayObject {
 	}
 	public void setGoodTaxes(String goodTaxes) {
 		this.goodTaxes = goodTaxes;
+	}
+
+	public String getMcCreateTradeIp() {
+		return this.mcCreateTradeIp;
+	}
+	public void setMcCreateTradeIp(String mcCreateTradeIp) {
+		this.mcCreateTradeIp = mcCreateTradeIp;
 	}
 
 }

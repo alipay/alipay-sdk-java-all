@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.content.contentstatus.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:54:09
+ * @since 1.0, 2023-03-13 07:23:55
  */
 public class KoubeiContentContentstatusModifyRequest implements AlipayRequest<KoubeiContentContentstatusModifyResponse> {
 

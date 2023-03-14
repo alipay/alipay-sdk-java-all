@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁保险服务平台服务合约有效性查询接口
  *
  * @author auto create
- * @since 1.0, 2020-11-26 14:03:26
+ * @since 1.0, 2023-03-08 12:58:44
  */
 public class AlipayInsSceneInsserviceprodContractCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7798231682966521853L;
+	private static final long serialVersionUID = 2465765698552788383L;
 
 	/**
 	 * 支付宝的服务合约编号

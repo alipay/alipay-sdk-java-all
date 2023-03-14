@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.benefit.single.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:51:54
+ * @since 1.0, 2023-03-13 01:49:46
  */
 public class AlipayCommerceOperationBenefitSingleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8533952791395451953L;
+	private static final long serialVersionUID = 1384165969783627412L;
 
 	/** 
 	 * 支付宝内券活动对象

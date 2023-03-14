@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.sportshealth.account.freeze request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 09:11:41
+ * @since 1.0, 2023-03-13 06:41:44
  */
 public class AlipayUserSportshealthAccountFreezeRequest implements AlipayRequest<AlipayUserSportshealthAccountFreezeResponse> {
 

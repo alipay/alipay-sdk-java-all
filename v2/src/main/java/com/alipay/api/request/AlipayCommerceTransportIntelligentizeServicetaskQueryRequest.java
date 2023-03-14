@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.intelligentize.servicetask.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 18:36:21
+ * @since 1.0, 2023-03-13 02:01:57
  */
 public class AlipayCommerceTransportIntelligentizeServicetaskQueryRequest implements AlipayRequest<AlipayCommerceTransportIntelligentizeServicetaskQueryResponse> {
 

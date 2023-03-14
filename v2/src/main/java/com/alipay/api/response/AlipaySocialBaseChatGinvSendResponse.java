@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.chat.ginv.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:25:42
+ * @since 1.0, 2023-03-13 06:02:56
  */
 public class AlipaySocialBaseChatGinvSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4128933928889141761L;
+	private static final long serialVersionUID = 4842219474756391712L;
 
 	/** 
 	 * 结果提示信息

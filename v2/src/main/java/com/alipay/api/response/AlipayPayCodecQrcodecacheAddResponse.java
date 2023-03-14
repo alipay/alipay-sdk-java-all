@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.codec.qrcodecache.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:08:51
+ * @since 1.0, 2023-03-12 22:13:01
  */
 public class AlipayPayCodecQrcodecacheAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8727727359578695193L;
+	private static final long serialVersionUID = 2311386622915756674L;
 
 	/** 
 	 * true或者false

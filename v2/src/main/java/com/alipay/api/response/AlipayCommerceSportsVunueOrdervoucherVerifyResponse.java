@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.vunue.ordervoucher.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:11:21
+ * @since 1.0, 2023-03-13 19:54:03
  */
 public class AlipayCommerceSportsVunueOrdervoucherVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6624643259391799556L;
+	private static final long serialVersionUID = 3822288265296494338L;
 
 	
 

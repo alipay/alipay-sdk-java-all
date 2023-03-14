@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量初始化交互式风控产品
  *
  * @author auto create
- * @since 1.0, 2022-10-28 10:38:08
+ * @since 1.0, 2023-03-13 19:51:14
  */
 public class AlipaySecurityProdInteractiveprodBatchInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2422558554262265462L;
+	private static final long serialVersionUID = 7496658587136711931L;
 
 	/**
 	 * 全局唯一id，标识一次任务

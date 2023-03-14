@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.guarantee.tradedrive.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:25:38
+ * @since 1.0, 2023-03-13 07:44:55
  */
 public class MybankCreditGuaranteeTradedrivePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2367597363758338455L;
+	private static final long serialVersionUID = 1114561769674461476L;
 
 	/** 
 	 * 调用成功则返回调用业务编码

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.rainscore.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 18:00:57
+ * @since 1.0, 2023-03-13 06:00:20
  */
 public class AlipaySecurityRiskRainscoreQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2248566661438126247L;
+	private static final long serialVersionUID = 1129885985226467673L;
 
 	/** 
 	 * 风险解释，即本次风险评分中TOP 3风险因子的代码、名称、解释、风险倍数（JSON格式）。详情请参考<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=214&articleId=104588&docType=1">《风险解释与身份标签》</a>

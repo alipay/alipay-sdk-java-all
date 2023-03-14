@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ExpenseCtrRuleGroupInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5337399512356764211L;
+	private static final long serialVersionUID = 7792742746479948837L;
 
 	/**
 	 * 费控条件列表

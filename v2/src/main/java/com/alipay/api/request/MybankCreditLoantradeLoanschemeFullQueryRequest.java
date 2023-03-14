@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loantrade.loanscheme.full.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-02 20:36:38
+ * @since 1.0, 2023-03-13 00:26:40
  */
 public class MybankCreditLoantradeLoanschemeFullQueryRequest implements AlipayRequest<MybankCreditLoantradeLoanschemeFullQueryResponse> {
 

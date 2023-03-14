@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.complain.government.finish request
  * 
  * @author auto create
- * @since 1.0, 2023-01-12 10:57:16
+ * @since 1.0, 2023-03-12 20:45:42
  */
 public class AlipayMerchantComplainGovernmentFinishRequest implements AlipayRequest<AlipayMerchantComplainGovernmentFinishResponse> {
 

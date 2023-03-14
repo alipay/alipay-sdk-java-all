@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.geofence.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:36:14
+ * @since 1.0, 2023-03-13 01:40:43
  */
 public class AlipayCommerceIotDeviceGeofenceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3598524616272561865L;
+	private static final long serialVersionUID = 6129224351541528573L;
 
 	/** 
 	 * 返回线路上绑定的设备列表

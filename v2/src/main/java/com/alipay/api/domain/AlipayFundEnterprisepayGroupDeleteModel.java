@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付删除账户下群组
  *
  * @author auto create
- * @since 1.0, 2022-06-07 16:32:03
+ * @since 1.0, 2023-03-07 19:53:22
  */
 public class AlipayFundEnterprisepayGroupDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8826116296579578331L;
+	private static final long serialVersionUID = 6175568213325156945L;
 
 	/**
 	 * 企业签约账户ID

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.searchcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:30:42
+ * @since 1.0, 2023-03-12 20:40:00
  */
 public class AlipayMarketingSearchcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1149846134397944148L;
+	private static final long serialVersionUID = 7375334552926851661L;
 
 	/** 
 	 * 搜索码后边拼接的文案

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ad.plan.offline response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:27:14
+ * @since 1.0, 2023-03-13 01:58:37
  */
 public class AlipayCommerceTransportAdPlanOfflineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2365772341117535668L;
+	private static final long serialVersionUID = 5315554289398934396L;
 
 	/** 
 	 * 广告计划下线结果 + 根据广告计划id操作计划下线，下线成功返回true，否则返回false

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付后扣、增消费金
  *
  * @author auto create
- * @since 1.0, 2022-08-15 11:17:46
+ * @since 1.0, 2023-03-09 19:13:16
  */
 public class AlipayOpenIpsponsorConsumegoldModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8619765651925896476L;
+	private static final long serialVersionUID = 4789175378148621782L;
+
+	/**
+	 * 蚂蚁统一会员OPEN ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 用于标识具体扣、增消费金的值
@@ -30,6 +36,13 @@ public class AlipayOpenIpsponsorConsumegoldModifyModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getSceneId() {
 		return this.sceneId;

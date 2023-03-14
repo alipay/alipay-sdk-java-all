@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalop.ucdp.apeexperiment.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:16:06
+ * @since 1.0, 2023-03-13 02:25:10
  */
 public class AlipayDigitalopUcdpApeexperimentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8748921866772644675L;
+	private static final long serialVersionUID = 2683685873718848865L;
 
 	/** 
 	 * 实验信息，包含对照组和算法组的数据

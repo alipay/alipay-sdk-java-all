@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.shop.syncresult.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:40:17
+ * @since 1.0, 2023-03-13 05:44:43
  */
 public class AlipayOverseasTravelShopSyncresultQueryRequest implements AlipayRequest<AlipayOverseasTravelShopSyncresultQueryResponse> {
 

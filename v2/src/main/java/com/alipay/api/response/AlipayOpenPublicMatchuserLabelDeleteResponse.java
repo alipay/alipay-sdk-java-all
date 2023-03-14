@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.matchuser.label.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 18:37:27
+ * @since 1.0, 2023-03-13 05:26:17
  */
 public class AlipayOpenPublicMatchuserLabelDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6322942358679242898L;
+	private static final long serialVersionUID = 8293859235122968347L;
 
 	/** 
 	 * 用户打标失败数量

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.ecmcore.dataarchives.create request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 01:13:57
+ * @since 1.0, 2023-03-13 02:23:53
  */
 public class AlipayDigitalmgmtEcmcoreDataarchivesCreateRequest implements AlipayRequest<AlipayDigitalmgmtEcmcoreDataarchivesCreateResponse> {
 

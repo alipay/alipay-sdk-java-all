@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.printer.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:43:19
+ * @since 1.0, 2023-03-12 18:42:10
  */
 public class AlipayDataPrinterUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4647843397739769443L;
+	private static final long serialVersionUID = 5451721888314616456L;
 
 	/** 
 	 * 状态码

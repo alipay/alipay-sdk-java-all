@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.creditrisk.custlabel.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:45:13
+ * @since 1.0, 2023-03-12 22:13:23
  */
 public class AlipayPcreditCreditriskCustlabelQueryRequest implements AlipayRequest<AlipayPcreditCreditriskCustlabelQueryResponse> {
 

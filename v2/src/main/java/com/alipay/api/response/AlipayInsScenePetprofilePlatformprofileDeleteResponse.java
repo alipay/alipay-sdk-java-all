@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.petprofile.platformprofile.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:53:40
+ * @since 1.0, 2023-03-12 20:05:14
  */
 public class AlipayInsScenePetprofilePlatformprofileDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6116678484637613173L;
+	private static final long serialVersionUID = 2335543747429727195L;
 
 	/** 
 	 * 删除结果，true表示成功，false表示失败

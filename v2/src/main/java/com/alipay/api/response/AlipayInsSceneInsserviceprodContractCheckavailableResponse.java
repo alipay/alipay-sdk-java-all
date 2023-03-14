@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.insserviceprod.contract.checkavailable response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:50:43
+ * @since 1.0, 2023-03-12 20:03:34
  */
 public class AlipayInsSceneInsserviceprodContractCheckavailableResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6549752375816755159L;
+	private static final long serialVersionUID = 3545411448771257775L;
 
 	/** 
 	 * INIT：未生效

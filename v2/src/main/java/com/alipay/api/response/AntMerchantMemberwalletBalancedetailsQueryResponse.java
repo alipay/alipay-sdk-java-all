@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.memberwallet.balancedetails.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 15:26:48
+ * @since 1.0, 2023-03-13 06:47:05
  */
 public class AntMerchantMemberwalletBalancedetailsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2823479449384523977L;
+	private static final long serialVersionUID = 5542281649883218189L;
 
 	/** 
 	 * 余额变更明细

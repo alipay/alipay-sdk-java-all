@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.quota.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:40:42
+ * @since 1.0, 2023-03-13 03:17:45
  */
 public class AlipayFundJointaccountQuotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6478958119591338838L;
+	private static final long serialVersionUID = 3644348383369524436L;
 
 	/** 
 	 * 共同账户ID
@@ -41,6 +41,12 @@ public class AlipayFundJointaccountQuotaQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("member_id")
 	private String memberId;
+
+	/** 
+	 * 员工openId
+	 */
+	@ApiField("member_open_id")
+	private String memberOpenId;
 
 	/** 
 	 * 产品码
@@ -74,6 +80,13 @@ public class AlipayFundJointaccountQuotaQueryResponse extends AlipayResponse {
 	}
 	public String getMemberId( ) {
 		return this.memberId;
+	}
+
+	public void setMemberOpenId(String memberOpenId) {
+		this.memberOpenId = memberOpenId;
+	}
+	public String getMemberOpenId( ) {
+		return this.memberOpenId;
 	}
 
 	public void setProductCode(String productCode) {

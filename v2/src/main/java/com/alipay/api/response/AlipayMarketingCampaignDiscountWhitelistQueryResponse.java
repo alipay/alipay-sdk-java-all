@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.discount.whitelist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 03:19:20
+ * @since 1.0, 2023-03-12 20:28:44
  */
 public class AlipayMarketingCampaignDiscountWhitelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4453496312193161637L;
+	private static final long serialVersionUID = 2367576434432769442L;
 
 	/** 
 	 * 活动id

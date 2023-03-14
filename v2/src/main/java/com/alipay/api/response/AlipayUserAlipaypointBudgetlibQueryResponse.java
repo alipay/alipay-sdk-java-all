@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.alipaypoint.budgetlib.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:44:46
+ * @since 1.0, 2023-03-13 06:17:08
  */
 public class AlipayUserAlipaypointBudgetlibQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4492144185877795366L;
+	private static final long serialVersionUID = 5493246195536115927L;
 
 	/** 
 	 * 集分宝预算库编码

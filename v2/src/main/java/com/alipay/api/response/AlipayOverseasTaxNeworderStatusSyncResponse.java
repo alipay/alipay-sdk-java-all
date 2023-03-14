@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.neworder.status.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-31 18:01:16
+ * @since 1.0, 2023-03-13 05:40:52
  */
 public class AlipayOverseasTaxNeworderStatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8284558532127381558L;
+	private static final long serialVersionUID = 5339539339246473657L;
 
 	/** 
 	 * 纸质退税单号

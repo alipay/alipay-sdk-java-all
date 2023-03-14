@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.advertiser.device.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 23:18:31
+ * @since 1.0, 2023-03-13 01:38:10
  */
 public class AlipayCommerceIotAdvertiserDeviceConsultRequest implements AlipayRequest<AlipayCommerceIotAdvertiserDeviceConsultResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询账户额度详情
  *
  * @author auto create
- * @since 1.0, 2021-03-18 10:44:59
+ * @since 1.0, 2023-03-07 21:41:15
  */
 public class AlipayFundJointaccountQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7453953722897737987L;
+	private static final long serialVersionUID = 4252566933565416364L;
 
 	/**
 	 * 账户ID
@@ -36,6 +36,12 @@ public class AlipayFundJointaccountQuotaQueryModel extends AlipayObject {
 	 */
 	@ApiField("member_id")
 	private String memberId;
+
+	/**
+	 * 员工的openid
+	 */
+	@ApiField("member_open_id")
+	private String memberOpenId;
 
 	/**
 	 * 角色：创建方(CREATOR)、参与方(PARTICIPANT)
@@ -75,6 +81,13 @@ public class AlipayFundJointaccountQuotaQueryModel extends AlipayObject {
 	}
 	public void setMemberId(String memberId) {
 		this.memberId = memberId;
+	}
+
+	public String getMemberOpenId() {
+		return this.memberOpenId;
+	}
+	public void setMemberOpenId(String memberOpenId) {
+		this.memberOpenId = memberOpenId;
 	}
 
 	public String getOperateRole() {

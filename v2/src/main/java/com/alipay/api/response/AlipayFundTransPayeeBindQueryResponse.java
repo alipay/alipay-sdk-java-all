@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.payee.bind.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 18:58:50
+ * @since 1.0, 2023-03-12 19:49:07
  */
 public class AlipayFundTransPayeeBindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5279849729335149362L;
+	private static final long serialVersionUID = 3272621818611931524L;
 
 	/** 
 	 * 是否绑定收款账号。true：已绑定；false：未绑定

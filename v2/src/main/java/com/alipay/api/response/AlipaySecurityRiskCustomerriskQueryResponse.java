@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.customerrisk.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 21:01:41
+ * @since 1.0, 2023-03-12 22:31:41
  */
 public class AlipaySecurityRiskCustomerriskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8886442371633432989L;
+	private static final long serialVersionUID = 8625267424119285641L;
 
 	/** 
 	 * risk_result:风险分析结果，主要有三种类型，分别为是否有风险（has_risk,no_risk)，风险等级（"rank_1"...,"rank_10")，归一化的风险评分（0-100），每一次返回，根据配置的不同，可以返回样的风险类型，也可以返回不同的风险结果类型

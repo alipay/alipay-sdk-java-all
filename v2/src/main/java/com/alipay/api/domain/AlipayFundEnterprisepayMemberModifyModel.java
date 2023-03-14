@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 因公付更新员工资金协议
  *
  * @author auto create
- * @since 1.0, 2022-11-21 14:46:48
+ * @since 1.0, 2023-03-07 21:43:16
  */
 public class AlipayFundEnterprisepayMemberModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7123443652862756854L;
+	private static final long serialVersionUID = 4666485349483293313L;
 
 	/**
 	 * 企业签约账户ID
@@ -46,6 +46,12 @@ public class AlipayFundEnterprisepayMemberModifyModel extends AlipayObject {
 	@ApiListField("group_id_list")
 	@ApiField("string")
 	private List<String> groupIdList;
+
+	/**
+	 * 蚂蚁统一会员openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 更新操作类型：多个时逗号分隔
@@ -103,6 +109,13 @@ ENTERPRISE_PAY
 	}
 	public void setGroupIdList(List<String> groupIdList) {
 		this.groupIdList = groupIdList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public List<String> getOperationTypeList() {

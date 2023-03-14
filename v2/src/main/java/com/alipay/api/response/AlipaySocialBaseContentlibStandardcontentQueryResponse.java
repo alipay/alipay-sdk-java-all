@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.contentlib.standardcontent.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-28 18:01:38
+ * @since 1.0, 2023-03-12 22:36:38
  */
 public class AlipaySocialBaseContentlibStandardcontentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3547911132969467656L;
+	private static final long serialVersionUID = 2175167193571919366L;
 
 	/** 
 	 * 内容ID

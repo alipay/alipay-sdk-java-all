@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.applepay.otpresolutionmethods.query request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:59:35
+ * @since 1.0, 2023-03-13 06:19:21
  */
 public class AlipayUserApplepayOtpresolutionmethodsQueryRequest implements AlipayRequest<AlipayUserApplepayOtpresolutionmethodsQueryResponse> {
 

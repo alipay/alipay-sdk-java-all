@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.risktask.finishinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 00:11:44
+ * @since 1.0, 2023-03-12 22:26:45
  */
 public class AlipaySecurityProdRisktaskFinishinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5547724711342516525L;
+	private static final long serialVersionUID = 1199499297572271438L;
 
 	/** 
 	 * finish_type 结案类型

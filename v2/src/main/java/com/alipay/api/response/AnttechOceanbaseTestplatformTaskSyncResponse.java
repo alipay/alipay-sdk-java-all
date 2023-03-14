@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.testplatform.task.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:24:10
+ * @since 1.0, 2023-03-13 07:02:51
  */
 public class AnttechOceanbaseTestplatformTaskSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2562155161575541771L;
+	private static final long serialVersionUID = 1719658457336237558L;
 
 	/** 
 	 * 任务id

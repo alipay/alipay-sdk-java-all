@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.caas.blacklist.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:01:43
+ * @since 1.0, 2023-03-12 19:30:38
  */
 public class AlipayFincoreComplianceCaasBlacklistConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5434628595137138479L;
+	private static final long serialVersionUID = 6553998379676889325L;
 
 	/** 
 	 * result_code + 咨询的结果code + 枚举值：ALLOW（允许，标识未在黑名单中）、NOT_ALLOW（标识在黑名单中）、UN_PROCESS（标识服务降级or未有准确结果，需要调用方兜底处理）

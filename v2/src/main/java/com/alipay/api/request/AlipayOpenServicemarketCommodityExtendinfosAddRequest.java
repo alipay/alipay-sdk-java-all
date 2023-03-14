@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.commodity.extendinfos.add request
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:05:43
+ * @since 1.0, 2023-03-13 05:34:56
  */
 public class AlipayOpenServicemarketCommodityExtendinfosAddRequest implements AlipayRequest<AlipayOpenServicemarketCommodityExtendinfosAddResponse> {
 

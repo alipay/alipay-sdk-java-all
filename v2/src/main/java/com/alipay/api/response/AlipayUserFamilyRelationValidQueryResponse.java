@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.family.relation.valid.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:16:22
+ * @since 1.0, 2023-03-13 06:26:01
  */
 public class AlipayUserFamilyRelationValidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6864354265786269168L;
+	private static final long serialVersionUID = 7118457743173995933L;
 
 	/** 
 	 * 是否加入过家庭

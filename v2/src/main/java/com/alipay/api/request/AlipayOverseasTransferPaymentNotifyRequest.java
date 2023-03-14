@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.transfer.payment.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:37:25
+ * @since 1.0, 2023-03-13 05:41:46
  */
 public class AlipayOverseasTransferPaymentNotifyRequest implements AlipayRequest<AlipayOverseasTransferPaymentNotifyResponse> {
 

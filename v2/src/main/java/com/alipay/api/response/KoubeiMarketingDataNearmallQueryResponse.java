@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.nearmall.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 22:01:52
+ * @since 1.0, 2023-03-13 00:01:46
  */
 public class KoubeiMarketingDataNearmallQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1398878848976152617L;
+	private static final long serialVersionUID = 5671588444215488549L;
 
 	/** 
 	 * 商圈信息

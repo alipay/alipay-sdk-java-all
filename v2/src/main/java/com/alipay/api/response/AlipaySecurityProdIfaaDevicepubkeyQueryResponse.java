@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.ifaa.devicepubkey.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:57:59
+ * @since 1.0, 2023-03-13 05:57:56
  */
 public class AlipaySecurityProdIfaaDevicepubkeyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8397896584271992853L;
+	private static final long serialVersionUID = 3867319861436391491L;
 
 	/** 
 	 * 加密过的设备公钥信息。

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.expenserule.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-02-27 20:07:08
+ * @since 1.0, 2023-03-13 02:36:49
  */
 public class AlipayEbppInvoiceInstitutionExpenseruleDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1725487835961655882L;
+	private static final long serialVersionUID = 2862418239929915748L;
 
 	/** 
 	 * 删除是否成功

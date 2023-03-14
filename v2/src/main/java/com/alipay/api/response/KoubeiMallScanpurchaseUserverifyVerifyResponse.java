@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.mall.scanpurchase.userverify.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 11:30:10
+ * @since 1.0, 2023-03-12 23:58:02
  */
 public class KoubeiMallScanpurchaseUserverifyVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2734154896643272457L;
+	private static final long serialVersionUID = 3495662368458487876L;
 
 	
 

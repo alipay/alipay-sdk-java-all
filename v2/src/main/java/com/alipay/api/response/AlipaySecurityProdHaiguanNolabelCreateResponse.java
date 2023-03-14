@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.haiguan.nolabel.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 16:42:38
+ * @since 1.0, 2023-03-12 22:23:36
  */
 public class AlipaySecurityProdHaiguanNolabelCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8733315153155849434L;
+	private static final long serialVersionUID = 7686571512875321222L;
 
 	/** 
 	 * 23

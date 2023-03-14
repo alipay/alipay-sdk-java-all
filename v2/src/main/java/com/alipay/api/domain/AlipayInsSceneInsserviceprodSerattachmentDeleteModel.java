@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 附件撤回(服务商->支付宝) API
  *
  * @author auto create
- * @since 1.0, 2021-03-02 13:27:43
+ * @since 1.0, 2023-03-08 12:57:46
  */
 public class AlipayInsSceneInsserviceprodSerattachmentDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2774422464858752581L;
+	private static final long serialVersionUID = 5661982532723876219L;
 
 	/**
 	 * 待撤回的文件编号

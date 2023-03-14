@@ -17,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.dataservice.cropdetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:46:41
+ * @since 1.0, 2023-03-12 23:36:45
  */
 public class AnttechBlockchainDefinDataserviceCropdetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6659645819816273554L;
+	private static final long serialVersionUID = 5184131264779352861L;
 
 	/** 
 	 * 长势检测10期数据，product_code=1002返回

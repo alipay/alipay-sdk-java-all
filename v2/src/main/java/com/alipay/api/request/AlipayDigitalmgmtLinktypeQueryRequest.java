@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.linktype.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 17:13:50
+ * @since 1.0, 2023-03-12 18:43:06
  */
 public class AlipayDigitalmgmtLinktypeQueryRequest implements AlipayRequest<AlipayDigitalmgmtLinktypeQueryResponse> {
 

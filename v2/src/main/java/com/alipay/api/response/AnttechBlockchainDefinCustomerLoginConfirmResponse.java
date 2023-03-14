@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.customer.login.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 06:57:31
+ * @since 1.0, 2023-03-13 06:52:50
  */
 public class AnttechBlockchainDefinCustomerLoginConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2326615626235647984L;
+	private static final long serialVersionUID = 1247435771194394883L;
 
 	/** 
 	 * 用户信息

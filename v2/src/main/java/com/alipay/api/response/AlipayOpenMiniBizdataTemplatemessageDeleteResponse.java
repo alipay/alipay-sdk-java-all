@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.bizdata.templatemessage.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 01:01:42
+ * @since 1.0, 2023-03-13 05:01:39
  */
 public class AlipayOpenMiniBizdataTemplatemessageDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6733937512181179342L;
+	private static final long serialVersionUID = 5517475138736358573L;
 
 	/** 
 	 * 成功：true 失败：false

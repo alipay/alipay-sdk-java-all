@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.text.voice.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:35:10
+ * @since 1.0, 2023-03-13 02:58:51
  */
 public class AlipayEcoTextVoiceNotifyRequest implements AlipayRequest<AlipayEcoTextVoiceNotifyResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.caas.merchantlevel.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 00:51:27
+ * @since 1.0, 2023-03-13 03:04:33
  */
 public class AlipayFincoreComplianceCaasMerchantlevelConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5823532856413374951L;
+	private static final long serialVersionUID = 7839681188474779472L;
 
 	/** 
 	 * 返回结果码

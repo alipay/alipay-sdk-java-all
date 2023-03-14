@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.activity.copy response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:48:36
+ * @since 1.0, 2023-03-13 06:38:21
  */
 public class AntMerchantExpandIndirectActivityCopyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2212692178741398486L;
+	private static final long serialVersionUID = 3568797318394673358L;
 
 	/** 
 	 * 活动权益复制结果

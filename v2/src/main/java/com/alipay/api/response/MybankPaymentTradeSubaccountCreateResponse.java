@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.subaccount.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:55:00
+ * @since 1.0, 2023-03-13 00:35:51
  */
 public class MybankPaymentTradeSubaccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6579883864684353467L;
+	private static final long serialVersionUID = 4818652287115867676L;
 
 	/** 
 	 * 账户名称

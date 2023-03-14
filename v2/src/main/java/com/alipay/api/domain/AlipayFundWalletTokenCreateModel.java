@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2022-12-26 14:31:13
+ * @since 1.0, 2023-03-07 21:50:50
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5747326614366849524L;
+	private static final long serialVersionUID = 4365478654986966282L;
 
 	/**
 	 * 业务场景
@@ -48,6 +48,12 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("real_name")
 	private String realName;
+
+	/**
+	 * 场景钱包模版id
+	 */
+	@ApiField("wallet_template_id")
+	private String walletTemplateId;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -89,6 +95,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	}
 	public void setRealName(String realName) {
 		this.realName = realName;
+	}
+
+	public String getWalletTemplateId() {
+		return this.walletTemplateId;
+	}
+	public void setWalletTemplateId(String walletTemplateId) {
+		this.walletTemplateId = walletTemplateId;
 	}
 
 }

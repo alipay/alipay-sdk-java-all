@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发起代扣
  *
  * @author auto create
- * @since 1.0, 2022-10-24 11:15:14
+ * @since 1.0, 2023-03-08 14:28:17
  */
 public class AlipayCommerceTransportVehicleownerSettlementApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6887241695817623884L;
+	private static final long serialVersionUID = 5816836562398437565L;
 
 	/**
 	 * 阿里门店编号

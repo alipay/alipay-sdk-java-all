@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.benefit.transfer request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:56:40
+ * @since 1.0, 2023-03-13 05:46:43
  */
 public class AlipayOverseasTravelBenefitTransferRequest implements AlipayRequest<AlipayOverseasTravelBenefitTransferResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.cs.cssocial.yqmessage.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:54:10
+ * @since 1.0, 2023-03-12 16:53:16
  */
 public class AlipayBossCsCssocialYqmessageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3818725556321588896L;
+	private static final long serialVersionUID = 1611477977189867834L;
 
 	/** 
 	 * 返回的舆情数据结果字符串。舆情数据及信息存放在JSON字符串中，如舆情的标题（title）、内容（content）等

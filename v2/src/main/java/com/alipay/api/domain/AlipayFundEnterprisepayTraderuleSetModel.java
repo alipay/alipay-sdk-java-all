@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付设置商户限制
  *
  * @author auto create
- * @since 1.0, 2022-08-23 23:09:59
+ * @since 1.0, 2023-03-07 19:54:13
  */
 public class AlipayFundEnterprisepayTraderuleSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6765795759149547195L;
+	private static final long serialVersionUID = 8832826147616491518L;
 
 	/**
 	 * 企业签约账户ID

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.advertiser.ad.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:24:41
+ * @since 1.0, 2023-03-12 17:51:48
  */
 public class AlipayCommerceIotAdvertiserAdCancelRequest implements AlipayRequest<AlipayCommerceIotAdvertiserAdCancelResponse> {
 

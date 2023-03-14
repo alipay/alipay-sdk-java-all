@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.service.miniappnearby.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:21:36
+ * @since 1.0, 2023-03-13 04:37:23
  */
 public class AlipayOpenAppServiceMiniappnearbyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8262288341974336431L;
+	private static final long serialVersionUID = 1113693925986945449L;
 
 	/** 
 	 * 服务载体编码

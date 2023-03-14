@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.titlelibrary.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:44:50
+ * @since 1.0, 2023-03-12 19:04:32
  */
 public class AlipayEbppInvoiceTitlelibraryDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2354623567199547583L;
+	private static final long serialVersionUID = 7313612276824922126L;
 
 	/** 
 	 * 地址

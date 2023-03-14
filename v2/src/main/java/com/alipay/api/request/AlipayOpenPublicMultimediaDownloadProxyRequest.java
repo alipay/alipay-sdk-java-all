@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.multimedia.download.proxy request
  * 
  * @author auto create
- * @since 1.0, 2023-01-05 10:00:34
+ * @since 1.0, 2023-03-12 21:55:04
  */
 public class AlipayOpenPublicMultimediaDownloadProxyRequest implements AlipayRequest<AlipayOpenPublicMultimediaDownloadProxyResponse> {
 

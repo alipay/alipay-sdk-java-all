@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaskMarkerInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6265324849111357667L;
+	private static final long serialVersionUID = 8375522979938641347L;
 
 	/**
 	 * 标的物logo

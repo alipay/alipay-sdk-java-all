@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 联营-计划报名
  *
  * @author auto create
- * @since 1.0, 2023-01-04 20:04:16
+ * @since 1.0, 2023-03-07 14:33:17
  */
 public class AlipayCommerceOperationBsEnrollSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1889992464924519825L;
+	private static final long serialVersionUID = 8293292711968892818L;
 
 	/**
 	 * 报名参与者，支持批量传参，最大100

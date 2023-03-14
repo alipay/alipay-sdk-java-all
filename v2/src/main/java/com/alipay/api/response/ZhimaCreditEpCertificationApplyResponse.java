@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.apply response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-14 15:47:01
+ * @since 1.0, 2023-03-13 08:08:37
  */
 public class ZhimaCreditEpCertificationApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4834411866184853729L;
+	private static final long serialVersionUID = 6397542618598941319L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.shop.wxlogin.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-10 22:56:38
+ * @since 1.0, 2023-03-13 00:14:39
  */
 public class KoubeiShopWxloginQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6678845243714465391L;
+	private static final long serialVersionUID = 7861439731598947252L;
 
 	/** 
 	 * 用户唯一标识的 openid

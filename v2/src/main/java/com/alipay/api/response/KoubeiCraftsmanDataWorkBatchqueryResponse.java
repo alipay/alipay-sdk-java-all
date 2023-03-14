@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.craftsman.data.work.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 18:02:05
+ * @since 1.0, 2023-03-13 07:24:43
  */
 public class KoubeiCraftsmanDataWorkBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6886828643197189871L;
+	private static final long serialVersionUID = 5364394887255242481L;
 
 	/** 
 	 * 当前页码

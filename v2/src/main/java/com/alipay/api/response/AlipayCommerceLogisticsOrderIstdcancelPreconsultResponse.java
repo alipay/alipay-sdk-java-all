@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.order.istdcancel.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-04 23:50:02
+ * @since 1.0, 2023-03-12 18:06:44
  */
 public class AlipayCommerceLogisticsOrderIstdcancelPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6173135438547345368L;
+	private static final long serialVersionUID = 7825463493371167645L;
 
 	/** 
 	 * 是否允许取消
@@ -20,11 +20,24 @@ public class AlipayCommerceLogisticsOrderIstdcancelPreconsultResponse extends Al
 	@ApiField("allow_cancel")
 	private Boolean allowCancel;
 
+	/** 
+	 * 取消金额
+	 */
+	@ApiField("cancel_fee")
+	private String cancelFee;
+
 	public void setAllowCancel(Boolean allowCancel) {
 		this.allowCancel = allowCancel;
 	}
 	public Boolean getAllowCancel( ) {
 		return this.allowCancel;
+	}
+
+	public void setCancelFee(String cancelFee) {
+		this.cancelFee = cancelFee;
+	}
+	public String getCancelFee( ) {
+		return this.cancelFee;
 	}
 
 }

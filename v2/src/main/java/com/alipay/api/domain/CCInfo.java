@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 清关信息复杂类型
  *
  * @author auto create
- * @since 1.0, 2022-11-28 16:03:26
+ * @since 1.0, 2023-03-13 20:35:03
  */
 public class CCInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2722789978696223311L;
+	private static final long serialVersionUID = 8833762283416349588L;
 
 	/**
 	 * 收件人详细地址

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.secondmerchant.offline.maintain response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 07:49:05
+ * @since 1.0, 2023-03-13 05:40:09
  */
 public class AlipayOverseasSecondmerchantOfflineMaintainResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6478631291387294285L;
+	private static final long serialVersionUID = 7864496734512427563L;
 
 	
 

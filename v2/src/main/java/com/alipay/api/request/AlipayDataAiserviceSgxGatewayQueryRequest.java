@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.sgx.gateway.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-07 19:02:06
+ * @since 1.0, 2023-03-13 02:13:15
  */
 public class AlipayDataAiserviceSgxGatewayQueryRequest implements AlipayRequest<AlipayDataAiserviceSgxGatewayQueryResponse> {
 

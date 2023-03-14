@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.sceneprod.loan.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 05:12:44
+ * @since 1.0, 2023-03-13 07:51:54
  */
 public class MybankCreditSceneprodLoanConfirmRequest implements AlipayRequest<MybankCreditSceneprodLoanConfirmResponse> {
 

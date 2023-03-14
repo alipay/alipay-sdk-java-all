@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.pos.sidedishbatch.save response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 04:37:08
+ * @since 1.0, 2023-03-12 23:53:58
  */
 public class KoubeiCateringPosSidedishbatchSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6654845456857983477L;
+	private static final long serialVersionUID = 5822952957831327187L;
 
 	/** 
 	 * 配料添加成功的菜品

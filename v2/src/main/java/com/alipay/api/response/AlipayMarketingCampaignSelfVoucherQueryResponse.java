@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.self.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-01 18:41:46
+ * @since 1.0, 2023-03-13 03:59:14
  */
 public class AlipayMarketingCampaignSelfVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5874837368631995696L;
+	private static final long serialVersionUID = 2615118671853824522L;
 
 	/** 
 	 * 券列表

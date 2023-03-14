@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.health.drugcatalogue.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:20:56
+ * @since 1.0, 2023-03-13 03:33:16
  */
 public class AlipayInsSceneHealthDrugcatalogueBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5396595546277593943L;
+	private static final long serialVersionUID = 1322183226496535784L;
 
 	/** 
 	 * 药品列表

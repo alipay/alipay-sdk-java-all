@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.credit.autofinance.vid.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 03:25:14
+ * @since 1.0, 2023-03-12 18:28:13
  */
 public class AlipayCreditAutofinanceVidGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1377219129292657769L;
+	private static final long serialVersionUID = 4812576337836595811L;
 
 	/** 
 	 * 核身VID
