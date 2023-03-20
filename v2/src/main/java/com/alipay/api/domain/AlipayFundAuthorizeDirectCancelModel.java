@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 超上借支授权取消
  *
  * @author auto create
- * @since 1.0, 2023-03-08 10:59:20
+ * @since 1.0, 2023-03-17 16:04:18
  */
 public class AlipayFundAuthorizeDirectCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2112836184211131619L;
+	private static final long serialVersionUID = 5396217778461259965L;
 
 	/**
 	 * 授权协议号，out_biz_no提供时可选，out_biz_no未提供时必选

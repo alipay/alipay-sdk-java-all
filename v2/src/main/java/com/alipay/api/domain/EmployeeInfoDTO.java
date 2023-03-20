@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息
  *
  * @author auto create
- * @since 1.0, 2022-11-17 16:47:17
+ * @since 1.0, 2023-03-14 17:36:23
  */
 public class EmployeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6372229272442229791L;
+	private static final long serialVersionUID = 5281537378874648438L;
 
 	/**
 	 * 是否激活，可选值：ACTIVATED-已激活；UNACTIVATED-未激活；ACTIVATING-激活中
@@ -66,6 +66,18 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private String gmtModified;
 
 	/**
+	 * 是否在库，0：在，1：不在
+	 */
+	@ApiField("iot_face_status")
+	private String iotFaceStatus;
+
+	/**
+	 * 员工在企业人脸库的人脸唯一标识
+	 */
+	@ApiField("iot_vid")
+	private String iotVid;
+
+	/**
 	 * 手机号码
 	 */
 	@ApiField("mobile")
@@ -78,7 +90,7 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 角色列表，可选值：USER-用户；ADMIM-管理员 SUPER_ADMIN-超级管理员
+	 * 角色列表，可选值：USER-用户；ADMIM-管理员; SUPER_ADMIN-超级管理员; AGENCY_OPERATION - 代运营
 	 */
 	@ApiListField("role_list")
 	@ApiField("string")
@@ -144,6 +156,20 @@ public class EmployeeInfoDTO extends AlipayObject {
 	}
 	public void setGmtModified(String gmtModified) {
 		this.gmtModified = gmtModified;
+	}
+
+	public String getIotFaceStatus() {
+		return this.iotFaceStatus;
+	}
+	public void setIotFaceStatus(String iotFaceStatus) {
+		this.iotFaceStatus = iotFaceStatus;
+	}
+
+	public String getIotVid() {
+		return this.iotVid;
+	}
+	public void setIotVid(String iotVid) {
+		this.iotVid = iotVid;
 	}
 
 	public String getMobile() {

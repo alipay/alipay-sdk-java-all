@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignCashStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1133912266387761519L;
+	private static final long serialVersionUID = 6448174766786592951L;
 
 	/**
 	 * 金活动修改后的状态。支持修改为：

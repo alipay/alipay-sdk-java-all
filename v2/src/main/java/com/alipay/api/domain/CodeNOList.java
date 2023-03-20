@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CodeNOList extends AlipayObject {
 
-	private static final long serialVersionUID = 8748276274716582979L;
+	private static final long serialVersionUID = 4832571728353282882L;
 
 	/**
 	 * 金额

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业入驻
  *
  * @author auto create
- * @since 1.0, 2022-11-22 17:27:49
+ * @since 1.0, 2023-03-17 14:43:49
  */
 public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6525261168384755631L;
+	private static final long serialVersionUID = 8845339827134933654L;
 
 	/**
 	 * 场景码，联系支付宝分配
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 是否创建企业人脸库，适用于对接团餐刷脸付、门禁刷脸通行等场景，不传默认为true
+	 */
+	@ApiField("create_iot_group")
+	private Boolean createIotGroup;
 
 	/**
 	 * 企业简称
@@ -67,6 +73,13 @@ ALIPAY_USER_ID(企业支付宝会员id)
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public Boolean getCreateIotGroup() {
+		return this.createIotGroup;
+	}
+	public void setCreateIotGroup(Boolean createIotGroup) {
+		this.createIotGroup = createIotGroup;
 	}
 
 	public String getEnterpriseAlias() {

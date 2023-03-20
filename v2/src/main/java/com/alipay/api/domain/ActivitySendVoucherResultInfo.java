@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivitySendVoucherResultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5898887941715421576L;
+	private static final long serialVersionUID = 8156195523773437946L;
 
 	/**
 	 * 发放中时返回的具体错误码

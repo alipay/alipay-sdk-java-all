@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业信息
  *
  * @author auto create
- * @since 1.0, 2023-03-03 17:28:18
+ * @since 1.0, 2023-03-14 17:36:15
  */
 public class EnterpriseInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7267866599778866669L;
+	private static final long serialVersionUID = 2872596645194676928L;
 
 	/**
 	 * 账户id
@@ -87,6 +87,18 @@ NO_AUTH：未认证 IN_AUTH：认证中 HAS_AUTH：已认证
 	 */
 	@ApiField("gmt_modified")
 	private Date gmtModified;
+
+	/**
+	 * 封闭场景（如班车）的人脸库id
+	 */
+	@ApiField("iot_group_id")
+	private String iotGroupId;
+
+	/**
+	 * 开放场景（如团餐）的人脸库id
+	 */
+	@ApiField("iot_logic_group_id")
+	private String iotLogicGroupId;
 
 	/**
 	 * 外部平台code
@@ -194,6 +206,20 @@ NO_AUTH：未认证 IN_AUTH：认证中 HAS_AUTH：已认证
 	}
 	public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
+	}
+
+	public String getIotGroupId() {
+		return this.iotGroupId;
+	}
+	public void setIotGroupId(String iotGroupId) {
+		this.iotGroupId = iotGroupId;
+	}
+
+	public String getIotLogicGroupId() {
+		return this.iotLogicGroupId;
+	}
+	public void setIotLogicGroupId(String iotLogicGroupId) {
+		this.iotLogicGroupId = iotLogicGroupId;
 	}
 
 	public String getPlatformCode() {

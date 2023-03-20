@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户赛事信息
  *
  * @author auto create
- * @since 1.0, 2022-12-20 10:07:36
+ * @since 1.0, 2023-03-15 19:41:15
  */
 public class UserOnlineGameInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5799422373356537812L;
+	private static final long serialVersionUID = 4767813738392251328L;
 
 	/**
 	 * 文体侧赛事业务号
@@ -74,6 +74,12 @@ public class UserOnlineGameInfo extends AlipayObject {
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	/**
+	 * 用户参赛详情支付宝小程序跳转地址
+	 */
+	@ApiField("user_online_detail_url")
+	private String userOnlineDetailUrl;
 
 	/**
 	 * 用户进度计量单位
@@ -155,6 +161,13 @@ public class UserOnlineGameInfo extends AlipayObject {
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getUserOnlineDetailUrl() {
+		return this.userOnlineDetailUrl;
+	}
+	public void setUserOnlineDetailUrl(String userOnlineDetailUrl) {
+		this.userOnlineDetailUrl = userOnlineDetailUrl;
 	}
 
 	public String getUserProgressGameUnit() {

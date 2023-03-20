@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.notifycenter.notifyuser.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:06:44
+ * @since 1.0, 2023-03-17 10:59:39
  */
 public class AlipayCommerceTransportNotifycenterNotifyuserQueryRequest implements AlipayRequest<AlipayCommerceTransportNotifycenterNotifyuserQueryResponse> {
 

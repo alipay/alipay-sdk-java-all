@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 20:31:40
+ * @since 1.0, 2023-03-17 13:51:40
  */
 public class AlipayMarketingActivityOrdervoucherModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4598164642237497383L;
+	private static final long serialVersionUID = 6211182719477636636L;
 
 	/** 
 	 * 可用范围结果

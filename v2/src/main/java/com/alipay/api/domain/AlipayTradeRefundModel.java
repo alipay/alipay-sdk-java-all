@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易退款接口
  *
  * @author auto create
- * @since 1.0, 2023-02-20 17:02:52
+ * @since 1.0, 2023-03-14 23:40:16
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3796148894126978619L;
+	private static final long serialVersionUID = 1395297597531366763L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -39,7 +39,7 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	/**
 	 * 退款请求号。
 标识一次退款请求，需要保证在交易号下唯一，如需部分退款，则此参数必传。
-注：针对同一次退款请求，如果调用接口失败或异常了，重试时需要保证退款请求号不能变更，防止该笔交易重复退款。支付宝会保证同样的退款请求号多次请求只会退一次。	
+注：针对同一次退款请求，如果调用接口失败或异常了，重试时需要保证退款请求号不能变更，防止该笔交易重复退款。支付宝会保证同样的退款请求号多次请求只会退一次。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

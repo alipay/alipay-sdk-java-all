@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文体运动任务完成的事件消息发送
  *
  * @author auto create
- * @since 1.0, 2022-11-21 19:54:35
+ * @since 1.0, 2023-03-15 13:59:31
  */
 public class AlipayCommerceSportsUsertaskCompletedSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3636995373918372332L;
+	private static final long serialVersionUID = 3113876235488992878L;
 
 	/**
 	 * 非必填,用户在支付宝APP或服务商小程序选择的城市code

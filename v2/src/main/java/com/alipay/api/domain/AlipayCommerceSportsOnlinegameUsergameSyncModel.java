@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户赛事信息同步
  *
  * @author auto create
- * @since 1.0, 2023-03-03 13:57:33
+ * @since 1.0, 2023-03-16 09:27:06
  */
 public class AlipayCommerceSportsOnlinegameUsergameSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5618555881414269557L;
+	private static final long serialVersionUID = 2747464375779587961L;
+
+	/**
+	 * 用户参赛的场次组别ID
+	 */
+	@ApiField("game_event_id")
+	private String gameEventId;
 
 	/**
 	 * 文体侧赛事业务号
@@ -40,6 +46,12 @@ public class AlipayCommerceSportsOnlinegameUsergameSyncModel extends AlipayObjec
 	private String openId;
 
 	/**
+	 * 用户参赛的服务商场次组别ID
+	 */
+	@ApiField("out_game_event_no")
+	private String outGameEventNo;
+
+	/**
 	 * 外部赛事业务号
 	 */
 	@ApiField("out_game_no")
@@ -52,7 +64,9 @@ public class AlipayCommerceSportsOnlinegameUsergameSyncModel extends AlipayObjec
 	private String outUserGameNo;
 
 	/**
-	 * 已参加
+	 * JOIN("JOIN", "已参加"),
+COMPLETED("COMPLETED", "已完成"),
+STOPPED("STOPPED", "未完成"),
 	 */
 	@ApiField("status")
 	private String status;
@@ -87,6 +101,19 @@ public class AlipayCommerceSportsOnlinegameUsergameSyncModel extends AlipayObjec
 	@ApiField("user_name")
 	private String userName;
 
+	/**
+	 * 用户参赛详情支付宝小程序跳转地址
+	 */
+	@ApiField("user_online_detail_url")
+	private String userOnlineDetailUrl;
+
+	public String getGameEventId() {
+		return this.gameEventId;
+	}
+	public void setGameEventId(String gameEventId) {
+		this.gameEventId = gameEventId;
+	}
+
 	public String getGameId() {
 		return this.gameId;
 	}
@@ -113,6 +140,13 @@ public class AlipayCommerceSportsOnlinegameUsergameSyncModel extends AlipayObjec
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOutGameEventNo() {
+		return this.outGameEventNo;
+	}
+	public void setOutGameEventNo(String outGameEventNo) {
+		this.outGameEventNo = outGameEventNo;
 	}
 
 	public String getOutGameNo() {
@@ -169,6 +203,13 @@ public class AlipayCommerceSportsOnlinegameUsergameSyncModel extends AlipayObjec
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getUserOnlineDetailUrl() {
+		return this.userOnlineDetailUrl;
+	}
+	public void setUserOnlineDetailUrl(String userOnlineDetailUrl) {
+		this.userOnlineDetailUrl = userOnlineDetailUrl;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生态设备绑定
  *
  * @author auto create
- * @since 1.0, 2022-11-25 17:02:15
+ * @since 1.0, 2023-03-17 13:43:51
  */
 public class AlipayCommerceIotDeviceEcoBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3852156668629599388L;
+	private static final long serialVersionUID = 3244864432736478491L;
 
 	/**
 	 * 绑定类型，可选项[SUB_MERCHANT,DIRECT_MERCHANT]
@@ -38,6 +38,12 @@ ID-使用biz_tid作为设备唯一识别标识
 	 */
 	@ApiField("identify_type")
 	private String identifyType;
+
+	/**
+	 * 收钱码SN，按需写入
+	 */
+	@ApiField("paycode_sn")
+	private String paycodeSn;
 
 	/**
 	 * 设备sn，与supplier_id配合作为设备识别的唯一标识;identity_type='SN'时必填
@@ -77,6 +83,13 @@ ID-使用biz_tid作为设备唯一识别标识
 	}
 	public void setIdentifyType(String identifyType) {
 		this.identifyType = identifyType;
+	}
+
+	public String getPaycodeSn() {
+		return this.paycodeSn;
+	}
+	public void setPaycodeSn(String paycodeSn) {
+		this.paycodeSn = paycodeSn;
 	}
 
 	public String getSn() {

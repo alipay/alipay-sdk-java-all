@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.usertask.completed.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-11-21 19:56:39
+ * @since 1.0, 2023-03-15 13:59:31
  */
 public class AlipayCommerceSportsUsertaskCompletedSyncRequest implements AlipayRequest<AlipayCommerceSportsUsertaskCompletedSyncResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandContractStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6367162726557235171L;
+	private static final long serialVersionUID = 1596689632414483627L;
 
 	/** 
 	 * 签约状态结果补充说明，如：账户被冻结，无法签约

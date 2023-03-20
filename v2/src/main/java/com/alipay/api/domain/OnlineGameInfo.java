@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 线上赛事信息返参
  *
  * @author auto create
- * @since 1.0, 2022-12-20 10:06:23
+ * @since 1.0, 2023-03-15 19:40:51
  */
 public class OnlineGameInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6755223941482526422L;
+	private static final long serialVersionUID = 5224698629525442477L;
 
 	/**
 	 * 赛事类型
@@ -26,6 +28,12 @@ public class OnlineGameInfo extends AlipayObject {
 	 */
 	@ApiField("desc")
 	private String desc;
+
+	/**
+	 * 参赛详情支付宝小程序跳转地址
+	 */
+	@ApiField("detail_url")
+	private String detailUrl;
 
 	/**
 	 * 赛事结束时间
@@ -58,6 +66,13 @@ public class OnlineGameInfo extends AlipayObject {
 	private String name;
 
 	/**
+	 * 线上赛事场次组别信息列表
+	 */
+	@ApiListField("online_game_event_list")
+	@ApiField("online_game_event_info")
+	private List<OnlineGameEventInfo> onlineGameEventList;
+
+	/**
 	 * 三方赛事ID(唯一值)
 	 */
 	@ApiField("out_game_no")
@@ -82,7 +97,7 @@ public class OnlineGameInfo extends AlipayObject {
 	private String sportsDataSource;
 
 	/**
-	 * 跑步
+	 * 跑步/走路
 	 */
 	@ApiField("sports_data_type")
 	private String sportsDataType;
@@ -105,6 +120,18 @@ public class OnlineGameInfo extends AlipayObject {
 	@ApiField("sub_biz_type")
 	private String subBizType;
 
+	/**
+	 * 用户参赛结束时间
+	 */
+	@ApiField("user_join_end_time")
+	private Date userJoinEndTime;
+
+	/**
+	 * 用户参赛时间
+	 */
+	@ApiField("user_join_start_time")
+	private Date userJoinStartTime;
+
 	public String getBizType() {
 		return this.bizType;
 	}
@@ -117,6 +144,13 @@ public class OnlineGameInfo extends AlipayObject {
 	}
 	public void setDesc(String desc) {
 		this.desc = desc;
+	}
+
+	public String getDetailUrl() {
+		return this.detailUrl;
+	}
+	public void setDetailUrl(String detailUrl) {
+		this.detailUrl = detailUrl;
 	}
 
 	public Date getEndTime() {
@@ -152,6 +186,13 @@ public class OnlineGameInfo extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public List<OnlineGameEventInfo> getOnlineGameEventList() {
+		return this.onlineGameEventList;
+	}
+	public void setOnlineGameEventList(List<OnlineGameEventInfo> onlineGameEventList) {
+		this.onlineGameEventList = onlineGameEventList;
 	}
 
 	public String getOutGameNo() {
@@ -208,6 +249,20 @@ public class OnlineGameInfo extends AlipayObject {
 	}
 	public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
+	}
+
+	public Date getUserJoinEndTime() {
+		return this.userJoinEndTime;
+	}
+	public void setUserJoinEndTime(Date userJoinEndTime) {
+		this.userJoinEndTime = userJoinEndTime;
+	}
+
+	public Date getUserJoinStartTime() {
+		return this.userJoinStartTime;
+	}
+	public void setUserJoinStartTime(Date userJoinStartTime) {
+		this.userJoinStartTime = userJoinStartTime;
 	}
 
 }

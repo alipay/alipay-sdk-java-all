@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2022-11-22 17:27:51
+ * @since 1.0, 2023-03-17 14:43:50
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5585538114947126961L;
+	private static final long serialVersionUID = 6557792831638678859L;
 
 	/**
 	 * 员工所属部门
@@ -22,6 +22,19 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	@ApiListField("department_ids")
 	@ApiField("string")
 	private List<String> departmentIds;
+
+	/**
+	 * 证件号码，根据employee_cert_type指定的证件类型，传入对应的证件号码，用于企业人脸库员工刷脸开通时的核验。
+	 */
+	@ApiField("employee_cert_no")
+	private String employeeCertNo;
+
+	/**
+	 * 证件类型，用于企业人脸库员工刷脸开通时的核验，
+枚举支持：IDENTITY_CARD身份证，PASS_PORT护照，STU_NUM学生学号，COMPANY_NUM工号，TAIWAN_CARD台胞证，HK_MC_CARD港澳证件
+	 */
+	@ApiField("employee_cert_type")
+	private String employeeCertType;
 
 	/**
 	 * 员工邮箱
@@ -77,10 +90,21 @@ ALIPAY_USER_ID(企业支付宝会员id)
 	private String identityType;
 
 	/**
+	 * 员工刷脸加入企业人脸库时的核验方式，如果设置为business_facepay_checkall，则employee_name、employee_cert_type、employee_cert_no必传，如果不传则默认不核验。
+	 */
+	@ApiField("iot_check_type")
+	private String iotCheckType;
+
+	/**
+	 * 员工在企业人脸库的人脸唯一标识，支持自定义传入，如果未传入则会默认生成
+	 */
+	@ApiField("iot_vid")
+	private String iotVid;
+
+	/**
 	 * 角色列表，目前只支持填一种角色，默认为USER
-USER 普通员工
-ADMIN 管理员
-SUPER_ADMIN 超级管理员
+USER：普通员工
+ADMIN：管理员
 	 */
 	@ApiListField("role_list")
 	@ApiField("string")
@@ -91,6 +115,20 @@ SUPER_ADMIN 超级管理员
 	}
 	public void setDepartmentIds(List<String> departmentIds) {
 		this.departmentIds = departmentIds;
+	}
+
+	public String getEmployeeCertNo() {
+		return this.employeeCertNo;
+	}
+	public void setEmployeeCertNo(String employeeCertNo) {
+		this.employeeCertNo = employeeCertNo;
+	}
+
+	public String getEmployeeCertType() {
+		return this.employeeCertType;
+	}
+	public void setEmployeeCertType(String employeeCertType) {
+		this.employeeCertType = employeeCertType;
 	}
 
 	public String getEmployeeEmail() {
@@ -147,6 +185,20 @@ SUPER_ADMIN 超级管理员
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getIotCheckType() {
+		return this.iotCheckType;
+	}
+	public void setIotCheckType(String iotCheckType) {
+		this.iotCheckType = iotCheckType;
+	}
+
+	public String getIotVid() {
+		return this.iotVid;
+	}
+	public void setIotVid(String iotVid) {
+		this.iotVid = iotVid;
 	}
 
 	public List<String> getRoleList() {

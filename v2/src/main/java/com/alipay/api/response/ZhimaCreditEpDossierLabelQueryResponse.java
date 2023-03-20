@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.label.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 08:11:39
+ * @since 1.0, 2023-03-20 09:56:39
  */
 public class ZhimaCreditEpDossierLabelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5536356258594917212L;
+	private static final long serialVersionUID = 8636726333682193622L;
 
 	/** 
 	 * 统一社会信用代码或营业执照注册号
 	 */
 	@ApiField("ep_cert_no")
 	private String epCertNo;
+
+	/** 
+	 * 是否授权;true:已授权,false:未授权
+	 */
+	@ApiField("has_authed")
+	private Boolean hasAuthed;
 
 	/** 
 	 * 企业标签内容列表
@@ -35,6 +41,13 @@ public class ZhimaCreditEpDossierLabelQueryResponse extends AlipayResponse {
 	}
 	public String getEpCertNo( ) {
 		return this.epCertNo;
+	}
+
+	public void setHasAuthed(Boolean hasAuthed) {
+		this.hasAuthed = hasAuthed;
+	}
+	public Boolean getHasAuthed( ) {
+		return this.hasAuthed;
 	}
 
 	public void setLabelContent(List<EpLabelContent> labelContent) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户授权绑定关系同步
  *
  * @author auto create
- * @since 1.0, 2022-11-23 17:34:16
+ * @since 1.0, 2023-03-17 11:13:05
  */
 public class AlipayCommerceTransportAuthBindingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3624129188927433188L;
+	private static final long serialVersionUID = 7468635796785885341L;
 
 	/**
 	 * 同步动作类型。取值bind、unbind。表示绑定和取消绑定

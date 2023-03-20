@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiAdvertCommissionChannelDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2757166235757529526L;
+	private static final long serialVersionUID = 3241477686899718538L;
 
 	/**
 	 * 需要删除的渠道ID列表

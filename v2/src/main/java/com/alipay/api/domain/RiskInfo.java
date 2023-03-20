@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 解语花风险信息
  *
  * @author auto create
- * @since 1.0, 2022-08-26 11:07:31
+ * @since 1.0, 2023-03-20 10:25:51
  */
 public class RiskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4727651939326424121L;
+	private static final long serialVersionUID = 7518367659712288892L;
 
 	/**
 	 * 业务规则 规则相关法律信息，
@@ -41,6 +41,12 @@ public class RiskInfo extends AlipayObject {
 	 */
 	@ApiField("risk_level")
 	private String riskLevel;
+
+	/**
+	 * 规则编码
+	 */
+	@ApiField("rule_code")
+	private String ruleCode;
 
 	/**
 	 * 规则名称
@@ -80,6 +86,13 @@ public class RiskInfo extends AlipayObject {
 	}
 	public void setRiskLevel(String riskLevel) {
 		this.riskLevel = riskLevel;
+	}
+
+	public String getRuleCode() {
+		return this.ruleCode;
+	}
+	public void setRuleCode(String ruleCode) {
+		this.ruleCode = ruleCode;
 	}
 
 	public String getRuleName() {

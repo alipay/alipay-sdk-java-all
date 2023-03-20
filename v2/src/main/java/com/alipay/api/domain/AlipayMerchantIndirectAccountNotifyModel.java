@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联小程序机构动账通知
  *
  * @author auto create
- * @since 1.0, 2022-12-01 14:50:16
+ * @since 1.0, 2023-03-17 14:14:14
  */
 public class AlipayMerchantIndirectAccountNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8199441961993155632L;
+	private static final long serialVersionUID = 3493974522124938183L;
 
 	/**
 	 * 交易金额
@@ -50,10 +50,65 @@ OTHER	其他付款方式
 	private String payChannel;
 
 	/**
+	 * 透传支付渠道付款方银行值
+如果是微信渠道，传bank_type字段
+如果是支付宝渠道，拼装字段fund_channel|bank_code|fund_type，中间用英文竖线|间隔
+	 */
+	@ApiField("payer_bank_type")
+	private String payerBankType;
+
+	/**
+	 * 付款用户在当前商户的当天消费总金额
+	 */
+	@ApiField("payer_total_amount_on_the_merchant")
+	private String payerTotalAmountOnTheMerchant;
+
+	/**
+	 * 付款用户在该商家当天的消费笔数
+	 */
+	@ApiField("payer_total_count_on_the_merchant")
+	private Long payerTotalCountOnTheMerchant;
+
+	/**
+	 * 付款方用户编号。
+如果微信=openid
+如果是支付宝=buyer_user_id
+	 */
+	@ApiField("payer_user_no")
+	private String payerUserNo;
+
+	/**
+	 * 若商家在机构侧存在多个门店，可上报此交易对应机构侧的门店编号
+	 */
+	@ApiField("shop_code")
+	private String shopCode;
+
+	/**
+	 * 若商家在机构侧存在多个门店，可上报此交易对应机构侧的门店名称
+	 */
+	@ApiField("shop_name")
+	private String shopName;
+
+	/**
 	 * 商户smid (支付宝进件商户号)
 	 */
 	@ApiField("smid")
 	private String smid;
+
+	/**
+	 * 三方机构分配的商户识别码
+如果是支付宝=smid
+如果是微信 = sub_mch_id
+	 */
+	@ApiField("third_party_merchant_no")
+	private String thirdPartyMerchantNo;
+
+	/**
+	 * 第三方订单号
+（支付宝、微信等第三方返回的交易订单号）
+	 */
+	@ApiField("third_party_trade_no")
+	private String thirdPartyTradeNo;
 
 	/**
 	 * 当日收款总金额
@@ -108,11 +163,67 @@ OTHER	其他付款方式
 		this.payChannel = payChannel;
 	}
 
+	public String getPayerBankType() {
+		return this.payerBankType;
+	}
+	public void setPayerBankType(String payerBankType) {
+		this.payerBankType = payerBankType;
+	}
+
+	public String getPayerTotalAmountOnTheMerchant() {
+		return this.payerTotalAmountOnTheMerchant;
+	}
+	public void setPayerTotalAmountOnTheMerchant(String payerTotalAmountOnTheMerchant) {
+		this.payerTotalAmountOnTheMerchant = payerTotalAmountOnTheMerchant;
+	}
+
+	public Long getPayerTotalCountOnTheMerchant() {
+		return this.payerTotalCountOnTheMerchant;
+	}
+	public void setPayerTotalCountOnTheMerchant(Long payerTotalCountOnTheMerchant) {
+		this.payerTotalCountOnTheMerchant = payerTotalCountOnTheMerchant;
+	}
+
+	public String getPayerUserNo() {
+		return this.payerUserNo;
+	}
+	public void setPayerUserNo(String payerUserNo) {
+		this.payerUserNo = payerUserNo;
+	}
+
+	public String getShopCode() {
+		return this.shopCode;
+	}
+	public void setShopCode(String shopCode) {
+		this.shopCode = shopCode;
+	}
+
+	public String getShopName() {
+		return this.shopName;
+	}
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+
 	public String getSmid() {
 		return this.smid;
 	}
 	public void setSmid(String smid) {
 		this.smid = smid;
+	}
+
+	public String getThirdPartyMerchantNo() {
+		return this.thirdPartyMerchantNo;
+	}
+	public void setThirdPartyMerchantNo(String thirdPartyMerchantNo) {
+		this.thirdPartyMerchantNo = thirdPartyMerchantNo;
+	}
+
+	public String getThirdPartyTradeNo() {
+		return this.thirdPartyTradeNo;
+	}
+	public void setThirdPartyTradeNo(String thirdPartyTradeNo) {
+		this.thirdPartyTradeNo = thirdPartyTradeNo;
 	}
 
 	public String getTotalAmount() {

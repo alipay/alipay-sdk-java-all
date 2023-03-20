@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:51:41
+ * @since 1.0, 2023-03-16 23:46:40
  */
 public class AlipayFundWalletConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7393985278727276289L;
+	private static final long serialVersionUID = 1154721368162515551L;
 
 	/** 
 	 * 实际可以提现/销户后退的金额
 	 */
 	@ApiField("actual_available_amount")
 	private String actualAvailableAmount;
+
+	/** 
+	 * 专项账户金额详情
+	 */
+	@ApiField("amount_details")
+	private String amountDetails;
 
 	/** 
 	 * 可用金额
@@ -55,6 +61,13 @@ public class AlipayFundWalletConsultResponse extends AlipayResponse {
 	}
 	public String getActualAvailableAmount( ) {
 		return this.actualAvailableAmount;
+	}
+
+	public void setAmountDetails(String amountDetails) {
+		this.amountDetails = amountDetails;
+	}
+	public String getAmountDetails( ) {
+		return this.amountDetails;
 	}
 
 	public void setAvailableAmount(String availableAmount) {

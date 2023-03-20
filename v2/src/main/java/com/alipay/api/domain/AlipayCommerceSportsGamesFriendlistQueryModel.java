@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支付宝好友列表
  *
  * @author auto create
- * @since 1.0, 2022-12-13 16:04:52
+ * @since 1.0, 2023-03-15 13:58:37
  */
 public class AlipayCommerceSportsGamesFriendlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3465581272177913165L;
+	private static final long serialVersionUID = 8341739463762852246L;
 
 	/**
 	 * 蚂蚁统一会员ID

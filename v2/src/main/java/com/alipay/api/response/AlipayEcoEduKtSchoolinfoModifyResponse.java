@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoEduKtSchoolinfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8276761254897768824L;
+	private static final long serialVersionUID = 4124756343783715447L;
 
 	/** 
 	 * 支付宝分配给学校的编码，作为学校在支付宝的标识

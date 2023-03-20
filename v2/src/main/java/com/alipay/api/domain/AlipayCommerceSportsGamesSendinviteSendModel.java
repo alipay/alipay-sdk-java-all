@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 向好友发送邀请消息
  *
  * @author auto create
- * @since 1.0, 2022-12-13 13:24:15
+ * @since 1.0, 2023-03-15 13:57:09
  */
 public class AlipayCommerceSportsGamesSendinviteSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5437283375544994595L;
+	private static final long serialVersionUID = 1696914326466565358L;
 
 	/**
 	 * 业务类型

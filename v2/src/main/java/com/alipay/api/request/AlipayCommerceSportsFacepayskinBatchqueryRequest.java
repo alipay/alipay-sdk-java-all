@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.facepayskin.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:56:43
+ * @since 1.0, 2023-03-15 13:57:37
  */
 public class AlipayCommerceSportsFacepayskinBatchqueryRequest implements AlipayRequest<AlipayCommerceSportsFacepayskinBatchqueryResponse> {
 
