@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息
  *
  * @author auto create
- * @since 1.0, 2023-03-06 17:54:02
+ * @since 1.0, 2023-03-23 16:23:09
  */
 public class OrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5171916815637361971L;
+	private static final long serialVersionUID = 8445381541429581958L;
 
 	/**
 	 * 预约时间，字段名称:预约上门取件时间

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.payforprivilege.withdrawamount.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:16:42
+ * @since 1.0, 2023-03-23 22:36:42
  */
 public class AlipayCommercePayforprivilegeWithdrawamountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1472855314122532586L;
+	private static final long serialVersionUID = 7161892434283465245L;
 
 	/** 
 	 * 总金额

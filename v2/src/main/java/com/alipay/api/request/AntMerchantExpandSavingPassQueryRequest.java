@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.saving.pass.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:51:41
+ * @since 1.0, 2023-03-23 20:01:43
  */
 public class AntMerchantExpandSavingPassQueryRequest implements AlipayRequest<AntMerchantExpandSavingPassQueryResponse> {
 

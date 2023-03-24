@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.digitalidentity.certificate.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:31:45
+ * @since 1.0, 2023-03-23 20:51:44
  */
 public class AlipayUserDigitalidentityCertificateSyncRequest implements AlipayRequest<AlipayUserDigitalidentityCertificateSyncResponse> {
 

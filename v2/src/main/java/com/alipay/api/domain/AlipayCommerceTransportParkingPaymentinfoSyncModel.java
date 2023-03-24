@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车支付信息同步接口
  *
  * @author auto create
- * @since 1.0, 2022-12-14 15:03:50
+ * @since 1.0, 2023-03-23 14:22:17
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1856471612155115899L;
+	private static final long serialVersionUID = 3485613245495999865L;
 
 	/**
 	 * 停车场内缴费后，允许出场的免费时长分钟数
@@ -44,6 +44,16 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayOb
 	 */
 	@ApiField("payment_time")
 	private Date paymentTime;
+
+	/**
+	 * 支付方式
+ALIPAY：支付宝支付
+CASH：现金
+OTHER：其他渠道
+FREE：免费
+	 */
+	@ApiField("payment_type")
+	private String paymentType;
 
 	/**
 	 * 车牌颜色，车牌颜色，枚举支持：
@@ -103,6 +113,13 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayOb
 	}
 	public void setPaymentTime(Date paymentTime) {
 		this.paymentTime = paymentTime;
+	}
+
+	public String getPaymentType() {
+		return this.paymentType;
+	}
+	public void setPaymentType(String paymentType) {
+		this.paymentType = paymentType;
 	}
 
 	public String getPlateColor() {

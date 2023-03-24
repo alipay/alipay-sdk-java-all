@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.scene.user.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:36:42
+ * @since 1.0, 2023-03-23 20:11:43
  */
 public class AlipayCommerceEducateSceneUserSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5378726169274756968L;
+	private static final long serialVersionUID = 4243616484566611361L;
 
 	/** 
 	 * 支付宝为学生（教职工）生成的刷脸openId

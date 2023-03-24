@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.smartcounty.loaninfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:21:39
+ * @since 1.0, 2023-03-23 20:51:40
  */
 public class MybankCreditLoanapplySmartcountyLoaninfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2212365775811668359L;
+	private static final long serialVersionUID = 7869414125439964239L;
 
 	/** 
 	 * 前准入状态

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.settle.efund.unfreeze request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:26:39
+ * @since 1.0, 2023-03-23 20:21:39
  */
 public class AlipayTradeSettleEfundUnfreezeRequest implements AlipayRequest<AlipayTradeSettleEfundUnfreezeResponse> {
 

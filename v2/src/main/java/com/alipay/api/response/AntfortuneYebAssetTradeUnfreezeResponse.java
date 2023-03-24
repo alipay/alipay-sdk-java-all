@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.yeb.asset.trade.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:31:39
+ * @since 1.0, 2023-03-23 22:11:41
  */
 public class AntfortuneYebAssetTradeUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2725558311423687833L;
+	private static final long serialVersionUID = 5833567612332269297L;
 
 	/** 
 	 * 订单号

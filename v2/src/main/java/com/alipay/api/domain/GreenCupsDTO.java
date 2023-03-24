@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GreenCupsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2891646567251955534L;
+	private static final long serialVersionUID = 7173625964276578165L;
 
 	/**
 	 * 环保二级类目；字典值: 

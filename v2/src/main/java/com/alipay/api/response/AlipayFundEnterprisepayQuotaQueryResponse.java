@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.enterprisepay.quota.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:41:40
+ * @since 1.0, 2023-03-23 20:16:41
  */
 public class AlipayFundEnterprisepayQuotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5716716532189182544L;
+	private static final long serialVersionUID = 7775337589347412617L;
 
 	/** 
 	 * 额度详情信息列表

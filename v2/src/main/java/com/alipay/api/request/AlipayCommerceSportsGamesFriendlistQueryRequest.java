@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.games.friendlist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-15 13:58:37
+ * @since 1.0, 2023-03-23 19:56:40
  */
 public class AlipayCommerceSportsGamesFriendlistQueryRequest implements AlipayRequest<AlipayCommerceSportsGamesFriendlistQueryResponse> {
 

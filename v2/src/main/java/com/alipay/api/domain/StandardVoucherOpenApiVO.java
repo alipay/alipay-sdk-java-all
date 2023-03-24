@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StandardVoucherOpenApiVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5687461862597675737L;
+	private static final long serialVersionUID = 2211926745991495479L;
 
 	/**
 	 * 是否有算法打标推荐值

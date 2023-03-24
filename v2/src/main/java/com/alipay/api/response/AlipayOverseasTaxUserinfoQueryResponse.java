@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.userinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:06:39
+ * @since 1.0, 2023-03-23 20:16:40
  */
 public class AlipayOverseasTaxUserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6744594965997942957L;
+	private static final long serialVersionUID = 6856346987273331497L;
 
 	/** 
 	 * 用户是否符合支付宝退税资金收款条件。包括用户状态，认证状态等的校验。true为符合支付宝退税资金收款条件，false为不符合

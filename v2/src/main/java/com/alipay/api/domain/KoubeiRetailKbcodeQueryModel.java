@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiRetailKbcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4871365721273215115L;
+	private static final long serialVersionUID = 2713992614348694654L;
 
 	/**
 	 * 创建码接口返回的批次id，如果不填写则查询这个带运营商户下所有开放接口生成的码

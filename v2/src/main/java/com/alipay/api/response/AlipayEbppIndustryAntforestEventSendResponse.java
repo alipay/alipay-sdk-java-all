@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.antforest.event.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:31:45
+ * @since 1.0, 2023-03-23 20:56:42
  */
 public class AlipayEbppIndustryAntforestEventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5246597829452335831L;
+	private static final long serialVersionUID = 8375395375575518892L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.yeb.asset.order.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:31:39
+ * @since 1.0, 2023-03-23 20:21:39
  */
 public class AntfortuneYebAssetOrderQueryRequest implements AlipayRequest<AntfortuneYebAssetOrderQueryResponse> {
 

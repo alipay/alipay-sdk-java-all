@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.user.point.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:31:45
+ * @since 1.0, 2023-03-23 20:36:43
  */
 public class AlipayInsAutoUserPointQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4718428337217419179L;
+	private static final long serialVersionUID = 8698666315165578727L;
 
 	/** 
 	 * 用户当前积分是否可兑换

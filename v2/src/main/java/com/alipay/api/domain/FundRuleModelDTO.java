@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundRuleModelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8283516118376321443L;
+	private static final long serialVersionUID = 2127848372385427723L;
 
 	/**
 	 * 出资协议号，由出资协议创建时获取

@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanRepayplanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2361737865212722215L;
+	private static final long serialVersionUID = 2133966252144619918L;
 
 	/** 
 	 * 贷款合约编号，每笔用户贷款申请时，放款签约时生成的唯一合约编号，作为用户贷款账单的唯一标识

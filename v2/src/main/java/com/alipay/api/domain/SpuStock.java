@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品spu库存
  *
  * @author auto create
- * @since 1.0, 2023-03-14 15:01:49
+ * @since 1.0, 2023-03-23 11:00:07
  */
 public class SpuStock extends AlipayObject {
 
-	private static final long serialVersionUID = 2577711269753186167L;
+	private static final long serialVersionUID = 8116219696751651614L;
 
 	/**
 	 * 对用户展示的实际可售卖库存数量。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antforest.account.transfer request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:01:42
+ * @since 1.0, 2023-03-23 20:11:44
  */
 public class AlipaySocialAntforestAccountTransferRequest implements AlipayRequest<AlipaySocialAntforestAccountTransferResponse> {
 

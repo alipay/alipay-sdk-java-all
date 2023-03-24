@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.auth.binding.get request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:21:42
+ * @since 1.0, 2023-03-23 21:31:41
  */
 public class AlipayCommerceTransportAuthBindingGetRequest implements AlipayRequest<AlipayCommerceTransportAuthBindingGetResponse> {
 

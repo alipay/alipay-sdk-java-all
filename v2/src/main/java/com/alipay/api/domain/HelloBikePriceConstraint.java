@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HelloBikePriceConstraint extends AlipayObject {
 
-	private static final long serialVersionUID = 3248789641242279531L;
+	private static final long serialVersionUID = 4635461763621829358L;
 
 	/**
 	 * 优惠卡原价，单位为分

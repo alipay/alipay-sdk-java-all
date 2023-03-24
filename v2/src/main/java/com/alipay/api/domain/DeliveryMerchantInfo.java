@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
 限制：曝光商户号需与投放归属商户号相等或有同品牌关系或有授权关系。
  *
  * @author auto create
- * @since 1.0, 2022-11-24 17:51:28
+ * @since 1.0, 2023-03-22 20:10:03
  */
 public class DeliveryMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6154589455322856267L;
+	private static final long serialVersionUID = 4694353588379518642L;
 
 	/**
 	 * 商户id

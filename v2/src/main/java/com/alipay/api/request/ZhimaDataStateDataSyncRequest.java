@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.data.state.data.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:56:43
+ * @since 1.0, 2023-03-23 19:56:42
  */
 public class ZhimaDataStateDataSyncRequest implements AlipayRequest<ZhimaDataStateDataSyncResponse> {
 

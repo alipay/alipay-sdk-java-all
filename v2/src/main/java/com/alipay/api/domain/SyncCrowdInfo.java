@@ -10,17 +10,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人群同步信息
  *
  * @author auto create
- * @since 1.0, 2023-03-01 10:33:54
+ * @since 1.0, 2023-03-20 20:44:21
  */
 public class SyncCrowdInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2118163112332584212L;
+	private static final long serialVersionUID = 6676613111937572619L;
 
 	/**
-	 * 来源应用
+	 * 来源app
 	 */
-	@ApiField("auth_info")
-	private CrowdAuthInfo authInfo;
+	@ApiField("app_name")
+	private String appName;
+
+	/**
+	 * 外部app给出
+	 */
+	@ApiField("app_token")
+	private String appToken;
+
+	/**
+	 * 业务code
+	 */
+	@ApiField("biz_code")
+	private String bizCode;
 
 	/**
 	 * 操作的人群对象
@@ -30,16 +42,36 @@ public class SyncCrowdInfo extends AlipayObject {
 	private List<CrowdOperations> operations;
 
 	/**
-	 * 目标账号
+	 * 目标用户
 	 */
-	@ApiField("target")
-	private CrowdTarget target;
+	@ApiField("target_id")
+	private String targetId;
 
-	public CrowdAuthInfo getAuthInfo() {
-		return this.authInfo;
+	/**
+	 * 目标类型
+	 */
+	@ApiField("target_type")
+	private String targetType;
+
+	public String getAppName() {
+		return this.appName;
 	}
-	public void setAuthInfo(CrowdAuthInfo authInfo) {
-		this.authInfo = authInfo;
+	public void setAppName(String appName) {
+		this.appName = appName;
+	}
+
+	public String getAppToken() {
+		return this.appToken;
+	}
+	public void setAppToken(String appToken) {
+		this.appToken = appToken;
+	}
+
+	public String getBizCode() {
+		return this.bizCode;
+	}
+	public void setBizCode(String bizCode) {
+		this.bizCode = bizCode;
 	}
 
 	public List<CrowdOperations> getOperations() {
@@ -49,11 +81,18 @@ public class SyncCrowdInfo extends AlipayObject {
 		this.operations = operations;
 	}
 
-	public CrowdTarget getTarget() {
-		return this.target;
+	public String getTargetId() {
+		return this.targetId;
 	}
-	public void setTarget(CrowdTarget target) {
-		this.target = target;
+	public void setTargetId(String targetId) {
+		this.targetId = targetId;
+	}
+
+	public String getTargetType() {
+		return this.targetType;
+	}
+	public void setTargetType(String targetType) {
+		this.targetType = targetType;
 	}
 
 }

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.quotation.protocol.authorize.check response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:01:42
+ * @since 1.0, 2023-03-23 21:06:43
  */
 public class AlipayFinanceQuotationProtocolAuthorizeCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5343129937925817976L;
+	private static final long serialVersionUID = 1221848413996135415L;
 
 	/** 
 	 * 协议最终是否订阅的结果

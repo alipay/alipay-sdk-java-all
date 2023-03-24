@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditpaySubquota extends AlipayObject {
 
-	private static final long serialVersionUID = 4224368375943522253L;
+	private static final long serialVersionUID = 8549497448211724127L;
 
 	/**
 	 * 可用额度,单位分

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.msgto.msg.freeze request
  * 
  * @author auto create
- * @since 1.0, 2023-03-16 16:01:44
+ * @since 1.0, 2023-03-20 23:11:43
  */
 public class AlipaySecurityRiskMsgtoMsgFreezeRequest implements AlipayRequest<AlipaySecurityRiskMsgtoMsgFreezeResponse> {
 

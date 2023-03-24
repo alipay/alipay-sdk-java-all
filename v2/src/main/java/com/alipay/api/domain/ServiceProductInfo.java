@@ -10,17 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务产品
  *
  * @author auto create
- * @since 1.0, 2023-03-09 18:03:28
+ * @since 1.0, 2023-03-22 10:33:35
  */
 public class ServiceProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5895258286914234598L;
-
-	/**
-	 * 是否可以独立对客
-	 */
-	@ApiField("service_alone")
-	private String serviceAlone;
+	private static final long serialVersionUID = 5861959287579431766L;
 
 	/**
 	 * 服务描述
@@ -51,18 +45,6 @@ public class ServiceProductInfo extends AlipayObject {
 	 */
 	@ApiField("service_name")
 	private String serviceName;
-
-	/**
-	 * 是否可以对外开放
-	 */
-	@ApiField("service_open")
-	private String serviceOpen;
-
-	/**
-	 * 服务排序key
-	 */
-	@ApiField("service_order_key")
-	private Long serviceOrderKey;
 
 	/**
 	 * 服务是否需要订购
@@ -126,13 +108,6 @@ public class ServiceProductInfo extends AlipayObject {
 	@ApiField("service_type")
 	private String serviceType;
 
-	public String getServiceAlone() {
-		return this.serviceAlone;
-	}
-	public void setServiceAlone(String serviceAlone) {
-		this.serviceAlone = serviceAlone;
-	}
-
 	public String getServiceDesc() {
 		return this.serviceDesc;
 	}
@@ -166,20 +141,6 @@ public class ServiceProductInfo extends AlipayObject {
 	}
 	public void setServiceName(String serviceName) {
 		this.serviceName = serviceName;
-	}
-
-	public String getServiceOpen() {
-		return this.serviceOpen;
-	}
-	public void setServiceOpen(String serviceOpen) {
-		this.serviceOpen = serviceOpen;
-	}
-
-	public Long getServiceOrderKey() {
-		return this.serviceOrderKey;
-	}
-	public void setServiceOrderKey(Long serviceOrderKey) {
-		this.serviceOrderKey = serviceOrderKey;
 	}
 
 	public String getServiceOrderModel() {

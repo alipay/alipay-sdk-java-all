@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.servicemarket.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:00:59
+ * @since 1.0, 2023-03-23 17:26:40
  */
 public class AlipayOpenServicemarketOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6488477496753219659L;
+	private static final long serialVersionUID = 5639577317988416191L;
+
+	/** 
+	 * true：开启；false：关闭；需要同步校验commodity_id，如果没有查询到订购信息的话，忽略该字段返回值
+	 */
+	@ApiField("auto_upgrade")
+	private Boolean autoUpgrade;
 
 	/** 
 	 * 订购服务商品ID
@@ -53,6 +59,13 @@ public class AlipayOpenServicemarketOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("total_size")
 	private Long totalSize;
+
+	public void setAutoUpgrade(Boolean autoUpgrade) {
+		this.autoUpgrade = autoUpgrade;
+	}
+	public Boolean getAutoUpgrade( ) {
+		return this.autoUpgrade;
+	}
 
 	public void setCommodityId(String commodityId) {
 		this.commodityId = commodityId;

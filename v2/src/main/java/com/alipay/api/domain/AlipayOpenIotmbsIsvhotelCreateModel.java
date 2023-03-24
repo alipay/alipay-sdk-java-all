@@ -11,40 +11,40 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsIsvhotelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4746662113569422915L;
+	private static final long serialVersionUID = 7443947936225676177L;
 
 	/**
-	 * appid+酒店关联的appid，后面相应的小程序调用相关组件时用于鉴权,多个appid之间用,分割
+	 * 酒店关联的appid，后面相应的小程序调用相关组件时用于鉴权,多个appid之间用,分割
 	 */
 	@ApiField("appid")
 	private String appid;
 
 	/**
-	 * area_code:酒店所在区县的编码
+	 * 酒店所在区县的编码
 	 */
 	@ApiField("area_code")
 	private String areaCode;
 
 	/**
-	 * project_addr+酒店项目所处的详细地址
+	 * 酒店项目所处的详细地址
 	 */
 	@ApiField("project_addr")
 	private String projectAddr;
 
 	/**
-	 * project_flag用于标记创建的酒店是否是线上真实项目
+	 * 用于标记创建的酒店是否是线上真实项目
 	 */
 	@ApiField("project_flag")
 	private String projectFlag;
 
 	/**
-	 * project_id，酒店项目id。
+	 * 酒店项目id。
 	 */
 	@ApiField("project_id")
 	private String projectId;
 
 	/**
-	 * project_name+isv定义的酒店名
+	 * isv定义的酒店名
 	 */
 	@ApiField("project_name")
 	private String projectName;

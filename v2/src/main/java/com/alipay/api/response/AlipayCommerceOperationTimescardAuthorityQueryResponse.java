@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.timescard.authority.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:56:44
+ * @since 1.0, 2023-03-23 20:06:44
  */
 public class AlipayCommerceOperationTimescardAuthorityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1353372562369158639L;
+	private static final long serialVersionUID = 1527941337211915775L;
 
 	/** 
 	 * 详情

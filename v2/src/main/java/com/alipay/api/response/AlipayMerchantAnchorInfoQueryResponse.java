@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.anchor.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:01:39
+ * @since 1.0, 2023-03-23 19:56:39
  */
 public class AlipayMerchantAnchorInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4761254338193227918L;
+	private static final long serialVersionUID = 3666814285918728257L;
 
 	/** 
 	 * 主播ID+唯一+天猫好房带货+根据uid获取

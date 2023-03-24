@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.signresult.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:56:40
+ * @since 1.0, 2023-03-23 22:21:42
  */
 public class AlipayEbppInstserviceSignresultBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6428745483721197819L;
+	private static final long serialVersionUID = 7448448449754588228L;
 
 	/** 
 	 * json格式用户签约信息；格式：{"字段名":"字段值"}

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2023-03-10 16:11:34
+ * @since 1.0, 2023-03-21 10:54:30
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 7757891182791641313L;
+	private static final long serialVersionUID = 3259471195764416247L;
 
 	/**
 	 * 转化流水号，用于幂等
@@ -24,6 +24,12 @@ public class ConversionData extends AlipayObject {
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
+
+	/**
+	 * 转化回调扩展信息
+	 */
+	@ApiField("callback_ext_info")
+	private String callbackExtInfo;
 
 	/**
 	 * 当source=DATASET或者OTHER时使用：
@@ -163,6 +169,13 @@ PID - 2088pid
 	}
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
+	}
+
+	public String getCallbackExtInfo() {
+		return this.callbackExtInfo;
+	}
+	public void setCallbackExtInfo(String callbackExtInfo) {
+		this.callbackExtInfo = callbackExtInfo;
 	}
 
 	public String getConversionAmount() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联小程序机构动账通知
  *
  * @author auto create
- * @since 1.0, 2023-03-17 14:14:14
+ * @since 1.0, 2023-03-21 14:47:49
  */
 public class AlipayMerchantIndirectAccountNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3493974522124938183L;
+	private static final long serialVersionUID = 4292113185531753572L;
 
 	/**
 	 * 交易金额

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.fundplan.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:16:45
+ * @since 1.0, 2023-03-23 22:11:42
  */
 public class AlipayFundJointaccountFundplanDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2848517781175343688L;
+	private static final long serialVersionUID = 8741248561821692819L;
 
 	
 

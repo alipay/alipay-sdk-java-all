@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部指定买家
  *
  * @author auto create
- * @since 1.0, 2023-03-06 17:54:02
+ * @since 1.0, 2023-03-23 16:23:18
  */
 public class ExtUserInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2231739349118969667L;
+	private static final long serialVersionUID = 5337149433865597781L;
 
 	/**
 	 * 买家证件号。 注：need_check_info=T或fix_buyer=T时该参数才有效，支付宝会比较买家在支付宝留存的证件号码与该参数传入的值是否匹配。

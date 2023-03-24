@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.miniapp.favoriteext.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:46:40
+ * @since 1.0, 2023-03-23 21:26:42
  */
 public class AlipayOpenMiniMiniappFavoriteextDeleteRequest implements AlipayRequest<AlipayOpenMiniMiniappFavoriteextDeleteResponse> {
 

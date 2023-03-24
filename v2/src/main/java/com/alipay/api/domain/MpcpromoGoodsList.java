@@ -11,11 +11,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * mpcpromo商品数据
  *
  * @author auto create
- * @since 1.0, 2023-02-09 11:46:44
+ * @since 1.0, 2023-03-22 16:39:50
  */
 public class MpcpromoGoodsList extends AlipayObject {
 
-	private static final long serialVersionUID = 1245158561197136278L;
+	private static final long serialVersionUID = 3843331493587873452L;
+
+	/**
+	 * 商品可用的城市列表
+	 */
+	@ApiListField("available_city_list")
+	@ApiField("string")
+	private List<String> availableCityList;
 
 	/**
 	 * 商品品牌名称
@@ -42,22 +49,34 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String cateCnt;
 
 	/**
+	 * 正整数
+	 */
+	@ApiField("comment_cnt")
+	private String commentCnt;
+
+	/**
+	 * 商品描述
+	 */
+	@ApiField("content")
+	private String content;
+
+	/**
 	 * 必填，非负数且保留两位小数，免费商品填写0.00
 	 */
 	@ApiField("current_price")
 	private String currentPrice;
 
 	/**
-	 * 正整数
+	 * 币种默认CNY。非负数。保留两位小数。
+	 */
+	@ApiField("deposit_amount")
+	private String depositAmount;
+
+	/**
+	 * 商品详情图片数量；正整数
 	 */
 	@ApiField("detail_pic_num")
 	private String detailPicNum;
-
-	/**
-	 * 用于接收返回的错误信息
-	 */
-	@ApiField("ext_info")
-	private String extInfo;
 
 	/**
 	 * 包邮/不包邮/满足条件包邮，三选一
@@ -66,13 +85,19 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String freeShipping;
 
 	/**
+	 * 租赁商品的新旧描述
+	 */
+	@ApiField("fresh_degree")
+	private String freshDegree;
+
+	/**
 	 * 物品的唯一id
 	 */
 	@ApiField("id")
 	private String id;
 
 	/**
-	 * 非负数且保留两位小数
+	 * 商品原价；非负数且保留两位小数
 	 */
 	@ApiField("origin_price")
 	private String originPrice;
@@ -104,13 +129,74 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private Date pubTime;
 
 	/**
+	 * 满分5分
+	 */
+	@ApiField("rating")
+	private String rating;
+
+	/**
+	 * 商品最小租赁天数
+	 */
+	@ApiField("rental_date")
+	private String rentalDate;
+
+	/**
+	 * 商品是否支持租满即送
+	 */
+	@ApiField("rental_free")
+	private String rentalFree;
+
+	/**
+	 * 商品积累销量
+	 */
+	@ApiField("sale_number")
+	private String saleNumber;
+
+	/**
+	 * 1：支持 2：不支持 3：满足条件支持
+	 */
+	@ApiField("self_pickup")
+	private String selfPickup;
+
+	/**
+	 * 非负整数
+	 */
+	@ApiField("share_cnt")
+	private String shareCnt;
+
+	/**
+	 * 百分比，值范围0.00%-100.00%，保留两位小数
+	 */
+	@ApiField("shipment_rate")
+	private String shipmentRate;
+
+	/**
+	 * 商品支持的发货城市列表
+	 */
+	@ApiListField("shipments")
+	@ApiField("string")
+	private List<String> shipments;
+
+	/**
 	 * 运费
 	 */
 	@ApiField("shipping_money")
 	private String shippingMoney;
 
 	/**
-	 * spu维度的id
+	 * 商品所在店铺对应的店铺名称
+	 */
+	@ApiField("shop_name")
+	private String shopName;
+
+	/**
+	 * 商品来源类型
+	 */
+	@ApiField("source_id")
+	private String sourceId;
+
+	/**
+	 * 商品spu维度的id
 	 */
 	@ApiField("spu_id")
 	private String spuId;
@@ -120,6 +206,18 @@ public class MpcpromoGoodsList extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 库存数量为0的商品不会出现在搜索结果里面
+	 */
+	@ApiField("stock_num")
+	private String stockNum;
+
+	/**
+	 * 非负数，保留两位小数，值范围0.00-5.00分
+	 */
+	@ApiField("store_rating")
+	private String storeRating;
 
 	/**
 	 * 商品标签，如首页展示标签“特惠”，“热卖”,或详情页“满50包邮”,“假一赔三”等。多值示例：“特惠,热卖"
@@ -132,6 +230,13 @@ public class MpcpromoGoodsList extends AlipayObject {
 	 */
 	@ApiField("title")
 	private String title;
+
+	public List<String> getAvailableCityList() {
+		return this.availableCityList;
+	}
+	public void setAvailableCityList(List<String> availableCityList) {
+		this.availableCityList = availableCityList;
+	}
 
 	public String getBrand() {
 		return this.brand;
@@ -161,11 +266,32 @@ public class MpcpromoGoodsList extends AlipayObject {
 		this.cateCnt = cateCnt;
 	}
 
+	public String getCommentCnt() {
+		return this.commentCnt;
+	}
+	public void setCommentCnt(String commentCnt) {
+		this.commentCnt = commentCnt;
+	}
+
+	public String getContent() {
+		return this.content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+
 	public String getCurrentPrice() {
 		return this.currentPrice;
 	}
 	public void setCurrentPrice(String currentPrice) {
 		this.currentPrice = currentPrice;
+	}
+
+	public String getDepositAmount() {
+		return this.depositAmount;
+	}
+	public void setDepositAmount(String depositAmount) {
+		this.depositAmount = depositAmount;
 	}
 
 	public String getDetailPicNum() {
@@ -175,18 +301,18 @@ public class MpcpromoGoodsList extends AlipayObject {
 		this.detailPicNum = detailPicNum;
 	}
 
-	public String getExtInfo() {
-		return this.extInfo;
-	}
-	public void setExtInfo(String extInfo) {
-		this.extInfo = extInfo;
-	}
-
 	public String getFreeShipping() {
 		return this.freeShipping;
 	}
 	public void setFreeShipping(String freeShipping) {
 		this.freeShipping = freeShipping;
+	}
+
+	public String getFreshDegree() {
+		return this.freshDegree;
+	}
+	public void setFreshDegree(String freshDegree) {
+		this.freshDegree = freshDegree;
 	}
 
 	public String getId() {
@@ -231,11 +357,81 @@ public class MpcpromoGoodsList extends AlipayObject {
 		this.pubTime = pubTime;
 	}
 
+	public String getRating() {
+		return this.rating;
+	}
+	public void setRating(String rating) {
+		this.rating = rating;
+	}
+
+	public String getRentalDate() {
+		return this.rentalDate;
+	}
+	public void setRentalDate(String rentalDate) {
+		this.rentalDate = rentalDate;
+	}
+
+	public String getRentalFree() {
+		return this.rentalFree;
+	}
+	public void setRentalFree(String rentalFree) {
+		this.rentalFree = rentalFree;
+	}
+
+	public String getSaleNumber() {
+		return this.saleNumber;
+	}
+	public void setSaleNumber(String saleNumber) {
+		this.saleNumber = saleNumber;
+	}
+
+	public String getSelfPickup() {
+		return this.selfPickup;
+	}
+	public void setSelfPickup(String selfPickup) {
+		this.selfPickup = selfPickup;
+	}
+
+	public String getShareCnt() {
+		return this.shareCnt;
+	}
+	public void setShareCnt(String shareCnt) {
+		this.shareCnt = shareCnt;
+	}
+
+	public String getShipmentRate() {
+		return this.shipmentRate;
+	}
+	public void setShipmentRate(String shipmentRate) {
+		this.shipmentRate = shipmentRate;
+	}
+
+	public List<String> getShipments() {
+		return this.shipments;
+	}
+	public void setShipments(List<String> shipments) {
+		this.shipments = shipments;
+	}
+
 	public String getShippingMoney() {
 		return this.shippingMoney;
 	}
 	public void setShippingMoney(String shippingMoney) {
 		this.shippingMoney = shippingMoney;
+	}
+
+	public String getShopName() {
+		return this.shopName;
+	}
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+
+	public String getSourceId() {
+		return this.sourceId;
+	}
+	public void setSourceId(String sourceId) {
+		this.sourceId = sourceId;
 	}
 
 	public String getSpuId() {
@@ -250,6 +446,20 @@ public class MpcpromoGoodsList extends AlipayObject {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getStockNum() {
+		return this.stockNum;
+	}
+	public void setStockNum(String stockNum) {
+		this.stockNum = stockNum;
+	}
+
+	public String getStoreRating() {
+		return this.storeRating;
+	}
+	public void setStoreRating(String storeRating) {
+		this.storeRating = storeRating;
 	}
 
 	public String getTags() {

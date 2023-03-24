@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.gov.fastmode.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:31:46
+ * @since 1.0, 2023-03-23 20:26:43
  */
 public class AlipayEbppIndustryGovFastmodeSyncRequest implements AlipayRequest<AlipayEbppIndustryGovFastmodeSyncResponse> {
 

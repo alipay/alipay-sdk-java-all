@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.advanced.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:06:41
+ * @since 1.0, 2023-03-23 22:01:44
  */
 public class AlipayOverseasTaxAdvancedStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5769157798187361355L;
+	private static final long serialVersionUID = 1824763864613963566L;
 
 	/** 
 	 * 用付款码下单并冻结成功后会返回支付宝用户id

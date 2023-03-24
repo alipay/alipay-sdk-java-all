@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.bankcard.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:51:44
+ * @since 1.0, 2023-03-23 20:26:43
  */
 public class AlipayCommerceMedicalBankcardCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4418318957742879769L;
+	private static final long serialVersionUID = 2773323144963516256L;
 
 	/** 
 	 * 银行卡是否绑定查询的出参

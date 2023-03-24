@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.business.order.checkin.orderinfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:21:39
+ * @since 1.0, 2023-03-23 20:31:39
  */
 public class AlipayBusinessOrderCheckinOrderinfoSyncRequest implements AlipayRequest<AlipayBusinessOrderCheckinOrderinfoSyncResponse> {
 

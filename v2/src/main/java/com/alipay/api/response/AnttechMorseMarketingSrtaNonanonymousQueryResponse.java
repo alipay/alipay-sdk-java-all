@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.srta.nonanonymous.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:41:42
+ * @since 1.0, 2023-03-23 20:41:41
  */
 public class AnttechMorseMarketingSrtaNonanonymousQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2755276783867552987L;
+	private static final long serialVersionUID = 3834696757161678645L;
 
 	/** 
 	 * 蚂蚁侧返回的唯一标识

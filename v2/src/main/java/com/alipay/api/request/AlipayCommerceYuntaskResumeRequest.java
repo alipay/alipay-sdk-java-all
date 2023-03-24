@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.yuntask.resume request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:31:45
+ * @since 1.0, 2023-03-23 21:56:43
  */
 public class AlipayCommerceYuntaskResumeRequest implements AlipayRequest<AlipayCommerceYuntaskResumeResponse> {
 

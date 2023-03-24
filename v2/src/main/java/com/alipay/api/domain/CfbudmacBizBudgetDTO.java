@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CfbudmacBizBudgetDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3232167577683956491L;
+	private static final long serialVersionUID = 6332574748821512186L;
 
 	/**
 	 * 方案剩余可用金额

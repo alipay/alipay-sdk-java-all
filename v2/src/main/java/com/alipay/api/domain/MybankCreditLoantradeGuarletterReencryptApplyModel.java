@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoantradeGuarletterReencryptApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2816978855742331395L;
+	private static final long serialVersionUID = 8525849425436763689L;
 
 	/**
 	 * 新的公钥值

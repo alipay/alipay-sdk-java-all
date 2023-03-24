@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayForPrivilegeCardTemplateSecondaryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5835668557483484434L;
+	private static final long serialVersionUID = 6231525337424841461L;
 
 	/**
 	 * 唯一表示该区域的key

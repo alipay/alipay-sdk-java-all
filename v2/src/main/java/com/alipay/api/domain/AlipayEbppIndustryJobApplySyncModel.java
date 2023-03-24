@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人才就业岗位应聘信息同步
  *
  * @author auto create
- * @since 1.0, 2022-09-14 16:49:58
+ * @since 1.0, 2023-03-21 16:18:14
  */
 public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3687588377382192859L;
+	private static final long serialVersionUID = 1645326885422967251L;
 
 	/**
 	 * 应聘信息最新更新时间
@@ -34,11 +34,7 @@ public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 	private String applyInfoUrl;
 
 	/**
-	 * 状态枚举：
-APPLYING：应聘人投递，雇主未处理。
-PROCESSING：雇主开始应聘流程
-APPLY_SUCCESS：应聘成功
-APPLY_FAILED：应聘失败
+	 * 状态枚举
 	 */
 	@ApiField("apply_status")
 	private String applyStatus;

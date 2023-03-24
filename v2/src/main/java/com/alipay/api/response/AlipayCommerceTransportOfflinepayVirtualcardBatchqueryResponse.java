@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.offlinepay.virtualcard.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:21:44
+ * @since 1.0, 2023-03-23 21:26:42
  */
 public class AlipayCommerceTransportOfflinepayVirtualcardBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5148897495498198539L;
+	private static final long serialVersionUID = 8427428726883396392L;
 
 	/** 
 	 * 虚拟卡信息查询结果列表

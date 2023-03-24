@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.shop.follow request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:46:42
+ * @since 1.0, 2023-03-23 20:21:42
  */
 public class AlipayOverseasTravelShopFollowRequest implements AlipayRequest<AlipayOverseasTravelShopFollowResponse> {
 

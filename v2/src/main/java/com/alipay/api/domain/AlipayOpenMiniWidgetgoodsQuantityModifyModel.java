@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniWidgetgoodsQuantityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5329658215815165864L;
+	private static final long serialVersionUID = 8724744472241281196L;
 
 	/**
 	 * 商品的唯一标识，根据该字段修改商品

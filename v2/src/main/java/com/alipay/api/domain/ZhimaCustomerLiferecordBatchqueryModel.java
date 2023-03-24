@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZhimaCustomerLiferecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7199259886431624461L;
+	private static final long serialVersionUID = 7318691618798892724L;
 
 	/**
 	 * 支付宝userId的映射字段

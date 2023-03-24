@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车生活停车平台录入停车场信息
  *
  * @author auto create
- * @since 1.0, 2023-03-17 16:56:36
+ * @since 1.0, 2023-03-22 14:59:40
  */
 public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3713238963993148113L;
+	private static final long serialVersionUID = 6579993664616538951L;
 
 	/**
 	 * 服务商的支付宝账号ID（2088开头的16位纯数字，<a href="https://opendocs.alipay.com/common/02ncut">获取方式</a>），由服务商提供给ISV

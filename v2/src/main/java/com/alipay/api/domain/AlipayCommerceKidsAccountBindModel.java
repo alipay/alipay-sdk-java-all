@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 儿童账户关联
  *
  * @author auto create
- * @since 1.0, 2022-12-12 17:24:50
+ * @since 1.0, 2023-03-20 15:43:39
  */
 public class AlipayCommerceKidsAccountBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6119962721173299523L;
+	private static final long serialVersionUID = 7211944792621624645L;
 
 	/**
 	 * 与child_cert_type对应，如果child_cert_type为IDENTITY_CARD，对应的取值为身份证号

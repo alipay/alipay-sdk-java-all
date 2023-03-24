@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2022-11-30 21:51:49
+ * @since 1.0, 2023-03-21 14:28:18
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4342127844932633986L;
+	private static final long serialVersionUID = 6168226635585258825L;
 
 	/**
 	 * 不限      UNLIMITED
@@ -68,7 +68,7 @@ public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 	private Long count;
 
 	/**
-	 * 雇主名称
+	 * 雇主名称，请使用企业工商注册名
 	 */
 	@ApiField("employer_name")
 	private String employerName;
@@ -112,7 +112,7 @@ CLOSED：招聘结束
 	private String jobDetail;
 
 	/**
-	 * 岗位的小程序详情页URL
+	 * 岗位的小程序详情页URL，地址处理可以参考：https://opendocs.alipay.com/support/01rb18
 	 */
 	@ApiField("job_detail_url")
 	private String jobDetailUrl;
@@ -131,7 +131,7 @@ CLOSED：招聘结束
 	private String jobName;
 
 	/**
-	 * 岗位标签
+	 * 岗位标签，标签为枚举值，“大学生”、“退役军人”、“特殊人群”、”乡村”，如同步这些标签，会提高透出权重
 	 */
 	@ApiListField("job_tags")
 	@ApiField("string")
@@ -163,7 +163,7 @@ NO_REQ：不要求芝麻工作证
 	private String outJobId;
 
 	/**
-	 * 岗位模式：QUANZHI-全职、JIANZHI-兼职
+	 * 岗位就业模式
 	 */
 	@ApiField("part_time_mode")
 	private String partTimeMode;
@@ -187,16 +187,13 @@ NO_REQ：不要求芝麻工作证
 1：高优先级
 2：中优先级
 3：低优先级
-
-高优先级的岗位，平台会优先展示。
-
 建议只将少量岗位设置为高优先级，否则这个优先级的效果会低于预期。
 	 */
 	@ApiField("priority")
 	private Long priority;
 
 	/**
-	 * 薪资范围。支持薪资范围，格式：最低薪资（含）,最高薪资（含），薪资结算方式是面议时为空
+	 * 薪资范围，格式：最低薪资（含）,最高薪资（含），薪资结算方式是面议时为空。最高薪资不超过5万。如果为单价型岗位，最低薪资和最高薪资内容保持一致，如: 800,800
 	 */
 	@ApiField("salary")
 	private String salary;

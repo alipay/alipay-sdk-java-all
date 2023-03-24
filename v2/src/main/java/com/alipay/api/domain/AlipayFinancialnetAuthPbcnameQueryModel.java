@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模糊查询联行号信息
  *
  * @author auto create
- * @since 1.0, 2022-11-14 10:13:22
+ * @since 1.0, 2023-03-22 17:21:22
  */
 public class AlipayFinancialnetAuthPbcnameQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5456231553788684384L;
+	private static final long serialVersionUID = 6552246115162445852L;
 
 	/**
 	 * 联行号数据

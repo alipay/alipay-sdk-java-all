@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.unitedopencoupon.receive.trigger request
  * 
  * @author auto create
- * @since 1.0, 2023-03-17 14:51:40
+ * @since 1.0, 2023-03-23 20:16:39
  */
 public class AlipayMarketingCampaignUnitedopencouponReceiveTriggerRequest implements AlipayRequest<AlipayMarketingCampaignUnitedopencouponReceiveTriggerResponse> {
 

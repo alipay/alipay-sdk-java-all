@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.kids.msg.scene.send request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:01:40
+ * @since 1.0, 2023-03-20 15:43:50
  */
 public class AlipayCommerceKidsMsgSceneSendRequest implements AlipayRequest<AlipayCommerceKidsMsgSceneSendResponse> {
 

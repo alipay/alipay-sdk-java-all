@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.marketing.gift.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 20:01:45
+ * @since 1.0, 2023-03-23 20:56:44
  */
 public class AlipayInsMarketingGiftQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5565928849184868593L;
+	private static final long serialVersionUID = 4788275998694224968L;
 
 	/** 
 	 * 渠道规则码

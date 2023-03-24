@@ -11,40 +11,60 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4143913936574283789L;
+	private static final long serialVersionUID = 6863492915495353889L;
 
 	/**
-	 * device_category+传入绑定设备的类型
+	 * 传入绑定设备的类型。
+枚举值：
+0:未初始化设备
+1:蜻蜓前台设备
+2:蜻蜓房门设备
+3:蜻蜓公区设备
+11:咖啡机
+12:洗衣机
+13:视觉货柜
+14:送物机器人
+15:客控音响
+16:弹簧机
+17:小型售货机
 	 */
 	@ApiField("device_category")
 	private String deviceCategory;
 
 	/**
-	 * floor_num+用户入住的楼层
+	 * 用户入住的楼层
 	 */
 	@ApiField("floor_num")
 	private String floorNum;
 
 	/**
-	 * project_id+传入设备要绑定的项目id
+	 * 传入设备要绑定的项目id
 	 */
 	@ApiField("project_id")
 	private String projectId;
 
 	/**
-	 * room_num+用户入住房间的房间号
+	 * 用户入住房间的房间号
 	 */
 	@ApiField("room_num")
 	private String roomNum;
 
 	/**
-	 * scene_type+绑定设备使用的场景
+	 * 绑定设备使用的场景
+枚举值：
+1:酒店前台设备
+2:刷脸开门设备
+3:刷脸乘梯设备
+4:刷脸门禁设备
+5:刷脸闸机设备
+6:刷脸就餐设备
+7:公区共享设备
 	 */
 	@ApiField("scene_type")
 	private String sceneType;
 
 	/**
-	 * sn+要进行绑定操作的设备sn
+	 * 要进行绑定操作的设备sn
 	 */
 	@ApiField("sn")
 	private String sn;

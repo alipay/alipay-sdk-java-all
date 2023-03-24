@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotmbsIsvdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3276923927755125539L;
+	private static final long serialVersionUID = 3237616223851622264L;
 
 	/** 
 	 * 参数名：content_list+使用场景：根据查询类型和查询条件返回isv下的酒店id或设备sn或绑定的outfaceId（isv创建并写入的数据）+枚举值：无
