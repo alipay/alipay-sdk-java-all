@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankMarketingCampaignBkpromoguardbaseLmitemdeleteSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4393766967189125445L;
+	private static final long serialVersionUID = 3665545336263419149L;
 
 	/** 
 	 * request_id + 唯一 + LinkedMall商品删除同步场景 +返回请求中的服务标识

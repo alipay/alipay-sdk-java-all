@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Dialogue extends AlipayObject {
 
-	private static final long serialVersionUID = 8689581141264857267L;
+	private static final long serialVersionUID = 4627314144646124358L;
 
 	/**
 	 * 开始时间，相对（毫秒）

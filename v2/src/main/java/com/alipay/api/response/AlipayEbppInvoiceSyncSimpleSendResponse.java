@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppInvoiceSyncSimpleSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8484922255742865285L;
+	private static final long serialVersionUID = 2246564161688352348L;
 
 	
 

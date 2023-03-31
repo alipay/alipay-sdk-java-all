@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 上传芝识课程信息
  *
  * @author auto create
- * @since 1.0, 2023-02-24 11:28:13
+ * @since 1.0, 2023-03-28 19:36:51
  */
 public class ZhimaCustomerJobworthCourseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8431375187374149577L;
+	private static final long serialVersionUID = 6221167893872642637L;
 
 	/**
 	 * 章节列表

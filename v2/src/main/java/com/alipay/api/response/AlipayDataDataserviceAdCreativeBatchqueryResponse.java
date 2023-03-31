@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ad.creative.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:34:38
+ * @since 1.0, 2023-03-31 19:37:37
  */
 public class AlipayDataDataserviceAdCreativeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3844365793193212283L;
+	private static final long serialVersionUID = 8825862217775498887L;
 
 	/** 
 	 * 创意按条件分页查询结果

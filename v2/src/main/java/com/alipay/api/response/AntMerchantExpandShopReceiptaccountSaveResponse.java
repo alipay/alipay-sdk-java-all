@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.receiptaccount.save response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:46:21
+ * @since 1.0, 2023-03-31 19:15:18
  */
 public class AntMerchantExpandShopReceiptaccountSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1376713431519453858L;
+	private static final long serialVersionUID = 4693927898165118714L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店用户办理入住接口
  *
  * @author auto create
- * @since 1.0, 2023-02-15 17:02:06
+ * @since 1.0, 2023-03-30 14:46:51
  */
 public class AlipayOpenIotmbsHotelguestCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3171557975787145469L;
+	private static final long serialVersionUID = 4668454913973471646L;
 
 	/**
 	 * face_id+用于酒店关联用户和房间等信息
@@ -24,6 +24,12 @@ public class AlipayOpenIotmbsHotelguestCreateModel extends AlipayObject {
 	 */
 	@ApiField("floor_num")
 	private String floorNum;
+
+	/**
+	 * project_id，项目唯一id
+	 */
+	@ApiField("project_id")
+	private String projectId;
 
 	/**
 	 * sn，关联的房间的sn
@@ -43,6 +49,13 @@ public class AlipayOpenIotmbsHotelguestCreateModel extends AlipayObject {
 	}
 	public void setFloorNum(String floorNum) {
 		this.floorNum = floorNum;
+	}
+
+	public String getProjectId() {
+		return this.projectId;
+	}
+	public void setProjectId(String projectId) {
+		this.projectId = projectId;
 	}
 
 	public String getSn() {

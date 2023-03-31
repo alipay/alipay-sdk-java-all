@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账明细
  *
  * @author auto create
- * @since 1.0, 2023-03-10 13:04:08
+ * @since 1.0, 2023-03-31 18:20:48
  */
 public class RoyaltyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7622625457752958327L;
+	private static final long serialVersionUID = 7327868833484834767L;
 
 	/**
 	 * 分账金额
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 支付宝分账明细单号，每笔分账业务执行的明细单号
+	 */
+	@ApiField("detail_id")
+	private String detailId;
 
 	/**
 	 * 分账失败错误码，只在分账失败时返回
@@ -94,6 +100,13 @@ public class RoyaltyDetail extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getDetailId() {
+		return this.detailId;
+	}
+	public void setDetailId(String detailId) {
+		this.detailId = detailId;
 	}
 
 	public String getErrorCode() {

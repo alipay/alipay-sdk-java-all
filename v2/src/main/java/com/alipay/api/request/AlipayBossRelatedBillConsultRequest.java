@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.related.bill.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:18:10
+ * @since 1.0, 2023-03-31 17:48:56
  */
 public class AlipayBossRelatedBillConsultRequest implements AlipayRequest<AlipayBossRelatedBillConsultResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.searchbox.upgrade.save response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:01:41
+ * @since 1.0, 2023-03-31 17:46:45
  */
 public class AlipayOpenSearchboxUpgradeSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5356117945384274543L;
+	private static final long serialVersionUID = 4558293674168347172L;
 
 	
 

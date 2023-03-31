@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据用户ID与互助计划ID查询保单号列表
  *
  * @author auto create
- * @since 1.0, 2018-05-30 11:18:48
+ * @since 1.0, 2023-03-30 11:37:07
  */
 public class AlipayInsUnderwriteMutualPolicyBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7362532719318713857L;
+	private static final long serialVersionUID = 3514441611738276431L;
 
 	/**
 	 * 渠道来源

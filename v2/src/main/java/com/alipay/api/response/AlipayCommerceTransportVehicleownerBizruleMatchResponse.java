@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.bizrule.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:23:04
+ * @since 1.0, 2023-03-31 18:15:39
  */
 public class AlipayCommerceTransportVehicleownerBizruleMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7232835822298779493L;
+	private static final long serialVersionUID = 3831126247638258419L;
 
 	/** 
 	 * 匹配详情

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.prodmode.provcity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:07:41
+ * @since 1.0, 2023-03-31 19:04:45
  */
 public class AlipayEbppProdmodeProvcityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1784811158975284795L;
+	private static final long serialVersionUID = 3368444227626697172L;
 
 	/** 
 	 * 返回省市下拉列表数据

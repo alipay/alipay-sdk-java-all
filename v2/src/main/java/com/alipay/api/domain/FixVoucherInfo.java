@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 满减券
  *
  * @author auto create
- * @since 1.0, 2022-11-03 16:33:13
+ * @since 1.0, 2023-03-30 16:17:39
  */
 public class FixVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8362958258784834242L;
+	private static final long serialVersionUID = 3736871835594924727L;
 
 	/**
 	 * 面额，每张代金券可以抵扣的金额。
@@ -25,6 +25,12 @@ public class FixVoucherInfo extends AlipayObject {
 	@ApiField("floor_amount")
 	private String floorAmount;
 
+	/**
+	 * 优惠门槛信息
+	 */
+	@ApiField("voucher_deduct_threshold_info")
+	private VoucherDeductThresholdInfo voucherDeductThresholdInfo;
+
 	public String getAmount() {
 		return this.amount;
 	}
@@ -37,6 +43,13 @@ public class FixVoucherInfo extends AlipayObject {
 	}
 	public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
+	}
+
+	public VoucherDeductThresholdInfo getVoucherDeductThresholdInfo() {
+		return this.voucherDeductThresholdInfo;
+	}
+	public void setVoucherDeductThresholdInfo(VoucherDeductThresholdInfo voucherDeductThresholdInfo) {
+		this.voucherDeductThresholdInfo = voucherDeductThresholdInfo;
 	}
 
 }

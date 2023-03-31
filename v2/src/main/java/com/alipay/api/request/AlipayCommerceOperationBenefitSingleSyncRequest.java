@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.benefit.single.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:05:03
+ * @since 1.0, 2023-03-31 18:43:05
  */
 public class AlipayCommerceOperationBenefitSingleSyncRequest implements AlipayRequest<AlipayCommerceOperationBenefitSingleSyncResponse> {
 

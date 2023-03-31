@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.haiguan.noauth.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:57:46
+ * @since 1.0, 2023-03-30 17:13:21
  */
 public class AlipaySecurityProdHaiguanNoauthCreateRequest implements AlipayRequest<AlipaySecurityProdHaiguanNoauthCreateResponse> {
 

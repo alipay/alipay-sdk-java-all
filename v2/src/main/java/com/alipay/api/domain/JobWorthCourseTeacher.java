@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教师信息
  *
  * @author auto create
- * @since 1.0, 2023-02-20 14:15:48
+ * @since 1.0, 2023-03-27 16:36:49
  */
 public class JobWorthCourseTeacher extends AlipayObject {
 
-	private static final long serialVersionUID = 4119264567333489648L;
+	private static final long serialVersionUID = 1222271887463637138L;
+
+	/**
+	 * 教师描述信息，由商户自行设置，配置的文案将会在课程详情页透出
+	 */
+	@ApiField("desc")
+	private String desc;
 
 	/**
 	 * id类型，ID_CARD代表身份证
@@ -30,6 +36,13 @@ public class JobWorthCourseTeacher extends AlipayObject {
 	 */
 	@ApiField("teacher_name")
 	private String teacherName;
+
+	public String getDesc() {
+		return this.desc;
+	}
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
 
 	public String getIdType() {
 		return this.idType;

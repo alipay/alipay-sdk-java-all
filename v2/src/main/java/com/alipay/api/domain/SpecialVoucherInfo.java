@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 特价券详情
  *
  * @author auto create
- * @since 1.0, 2022-11-03 16:33:13
+ * @since 1.0, 2023-03-30 16:17:29
  */
 public class SpecialVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7724393599264356654L;
+	private static final long serialVersionUID = 7458111114275471218L;
 
 	/**
 	 * 门槛金额。
@@ -25,6 +25,12 @@ public class SpecialVoucherInfo extends AlipayObject {
 	@ApiField("special_amount")
 	private String specialAmount;
 
+	/**
+	 * 优惠门槛信息
+	 */
+	@ApiField("voucher_deduct_threshold_info")
+	private VoucherDeductThresholdInfo voucherDeductThresholdInfo;
+
 	public String getFloorAmount() {
 		return this.floorAmount;
 	}
@@ -37,6 +43,13 @@ public class SpecialVoucherInfo extends AlipayObject {
 	}
 	public void setSpecialAmount(String specialAmount) {
 		this.specialAmount = specialAmount;
+	}
+
+	public VoucherDeductThresholdInfo getVoucherDeductThresholdInfo() {
+		return this.voucherDeductThresholdInfo;
+	}
+	public void setVoucherDeductThresholdInfo(VoucherDeductThresholdInfo voucherDeductThresholdInfo) {
+		this.voucherDeductThresholdInfo = voucherDeductThresholdInfo;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OfflineInviteNewerSummaryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8815921854234715192L;
+	private static final long serialVersionUID = 8635736567196237179L;
 
 	/**
 	 * 返佣扩展信息

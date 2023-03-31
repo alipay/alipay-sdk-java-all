@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantMrchsurplmorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8449964741857678484L;
+	private static final long serialVersionUID = 5684749949589239379L;
 
 	/**
 	 * 该单金额

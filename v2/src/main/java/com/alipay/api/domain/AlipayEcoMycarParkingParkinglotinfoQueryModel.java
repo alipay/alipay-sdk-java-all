@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车场信息查询
  *
  * @author auto create
- * @since 1.0, 2023-03-23 17:51:23
+ * @since 1.0, 2023-03-30 15:42:49
  */
 public class AlipayEcoMycarParkingParkinglotinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7646493836264719879L;
+	private static final long serialVersionUID = 7315733825852413661L;
 
 	/**
 	 * ISV停车场ID，由ISV定义的停车场标识，同一个ISV或商户范围内唯一。需与 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口传入值一致。

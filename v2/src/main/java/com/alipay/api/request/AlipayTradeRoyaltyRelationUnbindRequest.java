@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.royalty.relation.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:26:41
+ * @since 1.0, 2023-03-31 18:56:45
  */
 public class AlipayTradeRoyaltyRelationUnbindRequest implements AlipayRequest<AlipayTradeRoyaltyRelationUnbindResponse> {
 

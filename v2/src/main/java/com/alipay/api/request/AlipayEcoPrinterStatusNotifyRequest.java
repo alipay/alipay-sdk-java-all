@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.printer.status.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:56:56
+ * @since 1.0, 2023-03-31 17:56:16
  */
 public class AlipayEcoPrinterStatusNotifyRequest implements AlipayRequest<AlipayEcoPrinterStatusNotifyResponse> {
 

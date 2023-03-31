@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SpeechRecordDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8718775963576472933L;
+	private static final long serialVersionUID = 5891992529252468841L;
 
 	/**
 	 * 播报关联的支付宝运营计划id

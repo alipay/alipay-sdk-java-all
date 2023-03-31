@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁操作员查询参数
  *
  * @author auto create
- * @since 1.0, 2023-02-18 14:36:06
+ * @since 1.0, 2023-03-29 15:46:12
  */
 public class OperatorQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 1739668331884913375L;
+	private static final long serialVersionUID = 5871874842473113736L;
 
 	/**
 	 * 查询操作员的唯一ID。类型由id_type决定
@@ -51,6 +51,12 @@ LOGON_ID=id填操作员的登录号
 	@ApiField("main_ip_role_type")
 	private String mainIpRoleType;
 
+	/**
+	 * 查询操作员的OPENID。类型由id_type决定，当id_type为 OPEN_ID 时，使用 open_id 的值。
+	 */
+	@ApiField("open_id")
+	private String openId;
+
 	public String getId() {
 		return this.id;
 	}
@@ -84,6 +90,13 @@ LOGON_ID=id填操作员的登录号
 	}
 	public void setMainIpRoleType(String mainIpRoleType) {
 		this.mainIpRoleType = mainIpRoleType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 }

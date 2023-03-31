@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-22 14:37:13
+ * @since 1.0, 2023-03-31 18:41:44
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8549723917168115826L;
+	private static final long serialVersionUID = 1782547585555257441L;
 
 	/** 
 	 * 银行卡冲退信息；
@@ -139,7 +139,7 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	private String refundReason;
 
 	/** 
-	 * 退分账明细信息
+	 * 退分账明细信息，当前仅在直付通产品中返回。
 	 */
 	@ApiListField("refund_royaltys")
 	@ApiField("refund_royalty_result")

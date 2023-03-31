@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 11121212
  *
  * @author auto create
- * @since 1.0, 2022-11-08 11:21:50
+ * @since 1.0, 2023-03-31 14:04:13
  */
 public class AntOcrTesConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7485141566797898226L;
+	private static final long serialVersionUID = 1591999875678142843L;
 
 	/**
 	 * 1

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.bizopt.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:24:56
+ * @since 1.0, 2023-03-31 17:59:05
  */
 public class ZhimaCreditPeZmgoBizoptCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6773825888259836262L;
+	private static final long serialVersionUID = 3865957689942144382L;
 
 	/** 
 	 * 芝麻GO签约申请时生成的签约申请单据号

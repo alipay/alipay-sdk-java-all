@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部商业平台合作-查询可贷款方案
  *
  * @author auto create
- * @since 1.0, 2022-09-29 17:23:35
+ * @since 1.0, 2023-03-24 11:11:00
  */
 public class MybankCreditLoantradeLoanschemeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7113351155743879471L;
+	private static final long serialVersionUID = 2741619364827737745L;
+
+	/**
+	 * OpenId是某个用户在某个应用下的唯一用户标识， 对于同一个用户，不同应用拿到的OpenId是不同的，而且对于同一个应用，不同用户的OpenId是唯一的
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 授信编号
@@ -66,6 +72,13 @@ public class MybankCreditLoantradeLoanschemeQueryModel extends AlipayObject {
 	 */
 	@ApiField("scen")
 	private String scen;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getBiz() {
 		return this.biz;

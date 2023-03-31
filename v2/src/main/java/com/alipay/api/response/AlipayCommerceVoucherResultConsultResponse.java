@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceVoucherResultConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4277951132326493917L;
+	private static final long serialVersionUID = 4733788927759557294L;
 
 	/** 
 	 * 最优券叠加总优惠金额，单位为元

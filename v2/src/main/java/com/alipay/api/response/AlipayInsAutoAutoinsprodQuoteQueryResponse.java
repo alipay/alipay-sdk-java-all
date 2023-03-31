@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoinsprod.quote.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:25:30
+ * @since 1.0, 2023-03-31 18:52:51
  */
 public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1526279726111547698L;
+	private static final long serialVersionUID = 6596556129913811169L;
 
 	/** 
 	 * 商业费率浮动系数，0~1分值的数字，精确到小数点后4位，如：0.6589

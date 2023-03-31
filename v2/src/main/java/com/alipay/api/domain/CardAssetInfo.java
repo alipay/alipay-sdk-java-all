@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡激活凭证
  *
  * @author auto create
- * @since 1.0, 2022-10-14 14:51:07
+ * @since 1.0, 2023-03-24 21:31:16
  */
 public class CardAssetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3799356872912843872L;
+	private static final long serialVersionUID = 7879957467664713161L;
 
 	/**
 	 * 卡号

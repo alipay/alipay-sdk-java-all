@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.file.path.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:16:33
+ * @since 1.0, 2023-03-31 18:48:34
  */
 public class AlipayEcoFilePathQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3462366233739814772L;
+	private static final long serialVersionUID = 2623356895852546419L;
 
 	/** 
 	 * 文件Id

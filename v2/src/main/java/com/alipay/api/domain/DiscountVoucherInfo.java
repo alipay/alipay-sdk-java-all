@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 折扣券详情
  *
  * @author auto create
- * @since 1.0, 2022-11-03 16:33:13
+ * @since 1.0, 2023-03-30 16:17:50
  */
 public class DiscountVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5417722795563161177L;
+	private static final long serialVersionUID = 8339946127678355942L;
 
 	/**
 	 * 封顶金额。
@@ -30,6 +30,12 @@ public class DiscountVoucherInfo extends AlipayObject {
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;
+
+	/**
+	 * 优惠门槛信息
+	 */
+	@ApiField("voucher_deduct_threshold_info")
+	private VoucherDeductThresholdInfo voucherDeductThresholdInfo;
 
 	public String getCeilingAmount() {
 		return this.ceilingAmount;
@@ -50,6 +56,13 @@ public class DiscountVoucherInfo extends AlipayObject {
 	}
 	public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
+	}
+
+	public VoucherDeductThresholdInfo getVoucherDeductThresholdInfo() {
+		return this.voucherDeductThresholdInfo;
+	}
+	public void setVoucherDeductThresholdInfo(VoucherDeductThresholdInfo voucherDeductThresholdInfo) {
+		this.voucherDeductThresholdInfo = voucherDeductThresholdInfo;
 	}
 
 }

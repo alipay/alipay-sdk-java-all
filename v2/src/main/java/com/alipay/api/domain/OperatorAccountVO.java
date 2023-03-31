@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁操作员关联账号信息
  *
  * @author auto create
- * @since 1.0, 2023-02-18 14:49:58
+ * @since 1.0, 2023-03-29 15:46:17
  */
 public class OperatorAccountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4244267343246489731L;
+	private static final long serialVersionUID = 6171594451453456145L;
 
 	/**
 	 * 关联账号ID
@@ -28,6 +28,12 @@ account_type=03，则account_id为支付宝oid
 	@ApiField("account_type")
 	private String accountType;
 
+	/**
+	 * 关联账号openId
+	 */
+	@ApiField("open_id")
+	private String openId;
+
 	public String getAccountId() {
 		return this.accountId;
 	}
@@ -40,6 +46,13 @@ account_type=03，则account_id为支付宝oid
 	}
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 }

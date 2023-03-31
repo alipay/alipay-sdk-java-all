@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.personalized.advert.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:55:15
+ * @since 1.0, 2023-03-31 19:47:00
  */
 public class AlipayOpenPublicPersonalizedAdvertCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4757613198573293867L;
+	private static final long serialVersionUID = 6317173146676467133L;
 
 	/** 
 	 * 轮播广告分组id

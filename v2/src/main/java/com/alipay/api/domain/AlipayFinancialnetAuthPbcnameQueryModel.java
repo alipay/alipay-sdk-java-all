@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模糊查询联行号信息
  *
  * @author auto create
- * @since 1.0, 2023-03-22 17:21:22
+ * @since 1.0, 2023-03-30 20:14:53
  */
 public class AlipayFinancialnetAuthPbcnameQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6552246115162445852L;
+	private static final long serialVersionUID = 4248945561549593317L;
 
 	/**
 	 * 联行号数据
@@ -20,7 +20,7 @@ public class AlipayFinancialnetAuthPbcnameQueryModel extends AlipayObject {
 	private String bankCode;
 
 	/**
-	 * 支行名称
+	 * 分支行名称
 	 */
 	@ApiField("branch_name")
 	private String branchName;

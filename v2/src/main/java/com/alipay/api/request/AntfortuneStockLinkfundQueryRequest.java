@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.linkfund.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:50:50
+ * @since 1.0, 2023-03-31 18:26:08
  */
 public class AntfortuneStockLinkfundQueryRequest implements AlipayRequest<AntfortuneStockLinkfundQueryResponse> {
 

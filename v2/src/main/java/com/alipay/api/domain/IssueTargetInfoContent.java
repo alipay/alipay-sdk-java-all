@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员工发放额度信息列表
  *
  * @author auto create
- * @since 1.0, 2023-02-27 20:08:58
+ * @since 1.0, 2023-03-31 11:22:10
  */
 public class IssueTargetInfoContent extends AlipayObject {
 
-	private static final long serialVersionUID = 2348765815868854886L;
+	private static final long serialVersionUID = 6269244375185889458L;
 
 	/**
 	 * 发放金额
@@ -20,7 +20,7 @@ public class IssueTargetInfoContent extends AlipayObject {
 	private String issueQuota;
 
 	/**
-	 * 切换open_id前请使用：owner类型，PHONE为员工手机号，EMPLOYEE为员工支付宝uid
+	 * 切换open_id前请使用：owner类型为PHONE时该字段表示员工手机号，owner类型为为EMPLOYEE时该字段表示为员工支付宝uid，owner类型为为ENTERPRISE_PAY_UID时该字段表示为员工企业码id
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
@@ -32,7 +32,8 @@ public class IssueTargetInfoContent extends AlipayObject {
 	private String ownerOpenId;
 
 	/**
-	 * owner类型
+	 * owner类型，用来表示owner_id的类型;
+enterprise_id支持PHONE、ENTERPRISE_PAY_UID类型；account_id支持EMPLOYEE类型
 	 */
 	@ApiField("owner_type")
 	private String ownerType;

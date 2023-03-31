@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinancialnetAuthKeywordIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4848392635326962932L;
+	private static final long serialVersionUID = 4565826274611489571L;
 
 	/** 
 	 * T代表下属的账号都是泛金融账号

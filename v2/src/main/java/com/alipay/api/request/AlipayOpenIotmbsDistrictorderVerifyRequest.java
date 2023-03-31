@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.districtorder.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:26:39
+ * @since 1.0, 2023-03-31 19:06:46
  */
 public class AlipayOpenIotmbsDistrictorderVerifyRequest implements AlipayRequest<AlipayOpenIotmbsDistrictorderVerifyResponse> {
 

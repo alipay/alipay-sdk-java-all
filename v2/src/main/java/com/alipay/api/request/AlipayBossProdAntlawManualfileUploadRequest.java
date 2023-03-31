@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.antlaw.manualfile.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:15:11
+ * @since 1.0, 2023-03-31 19:43:12
  */
 public class AlipayBossProdAntlawManualfileUploadRequest implements AlipayRequest<AlipayBossProdAntlawManualfileUploadResponse> {
 

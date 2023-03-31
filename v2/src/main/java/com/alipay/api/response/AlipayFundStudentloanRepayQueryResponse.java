@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.studentloan.repay.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:44:19
+ * @since 1.0, 2023-03-31 19:17:19
  */
 public class AlipayFundStudentloanRepayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4342221296412235275L;
+	private static final long serialVersionUID = 3287327183273686514L;
 
 	/** 
 	 * 业务类型 A生源地 B高校

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antcommonweal.donate.consume.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:06:43
+ * @since 1.0, 2023-03-31 18:01:46
  */
 public class AlipaySocialAntcommonwealDonateConsumeSyncRequest implements AlipayRequest<AlipaySocialAntcommonwealDonateConsumeSyncResponse> {
 

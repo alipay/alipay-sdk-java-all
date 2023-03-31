@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantMemberwalletReturnSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1873244896697478612L;
+	private static final long serialVersionUID = 7887299146577997998L;
 
 	/** 
 	 * 退款成功的卡余额（单位：元）

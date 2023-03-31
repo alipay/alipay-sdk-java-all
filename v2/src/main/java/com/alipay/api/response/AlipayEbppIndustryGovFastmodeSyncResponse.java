@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.gov.fastmode.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:26:43
+ * @since 1.0, 2023-03-31 17:41:48
  */
 public class AlipayEbppIndustryGovFastmodeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7318336832797486296L;
+	private static final long serialVersionUID = 5347917351159682147L;
 
 	
 

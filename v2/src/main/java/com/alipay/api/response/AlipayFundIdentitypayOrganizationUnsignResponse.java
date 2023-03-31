@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.identitypay.organization.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:15:10
+ * @since 1.0, 2023-03-31 18:30:09
  */
 public class AlipayFundIdentitypayOrganizationUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2659494346443221652L;
+	private static final long serialVersionUID = 8666591557995654894L;
 
 	
 

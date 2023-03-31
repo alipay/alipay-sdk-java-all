@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 兑换券详情
  *
  * @author auto create
- * @since 1.0, 2022-11-03 16:33:13
+ * @since 1.0, 2023-03-30 16:17:17
  */
 public class ExchangeVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7859713585824812626L;
+	private static final long serialVersionUID = 7441595147716341194L;
 
 	/**
 	 * 券的价值
@@ -26,10 +26,22 @@ public class ExchangeVoucherInfo extends AlipayObject {
 	private String bizType;
 
 	/**
+	 * 兑换商品信息
+	 */
+	@ApiField("exchange_goods_info")
+	private VoucherExchangeGoodsInfo exchangeGoodsInfo;
+
+	/**
 	 * 优惠门槛金额，表示只有当订单金额大于等于门槛金额时券才能使用。该字段为空时表示无门槛。 门槛金额的校验由服务商(商户)核销时自行校验，支付宝侧只做展示使用。
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;
+
+	/**
+	 * 优惠门槛信息
+	 */
+	@ApiField("voucher_deduct_threshold_info")
+	private VoucherDeductThresholdInfo voucherDeductThresholdInfo;
 
 	public String getAmount() {
 		return this.amount;
@@ -45,11 +57,25 @@ public class ExchangeVoucherInfo extends AlipayObject {
 		this.bizType = bizType;
 	}
 
+	public VoucherExchangeGoodsInfo getExchangeGoodsInfo() {
+		return this.exchangeGoodsInfo;
+	}
+	public void setExchangeGoodsInfo(VoucherExchangeGoodsInfo exchangeGoodsInfo) {
+		this.exchangeGoodsInfo = exchangeGoodsInfo;
+	}
+
 	public String getFloorAmount() {
 		return this.floorAmount;
 	}
 	public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
+	}
+
+	public VoucherDeductThresholdInfo getVoucherDeductThresholdInfo() {
+		return this.voucherDeductThresholdInfo;
+	}
+	public void setVoucherDeductThresholdInfo(VoucherDeductThresholdInfo voucherDeductThresholdInfo) {
+		this.voucherDeductThresholdInfo = voucherDeductThresholdInfo;
 	}
 
 }

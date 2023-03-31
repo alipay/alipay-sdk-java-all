@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2023-01-06 18:21:12
+ * @since 1.0, 2023-03-29 13:59:51
  */
 public class ExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2746176779396728798L;
+	private static final long serialVersionUID = 5731627531627118343L;
 
 	/**
 	 * 卡类型
@@ -36,6 +36,12 @@ public class ExtendParams extends AlipayObject {
 	 */
 	@ApiField("industry_reflux_info")
 	private String industryRefluxInfo;
+
+	/**
+	 * 是否进行资金冻结，用于后续分账，true表示资金冻结，false或不传表示资金不冻结
+	 */
+	@ApiField("royalty_freeze")
+	private String royaltyFreeze;
 
 	/**
 	 * 特殊场景下，允许商户指定交易展示的卖家名称
@@ -76,6 +82,13 @@ public class ExtendParams extends AlipayObject {
 	}
 	public void setIndustryRefluxInfo(String industryRefluxInfo) {
 		this.industryRefluxInfo = industryRefluxInfo;
+	}
+
+	public String getRoyaltyFreeze() {
+		return this.royaltyFreeze;
+	}
+	public void setRoyaltyFreeze(String royaltyFreeze) {
+		this.royaltyFreeze = royaltyFreeze;
 	}
 
 	public String getSpecifiedSellerName() {

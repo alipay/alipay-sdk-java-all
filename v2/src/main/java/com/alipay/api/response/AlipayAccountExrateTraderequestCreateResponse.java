@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.exrate.traderequest.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 16:47:11
+ * @since 1.0, 2023-03-31 18:22:54
  */
 public class AlipayAccountExrateTraderequestCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6584132815229268322L;
+	private static final long serialVersionUID = 8877926993364796463L;
 
 	/** 
 	 * 成交汇率的基准币种

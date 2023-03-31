@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppTestHahaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1493748568286679261L;
+	private static final long serialVersionUID = 4542127599289582623L;
 
 	/**
 	 * 2088

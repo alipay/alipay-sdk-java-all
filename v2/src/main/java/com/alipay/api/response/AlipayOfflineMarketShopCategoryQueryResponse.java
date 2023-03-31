@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.shop.category.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:29:50
+ * @since 1.0, 2023-03-31 18:45:51
  */
 public class AlipayOfflineMarketShopCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1255373839423866163L;
+	private static final long serialVersionUID = 5291295452833579743L;
 
 	/** 
 	 * 门店类目配置信息，包括能够开店的叶子节点类目信息，以及类目约束配置信息。

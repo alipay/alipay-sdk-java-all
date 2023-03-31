@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FencePoint extends AlipayObject {
 
-	private static final long serialVersionUID = 1859337927672276415L;
+	private static final long serialVersionUID = 7238982889989664863L;
 
 	/**
 	 * 维度

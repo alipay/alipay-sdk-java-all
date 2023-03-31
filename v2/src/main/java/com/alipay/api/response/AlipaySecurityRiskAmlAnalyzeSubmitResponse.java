@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.aml.analyze.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:27:05
+ * @since 1.0, 2023-03-31 18:51:27
  */
 public class AlipaySecurityRiskAmlAnalyzeSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6242334438931235156L;
+	private static final long serialVersionUID = 6746278868989382773L;
 
 	/** 
 	 * 反洗钱分析结果，ACCEPT：无风险；REJECT：有风险，拒绝；REVIEW：有疑似风险，由业务端决定是否放行

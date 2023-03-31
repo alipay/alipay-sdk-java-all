@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.data.auto.coefficient.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:54:23
+ * @since 1.0, 2023-03-31 19:28:05
  */
 public class AlipayInsDataAutoCoefficientSyncRequest implements AlipayUploadRequest<AlipayInsDataAutoCoefficientSyncResponse> {
 

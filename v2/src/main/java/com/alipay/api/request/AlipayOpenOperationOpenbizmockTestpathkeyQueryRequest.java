@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.openbizmock.testpathkey.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:21:10
+ * @since 1.0, 2023-03-31 17:43:23
  */
 public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements AlipayRequest<AlipayOpenOperationOpenbizmockTestpathkeyQueryResponse> {
 

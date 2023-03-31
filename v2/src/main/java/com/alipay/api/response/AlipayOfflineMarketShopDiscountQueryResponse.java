@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketShopDiscountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7465537781249634318L;
+	private static final long serialVersionUID = 1487345923946579727L;
 
 	/** 
 	 * 返回商户正在进行中的活动摘要列表数据，注意：如果入参query_type不传递或者传递错误值，该参数将不会返回。

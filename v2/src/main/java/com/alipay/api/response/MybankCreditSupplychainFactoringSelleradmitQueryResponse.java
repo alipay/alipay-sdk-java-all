@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.factoring.selleradmit.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:55:00
+ * @since 1.0, 2023-03-31 19:38:32
  */
 public class MybankCreditSupplychainFactoringSelleradmitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2657679233944296974L;
+	private static final long serialVersionUID = 5245774781442758718L;
 
 	/** 
 	 * 是否已提交加白申请

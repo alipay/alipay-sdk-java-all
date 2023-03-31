@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.kids.token.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:45:29
+ * @since 1.0, 2023-03-31 19:29:29
  */
 public class AlipayCommerceKidsTokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6787398432462669663L;
+	private static final long serialVersionUID = 8443944864172558968L;
 
 	/** 
 	 * 过期时间

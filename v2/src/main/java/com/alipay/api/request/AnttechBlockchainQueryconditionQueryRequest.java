@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.querycondition.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:36:33
+ * @since 1.0, 2023-03-31 19:28:33
  */
 public class AnttechBlockchainQueryconditionQueryRequest implements AlipayRequest<AnttechBlockchainQueryconditionQueryResponse> {
 

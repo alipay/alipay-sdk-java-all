@@ -7,17 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 见证订单查询接口
  *
  * @author auto create
- * @since 1.0, 2022-01-13 16:43:14
+ * @since 1.0, 2023-03-28 16:35:51
  */
 public class AlipayFincoreFunddsOrderWitnessQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6736166447336326784L;
+	private static final long serialVersionUID = 4711417826761726197L;
 
 	/**
-	 * 20211118000000000000000027001023
+	 * 云资通订单号（fds_no 和 out_request_no 两个参数不能同时为空）
 	 */
 	@ApiField("fds_no")
 	private String fdsNo;
+
+	/**
+	 * 外部订单号
+（fds_no 和 out_request_no 两个参数不能同时为空）
+	 */
+	@ApiField("out_request_no")
+	private String outRequestNo;
 
 	/**
 	 * 签约产品码
@@ -30,6 +37,13 @@ public class AlipayFincoreFunddsOrderWitnessQueryModel extends AlipayObject {
 	}
 	public void setFdsNo(String fdsNo) {
 		this.fdsNo = fdsNo;
+	}
+
+	public String getOutRequestNo() {
+		return this.outRequestNo;
+	}
+	public void setOutRequestNo(String outRequestNo) {
+		this.outRequestNo = outRequestNo;
 	}
 
 	public String getProductCode() {

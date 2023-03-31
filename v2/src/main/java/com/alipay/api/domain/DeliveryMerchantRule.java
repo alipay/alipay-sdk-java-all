@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DeliveryMerchantRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8766847394264425592L;
+	private static final long serialVersionUID = 8761777545326153923L;
 
 	/**
 	 * 指定品牌id。 说明：如商户需选择某个品牌下维护的收款账号，请上传相关品牌id

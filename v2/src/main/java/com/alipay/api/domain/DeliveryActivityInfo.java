@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 已投放活动信息
  *
  * @author auto create
- * @since 1.0, 2023-03-21 11:06:19
+ * @since 1.0, 2023-03-30 17:39:10
  */
 public class DeliveryActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4146183888561111911L;
+	private static final long serialVersionUID = 7249576989949634823L;
 
 	/**
 	 * 活动Id
@@ -67,6 +67,12 @@ public class DeliveryActivityInfo extends AlipayObject {
 	 */
 	@ApiField("bank_name")
 	private String bankName;
+
+	/**
+	 * USER_VOUCHER   或者DISCOUNT
+	 */
+	@ApiField("delivery_prefer_type")
+	private String deliveryPreferType;
 
 	/**
 	 * 红包可能的最大金额，分
@@ -179,6 +185,13 @@ reduce--立减
 	}
 	public void setBankName(String bankName) {
 		this.bankName = bankName;
+	}
+
+	public String getDeliveryPreferType() {
+		return this.deliveryPreferType;
+	}
+	public void setDeliveryPreferType(String deliveryPreferType) {
+		this.deliveryPreferType = deliveryPreferType;
 	}
 
 	public Long getDiscountMaxAmount() {

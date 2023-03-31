@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.beikeaccount.interestfree.modify response.
  * 
  * @author auto create
- * @since 1.0, 2019-12-04 14:08:40
+ * @since 1.0, 2023-03-31 18:57:42
  */
 public class AlipayPcreditLoanBeikeaccountInterestfreeModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7147497842922749458L;
+	private static final long serialVersionUID = 7855496497917398633L;
 
 	/** 
 	 * 呗壳额度返回结果

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantCreditserviceDetailCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2556467873396929589L;
+	private static final long serialVersionUID = 2795359686588925255L;
 
 	/**
 	 * 信用服务基础信息配置，为必传字段。此字段为复杂模型，其中服务名称和服务logo为必传属性。

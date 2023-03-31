@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.arrangement.offline.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:06:33
+ * @since 1.0, 2023-03-31 19:14:23
  */
 public class AlipayBossProdArrangementOfflineQueryRequest implements AlipayRequest<AlipayBossProdArrangementOfflineQueryResponse> {
 

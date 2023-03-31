@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 红包模板消耗信息
  *
  * @author auto create
- * @since 1.0, 2021-12-10 14:56:47
+ * @since 1.0, 2023-03-30 19:39:54
  */
 public class CouponTemplateConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4574482762697943956L;
+	private static final long serialVersionUID = 8189743255162899564L;
 
 	/**
 	 * 该活动上已领取红包金额，分为单位

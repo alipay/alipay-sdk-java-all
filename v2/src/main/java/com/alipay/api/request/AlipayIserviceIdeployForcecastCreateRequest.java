@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ideploy.forcecast.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 20:21:41
+ * @since 1.0, 2023-03-31 18:16:44
  */
 public class AlipayIserviceIdeployForcecastCreateRequest implements AlipayRequest<AlipayIserviceIdeployForcecastCreateResponse> {
 

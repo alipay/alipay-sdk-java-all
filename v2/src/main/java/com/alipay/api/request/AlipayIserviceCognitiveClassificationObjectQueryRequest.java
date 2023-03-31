@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.cognitive.classification.object.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 20:15:23
+ * @since 1.0, 2023-03-31 19:44:07
  */
 public class AlipayIserviceCognitiveClassificationObjectQueryRequest implements AlipayRequest<AlipayIserviceCognitiveClassificationObjectQueryResponse> {
 

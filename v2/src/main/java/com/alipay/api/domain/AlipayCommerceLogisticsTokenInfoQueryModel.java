@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流寄件下单token信息查询
  *
  * @author auto create
- * @since 1.0, 2023-03-10 18:05:51
+ * @since 1.0, 2023-03-30 16:23:08
  */
 public class AlipayCommerceLogisticsTokenInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8176485779517566311L;
+	private static final long serialVersionUID = 2897388918587745682L;
 
 	/**
 	 * 支付宝聚合下单页跳转商户小程序携带的token，商户通过token回查支付宝获取用户填选的信息

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.xwbtestabcd.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 11:09:22
+ * @since 1.0, 2023-03-31 19:05:04
  */
 public class AlipayOpenPublicXwbtestabcdBatchqueryRequest implements AlipayRequest<AlipayOpenPublicXwbtestabcdBatchqueryResponse> {
 

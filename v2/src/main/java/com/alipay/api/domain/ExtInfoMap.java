@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtInfoMap extends AlipayObject {
 
-	private static final long serialVersionUID = 8891556153229166454L;
+	private static final long serialVersionUID = 8838339871685488466L;
 
 	/**
 	 * 键值对的key，{"orderId":"123456"}中的orderId

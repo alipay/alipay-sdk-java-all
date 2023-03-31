@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderEquipmentAuthRemoveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7511124554566256171L;
+	private static final long serialVersionUID = 5344369483397481534L;
 
 	/** 
 	 * 被解绑的机具编号

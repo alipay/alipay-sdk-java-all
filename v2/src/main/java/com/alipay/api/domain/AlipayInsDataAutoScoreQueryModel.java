@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车险分查询
  *
  * @author auto create
- * @since 1.0, 2017-09-11 20:24:36
+ * @since 1.0, 2023-03-30 11:42:45
  */
 public class AlipayInsDataAutoScoreQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5243116164316752814L;
+	private static final long serialVersionUID = 1793779676875251163L;
 
 	/**
 	 * 投保地区码，参考《城市列表（含区县）v0307.xlsx》

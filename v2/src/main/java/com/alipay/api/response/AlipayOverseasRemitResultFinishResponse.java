@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.remit.result.finish response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:04:42
+ * @since 1.0, 2023-03-31 18:40:17
  */
 public class AlipayOverseasRemitResultFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2495977995579192349L;
+	private static final long serialVersionUID = 3712726859426911169L;
 
 	
 

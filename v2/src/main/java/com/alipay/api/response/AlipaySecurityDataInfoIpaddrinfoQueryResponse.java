@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityDataInfoIpaddrinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5373212582675336568L;
+	private static final long serialVersionUID = 5212416612945866235L;
 
 	/** 
 	 * ip_addr_lbs_info:IP地址归属地对象。其中province为IP地址归属地的省，city为IP地址归属地的城市

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.ocr.server.detect request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:08:33
+ * @since 1.0, 2023-03-31 18:18:35
  */
 public class DatadigitalFincloudGeneralsaasOcrServerDetectRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasOcrServerDetectResponse> {
 

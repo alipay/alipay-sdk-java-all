@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.background.interface.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:59:13
+ * @since 1.0, 2023-03-31 17:41:48
  */
 public class AlipaySecurityRiskBackgroundInterfaceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7228688545374347994L;
+	private static final long serialVersionUID = 3567894114422997899L;
 
 	/** 
 	 * 背景详细信息：查询到的人物背景信息，包括学历信息、是否涉及诉讼、商业冲突等。

@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专辑营销信息
  *
  * @author auto create
- * @since 1.0, 2023-01-04 19:12:31
+ * @since 1.0, 2023-03-28 14:24:47
  */
 public class AlbumPromoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5791876225244621966L;
+	private static final long serialVersionUID = 4226639467957113792L;
+
+	/**
+	 * 营销活动折扣价（即到手价），如果有营销活动且promo_type="DISCOUNT"时，该字段不可为空。
+	 */
+	@ApiField("discount_price")
+	private String discountPrice;
 
 	/**
 	 * 活动结束时间，若有营销活动，则必填
@@ -32,6 +38,13 @@ public class AlbumPromoInfo extends AlipayObject {
 	 */
 	@ApiField("start_time")
 	private Date startTime;
+
+	public String getDiscountPrice() {
+		return this.discountPrice;
+	}
+	public void setDiscountPrice(String discountPrice) {
+		this.discountPrice = discountPrice;
+	}
 
 	public Date getEndTime() {
 		return this.endTime;
