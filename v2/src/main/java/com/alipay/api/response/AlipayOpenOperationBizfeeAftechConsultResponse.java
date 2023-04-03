@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.bizfee.aftech.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:47:26
+ * @since 1.0, 2023-04-03 15:40:37
  */
 public class AlipayOpenOperationBizfeeAftechConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1389112352511374272L;
+	private static final long serialVersionUID = 6756787131745958659L;
 
 	/** 
 	 * 收费项计价结果列表（List<POJO>的JSON对象）

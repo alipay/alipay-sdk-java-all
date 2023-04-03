@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.prepayment.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:27:41
+ * @since 1.0, 2023-04-03 09:07:22
  */
 public class MybankCreditSupplychainPrepaymentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5725414546616894728L;
+	private static final long serialVersionUID = 3795489419649374156L;
 
 	/** 
 	 * 受理事件单编号

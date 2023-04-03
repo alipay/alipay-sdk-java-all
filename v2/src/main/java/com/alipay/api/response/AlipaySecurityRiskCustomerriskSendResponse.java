@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.customerrisk.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:28:47
+ * @since 1.0, 2023-04-03 00:36:44
  */
 public class AlipaySecurityRiskCustomerriskSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1586644977959721613L;
+	private static final long serialVersionUID = 7479236366752923911L;
 
 	
 

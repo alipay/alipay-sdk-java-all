@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.contract.management.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 16:53:03
+ * @since 1.0, 2023-04-03 12:00:20
  */
 public class AlipayBossContractManagementIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3146396431599694714L;
+	private static final long serialVersionUID = 4494979938275156918L;
 
 	/** 
 	 * 识别结果

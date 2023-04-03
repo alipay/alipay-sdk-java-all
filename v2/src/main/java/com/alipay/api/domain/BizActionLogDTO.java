@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务活动预算申请记录
  *
  * @author auto create
- * @since 1.0, 2022-07-15 16:49:39
+ * @since 1.0, 2023-04-03 19:40:23
  */
 public class BizActionLogDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4181241549128668982L;
+	private static final long serialVersionUID = 4738841547586719446L;
 
 	/**
 	 * 金额

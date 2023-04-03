@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.games.friendlist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 19:56:40
+ * @since 1.0, 2023-04-03 08:26:42
  */
 public class AlipayCommerceSportsGamesFriendlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3326959971823849951L;
+	private static final long serialVersionUID = 6473719793442899544L;
 
 	/** 
 	 * 好友信息集合

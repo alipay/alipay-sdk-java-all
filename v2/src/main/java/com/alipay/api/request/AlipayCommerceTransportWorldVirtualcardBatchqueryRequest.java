@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.world.virtualcard.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:56:52
+ * @since 1.0, 2023-04-03 01:13:26
  */
 public class AlipayCommerceTransportWorldVirtualcardBatchqueryRequest implements AlipayRequest<AlipayCommerceTransportWorldVirtualcardBatchqueryResponse> {
 

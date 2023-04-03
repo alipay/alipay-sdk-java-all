@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.yuntask.agreement.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:25:39
+ * @since 1.0, 2023-04-03 13:25:14
  */
 public class AlipayCommerceYuntaskAgreementSignRequest implements AlipayRequest<AlipayCommerceYuntaskAgreementSignResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.parking.parkinglotbiz.transfer request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:22:10
+ * @since 1.0, 2023-04-03 04:17:35
  */
 public class AlipayEcoMycarParkingParkinglotbizTransferRequest implements AlipayRequest<AlipayEcoMycarParkingParkinglotbizTransferResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.cooperation.product.offline.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:27:12
+ * @since 1.0, 2023-04-03 15:06:52
  */
 public class AlipayInsCooperationProductOfflineBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5524171794898774982L;
+	private static final long serialVersionUID = 3425889225929368591L;
 
 	/** 
 	 * 返回给机构的线下产品信息列表

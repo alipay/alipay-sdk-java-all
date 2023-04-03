@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.open.app.risktag.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 08:22:10
+ * @since 1.0, 2023-04-03 04:12:15
  */
 public class ZhimaOpenAppRisktagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4214455778932778558L;
+	private static final long serialVersionUID = 5659782294842832491L;
 
 	/** 
 	 * 响应参数

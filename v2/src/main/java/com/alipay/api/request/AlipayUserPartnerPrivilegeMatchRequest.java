@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.partner.privilege.match request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:06:32
+ * @since 1.0, 2023-04-03 07:11:24
  */
 public class AlipayUserPartnerPrivilegeMatchRequest implements AlipayRequest<AlipayUserPartnerPrivilegeMatchResponse> {
 

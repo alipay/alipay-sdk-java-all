@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.appdeploy.byappid.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:23:43
+ * @since 1.0, 2023-04-03 07:57:34
  */
 public class AlipayOpenMiniAppdeployByappidQueryRequest implements AlipayRequest<AlipayOpenMiniAppdeployByappidQueryResponse> {
 

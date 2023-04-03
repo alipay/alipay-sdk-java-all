@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.picture.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:49:43
+ * @since 1.0, 2023-04-03 11:00:06
  */
 public class ZhimaCustomerJobworthPictureUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7478312277579264242L;
+	private static final long serialVersionUID = 6358661335448117728L;
 
 	/** 
 	 * 图片返回ID

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.recommend.detect response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:54:30
+ * @since 1.0, 2023-04-03 12:42:17
  */
 public class AlipayOpenMiniAmpeRecommendDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8737158541382835467L;
+	private static final long serialVersionUID = 8483667743297987575L;
 
 	/** 
 	 * true:有效

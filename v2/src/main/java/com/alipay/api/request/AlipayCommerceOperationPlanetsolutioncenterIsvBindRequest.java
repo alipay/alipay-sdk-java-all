@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.planetsolutioncenter.isv.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:50:55
+ * @since 1.0, 2023-04-03 08:13:46
  */
 public class AlipayCommerceOperationPlanetsolutioncenterIsvBindRequest implements AlipayRequest<AlipayCommerceOperationPlanetsolutioncenterIsvBindResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.cs.channel.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:07:18
+ * @since 1.0, 2023-04-03 12:42:43
  */
 public class AlipayBossCsChannelQueryRequest implements AlipayRequest<AlipayBossCsChannelQueryResponse> {
 

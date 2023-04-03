@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.qrcode.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-03-14 10:50:46
+ * @since 1.0, 2023-04-03 05:24:04
  */
 public class AlipayOpenMiniQrcodeUnbindRequest implements AlipayRequest<AlipayOpenMiniQrcodeUnbindResponse> {
 

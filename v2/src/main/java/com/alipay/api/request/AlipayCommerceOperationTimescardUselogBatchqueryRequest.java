@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.timescard.uselog.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:01:43
+ * @since 1.0, 2023-04-03 15:16:47
  */
 public class AlipayCommerceOperationTimescardUselogBatchqueryRequest implements AlipayRequest<AlipayCommerceOperationTimescardUselogBatchqueryResponse> {
 

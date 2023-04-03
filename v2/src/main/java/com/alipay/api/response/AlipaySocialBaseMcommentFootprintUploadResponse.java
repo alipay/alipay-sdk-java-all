@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.mcomment.footprint.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:16:40
+ * @since 1.0, 2023-04-03 11:16:45
  */
 public class AlipaySocialBaseMcommentFootprintUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2654833462255973773L;
+	private static final long serialVersionUID = 5546268523822731561L;
 
 	/** 
 	 * 结果码，100表示成功

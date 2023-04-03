@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.miniapprealtime.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-30 10:46:42
+ * @since 1.0, 2023-04-03 07:31:48
  */
 public class AlipayDataMdaMiniapprealtimeQueryRequest implements AlipayRequest<AlipayDataMdaMiniapprealtimeQueryResponse> {
 

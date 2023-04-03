@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.maintain.data.update response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:19:40
+ * @since 1.0, 2023-04-03 02:43:28
  */
 public class AlipayEcoMycarMaintainDataUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3113796625281284514L;
+	private static final long serialVersionUID = 1877588684266887813L;
 
 	/** 
 	 * 具体返回的处理结果

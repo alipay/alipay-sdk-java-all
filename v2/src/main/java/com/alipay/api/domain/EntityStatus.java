@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EntityStatus extends AlipayObject {
 
-	private static final long serialVersionUID = 7719718367954841594L;
+	private static final long serialVersionUID = 5688818217878499775L;
 
 	/**
 	 * 安卓是否可借

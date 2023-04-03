@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.sportshealth.account.rollback response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:16:44
+ * @since 1.0, 2023-04-03 15:56:47
  */
 public class AlipayUserSportshealthAccountRollbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6466313274639529257L;
+	private static final long serialVersionUID = 5413975844567975251L;
 
 	/** 
 	 * 运动币账户支付流水号

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.eprint.token.refresh request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:16:21
+ * @since 1.0, 2023-04-03 10:42:08
  */
 public class AlipayEcoEprintTokenRefreshRequest implements AlipayRequest<AlipayEcoEprintTokenRefreshResponse> {
 

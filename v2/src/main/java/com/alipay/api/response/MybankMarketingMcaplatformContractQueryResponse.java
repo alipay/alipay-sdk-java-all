@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.mcaplatform.contract.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 08:01:27
+ * @since 1.0, 2023-04-03 01:28:56
  */
 public class MybankMarketingMcaplatformContractQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1447437732982475871L;
+	private static final long serialVersionUID = 5836918671123458357L;
 
 	/** 
 	 * sign_status, 唯一，绿色经营签约查询

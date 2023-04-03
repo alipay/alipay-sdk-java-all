@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.inventory.out.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:55:11
+ * @since 1.0, 2023-04-03 16:15:35
  */
 public class MybankCreditSupplychainInventoryOutConsultRequest implements AlipayRequest<MybankCreditSupplychainInventoryOutConsultResponse> {
 

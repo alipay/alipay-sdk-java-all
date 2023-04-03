@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.card.activateurl.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:20:50
+ * @since 1.0, 2023-04-03 05:12:41
  */
 public class AlipayUserCardActivateurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3275586574243833682L;
+	private static final long serialVersionUID = 8237457982788464693L;
 
 	/** 
 	 * 会员卡领卡链接(使用时需URLDecode解码)。商户获取此链接后可投放到服务窗消息、店铺二维码等。

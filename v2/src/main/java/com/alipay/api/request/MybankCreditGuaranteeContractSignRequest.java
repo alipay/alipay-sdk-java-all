@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.guarantee.contract.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:44:33
+ * @since 1.0, 2023-04-03 02:44:50
  */
 public class MybankCreditGuaranteeContractSignRequest implements AlipayRequest<MybankCreditGuaranteeContractSignResponse> {
 

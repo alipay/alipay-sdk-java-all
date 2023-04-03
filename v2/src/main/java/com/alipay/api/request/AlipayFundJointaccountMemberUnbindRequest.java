@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.jointaccount.member.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 14:02:59
+ * @since 1.0, 2023-04-03 00:20:06
  */
 public class AlipayFundJointaccountMemberUnbindRequest implements AlipayRequest<AlipayFundJointaccountMemberUnbindResponse> {
 

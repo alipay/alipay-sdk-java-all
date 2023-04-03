@@ -11,40 +11,48 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFincoreComplianceCustomsInfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2241476234566274477L;
+	private static final long serialVersionUID = 4847926921382346188L;
 
 	/**
-	 * 地区编号
+	 * 地区编码
+塔城：TACHENG
+
 	 */
 	@ApiField("area_code")
 	private String areaCode;
 
 	/**
-	 * buyer_name+不唯一+海关推送边民信息+无+海关传入+供海关调用
+	 * 边民的真实姓名
 	 */
 	@ApiField("buyer_name")
 	private String buyerName;
 
 	/**
-	 * cert_no+不唯一+海关推送边民信息+无+海关传入+证件号码
+	 * 边民证件号码
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * cert_type+不唯一+海关推送边民信息+IDENTITY_CARD+海关传入+供海关调用
+	 * 证件类型：
+IDENTITY_CARD：身份证；
+PASSPORT：护照；
+OFFICER_CARD：军官证；
+SOLDIER_CARD：士兵证；
+HOKOU：户口本
+
 	 */
 	@ApiField("cert_type")
 	private String certType;
 
 	/**
-	 * merchant_id + 否 + 边民信息录入 + 无 + 海关传入 + 海关边民信息录入
+	 * 商户唯一识别ID
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
 
 	/**
-	 * merchant_order_no+唯一+海关推送边民信息+无+海关传入+供海关调用
+	 * 海关创建订单后生成的唯一单号，支付中需要传递该订单号做核验。最小长度不低于8位。
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;
@@ -56,13 +64,13 @@ public class AlipayFincoreComplianceCustomsInfoCreateModel extends AlipayObject 
 	private String openId;
 
 	/**
-	 * 商户ID
+	 * 商户在支付宝签约后获得的唯一身份ID，2088开头的16位数字。
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
 
 	/**
-	 * store_id + 否 + 边民信息录入 + 无 + 海关传入 + 海关边民信息录入
+	 * 门店唯一识别ID
 	 */
 	@ApiField("store_id")
 	private String storeId;

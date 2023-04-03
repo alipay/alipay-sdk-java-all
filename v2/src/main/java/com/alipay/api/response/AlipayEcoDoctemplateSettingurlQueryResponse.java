@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.doctemplate.settingurl.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:13:19
+ * @since 1.0, 2023-04-03 15:03:42
  */
 public class AlipayEcoDoctemplateSettingurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4561876352434944287L;
+	private static final long serialVersionUID = 5648659192648758286L;
 
 	/** 
 	 * 模板设置地址

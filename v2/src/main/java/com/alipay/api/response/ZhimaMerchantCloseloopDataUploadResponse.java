@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.closeloop.data.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:51:51
+ * @since 1.0, 2023-04-03 05:08:59
  */
 public class ZhimaMerchantCloseloopDataUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4338478929825317432L;
+	private static final long serialVersionUID = 2795723869989631496L;
 
 	/** 
 	 * 公用回传参数（非必填），这个字段由商户传入，系统透传给商户。

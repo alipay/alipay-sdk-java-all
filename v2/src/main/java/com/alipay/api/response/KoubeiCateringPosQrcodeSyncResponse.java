@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.pos.qrcode.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:21:32
+ * @since 1.0, 2023-04-03 12:07:33
  */
 public class KoubeiCateringPosQrcodeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2689974746534712399L;
+	private static final long serialVersionUID = 4498157519565177642L;
 
 	/** 
 	 * 桌台ID

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.sharecode.hbfq.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:52:30
+ * @since 1.0, 2023-04-03 14:32:47
  */
 public class AlipayPcreditHuabeiSharecodeHbfqCreateRequest implements AlipayRequest<AlipayPcreditHuabeiSharecodeHbfqCreateResponse> {
 

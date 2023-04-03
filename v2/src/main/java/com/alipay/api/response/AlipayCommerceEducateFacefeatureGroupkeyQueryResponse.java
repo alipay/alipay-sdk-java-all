@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.facefeature.groupkey.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:31:54
+ * @since 1.0, 2023-04-03 12:05:19
  */
 public class AlipayCommerceEducateFacefeatureGroupkeyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4562942691461668371L;
+	private static final long serialVersionUID = 4268671797934125235L;
 
 	/** 
 	 * 学校人脸库ID

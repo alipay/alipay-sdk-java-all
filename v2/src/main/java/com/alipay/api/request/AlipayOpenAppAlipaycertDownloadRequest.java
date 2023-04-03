@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.alipaycert.download request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:03:39
+ * @since 1.0, 2023-04-03 01:22:08
  */
 public class AlipayOpenAppAlipaycertDownloadRequest implements AlipayRequest<AlipayOpenAppAlipaycertDownloadResponse> {
 

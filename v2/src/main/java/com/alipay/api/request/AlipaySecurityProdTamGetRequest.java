@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.tam.get request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:26:07
+ * @since 1.0, 2023-04-03 05:56:58
  */
 public class AlipaySecurityProdTamGetRequest implements AlipayRequest<AlipaySecurityProdTamGetResponse> {
 

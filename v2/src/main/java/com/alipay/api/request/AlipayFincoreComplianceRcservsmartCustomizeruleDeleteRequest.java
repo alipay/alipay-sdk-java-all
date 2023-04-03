@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.rcservsmart.customizerule.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:31:39
+ * @since 1.0, 2023-04-03 00:31:43
  */
 public class AlipayFincoreComplianceRcservsmartCustomizeruleDeleteRequest implements AlipayRequest<AlipayFincoreComplianceRcservsmartCustomizeruleDeleteResponse> {
 

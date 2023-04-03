@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class McardTemplateBenefit extends AlipayObject {
 
-	private static final long serialVersionUID = 8633837892782347861L;
+	private static final long serialVersionUID = 6758179831234443213L;
 
 	/**
 	 * 权益描述信息

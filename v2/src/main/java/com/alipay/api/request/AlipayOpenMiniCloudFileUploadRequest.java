@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.cloud.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:27:30
+ * @since 1.0, 2023-04-03 04:01:18
  */
 public class AlipayOpenMiniCloudFileUploadRequest implements AlipayUploadRequest<AlipayOpenMiniCloudFileUploadResponse> {
 

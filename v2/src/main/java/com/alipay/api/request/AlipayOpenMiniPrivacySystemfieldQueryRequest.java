@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.privacy.systemfield.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:42:34
+ * @since 1.0, 2023-04-03 16:42:13
  */
 public class AlipayOpenMiniPrivacySystemfieldQueryRequest implements AlipayRequest<AlipayOpenMiniPrivacySystemfieldQueryResponse> {
 

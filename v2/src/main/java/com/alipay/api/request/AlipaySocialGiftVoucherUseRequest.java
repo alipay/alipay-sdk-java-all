@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.gift.voucher.use request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:38:40
+ * @since 1.0, 2023-04-03 03:19:44
  */
 public class AlipaySocialGiftVoucherUseRequest implements AlipayRequest<AlipaySocialGiftVoucherUseResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.stepcounter.data.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:11:41
+ * @since 1.0, 2023-04-03 09:16:43
  */
 public class AlipayUserStepcounterDataBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8746938355619675656L;
+	private static final long serialVersionUID = 5743716236513681338L;
 
 	/** 
 	 * 查询到的用户日计步信息

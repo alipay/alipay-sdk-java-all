@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.smartwear.status.query request
  * 
  * @author auto create
- * @since 1.0, 2021-07-27 10:30:22
+ * @since 1.0, 2023-04-03 16:33:06
  */
 public class AlipayPayAppSmartwearStatusQueryRequest implements AlipayRequest<AlipayPayAppSmartwearStatusQueryResponse> {
 

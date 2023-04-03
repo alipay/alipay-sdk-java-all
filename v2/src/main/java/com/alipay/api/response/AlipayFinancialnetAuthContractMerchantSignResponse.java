@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.contract.merchant.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:36:39
+ * @since 1.0, 2023-04-03 06:11:43
  */
 public class AlipayFinancialnetAuthContractMerchantSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8277846319579338342L;
+	private static final long serialVersionUID = 2488495517435885887L;
 
 	/** 
 	 * 合约批次号

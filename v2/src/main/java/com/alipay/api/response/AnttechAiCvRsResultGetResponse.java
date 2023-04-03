@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.rs.result.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:31:40
+ * @since 1.0, 2023-04-03 17:26:45
  */
 public class AnttechAiCvRsResultGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1842132548185113336L;
+	private static final long serialVersionUID = 3782779176428431496L;
 
 	/** 
 	 * 各种类型的预测结果值

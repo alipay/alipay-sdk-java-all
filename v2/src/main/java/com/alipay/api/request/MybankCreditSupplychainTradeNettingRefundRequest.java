@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.trade.netting.refund request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:28:15
+ * @since 1.0, 2023-04-03 09:52:34
  */
 public class MybankCreditSupplychainTradeNettingRefundRequest implements AlipayRequest<MybankCreditSupplychainTradeNettingRefundResponse> {
 

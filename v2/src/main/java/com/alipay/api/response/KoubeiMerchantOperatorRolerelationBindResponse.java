@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.operator.rolerelation.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:34:17
+ * @since 1.0, 2023-04-03 09:30:55
  */
 public class KoubeiMerchantOperatorRolerelationBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5856922948689954752L;
+	private static final long serialVersionUID = 4886389659337871668L;
 
 	/** 
 	 * 操作是否成功

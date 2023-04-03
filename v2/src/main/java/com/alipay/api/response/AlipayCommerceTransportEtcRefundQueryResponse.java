@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:01:41
+ * @since 1.0, 2023-04-03 07:06:43
  */
 public class AlipayCommerceTransportEtcRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3441762985936278655L;
+	private static final long serialVersionUID = 7346422679457471768L;
 
 	/** 
 	 * 商户侧唯一的行程号

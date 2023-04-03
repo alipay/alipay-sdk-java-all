@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iot.membershipcoupon.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:15:41
+ * @since 1.0, 2023-04-03 02:29:18
  */
 public class AlipayOpenIotMembershipcouponQueryRequest implements AlipayRequest<AlipayOpenIotMembershipcouponQueryResponse> {
 

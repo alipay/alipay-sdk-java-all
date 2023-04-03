@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.unicom.mobile.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:33:34
+ * @since 1.0, 2023-04-03 04:46:14
  */
 public class AlipayUserUnicomMobileSyncRequest implements AlipayRequest<AlipayUserUnicomMobileSyncResponse> {
 

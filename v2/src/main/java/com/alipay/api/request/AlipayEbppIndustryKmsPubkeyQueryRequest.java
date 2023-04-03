@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.kms.pubkey.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:50:30
+ * @since 1.0, 2023-04-03 07:56:39
  */
 public class AlipayEbppIndustryKmsPubkeyQueryRequest implements AlipayRequest<AlipayEbppIndustryKmsPubkeyQueryResponse> {
 

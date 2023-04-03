@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FullDiscountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1875112133936271849L;
+	private static final long serialVersionUID = 6365581725789762692L;
 
 	/**
 	 * 折扣，如果有阶梯规则，则用英文逗号分隔

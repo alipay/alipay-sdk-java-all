@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.widget.data.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:51:39
+ * @since 1.0, 2023-04-03 05:06:43
  */
 public class AlipayOpenMiniWidgetDataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4443764221958855964L;
+	private static final long serialVersionUID = 3713521556768687898L;
 
 	/** 
 	 * 同步接口生成的唯一标识，用于查询提交数据的审核状态

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.faceability.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 08:23:15
+ * @since 1.0, 2023-04-03 06:18:16
  */
 public class ZolozAuthenticationCustomerFaceabilityIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8229295614489358986L;
+	private static final long serialVersionUID = 3531652472788711111L;
 
 	/** 
 	 * 能力接口返回值

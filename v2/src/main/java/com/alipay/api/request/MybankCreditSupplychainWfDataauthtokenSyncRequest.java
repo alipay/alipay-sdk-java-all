@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.wf.dataauthtoken.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:31:41
+ * @since 1.0, 2023-04-03 12:26:45
  */
 public class MybankCreditSupplychainWfDataauthtokenSyncRequest implements AlipayRequest<MybankCreditSupplychainWfDataauthtokenSyncResponse> {
 

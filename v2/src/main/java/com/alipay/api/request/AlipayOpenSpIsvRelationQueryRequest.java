@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.isv.relation.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:37:15
+ * @since 1.0, 2023-04-03 00:45:34
  */
 public class AlipayOpenSpIsvRelationQueryRequest implements AlipayRequest<AlipayOpenSpIsvRelationQueryResponse> {
 

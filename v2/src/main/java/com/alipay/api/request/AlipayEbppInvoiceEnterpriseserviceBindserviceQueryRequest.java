@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.enterpriseservice.bindservice.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-28 19:31:41
+ * @since 1.0, 2023-04-03 02:01:43
  */
 public class AlipayEbppInvoiceEnterpriseserviceBindserviceQueryRequest implements AlipayRequest<AlipayEbppInvoiceEnterpriseserviceBindserviceQueryResponse> {
 

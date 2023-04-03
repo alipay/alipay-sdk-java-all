@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.trusple.loanscenedatapush.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-03-27 10:46:40
+ * @since 1.0, 2023-04-03 01:31:43
  */
 public class AnttechBlockchainFinanceTruspleLoanscenedatapushSubmitRequest implements AlipayRequest<AnttechBlockchainFinanceTruspleLoanscenedatapushSubmitResponse> {
 

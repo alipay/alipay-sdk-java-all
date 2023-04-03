@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.auth.app.aes.set request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:10:37
+ * @since 1.0, 2023-04-03 17:34:06
  */
 public class AlipayOpenAuthAppAesSetRequest implements AlipayRequest<AlipayOpenAuthAppAesSetResponse> {
 

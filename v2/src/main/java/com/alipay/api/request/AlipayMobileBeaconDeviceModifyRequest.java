@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.beacon.device.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:21:23
+ * @since 1.0, 2023-04-03 02:31:02
  */
 public class AlipayMobileBeaconDeviceModifyRequest implements AlipayRequest<AlipayMobileBeaconDeviceModifyResponse> {
 

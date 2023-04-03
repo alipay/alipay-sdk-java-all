@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.logistics.express.nonservice.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:50:43
+ * @since 1.0, 2023-04-03 01:37:11
  */
 public class AlipayEcoLogisticsExpressNonserviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2153239459465843312L;
+	private static final long serialVersionUID = 3688837513186189988L;
 
 	/** 
 	 * 非服务区区域代码列表

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.fundds.account.witness.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:06:38
+ * @since 1.0, 2023-04-03 07:21:47
  */
 public class AlipayFincoreFunddsAccountWitnessCreateRequest implements AlipayRequest<AlipayFincoreFunddsAccountWitnessCreateResponse> {
 

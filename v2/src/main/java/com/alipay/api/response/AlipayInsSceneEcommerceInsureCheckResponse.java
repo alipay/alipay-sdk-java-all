@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.ecommerce.insure.check response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:07:37
+ * @since 1.0, 2023-04-03 02:38:30
  */
 public class AlipayInsSceneEcommerceInsureCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3212423186755766912L;
+	private static final long serialVersionUID = 2637518314531296437L;
 
 	/** 
 	 * 准入结果列表

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.risk.httpproxy.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:36:44
+ * @since 1.0, 2023-04-03 05:47:48
  */
 public class AnttechBlockchainRiskHttpproxyQueryRequest implements AlipayRequest<AnttechBlockchainRiskHttpproxyQueryResponse> {
 

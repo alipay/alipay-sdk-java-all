@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.charity.withhold.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:21:06
+ * @since 1.0, 2023-04-03 01:52:01
  */
 public class AlipayUserCharityWithholdCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3263388782637855818L;
+	private static final long serialVersionUID = 5374179931568732241L;
 
 	/** 
 	 * 代扣结果

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.data.dishdiagnose.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:30:26
+ * @since 1.0, 2023-04-03 11:48:11
  */
 public class KoubeiMarketingDataDishdiagnoseBatchqueryRequest implements AlipayRequest<KoubeiMarketingDataDishdiagnoseBatchqueryResponse> {
 

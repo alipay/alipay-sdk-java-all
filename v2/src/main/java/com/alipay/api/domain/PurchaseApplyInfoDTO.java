@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集团采购的活动预算请求对象
  *
  * @author auto create
- * @since 1.0, 2022-07-15 16:21:50
+ * @since 1.0, 2023-04-03 19:39:58
  */
 public class PurchaseApplyInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1249837785325637419L;
+	private static final long serialVersionUID = 5195622519896522594L;
 
 	/**
 	 * 采购类目

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.mindv.job.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:45:39
+ * @since 1.0, 2023-04-03 12:13:54
  */
 public class AlipayIserviceMindvJobCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2562225324119358317L;
+	private static final long serialVersionUID = 8694889483132112666L;
 
 	/** 
 	 * 任务创建时间

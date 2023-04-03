@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.approval.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:31:38
+ * @since 1.0, 2023-04-03 17:51:46
  */
 public class AlipayCommerceEcApprovalModifyRequest implements AlipayRequest<AlipayCommerceEcApprovalModifyResponse> {
 

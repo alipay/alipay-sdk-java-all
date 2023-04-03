@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduRefundInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2522368421887916356L;
+	private static final long serialVersionUID = 8387777823357335258L;
 
 	/**
 	 * 本次退款是否发生了资金变化。

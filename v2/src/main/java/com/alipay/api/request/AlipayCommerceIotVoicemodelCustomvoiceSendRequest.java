@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.voicemodel.customvoice.send request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:59:21
+ * @since 1.0, 2023-04-03 12:22:34
  */
 public class AlipayCommerceIotVoicemodelCustomvoiceSendRequest implements AlipayRequest<AlipayCommerceIotVoicemodelCustomvoiceSendResponse> {
 

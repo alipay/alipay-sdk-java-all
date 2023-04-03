@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.settle.receivable.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:01:32
+ * @since 1.0, 2023-04-03 02:13:32
  */
 public class AlipayBossFncSettleReceivableConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3673938272814341521L;
+	private static final long serialVersionUID = 5121426176216815939L;
 
 	/** 
 	 * 应收确认结果列表

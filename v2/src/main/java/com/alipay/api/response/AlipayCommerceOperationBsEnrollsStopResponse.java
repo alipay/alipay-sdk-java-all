@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.bs.enrolls.stop response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-17 11:51:40
+ * @since 1.0, 2023-04-03 17:56:44
  */
 public class AlipayCommerceOperationBsEnrollsStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6853879396145418431L;
+	private static final long serialVersionUID = 6328738933272418457L;
 
 	/** 
 	 * 中止失败的参与者列表

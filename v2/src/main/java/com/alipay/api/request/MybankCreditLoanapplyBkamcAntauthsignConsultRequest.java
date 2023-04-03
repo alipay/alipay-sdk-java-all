@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.bkamc.antauthsign.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:18:23
+ * @since 1.0, 2023-04-03 02:01:12
  */
 public class MybankCreditLoanapplyBkamcAntauthsignConsultRequest implements AlipayRequest<MybankCreditLoanapplyBkamcAntauthsignConsultResponse> {
 

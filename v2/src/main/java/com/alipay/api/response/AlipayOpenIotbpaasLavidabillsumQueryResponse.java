@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotbpaas.lavidabillsum.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:16:25
+ * @since 1.0, 2023-04-03 11:20:15
  */
 public class AlipayOpenIotbpaasLavidabillsumQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8645618982133726953L;
+	private static final long serialVersionUID = 1334693891634569669L;
 
 	/** 
 	 * 总商家优惠金额

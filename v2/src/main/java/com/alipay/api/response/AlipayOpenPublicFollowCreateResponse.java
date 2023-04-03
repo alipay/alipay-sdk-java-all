@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.follow.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:26:40
+ * @since 1.0, 2023-04-03 14:31:45
  */
 public class AlipayOpenPublicFollowCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2772452843882113394L;
+	private static final long serialVersionUID = 3136712966896443397L;
 
 	
 

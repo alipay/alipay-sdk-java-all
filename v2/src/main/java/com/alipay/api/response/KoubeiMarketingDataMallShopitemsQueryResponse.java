@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.mall.shopitems.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:30:49
+ * @since 1.0, 2023-04-03 04:42:18
  */
 public class KoubeiMarketingDataMallShopitemsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4578875127371615185L;
+	private static final long serialVersionUID = 1275676624341587917L;
 
 	/** 
 	 * 店铺信息

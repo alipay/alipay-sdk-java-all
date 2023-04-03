@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.rta.auth response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:06:45
+ * @since 1.0, 2023-04-03 17:21:48
  */
 public class AnttechMorseMarketingRtaAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8665673684289195569L;
+	private static final long serialVersionUID = 4692481273173129141L;
 
 	/** 
 	 * 预授权成功的活动id列表

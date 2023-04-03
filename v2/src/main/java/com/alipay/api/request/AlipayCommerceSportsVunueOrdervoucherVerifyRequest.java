@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.vunue.ordervoucher.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 19:54:03
+ * @since 1.0, 2023-04-03 13:51:59
  */
 public class AlipayCommerceSportsVunueOrdervoucherVerifyRequest implements AlipayRequest<AlipayCommerceSportsVunueOrdervoucherVerifyResponse> {
 

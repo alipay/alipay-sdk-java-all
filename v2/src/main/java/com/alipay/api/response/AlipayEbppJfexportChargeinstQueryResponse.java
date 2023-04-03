@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.jfexport.chargeinst.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:40:29
+ * @since 1.0, 2023-04-03 00:51:03
  */
 public class AlipayEbppJfexportChargeinstQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7522646212793227137L;
+	private static final long serialVersionUID = 4682412795419637711L;
 
 	/** 
 	 * 输出的机构列表

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.contract.quick.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:01:42
+ * @since 1.0, 2023-04-03 12:36:47
  */
 public class ZhimaMerchantContractQuickCreateRequest implements AlipayRequest<ZhimaMerchantContractQuickCreateResponse> {
 

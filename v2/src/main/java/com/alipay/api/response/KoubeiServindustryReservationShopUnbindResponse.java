@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.reservation.shop.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:13:56
+ * @since 1.0, 2023-04-03 07:35:44
  */
 public class KoubeiServindustryReservationShopUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7499962578913371476L;
+	private static final long serialVersionUID = 5258999335816219244L;
 
 	/** 
 	 * 错误码

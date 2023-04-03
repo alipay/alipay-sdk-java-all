@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.cloudbus.timeod.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:32:17
+ * @since 1.0, 2023-04-03 17:19:12
  */
 public class AlipayDataAiserviceCloudbusTimeodGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1751738433543293249L;
+	private static final long serialVersionUID = 2136986545472547269L;
 
 	/** 
 	 * od分时结果列表

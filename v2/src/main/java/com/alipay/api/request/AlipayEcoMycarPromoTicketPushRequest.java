@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.promo.ticket.push request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:23:45
+ * @since 1.0, 2023-04-03 11:38:58
  */
 public class AlipayEcoMycarPromoTicketPushRequest implements AlipayRequest<AlipayEcoMycarPromoTicketPushResponse> {
 

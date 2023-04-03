@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.order.createandpay response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:01:40
+ * @since 1.0, 2023-04-03 16:51:44
  */
 public class AlipayMerchantOrderCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1354635483745821787L;
+	private static final long serialVersionUID = 6575377926592759125L;
 
 	/** 
 	 * alipay侧的订单id

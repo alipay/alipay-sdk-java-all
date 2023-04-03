@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.accountbook.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 10:17:16
+ * @since 1.0, 2023-04-03 01:12:17
  */
 public class AlipayFundAccountbookQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1472816533979248944L;
+	private static final long serialVersionUID = 3446161598784261588L;
 
 	/** 
 	 * 记账账簿id

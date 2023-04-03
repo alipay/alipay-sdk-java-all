@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.content.contentinfo.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:23:33
+ * @since 1.0, 2023-04-03 11:59:39
  */
 public class KoubeiContentContentinfoDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4369666544111897772L;
+	private static final long serialVersionUID = 3826314415917769961L;
 
 	/** 
 	 * 口碑内容的唯一id

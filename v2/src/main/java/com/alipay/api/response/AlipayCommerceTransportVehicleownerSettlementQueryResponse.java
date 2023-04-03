@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.settlement.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:14:15
+ * @since 1.0, 2023-04-03 09:53:29
  */
 public class AlipayCommerceTransportVehicleownerSettlementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2832944575347951938L;
+	private static final long serialVersionUID = 8523654668651255868L;
 
 	/** 
 	 * 收单机构渠道码，该字段不返回默认为ALIPAY

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.exchangerate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:08:12
+ * @since 1.0, 2023-04-03 02:55:30
  */
 public class AlipayOverseasTravelExchangerateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5437915846869163352L;
+	private static final long serialVersionUID = 3286983114332938842L;
 
 	/** 
 	 * 货币代码，ISO标准alpha- 3币种代码，为当前查询的币种、或者根据国家码、经纬度定位所在国家对应的币种

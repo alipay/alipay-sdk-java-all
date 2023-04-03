@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.authentication.customer.faceverify.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 08:23:38
+ * @since 1.0, 2023-04-03 04:32:45
  */
 public class ZolozAuthenticationCustomerFaceverifyMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8178783357187355613L;
+	private static final long serialVersionUID = 6664764824382619149L;
 
 	/** 
 	 * 是否为攻击

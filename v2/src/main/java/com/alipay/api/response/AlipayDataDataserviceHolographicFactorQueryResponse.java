@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.holographic.factor.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:39:10
+ * @since 1.0, 2023-04-03 08:09:57
  */
 public class AlipayDataDataserviceHolographicFactorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3423462576241394633L;
+	private static final long serialVersionUID = 4771486869528999127L;
 
 	/** 
 	 * 参数中文名称:身份证号

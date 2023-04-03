@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.mcomment.newsfeed.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:36:50
+ * @since 1.0, 2023-04-03 10:19:25
  */
 public class AlipaySocialBaseMcommentNewsfeedAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7245947345949369778L;
+	private static final long serialVersionUID = 4161376291682144424L;
 
 	/** 
 	 * 新评论id

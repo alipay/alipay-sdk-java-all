@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.pcreditmerchant.productorder.delay request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:51:13
+ * @since 1.0, 2023-04-03 08:21:51
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderDelayRequest implements AlipayRequest<AlipayPcreditHuabeiPcreditmerchantProductorderDelayResponse> {
 

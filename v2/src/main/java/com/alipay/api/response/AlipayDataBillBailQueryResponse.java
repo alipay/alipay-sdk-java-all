@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.bail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-21 11:07:47
+ * @since 1.0, 2023-04-03 00:53:19
  */
 public class AlipayDataBillBailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5763173443116928544L;
+	private static final long serialVersionUID = 5439956283141595218L;
 
 	/** 
 	 * 保证金明细列表，最多返回5000条

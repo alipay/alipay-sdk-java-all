@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certify.studentinfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-12-21 21:57:15
+ * @since 1.0, 2023-04-03 12:48:50
  */
 public class AlipayUserCertifyStudentinfoSyncRequest implements AlipayRequest<AlipayUserCertifyStudentinfoSyncResponse> {
 

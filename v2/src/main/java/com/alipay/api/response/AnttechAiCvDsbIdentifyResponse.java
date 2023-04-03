@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.dsb.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:51:45
+ * @since 1.0, 2023-04-03 00:59:23
  */
 public class AnttechAiCvDsbIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5582935917736933638L;
+	private static final long serialVersionUID = 3167522467446659647L;
 
 	/** 
 	 * 本次inference任务id，后续通过该id查询对应结果

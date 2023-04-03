@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.questionnare.task.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:06:24
+ * @since 1.0, 2023-04-03 03:59:46
  */
 public class AlipaySocialQuestionnareTaskVerifyRequest implements AlipayRequest<AlipaySocialQuestionnareTaskVerifyResponse> {
 

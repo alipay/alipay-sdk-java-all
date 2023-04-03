@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.risk.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 08:15:12
+ * @since 1.0, 2023-04-03 14:59:30
  */
 public class ZhimaCreditPeUserRiskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6881588179434566424L;
+	private static final long serialVersionUID = 5558997953747625749L;
 
 	/** 
 	 * 用户在该场景下能否准入，返回true：准入，返回false：不准入。系统调用正确时有值。

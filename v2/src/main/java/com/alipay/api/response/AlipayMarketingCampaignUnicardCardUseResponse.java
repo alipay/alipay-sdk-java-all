@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.unicard.card.use response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:00:37
+ * @since 1.0, 2023-04-03 08:45:08
  */
 public class AlipayMarketingCampaignUnicardCardUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6355945874686758297L;
+	private static final long serialVersionUID = 5754166656912828322L;
 
 	
 

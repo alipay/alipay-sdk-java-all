@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.auth.operator.info.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:11:43
+ * @since 1.0, 2023-04-03 09:49:49
  */
 public class AlipayOpenAuthOperatorInfoQueryRequest implements AlipayRequest<AlipayOpenAuthOperatorInfoQueryResponse> {
 

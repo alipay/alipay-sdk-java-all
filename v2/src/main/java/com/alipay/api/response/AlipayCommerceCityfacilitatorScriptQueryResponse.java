@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.script.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:22:50
+ * @since 1.0, 2023-04-03 09:17:04
  */
 public class AlipayCommerceCityfacilitatorScriptQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8315986876888899637L;
+	private static final long serialVersionUID = 5115676776183893258L;
 
 	/** 
 	 * 脚本内容，智能卡中心自定义的脚本格式内容

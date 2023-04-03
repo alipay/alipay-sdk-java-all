@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.apply.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:52:41
+ * @since 1.0, 2023-04-03 03:34:03
  */
 public class AlipayPcreditLoanApplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8141948117492843597L;
+	private static final long serialVersionUID = 2464792811671882928L;
 
 	/** 
 	 * 贷款申请金额，目前只支持全额放款，所以申请金额和放款金额相同，以元为单位，精确到小数点后两位

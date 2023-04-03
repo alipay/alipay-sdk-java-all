@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.instcard.open.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:41:33
+ * @since 1.0, 2023-04-03 09:42:29
  */
 public class AlipayFundInstcardOpenSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4839436374912848613L;
+	private static final long serialVersionUID = 3322838919993211636L;
 
 	/** 
 	 * 开户姓名

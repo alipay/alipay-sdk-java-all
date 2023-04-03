@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.dapply.tradedetaillist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:53:48
+ * @since 1.0, 2023-04-03 13:15:14
  */
 public class AlipayCommerceIotDapplyTradedetaillistQueryRequest implements AlipayRequest<AlipayCommerceIotDapplyTradedetaillistQueryResponse> {
 

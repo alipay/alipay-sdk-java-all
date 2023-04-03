@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.delay response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:56:40
+ * @since 1.0, 2023-04-03 07:56:43
  */
 public class AlipayMarketingVoucherDelayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3772926657955444397L;
+	private static final long serialVersionUID = 6831771367715864293L;
 
 	/** 
 	 * 被延期的券

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.autocheck.step.get request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:36:44
+ * @since 1.0, 2023-04-03 17:16:54
  */
 public class AlipayOpenMiniAutocheckStepGetRequest implements AlipayRequest<AlipayOpenMiniAutocheckStepGetResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.campaign.offline request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:23:26
+ * @since 1.0, 2023-04-03 09:50:30
  */
 public class AlipayCommerceTransportVehicleownerCampaignOfflineRequest implements AlipayRequest<AlipayCommerceTransportVehicleownerCampaignOfflineResponse> {
 

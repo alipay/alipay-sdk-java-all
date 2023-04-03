@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.vehicle.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:19:47
+ * @since 1.0, 2023-04-03 12:17:19
  */
 public class AlipayEcoMycarVehicleInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3741525244318834747L;
+	private static final long serialVersionUID = 4277641643991476973L;
 
 	/** 
 	 * 车辆信息列表

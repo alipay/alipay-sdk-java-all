@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.guarletter.apply.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:47:51
+ * @since 1.0, 2023-04-03 14:40:12
  */
 public class MybankCreditLoantradeGuarletterApplyRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1546424524678225497L;
+	private static final long serialVersionUID = 5533166441387976937L;
 
 	/** 
 	 * 退款申请单号

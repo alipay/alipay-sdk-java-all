@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.retail.wms.goodssafetyinventory.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:36:28
+ * @since 1.0, 2023-04-03 06:05:03
  */
 public class KoubeiRetailWmsGoodssafetyinventoryBatchqueryRequest implements AlipayRequest<KoubeiRetailWmsGoodssafetyinventoryBatchqueryResponse> {
 

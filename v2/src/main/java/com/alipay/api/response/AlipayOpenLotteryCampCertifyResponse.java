@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.lottery.camp.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:50:32
+ * @since 1.0, 2023-04-03 05:22:27
  */
 public class AlipayOpenLotteryCampCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6172868488531549482L;
+	private static final long serialVersionUID = 3885127326845658998L;
 
 	
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.autocheck.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:36:44
+ * @since 1.0, 2023-04-03 16:21:50
  */
 public class AlipayOpenMiniAutocheckTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7364226697835367281L;
+	private static final long serialVersionUID = 5326763982531142267L;
 
 	/** 
 	 * 任务执行状态

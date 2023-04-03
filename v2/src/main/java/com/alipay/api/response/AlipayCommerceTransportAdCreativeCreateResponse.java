@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ad.creative.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:16:05
+ * @since 1.0, 2023-04-03 01:34:15
  */
 public class AlipayCommerceTransportAdCreativeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8453285314459476461L;
+	private static final long serialVersionUID = 1685447265191647976L;
 
 	/** 
 	 * 创意ID：广告创意ID，投放广告唯一标识，可使用该ID进行广告详情查询

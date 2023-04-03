@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.logistics.express.price.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:17:06
+ * @since 1.0, 2023-04-03 05:45:17
  */
 public class AlipayEcoLogisticsExpressPriceQueryRequest implements AlipayRequest<AlipayEcoLogisticsExpressPriceQueryResponse> {
 

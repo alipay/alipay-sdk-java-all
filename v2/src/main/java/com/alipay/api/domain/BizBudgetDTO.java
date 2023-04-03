@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁预算DTO
  *
  * @author auto create
- * @since 1.0, 2022-07-15 16:21:50
+ * @since 1.0, 2023-04-03 19:40:35
  */
 public class BizBudgetDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6895132918449677137L;
+	private static final long serialVersionUID = 4542781115727784911L;
 
 	/**
 	 * 方案剩余可用金额

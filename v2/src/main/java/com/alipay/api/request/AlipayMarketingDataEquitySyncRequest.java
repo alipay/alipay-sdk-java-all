@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.data.equity.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:51:43
+ * @since 1.0, 2023-04-03 09:26:45
  */
 public class AlipayMarketingDataEquitySyncRequest implements AlipayRequest<AlipayMarketingDataEquitySyncResponse> {
 

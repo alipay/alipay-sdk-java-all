@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.payforprivilege.member.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:41:42
+ * @since 1.0, 2023-04-03 10:42:09
  */
 public class AlipayCommercePayforprivilegeMemberDeleteRequest implements AlipayRequest<AlipayCommercePayforprivilegeMemberDeleteResponse> {
 

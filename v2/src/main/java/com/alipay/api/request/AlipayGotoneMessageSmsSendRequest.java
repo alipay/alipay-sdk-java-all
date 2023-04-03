@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.gotone.message.sms.send request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:06:39
+ * @since 1.0, 2023-04-03 11:41:45
  */
 public class AlipayGotoneMessageSmsSendRequest implements AlipayRequest<AlipayGotoneMessageSmsSendResponse> {
 

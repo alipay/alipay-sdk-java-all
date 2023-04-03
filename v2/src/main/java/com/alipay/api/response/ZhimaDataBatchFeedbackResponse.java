@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.data.batch.feedback response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:50:53
+ * @since 1.0, 2023-04-03 15:50:17
  */
 public class ZhimaDataBatchFeedbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5255579827459758779L;
+	private static final long serialVersionUID = 4172387327936879365L;
 
 	
 

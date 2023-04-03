@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.promoter.point.receive response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:51:30
+ * @since 1.0, 2023-04-03 01:17:21
  */
 public class AlipayCommerceOperationPromoterPointReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8225986563347155567L;
+	private static final long serialVersionUID = 3336237519725338224L;
 
 	/** 
 	 * 积分领取结果

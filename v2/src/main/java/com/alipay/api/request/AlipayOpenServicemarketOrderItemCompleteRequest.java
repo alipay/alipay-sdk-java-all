@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.order.item.complete request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:35:42
+ * @since 1.0, 2023-04-03 03:13:44
  */
 public class AlipayOpenServicemarketOrderItemCompleteRequest implements AlipayRequest<AlipayOpenServicemarketOrderItemCompleteResponse> {
 

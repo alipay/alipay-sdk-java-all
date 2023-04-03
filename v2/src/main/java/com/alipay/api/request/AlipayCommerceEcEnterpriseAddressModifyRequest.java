@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.enterprise.address.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:31:43
+ * @since 1.0, 2023-04-03 03:56:46
  */
 public class AlipayCommerceEcEnterpriseAddressModifyRequest implements AlipayRequest<AlipayCommerceEcEnterpriseAddressModifyResponse> {
 

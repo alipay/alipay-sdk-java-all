@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.store.miniapp.bind response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 23:26:09
+ * @since 1.0, 2023-04-03 08:57:16
  */
 public class AlipayMerchantStoreMiniappBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7141977492269797171L;
+	private static final long serialVersionUID = 4586884542822883635L;
 
 	
 

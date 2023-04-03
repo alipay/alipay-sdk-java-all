@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.certify.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:07:22
+ * @since 1.0, 2023-04-03 09:43:49
  */
 public class DatadigitalFincloudGeneralsaasFaceCertifyQueryRequest implements AlipayRequest<DatadigitalFincloudGeneralsaasFaceCertifyQueryResponse> {
 

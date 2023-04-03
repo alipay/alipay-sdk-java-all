@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.qrcode.invalid.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:47:06
+ * @since 1.0, 2023-04-03 03:12:08
  */
 public class MybankCreditLoanapplyQrcodeInvalidDeleteRequest implements AlipayRequest<MybankCreditLoanapplyQrcodeInvalidDeleteResponse> {
 

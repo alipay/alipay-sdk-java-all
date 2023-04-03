@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.dataservice.ocr.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:53:56
+ * @since 1.0, 2023-04-03 03:54:25
  */
 public class AnttechBlockchainDefinDataserviceOcrSubmitRequest implements AlipayRequest<AnttechBlockchainDefinDataserviceOcrSubmitResponse> {
 

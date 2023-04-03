@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.member.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 14:02:59
+ * @since 1.0, 2023-04-03 00:20:06
  */
 public class AlipayFundJointaccountMemberUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2569984342581474948L;
+	private static final long serialVersionUID = 3268476284865675513L;
 
 	
 

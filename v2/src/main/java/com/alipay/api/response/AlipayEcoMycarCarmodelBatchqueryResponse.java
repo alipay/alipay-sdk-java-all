@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.carmodel.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:17:51
+ * @since 1.0, 2023-04-03 04:07:46
  */
 public class AlipayEcoMycarCarmodelBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5819281472538716127L;
+	private static final long serialVersionUID = 1889183964145918718L;
 
 	/** 
 	 * 以下是对查询结果query_result：查询品牌信息返回的json格式的品牌信息列表中字段属性的详细描述说明；查询车系信息返回的json格式的车系信息列表中字段属性的详细描述说明；查询车型信息返回的json格式的车型信息列表中字段属性的详细描述说明。

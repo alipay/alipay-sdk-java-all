@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:50:16
+ * @since 1.0, 2023-04-03 09:36:18
  */
 public class KoubeiCateringOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5415218782595892711L;
+	private static final long serialVersionUID = 6581747816277828179L;
 
 	/** 
 	 * 扩展信息，json对象格式，key和value都为字符串

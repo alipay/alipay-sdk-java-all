@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.certificate.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:34:47
+ * @since 1.0, 2023-04-03 14:43:58
  */
 public class AlipayCommerceEducateCertificateInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4415651371866786356L;
+	private static final long serialVersionUID = 4271593155621419487L;
 
 	/** 
 	 * 证书列表

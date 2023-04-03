@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.qipan.crowdtag.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-29 17:21:46
+ * @since 1.0, 2023-04-03 08:21:43
  */
 public class AlipayMarketingQipanCrowdtagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2298919162523752448L;
+	private static final long serialVersionUID = 2664958578261689972L;
 
 	/** 
 	 * 棋盘开放圈选查询标签值返回

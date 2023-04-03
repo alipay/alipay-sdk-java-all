@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.ebpp.pdeduct.czsign.upgrade request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:50:15
+ * @since 1.0, 2023-04-03 09:19:47
  */
 public class AlipayEbppEbppPdeductCzsignUpgradeRequest implements AlipayRequest<AlipayEbppEbppPdeductCzsignUpgradeResponse> {
 

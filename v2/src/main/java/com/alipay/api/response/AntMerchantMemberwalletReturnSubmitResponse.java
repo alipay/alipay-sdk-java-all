@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.memberwallet.return.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:24:16
+ * @since 1.0, 2023-04-03 14:56:55
  */
 public class AntMerchantMemberwalletReturnSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7887299146577997998L;
+	private static final long serialVersionUID = 3668216351852443425L;
 
 	/** 
 	 * 退款成功的卡余额（单位：元）

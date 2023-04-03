@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.entrust.close request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:46:54
+ * @since 1.0, 2023-04-03 02:29:05
  */
 public class AlipayFundTransEntrustCloseRequest implements AlipayRequest<AlipayFundTransEntrustCloseResponse> {
 

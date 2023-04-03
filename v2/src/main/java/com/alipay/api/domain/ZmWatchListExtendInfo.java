@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmWatchListExtendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4872183432223123575L;
+	private static final long serialVersionUID = 2896483159674215917L;
 
 	/**
 	 * 对于这个key的描述

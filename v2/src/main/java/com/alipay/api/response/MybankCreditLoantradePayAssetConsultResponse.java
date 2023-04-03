@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.pay.asset.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-21 13:48:47
+ * @since 1.0, 2023-04-03 17:52:26
  */
 public class MybankCreditLoantradePayAssetConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6564481134755433883L;
+	private static final long serialVersionUID = 2884513477768557647L;
 
 	/** 
 	 * 账期资产视图，如果未咨询账期资产，可能为空

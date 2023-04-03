@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.industry.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:44:42
+ * @since 1.0, 2023-04-03 13:43:01
  */
 public class ZhimaCreditPeIndustryTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6436883947465242834L;
+	private static final long serialVersionUID = 6149329294188113395L;
 
 	/** 
 	 * 资金流水号，用于商户与支付宝进行对账,资金处理成功时才有值

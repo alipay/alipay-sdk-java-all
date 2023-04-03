@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.menu.delete response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-09 00:29:30
+ * @since 1.0, 2023-04-03 14:32:27
  */
 public class AlipayOpenPublicMenuDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4246985541941354732L;
+	private static final long serialVersionUID = 8826899187382938881L;
 
 	
 

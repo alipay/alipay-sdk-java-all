@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.developer.checkdevelopervalid.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:35:12
+ * @since 1.0, 2023-04-03 02:57:44
  */
 public class AlipayOpenAppDeveloperCheckdevelopervalidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5487288891143534413L;
+	private static final long serialVersionUID = 7523688381435364671L;
 
 	/** 
 	 * 支付宝账号入驻开放平台有效性检查，true表示有效，false无效

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.indirect.bind.unbind request
  * 
  * @author auto create
- * @since 1.0, 2022-01-11 14:35:40
+ * @since 1.0, 2023-04-03 10:31:36
  */
 public class AntMerchantExpandIndirectBindUnbindRequest implements AlipayRequest<AntMerchantExpandIndirectBindUnbindResponse> {
 

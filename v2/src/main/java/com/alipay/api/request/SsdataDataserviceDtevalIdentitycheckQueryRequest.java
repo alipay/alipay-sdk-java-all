@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.dteval.identitycheck.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:36:46
+ * @since 1.0, 2023-04-03 16:32:06
  */
 public class SsdataDataserviceDtevalIdentitycheckQueryRequest implements AlipayRequest<SsdataDataserviceDtevalIdentitycheckQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlegalchain.multiparty.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:15:55
+ * @since 1.0, 2023-04-03 12:51:25
  */
 public class AlipayBossProdAntlegalchainMultipartyApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8591886247448785521L;
+	private static final long serialVersionUID = 2858678795734768518L;
 
 	/** 
 	 * 法链业务ID,用于查询上链状态

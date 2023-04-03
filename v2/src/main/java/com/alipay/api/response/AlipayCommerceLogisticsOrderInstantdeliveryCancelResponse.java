@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.order.instantdelivery.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:01:48
+ * @since 1.0, 2023-04-03 16:45:27
  */
 public class AlipayCommerceLogisticsOrderInstantdeliveryCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5425333631664951269L;
+	private static final long serialVersionUID = 7793817311787584752L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.bizfee.aftech.refund request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:47:48
+ * @since 1.0, 2023-04-03 03:29:46
  */
 public class AlipayOpenOperationBizfeeAftechRefundRequest implements AlipayRequest<AlipayOpenOperationBizfeeAftechRefundResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.destroy response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:51:41
+ * @since 1.0, 2023-04-03 02:36:46
  */
 public class AlipayFundWalletDestroyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4511679677293694896L;
+	private static final long serialVersionUID = 3361592957857547375L;
 
 	/** 
 	 * 实际退款金额

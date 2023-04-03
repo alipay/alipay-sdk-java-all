@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.mindv.troublefreerule.consult request
  * 
  * @author auto create
- * @since 1.0, 2020-03-23 10:45:09
+ * @since 1.0, 2023-04-03 13:58:33
  */
 public class AlipayIserviceMindvTroublefreeruleConsultRequest implements AlipayRequest<AlipayIserviceMindvTroublefreeruleConsultResponse> {
 

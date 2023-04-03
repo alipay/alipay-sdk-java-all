@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.transfer.payment.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:06:53
+ * @since 1.0, 2023-04-03 14:03:32
  */
 public class AlipayOverseasTransferPaymentCancelRequest implements AlipayRequest<AlipayOverseasTransferPaymentCancelResponse> {
 

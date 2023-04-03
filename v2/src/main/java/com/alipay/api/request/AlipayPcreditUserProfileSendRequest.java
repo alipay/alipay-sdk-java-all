@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.user.profile.send request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:54:08
+ * @since 1.0, 2023-04-03 12:42:30
  */
 public class AlipayPcreditUserProfileSendRequest implements AlipayRequest<AlipayPcreditUserProfileSendResponse> {
 

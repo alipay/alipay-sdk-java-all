@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.multimedia.resource.masstoken.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:28:30
+ * @since 1.0, 2023-04-03 01:45:12
  */
 public class AlipayMultimediaResourceMasstokenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5446317622959418266L;
+	private static final long serialVersionUID = 1659634513632854635L;
 
 	/** 
 	 * token创建时间戳，秒

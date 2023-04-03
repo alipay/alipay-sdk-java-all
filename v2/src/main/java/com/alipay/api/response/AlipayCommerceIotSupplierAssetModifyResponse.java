@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.supplier.asset.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:59:00
+ * @since 1.0, 2023-04-03 16:48:28
  */
 public class AlipayCommerceIotSupplierAssetModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6668695386916146588L;
+	private static final long serialVersionUID = 3598917519554116277L;
 
 	/** 
 	 * 记录id

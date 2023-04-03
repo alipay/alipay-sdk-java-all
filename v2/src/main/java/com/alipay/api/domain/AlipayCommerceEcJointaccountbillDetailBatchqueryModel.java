@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业账单批量分页查询
  *
  * @author auto create
- * @since 1.0, 2023-03-03 16:15:37
+ * @since 1.0, 2023-04-03 17:36:31
  */
 public class AlipayCommerceEcJointaccountbillDetailBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2599673384397652187L;
+	private static final long serialVersionUID = 2839587373533969378L;
 
 	/**
 	 * 业务场景。不传默认为ISV_DEFAULT
@@ -20,7 +20,13 @@ public class AlipayCommerceEcJointaccountbillDetailBatchqueryModel extends Alipa
 	private String bizScene;
 
 	/**
-	 * 截止日期。支持yyyy-MM-dd和yyyy-MM-dd HH:mm:ss两种格式
+	 * 员工id
+	 */
+	@ApiField("employee_id")
+	private String employeeId;
+
+	/**
+	 * 截止日期
 	 */
 	@ApiField("end_date")
 	private String endDate;
@@ -38,19 +44,19 @@ public class AlipayCommerceEcJointaccountbillDetailBatchqueryModel extends Alipa
 	private String openId;
 
 	/**
-	 * 页数。本参数为空或小于1默认显示第一页；如果输入的值大于总页数，则返回最后一页数据。
+	 * 页码
 	 */
 	@ApiField("page_num")
 	private String pageNum;
 
 	/**
-	 * 每页大小。本参数为空或小于1默认20条；超过20条默认按20条查询；不足20条则按实际记录数返回。
+	 * 每页大小
 	 */
 	@ApiField("page_size")
 	private String pageSize;
 
 	/**
-	 * 起始日期。支持yyyy-MM-dd和yyyy-MM-dd HH:mm:ss两种格式
+	 * 起始日期
 	 */
 	@ApiField("start_date")
 	private String startDate;
@@ -66,6 +72,13 @@ public class AlipayCommerceEcJointaccountbillDetailBatchqueryModel extends Alipa
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getEmployeeId() {
+		return this.employeeId;
+	}
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
 	}
 
 	public String getEndDate() {

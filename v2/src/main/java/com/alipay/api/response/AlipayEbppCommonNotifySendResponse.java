@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.common.notify.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:16:40
+ * @since 1.0, 2023-04-03 09:06:44
  */
 public class AlipayEbppCommonNotifySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6535785956549581359L;
+	private static final long serialVersionUID = 1198124696253327655L;
 
 	/** 
 	 * 通知的执行结果

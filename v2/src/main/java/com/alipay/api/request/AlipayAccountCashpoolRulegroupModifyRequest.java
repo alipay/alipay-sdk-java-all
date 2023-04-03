@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.cashpool.rulegroup.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:59:47
+ * @since 1.0, 2023-04-03 17:18:59
  */
 public class AlipayAccountCashpoolRulegroupModifyRequest implements AlipayRequest<AlipayAccountCashpoolRulegroupModifyResponse> {
 

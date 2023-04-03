@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.data.dashboard.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:05:49
+ * @since 1.0, 2023-04-03 15:35:24
  */
 public class AlipayMarketingDataDashboardCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6564914961615785557L;
+	private static final long serialVersionUID = 6846775516857932417L;
 
 	/** 
 	 * 取消授权失败仪表盘列表

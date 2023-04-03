@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.contract.record.sync response.
  * 
  * @author auto create
- * @since 1.0, 2019-06-21 14:07:19
+ * @since 1.0, 2023-04-03 03:24:45
  */
 public class ZhimaCustomerContractRecordSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3127948121426444661L;
+	private static final long serialVersionUID = 8113452124933432422L;
 
 	/** 
 	 * 本次存证记录的唯一标识

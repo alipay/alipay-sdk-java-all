@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.broadcast.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:40:00
+ * @since 1.0, 2023-04-03 04:43:37
  */
 public class AlipayCommerceIotDeviceBroadcastQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4739928438766828789L;
+	private static final long serialVersionUID = 4118811269576749758L;
 
 	/** 
 	 * 播报时间,单位为秒. 如果没有播报,则返回空字符串

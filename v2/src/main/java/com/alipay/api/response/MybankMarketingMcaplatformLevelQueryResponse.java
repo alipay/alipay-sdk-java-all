@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.mcaplatform.level.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 08:01:38
+ * @since 1.0, 2023-04-03 03:25:15
  */
 public class MybankMarketingMcaplatformLevelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1522556773814965845L;
+	private static final long serialVersionUID = 4351175669295534819L;
 
 	/** 
 	 * 绿色等级，不唯一

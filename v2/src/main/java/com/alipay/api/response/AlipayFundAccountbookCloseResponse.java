@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.accountbook.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 10:06:54
+ * @since 1.0, 2023-04-03 16:11:45
  */
 public class AlipayFundAccountbookCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5279766779578777274L;
+	private static final long serialVersionUID = 3427659396824764798L;
 
 	/** 
 	 * 注销的资金记账本id，注销成功时返回

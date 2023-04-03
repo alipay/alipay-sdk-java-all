@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antsign.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:16:51
+ * @since 1.0, 2023-04-03 15:53:24
  */
 public class AlipayBossProdAntsignDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5719669123477386397L;
+	private static final long serialVersionUID = 1723493296966837781L;
 
 	/** 
 	 * 签署任务结果列表

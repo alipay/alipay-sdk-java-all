@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.notifycenter.notifyuser.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:06:43
+ * @since 1.0, 2023-04-03 16:11:48
  */
 public class AlipayCommerceTransportNotifycenterNotifyuserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1332916824118815711L;
+	private static final long serialVersionUID = 2227821631447563316L;
 
 	/** 
 	 * 订阅用户vo列表

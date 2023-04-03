@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.cloud.aoshint.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:36:42
+ * @since 1.0, 2023-04-03 08:31:45
  */
 public class AlipayOpenMiniCloudAoshintQueryRequest implements AlipayRequest<AlipayOpenMiniCloudAoshintQueryResponse> {
 

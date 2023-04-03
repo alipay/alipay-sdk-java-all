@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antstarship.home.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:06:38
+ * @since 1.0, 2023-04-03 07:51:42
  */
 public class AlipayUserAntstarshipHomeQueryRequest implements AlipayRequest<AlipayUserAntstarshipHomeQueryResponse> {
 

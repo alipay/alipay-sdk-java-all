@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.manjiangdstest.stop response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-18 17:02:02
+ * @since 1.0, 2023-04-03 16:52:33
  */
 public class AlipayBossProdManjiangdstestStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7157572211594579614L;
+	private static final long serialVersionUID = 3722247989821639652L;
 
 	
 

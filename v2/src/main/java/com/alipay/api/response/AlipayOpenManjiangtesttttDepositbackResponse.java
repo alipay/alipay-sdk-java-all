@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.manjiangtestttt.depositback response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-15 14:26:40
+ * @since 1.0, 2023-04-03 16:16:44
  */
 public class AlipayOpenManjiangtesttttDepositbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7124329824319148472L;
+	private static final long serialVersionUID = 3285298864163167975L;
 
 	
 

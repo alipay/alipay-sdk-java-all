@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antstarship.share.accept response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:31:39
+ * @since 1.0, 2023-04-03 04:26:43
  */
 public class AlipayUserAntstarshipShareAcceptResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7484491317871318256L;
+	private static final long serialVersionUID = 4153886194211329642L;
 
 	
 

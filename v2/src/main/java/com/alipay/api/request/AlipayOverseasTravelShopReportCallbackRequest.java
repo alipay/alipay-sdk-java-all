@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.shop.report.callback request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:46:40
+ * @since 1.0, 2023-04-03 03:11:43
  */
 public class AlipayOverseasTravelShopReportCallbackRequest implements AlipayRequest<AlipayOverseasTravelShopReportCallbackResponse> {
 

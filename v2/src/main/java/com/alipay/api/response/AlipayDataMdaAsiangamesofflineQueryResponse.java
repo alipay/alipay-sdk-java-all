@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.asiangamesoffline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 16:46:45
+ * @since 1.0, 2023-04-03 11:27:35
  */
 public class AlipayDataMdaAsiangamesofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6776493243371964572L;
+	private static final long serialVersionUID = 4125272121786554927L;
 
 	/** 
 	 * 亚运路线完成人数
@@ -24,7 +24,7 @@ public class AlipayDataMdaAsiangamesofflineQueryResponse extends AlipayResponse 
 	 * 步数绕地球圈数
 	 */
 	@ApiField("ring_cnt")
-	private Long ringCnt;
+	private String ringCnt;
 
 	/** 
 	 * 累计步数
@@ -51,10 +51,10 @@ public class AlipayDataMdaAsiangamesofflineQueryResponse extends AlipayResponse 
 		return this.completeRouteUv;
 	}
 
-	public void setRingCnt(Long ringCnt) {
+	public void setRingCnt(String ringCnt) {
 		this.ringCnt = ringCnt;
 	}
-	public Long getRingCnt( ) {
+	public String getRingCnt( ) {
 		return this.ringCnt;
 	}
 

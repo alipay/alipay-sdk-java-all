@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.iotdata.user.business.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:41:37
+ * @since 1.0, 2023-04-03 12:43:24
  */
 public class AlipayDataIotdataUserBusinessQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6427144356447966785L;
+	private static final long serialVersionUID = 1867875721371685386L;
 
 	/** 
 	 * 用户管理的业务列表

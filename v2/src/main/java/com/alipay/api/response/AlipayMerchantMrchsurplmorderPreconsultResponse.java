@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.mrchsurplmorder.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:16:50
+ * @since 1.0, 2023-04-03 07:46:38
  */
 public class AlipayMerchantMrchsurplmorderPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2354179998418599286L;
+	private static final long serialVersionUID = 5726983956175128496L;
 
 	/** 
 	 * 是否允许继续下单

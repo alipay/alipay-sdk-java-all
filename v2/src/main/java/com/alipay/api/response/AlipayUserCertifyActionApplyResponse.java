@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.action.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:57:53
+ * @since 1.0, 2023-04-03 06:49:52
  */
 public class AlipayUserCertifyActionApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5812986475847147855L;
+	private static final long serialVersionUID = 4533412994968674288L;
 
 	/** 
 	 * 返回给商户的支付宝业务ID

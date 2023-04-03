@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.policy.endorse.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 20:05:36
+ * @since 1.0, 2023-04-03 14:29:57
  */
 public class AlipayInsScenePolicyEndorseApplyRequest implements AlipayRequest<AlipayInsScenePolicyEndorseApplyResponse> {
 

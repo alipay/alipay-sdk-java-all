@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.subaccount.account.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:14:38
+ * @since 1.0, 2023-04-03 12:44:31
  */
 public class AlipayBossFncSubaccountAccountApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2643299834136233273L;
+	private static final long serialVersionUID = 7533871373215487328L;
 
 	/** 
 	 * 申请子户结果

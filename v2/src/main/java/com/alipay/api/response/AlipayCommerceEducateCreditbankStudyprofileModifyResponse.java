@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.creditbank.studyprofile.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:30:58
+ * @since 1.0, 2023-04-03 15:24:17
  */
 public class AlipayCommerceEducateCreditbankStudyprofileModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3386783443153633724L;
+	private static final long serialVersionUID = 6496263877837259528L;
 
 	
 

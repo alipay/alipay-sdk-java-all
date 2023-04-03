@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.bail.collection.finish response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:16:40
+ * @since 1.0, 2023-04-03 08:06:43
  */
 public class AlipayFundBailCollectionFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8732937682148863553L;
+	private static final long serialVersionUID = 5123896466737866573L;
 
 	/** 
 	 * 当result_code为FAIL时，对应的错误码

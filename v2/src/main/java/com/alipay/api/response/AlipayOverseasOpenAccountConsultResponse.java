@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.account.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:03:35
+ * @since 1.0, 2023-04-03 01:37:39
  */
 public class AlipayOverseasOpenAccountConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4572548297614196129L;
+	private static final long serialVersionUID = 8287562817761414179L;
 
 	/** 
 	 * 账号

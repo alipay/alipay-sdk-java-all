@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iot.content.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:51:46
+ * @since 1.0, 2023-04-03 05:06:46
  */
 public class AlipayOpenIotContentSyncRequest implements AlipayRequest<AlipayOpenIotContentSyncResponse> {
 

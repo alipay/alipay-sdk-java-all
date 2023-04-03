@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.order.rent.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:21:42
+ * @since 1.0, 2023-04-03 04:51:44
  */
 public class ZhimaMerchantOrderRentQueryRequest implements AlipayRequest<ZhimaMerchantOrderRentQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.medicalcare.hos.reportnotify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:17:29
+ * @since 1.0, 2023-04-03 04:19:36
  */
 public class AlipayEcoMedicalcareHosReportnotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3695177128873933467L;
+	private static final long serialVersionUID = 7879582489977666835L;
 
 	
 

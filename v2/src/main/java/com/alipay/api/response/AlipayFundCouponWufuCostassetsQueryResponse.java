@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.wufu.costassets.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:01:41
+ * @since 1.0, 2023-04-03 10:06:43
  */
 public class AlipayFundCouponWufuCostassetsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5335417437973987284L;
+	private static final long serialVersionUID = 3328649432525715691L;
 
 	/** 
 	 * 当前是否可消耗福卡

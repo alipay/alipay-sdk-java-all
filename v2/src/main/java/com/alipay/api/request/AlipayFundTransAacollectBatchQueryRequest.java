@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.aacollect.batch.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:45:04
+ * @since 1.0, 2023-04-03 02:07:33
  */
 public class AlipayFundTransAacollectBatchQueryRequest implements AlipayRequest<AlipayFundTransAacollectBatchQueryResponse> {
 

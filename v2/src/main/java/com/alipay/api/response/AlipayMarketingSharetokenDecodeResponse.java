@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.sharetoken.decode response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:08:50
+ * @since 1.0, 2023-04-03 15:09:37
  */
 public class AlipayMarketingSharetokenDecodeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8834728672296313582L;
+	private static final long serialVersionUID = 6163815928235873537L;
 
 	/** 
 	 * 第一个按钮名称

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.scenepay.order.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-03-22 13:21:38
+ * @since 1.0, 2023-04-03 14:26:43
  */
 public class AlipayFundScenepayOrderCancelRequest implements AlipayRequest<AlipayFundScenepayOrderCancelResponse> {
 

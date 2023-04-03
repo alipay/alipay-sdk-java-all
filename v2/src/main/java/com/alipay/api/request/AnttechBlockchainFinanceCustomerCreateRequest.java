@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.customer.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:57:53
+ * @since 1.0, 2023-04-03 11:12:59
  */
 public class AnttechBlockchainFinanceCustomerCreateRequest implements AlipayRequest<AnttechBlockchainFinanceCustomerCreateResponse> {
 

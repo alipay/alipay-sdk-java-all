@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.appkeyword.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:56:40
+ * @since 1.0, 2023-04-03 15:11:47
  */
 public class AlipayOpenSearchAppkeywordDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1727652373621822196L;
+	private static final long serialVersionUID = 2518529584552794427L;
 
 	
 

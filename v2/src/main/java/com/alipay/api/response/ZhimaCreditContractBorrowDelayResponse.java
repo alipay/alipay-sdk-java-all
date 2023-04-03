@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.contract.borrow.delay response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:38:02
+ * @since 1.0, 2023-04-03 14:15:22
  */
 public class ZhimaCreditContractBorrowDelayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5257753846294975268L;
+	private static final long serialVersionUID = 5648463461352824235L;
 
 	
 

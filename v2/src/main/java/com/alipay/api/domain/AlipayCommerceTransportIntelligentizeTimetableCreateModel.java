@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceTransportIntelligentizeTimetableCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1763948551299851112L;
+	private static final long serialVersionUID = 6888697922483258724L;
 
 	/**
 	 * 城市代码

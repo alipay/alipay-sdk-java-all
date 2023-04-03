@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.enterprisepay.memberjointurl.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:41:42
+ * @since 1.0, 2023-04-03 04:21:45
  */
 public class AlipayFundEnterprisepayMemberjointurlApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3317917184774616319L;
+	private static final long serialVersionUID = 5247833683513495254L;
 
 	/** 
 	 * 邀请员工二维码链接（包含token信息）

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.test.gray.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 19:56:42
+ * @since 1.0, 2023-04-03 12:36:47
  */
 public class AlipayOpenAppTestGrayModifyRequest implements AlipayRequest<AlipayOpenAppTestGrayModifyResponse> {
 

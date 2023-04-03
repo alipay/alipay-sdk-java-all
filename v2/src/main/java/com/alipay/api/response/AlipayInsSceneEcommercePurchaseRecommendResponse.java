@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.ecommerce.purchase.recommend response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:34:52
+ * @since 1.0, 2023-04-03 13:19:56
  */
 public class AlipayInsSceneEcommercePurchaseRecommendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8478531664816762558L;
+	private static final long serialVersionUID = 7371482646445538692L;
 
 	/** 
 	 * 推荐结果

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.trusple.authlogin.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:36:41
+ * @since 1.0, 2023-04-03 15:26:47
  */
 public class AnttechBlockchainFinanceTruspleAuthloginSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6749271678917576533L;
+	private static final long serialVersionUID = 7399372857837683966L;
 
 	/** 
 	 * 四要素认证通过的authToken，可用于后续登录

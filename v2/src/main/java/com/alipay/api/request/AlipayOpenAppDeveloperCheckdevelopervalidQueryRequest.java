@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.developer.checkdevelopervalid.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:35:12
+ * @since 1.0, 2023-04-03 02:57:44
  */
 public class AlipayOpenAppDeveloperCheckdevelopervalidQueryRequest implements AlipayRequest<AlipayOpenAppDeveloperCheckdevelopervalidQueryResponse> {
 

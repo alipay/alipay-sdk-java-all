@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.financeinfo.share request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:02:11
+ * @since 1.0, 2023-04-03 06:42:51
  */
 public class AlipayUserFinanceinfoShareRequest implements AlipayRequest<AlipayUserFinanceinfoShareResponse> {
 

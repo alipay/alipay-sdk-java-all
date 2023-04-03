@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.fund.institutionschoolinf.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:03:24
+ * @since 1.0, 2023-04-03 08:46:42
  */
 public class AlipayOverseasFundInstitutionschoolinfCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7298419621794298953L;
+	private static final long serialVersionUID = 7594556726899297796L;
 
 	/** 
 	 * ISV入驻签约PID

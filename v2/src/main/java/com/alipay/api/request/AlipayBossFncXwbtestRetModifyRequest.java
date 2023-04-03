@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.xwbtest.ret.modify request
  * 
  * @author auto create
- * @since 1.0, 2021-12-08 21:26:46
+ * @since 1.0, 2023-04-03 04:54:08
  */
 public class AlipayBossFncXwbtestRetModifyRequest implements AlipayRequest<AlipayBossFncXwbtestRetModifyResponse> {
 

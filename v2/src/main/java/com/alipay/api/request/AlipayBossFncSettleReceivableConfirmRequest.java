@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.settle.receivable.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:01:32
+ * @since 1.0, 2023-04-03 02:13:32
  */
 public class AlipayBossFncSettleReceivableConfirmRequest implements AlipayRequest<AlipayBossFncSettleReceivableConfirmResponse> {
 

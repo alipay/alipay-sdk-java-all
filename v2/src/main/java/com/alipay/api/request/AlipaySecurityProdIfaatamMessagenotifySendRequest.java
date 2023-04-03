@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.ifaatam.messagenotify.send request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:23:47
+ * @since 1.0, 2023-04-03 12:50:28
  */
 public class AlipaySecurityProdIfaatamMessagenotifySendRequest implements AlipayRequest<AlipaySecurityProdIfaatamMessagenotifySendResponse> {
 

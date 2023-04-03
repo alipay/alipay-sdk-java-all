@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.issuerule.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:37:49
+ * @since 1.0, 2023-04-03 00:57:23
  */
 public class AlipayEbppInvoiceIssueruleDeleteRequest implements AlipayRequest<AlipayEbppInvoiceIssueruleDeleteResponse> {
 

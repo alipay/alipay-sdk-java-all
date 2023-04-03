@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.juneng.loan.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:12:42
+ * @since 1.0, 2023-04-03 02:46:37
  */
 public class AlipayDataAiserviceJunengLoanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5724288325175462343L;
+	private static final long serialVersionUID = 7155431279615587827L;
 
 	/** 
 	 * 二级错误码，帮助诊断错误

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.isvdevice.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:51:39
+ * @since 1.0, 2023-04-03 16:56:45
  */
 public class AlipayOpenIotmbsIsvdeviceUnbindRequest implements AlipayRequest<AlipayOpenIotmbsIsvdeviceUnbindResponse> {
 

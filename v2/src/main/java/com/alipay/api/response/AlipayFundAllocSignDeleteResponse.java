@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.alloc.sign.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:11:39
+ * @since 1.0, 2023-04-03 17:01:46
  */
 public class AlipayFundAllocSignDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4819636612259362364L;
+	private static final long serialVersionUID = 2758371722752444543L;
 
 	/** 
 	 * 用于关联本次请求

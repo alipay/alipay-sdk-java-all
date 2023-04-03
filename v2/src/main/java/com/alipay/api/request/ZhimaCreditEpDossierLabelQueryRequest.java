@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.dossier.label.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-20 09:56:39
+ * @since 1.0, 2023-04-03 12:36:45
  */
 public class ZhimaCreditEpDossierLabelQueryRequest implements AlipayRequest<ZhimaCreditEpDossierLabelQueryResponse> {
 

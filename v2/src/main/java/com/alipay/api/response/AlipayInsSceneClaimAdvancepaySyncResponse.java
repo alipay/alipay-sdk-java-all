@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.claim.advancepay.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:58:49
+ * @since 1.0, 2023-04-03 10:12:26
  */
 public class AlipayInsSceneClaimAdvancepaySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8633976974238823251L;
+	private static final long serialVersionUID = 6244748438993842194L;
 
 	
 

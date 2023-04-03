@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.bs.enrolls.recover response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-17 11:51:40
+ * @since 1.0, 2023-04-03 14:51:43
  */
 public class AlipayCommerceOperationBsEnrollsRecoverResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3557811828476572298L;
+	private static final long serialVersionUID = 6592512599132466382L;
 
 	/** 
 	 * 恢复报名失败的参与者列表

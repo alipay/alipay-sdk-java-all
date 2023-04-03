@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.asset.point.voucherprod.benefittemplate.offline request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:04:44
+ * @since 1.0, 2023-04-03 07:28:16
  */
 public class AlipayAssetPointVoucherprodBenefittemplateOfflineRequest implements AlipayRequest<AlipayAssetPointVoucherprodBenefittemplateOfflineResponse> {
 

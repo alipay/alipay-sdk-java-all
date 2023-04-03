@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.account.fundcomposition.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:16:40
+ * @since 1.0, 2023-04-03 00:51:42
  */
 public class AlipayTradeAccountFundcompositionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6848827782738875635L;
+	private static final long serialVersionUID = 8266262445535741458L;
 
 	/** 
 	 * 专户账号

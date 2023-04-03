@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.chat.groups.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-12-22 00:06:42
+ * @since 1.0, 2023-04-03 02:12:25
  */
 public class AlipaySocialBaseChatGroupsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3598552745376522457L;
+	private static final long serialVersionUID = 1217111778597997469L;
 
 	/** 
 	 * 群信息列表

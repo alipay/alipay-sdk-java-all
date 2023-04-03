@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.board.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:01:39
+ * @since 1.0, 2023-04-03 05:11:43
  */
 public class AlipayMerchantQipanBoardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4874644257677753275L;
+	private static final long serialVersionUID = 6723472322285773418L;
 
 	/** 
 	 * 人群看板分析数据

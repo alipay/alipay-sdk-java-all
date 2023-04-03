@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.data.scene.memberpoints.get request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:31:11
+ * @since 1.0, 2023-04-03 11:43:56
  */
 public class KoubeiMarketingDataSceneMemberpointsGetRequest implements AlipayRequest<KoubeiMarketingDataSceneMemberpointsGetResponse> {
 

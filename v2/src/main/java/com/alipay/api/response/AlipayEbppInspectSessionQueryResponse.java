@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.inspect.session.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-10 16:45:19
+ * @since 1.0, 2023-04-03 16:11:31
  */
 public class AlipayEbppInspectSessionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3287738264197591259L;
+	private static final long serialVersionUID = 5678258267282663793L;
 
 	/** 
 	 * 登录ID

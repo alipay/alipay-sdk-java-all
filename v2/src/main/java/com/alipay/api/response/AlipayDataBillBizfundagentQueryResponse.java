@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.bizfundagent.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:14:25
+ * @since 1.0, 2023-04-03 17:08:41
  */
 public class AlipayDataBillBizfundagentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1688895242858883465L;
+	private static final long serialVersionUID = 7767473362938978748L;
 
 	/** 
 	 * 资金明细记录

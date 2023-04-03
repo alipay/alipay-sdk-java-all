@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.repaybill.billin.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:46:28
+ * @since 1.0, 2023-04-03 02:09:48
  */
 public class AlipayTradeRepaybillBillinConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5262133453822932749L;
+	private static final long serialVersionUID = 3563638338171779465L;
 
 	/** 
 	 * 账单累计已入账金额,精确到小数点后两位，取值范围[0.01,100000000]

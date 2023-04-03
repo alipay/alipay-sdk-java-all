@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.antlegalchain.ndapress.urge request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:06:39
+ * @since 1.0, 2023-04-03 08:16:44
  */
 public class AlipayBossProdAntlegalchainNdapressUrgeRequest implements AlipayRequest<AlipayBossProdAntlegalchainNdapressUrgeResponse> {
 

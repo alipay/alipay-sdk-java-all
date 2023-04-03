@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.digitalpayoffline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 16:41:43
+ * @since 1.0, 2023-04-03 11:28:10
  */
 public class AlipayDataMdaDigitalpayofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3371774244146477779L;
+	private static final long serialVersionUID = 1568716126166479944L;
 
 	/** 
 	 * 跨境数字支付用户数TOP5

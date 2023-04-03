@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.order.haha.nobizcontent.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-11 11:40:41
+ * @since 1.0, 2023-04-03 00:50:47
  */
 public class AlipayMerchantOrderHahaNobizcontentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5335129198286197944L;
+	private static final long serialVersionUID = 1412464874265521128L;
 
 	/** 
 	 * 出参

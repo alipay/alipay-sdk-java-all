@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.authorize.uni.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-03-17 19:36:39
+ * @since 1.0, 2023-04-03 04:36:42
  */
 public class AlipayFundAuthorizeUniApplyRequest implements AlipayRequest<AlipayFundAuthorizeUniApplyResponse> {
 

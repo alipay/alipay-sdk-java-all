@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.boyi.boyi.create response.
  * 
  * @author auto create
- * @since 1.0, 2020-02-05 13:39:43
+ * @since 1.0, 2023-04-03 01:34:57
  */
 public class AlipayOpenAppBoyiBoyiCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5733787234756413914L;
+	private static final long serialVersionUID = 5683529891214835824L;
 
 	/** 
 	 * 1

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.marketing.campaign.decision response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:56:45
+ * @since 1.0, 2023-04-03 02:37:07
  */
 public class AlipayInsMarketingCampaignDecisionResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5522421123538815129L;
+	private static final long serialVersionUID = 5776658713638355294L;
 
 	/** 
 	 * 保险营销标的关联的活动列表

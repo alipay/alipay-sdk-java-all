@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.ifaa.devicepubkey.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:57:56
+ * @since 1.0, 2023-04-03 06:10:58
  */
 public class AlipaySecurityProdIfaaDevicepubkeyQueryRequest implements AlipayRequest<AlipaySecurityProdIfaaDevicepubkeyQueryResponse> {
 

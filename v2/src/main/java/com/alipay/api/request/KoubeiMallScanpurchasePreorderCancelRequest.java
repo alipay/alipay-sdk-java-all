@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.mall.scanpurchase.preorder.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:57:17
+ * @since 1.0, 2023-04-03 09:15:45
  */
 public class KoubeiMallScanpurchasePreorderCancelRequest implements AlipayRequest<KoubeiMallScanpurchasePreorderCancelResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.guarletter.payurl.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:48:13
+ * @since 1.0, 2023-04-03 04:45:48
  */
 public class MybankCreditLoantradeGuarletterPayurlCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4242561128791991329L;
+	private static final long serialVersionUID = 3896986863113571389L;
 
 	/** 
 	 * 受理状态

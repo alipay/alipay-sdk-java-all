@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.data.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:46:01
+ * @since 1.0, 2023-04-03 05:38:52
  */
 public class MybankCreditLoanapplyDataUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5145761951248392938L;
+	private static final long serialVersionUID = 4767358799645292268L;
 
 	/** 
 	 * 数据在网商银行内部系统的唯一ID。由网商银行融资平台的系统生成，返回给外部机构。

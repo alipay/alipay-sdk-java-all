@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.facefeature.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:31:42
+ * @since 1.0, 2023-04-03 05:04:55
  */
 public class AlipayCommerceEducateFacefeatureCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6366862454733754582L;
+	private static final long serialVersionUID = 6621477467777482266L;
 
 	/** 
 	 * 通用一脸通行用户入库结果

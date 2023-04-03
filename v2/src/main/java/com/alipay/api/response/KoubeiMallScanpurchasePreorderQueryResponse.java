@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.mall.scanpurchase.preorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:57:39
+ * @since 1.0, 2023-04-03 03:01:10
  */
 public class KoubeiMallScanpurchasePreorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2324827972253142699L;
+	private static final long serialVersionUID = 4248257466463836571L;
 
 	/** 
 	 * 预订单信息

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.yeb.entityequity.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 23:28:44
+ * @since 1.0, 2023-04-03 07:19:30
  */
 public class AntfortuneYebEntityequityVerifyRequest implements AlipayRequest<AntfortuneYebEntityequityVerifyResponse> {
 

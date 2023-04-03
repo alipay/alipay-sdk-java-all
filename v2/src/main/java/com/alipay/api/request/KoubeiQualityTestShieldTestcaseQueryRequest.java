@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.quality.test.shield.testcase.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:35:33
+ * @since 1.0, 2023-04-03 05:15:11
  */
 public class KoubeiQualityTestShieldTestcaseQueryRequest implements AlipayRequest<KoubeiQualityTestShieldTestcaseQueryResponse> {
 

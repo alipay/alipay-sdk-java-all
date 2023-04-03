@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.unicard.excode.rollback response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:01:12
+ * @since 1.0, 2023-04-03 04:30:01
  */
 public class AlipayMarketingCampaignUnicardExcodeRollbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1565767723477958118L;
+	private static final long serialVersionUID = 7631294169862663181L;
 
 	
 

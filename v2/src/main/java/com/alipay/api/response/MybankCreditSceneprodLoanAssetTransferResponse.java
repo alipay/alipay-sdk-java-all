@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.loan.asset.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:51:43
+ * @since 1.0, 2023-04-03 10:32:35
  */
 public class MybankCreditSceneprodLoanAssetTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2666965936714773542L;
+	private static final long serialVersionUID = 4425253723383867632L;
 
 	/** 
 	 * 是否可重试

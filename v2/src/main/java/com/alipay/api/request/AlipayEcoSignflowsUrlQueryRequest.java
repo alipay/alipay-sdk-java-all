@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.signflows.url.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:27:54
+ * @since 1.0, 2023-04-03 14:48:38
  */
 public class AlipayEcoSignflowsUrlQueryRequest implements AlipayRequest<AlipayEcoSignflowsUrlQueryResponse> {
 

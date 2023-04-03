@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.enterprisepay.manage.approve response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:41:42
+ * @since 1.0, 2023-04-03 09:16:45
  */
 public class AlipayFundEnterprisepayManageApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8872714887468384939L;
+	private static final long serialVersionUID = 8289111745576968588L;
 
 	
 

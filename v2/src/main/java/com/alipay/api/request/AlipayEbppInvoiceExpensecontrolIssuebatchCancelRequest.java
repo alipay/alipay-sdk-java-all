@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.expensecontrol.issuebatch.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:01:44
+ * @since 1.0, 2023-04-03 11:21:47
  */
 public class AlipayEbppInvoiceExpensecontrolIssuebatchCancelRequest implements AlipayRequest<AlipayEbppInvoiceExpensecontrolIssuebatchCancelResponse> {
 

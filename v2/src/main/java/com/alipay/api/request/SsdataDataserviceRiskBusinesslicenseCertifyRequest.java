@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.risk.businesslicense.certify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:37:19
+ * @since 1.0, 2023-04-03 10:34:10
  */
 public class SsdataDataserviceRiskBusinesslicenseCertifyRequest implements AlipayUploadRequest<SsdataDataserviceRiskBusinesslicenseCertifyResponse> {
 

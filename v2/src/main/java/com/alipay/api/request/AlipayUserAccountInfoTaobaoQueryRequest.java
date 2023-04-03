@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.info.taobao.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:49:11
+ * @since 1.0, 2023-04-03 02:07:46
  */
 public class AlipayUserAccountInfoTaobaoQueryRequest implements AlipayRequest<AlipayUserAccountInfoTaobaoQueryResponse> {
 

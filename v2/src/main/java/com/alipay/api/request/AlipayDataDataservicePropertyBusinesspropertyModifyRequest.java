@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.property.businessproperty.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:20:48
+ * @since 1.0, 2023-04-03 01:09:13
  */
 public class AlipayDataDataservicePropertyBusinesspropertyModifyRequest implements AlipayRequest<AlipayDataDataservicePropertyBusinesspropertyModifyResponse> {
 

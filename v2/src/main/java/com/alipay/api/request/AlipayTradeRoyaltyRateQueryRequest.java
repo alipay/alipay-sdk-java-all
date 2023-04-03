@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.royalty.rate.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:12:38
+ * @since 1.0, 2023-04-03 07:11:38
  */
 public class AlipayTradeRoyaltyRateQueryRequest implements AlipayRequest<AlipayTradeRoyaltyRateQueryResponse> {
 

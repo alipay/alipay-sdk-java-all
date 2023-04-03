@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudFinsaasCrowdDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4421181765347362243L;
+	private static final long serialVersionUID = 3268212112615146725L;
 
 	/**
 	 * 人群ID+唯一+删除人群

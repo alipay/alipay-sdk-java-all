@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.zdataassets.metadata request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:34:07
+ * @since 1.0, 2023-04-03 01:50:54
  */
 public class AlipayZdataassetsMetadataRequest implements AlipayRequest<AlipayZdataassetsMetadataResponse> {
 

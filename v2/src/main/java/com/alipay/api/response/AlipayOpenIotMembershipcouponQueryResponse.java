@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iot.membershipcoupon.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:15:41
+ * @since 1.0, 2023-04-03 02:29:18
  */
 public class AlipayOpenIotMembershipcouponQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7322235557439389631L;
+	private static final long serialVersionUID = 7294193726228635432L;
 
 	/** 
 	 * 活动ID，用于获取相应的活动信息，来源于商家在B站的配置

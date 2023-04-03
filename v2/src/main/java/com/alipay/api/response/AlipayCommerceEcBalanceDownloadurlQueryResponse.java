@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.balance.downloadurl.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:36:30
+ * @since 1.0, 2023-04-03 14:41:22
  */
 public class AlipayCommerceEcBalanceDownloadurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1126766378627227479L;
+	private static final long serialVersionUID = 8165467787333545598L;
 
 	/** 
 	 * 对账单下载地址链接，获取连接后3分钟后未下载，链接地址失效。

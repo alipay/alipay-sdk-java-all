@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.search.box.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:36:40
+ * @since 1.0, 2023-04-03 15:01:46
  */
 public class AlipayOpenSearchBoxApplyRequest implements AlipayRequest<AlipayOpenSearchBoxApplyResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * BBA可用金额
  *
  * @author auto create
- * @since 1.0, 2023-03-31 13:48:35
+ * @since 1.0, 2023-04-03 19:39:41
  */
 public class BizBudgetApplyAmountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8271164658629493843L;
+	private static final long serialVersionUID = 4341299934681578748L;
 
 	/**
 	 * 业务预算申请Code

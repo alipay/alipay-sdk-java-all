@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.pool.creditsignadmit.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:55:22
+ * @since 1.0, 2023-04-03 12:30:15
  */
 public class MybankCreditSupplychainPoolCreditsignadmitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3754949731159496777L;
+	private static final long serialVersionUID = 3582621216832387178L;
 
 	/** 
 	 * 当前授信是否准入，准入时返回true会有授信额度和可贷额度

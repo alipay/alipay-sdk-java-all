@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.bill.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:12:00
+ * @since 1.0, 2023-04-03 02:22:23
  */
 public class AlipayEcoCplifeBillSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6224893345163788285L;
+	private static final long serialVersionUID = 3741884684826819581L;
 
 	
 

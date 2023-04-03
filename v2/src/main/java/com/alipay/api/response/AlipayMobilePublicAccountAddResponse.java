@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.public.account.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:06:40
+ * @since 1.0, 2023-04-03 04:46:43
  */
 public class AlipayMobilePublicAccountAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7164694928941117498L;
+	private static final long serialVersionUID = 1427216521837696586L;
 
 	/** 
 	 * 账户添加成功，在支付宝与其对应的协议号。如果账户重复添加，接口保证幂等依然视为添加成功，返回此前该账户在支付宝对应的协议号。其他异常该字段不存在。

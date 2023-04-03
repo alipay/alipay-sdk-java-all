@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.faceuser.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:36:34
+ * @since 1.0, 2023-04-03 08:53:21
  */
 public class AlipayCommerceEducateFaceuserModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6898115816718884627L;
+	private static final long serialVersionUID = 6129267436379147598L;
 
 	/** 
 	 * 失败人脸信息列表。（1.如果响应code为10000，忽略当前字段；2.服务商可以根据retry来重试部分用户；3.其他失败用户，需要根据具体返回纠正字段，或联系技术同学支持；）

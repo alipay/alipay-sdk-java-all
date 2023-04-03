@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.promoter.task.receive request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:08:04
+ * @since 1.0, 2023-04-03 06:27:20
  */
 public class AlipayCommerceOperationPromoterTaskReceiveRequest implements AlipayRequest<AlipayCommerceOperationPromoterTaskReceiveResponse> {
 

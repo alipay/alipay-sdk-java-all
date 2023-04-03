@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.sales.kbasset.stuff.qrcodereturn.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:40:40
+ * @since 1.0, 2023-04-03 13:29:45
  */
 public class KoubeiSalesKbassetStuffQrcodereturnSyncRequest implements AlipayRequest<KoubeiSalesKbassetStuffQrcodereturnSyncResponse> {
 

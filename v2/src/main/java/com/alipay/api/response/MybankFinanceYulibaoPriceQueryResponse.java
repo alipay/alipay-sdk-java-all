@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.finance.yulibao.price.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:59:15
+ * @since 1.0, 2023-04-03 04:25:41
  */
 public class MybankFinanceYulibaoPriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3829222686523112727L;
+	private static final long serialVersionUID = 6414878738391574674L;
 
 	/** 
 	 * 余利宝行情信息列表

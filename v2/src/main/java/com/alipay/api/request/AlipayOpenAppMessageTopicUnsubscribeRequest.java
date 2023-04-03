@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.message.topic.unsubscribe request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:06:09
+ * @since 1.0, 2023-04-03 16:11:18
  */
 public class AlipayOpenAppMessageTopicUnsubscribeRequest implements AlipayRequest<AlipayOpenAppMessageTopicUnsubscribeResponse> {
 

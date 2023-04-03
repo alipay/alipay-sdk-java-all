@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.token.fast.get request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:28:16
+ * @since 1.0, 2023-04-03 04:39:08
  */
 public class AlipayEcoTokenFastGetRequest implements AlipayRequest<AlipayEcoTokenFastGetResponse> {
 

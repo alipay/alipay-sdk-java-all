@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CateringGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7462481513854527947L;
+	private static final long serialVersionUID = 2292723352663885414L;
 
 	/**
 	 * 商品扩展字段，商品信息扩展，key：good_ classification，value：drink

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.keyword.identify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:30:05
+ * @since 1.0, 2023-04-03 04:09:36
  */
 public class AlipayFinancialnetAuthKeywordIdentifyRequest implements AlipayRequest<AlipayFinancialnetAuthKeywordIdentifyResponse> {
 

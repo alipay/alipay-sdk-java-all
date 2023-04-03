@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.offlinepay.key.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:03:27
+ * @since 1.0, 2023-04-03 15:30:31
  */
 public class AlipayCommerceTransportOfflinepayKeyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4292685651746613147L;
+	private static final long serialVersionUID = 1545198863752354736L;
 
 	/** 
 	 * 支付宝脱机交易公钥列表。列表中每一项为一个有效的支付宝公钥信息, 其中id字段表示支付宝公钥id。

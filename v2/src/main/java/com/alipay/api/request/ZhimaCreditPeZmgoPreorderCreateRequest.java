@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.pe.zmgo.preorder.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:11:42
+ * @since 1.0, 2023-04-03 05:31:44
  */
 public class ZhimaCreditPeZmgoPreorderCreateRequest implements AlipayRequest<ZhimaCreditPeZmgoPreorderCreateResponse> {
 

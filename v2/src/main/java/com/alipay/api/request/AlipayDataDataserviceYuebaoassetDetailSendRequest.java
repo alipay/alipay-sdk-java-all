@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.yuebaoasset.detail.send request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:21:10
+ * @since 1.0, 2023-04-03 16:35:20
  */
 public class AlipayDataDataserviceYuebaoassetDetailSendRequest implements AlipayRequest<AlipayDataDataserviceYuebaoassetDetailSendResponse> {
 

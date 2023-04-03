@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.ad.offline request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:16:34
+ * @since 1.0, 2023-04-03 10:31:23
  */
 public class AlipayDataDataserviceAdOfflineRequest implements AlipayRequest<AlipayDataDataserviceAdOfflineResponse> {
 

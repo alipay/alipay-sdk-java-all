@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.sign.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:51:45
+ * @since 1.0, 2023-04-03 16:20:50
  */
 public class AlipayUserAgreementSignConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8542685488258837331L;
+	private static final long serialVersionUID = 2848558814316621176L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。

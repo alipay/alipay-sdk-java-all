@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.benefitbudget.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:11:45
+ * @since 1.0, 2023-04-03 07:41:47
  */
 public class AlipayOverseasTravelBenefitbudgetQueryRequest implements AlipayRequest<AlipayOverseasTravelBenefitbudgetQueryResponse> {
 

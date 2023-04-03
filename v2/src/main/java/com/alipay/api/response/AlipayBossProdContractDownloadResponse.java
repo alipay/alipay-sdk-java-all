@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.contract.download response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:17:13
+ * @since 1.0, 2023-04-03 03:31:50
  */
 public class AlipayBossProdContractDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5539851457323445259L;
+	private static final long serialVersionUID = 5184789217319337846L;
 
 	/** 
 	 * 请求单据号

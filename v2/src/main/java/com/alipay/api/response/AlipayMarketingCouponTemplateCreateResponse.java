@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.coupon.template.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 20:35:55
+ * @since 1.0, 2023-04-03 11:06:06
  */
 public class AlipayMarketingCouponTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6481852819679432859L;
+	private static final long serialVersionUID = 3555565211114183787L;
 
 	/** 
 	 * 模板支付确认链接

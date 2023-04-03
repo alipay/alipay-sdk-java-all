@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.data.sss.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:56:41
+ * @since 1.0, 2023-04-03 09:41:45
  */
 public class AlipaySecurityDataSssModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6845115873683199569L;
+	private static final long serialVersionUID = 4169627841324466613L;
 
 	/** 
 	 * 复杂类型

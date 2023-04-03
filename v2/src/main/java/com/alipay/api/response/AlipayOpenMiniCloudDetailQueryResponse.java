@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.cloud.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:27:18
+ * @since 1.0, 2023-04-03 01:26:09
  */
 public class AlipayOpenMiniCloudDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8312882969543642253L;
+	private static final long serialVersionUID = 2754144997394556457L;
 
 	/** 
 	 * 用户金融云展示的小程序信息列表

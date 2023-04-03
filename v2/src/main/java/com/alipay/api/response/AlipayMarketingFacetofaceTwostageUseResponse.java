@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.facetoface.twostage.use response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:26:42
+ * @since 1.0, 2023-04-03 11:56:46
  */
 public class AlipayMarketingFacetofaceTwostageUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5561766994878198984L;
+	private static final long serialVersionUID = 5841955668396854339L;
 
 	/** 
 	 * 业务扩展数据

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.equipment.auth.remove response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:31:00
+ * @since 1.0, 2023-04-03 10:54:59
  */
 public class AlipayOfflineProviderEquipmentAuthRemoveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5344369483397481534L;
+	private static final long serialVersionUID = 5775872961789547518L;
 
 	/** 
 	 * 被解绑的机具编号

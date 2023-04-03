@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.digitalidentity.idcodeinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:25:05
+ * @since 1.0, 2023-04-03 10:58:58
  */
 public class AlipayUserDigitalidentityIdcodeinfoQueryRequest implements AlipayRequest<AlipayUserDigitalidentityIdcodeinfoQueryResponse> {
 

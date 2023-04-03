@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.data.qr.code.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:31:42
+ * @since 1.0, 2023-04-03 10:01:46
  */
 public class AlipayCommerceDataQrCodeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4657455175367695172L;
+	private static final long serialVersionUID = 8697375139497779497L;
 
 	/** 
 	 * 对应入参的biz_type

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.repaymentamt.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:56:49
+ * @since 1.0, 2023-04-03 06:24:32
  */
 public class MybankCreditSupplychainWfRepaymentamtQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6335343833214171926L;
+	private static final long serialVersionUID = 1856718838178693432L;
 
 	/** 
 	 * 总余额，单位分

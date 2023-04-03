@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.campaign.bkpromoguardbase.lmitemmodify.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 08:01:39
+ * @since 1.0, 2023-04-03 10:46:44
  */
 public class MybankMarketingCampaignBkpromoguardbaseLmitemmodifySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4354783693819893858L;
+	private static final long serialVersionUID = 1465861636426251897L;
 
 	/** 
 	 * request_id + 唯一 + LinkedMall商品修改同步场景 +返回请求中的服务标识

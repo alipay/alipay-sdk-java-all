@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.fingerprint.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:22:41
+ * @since 1.0, 2023-04-03 09:45:51
  */
 public class AlipaySecurityProdFingerprintDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3746646337639159186L;
+	private static final long serialVersionUID = 1848436722397787195L;
 
 	/** 
 	 * 去注册阶段服务端返回的协议体数据，对应《IFAA本地免密技术规范》中的IFAFMessage，内容中包含服务端的去注册数据。

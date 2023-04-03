@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.supervision.fundstransfer.querystatus request
  * 
  * @author auto create
- * @since 1.0, 2023-03-28 13:51:39
+ * @since 1.0, 2023-04-03 12:46:45
  */
 public class AlipayEbppIndustrySupervisionFundstransferQuerystatusRequest implements AlipayRequest<AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse> {
 

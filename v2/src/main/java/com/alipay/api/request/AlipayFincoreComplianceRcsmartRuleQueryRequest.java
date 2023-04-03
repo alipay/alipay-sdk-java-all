@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.rcsmart.rule.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:36:44
+ * @since 1.0, 2023-04-03 11:01:47
  */
 public class AlipayFincoreComplianceRcsmartRuleQueryRequest implements AlipayRequest<AlipayFincoreComplianceRcsmartRuleQueryResponse> {
 

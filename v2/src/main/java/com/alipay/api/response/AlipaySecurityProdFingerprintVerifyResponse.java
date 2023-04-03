@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.fingerprint.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:23:03
+ * @since 1.0, 2023-04-03 17:52:36
  */
 public class AlipaySecurityProdFingerprintVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8783362353556252999L;
+	private static final long serialVersionUID = 5418198854856137947L;
 
 	/** 
 	 * IFAA服务端校验结果，true为通过，false为未通过

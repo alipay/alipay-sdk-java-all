@@ -11,12 +11,11 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5354289632199512175L;
+	private static final long serialVersionUID = 6682638325725214383L;
 
 	/**
 	 * 传入绑定设备的类型。
 枚举值：
-0:未初始化设备
 1:蜻蜓前台设备
 2:蜻蜓房门设备
 3:蜻蜓公区设备

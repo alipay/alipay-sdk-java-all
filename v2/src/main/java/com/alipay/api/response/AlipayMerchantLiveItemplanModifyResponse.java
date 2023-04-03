@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.live.itemplan.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:26:40
+ * @since 1.0, 2023-04-03 06:36:43
  */
 public class AlipayMerchantLiveItemplanModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8886661146714312543L;
+	private static final long serialVersionUID = 1718191299743125569L;
 
 	/** 
 	 * 针对操作结果的说明

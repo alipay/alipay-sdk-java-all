@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.ad.store.bind request
  * 
  * @author auto create
- * @since 1.0, 2022-01-10 20:27:17
+ * @since 1.0, 2023-04-03 10:56:26
  */
 public class AlipayDataDataserviceAdStoreBindRequest implements AlipayRequest<AlipayDataDataserviceAdStoreBindResponse> {
 

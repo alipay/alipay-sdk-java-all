@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.dataservice.ocr.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:53:56
+ * @since 1.0, 2023-04-03 03:54:25
  */
 public class AnttechBlockchainDefinDataserviceOcrSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3558827289638245634L;
+	private static final long serialVersionUID = 5561294783917985577L;
 
 	/** 
 	 * 业务结果

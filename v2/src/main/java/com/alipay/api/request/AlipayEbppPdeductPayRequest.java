@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.pdeduct.pay request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:07:20
+ * @since 1.0, 2023-04-03 07:56:53
  */
 public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPdeductPayResponse> {
 

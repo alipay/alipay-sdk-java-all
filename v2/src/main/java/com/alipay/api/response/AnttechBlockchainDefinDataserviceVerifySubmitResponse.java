@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.dataservice.verify.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:54:29
+ * @since 1.0, 2023-04-03 07:58:45
  */
 public class AnttechBlockchainDefinDataserviceVerifySubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7227183616972228479L;
+	private static final long serialVersionUID = 6841482435652592221L;
 
 	/** 
 	 * 业务结果

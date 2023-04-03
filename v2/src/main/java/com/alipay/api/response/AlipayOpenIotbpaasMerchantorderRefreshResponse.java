@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotbpaas.merchantorder.refresh response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:16:47
+ * @since 1.0, 2023-04-03 15:55:54
  */
 public class AlipayOpenIotbpaasMerchantorderRefreshResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4614811315485944475L;
+	private static final long serialVersionUID = 8459853185394326463L;
 
 	/** 
 	 * 订单列表

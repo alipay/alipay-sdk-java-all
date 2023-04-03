@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.printer.token.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:41:59
+ * @since 1.0, 2023-04-03 05:57:37
  */
 public class AlipayDataPrinterTokenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7246895823849172996L;
+	private static final long serialVersionUID = 4214586496939782319L;
 
 	/** 
 	 * 状态码

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.remit.withdraw.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:04:52
+ * @since 1.0, 2023-04-03 00:44:12
  */
 public class AlipayOverseasRemitWithdrawNotifyRequest implements AlipayRequest<AlipayOverseasRemitWithdrawNotifyResponse> {
 

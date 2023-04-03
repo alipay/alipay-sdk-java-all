@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.receipt.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-26 15:44:53
+ * @since 1.0, 2023-04-03 07:00:29
  */
 public class AlipayCommerceIotReceiptDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7177498725819968895L;
+	private static final long serialVersionUID = 2143958194774987433L;
 
 	/** 
 	 * 电子小票详情信息

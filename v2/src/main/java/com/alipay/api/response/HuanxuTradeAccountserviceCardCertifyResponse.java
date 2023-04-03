@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: huanxu.trade.accountservice.card.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:08:43
+ * @since 1.0, 2023-04-03 10:21:31
  */
 public class HuanxuTradeAccountserviceCardCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6822258954718732597L;
+	private static final long serialVersionUID = 5818726355686592526L;
 
 	
 

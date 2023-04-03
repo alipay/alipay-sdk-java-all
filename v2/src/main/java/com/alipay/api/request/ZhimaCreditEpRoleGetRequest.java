@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.role.get request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 08:12:01
+ * @since 1.0, 2023-04-03 07:26:26
  */
 public class ZhimaCreditEpRoleGetRequest implements AlipayRequest<ZhimaCreditEpRoleGetResponse> {
 

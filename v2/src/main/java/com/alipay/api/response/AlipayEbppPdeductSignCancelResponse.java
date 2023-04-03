@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.pdeduct.sign.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:08:18
+ * @since 1.0, 2023-04-03 13:55:58
  */
 public class AlipayEbppPdeductSignCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6889644882721241296L;
+	private static final long serialVersionUID = 6898275275896667331L;
 
 	/** 
 	 * 支付宝代扣协议ID

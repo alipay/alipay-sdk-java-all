@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.gamemarketing.benefit.verify request
  * 
  * @author auto create
- * @since 1.0, 2020-09-18 16:45:12
+ * @since 1.0, 2023-04-03 16:16:22
  */
 public class AlipayCommerceOperationGamemarketingBenefitVerifyRequest implements AlipayRequest<AlipayCommerceOperationGamemarketingBenefitVerifyResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.batch.expire response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:56:40
+ * @since 1.0, 2023-04-03 13:51:44
  */
 public class AlipayMarketingVoucherBatchExpireResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1581211691973166561L;
+	private static final long serialVersionUID = 1847241435337548375L;
 
 	
 

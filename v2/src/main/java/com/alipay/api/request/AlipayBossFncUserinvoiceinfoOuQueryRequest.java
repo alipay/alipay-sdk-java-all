@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.userinvoiceinfo.ou.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:03:04
+ * @since 1.0, 2023-04-03 00:28:59
  */
 public class AlipayBossFncUserinvoiceinfoOuQueryRequest implements AlipayRequest<AlipayBossFncUserinvoiceinfoOuQueryResponse> {
 

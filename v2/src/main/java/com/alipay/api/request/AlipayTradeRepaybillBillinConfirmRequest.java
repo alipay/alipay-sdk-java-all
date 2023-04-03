@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.repaybill.billin.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:46:28
+ * @since 1.0, 2023-04-03 02:09:48
  */
 public class AlipayTradeRepaybillBillinConfirmRequest implements AlipayRequest<AlipayTradeRepaybillBillinConfirmResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.transport.cardinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 05:46:57
+ * @since 1.0, 2023-04-03 17:06:31
  */
 public class AlipayPayAppTransportCardinfoQueryRequest implements AlipayRequest<AlipayPayAppTransportCardinfoQueryResponse> {
 

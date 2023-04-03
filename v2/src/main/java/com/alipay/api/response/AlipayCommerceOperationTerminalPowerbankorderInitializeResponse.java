@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.terminal.powerbankorder.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 21:11:41
+ * @since 1.0, 2023-04-03 15:46:44
  */
 public class AlipayCommerceOperationTerminalPowerbankorderInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8187468741917217118L;
+	private static final long serialVersionUID = 8373197197249991651L;
 
 	/** 
 	 * 同步订单记录初始化后返回的唯一Id。

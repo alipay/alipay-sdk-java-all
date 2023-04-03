@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.role.permission.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:35:01
+ * @since 1.0, 2023-04-03 04:14:39
  */
 public class KoubeiMerchantRolePermissionCreateRequest implements AlipayRequest<KoubeiMerchantRolePermissionCreateResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.jobworth.picture.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:49:43
+ * @since 1.0, 2023-04-03 11:00:06
  */
 public class ZhimaCustomerJobworthPictureUploadRequest implements AlipayRequest<ZhimaCustomerJobworthPictureUploadResponse> {
 

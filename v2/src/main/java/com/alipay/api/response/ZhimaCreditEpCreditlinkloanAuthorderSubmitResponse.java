@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlinkloan.authorder.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-22 10:26:39
+ * @since 1.0, 2023-04-03 12:01:43
  */
 public class ZhimaCreditEpCreditlinkloanAuthorderSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7835839897226534321L;
+	private static final long serialVersionUID = 6266624326511823845L;
 
 	/** 
 	 * 商户单号，正常调用返回的数据和入参中的商户单号保持一致

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.signstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:03:13
+ * @since 1.0, 2023-04-03 08:59:56
  */
 public class AlipayOpenAgentSignstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7167469795326554736L;
+	private static final long serialVersionUID = 4398175777755657546L;
 
 	/** 
 	 * 商户产品签约状态结果对象数组，返回本次查询的产品的签约状态

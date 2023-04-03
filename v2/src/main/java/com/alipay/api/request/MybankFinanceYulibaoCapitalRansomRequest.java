@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.finance.yulibao.capital.ransom request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:32:54
+ * @since 1.0, 2023-04-03 14:31:19
  */
 public class MybankFinanceYulibaoCapitalRansomRequest implements AlipayRequest<MybankFinanceYulibaoCapitalRansomResponse> {
 

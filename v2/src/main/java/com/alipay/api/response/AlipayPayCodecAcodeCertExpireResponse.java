@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.codec.acode.cert.expire response.
  * 
  * @author auto create
- * @since 1.0, 2022-06-20 18:42:06
+ * @since 1.0, 2023-04-03 06:17:19
  */
 public class AlipayPayCodecAcodeCertExpireResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2132717784768254122L;
+	private static final long serialVersionUID = 1856695974543686743L;
 
 	
 

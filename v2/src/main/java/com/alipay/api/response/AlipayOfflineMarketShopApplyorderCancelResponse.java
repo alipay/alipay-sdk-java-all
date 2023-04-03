@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.shop.applyorder.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:29:26
+ * @since 1.0, 2023-04-03 12:58:43
  */
 public class AlipayOfflineMarketShopApplyorderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3399442653515717588L;
+	private static final long serialVersionUID = 4353362226973877137L;
 
 	/** 
 	 * 申请撤销成功接口同步返回的支付宝申请流水号。

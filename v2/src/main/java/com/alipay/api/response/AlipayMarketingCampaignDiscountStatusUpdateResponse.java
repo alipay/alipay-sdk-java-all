@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.discount.status.update response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 20:28:33
+ * @since 1.0, 2023-04-03 13:18:35
  */
 public class AlipayMarketingCampaignDiscountStatusUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6524998582982931957L;
+	private static final long serialVersionUID = 7364763659115356646L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.cloudbus.predictresult.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:30:03
+ * @since 1.0, 2023-04-03 06:36:15
  */
 public class AlipayDataAiserviceCloudbusPredictresultQueryRequest implements AlipayRequest<AlipayDataAiserviceCloudbusPredictresultQueryResponse> {
 

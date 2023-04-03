@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.auth.zhimaorg.identity.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:20:06
+ * @since 1.0, 2023-04-03 01:18:45
  */
 public class AlipayUserAuthZhimaorgIdentityApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5655539277624898589L;
+	private static final long serialVersionUID = 4287913424374569989L;
 
 	/** 
 	 * 访问令牌。通过该令牌调用需要授权类接口

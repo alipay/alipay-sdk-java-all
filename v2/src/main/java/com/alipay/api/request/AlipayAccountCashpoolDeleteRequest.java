@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.cashpool.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:59:14
+ * @since 1.0, 2023-04-03 06:55:39
  */
 public class AlipayAccountCashpoolDeleteRequest implements AlipayRequest<AlipayAccountCashpoolDeleteResponse> {
 

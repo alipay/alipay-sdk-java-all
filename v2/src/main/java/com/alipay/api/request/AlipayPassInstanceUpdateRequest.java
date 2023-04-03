@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pass.instance.update request
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 22:36:38
+ * @since 1.0, 2023-04-03 09:36:42
  */
 public class AlipayPassInstanceUpdateRequest implements AlipayRequest<AlipayPassInstanceUpdateResponse> {
 

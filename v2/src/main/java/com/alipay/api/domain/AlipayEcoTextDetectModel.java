@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoTextDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3556857624733589593L;
+	private static final long serialVersionUID = 2736593866472936129L;
 
 	/**
 	 * 检测任务列表

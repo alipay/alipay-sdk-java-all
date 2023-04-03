@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.instcard.open.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:41:11
+ * @since 1.0, 2023-04-03 04:20:02
  */
 public class AlipayFundInstcardOpenCancelRequest implements AlipayRequest<AlipayFundInstcardOpenCancelResponse> {
 

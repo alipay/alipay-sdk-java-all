@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.topregister.company.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:04:54
+ * @since 1.0, 2023-04-03 16:29:05
  */
 public class AlipayEbppInvoiceTopregisterCompanyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6331494193798533958L;
+	private static final long serialVersionUID = 5483911694943419823L;
 
 	/** 
 	 * 企业税务信息查询输出

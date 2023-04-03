@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.cashlessticket.template.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 04:04:30
+ * @since 1.0, 2023-04-03 12:41:36
  */
 public class AlipayMarketingCashlessticketTemplateModifyRequest implements AlipayRequest<AlipayMarketingCashlessticketTemplateModifyResponse> {
 

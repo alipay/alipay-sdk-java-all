@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.platform.userid.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:19:29
+ * @since 1.0, 2023-04-03 03:16:51
  */
 public class AlipayPlatformUseridGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8486292464899935439L;
+	private static final long serialVersionUID = 3896511852856556633L;
 
 	/** 
 	 * id字典，key为openId，value为userId

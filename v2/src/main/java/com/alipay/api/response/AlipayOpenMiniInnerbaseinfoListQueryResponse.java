@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:32:00
+ * @since 1.0, 2023-04-03 08:08:48
  */
 public class AlipayOpenMiniInnerbaseinfoListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6761122723432861962L;
+	private static final long serialVersionUID = 4713794917272166419L;
 
 	/** 
 	 * 小程序列表

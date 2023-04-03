@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.hrcampuscore.niukeexamreport.result.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:24:05
+ * @since 1.0, 2023-04-03 15:09:24
  */
 public class AlipayDigitalmgmtHrcampuscoreNiukeexamreportResultUploadRequest implements AlipayUploadRequest<AlipayDigitalmgmtHrcampuscoreNiukeexamreportResultUploadResponse> {
 

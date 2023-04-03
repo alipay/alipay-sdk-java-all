@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.removedish.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:13:25
+ * @since 1.0, 2023-04-03 17:05:37
  */
 public class KoubeiCateringDishRemovedishDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3893615334262879725L;
+	private static final long serialVersionUID = 3171275387475288675L;
 
 	/** 
 	 * 失败是否需要重试，true：需要重试；false：不需要重试。

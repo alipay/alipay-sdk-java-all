@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.app.auth.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:31:42
+ * @since 1.0, 2023-04-03 03:06:49
  */
 public class AlipayCommerceAppAuthUploadRequest implements AlipayUploadRequest<AlipayCommerceAppAuthUploadResponse> {
 

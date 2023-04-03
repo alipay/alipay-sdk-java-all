@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.isv.qrcode.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:50:19
+ * @since 1.0, 2023-04-03 11:38:45
  */
 public class AlipayCommerceOperationIsvQrcodeBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5817286385781577125L;
+	private static final long serialVersionUID = 4887518237461331261L;
 
 	
 

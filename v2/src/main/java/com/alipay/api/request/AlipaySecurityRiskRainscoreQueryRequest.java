@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.rainscore.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 06:00:20
+ * @since 1.0, 2023-04-03 00:38:18
  */
 public class AlipaySecurityRiskRainscoreQueryRequest implements AlipayRequest<AlipaySecurityRiskRainscoreQueryResponse> {
 

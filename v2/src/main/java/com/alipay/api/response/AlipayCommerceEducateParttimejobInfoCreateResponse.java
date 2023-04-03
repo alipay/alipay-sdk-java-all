@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.parttimejob.info.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 01:32:51
+ * @since 1.0, 2023-04-03 04:07:03
  */
 public class AlipayCommerceEducateParttimejobInfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5219192626248721274L;
+	private static final long serialVersionUID = 2767175197835646669L;
 
 	
 

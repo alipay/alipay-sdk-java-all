@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cplife.basicservice.initialize request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:11:25
+ * @since 1.0, 2023-04-03 07:29:23
  */
 public class AlipayEcoCplifeBasicserviceInitializeRequest implements AlipayRequest<AlipayEcoCplifeBasicserviceInitializeResponse> {
 

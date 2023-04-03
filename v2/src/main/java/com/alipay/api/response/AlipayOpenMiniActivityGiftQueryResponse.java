@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.activity.gift.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:20:15
+ * @since 1.0, 2023-04-03 07:22:58
  */
 public class AlipayOpenMiniActivityGiftQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1191722889113182781L;
+	private static final long serialVersionUID = 3853171698371662449L;
 
 	/** 
 	 * 金额(分), 仅限代金券

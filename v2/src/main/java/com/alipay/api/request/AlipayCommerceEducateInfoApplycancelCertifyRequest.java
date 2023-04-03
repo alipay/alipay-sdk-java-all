@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.info.applycancel.certify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 17:36:47
+ * @since 1.0, 2023-04-03 15:54:45
  */
 public class AlipayCommerceEducateInfoApplycancelCertifyRequest implements AlipayRequest<AlipayCommerceEducateInfoApplycancelCertifyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.selleradmit.realtime.certify request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 22:18:11
+ * @since 1.0, 2023-04-03 16:33:59
  */
 public class AlipayPcreditHuabeiSelleradmitRealtimeCertifyRequest implements AlipayRequest<AlipayPcreditHuabeiSelleradmitRealtimeCertifyResponse> {
 

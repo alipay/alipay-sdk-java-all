@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.factoring.supplier.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 00:27:19
+ * @since 1.0, 2023-04-03 03:36:55
  */
 public class MybankCreditSupplychainFactoringSupplierCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4568726463983951141L;
+	private static final long serialVersionUID = 1772815543549266344L;
 
 	/** 
 	 * supplierNo : 供应商编号

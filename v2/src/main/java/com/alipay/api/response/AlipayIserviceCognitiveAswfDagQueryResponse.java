@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.aswf.dag.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 20:14:50
+ * @since 1.0, 2023-04-03 07:53:21
  */
 public class AlipayIserviceCognitiveAswfDagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2128413241479379466L;
+	private static final long serialVersionUID = 7368976354884911682L;
 
 	/** 
 	 * 工作流id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.entertainment.order.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 02:49:59
+ * @since 1.0, 2023-04-03 11:22:54
  */
 public class AlipayEcoEntertainmentOrderUploadRequest implements AlipayRequest<AlipayEcoEntertainmentOrderUploadResponse> {
 

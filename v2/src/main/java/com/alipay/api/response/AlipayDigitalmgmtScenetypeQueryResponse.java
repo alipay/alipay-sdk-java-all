@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.scenetype.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 18:43:17
+ * @since 1.0, 2023-04-03 07:39:50
  */
 public class AlipayDigitalmgmtScenetypeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5295247144671532864L;
+	private static final long serialVersionUID = 3358376415895524649L;
 
 	/** 
 	 * 场景类型信息列表

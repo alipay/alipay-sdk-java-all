@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.isv.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 03:40:06
+ * @since 1.0, 2023-04-03 12:36:27
  */
 public class AlipayIserviceCcmIsvInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2897964387729424565L;
+	private static final long serialVersionUID = 5114658114877611827L;
 
 	/** 
 	 * Base64编码CCM公钥：CCM公私钥对由CCM自动生成，用于Iframe spi接口安全认证

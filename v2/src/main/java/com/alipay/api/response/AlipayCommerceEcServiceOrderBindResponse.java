@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.service.order.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-28 16:56:42
+ * @since 1.0, 2023-04-03 13:01:43
  */
 public class AlipayCommerceEcServiceOrderBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4681372221989731466L;
+	private static final long serialVersionUID = 4635943635548967389L;
 
 	/** 
 	 * 订购单ID

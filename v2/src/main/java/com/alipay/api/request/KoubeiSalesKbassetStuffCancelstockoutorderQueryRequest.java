@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.sales.kbasset.stuff.cancelstockoutorder.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-13 07:39:12
+ * @since 1.0, 2023-04-03 13:44:50
  */
 public class KoubeiSalesKbassetStuffCancelstockoutorderQueryRequest implements AlipayRequest<KoubeiSalesKbassetStuffCancelstockoutorderQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.marketing.product.recommend request
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 19:57:40
+ * @since 1.0, 2023-04-03 17:49:23
  */
 public class AlipayInsMarketingProductRecommendRequest implements AlipayRequest<AlipayInsMarketingProductRecommendResponse> {
 

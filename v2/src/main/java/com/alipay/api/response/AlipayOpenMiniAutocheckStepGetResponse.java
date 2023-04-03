@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.autocheck.step.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:36:44
+ * @since 1.0, 2023-04-03 17:16:54
  */
 public class AlipayOpenMiniAutocheckStepGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5121888293911858694L;
+	private static final long serialVersionUID = 8284592877131635577L;
 
 	/** 
 	 * 百格脚本步骤信息

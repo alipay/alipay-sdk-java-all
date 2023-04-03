@@ -10,32 +10,32 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品免审更新接口
  *
  * @author auto create
- * @since 1.0, 2023-03-27 10:22:10
+ * @since 1.0, 2023-04-03 10:19:16
  */
 public class AlipayOpenAppItemDirectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8618837983515869116L;
+	private static final long serialVersionUID = 3379919327843653995L;
 
 	/**
-	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
+	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。该字段特殊可选，与out_item_id不能同时为空，优先使用item_id。
 	 */
 	@ApiField("item_id")
 	private String itemId;
 
 	/**
-	 * 商品原价，分为单位。若填写了skus[]数组，此字段不用填写。
+	 * 商品原价，分为单位。若填写了skus[]数组，此字段不填写。
 	 */
 	@ApiField("original_price")
 	private Long originalPrice;
 
 	/**
-	 * 商家侧商品ID，要求 APPID 下全局唯一。
+	 * 商家侧商品ID，要求 APPID 下全局唯一。该字段特殊可选，与item_id不能同时为空，优先使用item_id。
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
 
 	/**
-	 * 商品售价，分为单位。若填写了skus[]数组，此字段不用填写。若未填写skus[]数组，此字段必填。
+	 * 商品售价，分为单位。若填写了skus[]数组，此字段不填写。若未填写skus[]数组，此字段必填。
 	 */
 	@ApiField("sale_price")
 	private Long salePrice;
@@ -44,10 +44,8 @@ public class AlipayOpenAppItemDirectModifyModel extends AlipayObject {
 	 * 商品的售卖状态状态，包含以下两种状态
 已下架(DELISTING)
 可售卖(AVAILABLE)
-若填写了skus[]数组，此字段不用填写。
+若填写了skus[]数组，此字段不填写。
 若未填写skus[]数组，此字段必填。
-可售卖: AVAILABLE
-已下架: DELISTING
 	 */
 	@ApiField("sale_status")
 	private String saleStatus;
@@ -61,8 +59,8 @@ public class AlipayOpenAppItemDirectModifyModel extends AlipayObject {
 
 	/**
 	 * 库存
-若填写了skus[]数组，此字段不用填写。
-若未填写skus[]数组，此字段必填。
+若填写了skus[]数组，此字段不填写。
+若未填写skus[]数组，此字段选填。
 目前支持库存区间0~99999
 	 */
 	@ApiField("stock_num")
