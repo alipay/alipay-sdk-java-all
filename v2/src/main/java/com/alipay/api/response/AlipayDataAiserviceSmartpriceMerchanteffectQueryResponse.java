@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataAiserviceSmartpriceMerchanteffectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8123136456527135514L;
+	private static final long serialVersionUID = 6379542725717261268L;
 
 	/** 
 	 * 商家效果展示列表返回值

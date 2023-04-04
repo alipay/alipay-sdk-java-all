@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZMGOQuitConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 6191316188746165936L;
+	private static final long serialVersionUID = 7352879893256353251L;
 
 	/**
 	 * 退出提示

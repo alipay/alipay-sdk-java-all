@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单确认收货
  *
  * @author auto create
- * @since 1.0, 2023-03-30 22:47:50
+ * @since 1.0, 2023-04-04 17:32:49
  */
 public class AlipayOpenMiniOrderDeliveryReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6152413599199433862L;
+	private static final long serialVersionUID = 3569642699342668849L;
 
 	/**
-	 * 商户openId
+	 * 用户openId
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -32,7 +32,7 @@ public class AlipayOpenMiniOrderDeliveryReceiveModel extends AlipayObject {
 	private String outOrderId;
 
 	/**
-	 * 商户UID（与openId二选一）
+	 * 用户UID（与openId二选一）
 	 */
 	@ApiField("user_id")
 	private String userId;

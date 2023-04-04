@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2023-03-29 15:59:29
+ * @since 1.0, 2023-04-04 19:23:14
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8496457335254816632L;
+	private static final long serialVersionUID = 3355486563153275926L;
 
 	/**
 	 * 订单收货地址
@@ -50,13 +50,14 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	private MiniReceiverAddressInfoDTO defaultReceivingAddress;
 
 	/**
-	 * 物流信息
+	 * 物流信息--预留字段
 	 */
 	@ApiField("delivery_detail")
 	private LogisticsInfoDTO deliveryDetail;
 
 	/**
-	 * 订单绝对超时时间。
+	 * 暂不支持
+订单绝对超时时间。
 格式为yyyy-MM-dd HH:mm:ss。
 注：time_expire和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
 	 */
@@ -104,7 +105,7 @@ WASH_PROTECT_ON_LINE:洗护
 
 	/**
 	 * 订单相对超时时间。从交易创建时间开始计算。
-该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
+该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
 当面付场景默认值为3h。
 注：time_expire和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
 	 */

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryOnecodepassOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8394763511143246286L;
+	private static final long serialVersionUID = 5895622972398236143L;
 
 	/** 
 	 * 买家实付金额，单位为元，两位小数。该金额代表该笔交易买家实际支付的金额，不包含商户折扣等金额

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医疗商业化订单上传接口入参ext_info
  *
  * @author auto create
- * @since 1.0, 2023-03-30 20:04:29
+ * @since 1.0, 2023-04-04 15:32:04
  */
 public class MedicalCommercialOrderUploadExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5113172732413655341L;
+	private static final long serialVersionUID = 6434758754153641418L;
 
 	/**
 	 * 费用明细
@@ -28,12 +28,6 @@ public class MedicalCommercialOrderUploadExtInfo extends AlipayObject {
 	 */
 	@ApiField("medical_examination_user")
 	private String medicalExaminationUser;
-
-	/**
-	 * 商家小程序appId
-	 */
-	@ApiField("mini_app_id")
-	private String miniAppId;
 
 	/**
 	 * 当订单状态为“已退款”、“部分退款”时必填，单位为元，不能大于订单金额，精确到小数点后2位
@@ -84,13 +78,6 @@ public class MedicalCommercialOrderUploadExtInfo extends AlipayObject {
 	}
 	public void setMedicalExaminationUser(String medicalExaminationUser) {
 		this.medicalExaminationUser = medicalExaminationUser;
-	}
-
-	public String getMiniAppId() {
-		return this.miniAppId;
-	}
-	public void setMiniAppId(String miniAppId) {
-		this.miniAppId = miniAppId;
 	}
 
 	public String getRefundAmount() {

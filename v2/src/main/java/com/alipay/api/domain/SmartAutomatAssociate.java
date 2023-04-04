@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SmartAutomatAssociate extends AlipayObject {
 
-	private static final long serialVersionUID = 5111258871758343585L;
+	private static final long serialVersionUID = 2614313768598324917L;
 
 	/**
 	 * 合作伙伴类型

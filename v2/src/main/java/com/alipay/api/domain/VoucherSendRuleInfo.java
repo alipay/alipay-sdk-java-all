@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发券规则
  *
  * @author auto create
- * @since 1.0, 2023-04-03 13:59:42
+ * @since 1.0, 2023-04-04 10:52:31
  */
 public class VoucherSendRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7736831652118671237L;
+	private static final long serialVersionUID = 5123646189389936157L;
 
 	/**
 	 * 设置此字段，允许指定单天最大发券数量。
@@ -32,6 +32,12 @@ public class VoucherSendRuleInfo extends AlipayObject {
 	 */
 	@ApiField("phone_number_limit")
 	private Boolean phoneNumberLimit;
+
+	/**
+	 * 下单时是否需要用户填写手机号码
+	 */
+	@ApiField("phone_number_need_input_limit")
+	private Boolean phoneNumberNeedInputLimit;
 
 	/**
 	 * 券发放结束时间。 格式为：yyyy-MM-dd HH:mm:ss
@@ -88,6 +94,13 @@ public class VoucherSendRuleInfo extends AlipayObject {
 	}
 	public void setPhoneNumberLimit(Boolean phoneNumberLimit) {
 		this.phoneNumberLimit = phoneNumberLimit;
+	}
+
+	public Boolean getPhoneNumberNeedInputLimit() {
+		return this.phoneNumberNeedInputLimit;
+	}
+	public void setPhoneNumberNeedInputLimit(Boolean phoneNumberNeedInputLimit) {
+		this.phoneNumberNeedInputLimit = phoneNumberNeedInputLimit;
 	}
 
 	public Date getPublishEndTime() {

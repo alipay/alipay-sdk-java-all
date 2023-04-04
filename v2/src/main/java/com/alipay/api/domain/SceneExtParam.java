@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SceneExtParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3349428556871528536L;
+	private static final long serialVersionUID = 1763192879869492831L;
 
 	/**
 	 * B流程申请准入原因

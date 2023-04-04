@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppYoukuvideoAuditcallbackSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5137787413956336935L;
+	private static final long serialVersionUID = 3339224145591862342L;
 
 	
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCouponTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4713156634659454769L;
+	private static final long serialVersionUID = 5222362818347248365L;
 
 	/**
 	 * 创建红包模板时录入的品牌信息，由商户自定义，在通用模板中展示在红包LOGO下方。根据红包使用场景的不同，该信息的展示位置可能会有不同。

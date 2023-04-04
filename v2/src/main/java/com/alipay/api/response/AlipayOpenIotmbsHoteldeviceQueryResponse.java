@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3835248862145239765L;
+	private static final long serialVersionUID = 6749359222513834477L;
 
 	/** 
 	 * 设备绑定的人脸数据列表

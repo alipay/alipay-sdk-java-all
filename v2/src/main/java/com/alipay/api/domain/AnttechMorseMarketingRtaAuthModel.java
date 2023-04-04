@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnttechMorseMarketingRtaAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7497698734216462481L;
+	private static final long serialVersionUID = 2587656446898621736L;
 
 	/**
 	 * 活动id描述用户使用这个活动消耗预算，该活动必须是被场景侧曝光过的活动

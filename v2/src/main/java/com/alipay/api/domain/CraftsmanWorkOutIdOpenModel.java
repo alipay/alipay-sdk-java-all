@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CraftsmanWorkOutIdOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2539766744453953778L;
+	private static final long serialVersionUID = 7864321481231236427L;
 
 	/**
 	 * 外部作品id，isv生成，isv的appId+out_work_id全局唯一

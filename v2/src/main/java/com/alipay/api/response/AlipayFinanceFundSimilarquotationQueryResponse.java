@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinanceFundSimilarquotationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8389839541754556935L;
+	private static final long serialVersionUID = 1831944319949564471L;
 
 	/** 
 	 * 近半年的参与同类收益率排名的基金数量

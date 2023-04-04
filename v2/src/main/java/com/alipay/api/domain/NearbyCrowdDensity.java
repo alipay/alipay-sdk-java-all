@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NearbyCrowdDensity extends AlipayObject {
 
-	private static final long serialVersionUID = 3429584652484687392L;
+	private static final long serialVersionUID = 2571366616972552876L;
 
 	/**
 	 * 人群密度，示例值：高、中、低

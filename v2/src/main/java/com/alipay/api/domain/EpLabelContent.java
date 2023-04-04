@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业标签内容模型
  *
  * @author auto create
- * @since 1.0, 2023-02-01 12:38:24
+ * @since 1.0, 2023-04-04 16:45:09
  */
 public class EpLabelContent extends AlipayObject {
 
-	private static final long serialVersionUID = 1586147195952385265L;
+	private static final long serialVersionUID = 2622539168326763932L;
 
 	/**
 	 * 标签分类
 	 */
 	@ApiField("label_category")
 	private String labelCategory;
+
+	/**
+	 * 标签代码
+	 */
+	@ApiField("label_code")
+	private String labelCode;
 
 	/**
 	 * 标签解释说明
@@ -52,6 +58,13 @@ public class EpLabelContent extends AlipayObject {
 	}
 	public void setLabelCategory(String labelCategory) {
 		this.labelCategory = labelCategory;
+	}
+
+	public String getLabelCode() {
+		return this.labelCode;
+	}
+	public void setLabelCode(String labelCode) {
+		this.labelCode = labelCode;
 	}
 
 	public String getLabelDefinition() {

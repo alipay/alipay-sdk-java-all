@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpDataapiMigrationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3426758935747235645L;
+	private static final long serialVersionUID = 3637627435862432943L;
 
 	/**
 	 * 原来dataapi http方法，get, post, put, delete

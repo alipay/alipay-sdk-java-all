@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingCampaignOpenDeliveryDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5889443673479633282L;
+	private static final long serialVersionUID = 2313887622614866768L;
 
 	/**
 	 * 要删除店铺页投放内容的类型。目前支持的类型有：1. gift_card

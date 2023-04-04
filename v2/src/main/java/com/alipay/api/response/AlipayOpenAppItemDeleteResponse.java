@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:56:43
+ * @since 1.0, 2023-04-04 13:46:43
  */
 public class AlipayOpenAppItemDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1219118872723485828L;
+	private static final long serialVersionUID = 1825167353952743623L;
 
 	/** 
 	 * 删除成功的商家侧商品ID和支付宝平台侧商品ID列表

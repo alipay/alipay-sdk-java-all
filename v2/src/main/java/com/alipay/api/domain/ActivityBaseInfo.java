@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动基础信息
  *
  * @author auto create
- * @since 1.0, 2023-04-03 14:05:43
+ * @since 1.0, 2023-04-04 10:53:02
  */
 public class ActivityBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4193456837883825875L;
+	private static final long serialVersionUID = 8594973793826227268L;
 
 	/**
 	 * 活动id
@@ -54,6 +54,12 @@ public class ActivityBaseInfo extends AlipayObject {
 	 */
 	@ApiField("code_mode")
 	private String codeMode;
+
+	/**
+	 * 外部活动ID
+	 */
+	@ApiField("out_activity_id")
+	private String outActivityId;
 
 	public String getActivityId() {
 		return this.activityId;
@@ -102,6 +108,13 @@ public class ActivityBaseInfo extends AlipayObject {
 	}
 	public void setCodeMode(String codeMode) {
 		this.codeMode = codeMode;
+	}
+
+	public String getOutActivityId() {
+		return this.outActivityId;
+	}
+	public void setOutActivityId(String outActivityId) {
+		this.outActivityId = outActivityId;
 	}
 
 }

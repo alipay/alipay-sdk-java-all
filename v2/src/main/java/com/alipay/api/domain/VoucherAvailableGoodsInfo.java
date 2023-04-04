@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券可用商品
  *
  * @author auto create
- * @since 1.0, 2023-04-03 14:05:57
+ * @since 1.0, 2023-04-04 10:52:53
  */
 public class VoucherAvailableGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1472155676954916727L;
+	private static final long serialVersionUID = 4739164716164152193L;
 
 	/**
 	 * 可优惠商品编码，商家自定义商品编码。当用户支付时，交易中的商品编码和支付券配置的商品编码有任一匹配时，可以使用优惠券。
@@ -35,6 +35,25 @@ public class VoucherAvailableGoodsInfo extends AlipayObject {
 	 */
 	@ApiField("goods_description")
 	private String goodsDescription;
+
+	/**
+	 * 商品详情，会展示在特定渠道(如服务市场团购业务插件的套餐明细)。
+	 */
+	@ApiField("goods_detail")
+	private String goodsDetail;
+
+	/**
+	 * 商品详情图片列表，会展示在特定渠道(如服务市场团购业务插件的头图)
+	 */
+	@ApiListField("goods_detail_images")
+	@ApiField("string")
+	private List<String> goodsDetailImages;
+
+	/**
+	 * 商品详情富文本描述
+	 */
+	@ApiField("goods_detail_rich_description")
+	private String goodsDetailRichDescription;
 
 	/**
 	 * 商品名称。
@@ -67,6 +86,27 @@ public class VoucherAvailableGoodsInfo extends AlipayObject {
 	}
 	public void setGoodsDescription(String goodsDescription) {
 		this.goodsDescription = goodsDescription;
+	}
+
+	public String getGoodsDetail() {
+		return this.goodsDetail;
+	}
+	public void setGoodsDetail(String goodsDetail) {
+		this.goodsDetail = goodsDetail;
+	}
+
+	public List<String> getGoodsDetailImages() {
+		return this.goodsDetailImages;
+	}
+	public void setGoodsDetailImages(List<String> goodsDetailImages) {
+		this.goodsDetailImages = goodsDetailImages;
+	}
+
+	public String getGoodsDetailRichDescription() {
+		return this.goodsDetailRichDescription;
+	}
+	public void setGoodsDetailRichDescription(String goodsDetailRichDescription) {
+		this.goodsDetailRichDescription = goodsDetailRichDescription;
 	}
 
 	public String getGoodsName() {
