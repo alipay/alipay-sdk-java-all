@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保证金明细详情
  *
  * @author auto create
- * @since 1.0, 2019-10-11 10:57:08
+ * @since 1.0, 2023-04-05 19:35:13
  */
 public class BailDetailResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6135355664493521852L;
+	private static final long serialVersionUID = 7514418343843568993L;
 
 	/**
 	 * 保证金收支金额

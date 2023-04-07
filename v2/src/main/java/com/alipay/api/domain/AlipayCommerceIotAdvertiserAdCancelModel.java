@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotAdvertiserAdCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7413914598581271575L;
+	private static final long serialVersionUID = 2713865656289144864L;
 
 	/**
 	 * 投放计划id

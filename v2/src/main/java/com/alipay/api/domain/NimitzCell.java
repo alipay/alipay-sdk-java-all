@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NimitzCell extends AlipayObject {
 
-	private static final long serialVersionUID = 8479454894473329365L;
+	private static final long serialVersionUID = 2598425797369127224L;
 
 	/**
 	 * Boolean 值

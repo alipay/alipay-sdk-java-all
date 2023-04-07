@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联普通二维码
  *
  * @author auto create
- * @since 1.0, 2023-03-08 21:06:02
+ * @since 1.0, 2023-04-06 19:25:45
  */
 public class AlipayOpenMiniQrcodeBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5624766826933554469L;
+	private static final long serialVersionUID = 8731759161238591334L;
 
 	/**
 	 * 匹配规则，仅支持EXACT（精确匹配）、FUZZY（模糊匹配）两个值。
@@ -28,7 +28,7 @@ public class AlipayOpenMiniQrcodeBindModel extends AlipayObject {
 	private String pageRedirection;
 
 	/**
-	 * 匹配模式，用于描述通用的路由url格式，适用于同一个host下面存在大量路由的场景，主要用于提升路由性能，其中{0}、{1} 代表路径中的变量，注意，同一个host下面不能存在路径深度相同的匹配。
+	 * 模式，用于描述通用的路由url格式，适用于同一个host下面存在大量路由的场景，主要用于提升路由性能，其中{0}、{1} 代表路径中的变量
 	 */
 	@ApiField("route_pattern")
 	private String routePattern;

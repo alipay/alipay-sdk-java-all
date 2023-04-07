@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通个人商户限额升级
  *
  * @author auto create
- * @since 1.0, 2022-11-11 22:26:49
+ * @since 1.0, 2023-04-06 19:16:23
  */
 public class AntMerchantExpandIndirectZftUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2427489398549394387L;
+	private static final long serialVersionUID = 7275617948641446283L;
 
 	/**
 	 * 补充证件图片，与additional_cert_no+additional_cert_type搭配使用。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 间联商户活动权益复制
  *
  * @author auto create
- * @since 1.0, 2019-12-05 18:09:02
+ * @since 1.0, 2023-04-06 19:17:06
  */
 public class AntMerchantExpandIndirectActivityCopyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7716775325143192599L;
+	private static final long serialVersionUID = 8141219261772934971L;
 
 	/**
 	 * 转移内容，数组类型。目前可选值(不包含引号)："blue_sea"

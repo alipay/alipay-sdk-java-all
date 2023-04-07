@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class WriteOffProcessOrderOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5318819623189428932L;
+	private static final long serialVersionUID = 3685859412621661582L;
 
 	/**
 	 * 外部这次请求传入的幂等号

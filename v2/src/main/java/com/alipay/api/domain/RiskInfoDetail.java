@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险明细
  *
  * @author auto create
- * @since 1.0, 2023-02-07 13:49:05
+ * @since 1.0, 2023-04-06 10:17:48
  */
 public class RiskInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6358985299263587883L;
+	private static final long serialVersionUID = 3161311219553865849L;
+
+	/**
+	 * 一致性ID
+	 */
+	@ApiField("consistency_id")
+	private String consistencyId;
 
 	/**
 	 * 对话下标
@@ -48,6 +54,13 @@ public class RiskInfoDetail extends AlipayObject {
 	 */
 	@ApiField("picture_frame")
 	private String pictureFrame;
+
+	public String getConsistencyId() {
+		return this.consistencyId;
+	}
+	public void setConsistencyId(String consistencyId) {
+		this.consistencyId = consistencyId;
+	}
 
 	public String getDialogIndex() {
 		return this.dialogIndex;

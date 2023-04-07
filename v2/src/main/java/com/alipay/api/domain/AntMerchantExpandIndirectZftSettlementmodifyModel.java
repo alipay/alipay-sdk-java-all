@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通二级商户结算信息修改
  *
  * @author auto create
- * @since 1.0, 2022-11-11 22:27:03
+ * @since 1.0, 2023-04-06 19:16:39
  */
 public class AntMerchantExpandIndirectZftSettlementmodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1581354775949969214L;
+	private static final long serialVersionUID = 6844228695649474382L;
 
 	/**
 	 * 结算支付宝账号，资金结算到支付宝账号时必填。填入的支付宝账号需已实名认证，且与商户同主体(个体工商户可以与负责人或营业执照名称相同)

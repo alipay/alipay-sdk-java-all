@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * sku查询透出VO
  *
  * @author auto create
- * @since 1.0, 2023-03-29 21:02:53
+ * @since 1.0, 2023-04-06 16:50:35
  */
 public class ItemSkuSearchVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8374229571524178572L;
+	private static final long serialVersionUID = 4191135761984175416L;
 
 	/**
 	 * sku条形码

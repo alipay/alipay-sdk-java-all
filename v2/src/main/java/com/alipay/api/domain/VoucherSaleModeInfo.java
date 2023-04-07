@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 售卖信息
  *
  * @author auto create
- * @since 1.0, 2023-02-03 16:21:38
+ * @since 1.0, 2023-04-07 15:46:26
  */
 public class VoucherSaleModeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1547222964397892584L;
+	private static final long serialVersionUID = 5841421527573484599L;
 
 	/**
 	 * 资金托管方式
@@ -26,6 +26,14 @@ public class VoucherSaleModeInfo extends AlipayObject {
 	private Boolean overdueRefundable;
 
 	/**
+	 * 在支持过期自动退款后，支付宝发起自动退款前 是否需要向商户确认退款。 不填默认否，枚举值： true：是 false：否。
+
+如果选择了 true:是 ，则需要商户配合接入 过期自动退款前是否需要向商户确认SPI(spi.alipay.marketing.activity.order.refundconfirm) 以及  退款确认结果API(alipay.marketing.activity.order.refundconfirmcommit)
+	 */
+	@ApiField("overdue_refundable_need_confirm")
+	private Boolean overdueRefundableNeedConfirm;
+
+	/**
 	 * 收款账号。 目前的结算规则是，每核销一笔优惠券，支付宝会打款到该收款账户。
 	 */
 	@ApiField("payee_pid")
@@ -36,6 +44,12 @@ public class VoucherSaleModeInfo extends AlipayObject {
 	 */
 	@ApiField("refundable")
 	private Boolean refundable;
+
+	/**
+	 * 在支持随时退后，支付宝发起退款前用于判断是否需要向商户确认退款。 不填默认否，枚举值： true：是 false：否。 如果选择了 true:是 ，则需要商户配合接入退款前是否需要向商户确认SPI(spi.alipay.marketing.activity.order.refundconfirm)
+	 */
+	@ApiField("refundable_need_confirm")
+	private Boolean refundableNeedConfirm;
 
 	/**
 	 * 用户购买优惠券需要支付的金额
@@ -63,6 +77,13 @@ public class VoucherSaleModeInfo extends AlipayObject {
 		this.overdueRefundable = overdueRefundable;
 	}
 
+	public Boolean getOverdueRefundableNeedConfirm() {
+		return this.overdueRefundableNeedConfirm;
+	}
+	public void setOverdueRefundableNeedConfirm(Boolean overdueRefundableNeedConfirm) {
+		this.overdueRefundableNeedConfirm = overdueRefundableNeedConfirm;
+	}
+
 	public String getPayeePid() {
 		return this.payeePid;
 	}
@@ -75,6 +96,13 @@ public class VoucherSaleModeInfo extends AlipayObject {
 	}
 	public void setRefundable(Boolean refundable) {
 		this.refundable = refundable;
+	}
+
+	public Boolean getRefundableNeedConfirm() {
+		return this.refundableNeedConfirm;
+	}
+	public void setRefundableNeedConfirm(Boolean refundableNeedConfirm) {
+		this.refundableNeedConfirm = refundableNeedConfirm;
 	}
 
 	public String getSaleAmount() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保存账号绑定关系
  *
  * @author auto create
- * @since 1.0, 2020-08-24 20:03:36
+ * @since 1.0, 2023-04-06 15:42:14
  */
 public class AlipayUserAntpaasRoleRelationSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4721564376513643898L;
+	private static final long serialVersionUID = 6481319184587787212L;
 
 	/**
 	 * 需要绑定的支付宝用户id
@@ -24,6 +24,12 @@ public class AlipayUserAntpaasRoleRelationSaveModel extends AlipayObject {
 	 */
 	@ApiField("alipay_user_occupied_auto_delete")
 	private Boolean alipayUserOccupiedAutoDelete;
+
+	/**
+	 * 扩展参数
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 可为enable/delete, 表示存储/删除绑定关系
@@ -61,6 +67,13 @@ public class AlipayUserAntpaasRoleRelationSaveModel extends AlipayObject {
 	}
 	public void setAlipayUserOccupiedAutoDelete(Boolean alipayUserOccupiedAutoDelete) {
 		this.alipayUserOccupiedAutoDelete = alipayUserOccupiedAutoDelete;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getOpType() {

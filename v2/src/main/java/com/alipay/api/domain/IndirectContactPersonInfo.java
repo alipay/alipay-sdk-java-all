@@ -7,14 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联系人信息
  *
  * @author auto create
- * @since 1.0, 2023-03-08 16:42:16
+ * @since 1.0, 2023-04-06 17:10:19
  */
 public class IndirectContactPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8589485513288771246L;
+	private static final long serialVersionUID = 5612569665127161363L;
 
 	/**
-	 * 联系人身份证号
+	 * 联系人身份证件号。
+可传身份证、港澳居民来往内地通行证、港澳居民居住证、台湾居民来往大陆通行证、台湾居民居住证、护照、外国人永久居住证等证件号码，号码枚举见contact_card_type。若传身份证，需保证18位，且英文字母大写
 	 */
 	@ApiField("contact_card_no")
 	private String contactCardNo;

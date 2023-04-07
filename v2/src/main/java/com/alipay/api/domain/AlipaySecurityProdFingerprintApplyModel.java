@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdFingerprintApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2558456344453382711L;
+	private static final long serialVersionUID = 7755226139595473358L;
 
 	/**
 	 * IFAA协议的版本，目前为2.0

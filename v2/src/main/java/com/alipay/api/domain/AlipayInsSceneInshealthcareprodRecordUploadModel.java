@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康记录-记录上传
  *
  * @author auto create
- * @since 1.0, 2022-05-31 16:39:36
+ * @since 1.0, 2023-04-07 10:47:59
  */
 public class AlipayInsSceneInshealthcareprodRecordUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7291335755247875198L;
+	private static final long serialVersionUID = 3314623526842334912L;
 
 	/**
 	 * 小区号(16 进制字符串)

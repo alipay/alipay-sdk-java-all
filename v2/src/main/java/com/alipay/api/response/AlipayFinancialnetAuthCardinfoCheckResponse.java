@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinancialnetAuthCardinfoCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8716229495584269138L;
+	private static final long serialVersionUID = 6332644369961315396L;
 
 	/** 
 	 * 入参开启卡bin校验时，卡bin校验结果的发卡机构

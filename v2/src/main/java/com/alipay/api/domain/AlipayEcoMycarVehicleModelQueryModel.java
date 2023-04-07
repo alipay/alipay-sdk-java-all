@@ -7,11 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝基础车型库查询
  *
  * @author auto create
- * @since 1.0, 2022-05-23 09:24:33
+ * @since 1.0, 2023-04-06 22:04:16
  */
 public class AlipayEcoMycarVehicleModelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6224264567398432762L;
+	private static final long serialVersionUID = 4612418225211767399L;
+
+	/**
+	 * 业务场景：基础(BASE)、租车（RENT_CAR）
+可为空，为空默认“BASE”
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * 查询结束时间，开区间，格式为「yyyy-MM-dd HH:mm:ss」，不传默认当前时间
@@ -36,6 +43,13 @@ public class AlipayEcoMycarVehicleModelQueryModel extends AlipayObject {
 	 */
 	@ApiField("start_date")
 	private String startDate;
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
+	}
 
 	public String getEndDate() {
 		return this.endDate;
