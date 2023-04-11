@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链-1688和赊呗融合-买家签约
  *
  * @author auto create
- * @since 1.0, 2022-03-09 13:56:21
+ * @since 1.0, 2023-04-11 17:37:19
  */
 public class MybankCreditSupplychainCreditpayBuyersignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2856225889951176332L;
+	private static final long serialVersionUID = 6462725167713213635L;
 
 	/**
 	 * 买家信息
@@ -30,6 +30,12 @@ public class MybankCreditSupplychainCreditpayBuyersignCreateModel extends Alipay
 	 */
 	@ApiField("channel_tag")
 	private String channelTag;
+
+	/**
+	 * 是否签约数据授权,签约=Y,不签约=N
+	 */
+	@ApiField("is_sign_data_auth")
+	private String isSignDataAuth;
 
 	/**
 	 * 请求幂等控制ID
@@ -62,6 +68,13 @@ public class MybankCreditSupplychainCreditpayBuyersignCreateModel extends Alipay
 	}
 	public void setChannelTag(String channelTag) {
 		this.channelTag = channelTag;
+	}
+
+	public String getIsSignDataAuth() {
+		return this.isSignDataAuth;
+	}
+	public void setIsSignDataAuth(String isSignDataAuth) {
+		this.isSignDataAuth = isSignDataAuth;
 	}
 
 	public String getRequestId() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MassifBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5513533186648615361L;
+	private static final long serialVersionUID = 5215812322973596677L;
 
 	/**
 	 * 市

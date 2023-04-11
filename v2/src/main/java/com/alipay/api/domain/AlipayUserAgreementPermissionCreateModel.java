@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝协议支付许可创建接口
  *
  * @author auto create
- * @since 1.0, 2023-04-07 11:49:47
+ * @since 1.0, 2023-04-07 20:57:14
  */
 public class AlipayUserAgreementPermissionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4855289843214599235L;
+	private static final long serialVersionUID = 6598176342899849712L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ）
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 业务参数，如果notice_template是SERVIOCE_NOTICE时，此参数必传
+	 */
+	@ApiField("business_params")
+	private BusinessParamsMap businessParams;
+
+	/**
+	 * 目前共两种类型SERVIOCE_NOTICE和DEFAULT_PERMISSION，如果是服务变更提醒，需传入SERVIOCE_NOTICE
+	 */
+	@ApiField("notice_template")
+	private String noticeTemplate;
 
 	/**
 	 * 商户请求号。 由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。
@@ -36,6 +48,20 @@ public class AlipayUserAgreementPermissionCreateModel extends AlipayObject {
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public BusinessParamsMap getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(BusinessParamsMap businessParams) {
+		this.businessParams = businessParams;
+	}
+
+	public String getNoticeTemplate() {
+		return this.noticeTemplate;
+	}
+	public void setNoticeTemplate(String noticeTemplate) {
+		this.noticeTemplate = noticeTemplate;
 	}
 
 	public String getOutRequestNo() {

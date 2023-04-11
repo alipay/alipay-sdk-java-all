@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询赊呗订单
  *
  * @author auto create
- * @since 1.0, 2022-11-18 15:17:56
+ * @since 1.0, 2023-04-11 17:22:17
  */
 public class MybankCreditSupplychainCreditpayOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6355824339185528329L;
+	private static final long serialVersionUID = 2122567232693515788L;
 
 	/**
 	 * 支付宝Id
@@ -32,6 +32,18 @@ public class MybankCreditSupplychainCreditpayOrderQueryModel extends AlipayObjec
 	 */
 	@ApiField("items_per_page")
 	private Long itemsPerPage;
+
+	/**
+	 * 授权场景码
+	 */
+	@ApiField("mybk_auth_scene_code")
+	private String mybkAuthSceneCode;
+
+	/**
+	 * 授权令牌
+	 */
+	@ApiField("mybk_auth_token")
+	private String mybkAuthToken;
 
 	/**
 	 * 页数，从1-N
@@ -82,6 +94,20 @@ public class MybankCreditSupplychainCreditpayOrderQueryModel extends AlipayObjec
 	}
 	public void setItemsPerPage(Long itemsPerPage) {
 		this.itemsPerPage = itemsPerPage;
+	}
+
+	public String getMybkAuthSceneCode() {
+		return this.mybkAuthSceneCode;
+	}
+	public void setMybkAuthSceneCode(String mybkAuthSceneCode) {
+		this.mybkAuthSceneCode = mybkAuthSceneCode;
+	}
+
+	public String getMybkAuthToken() {
+		return this.mybkAuthToken;
+	}
+	public void setMybkAuthToken(String mybkAuthToken) {
+		this.mybkAuthToken = mybkAuthToken;
 	}
 
 	public Long getPage() {

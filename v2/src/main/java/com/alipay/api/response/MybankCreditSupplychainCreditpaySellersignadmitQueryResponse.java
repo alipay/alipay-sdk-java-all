@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.creditpay.sellersignadmit.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-12 14:23:58
+ * @since 1.0, 2023-04-11 17:26:50
  */
 public class MybankCreditSupplychainCreditpaySellersignadmitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1465483831468525765L;
+	private static final long serialVersionUID = 3812755275912192328L;
 
 	/** 
 	 * 准入/不准入:true/false

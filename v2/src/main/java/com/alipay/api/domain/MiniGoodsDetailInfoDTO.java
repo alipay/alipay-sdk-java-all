@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2023-04-05 21:50:51
+ * @since 1.0, 2023-04-09 12:33:40
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6693614591153343398L;
+	private static final long serialVersionUID = 8866199522478379843L;
 
 	/**
 	 * 商品描述信息
@@ -33,7 +33,7 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
 	/**
 	 * 商品的编号，该参数传入支付券上绑定商品goods_id,
-倘若无支付券需要消费，该字段传入商品最小粒度的商品ID（如：若商品有sku粒度，则传out_sku_id）
+倘若无支付券需要消费，该字段传入商品最小粒度的商品ID（如：若商品有sku粒度，则传商户sku粒度的ID）
 	 */
 	@ApiField("goods_id")
 	private String goodsId;
@@ -57,13 +57,13 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String itemCnt;
 
 	/**
-	 * 商家商品Id，提报商品库的商品，该字段必传
+	 * 提报商品库的商品，若有外部商品sku_id则必传
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
 
 	/**
-	 * 商家商品out_sku_id，提报商品库的商品，该字段必传
+	 * 提报商品库的商品，sku维度的商品该字段必传
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;

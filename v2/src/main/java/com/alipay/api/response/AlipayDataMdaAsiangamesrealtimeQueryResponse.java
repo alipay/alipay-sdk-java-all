@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.asiangamesrealtime.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 16:41:42
+ * @since 1.0, 2023-04-11 15:01:54
  */
 public class AlipayDataMdaAsiangamesrealtimeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2582334914116195673L;
+	private static final long serialVersionUID = 3618474338844238268L;
 
 	/** 
 	 * 今日亚运路线完成人数

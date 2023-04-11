@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2023-04-06 17:31:15
+ * @since 1.0, 2023-04-10 17:08:13
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8681621114554415992L;
+	private static final long serialVersionUID = 6771249159977444293L;
 
 	/**
 	 * 订单收货地址
@@ -56,24 +56,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	private LogisticsInfoDTO deliveryDetail;
 
 	/**
-	 * 暂不支持
-订单绝对超时时间。
-格式为yyyy-MM-dd HH:mm:ss。
-注：time_expire和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
-	 */
-	@ApiField("expire_time")
-	private String expireTime;
-
-	/**
 	 * 订单扩展字段
 	 */
 	@ApiField("ext_info")
 	private MiniOrderExtInfoDTO extInfo;
 
 	/**
-	 * 订单类型,
-KX_SHOPPING:电商购物
-WASH_PROTECT_ON_LINE:洗护
+	 * 订单类型
 	 */
 	@ApiField("merchant_biz_type")
 	private String merchantBizType;
@@ -85,14 +74,13 @@ WASH_PROTECT_ON_LINE:洗护
 	private MiniOrderDetailDTO orderDetail;
 
 	/**
-	 * 外部商家由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。
+	 * 由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
 
 	/**
-	 * 是
-商家小程序对应的订单详情页路径地址 value。仅需传入小程序页面路径即可。同一笔订单的链接必须与第一次传入的地址相同，且需是小程序内部页面路径，例如：/pages/index/index?orderId=10190608609185。
+	 * 商家小程序对应的订单详情页路径地址 value。仅需传入小程序页面路径即可。同一笔订单的链接必须与第一次传入的地址相同，且需是小程序内部页面路径，例如：/pages/index/index?orderId=10190608609185。
 	 */
 	@ApiField("path")
 	private String path;
@@ -105,9 +93,8 @@ WASH_PROTECT_ON_LINE:洗护
 
 	/**
 	 * 订单相对超时时间。从交易创建时间开始计算。
-该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
+该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
 当面付场景默认值为3h。
-注：time_expire和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
 	 */
 	@ApiField("timeout_express")
 	private String timeoutExpress;
@@ -165,13 +152,6 @@ WASH_PROTECT_ON_LINE:洗护
 	}
 	public void setDeliveryDetail(LogisticsInfoDTO deliveryDetail) {
 		this.deliveryDetail = deliveryDetail;
-	}
-
-	public String getExpireTime() {
-		return this.expireTime;
-	}
-	public void setExpireTime(String expireTime) {
-		this.expireTime = expireTime;
 	}
 
 	public MiniOrderExtInfoDTO getExtInfo() {

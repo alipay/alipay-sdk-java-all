@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.BackgroundWordInfo;
 import com.alipay.api.domain.DeliveryTargetRegion;
 import com.alipay.api.domain.SearchBoxActivityVideoInfo;
 
@@ -12,17 +13,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.boxactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:51:46
+ * @since 1.0, 2023-04-11 15:36:46
  */
 public class AlipayOpenSearchBoxactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7514581459979471653L;
+	private static final long serialVersionUID = 8188199921981238831L;
 
 	/** 
 	 * 底纹词
 	 */
 	@ApiField("background_word")
 	private String backgroundWord;
+
+	/** 
+	 * 底纹词信息
+	 */
+	@ApiField("background_word_info")
+	private BackgroundWordInfo backgroundWordInfo;
 
 	/** 
 	 * 搜索直达活动id
@@ -120,6 +127,13 @@ public class AlipayOpenSearchBoxactivityQueryResponse extends AlipayResponse {
 	}
 	public String getBackgroundWord( ) {
 		return this.backgroundWord;
+	}
+
+	public void setBackgroundWordInfo(BackgroundWordInfo backgroundWordInfo) {
+		this.backgroundWordInfo = backgroundWordInfo;
+	}
+	public BackgroundWordInfo getBackgroundWordInfo( ) {
+		return this.backgroundWordInfo;
 	}
 
 	public void setBoxActivityId(String boxActivityId) {

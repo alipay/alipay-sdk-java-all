@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工作证职业数据回流接口字段
  *
  * @author auto create
- * @since 1.0, 2023-03-03 14:32:56
+ * @since 1.0, 2023-04-11 11:33:50
  */
 public class JobWorthJobdata extends AlipayObject {
 
-	private static final long serialVersionUID = 3594453533829978564L;
+	private static final long serialVersionUID = 7564431826119564455L;
 
 	/**
 	 * 证书发证机构

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantQipanBoardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8613699783145361421L;
+	private static final long serialVersionUID = 6288357242558155871L;
 
 	/**
 	 * 看板场景对应的请求参数

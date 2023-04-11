@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链-1688和赊呗融合-买家解约
  *
  * @author auto create
- * @since 1.0, 2022-12-06 10:58:32
+ * @since 1.0, 2023-04-11 15:26:51
  */
 public class MybankCreditSupplychainCreditpayBuyerunsignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6247191224939169596L;
+	private static final long serialVersionUID = 8139579686138968747L;
 
 	/**
 	 * 合约编号
@@ -36,6 +36,18 @@ public class MybankCreditSupplychainCreditpayBuyerunsignCreateModel extends Alip
 	 */
 	@ApiField("channel_tag")
 	private String channelTag;
+
+	/**
+	 * 授权场景码
+	 */
+	@ApiField("mybk_auth_scene_code")
+	private String mybkAuthSceneCode;
+
+	/**
+	 * 授权令牌
+	 */
+	@ApiField("mybk_auth_token")
+	private String mybkAuthToken;
 
 	/**
 	 * 请求冥等控制ID
@@ -69,6 +81,20 @@ public class MybankCreditSupplychainCreditpayBuyerunsignCreateModel extends Alip
 	}
 	public void setChannelTag(String channelTag) {
 		this.channelTag = channelTag;
+	}
+
+	public String getMybkAuthSceneCode() {
+		return this.mybkAuthSceneCode;
+	}
+	public void setMybkAuthSceneCode(String mybkAuthSceneCode) {
+		this.mybkAuthSceneCode = mybkAuthSceneCode;
+	}
+
+	public String getMybkAuthToken() {
+		return this.mybkAuthToken;
+	}
+	public void setMybkAuthToken(String mybkAuthToken) {
+		this.mybkAuthToken = mybkAuthToken;
 	}
 
 	public String getRequestId() {

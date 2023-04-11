@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-06 17:31:42
+ * @since 1.0, 2023-04-10 20:16:34
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8435761142626249775L;
+	private static final long serialVersionUID = 6617734641626296153L;
 
 	/** 
 	 * 收货地址
@@ -43,16 +43,16 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	private DeliveryDetailInfoVO deliveryDetail;
 
 	/** 
-	 * 订单类型：0，普通单，1，二级商户单
+	 * 订单类型
 	 */
-	@ApiField("fund_type")
-	private Long fundType;
+	@ApiField("merchant_biz_type")
+	private String merchantBizType;
 
 	/** 
-	 * 用户的openid
+	 * 用户openId
 	 */
-	@ApiField("openid")
-	private String openid;
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 订单详细数据
@@ -61,7 +61,7 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	private OrderDetailInfoVO orderDetail;
 
 	/** 
-	 * 商家自定义订单ID(字符集包括大小写字幕数字，长度小于128个字符）
+	 * 商家自定义订单ID(字符仅支持下划线字母数字，长度小于128个字符）
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
@@ -76,7 +76,7 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 * 确认收货时间，秒级时间戳，fund_type = 1且确认收货之后存在
 	 */
 	@ApiField("receive_time")
-	private Long receiveTime;
+	private String receiveTime;
 
 	/** 
 	 * 退款信息
@@ -85,16 +85,16 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	private RefundInfoVO refundInfo;
 
 	/** 
-	 * 下单场景值
-	 */
-	@ApiField("scene")
-	private String scene;
-
-	/** 
 	 * 订单状态
 	 */
 	@ApiField("status")
-	private Long status;
+	private String status;
+
+	/** 
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public void setAddressInfo(AddressInfoVO addressInfo) {
 		this.addressInfo = addressInfo;
@@ -124,18 +124,18 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 		return this.deliveryDetail;
 	}
 
-	public void setFundType(Long fundType) {
-		this.fundType = fundType;
+	public void setMerchantBizType(String merchantBizType) {
+		this.merchantBizType = merchantBizType;
 	}
-	public Long getFundType( ) {
-		return this.fundType;
+	public String getMerchantBizType( ) {
+		return this.merchantBizType;
 	}
 
-	public void setOpenid(String openid) {
-		this.openid = openid;
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
-	public String getOpenid( ) {
-		return this.openid;
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrderDetail(OrderDetailInfoVO orderDetail) {
@@ -159,10 +159,10 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 		return this.path;
 	}
 
-	public void setReceiveTime(Long receiveTime) {
+	public void setReceiveTime(String receiveTime) {
 		this.receiveTime = receiveTime;
 	}
-	public Long getReceiveTime( ) {
+	public String getReceiveTime( ) {
 		return this.receiveTime;
 	}
 
@@ -173,18 +173,18 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 		return this.refundInfo;
 	}
 
-	public void setScene(String scene) {
-		this.scene = scene;
-	}
-	public String getScene( ) {
-		return this.scene;
-	}
-
-	public void setStatus(Long status) {
+	public void setStatus(String status) {
 		this.status = status;
 	}
-	public Long getStatus( ) {
+	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public String getUserId( ) {
+		return this.userId;
 	}
 
 }

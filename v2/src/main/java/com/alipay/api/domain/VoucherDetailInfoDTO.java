@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券明细
  *
  * @author auto create
- * @since 1.0, 2023-04-06 20:36:35
+ * @since 1.0, 2023-04-10 18:04:03
  */
 public class VoucherDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6531613552121656514L;
+	private static final long serialVersionUID = 6119963211647867159L;
 
 	/**
 	 * 优惠券金额
@@ -47,7 +47,7 @@ public class VoucherDetailInfoDTO extends AlipayObject {
 	private String name;
 
 	/**
-	 * 其他出资，非交易本商家
+	 * 其他出资，非交易商家
 	 */
 	@ApiField("other_contribute")
 	private String otherContribute;
@@ -66,7 +66,7 @@ public class VoucherDetailInfoDTO extends AlipayObject {
 	private String purchaseAntContribute;
 
 	/**
-	 * 购买该张券的资金中买家自已出资的部分
+	 * 购买该张券的资金中买家自己出资的部分
 	 */
 	@ApiField("purchase_buyer_contribute")
 	private String purchaseBuyerContribute;

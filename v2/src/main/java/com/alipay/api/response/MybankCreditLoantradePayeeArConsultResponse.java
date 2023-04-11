@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.payee.ar.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 15:00:53
+ * @since 1.0, 2023-04-11 17:41:46
  */
 public class MybankCreditLoantradePayeeArConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8785597354488356131L;
+	private static final long serialVersionUID = 5799855854753171614L;
 
 	/** 
 	 * 是否准入
@@ -26,6 +26,12 @@ public class MybankCreditLoantradePayeeArConsultResponse extends AlipayResponse 
 	 */
 	@ApiField("admit_alipay_login_id")
 	private String admitAlipayLoginId;
+
+	/** 
+	 * 准入支付宝UID-映射开放id
+	 */
+	@ApiField("admit_alipay_open_id")
+	private String admitAlipayOpenId;
 
 	/** 
 	 * 准入支付宝UID
@@ -69,6 +75,13 @@ public class MybankCreditLoantradePayeeArConsultResponse extends AlipayResponse 
 	}
 	public String getAdmitAlipayLoginId( ) {
 		return this.admitAlipayLoginId;
+	}
+
+	public void setAdmitAlipayOpenId(String admitAlipayOpenId) {
+		this.admitAlipayOpenId = admitAlipayOpenId;
+	}
+	public String getAdmitAlipayOpenId( ) {
+		return this.admitAlipayOpenId;
 	}
 
 	public void setAdmitAlipayUserId(String admitAlipayUserId) {

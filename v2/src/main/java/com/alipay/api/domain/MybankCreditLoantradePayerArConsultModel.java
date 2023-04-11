@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付方签约状态查询
  *
  * @author auto create
- * @since 1.0, 2022-11-10 17:23:54
+ * @since 1.0, 2023-04-11 17:37:16
  */
 public class MybankCreditLoantradePayerArConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1745426734227193635L;
+	private static final long serialVersionUID = 8322945633155943124L;
 
 	/**
 	 * 签约业务场景，网商指定

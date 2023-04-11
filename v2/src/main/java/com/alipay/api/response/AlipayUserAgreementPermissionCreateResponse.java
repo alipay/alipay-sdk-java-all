@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.permission.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-07 11:49:47
+ * @since 1.0, 2023-04-07 21:11:42
  */
 public class AlipayUserAgreementPermissionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5339612315449292855L;
+	private static final long serialVersionUID = 5543946568583813915L;
 
 	/** 
 	 * 商户代扣扣款许可
@@ -31,6 +31,12 @@ public class AlipayUserAgreementPermissionCreateResponse extends AlipayResponse 
 	 */
 	@ApiField("effective_time_start")
 	private String effectiveTimeStart;
+
+	/** 
+	 * 消息是否发送成功
+	 */
+	@ApiField("is_success_send")
+	private Boolean isSuccessSend;
 
 	public void setDeductPermission(String deductPermission) {
 		this.deductPermission = deductPermission;
@@ -51,6 +57,13 @@ public class AlipayUserAgreementPermissionCreateResponse extends AlipayResponse 
 	}
 	public String getEffectiveTimeStart( ) {
 		return this.effectiveTimeStart;
+	}
+
+	public void setIsSuccessSend(Boolean isSuccessSend) {
+		this.isSuccessSend = isSuccessSend;
+	}
+	public Boolean getIsSuccessSend( ) {
+		return this.isSuccessSend;
 	}
 
 }

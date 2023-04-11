@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.offlinepay.virtualcard.send response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 17:09:25
+ * @since 1.0, 2023-04-10 15:56:45
  */
 public class AlipayCommerceTransportOfflinepayVirtualcardSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1759315623376935796L;
+	private static final long serialVersionUID = 4897295981654477648L;
 
 	/** 
 	 * 用户虚拟卡卡号
@@ -37,6 +37,12 @@ public class AlipayCommerceTransportOfflinepayVirtualcardSendResponse extends Al
 	 */
 	@ApiField("error_message")
 	private String errorMessage;
+
+	/** 
+	 * 支付宝用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 请求失败时返回的子错误码信息
@@ -76,6 +82,13 @@ public class AlipayCommerceTransportOfflinepayVirtualcardSendResponse extends Al
 	}
 	public String getErrorMessage( ) {
 		return this.errorMessage;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setSubErrorCode(String subErrorCode) {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.maptorchroute.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-07 11:51:42
+ * @since 1.0, 2023-04-11 14:58:36
  */
 public class AlipayDataMdaMaptorchrouteQueryRequest implements AlipayRequest<AlipayDataMdaMaptorchrouteQueryResponse> {
 

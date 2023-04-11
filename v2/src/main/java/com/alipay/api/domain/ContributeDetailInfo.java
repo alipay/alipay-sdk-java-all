@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 其他出资方明细
  *
  * @author auto create
- * @since 1.0, 2023-04-04 19:41:54
+ * @since 1.0, 2023-04-10 12:19:04
  */
 public class ContributeDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8525786347178714171L;
+	private static final long serialVersionUID = 4275971239383128741L;
 
 	/**
 	 * 其他出资方金额

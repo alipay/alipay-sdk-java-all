@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信用支付统一咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-12-06 10:59:06
+ * @since 1.0, 2023-04-11 17:37:14
  */
 public class MybankCreditLoantradePayAssetConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5856796795264564514L;
+	private static final long serialVersionUID = 2616826381764513666L;
 
 	/**
 	 * 支付宝合作伙伴id
@@ -40,6 +40,18 @@ public class MybankCreditLoantradePayAssetConsultModel extends AlipayObject {
 	@ApiListField("credit_asset_types")
 	@ApiField("string")
 	private List<String> creditAssetTypes;
+
+	/**
+	 * 授权场景码
+	 */
+	@ApiField("mybk_auth_scene_code")
+	private String mybkAuthSceneCode;
+
+	/**
+	 * 授权令牌
+	 */
+	@ApiField("mybk_auth_token")
+	private String mybkAuthToken;
 
 	/**
 	 * 交易订单信息，JSON数组格式的***字符串***，用于描述交易订单详情。再次强调，该字段是字符串形式，用于当做订单扩展使用。序列化整个请求的时候，这个字段一定要是字符串类型，只不过该字段产生，需要将订单List额外进行一次json序列化
@@ -103,6 +115,20 @@ public class MybankCreditLoantradePayAssetConsultModel extends AlipayObject {
 	}
 	public void setCreditAssetTypes(List<String> creditAssetTypes) {
 		this.creditAssetTypes = creditAssetTypes;
+	}
+
+	public String getMybkAuthSceneCode() {
+		return this.mybkAuthSceneCode;
+	}
+	public void setMybkAuthSceneCode(String mybkAuthSceneCode) {
+		this.mybkAuthSceneCode = mybkAuthSceneCode;
+	}
+
+	public String getMybkAuthToken() {
+		return this.mybkAuthToken;
+	}
+	public void setMybkAuthToken(String mybkAuthToken) {
+		this.mybkAuthToken = mybkAuthToken;
 	}
 
 	public String getOrderInfos() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReservationTimeUnit extends AlipayObject {
 
-	private static final long serialVersionUID = 7893199311861154362L;
+	private static final long serialVersionUID = 6574491178658445155L;
 
 	/**
 	 * 时间，格式HH:mm

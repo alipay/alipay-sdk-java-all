@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付统一签约接口
  *
  * @author auto create
- * @since 1.0, 2023-01-12 14:24:25
+ * @since 1.0, 2023-04-11 17:37:19
  */
 public class MybankCreditLoantradePayArSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2635842737943689575L;
+	private static final long serialVersionUID = 4167237789157566594L;
+
+	/**
+	 * 用户支付宝ID-映射开放id
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 用户支付宝ID
@@ -42,6 +48,12 @@ TAOBAO=淘系
 	/**
 	 * 根据站点的用户id，如果站点是淘宝或者天猫卖家，此处当填sellerId
 	 */
+	@ApiField("site_open_id")
+	private String siteOpenId;
+
+	/**
+	 * 根据站点的用户id，如果站点是淘宝或者天猫卖家，此处当填sellerId
+	 */
 	@ApiField("site_user_id")
 	private String siteUserId;
 
@@ -50,6 +62,13 @@ TAOBAO=淘系
 	 */
 	@ApiField("sub_biz_scene")
 	private String subBizScene;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;
@@ -77,6 +96,13 @@ TAOBAO=淘系
 	}
 	public void setSite(String site) {
 		this.site = site;
+	}
+
+	public String getSiteOpenId() {
+		return this.siteOpenId;
+	}
+	public void setSiteOpenId(String siteOpenId) {
+		this.siteOpenId = siteOpenId;
 	}
 
 	public String getSiteUserId() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单发货
  *
  * @author auto create
- * @since 1.0, 2023-04-06 17:31:14
+ * @since 1.0, 2023-04-10 17:07:54
  */
 public class AlipayOpenMiniOrderDeliverySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5667726626691318645L;
+	private static final long serialVersionUID = 4685635894839586512L;
 
 	/**
 	 * 快递信息，delivery_type=1时必填，订单中心限制5条
@@ -54,7 +54,7 @@ public class AlipayOpenMiniOrderDeliverySendModel extends AlipayObject {
 	private String shipDoneTime;
 
 	/**
-	 * 用户UID（与openId二选一）
+	 * 用户UID
 	 */
 	@ApiField("user_id")
 	private String userId;

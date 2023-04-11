@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单详情批量查询
  *
  * @author auto create
- * @since 1.0, 2023-04-03 14:43:02
+ * @since 1.0, 2023-04-10 13:44:19
  */
 public class AlipayCommerceEcConsumeDetailBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5593179626459141958L;
+	private static final long serialVersionUID = 5812493569813789936L;
 
 	/**
 	 * 共同账户ID，有企业ID可不传

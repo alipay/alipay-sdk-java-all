@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.mapdistribution.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 16:41:52
+ * @since 1.0, 2023-04-11 15:01:04
  */
 public class AlipayDataMdaMapdistributionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8415592177836393837L;
+	private static final long serialVersionUID = 3488723177265496823L;
 
 	/** 
 	 * 中国34个省293个地级市用户数

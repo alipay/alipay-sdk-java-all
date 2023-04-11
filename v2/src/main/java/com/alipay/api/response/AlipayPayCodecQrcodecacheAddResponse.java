@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayCodecQrcodecacheAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4356822199237993467L;
+	private static final long serialVersionUID = 2758223926495538956L;
 
 	/** 
 	 * true或者false

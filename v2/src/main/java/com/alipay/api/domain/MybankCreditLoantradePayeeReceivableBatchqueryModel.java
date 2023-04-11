@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付收方应收账款查询
  *
  * @author auto create
- * @since 1.0, 2022-04-19 19:08:18
+ * @since 1.0, 2023-04-11 17:37:21
  */
 public class MybankCreditLoantradePayeeReceivableBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1425819272116931137L;
+	private static final long serialVersionUID = 4217166738324482343L;
 
 	/**
 	 * 业务场景，由网商端指定
