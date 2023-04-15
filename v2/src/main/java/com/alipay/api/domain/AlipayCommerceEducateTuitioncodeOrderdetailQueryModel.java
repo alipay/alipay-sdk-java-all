@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学费码账单详情查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-03 15:53:15
+ * @since 1.0, 2023-04-12 10:52:11
  */
 public class AlipayCommerceEducateTuitioncodeOrderdetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1158687838859168828L;
+	private static final long serialVersionUID = 4678746636361895486L;
 
 	/**
 	 * 是否查询打款计划列表

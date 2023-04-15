@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询机构人员核身库状态
  *
  * @author auto create
- * @since 1.0, 2022-07-04 20:05:25
+ * @since 1.0, 2023-04-14 11:39:45
  */
 public class AlipayOpenIotvspUserstateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5346862186734266854L;
+	private static final long serialVersionUID = 2439732387258675323L;
 
 	/**
 	 * ISV的PID

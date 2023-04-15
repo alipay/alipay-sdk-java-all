@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专辑价格信息
  *
  * @author auto create
- * @since 1.0, 2023-03-28 10:28:46
+ * @since 1.0, 2023-04-12 20:10:14
  */
 public class AlbumPriceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4842541171469391564L;
+	private static final long serialVersionUID = 7232926746331393646L;
 
 	/**
-	 * 专辑实际待支付价格，单位元，最多两位小数。收费专辑必填。
+	 * 已废弃。营销活动实际价格填写在promo_info中的discount_price
 	 */
 	@ApiField("actual_price")
 	private String actualPrice;
@@ -26,7 +26,7 @@ public class AlbumPriceInfo extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 专辑原价（划线价），非实际需支付金额。单位元，最多两位小数。收费专辑必填。
+	 * 专辑原价。单位元，最多两位小数。收费专辑必填。
 	 */
 	@ApiField("price")
 	private String price;

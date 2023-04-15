@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncGfsettleprodInvoicetaxlossQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8471256547476123361L;
+	private static final long serialVersionUID = 7621727371282953462L;
 
 	/** 
 	 * 发票信息

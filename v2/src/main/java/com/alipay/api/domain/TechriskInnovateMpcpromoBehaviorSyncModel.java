@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户行为上报接口
  *
  * @author auto create
- * @since 1.0, 2023-04-11 16:47:43
+ * @since 1.0, 2023-04-13 20:51:49
  */
 public class TechriskInnovateMpcpromoBehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7616347617647161221L;
+	private static final long serialVersionUID = 8373733658566874977L;
 
 	/**
 	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）、cart（加购物车）、drawback（退款）、consult（咨询）等
@@ -20,7 +20,7 @@ public class TechriskInnovateMpcpromoBehaviorSyncModel extends AlipayObject {
 	private String actionType;
 
 	/**
-	 * 商家在蚂蚁创建的项目id；(apeProject/aosproject/...)
+	 * 商家在蚂蚁创建的项目id；(apeProject/aosproject/sceneId)
 	 */
 	@ApiField("biz_project_id")
 	private String bizProjectId;
@@ -96,6 +96,12 @@ public class TechriskInnovateMpcpromoBehaviorSyncModel extends AlipayObject {
 	 */
 	@ApiField("rate")
 	private String rate;
+
+	/**
+	 * 行为场景，枚举值：home（首页）、goods_detail（商详页）、search（搜索）、order_detail（订单详情）
+	 */
+	@ApiField("scene")
+	private String scene;
 
 	/**
 	 * SPM(Super Position Model)全称超级位置模型，主要用于标识行为发生的位置。SPM位置编码由A/B/C/D四段构成， 各分段分别代表 A:业务， B:页面， C:页面区块， D:区块内点位。段之间用$##$分隔，即A$##$B$##$C$##$D，spm各段建议传明文。允许某一段为空，为空时以_代替。
@@ -223,6 +229,13 @@ public class TechriskInnovateMpcpromoBehaviorSyncModel extends AlipayObject {
 	}
 	public void setRate(String rate) {
 		this.rate = rate;
+	}
+
+	public String getScene() {
+		return this.scene;
+	}
+	public void setScene(String scene) {
+		this.scene = scene;
 	}
 
 	public String getSpm() {

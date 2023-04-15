@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 交易组件订单退款接口
  *
  * @author auto create
- * @since 1.0, 2023-04-11 20:37:46
+ * @since 1.0, 2023-04-15 19:00:48
  */
 public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1812145943885869483L;
+	private static final long serialVersionUID = 4256662138174858994L;
+
+	/**
+	 * 部分商品退款信息
+	 */
+	@ApiListField("item_infos")
+	@ApiField("mini_refund_goods_info_d_t_o")
+	private List<MiniRefundGoodsInfoDTO> itemInfos;
 
 	/**
 	 * 用户open_id
@@ -56,6 +66,13 @@ public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public List<MiniRefundGoodsInfoDTO> getItemInfos() {
+		return this.itemInfos;
+	}
+	public void setItemInfos(List<MiniRefundGoodsInfoDTO> itemInfos) {
+		this.itemInfos = itemInfos;
+	}
 
 	public String getOpenId() {
 		return this.openId;

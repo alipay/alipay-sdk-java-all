@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消耗资产查询
  *
  * @author auto create
- * @since 1.0, 2023-03-10 22:04:42
+ * @since 1.0, 2023-04-13 09:59:33
  */
 public class AlipayEbppInvoiceExpensecontrolCostassertQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1698694569339181869L;
+	private static final long serialVersionUID = 5229332136875555691L;
 
 	/**
 	 * 企业共同账户id，和授权签约协议号共同使用。

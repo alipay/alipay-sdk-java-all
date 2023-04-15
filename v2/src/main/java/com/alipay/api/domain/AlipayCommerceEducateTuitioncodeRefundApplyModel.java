@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 学费码退款申请
  *
  * @author auto create
- * @since 1.0, 2022-11-03 15:55:14
+ * @since 1.0, 2023-04-12 10:50:18
  */
 public class AlipayCommerceEducateTuitioncodeRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5364511729234737887L;
+	private static final long serialVersionUID = 4339919635617529317L;
 
 	/**
 	 * 订单支付人支付宝编号

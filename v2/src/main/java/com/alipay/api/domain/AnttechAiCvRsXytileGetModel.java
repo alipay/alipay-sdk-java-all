@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * max遥感工作台瓦片服务
  *
  * @author auto create
- * @since 1.0, 2022-10-11 20:58:06
+ * @since 1.0, 2023-04-13 17:40:57
  */
 public class AnttechAiCvRsXytileGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4487222515767198412L;
+	private static final long serialVersionUID = 6361436531988831137L;
+
+	/**
+	 * 用于描述不同的业务场景
+	 */
+	@ApiField("biz_name")
+	private String bizName;
 
 	/**
 	 * 101：玉米
@@ -34,6 +40,20 @@ public class AnttechAiCvRsXytileGetModel extends AlipayObject {
 	private String index;
 
 	/**
+	 * 101：玉米
+115：大豆
+147：水稻
+	 */
+	@ApiField("object_type")
+	private String objectType;
+
+	/**
+	 * 查询参数
+	 */
+	@ApiField("query_params")
+	private String queryParams;
+
+	/**
 	 * 瓦片x
 	 */
 	@ApiField("x")
@@ -50,6 +70,13 @@ public class AnttechAiCvRsXytileGetModel extends AlipayObject {
 	 */
 	@ApiField("z")
 	private String z;
+
+	public String getBizName() {
+		return this.bizName;
+	}
+	public void setBizName(String bizName) {
+		this.bizName = bizName;
+	}
 
 	public String getCrowType() {
 		return this.crowType;
@@ -70,6 +97,20 @@ public class AnttechAiCvRsXytileGetModel extends AlipayObject {
 	}
 	public void setIndex(String index) {
 		this.index = index;
+	}
+
+	public String getObjectType() {
+		return this.objectType;
+	}
+	public void setObjectType(String objectType) {
+		this.objectType = objectType;
+	}
+
+	public String getQueryParams() {
+		return this.queryParams;
+	}
+	public void setQueryParams(String queryParams) {
+		this.queryParams = queryParams;
 	}
 
 	public String getX() {

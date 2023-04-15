@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceYuntaskDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5689332797651773349L;
+	private static final long serialVersionUID = 3296231971228753216L;
 
 	/**
 	 * 商户pid， 代运营模式需要

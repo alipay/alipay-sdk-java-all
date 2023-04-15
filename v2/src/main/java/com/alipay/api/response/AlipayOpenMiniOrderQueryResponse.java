@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-10 20:16:34
+ * @since 1.0, 2023-04-15 19:01:47
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6617734641626296153L;
+	private static final long serialVersionUID = 1589761431481726841L;
 
 	/** 
 	 * 收货地址
@@ -83,6 +83,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_info")
 	private RefundInfoVO refundInfo;
+
+	/** 
+	 * normal：即时到账
+ extended：账期结算
+	 */
+	@ApiField("settle_type")
+	private String settleType;
 
 	/** 
 	 * 订单状态
@@ -171,6 +178,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public RefundInfoVO getRefundInfo( ) {
 		return this.refundInfo;
+	}
+
+	public void setSettleType(String settleType) {
+		this.settleType = settleType;
+	}
+	public String getSettleType( ) {
+		return this.settleType;
 	}
 
 	public void setStatus(String status) {

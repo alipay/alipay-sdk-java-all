@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发送学费码打款规则
  *
  * @author auto create
- * @since 1.0, 2021-10-14 14:05:30
+ * @since 1.0, 2023-04-12 10:51:03
  */
 public class AlipayCommerceEducateTuitioncodePlanruleSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8545718934174763687L;
+	private static final long serialVersionUID = 2873557546142549137L;
 
 	/**
 	 * 分配类型：

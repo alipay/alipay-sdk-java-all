@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CropsPlantingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5697936885231773259L;
+	private static final long serialVersionUID = 6381197341344134138L;
 
 	/**
 	 * 数据实际日期，YYYYMMDD

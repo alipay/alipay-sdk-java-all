@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保线上支付订单查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-17 10:53:52
+ * @since 1.0, 2023-04-12 11:35:07
  */
 public class AlipayCommerceMedicalPaymentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2888663846148848631L;
+	private static final long serialVersionUID = 2632597469486378796L;
 
 	/**
 	 * 支付宝用户Id

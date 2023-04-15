@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 吱口令解码接口
  *
  * @author auto create
- * @since 1.0, 2019-04-15 11:30:02
+ * @since 1.0, 2023-04-12 14:26:02
  */
 public class AlipayMarketingSharetokenDecodeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5348292487243596243L;
+	private static final long serialVersionUID = 4667295494755586556L;
 
 	/**
 	 * 码类型，可空，默认为吱口令类型『share_code』

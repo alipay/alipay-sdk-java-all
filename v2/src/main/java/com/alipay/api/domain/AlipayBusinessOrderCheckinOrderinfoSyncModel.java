@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 酒店住中订单同步
  *
  * @author auto create
- * @since 1.0, 2023-01-06 15:54:52
+ * @since 1.0, 2023-04-14 15:10:43
  */
 public class AlipayBusinessOrderCheckinOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3469918474841611373L;
+	private static final long serialVersionUID = 6596288426973795736L;
 
 	/**
 	 * 酒店入住小程序

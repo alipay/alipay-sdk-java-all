@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2023-04-04 13:44:14
+ * @since 1.0, 2023-04-13 20:50:50
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2162242849875923362L;
+	private static final long serialVersionUID = 5479399484482168929L;
 
 	/**
 	 * 不限      UNLIMITED
@@ -147,7 +147,6 @@ CLOSED：招聘结束
 	 * 岗位是否要求应聘人有芝麻工作证。
 
 枚举值：
-MUST：必须有芝麻工作证
 RECOMMEND：优先考虑有芝麻工作证
 NO_REQ：不要求芝麻工作证
 

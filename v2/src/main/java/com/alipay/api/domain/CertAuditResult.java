@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CertAuditResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3213946742771913885L;
+	private static final long serialVersionUID = 2127273323886421165L;
 
 	/**
 	 * 官方渠道信息比对结果返回码。

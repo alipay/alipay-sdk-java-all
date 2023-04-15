@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费账单状态同步接口
  *
  * @author auto create
- * @since 1.0, 2022-11-03 10:43:15
+ * @since 1.0, 2023-04-14 10:12:27
  */
 public class AlipayEcoEduKtBillingModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2682846876181476983L;
+	private static final long serialVersionUID = 7338149449738786834L;
 
 	/**
 	 * 成功Y，失败N

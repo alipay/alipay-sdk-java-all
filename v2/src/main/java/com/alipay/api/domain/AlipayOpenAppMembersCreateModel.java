@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加小程序开发者或体验者
  *
  * @author auto create
- * @since 1.0, 2023-01-17 18:45:21
+ * @since 1.0, 2023-04-13 15:40:49
  */
 public class AlipayOpenAppMembersCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3667319556379887986L;
+	private static final long serialVersionUID = 2328637687335639853L;
 
 	/**
 	 * 支付宝登录账号。

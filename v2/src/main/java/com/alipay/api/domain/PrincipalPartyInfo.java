@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PrincipalPartyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2467794478516182847L;
+	private static final long serialVersionUID = 1188756794684855867L;
 
 	/**
 	 * 授权主体的支付宝登录号，如传递，则授权用户的登录号必须和指定的登录号匹配，否则授权流程会被阻塞

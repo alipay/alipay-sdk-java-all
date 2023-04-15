@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OperateNotifyExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5155461162975919828L;
+	private static final long serialVersionUID = 5585824812578912422L;
 
 	/**
 	 * 提前收款标识，提前收款场景下有值

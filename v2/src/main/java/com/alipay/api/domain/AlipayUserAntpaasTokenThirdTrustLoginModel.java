@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请第三方app与蚂蚁通行证免登token
  *
  * @author auto create
- * @since 1.0, 2020-07-02 19:50:32
+ * @since 1.0, 2023-04-12 17:42:57
  */
 public class AlipayUserAntpaasTokenThirdTrustLoginModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8686157347343997284L;
+	private static final long serialVersionUID = 5294544838952353526L;
 
 	/**
 	 * 登录的目标业务，目前已经分配的有autoins，代表车险业务

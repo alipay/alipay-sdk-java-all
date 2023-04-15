@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 价格信息模型
  *
  * @author auto create
- * @since 1.0, 2023-04-06 20:36:46
+ * @since 1.0, 2023-04-15 19:01:02
  */
 public class PriceInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1794912624377249618L;
+	private static final long serialVersionUID = 3364542484753765568L;
 
 	/**
 	 * 其他费用，单位为元
@@ -36,6 +36,12 @@ public class PriceInfoVO extends AlipayObject {
 	 */
 	@ApiField("order_price")
 	private String orderPrice;
+
+	/**
+	 * 实收金额，商家在交易中实际收到的款项，单位为人民币（元），支持小数点后两位
+	 */
+	@ApiField("receipt_amount")
+	private String receiptAmount;
 
 	public String getAdditionalPrice() {
 		return this.additionalPrice;
@@ -63,6 +69,13 @@ public class PriceInfoVO extends AlipayObject {
 	}
 	public void setOrderPrice(String orderPrice) {
 		this.orderPrice = orderPrice;
+	}
+
+	public String getReceiptAmount() {
+		return this.receiptAmount;
+	}
+	public void setReceiptAmount(String receiptAmount) {
+		this.receiptAmount = receiptAmount;
 	}
 
 }

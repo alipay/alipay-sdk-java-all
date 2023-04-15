@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransDishonorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3636863284383916944L;
+	private static final long serialVersionUID = 5768934211272728625L;
 
 	/** 
 	 * 退票订单详细列表：可能包含多个退票订单信息。如items值为0,则此参数不返回。

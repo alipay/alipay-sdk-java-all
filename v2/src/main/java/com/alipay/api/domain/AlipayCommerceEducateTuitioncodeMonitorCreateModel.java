@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建监管专户
  *
  * @author auto create
- * @since 1.0, 2022-01-18 15:24:55
+ * @since 1.0, 2023-04-12 10:50:45
  */
 public class AlipayCommerceEducateTuitioncodeMonitorCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6384337715559918143L;
+	private static final long serialVersionUID = 2536727576787474268L;
 
 	/**
 	 * 银行类型(浙江网商：ZJWS)

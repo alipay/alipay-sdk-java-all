@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.filetask.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:51:42
+ * @since 1.0, 2023-04-15 14:01:47
  */
 public class AlipayMerchantIndirectFiletaskSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8644363595377236487L;
+	private static final long serialVersionUID = 7265624216628326324L;
 
 	/** 
 	 * 数据文件任务提交后，为任务文件分配的编号

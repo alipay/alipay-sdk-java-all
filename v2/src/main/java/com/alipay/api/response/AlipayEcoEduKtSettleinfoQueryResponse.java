@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.edu.kt.settleinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:00:45
+ * @since 1.0, 2023-04-14 10:13:32
  */
 public class AlipayEcoEduKtSettleinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7659959889231652125L;
+	private static final long serialVersionUID = 7459937643118146359L;
 
 	/** 
 	 * 账户类型

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝搜索码发放接口
  *
  * @author auto create
- * @since 1.0, 2019-01-04 17:40:22
+ * @since 1.0, 2023-04-12 14:28:30
  */
 public class AlipayMarketingSearchcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1292978398451848758L;
+	private static final long serialVersionUID = 8565871661835337666L;
 
 	/**
 	 * 业务标识，类似于业务主键，诸如pid、uid、门店id

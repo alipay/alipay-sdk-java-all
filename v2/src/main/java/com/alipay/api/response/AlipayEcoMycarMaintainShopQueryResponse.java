@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarMaintainShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6491873511234512181L;
+	private static final long serialVersionUID = 2312564712883682146L;
 
 	/** 
 	 * 门店详细地址，地址字符长度在4-50个字符，注：不含省市区。门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层，“四川北路1552号欢乐广场1楼”

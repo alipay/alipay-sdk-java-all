@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserMpointPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3799195474952725871L;
+	private static final long serialVersionUID = 2367195316339458156L;
 
 	
 

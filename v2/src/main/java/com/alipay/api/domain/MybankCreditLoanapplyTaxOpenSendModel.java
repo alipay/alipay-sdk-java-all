@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoanapplyTaxOpenSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5883813374838357226L;
+	private static final long serialVersionUID = 8797778156678735188L;
 
 	/**
 	 * 此场景固定使用TAX_APPLET_AUTH_NOTICE

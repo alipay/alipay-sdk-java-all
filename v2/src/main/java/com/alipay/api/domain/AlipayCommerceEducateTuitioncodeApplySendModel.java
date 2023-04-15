@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学费码申请
  *
  * @author auto create
- * @since 1.0, 2022-01-18 16:06:30
+ * @since 1.0, 2023-04-12 10:52:29
  */
 public class AlipayCommerceEducateTuitioncodeApplySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6699143316593736557L;
+	private static final long serialVersionUID = 7516717419745111954L;
 
 	/**
 	 * 投诉地址

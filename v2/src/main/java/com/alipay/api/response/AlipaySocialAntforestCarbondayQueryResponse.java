@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntforestCarbondayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4322626427231932459L;
+	private static final long serialVersionUID = 7263847526167351334L;
 
 	/** 
 	 * 日账单数据

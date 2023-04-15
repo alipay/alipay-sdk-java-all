@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.signstatus.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:59:56
+ * @since 1.0, 2023-04-12 17:08:56
  */
 public class AlipayOpenAgentSignstatusQueryRequest implements AlipayRequest<AlipayOpenAgentSignstatusQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTaxbillSignUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4121513453216617556L;
+	private static final long serialVersionUID = 1557593657578928818L;
 
 	/**
 	 * 场景码，固定值：SIGN

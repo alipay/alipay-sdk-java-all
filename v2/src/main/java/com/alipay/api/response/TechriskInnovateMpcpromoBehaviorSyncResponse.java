@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: techrisk.innovate.mpcpromo.behavior.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-11 16:51:45
+ * @since 1.0, 2023-04-13 22:31:47
  */
 public class TechriskInnovateMpcpromoBehaviorSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1721128191568539749L;
+	private static final long serialVersionUID = 7695738123371389537L;
 
 	/** 
 	 * 请求的traceid，用于排查问题

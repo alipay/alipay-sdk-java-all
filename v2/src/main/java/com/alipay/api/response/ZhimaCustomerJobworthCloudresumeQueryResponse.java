@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.cloudresume.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:28:18
+ * @since 1.0, 2023-04-12 14:12:47
  */
 public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1531586579871829235L;
+	private static final long serialVersionUID = 1656759562469253923L;
 
 	/** 
 	 * 出身日期

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.sharetoken.decode request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:09:37
+ * @since 1.0, 2023-04-12 14:26:02
  */
 public class AlipayMarketingSharetokenDecodeRequest implements AlipayRequest<AlipayMarketingSharetokenDecodeResponse> {
 
