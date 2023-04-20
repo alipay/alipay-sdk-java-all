@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoLogisticsExpressNonserviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8442333614718154841L;
+	private static final long serialVersionUID = 6619943354785563861L;
 
 	/** 
 	 * 非服务区区域代码列表

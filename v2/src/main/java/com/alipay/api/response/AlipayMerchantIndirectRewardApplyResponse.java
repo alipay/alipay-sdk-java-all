@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.reward.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-04 13:46:43
+ * @since 1.0, 2023-04-18 20:46:56
  */
 public class AlipayMerchantIndirectRewardApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1262121321686416799L;
+	private static final long serialVersionUID = 1137336696292532877L;
 
 	/** 
 	 * 权益发放状态。领奖审批结果，平台会对提交信息进行校验，并返回判断结果

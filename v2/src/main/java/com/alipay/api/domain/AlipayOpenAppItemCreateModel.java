@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品创建接口
  *
  * @author auto create
- * @since 1.0, 2023-03-31 11:34:32
+ * @since 1.0, 2023-04-17 22:39:50
  */
 public class AlipayOpenAppItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1495993272152519376L;
+	private static final long serialVersionUID = 5266991922834466446L;
 
 	/**
 	 * 商品售卖属性
@@ -54,13 +54,14 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	private String directPath;
 
 	/**
-	 * 商品主图的文件id，图片宽度及宽高比，建议值：图片宽度必须大于 750px，宽高比建议 4:3 - 1:1 之间。文件id通过alipay.open.file.upload上传资源获取
+	 * 商品主图的文件id，图片宽高为750px*750px，宽高比1:1，500kb以内。
+支持jpg、jpeg、png格式的图片。文件id通过alipay.open.file.upload上传资源获取
 	 */
 	@ApiField("head_img")
 	private String headImg;
 
 	/**
-	 * 详情图的文件id列表，不超过 3 个图片，图片宽度及宽高比，建议值：图片宽度必须大于 750px，宽高比建议 4:3 - 1:1 之间。文件id通过alipay.open.file.upload上传资源获取
+	 * 商品图片的文件id列表，不超过 3 个图片，用于商品主图的补充。图片支持jpg、jpeg、png格式，宽度及宽高比为 1:1 ，750px*750px。文件id通过alipay.open.file.upload上传资源获取
 	 */
 	@ApiListField("image_list")
 	@ApiField("string")

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-15 19:01:47
+ * @since 1.0, 2023-04-19 16:07:16
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1589761431481726841L;
+	private static final long serialVersionUID = 5752416327421359889L;
 
 	/** 
 	 * 收货地址
@@ -96,6 +96,12 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 支付单号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	/** 
 	 * 蚂蚁统一会员ID
@@ -192,6 +198,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
+	}
+	public String getTradeNo( ) {
+		return this.tradeNo;
 	}
 
 	public void setUserId(String userId) {

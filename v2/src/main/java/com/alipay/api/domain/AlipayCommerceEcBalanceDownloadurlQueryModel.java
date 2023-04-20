@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对账单文件下载接口
  *
  * @author auto create
- * @since 1.0, 2023-04-10 13:44:52
+ * @since 1.0, 2023-04-19 16:13:38
  */
 public class AlipayCommerceEcBalanceDownloadurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1798853131444146959L;
+	private static final long serialVersionUID = 5376976557513373824L;
 
 	/**
 	 * 共同账户ID，没有企业ID可以用此ID查询

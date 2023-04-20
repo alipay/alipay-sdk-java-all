@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同一批次下未归集成功的发票
  *
  * @author auto create
- * @since 1.0, 2022-06-22 09:56:31
+ * @since 1.0, 2023-04-19 16:46:28
  */
 public class MerchantInvoiceUKDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3114677337476534651L;
+	private static final long serialVersionUID = 5467118293249415467L;
 
 	/**
 	 * 发票代码

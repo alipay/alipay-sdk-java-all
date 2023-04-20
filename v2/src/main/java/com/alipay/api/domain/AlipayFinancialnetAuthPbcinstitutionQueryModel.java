@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联行号关联顶级机构查询
  *
  * @author auto create
- * @since 1.0, 2023-03-30 20:14:14
+ * @since 1.0, 2023-04-17 16:53:00
  */
 public class AlipayFinancialnetAuthPbcinstitutionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3591198161833817467L;
+	private static final long serialVersionUID = 2399269994921849872L;
 
 	/**
 	 * 机构名称

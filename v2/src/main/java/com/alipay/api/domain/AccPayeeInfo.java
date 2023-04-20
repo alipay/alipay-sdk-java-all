@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发到账户收款方模型
  *
  * @author auto create
- * @since 1.0, 2020-12-22 15:48:25
+ * @since 1.0, 2023-04-17 19:49:01
  */
 public class AccPayeeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4198462652769186161L;
+	private static final long serialVersionUID = 1452775533297921177L;
 
 	/**
 	 * 收款方电子钱包账号。

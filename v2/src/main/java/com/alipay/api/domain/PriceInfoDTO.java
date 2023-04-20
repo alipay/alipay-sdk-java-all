@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 价格详情信息模型
  *
  * @author auto create
- * @since 1.0, 2023-03-29 15:59:29
+ * @since 1.0, 2023-04-16 16:07:57
  */
 public class PriceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3724925364349754857L;
+	private static final long serialVersionUID = 3159999671492669919L;
 
 	/**
-	 * 不可折扣金额
+	 * 附加金额
 	 */
 	@ApiField("additional_price")
 	private String additionalPrice;
 
 	/**
-	 * 可打折金额
+	 * 商家优惠金额
 	 */
 	@ApiField("discounted_price")
 	private String discountedPrice;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业账单批量分页查询
  *
  * @author auto create
- * @since 1.0, 2023-04-10 13:42:23
+ * @since 1.0, 2023-04-19 16:15:16
  */
 public class AlipayCommerceEcJointaccountbillDetailBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6341334621279727132L;
+	private static final long serialVersionUID = 8333914914762133937L;
 
 	/**
 	 * 业务场景。不传默认为ISV_DEFAULT

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 泛金机构关键词识别
  *
  * @author auto create
- * @since 1.0, 2022-05-06 14:44:50
+ * @since 1.0, 2023-04-17 20:21:15
  */
 public class AlipayFinancialnetAuthKeywordIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2344283527912756329L;
+	private static final long serialVersionUID = 5461523429757521693L;
 
 	/**
 	 * 机构名称

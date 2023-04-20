@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连营销活动奖品申领
  *
  * @author auto create
- * @since 1.0, 2023-04-04 13:43:46
+ * @since 1.0, 2023-04-18 20:46:51
  */
 public class AlipayMerchantIndirectRewardApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8829617424786311293L;
+	private static final long serialVersionUID = 7322762337588461822L;
 
 	/**
 	 * 业务场景编码，用以区分不同的业务场景

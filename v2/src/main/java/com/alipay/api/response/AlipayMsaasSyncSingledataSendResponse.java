@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.sync.singledata.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-12 21:00:19
+ * @since 1.0, 2023-04-17 15:31:45
  */
 public class AlipayMsaasSyncSingledataSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5162492646967995245L;
+	private static final long serialVersionUID = 3746274393375984337L;
 
 	/** 
 	 * SYNC内部业务数据ID

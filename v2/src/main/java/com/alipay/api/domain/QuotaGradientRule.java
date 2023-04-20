@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QuotaGradientRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1484849534127424889L;
+	private static final long serialVersionUID = 4714755442661772515L;
 
 	/**
 	 * 芝麻分350-400限额

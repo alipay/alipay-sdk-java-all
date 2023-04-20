@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.trusteeship.account.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:36:44
+ * @since 1.0, 2023-04-17 17:21:17
  */
 public class AlipayFundTransTrusteeshipAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7848881627827586974L;
+	private static final long serialVersionUID = 8458617322715522917L;
 
 	/** 
 	 * 开通的托管子户账号

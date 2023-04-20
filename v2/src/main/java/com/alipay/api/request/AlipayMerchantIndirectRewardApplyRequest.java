@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.reward.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-04-04 13:46:43
+ * @since 1.0, 2023-04-18 20:46:56
  */
 public class AlipayMerchantIndirectRewardApplyRequest implements AlipayRequest<AlipayMerchantIndirectRewardApplyResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MpPrizeInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3165579358694999953L;
+	private static final long serialVersionUID = 5176467878287883481L;
 
 	/**
 	 * 凭证id，通过alipay.marketing.campaign.cert.create 接口创建的凭证id，开发者可以根据此凭证处理自己的业务逻辑，如给用户发放自定义优惠券等；

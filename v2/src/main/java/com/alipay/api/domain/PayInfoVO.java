@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付信息模型
  *
  * @author auto create
- * @since 1.0, 2023-04-15 20:01:20
+ * @since 1.0, 2023-04-16 15:55:00
  */
 public class PayInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4476963817793767448L;
+	private static final long serialVersionUID = 8117419552773398583L;
+
+	/**
+	 * 支付渠道列表
+	 */
+	@ApiListField("pay_channels")
+	@ApiField("string")
+	private List<String> payChannels;
 
 	/**
 	 * 付款时间，yyyy-MM-dd HH:mm:ss
@@ -34,6 +41,13 @@ public class PayInfoVO extends AlipayObject {
 	@ApiListField("voucher_detail_list")
 	@ApiField("voucher_detail_info_d_t_o")
 	private List<VoucherDetailInfoDTO> voucherDetailList;
+
+	public List<String> getPayChannels() {
+		return this.payChannels;
+	}
+	public void setPayChannels(List<String> payChannels) {
+		this.payChannels = payChannels;
+	}
 
 	public String getPayTime() {
 		return this.payTime;

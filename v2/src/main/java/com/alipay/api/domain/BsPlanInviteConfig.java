@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联营-计划-邀约配置
  *
  * @author auto create
- * @since 1.0, 2023-04-11 17:16:52
+ * @since 1.0, 2023-04-17 20:20:44
  */
 public class BsPlanInviteConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2332397158363517338L;
+	private static final long serialVersionUID = 5234627482214595767L;
 
 	/**
 	 * 计划报名、邀约结束时间

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部事件同步
  *
  * @author auto create
- * @since 1.0, 2018-03-08 16:41:54
+ * @since 1.0, 2023-04-19 20:30:47
  */
 public class AlipayOpenDataItemSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3195791229367613623L;
+	private static final long serialVersionUID = 7271661397535561217L;
 
 	/**
 	 * 变更事件类型

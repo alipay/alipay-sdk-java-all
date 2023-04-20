@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 景区内外域映射关系查询
  *
  * @author auto create
- * @since 1.0, 2021-06-10 19:30:24
+ * @since 1.0, 2023-04-17 11:56:00
  */
 public class AlipayCommerceDataScenicMappingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5837271118832319641L;
+	private static final long serialVersionUID = 1546951491313793246L;
 
 	/**
 	 * 景区审核信息查询请求。 集合长度不能超过200

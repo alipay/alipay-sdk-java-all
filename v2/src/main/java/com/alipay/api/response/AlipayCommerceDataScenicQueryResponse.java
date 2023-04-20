@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.data.scenic.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:31:08
+ * @since 1.0, 2023-04-17 11:55:02
  */
 public class AlipayCommerceDataScenicQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4643717189953341144L;
+	private static final long serialVersionUID = 2744994257367123472L;
 
 	/** 
 	 * 景区分页信息

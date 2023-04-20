@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 物料配送指令对象, 包括物料配送的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 数量, 收货人姓名,联系人电话,收货人地址等.
+ * 配送指令增加正向业务场景
  *
  * @author auto create
- * @since 1.0, 2022-11-28 16:03:26
+ * @since 1.0, 2023-04-17 16:50:00
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2837823691884582383L;
+	private static final long serialVersionUID = 3574924514463327252L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -55,6 +55,12 @@ yyyy-MM-dd HH：mm:ss
 	 */
 	@ApiField("biz_line")
 	private String bizLine;
+
+	/**
+	 * 参数描述对应的正向业务场景，包括默认正向以及维保对应发货单
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * 物料渠道标识
@@ -196,6 +202,12 @@ yyyy-MM-dd HH：mm:ss
 	private String printData;
 
 	/**
+	 * 指令排产优先级
+	 */
+	@ApiField("priority")
+	private String priority;
+
+	/**
 	 * 生产调拨对应的生产指令.
 	 */
 	@ApiField("produce_order_item_id")
@@ -278,6 +290,13 @@ yyyy-MM-dd HH：mm:ss
 	}
 	public void setBizLine(String bizLine) {
 		this.bizLine = bizLine;
+	}
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
 	}
 
 	public String getBizTag() {
@@ -439,6 +458,13 @@ yyyy-MM-dd HH：mm:ss
 	}
 	public void setPrintData(String printData) {
 		this.printData = printData;
+	}
+
+	public String getPriority() {
+		return this.priority;
+	}
+	public void setPriority(String priority) {
+		this.priority = priority;
 	}
 
 	public String getProduceOrderItemId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 搜索直达列表查询
  *
  * @author auto create
- * @since 1.0, 2023-04-06 10:25:59
+ * @since 1.0, 2023-04-17 19:14:15
  */
 public class AlipayOpenSearchBoxBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7389673149772628929L;
+	private static final long serialVersionUID = 7421848771364718468L;
 
 	/**
 	 * 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。

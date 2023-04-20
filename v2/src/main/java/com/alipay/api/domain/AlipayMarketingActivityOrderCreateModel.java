@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家营销购买下单接口
  *
  * @author auto create
- * @since 1.0, 2023-04-14 15:23:39
+ * @since 1.0, 2023-04-20 01:08:49
  */
 public class AlipayMarketingActivityOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2741175948634288496L;
+	private static final long serialVersionUID = 6879571824616344452L;
 
 	/**
 	 * 购买者的支付宝uid
@@ -34,6 +34,12 @@ public class AlipayMarketingActivityOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("ch_info")
 	private String chInfo;
+
+	/**
+	 * 公域跳转私域时小程序预埋的官方渠道信息。获取方式：小程序被唤起后，统一通过启动参数referrerInfo.extraData的值内部获取miniTraceInfo。使用场景：在商家小程序售卖商品需要使用平台的渠道专享优惠时需要传入。使用此字段请咨询官方小二，暂不全量开放。
+	 */
+	@ApiField("mini_trace_info")
+	private String miniTraceInfo;
 
 	/**
 	 * 外部业务订单号。
@@ -94,6 +100,13 @@ sale_activity_info_list中所有商品单价*数量的总和。
 	}
 	public void setChInfo(String chInfo) {
 		this.chInfo = chInfo;
+	}
+
+	public String getMiniTraceInfo() {
+		return this.miniTraceInfo;
+	}
+	public void setMiniTraceInfo(String miniTraceInfo) {
+		this.miniTraceInfo = miniTraceInfo;
 	}
 
 	public String getOutOrderNo() {

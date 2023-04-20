@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联营-计划-品牌信息
  *
  * @author auto create
- * @since 1.0, 2023-04-11 17:16:52
+ * @since 1.0, 2023-04-17 20:20:44
  */
 public class BsPlanBrandInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7472125587234194432L;
+	private static final long serialVersionUID = 3537421579213247962L;
 
 	/**
 	 * 品牌id

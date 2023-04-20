@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundAccountbookCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6819361559274715231L;
+	private static final long serialVersionUID = 5299585824642283874L;
 
 	/** 
 	 * 注销的资金记账本id，注销成功时返回

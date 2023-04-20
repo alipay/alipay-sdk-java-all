@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步数据到支付宝等APP
  *
  * @author auto create
- * @since 1.0, 2022-11-15 19:58:45
+ * @since 1.0, 2023-04-17 15:30:50
  */
 public class AlipayMsaasSyncSingledataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1879165972834918413L;
+	private static final long serialVersionUID = 4755158198566516827L;
 
 	/**
 	 * 支持的最大客户端app版本号
@@ -64,10 +64,16 @@ public class AlipayMsaasSyncSingledataSendModel extends AlipayObject {
 	private Boolean immediateSync;
 
 	/**
-	 * 根据申请bizType决定，用户维度业务填写userId, 设备维度填写utdid
+	 * 根据申请bizType决定，用户维度业务不要填该字段，请使用open_id字段, 设备维度请再该字段里填写utdid
 	 */
 	@ApiField("link_token")
 	private String linkToken;
+
+	/**
+	 * 开放平台open ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 指定接收数据的客户端os类型
@@ -160,6 +166,13 @@ public class AlipayMsaasSyncSingledataSendModel extends AlipayObject {
 	}
 	public void setLinkToken(String linkToken) {
 		this.linkToken = linkToken;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOsType() {

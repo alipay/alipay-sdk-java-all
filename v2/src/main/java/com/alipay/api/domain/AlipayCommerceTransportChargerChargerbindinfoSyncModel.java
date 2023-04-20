@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportChargerChargerbindinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1845838155315517499L;
+	private static final long serialVersionUID = 1536152337321739542L;
 
 	/**
 	 * 绑定充电桩二维码值，用户扫码绑桩扫描的二维码

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连营销任务领取
  *
  * @author auto create
- * @since 1.0, 2022-11-24 15:18:48
+ * @since 1.0, 2023-04-18 21:18:51
  */
 public class AlipayMerchantIndirectPromotaskTakeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8419236294433533717L;
+	private static final long serialVersionUID = 6358389475564674386L;
 
 	/**
 	 * 业务场景编码，接入时参考业务接入文档由支付宝侧分配。

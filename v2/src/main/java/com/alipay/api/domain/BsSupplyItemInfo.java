@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联营-供给-权益商品信息
  *
  * @author auto create
- * @since 1.0, 2023-04-11 17:16:52
+ * @since 1.0, 2023-04-17 20:20:44
  */
 public class BsSupplyItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2273652391668587313L;
+	private static final long serialVersionUID = 5418838121329242442L;
 
 	/**
 	 * 权益商品方面图

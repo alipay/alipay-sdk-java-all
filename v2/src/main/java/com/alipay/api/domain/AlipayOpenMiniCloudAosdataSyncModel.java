@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniCloudAosdataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2425573478134835874L;
+	private static final long serialVersionUID = 7335363998762417143L;
 
 	/**
 	 * 内容数据的列表（商品列表，内容列表，本地零售商品列表，通用物品列表，四个模型只能选一个传，且单次列表数量不要超过100）

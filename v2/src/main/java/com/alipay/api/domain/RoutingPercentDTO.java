@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoutingPercentDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1551988222878458274L;
+	private static final long serialVersionUID = 8319765263264929729L;
 
 	/**
 	 * 结束点差，闭区间

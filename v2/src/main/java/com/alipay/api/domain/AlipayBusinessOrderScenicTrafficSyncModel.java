@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 景区小交通订单回流接口
  *
  * @author auto create
- * @since 1.0, 2023-01-06 13:54:15
+ * @since 1.0, 2023-04-17 11:53:57
  */
 public class AlipayBusinessOrderScenicTrafficSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3669346447479285183L;
+	private static final long serialVersionUID = 7273499661994176677L;
 
 	/**
 	 * 订单金额

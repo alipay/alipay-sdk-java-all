@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解绑微信公众号跳转支付宝url接口
  *
  * @author auto create
- * @since 1.0, 2021-12-15 10:47:53
+ * @since 1.0, 2023-04-18 20:22:45
  */
 public class AlipayCommerceOperationIsvQrcodeUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8177572719672497922L;
+	private static final long serialVersionUID = 4622495892273366812L;
 
 	/**
 	 * 微信公众号二维码码值

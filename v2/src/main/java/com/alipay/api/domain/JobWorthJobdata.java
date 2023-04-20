@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工作证职业数据回流接口字段
  *
  * @author auto create
- * @since 1.0, 2023-04-11 11:33:50
+ * @since 1.0, 2023-04-19 16:13:46
  */
 public class JobWorthJobdata extends AlipayObject {
 
-	private static final long serialVersionUID = 3688345788735447893L;
+	private static final long serialVersionUID = 5185924584268669111L;
 
 	/**
 	 * 证书发证机构
@@ -150,6 +150,12 @@ public class JobWorthJobdata extends AlipayObject {
 	 */
 	@ApiField("month")
 	private String month;
+
+	/**
+	 * 对应类型相关接口生成
+	 */
+	@ApiField("once_token")
+	private String onceToken;
 
 	/**
 	 * 岗位对应的行业id，字段参考https://www.yuque.com/wx3dkp/gwckr4/bs03t3
@@ -412,6 +418,13 @@ public class JobWorthJobdata extends AlipayObject {
 	}
 	public void setMonth(String month) {
 		this.month = month;
+	}
+
+	public String getOnceToken() {
+		return this.onceToken;
+	}
+	public void setOnceToken(String onceToken) {
+		this.onceToken = onceToken;
 	}
 
 	public String getProfessionId() {

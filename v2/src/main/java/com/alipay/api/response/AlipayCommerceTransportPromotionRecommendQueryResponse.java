@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportPromotionRecommendQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5592772869375976239L;
+	private static final long serialVersionUID = 8827425442927633271L;
 
 	/** 
 	 * 使用优惠的门槛金额

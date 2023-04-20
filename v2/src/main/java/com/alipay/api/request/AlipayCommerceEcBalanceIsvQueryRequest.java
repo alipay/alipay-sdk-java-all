@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.balance.isv.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-10 13:45:12
+ * @since 1.0, 2023-04-19 16:13:13
  */
 public class AlipayCommerceEcBalanceIsvQueryRequest implements AlipayRequest<AlipayCommerceEcBalanceIsvQueryResponse> {
 

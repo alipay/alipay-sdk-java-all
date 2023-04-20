@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 待开票申请信息
  *
  * @author auto create
- * @since 1.0, 2022-07-14 17:43:04
+ * @since 1.0, 2023-04-19 16:46:10
  */
 public class InvoiceApplyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2216555413142584648L;
+	private static final long serialVersionUID = 1437264962813535897L;
 
 	/**
 	 * 合计金额（申请开票总金额，含税）

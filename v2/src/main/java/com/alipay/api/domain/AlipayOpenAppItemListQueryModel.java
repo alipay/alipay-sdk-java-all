@@ -10,22 +10,22 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品分页查询接口
  *
  * @author auto create
- * @since 1.0, 2023-03-31 11:34:28
+ * @since 1.0, 2023-04-18 10:22:51
  */
 public class AlipayOpenAppItemListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3329118121721324486L;
+	private static final long serialVersionUID = 5536821971157525196L;
 
 	/**
-	 * 支付宝平台侧spu 商品id 列表，最多20个。
+	 * 支付宝平台侧商品id 列表，最多20个。
 	 */
 	@ApiListField("item_id_list")
 	@ApiField("string")
 	private List<String> itemIdList;
 
 	/**
-	 * 商家侧spu 商品id 列表，最多20个。
-与platform_item_id_list二选一。如果都传，优先使用商家侧商品id。
+	 * 商家侧商品id 列表，最多20个。
+与item_id_list二选一。如果都传，优先使用商家侧商品id。
 	 */
 	@ApiListField("out_item_id_list")
 	@ApiField("string")

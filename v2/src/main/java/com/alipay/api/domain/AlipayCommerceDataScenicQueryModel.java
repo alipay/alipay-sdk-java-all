@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝景区信息获取
  *
  * @author auto create
- * @since 1.0, 2021-06-10 19:30:09
+ * @since 1.0, 2023-04-17 11:55:02
  */
 public class AlipayCommerceDataScenicQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4142773196339934654L;
+	private static final long serialVersionUID = 2132664838832464163L;
 
 	/**
 	 * 表示当前页， 不传默认第一页

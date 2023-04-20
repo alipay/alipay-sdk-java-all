@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.balance.period.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-10 13:45:21
+ * @since 1.0, 2023-04-19 16:13:03
  */
 public class AlipayCommerceEcBalancePeriodModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5824894476259468681L;
+	private static final long serialVersionUID = 3642986557778357142L;
 
 	/** 
 	 * 修改结果

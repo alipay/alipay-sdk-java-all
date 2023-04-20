@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ApprovalItinerary extends AlipayObject {
 
-	private static final long serialVersionUID = 1498569421612569716L;
+	private static final long serialVersionUID = 7554875993718144757L;
 
 	/**
 	 * 到达城市

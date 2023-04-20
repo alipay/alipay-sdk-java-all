@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连营销任务列表查询
  *
  * @author auto create
- * @since 1.0, 2023-04-06 13:41:08
+ * @since 1.0, 2023-04-17 10:35:53
  */
 public class AlipayMerchantIndirectPromotaskBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1189858344253383851L;
+	private static final long serialVersionUID = 6237737863389562992L;
 
 	/**
 	 * 平台定义的业务场景编码，用以区分不同的业务场景

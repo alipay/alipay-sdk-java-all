@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 生活圈新动态发布接口
  *
  * @author auto create
- * @since 1.0, 2022-08-26 14:21:45
+ * @since 1.0, 2023-04-19 20:31:38
  */
 public class AlipaySocialBaseMcommentNewsfeedAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1594427552423191293L;
+	private static final long serialVersionUID = 3483697927393439169L;
 
 	/**
 	 * 活动地点名称
