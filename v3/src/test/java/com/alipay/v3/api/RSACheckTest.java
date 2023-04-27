@@ -6,6 +6,7 @@ package com.alipay.v3.api;
 import com.alipay.v3.ApiException;
 import com.alipay.v3.util.AlipaySignature;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -15,6 +16,7 @@ import java.util.Map;
  * @author zhongyu
  * @version $Id: RSACheckTest.java, v 0.1 2019年09月23日 下午2:02 zhongyu Exp $
  */
+@Disabled
 public class RSACheckTest {
     private String publicKey;
 

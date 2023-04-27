@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayFundAuthOperationDetailApi.md#query) | **GET** /v3/alipay/fund/auth/operation/detail/query | 资金授权操作查询接口 |
+| [**query**](AlipayFundAuthOperationDetailApi.md#query) | **POST** /v3/alipay/fund/auth/operation/detail/query | 资金授权操作查询接口 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayFundAuthOperationDetailQueryResponseModel query(authNo, outOrderNo, operationId, outRequestNo, operationType, queryOptions)
+> AlipayFundAuthOperationDetailQueryResponseModel query(alipayFundAuthOperationDetailQueryModel)
 
 资金授权操作查询接口
 
@@ -38,14 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundAuthOperationDetailApi apiInstance = new AlipayFundAuthOperationDetailApi(defaultClient);
-    String authNo = "2014021601002000640012345678"; // String | 支付宝授权资金订单号。 与商户的授权资金订单号不能同时为空，二者都传入时，以支付宝资金授权订单号为准，该参数与支付宝授权资金操作流水号配对使用。
-    String outOrderNo = "8077735255938023"; // String | 商户的授权资金订单号。 与支付宝的授权资金订单号不能同时为空，二者都传入时，以支付宝的授权资金订单号为准，该参数与商户的授权资金操作流水号配对使用。 该值与资金冻结时 out_order_no一致。
-    String operationId = "20140216010020006400"; // String | 支付宝的授权资金操作流水号。 与商户的授权资金操作流水号不能同时为空，二者都传入时，以支付宝的授权资金操作流水号为准，该参数与支付宝授权资金订单号配对使用。
-    String outRequestNo = "20140216001001"; // String | 商户的授权资金操作流水号。 与支付宝的授权资金操作流水号不能同时为空，二者都传入时，以支付宝的授权资金操作流水号为准，该参数与商户的授权资金订单号配对使用。 查询冻结明细时，该值与发起冻结操作时传入的out_request_no一致； 查询解冻明细时，该值与发起解冻操作时传入的out_request_no一致； 查询支付明细时，该值与发起转支付操作时传入的out_trade_no一致。
-    String operationType = "FREEZE"; // String | 需要查询的授权资金操作类型。 可选值FREEZE/UNFREEZE/PAY，分别对应冻结、解冻、支付明细类型； 未传入本参数时，如果仅查询出单笔明细则直接返回，如果查询出多笔则优先返回冻结明细、无冻结明细时返回解冻明细； 当传入本参数时，则严格按照该操作类型返回对应明细
-    List<String> queryOptions = Arrays.asList(); // List<String> | 需要查询的额外信息
+    AlipayFundAuthOperationDetailQueryModel alipayFundAuthOperationDetailQueryModel = new AlipayFundAuthOperationDetailQueryModel(); // AlipayFundAuthOperationDetailQueryModel | 
     try {
-      AlipayFundAuthOperationDetailQueryResponseModel result = apiInstance.query(authNo, outOrderNo, operationId, outRequestNo, operationType, queryOptions);
+      AlipayFundAuthOperationDetailQueryResponseModel result = apiInstance.query(alipayFundAuthOperationDetailQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundAuthOperationDetailApi#query");
@@ -62,12 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **authNo** | **String**| 支付宝授权资金订单号。 与商户的授权资金订单号不能同时为空，二者都传入时，以支付宝资金授权订单号为准，该参数与支付宝授权资金操作流水号配对使用。 | [optional] |
-| **outOrderNo** | **String**| 商户的授权资金订单号。 与支付宝的授权资金订单号不能同时为空，二者都传入时，以支付宝的授权资金订单号为准，该参数与商户的授权资金操作流水号配对使用。 该值与资金冻结时 out_order_no一致。 | [optional] |
-| **operationId** | **String**| 支付宝的授权资金操作流水号。 与商户的授权资金操作流水号不能同时为空，二者都传入时，以支付宝的授权资金操作流水号为准，该参数与支付宝授权资金订单号配对使用。 | [optional] |
-| **outRequestNo** | **String**| 商户的授权资金操作流水号。 与支付宝的授权资金操作流水号不能同时为空，二者都传入时，以支付宝的授权资金操作流水号为准，该参数与商户的授权资金订单号配对使用。 查询冻结明细时，该值与发起冻结操作时传入的out_request_no一致； 查询解冻明细时，该值与发起解冻操作时传入的out_request_no一致； 查询支付明细时，该值与发起转支付操作时传入的out_trade_no一致。 | [optional] |
-| **operationType** | **String**| 需要查询的授权资金操作类型。 可选值FREEZE/UNFREEZE/PAY，分别对应冻结、解冻、支付明细类型； 未传入本参数时，如果仅查询出单笔明细则直接返回，如果查询出多笔则优先返回冻结明细、无冻结明细时返回解冻明细； 当传入本参数时，则严格按照该操作类型返回对应明细 | [optional] |
-| **queryOptions** | **List&lt;String&gt;**| 需要查询的额外信息 | [optional] |
+| **alipayFundAuthOperationDetailQueryModel** | **AlipayFundAuthOperationDetailQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -79,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

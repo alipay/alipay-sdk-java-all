@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayFundJointaccountTradeQueryResponseModel query(productCode, bizScene, memberId, accountId, agreementNo, tradeNo, platformOrderId)
+> AlipayFundJointaccountTradeQueryResponseModel query(productCode, bizScene, memberId, memberOpenId, accountId, agreementNo, tradeNo, platformOrderId)
 
 共同账户交易查询
 
@@ -41,12 +41,13 @@ public class Example {
     String productCode = "ENTERPRISE_PAY"; // String | 销售产品码
     String bizScene = "ELE_ONLINE"; // String | 业务场景
     String memberId = "208811123123"; // String | 成员ID，消费发起人
+    String memberOpenId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 消费发起人的openId
     String accountId = "208811123123"; // String | 企业账户ID
     String agreementNo = "12312312313123"; // String | 三方授权协议号
     String tradeNo = "12312313123"; // String | 支付宝交易订单号
     String platformOrderId = "781773393333012410369282"; // String | 外部平台订单号。使用该参数查询时，返回结果见trade_info_list
     try {
-      AlipayFundJointaccountTradeQueryResponseModel result = apiInstance.query(productCode, bizScene, memberId, accountId, agreementNo, tradeNo, platformOrderId);
+      AlipayFundJointaccountTradeQueryResponseModel result = apiInstance.query(productCode, bizScene, memberId, memberOpenId, accountId, agreementNo, tradeNo, platformOrderId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundJointaccountTradeApi#query");
@@ -66,6 +67,7 @@ public class Example {
 | **productCode** | **String**| 销售产品码 | [optional] |
 | **bizScene** | **String**| 业务场景 | [optional] |
 | **memberId** | **String**| 成员ID，消费发起人 | [optional] |
+| **memberOpenId** | **String**| 消费发起人的openId | [optional] |
 | **accountId** | **String**| 企业账户ID | [optional] |
 | **agreementNo** | **String**| 三方授权协议号 | [optional] |
 | **tradeNo** | **String**| 支付宝交易订单号 | [optional] |

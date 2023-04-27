@@ -113,7 +113,7 @@ public class Example {
 
     AlipayOpenSearchSubservicekeywordApi apiInstance = new AlipayOpenSearchSubservicekeywordApi(defaultClient);
     String targetAppid = "2021001112626071"; // String | 小程序id
-    String status = "ONLINE"; // String | 审核状态，服务关键词的审核状态，枚举值
+    String status = "ONLINE"; // String | 审核状态，服务关键词的审核状态，枚举值，不传该字段表示查询所有状态
     Integer pageNumber = 1; // Integer | 分页参数，分页查询时使用
     Integer pageSize = 10; // Integer | 分页参数，分页查询时使用
     try {
@@ -135,7 +135,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **targetAppid** | **String**| 小程序id | [optional] |
-| **status** | **String**| 审核状态，服务关键词的审核状态，枚举值 | [optional] |
+| **status** | **String**| 审核状态，服务关键词的审核状态，枚举值，不传该字段表示查询所有状态 | [optional] |
 | **pageNumber** | **Integer**| 分页参数，分页查询时使用 | [optional] |
 | **pageSize** | **Integer**| 分页参数，分页查询时使用 | [optional] |
 

@@ -83,7 +83,7 @@ No authorization required
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayOpenSearchAppkeywordBatchqueryResponseModel batchquery(targetAppid, pageNumber, pageSize)
+> AlipayOpenSearchAppkeywordBatchqueryResponseModel batchquery(targetAppid, status, pageNumber, pageSize)
 
 查询小程序已配置关键词
 
@@ -113,10 +113,11 @@ public class Example {
 
     AlipayOpenSearchAppkeywordApi apiInstance = new AlipayOpenSearchAppkeywordApi(defaultClient);
     String targetAppid = "2021001120654127"; // String | 小程序id
+    String status = "ONLINE"; // String | 关键词的状态，枚举值，不传该字段表示查询所有状态
     Integer pageNumber = 1; // Integer | 当前页
     Integer pageSize = 10; // Integer | 每页显示条数
     try {
-      AlipayOpenSearchAppkeywordBatchqueryResponseModel result = apiInstance.batchquery(targetAppid, pageNumber, pageSize);
+      AlipayOpenSearchAppkeywordBatchqueryResponseModel result = apiInstance.batchquery(targetAppid, status, pageNumber, pageSize);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenSearchAppkeywordApi#batchquery");
@@ -134,6 +135,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **targetAppid** | **String**| 小程序id | [optional] |
+| **status** | **String**| 关键词的状态，枚举值，不传该字段表示查询所有状态 | [optional] |
 | **pageNumber** | **Integer**| 当前页 | [optional] |
 | **pageSize** | **Integer**| 每页显示条数 | [optional] |
 

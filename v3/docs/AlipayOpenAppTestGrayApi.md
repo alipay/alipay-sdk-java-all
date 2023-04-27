@@ -5,12 +5,12 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayOpenAppTestGrayApi.md#create) | **POST** /v3/alipay/open/app/test/gray/create | openapi-oas3.0灰度 |
-| [**query**](AlipayOpenAppTestGrayApi.md#query) | **GET** /v3/alipay/open/app/test/gray/query | get |
+| [**query**](AlipayOpenAppTestGrayApi.md#query) | **GET** /v3/alipay/open/app/test/gray/query | GET方法测试 |
 
 
 <a name="create"></a>
 # **create**
-> AlipayOpenAppTestGrayCreateResponseModel create(a, b, c, alipayOpenAppTestGrayCreateModel)
+> AlipayOpenAppTestGrayCreateResponseModel create(a, oid, b, c, alipayOpenAppTestGrayCreateModel)
 
 openapi-oas3.0灰度
 
@@ -40,11 +40,12 @@ public class Example {
 
     AlipayOpenAppTestGrayApi apiInstance = new AlipayOpenAppTestGrayApi(defaultClient);
     String a = "a1"; // String | a
+    String oid = "111"; // String | 1
     String b = "b2"; // String | 生
     String c = "c1"; // String | c1
     AlipayOpenAppTestGrayCreateModel alipayOpenAppTestGrayCreateModel = new AlipayOpenAppTestGrayCreateModel(); // AlipayOpenAppTestGrayCreateModel | 
     try {
-      AlipayOpenAppTestGrayCreateResponseModel result = apiInstance.create(a, b, c, alipayOpenAppTestGrayCreateModel);
+      AlipayOpenAppTestGrayCreateResponseModel result = apiInstance.create(a, oid, b, c, alipayOpenAppTestGrayCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenAppTestGrayApi#create");
@@ -62,6 +63,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **a** | **String**| a | [optional] |
+| **oid** | **String**| 1 | [optional] |
 | **b** | **String**| 生 | [optional] |
 | **c** | **String**| c1 | [optional] |
 | **alipayOpenAppTestGrayCreateModel** | **AlipayOpenAppTestGrayCreateModel**|  | [optional] |
@@ -87,9 +89,9 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayOpenAppTestGrayQueryResponseModel query(cityId, uid, buyOpenId)
+> AlipayOpenAppTestGrayQueryResponseModel query(latitude, cityId, uid, buyOpenId)
 
-get
+GET方法测试
 
 oas get
 
@@ -116,11 +118,12 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenAppTestGrayApi apiInstance = new AlipayOpenAppTestGrayApi(defaultClient);
+    String latitude = "123"; // String | 纬度
     String cityId = "1"; // String | 1
     String uid = "1"; // String | 1
     String buyOpenId = "1"; // String | 1
     try {
-      AlipayOpenAppTestGrayQueryResponseModel result = apiInstance.query(cityId, uid, buyOpenId);
+      AlipayOpenAppTestGrayQueryResponseModel result = apiInstance.query(latitude, cityId, uid, buyOpenId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenAppTestGrayApi#query");
@@ -137,6 +140,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
+| **latitude** | **String**| 纬度 | [optional] |
 | **cityId** | **String**| 1 | [optional] |
 | **uid** | **String**| 1 | [optional] |
 | **buyOpenId** | **String**| 1 | [optional] |

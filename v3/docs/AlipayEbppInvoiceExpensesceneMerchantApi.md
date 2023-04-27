@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayEbppInvoiceExpensesceneMerchantQueryResponseModel query(accountId, agreementNo, enterpriseId, roleId, shopId, expenseType, pageNum, pageSize)
+> AlipayEbppInvoiceExpensesceneMerchantQueryResponseModel query(accountId, agreementNo, enterpriseId, roleId, pid, shopId, expenseType, pageNum, pageSize)
 
 查询企业可用商户信息
 
@@ -42,12 +42,13 @@ public class Example {
     String agreementNo = "1234"; // String | 授权签约协议号
     String enterpriseId = "2088xxx"; // String | 企业ID
     String roleId = "2088xxx"; // String | 商户ID
+    String pid = "2088xxx"; // String | 商户ID
     String shopId = "2088xxx"; // String | 门店ID
     String expenseType = "MEAL"; // String | 费用类型 MEAL - 工作餐
     Integer pageNum = 1; // Integer | 页码
     Integer pageSize = 20; // Integer | 每页行数（最大100）
     try {
-      AlipayEbppInvoiceExpensesceneMerchantQueryResponseModel result = apiInstance.query(accountId, agreementNo, enterpriseId, roleId, shopId, expenseType, pageNum, pageSize);
+      AlipayEbppInvoiceExpensesceneMerchantQueryResponseModel result = apiInstance.query(accountId, agreementNo, enterpriseId, roleId, pid, shopId, expenseType, pageNum, pageSize);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceExpensesceneMerchantApi#query");
@@ -68,6 +69,7 @@ public class Example {
 | **agreementNo** | **String**| 授权签约协议号 | [optional] |
 | **enterpriseId** | **String**| 企业ID | [optional] |
 | **roleId** | **String**| 商户ID | [optional] |
+| **pid** | **String**| 商户ID | [optional] |
 | **shopId** | **String**| 门店ID | [optional] |
 | **expenseType** | **String**| 费用类型 MEAL - 工作餐 | [optional] |
 | **pageNum** | **Integer**| 页码 | [optional] |

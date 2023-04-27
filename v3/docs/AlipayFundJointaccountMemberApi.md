@@ -226,7 +226,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayFundJointaccountMemberQueryResponseModel query(productCode, bizScene, accountId, pageNum, pageSize, userId, agreementNo)
+> AlipayFundJointaccountMemberQueryResponseModel query(productCode, bizScene, accountId, pageNum, pageSize, userId, openId, agreementNo)
 
 企业查询员工列表
 
@@ -261,9 +261,10 @@ public class Example {
     String pageNum = "1"; // String | 采用分页查询，本参数为空或0默认显示第一页。如果输入的值大于总页数，则支付宝返回最后一页数据。
     String pageSize = "1"; // String | 每页大小，不传的情况下默认20条，超过20条默认按20条查询；不足20条则按实际记录数返回
     String userId = "2088900976746215"; // String | 员工id
+    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 员工的openId
     String agreementNo = "20889009767462151111111"; // String | 授权协议号
     try {
-      AlipayFundJointaccountMemberQueryResponseModel result = apiInstance.query(productCode, bizScene, accountId, pageNum, pageSize, userId, agreementNo);
+      AlipayFundJointaccountMemberQueryResponseModel result = apiInstance.query(productCode, bizScene, accountId, pageNum, pageSize, userId, openId, agreementNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundJointaccountMemberApi#query");
@@ -286,6 +287,7 @@ public class Example {
 | **pageNum** | **String**| 采用分页查询，本参数为空或0默认显示第一页。如果输入的值大于总页数，则支付宝返回最后一页数据。 | [optional] |
 | **pageSize** | **String**| 每页大小，不传的情况下默认20条，超过20条默认按20条查询；不足20条则按实际记录数返回 | [optional] |
 | **userId** | **String**| 员工id | [optional] |
+| **openId** | **String**| 员工的openId | [optional] |
 | **agreementNo** | **String**| 授权协议号 | [optional] |
 
 ### Return type

@@ -140,7 +140,7 @@ public class GenericExecuteTest {
         request.setAppAuthToken("app_auth_token");
 
         Map<String, File> fileParams = new HashMap<>();
-        fileParams.put("app_logo", new File("src/test/resources/fixture/图片1.png"));
+        fileParams.put("app_logo", new File("src/test/resources/fixture/pic.jpg"));
         request.setFileParams(fileParams);
 
         Map<String, Object> queryParams = new HashMap<>();

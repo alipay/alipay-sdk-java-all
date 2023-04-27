@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | [**create**](AlipayTradeApi.md#create) | **POST** /v3/alipay/trade/create | 统一收单交易创建接口 |
 | [**pay**](AlipayTradeApi.md#pay) | **POST** /v3/alipay/trade/pay | 统一收单交易支付接口 |
 | [**precreate**](AlipayTradeApi.md#precreate) | **POST** /v3/alipay/trade/precreate | 统一收单线下交易预创建 |
-| [**query**](AlipayTradeApi.md#query) | **GET** /v3/alipay/trade/query | 统一收单交易查询 |
+| [**query**](AlipayTradeApi.md#query) | **POST** /v3/alipay/trade/query | 统一收单交易查询 |
 | [**refund**](AlipayTradeApi.md#refund) | **POST** /v3/alipay/trade/refund | 统一收单交易退款接口 |
 
 
@@ -370,7 +370,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayTradeQueryResponseModel query(outTradeNo, tradeNo, orgPid, queryOptions)
+> AlipayTradeQueryResponseModel query(alipayTradeQueryModel)
 
 统一收单交易查询
 
@@ -399,12 +399,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayTradeApi apiInstance = new AlipayTradeApi(defaultClient);
-    String outTradeNo = "20150320010101001"; // String | 订单支付时传入的商户订单号,和支付宝交易号不能同时为空。  trade_no,out_trade_no如果同时存在优先取trade_no
-    String tradeNo = "2014112611001004680 073956707"; // String | 支付宝交易号，和商户订单号不能同时为空
-    String orgPid = "2088101117952222"; // String | 银行间联模式下有用，其它场景请不要使用；  双联通过该参数指定需要查询的交易所属收单机构的pid;
-    List<String> queryOptions = Arrays.asList(); // List<String> | 查询选项，商户传入该参数可定制本接口同步响应额外返回的信息字段，数组格式。支持枚举如下：trade_settle_info：返回的交易结算信息，包含分账、补差等信息； fund_bill_list：交易支付使用的资金渠道； voucher_detail_list：交易支付时使用的所有优惠券信息； discount_goods_detail：交易支付所使用的单品券优惠的商品优惠信息； mdiscount_amount：商家优惠金额；
+    AlipayTradeQueryModel alipayTradeQueryModel = new AlipayTradeQueryModel(); // AlipayTradeQueryModel | 
     try {
-      AlipayTradeQueryResponseModel result = apiInstance.query(outTradeNo, tradeNo, orgPid, queryOptions);
+      AlipayTradeQueryResponseModel result = apiInstance.query(alipayTradeQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayTradeApi#query");
@@ -421,10 +418,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **outTradeNo** | **String**| 订单支付时传入的商户订单号,和支付宝交易号不能同时为空。  trade_no,out_trade_no如果同时存在优先取trade_no | [optional] |
-| **tradeNo** | **String**| 支付宝交易号，和商户订单号不能同时为空 | [optional] |
-| **orgPid** | **String**| 银行间联模式下有用，其它场景请不要使用；  双联通过该参数指定需要查询的交易所属收单机构的pid; | [optional] |
-| **queryOptions** | **List&lt;String&gt;**| 查询选项，商户传入该参数可定制本接口同步响应额外返回的信息字段，数组格式。支持枚举如下：trade_settle_info：返回的交易结算信息，包含分账、补差等信息； fund_bill_list：交易支付使用的资金渠道； voucher_detail_list：交易支付时使用的所有优惠券信息； discount_goods_detail：交易支付所使用的单品券优惠的商品优惠信息； mdiscount_amount：商家优惠金额； | [optional] |
+| **alipayTradeQueryModel** | **AlipayTradeQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -436,7 +430,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

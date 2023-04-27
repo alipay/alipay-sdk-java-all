@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**batchquery**](AlipayEbppInvoiceTaxnoApi.md#batchquery) | **GET** /v3/alipay/ebpp/invoice/taxno/batchquery | 获取指定企业的发票要素列表 |
+| [**batchquery**](AlipayEbppInvoiceTaxnoApi.md#batchquery) | **POST** /v3/alipay/ebpp/invoice/taxno/batchquery | 获取指定企业的发票要素列表 |
 
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayEbppInvoiceTaxnoBatchqueryResponseModel batchquery(authToken, taxNo, invoiceKindList, scene, startInvoiceDate, endInvoiceDate, limitSize, enableTradeOut, pageNum)
+> AlipayEbppInvoiceTaxnoBatchqueryResponseModel batchquery(authToken, alipayEbppInvoiceTaxnoBatchqueryModel)
 
 获取指定企业的发票要素列表
 
@@ -39,16 +39,9 @@ public class Example {
 
     AlipayEbppInvoiceTaxnoApi apiInstance = new AlipayEbppInvoiceTaxnoApi(defaultClient);
     String authToken = "authToken_example"; // String | 用户授权令牌
-    String taxNo = "123"; // String | 企业税号
-    List<String> invoiceKindList = Arrays.asList(); // List<String> | 查询票种列表。枚举值如下： *PLAIN：增值税电子普通发票； *SPECIAL：增值税专用发票； *PLAIN_INVOICE：增值税普通发票； *PAPER_INVOICE：增值税普通发票（卷式）； *SALSE_INVOICE：机动车销售统一发票。
-    String scene = "INVOICE_EXPENSE"; // String | 发票要素获取应用场景。<a href=\"https://opendocs.alipay.com/open/10691/bv8s88\">\"拉\"模式报销</a> 固定为 INVOICE_EXPENSE 表示发票报销。
-    String startInvoiceDate = "2017-01-11"; // String | 查询起始时间，精确到天（按开票日期查询） start_invoice_date和end_invoice_date传值要求 1.同时为空时，返回最近半年200条数据 2.必须同时为空 或 同时不为空 3.结束日期不能大于当前日期 4.开始时间和结束时间跨度不能超过6个月
-    String endInvoiceDate = "2017-07-11"; // String | 查询结束时间，精确到天（按开票日期查询） start_invoice_date和end_invoice_date传值要求 1.同时为空时，返回最近半年200条数据 2.必须同时为空 或 同时不为空 3.结束日期不能大于当前日期 4.开始时间和结束时间跨度不能超过6个月
-    Integer limitSize = 20; // Integer | 查询结果上限笔数，最大值20
-    String enableTradeOut = "true"; // String | 默认值为false。true为输出交易信息，false为不输出交易信息。
-    Integer pageNum = 1; // Integer | 当前页码，为空时默认第一页
+    AlipayEbppInvoiceTaxnoBatchqueryModel alipayEbppInvoiceTaxnoBatchqueryModel = new AlipayEbppInvoiceTaxnoBatchqueryModel(); // AlipayEbppInvoiceTaxnoBatchqueryModel | 
     try {
-      AlipayEbppInvoiceTaxnoBatchqueryResponseModel result = apiInstance.batchquery(authToken, taxNo, invoiceKindList, scene, startInvoiceDate, endInvoiceDate, limitSize, enableTradeOut, pageNum);
+      AlipayEbppInvoiceTaxnoBatchqueryResponseModel result = apiInstance.batchquery(authToken, alipayEbppInvoiceTaxnoBatchqueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceTaxnoApi#batchquery");
@@ -66,14 +59,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **authToken** | **String**| 用户授权令牌 | [optional] |
-| **taxNo** | **String**| 企业税号 | [optional] |
-| **invoiceKindList** | **List&lt;String&gt;**| 查询票种列表。枚举值如下： *PLAIN：增值税电子普通发票； *SPECIAL：增值税专用发票； *PLAIN_INVOICE：增值税普通发票； *PAPER_INVOICE：增值税普通发票（卷式）； *SALSE_INVOICE：机动车销售统一发票。 | [optional] |
-| **scene** | **String**| 发票要素获取应用场景。&lt;a href&#x3D;\&quot;https://opendocs.alipay.com/open/10691/bv8s88\&quot;&gt;\&quot;拉\&quot;模式报销&lt;/a&gt; 固定为 INVOICE_EXPENSE 表示发票报销。 | [optional] |
-| **startInvoiceDate** | **String**| 查询起始时间，精确到天（按开票日期查询） start_invoice_date和end_invoice_date传值要求 1.同时为空时，返回最近半年200条数据 2.必须同时为空 或 同时不为空 3.结束日期不能大于当前日期 4.开始时间和结束时间跨度不能超过6个月 | [optional] |
-| **endInvoiceDate** | **String**| 查询结束时间，精确到天（按开票日期查询） start_invoice_date和end_invoice_date传值要求 1.同时为空时，返回最近半年200条数据 2.必须同时为空 或 同时不为空 3.结束日期不能大于当前日期 4.开始时间和结束时间跨度不能超过6个月 | [optional] |
-| **limitSize** | **Integer**| 查询结果上限笔数，最大值20 | [optional] |
-| **enableTradeOut** | **String**| 默认值为false。true为输出交易信息，false为不输出交易信息。 | [optional] |
-| **pageNum** | **Integer**| 当前页码，为空时默认第一页 | [optional] |
+| **alipayEbppInvoiceTaxnoBatchqueryModel** | **AlipayEbppInvoiceTaxnoBatchqueryModel**|  | [optional] |
 
 ### Return type
 
@@ -85,7 +71,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

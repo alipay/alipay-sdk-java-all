@@ -4,16 +4,16 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**create**](AlipayUserAgreementPermissionApi.md#create) | **POST** /v3/alipay/user/agreement/permission/create | 支付宝协议支付许可创建接口 |
+| [**create**](AlipayUserAgreementPermissionApi.md#create) | **POST** /v3/alipay/user/agreement/permission/create | 支付宝协议支付许可创建、服务变更接口 |
 
 
 <a name="create"></a>
 # **create**
 > AlipayUserAgreementPermissionCreateResponseModel create(alipayUserAgreementPermissionCreateModel)
 
-支付宝协议支付许可创建接口
+支付宝协议支付许可创建、服务变更接口
 
-支付宝协议支付许可创建接口
+支付宝协议支付许可创建接口、服务变更发送消息提醒接口
 
 ### Example
 ```java

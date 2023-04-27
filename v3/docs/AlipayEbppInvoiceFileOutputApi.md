@@ -40,8 +40,8 @@ public class Example {
     AlipayEbppInvoiceFileOutputApi apiInstance = new AlipayEbppInvoiceFileOutputApi(defaultClient);
     String userId = "2088550000000"; // String | 发票归属用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
     String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 发票归属用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
-    String invoiceCode = "123"; // String | 发票代码  字段长度（10-12位）
-    String invoiceNo = "111"; // String | 发票号码  字段长度（8-10位）
+    String invoiceCode = "123"; // String | 发票代码 字段长度（10-12位），全电票时为空
+    String invoiceNo = "111"; // String | 发票号码 字段长度（8-10位），全电票时为20位
     String scene = "INVOICE_EXPENSE"; // String | 发票pdf文件下载应用场景。固定为 INVOICE_EXPENSE  表示发票报销。
     Boolean skipExpenseProgressSync = false; // Boolean | 是否跳过发票报销状态同步；当为true时，跳过报销状态同步校验。默认为false，需要先做报销状态同步
     try {
@@ -64,8 +64,8 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **userId** | **String**| 发票归属用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。 | [optional] |
 | **openId** | **String**| 发票归属用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。 | [optional] |
-| **invoiceCode** | **String**| 发票代码  字段长度（10-12位） | [optional] |
-| **invoiceNo** | **String**| 发票号码  字段长度（8-10位） | [optional] |
+| **invoiceCode** | **String**| 发票代码 字段长度（10-12位），全电票时为空 | [optional] |
+| **invoiceNo** | **String**| 发票号码 字段长度（8-10位），全电票时为20位 | [optional] |
 | **scene** | **String**| 发票pdf文件下载应用场景。固定为 INVOICE_EXPENSE  表示发票报销。 | [optional] |
 | **skipExpenseProgressSync** | **Boolean**| 是否跳过发票报销状态同步；当为true时，跳过报销状态同步校验。默认为false，需要先做报销状态同步 | [optional] |
 

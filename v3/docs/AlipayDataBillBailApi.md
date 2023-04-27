@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayDataBillBailQueryResponseModel query(startTime, endTime, transLogId, bailType, bizOrigNo)
+> AlipayDataBillBailQueryResponseModel query(startTime, endTime, bailType, transLogId, bizOrigNo)
 
 支付宝商家账户保证金查询
 
@@ -40,11 +40,11 @@ public class Example {
     AlipayDataBillBailApi apiInstance = new AlipayDataBillBailApi(defaultClient);
     String startTime = "2019-01-01 00:00:00"; // String | 保证金流水创建时间的起始范围
     String endTime = "2019-01-02 00:00:00"; // String | 保证金流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间
-    String transLogId = "20190101***"; // String | 保证金流水号。如果查询参数中指定流水号，则只查询流水号相关的记录
     String bailType = "TMALL_BAIL"; // String | 保证金类型，目前支持TMALL_BAIL-天猫保证金，TAOBAO_BAIL-淘宝保证金
+    String transLogId = "20190101***"; // String | 保证金流水号。如果查询参数中指定流水号，则只查询流水号相关的记录
     String bizOrigNo = "1***"; // String | 业务基础订单号。如果查询参数中指定订单号，则只查询相关的记录
     try {
-      AlipayDataBillBailQueryResponseModel result = apiInstance.query(startTime, endTime, transLogId, bailType, bizOrigNo);
+      AlipayDataBillBailQueryResponseModel result = apiInstance.query(startTime, endTime, bailType, transLogId, bizOrigNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayDataBillBailApi#query");
@@ -63,8 +63,8 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **startTime** | **String**| 保证金流水创建时间的起始范围 | [optional] |
 | **endTime** | **String**| 保证金流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间 | [optional] |
-| **transLogId** | **String**| 保证金流水号。如果查询参数中指定流水号，则只查询流水号相关的记录 | [optional] |
 | **bailType** | **String**| 保证金类型，目前支持TMALL_BAIL-天猫保证金，TAOBAO_BAIL-淘宝保证金 | [optional] |
+| **transLogId** | **String**| 保证金流水号。如果查询参数中指定流水号，则只查询流水号相关的记录 | [optional] |
 | **bizOrigNo** | **String**| 业务基础订单号。如果查询参数中指定订单号，则只查询相关的记录 | [optional] |
 
 ### Return type

@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenMiniCategoryRequireApi.md#query) | **GET** /v3/alipay/open/mini/category/require/query | 查询类目所需资质信息 |
+| [**query**](AlipayOpenMiniCategoryRequireApi.md#query) | **POST** /v3/alipay/open/mini/category/require/query | 查询类目所需资质信息 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOpenMiniCategoryRequireQueryResponseModel query(categoryCodeList)
+> AlipayOpenMiniCategoryRequireQueryResponseModel query(alipayOpenMiniCategoryRequireQueryModel)
 
 查询类目所需资质信息
 
@@ -38,9 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniCategoryRequireApi apiInstance = new AlipayOpenMiniCategoryRequireApi(defaultClient);
-    List<String> categoryCodeList = Arrays.asList(); // List<String> | 类目列表，不超过五个
+    AlipayOpenMiniCategoryRequireQueryModel alipayOpenMiniCategoryRequireQueryModel = new AlipayOpenMiniCategoryRequireQueryModel(); // AlipayOpenMiniCategoryRequireQueryModel | 
     try {
-      AlipayOpenMiniCategoryRequireQueryResponseModel result = apiInstance.query(categoryCodeList);
+      AlipayOpenMiniCategoryRequireQueryResponseModel result = apiInstance.query(alipayOpenMiniCategoryRequireQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniCategoryRequireApi#query");
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **categoryCodeList** | **List&lt;String&gt;**| 类目列表，不超过五个 | [optional] |
+| **alipayOpenMiniCategoryRequireQueryModel** | **AlipayOpenMiniCategoryRequireQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -69,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

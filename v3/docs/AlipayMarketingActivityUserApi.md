@@ -4,13 +4,13 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**batchqueryvoucher**](AlipayMarketingActivityUserApi.md#batchqueryvoucher) | **GET** /v3/alipay/marketing/activity/{activity_id}/user/batchqueryvoucher | 条件查询用户券 |
-| [**queryvoucher**](AlipayMarketingActivityUserApi.md#queryvoucher) | **GET** /v3/alipay/marketing/activity/{activity_id}/user/queryvoucher | 查询用户券详情 |
+| [**batchqueryvoucher**](AlipayMarketingActivityUserApi.md#batchqueryvoucher) | **GET** /v3/alipay/marketing/activity/ordervoucher/user/batchqueryvoucher | 条件查询用户券 |
+| [**queryvoucher**](AlipayMarketingActivityUserApi.md#queryvoucher) | **GET** /v3/alipay/marketing/activity/ordervoucher/user/voucher | 查询用户券详情 |
 
 
 <a name="batchqueryvoucher"></a>
 # **batchqueryvoucher**
-> AlipayMarketingActivityUserBatchqueryvoucherResponseModel batchqueryvoucher(activityId, authToken, userId, openId, belongMerchantId, senderMerchantId, voucherStatus, pageNum, merchantAccessMode, pageSize)
+> AlipayMarketingActivityUserBatchqueryvoucherResponseModel batchqueryvoucher(authToken, userId, openId, activityId, belongMerchantId, senderMerchantId, voucherStatus, pageNum, merchantAccessMode, pageSize)
 
 条件查询用户券
 
@@ -39,10 +39,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingActivityUserApi apiInstance = new AlipayMarketingActivityUserApi(defaultClient);
-    String activityId = "2016042700826004508401111111"; // String | 活动 id
     String authToken = "authToken_example"; // String | 用户授权令牌
     String userId = "2088512417841101"; // String | 支付宝用户 id
     String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝用户openId
+    String activityId = "2016042700826004508401111111"; // String | 活动 id
     String belongMerchantId = "2088202967380463"; // String | 券归属商户
     String senderMerchantId = "2088102161342862"; // String | 券发放商户
     String voucherStatus = "SENDED"; // String | 券状态，其中已过期状态可查询6个月内的数据
@@ -50,7 +50,7 @@ public class Example {
     String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式
     Integer pageSize = 20; // Integer | 分页查询单页数据条数
     try {
-      AlipayMarketingActivityUserBatchqueryvoucherResponseModel result = apiInstance.batchqueryvoucher(activityId, authToken, userId, openId, belongMerchantId, senderMerchantId, voucherStatus, pageNum, merchantAccessMode, pageSize);
+      AlipayMarketingActivityUserBatchqueryvoucherResponseModel result = apiInstance.batchqueryvoucher(authToken, userId, openId, activityId, belongMerchantId, senderMerchantId, voucherStatus, pageNum, merchantAccessMode, pageSize);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingActivityUserApi#batchqueryvoucher");
@@ -67,10 +67,10 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **activityId** | **String**| 活动 id | |
 | **authToken** | **String**| 用户授权令牌 | [optional] |
 | **userId** | **String**| 支付宝用户 id | [optional] |
 | **openId** | **String**| 支付宝用户openId | [optional] |
+| **activityId** | **String**| 活动 id | [optional] |
 | **belongMerchantId** | **String**| 券归属商户 | [optional] |
 | **senderMerchantId** | **String**| 券发放商户 | [optional] |
 | **voucherStatus** | **String**| 券状态，其中已过期状态可查询6个月内的数据 | [optional] |
@@ -99,7 +99,7 @@ No authorization required
 
 <a name="queryvoucher"></a>
 # **queryvoucher**
-> AlipayMarketingActivityUserQueryvoucherResponseModel queryvoucher(activityId, merchantId, userId, openId, voucherId, voucherCode, merchantAccessMode)
+> AlipayMarketingActivityUserQueryvoucherResponseModel queryvoucher(merchantId, userId, openId, activityId, voucherId, voucherCode, merchantAccessMode)
 
 查询用户券详情
 
@@ -128,15 +128,15 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingActivityUserApi apiInstance = new AlipayMarketingActivityUserApi(defaultClient);
-    String activityId = "2016042700826004508401111111"; // String | 活动 id。
     String merchantId = "2088202967380463"; // String | 商户 PID，默认为当前接口调用商户。
     String userId = "2088512417841101"; // String | 支付宝用户id
     String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝用户openId
+    String activityId = "2016042700826004508401111111"; // String | 活动 id。
     String voucherId = "2021072900073002214009F8QHR3"; // String | 用户券 id。支付宝为用户优惠券唯一分配的 id。
     String voucherCode = "ABE44"; // String | 用户领取的商家券券码。
     String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式。
     try {
-      AlipayMarketingActivityUserQueryvoucherResponseModel result = apiInstance.queryvoucher(activityId, merchantId, userId, openId, voucherId, voucherCode, merchantAccessMode);
+      AlipayMarketingActivityUserQueryvoucherResponseModel result = apiInstance.queryvoucher(merchantId, userId, openId, activityId, voucherId, voucherCode, merchantAccessMode);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingActivityUserApi#queryvoucher");
@@ -153,10 +153,10 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **activityId** | **String**| 活动 id。 | |
 | **merchantId** | **String**| 商户 PID，默认为当前接口调用商户。 | [optional] |
 | **userId** | **String**| 支付宝用户id | [optional] |
 | **openId** | **String**| 支付宝用户openId | [optional] |
+| **activityId** | **String**| 活动 id。 | [optional] |
 | **voucherId** | **String**| 用户券 id。支付宝为用户优惠券唯一分配的 id。 | [optional] |
 | **voucherCode** | **String**| 用户领取的商家券券码。 | [optional] |
 | **merchantAccessMode** | **String**| 商户接入模式。 | [optional] |

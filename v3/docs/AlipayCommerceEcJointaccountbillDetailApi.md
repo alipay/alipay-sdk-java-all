@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayCommerceEcJointaccountbillDetailBatchqueryResponseModel batchquery(enterpriseId, bizScene, userId, openId, pageNum, pageSize, startDate, endDate)
+> AlipayCommerceEcJointaccountbillDetailBatchqueryResponseModel batchquery(enterpriseId, bizScene, userId, openId, employeeId, pageNum, pageSize, startDate, endDate)
 
 企业账单批量分页查询
 
@@ -42,12 +42,13 @@ public class Example {
     String bizScene = "ISV_DEFAULT"; // String | 业务场景。不传默认为ISV_DEFAULT
     String userId = "2088123456789000"; // String | 员工支付宝UID
     String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 员工支付宝UID
-    String pageNum = "1"; // String | 页数。本参数为空或小于1默认显示第一页；如果输入的值大于总页数，则返回最后一页数据。
-    String pageSize = "20"; // String | 每页大小。本参数为空或小于1默认20条；超过20条默认按20条查询；不足20条则按实际记录数返回。
-    String startDate = "yyyy-MM-dd HH:mm:ss"; // String | 起始日期。支持yyyy-MM-dd和yyyy-MM-dd HH:mm:ss两种格式
-    String endDate = "yyyy-MM-dd HH:mm:ss"; // String | 截止日期。支持yyyy-MM-dd和yyyy-MM-dd HH:mm:ss两种格式
+    String employeeId = "2288029541813166"; // String | 员工id
+    String pageNum = "1"; // String | 页码
+    String pageSize = "20"; // String | 每页大小
+    String startDate = "yyyy-MM-dd HH:mm:ss"; // String | 起始日期
+    String endDate = "yyyy-MM-dd HH:mm:ss"; // String | 截止日期
     try {
-      AlipayCommerceEcJointaccountbillDetailBatchqueryResponseModel result = apiInstance.batchquery(enterpriseId, bizScene, userId, openId, pageNum, pageSize, startDate, endDate);
+      AlipayCommerceEcJointaccountbillDetailBatchqueryResponseModel result = apiInstance.batchquery(enterpriseId, bizScene, userId, openId, employeeId, pageNum, pageSize, startDate, endDate);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceEcJointaccountbillDetailApi#batchquery");
@@ -68,10 +69,11 @@ public class Example {
 | **bizScene** | **String**| 业务场景。不传默认为ISV_DEFAULT | [optional] |
 | **userId** | **String**| 员工支付宝UID | [optional] |
 | **openId** | **String**| 员工支付宝UID | [optional] |
-| **pageNum** | **String**| 页数。本参数为空或小于1默认显示第一页；如果输入的值大于总页数，则返回最后一页数据。 | [optional] |
-| **pageSize** | **String**| 每页大小。本参数为空或小于1默认20条；超过20条默认按20条查询；不足20条则按实际记录数返回。 | [optional] |
-| **startDate** | **String**| 起始日期。支持yyyy-MM-dd和yyyy-MM-dd HH:mm:ss两种格式 | [optional] |
-| **endDate** | **String**| 截止日期。支持yyyy-MM-dd和yyyy-MM-dd HH:mm:ss两种格式 | [optional] |
+| **employeeId** | **String**| 员工id | [optional] |
+| **pageNum** | **String**| 页码 | [optional] |
+| **pageSize** | **String**| 每页大小 | [optional] |
+| **startDate** | **String**| 起始日期 | [optional] |
+| **endDate** | **String**| 截止日期 | [optional] |
 
 ### Return type
 

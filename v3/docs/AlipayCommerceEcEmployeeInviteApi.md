@@ -9,11 +9,11 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayCommerceEcEmployeeInviteQueryResponseModel query(enterpriseId)
+> AlipayCommerceEcEmployeeInviteQueryResponseModel query(enterpriseId, employeeId, pageContentCode)
 
 获取员工邀请链接
 
-获取员工邀请链接，每个企业的员工邀请链接都是一样的
+获取员工邀请链接，若只传入企业ID企业则邀请链接对企业员工均有效，若传入了企业ID和员工ID则链接只对传入的员工ID有效
 
 ### Example
 ```java
@@ -39,8 +39,10 @@ public class Example {
 
     AlipayCommerceEcEmployeeInviteApi apiInstance = new AlipayCommerceEcEmployeeInviteApi(defaultClient);
     String enterpriseId = "2088985758939"; // String | 企业id
+    String employeeId = "2288099887700000"; // String | 企业码员工ID
+    String pageContentCode = "PCC_STANDARD"; // String | 页面内容code
     try {
-      AlipayCommerceEcEmployeeInviteQueryResponseModel result = apiInstance.query(enterpriseId);
+      AlipayCommerceEcEmployeeInviteQueryResponseModel result = apiInstance.query(enterpriseId, employeeId, pageContentCode);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceEcEmployeeInviteApi#query");
@@ -58,6 +60,8 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **enterpriseId** | **String**| 企业id | [optional] |
+| **employeeId** | **String**| 企业码员工ID | [optional] |
+| **pageContentCode** | **String**| 页面内容code | [optional] |
 
 ### Return type
 

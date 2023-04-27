@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**batchquery**](AlipayIserviceCcmSwArticleApi.md#batchquery) | **GET** /v3/alipay/iservice/ccm/sw/article/batchquery | 知识库-问答-批量查询 |
+| [**batchquery**](AlipayIserviceCcmSwArticleApi.md#batchquery) | **POST** /v3/alipay/iservice/ccm/sw/article/batchquery | 知识库-问答-批量查询 |
 | [**create**](AlipayIserviceCcmSwArticleApi.md#create) | **PUT** /v3/alipay/iservice/ccm/sw/article/create | 知识库-问答-创建 |
 | [**delete**](AlipayIserviceCcmSwArticleApi.md#delete) | **DELETE** /v3/alipay/iservice/ccm/sw/article/delete | 知识库-问答-删除 |
 | [**get**](AlipayIserviceCcmSwArticleApi.md#get) | **GET** /v3/alipay/iservice/ccm/sw/article/get | 知识库-问答-获取 |
@@ -13,7 +13,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayIserviceCcmSwArticleBatchqueryResponseModel batchquery(ccsInstanceId, libraryId, categoryId, ids, keyword, keywords, status, startTime, endTime, searchCategoryType, searchAllCategory, pageNum, pageSize)
+> AlipayIserviceCcmSwArticleBatchqueryResponseModel batchquery(alipayIserviceCcmSwArticleBatchqueryModel)
 
 知识库-问答-批量查询
 
@@ -42,21 +42,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwArticleApi apiInstance = new AlipayIserviceCcmSwArticleApi(defaultClient);
-    String ccsInstanceId = "ZPNASDK"; // String | 子部门ID，不传为默认部门
-    Integer libraryId = 1; // Integer | 知识库ID
-    Integer categoryId = 12; // Integer | 所属类目ID，如果search_all_category为true则不用填
-    List<Integer> ids = Arrays.asList(); // List<Integer> | 文章ID集合
-    String keyword = "支付宝"; // String | 关键字
-    List<String> keywords = Arrays.asList(); // List<String> | 标签
-    String status = "PUBLISHED"; // String | 状态，PUBLISHED（已发布），UNPUBLISH（未发布），EXPIRED（失效），DELETED（已删除）
-    String startTime = "2020-12-31 00:00:01"; // String | 开始时间，并且结束时间不能为空
-    String endTime = "2020-12-31 23:59:59"; // String | 结束时间，并且开始时间不能为空
-    String searchCategoryType = "Current"; // String | Current（搜索当前节点）； Children（搜索当前节点以及子节点）
-    Boolean searchAllCategory = true; // Boolean | 是否搜索所有类目，如果为true则不用填写category_id值
-    Integer pageNum = 1; // Integer | 页数，page_size不能为空
-    Integer pageSize = 20; // Integer | 页大小，page_num不能为空
+    AlipayIserviceCcmSwArticleBatchqueryModel alipayIserviceCcmSwArticleBatchqueryModel = new AlipayIserviceCcmSwArticleBatchqueryModel(); // AlipayIserviceCcmSwArticleBatchqueryModel | 
     try {
-      AlipayIserviceCcmSwArticleBatchqueryResponseModel result = apiInstance.batchquery(ccsInstanceId, libraryId, categoryId, ids, keyword, keywords, status, startTime, endTime, searchCategoryType, searchAllCategory, pageNum, pageSize);
+      AlipayIserviceCcmSwArticleBatchqueryResponseModel result = apiInstance.batchquery(alipayIserviceCcmSwArticleBatchqueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwArticleApi#batchquery");
@@ -73,19 +61,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **ccsInstanceId** | **String**| 子部门ID，不传为默认部门 | [optional] |
-| **libraryId** | **Integer**| 知识库ID | [optional] |
-| **categoryId** | **Integer**| 所属类目ID，如果search_all_category为true则不用填 | [optional] |
-| **ids** | **List&lt;Integer&gt;**| 文章ID集合 | [optional] |
-| **keyword** | **String**| 关键字 | [optional] |
-| **keywords** | **List&lt;String&gt;**| 标签 | [optional] |
-| **status** | **String**| 状态，PUBLISHED（已发布），UNPUBLISH（未发布），EXPIRED（失效），DELETED（已删除） | [optional] |
-| **startTime** | **String**| 开始时间，并且结束时间不能为空 | [optional] |
-| **endTime** | **String**| 结束时间，并且开始时间不能为空 | [optional] |
-| **searchCategoryType** | **String**| Current（搜索当前节点）； Children（搜索当前节点以及子节点） | [optional] |
-| **searchAllCategory** | **Boolean**| 是否搜索所有类目，如果为true则不用填写category_id值 | [optional] |
-| **pageNum** | **Integer**| 页数，page_size不能为空 | [optional] |
-| **pageSize** | **Integer**| 页大小，page_num不能为空 | [optional] |
+| **alipayIserviceCcmSwArticleBatchqueryModel** | **AlipayIserviceCcmSwArticleBatchqueryModel**|  | [optional] |
 
 ### Return type
 
@@ -97,7 +73,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

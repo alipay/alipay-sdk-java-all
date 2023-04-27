@@ -111,7 +111,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingActivityDeliveryApi apiInstance = new AlipayMarketingActivityDeliveryApi(defaultClient);
-    String deliveryId = "20121231231242353"; // String | 投放计划id
+    String deliveryId = "20121231231242353"; // String | 推广计划id
     AlipayMarketingActivityDeliveryQueryModel alipayMarketingActivityDeliveryQueryModel = new AlipayMarketingActivityDeliveryQueryModel(); // AlipayMarketingActivityDeliveryQueryModel | 
     try {
       AlipayMarketingActivityDeliveryQueryResponseModel result = apiInstance.query(deliveryId, alipayMarketingActivityDeliveryQueryModel);
@@ -131,7 +131,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **deliveryId** | **String**| 投放计划id | |
+| **deliveryId** | **String**| 推广计划id | |
 | **alipayMarketingActivityDeliveryQueryModel** | **AlipayMarketingActivityDeliveryQueryModel**|  | [optional] |
 
 ### Return type
