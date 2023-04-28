@@ -16,7 +16,7 @@ v2版本将会发起基于v2协议的OpenAPI，v3版本将会发起基于v3协�
 - 简化加验签逻辑，对http报文整体加验签
 - 简化加解密、文件上传等规范
 
-更多有关v3协议的内容，可前往 [支付宝开发文档](https://opendocs.alipay.com/open-v3/053sd1?pathHash=b355a3b0) 了解更多。
+更多有关v3协议的内容，可前往 [支付宝开发文档](https://opendocs.alipay.com/open-v3/054kaq) 了解更多。
 
 ### 关于OpenAPI规范（OAS）
 
