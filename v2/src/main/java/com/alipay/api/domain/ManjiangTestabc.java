@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * ManjiangTestabc
  *
  * @author auto create
- * @since 1.0, 2022-09-17 21:39:46
+ * @since 1.0, 2023-04-21 11:33:54
  */
 public class ManjiangTestabc extends AlipayObject {
 
-	private static final long serialVersionUID = 3615698264278373578L;
+	private static final long serialVersionUID = 6291283272198372492L;
 
 	/**
 	 * 1
 	 */
 	@ApiField("json")
 	private String json;
+
+	/**
+	 * 1
+	 */
+	@ApiField("ssddf")
+	private ApiInfoVO ssddf;
+
+	/**
+	 * 1
+	 */
+	@ApiField("sss_2")
+	private ApiInfoVO sss2;
 
 	/**
 	 * 1
@@ -36,6 +48,20 @@ public class ManjiangTestabc extends AlipayObject {
 	}
 	public void setJson(String json) {
 		this.json = json;
+	}
+
+	public ApiInfoVO getSsddf() {
+		return this.ssddf;
+	}
+	public void setSsddf(ApiInfoVO ssddf) {
+		this.ssddf = ssddf;
+	}
+
+	public ApiInfoVO getSss2() {
+		return this.sss2;
+	}
+	public void setSss2(ApiInfoVO sss2) {
+		this.sss2 = sss2;
 	}
 
 	public String getT() {

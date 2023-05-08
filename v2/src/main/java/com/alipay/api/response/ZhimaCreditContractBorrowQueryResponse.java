@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.contract.borrow.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:10:28
+ * @since 1.0, 2023-05-05 01:08:49
  */
 public class ZhimaCreditContractBorrowQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6446269568234122198L;
+	private static final long serialVersionUID = 6855669726199739582L;
 
 	/** 
 	 * 借还合约状态，INITED:初始化但未签约,SIGNED:已签约

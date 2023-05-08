@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景开放平台电商订单模型
  *
  * @author auto create
- * @since 1.0, 2023-04-17 18:24:10
+ * @since 1.0, 2023-04-21 10:33:58
  */
 public class EcomOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5363698145375154314L;
+	private static final long serialVersionUID = 5873155139187611515L;
 
 	/**
 	 * 实际支付金额
@@ -46,6 +46,12 @@ public class EcomOrderDTO extends AlipayObject {
 	 */
 	@ApiField("buyer_nick")
 	private String buyerNick;
+
+	/**
+	 * 充电时长，分钟维度
+	 */
+	@ApiField("charge_duration")
+	private InsPeriodDTO chargeDuration;
 
 	/**
 	 * 免押金额
@@ -213,6 +219,13 @@ public class EcomOrderDTO extends AlipayObject {
 	}
 	public void setBuyerNick(String buyerNick) {
 		this.buyerNick = buyerNick;
+	}
+
+	public InsPeriodDTO getChargeDuration() {
+		return this.chargeDuration;
+	}
+	public void setChargeDuration(InsPeriodDTO chargeDuration) {
+		this.chargeDuration = chargeDuration;
 	}
 
 	public Long getCreditDepositMoney() {

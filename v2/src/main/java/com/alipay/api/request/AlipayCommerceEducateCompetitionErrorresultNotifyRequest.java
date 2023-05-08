@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.competition.errorresult.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:56:18
+ * @since 1.0, 2023-05-04 23:06:56
  */
 public class AlipayCommerceEducateCompetitionErrorresultNotifyRequest implements AlipayRequest<AlipayCommerceEducateCompetitionErrorresultNotifyResponse> {
 

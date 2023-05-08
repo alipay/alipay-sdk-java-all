@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.antdataassets.uploadjob.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:50:02
+ * @since 1.0, 2023-05-05 06:17:20
  */
 public class AlipayDataDataserviceAntdataassetsUploadjobCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2662486966893351927L;
+	private static final long serialVersionUID = 7795116882261272585L;
 
 	/** 
 	 * 创建上云任务之后生成的任务ID

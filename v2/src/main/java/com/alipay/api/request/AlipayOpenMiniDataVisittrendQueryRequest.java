@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.data.visittrend.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:08:20
+ * @since 1.0, 2023-05-04 21:45:50
  */
 public class AlipayOpenMiniDataVisittrendQueryRequest implements AlipayRequest<AlipayOpenMiniDataVisittrendQueryResponse> {
 

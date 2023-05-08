@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.advertiser.device.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:34:52
+ * @since 1.0, 2023-05-05 05:49:50
  */
 public class AlipayCommerceIotAdvertiserDeviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5511785953732744353L;
+	private static final long serialVersionUID = 8637935457167124166L;
 
 	/** 
 	 * 获取商户下设备列表

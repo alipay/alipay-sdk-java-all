@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.cognitive.ocr.businesslicense.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:06:58
+ * @since 1.0, 2023-05-05 05:09:58
  */
 public class AlipayIserviceCognitiveOcrBusinesslicenseQueryRequest implements AlipayRequest<AlipayIserviceCognitiveOcrBusinesslicenseQueryResponse> {
 

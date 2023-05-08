@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁企业信用认证初始化
  *
  * @author auto create
- * @since 1.0, 2022-10-28 17:16:13
+ * @since 1.0, 2023-04-21 18:36:00
  */
 public class ZhimaCreditEpCertificationInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6352276369218996886L;
+	private static final long serialVersionUID = 1286486221372278537L;
 
 	/**
 	 * 支付宝登陆账号(邮箱或者手机号)
@@ -78,6 +78,12 @@ public class ZhimaCreditEpCertificationInitializeModel extends AlipayObject {
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	/**
+	 * 用户类型
+	 */
+	@ApiField("user_type")
+	private String userType;
 
 	public String getAlipayAccount() {
 		return this.alipayAccount;
@@ -154,6 +160,13 @@ public class ZhimaCreditEpCertificationInitializeModel extends AlipayObject {
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getUserType() {
+		return this.userType;
+	}
+	public void setUserType(String userType) {
+		this.userType = userType;
 	}
 
 }

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.iotdata.imageaesthetic.bai.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:21:17
+ * @since 1.0, 2023-05-05 01:31:17
  */
 public class AlipayDataIotdataImageaestheticBaiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1327693297781271127L;
+	private static final long serialVersionUID = 5792633727739754916L;
 
 	/** 
 	 * 返回图片URL、打分结果和错误信息

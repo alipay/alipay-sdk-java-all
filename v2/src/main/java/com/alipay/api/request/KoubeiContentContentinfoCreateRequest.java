@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.content.contentinfo.create request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:12:13
+ * @since 1.0, 2023-05-04 22:07:10
  */
 public class KoubeiContentContentinfoCreateRequest implements AlipayRequest<KoubeiContentContentinfoCreateResponse> {
 

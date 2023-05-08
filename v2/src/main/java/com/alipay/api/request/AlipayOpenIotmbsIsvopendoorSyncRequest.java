@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.isvopendoor.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-04-12 10:37:03
+ * @since 1.0, 2023-05-04 19:16:47
  */
 public class AlipayOpenIotmbsIsvopendoorSyncRequest implements AlipayRequest<AlipayOpenIotmbsIsvopendoorSyncResponse> {
 

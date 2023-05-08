@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.auth.appauth.invite.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:01:45
+ * @since 1.0, 2023-05-04 22:16:48
  */
 public class AlipayOpenAuthAppauthInviteCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4843911867549794718L;
+	private static final long serialVersionUID = 1372117111595695813L;
 
 	/** 
 	 * 商户授权的详情页地址

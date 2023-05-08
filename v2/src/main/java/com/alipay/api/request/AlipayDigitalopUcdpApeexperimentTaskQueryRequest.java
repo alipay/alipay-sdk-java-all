@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalop.ucdp.apeexperiment.task.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:08:07
+ * @since 1.0, 2023-05-04 13:55:38
  */
 public class AlipayDigitalopUcdpApeexperimentTaskQueryRequest implements AlipayRequest<AlipayDigitalopUcdpApeexperimentTaskQueryResponse> {
 

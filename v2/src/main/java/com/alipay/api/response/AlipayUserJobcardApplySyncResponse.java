@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.jobcard.apply.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:37:32
+ * @since 1.0, 2023-05-05 10:05:22
  */
 public class AlipayUserJobcardApplySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6241359441366362323L;
+	private static final long serialVersionUID = 3689158529699156386L;
 
 	/** 
 	 * 职位申请ID，由职位申请系统内部生成唯一序列号

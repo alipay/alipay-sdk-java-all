@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antcommonweal.donate.consume.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:01:46
+ * @since 1.0, 2023-05-04 15:17:01
  */
 public class AlipaySocialAntcommonwealDonateConsumeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3559898642143192386L;
+	private static final long serialVersionUID = 5265618814944617325L;
 
 	/** 
 	 * 错误码

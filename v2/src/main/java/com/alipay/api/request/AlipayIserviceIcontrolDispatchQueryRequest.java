@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.icontrol.dispatch.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:08:42
+ * @since 1.0, 2023-05-04 14:09:24
  */
 public class AlipayIserviceIcontrolDispatchQueryRequest implements AlipayRequest<AlipayIserviceIcontrolDispatchQueryResponse> {
 

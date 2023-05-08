@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.xuexin.identity.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:33:22
+ * @since 1.0, 2023-05-05 04:57:54
  */
 public class AlipayCommerceEducateXuexinIdentityQueryRequest implements AlipayRequest<AlipayCommerceEducateXuexinIdentityQueryResponse> {
 

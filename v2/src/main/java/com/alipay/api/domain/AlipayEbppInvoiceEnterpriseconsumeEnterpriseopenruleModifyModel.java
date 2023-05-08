@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则修改
  *
  * @author auto create
- * @since 1.0, 2023-04-18 17:25:09
+ * @since 1.0, 2023-05-04 14:21:17
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7889356359413299389L;
+	private static final long serialVersionUID = 4115268916486134856L;
 
 	/**
-	 * 共同账户id
+	 * 共同账户ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号（仅使用account_id时必传）
+	 * 授权签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
-	 * 企业id
+	 * 企业ID
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -38,20 +38,19 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel ext
 	private String invoiceRuleId;
 
 	/**
-	 * 开票名称
+	 * 开票规则名称
 	 */
 	@ApiField("invoice_rule_name")
 	private String invoiceRuleName;
 
 	/**
-	 * 汇总开需要抬头，笔笔开不需要传抬头
+	 * 发票抬头
 	 */
 	@ApiField("invoice_title_id")
 	private String invoiceTitleId;
 
 	/**
-	 * 销方类型：TP开票、商户开票
-枚举定义：MERCHANT（商户）、TP（TP）
+	 * 销方类型
 	 */
 	@ApiField("seller_type")
 	private String sellerType;

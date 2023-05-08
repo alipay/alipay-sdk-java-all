@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.blacklist.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:20:37
+ * @since 1.0, 2023-05-05 05:46:55
  */
 public class AlipayCommerceTransportVehicleownerBlacklistSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8824933458153349639L;
+	private static final long serialVersionUID = 5681713475299245135L;
 
 	
 

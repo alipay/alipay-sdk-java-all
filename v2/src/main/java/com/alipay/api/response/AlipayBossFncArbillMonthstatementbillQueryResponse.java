@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.arbill.monthstatementbill.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:32:14
+ * @since 1.0, 2023-05-05 07:51:58
  */
 public class AlipayBossFncArbillMonthstatementbillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5299658114138936619L;
+	private static final long serialVersionUID = 8248174966893275789L;
 
 	/** 
 	 * 当前页码

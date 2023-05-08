@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.openid.applyorder.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-07 10:16:43
+ * @since 1.0, 2023-05-04 19:11:46
  */
 public class AlipayOpenAppOpenidApplyorderUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1169213757721766296L;
+	private static final long serialVersionUID = 1168522939468657334L;
 
 	/** 
 	 * 非法的用户ID参数，说明部分参数不是有效的用户ID

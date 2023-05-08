@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.clive.connect.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:48:01
+ * @since 1.0, 2023-05-05 06:57:54
  */
 public class AlipayIserviceCliveConnectCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8832367219595215488L;
+	private static final long serialVersionUID = 2451426817675613186L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.notify.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:41:04
+ * @since 1.0, 2023-05-05 08:03:48
  */
 public class AnttechOceanbaseNotifySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5125865187282477115L;
+	private static final long serialVersionUID = 8659314721893396646L;
 
 	
 

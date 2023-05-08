@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.scene.rating.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:02:39
+ * @since 1.0, 2023-05-04 20:04:37
  */
 public class ZhimaCreditEpSceneRatingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3248134567129521638L;
+	private static final long serialVersionUID = 8267923594681424616L;
 
 	/** 
 	 * 评估额度，单位为人民币分。只有在order_status=FINISH且在评估流程中credit_category对应的场景有额度时才会有值，其它情况为空

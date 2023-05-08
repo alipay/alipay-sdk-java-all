@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.ext.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:00:42
+ * @since 1.0, 2023-05-04 22:30:42
  */
 public class AlipayEcoCityserviceExtSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8696674755845336114L;
+	private static final long serialVersionUID = 4249874821574593584L;
 
 	/** 
 	 * 同步结果

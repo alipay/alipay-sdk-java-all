@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.finrisk.markrisk.datafactor.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:42:29
+ * @since 1.0, 2023-05-05 00:33:57
  */
 public class AlipayAccountFinriskMarkriskDatafactorQueryRequest implements AlipayRequest<AlipayAccountFinriskMarkriskDatafactorQueryResponse> {
 

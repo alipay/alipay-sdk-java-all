@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.order.scenic.traffic.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-17 11:53:57
+ * @since 1.0, 2023-05-05 04:51:57
  */
 public class AlipayBusinessOrderScenicTrafficSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5235145939288357274L;
+	private static final long serialVersionUID = 6843229179517962264L;
 
 	/** 
 	 * 行业侧入住单唯一标识。

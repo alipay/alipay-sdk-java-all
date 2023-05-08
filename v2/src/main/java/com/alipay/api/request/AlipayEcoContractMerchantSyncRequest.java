@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.contract.merchant.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:54:32
+ * @since 1.0, 2023-05-05 06:23:03
  */
 public class AlipayEcoContractMerchantSyncRequest implements AlipayRequest<AlipayEcoContractMerchantSyncResponse> {
 

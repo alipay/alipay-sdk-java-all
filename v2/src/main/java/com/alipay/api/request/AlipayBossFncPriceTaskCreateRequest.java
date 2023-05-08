@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.price.task.create request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:11:03
+ * @since 1.0, 2023-05-05 00:23:57
  */
 public class AlipayBossFncPriceTaskCreateRequest implements AlipayRequest<AlipayBossFncPriceTaskCreateResponse> {
 

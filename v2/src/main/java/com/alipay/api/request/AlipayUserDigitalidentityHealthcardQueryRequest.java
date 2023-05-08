@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.digitalidentity.healthcard.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:18:44
+ * @since 1.0, 2023-05-04 20:29:08
  */
 public class AlipayUserDigitalidentityHealthcardQueryRequest implements AlipayRequest<AlipayUserDigitalidentityHealthcardQueryResponse> {
 

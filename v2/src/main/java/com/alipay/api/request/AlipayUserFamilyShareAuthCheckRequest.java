@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.family.share.auth.check request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:07:10
+ * @since 1.0, 2023-05-04 19:40:48
  */
 public class AlipayUserFamilyShareAuthCheckRequest implements AlipayRequest<AlipayUserFamilyShareAuthCheckResponse> {
 

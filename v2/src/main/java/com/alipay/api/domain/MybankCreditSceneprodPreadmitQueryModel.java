@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景金融前准入接口
  *
  * @author auto create
- * @since 1.0, 2021-04-27 15:11:34
+ * @since 1.0, 2023-04-26 15:51:50
  */
 public class MybankCreditSceneprodPreadmitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5881372378555649172L;
+	private static final long serialVersionUID = 1278317173238398259L;
 
 	/**
 	 * 客户姓名，开户时使用
@@ -48,6 +48,12 @@ public class MybankCreditSceneprodPreadmitQueryModel extends AlipayObject {
 	 */
 	@ApiField("site")
 	private String site;
+
+	/**
+	 * 外部站点的userid，该字段内容与site的内容相关
+	 */
+	@ApiField("site_open_id")
+	private String siteOpenId;
 
 	/**
 	 * 外部站点的userid，该字段内容与site的内容相关
@@ -95,6 +101,13 @@ public class MybankCreditSceneprodPreadmitQueryModel extends AlipayObject {
 	}
 	public void setSite(String site) {
 		this.site = site;
+	}
+
+	public String getSiteOpenId() {
+		return this.siteOpenId;
+	}
+	public void setSiteOpenId(String siteOpenId) {
+		this.siteOpenId = siteOpenId;
 	}
 
 	public String getSiteUserId() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.cloud.app.sec.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-06 16:56:41
+ * @since 1.0, 2023-05-05 04:06:51
  */
 public class AlipayOpenCloudAppSecCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3498547575651924562L;
+	private static final long serialVersionUID = 4374829435894867186L;
 
 	/** 
 	 * 支付宝公钥

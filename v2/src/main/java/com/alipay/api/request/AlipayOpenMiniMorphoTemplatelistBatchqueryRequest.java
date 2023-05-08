@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.morpho.templatelist.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:37:22
+ * @since 1.0, 2023-05-05 02:34:12
  */
 public class AlipayOpenMiniMorphoTemplatelistBatchqueryRequest implements AlipayRequest<AlipayOpenMiniMorphoTemplatelistBatchqueryResponse> {
 

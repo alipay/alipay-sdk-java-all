@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2023-04-17 18:13:04
+ * @since 1.0, 2023-04-25 17:03:18
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7249418591614415927L;
+	private static final long serialVersionUID = 1721224993332189696L;
 
 	/**
 	 * cardType + 唯一 + 储值卡类目投保场景 + 通过上下游约定获取
@@ -40,6 +40,54 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	 */
 	@ApiField("card_use_period")
 	private Long cardUsePeriod;
+
+	/**
+	 * 充电站点详细地址
+	 */
+	@ApiField("charge_station_address")
+	private String chargeStationAddress;
+
+	/**
+	 * 充电站点所在地区
+	 */
+	@ApiField("charge_station_area")
+	private String chargeStationArea;
+
+	/**
+	 * 充电站点所在城市
+	 */
+	@ApiField("charge_station_city")
+	private String chargeStationCity;
+
+	/**
+	 * 充电站点编号
+	 */
+	@ApiField("charge_station_no")
+	private String chargeStationNo;
+
+	/**
+	 * 充电站点插座总数
+	 */
+	@ApiField("charge_station_plug_total")
+	private Long chargeStationPlugTotal;
+
+	/**
+	 * 充电站点所在省份
+	 */
+	@ApiField("charge_station_prov")
+	private String chargeStationProv;
+
+	/**
+	 * 充电站点所在镇、街道
+	 */
+	@ApiField("charge_station_town")
+	private String chargeStationTown;
+
+	/**
+	 * 充电计费方式
+	 */
+	@ApiField("charge_type")
+	private String chargeType;
 
 	/**
 	 * extInfo
@@ -83,6 +131,12 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	@ApiField("lockable_device")
 	private Boolean lockableDevice;
 
+	/**
+	 * 插座编号
+	 */
+	@ApiField("plug_no")
+	private String plugNo;
+
 	public String getCardType() {
 		return this.cardType;
 	}
@@ -109,6 +163,62 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	}
 	public void setCardUsePeriod(Long cardUsePeriod) {
 		this.cardUsePeriod = cardUsePeriod;
+	}
+
+	public String getChargeStationAddress() {
+		return this.chargeStationAddress;
+	}
+	public void setChargeStationAddress(String chargeStationAddress) {
+		this.chargeStationAddress = chargeStationAddress;
+	}
+
+	public String getChargeStationArea() {
+		return this.chargeStationArea;
+	}
+	public void setChargeStationArea(String chargeStationArea) {
+		this.chargeStationArea = chargeStationArea;
+	}
+
+	public String getChargeStationCity() {
+		return this.chargeStationCity;
+	}
+	public void setChargeStationCity(String chargeStationCity) {
+		this.chargeStationCity = chargeStationCity;
+	}
+
+	public String getChargeStationNo() {
+		return this.chargeStationNo;
+	}
+	public void setChargeStationNo(String chargeStationNo) {
+		this.chargeStationNo = chargeStationNo;
+	}
+
+	public Long getChargeStationPlugTotal() {
+		return this.chargeStationPlugTotal;
+	}
+	public void setChargeStationPlugTotal(Long chargeStationPlugTotal) {
+		this.chargeStationPlugTotal = chargeStationPlugTotal;
+	}
+
+	public String getChargeStationProv() {
+		return this.chargeStationProv;
+	}
+	public void setChargeStationProv(String chargeStationProv) {
+		this.chargeStationProv = chargeStationProv;
+	}
+
+	public String getChargeStationTown() {
+		return this.chargeStationTown;
+	}
+	public void setChargeStationTown(String chargeStationTown) {
+		this.chargeStationTown = chargeStationTown;
+	}
+
+	public String getChargeType() {
+		return this.chargeType;
+	}
+	public void setChargeType(String chargeType) {
+		this.chargeType = chargeType;
 	}
 
 	public String getExtInfo() {
@@ -158,6 +268,13 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	}
 	public void setLockableDevice(Boolean lockableDevice) {
 		this.lockableDevice = lockableDevice;
+	}
+
+	public String getPlugNo() {
+		return this.plugNo;
+	}
+	public void setPlugNo(String plugNo) {
+		this.plugNo = plugNo;
 	}
 
 }

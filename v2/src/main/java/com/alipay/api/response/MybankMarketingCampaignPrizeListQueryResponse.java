@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.campaign.prize.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:08:54
+ * @since 1.0, 2023-05-05 06:52:48
  */
 public class MybankMarketingCampaignPrizeListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8856416494382544279L;
+	private static final long serialVersionUID = 3182133151356828358L;
 
 	/** 
 	 * 奖品列表

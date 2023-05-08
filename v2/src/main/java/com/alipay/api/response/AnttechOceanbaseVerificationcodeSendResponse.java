@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.verificationcode.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:38:20
+ * @since 1.0, 2023-05-04 21:32:23
  */
 public class AnttechOceanbaseVerificationcodeSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7611536198558714852L;
+	private static final long serialVersionUID = 5272184639922574634L;
 
 	/** 
 	 * 验证码类型枚举：MESSAGE_CODE短信验证码；EMAIL_CODE邮件验证码。

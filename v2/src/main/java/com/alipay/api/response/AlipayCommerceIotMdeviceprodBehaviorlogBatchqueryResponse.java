@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.mdeviceprod.behaviorlog.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:43:45
+ * @since 1.0, 2023-05-05 09:10:58
  */
 public class AlipayCommerceIotMdeviceprodBehaviorlogBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8648247953429911173L;
+	private static final long serialVersionUID = 6594863159656528252L;
 
 	/** 
 	 * 日志关联的设备信息

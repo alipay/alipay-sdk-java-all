@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.community.ownercard.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:46:46
+ * @since 1.0, 2023-05-04 23:21:49
  */
 public class AlipayEbppCommunityOwnercardSyncRequest implements AlipayRequest<AlipayEbppCommunityOwnercardSyncResponse> {
 

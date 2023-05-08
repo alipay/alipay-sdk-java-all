@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 默认结算规则。在收单时不做特别指定规则时，将使用本对象设置的结算规则
  *
  * @author auto create
- * @since 1.0, 2023-04-20 09:13:12
+ * @since 1.0, 2023-04-20 16:48:01
  */
 public class DefaultSettleRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1581516174732548572L;
+	private static final long serialVersionUID = 6295955286189749741L;
 
 	/**
 	 * 默认结算目标。当默认结算类型为bankCard时填写银行卡卡号，其值需在进件填写的结算银行卡范围内；当默认结算类型为alipayAccount时填写支付宝账号登录号，其值需在进件填写的结算支付宝账号范围内。

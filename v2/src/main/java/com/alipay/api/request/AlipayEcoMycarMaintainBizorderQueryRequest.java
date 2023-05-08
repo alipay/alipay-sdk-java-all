@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.maintain.bizorder.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:56:50
+ * @since 1.0, 2023-05-05 06:54:21
  */
 public class AlipayEcoMycarMaintainBizorderQueryRequest implements AlipayRequest<AlipayEcoMycarMaintainBizorderQueryResponse> {
 

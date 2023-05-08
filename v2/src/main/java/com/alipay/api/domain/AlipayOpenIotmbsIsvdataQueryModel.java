@@ -11,35 +11,34 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsIsvdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1595159322861432848L;
+	private static final long serialVersionUID = 5666918912732156415L;
 
 	/**
-	 * 参数名：condition_id+使用场景：根据condition_type，输入相应的查询条件+枚举值：
-无
+	 * 根据condition_type，输入相应的查询条件。
 	 */
 	@ApiField("condition_id")
 	private String conditionId;
 
 	/**
-	 * 参数名：condition_type+使用场景：选择条件查询维度+枚举值：1、isvpid 2、酒店id 3、设备sn
+	 * 选择条件查询维度。此参数代表，condition_id的数据类型，请与conditon_id配合一起使用。
 	 */
 	@ApiField("condition_type")
 	private String conditionType;
 
 	/**
-	 * 参数名:page_num+使用场景:分页查询的页码+枚举值:无
+	 * 分页查询的页码
 	 */
 	@ApiField("page_num")
 	private String pageNum;
 
 	/**
-	 * 参数名:page_size+使用场景：分页查询一页数据的最大条数+枚举值：无
+	 * 分页查询一页数据的最大条数
 	 */
 	@ApiField("page_size")
 	private String pageSize;
 
 	/**
-	 * 参数名：query_type+使用场景：选择需要查询的数据类型+枚举值：1：isv绑定的酒店id 2：设备sn 3：设备sn绑定的人脸
+	 * 选择需要查询的数据类型，注意：不同的请求参数，会影响返回结果格式。
 	 */
 	@ApiField("query_type")
 	private String queryType;

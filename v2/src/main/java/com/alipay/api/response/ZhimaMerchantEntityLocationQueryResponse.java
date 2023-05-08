@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.entity.location.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:06:44
+ * @since 1.0, 2023-05-04 17:39:37
  */
 public class ZhimaMerchantEntityLocationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5271721499181578732L;
+	private static final long serialVersionUID = 3292335775923551856L;
 
 	/** 
 	 * 充电宝位置

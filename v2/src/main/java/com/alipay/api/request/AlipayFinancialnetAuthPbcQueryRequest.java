@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.pbc.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:15:59
+ * @since 1.0, 2023-05-04 17:37:48
  */
 public class AlipayFinancialnetAuthPbcQueryRequest implements AlipayRequest<AlipayFinancialnetAuthPbcQueryResponse> {
 

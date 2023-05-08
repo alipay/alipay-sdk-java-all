@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票账单明细列表
  *
  * @author auto create
- * @since 1.0, 2023-04-19 16:45:57
+ * @since 1.0, 2023-04-28 15:41:52
  */
 public class SummaryInvoiceBillOpenDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2652247741433992838L;
+	private static final long serialVersionUID = 8491677557323258359L;
 
 	/**
 	 * 账单流水号
@@ -20,10 +20,16 @@ public class SummaryInvoiceBillOpenDTO extends AlipayObject {
 	private String billNo;
 
 	/**
-	 * 商户在统一收单链路中透传到支付宝的商户订单号，仅作为透传，非必要
+	 * 商户订单号
 	 */
 	@ApiField("biz_out_no")
 	private String bizOutNo;
+
+	/**
+	 * 支付宝用户用户openId
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 账单持有人uid
@@ -32,13 +38,13 @@ public class SummaryInvoiceBillOpenDTO extends AlipayObject {
 	private String buyerUserId;
 
 	/**
-	 * 支付类型，可选值：支付-PAY；退款-REFUND
+	 * 支付类型
 	 */
 	@ApiField("pay_type")
 	private String payType;
 
 	/**
-	 * 退款场景时对应的正向支付单号，当pay_type为REFUND时可取该值，非必须
+	 * 支付单号
 	 */
 	@ApiField("related_pay_no")
 	private String relatedPayNo;
@@ -55,6 +61,13 @@ public class SummaryInvoiceBillOpenDTO extends AlipayObject {
 	}
 	public void setBizOutNo(String bizOutNo) {
 		this.bizOutNo = bizOutNo;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public String getBuyerUserId() {

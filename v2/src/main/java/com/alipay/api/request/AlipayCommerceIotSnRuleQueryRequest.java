@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.sn.rule.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:18:33
+ * @since 1.0, 2023-05-04 17:34:03
  */
 public class AlipayCommerceIotSnRuleQueryRequest implements AlipayRequest<AlipayCommerceIotSnRuleQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iot.device.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:35:33
+ * @since 1.0, 2023-05-04 18:37:05
  */
 public class AlipayOpenIotDeviceQueryRequest implements AlipayRequest<AlipayOpenIotDeviceQueryResponse> {
 

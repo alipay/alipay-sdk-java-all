@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.mrchsurplmorder.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:40:53
+ * @since 1.0, 2023-05-05 04:24:06
  */
 public class AlipayMerchantMrchsurplmorderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7634488661272429288L;
+	private static final long serialVersionUID = 2893291791626222481L;
 
 	/** 
 	 * 将请求参数中的request_id返回

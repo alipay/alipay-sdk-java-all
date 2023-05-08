@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.chargeproduct.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:00:47
+ * @since 1.0, 2023-05-05 09:40:09
  */
 public class AlipayEbppCommunityChargeproductModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5156573364992535284L;
+	private static final long serialVersionUID = 3371917423455835839L;
 
 	
 

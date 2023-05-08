@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.pos.paymode.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:17:29
+ * @since 1.0, 2023-05-04 22:32:29
  */
 public class KoubeiCateringPosPaymodeDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4836667238368791762L;
+	private static final long serialVersionUID = 3341888413537845353L;
 
 	
 

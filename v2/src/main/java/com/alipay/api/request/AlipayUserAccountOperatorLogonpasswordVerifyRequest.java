@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.operator.logonpassword.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:41:43
+ * @since 1.0, 2023-05-04 20:51:56
  */
 public class AlipayUserAccountOperatorLogonpasswordVerifyRequest implements AlipayRequest<AlipayUserAccountOperatorLogonpasswordVerifyResponse> {
 

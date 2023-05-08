@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:46:03
+ * @since 1.0, 2023-05-05 16:11:56
  */
 public class AlipayFundBatchDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5236875617119538272L;
+	private static final long serialVersionUID = 8571467859836774782L;
 
 	/** 
 	 * 1）当批次状态为INIT状态时，明细信息还未落地，返回明细信息为空
@@ -149,6 +149,12 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	 */
 	@ApiField("payer_id")
 	private String payerId;
+
+	/** 
+	 * 付款方身份标识
+	 */
+	@ApiField("payer_open_id")
+	private String payerOpenId;
 
 	/** 
 	 * 付款方需要支付的金额，受理成功（status为APPLIED）之后才会有值，受理成功之前是0。
@@ -321,6 +327,13 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	}
 	public String getPayerId( ) {
 		return this.payerId;
+	}
+
+	public void setPayerOpenId(String payerOpenId) {
+		this.payerOpenId = payerOpenId;
+	}
+	public String getPayerOpenId( ) {
+		return this.payerOpenId;
 	}
 
 	public void setPaymentAmount(String paymentAmount) {

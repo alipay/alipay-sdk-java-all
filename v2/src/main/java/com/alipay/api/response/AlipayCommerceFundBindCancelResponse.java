@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fund.bind.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:51:49
+ * @since 1.0, 2023-05-05 04:16:59
  */
 public class AlipayCommerceFundBindCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4798351229771536236L;
+	private static final long serialVersionUID = 1498193747919342114L;
 
 	
 

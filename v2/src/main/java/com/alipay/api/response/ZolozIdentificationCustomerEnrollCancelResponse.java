@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.customer.enroll.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:30:10
+ * @since 1.0, 2023-05-05 09:16:30
  */
 public class ZolozIdentificationCustomerEnrollCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1779962889717827781L;
+	private static final long serialVersionUID = 8264111648171256847L;
 
 	/** 
 	 * 与入参值保持一致

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.commonevent.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:33:20
+ * @since 1.0, 2023-05-05 00:27:38
  */
 public class AlipayMarketingCampaignCommoneventApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1193611432337454438L;
+	private static final long serialVersionUID = 6328559537724968826L;
 
 	/** 
 	 * 与event关联的返回结果

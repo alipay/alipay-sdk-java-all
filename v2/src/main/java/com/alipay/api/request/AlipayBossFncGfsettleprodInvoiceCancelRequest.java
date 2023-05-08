@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.invoice.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 00:42:02
+ * @since 1.0, 2023-05-05 06:28:03
  */
 public class AlipayBossFncGfsettleprodInvoiceCancelRequest implements AlipayRequest<AlipayBossFncGfsettleprodInvoiceCancelResponse> {
 

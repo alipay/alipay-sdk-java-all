@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.content.community.hotevent.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:53:47
+ * @since 1.0, 2023-05-05 01:42:07
  */
 public class AntfortuneContentCommunityHoteventListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3593972792638958613L;
+	private static final long serialVersionUID = 6451892916421192163L;
 
 	/** 
 	 * 存储json序列化后的热门事件列表

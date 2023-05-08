@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.authentication.smileface.sendme.send request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:58:20
+ * @since 1.0, 2023-05-05 08:17:57
  */
 public class ZolozAuthenticationSmilefaceSendmeSendRequest implements AlipayRequest<ZolozAuthenticationSmilefaceSendmeSendResponse> {
 

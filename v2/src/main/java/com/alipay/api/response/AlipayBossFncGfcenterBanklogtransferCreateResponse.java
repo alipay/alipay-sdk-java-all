@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfcenter.banklogtransfer.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:36:14
+ * @since 1.0, 2023-05-04 23:03:45
  */
 public class AlipayBossFncGfcenterBanklogtransferCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2388448991353964829L;
+	private static final long serialVersionUID = 7516648146349929117L;
 
 	/** 
 	 * 银行流水认领返回结果

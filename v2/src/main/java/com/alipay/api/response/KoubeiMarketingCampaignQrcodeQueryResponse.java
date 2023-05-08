@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.qrcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:44:49
+ * @since 1.0, 2023-05-04 20:37:13
  */
 public class KoubeiMarketingCampaignQrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5167412636558741426L;
+	private static final long serialVersionUID = 3266498562758168576L;
 
 	/** 
 	 * 二维码地址，可以根据这个地址生成二维码

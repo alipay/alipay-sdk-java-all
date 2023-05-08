@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.merchantshop.comment.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:53:30
+ * @since 1.0, 2023-05-04 23:29:30
  */
 public class AlipayEcoMycarMerchantshopCommentBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2566555418663828397L;
+	private static final long serialVersionUID = 1835416459875419464L;
 
 	/** 
 	 * 评论信息

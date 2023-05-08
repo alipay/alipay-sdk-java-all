@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.prodpaas.arrangement.rebate.rate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:46:34
+ * @since 1.0, 2023-05-04 21:10:39
  */
 public class AntProdpaasArrangementRebateRateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4864113613694921872L;
+	private static final long serialVersionUID = 7266557776344853864L;
 
 	/** 
 	 * 一级类目ID

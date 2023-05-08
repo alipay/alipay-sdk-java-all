@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.forest.certificate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:44:59
+ * @since 1.0, 2023-05-04 17:44:12
  */
 public class AlipaySocialForestCertificateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2321768649937654416L;
+	private static final long serialVersionUID = 4788145334354257552L;
 
 	/** 
 	 * 对应树种的证书数量，JSON

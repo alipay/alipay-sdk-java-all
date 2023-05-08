@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.topic.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:39:26
+ * @since 1.0, 2023-05-05 01:48:00
  */
 public class AlipayOpenPublicTopicModifyRequest implements AlipayRequest<AlipayOpenPublicTopicModifyResponse> {
 

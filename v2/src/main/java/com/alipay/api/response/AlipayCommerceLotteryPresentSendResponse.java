@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lottery.present.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:06:13
+ * @since 1.0, 2023-05-05 10:03:46
  */
 public class AlipayCommerceLotteryPresentSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6163635356214178847L;
+	private static final long serialVersionUID = 5653886558215331288L;
 
 	/** 
 	 * 是否赠送成功

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.data.bizadviser.memberprofile.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 17:41:22
+ * @since 1.0, 2023-05-05 09:27:53
  */
 public class KoubeiMarketingDataBizadviserMemberprofileQueryRequest implements AlipayRequest<KoubeiMarketingDataBizadviserMemberprofileQueryResponse> {
 

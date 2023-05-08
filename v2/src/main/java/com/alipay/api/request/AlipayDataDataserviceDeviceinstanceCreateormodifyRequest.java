@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.deviceinstance.createormodify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:54:11
+ * @since 1.0, 2023-05-05 06:39:07
  */
 public class AlipayDataDataserviceDeviceinstanceCreateormodifyRequest implements AlipayRequest<AlipayDataDataserviceDeviceinstanceCreateormodifyResponse> {
 

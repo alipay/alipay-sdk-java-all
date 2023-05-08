@@ -14,20 +14,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.delivery.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:48:01
+ * @since 1.0, 2023-05-05 07:31:57
  */
 public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7122186978515964873L;
+	private static final long serialVersionUID = 6272599716422267137L;
 
 	/** 
-	 * 投放计划基础信息。
+	 * 运营计划基础信息。
 	 */
 	@ApiField("delivery_base_info")
 	private DeliveryBaseInfo deliveryBaseInfo;
 
 	/** 
-	 * 投放的展位编码。
+	 * 运营计划的展位编码。 枚举值： SERVICE_MESSAGE：商家消息（包含订单、订阅、其他消息）
 	 */
 	@ApiField("delivery_booth_code")
 	private String deliveryBoothCode;
@@ -53,7 +53,7 @@ public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse
 	private List<PromoDeliveryInfo> deliveryInfoList;
 
 	/** 
-	 * 投放计划玩法配置。 限制：投放玩法配置有且仅能配置一个。
+	 * 运营计划发放配置。
 	 */
 	@ApiField("delivery_play_config")
 	private DeliveryPlayConfig deliveryPlayConfig;
@@ -65,7 +65,7 @@ public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse
 	private String deliveryStatus;
 
 	/** 
-	 * 投放计划定向规则。
+	 * 运营计划定向曝光规则。
 	 */
 	@ApiField("delivery_target_rule")
 	private DeliveryTargetRule deliveryTargetRule;

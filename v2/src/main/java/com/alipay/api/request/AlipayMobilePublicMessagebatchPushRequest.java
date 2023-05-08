@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.messagebatch.push request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:17:38
+ * @since 1.0, 2023-05-05 07:10:54
  */
 public class AlipayMobilePublicMessagebatchPushRequest implements AlipayRequest<AlipayMobilePublicMessagebatchPushResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.partner.settle.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:51:44
+ * @since 1.0, 2023-05-05 00:37:21
  */
 public class AlipayOpenOperationPartnerSettleSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1143628427697964384L;
+	private static final long serialVersionUID = 8118124899488423832L;
 
 	
 

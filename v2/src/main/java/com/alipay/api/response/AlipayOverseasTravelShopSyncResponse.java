@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.shop.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:07:47
+ * @since 1.0, 2023-05-05 00:29:41
  */
 public class AlipayOverseasTravelShopSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1391449836335864897L;
+	private static final long serialVersionUID = 5256245621532573552L;
 
 	/** 
 	 * 当前店铺业务状态。NORMAL：正常开业中；CLOSED

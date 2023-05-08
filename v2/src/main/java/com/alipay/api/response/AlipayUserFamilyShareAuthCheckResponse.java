@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.family.share.auth.check response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:07:10
+ * @since 1.0, 2023-05-04 19:40:48
  */
 public class AlipayUserFamilyShareAuthCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3688689236536644574L;
+	private static final long serialVersionUID = 4617931832469242341L;
 
 	/** 
 	 * 指定资源下这两个用户是否存在共享关系

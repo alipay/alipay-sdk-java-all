@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.creditrisk.dsdd.admit.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:43:11
+ * @since 1.0, 2023-05-04 17:28:49
  */
 public class MybankCreditCreditriskDsddAdmitConsultRequest implements AlipayRequest<MybankCreditCreditriskDsddAdmitConsultResponse> {
 

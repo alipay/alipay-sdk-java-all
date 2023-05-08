@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.searchbox.downgrade.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:06:47
+ * @since 1.0, 2023-05-04 23:11:53
  */
 public class AlipayOpenSearchboxDowngradePreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2272241533377329473L;
+	private static final long serialVersionUID = 4525184318832565913L;
 
 	/** 
 	 * 准入校验

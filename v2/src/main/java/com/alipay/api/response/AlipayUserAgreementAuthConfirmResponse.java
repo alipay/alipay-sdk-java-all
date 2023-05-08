@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.auth.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:35:16
+ * @since 1.0, 2023-05-04 13:58:21
  */
 public class AlipayUserAgreementAuthConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3857486378622752853L;
+	private static final long serialVersionUID = 8349872579767446426L;
 
 	
 

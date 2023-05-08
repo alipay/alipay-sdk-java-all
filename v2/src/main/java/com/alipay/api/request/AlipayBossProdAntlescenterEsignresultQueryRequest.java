@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.antlescenter.esignresult.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:22:12
+ * @since 1.0, 2023-05-04 17:54:09
  */
 public class AlipayBossProdAntlescenterEsignresultQueryRequest implements AlipayRequest<AlipayBossProdAntlescenterEsignresultQueryResponse> {
 

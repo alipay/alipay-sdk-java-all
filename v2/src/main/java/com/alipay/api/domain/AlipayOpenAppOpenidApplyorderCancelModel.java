@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消OpenID转换工单
  *
  * @author auto create
- * @since 1.0, 2023-04-07 10:13:50
+ * @since 1.0, 2023-04-24 14:46:34
  */
 public class AlipayOpenAppOpenidApplyorderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2898562999974592693L;
+	private static final long serialVersionUID = 4377729233628897878L;
 
 	/**
 	 * 工单唯一标识

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.authentication.initialize request
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:19:03
+ * @since 1.0, 2023-05-05 02:40:44
  */
 public class AlipaySecurityRiskAuthenticationInitializeRequest implements AlipayRequest<AlipaySecurityRiskAuthenticationInitializeResponse> {
 

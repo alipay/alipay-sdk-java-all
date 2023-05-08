@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.beacon.device.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:06:31
+ * @since 1.0, 2023-05-05 04:50:08
  */
 public class AlipayMobileBeaconDeviceDeleteRequest implements AlipayRequest<AlipayMobileBeaconDeviceDeleteResponse> {
 

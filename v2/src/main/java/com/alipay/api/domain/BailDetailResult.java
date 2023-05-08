@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保证金明细详情
  *
  * @author auto create
- * @since 1.0, 2023-04-05 19:35:13
+ * @since 1.0, 2023-05-05 19:49:16
  */
 public class BailDetailResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6185458652456968337L;
+	private static final long serialVersionUID = 7162343281911913622L;
 
 	/**
 	 * 保证金收支金额
@@ -26,7 +26,7 @@ public class BailDetailResult extends AlipayObject {
 	private String bailType;
 
 	/**
-	 * 保证金余额
+	 * 本次操作后的保证金余额。字段数据展示为"--"，表明数据暂未更新，请稍等1分钟后重试。
 	 */
 	@ApiField("balance")
 	private String balance;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.auth.zhimaorg.identity.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:18:45
+ * @since 1.0, 2023-05-04 17:47:51
  */
 public class AlipayUserAuthZhimaorgIdentityApplyRequest implements AlipayRequest<AlipayUserAuthZhimaorgIdentityApplyResponse> {
 

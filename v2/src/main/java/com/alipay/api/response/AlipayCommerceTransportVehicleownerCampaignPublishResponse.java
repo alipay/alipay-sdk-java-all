@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.campaign.publish response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:09:24
+ * @since 1.0, 2023-05-04 14:04:59
  */
 public class AlipayCommerceTransportVehicleownerCampaignPublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8739578259556564695L;
+	private static final long serialVersionUID = 5411922668363239349L;
 
 	/** 
 	 * 活动id

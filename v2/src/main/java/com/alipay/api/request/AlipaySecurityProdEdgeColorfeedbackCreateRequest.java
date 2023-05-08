@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.edge.colorfeedback.create request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:44:01
+ * @since 1.0, 2023-05-05 05:23:55
  */
 public class AlipaySecurityProdEdgeColorfeedbackCreateRequest implements AlipayRequest<AlipaySecurityProdEdgeColorfeedbackCreateResponse> {
 

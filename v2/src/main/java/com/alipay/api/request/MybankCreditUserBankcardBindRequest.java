@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.user.bankcard.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:42:55
+ * @since 1.0, 2023-05-05 05:47:49
  */
 public class MybankCreditUserBankcardBindRequest implements AlipayRequest<MybankCreditUserBankcardBindResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.marketing.mcaplatform.contract.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:28:56
+ * @since 1.0, 2023-05-04 14:51:55
  */
 public class MybankMarketingMcaplatformContractQueryRequest implements AlipayRequest<MybankMarketingMcaplatformContractQueryResponse> {
 

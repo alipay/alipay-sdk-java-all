@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antbooks.album.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-12 21:01:44
+ * @since 1.0, 2023-05-05 06:51:46
  */
 public class AlipayUserAntbooksAlbumSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4235855726291134987L;
+	private static final long serialVersionUID = 3472535518561274451L;
 
 	
 

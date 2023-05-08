@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则记录
  *
  * @author auto create
- * @since 1.0, 2022-11-11 14:14:37
+ * @since 1.0, 2023-04-26 15:56:28
  */
 public class EnterpriseOpenRuleRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4243127534514178614L;
+	private static final long serialVersionUID = 4628114888773893643L;
 
 	/**
 	 * 开票规则账单日
@@ -28,7 +28,7 @@ public class EnterpriseOpenRuleRecordInfo extends AlipayObject {
 	private Date effectiveStart;
 
 	/**
-	 * 企业ID【推荐使用】
+	 * 企业ID
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -46,13 +46,13 @@ public class EnterpriseOpenRuleRecordInfo extends AlipayObject {
 	private Date gmtModified;
 
 	/**
-	 * 开票规则id
+	 * 开票规则ID
 	 */
 	@ApiField("invoice_rule_id")
 	private String invoiceRuleId;
 
 	/**
-	 * 开票规则记录id
+	 * 开票规则记录ID
 	 */
 	@ApiField("invoice_rule_record_id")
 	private String invoiceRuleRecordId;
@@ -64,33 +64,31 @@ public class EnterpriseOpenRuleRecordInfo extends AlipayObject {
 	private String invoiceTitleId;
 
 	/**
-	 * 开票申请方：ENTERPRISE（企业发起），EMPLOYEE（员工发起）
+	 * 开票申请方
 	 */
 	@ApiField("open_applyer")
 	private String openApplyer;
 
 	/**
-	 * 开票模式：汇总开、笔笔开
-枚举定义：SUMMARY:汇总开
-SINGLE:单笔开
+	 * 开票模式
 	 */
 	@ApiField("open_mode")
 	private String openMode;
 
 	/**
-	 * 开票申请类型：AUTO（自动开票），MANUAL（手动开票）
+	 * 开票申请类型
 	 */
 	@ApiField("open_type")
 	private String openType;
 
 	/**
-	 * 企业共同账户ID【不推荐使用】
+	 * 企业共同账户ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 开票规则标记： DEFAULT-默认 EMPLOYEE_TITLE_FIRST-员工签约抬头优先于开票规则
+	 * 开票规则标记
 	 */
 	@ApiField("tag")
 	private String tag;

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.audio.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:45:31
+ * @since 1.0, 2023-05-04 21:17:12
  */
 public class AlipayCommerceIotDeviceAudioSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2799938245163321597L;
+	private static final long serialVersionUID = 1889936328289431937L;
 
 	
 

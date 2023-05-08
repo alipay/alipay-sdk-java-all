@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antfarm.projectinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:42:01
+ * @since 1.0, 2023-05-05 05:25:41
  */
 public class AlipaySocialAntfarmProjectinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4633679955758693785L;
+	private static final long serialVersionUID = 8381838473197492668L;
 
 	/** 
 	 * 正在进行的项目，含当前正在进行的标的物

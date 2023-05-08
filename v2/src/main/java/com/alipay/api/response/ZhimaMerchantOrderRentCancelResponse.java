@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.order.rent.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:15:51
+ * @since 1.0, 2023-05-05 02:44:57
  */
 public class ZhimaMerchantOrderRentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7661217695642137317L;
+	private static final long serialVersionUID = 4825329948112612433L;
 
 	
 

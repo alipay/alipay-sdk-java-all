@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlbumPriceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2782284235361189547L;
+	private static final long serialVersionUID = 5117956292243742548L;
 
 	/**
 	 * 已废弃。营销活动实际价格填写在promo_info中的discount_price

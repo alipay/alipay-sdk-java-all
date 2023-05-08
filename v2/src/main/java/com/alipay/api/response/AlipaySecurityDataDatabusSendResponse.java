@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.data.databus.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:01:28
+ * @since 1.0, 2023-05-05 08:54:36
  */
 public class AlipaySecurityDataDatabusSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5165136753321923726L;
+	private static final long serialVersionUID = 3796288483918873591L;
 
 	
 

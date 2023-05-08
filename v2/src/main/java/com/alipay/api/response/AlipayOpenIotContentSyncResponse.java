@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iot.content.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:06:46
+ * @since 1.0, 2023-05-05 01:51:59
  */
 public class AlipayOpenIotContentSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6561199813263291888L;
+	private static final long serialVersionUID = 1788396535785868182L;
 
 	/** 
 	 * 错误说明，错误情况会包含通用错误码中不包含的场景错误信息

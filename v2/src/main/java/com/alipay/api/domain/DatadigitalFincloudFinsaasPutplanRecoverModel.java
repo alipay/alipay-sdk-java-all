@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 恢复投放计划
  *
  * @author auto create
- * @since 1.0, 2022-07-21 17:28:01
+ * @since 1.0, 2023-05-04 11:29:08
  */
 public class DatadigitalFincloudFinsaasPutplanRecoverModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7445183835825257793L;
+	private static final long serialVersionUID = 4147137439812876921L;
 
 	/**
 	 * 操作人 id

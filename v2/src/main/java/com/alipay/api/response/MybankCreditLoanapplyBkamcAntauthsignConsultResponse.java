@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.bkamc.antauthsign.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:01:12
+ * @since 1.0, 2023-05-05 02:38:18
  */
 public class MybankCreditLoanapplyBkamcAntauthsignConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8649818555619474111L;
+	private static final long serialVersionUID = 3178434999568585199L;
 
 	/** 
 	 * 是否有授权

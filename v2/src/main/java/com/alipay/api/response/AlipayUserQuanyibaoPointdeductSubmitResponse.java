@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.quanyibao.pointdeduct.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:26:47
+ * @since 1.0, 2023-05-04 18:42:02
  */
 public class AlipayUserQuanyibaoPointdeductSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7265876658688347327L;
+	private static final long serialVersionUID = 2248594852758949115L;
 
 	
 

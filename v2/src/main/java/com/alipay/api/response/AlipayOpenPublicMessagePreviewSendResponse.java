@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.message.preview.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:57:18
+ * @since 1.0, 2023-05-05 03:01:22
  */
 public class AlipayOpenPublicMessagePreviewSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4259195437496342492L;
+	private static final long serialVersionUID = 1353758943618737258L;
 
 	/** 
 	 * 消息发送错误数据

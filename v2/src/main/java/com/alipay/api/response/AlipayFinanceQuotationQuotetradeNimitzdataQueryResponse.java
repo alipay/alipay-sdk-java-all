@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.quotation.quotetrade.nimitzdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:26:47
+ * @since 1.0, 2023-05-04 14:57:03
  */
 public class AlipayFinanceQuotationQuotetradeNimitzdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5714538847634758816L;
+	private static final long serialVersionUID = 3181837881228235324L;
 
 	/** 
 	 * Nimitz数据返回结果，Json结构

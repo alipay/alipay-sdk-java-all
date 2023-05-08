@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.mall.trade.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:42:24
+ * @since 1.0, 2023-05-04 21:54:38
  */
 public class KoubeiMarketingMallTradeBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1242782892386126115L;
+	private static final long serialVersionUID = 4744852132138777155L;
 
 	/** 
 	 * 备注信息

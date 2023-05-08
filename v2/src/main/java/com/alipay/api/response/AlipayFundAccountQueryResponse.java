@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-14 11:36:45
+ * @since 1.0, 2023-05-06 14:46:53
  */
 public class AlipayFundAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6843358232266181745L;
+	private static final long serialVersionUID = 1839585276496885481L;
 
 	/** 
 	 * 账户可用余额，单位元，精确到小数点后两位。

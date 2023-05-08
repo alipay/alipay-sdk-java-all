@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlegalchain.ecseal.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:21:43
+ * @since 1.0, 2023-05-04 16:37:18
  */
 public class AlipayBossProdAntlegalchainEcsealApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1254831873563921946L;
+	private static final long serialVersionUID = 6353946242712963871L;
 
 	
 

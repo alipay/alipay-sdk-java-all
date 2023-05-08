@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.asset.voucher.template.info.querybudget request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:23:45
+ * @since 1.0, 2023-05-05 09:13:29
  */
 public class AlipayAssetVoucherTemplateInfoQuerybudgetRequest implements AlipayRequest<AlipayAssetVoucherTemplateInfoQuerybudgetResponse> {
 

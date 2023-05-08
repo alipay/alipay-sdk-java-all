@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.asset.issue.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:34:12
+ * @since 1.0, 2023-05-05 05:16:45
  */
 public class AnttechBlockchainFinanceAssetIssueQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7316129766543925224L;
+	private static final long serialVersionUID = 3834521761578349932L;
 
 	/** 
 	 * status=FAILED时，描述发行失败原因的错误码

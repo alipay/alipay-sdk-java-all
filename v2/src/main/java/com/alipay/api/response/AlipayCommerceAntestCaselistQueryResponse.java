@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.antest.caselist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:19:42
+ * @since 1.0, 2023-05-05 02:19:10
  */
 public class AlipayCommerceAntestCaselistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7779912378249787286L;
+	private static final long serialVersionUID = 4356373297834426214L;
 
 	/** 
 	 * 用例列表JSONString

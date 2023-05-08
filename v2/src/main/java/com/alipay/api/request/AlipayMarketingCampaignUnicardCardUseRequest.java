@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.unicard.card.use request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:45:08
+ * @since 1.0, 2023-05-05 10:02:52
  */
 public class AlipayMarketingCampaignUnicardCardUseRequest implements AlipayRequest<AlipayMarketingCampaignUnicardCardUseResponse> {
 

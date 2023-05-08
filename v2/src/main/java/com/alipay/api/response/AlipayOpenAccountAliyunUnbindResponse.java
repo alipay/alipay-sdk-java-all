@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.account.aliyun.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:40:53
+ * @since 1.0, 2023-05-04 21:21:17
  */
 public class AlipayOpenAccountAliyunUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7646624787629815686L;
+	private static final long serialVersionUID = 3136794164956772576L;
 
 	/** 
 	 * 解绑结果，true解绑成功，false解绑失败

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.wifi.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:40:03
+ * @since 1.0, 2023-05-04 22:26:18
  */
 public class AlipayCommerceIotWifiSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6729755245765486945L;
+	private static final long serialVersionUID = 7582491521612693776L;
 
 	
 

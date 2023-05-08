@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.qualified.investor.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:29:43
+ * @since 1.0, 2023-05-04 22:43:11
  */
 public class AntfortuneStockQualifiedInvestorApplyRequest implements AlipayRequest<AntfortuneStockQualifiedInvestorApplyResponse> {
 

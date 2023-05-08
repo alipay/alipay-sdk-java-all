@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.insurance.apply.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:44:28
+ * @since 1.0, 2023-05-04 13:54:03
  */
 public class AnttechBlockchainDefinInsuranceApplyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4487341185783916515L;
+	private static final long serialVersionUID = 6742352358478146519L;
 
 	/** 
 	 * 保额

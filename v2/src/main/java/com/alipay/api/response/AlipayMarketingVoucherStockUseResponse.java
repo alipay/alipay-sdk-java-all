@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.stock.use response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:24:22
+ * @since 1.0, 2023-05-05 01:02:45
  */
 public class AlipayMarketingVoucherStockUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4382176611547438497L;
+	private static final long serialVersionUID = 5325315259684779825L;
 
 	/** 
 	 * 返回如果为空，说明没有核销成功；如果不为空，长度一定是28，表示的是核销序号。该值唯一对应一个券码，即入参中的entity_no

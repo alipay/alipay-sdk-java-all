@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaDataMorseOperateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1513485921784175941L;
+	private static final long serialVersionUID = 1235458733614447951L;
 
 	/**
 	 * 外部商户发送给域内系统的信息

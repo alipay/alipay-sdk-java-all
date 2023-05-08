@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.safebox.condition.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:11:46
+ * @since 1.0, 2023-05-05 03:41:56
  */
 public class AlipayUserSafeboxConditionQueryRequest implements AlipayRequest<AlipayUserSafeboxConditionQueryResponse> {
 

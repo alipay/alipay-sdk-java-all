@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.settle.efund.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:21:57
+ * @since 1.0, 2023-05-05 03:31:51
  */
 public class AlipayTradeSettleEfundQueryRequest implements AlipayRequest<AlipayTradeSettleEfundQueryResponse> {
 

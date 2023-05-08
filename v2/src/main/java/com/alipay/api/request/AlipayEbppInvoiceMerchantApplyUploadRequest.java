@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.merchant.apply.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-04-18 17:26:14
+ * @since 1.0, 2023-05-05 15:26:12
  */
 public class AlipayEbppInvoiceMerchantApplyUploadRequest implements AlipayUploadRequest<AlipayEbppInvoiceMerchantApplyUploadResponse> {
 
@@ -31,8 +31,7 @@ public class AlipayEbppInvoiceMerchantApplyUploadRequest implements AlipayUpload
 	private String batchId;
 
 	/** 
-	* 合计含税金额（开票金额），格式为2位小数。
-当开红票时，该字段为负数。
+	* 合计含税金额（开票金额）
 	 */
 	private String invoiceAmount;
 
@@ -42,28 +41,22 @@ public class AlipayEbppInvoiceMerchantApplyUploadRequest implements AlipayUpload
 	private String invoiceCode;
 
 	/** 
-	* 开票日期，格式 yyyy-MM-dd.
+	* 开票日期
 	 */
 	private String invoiceDate;
 
 	/** 
-	* 发票板式文件数据，字节数据。
-最大20m
+	* 发票板式文件数据
 	 */
 	private FileItem invoiceFileData;
 
 	/** 
-	* 发票板式文件类型，可选址 pdf，ofd
+	* 发票板式文件类型
 	 */
 	private String invoiceFileType;
 
 	/** 
 	* 开票发票类型
-可选值：
-0: 电子普票；
-1：纸质普票（暂不支持）
-2：纸质专票（暂不支持）
-3：电子专票；
 	 */
 	private Long invoiceKind;
 
@@ -73,19 +66,17 @@ public class AlipayEbppInvoiceMerchantApplyUploadRequest implements AlipayUpload
 	private String invoiceNo;
 
 	/** 
-	* 发票(开票)类型，可选值：
-blue: 蓝票；
-red: 红票；
+	* 发票(开票)类型
 	 */
 	private String invoiceType;
 
 	/** 
-	* 原发票代码，红票时必传
+	* 原发票代码
 	 */
 	private String normalInvoiceCode;
 
 	/** 
-	* 原发票号码，红票时必传
+	* 原发票号码
 	 */
 	private String normalInvoiceNo;
 
@@ -115,7 +106,7 @@ red: 红票；
 	private String payeePhone;
 
 	/** 
-	* 销方税务登记证号。由大写字母或数字组成，长度要求15~20位
+	* 销方税务登记证号
 	 */
 	private String payeeRegisterNo;
 
@@ -130,14 +121,12 @@ red: 红票；
 	private String payerRegisterNo;
 
 	/** 
-	* 合计金额（不含税），格式为2位小数。
-当开红票时，该字段为负数。
+	* 合计金额（不含税）
 	 */
 	private String sumPrice;
 
 	/** 
-	* 税额，格式为2位小数。
-当开红票时，该字段为0或负数。
+	* 税额
 	 */
 	private String sumTax;
 

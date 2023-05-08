@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.order.rent.complete response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:26:51
+ * @since 1.0, 2023-05-04 20:01:58
  */
 public class ZhimaMerchantOrderRentCompleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7541936566375276624L;
+	private static final long serialVersionUID = 7196633726311825127L;
 
 	/** 
 	 * 资金流水号，用于商户与支付宝进行对账

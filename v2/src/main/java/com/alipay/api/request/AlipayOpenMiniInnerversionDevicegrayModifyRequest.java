@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innerversion.devicegray.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:06:43
+ * @since 1.0, 2023-05-04 17:56:56
  */
 public class AlipayOpenMiniInnerversionDevicegrayModifyRequest implements AlipayRequest<AlipayOpenMiniInnerversionDevicegrayModifyResponse> {
 

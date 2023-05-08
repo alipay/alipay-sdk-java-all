@@ -10,44 +10,39 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票申请状态变更
  *
  * @author auto create
- * @since 1.0, 2023-04-18 17:27:01
+ * @since 1.0, 2023-05-04 14:21:16
  */
 public class AlipayEbppInvoiceMerchantApplyModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4854969563348122599L;
+	private static final long serialVersionUID = 8553875276654692929L;
 
 	/**
-	 * 发票申请ID, 由支付宝发票平台生成，申请单唯一标识，接口幂等字段.
+	 * 发票申请ID
 	 */
 	@ApiField("apply_id")
 	private String applyId;
 
 	/**
-	 * 原因说明，申请失败时必填
+	 * 申请失败原因说明
 	 */
 	@ApiField("apply_result_memo")
 	private String applyResultMemo;
 
 	/**
-	 * 申请状态，可选值：
-apply_success: 申请受理成功
-waiting_pull：待拉取 
-inv_success: 开票成功；
-inv_fail：开票失败
+	 * 申请状态
 	 */
 	@ApiField("apply_status")
 	private String applyStatus;
 
 	/**
 	 * 已开具成功的发票
-申请状态为inv_success时必填
 	 */
 	@ApiListField("attach_invoices")
 	@ApiField("merchant_invoice_u_k_d_t_o")
 	private List<MerchantInvoiceUKDTO> attachInvoices;
 
 	/**
-	 * 批次id
+	 * 批次ID
 	 */
 	@ApiField("batch_id")
 	private String batchId;

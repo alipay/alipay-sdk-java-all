@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.taxi.orderlist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:26:46
+ * @since 1.0, 2023-05-05 14:57:54
  */
 public class AlipayCommerceTransportTaxiOrderlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1219769144733281536L;
+	private static final long serialVersionUID = 8873237165442334843L;
 
 	/** 
 	 * 出租车订单列表

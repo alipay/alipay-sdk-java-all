@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.marketing.discount.preuse response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:06:10
+ * @since 1.0, 2023-05-05 04:07:25
  */
 public class AlipayInsMarketingDiscountPreuseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2736765214172677678L;
+	private static final long serialVersionUID = 4424645538927556575L;
 
 	/** 
 	 * 预核销活动列表

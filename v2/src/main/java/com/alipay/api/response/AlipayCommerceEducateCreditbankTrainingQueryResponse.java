@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.creditbank.training.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:40:26
+ * @since 1.0, 2023-05-05 09:42:14
  */
 public class AlipayCommerceEducateCreditbankTrainingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1456313295562654795L;
+	private static final long serialVersionUID = 2228881486432679144L;
 
 	/** 
 	 * 培训记录

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.seller.activity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:50:15
+ * @since 1.0, 2023-05-04 18:12:51
  */
 public class AlipayInsSceneSellerActivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8121393376873117842L;
+	private static final long serialVersionUID = 5839186359318167486L;
 
 	/** 
 	 * 关于签约查询结果的告知

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.base.process.instance.addmemo response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:03:04
+ * @since 1.0, 2023-05-04 20:04:50
  */
 public class AlipayBossBaseProcessInstanceAddmemoResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6331489761827526443L;
+	private static final long serialVersionUID = 3666177168643784197L;
 
 	
 

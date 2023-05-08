@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.user.role.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:34:18
+ * @since 1.0, 2023-05-04 21:07:26
  */
 public class MybankCreditUserRoleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8347396418551434377L;
+	private static final long serialVersionUID = 6515239584125582888L;
 
 	/** 
 	 * 证件名称

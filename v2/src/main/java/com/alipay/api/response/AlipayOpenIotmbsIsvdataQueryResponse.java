@@ -10,21 +10,21 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.isvdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:56:44
+ * @since 1.0, 2023-05-08 09:56:50
  */
 public class AlipayOpenIotmbsIsvdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6749328764559695595L;
+	private static final long serialVersionUID = 3843945924567418685L;
 
 	/** 
-	 * 参数名：content_list+使用场景：根据查询类型和查询条件返回isv下的酒店id或设备sn或绑定的outfaceId（isv创建并写入的数据）+枚举值：无
+	 * 根据查询类型和查询条件返回isv下的酒店id或设备sn或绑定的outfaceId（isv创建并写入的数据）
 	 */
 	@ApiListField("content_list")
 	@ApiField("string")
 	private List<String> contentList;
 
 	/** 
-	 * 参数名：list_total_count+使用场景：返回查询的数据的总条数+枚举值：无
+	 * 返回查询的数据的总条数
 	 */
 	@ApiField("list_total_count")
 	private Long listTotalCount;

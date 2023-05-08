@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.voucher.batch.expire request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:51:44
+ * @since 1.0, 2023-05-05 00:01:48
  */
 public class AlipayMarketingVoucherBatchExpireRequest implements AlipayRequest<AlipayMarketingVoucherBatchExpireResponse> {
 

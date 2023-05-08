@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfacceptance.syncbill.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:32:23
+ * @since 1.0, 2023-05-04 14:15:36
  */
 public class AlipayBossFncGfacceptanceSyncbillCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8188362771641536338L;
+	private static final long serialVersionUID = 1799985929455396545L;
 
 	/** 
 	 * 业财受理结果

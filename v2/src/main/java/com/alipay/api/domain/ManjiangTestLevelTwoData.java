@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * manjiang测试两层复杂结构
  *
  * @author auto create
- * @since 1.0, 2022-09-17 21:46:45
+ * @since 1.0, 2023-04-21 11:33:29
  */
 public class ManjiangTestLevelTwoData extends AlipayObject {
 
-	private static final long serialVersionUID = 6546118265142522724L;
+	private static final long serialVersionUID = 2253583761593713216L;
 
 	/**
 	 * 1
 	 */
 	@ApiField("open_json")
 	private String openJson;
+
+	/**
+	 * 1
+	 */
+	@ApiField("sss")
+	private ManjiangTestabc sss;
 
 	/**
 	 * 1
@@ -36,6 +42,13 @@ public class ManjiangTestLevelTwoData extends AlipayObject {
 	}
 	public void setOpenJson(String openJson) {
 		this.openJson = openJson;
+	}
+
+	public ManjiangTestabc getSss() {
+		return this.sss;
+	}
+	public void setSss(ManjiangTestabc sss) {
+		this.sss = sss;
 	}
 
 	public ManjiangTestComplexOneData getTestComple2() {

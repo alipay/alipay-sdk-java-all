@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.product.code.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:26:06
+ * @since 1.0, 2023-05-04 14:18:46
  */
 public class ZhimaCreditEpProductCodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4172748913684252435L;
+	private static final long serialVersionUID = 3486676535857334795L;
 
 	/** 
 	 * 业务明细信息：

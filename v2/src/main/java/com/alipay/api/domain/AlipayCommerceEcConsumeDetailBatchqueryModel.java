@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单详情批量查询
  *
  * @author auto create
- * @since 1.0, 2023-04-19 16:14:03
+ * @since 1.0, 2023-05-04 14:42:16
  */
 public class AlipayCommerceEcConsumeDetailBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7227475275814565855L;
+	private static final long serialVersionUID = 5329299722921234821L;
 
 	/**
-	 * 共同账户ID，有企业ID可不传
+	 * 共同账户ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号，有企业ID可不传
+	 * 授权签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
-	 * 截止时间，格式：yyyy-MM-dd HH:mm:ss，起始和截止时间不能大于31天。
+	 * 截止时间
 	 */
 	@ApiField("end_date")
 	private String endDate;
@@ -38,19 +38,19 @@ public class AlipayCommerceEcConsumeDetailBatchqueryModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 页数，本参数为空或小于1默认显示第一页。
+	 * 页码
 	 */
 	@ApiField("page_num")
 	private String pageNum;
 
 	/**
-	 * 每页大小，本参数为空或小于1默认20条，超过20默认按20条查询；不足20条则按实际记录数返回。
+	 * 每页大小
 	 */
 	@ApiField("page_size")
 	private String pageSize;
 
 	/**
-	 * 起始时间，格式：yyyy-MM-dd HH:mm:ss
+	 * 起始时间
 	 */
 	@ApiField("start_date")
 	private String startDate;

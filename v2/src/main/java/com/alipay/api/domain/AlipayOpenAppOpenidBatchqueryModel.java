@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据支付宝用户ID批量获取用户OpenId和UnionId
  *
  * @author auto create
- * @since 1.0, 2023-04-07 10:08:22
+ * @since 1.0, 2023-04-24 14:46:37
  */
 public class AlipayOpenAppOpenidBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7491719648842872328L;
+	private static final long serialVersionUID = 3547233988843989444L;
 
 	/**
 	 * 工单唯一标识

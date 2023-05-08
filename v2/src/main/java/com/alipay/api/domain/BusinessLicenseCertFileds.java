@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusinessLicenseCertFileds extends AlipayObject {
 
-	private static final long serialVersionUID = 3691822997277875291L;
+	private static final long serialVersionUID = 2216783591179138178L;
 
 	/**
 	 * 社会信用代码

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.chat.msg.send request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:01:46
+ * @since 1.0, 2023-05-05 01:16:58
  */
 public class AlipaySocialBaseChatMsgSendRequest implements AlipayRequest<AlipaySocialBaseChatMsgSendResponse> {
 

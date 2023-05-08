@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.recruit.enroll.close request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:31:42
+ * @since 1.0, 2023-05-05 01:06:52
  */
 public class AlipayMarketingCampaignRecruitEnrollCloseRequest implements AlipayRequest<AlipayMarketingCampaignRecruitEnrollCloseResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.putplan.pause request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:07:59
+ * @since 1.0, 2023-05-04 19:41:03
  */
 public class DatadigitalFincloudFinsaasPutplanPauseRequest implements AlipayRequest<DatadigitalFincloudFinsaasPutplanPauseResponse> {
 

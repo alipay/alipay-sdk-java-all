@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.cloud.app.permission.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-06 11:11:45
+ * @since 1.0, 2023-05-05 00:41:47
  */
 public class AlipayOpenCloudAppPermissionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2292781162366499262L;
+	private static final long serialVersionUID = 2736931582851532475L;
 
 	/** 
 	 * 拥有权限的接口列表

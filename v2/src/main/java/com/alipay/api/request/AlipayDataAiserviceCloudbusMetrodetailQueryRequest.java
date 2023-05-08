@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.cloudbus.metrodetail.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:15:03
+ * @since 1.0, 2023-05-04 21:26:01
  */
 public class AlipayDataAiserviceCloudbusMetrodetailQueryRequest implements AlipayRequest<AlipayDataAiserviceCloudbusMetrodetailQueryResponse> {
 

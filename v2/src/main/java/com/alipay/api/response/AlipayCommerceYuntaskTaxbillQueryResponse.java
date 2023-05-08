@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.taxbill.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:31:56
+ * @since 1.0, 2023-05-05 03:37:40
  */
 public class AlipayCommerceYuntaskTaxbillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2432269661527296539L;
+	private static final long serialVersionUID = 6296883542865131917L;
 
 	/** 
 	 * 签约状态

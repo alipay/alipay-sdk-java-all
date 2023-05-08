@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.data.scene.parkingout.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:03:55
+ * @since 1.0, 2023-05-04 20:28:42
  */
 public class KoubeiMarketingDataSceneParkingoutUploadRequest implements AlipayRequest<KoubeiMarketingDataSceneParkingoutUploadResponse> {
 

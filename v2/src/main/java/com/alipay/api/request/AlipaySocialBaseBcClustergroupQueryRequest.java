@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.bc.clustergroup.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:01:16
+ * @since 1.0, 2023-05-04 19:33:44
  */
 public class AlipaySocialBaseBcClustergroupQueryRequest implements AlipayRequest<AlipaySocialBaseBcClustergroupQueryResponse> {
 

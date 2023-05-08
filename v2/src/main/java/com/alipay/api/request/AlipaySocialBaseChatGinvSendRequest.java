@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.chat.ginv.send request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:18:31
+ * @since 1.0, 2023-05-04 14:27:14
  */
 public class AlipaySocialBaseChatGinvSendRequest implements AlipayRequest<AlipaySocialBaseChatGinvSendResponse> {
 

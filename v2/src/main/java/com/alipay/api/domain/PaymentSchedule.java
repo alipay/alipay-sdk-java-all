@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentSchedule extends AlipayObject {
 
-	private static final long serialVersionUID = 5897663548576567324L;
+	private static final long serialVersionUID = 7134659423636633684L;
 
 	/**
 	 * 还款日

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.morpho.token.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:39:24
+ * @since 1.0, 2023-05-05 00:06:26
  */
 public class AlipayOpenMiniMorphoTokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5785269927517686987L;
+	private static final long serialVersionUID = 4735277744754172423L;
 
 	/** 
 	 * 闪蝶 SDK Token

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.contentlib.standardcontent.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:36:49
+ * @since 1.0, 2023-05-04 15:06:48
  */
 public class AlipaySocialBaseContentlibStandardcontentBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1767517963585687882L;
+	private static final long serialVersionUID = 5767734958689578186L;
 
 	/** 
 	 * 内容详情列表

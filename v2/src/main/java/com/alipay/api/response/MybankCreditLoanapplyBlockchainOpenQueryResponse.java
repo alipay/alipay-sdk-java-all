@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.blockchain.open.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:28:12
+ * @since 1.0, 2023-05-05 05:38:13
  */
 public class MybankCreditLoanapplyBlockchainOpenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4677723247493274832L;
+	private static final long serialVersionUID = 4861833216781684227L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.arrangement.offline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:14:23
+ * @since 1.0, 2023-05-05 03:13:53
  */
 public class AlipayBossProdArrangementOfflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1636746732486425149L;
+	private static final long serialVersionUID = 1314255454222553625L;
 
 	/** 
 	 * 商户的签约状态

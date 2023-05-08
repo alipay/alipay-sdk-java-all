@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.rate.data.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:01:23
+ * @since 1.0, 2023-05-05 10:13:02
  */
 public class AlipayOpenAppRateDataSyncRequest implements AlipayRequest<AlipayOpenAppRateDataSyncResponse> {
 

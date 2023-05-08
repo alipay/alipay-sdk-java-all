@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.campaign.bkpromoguardbase.lmitemdelete.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:16:43
+ * @since 1.0, 2023-05-05 07:51:49
  */
 public class MybankMarketingCampaignBkpromoguardbaseLmitemdeleteSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7185745855186699997L;
+	private static final long serialVersionUID = 4365212247226853778L;
 
 	/** 
 	 * request_id + 唯一 + LinkedMall商品删除同步场景 +返回请求中的服务标识

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.privacy.systemfield.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:42:13
+ * @since 1.0, 2023-05-04 22:34:06
  */
 public class AlipayOpenMiniPrivacySystemfieldQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1324588279132686687L;
+	private static final long serialVersionUID = 4268636185828318725L;
 
 	/** 
 	 * 小程序使用的系统定义的隐私字段

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.auto.autoaftermarket.outorder.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:43:17
+ * @since 1.0, 2023-05-04 21:24:16
  */
 public class AlipayInsAutoAutoaftermarketOutorderSyncRequest implements AlipayRequest<AlipayInsAutoAutoaftermarketOutorderSyncResponse> {
 

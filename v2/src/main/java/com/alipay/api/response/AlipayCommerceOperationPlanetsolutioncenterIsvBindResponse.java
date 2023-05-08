@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.planetsolutioncenter.isv.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:13:46
+ * @since 1.0, 2023-05-04 22:52:11
  */
 public class AlipayCommerceOperationPlanetsolutioncenterIsvBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8752765389817597976L;
+	private static final long serialVersionUID = 2254915342579953794L;
 
 	/** 
 	 * 是否成功

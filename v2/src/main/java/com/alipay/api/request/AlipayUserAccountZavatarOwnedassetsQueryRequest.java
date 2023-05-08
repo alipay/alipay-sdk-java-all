@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.zavatar.ownedassets.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:51:43
+ * @since 1.0, 2023-05-05 08:52:03
  */
 public class AlipayUserAccountZavatarOwnedassetsQueryRequest implements AlipayRequest<AlipayUserAccountZavatarOwnedassetsQueryResponse> {
 

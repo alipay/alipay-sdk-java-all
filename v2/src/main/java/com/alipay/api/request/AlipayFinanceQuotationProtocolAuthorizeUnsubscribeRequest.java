@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.quotation.protocol.authorize.unsubscribe request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:46:47
+ * @since 1.0, 2023-05-04 23:21:50
  */
 public class AlipayFinanceQuotationProtocolAuthorizeUnsubscribeRequest implements AlipayRequest<AlipayFinanceQuotationProtocolAuthorizeUnsubscribeResponse> {
 

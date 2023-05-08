@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.fee.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:56:46
+ * @since 1.0, 2023-05-05 06:11:48
  */
 public class DatadigitalFincloudGeneralsaasFaceFeeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8786881961526472575L;
+	private static final long serialVersionUID = 3239459452449859195L;
 
 	/** 
 	 * certify_id：要查询计费状态的单据

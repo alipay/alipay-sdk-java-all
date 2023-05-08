@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.contract.apply.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:01:43
+ * @since 1.0, 2023-05-05 10:06:58
  */
 public class AlipayCommerceEcContractApplyUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5814497935975873475L;
+	private static final long serialVersionUID = 5114372937448482197L;
 
 	/** 
 	 * 解约链接

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.cashpool.rulegroup.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:18:59
+ * @since 1.0, 2023-05-05 00:42:14
  */
 public class AlipayAccountCashpoolRulegroupModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4645691967383757664L;
+	private static final long serialVersionUID = 5739142298114241617L;
 
 	
 

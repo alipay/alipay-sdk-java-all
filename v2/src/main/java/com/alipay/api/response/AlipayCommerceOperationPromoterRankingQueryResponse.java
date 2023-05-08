@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.promoter.ranking.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:59:21
+ * @since 1.0, 2023-05-05 07:54:30
  */
 public class AlipayCommerceOperationPromoterRankingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3386995766666693333L;
+	private static final long serialVersionUID = 7779683481159786372L;
 
 	/** 
 	 * 排名信息

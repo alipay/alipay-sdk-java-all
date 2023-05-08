@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.order.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:26:43
+ * @since 1.0, 2023-05-05 04:40:42
  */
 public class AlipayBusinessOrderPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7224131982228956132L;
+	private static final long serialVersionUID = 4343131157326992897L;
 
 	/** 
 	 * 商户外部订单号

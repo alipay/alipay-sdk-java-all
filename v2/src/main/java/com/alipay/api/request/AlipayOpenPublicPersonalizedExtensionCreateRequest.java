@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.personalized.extension.create request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:14:55
+ * @since 1.0, 2023-05-04 23:04:40
  */
 public class AlipayOpenPublicPersonalizedExtensionCreateRequest implements AlipayRequest<AlipayOpenPublicPersonalizedExtensionCreateResponse> {
 

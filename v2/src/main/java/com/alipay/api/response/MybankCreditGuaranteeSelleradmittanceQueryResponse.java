@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.guarantee.selleradmittance.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:15:44
+ * @since 1.0, 2023-05-04 14:17:38
  */
 public class MybankCreditGuaranteeSelleradmittanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8286159984876746655L;
+	private static final long serialVersionUID = 4231732143486876737L;
 
 	/** 
 	 * 查询decision是否准入。为空表示不准入

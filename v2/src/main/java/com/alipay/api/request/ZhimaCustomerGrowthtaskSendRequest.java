@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.growthtask.send request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:36:42
+ * @since 1.0, 2023-05-04 22:11:55
  */
 public class ZhimaCustomerGrowthtaskSendRequest implements AlipayRequest<ZhimaCustomerGrowthtaskSendResponse> {
 

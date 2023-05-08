@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.progov.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-07 15:06:44
+ * @since 1.0, 2023-05-05 03:36:53
  */
 public class AlipayFincoreProgovQueryRequest implements AlipayRequest<AlipayFincoreProgovQueryResponse> {
 

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 批量代发转账接口
  *
  * @author auto create
- * @since 1.0, 2022-09-06 22:15:42
+ * @since 1.0, 2023-05-05 16:16:50
  */
 public class AlipayFundBatchUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1192846577959399624L;
+	private static final long serialVersionUID = 4692632155668233496L;
 
 	/**
 	 * 业务场景。不同场景值不同，具体值联系支付宝确认。
@@ -24,6 +27,12 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 	 */
 	@ApiField("business_params")
 	private String businessParams;
+
+	/**
+	 * 关联的资金单据ID，非必需。特定业务场景需要关联历史单据进行推进，如当前业务接入指南未标注此字段则可忽略。
+	 */
+	@ApiField("original_order_id")
+	private String originalOrderId;
 
 	/**
 	 * 商户的批次号
@@ -64,8 +73,9 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 	/**
 	 * 收款信息列表。实际集合可以添加多个收款方信息，最多可以添加1000个收款方信息，如方案接入文档有特别说明，优先以接入文档为准
 	 */
-	@ApiField("trans_order_list")
-	private TransOrderDetail transOrderList;
+	@ApiListField("trans_order_list")
+	@ApiField("trans_order_detail")
+	private List<TransOrderDetail> transOrderList;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -79,6 +89,13 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 	}
 	public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
+	}
+
+	public String getOriginalOrderId() {
+		return this.originalOrderId;
+	}
+	public void setOriginalOrderId(String originalOrderId) {
+		this.originalOrderId = originalOrderId;
 	}
 
 	public String getOutBatchNo() {
@@ -123,10 +140,10 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 		this.totalTransAmount = totalTransAmount;
 	}
 
-	public TransOrderDetail getTransOrderList() {
+	public List<TransOrderDetail> getTransOrderList() {
 		return this.transOrderList;
 	}
-	public void setTransOrderList(TransOrderDetail transOrderList) {
+	public void setTransOrderList(List<TransOrderDetail> transOrderList) {
 		this.transOrderList = transOrderList;
 	}
 

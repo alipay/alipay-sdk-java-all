@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.charity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:13:04
+ * @since 1.0, 2023-05-04 15:21:29
  */
 public class AlipayCommerceRecycleCharityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1321176174828714857L;
+	private static final long serialVersionUID = 3189455465176748697L;
 
 	/** 
 	 * 公益捐赠项目列表

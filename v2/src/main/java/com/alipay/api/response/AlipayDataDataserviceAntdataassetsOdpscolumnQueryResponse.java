@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.antdataassets.odpscolumn.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:24:40
+ * @since 1.0, 2023-05-05 09:31:50
  */
 public class AlipayDataDataserviceAntdataassetsOdpscolumnQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2293815339622641179L;
+	private static final long serialVersionUID = 3114277168177841926L;
 
 	/** 
 	 * ODPS的列信息，包含ODPS字段名和字段类型

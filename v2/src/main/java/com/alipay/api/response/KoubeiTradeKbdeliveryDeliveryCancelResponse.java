@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.kbdelivery.delivery.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:25:54
+ * @since 1.0, 2023-05-05 06:29:23
  */
 public class KoubeiTradeKbdeliveryDeliveryCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5564712638969161683L;
+	private static final long serialVersionUID = 2657594254376827169L;
 
 	/** 
 	 * 成功关闭时间，时间格式:

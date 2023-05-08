@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.security.risk.event.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:22:26
+ * @since 1.0, 2023-05-04 20:02:20
  */
 public class KoubeiSecurityRiskEventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4888728999311619351L;
+	private static final long serialVersionUID = 1659837772178247519L;
 
 	
 

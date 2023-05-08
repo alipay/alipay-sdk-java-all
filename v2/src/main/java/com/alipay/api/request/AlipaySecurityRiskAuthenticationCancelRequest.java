@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.authentication.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:08:45
+ * @since 1.0, 2023-05-04 19:12:27
  */
 public class AlipaySecurityRiskAuthenticationCancelRequest implements AlipayRequest<AlipaySecurityRiskAuthenticationCancelResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.ocr.carvin.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:08:40
+ * @since 1.0, 2023-05-04 15:29:00
  */
 public class AlipayIserviceCognitiveOcrCarvinQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2685438841397587152L;
+	private static final long serialVersionUID = 5349914896361562919L;
 
 	/** 
 	 * 服务id，唯一标示服务请求

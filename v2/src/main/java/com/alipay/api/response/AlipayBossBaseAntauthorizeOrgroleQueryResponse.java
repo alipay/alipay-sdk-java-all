@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.base.antauthorize.orgrole.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:13:52
+ * @since 1.0, 2023-05-04 15:40:16
  */
 public class AlipayBossBaseAntauthorizeOrgroleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8888119184766868828L;
+	private static final long serialVersionUID = 8791627255694895146L;
 
 	/** 
 	 * 组织节点上人员信息

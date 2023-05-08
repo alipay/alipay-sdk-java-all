@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.membercard.config.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:38:40
+ * @since 1.0, 2023-05-05 08:24:34
  */
 public class AntMerchantExpandMembercardConfigConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4817747856756155159L;
+	private static final long serialVersionUID = 3436697533167583999L;
 
 	/** 
 	 * 商户不存在;

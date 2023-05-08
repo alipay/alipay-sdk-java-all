@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.merchant.credit.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:38:42
+ * @since 1.0, 2023-05-04 21:37:42
  */
 public class AlipayTradeMerchantCreditInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2233286483271695735L;
+	private static final long serialVersionUID = 1374851888362646841L;
 
 	/** 
 	 * 卖家可授信分配的额度单位为元，精确到小数点后两位，取值范围[0.01,100000000]

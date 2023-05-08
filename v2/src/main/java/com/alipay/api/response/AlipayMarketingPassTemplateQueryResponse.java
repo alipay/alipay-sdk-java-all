@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.pass.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:19:40
+ * @since 1.0, 2023-05-05 00:52:23
  */
 public class AlipayMarketingPassTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5692755665435254385L;
+	private static final long serialVersionUID = 3897527364814866677L;
 
 	/** 
 	 * 当前查询的页码，页码从1开始

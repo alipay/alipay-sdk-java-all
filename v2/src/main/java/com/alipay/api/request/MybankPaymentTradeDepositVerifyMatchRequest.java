@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.payment.trade.deposit.verify.match request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 00:29:13
+ * @since 1.0, 2023-05-05 08:33:40
  */
 public class MybankPaymentTradeDepositVerifyMatchRequest implements AlipayRequest<MybankPaymentTradeDepositVerifyMatchResponse> {
 

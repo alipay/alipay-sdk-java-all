@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.bill.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:22:37
+ * @since 1.0, 2023-05-04 15:16:51
  */
 public class AlipayEcoCplifeBillModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1674788651453156886L;
+	private static final long serialVersionUID = 2168164271315797996L;
 
 	/** 
 	 * 不允许修改（支付中或者支付完成）的账单明细条目列表

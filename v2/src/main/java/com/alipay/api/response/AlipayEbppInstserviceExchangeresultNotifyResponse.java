@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.exchangeresult.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:06:50
+ * @since 1.0, 2023-05-04 23:11:56
  */
 public class AlipayEbppInstserviceExchangeresultNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5658561911816656411L;
+	private static final long serialVersionUID = 3719411714613181294L;
 
 	
 

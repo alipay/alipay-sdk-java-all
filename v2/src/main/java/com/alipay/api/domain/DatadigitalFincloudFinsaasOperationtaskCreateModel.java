@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营任务创建
  *
  * @author auto create
- * @since 1.0, 2022-04-27 16:41:47
+ * @since 1.0, 2023-05-05 14:18:18
  */
 public class DatadigitalFincloudFinsaasOperationtaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7147273773653383418L;
+	private static final long serialVersionUID = 8564214139544863264L;
 
 	/**
 	 * comment + 运营任务创建 + 前端

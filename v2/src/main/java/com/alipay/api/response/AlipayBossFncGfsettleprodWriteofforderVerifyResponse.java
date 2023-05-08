@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.writeofforder.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:39:07
+ * @since 1.0, 2023-05-05 05:18:59
  */
 public class AlipayBossFncGfsettleprodWriteofforderVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3699312675628933339L;
+	private static final long serialVersionUID = 7585182539178134887L;
 
 	/** 
 	 * 核销处理结果返回

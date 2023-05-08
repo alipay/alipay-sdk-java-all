@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.apprecommend.account.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:51:52
+ * @since 1.0, 2023-05-05 08:46:51
  */
 public class AntMerchantExpandApprecommendAccountDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3231982293625869939L;
+	private static final long serialVersionUID = 2278314986682689661L;
 
 	
 

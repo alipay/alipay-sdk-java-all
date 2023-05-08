@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcapi.antigen.identify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:06:53
+ * @since 1.0, 2023-05-05 10:12:07
  */
 public class AlipayMsaasMediarecogMmtcapiAntigenIdentifyRequest implements AlipayRequest<AlipayMsaasMediarecogMmtcapiAntigenIdentifyResponse> {
 

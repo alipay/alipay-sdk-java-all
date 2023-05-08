@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.ctid.initialize request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:47:35
+ * @since 1.0, 2023-05-04 21:28:47
  */
 public class AlipaySecurityProdCtidInitializeRequest implements AlipayRequest<AlipaySecurityProdCtidInitializeResponse> {
 

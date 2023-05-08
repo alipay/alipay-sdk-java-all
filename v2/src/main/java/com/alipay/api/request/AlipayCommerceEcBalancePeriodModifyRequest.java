@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.balance.period.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-19 16:13:03
+ * @since 1.0, 2023-05-04 22:32:00
  */
 public class AlipayCommerceEcBalancePeriodModifyRequest implements AlipayRequest<AlipayCommerceEcBalancePeriodModifyResponse> {
 

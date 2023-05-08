@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.iotdata.point.device.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:50:54
+ * @since 1.0, 2023-05-04 14:12:19
  */
 public class AlipayDataIotdataPointDeviceUnbindRequest implements AlipayRequest<AlipayDataIotdataPointDeviceUnbindResponse> {
 

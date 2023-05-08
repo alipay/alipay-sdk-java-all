@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.train.course.offline request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:58:07
+ * @since 1.0, 2023-05-05 05:04:06
  */
 public class AlipayCommerceEducateTrainCourseOfflineRequest implements AlipayRequest<AlipayCommerceEducateTrainCourseOfflineResponse> {
 

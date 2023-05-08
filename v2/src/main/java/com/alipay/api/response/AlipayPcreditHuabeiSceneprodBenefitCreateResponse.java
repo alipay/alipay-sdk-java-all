@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.sceneprod.benefit.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:07:46
+ * @since 1.0, 2023-05-05 00:44:43
  */
 public class AlipayPcreditHuabeiSceneprodBenefitCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2834375231173229896L;
+	private static final long serialVersionUID = 5863248741866746679L;
 
 	/** 
 	 * 权益ID，创建成功后返回

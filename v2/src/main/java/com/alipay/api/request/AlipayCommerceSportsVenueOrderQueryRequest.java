@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.venue.order.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:28:42
+ * @since 1.0, 2023-05-04 18:20:55
  */
 public class AlipayCommerceSportsVenueOrderQueryRequest implements AlipayRequest<AlipayCommerceSportsVenueOrderQueryResponse> {
 

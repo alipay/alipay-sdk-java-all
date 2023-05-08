@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于传递用户和支付宝的协议相关信息，json格式
  *
  * @author auto create
- * @since 1.0, 2023-03-01 16:55:51
+ * @since 1.0, 2023-04-27 16:59:14
  */
 public class AgreementParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3758897498291849739L;
+	private static final long serialVersionUID = 2738913433297164362L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ）

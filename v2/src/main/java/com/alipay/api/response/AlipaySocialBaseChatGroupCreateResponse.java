@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.chat.group.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:18:13
+ * @since 1.0, 2023-05-05 03:45:45
  */
 public class AlipaySocialBaseChatGroupCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2247756125232419182L;
+	private static final long serialVersionUID = 6356724197578729398L;
 
 	/** 
 	 * 群信息

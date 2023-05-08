@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.finlease.consult.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 00:46:45
+ * @since 1.0, 2023-05-04 21:21:59
  */
 public class MybankCreditLoanapplyFinleaseConsultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6122242314186329459L;
+	private static final long serialVersionUID = 7673162967887935454L;
 
 	/** 
 	 * 是否准入，true表示准则，false表示不准入

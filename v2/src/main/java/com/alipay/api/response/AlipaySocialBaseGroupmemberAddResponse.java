@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.groupmember.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:46:45
+ * @since 1.0, 2023-05-04 16:47:07
  */
 public class AlipaySocialBaseGroupmemberAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6524652221743546815L;
+	private static final long serialVersionUID = 7712441924115495468L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.bail.operation.deposit.create request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:36:43
+ * @since 1.0, 2023-05-04 20:01:57
  */
 public class AlipayFundBailOperationDepositCreateRequest implements AlipayRequest<AlipayFundBailOperationDepositCreateResponse> {
 

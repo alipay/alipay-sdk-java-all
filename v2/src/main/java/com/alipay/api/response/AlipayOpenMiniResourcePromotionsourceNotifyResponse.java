@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.resource.promotionsource.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:21:15
+ * @since 1.0, 2023-05-05 02:24:41
  */
 public class AlipayOpenMiniResourcePromotionsourceNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2268888297841759567L;
+	private static final long serialVersionUID = 7893891653188133973L;
 
 	
 

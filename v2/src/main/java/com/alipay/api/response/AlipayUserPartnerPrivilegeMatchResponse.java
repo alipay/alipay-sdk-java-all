@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.partner.privilege.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:11:24
+ * @since 1.0, 2023-05-04 21:56:13
  */
 public class AlipayUserPartnerPrivilegeMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3342628662549294879L;
+	private static final long serialVersionUID = 3727327761217328467L;
 
 	
 

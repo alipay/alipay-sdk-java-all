@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.indirectisv.activity.effect response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:58:59
+ * @since 1.0, 2023-05-04 14:06:49
  */
 public class AlipayOfflineProviderIndirectisvActivityEffectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6437547621678249515L;
+	private static final long serialVersionUID = 6723879311772617123L;
 
 	
 

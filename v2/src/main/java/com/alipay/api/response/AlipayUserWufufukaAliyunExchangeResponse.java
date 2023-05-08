@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.wufufuka.aliyun.exchange response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:35:58
+ * @since 1.0, 2023-05-05 05:27:44
  */
 public class AlipayUserWufufukaAliyunExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6576282869661354864L;
+	private static final long serialVersionUID = 6754167173339389373L;
 
 	/** 
 	 * 是否需要回退+否+业务方判断是否回退+true/false+支付宝判断+失败情况判断

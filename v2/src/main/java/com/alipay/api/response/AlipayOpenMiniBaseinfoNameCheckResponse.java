@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.baseinfo.name.check response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:36:44
+ * @since 1.0, 2023-05-04 15:46:49
  */
 public class AlipayOpenMiniBaseinfoNameCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1594444753536118354L;
+	private static final long serialVersionUID = 2298912843342296177L;
 
 	/** 
 	 * 校验结果code

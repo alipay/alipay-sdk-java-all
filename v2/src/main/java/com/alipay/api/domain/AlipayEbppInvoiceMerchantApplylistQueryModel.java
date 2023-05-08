@@ -11,19 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询开票申请列表
  *
  * @author auto create
- * @since 1.0, 2023-04-18 17:33:08
+ * @since 1.0, 2023-05-04 14:21:18
  */
 public class AlipayEbppInvoiceMerchantApplylistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2571464384834576896L;
+	private static final long serialVersionUID = 3487698967871515282L;
 
 	/**
-	 * 申请状态列表，期望拉取的状态。
-申请状态，可选值：
-waiting_pull：待拉取 ;
-apply_success: 申请成功；
-inv_success: 开票成功；
-inv_fail：开票失败；
+	 * 申请状态列表
 	 */
 	@ApiListField("apply_status")
 	@ApiField("string")
@@ -42,13 +37,13 @@ inv_fail：开票失败；
 	private Date bizStartTime;
 
 	/**
-	 * 品牌名称，全局唯一，接入时约定
+	 * 品牌名称
 	 */
 	@ApiField("brand_name")
 	private String brandName;
 
 	/**
-	 * 支付宝商户id
+	 * 支付宝商户ID列表
 	 */
 	@ApiListField("merchant_id")
 	@ApiField("string")

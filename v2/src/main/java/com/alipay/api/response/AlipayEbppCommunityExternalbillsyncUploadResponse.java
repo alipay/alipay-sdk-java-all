@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.externalbillsync.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:43:32
+ * @since 1.0, 2023-05-04 20:36:29
  */
 public class AlipayEbppCommunityExternalbillsyncUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6314679999586422417L;
+	private static final long serialVersionUID = 8844238872424565376L;
 
 	/** 
 	 * 失败总数

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.nucleicremind.subscribe.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:11:49
+ * @since 1.0, 2023-05-05 10:12:06
  */
 public class AlipayEbppIndustryNucleicremindSubscribeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3472966167361135154L;
+	private static final long serialVersionUID = 1721989252214434821L;
 
 	/** 
 	 * 有效时间，单位小时

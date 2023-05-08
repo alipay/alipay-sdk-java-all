@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.autocheck.task.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:21:50
+ * @since 1.0, 2023-05-05 02:14:20
  */
 public class AlipayOpenMiniAutocheckTaskQueryRequest implements AlipayRequest<AlipayOpenMiniAutocheckTaskQueryResponse> {
 

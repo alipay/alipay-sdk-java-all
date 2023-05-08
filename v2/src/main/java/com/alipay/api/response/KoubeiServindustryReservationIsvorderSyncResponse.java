@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.reservation.isvorder.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:36:45
+ * @since 1.0, 2023-05-04 23:25:07
  */
 public class KoubeiServindustryReservationIsvorderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4321657932813472376L;
+	private static final long serialVersionUID = 6266345566594426983L;
 
 	/** 
 	 * 错误码

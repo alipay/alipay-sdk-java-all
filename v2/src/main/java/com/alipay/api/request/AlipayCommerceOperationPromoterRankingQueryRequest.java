@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.promoter.ranking.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:59:21
+ * @since 1.0, 2023-05-05 07:54:30
  */
 public class AlipayCommerceOperationPromoterRankingQueryRequest implements AlipayRequest<AlipayCommerceOperationPromoterRankingQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cityservice.ext.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:00:42
+ * @since 1.0, 2023-05-04 22:30:42
  */
 public class AlipayEcoCityserviceExtSyncRequest implements AlipayRequest<AlipayEcoCityserviceExtSyncResponse> {
 

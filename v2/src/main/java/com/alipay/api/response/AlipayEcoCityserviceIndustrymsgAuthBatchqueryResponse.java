@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.industrymsg.auth.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:16:52
+ * @since 1.0, 2023-05-05 03:47:03
  */
 public class AlipayEcoCityserviceIndustrymsgAuthBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3712894439191834228L;
+	private static final long serialVersionUID = 2353828486472958483L;
 
 	/** 
 	 * 筛选出来的在市民中心已订阅行业动帐消息的用户信息列表

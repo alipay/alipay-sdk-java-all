@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.exrate.config.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:18:22
+ * @since 1.0, 2023-05-05 02:45:36
  */
 public class AlipayAccountExrateConfigSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3416775496594874795L;
+	private static final long serialVersionUID = 3695737719778736877L;
 
 	/** 
 	 * 同步到主站的配置的bcode信息

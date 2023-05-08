@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.credit.autofinance.data.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:05:05
+ * @since 1.0, 2023-05-04 23:11:49
  */
 public class AlipayCreditAutofinanceDataBatchqueryRequest implements AlipayRequest<AlipayCreditAutofinanceDataBatchqueryResponse> {
 

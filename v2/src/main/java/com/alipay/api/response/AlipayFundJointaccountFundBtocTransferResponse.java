@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.fund.btoc.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:53:10
+ * @since 1.0, 2023-05-04 19:26:23
  */
 public class AlipayFundJointaccountFundBtocTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5446981834868876975L;
+	private static final long serialVersionUID = 4617879593283784848L;
 
 	/** 
 	 * 支付宝侧转账订单号

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.unicard.excode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:45:05
+ * @since 1.0, 2023-05-04 23:56:16
  */
 public class AlipayMarketingCampaignUnicardExcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7134927394292332457L;
+	private static final long serialVersionUID = 4296825116636852176L;
 
 	/** 
 	 * 城市码，具体的城市码与城市的映射关系需要联系支付宝研发人员确定，可能与公开数据有所出入。

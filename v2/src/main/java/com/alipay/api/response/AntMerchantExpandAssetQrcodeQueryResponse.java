@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.asset.qrcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:14:00
+ * @since 1.0, 2023-05-05 02:00:22
  */
 public class AntMerchantExpandAssetQrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3577718716748761474L;
+	private static final long serialVersionUID = 7768332337494545718L;
 
 	/** 
 	 * 码业务类型

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.quotation.quotetrade.tradedaystate.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:44:37
+ * @since 1.0, 2023-05-05 06:39:20
  */
 public class AlipayFinanceQuotationQuotetradeTradedaystateBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7122534714772691224L;
+	private static final long serialVersionUID = 4744527653948543879L;
 
 	/** 
 	 * 交易周期内的市场状态

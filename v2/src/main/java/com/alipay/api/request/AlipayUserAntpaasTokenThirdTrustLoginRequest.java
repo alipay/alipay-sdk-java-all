@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antpaas.token.third.trust.login request
  * 
  * @author auto create
- * @since 1.0, 2023-04-12 17:42:57
+ * @since 1.0, 2023-05-04 18:14:54
  */
 public class AlipayUserAntpaasTokenThirdTrustLoginRequest implements AlipayRequest<AlipayUserAntpaasTokenThirdTrustLoginResponse> {
 

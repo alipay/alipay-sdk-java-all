@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.promotion.receive request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:41:50
+ * @since 1.0, 2023-05-05 07:32:00
  */
 public class AlipayOverseasTravelPromotionReceiveRequest implements AlipayRequest<AlipayOverseasTravelPromotionReceiveResponse> {
 

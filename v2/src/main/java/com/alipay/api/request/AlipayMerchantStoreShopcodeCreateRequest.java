@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.store.shopcode.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:38:55
+ * @since 1.0, 2023-05-05 06:59:00
  */
 public class AlipayMerchantStoreShopcodeCreateRequest implements AlipayRequest<AlipayMerchantStoreShopcodeCreateResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.icrowd.tag.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:44:10
+ * @since 1.0, 2023-05-05 02:20:59
  */
 public class AlipayFundTransIcrowdTagModifyRequest implements AlipayRequest<AlipayFundTransIcrowdTagModifyResponse> {
 

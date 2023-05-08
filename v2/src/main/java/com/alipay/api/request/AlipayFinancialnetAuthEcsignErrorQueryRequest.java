@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.ecsign.error.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:36:21
+ * @since 1.0, 2023-05-04 22:22:31
  */
 public class AlipayFinancialnetAuthEcsignErrorQueryRequest implements AlipayRequest<AlipayFinancialnetAuthEcsignErrorQueryResponse> {
 

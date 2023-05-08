@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻证通行
  *
  * @author auto create
- * @since 1.0, 2023-04-07 15:00:06
+ * @since 1.0, 2023-04-27 10:23:43
  */
 public class ZhimaCustomerZmcardScoreCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5717855968291244149L;
+	private static final long serialVersionUID = 8273771374357483642L;
 
 	/**
 	 * 蚂蚁统一会员ID

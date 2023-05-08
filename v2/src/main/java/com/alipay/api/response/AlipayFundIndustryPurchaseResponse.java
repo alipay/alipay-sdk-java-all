@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.industry.purchase response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:31:45
+ * @since 1.0, 2023-05-05 03:46:51
  */
 public class AlipayFundIndustryPurchaseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7127921127315584974L;
+	private static final long serialVersionUID = 4346268644756123235L;
 
 	/** 
 	 * 实际基金申购的金额（单位元），与入参一致

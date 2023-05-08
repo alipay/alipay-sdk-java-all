@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.mrchsurplmitem.deletion.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:55:24
+ * @since 1.0, 2023-05-05 05:59:06
  */
 public class AlipayMerchantMrchsurplmitemDeletionSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3441185546678354214L;
+	private static final long serialVersionUID = 1638881713175413846L;
 
 	/** 
 	 * 请求ID

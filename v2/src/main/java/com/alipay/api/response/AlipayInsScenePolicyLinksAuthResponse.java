@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.policy.links.auth response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:59:58
+ * @since 1.0, 2023-05-05 09:11:13
  */
 public class AlipayInsScenePolicyLinksAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1772185929123214721L;
+	private static final long serialVersionUID = 5514286964189326468L;
 
 	/** 
 	 * 保单链接列表

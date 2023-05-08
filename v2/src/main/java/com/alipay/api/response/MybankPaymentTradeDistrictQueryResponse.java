@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.district.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:43:58
+ * @since 1.0, 2023-05-05 07:16:49
  */
 public class MybankPaymentTradeDistrictQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6167375326433524958L;
+	private static final long serialVersionUID = 2251119243435126957L;
 
 	/** 
 	 * District列表

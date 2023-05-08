@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.intelligent.shop.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:50:28
+ * @since 1.0, 2023-05-04 16:52:31
  */
 public class KoubeiMarketingCampaignIntelligentShopConsultRequest implements AlipayRequest<KoubeiMarketingCampaignIntelligentShopConsultResponse> {
 

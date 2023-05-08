@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.arinvoice.rcptamount.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:50:43
+ * @since 1.0, 2023-05-05 07:34:27
  */
 public class AlipayBossFncArinvoiceRcptamountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2194529898115892563L;
+	private static final long serialVersionUID = 3188632984687419975L;
 
 	/** 
 	 * 可开票总金额，可开票单据返回集合中可开票金额汇总

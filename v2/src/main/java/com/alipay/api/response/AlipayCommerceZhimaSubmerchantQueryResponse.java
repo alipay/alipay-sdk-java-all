@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.zhima.submerchant.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:46:47
+ * @since 1.0, 2023-05-04 14:51:52
  */
 public class AlipayCommerceZhimaSubmerchantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2243736166814174415L;
+	private static final long serialVersionUID = 2436225835877414867L;
 
 	/** 
 	 * 本次进件工单失败的原因

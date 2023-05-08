@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.prodmode.dropdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:00:40
+ * @since 1.0, 2023-05-05 04:57:40
  */
 public class AlipayEbppProdmodeDropdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8632513322989374598L;
+	private static final long serialVersionUID = 6812712984491112784L;
 
 	/** 
 	 * 返回业务类型、子业务类型、产品模式及销账模式下拉列表

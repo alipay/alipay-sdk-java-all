@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.sportshealth.account.rollback request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:56:47
+ * @since 1.0, 2023-05-04 23:46:55
  */
 public class AlipayUserSportshealthAccountRollbackRequest implements AlipayRequest<AlipayUserSportshealthAccountRollbackResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.userportrait.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 00:27:39
+ * @since 1.0, 2023-05-04 17:27:26
  */
 public class AlipayOpenMiniUserportraitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8384434823914297237L;
+	private static final long serialVersionUID = 2698254399383381962L;
 
 	/** 
 	 * 用户画像

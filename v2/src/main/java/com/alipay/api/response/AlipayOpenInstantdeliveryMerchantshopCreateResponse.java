@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.instantdelivery.merchantshop.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:02:10
+ * @since 1.0, 2023-05-04 18:17:30
  */
 public class AlipayOpenInstantdeliveryMerchantshopCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6468225865221234113L;
+	private static final long serialVersionUID = 5772299848672524861L;
 
 	/** 
 	 * 门店创建返回的结果。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.open.status.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-19 11:56:52
+ * @since 1.0, 2023-05-05 08:16:56
  */
 public class AntfortuneStockOpenStatusQueryRequest implements AlipayRequest<AntfortuneStockOpenStatusQueryResponse> {
 

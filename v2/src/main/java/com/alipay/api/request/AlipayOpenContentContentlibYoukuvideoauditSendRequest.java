@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.content.contentlib.youkuvideoaudit.send request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:29:05
+ * @since 1.0, 2023-05-04 16:52:17
  */
 public class AlipayOpenContentContentlibYoukuvideoauditSendRequest implements AlipayRequest<AlipayOpenContentContentlibYoukuvideoauditSendResponse> {
 

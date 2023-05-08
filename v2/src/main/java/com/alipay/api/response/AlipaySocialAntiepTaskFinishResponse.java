@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antiep.task.finish response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:21:49
+ * @since 1.0, 2023-05-04 14:02:01
  */
 public class AlipaySocialAntiepTaskFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6362822729686981212L;
+	private static final long serialVersionUID = 8233665921991127999L;
 
 	/** 
 	 * 完成任务结果的描述

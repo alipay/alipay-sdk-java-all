@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.benefit.checkavailable response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:26:46
+ * @since 1.0, 2023-05-05 00:06:48
  */
 public class AlipayInsAutoBenefitCheckavailableResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1154353837533632627L;
+	private static final long serialVersionUID = 4873421166546229274L;
 
 	/** 
 	 * 是否可以使用，0-否，1-是

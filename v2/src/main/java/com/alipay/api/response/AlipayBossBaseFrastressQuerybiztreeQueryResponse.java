@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.base.frastress.querybiztree.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:29:07
+ * @since 1.0, 2023-05-05 02:27:51
  */
 public class AlipayBossBaseFrastressQuerybiztreeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6829675565215359428L;
+	private static final long serialVersionUID = 8194841175273683884L;
 
 	/** 
 	 * BizTreeNode

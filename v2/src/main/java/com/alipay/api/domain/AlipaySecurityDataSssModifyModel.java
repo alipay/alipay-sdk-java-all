@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文档回归测试勿动openapi_noopenid_post多场景
  *
  * @author auto create
- * @since 1.0, 2022-11-20 16:27:56
+ * @since 1.0, 2023-04-27 15:18:48
  */
 public class AlipaySecurityDataSssModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6398314499554394473L;
+	private static final long serialVersionUID = 7869359884187959736L;
 
 	/**
 	 * 必须，复杂参数

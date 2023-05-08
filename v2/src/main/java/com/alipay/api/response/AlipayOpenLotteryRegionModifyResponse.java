@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.lottery.region.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:23:36
+ * @since 1.0, 2023-05-05 06:28:29
  */
 public class AlipayOpenLotteryRegionModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2311942922253311542L;
+	private static final long serialVersionUID = 7484753491712121974L;
 
 	
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.accountlog.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:44:24
+ * @since 1.0, 2023-05-05 00:25:33
  */
 public class AlipayDataBillAccountlogQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3717133261741559686L;
+	private static final long serialVersionUID = 3252716972294864223L;
 
 	/** 
 	 * 账务明细返回结果。

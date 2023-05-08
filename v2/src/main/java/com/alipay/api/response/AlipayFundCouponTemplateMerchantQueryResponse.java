@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.template.merchant.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:11:46
+ * @since 1.0, 2023-05-05 09:22:04
  */
 public class AlipayFundCouponTemplateMerchantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7265549113214393732L;
+	private static final long serialVersionUID = 3697545629855273999L;
 
 	/** 
 	 * 是否有下一页

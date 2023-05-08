@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.virtualcard.rights.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-11 11:11:46
+ * @since 1.0, 2023-05-04 15:31:57
  */
 public class AlipayCommerceTransportVirtualcardRightsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8298673721229259987L;
+	private static final long serialVersionUID = 2182454694961375689L;
 
 	/** 
 	 * 卡号

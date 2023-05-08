@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.tradeorder.refund request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:38:01
+ * @since 1.0, 2023-05-05 08:44:45
  */
 public class AntMerchantExpandTradeorderRefundRequest implements AlipayRequest<AntMerchantExpandTradeorderRefundResponse> {
 

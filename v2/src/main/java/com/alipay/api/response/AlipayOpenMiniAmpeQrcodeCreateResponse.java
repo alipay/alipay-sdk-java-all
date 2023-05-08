@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.qrcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 00:17:09
+ * @since 1.0, 2023-05-04 19:16:18
  */
 public class AlipayOpenMiniAmpeQrcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4152212219268832812L;
+	private static final long serialVersionUID = 4546191697595393831L;
 
 	/** 
 	 * 生成的二维码图片地址

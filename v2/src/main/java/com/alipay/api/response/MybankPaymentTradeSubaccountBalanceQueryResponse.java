@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.subaccount.balance.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:00:06
+ * @since 1.0, 2023-05-04 16:37:32
  */
 public class MybankPaymentTradeSubaccountBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8778956215711872187L;
+	private static final long serialVersionUID = 5791199676886397419L;
 
 	/** 
 	 * 可用余额，单位元

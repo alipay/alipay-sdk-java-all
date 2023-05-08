@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CustomVoiceVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3694261317384416678L;
+	private static final long serialVersionUID = 1291996135776222527L;
 
 	/**
 	 * 语音文件id

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.content.contentstatus.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:47:40
+ * @since 1.0, 2023-05-04 17:53:14
  */
 public class KoubeiContentContentstatusModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8119917494383911889L;
+	private static final long serialVersionUID = 5415442177244484193L;
 
 	/** 
 	 * 口碑内容的唯一id

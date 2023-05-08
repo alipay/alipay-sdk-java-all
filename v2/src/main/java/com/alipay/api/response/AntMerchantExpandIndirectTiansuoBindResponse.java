@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.tiansuo.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:36:05
+ * @since 1.0, 2023-05-04 19:06:45
  */
 public class AntMerchantExpandIndirectTiansuoBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4768645531856878979L;
+	private static final long serialVersionUID = 8645934328812738289L;
 
 	
 

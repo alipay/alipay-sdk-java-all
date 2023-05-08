@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.product.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:24:58
+ * @since 1.0, 2023-05-04 14:31:59
  */
 public class AntfortuneStockProductSyncRequest implements AlipayRequest<AntfortuneStockProductSyncResponse> {
 

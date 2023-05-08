@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotbpaas.lavidabilldetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:42:03
+ * @since 1.0, 2023-05-05 00:44:16
  */
 public class AlipayOpenIotbpaasLavidabilldetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3235246198978766625L;
+	private static final long serialVersionUID = 1371279778187681528L;
 
 	/** 
 	 * 交易号

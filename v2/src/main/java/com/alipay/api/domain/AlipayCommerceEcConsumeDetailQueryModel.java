@@ -10,26 +10,26 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询企业付账单详情
  *
  * @author auto create
- * @since 1.0, 2023-04-19 16:14:41
+ * @since 1.0, 2023-05-04 13:22:51
  */
 public class AlipayCommerceEcConsumeDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2795884124845314158L;
+	private static final long serialVersionUID = 4768582311433884343L;
 
 	/**
-	 * 共同账户ID，有企业ID可不传
+	 * 共同账户ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号，有企业ID可不传
+	 * 授权签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
-	 * 企业ID，推荐查询方式
+	 * 企业ID
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -41,11 +41,7 @@ public class AlipayCommerceEcConsumeDetailQueryModel extends AlipayObject {
 	private String payNo;
 
 	/**
-	 * 查询选项，只针对消费账单生效
-查询关联退款账单：Refund
-查询关联订单：Order
-查询关联票据：Ticket
-查询关联多媒体凭证：Multimedia
+	 * 查询选项
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")

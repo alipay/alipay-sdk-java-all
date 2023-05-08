@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.des.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:17:46
+ * @since 1.0, 2023-05-04 23:53:43
  */
 public class AlipayOpenDesCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7798886441923299178L;
+	private static final long serialVersionUID = 6526133944852574997L;
 
 	/** 
 	 * 1

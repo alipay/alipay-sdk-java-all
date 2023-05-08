@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.morpho.app.offline response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:32:14
+ * @since 1.0, 2023-05-05 05:11:43
  */
 public class AlipayOpenMiniMorphoAppOfflineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8182376154266216292L;
+	private static final long serialVersionUID = 4282837983898296968L;
 
 	
 

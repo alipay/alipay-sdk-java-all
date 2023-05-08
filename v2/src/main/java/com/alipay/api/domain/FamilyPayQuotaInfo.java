@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 亲情卡额度模型
  *
  * @author auto create
- * @since 1.0, 2023-04-14 17:33:05
+ * @since 1.0, 2023-05-04 21:15:09
  */
 public class FamilyPayQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7772359164415526396L;
+	private static final long serialVersionUID = 2848961578766393499L;
 
 	/**
 	 * 额度周期：

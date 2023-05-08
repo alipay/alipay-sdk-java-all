@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.arater.waitratealgorank.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:24:53
+ * @since 1.0, 2023-05-05 02:43:22
  */
 public class AlipayOpenAppAraterWaitratealgorankQueryRequest implements AlipayRequest<AlipayOpenAppAraterWaitratealgorankQueryResponse> {
 

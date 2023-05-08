@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.prodpaas.arrangement.rebate.rate.query request
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:46:34
+ * @since 1.0, 2023-05-04 21:10:39
  */
 public class AntProdpaasArrangementRebateRateQueryRequest implements AlipayRequest<AntProdpaasArrangementRebateRateQueryResponse> {
 

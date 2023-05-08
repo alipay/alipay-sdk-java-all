@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certify.mfv.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:21:17
+ * @since 1.0, 2023-05-05 08:07:56
  */
 public class AlipayUserCertifyMfvSubmitRequest implements AlipayRequest<AlipayUserCertifyMfvSubmitResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.activity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:04:32
+ * @since 1.0, 2023-05-04 23:17:02
  */
 public class AlipayMarketingToolFengdieActivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8638578572656124762L;
+	private static final long serialVersionUID = 7111627769566433258L;
 
 	/** 
 	 * H5应用详情

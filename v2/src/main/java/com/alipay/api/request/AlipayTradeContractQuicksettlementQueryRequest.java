@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.contract.quicksettlement.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:37:13
+ * @since 1.0, 2023-05-05 05:33:55
  */
 public class AlipayTradeContractQuicksettlementQueryRequest implements AlipayRequest<AlipayTradeContractQuicksettlementQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.discovery.taxi.order.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:27:16
+ * @since 1.0, 2023-05-05 02:25:07
  */
 public class AlipayDiscoveryTaxiOrderConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1837612533432631373L;
+	private static final long serialVersionUID = 3649329544887381947L;
 
 	/** 
 	 * 返回结果码

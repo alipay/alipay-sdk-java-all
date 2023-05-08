@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.promotionactivity.customer.receive response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:29:29
+ * @since 1.0, 2023-05-04 15:11:17
  */
 public class AlipayMarketingCampaignPromotionactivityCustomerReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2533476558724382235L;
+	private static final long serialVersionUID = 5634556659265349814L;
 
 	/** 
 	 * 券模板id

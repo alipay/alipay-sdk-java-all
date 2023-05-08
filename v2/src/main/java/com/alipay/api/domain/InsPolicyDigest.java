@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单摘要(去除敏感信息)
  *
  * @author auto create
- * @since 1.0, 2022-06-10 16:17:17
+ * @since 1.0, 2023-04-25 09:41:21
  */
 public class InsPolicyDigest extends AlipayObject {
 
-	private static final long serialVersionUID = 1393865378738881639L;
+	private static final long serialVersionUID = 7331885935775434353L;
 
 	/**
 	 * 保单失效时间
@@ -40,10 +40,16 @@ public class InsPolicyDigest extends AlipayObject {
 	private String policyNo;
 
 	/**
-	 * 保单状态.INEFFECTIVE:未生效、GUARANTEE:保障中、EXPIRED:已失效、SURRENDER:已退保
+	 * 保单状态，该状态是出单时间和保单起止期的比较值，业务可根据业务时间和保单起止期自行比较
 	 */
 	@ApiField("policy_status")
 	private String policyStatus;
+
+	/**
+	 * 保单类型
+	 */
+	@ApiField("policy_type")
+	private String policyType;
 
 	/**
 	 * 保费 ;单位分
@@ -90,6 +96,13 @@ public class InsPolicyDigest extends AlipayObject {
 	}
 	public void setPolicyStatus(String policyStatus) {
 		this.policyStatus = policyStatus;
+	}
+
+	public String getPolicyType() {
+		return this.policyType;
+	}
+	public void setPolicyType(String policyType) {
+		this.policyType = policyType;
 	}
 
 	public Long getPremium() {

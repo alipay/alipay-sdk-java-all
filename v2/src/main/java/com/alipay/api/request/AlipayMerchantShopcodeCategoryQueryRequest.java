@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.shopcode.category.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:01:42
+ * @since 1.0, 2023-05-04 21:29:13
  */
 public class AlipayMerchantShopcodeCategoryQueryRequest implements AlipayRequest<AlipayMerchantShopcodeCategoryQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.unicard.card.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 10:56:53
+ * @since 1.0, 2023-05-05 09:50:05
  */
 public class AlipayMarketingCampaignUnicardCardRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1179954923262595726L;
+	private static final long serialVersionUID = 7174165129565326382L;
 
 	
 

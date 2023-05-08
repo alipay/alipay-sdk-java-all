@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.marketing.equitystatus.thirdpart.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:12:14
+ * @since 1.0, 2023-05-05 09:45:42
  */
 public class AntfortuneMarketingEquitystatusThirdpartModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8214512385772665428L;
+	private static final long serialVersionUID = 5644562937365343195L;
 
 	/** 
 	 * 返回值：true或者false

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.brandbox.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:46:02
+ * @since 1.0, 2023-05-05 04:22:22
  */
 public class AlipayOpenSearchBrandboxQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5642583498934648178L;
+	private static final long serialVersionUID = 3582481264453394784L;
 
 	/** 
 	 * 品牌box详情

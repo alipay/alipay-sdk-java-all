@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营任务模糊查询
  *
  * @author auto create
- * @since 1.0, 2022-09-26 10:19:48
+ * @since 1.0, 2023-05-05 14:17:50
  */
 public class DatadigitalFincloudFinsaasOperationtaskBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8738416354886578145L;
+	private static final long serialVersionUID = 4315297569341384147L;
 
 	/**
 	 * execution_time + 运营活动查询 + 前端

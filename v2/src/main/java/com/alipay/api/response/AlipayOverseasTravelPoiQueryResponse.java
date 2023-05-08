@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.poi.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:01:40
+ * @since 1.0, 2023-05-04 18:49:29
  */
 public class AlipayOverseasTravelPoiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8265472553631957392L;
+	private static final long serialVersionUID = 2291264746544684749L;
 
 	/** 
 	 * 支付宝poi查询结果

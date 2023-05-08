@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.third.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:18:25
+ * @since 1.0, 2023-05-04 18:13:04
  */
 public class AlipayPcreditLoanThirdNotifyRequest implements AlipayRequest<AlipayPcreditLoanThirdNotifyResponse> {
 

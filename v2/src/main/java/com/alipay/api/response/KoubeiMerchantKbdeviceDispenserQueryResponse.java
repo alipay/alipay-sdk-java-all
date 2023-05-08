@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.kbdevice.dispenser.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:20:16
+ * @since 1.0, 2023-05-05 07:13:49
  */
 public class KoubeiMerchantKbdeviceDispenserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3331286197911848558L;
+	private static final long serialVersionUID = 3439267476135685875L;
 
 	/** 
 	 * 取餐柜设备是否可用

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.collect.singlemoneytoken.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:43:42
+ * @since 1.0, 2023-05-05 10:11:09
  */
 public class AlipayFundTransCollectSinglemoneytokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1876299748559575886L;
+	private static final long serialVersionUID = 7518577681733467882L;
 
 	/** 
 	 * 其他扩展属性

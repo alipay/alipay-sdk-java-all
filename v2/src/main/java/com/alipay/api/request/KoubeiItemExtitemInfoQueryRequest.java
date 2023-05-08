@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.item.extitem.info.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:21:57
+ * @since 1.0, 2023-05-04 22:14:21
  */
 public class KoubeiItemExtitemInfoQueryRequest implements AlipayRequest<KoubeiItemExtitemInfoQueryResponse> {
 

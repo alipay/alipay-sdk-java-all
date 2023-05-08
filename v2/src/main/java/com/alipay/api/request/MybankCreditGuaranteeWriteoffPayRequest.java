@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.guarantee.writeoff.pay request
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:02:41
+ * @since 1.0, 2023-05-04 21:42:20
  */
 public class MybankCreditGuaranteeWriteoffPayRequest implements AlipayRequest<MybankCreditGuaranteeWriteoffPayResponse> {
 

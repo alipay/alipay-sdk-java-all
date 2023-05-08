@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.shoppingmallrec.shopandvoucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:57:35
+ * @since 1.0, 2023-05-04 14:37:32
  */
 public class AlipayDataDataserviceShoppingmallrecShopandvoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3227535689919223361L;
+	private static final long serialVersionUID = 5462298171289959542L;
 
 	/** 
 	 * 本次推荐的id, 开发者埋点需带入此参数

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.bs.enrolls.recover request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:51:43
+ * @since 1.0, 2023-05-05 08:46:48
  */
 public class AlipayCommerceOperationBsEnrollsRecoverRequest implements AlipayRequest<AlipayCommerceOperationBsEnrollsRecoverResponse> {
 

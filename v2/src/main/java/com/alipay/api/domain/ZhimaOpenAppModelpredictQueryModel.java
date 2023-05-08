@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaOpenAppModelpredictQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5357233966166891784L;
+	private static final long serialVersionUID = 5851435465325594328L;
 
 	/**
 	 * 模型标识，具体走哪个预测平台及模型

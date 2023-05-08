@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.payforprivilege.promconfigure.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:01:31
+ * @since 1.0, 2023-05-04 19:27:02
  */
 public class AlipayMerchantPayforprivilegePromconfigureSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1789973319325421296L;
+	private static final long serialVersionUID = 5818237752316626926L;
 
 	/** 
 	 * 外部业务号

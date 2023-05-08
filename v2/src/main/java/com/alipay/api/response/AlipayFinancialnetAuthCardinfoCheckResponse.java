@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.cardinfo.check response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:16:44
+ * @since 1.0, 2023-05-05 02:11:52
  */
 public class AlipayFinancialnetAuthCardinfoCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1497772679116799892L;
+	private static final long serialVersionUID = 1662139459478755494L;
 
 	/** 
 	 * 入参开启卡bin校验时，卡bin校验结果的发卡机构

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.sn.apply.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:30:27
+ * @since 1.0, 2023-05-05 06:37:59
  */
 public class AlipayCommerceIotSnApplyBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1499914685661136385L;
+	private static final long serialVersionUID = 5641229477295518113L;
 
 	/** 
 	 * 申请单列表

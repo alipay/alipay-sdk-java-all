@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.liferecord.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:21:46
+ * @since 1.0, 2023-05-04 19:21:59
  */
 public class ZhimaCustomerLiferecordBatchqueryRequest implements AlipayRequest<ZhimaCustomerLiferecordBatchqueryResponse> {
 

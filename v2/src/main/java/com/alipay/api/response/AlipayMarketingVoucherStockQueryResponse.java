@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.stock.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:51:40
+ * @since 1.0, 2023-05-05 08:42:46
  */
 public class AlipayMarketingVoucherStockQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4486163238252236387L;
+	private static final long serialVersionUID = 3395397861316838483L;
 
 	/** 
 	 * 剩余可用库存数量

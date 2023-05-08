@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antpaas.addtesttag.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:29:47
+ * @since 1.0, 2023-05-05 04:36:58
  */
 public class AlipayUserAntpaasAddtesttagModifyRequest implements AlipayRequest<AlipayUserAntpaasAddtesttagModifyResponse> {
 

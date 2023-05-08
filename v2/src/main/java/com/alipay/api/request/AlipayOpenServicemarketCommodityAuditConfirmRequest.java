@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.commodity.audit.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:13:47
+ * @since 1.0, 2023-05-05 01:02:05
  */
 public class AlipayOpenServicemarketCommodityAuditConfirmRequest implements AlipayRequest<AlipayOpenServicemarketCommodityAuditConfirmResponse> {
 

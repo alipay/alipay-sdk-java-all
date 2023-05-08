@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.editor.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:27:20
+ * @since 1.0, 2023-05-05 09:25:39
  */
 public class AlipayMarketingToolFengdieEditorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2823263567379363738L;
+	private static final long serialVersionUID = 7811817249511613641L;
 
 	/** 
 	 * 凤蝶编辑器访问地址，可通过iframe集成在后台系统，由系统用户编辑H5应用内容。url的有效期为15秒，因此每次需要编辑h5页面的时候应该重新调用Api生成。

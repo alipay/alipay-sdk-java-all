@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.merge.precreate response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:21:48
+ * @since 1.0, 2023-05-04 18:32:00
  */
 public class AlipayTradeMergePrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7814518124266587869L;
+	private static final long serialVersionUID = 8321429457765442761L;
 
 	/** 
 	 * 合并子订单中所有订单的预创建结果

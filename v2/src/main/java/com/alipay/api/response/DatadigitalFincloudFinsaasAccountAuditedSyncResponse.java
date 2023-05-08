@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.account.audited.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:50:41
+ * @since 1.0, 2023-05-04 22:49:13
  */
 public class DatadigitalFincloudFinsaasAccountAuditedSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2854913646985331545L;
+	private static final long serialVersionUID = 3392896447675815566L;
 
 	
 

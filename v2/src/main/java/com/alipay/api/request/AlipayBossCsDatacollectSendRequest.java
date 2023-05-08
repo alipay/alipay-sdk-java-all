@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.cs.datacollect.send request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:45:35
+ * @since 1.0, 2023-05-05 07:40:12
  */
 public class AlipayBossCsDatacollectSendRequest implements AlipayRequest<AlipayBossCsDatacollectSendResponse> {
 

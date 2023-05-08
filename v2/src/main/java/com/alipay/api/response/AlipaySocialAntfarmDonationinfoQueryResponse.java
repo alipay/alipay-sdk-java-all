@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antfarm.donationinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:40:52
+ * @since 1.0, 2023-05-05 07:32:15
  */
 public class AlipaySocialAntfarmDonationinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5279826352741846976L;
+	private static final long serialVersionUID = 3553919654936212118L;
 
 	/** 
 	 * 当前用户捐赠爱心记录

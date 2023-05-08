@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.applepay.provisioningbundle.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:52:18
+ * @since 1.0, 2023-05-05 09:36:07
  */
 public class AlipayUserApplepayProvisioningbundleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4873659754263931264L;
+	private static final long serialVersionUID = 3266134879945393542L;
 
 	/** 
 	 * 卡id(由固定前缀+32位数字构成)

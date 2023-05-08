@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营任务精确查询
  *
  * @author auto create
- * @since 1.0, 2022-04-27 16:48:48
+ * @since 1.0, 2023-05-05 14:18:34
  */
 public class DatadigitalFincloudFinsaasOperationtaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1674165127332548586L;
+	private static final long serialVersionUID = 6176116113858799886L;
 
 	/**
 	 * operation_task_id + 唯一 + 运营任务查询 + 批量查询接口会返回该值。

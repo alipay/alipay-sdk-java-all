@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.trust.status.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:04:54
+ * @since 1.0, 2023-05-05 03:42:37
  */
 public class AntfortuneStockTrustStatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3227345183112346471L;
+	private static final long serialVersionUID = 1358163628588573572L;
 
 	/** 
 	 * traceId，用来唯一定位某次调用，方便问题排查

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.template.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:08:48
+ * @since 1.0, 2023-05-04 14:08:29
  */
 public class AlipayMarketingCardTemplateBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6573449273491429146L;
+	private static final long serialVersionUID = 5711298794224946385L;
 
 	/** 
 	 * 会员卡模板基本信息

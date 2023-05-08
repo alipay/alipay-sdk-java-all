@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.retail.instance.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 00:46:58
+ * @since 1.0, 2023-05-04 15:10:36
  */
 public class KoubeiRetailInstanceTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2395129183474921237L;
+	private static final long serialVersionUID = 4532871895424265577L;
 
 	/** 
 	 * 请求的id信息

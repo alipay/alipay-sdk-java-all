@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.shop.external.data.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:07:20
+ * @since 1.0, 2023-05-05 01:13:05
  */
 public class KoubeiShopExternalDataSyncRequest implements AlipayRequest<KoubeiShopExternalDataSyncResponse> {
 

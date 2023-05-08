@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.lottery.camp.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:26:45
+ * @since 1.0, 2023-05-05 01:49:37
  */
 public class AlipayOpenLotteryCampModifyRequest implements AlipayRequest<AlipayOpenLotteryCampModifyResponse> {
 

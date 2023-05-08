@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.gamemarketing.benefit.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:16:22
+ * @since 1.0, 2023-05-04 23:56:31
  */
 public class AlipayCommerceOperationGamemarketingBenefitVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5145663576759723963L;
+	private static final long serialVersionUID = 5516811442871128541L;
 
 	/** 
 	 * 卡券核销状态

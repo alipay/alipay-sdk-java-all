@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.remit.fund.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:59:43
+ * @since 1.0, 2023-05-04 15:36:30
  */
 public class AlipayOverseasRemitFundTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1866962582285712189L;
+	private static final long serialVersionUID = 1745222225778251929L;
 
 	
 

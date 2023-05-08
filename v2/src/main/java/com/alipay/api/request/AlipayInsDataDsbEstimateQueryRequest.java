@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.data.dsb.estimate.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:15:58
+ * @since 1.0, 2023-05-04 15:02:48
  */
 public class AlipayInsDataDsbEstimateQueryRequest implements AlipayRequest<AlipayInsDataDsbEstimateQueryResponse> {
 

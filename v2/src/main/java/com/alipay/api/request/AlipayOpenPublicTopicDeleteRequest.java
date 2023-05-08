@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.topic.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:31:53
+ * @since 1.0, 2023-05-05 01:24:42
  */
 public class AlipayOpenPublicTopicDeleteRequest implements AlipayRequest<AlipayOpenPublicTopicDeleteResponse> {
 

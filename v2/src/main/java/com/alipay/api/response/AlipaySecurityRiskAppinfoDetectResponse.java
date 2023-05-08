@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.appinfo.detect response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:16:12
+ * @since 1.0, 2023-05-05 01:25:36
  */
 public class AlipaySecurityRiskAppinfoDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2382945112266691231L;
+	private static final long serialVersionUID = 6315848922883843977L;
 
 	/** 
 	 * app风险列表信息

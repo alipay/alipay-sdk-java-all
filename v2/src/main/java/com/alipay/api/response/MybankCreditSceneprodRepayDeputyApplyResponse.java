@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.repay.deputy.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:27:42
+ * @since 1.0, 2023-05-04 23:43:36
  */
 public class MybankCreditSceneprodRepayDeputyApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7739971812381711853L;
+	private static final long serialVersionUID = 6447868937243524119L;
 
 	/** 
 	 * 网商分配的申请单号

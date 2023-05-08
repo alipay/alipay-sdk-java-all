@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.community.partner.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:02:15
+ * @since 1.0, 2023-05-04 15:07:34
  */
 public class AlipayOpenAppCommunityPartnerSyncRequest implements AlipayRequest<AlipayOpenAppCommunityPartnerSyncResponse> {
 

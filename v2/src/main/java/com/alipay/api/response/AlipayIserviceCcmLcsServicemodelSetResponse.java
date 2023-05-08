@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.lcs.servicemodel.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:36:44
+ * @since 1.0, 2023-05-04 21:21:57
  */
 public class AlipayIserviceCcmLcsServicemodelSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2673411525294991328L;
+	private static final long serialVersionUID = 4529876133183269787L;
 
 	/** 
 	 * 操作返回结果

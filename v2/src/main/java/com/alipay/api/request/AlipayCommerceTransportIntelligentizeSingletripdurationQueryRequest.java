@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.intelligentize.singletripduration.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:15:14
+ * @since 1.0, 2023-05-05 09:00:59
  */
 public class AlipayCommerceTransportIntelligentizeSingletripdurationQueryRequest implements AlipayRequest<AlipayCommerceTransportIntelligentizeSingletripdurationQueryResponse> {
 

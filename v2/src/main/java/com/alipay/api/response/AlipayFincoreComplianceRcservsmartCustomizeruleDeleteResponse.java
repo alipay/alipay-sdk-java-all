@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.rcservsmart.customizerule.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 00:31:43
+ * @since 1.0, 2023-05-05 01:01:57
  */
 public class AlipayFincoreComplianceRcservsmartCustomizeruleDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8159384992784871747L;
+	private static final long serialVersionUID = 5169548348669776569L;
 
 	/** 
 	 * 自定义规则返回体

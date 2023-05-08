@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.cs.channel.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:42:43
+ * @since 1.0, 2023-05-04 15:25:07
  */
 public class AlipayBossCsChannelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8885918965372346883L;
+	private static final long serialVersionUID = 2342524981235867224L;
 
 	/** 
 	 * 平均通话时长

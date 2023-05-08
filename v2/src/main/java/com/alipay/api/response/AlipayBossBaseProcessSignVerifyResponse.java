@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.base.process.sign.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:11:23
+ * @since 1.0, 2023-05-05 08:18:49
  */
 public class AlipayBossBaseProcessSignVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3876557894481265745L;
+	private static final long serialVersionUID = 1866666665723362916L;
 
 	
 

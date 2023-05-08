@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.shop.category.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:50:11
+ * @since 1.0, 2023-05-05 08:03:08
  */
 public class KoubeiMarketingDataShopCategoryGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4137612852762957423L;
+	private static final long serialVersionUID = 7814813941528685342L;
 
 	/** 
 	 * 指定数量的店铺分类信息

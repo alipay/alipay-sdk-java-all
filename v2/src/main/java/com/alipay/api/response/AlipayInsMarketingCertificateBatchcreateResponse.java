@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.marketing.certificate.batchcreate response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:54:51
+ * @since 1.0, 2023-05-05 02:13:13
  */
 public class AlipayInsMarketingCertificateBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5382531746736663573L;
+	private static final long serialVersionUID = 1362152626429344993L;
 
 	
 

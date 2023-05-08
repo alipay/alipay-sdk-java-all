@@ -9,15 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 待开票申请信息
  *
  * @author auto create
- * @since 1.0, 2023-04-19 16:46:10
+ * @since 1.0, 2023-04-28 15:33:15
  */
 public class InvoiceApplyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1437264962813535897L;
+	private static final long serialVersionUID = 2569827144615175291L;
 
 	/**
-	 * 合计金额（申请开票总金额，含税）
-格式为2位小数
+	 * 合计金额
 	 */
 	@ApiField("apply_amount")
 	private String applyAmount;
@@ -29,7 +28,7 @@ public class InvoiceApplyDTO extends AlipayObject {
 	private String applyId;
 
 	/**
-	 * 批次id
+	 * 批次ID
 	 */
 	@ApiField("batch_id")
 	private String batchId;
@@ -48,20 +47,12 @@ public class InvoiceApplyDTO extends AlipayObject {
 
 	/**
 	 * 开票（介质）类型
-可选值：
-0: 电票
-1：纸质普票
-2：纸质专票
-3：电子专票
 	 */
 	@ApiField("invoice_kind")
 	private String invoiceKind;
 
 	/**
 	 * 发票（文件）类型
-可选值：
-blue: 蓝票
-red: 红票
 	 */
 	@ApiField("invoice_type")
 	private String invoiceType;
@@ -91,7 +82,7 @@ red: 红票
 	private String payerBankName;
 
 	/**
-	 * 购方电子邮箱，需满足邮箱格式。
+	 * 购方电子邮箱
 	 */
 	@ApiField("payer_email")
 	private String payerEmail;
@@ -109,14 +100,13 @@ red: 红票
 	private String payerPhone;
 
 	/**
-	 * 购方方税务登记证号，由大写字母或数字组成，长度要求15~20位。
+	 * 购方方税务登记证号
 	 */
 	@ApiField("payer_register_no")
 	private String payerRegisterNo;
 
 	/**
-	 * 购方手机号码，用于短信通知收票。
-格式为11位数字组成的手机号码
+	 * 购方手机号码
 	 */
 	@ApiField("recieve_mobile")
 	private String recieveMobile;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.family.share.admittance.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:49:12
+ * @since 1.0, 2023-05-05 05:23:42
  */
 public class AlipayUserFamilyShareAdmittancePreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3425556136572242832L;
+	private static final long serialVersionUID = 3251481648946951913L;
 
 	/** 
 	 * 是否准入

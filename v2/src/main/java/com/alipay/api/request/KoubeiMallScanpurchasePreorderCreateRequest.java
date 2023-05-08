@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.mall.scanpurchase.preorder.create request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:42:02
+ * @since 1.0, 2023-05-04 17:27:00
  */
 public class KoubeiMallScanpurchasePreorderCreateRequest implements AlipayRequest<KoubeiMallScanpurchasePreorderCreateResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.map.geocoding.reverse request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:29:23
+ * @since 1.0, 2023-05-04 22:03:17
  */
 public class AlipayEcoMapGeocodingReverseRequest implements AlipayRequest<AlipayEcoMapGeocodingReverseResponse> {
 

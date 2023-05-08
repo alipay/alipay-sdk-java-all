@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.bill.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:57:31
+ * @since 1.0, 2023-05-04 20:22:57
  */
 public class KoubeiCateringOrderBillApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8281324149987179891L;
+	private static final long serialVersionUID = 8572925885447667739L;
 
 	/** 
 	 * 是否需要重试

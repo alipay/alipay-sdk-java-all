@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国开行助学贷款还款计划查询接口
  *
  * @author auto create
- * @since 1.0, 2017-11-21 17:51:13
+ * @since 1.0, 2023-04-21 11:37:11
  */
 public class AlipayFundStudentloanRepayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8265712428233476751L;
+	private static final long serialVersionUID = 3162672757553728422L;
 
 	/**
 	 * 还款学生的身份证号码

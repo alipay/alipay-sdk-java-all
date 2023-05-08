@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发明细统一查询接口
  *
  * @author auto create
- * @since 1.0, 2023-03-03 18:13:41
+ * @since 1.0, 2023-05-05 16:07:51
  */
 public class AlipayFundBatchDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5668852772357937888L;
+	private static final long serialVersionUID = 5892733595316621462L;
 
 	/**
 	 * 11～32位的数字或字母或数字与字母的组合，且区分大小写。（注：只有境外代发使用，其他场景请使用out_batch_no）
@@ -35,6 +35,12 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 业务补充扩展参数
+	 */
+	@ApiField("business_params")
+	private String businessParams;
 
 	/**
 	 * 批次文件中明细流水号（注：只有境外代发使用，其他场景请使用out_biz_no）
@@ -123,6 +129,13 @@ WAIT_PAY：等待付款
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(String businessParams) {
+		this.businessParams = businessParams;
 	}
 
 	public String getDetailNo() {

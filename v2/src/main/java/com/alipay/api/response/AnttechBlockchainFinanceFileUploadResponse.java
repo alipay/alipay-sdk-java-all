@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:46:38
+ * @since 1.0, 2023-05-04 14:24:43
  */
 public class AnttechBlockchainFinanceFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5721585561316777985L;
+	private static final long serialVersionUID = 7341119364336698176L;
 
 	/** 
 	 * 上传成功后返回文件信息

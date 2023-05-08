@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.voucherprod.benefittemplate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:21:57
+ * @since 1.0, 2023-05-05 03:49:55
  */
 public class AlipayAssetPointVoucherprodBenefittemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5513274561298653745L;
+	private static final long serialVersionUID = 1725898387856787384L;
 
 	/** 
 	 * 权益模版的可用金额，即总金额减去已结算金额

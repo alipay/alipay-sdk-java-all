@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.servindustry.reservation.leads.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:37:44
+ * @since 1.0, 2023-05-05 01:39:14
  */
 public class KoubeiServindustryReservationLeadsModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1846337617444939579L;
+	private static final long serialVersionUID = 3261485347692758459L;
 
 	
 

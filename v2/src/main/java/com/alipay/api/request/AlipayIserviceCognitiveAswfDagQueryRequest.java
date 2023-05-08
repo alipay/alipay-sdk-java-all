@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.cognitive.aswf.dag.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 07:53:21
+ * @since 1.0, 2023-05-04 18:01:00
  */
 public class AlipayIserviceCognitiveAswfDagQueryRequest implements AlipayRequest<AlipayIserviceCognitiveAswfDagQueryResponse> {
 

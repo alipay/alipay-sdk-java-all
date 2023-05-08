@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行卡办理状态通知
  *
  * @author auto create
- * @since 1.0, 2023-04-18 16:02:54
+ * @since 1.0, 2023-05-05 17:41:22
  */
 public class AlipayCommerceTransportEtcCardapplyNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1291569182768723762L;
+	private static final long serialVersionUID = 2441462782641672536L;
 
 	/**
 	 * 银行侧开卡回传状态。注意对同一个开卡申请单每个阶段的状态不可被相互覆盖。例如：申请提交成功了，不再接受申请提交失败；申请提交失败了也不再接受申请提交成功。

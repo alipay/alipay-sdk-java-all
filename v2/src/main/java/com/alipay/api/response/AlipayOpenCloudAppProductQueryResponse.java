@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.cloud.app.product.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-11 21:16:45
+ * @since 1.0, 2023-05-05 10:06:57
  */
 public class AlipayOpenCloudAppProductQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1263429774522367756L;
+	private static final long serialVersionUID = 5275976621668698552L;
 
 	/** 
 	 * 前台产品列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.health.activity.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:15:47
+ * @since 1.0, 2023-05-04 17:56:39
  */
 public class AlipayInsSceneHealthActivitySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7118316716272336533L;
+	private static final long serialVersionUID = 1137847585349875635L;
 
 	/** 
 	 * 申请编号，成功返回原申请编号，失败为空

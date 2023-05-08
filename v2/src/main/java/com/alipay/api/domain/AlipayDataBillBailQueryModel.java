@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商家账户保证金查询
  *
  * @author auto create
- * @since 1.0, 2023-03-21 11:07:47
+ * @since 1.0, 2023-05-05 19:49:16
  */
 public class AlipayDataBillBailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3841514559383278484L;
+	private static final long serialVersionUID = 5492777859994768265L;
 
 	/**
-	 * 保证金类型，目前支持TMALL_BAIL-天猫保证金，TAOBAO_BAIL-淘宝保证金
+	 * 保证金类型，目前支持TMALL_S_BAIL-天猫保证金，TAOBAO_BAIL-淘宝保证金
 	 */
 	@ApiField("bail_type")
 	private String bailType;

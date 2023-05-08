@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.caas.merchantlevel.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:05:32
+ * @since 1.0, 2023-05-04 15:11:03
  */
 public class AlipayFincoreComplianceCaasMerchantlevelConsultRequest implements AlipayRequest<AlipayFincoreComplianceCaasMerchantlevelConsultResponse> {
 

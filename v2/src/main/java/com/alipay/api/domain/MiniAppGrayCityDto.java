@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniAppGrayCityDto extends AlipayObject {
 
-	private static final long serialVersionUID = 6262273788468621926L;
+	private static final long serialVersionUID = 3216135887861872527L;
 
 	/**
 	 * 城市编码

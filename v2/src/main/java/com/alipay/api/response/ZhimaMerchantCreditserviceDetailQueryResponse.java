@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.creditservice.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:30:03
+ * @since 1.0, 2023-05-05 01:29:28
  */
 public class ZhimaMerchantCreditserviceDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5149512659936651961L;
+	private static final long serialVersionUID = 6228633827846218484L;
 
 	/** 
 	 * 信用服务基础信息配置

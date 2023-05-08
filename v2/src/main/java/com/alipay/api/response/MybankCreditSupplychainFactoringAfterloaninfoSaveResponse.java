@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.factoring.afterloaninfo.save response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:40:43
+ * @since 1.0, 2023-05-05 07:42:14
  */
 public class MybankCreditSupplychainFactoringAfterloaninfoSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1546733133828447678L;
+	private static final long serialVersionUID = 5542816142793792757L;
 
 	
 

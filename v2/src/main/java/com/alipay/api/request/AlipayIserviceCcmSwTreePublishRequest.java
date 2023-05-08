@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.sw.tree.publish request
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 19:46:47
+ * @since 1.0, 2023-05-05 06:11:55
  */
 public class AlipayIserviceCcmSwTreePublishRequest implements AlipayRequest<AlipayIserviceCcmSwTreePublishResponse> {
 

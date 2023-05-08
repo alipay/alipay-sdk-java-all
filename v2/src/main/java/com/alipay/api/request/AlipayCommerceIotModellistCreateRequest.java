@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.modellist.create request
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 18:58:00
+ * @since 1.0, 2023-05-05 05:24:47
  */
 public class AlipayCommerceIotModellistCreateRequest implements AlipayRequest<AlipayCommerceIotModellistCreateResponse> {
 

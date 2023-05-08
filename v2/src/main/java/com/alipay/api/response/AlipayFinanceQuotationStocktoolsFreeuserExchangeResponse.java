@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.quotation.stocktools.freeuser.exchange response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 13:16:43
+ * @since 1.0, 2023-05-04 23:06:49
  */
 public class AlipayFinanceQuotationStocktoolsFreeuserExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7398283737784928355L;
+	private static final long serialVersionUID = 2539447928859844478L;
 
 	/** 
 	 * 领取成功/失败，此处为false时，或者接口本身报错时，均意味着失败

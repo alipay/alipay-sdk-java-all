@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.orderprintreceipt.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:01:46
+ * @since 1.0, 2023-05-05 00:16:57
  */
 public class AlipayOpenIotmbsOrderprintreceiptQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5847364551169839296L;
+	private static final long serialVersionUID = 8387511544652658612L;
 
 	/** 
 	 * 支付渠道

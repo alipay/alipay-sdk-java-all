@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝出租车司机认证查询
  *
  * @author auto create
- * @since 1.0, 2022-11-22 14:21:51
+ * @since 1.0, 2023-05-05 14:58:17
  */
 public class AlipayCommerceTransportTaxiDriverauthenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4311747793643471951L;
+	private static final long serialVersionUID = 1898124263865236678L;
 
 	/**
 	 * 司机支付宝open_id

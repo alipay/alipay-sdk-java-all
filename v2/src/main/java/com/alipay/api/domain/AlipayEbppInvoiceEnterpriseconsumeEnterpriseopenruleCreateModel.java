@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则新增接口
  *
  * @author auto create
- * @since 1.0, 2023-04-18 17:26:37
+ * @since 1.0, 2023-05-04 15:05:15
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7736863488848799713L;
+	private static final long serialVersionUID = 7755378758172752246L;
 
 	/**
-	 * 共同账户id
+	 * 共同账户ID
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号（仅使用account_id时必传）
+	 * 授权签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
-	 * 账期结束日期，可选范围1-31，只有汇总开需要
+	 * 账期结束日期
 	 */
 	@ApiField("bill_month_day")
 	private Long billMonthDay;
 
 	/**
-	 * 企业id
+	 * 企业ID
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -44,28 +44,25 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel ext
 	private String invoiceRuleName;
 
 	/**
-	 * 汇总开需要抬头，笔笔开不需要传抬头
+	 * 发票抬头
 	 */
 	@ApiField("invoice_title_id")
 	private String invoiceTitleId;
 
 	/**
-	 * 开票模式：汇总开、笔笔开
-枚举定义：SUMMARY:汇总开
-SINGLE:单笔开
+	 * 开票模式
 	 */
 	@ApiField("open_mode")
 	private String openMode;
 
 	/**
-	 * 销方类型：TP开票、商户开票，
-枚举定义：MERCHANT（商户）、TP（TP），不填默认商户
+	 * 销方类型
 	 */
 	@ApiField("seller_type")
 	private String sellerType;
 
 	/**
-	 * 开票规则标记： DEFAULT-默认 EMPLOYEE_TITLE_FIRST-员工签约抬头优先于开票规则
+	 * 开票规则标记
 	 */
 	@ApiField("tag")
 	private String tag;

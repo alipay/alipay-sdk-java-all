@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.kbdevice.devices.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 03:20:38
+ * @since 1.0, 2023-05-05 10:15:22
  */
 public class KoubeiMerchantKbdeviceDevicesBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1844713316969571195L;
+	private static final long serialVersionUID = 1246932476998176971L;
 
 	/** 
 	 * 门店下设备列表

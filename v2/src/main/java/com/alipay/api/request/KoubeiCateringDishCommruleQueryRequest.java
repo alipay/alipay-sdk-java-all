@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.dish.commrule.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:59:32
+ * @since 1.0, 2023-05-05 01:50:31
  */
 public class KoubeiCateringDishCommruleQueryRequest implements AlipayRequest<KoubeiCateringDishCommruleQueryResponse> {
 

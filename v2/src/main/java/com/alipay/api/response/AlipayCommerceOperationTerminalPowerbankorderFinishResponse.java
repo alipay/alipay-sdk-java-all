@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.terminal.powerbankorder.finish response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:14:53
+ * @since 1.0, 2023-05-05 08:42:33
  */
 public class AlipayCommerceOperationTerminalPowerbankorderFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3713176763773182685L;
+	private static final long serialVersionUID = 5317139276178481929L;
 
 	
 

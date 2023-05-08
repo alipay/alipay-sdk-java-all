@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.taxi.heatmap.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:14:52
+ * @since 1.0, 2023-05-05 14:57:44
  */
 public class AlipayCommerceTransportTaxiHeatmapQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1448914914514917378L;
+	private static final long serialVersionUID = 2618387698766911238L;
 
 	/** 
 	 * 热力图数据	参见HeatMapData

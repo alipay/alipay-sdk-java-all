@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.benefit.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:45:16
+ * @since 1.0, 2023-05-05 09:13:01
  */
 public class AlipayUserBenefitCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3771986256341539375L;
+	private static final long serialVersionUID = 2243163957525637888L;
 
 	/** 
 	 * 权益的ID，可以根据此ID对权益进行操作

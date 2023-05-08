@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 使用规则
  *
  * @author auto create
- * @since 1.0, 2022-12-27 15:19:19
+ * @since 1.0, 2023-04-20 15:12:46
  */
 public class StandardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1499588271824154851L;
+	private static final long serialVersionUID = 2295111311948168721L;
+
+	/**
+	 * 当前规则可使用的其他资产来源信息
+	 */
+	@ApiField("asset_share_source_info")
+	private AssetShareSourceInfo assetShareSourceInfo;
 
 	/**
 	 * 消费模式，不填为默认模式，枚举值：COUPON_ONLY（仅支持点券）
@@ -75,6 +81,13 @@ DEFAULT（默认模式）
 	 */
 	@ApiField("standard_name")
 	private String standardName;
+
+	public AssetShareSourceInfo getAssetShareSourceInfo() {
+		return this.assetShareSourceInfo;
+	}
+	public void setAssetShareSourceInfo(AssetShareSourceInfo assetShareSourceInfo) {
+		this.assetShareSourceInfo = assetShareSourceInfo;
+	}
 
 	public String getConsumeMode() {
 		return this.consumeMode;

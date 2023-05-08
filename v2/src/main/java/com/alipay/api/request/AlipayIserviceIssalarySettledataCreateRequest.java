@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.issalary.settledata.create request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:03:41
+ * @since 1.0, 2023-05-04 20:33:34
  */
 public class AlipayIserviceIssalarySettledataCreateRequest implements AlipayRequest<AlipayIserviceIssalarySettledataCreateResponse> {
 

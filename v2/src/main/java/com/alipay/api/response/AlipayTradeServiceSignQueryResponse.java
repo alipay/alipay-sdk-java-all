@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.service.sign.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:31:43
+ * @since 1.0, 2023-05-04 20:11:57
  */
 public class AlipayTradeServiceSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5295145572388199173L;
+	private static final long serialVersionUID = 4816629523351373456L;
 
 	/** 
 	 * 如果协议未签约时，会返回协议文本对应的标题和URL

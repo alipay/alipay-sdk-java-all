@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.bail.collection.finish request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:06:43
+ * @since 1.0, 2023-05-04 17:21:50
  */
 public class AlipayFundBailCollectionFinishRequest implements AlipayRequest<AlipayFundBailCollectionFinishResponse> {
 

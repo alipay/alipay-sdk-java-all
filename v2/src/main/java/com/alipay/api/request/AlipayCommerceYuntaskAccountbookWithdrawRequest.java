@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.yuntask.accountbook.withdraw request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 08:31:42
+ * @since 1.0, 2023-05-04 20:11:57
  */
 public class AlipayCommerceYuntaskAccountbookWithdrawRequest implements AlipayRequest<AlipayCommerceYuntaskAccountbookWithdrawResponse> {
 

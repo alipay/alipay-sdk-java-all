@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.progov.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-07 15:06:44
+ * @since 1.0, 2023-05-05 03:36:53
  */
 public class AlipayFincoreProgovQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5196978888273226788L;
+	private static final long serialVersionUID = 7723351881972356579L;
 
 	/** 
 	 * 工单当前状态

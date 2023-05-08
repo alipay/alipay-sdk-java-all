@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.benefit.multibundle.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:22:53
+ * @since 1.0, 2023-05-05 08:01:11
  */
 public class AlipayOpenMiniBenefitMultibundleConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3545128695293658927L;
+	private static final long serialVersionUID = 2892627777665973322L;
 
 	/** 
 	 * 券内容

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.bs.invite.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:26:48
+ * @since 1.0, 2023-05-05 01:56:50
  */
 public class AlipayCommerceOperationBsInviteConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1845132718872591744L;
+	private static final long serialVersionUID = 1421394154598723885L;
 
 	/** 
 	 * 是否被邀约

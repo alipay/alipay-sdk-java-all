@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.mall.scanpurchase.trade.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:52:14
+ * @since 1.0, 2023-05-05 08:24:05
  */
 public class KoubeiMallScanpurchaseTradeConsultRequest implements AlipayRequest<KoubeiMallScanpurchaseTradeConsultResponse> {
 

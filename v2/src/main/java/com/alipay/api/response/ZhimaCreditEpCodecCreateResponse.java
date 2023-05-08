@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.codec.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:54:12
+ * @since 1.0, 2023-05-04 14:54:53
  */
 public class ZhimaCreditEpCodecCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8226791631681198434L;
+	private static final long serialVersionUID = 2543525247898878163L;
 
 	/** 
 	 * 二维码地址

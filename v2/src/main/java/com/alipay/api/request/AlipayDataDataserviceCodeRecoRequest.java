@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.code.reco request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 06:53:51
+ * @since 1.0, 2023-05-04 17:10:43
  */
 public class AlipayDataDataserviceCodeRecoRequest implements AlipayRequest<AlipayDataDataserviceCodeRecoResponse> {
 

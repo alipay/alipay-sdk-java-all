@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.tuition.schoolcredit.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 02:56:50
+ * @since 1.0, 2023-05-04 22:05:45
  */
 public class AlipayOverseasTuitionSchoolcreditConfirmRequest implements AlipayRequest<AlipayOverseasTuitionSchoolcreditConfirmResponse> {
 

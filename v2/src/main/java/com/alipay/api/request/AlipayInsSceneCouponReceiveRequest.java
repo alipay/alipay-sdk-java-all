@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.coupon.receive request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 15:23:24
+ * @since 1.0, 2023-05-04 14:40:26
  */
 public class AlipayInsSceneCouponReceiveRequest implements AlipayRequest<AlipayInsSceneCouponReceiveResponse> {
 

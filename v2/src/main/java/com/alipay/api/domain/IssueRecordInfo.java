@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手工发放发放记录信息详情
  *
  * @author auto create
- * @since 1.0, 2023-04-13 15:11:34
+ * @since 1.0, 2023-04-21 14:56:42
  */
 public class IssueRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6573475312565453388L;
+	private static final long serialVersionUID = 5795279917794827948L;
 
 	/**
 	 * 发放金额，支持两位小数，单位为（元）
@@ -48,6 +48,12 @@ public class IssueRecordInfo extends AlipayObject {
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
+
+	/**
+	 * 发放状态为发放成功的可返回额度id，未发放和发放中的无法返回额度id
+	 */
+	@ApiField("quota_id")
+	private String quotaId;
 
 	/**
 	 * 发放对应的员工名称
@@ -88,6 +94,13 @@ public class IssueRecordInfo extends AlipayObject {
 	}
 	public void setOwnerType(String ownerType) {
 		this.ownerType = ownerType;
+	}
+
+	public String getQuotaId() {
+		return this.quotaId;
+	}
+	public void setQuotaId(String quotaId) {
+		this.quotaId = quotaId;
 	}
 
 	public String getUserName() {

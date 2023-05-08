@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.keyword.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-17 20:21:51
+ * @since 1.0, 2023-05-05 04:36:46
  */
 public class AlipayFinancialnetAuthKeywordIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5746553462937653353L;
+	private static final long serialVersionUID = 8485262759639151233L;
 
 	/** 
 	 * T代表下属的账号都是泛金融账号

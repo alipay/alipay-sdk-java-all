@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.linke.alcollectioncenter.affair.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:31:43
+ * @since 1.0, 2023-05-05 09:01:49
  */
 public class AntLinkeAlcollectioncenterAffairQueryRequest implements AlipayRequest<AntLinkeAlcollectioncenterAffairQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.app.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:24:47
+ * @since 1.0, 2023-05-05 00:00:44
  */
 public class AlipayFundBatchAppPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6164447891779475428L;
+	private static final long serialVersionUID = 6694188462664622918L;
 
 	
 

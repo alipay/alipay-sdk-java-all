@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.cloud.app.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-06 16:51:42
+ * @since 1.0, 2023-05-05 01:01:54
  */
 public class AlipayOpenCloudAppSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6379542234995585265L;
+	private static final long serialVersionUID = 3557379846851296592L;
 
 	
 

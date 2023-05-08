@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.stepcounter.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:31:46
+ * @since 1.0, 2023-05-05 08:46:49
  */
 public class AlipayUserStepcounterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2575632862284238979L;
+	private static final long serialVersionUID = 1346896865543152881L;
 
 	/** 
 	 * 用户的日计步值。为用户某个时区下某个日期的步数总值。

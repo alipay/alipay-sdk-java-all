@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.sgx.gateway.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 01:31:17
+ * @since 1.0, 2023-05-04 19:04:31
  */
 public class AlipayDataAiserviceSgxGatewayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6843263422465176481L;
+	private static final long serialVersionUID = 6144566421143891373L;
 
 	/** 
 	 * request_uuid ：对应用户请求的唯一id，用于定位请求具体对应到哪一次调用。所有调用场景都会返回改值 。该值由用户请求中传入

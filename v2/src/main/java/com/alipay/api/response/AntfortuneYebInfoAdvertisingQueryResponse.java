@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.yeb.info.advertising.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:43:19
+ * @since 1.0, 2023-05-05 02:06:31
  */
 public class AntfortuneYebInfoAdvertisingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2438584332425175382L;
+	private static final long serialVersionUID = 6678564334584533549L;
 
 	/** 
 	 * advertising_type：广告投放类型。

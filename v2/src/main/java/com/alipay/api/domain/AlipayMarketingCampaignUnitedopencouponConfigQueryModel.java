@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联合营销消费券开放券包配置查询
  *
  * @author auto create
- * @since 1.0, 2022-12-12 14:22:16
+ * @since 1.0, 2023-05-06 18:11:26
  */
 public class AlipayMarketingCampaignUnitedopencouponConfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6772655854726147846L;
+	private static final long serialVersionUID = 3338339869979255563L;
 
 	/**
 	 * 用户支付宝绑定手机号。user_id、login_id、bind_mobile三个参数至少有一个非空。

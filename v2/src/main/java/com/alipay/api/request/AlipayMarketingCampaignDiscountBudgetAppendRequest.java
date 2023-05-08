@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.discount.budget.append request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 09:54:16
+ * @since 1.0, 2023-05-04 17:35:14
  */
 public class AlipayMarketingCampaignDiscountBudgetAppendRequest implements AlipayRequest<AlipayMarketingCampaignDiscountBudgetAppendResponse> {
 

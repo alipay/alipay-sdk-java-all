@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.intelligentize.timetable.create request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 16:53:45
+ * @since 1.0, 2023-05-05 02:11:41
  */
 public class AlipayCommerceTransportIntelligentizeTimetableCreateRequest implements AlipayRequest<AlipayCommerceTransportIntelligentizeTimetableCreateResponse> {
 

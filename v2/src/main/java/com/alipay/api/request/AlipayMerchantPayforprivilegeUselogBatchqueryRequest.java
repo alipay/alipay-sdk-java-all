@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.payforprivilege.uselog.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 17:31:49
+ * @since 1.0, 2023-05-05 10:16:52
  */
 public class AlipayMerchantPayforprivilegeUselogBatchqueryRequest implements AlipayRequest<AlipayMerchantPayforprivilegeUselogBatchqueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotvsp.userext.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 04:16:49
+ * @since 1.0, 2023-05-05 09:41:51
  */
 public class AlipayOpenIotvspUserextModifyRequest implements AlipayRequest<AlipayOpenIotvspUserextModifyResponse> {
 

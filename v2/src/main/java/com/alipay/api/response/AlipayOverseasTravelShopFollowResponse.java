@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.shop.follow response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 12:51:48
+ * @since 1.0, 2023-05-04 21:01:59
  */
 public class AlipayOverseasTravelShopFollowResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1611824335989669127L;
+	private static final long serialVersionUID = 8637182716212124873L;
 
 	
 
