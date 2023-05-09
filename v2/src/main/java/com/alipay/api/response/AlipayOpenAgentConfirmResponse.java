@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:19:51
+ * @since 1.0, 2023-05-09 16:56:48
  */
 public class AlipayOpenAgentConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1849491825717633631L;
+	private static final long serialVersionUID = 6472744265698691812L;
 
 	/** 
 	 * 应用授权令牌
@@ -37,6 +37,12 @@ public class AlipayOpenAgentConfirmResponse extends AlipayResponse {
 	 */
 	@ApiField("expires_in")
 	private String expiresIn;
+
+	/** 
+	 * 授权商户的user_id
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 签约单号，如果是签约必返回
@@ -82,6 +88,13 @@ public class AlipayOpenAgentConfirmResponse extends AlipayResponse {
 	}
 	public String getExpiresIn( ) {
 		return this.expiresIn;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrderNo(String orderNo) {

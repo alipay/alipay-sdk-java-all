@@ -9,34 +9,34 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度编辑
  *
  * @author auto create
- * @since 1.0, 2023-02-27 20:05:39
+ * @since 1.0, 2023-05-09 16:16:22
  */
 public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8574735725933262473L;
+	private static final long serialVersionUID = 4349569615326634319L;
 
 	/**
-	 * 企业共同账户id（条件必填）
+	 * 企业共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号（条件必填）
+	 * 授权签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
 	 * 费控咨询模式：
-0-支付宝内部计算
-1-咨询外部服务商
+0-支付宝内部计算规则可用金额
+1-咨询外部服务商规则可用金额
 	 */
 	@ApiField("consult_mode")
 	private String consultMode;
 
 	/**
-	 * 制度是否启用（可空），"0"为停用，"1"为启用
+	 * 制度是否启用
 	 */
 	@ApiField("effective")
 	private String effective;
@@ -48,19 +48,19 @@ public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 	private Date effectiveEndDate;
 
 	/**
-	 * 制度生效起始时间（可空），最小粒度为天，最早是当日
+	 * 制度生效起始时间
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
 
 	/**
-	 * 企业id（条件必填）
+	 * 企业id
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
 
 	/**
-	 * 制度描述（可空）
+	 * 制度描述
 	 */
 	@ApiField("institution_desc")
 	private String institutionDesc;
@@ -72,7 +72,7 @@ public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 	private String institutionId;
 
 	/**
-	 * 制度名称（可空）
+	 * 制度名称
 	 */
 	@ApiField("institution_name")
 	private String institutionName;

@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:57:49
+ * @since 1.0, 2023-05-09 16:21:54
  */
 public class AlipayEbppInvoiceInstitutionDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1794552414955988199L;
+	private static final long serialVersionUID = 1357461716528516742L;
 
-	
+	/** 
+	 * 删除结果是否成功
+	 */
+	@ApiField("result")
+	private Boolean result;
 
-	
+	public void setResult(Boolean result) {
+		this.result = result;
+	}
+	public Boolean getResult( ) {
+		return this.result;
+	}
 
 }

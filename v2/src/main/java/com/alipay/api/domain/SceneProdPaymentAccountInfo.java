@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SceneProdPaymentAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6616935388275649927L;
+	private static final long serialVersionUID = 6646915774311321643L;
 
 	/**
 	 * 账号外标，如支付宝登录号,网商银行卡卡号

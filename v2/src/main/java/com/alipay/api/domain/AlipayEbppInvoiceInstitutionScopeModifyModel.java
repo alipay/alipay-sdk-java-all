@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改制度下适配范围
  *
  * @author auto create
- * @since 1.0, 2023-02-27 20:03:39
+ * @since 1.0, 2023-05-09 15:22:52
  */
 public class AlipayEbppInvoiceInstitutionScopeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7641725285449721252L;
+	private static final long serialVersionUID = 7633313297949957559L;
 
 	/**
 	 * 企业共同账户id
@@ -23,21 +23,20 @@ public class AlipayEbppInvoiceInstitutionScopeModifyModel extends AlipayObject {
 	private String accountId;
 
 	/**
-	 * 制度适配范围类型
+	 * 制度适用范围类型
 	 */
 	@ApiField("adapter_type")
 	private String adapterType;
 
 	/**
-	 * 未切换open_id时请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工支付宝id，员工企业码id和员工手机号）;
-adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+	 * 增加适配id列表
 	 */
 	@ApiListField("add_owner_id_list")
 	@ApiField("string")
 	private List<String> addOwnerIdList;
 
 	/**
-	 * 切换open_id后请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工open_id，员工企业码id和员工手机号）; adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+	 * 增加适配开放id列表
 	 */
 	@ApiListField("add_owner_open_id_list")
 	@ApiField("string")
@@ -62,20 +61,20 @@ adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
 	private String institutionId;
 
 	/**
-	 * 当adapterType为指定员工时，通过该字段指定操作的owner_id类型
+	 * 归属类型
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
 
 	/**
-	 * 未切换open_id时请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工支付宝id，员工企业码id和员工手机号）; adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+	 * 删除适配id列表
 	 */
 	@ApiListField("remove_owner_id_list")
 	@ApiField("string")
 	private List<String> removeOwnerIdList;
 
 	/**
-	 * 切换open_id后请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工open_id，员工企业码id和员工手机号）; adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+	 * 删除适配开放id列表
 	 */
 	@ApiListField("remove_owner_open_id_list")
 	@ApiField("string")

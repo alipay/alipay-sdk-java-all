@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossFncArbillMonthstatementbillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2391382335193941336L;
+	private static final long serialVersionUID = 4163374937683652271L;
 
 	/**
 	 * 分析维度1

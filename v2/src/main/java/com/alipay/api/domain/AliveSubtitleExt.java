@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AliveSubtitleExt extends AlipayObject {
 
-	private static final long serialVersionUID = 2343674117699125884L;
+	private static final long serialVersionUID = 2521398556593452976L;
 
 	/**
 	 * 字幕命中特殊行为逻辑，例如口播关注

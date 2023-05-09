@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询制度下人员
  *
  * @author auto create
- * @since 1.0, 2023-02-27 20:03:50
+ * @since 1.0, 2023-05-09 15:22:54
  */
 public class AlipayEbppInvoiceInstitutionScopepageinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3566697224425574894L;
+	private static final long serialVersionUID = 2562678853334812832L;
 
 	/**
 	 * 企业共同账户id
@@ -26,7 +26,7 @@ public class AlipayEbppInvoiceInstitutionScopepageinfoQueryModel extends AlipayO
 	private String agreementNo;
 
 	/**
-	 * 企业ID
+	 * 企业id
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -38,7 +38,7 @@ public class AlipayEbppInvoiceInstitutionScopepageinfoQueryModel extends AlipayO
 	private String institutionId;
 
 	/**
-	 * EMPLOYEE（员工支付宝id）,ENTERPRISE_PAY_UID（员工企业码id）,PHONE（员工手机号) 默认返回员工id（支付宝id或企业码员工id），如需返回手机号需指定
+	 * 适配id类型
 	 */
 	@ApiField("owner_type")
 	private String ownerType;

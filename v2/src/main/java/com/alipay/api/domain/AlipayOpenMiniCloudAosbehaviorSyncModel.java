@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniCloudAosbehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6623331361797857669L;
+	private static final long serialVersionUID = 4219474285974831271L;
 
 	/**
 	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）、hot_expose（热搜曝光）、hot_click（热搜点击）suggest_expose（推荐词曝光）、suggest_click（推荐词点击）、

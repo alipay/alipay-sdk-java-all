@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额度信息
  *
  * @author auto create
- * @since 1.0, 2023-02-16 16:55:25
+ * @since 1.0, 2023-05-08 18:00:02
  */
 public class ExpenseQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4781199676736668742L;
+	private static final long serialVersionUID = 6267475353253315196L;
 
 	/**
 	 * 额度失效时间
@@ -40,7 +40,7 @@ public class ExpenseQuotaInfo extends AlipayObject {
 	private Boolean freeze;
 
 	/**
-	 * 切换open_id前请使用：额度所属者ID
+	 * 额度所属者ID
 owner_type为EMPLOYEE时为员工支付宝ID
 owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
 owner_type为PHONE时为员工手机号
@@ -50,7 +50,7 @@ owner_type为ENTERPRISE时为企业ID
 	private String ownerId;
 
 	/**
-	 * 切换open_id后请使用：额度所属者ID owner_type为EMPLOYEE时为员工open_id owner_type为PHONE时为员工手机号 owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
+	 * owner_type为EMPLOYEE时为员工open_id owner_type为PHONE时为员工手机号 owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
 	 */
 	@ApiField("owner_open_id")
 	private String ownerOpenId;

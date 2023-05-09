@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 编辑发放规则
  *
  * @author auto create
- * @since 1.0, 2023-04-24 14:30:18
+ * @since 1.0, 2023-05-08 20:31:50
  */
 public class AlipayEbppInvoiceIssueruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2438285787195772897L;
+	private static final long serialVersionUID = 1496121876194855436L;
 
 	/**
-	 * 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用
+	 * 共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -36,7 +36,6 @@ MODIFY_BASIC_INFO（修改发放规则基本信息）
 
 	/**
 	 * 是否启用，"0"为停用，"1"为启用；
-如果target_type指定INSTITUTION，则与制度一致
 	 */
 	@ApiField("effective")
 	private String effective;
@@ -48,34 +47,31 @@ MODIFY_BASIC_INFO（修改发放规则基本信息）
 	private String effectivePeriod;
 
 	/**
-	 * 企业ID - 适用于在企业码PC端创建的企业账号
+	 * 企业ID
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
 
 	/**
-	 * 是否可累计（不传则不修改），枚举：0（不可累计）、1（可累计），默认为0，余额只允许可累计，按城市发放只允许不可累计，设置了生效周期只允许不可累计
+	 * 是否可累计（不传则不修改），枚举：0（不可累计）、1（可累计），2（累计天数），3（累计到固定时间）
 	 */
 	@ApiField("invalid_mode")
 	private Long invalidMode;
 
 	/**
-	 * 累计值（预留字段）
+	 * 累计值
 	 */
 	@ApiField("invalid_mode_value")
 	private String invalidModeValue;
 
 	/**
-	 * 发放金额（不传则不修改）；
-按城市不同发放标准示例值："[{\"cities\":[\"321000\",\"321100\"],\"amount\":\"50\"},{\"cities\":[\"321200\",\"321300\"],\"amount\":\"150\"}]"
-统一标准发放示例值："200"
+	 * 发放金额（不传则不修改）
 	 */
 	@ApiField("issue_amount_value")
 	private String issueAmountValue;
 
 	/**
 	 * 发放规则的截止时间
-如果target_type指定INSTITUTION，则使用制度有效期结束时间，无需填写
 	 */
 	@ApiField("issue_end_date")
 	private Date issueEndDate;
@@ -94,19 +90,18 @@ MODIFY_BASIC_INFO（修改发放规则基本信息）
 
 	/**
 	 * 发放规则的开始时间
-如果target_type指定INSTITUTION，则使用制度有效期起始时间，不支持修改
 	 */
 	@ApiField("issue_start_date")
 	private Date issueStartDate;
 
 	/**
-	 * 发放类型（不传则不修改），枚举：ISSUE_MONTH（按月发放）、ISSUE_DAY（按日发放）
+	 * 发放类型
 	 */
 	@ApiField("issue_type")
 	private String issueType;
 
 	/**
-	 * 额度类型（不传则不修改），枚举：COUPON（点券）、CAP（余额）
+	 * 额度类型
 	 */
 	@ApiField("quota_type")
 	private String quotaType;

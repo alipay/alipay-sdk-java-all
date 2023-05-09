@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除发放规则
  *
  * @author auto create
- * @since 1.0, 2023-04-24 14:30:01
+ * @since 1.0, 2023-05-08 21:19:17
  */
 public class AlipayEbppInvoiceIssueruleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4893979997871761121L;
+	private static final long serialVersionUID = 8631749975828288613L;
 
 	/**
-	 * 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用
+	 * 共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -29,7 +29,7 @@ public class AlipayEbppInvoiceIssueruleDeleteModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
-	 * 企业ID - 适用于在企业码PC端创建的企业账号
+	 * 企业ID
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -42,13 +42,13 @@ public class AlipayEbppInvoiceIssueruleDeleteModel extends AlipayObject {
 	private List<String> issueRuleIdList;
 
 	/**
-	 * 发放规则关联的目标值 target_type为制度时：制度id
+	 * 目标值id
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
-	 * 发放规则关联的目标类型，枚举值：INSTITUTION(制度)
+	 * 发放规则关联的目标类型
 	 */
 	@ApiField("target_type")
 	private String targetType;

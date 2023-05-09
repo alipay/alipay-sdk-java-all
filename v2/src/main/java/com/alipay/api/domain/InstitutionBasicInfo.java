@@ -9,22 +9,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度基本信息
  *
  * @author auto create
- * @since 1.0, 2023-02-27 20:08:06
+ * @since 1.0, 2023-05-08 20:15:53
  */
 public class InstitutionBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4565445119595416837L;
+	private static final long serialVersionUID = 4792963854197257972L;
 
 	/**
 	 * 费控咨询模式
-0-支付宝内部计算
-1-咨询外部服务商
 	 */
 	@ApiField("consult_mode")
 	private String consultMode;
 
 	/**
-	 * 制度是否启用,1启用0不启用
+	 * 制度是否启用
 	 */
 	@ApiField("effective")
 	private String effective;

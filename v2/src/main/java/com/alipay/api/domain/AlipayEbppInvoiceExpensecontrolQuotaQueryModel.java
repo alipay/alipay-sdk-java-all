@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询额度
  *
  * @author auto create
- * @since 1.0, 2023-02-16 16:53:40
+ * @since 1.0, 2023-05-09 16:16:55
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1137756855987222432L;
+	private static final long serialVersionUID = 5391926447434287368L;
 
 	/**
 	 * 企业共同账户ID
@@ -29,29 +29,25 @@ public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject
 	private String agreementNo;
 
 	/**
-	 * 企业ID
+	 * 企业id
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
 
 	/**
-	 * 切换open_id前请使用：额度所属者ID
-owner_type为EMPLOYEE时为员工支付宝ID
-owner_type为PHONE时为员工手机号
-owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
+	 * 额度所属者ID
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 切换open_id后请使用：额度所属者ID owner_type为EMPLOYEE时为员工open_id owner_type为PHONE时为员工手机号 owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
+	 * 额度所属者开放ID
 	 */
 	@ApiField("owner_open_id")
 	private String ownerOpenId;
 
 	/**
 	 * 额度所属者类型
-EMPLOYEE 员工
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
@@ -63,14 +59,13 @@ EMPLOYEE 员工
 	private Long pageNum;
 
 	/**
-	 * 每页条数，限制20
+	 * 每页条数
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
 
 	/**
-	 * 额度ID
-特殊说明：最多传入10个quota_id
+	 * 额度ID列表
 	 */
 	@ApiListField("quota_id_list")
 	@ApiField("string")
@@ -78,20 +73,12 @@ EMPLOYEE 员工
 
 	/**
 	 * 额度维度ID
-当 target_type=EXPENSE_TYPE 时，值为
-MEAL（工作餐）
-当target_type=RULE_GROUP_AGGREGATION 时，值为费控规则聚合ID
-当target_type=INSTITUTION 时，值为制度ID，target_type和target_id要正确对应，否则会导致查不到额度。
 	 */
 	@ApiField("target_id")
 	private String targetId;
 
 	/**
 	 * 额度维度
-枚举值：
-EXPENSE_TYPE（费用类型维度），
-RULE_GROUP_AGGREGATION（规则聚合维度），
-INSTITUTION（制度维度）
 	 */
 	@ApiField("target_type")
 	private String targetType;

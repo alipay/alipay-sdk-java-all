@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.common.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:45:06
+ * @since 1.0, 2023-05-09 16:56:48
  */
 public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<AlipayOpenAgentCommonSignResponse> {
 
@@ -62,6 +62,11 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	private String dateLimitation;
 
 	/** 
+	* 请输入被签约商户的支付宝生活号ID编号
+	 */
+	private String lifeAppId;
+
+	/** 
 	* 营业期限是否长期有效
 	 */
 	private Boolean longTerm;
@@ -72,9 +77,25 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	private String mccCode;
 
 	/** 
+	* 请输入被签约商家下任意小程序APPID ID编号
+	 */
+	private String miniAppId;
+
+	/** 
+	* 请上传商家小程序截图信息，最小5KB ，最大5M（暂不限制图片宽高），图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem miniAppScreenshot;
+
+	/** 
 	* isv要代商户签约产品码，产品码是支付宝内部对产品的唯一标识
 	 */
 	private String productCode;
+
+	/** 
+	* 服务费率（%），例如：请输入0.38~0.6 之间（小数点后两位，可取0.38%及0.6%），直播买卖通涉及JSAPI支付产品，交易手续费为 0.38%-0.6%，后续费率变化可参考支付宝标准服务费。
+当签约且授权标识 sign_and_auth=true 时，该费率信息必填。
+	 */
+	private String rate;
 
 	/** 
 	* 店铺内景图片，最小5KB，最大5M，图片格式必须为：png、bmp、gif、jpg、jpeg。
@@ -91,6 +112,11 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 <a href="https://opendocs.alipay.com/common/02khjv">商家经营类目</a> 中的“需要的特殊资质证书”。文件最小为 5KB，最大为5M，图片格式必须为：png、bmp、gif、jpg、jpeg。
 	 */
 	private FileItem specialLicensePic;
+
+	/** 
+	* 合约特殊资质的类型，不传默认99
+	 */
+	private String specialLicenseType;
 
 	/** 
 	* 网站首页截图，最小5KB，最大5M，图片格式必须为：png、bmp、gif、jpg、jpeg
@@ -193,6 +219,13 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 		return this.dateLimitation;
 	}
 
+	public void setLifeAppId(String lifeAppId) {
+		this.lifeAppId = lifeAppId;
+	}
+	public String getLifeAppId() {
+		return this.lifeAppId;
+	}
+
 	public void setLongTerm(Boolean longTerm) {
 		this.longTerm = longTerm;
 	}
@@ -207,11 +240,32 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 		return this.mccCode;
 	}
 
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
+	}
+	public String getMiniAppId() {
+		return this.miniAppId;
+	}
+
+	public void setMiniAppScreenshot(FileItem miniAppScreenshot) {
+		this.miniAppScreenshot = miniAppScreenshot;
+	}
+	public FileItem getMiniAppScreenshot() {
+		return this.miniAppScreenshot;
+	}
+
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 	public String getProductCode() {
 		return this.productCode;
+	}
+
+	public void setRate(String rate) {
+		this.rate = rate;
+	}
+	public String getRate() {
+		return this.rate;
 	}
 
 	public void setShopScenePic(FileItem shopScenePic) {
@@ -233,6 +287,13 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	}
 	public FileItem getSpecialLicensePic() {
 		return this.specialLicensePic;
+	}
+
+	public void setSpecialLicenseType(String specialLicenseType) {
+		this.specialLicenseType = specialLicenseType;
+	}
+	public String getSpecialLicenseType() {
+		return this.specialLicenseType;
 	}
 
 	public void setWebHomeScreenshot(FileItem webHomeScreenshot) {
@@ -363,9 +424,13 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 		txtParams.put("batch_no", this.batchNo);
 		txtParams.put("business_license_no", this.businessLicenseNo);
 		txtParams.put("date_limitation", this.dateLimitation);
+		txtParams.put("life_app_id", this.lifeAppId);
 		txtParams.put("long_term", this.longTerm);
 		txtParams.put("mcc_code", this.mccCode);
+		txtParams.put("mini_app_id", this.miniAppId);
 		txtParams.put("product_code", this.productCode);
+		txtParams.put("rate", this.rate);
+		txtParams.put("special_license_type", this.specialLicenseType);
 		txtParams.put("web_sites", this.webSites == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.webSites, true));
 		txtParams.put("web_status", this.webStatus);
 		txtParams.put("web_test_account", this.webTestAccount);
@@ -389,6 +454,7 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 		params.put("app_demo", this.appDemo);
 		params.put("business_license_auth_pic", this.businessLicenseAuthPic);
 		params.put("business_license_pic", this.businessLicensePic);
+		params.put("mini_app_screenshot", this.miniAppScreenshot);
 		params.put("shop_scene_pic", this.shopScenePic);
 		params.put("shop_sign_board_pic", this.shopSignBoardPic);
 		params.put("special_license_pic", this.specialLicensePic);

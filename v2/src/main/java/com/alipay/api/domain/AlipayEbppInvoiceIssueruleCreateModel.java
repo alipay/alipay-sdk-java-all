@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新增发放规则
  *
  * @author auto create
- * @since 1.0, 2023-04-24 14:29:34
+ * @since 1.0, 2023-05-08 21:05:16
  */
 public class AlipayEbppInvoiceIssueruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5686889262831681732L;
+	private static final long serialVersionUID = 1224488283664718872L;
 
 	/**
-	 * 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用
+	 * 共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -29,25 +29,25 @@ public class AlipayEbppInvoiceIssueruleCreateModel extends AlipayObject {
 
 	/**
 	 * 是否启用，"0"为停用，"1"为启用；
-如果target_type指定INSTITUTION，则与制度一致
+如果target_type指定INSTITUTION，则与制度一致,无需填写
 	 */
 	@ApiField("effective")
 	private String effective;
 
 	/**
-	 * 生效周期，不限："{\"all\":true}"，默认为不限
+	 * 生效周期，时间不限格式："{\"all\":true}"
 	 */
 	@ApiField("effective_period")
 	private String effectivePeriod;
 
 	/**
-	 * 企业ID - 适用于在企业码PC端创建的企业账号
+	 * 企业ID
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
 
 	/**
-	 * 是否可累计，枚举：0（不可累计）、1（可累计），默认为0，余额只允许可累计，按城市发放只允许不可累计，设置了生效周期只允许不可累计
+	 * 是否可累计，枚举：0（不可累计）、1（可累计），2（累计天数）、3（累计到指定日期）余额只允许可累计，按城市发放只允许不可累计，设置了生效周期只允许不可累计
 	 */
 	@ApiField("invalid_mode")
 	private Long invalidMode;
@@ -87,19 +87,19 @@ public class AlipayEbppInvoiceIssueruleCreateModel extends AlipayObject {
 	private Date issueStartDate;
 
 	/**
-	 * 发放类型，枚举：ISSUE_MONTH（按月发放）、ISSUE_DAY（按日发放）
+	 * 发放类型
 	 */
 	@ApiField("issue_type")
 	private String issueType;
 
 	/**
-	 * 额度类型，枚举：COUPON（点券）、CAP（余额）
+	 * 额度类型，枚举：COUPON（点券）、CAP（余额）、ISV（外算额度）
 	 */
 	@ApiField("quota_type")
 	private String quotaType;
 
 	/**
-	 * 是否可转赠，枚举：0（不可转赠）、1（可转赠），默认为0
+	 * 是否可转赠，枚举：0（不可转赠）、1（可转赠）
 	 */
 	@ApiField("share_mode")
 	private Long shareMode;

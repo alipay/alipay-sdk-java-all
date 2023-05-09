@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部员工消费通知
  *
  * @author auto create
- * @since 1.0, 2023-02-27 20:03:45
+ * @since 1.0, 2023-05-09 15:04:52
  */
 public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2231991136282822354L;
+	private static final long serialVersionUID = 5572343226643483661L;
 
 	/**
 	 * 企业共同账户id
@@ -29,7 +29,6 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 
 	/**
 	 * 消费金额
-特殊说明：单位为分的正整数
 	 */
 	@ApiField("amount")
 	private Long amount;
@@ -41,25 +40,19 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	private Date dealTime;
 
 	/**
-	 * 切换open_id前请使用此字段：员工ID
-特殊说明：根据员工账号类型来决定为员工UID、员工工号、员工企业码ID或者员工手机号
+	 * 员工id
 	 */
 	@ApiField("employee_id")
 	private String employeeId;
 
 	/**
 	 * 员工账号类型
-枚举值：
-0（员工支付宝账号/open_id）
-1（ 员工工号）
-2（员工企业码id）
-3（员工手机号）
 	 */
 	@ApiField("employee_id_type")
 	private Long employeeIdType;
 
 	/**
-	 * 切换open_id后请使用此字段：员工ID 特殊说明：根据员工账号类型来决定为open_id、员工工号、员工企业码ID或者员工手机号
+	 * 员工开放id
 	 */
 	@ApiField("employee_open_id")
 	private String employeeOpenId;
@@ -71,16 +64,13 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	private String enterpriseId;
 
 	/**
-	 * 拓展参数，如果控制消费的城市，可传入消费城市的adcode，如需使用，请联系技术支持
+	 * 拓展参数
 	 */
 	@ApiField("extend")
 	private String extend;
 
 	/**
 	 * 交易类型
-枚举值：
-0（扣款）
-1（退款）
 	 */
 	@ApiField("is_off_set")
 	private Long isOffSet;
@@ -92,21 +82,19 @@ public class AlipayEbppInvoiceExpensecomsueOutsourceNotifyModel extends AlipayOb
 	private String outSourceId;
 
 	/**
-	 * 外部平台编码（联系技术支持分配）
+	 * 外部平台编码
 	 */
 	@ApiField("platform")
 	private String platform;
 
 	/**
 	 * 外部交易退款单号
-特殊说明：交易类型为退款的时候传入，多次退款传入不同的退款单号
 	 */
 	@ApiField("relate_no")
 	private String relateNo;
 
 	/**
 	 * 费控规则ID
-特殊说明：该交易绑定的支付宝费控规则ID
 	 */
 	@ApiField("standard_id")
 	private String standardId;

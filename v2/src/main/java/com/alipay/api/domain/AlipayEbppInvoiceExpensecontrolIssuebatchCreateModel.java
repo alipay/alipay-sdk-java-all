@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手动发放额度接口
  *
  * @author auto create
- * @since 1.0, 2023-04-24 14:31:38
+ * @since 1.0, 2023-05-08 20:32:18
  */
 public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2848285698443467876L;
+	private static final long serialVersionUID = 2681682229972312568L;
 
 	/**
-	 * 共同账户id - 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用
+	 * 共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -48,7 +48,7 @@ public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel extends Alipay
 	private Date effectiveStartDate;
 
 	/**
-	 * 企业ID - 通过企业码2.0签约接口签约的企业
+	 * 企业ID
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -85,7 +85,7 @@ public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel extends Alipay
 	private String quotaType;
 
 	/**
-	 * 是否可转赠，枚举：0（不可转赠）、1（可转赠）
+	 * 是否可转赠
 	 */
 	@ApiField("share_mode")
 	private String shareMode;

@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度详情查询
  *
  * @author auto create
- * @since 1.0, 2023-02-27 20:05:45
+ * @since 1.0, 2023-05-09 15:21:51
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2384229171761751178L;
+	private static final long serialVersionUID = 5171768856296987416L;
 
 	/**
-	 * 企业共同账户id，和授权签约协议号共同使用。
+	 * 企业共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+	 * 授权签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;

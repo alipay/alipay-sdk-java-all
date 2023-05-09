@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改额度
  *
  * @author auto create
- * @since 1.0, 2023-04-24 14:31:20
+ * @since 1.0, 2023-05-08 21:19:15
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8369368345462779819L;
+	private static final long serialVersionUID = 6383816322965975884L;
 
 	/**
 	 * 企业共同账户ID
@@ -21,12 +21,6 @@ public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObjec
 
 	/**
 	 * 变更模式
-ADD - 给余额/点券增加amount
-DEDUCT - 给余额/点券扣减amount
-UPDATE_BALANCE-更新余额/点券可用额度为amount
-FREEZE-余额/点券冻结（若冻结，则员工因公支付不可用）
-UNFREEZE-余额/点券解冻
-DELETE-余额/点券删除（使用过的点券不支持删除）
 	 */
 	@ApiField("action")
 	private String action;
@@ -56,7 +50,7 @@ DELETE-余额/点券删除（使用过的点券不支持删除）
 	private String outerSourceId;
 
 	/**
-	 * 外部平台编码（通常为接入方大写英文缩写）
+	 * 外部平台编码
 	 */
 	@ApiField("platform")
 	private String platform;

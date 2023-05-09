@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建审批单
  *
  * @author auto create
- * @since 1.0, 2023-02-06 11:15:51
+ * @since 1.0, 2023-05-09 13:52:51
  */
 public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6115862372776531675L;
+	private static final long serialVersionUID = 3541194931562336595L;
 
 	/**
 	 * 员工id
@@ -29,7 +29,7 @@ public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 审批单关联制度列表
+	 * 审批单关联制度列表，当企业出资方式为企业出资且设置此字段非空时，会查询最优制度并发放额度至该最优制度关联的员工
 	 */
 	@ApiListField("institution_id_list")
 	@ApiField("string")

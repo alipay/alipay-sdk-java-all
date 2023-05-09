@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品的Sku信息
  *
  * @author auto create
- * @since 1.0, 2023-05-04 10:25:39
+ * @since 1.0, 2023-05-09 11:49:16
  */
 public class CertificateSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4168363285266765824L;
+	private static final long serialVersionUID = 2443956839933196867L;
 
 	/**
 	 * 支付宝商品id

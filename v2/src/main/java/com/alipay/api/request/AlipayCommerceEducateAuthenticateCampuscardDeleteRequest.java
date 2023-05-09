@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.authenticate.campuscard.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:38:10
+ * @since 1.0, 2023-05-08 16:54:24
  */
 public class AlipayCommerceEducateAuthenticateCampuscardDeleteRequest implements AlipayRequest<AlipayCommerceEducateAuthenticateCampuscardDeleteResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsuranceClauseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6217298849377538113L;
+	private static final long serialVersionUID = 1784274264175717921L;
 
 	/**
 	 * 附加条款内容

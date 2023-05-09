@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据交易流水创建企业商户关系
  *
  * @author auto create
- * @since 1.0, 2022-11-21 19:28:49
+ * @since 1.0, 2023-05-08 20:43:16
  */
 public class AlipayEbppInvoiceEnterpriseMerchantrelationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5147412593983136336L;
+	private static final long serialVersionUID = 2423858666445835934L;
 
 	/**
 	 * 共同账户ID

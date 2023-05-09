@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费直付通进件结果查询接口
  *
  * @author auto create
- * @since 1.0, 2023-04-14 10:13:50
+ * @since 1.0, 2023-05-08 17:46:58
  */
 public class AlipayEcoEduKtZftschoolQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3186386994714498473L;
+	private static final long serialVersionUID = 5116235117433748516L;
 
 	/**
 	 * 进件单号id，进件接口返回

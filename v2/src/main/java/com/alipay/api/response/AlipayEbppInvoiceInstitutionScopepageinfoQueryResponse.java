@@ -10,36 +10,27 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.scopepageinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:17:03
+ * @since 1.0, 2023-05-09 15:26:47
  */
 public class AlipayEbppInvoiceInstitutionScopepageinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5393592264162737786L;
+	private static final long serialVersionUID = 2363941647559324644L;
 
 	/** 
-	 * 制度下人员生效范围，枚举值：
-EMPLOYEE_ALL(全体员工),
-EMPLOYEE_SELECT(自定义员工),
-EMPLOYEE_DEPARTMENT(部门)
+	 * 制度适用范围类型
 	 */
 	@ApiField("adapter_type")
 	private String adapterType;
 
 	/** 
-	 * 切换 open_id 后请使用此字段：
-adapter_type为：
-EMPLOYEE_DEPARTMENT：返回部门ID
-EMPLOYEE_SELECT：当owner_type为PHONE时返回手机号，其他值则根据对接方式返回open_id，或企业码员工ID
+	 * 适配开放id列表
 	 */
 	@ApiListField("onwer_open_id_list")
 	@ApiField("string")
 	private List<String> onwerOpenIdList;
 
 	/** 
-	 * 未切换 open_id 时请使用此字段：
-adapter_type为：
-EMPLOYEE_DEPARTMENT：返回部门ID
-EMPLOYEE_SELECT：当owner_type为PHONE时返回手机号，其他值则根据对接方式返回支付宝用户ID，或企业码员工ID
+	 * 适配id列表
 	 */
 	@ApiListField("owner_id_list")
 	@ApiField("string")
@@ -58,7 +49,7 @@ EMPLOYEE_SELECT：当owner_type为PHONE时返回手机号，其他值则根据�
 	private Long pageSize;
 
 	/** 
-	 * 总数
+	 * 总页数
 	 */
 	@ApiField("total_page_count")
 	private Long totalPageCount;

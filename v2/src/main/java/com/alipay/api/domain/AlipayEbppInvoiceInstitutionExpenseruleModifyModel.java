@@ -10,35 +10,38 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 编辑使用规则
  *
  * @author auto create
- * @since 1.0, 2023-02-27 20:07:14
+ * @since 1.0, 2023-05-09 16:15:57
  */
 public class AlipayEbppInvoiceInstitutionExpenseruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5291328379446529387L;
+	private static final long serialVersionUID = 2597221486255549151L;
 
 	/**
-	 * 企业共同账户id，和授权签约协议号共同使用。
+	 * 企业共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 修改使用规则，操作枚举：
-ADD_RULE（新增使用条件），
-DELETE_RULE（删除使用条件），
-MODIFY_RULE（修改使用条件），MODIFY_BASIC_INFO（修改规则基本信息）
+	 * 修改使用规则
 	 */
 	@ApiField("action")
 	private String action;
 
 	/**
-	 * 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+	 * 授权签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
-	 * 该使用规则支持的资产消费模式，不填写则为默认模式，默认模式下有余额时使用余额，没有余额则使用规则中的限额
+	 * 资产共享来源信息
+	 */
+	@ApiField("asset_share_source_info")
+	private AssetShareSourceInfo assetShareSourceInfo;
+
+	/**
+	 * 该使用规则支持的资产消费模式，不填写则为默认模式，默认模式下有余额时使用余额，没有余额则使用规则中的限额，点券模式为只能使用点券，点券+余额模式为可以使用点券和余额。
 	 */
 	@ApiField("consume_mode")
 	private String consumeMode;
@@ -50,7 +53,7 @@ MODIFY_RULE（修改使用条件），MODIFY_BASIC_INFO（修改规则基本信�
 	private String enterpriseId;
 
 	/**
-	 * 使用规则条件列表
+	 * 使用规则条件列表（已废弃）
 	 */
 	@ApiListField("expense_ctrl_rule_info_list")
 	@ApiField("expense_ctr_rule_info")
@@ -63,13 +66,13 @@ MODIFY_RULE（修改使用条件），MODIFY_BASIC_INFO（修改规则基本信�
 	private String institutionId;
 
 	/**
-	 * 开票规则id，如果之前已关联开票规则，则更换开票规则id不生效
+	 * 开票规则id
 	 */
 	@ApiField("open_rule_id")
 	private String openRuleId;
 
 	/**
-	 * 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略COMBINATION
+	 * 当笔消费金额大于规则可用余额时，用于控制支付策略
 	 */
 	@ApiField("payment_policy")
 	private String paymentPolicy;
@@ -82,7 +85,7 @@ MODIFY_RULE（修改使用条件），MODIFY_BASIC_INFO（修改规则基本信�
 	private List<StandardConditionInfo> standardConditionInfoList;
 
 	/**
-	 * 规则描述（敏感词校验）
+	 * 规则描述
 	 */
 	@ApiField("standard_desc")
 	private String standardDesc;
@@ -94,7 +97,7 @@ MODIFY_RULE（修改使用条件），MODIFY_BASIC_INFO（修改规则基本信�
 	private String standardId;
 
 	/**
-	 * 规则名称（敏感词校验）
+	 * 规则名称
 	 */
 	@ApiField("standard_name")
 	private String standardName;
@@ -118,6 +121,13 @@ MODIFY_RULE（修改使用条件），MODIFY_BASIC_INFO（修改规则基本信�
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public AssetShareSourceInfo getAssetShareSourceInfo() {
+		return this.assetShareSourceInfo;
+	}
+	public void setAssetShareSourceInfo(AssetShareSourceInfo assetShareSourceInfo) {
+		this.assetShareSourceInfo = assetShareSourceInfo;
 	}
 
 	public String getConsumeMode() {

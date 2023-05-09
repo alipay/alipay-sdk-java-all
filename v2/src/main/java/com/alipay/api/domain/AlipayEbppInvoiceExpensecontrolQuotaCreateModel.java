@@ -9,32 +9,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建额度
  *
  * @author auto create
- * @since 1.0, 2023-04-24 14:30:41
+ * @since 1.0, 2023-05-08 19:36:16
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1151172724254189875L;
+	private static final long serialVersionUID = 1568212835651273752L;
 
 	/**
-	 * 企业共同账户id，和授权签约协议号共同使用。
+	 * 共同账号id
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+	 * 授权签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
-	 * 额度失效时间（格式：yyyy-MM-dd HH:mm:ss），额度类型为点券时必填，额度类型为余额时有默认值，无需填写
+	 * 额度失效时间（格式：yyyy-MM-dd HH:mm:ss）
 	 */
 	@ApiField("effective_end_date")
 	private Date effectiveEndDate;
 
 	/**
-	 * 额度生效时间（格式：yyyy-MM-dd HH:mm:ss），额度类型为点券时必填，额度类型为余额时有默认值，无需填写
+	 * 额度生效时间（格式：yyyy-MM-dd HH:mm:ss）
 	 */
 	@ApiField("effective_start_date")
 	private Date effectiveStartDate;
@@ -46,29 +46,25 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	private String enterpriseId;
 
 	/**
-	 * 外部操作幂等ID（接入方接口调用幂等控制ID），创建额度类型为点券时必填
+	 * 外部操作幂等ID（接入方接口调用幂等控制ID）
 	 */
 	@ApiField("outer_source_id")
 	private String outerSourceId;
 
 	/**
 	 * 额度所属者ID（未切换open_id请使用此字段）：
-owner_type为EMPLOYEE时填写员工支付宝ID；
-owner_type为ENTERPRISE_PAY_UID时填写员工企业码ID；
-owner_type为PHONE时填写员工手机号；
-owner_type为ENTERPRISE时填写企业ID。
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 额度所属者ID（切换open_id后请使用此字段）： owner_type为EMPLOYEE时填写open_id； owner_type为ENTERPRISE_PAY_UID时填写员工企业码ID； owner_type为PHONE时填写员工手机号； owner_type为ENTERPRISE时填写企业ID。
+	 * 额度所属者ID（切换open_id后请使用此字段）：
 	 */
 	@ApiField("owner_open_id")
 	private String ownerOpenId;
 
 	/**
-	 * 额度所属者类型，可通过设置该字段来指定操作的owner_id类型，如果设置企业额度则设置为ENTERPRISE
+	 * 额度所属者类型
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
@@ -80,31 +76,26 @@ owner_type为ENTERPRISE时填写企业ID。
 	private String platform;
 
 	/**
-	 * 创建额度类型，支持点券和余额，不填写则默认为余额类型
+	 * 创建额度类型
 	 */
 	@ApiField("quota_type")
 	private String quotaType;
 
 	/**
 	 * 额度值，以（分）为单位
-约束：个人额度不超过100000元，企业额度不超过100000000元
 	 */
 	@ApiField("quota_value")
 	private String quotaValue;
 
 	/**
-	 * 0:不可转赠（注：不传模式为0）
-1:可以转增（注：只有quota_type=COUPON,可设置）
+	 * 0:不可转赠
+1:可以转增
 	 */
 	@ApiField("share_mode")
 	private String shareMode;
 
 	/**
 	 * 额度维度ID
-当 target_type=EXPENSE_TYPE 时，值为
-MEAL（工作餐）
-当target_type=RULE_GROUP_AGGREGATION 时，值为费控规则聚合ID
-当target_type=INSTITUTION 时，值为制度ID
 	 */
 	@ApiField("target_id")
 	private String targetId;

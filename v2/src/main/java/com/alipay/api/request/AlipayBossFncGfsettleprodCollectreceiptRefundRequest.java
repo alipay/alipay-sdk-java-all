@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.collectreceipt.refund request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:46:47
+ * @since 1.0, 2023-05-09 11:41:56
  */
 public class AlipayBossFncGfsettleprodCollectreceiptRefundRequest implements AlipayRequest<AlipayBossFncGfsettleprodCollectreceiptRefundResponse> {
 

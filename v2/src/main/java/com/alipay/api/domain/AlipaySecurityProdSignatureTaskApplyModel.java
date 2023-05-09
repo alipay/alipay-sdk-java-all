@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityProdSignatureTaskApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4597883441969175657L;
+	private static final long serialVersionUID = 2579913444331223936L;
 
 	/**
 	 * 外部应用名称，由支付宝统一分配，无法自助获取。
