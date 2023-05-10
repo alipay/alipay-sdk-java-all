@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignUnicardCardConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6369725279565424734L;
+	private static final long serialVersionUID = 3375386217429713729L;
 
 	/** 
 	 * 联营卡卡状态

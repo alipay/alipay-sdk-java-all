@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报名提交的小程序商品
  *
  * @author auto create
- * @since 1.0, 2023-03-26 14:15:25
+ * @since 1.0, 2023-05-09 21:05:29
  */
 public class RecruitContentAppItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3122854967292718296L;
+	private static final long serialVersionUID = 3387425274319864452L;
 
 	/**
 	 * 小程序商品配置信息列表。

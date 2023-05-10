@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺扩展信息，key-value键值对
  *
  * @author auto create
- * @since 1.0, 2019-02-25 21:43:24
+ * @since 1.0, 2023-05-10 19:05:06
  */
 public class ShopExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5177347226376427345L;
+	private static final long serialVersionUID = 2427256972364176584L;
 
 	/**
 	 * KV数据对的key，表示该kv对象表示什么含义。

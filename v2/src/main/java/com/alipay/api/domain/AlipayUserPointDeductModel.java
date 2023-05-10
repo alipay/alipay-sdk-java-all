@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserPointDeductModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6879935884414255535L;
+	private static final long serialVersionUID = 1169268151641711639L;
 
 	/**
 	 * 蚂蚁会员平台上的权益所对应的编号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SingleDynamicData extends AlipayObject {
 
-	private static final long serialVersionUID = 5214565768161117811L;
+	private static final long serialVersionUID = 8733321218378711461L;
 
 	/**
 	 * 过期时间，单位为秒

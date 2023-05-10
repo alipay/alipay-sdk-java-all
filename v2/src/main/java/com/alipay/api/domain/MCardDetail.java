@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MCardDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6455531282376488689L;
+	private static final long serialVersionUID = 8497383726654674993L;
 
 	/**
 	 * 储值卡可用余额

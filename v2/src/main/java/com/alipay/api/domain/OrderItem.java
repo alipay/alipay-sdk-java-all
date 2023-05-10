@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单明细
  *
  * @author auto create
- * @since 1.0, 2023-04-06 14:01:23
+ * @since 1.0, 2023-05-10 10:13:17
  */
 public class OrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1582811484548475744L;
+	private static final long serialVersionUID = 7231215645439374292L;
 
 	/**
 	 * 店铺所在具体位置
@@ -120,6 +120,18 @@ public class OrderItem extends AlipayObject {
 	 */
 	@ApiField("province")
 	private String province;
+
+	/**
+	 * 订购的服务有效期生效时间
+	 */
+	@ApiField("service_effect_date")
+	private String serviceEffectDate;
+
+	/**
+	 * 服务有效期截止时间
+	 */
+	@ApiField("service_expire_date")
+	private String serviceExpireDate;
 
 	/**
 	 * 店铺ID，订购实体为口碑门店的场景该字段必填
@@ -269,6 +281,20 @@ public class OrderItem extends AlipayObject {
 	}
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public String getServiceEffectDate() {
+		return this.serviceEffectDate;
+	}
+	public void setServiceEffectDate(String serviceEffectDate) {
+		this.serviceEffectDate = serviceEffectDate;
+	}
+
+	public String getServiceExpireDate() {
+		return this.serviceExpireDate;
+	}
+	public void setServiceExpireDate(String serviceExpireDate) {
+		this.serviceExpireDate = serviceExpireDate;
 	}
 
 	public String getShopId() {
