@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据产品合约编号查询合同内容
  *
  * @author auto create
- * @since 1.0, 2022-09-19 15:48:56
+ * @since 1.0, 2023-05-12 11:32:15
  */
 public class MybankCreditProdarrangementContracttextQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7143559787685312754L;
+	private static final long serialVersionUID = 7863224792188635664L;
 
 	/**
 	 * 业务编号，例如合约编号，贷款申请编号等

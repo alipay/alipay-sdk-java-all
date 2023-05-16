@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderDataDistributeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6813663914559612224L;
+	private static final long serialVersionUID = 4693279359336214119L;
 
 	/**
 	 * 未分发到场景的具体原因。开发者可根据具体原因定位解决问题后发起重试。

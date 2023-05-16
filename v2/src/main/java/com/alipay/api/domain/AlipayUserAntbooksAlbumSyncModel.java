@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阅读听书频道专辑信息同步接口
  *
  * @author auto create
- * @since 1.0, 2023-04-12 20:10:14
+ * @since 1.0, 2023-05-15 21:18:52
  */
 public class AlipayUserAntbooksAlbumSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8452595726188773823L;
+	private static final long serialVersionUID = 8293459131885783491L;
 
 	/**
 	 * 专辑整体时长，单位秒
@@ -73,25 +73,25 @@ public class AlipayUserAntbooksAlbumSyncModel extends AlipayObject {
 	private String copyrightType;
 
 	/**
-	 * 专辑原图URL地址
+	 * 专辑原图URL地址，要求图片为方图，尺寸540*540
 	 */
 	@ApiField("cover_url")
 	private String coverUrl;
 
 	/**
-	 * 专辑封面大图
+	 * 专辑封面大图，要求图片为方图，尺寸400*400
 	 */
 	@ApiField("cover_url_big")
 	private String coverUrlBig;
 
 	/**
-	 * 专辑封面中图
+	 * 专辑封面中图，要求图片为方图，尺寸288*288
 	 */
 	@ApiField("cover_url_middle")
 	private String coverUrlMiddle;
 
 	/**
-	 * 专辑封面小图
+	 * 专辑封面小图，要求图片为方图，尺寸140*140
 	 */
 	@ApiField("cover_url_small")
 	private String coverUrlSmall;

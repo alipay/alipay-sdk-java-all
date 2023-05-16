@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneHealthGiftQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8399924974172325163L;
+	private static final long serialVersionUID = 7536541959152582743L;
 
 	/**
 	 * 查询某范围内某渠道领取的保额的止期，注意，只对sourceGainedSumInsured字段生效

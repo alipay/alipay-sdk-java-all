@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2023-04-25 17:03:18
+ * @since 1.0, 2023-05-16 20:11:01
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2367192243421461548L;
+	private static final long serialVersionUID = 1795175263138564155L;
 
 	/**
 	 * cardType + 唯一 + 储值卡类目投保场景 + 通过上下游约定获取
@@ -124,6 +124,12 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	 */
 	@ApiField("game_name")
 	private String gameName;
+
+	/**
+	 * 游戏交易模式
+	 */
+	@ApiField("game_trade_mode")
+	private String gameTradeMode;
 
 	/**
 	 * 设备是否支持锁定
@@ -261,6 +267,13 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	}
 	public void setGameName(String gameName) {
 		this.gameName = gameName;
+	}
+
+	public String getGameTradeMode() {
+		return this.gameTradeMode;
+	}
+	public void setGameTradeMode(String gameTradeMode) {
+		this.gameTradeMode = gameTradeMode;
 	}
 
 	public Boolean getLockableDevice() {

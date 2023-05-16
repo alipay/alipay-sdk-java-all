@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动内容信息。主要包含商家券与支付券活动。
  *
  * @author auto create
- * @since 1.0, 2023-04-19 14:29:56
+ * @since 1.0, 2023-05-12 14:45:42
  */
 public class DeliveryActivityContentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8438624363616538531L;
+	private static final long serialVersionUID = 7577287633894561534L;
 
 	/**
 	 * 活动id。

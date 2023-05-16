@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.paysharingprod.familypay.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 19:46:59
+ * @since 1.0, 2023-05-15 14:46:49
  */
 public class AlipayPayAppPaysharingprodFamilypaySignRequest implements AlipayRequest<AlipayPayAppPaysharingprodFamilypaySignResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2023-03-17 14:43:50
+ * @since 1.0, 2023-05-12 19:23:16
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7248365942421497871L;
+	private static final long serialVersionUID = 1498444883146642688L;
 
 	/**
 	 * 员工所属部门
@@ -96,7 +96,7 @@ ALIPAY_USER_ID(企业支付宝会员id)
 	private String iotCheckType;
 
 	/**
-	 * 员工在企业人脸库的人脸唯一标识，支持自定义传入，如果未传入则会默认生成
+	 * 员工在企业人脸库的人脸唯一标识（该字段已作废，不支持自定义传入）
 	 */
 	@ApiField("iot_vid")
 	private String iotVid;

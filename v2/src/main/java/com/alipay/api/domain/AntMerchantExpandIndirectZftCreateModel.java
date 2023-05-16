@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户创建
  *
  * @author auto create
- * @since 1.0, 2022-12-01 21:49:18
+ * @since 1.0, 2023-05-15 14:20:16
  */
 public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5617435953798215863L;
+	private static final long serialVersionUID = 4736464122514529785L;
 
 	/**
 	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名。如果涉及当面付场景，请填写线下店铺名称
@@ -158,7 +158,7 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String licenseAuthLetterImage;
 
 	/**
-	 * 商户类别码 mcc，可查看  <a href="https://mdn.alipayobjects.com/portal_mdssth/afts/file/A*-EYjSJ2soV0AAAAAAAAAAAAAAQAAAQ">进件MCC与资质要求 202211.xlsx</a>，特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质要在 qualifications 中上传，会有人工审核。
+	 * 商户类别码 mcc，可查看 <a href="https://mdn.alipayobjects.com/portal_mdssth/afts/file/A*-EYjSJ2soV0AAAAAAAAAAAAAAQAAAQ">进件MCC与资质要求 202211.xlsx</a>，特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质要在 qualifications 中上传，会有人工审核。
 	 */
 	@ApiField("mcc")
 	private String mcc;

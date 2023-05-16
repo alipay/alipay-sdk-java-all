@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户行业资质，表示商户具备某行业从业资格
  *
  * @author auto create
- * @since 1.0, 2021-04-07 21:04:06
+ * @since 1.0, 2023-05-16 11:29:19
  */
 public class IndustryQualificationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7153221784266458475L;
+	private static final long serialVersionUID = 8789286272394842128L;
 
 	/**
 	 * 商户行业资质图片。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key

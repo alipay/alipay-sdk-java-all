@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * MA上签分页查询已签约人员
  *
  * @author auto create
- * @since 1.0, 2023-03-01 15:41:37
+ * @since 1.0, 2023-05-15 11:08:38
  */
 public class AlipayBossProdAntlegalchainNdalistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1796687247434858836L;
+	private static final long serialVersionUID = 2657546238321361212L;
 
 	/**
 	 * 来源系统

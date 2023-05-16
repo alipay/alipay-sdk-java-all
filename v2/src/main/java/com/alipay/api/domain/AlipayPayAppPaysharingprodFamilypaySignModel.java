@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约亲情卡
  *
  * @author auto create
- * @since 1.0, 2023-05-05 19:45:47
+ * @since 1.0, 2023-05-11 17:12:17
  */
 public class AlipayPayAppPaysharingprodFamilypaySignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2384663746612119734L;
+	private static final long serialVersionUID = 4414971597598524778L;
 
 	/**
 	 * 外部业务号

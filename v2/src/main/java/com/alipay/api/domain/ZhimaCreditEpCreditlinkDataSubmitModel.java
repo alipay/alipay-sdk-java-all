@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用征信数据提交
  *
  * @author auto create
- * @since 1.0, 2022-11-24 15:16:38
+ * @since 1.0, 2023-05-11 20:19:14
  */
 public class ZhimaCreditEpCreditlinkDataSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3185965722162126626L;
+	private static final long serialVersionUID = 8173198288322853243L;
+
+	/**
+	 * 任务采集ID
+	 */
+	@ApiField("collect_id")
+	private String collectId;
+
+	/**
+	 * 消费商户号，可在没有collect_id的时候使用
+	 */
+	@ApiField("consumer_merchant_no")
+	private String consumerMerchantNo;
 
 	/**
 	 * JSON字符串。征信数据提交内容，具体格式由data_type决定。
@@ -32,10 +44,30 @@ public class ZhimaCreditEpCreditlinkDataSubmitModel extends AlipayObject {
 	private String merchantRequestId;
 
 	/**
+	 * 产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
+
+	/**
 	 * 请求流水号。保证单场景全局唯一
 	 */
 	@ApiField("serial_no")
 	private String serialNo;
+
+	public String getCollectId() {
+		return this.collectId;
+	}
+	public void setCollectId(String collectId) {
+		this.collectId = collectId;
+	}
+
+	public String getConsumerMerchantNo() {
+		return this.consumerMerchantNo;
+	}
+	public void setConsumerMerchantNo(String consumerMerchantNo) {
+		this.consumerMerchantNo = consumerMerchantNo;
+	}
 
 	public String getDataContent() {
 		return this.dataContent;
@@ -56,6 +88,13 @@ public class ZhimaCreditEpCreditlinkDataSubmitModel extends AlipayObject {
 	}
 	public void setMerchantRequestId(String merchantRequestId) {
 		this.merchantRequestId = merchantRequestId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getSerialNo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 棋盘开放趋势图分析接口
  *
  * @author auto create
- * @since 1.0, 2023-01-30 14:41:15
+ * @since 1.0, 2023-05-16 13:56:20
  */
 public class AlipayMerchantQipanTrendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6262118975193587558L;
+	private static final long serialVersionUID = 5343864126317782942L;
 
 	/**
 	 * 指标key，由棋盘注册，全局唯一，查询内容参考：<a href="https://opendocs.alipay.com/pre-open/04phhq#%E8%B6%8B%E5%8A%BF%E5%88%86%E6%9E%90%E4%B8%8D%E5%90%8Cindex_key%E6%9F%A5%E8%AF%A2" target="_blank">趋势分析不同index_key查询</a>

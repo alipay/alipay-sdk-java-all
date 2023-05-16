@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.qipan.crowduser.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:21:47
+ * @since 1.0, 2023-05-16 13:56:31
  */
 public class AlipayMerchantQipanCrowduserDeleteRequest implements AlipayRequest<AlipayMerchantQipanCrowduserDeleteResponse> {
 

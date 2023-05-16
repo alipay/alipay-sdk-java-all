@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsOrderprintreceiptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8643258673554454661L;
+	private static final long serialVersionUID = 5513724763413146842L;
 
 	/**
 	 * 订单中心产生的32位指令id

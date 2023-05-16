@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动权益复制结果
  *
  * @author auto create
- * @since 1.0, 2019-12-05 18:09:02
+ * @since 1.0, 2023-05-16 11:28:56
  */
 public class ActivityCopyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3218749737614595922L;
+	private static final long serialVersionUID = 3365582191521668776L;
 
 	/**
 	 * 活动权益复制内容，和入参中copy_content相对应，表示其执行结果

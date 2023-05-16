@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手工发放发放明细分页查询
  *
  * @author auto create
- * @since 1.0, 2023-04-14 10:33:58
+ * @since 1.0, 2023-05-11 17:45:18
  */
 public class AlipayEbppInvoiceIssuebatchIssuerecordsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7453922748937771174L;
+	private static final long serialVersionUID = 5687182578573124658L;
 
 	/**
 	 * 企业共同账户id

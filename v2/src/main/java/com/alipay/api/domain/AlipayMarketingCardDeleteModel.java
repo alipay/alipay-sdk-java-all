@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡删卡
  *
  * @author auto create
- * @since 1.0, 2022-11-08 21:26:23
+ * @since 1.0, 2023-05-16 13:54:33
  */
 public class AlipayMarketingCardDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5687598921422142657L;
+	private static final long serialVersionUID = 4812982853957337699L;
 
 	/**
 	 * 删卡扩展参数，json格式。

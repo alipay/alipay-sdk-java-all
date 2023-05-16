@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签署区信息
  *
  * @author auto create
- * @since 1.0, 2023-03-01 15:13:59
+ * @since 1.0, 2023-05-15 09:39:16
  */
 public class SignfieldInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2518736468241196492L;
+	private static final long serialVersionUID = 6843563571859529915L;
 
 	/**
 	 * 文件ID,调用文件上传接口返回的fileId

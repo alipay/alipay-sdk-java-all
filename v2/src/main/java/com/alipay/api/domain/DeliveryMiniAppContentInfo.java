@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推广的小程序内容信息
  *
  * @author auto create
- * @since 1.0, 2023-04-19 14:29:56
+ * @since 1.0, 2023-05-12 14:45:42
  */
 public class DeliveryMiniAppContentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2391563855482885489L;
+	private static final long serialVersionUID = 6824138313121386312L;
 
 	/**
 	 * 仅小程序推广可用。枚举值：服务直达

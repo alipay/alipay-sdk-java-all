@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.settle request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:46:57
+ * @since 1.0, 2023-05-15 14:56:17
  */
 public class AlipayMarketingActivityOrdervoucherSettleRequest implements AlipayRequest<AlipayMarketingActivityOrdervoucherSettleResponse> {
 

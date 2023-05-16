@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.service.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:18:02
+ * @since 1.0, 2023-05-16 16:11:51
  */
 public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1825789688979886939L;
+	private static final long serialVersionUID = 1784344457547992667L;
 
 	/** 
 	 * 驳回理由
@@ -37,6 +37,12 @@ public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 服务模板类型
+	 */
+	@ApiField("template_type")
+	private String templateType;
 
 	public void setRejectReason(String rejectReason) {
 		this.rejectReason = rejectReason;
@@ -64,6 +70,13 @@ public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTemplateType(String templateType) {
+		this.templateType = templateType;
+	}
+	public String getTemplateType( ) {
+		return this.templateType;
 	}
 
 }

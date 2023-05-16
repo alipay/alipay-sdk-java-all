@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请获取用户合格投资者认证材料
  *
  * @author auto create
- * @since 1.0, 2022-01-20 11:15:24
+ * @since 1.0, 2023-05-12 10:06:49
  */
 public class AntfortuneStockQualifiedInvestorApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5488889241178731429L;
+	private static final long serialVersionUID = 6544378395365487113L;
 
 	/**
 	 * 身份证号的md5值 32位 大写

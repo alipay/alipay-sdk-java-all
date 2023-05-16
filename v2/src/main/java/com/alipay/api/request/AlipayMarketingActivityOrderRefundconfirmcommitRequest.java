@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.activity.order.refundconfirmcommit request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:46:56
+ * @since 1.0, 2023-05-15 14:40:17
  */
 public class AlipayMarketingActivityOrderRefundconfirmcommitRequest implements AlipayRequest<AlipayMarketingActivityOrderRefundconfirmcommitResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.trust.status.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:42:37
+ * @since 1.0, 2023-05-12 10:06:22
  */
 public class AntfortuneStockTrustStatusSyncRequest implements AlipayRequest<AntfortuneStockTrustStatusSyncResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.applyorder.createormodify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:56:56
+ * @since 1.0, 2023-05-16 19:10:47
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1879157742623685918L;
+	private static final long serialVersionUID = 4265545354479154497L;
 
 	/** 
 	 * 支付宝ETC申请单号

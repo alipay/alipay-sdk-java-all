@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 子渠道模型：当下用于花呗分期每期表达
  *
  * @author auto create
- * @since 1.0, 2022-12-22 15:39:09
+ * @since 1.0, 2023-05-11 15:13:26
  */
 public class SubChannelList extends AlipayObject {
 
-	private static final long serialVersionUID = 2429186776697657836L;
+	private static final long serialVersionUID = 7339935218417831459L;
 
 	/**
 	 * 资产ID

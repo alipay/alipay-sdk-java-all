@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommentReplyOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6239351338257869172L;
+	private static final long serialVersionUID = 8784272379788741856L;
 
 	/**
 	 * 回复内容，最多500字，不区分中英文

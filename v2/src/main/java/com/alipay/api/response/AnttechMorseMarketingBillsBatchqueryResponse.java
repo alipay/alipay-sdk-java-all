@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.bills.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-09 18:01:56
+ * @since 1.0, 2023-05-12 09:46:57
  */
 public class AnttechMorseMarketingBillsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5125989868485879875L;
+	private static final long serialVersionUID = 5196579991529291453L;
 
 	/** 
 	 * 交易账单列表

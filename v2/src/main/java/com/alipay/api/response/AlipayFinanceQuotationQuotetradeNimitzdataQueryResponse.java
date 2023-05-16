@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinanceQuotationQuotetradeNimitzdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2482453641783257487L;
+	private static final long serialVersionUID = 8543999635388332794L;
 
 	/** 
 	 * Nimitz数据返回结果，Json结构

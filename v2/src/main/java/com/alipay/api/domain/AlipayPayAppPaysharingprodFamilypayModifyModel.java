@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改亲情卡
  *
  * @author auto create
- * @since 1.0, 2023-05-05 19:46:17
+ * @since 1.0, 2023-05-11 16:53:15
  */
 public class AlipayPayAppPaysharingprodFamilypayModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4425571262559769289L;
+	private static final long serialVersionUID = 4454162437131889285L;
 
 	/**
 	 * 亲情卡卡唯一id,可通过查询接口响应参数获取

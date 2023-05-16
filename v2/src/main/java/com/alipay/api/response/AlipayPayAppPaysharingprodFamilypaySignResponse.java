@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.paysharingprod.familypay.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 19:46:59
+ * @since 1.0, 2023-05-15 14:46:49
  */
 public class AlipayPayAppPaysharingprodFamilypaySignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7168861824973969613L;
+	private static final long serialVersionUID = 4377226252115813588L;
 
 	/** 
 	 * 签约授权单号，业务方可通过这个单号进行查询

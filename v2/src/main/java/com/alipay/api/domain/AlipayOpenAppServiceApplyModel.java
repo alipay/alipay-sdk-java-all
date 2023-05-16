@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务提报申请
  *
  * @author auto create
- * @since 1.0, 2023-04-24 10:39:33
+ * @since 1.0, 2023-05-16 15:57:52
  */
 public class AlipayOpenAppServiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7387966927567479937L;
+	private static final long serialVersionUID = 7437997368359613212L;
 
 	/**
 	 * 行业类目id
@@ -42,6 +42,12 @@ public class AlipayOpenAppServiceApplyModel extends AlipayObject {
 	 */
 	@ApiField("service_xml")
 	private String serviceXml;
+
+	/**
+	 * 服务模版。若当前服务类目只有一个服务模版，可不填。
+	 */
+	@ApiField("template_type")
+	private String templateType;
 
 	public String getCategoryId() {
 		return this.categoryId;
@@ -76,6 +82,13 @@ public class AlipayOpenAppServiceApplyModel extends AlipayObject {
 	}
 	public void setServiceXml(String serviceXml) {
 		this.serviceXml = serviceXml;
+	}
+
+	public String getTemplateType() {
+		return this.templateType;
+	}
+	public void setTemplateType(String templateType) {
+		this.templateType = templateType;
 	}
 
 }

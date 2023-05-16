@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券商信托产品状态同步
  *
  * @author auto create
- * @since 1.0, 2021-11-23 15:54:09
+ * @since 1.0, 2023-05-12 10:06:22
  */
 public class AntfortuneStockTrustStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7369397582552113967L;
+	private static final long serialVersionUID = 2597187126886477346L;
 
 	/**
 	 * 信托产品发行代码

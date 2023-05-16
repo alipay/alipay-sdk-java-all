@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人群看板分析
  *
  * @author auto create
- * @since 1.0, 2023-01-30 14:40:51
+ * @since 1.0, 2023-05-16 13:57:01
  */
 public class AlipayMerchantQipanBoardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4792674334768471861L;
+	private static final long serialVersionUID = 3626394116725546252L;
 
 	/**
 	 * 看板场景对应的请求参数

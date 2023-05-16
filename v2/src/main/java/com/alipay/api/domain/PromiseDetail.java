@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活记录详情
  *
  * @author auto create
- * @since 1.0, 2022-10-27 16:00:39
+ * @since 1.0, 2023-05-15 11:30:11
  */
 public class PromiseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2616815228713879724L;
+	private static final long serialVersionUID = 4164369373977235494L;
 
 	/**
 	 * 授权状态

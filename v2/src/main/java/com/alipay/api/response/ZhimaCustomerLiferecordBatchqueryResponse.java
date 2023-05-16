@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.liferecord.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:21:59
+ * @since 1.0, 2023-05-15 11:31:52
  */
 public class ZhimaCustomerLiferecordBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6448455886559361247L;
+	private static final long serialVersionUID = 3373531822787898314L;
 
 	/** 
 	 * 生活记录详情列表

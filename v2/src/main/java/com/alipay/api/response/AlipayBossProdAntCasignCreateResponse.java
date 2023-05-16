@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.ant.casign.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:13:07
+ * @since 1.0, 2023-05-12 09:58:58
  */
 public class AlipayBossProdAntCasignCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2444135448136633527L;
+	private static final long serialVersionUID = 1559416661769778971L;
 
 	/** 
 	 * 业务流水号

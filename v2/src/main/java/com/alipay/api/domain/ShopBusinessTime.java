@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺经营时间
  *
  * @author auto create
- * @since 1.0, 2018-08-16 14:35:41
+ * @since 1.0, 2023-05-16 11:28:44
  */
 public class ShopBusinessTime extends AlipayObject {
 
-	private static final long serialVersionUID = 7836949665386388779L;
+	private static final long serialVersionUID = 2817342995557978383L;
 
 	/**
 	 * 关门时间 格式：HH:mm

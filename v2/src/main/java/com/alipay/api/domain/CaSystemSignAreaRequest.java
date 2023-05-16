@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签署区域信息（包括印模信息）
  *
  * @author auto create
- * @since 1.0, 2023-03-01 17:48:35
+ * @since 1.0, 2023-05-15 09:39:05
  */
 public class CaSystemSignAreaRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4689936517849184546L;
+	private static final long serialVersionUID = 3734453341176726277L;
 
 	/**
 	 * 骑缝章信息

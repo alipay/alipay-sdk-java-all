@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class McardStylInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7825451635439473174L;
+	private static final long serialVersionUID = 1493479847698847355L;
 
 	/**
 	 * 背景图片Id，通过接口（alipay.offline.material.image.upload）上传图片

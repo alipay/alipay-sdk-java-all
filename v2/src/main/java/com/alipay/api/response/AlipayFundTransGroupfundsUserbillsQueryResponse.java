@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransGroupfundsUserbillsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7246861891954378162L;
+	private static final long serialVersionUID = 5479542648273933952L;
 
 	/** 
 	 * 当前用户涉及的流水模型列表，仅返回实际存在的流水数据

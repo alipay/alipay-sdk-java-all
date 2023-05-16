@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 价格详情信息模型
  *
  * @author auto create
- * @since 1.0, 2023-04-16 16:07:57
+ * @since 1.0, 2023-05-10 22:27:33
  */
 public class PriceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6765363246414441767L;
+	private static final long serialVersionUID = 2728287446125116694L;
 
 	/**
-	 * 附加金额
+	 * 附加金额，单位：元
 	 */
 	@ApiField("additional_price")
 	private String additionalPrice;
 
 	/**
-	 * 商家优惠金额
+	 * 商家优惠金额，单位：元
 	 */
 	@ApiField("discounted_price")
 	private String discountedPrice;
 
 	/**
-	 * 运费
+	 * 运费，单位：元
 	 */
 	@ApiField("freight")
 	private String freight;
 
 	/**
-	 * 订单金额
+	 * 订单金额，单位：元
 	 */
 	@ApiField("order_price")
 	private String orderPrice;

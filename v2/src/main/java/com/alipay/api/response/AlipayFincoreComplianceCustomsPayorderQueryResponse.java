@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.customs.payorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 14:31:45
+ * @since 1.0, 2023-05-12 15:29:24
  */
 public class AlipayFincoreComplianceCustomsPayorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4624326811895831146L;
+	private static final long serialVersionUID = 7174521888182372694L;
 
 	/** 
 	 * 证件号

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignDrawcampQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3831972344465948178L;
+	private static final long serialVersionUID = 6178522853236782338L;
 
 	/** 
 	 * 单用户以支付宝账号维度可参与当前营销活动的总次数，由开发者自定义此数值

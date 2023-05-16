@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 骑缝章信息
  *
  * @author auto create
- * @since 1.0, 2023-03-01 15:12:57
+ * @since 1.0, 2023-05-15 09:39:05
  */
 public class CaSystemCrossPageRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1799979194523351229L;
+	private static final long serialVersionUID = 2736627617136945488L;
 
 	/**
 	 * defaultCrossPageRule = true  默认设置每五页盖一次

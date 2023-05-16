@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2023-04-14 10:54:52
+ * @since 1.0, 2023-05-10 22:27:33
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4486931579848328255L;
+	private static final long serialVersionUID = 7685729487517632218L;
 
 	/**
 	 * 订单收货地址
@@ -42,6 +42,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("buyer_open_id")
 	private String buyerOpenId;
+
+	/**
+	 * 联系人信息
+	 */
+	@ApiField("contact_info")
+	private ContactInfoDTO contactInfo;
 
 	/**
 	 * 默认退货地址
@@ -94,7 +100,7 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	/**
 	 * 订单相对超时时间。从交易创建时间开始计算。
 该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
-当面付场景默认值为3h。
+默认值为3h。
 	 */
 	@ApiField("timeout_express")
 	private String timeoutExpress;
@@ -138,6 +144,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setBuyerOpenId(String buyerOpenId) {
 		this.buyerOpenId = buyerOpenId;
+	}
+
+	public ContactInfoDTO getContactInfo() {
+		return this.contactInfo;
+	}
+	public void setContactInfo(ContactInfoDTO contactInfo) {
+		this.contactInfo = contactInfo;
 	}
 
 	public MiniReceiverAddressInfoDTO getDefaultReceivingAddress() {

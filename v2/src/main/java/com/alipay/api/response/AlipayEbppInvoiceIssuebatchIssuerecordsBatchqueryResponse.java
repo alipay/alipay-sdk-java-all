@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.IssueRecordInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -9,17 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.issuebatch.issuerecords.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:36:56
+ * @since 1.0, 2023-05-11 17:46:50
  */
 public class AlipayEbppInvoiceIssuebatchIssuerecordsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3172692995883644395L;
+	private static final long serialVersionUID = 4614839691619286911L;
 
 	/** 
 	 * 当前批次下的发放记录信息列表
 	 */
-	@ApiField("issue_record_info_list")
-	private IssueRecordInfo issueRecordInfoList;
+	@ApiListField("issue_record_info_list")
+	@ApiField("issue_record_info")
+	private List<IssueRecordInfo> issueRecordInfoList;
 
 	/** 
 	 * 分页查询页码
@@ -39,10 +42,10 @@ public class AlipayEbppInvoiceIssuebatchIssuerecordsBatchqueryResponse extends A
 	@ApiField("total_page_count")
 	private String totalPageCount;
 
-	public void setIssueRecordInfoList(IssueRecordInfo issueRecordInfoList) {
+	public void setIssueRecordInfoList(List<IssueRecordInfo> issueRecordInfoList) {
 		this.issueRecordInfoList = issueRecordInfoList;
 	}
-	public IssueRecordInfo getIssueRecordInfoList( ) {
+	public List<IssueRecordInfo> getIssueRecordInfoList( ) {
 		return this.issueRecordInfoList;
 	}
 

@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,22 +9,22 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2023-04-23 17:57:55
+ * @since 1.0, 2023-05-10 22:27:33
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3763555255648526966L;
+	private static final long serialVersionUID = 2819689747431868778L;
 
 	/**
 	 * 预约上门取件的时间点,时间格式为 yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("door_time")
-	private String doorTime;
+	private Date doorTime;
 
-	public String getDoorTime() {
+	public Date getDoorTime() {
 		return this.doorTime;
 	}
-	public void setDoorTime(String doorTime) {
+	public void setDoorTime(Date doorTime) {
 		this.doorTime = doorTime;
 	}
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 棋盘开放洞察城市查询接口
  *
  * @author auto create
- * @since 1.0, 2023-01-30 14:41:14
+ * @since 1.0, 2023-05-16 13:56:56
  */
 public class AlipayMerchantQipanInsightcityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8835654288867767469L;
+	private static final long serialVersionUID = 1356763524176442766L;
 
 	/**
 	 * 人群id，按人群分析时必传

@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.certify.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-06 11:32:48
+ * @since 1.0, 2023-05-11 19:36:51
  */
 public class DatadigitalFincloudGeneralsaasFaceCertifyCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1137886257663266176L;
+	private static final long serialVersionUID = 8316956164658974741L;
+
+	/** 
+	 * 调用IoT核验源接口返回的额外信息，包括一级和二级策略返回码
+	 */
+	@ApiField("extern_info")
+	private String externInfo;
 
 	/** 
 	 * 核验不一致原因
@@ -25,6 +31,13 @@ public class DatadigitalFincloudGeneralsaasFaceCertifyCertifyResponse extends Al
 	 */
 	@ApiField("passed")
 	private String passed;
+
+	public void setExternInfo(String externInfo) {
+		this.externInfo = externInfo;
+	}
+	public String getExternInfo( ) {
+		return this.externInfo;
+	}
 
 	public void setMismatchReason(String mismatchReason) {
 		this.mismatchReason = mismatchReason;

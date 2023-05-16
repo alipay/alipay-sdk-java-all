@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 正文章信息
  *
  * @author auto create
- * @since 1.0, 2023-03-01 15:13:35
+ * @since 1.0, 2023-05-15 09:39:05
  */
 public class CaSystemMainBodyRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1221741573192369365L;
+	private static final long serialVersionUID = 3687685874719961839L;
 
 	/**
 	 * * 如果用印坐标未知，可根据关键字及出现的次序计算用印座标。 则：传入关键字及出现次序，axisX，axisY无需传入，内部会计算出对应的值,覆盖外部传入的axisX，axisY

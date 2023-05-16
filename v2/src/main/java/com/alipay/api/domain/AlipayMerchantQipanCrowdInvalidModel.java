@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 失效商家人群包
  *
  * @author auto create
- * @since 1.0, 2023-03-19 16:41:18
+ * @since 1.0, 2023-05-16 13:56:26
  */
 public class AlipayMerchantQipanCrowdInvalidModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1421431823812296187L;
+	private static final long serialVersionUID = 4881625469155835944L;
 
 	/**
 	 * 支付宝人群code

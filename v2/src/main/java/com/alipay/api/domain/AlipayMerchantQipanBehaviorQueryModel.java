@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 棋盘开放行为分析接口
  *
  * @author auto create
- * @since 1.0, 2023-01-30 14:40:52
+ * @since 1.0, 2023-05-16 13:57:11
  */
 public class AlipayMerchantQipanBehaviorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4366659922681111249L;
+	private static final long serialVersionUID = 8465348186237886457L;
 
 	/**
 	 * 行为分析查询，不同查询场景的查询参数，如关系类型、关系对象类型等。

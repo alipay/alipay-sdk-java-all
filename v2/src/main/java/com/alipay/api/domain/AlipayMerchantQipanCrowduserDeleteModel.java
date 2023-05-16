@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家用户人群包中删除用户
  *
  * @author auto create
- * @since 1.0, 2023-03-19 16:40:50
+ * @since 1.0, 2023-05-16 13:56:31
  */
 public class AlipayMerchantQipanCrowduserDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1315898896566461675L;
+	private static final long serialVersionUID = 8754283431595625187L;
 
 	/**
 	 * 支付宝人群code

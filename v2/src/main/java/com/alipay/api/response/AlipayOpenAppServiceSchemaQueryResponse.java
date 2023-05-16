@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.service.schema.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:54:59
+ * @since 1.0, 2023-05-16 16:11:49
  */
 public class AlipayOpenAppServiceSchemaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6164839385578515676L;
+	private static final long serialVersionUID = 1762465733725599316L;
 
 	/** 
 	 * 类目id
@@ -31,6 +31,12 @@ public class AlipayOpenAppServiceSchemaQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("schema_xml")
 	private String schemaXml;
+
+	/** 
+	 * 服务模版类型
+	 */
+	@ApiField("template_type")
+	private String templateType;
 
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
@@ -51,6 +57,13 @@ public class AlipayOpenAppServiceSchemaQueryResponse extends AlipayResponse {
 	}
 	public String getSchemaXml( ) {
 		return this.schemaXml;
+	}
+
+	public void setTemplateType(String templateType) {
+		this.templateType = templateType;
+	}
+	public String getTemplateType( ) {
+		return this.templateType;
 	}
 
 }

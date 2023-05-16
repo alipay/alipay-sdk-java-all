@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceFundBindModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3813769179578237773L;
+	private static final long serialVersionUID = 7526358789231186933L;
 
 	/**
 	 * 已经绑定的银行卡对应的代扣协议号。用户完成新卡的授权签约后，接口会将该协议号对应的代扣协议解绑。
