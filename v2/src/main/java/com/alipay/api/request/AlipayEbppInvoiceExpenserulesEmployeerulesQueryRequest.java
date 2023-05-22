@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.expenserules.employeerules.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:51:51
+ * @since 1.0, 2023-05-19 15:31:53
  */
 public class AlipayEbppInvoiceExpenserulesEmployeerulesQueryRequest implements AlipayRequest<AlipayEbppInvoiceExpenserulesEmployeerulesQueryResponse> {
 

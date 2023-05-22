@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请开票的详情（为支持总分模式开票新增的参数
  *
  * @author auto create
- * @since 1.0, 2023-01-11 17:54:13
+ * @since 1.0, 2023-05-18 16:10:32
  */
 public class OutputApplyInvoiceDetailOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 3578695751257268679L;
+	private static final long serialVersionUID = 5247967473519244331L;
 
 	/**
 	 * 分配多少金额到本组对象

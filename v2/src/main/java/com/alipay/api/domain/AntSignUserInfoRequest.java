@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签署人信息
  *
  * @author auto create
- * @since 1.0, 2023-05-15 09:39:05
+ * @since 1.0, 2023-05-18 14:48:56
  */
 public class AntSignUserInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 2321771933544935691L;
+	private static final long serialVersionUID = 1877721385761864995L;
 
 	/**
 	 * 授权签署方证件号码
@@ -39,6 +39,12 @@ public class AntSignUserInfoRequest extends AlipayObject {
 	 */
 	@ApiField("authorized")
 	private String authorized;
+
+	/**
+	 * ture为需要自动签署，false为手动签署
+	 */
+	@ApiField("auto_sign")
+	private Boolean autoSign;
 
 	/**
 	 * 签署文件列表（包含印模和签署区域）
@@ -70,6 +76,12 @@ public class AntSignUserInfoRequest extends AlipayObject {
 	 */
 	@ApiField("our_corp")
 	private Boolean ourCorp;
+
+	/**
+	 * true为需要发送链接，false为不需要发送链接
+	 */
+	@ApiField("send_link_flag")
+	private Boolean sendLinkFlag;
 
 	/**
 	 * signUserType为org时必选 
@@ -148,6 +160,13 @@ CRED_ORG_USCC(统一社会信用代码)
 		this.authorized = authorized;
 	}
 
+	public Boolean getAutoSign() {
+		return this.autoSign;
+	}
+	public void setAutoSign(Boolean autoSign) {
+		this.autoSign = autoSign;
+	}
+
 	public List<CaSystemSignFileRequest> getCaSystemSignFileRequestList() {
 		return this.caSystemSignFileRequestList;
 	}
@@ -181,6 +200,13 @@ CRED_ORG_USCC(统一社会信用代码)
 	}
 	public void setOurCorp(Boolean ourCorp) {
 		this.ourCorp = ourCorp;
+	}
+
+	public Boolean getSendLinkFlag() {
+		return this.sendLinkFlag;
+	}
+	public void setSendLinkFlag(Boolean sendLinkFlag) {
+		this.sendLinkFlag = sendLinkFlag;
 	}
 
 	public String getSignSubType() {

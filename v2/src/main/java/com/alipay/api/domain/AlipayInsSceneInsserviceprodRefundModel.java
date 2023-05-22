@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退订服务
  *
  * @author auto create
- * @since 1.0, 2023-03-08 12:58:22
+ * @since 1.0, 2023-05-18 18:36:14
  */
 public class AlipayInsSceneInsserviceprodRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1723754834857512789L;
+	private static final long serialVersionUID = 6812694657898318433L;
 
 	/**
 	 * 服务订单号

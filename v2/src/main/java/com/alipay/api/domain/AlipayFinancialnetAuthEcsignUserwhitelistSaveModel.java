@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签呗电子签约用户白名单信息保存服务
  *
  * @author auto create
- * @since 1.0, 2023-04-14 16:32:46
+ * @since 1.0, 2023-05-22 09:48:06
  */
 public class AlipayFinancialnetAuthEcsignUserwhitelistSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8139255773471219429L;
+	private static final long serialVersionUID = 1785316591415616242L;
 
 	/**
 	 * 回跳页面类型

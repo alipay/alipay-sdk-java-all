@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连天梭查询接口
  *
  * @author auto create
- * @since 1.0, 2022-04-20 17:52:00
+ * @since 1.0, 2023-05-17 16:54:10
  */
 public class AntMerchantExpandIndirectTiansuoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1245484737895299516L;
+	private static final long serialVersionUID = 8358793171787759466L;
 
 	/**
 	 * 间连商户入驻时填写的营业执照号

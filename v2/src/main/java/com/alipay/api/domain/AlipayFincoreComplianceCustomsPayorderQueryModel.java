@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝跨境业务海关支付单信息查询
  *
  * @author auto create
- * @since 1.0, 2023-03-23 16:47:51
+ * @since 1.0, 2023-05-19 10:52:17
  */
 public class AlipayFincoreComplianceCustomsPayorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5274159957544427541L;
+	private static final long serialVersionUID = 8654778725513498679L;
 
 	/**
 	 * 外部业务号

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.miniapptrade.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:29:40
+ * @since 1.0, 2023-05-18 13:56:57
  */
 public class AlipayDataMdaMiniapptradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3846765248554552475L;
+	private static final long serialVersionUID = 3697631139616552468L;
 
 	/** 
 	 * 今日告警趋势、响应趋势
@@ -24,19 +24,19 @@ public class AlipayDataMdaMiniapptradeQueryResponse extends AlipayResponse {
 	 * 告警响应率
 	 */
 	@ApiField("trade_alarm_response_rate")
-	private Long tradeAlarmResponseRate;
+	private String tradeAlarmResponseRate;
 
 	/** 
 	 * 调用平均耗时
 	 */
 	@ApiField("trade_avg_cost")
-	private Long tradeAvgCost;
+	private String tradeAvgCost;
 
 	/** 
 	 * 支付接口调用成功率
 	 */
 	@ApiField("trade_success_rate")
-	private Long tradeSuccessRate;
+	private String tradeSuccessRate;
 
 	/** 
 	 * 支付接口调用成功量
@@ -69,24 +69,24 @@ public class AlipayDataMdaMiniapptradeQueryResponse extends AlipayResponse {
 		return this.respAlarmTrend;
 	}
 
-	public void setTradeAlarmResponseRate(Long tradeAlarmResponseRate) {
+	public void setTradeAlarmResponseRate(String tradeAlarmResponseRate) {
 		this.tradeAlarmResponseRate = tradeAlarmResponseRate;
 	}
-	public Long getTradeAlarmResponseRate( ) {
+	public String getTradeAlarmResponseRate( ) {
 		return this.tradeAlarmResponseRate;
 	}
 
-	public void setTradeAvgCost(Long tradeAvgCost) {
+	public void setTradeAvgCost(String tradeAvgCost) {
 		this.tradeAvgCost = tradeAvgCost;
 	}
-	public Long getTradeAvgCost( ) {
+	public String getTradeAvgCost( ) {
 		return this.tradeAvgCost;
 	}
 
-	public void setTradeSuccessRate(Long tradeSuccessRate) {
+	public void setTradeSuccessRate(String tradeSuccessRate) {
 		this.tradeSuccessRate = tradeSuccessRate;
 	}
-	public Long getTradeSuccessRate( ) {
+	public String getTradeSuccessRate( ) {
 		return this.tradeSuccessRate;
 	}
 

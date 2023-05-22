@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.welfareagrealtime.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-11 15:01:33
+ * @since 1.0, 2023-05-18 13:56:56
  */
 public class AlipayDataMdaWelfareagrealtimeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7167353426568155999L;
+	private static final long serialVersionUID = 2857655788923482398L;
 
 	/** 
 	 * 今日完成火苗捐赠人数

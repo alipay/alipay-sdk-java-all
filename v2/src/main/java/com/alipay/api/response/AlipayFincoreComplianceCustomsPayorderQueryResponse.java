@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.customs.payorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-12 15:29:24
+ * @since 1.0, 2023-05-19 10:56:57
  */
 public class AlipayFincoreComplianceCustomsPayorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7174521888182372694L;
+	private static final long serialVersionUID = 2692929342325695832L;
 
 	/** 
 	 * 证件号
@@ -39,10 +39,22 @@ public class AlipayFincoreComplianceCustomsPayorderQueryResponse extends AlipayR
 	private String mobile;
 
 	/** 
+	 * 清算交易号，如果没有被动清算时，返回空字符串
+	 */
+	@ApiField("pay_transaction_id")
+	private String payTransactionId;
+
+	/** 
 	 * 姓名
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	/** 
+	 * 清算机构号，YL、WL，没有时返回空字段串
+	 */
+	@ApiField("ver_dept")
+	private String verDept;
 
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
@@ -72,11 +84,25 @@ public class AlipayFincoreComplianceCustomsPayorderQueryResponse extends AlipayR
 		return this.mobile;
 	}
 
+	public void setPayTransactionId(String payTransactionId) {
+		this.payTransactionId = payTransactionId;
+	}
+	public String getPayTransactionId( ) {
+		return this.payTransactionId;
+	}
+
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 	public String getUserName( ) {
 		return this.userName;
+	}
+
+	public void setVerDept(String verDept) {
+		this.verDept = verDept;
+	}
+	public String getVerDept( ) {
+		return this.verDept;
 	}
 
 }

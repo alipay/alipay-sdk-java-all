@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantIndirectPromotaskTakeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5318271842655911111L;
+	private static final long serialVersionUID = 4656391593526639921L;
 
 	/**
 	 * 业务场景编码，接入时参考业务接入文档由支付宝侧分配。

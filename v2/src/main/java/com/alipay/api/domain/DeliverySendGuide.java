@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推广投放引导
  *
  * @author auto create
- * @since 1.0, 2023-04-19 14:29:56
+ * @since 1.0, 2023-05-19 10:59:37
  */
 public class DeliverySendGuide extends AlipayObject {
 
-	private static final long serialVersionUID = 5531925886611747293L;
+	private static final long serialVersionUID = 2229116868781514378L;
 
 	/**
 	 * 引导链接，从支付宝公域跳转到服务商(商户)承接页的引导链接。

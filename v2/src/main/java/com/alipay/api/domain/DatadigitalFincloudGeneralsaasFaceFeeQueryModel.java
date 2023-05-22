@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 单据计费情况查询
  *
  * @author auto create
- * @since 1.0, 2023-01-13 17:16:24
+ * @since 1.0, 2023-05-17 09:44:27
  */
 public class DatadigitalFincloudGeneralsaasFaceFeeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3456677271171174858L;
+	private static final long serialVersionUID = 6656521136655143876L;
 
 	/**
 	 * 请传入certify_id列表。

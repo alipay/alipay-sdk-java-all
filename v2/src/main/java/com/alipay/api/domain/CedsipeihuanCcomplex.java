@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CedsipeihuanCcomplex extends AlipayObject {
 
-	private static final long serialVersionUID = 5286526836699385541L;
+	private static final long serialVersionUID = 4651682491246132279L;
 
 	/**
 	 * 特殊可选
@@ -20,9 +20,10 @@ public class CedsipeihuanCcomplex extends AlipayObject {
 	private String d;
 
 	/**
-	 * 可选
+	 * 可选 当前字段已废弃(废弃物测试VDC成都市)
 	 */
 	@ApiField("dede")
+	@Deprecated
 	private String dede;
 
 	/**

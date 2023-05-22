@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签署人状态列表
  *
  * @author auto create
- * @since 1.0, 2023-03-01 17:47:57
+ * @since 1.0, 2023-05-17 14:19:31
  */
 public class AntSignOperatorResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3879764667664963544L;
+	private static final long serialVersionUID = 5482412677331449935L;
 
 	/**
 	 * 授权人证件名称

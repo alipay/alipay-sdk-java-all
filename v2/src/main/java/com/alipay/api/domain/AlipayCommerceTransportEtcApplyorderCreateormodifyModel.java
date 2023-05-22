@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2023-05-15 16:19:46
+ * @since 1.0, 2023-05-18 23:45:17
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3832356617955119795L;
+	private static final long serialVersionUID = 8656186557759367632L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新
 	 */
 	@ApiField("alipay_order_id")
 	private String alipayOrderId;
+
+	/**
+	 * 订单申请场景
+	 */
+	@ApiField("apply_scene")
+	private String applyScene;
+
+	/**
+	 * 订单申请子场景
+	 */
+	@ApiField("apply_sub_scene")
+	private String applySubScene;
 
 	/**
 	 * 办理人所在地城市编码
@@ -162,6 +174,20 @@ LIMEGREEN: 黄绿色。
 	}
 	public void setAlipayOrderId(String alipayOrderId) {
 		this.alipayOrderId = alipayOrderId;
+	}
+
+	public String getApplyScene() {
+		return this.applyScene;
+	}
+	public void setApplyScene(String applyScene) {
+		this.applyScene = applyScene;
+	}
+
+	public String getApplySubScene() {
+		return this.applySubScene;
+	}
+	public void setApplySubScene(String applySubScene) {
+		this.applySubScene = applySubScene;
 	}
 
 	public String getCityCode() {

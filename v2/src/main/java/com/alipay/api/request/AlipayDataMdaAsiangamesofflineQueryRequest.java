@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.asiangamesoffline.query request
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:27:35
+ * @since 1.0, 2023-05-18 13:56:57
  */
 public class AlipayDataMdaAsiangamesofflineQueryRequest implements AlipayRequest<AlipayDataMdaAsiangamesofflineQueryResponse> {
 

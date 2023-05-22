@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消即时配送订单
  *
  * @author auto create
- * @since 1.0, 2022-10-18 15:04:15
+ * @since 1.0, 2023-05-18 16:24:51
  */
 public class AlipayCommerceLogisticsOrderInstantdeliveryCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4396974684813432515L;
+	private static final long serialVersionUID = 6261382757261799226L;
 
 	/**
 	 * 取消原因，取消原因id为i_6时必填

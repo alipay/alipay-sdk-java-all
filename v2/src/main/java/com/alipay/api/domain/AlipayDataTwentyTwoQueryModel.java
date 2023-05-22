@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * lhy三月二十二日文档测试
  *
  * @author auto create
- * @since 1.0, 2023-04-18 16:18:02
+ * @since 1.0, 2023-05-17 16:35:01
  */
 public class AlipayDataTwentyTwoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5269347982632178875L;
+	private static final long serialVersionUID = 7384692493922311916L;
 
 	/**
 	 * body基础描述
@@ -20,9 +20,16 @@ public class AlipayDataTwentyTwoQueryModel extends AlipayObject {
 	private String body;
 
 	/**
-	 * id基础描述
+	 * derdesc
+	 */
+	@ApiField("body_a")
+	private String bodyA;
+
+	/**
+	 * id基础描述 当前字段已废弃(废弃原废弃原废弃原废弃原)
 	 */
 	@ApiField("id")
+	@Deprecated
 	private String id;
 
 	/**
@@ -48,6 +55,13 @@ public class AlipayDataTwentyTwoQueryModel extends AlipayObject {
 	}
 	public void setBody(String body) {
 		this.body = body;
+	}
+
+	public String getBodyA() {
+		return this.bodyA;
+	}
+	public void setBodyA(String bodyA) {
+		this.bodyA = bodyA;
 	}
 
 	public String getId() {

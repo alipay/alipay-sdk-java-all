@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2023-04-24 09:33:39
+ * @since 1.0, 2023-05-18 18:00:06
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1859749679569472292L;
+	private static final long serialVersionUID = 5851197192913713523L;
 
 	/**
 	 * 共同账户ID
@@ -24,6 +24,12 @@ public class EcConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("agreement_peer_payer_id")
 	private String agreementPeerPayerId;
+
+	/**
+	 * 员工优惠金额，单位：元
+	 */
+	@ApiField("benefit_amount")
+	private String benefitAmount;
 
 	/**
 	 * 外部交易流水号
@@ -48,6 +54,12 @@ public class EcConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("consume_category")
 	private String consumeCategory;
+
+	/**
+	 * 订单原价，单位：元，包含营销资产
+	 */
+	@ApiField("consume_fee_with_discount")
+	private String consumeFeeWithDiscount;
 
 	/**
 	 * 员工消费记账备注
@@ -260,6 +272,13 @@ OTHER：其他
 		this.agreementPeerPayerId = agreementPeerPayerId;
 	}
 
+	public String getBenefitAmount() {
+		return this.benefitAmount;
+	}
+	public void setBenefitAmount(String benefitAmount) {
+		this.benefitAmount = benefitAmount;
+	}
+
 	public String getBizOutNo() {
 		return this.bizOutNo;
 	}
@@ -286,6 +305,13 @@ OTHER：其他
 	}
 	public void setConsumeCategory(String consumeCategory) {
 		this.consumeCategory = consumeCategory;
+	}
+
+	public String getConsumeFeeWithDiscount() {
+		return this.consumeFeeWithDiscount;
+	}
+	public void setConsumeFeeWithDiscount(String consumeFeeWithDiscount) {
+		this.consumeFeeWithDiscount = consumeFeeWithDiscount;
 	}
 
 	public String getConsumeMemo() {

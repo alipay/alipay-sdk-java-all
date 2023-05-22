@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 字段隐藏与废弃openapi接口
  *
  * @author auto create
- * @since 1.0, 2023-05-16 16:21:17
+ * @since 1.0, 2023-05-17 20:19:31
  */
 public class AlipayIsponetestWzwtestWzwtestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1293713877655374968L;
+	private static final long serialVersionUID = 8432154274398833768L;
 
 	/**
 	 * test
@@ -20,15 +20,41 @@ public class AlipayIsponetestWzwtestWzwtestQueryModel extends AlipayObject {
 	private String aOpenId;
 
 	/**
-	 * test
+	 * 22
+	 */
+	@ApiField("aaaa")
+	private String aaaa;
+
+	/**
+	 * 33
+	 */
+	@ApiField("bbbb")
+	private String bbbb;
+
+	/**
+	 * 2
+	 */
+	@ApiField("ccc")
+	private String ccc;
+
+	/**
+	 * test 当前字段已废弃(test废弃字段测试)
 	 */
 	@ApiField("complex_a")
+	@Deprecated
 	private TestDemo complexA;
 
 	/**
 	 * test
 	 */
+	@ApiField("complex_b")
+	private String complexB;
+
+	/**
+	 * test 当前字段已废弃(test废弃原因测试)
+	 */
 	@ApiField("string_a")
+	@Deprecated
 	private String stringA;
 
 	/**
@@ -50,11 +76,39 @@ public class AlipayIsponetestWzwtestWzwtestQueryModel extends AlipayObject {
 		this.aOpenId = aOpenId;
 	}
 
+	public String getAaaa() {
+		return this.aaaa;
+	}
+	public void setAaaa(String aaaa) {
+		this.aaaa = aaaa;
+	}
+
+	public String getBbbb() {
+		return this.bbbb;
+	}
+	public void setBbbb(String bbbb) {
+		this.bbbb = bbbb;
+	}
+
+	public String getCcc() {
+		return this.ccc;
+	}
+	public void setCcc(String ccc) {
+		this.ccc = ccc;
+	}
+
 	public TestDemo getComplexA() {
 		return this.complexA;
 	}
 	public void setComplexA(TestDemo complexA) {
 		this.complexA = complexA;
+	}
+
+	public String getComplexB() {
+		return this.complexB;
+	}
+	public void setComplexB(String complexB) {
+		this.complexB = complexB;
 	}
 
 	public String getStringA() {

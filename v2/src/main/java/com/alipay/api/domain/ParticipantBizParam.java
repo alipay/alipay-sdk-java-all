@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扩展数据
  *
  * @author auto create
- * @since 1.0, 2023-03-07 12:03:22
+ * @since 1.0, 2023-05-18 20:54:51
  */
 public class ParticipantBizParam extends AlipayObject {
 
-	private static final long serialVersionUID = 4775166192844912475L;
+	private static final long serialVersionUID = 2689143854446472624L;
 
 	/**
 	 * 出资比例
@@ -25,6 +25,12 @@ public class ParticipantBizParam extends AlipayObject {
 	@ApiField("fund_type")
 	private String fundType;
 
+	/**
+	 * 间连商户ID
+	 */
+	@ApiField("sub_merchant_id")
+	private String subMerchantId;
+
 	public String getFundRatio() {
 		return this.fundRatio;
 	}
@@ -37,6 +43,13 @@ public class ParticipantBizParam extends AlipayObject {
 	}
 	public void setFundType(String fundType) {
 		this.fundType = fundType;
+	}
+
+	public String getSubMerchantId() {
+		return this.subMerchantId;
+	}
+	public void setSubMerchantId(String subMerchantId) {
+		this.subMerchantId = subMerchantId;
 	}
 
 }

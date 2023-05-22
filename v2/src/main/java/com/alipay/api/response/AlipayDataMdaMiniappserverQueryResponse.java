@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.miniappserver.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:28:33
+ * @since 1.0, 2023-05-18 13:56:57
  */
 public class AlipayDataMdaMiniappserverQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6121616393138658435L;
+	private static final long serialVersionUID = 6712336436663272934L;
 
 	/** 
 	 * 平均恢复耗时(分钟)
@@ -24,7 +24,7 @@ public class AlipayDataMdaMiniappserverQueryResponse extends AlipayResponse {
 	 * 访问成功率
 	 */
 	@ApiField("success_rate")
-	private Long successRate;
+	private String successRate;
 
 	/** 
 	 * 今日告警次数
@@ -36,7 +36,7 @@ public class AlipayDataMdaMiniappserverQueryResponse extends AlipayResponse {
 	 * 今日告警响应率
 	 */
 	@ApiField("today_alarm_response_rate")
-	private Long todayAlarmResponseRate;
+	private String todayAlarmResponseRate;
 
 	public void setAverageRecoveryCostMins(Long averageRecoveryCostMins) {
 		this.averageRecoveryCostMins = averageRecoveryCostMins;
@@ -45,10 +45,10 @@ public class AlipayDataMdaMiniappserverQueryResponse extends AlipayResponse {
 		return this.averageRecoveryCostMins;
 	}
 
-	public void setSuccessRate(Long successRate) {
+	public void setSuccessRate(String successRate) {
 		this.successRate = successRate;
 	}
-	public Long getSuccessRate( ) {
+	public String getSuccessRate( ) {
 		return this.successRate;
 	}
 
@@ -59,10 +59,10 @@ public class AlipayDataMdaMiniappserverQueryResponse extends AlipayResponse {
 		return this.todayAlarmNumber;
 	}
 
-	public void setTodayAlarmResponseRate(Long todayAlarmResponseRate) {
+	public void setTodayAlarmResponseRate(String todayAlarmResponseRate) {
 		this.todayAlarmResponseRate = todayAlarmResponseRate;
 	}
-	public Long getTodayAlarmResponseRate( ) {
+	public String getTodayAlarmResponseRate( ) {
 		return this.todayAlarmResponseRate;
 	}
 

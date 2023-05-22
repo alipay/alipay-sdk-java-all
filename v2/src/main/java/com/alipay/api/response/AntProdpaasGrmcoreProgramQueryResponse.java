@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.prodpaas.grmcore.program.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:35:43
+ * @since 1.0, 2023-05-19 16:50:13
  */
 public class AntProdpaasGrmcoreProgramQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8236151496832949372L;
+	private static final long serialVersionUID = 4232676347264828365L;
 
 	/** 
 	 * 业管平台立项信息

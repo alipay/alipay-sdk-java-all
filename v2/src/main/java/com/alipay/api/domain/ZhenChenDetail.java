@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhenChenDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2746236294829631239L;
+	private static final long serialVersionUID = 8154541946657928887L;
 
 	/**
 	 * 是个串

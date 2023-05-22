@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape用户行为上报
  *
  * @author auto create
- * @since 1.0, 2023-04-25 17:18:16
+ * @since 1.0, 2023-05-18 17:30:49
  */
 public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2253114558718577989L;
+	private static final long serialVersionUID = 4682952699797425953L;
 
 	/**
 	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）等
@@ -42,6 +42,12 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	 */
 	@ApiField("log_time")
 	private String logTime;
+
+	/**
+	 * 传item的素材id，如果推荐接口没返回素材id，这个就不传
+	 */
+	@ApiField("material_id")
+	private String materialId;
 
 	/**
 	 * 加密userId
@@ -154,6 +160,13 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	}
 	public void setLogTime(String logTime) {
 		this.logTime = logTime;
+	}
+
+	public String getMaterialId() {
+		return this.materialId;
+	}
+	public void setMaterialId(String materialId) {
+		this.materialId = materialId;
 	}
 
 	public String getOpenId() {

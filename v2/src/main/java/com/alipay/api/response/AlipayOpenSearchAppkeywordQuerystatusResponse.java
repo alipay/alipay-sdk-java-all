@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.appkeyword.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:01:51
+ * @since 1.0, 2023-05-19 19:16:52
  */
 public class AlipayOpenSearchAppkeywordQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4373591185758927748L;
+	private static final long serialVersionUID = 8439211977715831361L;
 
 	/** 
 	 * 关键词工单审核状态返回值

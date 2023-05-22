@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据棋盘标签创建人群
  *
  * @author auto create
- * @since 1.0, 2023-03-29 17:21:33
+ * @since 1.0, 2023-05-17 20:36:56
  */
 public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2735846289365319312L;
+	private static final long serialVersionUID = 4533787795671567369L;
 
 	/**
 	 * 安全应用范围，参考文档 <a href="https://opendocs.alipay.com/pre-open/04phhq" target="_blank">安全应用范围枚举</a>
@@ -40,6 +40,15 @@ public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 	 */
 	@ApiField("crowd_name")
 	private String crowdName;
+
+	/**
+	 * 人群在支付宝棋盘站点是否可见,取值如下：
+<li>true-支付宝站点<b>不可见</b></li>
+<li>false-支付宝站点<b>可见，默认值</b></li>
+使用说明：创建的人群后续需使用标签进行二次圈选，且本人群对商户不可见时可设置为true。
+	 */
+	@ApiField("hidden")
+	private Boolean hidden;
 
 	/**
 	 * 人群标签值列表
@@ -74,6 +83,13 @@ public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 	}
 	public void setCrowdName(String crowdName) {
 		this.crowdName = crowdName;
+	}
+
+	public Boolean getHidden() {
+		return this.hidden;
+	}
+	public void setHidden(Boolean hidden) {
+		this.hidden = hidden;
 	}
 
 	public List<CrowdSelectTagOpenRequest> getSelectTagList() {

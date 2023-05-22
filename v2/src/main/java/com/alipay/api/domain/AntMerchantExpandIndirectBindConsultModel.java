@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商代间连商户解绑咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-01-11 14:33:54
+ * @since 1.0, 2023-05-17 16:47:40
  */
 public class AntMerchantExpandIndirectBindConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6469259478596468373L;
+	private static final long serialVersionUID = 7497693199185586575L;
 
 	/**
 	 * 申请单ID，与out_biz_no二选一

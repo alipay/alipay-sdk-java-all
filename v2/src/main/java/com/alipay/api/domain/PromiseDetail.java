@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活记录详情
  *
  * @author auto create
- * @since 1.0, 2023-05-15 11:30:11
+ * @since 1.0, 2023-05-17 15:46:02
  */
 public class PromiseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4164369373977235494L;
+	private static final long serialVersionUID = 4873275744563151125L;
 
 	/**
 	 * 授权状态
@@ -60,6 +60,12 @@ public class PromiseDetail extends AlipayObject {
 	 */
 	@ApiField("merchant_name")
 	private String merchantName;
+
+	/**
+	 * 生活记录加入时的外部业务号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 周期类型
@@ -169,6 +175,13 @@ public class PromiseDetail extends AlipayObject {
 	}
 	public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public String getPeriodType() {

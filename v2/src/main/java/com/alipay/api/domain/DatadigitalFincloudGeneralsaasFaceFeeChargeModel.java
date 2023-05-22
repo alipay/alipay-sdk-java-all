@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸认证产品计费
  *
  * @author auto create
- * @since 1.0, 2022-05-26 20:43:01
+ * @since 1.0, 2023-05-17 09:44:56
  */
 public class DatadigitalFincloudGeneralsaasFaceFeeChargeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2524221917457515277L;
+	private static final long serialVersionUID = 2567598394979462672L;
 
 	/**
 	 * 云上人脸服务生成的单据号

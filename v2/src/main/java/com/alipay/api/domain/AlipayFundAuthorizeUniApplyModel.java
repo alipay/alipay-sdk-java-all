@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 超上借支授权申请
  *
  * @author auto create
- * @since 1.0, 2023-05-08 11:32:43
+ * @since 1.0, 2023-05-18 20:54:51
  */
 public class AlipayFundAuthorizeUniApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3724712216814859648L;
+	private static final long serialVersionUID = 7441579668136528916L;
 
 	/**
 	 * 超时时间，过期跳转链接失效，格式为yyyy-MM-dd HH:mm。不传，有效期默认7天

@@ -7,16 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * openapi测试2022//11/19
  *
  * @author auto create
- * @since 1.0, 2023-05-16 17:44:54
+ * @since 1.0, 2023-05-17 11:50:54
  */
 public class AlipaySecurityProdOpenapiVBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7643259364156195163L;
+	private static final long serialVersionUID = 6137936699626828749L;
 
 	/**
-	 * 金额SDK目前直接消费字段的描述，若在描述中说明字段废弃和废弃原因，会自动同步SDK，无需另外开
+	 * 金额SDK目前直接消费字段的描述，若在描述中说明字段废弃和废弃原因，会自动同步SDK，无需另外开 当前字段已废弃(废弃测试下的文案的调查SDK目前直接消费字段的描述，若在描述中说明字段废弃和废弃原因，会自动同步SDK，无需另外开)
 	 */
 	@ApiField("d_amount")
+	@Deprecated
 	private String dAmount;
 
 	/**
@@ -26,9 +27,10 @@ public class AlipaySecurityProdOpenapiVBatchqueryModel extends AlipayObject {
 	private String dd;
 
 	/**
-	 * 所有文档可见
+	 * 所有文档可见 当前字段已废弃(萨达分VG不不不不不不不不不不不不不不不不不不不不不)
 	 */
 	@ApiField("ddf")
+	@Deprecated
 	private String ddf;
 
 	/**
@@ -56,9 +58,10 @@ public class AlipaySecurityProdOpenapiVBatchqueryModel extends AlipayObject {
 	private CedsipeihuanCcomplex longitudeeee;
 
 	/**
-	 * 所有文档不可见
+	 * 所有文档不可见 当前字段已废弃(热热热热热若若若若若若若若若若若若若若)
 	 */
 	@ApiField("rr")
+	@Deprecated
 	private String rr;
 
 	/**

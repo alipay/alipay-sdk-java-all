@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.miniappsafty.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:28:59
+ * @since 1.0, 2023-05-18 14:21:49
  */
 public class AlipayDataMdaMiniappsaftyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7886246779627159736L;
+	private static final long serialVersionUID = 1391258658446278572L;
 
 	/** 
 	 * 今日拦截量
@@ -24,7 +24,7 @@ public class AlipayDataMdaMiniappsaftyQueryResponse extends AlipayResponse {
 	 * 当前拦截率
 	 */
 	@ApiField("intercept_ratio")
-	private Long interceptRatio;
+	private String interceptRatio;
 
 	/** 
 	 * 拦截趋势
@@ -45,10 +45,10 @@ public class AlipayDataMdaMiniappsaftyQueryResponse extends AlipayResponse {
 		return this.interceptCnt;
 	}
 
-	public void setInterceptRatio(Long interceptRatio) {
+	public void setInterceptRatio(String interceptRatio) {
 		this.interceptRatio = interceptRatio;
 	}
-	public Long getInterceptRatio( ) {
+	public String getInterceptRatio( ) {
 		return this.interceptRatio;
 	}
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfarmUserDonationRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 7542351169397225747L;
+	private static final long serialVersionUID = 5248753667917419381L;
 
 	/**
 	 * 单次捐爱心时间

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.auth.agreement.close request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:46:50
+ * @since 1.0, 2023-05-19 19:12:05
  */
 public class AlipayPcreditHuabeiAuthAgreementCloseRequest implements AlipayRequest<AlipayPcreditHuabeiAuthAgreementCloseResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.jointaccountbill.detail.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:06:46
+ * @since 1.0, 2023-05-19 15:11:47
  */
 public class AlipayCommerceEcJointaccountbillDetailBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4486131466357519647L;
+	private static final long serialVersionUID = 1777531139334162884L;
 
 	/** 
 	 * 返回账单列表

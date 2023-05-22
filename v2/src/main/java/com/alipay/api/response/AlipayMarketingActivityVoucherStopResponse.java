@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.voucher.stop response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:51:52
+ * @since 1.0, 2023-05-19 17:42:00
  */
 public class AlipayMarketingActivityVoucherStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8299844365845915559L;
+	private static final long serialVersionUID = 1382261858968477269L;
 
 	
 

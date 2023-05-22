@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 本地商品
  *
  * @author auto create
- * @since 1.0, 2023-05-04 14:45:36
+ * @since 1.0, 2023-05-19 17:56:07
  */
 public class LocalItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7781117251928584211L;
+	private static final long serialVersionUID = 4894158821452568876L;
 
 	/**
 	 * 商品属性
@@ -26,10 +26,22 @@ public class LocalItemVO extends AlipayObject {
 	private String categoryId;
 
 	/**
+	 * 客服电话，包含区号+电话号码的座机号码格式，以及手机号码格式
+	 */
+	@ApiField("customer_service_mobile")
+	private PhoneStructVO customerServiceMobile;
+
+	/**
 	 * 商品主图链接
 	 */
 	@ApiField("head_img")
 	private String headImg;
+
+	/**
+	 * 1=官方插件版，商品详情页链接不传入 0=自定义详情页版，商品详情页链接必须传入
+	 */
+	@ApiField("item_details_page_model")
+	private String itemDetailsPageModel;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
@@ -44,6 +56,12 @@ public class LocalItemVO extends AlipayObject {
 	private String itemType;
 
 	/**
+	 * 商家名称
+	 */
+	@ApiField("merchant_name")
+	private String merchantName;
+
+	/**
 	 * 商家侧商品ID
 	 */
 	@ApiField("out_item_id")
@@ -54,6 +72,12 @@ public class LocalItemVO extends AlipayObject {
 	 */
 	@ApiField("path")
 	private String path;
+
+	/**
+	 * start_time描述售卖开始时间，end_time描述售卖结束时间，时间格式均为YYYY-MM-DD hh:mm:ss
+	 */
+	@ApiField("sold_time")
+	private TimeRangeStructVO soldTime;
 
 	/**
 	 * 审核驳回：商品审核失败时，商品状态为审核驳回。 审核中：商品处于审核流程中时，商品状态为审核中。 已下架：商家可以通过调用接口下架商品，也可以通过商家后台下架商品。 可售卖：商家可以通过调用接口上架商品，也可以通过商家后台上架商品。 冻结：当商家出现违规操作时，支付宝侧将发起冻结，商品无法对外透出。 当商品包含多个规格时，只要有一个规格的商品状态为“可售卖”，spu的商品状态则为“可售卖”。
@@ -87,11 +111,25 @@ public class LocalItemVO extends AlipayObject {
 		this.categoryId = categoryId;
 	}
 
+	public PhoneStructVO getCustomerServiceMobile() {
+		return this.customerServiceMobile;
+	}
+	public void setCustomerServiceMobile(PhoneStructVO customerServiceMobile) {
+		this.customerServiceMobile = customerServiceMobile;
+	}
+
 	public String getHeadImg() {
 		return this.headImg;
 	}
 	public void setHeadImg(String headImg) {
 		this.headImg = headImg;
+	}
+
+	public String getItemDetailsPageModel() {
+		return this.itemDetailsPageModel;
+	}
+	public void setItemDetailsPageModel(String itemDetailsPageModel) {
+		this.itemDetailsPageModel = itemDetailsPageModel;
 	}
 
 	public String getItemId() {
@@ -108,6 +146,13 @@ public class LocalItemVO extends AlipayObject {
 		this.itemType = itemType;
 	}
 
+	public String getMerchantName() {
+		return this.merchantName;
+	}
+	public void setMerchantName(String merchantName) {
+		this.merchantName = merchantName;
+	}
+
 	public String getOutItemId() {
 		return this.outItemId;
 	}
@@ -120,6 +165,13 @@ public class LocalItemVO extends AlipayObject {
 	}
 	public void setPath(String path) {
 		this.path = path;
+	}
+
+	public TimeRangeStructVO getSoldTime() {
+		return this.soldTime;
+	}
+	public void setSoldTime(TimeRangeStructVO soldTime) {
+		this.soldTime = soldTime;
 	}
 
 	public String getSpuStatus() {

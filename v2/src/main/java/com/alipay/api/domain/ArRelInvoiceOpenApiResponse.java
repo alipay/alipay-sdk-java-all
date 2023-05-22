@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票关联红蓝票信息
  *
  * @author auto create
- * @since 1.0, 2021-08-23 14:17:37
+ * @since 1.0, 2023-05-18 16:11:06
  */
 public class ArRelInvoiceOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4832417955718787471L;
+	private static final long serialVersionUID = 4173436533997968876L;
 
 	/**
 	 * 发票行信息集合

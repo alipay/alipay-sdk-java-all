@@ -8,29 +8,29 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.miniappsupport.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:29:19
+ * @since 1.0, 2023-05-18 14:11:56
  */
 public class AlipayDataMdaMiniappsupportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5624658669277832622L;
+	private static final long serialVersionUID = 1818955374956925525L;
 
 	/** 
 	 * 智能服务日环比
 	 */
 	@ApiField("ai_service_ratio")
-	private Long aiServiceRatio;
+	private String aiServiceRatio;
 
 	/** 
 	 * 客户满意度
 	 */
 	@ApiField("customer_satisfaction")
-	private Long customerSatisfaction;
+	private String customerSatisfaction;
 
 	/** 
 	 * 人工服务日环比
 	 */
 	@ApiField("manual_service_ratio")
-	private Long manualServiceRatio;
+	private String manualServiceRatio;
 
 	/** 
 	 * 今日智能服务总量
@@ -86,24 +86,24 @@ public class AlipayDataMdaMiniappsupportQueryResponse extends AlipayResponse {
 	@ApiField("yesterday_service_trend")
 	private String yesterdayServiceTrend;
 
-	public void setAiServiceRatio(Long aiServiceRatio) {
+	public void setAiServiceRatio(String aiServiceRatio) {
 		this.aiServiceRatio = aiServiceRatio;
 	}
-	public Long getAiServiceRatio( ) {
+	public String getAiServiceRatio( ) {
 		return this.aiServiceRatio;
 	}
 
-	public void setCustomerSatisfaction(Long customerSatisfaction) {
+	public void setCustomerSatisfaction(String customerSatisfaction) {
 		this.customerSatisfaction = customerSatisfaction;
 	}
-	public Long getCustomerSatisfaction( ) {
+	public String getCustomerSatisfaction( ) {
 		return this.customerSatisfaction;
 	}
 
-	public void setManualServiceRatio(Long manualServiceRatio) {
+	public void setManualServiceRatio(String manualServiceRatio) {
 		this.manualServiceRatio = manualServiceRatio;
 	}
-	public Long getManualServiceRatio( ) {
+	public String getManualServiceRatio( ) {
 		return this.manualServiceRatio;
 	}
 

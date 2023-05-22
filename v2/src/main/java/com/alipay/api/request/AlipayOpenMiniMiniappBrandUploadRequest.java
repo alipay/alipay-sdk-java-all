@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.miniapp.brand.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:24:39
+ * @since 1.0, 2023-05-19 17:12:10
  */
 public class AlipayOpenMiniMiniappBrandUploadRequest implements AlipayUploadRequest<AlipayOpenMiniMiniappBrandUploadResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 退换票申请明细
  *
  * @author auto create
- * @since 1.0, 2021-09-03 15:24:39
+ * @since 1.0, 2023-05-18 16:10:59
  */
 public class ArInvoiceReturnDetailOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1873214774197828444L;
+	private static final long serialVersionUID = 2777748747727974529L;
 
 	/**
 	 * 附件地址

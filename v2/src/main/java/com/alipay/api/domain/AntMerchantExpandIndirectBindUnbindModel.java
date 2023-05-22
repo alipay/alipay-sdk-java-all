@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商代间连商户解除账号绑定
  *
  * @author auto create
- * @since 1.0, 2022-01-11 14:33:33
+ * @since 1.0, 2023-05-17 16:45:44
  */
 public class AntMerchantExpandIndirectBindUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7516931346951532188L;
+	private static final long serialVersionUID = 4655875466979235782L;
 
 	/**
 	 * 支付宝登录号

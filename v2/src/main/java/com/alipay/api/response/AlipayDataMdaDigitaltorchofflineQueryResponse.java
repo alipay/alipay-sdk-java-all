@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.digitaltorchoffline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-11 15:01:19
+ * @since 1.0, 2023-05-18 13:41:54
  */
 public class AlipayDataMdaDigitaltorchofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3538841861792926721L;
+	private static final long serialVersionUID = 6555161863128126914L;
 
 	/** 
 	 * 数字火炬手年龄分布
 	 */
 	@ApiField("age_distribution")
 	private String ageDistribution;
+
+	/** 
+	 * 数字火炬手热门服装总数
+	 */
+	@ApiField("cloth_digital_human_cnt")
+	private Long clothDigitalHumanCnt;
 
 	/** 
 	 * 数字火炬手国家分布
@@ -55,6 +61,13 @@ public class AlipayDataMdaDigitaltorchofflineQueryResponse extends AlipayRespons
 	}
 	public String getAgeDistribution( ) {
 		return this.ageDistribution;
+	}
+
+	public void setClothDigitalHumanCnt(Long clothDigitalHumanCnt) {
+		this.clothDigitalHumanCnt = clothDigitalHumanCnt;
+	}
+	public Long getClothDigitalHumanCnt( ) {
+		return this.clothDigitalHumanCnt;
 	}
 
 	public void setCountryDistribution(String countryDistribution) {

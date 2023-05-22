@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 赛事信息同步
  *
  * @author auto create
- * @since 1.0, 2023-04-03 16:44:40
+ * @since 1.0, 2023-05-18 19:20:17
  */
 public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3675678246227697175L;
+	private static final long serialVersionUID = 2296973448526786228L;
 
 	/**
-	 * 赛事类型
+	 * 业务类型
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -42,6 +42,12 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	private Date endTime;
 
 	/**
+	 * TEST(测试数据)/PROD(正式数据)
+	 */
+	@ApiField("env")
+	private String env;
+
+	/**
 	 * 文体侧赛事业务号
 	 */
 	@ApiField("game_id")
@@ -58,6 +64,12 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	 */
 	@ApiField("game_progress_value")
 	private Long gameProgressValue;
+
+	/**
+	 * 奖牌图片链接
+	 */
+	@ApiField("medal_image")
+	private String medalImage;
 
 	/**
 	 * 2022跑遍中国-乐享中秋跑量挑战赛
@@ -79,7 +91,7 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	private String outGameNo;
 
 	/**
-	 * 中田赛事海报图片
+	 * 赛事海报图片地址，图片不大于2M
 	 */
 	@ApiField("poster_url")
 	private String posterUrl;
@@ -103,13 +115,19 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	private String sportsDataType;
 
 	/**
+	 * 马拉松
+	 */
+	@ApiField("sports_type")
+	private String sportsType;
+
+	/**
 	 * 赛事开始时间
 	 */
 	@ApiField("start_time")
 	private Date startTime;
 
 	/**
-	 * 上线
+	 * 状态(上线[ONLINE]/下线[OFFLINE])
 	 */
 	@ApiField("status")
 	private String status;
@@ -119,6 +137,13 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	 */
 	@ApiField("sub_biz_type")
 	private String subBizType;
+
+	/**
+	 * 标签列表信息
+	 */
+	@ApiListField("tag_list")
+	@ApiField("string")
+	private List<String> tagList;
 
 	/**
 	 * 用户参赛结束时间
@@ -160,6 +185,13 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 		this.endTime = endTime;
 	}
 
+	public String getEnv() {
+		return this.env;
+	}
+	public void setEnv(String env) {
+		this.env = env;
+	}
+
 	public String getGameId() {
 		return this.gameId;
 	}
@@ -179,6 +211,13 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	}
 	public void setGameProgressValue(Long gameProgressValue) {
 		this.gameProgressValue = gameProgressValue;
+	}
+
+	public String getMedalImage() {
+		return this.medalImage;
+	}
+	public void setMedalImage(String medalImage) {
+		this.medalImage = medalImage;
 	}
 
 	public String getName() {
@@ -230,6 +269,13 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 		this.sportsDataType = sportsDataType;
 	}
 
+	public String getSportsType() {
+		return this.sportsType;
+	}
+	public void setSportsType(String sportsType) {
+		this.sportsType = sportsType;
+	}
+
 	public Date getStartTime() {
 		return this.startTime;
 	}
@@ -249,6 +295,13 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	}
 	public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
+	}
+
+	public List<String> getTagList() {
+		return this.tagList;
+	}
+	public void setTagList(List<String> tagList) {
+		this.tagList = tagList;
 	}
 
 	public Date getUserJoinEndTime() {

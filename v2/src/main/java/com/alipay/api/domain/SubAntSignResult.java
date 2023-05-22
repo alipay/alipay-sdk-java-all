@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 子任务受理流水
  *
  * @author auto create
- * @since 1.0, 2023-05-15 09:39:26
+ * @since 1.0, 2023-05-18 14:48:45
  */
 public class SubAntSignResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1519847827963182583L;
+	private static final long serialVersionUID = 7837181721727522399L;
+
+	/**
+	 * 签署链接结果列表
+	 */
+	@ApiListField("ant_sign_url_result_list")
+	@ApiField("ant_sign_url_result")
+	private List<AntSignUrlResult> antSignUrlResultList;
 
 	/**
 	 * 我方签署方id
@@ -36,6 +46,13 @@ public class SubAntSignResult extends AlipayObject {
 	 */
 	@ApiField("sub_biz_no")
 	private String subBizNo;
+
+	public List<AntSignUrlResult> getAntSignUrlResultList() {
+		return this.antSignUrlResultList;
+	}
+	public void setAntSignUrlResultList(List<AntSignUrlResult> antSignUrlResultList) {
+		this.antSignUrlResultList = antSignUrlResultList;
+	}
 
 	public String getOurUserId() {
 		return this.ourUserId;

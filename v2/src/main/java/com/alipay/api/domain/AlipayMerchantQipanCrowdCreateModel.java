@@ -10,16 +10,15 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家用户人群包创建
  *
  * @author auto create
- * @since 1.0, 2023-03-19 16:41:17
+ * @since 1.0, 2023-05-17 20:36:55
  */
 public class AlipayMerchantQipanCrowdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6189722468381141229L;
+	private static final long serialVersionUID = 5282869667396478636L;
 
 	/**
-	 * 人群应用渠道。<br>
-未传值或传入渠道均非法时 采用默认渠道，默认渠道：支付结果页AA、繁星激励。<br>
-传入值时，以商户入参为准。
+	 * 安全应用范围，参考文档 <a href="https://opendocs.alipay.com/pre-open/04phhq" target="_blank">安全应用范围枚举</a>
+<br> 未传值或传入渠道均非法时 采用默认渠道，默认渠道：支付结果页AA、繁星激励。<br> 传入值时，以商户入参为准。
 	 */
 	@ApiListField("apply_channel_list")
 	@ApiField("string")
@@ -44,6 +43,15 @@ public class AlipayMerchantQipanCrowdCreateModel extends AlipayObject {
 	 */
 	@ApiField("external_crowd_code")
 	private String externalCrowdCode;
+
+	/**
+	 * 人群在支付宝棋盘站点是否可见,取值如下：
+<li>true-支付宝站点<b>不可见</b></li>
+<li>false-支付宝站点<b>可见，默认值</b></li>
+使用说明：创建的人群后续需使用标签进行二次圈选，且本人群对商户不可见时可设置为true。
+	 */
+	@ApiField("hidden")
+	private Boolean hidden;
 
 	/**
 	 * 人群包含的用户列表 单次上传用户数上限为1000，若用户量过大可分批通过alipay.merchant.qipan.crowduser.add接口上传
@@ -78,6 +86,13 @@ public class AlipayMerchantQipanCrowdCreateModel extends AlipayObject {
 	}
 	public void setExternalCrowdCode(String externalCrowdCode) {
 		this.externalCrowdCode = externalCrowdCode;
+	}
+
+	public Boolean getHidden() {
+		return this.hidden;
+	}
+	public void setHidden(Boolean hidden) {
+		this.hidden = hidden;
 	}
 
 	public List<QipanMerchantCrowdUser> getUserList() {

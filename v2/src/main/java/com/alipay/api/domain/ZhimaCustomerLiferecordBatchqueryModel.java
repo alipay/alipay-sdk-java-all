@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询生活记录详情
  *
  * @author auto create
- * @since 1.0, 2022-10-27 16:00:39
+ * @since 1.0, 2023-05-19 11:38:17
  */
 public class ZhimaCustomerLiferecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1533873975287877596L;
+	private static final long serialVersionUID = 7555349771431766211L;
+
+	/**
+	 * 商户id
+	 */
+	@ApiField("merchant_id")
+	private String merchantId;
 
 	/**
 	 * 支付宝userId的映射字段
@@ -30,10 +36,31 @@ public class ZhimaCustomerLiferecordBatchqueryModel extends AlipayObject {
 	private List<String> outBizNos;
 
 	/**
+	 * PROCESSING、UN_FINISH、CANCELED、FINISH，分别对应进行中、未完成、已取消、已完成
+	 */
+	@ApiListField("status_list")
+	@ApiField("string")
+	private List<String> statusList;
+
+	/**
+	 * 任务模板id列表
+	 */
+	@ApiListField("template_ids")
+	@ApiField("string")
+	private List<String> templateIds;
+
+	/**
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getMerchantId() {
+		return this.merchantId;
+	}
+	public void setMerchantId(String merchantId) {
+		this.merchantId = merchantId;
+	}
 
 	public String getOpenId() {
 		return this.openId;
@@ -47,6 +74,20 @@ public class ZhimaCustomerLiferecordBatchqueryModel extends AlipayObject {
 	}
 	public void setOutBizNos(List<String> outBizNos) {
 		this.outBizNos = outBizNos;
+	}
+
+	public List<String> getStatusList() {
+		return this.statusList;
+	}
+	public void setStatusList(List<String> statusList) {
+		this.statusList = statusList;
+	}
+
+	public List<String> getTemplateIds() {
+		return this.templateIds;
+	}
+	public void setTemplateIds(List<String> templateIds) {
+		this.templateIds = templateIds;
 	}
 
 	public String getUserId() {

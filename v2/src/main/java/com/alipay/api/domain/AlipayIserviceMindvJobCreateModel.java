@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceMindvJobCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4239767199826842432L;
+	private static final long serialVersionUID = 5187393526285233573L;
 
 	/**
 	 * 任务创建后发布的域名信息，枚举值:

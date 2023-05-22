@@ -7,16 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * test
  *
  * @author auto create
- * @since 1.0, 2023-05-16 16:18:45
+ * @since 1.0, 2023-05-17 20:02:13
  */
 public class TestDemo extends AlipayObject {
 
-	private static final long serialVersionUID = 7715723656884389759L;
+	private static final long serialVersionUID = 5838788656668478882L;
 
 	/**
-	 * test
+	 * test 当前字段已废弃(test废弃字段测试)
 	 */
 	@ApiField("open_id")
+	@Deprecated
 	private String openId;
 
 	/**
@@ -38,9 +39,10 @@ public class TestDemo extends AlipayObject {
 	private String stringYingshe2Openid;
 
 	/**
-	 * test
+	 * test 当前字段已废弃(test废弃字段测试)
 	 */
 	@ApiField("uid")
+	@Deprecated
 	private String uid;
 
 	public String getOpenId() {

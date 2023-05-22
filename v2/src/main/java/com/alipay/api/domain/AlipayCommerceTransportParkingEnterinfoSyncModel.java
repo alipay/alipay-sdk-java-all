@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车入场信息同步接口
  *
  * @author auto create
- * @since 1.0, 2023-03-23 17:38:50
+ * @since 1.0, 2023-05-19 15:13:50
  */
 public class AlipayCommerceTransportParkingEnterinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8376937641488418493L;
+	private static final long serialVersionUID = 4367126855713196141L;
 
 	/**
 	 * 是否启用车牌代扣状态查询功能，true为启用，false为停用
@@ -44,6 +44,12 @@ public class AlipayCommerceTransportParkingEnterinfoSyncModel extends AlipayObje
 	 */
 	@ApiField("need_charge")
 	private Boolean needCharge;
+
+	/**
+	 * 蚂蚁会员统一ID对应的归属应用appid
+	 */
+	@ApiField("open_appid")
+	private String openAppid;
 
 	/**
 	 * 蚂蚁会员统一ID
@@ -126,6 +132,13 @@ public class AlipayCommerceTransportParkingEnterinfoSyncModel extends AlipayObje
 	}
 	public void setNeedCharge(Boolean needCharge) {
 		this.needCharge = needCharge;
+	}
+
+	public String getOpenAppid() {
+		return this.openAppid;
+	}
+	public void setOpenAppid(String openAppid) {
+		this.openAppid = openAppid;
 	}
 
 	public String getOpenId() {

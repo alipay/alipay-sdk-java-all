@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.alloc.reverse.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:36:55
+ * @since 1.0, 2023-05-19 15:46:48
  */
 public class AlipayFundAllocReverseTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5829628646261821632L;
+	private static final long serialVersionUID = 6164823161199224157L;
 
 	/** 
 	 * 退款金额
