@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditGuaranteeTradedrivePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5834788437197858565L;
+	private static final long serialVersionUID = 1394715117651117687L;
 
 	/** 
 	 * 调用成功则返回调用业务编码

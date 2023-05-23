@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderidApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3331145158196748294L;
+	private static final long serialVersionUID = 5868189956146639424L;
 
 	/**
 	 * 商户id

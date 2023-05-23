@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceItaskServiceventChangeNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4762822341553533745L;
+	private static final long serialVersionUID = 6115633538769296789L;
 
 	
 

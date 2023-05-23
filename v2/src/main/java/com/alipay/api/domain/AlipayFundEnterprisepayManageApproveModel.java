@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 管理员审批申请
  *
  * @author auto create
- * @since 1.0, 2022-12-15 17:12:42
+ * @since 1.0, 2023-05-22 17:10:50
  */
 public class AlipayFundEnterprisepayManageApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6848761644671147574L;
+	private static final long serialVersionUID = 8717378811723143848L;
 
 	/**
 	 * 共同账户id

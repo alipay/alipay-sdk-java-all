@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZolozDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6385328569939549734L;
+	private static final long serialVersionUID = 8399223193266869231L;
 
 	/**
 	 * 客户端设备指纹

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取企业邀请员工二维码链接
  *
  * @author auto create
- * @since 1.0, 2022-12-15 11:45:10
+ * @since 1.0, 2023-05-22 17:10:59
  */
 public class AlipayFundEnterprisepayMemberjointurlApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2191745677587766272L;
+	private static final long serialVersionUID = 5714954588614514469L;
 
 	/**
 	 * 共同账户id

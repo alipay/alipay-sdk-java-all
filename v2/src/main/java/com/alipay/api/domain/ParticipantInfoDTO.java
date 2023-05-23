@@ -1,0 +1,55 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 主体信息
+ *
+ * @author auto create
+ * @since 1.0, 2023-05-23 15:45:31
+ */
+public class ParticipantInfoDTO extends AlipayObject {
+
+	private static final long serialVersionUID = 5547876149156735597L;
+
+	/**
+	 * 授权主体名称
+	 */
+	@ApiField("name")
+	private String name;
+
+	/**
+	 * 主体Id，根据类型确定
+	 */
+	@ApiField("participant_id")
+	private String participantId;
+
+	/**
+	 * 主体类型
+	 */
+	@ApiField("participant_id_type")
+	private String participantIdType;
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getParticipantId() {
+		return this.participantId;
+	}
+	public void setParticipantId(String participantId) {
+		this.participantId = participantId;
+	}
+
+	public String getParticipantIdType() {
+		return this.participantIdType;
+	}
+	public void setParticipantIdType(String participantIdType) {
+		this.participantIdType = participantIdType;
+	}
+
+}

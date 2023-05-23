@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 担保退税转交易
  *
  * @author auto create
- * @since 1.0, 2023-01-31 17:59:54
+ * @since 1.0, 2023-05-22 17:32:09
  */
 public class AlipayOverseasTaxAdvancedPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3777366743191185675L;
+	private static final long serialVersionUID = 2414345561525299819L;
 
 	/**
 	 * 外部请求号

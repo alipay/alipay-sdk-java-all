@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 删除搜索关键词
  *
  * @author auto create
- * @since 1.0, 2023-05-08 14:22:10
+ * @since 1.0, 2023-05-22 16:30:16
  */
 public class AlipayOpenSearchAppkeywordDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4183465296777924669L;
+	private static final long serialVersionUID = 5414919733581789132L;
 
 	/**
 	 * 关键词配置ID
 	 */
 	@ApiField("config_id")
 	private String configId;
+
+	/**
+	 * 需要删除的生效关键词
+	 */
+	@ApiListField("key_words")
+	@ApiField("string")
+	private List<String> keyWords;
 
 	/**
 	 * 小程序id
@@ -30,6 +40,13 @@ public class AlipayOpenSearchAppkeywordDeleteModel extends AlipayObject {
 	}
 	public void setConfigId(String configId) {
 		this.configId = configId;
+	}
+
+	public List<String> getKeyWords() {
+		return this.keyWords;
+	}
+	public void setKeyWords(List<String> keyWords) {
+		this.keyWords = keyWords;
 	}
 
 	public String getTargetAppid() {

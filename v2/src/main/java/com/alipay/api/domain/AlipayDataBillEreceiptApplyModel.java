@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillEreceiptApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5648344832881255912L;
+	private static final long serialVersionUID = 7663149451776375954L;
 
 	/**
 	 * 授权商户pid。需调用方获取商户授权，才可使用。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditCreditriskWidgetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8788985632751585983L;
+	private static final long serialVersionUID = 2153724316525124269L;
 
 	/** 
 	 * widget json数据

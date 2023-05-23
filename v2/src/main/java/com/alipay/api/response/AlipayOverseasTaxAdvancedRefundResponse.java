@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.advanced.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:00:59
+ * @since 1.0, 2023-05-22 17:33:04
  */
 public class AlipayOverseasTaxAdvancedRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4854336633879695938L;
+	private static final long serialVersionUID = 1426212918696194235L;
 
 	/** 
 	 * 支付宝退税资金订单号

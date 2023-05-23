@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.tax.neworder.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:31:49
+ * @since 1.0, 2023-05-22 17:32:29
  */
 public class AlipayOverseasTaxNeworderCreateRequest implements AlipayRequest<AlipayOverseasTaxNeworderCreateResponse> {
 

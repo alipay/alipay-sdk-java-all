@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 给客服发送消息
  *
  * @author auto create
- * @since 1.0, 2021-08-27 09:57:36
+ * @since 1.0, 2023-05-22 15:16:50
  */
 public class AlipayIserviceCliveChatSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8191396527741936823L;
+	private static final long serialVersionUID = 4139619661598995998L;
 
 	/**
 	 * 消息内容
@@ -32,6 +32,24 @@ IMG，代表图片消息，此时content内容是可访问的图片URL
 	 */
 	@ApiField("conversation_id")
 	private String conversationId;
+
+	/**
+	 * 消息类型
+	 */
+	@ApiField("message_type_code")
+	private String messageTypeCode;
+
+	/**
+	 * 当前消息ID,要求会话内唯一
+	 */
+	@ApiField("msg_id")
+	private String msgId;
+
+	/**
+	 * 消息ID会话内唯一
+	 */
+	@ApiField("reference_message_id")
+	private String referenceMessageId;
 
 	/**
 	 * 访问DT的渠道 11:LINKS 12:HELLO_BIKE
@@ -82,6 +100,27 @@ IMG，代表图片消息，此时content内容是可访问的图片URL
 	}
 	public void setConversationId(String conversationId) {
 		this.conversationId = conversationId;
+	}
+
+	public String getMessageTypeCode() {
+		return this.messageTypeCode;
+	}
+	public void setMessageTypeCode(String messageTypeCode) {
+		this.messageTypeCode = messageTypeCode;
+	}
+
+	public String getMsgId() {
+		return this.msgId;
+	}
+	public void setMsgId(String msgId) {
+		this.msgId = msgId;
+	}
+
+	public String getReferenceMessageId() {
+		return this.referenceMessageId;
+	}
+	public void setReferenceMessageId(String referenceMessageId) {
+		this.referenceMessageId = referenceMessageId;
 	}
 
 	public String getSrc() {

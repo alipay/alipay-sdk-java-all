@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FixCooperationDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3786625692438797218L;
+	private static final long serialVersionUID = 3619254728129768781L;
 
 	/**
 	 * 协作任务的处理结论

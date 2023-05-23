@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票受理单据
  *
  * @author auto create
- * @since 1.0, 2023-05-18 16:12:59
+ * @since 1.0, 2023-05-22 13:55:04
  */
 public class InvoiceApplyOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 1652758815484347641L;
+	private static final long serialVersionUID = 3511493912752265862L;
 
 	/**
 	 * 金额
@@ -32,6 +32,12 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	private String dutyFreeType;
 
 	/**
+	 * 票面展示的费用期间
+	 */
+	@ApiField("fee_interval_format_str")
+	private String feeIntervalFormatStr;
+
+	/**
 	 * 机构号
 	 */
 	@ApiField("inst_id")
@@ -48,6 +54,12 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	 */
 	@ApiField("invoice_product_name")
 	private String invoiceProductName;
+
+	/**
+	 * 外部指定的发票行内容后缀
+	 */
+	@ApiField("invoice_product_name_suffix")
+	private String invoiceProductNameSuffix;
 
 	/**
 	 * 规格型号，可为空
@@ -86,6 +98,18 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	private String productCode;
 
 	/**
+	 * 是否全部回款
+	 */
+	@ApiField("received")
+	private String received;
+
+	/**
+	 * 注册地区域码 如：新加坡（SG）,香港（HK）
+	 */
+	@ApiField("register_country")
+	private String registerCountry;
+
+	/**
 	 * 服务月份
 	 */
 	@ApiField("service_mth")
@@ -102,6 +126,12 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	 */
 	@ApiField("tax_rate")
 	private String taxRate;
+
+	/**
+	 * 免税标识（无发票：NO_INVOICE，零税率：ZERO_TAX_RATE，免税：EXEMPTION，无税收监管：NO_TAX_REGULATION）
+	 */
+	@ApiField("tax_rate_tags")
+	private String taxRateTags;
 
 	/**
 	 * 税收类型 02 营业税;01 增值税;00 无税
@@ -130,6 +160,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 		this.dutyFreeType = dutyFreeType;
 	}
 
+	public String getFeeIntervalFormatStr() {
+		return this.feeIntervalFormatStr;
+	}
+	public void setFeeIntervalFormatStr(String feeIntervalFormatStr) {
+		this.feeIntervalFormatStr = feeIntervalFormatStr;
+	}
+
 	public String getInstId() {
 		return this.instId;
 	}
@@ -149,6 +186,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	}
 	public void setInvoiceProductName(String invoiceProductName) {
 		this.invoiceProductName = invoiceProductName;
+	}
+
+	public String getInvoiceProductNameSuffix() {
+		return this.invoiceProductNameSuffix;
+	}
+	public void setInvoiceProductNameSuffix(String invoiceProductNameSuffix) {
+		this.invoiceProductNameSuffix = invoiceProductNameSuffix;
 	}
 
 	public String getInvoiceSpecification() {
@@ -193,6 +237,20 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 		this.productCode = productCode;
 	}
 
+	public String getReceived() {
+		return this.received;
+	}
+	public void setReceived(String received) {
+		this.received = received;
+	}
+
+	public String getRegisterCountry() {
+		return this.registerCountry;
+	}
+	public void setRegisterCountry(String registerCountry) {
+		this.registerCountry = registerCountry;
+	}
+
 	public String getServiceMth() {
 		return this.serviceMth;
 	}
@@ -212,6 +270,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	}
 	public void setTaxRate(String taxRate) {
 		this.taxRate = taxRate;
+	}
+
+	public String getTaxRateTags() {
+		return this.taxRateTags;
+	}
+	public void setTaxRateTags(String taxRateTags) {
+		this.taxRateTags = taxRateTags;
 	}
 
 	public String getTaxType() {

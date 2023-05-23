@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退税查询接口
  *
  * @author auto create
- * @since 1.0, 2023-01-31 18:00:16
+ * @since 1.0, 2023-05-22 17:32:37
  */
 public class AlipayOverseasTaxOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1854773573161815255L;
+	private static final long serialVersionUID = 7874695465887475751L;
 
 	/**
 	 * 退税机构业务流水号，唯一，由退税机构生成，只能包含英字母、数字，长度不能小于3且不能大于64

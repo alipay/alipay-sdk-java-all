@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsUserTraceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8384872463658466187L;
+	private static final long serialVersionUID = 3468921956654383582L;
 
 	/**
 	 * 回溯动作

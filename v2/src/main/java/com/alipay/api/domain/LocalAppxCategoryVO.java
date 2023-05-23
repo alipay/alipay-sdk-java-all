@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地商品类目信息
  *
  * @author auto create
- * @since 1.0, 2023-04-27 15:16:51
+ * @since 1.0, 2023-05-22 17:35:43
  */
 public class LocalAppxCategoryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8474235861568935836L;
+	private static final long serialVersionUID = 5125621945378931787L;
 
 	/**
 	 * 类目编号
