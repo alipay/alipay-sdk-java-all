@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户卡信息
  *
  * @author auto create
- * @since 1.0, 2023-05-19 18:23:11
+ * @since 1.0, 2023-05-25 15:53:45
  */
 public class MerchantCard extends AlipayObject {
 
-	private static final long serialVersionUID = 1181276512259194317L;
+	private static final long serialVersionUID = 5726874228941172121L;
 
 	/**
 	 * 资金卡余额，单位：元，精确到小数点后两位。

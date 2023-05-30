@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlegalchain.ndasigner.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:36:50
+ * @since 1.0, 2023-05-29 22:16:50
  */
 public class AlipayBossProdAntlegalchainNdasignerCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5855212788512545531L;
+	private static final long serialVersionUID = 1889461654481618247L;
 
 	/** 
 	 * 失败的记录集合,只记录创建失败或通知失败的记录

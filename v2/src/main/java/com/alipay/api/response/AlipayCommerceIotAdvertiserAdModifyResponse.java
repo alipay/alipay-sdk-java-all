@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.advertiser.ad.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:57:50
+ * @since 1.0, 2023-05-29 21:38:50
  */
 public class AlipayCommerceIotAdvertiserAdModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1229119687614196927L;
+	private static final long serialVersionUID = 5514535573738722728L;
 
 	
 

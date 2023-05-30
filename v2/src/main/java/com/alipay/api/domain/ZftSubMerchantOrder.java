@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通二级商户进件申请单信息
  *
  * @author auto create
- * @since 1.0, 2021-08-02 14:59:16
+ * @since 1.0, 2023-05-26 17:17:35
  */
 public class ZftSubMerchantOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6571688466985787766L;
+	private static final long serialVersionUID = 3545994392489258619L;
 
 	/**
 	 * 是否开通线上预授权
@@ -116,6 +116,18 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	 */
 	@ApiField("sub_confirm")
 	private String subConfirm;
+
+	/**
+	 * 在快速进件场景下要求二级商户自助签约确认，通过此链接展示的二维码扫码进入支付宝小程序。（仅quickcreate接口返回）
+	 */
+	@ApiField("sub_sign_qr_code_url")
+	private String subSignQrCodeUrl;
+
+	/**
+	 * 页面跳转的短链接，用于二级商户完成签约确认，可以支持平台商发送此短链接给二级商户，通过链接跳转的方式进入支付宝小程序完成确认。（仅quickcreate接口返回）
+	 */
+	@ApiField("sub_sign_short_chain_url")
+	private String subSignShortChainUrl;
 
 	public String getAppPreAuth() {
 		return this.appPreAuth;
@@ -234,6 +246,20 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	}
 	public void setSubConfirm(String subConfirm) {
 		this.subConfirm = subConfirm;
+	}
+
+	public String getSubSignQrCodeUrl() {
+		return this.subSignQrCodeUrl;
+	}
+	public void setSubSignQrCodeUrl(String subSignQrCodeUrl) {
+		this.subSignQrCodeUrl = subSignQrCodeUrl;
+	}
+
+	public String getSubSignShortChainUrl() {
+		return this.subSignShortChainUrl;
+	}
+	public void setSubSignShortChainUrl(String subSignShortChainUrl) {
+		this.subSignShortChainUrl = subSignShortChainUrl;
 	}
 
 }

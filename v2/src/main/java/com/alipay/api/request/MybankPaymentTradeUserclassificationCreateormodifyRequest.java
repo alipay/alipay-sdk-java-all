@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.payment.trade.userclassification.createormodify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:56:56
+ * @since 1.0, 2023-05-29 23:26:50
  */
 public class MybankPaymentTradeUserclassificationCreateormodifyRequest implements AlipayRequest<MybankPaymentTradeUserclassificationCreateormodifyResponse> {
 

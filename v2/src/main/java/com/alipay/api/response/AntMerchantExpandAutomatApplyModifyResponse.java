@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.automat.apply.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:36:52
+ * @since 1.0, 2023-05-29 19:40:00
  */
 public class AntMerchantExpandAutomatApplyModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6836744743849683285L;
+	private static final long serialVersionUID = 8318825467212652653L;
 
 	/** 
 	 * 支付宝设备ID

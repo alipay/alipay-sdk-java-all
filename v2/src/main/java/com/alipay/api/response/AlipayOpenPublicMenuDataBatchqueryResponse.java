@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.menu.data.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:52:38
+ * @since 1.0, 2023-05-29 23:54:01
  */
 public class AlipayOpenPublicMenuDataBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2472982934153483955L;
+	private static final long serialVersionUID = 4151864828486554123L;
 
 	/** 
 	 * 菜单分析数据列表

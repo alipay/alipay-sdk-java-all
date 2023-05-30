@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AftAifinFireeyeOcrImageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5699936668842672974L;
+	private static final long serialVersionUID = 3641481614826827253L;
 
 	/**
 	 * 用于ocr识别请求图片的BASE64编码

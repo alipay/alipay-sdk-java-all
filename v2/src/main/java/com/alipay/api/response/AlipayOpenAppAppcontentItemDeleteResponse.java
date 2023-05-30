@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.appcontent.item.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:11:30
+ * @since 1.0, 2023-05-29 20:20:21
  */
 public class AlipayOpenAppAppcontentItemDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4317236342936167627L;
+	private static final long serialVersionUID = 6739331965871683165L;
 
 	/** 
 	 * 商品ID

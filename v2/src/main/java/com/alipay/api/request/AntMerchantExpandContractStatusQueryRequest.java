@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.contract.status.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:11:27
+ * @since 1.0, 2023-05-29 23:32:37
  */
 public class AntMerchantExpandContractStatusQueryRequest implements AlipayRequest<AntMerchantExpandContractStatusQueryResponse> {
 

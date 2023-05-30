@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundCouponWufuLiveAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6582715442863358616L;
+	private static final long serialVersionUID = 5653183799526732227L;
 
 	/**
 	 * 发卡类型：WAN_NENG_FU-万能福，SURPRISE_CARD-惊喜福卡

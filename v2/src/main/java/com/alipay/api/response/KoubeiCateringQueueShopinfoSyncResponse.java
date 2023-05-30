@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.queue.shopinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:50:35
+ * @since 1.0, 2023-05-29 21:21:33
  */
 public class KoubeiCateringQueueShopinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8626991158728397928L;
+	private static final long serialVersionUID = 4151845833977922969L;
 
 	
 

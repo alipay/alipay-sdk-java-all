@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotbpaas.devicecode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:44:30
+ * @since 1.0, 2023-05-29 21:45:47
  */
 public class AlipayOpenIotbpaasDevicecodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4482657353468282261L;
+	private static final long serialVersionUID = 1861485344977824492L;
 
 	/** 
 	 * 设备短码，由码平台生成，同一类设备的短码相同

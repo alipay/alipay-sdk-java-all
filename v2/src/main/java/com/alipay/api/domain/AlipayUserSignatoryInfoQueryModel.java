@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二方签约信息查询接口
  *
  * @author auto create
- * @since 1.0, 2022-05-09 15:02:55
+ * @since 1.0, 2023-05-30 10:51:49
  */
 public class AlipayUserSignatoryInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7391423528868457894L;
+	private static final long serialVersionUID = 1513523894626167283L;
 
 	/**
 	 * 场景码，需要在ione平台申请

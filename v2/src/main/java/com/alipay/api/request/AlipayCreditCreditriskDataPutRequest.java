@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.credit.creditrisk.data.put request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 16:49:33
+ * @since 1.0, 2023-05-29 17:41:51
  */
 public class AlipayCreditCreditriskDataPutRequest implements AlipayRequest<AlipayCreditCreditriskDataPutResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * mpcpromo商品数据
  *
  * @author auto create
- * @since 1.0, 2023-03-22 16:39:50
+ * @since 1.0, 2023-05-24 17:32:16
  */
 public class MpcpromoGoodsList extends AlipayObject {
 
-	private static final long serialVersionUID = 6775413429658234358L;
+	private static final long serialVersionUID = 8661114145611898134L;
 
 	/**
 	 * 商品可用的城市列表
@@ -97,6 +97,19 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String id;
 
 	/**
+	 * 商品的素材图片列表
+	 */
+	@ApiListField("material_list")
+	@ApiField("string")
+	private List<String> materialList;
+
+	/**
+	 * 商品下单页链接
+	 */
+	@ApiField("order_url")
+	private String orderUrl;
+
+	/**
 	 * 商品原价；非负数且保留两位小数
 	 */
 	@ApiField("origin_price")
@@ -141,7 +154,7 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String rentalDate;
 
 	/**
-	 * 商品是否支持租满即送
+	 * 商品是否支持租满即送：是/否
 	 */
 	@ApiField("rental_free")
 	private String rentalFree;
@@ -190,7 +203,7 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String shopName;
 
 	/**
-	 * 商品来源类型
+	 * 商品来源类型，如自营/第三方(如有)
 	 */
 	@ApiField("source_id")
 	private String sourceId;
@@ -202,7 +215,7 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String spuId;
 
 	/**
-	 * 推荐状态；
+	 * 推荐状态 : 可推荐: 1，不可推荐: 0
 	 */
 	@ApiField("status")
 	private String status;
@@ -320,6 +333,20 @@ public class MpcpromoGoodsList extends AlipayObject {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public List<String> getMaterialList() {
+		return this.materialList;
+	}
+	public void setMaterialList(List<String> materialList) {
+		this.materialList = materialList;
+	}
+
+	public String getOrderUrl() {
+		return this.orderUrl;
+	}
+	public void setOrderUrl(String orderUrl) {
+		this.orderUrl = orderUrl;
 	}
 
 	public String getOriginPrice() {

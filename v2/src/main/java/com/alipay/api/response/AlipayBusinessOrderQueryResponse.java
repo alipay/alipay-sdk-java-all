@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:17:43
+ * @since 1.0, 2023-05-29 23:03:46
  */
 public class AlipayBusinessOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5489666642873549632L;
+	private static final long serialVersionUID = 2513528165863962168L;
 
 	/** 
 	 * 买家用户详细信息。该返回中ext_profile_list为空。注：创建订单时的买家，请与付款方区分。

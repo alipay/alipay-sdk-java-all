@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.info.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:47:07
+ * @since 1.0, 2023-05-29 21:31:53
  */
 public class AlipayUserCertifyInfoApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1781217668659111932L;
+	private static final long serialVersionUID = 3551719624888562551L;
 
 	
 

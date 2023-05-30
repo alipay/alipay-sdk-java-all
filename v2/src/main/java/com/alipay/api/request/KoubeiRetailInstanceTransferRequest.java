@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.retail.instance.transfer request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:10:36
+ * @since 1.0, 2023-05-29 19:48:58
  */
 public class KoubeiRetailInstanceTransferRequest implements AlipayRequest<KoubeiRetailInstanceTransferResponse> {
 

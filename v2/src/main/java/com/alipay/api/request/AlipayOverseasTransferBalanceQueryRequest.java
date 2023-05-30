@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.transfer.balance.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:23:01
+ * @since 1.0, 2023-05-29 23:08:17
  */
 public class AlipayOverseasTransferBalanceQueryRequest implements AlipayRequest<AlipayOverseasTransferBalanceQueryResponse> {
 

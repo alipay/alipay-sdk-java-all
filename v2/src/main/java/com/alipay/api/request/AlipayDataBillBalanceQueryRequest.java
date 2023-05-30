@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.bill.balance.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:46:52
+ * @since 1.0, 2023-05-29 22:06:56
  */
 public class AlipayDataBillBalanceQueryRequest implements AlipayRequest<AlipayDataBillBalanceQueryResponse> {
 

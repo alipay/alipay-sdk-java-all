@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分渠道计费信息
  *
  * @author auto create
- * @since 1.0, 2022-11-14 17:44:59
+ * @since 1.0, 2023-05-29 22:41:37
  */
 public class SubFee extends AlipayObject {
 
-	private static final long serialVersionUID = 8739195835244991583L;
+	private static final long serialVersionUID = 5587913466914365356L;
 
 	/**
 	 * 实收费用

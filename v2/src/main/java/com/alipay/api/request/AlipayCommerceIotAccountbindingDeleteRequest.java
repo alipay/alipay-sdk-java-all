@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.accountbinding.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:04:48
+ * @since 1.0, 2023-05-29 23:27:04
  */
 public class AlipayCommerceIotAccountbindingDeleteRequest implements AlipayRequest<AlipayCommerceIotAccountbindingDeleteResponse> {
 

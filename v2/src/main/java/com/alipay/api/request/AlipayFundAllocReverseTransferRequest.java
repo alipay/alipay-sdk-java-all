@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.alloc.reverse.transfer request
  * 
  * @author auto create
- * @since 1.0, 2023-05-22 17:10:40
+ * @since 1.0, 2023-05-29 21:51:49
  */
 public class AlipayFundAllocReverseTransferRequest implements AlipayRequest<AlipayFundAllocReverseTransferResponse> {
 

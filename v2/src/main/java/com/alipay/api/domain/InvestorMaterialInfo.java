@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户合投认证的材料信息
  *
  * @author auto create
- * @since 1.0, 2021-11-09 16:56:43
+ * @since 1.0, 2023-05-30 14:16:41
  */
 public class InvestorMaterialInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6277316195282728781L;
+	private static final long serialVersionUID = 6441284329186463275L;
 
 	/**
 	 * 材料文件ID
@@ -26,10 +26,13 @@ public class InvestorMaterialInfo extends AlipayObject {
 	private String fileUrl;
 
 	/**
-	 * 用户材料类型
-INVEST_EXPERIENCE——投资经历
-INCOME_CERTIFICATE——收入证明
-FIN_ASSET_CERTIFICATE——金融资产证明
+	 * 合投材料类型
+	 */
+	@ApiField("material_type")
+	private String materialType;
+
+	/**
+	 * 用户材料类型大类
 	 */
 	@ApiField("type")
 	private String type;
@@ -46,6 +49,13 @@ FIN_ASSET_CERTIFICATE——金融资产证明
 	}
 	public void setFileUrl(String fileUrl) {
 		this.fileUrl = fileUrl;
+	}
+
+	public String getMaterialType() {
+		return this.materialType;
+	}
+	public void setMaterialType(String materialType) {
+		this.materialType = materialType;
 	}
 
 	public String getType() {

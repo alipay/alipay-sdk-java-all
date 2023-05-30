@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.voucher.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:17:00
+ * @since 1.0, 2023-05-29 23:36:59
  */
 public class AlipayEbppInstserviceVoucherDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1361237433898179793L;
+	private static final long serialVersionUID = 1844695663872363692L;
 
 	
 

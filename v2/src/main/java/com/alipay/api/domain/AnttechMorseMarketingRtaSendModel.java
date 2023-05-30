@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销活动发奖接口
  *
  * @author auto create
- * @since 1.0, 2023-03-07 14:51:53
+ * @since 1.0, 2023-05-26 10:55:17
  */
 public class AnttechMorseMarketingRtaSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3567915548957137363L;
+	private static final long serialVersionUID = 8768933431145425327L;
 
 	/**
 	 * 活动id描述具体给用户发奖的活动，预发奖时可以为空
@@ -26,7 +26,7 @@ public class AnttechMorseMarketingRtaSendModel extends AlipayObject {
 	private String certEncryption;
 
 	/**
-	 * 加密类型，参数值大写
+	 * 加密类型，参数值大写，如：SHA256或者SM3
 	 */
 	@ApiField("encryption_type")
 	private String encryptionType;
@@ -56,16 +56,22 @@ public class AnttechMorseMarketingRtaSendModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 资源位信息确定商户投放场景，由摩斯同学配置并分配给调用方
+	 * 商务项目ID，由摩斯同学配置并分配给调用方
 	 */
 	@ApiField("resource_id")
 	private String resourceId;
 
 	/**
-	 * 摩斯营销发奖类型，明确本次调用是预发奖或者发奖，发奖环节可以配置验证预发奖验证，二段式降低发奖风险。参数值大写
+	 * 摩斯营销发奖类型，明确本次调用是预发奖或者发奖，发奖环节可以配置验证预发奖验证，二段式降低发奖风险。参数值大写，【PREGRANT：预发奖；GRANT：发奖】
 	 */
 	@ApiField("send_type")
 	private String sendType;
+
+	/**
+	 * 用户达标时间，精确到秒
+	 */
+	@ApiField("user_pass_time")
+	private String userPassTime;
 
 	public String getCampaignId() {
 		return this.campaignId;
@@ -128,6 +134,13 @@ public class AnttechMorseMarketingRtaSendModel extends AlipayObject {
 	}
 	public void setSendType(String sendType) {
 		this.sendType = sendType;
+	}
+
+	public String getUserPassTime() {
+		return this.userPassTime;
+	}
+	public void setUserPassTime(String userPassTime) {
+		this.userPassTime = userPassTime;
 	}
 
 }

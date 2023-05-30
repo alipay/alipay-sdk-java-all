@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.enterprise.auth.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-23 16:23:25
+ * @since 1.0, 2023-05-30 10:51:48
  */
 public class AlipayCommerceEcEnterpriseAuthApplyRequest implements AlipayRequest<AlipayCommerceEcEnterpriseAuthApplyResponse> {
 
@@ -39,7 +39,9 @@ public class AlipayCommerceEcEnterpriseAuthApplyRequest implements AlipayRequest
 	private String fileId;
 
 	/** 
-	* 法人身份证号
+	* 法人身份证号：
+快速创建，小二代入驻非必填。
+普通创建，企业自入驻必填。
 	 */
 	private String legalIdNumber;
 

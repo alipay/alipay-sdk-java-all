@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 两个支付宝用户实名信息匹配校验接口
  *
  * @author auto create
- * @since 1.0, 2022-06-29 11:02:10
+ * @since 1.0, 2023-05-30 10:50:13
  */
 public class AlipayUserAuthenticationMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2498778854143674429L;
+	private static final long serialVersionUID = 7637914527462495625L;
 
 	/**
 	 * 蚂蚁统一会员ID

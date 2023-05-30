@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.kbdelivery.delivery.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:14:26
+ * @since 1.0, 2023-05-29 21:53:23
  */
 public class KoubeiTradeKbdeliveryDeliveryApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7264624897986846157L;
+	private static final long serialVersionUID = 7228224872272378513L;
 
 	/** 
 	 * 附加数据，在查询API和物流变更通知回执中原样返回，该字段主要用于第三方系统携带订单的自定义数据

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.renthouse.ka.baseinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:59:00
+ * @since 1.0, 2023-05-29 22:58:45
  */
 public class AlipayEcoRenthouseKaBaseinfoQueryRequest implements AlipayRequest<AlipayEcoRenthouseKaBaseinfoQueryResponse> {
 

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpEsgInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3656919819585613246L;
+	private static final long serialVersionUID = 6788273714736239399L;
 
 	/** 
 	 * 近12个月内企业是否强制清算或破产

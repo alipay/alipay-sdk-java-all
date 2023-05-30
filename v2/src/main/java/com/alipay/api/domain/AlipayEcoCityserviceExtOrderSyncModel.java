@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCityserviceExtOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6749334974625582638L;
+	private static final long serialVersionUID = 4734365395566412656L;
 
 	/**
 	 * 当回流的订单需要根据在光华平台录入的服务相关信息进行分佣的时候，需要传入在光华平台录入的服务的appCode 字段

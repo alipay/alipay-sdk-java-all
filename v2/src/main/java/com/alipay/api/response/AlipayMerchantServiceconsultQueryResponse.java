@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.serviceconsult.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:28:21
+ * @since 1.0, 2023-05-29 22:37:39
  */
 public class AlipayMerchantServiceconsultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3566262962686341977L;
+	private static final long serialVersionUID = 3339174761118619726L;
 
 	/** 
 	 * 支付宝侧服务咨询单号

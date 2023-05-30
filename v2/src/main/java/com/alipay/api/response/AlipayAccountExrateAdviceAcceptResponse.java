@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.exrate.advice.accept response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:02:25
+ * @since 1.0, 2023-05-29 21:42:58
  */
 public class AlipayAccountExrateAdviceAcceptResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6585361711791257985L;
+	private static final long serialVersionUID = 6633276513841571812L;
 
 	/** 
 	 * 客户号：用于定义FX交易的客户，由外汇交易中心统一分配

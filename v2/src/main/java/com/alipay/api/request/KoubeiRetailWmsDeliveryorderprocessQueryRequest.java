@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.retail.wms.deliveryorderprocess.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:07:41
+ * @since 1.0, 2023-05-29 22:12:34
  */
 public class KoubeiRetailWmsDeliveryorderprocessQueryRequest implements AlipayRequest<KoubeiRetailWmsDeliveryorderprocessQueryResponse> {
 

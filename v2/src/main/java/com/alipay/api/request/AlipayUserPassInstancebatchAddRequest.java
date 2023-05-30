@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.pass.instancebatch.add request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:51:59
+ * @since 1.0, 2023-05-29 22:41:55
  */
 public class AlipayUserPassInstancebatchAddRequest implements AlipayRequest<AlipayUserPassInstancebatchAddResponse> {
 

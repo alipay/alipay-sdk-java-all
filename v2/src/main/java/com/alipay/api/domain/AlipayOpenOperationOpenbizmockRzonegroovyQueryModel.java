@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试路由转发groovy脚本
  *
  * @author auto create
- * @since 1.0, 2022-10-10 18:45:04
+ * @since 1.0, 2023-05-30 17:09:20
  */
 public class AlipayOpenOperationOpenbizmockRzonegroovyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6484477154533281891L;
+	private static final long serialVersionUID = 2783857331814969273L;
 
 	/**
 	 * 测试
 	 */
 	@ApiField("agreement_params")
 	private AgreementParams agreementParams;
+
+	/**
+	 * 测试
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 测试
@@ -30,6 +36,13 @@ public class AlipayOpenOperationOpenbizmockRzonegroovyQueryModel extends AlipayO
 	}
 	public void setAgreementParams(AgreementParams agreementParams) {
 		this.agreementParams = agreementParams;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUid() {

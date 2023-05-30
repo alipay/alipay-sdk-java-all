@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:38:35
+ * @since 1.0, 2023-05-29 20:10:23
  */
 public class AlipayBusinessOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3522914846478698965L;
+	private static final long serialVersionUID = 6517117117744362191L;
 
 	/** 
 	 * 订单创建确认营销信息。订单有营销信息时返回该参数。注：promotion_list包含商户券信息与平台营销信息如阿里红包等；use_mode与入参selected_marketing中的use_mode值相同

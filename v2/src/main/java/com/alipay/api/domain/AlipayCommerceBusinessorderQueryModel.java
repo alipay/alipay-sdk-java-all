@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceBusinessorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6389751523612241345L;
+	private static final long serialVersionUID = 2824995747199778482L;
 
 	/**
 	 * 查询办事记录的时间区间中的开始时间，格式为yyyy-MM-dd HH:mm:ss

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.ticket.ticketcode.delay response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:57:13
+ * @since 1.0, 2023-05-29 23:06:19
  */
 public class KoubeiTradeTicketTicketcodeDelayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7814347844832322447L;
+	private static final long serialVersionUID = 8724492699691189933L;
 
 	/** 
 	 * 该字段用于描述本次返回中的业务属性，现有：BIZ_ALREADY_SUCCESS（幂等业务码）。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家营销活动咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-12-20 13:59:00
+ * @since 1.0, 2023-05-24 14:04:23
  */
 public class AlipayMarketingActivityConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4762963628843192652L;
+	private static final long serialVersionUID = 1418734982721311535L;
 
 	/**
 	 * 待咨询的活动信息列表

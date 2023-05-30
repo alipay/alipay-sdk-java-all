@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.data.amlasset.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:56:54
+ * @since 1.0, 2023-05-29 21:36:49
  */
 public class AlipaySecurityDataAmlassetBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4756277872794947684L;
+	private static final long serialVersionUID = 8118285926216882795L;
 
 	/** 
 	 * 风险资产记录结果列表

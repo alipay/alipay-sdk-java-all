@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.certify.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 18:17:23
+ * @since 1.0, 2023-05-29 21:41:02
  */
 public class DatadigitalFincloudGeneralsaasFaceCertifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6686827752619525873L;
+	private static final long serialVersionUID = 3627463173283227918L;
 
 	/** 
 	 * 认证错误原因，扩展字段，默认不返回

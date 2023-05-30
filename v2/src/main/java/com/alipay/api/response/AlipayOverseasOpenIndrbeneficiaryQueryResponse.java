@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.indrbeneficiary.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-11 14:11:51
+ * @since 1.0, 2023-05-29 20:01:57
  */
 public class AlipayOverseasOpenIndrbeneficiaryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1868173288333334849L;
+	private static final long serialVersionUID = 6526731188786648437L;
 
 	/** 
 	 * 收款方信息(结果为success才会返回)

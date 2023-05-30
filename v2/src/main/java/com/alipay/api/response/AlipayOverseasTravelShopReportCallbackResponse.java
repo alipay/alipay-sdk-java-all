@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.shop.report.callback response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:26:55
+ * @since 1.0, 2023-05-29 19:31:58
  */
 public class AlipayOverseasTravelShopReportCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8563525146594526548L;
+	private static final long serialVersionUID = 6372614184567712983L;
 
 	/** 
 	 * 是否需要重试

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.chat.gnotice.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:27:25
+ * @since 1.0, 2023-05-29 21:17:19
  */
 public class AlipaySocialBaseChatGnoticeModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4823416526241567538L;
+	private static final long serialVersionUID = 8271332141831754541L;
 
 	/** 
 	 * 修改结果

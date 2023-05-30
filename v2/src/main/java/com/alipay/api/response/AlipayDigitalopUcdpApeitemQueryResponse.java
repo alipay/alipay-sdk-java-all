@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalopUcdpApeitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1659852228535547858L;
+	private static final long serialVersionUID = 2384217264538525918L;
 
 	/** 
 	 * 可推荐的商品总数

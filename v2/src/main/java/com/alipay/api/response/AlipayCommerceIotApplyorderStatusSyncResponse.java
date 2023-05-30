@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.applyorder.status.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:28:16
+ * @since 1.0, 2023-05-29 21:29:43
  */
 public class AlipayCommerceIotApplyorderStatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6557899155732367516L;
+	private static final long serialVersionUID = 4738419675143643757L;
 
 	/** 
 	 * 该订单下关联的设备数量

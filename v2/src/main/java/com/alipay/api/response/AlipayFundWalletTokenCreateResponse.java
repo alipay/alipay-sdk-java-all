@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.token.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:21:48
+ * @since 1.0, 2023-05-24 18:56:48
  */
 public class AlipayFundWalletTokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7379764429567676178L;
+	private static final long serialVersionUID = 5478764155599848392L;
 
 	/** 
 	 * 绑定凭证
@@ -26,6 +26,12 @@ public class AlipayFundWalletTokenCreateResponse extends AlipayResponse {
 	@ApiField("bind_url")
 	private String bindUrl;
 
+	/** 
+	 * 用户钱包ID
+	 */
+	@ApiField("user_wallet_id")
+	private String userWalletId;
+
 	public void setBindToken(String bindToken) {
 		this.bindToken = bindToken;
 	}
@@ -38,6 +44,13 @@ public class AlipayFundWalletTokenCreateResponse extends AlipayResponse {
 	}
 	public String getBindUrl( ) {
 		return this.bindUrl;
+	}
+
+	public void setUserWalletId(String userWalletId) {
+		this.userWalletId = userWalletId;
+	}
+	public String getUserWalletId( ) {
+		return this.userWalletId;
 	}
 
 }

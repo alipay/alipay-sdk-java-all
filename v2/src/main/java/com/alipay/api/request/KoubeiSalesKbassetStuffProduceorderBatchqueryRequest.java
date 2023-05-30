@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.sales.kbasset.stuff.produceorder.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:57:11
+ * @since 1.0, 2023-05-29 19:33:45
  */
 public class KoubeiSalesKbassetStuffProduceorderBatchqueryRequest implements AlipayRequest<KoubeiSalesKbassetStuffProduceorderBatchqueryResponse> {
 

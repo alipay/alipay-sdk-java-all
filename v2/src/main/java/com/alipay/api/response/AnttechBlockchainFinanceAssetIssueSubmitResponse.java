@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.asset.issue.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:34:42
+ * @since 1.0, 2023-05-29 20:21:12
  */
 public class AnttechBlockchainFinanceAssetIssueSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1189781798916344697L;
+	private static final long serialVersionUID = 7652349668422214524L;
 
 	
 

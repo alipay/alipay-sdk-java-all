@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 语音播报记录校验失败详情
  *
  * @author auto create
- * @since 1.0, 2022-12-05 10:22:30
+ * @since 1.0, 2023-05-29 10:38:52
  */
 public class SpeechRecordReportFailDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2565591354295777578L;
+	private static final long serialVersionUID = 4596335852559129869L;
 
 	/**
 	 * 校验错误编码

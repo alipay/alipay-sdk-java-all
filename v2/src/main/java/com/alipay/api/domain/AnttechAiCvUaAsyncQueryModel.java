@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiCvUaAsyncQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2422799522421967825L;
+	private static final long serialVersionUID = 2381958427468485165L;
 
 	/**
 	 * 业务接入在m2平台申请的接入appid

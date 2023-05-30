@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云智能应用上传数据接口
  *
  * @author auto create
- * @since 1.0, 2023-03-22 16:39:50
+ * @since 1.0, 2023-05-24 17:32:16
  */
 public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5338227976496213451L;
+	private static final long serialVersionUID = 4434194874298349942L;
 
 	/**
 	 * 商品数据的列表
@@ -24,14 +24,13 @@ public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 	private List<MpcpromoGoodsList> dataList;
 
 	/**
-	 * 数据类型
+	 * 数据类型 : USER（用户数据）、ITEM（商品数据）、BEHAVIOR（行为数据）
 	 */
 	@ApiField("data_type")
 	private String dataType;
 
 	/**
-	 * 商户所在行业:  goodsNormal（通用行业商品数据）
- goodsLease（租赁行业商品数据）
+	 * 商户所在行业:   goodsLease（租赁行业商品数据）
 	 */
 	@ApiField("industry")
 	private String industry;

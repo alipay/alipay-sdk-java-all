@@ -8,6 +8,7 @@ import com.alipay.api.domain.ShopBusinessTime;
 import com.alipay.api.domain.ContactInfo;
 import com.alipay.api.domain.ShopExtInfo;
 import com.alipay.api.domain.IndustryQualificationInfo;
+import com.alipay.api.domain.ShopRecommendInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -15,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 19:12:05
+ * @since 1.0, 2023-05-24 20:47:01
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1545148792785237492L;
+	private static final long serialVersionUID = 3867718761944271699L;
 
 	/** 
 	 * 品牌id
@@ -91,7 +92,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private List<ShopExtInfo> extInfos;
 
 	/** 
-	 *  商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id 则本参数与store_id均必填。
+	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id 则本参数与store_id均必填。
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
@@ -175,6 +176,12 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("shop_name")
 	private String shopName;
+
+	/** 
+	 * 门店不置信推荐信息
+	 */
+	@ApiField("shop_recommend_info")
+	private ShopRecommendInfo shopRecommendInfo;
 
 	/** 
 	 * 店铺经营类型，01表示直营，02表示加盟
@@ -361,6 +368,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	}
 	public String getShopName( ) {
 		return this.shopName;
+	}
+
+	public void setShopRecommendInfo(ShopRecommendInfo shopRecommendInfo) {
+		this.shopRecommendInfo = shopRecommendInfo;
+	}
+	public ShopRecommendInfo getShopRecommendInfo( ) {
+		return this.shopRecommendInfo;
 	}
 
 	public void setShopType(String shopType) {

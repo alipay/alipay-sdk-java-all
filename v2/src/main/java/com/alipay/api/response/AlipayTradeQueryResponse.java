@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 19:21:53
+ * @since 1.0, 2023-05-30 15:57:00
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2748463726372227923L;
+	private static final long serialVersionUID = 3275796427728547263L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -96,7 +96,7 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	private String buyerUserType;
 
 	/** 
-	 * 该笔交易针对收款方的收费金额；
+	 * 该笔交易针对收款方的收费金额；单位：元。
  只在银行间联交易场景下返回该信息；
 	 */
 	@ApiField("charge_amount")
@@ -136,7 +136,7 @@ bluesea_1：蓝海活动优惠费率标签；
 	private String creditPayMode;
 
 	/** 
-	 * 平台优惠金额
+	 * 平台优惠金额。单位：元。
 	 */
 	@ApiField("discount_amount")
 	private String discountAmount;
@@ -177,7 +177,7 @@ json格式。
 	private HbFqPayInfo hbFqPayInfo;
 
 	/** 
-	 * 惠营宝回票金额
+	 * 惠营宝回票金额。单位：元。
 	 */
 	@ApiField("hyb_amount")
 	private String hybAmount;
@@ -207,7 +207,7 @@ json格式。
 	private String invoiceAmount;
 
 	/** 
-	 * 商家优惠金额
+	 * 商家优惠金额。单位：元。
 	 */
 	@ApiField("mdiscount_amount")
 	private String mdiscountAmount;

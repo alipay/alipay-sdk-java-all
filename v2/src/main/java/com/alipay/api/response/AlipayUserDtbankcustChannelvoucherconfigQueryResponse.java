@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.channelvoucherconfig.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:06:44
+ * @since 1.0, 2023-05-29 21:36:53
  */
 public class AlipayUserDtbankcustChannelvoucherconfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1421894221794966193L;
+	private static final long serialVersionUID = 3115463146226662453L;
 
 	/** 
 	 * 数字分行活动唯一id

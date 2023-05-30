@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.ecsign.template.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-18 15:31:51
+ * @since 1.0, 2023-05-29 22:26:49
  */
 public class AlipayFinancialnetAuthEcsignTemplateBatchqueryRequest implements AlipayRequest<AlipayFinancialnetAuthEcsignTemplateBatchqueryResponse> {
 

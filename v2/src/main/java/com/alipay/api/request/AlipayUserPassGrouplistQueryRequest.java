@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.pass.grouplist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:32:47
+ * @since 1.0, 2023-05-29 23:53:27
  */
 public class AlipayUserPassGrouplistQueryRequest implements AlipayRequest<AlipayUserPassGrouplistQueryResponse> {
 

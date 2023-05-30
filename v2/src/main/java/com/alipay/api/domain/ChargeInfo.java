@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 计费信息
  *
  * @author auto create
- * @since 1.0, 2022-11-14 17:49:38
+ * @since 1.0, 2023-05-29 22:41:37
  */
 public class ChargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4238941395956761298L;
+	private static final long serialVersionUID = 6556767984847344671L;
 
 	/**
 	 * 实收费用

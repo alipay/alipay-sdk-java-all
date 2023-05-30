@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innerapp.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:27:55
+ * @since 1.0, 2023-05-29 22:06:19
  */
 public class AlipayOpenMiniInnerappBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7539569987346256126L;
+	private static final long serialVersionUID = 4782384272731989241L;
 
 	/** 
 	 * 小程序基础信息列表

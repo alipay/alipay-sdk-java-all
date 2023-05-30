@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 15:44:47
+ * @since 1.0, 2023-05-29 21:27:50
  */
 public class AlipayFundAuthOperationCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5762111917283288639L;
+	private static final long serialVersionUID = 3732996171141371335L;
 
 	/** 
 	 * 本次撤销触发的资金动作

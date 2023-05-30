@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 17:47:00
+ * @since 1.0, 2023-05-29 19:41:51
  */
 public class AlipayOpenFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8582842563496887424L;
+	private static final long serialVersionUID = 7631279317299515287L;
 
 	/** 
 	 * 视频资源id，同步外部渠道后，外部渠道返回的id。目前支持同步优酷场景，返回优酷视频id，用于支付宝客户端播放视频使用

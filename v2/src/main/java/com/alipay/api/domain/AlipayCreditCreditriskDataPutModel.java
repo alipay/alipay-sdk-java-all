@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业融资数据采集平台对外的数据提交接口
  *
  * @author auto create
- * @since 1.0, 2023-01-11 16:49:33
+ * @since 1.0, 2023-05-29 17:41:44
  */
 public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3816565138683931125L;
+	private static final long serialVersionUID = 7421694234845414919L;
 
 	/**
 	 * 数据类别,ISV注册成为网商银行的会员，达成数据合作服务，约定数据模型，由网商分配给ISV的数据模型的类别
@@ -48,6 +48,18 @@ public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 	 */
 	@ApiField("entitytype")
 	private String entitytype;
+
+	/**
+	 * 为满足网商银行数据跨域输出的合规要求，β计划中预付融资、赊呗、采购贷、池融资、网商贷等产品相关场景进行合规确权改造，确权方案中需在业务接口入参中加入auth_scene_code（授权场景码）和auth_token（授权令牌，用于鉴权）两个字段供调用方传入字段值
+	 */
+	@ApiField("mybk_auth_scene_code")
+	private String mybkAuthSceneCode;
+
+	/**
+	 * 为满足网商银行数据跨域输出的合规要求，β计划中预付融资、赊呗、采购贷、池融资、网商贷等产品相关场景进行合规确权改造，确权方案中需在业务接口入参中加入auth_scene_code（授权场景码）和auth_token（授权令牌，用于鉴权）两个字段供调用方传入字段值
+	 */
+	@ApiField("mybk_auth_token")
+	private String mybkAuthToken;
 
 	/**
 	 * Json格式,数据内容,ISV注册成为网商银行的会员，达成数据合作服务，约定json串字段和内容,ISV将数据给到网商，网商按照约定解析Json内容
@@ -107,6 +119,20 @@ public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 	}
 	public void setEntitytype(String entitytype) {
 		this.entitytype = entitytype;
+	}
+
+	public String getMybkAuthSceneCode() {
+		return this.mybkAuthSceneCode;
+	}
+	public void setMybkAuthSceneCode(String mybkAuthSceneCode) {
+		this.mybkAuthSceneCode = mybkAuthSceneCode;
+	}
+
+	public String getMybkAuthToken() {
+		return this.mybkAuthToken;
+	}
+	public void setMybkAuthToken(String mybkAuthToken) {
+		this.mybkAuthToken = mybkAuthToken;
 	}
 
 	public String getObjectcontent() {

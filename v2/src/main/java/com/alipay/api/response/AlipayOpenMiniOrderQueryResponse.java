@@ -2,6 +2,7 @@ package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.AddressInfoVO;
+import com.alipay.api.domain.ContactInfoVO;
 import com.alipay.api.domain.DeliveryDetailInfoVO;
 import com.alipay.api.domain.OrderDetailInfoVO;
 import com.alipay.api.domain.RefundInfoVO;
@@ -12,17 +13,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 18:01:48
+ * @since 1.0, 2023-05-30 15:31:48
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1362254432919595859L;
+	private static final long serialVersionUID = 1774718182548999458L;
 
 	/** 
 	 * 收货地址
 	 */
 	@ApiField("address_info")
 	private AddressInfoVO addressInfo;
+
+	/** 
+	 * 本地生活商品的联系人信息
+	 */
+	@ApiField("contact_info")
+	private ContactInfoVO contactInfo;
 
 	/** 
 	 * 创建时间，yyyy-MM-dd HH:mm:ss
@@ -114,6 +121,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public AddressInfoVO getAddressInfo( ) {
 		return this.addressInfo;
+	}
+
+	public void setContactInfo(ContactInfoVO contactInfo) {
+		this.contactInfo = contactInfo;
+	}
+	public ContactInfoVO getContactInfo( ) {
+		return this.contactInfo;
 	}
 
 	public void setCreateTime(String createTime) {

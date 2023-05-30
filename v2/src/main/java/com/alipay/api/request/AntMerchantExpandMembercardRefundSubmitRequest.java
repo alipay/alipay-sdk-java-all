@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.membercard.refund.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 10:07:01
+ * @since 1.0, 2023-05-29 21:42:01
  */
 public class AntMerchantExpandMembercardRefundSubmitRequest implements AlipayRequest<AntMerchantExpandMembercardRefundSubmitResponse> {
 

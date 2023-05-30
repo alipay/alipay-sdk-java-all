@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.codec.applepay.credentials.get request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:17:57
+ * @since 1.0, 2023-05-29 20:54:33
  */
 public class AlipayPayCodecApplepayCredentialsGetRequest implements AlipayRequest<AlipayPayCodecApplepayCredentialsGetResponse> {
 

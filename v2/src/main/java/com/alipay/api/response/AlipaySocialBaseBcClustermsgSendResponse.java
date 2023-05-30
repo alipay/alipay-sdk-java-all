@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.bc.clustermsg.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:45:18
+ * @since 1.0, 2023-05-30 00:01:18
  */
 public class AlipaySocialBaseBcClustermsgSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7694519662639428216L;
+	private static final long serialVersionUID = 2556964137728352895L;
 
 	
 

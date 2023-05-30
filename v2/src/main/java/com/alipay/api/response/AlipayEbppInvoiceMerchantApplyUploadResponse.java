@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.merchant.apply.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-23 18:21:54
+ * @since 1.0, 2023-05-29 20:06:49
  */
 public class AlipayEbppInvoiceMerchantApplyUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4156676961575868716L;
+	private static final long serialVersionUID = 7619847387427452899L;
 
 	/** 
 	 * 发票代码

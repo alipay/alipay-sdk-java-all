@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.sn.rule.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:34:03
+ * @since 1.0, 2023-05-29 20:37:54
  */
 public class AlipayCommerceIotSnRuleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7149885693938788945L;
+	private static final long serialVersionUID = 4145132263249231664L;
 
 	/** 
 	 * profile规则列表

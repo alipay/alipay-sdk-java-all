@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.market.received.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:56:56
+ * @since 1.0, 2023-05-29 21:22:01
  */
 public class AlipayOpenMiniMarketReceivedConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4562941746881376279L;
+	private static final long serialVersionUID = 4277689764558888871L;
 
 	/** 
 	 * true为已经领过券，false为未领取

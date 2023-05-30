@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行卡的附加信息描述
  *
  * @author auto create
- * @since 1.0, 2023-03-01 16:51:07
+ * @since 1.0, 2023-05-30 11:33:28
  */
 public class BankcardExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1334456322848825782L;
+	private static final long serialVersionUID = 4299418521366366454L;
 
 	/**
 	 * 收款账户类型。

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货柜商品自助上新信息同步
  *
  * @author auto create
- * @since 1.0, 2023-05-18 15:40:17
+ * @since 1.0, 2023-05-24 16:29:33
  */
 public class AlipayMsaasMediarecogMmportalCvgoodsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8192339857473987378L;
+	private static final long serialVersionUID = 1453738596835143886L;
 
 	/**
 	 * 上新申请ID

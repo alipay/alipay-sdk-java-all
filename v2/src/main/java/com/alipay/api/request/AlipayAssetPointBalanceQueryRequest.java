@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.asset.point.balance.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:47:22
+ * @since 1.0, 2023-05-29 19:50:54
  */
 public class AlipayAssetPointBalanceQueryRequest implements AlipayRequest<AlipayAssetPointBalanceQueryResponse> {
 

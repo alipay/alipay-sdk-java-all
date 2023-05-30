@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.residentinfo.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:54:45
+ * @since 1.0, 2023-05-29 21:15:56
  */
 public class AlipayEcoCplifeResidentinfoDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2852891221544644667L;
+	private static final long serialVersionUID = 5679918245265393782L;
 
 	
 

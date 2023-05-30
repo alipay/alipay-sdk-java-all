@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.resouce.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:01:58
+ * @since 1.0, 2023-05-29 19:26:59
  */
 public class AlipayCommerceTransportEtcResouceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8474569925738576696L;
+	private static final long serialVersionUID = 6245968866639247779L;
 
 	/** 
 	 * SUCCESS：成功；{FAIL}:{失败原因}

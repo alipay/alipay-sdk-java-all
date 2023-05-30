@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.retail.wms.inboundwork.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:37:36
+ * @since 1.0, 2023-05-29 21:48:50
  */
 public class KoubeiRetailWmsInboundworkDeleteRequest implements AlipayRequest<KoubeiRetailWmsInboundworkDeleteResponse> {
 

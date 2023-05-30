@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReportErrorFeature extends AlipayObject {
 
-	private static final long serialVersionUID = 7544439144484661452L;
+	private static final long serialVersionUID = 8365771771139134173L;
 
 	/**
 	 * 桌号

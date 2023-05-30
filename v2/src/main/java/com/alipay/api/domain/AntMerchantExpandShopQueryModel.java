@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺查询接口
  *
  * @author auto create
- * @since 1.0, 2022-12-13 19:23:14
+ * @since 1.0, 2023-05-24 20:43:53
  */
 public class AntMerchantExpandShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5863668986711119964L;
+	private static final long serialVersionUID = 1814827668738128972L;
 
 	/**
 	 * 行政区划版本，当前可传空值(取默认版本)、2022Q2、UPTODATE(取最新版本)，其中空值默认为：2020Q1版本（ address_version=''或null），想要查看版本是2022年2季度版本则传入:(address_version='2022Q2')，想要获取最新版本则传入:(address_version  ='UPTODATE')
@@ -24,6 +24,12 @@ public class AntMerchantExpandShopQueryModel extends AlipayObject {
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
+
+	/**
+	 * 门店不置信时，是否需要返回shop_recommend_info
+	 */
+	@ApiField("need_recommend")
+	private String needRecommend;
 
 	/**
 	 * 蚂蚁店铺id。填写本参数的话，store_id和ip_role_id可以不填
@@ -49,6 +55,13 @@ public class AntMerchantExpandShopQueryModel extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getNeedRecommend() {
+		return this.needRecommend;
+	}
+	public void setNeedRecommend(String needRecommend) {
+		this.needRecommend = needRecommend;
 	}
 
 	public String getShopId() {

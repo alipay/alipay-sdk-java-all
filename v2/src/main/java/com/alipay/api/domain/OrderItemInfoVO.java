@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2023-04-04 19:53:18
+ * @since 1.0, 2023-05-30 15:29:30
  */
 public class OrderItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4564912386558112537L;
+	private static final long serialVersionUID = 1236594325152723134L;
 
 	/**
 	 * 商品个数
@@ -24,6 +27,19 @@ public class OrderItemInfoVO extends AlipayObject {
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 商品退款信息
+	 */
+	@ApiField("item_refund_info")
+	private ItemRefundInfoVO itemRefundInfo;
+
+	/**
+	 * 本地生活商品凭证信息列表
+	 */
+	@ApiListField("order_certificate_infos")
+	@ApiField("order_certificate_info_v_o")
+	private List<OrderCertificateInfoVO> orderCertificateInfos;
 
 	/**
 	 * 外部商品id
@@ -61,6 +77,20 @@ public class OrderItemInfoVO extends AlipayObject {
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public ItemRefundInfoVO getItemRefundInfo() {
+		return this.itemRefundInfo;
+	}
+	public void setItemRefundInfo(ItemRefundInfoVO itemRefundInfo) {
+		this.itemRefundInfo = itemRefundInfo;
+	}
+
+	public List<OrderCertificateInfoVO> getOrderCertificateInfos() {
+		return this.orderCertificateInfos;
+	}
+	public void setOrderCertificateInfos(List<OrderCertificateInfoVO> orderCertificateInfos) {
+		this.orderCertificateInfos = orderCertificateInfos;
 	}
 
 	public String getOutItemId() {

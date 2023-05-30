@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.dfesf.def.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:32:21
+ * @since 1.0, 2023-05-29 22:14:31
  */
 public class AlipaySecurityProdDfesfDefBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8763975391733587543L;
+	private static final long serialVersionUID = 5148257377521484592L;
 
 	/** 
 	 * 1

@@ -1,0 +1,30 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.commerce.ec.authorization.redicturl.get response.
+ * 
+ * @author auto create
+ * @since 1.0, 2023-05-29 09:31:48
+ */
+public class AlipayCommerceEcAuthorizationRedicturlGetResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 3356784225215754447L;
+
+	/** 
+	 * 企业端页面链接
+	 */
+	@ApiField("redirect_url")
+	private String redirectUrl;
+
+	public void setRedirectUrl(String redirectUrl) {
+		this.redirectUrl = redirectUrl;
+	}
+	public String getRedirectUrl( ) {
+		return this.redirectUrl;
+	}
+
+}

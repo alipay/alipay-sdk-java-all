@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlaw.smartcontractcode.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:55:31
+ * @since 1.0, 2023-05-29 23:45:15
  */
 public class AlipayBossProdAntlawSmartcontractcodeModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5244718351878517438L;
+	private static final long serialVersionUID = 7228786678342991154L;
 
 	/** 
 	 * 业务编号

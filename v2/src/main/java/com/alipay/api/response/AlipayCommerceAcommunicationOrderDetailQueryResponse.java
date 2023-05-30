@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.order.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:26:52
+ * @since 1.0, 2023-05-25 16:56:52
  */
 public class AlipayCommerceAcommunicationOrderDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5779183822147357447L;
+	private static final long serialVersionUID = 8893929488489263192L;
 
 	/** 
 	 * 户号
@@ -58,7 +58,10 @@ public class AlipayCommerceAcommunicationOrderDetailQueryResponse extends Alipay
 	private String tradeNo;
 
 	/** 
-	 * 交易状态，TRADE_FINISHED交易成功，TRADE_CLOSED交易失败
+	 * 交易状态
+TRADE_FINISHED交易成功
+TRADE_CLOSED交易失败
+WAIT_SELLER_SEND_GOODS买家付款成功充值进行中
 	 */
 	@ApiField("trade_status")
 	private String tradeStatus;

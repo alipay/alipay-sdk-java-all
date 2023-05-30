@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlegalchain.notary.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:31:28
+ * @since 1.0, 2023-05-29 20:40:59
  */
 public class AlipayBossProdAntlegalchainNotaryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4317766991865586429L;
+	private static final long serialVersionUID = 7815871833171815576L;
 
 	/** 
 	 * 存证信息集合

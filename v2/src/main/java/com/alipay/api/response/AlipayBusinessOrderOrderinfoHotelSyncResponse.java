@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.order.orderinfo.hotel.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:31:52
+ * @since 1.0, 2023-05-30 00:06:57
  */
 public class AlipayBusinessOrderOrderinfoHotelSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8324351449287643974L;
+	private static final long serialVersionUID = 7693626446638721643L;
 
 	/** 
 	 * 支付宝酒店订单id

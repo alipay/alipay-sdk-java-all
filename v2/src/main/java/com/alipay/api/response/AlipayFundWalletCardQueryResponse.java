@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:26:51
+ * @since 1.0, 2023-05-24 18:56:49
  */
 public class AlipayFundWalletCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7155742518972831449L;
+	private static final long serialVersionUID = 3123243688885264189L;
 
 	/** 
 	 * 礼品卡对客展示
@@ -24,11 +24,37 @@ public class AlipayFundWalletCardQueryResponse extends AlipayResponse {
 	@ApiField("gift_card_vo")
 	private List<GiftCardVo> giftCardVos;
 
+	/** 
+	 * 查询总数量
+	 */
+	@ApiField("total_nums")
+	private String totalNums;
+
+	/** 
+	 * 查询总页数
+	 */
+	@ApiField("total_pages")
+	private String totalPages;
+
 	public void setGiftCardVos(List<GiftCardVo> giftCardVos) {
 		this.giftCardVos = giftCardVos;
 	}
 	public List<GiftCardVo> getGiftCardVos( ) {
 		return this.giftCardVos;
+	}
+
+	public void setTotalNums(String totalNums) {
+		this.totalNums = totalNums;
+	}
+	public String getTotalNums( ) {
+		return this.totalNums;
+	}
+
+	public void setTotalPages(String totalPages) {
+		this.totalPages = totalPages;
+	}
+	public String getTotalPages( ) {
+		return this.totalPages;
 	}
 
 }

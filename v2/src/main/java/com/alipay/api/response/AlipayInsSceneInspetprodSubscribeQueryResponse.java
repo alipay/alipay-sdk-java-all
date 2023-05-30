@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.inspetprod.subscribe.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:56:47
+ * @since 1.0, 2023-05-29 23:49:41
  */
 public class AlipayInsSceneInspetprodSubscribeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4169876773148187369L;
+	private static final long serialVersionUID = 2819169246632519463L;
 
 	/** 
 	 * 是否订阅公众号

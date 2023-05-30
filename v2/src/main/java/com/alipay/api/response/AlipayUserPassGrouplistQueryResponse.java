@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.pass.grouplist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:32:47
+ * @since 1.0, 2023-05-29 23:53:27
  */
 public class AlipayUserPassGrouplistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8584843177874393923L;
+	private static final long serialVersionUID = 3211794128966859173L;
 
 	/** 
 	 * 券信息列表

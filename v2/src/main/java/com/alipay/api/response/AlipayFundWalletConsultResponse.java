@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:06:52
+ * @since 1.0, 2023-05-24 18:56:48
  */
 public class AlipayFundWalletConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6615583891222226836L;
+	private static final long serialVersionUID = 4492296734248697259L;
 
 	/** 
 	 * 实际可以提现/销户后退的金额
@@ -55,6 +55,23 @@ public class AlipayFundWalletConsultResponse extends AlipayResponse {
 	 */
 	@ApiField("user_wallet_id")
 	private String userWalletId;
+
+	/** 
+	 * 用户钱包开通状态
+I - 申请中
+E -生效
+	 */
+	@ApiField("user_wallet_status")
+	private String userWalletStatus;
+
+	/** 
+	 * 钱包所属用户的状态
+NORMAL - 正常
+ABNORMAL - 异常
+CLOSED - 已注销
+	 */
+	@ApiField("wallet_owner_status")
+	private String walletOwnerStatus;
 
 	public void setActualAvailableAmount(String actualAvailableAmount) {
 		this.actualAvailableAmount = actualAvailableAmount;
@@ -103,6 +120,20 @@ public class AlipayFundWalletConsultResponse extends AlipayResponse {
 	}
 	public String getUserWalletId( ) {
 		return this.userWalletId;
+	}
+
+	public void setUserWalletStatus(String userWalletStatus) {
+		this.userWalletStatus = userWalletStatus;
+	}
+	public String getUserWalletStatus( ) {
+		return this.userWalletStatus;
+	}
+
+	public void setWalletOwnerStatus(String walletOwnerStatus) {
+		this.walletOwnerStatus = walletOwnerStatus;
+	}
+	public String getWalletOwnerStatus( ) {
+		return this.walletOwnerStatus;
 	}
 
 }

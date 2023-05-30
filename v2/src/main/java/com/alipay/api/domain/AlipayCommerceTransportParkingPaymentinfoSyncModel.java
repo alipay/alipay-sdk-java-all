@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4373279843524421162L;
+	private static final long serialVersionUID = 2151855927568681184L;
 
 	/**
 	 * 停车场内缴费后，允许出场的免费时长分钟数

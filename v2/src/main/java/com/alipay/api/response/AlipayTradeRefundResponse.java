@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 18:56:58
+ * @since 1.0, 2023-05-30 10:12:01
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8128887727657449437L;
+	private static final long serialVersionUID = 4242725132139444937L;
 
 	/** 
 	 * 用户的登录id
@@ -69,28 +69,28 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private String outTradeNo;
 
 	/** 
-	 * 本次退款金额中买家退款金额;
+	 * 本次退款金额中买家退款金额;单位：元。
 该字段默认不返回；
 	 */
 	@ApiField("present_refund_buyer_amount")
 	private String presentRefundBuyerAmount;
 
 	/** 
-	 * 本次退款金额中平台优惠退款金额；
+	 * 本次退款金额中平台优惠退款金额；单位：元。
 该字段默认不返回；
 	 */
 	@ApiField("present_refund_discount_amount")
 	private String presentRefundDiscountAmount;
 
 	/** 
-	 * 本次退款金额中商家优惠退款金额；
+	 * 本次退款金额中商家优惠退款金额；单位：元。
 该字段默认不返回；
 	 */
 	@ApiField("present_refund_mdiscount_amount")
 	private String presentRefundMdiscountAmount;
 
 	/** 
-	 * 本次退款针对收款方的退收费金额；
+	 * 本次退款针对收款方的退收费金额；单位：元。
 只在机构间联模式下返回，其它场景下不返回该字段；
 	 */
 	@ApiField("refund_charge_amount")
@@ -118,14 +118,14 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private List<TradeFundBill> refundDetailItemList;
 
 	/** 
-	 * 退款总金额。
+	 * 退款总金额。单位：元。
 指该笔交易累计已经退款成功的金额。
 	 */
 	@ApiField("refund_fee")
 	private String refundFee;
 
 	/** 
-	 * 本次请求退惠营宝金额
+	 * 本次请求退惠营宝金额。单位：元。
 	 */
 	@ApiField("refund_hyb_amount")
 	private String refundHybAmount;
@@ -144,7 +144,7 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	private String refundSettlementId;
 
 	/** 
-	 * 本次商户实际退回金额。
+	 * 本次商户实际退回金额。单位：元。
 说明：如需获取该值，需在入参query_options中传入 refund_detail_item_list。
 	 */
 	@ApiField("send_back_fee")

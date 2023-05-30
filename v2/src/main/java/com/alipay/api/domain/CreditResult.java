@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2716913577167443752L;
+	private static final long serialVersionUID = 7479685537111736713L;
 
 	/**
 	 * 授信金额

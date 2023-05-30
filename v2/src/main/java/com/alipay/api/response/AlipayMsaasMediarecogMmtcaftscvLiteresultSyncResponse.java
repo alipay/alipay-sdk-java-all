@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcaftscv.literesult.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:01:52
+ * @since 1.0, 2023-05-29 19:32:01
  */
 public class AlipayMsaasMediarecogMmtcaftscvLiteresultSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7241368458627219244L;
+	private static final long serialVersionUID = 5629182335811332552L;
 
 	
 

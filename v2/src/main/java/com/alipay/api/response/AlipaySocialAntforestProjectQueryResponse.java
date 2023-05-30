@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.project.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:41:59
+ * @since 1.0, 2023-05-29 23:01:59
  */
 public class AlipaySocialAntforestProjectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4172377151293994343L;
+	private static final long serialVersionUID = 2139623316726776988L;
 
 	/** 
 	 * 请联系接口开发人员咨询相关参数

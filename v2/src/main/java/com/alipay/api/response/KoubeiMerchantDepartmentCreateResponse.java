@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.department.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:49:55
+ * @since 1.0, 2023-05-29 19:44:08
  */
 public class KoubeiMerchantDepartmentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1233661296597485167L;
+	private static final long serialVersionUID = 6673536623356173311L;
 
 	/** 
 	 * 员工管理场景商户创建部门成功时返回的部门id

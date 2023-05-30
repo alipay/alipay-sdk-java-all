@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.pe.zmgo.cumulation.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 18:36:53
+ * @since 1.0, 2023-05-29 22:11:44
  */
 public class ZhimaCreditPeZmgoCumulationSyncRequest implements AlipayRequest<ZhimaCreditPeZmgoCumulationSyncResponse> {
 

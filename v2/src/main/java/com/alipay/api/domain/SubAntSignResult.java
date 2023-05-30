@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 子任务受理流水
  *
  * @author auto create
- * @since 1.0, 2023-05-18 14:48:45
+ * @since 1.0, 2023-05-25 13:49:19
  */
 public class SubAntSignResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8536871166142431339L;
+	private static final long serialVersionUID = 7451675496462115645L;
 
 	/**
 	 * 签署链接结果列表

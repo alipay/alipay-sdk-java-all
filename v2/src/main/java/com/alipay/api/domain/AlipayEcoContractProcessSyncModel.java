@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoContractProcessSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1179772676198683588L;
+	private static final long serialVersionUID = 1714115191486414514L;
 
 	/**
 	 * MCCCode

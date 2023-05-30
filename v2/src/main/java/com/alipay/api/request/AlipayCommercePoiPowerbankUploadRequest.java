@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.poi.powerbank.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:19:19
+ * @since 1.0, 2023-05-29 21:19:53
  */
 public class AlipayCommercePoiPowerbankUploadRequest implements AlipayRequest<AlipayCommercePoiPowerbankUploadResponse> {
 

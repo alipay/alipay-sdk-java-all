@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  *  模拟业务系统上行消息接口
  *
  * @author auto create
- * @since 1.0, 2019-01-11 18:31:19
+ * @since 1.0, 2023-05-25 16:31:52
  */
 public class AlipayOpenAppOpenbizmockMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7344398646835571875L;
+	private static final long serialVersionUID = 8842816812112213194L;
 
 	/**
 	 * 门店ID

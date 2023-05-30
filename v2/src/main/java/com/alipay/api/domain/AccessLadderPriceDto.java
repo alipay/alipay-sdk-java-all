@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccessLadderPriceDto extends AlipayObject {
 
-	private static final long serialVersionUID = 6841782835247677311L;
+	private static final long serialVersionUID = 3847315981989216456L;
 
 	/**
 	 * minimum_purchase_quantity，用于商品同步，由调用方传入

@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 18:42:03
+ * @since 1.0, 2023-05-30 10:06:51
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7416147892283116851L;
+	private static final long serialVersionUID = 7856862873656722621L;
 
 	/** 
 	 * 银行卡冲退信息；
@@ -66,28 +66,28 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	private String outTradeNo;
 
 	/** 
-	 * 本次退款金额中买家退款金额。
+	 * 本次退款金额中买家退款金额。单位：元。
 该字段默认不返回；
 	 */
 	@ApiField("present_refund_buyer_amount")
 	private String presentRefundBuyerAmount;
 
 	/** 
-	 * 本次退款金额中平台优惠退款金额。
+	 * 本次退款金额中平台优惠退款金额。单位：元。
 该字段默认不返回；
 	 */
 	@ApiField("present_refund_discount_amount")
 	private String presentRefundDiscountAmount;
 
 	/** 
-	 * 本次退款金额中商家优惠退款金额。
+	 * 本次退款金额中商家优惠退款金额。单位：元。
 该字段默认不返回；
 	 */
 	@ApiField("present_refund_mdiscount_amount")
 	private String presentRefundMdiscountAmount;
 
 	/** 
-	 * 本次退款请求，对应的退款金额
+	 * 本次退款请求，对应的退款金额。单位：元。
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
@@ -105,7 +105,7 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	private String refundChannelStatus;
 
 	/** 
-	 * 本次退款针对收款方的退收费金额；
+	 * 本次退款针对收款方的退收费金额；单位：元。
 只在机构间联模式下返回，其它场景下不返回该字段；
 	 */
 	@ApiField("refund_charge_amount")
@@ -127,7 +127,7 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	private List<TradeFundBill> refundDetailItemList;
 
 	/** 
-	 * 本次退款金额中退惠营宝的金额
+	 * 本次退款金额中退惠营宝的金额。单位：元。
 	 */
 	@ApiField("refund_hyb_amount")
 	private String refundHybAmount;
@@ -162,14 +162,14 @@ REFUND_SUCCESS 退款处理成功；
 	private String refundStatus;
 
 	/** 
-	 * 本次商户实际退回金额；
+	 * 本次商户实际退回金额；单位：元。
 默认不返回该信息，需要在入参的query_options中指定"refund_detail_item_list"值时才返回该字段信息。
 	 */
 	@ApiField("send_back_fee")
 	private String sendBackFee;
 
 	/** 
-	 * 该笔退款所对应的交易的订单金额
+	 * 该笔退款所对应的交易的订单金额。单位：元。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

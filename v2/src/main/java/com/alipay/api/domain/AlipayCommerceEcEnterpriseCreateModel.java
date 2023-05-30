@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业入驻
  *
  * @author auto create
- * @since 1.0, 2023-03-17 14:43:49
+ * @since 1.0, 2023-05-30 10:57:37
  */
 public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8777878365183496166L;
+	private static final long serialVersionUID = 3467934496558362168L;
 
 	/**
 	 * 场景码，联系支付宝分配
@@ -20,7 +20,7 @@ public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 	private String bizScene;
 
 	/**
-	 * 是否创建企业人脸库，适用于对接团餐刷脸付、门禁刷脸通行等场景，不传默认为true
+	 * 是否创建企业人脸库，适用于对接团餐刷脸付、门禁刷脸通行等场景；不传默认创建，创建失败不会阻塞企业的创建；如果传true且创建失败，则会阻塞企业的创建。
 	 */
 	@ApiField("create_iot_group")
 	private Boolean createIotGroup;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.tagcrowd.count.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:06:04
+ * @since 1.0, 2023-05-29 21:22:24
  */
 public class DatadigitalFincloudFinsaasTagcrowdCountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4186724468893848427L;
+	private static final long serialVersionUID = 4495998752242772481L;
 
 	/** 
 	 * 人群数量+不唯一
