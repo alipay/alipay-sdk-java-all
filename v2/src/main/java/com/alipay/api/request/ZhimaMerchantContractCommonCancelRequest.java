@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.contract.common.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:57:28
+ * @since 1.0, 2023-05-31 05:50:23
  */
 public class ZhimaMerchantContractCommonCancelRequest implements AlipayRequest<ZhimaMerchantContractCommonCancelResponse> {
 

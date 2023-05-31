@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.digitalrmb.send.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:51:48
+ * @since 1.0, 2023-05-31 01:46:55
  */
 public class DatadigitalFincloudFinsaasDigitalrmbSendSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4739321177626492742L;
+	private static final long serialVersionUID = 1557555893593811736L;
 
 	
 

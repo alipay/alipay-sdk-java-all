@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.risk.rtopobtsreg.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:28:56
+ * @since 1.0, 2023-05-31 08:26:54
  */
 public class AlipayDataRiskRtopobtsregQueryRequest implements AlipayRequest<AlipayDataRiskRtopobtsregQueryResponse> {
 

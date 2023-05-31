@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.vendingmachine.profile.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:38:47
+ * @since 1.0, 2023-05-30 22:40:56
  */
 public class AlipayCommerceIotVendingmachineProfileQueryRequest implements AlipayRequest<AlipayCommerceIotVendingmachineProfileQueryResponse> {
 

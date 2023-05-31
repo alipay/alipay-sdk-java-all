@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.qrcode.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:35:33
+ * @since 1.0, 2023-05-31 03:26:40
  */
 public class MybankCreditLoanapplyQrcodeCreateRequest implements AlipayRequest<MybankCreditLoanapplyQrcodeCreateResponse> {
 

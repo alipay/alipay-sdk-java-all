@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.innercontent.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:58:16
+ * @since 1.0, 2023-05-31 08:15:23
  */
 public class AlipayOpenMiniInnercontentSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2867386371199753418L;
+	private static final long serialVersionUID = 8635733533778547269L;
 
 	/** 
 	 * 加签后cert.json内容

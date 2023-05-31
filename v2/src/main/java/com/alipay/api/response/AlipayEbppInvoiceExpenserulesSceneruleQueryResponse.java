@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.expenserules.scenerule.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 15:30:06
+ * @since 1.0, 2023-05-31 20:01:12
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6769556555263642875L;
+	private static final long serialVersionUID = 6799365183616413919L;
 
 	/** 
 	 * 当前页数

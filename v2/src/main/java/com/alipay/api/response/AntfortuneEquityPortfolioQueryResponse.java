@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.equity.portfolio.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:07:31
+ * @since 1.0, 2023-05-31 01:38:03
  */
 public class AntfortuneEquityPortfolioQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4415948338697411522L;
+	private static final long serialVersionUID = 1462624851157962935L;
 
 	/** 
 	 * 是否可买入

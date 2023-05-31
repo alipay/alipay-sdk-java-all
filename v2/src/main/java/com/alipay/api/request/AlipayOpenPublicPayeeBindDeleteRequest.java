@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.payee.bind.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:15:08
+ * @since 1.0, 2023-05-31 00:44:24
  */
 public class AlipayOpenPublicPayeeBindDeleteRequest implements AlipayRequest<AlipayOpenPublicPayeeBindDeleteResponse> {
 

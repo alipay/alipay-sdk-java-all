@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.content.community.label.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:50:44
+ * @since 1.0, 2023-05-31 08:36:02
  */
 public class AntfortuneContentCommunityLabelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4521587137243852314L;
+	private static final long serialVersionUID = 3117178711958195543L;
 
 	/** 
 	 * groupKey：标签组key groupName 标签组名字

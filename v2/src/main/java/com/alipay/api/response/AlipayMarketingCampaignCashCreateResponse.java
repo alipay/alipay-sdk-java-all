@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.cash.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:05:41
+ * @since 1.0, 2023-05-30 22:53:24
  */
 public class AlipayMarketingCampaignCashCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5687862271947512577L;
+	private static final long serialVersionUID = 4712245196449943332L;
 
 	/** 
 	 * 生成的现金红包活动号

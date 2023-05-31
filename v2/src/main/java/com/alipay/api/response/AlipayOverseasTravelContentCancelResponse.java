@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.content.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:37:43
+ * @since 1.0, 2023-05-31 06:07:16
  */
 public class AlipayOverseasTravelContentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4288993883759642772L;
+	private static final long serialVersionUID = 5834472854256623854L;
 
 	/** 
 	 * 结果描述，仅当撤回已处于撤回状态的内容，且请求中的modified_date等于已落地内容的modified_date，认为幂等成功，返回Success

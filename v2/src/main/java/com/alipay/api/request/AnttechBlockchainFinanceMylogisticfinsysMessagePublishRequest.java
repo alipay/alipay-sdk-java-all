@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.mylogisticfinsys.message.publish request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:38:17
+ * @since 1.0, 2023-05-31 00:40:14
  */
 public class AnttechBlockchainFinanceMylogisticfinsysMessagePublishRequest implements AlipayRequest<AnttechBlockchainFinanceMylogisticfinsysMessagePublishResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.liferecord.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:01:56
+ * @since 1.0, 2023-05-31 21:41:59
  */
 public class ZhimaCustomerLiferecordSignRequest implements AlipayRequest<ZhimaCustomerLiferecordSignResponse> {
 

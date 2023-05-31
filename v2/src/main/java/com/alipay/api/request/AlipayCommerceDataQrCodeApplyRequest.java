@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.data.qr.code.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:06:59
+ * @since 1.0, 2023-05-31 01:11:53
  */
 public class AlipayCommerceDataQrCodeApplyRequest implements AlipayRequest<AlipayCommerceDataQrCodeApplyResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.printer.status.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:37:30
+ * @since 1.0, 2023-05-31 19:38:42
  */
 public class AlipayDataPrinterStatusGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2814749879427356813L;
+	private static final long serialVersionUID = 4599915935338923561L;
 
 	/** 
 	 * 状态码

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.orderwordnum.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:18:44
+ * @since 1.0, 2023-05-31 22:40:15
  */
 public class AlipayOpenSearchOrderwordnumQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8422271962158746448L;
+	private static final long serialVersionUID = 1125841293731552443L;
 
 	/** 
 	 * 可配置关键词数量

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.deduct.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:41:17
+ * @since 1.0, 2023-05-31 22:24:31
  */
 public class AlipayPcreditLoanDeductApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6652927794613683665L;
+	private static final long serialVersionUID = 3187959991391276634L;
 
 	
 

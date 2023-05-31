@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.isvtoken.reim.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:25:01
+ * @since 1.0, 2023-05-31 02:51:00
  */
 public class AlipayEbppInvoiceIsvtokenReimApplyRequest implements AlipayRequest<AlipayEbppInvoiceIsvtokenReimApplyResponse> {
 

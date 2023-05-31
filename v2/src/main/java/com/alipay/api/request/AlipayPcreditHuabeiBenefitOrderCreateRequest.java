@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.benefit.order.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:24:55
+ * @since 1.0, 2023-05-30 20:43:43
  */
 public class AlipayPcreditHuabeiBenefitOrderCreateRequest implements AlipayRequest<AlipayPcreditHuabeiBenefitOrderCreateResponse> {
 

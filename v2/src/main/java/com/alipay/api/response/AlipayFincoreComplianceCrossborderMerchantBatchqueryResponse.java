@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.crossborder.merchant.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:10:50
+ * @since 1.0, 2023-05-31 04:19:51
  */
 public class AlipayFincoreComplianceCrossborderMerchantBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8855728666465873637L;
+	private static final long serialVersionUID = 5145554322651263182L;
 
 	/** 
 	 * 处理结果文字说明

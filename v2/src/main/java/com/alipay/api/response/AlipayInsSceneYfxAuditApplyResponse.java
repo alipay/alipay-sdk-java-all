@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.yfx.audit.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:26:49
+ * @since 1.0, 2023-05-31 07:36:50
  */
 public class AlipayInsSceneYfxAuditApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8464778691498138383L;
+	private static final long serialVersionUID = 5111881888595181231L;
 
 	
 

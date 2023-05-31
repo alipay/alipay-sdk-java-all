@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv绑定酒店设备
  *
  * @author auto create
- * @since 1.0, 2023-03-06 14:44:45
+ * @since 1.0, 2023-05-31 16:33:18
  */
 public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1596537657246223223L;
+	private static final long serialVersionUID = 4451821313894554198L;
 
 	/**
 	 * 传入绑定设备的类型。
@@ -25,10 +25,23 @@ public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 14:送物机器人
 15:客控音响
 16:弹簧机
-17:小型售货机
+17:小型售货机 当前字段已废弃(此字段废弃，无需传值。)
 	 */
 	@ApiField("device_category")
+	@Deprecated
 	private String deviceCategory;
+
+	/**
+	 * 设备所属类型
+	 */
+	@ApiField("device_category_code")
+	private String deviceCategoryCode;
+
+	/**
+	 * 设备所使用的解决方案
+	 */
+	@ApiField("device_solution")
+	private String deviceSolution;
 
 	/**
 	 * 用户入住的楼层
@@ -49,6 +62,12 @@ public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 	private String roomNum;
 
 	/**
+	 * 设备所处场景类目
+	 */
+	@ApiField("scene_category_code")
+	private String sceneCategoryCode;
+
+	/**
 	 * 绑定设备使用的场景
 枚举值：
 1:酒店前台设备
@@ -58,9 +77,10 @@ public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 5:刷脸闸机设备
 6:刷脸就餐设备
 7:公区共享设备
-8:网吧前台设备
+8:网吧前台设备 当前字段已废弃(此字段废弃，无需传值。)
 	 */
 	@ApiField("scene_type")
+	@Deprecated
 	private String sceneType;
 
 	/**
@@ -74,6 +94,20 @@ public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 	}
 	public void setDeviceCategory(String deviceCategory) {
 		this.deviceCategory = deviceCategory;
+	}
+
+	public String getDeviceCategoryCode() {
+		return this.deviceCategoryCode;
+	}
+	public void setDeviceCategoryCode(String deviceCategoryCode) {
+		this.deviceCategoryCode = deviceCategoryCode;
+	}
+
+	public String getDeviceSolution() {
+		return this.deviceSolution;
+	}
+	public void setDeviceSolution(String deviceSolution) {
+		this.deviceSolution = deviceSolution;
 	}
 
 	public String getFloorNum() {
@@ -95,6 +129,13 @@ public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 	}
 	public void setRoomNum(String roomNum) {
 		this.roomNum = roomNum;
+	}
+
+	public String getSceneCategoryCode() {
+		return this.sceneCategoryCode;
+	}
+	public void setSceneCategoryCode(String sceneCategoryCode) {
+		this.sceneCategoryCode = sceneCategoryCode;
 	}
 
 	public String getSceneType() {

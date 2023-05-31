@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.marketing.campaign.bkpromoguardbase.lmitemdelete.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:51:49
+ * @since 1.0, 2023-05-31 03:01:57
  */
 public class MybankMarketingCampaignBkpromoguardbaseLmitemdeleteSyncRequest implements AlipayRequest<MybankMarketingCampaignBkpromoguardbaseLmitemdeleteSyncResponse> {
 

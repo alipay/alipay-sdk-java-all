@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.voucherprod.benefittemplate.offline response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:35:45
+ * @since 1.0, 2023-05-30 21:13:32
  */
 public class AlipayAssetPointVoucherprodBenefittemplateOfflineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4699956368249784753L;
+	private static final long serialVersionUID = 5732613575753436728L;
 
 	/** 
 	 * 快速下线，true表示模版已过期并且已经退回资金，false表示模版已过期，但是尚未退回资金

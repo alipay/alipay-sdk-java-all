@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.auth.operator.password.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:12:25
+ * @since 1.0, 2023-05-31 01:29:00
  */
 public class AlipayOpenAuthOperatorPasswordModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5893726756871762464L;
+	private static final long serialVersionUID = 7276323733757138542L;
 
 	
 

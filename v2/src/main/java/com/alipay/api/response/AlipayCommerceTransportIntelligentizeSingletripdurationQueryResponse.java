@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.intelligentize.singletripduration.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:00:59
+ * @since 1.0, 2023-05-31 00:45:10
  */
 public class AlipayCommerceTransportIntelligentizeSingletripdurationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8796911181335978669L;
+	private static final long serialVersionUID = 6754978518679193641L;
 
 	/** 
 	 * 扩展信息，json格式，由双方约定取值

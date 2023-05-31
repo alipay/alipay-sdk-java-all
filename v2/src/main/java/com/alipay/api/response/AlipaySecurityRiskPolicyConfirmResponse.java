@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.policy.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:41:50
+ * @since 1.0, 2023-05-31 04:36:55
  */
 public class AlipaySecurityRiskPolicyConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3638284335516834878L;
+	private static final long serialVersionUID = 7868357392318313445L;
 
 	/** 
 	 * 确认结果

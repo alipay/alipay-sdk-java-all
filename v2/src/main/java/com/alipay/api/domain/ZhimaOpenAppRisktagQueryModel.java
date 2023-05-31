@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaOpenAppRisktagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2892491695559149912L;
+	private static final long serialVersionUID = 6484731153896996996L;
 
 	/**
 	 * 数据类型，风报标识，例 行政处罚，裁判文书

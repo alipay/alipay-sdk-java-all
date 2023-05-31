@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.hrcampuscore.niukeexam.result.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:22:44
+ * @since 1.0, 2023-05-31 05:04:25
  */
 public class AlipayDigitalmgmtHrcampuscoreNiukeexamResultSyncRequest implements AlipayRequest<AlipayDigitalmgmtHrcampuscoreNiukeexamResultSyncResponse> {
 

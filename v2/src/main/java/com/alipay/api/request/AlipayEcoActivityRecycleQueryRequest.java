@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.activity.recycle.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:34:52
+ * @since 1.0, 2023-05-30 23:23:59
  */
 public class AlipayEcoActivityRecycleQueryRequest implements AlipayRequest<AlipayEcoActivityRecycleQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.antdataassets.odpscolumn.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:31:50
+ * @since 1.0, 2023-05-30 22:11:13
  */
 public class AlipayDataDataserviceAntdataassetsOdpscolumnQueryRequest implements AlipayRequest<AlipayDataDataserviceAntdataassetsOdpscolumnQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antfarm.donationinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:32:15
+ * @since 1.0, 2023-05-30 20:01:09
  */
 public class AlipaySocialAntfarmDonationinfoQueryRequest implements AlipayRequest<AlipaySocialAntfarmDonationinfoQueryResponse> {
 

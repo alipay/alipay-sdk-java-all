@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.bpaas.service.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:34:42
+ * @since 1.0, 2023-05-31 21:38:19
  */
 public class AlipayOpenBpaasServiceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8377922473598863877L;
+	private static final long serialVersionUID = 8471538115497953271L;
 
 	/** 
 	 * 服务列表

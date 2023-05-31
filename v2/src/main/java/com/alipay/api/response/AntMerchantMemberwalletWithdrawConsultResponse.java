@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.memberwallet.withdraw.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:52:22
+ * @since 1.0, 2023-05-31 05:24:57
  */
 public class AntMerchantMemberwalletWithdrawConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3347969818322758394L;
+	private static final long serialVersionUID = 8661565441268659546L;
 
 	/** 
 	 * 实际可提现本金金额（单位：元）

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.pos.qrcode.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:40:47
+ * @since 1.0, 2023-05-30 23:56:56
  */
 public class KoubeiCateringPosQrcodeSyncRequest implements AlipayRequest<KoubeiCateringPosQrcodeSyncResponse> {
 

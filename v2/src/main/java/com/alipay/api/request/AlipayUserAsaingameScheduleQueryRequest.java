@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.asaingame.schedule.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:12:50
+ * @since 1.0, 2023-05-30 23:46:05
  */
 public class AlipayUserAsaingameScheduleQueryRequest implements AlipayRequest<AlipayUserAsaingameScheduleQueryResponse> {
 

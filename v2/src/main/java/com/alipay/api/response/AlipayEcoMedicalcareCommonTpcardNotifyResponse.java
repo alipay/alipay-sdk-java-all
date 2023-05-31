@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.medicalcare.common.tpcard.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:06:42
+ * @since 1.0, 2023-05-31 19:33:14
  */
 public class AlipayEcoMedicalcareCommonTpcardNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6471652771213538484L;
+	private static final long serialVersionUID = 4698966149596276495L;
 
 	
 

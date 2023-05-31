@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.order.rent.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:44:57
+ * @since 1.0, 2023-05-31 08:21:40
  */
 public class ZhimaMerchantOrderRentCancelRequest implements AlipayRequest<ZhimaMerchantOrderRentCancelResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联营-计划-计划介绍
  *
  * @author auto create
- * @since 1.0, 2023-04-17 20:20:44
+ * @since 1.0, 2023-05-31 17:30:31
  */
 public class BsBrandPlanIntro extends AlipayObject {
 
-	private static final long serialVersionUID = 8414554922441831136L;
+	private static final long serialVersionUID = 8894946437342973742L;
 
 	/**
 	 * 联营-计划-计划描述

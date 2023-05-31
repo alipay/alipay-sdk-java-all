@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.lcs.lcsservers.save request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:51:50
+ * @since 1.0, 2023-05-31 00:56:50
  */
 public class AlipayIserviceCcmLcsLcsserversSaveRequest implements AlipayRequest<AlipayIserviceCcmLcsLcsserversSaveResponse> {
 

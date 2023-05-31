@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.vehicle.servicenotify.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:46:51
+ * @since 1.0, 2023-05-31 02:46:59
  */
 public class AlipayEcoMycarVehicleServicenotifySendRequest implements AlipayRequest<AlipayEcoMycarVehicleServicenotifySendResponse> {
 

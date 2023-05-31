@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.mrchsurplmitem.increment.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:17:33
+ * @since 1.0, 2023-05-31 06:58:41
  */
 public class AlipayMerchantMrchsurplmitemIncrementSyncRequest implements AlipayRequest<AlipayMerchantMrchsurplmitemIncrementSyncResponse> {
 

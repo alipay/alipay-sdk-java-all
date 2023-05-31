@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.ep.certification.initialize request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:36:10
+ * @since 1.0, 2023-05-31 20:17:33
  */
 public class ZhimaCustomerEpCertificationInitializeRequest implements AlipayRequest<ZhimaCustomerEpCertificationInitializeResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.dcs.proxysign.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-05-23 10:56:48
+ * @since 1.0, 2023-05-31 06:16:48
  */
 public class AlipayCommerceOperationDcsProxysignSubmitRequest implements AlipayRequest<AlipayCommerceOperationDcsProxysignSubmitResponse> {
 

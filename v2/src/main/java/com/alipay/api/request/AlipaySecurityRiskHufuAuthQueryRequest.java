@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.hufu.auth.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:27:27
+ * @since 1.0, 2023-05-31 21:01:10
  */
 public class AlipaySecurityRiskHufuAuthQueryRequest implements AlipayRequest<AlipaySecurityRiskHufuAuthQueryResponse> {
 

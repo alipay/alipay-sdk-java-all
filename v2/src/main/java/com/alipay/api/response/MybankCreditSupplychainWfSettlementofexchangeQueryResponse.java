@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.settlementofexchange.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 10:01:14
+ * @since 1.0, 2023-05-31 01:47:43
  */
 public class MybankCreditSupplychainWfSettlementofexchangeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7613983924117652216L;
+	private static final long serialVersionUID = 3792252976297129562L;
 
 	
 

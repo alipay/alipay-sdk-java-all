@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcapi.vehicleplate.identify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:42:58
+ * @since 1.0, 2023-05-31 21:20:25
  */
 public class AlipayMsaasMediarecogMmtcapiVehicleplateIdentifyRequest implements AlipayRequest<AlipayMsaasMediarecogMmtcapiVehicleplateIdentifyResponse> {
 

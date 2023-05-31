@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.members.huoban.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:47:24
+ * @since 1.0, 2023-05-31 06:22:43
  */
 public class AlipayOpenMiniMembersHuobanCreateRequest implements AlipayRequest<AlipayOpenMiniMembersHuobanCreateResponse> {
 

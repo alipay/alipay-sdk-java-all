@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.servindustry.reservation.shop.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:02:10
+ * @since 1.0, 2023-05-30 20:04:06
  */
 public class KoubeiServindustryReservationShopUnbindRequest implements AlipayRequest<KoubeiServindustryReservationShopUnbindResponse> {
 

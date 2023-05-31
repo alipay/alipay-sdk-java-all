@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.filetask.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:41:51
+ * @since 1.0, 2023-05-31 07:07:00
  */
 public class AlipayMerchantIndirectFiletaskConsultRequest implements AlipayRequest<AlipayMerchantIndirectFiletaskConsultResponse> {
 

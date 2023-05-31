@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.mpoint.authbase.pay request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:26:48
+ * @since 1.0, 2023-05-31 08:46:57
  */
 public class AlipayUserMpointAuthbasePayRequest implements AlipayRequest<AlipayUserMpointAuthbasePayResponse> {
 

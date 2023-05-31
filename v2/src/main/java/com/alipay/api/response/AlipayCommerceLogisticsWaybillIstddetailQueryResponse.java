@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.waybill.istddetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:23:34
+ * @since 1.0, 2023-05-31 02:28:14
  */
 public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2166292149461349178L;
+	private static final long serialVersionUID = 2222785672694621916L;
 
 	/** 
 	 * 预计还剩多久送达 单位：秒

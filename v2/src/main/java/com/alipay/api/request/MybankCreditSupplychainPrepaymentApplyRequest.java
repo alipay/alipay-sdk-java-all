@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.prepayment.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:26:30
+ * @since 1.0, 2023-05-31 04:16:47
  */
 public class MybankCreditSupplychainPrepaymentApplyRequest implements AlipayRequest<MybankCreditSupplychainPrepaymentApplyResponse> {
 

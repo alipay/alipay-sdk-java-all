@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.customer.idcard.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:49:51
+ * @since 1.0, 2023-05-31 07:06:16
  */
 public class ZolozIdentificationCustomerIdcardCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1536951895978323292L;
+	private static final long serialVersionUID = 1476629552663873379L;
 
 	/** 
 	 * 证件宝审核结果

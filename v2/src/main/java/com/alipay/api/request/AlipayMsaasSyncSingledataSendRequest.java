@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.sync.singledata.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:36:47
+ * @since 1.0, 2023-05-31 07:11:56
  */
 public class AlipayMsaasSyncSingledataSendRequest implements AlipayRequest<AlipayMsaasSyncSingledataSendResponse> {
 

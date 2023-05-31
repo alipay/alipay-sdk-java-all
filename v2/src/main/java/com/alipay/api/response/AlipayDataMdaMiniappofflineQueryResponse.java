@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.miniappoffline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-18 13:56:56
+ * @since 1.0, 2023-05-31 20:41:48
  */
 public class AlipayDataMdaMiniappofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3772418249149614168L;
+	private static final long serialVersionUID = 6642181625699917784L;
 
 	/** 
 	 * 累计行程规划人数

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.jointaccount.member.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 15:52:00
+ * @since 1.0, 2023-05-30 21:46:58
  */
 public class AlipayFundJointaccountMemberBatchqueryRequest implements AlipayRequest<AlipayFundJointaccountMemberBatchqueryResponse> {
 

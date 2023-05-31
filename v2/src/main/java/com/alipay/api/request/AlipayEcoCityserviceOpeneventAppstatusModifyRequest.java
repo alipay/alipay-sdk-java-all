@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cityservice.openevent.appstatus.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:58:06
+ * @since 1.0, 2023-05-31 20:33:18
  */
 public class AlipayEcoCityserviceOpeneventAppstatusModifyRequest implements AlipayRequest<AlipayEcoCityserviceOpeneventAppstatusModifyResponse> {
 

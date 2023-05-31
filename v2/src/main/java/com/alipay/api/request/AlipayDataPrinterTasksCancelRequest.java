@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.printer.tasks.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:10:07
+ * @since 1.0, 2023-05-31 08:28:59
  */
 public class AlipayDataPrinterTasksCancelRequest implements AlipayRequest<AlipayDataPrinterTasksCancelResponse> {
 

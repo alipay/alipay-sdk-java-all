@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.energy.receive.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:11:51
+ * @since 1.0, 2023-05-31 22:36:50
  */
 public class AlipayCommerceEnergyReceiveSendRequest implements AlipayRequest<AlipayCommerceEnergyReceiveSendResponse> {
 

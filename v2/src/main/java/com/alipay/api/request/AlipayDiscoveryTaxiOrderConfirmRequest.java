@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.discovery.taxi.order.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:25:07
+ * @since 1.0, 2023-05-31 09:42:20
  */
 public class AlipayDiscoveryTaxiOrderConfirmRequest implements AlipayRequest<AlipayDiscoveryTaxiOrderConfirmResponse> {
 

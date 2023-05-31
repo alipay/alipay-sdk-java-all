@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.finrisk.instriskmonitor.keywords.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:18:07
+ * @since 1.0, 2023-05-31 01:12:00
  */
 public class AlipayAccountFinriskInstriskmonitorKeywordsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8441138794615617878L;
+	private static final long serialVersionUID = 4326486486227324383L;
 
 	/** 
 	 * 返回机构关键词相关信息

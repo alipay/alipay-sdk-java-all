@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.crowd.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 17:37:01
+ * @since 1.0, 2023-05-30 23:46:54
  */
 public class AlipayMerchantQipanCrowdCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5189915385753865396L;
+	private static final long serialVersionUID = 7258725821719794119L;
 
 	/** 
 	 * 支付宝人群code

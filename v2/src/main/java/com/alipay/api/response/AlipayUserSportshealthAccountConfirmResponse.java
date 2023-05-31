@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.sportshealth.account.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:46:52
+ * @since 1.0, 2023-05-31 20:47:01
  */
 public class AlipayUserSportshealthAccountConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2344295391654524289L;
+	private static final long serialVersionUID = 5429734366148826336L;
 
 	/** 
 	 * 运动币账户支付流水号

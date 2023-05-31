@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.finance.account.rysenterprise.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:04:38
+ * @since 1.0, 2023-05-31 05:24:25
  */
 public class MybankFinanceAccountRysenterpriseQueryRequest implements AlipayRequest<MybankFinanceAccountRysenterpriseQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.task.event.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:13:41
+ * @since 1.0, 2023-05-31 22:14:15
  */
 public class AlipayCommerceTaskEventCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6228932212243725182L;
+	private static final long serialVersionUID = 3257231815458288354L;
 
 	/** 
 	 * 模版id

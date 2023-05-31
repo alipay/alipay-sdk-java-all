@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户授权令牌测试
  *
  * @author auto create
- * @since 1.0, 2022-12-13 14:46:40
+ * @since 1.0, 2023-05-31 11:52:20
  */
 public class AlipayOpenOperationOpenbizmockTestauthtokenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3462355144275288549L;
+	private static final long serialVersionUID = 1387839131357516769L;
 
 	/**
 	 * 测试专用
@@ -19,11 +19,24 @@ public class AlipayOpenOperationOpenbizmockTestauthtokenQueryModel extends Alipa
 	@ApiField("a")
 	private String a;
 
+	/**
+	 * 1
+	 */
+	@ApiField("a_open_id")
+	private String aOpenId;
+
 	public String getA() {
 		return this.a;
 	}
 	public void setA(String a) {
 		this.a = a;
+	}
+
+	public String getaOpenId() {
+		return this.aOpenId;
+	}
+	public void setaOpenId(String aOpenId) {
+		this.aOpenId = aOpenId;
 	}
 
 }

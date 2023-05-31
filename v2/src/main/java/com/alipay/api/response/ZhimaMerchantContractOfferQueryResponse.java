@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.contract.offer.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:06:43
+ * @since 1.0, 2023-05-31 06:33:52
  */
 public class ZhimaMerchantContractOfferQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4296891813245783849L;
+	private static final long serialVersionUID = 2262413386192383226L;
 
 	/** 
 	 * 此类目为分配给商户在内容下的不同类目分类，（如直播/电影类目）

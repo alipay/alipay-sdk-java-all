@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.creditrisk.custlabel.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:14:28
+ * @since 1.0, 2023-05-30 22:03:41
  */
 public class AlipayPcreditCreditriskCustlabelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4154375716877364397L;
+	private static final long serialVersionUID = 1168582711118911154L;
 
 	/** 
 	 * 是否展示借呗

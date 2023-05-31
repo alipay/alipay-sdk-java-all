@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HuanxuTradeOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4238673872156527284L;
+	private static final long serialVersionUID = 2217687834748974569L;
 
 	/**
 	 * 聚合支付的支付渠道，焕旭分配。

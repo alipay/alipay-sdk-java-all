@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.linke.devops.mobiledevice.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:13:13
+ * @since 1.0, 2023-05-31 07:40:43
  */
 public class AntLinkeDevopsMobiledeviceApplyRequest implements AlipayRequest<AntLinkeDevopsMobiledeviceApplyResponse> {
 

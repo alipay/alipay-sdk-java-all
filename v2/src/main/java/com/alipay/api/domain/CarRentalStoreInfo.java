@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CarRentalStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1279423566954712388L;
+	private static final long serialVersionUID = 2575158972513684346L;
 
 	/**
 	 * 门店营业时间

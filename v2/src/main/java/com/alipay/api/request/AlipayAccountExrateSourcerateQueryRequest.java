@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.exrate.sourcerate.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:19:00
+ * @since 1.0, 2023-05-30 19:57:34
  */
 public class AlipayAccountExrateSourcerateQueryRequest implements AlipayRequest<AlipayAccountExrateSourcerateQueryResponse> {
 

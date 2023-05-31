@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.promotionactivity.customer.receive request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:11:17
+ * @since 1.0, 2023-05-31 22:49:45
  */
 public class AlipayMarketingCampaignPromotionactivityCustomerReceiveRequest implements AlipayRequest<AlipayMarketingCampaignPromotionactivityCustomerReceiveResponse> {
 

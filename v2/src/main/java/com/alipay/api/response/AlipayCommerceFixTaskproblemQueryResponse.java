@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fix.taskproblem.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:48:07
+ * @since 1.0, 2023-05-31 03:21:37
  */
 public class AlipayCommerceFixTaskproblemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1783295337634717659L;
+	private static final long serialVersionUID = 5425288833543998475L;
 
 	/** 
 	 * 查询到的问题信息列表

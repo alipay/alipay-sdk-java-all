@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfsettle.paycontract.effect request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:02:00
+ * @since 1.0, 2023-05-31 10:31:55
  */
 public class AlipayBossFncGfsettlePaycontractEffectRequest implements AlipayRequest<AlipayBossFncGfsettlePaycontractEffectResponse> {
 

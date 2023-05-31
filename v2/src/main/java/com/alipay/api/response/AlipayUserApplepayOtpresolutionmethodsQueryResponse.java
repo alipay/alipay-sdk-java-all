@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.applepay.otpresolutionmethods.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:52:51
+ * @since 1.0, 2023-05-30 20:02:28
  */
 public class AlipayUserApplepayOtpresolutionmethodsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1712226912367862915L;
+	private static final long serialVersionUID = 6565746454664788974L;
 
 	/** 
 	 * OpenApi的Otp校验方法负责对象

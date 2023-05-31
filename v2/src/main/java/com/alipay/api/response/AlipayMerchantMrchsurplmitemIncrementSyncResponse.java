@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.mrchsurplmitem.increment.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:17:33
+ * @since 1.0, 2023-05-31 06:58:41
  */
 public class AlipayMerchantMrchsurplmitemIncrementSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4842679713519274594L;
+	private static final long serialVersionUID = 2276957681859422163L;
 
 	/** 
 	 * 建议调用方打印日志

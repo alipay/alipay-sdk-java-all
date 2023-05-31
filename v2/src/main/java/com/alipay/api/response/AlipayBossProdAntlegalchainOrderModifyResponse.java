@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlegalchain.order.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:04:17
+ * @since 1.0, 2023-05-31 09:09:18
  */
 public class AlipayBossProdAntlegalchainOrderModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6481614817582976537L;
+	private static final long serialVersionUID = 6653716636524729919L;
 
 	
 

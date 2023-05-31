@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.insserviceprod.serattachment.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:44:57
+ * @since 1.0, 2023-05-31 02:54:56
  */
 public class AlipayInsSceneInsserviceprodSerattachmentDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8463931126645653228L;
+	private static final long serialVersionUID = 7161787372731968526L;
 
 	/** 
 	 * 文件编号

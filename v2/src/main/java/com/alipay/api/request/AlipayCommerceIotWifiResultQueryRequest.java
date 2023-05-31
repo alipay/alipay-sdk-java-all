@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.wifi.result.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:54:25
+ * @since 1.0, 2023-05-30 23:47:04
  */
 public class AlipayCommerceIotWifiResultQueryRequest implements AlipayRequest<AlipayCommerceIotWifiResultQueryResponse> {
 

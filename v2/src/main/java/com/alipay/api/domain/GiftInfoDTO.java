@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 满赠信息
  *
  * @author auto create
- * @since 1.0, 2022-11-14 16:34:11
+ * @since 1.0, 2023-05-31 15:00:10
  */
 public class GiftInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5217859968786446912L;
+	private static final long serialVersionUID = 8151954664332431977L;
 
 	/**
 	 * 消费最低金额限制

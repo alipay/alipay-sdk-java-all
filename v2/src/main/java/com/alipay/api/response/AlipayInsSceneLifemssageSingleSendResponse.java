@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.lifemssage.single.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:26:48
+ * @since 1.0, 2023-05-31 21:41:50
  */
 public class AlipayInsSceneLifemssageSingleSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8247758864522142919L;
+	private static final long serialVersionUID = 2197146422139286795L;
 
 	
 

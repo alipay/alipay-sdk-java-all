@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.lotterymall.exchangerecordstatus.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:58:55
+ * @since 1.0, 2023-05-31 04:32:18
  */
 public class AlipayOpenLotterymallExchangerecordstatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1699961563749978873L;
+	private static final long serialVersionUID = 3461655371321437368L;
 
 	/** 
 	 * 如果success为false，errorCode表示具体的失败错误码

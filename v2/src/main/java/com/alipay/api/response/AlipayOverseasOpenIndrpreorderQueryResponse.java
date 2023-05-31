@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.indrpreorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-11 14:06:49
+ * @since 1.0, 2023-05-30 20:16:58
  */
 public class AlipayOverseasOpenIndrpreorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7153186574145143874L;
+	private static final long serialVersionUID = 4178729939544854535L;
 
 	/** 
 	 * 付款金额

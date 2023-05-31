@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.serviceorder.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:47:53
+ * @since 1.0, 2023-05-30 23:40:51
  */
 public class AlipayOpenSearchServiceorderModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3718664828733448569L;
+	private static final long serialVersionUID = 1562425692493975823L;
 
 	/** 
 	 * 申请单的申请单id，applyid

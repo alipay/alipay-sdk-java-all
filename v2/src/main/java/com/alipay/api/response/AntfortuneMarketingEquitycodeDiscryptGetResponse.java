@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.marketing.equitycode.discrypt.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:08:31
+ * @since 1.0, 2023-05-31 07:32:04
  */
 public class AntfortuneMarketingEquitycodeDiscryptGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8195533974258296419L;
+	private static final long serialVersionUID = 6539618914972645981L;
 
 	/** 
 	 * 解密后的第三方券码

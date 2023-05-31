@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.appinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:29:10
+ * @since 1.0, 2023-05-31 09:02:15
  */
 public class AlipayEcoCityserviceAppinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6494898513884144994L;
+	private static final long serialVersionUID = 8168366743494635745L;
 
 	/** 
 	 * 业务类型

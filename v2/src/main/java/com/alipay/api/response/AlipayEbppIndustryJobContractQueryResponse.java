@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.contract.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:21:04
+ * @since 1.0, 2023-05-31 19:32:12
  */
 public class AlipayEbppIndustryJobContractQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3632659123412453716L;
+	private static final long serialVersionUID = 3333969362828427813L;
 
 	/** 
 	 * 合同状态：签署中，已签署，已失效

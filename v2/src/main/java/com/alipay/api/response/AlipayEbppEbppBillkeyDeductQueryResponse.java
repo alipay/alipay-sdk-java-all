@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.ebpp.billkey.deduct.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:36:50
+ * @since 1.0, 2023-05-31 19:41:58
  */
 public class AlipayEbppEbppBillkeyDeductQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5686562563738744467L;
+	private static final long serialVersionUID = 4837132568168128846L;
 
 	/** 
 	 * 户号

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.service.recommendbank.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:51:55
+ * @since 1.0, 2023-05-31 20:16:58
  */
 public class AlipayTradeServiceRecommendbankQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8787868845113122356L;
+	private static final long serialVersionUID = 8469979684439296354L;
 
 	/** 
 	 * 推荐银行列表,包含iosSchama,安卓Schama等信息

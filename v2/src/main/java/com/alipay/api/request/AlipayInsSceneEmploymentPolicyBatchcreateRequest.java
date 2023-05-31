@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.employment.policy.batchcreate request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:22:03
+ * @since 1.0, 2023-05-31 21:06:52
  */
 public class AlipayInsSceneEmploymentPolicyBatchcreateRequest implements AlipayRequest<AlipayInsSceneEmploymentPolicyBatchcreateResponse> {
 

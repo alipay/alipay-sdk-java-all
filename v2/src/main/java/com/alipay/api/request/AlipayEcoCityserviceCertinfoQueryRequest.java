@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cityservice.certinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:58:24
+ * @since 1.0, 2023-05-31 00:54:36
  */
 public class AlipayEcoCityserviceCertinfoQueryRequest implements AlipayRequest<AlipayEcoCityserviceCertinfoQueryResponse> {
 

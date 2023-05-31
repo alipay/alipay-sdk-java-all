@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.point.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:09:02
+ * @since 1.0, 2023-05-31 10:34:42
  */
 public class AlipayUserPointSendRequest implements AlipayRequest<AlipayUserPointSendResponse> {
 

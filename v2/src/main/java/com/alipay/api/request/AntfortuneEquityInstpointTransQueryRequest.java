@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.equity.instpoint.trans.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:56:29
+ * @since 1.0, 2023-05-31 01:46:19
  */
 public class AntfortuneEquityInstpointTransQueryRequest implements AlipayRequest<AntfortuneEquityInstpointTransQueryResponse> {
 

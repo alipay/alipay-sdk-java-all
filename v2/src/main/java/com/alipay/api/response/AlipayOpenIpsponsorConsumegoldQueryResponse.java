@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.ipsponsor.consumegold.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:19:56
+ * @since 1.0, 2023-05-31 03:02:07
  */
 public class AlipayOpenIpsponsorConsumegoldQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3753626212263583619L;
+	private static final long serialVersionUID = 3799388326966455498L;
 
 	/** 
 	 * 开通状态

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保支付订单查询接口返回值
  *
  * @author auto create
- * @since 1.0, 2023-04-19 11:20:22
+ * @since 1.0, 2023-05-31 16:43:02
  */
 public class MedicalPaymentQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4271633414774439465L;
+	private static final long serialVersionUID = 3514376927563624924L;
 
 	/**
 	 * 医保个账支付金额
@@ -138,6 +138,18 @@ public class MedicalPaymentQueryResponse extends AlipayObject {
 	 */
 	@ApiField("real_refund_amount")
 	private String realRefundAmount;
+
+	/**
+	 * 1:亲情支付,0:本人支付,为空默认0
+	 */
+	@ApiField("rels_pay_flag")
+	private String relsPayFlag;
+
+	/**
+	 * 亲情支付代办人脱敏姓名，rels_pay_flag为1时不为空
+	 */
+	@ApiField("rels_pay_user_name")
+	private String relsPayUserName;
 
 	/**
 	 * 补充字段描述
@@ -308,6 +320,20 @@ public class MedicalPaymentQueryResponse extends AlipayObject {
 	}
 	public void setRealRefundAmount(String realRefundAmount) {
 		this.realRefundAmount = realRefundAmount;
+	}
+
+	public String getRelsPayFlag() {
+		return this.relsPayFlag;
+	}
+	public void setRelsPayFlag(String relsPayFlag) {
+		this.relsPayFlag = relsPayFlag;
+	}
+
+	public String getRelsPayUserName() {
+		return this.relsPayUserName;
+	}
+	public void setRelsPayUserName(String relsPayUserName) {
+		this.relsPayUserName = relsPayUserName;
 	}
 
 	public String getRemark() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.searchbox.upgrade.preconsult request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:16:52
+ * @since 1.0, 2023-05-31 14:01:59
  */
 public class AlipayOpenSearchboxUpgradePreconsultRequest implements AlipayRequest<AlipayOpenSearchboxUpgradePreconsultResponse> {
 

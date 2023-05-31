@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.balancehis.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:41:49
+ * @since 1.0, 2023-05-30 23:26:56
  */
 public class AlipayDataBillBalancehisQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2261518722259631554L;
+	private static final long serialVersionUID = 3861665783181397114L;
 
 	/** 
 	 * 期初余额

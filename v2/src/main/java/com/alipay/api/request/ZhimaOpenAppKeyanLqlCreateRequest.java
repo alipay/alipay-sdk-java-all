@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.open.app.keyan.lql.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:43:35
+ * @since 1.0, 2023-05-31 06:33:36
  */
 public class ZhimaOpenAppKeyanLqlCreateRequest implements AlipayRequest<ZhimaOpenAppKeyanLqlCreateResponse> {
 

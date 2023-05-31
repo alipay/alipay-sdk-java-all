@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.activity.deduct.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 16:06:55
+ * @since 1.0, 2023-05-31 00:21:48
  */
 public class AlipayMarketingActivityDeductConsultRequest implements AlipayRequest<AlipayMarketingActivityDeductConsultResponse> {
 

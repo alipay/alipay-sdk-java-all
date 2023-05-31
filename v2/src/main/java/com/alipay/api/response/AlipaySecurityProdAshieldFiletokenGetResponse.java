@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.ashield.filetoken.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-25 16:41:57
+ * @since 1.0, 2023-05-30 21:26:56
  */
 public class AlipaySecurityProdAshieldFiletokenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7148943359565163388L;
+	private static final long serialVersionUID = 6321855368878789797L;
 
 	/** 
 	 * 请求id

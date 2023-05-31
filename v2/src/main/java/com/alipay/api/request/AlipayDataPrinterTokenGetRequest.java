@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.printer.token.get request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:28:55
+ * @since 1.0, 2023-05-31 05:44:45
  */
 public class AlipayDataPrinterTokenGetRequest implements AlipayRequest<AlipayDataPrinterTokenGetResponse> {
 

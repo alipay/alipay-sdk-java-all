@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotroomdevice.event.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:52:24
+ * @since 1.0, 2023-05-31 06:54:03
  */
 public class AlipayOpenIotroomdeviceEventSendRequest implements AlipayRequest<AlipayOpenIotroomdeviceEventSendResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.games.sendinvite.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:26:53
+ * @since 1.0, 2023-05-31 00:51:52
  */
 public class AlipayCommerceSportsGamesSendinviteSendRequest implements AlipayRequest<AlipayCommerceSportsGamesSendinviteSendResponse> {
 

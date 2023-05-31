@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.content.contentcount.set request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:37:18
+ * @since 1.0, 2023-05-31 20:11:19
  */
 public class KoubeiContentContentcountSetRequest implements AlipayRequest<KoubeiContentContentcountSetResponse> {
 

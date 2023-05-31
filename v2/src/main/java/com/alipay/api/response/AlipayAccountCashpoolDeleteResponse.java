@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.cashpool.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:02:41
+ * @since 1.0, 2023-05-31 00:02:35
  */
 public class AlipayAccountCashpoolDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4671186322147959315L;
+	private static final long serialVersionUID = 3856364588776165992L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.advanced.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-22 17:32:55
+ * @since 1.0, 2023-05-31 19:20:18
  */
 public class AlipayOverseasTaxAdvancedUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6513186154219385463L;
+	private static final long serialVersionUID = 3398728873179568643L;
 
 	/** 
 	 * 支付宝退税资金订单号

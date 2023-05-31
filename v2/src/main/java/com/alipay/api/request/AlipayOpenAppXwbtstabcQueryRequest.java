@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.xwbtstabc.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:36:14
+ * @since 1.0, 2023-05-31 22:18:44
  */
 public class AlipayOpenAppXwbtstabcQueryRequest implements AlipayRequest<AlipayOpenAppXwbtstabcQueryResponse> {
 

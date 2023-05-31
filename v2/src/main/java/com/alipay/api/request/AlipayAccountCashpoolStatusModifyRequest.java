@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.cashpool.status.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:14:19
+ * @since 1.0, 2023-05-30 22:37:33
  */
 public class AlipayAccountCashpoolStatusModifyRequest implements AlipayRequest<AlipayAccountCashpoolStatusModifyResponse> {
 

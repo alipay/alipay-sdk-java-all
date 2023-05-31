@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.info.taobao.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:34:19
+ * @since 1.0, 2023-05-30 23:21:40
  */
 public class AlipayUserAccountInfoTaobaoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7449358748419443885L;
+	private static final long serialVersionUID = 7368126648847423467L;
 
 	/** 
 	 * alipay_user_id+是+手淘端内绑定支付宝账号+无+token获取+无

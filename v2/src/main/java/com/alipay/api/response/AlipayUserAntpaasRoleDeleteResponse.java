@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antpaas.role.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:56:34
+ * @since 1.0, 2023-05-30 22:49:54
  */
 public class AlipayUserAntpaasRoleDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6679452758139647934L;
+	private static final long serialVersionUID = 1525738262871149996L;
 
 	
 

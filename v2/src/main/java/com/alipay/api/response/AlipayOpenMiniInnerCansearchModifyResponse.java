@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.inner.cansearch.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:29:53
+ * @since 1.0, 2023-05-30 23:00:57
  */
 public class AlipayOpenMiniInnerCansearchModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8737758147243784762L;
+	private static final long serialVersionUID = 8146732837329226491L;
 
 	
 

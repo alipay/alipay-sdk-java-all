@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pass.template.update response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:36:47
+ * @since 1.0, 2023-05-31 06:51:55
  */
 public class AlipayPassTemplateUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1855394438157822393L;
+	private static final long serialVersionUID = 8763412612137971776L;
 
 	/** 
 	 * 接口调用返回结果信息(json字串):

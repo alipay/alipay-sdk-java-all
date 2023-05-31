@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.twc.user.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:16:51
+ * @since 1.0, 2023-05-31 05:41:56
  */
 public class AnttechBlockchainTwcUserMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5847292898257526298L;
+	private static final long serialVersionUID = 4679187122421245818L;
 
 	/** 
 	 * 不匹配

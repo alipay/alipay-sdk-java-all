@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.user.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:34:28
+ * @since 1.0, 2023-05-31 16:56:48
  */
 public class AlipayOpenIotvspUserDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2812328263936348928L;
+	private static final long serialVersionUID = 1671431476311699381L;
 
 	
 

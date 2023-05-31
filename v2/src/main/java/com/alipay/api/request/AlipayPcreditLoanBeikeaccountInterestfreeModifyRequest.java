@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.beikeaccount.interestfree.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:19:53
+ * @since 1.0, 2023-05-30 21:04:39
  */
 public class AlipayPcreditLoanBeikeaccountInterestfreeModifyRequest implements AlipayRequest<AlipayPcreditLoanBeikeaccountInterestfreeModifyResponse> {
 

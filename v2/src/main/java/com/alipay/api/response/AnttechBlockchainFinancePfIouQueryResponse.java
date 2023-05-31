@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.pf.iou.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:34:38
+ * @since 1.0, 2023-05-31 05:52:14
  */
 public class AnttechBlockchainFinancePfIouQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3617744124648431115L;
+	private static final long serialVersionUID = 2832135131517235917L;
 
 	/** 
 	 * 借据Id

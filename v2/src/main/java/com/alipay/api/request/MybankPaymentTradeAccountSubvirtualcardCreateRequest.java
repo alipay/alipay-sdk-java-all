@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.payment.trade.account.subvirtualcard.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:36:59
+ * @since 1.0, 2023-05-30 22:21:58
  */
 public class MybankPaymentTradeAccountSubvirtualcardCreateRequest implements AlipayRequest<MybankPaymentTradeAccountSubvirtualcardCreateResponse> {
 

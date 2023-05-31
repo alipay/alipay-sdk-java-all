@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.chat.gmember.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:39:41
+ * @since 1.0, 2023-05-31 07:10:53
  */
 public class AlipaySocialBaseChatGmemberDeleteRequest implements AlipayRequest<AlipaySocialBaseChatGmemberDeleteResponse> {
 

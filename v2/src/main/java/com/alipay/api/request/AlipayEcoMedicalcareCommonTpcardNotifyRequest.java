@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.medicalcare.common.tpcard.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:06:42
+ * @since 1.0, 2023-05-31 19:33:14
  */
 public class AlipayEcoMedicalcareCommonTpcardNotifyRequest implements AlipayRequest<AlipayEcoMedicalcareCommonTpcardNotifyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.prodmode.reconconf.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:21:01
+ * @since 1.0, 2023-05-31 04:40:46
  */
 public class AlipayEbppProdmodeReconconfQueryRequest implements AlipayRequest<AlipayEbppProdmodeReconconfQueryResponse> {
 

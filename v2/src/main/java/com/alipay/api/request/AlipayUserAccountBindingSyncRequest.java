@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.binding.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:06:59
+ * @since 1.0, 2023-05-31 00:06:50
  */
 public class AlipayUserAccountBindingSyncRequest implements AlipayRequest<AlipayUserAccountBindingSyncResponse> {
 

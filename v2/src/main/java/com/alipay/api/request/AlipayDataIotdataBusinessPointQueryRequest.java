@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.iotdata.business.point.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:18:35
+ * @since 1.0, 2023-05-31 01:58:43
  */
 public class AlipayDataIotdataBusinessPointQueryRequest implements AlipayRequest<AlipayDataIotdataBusinessPointQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.authentication.consistency.check response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 10:51:22
+ * @since 1.0, 2023-05-30 23:43:14
  */
 public class AlipayUserAuthenticationConsistencyCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3278746736482216383L;
+	private static final long serialVersionUID = 8478833413317744799L;
 
 	/** 
 	 * 一致性校验是否通过，T/F

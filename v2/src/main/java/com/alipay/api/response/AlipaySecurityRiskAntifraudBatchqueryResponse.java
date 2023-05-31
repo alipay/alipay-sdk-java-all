@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.antifraud.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:37:58
+ * @since 1.0, 2023-05-30 20:07:02
  */
 public class AlipaySecurityRiskAntifraudBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7156919233868878433L;
+	private static final long serialVersionUID = 6684114213876864461L;
 
 	/** 
 	 * 供应商关系列表+company_list是两个有关系的供应商，detail字段描述了具体的关系，detail为jsonArray表示两者之间可能的多种关系

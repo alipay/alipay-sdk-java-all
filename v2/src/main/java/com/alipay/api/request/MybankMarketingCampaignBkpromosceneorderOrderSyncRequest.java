@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.marketing.campaign.bkpromosceneorder.order.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:40:08
+ * @since 1.0, 2023-05-31 09:06:46
  */
 public class MybankMarketingCampaignBkpromosceneorderOrderSyncRequest implements AlipayRequest<MybankMarketingCampaignBkpromosceneorderOrderSyncResponse> {
 

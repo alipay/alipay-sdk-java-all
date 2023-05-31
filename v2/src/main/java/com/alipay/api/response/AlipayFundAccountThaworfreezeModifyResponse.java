@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.account.thaworfreeze.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-22 21:11:47
+ * @since 1.0, 2023-05-31 03:56:55
  */
 public class AlipayFundAccountThaworfreezeModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8191139644727992577L;
+	private static final long serialVersionUID = 4282359992935374647L;
 
 	/** 
 	 * 淘宝uid

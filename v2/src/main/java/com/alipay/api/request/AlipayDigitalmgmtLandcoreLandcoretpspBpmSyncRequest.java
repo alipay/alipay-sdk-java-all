@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.landcore.landcoretpsp.bpm.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:08:26
+ * @since 1.0, 2023-05-30 22:54:42
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspBpmSyncRequest implements AlipayRequest<AlipayDigitalmgmtLandcoreLandcoretpspBpmSyncResponse> {
 

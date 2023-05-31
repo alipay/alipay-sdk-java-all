@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcapi.driverlicense.identify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:36:41
+ * @since 1.0, 2023-05-31 22:51:38
  */
 public class AlipayMsaasMediarecogMmtcapiDriverlicenseIdentifyRequest implements AlipayRequest<AlipayMsaasMediarecogMmtcapiDriverlicenseIdentifyResponse> {
 

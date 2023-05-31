@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.enterprise.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 15:11:52
+ * @since 1.0, 2023-05-31 03:01:59
  */
 public class AlipayCommerceEcEnterpriseUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1138984647327855556L;
+	private static final long serialVersionUID = 1487662136161393924L;
 
 	/** 
 	 * 入参传的共同账户id，出参也会返回共同账户id

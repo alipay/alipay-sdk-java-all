@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.role.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:31:53
+ * @since 1.0, 2023-05-30 21:21:39
  */
 public class KoubeiMerchantRoleDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4173499839914183132L;
+	private static final long serialVersionUID = 7126755832619259993L;
 
 	/** 
 	 * 根据主体查询到的主体拥有的角色信息

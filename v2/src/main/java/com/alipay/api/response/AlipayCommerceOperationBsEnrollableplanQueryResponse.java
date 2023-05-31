@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.bs.enrollableplan.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:11:48
+ * @since 1.0, 2023-05-31 02:46:54
  */
 public class AlipayCommerceOperationBsEnrollableplanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3294188714278833288L;
+	private static final long serialVersionUID = 3751444296211623286L;
 
 	/** 
 	 * 可报名计划列表

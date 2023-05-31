@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.benefit.single.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:43:29
+ * @since 1.0, 2023-05-31 03:34:34
  */
 public class AlipayCommerceOperationBenefitSingleQueryRequest implements AlipayRequest<AlipayCommerceOperationBenefitSingleQueryResponse> {
 

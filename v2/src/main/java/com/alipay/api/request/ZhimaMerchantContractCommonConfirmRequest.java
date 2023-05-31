@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.contract.common.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:24:26
+ * @since 1.0, 2023-05-31 00:24:03
  */
 public class ZhimaMerchantContractCommonConfirmRequest implements AlipayRequest<ZhimaMerchantContractCommonConfirmResponse> {
 

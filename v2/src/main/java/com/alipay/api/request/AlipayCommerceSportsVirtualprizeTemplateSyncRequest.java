@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.virtualprize.template.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-18 11:36:50
+ * @since 1.0, 2023-05-30 22:16:55
  */
 public class AlipayCommerceSportsVirtualprizeTemplateSyncRequest implements AlipayRequest<AlipayCommerceSportsVirtualprizeTemplateSyncResponse> {
 

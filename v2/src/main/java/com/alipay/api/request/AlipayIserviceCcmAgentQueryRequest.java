@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.agent.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:08:14
+ * @since 1.0, 2023-05-31 20:50:40
  */
 public class AlipayIserviceCcmAgentQueryRequest implements AlipayRequest<AlipayIserviceCcmAgentQueryResponse> {
 

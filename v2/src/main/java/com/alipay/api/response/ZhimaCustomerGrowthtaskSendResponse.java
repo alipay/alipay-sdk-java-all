@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.growthtask.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:11:55
+ * @since 1.0, 2023-05-31 21:51:52
  */
 public class ZhimaCustomerGrowthtaskSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6834755512649564677L;
+	private static final long serialVersionUID = 8595676618431342233L;
 
 	/** 
 	 * 数据回流是否成功

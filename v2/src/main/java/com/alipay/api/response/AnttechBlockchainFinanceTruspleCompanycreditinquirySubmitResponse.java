@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.trusple.companycreditinquiry.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:06:51
+ * @since 1.0, 2023-05-31 08:06:53
  */
 public class AnttechBlockchainFinanceTruspleCompanycreditinquirySubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4844279351428488438L;
+	private static final long serialVersionUID = 4325546535914698638L;
 
 	/** 
 	 * 结果状态，S表示成功，F表示明确失败，U表示未知异常。一般返回U，调用方可能会重试

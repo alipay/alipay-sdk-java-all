@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.pf.payment.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:19:28
+ * @since 1.0, 2023-05-30 20:08:20
  */
 public class AnttechBlockchainFinancePfPaymentQueryRequest implements AlipayRequest<AnttechBlockchainFinancePfPaymentQueryResponse> {
 

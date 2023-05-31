@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.data.dashboard.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:31:36
+ * @since 1.0, 2023-05-31 20:48:34
  */
 public class AlipayMarketingDataDashboardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4546162884387387523L;
+	private static final long serialVersionUID = 5528134523339673344L;
 
 	/** 
 	 * 仪表盘访问地址

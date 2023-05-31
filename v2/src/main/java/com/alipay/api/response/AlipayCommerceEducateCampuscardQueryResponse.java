@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.campuscard.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:56:55
+ * @since 1.0, 2023-05-30 20:22:05
  */
 public class AlipayCommerceEducateCampuscardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3782931994169184575L;
+	private static final long serialVersionUID = 8125829139468174253L;
 
 	/** 
 	 * 学生的校园卡列表

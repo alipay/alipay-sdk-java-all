@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.loanarrangement.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 17:41:39
+ * @since 1.0, 2023-05-31 00:48:03
  */
 public class MybankCreditLoantradeLoanarrangementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5733475661919732992L;
+	private static final long serialVersionUID = 7782559899357151428L;
 
 	/** 
 	 * 合约状态 NORMAL:正常 ,OVD:逾期, CLEAR:结清, LENDING:放款中（未放款确认）

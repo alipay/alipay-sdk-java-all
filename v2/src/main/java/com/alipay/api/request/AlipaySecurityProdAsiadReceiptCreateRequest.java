@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.asiad.receipt.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:51:56
+ * @since 1.0, 2023-05-30 21:16:50
  */
 public class AlipaySecurityProdAsiadReceiptCreateRequest implements AlipayRequest<AlipaySecurityProdAsiadReceiptCreateResponse> {
 

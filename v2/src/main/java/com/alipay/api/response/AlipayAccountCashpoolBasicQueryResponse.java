@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.cashpool.basic.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:32:33
+ * @since 1.0, 2023-05-31 03:29:46
  */
 public class AlipayAccountCashpoolBasicQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3311563893317687543L;
+	private static final long serialVersionUID = 1785762452737657856L;
 
 	/** 
 	 * 资金池总数量

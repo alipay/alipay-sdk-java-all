@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.common.grouporder.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:06:53
+ * @since 1.0, 2023-05-31 01:26:50
  */
 public class AlipayInsSceneCommonGrouporderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3828591914547696926L;
+	private static final long serialVersionUID = 5777334581668875557L;
 
 	/** 
 	 * 批次信息列表

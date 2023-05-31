@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.sw.library.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:26:51
+ * @since 1.0, 2023-05-30 21:16:58
  */
 public class AlipayIserviceCcmSwLibraryDeleteRequest implements AlipayRequest<AlipayIserviceCcmSwLibraryDeleteResponse> {
 

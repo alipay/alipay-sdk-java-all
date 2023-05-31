@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.ecny.trade.qrcodecreate response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:42:56
+ * @since 1.0, 2023-05-31 07:26:00
  */
 public class MybankEcnyTradeQrcodecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8342312424517374361L;
+	private static final long serialVersionUID = 2116326976592963849L;
 
 	/** 
 	 * 商户ID

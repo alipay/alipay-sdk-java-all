@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.invoice.istdwaybill.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:52:19
+ * @since 1.0, 2023-05-31 03:02:40
  */
 public class AlipayCommerceLogisticsInvoiceIstdwaybillCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3199714664648686251L;
+	private static final long serialVersionUID = 4552141934394355788L;
 
 	/** 
 	 * 开票金额

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.remit.withdraw.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:19:08
+ * @since 1.0, 2023-05-31 10:29:37
  */
 public class AlipayOverseasRemitWithdrawNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4486865932637925182L;
+	private static final long serialVersionUID = 5481958841781938922L;
 
 	/** 
 	 * JSON map

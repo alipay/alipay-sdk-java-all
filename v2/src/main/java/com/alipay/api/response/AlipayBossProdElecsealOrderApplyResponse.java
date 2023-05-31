@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.elecseal.order.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:16:53
+ * @since 1.0, 2023-05-31 19:34:46
  */
 public class AlipayBossProdElecsealOrderApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6211642443564394417L;
+	private static final long serialVersionUID = 6514727619834491495L;
 
 	/** 
 	 * 法务中台电子用印流水号

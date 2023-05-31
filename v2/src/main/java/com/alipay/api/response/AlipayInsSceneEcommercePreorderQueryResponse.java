@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.ecommerce.preorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:55:41
+ * @since 1.0, 2023-05-31 08:36:19
  */
 public class AlipayInsSceneEcommercePreorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3325588551382191362L;
+	private static final long serialVersionUID = 6793895533539323434L;
 
 	/** 
 	 * 预下单列表

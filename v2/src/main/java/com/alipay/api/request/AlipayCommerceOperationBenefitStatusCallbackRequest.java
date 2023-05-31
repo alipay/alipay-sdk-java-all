@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.benefit.status.callback request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:56:48
+ * @since 1.0, 2023-05-31 01:16:54
  */
 public class AlipayCommerceOperationBenefitStatusCallbackRequest implements AlipayRequest<AlipayCommerceOperationBenefitStatusCallbackResponse> {
 

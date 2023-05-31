@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.jobworth.authentication.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 19:11:58
+ * @since 1.0, 2023-05-31 21:16:57
  */
 public class ZhimaCustomerJobworthAuthenticationQueryRequest implements AlipayRequest<ZhimaCustomerJobworthAuthenticationQueryResponse> {
 

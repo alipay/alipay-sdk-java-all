@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.ededuct.forecast.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:39:28
+ * @since 1.0, 2023-05-31 06:01:00
  */
 public class AlipayEbppEdeductForecastQueryRequest implements AlipayRequest<AlipayEbppEdeductForecastQueryResponse> {
 

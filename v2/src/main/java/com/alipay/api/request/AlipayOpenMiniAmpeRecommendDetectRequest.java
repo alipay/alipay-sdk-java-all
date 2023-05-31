@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.ampe.recommend.detect request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:32:34
+ * @since 1.0, 2023-05-31 01:28:14
  */
 public class AlipayOpenMiniAmpeRecommendDetectRequest implements AlipayRequest<AlipayOpenMiniAmpeRecommendDetectResponse> {
 

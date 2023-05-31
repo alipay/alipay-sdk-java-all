@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.payment.trade.qrcode.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 13:56:58
+ * @since 1.0, 2023-05-31 21:57:22
  */
 public class MybankPaymentTradeQrcodeDeleteRequest implements AlipayRequest<MybankPaymentTradeQrcodeDeleteResponse> {
 

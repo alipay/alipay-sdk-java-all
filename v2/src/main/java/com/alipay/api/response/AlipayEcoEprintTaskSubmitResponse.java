@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.eprint.task.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:10:11
+ * @since 1.0, 2023-05-30 19:54:40
  */
 public class AlipayEcoEprintTaskSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3277466818682124345L;
+	private static final long serialVersionUID = 3421118856873264783L;
 
 	/** 
 	 * 云平台订单ID

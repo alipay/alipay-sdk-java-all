@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机构用户出库
  *
  * @author auto create
- * @since 1.0, 2022-04-11 17:17:09
+ * @since 1.0, 2023-05-31 16:52:51
  */
 public class AlipayOpenIotvspUserDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6182617424372956729L;
+	private static final long serialVersionUID = 7782986271881639861L;
 
 	/**
 	 * ISV的PID
@@ -29,7 +29,14 @@ public class AlipayOpenIotvspUserDeleteModel extends AlipayObject {
 	private String orgOutId;
 
 	/**
-	 * 用户ID列表，单次操作最多100个
+	 * 机构内人员所属的场所，部门场景为必传，比如酒店门禁，需传房间
+	 */
+	@ApiListField("place_name_list")
+	@ApiField("string")
+	private List<String> placeNameList;
+
+	/**
+	 * 用户VID列表，目前仅支持一次出库一人
 	 */
 	@ApiListField("vid_list")
 	@ApiField("string")
@@ -47,6 +54,13 @@ public class AlipayOpenIotvspUserDeleteModel extends AlipayObject {
 	}
 	public void setOrgOutId(String orgOutId) {
 		this.orgOutId = orgOutId;
+	}
+
+	public List<String> getPlaceNameList() {
+		return this.placeNameList;
+	}
+	public void setPlaceNameList(List<String> placeNameList) {
+		this.placeNameList = placeNameList;
 	}
 
 	public List<String> getVidList() {

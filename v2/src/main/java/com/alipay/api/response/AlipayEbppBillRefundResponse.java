@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.bill.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:46:46
+ * @since 1.0, 2023-05-30 22:59:04
  */
 public class AlipayEbppBillRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3347488644365424522L;
+	private static final long serialVersionUID = 6841591327111418448L;
 
 	/** 
 	 * 回传支付宝流水号。

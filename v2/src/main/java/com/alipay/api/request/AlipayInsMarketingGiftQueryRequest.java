@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.marketing.gift.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:41:56
+ * @since 1.0, 2023-05-30 21:47:00
  */
 public class AlipayInsMarketingGiftQueryRequest implements AlipayRequest<AlipayInsMarketingGiftQueryResponse> {
 

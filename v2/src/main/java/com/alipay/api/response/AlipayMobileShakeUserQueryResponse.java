@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.shake.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:51:51
+ * @since 1.0, 2023-05-30 23:56:56
  */
 public class AlipayMobileShakeUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2836812761657784751L;
+	private static final long serialVersionUID = 3463278518391339341L;
 
 	/** 
 	 * 对应的业务信息

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.underwrite.policy.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:40:43
+ * @since 1.0, 2023-05-31 00:45:58
  */
 public class AlipayInsUnderwritePolicyQueryRequest implements AlipayRequest<AlipayInsUnderwritePolicyQueryResponse> {
 

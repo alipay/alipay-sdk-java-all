@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.bs.enroll.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:56:56
+ * @since 1.0, 2023-05-31 10:01:51
  */
 public class AlipayCommerceOperationBsEnrollSubmitRequest implements AlipayRequest<AlipayCommerceOperationBsEnrollSubmitResponse> {
 

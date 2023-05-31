@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.violation.violationevent.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 17:42:18
+ * @since 1.0, 2023-05-30 23:47:20
  */
 public class AlipayOpenViolationViolationeventBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8195879556659767352L;
+	private static final long serialVersionUID = 4765679379541273336L;
 
 	/** 
 	 * 违规记录列表

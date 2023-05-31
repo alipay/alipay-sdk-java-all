@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.delivery.fatigue.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-22 16:31:57
+ * @since 1.0, 2023-05-31 08:16:57
  */
 public class AntfortuneStockDeliveryFatigueSyncRequest implements AlipayRequest<AntfortuneStockDeliveryFatigueSyncResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.financialplatform.budget.bbaremainamount.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:56:49
+ * @since 1.0, 2023-05-30 21:16:50
  */
 public class MybankFinancialplatformBudgetBbaremainamountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4761913839615634429L;
+	private static final long serialVersionUID = 6435746355416868152L;
 
 	/** 
 	 * BBA可用、剩余金额

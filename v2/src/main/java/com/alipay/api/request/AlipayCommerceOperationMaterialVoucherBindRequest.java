@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.material.voucher.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:40:18
+ * @since 1.0, 2023-05-31 05:07:45
  */
 public class AlipayCommerceOperationMaterialVoucherBindRequest implements AlipayRequest<AlipayCommerceOperationMaterialVoucherBindResponse> {
 

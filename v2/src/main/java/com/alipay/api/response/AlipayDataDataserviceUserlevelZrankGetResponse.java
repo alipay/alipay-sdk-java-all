@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.userlevel.zrank.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:27:10
+ * @since 1.0, 2023-05-31 02:14:07
  */
 public class AlipayDataDataserviceUserlevelZrankGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7843234955466342564L;
+	private static final long serialVersionUID = 7694294933751913387L;
 
 	/** 
 	 * 活跃高价值用户返回

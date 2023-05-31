@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.coupon.wufu.card.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:31:56
+ * @since 1.0, 2023-05-31 07:56:58
  */
 public class AlipayFundCouponWufuCardApplyRequest implements AlipayRequest<AlipayFundCouponWufuCardApplyResponse> {
 

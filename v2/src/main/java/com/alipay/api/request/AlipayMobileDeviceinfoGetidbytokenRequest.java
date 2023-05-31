@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.deviceinfo.getidbytoken request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 13:56:31
+ * @since 1.0, 2023-05-31 04:52:24
  */
 public class AlipayMobileDeviceinfoGetidbytokenRequest implements AlipayRequest<AlipayMobileDeviceinfoGetidbytokenResponse> {
 

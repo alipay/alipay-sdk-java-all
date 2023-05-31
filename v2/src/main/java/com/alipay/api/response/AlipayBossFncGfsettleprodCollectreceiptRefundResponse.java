@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.collectreceipt.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-09 11:41:56
+ * @since 1.0, 2023-05-31 06:31:49
  */
 public class AlipayBossFncGfsettleprodCollectreceiptRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8813863418834362587L;
+	private static final long serialVersionUID = 5322249281668554955L;
 
 	
 

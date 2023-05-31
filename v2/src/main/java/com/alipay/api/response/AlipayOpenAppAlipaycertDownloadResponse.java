@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.alipaycert.download response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:49:51
+ * @since 1.0, 2023-05-31 06:12:07
  */
 public class AlipayOpenAppAlipaycertDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4257595573824953478L;
+	private static final long serialVersionUID = 1643679137862172848L;
 
 	/** 
 	 * 公钥证书Base64后的字符串

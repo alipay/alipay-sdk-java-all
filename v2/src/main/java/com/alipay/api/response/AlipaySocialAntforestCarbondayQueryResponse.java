@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.carbonday.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:06:51
+ * @since 1.0, 2023-05-31 05:36:56
  */
 public class AlipaySocialAntforestCarbondayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5361763958974888459L;
+	private static final long serialVersionUID = 8128372927173994191L;
 
 	/** 
 	 * 日账单数据

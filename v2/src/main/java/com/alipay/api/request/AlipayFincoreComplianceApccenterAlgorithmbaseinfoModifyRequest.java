@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.apccenter.algorithmbaseinfo.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:47:38
+ * @since 1.0, 2023-05-31 01:42:11
  */
 public class AlipayFincoreComplianceApccenterAlgorithmbaseinfoModifyRequest implements AlipayRequest<AlipayFincoreComplianceApccenterAlgorithmbaseinfoModifyResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlegalchain.ndapress.urge response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:26:49
+ * @since 1.0, 2023-05-31 06:21:58
  */
 public class AlipayBossProdAntlegalchainNdapressUrgeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4721192516375769587L;
+	private static final long serialVersionUID = 1262841297226242858L;
 
 	/** 
 	 * 催签结果，true表示催签成功，异常表示催签失败

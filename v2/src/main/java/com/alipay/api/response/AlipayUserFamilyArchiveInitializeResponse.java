@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.family.archive.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:48:38
+ * @since 1.0, 2023-05-31 20:40:20
  */
 public class AlipayUserFamilyArchiveInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2194271933685873588L;
+	private static final long serialVersionUID = 1617965381579412697L;
 
 	/** 
 	 * 家人信息档案(选人授权)组件唤起地址

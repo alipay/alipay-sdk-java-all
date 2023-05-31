@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.qrcode.payresult.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-18 21:36:49
+ * @since 1.0, 2023-05-31 06:41:50
  */
 public class MybankPaymentTradeQrcodePayresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3611479653152499291L;
+	private static final long serialVersionUID = 8648738692634686727L;
 
 	/** 
 	 * 受理时间

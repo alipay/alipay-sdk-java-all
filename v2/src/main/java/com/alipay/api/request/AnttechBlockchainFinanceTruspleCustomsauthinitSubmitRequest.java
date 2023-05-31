@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.trusple.customsauthinit.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:56:51
+ * @since 1.0, 2023-05-31 21:02:04
  */
 public class AnttechBlockchainFinanceTruspleCustomsauthinitSubmitRequest implements AlipayRequest<AnttechBlockchainFinanceTruspleCustomsauthinitSubmitResponse> {
 

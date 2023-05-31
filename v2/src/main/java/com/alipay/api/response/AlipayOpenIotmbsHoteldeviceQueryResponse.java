@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.hoteldevice.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:08:50
+ * @since 1.0, 2023-05-30 23:11:17
  */
 public class AlipayOpenIotmbsHoteldeviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3569359585824488185L;
+	private static final long serialVersionUID = 8271243583729632426L;
 
 	/** 
 	 * 设备绑定的人脸数据列表

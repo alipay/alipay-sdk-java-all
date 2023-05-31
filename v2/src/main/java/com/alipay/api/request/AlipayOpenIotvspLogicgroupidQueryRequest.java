@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotvsp.logicgroupid.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:25:00
+ * @since 1.0, 2023-05-31 00:29:15
  */
 public class AlipayOpenIotvspLogicgroupidQueryRequest implements AlipayRequest<AlipayOpenIotvspLogicgroupidQueryResponse> {
 

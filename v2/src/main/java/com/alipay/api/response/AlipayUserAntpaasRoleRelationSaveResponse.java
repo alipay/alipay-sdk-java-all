@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antpaas.role.relation.save response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:15:50
+ * @since 1.0, 2023-05-31 10:21:34
  */
 public class AlipayUserAntpaasRoleRelationSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7727212976657958724L;
+	private static final long serialVersionUID = 1865698244138281983L;
 
 	
 

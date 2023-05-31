@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.eco.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:01:54
+ * @since 1.0, 2023-05-30 23:36:49
  */
 public class AlipayCommerceIotDeviceEcoUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3189737734926932689L;
+	private static final long serialVersionUID = 2888458871687568453L;
 
 	
 

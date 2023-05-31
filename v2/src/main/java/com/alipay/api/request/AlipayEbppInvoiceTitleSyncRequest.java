@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.title.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:16:51
+ * @since 1.0, 2023-05-31 23:01:53
  */
 public class AlipayEbppInvoiceTitleSyncRequest implements AlipayRequest<AlipayEbppInvoiceTitleSyncResponse> {
 

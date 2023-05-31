@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.financeinfo.share response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:23:07
+ * @since 1.0, 2023-05-31 22:35:46
  */
 public class AlipayUserFinanceinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3297794997973566198L;
+	private static final long serialVersionUID = 3695277478132317558L;
 
 	/** 
 	 * 查询出的信用卡列表，包含0到多张卡，每张卡对应一组信息，包含卡号（已脱敏）和开户行代码

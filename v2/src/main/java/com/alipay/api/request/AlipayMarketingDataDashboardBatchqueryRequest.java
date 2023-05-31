@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.data.dashboard.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:27:53
+ * @since 1.0, 2023-05-31 20:53:01
  */
 public class AlipayMarketingDataDashboardBatchqueryRequest implements AlipayRequest<AlipayMarketingDataDashboardBatchqueryResponse> {
 

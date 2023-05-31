@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.data.databus.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:54:36
+ * @since 1.0, 2023-05-31 02:03:08
  */
 public class AlipaySecurityDataDatabusSendRequest implements AlipayRequest<AlipaySecurityDataDatabusSendResponse> {
 

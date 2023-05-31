@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.message.label.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:52:13
+ * @since 1.0, 2023-05-31 22:36:50
  */
 public class AlipayOpenPublicMessageLabelSendRequest implements AlipayRequest<AlipayOpenPublicMessageLabelSendResponse> {
 

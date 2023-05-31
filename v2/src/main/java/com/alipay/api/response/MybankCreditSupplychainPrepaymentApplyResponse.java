@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.prepayment.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:26:30
+ * @since 1.0, 2023-05-31 04:16:47
  */
 public class MybankCreditSupplychainPrepaymentApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5848137595586214885L;
+	private static final long serialVersionUID = 6157588596492222458L;
 
 	/** 
 	 * 预付申请单编号。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.qualified.investor.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-12 10:06:49
+ * @since 1.0, 2023-05-31 21:56:55
  */
 public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3776417928382698633L;
+	private static final long serialVersionUID = 2565725399332472789L;
 
 	/** 
 	 * 签约协议号
@@ -53,6 +53,12 @@ public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayRespons
 	@ApiListField("material_list")
 	@ApiField("investor_material_info")
 	private List<InvestorMaterialInfo> materialList;
+
+	/** 
+	 * 材料类型
+	 */
+	@ApiField("material_type")
+	private String materialType;
 
 	/** 
 	 * 码商收入金额，单位元；精度到分
@@ -106,6 +112,13 @@ public class AntfortuneStockQualifiedInvestorApplyResponse extends AlipayRespons
 	}
 	public List<InvestorMaterialInfo> getMaterialList( ) {
 		return this.materialList;
+	}
+
+	public void setMaterialType(String materialType) {
+		this.materialType = materialType;
+	}
+	public String getMaterialType( ) {
+		return this.materialType;
 	}
 
 	public void setTotalIncome(String totalIncome) {

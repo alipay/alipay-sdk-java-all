@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.gamemarketing.benefit.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:00:06
+ * @since 1.0, 2023-05-31 20:12:13
  */
 public class AlipayCommerceOperationGamemarketingBenefitApplyRequest implements AlipayRequest<AlipayCommerceOperationGamemarketingBenefitApplyResponse> {
 

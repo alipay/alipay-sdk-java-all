@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.loan.result.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:19:14
+ * @since 1.0, 2023-05-31 02:04:26
  */
 public class AlipayPcreditLoanLoanResultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5147289849151253296L;
+	private static final long serialVersionUID = 3648995591694787226L;
 
 	/** 
 	 * 贷款申请状态，取值{SUBMITTED, LENDING, USING, OVD, CLEAR, FAILED}：SUBMITTED-已提交; LENDING-放款中; USING-使用中; OVD-已逾期; CLEAR-已结清; FAILED-已失败

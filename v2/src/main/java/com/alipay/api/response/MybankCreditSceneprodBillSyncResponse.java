@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.bill.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:48:19
+ * @since 1.0, 2023-05-30 23:13:04
  */
 public class MybankCreditSceneprodBillSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5352879937718832375L;
+	private static final long serialVersionUID = 6531972769311735582L;
 
 	/** 
 	 * 网商traceId，便于查询日志内容

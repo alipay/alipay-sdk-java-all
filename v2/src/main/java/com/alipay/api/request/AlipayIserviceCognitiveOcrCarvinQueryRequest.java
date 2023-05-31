@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.cognitive.ocr.carvin.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:29:00
+ * @since 1.0, 2023-05-31 03:36:23
  */
 public class AlipayIserviceCognitiveOcrCarvinQueryRequest implements AlipayRequest<AlipayIserviceCognitiveOcrCarvinQueryResponse> {
 

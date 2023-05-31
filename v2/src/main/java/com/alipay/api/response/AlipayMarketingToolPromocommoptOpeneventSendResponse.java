@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.promocommopt.openevent.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:21:57
+ * @since 1.0, 2023-05-31 05:51:58
  */
 public class AlipayMarketingToolPromocommoptOpeneventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1398979555712558129L;
+	private static final long serialVersionUID = 3744528254781344798L;
 
 	
 

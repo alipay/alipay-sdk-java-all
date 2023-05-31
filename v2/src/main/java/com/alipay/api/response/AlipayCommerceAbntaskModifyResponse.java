@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.abntask.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:22:37
+ * @since 1.0, 2023-05-31 02:01:05
  */
 public class AlipayCommerceAbntaskModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4547784914475855671L;
+	private static final long serialVersionUID = 6734867215373722384L;
 
 	/** 
 	 * 操作失败任务数量

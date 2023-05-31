@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.lotterymall.exchangerecordstatus.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:58:55
+ * @since 1.0, 2023-05-31 04:32:18
  */
 public class AlipayOpenLotterymallExchangerecordstatusSyncRequest implements AlipayRequest<AlipayOpenLotterymallExchangerecordstatusSyncResponse> {
 

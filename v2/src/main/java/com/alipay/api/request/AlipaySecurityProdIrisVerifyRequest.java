@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.iris.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:41:30
+ * @since 1.0, 2023-05-30 22:24:50
  */
 public class AlipaySecurityProdIrisVerifyRequest implements AlipayRequest<AlipaySecurityProdIrisVerifyResponse> {
 

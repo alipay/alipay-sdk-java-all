@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.seller.activity.unsign request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:41:38
+ * @since 1.0, 2023-05-31 07:30:59
  */
 public class AlipayInsSceneSellerActivityUnsignRequest implements AlipayRequest<AlipayInsSceneSellerActivityUnsignResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.content.contentcount.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:37:18
+ * @since 1.0, 2023-05-31 20:11:19
  */
 public class KoubeiContentContentcountSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7619222585432816533L;
+	private static final long serialVersionUID = 1225662244911558767L;
 
 	/** 
 	 * 口碑内容的唯一id

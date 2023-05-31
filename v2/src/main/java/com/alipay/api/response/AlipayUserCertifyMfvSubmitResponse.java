@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.mfv.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:07:56
+ * @since 1.0, 2023-05-30 23:04:31
  */
 public class AlipayUserCertifyMfvSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2692833174252932348L;
+	private static final long serialVersionUID = 2188767655795148417L;
 
 	/** 
 	 * extend_map是核验的扩展数据，根据不同的scene_id，返回的数据不同。

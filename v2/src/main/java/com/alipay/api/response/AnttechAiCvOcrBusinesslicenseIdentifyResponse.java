@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.ocr.businesslicense.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:49:28
+ * @since 1.0, 2023-05-30 19:46:09
  */
 public class AnttechAiCvOcrBusinesslicenseIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8452818386628521246L;
+	private static final long serialVersionUID = 1529452256635477859L;
 
 	/** 
 	 * 算法错误信息

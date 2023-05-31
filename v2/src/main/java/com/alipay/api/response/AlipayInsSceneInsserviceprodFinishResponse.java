@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.insserviceprod.finish response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:15:52
+ * @since 1.0, 2023-05-31 09:49:11
  */
 public class AlipayInsSceneInsserviceprodFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4191729914444655839L;
+	private static final long serialVersionUID = 2799456889269276445L;
 
 	
 

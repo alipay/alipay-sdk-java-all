@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.hmcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:46:16
+ * @since 1.0, 2023-05-31 08:17:12
  */
 public class AlipayOpenMiniHmcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2454497449615773978L;
+	private static final long serialVersionUID = 1736522319662229482L;
 
 	/** 
 	 * 异形码图片链接地址

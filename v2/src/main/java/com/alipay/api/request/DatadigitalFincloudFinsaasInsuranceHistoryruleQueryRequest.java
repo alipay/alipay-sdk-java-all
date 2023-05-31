@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.insurance.historyrule.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-18 19:56:48
+ * @since 1.0, 2023-05-31 03:41:54
  */
 public class DatadigitalFincloudFinsaasInsuranceHistoryruleQueryRequest implements AlipayRequest<DatadigitalFincloudFinsaasInsuranceHistoryruleQueryResponse> {
 

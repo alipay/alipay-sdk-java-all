@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.daf.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:08:43
+ * @since 1.0, 2023-05-31 04:03:48
  */
 public class AlipayOpenDafBatchqueryRequest implements AlipayRequest<AlipayOpenDafBatchqueryResponse> {
 

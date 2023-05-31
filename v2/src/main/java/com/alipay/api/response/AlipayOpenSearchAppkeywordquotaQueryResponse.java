@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.appkeywordquota.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 19:16:52
+ * @since 1.0, 2023-05-31 22:41:59
  */
 public class AlipayOpenSearchAppkeywordquotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2412634226343394168L;
+	private static final long serialVersionUID = 4612944541427259268L;
 
 	/** 
 	 * 剩余可配置额度数量，返回具体数字

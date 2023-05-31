@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.settleorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:57:00
+ * @since 1.0, 2023-05-31 04:30:44
  */
 public class AlipayBossFncGfsettleprodSettleorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5876662268214289387L;
+	private static final long serialVersionUID = 6793376644336328632L;
 
 	/** 
 	 * 结果

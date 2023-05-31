@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.isv.operation.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:46:52
+ * @since 1.0, 2023-05-31 21:30:58
  */
 public class AlipayOpenSpIsvOperationSyncRequest implements AlipayRequest<AlipayOpenSpIsvOperationSyncResponse> {
 

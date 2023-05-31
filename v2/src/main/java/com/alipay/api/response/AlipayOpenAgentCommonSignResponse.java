@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.common.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-17 17:53:44
+ * @since 1.0, 2023-05-30 19:56:48
  */
 public class AlipayOpenAgentCommonSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3372154247786621534L;
+	private static final long serialVersionUID = 3571657742155163267L;
 
 	
 

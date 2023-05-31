@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.venue.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:02:47
+ * @since 1.0, 2023-05-30 21:42:45
  */
 public class AlipayCommerceSportsVenueOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8236343677236272595L;
+	private static final long serialVersionUID = 8887574814433238786L;
 
 	/** 
 	 * 操作描述

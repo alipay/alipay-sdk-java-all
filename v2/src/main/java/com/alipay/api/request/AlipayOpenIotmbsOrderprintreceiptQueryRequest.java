@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.orderprintreceipt.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:16:57
+ * @since 1.0, 2023-05-31 09:56:51
  */
 public class AlipayOpenIotmbsOrderprintreceiptQueryRequest implements AlipayRequest<AlipayOpenIotmbsOrderprintreceiptQueryResponse> {
 

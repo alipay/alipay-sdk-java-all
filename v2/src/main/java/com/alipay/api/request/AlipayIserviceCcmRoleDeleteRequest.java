@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.role.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:55:48
+ * @since 1.0, 2023-05-31 02:27:57
  */
 public class AlipayIserviceCcmRoleDeleteRequest implements AlipayRequest<AlipayIserviceCcmRoleDeleteResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.expensecontrol.costassert.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:31:57
+ * @since 1.0, 2023-05-31 22:31:57
  */
 public class AlipayEbppInvoiceExpensecontrolCostassertQueryRequest implements AlipayRequest<AlipayEbppInvoiceExpensecontrolCostassertQueryResponse> {
 

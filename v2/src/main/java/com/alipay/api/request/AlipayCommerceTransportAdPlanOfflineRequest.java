@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.ad.plan.offline request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:58:42
+ * @since 1.0, 2023-05-30 21:58:35
  */
 public class AlipayCommerceTransportAdPlanOfflineRequest implements AlipayRequest<AlipayCommerceTransportAdPlanOfflineResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.ad.user.match request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:36:51
+ * @since 1.0, 2023-05-31 09:19:42
  */
 public class AlipayCommerceTransportAdUserMatchRequest implements AlipayRequest<AlipayCommerceTransportAdUserMatchResponse> {
 

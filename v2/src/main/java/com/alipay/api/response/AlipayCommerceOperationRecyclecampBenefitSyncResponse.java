@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.recyclecamp.benefit.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:32:28
+ * @since 1.0, 2023-05-30 19:59:05
  */
 public class AlipayCommerceOperationRecyclecampBenefitSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4363385711827312131L;
+	private static final long serialVersionUID = 5537854298389296979L;
 
 	
 

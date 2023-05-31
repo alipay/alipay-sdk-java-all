@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.community.notice.invalid request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:06:46
+ * @since 1.0, 2023-05-31 07:46:56
  */
 public class AlipayEbppCommunityNoticeInvalidRequest implements AlipayRequest<AlipayEbppCommunityNoticeInvalidResponse> {
 

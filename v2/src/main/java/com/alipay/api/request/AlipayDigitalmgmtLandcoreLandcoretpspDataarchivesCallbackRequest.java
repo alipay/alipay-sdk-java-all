@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.landcore.landcoretpsp.dataarchives.callback request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:25:52
+ * @since 1.0, 2023-05-30 20:17:57
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspDataarchivesCallbackRequest implements AlipayRequest<AlipayDigitalmgmtLandcoreLandcoretpspDataarchivesCallbackResponse> {
 

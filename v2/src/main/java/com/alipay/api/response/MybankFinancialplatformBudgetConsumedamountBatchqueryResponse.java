@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.financialplatform.budget.consumedamount.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:16:57
+ * @since 1.0, 2023-05-31 21:01:59
  */
 public class MybankFinancialplatformBudgetConsumedamountBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4433774718354449934L;
+	private static final long serialVersionUID = 6871883234824553286L;
 
 	/** 
 	 * 根据BizUkIds查询出的占用情况

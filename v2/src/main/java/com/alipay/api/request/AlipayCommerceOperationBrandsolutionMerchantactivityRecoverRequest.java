@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.brandsolution.merchantactivity.recover request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:01:29
+ * @since 1.0, 2023-05-31 08:04:11
  */
 public class AlipayCommerceOperationBrandsolutionMerchantactivityRecoverRequest implements AlipayRequest<AlipayCommerceOperationBrandsolutionMerchantactivityRecoverResponse> {
 

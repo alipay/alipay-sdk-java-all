@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antstarship.home.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:36:48
+ * @since 1.0, 2023-05-31 02:21:55
  */
 public class AlipayUserAntstarshipHomeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4221239496164257285L;
+	private static final long serialVersionUID = 7742122197951574678L;
 
 	/** 
 	 * 活动结束时间

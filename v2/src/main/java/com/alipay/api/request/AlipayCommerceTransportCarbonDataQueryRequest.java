@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.carbon.data.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:26:56
+ * @since 1.0, 2023-05-31 01:21:59
  */
 public class AlipayCommerceTransportCarbonDataQueryRequest implements AlipayRequest<AlipayCommerceTransportCarbonDataQueryResponse> {
 

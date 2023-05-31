@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.ashield.hardeningtask.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-25 16:41:57
+ * @since 1.0, 2023-05-30 21:26:56
  */
 public class AlipaySecurityProdAshieldHardeningtaskSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4538473521363376689L;
+	private static final long serialVersionUID = 2434773847589112181L;
 
 	/** 
 	 * 请求id

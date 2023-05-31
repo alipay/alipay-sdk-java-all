@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.isv.prodmode.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:26:58
+ * @since 1.0, 2023-05-31 07:28:23
  */
 public class AlipayEbppIsvProdmodeCreateRequest implements AlipayRequest<AlipayEbppIsvProdmodeCreateResponse> {
 

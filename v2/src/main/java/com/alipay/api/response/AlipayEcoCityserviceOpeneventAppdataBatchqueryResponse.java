@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.openevent.appdata.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:56:46
+ * @since 1.0, 2023-05-31 03:01:54
  */
 public class AlipayEcoCityserviceOpeneventAppdataBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8221148974925881558L;
+	private static final long serialVersionUID = 5294577148957128426L;
 
 	/** 
 	 * 符合查询条件的数据的总条数

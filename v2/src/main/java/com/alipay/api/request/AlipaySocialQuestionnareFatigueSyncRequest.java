@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.questionnare.fatigue.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:16:56
+ * @since 1.0, 2023-05-31 21:46:57
  */
 public class AlipaySocialQuestionnareFatigueSyncRequest implements AlipayRequest<AlipaySocialQuestionnareFatigueSyncResponse> {
 

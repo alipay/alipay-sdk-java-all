@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.order.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:15:51
+ * @since 1.0, 2023-05-30 23:57:57
  */
 public class AlipayBossOrderApplyRequest implements AlipayRequest<AlipayBossOrderApplyResponse> {
 

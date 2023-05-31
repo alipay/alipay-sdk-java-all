@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.dum.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 10:12:00
+ * @since 1.0, 2023-05-31 00:51:51
  */
 public class AlipaySecurityDumQueryRequest implements AlipayRequest<AlipaySecurityDumQueryResponse> {
 

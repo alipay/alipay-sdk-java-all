@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.tfjs.model.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:02:13
+ * @since 1.0, 2023-05-31 21:46:55
  */
 public class AnttechAiCvTfjsModelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3464961652489673193L;
+	private static final long serialVersionUID = 8895635187125741255L;
 
 	/** 
 	 * 已废弃

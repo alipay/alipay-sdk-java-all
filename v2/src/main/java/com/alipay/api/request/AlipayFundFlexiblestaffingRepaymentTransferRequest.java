@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.flexiblestaffing.repayment.transfer request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 11:01:48
+ * @since 1.0, 2023-05-30 19:31:56
  */
 public class AlipayFundFlexiblestaffingRepaymentTransferRequest implements AlipayRequest<AlipayFundFlexiblestaffingRepaymentTransferResponse> {
 

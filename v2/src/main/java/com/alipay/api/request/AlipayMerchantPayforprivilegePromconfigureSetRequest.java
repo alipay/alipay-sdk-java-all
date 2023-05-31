@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.payforprivilege.promconfigure.set request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:27:02
+ * @since 1.0, 2023-05-31 08:11:04
  */
 public class AlipayMerchantPayforprivilegePromconfigureSetRequest implements AlipayRequest<AlipayMerchantPayforprivilegePromconfigureSetResponse> {
 

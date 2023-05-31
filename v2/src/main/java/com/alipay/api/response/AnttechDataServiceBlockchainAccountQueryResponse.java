@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.data.service.blockchain.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:47:11
+ * @since 1.0, 2023-05-30 20:24:09
  */
 public class AnttechDataServiceBlockchainAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6593194487429779879L;
+	private static final long serialVersionUID = 2128268771786783313L;
 
 	/** 
 	 * 账户列表

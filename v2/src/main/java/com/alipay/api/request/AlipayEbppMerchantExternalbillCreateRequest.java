@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.merchant.externalbill.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:03:48
+ * @since 1.0, 2023-05-31 22:07:34
  */
 public class AlipayEbppMerchantExternalbillCreateRequest implements AlipayRequest<AlipayEbppMerchantExternalbillCreateResponse> {
 

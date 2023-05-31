@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.property.auth.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:46:33
+ * @since 1.0, 2023-05-31 08:37:38
  */
 public class AlipayOpenAppPropertyAuthSyncRequest implements AlipayRequest<AlipayOpenAppPropertyAuthSyncResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.hotelroom.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:01:59
+ * @since 1.0, 2023-05-31 06:01:59
  */
 public class AlipayOpenIotmbsHotelroomModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7522914199187196794L;
+	private static final long serialVersionUID = 3535766249815216697L;
 
 	
 

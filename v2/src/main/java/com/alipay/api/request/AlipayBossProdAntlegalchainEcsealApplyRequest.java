@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.antlegalchain.ecseal.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:37:18
+ * @since 1.0, 2023-05-31 01:37:18
  */
 public class AlipayBossProdAntlegalchainEcsealApplyRequest implements AlipayRequest<AlipayBossProdAntlegalchainEcsealApplyResponse> {
 

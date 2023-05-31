@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.billdetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:44:37
+ * @since 1.0, 2023-05-31 22:30:04
  */
 public class MybankCreditSupplychainWfBilldetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3547945823626156353L;
+	private static final long serialVersionUID = 3374725493594678252L;
 
 	/** 
 	 * 账单明细集合

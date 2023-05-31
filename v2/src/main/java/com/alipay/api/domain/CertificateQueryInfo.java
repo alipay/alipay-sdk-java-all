@@ -9,14 +9,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证信息
  *
  * @author auto create
- * @since 1.0, 2023-05-30 12:00:47
+ * @since 1.0, 2023-05-30 23:34:37
  */
 public class CertificateQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8265385928483421937L;
+	private static final long serialVersionUID = 2158343195491899764L;
 
 	/**
-	 * 凭证码
+	 * 用户凭证id
+	 */
+	@ApiField("certificate_id")
+	private String certificateId;
+
+	/**
+	 * 三方码凭证券码。
 	 */
 	@ApiField("code")
 	private String code;
@@ -44,6 +50,13 @@ public class CertificateQueryInfo extends AlipayObject {
 	 */
 	@ApiField("valid_end_time")
 	private Date validEndTime;
+
+	public String getCertificateId() {
+		return this.certificateId;
+	}
+	public void setCertificateId(String certificateId) {
+		this.certificateId = certificateId;
+	}
 
 	public String getCode() {
 		return this.code;

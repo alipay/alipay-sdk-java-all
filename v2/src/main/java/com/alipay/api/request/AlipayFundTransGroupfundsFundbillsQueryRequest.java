@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.groupfunds.fundbills.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:15:02
+ * @since 1.0, 2023-05-31 09:36:29
  */
 public class AlipayFundTransGroupfundsFundbillsQueryRequest implements AlipayRequest<AlipayFundTransGroupfundsFundbillsQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.insurance.instancerule.save response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-18 19:56:48
+ * @since 1.0, 2023-05-31 03:41:53
  */
 public class DatadigitalFincloudFinsaasInsuranceInstanceruleSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6776116418187866154L;
+	private static final long serialVersionUID = 6159783964624828884L;
 
 	/** 
 	 * 规则保存结果

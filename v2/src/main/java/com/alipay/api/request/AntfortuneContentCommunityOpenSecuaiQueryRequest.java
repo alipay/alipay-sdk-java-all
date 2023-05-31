@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.content.community.open.secuai.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:59:49
+ * @since 1.0, 2023-05-30 20:27:37
  */
 public class AntfortuneContentCommunityOpenSecuaiQueryRequest implements AlipayRequest<AntfortuneContentCommunityOpenSecuaiQueryResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.zdataassets.metadata response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:19:13
+ * @since 1.0, 2023-05-31 00:49:23
  */
 public class AlipayZdataassetsMetadataResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6126355479695229936L;
+	private static final long serialVersionUID = 4571827558499362838L;
 
 	/** 
 	 * 用户标签集合

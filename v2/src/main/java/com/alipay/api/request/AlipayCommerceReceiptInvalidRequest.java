@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.receipt.invalid request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:31:48
+ * @since 1.0, 2023-05-30 23:11:49
  */
 public class AlipayCommerceReceiptInvalidRequest implements AlipayRequest<AlipayCommerceReceiptInvalidResponse> {
 

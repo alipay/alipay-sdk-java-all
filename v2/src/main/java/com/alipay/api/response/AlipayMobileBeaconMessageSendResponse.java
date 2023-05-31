@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.beacon.message.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:45:50
+ * @since 1.0, 2023-05-31 04:48:23
  */
 public class AlipayMobileBeaconMessageSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6355354719883683575L;
+	private static final long serialVersionUID = 5625348398975778612L;
 
 	/** 
 	 * 操作返回码

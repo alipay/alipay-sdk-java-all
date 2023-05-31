@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.prizepool.prize.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:13:44
+ * @since 1.0, 2023-05-31 05:46:41
  */
 public class AlipayMarketingCampaignPrizepoolPrizeDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6621171629271968418L;
+	private static final long serialVersionUID = 1191489852795594176L;
 
 	
 

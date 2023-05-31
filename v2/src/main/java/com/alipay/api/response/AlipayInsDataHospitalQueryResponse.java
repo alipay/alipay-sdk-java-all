@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.hospital.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:43:02
+ * @since 1.0, 2023-05-31 03:26:10
  */
 public class AlipayInsDataHospitalQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5758476659843437143L;
+	private static final long serialVersionUID = 2431417285595587687L;
 
 	/** 
 	 * 名称相似度Top10的医院

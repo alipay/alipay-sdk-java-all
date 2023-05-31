@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.lottery.region.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:28:29
+ * @since 1.0, 2023-05-31 10:34:09
  */
 public class AlipayOpenLotteryRegionModifyRequest implements AlipayRequest<AlipayOpenLotteryRegionModifyResponse> {
 

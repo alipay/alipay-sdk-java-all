@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.sales.kbasset.stuff.purordersend.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 13:57:24
+ * @since 1.0, 2023-05-31 06:31:14
  */
 public class KoubeiSalesKbassetStuffPurordersendSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1417931385666119826L;
+	private static final long serialVersionUID = 2654642922563863379L;
 
 	/** 
 	 * 供应商同步发货信息及物流信息处理结果列表

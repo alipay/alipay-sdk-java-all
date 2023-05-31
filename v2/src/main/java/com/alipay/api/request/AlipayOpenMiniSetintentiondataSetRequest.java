@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.setintentiondata.set request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:59:51
+ * @since 1.0, 2023-05-31 08:53:25
  */
 public class AlipayOpenMiniSetintentiondataSetRequest implements AlipayRequest<AlipayOpenMiniSetintentiondataSetResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.settle.efund.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 19:06:52
+ * @since 1.0, 2023-05-31 23:11:50
  */
 public class AlipayTradeSettleEfundUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5286478699816945767L;
+	private static final long serialVersionUID = 8262737325568269591L;
 
 	/** 
 	 * 实际解冻金额，单位元

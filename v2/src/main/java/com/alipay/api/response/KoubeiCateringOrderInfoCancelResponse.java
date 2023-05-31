@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.info.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 03:35:01
+ * @since 1.0, 2023-05-30 21:22:58
  */
 public class KoubeiCateringOrderInfoCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5872267148639799966L;
+	private static final long serialVersionUID = 2311982258217676521L;
 
 	/** 
 	 * 是否需要重试,true-需要重试 ,false-不需要重试

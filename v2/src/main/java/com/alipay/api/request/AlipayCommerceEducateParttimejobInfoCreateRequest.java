@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.parttimejob.info.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:46:16
+ * @since 1.0, 2023-05-30 20:16:10
  */
 public class AlipayCommerceEducateParttimejobInfoCreateRequest implements AlipayRequest<AlipayCommerceEducateParttimejobInfoCreateResponse> {
 

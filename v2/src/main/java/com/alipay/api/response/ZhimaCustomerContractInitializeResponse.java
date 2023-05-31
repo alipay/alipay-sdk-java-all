@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.contract.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:41:59
+ * @since 1.0, 2023-05-31 08:37:23
  */
 public class ZhimaCustomerContractInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7427219547242465843L;
+	private static final long serialVersionUID = 6489666548997986827L;
 
 	/** 
 	 * 电子合约号，后续的电子签名流程需要用到

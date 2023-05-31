@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.pool.signadvance.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:42:00
+ * @since 1.0, 2023-05-31 20:18:38
  */
 public class MybankCreditSupplychainPoolSignadvanceSyncRequest implements AlipayRequest<MybankCreditSupplychainPoolSignadvanceSyncResponse> {
 

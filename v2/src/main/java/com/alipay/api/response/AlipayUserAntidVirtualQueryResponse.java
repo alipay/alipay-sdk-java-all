@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antid.virtual.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:27:53
+ * @since 1.0, 2023-05-30 21:19:33
  */
 public class AlipayUserAntidVirtualQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5537351483695784244L;
+	private static final long serialVersionUID = 3439375854465182763L;
 
 	/** 
 	 * 蚂蚁通行证ID

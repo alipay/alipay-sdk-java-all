@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.label.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:41:13
+ * @since 1.0, 2023-05-30 22:48:19
  */
 public class AlipayOpenPublicLifeLabelModifyRequest implements AlipayRequest<AlipayOpenPublicLifeLabelModifyResponse> {
 

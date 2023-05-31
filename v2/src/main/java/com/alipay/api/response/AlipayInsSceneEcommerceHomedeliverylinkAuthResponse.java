@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.ecommerce.homedeliverylink.auth response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:11:54
+ * @since 1.0, 2023-05-31 10:21:55
  */
 public class AlipayInsSceneEcommerceHomedeliverylinkAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1549144591865331533L;
+	private static final long serialVersionUID = 7216543428423595221L;
 
 	/** 
 	 * 行动点描述

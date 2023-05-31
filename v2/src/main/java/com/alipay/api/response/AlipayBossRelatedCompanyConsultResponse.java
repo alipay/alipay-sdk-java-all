@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.related.company.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:26:29
+ * @since 1.0, 2023-05-31 08:01:52
  */
 public class AlipayBossRelatedCompanyConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3194187853339866311L;
+	private static final long serialVersionUID = 1616443113298354268L;
 
 	/** 
 	 * 关联交易公司甄别结果

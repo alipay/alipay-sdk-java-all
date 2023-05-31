@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isresource.userpermissiongrant.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-26 10:41:57
+ * @since 1.0, 2023-05-31 03:41:53
  */
 public class AlipayIserviceIsresourceUserpermissiongrantModifyRequest implements AlipayRequest<AlipayIserviceIsresourceUserpermissiongrantModifyResponse> {
 

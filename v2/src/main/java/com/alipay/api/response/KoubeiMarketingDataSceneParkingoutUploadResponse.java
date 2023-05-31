@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.scene.parkingout.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:28:42
+ * @since 1.0, 2023-05-31 07:00:44
  */
 public class KoubeiMarketingDataSceneParkingoutUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2752151992613638584L;
+	private static final long serialVersionUID = 6151662286688185248L;
 
 	
 

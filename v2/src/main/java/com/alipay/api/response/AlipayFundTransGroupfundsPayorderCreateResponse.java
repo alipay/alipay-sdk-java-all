@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.groupfunds.payorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:01:29
+ * @since 1.0, 2023-05-31 21:53:28
  */
 public class AlipayFundTransGroupfundsPayorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8815598749978174774L;
+	private static final long serialVersionUID = 7715123775752177882L;
 
 	/** 
 	 * 业务类型,客户端透传给收银台。默认值：biz_account_transfer

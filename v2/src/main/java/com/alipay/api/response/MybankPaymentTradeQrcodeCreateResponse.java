@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.qrcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:13:37
+ * @since 1.0, 2023-05-31 06:36:25
  */
 public class MybankPaymentTradeQrcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8222747419735419991L;
+	private static final long serialVersionUID = 7379389946136798354L;
 
 	/** 
 	 * 加密的token

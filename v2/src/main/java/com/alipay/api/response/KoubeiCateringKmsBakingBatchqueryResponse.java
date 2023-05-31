@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.kms.baking.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:39:01
+ * @since 1.0, 2023-05-31 08:47:53
  */
 public class KoubeiCateringKmsBakingBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4713682358732297111L;
+	private static final long serialVersionUID = 2234142429447799165L;
 
 	/** 
 	 * 烘焙商品销量预测

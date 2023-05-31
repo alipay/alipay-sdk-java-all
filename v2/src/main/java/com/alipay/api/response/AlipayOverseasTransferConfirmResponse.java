@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.transfer.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:01:20
+ * @since 1.0, 2023-05-31 22:44:38
  */
 public class AlipayOverseasTransferConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4143619844151223386L;
+	private static final long serialVersionUID = 2113375885895723121L;
 
 	/** 
 	 * {}

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.kds.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:36:35
+ * @since 1.0, 2023-05-31 19:55:22
  */
 public class KoubeiCateringKdsInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7771351554515329742L;
+	private static final long serialVersionUID = 3384734777861886712L;
 
 	/** 
 	 * kds 配置信息列表

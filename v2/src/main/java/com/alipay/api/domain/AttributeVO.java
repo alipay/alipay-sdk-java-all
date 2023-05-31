@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品属性
  *
  * @author auto create
- * @since 1.0, 2023-04-03 16:14:19
+ * @since 1.0, 2023-05-30 19:42:43
  */
 public class AttributeVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3331128446491899187L;
+	private static final long serialVersionUID = 7664615987244795721L;
 
 	/**
 	 * 是否必填属性
 	 */
 	@ApiField("is_required")
 	private Boolean isRequired;
+
+	/**
+	 * 属性key
+	 */
+	@ApiField("key")
+	private String key;
 
 	/**
 	 * 属性值长度区间,上下限,分隔,属性组件类型是input时可用
@@ -54,6 +60,13 @@ public class AttributeVO extends AlipayObject {
 	}
 	public void setIsRequired(Boolean isRequired) {
 		this.isRequired = isRequired;
+	}
+
+	public String getKey() {
+		return this.key;
+	}
+	public void setKey(String key) {
+		this.key = key;
 	}
 
 	public String getLength() {

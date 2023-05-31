@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.employment.groupsuborder.add request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:41:48
+ * @since 1.0, 2023-05-31 20:16:58
  */
 public class AlipayInsSceneEmploymentGroupsuborderAddRequest implements AlipayRequest<AlipayInsSceneEmploymentGroupsuborderAddResponse> {
 

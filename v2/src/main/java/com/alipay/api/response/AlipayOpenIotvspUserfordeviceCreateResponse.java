@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.userfordevice.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-10 13:16:50
+ * @since 1.0, 2023-05-31 03:41:53
  */
 public class AlipayOpenIotvspUserfordeviceCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2194218869669429573L;
+	private static final long serialVersionUID = 4416755917929446672L;
 
 	/** 
 	 * 操作流水号

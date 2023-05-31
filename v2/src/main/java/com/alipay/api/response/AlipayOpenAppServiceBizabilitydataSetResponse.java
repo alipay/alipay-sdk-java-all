@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.service.bizabilitydata.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:56:34
+ * @since 1.0, 2023-05-30 19:49:35
  */
 public class AlipayOpenAppServiceBizabilitydataSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8448183335563427744L;
+	private static final long serialVersionUID = 8555948544288982538L;
 
 	
 

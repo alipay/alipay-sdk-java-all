@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.ashield.hardeninglog.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-25 16:31:55
+ * @since 1.0, 2023-05-30 21:26:56
  */
 public class AlipaySecurityProdAshieldHardeninglogGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6741546686146256353L;
+	private static final long serialVersionUID = 5336657648524983291L;
 
 	/** 
 	 * 请求id

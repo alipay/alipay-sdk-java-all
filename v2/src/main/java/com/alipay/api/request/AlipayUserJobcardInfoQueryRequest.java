@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.jobcard.info.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:27:45
+ * @since 1.0, 2023-05-31 00:21:54
  */
 public class AlipayUserJobcardInfoQueryRequest implements AlipayRequest<AlipayUserJobcardInfoQueryResponse> {
 

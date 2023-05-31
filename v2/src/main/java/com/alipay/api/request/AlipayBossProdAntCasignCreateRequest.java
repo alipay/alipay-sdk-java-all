@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.ant.casign.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-12 09:58:58
+ * @since 1.0, 2023-05-31 13:16:54
  */
 public class AlipayBossProdAntCasignCreateRequest implements AlipayRequest<AlipayBossProdAntCasignCreateResponse> {
 

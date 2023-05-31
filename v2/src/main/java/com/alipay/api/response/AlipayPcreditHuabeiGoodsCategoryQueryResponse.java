@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.goods.category.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:26:15
+ * @since 1.0, 2023-05-30 20:41:36
  */
 public class AlipayPcreditHuabeiGoodsCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2538891864287462476L;
+	private static final long serialVersionUID = 5389695123725655211L;
 
 	/** 
 	 * 类目详情信息

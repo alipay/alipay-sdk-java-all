@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.design.page.offline request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:11:38
+ * @since 1.0, 2023-05-31 05:01:33
  */
 public class DatadigitalFincloudFinsaasDesignPageOfflineRequest implements AlipayRequest<DatadigitalFincloudFinsaasDesignPageOfflineResponse> {
 

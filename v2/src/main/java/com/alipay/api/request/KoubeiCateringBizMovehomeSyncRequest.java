@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.biz.movehome.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:38:44
+ * @since 1.0, 2023-05-31 09:32:09
  */
 public class KoubeiCateringBizMovehomeSyncRequest implements AlipayRequest<KoubeiCateringBizMovehomeSyncResponse> {
 

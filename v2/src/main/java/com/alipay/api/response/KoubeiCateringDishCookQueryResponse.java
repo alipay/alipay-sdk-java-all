@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.cook.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:10:26
+ * @since 1.0, 2023-05-31 06:42:38
  */
 public class KoubeiCateringDishCookQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8885766555297473698L;
+	private static final long serialVersionUID = 7696972983457767454L;
 
 	/** 
 	 * 菜谱list

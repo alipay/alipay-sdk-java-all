@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.prizepool.prize.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:13:44
+ * @since 1.0, 2023-05-31 05:46:41
  */
 public class AlipayMarketingCampaignPrizepoolPrizeDeleteRequest implements AlipayRequest<AlipayMarketingCampaignPrizepoolPrizeDeleteResponse> {
 

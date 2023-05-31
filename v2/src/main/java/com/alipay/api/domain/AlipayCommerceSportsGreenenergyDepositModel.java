@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceSportsGreenenergyDepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6272391186363313565L;
+	private static final long serialVersionUID = 4451622642133576752L;
 
 	/**
 	 * 用户支付宝OPENID

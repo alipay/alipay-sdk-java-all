@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-05-16 14:56:54
+ * @since 1.0, 2023-05-31 06:21:55
  */
 public class AlipayOpenIotmbsImageUploadRequest implements AlipayUploadRequest<AlipayOpenIotmbsImageUploadResponse> {
 

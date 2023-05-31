@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.ecny.trade.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:13:49
+ * @since 1.0, 2023-05-31 08:43:26
  */
 public class MybankEcnyTradeCancelRequest implements AlipayRequest<MybankEcnyTradeCancelResponse> {
 

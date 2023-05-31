@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.template.instance.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:57:35
+ * @since 1.0, 2023-05-31 04:47:38
  */
 public class AlipayFincoreComplianceTemplateInstanceQueryRequest implements AlipayRequest<AlipayFincoreComplianceTemplateInstanceQueryResponse> {
 

@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.SubAntSignResult;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.ant.casign.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-12 09:58:58
+ * @since 1.0, 2023-05-31 13:16:54
  */
 public class AlipayBossProdAntCasignCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1264537532946722143L;
+	private static final long serialVersionUID = 6216566825115979246L;
 
 	/** 
 	 * 业务流水号
@@ -30,8 +32,9 @@ public class AlipayBossProdAntCasignCreateResponse extends AlipayResponse {
 	/** 
 	 * 用印子任务受理流水
 	 */
-	@ApiField("sub_ant_sign_result_list")
-	private SubAntSignResult subAntSignResultList;
+	@ApiListField("sub_ant_sign_result_list")
+	@ApiField("sub_ant_sign_result")
+	private List<SubAntSignResult> subAntSignResultList;
 
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
@@ -47,10 +50,10 @@ public class AlipayBossProdAntCasignCreateResponse extends AlipayResponse {
 		return this.signFlowId;
 	}
 
-	public void setSubAntSignResultList(SubAntSignResult subAntSignResultList) {
+	public void setSubAntSignResultList(List<SubAntSignResult> subAntSignResultList) {
 		this.subAntSignResultList = subAntSignResultList;
 	}
-	public SubAntSignResult getSubAntSignResultList( ) {
+	public List<SubAntSignResult> getSubAntSignResultList( ) {
 		return this.subAntSignResultList;
 	}
 

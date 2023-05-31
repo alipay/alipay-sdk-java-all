@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.promotion.apply.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:21:51
+ * @since 1.0, 2023-05-31 04:36:58
  */
 public class AlipayFinancialnetPromotionApplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6418891189475464628L;
+	private static final long serialVersionUID = 4159497759367659334L;
 
 	/** 
 	 * 网商申请单号

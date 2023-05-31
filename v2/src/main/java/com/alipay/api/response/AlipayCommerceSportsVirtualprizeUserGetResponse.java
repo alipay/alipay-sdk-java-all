@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.virtualprize.user.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-18 17:06:48
+ * @since 1.0, 2023-05-31 06:26:47
  */
 public class AlipayCommerceSportsVirtualprizeUserGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3586769981828331596L;
+	private static final long serialVersionUID = 4693695944558593644L;
 
 	
 

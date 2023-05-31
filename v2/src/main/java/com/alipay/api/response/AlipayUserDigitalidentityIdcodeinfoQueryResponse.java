@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.digitalidentity.idcodeinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 09:15:20
+ * @since 1.0, 2023-05-30 21:22:27
  */
 public class AlipayUserDigitalidentityIdcodeinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7742358712472479644L;
+	private static final long serialVersionUID = 8136484364532431268L;
 
 	/** 
 	 * 用数据提供机构RSA加密后的AES秘钥，加密后进行了Base64编码。机构的公钥请接入时商户与机构线下对接，加解密签名验签工具请接入时与支付宝端本开放能力技术负责人对接获取。当user_data不为空时必填

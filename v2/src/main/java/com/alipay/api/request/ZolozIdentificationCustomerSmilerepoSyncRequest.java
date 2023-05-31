@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.identification.customer.smilerepo.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 04:01:07
+ * @since 1.0, 2023-05-30 20:25:46
  */
 public class ZolozIdentificationCustomerSmilerepoSyncRequest implements AlipayRequest<ZolozIdentificationCustomerSmilerepoSyncResponse> {
 

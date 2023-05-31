@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.content.community.segment.realtime.save response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:58:47
+ * @since 1.0, 2023-05-31 09:27:51
  */
 public class AntfortuneContentCommunitySegmentRealtimeSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1745634881554298547L;
+	private static final long serialVersionUID = 6175796436785777458L;
 
 	/** 
 	 * 返回结果示例

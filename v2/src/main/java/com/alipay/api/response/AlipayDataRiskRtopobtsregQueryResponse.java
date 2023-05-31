@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.risk.rtopobtsreg.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:28:56
+ * @since 1.0, 2023-05-31 08:26:54
  */
 public class AlipayDataRiskRtopobtsregQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8222147583116283779L;
+	private static final long serialVersionUID = 4559475756165498298L;
 
 	/** 
 	 * 查询后端ssdataprod应用的返回数据

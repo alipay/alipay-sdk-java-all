@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.user.open.certify.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:24:41
+ * @since 1.0, 2023-05-31 02:39:06
  */
 public class MybankCreditUserOpenCertifyCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1785294466571683616L;
+	private static final long serialVersionUID = 3321847789689785817L;
 
 	/** 
 	 * auth_url

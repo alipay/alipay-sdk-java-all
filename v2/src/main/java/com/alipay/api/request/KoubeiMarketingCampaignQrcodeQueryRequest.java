@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.qrcode.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:37:13
+ * @since 1.0, 2023-05-31 20:21:16
  */
 public class KoubeiMarketingCampaignQrcodeQueryRequest implements AlipayRequest<KoubeiMarketingCampaignQrcodeQueryResponse> {
 

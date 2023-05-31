@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zoloz.identification.customer.blacklist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 15:12:37
+ * @since 1.0, 2023-05-31 00:13:37
  */
 public class ZolozIdentificationCustomerBlacklistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4389756753319434334L;
+	private static final long serialVersionUID = 2718398362794859533L;
 
 	/** 
 	 * 详细原因

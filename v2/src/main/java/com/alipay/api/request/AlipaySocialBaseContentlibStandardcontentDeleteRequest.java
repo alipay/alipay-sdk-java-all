@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.contentlib.standardcontent.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:01:16
+ * @since 1.0, 2023-05-31 07:02:38
  */
 public class AlipaySocialBaseContentlibStandardcontentDeleteRequest implements AlipayRequest<AlipaySocialBaseContentlibStandardcontentDeleteResponse> {
 

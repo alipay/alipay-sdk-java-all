@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.verificationcode.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:57:21
+ * @since 1.0, 2023-05-31 07:10:23
  */
 public class AnttechOceanbaseVerificationcodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5872613297651241272L;
+	private static final long serialVersionUID = 6129188435864635271L;
 
 	
 

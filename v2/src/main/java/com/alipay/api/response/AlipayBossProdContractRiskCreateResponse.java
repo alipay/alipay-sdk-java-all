@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.contract.risk.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 16:53:39
+ * @since 1.0, 2023-05-31 01:53:15
  */
 public class AlipayBossProdContractRiskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8737174369423898248L;
+	private static final long serialVersionUID = 8624665671634935944L;
 
 	/** 
 	 * 请求单据号

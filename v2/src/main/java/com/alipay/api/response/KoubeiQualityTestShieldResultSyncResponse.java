@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.quality.test.shield.result.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:02:33
+ * @since 1.0, 2023-05-31 05:40:01
  */
 public class KoubeiQualityTestShieldResultSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8848833554618176391L;
+	private static final long serialVersionUID = 8197884223553214549L;
 
 	/** 
 	 * 扩展信息

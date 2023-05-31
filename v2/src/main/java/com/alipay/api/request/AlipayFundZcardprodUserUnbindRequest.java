@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.zcardprod.user.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:21:56
+ * @since 1.0, 2023-05-31 10:01:50
  */
 public class AlipayFundZcardprodUserUnbindRequest implements AlipayRequest<AlipayFundZcardprodUserUnbindResponse> {
 

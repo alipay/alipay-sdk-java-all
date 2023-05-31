@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.trade.payable.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:00:49
+ * @since 1.0, 2023-05-31 07:06:47
  */
 public class MybankCreditSupplychainTradePayableQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1342645128196994688L;
+	private static final long serialVersionUID = 6775321772115527814L;
 
 	/** 
 	 * 待付金额，电票预付票据未到期=应付总金额-已付金额，票据到期兑付后=0

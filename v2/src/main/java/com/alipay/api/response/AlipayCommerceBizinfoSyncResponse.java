@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.bizinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:36:53
+ * @since 1.0, 2023-05-31 20:06:58
  */
 public class AlipayCommerceBizinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1654985743583122417L;
+	private static final long serialVersionUID = 4411392251593413481L;
 
 	/** 
 	 * 商户侧资讯id

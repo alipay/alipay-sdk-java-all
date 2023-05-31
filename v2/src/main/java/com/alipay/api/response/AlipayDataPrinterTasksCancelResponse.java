@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.printer.tasks.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:10:07
+ * @since 1.0, 2023-05-31 08:28:59
  */
 public class AlipayDataPrinterTasksCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1734954786597624256L;
+	private static final long serialVersionUID = 3455544264168658888L;
 
 	/** 
 	 * 状态码

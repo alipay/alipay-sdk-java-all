@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.mobile.screen.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:10:39
+ * @since 1.0, 2023-05-31 09:00:08
  */
 public class AlipayInsSceneMobileScreenRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3669295753963355518L;
+	private static final long serialVersionUID = 3136981621117644194L;
 
 	/** 
 	 * 退保保单号

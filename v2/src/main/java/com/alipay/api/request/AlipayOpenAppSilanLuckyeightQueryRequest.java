@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.silan.luckyeight.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:44:44
+ * @since 1.0, 2023-05-31 19:32:59
  */
 public class AlipayOpenAppSilanLuckyeightQueryRequest implements AlipayRequest<AlipayOpenAppSilanLuckyeightQueryResponse> {
 

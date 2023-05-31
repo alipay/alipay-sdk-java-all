@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.exrate.config.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 02:45:36
+ * @since 1.0, 2023-05-31 23:12:41
  */
 public class AlipayAccountExrateConfigSyncRequest implements AlipayRequest<AlipayAccountExrateConfigSyncResponse> {
 

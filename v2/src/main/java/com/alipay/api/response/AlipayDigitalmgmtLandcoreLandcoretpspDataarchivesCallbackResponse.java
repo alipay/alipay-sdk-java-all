@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.landcore.landcoretpsp.dataarchives.callback response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:25:52
+ * @since 1.0, 2023-05-30 20:17:57
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspDataarchivesCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2524478751239128184L;
+	private static final long serialVersionUID = 1751277873941316584L;
 
 	/** 
 	 * 数据包唯一ID

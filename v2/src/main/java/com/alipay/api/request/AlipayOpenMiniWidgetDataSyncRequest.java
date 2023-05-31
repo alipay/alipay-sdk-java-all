@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.widget.data.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:36:58
+ * @since 1.0, 2023-05-31 20:01:50
  */
 public class AlipayOpenMiniWidgetDataSyncRequest implements AlipayRequest<AlipayOpenMiniWidgetDataSyncResponse> {
 

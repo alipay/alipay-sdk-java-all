@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.serviceconsult.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:21:56
+ * @since 1.0, 2023-05-31 04:24:50
  */
 public class AlipayMerchantServiceconsultBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6744174854168385564L;
+	private static final long serialVersionUID = 7759644832884455723L;
 
 	/** 
 	 * 服务咨询工单列表信息

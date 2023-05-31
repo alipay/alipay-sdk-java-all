@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.wufu.hdaipicture.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:26:48
+ * @since 1.0, 2023-05-31 07:46:59
  */
 public class AlipayFundCouponWufuHdaipictureCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8115376226994454694L;
+	private static final long serialVersionUID = 4829741852247531532L;
 
 	/** 
 	 * 高清图ID

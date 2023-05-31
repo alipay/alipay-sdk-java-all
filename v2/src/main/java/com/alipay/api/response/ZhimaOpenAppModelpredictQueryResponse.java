@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.open.app.modelpredict.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 20:51:57
+ * @since 1.0, 2023-05-31 21:21:58
  */
 public class ZhimaOpenAppModelpredictQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1235112382864751528L;
+	private static final long serialVersionUID = 6589394771699672588L;
 
 	/** 
 	 * 模型预测的结果

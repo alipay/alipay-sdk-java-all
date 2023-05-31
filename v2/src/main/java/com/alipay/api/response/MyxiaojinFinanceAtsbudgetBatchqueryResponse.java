@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: myxiaojin.finance.atsbudget.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:41:46
+ * @since 1.0, 2023-05-31 22:56:56
  */
 public class MyxiaojinFinanceAtsbudgetBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2654676777233544447L;
+	private static final long serialVersionUID = 6191166521243882135L;
 
 	/** 
 	 * 页码数

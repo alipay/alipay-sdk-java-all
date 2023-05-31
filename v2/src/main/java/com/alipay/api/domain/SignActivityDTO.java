@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignActivityDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4391535543138681319L;
+	private static final long serialVersionUID = 6538448661443894152L;
 
 	/**
 	 * 活动结束时间

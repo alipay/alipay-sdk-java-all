@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.mindv.jobsbyuser.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:13:16
+ * @since 1.0, 2023-05-31 01:08:38
  */
 public class AlipayIserviceMindvJobsbyuserQueryRequest implements AlipayRequest<AlipayIserviceMindvJobsbyuserQueryResponse> {
 

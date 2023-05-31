@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.gamemarketing.benefit.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 22:00:06
+ * @since 1.0, 2023-05-31 20:12:13
  */
 public class AlipayCommerceOperationGamemarketingBenefitApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8215995436646574844L;
+	private static final long serialVersionUID = 7782658766238611272L;
 
 	/** 
 	 * 返回值是个卡券兑换码的列表

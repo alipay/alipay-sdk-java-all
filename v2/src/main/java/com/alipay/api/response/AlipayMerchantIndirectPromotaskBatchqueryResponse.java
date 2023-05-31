@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.promotask.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 17:26:58
+ * @since 1.0, 2023-05-31 00:46:50
  */
 public class AlipayMerchantIndirectPromotaskBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2417851883265671923L;
+	private static final long serialVersionUID = 8749434328958459564L;
 
 	/** 
 	 * 任务列表，存储符合查询条件的任务对象

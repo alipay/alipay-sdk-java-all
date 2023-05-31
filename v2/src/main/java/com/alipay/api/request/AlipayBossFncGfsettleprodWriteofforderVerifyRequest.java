@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.writeofforder.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:18:59
+ * @since 1.0, 2023-05-30 22:09:55
  */
 public class AlipayBossFncGfsettleprodWriteofforderVerifyRequest implements AlipayRequest<AlipayBossFncGfsettleprodWriteofforderVerifyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.precreate.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:18:45
+ * @since 1.0, 2023-05-31 09:08:47
  */
 public class AlipayOpenMiniInnerbaseinfoPrecreateCancelRequest implements AlipayRequest<AlipayOpenMiniInnerbaseinfoPrecreateCancelResponse> {
 

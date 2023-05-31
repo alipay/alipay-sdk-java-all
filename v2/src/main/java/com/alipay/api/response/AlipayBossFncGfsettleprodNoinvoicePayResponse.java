@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.noinvoice.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:55:11
+ * @since 1.0, 2023-05-31 23:15:35
  */
 public class AlipayBossFncGfsettleprodNoinvoicePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6236849991524216869L;
+	private static final long serialVersionUID = 1494628695544876784L;
 
 	
 

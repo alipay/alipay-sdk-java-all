@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.deduct.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:41:17
+ * @since 1.0, 2023-05-31 22:24:31
  */
 public class AlipayPcreditLoanDeductApplyRequest implements AlipayRequest<AlipayPcreditLoanDeductApplyResponse> {
 

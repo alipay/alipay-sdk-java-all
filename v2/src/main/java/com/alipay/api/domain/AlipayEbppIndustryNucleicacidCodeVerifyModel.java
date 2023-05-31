@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryNucleicacidCodeVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6178173544136211627L;
+	private static final long serialVersionUID = 1562237977998556237L;
 
 	/**
 	 * 核酸码值。对该码值进行核验，得知该码值的有效性

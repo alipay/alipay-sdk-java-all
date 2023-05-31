@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: myxiaojin.finance.atsbudget.return response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:46:47
+ * @since 1.0, 2023-05-30 23:26:54
  */
 public class MyxiaojinFinanceAtsbudgetReturnResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2715931436832868154L;
+	private static final long serialVersionUID = 7269586956384763239L;
 
 	/** 
 	 * 退回成功后的记录id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.inshealthserviceprod.item.refresh request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 07:24:20
+ * @since 1.0, 2023-05-30 22:49:39
  */
 public class AlipayInsSceneInshealthserviceprodItemRefreshRequest implements AlipayRequest<AlipayInsSceneInshealthserviceprodItemRefreshResponse> {
 

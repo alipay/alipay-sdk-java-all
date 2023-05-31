@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.member.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-19 15:52:00
+ * @since 1.0, 2023-05-30 21:46:58
  */
 public class AlipayFundJointaccountMemberBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8589124673525441552L;
+	private static final long serialVersionUID = 7827159199858288146L;
 
 	/** 
 	 * 共同账户ID

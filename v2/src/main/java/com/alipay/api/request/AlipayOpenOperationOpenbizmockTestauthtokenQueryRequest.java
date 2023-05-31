@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.openbizmock.testauthtoken.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:51:18
+ * @since 1.0, 2023-05-31 12:01:48
  */
 public class AlipayOpenOperationOpenbizmockTestauthtokenQueryRequest implements AlipayRequest<AlipayOpenOperationOpenbizmockTestauthtokenQueryResponse> {
 

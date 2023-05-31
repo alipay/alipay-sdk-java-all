@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.memberwallet.balance.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 19:31:37
+ * @since 1.0, 2023-05-31 10:32:17
  */
 public class AntMerchantMemberwalletBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2628166852982368479L;
+	private static final long serialVersionUID = 1557758886373475256L;
 
 	/** 
 	 * 钱包账户余额（单位：元）

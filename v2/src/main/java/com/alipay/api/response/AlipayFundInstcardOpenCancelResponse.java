@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.instcard.open.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:22:11
+ * @since 1.0, 2023-05-31 05:29:57
  */
 public class AlipayFundInstcardOpenCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2837154154758121777L;
+	private static final long serialVersionUID = 3624396267266734123L;
 
 	/** 
 	 * 是否销户成功

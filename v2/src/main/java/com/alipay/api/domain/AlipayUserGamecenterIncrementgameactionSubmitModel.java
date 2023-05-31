@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserGamecenterIncrementgameactionSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3879448245265266711L;
+	private static final long serialVersionUID = 1356176542221142845L;
 
 	/**
 	 * 在第三方游戏中，用户在游戏中的行动编码。
@@ -22,7 +22,7 @@ public class AlipayUserGamecenterIncrementgameactionSubmitModel extends AlipayOb
 	private String actionCode;
 
 	/**
-	 * 在第三方游戏中，用户完成行动的渠道。如果是从玩一玩游戏中心跳转到游戏完成，填写gamecenter。如果是其他渠道跳转到游戏内完成，填写other
+	 * 在第三方游戏中，用户完成行动的渠道。识别游戏链接中channel参数，若channel非空，透传channel；若channel为空，传other。
 	 */
 	@ApiField("action_finish_channel")
 	private String actionFinishChannel;

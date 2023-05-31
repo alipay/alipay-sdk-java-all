@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.miniapp.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 00:54:51
+ * @since 1.0, 2023-05-30 19:54:07
  */
 public class AlipayOpenMiniAmpeMiniappUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3198871657958143793L;
+	private static final long serialVersionUID = 3188673637135828475L;
 
 	
 

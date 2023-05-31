@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.icontrol.dispatch.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-25 15:49:27
+ * @since 1.0, 2023-05-31 20:28:25
  */
 public class AlipayIserviceIcontrolDispatchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2257717553786234783L;
+	private static final long serialVersionUID = 5441779568648572461L;
 
 	/** 
 	 * 热线技能组ID

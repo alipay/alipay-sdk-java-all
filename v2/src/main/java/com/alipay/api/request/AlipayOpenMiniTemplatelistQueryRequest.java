@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.templatelist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-26 18:06:54
+ * @since 1.0, 2023-05-31 23:26:47
  */
 public class AlipayOpenMiniTemplatelistQueryRequest implements AlipayRequest<AlipayOpenMiniTemplatelistQueryResponse> {
 

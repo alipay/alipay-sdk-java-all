@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.userpermission.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-25 14:21:47
+ * @since 1.0, 2023-05-30 21:26:57
  */
 public class AlipayOpenIotmbsUserpermissionIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3328891168965574727L;
+	private static final long serialVersionUID = 8513135636115564755L;
 
 	/** 
 	 * 返回鉴权结果

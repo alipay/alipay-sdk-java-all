@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.login.code.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 10:50:37
+ * @since 1.0, 2023-05-31 20:17:02
  */
 public class AlipayUserLoginCodeGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1369933559796613471L;
+	private static final long serialVersionUID = 7634646378451498897L;
 
 	/** 
 	 * 用户登录凭证（有效期五分钟）。开发者需要在开发者服务器后台调用 alipay.user.session.get，使用 loginCode 换取 openid、unionid等信息。

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.merchant.credit.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:23:16
+ * @since 1.0, 2023-05-30 20:46:09
  */
 public class AlipayTradeMerchantCreditModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6337199516174144867L;
+	private static final long serialVersionUID = 2468189647228822367L;
 
 	/** 
 	 * 当前最大信用额度

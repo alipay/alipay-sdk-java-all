@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.cooperation.product.qrcode.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:21:05
+ * @since 1.0, 2023-05-31 21:24:23
  */
 public class AlipayInsCooperationProductQrcodeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8548672227634493732L;
+	private static final long serialVersionUID = 7438962552796612226L;
 
 	/** 
 	 * 快捷投保产品二维码图片链接URL

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.robot.avatarbase.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 01:41:57
+ * @since 1.0, 2023-05-30 20:56:59
  */
 public class AlipayIserviceCcmRobotAvatarbaseQueryRequest implements AlipayRequest<AlipayIserviceCcmRobotAvatarbaseQueryResponse> {
 

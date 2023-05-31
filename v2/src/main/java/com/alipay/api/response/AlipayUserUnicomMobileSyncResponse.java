@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.unicom.mobile.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 08:56:13
+ * @since 1.0, 2023-05-31 02:47:37
  */
 public class AlipayUserUnicomMobileSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4847989634723291182L;
+	private static final long serialVersionUID = 6843198319342448529L;
 
 	/** 
 	 * 业务处理结果（成功: SUCCESS, 失败: FAIL, 重试: RETRY）

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.lcs.servicemodel.set request
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 21:21:57
+ * @since 1.0, 2023-05-31 05:51:50
  */
 public class AlipayIserviceCcmLcsServicemodelSetRequest implements AlipayRequest<AlipayIserviceCcmLcsServicemodelSetResponse> {
 

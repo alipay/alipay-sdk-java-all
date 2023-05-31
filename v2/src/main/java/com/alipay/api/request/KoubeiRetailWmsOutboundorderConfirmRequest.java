@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.retail.wms.outboundorder.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 06:30:03
+ * @since 1.0, 2023-05-31 04:16:31
  */
 public class KoubeiRetailWmsOutboundorderConfirmRequest implements AlipayRequest<KoubeiRetailWmsOutboundorderConfirmResponse> {
 

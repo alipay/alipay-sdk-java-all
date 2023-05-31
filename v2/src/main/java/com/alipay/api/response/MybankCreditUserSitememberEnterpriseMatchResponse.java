@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.user.sitemember.enterprise.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-05 05:18:04
+ * @since 1.0, 2023-05-30 21:30:31
  */
 public class MybankCreditUserSitememberEnterpriseMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8795837931753112315L;
+	private static final long serialVersionUID = 8286756493876556196L;
 
 	/** 
 	 * 本接口会通过传入的alipay_login_id查询企业支付宝会员信息，然后与传入的企业信息做比对，同时满足下面2个条件时返回true，反之则为false：

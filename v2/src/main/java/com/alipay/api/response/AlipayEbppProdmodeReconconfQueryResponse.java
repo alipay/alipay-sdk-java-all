@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.prodmode.reconconf.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 23:21:01
+ * @since 1.0, 2023-05-31 04:40:46
  */
 public class AlipayEbppProdmodeReconconfQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2165284886472293517L;
+	private static final long serialVersionUID = 4254563768886223693L;
 
 	/** 
 	 * 对账基准（以支付宝为准/以机构为准）

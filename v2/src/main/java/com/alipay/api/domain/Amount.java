@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金额对象
  *
  * @author auto create
- * @since 1.0, 2020-11-18 17:31:05
+ * @since 1.0, 2023-05-31 15:00:10
  */
 public class Amount extends AlipayObject {
 
-	private static final long serialVersionUID = 8254538835832787867L;
+	private static final long serialVersionUID = 7785988265354261219L;
 
 	/**
 	 * 3位币种Code，遵循ISO 4217

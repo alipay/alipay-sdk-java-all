@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.prodmode.instshortname.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:10:32
+ * @since 1.0, 2023-05-31 19:51:11
  */
 public class AlipayEbppProdmodeInstshortnameQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2145516499412493358L;
+	private static final long serialVersionUID = 5686379424484695345L;
 
 	/** 
 	 * 出账机构中文名称

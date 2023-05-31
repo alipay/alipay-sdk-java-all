@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.exrate.pricing.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 18:53:06
+ * @since 1.0, 2023-05-31 07:18:41
  */
 public class AlipayAccountExratePricingNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8738826479746886338L;
+	private static final long serialVersionUID = 3178466152526581394L;
 
 	
 
