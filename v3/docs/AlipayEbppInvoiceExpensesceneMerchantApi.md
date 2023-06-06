@@ -39,7 +39,7 @@ public class Example {
 
     AlipayEbppInvoiceExpensesceneMerchantApi apiInstance = new AlipayEbppInvoiceExpensesceneMerchantApi(defaultClient);
     String accountId = "2088xxx"; // String | 共同账户ID
-    String agreementNo = "1234"; // String | 授权签约协议号
+    String agreementNo = "20215713002876184996"; // String | 授权签约协议号
     String enterpriseId = "2088xxx"; // String | 企业ID
     String roleId = "2088xxx"; // String | 商户ID
     String pid = "2088xxx"; // String | 商户ID

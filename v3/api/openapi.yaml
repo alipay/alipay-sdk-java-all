@@ -5,7 +5,7 @@ info:
     url: https://openhome.alipay.com/developmentDocument.htm
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2023-04-27
+  version: 2023-06-06
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -336,9 +336,8 @@ paths:
       description: 商户App获取地铁购票开放购票的站点和禁止到达的站点
       operationId: alipay.commerce.cityfacilitator.station.query
       parameters:
-      - description: |-
-          城市编码请参考查询 <a href="http://www.mca.gov.cn/article/sj/xzqh/">中华人民共和国行政区划代码</a>。
-          已支持城市：广州 440100，深圳 440300，杭州330100。
+      - description: "城市编码请参考查询 <a href=\"http://www.mca.gov.cn/article/sj/xzqh/\"\
+          >中华人民共和国行政区划代码</a>。\t已支持城市：广州 440100，深圳 440300，杭州330100。"
         explode: true
         in: query
         name: city_code
@@ -459,10 +458,10 @@ paths:
         name: enterprise_id
         required: false
         schema:
-          example: "100000000000001000921"
+          example: "2088123456789000"
           type: string
         style: form
-      - description: 共同账户ID，没有企业ID可以用此ID查询
+      - description: 共同账户ID
         explode: true
         in: query
         name: account_id
@@ -471,7 +470,7 @@ paths:
           example: "2088000295356628"
           type: string
         style: form
-      - description: 授权签约协议号，以共同账户ID查询时必传
+      - description: 授权签约协议号
         explode: true
         in: query
         name: agreement_no
@@ -480,9 +479,7 @@ paths:
           example: "20205820659822371223"
           type: string
         style: form
-      - description: |-
-          账单类型，商户通过接口或商户经开放平台授权后其所属服务商通过接口可以获取以下账单类型，支持：
-          enterprisetrade：商户基于企业码交易收单的业务账单;
+      - description: 账单类型
         explode: true
         in: query
         name: bill_type
@@ -491,16 +488,13 @@ paths:
           example: enterprisetrade
           type: string
         style: form
-      - description: |-
-          账单时间：
-          日账单格式为yyyy-MM-dd，最早可下载2016年1月1日开始的日账单。不支持下载当日账单，只能下载前一日24点前的账单数据（T+1），当日数据一般于次日 9 点前生成，特殊情况可能延迟。
-          月账单格式为yyyy-MM，最早可下载2016年1月开始的月账单。不支持下载当月账单，只能下载上一月账单数据，当月账单一般在次月 3 日生成，特殊情况可能延迟。
+      - description: 账单时间
         explode: true
         in: query
         name: bill_date
         required: false
         schema:
-          example: 2022-06-22
+          example: yyyy-MM-dd
           type: string
         style: form
       responses:
@@ -1635,11 +1629,7 @@ paths:
           example: "202008016104"
           type: string
         style: form
-      - description: |-
-          是否使用学校名称模糊匹配进行查询，默认精确匹配。
-          枚举值如下：
-          1：精确匹配；
-          0：模糊匹配
+      - description: "是否使用学校名称模糊匹配进行查询，默认精确匹配。\t枚举值如下：\t1：精确匹配；\t0：模糊匹配"
         explode: true
         in: query
         name: like_property
@@ -2519,13 +2509,13 @@ paths:
           example: 2019-01-02 00:00:00
           type: string
         style: form
-      - description: 保证金类型，目前支持TMALL_BAIL-天猫保证金，TAOBAO_BAIL-淘宝保证金
+      - description: 保证金类型，目前支持TMALL_S_BAIL-天猫保证金，TAOBAO_BAIL-淘宝保证金
         explode: true
         in: query
         name: bail_type
         required: false
         schema:
-          example: TMALL_BAIL
+          example: TMALL_S_BAIL
           type: string
         style: form
       - description: 保证金流水号。如果查询参数中指定流水号，则只查询流水号相关的记录
@@ -3308,13 +3298,10 @@ paths:
       description: 为方便商户快速查账，支持商户通过本接口获取商户离线账单下载地址
       operationId: alipay.data.dataservice.bill.downloadurl.query
       parameters:
-      - description: |-
-          账单类型，商户通过接口或商户经开放平台授权后其所属服务商通过接口可以获取以下账单类型，支持：
-          trade：商户基于支付宝交易收单的业务账单；
-          signcustomer：基于商户支付宝余额收入及支出等资金变动的账务账单；
-          merchant_act：营销活动账单，包含营销活动的发放，核销记录
-          trade_zft_merchant：直付通二级商户查询交易的业务账单；
-          zft_acc：直付通平台商查询二级商户流水使用，返回所有二级商户流水。
+      - description: "账单类型，商户通过接口或商户经开放平台授权后其所属服务商通过接口可以获取以下账单类型，支持：\ttrade：商户基于支付\
+          宝交易收单的业务账单；\tsigncustomer：基于商户支付宝余额收入及支出等资金变动的账务账单；\tmerchant_act：营销活动账单\
+          ，包含营销活动的发放，核销记录\ttrade_zft_merchant：直付通二级商户查询交易的业务账单；\tzft_acc：直付通平台商查询二\
+          级商户流水使用，返回所有二级商户流水。"
         explode: true
         in: query
         name: bill_type
@@ -3323,8 +3310,8 @@ paths:
           example: trade
           type: string
         style: form
-      - description: "账单时间： \n* 日账单格式为yyyy-MM-dd，最早可下载2016年1月1日开始的日账单。不支持下载当日账单，只能\
-          下载前一日24点前的账单数据（T+1），当日数据一般于次日 9 点前生成，特殊情况可能延迟。 \n* 月账单格式为yyyy-MM，最早可下载2016年\
+      - description: "账单时间： \t* 日账单格式为yyyy-MM-dd，最早可下载2016年1月1日开始的日账单。不支持下载当日账单，只能\
+          下载前一日24点前的账单数据（T+1），当日数据一般于次日 9 点前生成，特殊情况可能延迟。 \t* 月账单格式为yyyy-MM，最早可下载2016年\
           1月开始的月账单。不支持下载当月账单，只能下载上一月账单数据，当月账单一般在次月 3 日生成，特殊情况可能延迟。"
         explode: true
         in: query
@@ -3663,7 +3650,7 @@ paths:
           example: "2088501296144291"
           type: string
         style: form
-      - description: 共同账户ID，有企业ID可不传
+      - description: 共同账户ID
         explode: true
         in: query
         name: account_id
@@ -3672,7 +3659,7 @@ paths:
           example: "2088000000000000"
           type: string
         style: form
-      - description: 授权签约协议号，有企业ID可不传
+      - description: 授权签约协议号
         explode: true
         in: query
         name: agreement_no
@@ -3932,13 +3919,13 @@ paths:
       description: 根据开票规则ID查询开票规则详情
       operationId: alipay.ebpp.invoice.enterpriseconsume.enterpriseopenrule.query
       parameters:
-      - description: 企业id
+      - description: 企业ID
         explode: true
         in: query
         name: enterprise_id
         required: false
         schema:
-          example: "2088000000000"
+          example: "2088000194958955"
           type: string
         style: form
       - description: 开票规则ID
@@ -3950,7 +3937,7 @@ paths:
           example: "2021032900152710950000000001"
           type: string
         style: form
-      - description: 共同账户id
+      - description: 共同账户ID
         explode: true
         in: query
         name: account_id
@@ -3959,7 +3946,7 @@ paths:
           example: "2088000194958956"
           type: string
         style: form
-      - description: 授权签约协议号（仅使用account_id时必传）
+      - description: 授权签约协议号
         explode: true
         in: query
         name: agreement_no
@@ -5034,7 +5021,7 @@ paths:
         name: agreement_no
         required: false
         schema:
-          example: "1234"
+          example: "20215713002876184996"
           type: string
         style: form
       - description: 企业ID
@@ -5073,9 +5060,7 @@ paths:
           example: 2088xxx
           type: string
         style: form
-      - description: |-
-          费用类型
-          MEAL - 工作餐
+      - description: "费用类型\tMEAL - 工作餐"
         explode: true
         in: query
         name: expense_type
@@ -5144,9 +5129,7 @@ paths:
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
           type: string
         style: form
-      - description: |-
-          发票代码
-          字段长度（10-12位），全电票时为空
+      - description: "发票代码\t字段长度（10-12位），全电票时为空"
         explode: true
         in: query
         name: invoice_code
@@ -5155,9 +5138,7 @@ paths:
           example: "123"
           type: string
         style: form
-      - description: |-
-          发票号码
-          字段长度（8-10位），全电票时为20位
+      - description: "发票号码\t字段长度（8-10位），全电票时为20位"
         explode: true
         in: query
         name: invoice_no
@@ -5231,7 +5212,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/ebpp/invoice/institution/create:
     post:
-      description: 制度新增
+      description: 制度新增，包含制度下使用规则列表和发放规则列表的新增。
       operationId: alipay.ebpp.invoice.institution.create
       requestBody:
         content:
@@ -5262,7 +5243,7 @@ paths:
       description: 制度删除
       operationId: alipay.ebpp.invoice.institution.delete
       parameters:
-      - description: 企业共同账户id（条件必填）
+      - description: 企业共同账户id
         explode: true
         in: query
         name: account_id
@@ -5271,16 +5252,16 @@ paths:
           example: "2088000194958956"
           type: string
         style: form
-      - description: 授权签约协议号（条件必填）
+      - description: 授权签约协议号
         explode: true
         in: query
         name: agreement_no
         required: false
         schema:
-          example: "1234"
+          example: "20215425001181407500"
           type: string
         style: form
-      - description: 企业id（条件必填）
+      - description: 企业id
         explode: true
         in: query
         name: enterprise_id
@@ -5320,7 +5301,7 @@ paths:
       description: 单个制度查询，返回制度详细信息，包含制度下使用规则列表和发放规则列表
       operationId: alipay.ebpp.invoice.institution.detailinfo.query
       parameters:
-      - description: 企业共同账户id，和授权签约协议号共同使用。
+      - description: 企业共同账户id
         explode: true
         in: query
         name: account_id
@@ -5329,7 +5310,7 @@ paths:
           example: "2088000194958956"
           type: string
         style: form
-      - description: 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+      - description: 授权签约协议号
         explode: true
         in: query
         name: agreement_no
@@ -5603,7 +5584,7 @@ paths:
           example: "20215425001112341234"
           type: string
         style: form
-      - description: 企业ID
+      - description: 企业id
         explode: true
         in: query
         name: enterprise_id
@@ -5621,8 +5602,7 @@ paths:
           example: "2022071800152609780000004052"
           type: string
         style: form
-      - description: "EMPLOYEE（员工支付宝id）,ENTERPRISE_PAY_UID（员工企业码id）,PHONE（员工手机号) 默\
-          认返回员工id（支付宝id或企业码员工id），如需返回手机号需指定"
+      - description: 适配id类型
         explode: true
         in: query
         name: owner_type
@@ -6332,8 +6312,8 @@ paths:
           example: "1234557890"
           type: string
         style: form
-      - description: "业务类型。\r\nJF：缴水、电、燃气、固话宽带、有线电视、交通罚款费用\r\nWUYE：缴物业费\r\nHK：信用卡还\
-          款\r\nTX：手机充值"
+      - description: "业务类型。\r\tJF：缴水、电、燃气、固话宽带、有线电视、交通罚款费用\r\tWUYE：缴物业费\r\tHK：信用卡还\
+          款\r\tTX：手机充值"
         explode: true
         in: query
         name: biz_type
@@ -6342,8 +6322,8 @@ paths:
           example: JF
           type: string
         style: form
-      - description: "业务子类型。\r\nWATER：缴水费\r\nELECTRIC：缴电费\r\nGAS：缴燃气费\r\nCOMMUN：缴固\
-          话宽带\r\nCATV：缴有线电视费\r\nTRAFFIC：缴交通罚款\r\nWUYE：缴物业费\r\nHK：信用卡还款\r\nCZ：手机充值"
+      - description: "业务子类型。\r\tWATER：缴水费\r\tELECTRIC：缴电费\r\tGAS：缴燃气费\r\tCOMMUN：缴固\
+          话宽带\r\tCATV：缴有线电视费\r\tTRAFFIC：缴交通罚款\r\tWUYE：缴物业费\r\tHK：信用卡还款\r\tCZ：手机充值"
         explode: true
         in: query
         name: sub_biz_type
@@ -6811,9 +6791,7 @@ paths:
           example: application/octet-stream
           type: string
         style: form
-      - description: |-
-          文件名称。
-          注意：必须带上文件扩展名，不然会导致后续发起流程校验不通过。示例：合同.pdf。
+      - description: "文件名称。\t注意：必须带上文件扩展名，不然会导致后续发起流程校验不通过。示例：合同.pdf。"
         explode: true
         in: query
         name: file_name
@@ -6909,10 +6887,8 @@ paths:
       description: ISV通过该接口，查询ISV已注册到车主平台停车业务系统配置信息。
       operationId: alipay.eco.mycar.parking.config.query
       parameters:
-      - description: |-
-          接口名称。H5传入参数固定值：alipay.eco.mycar.parking.userpage.query；
-          小程序传入参数固定值：alipay.eco.mycar.parking.isv.homepage；
-          协议状态变更通知传入参数固定值： alipay.eco.mycar.parking.agreement.notify。
+      - description: "接口名称。H5传入参数固定值：alipay.eco.mycar.parking.userpage.query；\t小程序\
+          传入参数固定值：alipay.eco.mycar.parking.isv.homepage；\t协议状态变更通知传入参数固定值： alipay.eco.mycar.parking.agreement.notify。"
         explode: true
         in: query
         name: interface_name
@@ -6921,9 +6897,7 @@ paths:
           example: alipay.eco.mycar.parking.userpage.query
           type: string
         style: form
-      - description: |-
-          接口类型。H5、小程序传入参数固定值：interface_page；
-          通知接口传入参数固定值：interface_service。
+      - description: "接口类型。H5、小程序传入参数固定值：interface_page；\t通知接口传入参数固定值：interface_service。"
         explode: true
         in: query
         name: interface_type
@@ -7178,9 +7152,9 @@ paths:
       description: 停车场信息查询，通过停车场id或者ISV停车场ID查询停车场信息。只能查询正在调用接口商户自己创建的停车场，限制在归属PID层面上。
       operationId: alipay.eco.mycar.parking.parkinglotinfo.query
       parameters:
-      - description: |-
-          支付宝停车平台ID，由支付宝定义的该停车场标识，同一个ISV或商户范围内唯一。通过 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口获取。
-          注意：parking_id和out_parking_id不能同时为空。
+      - description: "支付宝停车平台ID，由支付宝定义的该停车场标识，同一个ISV或商户范围内唯一。通过 <a href=\"https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create\"\
+          >alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口获取。\t注意：parking_id和\
+          out_parking_id不能同时为空。"
         explode: true
         in: query
         name: parking_id
@@ -7189,9 +7163,9 @@ paths:
           example: PI1535687028031821446
           type: string
         style: form
-      - description: |-
-          ISV停车场ID，由ISV定义的停车场标识，同一个ISV或商户范围内唯一。需与 <a href="https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create">alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口传入值一致。
-          注意：parking_id和out_parking_id不能同时为空。
+      - description: "ISV停车场ID，由ISV定义的停车场标识，同一个ISV或商户范围内唯一。需与 <a href=\"https://opendocs.alipay.com/apis/api_19/alipay.eco.mycar.parking.parkinglotinfo.create\"\
+          >alipay.eco.mycar.parking.parkinglotinfo.create</a>(录入停车场信息)接口传入值一致。\t注意\
+          ：parking_id和out_parking_id不能同时为空。"
         explode: true
         in: query
         name: out_parking_id
@@ -8133,9 +8107,7 @@ paths:
       description: 因公付删除账户下群组
       operationId: alipay.fund.enterprisepay.group.delete
       parameters:
-      - description: |-
-          产品码，默认值
-          ENTERPRISE_PAY
+      - description: "产品码，默认值\tENTERPRISE_PAY"
         explode: true
         in: query
         name: product_code
@@ -8511,11 +8483,10 @@ paths:
           example: DEFAULT
           type: string
         style: form
-      - description: |-
-          合花群ID（查询方式二：通过传入account_id+agreement_no查询）<br>
-          补充说明：<br>
-          -该字段可在签约接口alipay.fund.jointaccount.sign调用后，由账户变更结果通知接口alipay.fund.jointaccount.account.completed中返回。<br>
-          -该字段可在签约接口调用后，由查询账户详情接口alipay.fund.jointaccount.detail.query中返回。
+      - description: "合花群ID（查询方式二：通过传入account_id+agreement_no查询）<br>\t补充说明：<br>\t\
+          -该字段可在签约接口alipay.fund.jointaccount.sign调用后，由账户变更结果通知接口alipay.fund.jointaccount.account.completed中\
+          返回。<br>\t-该字段可在签约接口调用后，由查询账户详情接口alipay.fund.jointaccount.detail.query中返回\
+          。"
         explode: true
         in: query
         name: account_id
@@ -8524,11 +8495,10 @@ paths:
           example: 2088xxx
           type: string
         style: form
-      - description: |-
-          授权协议号（查询方式二：通过传入account_id+agreement_no查询）<br>
-          补充说明：<br>
-          -该字段可在签约接口alipay.fund.jointaccount.sign调用后，由账户变更结果通知接口alipay.fund.jointaccount.account.completed中返回。<br>
-          -该字段可在签约接口调用后，由查询账户详情接口alipay.fund.jointaccount.detail.query中返回。
+      - description: "授权协议号（查询方式二：通过传入account_id+agreement_no查询）<br>\t补充说明：<br>\t\
+          -该字段可在签约接口alipay.fund.jointaccount.sign调用后，由账户变更结果通知接口alipay.fund.jointaccount.account.completed中\
+          返回。<br>\t-该字段可在签约接口调用后，由查询账户详情接口alipay.fund.jointaccount.detail.query中返回\
+          。"
         explode: true
         in: query
         name: agreement_no
@@ -8537,11 +8507,8 @@ paths:
           example: 2088xxx
           type: string
         style: form
-      - description: |-
-          商户侧单号（查询方式一：通过传入
-          out_biz_no查询）<br>
-          补充说明：<br>
-          -该字段与签约接口alipay.fund.jointaccount.sign请求参数中传入值保持一致
+      - description: "商户侧单号（查询方式一：通过传入\tout_biz_no查询）<br>\t补充说明：<br>\t-该字段与签约接口alipay.fund.jointaccount.sign请\
+          求参数中传入值保持一致"
         explode: true
         in: query
         name: out_biz_no
@@ -8550,10 +8517,7 @@ paths:
           example: 无
           type: string
         style: form
-      - description: |-
-          业务渠道</br>
-          补充说明：</br>
-          需要商户侧必传，支付宝侧不做强校验
+      - description: "业务渠道</br>\t补充说明：</br>\t需要商户侧必传，支付宝侧不做强校验"
         explode: true
         in: query
         name: channel
@@ -8620,12 +8584,8 @@ paths:
           example: "208890097674621512231"
           type: string
         style: form
-      - description: |-
-          员工账号：
-
-          identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
-
-          是ALIPAY_LOGON_ID 填支付宝登录号
+      - description: "员工账号：\t\tidentity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；\t\t是\
+          ALIPAY_LOGON_ID 填支付宝登录号"
         explode: true
         in: query
         name: identity
@@ -9012,9 +8972,7 @@ paths:
       description: 通过外部订单号（out_biz_no）主动查询企业签约结果，可用于未收到签约结果通知的补偿操作
       operationId: alipay.fund.jointaccount.sign.query
       parameters:
-      - description: |-
-          产品码，默认值
-          ENTERPRISE_PAY
+      - description: "产品码，默认值\tENTERPRISE_PAY"
         explode: true
         in: query
         name: product_code
@@ -9166,11 +9124,9 @@ paths:
       description: 商户可通过该接口查询转账业务单据的状态，主要应用于统一转账接口(alipay.fund.trans.uni.transfer)、无线转账接口(alipay.fund.trans.app.pay)、单笔转账到支付宝账户接口（alipay.fund.trans.toaccount.transfer）
       operationId: alipay.fund.trans.common.query
       parameters:
-      - description: |-
-          销售产品码，商家和支付宝签约的产品码，如果传递了out_biz_no则该字段为必传。可传值如下：
-          STD_RED_PACKET：现金红包
-          TRANS_ACCOUNT_NO_PWD：单笔无密转账到支付宝账户
-          TRANS_BANKCARD_NO_PWD：单笔无密转账到银行卡
+      - description: "销售产品码，商家和支付宝签约的产品码，如果传递了out_biz_no则该字段为必传。可传值如下：\tSTD_RED_PACKET：\
+          现金红包\tTRANS_ACCOUNT_NO_PWD：单笔无密转账到支付宝账户\tTRANS_BANKCARD_NO_PWD：单笔无密转账到银行\
+          卡"
         explode: true
         in: query
         name: product_code
@@ -9179,9 +9135,9 @@ paths:
           example: STD_RED_PACKET
           type: string
         style: form
-      - description: "描述特定的业务场景，如果传递了out_biz_no则该字段为必传。可取的业务场景如下：\r\nPERSONAL_PAY：\
-          C2C现金红包-发红包；\r\nPERSONAL_COLLECTION：C2C现金红包-领红包；\r\nREFUND：C2C现金红包-红包退回；\
-          \r\nDIRECT_TRANSFER：B2C现金红包、单笔无密转账"
+      - description: "描述特定的业务场景，如果传递了out_biz_no则该字段为必传。可取的业务场景如下：\r\tPERSONAL_PAY：\
+          C2C现金红包-发红包；\r\tPERSONAL_COLLECTION：C2C现金红包-领红包；\r\tREFUND：C2C现金红包-红包退回；\
+          \r\tDIRECT_TRANSFER：B2C现金红包、单笔无密转账"
         explode: true
         in: query
         name: biz_scene
@@ -9190,9 +9146,9 @@ paths:
           example: PERSONAL_PAY
           type: string
         style: form
-      - description: "商户转账唯一订单号，发起转账来源方定义的转账单据ID。 \n本参数和order_id（支付宝转账单据号）、pay_fund_order_id（\
-          支付宝支付资金流水号）三者不能同时为空。\n当三者同时传入时，将用pay_fund_order_id（支付宝支付资金流水号）进行查询，忽略其余两\
-          者；\n当本参数和支付宝转账单据号同时提供时，将用支付宝转账单据号进行查询，忽略本参数。"
+      - description: "商户转账唯一订单号，发起转账来源方定义的转账单据ID。 \t本参数和order_id（支付宝转账单据号）、pay_fund_order_id（\
+          支付宝支付资金流水号）三者不能同时为空。\t当三者同时传入时，将用pay_fund_order_id（支付宝支付资金流水号）进行查询，忽略其余两\
+          者；\t当本参数和支付宝转账单据号同时提供时，将用支付宝转账单据号进行查询，忽略本参数。"
         explode: true
         in: query
         name: out_biz_no
@@ -9202,8 +9158,8 @@ paths:
           type: string
         style: form
       - description: "支付宝转账单据号。 本参数和out_biz_no（商户转账唯一订单号）、pay_fund_order_id（支付宝支付资\
-          金流水号）三者不能同时为空。 \n当三者同时传入时，将用pay_fund_order_id（支付宝支付资金流水号）进行查询，忽略其余两者；\n当\
-          本参数和pay_fund_order_id（支付宝支付资金流水号）同时提供时，将用支付宝支付资金流水号进行查询，忽略本参数； \n当本参数和out_biz_no（\
+          金流水号）三者不能同时为空。 \t当三者同时传入时，将用pay_fund_order_id（支付宝支付资金流水号）进行查询，忽略其余两者；\t当\
+          本参数和pay_fund_order_id（支付宝支付资金流水号）同时提供时，将用支付宝支付资金流水号进行查询，忽略本参数； \t当本参数和out_biz_no（\
           商户转账唯一订单号）同时提供时，将用本参数进行查询，忽略商户转账唯一订单号。"
         explode: true
         in: query
@@ -9213,9 +9169,9 @@ paths:
           example: "20190801110070000006380000250621"
           type: string
         style: form
-      - description: "支付宝支付资金流水号。本参数和支付宝转账单据号、商户转账唯一订单号三者不能同时为空。 \n当本参数和out_biz_no（\
-          商户转账唯一订单号）、order_id（支付宝转账单据号）同时提供时，将用本参数进行查询，忽略其余两者；\n当本参数和order_id（支付宝转\
-          账单据号）同时提供时，将用本参数进行查询，忽略支付宝转账单据号； \n当本参数和out_biz_no（商户转账唯一订单号）同时提供时，将用本参数\
+      - description: "支付宝支付资金流水号。本参数和支付宝转账单据号、商户转账唯一订单号三者不能同时为空。 \t当本参数和out_biz_no（\
+          商户转账唯一订单号）、order_id（支付宝转账单据号）同时提供时，将用本参数进行查询，忽略其余两者；\t当本参数和order_id（支付宝转\
+          账单据号）同时提供时，将用本参数进行查询，忽略支付宝转账单据号； \t当本参数和out_biz_no（商户转账唯一订单号）同时提供时，将用本参数\
           进行查询，忽略商户转账唯一订单号。"
         explode: true
         in: query
@@ -9247,7 +9203,7 @@ paths:
       description: 商户可通过该接口查询转账订单的状态、支付时间等相关信息，主要应用于B2C转账订单查询的场景
       operationId: alipay.fund.trans.order.query
       parameters:
-      - description: "商户转账唯一订单号：发起转账来源方定义的转账单据ID。\r\n和支付宝转账单据号不能同时为空。当和支付宝转账单据号同时提\
+      - description: "商户转账唯一订单号：发起转账来源方定义的转账单据ID。\r\t和支付宝转账单据号不能同时为空。当和支付宝转账单据号同时提\
           供时，将用支付宝转账单据号进行查询，忽略本参数。"
         explode: true
         in: query
@@ -9561,9 +9517,7 @@ paths:
           example: "0001"
           type: string
         style: form
-      - description: |-
-          客服账号渠道, ALIPAY:支付宝账号
-          user_channel和external_user_id必须配对使用
+      - description: "客服账号渠道, ALIPAY:支付宝账号\tuser_channel和external_user_id必须配对使用"
         explode: true
         in: query
         name: user_channel
@@ -9572,9 +9526,8 @@ paths:
           example: ALIPAY
           type: string
         style: form
-      - description: |-
-          客服账号id，当user_channel=ALIPAY时，此id为支付宝2088id
-          external_user_id和user_channel必须配对使用
+      - description: "客服账号id，当user_channel=ALIPAY时，此id为支付宝2088id\texternal_user_id和\
+          user_channel必须配对使用"
         explode: true
         in: query
         name: external_user_id
@@ -11599,15 +11552,6 @@ paths:
       description: 通过此接口可以查询活动详情，包括支付券和商家券活动。
       operationId: alipay.marketing.activity.query
       parameters:
-      - description: "商户PID,默认为当前接口调用商户。"
-        explode: true
-        in: query
-        name: merchant_id
-        required: false
-        schema:
-          example: "2088202967380463"
-          type: string
-        style: form
       - description: 活动id
         explode: false
         in: path
@@ -11617,6 +11561,15 @@ paths:
           example: "2016042700826004508401111111"
           type: string
         style: simple
+      - description: "商户PID,默认为当前接口调用商户。"
+        explode: true
+        in: query
+        name: merchant_id
+        required: false
+        schema:
+          example: "2088202967380463"
+          type: string
+        style: form
       - description: 商户接入模式。
         explode: true
         in: query
@@ -11648,7 +11601,7 @@ paths:
       description: "通过此接口可查询活动的可用小程序,判断活动是否在该小程序可用，来决定是否展示。"
       operationId: alipay.marketing.activity.app.batchquery
       parameters:
-      - description: "商户PID,默认为当前接口调用商户 \n限制: \n接口调用者必须有商户代运营权限。 \n\n代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83"
+      - description: "商户PID,默认为当前接口调用商户 \t限制: \t接口调用者必须有商户代运营权限。 \t\t代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83"
         explode: true
         in: query
         name: merchant_id
@@ -11666,7 +11619,7 @@ paths:
           example: "2016042700826004508401111111"
           type: string
         style: simple
-      - description: "分页查询页码。 \n限制:\n必须为大于0的整数"
+      - description: "分页查询页码。 \t限制:\t必须为大于0的整数"
         explode: true
         in: query
         name: page_num
@@ -11675,7 +11628,7 @@ paths:
           example: 1
           type: integer
         style: form
-      - description: "分页查询单页数据条数。 \n限制: \n1.必须为大于0的整数 \n2.每页最大值为20"
+      - description: "分页查询单页数据条数。 \t限制: \t1.必须为大于0的整数 \t2.每页最大值为20"
         explode: true
         in: query
         name: page_size
@@ -11684,12 +11637,7 @@ paths:
           example: "20"
           type: string
         style: form
-      - description: |-
-          商户接入模式
-
-          枚举值
-          SELF_MODE 商户自接入模式
-          AGENCY_MODE 服务商代接入模式
+      - description: "商户接入模式\t\t枚举值\tSELF_MODE 商户自接入模式\tAGENCY_MODE 服务商代接入模式"
         explode: true
         in: query
         name: merchant_access_mode
@@ -11720,7 +11668,7 @@ paths:
       description: "通过此接口可查询活动的可用或不可用商品,判断是否在该商品可用，来决定是否展示。"
       operationId: alipay.marketing.activity.goods.batchquery
       parameters:
-      - description: "商户PID,默认为当前接口调用商户 \n限制: \n接口调用者必须有商户代运营权限。 \n\n代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83"
+      - description: "商户PID,默认为当前接口调用商户 \t限制: \t接口调用者必须有商户代运营权限。 \t\t代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83"
         explode: true
         in: query
         name: merchant_id
@@ -11738,11 +11686,7 @@ paths:
           example: "2016042700826004508401111111"
           type: string
         style: simple
-      - description: |-
-          活动单品类型。
-          枚举值:
-          AVAILABLE 可用商品
-          UNAVAILABLE 不可用商品
+      - description: "活动单品类型。\t枚举值:\tAVAILABLE 可用商品\tUNAVAILABLE 不可用商品"
         explode: true
         in: query
         name: goods_use_type
@@ -11751,10 +11695,7 @@ paths:
           example: AVAILABLE
           type: string
         style: form
-      - description: |-
-          分页查询页码。
-          限制:
-          必须为大于0的整数
+      - description: "分页查询页码。\t限制:\t必须为大于0的整数"
         explode: true
         in: query
         name: page_num
@@ -11763,11 +11704,7 @@ paths:
           example: 1
           type: integer
         style: form
-      - description: |-
-          分页查询单页数据条数。
-          限制:
-          1.必须为大于0的整数
-          2.每页最大值为20
+      - description: "分页查询单页数据条数。\t限制:\t1.必须为大于0的整数\t2.每页最大值为20"
         explode: true
         in: query
         name: page_size
@@ -11776,11 +11713,7 @@ paths:
           example: 20
           type: integer
         style: form
-      - description: |-
-          版本号
-
-          枚举值:
-          2.0.0
+      - description: "版本号\t\t枚举值:\t2.0.0"
         explode: true
         in: query
         name: product_version
@@ -11789,12 +11722,7 @@ paths:
           example: 2.0.0
           type: string
         style: form
-      - description: |-
-          商户接入模式
-
-          枚举值
-          SELF_MODE 商户自接入模式
-          AGENCY_MODE 服务商代接入模式
+      - description: "商户接入模式\t\t枚举值\tSELF_MODE 商户自接入模式\tAGENCY_MODE 服务商代接入模式"
         explode: true
         in: query
         name: merchant_access_mode
@@ -11825,7 +11753,7 @@ paths:
       description: "通过此接口可查询活动的可用商户,判断活动是否在某商户可用，来决定是否展示。"
       operationId: alipay.marketing.activity.merchant.batchquery
       parameters:
-      - description: "商户PID,默认为当前接口调用商户 \n限制: \n接口调用者必须有商户代运营权限。 \n\n代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83"
+      - description: "商户PID,默认为当前接口调用商户 \t限制: \t接口调用者必须有商户代运营权限。 \t\t代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83"
         explode: true
         in: query
         name: merchant_id
@@ -11843,7 +11771,7 @@ paths:
           example: "2016042700826004508401111111"
           type: string
         style: simple
-      - description: "分页查询页码。 \n限制: \n必须为大于0的整数"
+      - description: "分页查询页码。 \t限制: \t必须为大于0的整数"
         explode: true
         in: query
         name: page_num
@@ -11852,7 +11780,7 @@ paths:
           example: 1
           type: integer
         style: form
-      - description: "分页查询单页数据条数。 \n限制: \n1.必须为大于0的整数 \n2.每页最大值为20"
+      - description: "分页查询单页数据条数。 \t限制: \t1.必须为大于0的整数 \t2.每页最大值为20"
         explode: true
         in: query
         name: page_size
@@ -11861,12 +11789,7 @@ paths:
           example: 20
           type: integer
         style: form
-      - description: |-
-          商户接入模式
-
-          枚举值
-          SELF_MODE 商户自接入模式
-          AGENCY_MODE 服务商代接入模式
+      - description: "商户接入模式\t\t枚举值\tSELF_MODE 商户自接入模式\tAGENCY_MODE 服务商代接入模式"
         explode: true
         in: query
         name: merchant_access_mode
@@ -11897,7 +11820,7 @@ paths:
       description: 通过此接口可查询活动的可用门店，判断券是否在某门店可用，来决定是否展示。
       operationId: alipay.marketing.activity.shop.batchquery
       parameters:
-      - description: "商户PID,默认为当前接口调用商户 \n限制: \n接口调用者必须有商户代运营权限。 \n\n代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83"
+      - description: "商户PID,默认为当前接口调用商户 \t限制: \t接口调用者必须有商户代运营权限。 \t\t代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83"
         explode: true
         in: query
         name: merchant_id
@@ -11915,7 +11838,7 @@ paths:
           example: "2016042700826004508401111111"
           type: string
         style: simple
-      - description: "分页查询页码。 \n限制: \n必须为大于0的整数"
+      - description: "分页查询页码。 \t限制: \t必须为大于0的整数"
         explode: true
         in: query
         name: page_num
@@ -11924,7 +11847,7 @@ paths:
           example: 1
           type: integer
         style: form
-      - description: "分页查询单页数据条数。 \n限制: \n1.必须为大于0的整数 \n2.每页最大值为20"
+      - description: "分页查询单页数据条数。 \t限制: \t1.必须为大于0的整数 \t2.每页最大值为20"
         explode: true
         in: query
         name: page_size
@@ -11933,11 +11856,7 @@ paths:
           example: 20
           type: integer
         style: form
-      - description: |-
-          版本号
-
-          枚举值:
-          2.0.0
+      - description: "版本号\t\t枚举值:\t2.0.0"
         explode: true
         in: query
         name: product_version
@@ -11946,12 +11865,7 @@ paths:
           example: 2.0.0
           type: string
         style: form
-      - description: |-
-          商户接入模式
-
-          枚举值
-          SELF_MODE 商户自接入模式
-          AGENCY_MODE 服务商代接入模式
+      - description: "商户接入模式\t\t枚举值\tSELF_MODE 商户自接入模式\tAGENCY_MODE 服务商代接入模式"
         explode: true
         in: query
         name: merchant_access_mode
@@ -12041,15 +11955,9 @@ paths:
       description: 商户通过开放平台查询自己创建的现金活动列表
       operationId: alipay.marketing.campaign.cash.list.query
       parameters:
-      - description: |-
-          要查询的活动状态,不填默认为 ALL 返回所有类型。枚举支持:
-          *ALL：所有类型的活动。
-          *CREATED：已创建未打款。
-          *PAID：已打款。
-          *READY：活动已开始。
-          *PAUSE：活动已暂停。
-          *CLOSED：活动已结束。
-          *SETTLE：活动已清算。
+      - description: "要查询的活动状态,不填默认为 ALL 返回所有类型。枚举支持:\t*ALL：所有类型的活动。\t*CREATED：已创建\
+          未打款。\t*PAID：已打款。\t*READY：活动已开始。\t*PAUSE：活动已暂停。\t*CLOSED：活动已结束。\t*SETTLE：\
+          活动已清算。"
         explode: true
         in: query
         name: camp_status
@@ -12201,9 +12109,7 @@ paths:
         schema:
           type: string
         style: form
-      - description: |-
-          开放表单信息查询业务类型，可选类型如下：
-          MEMBER_CARD ：商家会员卡开卡
+      - description: "开放表单信息查询业务类型，可选类型如下：\tMEMBER_CARD ：商家会员卡开卡"
         explode: true
         in: query
         name: biz_type
@@ -12221,12 +12127,9 @@ paths:
           example: "2071828288283883"
           type: string
         style: form
-      - description: |-
-          查询用户表单提交信息的请求id。
-
-          网页移动应用&小程序应用：与auth_code 一起通过alipay.marketing.card.activateurl.apply(获取会员卡领卡投放链接)接口callback地址回传。
-
-          注意：auth_code（用户授权码）用于换取用户授权令牌 accessToken，后续调用接口需传入accessToken。
+      - description: "查询用户表单提交信息的请求id。\t\t网页移动应用&小程序应用：与auth_code 一起通过alipay.marketing.card.activateurl.apply(获\
+          取会员卡领卡投放链接)接口callback地址回传。\t\t注意：auth_code（用户授权码）用于换取用户授权令牌 accessToken，\
+          后续调用接口需传入accessToken。"
         explode: true
         in: query
         name: request_id
@@ -12467,7 +12370,7 @@ paths:
           example: "0000001"
           type: string
         style: form
-      - description: "卡号ID类型\r\nBIZ_CARD：支付宝卡号"
+      - description: "卡号ID类型\r\tBIZ_CARD：支付宝卡号"
         explode: true
         in: query
         name: target_card_no_type
@@ -12476,8 +12379,8 @@ paths:
           example: BIZ_CARD
           type: string
         style: form
-      - description: "删卡原因\r\nUSER_UNBUND：用户解绑（可以重新绑定）\r\nCANCEL：销户（完成销户后，就不能再重新绑定\
-          ）\r\nPRESENT：转赠（可以重新绑定）"
+      - description: "删卡原因\r\tUSER_UNBUND：用户解绑（可以重新绑定）\r\tCANCEL：销户（完成销户后，就不能再重新绑定\
+          ）\r\tPRESENT：转赠（可以重新绑定）"
         explode: true
         in: query
         name: reason_code
@@ -12486,8 +12389,8 @@ paths:
           example: USER_UNBUND
           type: string
         style: form
-      - description: "删卡扩展参数，json格式。\r\n用于商户的特定业务信息的传递，只有商户与支付宝约定了传递此参数且约定了参数含义，此参\
-          数才有效。\r\n目前支持如下key：\r\nnew_card_no：新卡号\r\ndonee_user_id：受赠人userId"
+      - description: "删卡扩展参数，json格式。\r\t用于商户的特定业务信息的传递，只有商户与支付宝约定了传递此参数且约定了参数含义，此参\
+          数才有效。\r\t目前支持如下key：\r\tnew_card_no：新卡号\r\tdonee_user_id：受赠人userId"
         explode: true
         in: query
         name: ext_info
@@ -13115,12 +13018,7 @@ paths:
           example: "2016042700826004508401111111"
           type: string
         style: simple
-      - description: |-
-          商户接入模式
-
-          枚举值
-          SELF_MODE 商户自接入模式
-          AGENCY_MODE 服务商代接入模式
+      - description: "商户接入模式\t\t枚举值\tSELF_MODE 商户自接入模式\tAGENCY_MODE 服务商代接入模式"
         explode: true
         in: query
         name: merchant_access_mode
@@ -13151,11 +13049,8 @@ paths:
       description: 商家调用该接口同步导入商家券券码，接口同步返回导入结果。请在接收alipay.marketing.activity.message.created消息后，再进行调用。
       operationId: alipay.marketing.activity.ordervoucher.codedeposit
       parameters:
-      - description: |-
-          活动id
-
-          限制
-          请在接收alipay.marketing.activity.message.created消息后，再进行调用。
+      - description: "活动id\t\t限制\t请在接收alipay.marketing.activity.message.created消息后\
+          ，再进行调用。"
         explode: false
         in: path
         name: activity_id
@@ -14051,7 +13946,7 @@ paths:
         关注者的userId，可以通过多次拉取的方式来满足需求。"
       operationId: alipay.mobile.public.follow.list
       parameters:
-      - description: "当nextUserId为空时,代表查询第一组,如果有值时以当前值为准查询下一组\r\n<a href=\"https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7386797.0.0.eZqycg&treeId=53&articleId=103525&docType=1\"\
+      - description: "当nextUserId为空时,代表查询第一组,如果有值时以当前值为准查询下一组\r\t<a href=\"https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7386797.0.0.eZqycg&treeId=53&articleId=103525&docType=1\"\
           >详情请见</a>"
         explode: true
         in: query
@@ -14750,6 +14645,9 @@ paths:
               business_license_pic:
                 contentType: '*/*'
                 style: form
+              mini_app_screenshot:
+                contentType: '*/*'
+                style: form
               data:
                 contentType: application/json
                 style: form
@@ -15299,10 +15197,7 @@ paths:
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
           type: string
         style: form
-      - description: |-
-          被删除成员的角色类型，枚举支持：
-          DEVELOPER：开发者。
-          EXPERIENCER：体验者。
+      - description: "被删除成员的角色类型，枚举支持：\tDEVELOPER：开发者。\tEXPERIENCER：体验者。"
         explode: true
         in: query
         name: role
@@ -15333,12 +15228,7 @@ paths:
       description: 应用查询成员列表，目前只支持小程序类型的应用
       operationId: alipay.open.app.members.query
       parameters:
-      - description: |-
-          查询的成员角色类型。
-          枚举支持：
-          DEVELOPER：开发者；
-          EXPERIENCER：体验者。
-          请选择其一传入
+      - description: "查询的成员角色类型。\t枚举支持：\tDEVELOPER：开发者；\tEXPERIENCER：体验者。\t请选择其一传入"
         explode: true
         in: query
         name: role
@@ -15608,6 +15498,15 @@ paths:
         required: false
         schema:
           example: c11111
+          type: string
+        style: form
+      - description: 服务模版类型。若当前服务类目只有一个服务模版，可不填。
+        explode: true
+        in: query
+        name: template_type
+        required: false
+        schema:
+          example: DEFAULT
           type: string
         style: form
       responses:
@@ -16567,10 +16466,7 @@ paths:
       description: 小程序类目树查询
       operationId: alipay.open.mini.category.query
       parameters:
-      - description: |-
-          是否过滤小程序不可用类目。枚举值如下：
-          * true：表示过滤不可用类目。
-          * false：表示不过滤不可用类目。
+      - description: "是否过滤小程序不可用类目。枚举值如下：\t* true：表示过滤不可用类目。\t* false：表示不过滤不可用类目。"
         explode: true
         in: query
         name: is_filter
@@ -16694,13 +16590,9 @@ paths:
           example: 0.0.1
           type: string
         style: form
-      - description: |-
-          小程序客户端类型，默认为支付宝端。支持如下入参：
-          com.alipay.alipaywallet：支付宝端；
-          com.alibaba.android.rimet：DINGDING端；
-          com.amap.app：高德端；
-          com.alibaba.ailabs.genie.webapps：天猫精灵端；
-          com.alipay.iot.xpaas：支付宝IoT端。
+      - description: "小程序客户端类型，默认为支付宝端。支持如下入参：\tcom.alipay.alipaywallet：支付宝端；\tcom.alibaba.android.rimet：\
+          DINGDING端；\tcom.amap.app：高德端；\tcom.alibaba.ailabs.genie.webapps：天猫精灵端；\t\
+          com.alipay.iot.xpaas：支付宝IoT端。"
         explode: true
         in: query
         name: bundle_id
@@ -18727,9 +18619,8 @@ paths:
       description: 小程序删除域白名单
       operationId: alipay.open.mini.safedomain.delete
       parameters:
-      - description: |-
-          服务器域名白名单。支付宝小程序在HTTP请求、上传文件等场景只能与域名白名单中的域名进行通讯 。
-          删除域白名单后需重新上传应用版本（模板模式下小程序模板及商家应用都需重新上传、实例化版本）才会生效。老版本应用继续使用老版本名单（即删除域名可继续使用）。
+      - description: "服务器域名白名单。支付宝小程序在HTTP请求、上传文件等场景只能与域名白名单中的域名进行通讯 。\t删除域白名单后需重新\
+          上传应用版本（模板模式下小程序模板及商家应用都需重新上传、实例化版本）才会生效。老版本应用继续使用老版本名单（即删除域名可继续使用）。"
         explode: true
         in: query
         name: safe_domain
@@ -18824,10 +18715,8 @@ paths:
           example: 0.0.1
           type: string
         style: form
-      - description: |-
-          小程序投放的端参数，例如投放到支付宝钱包是支付宝端。默认支付宝端。支持：
-          com.alipay.alipaywallet:支付宝端；
-          com.alipay.iot.xpaas：支付宝IoT端。
+      - description: "小程序投放的端参数，例如投放到支付宝钱包是支付宝端。默认支付宝端。支持：\tcom.alipay.alipaywallet:支\
+          付宝端；\tcom.alipay.iot.xpaas：支付宝IoT端。"
         explode: true
         in: query
         name: bundle_id
@@ -19079,9 +18968,8 @@ paths:
       description: 小程序收藏引导tips文案投放汇总数据查询接口。可查询小程序维度或活动维度的tips曝光uv，收藏uv，以及收藏转化率。请先配置投放活动，否则查询结果返回参数为空。
       operationId: alipay.open.mini.tips.statistic.query
       parameters:
-      - description: |-
-          收藏引导投放活动ID，供查询收藏引导活动配置接口调用
-          ，当以小程序维度查询数据（query_type为app）时delivery_id为空
+      - description: "收藏引导投放活动ID，供查询收藏引导活动配置接口调用\t，当以小程序维度查询数据（query_type为app）时delivery_id为\
+          空"
         explode: true
         in: query
         name: delivery_id
@@ -19090,9 +18978,7 @@ paths:
           example: "20220308000000934758"
           type: string
         style: form
-      - description: |-
-          查询类型，表示以当前维度进行数据聚合。
-          app：小程序维度；activity：活动维度；
+      - description: "查询类型，表示以当前维度进行数据聚合。\tapp：小程序维度；activity：活动维度；"
         explode: true
         in: query
         name: query_type
@@ -19290,8 +19176,8 @@ paths:
           example: 0.0.1
           type: string
         style: form
-      - description: "小程序投放的端参数，默认为支付宝端。支持： \ncom.alipay.alipaywallet：支付宝端。\ncom.alipay.iot.xpaas：\
-          IOT端。\n例如：投放到支付宝钱包为支付宝端需传入 com.alipay.alipaywallet。"
+      - description: "小程序投放的端参数，默认为支付宝端。支持： \tcom.alipay.alipaywallet：支付宝端。\tcom.alipay.iot.xpaas：\
+          IOT端。\t例如：投放到支付宝钱包为支付宝端需传入 com.alipay.alipaywallet。"
         explode: true
         in: query
         name: bundle_id
@@ -19359,11 +19245,8 @@ paths:
           example: 0.0.1
           type: string
         style: form
-      - description: |-
-          小程序投放的端参数，支持：
-          com.alipay.iot.xpaas（IoT端）。
-          com.alipay.alipaywallet（支付宝钱包端）。
-          例如投放到支付宝钱包是支付宝端。该参数可选，默认支付宝端。
+      - description: "小程序投放的端参数，支持：\tcom.alipay.iot.xpaas（IoT端）。\tcom.alipay.alipaywallet（\
+          支付宝钱包端）。\t例如投放到支付宝钱包是支付宝端。该参数可选，默认支付宝端。"
         explode: true
         in: query
         name: bundle_id
@@ -19450,9 +19333,7 @@ paths:
       description: 根据状态、端分页查询小程序版本基础信息列表，查询结果根据版本号大小降序排列，即0.0.2在前，0.0.1在后。
       operationId: alipay.open.mini.version.list.query
       parameters:
-      - description: |-
-          端参数，用于查询多端版本，不传默认为支付宝端。
-          高德端：com.amap.app
+      - description: "端参数，用于查询多端版本，不传默认为支付宝端。\t高德端：com.amap.app"
         explode: true
         in: query
         name: bundle_id
@@ -20288,9 +20169,8 @@ paths:
       description: 调用接口删除用户分组
       operationId: alipay.open.public.group.delete
       parameters:
-      - description: |-
-          分组ID，通过<a href="https://opendocs.alipay.com/apis/api_6/alipay.open.public.group.create">alipay.open.public.group.create</a>（用户分组创建接口)
-          创建用户分组获取。
+      - description: "分组ID，通过<a href=\"https://opendocs.alipay.com/apis/api_6/alipay.open.public.group.create\"\
+          >alipay.open.public.group.create</a>（用户分组创建接口)\t创建用户分组获取。"
         explode: true
         in: query
         name: group_id
@@ -23111,9 +22991,7 @@ paths:
       description: 查询签约授权一体化订单状态详情（包含子任务信息）
       operationId: alipay.open.sp.isv.signauth.query
       parameters:
-      - description: |-
-          签约授权一体化订单ID
-          可通过alipay.open.sp.isv.signauth.create 接口获取
+      - description: "签约授权一体化订单ID\t可通过alipay.open.sp.isv.signauth.create 接口获取"
         explode: true
         in: query
         name: order_id
@@ -23237,10 +23115,8 @@ paths:
           example: "2020124234523465636345634"
           type: string
         style: form
-      - description: |-
-          代运营操作类型。取值如下：
-          * ACCOUNT_BIND：账号绑定，仅支持间连商户。
-          * OPERATION_AUTH：代运营授权，支持间连、直连商户。
+      - description: "代运营操作类型。取值如下：\t* ACCOUNT_BIND：账号绑定，仅支持间连商户。\t* OPERATION_AUTH：\
+          代运营授权，支持间连、直连商户。"
         explode: true
         in: query
         name: operate_type
@@ -23249,10 +23125,8 @@ paths:
           example: OPERATION_AUTH
           type: string
         style: form
-      - description: |-
-          支付宝商户号。注意仅支持 2088 开头的间连商户。
-          若被代运营者是间连商户，则 merchant_no 必填；
-          若为直连商户，则 merchant_no 和 alipay_account 不能同时为空，都有值优先取 merchant_no。
+      - description: "支付宝商户号。注意仅支持 2088 开头的间连商户。\t若被代运营者是间连商户，则 merchant_no 必填；\t若\
+          为直连商户，则 merchant_no 和 alipay_account 不能同时为空，都有值优先取 merchant_no。"
         explode: true
         in: query
         name: merchant_no
@@ -23261,10 +23135,8 @@ paths:
           example: 2088XXXX
           type: string
         style: form
-      - description: |-
-          支付宝登录账号。通常为手机号或者邮箱。
-          若被代运营者是间连商户，该字段无需填写。
-          若为直连商户，则 merchant_no 和 alipay_account 不能同时为空，都有值优先取 merchant_no。
+      - description: "支付宝登录账号。通常为手机号或者邮箱。\t若被代运营者是间连商户，该字段无需填写。\t若为直连商户，则 merchant_no\
+          \ 和 alipay_account 不能同时为空，都有值优先取 merchant_no。"
         explode: true
         in: query
         name: alipay_account
@@ -23273,10 +23145,7 @@ paths:
           example: xxx@gmail.com
           type: string
         style: form
-      - description: |-
-          接入的产品编号。
-          操作类型为绑定的，填OPENAPI_BIND_DEFAULT;
-          操作类型为授权的，填OPENAPI_AUTH_DEFAULT
+      - description: "接入的产品编号。\t操作类型为绑定的，填OPENAPI_BIND_DEFAULT;\t操作类型为授权的，填OPENAPI_AUTH_DEFAULT"
         explode: true
         in: query
         name: access_product_code
@@ -23329,12 +23198,10 @@ paths:
           example: ACCOUNT_BIND
           type: string
         style: form
-      - description: |-
-          支付宝操作批次号。
-          batch_no提供基于操作批次的精确查询，只查询本操作批次的代运营操作结果，不反映最终代运营操作结果。
-          注意：
-          1.access_product_code、merchant_no、alipay_account三个参数组合与传入 batch_no 为两种查询方式，不可同时为空且以 batch_no 优先。
-          2.access_product_code、merchant_no、alipay_account三个参数组合可以查询最终代运营操作结果。
+      - description: "支付宝操作批次号。\tbatch_no提供基于操作批次的精确查询，只查询本操作批次的代运营操作结果，不反映最终代运营操作\
+          结果。\t注意：\t1.access_product_code、merchant_no、alipay_account三个参数组合与传入 batch_no\
+          \ 为两种查询方式，不可同时为空且以 batch_no 优先。\t2.access_product_code、merchant_no、alipay_account三\
+          个参数组合可以查询最终代运营操作结果。"
         explode: true
         in: query
         name: batch_no
@@ -23343,10 +23210,8 @@ paths:
           example: "2020222342342"
           type: string
         style: form
-      - description: |-
-          接入的产品编号。未传batch_no时必填，枚举如下：
-          OPENAPI_BIND_DEFAULT：操作类型为账号绑定；
-          OPENAPI_AUTH_DEFAULT：操作类型为代运营授权。
+      - description: "接入的产品编号。未传batch_no时必填，枚举如下：\tOPENAPI_BIND_DEFAULT：操作类型为账号绑定；\
+          \tOPENAPI_AUTH_DEFAULT：操作类型为代运营授权。"
         explode: true
         in: query
         name: access_product_code
@@ -23355,8 +23220,8 @@ paths:
           example: OPENAPI_BIND_DEFAULT
           type: string
         style: form
-      - description: "支付宝商户号。支持间连、直连商户，值为2088开头。\n未传batch_no时需注意：\n若查询间连商户则 merchant_no\
-          \ 必填； \n若查询直连商户，则merchant_no和alipay_account不能同时为空，都有值优先取merchant_no。"
+      - description: "支付宝商户号。支持间连、直连商户，值为2088开头。\t未传batch_no时需注意：\t若查询间连商户则 merchant_no\
+          \ 必填； \t若查询直连商户，则merchant_no和alipay_account不能同时为空，都有值优先取merchant_no。"
         explode: true
         in: query
         name: merchant_no
@@ -23365,13 +23230,10 @@ paths:
           example: "2088912341234123"
           type: string
         style: form
-      - description: |-
-          支付宝登录账号，通常为手机号或者邮箱。未传batch_no时需注意：
-          1.当查询merchant_no为间连商户时：
-            * 若 operate_type=ACCOUNT_BIND，则alipay_account必填。
-            * 若 operate_type=OPERATION_AUTH，则alipay_account无需传入。
-          2.当查询merchant_no为直连商户时：
-            * merchant_no和alipay_account不能同时为空，都有值优先取merchant_no。
+      - description: "支付宝登录账号，通常为手机号或者邮箱。未传batch_no时需注意：\t1.当查询merchant_no为间连商户时：\t\
+          \  * 若 operate_type=ACCOUNT_BIND，则alipay_account必填。\t  * 若 operate_type=OPERATION_AUTH，\
+          则alipay_account无需传入。\t2.当查询merchant_no为直连商户时：\t  * merchant_no和alipay_account不\
+          能同时为空，都有值优先取merchant_no。"
         explode: true
         in: query
         name: alipay_account
@@ -24148,9 +24010,8 @@ paths:
       description: 商户通过此接口咨询，当前用户是否满足垫资服务条件 或者 针对单笔订单的风险评估进行预咨询服务。
       operationId: alipay.trade.advance.consult
       parameters:
-      - description: |-
-          支付宝用户 id，2088开头的16为数字。
-          除单笔订单风险预评估场景(即consult_scene指定ORDER_RISK_EVALUATION)外，其他场景必选。
+      - description: "支付宝用户 id，2088开头的16为数字。\t除单笔订单风险预评估场景(即consult_scene指定ORDER_RISK_EVALUATION)外\
+          ，其他场景必选。"
         explode: true
         in: query
         name: alipay_user_id
@@ -24159,9 +24020,8 @@ paths:
           example: "2088302483540171"
           type: string
         style: form
-      - description: |-
-          订单咨询类型，用以选择咨询的服务。不传时默认为垫资咨询，其他的场景需要按照对接的服务传入指定的值。
-          ORDER_RISK_EVALUATION：表示单笔订单风险预评估。
+      - description: "订单咨询类型，用以选择咨询的服务。不传时默认为垫资咨询，其他的场景需要按照对接的服务传入指定的值。\tORDER_RISK_EVALUATION：\
+          表示单笔订单风险预评估。"
         explode: true
         in: query
         name: consult_scene
@@ -24548,7 +24408,7 @@ paths:
       description: 境外商户的商品进口到国内时需要向海关中心报送支付、物流等信息，由海关审核，如果交易是由支付宝支付的话，需要商户调用支付宝报关接口来请求支付宝将其指定交易报送支付单给海关。商户可以通过该接口主动查询报关状态，了解报关详情以及进度。
       operationId: alipay.trade.customs.query
       parameters:
-      - description: "报关请求号。需要查询的商户端报关请求号，支持批量查询，\r\n多个值用英文半角逗号分隔，单次请求最多10个;"
+      - description: "报关请求号。需要查询的商户端报关请求号，支持批量查询，\r\t多个值用英文半角逗号分隔，单次请求最多10个;"
         explode: true
         in: query
         name: out_request_nos
@@ -25179,9 +25039,8 @@ paths:
           example: GENERAL_WITHHOLDING_P
           type: string
         style: form
-      - description: |-
-          用户的支付宝账号对应 的支付宝唯一用户号，以 2088 开头的 16 位纯数字 组成。
-          本参数与alipay_logon_id若都填写，则以本参数为准，优先级高于 alipay_logon_id。
+      - description: "用户的支付宝账号对应 的支付宝唯一用户号，以 2088 开头的 16 位纯数字 组成。\t本参数与alipay_logon_id若\
+          都填写，则以本参数为准，优先级高于 alipay_logon_id。"
         explode: true
         in: query
         name: alipay_user_id
@@ -25190,9 +25049,8 @@ paths:
           example: "2088101122675263"
           type: string
         style: form
-      - description: |-
-          用户的支付宝账号对应 的支付宝唯一用户号，
-          本参数与alipay_logon_id若都填写，则以本参数为准，优先级高于 alipay_logon_id。
+      - description: "用户的支付宝账号对应 的支付宝唯一用户号，\t本参数与alipay_logon_id若都填写，则以本参数为准，优先级高于\
+          \ alipay_logon_id。"
         explode: true
         in: query
         name: alipay_open_id
@@ -25212,8 +25070,8 @@ paths:
           type: string
         style: form
       - description: "签约场景码，该值需要与系统/页面签约接口调用时传入的值保持一 致。如：周期扣款场景与调用 alipay.user.agreement.page.sign(支\
-          付宝个人协议页面签约接口) 签约时的 sign_scene 相同。 \n注意：当传入商户签约号 external_agreement_no 时，\
-          该值不能为空或默认值 DEFAULT|DEFAULT。\n"
+          付宝个人协议页面签约接口) 签约时的 sign_scene 相同。 \t注意：当传入商户签约号 external_agreement_no 时，\
+          该值不能为空或默认值 DEFAULT|DEFAULT。\t"
         explode: true
         in: query
         name: sign_scene
@@ -25222,10 +25080,7 @@ paths:
           example: INDUSTRY|MEDICAL
           type: string
         style: form
-      - description: |-
-          代扣协议中标示用户的唯一签约号(确保在商户系统中
-          唯一)。
-          格式规则:支持大写小写字母和数字，最长 32 位。
+      - description: "代扣协议中标示用户的唯一签约号(确保在商户系统中\t唯一)。\t格式规则:支持大写小写字母和数字，最长 32 位。"
         explode: true
         in: query
         name: external_agreement_no
@@ -25234,8 +25089,8 @@ paths:
           example: test
           type: string
         style: form
-      - description: "签约第三方主体类型。对于三方协议，表示当前用户和哪一类的第三方主体进行签约。\r\n取值范围:\r\n取值范围：\r\n\
-          1. PARTNER（平台商户）;\r\n2. MERCHANT（集团商户），集团下子商户可共享用户签约内容;\r\n默认为PARTNER。"
+      - description: "签约第三方主体类型。对于三方协议，表示当前用户和哪一类的第三方主体进行签约。\r\t取值范围:\r\t取值范围：\r\t\
+          1. PARTNER（平台商户）;\r\t2. MERCHANT（集团商户），集团下子商户可共享用户签约内容;\r\t默认为PARTNER。"
         explode: true
         in: query
         name: third_party_type
@@ -26099,9 +25954,8 @@ paths:
       description: 用于ISV或商户查询商品
       operationId: ant.merchant.expand.item.open.query
       parameters:
-      - description: |-
-          商品归属主体ID
-          例：商品归属主体类型target_type为店铺，则商品归属主体ID为店铺ID（支付宝侧店铺ID）；归属主体类型target_type为小程序，则归属主体ID为小程序ID
+      - description: "商品归属主体ID\t例：商品归属主体类型target_type为店铺，则商品归属主体ID为店铺ID（支付宝侧店铺ID）；\
+          归属主体类型target_type为小程序，则归属主体ID为小程序ID"
         explode: true
         in: query
         name: target_id
@@ -26110,9 +25964,7 @@ paths:
           example: "2018090600502000000022501261"
           type: string
         style: form
-      - description: |-
-          场景码（具体值请参见产品文档）。
-          小程序订单中心场景固定为 APP_ORDER。
+      - description: "场景码（具体值请参见产品文档）。\t小程序订单中心场景固定为 APP_ORDER。"
         explode: true
         in: query
         name: scene
@@ -26121,10 +25973,7 @@ paths:
           example: APP_ORDER
           type: string
         style: form
-      - description: |-
-          商品归属主体类型。枚举如下：
-          5：店铺。
-          8：小程序。
+      - description: "商品归属主体类型。枚举如下：\t5：店铺。\t8：小程序。"
         explode: true
         in: query
         name: target_type
@@ -26164,7 +26013,7 @@ paths:
       description: 用于服务商或商户查询其商品信息
       operationId: ant.merchant.expand.item.query
       parameters:
-      - description: "商品归属主体类型:\r\n5: 店铺\r\n4: 主站MID\r\n3: 参与者\r\n2: 角色\r\n1: 联系人"
+      - description: "商品归属主体类型:\r\t5: 店铺\r\t4: 主站MID\r\t3: 参与者\r\t2: 角色\r\t1: 联系人"
         explode: true
         in: query
         name: target_type
@@ -26381,10 +26230,10 @@ paths:
       description: 服务商根据申请单id，查询自己提交的商户进件、管理等申请单
       operationId: ant.merchant.expand.order.query
       parameters:
-      - description: |-
-          申请单 id。
-          1.蚂蚁门店管理场景：通过 <a href="https://opendocs.alipay.com/apis/014tmc">ant.merchant.expand.shop.create</a>(蚂蚁店铺创建)接口进件时返回的order_id。
-          2.直付通二级商户进件场景：通过<a href="https://opendocs.alipay.com/pre-apis/00a8e3">ant.merchant.expand.indirect.zft.create</a>(直付通二级商户创建)接口进件时返回的order_id。
+      - description: "申请单 id。\t1.蚂蚁门店管理场景：通过 <a href=\"https://opendocs.alipay.com/apis/014tmc\"\
+          >ant.merchant.expand.shop.create</a>(蚂蚁店铺创建)接口进件时返回的order_id。\t2.直付通二级商户\
+          进件场景：通过<a href=\"https://opendocs.alipay.com/pre-apis/00a8e3\">ant.merchant.expand.indirect.zft.create</a>(直\
+          付通二级商户创建)接口进件时返回的order_id。"
         explode: false
         in: path
         name: order_id
@@ -26450,6 +26299,15 @@ paths:
         required: false
         schema:
           example: 2022Q2
+          type: string
+        style: form
+      - description: 门店不置信时，是否需要返回shop_recommend_info
+        explode: true
+        in: query
+        name: need_recommend
+        required: false
+        schema:
+          example: 1-需要，0-不需要
           type: string
         style: form
       responses:
@@ -26671,9 +26529,8 @@ paths:
       description: 商户在用户使用支付宝完成刷脸之后，调用本接口查询核身结果状态及相关数据
       operationId: datadigital.fincloud.generalsaas.face.certify.query
       parameters:
-      - description: |-
-          本次申请操作的唯一标识，通过datadigital.fincloud.generalsaas.face.certify.initialize
-          接口同步响应获取。
+      - description: "本次申请操作的唯一标识，通过datadigital.fincloud.generalsaas.face.certify.initialize\t\
+          接口同步响应获取。"
         explode: true
         in: query
         name: certify_id
@@ -27769,9 +27626,7 @@ paths:
           example: "2019120400000000000004450100"
           type: string
         style: form
-      - description: |-
-          蚂蚁统一会员ID
-          和身份证任选一个传入
+      - description: "蚂蚁统一会员ID\t和身份证任选一个传入"
         explode: true
         in: query
         name: user_id
@@ -27780,9 +27635,7 @@ paths:
           example: "20881029102921"
           type: string
         style: form
-      - description: |-
-          蚂蚁统一会员ID
-          和身份证任选一个传入
+      - description: "蚂蚁统一会员ID\t和身份证任选一个传入"
         explode: true
         in: query
         name: open_id
@@ -27904,9 +27757,8 @@ paths:
           example: 42011719880304XXXX
           type: string
         style: form
-      - description: |-
-          蚂蚁统一会员ID ，为2088开头的唯一标识
-          选择支付宝uid检验时必传，支付宝uid或身份证+身份证类型 查询2选1，都设置时uid优先
+      - description: "蚂蚁统一会员ID ，为2088开头的唯一标识\t选择支付宝uid检验时必传，支付宝uid或身份证+身份证类型 查询2选\
+          1，都设置时uid优先"
         explode: true
         in: query
         name: user_id
@@ -27915,9 +27767,8 @@ paths:
           example: 2088XXXXXXXX
           type: string
         style: form
-      - description: |-
-          蚂蚁统一会员ID ，为2088开头的唯一标识
-          选择支付宝uid检验时必传，支付宝uid或身份证+身份证类型 查询2选1，都设置时uid优先
+      - description: "蚂蚁统一会员ID ，为2088开头的唯一标识\t选择支付宝uid检验时必传，支付宝uid或身份证+身份证类型 查询2选\
+          1，都设置时uid优先"
         explode: true
         in: query
         name: open_id
@@ -27935,10 +27786,8 @@ paths:
           example: www.123.com
           type: string
         style: form
-      - description: |-
-          证件类型 ，枚举值：
-          0:身份证1:护照2:台湾同胞回乡证3:港澳居民往来内地通行证4:台湾居民通行证5:港澳居民通行证
-          选择身份证校验时必传，支付宝uid或身份证+身份证类型 查询2选1，都设置时uid优先
+      - description: "证件类型 ，枚举值：\t0:身份证1:护照2:台湾同胞回乡证3:港澳居民往来内地通行证4:台湾居民通行证5:港澳居民通行\
+          证\t选择身份证校验时必传，支付宝uid或身份证+身份证类型 查询2选1，都设置时uid优先"
         explode: true
         in: query
         name: cert_type
@@ -27956,10 +27805,7 @@ paths:
           example: xxx
           type: string
         style: form
-      - description: |-
-          访问类型
-          C = company  or P = person
-          如果是需要返回h5页面必填
+      - description: "访问类型\tC = company  or P = person\t如果是需要返回h5页面必填"
         explode: true
         in: query
         name: visitor_type
@@ -27968,9 +27814,7 @@ paths:
           example: P
           type: string
         style: form
-      - description: |-
-          商户侧配置访客名称
-          如果是需要返回h5页面必填
+      - description: "商户侧配置访客名称\t如果是需要返回h5页面必填"
         explode: true
         in: query
         name: visitor_name
@@ -28006,9 +27850,7 @@ paths:
           example: true
           type: boolean
         style: form
-      - description: |-
-          true or false
-          是否展示
+      - description: "true or false\t是否展示"
         explode: true
         in: query
         name: has_number
@@ -28260,10 +28102,7 @@ paths:
           example: "2088621805983504"
           type: string
         style: form
-      - description: |-
-          是否需要回传明细。枚举支持：
-          * true：需要回传明细。
-          * false：不需要回传明细。
+      - description: "是否需要回传明细。枚举支持：\t* true：需要回传明细。\t* false：不需要回传明细。"
         explode: true
         in: query
         name: need_detail
@@ -28800,6 +28639,8 @@ components:
           type: string
         voucher_available_scope_info:
           $ref: '#/components/schemas/VoucherAvailableScopeInfo'
+        voucher_customer_guide_info:
+          $ref: '#/components/schemas/VoucherCustomerGuideInfo'
         voucher_deduct_info:
           $ref: '#/components/schemas/VoucherDeductInfo'
         voucher_display_lite_info:
@@ -28904,8 +28745,8 @@ components:
     AddressInfoDTO:
       properties:
         account_id:
-          description: 共同账户id和enterprise_id二选一
-          example: "2088393903004"
+          description: 共同账户id，当入参传入共同账户id时返回该值
+          example: "2088501312695783"
           type: string
         address:
           description: 详细地址
@@ -28928,11 +28769,11 @@ components:
           example: 蚂蚁A空间
           type: string
         enterprise_id:
-          description: 企业id
-          example: "20889393303393"
+          description: 企业id，当入参传入企业id时返回该值
+          example: "2088501312695783"
           type: string
         latitude:
-          description: 维度
+          description: 纬度
           example: "30.261121"
           type: string
         longitude:
@@ -30046,7 +29887,7 @@ components:
     AlipayCommerceEcBalanceDownloadurlQueryResponseModel:
       properties:
         bill_download_url:
-          description: 对账单下载地址链接，获取连接后3分钟后未下载，链接地址失效。
+          description: 对账单下载地址链接
           example: https://mdgwdev.alipay.net/induspt_invoice/afts/file/A*hmt6Trd6OpUAAAAAAAAAAAAAAUYnAA?t=GWVhXq9S4K55nzCCaDB_fgAAAABkJ0ZiucEy&af_fileName=%E6%9C%88%E5%AF%B9%E8%B4%A6%E5%8D%95_2022-05-15.xlsx
           type: string
       type: object
@@ -30120,15 +29961,15 @@ components:
     AlipayCommerceEcConsumeDetailQueryModel:
       properties:
         account_id:
-          description: 共同账户ID，有企业ID可不传
+          description: 共同账户ID
           example: "2088123456789000"
           type: string
         agreement_no:
-          description: 授权签约协议号，有企业ID可不传
+          description: 授权签约协议号
           example: "20205820659822371223"
           type: string
         enterprise_id:
-          description: 企业ID，推荐查询方式
+          description: 企业ID
           example: "2088123456789000"
           type: string
         pay_no:
@@ -30136,8 +29977,7 @@ components:
           example: "2020123100152601930000003650"
           type: string
         query_options:
-          description: "查询选项，只针对消费账单生效\t查询关联退款账单：Refund\t查询关联订单：Order\t查询关联票据：Ticket\t\
-            查询关联多媒体凭证：Multimedia"
+          description: 查询选项
           example: "[\"Refund\"]"
           items:
             type: string
@@ -30375,6 +30215,7 @@ components:
           - EMPLOYEE_IS_SUPER_ADMIN
           - EMPLOYEE_OVER_LIMIT
           - NODE_NOT_EXIST
+          - NEED_TO_SET_PPW
           type: string
         links:
           description: 解决方案链接
@@ -30441,7 +30282,7 @@ components:
           example: business_facepay_checkall
           type: string
         iot_vid:
-          description: 员工在企业人脸库的人脸唯一标识，支持自定义传入，如果未传入则会默认生成
+          description: 员工在企业人脸库的人脸唯一标识（该字段已作废，不支持自定义传入）
           example: 2109b5e671aa3ff2eb4851816c65828f
           type: string
         role_list:
@@ -31037,6 +30878,10 @@ components:
           - ENTERPRISE_CREATE_ING
           - ECEIF_ENTERPRISE_CREATE_OVER_LIMIT
           - ECEIF_ENTERPRISE_CREATE_FAIL
+          - IOT_FACE_GROUP_NAME_ERROR
+          - IOT_FACE_GROUP_CREATE_FAIL
+          - IOT_USER_CREATE_ERROR
+          - IOT_GROUP_ID_QUERY_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -31055,7 +30900,7 @@ components:
           example: ISV_QYM
           type: string
         create_iot_group:
-          description: 是否创建企业人脸库，适用于对接团餐刷脸付、门禁刷脸通行等场景，不传默认为true
+          description: 是否创建企业人脸库，适用于对接团餐刷脸付、门禁刷脸通行等场景；不传默认创建，创建失败不会阻塞企业的创建；如果传true且创建失败，则会阻塞企业的创建。
           example: false
           type: boolean
         enterprise_alias:
@@ -31250,6 +31095,7 @@ components:
           - SYSTEM_ERROR
           - PERMISSION_DENIED
           - INVALID_PARAMETER
+          - EMPLOYEE_INFO_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -31882,6 +31728,11 @@ components:
           type: string
       type: object
     AlipayCommerceLogisticsOrderInstantdeliveryCancelResponseModel:
+      properties:
+        cancel_fee:
+          description: 取消金额
+          example: "100.00"
+          type: string
       type: object
     AlipayCommerceLogisticsOrderInstantdeliveryCreateErrorResponseModel:
       properties:
@@ -32569,6 +32420,10 @@ components:
           description: 当前行程是否需要计费。true：需要，false：不需要。不传默认为true。
           example: true
           type: boolean
+        open_appid:
+          description: 蚂蚁会员统一ID对应的归属应用appid
+          example: 2023xxxxxxxxxxxx
+          type: string
         open_id:
           description: 蚂蚁会员统一ID
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
@@ -32640,6 +32495,10 @@ components:
           description: 车牌是否加密，true为加密，false为不加密，默认为false
           example: true
           type: boolean
+        open_appid:
+          description: 蚂蚁会员统一ID对应的归属应用appid
+          example: 2023xxxxxxxxxxxx
+          type: string
         open_id:
           description: 蚂蚁会员统一ID
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
@@ -32709,6 +32568,10 @@ components:
           description: 车牌是否加密，true为加密，false为不加密，默认为false
           example: true
           type: boolean
+        open_appid:
+          description: 蚂蚁会员统一ID对应的归属应用appid
+          example: 2023xxxxxxxxxxxx
+          type: string
         open_id:
           description: 蚂蚁会员统一ID
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
@@ -34399,7 +34262,7 @@ components:
           type: string
         agreement_no:
           description: 授权签约协议号
-          example: "1234"
+          example: "20215713002876184996"
           type: string
         operator_id:
           description: 传入操作人员标识
@@ -34419,7 +34282,7 @@ components:
           example: 2088xxx
           type: string
         role_type:
-          description: 门店类型：0直连门店；1间连门店
+          description: 门店直间连类型
           example: "0"
           type: string
         shop_id:
@@ -34550,39 +34413,39 @@ components:
     AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel:
       properties:
         account_id:
-          description: 共同账户id
+          description: 共同账户ID
           example: "2088000194958956"
           type: string
         agreement_no:
-          description: 授权签约协议号（仅使用account_id时必传）
+          description: 授权签约协议号
           example: "20215425001112341234"
           type: string
         bill_month_day:
-          description: 账期结束日期，可选范围1-31，只有汇总开需要
+          description: 账期结束日期
           example: 5
           type: integer
         enterprise_id:
-          description: 企业id
-          example: "2088000000000"
+          description: 企业ID
+          example: "2088402284248282"
           type: string
         invoice_rule_name:
           description: 开票规则名称
           example: 开票规则测试1
           type: string
         invoice_title_id:
-          description: 汇总开需要抬头，笔笔开不需要传抬头
+          description: 发票抬头
           example: "2021032900152710950000000001"
           type: string
         open_mode:
-          description: "开票模式：汇总开、笔笔开\t枚举定义：SUMMARY:汇总开\tSINGLE:单笔开"
+          description: 开票模式
           example: SUMMARY
           type: string
         seller_type:
-          description: "销方类型：TP开票、商户开票，\t枚举定义：MERCHANT（商户）、TP（TP），不填默认商户"
+          description: 销方类型
           example: TP
           type: string
         tag:
-          description: 开票规则标记： DEFAULT-默认 EMPLOYEE_TITLE_FIRST-员工签约抬头优先于开票规则
+          description: 开票规则标记
           example: DEFAULT
           type: string
       type: object
@@ -34623,31 +34486,31 @@ components:
     AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel:
       properties:
         account_id:
-          description: 共同账户id
+          description: 共同账户ID
           example: "2088000194958956"
           type: string
         agreement_no:
-          description: 授权签约协议号（仅使用account_id时必传）
+          description: 授权签约协议号
           example: "20215425001112341234"
           type: string
         enterprise_id:
-          description: 企业id
-          example: "2088000000000"
+          description: 企业ID
+          example: "2088000194958956"
           type: string
         invoice_rule_id:
           description: 开票规则ID
           example: "2021032900152710950000000001"
           type: string
         invoice_rule_name:
-          description: 开票名称
+          description: 开票规则名称
           example: 开票规则测试2
           type: string
         invoice_title_id:
-          description: 汇总开需要抬头，笔笔开不需要传抬头
+          description: 发票抬头
           example: "2021080500152710850000000421"
           type: string
         seller_type:
-          description: "销方类型：TP开票、商户开票\t枚举定义：MERCHANT（商户）、TP（TP）"
+          description: 销方类型
           example: TP
           type: string
       type: object
@@ -34712,24 +34575,25 @@ components:
     AlipayEbppInvoiceEnterpriseconsumeOpenrulerelationCreateModel:
       properties:
         account_id:
-          description: 企业共同账户ID【不推荐使用】
+          description: 企业共同账户ID
           example: "2088000194958956"
           type: string
         agreement_no:
-          description: 授权签约协议号（当仅使用account_id时，必传）
+          description: 授权签约协议号
           example: "20215425001112341234"
           type: string
         enterprise_id:
-          description: 企业ID【推荐使用】
+          description: 企业ID
           example: "2088000194958901"
           type: string
         invoice_rule_id:
           description: 开票规则ID
-          example: "123456"
+          example: "2021070101152721181000002201"
           type: string
         standard_id_list:
           description: 费控规则ID列表
-          example: "[\"111\",\"222\"]"
+          example: "[\"2021090600152601180000000358\",\"2021090600152601180000000359\"\
+            ]"
           items:
             type: string
           type: array
@@ -35202,7 +35066,7 @@ components:
           example: "20215425001112341234"
           type: string
         amount:
-          description: "消费金额\t特殊说明：单位为分的正整数"
+          description: 消费金额
           example: 200
           type: integer
         deal_time:
@@ -35210,17 +35074,15 @@ components:
           example: 2021-01-01 12:00:00
           type: string
         employee_id:
-          description: "切换open_id前请使用此字段：员工ID\t特殊说明：根据员工账号类型来决定为员工UID、员工工号、员工企业码ID或\
-            者员工手机号"
+          description: 员工id
           example: "2088210888827370"
           type: string
         employee_id_type:
-          description: "员工账号类型\t枚举值：\t0（员工支付宝账号/open_id）\t1（ 员工工号）\t2（员工企业码id）\t3（\
-            员工手机号）"
+          description: 员工账号类型
           example: 0
           type: integer
         employee_open_id:
-          description: 切换open_id后请使用此字段：员工ID 特殊说明：根据员工账号类型来决定为open_id、员工工号、员工企业码ID或者员工手机号
+          description: 员工开放id
           example: abcdxxxx
           type: string
         enterprise_id:
@@ -35228,11 +35090,11 @@ components:
           example: "2088000194958956"
           type: string
         extend:
-          description: 拓展参数，如果控制消费的城市，可传入消费城市的adcode，如需使用，请联系技术支持
+          description: 拓展参数
           example: "{\\\"adcode\\\":\\\"310000\\\"}"
           type: string
         is_off_set:
-          description: "交易类型\t枚举值：\t0（扣款）\t1（退款）"
+          description: 交易类型
           example: 0
           type: integer
         out_source_id:
@@ -35240,15 +35102,15 @@ components:
           example: TN00000000000001
           type: string
         platform:
-          description: 外部平台编码（联系技术支持分配）
+          description: 外部平台编码
           example: DAO_AN
           type: string
         relate_no:
-          description: "外部交易退款单号\t特殊说明：交易类型为退款的时候传入，多次退款传入不同的退款单号"
+          description: 外部交易退款单号
           example: "200222222222"
           type: string
         standard_id:
-          description: "费控规则ID\t特殊说明：该交易绑定的支付宝费控规则ID"
+          description: 费控规则ID
           example: "2021082700152601730000003677"
           type: string
       type: object
@@ -35390,6 +35252,10 @@ components:
           enum:
           - INVALID_PARAMETER
           - SYSTEM_ERROR
+          - ISSUE_BATCH_IS_INVALID
+          - ISSUE_BATCH_REVOKING
+          - ISSUE_BATCH_IN_PROGRESS
+          - PERMISSION_DENIED
           type: string
         links:
           description: 解决方案链接
@@ -35404,15 +35270,15 @@ components:
     AlipayEbppInvoiceExpensecontrolIssuebatchCancelModel:
       properties:
         account_id:
-          description: 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用
+          description: 共同账户id
           example: "2088000194958956"
           type: string
         agreement_no:
-          description: 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+          description: 授权签约协议号
           example: "20215425001112341234"
           type: string
         enterprise_id:
-          description: 企业ID - 适用于在企业码PC端创建的企业账号
+          description: 企业ID
           example: "2088000194958956"
           type: string
         institution_id:
@@ -35439,6 +35305,13 @@ components:
           - INVALID_PARAMETER
           - SYSTEM_ERROR
           - ISSUE_NAME_DUPLICATE
+          - ISSUE_BATCH_NO_DUPLICATE
+          - EMPLOYEE_NOT_IN_INSTITUTION_SCOPE
+          - BUSINESS_VALIDATE_ERROR
+          - INSTITUTION_START_DATE_NOT_REACHED
+          - PERMISSION_DENIED
+          - INSTITUTION_IS_INVALID
+          - INSTITUTION_ACTIVE_DATE_NOT_REACHED
           type: string
         links:
           description: 解决方案链接
@@ -35453,7 +35326,7 @@ components:
     AlipayEbppInvoiceExpensecontrolIssuebatchCreateModel:
       properties:
         account_id:
-          description: 共同账户id - 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用
+          description: 共同账户id
           example: "2088000194958956"
           type: string
         agreement_no:
@@ -35473,7 +35346,7 @@ components:
           example: 2021-01-01 12:00:00
           type: string
         enterprise_id:
-          description: 企业ID - 通过企业码2.0签约接口签约的企业
+          description: 企业ID
           example: "2088000194958956"
           type: string
         institution_id:
@@ -35498,7 +35371,7 @@ components:
           example: COUPON
           type: string
         share_mode:
-          description: 是否可转赠，枚举：0（不可转赠）、1（可转赠）
+          description: 是否可转赠
           example: "1"
           type: string
       type: object
@@ -35538,19 +35411,19 @@ components:
     AlipayEbppInvoiceExpensecontrolQuotaCreateModel:
       properties:
         account_id:
-          description: 企业共同账户id，和授权签约协议号共同使用。
+          description: 共同账号id
           example: "2088000194958956"
           type: string
         agreement_no:
-          description: 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+          description: 授权签约协议号
           example: "20215425001112341234"
           type: string
         effective_end_date:
-          description: 额度失效时间（格式：yyyy-MM-dd HH:mm:ss），额度类型为点券时必填，额度类型为余额时有默认值，无需填写
+          description: 额度失效时间（格式：yyyy-MM-dd HH:mm:ss）
           example: 2021-10-01 00:00:00
           type: string
         effective_start_date:
-          description: 额度生效时间（格式：yyyy-MM-dd HH:mm:ss），额度类型为点券时必填，额度类型为余额时有默认值，无需填写
+          description: 额度生效时间（格式：yyyy-MM-dd HH:mm:ss）
           example: 2021-01-01 00:00:00
           type: string
         enterprise_id:
@@ -35558,22 +35431,19 @@ components:
           example: "2088000194958956"
           type: string
         outer_source_id:
-          description: 外部操作幂等ID（接入方接口调用幂等控制ID），创建额度类型为点券时必填
+          description: 外部操作幂等ID（接入方接口调用幂等控制ID）
           example: TN00000000000001
           type: string
         owner_id:
-          description: "额度所属者ID（未切换open_id请使用此字段）：\towner_type为EMPLOYEE时填写员工支付宝ID；\
-            \towner_type为ENTERPRISE_PAY_UID时填写员工企业码ID；\towner_type为PHONE时填写员工手机号；\t\
-            owner_type为ENTERPRISE时填写企业ID。"
+          description: 额度所属者ID（未切换open_id请使用此字段）：
           example: "2088210888827370"
           type: string
         owner_open_id:
-          description: 额度所属者ID（切换open_id后请使用此字段）： owner_type为EMPLOYEE时填写open_id； owner_type为ENTERPRISE_PAY_UID时填写员工企业码ID；
-            owner_type为PHONE时填写员工手机号； owner_type为ENTERPRISE时填写企业ID。
-          example: abcdxxx
+          description: 额度所属者ID（切换open_id后请使用此字段）：
+          example: "2088210888827370"
           type: string
         owner_type:
-          description: 额度所属者类型，可通过设置该字段来指定操作的owner_id类型，如果设置企业额度则设置为ENTERPRISE
+          description: 额度所属者类型
           example: EMPLOYEE
           type: string
         platform:
@@ -35581,20 +35451,19 @@ components:
           example: RJ
           type: string
         quota_type:
-          description: 创建额度类型，支持点券和余额，不填写则默认为余额类型
+          description: 创建额度类型
           example: COUPON
           type: string
         quota_value:
-          description: "额度值，以（分）为单位\t约束：个人额度不超过100000元，企业额度不超过100000000元"
+          description: 额度值，以（分）为单位
           example: "50"
           type: string
         share_mode:
-          description: "0:不可转赠（注：不传模式为0）\t1:可以转增（注：只有quota_type=COUPON,可设置）"
+          description: "0:不可转赠\t1:可以转增"
           example: "0"
           type: string
         target_id:
-          description: "额度维度ID\t当 target_type=EXPENSE_TYPE 时，值为\tMEAL（工作餐）\t当target_type=RULE_GROUP_AGGREGATION\
-            \ 时，值为费控规则聚合ID\t当target_type=INSTITUTION 时，值为制度ID"
+          description: 额度维度ID
           example: MEAL
           type: string
         target_type:
@@ -35624,6 +35493,7 @@ components:
           - REQUEST_REPEAT
           - QUOTA_EXCEED
           - QUOTA_TYPE_NOT_MODIFY
+          - QUOTA_USED
           type: string
         links:
           description: 解决方案链接
@@ -35642,9 +35512,7 @@ components:
           example: "2088000194958956"
           type: string
         action:
-          description: "变更模式\tADD - 给余额/点券增加amount\tDEDUCT - 给余额/点券扣减amount\tUPDATE_BALANCE-更\
-            新余额/点券可用额度为amount\tFREEZE-余额/点券冻结（若冻结，则员工因公支付不可用）\tUNFREEZE-余额/点券解冻\t\
-            DELETE-余额/点券删除（使用过的点券不支持删除）"
+          description: 变更模式
           example: ADD
           type: string
         agreement_no:
@@ -35664,7 +35532,7 @@ components:
           example: TN00000000000001
           type: string
         platform:
-          description: 外部平台编码（通常为接入方大写英文缩写）
+          description: 外部平台编码
           example: RJ
           type: string
         quota_id:
@@ -35709,21 +35577,19 @@ components:
           example: "20215425001112341234"
           type: string
         enterprise_id:
-          description: 企业ID
+          description: 企业id
           example: "2088000194958956"
           type: string
         owner_id:
-          description: "切换open_id前请使用：额度所属者ID\towner_type为EMPLOYEE时为员工支付宝ID\towner_type为\
-            PHONE时为员工手机号\towner_type为ENTERPRISE_PAY_UID时为员工企业码ID"
+          description: 额度所属者ID
           example: "2088210888827370"
           type: string
         owner_open_id:
-          description: 切换open_id后请使用：额度所属者ID owner_type为EMPLOYEE时为员工open_id owner_type为PHONE时为员工手机号
-            owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
+          description: 额度所属者开放ID
           example: abcdxxxx
           type: string
         owner_type:
-          description: "额度所属者类型\tEMPLOYEE 员工"
+          description: 额度所属者类型
           example: EMPLOYEE
           type: string
         page_num:
@@ -35731,24 +35597,21 @@ components:
           example: 1
           type: integer
         page_size:
-          description: 每页条数，限制20
+          description: 每页条数
           example: 20
           type: integer
         quota_id_list:
-          description: "额度ID\t特殊说明：最多传入10个quota_id"
+          description: 额度ID列表
           example: "[\"2021062xxx\"]"
           items:
             type: string
           type: array
         target_id:
-          description: "额度维度ID\t当 target_type=EXPENSE_TYPE 时，值为\tMEAL（工作餐）\t当target_type=RULE_GROUP_AGGREGATION\
-            \ 时，值为费控规则聚合ID\t当target_type=INSTITUTION 时，值为制度ID，target_type和target_id要\
-            正确对应，否则会导致查不到额度。"
+          description: 额度维度ID
           example: MEAL
           type: string
         target_type:
-          description: "额度维度\t枚举值：\tEXPENSE_TYPE（费用类型维度），\tRULE_GROUP_AGGREGATION（\
-            规则聚合维度），\tINSTITUTION（制度维度）"
+          description: 额度维度
           example: EXPENSE_TYPE
           type: string
       type: object
@@ -36583,37 +36446,35 @@ components:
     AlipayEbppInvoiceInstitutionCreateModel:
       properties:
         account_id:
-          description: 企业共同账户id，和授权签约协议号共同使用。
+          description: 企业共同账户id
           example: "2088000194958956"
           type: string
         agreement_no:
-          description: 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+          description: 授权签约协议号
           example: "20225415889003553"
           type: string
         consult_mode:
-          description: "费控咨询模式，默认为0。\t0-支付宝内部计算\t1-咨询外部服务商（此模式不可创建发放规则，不可创建额度相关规则的\
-            条件，消费模式需为\"默认\"）"
+          description: 费控咨询模式，默认为0。
           example: "0"
           type: string
         effective_end_date:
-          description: 制度生效结束时间，最小粒度为天，结束时间不早于起始时间，时分秒必须为23:59:59，最晚不超过2222-01-01
-            23:59:59
+          description: 制度生效结束时间
           example: 2022-09-30 23:59:59
           type: string
         effective_start_date:
-          description: 制度生效起始时间，最小粒度为天，最早是当日，时分秒必须为00:00:00。
+          description: 制度生效起始时间
           example: 2022-09-10 00:00:00
           type: string
         enterprise_id:
-          description: 企业id（条件必填）
+          description: 企业id
           example: "2088123412341234"
           type: string
         expense_type:
-          description: 费用类型 枚举值：MEAL（餐饮），DEFAULT（通用）
+          description: 费用类型
           example: MEAL
           type: string
         institution_desc:
-          description: 制度描述（可空）
+          description: 制度描述
           example: 餐补制度
           type: string
         institution_name:
@@ -36621,16 +36482,16 @@ components:
           example: 费用制度
           type: string
         issue_rule_info_list:
-          description: 发放规则列表（可空），一个制度下最多创建10条发放规则。咨询模式为“咨询外部服务商”时不可用
+          description: 发放规则列表
           items:
             $ref: '#/components/schemas/IssueRuleInfo'
           type: array
         scene_type:
-          description: 因公场景。枚举值：OVERTIME（加班），SUBSIDY（补贴福利），TRAVEL（差旅），ENTERTAIN（招待），DEFAULT（通用）
+          description: 因公场景
           example: OVERTIME
           type: string
         standard_info_list:
-          description: 使用规则列表，一个制度下最多创建10条使用规则。
+          description: 使用规则列表
           items:
             $ref: '#/components/schemas/StandardInfo'
           type: array
@@ -36674,6 +36535,11 @@ components:
       - message
       type: object
     AlipayEbppInvoiceInstitutionDeleteResponseModel:
+      properties:
+        result:
+          description: 删除结果是否成功
+          example: true
+          type: boolean
       type: object
     AlipayEbppInvoiceInstitutionDetailinfoQueryErrorResponseModel:
       properties:
@@ -36698,45 +36564,44 @@ components:
     AlipayEbppInvoiceInstitutionDetailinfoQueryResponseModel:
       properties:
         consult_mode:
-          description: "费控咨询模式\t0-支付宝内部计算\t1-咨询外部服务商"
+          description: 费控咨询模式
           example: "0"
           type: string
         effective:
-          description: "制度启用停用状态\t0-停用，1-启用"
+          description: 制度启用停用状态
           example: "0"
           type: string
         effective_end_date:
-          description: 制度生效结束时间，最小粒度为天，结束时间不早于起始时间，时分秒必须为23:59:59，最晚不超过2222-01-01
-            23:59:59
-          example: 2001-01-01 00:00:00
+          description: 制度生效结束时间
+          example: 2001-01-01 23:59:59
           type: string
         effective_start_date:
-          description: 制度生效起始时间，最小粒度为天，最早是当日，时分秒必须为00:00:00。
+          description: 制度生效起始时间
           example: 2000-01-01 00:00:00
           type: string
         expense_type:
-          description: 费用类型 枚举值：MEAL（餐饮），DEFAULT（通用）
+          description: 费用类型
           example: MEAL
           type: string
         institution_desc:
           description: 制度描述
-          example: 描述
+          example: 工作餐制度
           type: string
         institution_id:
           description: 制度id
-          example: "2022071800152609780000004052"
+          example: "2023042600152617860000076700"
           type: string
         institution_name:
           description: 制度名称
-          example: 餐补
+          example: 餐补制度
           type: string
         issue_rule_info_list:
-          description: 发放规则列表
+          description: 发放规则信息列表
           items:
             $ref: '#/components/schemas/IssueRuleInfo'
           type: array
         scene_type:
-          description: 因公场景 ，枚举值：OVERTIME（加班），SUBSIDY（补贴福利），TRAVEL（差旅），ENTERTAIN（招待），DEFAULT（通用）
+          description: 因公场景
           example: OVERTIME
           type: string
         standard_info_detail_list:
@@ -36864,7 +36729,7 @@ components:
           example: "2022070600152617780000000001"
           type: string
         standard_id_list:
-          description: 删除的使用规则id列表，当id不存在时，默认删除成功。删除后制度下至少保留一条使用规则。
+          description: 删除的使用规则id列表
           example: "[\"2021062800152601350000001468\"]"
           items:
             type: string
@@ -36888,6 +36753,7 @@ components:
           - INSTITUTION_NOT_EXIST_ERROR
           - EXPENSE_RULE_MODIFY_FAIL
           - BIND_INVOICE_RULE_FAILED
+          - STANDARD_NOT_EXIST_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -36902,20 +36768,21 @@ components:
     AlipayEbppInvoiceInstitutionExpenseruleModifyModel:
       properties:
         account_id:
-          description: 企业共同账户id，和授权签约协议号共同使用。
+          description: 企业共同账户id
           example: "2088000194958956"
           type: string
         action:
-          description: "修改使用规则，操作枚举：\tADD_RULE（新增使用条件），\tDELETE_RULE（删除使用条件），\tMODIFY_RULE（\
-            修改使用条件），MODIFY_BASIC_INFO（修改规则基本信息）"
+          description: 修改使用规则
           example: MODIFY_BASIC_INFO
           type: string
         agreement_no:
-          description: 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+          description: 授权签约协议号
           example: "20215425001112341234"
           type: string
+        asset_share_source_info:
+          $ref: '#/components/schemas/AssetShareSourceInfo'
         consume_mode:
-          description: 该使用规则支持的资产消费模式，不填写则为默认模式，默认模式下有余额时使用余额，没有余额则使用规则中的限额
+          description: 该使用规则支持的资产消费模式，不填写则为默认模式，默认模式下有余额时使用余额，没有余额则使用规则中的限额，点券模式为只能使用点券，点券+余额模式为可以使用点券和余额。
           example: DEFAULT
           type: string
         enterprise_id:
@@ -36923,7 +36790,7 @@ components:
           example: "2088000194958956"
           type: string
         expense_ctrl_rule_info_list:
-          description: 使用规则条件列表
+          description: 使用规则条件列表（已废弃）
           items:
             $ref: '#/components/schemas/ExpenseCtrRuleInfo'
           type: array
@@ -36932,11 +36799,11 @@ components:
           example: "2022070600152617780000000001"
           type: string
         open_rule_id:
-          description: 开票规则id，如果之前已关联开票规则，则更换开票规则id不生效
+          description: 开票规则id
           example: "2022070600152608780000000001"
           type: string
         payment_policy:
-          description: 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略COMBINATION
+          description: 当笔消费金额大于规则可用余额时，用于控制支付策略
           example: COMBINATION
           type: string
         standard_condition_info_list:
@@ -36945,16 +36812,16 @@ components:
             $ref: '#/components/schemas/StandardConditionInfo'
           type: array
         standard_desc:
-          description: 规则描述（敏感词校验）
-          example: 示例描述
+          description: 规则描述
+          example: 当前规则为午餐餐补规则
           type: string
         standard_id:
           description: 使用规则id
           example: "2022070600152621780000000001"
           type: string
         standard_name:
-          description: 规则名称（敏感词校验）
-          example: 示例名称
+          description: 规则名称
+          example: 午餐规则
           type: string
       type: object
     AlipayEbppInvoiceInstitutionExpenseruleModifyResponseModel:
@@ -36974,6 +36841,8 @@ components:
           - PERMISSION_DENIED
           - INSTITUTION_NOT_EXIST_ERROR
           - INSTITUTION_MODIFY_FAIL
+          - MODIFY_CONSULT_FAILED_ISSUE
+          - MODIFY_CONSULT_FAILED_CONSUME
           type: string
         links:
           description: 解决方案链接
@@ -36988,19 +36857,19 @@ components:
     AlipayEbppInvoiceInstitutionModifyModel:
       properties:
         account_id:
-          description: 企业共同账户id（条件必填）
+          description: 企业共同账户id
           example: "2088000194958956"
           type: string
         agreement_no:
-          description: 授权签约协议号（条件必填）
-          example: "1234"
+          description: 授权签约协议号
+          example: "20215425001181407500"
           type: string
         consult_mode:
-          description: "费控咨询模式：\t0-支付宝内部计算\t1-咨询外部服务商"
+          description: "费控咨询模式：\t0-支付宝内部计算规则可用金额\t1-咨询外部服务商规则可用金额"
           example: "0"
           type: string
         effective:
-          description: 制度是否启用（可空），"0"为停用，"1"为启用
+          description: 制度是否启用
           example: "0"
           type: string
         effective_end_date:
@@ -37008,15 +36877,15 @@ components:
           example: 2022-09-30 23:59:59
           type: string
         effective_start_date:
-          description: 制度生效起始时间（可空），最小粒度为天，最早是当日
+          description: 制度生效起始时间
           example: 2022-09-10 00:00:00
           type: string
         enterprise_id:
-          description: 企业id（条件必填）
+          description: 企业id
           example: "2088123412341234"
           type: string
         institution_desc:
-          description: 制度描述（可空）
+          description: 制度描述
           example: 餐补制度
           type: string
         institution_id:
@@ -37024,11 +36893,16 @@ components:
           example: "2022031000152617000000000001"
           type: string
         institution_name:
-          description: 制度名称（可空）
+          description: 制度名称
           example: 费用制度
           type: string
       type: object
     AlipayEbppInvoiceInstitutionModifyResponseModel:
+      properties:
+        result:
+          description: 修改是否成功
+          example: true
+          type: boolean
       type: object
     AlipayEbppInvoiceInstitutionPageinfoQueryErrorResponseModel:
       properties:
@@ -37065,7 +36939,7 @@ components:
           example: 10
           type: integer
         total_page_count:
-          description: 总数
+          description: 总页数
           example: 10
           type: integer
       type: object
@@ -37095,20 +36969,17 @@ components:
           example: "2088000194958956"
           type: string
         adapter_type:
-          description: 制度适配范围类型
+          description: 制度适用范围类型
           example: EMPLOYEE_SELECT
           type: string
         add_owner_id_list:
-          description: "未切换open_id时请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为\
-            EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工支付宝id，员工企业码id和员工手机号\
-            ）;\tadapterType为EMPLOYEE_DEPARTMENT时，填写部门id"
+          description: 增加适配id列表
           example: "[\"2088402266061144\",\"2088402266063146\"]"
           items:
             type: string
           type: array
         add_owner_open_id_list:
-          description: 切换open_id后请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工open_id，员工企业码id和员工手机号）;
-            adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+          description: 增加适配开放id列表
           example: "[\"abcdxxxx\"]"
           items:
             type: string
@@ -37126,19 +36997,17 @@ components:
           example: "2022072800152617760000002797"
           type: string
         owner_type:
-          description: 当adapterType为指定员工时，通过该字段指定操作的owner_id类型
+          description: 归属类型
           example: ENTERPRISE_PAY_UID
           type: string
         remove_owner_id_list:
-          description: 未切换open_id时请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工支付宝id，员工企业码id和员工手机号）;
-            adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+          description: 删除适配id列表
           example: "[\"2088402266062862\",\"2088402266060390\"]"
           items:
             type: string
           type: array
         remove_owner_open_id_list:
-          description: 切换open_id后请使用：adapterType为EMPLOYEE_ALL时，无需填写；adapterType为EMPLOYEE_SELECT时，填写员工id（可通过设置owner_type来指定id类型，支持员工open_id，员工企业码id和员工手机号）;
-            adapterType为EMPLOYEE_DEPARTMENT时，填写部门id
+          description: 删除适配开放id列表
           example: "[\"abcdxxxx\"]"
           items:
             type: string
@@ -37174,22 +37043,17 @@ components:
     AlipayEbppInvoiceInstitutionScopepageinfoQueryResponseModel:
       properties:
         adapter_type:
-          description: "制度下人员生效范围，枚举值：\tEMPLOYEE_ALL(全体员工),\tEMPLOYEE_SELECT(自定义员工\
-            ),\tEMPLOYEE_DEPARTMENT(部门)"
+          description: 制度适用范围类型
           example: EMPLOYEE_ALL
           type: string
         onwer_open_id_list:
-          description: "切换 open_id 后请使用此字段：\tadapter_type为：\tEMPLOYEE_DEPARTMENT：返\
-            回部门ID\tEMPLOYEE_SELECT：当owner_type为PHONE时返回手机号，其他值则根据对接方式返回open_id，或企业\
-            码员工ID"
+          description: 适配开放id列表
           example: "[\"asdfxxxx\"]"
           items:
             type: string
           type: array
         owner_id_list:
-          description: "未切换 open_id 时请使用此字段：\tadapter_type为：\tEMPLOYEE_DEPARTMENT：\
-            返回部门ID\tEMPLOYEE_SELECT：当owner_type为PHONE时返回手机号，其他值则根据对接方式返回支付宝用户ID，或企\
-            业码员工ID"
+          description: 适配id列表
           example: "[\"2288078000164693\"]"
           items:
             type: string
@@ -37203,7 +37067,7 @@ components:
           example: 100
           type: integer
         total_page_count:
-          description: 总数
+          description: 总页数
           example: 100
           type: integer
       type: object
@@ -37230,7 +37094,7 @@ components:
     AlipayEbppInvoiceIssueruleCreateModel:
       properties:
         account_id:
-          description: 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用
+          description: 共同账户id
           example: "2088000194958956"
           type: string
         agreement_no:
@@ -37238,19 +37102,20 @@ components:
           example: "20215425001112341234"
           type: string
         effective:
-          description: "是否启用，\"0\"为停用，\"1\"为启用；\t如果target_type指定INSTITUTION，则与制度一致"
+          description: "是否启用，\"0\"为停用，\"1\"为启用；\t如果target_type指定INSTITUTION，则与制度一致\
+            ,无需填写"
           example: "1"
           type: string
         effective_period:
-          description: "生效周期，不限：\"{\\\"all\\\":true}\"，默认为不限"
-          example: 见描述
+          description: "生效周期，时间不限格式：\"{\\\"all\\\":true}\""
+          example: "{\\\"all\\\":true}"
           type: string
         enterprise_id:
-          description: 企业ID - 适用于在企业码PC端创建的企业账号
+          description: 企业ID
           example: "2088000194958956"
           type: string
         invalid_mode:
-          description: 是否可累计，枚举：0（不可累计）、1（可累计），默认为0，余额只允许可累计，按城市发放只允许不可累计，设置了生效周期只允许不可累计
+          description: 是否可累计，枚举：0（不可累计）、1（可累计），2（累计天数）、3（累计到指定日期）余额只允许可累计，按城市发放只允许不可累计，设置了生效周期只允许不可累计
           example: 0
           type: integer
         invalid_mode_value:
@@ -37276,15 +37141,15 @@ components:
           example: 2021-01-01 12:00:00
           type: string
         issue_type:
-          description: 发放类型，枚举：ISSUE_MONTH（按月发放）、ISSUE_DAY（按日发放）
+          description: 发放类型
           example: ISSUE_MONTH
           type: string
         quota_type:
-          description: 额度类型，枚举：COUPON（点券）、CAP（余额）
+          description: 额度类型，枚举：COUPON（点券）、CAP（余额）、ISV（外算额度）
           example: COUPON
           type: string
         share_mode:
-          description: 是否可转赠，枚举：0（不可转赠）、1（可转赠），默认为0
+          description: 是否可转赠，枚举：0（不可转赠）、1（可转赠）
           example: 0
           type: integer
         target_id:
@@ -37325,7 +37190,7 @@ components:
     AlipayEbppInvoiceIssueruleDeleteModel:
       properties:
         account_id:
-          description: 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用
+          description: 共同账户id
           example: "2088000194958956"
           type: string
         agreement_no:
@@ -37333,7 +37198,7 @@ components:
           example: "20215425001112341234"
           type: string
         enterprise_id:
-          description: 企业ID - 适用于在企业码PC端创建的企业账号
+          description: 企业ID
           example: "2088000194958956"
           type: string
         issue_rule_id_list:
@@ -37343,11 +37208,11 @@ components:
             type: string
           type: array
         target_id:
-          description: 发放规则关联的目标值 target_type为制度时：制度id
+          description: 目标值id
           example: "2022052000152618690000000005"
           type: string
         target_type:
-          description: 发放规则关联的目标类型，枚举值：INSTITUTION(制度)
+          description: 发放规则关联的目标类型
           example: INSTITUTION
           type: string
       type: object
@@ -37381,7 +37246,7 @@ components:
     AlipayEbppInvoiceIssueruleModifyModel:
       properties:
         account_id:
-          description: 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用
+          description: 共同账户id
           example: "2088000194958956"
           type: string
         action:
@@ -37393,33 +37258,31 @@ components:
           example: "20215425001112341234"
           type: string
         effective:
-          description: "是否启用，\"0\"为停用，\"1\"为启用；\t如果target_type指定INSTITUTION，则与制度一致"
+          description: 是否启用，"0"为停用，"1"为启用；
           example: "1"
           type: string
         effective_period:
           description: "生效周期（不传则不修改），不限：\"{\\\"all\\\":true}\""
-          example: 见描述
+          example: "{\\\"all\\\":true}"
           type: string
         enterprise_id:
-          description: 企业ID - 适用于在企业码PC端创建的企业账号
+          description: 企业ID
           example: "2088000194958956"
           type: string
         invalid_mode:
-          description: 是否可累计（不传则不修改），枚举：0（不可累计）、1（可累计），默认为0，余额只允许可累计，按城市发放只允许不可累计，设置了生效周期只允许不可累计
+          description: 是否可累计（不传则不修改），枚举：0（不可累计）、1（可累计），2（累计天数），3（累计到固定时间）
           example: 0
           type: integer
         invalid_mode_value:
-          description: 累计值（预留字段）
-          example: 预留
+          description: 累计值
+          example: "10"
           type: string
         issue_amount_value:
-          description: "发放金额（不传则不修改）；\t按城市不同发放标准示例值：\"[{\\\"cities\\\":[\\\"321000\\\
-            \",\\\"321100\\\"],\\\"amount\\\":\\\"50\\\"},{\\\"cities\\\":[\\\"321200\\\
-            \",\\\"321300\\\"],\\\"amount\\\":\\\"150\\\"}]\"\t统一标准发放示例值：\"200\""
+          description: 发放金额（不传则不修改）
           example: "200"
           type: string
         issue_end_date:
-          description: "发放规则的截止时间\t如果target_type指定INSTITUTION，则使用制度有效期结束时间，无需填写"
+          description: 发放规则的截止时间
           example: 2021-01-01 12:00:00
           type: string
         issue_rule_id:
@@ -37431,15 +37294,15 @@ components:
           example: 晚餐发放
           type: string
         issue_start_date:
-          description: "发放规则的开始时间\t如果target_type指定INSTITUTION，则使用制度有效期起始时间，不支持修改"
+          description: 发放规则的开始时间
           example: 2021-01-01 12:00:00
           type: string
         issue_type:
-          description: 发放类型（不传则不修改），枚举：ISSUE_MONTH（按月发放）、ISSUE_DAY（按日发放）
+          description: 发放类型
           example: ISSUE_MONTH
           type: string
         quota_type:
-          description: 额度类型（不传则不修改），枚举：COUPON（点券）、CAP（余额）
+          description: 额度类型
           example: COUPON
           type: string
         share_mode:
@@ -44085,6 +43948,8 @@ components:
           - PAYEE_USER_IS_INST
           - PAYER_NOT_RELNAME_CERTIFY
           - BALANCE_NOT_ENOUGH
+          - EMPLOYEE_SERVICE_NOT_EXIST
+          - UN_SUPPORT_EMPLOYEE_SERVICE
           type: string
         links:
           description: 解决方案链接
@@ -47893,6 +47758,8 @@ components:
           type: string
         voucher_available_scope_info:
           $ref: '#/components/schemas/VoucherAvailableScopeInfo'
+        voucher_customer_guide_info:
+          $ref: '#/components/schemas/VoucherCustomerGuideInfo'
         voucher_deduct_info:
           $ref: '#/components/schemas/VoucherDeductInfo'
         voucher_display_info:
@@ -49528,12 +49395,12 @@ components:
         target_card_no:
           description: "操作卡号。\t若target_card_no_type为 BIZ_CARD，则该值为业务卡号，即alipay.marketing.card.open(会\
             员卡开卡)返回结果中的card_info#biz_card_no。\t若target_card_no_type为 D_QR_CODE 或D_BAR_CODE，\
-            则该值为动态码值。"
+            则该值为动态码值。\t若target_card_no_type为 EXTERNAL_CARD，则该值为外部卡号。"
           example: "0000001"
           type: string
         target_card_no_type:
-          description: "卡号ID类型（会员卡查询，只能提供支付宝端的卡号）\r\tBIZ_CARD：支付宝卡号\r\tD_QR_CODE：动\
-            态二维码（业务卡号对应的）\r\tD_BAR_CODE：动态条码（业务卡号对应的）"
+          description: "卡号ID类型（会员卡查询，只能提供支付宝端的卡号）\tBIZ_CARD：支付宝卡号\tD_QR_CODE：动态二维码\
+            （业务卡号对应的）\tD_BAR_CODE：动态条码（业务卡号对应的）\tEXTERNAL_CARD：外部卡号（业务卡号对应的）"
           example: BIZ_CARD
           type: string
       type: object
@@ -53166,6 +53033,10 @@ components:
           description: 营业期限
           example: 2017-11-11
           type: string
+        life_app_id:
+          description: 请输入被签约商户的支付宝生活号ID编号
+          example: "2030020837517348"
+          type: string
         long_term:
           description: 营业期限是否长期有效
           example: true
@@ -53175,9 +53046,23 @@ components:
             中的“经营类目编码”
           example: A_A03_4582
           type: string
+        mini_app_id:
+          description: 请输入被签约商家下任意小程序APPID ID编号
+          example: "2021003187665167"
+          type: string
         product_code:
           description: isv要代商户签约产品码，产品码是支付宝内部对产品的唯一标识
           example: FACE_TO_FACE_PAYMENT
+          type: string
+        rate:
+          description: "服务费率（%），例如：请输入0.38~0.6 之间（小数点后两位，可取0.38%及0.6%），直播买卖通涉及JSAPI支\
+            付产品，交易手续费为 0.38%-0.6%，后续费率变化可参考支付宝标准服务费。\t当签约且授权标识 sign_and_auth=true\
+            \ 时，该费率信息必填。"
+          example: "0.38"
+          type: string
+        special_license_type:
+          description: 合约特殊资质的类型，不传默认99
+          example: "99"
           type: string
         web_sites:
           description: 接入网址信息（1 app_name、app_demo；2 web_sites；3 alipay_life_name；4
@@ -53231,6 +53116,9 @@ components:
           - MERCHANT_INTERFACE_INFO_ERR
           - ORDER_TYPE_NULL_ERROR
           - RESTRICT_VALID_ERROR
+          - NEW_LINK_CANNOT_BATCH_SIGN
+          - PRODUCT_CANNOT_MIX_SIGN
+          - PRODUCT_OPEN_FAIL
           type: string
         links:
           description: 解决方案链接
@@ -53278,6 +53166,9 @@ components:
           - FEERATE_NOT_INTERAVL
           - BIZ_ERROR
           - SYSTEM_ERROR
+          - NEW_LINK_CANNOT_BATCH_SIGN
+          - PRODUCT_CANNOT_MIX_SIGN
+          - PRODUCT_OPEN_FAIL
           type: string
         links:
           description: 解决方案链接
@@ -53314,6 +53205,10 @@ components:
         expires_in:
           description: 应用授权令牌的有效时间（从接口调用时间作为起始时间），单位到秒
           example: "123456"
+          type: string
+        open_id:
+          description: 授权商户的user_id
+          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
           type: string
         order_no:
           description: 签约单号，如果是签约必返回
@@ -54215,6 +54110,7 @@ components:
           - MSG_REJECTED
           - MSG_TEMPLATE_ID_VALID
           - DATA_IS_EMPTY
+          - MSG_UNAUTHORIZED
           type: string
         links:
           description: 解决方案链接
@@ -54389,6 +54285,10 @@ components:
           description: 服务xml
           example: <serviceSchema></serviceSchema>
           type: string
+        template_type:
+          description: 服务模版。若当前服务类目只有一个服务模版，可不填。
+          example: DEFAULT
+          type: string
       type: object
     AlipayOpenAppServiceApplyResponseModel:
       properties:
@@ -54493,15 +54393,15 @@ components:
           type: string
         service_xml:
           description: 服务描述xml格式
-          example: |-
-            <?xml version="1.0" encoding="utf-8"?>
-            </serviceSchema>
-            ...
-            <serviceSchema>
+          example: <?xml version="1.0" encoding="utf-8"?</serviceSchema>...<serviceSchema>
           type: string
         status:
           description: 服务状态，EDITING(编辑中)/AUDITING(审核中)/AUDIT_REJECT(审核驳回)/PROMOTION(可推广)/STOP_PROMOTION(停止推广)/INVALID(失效)/PUNISHED(处罚)
           example: AUDITING
+          type: string
+        template_type:
+          description: 服务模板类型
+          example: DEFAULT
           type: string
       type: object
     AlipayOpenAppServiceSchemaQueryErrorResponseModel:
@@ -54540,6 +54440,10 @@ components:
             \ name=\"最大长度\" value=\"10\"/><rule type=\"valid\" code=\"reg\" name=\"\
             正则表达式\" value=\"[^A-Za-z0-9一-龥]\"/><rule type=\"tips\" code=\"inputTip\"\
             \ name=\"底纹提示文案\" value=\"请输入服务名称,不超过8个字符,不含特殊字符\"/></rules></attribute></serviceSchema>"
+          type: string
+        template_type:
+          description: 服务模版类型
+          example: DEFAULT
           type: string
       type: object
     AlipayOpenAppTestGrayCreateErrorResponseModel:
@@ -63928,6 +63832,12 @@ components:
           description: 关键词配置ID
           example: "20220513000000165607"
           type: string
+        key_words:
+          description: 需要删除的生效关键词
+          example: "[\"关键词1\",\"关键词2\"]"
+          items:
+            type: string
+          type: array
         target_appid:
           description: 小程序id
           example: "2021001120654127"
@@ -64006,6 +63916,7 @@ components:
           - INVALID_PARAMETER
           - SYSTEM_BUSY
           - NOT_ALLOWED_OPERATE
+          - SEARCH_KEYWORD_CONFIG_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -66216,6 +66127,10 @@ components:
           - SYSTEM_ERROR
           - SIGNORDER_BINDED
           - APPLY_ORDER_NOT_EXIST
+          - SP_DISCARD
+          - ILLEGAL_ISV_USER
+          - SP_PAUSE_OR_DELETE
+          - NOTICE_MERCHANT_FAIL
           type: string
         links:
           description: 解决方案链接
@@ -68831,19 +68746,19 @@ components:
           example: "20150320010101001"
           type: string
         present_refund_buyer_amount:
-          description: "本次退款金额中买家退款金额。\t该字段默认不返回；"
+          description: "本次退款金额中买家退款金额。单位：元。\t该字段默认不返回；"
           example: "88.88"
           type: string
         present_refund_discount_amount:
-          description: "本次退款金额中平台优惠退款金额。\t该字段默认不返回；"
+          description: "本次退款金额中平台优惠退款金额。单位：元。\t该字段默认不返回；"
           example: "88.88"
           type: string
         present_refund_mdiscount_amount:
-          description: "本次退款金额中商家优惠退款金额。\t该字段默认不返回；"
+          description: "本次退款金额中商家优惠退款金额。单位：元。\t该字段默认不返回；"
           example: "88.88"
           type: string
         refund_amount:
-          description: 本次退款请求，对应的退款金额
+          description: 本次退款请求，对应的退款金额。单位：元。
           example: "12.33"
           type: string
         refund_channel_list:
@@ -68855,7 +68770,7 @@ components:
           example: SUCCESS
           type: string
         refund_charge_amount:
-          description: "本次退款针对收款方的退收费金额；\t只在机构间联模式下返回，其它场景下不返回该字段；"
+          description: "本次退款针对收款方的退收费金额；单位：元。\t只在机构间联模式下返回，其它场景下不返回该字段；"
           example: "8.88"
           type: string
         refund_charge_info_list:
@@ -68870,7 +68785,7 @@ components:
             $ref: '#/components/schemas/TradeFundBill'
           type: array
         refund_hyb_amount:
-          description: 本次退款金额中退惠营宝的金额
+          description: 本次退款金额中退惠营宝的金额。单位：元。
           example: "10.24"
           type: string
         refund_reason:
@@ -68893,12 +68808,12 @@ components:
           example: REFUND_SUCCESS
           type: string
         send_back_fee:
-          description: "本次商户实际退回金额；\t默认不返回该信息，需要在入参的query_options中指定\"refund_detail_item_list\"\
+          description: "本次商户实际退回金额；单位：元。\t默认不返回该信息，需要在入参的query_options中指定\"refund_detail_item_list\"\
             值时才返回该字段信息。"
           example: "88"
           type: string
         total_amount:
-          description: 该笔退款所对应的交易的订单金额
+          description: 该笔退款所对应的交易的订单金额。单位：元。
           example: "100.20"
           type: string
         trade_no:
@@ -69055,6 +68970,8 @@ components:
           - ACQ.ASYNC_ALLOC_NOT_SUPPORT_IN_PERIOD
           - ACQ.SECONDARY_MERCHANT_ID_INVALID
           - ACQ.MUST_ALLOC_FROM_ROOT_ACCOUNT
+          - ACQ.UN_SUPPORT_BIZ_TYPE
+          - ACQ.ACCESS_FORBIDDEN
           type: string
         links:
           description: 解决方案链接
@@ -70061,7 +69978,7 @@ components:
           example: PRIVATE
           type: string
         charge_amount:
-          description: "该笔交易针对收款方的收费金额；\t 只在银行间联交易场景下返回该信息；"
+          description: "该笔交易针对收款方的收费金额；单位：元。\t 只在银行间联交易场景下返回该信息；"
           example: "8.88"
           type: string
         charge_flags:
@@ -70086,7 +70003,7 @@ components:
           example: creditAdvanceV2
           type: string
         discount_amount:
-          description: 平台优惠金额
+          description: 平台优惠金额。单位：元。
           example: "88.88"
           type: string
         discount_goods_detail:
@@ -70110,7 +70027,7 @@ components:
         hb_fq_pay_info:
           $ref: '#/components/schemas/HbFqPayInfo'
         hyb_amount:
-          description: 惠营宝回票金额
+          description: 惠营宝回票金额。单位：元。
           example: "10.24"
           type: string
         industry_sepc_detail:
@@ -70130,7 +70047,7 @@ components:
           example: "12.11"
           type: string
         mdiscount_amount:
-          description: 商家优惠金额
+          description: 商家优惠金额。单位：元。
           example: "88.88"
           type: string
         open_id:
@@ -70493,19 +70410,19 @@ components:
           example: "6823789339978248"
           type: string
         present_refund_buyer_amount:
-          description: "本次退款金额中买家退款金额;\t该字段默认不返回；"
+          description: "本次退款金额中买家退款金额;单位：元。\t该字段默认不返回；"
           example: "88.88"
           type: string
         present_refund_discount_amount:
-          description: "本次退款金额中平台优惠退款金额；\t该字段默认不返回；"
+          description: "本次退款金额中平台优惠退款金额；单位：元。\t该字段默认不返回；"
           example: "88.88"
           type: string
         present_refund_mdiscount_amount:
-          description: "本次退款金额中商家优惠退款金额；\t该字段默认不返回；"
+          description: "本次退款金额中商家优惠退款金额；单位：元。\t该字段默认不返回；"
           example: "88.88"
           type: string
         refund_charge_amount:
-          description: "本次退款针对收款方的退收费金额；\t只在机构间联模式下返回，其它场景下不返回该字段；"
+          description: "本次退款针对收款方的退收费金额；单位：元。\t只在机构间联模式下返回，其它场景下不返回该字段；"
           example: "8.88"
           type: string
         refund_charge_info_list:
@@ -70524,11 +70441,11 @@ components:
             $ref: '#/components/schemas/TradeFundBill'
           type: array
         refund_fee:
-          description: "退款总金额。\t指该笔交易累计已经退款成功的金额。"
+          description: "退款总金额。单位：元。\t指该笔交易累计已经退款成功的金额。"
           example: "88.88"
           type: string
         refund_hyb_amount:
-          description: 本次请求退惠营宝金额
+          description: 本次请求退惠营宝金额。单位：元。
           example: "10.24"
           type: string
         refund_preset_paytool_list:
@@ -70538,7 +70455,7 @@ components:
           example: "2018101610032004620239146945"
           type: string
         send_back_fee:
-          description: "本次商户实际退回金额。\t说明：如需获取该值，需在入参query_options中传入 refund_detail_item_list。"
+          description: "本次商户实际退回金额。单位：元。\t说明：如需获取该值，需在入参query_options中传入 refund_detail_item_list。"
           example: "1.8"
           type: string
         store_name:
@@ -70765,6 +70682,8 @@ components:
           - ACQ.SECONDARY_MERCHANT_ALIPAY_ACCOUNT_INVALID
           - ACQ.ALREADY_CONFIRM_SETTLE
           - ACQ.SETTLE_ACCOUNT_HAS_BEEN_FROZEN
+          - ACQ.TRADE_HAS_CLOSE
+          - ACQ.TRADE_HAS_FINISHED
           type: string
         links:
           description: 解决方案链接
@@ -73146,6 +73065,9 @@ components:
           - SHOP_NOT_EXIST
           - RELATION_NOT_EXIST
           - NOT_ALLOWED_SETTLE
+          - MER_ARGUMENT_ILLEGAL
+          - THIRD_SYSTEM_ERROR
+          - SYSTEM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -73214,6 +73136,7 @@ components:
           - BANK_ACCOUNTINSTID_ILLEGAL
           - SETTLED_CARD_ACCOUNTTYPE_ILLEGAL
           - BANK_ACCOUNTINSTNAME_ILLEGAL
+          - SYSTEM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -73407,6 +73330,8 @@ components:
           - ATTACHMENT_CHECK_FAIL
           - BUSINESS_TIME_ILLEGAL
           - SHOP_AUDIT_REJECT
+          - MER_ARGUMENT_ILLEGAL
+          - CTU_INDIRECT_CREATE_FAIL
           type: string
         links:
           description: 解决方案链接
@@ -73593,6 +73518,9 @@ components:
           - ATTACHMENT_CHECK_FAIL
           - BUSINESS_TIME_ILLEGAL
           - SHOP_AUDIT_REJECT
+          - ATTACHMENT_URL_NULL
+          - SHOP_CODE_ALREADY_EXIST
+          - MER_ARGUMENT_ILLEGAL
           type: string
         links:
           description: 解决方案链接
@@ -73766,6 +73694,7 @@ components:
           - MERCHANT_NOT_EXIST
           - ADDRESS_VERSION_CODE_ILLEGAL
           - SYSTEM_ERROR
+          - THIRD_SYSTEM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -73825,8 +73754,8 @@ components:
             $ref: '#/components/schemas/ShopExtInfo'
           type: array
         ip_role_id:
-          description: ' 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id
-            则本参数与store_id均必填。'
+          description: 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id
+            则本参数与store_id均必填。
           example: "2088301155943087"
           type: string
         legal_cert_no:
@@ -73885,6 +73814,8 @@ components:
           description: 店铺名称。
           example: 肯德基中关村店
           type: string
+        shop_recommend_info:
+          $ref: '#/components/schemas/ShopRecommendInfo'
         shop_type:
           description: 店铺经营类型，01表示直营，02表示加盟
           example: "01"
@@ -75335,7 +75266,7 @@ components:
           example: 天猫保证金
           type: string
         balance:
-          description: 保证金余额
+          description: 本次操作后的保证金余额。字段数据展示为"--"，表明数据暂未更新，请稍等1分钟后重试。
           example: "1000.00"
           type: string
         biz_desc:
@@ -77493,6 +77424,7 @@ components:
           - ILLEGAL_ARGUMENT_FORMAT
           - ARRANGEMENT_STATUS_ERROR
           - UNKNOWN_ERROR
+          - ACCOUNT_MONEY_LIMIT_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -77852,6 +77784,7 @@ components:
           - QUERY_INVALID_CERTIFYID
           - QUERY_CERTIFYID_EXPIRED
           - SYSTEM_ERROR
+          - ACCOUNT_NOT_AVAILABLE
           type: string
         links:
           description: 解决方案链接
@@ -77895,6 +77828,7 @@ components:
           - ILLEGAL_ARGUMENT_FORMAT
           - UNKNOWN_ERROR
           - INVALID_SWITCH
+          - ACCOUNT_MONEY_LIMIT_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -77935,6 +77869,7 @@ components:
           - UNKNOWN_ERROR
           - INVALID_SWITCH
           - FILE_SIZE_TO_LARGE
+          - ACCOUNT_MONEY_LIMIT_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -78155,6 +78090,17 @@ components:
         delivery_content_type:
           description: "枚举值：\tACTIVITY：活动枚举类型，\tMINI_APP：小程序枚举类型"
           type: string
+        delivery_display_info:
+          $ref: '#/components/schemas/DeliveryDisplayInfo'
+      type: object
+    DeliveryDisplayInfo:
+      properties:
+        main_title:
+          description: 副标题。
+          type: string
+        sub_title:
+          description: 副标题
+          type: string
       type: object
     DeliveryFullSendConfig:
       properties:
@@ -78334,7 +78280,7 @@ components:
           example: 2020-06-02 14:03:48
           type: string
         dback_amount:
-          description: 银行卡冲退金额
+          description: 银行卡冲退金额。单位：元。
           example: "1.01"
           type: string
         dback_status:
@@ -78510,6 +78456,9 @@ components:
         agreement_peer_payer_id:
           description: 协议出资支付宝账号
           type: string
+        benefit_amount:
+          description: 员工优惠金额，单位：元
+          type: string
         biz_out_no:
           description: 外部交易流水号
           type: string
@@ -78521,6 +78470,9 @@ components:
           type: string
         consume_category:
           description: 员工消费记账分类
+          type: string
+        consume_fee_with_discount:
+          description: 订单原价，单位：元，包含营销资产
           type: string
         consume_memo:
           description: 员工消费记账备注
@@ -78950,7 +78902,7 @@ components:
           example: 2022-04-20 17:13:51
           type: string
         sign_status:
-          description: 签约状态（UNSIGNED：未签约，SIGNED：已签约，TERMINATED：已解约）
+          description: 签约状态
           example: SIGNED
           type: string
       type: object
@@ -79362,35 +79314,20 @@ components:
     ExpenseCtrRuleInfo:
       properties:
         rule_factor:
-          description: "费控维度\t枚举值：\tQUOTA_DAY（日额度），\tQUOTA_MONTH（月额度），QUOTA_TOTAL（\
-            有效期总额度），QUOTA_ONCE（单次额度），\tALARM_CLOCK_TIME（时间段），\tCARD_TYPE（地铁卡类型），\t\
-            MEAL_MERCHANT（商户），\tMCC（商户类型），\tDISTRICT（区域）"
+          description: 费控维度
           type: string
         rule_id:
-          description: 费控条件ID 特殊说明：创建时由支付宝生成，无需外部传入
+          description: 费控条件ID
           type: string
         rule_name:
-          description: "费控条件名称\t约束：敏感词校验"
+          description: 费控条件名称
           type: string
         rule_operator:
           description: "费控条件操作符\t枚举值：\tLT(\"<\",\"小于\")\tLE(\"<=\",\"小于等于\")\tEQ(\"\
             =\",\"等于\")\tNE(\"!=\",\"不等于\")\tGE(\">=\",\"大于等于\")\tGT(\">\",\"大于\")"
           type: string
         rule_value:
-          description: "费控条件值\t约束：\t1）金额值以（元）为单位的数值，可以精确到小数点后两位。如费控维度：日额度（QUOTA_DAY）\
-            、月额度（QUOTA_MONTH）、有效期总额度（QUOTA_TOTAL）、单次额度（QUOTA_ONCE）对应的条件值；\t\t2）时间段\
-            （ALARM_CLOCK_TIME）条件值按如下格式传入：\t格式1：星期几格式（custom），节点支持monday/tuesday/wednesday/thursday/friday/saturday/sunday格\
-            式如下：\t{\t\t\"custom\": {\t\t\t\"monday\": [\t\t\t\t[\"12:00\", \"13:30\"\
-            ],\t\t\t\t[\"12:00\", \"13:30\"]\t\t\t],\t\t\t\"sunday\": [\t\t\t\t[\"\
-            12:00\", \"13:30\"]\t\t\t]\t\t}\t}\t格式2：工作日/节假日模式（regular），节点支持workday/holiday两\
-            种，格式如下：\t{\t\t\"regular\": {\t\t\t\"workday\": [\t\t\t\t[\"20:59\", \"\
-            22:01\"]\t\t\t],\t\t\t\"holiday\": [\t\t\t\t[\"20:59\", \"22:01\"]\t\t\
-            \t]\t\t}\t}\t格式3：不限\t{\t\t\"all\": true\t}\t三种格式仅能选其一；\t\t3）费控维度商户（MEAL_MERCHANT）\
-            和商户类型（MCC）条件值\tMEAL_MERCHANT分为商户ID和门店ID两级，一个商户ID可对应多个门店ID；\tMCC分为一级MCC和\
-            二级MCC两级，一个一级MCC可对应多个二级MCC；\t两者的格式均为：\t{\t\t\"一级ID1\": [\"二级ID1\", \"二级\
-            ID2\"]，\t        \"一级ID2\": [\"二级ID3\", \"二级ID4\"]，\t}\t特别：若二级ID不限，可以设\
-            置为-1\t\t4）区域（DISTRICT）和地铁卡类型（CARD_TYPE）条件值\t格式均为数组：\t[\"ID1\", \"ID2\"\
-            ]"
+          description: 费控条件值
           type: string
       type: object
     ExpenseCtrlConsumeInfo:
@@ -79505,14 +79442,12 @@ components:
           example: true
           type: boolean
         owner_id:
-          description: "切换open_id前请使用：额度所属者ID\towner_type为EMPLOYEE时为员工支付宝ID\towner_type为\
-            ENTERPRISE_PAY_UID时为员工企业码ID\towner_type为PHONE时为员工手机号\towner_type为ENTERPRISE时\
-            为企业ID"
+          description: "额度所属者ID\towner_type为EMPLOYEE时为员工支付宝ID\towner_type为ENTERPRISE_PAY_UID时\
+            为员工企业码ID\towner_type为PHONE时为员工手机号\towner_type为ENTERPRISE时为企业ID"
           example: 2088xxx
           type: string
         owner_open_id:
-          description: 切换open_id后请使用：额度所属者ID owner_type为EMPLOYEE时为员工open_id owner_type为PHONE时为员工手机号
-            owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
+          description: owner_type为EMPLOYEE时为员工open_id owner_type为PHONE时为员工手机号 owner_type为ENTERPRISE_PAY_UID时为员工企业码ID
           example: abcdxxxx
           type: string
         owner_type:
@@ -80286,7 +80221,7 @@ components:
     HbFqPayInfo:
       properties:
         fq_amount:
-          description: 用户使用花呗分期支付的金额数
+          description: 用户使用花呗分期支付的金额数。单位：元。
           example: "10.05"
           type: string
         user_install_num:
@@ -80552,7 +80487,7 @@ components:
             key
           type: string
         industry_qualification_type:
-          description: 商户行业资质类型，具体选值参见https://mif-pub.alipayobjects.com/QualificationType.xlsx
+          description: 商户行业资质类型，具体选值参见，进件MCC与资质要求 202212.xlsx中特殊资质栏
           type: string
       type: object
     Instance:
@@ -80597,16 +80532,16 @@ components:
     InstitutionBasicInfo:
       properties:
         consult_mode:
-          description: "费控咨询模式\t0-支付宝内部计算\t1-咨询外部服务商"
+          description: 费控咨询模式
           example: "0"
           type: string
         effective:
-          description: "制度是否启用,1启用0不启用"
+          description: 制度是否启用
           example: "1"
           type: string
         effective_end_date:
           description: 制度生效结束时间
-          example: 2023-07-01 23:59:59
+          example: 2023-07-05 23:59:59
           type: string
         effective_start_date:
           description: 制度生效起始时间
@@ -80614,15 +80549,15 @@ components:
           type: string
         institution_desc:
           description: 制度描述
-          example: 高级模板01
+          example: 工作餐制度
           type: string
         institution_id:
           description: 制度id
-          example: "1100"
+          example: "2023042600152617860000076000"
           type: string
         institution_name:
           description: 制度名称
-          example: 部门加员工
+          example: 餐补制度
           type: string
       type: object
     InteligentBudgetInfo:
@@ -82119,43 +82054,47 @@ components:
     IssueRuleInfo:
       properties:
         effective_period:
-          description: "生效周期，不限：\"{\\\"all\\\":true}\"，默认为不限"
+          description: 生效时间段
           type: string
         invalid_mode:
-          description: 是否可累计，枚举：0（不可累计）、1（可累计），默认为0
+          description: "累计类型，默认为0\t枚举：0（不可累计）、1（可累计）、2（累计天数）、3（累计到指定日期）"
           type: integer
         invalid_mode_value:
-          description: 失效模式值
+          description: 累计类型值
           type: string
         issue_amount_value:
-          description: "发放金额，按城市不同发放标准示例值：\"[{/\"cities/\":[/\"321000/\",/\"321100/\"\
-            ],amount:/\"50/\"},\t{/\"cities/\":[/\"321200/\",/\"321300/\"],amount:/\"\
-            150/\"}]\"\t统一标准发放示例值：200"
+          description: 发放金额
           type: string
         issue_end_date:
-          description: 如果target_type指定INSTITUTION，则使用制度有效期结束时间，无需填写
+          description: 发放规则有效结束时间
           type: string
         issue_rule_id:
-          description: 发放规则id，创建时无需填写
+          description: 发放规则id
           type: string
         issue_rule_name:
           description: 发放规则名称
           type: string
         issue_start_date:
-          description: 如果target_type指定INSTITUTION，则使用制度有效期起始时间，无需填写
+          description: 发放规则有效起始时间
           type: string
         issue_type:
-          description: 发放类型，枚举：ISSUE_MONTH（按月发放）、ISSUE_DAY（按日发放）
+          description: 发放类型
           type: string
         outer_source_id:
-          description: 外部发放规则id，制度内发放规则该字段不允许重复
+          description: 外部发放规则id
           type: string
         quota_type:
-          description: 额度类型，枚举：COUPON（点券）、CAP（余额）
+          description: 额度类型
           type: string
         share_mode:
-          description: 是否可转赠，枚举：0（不可转赠）、1（可转赠），默认为0
+          description: 是否可转赠
           type: integer
+        target_id:
+          description: 目标id
+          type: string
+        target_type:
+          description: 发放规则归属的目标类型
+          type: string
       type: object
     IssueTargetInfoContent:
       properties:
@@ -85859,6 +85798,14 @@ components:
           description: 店铺所在的省份
           example: 浙江省
           type: string
+        service_effect_date:
+          description: 订购的服务有效期生效时间
+          example: 2023-04-03 12:01:45
+          type: string
+        service_expire_date:
+          description: 服务有效期截止时间
+          example: 2023-04-03 12:01:45
+          type: string
         shop_id:
           description: 店铺ID，订购实体为口碑门店的场景该字段必填
           example: "2015052000077000000000182140"
@@ -87046,7 +86993,7 @@ components:
     PresetPayToolInfo:
       properties:
         amount:
-          description: 前置资产金额
+          description: 前置资产金额。单位：元。
           example: "12.21"
           items:
             type: string
@@ -87182,6 +87129,10 @@ components:
           description: 商户名称
           example: 乐刻
           type: string
+        out_biz_no:
+          description: 生活记录加入时的外部业务号
+          example: "84927419"
+          type: string
         period_type:
           description: 周期类型
           example: multi
@@ -87196,7 +87147,7 @@ components:
           type: string
         record_status:
           description: 主任务状态
-          example: FINISH
+          example: PROCESSING、UN_FINISH、CANCELED、FINISH，分别对应进行中、未完成、已取消、已完成
           type: string
         start_time:
           description: 任务开始时间
@@ -87204,7 +87155,7 @@ components:
           type: string
         sub_record_status:
           description: 子记录状态
-          example: FINISH
+          example: PROCESSING、UN_FINISH、CANCELED、FINISH，分别对应进行中、未完成、已取消、已完成
           type: string
         sub_title:
           description: 副标题
@@ -88003,7 +87954,7 @@ components:
           description: 收单手续费trade，花呗分期手续hbfq，其他手续费charge
           type: string
         refund_charge_fee:
-          description: 实退费用
+          description: 实退费用。单位：元。
           type: string
         refund_sub_fee_detail_list:
           description: 组合支付退费明细
@@ -88028,7 +87979,7 @@ components:
     RefundRoyaltyResult:
       properties:
         refund_amount:
-          description: 退分账金额
+          description: 退分账金额。单位：元。
           example: "10"
           type: string
         result_code:
@@ -88059,7 +88010,7 @@ components:
     RefundSubFee:
       properties:
         refund_charge_fee:
-          description: 实退费用
+          description: 实退费用。单位：元。
           type: string
         switch_fee_rate:
           description: 签约费率
@@ -89756,6 +89707,33 @@ components:
           example: NO0001
           type: string
       type: object
+    ShopRecommendInfo:
+      properties:
+        recommend:
+          description: 门店修改建议
+          example: 请修改店名为真实经营的门店名称，如有分店，请修改成品牌（分店名），如大润发（杭州西溪店）
+          type: string
+        recommend_address:
+          description: 推荐详细地址
+          example: 杭州市西湖区**路**号
+          type: string
+        recommend_latitude:
+          description: 推荐纬度
+          example: "30.111"
+          type: string
+        recommend_longtitude:
+          description: 推荐经度
+          example: "120.3333"
+          type: string
+        recommend_name:
+          description: 推荐门店名称
+          example: 大润发（杭州西溪店）
+          type: string
+        unconfidence_reason:
+          description: 门店不置信原因
+          example: 店名不准确
+          type: string
+      type: object
     ShopSummaryQueryResponse:
       properties:
         address:
@@ -90324,39 +90302,20 @@ components:
     StandardConditionInfo:
       properties:
         rule_factor:
-          description: "条件类型\tQUOTA_TOTAL(有效期总额度),\tQUOTA_DAY(日额度),\tQUOTA_WEEK(周额\
-            度),\tQUOTA_SEASON(季额度),\tQUOTA_MONTH(月额度),\tQUOTA_YEAR(年额度),\tQUOTA_ONCE(单\
-            笔额度)，\tALARM_CLOCK_TIME(闹钟时间),\tCARD_TYPE(卡类型),\tCOMBINED_PERIOD_QUOTA(多\
-            时间段额度),\tPERIOD_TIME(多时间段),\tPERIOD_QUOTA(时间段额度),\tMCC(商户类型),\tDISTRICT(消\
-            费区域限制),\tMERCHANT(商户),\tISSUE_CITY(发放城市),\tAREA(坐标围栏),\tTAKE_AWAY_CATEGORY(外\
-            卖类目),\tMEAL_MERCHANT(可选商户限制)，\tSHIPPING_ADDRESS(收餐地址)，\tBOOK_SWITCH(是否\
-            开启预订)，\tMARKED_WORDS(提示单文案)，\tSUPPLIER_CHANNEL(供应商渠道)，\tELM_MERCHANT(饿\
-            了么商户),\tMULT_ISSUE_CITY(多发放城市),\tALLOW_MINIMUM(低消限额)"
+          description: 条件类型
           type: string
         rule_id:
           description: 费控条件ID
           type: string
         rule_name:
-          description: 费控条件名称 约束：敏感词校验
+          description: 费控条件名称
           type: string
         rule_operator:
           description: "费控条件操作符 枚举值： LT(\"<\",\"小于\") LE(\"<=\",\"小于等于\") EQ(\"=\"\
             ,\"等于\") NE(\"!=\",\"不等于\") GE(\">=\",\"大于等于\") GT(\">\",\"大于\")"
           type: string
         rule_value:
-          description: "费控条件值 约束： 1）金额值以（元）为单位的数值，可以精确到小数点后两位。如费控维度：日额度（QUOTA_DAY）\
-            、周额度（QUOTA_WEEK）、月额度（QUOTA_MONTH）、季额度（QUOTA_SEASON）、年额度（QUOTA_YEAR）、有效\
-            期总额度（QUOTA_TOTAL）、单次额度（QUOTA_ONCE）、低消限额（ALLOW_MINIMUM）对应的条件值； 2）时间段（ALARM_CLOCK_TIME）\
-            条件值按如下格式传入： 格式1：星期几格式（custom），节点支持monday/tuesday/wednesday/thursday/friday/saturday/sunday格\
-            式如下： { \"custom\": { \"monday\": [ [\"12:00\", \"13:30\"], [\"12:00\"\
-            , \"13:30\"] ], \"sunday\": [ [\"12:00\", \"13:30\"] ] } } 格式2：工作日/节假日\
-            模式（regular），节点支持workday/holiday两种，格式如下： { \"regular\": { \"workday\":\
-            \ [ [\"20:59\", \"22:01\"] ], \"holiday\": [ [\"20:59\", \"22:01\"] ]\
-            \ } } 格式3：不限 { \"all\": true } 三种格式仅能选其一； 3）费控维度商户（MEAL_MERCHANT）和商户类型\
-            （MCC）条件值 MEAL_MERCHANT分为商户ID和门店ID两级，一个商户ID可对应多个门店ID； MCC分为一级MCC和二级MCC两\
-            级，一个一级MCC可对应多个二级MCC； 两者的格式均为： { \"一级ID1\": [\"二级ID1\", \"二级ID2\"]， \"一\
-            级ID2\": [\"二级ID3\", \"二级ID4\"]， } 特别：若二级ID不限，可以设置为-1 4）区域（DISTRICT）和地铁\
-            卡类型（CARD_TYPE）条件值 格式均为数组： [\"ID1\", \"ID2\"]"
+          description: 费控条件值
           type: string
       type: object
     StandardIdInfo:
@@ -90390,8 +90349,7 @@ components:
           description: 外部使用规则id，制度内使用规则该字段不允许重复
           type: string
         payment_policy:
-          description: "支付策略 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略， 枚举值\
-            ：PERSONAL（全部个人账户支付）, COMBINATION（因公账户和个人账户组合支付）"
+          description: 支付策略 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略
           type: string
         standard_condition_info_list:
           description: 使用规则条件列表
@@ -91371,7 +91329,7 @@ components:
     TradeFundBill:
       properties:
         amount:
-          description: 该支付工具类型所使用的金额
+          description: 该支付工具类型所使用的金额。单位：元。
           type: string
         bank_code:
           description: 银行卡支付时的银行代码
@@ -92134,6 +92092,8 @@ components:
           $ref: '#/components/schemas/UserVoucherBaseInfo'
         voucher_available_scope_info:
           $ref: '#/components/schemas/VoucherAvailableScopeInfo'
+        voucher_customer_guide_info:
+          $ref: '#/components/schemas/VoucherCustomerGuideInfo'
         voucher_deduct_info:
           $ref: '#/components/schemas/VoucherDeductInfo'
         voucher_display_lite_info:
@@ -94801,7 +94761,11 @@ components:
           type: string
         identity_result_skip_url:
           description: 身份认证查询结果页面的小程序链接，有芝麻提供，用户在端内可直接访问
-          example: alipays://platformapi/startapp?appId=2021002112688565&page=....
+          example: alipays://platformapi/startapp?appId
+          type: string
+        token_status:
+          description: 代表订单状态
+          example: FINISH
           type: string
       type: object
     ZhimaCustomerJobworthCloudresumeQueryErrorResponseModel:
@@ -97457,6 +97421,9 @@ components:
           type: string
         data:
           $ref: '#/components/schemas/AlipayOpenAgentCommonSignModel'
+        mini_app_screenshot:
+          format: binary
+          type: string
         shop_scene_pic:
           format: binary
           type: string

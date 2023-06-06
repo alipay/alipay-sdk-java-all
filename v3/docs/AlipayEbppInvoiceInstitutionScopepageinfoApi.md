@@ -40,9 +40,9 @@ public class Example {
     AlipayEbppInvoiceInstitutionScopepageinfoApi apiInstance = new AlipayEbppInvoiceInstitutionScopepageinfoApi(defaultClient);
     String accountId = "2088000194958956"; // String | 企业共同账户id
     String agreementNo = "20215425001112341234"; // String | 授权签约协议号
-    String enterpriseId = "2088000194958956"; // String | 企业ID
+    String enterpriseId = "2088000194958956"; // String | 企业id
     String institutionId = "2022071800152609780000004052"; // String | 制度id
-    String ownerType = "PHONE"; // String | EMPLOYEE（员工支付宝id）,ENTERPRISE_PAY_UID（员工企业码id）,PHONE（员工手机号) 默认返回员工id（支付宝id或企业码员工id），如需返回手机号需指定
+    String ownerType = "PHONE"; // String | 适配id类型
     Integer pageNum = 10; // Integer | 页码
     Integer pageSize = 100; // Integer | 页大小
     try {
@@ -65,9 +65,9 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **accountId** | **String**| 企业共同账户id | [optional] |
 | **agreementNo** | **String**| 授权签约协议号 | [optional] |
-| **enterpriseId** | **String**| 企业ID | [optional] |
+| **enterpriseId** | **String**| 企业id | [optional] |
 | **institutionId** | **String**| 制度id | [optional] |
-| **ownerType** | **String**| EMPLOYEE（员工支付宝id）,ENTERPRISE_PAY_UID（员工企业码id）,PHONE（员工手机号) 默认返回员工id（支付宝id或企业码员工id），如需返回手机号需指定 | [optional] |
+| **ownerType** | **String**| 适配id类型 | [optional] |
 | **pageNum** | **Integer**| 页码 | [optional] |
 | **pageSize** | **Integer**| 页大小 | [optional] |
 

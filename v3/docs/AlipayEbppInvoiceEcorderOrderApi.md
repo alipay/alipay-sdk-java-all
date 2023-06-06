@@ -39,8 +39,8 @@ public class Example {
 
     AlipayEbppInvoiceEcorderOrderApi apiInstance = new AlipayEbppInvoiceEcorderOrderApi(defaultClient);
     String enterpriseId = "2088501296144291"; // String | 企业ID
-    String accountId = "2088000000000000"; // String | 共同账户ID，有企业ID可不传
-    String agreementNo = "20200000000000000000"; // String | 授权签约协议号，有企业ID可不传
+    String accountId = "2088000000000000"; // String | 共同账户ID
+    String agreementNo = "20200000000000000000"; // String | 授权签约协议号
     String orderId = "2020103022000000000000000000"; // String | 订单ID
     String orderType = "METRO"; // String | 订单类型
     try {
@@ -62,8 +62,8 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **enterpriseId** | **String**| 企业ID | [optional] |
-| **accountId** | **String**| 共同账户ID，有企业ID可不传 | [optional] |
-| **agreementNo** | **String**| 授权签约协议号，有企业ID可不传 | [optional] |
+| **accountId** | **String**| 共同账户ID | [optional] |
+| **agreementNo** | **String**| 授权签约协议号 | [optional] |
 | **orderId** | **String**| 订单ID | [optional] |
 | **orderType** | **String**| 订单类型 | [optional] |
 

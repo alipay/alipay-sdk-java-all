@@ -38,8 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceInstitutionDetailinfoApi apiInstance = new AlipayEbppInvoiceInstitutionDetailinfoApi(defaultClient);
-    String accountId = "2088000194958956"; // String | 企业共同账户id，和授权签约协议号共同使用。
-    String agreementNo = "20215425001112341234"; // String | 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+    String accountId = "2088000194958956"; // String | 企业共同账户id
+    String agreementNo = "20215425001112341234"; // String | 授权签约协议号
     String enterpriseId = "2088000194958956"; // String | 企业ID
     String institutionId = "2022071800152609780000004052"; // String | 制度id
     try {
@@ -60,8 +60,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **accountId** | **String**| 企业共同账户id，和授权签约协议号共同使用。 | [optional] |
-| **agreementNo** | **String**| 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。 | [optional] |
+| **accountId** | **String**| 企业共同账户id | [optional] |
+| **agreementNo** | **String**| 授权签约协议号 | [optional] |
 | **enterpriseId** | **String**| 企业ID | [optional] |
 | **institutionId** | **String**| 制度id | [optional] |
 

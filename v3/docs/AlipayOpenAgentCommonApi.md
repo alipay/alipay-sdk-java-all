@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="sign"></a>
 # **sign**
-> Object sign(appDemo, businessLicenseAuthPic, businessLicensePic, data, shopScenePic, shopSignBoardPic, specialLicensePic, webHomeScreenshot, webItemScreenshot, webPayScreenshot, webSitesLoa)
+> Object sign(appDemo, businessLicenseAuthPic, businessLicensePic, data, miniAppScreenshot, shopScenePic, shopSignBoardPic, specialLicensePic, webHomeScreenshot, webItemScreenshot, webPayScreenshot, webSitesLoa)
 
 代签约产品通用接口
 
@@ -42,6 +42,7 @@ public class Example {
     File businessLicenseAuthPic = new File("/path/to/file"); // File | 
     File businessLicensePic = new File("/path/to/file"); // File | 
     AlipayOpenAgentCommonSignModel data = new AlipayOpenAgentCommonSignModel(); // AlipayOpenAgentCommonSignModel | 
+    File miniAppScreenshot = new File("/path/to/file"); // File | 
     File shopScenePic = new File("/path/to/file"); // File | 
     File shopSignBoardPic = new File("/path/to/file"); // File | 
     File specialLicensePic = new File("/path/to/file"); // File | 
@@ -50,7 +51,7 @@ public class Example {
     File webPayScreenshot = new File("/path/to/file"); // File | 
     File webSitesLoa = new File("/path/to/file"); // File | 
     try {
-      Object result = apiInstance.sign(appDemo, businessLicenseAuthPic, businessLicensePic, data, shopScenePic, shopSignBoardPic, specialLicensePic, webHomeScreenshot, webItemScreenshot, webPayScreenshot, webSitesLoa);
+      Object result = apiInstance.sign(appDemo, businessLicenseAuthPic, businessLicensePic, data, miniAppScreenshot, shopScenePic, shopSignBoardPic, specialLicensePic, webHomeScreenshot, webItemScreenshot, webPayScreenshot, webSitesLoa);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenAgentCommonApi#sign");
@@ -71,6 +72,7 @@ public class Example {
 | **businessLicenseAuthPic** | **File**|  | [optional] |
 | **businessLicensePic** | **File**|  | [optional] |
 | **data** | **AlipayOpenAgentCommonSignModel**|  | [optional] |
+| **miniAppScreenshot** | **File**|  | [optional] |
 | **shopScenePic** | **File**|  | [optional] |
 | **shopSignBoardPic** | **File**|  | [optional] |
 | **specialLicensePic** | **File**|  | [optional] |

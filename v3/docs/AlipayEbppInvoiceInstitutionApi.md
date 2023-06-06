@@ -15,7 +15,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 制度新增
 
-制度新增
+制度新增，包含制度下使用规则列表和发放规则列表的新增。
 
 ### Example
 ```java
@@ -82,7 +82,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(accountId, agreementNo, enterpriseId, institutionId)
+> AlipayEbppInvoiceInstitutionDeleteResponseModel delete(accountId, agreementNo, enterpriseId, institutionId)
 
 制度删除
 
@@ -111,12 +111,12 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceInstitutionApi apiInstance = new AlipayEbppInvoiceInstitutionApi(defaultClient);
-    String accountId = "2088000194958956"; // String | 企业共同账户id（条件必填）
-    String agreementNo = "1234"; // String | 授权签约协议号（条件必填）
-    String enterpriseId = "2088123412341234"; // String | 企业id（条件必填）
+    String accountId = "2088000194958956"; // String | 企业共同账户id
+    String agreementNo = "20215425001181407500"; // String | 授权签约协议号
+    String enterpriseId = "2088123412341234"; // String | 企业id
     String institutionId = "2022031000152617000000000001"; // String | 制度id
     try {
-      Object result = apiInstance.delete(accountId, agreementNo, enterpriseId, institutionId);
+      AlipayEbppInvoiceInstitutionDeleteResponseModel result = apiInstance.delete(accountId, agreementNo, enterpriseId, institutionId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceInstitutionApi#delete");
@@ -133,14 +133,14 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **accountId** | **String**| 企业共同账户id（条件必填） | [optional] |
-| **agreementNo** | **String**| 授权签约协议号（条件必填） | [optional] |
-| **enterpriseId** | **String**| 企业id（条件必填） | [optional] |
+| **accountId** | **String**| 企业共同账户id | [optional] |
+| **agreementNo** | **String**| 授权签约协议号 | [optional] |
+| **enterpriseId** | **String**| 企业id | [optional] |
 | **institutionId** | **String**| 制度id | [optional] |
 
 ### Return type
 
-**Object**
+**AlipayEbppInvoiceInstitutionDeleteResponseModel**
 
 ### Authorization
 
@@ -159,7 +159,7 @@ No authorization required
 
 <a name="modify"></a>
 # **modify**
-> Object modify(alipayEbppInvoiceInstitutionModifyModel)
+> AlipayEbppInvoiceInstitutionModifyResponseModel modify(alipayEbppInvoiceInstitutionModifyModel)
 
 制度编辑
 
@@ -190,7 +190,7 @@ public class Example {
     AlipayEbppInvoiceInstitutionApi apiInstance = new AlipayEbppInvoiceInstitutionApi(defaultClient);
     AlipayEbppInvoiceInstitutionModifyModel alipayEbppInvoiceInstitutionModifyModel = new AlipayEbppInvoiceInstitutionModifyModel(); // AlipayEbppInvoiceInstitutionModifyModel | 
     try {
-      Object result = apiInstance.modify(alipayEbppInvoiceInstitutionModifyModel);
+      AlipayEbppInvoiceInstitutionModifyResponseModel result = apiInstance.modify(alipayEbppInvoiceInstitutionModifyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceInstitutionApi#modify");
@@ -211,7 +211,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+**AlipayEbppInvoiceInstitutionModifyResponseModel**
 
 ### Authorization
 

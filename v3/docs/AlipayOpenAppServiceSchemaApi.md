@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayOpenAppServiceSchemaQueryResponseModel query(categoryId)
+> AlipayOpenAppServiceSchemaQueryResponseModel query(categoryId, templateType)
 
 服务schema下发
 
@@ -39,8 +39,9 @@ public class Example {
 
     AlipayOpenAppServiceSchemaApi apiInstance = new AlipayOpenAppServiceSchemaApi(defaultClient);
     String categoryId = "c11111"; // String | 类目id
+    String templateType = "DEFAULT"; // String | 服务模版类型。若当前服务类目只有一个服务模版，可不填。
     try {
-      AlipayOpenAppServiceSchemaQueryResponseModel result = apiInstance.query(categoryId);
+      AlipayOpenAppServiceSchemaQueryResponseModel result = apiInstance.query(categoryId, templateType);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenAppServiceSchemaApi#query");
@@ -58,6 +59,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **categoryId** | **String**| 类目id | [optional] |
+| **templateType** | **String**| 服务模版类型。若当前服务类目只有一个服务模版，可不填。 | [optional] |
 
 ### Return type
 

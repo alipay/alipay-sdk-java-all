@@ -11,7 +11,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="cancel"></a>
 # **cancel**
-> Object cancel(alipayCommerceLogisticsOrderInstantdeliveryCancelModel)
+> AlipayCommerceLogisticsOrderInstantdeliveryCancelResponseModel cancel(alipayCommerceLogisticsOrderInstantdeliveryCancelModel)
 
 取消即时配送订单
 
@@ -42,7 +42,7 @@ public class Example {
     AlipayCommerceLogisticsOrderInstantdeliveryApi apiInstance = new AlipayCommerceLogisticsOrderInstantdeliveryApi(defaultClient);
     AlipayCommerceLogisticsOrderInstantdeliveryCancelModel alipayCommerceLogisticsOrderInstantdeliveryCancelModel = new AlipayCommerceLogisticsOrderInstantdeliveryCancelModel(); // AlipayCommerceLogisticsOrderInstantdeliveryCancelModel | 
     try {
-      Object result = apiInstance.cancel(alipayCommerceLogisticsOrderInstantdeliveryCancelModel);
+      AlipayCommerceLogisticsOrderInstantdeliveryCancelResponseModel result = apiInstance.cancel(alipayCommerceLogisticsOrderInstantdeliveryCancelModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceLogisticsOrderInstantdeliveryApi#cancel");
@@ -63,7 +63,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+**AlipayCommerceLogisticsOrderInstantdeliveryCancelResponseModel**
 
 ### Authorization
 

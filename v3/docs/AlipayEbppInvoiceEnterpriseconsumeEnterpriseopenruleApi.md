@@ -182,10 +182,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleApi apiInstance = new AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleApi(defaultClient);
-    String enterpriseId = "2088000000000"; // String | 企业id
+    String enterpriseId = "2088000194958955"; // String | 企业ID
     String invoiceRuleId = "2021032900152710950000000001"; // String | 开票规则ID
-    String accountId = "2088000194958956"; // String | 共同账户id
-    String agreementNo = "20215425001112341234"; // String | 授权签约协议号（仅使用account_id时必传）
+    String accountId = "2088000194958956"; // String | 共同账户ID
+    String agreementNo = "20215425001112341234"; // String | 授权签约协议号
     try {
       AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleQueryResponseModel result = apiInstance.query(enterpriseId, invoiceRuleId, accountId, agreementNo);
       System.out.println(result);
@@ -204,10 +204,10 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **enterpriseId** | **String**| 企业id | [optional] |
+| **enterpriseId** | **String**| 企业ID | [optional] |
 | **invoiceRuleId** | **String**| 开票规则ID | [optional] |
-| **accountId** | **String**| 共同账户id | [optional] |
-| **agreementNo** | **String**| 授权签约协议号（仅使用account_id时必传） | [optional] |
+| **accountId** | **String**| 共同账户ID | [optional] |
+| **agreementNo** | **String**| 授权签约协议号 | [optional] |
 
 ### Return type
 
