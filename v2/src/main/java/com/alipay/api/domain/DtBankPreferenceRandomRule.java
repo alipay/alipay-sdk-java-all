@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 随机金额立减规则
  *
  * @author auto create
- * @since 1.0, 2023-05-23 17:39:02
+ * @since 1.0, 2023-06-07 09:56:15
  */
 public class DtBankPreferenceRandomRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1868422682257489638L;
+	private static final long serialVersionUID = 6615746828954458378L;
 
 	/**
 	 * 随机满减区间列表

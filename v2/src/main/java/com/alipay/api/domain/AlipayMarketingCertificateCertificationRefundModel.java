@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 撤销凭证核销状态
  *
  * @author auto create
- * @since 1.0, 2023-05-23 00:01:01
+ * @since 1.0, 2023-06-05 14:09:30
  */
 public class AlipayMarketingCertificateCertificationRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4699421951621422424L;
+	private static final long serialVersionUID = 5382775585298865635L;
 
 	/**
 	 * 撤销核销时间。格式为：yyyy-MM-dd HH:mm:ss
@@ -22,9 +24,10 @@ public class AlipayMarketingCertificateCertificationRefundModel extends AlipayOb
 	private Date bizDt;
 
 	/**
-	 * 已核销待冲正的三方码。取值为支付宝调用三方凭证发放spi时商户返回的三方码
+	 * 已核销待冲正的三方码。取值为支付宝调用三方凭证发放spi时商户返回的三方码 当前字段已废弃(指定凭证id做单次核销撤回)
 	 */
 	@ApiField("code")
+	@Deprecated
 	private String code;
 
 	/**
@@ -34,9 +37,10 @@ public class AlipayMarketingCertificateCertificationRefundModel extends AlipayOb
 	private String openId;
 
 	/**
-	 * 购买商品的订单id。通过下单接口获取订单id
+	 * 购买商品的订单id。通过下单接口获取订单id，新接口不再支持，请勿使用 当前字段已废弃(指定凭证id做单次核销撤回)
 	 */
 	@ApiField("order_id")
+	@Deprecated
 	private String orderId;
 
 	/**
@@ -44,6 +48,13 @@ public class AlipayMarketingCertificateCertificationRefundModel extends AlipayOb
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 核销接口返回的核销操作单号，撤销orderNo对应的核销操作
+	 */
+	@ApiListField("use_order_no_list")
+	@ApiField("string")
+	private List<String> useOrderNoList;
 
 	/**
 	 * 凭证归属支付宝用户id
@@ -84,6 +95,13 @@ public class AlipayMarketingCertificateCertificationRefundModel extends AlipayOb
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public List<String> getUseOrderNoList() {
+		return this.useOrderNoList;
+	}
+	public void setUseOrderNoList(List<String> useOrderNoList) {
+		this.useOrderNoList = useOrderNoList;
 	}
 
 	public String getUserId() {

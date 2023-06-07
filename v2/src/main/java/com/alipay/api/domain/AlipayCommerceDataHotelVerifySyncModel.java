@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 酒店扫码核验做核验服务进件
  *
  * @author auto create
- * @since 1.0, 2022-10-27 11:26:15
+ * @since 1.0, 2023-06-05 14:00:29
  */
 public class AlipayCommerceDataHotelVerifySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3243662155974374945L;
+	private static final long serialVersionUID = 8491172353692433968L;
 
 	/**
 	 * 酒店扫码核验业务场景下，核验人基本信息页面的展示配置

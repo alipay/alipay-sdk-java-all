@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PosOrderInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3775651669266257335L;
+	private static final long serialVersionUID = 7537315237619356369L;
 
 	/**
 	 * 设备数量

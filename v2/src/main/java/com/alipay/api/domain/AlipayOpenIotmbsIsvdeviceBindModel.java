@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv绑定酒店设备
  *
  * @author auto create
- * @since 1.0, 2023-05-31 16:33:18
+ * @since 1.0, 2023-06-01 15:04:51
  */
 public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4451821313894554198L;
+	private static final long serialVersionUID = 1483917638718457889L;
+
+	/**
+	 * 设备蓝牙mac地址
+	 */
+	@ApiField("bt_mac")
+	private String btMac;
 
 	/**
 	 * 传入绑定设备的类型。
@@ -88,6 +94,13 @@ public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 	 */
 	@ApiField("sn")
 	private String sn;
+
+	public String getBtMac() {
+		return this.btMac;
+	}
+	public void setBtMac(String btMac) {
+		this.btMac = btMac;
+	}
 
 	public String getDeviceCategory() {
 		return this.deviceCategory;

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户券详情
  *
  * @author auto create
- * @since 1.0, 2022-09-27 13:46:01
+ * @since 1.0, 2023-06-01 17:51:28
  */
 public class UserVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5531141989418245417L;
+	private static final long serialVersionUID = 2315923625584696827L;
 
 	/**
 	 * 活动基础信息。
@@ -62,6 +62,12 @@ public class UserVoucherInfo extends AlipayObject {
 	 */
 	@ApiField("voucher_available_scope_info")
 	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
+
+	/**
+	 * 券引导信息
+	 */
+	@ApiField("voucher_customer_guide_info")
+	private VoucherCustomerGuideInfo voucherCustomerGuideInfo;
 
 	/**
 	 * 券优惠信息。
@@ -177,6 +183,13 @@ public class UserVoucherInfo extends AlipayObject {
 	}
 	public void setVoucherAvailableScopeInfo(VoucherAvailableScopeInfo voucherAvailableScopeInfo) {
 		this.voucherAvailableScopeInfo = voucherAvailableScopeInfo;
+	}
+
+	public VoucherCustomerGuideInfo getVoucherCustomerGuideInfo() {
+		return this.voucherCustomerGuideInfo;
+	}
+	public void setVoucherCustomerGuideInfo(VoucherCustomerGuideInfo voucherCustomerGuideInfo) {
+		this.voucherCustomerGuideInfo = voucherCustomerGuideInfo;
 	}
 
 	public VoucherDeductInfo getVoucherDeductInfo() {

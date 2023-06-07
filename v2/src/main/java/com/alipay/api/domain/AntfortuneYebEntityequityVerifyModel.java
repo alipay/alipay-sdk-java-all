@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneYebEntityequityVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8536319786731464832L;
+	private static final long serialVersionUID = 7565399694311164448L;
 
 	/**
 	 * 阿里云回调接口应用ID, appid这个名称是阿里云定义的

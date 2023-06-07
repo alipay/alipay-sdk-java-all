@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 使用规则
  *
  * @author auto create
- * @since 1.0, 2023-05-19 15:30:30
+ * @since 1.0, 2023-06-02 15:03:35
  */
 public class StandardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1442838772684718529L;
+	private static final long serialVersionUID = 3593289935389676533L;
 
 	/**
 	 * 当前规则可使用的其他资产来源信息
@@ -52,7 +52,7 @@ DEFAULT（默认模式）
 	private String outerSourceId;
 
 	/**
-	 * 支付策略 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略， 枚举值：PERSONAL（全部个人账户支付）, COMBINATION（因公账户和个人账户组合支付）
+	 * 支付策略 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略
 	 */
 	@ApiField("payment_policy")
 	private String paymentPolicy;

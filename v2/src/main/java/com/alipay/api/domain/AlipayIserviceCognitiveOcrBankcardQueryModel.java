@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCognitiveOcrBankcardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1695441853235893481L;
+	private static final long serialVersionUID = 4635277449287435832L;
 
 	/**
 	 * 图片base64后内容，大小控制在1M以内

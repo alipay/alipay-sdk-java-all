@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2023-05-25 10:44:02
+ * @since 1.0, 2023-06-01 10:45:47
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7447965318352282229L;
+	private static final long serialVersionUID = 5837387936835342773L;
 
 	/**
 	 * 商品描述信息
@@ -67,6 +67,12 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
+
+	/**
+	 * 平台商品版本号，用于查询商品快照
+	 */
+	@ApiField("platform_item_version_id")
+	private String platformItemVersionId;
 
 	/**
 	 * 商品单价，单位：元
@@ -147,6 +153,13 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	}
 	public void setOutSkuId(String outSkuId) {
 		this.outSkuId = outSkuId;
+	}
+
+	public String getPlatformItemVersionId() {
+		return this.platformItemVersionId;
+	}
+	public void setPlatformItemVersionId(String platformItemVersionId) {
+		this.platformItemVersionId = platformItemVersionId;
 	}
 
 	public String getSalePrice() {

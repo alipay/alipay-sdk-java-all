@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.evisa.status.sync request
  * 
  * @author auto create
- * @since 1.0, 2019-07-05 10:10:01
+ * @since 1.0, 2023-06-01 20:43:16
  */
 public class ZhimaMerchantEvisaStatusSyncRequest implements AlipayRequest<ZhimaMerchantEvisaStatusSyncResponse> {
 

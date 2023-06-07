@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随机金额立减区间信息
  *
  * @author auto create
- * @since 1.0, 2023-05-23 17:25:08
+ * @since 1.0, 2023-06-07 09:56:15
  */
 public class DtBankRandomRangeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6537638314915264169L;
+	private static final long serialVersionUID = 3598687996492367593L;
 
 	/**
 	 * 随机区间上限，单位分

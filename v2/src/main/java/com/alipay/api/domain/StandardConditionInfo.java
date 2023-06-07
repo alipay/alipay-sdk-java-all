@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用规则条件列表
  *
  * @author auto create
- * @since 1.0, 2023-05-19 15:30:20
+ * @since 1.0, 2023-06-02 15:03:43
  */
 public class StandardConditionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6289516312366712392L;
+	private static final long serialVersionUID = 8174876656834159655L;
 
 	/**
 	 * 条件类型

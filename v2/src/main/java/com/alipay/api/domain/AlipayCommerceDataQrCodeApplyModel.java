@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 酒店二维码发放
  *
  * @author auto create
- * @since 1.0, 2022-10-27 10:21:53
+ * @since 1.0, 2023-06-05 14:00:49
  */
 public class AlipayCommerceDataQrCodeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1677382694699948744L;
+	private static final long serialVersionUID = 2551632291256121616L;
 
 	/**
 	 * 业务类型

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 招商报名信息
  *
  * @author auto create
- * @since 1.0, 2022-02-23 11:50:36
+ * @since 1.0, 2023-06-06 15:25:27
  */
 public class RecruitEnrollInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8816511457239976791L;
+	private static final long serialVersionUID = 6263586595485158953L;
 
 	/**
 	 * 报名提交的活动城市码，详见<a href="https://opendocs.alipay.com/pre-open/02r07u" target="_blank">活动城市码</a>
@@ -24,9 +24,10 @@ public class RecruitEnrollInfo extends AlipayObject {
 	private List<String> cities;
 
 	/**
-	 * 报名商户
+	 * 报名商户 当前字段已废弃(原本是承载活动报名归属商户的信息，现在改为开放平台代开发（代调用）模式了，该字段废弃。)
 	 */
 	@ApiField("enroll_merchant")
+	@Deprecated
 	private RecruitEnrollMerchant enrollMerchant;
 
 	/**

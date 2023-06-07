@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退款信息
  *
  * @author auto create
- * @since 1.0, 2023-05-06 11:59:01
+ * @since 1.0, 2023-06-05 19:11:15
  */
 public class RefundRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2867632275942433575L;
+	private static final long serialVersionUID = 7687512621317489562L;
 
 	/**
-	 * 退款金额
+	 * 退款金额，单位为元
 	 */
 	@ApiField("amount")
 	private String amount;

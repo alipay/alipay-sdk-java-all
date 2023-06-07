@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalFincloudGeneralsaasFaceFeeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8525954375575632447L;
+	private static final long serialVersionUID = 8137373754446728971L;
 
 	/** 
 	 * certify_id：要查询计费状态的单据

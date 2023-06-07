@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成绿色能量
  *
  * @author auto create
- * @since 1.0, 2022-05-13 19:32:54
+ * @since 1.0, 2023-06-05 10:18:16
  */
 public class AlipaySocialOpengreenEnergyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7856251983616934867L;
+	private static final long serialVersionUID = 2719615616765455316L;
 
 	/**
-	 * 当前时间毫秒值
+	 * 用户进行绿色行为的时间，毫秒值，如果不传，默认为调用接口的时间
 	 */
 	@ApiField("action_time")
 	private String actionTime;
 
 	/**
-	 * 随机数，每个用户不唯一
+	 * 随机业务值，业务唯一单号，用户每一次绿色行为的唯一标识，幂等使用，最好32位，最长不能超过64位
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
 
 	/**
-	 * 扩展字符串
+	 * 扩展字符串，用于承接业务方的一些特殊字段，也用于承接一些特殊绿色场景所需传递的特殊字符串，比如缴费场景需要传入户号信息
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
 
 	/**
-	 * 二级场景类目
+	 * 二级场景类目， 用于描述用户的绿色行为以及对应的业务值
 	 */
 	@ApiField("green_actions")
 	private String greenActions;

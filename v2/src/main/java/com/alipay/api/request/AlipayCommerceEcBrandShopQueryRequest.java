@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.brand.shop.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:01:54
+ * @since 1.0, 2023-06-06 10:52:37
  */
 public class AlipayCommerceEcBrandShopQueryRequest implements AlipayRequest<AlipayCommerceEcBrandShopQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataIotdataBaiCargocountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6363891678455615312L;
+	private static final long serialVersionUID = 1342122685516433935L;
 
 	/**
 	 * 货物盘点使用的摄像头id

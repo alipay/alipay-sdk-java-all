@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行政区划查询
  *
  * @author auto create
- * @since 1.0, 2023-04-23 10:55:00
+ * @since 1.0, 2023-06-06 10:51:58
  */
 public class AlipayCommerceEcDistrictQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7737258419563398967L;
+	private static final long serialVersionUID = 6389938552877463939L;
 
 	/**
 	 * 行政区划等级

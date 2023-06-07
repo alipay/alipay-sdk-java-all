@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.tradecomplain.supplement.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:36:59
+ * @since 1.0, 2023-06-02 18:06:56
  */
 public class AlipayMerchantTradecomplainSupplementSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2499779649818197516L;
+	private static final long serialVersionUID = 3896481838819499244L;
 
 	
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 品牌门店查询
  *
  * @author auto create
- * @since 1.0, 2023-05-08 18:41:27
+ * @since 1.0, 2023-06-06 10:52:37
  */
 public class AlipayCommerceEcBrandShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2889475467168531463L;
+	private static final long serialVersionUID = 5248738284528676161L;
 
 	/**
 	 * 品牌id列表

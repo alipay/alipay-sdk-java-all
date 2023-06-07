@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignRestrictInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4383349912935913872L;
+	private static final long serialVersionUID = 7288767351411279613L;
 
 	/**
 	 * 产品码，支付宝定义的产品码

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业认证记录
  *
  * @author auto create
- * @since 1.0, 2023-05-29 10:47:23
+ * @since 1.0, 2023-06-05 10:24:51
  */
 public class EnterpriseAuthApplyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4591796987816684179L;
+	private static final long serialVersionUID = 2496221719186424646L;
 
 	/**
 	 * 企业认证申请时间

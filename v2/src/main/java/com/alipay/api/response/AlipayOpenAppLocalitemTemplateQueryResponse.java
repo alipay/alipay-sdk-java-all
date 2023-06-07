@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:46:48
+ * @since 1.0, 2023-06-05 11:56:48
  */
 public class AlipayOpenAppLocalitemTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4231332433626474971L;
+	private static final long serialVersionUID = 5725187644936934838L;
 
 	/** 
-	 * 属性分组
+	 * 属性分组，具体的属性值可以参考本地生活商品模板文档：https://opendocs.alipay.com/pre-open/07pywg?pathHash=1c499cb5
 	 */
 	@ApiField("attr")
 	private ItemAttrGroupVO attr;

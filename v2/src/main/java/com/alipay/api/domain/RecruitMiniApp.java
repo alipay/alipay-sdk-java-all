@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitMiniApp extends AlipayObject {
 
-	private static final long serialVersionUID = 4765838784433798392L;
+	private static final long serialVersionUID = 8224152761281775636L;
 
 	/**
 	 * 小程序ID

@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投诉详情查询结果
  *
  * @author auto create
- * @since 1.0, 2023-05-12 15:44:15
+ * @since 1.0, 2023-06-06 14:21:44
  */
 public class ComplaintInfoQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5354593587497261275L;
+	private static final long serialVersionUID = 7241552295865577769L;
 
 	/**
-	 * 投诉单涉及交易总金额
+	 * 投诉单涉及交易总金额（单位：人民币元）
 	 */
 	@ApiField("complain_amount")
 	private String complainAmount;

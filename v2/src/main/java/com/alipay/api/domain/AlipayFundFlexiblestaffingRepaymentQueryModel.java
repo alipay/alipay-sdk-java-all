@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工卡转账结果查询
  *
  * @author auto create
- * @since 1.0, 2023-05-26 19:17:53
+ * @since 1.0, 2023-06-02 15:36:18
  */
 public class AlipayFundFlexiblestaffingRepaymentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1389656555611644177L;
+	private static final long serialVersionUID = 4683554414169861283L;
 
 	/**
 	 * 场景码

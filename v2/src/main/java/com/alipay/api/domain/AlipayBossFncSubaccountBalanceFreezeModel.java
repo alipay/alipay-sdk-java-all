@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncSubaccountBalanceFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4757759172537865475L;
+	private static final long serialVersionUID = 8517437975586434388L;
 
 	/**
 	 * 子户余额冻结请求

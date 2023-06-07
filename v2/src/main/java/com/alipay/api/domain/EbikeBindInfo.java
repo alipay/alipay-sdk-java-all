@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电动车绑定信息
  *
  * @author auto create
- * @since 1.0, 2023-05-22 11:33:07
+ * @since 1.0, 2023-06-05 15:39:51
  */
 public class EbikeBindInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7492687556861963645L;
+	private static final long serialVersionUID = 6557923397119835964L;
 
 	/**
 	 * 电动车品牌唯一标识
@@ -42,6 +42,12 @@ public class EbikeBindInfo extends AlipayObject {
 	 */
 	@ApiField("ebike_no")
 	private String ebikeNo;
+
+	/**
+	 * 车类型（4G车/蓝牙车/非智能车）
+	 */
+	@ApiField("ebike_type")
+	private String ebikeType;
 
 	/**
 	 * 绑定状态
@@ -82,6 +88,13 @@ public class EbikeBindInfo extends AlipayObject {
 	}
 	public void setEbikeNo(String ebikeNo) {
 		this.ebikeNo = ebikeNo;
+	}
+
+	public String getEbikeType() {
+		return this.ebikeType;
+	}
+	public void setEbikeType(String ebikeType) {
+		this.ebikeType = ebikeType;
 	}
 
 	public Boolean getIsBind() {

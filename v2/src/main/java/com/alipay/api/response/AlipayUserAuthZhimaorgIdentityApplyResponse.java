@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAuthZhimaorgIdentityApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1622445341136772139L;
+	private static final long serialVersionUID = 3589141484283262844L;
 
 	/** 
 	 * 访问令牌。通过该令牌调用需要授权类接口

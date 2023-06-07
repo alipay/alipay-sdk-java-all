@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 快消百万小店项目，商家活动单品数据
  *
  * @author auto create
- * @since 1.0, 2022-04-28 10:27:58
+ * @since 1.0, 2023-06-06 11:26:44
  */
 public class MerchantActivityGoods extends AlipayObject {
 
-	private static final long serialVersionUID = 1454423575499465788L;
+	private static final long serialVersionUID = 4842419287781411671L;
 
 	/**
 	 * 活动单品信息

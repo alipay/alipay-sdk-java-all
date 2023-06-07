@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能立减规则
  *
  * @author auto create
- * @since 1.0, 2023-05-23 17:25:14
+ * @since 1.0, 2023-06-07 09:56:15
  */
 public class DtBankPreferenceIntelligentRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3747598953924187888L;
+	private static final long serialVersionUID = 6747855968592415882L;
 
 	/**
 	 * 最大优惠金额，单位分

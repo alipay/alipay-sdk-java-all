@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsUnderwriteMutualPolicyBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8648572279234792478L;
+	private static final long serialVersionUID = 5165895782359483234L;
 
 	/** 
 	 * 宝贝计划ID

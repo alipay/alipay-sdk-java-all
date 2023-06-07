@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationZftApplyresultSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8146199776646241211L;
+	private static final long serialVersionUID = 6337274256482232397L;
 
 	
 

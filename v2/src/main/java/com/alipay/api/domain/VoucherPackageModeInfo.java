@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券包玩法
  *
  * @author auto create
- * @since 1.0, 2022-12-07 19:54:11
+ * @since 1.0, 2023-06-01 17:31:32
  */
 public class VoucherPackageModeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5674776881737662674L;
+	private static final long serialVersionUID = 6426127837579279588L;
 
 	/**
 	 * 券包id，对应alipay.marketing.activity.voucherpackage.query中voucher_package_id。

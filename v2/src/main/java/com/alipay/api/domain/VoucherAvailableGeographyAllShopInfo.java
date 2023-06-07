@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 全部门店可用
  *
  * @author auto create
- * @since 1.0, 2022-12-08 21:46:07
+ * @since 1.0, 2023-06-01 17:31:33
  */
 public class VoucherAvailableGeographyAllShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4259654875639276911L;
+	private static final long serialVersionUID = 1742215933579697599L;
 
 	/**
 	 * 券不可使用的门店列表。指定商户全部门店可用时可通过该字段排除部分不可用门店。 列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。

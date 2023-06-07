@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayCodecHschoolDecodeUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3829941326888467249L;
+	private static final long serialVersionUID = 2418658142226361658L;
 
 	/** 
 	 * 学生短号

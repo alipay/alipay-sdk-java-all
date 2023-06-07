@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotvspOrguserDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2677259484127118516L;
+	private static final long serialVersionUID = 4617493311459539824L;
 
 	/**
 	 * 签约主体外标id

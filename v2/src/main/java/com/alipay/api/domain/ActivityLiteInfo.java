@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动摘要信息
  *
  * @author auto create
- * @since 1.0, 2022-08-24 17:41:45
+ * @since 1.0, 2023-06-01 17:51:19
  */
 public class ActivityLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5153988986545453488L;
+	private static final long serialVersionUID = 6113354166611697661L;
 
 	/**
 	 * 活动基础信息。
@@ -68,6 +68,12 @@ public class ActivityLiteInfo extends AlipayObject {
 	 */
 	@ApiField("voucher_available_scope_info")
 	private VoucherAvailableScopeInfo voucherAvailableScopeInfo;
+
+	/**
+	 * 券引导信息
+	 */
+	@ApiField("voucher_customer_guide_info")
+	private VoucherCustomerGuideInfo voucherCustomerGuideInfo;
 
 	/**
 	 * 券优惠信息。
@@ -172,6 +178,13 @@ public class ActivityLiteInfo extends AlipayObject {
 	}
 	public void setVoucherAvailableScopeInfo(VoucherAvailableScopeInfo voucherAvailableScopeInfo) {
 		this.voucherAvailableScopeInfo = voucherAvailableScopeInfo;
+	}
+
+	public VoucherCustomerGuideInfo getVoucherCustomerGuideInfo() {
+		return this.voucherCustomerGuideInfo;
+	}
+	public void setVoucherCustomerGuideInfo(VoucherCustomerGuideInfo voucherCustomerGuideInfo) {
+		this.voucherCustomerGuideInfo = voucherCustomerGuideInfo;
 	}
 
 	public VoucherDeductInfo getVoucherDeductInfo() {

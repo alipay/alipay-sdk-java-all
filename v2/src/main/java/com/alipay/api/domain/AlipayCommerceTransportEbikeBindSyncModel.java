@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电动车绑定状态同步
  *
  * @author auto create
- * @since 1.0, 2023-05-19 10:00:29
+ * @since 1.0, 2023-06-05 15:39:51
  */
 public class AlipayCommerceTransportEbikeBindSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4489515657775293142L;
+	private static final long serialVersionUID = 6164878998535184518L;
 
 	/**
 	 * 电动车品牌绑定状态列表

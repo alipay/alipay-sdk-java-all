@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundBailOrderMigrateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7748428861483269343L;
+	private static final long serialVersionUID = 3568823798864265977L;
 
 	/** 
 	 * 错误码

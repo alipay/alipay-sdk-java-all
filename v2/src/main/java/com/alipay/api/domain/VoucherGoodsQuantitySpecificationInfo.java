@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 规格信息，数量，大小，尺寸等
  *
  * @author auto create
- * @since 1.0, 2023-03-30 14:14:32
+ * @since 1.0, 2023-06-01 17:31:33
  */
 public class VoucherGoodsQuantitySpecificationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1146829518758129269L;
+	private static final long serialVersionUID = 4495164165746455435L;
 
 	/**
 	 * 定向类型用于规格设置，比如：FIX 表示 固定满X件，APPOINT 表示指定第N件

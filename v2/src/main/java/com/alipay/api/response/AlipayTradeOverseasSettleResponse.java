@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.overseas.settle response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:51:59
+ * @since 1.0, 2023-06-06 10:22:07
  */
 public class AlipayTradeOverseasSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6256252677286767338L;
+	private static final long serialVersionUID = 7284681537657433133L;
 
 	/** 
 	 * 本笔跨境结算使用的汇率，精度 8 位小数

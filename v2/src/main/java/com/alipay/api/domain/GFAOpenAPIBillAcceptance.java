@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财账单受理模型
  *
  * @author auto create
- * @since 1.0, 2022-11-09 14:40:22
+ * @since 1.0, 2023-06-02 16:38:43
  */
 public class GFAOpenAPIBillAcceptance extends AlipayObject {
 
-	private static final long serialVersionUID = 8542645966735368361L;
+	private static final long serialVersionUID = 3287378377366967743L;
 
 	/**
 	 * 摊销扩展信息
@@ -140,6 +140,12 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	 */
 	@ApiField("real_amount")
 	private String realAmount;
+
+	/**
+	 * 外部业务关联单据号
+	 */
+	@ApiField("rel_out_business_no")
+	private String relOutBusinessNo;
 
 	/**
 	 * 业务发生量/业务发生金额。如果是金额，则为各币种的“元”单位，精确到小数点后两位。
@@ -334,6 +340,13 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	}
 	public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
+	}
+
+	public String getRelOutBusinessNo() {
+		return this.relOutBusinessNo;
+	}
+	public void setRelOutBusinessNo(String relOutBusinessNo) {
+		this.relOutBusinessNo = relOutBusinessNo;
 	}
 
 	public Long getServiceAmount() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.data.hotel.service.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:32:18
+ * @since 1.0, 2023-06-05 14:01:07
  */
 public class AlipayCommerceDataHotelServiceSyncRequest implements AlipayRequest<AlipayCommerceDataHotelServiceSyncResponse> {
 

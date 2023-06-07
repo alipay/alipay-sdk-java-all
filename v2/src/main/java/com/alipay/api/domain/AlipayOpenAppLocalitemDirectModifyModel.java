@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序本地商品免审更新商品接口
  *
  * @author auto create
- * @since 1.0, 2023-05-19 14:55:55
+ * @since 1.0, 2023-06-01 14:04:16
  */
 public class AlipayOpenAppLocalitemDirectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4836297368419546841L;
+	private static final long serialVersionUID = 7532882256696373291L;
 
 	/**
-	 * 商品属性列表
+	 * 商品属性列表，具体的属性值可以参考本地生活商品模板文档：https://opendocs.alipay.com/pre-open/07pywg?pathHash=1c499cb5
 	 */
 	@ApiListField("attrs")
 	@ApiField("app_item_attr_v_o")
@@ -41,6 +41,12 @@ public class AlipayOpenAppLocalitemDirectModifyModel extends AlipayObject {
 	@ApiListField("skus")
 	@ApiField("local_item_direct_modify_sku")
 	private List<LocalItemDirectModifySku> skus;
+
+	/**
+	 * start_time描述售卖开始时间，end_time描述售卖结束时间，时间格式均为yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("sold_time")
+	private TimeRangeStructVO soldTime;
 
 	public List<AppItemAttrVO> getAttrs() {
 		return this.attrs;
@@ -68,6 +74,13 @@ public class AlipayOpenAppLocalitemDirectModifyModel extends AlipayObject {
 	}
 	public void setSkus(List<LocalItemDirectModifySku> skus) {
 		this.skus = skus;
+	}
+
+	public TimeRangeStructVO getSoldTime() {
+		return this.soldTime;
+	}
+	public void setSoldTime(TimeRangeStructVO soldTime) {
+		this.soldTime = soldTime;
 	}
 
 }

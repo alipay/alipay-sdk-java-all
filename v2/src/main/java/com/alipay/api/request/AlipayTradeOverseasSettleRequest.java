@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.overseas.settle request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:51:59
+ * @since 1.0, 2023-06-06 10:22:07
  */
 public class AlipayTradeOverseasSettleRequest implements AlipayRequest<AlipayTradeOverseasSettleResponse> {
 

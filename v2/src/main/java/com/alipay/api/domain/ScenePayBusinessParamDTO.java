@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScenePayBusinessParamDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3358734141561724899L;
+	private static final long serialVersionUID = 7597415147893456175L;
 
 	/**
 	 * 商圈中本次交易发生的商铺的识别号，在同一商铺类型下唯一

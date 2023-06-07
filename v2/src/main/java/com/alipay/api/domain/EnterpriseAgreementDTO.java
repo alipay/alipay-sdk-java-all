@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业签约信息
  *
  * @author auto create
- * @since 1.0, 2022-07-14 18:57:21
+ * @since 1.0, 2023-06-06 16:48:00
  */
 public class EnterpriseAgreementDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1487619195598524516L;
+	private static final long serialVersionUID = 4253432987343928947L;
 
 	/**
 	 * 协议id
@@ -38,7 +38,7 @@ public class EnterpriseAgreementDTO extends AlipayObject {
 	private String signDate;
 
 	/**
-	 * 签约状态（UNSIGNED：未签约，SIGNED：已签约，TERMINATED：已解约）
+	 * 签约状态
 	 */
 	@ApiField("sign_status")
 	private String signStatus;

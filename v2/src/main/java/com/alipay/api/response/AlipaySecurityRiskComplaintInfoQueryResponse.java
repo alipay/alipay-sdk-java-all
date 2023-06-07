@@ -12,14 +12,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.complaint.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:16:48
+ * @since 1.0, 2023-06-06 19:26:56
  */
 public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4671187748366177935L;
+	private static final long serialVersionUID = 8217982534594947157L;
 
 	/** 
-	 * 投诉单涉及交易总金额
+	 * 投诉单涉及交易总金额（单位：人民币元）
 	 */
 	@ApiField("complain_amount")
 	private String complainAmount;
@@ -111,7 +111,7 @@ public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse
 	private String processRemark;
 
 	/** 
-	 * [{"value":"DROP_COMPLAIN","name":"用户撤诉"}, {"value":"DROP_OVERDUE_COMPLAIN","name":"超时后用户撤诉"}, {"value":"DROP_OVERDUE_PROCESSED","name":"超时处理完成用户撤诉"}, {"value":"DROP_PROCESSED","name":"处理完成用户撤诉"}, {"value":"OVERDUE","name":"超时未处理"}, {"value":"OVERDUE_PROCESSED","name":"超时处理完成"}, {"value":"PART_OVERDUE","name":"部分超时未处理"}, {"value":"PROCESSED","name":"处理完成"}, {"value":"PROCESSING","name":"处理中"}, {"value":"WAIT_PROCESS","name":"待处理"}]
+	 * 投诉状态
 	 */
 	@ApiField("status")
 	private String status;
