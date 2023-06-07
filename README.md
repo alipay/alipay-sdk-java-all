@@ -4,6 +4,8 @@ Alipay SDK for Java让您不用复杂编程即可访支付宝开放平台开放�
 
 支付宝目前提供 [v2](v2/README.md)、[v3](v3/README.md) 两个版本SDK，根据您的习惯自由选择。
 
+为了向广大开发者提供更好的使用体验，支付宝诚挚邀请您反馈使用v3 SDK的感受。您的反馈将对改进 SDK 大有帮助，点击参与 [问卷调查](https://survey.taobao.com/apps/zhiliao/vddMu4A8H) 。
+
 ## v2 & v3
 
 v2版本将会发起基于v2协议的OpenAPI，v3版本将会发起基于v3协议的OpenAPI。
