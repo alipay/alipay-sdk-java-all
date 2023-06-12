@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 客服热线信息
  *
  * @author auto create
- * @since 1.0, 2020-11-18 10:00:46
+ * @since 1.0, 2023-06-09 10:12:27
  */
 public class AgentHotlineInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4545799859347113241L;
+	private static final long serialVersionUID = 7114339748126235356L;
 
 	/**
 	 * 数据权限id(租户实例id)

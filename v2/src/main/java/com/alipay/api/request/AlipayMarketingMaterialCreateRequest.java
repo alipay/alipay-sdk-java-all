@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.material.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:38:35
+ * @since 1.0, 2023-06-09 11:01:16
  */
 public class AlipayMarketingMaterialCreateRequest implements AlipayRequest<AlipayMarketingMaterialCreateResponse> {
 

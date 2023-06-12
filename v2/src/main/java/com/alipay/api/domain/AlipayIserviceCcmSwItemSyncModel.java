@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务事项同步
  *
  * @author auto create
- * @since 1.0, 2023-06-06 20:18:20
+ * @since 1.0, 2023-06-08 11:25:49
  */
 public class AlipayIserviceCcmSwItemSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2269974553994476554L;
+	private static final long serialVersionUID = 5282188277652378172L;
 
 	/**
 	 * 云客服平台的事项库id

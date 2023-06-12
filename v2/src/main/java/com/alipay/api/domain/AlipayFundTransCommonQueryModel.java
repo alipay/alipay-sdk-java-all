@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账业务单据查询接口
  *
  * @author auto create
- * @since 1.0, 2021-12-29 23:20:34
+ * @since 1.0, 2023-06-09 19:59:11
  */
 public class AlipayFundTransCommonQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7153857452598894472L;
+	private static final long serialVersionUID = 8255474826852518389L;
 
 	/**
 	 * 描述特定的业务场景，如果传递了out_biz_no则该字段为必传。可取的业务场景如下：

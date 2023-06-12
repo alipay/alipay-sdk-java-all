@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业解约
  *
  * @author auto create
- * @since 1.0, 2023-06-01 14:15:37
+ * @since 1.0, 2023-06-07 19:30:50
  */
 public class AlipayCommerceEcEnterpriseUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6539352324595799524L;
+	private static final long serialVersionUID = 2428226227396326151L;
 
 	/**
-	 * 共同账户id和企业id二选一必填
+	 * 共同账户id，和企业id二选一
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -26,7 +26,7 @@ public class AlipayCommerceEcEnterpriseUnsignModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
-	 * 企业id
+	 * 企业id，和共同账户id二选一
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;

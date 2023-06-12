@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipaySecurityRiskRainscoreQueryModel;
+import com.alipay.api.domain.AlipayCloudTraasRiskgoFarmingQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipaySecurityRiskRainscoreQueryResponse;
+import com.alipay.api.response.AlipayCloudTraasRiskgoFarmingQueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.security.risk.rainscore.query request
+ * ALIPAY API: alipay.cloud.traas.riskgo.farming.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:17:21
+ * @since 1.0, 2023-06-09 15:26:56
  */
-public class AlipaySecurityRiskRainscoreQueryRequest implements AlipayRequest<AlipaySecurityRiskRainscoreQueryResponse> {
+public class AlipayCloudTraasRiskgoFarmingQueryRequest implements AlipayRequest<AlipayCloudTraasRiskgoFarmingQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* RAIN （Risk of Activity, Identity and Network）是蚁盾旗下产品，专业提供风险评分服务，是一套能够对手机号进行风险预测、风险解释的评分体系。
+	* 小程序云行业刷单风险识别
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipaySecurityRiskRainscoreQueryRequest implements AlipayRequest<Al
 	}
 
 	public String getApiMethodName() {
-		return "alipay.security.risk.rainscore.query";
+		return "alipay.cloud.traas.riskgo.farming.query";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipaySecurityRiskRainscoreQueryRequest implements AlipayRequest<Al
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipaySecurityRiskRainscoreQueryResponse> getResponseClass() {
-		return AlipaySecurityRiskRainscoreQueryResponse.class;
+	public Class<AlipayCloudTraasRiskgoFarmingQueryResponse> getResponseClass() {
+		return AlipayCloudTraasRiskgoFarmingQueryResponse.class;
 	}
 	
 

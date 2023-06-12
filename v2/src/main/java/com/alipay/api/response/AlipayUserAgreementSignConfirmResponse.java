@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAgreementSignConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4575717923132568289L;
+	private static final long serialVersionUID = 6368773834219286758L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。

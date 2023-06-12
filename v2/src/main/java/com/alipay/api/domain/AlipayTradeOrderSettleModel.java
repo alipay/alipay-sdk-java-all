@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易结算接口
  *
  * @author auto create
- * @since 1.0, 2023-06-01 13:23:52
+ * @since 1.0, 2023-06-09 18:03:08
  */
 public class AlipayTradeOrderSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2577263939425348853L;
+	private static final long serialVersionUID = 6118855548633364912L;
 
 	/**
 	 * 分账结算业务扩展参数
@@ -41,7 +41,7 @@ public class AlipayTradeOrderSettleModel extends AlipayObject {
 	private String royaltyMode;
 
 	/**
-	 * 分账明细信息。
+	 * 分账明细信息。单独调用分账完结时，可以不传此参数。其他场景必传。
 注意：商家分账场景下分账收入方 trans_in 只支持支付宝账户，不支持使用 cardAliasNo 卡编号。
 	 */
 	@ApiListField("royalty_parameters")

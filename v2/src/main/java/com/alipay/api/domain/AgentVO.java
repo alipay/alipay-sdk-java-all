@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 客服详情
  *
  * @author auto create
- * @since 1.0, 2020-12-10 14:20:31
+ * @since 1.0, 2023-06-08 20:09:27
  */
 public class AgentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4142351537647232241L;
+	private static final long serialVersionUID = 7451571445266829464L;
 
 	/**
 	 * 热线接入方式

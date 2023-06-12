@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 咨询主体信息
  *
  * @author auto create
- * @since 1.0, 2023-02-22 00:26:29
+ * @since 1.0, 2023-06-07 13:45:08
  */
 public class Pariticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 5431522143324532823L;
+	private static final long serialVersionUID = 5797486673538187259L;
 
 	/**
 	 * 风控主体标识
@@ -30,6 +30,12 @@ public class Pariticipant extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 入驻平台的时间点，格式是yyyy-MM-dd HH:mm，biz_scene是CONSULT_BY_RISK_SCENE时必填
+	 */
+	@ApiField("settle_in_time")
+	private String settleInTime;
 
 	public String getIdentity() {
 		return this.identity;
@@ -50,6 +56,13 @@ public class Pariticipant extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getSettleInTime() {
+		return this.settleInTime;
+	}
+	public void setSettleInTime(String settleInTime) {
+		this.settleInTime = settleInTime;
 	}
 
 }

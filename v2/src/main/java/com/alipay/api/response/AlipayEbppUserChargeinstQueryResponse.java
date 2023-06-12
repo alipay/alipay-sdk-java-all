@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppUserChargeinstQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4832267361521345294L;
+	private static final long serialVersionUID = 8144577835879452783L;
 
 	/** 
 	 * 提供给邦道的接口，查询用户常缴机构与常住城市信息，该对象为输出具体内容。

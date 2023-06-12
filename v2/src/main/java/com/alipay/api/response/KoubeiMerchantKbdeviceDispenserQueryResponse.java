@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantKbdeviceDispenserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7682983571557594594L;
+	private static final long serialVersionUID = 7795373419865885435L;
 
 	/** 
 	 * 取餐柜设备是否可用

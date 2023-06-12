@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: techrisk.innovate.mpcpromo.scene.release response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:10:27
+ * @since 1.0, 2023-06-09 10:13:25
  */
 public class TechriskInnovateMpcpromoSceneReleaseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5511658222644619394L;
+	private static final long serialVersionUID = 3152491173474365277L;
 
 	/** 
 	 * 非法商品id列表

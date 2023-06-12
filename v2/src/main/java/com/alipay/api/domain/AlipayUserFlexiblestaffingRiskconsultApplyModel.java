@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工风控预咨询
  *
  * @author auto create
- * @since 1.0, 2023-02-22 14:50:15
+ * @since 1.0, 2023-06-07 18:21:18
  */
 public class AlipayUserFlexiblestaffingRiskconsultApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6299558218632193519L;
+	private static final long serialVersionUID = 8817961693526191239L;
 
 	/**
 	 * 场景码
@@ -42,6 +42,15 @@ public class AlipayUserFlexiblestaffingRiskconsultApplyModel extends AlipayObjec
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 风险场景，CONSULT_BY_RISK_SCENE场景时，必填
+User Account Risk：账户安全咨询
+Enterprise Access Risk：社保风险咨询
+Enterprise Manager Risk：董监高风险咨询
+	 */
+	@ApiField("risk_scene")
+	private String riskScene;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -76,6 +85,13 @@ public class AlipayUserFlexiblestaffingRiskconsultApplyModel extends AlipayObjec
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getRiskScene() {
+		return this.riskScene;
+	}
+	public void setRiskScene(String riskScene) {
+		this.riskScene = riskScene;
 	}
 
 }

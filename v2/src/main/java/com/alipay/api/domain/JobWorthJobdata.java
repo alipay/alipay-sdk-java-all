@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工作证职业数据回流接口字段
  *
  * @author auto create
- * @since 1.0, 2023-04-19 16:13:46
+ * @since 1.0, 2023-06-09 14:06:28
  */
 public class JobWorthJobdata extends AlipayObject {
 
-	private static final long serialVersionUID = 2194865736561831152L;
+	private static final long serialVersionUID = 6545762887384474629L;
 
 	/**
 	 * 证书发证机构
@@ -96,6 +96,12 @@ public class JobWorthJobdata extends AlipayObject {
 	 */
 	@ApiField("intention_city")
 	private String intentionCity;
+
+	/**
+	 * 意向城市名，例如北京市，传入北京即可，大理白族自治州，传入大理即可
+	 */
+	@ApiField("intention_city_name")
+	private String intentionCityName;
 
 	/**
 	 * 发证日期，ms时间戳
@@ -242,6 +248,12 @@ public class JobWorthJobdata extends AlipayObject {
 	private String workEndTime;
 
 	/**
+	 * 工作经历工作地
+	 */
+	@ApiField("work_place")
+	private String workPlace;
+
+	/**
 	 * 岗位属性：全职(FULL_TIME)或者兼职(PART_TIME)
 	 */
 	@ApiField("work_property")
@@ -355,6 +367,13 @@ public class JobWorthJobdata extends AlipayObject {
 	}
 	public void setIntentionCity(String intentionCity) {
 		this.intentionCity = intentionCity;
+	}
+
+	public String getIntentionCityName() {
+		return this.intentionCityName;
+	}
+	public void setIntentionCityName(String intentionCityName) {
+		this.intentionCityName = intentionCityName;
 	}
 
 	public String getIssueDate() {
@@ -523,6 +542,13 @@ public class JobWorthJobdata extends AlipayObject {
 	}
 	public void setWorkEndTime(String workEndTime) {
 		this.workEndTime = workEndTime;
+	}
+
+	public String getWorkPlace() {
+		return this.workPlace;
+	}
+	public void setWorkPlace(String workPlace) {
+		this.workPlace = workPlace;
 	}
 
 	public String getWorkProperty() {

@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.zavatar.avatar.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-05 21:03:23
+ * @since 1.0, 2023-06-08 09:54:15
  */
 public class AlipayUserAccountZavatarAvatarQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7315818755684253813L;
+	private static final long serialVersionUID = 6814886174187392913L;
 
 	/** 
 	 * 用户保存数字形象信息
@@ -51,6 +51,12 @@ public class AlipayUserAccountZavatarAvatarQueryResponse extends AlipayResponse 
 	@ApiListField("init_avatar_v_os")
 	@ApiField("avatar_v_o")
 	private List<AvatarVO> initAvatarVOs;
+
+	/** 
+	 * 返回的形象模型层级
+	 */
+	@ApiField("model_level")
+	private String modelLevel;
 
 	/** 
 	 * 场景中可以选择的动画信息
@@ -99,6 +105,13 @@ public class AlipayUserAccountZavatarAvatarQueryResponse extends AlipayResponse 
 	}
 	public List<AvatarVO> getInitAvatarVOs( ) {
 		return this.initAvatarVOs;
+	}
+
+	public void setModelLevel(String modelLevel) {
+		this.modelLevel = modelLevel;
+	}
+	public String getModelLevel( ) {
+		return this.modelLevel;
 	}
 
 	public void setOptionalAnimationVOs(List<AvatarAnimationVO> optionalAnimationVOs) {

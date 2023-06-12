@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2841938135453718281L;
+	private static final long serialVersionUID = 5243783358179535852L;
 
 	/** 
 	 * 代理函有效访问地址，有效时间1小时，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回

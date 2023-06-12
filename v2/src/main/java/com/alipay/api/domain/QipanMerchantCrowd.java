@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 -注意：商家会员专用，禁止滥用，因模型升级造成的兼容性问题，后果自负
  *
  * @author auto create
- * @since 1.0, 2023-05-16 11:10:02
+ * @since 1.0, 2023-06-10 21:54:40
  */
 public class QipanMerchantCrowd extends AlipayObject {
 
-	private static final long serialVersionUID = 6736136311283987352L;
+	private static final long serialVersionUID = 6361166225257156375L;
 
 	/**
 	 * 安全应用范围，参考文档 <a href="https://opendocs.alipay.com/pre-open/04phhq" target="_blank">安全应用范围枚举</a>
@@ -41,6 +41,12 @@ public class QipanMerchantCrowd extends AlipayObject {
 	 */
 	@ApiField("crowd_name")
 	private String crowdName;
+
+	/**
+	 * 由于法务合规要求，仅能展示人群规模的范围。
+	 */
+	@ApiField("crowd_size")
+	private String crowdSize;
 
 	/**
 	 * 商户外部用户人群code 用于标识商家人群，需保证同一商户下crowd_code唯一
@@ -97,6 +103,13 @@ INEFFECTIVE-失效
 	}
 	public void setCrowdName(String crowdName) {
 		this.crowdName = crowdName;
+	}
+
+	public String getCrowdSize() {
+		return this.crowdSize;
+	}
+	public void setCrowdSize(String crowdSize) {
+		this.crowdSize = crowdSize;
 	}
 
 	public String getExternalCrowdCode() {

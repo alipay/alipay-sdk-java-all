@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业入驻
  *
  * @author auto create
- * @since 1.0, 2023-06-01 14:13:58
+ * @since 1.0, 2023-06-08 14:42:19
  */
 public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2827428499688814916L;
+	private static final long serialVersionUID = 1369126947535245477L;
 
 	/**
 	 * 场景码，联系支付宝分配
@@ -51,9 +51,7 @@ public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 	private String identityOpenId;
 
 	/**
-	 * 身份类型,目前支持传参如下：
-ALIPAY_LOGON_ID(企业支付宝登录账号)
-ALIPAY_USER_ID(企业支付宝会员id)
+	 * 身份类型
 	 */
 	@ApiField("identity_type")
 	private String identityType;

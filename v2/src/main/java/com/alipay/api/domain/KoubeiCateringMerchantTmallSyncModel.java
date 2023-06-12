@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringMerchantTmallSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8579359321846845254L;
+	private static final long serialVersionUID = 7137958878199324573L;
 
 	/**
 	 * 业务类型，标识商户操作类型是签约还是解约操作，枚举值：SIGN表示签约、UNSIGN表示解约

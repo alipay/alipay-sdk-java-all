@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试网关支持number类型
  *
  * @author auto create
- * @since 1.0, 2023-02-09 19:03:34
+ * @since 1.0, 2023-06-10 18:37:31
  */
 public class AlipayOpenOperationOpenbizmockTestnumberQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7878412769864995471L;
+	private static final long serialVersionUID = 8257464188611869775L;
 
 	/**
 	 * 1
 	 */
 	@ApiField("a")
 	private String a;
+
+	/**
+	 * 1
+	 */
+	@ApiField("b")
+	private String b;
 
 	/**
 	 * 1
@@ -30,6 +36,13 @@ public class AlipayOpenOperationOpenbizmockTestnumberQueryModel extends AlipayOb
 	}
 	public void setA(String a) {
 		this.a = a;
+	}
+
+	public String getB() {
+		return this.b;
+	}
+	public void setB(String b) {
+		this.b = b;
 	}
 
 	public String getKeykey() {

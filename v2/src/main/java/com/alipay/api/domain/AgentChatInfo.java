@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 客服在线信息
  *
  * @author auto create
- * @since 1.0, 2020-11-18 10:01:04
+ * @since 1.0, 2023-06-09 10:12:27
  */
 public class AgentChatInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7474751136456899997L;
+	private static final long serialVersionUID = 6145154267133236562L;
 
 	/**
 	 * 数据权限id(租户实例id)

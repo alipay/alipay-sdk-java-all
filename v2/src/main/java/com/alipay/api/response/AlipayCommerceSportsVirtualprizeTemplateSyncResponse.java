@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.virtualprize.template.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:16:55
+ * @since 1.0, 2023-06-09 18:36:49
  */
 public class AlipayCommerceSportsVirtualprizeTemplateSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2867382751222592589L;
+	private static final long serialVersionUID = 2874453747611662767L;
 
 	
 

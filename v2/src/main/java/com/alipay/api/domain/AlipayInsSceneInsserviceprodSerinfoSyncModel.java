@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务信息同步(服务商->支付宝) API
  *
  * @author auto create
- * @since 1.0, 2023-03-08 12:58:38
+ * @since 1.0, 2023-06-09 18:03:16
  */
 public class AlipayInsSceneInsserviceprodSerinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3532593416943381916L;
+	private static final long serialVersionUID = 7116823377146825163L;
 
 	/**
 	 * 支付宝的服务产品编号

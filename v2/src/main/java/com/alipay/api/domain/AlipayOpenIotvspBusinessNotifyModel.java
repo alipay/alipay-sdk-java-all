@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核身业务结果通知
  *
  * @author auto create
- * @since 1.0, 2023-05-31 16:46:15
+ * @since 1.0, 2023-06-09 19:31:17
  */
 public class AlipayOpenIotvspBusinessNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2384535261532951934L;
+	private static final long serialVersionUID = 5395917239217857118L;
 
 	/**
 	 * 业务信息列表
@@ -34,6 +34,12 @@ public class AlipayOpenIotvspBusinessNotifyModel extends AlipayObject {
 	 */
 	@ApiField("label_out_no")
 	private String labelOutNo;
+
+	/**
+	 * 对象类型，详见对象定义
+	 */
+	@ApiField("notify_event_param")
+	private NotifyEventParam notifyEventParam;
 
 	/**
 	 * 机构编码
@@ -72,6 +78,13 @@ public class AlipayOpenIotvspBusinessNotifyModel extends AlipayObject {
 	}
 	public void setLabelOutNo(String labelOutNo) {
 		this.labelOutNo = labelOutNo;
+	}
+
+	public NotifyEventParam getNotifyEventParam() {
+		return this.notifyEventParam;
+	}
+	public void setNotifyEventParam(NotifyEventParam notifyEventParam) {
+		this.notifyEventParam = notifyEventParam;
 	}
 
 	public String getOrgOutId() {

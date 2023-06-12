@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询客服详情
  *
  * @author auto create
- * @since 1.0, 2022-10-19 15:26:01
+ * @since 1.0, 2023-06-09 13:12:52
  */
 public class AlipayIserviceCcmAgentGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8631328769993482547L;
+	private static final long serialVersionUID = 7397411968164741161L;
 
 	/**
 	 * 客服账号id，当user_channel=ALIPAY时，此id为支付宝2088id

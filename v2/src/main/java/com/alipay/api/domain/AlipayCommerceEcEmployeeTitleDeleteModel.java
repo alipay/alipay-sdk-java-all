@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除员工抬头信息
  *
  * @author auto create
- * @since 1.0, 2023-06-01 14:16:10
+ * @since 1.0, 2023-06-07 19:32:56
  */
 public class AlipayCommerceEcEmployeeTitleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3519767684223363381L;
+	private static final long serialVersionUID = 3893971276368722342L;
 
 	/**
 	 * 员工抬头列表

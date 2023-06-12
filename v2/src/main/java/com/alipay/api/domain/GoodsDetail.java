@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息
  *
  * @author auto create
- * @since 1.0, 2023-04-28 15:41:41
+ * @since 1.0, 2023-06-09 15:03:04
  */
 public class GoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2887925767655652391L;
+	private static final long serialVersionUID = 6164832572498458218L;
 
 	/**
 	 * 支付宝定义的统一商品编号
@@ -48,6 +48,18 @@ public class GoodsDetail extends AlipayObject {
 	 */
 	@ApiField("goods_name")
 	private String goodsName;
+
+	/**
+	 * 商家侧小程序商品ID，具体使用方式请参考：https://opendocs.alipay.com/pre-open/06uila?pathHash=87297d0a
+	 */
+	@ApiField("out_item_id")
+	private String outItemId;
+
+	/**
+	 * 商家侧小程序商品sku ID，具体使用方式请参考：https://opendocs.alipay.com/pre-open/06uila?pathHash=87297d0a
+	 */
+	@ApiField("out_sku_id")
+	private String outSkuId;
 
 	/**
 	 * 商品单价，单位为元
@@ -107,6 +119,20 @@ public class GoodsDetail extends AlipayObject {
 	}
 	public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
+	}
+
+	public String getOutItemId() {
+		return this.outItemId;
+	}
+	public void setOutItemId(String outItemId) {
+		this.outItemId = outItemId;
+	}
+
+	public String getOutSkuId() {
+		return this.outSkuId;
+	}
+	public void setOutSkuId(String outSkuId) {
+		this.outSkuId = outSkuId;
 	}
 
 	public String getPrice() {

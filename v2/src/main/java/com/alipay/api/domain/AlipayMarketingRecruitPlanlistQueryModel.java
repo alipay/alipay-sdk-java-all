@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可报名的方案列表
  *
  * @author auto create
- * @since 1.0, 2022-09-10 22:01:17
+ * @since 1.0, 2023-06-09 16:53:51
  */
 public class AlipayMarketingRecruitPlanlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7725137486437135694L;
+	private static final long serialVersionUID = 7264464721138286729L;
 
 	/**
 	 * 查询可报名方案的目标商户信息。

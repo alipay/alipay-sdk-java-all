@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单商品详情
  *
  * @author auto create
- * @since 1.0, 2022-05-12 10:10:13
+ * @since 1.0, 2023-06-08 14:11:28
  */
 public class SpuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2414456156792359814L;
+	private static final long serialVersionUID = 5549961889297951894L;
 
 	/**
 	 * 品牌名称
@@ -38,7 +38,7 @@ public class SpuInfo extends AlipayObject {
 	private String icon;
 
 	/**
-	 * 商品单价
+	 * 商品单价(单位:元)
 	 */
 	@ApiField("price")
 	private String price;

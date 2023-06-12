@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.virtualprize.user.get request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:26:47
+ * @since 1.0, 2023-06-09 14:56:57
  */
 public class AlipayCommerceSportsVirtualprizeUserGetRequest implements AlipayRequest<AlipayCommerceSportsVirtualprizeUserGetResponse> {
 

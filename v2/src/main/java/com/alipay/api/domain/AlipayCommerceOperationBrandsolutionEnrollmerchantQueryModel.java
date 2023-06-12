@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 快消百万小店活动报名商家查询
  *
  * @author auto create
- * @since 1.0, 2023-04-12 11:29:46
+ * @since 1.0, 2023-06-09 19:10:53
  */
 public class AlipayCommerceOperationBrandsolutionEnrollmerchantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7582621628548352536L;
+	private static final long serialVersionUID = 6464763743297573839L;
 
 	/**
 	 * 活动唯一标识

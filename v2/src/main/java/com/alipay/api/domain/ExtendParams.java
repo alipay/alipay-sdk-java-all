@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2023-04-28 13:53:05
+ * @since 1.0, 2023-06-09 13:36:32
  */
 public class ExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7148577535875788887L;
+	private static final long serialVersionUID = 7441537492422277159L;
 
 	/**
 	 * 卡类型
@@ -55,6 +55,12 @@ public class ExtendParams extends AlipayObject {
 	 */
 	@ApiField("sys_service_provider_id")
 	private String sysServiceProviderId;
+
+	/**
+	 * 公域商品交易业务订单ID
+	 */
+	@ApiField("trade_component_order_id")
+	private String tradeComponentOrderId;
 
 	public String getCardType() {
 		return this.cardType;
@@ -103,6 +109,13 @@ public class ExtendParams extends AlipayObject {
 	}
 	public void setSysServiceProviderId(String sysServiceProviderId) {
 		this.sysServiceProviderId = sysServiceProviderId;
+	}
+
+	public String getTradeComponentOrderId() {
+		return this.tradeComponentOrderId;
+	}
+	public void setTradeComponentOrderId(String tradeComponentOrderId) {
+		this.tradeComponentOrderId = tradeComponentOrderId;
 	}
 
 }

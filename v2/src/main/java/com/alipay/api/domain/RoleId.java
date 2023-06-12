@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客服角色ID对象
  *
  * @author auto create
- * @since 1.0, 2020-12-09 09:58:12
+ * @since 1.0, 2023-06-09 10:12:26
  */
 public class RoleId extends AlipayObject {
 
-	private static final long serialVersionUID = 6424976775995561182L;
+	private static final long serialVersionUID = 2196233351455389524L;
 
 	/**
 	 * 部门id（即租户实例ID、数据权限ID）

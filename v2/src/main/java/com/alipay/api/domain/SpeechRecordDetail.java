@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 语音播报数据记录详情
  *
  * @author auto create
- * @since 1.0, 2022-12-09 19:26:15
+ * @since 1.0, 2023-06-07 20:10:16
  */
 public class SpeechRecordDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6788245172543557789L;
+	private static final long serialVersionUID = 8254719934933265681L;
 
 	/**
 	 * 播报关联的支付宝运营计划id
@@ -116,6 +116,12 @@ public class SpeechRecordDetail extends AlipayObject {
 	private String outPlanStartTime;
 
 	/**
+	 * 设备扫描情况。如果设备同时支持主扫被扫，则这个字段为必填
+	 */
+	@ApiField("scan_type")
+	private String scanType;
+
+	/**
 	 * 设备关联的间连商户smid
 	 */
 	@ApiField("smid")
@@ -126,6 +132,12 @@ public class SpeechRecordDetail extends AlipayObject {
 	 */
 	@ApiField("speech_content")
 	private String speechContent;
+
+	/**
+	 * 语音播报发生的时机，根据播报触发的事件传入
+	 */
+	@ApiField("speech_event")
+	private String speechEvent;
 
 	/**
 	 * 区分播报记录的唯一标识
@@ -288,6 +300,13 @@ public class SpeechRecordDetail extends AlipayObject {
 		this.outPlanStartTime = outPlanStartTime;
 	}
 
+	public String getScanType() {
+		return this.scanType;
+	}
+	public void setScanType(String scanType) {
+		this.scanType = scanType;
+	}
+
 	public String getSmid() {
 		return this.smid;
 	}
@@ -300,6 +319,13 @@ public class SpeechRecordDetail extends AlipayObject {
 	}
 	public void setSpeechContent(String speechContent) {
 		this.speechContent = speechContent;
+	}
+
+	public String getSpeechEvent() {
+		return this.speechEvent;
+	}
+	public void setSpeechEvent(String speechEvent) {
+		this.speechEvent = speechEvent;
 	}
 
 	public String getSpeechId() {

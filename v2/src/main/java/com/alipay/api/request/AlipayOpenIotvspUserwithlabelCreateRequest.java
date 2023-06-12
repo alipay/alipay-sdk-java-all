@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotvsp.userwithlabel.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 19:41:59
+ * @since 1.0, 2023-06-08 15:43:19
  */
 public class AlipayOpenIotvspUserwithlabelCreateRequest implements AlipayRequest<AlipayOpenIotvspUserwithlabelCreateResponse> {
 

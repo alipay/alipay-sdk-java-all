@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户授勋
  *
  * @author auto create
- * @since 1.0, 2023-05-18 17:02:39
+ * @since 1.0, 2023-06-09 14:55:15
  */
 public class AlipayCommerceSportsVirtualprizeUserGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3721742476614539574L;
+	private static final long serialVersionUID = 1251895998579278856L;
 
 	/**
 	 * 业务类型

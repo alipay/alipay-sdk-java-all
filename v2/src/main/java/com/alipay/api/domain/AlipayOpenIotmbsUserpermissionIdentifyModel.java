@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot用户权限识别
  *
  * @author auto create
- * @since 1.0, 2023-05-25 14:21:31
+ * @since 1.0, 2023-06-09 16:23:54
  */
 public class AlipayOpenIotmbsUserpermissionIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2339723968495631925L;
+	private static final long serialVersionUID = 4657735646118833733L;
 
 	/**
 	 * 根据param_type输入参数值

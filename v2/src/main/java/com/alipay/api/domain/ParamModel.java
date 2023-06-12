@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ParamModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7599449728248157194L;
+	private static final long serialVersionUID = 4123461681243961368L;
 
 	/**
 	 * 是否开启取餐柜（false：否，true：是）

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.authentication.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:16:57
+ * @since 1.0, 2023-06-09 16:46:55
  */
 public class ZhimaCustomerJobworthAuthenticationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8747944497755799217L;
+	private static final long serialVersionUID = 3318163842337412593L;
 
 	/** 
 	 * SUCCESS代表可信，FAILED代表不可信，WAITING_VERIFY代表未知需要等待结果
@@ -27,10 +27,22 @@ public class ZhimaCustomerJobworthAuthenticationQueryResponse extends AlipayResp
 	private String identityResultSkipUrl;
 
 	/** 
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/** 
 	 * 代表订单状态
 	 */
 	@ApiField("token_status")
 	private String tokenStatus;
+
+	/** 
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public void setIdentityResult(String identityResult) {
 		this.identityResult = identityResult;
@@ -46,11 +58,25 @@ public class ZhimaCustomerJobworthAuthenticationQueryResponse extends AlipayResp
 		return this.identityResultSkipUrl;
 	}
 
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
+	}
+
 	public void setTokenStatus(String tokenStatus) {
 		this.tokenStatus = tokenStatus;
 	}
 	public String getTokenStatus( ) {
 		return this.tokenStatus;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public String getUserId( ) {
+		return this.userId;
 	}
 
 }

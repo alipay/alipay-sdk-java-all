@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 政务事项对象
  *
  * @author auto create
- * @since 1.0, 2023-06-01 12:25:38
+ * @since 1.0, 2023-06-08 21:29:35
  */
 public class ItemGwDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5188172845425662112L;
+	private static final long serialVersionUID = 2893477819498361256L;
 
 	/**
 	 * 该事项的办理需要前提的条件

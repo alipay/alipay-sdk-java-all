@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.enterprise.info.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-02 14:07:00
+ * @since 1.0, 2023-06-08 14:02:00
  */
 public class AlipayCommerceEcEnterpriseInfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5171726828221629716L;
+	private static final long serialVersionUID = 5147558176856386811L;
 
 	
 

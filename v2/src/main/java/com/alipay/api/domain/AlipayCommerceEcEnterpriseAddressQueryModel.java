@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业地址查询
  *
  * @author auto create
- * @since 1.0, 2023-06-01 14:22:41
+ * @since 1.0, 2023-06-07 19:31:50
  */
 public class AlipayCommerceEcEnterpriseAddressQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4286342275989324954L;
+	private static final long serialVersionUID = 8551139985649454295L;
 
 	/**
-	 * 共同账户id和enterprise_id二选一
+	 * 共同账户id，和enterprise_id二选一
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -38,7 +38,7 @@ public class AlipayCommerceEcEnterpriseAddressQueryModel extends AlipayObject {
 	private String cityCode;
 
 	/**
-	 * 企业id和account_id二选一
+	 * 企业id，和account_id二选一
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;

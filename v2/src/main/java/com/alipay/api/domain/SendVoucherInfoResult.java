@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SendVoucherInfoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8454623237147869759L;
+	private static final long serialVersionUID = 6819191832626175844L;
 
 	/**
 	 * 用户领券之后在服务商(商户)侧提供的券详情展示页面。在支付宝卡包中展示链接，用户点击可以跳转到服务商券详情页。 限制: 该字段在兑换券场景下必传。 链接必须是alipays开头的小程序链接，详见《小程序scheme链接介绍》https://opendocs.alipay.com/support/01rb18

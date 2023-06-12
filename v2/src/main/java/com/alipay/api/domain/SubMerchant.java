@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二级商户信息
  *
  * @author auto create
- * @since 1.0, 2023-01-06 18:19:54
+ * @since 1.0, 2023-06-08 22:21:10
  */
 public class SubMerchant extends AlipayObject {
 
-	private static final long serialVersionUID = 7341735184986749769L;
+	private static final long serialVersionUID = 2395614535246563953L;
 
 	/**
 	 * 支付宝二级商户编号。

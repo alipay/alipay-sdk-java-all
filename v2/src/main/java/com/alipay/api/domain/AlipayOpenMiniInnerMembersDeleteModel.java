@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniInnerMembersDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1177179886866395996L;
+	private static final long serialVersionUID = 8584922933212716186L;
 
 	/**
 	 * 业务来源

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BcBusinessUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1231882334345235458L;
+	private static final long serialVersionUID = 4394496354769739291L;
 
 	/**
 	 * BC互动，B端实体对应的实际B端操作人员的头像地址

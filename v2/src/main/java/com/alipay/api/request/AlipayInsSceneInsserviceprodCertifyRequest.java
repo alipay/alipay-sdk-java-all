@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.insserviceprod.certify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:57:22
+ * @since 1.0, 2023-06-09 18:12:51
  */
 public class AlipayInsSceneInsserviceprodCertifyRequest implements AlipayRequest<AlipayInsSceneInsserviceprodCertifyResponse> {
 

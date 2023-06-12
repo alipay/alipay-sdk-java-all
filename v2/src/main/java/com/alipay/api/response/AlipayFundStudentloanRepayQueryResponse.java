@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundStudentloanRepayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6824794624424183187L;
+	private static final long serialVersionUID = 2639936226826173532L;
 
 	/** 
 	 * 业务类型 A生源地 B高校

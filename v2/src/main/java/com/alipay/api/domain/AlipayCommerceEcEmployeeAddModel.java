@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2023-05-12 19:23:16
+ * @since 1.0, 2023-06-08 14:42:39
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3295895213363989984L;
+	private static final long serialVersionUID = 4852739786937715268L;
 
 	/**
 	 * 员工所属部门
@@ -30,21 +30,19 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String employeeCertNo;
 
 	/**
-	 * 证件类型，用于企业人脸库员工刷脸开通时的核验，
-枚举支持：IDENTITY_CARD身份证，PASS_PORT护照，STU_NUM学生学号，COMPANY_NUM工号，TAIWAN_CARD台胞证，HK_MC_CARD港澳证件
+	 * 证件类型，用于企业人脸库员工刷脸开通时的核验
 	 */
 	@ApiField("employee_cert_type")
 	private String employeeCertType;
 
 	/**
-	 * 员工邮箱
+	 * 员工邮箱；手机号、邮箱、identity_type三个属性至少传入一个
 	 */
 	@ApiField("employee_email")
 	private String employeeEmail;
 
 	/**
-	 * 员工手机号
-1.和identity二选一
+	 * 员工手机号；手机号、邮箱、identity_type三个属性至少传入一个
 	 */
 	@ApiField("employee_mobile")
 	private String employeeMobile;
@@ -68,9 +66,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 身份
-1.和employee_mobile二选一
-2.对应身份类型进行传参，企业支付宝登录账号(支持手机号或者邮箱)或企业支付宝会员id(对应2088开头的支付宝会员id)
+	 * 根据identity_type指定的身份类型，传入对应的身份标识，企业支付宝登录账号(支持手机号或者邮箱)或企业支付宝会员id(对应2088开头的支付宝会员id)
 	 */
 	@ApiField("identity")
 	private String identity;
@@ -82,9 +78,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String identityOpenId;
 
 	/**
-	 * 身份类型
-ALIPAY_LOGON_ID(企业支付宝登录账号)
-ALIPAY_USER_ID(企业支付宝会员id)
+	 * 身份类型；手机号、邮箱、identity_type三个属性至少传入一个
 	 */
 	@ApiField("identity_type")
 	private String identityType;
@@ -103,8 +97,6 @@ ALIPAY_USER_ID(企业支付宝会员id)
 
 	/**
 	 * 角色列表，目前只支持填一种角色，默认为USER
-USER：普通员工
-ADMIN：管理员
 	 */
 	@ApiListField("role_list")
 	@ApiField("string")

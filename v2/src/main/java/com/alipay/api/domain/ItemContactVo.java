@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 事项联络
  *
  * @author auto create
- * @since 1.0, 2023-05-31 17:02:49
+ * @since 1.0, 2023-06-08 21:33:01
  */
 public class ItemContactVo extends AlipayObject {
 
-	private static final long serialVersionUID = 6562746629981381883L;
+	private static final long serialVersionUID = 8437662586435812531L;
 
 	/**
 	 * 事项咨询方式，自定义内容：电话、邮箱、手机等

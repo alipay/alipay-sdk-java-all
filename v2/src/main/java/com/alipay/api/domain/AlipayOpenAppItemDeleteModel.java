@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppItemDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5431624935961775654L;
+	private static final long serialVersionUID = 2226323129252854765L;
 
 	/**
 	 * 支付宝平台侧商品ID列表，最多20个，所选商品下所有sku均会被删除。

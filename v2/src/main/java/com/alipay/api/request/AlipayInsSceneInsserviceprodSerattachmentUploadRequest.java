@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.insserviceprod.serattachment.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:32:14
+ * @since 1.0, 2023-06-09 18:04:05
  */
 public class AlipayInsSceneInsserviceprodSerattachmentUploadRequest implements AlipayUploadRequest<AlipayInsSceneInsserviceprodSerattachmentUploadResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CraftsmanWorkCreateOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6294226372681226833L;
+	private static final long serialVersionUID = 7246842148743887763L;
 
 	/**
 	 * 视频资源必传，视频时长，单位(秒)

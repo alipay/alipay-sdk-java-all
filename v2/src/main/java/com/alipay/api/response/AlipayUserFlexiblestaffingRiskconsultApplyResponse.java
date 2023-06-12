@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.flexiblestaffing.riskconsult.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:26:51
+ * @since 1.0, 2023-06-12 09:46:51
  */
 public class AlipayUserFlexiblestaffingRiskconsultApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4829585289587214297L;
+	private static final long serialVersionUID = 3595981716717646799L;
 
 	/** 
 	 * 场景码
