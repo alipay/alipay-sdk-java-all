@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PortraitValue extends AlipayObject {
 
-	private static final long serialVersionUID = 4866918373144414629L;
+	private static final long serialVersionUID = 5896819872354177932L;
 
 	/**
 	 * 棋盘人群画像值对应的数量

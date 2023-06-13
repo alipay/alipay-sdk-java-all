@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收款方银存账号信息
  *
  * @author auto create
- * @since 1.0, 2022-07-14 15:54:48
+ * @since 1.0, 2023-06-13 16:41:58
  */
 public class VcfBankAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4535374339662399448L;
+	private static final long serialVersionUID = 6359334581288676871L;
 
 	/**
 	 * 账户开户人名字

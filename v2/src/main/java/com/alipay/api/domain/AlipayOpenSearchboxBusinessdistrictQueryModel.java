@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询可绑定的商圈查询
  *
  * @author auto create
- * @since 1.0, 2023-02-06 11:24:30
+ * @since 1.0, 2023-06-12 16:12:02
  */
 public class AlipayOpenSearchboxBusinessdistrictQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1827873242558155561L;
+	private static final long serialVersionUID = 7465975184818399812L;
 
 	/**
 	 * 品牌id

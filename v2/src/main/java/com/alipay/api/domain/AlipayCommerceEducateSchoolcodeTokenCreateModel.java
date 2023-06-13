@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请校园码根据用户信息生成token
  *
  * @author auto create
- * @since 1.0, 2020-06-17 21:25:08
+ * @since 1.0, 2023-06-12 14:32:12
  */
 public class AlipayCommerceEducateSchoolcodeTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4355242215349564676L;
+	private static final long serialVersionUID = 1748141438189972163L;
 
 	/**
 	 * 对应证件类型的证件号，用于生成token，学校提供

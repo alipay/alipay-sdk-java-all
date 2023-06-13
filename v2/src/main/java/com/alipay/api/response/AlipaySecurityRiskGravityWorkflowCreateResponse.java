@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.gravity.workflow.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-22 19:36:49
+ * @since 1.0, 2023-06-12 12:06:56
  */
 public class AlipaySecurityRiskGravityWorkflowCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3367771368888959274L;
+	private static final long serialVersionUID = 2686498528112922669L;
 
 	/** 
 	 * 错误码

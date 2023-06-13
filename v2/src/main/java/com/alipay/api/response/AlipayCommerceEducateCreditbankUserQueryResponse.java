@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.creditbank.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:44:48
+ * @since 1.0, 2023-06-12 14:35:50
  */
 public class AlipayCommerceEducateCreditbankUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2458917636347631366L;
+	private static final long serialVersionUID = 6776721552417944141L;
 
 	/** 
 	 * 学分银行id

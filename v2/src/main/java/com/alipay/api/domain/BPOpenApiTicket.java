@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BPOpenApiTicket extends AlipayObject {
 
-	private static final long serialVersionUID = 7376936231927356346L;
+	private static final long serialVersionUID = 3682887411585332256L;
 
 	/**
 	 * 附件

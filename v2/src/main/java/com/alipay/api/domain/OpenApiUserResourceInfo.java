@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户资源信息
  *
  * @author auto create
- * @since 1.0, 2023-06-06 16:20:54
+ * @since 1.0, 2023-06-13 15:49:37
  */
 public class OpenApiUserResourceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8445624333197947992L;
+	private static final long serialVersionUID = 2337154552254811553L;
 
 	/**
 	 * 客服小二的2088id
 	 */
 	@ApiField("alipay_uid")
 	private String alipayUid;
+
+	/**
+	 * buservice星云id
+	 */
+	@ApiField("busvc_cloud_id")
+	private String busvcCloudId;
 
 	/**
 	 * antbuservice域账号
@@ -54,6 +60,13 @@ public class OpenApiUserResourceInfo extends AlipayObject {
 	}
 	public void setAlipayUid(String alipayUid) {
 		this.alipayUid = alipayUid;
+	}
+
+	public String getBusvcCloudId() {
+		return this.busvcCloudId;
+	}
+	public void setBusvcCloudId(String busvcCloudId) {
+		this.busvcCloudId = busvcCloudId;
 	}
 
 	public String getBusvcDomain() {

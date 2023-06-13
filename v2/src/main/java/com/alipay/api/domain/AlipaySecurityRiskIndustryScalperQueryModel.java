@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 行业风险识别黄牛
  *
  * @author auto create
- * @since 1.0, 2023-05-09 16:11:56
+ * @since 1.0, 2023-06-12 14:26:27
  */
 public class AlipaySecurityRiskIndustryScalperQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3595555158522877785L;
+	private static final long serialVersionUID = 7397986322284136235L;
 
 	/**
 	 * 银行卡号，如无法提供，可填写为空值（null）
@@ -204,7 +204,7 @@ public class AlipaySecurityRiskIndustryScalperQueryModel extends AlipayObject {
 	private String role;
 
 	/**
-	 * 用户购买或使用服务时产生的具体金额。如参数无法提供，请填写“null”
+	 * 用户购买或使用服务时产生的具体金额(单位:元)。如参数无法提供，请填写“null”
 	 */
 	@ApiField("sales_amount")
 	private String salesAmount;

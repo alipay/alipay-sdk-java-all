@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多方安全商业化对外输出合规任务审批流程创建
  *
  * @author auto create
- * @since 1.0, 2023-05-22 19:32:10
+ * @since 1.0, 2023-06-12 12:03:32
  */
 public class AlipaySecurityRiskGravityWorkflowCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7245874449516514425L;
+	private static final long serialVersionUID = 3864684674984944119L;
 
 	/**
 	 * 需要合规审批的举报特征表详细信息

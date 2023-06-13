@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.marketing.awarding.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-08 21:24:18
+ * @since 1.0, 2023-06-12 15:36:59
  */
 public class AlipaySecurityRiskMarketingAwardingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4292794575749746199L;
+	private static final long serialVersionUID = 3715659563734239135L;
 
 	/** 
 	 * risk_result:风险分析结果，类型为列表，包含风险分析结果和描述。分别是

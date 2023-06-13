@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.searchbox.businessdistrict.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 22:21:57
+ * @since 1.0, 2023-06-12 16:12:02
  */
 public class AlipayOpenSearchboxBusinessdistrictQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6439398559848961839L;
+	private static final long serialVersionUID = 6216429574996947166L;
 
 	/** 
 	 * 商圈信息

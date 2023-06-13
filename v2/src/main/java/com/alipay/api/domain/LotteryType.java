@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LotteryType extends AlipayObject {
 
-	private static final long serialVersionUID = 8674278641965278692L;
+	private static final long serialVersionUID = 3415526714283652283L;
 
 	/**
 	 * 彩种ID

@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.QipanMerchantCrowd;
 
 import com.alipay.api.AlipayResponse;
@@ -9,17 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.crowd.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 13:37:00
+ * @since 1.0, 2023-06-12 20:36:49
  */
 public class AlipayMerchantQipanCrowdBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5282716163139968555L;
+	private static final long serialVersionUID = 7731441237734882963L;
 
 	/** 
 	 * 商家自定义人群列表
 	 */
-	@ApiField("crowd_list")
-	private QipanMerchantCrowd crowdList;
+	@ApiListField("crowd_list")
+	@ApiField("qipan_merchant_crowd")
+	private List<QipanMerchantCrowd> crowdList;
 
 	/** 
 	 * 返回查询结果的总条数
@@ -27,10 +30,10 @@ public class AlipayMerchantQipanCrowdBatchqueryResponse extends AlipayResponse {
 	@ApiField("total_number")
 	private String totalNumber;
 
-	public void setCrowdList(QipanMerchantCrowd crowdList) {
+	public void setCrowdList(List<QipanMerchantCrowd> crowdList) {
 		this.crowdList = crowdList;
 	}
-	public QipanMerchantCrowd getCrowdList( ) {
+	public List<QipanMerchantCrowd> getCrowdList( ) {
 		return this.crowdList;
 	}
 

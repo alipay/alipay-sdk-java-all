@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 提报搜索关键词
  *
  * @author auto create
- * @since 1.0, 2022-12-12 11:00:55
+ * @since 1.0, 2023-06-12 16:27:54
  */
 public class AlipayOpenSearchAppkeywordApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5791916469255275562L;
+	private static final long serialVersionUID = 8746265155348575747L;
 
 	/**
 	 * 关键词id，（仅修改时传入，修改时仅能传一个关键词）

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 参赛作品同步接口
  *
  * @author auto create
- * @since 1.0, 2021-05-12 11:00:07
+ * @since 1.0, 2023-06-12 14:31:57
  */
 public class AlipayCommerceEducateApplycompetitionWorksSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2167928366569867784L;
+	private static final long serialVersionUID = 6515775128585586968L;
 
 	/**
 	 * 参赛状态，参赛状态0:已报名，1:已支付，2:已参赛

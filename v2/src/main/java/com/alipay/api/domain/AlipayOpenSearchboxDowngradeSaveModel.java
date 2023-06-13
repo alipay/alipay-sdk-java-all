@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达降级
  *
  * @author auto create
- * @since 1.0, 2023-04-17 19:13:51
+ * @since 1.0, 2023-06-12 16:43:43
  */
 public class AlipayOpenSearchboxDowngradeSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7524714762619852856L;
+	private static final long serialVersionUID = 3429863762684996511L;
 
 	/**
 	 * 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词

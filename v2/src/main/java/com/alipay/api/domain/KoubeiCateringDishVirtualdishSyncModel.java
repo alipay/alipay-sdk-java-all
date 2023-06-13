@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiCateringDishVirtualdishSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7456971372596534486L;
+	private static final long serialVersionUID = 7182942383842974528L;
 
 	/**
 	 * 创建人

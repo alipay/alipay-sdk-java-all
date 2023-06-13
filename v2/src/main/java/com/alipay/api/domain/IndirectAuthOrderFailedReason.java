@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndirectAuthOrderFailedReason extends AlipayObject {
 
-	private static final long serialVersionUID = 4125586859343963554L;
+	private static final long serialVersionUID = 3836187548794379272L;
 
 	/**
 	 * 审核失败字段

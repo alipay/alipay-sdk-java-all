@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2023-05-24 13:39:52
+ * @since 1.0, 2023-06-12 15:47:51
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6234272832687933192L;
+	private static final long serialVersionUID = 3855448491376752963L;
 
 	/**
 	 * 不限      UNLIMITED

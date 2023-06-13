@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalBankcardCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5483244871319759246L;
+	private static final long serialVersionUID = 5267872342413358357L;
 
 	/** 
 	 * 银行卡是否绑定查询的出参

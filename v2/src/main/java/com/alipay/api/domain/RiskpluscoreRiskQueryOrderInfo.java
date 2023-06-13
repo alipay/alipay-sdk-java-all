@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * RISKGO安全服务输出风险咨询订单信息
  *
  * @author auto create
- * @since 1.0, 2023-04-27 19:21:00
+ * @since 1.0, 2023-06-12 21:19:22
  */
 public class RiskpluscoreRiskQueryOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6689763933799579367L;
+	private static final long serialVersionUID = 6223812697567733473L;
 
 	/**
 	 * 订单商品名称
@@ -20,7 +20,7 @@ public class RiskpluscoreRiskQueryOrderInfo extends AlipayObject {
 	private String orderItemsName;
 
 	/**
-	 * 订单商品价格
+	 * 订单商品价格(单位:元)
 	 */
 	@ApiField("order_items_price")
 	private String orderItemsPrice;

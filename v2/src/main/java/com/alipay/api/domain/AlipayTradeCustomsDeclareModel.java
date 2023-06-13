@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6429459595771182358L;
+	private static final long serialVersionUID = 2885766883551952868L;
 
 	/**
 	 * 报关金额，单位为人民币“元”，精确到小数点后2位。

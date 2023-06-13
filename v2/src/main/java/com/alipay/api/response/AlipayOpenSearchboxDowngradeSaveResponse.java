@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.searchbox.downgrade.save response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 14:01:56
+ * @since 1.0, 2023-06-12 16:43:43
  */
 public class AlipayOpenSearchboxDowngradeSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2811513773846822331L;
+	private static final long serialVersionUID = 1248445392864353955L;
 
 	
 

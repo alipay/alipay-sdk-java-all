@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.schoolservice.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:41:08
+ * @since 1.0, 2023-06-12 14:35:20
  */
 public class AlipayCommerceEducateSchoolserviceBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3893282771679941981L;
+	private static final long serialVersionUID = 3829661659115849345L;
 
 	
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DataSecCheckResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6819431681291674267L;
+	private static final long serialVersionUID = 5561782324178775247L;
 
 	/**
 	 * 口碑校验时间

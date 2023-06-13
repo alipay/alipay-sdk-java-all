@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.digitalpayoffline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 11:28:10
+ * @since 1.0, 2023-06-13 16:56:56
  */
 public class AlipayDataMdaDigitalpayofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1582911299522326761L;
+	private static final long serialVersionUID = 3313547567988769561L;
 
 	/** 
 	 * 跨境数字支付用户数TOP5
@@ -27,16 +27,22 @@ public class AlipayDataMdaDigitalpayofflineQueryResponse extends AlipayResponse 
 	private Long cbTotalUv;
 
 	/** 
+	 * 打通国外钱包数
+	 */
+	@ApiField("cb_wallet_cnt")
+	private Long cbWalletCnt;
+
+	/** 
 	 * 数字支付商户TOP5
 	 */
 	@ApiField("top_5_merchant")
 	private String top5Merchant;
 
 	/** 
-	 * 数字支付累计金额
+	 * 数字支付累计金额(元)
 	 */
 	@ApiField("total_amount")
-	private Long totalAmount;
+	private String totalAmount;
 
 	/** 
 	 * 数字支付商户覆盖数
@@ -64,6 +70,13 @@ public class AlipayDataMdaDigitalpayofflineQueryResponse extends AlipayResponse 
 		return this.cbTotalUv;
 	}
 
+	public void setCbWalletCnt(Long cbWalletCnt) {
+		this.cbWalletCnt = cbWalletCnt;
+	}
+	public Long getCbWalletCnt( ) {
+		return this.cbWalletCnt;
+	}
+
 	public void setTop5Merchant(String top5Merchant) {
 		this.top5Merchant = top5Merchant;
 	}
@@ -71,10 +84,10 @@ public class AlipayDataMdaDigitalpayofflineQueryResponse extends AlipayResponse 
 		return this.top5Merchant;
 	}
 
-	public void setTotalAmount(Long totalAmount) {
+	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public Long getTotalAmount( ) {
+	public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 

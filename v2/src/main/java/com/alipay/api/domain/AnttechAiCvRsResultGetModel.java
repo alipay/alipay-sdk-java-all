@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiCvRsResultGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6526266376593426529L;
+	private static final long serialVersionUID = 3518863152191691121L;
 
 	/**
 	 * 要查询预测数据的围栏经纬度信息

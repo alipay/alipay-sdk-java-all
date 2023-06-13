@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 儿童账户修改
  *
  * @author auto create
- * @since 1.0, 2022-09-23 11:35:36
+ * @since 1.0, 2023-06-12 14:22:17
  */
 public class AlipayCommerceKidsAccountModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5354211145836388313L;
+	private static final long serialVersionUID = 4614368173253882754L;
 
 	/**
 	 * 格式为yyyy-MM-dd，需要满足18周岁以下（不包含18周岁生日当天）

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 行业风险识别先享后付违约
  *
  * @author auto create
- * @since 1.0, 2023-05-09 16:12:20
+ * @since 1.0, 2023-06-12 17:44:40
  */
 public class AlipaySecurityRiskIndustryNsfQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3287883515527796647L;
+	private static final long serialVersionUID = 4539313512897671553L;
 
 	/**
 	 * 终端唯一标识
@@ -204,7 +204,7 @@ public class AlipaySecurityRiskIndustryNsfQueryModel extends AlipayObject {
 	private String service;
 
 	/**
-	 * 用户购买或使用服务时产生的具体金额。如参数无法提供，请填写“null”
+	 * 用户购买或使用服务时产生的具体金额(单位:元)。如参数无法提供，请填写“null”
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

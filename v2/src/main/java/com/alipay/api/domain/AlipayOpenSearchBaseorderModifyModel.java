@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 搜索运营提报基础服务工单接口
  *
  * @author auto create
- * @since 1.0, 2023-05-22 16:30:16
+ * @since 1.0, 2023-06-12 16:52:29
  */
 public class AlipayOpenSearchBaseorderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5838781454384376282L;
+	private static final long serialVersionUID = 8385241428437528751L;
 
 	/**
 	 * 基础工单提报入参

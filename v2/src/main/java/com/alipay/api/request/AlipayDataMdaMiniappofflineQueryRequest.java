@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayDataMdaMiniappofflineQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.miniappoffline.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:41:48
+ * @since 1.0, 2023-06-13 16:56:56
  */
 public class AlipayDataMdaMiniappofflineQueryRequest implements AlipayRequest<AlipayDataMdaMiniappofflineQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 杭州亚运大屏-左屏-一站通离线指标监控指标
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayDataMdaMiniappofflineQueryRequest implements AlipayRequest<Al
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DetectCheckLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 8465877217385566545L;
+	private static final long serialVersionUID = 2183676566712825516L;
 
 	/**
 	 * 分类信息： porn：色情，  terrorism：暴恐， politic：涉政， ad：广告， adlaw：广告法， contraband：违禁， abuse：谩骂， flood：灌水， negtive：涉价值观， other：其他
