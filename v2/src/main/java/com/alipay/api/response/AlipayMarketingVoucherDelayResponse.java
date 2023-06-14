@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingVoucherDelayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6323871666392428434L;
+	private static final long serialVersionUID = 1331129123888916324L;
 
 	/** 
 	 * 被延期的券

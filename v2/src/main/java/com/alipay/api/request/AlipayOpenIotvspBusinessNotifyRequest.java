@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotvsp.business.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-06-09 19:31:55
+ * @since 1.0, 2023-06-14 19:46:57
  */
 public class AlipayOpenIotvspBusinessNotifyRequest implements AlipayRequest<AlipayOpenIotvspBusinessNotifyResponse> {
 

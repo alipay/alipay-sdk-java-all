@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核身业务结果通知
  *
  * @author auto create
- * @since 1.0, 2023-06-09 19:31:17
+ * @since 1.0, 2023-06-14 19:45:55
  */
 public class AlipayOpenIotvspBusinessNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3397275584752112285L;
+	private static final long serialVersionUID = 4223641287996763618L;
+
+	/**
+	 * 用于幂等操作，不存则平台自动生成，幂等失效。
+	 */
+	@ApiField("biz_id")
+	private String bizId;
 
 	/**
 	 * 业务信息列表
@@ -58,6 +64,13 @@ public class AlipayOpenIotvspBusinessNotifyModel extends AlipayObject {
 	 */
 	@ApiField("vid")
 	private String vid;
+
+	public String getBizId() {
+		return this.bizId;
+	}
+	public void setBizId(String bizId) {
+		this.bizId = bizId;
+	}
 
 	public List<BusinessInfoRequest> getBusinessList() {
 		return this.businessList;

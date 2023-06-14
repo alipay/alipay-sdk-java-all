@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LiabilityQuoteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4591424422217782293L;
+	private static final long serialVersionUID = 4347868168573719567L;
 
 	/**
 	 * 保司返回的起保时间，格式yyyy-MM-dd HH:mm:ss

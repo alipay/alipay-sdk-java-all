@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TagOptionCategoryOpenDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1779989442265765358L;
+	private static final long serialVersionUID = 2377289172768799534L;
 
 	/**
 	 * 标签中文名称

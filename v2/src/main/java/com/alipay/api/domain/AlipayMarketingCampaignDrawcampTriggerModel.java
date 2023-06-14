@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignDrawcampTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8262342135472615348L;
+	private static final long serialVersionUID = 1774231589529262778L;
 
 	/**
 	 * 用户参与活动的手机号（如果是用户直接输入手机号的活动形式，该项必填，作为识别用户的依据）

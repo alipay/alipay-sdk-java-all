@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.miniappoffline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-13 16:56:56
+ * @since 1.0, 2023-06-14 12:16:56
  */
 public class AlipayDataMdaMiniappofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3693694388256359339L;
+	private static final long serialVersionUID = 8561121654247623161L;
 
 	/** 
 	 * 累计行程规划人数
@@ -37,6 +37,12 @@ public class AlipayDataMdaMiniappofflineQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ticket_service")
 	private String ticketService;
+
+	/** 
+	 * 亚运PASS
+	 */
+	@ApiField("use_pass")
+	private Long usePass;
 
 	/** 
 	 * 用户分布城市TOP5
@@ -70,6 +76,13 @@ public class AlipayDataMdaMiniappofflineQueryResponse extends AlipayResponse {
 	}
 	public String getTicketService( ) {
 		return this.ticketService;
+	}
+
+	public void setUsePass(Long usePass) {
+		this.usePass = usePass;
+	}
+	public Long getUsePass( ) {
+		return this.usePass;
 	}
 
 	public void setUserDistribution(String userDistribution) {

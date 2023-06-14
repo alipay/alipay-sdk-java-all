@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Terminal extends AlipayObject {
 
-	private static final long serialVersionUID = 4667831665679391679L;
+	private static final long serialVersionUID = 6194851967821265686L;
 
 	/**
 	 * 终端运行环境MAC地址列表，多个用“,”分割

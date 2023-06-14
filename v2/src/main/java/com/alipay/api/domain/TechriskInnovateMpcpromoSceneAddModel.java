@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景中商品添加
  *
  * @author auto create
- * @since 1.0, 2023-06-09 10:12:33
+ * @since 1.0, 2023-06-14 15:14:19
  */
 public class TechriskInnovateMpcpromoSceneAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7565669494988238949L;
+	private static final long serialVersionUID = 3742476662678335258L;
 
 	/**
 	 * 商品id列表
@@ -22,6 +22,12 @@ public class TechriskInnovateMpcpromoSceneAddModel extends AlipayObject {
 	@ApiListField("data_list")
 	@ApiField("string")
 	private List<String> dataList;
+
+	/**
+	 * 入参格式为数字或者英文字母
+	 */
+	@ApiField("position_code")
+	private String positionCode;
 
 	/**
 	 * 场景id
@@ -34,6 +40,13 @@ public class TechriskInnovateMpcpromoSceneAddModel extends AlipayObject {
 	}
 	public void setDataList(List<String> dataList) {
 		this.dataList = dataList;
+	}
+
+	public String getPositionCode() {
+		return this.positionCode;
+	}
+	public void setPositionCode(String positionCode) {
+		this.positionCode = positionCode;
 	}
 
 	public String getSceneId() {

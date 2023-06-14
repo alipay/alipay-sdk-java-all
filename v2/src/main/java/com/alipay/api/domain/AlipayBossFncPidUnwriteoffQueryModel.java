@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncPidUnwriteoffQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7245966221966156716L;
+	private static final long serialVersionUID = 4536412646447929388L;
 
 	/**
 	 * 请求查询业务场景

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2023-06-13 17:08:19
+ * @since 1.0, 2023-06-14 19:34:29
  */
 public class AlipayTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5524623128317764667L;
+	private static final long serialVersionUID = 8178932911228926132L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用；
@@ -37,6 +37,7 @@ fund_bill_list：交易支付使用的资金渠道；
 voucher_detail_list：交易支付时使用的所有优惠券信息；
 discount_goods_detail：交易支付所使用的单品券优惠的商品优惠信息；
 mdiscount_amount：商家优惠金额；
+medical_insurance_info：医保信息；
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")

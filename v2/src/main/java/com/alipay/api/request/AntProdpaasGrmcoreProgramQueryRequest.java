@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.prodpaas.grmcore.program.query request
  * 
  * @author auto create
- * @since 1.0, 2023-06-13 13:01:56
+ * @since 1.0, 2023-06-14 15:31:57
  */
 public class AntProdpaasGrmcoreProgramQueryRequest implements AlipayRequest<AntProdpaasGrmcoreProgramQueryResponse> {
 

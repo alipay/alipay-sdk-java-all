@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ContractQueryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7182959627585757966L;
+	private static final long serialVersionUID = 5761515176957467695L;
 
 	/**
 	 * 业务系统编号（置业平台合同号）

@@ -1,25 +1,34 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 即时配送运单状态变更通知(配送公司to蚂蚁)
  *
  * @author auto create
- * @since 1.0, 2021-02-07 11:46:35
+ * @since 1.0, 2023-06-14 09:55:26
  */
 public class AlipayCommerceLogisticsWaybillIstdstatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2791164458763227593L;
+	private static final long serialVersionUID = 1294321244192464189L;
 
 	/**
 	 * 事件发生时间点
 	 */
 	@ApiField("action_time")
 	private Date actionTime;
+
+	/**
+	 * 骑手和消费者联系记录
+	 */
+	@ApiListField("contact_records")
+	@ApiField("contact_record")
+	private List<ContactRecord> contactRecords;
 
 	/**
 	 * 描述
@@ -32,6 +41,12 @@ public class AlipayCommerceLogisticsWaybillIstdstatusSyncModel extends AlipayObj
 	 */
 	@ApiField("logistics_code")
 	private String logisticsCode;
+
+	/**
+	 * 运单状态变更扩展信息
+	 */
+	@ApiField("order_ext_istd")
+	private OrderChangeInfoExtIstd orderExtIstd;
 
 	/**
 	 * 支付宝订单流水号
@@ -88,6 +103,13 @@ public class AlipayCommerceLogisticsWaybillIstdstatusSyncModel extends AlipayObj
 		this.actionTime = actionTime;
 	}
 
+	public List<ContactRecord> getContactRecords() {
+		return this.contactRecords;
+	}
+	public void setContactRecords(List<ContactRecord> contactRecords) {
+		this.contactRecords = contactRecords;
+	}
+
 	public String getDesc() {
 		return this.desc;
 	}
@@ -100,6 +122,13 @@ public class AlipayCommerceLogisticsWaybillIstdstatusSyncModel extends AlipayObj
 	}
 	public void setLogisticsCode(String logisticsCode) {
 		this.logisticsCode = logisticsCode;
+	}
+
+	public OrderChangeInfoExtIstd getOrderExtIstd() {
+		return this.orderExtIstd;
+	}
+	public void setOrderExtIstd(OrderChangeInfoExtIstd orderExtIstd) {
+		this.orderExtIstd = orderExtIstd;
 	}
 
 	public String getOrderNo() {

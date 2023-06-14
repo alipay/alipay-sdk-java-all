@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.waybill.istddetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:28:14
+ * @since 1.0, 2023-06-14 15:34:26
  */
 public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6235695674298823436L;
+	private static final long serialVersionUID = 2462756832492138437L;
 
 	/** 
 	 * 预计还剩多久送达 单位：秒
@@ -43,6 +43,12 @@ public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends Alipa
 	 */
 	@ApiField("rider_name")
 	private String riderName;
+
+	/** 
+	 * 骑手实时定位H5链接字段，在骑手已接单后，将可展示骑手实时位置的H5页面链接同步商户
+	 */
+	@ApiField("rider_poi_link")
+	private String riderPoiLink;
 
 	/** 
 	 * 即时配送运单状态
@@ -83,6 +89,13 @@ public class AlipayCommerceLogisticsWaybillIstddetailQueryResponse extends Alipa
 	}
 	public String getRiderName( ) {
 		return this.riderName;
+	}
+
+	public void setRiderPoiLink(String riderPoiLink) {
+		this.riderPoiLink = riderPoiLink;
+	}
+	public String getRiderPoiLink( ) {
+		return this.riderPoiLink;
 	}
 
 	public void setStatus(String status) {

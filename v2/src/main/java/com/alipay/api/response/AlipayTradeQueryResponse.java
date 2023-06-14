@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-13 17:08:19
+ * @since 1.0, 2023-06-14 19:34:29
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2234819111292564345L;
+	private static final long serialVersionUID = 2659962825845428298L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -211,6 +211,12 @@ json格式。
 	 */
 	@ApiField("mdiscount_amount")
 	private String mdiscountAmount;
+
+	/** 
+	 * 医保信息。入参的query_options中指定时才返回该字段信息。medicareCardType：医保卡类型，"1":"亲情支付","0":"本人支付"，为空默认为本人支付；medicareCardHolderHiddenName：医保卡持卡人姓名。
+	 */
+	@ApiField("medical_insurance_info")
+	private String medicalInsuranceInfo;
 
 	/** 
 	 * 买家支付宝用户号，该字段将废弃，不要使用
@@ -556,6 +562,13 @@ json格式。
 	}
 	public String getMdiscountAmount( ) {
 		return this.mdiscountAmount;
+	}
+
+	public void setMedicalInsuranceInfo(String medicalInsuranceInfo) {
+		this.medicalInsuranceInfo = medicalInsuranceInfo;
+	}
+	public String getMedicalInsuranceInfo( ) {
+		return this.medicalInsuranceInfo;
 	}
 
 	public void setOpenId(String openId) {

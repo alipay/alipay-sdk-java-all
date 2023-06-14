@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BillRepayBudgetVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6173721326816167817L;
+	private static final long serialVersionUID = 1562633723459455141L;
 
 	/**
 	 * 申请金额，和入参一致
