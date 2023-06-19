@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 买家支付明细，包含支付渠道与对应的金额
  *
  * @author auto create
- * @since 1.0, 2020-06-20 11:02:59
+ * @since 1.0, 2023-06-16 16:11:32
  */
 public class BuyerPayDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6451258866683237558L;
+	private static final long serialVersionUID = 5632946988231891727L;
 
 	/**
-	 * 买家支付金额
+	 * 买家支付金额，单位：元。
 	 */
 	@ApiField("amount")
 	private String amount;

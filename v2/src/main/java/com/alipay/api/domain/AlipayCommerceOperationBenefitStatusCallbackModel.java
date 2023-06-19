@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户权益领取消息通知
  *
  * @author auto create
- * @since 1.0, 2023-04-20 10:31:19
+ * @since 1.0, 2023-06-16 15:04:17
  */
 public class AlipayCommerceOperationBenefitStatusCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1181836398345685199L;
+	private static final long serialVersionUID = 8455877245458529628L;
 
 	/**
 	 * 权益id

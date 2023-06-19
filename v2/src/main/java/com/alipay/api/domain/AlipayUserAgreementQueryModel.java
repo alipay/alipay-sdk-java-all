@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人代扣协议查询接口
  *
  * @author auto create
- * @since 1.0, 2023-01-04 14:55:35
+ * @since 1.0, 2023-06-19 15:42:45
  */
 public class AlipayUserAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4853146269848467576L;
+	private static final long serialVersionUID = 2749522644589978121L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ） ，如果传了该参数，其他参数会被忽略

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期扣款规则参数。使用周期扣款产品时需要传入，限定了发起扣款的周期、金额等。
  *
  * @author auto create
- * @since 1.0, 2019-06-05 15:07:29
+ * @since 1.0, 2023-06-19 14:46:54
  */
 public class PeriodRuleParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8252452155139193665L;
+	private static final long serialVersionUID = 3537584511713463172L;
 
 	/**
 	 * 首次执行时间execute_time是周期扣款产品必填，即商户发起首次扣款的时间。精确到日，格式为yyyy-MM-dd

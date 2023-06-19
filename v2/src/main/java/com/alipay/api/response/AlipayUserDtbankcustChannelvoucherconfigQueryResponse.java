@@ -18,7 +18,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserDtbankcustChannelvoucherconfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6589465282857623865L;
+	private static final long serialVersionUID = 6684182646682182149L;
 
 	/** 
 	 * 数字分行活动唯一id

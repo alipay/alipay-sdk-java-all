@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签呗电子签约合同模板查询详情服务
  *
  * @author auto create
- * @since 1.0, 2023-05-18 15:30:33
+ * @since 1.0, 2023-06-19 15:49:25
  */
 public class AlipayFinancialnetAuthEcsignTemplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4896691169596718352L;
+	private static final long serialVersionUID = 6157516124395529127L;
 
 	/**
 	 * 合同模板ID，如果存在则为唯一值，由系统生成，在保存成功后会返回该值。

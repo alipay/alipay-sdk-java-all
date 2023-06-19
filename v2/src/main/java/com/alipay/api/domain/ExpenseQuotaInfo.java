@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额度信息
  *
  * @author auto create
- * @since 1.0, 2023-05-08 18:00:02
+ * @since 1.0, 2023-06-16 15:55:37
  */
 public class ExpenseQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8273765335583241886L;
+	private static final long serialVersionUID = 3518425249512977357L;
 
 	/**
 	 * 额度失效时间
@@ -57,7 +57,6 @@ owner_type为ENTERPRISE时为企业ID
 
 	/**
 	 * 额度所属者id类型
-EMPLOYEE 员工
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
@@ -110,10 +109,6 @@ MEAL（工作餐）
 
 	/**
 	 * 额度维度
-枚举值：
-EXPENSE_TYPE（费用类型维度），
-RULE_GROUP_AGGREGATION（规则聚合维度）,
-INSTITUTION（制度）
 	 */
 	@ApiField("target_type")
 	private String targetType;

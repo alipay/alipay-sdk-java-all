@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 插件使用关系查询
  *
  * @author auto create
- * @since 1.0, 2022-01-04 10:32:30
+ * @since 1.0, 2023-06-16 11:36:51
  */
 public class AlipayOpenMiniPluginuseconfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7229223917613218922L;
+	private static final long serialVersionUID = 5597668752711912313L;
 
 	/**
 	 * 页码

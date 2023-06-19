@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankMarketingMcaplatformLevelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6721727526451611445L;
+	private static final long serialVersionUID = 4166459422699143682L;
 
 	/** 
 	 * 绿色等级，不唯一

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签呗电子签约合同模板查询视图对象。
  *
  * @author auto create
- * @since 1.0, 2023-04-14 16:32:00
+ * @since 1.0, 2023-06-19 19:08:59
  */
 public class ContractTemplateOpenVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4397156281889827281L;
+	private static final long serialVersionUID = 5537441352683187221L;
 
 	/**
 	 * 企业印章类型矩形框组件可选。

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.relation.shopdetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-04 14:29:27
+ * @since 1.0, 2023-06-19 15:46:52
  */
 public class AlipayBusinessRelationShopdetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8292564757893369273L;
+	private static final long serialVersionUID = 7852443399682737629L;
 
 	/** 
 	 * 门店详情信息

@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 取消订单或者退货所需复杂类型。
+ * 逆向指令增加逆向业务场景及逆向物流单号
  *
  * @author auto create
- * @since 1.0, 2023-02-06 14:15:22
+ * @since 1.0, 2023-06-15 19:30:09
  */
 public class AssetReverseItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2295596515148422146L;
+	private static final long serialVersionUID = 8275822719921757721L;
 
 	/**
 	 * 行为类型
@@ -80,6 +80,12 @@ public class AssetReverseItem extends AlipayObject {
 	private String itemName;
 
 	/**
+	 * 物流信息
+	 */
+	@ApiField("logistics_info")
+	private LogisticsInfo logisticsInfo;
+
+	/**
 	 * 原申请单ID
 	 */
 	@ApiField("original_apply_order_id")
@@ -138,6 +144,15 @@ public class AssetReverseItem extends AlipayObject {
 	 */
 	@ApiField("reverse_apply_order_item_id")
 	private String reverseApplyOrderItemId;
+
+	/**
+	 * 逆向业务场景，用于区分不同场景：
+DEFAULT_SCENE-兼容原淘宝天猫场景
+USER_WITHOUT_GOODS_EXPRESS_RETURN用户未收到货-快递退回，供应商需进行拦截
+USER_WITH_GOODS_SELF_MAIL_BACK-用户已收到货-用户直接寄回，供应商需等待商品回到仓库
+	 */
+	@ApiField("reverse_biz_scene")
+	private String reverseBizScene;
 
 	/**
 	 * 逆向类型
@@ -228,6 +243,13 @@ public class AssetReverseItem extends AlipayObject {
 		this.itemName = itemName;
 	}
 
+	public LogisticsInfo getLogisticsInfo() {
+		return this.logisticsInfo;
+	}
+	public void setLogisticsInfo(LogisticsInfo logisticsInfo) {
+		this.logisticsInfo = logisticsInfo;
+	}
+
 	public String getOriginalApplyOrderId() {
 		return this.originalApplyOrderId;
 	}
@@ -296,6 +318,13 @@ public class AssetReverseItem extends AlipayObject {
 	}
 	public void setReverseApplyOrderItemId(String reverseApplyOrderItemId) {
 		this.reverseApplyOrderItemId = reverseApplyOrderItemId;
+	}
+
+	public String getReverseBizScene() {
+		return this.reverseBizScene;
+	}
+	public void setReverseBizScene(String reverseBizScene) {
+		this.reverseBizScene = reverseBizScene;
 	}
 
 	public String getReverseType() {

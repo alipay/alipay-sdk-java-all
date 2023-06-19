@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手工发放发放记录信息详情
  *
  * @author auto create
- * @since 1.0, 2023-04-21 14:56:42
+ * @since 1.0, 2023-06-16 15:56:29
  */
 public class IssueRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6291592522469693521L;
+	private static final long serialVersionUID = 8728637227752724135L;
 
 	/**
 	 * 发放金额，支持两位小数，单位为（元）
@@ -20,7 +20,7 @@ public class IssueRecordInfo extends AlipayObject {
 	private String issueQuota;
 
 	/**
-	 * 发放状态枚举描述
+	 * 发放状态描述
 0: "未发放"
 1: "发放成功"
 2: "待作废"

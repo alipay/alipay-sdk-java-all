@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TimeRange extends AlipayObject {
 
-	private static final long serialVersionUID = 6444861391757893847L;
+	private static final long serialVersionUID = 2285397747896463934L;
 
 	/**
 	 * 开始时间

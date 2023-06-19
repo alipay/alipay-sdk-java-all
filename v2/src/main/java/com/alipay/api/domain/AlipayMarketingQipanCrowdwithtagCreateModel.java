@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据棋盘标签创建人群
  *
  * @author auto create
- * @since 1.0, 2023-05-17 20:36:56
+ * @since 1.0, 2023-06-15 16:55:26
  */
 public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5238995946776531875L;
+	private static final long serialVersionUID = 3299225583514513866L;
 
 	/**
 	 * 安全应用范围，参考文档 <a href="https://opendocs.alipay.com/pre-open/04phhq" target="_blank">安全应用范围枚举</a>

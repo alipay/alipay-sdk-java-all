@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 海外商户报备结果查询接口
  *
  * @author auto create
- * @since 1.0, 2021-10-25 15:24:58
+ * @since 1.0, 2023-06-19 14:00:58
  */
 public class AlipayOverseasSecondmerchantMaintainQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3841138252576882743L;
+	private static final long serialVersionUID = 4133285965756937198L;
 
 	/**
 	 * 二级商户报备类型，分为ONLINE_PAYMENT和INSTORE_PAYMENT两种

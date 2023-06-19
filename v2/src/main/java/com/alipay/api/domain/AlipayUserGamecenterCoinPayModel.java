@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣减用户游戏币
  *
  * @author auto create
- * @since 1.0, 2023-06-07 17:16:44
+ * @since 1.0, 2023-06-14 20:30:22
  */
 public class AlipayUserGamecenterCoinPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7546333129439724817L;
+	private static final long serialVersionUID = 2761153948678537521L;
 
 	/**
 	 * 扣除游戏币数量

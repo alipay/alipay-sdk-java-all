@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝代运营商业关系门店删除
  *
  * @author auto create
- * @since 1.0, 2022-06-23 20:04:57
+ * @since 1.0, 2023-06-19 14:23:53
  */
 public class AlipayBusinessRelationShopDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6293211267743599144L;
+	private static final long serialVersionUID = 5433759968785284722L;
 
 	/**
 	 * 商业关系组织id 由组织信息创建接口返回或bd分配
@@ -36,6 +36,12 @@ public class AlipayBusinessRelationShopDeleteModel extends AlipayObject {
 	 */
 	@ApiField("real_shop_id")
 	private String realShopId;
+
+	/**
+	 * 外部门店编号，此字段与real_shop_id至少传参一个，优先使用real_shop_id。
+	 */
+	@ApiField("real_shop_no")
+	private String realShopNo;
 
 	public String getGroupId() {
 		return this.groupId;
@@ -63,6 +69,13 @@ public class AlipayBusinessRelationShopDeleteModel extends AlipayObject {
 	}
 	public void setRealShopId(String realShopId) {
 		this.realShopId = realShopId;
+	}
+
+	public String getRealShopNo() {
+		return this.realShopNo;
+	}
+	public void setRealShopNo(String realShopNo) {
+		this.realShopNo = realShopNo;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝代运营商业关系门店详情查询
  *
  * @author auto create
- * @since 1.0, 2022-07-13 10:27:26
+ * @since 1.0, 2023-06-19 14:43:19
  */
 public class AlipayBusinessRelationShopdetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2617417232741292462L;
+	private static final long serialVersionUID = 2349997217948652755L;
 
 	/**
 	 * 商业关系组织id 由组织信息创建接口返回或bd分配
@@ -36,6 +36,12 @@ public class AlipayBusinessRelationShopdetailQueryModel extends AlipayObject {
 	 */
 	@ApiField("real_shop_id")
 	private String realShopId;
+
+	/**
+	 * 外部门店编号，此字段与real_shop_id至少传参一个，优先使用real_shop_id。
+	 */
+	@ApiField("real_shop_no")
+	private String realShopNo;
 
 	public String getGroupId() {
 		return this.groupId;
@@ -63,6 +69,13 @@ public class AlipayBusinessRelationShopdetailQueryModel extends AlipayObject {
 	}
 	public void setRealShopId(String realShopId) {
 		this.realShopId = realShopId;
+	}
+
+	public String getRealShopNo() {
+		return this.realShopNo;
+	}
+	public void setRealShopNo(String realShopNo) {
+		this.realShopNo = realShopNo;
 	}
 
 }

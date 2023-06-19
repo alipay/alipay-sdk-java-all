@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMobileBksigntokenVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1876634762561178514L;
+	private static final long serialVersionUID = 8833223216292831649L;
 
 	/** 
 	 * 返回值创建时间

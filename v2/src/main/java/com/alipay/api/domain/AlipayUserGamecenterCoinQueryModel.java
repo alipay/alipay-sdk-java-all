@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户游戏币余额
  *
  * @author auto create
- * @since 1.0, 2023-06-07 13:45:46
+ * @since 1.0, 2023-06-14 20:27:58
  */
 public class AlipayUserGamecenterCoinQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2213235185388971539L;
+	private static final long serialVersionUID = 8491735832664259737L;
 
 	/**
 	 * 蚂蚁统一会员ID

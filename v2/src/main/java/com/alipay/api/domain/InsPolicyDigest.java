@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单摘要(去除敏感信息)
  *
  * @author auto create
- * @since 1.0, 2023-04-25 09:41:21
+ * @since 1.0, 2023-06-16 09:46:52
  */
 public class InsPolicyDigest extends AlipayObject {
 
-	private static final long serialVersionUID = 1144624564218719883L;
+	private static final long serialVersionUID = 7137274676721622929L;
 
 	/**
 	 * 保单失效时间
@@ -62,6 +62,18 @@ public class InsPolicyDigest extends AlipayObject {
 	 */
 	@ApiField("sum_insured")
 	private Long sumInsured;
+
+	/**
+	 * 退保金额 ;单位分
+	 */
+	@ApiField("surrender_amount")
+	private Long surrenderAmount;
+
+	/**
+	 * 退保时间
+	 */
+	@ApiField("surrender_time")
+	private Date surrenderTime;
 
 	public Date getEffectEndTime() {
 		return this.effectEndTime;
@@ -117,6 +129,20 @@ public class InsPolicyDigest extends AlipayObject {
 	}
 	public void setSumInsured(Long sumInsured) {
 		this.sumInsured = sumInsured;
+	}
+
+	public Long getSurrenderAmount() {
+		return this.surrenderAmount;
+	}
+	public void setSurrenderAmount(Long surrenderAmount) {
+		this.surrenderAmount = surrenderAmount;
+	}
+
+	public Date getSurrenderTime() {
+		return this.surrenderTime;
+	}
+	public void setSurrenderTime(Date surrenderTime) {
+		this.surrenderTime = surrenderTime;
 	}
 
 }

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.ecsign.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:21:55
+ * @since 1.0, 2023-06-19 15:49:25
  */
 public class AlipayFinancialnetAuthEcsignTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7414745645753293233L;
+	private static final long serialVersionUID = 3339711739449125189L;
 
 	/** 
 	 * 合同模板开放视图，注意如果是列表返回的是用于展示的精简值，详情请查询详情接口。

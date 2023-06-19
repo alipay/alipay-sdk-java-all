@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8474613883543896664L;
+	private static final long serialVersionUID = 5417387355633476131L;
 
 	/** 
 	 * 投诉单涉及交易总金额（单位：人民币元）

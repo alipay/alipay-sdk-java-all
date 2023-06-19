@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingRecruitEnrollQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1819649915136626343L;
+	private static final long serialVersionUID = 3399248168898181252L;
 
 	/** 
 	 * 报名ID

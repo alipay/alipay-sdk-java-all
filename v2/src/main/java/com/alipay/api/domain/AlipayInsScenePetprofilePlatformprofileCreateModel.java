@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsScenePetprofilePlatformprofileCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1579261487915216222L;
+	private static final long serialVersionUID = 6178396715966494117L;
 
 	/**
 	 * 生日 档案生日不能早于2000年，且不能晚于当天

@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeliveryPlayConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2843186632688651881L;
+	private static final long serialVersionUID = 2658934639776917352L;
 
 	/**
 	 * 满额送玩法投放内容配置。

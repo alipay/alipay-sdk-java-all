@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CPBillSet extends AlipayObject {
 
-	private static final long serialVersionUID = 3348715538388231236L;
+	private static final long serialVersionUID = 6489746553853947673L;
 
 	/**
 	 * 明细条目所归属的账期，用于归类和向用户展示，具体参数值由物业系统自行定义，除参数最大长度外支付宝不做限定。

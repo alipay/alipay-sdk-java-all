@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 成长派服务消息发送
  *
  * @author auto create
- * @since 1.0, 2023-06-05 14:01:27
+ * @since 1.0, 2023-06-15 17:47:08
  */
 public class AlipayCommerceEducateYouthServicemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8814538719826597764L;
+	private static final long serialVersionUID = 4472261533748793941L;
 
 	/**
 	 * 业务类型，用于区分不同业务场景

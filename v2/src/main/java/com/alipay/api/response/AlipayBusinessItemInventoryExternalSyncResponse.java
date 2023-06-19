@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBusinessItemInventoryExternalSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4139144733479524519L;
+	private static final long serialVersionUID = 8141129517916884851L;
 
 	/** 
 	 * 支付宝商品id列表

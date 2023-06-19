@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCardOpenApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3141396673841294268L;
+	private static final long serialVersionUID = 1223527162165776628L;
 
 	/** 
 	 * 商户卡信息（包括支付宝分配的业务卡号）

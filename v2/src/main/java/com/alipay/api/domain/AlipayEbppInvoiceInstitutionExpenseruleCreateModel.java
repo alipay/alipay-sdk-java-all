@@ -10,26 +10,32 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建费控使用规则
  *
  * @author auto create
- * @since 1.0, 2023-04-25 19:22:56
+ * @since 1.0, 2023-06-16 17:19:53
  */
 public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1698755516581877655L;
+	private static final long serialVersionUID = 2211516252476749879L;
 
 	/**
-	 * 企业共同账户id，和授权签约协议号共同使用。
+	 * 企业共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 授权签约协议号，可通过签约消息获取。配合企业共同账户id使用，当填写企业共同账户id时，此字段必填。
+	 * 授权签约协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
-	 * 消费模式，该使用规则支持消费的资产类型，不填为默认模式，默认模式为优先消费余额，没有余额则根据规则中设置的限额控制消费金额
+	 * 当前规则可使用的其他资产来源信息
+	 */
+	@ApiField("asset_share_source_info")
+	private AssetShareSourceInfo assetShareSourceInfo;
+
+	/**
+	 * 消费模式
 	 */
 	@ApiField("consume_mode")
 	private String consumeMode;
@@ -41,13 +47,13 @@ public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayOb
 	private String enterpriseId;
 
 	/**
-	 * 使用规则条件列表
+	 * 使用规则因子列表
 	 */
 	@ApiField("expense_ctrl_rule_info_list")
 	private ExpenseCtrRuleInfo expenseCtrlRuleInfoList;
 
 	/**
-	 * 费用类型子类，当制度的费用类型为MEAL时，支持到店、外卖；当费用类型为非MEAL时，与费用类型保持一致
+	 * 费用类型子类
 	 */
 	@ApiField("expense_type_sub_category")
 	private String expenseTypeSubCategory;
@@ -59,32 +65,32 @@ public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayOb
 	private String institutionId;
 
 	/**
-	 * 开票规则id，若使用途径是外卖的使用规则需要开票，需要在创建使用规则时关联开票规则，后续变更关联开票规则不生效
+	 * 开票规则id
 	 */
 	@ApiField("open_rule_id")
 	private String openRuleId;
 
 	/**
-	 * 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略
+	 * 支付策略
 	 */
 	@ApiField("payment_policy")
 	private String paymentPolicy;
 
 	/**
-	 * 使用规则条件列表
+	 * 使用规则因子列表
 	 */
 	@ApiListField("standard_condition_info_list")
 	@ApiField("standard_condition_info")
 	private List<StandardConditionInfo> standardConditionInfoList;
 
 	/**
-	 * 使用规则描述(敏感词校验)
+	 * 使用规则描述
 	 */
 	@ApiField("standard_desc")
 	private String standardDesc;
 
 	/**
-	 * 费控规则名称 特殊说明： 1）敏感词校验
+	 * 费控规则名称
 	 */
 	@ApiField("standard_name")
 	private String standardName;
@@ -101,6 +107,13 @@ public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayOb
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public AssetShareSourceInfo getAssetShareSourceInfo() {
+		return this.assetShareSourceInfo;
+	}
+	public void setAssetShareSourceInfo(AssetShareSourceInfo assetShareSourceInfo) {
+		this.assetShareSourceInfo = assetShareSourceInfo;
 	}
 
 	public String getConsumeMode() {

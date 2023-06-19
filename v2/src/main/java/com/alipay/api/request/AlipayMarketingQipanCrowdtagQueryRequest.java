@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.qipan.crowdtag.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 22:51:58
+ * @since 1.0, 2023-06-15 16:55:57
  */
 public class AlipayMarketingQipanCrowdtagQueryRequest implements AlipayRequest<AlipayMarketingQipanCrowdtagQueryResponse> {
 

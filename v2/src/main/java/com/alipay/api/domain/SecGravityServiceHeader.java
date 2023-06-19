@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SecGravityServiceHeader extends AlipayObject {
 
-	private static final long serialVersionUID = 3726573651544289834L;
+	private static final long serialVersionUID = 6758438261292222981L;
 
 	/**
 	 * 用于追踪异构系统间唯一服务调用的traceId

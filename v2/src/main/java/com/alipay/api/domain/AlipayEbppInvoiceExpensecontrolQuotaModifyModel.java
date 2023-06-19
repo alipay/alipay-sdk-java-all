@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改额度
  *
  * @author auto create
- * @since 1.0, 2023-05-17 10:32:19
+ * @since 1.0, 2023-06-16 14:26:15
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1347842456174593179L;
+	private static final long serialVersionUID = 2174587935896159339L;
 
 	/**
 	 * 企业共同账户ID
@@ -60,6 +60,12 @@ public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObjec
 	 */
 	@ApiField("quota_id")
 	private String quotaId;
+
+	/**
+	 * 是否可转赠，1表示可转赠，0表示不可转赠
+	 */
+	@ApiField("share_mode")
+	private String shareMode;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -115,6 +121,13 @@ public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObjec
 	}
 	public void setQuotaId(String quotaId) {
 		this.quotaId = quotaId;
+	}
+
+	public String getShareMode() {
+		return this.shareMode;
+	}
+	public void setShareMode(String shareMode) {
+		this.shareMode = shareMode;
 	}
 
 }

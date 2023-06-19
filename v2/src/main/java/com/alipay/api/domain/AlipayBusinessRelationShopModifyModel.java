@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝代运营商业关系门店修改
  *
  * @author auto create
- * @since 1.0, 2021-07-12 11:42:12
+ * @since 1.0, 2023-06-19 14:43:18
  */
 public class AlipayBusinessRelationShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5542849346979726187L;
+	private static final long serialVersionUID = 1541196317986199781L;
 
 	/**
 	 * 经营地址
@@ -105,7 +105,7 @@ public class AlipayBusinessRelationShopModifyModel extends AlipayObject {
 	private String realShopLogo;
 
 	/**
-	 * 外部门店编号，用于ISV系统内部门店标识等
+	 * 外部门店编号，用于ISV系统内部门店标识等。此字段与real_shop_id至少传参一个，优先使用real_shop_id
 	 */
 	@ApiField("real_shop_no")
 	private String realShopNo;

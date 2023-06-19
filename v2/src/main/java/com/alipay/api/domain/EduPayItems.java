@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduPayItems extends AlipayObject {
 
-	private static final long serialVersionUID = 4357279447623189149L;
+	private static final long serialVersionUID = 1633867818271466935L;
 
 	/**
 	 * 缴费项是否必选 如果缴费项是多选模式，此参数生效。 “Y”表示必填，“N”或空表示非必填。

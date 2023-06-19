@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * app支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2023-03-29 20:31:17
+ * @since 1.0, 2023-06-16 20:16:41
  */
 public class AlipayTradeAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2878929185956828195L;
+	private static final long serialVersionUID = 5444655656289462759L;
 
 	/**
 	 * 签约参数。如果希望在sdk中支付并签约，需要在这里传入签约信息。
@@ -124,7 +124,7 @@ public class AlipayTradeAppPayModel extends AlipayObject {
 	private String promoParams;
 
 	/**
-	 * 通知参数选项。 商户通过传递该参数来定制需要异步通知的额外字段，数组格式。包括但不限于：["hyb_amount","enterprise_pay_info"]
+	 * 通知参数选项。 商户通过传递该参数来定制需要异步通知的额外字段，数组格式。包括但不限于：["hyb_amount","enterprise_pay_info","medical_insurance_info"]
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")

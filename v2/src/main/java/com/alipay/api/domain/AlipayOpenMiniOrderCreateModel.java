@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2023-06-07 10:48:49
+ * @since 1.0, 2023-06-16 15:49:44
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4392895182273867351L;
+	private static final long serialVersionUID = 1245122382885824671L;
 
 	/**
 	 * 订单收货地址
@@ -96,6 +96,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 追踪ID,公域分发场景必传,会影响主播归因、分享员归因等
+	 */
+	@ApiField("source_id")
+	private String sourceId;
 
 	/**
 	 * 订单相对超时时间。从交易创建时间开始计算。
@@ -207,6 +213,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public String getSourceId() {
+		return this.sourceId;
+	}
+	public void setSourceId(String sourceId) {
+		this.sourceId = sourceId;
 	}
 
 	public String getTimeoutExpress() {

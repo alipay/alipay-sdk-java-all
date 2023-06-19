@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签呗电子签约合同模板配置保存服务，矩形框内容样式。
  *
  * @author auto create
- * @since 1.0, 2023-04-14 10:51:56
+ * @since 1.0, 2023-06-19 19:09:41
  */
 public class SignatoryStyle extends AlipayObject {
 
-	private static final long serialVersionUID = 5564938452894234747L;
+	private static final long serialVersionUID = 6732341126937331742L;
 
 	/**
 	 * 字体对应，默认且目前仅支持1（宋体）。

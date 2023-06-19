@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发放规则信息
  *
  * @author auto create
- * @since 1.0, 2023-05-08 20:15:41
+ * @since 1.0, 2023-06-16 15:56:19
  */
 public class IssueRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1858388593289833331L;
+	private static final long serialVersionUID = 4763873274665714824L;
 
 	/**
 	 * 生效时间段
@@ -23,7 +23,7 @@ public class IssueRuleInfo extends AlipayObject {
 
 	/**
 	 * 累计类型，默认为0
-枚举：0（不可累计）、1（可累计）、2（累计天数）、3（累计到指定日期）
+可选值：0（不可累计）、1（可累计）、2（累计天数）、3（累计到指定日期）
 	 */
 	@ApiField("invalid_mode")
 	private Long invalidMode;
@@ -35,7 +35,7 @@ public class IssueRuleInfo extends AlipayObject {
 	private String invalidModeValue;
 
 	/**
-	 * 发放金额
+	 * 发放金额，单位元
 	 */
 	@ApiField("issue_amount_value")
 	private String issueAmountValue;

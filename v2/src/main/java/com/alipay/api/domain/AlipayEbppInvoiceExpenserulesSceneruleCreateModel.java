@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 费控制度添加
  *
  * @author auto create
- * @since 1.0, 2023-02-27 20:03:33
+ * @since 1.0, 2023-06-19 17:09:50
  */
 public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6417659334573985631L;
+	private static final long serialVersionUID = 3129758257127913624L;
 
 	/**
 	 * 共同账号ID
@@ -78,7 +78,6 @@ public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObj
 
 	/**
 	 * 费用类型
-枚举值：MEAL（餐饮），METRO（地铁）
 	 */
 	@ApiField("expense_type")
 	private String expenseType;
@@ -91,7 +90,6 @@ public class AlipayEbppInvoiceExpenserulesSceneruleCreateModel extends AlipayObj
 
 	/**
 	 * 因公场景
-枚举值：OVERTIME（加班），SUBSIDY（补贴福利），TRAVEL（差旅）
 	 */
 	@ApiField("scene_type")
 	private String sceneType;

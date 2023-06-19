@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape创建project
  *
  * @author auto create
- * @since 1.0, 2022-09-29 10:44:54
+ * @since 1.0, 2023-06-16 10:14:34
  */
 public class AlipayDigitalopUcdpApeprojectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6218878315676868825L;
+	private static final long serialVersionUID = 5193283332143974561L;
 
 	/**
 	 * 实际接入推荐项目的商家PID

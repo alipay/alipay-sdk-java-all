@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewsfeedLocationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4126876724696497724L;
+	private static final long serialVersionUID = 2893678936978154762L;
 
 	/**
 	 * 地理信息

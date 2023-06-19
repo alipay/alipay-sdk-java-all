@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签呗电子签约合同模板配置保存服务
  *
  * @author auto create
- * @since 1.0, 2023-05-18 15:31:09
+ * @since 1.0, 2023-06-19 15:48:58
  */
 public class AlipayFinancialnetAuthEcsignTemplateSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8237867814316272889L;
+	private static final long serialVersionUID = 8797334642972749824L;
 
 	/**
 	 * 企业印章类型矩形框组件可选。
