@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗分期分期码码申领
  *
  * @author auto create
- * @since 1.0, 2022-12-13 14:57:51
+ * @since 1.0, 2023-06-28 17:08:15
  */
 public class AlipayPcreditHuabeiFqqrcodeHbfqCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5797118193536255314L;
+	private static final long serialVersionUID = 5177473761118227823L;
 
 	/**
 	 * 用于物流派送的收件详细地址.

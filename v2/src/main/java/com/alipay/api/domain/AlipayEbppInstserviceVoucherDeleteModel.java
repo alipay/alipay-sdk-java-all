@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInstserviceVoucherDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5116385635174158475L;
+	private static final long serialVersionUID = 4896878727515783871L;
 
 	/**
 	 * 业务发生时间

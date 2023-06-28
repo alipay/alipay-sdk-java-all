@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序版本列表查询
  *
  * @author auto create
- * @since 1.0, 2022-12-04 22:27:15
+ * @since 1.0, 2023-06-21 13:10:51
  */
 public class AlipayOpenMiniVersionListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7729812872857625426L;
+	private static final long serialVersionUID = 8672677239139961337L;
 
 	/**
 	 * 端参数，用于查询多端版本，不传默认为支付宝端。
@@ -21,7 +21,7 @@ public class AlipayOpenMiniVersionListQueryModel extends AlipayObject {
 	private String bundleId;
 
 	/**
-	 * 版本状态列表，用英文逗号","分割，可选；不填默认不返回，状态可选值以及说明如下-INIT: 开发中, AUDITING: 审核中, AUDIT_REJECT: 审核驳回, WAIT_RELEASE: 待上架, BASE_AUDIT_PASS: 准入不可营销, GRAY: 灰度中, RELEASE: 已上架, OFFLINE: 已下架, AUDIT_OFFLINE: 已下架;
+	 * 版本状态列表，用英文逗号","分割，可选；不填默认不返回。
 	 */
 	@ApiField("version_status")
 	private String versionStatus;

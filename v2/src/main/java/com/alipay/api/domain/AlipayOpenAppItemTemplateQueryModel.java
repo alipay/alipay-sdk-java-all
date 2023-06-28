@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取商品类目信息
  *
  * @author auto create
- * @since 1.0, 2023-05-10 19:31:24
+ * @since 1.0, 2023-06-25 17:01:35
  */
 public class AlipayOpenAppItemTemplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5448422141832923796L;
+	private static final long serialVersionUID = 1286424195593528825L;
 
 	/**
 	 * 平台类目，填写的类目必须在类目表列出，只填最后一级。商品类目 ID 及信息可通过商品类目表获取。

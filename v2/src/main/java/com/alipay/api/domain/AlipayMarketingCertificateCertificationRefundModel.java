@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 撤销凭证核销状态
  *
  * @author auto create
- * @since 1.0, 2023-06-09 10:20:56
+ * @since 1.0, 2023-06-20 20:54:56
  */
 public class AlipayMarketingCertificateCertificationRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7819419189279634838L;
+	private static final long serialVersionUID = 4339217578931581511L;
 
 	/**
 	 * 撤销核销时间。格式为：yyyy-MM-dd HH:mm:ss

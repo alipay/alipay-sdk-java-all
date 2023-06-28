@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndrISVAmountInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5679157213795391799L;
+	private static final long serialVersionUID = 7664842285198425497L;
 
 	/**
 	 * 费用明细。（目前费用明细包含支付宝手续费、足额到账费，费用名称分别为hanlding_fee、full_value_fee）

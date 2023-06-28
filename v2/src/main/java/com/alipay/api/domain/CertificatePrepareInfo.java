@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证核销准备详情
  *
  * @author auto create
- * @since 1.0, 2023-05-30 23:34:21
+ * @since 1.0, 2023-06-28 11:04:38
  */
 public class CertificatePrepareInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5433262125146623523L;
+	private static final long serialVersionUID = 5427264587478524868L;
+
+	/**
+	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
+	 */
+	@ApiField("amount_info")
+	private CertificateInstanceAmountInfo amountInfo;
 
 	/**
 	 * 凭证id
@@ -44,6 +50,13 @@ public class CertificatePrepareInfo extends AlipayObject {
 	 */
 	@ApiField("valid_end_time")
 	private Date validEndTime;
+
+	public CertificateInstanceAmountInfo getAmountInfo() {
+		return this.amountInfo;
+	}
+	public void setAmountInfo(CertificateInstanceAmountInfo amountInfo) {
+		this.amountInfo = amountInfo;
+	}
 
 	public String getCertificateId() {
 		return this.certificateId;

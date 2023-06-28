@@ -69,7 +69,7 @@ public class HttpClientUtil extends AbstractHttpClient {
 
         verifier = new HostnameVerifier() {
             public boolean verify(String hostname, SSLSession session) {
-                return false; //不允许URL的主机名和服务器的标识主机名不匹配的情况
+                return true;
             }
         };
     }

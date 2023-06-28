@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地零售商品
  *
  * @author auto create
- * @since 1.0, 2022-12-22 14:21:53
+ * @since 1.0, 2023-06-26 20:10:54
  */
 public class ApeRetailItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1282545178891748519L;
+	private static final long serialVersionUID = 3536356533576346343L;
 
 	/**
 	 * 商品可售时间

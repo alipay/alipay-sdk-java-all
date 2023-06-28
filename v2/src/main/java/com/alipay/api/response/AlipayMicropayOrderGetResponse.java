@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMicropayOrderGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3164933644717196982L;
+	private static final long serialVersionUID = 6893838356577495726L;
 
 	/** 
 	 * 冻结订单详情

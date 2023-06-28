@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动预算信息
  *
  * @author auto create
- * @since 1.0, 2023-05-23 17:37:58
+ * @since 1.0, 2023-06-20 18:17:32
  */
 public class DtBankBudgetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5332363296622336717L;
+	private static final long serialVersionUID = 6475288139859526739L;
 
 	/**
 	 * 活动预算配置信息

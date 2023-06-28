@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.sw.item.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-06-08 11:25:49
+ * @since 1.0, 2023-06-27 18:48:11
  */
 public class AlipayIserviceCcmSwItemSyncRequest implements AlipayRequest<AlipayIserviceCcmSwItemSyncResponse> {
 

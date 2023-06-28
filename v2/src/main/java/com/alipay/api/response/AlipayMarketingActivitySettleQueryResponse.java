@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.settle.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:02:52
+ * @since 1.0, 2023-06-28 08:53:08
  */
 public class AlipayMarketingActivitySettleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6198317776719715139L;
+	private static final long serialVersionUID = 8431795943935237141L;
 
 	/** 
 	 * 订单号

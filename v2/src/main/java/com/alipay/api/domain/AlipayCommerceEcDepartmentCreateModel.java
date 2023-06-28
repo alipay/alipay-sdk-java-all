@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业部门创建
  *
  * @author auto create
- * @since 1.0, 2023-06-07 19:32:20
+ * @since 1.0, 2023-06-28 11:22:02
  */
 public class AlipayCommerceEcDepartmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3162876726667266952L;
+	private static final long serialVersionUID = 1496192415796743946L;
 
 	/**
-	 * 部门编码，不同部门的编码不可重复，如果为空则生成默认部门编码
+	 * 部门编码
 	 */
 	@ApiField("department_code")
 	private String departmentCode;
@@ -32,7 +32,7 @@ public class AlipayCommerceEcDepartmentCreateModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 上级部门id，如果为空则默认设置上级部门为根部门
+	 * 上级部门id
 	 */
 	@ApiField("parent_department_id")
 	private String parentDepartmentId;

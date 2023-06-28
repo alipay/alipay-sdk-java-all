@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 首绑有礼活动信息
  *
  * @author auto create
- * @since 1.0, 2023-05-24 09:52:26
+ * @since 1.0, 2023-06-20 18:17:19
  */
 public class DtBankFirstBindCardGiftInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4321359249121578665L;
+	private static final long serialVersionUID = 7186638814327158818L;
 
 	/**
 	 * bank_code_config_acount_limit值为ASSIGNED_PID_LIST有值，表示银行码指定账号PID列表

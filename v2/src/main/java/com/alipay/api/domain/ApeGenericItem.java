@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * APE通用物品模型
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:11:14
+ * @since 1.0, 2023-06-26 20:10:54
  */
 public class ApeGenericItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1622763767594851465L;
+	private static final long serialVersionUID = 5298754656232777494L;
 
 	/**
 	 * 物品的属性值，根据物品类型在APE接入文档中获取对应的物品属性定义。
@@ -26,7 +26,7 @@ public class ApeGenericItem extends AlipayObject {
 	private String id;
 
 	/**
-	 * 物品类型
+	 * 数据类型，请从枚举值中选一个最适合自己数据类型传，如果不传，则会默认GOODS
 	 */
 	@ApiField("row_type")
 	private String rowType;

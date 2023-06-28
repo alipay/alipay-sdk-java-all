@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2023-06-08 14:42:39
+ * @since 1.0, 2023-06-28 11:22:00
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6269529374273636638L;
+	private static final long serialVersionUID = 5785558148389941164L;
 
 	/**
 	 * 员工所属部门
@@ -36,13 +36,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String employeeCertType;
 
 	/**
-	 * 员工邮箱；手机号、邮箱、identity_type三个属性至少传入一个
+	 * 员工邮箱
 	 */
 	@ApiField("employee_email")
 	private String employeeEmail;
 
 	/**
-	 * 员工手机号；手机号、邮箱、identity_type三个属性至少传入一个
+	 * 员工手机号
 	 */
 	@ApiField("employee_mobile")
 	private String employeeMobile;
@@ -54,7 +54,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String employeeName;
 
 	/**
-	 * 员工编号
+	 * 员工工号
 	 */
 	@ApiField("employee_no")
 	private String employeeNo;
@@ -66,7 +66,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 根据identity_type指定的身份类型，传入对应的身份标识，企业支付宝登录账号(支持手机号或者邮箱)或企业支付宝会员id(对应2088开头的支付宝会员id)
+	 * 员工身份标识
 	 */
 	@ApiField("identity")
 	private String identity;
@@ -78,13 +78,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String identityOpenId;
 
 	/**
-	 * 身份类型；手机号、邮箱、identity_type三个属性至少传入一个
+	 * 身份类型
 	 */
 	@ApiField("identity_type")
 	private String identityType;
 
 	/**
-	 * 员工刷脸加入企业人脸库时的核验方式，如果设置为business_facepay_checkall，则employee_name、employee_cert_type、employee_cert_no必传，如果不传则默认不核验。
+	 * 员工刷脸加入企业人脸库时的核验方式
 	 */
 	@ApiField("iot_check_type")
 	private String iotCheckType;
@@ -101,6 +101,12 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	@ApiListField("role_list")
 	@ApiField("string")
 	private List<String> roleList;
+
+	/**
+	 * 员工签约后回跳地址
+	 */
+	@ApiField("sign_return_url")
+	private String signReturnUrl;
 
 	public List<String> getDepartmentIds() {
 		return this.departmentIds;
@@ -198,6 +204,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	}
 	public void setRoleList(List<String> roleList) {
 		this.roleList = roleList;
+	}
+
+	public String getSignReturnUrl() {
+		return this.signReturnUrl;
+	}
+	public void setSignReturnUrl(String signReturnUrl) {
+		this.signReturnUrl = signReturnUrl;
 	}
 
 }

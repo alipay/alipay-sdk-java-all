@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.tips.delivery.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 13:55:32
+ * @since 1.0, 2023-06-28 10:11:57
  */
 public class AlipayOpenMiniTipsDeliveryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6415859477651374772L;
+	private static final long serialVersionUID = 4325654628686566694L;
 
 	/** 
 	 * 收藏引导活动ID

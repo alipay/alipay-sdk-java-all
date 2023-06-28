@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 持卡人信息
  *
  * @author auto create
- * @since 1.0, 2022-12-01 14:32:42
+ * @since 1.0, 2023-06-28 16:57:51
  */
 public class CardUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6268853532465565428L;
+	private static final long serialVersionUID = 7853149227229113657L;
 
 	/**
 	 * 开放id
@@ -20,7 +20,7 @@ public class CardUserInfo extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 用户唯一标识, 根据user_id_type类型来定 （目前暂支持支付宝userId）
+	 * 用户唯一标识, 根据user_uni_id_type类型来定 （目前暂支持支付宝userId）
 
 支付宝userId说明：支付宝用户号是以2088开头的16位纯数字组成
 	 */
@@ -28,7 +28,7 @@ public class CardUserInfo extends AlipayObject {
 	private String userUniId;
 
 	/**
-	 * ID类型：UID， 即传值UID即可
+	 * 用户唯一标识user_uni_id类型
 	 */
 	@ApiField("user_uni_id_type")
 	private String userUniIdType;

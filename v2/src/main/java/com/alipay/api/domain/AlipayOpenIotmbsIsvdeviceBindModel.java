@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5792617967874789234L;
+	private static final long serialVersionUID = 4235331527143497962L;
 
 	/**
 	 * 设备蓝牙mac地址
@@ -38,13 +38,13 @@ public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 	private String deviceCategory;
 
 	/**
-	 * 设备所属类型
+	 * 设备所属类型，枚举值：30001001:蜻蜓前台设备 30001002:蜻蜓房门设备 30001003:蜻蜓梯控设备 30001004:蜻蜓门禁/闸机设备 30002001:袋鼠货柜 30003001:生态刷脸前台设备 30003002:生态刷脸房门设备 30003003:生态刷脸梯控设备 30003004:生态刷脸门禁/闸机设备 30003005:弹簧售货机 30003006:共享VR租赁 30003007:共享充电宝 30003008:客房小型零售机 30003009:客房派样水机 30003010:咖啡机 30003011:洗衣机 30003012:送物机器人 30003013:客控音箱
 	 */
 	@ApiField("device_category_code")
 	private String deviceCategoryCode;
 
 	/**
-	 * 设备所使用的解决方案
+	 * 设备所使用的解决方案。枚举值：20001:智慧前台 20002:一脸通行 20003:智慧生活
 	 */
 	@ApiField("device_solution")
 	private String deviceSolution;
@@ -68,7 +68,7 @@ public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 	private String roomNum;
 
 	/**
-	 * 设备所处场景类目
+	 * 设备所处场景类目，枚举值：40001001:前台场景 40001002:共享售卖/租赁场景 40001003:梯控场景 40001004:门禁场景（含闸机） 40001005:就餐场景 40002001:刷脸开门场景 40002002:客房零售场景 40002003:客房客控场景
 	 */
 	@ApiField("scene_category_code")
 	private String sceneCategoryCode;

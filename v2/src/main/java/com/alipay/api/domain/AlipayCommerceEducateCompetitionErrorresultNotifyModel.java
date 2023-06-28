@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 赛事录入异常通知接口
  *
  * @author auto create
- * @since 1.0, 2023-06-12 14:23:16
+ * @since 1.0, 2023-06-19 20:51:42
  */
 public class AlipayCommerceEducateCompetitionErrorresultNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4792861976544548996L;
+	private static final long serialVersionUID = 5339493565744133191L;
 
 	/**
 	 * 异常类型

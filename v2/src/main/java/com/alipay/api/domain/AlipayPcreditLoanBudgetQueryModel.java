@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditLoanBudgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8162846772678717624L;
+	private static final long serialVersionUID = 3569981721245475798L;
 
 	/**
 	 * 风险日利率

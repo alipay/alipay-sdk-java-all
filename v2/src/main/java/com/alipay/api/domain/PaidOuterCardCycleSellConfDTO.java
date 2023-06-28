@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 付费外卡连续售卖配置
  *
  * @author auto create
- * @since 1.0, 2022-08-25 18:10:57
+ * @since 1.0, 2023-06-28 16:56:46
  */
 public class PaidOuterCardCycleSellConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2426741642217426621L;
+	private static final long serialVersionUID = 1494579337973432427L;
 
 	/**
 	 * 用户开通连续购买地址
@@ -23,10 +23,7 @@ public class PaidOuterCardCycleSellConfDTO extends AlipayObject {
 	private String cycleSellingUrl;
 
 	/**
-	 * 周期购买类型。枚举如下：
-YEAR 年
-QUARTER 季度
-MONTH 月
+	 * 周期购买类型。
 	 */
 	@ApiListField("cycle_type")
 	@ApiField("string")

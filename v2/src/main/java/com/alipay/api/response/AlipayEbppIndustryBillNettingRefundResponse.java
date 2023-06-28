@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryBillNettingRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1745449738973712737L;
+	private static final long serialVersionUID = 2457297516286325361L;
 
 	/** 
 	 * 回传支付宝流水号。

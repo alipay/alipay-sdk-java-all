@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期规则
  *
  * @author auto create
- * @since 1.0, 2023-06-01 17:31:33
+ * @since 1.0, 2023-06-28 17:40:23
  */
 public class WeekRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4379125833373929921L;
+	private static final long serialVersionUID = 1293177547667932341L;
 
 	/**
 	 * 时间段

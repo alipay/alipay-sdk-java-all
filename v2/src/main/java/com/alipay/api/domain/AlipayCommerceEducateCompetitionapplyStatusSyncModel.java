@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 赛事报名状态同步接口
  *
  * @author auto create
- * @since 1.0, 2023-06-12 14:35:41
+ * @since 1.0, 2023-06-19 20:57:09
  */
 public class AlipayCommerceEducateCompetitionapplyStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2548274717884543568L;
+	private static final long serialVersionUID = 1181262759353855659L;
 
 	/**
 	 * 用户报名备注信息key为field_name值，value为用户选取的值

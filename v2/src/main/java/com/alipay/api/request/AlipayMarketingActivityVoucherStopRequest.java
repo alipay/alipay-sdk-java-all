@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.activity.voucher.stop request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 23:26:47
+ * @since 1.0, 2023-06-28 16:31:12
  */
 public class AlipayMarketingActivityVoucherStopRequest implements AlipayRequest<AlipayMarketingActivityVoucherStopResponse> {
 

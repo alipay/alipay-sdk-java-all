@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 满减券详情
  *
  * @author auto create
- * @since 1.0, 2022-02-23 14:18:08
+ * @since 1.0, 2023-06-28 17:35:17
  */
 public class PaymentFixVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 7789224164976988113L;
+	private static final long serialVersionUID = 8797729819398529843L;
 
 	/**
 	 * 面额，每张优惠券可以抵扣的金额。

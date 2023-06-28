@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 编辑发放规则
  *
  * @author auto create
- * @since 1.0, 2023-06-14 16:51:44
+ * @since 1.0, 2023-06-27 13:49:16
  */
 public class AlipayEbppInvoiceIssueruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3287715896718368598L;
+	private static final long serialVersionUID = 8394842818481714275L;
 
 	/**
 	 * 共同账户id
@@ -53,7 +53,7 @@ MODIFY_BASIC_INFO（修改发放规则基本信息）
 	private String enterpriseId;
 
 	/**
-	 * 是否可累计（不传则不修改），枚举：0（不可累计）、1（可累计），2（累计天数），3（累计到固定时间）
+	 * 是否可累计（不传则不修改）可选值：0（不可累计）、1（可累计），2（累计天数），3（累计到固定时间）
 	 */
 	@ApiField("invalid_mode")
 	private Long invalidMode;
@@ -65,7 +65,7 @@ MODIFY_BASIC_INFO（修改发放规则基本信息）
 	private String invalidModeValue;
 
 	/**
-	 * 发放金额（不传则不修改）
+	 * 发放金额（不传则不修改），单位（元）
 	 */
 	@ApiField("issue_amount_value")
 	private String issueAmountValue;
@@ -107,7 +107,7 @@ MODIFY_BASIC_INFO（修改发放规则基本信息）
 	private String quotaType;
 
 	/**
-	 * 是否可转赠（不传则不修改），枚举：0（不可转赠）、1（可转赠），默认为0，余额不支持可转赠，按城市发放不支持可转赠
+	 * 是否可转赠（不传则不修改），可选值：0（不可转赠）、1（可转赠），默认为0，按城市发放不支持可转赠
 	 */
 	@ApiField("share_mode")
 	private Long shareMode;
@@ -119,7 +119,7 @@ MODIFY_BASIC_INFO（修改发放规则基本信息）
 	private String targetId;
 
 	/**
-	 * 发放规则关联的目标类型，枚举值：INSTITUTION(制度)
+	 * 发放规则关联的目标类型
 	 */
 	@ApiField("target_type")
 	private String targetType;

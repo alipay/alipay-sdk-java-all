@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序功能包模型
  *
  * @author auto create
- * @since 1.0, 2018-12-25 18:05:38
+ * @since 1.0, 2023-06-20 14:08:26
  */
 public class MiniPackageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5731677418746432553L;
+	private static final long serialVersionUID = 3845468325636981812L;
 
 	/**
 	 * 功能包文档地址
@@ -32,7 +32,7 @@ public class MiniPackageInfo extends AlipayObject {
 	private String packageName;
 
 	/**
-	 * 功能包开通方式，"APPLY", "申请开通"；"ORDER", "签约开通"；"DEFAULT", "默认开通"
+	 * 功能包开通方式
 	 */
 	@ApiField("package_open_type")
 	private String packageOpenType;

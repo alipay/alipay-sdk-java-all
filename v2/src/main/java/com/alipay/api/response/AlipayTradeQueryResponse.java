@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-16 17:02:02
+ * @since 1.0, 2023-06-25 20:01:51
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5422237625439815945L;
+	private static final long serialVersionUID = 4832626341979696933L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -42,6 +42,13 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("auth_trade_pay_mode")
 	private String authTradePayMode;
+
+	/** 
+	 * CPS订单的业务结算标识
+PERIOD：账期模式
+	 */
+	@ApiField("biz_settle_mode")
+	private String bizSettleMode;
 
 	/** 
 	 * 间联交易下，返回给机构的信
@@ -387,6 +394,13 @@ json格式。
 	}
 	public String getAuthTradePayMode( ) {
 		return this.authTradePayMode;
+	}
+
+	public void setBizSettleMode(String bizSettleMode) {
+		this.bizSettleMode = bizSettleMode;
+	}
+	public String getBizSettleMode( ) {
+		return this.bizSettleMode;
 	}
 
 	public void setBkagentRespInfo(BkAgentRespInfo bkagentRespInfo) {

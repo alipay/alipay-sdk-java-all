@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceDataMonitordeviceQualitycenterModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5866411713531285978L;
+	private static final long serialVersionUID = 7824634878922839459L;
 
 	/**
 	 * device_id, 唯一标识设备，由openmonitor传递到质量中心。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数据item
  *
  * @author auto create
- * @since 1.0, 2022-10-14 12:00:21
+ * @since 1.0, 2023-06-26 20:10:54
  */
 public class ApeDataItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6242923631618351221L;
+	private static final long serialVersionUID = 1454695187127939359L;
 
 	/**
 	 * 商品可用的城市列表
@@ -24,7 +24,7 @@ public class ApeDataItem extends AlipayObject {
 	private List<String> availableCityList;
 
 	/**
-	 * 商品品牌。可以传输品牌id，也可传输品牌明文。
+	 * 商品品牌。传输品牌明文。
 	 */
 	@ApiField("brand")
 	private String brand;
@@ -64,6 +64,12 @@ public class ApeDataItem extends AlipayObject {
 	 */
 	@ApiField("detail_pic_num")
 	private Long detailPicNum;
+
+	/**
+	 * 折扣优惠
+	 */
+	@ApiField("discount")
+	private String discount;
 
 	/**
 	 * 商品是否包邮，如 1：包邮 2：不包邮 3：满足条件包邮
@@ -128,7 +134,7 @@ public class ApeDataItem extends AlipayObject {
 	private String rating;
 
 	/**
-	 * 数据类型
+	 * 普通商品的数据类型，如果使用dataList 请使用GOODS，如果不传，默认会给你补全。
 	 */
 	@ApiField("row_type")
 	private String rowType;
@@ -146,7 +152,7 @@ public class ApeDataItem extends AlipayObject {
 	private Long shareCnt;
 
 	/**
-	 * 商品运费，单位分
+	 * 商品运费，单位元
 	 */
 	@ApiField("shipping_money")
 	private String shippingMoney;
@@ -247,6 +253,13 @@ public class ApeDataItem extends AlipayObject {
 	}
 	public void setDetailPicNum(Long detailPicNum) {
 		this.detailPicNum = detailPicNum;
+	}
+
+	public String getDiscount() {
+		return this.discount;
+	}
+	public void setDiscount(String discount) {
+		this.discount = discount;
 	}
 
 	public Long getFreeShipping() {

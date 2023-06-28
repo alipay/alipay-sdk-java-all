@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证基础信息
  *
  * @author auto create
- * @since 1.0, 2023-04-23 11:36:01
+ * @since 1.0, 2023-06-25 17:03:49
  */
 public class ExpenseVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1469687224444548798L;
+	private static final long serialVersionUID = 8382764137211873637L;
 
 	/**
 	 * 企业支付宝用户id(对应凭证ownerid)
@@ -88,7 +88,7 @@ public class ExpenseVoucherInfo extends AlipayObject {
 	private String parentType;
 
 	/**
-	 * 交易金额
+	 * 交易金额（元）
 	 */
 	@ApiField("voucher_amount")
 	private String voucherAmount;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康门诊险药品目录项
  *
  * @author auto create
- * @since 1.0, 2022-06-09 16:09:07
+ * @since 1.0, 2023-06-20 11:21:47
  */
 public class HealthDrugCatalogueItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3616621762817667166L;
+	private static final long serialVersionUID = 6229259824332611187L;
 
 	/**
 	 * 是否是目录内药品
@@ -84,6 +84,12 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	 */
 	@ApiField("national_medicine_permission_no")
 	private String nationalMedicinePermissionNo;
+
+	/**
+	 * 药品不可购买原因，最大购买数量为0时，可参考该值返回的原因描述
+	 */
+	@ApiField("not_purchase_reason_desc")
+	private String notPurchaseReasonDesc;
 
 	/**
 	 * 售价
@@ -191,6 +197,13 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	}
 	public void setNationalMedicinePermissionNo(String nationalMedicinePermissionNo) {
 		this.nationalMedicinePermissionNo = nationalMedicinePermissionNo;
+	}
+
+	public String getNotPurchaseReasonDesc() {
+		return this.notPurchaseReasonDesc;
+	}
+	public void setNotPurchaseReasonDesc(String notPurchaseReasonDesc) {
+		this.notPurchaseReasonDesc = notPurchaseReasonDesc;
 	}
 
 	public String getPrice() {

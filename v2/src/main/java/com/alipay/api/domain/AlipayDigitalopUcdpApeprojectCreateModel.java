@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape创建project
  *
  * @author auto create
- * @since 1.0, 2023-06-16 10:14:34
+ * @since 1.0, 2023-06-26 15:42:52
  */
 public class AlipayDigitalopUcdpApeprojectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5193283332143974561L;
+	private static final long serialVersionUID = 7752972122712259984L;
 
 	/**
 	 * 实际接入推荐项目的商家PID
@@ -44,10 +44,22 @@ public class AlipayDigitalopUcdpApeprojectCreateModel extends AlipayObject {
 	private String orgId;
 
 	/**
+	 * 商家在蚂蚁推荐引擎创建的项目id，当project_id为空时表示新建项目，否则为修改项目。
+	 */
+	@ApiField("project_id")
+	private String projectId;
+
+	/**
 	 * 将要创建project的项目名字（中英文都可以）
 	 */
 	@ApiField("project_name")
 	private String projectName;
+
+	/**
+	 * 推荐策略，包括优先推荐倾向、疲劳度、多样性等策略
+	 */
+	@ApiField("recommend_strategy")
+	private ApeRecommendStrategy recommendStrategy;
 
 	/**
 	 * 创建project的模版，如果是测试项目，填test，如果是正式项目，填normal，如果有特殊需要，和apemng系统人员确认
@@ -90,11 +102,25 @@ public class AlipayDigitalopUcdpApeprojectCreateModel extends AlipayObject {
 		this.orgId = orgId;
 	}
 
+	public String getProjectId() {
+		return this.projectId;
+	}
+	public void setProjectId(String projectId) {
+		this.projectId = projectId;
+	}
+
 	public String getProjectName() {
 		return this.projectName;
 	}
 	public void setProjectName(String projectName) {
 		this.projectName = projectName;
+	}
+
+	public ApeRecommendStrategy getRecommendStrategy() {
+		return this.recommendStrategy;
+	}
+	public void setRecommendStrategy(ApeRecommendStrategy recommendStrategy) {
+		this.recommendStrategy = recommendStrategy;
 	}
 
 	public String getTemplateCode() {

@@ -36,7 +36,7 @@ public class AesEncryptV2 implements Encrypt {
     }
 
     @Override
-    public String encrypt(String content, String aesKey, String charset) throws AlipayApiException {
+    public String encrypt(String content, String key, String charset) throws AlipayApiException {
         try {
             Cipher cipher = Cipher.getInstance(fullCipherName);
 
@@ -46,7 +46,7 @@ public class AesEncryptV2 implements Encrypt {
             random.nextBytes(iv);
             IvParameterSpec ivParams = new IvParameterSpec(iv);
 
-            cipher.init(Cipher.ENCRYPT_MODE, new SecretKeySpec(Base64.decodeBase64(aesKey.getBytes()), alg), ivParams);
+            cipher.init(Cipher.ENCRYPT_MODE, new SecretKeySpec(Base64.decodeBase64(key.getBytes()), alg), ivParams);
 
             byte[] encryptedText = cipher.doFinal(content.getBytes(charset));
             byte[] ivAndEncryptedText = new byte[ivSize + encryptedText.length];

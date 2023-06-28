@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbdishDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4492156434584728286L;
+	private static final long serialVersionUID = 1418373572576694577L;
 
 	/**
 	 * 外部菜品id

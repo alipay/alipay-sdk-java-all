@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取ISV集成页面链接
  *
  * @author auto create
- * @since 1.0, 2023-05-26 13:37:36
+ * @since 1.0, 2023-06-26 16:45:19
  */
 public class AlipayCommerceEcAuthorizationRedicturlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1484884416921291182L;
+	private static final long serialVersionUID = 5637215973262524537L;
 
 	/**
 	 * 授权令牌
@@ -35,7 +35,7 @@ public class AlipayCommerceEcAuthorizationRedicturlGetModel extends AlipayObject
 	private String enterpriseId;
 
 	/**
-	 * CAR
+	 * 费用类型(制度新增/编辑时所用)
 	 */
 	@ApiField("expense_type")
 	private String expenseType;

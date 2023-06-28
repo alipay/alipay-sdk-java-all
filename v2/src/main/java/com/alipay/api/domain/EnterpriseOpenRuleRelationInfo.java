@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则绑定关系
  *
  * @author auto create
- * @since 1.0, 2023-04-26 15:56:44
+ * @since 1.0, 2023-06-25 11:16:22
  */
 public class EnterpriseOpenRuleRelationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5347545816599344327L;
+	private static final long serialVersionUID = 7821376395117556159L;
 
 	/**
 	 * 企业ID
@@ -40,7 +40,7 @@ public class EnterpriseOpenRuleRelationInfo extends AlipayObject {
 	private String ownerId;
 
 	/**
-	 * 费控制度id
+	 * 费控制度ID
 	 */
 	@ApiField("standard_id")
 	private String standardId;

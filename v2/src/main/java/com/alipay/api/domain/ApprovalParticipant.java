@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 审批单同行人
  *
  * @author auto create
- * @since 1.0, 2022-12-27 19:05:41
+ * @since 1.0, 2023-06-20 14:05:25
  */
 public class ApprovalParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 2235948892347114972L;
+	private static final long serialVersionUID = 3538756173177768421L;
 
 	/**
 	 * 员工ID

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.filelist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-15 14:51:58
+ * @since 1.0, 2023-06-28 10:16:56
  */
 public class AlipayCloudCloudrunObjectstorageFilelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6868891565318914536L;
+	private static final long serialVersionUID = 2417582374175431129L;
 
 	/** 
 	 * 分页游标下一页标记

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单退款前商户回复确认退款结果
  *
  * @author auto create
- * @since 1.0, 2023-06-05 14:10:03
+ * @since 1.0, 2023-06-27 14:43:03
  */
 public class AlipayMarketingCertificateOrderRefundconfirmcommitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8479952292817527591L;
+	private static final long serialVersionUID = 4767787589481181352L;
 
 	/**
 	 * 凭证标识ID。通过退款前向商户确认是否可以退款spi入参获取

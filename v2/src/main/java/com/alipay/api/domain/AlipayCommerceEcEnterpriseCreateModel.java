@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业入驻
  *
  * @author auto create
- * @since 1.0, 2023-06-08 14:42:19
+ * @since 1.0, 2023-06-28 11:22:08
  */
 public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3887627943523441382L;
+	private static final long serialVersionUID = 8728319634499941942L;
 
 	/**
 	 * 场景码，联系支付宝分配
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 是否设置管理员支付宝为企业出资账户，不传默认为true
+	 */
+	@ApiField("create_fund_account")
+	private Boolean createFundAccount;
 
 	/**
 	 * 是否创建企业人脸库，适用于对接团餐刷脸付、门禁刷脸通行等场景；不传默认创建，创建失败不会阻塞企业的创建；如果传true且创建失败，则会阻塞企业的创建。
@@ -38,11 +44,19 @@ public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 	private String enterpriseName;
 
 	/**
-	 * 身份，对应身份类型进行传参，例如：
-企业支付宝登录账号(支持手机号或者邮箱)或企业支付宝会员id(对应2088开头的支付宝会员id)
+	 * 管理员身份标识，对应identity_type进行传参：
+1. 手机号或者邮箱（当身份类型传ALIPAY_LOGON_ID时）
+2. 支付宝会员id（当身份类型传ALIPAY_USER_ID时）
+3. 服务商用户id（当身份类型传ISV_USER_ID时）
 	 */
 	@ApiField("identity")
 	private String identity;
+
+	/**
+	 * 管理员姓名，当身份类型传ISV_USER_ID时，这个字段必传
+	 */
+	@ApiField("identity_name")
+	private String identityName;
 
 	/**
 	 * 当identity_type为ALIPAY_USER_ID时，此字段传入open_id
@@ -51,7 +65,7 @@ public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 	private String identityOpenId;
 
 	/**
-	 * 身份类型
+	 * 管理员身份类型
 	 */
 	@ApiField("identity_type")
 	private String identityType;
@@ -66,11 +80,30 @@ public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
+	/**
+	 * 企业码签约后回跳地址，pc端支持回跳任意http地址，移动端仅支持回跳支付宝或钉钉地址，不传默认为空
+	 */
+	@ApiField("sign_return_url")
+	private String signReturnUrl;
+
+	/**
+	 * 管理员签约终端类型，不传默认为PC
+	 */
+	@ApiField("sign_terminal")
+	private String signTerminal;
+
 	public String getBizScene() {
 		return this.bizScene;
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public Boolean getCreateFundAccount() {
+		return this.createFundAccount;
+	}
+	public void setCreateFundAccount(Boolean createFundAccount) {
+		this.createFundAccount = createFundAccount;
 	}
 
 	public Boolean getCreateIotGroup() {
@@ -101,6 +134,13 @@ public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 		this.identity = identity;
 	}
 
+	public String getIdentityName() {
+		return this.identityName;
+	}
+	public void setIdentityName(String identityName) {
+		this.identityName = identityName;
+	}
+
 	public String getIdentityOpenId() {
 		return this.identityOpenId;
 	}
@@ -120,6 +160,20 @@ public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getSignReturnUrl() {
+		return this.signReturnUrl;
+	}
+	public void setSignReturnUrl(String signReturnUrl) {
+		this.signReturnUrl = signReturnUrl;
+	}
+
+	public String getSignTerminal() {
+		return this.signTerminal;
+	}
+	public void setSignTerminal(String signTerminal) {
+		this.signTerminal = signTerminal;
 	}
 
 }

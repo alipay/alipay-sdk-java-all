@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 违规记录
  *
  * @author auto create
- * @since 1.0, 2022-06-10 17:42:56
+ * @since 1.0, 2023-06-28 21:06:19
  */
 public class ViolationEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 3732159789866222215L;
+	private static final long serialVersionUID = 3612675917844577887L;
 
 	/**
 	 * 商家是否可以申诉
@@ -32,15 +32,7 @@ public class ViolationEvent extends AlipayObject {
 	private String punishAction;
 
 	/**
-	 * 违规工单状态枚举：
-PUNISH_DONE：处罚生效中
-PUNISH_APPEAL_REVOKED：处罚已撤销
-PUNISH_INVALID_REVOKED：处罚已到期
-WAITING_RECTIFY：待整改 
-RECTIFY_AUDITOR_PROCESSING：整改审核中
-RECTIFY_REJECTED：整改不通过
-RECTIFY_PASSED：整改通过
-RECTIFY_TIMEOUT ：整改已超时
+	 * 违规工单状态枚举
 	 */
 	@ApiField("status")
 	private String status;

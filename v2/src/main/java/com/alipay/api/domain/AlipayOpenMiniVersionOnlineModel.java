@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序上架
  *
  * @author auto create
- * @since 1.0, 2023-06-13 17:03:01
+ * @since 1.0, 2023-06-26 10:31:52
  */
 public class AlipayOpenMiniVersionOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1716656323518887968L;
+	private static final long serialVersionUID = 3144335329793358347L;
 
 	/**
 	 * 商家小程序版本号，需为审核通过状态或灰度中版本。
@@ -27,6 +27,12 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	@ApiField("bundle_id")
 	private String bundleId;
 
+	/**
+	 * true - 性能优先； false - 覆盖优先（默认）
+	 */
+	@ApiField("downgrade")
+	private Boolean downgrade;
+
 	public String getAppVersion() {
 		return this.appVersion;
 	}
@@ -39,6 +45,13 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	}
 	public void setBundleId(String bundleId) {
 		this.bundleId = bundleId;
+	}
+
+	public Boolean getDowngrade() {
+		return this.downgrade;
+	}
+	public void setDowngrade(Boolean downgrade) {
+		this.downgrade = downgrade;
 	}
 
 }

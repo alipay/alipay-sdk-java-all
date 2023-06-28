@@ -53,7 +53,7 @@ public class TestAccount {
 
         public static AlipayConfig getObject() {
             AlipayConfig config = new AlipayConfig();
-            config.setServerUrl("https://openapi.alipaydev.com/gateway.do");
+            config.setServerUrl("http://openapi.alipaydev.com/gateway.do");
             config.setAlipayPublicKey(
                     "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAohmWF9HXjI3VRxrKbuZq4YK6lIFAIzUZ4xvY4iw2zwYiblPkB0FWbqxouyyB9nmAyK+hN"
                             + "/5tyXatpskcy6rO6zJl3kfdog0lRA7g06+YpdHVHhu/bXfaz+BfCA3YHwjkBQffMa8Amwy6JZF6aDiXDdYP"

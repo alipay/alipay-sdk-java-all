@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * saas化支付场景，商品信息
  *
  * @author auto create
- * @since 1.0, 2021-11-10 17:36:10
+ * @since 1.0, 2023-06-21 13:57:34
  */
 public class PaymentGoods extends AlipayObject {
 
-	private static final long serialVersionUID = 6495558725211186145L;
+	private static final long serialVersionUID = 1298784176528555798L;
 
 	/**
 	 * 商品品牌

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序收藏tips引导投放创建
  *
  * @author auto create
- * @since 1.0, 2022-05-25 21:23:23
+ * @since 1.0, 2023-06-28 10:07:52
  */
 public class AlipayOpenMiniTipsDeliveryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2671735771114751456L;
+	private static final long serialVersionUID = 8514482883376772893L;
 
 	/**
 	 * 收藏引导文案内容，不得超过14个字
@@ -34,7 +34,7 @@ public class AlipayOpenMiniTipsDeliveryCreateModel extends AlipayObject {
 	private Date endTime;
 
 	/**
-	 * 匹配类型：GLOBAL为全局生效，TARGETURL为目标页面生效，需配置相应页面地址match_url。
+	 * 匹配类型
 	 */
 	@ApiField("match_type")
 	private String matchType;

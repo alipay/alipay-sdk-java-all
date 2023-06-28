@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 优惠类型信息
  *
  * @author auto create
- * @since 1.0, 2023-05-23 17:53:19
+ * @since 1.0, 2023-06-26 11:23:09
  */
 public class DtBankPreferenceTypeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3568748527153625983L;
+	private static final long serialVersionUID = 4558585842858582882L;
 
 	/**
 	 * 折扣立减规则，preference_type取值为discount时，此参数有值
@@ -24,6 +24,12 @@ public class DtBankPreferenceTypeInfo extends AlipayObject {
 	 */
 	@ApiField("intelligent_rule")
 	private DtBankPreferenceIntelligentRule intelligentRule;
+
+	/**
+	 * 多阶梯立减规则
+	 */
+	@ApiField("multi_staged_rule")
+	private DtBankPreferenceMultiStagedRule multiStagedRule;
 
 	/**
 	 * 优惠类型
@@ -61,6 +67,13 @@ public class DtBankPreferenceTypeInfo extends AlipayObject {
 	}
 	public void setIntelligentRule(DtBankPreferenceIntelligentRule intelligentRule) {
 		this.intelligentRule = intelligentRule;
+	}
+
+	public DtBankPreferenceMultiStagedRule getMultiStagedRule() {
+		return this.multiStagedRule;
+	}
+	public void setMultiStagedRule(DtBankPreferenceMultiStagedRule multiStagedRule) {
+		this.multiStagedRule = multiStagedRule;
 	}
 
 	public String getPreferenceType() {

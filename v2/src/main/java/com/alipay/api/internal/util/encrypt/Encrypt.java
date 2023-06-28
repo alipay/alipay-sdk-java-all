@@ -13,7 +13,7 @@ import com.alipay.api.AlipayApiException;
 public interface Encrypt {
 
 
-    String encrypt(String content, String aesKey, String charset) throws AlipayApiException;
+    String encrypt(String content, String key, String charset) throws AlipayApiException;
 
     String decrypt(String content, String key, String charset) throws AlipayApiException;
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包销户
  *
  * @author auto create
- * @since 1.0, 2022-12-16 21:44:50
+ * @since 1.0, 2023-06-21 16:50:53
  */
 public class AlipayFundWalletDestroyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7123994474122845584L;
+	private static final long serialVersionUID = 3878297316572998696L;
 
 	/**
 	 * 金额
@@ -44,8 +44,7 @@ public class AlipayFundWalletDestroyModel extends AlipayObject {
 	private String principalOpenId;
 
 	/**
-	 * 枚举值
-alipay_user_id,
+	 * alipay_user_id,
 mechant_user_id
 	 */
 	@ApiField("principal_type")
@@ -56,6 +55,12 @@ mechant_user_id
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 用户钱包id
+	 */
+	@ApiField("user_wallet_id")
+	private String userWalletId;
 
 	public String getAmount() {
 		return this.amount;
@@ -104,6 +109,13 @@ mechant_user_id
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getUserWalletId() {
+		return this.userWalletId;
+	}
+	public void setUserWalletId(String userWalletId) {
+		this.userWalletId = userWalletId;
 	}
 
 }

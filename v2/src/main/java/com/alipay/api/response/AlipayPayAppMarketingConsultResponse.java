@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.PayChannelPromoInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -10,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.marketing.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-19 13:53:57
+ * @since 1.0, 2023-06-27 14:05:01
  */
 public class AlipayPayAppMarketingConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4779137279733174459L;
+	private static final long serialVersionUID = 7887495767493386939L;
 
 	/** 
 	 * 反作弊等级值；仅当请求入参need_query_anti_rank为true时才会返回
@@ -40,6 +41,13 @@ morse匿名技术使用的盲签名，商户使用此值与私钥一起对混淆
 	 */
 	@ApiField("blind_signature")
 	private String blindSignature;
+
+	/** 
+	 * 例如：亲情卡支付渠道信息、银行卡渠道优惠信息等
+	 */
+	@ApiListField("channel_info_list")
+	@ApiField("pay_channel_promo_info")
+	private List<PayChannelPromoInfo> channelInfoList;
 
 	/** 
 	 * 仅当请求使用morse匿名技术时会返回此字段；
@@ -105,6 +113,13 @@ morse匿名技术产出的混淆后的密文结果，需使用商户私钥及接
 	}
 	public String getBlindSignature( ) {
 		return this.blindSignature;
+	}
+
+	public void setChannelInfoList(List<PayChannelPromoInfo> channelInfoList) {
+		this.channelInfoList = channelInfoList;
+	}
+	public List<PayChannelPromoInfo> getChannelInfoList( ) {
+		return this.channelInfoList;
 	}
 
 	public void setConfusedCipherList(List<String> confusedCipherList) {

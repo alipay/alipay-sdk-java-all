@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务信息参数
  *
  * @author auto create
- * @since 1.0, 2023-06-19 19:21:57
+ * @since 1.0, 2023-06-25 11:06:04
  */
 public class BusinessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2173766559154519383L;
+	private static final long serialVersionUID = 6568565246923287133L;
 
 	/**
 	 * 实际订单时间，在乘车码场景，传入的是用户刷码乘车时间
@@ -56,6 +56,13 @@ mc_create_trade_ip和mcCreateTradeIp（旧）参数描述相同，首选mc_creat
 	 */
 	@ApiField("mc_create_trade_ip")
 	private String mcCreateTradeIp;
+
+	/**
+	 * 当需要在 商家平台（b.alipay.com）—数据中心 中查看对应业务场景下的数据明细可以通过该参数传入
+支持传入的值：<a target="_blank" href="https://opendocs.alipay.com/mini/08by8k?pathHash=96e03412">小程序细分业务场景</a>
+	 */
+	@ApiField("tiny_app_merchant_biz_type")
+	private String tinyAppMerchantBizType;
 
 	public String getActualOrderTime() {
 		return this.actualOrderTime;
@@ -104,6 +111,13 @@ mc_create_trade_ip和mcCreateTradeIp（旧）参数描述相同，首选mc_creat
 	}
 	public void setMcCreateTradeIp(String mcCreateTradeIp) {
 		this.mcCreateTradeIp = mcCreateTradeIp;
+	}
+
+	public String getTinyAppMerchantBizType() {
+		return this.tinyAppMerchantBizType;
+	}
+	public void setTinyAppMerchantBizType(String tinyAppMerchantBizType) {
+		this.tinyAppMerchantBizType = tinyAppMerchantBizType;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ProtocolPreviewVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5339335257181579462L;
+	private static final long serialVersionUID = 1792339613686517221L;
 
 	/**
 	 * 协议内容

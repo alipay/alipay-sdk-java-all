@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务参数模型
  *
  * @author auto create
- * @since 1.0, 2023-03-14 17:56:38
+ * @since 1.0, 2023-06-25 13:31:25
  */
 public class ScenePayBusinessParamDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4424957263158438736L;
+	private static final long serialVersionUID = 8129815878815423135L;
+
+	/**
+	 * 业务自定义参数，交易异步通知和业务单同步查询时会返回
+	 */
+	@ApiField("custom_params")
+	private String customParams;
 
 	/**
 	 * 商圈中本次交易发生的商铺的识别号，在同一商铺类型下唯一
@@ -39,11 +45,30 @@ public class ScenePayBusinessParamDTO extends AlipayObject {
 	private String mallPid;
 
 	/**
+	 * 业务单关联的计划id
+	 */
+	@ApiField("plan_id")
+	private String planId;
+
+	/**
 	 * 场景支付创建业务单接口中
 当bizScene=MALL_PAY时，必填
 	 */
 	@ApiField("real_store_id")
 	private String realStoreId;
+
+	/**
+	 * 业务单关联的券id信息
+	 */
+	@ApiField("voucher_id")
+	private String voucherId;
+
+	public String getCustomParams() {
+		return this.customParams;
+	}
+	public void setCustomParams(String customParams) {
+		this.customParams = customParams;
+	}
 
 	public String getMallCellId() {
 		return this.mallCellId;
@@ -73,11 +98,25 @@ public class ScenePayBusinessParamDTO extends AlipayObject {
 		this.mallPid = mallPid;
 	}
 
+	public String getPlanId() {
+		return this.planId;
+	}
+	public void setPlanId(String planId) {
+		this.planId = planId;
+	}
+
 	public String getRealStoreId() {
 		return this.realStoreId;
 	}
 	public void setRealStoreId(String realStoreId) {
 		this.realStoreId = realStoreId;
+	}
+
+	public String getVoucherId() {
+		return this.voucherId;
+	}
+	public void setVoucherId(String voucherId) {
+		this.voucherId = voucherId;
 	}
 
 }

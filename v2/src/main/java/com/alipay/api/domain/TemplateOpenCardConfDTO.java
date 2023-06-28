@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模板开卡配置
  *
  * @author auto create
- * @since 1.0, 2018-04-17 17:57:49
+ * @since 1.0, 2023-06-28 16:57:38
  */
 public class TemplateOpenCardConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7663126346386539365L;
+	private static final long serialVersionUID = 5563762577951115614L;
 
 	/**
 	 * 领卡权益信息
@@ -30,8 +30,7 @@ public class TemplateOpenCardConfDTO extends AlipayObject {
 	private String conf;
 
 	/**
-	 * ISV：外部系统
-MER：直连商户
+	 * 开卡渠道类型
 	 */
 	@ApiField("open_card_source_type")
 	private String openCardSourceType;

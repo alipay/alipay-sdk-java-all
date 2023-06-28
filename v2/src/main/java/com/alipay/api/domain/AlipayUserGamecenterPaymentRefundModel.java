@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值退款接口
  *
  * @author auto create
- * @since 1.0, 2023-06-14 14:55:37
+ * @since 1.0, 2023-06-21 10:05:16
  */
 public class AlipayUserGamecenterPaymentRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4427164627922911196L;
+	private static final long serialVersionUID = 3286161998136285498L;
 
 	/**
 	 * 商户app_id维度下的用户标识

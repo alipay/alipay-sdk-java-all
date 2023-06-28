@@ -47,16 +47,16 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
     }
 
-    protected boolean                                    loadTest       = false;
+    protected boolean                                    loadTest           = false;
     private   String                                     serverUrl;
     private   String                                     appId;
     private   String                                     prodCode;
-    private   String                                     format         = AlipayConstants.FORMAT_JSON;
-    private   String                                     signType       = AlipayConstants.SIGN_TYPE_RSA;
-    private   String                                     encryptType    = AlipayConstants.ENCRYPT_TYPE_AES;
+    private   String                                     format             = AlipayConstants.FORMAT_JSON;
+    private   String                                     signType           = AlipayConstants.SIGN_TYPE_RSA;
+    private   String                                     encryptType        = AlipayConstants.ENCRYPT_TYPE_AES;
     private   String                                     charset;
-    private   int                                        connectTimeout = 3000;
-    private   int                                        readTimeout    = 15000;
+    private   int                                        connectTimeout     = 3000;
+    private   int                                        readTimeout        = 15000;
     private   String                                     proxyHost;
     private   int                                        proxyPort;
     private   SignChecker                                signChecker;
@@ -70,7 +70,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
     private   ConcurrentHashMap<String, String>          alipayPublicKeyMap;
     private   Map<String, String>                        headers;
     private   int                                        maxIdleConnections = 0;
-    private   long                                       keepAliveDuration = 10000L;
+    private   long                                       keepAliveDuration  = 10000L;
     private   AbstractHttpClient                         customizedHttpClient;
 
     public AbstractAlipayClient(String serverUrl, String appId, String format,
@@ -166,7 +166,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
             ConcurrentHashMap<String, String> alipayPublicKeyMap = new ConcurrentHashMap<String, String>();
             alipayPublicKeyMap.put(alipayCertSN, Base64.encodeBase64String(publicKey.getEncoded()));
             this.alipayPublicKeyMap = alipayPublicKeyMap;
-        }catch (AlipayApiException e){
+        } catch (AlipayApiException e) {
             throw new AlipayApiException(AlipayApiErrorEnum.ALIPAY_PUBLIC_CERT_ERROR, e);
         }
     }
@@ -959,6 +959,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
         tRsp.setParams((AlipayHashMap) rt.get("textParams"));
         if (!tRsp.isSuccess()) {
+            addTraceId(tRsp, rt);
             AlipayLogger.logErrorScene(rt, tRsp, "", costTimeMap);
         } else {
             AlipayLogger.logBizSummary(rt, tRsp, costTimeMap);
@@ -1052,7 +1053,8 @@ public abstract class AbstractAlipayClient implements AlipayClient {
                     || (!responseIsSucess && !StringUtils.isEmpty(signItem.getSign()))) {
 
                 // RSA或RSA2时检查当前公钥是不是应用公钥
-                if ((AlipayConstants.SIGN_TYPE_RSA.equals(this.signType) || AlipayConstants.SIGN_TYPE_RSA2.equals(this.signType)) && checkAlipayPublicKey()) {
+                if ((AlipayConstants.SIGN_TYPE_RSA.equals(this.signType) || AlipayConstants.SIGN_TYPE_RSA2.equals(this.signType))
+                        && checkAlipayPublicKey()) {
                     throw new AlipayApiException(AlipayApiErrorEnum.CHECK_ALIPAY_PUBLIC_KEY_ERROR);
                 }
 
@@ -1134,6 +1136,27 @@ public abstract class AbstractAlipayClient implements AlipayClient {
 
         return new ResponseEncryptItem(responseBody, realBody);
 
+    }
+
+    private void addTraceId(AlipayResponse response, Map<String, Object> rt) {
+        if (response == null) {
+            return;
+        }
+        Map<String, String> params = response.getParams();
+        if (params == null) {
+            return;
+        }
+        if (rt == null) {
+            return;
+        }
+        if (!rt.containsKey("trace_id")) {
+            return;
+        }
+        String traceId = (String) rt.get("trace_id");
+        if (traceId == null || traceId.equals("")) {
+            return;
+        }
+        params.put("traceId", traceId);
     }
 
     void setServerUrl(String serverUrl) {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntforestBubbleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4756515756745318372L;
+	private static final long serialVersionUID = 6825664846847759646L;
 
 	/** 
 	 * 当前有多少森林能量可收，为0即无能量可收

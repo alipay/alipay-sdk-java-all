@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业解约
  *
  * @author auto create
- * @since 1.0, 2023-06-07 19:30:50
+ * @since 1.0, 2023-06-28 11:22:11
  */
 public class AlipayCommerceEcEnterpriseUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3272886562662673325L;
+	private static final long serialVersionUID = 1794537787451216696L;
 
 	/**
-	 * 共同账户id，和企业id二选一
+	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 签约协议号，account_id不为空则该字段必填
+	 * 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
 
 	/**
-	 * 企业id，和共同账户id二选一
+	 * 通过企业码2.0签约接口签约，只填写企业id，无需填写共同账户id和授权签约协议号。
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;

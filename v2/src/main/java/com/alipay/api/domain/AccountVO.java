@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 银行账号信息
  *
  * @author auto create
- * @since 1.0, 2021-12-24 16:36:46
+ * @since 1.0, 2023-06-21 14:50:32
  */
 public class AccountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7667287632185821483L;
+	private static final long serialVersionUID = 7592261712595966822L;
 
 	/**
 	 * 户名
@@ -24,6 +27,12 @@ public class AccountVO extends AlipayObject {
 	 */
 	@ApiField("account_no")
 	private String accountNo;
+
+	/**
+	 * 金额明细
+	 */
+	@ApiField("amount_item")
+	private AmountItem amountItem;
 
 	/**
 	 * 分类 BUYER付款账户； SELLER收款账户
@@ -50,10 +59,29 @@ public class AccountVO extends AlipayObject {
 	private String officalNumber;
 
 	/**
+	 * BALANCE 账户余额； BILL 电子票据
+	 */
+	@ApiListField("pay_method")
+	@ApiField("string")
+	private List<String> payMethod;
+
+	/**
+	 * 主体：I-个人；E-企业
+	 */
+	@ApiField("principal")
+	private String principal;
+
+	/**
 	 * 账号状态
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 账户类型 MAIN 银行账户；ECOLLECTION e收宝； Q_PAYEE 通用静默户
+	 */
+	@ApiField("type")
+	private String type;
 
 	public String getAccountName() {
 		return this.accountName;
@@ -67,6 +95,13 @@ public class AccountVO extends AlipayObject {
 	}
 	public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
+	}
+
+	public AmountItem getAmountItem() {
+		return this.amountItem;
+	}
+	public void setAmountItem(AmountItem amountItem) {
+		this.amountItem = amountItem;
 	}
 
 	public String getCategory() {
@@ -97,11 +132,32 @@ public class AccountVO extends AlipayObject {
 		this.officalNumber = officalNumber;
 	}
 
+	public List<String> getPayMethod() {
+		return this.payMethod;
+	}
+	public void setPayMethod(List<String> payMethod) {
+		this.payMethod = payMethod;
+	}
+
+	public String getPrincipal() {
+		return this.principal;
+	}
+	public void setPrincipal(String principal) {
+		this.principal = principal;
+	}
+
 	public String getStatus() {
 		return this.status;
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

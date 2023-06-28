@@ -45,6 +45,8 @@ public enum AlipayApiErrorEnum {
     DECRYPT_ASE_ERROR("DECRYPT_ASE_ERROR", "AES解密失败：Aescontent = %s; charset = %s"),
     ENCRYPT_ASE_V2_ERROR("ENCRYPT_ASE_V2_ERROR", "AES_V2加密失败：Aescontent = %s; charset = %s"),
     DECRYPT_ASE_V2_ERROR("DECRYPT_ASE_V2_ERROR", "AES_V2解密失败：Aescontent = %s; charset = %s"),
+    ENCRYPT_SM4_ERROR("ENCRYPT_SM4_ERROR", "SM4加密失败：Aescontent = %s; charset = %s"),
+    DECRYPT_SM4_ERROR("DECRYPT_SM4_ERROR", "SM4解密失败：Aescontent = %s; charset = %s"),
 
     KEEPALIVE_DURATION_ERROR("KEEPALIVE_DURATION_ERROR", "最大存活时间不能超过60s");
 

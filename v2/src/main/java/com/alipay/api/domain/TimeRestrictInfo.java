@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券核销时间限制
  *
  * @author auto create
- * @since 1.0, 2023-06-01 17:31:33
+ * @since 1.0, 2023-06-28 17:40:23
  */
 public class TimeRestrictInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3488233425985975474L;
+	private static final long serialVersionUID = 2439646332949629657L;
 
 	/**
 	 * 不可用时间段

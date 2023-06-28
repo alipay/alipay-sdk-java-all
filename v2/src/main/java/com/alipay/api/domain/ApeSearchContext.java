@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape搜索的上下文
  *
  * @author auto create
- * @since 1.0, 2023-05-06 16:23:20
+ * @since 1.0, 2023-06-26 19:46:17
  */
 public class ApeSearchContext extends AlipayObject {
 
-	private static final long serialVersionUID = 2722569963872452212L;
+	private static final long serialVersionUID = 1263224893769378343L;
 
 	/**
 	 * 用户当前城市编码
@@ -64,6 +64,12 @@ public class ApeSearchContext extends AlipayObject {
 	 */
 	@ApiField("size")
 	private Long size;
+
+	/**
+	 * 排序类型，price_asc；price_desc;sales_asc；sales_desc；discount_asc;discount_desc;有这几种可供选择不传即使用搜索侧默认排序
+	 */
+	@ApiField("sort_type")
+	private String sortType;
 
 	/**
 	 * 召回起始位置
@@ -125,6 +131,13 @@ public class ApeSearchContext extends AlipayObject {
 	}
 	public void setSize(Long size) {
 		this.size = size;
+	}
+
+	public String getSortType() {
+		return this.sortType;
+	}
+	public void setSortType(String sortType) {
+		this.sortType = sortType;
 	}
 
 	public Long getStartIndex() {

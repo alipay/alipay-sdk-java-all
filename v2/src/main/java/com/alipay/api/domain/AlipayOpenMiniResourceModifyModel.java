@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniResourceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5632151655452483723L;
+	private static final long serialVersionUID = 5174529832187798949L;
 
 	/**
 	 * 流量位的名称，用于标识区分不用的流量位，最长32个字符，一个中文算两个字符。不传则不更新。同一个小程序下的流量位名称不能重复。

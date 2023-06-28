@@ -33,13 +33,13 @@ public class AesEncrypt implements Encrypt {
 
 
     @Override
-    public String encrypt(String content, String aesKey, String charset) throws AlipayApiException {
+    public String encrypt(String content, String key, String charset) throws AlipayApiException {
         try {
             Cipher cipher = Cipher.getInstance(AES_CBC_PCK_ALG);
 
             IvParameterSpec iv = new IvParameterSpec(AES_IV);
             cipher.init(Cipher.ENCRYPT_MODE,
-                    new SecretKeySpec(Base64.decodeBase64(aesKey.getBytes()), AES_ALG), iv);
+                    new SecretKeySpec(Base64.decodeBase64(key.getBytes()), AES_ALG), iv);
 
             byte[] encryptBytes = cipher.doFinal(content.getBytes(charset));
             return new String(Base64.encodeBase64(encryptBytes));

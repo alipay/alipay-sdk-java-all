@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码月对账单账期修改
  *
  * @author auto create
- * @since 1.0, 2023-04-19 16:13:03
+ * @since 1.0, 2023-06-25 13:50:52
  */
 public class AlipayCommerceEcBalancePeriodModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1586938558683882172L;
+	private static final long serialVersionUID = 8295776586933589695L;
 
 	/**
 	 * 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用

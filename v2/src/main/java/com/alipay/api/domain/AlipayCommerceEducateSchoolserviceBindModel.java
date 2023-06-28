@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 学校服务关系绑定
  *
  * @author auto create
- * @since 1.0, 2023-06-12 14:35:20
+ * @since 1.0, 2023-06-19 20:57:39
  */
 public class AlipayCommerceEducateSchoolserviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3232914939492856926L;
+	private static final long serialVersionUID = 2863572336148644475L;
 
 	/**
 	 * 场景

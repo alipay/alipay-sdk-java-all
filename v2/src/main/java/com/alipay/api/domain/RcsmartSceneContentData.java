@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RcsmartSceneContentData extends AlipayObject {
 
-	private static final long serialVersionUID = 6396756639461712121L;
+	private static final long serialVersionUID = 1618267631245355643L;
 
 	/**
 	 * 审核素材列表

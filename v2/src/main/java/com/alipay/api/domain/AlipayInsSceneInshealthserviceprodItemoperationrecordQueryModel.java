@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询药品操作记录接口
  *
  * @author auto create
- * @since 1.0, 2022-12-09 16:20:55
+ * @since 1.0, 2023-06-20 17:51:47
  */
 public class AlipayInsSceneInshealthserviceprodItemoperationrecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3531948141548881259L;
+	private static final long serialVersionUID = 5678836721365866997L;
 
 	/**
 	 * 支付宝的服务产品编号

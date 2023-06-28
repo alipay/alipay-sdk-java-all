@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询额度
  *
  * @author auto create
- * @since 1.0, 2023-06-19 13:45:37
+ * @since 1.0, 2023-06-19 20:07:15
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6371517544382538229L;
+	private static final long serialVersionUID = 8895947599114214131L;
 
 	/**
 	 * 企业共同账户ID
@@ -70,6 +70,12 @@ public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject
 	@ApiListField("quota_id_list")
 	@ApiField("string")
 	private List<String> quotaIdList;
+
+	/**
+	 * 额度类型
+	 */
+	@ApiField("quota_type")
+	private String quotaType;
 
 	/**
 	 * 额度维度ID
@@ -144,6 +150,13 @@ public class AlipayEbppInvoiceExpensecontrolQuotaQueryModel extends AlipayObject
 	}
 	public void setQuotaIdList(List<String> quotaIdList) {
 		this.quotaIdList = quotaIdList;
+	}
+
+	public String getQuotaType() {
+		return this.quotaType;
+	}
+	public void setQuotaType(String quotaType) {
+		this.quotaType = quotaType;
 	}
 
 	public String getTargetId() {

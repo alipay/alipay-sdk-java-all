@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国家医保局线上业务身份核验授权信息
  *
  * @author auto create
- * @since 1.0, 2023-03-28 15:43:29
+ * @since 1.0, 2023-06-25 22:40:16
  */
 public class MedicalNationalPayAuthInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7528784656829746588L;
+	private static final long serialVersionUID = 1453342446879595997L;
 
 	/**
 	 * 线上支付授权流水号
@@ -40,13 +40,13 @@ public class MedicalNationalPayAuthInfo extends AlipayObject {
 	private String authUrl;
 
 	/**
-	 * 用户卡信息中机构内卡号,授权成功时返回
+	 * 就诊用户卡信息中机构内卡号,授权成功时返回
 	 */
 	@ApiField("medical_card_id")
 	private String medicalCardId;
 
 	/**
-	 * 用户卡信息中机构编码,授权成功时返回
+	 * 就诊用户卡信息中机构编码,授权成功时返回
 	 */
 	@ApiField("medical_card_inst_id")
 	private String medicalCardInstId;
@@ -62,6 +62,20 @@ public class MedicalNationalPayAuthInfo extends AlipayObject {
 	 */
 	@ApiField("pay_auth_no")
 	private String payAuthNo;
+
+	/**
+	 * 授权类型
+本人授权-0
+亲情账户授权-1
+	 */
+	@ApiField("rels_pay_flag")
+	private String relsPayFlag;
+
+	/**
+	 * 如果授权人类型为亲情账户授权，该字段必填，返回主账户脱敏姓名
+	 */
+	@ApiField("rels_pay_user_name")
+	private String relsPayUserName;
 
 	/**
 	 * 商户请求流水号
@@ -123,6 +137,20 @@ public class MedicalNationalPayAuthInfo extends AlipayObject {
 	}
 	public void setPayAuthNo(String payAuthNo) {
 		this.payAuthNo = payAuthNo;
+	}
+
+	public String getRelsPayFlag() {
+		return this.relsPayFlag;
+	}
+	public void setRelsPayFlag(String relsPayFlag) {
+		this.relsPayFlag = relsPayFlag;
+	}
+
+	public String getRelsPayUserName() {
+		return this.relsPayUserName;
+	}
+	public void setRelsPayUserName(String relsPayUserName) {
+		this.relsPayUserName = relsPayUserName;
 	}
 
 	public String getReqBizNo() {

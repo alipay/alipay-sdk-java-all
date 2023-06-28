@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 品牌box工单详情数据信息
  *
  * @author auto create
- * @since 1.0, 2021-11-04 13:42:50
+ * @since 1.0, 2023-06-28 10:40:50
  */
 public class SearchOrderDetailDataBrandItems extends AlipayObject {
 
-	private static final long serialVersionUID = 4222424735353218572L;
+	private static final long serialVersionUID = 5282335864243346412L;
 
 	/**
 	 * 工单详情bizid

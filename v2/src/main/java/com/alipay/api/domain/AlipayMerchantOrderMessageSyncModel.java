@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantOrderMessageSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6529983488446435563L;
+	private static final long serialVersionUID = 1159227672769137649L;
 
 	/**
 	 * 提交到支付的金额，可描述积分价钱类型，如订单金额，可描述积分价钱类型，如[{type: MONEY, amount: 31.08},{type: ALIPAY_POINT, amount: 88}]

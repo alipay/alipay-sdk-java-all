@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动预算实时信息
  *
  * @author auto create
- * @since 1.0, 2023-05-23 17:24:51
+ * @since 1.0, 2023-06-20 18:17:32
  */
 public class DtBankBudgetRealTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2482243332212722214L;
+	private static final long serialVersionUID = 1132271184911435366L;
 
 	/**
 	 * 活动退款金额，单位分

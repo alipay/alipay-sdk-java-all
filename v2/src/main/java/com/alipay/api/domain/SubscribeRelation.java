@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息模板订阅关系模型
  *
  * @author auto create
- * @since 1.0, 2020-12-23 20:31:45
+ * @since 1.0, 2023-06-27 17:29:49
  */
 public class SubscribeRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 3733188287925626692L;
+	private static final long serialVersionUID = 2316382243681482599L;
 
 	/**
-	 * 订阅保持状态，下次静默订阅的时的状态。0:保持订阅，1:保持拒绝订阅
+	 * 订阅保持状态，下次静默订阅的时的状态。1:保持订阅，0:保持拒绝订阅
 	 */
 	@ApiField("keep_state")
 	private String keepState;

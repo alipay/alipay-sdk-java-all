@@ -9,17 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 允许指定券的特殊生效时间规则。
  *
  * @author auto create
- * @since 1.0, 2022-02-23 14:18:08
+ * @since 1.0, 2023-06-28 17:46:27
  */
 public class PaymentVoucherValidPeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 5342249681885596275L;
+	private static final long serialVersionUID = 3786826751463857836L;
 
 	/**
 	 * 券有效期。
-枚举值：
-ABSOLUTE：绝对时间
-RELATIVE：相对时间
 	 */
 	@ApiField("type")
 	private String type;

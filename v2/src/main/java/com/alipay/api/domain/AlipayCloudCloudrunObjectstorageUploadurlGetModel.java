@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对象存储获取文件上传地址
  *
  * @author auto create
- * @since 1.0, 2023-06-15 14:48:29
+ * @since 1.0, 2023-06-27 20:30:16
  */
 public class AlipayCloudCloudrunObjectstorageUploadurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1577978375782939183L;
+	private static final long serialVersionUID = 8177784435463157795L;
 
 	/**
 	 * 环境ID

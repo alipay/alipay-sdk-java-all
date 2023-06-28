@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.tips.delivery.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:21:31
+ * @since 1.0, 2023-06-28 10:11:57
  */
 public class AlipayOpenMiniTipsDeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6141176455519696789L;
+	private static final long serialVersionUID = 8498329891899932893L;
 
 	/** 
 	 * 收藏引导文案内容
@@ -46,7 +46,7 @@ public class AlipayOpenMiniTipsDeliveryQueryResponse extends AlipayResponse {
 	private String failReason;
 
 	/** 
-	 * 匹配类型：GLOBAL为全局生效，TARGETURL为目标页面生效，需配置相应页面地址match_url
+	 * 匹配类型
 	 */
 	@ApiField("match_type")
 	private String matchType;
@@ -64,7 +64,7 @@ public class AlipayOpenMiniTipsDeliveryQueryResponse extends AlipayResponse {
 	private Date startTime;
 
 	/** 
-	 * 活动状态。 枚举值： INIT: 初始化；AUDITING: 审核中；AUDIT_REJECTED:审核驳回；WORKING: 生效中；PUASE: 暂停；FINISHED 已结束；
+	 * 活动状态
 	 */
 	@ApiField("status")
 	private String status;

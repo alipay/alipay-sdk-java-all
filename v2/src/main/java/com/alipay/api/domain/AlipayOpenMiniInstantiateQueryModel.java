@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询三方应用实例化作业商家小程序列表
  *
  * @author auto create
- * @since 1.0, 2023-05-30 17:37:55
+ * @since 1.0, 2023-06-20 14:04:12
  */
 public class AlipayOpenMiniInstantiateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3624111246615148299L;
+	private static final long serialVersionUID = 4395261825978614242L;
 
 	/**
 	 * 小程序appId

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntLinkeDevopsMobiledeviceApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6482475948911654868L;
+	private static final long serialVersionUID = 2729272277265643349L;
 
 	/** 
 	 * access_token+唯一+ws接口使用的鉴权信息+结果返回

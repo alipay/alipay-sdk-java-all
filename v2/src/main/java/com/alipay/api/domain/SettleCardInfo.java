@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算卡信息
  *
  * @author auto create
- * @since 1.0, 2023-05-22 17:15:30
+ * @since 1.0, 2023-06-21 11:39:27
  */
 public class SettleCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6336991545452355539L;
+	private static final long serialVersionUID = 4592633656896784135L;
 
 	/**
 	 * 开户支行名
@@ -64,7 +64,7 @@ public class SettleCardInfo extends AlipayObject {
 	private String accountType;
 
 	/**
-	 * 联行号
+	 * 联行号，详细需调用<a href="https://opendocs.alipay.com/apis/0859rj">‘联行号关联分支行查询’</a>API查看查询结果
 	 */
 	@ApiField("bank_code")
 	private String bankCode;

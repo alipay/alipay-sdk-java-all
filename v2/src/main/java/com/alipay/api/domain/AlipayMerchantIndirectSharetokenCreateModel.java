@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连支付红包吱口令获取
  *
  * @author auto create
- * @since 1.0, 2023-05-12 17:50:21
+ * @since 1.0, 2023-06-27 19:19:16
  */
 public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5196141674798594259L;
+	private static final long serialVersionUID = 1523827897396833927L;
 
 	/**
 	 * 通过吱口令打开支付宝后的页面跳转链接，例如服务商支付页URL
@@ -36,6 +36,12 @@ public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 该参数为开放平台为服务商用户分配的用户唯一标识
+	 */
+	@ApiField("out_open_id")
+	private String outOpenId;
 
 	/**
 	 * 订单需要支付的金额，单位为元(人民币)，精确到小数点后两位，取值范围：[0.01,100000000] 。
@@ -75,6 +81,13 @@ public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getOutOpenId() {
+		return this.outOpenId;
+	}
+	public void setOutOpenId(String outOpenId) {
+		this.outOpenId = outOpenId;
 	}
 
 	public String getPayAmount() {

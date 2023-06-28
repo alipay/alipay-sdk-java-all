@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantIndirectRewardApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7815179563544665924L;
+	private static final long serialVersionUID = 4837726956589227629L;
 
 	/** 
 	 * 权益发放状态。领奖审批结果，平台会对提交信息进行校验，并返回判断结果

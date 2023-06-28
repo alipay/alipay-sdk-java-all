@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容数据的结构
  *
  * @author auto create
- * @since 1.0, 2022-10-14 12:00:21
+ * @since 1.0, 2023-06-26 20:10:54
  */
 public class ApeContentItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7124696129421643214L;
+	private static final long serialVersionUID = 3678318857756332149L;
 
 	/**
 	 * 作者粉丝数
@@ -164,7 +164,7 @@ public class ApeContentItem extends AlipayObject {
 	private String relatedGoodsIds;
 
 	/**
-	 * 数据类型
+	 * 内容模型的数据类型，如果是用内容模型，请传CONTENT。如果不传，默认为GOODS
 	 */
 	@ApiField("row_type")
 	private String rowType;

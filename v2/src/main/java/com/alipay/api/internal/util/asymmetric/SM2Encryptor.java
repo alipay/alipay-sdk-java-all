@@ -26,9 +26,12 @@ import java.security.spec.X509EncodedKeySpec;
  */
 public class SM2Encryptor extends BaseAsymmetricEncryptor {
 
-    //SM2算法默认用户ID，目前开放平台不会使用非默认用户ID
-    public String DEFAULT_USER_ID = "1234567812345678";
+    public static final String SIGN_ALGORITHM = "SM3withSM2";
 
+    //SM2算法默认用户ID，目前开放平台不会使用非默认用户ID
+    public static String DEFAULT_USER_ID = "1234567812345678";
+
+    public static final String PROVIDER_NAME = BouncyCastleProvider.PROVIDER_NAME;
 
     private static BouncyCastleProvider provider;
 
@@ -98,7 +101,7 @@ public class SM2Encryptor extends BaseAsymmetricEncryptor {
 
     private static byte[] sm2Encrypt(byte[] plain, PublicKey sm2PublicKey) throws AlipayApiException {
         try {
-            Cipher sm2CipherEngine = Cipher.getInstance("SM2", "BC");
+            Cipher sm2CipherEngine = Cipher.getInstance("SM2", PROVIDER_NAME);
             sm2CipherEngine.init(Cipher.ENCRYPT_MODE, sm2PublicKey);
             return sm2CipherEngine.doFinal(plain);
         } catch (Exception e) {
@@ -109,7 +112,7 @@ public class SM2Encryptor extends BaseAsymmetricEncryptor {
 
     private static byte[] sm2Decrypt(byte[] cipher, PrivateKey sm2PrivateKey) throws AlipayApiException {
         try {
-            Cipher sm2CipherEngine = Cipher.getInstance("SM2", "BC");
+            Cipher sm2CipherEngine = Cipher.getInstance("SM2", PROVIDER_NAME);
             sm2CipherEngine.init(Cipher.DECRYPT_MODE, sm2PrivateKey);
             return sm2CipherEngine.doFinal(cipher);
         } catch (Exception e) {
@@ -120,11 +123,11 @@ public class SM2Encryptor extends BaseAsymmetricEncryptor {
 
     private static byte[] sm2Sign(byte[] message, PrivateKey sm2PrivateKey, String sm2UserId) throws AlipayApiException {
         try {
-            String userId = "1234567812345678";
+            String userId = DEFAULT_USER_ID;
             if (!StringUtils.isEmpty(sm2UserId)) {
                 userId = sm2UserId;
             }
-            Signature sm2SignEngine = Signature.getInstance("SM3withSM2");
+            Signature sm2SignEngine = Signature.getInstance(SIGN_ALGORITHM, PROVIDER_NAME);
             sm2SignEngine.setParameter(new SM2ParameterSpec(
                     Strings.toByteArray(userId)));
             sm2SignEngine.initSign(sm2PrivateKey);
@@ -138,11 +141,11 @@ public class SM2Encryptor extends BaseAsymmetricEncryptor {
 
     private static boolean sm2Verify(byte[] signature, byte[] message, PublicKey publicKey, String sm2UserId) {
         try {
-            String userId = "1234567812345678";
+            String userId = DEFAULT_USER_ID;
             if (!StringUtils.isEmpty(sm2UserId)) {
                 userId = sm2UserId;
             }
-            Signature sm2SignEngine = Signature.getInstance("SM3withSM2");
+            Signature sm2SignEngine = Signature.getInstance(SIGN_ALGORITHM, PROVIDER_NAME);
             sm2SignEngine.setParameter(new SM2ParameterSpec(Strings.toByteArray(userId)));
             sm2SignEngine.initVerify(publicKey);
             sm2SignEngine.update(message);

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人代扣协议解约接口
  *
  * @author auto create
- * @since 1.0, 2023-06-16 15:37:46
+ * @since 1.0, 2023-06-21 14:11:15
  */
 public class AlipayUserAgreementUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3379112332277924794L;
+	private static final long serialVersionUID = 6256288662543722671L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ），如果传了该参数，其他参数会被忽略	。
@@ -56,8 +56,7 @@ public class AlipayUserAgreementUnsignModel extends AlipayObject {
 	private String externalAgreementNo;
 
 	/**
-	 * 操作类型：confirm（解约确认）；invalid（解约作废）。
-注意：仅异步解约需传入，其余情况无需传递本参数。
+	 * 注意：仅异步解约需传入，其余情况无需传递本参数。
 	 */
 	@ApiField("operate_type")
 	private String operateType;

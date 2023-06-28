@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.system.oauth.token request
  * 
  * @author auto create
- * @since 1.0, 2023-06-19 19:31:45
+ * @since 1.0, 2023-06-20 16:37:00
  */
 public class AlipaySystemOauthTokenRequest implements AlipayRequest<AlipaySystemOauthTokenResponse> {
 
@@ -24,9 +24,7 @@ public class AlipaySystemOauthTokenRequest implements AlipayRequest<AlipaySystem
 	private String code;
 
 	/** 
-	* 授权方式。支持：
-1.authorization_code，表示换取使用用户授权码code换取授权令牌access_token。
-2.refresh_token，表示使用refresh_token刷新获取新授权令牌。
+	* 授权方式
 	 */
 	private String grantType;
 

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 额度规则模型
  *
  * @author auto create
- * @since 1.0, 2023-03-10 15:54:29
+ * @since 1.0, 2023-06-20 16:32:14
  */
 public class QuotaRuleModelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7691854899359117462L;
+	private static final long serialVersionUID = 2823154988347423729L;
 
 	/**
 	 * 该额度规则下可用金额

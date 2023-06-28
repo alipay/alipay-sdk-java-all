@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbdishGroupDetailSimplifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8543149126691398918L;
+	private static final long serialVersionUID = 7359567877765613954L;
 
 	/**
 	 * 加价

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * sku查询透出VO
  *
  * @author auto create
- * @since 1.0, 2023-06-19 11:37:28
+ * @since 1.0, 2023-06-26 20:30:49
  */
 public class ItemSkuSearchVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5253348848687619717L;
+	private static final long serialVersionUID = 8563382237923434824L;
 
 	/**
 	 * sku条形码
@@ -33,6 +33,12 @@ public class ItemSkuSearchVO extends AlipayObject {
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
+
+	/**
+	 * sku价格单位
+	 */
+	@ApiField("price_unit")
+	private String priceUnit;
 
 	/**
 	 * sku售价，分为单位
@@ -90,6 +96,13 @@ public class ItemSkuSearchVO extends AlipayObject {
 	}
 	public void setOutSkuId(String outSkuId) {
 		this.outSkuId = outSkuId;
+	}
+
+	public String getPriceUnit() {
+		return this.priceUnit;
+	}
+	public void setPriceUnit(String priceUnit) {
+		this.priceUnit = priceUnit;
 	}
 
 	public Long getSalePrice() {

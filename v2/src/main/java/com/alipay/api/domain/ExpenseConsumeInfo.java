@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报销账单信息
  *
  * @author auto create
- * @since 1.0, 2023-04-23 11:36:10
+ * @since 1.0, 2023-06-25 10:00:37
  */
 public class ExpenseConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3231188835823869681L;
+	private static final long serialVersionUID = 4888443634968888976L;
 
 	/**
 	 * 企业ID
@@ -134,7 +134,7 @@ public class ExpenseConsumeInfo extends AlipayObject {
 	private String projiectId;
 
 	/**
-	 * 消费账单的退款金额
+	 * 消费账单的退款金额（元）
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票内容
  *
  * @author auto create
- * @since 1.0, 2023-04-23 11:36:29
+ * @since 1.0, 2023-06-25 17:02:23
  */
 public class InvoiceContentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1462727866667454543L;
+	private static final long serialVersionUID = 2893868498651788347L;
 
 	/**
-	 * 含税金额
+	 * 含税金额（元）
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -38,7 +38,7 @@ public class InvoiceContentInfo extends AlipayObject {
 	private String itemUnit;
 
 	/**
-	 * 单价
+	 * 单价（元）
 	 */
 	@ApiField("price")
 	private String price;
@@ -62,7 +62,7 @@ public class InvoiceContentInfo extends AlipayObject {
 	private String specification;
 
 	/**
-	 * 不含税金额
+	 * 不含税金额（元）
 	 */
 	@ApiField("sum_price")
 	private String sumPrice;

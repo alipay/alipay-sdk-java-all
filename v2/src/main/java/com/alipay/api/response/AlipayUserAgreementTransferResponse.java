@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:51:34
+ * @since 1.0, 2023-06-21 15:21:50
  */
 public class AlipayUserAgreementTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7284921561286235836L;
+	private static final long serialVersionUID = 8799263811977758612L;
 
 	/** 
-	 * 单次金额限制
+	 * 单次金额限制，单位为元
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -39,7 +39,7 @@ public class AlipayUserAgreementTransferResponse extends AlipayResponse {
 	private String periodType;
 
 	/** 
-	 * 总金额限制
+	 * 总金额限制，单位为元
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

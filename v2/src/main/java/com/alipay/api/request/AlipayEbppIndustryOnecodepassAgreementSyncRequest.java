@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.onecodepass.agreement.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-06-19 14:31:32
+ * @since 1.0, 2023-06-26 14:44:12
  */
 public class AlipayEbppIndustryOnecodepassAgreementSyncRequest implements AlipayRequest<AlipayEbppIndustryOnecodepassAgreementSyncResponse> {
 

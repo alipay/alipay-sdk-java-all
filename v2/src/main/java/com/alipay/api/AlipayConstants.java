@@ -104,7 +104,7 @@ public class AlipayConstants {
     /**
      * SDK版本号
      */
-    public static final String SDK_VERSION = "alipay-sdk-java-4.35.171.ALL";
+    public static final String SDK_VERSION = "alipay-sdk-java-4.38.0.ALL";
 
     public static final String PROD_CODE = "prod_code";
 
@@ -127,5 +127,15 @@ public class AlipayConstants {
      * 批量请求id
      **/
     public static final String BATCH_REQUEST_ID = "batch_request_id";
+
+    /**
+     * api诊断地址
+     */
+    public static final String DIAGNOSIS_URL = "https://open.alipay.com/api/errCheck?traceId=";
+
+    /**
+     * api诊断来源
+     */
+    public static final String DIAGNOSIS_SOURCE = "&source=sdk";
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询凭证
  *
  * @author auto create
- * @since 1.0, 2023-06-05 14:09:44
+ * @since 1.0, 2023-06-28 15:19:17
  */
 public class AlipayMarketingCertificateCertificationBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3588476469125745759L;
+	private static final long serialVersionUID = 7421843672788547942L;
 
 	/**
 	 * 三方码列表。取值为支付宝调用三方凭证发放spi时商户返回的三方码 当前字段已废弃(统一平台码与三方码字段，后续使用凭证id)

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MedicalHospitalOrderUploadResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2635328843671734339L;
+	private static final long serialVersionUID = 7691724777162714786L;
 
 	/**
 	 * 支付宝行业侧订单号列表

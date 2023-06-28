@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新增发放规则
  *
  * @author auto create
- * @since 1.0, 2023-06-14 16:54:58
+ * @since 1.0, 2023-06-27 13:48:51
  */
 public class AlipayEbppInvoiceIssueruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7486272176923371579L;
+	private static final long serialVersionUID = 7714217979547293764L;
 
 	/**
 	 * 共同账户id
@@ -47,7 +47,7 @@ public class AlipayEbppInvoiceIssueruleCreateModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 是否可累计，枚举：0（不可累计）、1（可累计），2（累计天数）、3（累计到指定日期）余额只允许可累计，按城市发放只允许不可累计，设置了生效周期只允许不可累计
+	 * 是否可累计：0（不可累计）、1（可累计），2（累计天数）、3（累计到指定日期）余额只允许可累计，按城市发放只允许不可累计，设置了生效周期只允许不可累计
 	 */
 	@ApiField("invalid_mode")
 	private Long invalidMode;
@@ -59,7 +59,7 @@ public class AlipayEbppInvoiceIssueruleCreateModel extends AlipayObject {
 	private String invalidModeValue;
 
 	/**
-	 * 发放金额；
+	 * 发放金额，单位（元）；
 按城市不同发放标准示例值："[{\"cities\":[\"321000\",\"321100\"],\"amount\":\"50\"},{\"cities\":[\"321200\",\"321300\"],\"amount\":\"150\"}]"
 统一标准发放示例值："200"
 	 */
@@ -99,7 +99,7 @@ public class AlipayEbppInvoiceIssueruleCreateModel extends AlipayObject {
 	private String quotaType;
 
 	/**
-	 * 是否可转赠，枚举：0（不可转赠）、1（可转赠）
+	 * 是否可转赠：0（不可转赠）、1（可转赠）
 	 */
 	@ApiField("share_mode")
 	private Long shareMode;
@@ -112,7 +112,7 @@ target_type为制度时：制度id
 	private String targetId;
 
 	/**
-	 * 发放规则关联的目标类型，枚举值：INSTITUTION(制度)
+	 * 发放规则关联的目标类型
 	 */
 	@ApiField("target_type")
 	private String targetType;

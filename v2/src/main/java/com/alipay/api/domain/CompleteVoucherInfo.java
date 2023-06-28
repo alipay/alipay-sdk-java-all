@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票详细信息
  *
  * @author auto create
- * @since 1.0, 2023-04-23 11:36:29
+ * @since 1.0, 2023-06-25 17:05:15
  */
 public class CompleteVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7775866812299791611L;
+	private static final long serialVersionUID = 7299257614349899268L;
 
 	/**
 	 * 防伪码
@@ -48,7 +48,7 @@ public class CompleteVoucherInfo extends AlipayObject {
 	private String fileType;
 
 	/**
-	 * 发票金额
+	 * 发票金额（元）
 	 */
 	@ApiField("invoice_amount")
 	private Long invoiceAmount;
@@ -199,13 +199,13 @@ public class CompleteVoucherInfo extends AlipayObject {
 	private String payerRegisterNo;
 
 	/**
-	 * 不含税金额
+	 * 不含税金额（元）
 	 */
 	@ApiField("sum_price")
 	private Long sumPrice;
 
 	/**
-	 * 合计税额
+	 * 合计税额（元）
 	 */
 	@ApiField("sum_tax")
 	private Long sumTax;

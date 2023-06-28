@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户前置营销内容咨询接口
  *
  * @author auto create
- * @since 1.0, 2022-12-29 23:29:43
+ * @since 1.0, 2023-06-27 14:05:01
  */
 public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3183235872789729755L;
+	private static final long serialVersionUID = 1121188944876994746L;
 
 	/**
 	 * 业务场景，用于区分商户具体的咨场景，示例：ORDER_PAGE：下单页营销咨询；其他新场景接入时需与支付宝协商约定
@@ -61,6 +61,12 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail")
 	private List<GoodsDetail> goodsDetail;
+
+	/**
+	 * 历史支付宝订单号
+	 */
+	@ApiField("history_alipay_trade_no")
+	private String historyAlipayTradeNo;
 
 	/**
 	 * 商户用户id
@@ -188,6 +194,13 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	}
 	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
+	}
+
+	public String getHistoryAlipayTradeNo() {
+		return this.historyAlipayTradeNo;
+	}
+	public void setHistoryAlipayTradeNo(String historyAlipayTradeNo) {
+		this.historyAlipayTradeNo = historyAlipayTradeNo;
 	}
 
 	public String getMerchantUserId() {

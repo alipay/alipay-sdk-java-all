@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联订单信息
  *
  * @author auto create
- * @since 1.0, 2022-10-07 18:24:10
+ * @since 1.0, 2023-06-28 16:24:51
  */
 public class AlipayMarketingActivityOrdervoucherAssociateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7439833495992945312L;
+	private static final long serialVersionUID = 2316248964284755747L;
 
 	/**
 	 * 活动id

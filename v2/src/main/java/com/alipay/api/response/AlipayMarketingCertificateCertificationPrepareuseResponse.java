@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.certificate.certification.prepareuse response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-09 10:20:43
+ * @since 1.0, 2023-06-28 14:53:13
  */
 public class AlipayMarketingCertificateCertificationPrepareuseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5112325119452339337L;
+	private static final long serialVersionUID = 5364867321767358256L;
 
 	/** 
 	 * 凭证信息列表
@@ -31,7 +31,7 @@ public class AlipayMarketingCertificateCertificationPrepareuseResponse extends A
 	private String openId;
 
 	/** 
-	 * 购买商品的订单id
+	 * 购买商品的订单id，核销接口使用
 	 */
 	@ApiField("order_id")
 	private String orderId;

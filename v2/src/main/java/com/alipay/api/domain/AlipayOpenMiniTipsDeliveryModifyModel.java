@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序收藏tips引导投放修改
  *
  * @author auto create
- * @since 1.0, 2022-05-25 20:32:02
+ * @since 1.0, 2023-06-28 10:07:52
  */
 public class AlipayOpenMiniTipsDeliveryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7217261742685794696L;
+	private static final long serialVersionUID = 4598353578122967936L;
 
 	/**
 	 * 收藏引导投放活动ID
@@ -20,7 +20,7 @@ public class AlipayOpenMiniTipsDeliveryModifyModel extends AlipayObject {
 	private String deliveryId;
 
 	/**
-	 * 活动投放操作类型。枚举值：恢复-RESUME,暂停-PAUSE,终止-STOP
+	 * 活动投放操作类型
 	 */
 	@ApiField("operate_type")
 	private String operateType;

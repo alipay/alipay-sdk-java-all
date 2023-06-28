@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业地址查询
  *
  * @author auto create
- * @since 1.0, 2023-06-07 19:31:50
+ * @since 1.0, 2023-06-28 11:21:58
  */
 public class AlipayCommerceEcEnterpriseAddressQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4796394696477369476L;
+	private static final long serialVersionUID = 5225142611294669143L;
 
 	/**
-	 * 共同账户id，和enterprise_id二选一
+	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。
 	 */
 	@ApiField("account_id")
 	private String accountId;
@@ -26,7 +26,7 @@ public class AlipayCommerceEcEnterpriseAddressQueryModel extends AlipayObject {
 	private String addressId;
 
 	/**
-	 * 协议号，如果填共同账户id，则该字段必填
+	 * 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -38,7 +38,7 @@ public class AlipayCommerceEcEnterpriseAddressQueryModel extends AlipayObject {
 	private String cityCode;
 
 	/**
-	 * 企业id，和account_id二选一
+	 * 通过企业码2.0签约接口签约，只填写企业id，无需填写共同账户id和授权签约协议号。
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支卡通-用户绑定
  *
  * @author auto create
- * @since 1.0, 2023-05-17 15:25:28
+ * @since 1.0, 2023-06-19 19:50:46
  */
 public class AlipayFundZcardprodUserBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8562171884143649758L;
+	private static final long serialVersionUID = 1446449285234122689L;
 
 	/**
 	 * 商户的账户id
@@ -30,6 +30,12 @@ public class AlipayFundZcardprodUserBindModel extends AlipayObject {
 	 */
 	@ApiField("business_params")
 	private String businessParams;
+
+	/**
+	 * 代扣信息
+	 */
+	@ApiField("general_withhold_info")
+	private GeneralWithholdInfoDTO generalWithholdInfo;
 
 	/**
 	 * 签约方账号。
@@ -84,6 +90,13 @@ ALIPAY_USER_ID：表示是支付宝账号对应的支付宝唯一用户号；ALI
 	}
 	public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
+	}
+
+	public GeneralWithholdInfoDTO getGeneralWithholdInfo() {
+		return this.generalWithholdInfo;
+	}
+	public void setGeneralWithholdInfo(GeneralWithholdInfoDTO generalWithholdInfo) {
+		this.generalWithholdInfo = generalWithholdInfo;
 	}
 
 	public String getIdentity() {

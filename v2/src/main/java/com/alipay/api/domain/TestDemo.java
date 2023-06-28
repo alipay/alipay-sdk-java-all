@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * test
  *
  * @author auto create
- * @since 1.0, 2023-05-17 20:02:13
+ * @since 1.0, 2023-06-25 10:35:31
  */
 public class TestDemo extends AlipayObject {
 
-	private static final long serialVersionUID = 2853644465489799752L;
+	private static final long serialVersionUID = 2867859932798218865L;
+
+	/**
+	 * 1
+	 */
+	@ApiField("a_uid")
+	private String aUid;
 
 	/**
 	 * test 当前字段已废弃(test废弃字段测试)
@@ -44,6 +50,13 @@ public class TestDemo extends AlipayObject {
 	@ApiField("uid")
 	@Deprecated
 	private String uid;
+
+	public String getaUid() {
+		return this.aUid;
+	}
+	public void setaUid(String aUid) {
+		this.aUid = aUid;
+	}
 
 	public String getOpenId() {
 		return this.openId;

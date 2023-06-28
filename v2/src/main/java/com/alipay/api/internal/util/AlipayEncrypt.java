@@ -8,6 +8,7 @@ import com.alipay.api.AlipayApiException;
 import com.alipay.api.internal.util.encrypt.Encrypt;
 import com.alipay.api.internal.util.encrypt.impl.AesEncrypt;
 import com.alipay.api.internal.util.encrypt.impl.AesEncryptV2;
+import com.alipay.api.internal.util.encrypt.impl.SM4Encrypt;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,6 +26,7 @@ public class AlipayEncrypt {
     static {
         encryptManager.put("AES", new AesEncrypt());
         encryptManager.put("AES_V2", new AesEncryptV2());
+//        encryptManager.put("SM4", new SM4Encrypt());
     }
 
 
@@ -43,7 +45,12 @@ public class AlipayEncrypt {
 
         Encrypt encrypt = encryptManager.get(encryptType);
         if (encrypt == null) {
-            throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_TYPE_ERROR.getErrMsg() + encryptType);
+            if ("SM4".equals(encryptType)) {
+                // SM4Encrypt类需要使用时再加载，避免未引入BouncyCastleProvider导致AlipayEncrypt类加载失败
+                encrypt = new SM4Encrypt();
+            } else {
+                throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_TYPE_ERROR.getErrMsg() + encryptType);
+            }
         }
 
         return encrypt.encrypt(content, encryptKey, charset);
@@ -63,7 +70,12 @@ public class AlipayEncrypt {
                                         String charset) throws AlipayApiException {
         Encrypt encrypt = encryptManager.get(encryptType);
         if (encrypt == null) {
-            throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_TYPE_ERROR.getErrMsg() + encryptType);
+            if ("SM4".equals(encryptType)) {
+                // SM4Encrypt类需要使用时再加载，避免未引入BouncyCastleProvider导致AlipayEncrypt类加载失败
+                encrypt = new SM4Encrypt();
+            } else {
+                throw new AlipayApiException(AlipayApiErrorEnum.ENCRYPT_TYPE_ERROR.getErrMsg() + encryptType);
+            }
         }
 
         return encrypt.decrypt(content, encryptKey, charset);
@@ -77,5 +89,9 @@ public class AlipayEncrypt {
      */
     public static Map<String, Encrypt> getEncryptManager() {
         return encryptManager;
+    }
+
+    public static void putEncryptManager(String encryptType, Encrypt encrypt) {
+        encryptManager.put(encryptType, encrypt);
     }
 }

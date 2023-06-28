@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流信息
  *
  * @author auto create
- * @since 1.0, 2021-11-10 17:36:10
+ * @since 1.0, 2023-06-21 13:57:34
  */
 public class Shipping extends AlipayObject {
 
-	private static final long serialVersionUID = 8251896779771847223L;
+	private static final long serialVersionUID = 1414669361824547625L;
 
 	/**
 	 * 收货人地址

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 费控额度扣减记录
  *
  * @author auto create
- * @since 1.0, 2023-05-06 15:15:48
+ * @since 1.0, 2023-06-25 11:15:59
  */
 public class ExpenseControlQuotaPayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8563276863262461752L;
+	private static final long serialVersionUID = 2497855314994116579L;
 
 	/**
 	 * 金额（分）

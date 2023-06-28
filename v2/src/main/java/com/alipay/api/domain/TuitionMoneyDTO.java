@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学金额
  *
  * @author auto create
- * @since 1.0, 2021-08-16 15:52:26
+ * @since 1.0, 2023-06-27 19:40:33
  */
 public class TuitionMoneyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6874645933622624865L;
+	private static final long serialVersionUID = 1451637957745431312L;
 
 	/**
 	 * 币种
@@ -20,7 +20,7 @@ public class TuitionMoneyDTO extends AlipayObject {
 	private String currency;
 
 	/**
-	 * 金额最小单位
+	 * 金额最小单位，单位：分、小币种（JPY/KRW等）：元
 	 */
 	@ApiField("value")
 	private String value;

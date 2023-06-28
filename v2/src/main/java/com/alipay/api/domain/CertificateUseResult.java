@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证核销结果
  *
  * @author auto create
- * @since 1.0, 2023-05-30 23:34:30
+ * @since 1.0, 2023-06-28 11:04:47
  */
 public class CertificateUseResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1884615548782785522L;
+	private static final long serialVersionUID = 5486512369657973592L;
+
+	/**
+	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
+	 */
+	@ApiField("amount_info")
+	private CertificateInstanceAmountInfo amountInfo;
 
 	/**
 	 * 三方码
@@ -42,6 +48,13 @@ public class CertificateUseResult extends AlipayObject {
 	 */
 	@ApiField("use_order_no")
 	private String useOrderNo;
+
+	public CertificateInstanceAmountInfo getAmountInfo() {
+		return this.amountInfo;
+	}
+	public void setAmountInfo(CertificateInstanceAmountInfo amountInfo) {
+		this.amountInfo = amountInfo;
+	}
 
 	public String getCode() {
 		return this.code;

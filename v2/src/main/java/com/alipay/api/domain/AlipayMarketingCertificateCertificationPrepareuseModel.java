@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证核销准备
  *
  * @author auto create
- * @since 1.0, 2023-06-09 10:20:43
+ * @since 1.0, 2023-06-21 13:29:32
  */
 public class AlipayMarketingCertificateCertificationPrepareuseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2435988879656382112L;
+	private static final long serialVersionUID = 5475814182164574659L;
 
 	/**
-	 * 支付宝平台券码
+	 * 用户出示的核销二维码下方的12位券码
 	 */
 	@ApiField("code")
 	private String code;
 
 	/**
-	 * 从二维码解析出来的标识
+	 * 根据用户出示的核销二维码解析出来的标识
 	 */
 	@ApiField("encrypted_data")
 	private String encryptedData;

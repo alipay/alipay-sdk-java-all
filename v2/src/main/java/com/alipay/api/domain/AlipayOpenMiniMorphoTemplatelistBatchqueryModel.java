@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniMorphoTemplatelistBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7825722897227734596L;
+	private static final long serialVersionUID = 6113277752562173532L;
 
 	/**
 	 * 闪蝶身份验证信息

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.employee.batchcreate response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-08 14:01:59
+ * @since 1.0, 2023-06-28 11:26:54
  */
 public class AlipayCommerceEcEmployeeBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6349614755698871333L;
+	private static final long serialVersionUID = 5137366593181992541L;
 
 	/** 
 	 * 添加失败员工，如果没有添加失败员工，则不返回该字段

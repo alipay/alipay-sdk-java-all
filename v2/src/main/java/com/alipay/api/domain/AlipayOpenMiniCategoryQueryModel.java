@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序类目树查询
  *
  * @author auto create
- * @since 1.0, 2022-08-15 21:06:14
+ * @since 1.0, 2023-06-21 10:05:15
  */
 public class AlipayOpenMiniCategoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7251499142323364927L;
+	private static final long serialVersionUID = 5896869776834874116L;
 
 	/**
 	 * 是否过滤小程序不可用类目。枚举值如下：

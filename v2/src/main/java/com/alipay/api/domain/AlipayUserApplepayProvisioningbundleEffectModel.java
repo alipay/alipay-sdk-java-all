@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserApplepayProvisioningbundleEffectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4155749711932546786L;
+	private static final long serialVersionUID = 4637753146869571129L;
 
 	/**
 	 * 事件类型

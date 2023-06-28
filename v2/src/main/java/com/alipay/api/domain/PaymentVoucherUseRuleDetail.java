@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付券核销规则
  *
  * @author auto create
- * @since 1.0, 2022-02-23 14:17:14
+ * @since 1.0, 2023-06-28 17:35:17
  */
 public class PaymentVoucherUseRuleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1163689111548116964L;
+	private static final long serialVersionUID = 7195128671184211542L;
 
 	/**
 	 * 固定面额满减券使用规则。 限制: 1、voucher_type为FIX_VOUCHER时必填

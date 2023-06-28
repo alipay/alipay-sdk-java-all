@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户连续购买付费卡信息
  *
  * @author auto create
- * @since 1.0, 2022-08-25 18:11:23
+ * @since 1.0, 2023-06-28 16:58:17
  */
 public class PaidOuterCardCycleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3132239824596961428L;
+	private static final long serialVersionUID = 6721528578183672919L;
 
 	/**
 	 * 支付宝用户签约协议号
@@ -32,27 +32,19 @@ public class PaidOuterCardCycleInfoDTO extends AlipayObject {
 	private String alipayDeductScene;
 
 	/**
-	 * 关闭连续购买原因。枚举如下：
-MANUAL_CLOSE(手动关闭)
-EXPIRE_CLOSE(过期关闭)
-CLOSE(关闭)
+	 * 关闭连续购买原因。
 	 */
 	@ApiField("close_reason")
 	private String closeReason;
 
 	/**
-	 * 用户开通连续购买类型。枚举如下：
-YEAR(年)
-QUARTER(季度)
-MONTH(月)
+	 * 用户开通连续购买类型。
 	 */
 	@ApiField("cycle_type")
 	private String cycleType;
 
 	/**
-	 * 开通连续购买状态。枚举如下：
-OPEN(打开)
-CLOSE(关闭)
+	 * 开通连续购买状态。
 	 */
 	@ApiField("open_status")
 	private String openStatus;

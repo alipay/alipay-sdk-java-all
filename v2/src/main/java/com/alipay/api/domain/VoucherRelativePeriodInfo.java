@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券相对核销时间
  *
  * @author auto create
- * @since 1.0, 2023-06-01 17:31:33
+ * @since 1.0, 2023-06-28 17:40:23
  */
 public class VoucherRelativePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8196378992285175588L;
+	private static final long serialVersionUID = 1847654487283336192L;
 
 	/**
 	 * 核销时间限制
