@@ -12,7 +12,7 @@ statusCode:Status code used to indicate an error. If omitted, assumed to be 200 
  */
 public class EstablishResponseHeader extends AlipayObject {
 
-	private static final long serialVersionUID = 4264451541747545927L;
+	private static final long serialVersionUID = 4697754885375139783L;
 
 	/**
 	 * 200=成功，400=请求错误，403=bundle查询不到。

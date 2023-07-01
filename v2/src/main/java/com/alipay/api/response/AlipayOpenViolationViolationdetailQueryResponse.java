@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.violation.violationdetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:32:40
+ * @since 1.0, 2023-06-30 10:11:59
  */
 public class AlipayOpenViolationViolationdetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5874675637455737171L;
+	private static final long serialVersionUID = 6745994179541888189L;
 
 	/** 
 	 * 申诉截止日期。
@@ -65,15 +65,7 @@ public class AlipayOpenViolationViolationdetailQueryResponse extends AlipayRespo
 	private List<ReplyRecord> rectifyReplyRecords;
 
 	/** 
-	 * 违规工单状态枚举：
-PUNISH_DONE：处罚生效中
-PUNISH_APPEAL_REVOKED：处罚已撤销
-PUNISH_INVALID_REVOKED：处罚已到期
-WAITING_RECTIFY：待整改 
-RECTIFY_AUDITOR_PROCESSING：整改审核中
-RECTIFY_REJECTED：整改不通过
-RECTIFY_PASSED：整改通过
-RECTIFY_TIMEOUT ：整改已超时
+	 * 违规工单状态枚举
 	 */
 	@ApiField("status")
 	private String status;

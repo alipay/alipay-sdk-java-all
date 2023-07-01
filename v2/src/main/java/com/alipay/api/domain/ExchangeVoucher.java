@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家兑换券
  *
  * @author auto create
- * @since 1.0, 2023-06-28 18:39:26
+ * @since 1.0, 2023-06-29 12:24:48
  */
 public class ExchangeVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 3168814559182285879L;
+	private static final long serialVersionUID = 5723272647831126737L;
 
 	/**
 	 * 券的价值
@@ -74,9 +74,7 @@ false：否
 	private String saleAmount;
 
 	/**
-	 * 1.账期模式:走默认结算账号
-2.分账模式:门店分账
-3.分账模式:合作商户
+	 * 解决类型。
 	 */
 	@ApiField("settle_type")
 	private String settleType;

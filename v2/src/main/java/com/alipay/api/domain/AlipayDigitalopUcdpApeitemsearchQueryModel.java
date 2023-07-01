@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape搜索接口
  *
  * @author auto create
- * @since 1.0, 2023-06-26 19:46:17
+ * @since 1.0, 2023-06-29 20:12:16
  */
 public class AlipayDigitalopUcdpApeitemsearchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7417356572868318977L;
+	private static final long serialVersionUID = 3535734616692259363L;
 
 	/**
 	 * ape搜索的上下文

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连支付红包吱口令获取
  *
  * @author auto create
- * @since 1.0, 2023-06-27 19:19:16
+ * @since 1.0, 2023-06-30 15:31:55
  */
 public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1523827897396833927L;
+	private static final long serialVersionUID = 5385311218357465111L;
 
 	/**
 	 * 通过吱口令打开支付宝后的页面跳转链接，例如服务商支付页URL
@@ -24,6 +24,18 @@ public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 业务跟踪参数，用于串联用户业务行为的关系
+	 */
+	@ApiField("biz_tracker")
+	private String bizTracker;
+
+	/**
+	 * 渠道信息摘要标识，在APP内吱口令跳转时用到，用来标识吱口令关联的服务信息，比如红包、花呗工具。有两种方式获得：1.在于支付宝进行业务合作时，由平台侧分配；2.在咨询前置服务时由接口返回。
+	 */
+	@ApiField("channel_info")
+	private String channelInfo;
 
 	/**
 	 * 吱口令有效期，单位秒。例如:3600*24 (代表一天)
@@ -67,6 +79,20 @@ public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getBizTracker() {
+		return this.bizTracker;
+	}
+	public void setBizTracker(String bizTracker) {
+		this.bizTracker = bizTracker;
+	}
+
+	public String getChannelInfo() {
+		return this.channelInfo;
+	}
+	public void setChannelInfo(String channelInfo) {
+		this.channelInfo = channelInfo;
 	}
 
 	public Long getExpireTime() {

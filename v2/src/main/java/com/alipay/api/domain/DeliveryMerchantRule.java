@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推广收款账号规则
  *
  * @author auto create
- * @since 1.0, 2023-03-22 20:10:03
+ * @since 1.0, 2023-06-29 12:29:53
  */
 public class DeliveryMerchantRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3129755192524924219L;
+	private static final long serialVersionUID = 6544617815665189961L;
 
 	/**
 	 * 指定品牌id。 说明：如商户需选择某个品牌下维护的收款账号，请上传相关品牌id
@@ -31,7 +31,7 @@ public class DeliveryMerchantRule extends AlipayObject {
 	private List<DeliveryMerchantInfo> deliveryMerchantInfos;
 
 	/**
-	 * 指定支付成功页模式。 枚举值： MANUAL_INPUT_MERCHANT：指定收款账号 IN_SERVICE_VOUCHER_MERCHANT：优惠券可核收款账号（仅支持支付券） 收款账号相关规则:接入指南
+	 * 指定支付成功页模式。
 	 */
 	@ApiField("delivery_merchant_mode")
 	private String deliveryMerchantMode;

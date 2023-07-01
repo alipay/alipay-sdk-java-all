@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape搜索的上下文
  *
  * @author auto create
- * @since 1.0, 2023-06-26 19:46:17
+ * @since 1.0, 2023-06-29 20:12:16
  */
 public class ApeSearchContext extends AlipayObject {
 
-	private static final long serialVersionUID = 1263224893769378343L;
+	private static final long serialVersionUID = 6817312289776213562L;
 
 	/**
 	 * 用户当前城市编码
@@ -66,7 +66,7 @@ public class ApeSearchContext extends AlipayObject {
 	private Long size;
 
 	/**
-	 * 排序类型，price_asc；price_desc;sales_asc；sales_desc；discount_asc;discount_desc;有这几种可供选择不传即使用搜索侧默认排序
+	 * 排序类型，传的结构为字段+"#"+顺序，比如需要价格倒叙 current_price#desc,价格顺序 current_price#asc,销量倒叙 sale_number#desc
 	 */
 	@ApiField("sort_type")
 	private String sortType;

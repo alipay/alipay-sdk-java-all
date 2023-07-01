@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * test
  *
  * @author auto create
- * @since 1.0, 2023-06-25 10:35:31
+ * @since 1.0, 2023-06-30 10:23:15
  */
 public class TestDemo extends AlipayObject {
 
-	private static final long serialVersionUID = 2867859932798218865L;
+	private static final long serialVersionUID = 2888326716741892423L;
+
+	/**
+	 * 1
+	 */
+	@ApiField("a_open_id")
+	private String aOpenId;
 
 	/**
 	 * 1
@@ -20,11 +30,32 @@ public class TestDemo extends AlipayObject {
 	private String aUid;
 
 	/**
+	 * test
+	 */
+	@ApiListField("date_a")
+	@ApiField("date")
+	private List<Date> dateA;
+
+	/**
 	 * test 当前字段已废弃(test废弃字段测试)
 	 */
 	@ApiField("open_id")
 	@Deprecated
 	private String openId;
+
+	/**
+	 * test
+	 */
+	@ApiListField("price_a")
+	@ApiField("price")
+	private List<String> priceA;
+
+	/**
+	 * test
+	 */
+	@ApiListField("string_a")
+	@ApiField("string")
+	private List<String> stringA;
 
 	/**
 	 * ttes
@@ -51,6 +82,13 @@ public class TestDemo extends AlipayObject {
 	@Deprecated
 	private String uid;
 
+	public String getaOpenId() {
+		return this.aOpenId;
+	}
+	public void setaOpenId(String aOpenId) {
+		this.aOpenId = aOpenId;
+	}
+
 	public String getaUid() {
 		return this.aUid;
 	}
@@ -58,11 +96,32 @@ public class TestDemo extends AlipayObject {
 		this.aUid = aUid;
 	}
 
+	public List<Date> getDateA() {
+		return this.dateA;
+	}
+	public void setDateA(List<Date> dateA) {
+		this.dateA = dateA;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public List<String> getPriceA() {
+		return this.priceA;
+	}
+	public void setPriceA(List<String> priceA) {
+		this.priceA = priceA;
+	}
+
+	public List<String> getStringA() {
+		return this.stringA;
+	}
+	public void setStringA(List<String> stringA) {
+		this.stringA = stringA;
 	}
 
 	public String getStringYingshe() {

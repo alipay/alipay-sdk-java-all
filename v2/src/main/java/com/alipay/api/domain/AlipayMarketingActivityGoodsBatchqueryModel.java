@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询券可用单品
  *
  * @author auto create
- * @since 1.0, 2023-04-28 14:56:41
+ * @since 1.0, 2023-06-29 18:03:45
  */
 public class AlipayMarketingActivityGoodsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2642513338232567146L;
+	private static final long serialVersionUID = 6871991496753384417L;
 
 	/**
 	 * 活动id
@@ -21,19 +21,12 @@ public class AlipayMarketingActivityGoodsBatchqueryModel extends AlipayObject {
 
 	/**
 	 * 活动单品类型。
-枚举值:
-AVAILABLE 可用商品
-UNAVAILABLE 不可用商品
 	 */
 	@ApiField("goods_use_type")
 	private String goodsUseType;
 
 	/**
 	 * 商户接入模式
-
-枚举值
-SELF_MODE 商户自接入模式
-AGENCY_MODE 服务商代接入模式
 	 */
 	@ApiField("merchant_access_mode")
 	private String merchantAccessMode;

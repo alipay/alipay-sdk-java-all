@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付券归属商户信息
  *
  * @author auto create
- * @since 1.0, 2023-06-28 17:23:49
+ * @since 1.0, 2023-06-29 12:14:43
  */
 public class PaymentVoucherBelongMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2518271644339873945L;
+	private static final long serialVersionUID = 4237354452356525614L;
 
 	/**
 	 * 商户支付宝id，默认品牌名和品牌logo将从该商户信息中获取
@@ -20,12 +20,7 @@ public class PaymentVoucherBelongMerchantInfo extends AlipayObject {
 	private String merchantId;
 
 	/**
-	 * 商户id类型。 
-若传入的类型为直连商户则必须签约当面付且当前接口调用者与商户存在代运营关系
-当类型为SMID时表示为某个间连商户配券，但是券的归属者属于当前接口调用人。
-枚举值
-SMID 间连商户
-PID 直连商户
+	 * 商户id类型。
 	 */
 	@ApiField("merchant_id_type")
 	private String merchantIdType;

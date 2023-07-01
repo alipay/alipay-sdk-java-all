@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联合营销消费券场景 券详情信息
  *
  * @author auto create
- * @since 1.0, 2022-12-06 14:50:16
+ * @since 1.0, 2023-06-29 14:37:40
  */
 public class UnitedVoucherDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8855891722238993524L;
+	private static final long serialVersionUID = 7195741922737257244L;
 
 	/**
 	 * 券激活时间

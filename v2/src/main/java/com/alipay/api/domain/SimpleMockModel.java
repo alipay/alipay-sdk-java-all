@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SimpleMockModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4886848188999435162L;
+	private static final long serialVersionUID = 6689585457798585134L;
 
 	/**
 	 * 11

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放信息
  *
  * @author auto create
- * @since 1.0, 2023-04-01 10:59:18
+ * @since 1.0, 2023-06-29 12:26:09
  */
 public class PromoDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2843342142993921763L;
+	private static final long serialVersionUID = 1421197483144393231L;
 
 	/**
 	 * 活动id
@@ -38,11 +38,7 @@ public class PromoDeliveryInfo extends AlipayObject {
 	private String channelName;
 
 	/**
-	 * 投放状态.
-
-枚举值：
-ACTIVE: 生效的投放。
-INACTIVE: 失效的投放。
+	 * 投放状态。
 	 */
 	@ApiField("delivery_status")
 	private String deliveryStatus;

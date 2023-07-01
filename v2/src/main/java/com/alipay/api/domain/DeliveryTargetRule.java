@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放计划定向规则。
  *
  * @author auto create
- * @since 1.0, 2023-03-22 20:10:03
+ * @since 1.0, 2023-06-29 12:29:53
  */
 public class DeliveryTargetRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2576567856642694946L;
+	private static final long serialVersionUID = 7212589747463439889L;
 
 	/**
 	 * 指定品牌id。
@@ -47,10 +47,6 @@ public class DeliveryTargetRule extends AlipayObject {
 
 	/**
 	 * 指定支付成功页模式。
-枚举值：
-MANUAL_INPUT_MERCHANT：指定收款账号
-IN_SERVICE_VOUCHER_MERCHANT：优惠券可核收款账号（仅支持支付券）
-收款账号相关规则:接入指南
 	 */
 	@ApiField("delivery_merchant_mode")
 	private String deliveryMerchantMode;
@@ -73,7 +69,7 @@ IN_SERVICE_VOUCHER_MERCHANT：优惠券可核收款账号（仅支持支付券�
 	private String deliveryPromoTags;
 
 	/**
-	 * 投放召回模式，现在支持CITY_RECALL（城市召回)和SHOP_RECALL（门店召回)两种模式。城市召回即当前城市投放，用户当前城市可领取；门店模式即门店附近投放，用户距离门店附近可领取。
+	 * 投放召回模式，现在支持CITY_RECALL（城市召回)和SHOP_RECALL（门店召回)两种模式。
 	 */
 	@ApiField("delivery_recall_mode")
 	private String deliveryRecallMode;
@@ -85,7 +81,7 @@ IN_SERVICE_VOUCHER_MERCHANT：优惠券可核收款账号（仅支持支付券�
 	private DeliverySearchBoxRule deliverySearchBoxRule;
 
 	/**
-	 * 小程序推广可用。枚举值：SERVICE_DIRECT
+	 * 小程序推广可用。
 	 */
 	@ApiField("delivery_type")
 	private String deliveryType;

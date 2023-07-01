@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppEbppConfirmpayurlTestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4693846845749542534L;
+	private static final long serialVersionUID = 2623225991855891152L;
 
 	/**
 	 * ss

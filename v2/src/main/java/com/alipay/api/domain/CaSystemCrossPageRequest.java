@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CaSystemCrossPageRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6136375744212391237L;
+	private static final long serialVersionUID = 6235915772439921846L;
 
 	/**
 	 * defaultCrossPageRule = true  默认设置每五页盖一次

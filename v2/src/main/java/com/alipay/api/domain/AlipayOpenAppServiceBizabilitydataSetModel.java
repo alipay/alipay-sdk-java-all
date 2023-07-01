@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务业务能力数据上传
  *
  * @author auto create
- * @since 1.0, 2023-06-26 14:46:44
+ * @since 1.0, 2023-06-30 17:19:24
  */
 public class AlipayOpenAppServiceBizabilitydataSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5121536779734469474L;
+	private static final long serialVersionUID = 4883393478521842334L;
 
 	/**
 	 * 操作类型.PUT:新增或覆盖,REMOVE:删除
@@ -40,6 +40,12 @@ public class AlipayOpenAppServiceBizabilitydataSetModel extends AlipayObject {
 	@ApiListField("data_list")
 	@ApiField("biz_ability_data")
 	private List<BizAbilityData> dataList;
+
+	/**
+	 * 服务id
+	 */
+	@ApiField("service_code")
+	private String serviceCode;
 
 	/**
 	 * 服务业务能力数据类型，支持：ITEM_SUMMARY(商品摘要)、USER_INTENSION(用户意图数据)、FUNCTION(服务功能)
@@ -73,6 +79,13 @@ public class AlipayOpenAppServiceBizabilitydataSetModel extends AlipayObject {
 	}
 	public void setDataList(List<BizAbilityData> dataList) {
 		this.dataList = dataList;
+	}
+
+	public String getServiceCode() {
+		return this.serviceCode;
+	}
+	public void setServiceCode(String serviceCode) {
+		this.serviceCode = serviceCode;
 	}
 
 	public String getType() {

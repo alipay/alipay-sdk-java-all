@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户信息
  *
  * @author auto create
- * @since 1.0, 2023-06-28 21:02:23
+ * @since 1.0, 2023-06-29 12:25:35
  */
 public class ActivityMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7515963578183767164L;
+	private static final long serialVersionUID = 5666592383147459258L;
 
 	/**
 	 * 商户支付宝id
@@ -21,9 +21,6 @@ public class ActivityMerchantInfo extends AlipayObject {
 
 	/**
 	 * 商户支付宝id类型。
-枚举值
-PID 直连pid
-SMID 间连SMID
 	 */
 	@ApiField("merchant_id_type")
 	private String merchantIdType;

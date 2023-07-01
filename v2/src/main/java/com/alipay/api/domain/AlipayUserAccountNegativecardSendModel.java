@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAccountNegativecardSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4461376765687592796L;
+	private static final long serialVersionUID = 2716161129262385695L;
 
 	/**
 	 * 模板参数,键值对，以竖线分割

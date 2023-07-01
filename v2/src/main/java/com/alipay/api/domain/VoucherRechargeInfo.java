@@ -7,16 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值详情
  *
  * @author auto create
- * @since 1.0, 2023-06-28 18:04:13
+ * @since 1.0, 2023-06-29 12:24:11
  */
 public class VoucherRechargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6352129244456131744L;
+	private static final long serialVersionUID = 5478697373782249252L;
 
 	/**
-	 * 预充值方式。 
-枚举值:
-ALIPAY_BALANCE 支付宝余额预充值
+	 * 预充值方式。
 	 */
 	@ApiField("recharge_type")
 	private String rechargeType;

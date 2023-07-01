@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻企业信用征信数据服务非实时创建
  *
  * @author auto create
- * @since 1.0, 2023-03-17 15:22:15
+ * @since 1.0, 2023-06-29 22:26:53
  */
 public class ZhimaCreditEpCreditlinkAuthCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6315664545759372853L;
+	private static final long serialVersionUID = 4862217891884352153L;
 
 	/**
 	 * 企业可信链接协议列表
@@ -82,6 +82,12 @@ public class ZhimaCreditEpCreditlinkAuthCreateModel extends AlipayObject {
 	 */
 	@ApiField("merchant_request_id")
 	private String merchantRequestId;
+
+	/**
+	 * 产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	public List<CreditLinkAgreementInfo> getAgreementInfoList() {
 		return this.agreementInfoList;
@@ -158,6 +164,13 @@ public class ZhimaCreditEpCreditlinkAuthCreateModel extends AlipayObject {
 	}
 	public void setMerchantRequestId(String merchantRequestId) {
 		this.merchantRequestId = merchantRequestId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 }

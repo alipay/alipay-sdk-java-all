@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 本地商品
  *
  * @author auto create
- * @since 1.0, 2023-06-07 16:48:49
+ * @since 1.0, 2023-06-30 20:07:22
  */
 public class LocalItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2237735319263385296L;
+	private static final long serialVersionUID = 3727468729689167329L;
 
 	/**
 	 * 商品属性
@@ -72,6 +75,13 @@ public class LocalItemVO extends AlipayObject {
 	 */
 	@ApiField("path")
 	private String path;
+
+	/**
+	 * sku数组
+	 */
+	@ApiListField("skus")
+	@ApiField("local_item_sku_query_v_o")
+	private List<LocalItemSkuQueryVO> skus;
 
 	/**
 	 * start_time描述售卖开始时间，end_time描述售卖结束时间，时间格式均为YYYY-MM-DD hh:mm:ss
@@ -165,6 +175,13 @@ public class LocalItemVO extends AlipayObject {
 	}
 	public void setPath(String path) {
 		this.path = path;
+	}
+
+	public List<LocalItemSkuQueryVO> getSkus() {
+		return this.skus;
+	}
+	public void setSkus(List<LocalItemSkuQueryVO> skus) {
+		this.skus = skus;
 	}
 
 	public TimeRangeStructVO getSoldTime() {

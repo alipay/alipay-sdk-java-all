@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalop.ucdp.apeitemsearch.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-26 19:46:51
+ * @since 1.0, 2023-06-30 18:00:37
  */
 public class AlipayDigitalopUcdpApeitemsearchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5824514163822136485L;
+	private static final long serialVersionUID = 7364675411951241649L;
+
+	/** 
+	 * 可推荐的商品总数
+	 */
+	@ApiField("item_total_count")
+	private Long itemTotalCount;
 
 	/** 
 	 * 推荐的item结果列表
@@ -29,6 +35,13 @@ public class AlipayDigitalopUcdpApeitemsearchQueryResponse extends AlipayRespons
 	 */
 	@ApiField("trace_id")
 	private String traceId;
+
+	public void setItemTotalCount(Long itemTotalCount) {
+		this.itemTotalCount = itemTotalCount;
+	}
+	public Long getItemTotalCount( ) {
+		return this.itemTotalCount;
+	}
 
 	public void setItems(List<ApeRecItem> items) {
 		this.items = items;

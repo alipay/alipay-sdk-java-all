@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FamilyPayBizUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4466174815973219823L;
+	private static final long serialVersionUID = 2656212235816633457L;
 
 	/**
 	 * 支付宝user_id，代表亲情卡赠卡人或者赠卡人

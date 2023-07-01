@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.delivery.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 11:51:54
+ * @since 1.0, 2023-06-29 14:54:18
  */
 public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3113152157522481229L;
+	private static final long serialVersionUID = 5551192871632955727L;
 
 	/** 
 	 * 运营计划基础信息。
@@ -59,7 +59,7 @@ public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse
 	private DeliveryPlayConfig deliveryPlayConfig;
 
 	/** 
-	 * 投放计划状态。  枚举值： ACTIVE：生效中 INACTIVE：失效状态 AUDITING：审核中 AUDIT_NO_PASS：审核不通过。
+	 * 投放计划状态。
 	 */
 	@ApiField("delivery_status")
 	private String deliveryStatus;

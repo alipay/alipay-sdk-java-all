@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建支付券
  *
  * @author auto create
- * @since 1.0, 2023-06-28 08:54:37
+ * @since 1.0, 2023-06-29 14:49:18
  */
 public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4487985915219153328L;
+	private static final long serialVersionUID = 1341884742815876633L;
 
 	/**
 	 * 活动基础信息
@@ -118,9 +118,6 @@ public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 
 	/**
 	 * 优惠类型
-
-枚举值：
-FIX_VOUCHER：固定面额满减券
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;

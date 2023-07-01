@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券发放规则
  *
  * @author auto create
- * @since 1.0, 2023-06-28 17:31:03
+ * @since 1.0, 2023-06-29 12:16:35
  */
 public class PaymentVoucherSendRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2769221546484368587L;
+	private static final long serialVersionUID = 1244892357581983679L;
 
 	/**
 	 * 设置此字段，允许指定单天最大发券数量。
@@ -66,12 +66,6 @@ true\false
 
 	/**
 	 * 周期限领配置,限制每人在固定周期内领取张数(voucher_quantity_limit_per_user),默认LIFE_CYCLE
-
-枚举值为 
-DAY:每天
-WEEK:每周
-MONTH:每月
-LIFE_CYCLE:整个活动周期
 	 */
 	@ApiField("voucher_quantity_limit_per_user_period_type")
 	private String voucherQuantityLimitPerUserPeriodType;

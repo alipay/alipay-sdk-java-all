@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付券核销规则
  *
  * @author auto create
- * @since 1.0, 2023-06-28 12:01:25
+ * @since 1.0, 2023-06-29 13:44:38
  */
 public class PaymentVoucherUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7745664357298346314L;
+	private static final long serialVersionUID = 8714187845477388429L;
 
 	/**
 	 * 可核销的支付宝小程序id
@@ -72,10 +72,6 @@ public class PaymentVoucherUseRule extends AlipayObject {
 
 	/**
 	 * 核销跳转方式,默认CAN_USE(详情页展示可使用按钮)
-枚举值:
-SCAN_CODE 跳转到支付宝收钱码
-SELF_LINK 跳转至商家指定页面
-CAN_USE 卡包券详情页显示可使用按钮
 	 */
 	@ApiField("use_mode")
 	private String useMode;
@@ -97,12 +93,6 @@ CAN_USE 卡包券详情页显示可使用按钮
 
 	/**
 	 * 核销次数限制周期配置。默认值LIFE_CYCLE表示限制每个支付宝账号在整个活动期间核销次数。
-
-枚举值:
-DAY:每天 
-WEEK:每周 
-MONTH:每月 
-LIFE_CYCLE:整个活动
 	 */
 	@ApiField("voucher_quantity_limit_per_user_period_type")
 	private String voucherQuantityLimitPerUserPeriodType;

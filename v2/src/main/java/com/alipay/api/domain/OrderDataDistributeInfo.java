@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分发结果信息
  *
  * @author auto create
- * @since 1.0, 2022-01-06 21:53:39
+ * @since 1.0, 2023-06-30 15:00:38
  */
 public class OrderDataDistributeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8489936378261689637L;
+	private static final long serialVersionUID = 3568465568293437696L;
 
 	/**
 	 * 未分发到场景的具体原因。开发者可根据具体原因定位解决问题后发起重试。
@@ -21,7 +21,6 @@ public class OrderDataDistributeInfo extends AlipayObject {
 
 	/**
 	 * 分发场景code。
-具体枚举值如下：SERVICE_MSG-订单消息
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

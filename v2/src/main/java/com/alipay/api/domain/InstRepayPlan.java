@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InstRepayPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 3842488957912994676L;
+	private static final long serialVersionUID = 2227911897735464776L;
 
 	/**
 	 * 是否是当期。 默认值为不是当期计划。如果合约最后一期计划都已经逾期，就不再存在当期计划，合约下所有计划明细的该值都为false

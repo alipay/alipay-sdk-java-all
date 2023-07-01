@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HbGoodsTradeRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6234659481581229167L;
+	private static final long serialVersionUID = 5818948716553917246L;
 
 	/**
 	 * 最大购买次数

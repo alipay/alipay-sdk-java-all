@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 政务事项删除
  *
  * @author auto create
- * @since 1.0, 2023-06-28 10:04:15
+ * @since 1.0, 2023-06-30 16:32:17
  */
 public class AlipayIserviceCcmSwItemDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6264296935767577996L;
+	private static final long serialVersionUID = 8297762972927427358L;
 
 	/**
 	 * 事项id集合

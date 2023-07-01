@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付券营销资金预算
  *
  * @author auto create
- * @since 1.0, 2023-06-28 17:50:50
+ * @since 1.0, 2023-06-29 12:20:45
  */
 public class PaymentVoucherBudgetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6352522566375169536L;
+	private static final long serialVersionUID = 1385633294736318581L;
 
 	/**
 	 * 营销资金预算,单位元。
@@ -22,10 +22,6 @@ public class PaymentVoucherBudgetInfo extends AlipayObject {
 
 	/**
 	 * 营销资金预算类型
-枚举值:
-NO_CASH 免充值
-RECHARGE 预充值
-
 1、免充值：制券方无需提前充值资金，用户核销支付券时，直接从订单原价中扣除优惠减价金额，最终只将用户实际支付的金额结算给核销商户，商户实收少于订单原价。
 2.预充值: 制券方需将优惠预算提前充值到支付宝指定营销账户中，用户核销支付券时，系统从该账户可用余额中扣除优惠减价部分对应的资金，连同用户实际支付的资金，一并结算给核销商户，不影响实收。
 	 */

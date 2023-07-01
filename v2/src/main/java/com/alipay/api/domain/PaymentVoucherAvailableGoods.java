@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付券指定可核销商品
  *
  * @author auto create
- * @since 1.0, 2023-06-28 11:41:48
+ * @since 1.0, 2023-06-29 13:44:38
  */
 public class PaymentVoucherAvailableGoods extends AlipayObject {
 
-	private static final long serialVersionUID = 1473161123177914163L;
+	private static final long serialVersionUID = 8849632684697716175L;
 
 	/**
 	 * 商品描述信息。 用于券面展示，向用户介绍商品

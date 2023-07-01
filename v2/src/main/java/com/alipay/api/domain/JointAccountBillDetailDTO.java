@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共同账户账单明细
  *
  * @author auto create
- * @since 1.0, 2023-06-12 10:00:54
+ * @since 1.0, 2023-06-29 19:37:22
  */
 public class JointAccountBillDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5551333968654429273L;
+	private static final long serialVersionUID = 7243835697969791494L;
 
 	/**
 	 * 共同账户ID
@@ -60,6 +60,12 @@ public class JointAccountBillDetailDTO extends AlipayObject {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 付款方资产信息
+	 */
+	@ApiField("payer_asset_info")
+	private UserAssetInfoVO payerAssetInfo;
 
 	/**
 	 * 间连商户显示二级商户全名，直连、直付通则显示一级商户全名。企业商户该字段不脱敏，非企业商户该字段会脱敏
@@ -139,6 +145,13 @@ public class JointAccountBillDetailDTO extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public UserAssetInfoVO getPayerAssetInfo() {
+		return this.payerAssetInfo;
+	}
+	public void setPayerAssetInfo(UserAssetInfoVO payerAssetInfo) {
+		this.payerAssetInfo = payerAssetInfo;
 	}
 
 	public String getSellerFullName() {

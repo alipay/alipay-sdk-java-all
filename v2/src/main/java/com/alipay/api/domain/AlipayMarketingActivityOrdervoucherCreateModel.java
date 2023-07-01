@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建订单券
  *
  * @author auto create
- * @since 1.0, 2023-06-28 16:23:47
+ * @since 1.0, 2023-06-29 14:52:02
  */
 public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1389256393759912511L;
+	private static final long serialVersionUID = 6859714485951952262L;
 
 	/**
 	 * 活动基础信息
@@ -119,10 +119,7 @@ public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject
 	private VoucherSendRuleDetail voucherSendRule;
 
 	/**
-	 * 券类型。商家券支持三类券类型：
-FIX_VOUCHER：满减券；
-DISCOUNT_VOUCHER：折扣券；
-SPECIAL_VOUCHER：特价券；
+	 * 券类型。
 兑换券仅支持一类券类型：EXCHANGE_VOUCHER: 兑换券；
 	 */
 	@ApiField("voucher_type")

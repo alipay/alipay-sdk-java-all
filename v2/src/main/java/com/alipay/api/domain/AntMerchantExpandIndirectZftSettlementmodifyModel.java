@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandIndirectZftSettlementmodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7832822387374866641L;
+	private static final long serialVersionUID = 4174239347134919348L;
 
 	/**
 	 * 结算支付宝账号，资金结算到支付宝账号时必填。填入的支付宝账号需已实名认证，且与商户同主体(个体工商户可以与负责人或营业执照名称相同)

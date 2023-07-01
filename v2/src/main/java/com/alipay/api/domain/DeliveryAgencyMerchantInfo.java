@@ -7,15 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家营销投放领域--代理的商户信息
  *
  * @author auto create
- * @since 1.0, 2023-06-28 20:43:09
+ * @since 1.0, 2023-06-29 12:25:05
  */
 public class DeliveryAgencyMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8783241145373863559L;
+	private static final long serialVersionUID = 2613669312428943764L;
 
 	/**
 	 * 合作业务类型。
-其中针对ISV_FOR_MERCHANT模式，merchant_id与merchant_id_type是必须填写的
 	 */
 	@ApiField("business_type")
 	private String businessType;
@@ -27,9 +26,7 @@ public class DeliveryAgencyMerchantInfo extends AlipayObject {
 	private String merchantId;
 
 	/**
-	 * 商户id类型。 限制: 服务商代运营模式必传 
-
-特别说明： 如果merchant_id_type选择SMID。则表明当前商家券活动的归属者是该SMID所绑定的支付宝PID。 因此要求该SMID必须绑定相应的支付宝PID。
+	 * 商户id类型。 限制: 服务商代运营模式必传
 	 */
 	@ApiField("merchant_id_type")
 	private String merchantIdType;

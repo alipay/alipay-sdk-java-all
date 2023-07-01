@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MBudgetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3774851453854512632L;
+	private static final long serialVersionUID = 4847852965145285442L;
 
 	/**
 	 * 日预算设置必须在1~999999999范围内，不限制填写“-1”，注意：日预算不能大于总预算

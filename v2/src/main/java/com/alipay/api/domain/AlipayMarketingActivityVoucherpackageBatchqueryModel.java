@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券包批量查询
  *
  * @author auto create
- * @since 1.0, 2023-06-28 14:58:22
+ * @since 1.0, 2023-06-29 14:47:51
  */
 public class AlipayMarketingActivityVoucherpackageBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6894486393277172617L;
+	private static final long serialVersionUID = 2341489889549626714L;
 
 	/**
 	 * 分页参数，需要查询的页码，起始页是1
@@ -35,11 +35,6 @@ public class AlipayMarketingActivityVoucherpackageBatchqueryModel extends Alipay
 
 	/**
 	 * 券包状态：不指定可查全部状态，指定时只支持查单个状态
-枚举值：
-CREATED：已创建,
-ENABLE：已发布（包含过期）,
-PAUSED：已暂停,
-DISABLE：已停止;
 	 */
 	@ApiField("voucher_package_status")
 	private String voucherPackageStatus;

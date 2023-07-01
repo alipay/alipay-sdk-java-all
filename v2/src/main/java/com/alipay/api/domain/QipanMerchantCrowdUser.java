@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
 
  *
  * @author auto create
- * @since 1.0, 2023-06-28 15:46:06
+ * @since 1.0, 2023-06-29 11:39:24
  */
 public class QipanMerchantCrowdUser extends AlipayObject {
 
-	private static final long serialVersionUID = 5713532621216744328L;
+	private static final long serialVersionUID = 6746336136757189159L;
 
 	/**
 	 * 支付宝小程序app_id，当encrypt_identity_type=OPEN_ID此值必传，且应传入openId对应的appId
@@ -34,11 +34,7 @@ public class QipanMerchantCrowdUser extends AlipayObject {
 	private String encryptIdentityId;
 
 	/**
-	 * 用身份信息类型-加密手机号，枚举如下： 
-SHA256_MOBILE-sha256加密的手机号码
-OPEN_ID-支付宝openId
-SHA256_IDFA-sha256加密的idfa
-SHA256_OAID-sha256加密的oaid
+	 * 本字段用于标识上传用户信息的数据类型，具体取值请参照枚举值说明
 	 */
 	@ApiField("encrypt_identity_type")
 	private String encryptIdentityType;

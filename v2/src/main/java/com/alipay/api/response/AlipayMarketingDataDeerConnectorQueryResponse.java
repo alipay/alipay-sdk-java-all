@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingDataDeerConnectorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7848411639774294658L;
+	private static final long serialVersionUID = 5697669276638183681L;
 
 	/** 
 	 * 返回活动的流量数据
