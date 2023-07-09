@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物流驿站小程序激励政策验收接口
  *
  * @author auto create
- * @since 1.0, 2023-06-25 19:03:52
+ * @since 1.0, 2023-07-07 11:32:50
  */
 public class AlipayCommerceLogisticsCheckPostpolicyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2558883613374619862L;
+	private static final long serialVersionUID = 4722598626335286861L;
 
 	/**
 	 * app_id_list是名下需要验收的小程序id列表，可从O站获取

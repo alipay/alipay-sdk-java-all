@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取员工邀请链接
  *
  * @author auto create
- * @since 1.0, 2023-06-19 13:51:15
+ * @since 1.0, 2023-07-05 11:32:52
  */
 public class AlipayCommerceEcEmployeeInviteQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6691336817851219255L;
+	private static final long serialVersionUID = 5739259492823853931L;
 
 	/**
 	 * 企业码员工ID

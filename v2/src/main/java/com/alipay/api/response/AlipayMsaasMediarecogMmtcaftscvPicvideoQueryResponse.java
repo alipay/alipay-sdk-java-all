@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcaftscv.picvideo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-28 15:08:48
+ * @since 1.0, 2023-07-04 21:31:51
  */
 public class AlipayMsaasMediarecogMmtcaftscvPicvideoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7388393195948629337L;
+	private static final long serialVersionUID = 1836226287434589351L;
 
 	/** 
 	 * 货柜每层视频展示信息
@@ -31,6 +31,12 @@ public class AlipayMsaasMediarecogMmtcaftscvPicvideoQueryResponse extends Alipay
 	 */
 	@ApiField("result")
 	private String result;
+
+	/** 
+	 * 可以重复查询,no_retry 不能重复查询
+	 */
+	@ApiField("retry")
+	private String retry;
 
 	/** 
 	 * 交易ID
@@ -63,6 +69,13 @@ public class AlipayMsaasMediarecogMmtcaftscvPicvideoQueryResponse extends Alipay
 	}
 	public String getResult( ) {
 		return this.result;
+	}
+
+	public void setRetry(String retry) {
+		this.retry = retry;
+	}
+	public String getRetry( ) {
+		return this.retry;
 	}
 
 	public void setTransactionId(String transactionId) {

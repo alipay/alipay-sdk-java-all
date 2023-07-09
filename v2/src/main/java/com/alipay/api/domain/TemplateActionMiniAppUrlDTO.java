@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡模板配置项：跳转至支付宝小程序页面的URL信息模型
  *
  * @author auto create
- * @since 1.0, 2023-06-27 13:49:06
+ * @since 1.0, 2023-07-03 13:55:01
  */
 public class TemplateActionMiniAppUrlDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8517161387491873979L;
+	private static final long serialVersionUID = 6365587358673629523L;
 
 	/**
 	 * 行动点按钮是否在列表页展示，true 或 false，不填则默认false；

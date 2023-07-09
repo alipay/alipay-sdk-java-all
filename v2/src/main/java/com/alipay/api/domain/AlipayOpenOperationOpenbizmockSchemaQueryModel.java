@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成schema测试
  *
  * @author auto create
- * @since 1.0, 2023-01-17 21:28:16
+ * @since 1.0, 2023-07-07 14:40:40
  */
 public class AlipayOpenOperationOpenbizmockSchemaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8129731888584876299L;
+	private static final long serialVersionUID = 3144533879919548932L;
 
 	/**
 	 * test
@@ -32,6 +32,12 @@ public class AlipayOpenOperationOpenbizmockSchemaQueryModel extends AlipayObject
 	private String c;
 
 	/**
+	 * 111
+	 */
+	@ApiField("complex_a")
+	private TestDemo complexA;
+
+	/**
 	 * test
 	 */
 	@ApiField("fuza")
@@ -50,10 +56,16 @@ public class AlipayOpenOperationOpenbizmockSchemaQueryModel extends AlipayObject
 	private String openId;
 
 	/**
-	 * test
+	 * {"test":"test"}
 	 */
 	@ApiField("uid")
 	private String uid;
+
+	/**
+	 * test
+	 */
+	@ApiField("uid_a")
+	private String uidA;
 
 	public String getA() {
 		return this.a;
@@ -74,6 +86,13 @@ public class AlipayOpenOperationOpenbizmockSchemaQueryModel extends AlipayObject
 	}
 	public void setC(String c) {
 		this.c = c;
+	}
+
+	public TestDemo getComplexA() {
+		return this.complexA;
+	}
+	public void setComplexA(TestDemo complexA) {
+		this.complexA = complexA;
 	}
 
 	public TestDemoWzw getFuza() {
@@ -102,6 +121,13 @@ public class AlipayOpenOperationOpenbizmockSchemaQueryModel extends AlipayObject
 	}
 	public void setUid(String uid) {
 		this.uid = uid;
+	}
+
+	public String getUidA() {
+		return this.uidA;
+	}
+	public void setUidA(String uidA) {
+		this.uidA = uidA;
 	}
 
 }

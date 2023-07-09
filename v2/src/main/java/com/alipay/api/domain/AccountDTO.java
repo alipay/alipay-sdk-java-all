@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行账号信息
  *
  * @author auto create
- * @since 1.0, 2022-08-11 09:46:26
+ * @since 1.0, 2023-07-05 10:22:28
  */
 public class AccountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5215452356941666375L;
+	private static final long serialVersionUID = 3244286284234711779L;
 
 	/**
 	 * 户名
@@ -24,6 +24,12 @@ public class AccountDTO extends AlipayObject {
 	 */
 	@ApiField("account_no")
 	private String accountNo;
+
+	/**
+	 * 银行机构代码，如工商银行为ICBC
+	 */
+	@ApiField("inst_id")
+	private String instId;
 
 	/**
 	 * 开户网点
@@ -49,6 +55,13 @@ public class AccountDTO extends AlipayObject {
 	}
 	public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
+	}
+
+	public String getInstId() {
+		return this.instId;
+	}
+	public void setInstId(String instId) {
+		this.instId = instId;
 	}
 
 	public String getOfficalName() {

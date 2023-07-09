@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 到账播报推送
  *
  * @author auto create
- * @since 1.0, 2021-04-09 15:06:44
+ * @since 1.0, 2023-07-05 14:52:29
  */
 public class AlipayCommerceIotVoicemodelSyncvoiceSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6487977765486494528L;
+	private static final long serialVersionUID = 2138933319421124589L;
 
 	/**
 	 * 服务调用上下文

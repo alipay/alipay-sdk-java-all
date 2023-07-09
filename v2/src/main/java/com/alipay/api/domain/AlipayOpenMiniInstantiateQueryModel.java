@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询三方应用实例化作业商家小程序列表
  *
  * @author auto create
- * @since 1.0, 2023-06-20 14:04:12
+ * @since 1.0, 2023-07-06 19:57:44
  */
 public class AlipayOpenMiniInstantiateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7611296869919641198L;
+	private static final long serialVersionUID = 8543814367337595618L;
 
 	/**
 	 * 小程序appId
@@ -36,6 +36,12 @@ public class AlipayOpenMiniInstantiateQueryModel extends AlipayObject {
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 是否查询详细信息
+	 */
+	@ApiField("query_full")
+	private String queryFull;
 
 	/**
 	 * 小程序模板应用id
@@ -69,6 +75,13 @@ public class AlipayOpenMiniInstantiateQueryModel extends AlipayObject {
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getQueryFull() {
+		return this.queryFull;
+	}
+	public void setQueryFull(String queryFull) {
+		this.queryFull = queryFull;
 	}
 
 	public String getTemplateId() {

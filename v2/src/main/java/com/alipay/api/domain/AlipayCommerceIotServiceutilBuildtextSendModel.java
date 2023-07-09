@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过文本合成语音
  *
  * @author auto create
- * @since 1.0, 2021-04-09 15:07:03
+ * @since 1.0, 2023-07-05 14:48:08
  */
 public class AlipayCommerceIotServiceutilBuildtextSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5788417897317741141L;
+	private static final long serialVersionUID = 2892184761186686892L;
 
 	/**
 	 * 要合成语音文件的文本

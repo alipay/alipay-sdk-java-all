@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceConsumRatioQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7238764688928718949L;
+	private static final long serialVersionUID = 6369935223842161647L;
 
 	/**
 	 * 区域编码，多个编码的时候用英文逗号分割，最多不超过20个

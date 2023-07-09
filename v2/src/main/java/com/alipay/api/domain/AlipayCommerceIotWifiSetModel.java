@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备wifi配置
  *
  * @author auto create
- * @since 1.0, 2019-06-20 21:52:40
+ * @since 1.0, 2023-07-05 14:51:05
  */
 public class AlipayCommerceIotWifiSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2237651374374471311L;
+	private static final long serialVersionUID = 7467398983817324658L;
 
 	/**
 	 * 设备唯一id

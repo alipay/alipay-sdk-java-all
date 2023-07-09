@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.check.postpolicy.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-25 19:06:56
+ * @since 1.0, 2023-07-07 11:36:53
  */
 public class AlipayCommerceLogisticsCheckPostpolicyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8229137845518171435L;
+	private static final long serialVersionUID = 3424227359362512772L;
 
 	/** 
 	 * 合法的小程序验收结果

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一码通用户合约信息同步
  *
  * @author auto create
- * @since 1.0, 2023-06-14 21:42:06
+ * @since 1.0, 2023-07-04 13:49:16
  */
 public class AlipayEbppIndustryOnecodepassAgreementSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4194765695481445997L;
+	private static final long serialVersionUID = 3893116853423576235L;
 
 	/**
 	 * 合约号
@@ -38,25 +38,13 @@ public class AlipayEbppIndustryOnecodepassAgreementSyncModel extends AlipayObjec
 	private String openId;
 
 	/**
-	 * 合约状态 ON / OFF
-ON: 合约状态正常，用户正常展码
-OFF: 禁码状态，根据statusCode提示用户合约异常行动点
+	 * 合约状态
 	 */
 	@ApiField("status")
 	private String status;
 
 	/**
 	 * 合约不可用状态码，action=UPDATE status=OFF进行禁码时必填
-
-CLOSE_WITHHOLD_AND_BALANCE_NOT_ENOUGH - 代扣解约且余额不足
-
-ARREARAGE -欠费
-
-CARD_RETUERN - 退卡申请中
-
-UNILATERAL_RECORD - 存在单边记录
-
-OTHER_DISABLED - 其他不能生码的情况
 	 */
 	@ApiField("status_code")
 	private String statusCode;
@@ -68,9 +56,7 @@ OTHER_DISABLED - 其他不能生码的情况
 	private String statusMsg;
 
 	/**
-	 * CREATE-创建合约
-UPDATE-更新合约
-REVOKE-注销
+	 * 同步操作
 	 */
 	@ApiField("sync_action")
 	private String syncAction;

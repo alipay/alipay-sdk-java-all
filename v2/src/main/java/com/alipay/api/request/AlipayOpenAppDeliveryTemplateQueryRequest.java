@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.KoubeiMemberDataIsvCreateModel;
+import com.alipay.api.domain.AlipayOpenAppDeliveryTemplateQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.KoubeiMemberDataIsvCreateResponse;
+import com.alipay.api.response.AlipayOpenAppDeliveryTemplateQueryResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: koubei.member.data.isv.create request
+ * ALIPAY API: alipay.open.app.delivery.template.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:01:17
+ * @since 1.0, 2023-07-04 10:06:52
  */
-public class KoubeiMemberDataIsvCreateRequest implements AlipayRequest<KoubeiMemberDataIsvCreateResponse> {
+public class AlipayOpenAppDeliveryTemplateQueryRequest implements AlipayRequest<AlipayOpenAppDeliveryTemplateQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* isv 会员CRM数据回流
+	* 履约模板查询接口
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class KoubeiMemberDataIsvCreateRequest implements AlipayRequest<KoubeiMem
 	}
 
 	public String getApiMethodName() {
-		return "koubei.member.data.isv.create";
+		return "alipay.open.app.delivery.template.query";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class KoubeiMemberDataIsvCreateRequest implements AlipayRequest<KoubeiMem
 		this.udfParams.put(key, value);
 	}
 
-	public Class<KoubeiMemberDataIsvCreateResponse> getResponseClass() {
-		return KoubeiMemberDataIsvCreateResponse.class;
+	public Class<AlipayOpenAppDeliveryTemplateQueryResponse> getResponseClass() {
+		return AlipayOpenAppDeliveryTemplateQueryResponse.class;
 	}
 	
 

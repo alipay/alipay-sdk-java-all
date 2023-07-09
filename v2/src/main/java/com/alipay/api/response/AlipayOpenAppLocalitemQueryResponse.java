@@ -6,6 +6,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AppItemAttrVO;
 import com.alipay.api.domain.PhoneStructVO;
+import com.alipay.api.domain.ItemRiskInfo;
 import com.alipay.api.domain.LocalItemSkuQueryVO;
 import com.alipay.api.domain.TimeRangeStructVO;
 
@@ -15,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-25 09:56:51
+ * @since 1.0, 2023-07-07 13:21:52
  */
 public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6258976724351787183L;
+	private static final long serialVersionUID = 4591165768648441498L;
 
 	/** 
 	 * 商品属性
@@ -102,6 +103,13 @@ public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("path")
 	private String path;
+
+	/** 
+	 * 商品有冻结、驳回时，展示对应的具体问题
+	 */
+	@ApiListField("risk_info")
+	@ApiField("item_risk_info")
+	private List<ItemRiskInfo> riskInfo;
 
 	/** 
 	 * sku数组
@@ -229,6 +237,13 @@ public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 	}
 	public String getPath( ) {
 		return this.path;
+	}
+
+	public void setRiskInfo(List<ItemRiskInfo> riskInfo) {
+		this.riskInfo = riskInfo;
+	}
+	public List<ItemRiskInfo> getRiskInfo( ) {
+		return this.riskInfo;
 	}
 
 	public void setSkus(List<LocalItemSkuQueryVO> skus) {

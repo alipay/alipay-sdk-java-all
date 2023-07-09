@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.check.postpolicy.query request
  * 
  * @author auto create
- * @since 1.0, 2023-06-25 19:06:56
+ * @since 1.0, 2023-07-07 11:36:53
  */
 public class AlipayCommerceLogisticsCheckPostpolicyQueryRequest implements AlipayRequest<AlipayCommerceLogisticsCheckPostpolicyQueryResponse> {
 

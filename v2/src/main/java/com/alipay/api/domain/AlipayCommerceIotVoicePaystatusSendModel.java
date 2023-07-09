@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot漏单提醒播报服务
  *
  * @author auto create
- * @since 1.0, 2023-03-22 11:28:14
+ * @since 1.0, 2023-07-05 14:52:05
  */
 public class AlipayCommerceIotVoicePaystatusSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5152763342932918267L;
+	private static final long serialVersionUID = 6288736252636382734L;
 
 	/**
 	 * 设备id

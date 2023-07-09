@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.qipan.insight.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 22:16:50
+ * @since 1.0, 2023-07-07 10:46:57
  */
 public class AlipayMerchantQipanInsightQueryRequest implements AlipayRequest<AlipayMerchantQipanInsightQueryResponse> {
 

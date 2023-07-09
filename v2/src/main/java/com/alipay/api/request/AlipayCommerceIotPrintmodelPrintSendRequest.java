@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.printmodel.print.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:45:59
+ * @since 1.0, 2023-07-05 14:46:50
  */
 public class AlipayCommerceIotPrintmodelPrintSendRequest implements AlipayRequest<AlipayCommerceIotPrintmodelPrintSendResponse> {
 

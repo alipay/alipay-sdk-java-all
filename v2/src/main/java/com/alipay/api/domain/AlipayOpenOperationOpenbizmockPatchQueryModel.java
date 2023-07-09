@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * patch类型接口测试
  *
  * @author auto create
- * @since 1.0, 2023-06-30 17:22:41
+ * @since 1.0, 2023-07-07 15:36:43
  */
 public class AlipayOpenOperationOpenbizmockPatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5198814924923217639L;
+	private static final long serialVersionUID = 5848718888811566632L;
 
 	/**
 	 * test
@@ -36,6 +36,18 @@ public class AlipayOpenOperationOpenbizmockPatchQueryModel extends AlipayObject 
 	 */
 	@ApiField("complex_b")
 	private TestDemo complexB;
+
+	/**
+	 * test
+	 */
+	@ApiField("complex_c")
+	private TestDemoWzw complexC;
+
+	/**
+	 * test
+	 */
+	@ApiField("complex_d")
+	private TestDemoWzw complexD;
 
 	/**
 	 * 1
@@ -87,6 +99,20 @@ public class AlipayOpenOperationOpenbizmockPatchQueryModel extends AlipayObject 
 	}
 	public void setComplexB(TestDemo complexB) {
 		this.complexB = complexB;
+	}
+
+	public TestDemoWzw getComplexC() {
+		return this.complexC;
+	}
+	public void setComplexC(TestDemoWzw complexC) {
+		this.complexC = complexC;
+	}
+
+	public TestDemoWzw getComplexD() {
+		return this.complexD;
+	}
+	public void setComplexD(TestDemoWzw complexD) {
+		this.complexD = complexD;
 	}
 
 	public String getIdTypeModifyOpenId() {

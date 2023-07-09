@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IOT云打印服务
  *
  * @author auto create
- * @since 1.0, 2021-04-09 15:06:54
+ * @since 1.0, 2023-07-05 14:46:50
  */
 public class AlipayCommerceIotPrintmodelPrintSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7343743513744272195L;
+	private static final long serialVersionUID = 6785171346449844914L;
 
 	/**
 	 * 服务调用上下文

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 绿色开放平台能量发放
  *
  * @author auto create
- * @since 1.0, 2023-06-12 15:47:51
+ * @since 1.0, 2023-07-07 16:03:17
  */
 public class AlipaySocialOpengreenEnergySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8697958392899745936L;
+	private static final long serialVersionUID = 1148296435734848637L;
 
 	/**
 	 * 用户绿色行为时间戳，可选，如果不填，默认为请求接口时间，可用于识别用户行为时间，并根据时间生成对应的能量球
@@ -37,8 +37,9 @@ public class AlipaySocialOpengreenEnergySendModel extends AlipayObject {
 	/**
 	 * 能量扩展信息，仅特殊能量场景需要传入，对接时可咨询森林技术同学
 	 */
-	@ApiField("ext_info")
-	private EnergyExtRequest extInfo;
+	@ApiListField("ext_info")
+	@ApiField("energy_ext_request")
+	private List<EnergyExtRequest> extInfo;
 
 	/**
 	 * 绿色行为描述
@@ -92,10 +93,10 @@ public class AlipaySocialOpengreenEnergySendModel extends AlipayObject {
 		this.energyAppId = energyAppId;
 	}
 
-	public EnergyExtRequest getExtInfo() {
+	public List<EnergyExtRequest> getExtInfo() {
 		return this.extInfo;
 	}
-	public void setExtInfo(EnergyExtRequest extInfo) {
+	public void setExtInfo(List<EnergyExtRequest> extInfo) {
 		this.extInfo = extInfo;
 	}
 

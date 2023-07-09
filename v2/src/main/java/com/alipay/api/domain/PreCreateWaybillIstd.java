@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PreCreateWaybillIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 1286413554846533144L;
+	private static final long serialVersionUID = 4556518915664838533L;
 
 	/**
 	 * 优惠券费用

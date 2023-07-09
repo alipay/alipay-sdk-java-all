@@ -1,8 +1,10 @@
 package com.alipay.api.request;
 
+import java.util.HashMap;
 import java.util.Map;
 
-import com.alipay.api.AlipayRequest;
+import com.alipay.api.FileItem;
+import com.alipay.api.AlipayUploadRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
 import com.alipay.api.response.AlipayOpenOperationOpenbizmockTestpathkeyQueryResponse;
 import com.alipay.api.AlipayObject;
@@ -11,9 +13,9 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.openbizmock.testpathkey.query request
  * 
  * @author auto create
- * @since 1.0, 2023-06-27 17:01:56
+ * @since 1.0, 2023-07-07 11:31:56
  */
-public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements AlipayRequest<AlipayOpenOperationOpenbizmockTestpathkeyQueryResponse> {
+public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements AlipayUploadRequest<AlipayOpenOperationOpenbizmockTestpathkeyQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
@@ -37,6 +39,16 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 	* 4
 	 */
 	private String d;
+
+	/** 
+	* 1
+	 */
+	private String e;
+
+	/** 
+	* 1
+	 */
+	private FileItem f;
 
 	/** 
 	* ceshi
@@ -71,6 +83,20 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 		return this.d;
 	}
 
+	public void setE(String e) {
+		this.e = e;
+	}
+	public String getE() {
+		return this.e;
+	}
+
+	public void setF(FileItem f) {
+		this.f = f;
+	}
+	public FileItem getF() {
+		return this.f;
+	}
+
 	public void setKeykey(String keykey) {
 		this.keykey = keykey;
 	}
@@ -78,11 +104,11 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 		return this.keykey;
 	}
 	private String terminalType;
-	private String terminalInfo;	
+	private String terminalInfo;
 	private String prodCode;
 	private String notifyUrl;
 	private String returnUrl;
-	private boolean needEncrypt=false;
+    private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
 	public String getNotifyUrl() {
@@ -104,7 +130,6 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
-
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
@@ -112,7 +137,7 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
-
+	
     public String getTerminalType(){
     	return this.terminalType;
     }
@@ -123,16 +148,16 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 
     public String getTerminalInfo(){
     	return this.terminalInfo;
-    }	
-
-	public void setProdCode(String prodCode) {
-		this.prodCode=prodCode;
-	}
-
+    }
+	
 	public String getProdCode() {
 		return this.prodCode; 
 	}
-
+	
+	public void setProdCode(String prodCode) {
+		this.prodCode=prodCode;
+	}
+    
 	public String getApiMethodName() {
 		return "alipay.open.operation.openbizmock.testpathkey.query";
 	}
@@ -143,13 +168,14 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 		txtParams.put("b", this.b);
 		txtParams.put("c", this.c);
 		txtParams.put("d", this.d);
+		txtParams.put("e", this.e);
 		txtParams.put("keykey", this.keykey);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
 		return txtParams;
 	}
-
+	
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -157,12 +183,17 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 		this.udfParams.put(key, value);
 	}
 
+	public Map<String, FileItem> getFileParams() {
+		Map<String, FileItem> params = new HashMap<String, FileItem>();
+		params.put("f", this.f);
+		return params;
+	}
+
 	public Class<AlipayOpenOperationOpenbizmockTestpathkeyQueryResponse> getResponseClass() {
 		return AlipayOpenOperationOpenbizmockTestpathkeyQueryResponse.class;
 	}
 	
-
-    public boolean isNeedEncrypt() {
+	 public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }

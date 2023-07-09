@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.unitedopencoupon.receive.trigger response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:41:55
+ * @since 1.0, 2023-07-05 16:39:39
  */
 public class AlipayMarketingCampaignUnitedopencouponReceiveTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8878561677911692188L;
+	private static final long serialVersionUID = 3657138734329633817L;
 
 	/** 
 	 * 用户支付宝登录号（脱敏）

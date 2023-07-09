@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFundWalletCardRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3548483245951323573L;
+	private static final long serialVersionUID = 6637751126772388694L;
 
 	/**
 	 * 卡号列表

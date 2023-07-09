@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape搜索接口
  *
  * @author auto create
- * @since 1.0, 2023-06-29 20:12:16
+ * @since 1.0, 2023-07-03 21:29:54
  */
 public class AlipayDigitalopUcdpApeitemsearchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3535734616692259363L;
+	private static final long serialVersionUID = 8861765512372362819L;
 
 	/**
 	 * ape搜索的上下文
@@ -24,6 +24,18 @@ public class AlipayDigitalopUcdpApeitemsearchQueryModel extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 页码
+	 */
+	@ApiField("page_num")
+	private Long pageNum;
+
+	/**
+	 * 每页的大小，取值范围是1~500。分页参数为空时默认返回最多500个item
+	 */
+	@ApiField("page_size")
+	private Long pageSize;
 
 	/**
 	 * 商家在蚂蚁推荐引擎创建的项目id，调用前需要找蚂蚁技术获取。
@@ -55,6 +67,20 @@ public class AlipayDigitalopUcdpApeitemsearchQueryModel extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public Long getPageNum() {
+		return this.pageNum;
+	}
+	public void setPageNum(Long pageNum) {
+		this.pageNum = pageNum;
+	}
+
+	public Long getPageSize() {
+		return this.pageSize;
+	}
+	public void setPageSize(Long pageSize) {
+		this.pageSize = pageSize;
 	}
 
 	public String getProjectId() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.miniappoffline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-14 12:16:56
+ * @since 1.0, 2023-07-06 12:31:54
  */
 public class AlipayDataMdaMiniappofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6769927631956899915L;
+	private static final long serialVersionUID = 3742682328229664731L;
 
 	/** 
 	 * 累计行程规划人数
@@ -31,6 +31,30 @@ public class AlipayDataMdaMiniappofflineQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("match_focus")
 	private String matchFocus;
+
+	/** 
+	 * 亚运PASS领码人数
+	 */
+	@ApiField("obtain_pass")
+	private Long obtainPass;
+
+	/** 
+	 * 亚运PASS持票出行人数
+	 */
+	@ApiField("pass_travel_user_cnt")
+	private Long passTravelUserCnt;
+
+	/** 
+	 * 亚运PASS持票出行人数分时图
+	 */
+	@ApiField("pass_travel_user_trend")
+	private String passTravelUserTrend;
+
+	/** 
+	 * 亚运PASS使用场景
+	 */
+	@ApiField("pass_use_scene")
+	private String passUseScene;
 
 	/** 
 	 * 票+服务
@@ -69,6 +93,34 @@ public class AlipayDataMdaMiniappofflineQueryResponse extends AlipayResponse {
 	}
 	public String getMatchFocus( ) {
 		return this.matchFocus;
+	}
+
+	public void setObtainPass(Long obtainPass) {
+		this.obtainPass = obtainPass;
+	}
+	public Long getObtainPass( ) {
+		return this.obtainPass;
+	}
+
+	public void setPassTravelUserCnt(Long passTravelUserCnt) {
+		this.passTravelUserCnt = passTravelUserCnt;
+	}
+	public Long getPassTravelUserCnt( ) {
+		return this.passTravelUserCnt;
+	}
+
+	public void setPassTravelUserTrend(String passTravelUserTrend) {
+		this.passTravelUserTrend = passTravelUserTrend;
+	}
+	public String getPassTravelUserTrend( ) {
+		return this.passTravelUserTrend;
+	}
+
+	public void setPassUseScene(String passUseScene) {
+		this.passUseScene = passUseScene;
+	}
+	public String getPassUseScene( ) {
+		return this.passUseScene;
 	}
 
 	public void setTicketService(String ticketService) {

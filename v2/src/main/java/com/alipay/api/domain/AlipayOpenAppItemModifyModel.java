@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品更新接口
  *
  * @author auto create
- * @since 1.0, 2023-06-20 21:50:17
+ * @since 1.0, 2023-07-04 21:10:50
  */
 public class AlipayOpenAppItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7124529628711583587L;
+	private static final long serialVersionUID = 3875546564274879479L;
 
 	/**
-	 * 商品参数，部分类目有平台定义的类目属性
+	 * 商品属性
 	 */
 	@ApiListField("attrs")
 	@ApiField("app_item_attr_v_o")
@@ -30,7 +30,7 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 	private String barcode;
 
 	/**
-	 * 平台类目，填写的类目必须在类目表列出，多级类目只填最后一级。商品类目 ID 及信息可通过<a href="https://opendocs.alipay.com/b/07847b">商品类目表</a>获取。
+	 * 平台类目，填写的类目必须在类目表列出，多级类目只填最后一级。商品类目 ID 及信息可通过<a href="https://opendocs.alipay.com/b/07847b">商品类目表</a>获取。仅叶子类目支持创建商品。
 	 */
 	@ApiField("category_id")
 	private String categoryId;
@@ -73,7 +73,7 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 商品原价，分为单位。若填写了skus[]数组，此字段不用填写。若未填写skus[]数组，此字段必填。
+	 * 商品原价，分为单位。若填写了skus[]数组，此字段不用填写。若未填写skus[]数组，此字段必填。如果填写，值必须大于0，且原价不能小于售价。
 	 */
 	@ApiField("original_price")
 	private Long originalPrice;
@@ -97,7 +97,7 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 	private String priceUnit;
 
 	/**
-	 * 商品售价，分为单位。若填写了skus[]数组，此字段不用填写。若未填写skus[]数组，此字段必填。
+	 * 商品售价，分为单位。若填写了skus[]数组，此字段不用填写。若未填写skus[]数组，此字段必填。如果填写，值必须要大于0。
 	 */
 	@ApiField("sale_price")
 	private Long salePrice;
@@ -120,7 +120,7 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 	private List<ItemSkuVO> skus;
 
 	/**
-	 * 若填写了skus[]数组，此字段不用填写。 若未填写skus[]数组，此字段选填。
+	 * 若填写了skus[]数组，此字段不用填写。 若未填写skus[]数组，此字段选填。目前支持库存区间为0-99999999。
 	 */
 	@ApiField("stock_num")
 	private Long stockNum;

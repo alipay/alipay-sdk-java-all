@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量生产IoT设备sn
  *
  * @author auto create
- * @since 1.0, 2021-01-28 19:39:35
+ * @since 1.0, 2023-07-05 14:52:39
  */
 public class AlipayCommerceIotSnCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8736638917897183394L;
+	private static final long serialVersionUID = 2362682553854294878L;
 
 	/**
 	 * 申请单描述信息

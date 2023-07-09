@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderVoucherMerchantAllShopModify extends AlipayObject {
 
-	private static final long serialVersionUID = 8592478417988236557L;
+	private static final long serialVersionUID = 6641854789562299655L;
 
 	/**
 	 * 券不可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。 接口参数是列表类型。

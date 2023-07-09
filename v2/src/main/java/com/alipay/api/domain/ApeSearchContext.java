@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape搜索的上下文
  *
  * @author auto create
- * @since 1.0, 2023-06-29 20:12:16
+ * @since 1.0, 2023-07-03 21:29:54
  */
 public class ApeSearchContext extends AlipayObject {
 
-	private static final long serialVersionUID = 6817312289776213562L;
+	private static final long serialVersionUID = 5766443142228993892L;
 
 	/**
 	 * 用户当前城市编码
@@ -60,9 +60,10 @@ public class ApeSearchContext extends AlipayObject {
 	private String longitude;
 
 	/**
-	 * 召回个数
+	 * 召回个数 当前字段已废弃(接口有另外定义，不在需要此处定义)
 	 */
 	@ApiField("size")
+	@Deprecated
 	private Long size;
 
 	/**
@@ -72,9 +73,10 @@ public class ApeSearchContext extends AlipayObject {
 	private String sortType;
 
 	/**
-	 * 召回起始位置
+	 * 召回起始位置( 当前字段已废弃(接口有另外定义，不在需要此处定义)
 	 */
 	@ApiField("start_index")
+	@Deprecated
 	private Long startIndex;
 
 	public String getCityCode() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMarketingDataShopCategoryGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6271615336716857218L;
+	private static final long serialVersionUID = 5873982546622865242L;
 
 	/**
 	 * 该参数标识需要返回几个分类，多余的分类将会放于other字段中，最大值传入50，默认值10

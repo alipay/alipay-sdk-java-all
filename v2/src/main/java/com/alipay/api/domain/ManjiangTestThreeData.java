@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于测试三层的复杂结构
  *
  * @author auto create
- * @since 1.0, 2023-06-28 15:05:00
+ * @since 1.0, 2023-07-05 00:30:55
  */
 public class ManjiangTestThreeData extends AlipayObject {
 
-	private static final long serialVersionUID = 7336496333616978929L;
+	private static final long serialVersionUID = 6373265629799622332L;
+
+	/**
+	 * 1
+	 */
+	@ApiField("new_field")
+	private String newField;
 
 	/**
 	 * 2
@@ -30,6 +36,13 @@ public class ManjiangTestThreeData extends AlipayObject {
 	 */
 	@ApiField("test_level_three")
 	private String testLevelThree;
+
+	public String getNewField() {
+		return this.newField;
+	}
+	public void setNewField(String newField) {
+		this.newField = newField;
+	}
 
 	public ManjiangTestLevelTwoData getTestComplex() {
 		return this.testComplex;

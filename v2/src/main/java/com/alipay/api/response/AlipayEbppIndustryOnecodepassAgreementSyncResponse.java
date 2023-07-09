@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.onecodepass.agreement.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-26 14:44:12
+ * @since 1.0, 2023-07-04 13:51:52
  */
 public class AlipayEbppIndustryOnecodepassAgreementSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1575563257691662653L;
+	private static final long serialVersionUID = 6365619623469928751L;
 
 	
 

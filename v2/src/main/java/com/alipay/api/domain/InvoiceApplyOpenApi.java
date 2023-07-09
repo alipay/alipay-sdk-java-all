@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票受理单据
  *
  * @author auto create
- * @since 1.0, 2023-05-22 13:55:04
+ * @since 1.0, 2023-07-04 13:53:53
  */
 public class InvoiceApplyOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 2749666264855988767L;
+	private static final long serialVersionUID = 3835286432743947548L;
 
 	/**
 	 * 金额
@@ -44,7 +44,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	private String instId;
 
 	/**
-	 * 开票年月 yyyyMM
+	 * 外部指定的展示在票面的开票时间 格式为yyyyMMdd
+	 */
+	@ApiField("inv_dt")
+	private String invDt;
+
+	/**
+	 * 开票时间、账单月 格式为yyyyMM
 	 */
 	@ApiField("invoice_date")
 	private String invoiceDate;
@@ -66,6 +72,12 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	 */
 	@ApiField("invoice_specification")
 	private String invoiceSpecification;
+
+	/**
+	 * 开票类型
+	 */
+	@ApiField("invoice_type")
+	private String invoiceType;
 
 	/**
 	 * 商户MID
@@ -174,6 +186,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 		this.instId = instId;
 	}
 
+	public String getInvDt() {
+		return this.invDt;
+	}
+	public void setInvDt(String invDt) {
+		this.invDt = invDt;
+	}
+
 	public String getInvoiceDate() {
 		return this.invoiceDate;
 	}
@@ -200,6 +219,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	}
 	public void setInvoiceSpecification(String invoiceSpecification) {
 		this.invoiceSpecification = invoiceSpecification;
+	}
+
+	public String getInvoiceType() {
+		return this.invoiceType;
+	}
+	public void setInvoiceType(String invoiceType) {
+		this.invoiceType = invoiceType;
 	}
 
 	public String getIpId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * wifi配网结果轮询
  *
  * @author auto create
- * @since 1.0, 2019-06-20 21:52:47
+ * @since 1.0, 2023-07-05 14:50:22
  */
 public class AlipayCommerceIotWifiResultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7781793777587257576L;
+	private static final long serialVersionUID = 8493696682639479812L;
 
 	/**
 	 * 设备唯一标识，设备id

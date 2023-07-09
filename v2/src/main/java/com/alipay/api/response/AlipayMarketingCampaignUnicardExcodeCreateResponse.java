@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignUnicardExcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4396771713833248972L;
+	private static final long serialVersionUID = 8779921574619384656L;
 
 	/** 
 	 * 城市码，具体的城市码与城市的映射关系需要联系支付宝研发人员确定，可能与公开数据有所出入。

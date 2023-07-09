@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.serviceorder.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-30 12:01:51
+ * @since 1.0, 2023-07-07 11:01:54
  */
 public class AlipayOpenSearchServiceorderBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3691482157459357116L;
+	private static final long serialVersionUID = 5555527782817799337L;
 
 	/** 
 	 * 申请单列表

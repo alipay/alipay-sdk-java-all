@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财账单受理模型
  *
  * @author auto create
- * @since 1.0, 2023-06-02 16:38:43
+ * @since 1.0, 2023-07-09 19:30:10
  */
 public class GFAOpenAPIBillAcceptance extends AlipayObject {
 
-	private static final long serialVersionUID = 4772732492166173483L;
+	private static final long serialVersionUID = 1388152866718672994L;
+
+	/**
+	 * 受理幂等字段，唯一标识一笔报帐单据。当收到两笔相同的acceptUniqueNo时，第二笔会被当作是重复报送不作处理。因此对于同一笔交易在不同阶段（比如订单创建、确认收货、退款等）触发的不同财务事件，也应该采用不同的acceptUniqueNo
+	 */
+	@ApiField("accept_uniq_no")
+	private String acceptUniqNo;
 
 	/**
 	 * 摊销扩展信息
@@ -86,6 +92,12 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	 */
 	@ApiField("gmt_service")
 	private Date gmtService;
+
+	/**
+	 * 高精度账单金额（单位：各币种的“元”单位）
+	 */
+	@ApiField("high_precision_bill_amount")
+	private String highPrecisionBillAmount;
 
 	/**
 	 * 业务系统未收付金额（单位：各币种的“元”单位，精确到小数点后两位）
@@ -195,6 +207,13 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	@ApiField("tnt_inst_id")
 	private String tntInstId;
 
+	public String getAcceptUniqNo() {
+		return this.acceptUniqNo;
+	}
+	public void setAcceptUniqNo(String acceptUniqNo) {
+		this.acceptUniqNo = acceptUniqNo;
+	}
+
 	public GFAOpenAPIAmortizeExtInfo getAmortizeExtInfo() {
 		return this.amortizeExtInfo;
 	}
@@ -277,6 +296,13 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	}
 	public void setGmtService(Date gmtService) {
 		this.gmtService = gmtService;
+	}
+
+	public String getHighPrecisionBillAmount() {
+		return this.highPrecisionBillAmount;
+	}
+	public void setHighPrecisionBillAmount(String highPrecisionBillAmount) {
+		this.highPrecisionBillAmount = highPrecisionBillAmount;
 	}
 
 	public String getNonpaymentAmount() {

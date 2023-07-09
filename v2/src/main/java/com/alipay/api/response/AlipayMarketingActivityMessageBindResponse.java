@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.message.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:41:55
+ * @since 1.0, 2023-07-03 15:46:49
  */
 public class AlipayMarketingActivityMessageBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8252337564171133865L;
+	private static final long serialVersionUID = 6512224728168968314L;
 
 	/** 
 	 * 活动id

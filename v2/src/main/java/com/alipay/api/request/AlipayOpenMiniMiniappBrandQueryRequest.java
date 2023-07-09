@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.miniapp.brand.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 11:51:17
+ * @since 1.0, 2023-07-07 10:26:07
  */
 public class AlipayOpenMiniMiniappBrandQueryRequest implements AlipayRequest<AlipayOpenMiniMiniappBrandQueryResponse> {
 

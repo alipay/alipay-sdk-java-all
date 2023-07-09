@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.enterpriseconsume.openrulerelation.create request
  * 
  * @author auto create
- * @since 1.0, 2023-06-15 17:04:29
+ * @since 1.0, 2023-07-03 13:41:58
  */
 public class AlipayEbppInvoiceEnterpriseconsumeOpenrulerelationCreateRequest implements AlipayRequest<AlipayEbppInvoiceEnterpriseconsumeOpenrulerelationCreateResponse> {
 

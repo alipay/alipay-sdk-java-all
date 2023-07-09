@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.taskagreement.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-20 14:31:59
+ * @since 1.0, 2023-07-06 14:41:56
  */
 public class AlipayCommerceCommonTaskagreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7248675554937426162L;
+	private static final long serialVersionUID = 1289181424476339289L;
 
 	/** 
 	 * // 响应为表单格式，可嵌入页面，具体以返回的结果为准

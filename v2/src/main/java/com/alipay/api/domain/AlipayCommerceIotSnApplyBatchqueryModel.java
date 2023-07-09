@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询历史sn生成操作
  *
  * @author auto create
- * @since 1.0, 2020-01-08 15:04:53
+ * @since 1.0, 2023-07-05 14:51:34
  */
 public class AlipayCommerceIotSnApplyBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2182919541793363195L;
+	private static final long serialVersionUID = 7489322774396818289L;
 
 	/**
 	 * 每页数量，最多100

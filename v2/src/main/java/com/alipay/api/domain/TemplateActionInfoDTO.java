@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡行动点配置
  *
  * @author auto create
- * @since 1.0, 2023-06-28 17:00:29
+ * @since 1.0, 2023-07-03 13:55:01
  */
 public class TemplateActionInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4767448535568253646L;
+	private static final long serialVersionUID = 6879716567179351225L;
 
 	/**
 	 * 行动点业务CODE，商户自定义

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCplifeBillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6399713593131113442L;
+	private static final long serialVersionUID = 5255369891249254624L;
 
 	/**
 	 * 待同步的物业费账单应收明细条目ID

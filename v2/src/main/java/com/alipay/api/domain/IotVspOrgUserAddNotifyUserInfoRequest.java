@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通知机构用户入库请求对象
  *
  * @author auto create
- * @since 1.0, 2022-04-11 09:52:41
+ * @since 1.0, 2023-07-06 16:50:02
  */
 public class IotVspOrgUserAddNotifyUserInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7468497685795823892L;
+	private static final long serialVersionUID = 4547989892566838228L;
+
+	/**
+	 * 授权码
+	 */
+	@ApiField("auth_code")
+	private String authCode;
+
+	/**
+	 * 扩展信息，ISV自定义，如无可为空
+	 */
+	@ApiField("ext")
+	private String ext;
 
 	/**
 	 * 返回状态描述
@@ -30,6 +42,20 @@ public class IotVspOrgUserAddNotifyUserInfoRequest extends AlipayObject {
 	 */
 	@ApiField("vid")
 	private String vid;
+
+	public String getAuthCode() {
+		return this.authCode;
+	}
+	public void setAuthCode(String authCode) {
+		this.authCode = authCode;
+	}
+
+	public String getExt() {
+		return this.ext;
+	}
+	public void setExt(String ext) {
+		this.ext = ext;
+	}
 
 	public String getMsg() {
 		return this.msg;

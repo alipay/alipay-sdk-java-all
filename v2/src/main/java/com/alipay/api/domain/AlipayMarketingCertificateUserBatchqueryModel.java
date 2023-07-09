@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条件查询用户凭证
  *
  * @author auto create
- * @since 1.0, 2023-06-05 14:11:07
+ * @since 1.0, 2023-07-05 22:59:16
  */
 public class AlipayMarketingCertificateUserBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6393879569641537237L;
+	private static final long serialVersionUID = 6639881817737561197L;
 
 	/**
 	 * 凭证归属的商户id。该参数为空时取当前请求商户id
@@ -38,7 +38,13 @@ public class AlipayMarketingCertificateUserBatchqueryModel extends AlipayObject 
 	private Long pageSize;
 
 	/**
-	 * 出资的支付宝用户id 限制: 1、登录账号和用户ID必须且只能二选一
+	 * 支付宝的门店id，用于判断凭证是否可在此门店进行核销。
+	 */
+	@ApiField("shop_id")
+	private String shopId;
+
+	/**
+	 * 出资的支付宝用户id
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -69,6 +75,13 @@ public class AlipayMarketingCertificateUserBatchqueryModel extends AlipayObject 
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 	public String getUserId() {

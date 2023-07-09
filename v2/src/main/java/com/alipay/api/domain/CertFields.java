@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CertFields extends AlipayObject {
 
-	private static final long serialVersionUID = 3354528364487748946L;
+	private static final long serialVersionUID = 6155258129312613294L;
 
 	/**
 	 * 地址

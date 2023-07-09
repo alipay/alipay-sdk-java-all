@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.boxactivity.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-12 16:19:58
+ * @since 1.0, 2023-07-07 10:26:57
  */
 public class AlipayOpenSearchBoxactivityApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1765656143454179447L;
+	private static final long serialVersionUID = 3732195592148848916L;
 
 	/** 
 	 * 搜索直达活动ID

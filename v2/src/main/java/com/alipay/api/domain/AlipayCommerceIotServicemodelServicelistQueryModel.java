@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询商户下的设备服务列表
  *
  * @author auto create
- * @since 1.0, 2021-04-09 15:07:12
+ * @since 1.0, 2023-07-05 14:49:44
  */
 public class AlipayCommerceIotServicemodelServicelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3344414327325829338L;
+	private static final long serialVersionUID = 6789335434827624543L;
 
 	/**
 	 * 服务的类型，如播报服务（service_voice），打印服务（service_print）
