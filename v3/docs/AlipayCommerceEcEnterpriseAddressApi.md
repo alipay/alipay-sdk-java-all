@@ -182,10 +182,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayCommerceEcEnterpriseAddressApi apiInstance = new AlipayCommerceEcEnterpriseAddressApi(defaultClient);
-    String enterpriseId = "208890399440"; // String | 企业id和account_id二选一
-    String accountId = "2088483784949"; // String | 共同账户id和enterprise_id二选一
-    String agreementNo = "23893293203"; // String | 协议号，如果填共同账户id，则该字段必填
-    String addressId = "190309300303"; // String | 地址id
+    String enterpriseId = "2088501312695783"; // String | 通过企业码2.0签约接口签约，只填写企业id，无需填写共同账户id和授权签约协议号。
+    String accountId = "2088501312612345"; // String | 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。
+    String agreementNo = "20215425001181407500"; // String | 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。
+    String addressId = "1903501312695783"; // String | 地址id
     String cityCode = "310023"; // String | 市
     Integer pageNum = 1; // Integer | 页码从1开始
     Integer pageSize = 20; // Integer | 每页数据
@@ -207,9 +207,9 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **enterpriseId** | **String**| 企业id和account_id二选一 | [optional] |
-| **accountId** | **String**| 共同账户id和enterprise_id二选一 | [optional] |
-| **agreementNo** | **String**| 协议号，如果填共同账户id，则该字段必填 | [optional] |
+| **enterpriseId** | **String**| 通过企业码2.0签约接口签约，只填写企业id，无需填写共同账户id和授权签约协议号。 | [optional] |
+| **accountId** | **String**| 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。 | [optional] |
+| **agreementNo** | **String**| 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。 | [optional] |
 | **addressId** | **String**| 地址id | [optional] |
 | **cityCode** | **String**| 市 | [optional] |
 | **pageNum** | **Integer**| 页码从1开始 | [optional] |

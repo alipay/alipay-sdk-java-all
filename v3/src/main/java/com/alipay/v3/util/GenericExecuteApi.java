@@ -179,8 +179,11 @@ public class GenericExecuteApi {
     private okhttp3.Call executeCall(String path, String method, OpenApiGenericRequest openApiGenericRequest) throws ApiException {
         boolean isFileUpload = openApiGenericRequest.getFileParams() != null && openApiGenericRequest.getFileParams().size() > 0;
 
+        if (openApiGenericRequest.getBodyParams() == null) {
+            openApiGenericRequest.setBodyParams(openApiGenericRequest.getBizParams());
+        }
         Object localVarPostBody = isFileUpload || "GET".equalsIgnoreCase(method) || "HEAD".equalsIgnoreCase(method)
-                ? null : openApiGenericRequest.getBizParams();
+                ? null : openApiGenericRequest.getBodyParams();
 
         String localVarPath = path;
         if (openApiGenericRequest.getPathParams() != null && openApiGenericRequest.getPathParams().size() > 0) {
@@ -203,8 +206,8 @@ public class GenericExecuteApi {
         }
 
         if (isFileUpload) {
-            if (openApiGenericRequest.getBizParams() != null) {
-                localVarFormParams.put("data", openApiGenericRequest.getBizParams());
+            if (openApiGenericRequest.getBodyParams() != null) {
+                localVarFormParams.put("data", openApiGenericRequest.getBodyParams());
             }
 
             localVarFormParams.putAll(openApiGenericRequest.getFileParams());

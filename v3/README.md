@@ -1,7 +1,7 @@
 # alipay-sdk-java-v3
 
 支付宝开放平台API
-- API version: 2023-06-06
+- API version: 2023-07-17
 
 支付宝开放平台v3协议文档
 
@@ -40,7 +40,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.alipay.sdk</groupId>
   <artifactId>alipay-sdk-java-v3</artifactId>
-  <version>2.5.0.ALL</version>
+  <version>2.6.0.ALL</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -56,7 +56,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.5.0.ALL"
+     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.6.0.ALL"
   }
 ```
 
@@ -70,7 +70,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/alipay-sdk-java-v3-2.5.0.ALL.jar`
+* `target/alipay-sdk-java-v3-2.6.0.ALL.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -84,7 +84,7 @@ import com.alipay.v3.ApiClient;
 import com.alipay.v3.ApiException;
 import com.alipay.v3.Configuration;
 import com.alipay.v3.util.*;
-import com.alipay.v3.api.models.*;
+import com.alipay.v3.models.*;
 import com.alipay.v3.api.AlipayTradeApi;
 
 public class Example {
@@ -896,7 +896,6 @@ Class | Method | HTTP request | Description
 *KoubeiMarketingCampaignItemMerchantactivityApi* | [**create**](docs/KoubeiMarketingCampaignItemMerchantactivityApi.md#create) | **POST** /v3/koubei/marketing/campaign/item/merchantactivity/create | 商户创建商品代金券
 *KoubeiMarketingCampaignItemMerchantactivityApi* | [**modify**](docs/KoubeiMarketingCampaignItemMerchantactivityApi.md#modify) | **POST** /v3/koubei/marketing/campaign/item/merchantactivity/modify | 商户修改商品代金券
 *KoubeiMarketingCampaignItemMerchantactivityApi* | [**query**](docs/KoubeiMarketingCampaignItemMerchantactivityApi.md#query) | **GET** /v3/koubei/marketing/campaign/item/merchantactivity/query | 商户查询商品代金券详情
-*KoubeiMemberDataIsvApi* | [**create**](docs/KoubeiMemberDataIsvApi.md#create) | **POST** /v3/koubei/member/data/isv/create | isv 会员CRM数据回流
 *KoubeiTradeOrderApi* | [**consult**](docs/KoubeiTradeOrderApi.md#consult) | **POST** /v3/koubei/trade/order/consult | 口碑订单预咨询
 *MonitorHeartbeatApi* | [**syn**](docs/MonitorHeartbeatApi.md#syn) | **POST** /v3/monitor/heartbeat/syn | 验签接口
 *ZhimaCreditPayafteruseCreditagreementApi* | [**query**](docs/ZhimaCreditPayafteruseCreditagreementApi.md#query) | **GET** /v3/zhima/credit/payafteruse/creditagreement/query | 查询服务开通/授权信息

@@ -193,7 +193,7 @@ public class Example {
 
     AlipayMarketingActivityOrdervoucherApi apiInstance = new AlipayMarketingActivityOrdervoucherApi(defaultClient);
     String activityId = "2016042700826004508401111111"; // String | 活动id
-    String merchantAccessMode = "SELF_MODE"; // String | 商户接入模式  枚举值 SELF_MODE 商户自接入模式 AGENCY_MODE 服务商代接入模式
+    String merchantAccessMode = "SELF_MODE"; // String | 商户接入模式
     try {
       AlipayMarketingActivityOrdervoucherCodecountResponseModel result = apiInstance.codecount(activityId, merchantAccessMode);
       System.out.println(result);
@@ -213,7 +213,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **activityId** | **String**| 活动id | |
-| **merchantAccessMode** | **String**| 商户接入模式  枚举值 SELF_MODE 商户自接入模式 AGENCY_MODE 服务商代接入模式 | [optional] |
+| **merchantAccessMode** | **String**| 商户接入模式 | [optional] |
 
 ### Return type
 

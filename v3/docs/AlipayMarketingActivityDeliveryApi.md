@@ -15,7 +15,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 创建推广计划
 
-创建推广计划将内容推广到指定展位，用户可在指定展位领取推广内容。 不同展位支持的推广内容、推广规则、推广玩法、推广配置可能存在差异，使用时请仔细阅读接口说明文档。 创建推广成功后，请依据推广变更消息alipay.marketing.activity.delivery.message感知推广变更状态。
+为商家提供推广内容能力。创建推广成功后，请依据推广变更消息alipay.marketing.activity.delivery.message感知推广变更状态。
 
 ### Example
 ```java

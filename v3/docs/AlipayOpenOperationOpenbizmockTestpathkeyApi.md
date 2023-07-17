@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel query(keykey, a, b, c, alipayOpenOperationOpenbizmockTestpathkeyQueryModel)
+> AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel query(keykey, a, b, c, data, f)
 
 测试网关协议3.0key和path
 
@@ -42,9 +42,10 @@ public class Example {
     String a = "a"; // String | 测试
     String b = "b"; // String | ceshi
     String c = "c"; // String | 测试
-    AlipayOpenOperationOpenbizmockTestpathkeyQueryModel alipayOpenOperationOpenbizmockTestpathkeyQueryModel = new AlipayOpenOperationOpenbizmockTestpathkeyQueryModel(); // AlipayOpenOperationOpenbizmockTestpathkeyQueryModel | 
+    AlipayOpenOperationOpenbizmockTestpathkeyQueryModel data = new AlipayOpenOperationOpenbizmockTestpathkeyQueryModel(); // AlipayOpenOperationOpenbizmockTestpathkeyQueryModel | 
+    File f = new File("/path/to/file"); // File | 
     try {
-      AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel result = apiInstance.query(keykey, a, b, c, alipayOpenOperationOpenbizmockTestpathkeyQueryModel);
+      AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel result = apiInstance.query(keykey, a, b, c, data, f);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenOperationOpenbizmockTestpathkeyApi#query");
@@ -65,7 +66,8 @@ public class Example {
 | **a** | **String**| 测试 | |
 | **b** | **String**| ceshi | [optional] |
 | **c** | **String**| 测试 | [optional] |
-| **alipayOpenOperationOpenbizmockTestpathkeyQueryModel** | **AlipayOpenOperationOpenbizmockTestpathkeyQueryModel**|  | [optional] |
+| **data** | **AlipayOpenOperationOpenbizmockTestpathkeyQueryModel**|  | [optional] |
+| **f** | **File**|  | [optional] |
 
 ### Return type
 
@@ -77,7 +79,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 ### HTTP response details

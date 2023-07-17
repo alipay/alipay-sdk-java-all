@@ -254,10 +254,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi apiInstance = new AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi(defaultClient);
-    String accountId = "2088xxxxxx"; // String | 共同账户id，与enterprise_id两者必填其一
-    String enterpriseId = "2088xxxxxx"; // String | 企业id，与account_id两者必填其一
-    String agreementNo = "9900000000000"; // String | 授权签约协议号
-    String titleId = "****"; // String | 抬头ID
+    String accountId = "2088000194958956"; // String | 企业共同账户id
+    String enterpriseId = "2088123412341234"; // String | 企业id
+    String agreementNo = "20215425001181407500"; // String | 授权签约协议号
+    String titleId = "2022110200152710030000000003"; // String | 抬头ID
     try {
       AlipayEbppInvoiceEnterpriseexctrlEmployertitleQueryResponseModel result = apiInstance.query(accountId, enterpriseId, agreementNo, titleId);
       System.out.println(result);
@@ -276,8 +276,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **accountId** | **String**| 共同账户id，与enterprise_id两者必填其一 | [optional] |
-| **enterpriseId** | **String**| 企业id，与account_id两者必填其一 | [optional] |
+| **accountId** | **String**| 企业共同账户id | [optional] |
+| **enterpriseId** | **String**| 企业id | [optional] |
 | **agreementNo** | **String**| 授权签约协议号 | [optional] |
 | **titleId** | **String**| 抬头ID | [optional] |
 

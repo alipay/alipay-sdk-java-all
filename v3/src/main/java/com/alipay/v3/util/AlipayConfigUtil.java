@@ -112,9 +112,9 @@ public class AlipayConfigUtil {
      * @param headerParams    header
      */
     public void sign(String httpMethod, String httpRequestUri, String httpRequestBody, Map<String, String> headerParams) throws ApiException {
-        if (Strings.isNullOrEmpty(this.privateKey)) {
+        /*if (Strings.isNullOrEmpty(this.privateKey)) {
             throw new ApiException("私钥[privateKey]不可为空");
-        }
+        }*/
         String appAuthToken = headerParams.get("alipay-app-auth-token");
         String nonce = UUID.randomUUID().toString();
         String timestamp = String.valueOf(System.currentTimeMillis());
@@ -127,8 +127,12 @@ public class AlipayConfigUtil {
                 + httpRequestUri + "\n"
                 + (Strings.isNullOrEmpty(httpRequestBody) ? "" : httpRequestBody) + "\n"
                 + (Strings.isNullOrEmpty(appAuthToken) ? "" : appAuthToken + "\n");
-        headerParams.put("Authorization", ALIPAY_SHA_256_WITH_RSA + " " + authString
-                + ",sign=" + generateSign(content));
+        if (Strings.isNullOrEmpty(this.privateKey)) {
+            headerParams.put("Authorization", ALIPAY_SHA_256_WITH_RSA + " " + authString);
+        } else {
+            headerParams.put("Authorization", ALIPAY_SHA_256_WITH_RSA + " " + authString
+                    + ",sign=" + generateSign(content));
+        }
         if (!Strings.isNullOrEmpty(this.rootCertSN)) {
             headerParams.put("alipay-root-cert-sn", this.rootCertSN);
         }
@@ -167,6 +171,9 @@ public class AlipayConfigUtil {
             alipayPublicKey = getAlipayPublicKey(alipayCertSN);
         }
         if (Strings.isNullOrEmpty(alipayPublicKey)) {
+            if (Strings.isNullOrEmpty(this.privateKey)) {
+                return true;
+            }
             throw new ApiException("公钥不可为空");
         }
 //        if (Strings.isNullOrEmpty(content)) {

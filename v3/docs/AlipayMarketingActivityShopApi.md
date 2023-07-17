@@ -43,7 +43,7 @@ public class Example {
     Integer pageNum = 1; // Integer | 分页查询页码。  限制:  必须为大于0的整数
     Integer pageSize = 20; // Integer | 分页查询单页数据条数。  限制:  1.必须为大于0的整数  2.每页最大值为20
     String productVersion = "2.0.0"; // String | 版本号  枚举值: 2.0.0
-    String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式  枚举值 SELF_MODE 商户自接入模式 AGENCY_MODE 服务商代接入模式
+    String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式
     try {
       AlipayMarketingActivityShopBatchqueryResponseModel result = apiInstance.batchquery(activityId, merchantId, pageNum, pageSize, productVersion, merchantAccessMode);
       System.out.println(result);
@@ -67,7 +67,7 @@ public class Example {
 | **pageNum** | **Integer**| 分页查询页码。  限制:  必须为大于0的整数 | [optional] |
 | **pageSize** | **Integer**| 分页查询单页数据条数。  限制:  1.必须为大于0的整数  2.每页最大值为20 | [optional] |
 | **productVersion** | **String**| 版本号  枚举值: 2.0.0 | [optional] |
-| **merchantAccessMode** | **String**| 商户接入模式  枚举值 SELF_MODE 商户自接入模式 AGENCY_MODE 服务商代接入模式 | [optional] |
+| **merchantAccessMode** | **String**| 商户接入模式 | [optional] |
 
 ### Return type
 

@@ -28,7 +28,12 @@ public class OpenApiGenericRequest {
     private Map<String, Object> queryParams;
 
     /**
-     * 业务参数
+     * body参数
+     */
+    private Map<String, Object> bodyParams;
+
+    /**
+     * 业务参数（废弃，请使用 bodyParams）
      */
     private Map<String, Object> bizParams;
 
@@ -97,6 +102,24 @@ public class OpenApiGenericRequest {
     }
 
     /**
+     * Getter method for property <tt>bodyParams</tt>.
+     *
+     * @return property value of bodyParams
+     */
+    public Map<String, Object> getBodyParams() {
+        return bodyParams;
+    }
+
+    /**
+     * Setter method for property <tt>bodyParams</tt>.
+     *
+     * @param bodyParams value to be assigned to property bodyParams
+     */
+    public void setBodyParams(Map<String, Object> bodyParams) {
+        this.bodyParams = bodyParams;
+    }
+
+    /**
      * Getter method for property <tt>bizParams</tt>.
      *
      * @return property value of bizParams
@@ -110,6 +133,7 @@ public class OpenApiGenericRequest {
      *
      * @param bizParams value to be assigned to property bizParams
      */
+    @Deprecated
     public void setBizParams(Map<String, Object> bizParams) {
         this.bizParams = bizParams;
     }
