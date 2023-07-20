@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillFreezebalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5765118468975668158L;
+	private static final long serialVersionUID = 8549715348493611444L;
 
 	/**
 	 * 目标查询用户uid

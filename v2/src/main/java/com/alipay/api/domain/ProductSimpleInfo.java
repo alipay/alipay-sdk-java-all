@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ProductSimpleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1243476376697534825L;
+	private static final long serialVersionUID = 7623183188874294968L;
 
 	/**
 	 * 商品规格名称。可以是场地名称（比如羽毛球场地1）。当产品类型为日历型或者日历型票券时必填。

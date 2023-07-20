@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FenceEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 1367941337771862561L;
+	private static final long serialVersionUID = 5843786549963324244L;
 
 	/**
 	 * 语音事件列表. 可以是多条语音. 进入围栏后,会依次触发列表中的语音播报, 适合于既有营销语音,又有到站语音的场景

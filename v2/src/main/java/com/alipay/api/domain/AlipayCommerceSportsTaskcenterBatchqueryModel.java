@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceSportsTaskcenterBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5321823424761675848L;
+	private static final long serialVersionUID = 5254812922656779964L;
 
 	/**
 	 * SPORTS_CENTER(文体中心),

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaxiOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6652819111479562311L;
+	private static final long serialVersionUID = 3823784358461298312L;
 
 	/**
 	 * 出租车外部订单号

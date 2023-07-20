@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAlipaypointSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5747487858271468299L;
+	private static final long serialVersionUID = 8131949558827568336L;
 
 	/**
 	 * 签约商户的集分宝的预算库，扣除此预算库的集分宝发放给用户。会校验budgetcode和业务方appId的签约商户pid的关联关系，若无关则发放失败。
