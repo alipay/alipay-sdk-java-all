@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ai open search搜索接口
  *
  * @author auto create
- * @since 1.0, 2022-12-13 15:09:49
+ * @since 1.0, 2023-07-19 14:11:56
  */
 public class AlipayOpenMiniCloudAositemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3242396824498135733L;
+	private static final long serialVersionUID = 7426192436586292172L;
 
 	/**
 	 * 需要进行聚合返回的字段，如需要对搜索的结果的发货地字段进行聚合，则将发货地对应的字段名称传给后段既可

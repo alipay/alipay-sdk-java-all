@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收益分配结算单核销
  *
  * @author auto create
- * @since 1.0, 2023-06-28 19:29:52
+ * @since 1.0, 2023-07-18 22:13:16
  */
 public class AnttechBlockchainFinanceIncomeStatementVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2357465657746942512L;
+	private static final long serialVersionUID = 2215287172654944394L;
 
 	/**
 	 * 核销流水号，幂等ID

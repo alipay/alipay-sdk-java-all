@@ -1,0 +1,114 @@
+package com.alipay.api.domain;
+
+import java.util.Date;
+import java.util.List;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+
+/**
+ * wzw公有complex
+ *
+ * @author auto create
+ * @since 1.0, 2023-07-17 20:33:40
+ */
+public class PublicComplex extends AlipayObject {
+
+	private static final long serialVersionUID = 4317881587459587871L;
+
+	/**
+	 * 1test
+	 */
+	@ApiListField("test_boolean")
+	@ApiField("boolean")
+	private List<Boolean> testBoolean;
+
+	/**
+	 * test
+	 */
+	@ApiField("test_date")
+	private Date testDate;
+
+	/**
+	 * test
+	 */
+	@ApiListField("test_number")
+	@ApiField("number")
+	private List<Long> testNumber;
+
+	/**
+	 * test
+	 */
+	@ApiListField("test_price")
+	@ApiField("price")
+	private List<String> testPrice;
+
+	/**
+	 * test
+	 */
+	@ApiField("test_string")
+	private String testString;
+
+	/**
+	 * test
+	 */
+	@ApiField("test_string_open_id")
+	private String testStringOpenId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("update_test")
+	private String updateTest;
+
+	public List<Boolean> getTestBoolean() {
+		return this.testBoolean;
+	}
+	public void setTestBoolean(List<Boolean> testBoolean) {
+		this.testBoolean = testBoolean;
+	}
+
+	public Date getTestDate() {
+		return this.testDate;
+	}
+	public void setTestDate(Date testDate) {
+		this.testDate = testDate;
+	}
+
+	public List<Long> getTestNumber() {
+		return this.testNumber;
+	}
+	public void setTestNumber(List<Long> testNumber) {
+		this.testNumber = testNumber;
+	}
+
+	public List<String> getTestPrice() {
+		return this.testPrice;
+	}
+	public void setTestPrice(List<String> testPrice) {
+		this.testPrice = testPrice;
+	}
+
+	public String getTestString() {
+		return this.testString;
+	}
+	public void setTestString(String testString) {
+		this.testString = testString;
+	}
+
+	public String getTestStringOpenId() {
+		return this.testStringOpenId;
+	}
+	public void setTestStringOpenId(String testStringOpenId) {
+		this.testStringOpenId = testStringOpenId;
+	}
+
+	public String getUpdateTest() {
+		return this.updateTest;
+	}
+	public void setUpdateTest(String updateTest) {
+		this.updateTest = updateTest;
+	}
+
+}

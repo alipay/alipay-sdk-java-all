@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算条款信息
  *
  * @author auto create
- * @since 1.0, 2020-04-21 19:49:56
+ * @since 1.0, 2023-07-20 17:03:36
  */
 public class SettleClause extends AlipayObject {
 
-	private static final long serialVersionUID = 8259637121912248353L;
+	private static final long serialVersionUID = 1449436217389827255L;
 
 	/**
 	 * 结算金额，单位为元
@@ -43,8 +43,8 @@ store 门店的结算账号
 	private String settleAccountId;
 
 	/**
-	 * 结算账户id类型。 
-当settle_account_type 为bankCard时，本参数为cardSerialNo，表示结算账户id是银行卡编号; 当settle_account_type 为alipayBalance时，本参数为userId或者loginName，其中userId表示结算账户id是支付宝唯一用户号，loginName表示结算账户id是支付宝登录号; 当 settle_account_type 为 defaultSettle 时，本参数必须为空
+	 * 结算账户id类型。当 settle_account_type 为 defaultSettle 时，本参数必须为空。 
+当settle_account_type 为bankCard时，本参数为cardSerialNo，表示结算账户id是银行卡编号; 当settle_account_type 为alipayBalance时，本参数为userId或者loginName，其中userId表示结算账户id是支付宝唯一用户号，loginName表示结算账户id是支付宝登录号。
 	 */
 	@ApiField("settle_account_id_type")
 	private String settleAccountIdType;

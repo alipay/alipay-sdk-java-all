@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isportal.permissioncheck.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:41:52
+ * @since 1.0, 2023-07-10 10:04:54
  */
 public class AlipayIserviceIsportalPermissioncheckQueryRequest implements AlipayRequest<AlipayIserviceIsportalPermissioncheckQueryResponse> {
 

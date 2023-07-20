@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KdsPrinterModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6629991743642864692L;
+	private static final long serialVersionUID = 5155542319167579174L;
 
 	/**
 	 * 打印机设备Id

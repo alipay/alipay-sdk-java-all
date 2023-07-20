@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修复分账金额amount的类型，原来Number类型不合理，导致商户无法通过sdk集成，需改成Price类型
  *
  * @author auto create
- * @since 1.0, 2023-06-08 22:20:49
+ * @since 1.0, 2023-07-11 21:12:09
  */
 public class RoyaltyDetailInfos extends AlipayObject {
 
-	private static final long serialVersionUID = 2628941689943818371L;
+	private static final long serialVersionUID = 2289348676673355622L;
 
 	/**
 	 * 分账的金额，单位为元
@@ -61,11 +61,7 @@ public class RoyaltyDetailInfos extends AlipayObject {
 	private String transIn;
 
 	/**
-	 * 接受分账金额的账户类型：
-&#61548;	userId：支付宝账号对应的支付宝唯一用户号。
-&#61548;	bankIndex：分账到银行账户的银行编号。目前暂时只支持分账到一个银行编号。
-storeId：分账到门店对应的银行卡编号。
-默认值为userId。
+	 * 接受分账金额的账户类型
 	 */
 	@ApiField("trans_in_type")
 	private String transInType;

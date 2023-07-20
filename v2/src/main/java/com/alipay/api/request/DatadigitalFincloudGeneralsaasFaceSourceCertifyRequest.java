@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.source.certify request
  * 
  * @author auto create
- * @since 1.0, 2023-06-15 17:42:20
+ * @since 1.0, 2023-07-20 16:22:04
  */
 public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse> {
 
@@ -39,6 +39,14 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 	* 二进制流图片，大小限制1M
 	 */
 	private FileItem fileContent;
+
+	/** 
+	* 活体检测类型，当前枚举支持：
+OFF：关闭活体检测；
+CHECK：正常活体检测。
+不传默认CHECK。
+	 */
+	private String livenessStrategy;
 
 	/** 
 	* 客户业务单据号
@@ -81,6 +89,13 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 	}
 	public FileItem getFileContent() {
 		return this.fileContent;
+	}
+
+	public void setLivenessStrategy(String livenessStrategy) {
+		this.livenessStrategy = livenessStrategy;
+	}
+	public String getLivenessStrategy() {
+		return this.livenessStrategy;
 	}
 
 	public void setOuterBizNo(String outerBizNo) {
@@ -167,6 +182,7 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements A
 		txtParams.put("cert_name", this.certName);
 		txtParams.put("cert_no", this.certNo);
 		txtParams.put("cert_type", this.certType);
+		txtParams.put("liveness_strategy", this.livenessStrategy);
 		txtParams.put("outer_biz_no", this.outerBizNo);
 		txtParams.put("phone", this.phone);
 		txtParams.put("reserved", this.reserved);

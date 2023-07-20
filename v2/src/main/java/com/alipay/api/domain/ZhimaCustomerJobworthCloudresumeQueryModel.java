@@ -7,20 +7,22 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云简历基本数据查询
  *
  * @author auto create
- * @since 1.0, 2022-11-28 16:31:37
+ * @since 1.0, 2023-07-18 15:49:22
  */
 public class ZhimaCustomerJobworthCloudresumeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7497645113461562437L;
+	private static final long serialVersionUID = 2218416893336649571L;
 
 	/**
-	 * 长效的认证令牌
+	 * 长效的认证令牌：zhima.credit.payafteruse.creditagreement.sign 的out_agreement_no
 	 */
 	@ApiField("conn_key")
 	private String connKey;
 
 	/**
-	 * 交换云简历的单次token
+	 * 交换云简历的单次token：zhima.credit.payafteruse.creditagreement.sign 的
+
+extra_param入参onceToken（授权后5分钟内，单次有效
 	 */
 	@ApiField("once_token")
 	private String onceToken;

@@ -7,19 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流信息
  *
  * @author auto create
- * @since 1.0, 2019-04-02 16:24:40
+ * @since 1.0, 2023-07-12 11:32:25
  */
 public class LogisticsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7384795222623729888L;
+	private static final long serialVersionUID = 8423821312965146327L;
 
 	/**
-	 * 物流类型, 
-POST 平邮,
-EXPRESS 其他快递,
-VIRTUAL 虚拟物品,
-EMS EMS,
-DIRECT 无需物流。
+	 * 物流类型
 	 */
 	@ApiField("logistics_type")
 	private String logisticsType;

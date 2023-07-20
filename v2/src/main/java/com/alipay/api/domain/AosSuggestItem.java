@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * query suggest实体
  *
  * @author auto create
- * @since 1.0, 2022-11-25 11:46:27
+ * @since 1.0, 2023-07-17 16:05:50
  */
 public class AosSuggestItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1841375489322141219L;
+	private static final long serialVersionUID = 5342284672549421956L;
 
 	/**
 	 * item的打分

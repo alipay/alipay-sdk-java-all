@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联合营销消费券开放券包领奖触发
  *
  * @author auto create
- * @since 1.0, 2023-05-06 18:11:12
+ * @since 1.0, 2023-07-12 13:28:15
  */
 public class AlipayMarketingCampaignUnitedopencouponReceiveTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3774756531188138674L;
+	private static final long serialVersionUID = 5265143148676798582L;
 
 	/**
 	 * 用户支付宝绑定手机号。user_id、login_id、bind_mobile三个参数至少有一个非空。
@@ -54,6 +54,12 @@ public class AlipayMarketingCampaignUnitedopencouponReceiveTriggerModel extends 
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 奖品ID, 当需要指定奖品抽奖的时候传入
+	 */
+	@ApiField("prize_id")
+	private String prizeId;
 
 	/**
 	 * 终端id
@@ -114,6 +120,13 @@ public class AlipayMarketingCampaignUnitedopencouponReceiveTriggerModel extends 
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getPrizeId() {
+		return this.prizeId;
+	}
+	public void setPrizeId(String prizeId) {
+		this.prizeId = prizeId;
 	}
 
 	public String getTermId() {

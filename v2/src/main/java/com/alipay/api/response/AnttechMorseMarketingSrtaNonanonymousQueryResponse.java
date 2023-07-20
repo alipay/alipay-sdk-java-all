@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.srta.nonanonymous.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 11:17:05
+ * @since 1.0, 2023-07-19 15:11:53
  */
 public class AnttechMorseMarketingSrtaNonanonymousQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6255741847993679972L;
+	private static final long serialVersionUID = 3324319678584349793L;
 
 	/** 
 	 * 蚂蚁侧返回的唯一标识
@@ -43,6 +43,12 @@ public class AnttechMorseMarketingSrtaNonanonymousQueryResponse extends AlipayRe
 	 */
 	@ApiField("channel")
 	private String channel;
+
+	/** 
+	 * 命中后返回的跳转链接，配置跳转链接时必选
+	 */
+	@ApiField("link")
+	private String link;
 
 	/** 
 	 * 最大优惠金额
@@ -107,6 +113,13 @@ public class AnttechMorseMarketingSrtaNonanonymousQueryResponse extends AlipayRe
 	}
 	public String getChannel( ) {
 		return this.channel;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
+	}
+	public String getLink( ) {
+		return this.link;
 	}
 
 	public void setMaxAmount(String maxAmount) {

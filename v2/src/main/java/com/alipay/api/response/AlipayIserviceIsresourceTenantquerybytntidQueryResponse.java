@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresource.tenantquerybytntid.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:56:54
+ * @since 1.0, 2023-07-10 10:03:23
  */
 public class AlipayIserviceIsresourceTenantquerybytntidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8255996167965396925L;
+	private static final long serialVersionUID = 6382385581625846968L;
 
 	/** 
 	 * 查询的租户信息

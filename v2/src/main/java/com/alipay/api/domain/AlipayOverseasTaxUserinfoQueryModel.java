@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退税用户信息查询
  *
  * @author auto create
- * @since 1.0, 2023-05-22 17:32:20
+ * @since 1.0, 2023-07-18 20:57:28
  */
 public class AlipayOverseasTaxUserinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7617922625439316878L;
+	private static final long serialVersionUID = 1553575598994169213L;
 
 	/**
 	 * 支付宝账号标识号,由identify_account_type指定类型:

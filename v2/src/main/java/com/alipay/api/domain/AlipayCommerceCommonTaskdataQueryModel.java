@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客任务数据查询
  *
  * @author auto create
- * @since 1.0, 2023-06-20 14:32:49
+ * @since 1.0, 2023-07-17 16:36:51
  */
 public class AlipayCommerceCommonTaskdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4483863436163478986L;
+	private static final long serialVersionUID = 8286457222716463466L;
 
 	/**
 	 * 代运营商户的id
@@ -28,8 +28,8 @@ public class AlipayCommerceCommonTaskdataQueryModel extends AlipayObject {
 	/**
 	 * 任务模板id
 	 */
-	@ApiField("task_templete_id")
-	private String taskTempleteId;
+	@ApiField("task_template_id")
+	private String taskTemplateId;
 
 	public String getMerchantPid() {
 		return this.merchantPid;
@@ -45,11 +45,11 @@ public class AlipayCommerceCommonTaskdataQueryModel extends AlipayObject {
 		this.taskInstanceId = taskInstanceId;
 	}
 
-	public String getTaskTempleteId() {
-		return this.taskTempleteId;
+	public String getTaskTemplateId() {
+		return this.taskTemplateId;
 	}
-	public void setTaskTempleteId(String taskTempleteId) {
-		this.taskTempleteId = taskTempleteId;
+	public void setTaskTemplateId(String taskTemplateId) {
+		this.taskTemplateId = taskTemplateId;
 	}
 
 }

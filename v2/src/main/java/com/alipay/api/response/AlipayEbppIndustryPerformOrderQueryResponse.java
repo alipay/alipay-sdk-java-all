@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.perform.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:43:22
+ * @since 1.0, 2023-07-20 16:14:08
  */
 public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4119678789132616244L;
+	private static final long serialVersionUID = 1866124664417292171L;
 
 	/** 
 	 * 账单金额(订单原价，金额分)

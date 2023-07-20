@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresource.grpquerybyclvgrpids.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:56:54
+ * @since 1.0, 2023-07-11 14:46:53
  */
 public class AlipayIserviceIsresourceGrpquerybyclvgrpidsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6744166674771485793L;
+	private static final long serialVersionUID = 4353522111178261226L;
 
 	/** 
 	 * 相关技能组信息

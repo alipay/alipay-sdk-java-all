@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开红包按钮容器
  *
  * @author auto create
- * @since 1.0, 2022-09-01 21:02:48
+ * @since 1.0, 2023-07-17 15:11:31
  */
 public class GiftTemplateButtonBox extends AlipayObject {
 
-	private static final long serialVersionUID = 4453737544258466241L;
+	private static final long serialVersionUID = 4698526156397292716L;
 
 	/**
 	 * 开红包按钮，用于拆红包页

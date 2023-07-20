@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-29 10:37:28
+ * @since 1.0, 2023-07-20 16:22:04
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5568379697888294833L;
+	private static final long serialVersionUID = 3372463455544455267L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -92,7 +92,7 @@ QUOTA_OCCUPYIED_ASYNC_PAY(异步支付并且预占了先享后付额度);
 	private String buyerUserName;
 
 	/** 
-	 * 买家用户类型。CORPORATE:企业用户；PRIVATE:个人用户。
+	 * 买家用户类型。
 	 */
 	@ApiField("buyer_user_type")
 	private String buyerUserType;

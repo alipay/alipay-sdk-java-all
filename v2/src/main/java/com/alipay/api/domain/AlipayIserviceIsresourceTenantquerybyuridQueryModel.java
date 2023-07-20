@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过人力资源id查询租户信息
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:40:23
+ * @since 1.0, 2023-07-10 10:03:12
  */
 public class AlipayIserviceIsresourceTenantquerybyuridQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2644667853831679692L;
+	private static final long serialVersionUID = 8532453139836832487L;
 
 	/**
 	 * 租户id

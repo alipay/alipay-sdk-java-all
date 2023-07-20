@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家开放结果页订单上报
  *
  * @author auto create
- * @since 1.0, 2023-06-26 19:35:17
+ * @since 1.0, 2023-07-19 19:24:50
  */
 public class AlipayMerchantOrderIotUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8192755894434829271L;
+	private static final long serialVersionUID = 4614514939146529446L;
 
 	/**
 	 * 客户端接入结果页组件的abcp应用ID。另外要求该业务abcp_app_id需要和当前接口接入的appid归属为一个开发者pid
@@ -24,7 +24,7 @@ public class AlipayMerchantOrderIotUploadModel extends AlipayObject {
 	private String abcpAppId;
 
 	/**
-	 * 交易实付金额，单位“分”
+	 * 交易实付金额，单位“分”；result_type非business_pay类型时必填
 	 */
 	@ApiField("actual_pay_amount")
 	private Long actualPayAmount;
@@ -34,6 +34,12 @@ public class AlipayMerchantOrderIotUploadModel extends AlipayObject {
 	 */
 	@ApiField("actual_pay_time")
 	private Date actualPayTime;
+
+	/**
+	 * 复杂场景适配信息，result_type为business_pay类型时必填
+	 */
+	@ApiField("business_infos")
+	private PaymentBusinessInfo businessInfos;
 
 	/**
 	 * 找零金额，单位“分”
@@ -123,6 +129,13 @@ fail 支付失败
 	}
 	public void setActualPayTime(Date actualPayTime) {
 		this.actualPayTime = actualPayTime;
+	}
+
+	public PaymentBusinessInfo getBusinessInfos() {
+		return this.businessInfos;
+	}
+	public void setBusinessInfos(PaymentBusinessInfo businessInfos) {
+		this.businessInfos = businessInfos;
 	}
 
 	public Long getChangeAmount() {

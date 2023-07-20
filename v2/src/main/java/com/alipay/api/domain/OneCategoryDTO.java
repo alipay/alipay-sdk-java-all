@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 一级标签类目信息
  *
  * @author auto create
- * @since 1.0, 2022-05-19 15:11:14
+ * @since 1.0, 2023-07-18 21:36:52
  */
 public class OneCategoryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1423445946219646125L;
+	private static final long serialVersionUID = 5834221834824862366L;
 
 	/**
 	 * 类目ID+唯一

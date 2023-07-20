@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 视觉资源元数据
  *
  * @author auto create
- * @since 1.0, 2022-09-01 21:02:48
+ * @since 1.0, 2023-07-17 15:11:31
  */
 public class GiftTemplateMetaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6153594582481238122L;
+	private static final long serialVersionUID = 2418262749841163499L;
 
 	/**
 	 * 视觉资源链接，使用于红包详情页

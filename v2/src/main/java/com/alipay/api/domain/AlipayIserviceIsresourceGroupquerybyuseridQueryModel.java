@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过星云用户id查询技能组
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:40:11
+ * @since 1.0, 2023-07-10 10:04:27
  */
 public class AlipayIserviceIsresourceGroupquerybyuseridQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1653558893833875674L;
+	private static final long serialVersionUID = 1179518637527792772L;
 
 	/**
 	 * 租户id

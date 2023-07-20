@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.search.box.offline request
  * 
  * @author auto create
- * @since 1.0, 2023-07-07 10:37:32
+ * @since 1.0, 2023-07-11 22:24:55
  */
 public class AlipayOpenSearchBoxOfflineRequest implements AlipayRequest<AlipayOpenSearchBoxOfflineResponse> {
 

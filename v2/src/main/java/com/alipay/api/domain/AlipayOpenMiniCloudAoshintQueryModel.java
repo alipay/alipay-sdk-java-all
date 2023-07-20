@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ai open search底纹搜索接口
  *
  * @author auto create
- * @since 1.0, 2022-11-25 11:46:52
+ * @since 1.0, 2023-07-19 14:11:54
  */
 public class AlipayOpenMiniCloudAoshintQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4521589152468584657L;
+	private static final long serialVersionUID = 3353785663411872911L;
 
 	/**
 	 * 用户当前城市编码
@@ -42,6 +42,12 @@ public class AlipayOpenMiniCloudAoshintQueryModel extends AlipayObject {
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * 用户唯一标识id，可以是支付宝userid、商家自定义的userid等
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 商家在蚂蚁搜索引擎创建的项目id，调用前需要找蚂蚁技术获取。
@@ -112,6 +118,13 @@ public class AlipayOpenMiniCloudAoshintQueryModel extends AlipayObject {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProjectId() {

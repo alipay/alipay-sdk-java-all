@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过uid查询用户信息
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:41:50
+ * @since 1.0, 2023-07-10 10:00:46
  */
 public class AlipayIserviceIsresourceUserquerybyuidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8858772114831851652L;
+	private static final long serialVersionUID = 8713378111339925538L;
 
 	/**
 	 * 客服小二的2088id

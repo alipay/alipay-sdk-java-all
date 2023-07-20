@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PrizeValidPeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 6494442327583494611L;
+	private static final long serialVersionUID = 6724776412859517656L;
 
 	/**
 	 * 使用生效相对分钟数（相对时间）

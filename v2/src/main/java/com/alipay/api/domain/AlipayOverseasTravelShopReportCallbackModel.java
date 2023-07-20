@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺上报A+回调
  *
  * @author auto create
- * @since 1.0, 2023-01-13 14:23:43
+ * @since 1.0, 2023-07-13 11:20:49
  */
 public class AlipayOverseasTravelShopReportCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2783446787422156682L;
+	private static final long serialVersionUID = 8169596944762461564L;
 
 	/**
 	 * 数据版本

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道对应的运营信息
  *
  * @author auto create
- * @since 1.0, 2023-06-27 14:37:18
+ * @since 1.0, 2023-07-19 17:38:22
  */
 public class PrePayOperationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6746655659338464358L;
+	private static final long serialVersionUID = 1645383339374148422L;
 
 	/**
 	 * 运营场景码

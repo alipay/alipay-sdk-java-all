@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户红包封面信息，包括生效时间区间、封面、封底、按钮、封面故事等视觉信息
  *
  * @author auto create
- * @since 1.0, 2022-09-01 21:02:48
+ * @since 1.0, 2023-07-17 15:11:31
  */
 public class GiftUserTemplateBoxInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3389328122326128981L;
+	private static final long serialVersionUID = 5113226358391472116L;
 
 	/**
 	 * 封面氛围容器，用于拆包页

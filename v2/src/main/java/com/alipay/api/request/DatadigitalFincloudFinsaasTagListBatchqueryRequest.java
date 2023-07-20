@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.DatadigitalFincloudFinsaasTagListBatchqueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.tag.list.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:32:13
+ * @since 1.0, 2023-07-18 21:37:01
  */
 public class DatadigitalFincloudFinsaasTagListBatchqueryRequest implements AlipayRequest<DatadigitalFincloudFinsaasTagListBatchqueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 标签列表查询
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class DatadigitalFincloudFinsaasTagListBatchqueryRequest implements Alipa
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

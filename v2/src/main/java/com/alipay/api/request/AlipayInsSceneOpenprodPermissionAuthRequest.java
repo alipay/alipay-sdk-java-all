@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.openprod.permission.auth request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:34:19
+ * @since 1.0, 2023-07-18 16:45:30
  */
 public class AlipayInsSceneOpenprodPermissionAuthRequest implements AlipayRequest<AlipayInsSceneOpenprodPermissionAuthResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退税单状态同步
  *
  * @author auto create
- * @since 1.0, 2023-05-22 17:32:44
+ * @since 1.0, 2023-07-18 20:57:04
  */
 public class AlipayOverseasTaxNeworderStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2719278513889113458L;
+	private static final long serialVersionUID = 7459831183877324441L;
 
 	/**
 	 * 纸质退税单号

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益使用限制
  *
  * @author auto create
- * @since 1.0, 2023-05-31 15:00:10
+ * @since 1.0, 2023-07-10 20:17:58
  */
 public class BenefitUseLimitDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3513911412575815692L;
+	private static final long serialVersionUID = 1573722552699697375L;
 
 	/**
 	 * REDUCE_BY  ： 满减; REDUCE_TO ： 减至 (一般用来标识特价商品);GIFT ： 满赠;DISCOUNT ： 折扣
 	 */
 	@ApiField("benefit_content_type")
 	private String benefitContentType;
+
+	/**
+	 * 满返使用限制
+	 */
+	@ApiField("cash_back_info")
+	private CashBackInfoDTO cashBackInfo;
 
 	/**
 	 * 使用规则条款描述
@@ -54,6 +60,13 @@ public class BenefitUseLimitDTO extends AlipayObject {
 	}
 	public void setBenefitContentType(String benefitContentType) {
 		this.benefitContentType = benefitContentType;
+	}
+
+	public CashBackInfoDTO getCashBackInfo() {
+		return this.cashBackInfo;
+	}
+	public void setCashBackInfo(CashBackInfoDTO cashBackInfo) {
+		this.cashBackInfo = cashBackInfo;
 	}
 
 	public String getDescription() {

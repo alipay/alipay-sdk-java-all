@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.openbizmock.rzonegroovy.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:27:01
+ * @since 1.0, 2023-07-20 14:46:54
  */
 public class AlipayOpenOperationOpenbizmockRzonegroovyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5291264723447323399L;
+	private static final long serialVersionUID = 5295786848826383272L;
 
 	/** 
 	 * 测试

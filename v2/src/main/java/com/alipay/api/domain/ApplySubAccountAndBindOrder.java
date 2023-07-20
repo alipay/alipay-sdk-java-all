@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ApplySubAccountAndBindOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6473112954149967128L;
+	private static final long serialVersionUID = 5541462573132423819L;
 
 	/**
 	 * 机构ID，如ZL6、ZL7

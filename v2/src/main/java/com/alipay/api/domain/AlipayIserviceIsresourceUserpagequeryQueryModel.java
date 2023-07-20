@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户信息分页查询
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:41:30
+ * @since 1.0, 2023-07-10 10:03:55
  */
 public class AlipayIserviceIsresourceUserpagequeryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6152972923187521148L;
+	private static final long serialVersionUID = 7733452557515269256L;
 
 	/**
 	 * antbuserviceid

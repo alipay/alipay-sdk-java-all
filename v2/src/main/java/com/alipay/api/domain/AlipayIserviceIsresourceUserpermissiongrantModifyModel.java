@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改用户技能组权限
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:38:26
+ * @since 1.0, 2023-07-10 10:04:45
  */
 public class AlipayIserviceIsresourceUserpermissiongrantModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2364972216264878849L;
+	private static final long serialVersionUID = 1321529321239737499L;
 
 	/**
 	 * 工作台技能组id列表

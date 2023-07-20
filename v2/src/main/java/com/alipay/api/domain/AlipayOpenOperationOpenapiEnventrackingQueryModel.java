@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 前后端埋点
  *
  * @author auto create
- * @since 1.0, 2023-04-21 21:52:28
+ * @since 1.0, 2023-07-12 19:29:22
  */
 public class AlipayOpenOperationOpenapiEnventrackingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2688577476961181518L;
+	private static final long serialVersionUID = 6875772158334181694L;
 
 	/**
 	 * test

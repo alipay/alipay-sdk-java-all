@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据clv技能组id查询技能组信息
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:39:33
+ * @since 1.0, 2023-07-11 14:42:51
  */
 public class AlipayIserviceIsresourceGrpquerybyclvgrpidsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1794781432751139578L;
+	private static final long serialVersionUID = 5617614363494585916L;
 
 	/**
 	 * 根据clv技能组id查询技能组信息
@@ -28,6 +28,12 @@ public class AlipayIserviceIsresourceGrpquerybyclvgrpidsQueryModel extends Alipa
 	 */
 	@ApiField("query_scene_instance")
 	private Boolean querySceneInstance;
+
+	/**
+	 * 是否查询转接技能组
+	 */
+	@ApiField("query_transfer_skill_groups")
+	private Boolean queryTransferSkillGroups;
 
 	/**
 	 * 租户id
@@ -47,6 +53,13 @@ public class AlipayIserviceIsresourceGrpquerybyclvgrpidsQueryModel extends Alipa
 	}
 	public void setQuerySceneInstance(Boolean querySceneInstance) {
 		this.querySceneInstance = querySceneInstance;
+	}
+
+	public Boolean getQueryTransferSkillGroups() {
+		return this.queryTransferSkillGroups;
+	}
+	public void setQueryTransferSkillGroups(Boolean queryTransferSkillGroups) {
+		this.queryTransferSkillGroups = queryTransferSkillGroups;
 	}
 
 	public String getTntInstId() {

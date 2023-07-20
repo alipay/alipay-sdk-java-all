@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多币种模型
  *
  * @author auto create
- * @since 1.0, 2020-01-06 14:36:17
+ * @since 1.0, 2023-07-18 22:06:25
  */
 public class MutipleCurrencyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3888693711246947543L;
+	private static final long serialVersionUID = 4332523578169491977L;
 
 	/**
 	 * 扩展字段
@@ -20,7 +20,7 @@ public class MutipleCurrencyDetail extends AlipayObject {
 	private String extInfo;
 
 	/**
-	 * 支付金额
+	 * 支付金额，单位为该币种基础计价单位，如人民币为：元
 	 */
 	@ApiField("payment_amount")
 	private String paymentAmount;
@@ -32,7 +32,7 @@ public class MutipleCurrencyDetail extends AlipayObject {
 	private String paymentCurrency;
 
 	/**
-	 * 清算金额
+	 * 清算金额，单位为该币种基础计价单位，如人民币为：元
 	 */
 	@ApiField("settlement_amount")
 	private String settlementAmount;
@@ -44,7 +44,7 @@ public class MutipleCurrencyDetail extends AlipayObject {
 	private String settlementCurrency;
 
 	/**
-	 * 转账金额
+	 * 转账金额，单位为该币种基础计价单位，如人民币为：元
 	 */
 	@ApiField("trans_amount")
 	private String transAmount;

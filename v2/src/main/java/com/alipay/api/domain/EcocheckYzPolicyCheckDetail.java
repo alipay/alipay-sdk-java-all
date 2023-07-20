@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcocheckYzPolicyCheckDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5359239229252419571L;
+	private static final long serialVersionUID = 1116168158417463648L;
 
 	/**
 	 * 小程序id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户行为上报接口
  *
  * @author auto create
- * @since 1.0, 2023-04-13 20:51:49
+ * @since 1.0, 2023-07-13 09:55:17
  */
 public class TechriskInnovateMpcpromoBehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6757332626918854855L;
+	private static final long serialVersionUID = 3376842776251762163L;
 
 	/**
 	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）、cart（加购物车）、drawback（退款）、consult（咨询）等
@@ -98,7 +98,7 @@ public class TechriskInnovateMpcpromoBehaviorSyncModel extends AlipayObject {
 	private String rate;
 
 	/**
-	 * 行为场景，枚举值：home（首页）、goods_detail（商详页）、search（搜索）、order_detail（订单详情）
+	 * 行为场景，枚举值：home（首页）、goods_detail（商详页）、search（搜索）、order_detail（订单详情页）
 	 */
 	@ApiField("scene")
 	private String scene;

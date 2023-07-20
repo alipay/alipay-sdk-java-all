@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 封面容器，封装封面上部展示的图片或视频
  *
  * @author auto create
- * @since 1.0, 2022-09-01 21:02:48
+ * @since 1.0, 2023-07-17 15:11:31
  */
 public class GiftTemplateFrontCoverBox extends AlipayObject {
 
-	private static final long serialVersionUID = 4382412198381791594L;
+	private static final long serialVersionUID = 6159338698611597591L;
 
 	/**
 	 * 封面图，使用于在拆红包页、红包详情页

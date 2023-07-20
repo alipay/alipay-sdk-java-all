@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isportal.permissioncheck.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:41:52
+ * @since 1.0, 2023-07-10 10:04:54
  */
 public class AlipayIserviceIsportalPermissioncheckQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5577663116182446125L;
+	private static final long serialVersionUID = 3574586666442377563L;
 
 	/** 
 	 * 鉴权结果

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccessSkuAttrValueDto extends AlipayObject {
 
-	private static final long serialVersionUID = 8143956345947742439L;
+	private static final long serialVersionUID = 8134297733525279955L;
 
 	/**
 	 * attr_name，用于商品同步，由调用方传入

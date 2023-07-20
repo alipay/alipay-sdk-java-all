@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工风控预咨询
  *
  * @author auto create
- * @since 1.0, 2023-06-07 18:21:18
+ * @since 1.0, 2023-07-17 14:50:30
  */
 public class AlipayUserFlexiblestaffingRiskconsultApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5621329124616519971L;
+	private static final long serialVersionUID = 4723585762269992949L;
 
 	/**
 	 * 场景码

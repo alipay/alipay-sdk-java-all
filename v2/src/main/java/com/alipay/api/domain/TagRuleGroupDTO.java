@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TagRuleGroupDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4216578422287271764L;
+	private static final long serialVersionUID = 7575169766976535348L;
 
 	/**
 	 * 标签取值列表+不唯一

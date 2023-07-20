@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租户信息分页查询
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:38:58
+ * @since 1.0, 2023-07-10 10:01:30
  */
 public class AlipayIserviceIsresourceTenantpagequeryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7861987923642453664L;
+	private static final long serialVersionUID = 2563118769273666291L;
 
 	/**
 	 * 页码

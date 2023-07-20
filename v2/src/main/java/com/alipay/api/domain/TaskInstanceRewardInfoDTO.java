@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务激励信息
  *
  * @author auto create
- * @since 1.0, 2023-06-16 14:38:45
+ * @since 1.0, 2023-07-13 14:49:24
  */
 public class TaskInstanceRewardInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6716214321943513487L;
+	private static final long serialVersionUID = 8262487542114549722L;
 
 	/**
 	 * 当前进度
@@ -32,6 +32,12 @@ public class TaskInstanceRewardInfoDTO extends AlipayObject {
 	 */
 	@ApiField("hunter_id")
 	private String hunterId;
+
+	/**
+	 * 导购员openId
+	 */
+	@ApiField("hunter_open_id")
+	private String hunterOpenId;
 
 	/**
 	 * 任务已发放激励金额，单位元
@@ -82,6 +88,13 @@ public class TaskInstanceRewardInfoDTO extends AlipayObject {
 	}
 	public void setHunterId(String hunterId) {
 		this.hunterId = hunterId;
+	}
+
+	public String getHunterOpenId() {
+		return this.hunterOpenId;
+	}
+	public void setHunterOpenId(String hunterOpenId) {
+		this.hunterOpenId = hunterOpenId;
 	}
 
 	public String getPublishedAmount() {

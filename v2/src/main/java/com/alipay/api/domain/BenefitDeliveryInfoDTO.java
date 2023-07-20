@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部权益同步，权益投放信息
  *
  * @author auto create
- * @since 1.0, 2023-07-05 20:23:42
+ * @since 1.0, 2023-07-10 13:35:50
  */
 public class BenefitDeliveryInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3338489838322421158L;
+	private static final long serialVersionUID = 4898249248372528717L;
 
 	/**
 	 * 券的可用区域

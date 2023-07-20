@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.coupon.template.user.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:41:58
+ * @since 1.0, 2023-07-17 14:53:04
  */
 public class AlipayFundCouponTemplateUserQueryRequest implements AlipayRequest<AlipayFundCouponTemplateUserQueryResponse> {
 

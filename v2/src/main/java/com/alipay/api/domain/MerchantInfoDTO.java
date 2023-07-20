@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部权益同步，商户模型
  *
  * @author auto create
- * @since 1.0, 2023-07-05 20:24:05
+ * @since 1.0, 2023-07-10 20:17:41
  */
 public class MerchantInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7496277956332622314L;
+	private static final long serialVersionUID = 3417732967654265313L;
 
 	/**
 	 * 品牌id（统一权益池的品牌id）

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-27 21:06:59
+ * @since 1.0, 2023-07-18 21:41:53
  */
 public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5125184794666941416L;
+	private static final long serialVersionUID = 1566274545491534495L;
 
 	/** 
 	 * 用户签约成功后的协议号
@@ -76,8 +76,6 @@ public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 签约主体类型。
-CARD:支付宝账号
-CUSTOMER:支付宝用户
 	 */
 	@ApiField("pricipal_type")
 	private String pricipalType;
@@ -85,8 +83,6 @@ CUSTOMER:支付宝用户
 	/** 
 	 * 签约主体标识。
 当principal_type为CARD 时，该字段为支付宝用户号;
-当principal_type为 CUSTOMER 时，该字段为支付宝用户标识。一个用户 可能有多个支付宝账号，即多个支付宝用户号，但只有一个是支付宝用户标识。
-一个支付宝账号对应一个支付宝唯一用户号(以2088开头的16位纯数字组成)。
 	 */
 	@ApiField("principal_id")
 	private String principalId;
@@ -94,7 +90,6 @@ CUSTOMER:支付宝用户
 	/** 
 	 * 签约主体标识。
 当principal_type为CARD 时，该字段为支付宝用户号;
-当principal_type为 CUSTOMER 时，该字段为支付宝用户标识。一个用户 可能有多个支付宝账号，即多个支付宝用户号，但只有一个是支付宝用户标识。
 	 */
 	@ApiField("principal_open_id")
 	private String principalOpenId;
@@ -128,9 +123,6 @@ CUSTOMER:支付宝用户
 
 	/** 
 	 * 签约第三方主体类型。对于三方协议，表示当前用户和哪一类的第三方主体进行签约。
-取值范围：
-1. PARTNER（平台商户）;
-2. MERCHANT（集团商户），集团下子商户可共享用户签约内容;
 默认为PARTNER。
 	 */
 	@ApiField("third_party_type")

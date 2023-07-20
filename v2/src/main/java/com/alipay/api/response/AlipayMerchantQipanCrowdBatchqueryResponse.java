@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.crowd.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-12 20:36:49
+ * @since 1.0, 2023-07-11 22:41:58
  */
 public class AlipayMerchantQipanCrowdBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1346433753858684619L;
+	private static final long serialVersionUID = 1165782774568297832L;
 
 	/** 
 	 * 商家自定义人群列表

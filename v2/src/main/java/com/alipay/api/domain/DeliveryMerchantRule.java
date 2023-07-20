@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推广收款账号规则
  *
  * @author auto create
- * @since 1.0, 2023-06-29 12:29:53
+ * @since 1.0, 2023-07-12 10:39:25
  */
 public class DeliveryMerchantRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4496399294321612663L;
+	private static final long serialVersionUID = 1254361648284179541L;
 
 	/**
 	 * 指定品牌id。 说明：如商户需选择某个品牌下维护的收款账号，请上传相关品牌id

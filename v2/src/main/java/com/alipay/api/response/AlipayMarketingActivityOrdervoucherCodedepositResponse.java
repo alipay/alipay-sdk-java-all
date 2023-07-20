@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.codedeposit response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-26 14:21:57
+ * @since 1.0, 2023-07-18 22:32:02
  */
 public class AlipayMarketingActivityOrdervoucherCodedepositResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2749365453964431724L;
+	private static final long serialVersionUID = 4213125335445582151L;
 
 	/** 
 	 * 导入失败的券码数量

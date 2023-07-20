@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataSoundSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1219334488513147416L;
+	private static final long serialVersionUID = 3564163794436233291L;
 
 	/**
 	 * 应用token

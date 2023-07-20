@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskCustomerriskrankGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7868246361183232463L;
+	private static final long serialVersionUID = 2676662147439619389L;
 
 	/**
 	 * 证件号码，除了场景id必填，其他几个参数不能同时为空

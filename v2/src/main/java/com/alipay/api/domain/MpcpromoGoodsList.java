@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * mpcpromo商品数据
  *
  * @author auto create
- * @since 1.0, 2023-05-24 17:32:16
+ * @since 1.0, 2023-07-13 10:30:51
  */
 public class MpcpromoGoodsList extends AlipayObject {
 
-	private static final long serialVersionUID = 1645218577327366199L;
+	private static final long serialVersionUID = 8449399245857886649L;
 
 	/**
 	 * 商品可用的城市列表

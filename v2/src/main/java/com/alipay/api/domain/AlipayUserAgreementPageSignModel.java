@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2023-06-21 14:11:16
+ * @since 1.0, 2023-07-12 16:16:33
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8621651667374555854L;
+	private static final long serialVersionUID = 7724248368385349384L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -21,10 +21,7 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	private AccessParams accessParams;
 
 	/**
-	 * 协议生效类型, 用于指定协议是立即生效还是等待商户通知再生效. 可空, 不填默认为立即生效. 
-DIRECT: 立即生效.
-NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect （支付宝个人协议签约生效接口）接口推进协议生效. 
-默认为DIRECT
+	 * 协议生效类型, 用于指定协议是立即生效还是等待商户通知再生效. 可空, 不填默认为立即生效.
 	 */
 	@ApiField("agreement_effect_type")
 	private String agreementEffectType;
@@ -150,9 +147,6 @@ NOTICE: 商户通知生效, 需要再次调用alipay.user.agreement.sign.effect 
 
 	/**
 	 * 签约第三方主体类型。对于三方协议，表示当前用户和哪一类的第三方主体进行签约。
-取值范围：
-1. PARTNER（平台商户）
-2. MERCHANT（集团商户），集团下子商户可共享用户签约内容
 默认为PARTNER。
 	 */
 	@ApiField("third_party_type")

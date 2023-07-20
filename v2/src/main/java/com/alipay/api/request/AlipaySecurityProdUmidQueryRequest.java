@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.umid.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:21:58
+ * @since 1.0, 2023-07-20 09:48:53
  */
 public class AlipaySecurityProdUmidQueryRequest implements AlipayRequest<AlipaySecurityProdUmidQueryResponse> {
 

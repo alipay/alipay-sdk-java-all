@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校验领取权益资格
  *
  * @author auto create
- * @since 1.0, 2023-01-03 11:26:50
+ * @since 1.0, 2023-07-14 10:47:29
  */
 public class AlipayOverseasTravelRatePromotionVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1881963427331798844L;
+	private static final long serialVersionUID = 4512879578788138986L;
 
 	/**
 	 * 业务扩展参数

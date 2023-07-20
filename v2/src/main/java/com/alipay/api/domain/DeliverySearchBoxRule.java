@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推广搜索品牌box规则
  *
  * @author auto create
- * @since 1.0, 2023-06-29 12:29:53
+ * @since 1.0, 2023-07-12 10:39:25
  */
 public class DeliverySearchBoxRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7481467596288459354L;
+	private static final long serialVersionUID = 8399939926452458872L;
 
 	/**
 	 * 指定搜索直达区域

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户封面列表
  *
  * @author auto create
- * @since 1.0, 2022-12-05 19:36:18
+ * @since 1.0, 2023-07-17 14:53:04
  */
 public class AlipayFundCouponTemplateUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4582782519473951613L;
+	private static final long serialVersionUID = 2473243254445648761L;
 
 	/**
 	 * 场景码

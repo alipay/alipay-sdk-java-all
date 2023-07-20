@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标签信息
  *
  * @author auto create
- * @since 1.0, 2022-05-18 15:20:18
+ * @since 1.0, 2023-07-18 21:36:52
  */
 public class TagDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3171967924792292393L;
+	private static final long serialVersionUID = 3645552875522419122L;
 
 	/**
 	 * 类目ID+唯一
@@ -30,6 +30,12 @@ public class TagDTO extends AlipayObject {
 	 */
 	@ApiField("data_type")
 	private String dataType;
+
+	/**
+	 * 日期格式
+	 */
+	@ApiField("date_format")
+	private String dateFormat;
 
 	/**
 	 * 场景CODE+不唯一
@@ -79,6 +85,12 @@ public class TagDTO extends AlipayObject {
 	@ApiField("tag_type")
 	private String tagType;
 
+	/**
+	 * 标签版本
+	 */
+	@ApiField("tag_version")
+	private Long tagVersion;
+
 	public String getCateId() {
 		return this.cateId;
 	}
@@ -98,6 +110,13 @@ public class TagDTO extends AlipayObject {
 	}
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
+	}
+
+	public String getDateFormat() {
+		return this.dateFormat;
+	}
+	public void setDateFormat(String dateFormat) {
+		this.dateFormat = dateFormat;
 	}
 
 	public String getSceneCode() {
@@ -154,6 +173,13 @@ public class TagDTO extends AlipayObject {
 	}
 	public void setTagType(String tagType) {
 		this.tagType = tagType;
+	}
+
+	public Long getTagVersion() {
+		return this.tagVersion;
+	}
+	public void setTagVersion(Long tagVersion) {
+		this.tagVersion = tagVersion;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 封面基础信息,包含封面名称、祝福语等
  *
  * @author auto create
- * @since 1.0, 2022-09-01 21:02:48
+ * @since 1.0, 2023-07-17 15:11:31
  */
 public class GiftTemplateBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7163581512324783536L;
+	private static final long serialVersionUID = 5758759794712143753L;
 
 	/**
 	 * 会话气泡图片

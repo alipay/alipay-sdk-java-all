@@ -9,6 +9,8 @@ import com.alipay.api.domain.ChargeInfo;
 import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.HbFqPayInfo;
+import com.alipay.api.domain.IntactChargeInfo;
+import com.alipay.api.domain.PaymentInfoWithId;
 import com.alipay.api.domain.TradeSettleInfo;
 import com.alipay.api.domain.VoucherDetail;
 
@@ -18,11 +20,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-25 20:01:51
+ * @since 1.0, 2023-07-18 21:41:53
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6855772181265273349L;
+	private static final long serialVersionUID = 4769755522137385996L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -45,7 +47,6 @@ public class AlipayTradeQueryResponse extends AlipayResponse {
 
 	/** 
 	 * CPS订单的业务结算标识
-PERIOD：账期模式
 	 */
 	@ApiField("biz_settle_mode")
 	private String bizSettleMode;
@@ -208,6 +209,13 @@ json格式。
 	private String industrySepcDetailGov;
 
 	/** 
+	 * 完整的收费信息
+	 */
+	@ApiListField("intact_charge_info_list")
+	@ApiField("intact_charge_info")
+	private List<IntactChargeInfo> intactChargeInfoList;
+
+	/** 
 	 * 交易中用户支付的可开具发票的金额，单位为元，两位小数。该金额代表该笔交易中可以给用户开具发票的金额
 	 */
 	@ApiField("invoice_amount")
@@ -255,6 +263,13 @@ json格式。
 	 */
 	@ApiField("pay_currency")
 	private String payCurrency;
+
+	/** 
+	 * 带支付宝支付id的信息，暂不对外开放
+	 */
+	@ApiListField("payment_info_with_id_list")
+	@ApiField("payment_info_with_id")
+	private List<PaymentInfoWithId> paymentInfoWithIdList;
 
 	/** 
 	 * 积分支付的金额，单位为元，两位小数。该金额代表该笔交易中用户使用积分支付的金额，比如集分宝或者支付宝实时优惠等
@@ -564,6 +579,13 @@ json格式。
 		return this.industrySepcDetailGov;
 	}
 
+	public void setIntactChargeInfoList(List<IntactChargeInfo> intactChargeInfoList) {
+		this.intactChargeInfoList = intactChargeInfoList;
+	}
+	public List<IntactChargeInfo> getIntactChargeInfoList( ) {
+		return this.intactChargeInfoList;
+	}
+
 	public void setInvoiceAmount(String invoiceAmount) {
 		this.invoiceAmount = invoiceAmount;
 	}
@@ -618,6 +640,13 @@ json格式。
 	}
 	public String getPayCurrency( ) {
 		return this.payCurrency;
+	}
+
+	public void setPaymentInfoWithIdList(List<PaymentInfoWithId> paymentInfoWithIdList) {
+		this.paymentInfoWithIdList = paymentInfoWithIdList;
+	}
+	public List<PaymentInfoWithId> getPaymentInfoWithIdList( ) {
+		return this.paymentInfoWithIdList;
 	}
 
 	public void setPointAmount(String pointAmount) {

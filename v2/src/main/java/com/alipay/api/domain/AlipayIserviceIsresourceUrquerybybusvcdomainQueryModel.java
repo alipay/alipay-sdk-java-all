@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据域账号查询用户资源信息
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:40:40
+ * @since 1.0, 2023-07-10 10:01:20
  */
 public class AlipayIserviceIsresourceUrquerybybusvcdomainQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8258515882936568127L;
+	private static final long serialVersionUID = 7297965277161898728L;
 
 	/**
 	 * 域账号

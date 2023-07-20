@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringOrderPayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7335371287983621513L;
+	private static final long serialVersionUID = 5657488551938148834L;
 
 	/**
 	 * 是否享受会员价。如果为 true,菜明细里面会按照会员 价(没有改价情况下)作为单 品价格咨询单品券优惠

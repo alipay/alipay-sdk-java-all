@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.haha.testddd.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:11:00
+ * @since 1.0, 2023-07-18 21:48:16
  */
 public class AlipaySecurityProdHahaTestdddQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5755784264879755193L;
+	private static final long serialVersionUID = 5888969338613669728L;
 
 	/** 
 	 * 测试

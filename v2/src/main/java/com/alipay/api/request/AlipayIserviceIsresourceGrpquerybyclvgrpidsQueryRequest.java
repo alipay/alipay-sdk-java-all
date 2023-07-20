@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isresource.grpquerybyclvgrpids.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:56:54
+ * @since 1.0, 2023-07-11 14:46:53
  */
 public class AlipayIserviceIsresourceGrpquerybyclvgrpidsQueryRequest implements AlipayRequest<AlipayIserviceIsresourceGrpquerybyclvgrpidsQueryResponse> {
 

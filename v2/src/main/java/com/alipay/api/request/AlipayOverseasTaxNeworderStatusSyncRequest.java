@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.tax.neworder.status.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:08:15
+ * @since 1.0, 2023-07-18 20:57:04
  */
 public class AlipayOverseasTaxNeworderStatusSyncRequest implements AlipayRequest<AlipayOverseasTaxNeworderStatusSyncResponse> {
 

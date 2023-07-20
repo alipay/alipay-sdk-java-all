@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约参数，支付后签约场景使用
  *
  * @author auto create
- * @since 1.0, 2022-01-10 16:30:46
+ * @since 1.0, 2023-07-12 11:08:49
  */
 public class AgreementSignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8199612325347881983L;
+	private static final long serialVersionUID = 3411117815225672756L;
 
 	/**
 	 * 商户在芝麻端申请的appId
@@ -76,11 +76,7 @@ public class AgreementSignParams extends AlipayObject {
 	private SignMerchantParams subMerchant;
 
 	/**
-	 * 签约第三方主体类型。对于三方协议，表示当前用户和哪一类的第三方主体进行签约。
-取值范围：
-1. PARTNER（平台商户）;
-2. MERCHANT（集团商户），集团下子商户可共享用户签约内容;
-默认为PARTNER。
+	 * 签约第三方主体类型。对于三方协议，表示当前用户和哪一类的第三方主体进行签约。默认为PARTNER。
 	 */
 	@ApiField("third_party_type")
 	private String thirdPartyType;

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账明细
  *
  * @author auto create
- * @since 1.0, 2023-06-09 15:35:39
+ * @since 1.0, 2023-07-11 19:35:25
  */
 public class RoyaltyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3847116689489274516L;
+	private static final long serialVersionUID = 6673646488979339287L;
 
 	/**
 	 * 分账金额
@@ -70,8 +70,7 @@ public class RoyaltyDetail extends AlipayObject {
 	private String transInOpenId;
 
 	/**
-	 * 分账转入账号类型，userId表示是支付宝账号对应的支付宝唯一用户号，loginName表示是支付宝登录号，secondMerchantID表示是二级商户id。
-只有在operation_type为replenish_refund(退补差)，transfer(分账)才返回该字段
+	 * 分账转入账号类型。
 	 */
 	@ApiField("trans_in_type")
 	private String transInType;
@@ -89,8 +88,7 @@ public class RoyaltyDetail extends AlipayObject {
 	private String transOutOpenId;
 
 	/**
-	 * 分账转出账号类型，userId表示是支付宝账号对应的支付宝唯一用户号，loginName表示是支付宝登录号，secondMerchantID表示是二级商户id。
-只有在operation_type为replenish(补差)，transfer_refund(退分账)类型才返回该字段
+	 * 分账转出账号类型
 	 */
 	@ApiField("trans_out_type")
 	private String transOutType;

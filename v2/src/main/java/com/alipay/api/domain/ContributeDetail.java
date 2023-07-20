@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出资方明细
  *
  * @author auto create
- * @since 1.0, 2020-03-18 19:11:19
+ * @since 1.0, 2023-07-11 20:41:37
  */
 public class ContributeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3218486713164387565L;
+	private static final long serialVersionUID = 4852111652837414893L;
 
 	/**
 	 * 出资方金额
@@ -20,7 +20,7 @@ public class ContributeDetail extends AlipayObject {
 	private String contributeAmount;
 
 	/**
-	 * 出资方类型，如品牌商出资、支付宝平台出资等
+	 * 出资方类型
 	 */
 	@ApiField("contribute_type")
 	private String contributeType;

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTerminalPowerbankModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1874799397292396538L;
+	private static final long serialVersionUID = 2176834969764668143L;
 
 	
 

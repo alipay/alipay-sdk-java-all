@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 底纹搜索实体
  *
  * @author auto create
- * @since 1.0, 2022-11-25 11:46:52
+ * @since 1.0, 2023-07-17 15:39:40
  */
 public class AosHintItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6164558872897192292L;
+	private static final long serialVersionUID = 3372185899446868646L;
 
 	/**
 	 * item的打分

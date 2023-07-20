@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * patch类型接口测试
  *
  * @author auto create
- * @since 1.0, 2023-07-07 15:36:43
+ * @since 1.0, 2023-07-10 14:01:13
  */
 public class AlipayOpenOperationOpenbizmockPatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5848718888811566632L;
+	private static final long serialVersionUID = 4384472868661351357L;
 
 	/**
-	 * test
+	 * test2222
 	 */
 	@ApiField("b_query")
 	private String bQuery;

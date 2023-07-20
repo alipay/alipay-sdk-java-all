@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券明细信息
  *
  * @author auto create
- * @since 1.0, 2020-03-23 14:05:59
+ * @since 1.0, 2023-07-11 20:38:24
  */
 public class VoucherDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7518253483569414952L;
+	private static final long serialVersionUID = 5257355752154411757L;
 
 	/**
 	 * 优惠券面额，它应该会等于商家出资加上其他出资方出资
@@ -84,13 +84,7 @@ public class VoucherDetail extends AlipayObject {
 	private String templateId;
 
 	/**
-	 * 券类型，如：
-ALIPAY_FIX_VOUCHER - 全场代金券
-ALIPAY_DISCOUNT_VOUCHER - 折扣券
-ALIPAY_ITEM_VOUCHER - 单品优惠券
-ALIPAY_CASH_VOUCHER - 现金抵价券
-ALIPAY_BIZ_VOUCHER - 商家全场券
-注：不排除将来新增其他类型的可能，商家接入时注意兼容性避免硬编码
+	 * 券类型
 	 */
 	@ApiField("type")
 	private String type;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联交易下，由收单机构上送的信息
  *
  * @author auto create
- * @since 1.0, 2022-10-13 20:18:32
+ * @since 1.0, 2023-07-11 21:11:50
  */
 public class BkAgentReqInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8628867678525445434L;
+	private static final long serialVersionUID = 2719864362642245559L;
 
 	/**
 	 * 收单机构在清算组织登记或分配的机构代码
@@ -20,24 +20,7 @@ public class BkAgentReqInfo extends AlipayObject {
 	private String acqCode;
 
 	/**
-	 * 终端设备类型，受理方可参考终端
-注册时的设备类型填写，取值如下:
-01:自动柜员机(含 ATM 和 CDM)
-和多媒体自助终端
-
-02:传统 POS
-03:mPOS
-04:智能 POS
-05:II 型固定电话
-06:云闪付终端;
-07:保留使用;
-08:手机 POS;
-09:刷脸付终端;
-10:条码支付受理终端;
-11:条码支付辅助受理终端;
-12:行业终端(公交、地铁用于指
-定行业的终端);
-13:MIS 终端;
+	 * 终端设备类型，受理方可参考终端注册时的设备类型填写。
 	 */
 	@ApiField("device_type")
 	private String deviceType;

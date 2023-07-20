@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单发货
  *
  * @author auto create
- * @since 1.0, 2023-06-08 19:29:20
+ * @since 1.0, 2023-07-13 21:10:01
  */
 public class AlipayOpenMiniOrderDeliverySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2171966389199573682L;
+	private static final long serialVersionUID = 8879223666217522781L;
 
 	/**
 	 * 订单物流信息，电商购物订单必填且物流数量限制5条；虚拟商品订单非必填

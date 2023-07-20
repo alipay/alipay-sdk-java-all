@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 光华通用订单同步
  *
  * @author auto create
- * @since 1.0, 2022-11-01 16:33:49
+ * @since 1.0, 2023-07-10 21:13:18
  */
 public class AlipayEcoCityserviceExtOrdertocNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4159263252984333844L;
+	private static final long serialVersionUID = 8553587435323788463L;
 
 	/**
 	 * 光华平台服务编码

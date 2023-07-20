@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新版花呗分期商家贴息活动创建接口
  *
  * @author auto create
- * @since 1.0, 2022-08-18 17:44:17
+ * @since 1.0, 2023-07-17 11:33:53
  */
 public class AlipayPcreditHuabeiMerchantActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3735753959735362372L;
+	private static final long serialVersionUID = 1248694771814443315L;
 
 	/**
 	 * 花呗分期商家贴息活动名称，长度不能超过30个汉字或字符

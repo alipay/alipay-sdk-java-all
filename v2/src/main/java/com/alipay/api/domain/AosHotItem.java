@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 热搜实体数据
  *
  * @author auto create
- * @since 1.0, 2022-11-25 11:46:14
+ * @since 1.0, 2023-07-17 16:06:11
  */
 public class AosHotItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2248488767531118174L;
+	private static final long serialVersionUID = 4397426224694395574L;
 
 	/**
 	 * 图片类型热搜

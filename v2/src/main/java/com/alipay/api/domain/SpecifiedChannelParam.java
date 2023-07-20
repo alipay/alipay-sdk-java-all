@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约商户指定渠道参数
  *
  * @author auto create
- * @since 1.0, 2021-08-09 10:32:15
+ * @since 1.0, 2023-07-12 16:06:18
  */
 public class SpecifiedChannelParam extends AlipayObject {
 
-	private static final long serialVersionUID = 7294825373579852687L;
+	private static final long serialVersionUID = 2873313532944836376L;
 
 	/**
 	 * 指定渠道签约号
@@ -38,7 +38,7 @@ public class SpecifiedChannelParam extends AlipayObject {
 	private String instId;
 
 	/**
-	 * 资产类型，用以标识资产大类。BANKCARD - 银行卡
+	 * 资产类型，用以标识资产大类。
 	 */
 	@ApiField("pay_tool_type")
 	private String payToolType;

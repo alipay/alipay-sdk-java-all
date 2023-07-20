@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增加资产类型
  *
  * @author auto create
- * @since 1.0, 2022-12-26 11:29:38
+ * @since 1.0, 2023-07-11 21:23:54
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 1132718764261188741L;
+	private static final long serialVersionUID = 3839899546292928471L;
 
 	/**
 	 * 分账的金额，单位为元
@@ -39,9 +39,6 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
 	/**
 	 * 分账类型.
-普通分账为：transfer;
-补差为：replenish;
-为空默认为分账transfer;
 	 */
 	@ApiField("royalty_type")
 	private String royaltyType;
@@ -59,7 +56,7 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	private String transInName;
 
 	/**
-	 * 收入方账户类型。userId表示是支付宝账号对应的支付宝唯一用户号;cardAliasNo表示是卡编号;loginName表示是支付宝登录号；
+	 * 收入方账户类型。
 	 */
 	@ApiField("trans_in_type")
 	private String transInType;
@@ -71,7 +68,7 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	private String transOut;
 
 	/**
-	 * 支出方账户类型。userId表示是支付宝账号对应的支付宝唯一用户号;loginName表示是支付宝登录号； 泛金融类商户分账时，该字段不要上送。
+	 * 支出方账户类型。
 	 */
 	@ApiField("trans_out_type")
 	private String transOutType;

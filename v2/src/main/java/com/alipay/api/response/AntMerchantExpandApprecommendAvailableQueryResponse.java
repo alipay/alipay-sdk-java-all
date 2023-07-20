@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.apprecommend.available.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-07 10:21:25
+ * @since 1.0, 2023-07-11 22:09:45
  */
 public class AntMerchantExpandApprecommendAvailableQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6373651448619723417L;
+	private static final long serialVersionUID = 7781134326522818459L;
 
 	/** 
 	 * 总页数

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.complaint.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:36:53
+ * @since 1.0, 2023-07-19 16:12:20
  */
 public class AlipaySecurityRiskComplaintFileUploadRequest implements AlipayUploadRequest<AlipaySecurityRiskComplaintFileUploadResponse> {
 

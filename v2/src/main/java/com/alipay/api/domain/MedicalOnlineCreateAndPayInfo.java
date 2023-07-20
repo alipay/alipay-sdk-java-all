@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国家医保局线上业务下单信息
  *
  * @author auto create
- * @since 1.0, 2023-06-01 20:34:58
+ * @since 1.0, 2023-07-10 10:10:40
  */
 public class MedicalOnlineCreateAndPayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6645412549783625653L;
+	private static final long serialVersionUID = 4726474974447991467L;
 
 	/**
 	 * 渠道订单流水号

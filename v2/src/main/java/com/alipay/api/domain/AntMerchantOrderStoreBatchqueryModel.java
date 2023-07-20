@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantOrderStoreBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3894362682843869199L;
+	private static final long serialVersionUID = 5141412427814722257L;
 
 	/**
 	 * 结束时间

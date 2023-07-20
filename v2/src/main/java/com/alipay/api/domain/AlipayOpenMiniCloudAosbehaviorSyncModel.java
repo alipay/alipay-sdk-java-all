@@ -7,15 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * ai open search用户行为上报
  *
  * @author auto create
- * @since 1.0, 2022-12-26 11:46:07
+ * @since 1.0, 2023-07-13 18:18:24
  */
 public class AlipayOpenMiniCloudAosbehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1195133747523331929L;
+	private static final long serialVersionUID = 5184843664863332554L;
 
 	/**
-	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）、hot_expose（热搜曝光）、hot_click（热搜点击）suggest_expose（推荐词曝光）、suggest_click（推荐词点击）、
-comp_expose（补全词曝光）、comp_click（补全词点击）、hint_expose（底纹曝光）、hint_click（底纹点击）、search_click（搜索点击）、search_expose（搜索曝光）
+	 * 行为类型
 	 */
 	@ApiField("action_type")
 	private String actionType;

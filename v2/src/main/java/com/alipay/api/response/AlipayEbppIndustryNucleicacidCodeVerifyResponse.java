@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryNucleicacidCodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4864593155783541243L;
+	private static final long serialVersionUID = 1633921618527433575L;
 
 	/** 
 	 * 机构业务号，用于关联机构侧存储的用户信息，核验失败时可能为空

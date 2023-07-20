@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.taskdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-20 14:36:51
+ * @since 1.0, 2023-07-17 16:37:16
  */
 public class AlipayCommerceCommonTaskdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3735229664255852196L;
+	private static final long serialVersionUID = 6694831232835641695L;
+
+	/** 
+	 * 去重后的扫码量
+	 */
+	@ApiField("deduplicate_scan_num")
+	private String deduplicateScanNum;
 
 	/** 
 	 * 任务的激励信息
@@ -39,14 +45,21 @@ public class AlipayCommerceCommonTaskdataQueryResponse extends AlipayResponse {
 	/** 
 	 * 任务模板id
 	 */
-	@ApiField("task_templete_id")
-	private String taskTempleteId;
+	@ApiField("task_template_id")
+	private String taskTemplateId;
 
 	/** 
 	 * 任务交易下单量
 	 */
 	@ApiField("trade_num")
 	private String tradeNum;
+
+	public void setDeduplicateScanNum(String deduplicateScanNum) {
+		this.deduplicateScanNum = deduplicateScanNum;
+	}
+	public String getDeduplicateScanNum( ) {
+		return this.deduplicateScanNum;
+	}
 
 	public void setRewardInfo(List<TaskInstanceRewardInfoDTO> rewardInfo) {
 		this.rewardInfo = rewardInfo;
@@ -69,11 +82,11 @@ public class AlipayCommerceCommonTaskdataQueryResponse extends AlipayResponse {
 		return this.taskInstanceId;
 	}
 
-	public void setTaskTempleteId(String taskTempleteId) {
-		this.taskTempleteId = taskTempleteId;
+	public void setTaskTemplateId(String taskTemplateId) {
+		this.taskTemplateId = taskTemplateId;
 	}
-	public String getTaskTempleteId( ) {
-		return this.taskTempleteId;
+	public String getTaskTemplateId( ) {
+		return this.taskTemplateId;
 	}
 
 	public void setTradeNum(String tradeNum) {

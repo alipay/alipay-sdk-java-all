@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据bumngId查询用户信息
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:40:47
+ * @since 1.0, 2023-07-10 10:01:53
  */
 public class AlipayIserviceIsresourceUserquerybybusvcidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6663411268172467313L;
+	private static final long serialVersionUID = 3886332657918254584L;
 
 	/**
 	 * antbuserviceID

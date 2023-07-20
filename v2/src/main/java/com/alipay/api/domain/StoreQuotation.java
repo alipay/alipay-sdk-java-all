@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租车车辆信息门店报价
  *
  * @author auto create
- * @since 1.0, 2023-03-23 11:10:56
+ * @since 1.0, 2023-07-19 15:57:17
  */
 public class StoreQuotation extends AlipayObject {
 
-	private static final long serialVersionUID = 7757692846932577426L;
+	private static final long serialVersionUID = 2254947276638375541L;
 
 	/**
 	 * 评论数（取用户对商户评论数的总和）	N
@@ -33,6 +33,12 @@ public class StoreQuotation extends AlipayObject {
 	 */
 	@ApiField("distance")
 	private Long distance;
+
+	/**
+	 * isv优惠金额，单位分
+	 */
+	@ApiField("isv_discount_amount")
+	private Long isvDiscountAmount;
 
 	/**
 	 * 门店坐标纬度，高德坐标系
@@ -116,6 +122,13 @@ public class StoreQuotation extends AlipayObject {
 	}
 	public void setDistance(Long distance) {
 		this.distance = distance;
+	}
+
+	public Long getIsvDiscountAmount() {
+		return this.isvDiscountAmount;
+	}
+	public void setIsvDiscountAmount(Long isvDiscountAmount) {
+		this.isvDiscountAmount = isvDiscountAmount;
 	}
 
 	public String getLatitude() {

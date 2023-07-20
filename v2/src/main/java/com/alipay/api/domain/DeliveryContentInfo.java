@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放内容。
  *
  * @author auto create
- * @since 1.0, 2023-07-06 19:53:11
+ * @since 1.0, 2023-07-17 10:39:53
  */
 public class DeliveryContentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4185536578952854959L;
+	private static final long serialVersionUID = 4754562692549391358L;
 
 	/**
 	 * 活动对象。
@@ -36,6 +36,12 @@ public class DeliveryContentInfo extends AlipayObject {
 	 */
 	@ApiField("delivery_display_info")
 	private DeliveryDisplayInfo deliveryDisplayInfo;
+
+	/**
+	 * 商品对象
+	 */
+	@ApiField("delivery_item_content")
+	private DeliveryItemContentInfo deliveryItemContent;
 
 	public DeliveryActivityContentInfo getDeliveryActivityContent() {
 		return this.deliveryActivityContent;
@@ -63,6 +69,13 @@ public class DeliveryContentInfo extends AlipayObject {
 	}
 	public void setDeliveryDisplayInfo(DeliveryDisplayInfo deliveryDisplayInfo) {
 		this.deliveryDisplayInfo = deliveryDisplayInfo;
+	}
+
+	public DeliveryItemContentInfo getDeliveryItemContent() {
+		return this.deliveryItemContent;
+	}
+	public void setDeliveryItemContent(DeliveryItemContentInfo deliveryItemContent) {
+		this.deliveryItemContent = deliveryItemContent;
 	}
 
 }

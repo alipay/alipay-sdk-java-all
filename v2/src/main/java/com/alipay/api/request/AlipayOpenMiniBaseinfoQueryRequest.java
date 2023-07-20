@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.baseinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:51:52
+ * @since 1.0, 2023-07-11 23:02:01
  */
 public class AlipayOpenMiniBaseinfoQueryRequest implements AlipayRequest<AlipayOpenMiniBaseinfoQueryResponse> {
 

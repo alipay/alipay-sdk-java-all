@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 本地生活商品凭证信息
  *
  * @author auto create
- * @since 1.0, 2023-05-30 15:29:30
+ * @since 1.0, 2023-07-18 11:23:18
  */
 public class OrderCertificateInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1544139192817583484L;
+	private static final long serialVersionUID = 1833382578398462973L;
 
 	/**
 	 * 本地商品对应的凭证id

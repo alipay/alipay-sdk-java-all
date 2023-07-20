@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算主体模型
  *
  * @author auto create
- * @since 1.0, 2019-05-05 14:51:57
+ * @since 1.0, 2023-07-20 17:03:10
  */
 public class SettleEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 2288595457327123964L;
+	private static final long serialVersionUID = 6215933778299642489L;
 
 	/**
 	 * 结算主体账号
@@ -22,7 +22,7 @@ public class SettleEntity extends AlipayObject {
 
 	/**
 	 * 结算主体类型
-SecondMerchant：结算主体为二级商户；MerchantStore：结算主体为商户门店
+SecondMerchant：结算主体为二级商户；Store：结算主体为商户门店
 	 */
 	@ApiField("settle_entity_type")
 	private String settleEntityType;

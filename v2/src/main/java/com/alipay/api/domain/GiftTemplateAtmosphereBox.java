@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 封面氛围容器
  *
  * @author auto create
- * @since 1.0, 2022-09-01 21:02:48
+ * @since 1.0, 2023-07-17 15:11:31
  */
 public class GiftTemplateAtmosphereBox extends AlipayObject {
 
-	private static final long serialVersionUID = 3481363221952158245L;
+	private static final long serialVersionUID = 2277381824258857939L;
 
 	/**
 	 * 封面氛围的gif资源

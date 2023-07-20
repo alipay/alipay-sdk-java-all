@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品元素
  *
  * @author auto create
- * @since 1.0, 2022-12-26 11:46:14
+ * @since 1.0, 2023-07-19 14:11:57
  */
 public class GoodItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7848712273385628271L;
+	private static final long serialVersionUID = 5477155135333552995L;
 
 	/**
 	 * 商品可用的城市列表
@@ -60,7 +60,7 @@ public class GoodItem extends AlipayObject {
 	private String currentPrice;
 
 	/**
-	 * 非负数。保留两位小数。币种默认CNY。
+	 * 非负数。保留两位小数。币种默认CNY。单位：元
 	 */
 	@ApiField("deposit_amount")
 	private String depositAmount;

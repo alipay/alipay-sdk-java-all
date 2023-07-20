@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可签入技能组列表
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:39:45
+ * @since 1.0, 2023-07-10 10:02:14
  */
 public class AlipayIserviceIsresourceSigninskillgroupQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4594873869799587499L;
+	private static final long serialVersionUID = 8632976381721136711L;
 
 	/**
 	 * 租户id

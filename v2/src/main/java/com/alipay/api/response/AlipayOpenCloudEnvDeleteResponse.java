@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.cloud.env.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:11:56
+ * @since 1.0, 2023-07-12 17:16:56
  */
 public class AlipayOpenCloudEnvDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6721349628784477732L;
+	private static final long serialVersionUID = 1144676147574769128L;
 
 	
 

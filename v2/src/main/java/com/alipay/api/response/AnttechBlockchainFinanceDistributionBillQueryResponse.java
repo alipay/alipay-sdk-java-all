@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.distribution.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-29 16:46:51
+ * @since 1.0, 2023-07-19 19:26:52
  */
 public class AnttechBlockchainFinanceDistributionBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2422781738611497319L;
+	private static final long serialVersionUID = 2824272134965778618L;
 
 	/** 
 	 * 来自于结算单核销流水金额,单位元
@@ -46,6 +46,12 @@ public class AnttechBlockchainFinanceDistributionBillQueryResponse extends Alipa
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 交易单号
+	 */
+	@ApiField("trade_id")
+	private String tradeId;
 
 	/** 
 	 * 收款方详情
@@ -111,6 +117,13 @@ public class AnttechBlockchainFinanceDistributionBillQueryResponse extends Alipa
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTradeId(String tradeId) {
+		this.tradeId = tradeId;
+	}
+	public String getTradeId( ) {
+		return this.tradeId;
 	}
 
 	public void setTransInDetailList(List<IncomeDistributionOrderTransInDetail> transInDetailList) {

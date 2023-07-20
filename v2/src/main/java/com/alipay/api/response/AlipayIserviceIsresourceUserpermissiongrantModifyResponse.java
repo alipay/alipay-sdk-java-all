@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresource.userpermissiongrant.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:41:53
+ * @since 1.0, 2023-07-10 10:04:45
  */
 public class AlipayIserviceIsresourceUserpermissiongrantModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3261213763292538593L;
+	private static final long serialVersionUID = 5667664296919773834L;
 
 	
 

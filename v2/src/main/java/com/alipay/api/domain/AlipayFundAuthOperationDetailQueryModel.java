@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资金预授权单笔操作明细查询接口
  *
  * @author auto create
- * @since 1.0, 2023-06-29 15:27:52
+ * @since 1.0, 2023-07-11 18:28:19
  */
 public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2541677494692116763L;
+	private static final long serialVersionUID = 1834531845598788491L;
 
 	/**
 	 * 支付宝授权资金订单号。
@@ -32,7 +32,6 @@ public class AlipayFundAuthOperationDetailQueryModel extends AlipayObject {
 
 	/**
 	 * 需要查询的授权资金操作类型。
-可选值FREEZE/UNFREEZE/PAY，分别对应冻结、解冻、支付明细类型；
 未传入本参数时，如果仅查询出单笔明细则直接返回，如果查询出多笔则优先返回冻结明细、无冻结明细时返回解冻明细；
 当传入本参数时，则严格按照该操作类型返回对应明细
 	 */

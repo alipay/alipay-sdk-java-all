@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditUserProfileSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6435552253149125515L;
+	private static final long serialVersionUID = 8846328219455795474L;
 
 	/**
 	 * 委派采集唯一业务流水号，用户标识回执的委派采集任务，业务方在委派数据采集时提供到商户

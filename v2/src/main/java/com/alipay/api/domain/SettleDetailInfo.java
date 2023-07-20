@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算详情信息
  *
  * @author auto create
- * @since 1.0, 2023-06-14 00:08:53
+ * @since 1.0, 2023-07-11 21:19:48
  */
 public class SettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5788421769368649121L;
+	private static final long serialVersionUID = 6648689478923134698L;
 
 	/**
 	 * 仅在直付通账期模式下，当一笔交易需要分多次发起部分确认结算时使用，表示本次确认结算的实际结算金额。传递本字段后，原amount字段不再生效，结算金额以本字段为准。如已经发生过部分确认结算、不传递本字段则默认按剩余待结算金额一次性结算。
@@ -33,7 +33,6 @@ public class SettleDetailInfo extends AlipayObject {
 
 	/**
 	 * 结算主体类型。
-二级商户:SecondMerchant;商户或者直连商户门店:Store
 	 */
 	@ApiField("settle_entity_type")
 	private String settleEntityType;
@@ -54,11 +53,6 @@ public class SettleDetailInfo extends AlipayObject {
 
 	/**
 	 * 结算收款方的账户类型。
-
-cardAliasNo：结算收款方的银行卡编号;
-userId：表示是支付宝账号对应的支付宝唯一用户号;
-loginName：表示是支付宝登录号；
-defaultSettle：表示结算到商户进件时设置的默认结算账号，结算主体为门店时不支持传defaultSettle；
 	 */
 	@ApiField("trans_in_type")
 	private String transInType;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扩展信息
  *
  * @author auto create
- * @since 1.0, 2023-06-25 22:40:16
+ * @since 1.0, 2023-07-14 11:51:58
  */
 public class AuthExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2766622984734871154L;
+	private static final long serialVersionUID = 1667837216949936347L;
 
 	/**
 	 * 就诊人证件号
@@ -32,7 +32,7 @@ public class AuthExtendParams extends AlipayObject {
 	private String patientName;
 
 	/**
-	 * 返佣参数
+	 * 系统商编号，该参数作为系统商返佣数据提取的依据，请填写系统商签约协议的PID
 	 */
 	@ApiField("sys_service_provider_id")
 	private String sysServiceProviderId;

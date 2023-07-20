@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.flexiblestaffing.riskconsult.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-06-12 09:46:51
+ * @since 1.0, 2023-07-17 14:50:30
  */
 public class AlipayUserFlexiblestaffingRiskconsultApplyRequest implements AlipayRequest<AlipayUserFlexiblestaffingRiskconsultApplyResponse> {
 

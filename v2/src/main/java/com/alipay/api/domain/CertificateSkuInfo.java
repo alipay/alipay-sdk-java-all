@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品的Sku信息
  *
  * @author auto create
- * @since 1.0, 2023-06-27 17:06:21
+ * @since 1.0, 2023-07-13 21:09:40
  */
 public class CertificateSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2859221658264864117L;
+	private static final long serialVersionUID = 4648789325916145443L;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。

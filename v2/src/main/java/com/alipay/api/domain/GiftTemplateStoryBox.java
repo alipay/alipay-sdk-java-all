@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 封面故事容器，用于红包详情页
  *
  * @author auto create
- * @since 1.0, 2022-09-01 21:02:48
+ * @since 1.0, 2023-07-17 15:11:31
  */
 public class GiftTemplateStoryBox extends AlipayObject {
 
-	private static final long serialVersionUID = 3213774565311155287L;
+	private static final long serialVersionUID = 6176339174814274278L;
 
 	/**
 	 * 商家跳转链接描述，用于红包详情页

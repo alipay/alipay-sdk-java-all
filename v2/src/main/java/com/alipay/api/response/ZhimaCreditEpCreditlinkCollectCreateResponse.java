@@ -9,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlink.collect.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-23 14:01:56
+ * @since 1.0, 2023-07-17 11:27:02
  */
 public class ZhimaCreditEpCreditlinkCollectCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8377159255811123474L;
+	private static final long serialVersionUID = 3372337665518663737L;
 
 	/** 
 	 * 数据内容
 	 */
 	@ApiField("content")
 	private EpCreditLinkCreateQueryDataInfo content;
+
+	/** 
+	 * 查询任务创建结果
+	 */
+	@ApiField("data_result")
+	private String dataResult;
 
 	/** 
 	 * INIT表示任务还在初始化状态，COLLECT表示任务在进行中，END表示任务处理完成，FAIL表示任务处理失败。
@@ -39,11 +45,24 @@ public class ZhimaCreditEpCreditlinkCollectCreateResponse extends AlipayResponse
 	@ApiField("merchant_request_id")
 	private String merchantRequestId;
 
+	/** 
+	 * 产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
+
 	public void setContent(EpCreditLinkCreateQueryDataInfo content) {
 		this.content = content;
 	}
 	public EpCreditLinkCreateQueryDataInfo getContent( ) {
 		return this.content;
+	}
+
+	public void setDataResult(String dataResult) {
+		this.dataResult = dataResult;
+	}
+	public String getDataResult( ) {
+		return this.dataResult;
 	}
 
 	public void setDataStatus(String dataStatus) {
@@ -65,6 +84,13 @@ public class ZhimaCreditEpCreditlinkCollectCreateResponse extends AlipayResponse
 	}
 	public String getMerchantRequestId( ) {
 		return this.merchantRequestId;
+	}
+
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+	public String getProductCode( ) {
+		return this.productCode;
 	}
 
 }

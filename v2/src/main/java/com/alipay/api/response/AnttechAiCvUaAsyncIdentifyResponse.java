@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.ua.async.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:38:27
+ * @since 1.0, 2023-07-11 09:43:31
  */
 public class AnttechAiCvUaAsyncIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8826969349677191668L;
+	private static final long serialVersionUID = 6716469714463836725L;
 
 	/** 
 	 * 调用机器域名

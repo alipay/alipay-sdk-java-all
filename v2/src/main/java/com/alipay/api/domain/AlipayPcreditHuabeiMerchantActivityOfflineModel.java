@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新版花呗分期商家贴息活动下架接口
  *
  * @author auto create
- * @since 1.0, 2022-07-22 15:01:01
+ * @since 1.0, 2023-07-17 11:34:18
  */
 public class AlipayPcreditHuabeiMerchantActivityOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1165286971422193365L;
+	private static final long serialVersionUID = 4679616827162782769L;
 
 	/**
 	 * 商家活动ID，用于唯一确定一个活动

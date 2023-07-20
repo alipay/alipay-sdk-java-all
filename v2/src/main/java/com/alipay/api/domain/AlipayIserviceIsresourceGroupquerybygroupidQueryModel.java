@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过技能组id查询技能组
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:39:39
+ * @since 1.0, 2023-07-10 10:04:06
  */
 public class AlipayIserviceIsresourceGroupquerybygroupidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5428645173531129332L;
+	private static final long serialVersionUID = 5752849287894685645L;
 
 	/**
 	 * 技能组id

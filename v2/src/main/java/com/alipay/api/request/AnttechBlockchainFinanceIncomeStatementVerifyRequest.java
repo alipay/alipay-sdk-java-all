@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.income.statement.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-06-28 19:31:55
+ * @since 1.0, 2023-07-18 22:17:01
  */
 public class AnttechBlockchainFinanceIncomeStatementVerifyRequest implements AlipayRequest<AnttechBlockchainFinanceIncomeStatementVerifyResponse> {
 

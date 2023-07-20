@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预估标签圈人数量
  *
  * @author auto create
- * @since 1.0, 2022-05-26 09:37:15
+ * @since 1.0, 2023-07-18 21:47:17
  */
 public class DatadigitalFincloudFinsaasTagcrowdCountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6293178674193552673L;
+	private static final long serialVersionUID = 6747382535721616257L;
 
 	/**
 	 * 标签组规则列表+不唯一
@@ -24,9 +24,10 @@ public class DatadigitalFincloudFinsaasTagcrowdCountQueryModel extends AlipayObj
 	private List<TagRuleGroupDTO> rules;
 
 	/**
-	 * 场景编码+唯一
+	 * 场景编码+唯一 当前字段已废弃(迁移图灵平台后，预估人群数API不需要传递sceneCode)
 	 */
 	@ApiField("scene_code")
+	@Deprecated
 	private String sceneCode;
 
 	public List<TagRuleGroupDTO> getRules() {

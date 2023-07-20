@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.channel.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-11 14:19:58
+ * @since 1.0, 2023-07-11 11:46:56
  */
 public class AlipayPayAppChannelConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3461526672714843648L;
+	private static final long serialVersionUID = 4129425121743259397L;
 
 	/** 
 	 * 渠道信息列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通用物品实体
  *
  * @author auto create
- * @since 1.0, 2022-11-25 11:45:01
+ * @since 1.0, 2023-07-19 14:11:57
  */
 public class GenericItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3662747549153674861L;
+	private static final long serialVersionUID = 4838996831362274882L;
 
 	/**
 	 * 物品内容，用于搜索

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据clvuserids查询用户资源信息
  *
  * @author auto create
- * @since 1.0, 2023-06-13 19:22:26
+ * @since 1.0, 2023-07-10 10:00:31
  */
 public class AlipayIserviceIsresourceUrquerybyclvuidsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6421783379125214929L;
+	private static final long serialVersionUID = 2347775344261187289L;
 
 	/**
 	 * 旧平台userid列表

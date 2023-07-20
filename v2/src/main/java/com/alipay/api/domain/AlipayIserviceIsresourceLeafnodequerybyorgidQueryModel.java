@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过组织id查询组织架构叶子结点
  *
  * @author auto create
- * @since 1.0, 2023-05-26 10:39:11
+ * @since 1.0, 2023-07-10 10:02:34
  */
 public class AlipayIserviceIsresourceLeafnodequerybyorgidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6166193258822352713L;
+	private static final long serialVersionUID = 8616818138261747822L;
 
 	/**
 	 * 组织节点id

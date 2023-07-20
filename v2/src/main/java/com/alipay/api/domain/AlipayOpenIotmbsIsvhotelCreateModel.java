@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot酒店行业isv创建酒店
  *
  * @author auto create
- * @since 1.0, 2023-03-17 20:23:16
+ * @since 1.0, 2023-07-19 19:10:50
  */
 public class AlipayOpenIotmbsIsvhotelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3427341949824176718L;
+	private static final long serialVersionUID = 1685452688569279471L;
 
 	/**
 	 * 酒店关联的appid，后面相应的小程序调用相关组件时用于鉴权,多个appid之间用,分割
@@ -54,6 +54,12 @@ public class AlipayOpenIotmbsIsvhotelCreateModel extends AlipayObject {
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * 解决方案的唯一标识
+	 */
+	@ApiField("solution")
+	private String solution;
 
 	public String getAppid() {
 		return this.appid;
@@ -102,6 +108,13 @@ public class AlipayOpenIotmbsIsvhotelCreateModel extends AlipayObject {
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public String getSolution() {
+		return this.solution;
+	}
+	public void setSolution(String solution) {
+		this.solution = solution;
 	}
 
 }

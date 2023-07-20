@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2023-07-05 11:57:44
+ * @since 1.0, 2023-07-17 10:39:33
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6633684972857882653L;
+	private static final long serialVersionUID = 2181641191118298391L;
 
 	/**
 	 * 订单收货地址
@@ -90,6 +90,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("path")
 	private String path;
+
+	/**
+	 * 订单优惠信息
+	 */
+	@ApiField("promo_detail_info")
+	private PromoDetailInfoDTO promoDetailInfo;
 
 	/**
 	 * 当需要指定收款账号时，通过该参数传入，如果该值为空，则默认为商户签约账号对应的支付宝用户ID。 收款账号优先级规则：门店绑定的收款账户>请求传入的seller_id>商户签约账号对应的支付宝用户ID； 注：直付通和机构间联场景下seller_id无需传入或者保持跟pid一致； 如果传入的seller_id与pid不一致，需要联系支付宝小二配置收款关系；本地商品无需填写
@@ -206,6 +212,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setPath(String path) {
 		this.path = path;
+	}
+
+	public PromoDetailInfoDTO getPromoDetailInfo() {
+		return this.promoDetailInfo;
+	}
+	public void setPromoDetailInfo(PromoDetailInfoDTO promoDetailInfo) {
+		this.promoDetailInfo = promoDetailInfo;
 	}
 
 	public String getSellerId() {

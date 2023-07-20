@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易分账查询接口
  *
  * @author auto create
- * @since 1.0, 2023-04-10 17:31:51
+ * @since 1.0, 2023-07-11 19:41:57
  */
 public class AlipayTradeOrderSettleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5326475157297619145L;
+	private static final long serialVersionUID = 1257111662412467396L;
 
 	/**
 	 * 调用分账接口时指定的外部请求号。分账查询时需要和支付宝交易号一起传入
