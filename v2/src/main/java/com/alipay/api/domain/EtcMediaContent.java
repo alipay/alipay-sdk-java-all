@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EtcMediaContent extends AlipayObject {
 
-	private static final long serialVersionUID = 7794257492452492282L;
+	private static final long serialVersionUID = 1122524839794858761L;
 
 	/**
 	 * "VIO_IDCARD_FRONT":"车主身份证正面照"

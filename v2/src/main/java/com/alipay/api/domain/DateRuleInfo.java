@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 日期规则
  *
  * @author auto create
- * @since 1.0, 2023-06-28 17:40:23
+ * @since 1.0, 2023-07-21 11:25:47
  */
 public class DateRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8849167647246284252L;
+	private static final long serialVersionUID = 2764169525519613994L;
 
 	/**
 	 * 日期范围

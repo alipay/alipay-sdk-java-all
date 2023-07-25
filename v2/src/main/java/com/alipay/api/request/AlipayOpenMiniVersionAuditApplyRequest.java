@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 22:47:00
+ * @since 1.0, 2023-07-24 13:32:02
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -107,7 +107,7 @@ com.alipay.iot.xpaas：支付宝IoT端。
 
 	/** 
 	* 小程序第一张应用截图，模板实例化的小程序可不传应用截图。
-截图大小不能超过 4MB，最大宽度 2160px，最大高度 3840px。图片格式仅支持 png,jpg,PNG,JPG 格式。小程序截图数量最小为2，最大为5。 
+截图大小不能超过 4MB，最大宽度 2160px，最大高度 3840px。图片格式仅支持 png,jpg,PNG,JPG 格式。小程序截图数量最小为2，最大为5。
 	 */
 	private FileItem firstScreenShot;
 
@@ -172,11 +172,8 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	private FileItem outDoorPic;
 
 	/** 
-	* 小程序服务区域类型，支持：
-GLOBAL-全球
-CHINA-中国
+	* 小程序服务区域类型
 如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。
-LOCATION-指定区域
 	 */
 	private String regionType;
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直达降级准入
  *
  * @author auto create
- * @since 1.0, 2023-06-12 16:19:22
+ * @since 1.0, 2023-07-24 09:52:54
  */
 public class AlipayOpenSearchboxDowngradePreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1416953762886891185L;
+	private static final long serialVersionUID = 3696715454329214276L;
 
 	/**
 	 * 搜索直达boxId

@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 附近空闲司机对象模型
+ * 代驾司机对象模型
  *
  * @author auto create
- * @since 1.0, 2022-08-23 16:31:48
+ * @since 1.0, 2023-07-25 09:33:41
  */
 public class DesignatedDrivingDriverInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4221712194976535699L;
+	private static final long serialVersionUID = 1719989549771847595L;
 
 	/**
 	 * 司机联系方式，可能是渠道处理后的电话
@@ -66,6 +66,12 @@ public class DesignatedDrivingDriverInfo extends AlipayObject {
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * 代驾司机真实姓名
+	 */
+	@ApiField("real_name")
+	private String realName;
 
 	/**
 	 * 司机代驾服务次数
@@ -140,6 +146,13 @@ public class DesignatedDrivingDriverInfo extends AlipayObject {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getRealName() {
+		return this.realName;
+	}
+	public void setRealName(String realName) {
+		this.realName = realName;
 	}
 
 	public Long getServiceTimes() {

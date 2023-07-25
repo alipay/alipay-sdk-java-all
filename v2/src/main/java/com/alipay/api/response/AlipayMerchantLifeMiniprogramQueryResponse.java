@@ -9,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.life.miniprogram.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-18 17:46:58
+ * @since 1.0, 2023-07-25 13:26:52
  */
 public class AlipayMerchantLifeMiniprogramQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3151651394191646848L;
+	private static final long serialVersionUID = 2253614958991883947L;
 
 	/** 
 	 * 生活号和业务关联的扩展信息
 	 */
 	@ApiField("extra")
 	private MiniprogramExtra extra;
+
+	/** 
+	 * 操作员类型
+	 */
+	@ApiField("ops_type")
+	private String opsType;
 
 	/** 
 	 * 生活号ID
@@ -32,6 +38,13 @@ public class AlipayMerchantLifeMiniprogramQueryResponse extends AlipayResponse {
 	}
 	public MiniprogramExtra getExtra( ) {
 		return this.extra;
+	}
+
+	public void setOpsType(String opsType) {
+		this.opsType = opsType;
+	}
+	public String getOpsType( ) {
+		return this.opsType;
 	}
 
 	public void setPublicId(String publicId) {

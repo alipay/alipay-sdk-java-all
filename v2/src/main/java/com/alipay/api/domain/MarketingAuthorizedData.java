@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 委托营销授权资源信息
  *
  * @author auto create
- * @since 1.0, 2022-04-20 16:51:42
+ * @since 1.0, 2023-07-21 11:27:09
  */
 public class MarketingAuthorizedData extends AlipayObject {
 
-	private static final long serialVersionUID = 8712316185969525948L;
+	private static final long serialVersionUID = 7676299966388784488L;
 
 	/**
 	 * 营销活动ID，当type=PROMO_ACTIVITY即授权业务类别为营销活动时该值必填

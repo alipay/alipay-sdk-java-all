@@ -7,23 +7,49 @@ import com.alipay.api.internal.mapping.ApiField;
  * 依据请求ID查询生活号ID
  *
  * @author auto create
- * @since 1.0, 2023-06-16 10:23:23
+ * @since 1.0, 2023-07-25 13:23:18
  */
 public class AlipayMerchantLifeMiniprogramQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7415775714463425189L;
+	private static final long serialVersionUID = 5277665848333833683L;
 
 	/**
-	 * request+否+第三方服务商业务流程ID+无+我方生成
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 商家创建小程序的记录ID，作为支付宝和服务商合作的流程起点，由支付宝提供给商家
 	 */
 	@ApiField("request_id")
 	private String requestId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getRequestId() {
 		return this.requestId;
 	}
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

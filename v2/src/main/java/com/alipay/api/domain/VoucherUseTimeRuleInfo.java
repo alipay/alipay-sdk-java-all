@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券核销时间规则
  *
  * @author auto create
- * @since 1.0, 2023-06-28 17:40:23
+ * @since 1.0, 2023-07-21 11:25:47
  */
 public class VoucherUseTimeRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3373762737352283329L;
+	private static final long serialVersionUID = 7875734961833785563L;
 
 	/**
 	 * 日期规则。当ruleType = DATE时，不能为空

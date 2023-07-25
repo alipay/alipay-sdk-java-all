@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CloudResumePositionIntention extends AlipayObject {
 
-	private static final long serialVersionUID = 6712676551382651556L;
+	private static final long serialVersionUID = 5115427849746527264L;
 
 	/**
 	 * 意向城市

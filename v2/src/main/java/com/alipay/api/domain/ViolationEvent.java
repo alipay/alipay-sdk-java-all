@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 违规记录
  *
  * @author auto create
- * @since 1.0, 2023-06-28 21:06:19
+ * @since 1.0, 2023-07-24 16:02:06
  */
 public class ViolationEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 1438131273746966671L;
+	private static final long serialVersionUID = 7752371236415163564L;
 
 	/**
 	 * 商家是否可以申诉

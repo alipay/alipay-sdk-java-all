@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundUsertradeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2716118436758863339L;
+	private static final long serialVersionUID = 3687987819273955245L;
 
 	/** 
 	 * 拉取的结束时间，格式yyyy-MM-dd HH:mm:ss

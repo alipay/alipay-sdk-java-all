@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 岗位工作地址
  *
  * @author auto create
- * @since 1.0, 2023-03-21 14:28:18
+ * @since 1.0, 2023-07-21 15:25:16
  */
 public class JobAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 8438453368253266692L;
+	private static final long serialVersionUID = 1124723613792999163L;
 
 	/**
 	 * 详细地址
@@ -26,7 +26,7 @@ public class JobAddress extends AlipayObject {
 	private String geo;
 
 	/**
-	 * 6位行政区域编码，具体到区(县)，如: 浙江省杭州市西湖区=330106。区域编码可参考：http://www.mca.gov.cn/article/sj/xzqh/1980/
+	 * 6位行政区域编码，具体到区(县)，如: 浙江省杭州市西湖区=330106。区域编码可参考：https://www.mca.gov.cn/mzsj/xzqh/2022/202201xzqh.html
 	 */
 	@ApiField("region_code")
 	private String regionCode;

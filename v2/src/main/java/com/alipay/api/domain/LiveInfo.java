@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LiveInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7243423688558423526L;
+	private static final long serialVersionUID = 1113827252784119137L;
 
 	/**
 	 * 直播内容信息列表

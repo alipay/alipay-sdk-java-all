@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantQipanTrendQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8294373341995238158L;
+	private static final long serialVersionUID = 6693839873645591657L;
 
 	/** 
 	 * 趋势分析数据

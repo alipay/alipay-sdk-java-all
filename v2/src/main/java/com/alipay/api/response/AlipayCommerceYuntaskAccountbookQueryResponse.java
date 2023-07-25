@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceYuntaskAccountbookQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6713149456718414589L;
+	private static final long serialVersionUID = 1894264635322322518L;
 
 	/** 
 	 * 记账本id

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料bom结构
  *
  * @author auto create
- * @since 1.0, 2023-05-19 15:16:55
+ * @since 1.0, 2023-07-21 18:08:46
  */
 public class AssetBom extends AlipayObject {
 
-	private static final long serialVersionUID = 1351119772273977482L;
+	private static final long serialVersionUID = 3325956728788545526L;
 
 	/**
 	 * 物料子类型
@@ -28,6 +28,12 @@ public class AssetBom extends AlipayObject {
 	@ApiListField("attributes")
 	@ApiField("asset_bom_attribute")
 	private List<AssetBomAttribute> attributes;
+
+	/**
+	 * 业务类型
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * 子物料清单
@@ -73,10 +79,22 @@ public class AssetBom extends AlipayObject {
 	private String itemType;
 
 	/**
+	 * 物料发布状态
+	 */
+	@ApiField("release_status")
+	private String releaseStatus;
+
+	/**
 	 * 物料信息查询的版本
 	 */
 	@ApiField("request_id")
 	private String requestId;
+
+	/**
+	 * 状态
+	 */
+	@ApiField("status")
+	private String status;
 
 	/**
 	 * 供应商履约标准
@@ -96,6 +114,13 @@ public class AssetBom extends AlipayObject {
 	}
 	public void setAttributes(List<AssetBomAttribute> attributes) {
 		this.attributes = attributes;
+	}
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
 	}
 
 	public List<AssetBomItem> getBomItems() {
@@ -147,11 +172,25 @@ public class AssetBom extends AlipayObject {
 		this.itemType = itemType;
 	}
 
+	public String getReleaseStatus() {
+		return this.releaseStatus;
+	}
+	public void setReleaseStatus(String releaseStatus) {
+		this.releaseStatus = releaseStatus;
+	}
+
 	public String getRequestId() {
 		return this.requestId;
 	}
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public AssetStandard getStd() {

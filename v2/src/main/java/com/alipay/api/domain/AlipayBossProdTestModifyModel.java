@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 接口支持参数校验
  *
  * @author auto create
- * @since 1.0, 2023-07-17 17:18:18
+ * @since 1.0, 2023-07-24 14:58:28
  */
 public class AlipayBossProdTestModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1634989328588412687L;
+	private static final long serialVersionUID = 1198677368653695623L;
 
 	/**
 	 * test
@@ -60,6 +62,12 @@ public class AlipayBossProdTestModifyModel extends AlipayObject {
 	/**
 	 * test
 	 */
+	@ApiField("test_number_2")
+	private Long testNumber2;
+
+	/**
+	 * test
+	 */
 	@ApiField("test_price")
 	private String testPrice;
 
@@ -68,6 +76,13 @@ public class AlipayBossProdTestModifyModel extends AlipayObject {
 	 */
 	@ApiField("test_string")
 	private String testString;
+
+	/**
+	 * test
+	 */
+	@ApiListField("test_string_open_ids")
+	@ApiField("string")
+	private List<String> testStringOpenIds;
 
 	public PublicComplex getComplexCopy() {
 		return this.complexCopy;
@@ -118,6 +133,13 @@ public class AlipayBossProdTestModifyModel extends AlipayObject {
 		this.testNumber = testNumber;
 	}
 
+	public Long getTestNumber2() {
+		return this.testNumber2;
+	}
+	public void setTestNumber2(Long testNumber2) {
+		this.testNumber2 = testNumber2;
+	}
+
 	public String getTestPrice() {
 		return this.testPrice;
 	}
@@ -130,6 +152,13 @@ public class AlipayBossProdTestModifyModel extends AlipayObject {
 	}
 	public void setTestString(String testString) {
 		this.testString = testString;
+	}
+
+	public List<String> getTestStringOpenIds() {
+		return this.testStringOpenIds;
+	}
+	public void setTestStringOpenIds(List<String> testStringOpenIds) {
+		this.testStringOpenIds = testStringOpenIds;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 违规凭证
  *
  * @author auto create
- * @since 1.0, 2022-06-10 17:42:41
+ * @since 1.0, 2023-07-24 10:47:06
  */
 public class AuditEvidenceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5235278612594932234L;
+	private static final long serialVersionUID = 6893497439945488177L;
 
 	/**
 	 * 文件类型。包括.jpg .png .jpeg .pdf等

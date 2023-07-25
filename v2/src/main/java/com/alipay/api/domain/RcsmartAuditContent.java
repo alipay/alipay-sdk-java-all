@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RcsmartAuditContent extends AlipayObject {
 
-	private static final long serialVersionUID = 5131348213782188445L;
+	private static final long serialVersionUID = 6543511853666598977L;
 
 	/**
 	 * 素材业务类型，默认default。特殊场景需根据规则约定勿随意填写，随意填写会导致审核异常。

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.test.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-17 17:31:53
+ * @since 1.0, 2023-07-24 15:01:55
  */
 public class AlipayBossProdTestModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2353832943365814281L;
+	private static final long serialVersionUID = 7352391172745449678L;
 
 	/** 
 	 * test
@@ -32,6 +32,12 @@ public class AlipayBossProdTestModifyResponse extends AlipayResponse {
 	 */
 	@ApiField("out_number")
 	private Long outNumber;
+
+	/** 
+	 * test
+	 */
+	@ApiField("out_number_open_id")
+	private String outNumberOpenId;
 
 	/** 
 	 * test
@@ -64,6 +70,13 @@ public class AlipayBossProdTestModifyResponse extends AlipayResponse {
 	}
 	public Long getOutNumber( ) {
 		return this.outNumber;
+	}
+
+	public void setOutNumberOpenId(String outNumberOpenId) {
+		this.outNumberOpenId = outNumberOpenId;
+	}
+	public String getOutNumberOpenId( ) {
+		return this.outNumberOpenId;
 	}
 
 	public void setOutPrice(String outPrice) {

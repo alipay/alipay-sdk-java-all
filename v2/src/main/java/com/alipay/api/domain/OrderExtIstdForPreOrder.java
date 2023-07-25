@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderExtIstdForPreOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6767257884244335423L;
+	private static final long serialVersionUID = 3542712597613473876L;
 
 	/**
 	 * 骑手应付金额

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车司机及车辆信息查询
  *
  * @author auto create
- * @since 1.0, 2022-11-10 10:31:53
+ * @since 1.0, 2023-07-24 16:53:56
  */
 public class AlipayCommerceTransportTaxiMachinedrivercarinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2619481988826715593L;
+	private static final long serialVersionUID = 5821393281122121697L;
 
 	/**
 	 * 司机支付宝openid

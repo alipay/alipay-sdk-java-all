@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalHospitalReportList extends AlipayObject {
 
-	private static final long serialVersionUID = 6277199399495997917L;
+	private static final long serialVersionUID = 8854572147832978779L;
 
 	/**
 	 * 报告产出日期 格式为yyyy-MM-dd HH:mm:ss。

@@ -4,14 +4,26 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 扩展数据
+ * 扩展数据,兼容授信专户业务参数
  *
  * @author auto create
- * @since 1.0, 2023-05-31 15:42:12
+ * @since 1.0, 2023-07-21 16:40:50
  */
 public class ParticipantBizParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1734644484227785241L;
+	private static final long serialVersionUID = 8338975676684155314L;
+
+	/**
+	 * 代发专户ID
+	 */
+	@ApiField("account_book_id")
+	private String accountBookId;
+
+	/**
+	 * 协议号
+	 */
+	@ApiField("agreement_no")
+	private String agreementNo;
 
 	/**
 	 * 出资比例
@@ -30,6 +42,20 @@ public class ParticipantBizParam extends AlipayObject {
 	 */
 	@ApiField("sub_merchant_id")
 	private String subMerchantId;
+
+	public String getAccountBookId() {
+		return this.accountBookId;
+	}
+	public void setAccountBookId(String accountBookId) {
+		this.accountBookId = accountBookId;
+	}
+
+	public String getAgreementNo() {
+		return this.agreementNo;
+	}
+	public void setAgreementNo(String agreementNo) {
+		this.agreementNo = agreementNo;
+	}
 
 	public String getFundRatio() {
 		return this.fundRatio;

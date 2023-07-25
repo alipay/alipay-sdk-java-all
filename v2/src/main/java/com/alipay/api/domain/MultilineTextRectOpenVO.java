@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签呗电子签约合同模板配置保存服务，多行文本组件框。
  *
  * @author auto create
- * @since 1.0, 2023-06-19 19:09:31
+ * @since 1.0, 2023-07-24 10:04:54
  */
 public class MultilineTextRectOpenVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1171619426951788313L;
+	private static final long serialVersionUID = 3239652718912641135L;
 
 	/**
 	 * X轴偏移量，相对当前页左下角原点的X轴偏移量，非负数值，最大取值497，由用户输入，请注意取值范围。

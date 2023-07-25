@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserPointSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6898849949766563857L;
+	private static final long serialVersionUID = 4428136888954549627L;
 
 	/** 
 	 * 实际给用户发放的积分数，由于单个用户有日限额，所以实际发放的积分数可能小于请求发放的积分数

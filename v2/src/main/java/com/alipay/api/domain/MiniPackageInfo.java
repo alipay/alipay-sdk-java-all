@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序功能包模型
  *
  * @author auto create
- * @since 1.0, 2023-06-20 14:08:26
+ * @since 1.0, 2023-07-24 13:27:18
  */
 public class MiniPackageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6466971799394624753L;
+	private static final long serialVersionUID = 4776228315469215148L;
 
 	/**
 	 * 功能包文档地址
@@ -38,7 +38,7 @@ public class MiniPackageInfo extends AlipayObject {
 	private String packageOpenType;
 
 	/**
-	 * 功能包签约状态，"valid", "已生效"；"audit", "签约中"；"invalid", "已失效"；"none", "未签约"
+	 * 功能包签约状态
 	 */
 	@ApiField("status")
 	private String status;

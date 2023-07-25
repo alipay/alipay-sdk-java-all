@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 巡游热力图查询接口
  *
  * @author auto create
- * @since 1.0, 2023-05-05 14:57:44
+ * @since 1.0, 2023-07-24 16:04:07
  */
 public class AlipayCommerceTransportTaxiHeatmapQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7168698195859459846L;
+	private static final long serialVersionUID = 7854927632933989558L;
 
 	/**
 	 * 城市代码

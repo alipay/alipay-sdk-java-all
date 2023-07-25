@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券优惠门槛信息
  *
  * @author auto create
- * @since 1.0, 2023-06-01 17:31:33
+ * @since 1.0, 2023-07-21 11:25:47
  */
 public class VoucherDeductThresholdInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4163645433732686477L;
+	private static final long serialVersionUID = 2757675949329685617L;
 
 	/**
 	 * 自定义门槛描述

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达服务信息模块
  *
  * @author auto create
- * @since 1.0, 2022-04-19 19:29:03
+ * @since 1.0, 2023-07-24 16:33:16
  */
 public class SearchBoxServiceModule extends AlipayObject {
 
-	private static final long serialVersionUID = 8583491355467662688L;
+	private static final long serialVersionUID = 4443729115677918473L;
 
 	/**
 	 * 模块ID

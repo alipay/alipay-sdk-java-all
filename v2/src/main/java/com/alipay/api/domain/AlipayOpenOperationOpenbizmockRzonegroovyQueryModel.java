@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试路由转发groovy脚本
  *
  * @author auto create
- * @since 1.0, 2023-07-20 14:45:56
+ * @since 1.0, 2023-07-21 11:02:48
  */
 public class AlipayOpenOperationOpenbizmockRzonegroovyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2429944855882114935L;
+	private static final long serialVersionUID = 5239765764255951967L;
 
 	/**
 	 * 测试

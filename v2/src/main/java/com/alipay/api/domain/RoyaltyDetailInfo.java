@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账条款明细
  *
  * @author auto create
- * @since 1.0, 2023-03-10 13:04:22
+ * @since 1.0, 2023-07-21 18:08:44
  */
 public class RoyaltyDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1625744169531141682L;
+	private static final long serialVersionUID = 4836765326312277341L;
 
 	/**
 	 * 分账金额，单位为元
@@ -55,8 +55,7 @@ public class RoyaltyDetailInfo extends AlipayObject {
 
 	/**
 	 * 分账转入主体类型。 SecondMerchant：分账转入主体为二级商户
-
-Store: 结算门店
+Store: 分账转入主体为门店
 	 */
 	@ApiField("trans_in_entity_type")
 	private String transInEntityType;
@@ -79,8 +78,7 @@ Store: 结算门店
 
 	/**
 	 * 分账转出主体类型。 SecondMerchant：结算主体为二级商户
-
-Store: 结算门店
+Store: 结算主体为门店
 	 */
 	@ApiField("trans_out_entity_type")
 	private String transOutEntityType;

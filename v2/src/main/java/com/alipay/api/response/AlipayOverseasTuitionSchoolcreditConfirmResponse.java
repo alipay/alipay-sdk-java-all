@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTuitionSchoolcreditConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8757117515359746492L;
+	private static final long serialVersionUID = 2618744168459386186L;
 
 	/** 
 	 * 业务透传保留字段，json map格式

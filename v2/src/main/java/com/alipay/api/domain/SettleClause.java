@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算条款信息
  *
  * @author auto create
- * @since 1.0, 2023-07-20 17:03:36
+ * @since 1.0, 2023-07-21 18:07:47
  */
 public class SettleClause extends AlipayObject {
 
-	private static final long serialVersionUID = 4411518353135512129L;
+	private static final long serialVersionUID = 2574994692126244444L;
 
 	/**
 	 * 结算金额，单位为元
@@ -61,7 +61,7 @@ defaultSettle: 按默认结算规则结算
 
 	/**
 	 * 结算主体账号。
-当结算主体类型为SecondMerchant，本参数为二级商户的SecondMerchantID
+当结算主体类型为SecondMerchant，传二级商户ID(smid)；结算主体类型为Store时，传门店ID
 	 */
 	@ApiField("settle_entity_id")
 	private String settleEntityId;
@@ -69,6 +69,7 @@ defaultSettle: 按默认结算规则结算
 	/**
 	 * 结算主体类型。
 SecondMerchant：结算主体为二级商户
+Store：结算主体为门店
 	 */
 	@ApiField("settle_entity_type")
 	private String settleEntityType;

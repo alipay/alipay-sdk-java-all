@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车运力推荐查询接口
  *
  * @author auto create
- * @since 1.0, 2022-10-14 16:49:30
+ * @since 1.0, 2023-07-24 19:31:47
  */
 public class AlipayCommerceTransportTaxiTranscapQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7721962723514772454L;
+	private static final long serialVersionUID = 4322386569375152581L;
 
 	/**
 	 * 车牌号

@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.version.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 22:11:53
+ * @since 1.0, 2023-07-24 13:32:03
  */
 public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7186949797945563648L;
+	private static final long serialVersionUID = 3419829798173919387L;
 
 	/** 
 	 * 小程序应用描述
@@ -198,7 +198,7 @@ REJECT：驳回
 	private List<RegionInfo> serviceRegionInfo;
 
 	/** 
-	 * 小程序服务区域类型，GLOBLE-全球，CHINA-中国，LOCATION-指定区域
+	 * 小程序服务区域类型
 	 */
 	@ApiField("service_region_type")
 	private String serviceRegionType;

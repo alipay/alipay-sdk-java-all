@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料bom明细
  *
  * @author auto create
- * @since 1.0, 2023-02-06 14:15:52
+ * @since 1.0, 2023-07-21 18:04:09
  */
 public class AssetBomItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6766662237719783548L;
+	private static final long serialVersionUID = 5593698475628819222L;
+
+	/**
+	 * 业务类型
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/**
 	 * 子物料数量
@@ -30,6 +36,25 @@ public class AssetBomItem extends AlipayObject {
 	 */
 	@ApiField("item_name")
 	private String itemName;
+
+	/**
+	 * 物料发布状态
+	 */
+	@ApiField("release_status")
+	private String releaseStatus;
+
+	/**
+	 * 状态
+	 */
+	@ApiField("status")
+	private String status;
+
+	public String getBizType() {
+		return this.bizType;
+	}
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
+	}
 
 	public Long getCount() {
 		return this.count;
@@ -50,6 +75,20 @@ public class AssetBomItem extends AlipayObject {
 	}
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+
+	public String getReleaseStatus() {
+		return this.releaseStatus;
+	}
+	public void setReleaseStatus(String releaseStatus) {
+		this.releaseStatus = releaseStatus;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签呗电子签约合同模板查询视图对象。
  *
  * @author auto create
- * @since 1.0, 2023-06-19 19:08:59
+ * @since 1.0, 2023-07-24 11:47:15
  */
 public class ContractTemplateOpenVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2163798861116116578L;
+	private static final long serialVersionUID = 1385383967785617858L;
 
 	/**
 	 * 企业印章类型矩形框组件可选。
@@ -48,6 +48,13 @@ public class ContractTemplateOpenVO extends AlipayObject {
 	 */
 	@ApiField("preview_url")
 	private String previewUrl;
+
+	/**
+	 * 单行文本组件框列表
+	 */
+	@ApiListField("singleline_text_rects")
+	@ApiField("multiline_text_rect_open_v_o")
+	private List<MultilineTextRectOpenVO> singlelineTextRects;
 
 	/**
 	 * 合同模板ID，如果存在则为唯一值，由系统生成，在保存成功后会返回该值。
@@ -119,6 +126,13 @@ public class ContractTemplateOpenVO extends AlipayObject {
 	}
 	public void setPreviewUrl(String previewUrl) {
 		this.previewUrl = previewUrl;
+	}
+
+	public List<MultilineTextRectOpenVO> getSinglelineTextRects() {
+		return this.singlelineTextRects;
+	}
+	public void setSinglelineTextRects(List<MultilineTextRectOpenVO> singlelineTextRects) {
+		this.singlelineTextRects = singlelineTextRects;
 	}
 
 	public String getTemplateId() {

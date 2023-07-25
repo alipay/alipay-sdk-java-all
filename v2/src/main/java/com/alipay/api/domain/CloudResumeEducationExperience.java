@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育经历
  *
  * @author auto create
- * @since 1.0, 2022-05-07 09:57:14
+ * @since 1.0, 2023-07-25 16:04:39
  */
 public class CloudResumeEducationExperience extends AlipayObject {
 
-	private static final long serialVersionUID = 1735887992125232748L;
+	private static final long serialVersionUID = 7164738176564898791L;
 
 	/**
 	 * 学历
@@ -30,6 +30,12 @@ public class CloudResumeEducationExperience extends AlipayObject {
 	 */
 	@ApiField("location")
 	private String location;
+
+	/**
+	 * 上学专业
+	 */
+	@ApiField("major")
+	private String major;
 
 	/**
 	 * 月
@@ -68,6 +74,13 @@ public class CloudResumeEducationExperience extends AlipayObject {
 	}
 	public void setLocation(String location) {
 		this.location = location;
+	}
+
+	public String getMajor() {
+		return this.major;
+	}
+	public void setMajor(String major) {
+		this.major = major;
 	}
 
 	public Long getMonth() {

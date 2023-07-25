@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandShopReceiptaccountSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2398811868137869721L;
+	private static final long serialVersionUID = 1885155781416542933L;
 
 	/**
 	 * 是否承诺收单账号信息准确。具体承诺信息可查看 <a href="https://gw.alipayobjects.com/os/bmw-prod/922bafa8-a712-4f79-aa32-6f08d7359a5c.docx">门店信息承诺函</a>。

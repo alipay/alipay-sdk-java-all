@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 搜索直达活动视频信息
  *
  * @author auto create
- * @since 1.0, 2022-04-08 15:27:52
+ * @since 1.0, 2023-07-24 16:33:44
  */
 public class SearchBoxActivityVideoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7412893134123687436L;
+	private static final long serialVersionUID = 4343238432176777664L;
 
 	/**
 	 * 视频按钮文案，2-4个汉字

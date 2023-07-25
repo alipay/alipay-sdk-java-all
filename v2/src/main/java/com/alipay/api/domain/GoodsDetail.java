@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息
  *
  * @author auto create
- * @since 1.0, 2023-07-17 15:00:54
+ * @since 1.0, 2023-07-25 15:51:14
  */
 public class GoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6115556859211447866L;
+	private static final long serialVersionUID = 5719253467519342431L;
 
 	/**
 	 * 支付宝定义的统一商品编号
@@ -38,7 +38,8 @@ public class GoodsDetail extends AlipayObject {
 	private String goodsCategory;
 
 	/**
-	 * 商品的编号
+	 * 商品的编号，该参数传入支付券上绑定商品goods_id,
+倘若无支付券需要消费，该字段传入商品最小粒度的商品ID（如：若商品有sku粒度，则传商户sku粒度的ID）
 	 */
 	@ApiField("goods_id")
 	private String goodsId;
@@ -50,13 +51,16 @@ public class GoodsDetail extends AlipayObject {
 	private String goodsName;
 
 	/**
-	 * 商家侧小程序商品ID，具体使用方式请参考：https://opendocs.alipay.com/pre-open/06uila?pathHash=87297d0a
+	 * 商家侧小程序商品ID，指商家提报给小程序商品库的商品。
+如果您已为小程序商品配置了优惠券，则该out_item_id必须传入。了解小程序商品请参考：https://opendocs.alipay.com/pre-open/06uila?pathHash=87297d0a
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
 
 	/**
-	 * 商家侧小程序商品sku ID，具体使用方式请参考：https://opendocs.alipay.com/pre-open/06uila?pathHash=87297d0a
+	 * 商家侧小程序商品sku ID。
+如果您的商品无多个sku，则仅需要传入out_item_id，无需传入out_sku_id；
+如果您的商品有多个sku，则须传入out_item_id、out_sku_id。
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
@@ -68,7 +72,7 @@ public class GoodsDetail extends AlipayObject {
 	private String price;
 
 	/**
-	 * 商品数量，支持小数，精确到小数点后两位
+	 * 商品数量
 	 */
 	@ApiField("quantity")
 	private Long quantity;

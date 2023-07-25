@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCplifeCommunityModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6829516769638457343L;
+	private static final long serialVersionUID = 4682829838742888767L;
 
 	/** 
 	 * 小区变更成功后，若从当前状态到下一状态需要完成下一步条件代码。则返回该字段，否则不返回。

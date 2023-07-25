@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量结算详情
  *
  * @author auto create
- * @since 1.0, 2023-03-10 13:07:34
+ * @since 1.0, 2023-07-21 19:42:53
  */
 public class BatchSettleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5681915954642824163L;
+	private static final long serialVersionUID = 1149261475266218941L;
 
 	/**
 	 * 结算金额，单位为元
@@ -74,7 +74,8 @@ alipayBalance: 结算账户为支付宝余额户
 
 	/**
 	 * 结算主体类型。
-SecondMerchant：结算主体为二级商户
+SecondMerchant：结算主体为二级商户;
+Store：结算主体为门店；
 	 */
 	@ApiField("settle_entity_type")
 	private String settleEntityType;

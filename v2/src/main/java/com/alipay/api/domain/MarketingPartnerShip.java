@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 委托营销合作关系
  *
  * @author auto create
- * @since 1.0, 2022-04-20 17:38:53
+ * @since 1.0, 2023-07-21 11:27:09
  */
 public class MarketingPartnerShip extends AlipayObject {
 
-	private static final long serialVersionUID = 3853153485581392619L;
+	private static final long serialVersionUID = 1591741264188586881L;
 
 	/**
 	 * 被授权数据
