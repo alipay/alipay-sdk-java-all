@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取文件下载路径响应
  *
  * @author auto create
- * @since 1.0, 2023-06-15 14:48:43
+ * @since 1.0, 2023-07-27 15:25:49
  */
 public class DownloadUrlResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6474966498156381469L;
+	private static final long serialVersionUID = 2449589288995993219L;
 
 	/**
 	 * 文件下载地址
@@ -20,7 +20,7 @@ public class DownloadUrlResponse extends AlipayObject {
 	private String downloadUrl;
 
 	/**
-	 * 文件ID
+	 * 文件ID(唯一)，文件的唯一索引ID，上传文件后系统会创建返回该文件的文件ID
 	 */
 	@ApiField("file_id")
 	private String fileId;

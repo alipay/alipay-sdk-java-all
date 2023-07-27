@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialBaseBcClustersettingModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6419128551691599635L;
+	private static final long serialVersionUID = 8137152625452368299L;
 
 	/**
 	 * 客户群分组id，此id唯一，分组下会管理一系列的客户群

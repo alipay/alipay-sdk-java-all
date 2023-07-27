@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditContractBorrowReturnResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3815737143863122811L;
+	private static final long serialVersionUID = 6179483587557732998L;
 
 	
 

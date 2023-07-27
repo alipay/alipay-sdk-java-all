@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 臻晨测试专用，他人勿动
  *
  * @author auto create
- * @since 1.0, 2023-07-06 17:23:01
+ * @since 1.0, 2023-07-26 15:49:19
  */
 public class AlipayOpenOperationOpenbizmockTestdcQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5857743726717662144L;
+	private static final long serialVersionUID = 8422894938252742962L;
 
 	/**
 	 * 详细地址
@@ -134,6 +134,12 @@ public class AlipayOpenOperationOpenbizmockTestdcQueryModel extends AlipayObject
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("sss")
+	private String sss;
 
 	/**
 	 * 1
@@ -284,6 +290,13 @@ public class AlipayOpenOperationOpenbizmockTestdcQueryModel extends AlipayObject
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getSss() {
+		return this.sss;
+	}
+	public void setSss(String sss) {
+		this.sss = sss;
 	}
 
 	public String getUid() {

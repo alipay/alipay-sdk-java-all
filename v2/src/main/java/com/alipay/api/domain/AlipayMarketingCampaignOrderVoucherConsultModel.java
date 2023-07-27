@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCampaignOrderVoucherConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8369537189583973579L;
+	private static final long serialVersionUID = 3426469784224197314L;
 
 	/**
 	 * 业务参数大字段，优惠咨询的控制参数，json格式；目前支持传入useBigAmountSkipOrderThold为N来控制不使用大金额跳过优惠的订单门槛检查；默认不传；

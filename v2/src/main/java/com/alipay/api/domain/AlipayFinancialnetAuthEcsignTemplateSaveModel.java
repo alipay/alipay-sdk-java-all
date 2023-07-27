@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签呗电子签约合同模板配置保存服务
  *
  * @author auto create
- * @since 1.0, 2023-06-19 15:48:58
+ * @since 1.0, 2023-07-27 11:30:17
  */
 public class AlipayFinancialnetAuthEcsignTemplateSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3532884814651367838L;
+	private static final long serialVersionUID = 2677651428118797831L;
 
 	/**
 	 * 企业印章类型矩形框组件可选。
@@ -36,6 +36,13 @@ public class AlipayFinancialnetAuthEcsignTemplateSaveModel extends AlipayObject 
 	@ApiListField("personal_seal_rects")
 	@ApiField("personal_seal_rect_open_v_o")
 	private List<PersonalSealRectOpenVO> personalSealRects;
+
+	/**
+	 * 单行文本组件框列表
+	 */
+	@ApiListField("singleline_text_rects")
+	@ApiField("multiline_text_rect_open_v_o")
+	private List<MultilineTextRectOpenVO> singlelineTextRects;
 
 	/**
 	 * 模板文件ID，唯一值，由文件上传接口返回。
@@ -93,6 +100,13 @@ public class AlipayFinancialnetAuthEcsignTemplateSaveModel extends AlipayObject 
 	}
 	public void setPersonalSealRects(List<PersonalSealRectOpenVO> personalSealRects) {
 		this.personalSealRects = personalSealRects;
+	}
+
+	public List<MultilineTextRectOpenVO> getSinglelineTextRects() {
+		return this.singlelineTextRects;
+	}
+	public void setSinglelineTextRects(List<MultilineTextRectOpenVO> singlelineTextRects) {
+		this.singlelineTextRects = singlelineTextRects;
 	}
 
 	public String getTemplateFileId() {

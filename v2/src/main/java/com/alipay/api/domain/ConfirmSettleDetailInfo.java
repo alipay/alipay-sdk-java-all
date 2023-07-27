@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算消息通知内容
  *
  * @author auto create
- * @since 1.0, 2023-06-26 15:45:58
+ * @since 1.0, 2023-07-27 13:59:07
  */
 public class ConfirmSettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1762856251562166597L;
+	private static final long serialVersionUID = 8842469329883293664L;
 
 	/**
 	 * 仅当trans_in_type为userId时，返回脱敏的支付宝登录号。
@@ -34,7 +34,8 @@ public class ConfirmSettleDetailInfo extends AlipayObject {
 	/**
 	 * 结算主体类型。 
 二级商户:SecondMerchant;
-商户或者直连商户门店:Store
+商户门店:Store;
+直连商户:Partner
 	 */
 	@ApiField("settle_entity_type")
 	private String settleEntityType;

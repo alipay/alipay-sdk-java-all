@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ai open search用户行为上报
  *
  * @author auto create
- * @since 1.0, 2023-07-13 18:18:24
+ * @since 1.0, 2023-07-26 16:48:28
  */
 public class AlipayOpenMiniCloudAosbehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2298711227891425276L;
+	private static final long serialVersionUID = 2173488862286134251L;
 
 	/**
 	 * 行为类型

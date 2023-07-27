@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.uploadurl.get request
  * 
  * @author auto create
- * @since 1.0, 2023-06-28 10:16:56
+ * @since 1.0, 2023-07-27 15:16:59
  */
 public class AlipayCloudCloudrunObjectstorageUploadurlGetRequest implements AlipayRequest<AlipayCloudCloudrunObjectstorageUploadurlGetResponse> {
 

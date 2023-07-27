@@ -7,23 +7,36 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对象存储获取文件上传地址
  *
  * @author auto create
- * @since 1.0, 2023-06-27 20:30:16
+ * @since 1.0, 2023-07-27 15:13:16
  */
 public class AlipayCloudCloudrunObjectstorageUploadurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3714257687598214515L;
+	private static final long serialVersionUID = 6749316634389265848L;
 
 	/**
-	 * 环境ID
+	 * 内部使用，uiam角色扮演token
+	 */
+	@ApiField("assume_token")
+	private String assumeToken;
+
+	/**
+	 * 环境ID，唯一，开通小程序云系统会生成环境ID，请从开通页面获取
 	 */
 	@ApiField("env")
 	private String env;
 
 	/**
-	 * 文件上传路径
+	 * 文件上传路径，请以"/"开头，此为期望在对象存储上保存的文件路径
 	 */
 	@ApiField("path")
 	private String path;
+
+	public String getAssumeToken() {
+		return this.assumeToken;
+	}
+	public void setAssumeToken(String assumeToken) {
+		this.assumeToken = assumeToken;
+	}
 
 	public String getEnv() {
 		return this.env;

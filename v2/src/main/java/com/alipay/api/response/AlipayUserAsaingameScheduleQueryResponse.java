@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAsaingameScheduleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7378717644798721896L;
+	private static final long serialVersionUID = 1345471375854388428L;
 
 	/** 
 	 * 错误码

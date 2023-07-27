@@ -10,24 +10,37 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 对象存储删除文件
  *
  * @author auto create
- * @since 1.0, 2023-06-15 14:48:50
+ * @since 1.0, 2023-07-27 15:12:53
  */
 public class AlipayCloudCloudrunObjectstorageFilelistDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6622498327912537696L;
+	private static final long serialVersionUID = 8246834237375394925L;
 
 	/**
-	 * 环境ID
+	 * 内部使用 uiam角色扮演token
+	 */
+	@ApiField("assume_token")
+	private String assumeToken;
+
+	/**
+	 * 环境ID，唯一，开通小程序云系统会生成环境ID，请从开通页面获取
 	 */
 	@ApiField("env")
 	private String env;
 
 	/**
-	 * 要删除的文件id列表
+	 * 要删除的文件id列表，文件id为文件的唯一索引ID，上传文件后系统会创建返回该文件的文件id
 	 */
 	@ApiListField("file_id_list")
 	@ApiField("string")
 	private List<String> fileIdList;
+
+	public String getAssumeToken() {
+		return this.assumeToken;
+	}
+	public void setAssumeToken(String assumeToken) {
+		this.assumeToken = assumeToken;
+	}
 
 	public String getEnv() {
 		return this.env;

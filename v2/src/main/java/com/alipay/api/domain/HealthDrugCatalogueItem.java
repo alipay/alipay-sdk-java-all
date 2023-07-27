@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康门诊险药品目录项
  *
  * @author auto create
- * @since 1.0, 2023-06-20 11:21:47
+ * @since 1.0, 2023-07-27 11:20:21
  */
 public class HealthDrugCatalogueItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4472452235915862286L;
+	private static final long serialVersionUID = 6138335116848136878L;
 
 	/**
 	 * 是否是目录内药品

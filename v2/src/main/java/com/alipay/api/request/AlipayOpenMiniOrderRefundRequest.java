@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.order.refund request
  * 
  * @author auto create
- * @since 1.0, 2023-06-08 19:31:58
+ * @since 1.0, 2023-07-26 11:09:40
  */
 public class AlipayOpenMiniOrderRefundRequest implements AlipayRequest<AlipayOpenMiniOrderRefundResponse> {
 

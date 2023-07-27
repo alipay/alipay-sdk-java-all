@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连iot设备和间连商户绑定
  *
  * @author auto create
- * @since 1.0, 2022-10-14 16:59:22
+ * @since 1.0, 2023-07-27 18:22:31
  */
 public class AlipayMerchantIndirectIotBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4681153469826467467L;
+	private static final long serialVersionUID = 2471226346154427862L;
 
 	/**
 	 * 不同物联网平台接入渠道不同值，支付宝物联网平台传设备SN号，阿里云物联网平台传设备deviceName

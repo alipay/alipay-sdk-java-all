@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * OSS文件详情
  *
  * @author auto create
- * @since 1.0, 2023-06-15 14:48:08
+ * @since 1.0, 2023-07-27 15:25:54
  */
 public class OssObjectDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2229897714375424973L;
+	private static final long serialVersionUID = 1144624155784588742L;
 
 	/**
-	 * 文件id
+	 * 文件创建时间，格式为0时区iso8601格式
+	 */
+	@ApiField("create_time")
+	private String createTime;
+
+	/**
+	 * 文件ID(唯一)，文件的唯一索引ID，上传文件后系统会创建返回该文件的文件ID
 	 */
 	@ApiField("file_id")
 	private String fileId;
@@ -26,7 +32,7 @@ public class OssObjectDetail extends AlipayObject {
 	private String fileName;
 
 	/**
-	 * 文件大小
+	 * 文件大小，单位为Byte
 	 */
 	@ApiField("size")
 	private Long size;
@@ -36,6 +42,13 @@ public class OssObjectDetail extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	public String getCreateTime() {
+		return this.createTime;
+	}
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
 
 	public String getFileId() {
 		return this.fileId;

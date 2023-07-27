@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收藏有礼活动查询详细入参
  *
  * @author auto create
- * @since 1.0, 2018-12-26 15:47:30
+ * @since 1.0, 2023-07-26 09:52:58
  */
 public class ActivityQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6623185231228345221L;
+	private static final long serialVersionUID = 3843555154151767138L;
 
 	/**
 	 * 新用户活动模版

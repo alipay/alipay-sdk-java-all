@@ -10,14 +10,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询对象存储文件列表
  *
  * @author auto create
- * @since 1.0, 2023-06-15 14:48:08
+ * @since 1.0, 2023-07-27 15:25:54
  */
 public class AlipayCloudCloudrunObjectstorageFilelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6479474787733599179L;
+	private static final long serialVersionUID = 5367141591415576887L;
 
 	/**
-	 * 云托管环境ID
+	 * 内部使用 uiam角色扮演token
+	 */
+	@ApiField("assume_token")
+	private String assumeToken;
+
+	/**
+	 * 环境ID，唯一，开通小程序云系统会生成环境ID，请从开通页面获取
 	 */
 	@ApiField("env")
 	private String env;
@@ -30,7 +36,7 @@ public class AlipayCloudCloudrunObjectstorageFilelistQueryModel extends AlipayOb
 	private List<String> fileIdList;
 
 	/**
-	 * 文件列表游标索引
+	 * 文件列表游标索引，next_token为文件分页参数，在本接口的响应中获取，传入next_token以获取下一页数据
 	 */
 	@ApiField("next_token")
 	private String nextToken;
@@ -46,6 +52,13 @@ public class AlipayCloudCloudrunObjectstorageFilelistQueryModel extends AlipayOb
 	 */
 	@ApiField("prefix")
 	private String prefix;
+
+	public String getAssumeToken() {
+		return this.assumeToken;
+	}
+	public void setAssumeToken(String assumeToken) {
+		this.assumeToken = assumeToken;
+	}
 
 	public String getEnv() {
 		return this.env;

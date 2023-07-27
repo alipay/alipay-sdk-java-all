@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusinessPoint extends AlipayObject {
 
-	private static final long serialVersionUID = 8429322416639548788L;
+	private static final long serialVersionUID = 6523467852679317469L;
 
 	/**
 	 * 点位描述

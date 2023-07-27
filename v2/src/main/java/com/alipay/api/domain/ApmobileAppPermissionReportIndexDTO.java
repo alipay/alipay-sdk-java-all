@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 检测报告基本信息
  *
  * @author auto create
- * @since 1.0, 2023-06-29 15:58:39
+ * @since 1.0, 2023-07-27 09:43:55
  */
 public class ApmobileAppPermissionReportIndexDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1269666659595137688L;
+	private static final long serialVersionUID = 7288546671193978619L;
 
 	/**
 	 * 版本号
@@ -24,7 +24,7 @@ public class ApmobileAppPermissionReportIndexDTO extends AlipayObject {
 	/**
 	 * 证书摘要
 	 */
-	@ApiField("cert_md5")
+	@ApiField("cert_md_5")
 	private String certMd5;
 
 	/**
@@ -42,7 +42,7 @@ public class ApmobileAppPermissionReportIndexDTO extends AlipayObject {
 	/**
 	 * 文件摘要
 	 */
-	@ApiField("md5")
+	@ApiField("md_5")
 	private String md5;
 
 	/**
