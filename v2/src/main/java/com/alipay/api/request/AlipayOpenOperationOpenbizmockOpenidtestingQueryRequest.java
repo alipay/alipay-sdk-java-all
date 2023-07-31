@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.openbizmock.openidtesting.query request
  * 
  * @author auto create
- * @since 1.0, 2022-11-21 22:14:26
+ * @since 1.0, 2023-07-31 17:22:01
  */
 public class AlipayOpenOperationOpenbizmockOpenidtestingQueryRequest implements AlipayRequest<AlipayOpenOperationOpenbizmockOpenidtestingQueryResponse> {
 

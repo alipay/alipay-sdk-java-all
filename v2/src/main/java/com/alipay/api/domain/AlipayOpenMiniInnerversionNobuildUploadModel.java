@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手淘小程序产物包免构建版本上传
  *
  * @author auto create
- * @since 1.0, 2023-02-08 14:08:17
+ * @since 1.0, 2023-07-28 10:33:08
  */
 public class AlipayOpenMiniInnerversionNobuildUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6758923978484626877L;
+	private static final long serialVersionUID = 2673752477932779842L;
 
 	/**
 	 * 扩展信息，比如adaptorName、tinycliVersion、tinycliName、import-module、allowPrecompile、extJson、allowInstallDependency、aggregationMainAppId，如果没有特殊要求，tinycliVersion版本请用最新的： https://registry.npm.alibaba-inc.com/@alipay/tiny-cli/huoban-prod

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ai open search底纹搜索接口
  *
  * @author auto create
- * @since 1.0, 2023-07-19 14:11:54
+ * @since 1.0, 2023-07-31 16:55:51
  */
 public class AlipayOpenMiniCloudAoshintQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7725287933348283213L;
+	private static final long serialVersionUID = 6184579724691588413L;
 
 	/**
 	 * 用户当前城市编码
@@ -54,12 +54,6 @@ public class AlipayOpenMiniCloudAoshintQueryModel extends AlipayObject {
 	 */
 	@ApiField("project_id")
 	private String projectId;
-
-	/**
-	 * 可以关联到用户的标识信息，用于关联用户的特征。例如手机号、设备号、邮箱等。格式为：“类型#sha256(值）”，类型枚举有：PHONE（手机号）、DEVICE（设备号）、EMAIL（邮箱）等，具体的值是用sha256进行哈希之后的hex表示，多个标识信息用,分割
-	 */
-	@ApiField("relevant_id")
-	private String relevantId;
 
 	/**
 	 * 默认值5，hit范围：(0,10]
@@ -132,13 +126,6 @@ public class AlipayOpenMiniCloudAoshintQueryModel extends AlipayObject {
 	}
 	public void setProjectId(String projectId) {
 		this.projectId = projectId;
-	}
-
-	public String getRelevantId() {
-		return this.relevantId;
-	}
-	public void setRelevantId(String relevantId) {
-		this.relevantId = relevantId;
 	}
 
 	public String getSize() {

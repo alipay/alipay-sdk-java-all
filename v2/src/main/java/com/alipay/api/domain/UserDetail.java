@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * userid测试
  *
  * @author auto create
- * @since 1.0, 2022-11-21 22:00:22
+ * @since 1.0, 2023-07-28 17:40:40
  */
 public class UserDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4299487258166222754L;
+	private static final long serialVersionUID = 4148192531256532114L;
+
+	/**
+	 * 1
+	 */
+	@ApiField("appid_one")
+	private String appidOne;
 
 	/**
 	 * userid列表
@@ -41,6 +47,13 @@ public class UserDetail extends AlipayObject {
 	@ApiListField("user_id_list")
 	@ApiField("string")
 	private List<String> userIdList;
+
+	public String getAppidOne() {
+		return this.appidOne;
+	}
+	public void setAppidOne(String appidOne) {
+		this.appidOne = appidOne;
+	}
 
 	public List<String> getListOpenId() {
 		return this.listOpenId;

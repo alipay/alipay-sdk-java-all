@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * wzw公有complex
  *
  * @author auto create
- * @since 1.0, 2023-07-17 20:33:40
+ * @since 1.0, 2023-07-31 17:57:05
  */
 public class PublicComplex extends AlipayObject {
 
-	private static final long serialVersionUID = 8513266686443864548L;
+	private static final long serialVersionUID = 5742814784341369285L;
+
+	/**
+	 * test
+	 */
+	@ApiField("complex_testa")
+	private PublicComplexWzw complexTesta;
 
 	/**
 	 * 1test
@@ -61,6 +67,13 @@ public class PublicComplex extends AlipayObject {
 	 */
 	@ApiField("update_test")
 	private String updateTest;
+
+	public PublicComplexWzw getComplexTesta() {
+		return this.complexTesta;
+	}
+	public void setComplexTesta(PublicComplexWzw complexTesta) {
+		this.complexTesta = complexTesta;
+	}
 
 	public List<Boolean> getTestBoolean() {
 		return this.testBoolean;

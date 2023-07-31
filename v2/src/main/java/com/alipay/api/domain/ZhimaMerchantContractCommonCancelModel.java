@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantContractCommonCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6652755441888763764L;
+	private static final long serialVersionUID = 6499755944814951129L;
 
 	/**
 	 * 合约单号

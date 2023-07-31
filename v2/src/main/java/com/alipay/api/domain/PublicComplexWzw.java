@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * wzw公有复杂类型
  *
  * @author auto create
- * @since 1.0, 2023-07-17 20:33:40
+ * @since 1.0, 2023-07-31 17:55:47
  */
 public class PublicComplexWzw extends AlipayObject {
 
-	private static final long serialVersionUID = 7564924495229898563L;
+	private static final long serialVersionUID = 3514232112458863695L;
+
+	/**
+	 * test
+	 */
+	@ApiField("complex_a")
+	private CorporateSealRectOpenVO complexA;
 
 	/**
 	 * test
@@ -41,6 +47,13 @@ public class PublicComplexWzw extends AlipayObject {
 	 */
 	@ApiField("test_string_open_id")
 	private String testStringOpenId;
+
+	public CorporateSealRectOpenVO getComplexA() {
+		return this.complexA;
+	}
+	public void setComplexA(CorporateSealRectOpenVO complexA) {
+		this.complexA = complexA;
+	}
 
 	public List<Boolean> getTestBoolean() {
 		return this.testBoolean;

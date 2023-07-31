@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品更新接口
  *
  * @author auto create
- * @since 1.0, 2023-07-19 16:11:05
+ * @since 1.0, 2023-07-30 15:37:54
  */
 public class AlipayOpenAppItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8413482782899227556L;
+	private static final long serialVersionUID = 6376461247214824798L;
 
 	/**
 	 * 商品属性
@@ -67,10 +67,22 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 	private List<String> imageList;
 
 	/**
+	 * 1=官方插件版，商品详情页链接不传入 0=自定义详情页版，商品详情页链接必须传入
+	 */
+	@ApiField("item_details_page_model")
+	private String itemDetailsPageModel;
+
+	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 商品类型，默认为实物商品
+	 */
+	@ApiField("item_type")
+	private String itemType;
 
 	/**
 	 * 商品原价，分为单位。若填写了skus[]数组，此字段不用填写。若未填写skus[]数组，此字段必填。如果填写，值必须大于0，且原价不能小于售价。
@@ -187,11 +199,25 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 		this.imageList = imageList;
 	}
 
+	public String getItemDetailsPageModel() {
+		return this.itemDetailsPageModel;
+	}
+	public void setItemDetailsPageModel(String itemDetailsPageModel) {
+		this.itemDetailsPageModel = itemDetailsPageModel;
+	}
+
 	public String getItemId() {
 		return this.itemId;
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getItemType() {
+		return this.itemType;
+	}
+	public void setItemType(String itemType) {
+		this.itemType = itemType;
 	}
 
 	public Long getOriginalPrice() {

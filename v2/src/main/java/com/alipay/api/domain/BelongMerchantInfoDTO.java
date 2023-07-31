@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BelongMerchantInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6641622977387884819L;
+	private static final long serialVersionUID = 4741213333712875418L;
 
 	/**
 	 * 合作业务类型,默认为ISV_FOR_MERCHANT

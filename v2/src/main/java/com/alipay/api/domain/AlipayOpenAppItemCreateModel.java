@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品创建接口
  *
  * @author auto create
- * @since 1.0, 2023-07-04 21:11:53
+ * @since 1.0, 2023-07-30 15:47:54
  */
 public class AlipayOpenAppItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5165536273167285266L;
+	private static final long serialVersionUID = 4486388438669639546L;
 
 	/**
 	 * 商品属性
@@ -67,6 +67,18 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	@ApiListField("image_list")
 	@ApiField("string")
 	private List<String> imageList;
+
+	/**
+	 * 1=官方插件版，商品详情页链接不传入 0=自定义详情页版，商品详情页链接必须传入
+	 */
+	@ApiField("item_details_page_model")
+	private String itemDetailsPageModel;
+
+	/**
+	 * 商品类型，默认为实物商品
+	 */
+	@ApiField("item_type")
+	private String itemType;
 
 	/**
 	 * 商品原价，分为单位。
@@ -187,6 +199,20 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	}
 	public void setImageList(List<String> imageList) {
 		this.imageList = imageList;
+	}
+
+	public String getItemDetailsPageModel() {
+		return this.itemDetailsPageModel;
+	}
+	public void setItemDetailsPageModel(String itemDetailsPageModel) {
+		this.itemDetailsPageModel = itemDetailsPageModel;
+	}
+
+	public String getItemType() {
+		return this.itemType;
+	}
+	public void setItemType(String itemType) {
+		this.itemType = itemType;
 	}
 
 	public Long getOriginalPrice() {

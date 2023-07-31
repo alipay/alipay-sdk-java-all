@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundZcardprodUserBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4167891229418855498L;
+	private static final long serialVersionUID = 1316318384183466528L;
 
 	/**
 	 * 商户的账户id

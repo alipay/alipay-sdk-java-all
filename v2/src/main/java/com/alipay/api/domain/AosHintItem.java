@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 底纹搜索实体
  *
  * @author auto create
- * @since 1.0, 2023-07-17 15:39:40
+ * @since 1.0, 2023-07-31 16:55:51
  */
 public class AosHintItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5673244575618743286L;
+	private static final long serialVersionUID = 2781999733518955527L;
+
+	/**
+	 * 业务链路ID
+	 */
+	@ApiField("biz_trace_id")
+	private String bizTraceId;
 
 	/**
 	 * item的打分
@@ -32,10 +38,18 @@ public class AosHintItem extends AlipayObject {
 	private String title;
 
 	/**
-	 * 热搜item的trace_id用于关联搜索结果和用户行为
+	 * 热搜item的trace_id用于关联搜索结果和用户行为 当前字段已废弃(接口改造导致参数冲突)
 	 */
 	@ApiField("trace_id")
+	@Deprecated
 	private String traceId;
+
+	public String getBizTraceId() {
+		return this.bizTraceId;
+	}
+	public void setBizTraceId(String bizTraceId) {
+		this.bizTraceId = bizTraceId;
+	}
 
 	public String getScore() {
 		return this.score;

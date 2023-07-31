@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 钱包操作流水查询
  *
  * @author auto create
- * @since 1.0, 2023-06-27 18:35:08
+ * @since 1.0, 2023-07-31 17:50:26
  */
 public class AlipayFundWalletOperationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7898567937841862395L;
+	private static final long serialVersionUID = 7274519572555481364L;
 
 	/**
 	 * 业务场景
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 业务类型
+	 */
+	@ApiListField("biz_types")
+	@ApiField("string")
+	private List<String> bizTypes;
 
 	/**
 	 * 当前页
@@ -60,6 +70,13 @@ public class AlipayFundWalletOperationQueryModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public List<String> getBizTypes() {
+		return this.bizTypes;
+	}
+	public void setBizTypes(List<String> bizTypes) {
+		this.bizTypes = bizTypes;
 	}
 
 	public String getCurrentPage() {

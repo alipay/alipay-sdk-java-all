@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ai open search搜索接口
  *
  * @author auto create
- * @since 1.0, 2023-07-21 16:44:52
+ * @since 1.0, 2023-07-31 17:12:53
  */
 public class AlipayOpenMiniCloudAositemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2671491646987396432L;
+	private static final long serialVersionUID = 6738443127168725792L;
 
 	/**
 	 * 需要进行聚合返回的字段，如需要对搜索的结果的发货地字段进行聚合，则将发货地对应的字段名称传给后段既可
@@ -119,12 +119,6 @@ public class AlipayOpenMiniCloudAositemQueryModel extends AlipayObject {
 	 */
 	@ApiField("query")
 	private String query;
-
-	/**
-	 * 可以关联到用户的标识信息，用于关联用户的特征。例如手机号、设备号、邮箱等。格式为：“类型#sha256(值）”，类型枚举有：PHONE（手机号）、DEVICE（设备号）、EMAIL（邮箱）等，具体的值是用sha256进行哈希之后的hex表示，多个标识信息用,分割
-	 */
-	@ApiField("relevant_id")
-	private String relevantId;
 
 	/**
 	 * 标签列表，搜索结果只会包含该标签的商品，为空时代表返回所有的商品。多个条件是与的关系。
@@ -255,13 +249,6 @@ public class AlipayOpenMiniCloudAositemQueryModel extends AlipayObject {
 	}
 	public void setQuery(String query) {
 		this.query = query;
-	}
-
-	public String getRelevantId() {
-		return this.relevantId;
-	}
-	public void setRelevantId(String relevantId) {
-		this.relevantId = relevantId;
 	}
 
 	public List<String> getTags() {

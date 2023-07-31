@@ -7,11 +7,47 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网关测试接口——openid升级测试
  *
  * @author auto create
- * @since 1.0, 2022-11-21 22:14:26
+ * @since 1.0, 2023-07-31 17:17:14
  */
 public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7223385163563752239L;
+	private static final long serialVersionUID = 2392843223839379554L;
+
+	/**
+	 * 详细地址
+	 */
+	@ApiField("appid_one")
+	private String appidOne;
+
+	/**
+	 * appid_out_one
+	 */
+	@ApiField("appid_out_one")
+	private String appidOutOne;
+
+	/**
+	 * 1
+	 */
+	@ApiField("appid_out_three")
+	private String appidOutThree;
+
+	/**
+	 * 1
+	 */
+	@ApiField("appid_out_two")
+	private String appidOutTwo;
+
+	/**
+	 * 1
+	 */
+	@ApiField("appid_three")
+	private String appidThree;
+
+	/**
+	 * 1
+	 */
+	@ApiField("appid_two")
+	private String appidTwo;
 
 	/**
 	 * adadsad
@@ -26,10 +62,47 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends Alipa
 	private String extraJson1;
 
 	/**
+	 * 111
+	 */
+	@ApiField("lalala_openid")
+	private String lalalaOpenid;
+
+	/**
+	 * 营业执照有效期
+	 */
+	@ApiField("lalala_real_open_id")
+	private String lalalaRealOpenId;
+
+	/**
+	 * 营业执照有效期
+	 */
+	@ApiField("lalalala")
+	private String lalalala;
+
+	/**
+	 * 1
+	 */
+	@ApiField("one_open_id")
+	private String oneOpenId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("one_uid")
+	private String oneUid;
+
+	/**
 	 * uid
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 1 当前字段已废弃(lalalalalalala)
+	 */
+	@ApiField("result_oneuid_original")
+	@Deprecated
+	private String resultOneuidOriginal;
 
 	/**
 	 * ceshi
@@ -50,6 +123,30 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends Alipa
 	private String testWrong;
 
 	/**
+	 * 1
+	 */
+	@ApiField("three_open_id")
+	private String threeOpenId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("three_uid")
+	private String threeUid;
+
+	/**
+	 * 1
+	 */
+	@ApiField("two_open_id")
+	private String twoOpenId;
+
+	/**
+	 * 1
+	 */
+	@ApiField("two_uid")
+	private String twoUid;
+
+	/**
 	 * xxx
 	 */
 	@ApiField("user_detail")
@@ -60,6 +157,48 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends Alipa
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getAppidOne() {
+		return this.appidOne;
+	}
+	public void setAppidOne(String appidOne) {
+		this.appidOne = appidOne;
+	}
+
+	public String getAppidOutOne() {
+		return this.appidOutOne;
+	}
+	public void setAppidOutOne(String appidOutOne) {
+		this.appidOutOne = appidOutOne;
+	}
+
+	public String getAppidOutThree() {
+		return this.appidOutThree;
+	}
+	public void setAppidOutThree(String appidOutThree) {
+		this.appidOutThree = appidOutThree;
+	}
+
+	public String getAppidOutTwo() {
+		return this.appidOutTwo;
+	}
+	public void setAppidOutTwo(String appidOutTwo) {
+		this.appidOutTwo = appidOutTwo;
+	}
+
+	public String getAppidThree() {
+		return this.appidThree;
+	}
+	public void setAppidThree(String appidThree) {
+		this.appidThree = appidThree;
+	}
+
+	public String getAppidTwo() {
+		return this.appidTwo;
+	}
+	public void setAppidTwo(String appidTwo) {
+		this.appidTwo = appidTwo;
+	}
 
 	public String getExtraJson() {
 		return this.extraJson;
@@ -75,11 +214,53 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends Alipa
 		this.extraJson1 = extraJson1;
 	}
 
+	public String getLalalaOpenid() {
+		return this.lalalaOpenid;
+	}
+	public void setLalalaOpenid(String lalalaOpenid) {
+		this.lalalaOpenid = lalalaOpenid;
+	}
+
+	public String getLalalaRealOpenId() {
+		return this.lalalaRealOpenId;
+	}
+	public void setLalalaRealOpenId(String lalalaRealOpenId) {
+		this.lalalaRealOpenId = lalalaRealOpenId;
+	}
+
+	public String getLalalala() {
+		return this.lalalala;
+	}
+	public void setLalalala(String lalalala) {
+		this.lalalala = lalalala;
+	}
+
+	public String getOneOpenId() {
+		return this.oneOpenId;
+	}
+	public void setOneOpenId(String oneOpenId) {
+		this.oneOpenId = oneOpenId;
+	}
+
+	public String getOneUid() {
+		return this.oneUid;
+	}
+	public void setOneUid(String oneUid) {
+		this.oneUid = oneUid;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getResultOneuidOriginal() {
+		return this.resultOneuidOriginal;
+	}
+	public void setResultOneuidOriginal(String resultOneuidOriginal) {
+		this.resultOneuidOriginal = resultOneuidOriginal;
 	}
 
 	public OpenidComplex getTest() {
@@ -101,6 +282,34 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends Alipa
 	}
 	public void setTestWrong(String testWrong) {
 		this.testWrong = testWrong;
+	}
+
+	public String getThreeOpenId() {
+		return this.threeOpenId;
+	}
+	public void setThreeOpenId(String threeOpenId) {
+		this.threeOpenId = threeOpenId;
+	}
+
+	public String getThreeUid() {
+		return this.threeUid;
+	}
+	public void setThreeUid(String threeUid) {
+		this.threeUid = threeUid;
+	}
+
+	public String getTwoOpenId() {
+		return this.twoOpenId;
+	}
+	public void setTwoOpenId(String twoOpenId) {
+		this.twoOpenId = twoOpenId;
+	}
+
+	public String getTwoUid() {
+		return this.twoUid;
+	}
+	public void setTwoUid(String twoUid) {
+		this.twoUid = twoUid;
 	}
 
 	public UserDetail getUserDetail() {

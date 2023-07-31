@@ -15,14 +15,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 23:01:54
+ * @since 1.0, 2023-07-31 14:39:07
  */
 public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8587533884774677153L;
+	private static final long serialVersionUID = 3223858794522459662L;
 
 	/** 
-	 * 商品售卖属性列表，kv形式
+	 * 商品属性列表，kv形式
 	 */
 	@ApiListField("attrs")
 	@ApiField("app_item_attr_v_o")
@@ -84,10 +84,22 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	private Boolean isOnline;
 
 	/** 
+	 * 1=官方插件版，商品详情页链接不传入 0=自定义详情页版，商品详情页链接必须传入
+	 */
+	@ApiField("item_details_page_model")
+	private String itemDetailsPageModel;
+
+	/** 
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/** 
+	 * 商品类型
+	 */
+	@ApiField("item_type")
+	private String itemType;
 
 	/** 
 	 * 商品原价，分为单位。若填写了skus[]数组，此字段不返回值
@@ -235,11 +247,25 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 		return this.isOnline;
 	}
 
+	public void setItemDetailsPageModel(String itemDetailsPageModel) {
+		this.itemDetailsPageModel = itemDetailsPageModel;
+	}
+	public String getItemDetailsPageModel( ) {
+		return this.itemDetailsPageModel;
+	}
+
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 	public String getItemId( ) {
 		return this.itemId;
+	}
+
+	public void setItemType(String itemType) {
+		this.itemType = itemType;
+	}
+	public String getItemType( ) {
+		return this.itemType;
 	}
 
 	public void setOriginalPrice(Long originalPrice) {

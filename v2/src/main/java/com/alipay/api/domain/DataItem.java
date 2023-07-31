@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索结果数据实体
  *
  * @author auto create
- * @since 1.0, 2022-12-13 15:09:49
+ * @since 1.0, 2023-07-31 17:12:53
  */
 public class DataItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6645165153352893152L;
+	private static final long serialVersionUID = 2825785871365947517L;
+
+	/**
+	 * 业务链路id
+	 */
+	@ApiField("biz_trace_id")
+	private String bizTraceId;
 
 	/**
 	 * 根据搜索请求参数ext_res_field返回的指定字段
@@ -79,10 +85,18 @@ public class DataItem extends AlipayObject {
 	private String title;
 
 	/**
-	 * 搜索结果item的trace_id用于关联搜索结果和用户行为
+	 * 搜索结果item的trace_id用于关联搜索结果和用户行为 当前字段已废弃(接口改造导致字段冲突)
 	 */
 	@ApiField("trace_id")
+	@Deprecated
 	private String traceId;
+
+	public String getBizTraceId() {
+		return this.bizTraceId;
+	}
+	public void setBizTraceId(String bizTraceId) {
+		this.bizTraceId = bizTraceId;
+	}
 
 	public List<String> getExtResField() {
 		return this.extResField;

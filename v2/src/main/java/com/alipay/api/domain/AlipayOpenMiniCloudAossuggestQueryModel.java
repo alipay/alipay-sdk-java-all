@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ai open search下拉提示接口
  *
  * @author auto create
- * @since 1.0, 2023-07-19 14:11:51
+ * @since 1.0, 2023-07-31 17:21:20
  */
 public class AlipayOpenMiniCloudAossuggestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6393627448947595118L;
+	private static final long serialVersionUID = 3769764464459633863L;
 
 	/**
 	 * 用户当前城市编码
@@ -60,12 +60,6 @@ public class AlipayOpenMiniCloudAossuggestQueryModel extends AlipayObject {
 	 */
 	@ApiField("query")
 	private String query;
-
-	/**
-	 * 可以关联到用户的标识信息，用于关联用户的特征。例如手机号、设备号、邮箱等。格式为：“类型#sha256(值）”，类型枚举有：PHONE（手机号）、DEVICE（设备号）、EMAIL（邮箱）等，具体的值是用sha256进行哈希之后的hex表示，多个标识信息用,分割
-	 */
-	@ApiField("relevant_id")
-	private String relevantId;
 
 	/**
 	 * 期待返回的热搜结果数量，返回的热搜条数，默认5，(0,10]
@@ -139,13 +133,6 @@ public class AlipayOpenMiniCloudAossuggestQueryModel extends AlipayObject {
 	}
 	public void setQuery(String query) {
 		this.query = query;
-	}
-
-	public String getRelevantId() {
-		return this.relevantId;
-	}
-	public void setRelevantId(String relevantId) {
-		this.relevantId = relevantId;
 	}
 
 	public Long getSize() {

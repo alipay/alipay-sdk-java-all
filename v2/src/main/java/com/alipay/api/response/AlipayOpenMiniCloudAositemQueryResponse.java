@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.cloud.aositem.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-21 16:46:58
+ * @since 1.0, 2023-07-31 17:37:01
  */
 public class AlipayOpenMiniCloudAositemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6339738247641764427L;
+	private static final long serialVersionUID = 8884227783571138183L;
 
 	/** 
 	 * 返回请求参数中对应aggregation_field指定要聚合的字段的值

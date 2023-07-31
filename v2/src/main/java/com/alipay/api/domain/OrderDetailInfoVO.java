@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单详细数据
  *
  * @author auto create
- * @since 1.0, 2023-07-25 14:42:14
+ * @since 1.0, 2023-07-28 10:58:17
  */
 public class OrderDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2397774568593658979L;
+	private static final long serialVersionUID = 8132696271739871156L;
 
 	/**
 	 * 商品列表

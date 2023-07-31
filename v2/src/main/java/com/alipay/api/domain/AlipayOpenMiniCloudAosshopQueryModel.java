@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * aos店铺搜索
  *
  * @author auto create
- * @since 1.0, 2023-07-26 16:48:03
+ * @since 1.0, 2023-07-31 17:12:54
  */
 public class AlipayOpenMiniCloudAosshopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5382215131233139611L;
+	private static final long serialVersionUID = 1684764391815163542L;
 
 	/**
 	 * 用户唯一标识id，可以是支付宝userid、商家自定义的userid，目前是用户user_id的映射

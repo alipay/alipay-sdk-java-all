@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品元素
  *
  * @author auto create
- * @since 1.0, 2023-07-19 14:11:57
+ * @since 1.0, 2023-07-31 17:12:16
  */
 public class GoodItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3753727681552961864L;
+	private static final long serialVersionUID = 6578683375696279355L;
 
 	/**
 	 * 商品可用的城市列表
@@ -76,12 +76,6 @@ public class GoodItem extends AlipayObject {
 	 */
 	@ApiField("detail_url")
 	private String detailUrl;
-
-	/**
-	 * 未定义在标准字段内的字段，可以通过扩展json字段进行同步
-	 */
-	@ApiField("ext_json")
-	private String extJson;
 
 	/**
 	 * 租赁商品的新日描述
@@ -291,13 +285,6 @@ public class GoodItem extends AlipayObject {
 	}
 	public void setDetailUrl(String detailUrl) {
 		this.detailUrl = detailUrl;
-	}
-
-	public String getExtJson() {
-		return this.extJson;
-	}
-	public void setExtJson(String extJson) {
-		this.extJson = extJson;
 	}
 
 	public String getFreshDegree() {

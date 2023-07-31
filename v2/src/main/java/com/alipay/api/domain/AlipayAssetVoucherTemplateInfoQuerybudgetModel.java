@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAssetVoucherTemplateInfoQuerybudgetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2331826731492669763L;
+	private static final long serialVersionUID = 4376844288262821525L;
 
 	/**
 	 * 是否查询实时数据，true：查询实时数据，false：查询非实时数据(5分钟延迟)

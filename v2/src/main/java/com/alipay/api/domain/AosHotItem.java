@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 热搜实体数据
  *
  * @author auto create
- * @since 1.0, 2023-07-17 16:06:11
+ * @since 1.0, 2023-07-31 16:55:19
  */
 public class AosHotItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7428512441349483391L;
+	private static final long serialVersionUID = 3828134359255325584L;
+
+	/**
+	 * 业务链路ID
+	 */
+	@ApiField("biz_trace_id")
+	private String bizTraceId;
 
 	/**
 	 * 图片类型热搜
@@ -38,10 +44,18 @@ public class AosHotItem extends AlipayObject {
 	private String title;
 
 	/**
-	 * 热搜结果item的trace_id用于关联搜索热搜和用户行为
+	 * 热搜结果item的trace_id用于关联搜索热搜和用户行为 当前字段已废弃(接口改造导致参数冲突)
 	 */
 	@ApiField("trace_id")
+	@Deprecated
 	private String traceId;
+
+	public String getBizTraceId() {
+		return this.bizTraceId;
+	}
+	public void setBizTraceId(String bizTraceId) {
+		this.bizTraceId = bizTraceId;
+	}
 
 	public String getImage() {
 		return this.image;
