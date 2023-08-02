@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 诊断疾病
  *
  * @author auto create
- * @since 1.0, 2023-07-20 14:13:50
+ * @since 1.0, 2023-08-02 15:13:34
  */
 public class DiagnosisDisease extends AlipayObject {
 
-	private static final long serialVersionUID = 6821986179387956694L;
+	private static final long serialVersionUID = 1476765257739228251L;
 
 	/**
 	 * 药品列表

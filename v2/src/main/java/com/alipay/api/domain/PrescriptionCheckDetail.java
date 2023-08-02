@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 校验详情
  *
  * @author auto create
- * @since 1.0, 2023-07-20 17:12:06
+ * @since 1.0, 2023-08-01 23:40:31
  */
 public class PrescriptionCheckDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7133889148649162139L;
+	private static final long serialVersionUID = 6859984692986161418L;
 
 	/**
 	 * 校验编码

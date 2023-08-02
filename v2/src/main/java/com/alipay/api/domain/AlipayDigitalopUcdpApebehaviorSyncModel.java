@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ape用户行为上报
  *
  * @author auto create
- * @since 1.0, 2023-05-18 17:30:49
+ * @since 1.0, 2023-08-01 20:02:50
  */
 public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6816487678996951139L;
+	private static final long serialVersionUID = 6143321716386256288L;
 
 	/**
 	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）等
@@ -24,6 +24,12 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	 */
 	@ApiField("channel")
 	private String channel;
+
+	/**
+	 * 商家自定义id
+	 */
+	@ApiField("custom_id")
+	private String customId;
 
 	/**
 	 * 行为对应的itemId列表，多个商品用,分割，如曝光的itemid、转化的itemid等。
@@ -104,15 +110,16 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	private String traceId;
 
 	/**
-	 * 用户唯一标识id，可以是支付宝userid、商家自定义的userid等
+	 * 支付宝userid
 	 */
 	@ApiField("user_id")
 	private String userId;
 
 	/**
-	 * 用户id的类型，可选值：ALIPAY（支付宝userid）、CUSTOM（商家自定义的userid）
+	 * 废弃：user_id固定为支付宝uid，type无需商家显示传递。 当前字段已废弃(user_id固定位支付宝uid，无需商家显示传递。)
 	 */
 	@ApiField("user_id_type")
+	@Deprecated
 	private String userIdType;
 
 	/**
@@ -139,6 +146,13 @@ public class AlipayDigitalopUcdpApebehaviorSyncModel extends AlipayObject {
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
+	}
+
+	public String getCustomId() {
+		return this.customId;
+	}
+	public void setCustomId(String customId) {
+		this.customId = customId;
 	}
 
 	public String getItemIdList() {

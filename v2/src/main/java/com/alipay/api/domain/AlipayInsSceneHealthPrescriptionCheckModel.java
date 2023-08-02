@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 处方合理性校验接口
  *
  * @author auto create
- * @since 1.0, 2023-07-20 17:12:06
+ * @since 1.0, 2023-08-02 15:12:06
  */
 public class AlipayInsSceneHealthPrescriptionCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5329921963345354723L;
+	private static final long serialVersionUID = 5159187779819826358L;
 
 	/**
 	 * 蚂蚁合约单号

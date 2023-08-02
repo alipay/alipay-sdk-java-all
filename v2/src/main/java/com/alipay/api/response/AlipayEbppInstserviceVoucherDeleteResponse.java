@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppInstserviceVoucherDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1624493541632111883L;
+	private static final long serialVersionUID = 3114262593514855711L;
 
 	
 

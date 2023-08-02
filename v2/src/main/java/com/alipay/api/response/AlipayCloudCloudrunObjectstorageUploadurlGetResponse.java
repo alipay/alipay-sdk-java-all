@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.uploadurl.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-27 15:16:59
+ * @since 1.0, 2023-08-01 16:21:53
  */
 public class AlipayCloudCloudrunObjectstorageUploadurlGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4473611389868622388L;
+	private static final long serialVersionUID = 6722767966585724493L;
 
 	/** 
 	 * 文件ID(唯一)，文件的唯一索引ID，上传文件后系统会创建返回该文件的文件ID

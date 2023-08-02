@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankEcnyTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4157139816966537137L;
+	private static final long serialVersionUID = 4578565744935565817L;
 
 	/**
 	 * 商户ID

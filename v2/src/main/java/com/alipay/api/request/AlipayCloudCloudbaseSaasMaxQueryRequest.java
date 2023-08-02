@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.saas.max.query request
  * 
  * @author auto create
- * @since 1.0, 2023-07-31 20:01:54
+ * @since 1.0, 2023-08-01 11:06:52
  */
 public class AlipayCloudCloudbaseSaasMaxQueryRequest implements AlipayRequest<AlipayCloudCloudbaseSaasMaxQueryResponse> {
 

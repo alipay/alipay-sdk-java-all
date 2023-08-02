@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FailVoucherCodeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7565662636459678937L;
+	private static final long serialVersionUID = 4693746936848646674L;
 
 	/**
 	 * 券码导入失败错误码

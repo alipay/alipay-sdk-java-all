@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 类目信息VO
  *
  * @author auto create
- * @since 1.0, 2023-05-22 17:35:25
+ * @since 1.0, 2023-08-01 14:56:41
  */
 public class AppxCategoryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1466849961521733716L;
+	private static final long serialVersionUID = 8565743961379352321L;
 
 	/**
 	 * 类目编号
@@ -36,6 +39,19 @@ public class AppxCategoryVO extends AlipayObject {
 	 */
 	@ApiField("f_cat_id")
 	private String fCatId;
+
+	/**
+	 * 商品类型
+	 */
+	@ApiListField("item_types")
+	@ApiField("string")
+	private List<String> itemTypes;
+
+	/**
+	 * 开通状态。只有叶子结点有开通状态
+	 */
+	@ApiField("qualification_status")
+	private String qualificationStatus;
 
 	public String getCatId() {
 		return this.catId;
@@ -63,6 +79,20 @@ public class AppxCategoryVO extends AlipayObject {
 	}
 	public void setfCatId(String fCatId) {
 		this.fCatId = fCatId;
+	}
+
+	public List<String> getItemTypes() {
+		return this.itemTypes;
+	}
+	public void setItemTypes(List<String> itemTypes) {
+		this.itemTypes = itemTypes;
+	}
+
+	public String getQualificationStatus() {
+		return this.qualificationStatus;
+	}
+	public void setQualificationStatus(String qualificationStatus) {
+		this.qualificationStatus = qualificationStatus;
 	}
 
 }

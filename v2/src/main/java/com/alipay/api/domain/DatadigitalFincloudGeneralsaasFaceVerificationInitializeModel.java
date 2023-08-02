@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudGeneralsaasFaceVerificationInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1449986579295698864L;
+	private static final long serialVersionUID = 7381267323222149469L;
 
 	/**
 	 * 人脸核身具体类型目前仅支持：DATA_DIGITAL_BIZ_CODE_FACE_VERIFICATION
@@ -32,7 +32,10 @@ public class DatadigitalFincloudGeneralsaasFaceVerificationInitializeModel exten
 	private String certNo;
 
 	/**
-	 * 证件类型，目前只支持身份证:IDENTITY_CARD
+	 * 证件类型，当前枚举支持：
+IDENTITY_CARD：身份证
+RESIDENCE_HK_MC：港澳居民居住证
+RESIDENCE_TAIWAN：台湾居民居住证
 	 */
 	@ApiField("cert_type")
 	private String certType;

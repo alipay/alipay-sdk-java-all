@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpOrderRatingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2269395735348926395L;
+	private static final long serialVersionUID = 2452332372958523536L;
 
 	/**
 	 * 芝麻企业信用评估订单号

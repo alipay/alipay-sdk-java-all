@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.openbizmock.openidtesting.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-31 17:22:01
+ * @since 1.0, 2023-08-02 22:11:53
  */
 public class AlipayOpenOperationOpenbizmockOpenidtestingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5443569156349856175L;
+	private static final long serialVersionUID = 8552593975149653771L;
 
 	/** 
 	 * appid_out_one
@@ -33,6 +33,24 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryResponse extends Al
 	 */
 	@ApiField("appid_out_two")
 	private String appidOutTwo;
+
+	/** 
+	 * 1
+	 */
+	@ApiField("result_appidoutone")
+	private String resultAppidoutone;
+
+	/** 
+	 * 1
+	 */
+	@ApiField("result_appidoutthree")
+	private String resultAppidoutthree;
+
+	/** 
+	 * 1
+	 */
+	@ApiField("result_appidouttwo")
+	private String resultAppidouttwo;
 
 	/** 
 	 * 1
@@ -115,8 +133,20 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryResponse extends Al
 	/** 
 	 * 1
 	 */
+	@ApiField("result_test_openid")
+	private String resultTestOpenid;
+
+	/** 
+	 * 1
+	 */
 	@ApiField("result_test_original")
 	private String resultTestOriginal;
+
+	/** 
+	 * 1
+	 */
+	@ApiField("result_test_original_states")
+	private OpenidComplex resultTestOriginalStates;
 
 	/** 
 	 * 1111
@@ -265,6 +295,27 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryResponse extends Al
 		return this.appidOutTwo;
 	}
 
+	public void setResultAppidoutone(String resultAppidoutone) {
+		this.resultAppidoutone = resultAppidoutone;
+	}
+	public String getResultAppidoutone( ) {
+		return this.resultAppidoutone;
+	}
+
+	public void setResultAppidoutthree(String resultAppidoutthree) {
+		this.resultAppidoutthree = resultAppidoutthree;
+	}
+	public String getResultAppidoutthree( ) {
+		return this.resultAppidoutthree;
+	}
+
+	public void setResultAppidouttwo(String resultAppidouttwo) {
+		this.resultAppidouttwo = resultAppidouttwo;
+	}
+	public String getResultAppidouttwo( ) {
+		return this.resultAppidouttwo;
+	}
+
 	public void setResultExtraJson(String resultExtraJson) {
 		this.resultExtraJson = resultExtraJson;
 	}
@@ -356,11 +407,25 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryResponse extends Al
 		return this.resultTestJsonOriginal;
 	}
 
+	public void setResultTestOpenid(String resultTestOpenid) {
+		this.resultTestOpenid = resultTestOpenid;
+	}
+	public String getResultTestOpenid( ) {
+		return this.resultTestOpenid;
+	}
+
 	public void setResultTestOriginal(String resultTestOriginal) {
 		this.resultTestOriginal = resultTestOriginal;
 	}
 	public String getResultTestOriginal( ) {
 		return this.resultTestOriginal;
+	}
+
+	public void setResultTestOriginalStates(OpenidComplex resultTestOriginalStates) {
+		this.resultTestOriginalStates = resultTestOriginalStates;
+	}
+	public OpenidComplex getResultTestOriginalStates( ) {
+		return this.resultTestOriginalStates;
 	}
 
 	public void setResultTestTest(OpenidComplex resultTestTest) {

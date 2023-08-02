@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工牌信息
  *
  * @author auto create
- * @since 1.0, 2023-06-12 14:33:01
+ * @since 1.0, 2023-08-02 14:34:59
  */
 public class EmployeeCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4366764293772421783L;
+	private static final long serialVersionUID = 7594913455766967318L;
+
+	/**
+	 * 零工卡工牌ID
+	 */
+	@ApiField("employee_card_no")
+	private String employeeCardNo;
 
 	/**
 	 * 雇主信息
@@ -24,6 +30,13 @@ public class EmployeeCardInfo extends AlipayObject {
 	 */
 	@ApiField("invite_principal")
 	private ParticipantInfoDTO invitePrincipal;
+
+	public String getEmployeeCardNo() {
+		return this.employeeCardNo;
+	}
+	public void setEmployeeCardNo(String employeeCardNo) {
+		this.employeeCardNo = employeeCardNo;
+	}
 
 	public ParticipantInfoDTO getHirePrincipal() {
 		return this.hirePrincipal;

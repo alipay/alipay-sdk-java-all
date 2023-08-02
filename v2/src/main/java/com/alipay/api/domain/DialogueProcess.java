@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊过程
  *
  * @author auto create
- * @since 1.0, 2023-07-19 19:40:25
+ * @since 1.0, 2023-08-02 15:14:00
  */
 public class DialogueProcess extends AlipayObject {
 
-	private static final long serialVersionUID = 1371383816435957238L;
+	private static final long serialVersionUID = 4222474657421351866L;
 
 	/**
 	 * 角色

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ImgFile extends AlipayObject {
 
-	private static final long serialVersionUID = 6248399773127843175L;
+	private static final long serialVersionUID = 3244689644668837198L;
 
 	/**
 	 * 调用投诉文件上传接口返回的文件url

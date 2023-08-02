@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国家医保局线上业务身份核验授权信息
  *
  * @author auto create
- * @since 1.0, 2023-07-14 11:50:44
+ * @since 1.0, 2023-08-01 15:16:01
  */
 public class MedicalNationalPayAuthInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7379685367329959636L;
+	private static final long serialVersionUID = 8778264697454991797L;
 
 	/**
 	 * 线上支付授权流水号

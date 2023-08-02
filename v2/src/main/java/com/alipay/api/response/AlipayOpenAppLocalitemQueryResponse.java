@@ -16,17 +16,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-27 16:56:19
+ * @since 1.0, 2023-08-02 10:36:52
  */
 public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5589418815141349953L;
+	private static final long serialVersionUID = 6357352576689677658L;
 
 	/** 
 	 * 商品属性
 	 */
-	@ApiField("attrs")
-	private AppItemAttrVO attrs;
+	@ApiListField("attrs")
+	@ApiField("app_item_attr_v_o")
+	private List<AppItemAttrVO> attrs;
 
 	/** 
 	 * 类目ID
@@ -148,10 +149,10 @@ public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 	@ApiField("update_time")
 	private Date updateTime;
 
-	public void setAttrs(AppItemAttrVO attrs) {
+	public void setAttrs(List<AppItemAttrVO> attrs) {
 		this.attrs = attrs;
 	}
-	public AppItemAttrVO getAttrs( ) {
+	public List<AppItemAttrVO> getAttrs( ) {
 		return this.attrs;
 	}
 

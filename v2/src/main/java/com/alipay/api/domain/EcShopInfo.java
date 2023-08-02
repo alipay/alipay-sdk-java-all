@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店信息
  *
  * @author auto create
- * @since 1.0, 2023-05-08 20:43:16
+ * @since 1.0, 2023-08-01 14:55:33
  */
 public class EcShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2316228386596312385L;
+	private static final long serialVersionUID = 8316528316151951141L;
 
 	/**
 	 * 门店地址

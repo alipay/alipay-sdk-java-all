@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康门诊险症状
  *
  * @author auto create
- * @since 1.0, 2023-07-19 17:49:54
+ * @since 1.0, 2023-08-02 15:13:34
  */
 public class HealthSymptom extends AlipayObject {
 
-	private static final long serialVersionUID = 4837553993645552984L;
+	private static final long serialVersionUID = 7722749258682715683L;
 
 	/**
 	 * 症状id

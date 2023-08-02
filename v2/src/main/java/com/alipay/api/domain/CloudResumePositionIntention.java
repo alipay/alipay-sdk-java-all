@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 求职期望
  *
  * @author auto create
- * @since 1.0, 2022-05-07 09:57:14
+ * @since 1.0, 2023-08-02 17:40:18
  */
 public class CloudResumePositionIntention extends AlipayObject {
 
-	private static final long serialVersionUID = 1768784584672842388L;
+	private static final long serialVersionUID = 6167822917946668637L;
 
 	/**
 	 * 意向城市

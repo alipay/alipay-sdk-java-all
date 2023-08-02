@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape推荐接口
  *
  * @author auto create
- * @since 1.0, 2023-07-31 14:45:14
+ * @since 1.0, 2023-08-01 20:37:51
  */
 public class AlipayDigitalopUcdpApeitemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8746288457452498734L;
+	private static final long serialVersionUID = 7632487798588787876L;
 
 	/**
 	 * 推荐上下文
 	 */
 	@ApiField("context")
 	private ApeRecContext context;
+
+	/**
+	 * 商家自定义id
+	 */
+	@ApiField("custom_id")
+	private String customId;
 
 	/**
 	 * 已经曝光的item列表，用于曝光去重，多个itemid用,分割，这部分item不会出现在推荐结果中。
@@ -73,15 +79,16 @@ public class AlipayDigitalopUcdpApeitemQueryModel extends AlipayObject {
 	private String sessionId;
 
 	/**
-	 * 用户唯一标识id，可以是支付宝userid、商家自定义的userid等
+	 * 支付宝userid
 	 */
 	@ApiField("user_id")
 	private String userId;
 
 	/**
-	 * 用户id的类型，可选值：ALIPAY（支付宝userid）、CUSTOM（商家自定义的userid）
+	 * 废弃：user_id固定为支付宝uid，type无需商家显示传递。 当前字段已废弃(user_id固定位支付宝uid，无需商家显示传递。)
 	 */
 	@ApiField("user_id_type")
+	@Deprecated
 	private String userIdType;
 
 	public ApeRecContext getContext() {
@@ -89,6 +96,13 @@ public class AlipayDigitalopUcdpApeitemQueryModel extends AlipayObject {
 	}
 	public void setContext(ApeRecContext context) {
 		this.context = context;
+	}
+
+	public String getCustomId() {
+		return this.customId;
+	}
+	public void setCustomId(String customId) {
+		this.customId = customId;
 	}
 
 	public List<String> getExposedItemList() {

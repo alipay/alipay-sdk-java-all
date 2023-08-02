@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.drawcamp.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:51:51
+ * @since 1.0, 2023-08-01 15:12:09
  */
 public class AlipayMarketingCampaignDrawcampConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5865331322455545367L;
+	private static final long serialVersionUID = 3335811114561498995L;
 
 	/** 
 	 * 营销海豚活动id

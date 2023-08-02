@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2023-06-27 22:35:50
+ * @since 1.0, 2023-08-02 10:41:24
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2399237999171135789L;
+	private static final long serialVersionUID = 3794579131698769394L;
 
 	/**
 	 * alipay.user.agreement.page.sign返回的代扣签约串

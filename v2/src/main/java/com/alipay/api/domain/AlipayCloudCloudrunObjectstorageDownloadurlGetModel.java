@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 对象存储获取文件下载地址
  *
  * @author auto create
- * @since 1.0, 2023-07-27 15:25:49
+ * @since 1.0, 2023-08-02 17:37:52
  */
 public class AlipayCloudCloudrunObjectstorageDownloadurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3235875541791538868L;
+	private static final long serialVersionUID = 4496845692686435332L;
 
 	/**
 	 * 内部使用，uiam角色扮演token
@@ -29,7 +29,7 @@ public class AlipayCloudCloudrunObjectstorageDownloadurlGetModel extends AlipayO
 	private String env;
 
 	/**
-	 * 欲获取的文件列表
+	 * 欲获取的文件列表,最多支持同时获取20个文件的下载地址
 	 */
 	@ApiListField("file_list")
 	@ApiField("download_url_request")

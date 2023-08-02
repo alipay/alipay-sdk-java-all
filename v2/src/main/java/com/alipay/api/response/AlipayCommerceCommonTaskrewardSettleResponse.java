@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceCommonTaskrewardSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1377189814617632523L;
+	private static final long serialVersionUID = 4167378338761415421L;
 
 	/** 
 	 * 已发放的激励金额，单位元

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.health.prescription.check request
  * 
  * @author auto create
- * @since 1.0, 2023-07-20 17:21:54
+ * @since 1.0, 2023-08-02 15:16:53
  */
 public class AlipayInsSceneHealthPrescriptionCheckRequest implements AlipayRequest<AlipayInsSceneHealthPrescriptionCheckResponse> {
 

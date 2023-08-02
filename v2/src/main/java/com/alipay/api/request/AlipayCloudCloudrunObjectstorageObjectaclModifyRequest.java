@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.objectacl.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-07-27 13:57:00
+ * @since 1.0, 2023-08-01 16:21:54
  */
 public class AlipayCloudCloudrunObjectstorageObjectaclModifyRequest implements AlipayRequest<AlipayCloudCloudrunObjectstorageObjectaclModifyResponse> {
 
