@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保电子凭证线上支付授权信息
  *
  * @author auto create
- * @since 1.0, 2021-08-03 19:18:12
+ * @since 1.0, 2023-08-04 16:04:23
  */
 public class MedicalOnlinePayAuthInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7411472367187225881L;
+	private static final long serialVersionUID = 8566866145172173967L;
 
 	/**
 	 * 授权码值

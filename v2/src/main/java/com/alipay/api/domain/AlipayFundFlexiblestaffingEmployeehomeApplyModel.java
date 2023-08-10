@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开卡申请
  *
  * @author auto create
- * @since 1.0, 2023-06-12 11:24:57
+ * @since 1.0, 2023-08-04 21:32:52
  */
 public class AlipayFundFlexiblestaffingEmployeehomeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3294621844564745111L;
+	private static final long serialVersionUID = 4464487218724117421L;
 
 	/**
 	 * 授权跳转类型
 	 */
 	@ApiField("apply_link_type")
 	private String applyLinkType;
+
+	/**
+	 * 申请流程结束后的回跳URL。
+	 */
+	@ApiField("back_url")
+	private String backUrl;
 
 	/**
 	 * 业务场景码
@@ -44,7 +50,7 @@ public class AlipayFundFlexiblestaffingEmployeehomeApplyModel extends AlipayObje
 	private String expireTime;
 
 	/**
-	 * 主体信息
+	 * 主体信息。新开通零工卡时必须提供，基于已有零工卡开通服务时可选，如果传递则会按照实际情况校验。
 	 */
 	@ApiField("principal_info")
 	private ParticipantInfoDTO principalInfo;
@@ -66,6 +72,13 @@ public class AlipayFundFlexiblestaffingEmployeehomeApplyModel extends AlipayObje
 	}
 	public void setApplyLinkType(String applyLinkType) {
 		this.applyLinkType = applyLinkType;
+	}
+
+	public String getBackUrl() {
+		return this.backUrl;
+	}
+	public void setBackUrl(String backUrl) {
+		this.backUrl = backUrl;
 	}
 
 	public String getBizScene() {

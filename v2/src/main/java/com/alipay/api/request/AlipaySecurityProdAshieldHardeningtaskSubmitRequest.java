@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.ashield.hardeningtask.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-07-26 14:36:52
+ * @since 1.0, 2023-08-10 14:01:38
  */
 public class AlipaySecurityProdAshieldHardeningtaskSubmitRequest implements AlipayRequest<AlipaySecurityProdAshieldHardeningtaskSubmitResponse> {
 

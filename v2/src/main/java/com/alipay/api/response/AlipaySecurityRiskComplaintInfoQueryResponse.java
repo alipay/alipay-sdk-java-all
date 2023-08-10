@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.complaint.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-25 11:44:48
+ * @since 1.0, 2023-08-07 16:17:02
  */
 public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1498867855985774115L;
+	private static final long serialVersionUID = 6619371494818777174L;
 
 	/** 
 	 * 投诉单涉及交易总金额（单位：人民币元）
@@ -29,6 +29,12 @@ public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse
 	 */
 	@ApiField("complain_content")
 	private String complainContent;
+
+	/** 
+	 * 投诉网址
+	 */
+	@ApiField("complain_url")
+	private String complainUrl;
 
 	/** 
 	 * 投诉单涉及的交易信息
@@ -146,6 +152,13 @@ public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse
 	}
 	public String getComplainContent( ) {
 		return this.complainContent;
+	}
+
+	public void setComplainUrl(String complainUrl) {
+		this.complainUrl = complainUrl;
+	}
+	public String getComplainUrl( ) {
+		return this.complainUrl;
 	}
 
 	public void setComplaintTradeInfoList(List<ComplaintTradeInfo> complaintTradeInfoList) {

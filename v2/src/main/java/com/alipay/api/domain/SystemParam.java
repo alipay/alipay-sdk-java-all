@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统对接参数，包含对接方业务身份；幂等请求ID等。
  *
  * @author auto create
- * @since 1.0, 2020-05-20 15:42:38
+ * @since 1.0, 2023-08-09 19:22:21
  */
 public class SystemParam extends AlipayObject {
 
-	private static final long serialVersionUID = 6788861929319889853L;
+	private static final long serialVersionUID = 2561186133156436719L;
 
 	/**
 	 * 业务功能类型

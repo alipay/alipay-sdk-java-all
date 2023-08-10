@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 农村埋点信息
  *
  * @author auto create
- * @since 1.0, 2023-01-11 16:49:28
+ * @since 1.0, 2023-08-10 10:13:14
  */
 public class MybankCreditLoanapplyBkruralindustryTrackAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3713187161523565779L;
+	private static final long serialVersionUID = 7267899445287717334L;
 
 	/**
 	 * 业务编号

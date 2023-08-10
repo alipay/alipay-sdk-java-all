@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 返回给商户的子订单明细
  *
  * @author auto create
- * @since 1.0, 2023-08-01 21:36:40
+ * @since 1.0, 2023-08-03 14:24:09
  */
 public class OrderDetailResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6629125866145336341L;
+	private static final long serialVersionUID = 2776668852554442852L;
 
 	/**
 	 * 应用唯一标识

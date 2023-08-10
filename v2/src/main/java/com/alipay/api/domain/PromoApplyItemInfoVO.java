@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 营销申领商品信息
  *
  * @author auto create
- * @since 1.0, 2023-07-25 14:42:14
+ * @since 1.0, 2023-08-04 13:53:35
  */
 public class PromoApplyItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2518153837637958788L;
+	private static final long serialVersionUID = 7587656583999814232L;
 
 	/**
 	 * 商品平台侧ID

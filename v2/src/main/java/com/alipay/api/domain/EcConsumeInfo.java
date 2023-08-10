@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2023-08-02 21:18:42
+ * @since 1.0, 2023-08-09 13:54:31
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7478851365426736457L;
+	private static final long serialVersionUID = 1562169183834591515L;
 
 	/**
 	 * 共同账户ID
@@ -48,6 +48,14 @@ public class EcConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("consume_amount")
 	private String consumeAmount;
+
+	/**
+	 * 账单业务类型
+-因公支付：EC_PAY
+-因公收款：EC_CLLCT
+	 */
+	@ApiField("consume_biz_type")
+	private String consumeBizType;
 
 	/**
 	 * 员工消费记账分类
@@ -187,6 +195,24 @@ public class EcConsumeInfo extends AlipayObject {
 	private String payNo;
 
 	/**
+	 * 付款方卡号
+	 */
+	@ApiField("payer_card_no")
+	private String payerCardNo;
+
+	/**
+	 * 付款方登录账号
+	 */
+	@ApiField("payer_logon_id")
+	private String payerLogonId;
+
+	/**
+	 * 付款方名称
+	 */
+	@ApiField("payer_name")
+	private String payerName;
+
+	/**
 	 * 企业代付金额，单位：元
 	 */
 	@ApiField("peer_pay_amount")
@@ -298,6 +324,13 @@ OTHER：其他
 	}
 	public void setConsumeAmount(String consumeAmount) {
 		this.consumeAmount = consumeAmount;
+	}
+
+	public String getConsumeBizType() {
+		return this.consumeBizType;
+	}
+	public void setConsumeBizType(String consumeBizType) {
+		this.consumeBizType = consumeBizType;
 	}
 
 	public String getConsumeCategory() {
@@ -445,6 +478,27 @@ OTHER：其他
 	}
 	public void setPayNo(String payNo) {
 		this.payNo = payNo;
+	}
+
+	public String getPayerCardNo() {
+		return this.payerCardNo;
+	}
+	public void setPayerCardNo(String payerCardNo) {
+		this.payerCardNo = payerCardNo;
+	}
+
+	public String getPayerLogonId() {
+		return this.payerLogonId;
+	}
+	public void setPayerLogonId(String payerLogonId) {
+		this.payerLogonId = payerLogonId;
+	}
+
+	public String getPayerName() {
+		return this.payerName;
+	}
+	public void setPayerName(String payerName) {
+		this.payerName = payerName;
 	}
 
 	public String getPeerPayAmount() {

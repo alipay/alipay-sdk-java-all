@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店数据-单店数据查询
  *
  * @author auto create
- * @since 1.0, 2023-07-31 21:19:35
+ * @since 1.0, 2023-08-03 15:19:12
  */
 public class AnttechMorseMarketingShopDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4159994294571513175L;
+	private static final long serialVersionUID = 8466451266295934399L;
 
 	/**
 	 * 收款账号

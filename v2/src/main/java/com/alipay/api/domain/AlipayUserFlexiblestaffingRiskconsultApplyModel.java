@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工风控预咨询
  *
  * @author auto create
- * @since 1.0, 2023-07-17 14:50:30
+ * @since 1.0, 2023-08-09 18:32:10
  */
 public class AlipayUserFlexiblestaffingRiskconsultApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4292116371149255943L;
+	private static final long serialVersionUID = 2165523128437335159L;
 
 	/**
 	 * 场景码
@@ -36,6 +36,12 @@ public class AlipayUserFlexiblestaffingRiskconsultApplyModel extends AlipayObjec
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 岗位
+	 */
+	@ApiField("position")
+	private String position;
 
 	/**
 	 * 产品码
@@ -78,6 +84,13 @@ Enterprise Manager Risk：董监高风险咨询
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getPosition() {
+		return this.position;
+	}
+	public void setPosition(String position) {
+		this.position = position;
 	}
 
 	public String getProductCode() {

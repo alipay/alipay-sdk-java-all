@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * manjiang测试复杂结构
  *
  * @author auto create
- * @since 1.0, 2023-07-31 17:17:44
+ * @since 1.0, 2023-08-07 14:06:01
  */
 public class ManjiangTestComplexOneData extends AlipayObject {
 
-	private static final long serialVersionUID = 3678153156543791328L;
+	private static final long serialVersionUID = 6623261975469492921L;
 
 	/**
 	 * 1
 	 */
 	@ApiField("sss")
 	private String sss;
+
+	/**
+	 * 1
+	 */
+	@ApiField("ssssd")
+	private Long ssssd;
 
 	/**
 	 * 4
@@ -30,6 +36,13 @@ public class ManjiangTestComplexOneData extends AlipayObject {
 	}
 	public void setSss(String sss) {
 		this.sss = sss;
+	}
+
+	public Long getSsssd() {
+		return this.ssssd;
+	}
+	public void setSsssd(Long ssssd) {
+		this.ssssd = ssssd;
 	}
 
 	public String getTestLevelOne() {

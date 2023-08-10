@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.shop.task.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-31 21:21:52
+ * @since 1.0, 2023-08-03 15:19:34
  */
 public class AnttechMorseMarketingShopTaskUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8561744744211863987L;
+	private static final long serialVersionUID = 5882713781891596268L;
 
 	/** 
 	 * 存在空情况未成功创建任务，否则返回任务id，用于查询门店数据

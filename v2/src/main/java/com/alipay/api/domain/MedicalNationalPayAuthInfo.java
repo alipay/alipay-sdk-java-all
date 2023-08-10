@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国家医保局线上业务身份核验授权信息
  *
  * @author auto create
- * @since 1.0, 2023-08-01 15:16:01
+ * @since 1.0, 2023-08-09 20:49:05
  */
 public class MedicalNationalPayAuthInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8778264697454991797L;
+	private static final long serialVersionUID = 7648299513453725137L;
 
 	/**
 	 * 线上支付授权流水号
@@ -52,6 +52,12 @@ public class MedicalNationalPayAuthInfo extends AlipayObject {
 	private String medicalCardInstId;
 
 	/**
+	 * 本人凭证激活状态
+	 */
+	@ApiField("medical_card_status")
+	private String medicalCardStatus;
+
+	/**
 	 * 开放平台应用Id
 	 */
 	@ApiField("openapi_app_id")
@@ -62,6 +68,12 @@ public class MedicalNationalPayAuthInfo extends AlipayObject {
 	 */
 	@ApiField("pay_auth_no")
 	private String payAuthNo;
+
+	/**
+	 * 亲情账户绑定状态，在rels_pay_flag=1时返回
+	 */
+	@ApiField("rels_medical_card_status")
+	private String relsMedicalCardStatus;
 
 	/**
 	 * 授权类型
@@ -125,6 +137,13 @@ public class MedicalNationalPayAuthInfo extends AlipayObject {
 		this.medicalCardInstId = medicalCardInstId;
 	}
 
+	public String getMedicalCardStatus() {
+		return this.medicalCardStatus;
+	}
+	public void setMedicalCardStatus(String medicalCardStatus) {
+		this.medicalCardStatus = medicalCardStatus;
+	}
+
 	public String getOpenapiAppId() {
 		return this.openapiAppId;
 	}
@@ -137,6 +156,13 @@ public class MedicalNationalPayAuthInfo extends AlipayObject {
 	}
 	public void setPayAuthNo(String payAuthNo) {
 		this.payAuthNo = payAuthNo;
+	}
+
+	public String getRelsMedicalCardStatus() {
+		return this.relsMedicalCardStatus;
+	}
+	public void setRelsMedicalCardStatus(String relsMedicalCardStatus) {
+		this.relsMedicalCardStatus = relsMedicalCardStatus;
 	}
 
 	public String getRelsPayFlag() {

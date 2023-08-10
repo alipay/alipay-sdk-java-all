@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单合并支付预创建接口
  *
  * @author auto create
- * @since 1.0, 2023-08-01 20:02:43
+ * @since 1.0, 2023-08-04 22:35:53
  */
 public class AlipayTradeMergePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5119215281271635115L;
+	private static final long serialVersionUID = 8146794448338368433L;
+
+	/**
+	 * 外部指定买家
+	 */
+	@ApiField("ext_user_info")
+	private ExtUserInfo extUserInfo;
 
 	/**
 	 * 子订单详情
@@ -51,6 +57,13 @@ public class AlipayTradeMergePrecreateModel extends AlipayObject {
 	 */
 	@ApiField("timeout_express")
 	private String timeoutExpress;
+
+	public ExtUserInfo getExtUserInfo() {
+		return this.extUserInfo;
+	}
+	public void setExtUserInfo(ExtUserInfo extUserInfo) {
+		this.extUserInfo = extUserInfo;
+	}
 
 	public List<OrderDetail> getOrderDetails() {
 		return this.orderDetails;

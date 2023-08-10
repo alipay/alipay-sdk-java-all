@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询加固后的产物下载链接
  *
  * @author auto create
- * @since 1.0, 2023-05-25 16:27:19
+ * @since 1.0, 2023-08-10 13:59:54
  */
 public class AlipaySecurityProdAshieldHardeninglogGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3786591785622536851L;
+	private static final long serialVersionUID = 1497819393844711167L;
 
 	/**
 	 * 加固任务id

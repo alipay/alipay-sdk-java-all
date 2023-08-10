@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.externalaccount.bind.preconsult request
  * 
  * @author auto create
- * @since 1.0, 2023-08-01 15:57:05
+ * @since 1.0, 2023-08-07 16:37:03
  */
 public class AlipayCloudCloudbaseExternalaccountBindPreconsultRequest implements AlipayRequest<AlipayCloudCloudbaseExternalaccountBindPreconsultResponse> {
 

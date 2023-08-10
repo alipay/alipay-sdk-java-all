@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.blockchain.open.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:44:04
+ * @since 1.0, 2023-08-10 10:16:58
  */
 public class MybankCreditLoanapplyBlockchainOpenQueryRequest implements AlipayRequest<MybankCreditLoanapplyBlockchainOpenQueryResponse> {
 

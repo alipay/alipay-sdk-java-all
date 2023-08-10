@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育经历
  *
  * @author auto create
- * @since 1.0, 2023-07-25 16:04:39
+ * @since 1.0, 2023-08-04 16:57:54
  */
 public class CloudResumeEducationExperience extends AlipayObject {
 
-	private static final long serialVersionUID = 8253338759243965973L;
+	private static final long serialVersionUID = 3714353268132789499L;
 
 	/**
 	 * 学历
@@ -24,6 +24,30 @@ public class CloudResumeEducationExperience extends AlipayObject {
 	 */
 	@ApiField("education_status")
 	private String educationStatus;
+
+	/**
+	 * 毕业月份
+	 */
+	@ApiField("finish_school_month")
+	private String finishSchoolMonth;
+
+	/**
+	 * 毕业年份
+	 */
+	@ApiField("finish_school_year")
+	private Long finishSchoolYear;
+
+	/**
+	 * 入学月份
+	 */
+	@ApiField("in_school_month")
+	private Long inSchoolMonth;
+
+	/**
+	 * 入学年份
+	 */
+	@ApiField("in_school_year")
+	private Long inSchoolYear;
 
 	/**
 	 * 受教育地点
@@ -50,6 +74,12 @@ public class CloudResumeEducationExperience extends AlipayObject {
 	private String schoolName;
 
 	/**
+	 * 是否统招
+	 */
+	@ApiField("tong_zhao")
+	private Boolean tongZhao;
+
+	/**
 	 * 年
 	 */
 	@ApiField("year")
@@ -67,6 +97,34 @@ public class CloudResumeEducationExperience extends AlipayObject {
 	}
 	public void setEducationStatus(String educationStatus) {
 		this.educationStatus = educationStatus;
+	}
+
+	public String getFinishSchoolMonth() {
+		return this.finishSchoolMonth;
+	}
+	public void setFinishSchoolMonth(String finishSchoolMonth) {
+		this.finishSchoolMonth = finishSchoolMonth;
+	}
+
+	public Long getFinishSchoolYear() {
+		return this.finishSchoolYear;
+	}
+	public void setFinishSchoolYear(Long finishSchoolYear) {
+		this.finishSchoolYear = finishSchoolYear;
+	}
+
+	public Long getInSchoolMonth() {
+		return this.inSchoolMonth;
+	}
+	public void setInSchoolMonth(Long inSchoolMonth) {
+		this.inSchoolMonth = inSchoolMonth;
+	}
+
+	public Long getInSchoolYear() {
+		return this.inSchoolYear;
+	}
+	public void setInSchoolYear(Long inSchoolYear) {
+		this.inSchoolYear = inSchoolYear;
 	}
 
 	public String getLocation() {
@@ -95,6 +153,13 @@ public class CloudResumeEducationExperience extends AlipayObject {
 	}
 	public void setSchoolName(String schoolName) {
 		this.schoolName = schoolName;
+	}
+
+	public Boolean getTongZhao() {
+		return this.tongZhao;
+	}
+	public void setTongZhao(Boolean tongZhao) {
+		this.tongZhao = tongZhao;
 	}
 
 	public Long getYear() {

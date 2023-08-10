@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用征信授权数据获取
  *
  * @author auto create
- * @since 1.0, 2022-06-28 20:06:27
+ * @since 1.0, 2023-08-03 21:11:52
  */
 public class ZhimaCreditEpCreditlinkCollectQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6839787362888476562L;
+	private static final long serialVersionUID = 3837838931488788841L;
 
 	/**
 	 * 请求数据类型
@@ -30,6 +30,12 @@ public class ZhimaCreditEpCreditlinkCollectQueryModel extends AlipayObject {
 	 */
 	@ApiField("merchant_request_id")
 	private String merchantRequestId;
+
+	/**
+	 * 产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	public String getDataType() {
 		return this.dataType;
@@ -50,6 +56,13 @@ public class ZhimaCreditEpCreditlinkCollectQueryModel extends AlipayObject {
 	}
 	public void setMerchantRequestId(String merchantRequestId) {
 		this.merchantRequestId = merchantRequestId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 }

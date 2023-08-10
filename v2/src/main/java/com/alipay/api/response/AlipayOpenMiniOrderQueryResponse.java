@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-28 11:01:53
+ * @since 1.0, 2023-08-08 14:17:00
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7794211787617615212L;
+	private static final long serialVersionUID = 6832629329588226364L;
 
 	/** 
 	 * 收货地址
@@ -80,7 +80,7 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	private String path;
 
 	/** 
-	 * 确认收货时间，秒级时间戳，fund_type = 1且确认收货之后存在
+	 * 确认收货时间，fund_type = 1且确认收货之后存在
 	 */
 	@ApiField("receive_time")
 	private String receiveTime;

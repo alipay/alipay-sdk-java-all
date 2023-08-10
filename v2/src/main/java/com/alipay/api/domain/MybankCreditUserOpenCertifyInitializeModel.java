@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户身份认证初始化
  *
  * @author auto create
- * @since 1.0, 2022-12-30 12:02:46
+ * @since 1.0, 2023-08-10 10:23:34
  */
 public class MybankCreditUserOpenCertifyInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7898561482848994356L;
+	private static final long serialVersionUID = 2343412287656111573L;
 
 	/**
 	 * 认证场景码。入参支持的认证场景码和商户签约的认证场景相关，取值如下:

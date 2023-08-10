@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付信息模型
  *
  * @author auto create
- * @since 1.0, 2023-07-28 10:58:17
+ * @since 1.0, 2023-08-04 13:53:35
  */
 public class PayInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4667731255219968417L;
+	private static final long serialVersionUID = 5198498548224495375L;
 
 	/**
 	 * 支付渠道列表

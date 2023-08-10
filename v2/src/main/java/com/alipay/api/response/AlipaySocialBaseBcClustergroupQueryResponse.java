@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.bc.clustergroup.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:24:01
+ * @since 1.0, 2023-08-10 12:17:36
  */
 public class AlipaySocialBaseBcClustergroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1276699694262337532L;
+	private static final long serialVersionUID = 7428484182213965844L;
 
 	/** 
 	 * 社交聊天群的概要信息

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社交聊天群的概要信息
  *
  * @author auto create
- * @since 1.0, 2022-10-27 20:45:34
+ * @since 1.0, 2023-08-10 12:18:50
  */
 public class GroupBrief extends AlipayObject {
 
-	private static final long serialVersionUID = 7531386288938543844L;
+	private static final long serialVersionUID = 2115126514578176599L;
 
 	/**
 	 * 群创建时间

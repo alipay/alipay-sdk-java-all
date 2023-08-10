@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MlmParamTest extends AlipayObject {
 
-	private static final long serialVersionUID = 1485653661155311186L;
+	private static final long serialVersionUID = 3279769557154412277L;
 
 	/**
 	 * 参数

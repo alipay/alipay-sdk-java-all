@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码门店信息
  *
  * @author auto create
- * @since 1.0, 2023-08-01 14:55:39
+ * @since 1.0, 2023-08-04 16:19:21
  */
 public class EcShop extends AlipayObject {
 
-	private static final long serialVersionUID = 8851799132293276656L;
+	private static final long serialVersionUID = 2421934311513493819L;
 
 	/**
 	 * 门店地址
 	 */
 	@ApiField("address")
 	private String address;
+
+	/**
+	 * 门店品牌id
+	 */
+	@ApiField("brand_id")
+	private String brandId;
 
 	/**
 	 * 城市编码
@@ -150,6 +156,13 @@ public class EcShop extends AlipayObject {
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public String getBrandId() {
+		return this.brandId;
+	}
+	public void setBrandId(String brandId) {
+		this.brandId = brandId;
 	}
 
 	public String getCityId() {

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分期码扩展字段
  *
  * @author auto create
- * @since 1.0, 2022-12-13 14:57:51
+ * @since 1.0, 2023-08-08 11:11:56
  */
 public class FqQrCodeExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8529123684193831914L;
+	private static final long serialVersionUID = 1817939964671977186L;
+
+	/**
+	 * 当码类型是clerkQrcode(店员码)的时候需要传递此字段
+	 */
+	@ApiField("bind_type")
+	private String bindType;
 
 	/**
 	 * 分期数
@@ -19,11 +25,31 @@ public class FqQrCodeExtendParams extends AlipayObject {
 	@ApiField("fq_num")
 	private String fqNum;
 
+	/**
+	 * 当码类型为clerkQrcode(店员码)时需要传递此值
+	 */
+	@ApiField("scene_tag")
+	private String sceneTag;
+
+	public String getBindType() {
+		return this.bindType;
+	}
+	public void setBindType(String bindType) {
+		this.bindType = bindType;
+	}
+
 	public String getFqNum() {
 		return this.fqNum;
 	}
 	public void setFqNum(String fqNum) {
 		this.fqNum = fqNum;
+	}
+
+	public String getSceneTag() {
+		return this.sceneTag;
+	}
+	public void setSceneTag(String sceneTag) {
+		this.sceneTag = sceneTag;
 	}
 
 }

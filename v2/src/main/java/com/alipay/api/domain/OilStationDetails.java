@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OilStationDetails extends AlipayObject {
 
-	private static final long serialVersionUID = 5847557191292618683L;
+	private static final long serialVersionUID = 3345285396822383841L;
 
 	/**
 	 * 油站详细地址

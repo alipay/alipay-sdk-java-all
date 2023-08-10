@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构数据链上查询处理器
  *
  * @author auto create
- * @since 1.0, 2022-09-19 15:42:51
+ * @since 1.0, 2023-08-10 10:16:58
  */
 public class MybankCreditLoanapplyBlockchainOpenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4885356694373145483L;
+	private static final long serialVersionUID = 7146621132979154697L;
 
 	/**
 	 * 业务类型,BLOCKCHAIN_QUERY_EVENT,机构数据链上查询,SDK枚举获取 业务类型

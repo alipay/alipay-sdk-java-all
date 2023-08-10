@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCcmRobotAvatarbaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8573553167458595551L;
+	private static final long serialVersionUID = 5369426819945648585L;
 
 	/** 
 	 * result:方法调用返回值响应 k-v map

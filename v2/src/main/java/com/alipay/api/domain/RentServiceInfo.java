@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零工卡租赁协议信息
  *
  * @author auto create
- * @since 1.0, 2023-05-23 20:47:11
+ * @since 1.0, 2023-08-04 21:32:52
  */
 public class RentServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3875622225167388269L;
+	private static final long serialVersionUID = 3335397592384392534L;
 
 	/**
 	 * 资方信息

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMsaasMediarecogMmtcaftscvMachinetypeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5377881561352218165L;
+	private static final long serialVersionUID = 1354687865238271173L;
 
 	/** 
 	 * 视觉货柜机型信息列表

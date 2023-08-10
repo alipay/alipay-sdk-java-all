@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开卡结果查询
  *
  * @author auto create
- * @since 1.0, 2023-05-29 10:57:39
+ * @since 1.0, 2023-08-09 17:30:29
  */
 public class AlipayFundFlexiblestaffingEmployeehomeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4277348693997775534L;
+	private static final long serialVersionUID = 5789323594632659184L;
 
 	/**
 	 * 协议号

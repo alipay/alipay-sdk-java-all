@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店扫码核验业务场景下， 插件小程序页面展示的配置
  *
  * @author auto create
- * @since 1.0, 2022-10-10 14:21:49
+ * @since 1.0, 2023-08-03 14:24:27
  */
 public class CertifyConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4316425935266614582L;
+	private static final long serialVersionUID = 1252878157798468582L;
 
 	/**
 	 * 核验模式，可选范围：【FACE : 人脸认证 ，

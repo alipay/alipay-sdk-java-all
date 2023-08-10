@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 启动加固任务
  *
  * @author auto create
- * @since 1.0, 2023-05-25 16:37:43
+ * @since 1.0, 2023-08-10 13:59:55
  */
 public class AlipaySecurityProdAshieldHardeningtaskSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6244299591473244584L;
+	private static final long serialVersionUID = 1452257757799515357L;
 
 	/**
 	 * 是否开启assets加固，1为开启，其他为关闭

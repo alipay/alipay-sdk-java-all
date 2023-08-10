@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.source.certify request
  * 
  * @author auto create
- * @since 1.0, 2023-07-20 16:22:04
+ * @since 1.0, 2023-08-07 16:46:54
  */
 public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse> {
 
@@ -62,6 +62,11 @@ CHECK：正常活体检测。
 	* true：需要留底；false：无需留底。默认留底
 	 */
 	private Boolean reserved;
+
+	/** 
+	* ON：开启安全拦截。OFF：关闭安全拦截。建议开启，能够有效防御攻击，默认取值为ON。
+	 */
+	private String securityStrategy;
 
 	public void setCertName(String certName) {
 		this.certName = certName;
@@ -117,6 +122,13 @@ CHECK：正常活体检测。
 	}
 	public Boolean getReserved() {
 		return this.reserved;
+	}
+
+	public void setSecurityStrategy(String securityStrategy) {
+		this.securityStrategy = securityStrategy;
+	}
+	public String getSecurityStrategy() {
+		return this.securityStrategy;
 	}
 	private String terminalType;
 	private String terminalInfo;
@@ -186,6 +198,7 @@ CHECK：正常活体检测。
 		txtParams.put("outer_biz_no", this.outerBizNo);
 		txtParams.put("phone", this.phone);
 		txtParams.put("reserved", this.reserved);
+		txtParams.put("security_strategy", this.securityStrategy);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

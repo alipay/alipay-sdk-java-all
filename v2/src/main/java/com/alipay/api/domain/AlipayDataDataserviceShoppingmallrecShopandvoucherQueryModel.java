@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceShoppingmallrecShopandvoucherQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7223717928728131277L;
+	private static final long serialVersionUID = 8847548967655516816L;
 
 	/**
 	 * 纬度；注：高德坐标系。经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker

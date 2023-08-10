@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户买水进度上报
  *
  * @author auto create
- * @since 1.0, 2023-07-27 09:48:23
+ * @since 1.0, 2023-08-04 16:47:54
  */
 public class AlipayCommerceWaterUsertaskSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1138766484975268758L;
+	private static final long serialVersionUID = 5279442845757168434L;
 
 	/**
 	 * 用户uid
@@ -24,6 +24,12 @@ public class AlipayCommerceWaterUsertaskSendModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 上报所属门店名称
+	 */
+	@ApiField("send_shop_name")
+	private String sendShopName;
 
 	/**
 	 * 商户创建任务后生成的任务id
@@ -55,6 +61,13 @@ public class AlipayCommerceWaterUsertaskSendModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getSendShopName() {
+		return this.sendShopName;
+	}
+	public void setSendShopName(String sendShopName) {
+		this.sendShopName = sendShopName;
 	}
 
 	public String getTaskId() {

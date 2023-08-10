@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险咨询结果
  *
  * @author auto create
- * @since 1.0, 2023-07-18 15:58:34
+ * @since 1.0, 2023-08-03 17:23:36
  */
 public class RiskApplyConsult extends AlipayObject {
 
-	private static final long serialVersionUID = 8712736165742924755L;
+	private static final long serialVersionUID = 8717211864556325653L;
 
 	/**
 	 * 风险咨询时间

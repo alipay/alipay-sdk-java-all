@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.balance.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:06:56
+ * @since 1.0, 2023-08-09 17:01:38
  */
 public class AlipayDataBillBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8443317315178768543L;
+	private static final long serialVersionUID = 4855783394734299674L;
 
 	/** 
 	 * 账户可用余额
@@ -21,13 +21,13 @@ public class AlipayDataBillBalanceQueryResponse extends AlipayResponse {
 	private String availableAmount;
 
 	/** 
-	 * 冻结金额
+	 * 冻结金额。单位（元）
 	 */
 	@ApiField("freeze_amount")
 	private String freezeAmount;
 
 	/** 
-	 * 待结算金额
+	 * 待结算金额，单位（元）
 	 */
 	@ApiField("settle_amount")
 	private String settleAmount;

@@ -16,7 +16,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.morse.marketing.shop.task.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-07-31 21:21:52
+ * @since 1.0, 2023-08-03 15:19:34
  */
 public class AnttechMorseMarketingShopTaskUploadRequest implements AlipayUploadRequest<AnttechMorseMarketingShopTaskUploadResponse> {
 

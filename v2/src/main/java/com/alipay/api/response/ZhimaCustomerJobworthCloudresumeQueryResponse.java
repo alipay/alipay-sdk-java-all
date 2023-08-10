@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.cloudresume.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-02 17:34:50
+ * @since 1.0, 2023-08-07 15:46:56
  */
 public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3213772647664981593L;
+	private static final long serialVersionUID = 3415422841333556239L;
 
 	/** 
 	 * 出身日期
@@ -43,10 +43,31 @@ public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayRespons
 	private List<CloudResumeEducationExperience> educationExperiences;
 
 	/** 
+	 * 用户在芝麻工作证填写的邮箱
+	 */
+	@ApiField("email")
+	private String email;
+
+	/** 
 	 * 性别
 	 */
 	@ApiField("gender")
 	private String gender;
+
+	/** 
+	 * ALWAYS_ON_JOB("ALWAYS_ON_JOB", "随时到岗")
+MONTH_ON_JOB("MONTH_ON_JOB", "月内到岗")
+SEEK_FOR_CHANCE("SEEK_FOR_CHANCE", "考虑机会")
+NO_MIND("NO_MIND", "暂不考虑机会")
+	 */
+	@ApiField("intention_status")
+	private String intentionStatus;
+
+	/** 
+	 * 用户在芝麻工作证填写的自我介绍
+	 */
+	@ApiField("person_desc")
+	private String personDesc;
 
 	/** 
 	 * 手机号码
@@ -66,6 +87,19 @@ public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayRespons
 	@ApiListField("position_intentions")
 	@ApiField("cloud_resume_position_intention")
 	private List<CloudResumePositionIntention> positionIntentions;
+
+	/** 
+	 * IN_SCHOOL:在校
+FINISH_SCHOOL:已毕业
+	 */
+	@ApiField("position_type")
+	private String positionType;
+
+	/** 
+	 * 常驻地址
+	 */
+	@ApiField("residential_area")
+	private String residentialArea;
 
 	/** 
 	 * 技能信息
@@ -114,11 +148,32 @@ public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayRespons
 		return this.educationExperiences;
 	}
 
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getEmail( ) {
+		return this.email;
+	}
+
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
 	public String getGender( ) {
 		return this.gender;
+	}
+
+	public void setIntentionStatus(String intentionStatus) {
+		this.intentionStatus = intentionStatus;
+	}
+	public String getIntentionStatus( ) {
+		return this.intentionStatus;
+	}
+
+	public void setPersonDesc(String personDesc) {
+		this.personDesc = personDesc;
+	}
+	public String getPersonDesc( ) {
+		return this.personDesc;
 	}
 
 	public void setPhone(String phone) {
@@ -140,6 +195,20 @@ public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayRespons
 	}
 	public List<CloudResumePositionIntention> getPositionIntentions( ) {
 		return this.positionIntentions;
+	}
+
+	public void setPositionType(String positionType) {
+		this.positionType = positionType;
+	}
+	public String getPositionType( ) {
+		return this.positionType;
+	}
+
+	public void setResidentialArea(String residentialArea) {
+		this.residentialArea = residentialArea;
+	}
+	public String getResidentialArea( ) {
+		return this.residentialArea;
 	}
 
 	public void setSkills(List<CloudResumeSkillInfo> skills) {

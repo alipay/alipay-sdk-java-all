@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增加openID映射
  *
  * @author auto create
- * @since 1.0, 2022-12-13 14:59:09
+ * @since 1.0, 2023-08-04 12:07:51
  */
 public class ParticipantForm extends AlipayObject {
 
-	private static final long serialVersionUID = 4578277716553471632L;
+	private static final long serialVersionUID = 8465724481921719443L;
 
 	/**
 	 * 扩展信息

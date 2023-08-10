@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分包模型
  *
  * @author auto create
- * @since 1.0, 2021-12-15 14:34:34
+ * @since 1.0, 2023-08-04 13:54:25
  */
 public class SubPackageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7642757695394926284L;
+	private static final long serialVersionUID = 8267622239568739762L;
 
 	/**
 	 * 构建好的结果地址

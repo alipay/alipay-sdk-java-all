@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工作经历
  *
  * @author auto create
- * @since 1.0, 2023-08-02 17:39:55
+ * @since 1.0, 2023-08-04 16:56:57
  */
 public class CloudResumeWorkExperience extends AlipayObject {
 
-	private static final long serialVersionUID = 6372598345276534726L;
+	private static final long serialVersionUID = 3163334264233927372L;
 
 	/**
 	 * 公司名称
@@ -30,6 +30,12 @@ public class CloudResumeWorkExperience extends AlipayObject {
 	 */
 	@ApiField("job_name")
 	private String jobName;
+
+	/**
+	 * 用户在求职意向页面自主录入
+	 */
+	@ApiField("position_name")
+	private String positionName;
 
 	/**
 	 * 行业id
@@ -80,6 +86,13 @@ public class CloudResumeWorkExperience extends AlipayObject {
 	}
 	public void setJobName(String jobName) {
 		this.jobName = jobName;
+	}
+
+	public String getPositionName() {
+		return this.positionName;
+	}
+	public void setPositionName(String positionName) {
+		this.positionName = positionName;
 	}
 
 	public String getProfessionId() {

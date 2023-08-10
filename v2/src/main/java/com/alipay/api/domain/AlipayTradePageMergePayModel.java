@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单合并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2023-08-01 20:32:16
+ * @since 1.0, 2023-08-04 22:35:52
  */
 public class AlipayTradePageMergePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3644667784692225714L;
+	private static final long serialVersionUID = 5364359241553188846L;
+
+	/**
+	 * 外部指定买家
+	 */
+	@ApiField("ext_user_info")
+	private ExtUserInfo extUserInfo;
 
 	/**
 	 * 子订单详情
@@ -34,6 +40,13 @@ public class AlipayTradePageMergePayModel extends AlipayObject {
 	 */
 	@ApiField("timeout_express")
 	private String timeoutExpress;
+
+	public ExtUserInfo getExtUserInfo() {
+		return this.extUserInfo;
+	}
+	public void setExtUserInfo(ExtUserInfo extUserInfo) {
+		this.extUserInfo = extUserInfo;
+	}
 
 	public List<OrderDetail> getOrderDetails() {
 		return this.orderDetails;

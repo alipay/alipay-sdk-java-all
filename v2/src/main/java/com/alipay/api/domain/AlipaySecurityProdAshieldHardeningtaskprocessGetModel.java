@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询加固任务进度
  *
  * @author auto create
- * @since 1.0, 2023-05-25 16:38:21
+ * @since 1.0, 2023-08-10 13:59:51
  */
 public class AlipaySecurityProdAshieldHardeningtaskprocessGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3286733269626882651L;
+	private static final long serialVersionUID = 8596893675899631474L;
 
 	/**
 	 * 加固任务id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康门诊险药品目录项
  *
  * @author auto create
- * @since 1.0, 2023-07-27 11:20:21
+ * @since 1.0, 2023-08-07 19:23:52
  */
 public class HealthDrugCatalogueItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7224412215278163292L;
+	private static final long serialVersionUID = 2794439491684459228L;
 
 	/**
 	 * 是否是目录内药品
@@ -42,6 +42,12 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	 */
 	@ApiField("general_name")
 	private String generalName;
+
+	/**
+	 * 药品图片地址
+	 */
+	@ApiField("image")
+	private String image;
 
 	/**
 	 * 库存
@@ -98,6 +104,12 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	private String price;
 
 	/**
+	 * 价格级别，HIGH_PRICE-高价，SUPER_HIGH_PRICE-超高价
+	 */
+	@ApiField("price_level")
+	private String priceLevel;
+
+	/**
 	 * 规格
 	 */
 	@ApiField("specifications")
@@ -148,6 +160,13 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	}
 	public void setGeneralName(String generalName) {
 		this.generalName = generalName;
+	}
+
+	public String getImage() {
+		return this.image;
+	}
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	public Long getInventory() {
@@ -211,6 +230,13 @@ public class HealthDrugCatalogueItem extends AlipayObject {
 	}
 	public void setPrice(String price) {
 		this.price = price;
+	}
+
+	public String getPriceLevel() {
+		return this.priceLevel;
+	}
+	public void setPriceLevel(String priceLevel) {
+		this.priceLevel = priceLevel;
 	}
 
 	public String getSpecifications() {

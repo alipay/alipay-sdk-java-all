@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联合营销签约信息代填写请求
  *
  * @author auto create
- * @since 1.0, 2023-05-23 10:53:06
+ * @since 1.0, 2023-08-08 12:02:55
  */
 public class AlipayCommerceOperationDcsProxysignSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7553428444489241844L;
+	private static final long serialVersionUID = 7424572914241767796L;
 
 	/**
 	 * 门店所在位置纬度，小数点后最多保留6位

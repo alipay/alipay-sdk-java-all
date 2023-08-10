@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 接口支持参数校验
  *
  * @author auto create
- * @since 1.0, 2023-07-24 14:58:28
+ * @since 1.0, 2023-08-08 14:56:14
  */
 public class AlipayBossProdTestModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3187492291115313687L;
+	private static final long serialVersionUID = 8714896762129895369L;
 
 	/**
 	 * test
@@ -36,10 +36,31 @@ public class AlipayBossProdTestModifyModel extends AlipayObject {
 	private PublicComplex complexRef;
 
 	/**
+	 * 1
+	 */
+	@ApiListField("lisit_test")
+	@ApiField("public_complex")
+	private List<PublicComplex> lisitTest;
+
+	/**
+	 * test
+	 */
+	@ApiListField("list_complex_copy")
+	@ApiField("public_complex")
+	private List<PublicComplex> listComplexCopy;
+
+	/**
 	 * test
 	 */
 	@ApiField("test_a")
 	private String testA;
+
+	/**
+	 * test
+	 */
+	@ApiListField("test_aaa")
+	@ApiField("price")
+	private List<String> testAaa;
 
 	/**
 	 * test
@@ -105,11 +126,32 @@ public class AlipayBossProdTestModifyModel extends AlipayObject {
 		this.complexRef = complexRef;
 	}
 
+	public List<PublicComplex> getLisitTest() {
+		return this.lisitTest;
+	}
+	public void setLisitTest(List<PublicComplex> lisitTest) {
+		this.lisitTest = lisitTest;
+	}
+
+	public List<PublicComplex> getListComplexCopy() {
+		return this.listComplexCopy;
+	}
+	public void setListComplexCopy(List<PublicComplex> listComplexCopy) {
+		this.listComplexCopy = listComplexCopy;
+	}
+
 	public String getTestA() {
 		return this.testA;
 	}
 	public void setTestA(String testA) {
 		this.testA = testA;
+	}
+
+	public List<String> getTestAaa() {
+		return this.testAaa;
+	}
+	public void setTestAaa(List<String> testAaa) {
+		this.testAaa = testAaa;
 	}
 
 	public Boolean getTestBoolean() {

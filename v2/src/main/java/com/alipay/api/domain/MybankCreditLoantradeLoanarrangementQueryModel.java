@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部商业平台合作-查询贷款合约
  *
  * @author auto create
- * @since 1.0, 2023-05-29 17:41:39
+ * @since 1.0, 2023-08-10 10:22:09
  */
 public class MybankCreditLoantradeLoanarrangementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8858161895714495137L;
+	private static final long serialVersionUID = 6157124732436161953L;
 
 	/**
 	 * 网商银行参与者会员角色ID。客户在网商融资平台页面发起贷款申请或者机构调用代客户申贷接口mybank.credit.loanapply.apply.create后，网商会把申请结果以消息的方式通知机构，该字段包含在返回的消息体中。

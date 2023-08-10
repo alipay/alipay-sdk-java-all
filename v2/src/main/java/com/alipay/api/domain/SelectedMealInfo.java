@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SelectedMealInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5619854761391369875L;
+	private static final long serialVersionUID = 6821547356289814656L;
 
 	/**
 	 * 套餐的加价.仅当type=COMBO时有效

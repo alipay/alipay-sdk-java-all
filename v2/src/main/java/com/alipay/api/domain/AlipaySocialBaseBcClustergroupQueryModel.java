@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询群组（分组）下群聊列表
  *
  * @author auto create
- * @since 1.0, 2022-09-20 19:28:41
+ * @since 1.0, 2023-08-10 12:17:36
  */
 public class AlipaySocialBaseBcClustergroupQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1771721973438476885L;
+	private static final long serialVersionUID = 6645234525258479194L;
 
 	/**
 	 * 客户群分组id，此id唯一，分组下会管理一系列的客户群

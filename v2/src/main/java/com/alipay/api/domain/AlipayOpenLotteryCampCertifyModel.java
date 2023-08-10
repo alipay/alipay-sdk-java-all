@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenLotteryCampCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4159732543968923999L;
+	private static final long serialVersionUID = 2315118679994969356L;
 
 	/**
 	 * 环境

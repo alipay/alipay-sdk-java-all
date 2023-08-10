@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景开放平台电商订单模型
  *
  * @author auto create
- * @since 1.0, 2023-04-21 10:33:58
+ * @since 1.0, 2023-08-04 11:31:56
  */
 public class EcomOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8814747156956187175L;
+	private static final long serialVersionUID = 8481741559246119937L;
 
 	/**
 	 * 实际支付金额
@@ -52,6 +52,12 @@ public class EcomOrderDTO extends AlipayObject {
 	 */
 	@ApiField("charge_duration")
 	private InsPeriodDTO chargeDuration;
+
+	/**
+	 * 充电保障方案类型 (FREQUENCY/MONTH/YEAR)为空时默认为FREQUENCY
+	 */
+	@ApiField("charge_guarantee_plan_type")
+	private String chargeGuaranteePlanType;
 
 	/**
 	 * 免押金额
@@ -226,6 +232,13 @@ public class EcomOrderDTO extends AlipayObject {
 	}
 	public void setChargeDuration(InsPeriodDTO chargeDuration) {
 		this.chargeDuration = chargeDuration;
+	}
+
+	public String getChargeGuaranteePlanType() {
+		return this.chargeGuaranteePlanType;
+	}
+	public void setChargeGuaranteePlanType(String chargeGuaranteePlanType) {
+		this.chargeGuaranteePlanType = chargeGuaranteePlanType;
 	}
 
 	public Long getCreditDepositMoney() {

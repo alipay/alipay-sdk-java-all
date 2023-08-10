@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlink.collect.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:15:54
+ * @since 1.0, 2023-08-03 21:42:04
  */
 public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2783468198186664559L;
+	private static final long serialVersionUID = 7171284431922484157L;
 
 	/** 
 	 * 非文件模式下的数据返回结果。如果data_status为END，则该字段为空
@@ -24,7 +24,7 @@ public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse 
 	private String dataContent;
 
 	/** 
-	 * INIT表示任务还在初始化状态，COLLECT表示任务在进行中，END表示任务处理完成，FAIL表示任务处理失败。
+	 * INIT表示任务还在初始化状态，COLLECT表示任务在进行中，END表示任务处理完成，FAIL表示任务处理失败。AUTH_FAIL表示授权失败
 	 */
 	@ApiField("data_status")
 	private String dataStatus;
@@ -68,6 +68,12 @@ public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("merchant_request_id")
 	private String merchantRequestId;
+
+	/** 
+	 * 产品码，和入参中的product_code一致
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/** 
 	 * 随机秘钥信封。可使用该密钥解密数据内容
@@ -129,6 +135,13 @@ public class ZhimaCreditEpCreditlinkCollectQueryResponse extends AlipayResponse 
 	}
 	public String getMerchantRequestId( ) {
 		return this.merchantRequestId;
+	}
+
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+	public String getProductCode( ) {
+		return this.productCode;
 	}
 
 	public void setSecret(String secret) {
