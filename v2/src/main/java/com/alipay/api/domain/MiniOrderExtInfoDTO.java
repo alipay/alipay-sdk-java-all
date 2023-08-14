@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2023-08-08 11:06:28
+ * @since 1.0, 2023-08-11 15:27:55
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4882335759934536518L;
+	private static final long serialVersionUID = 4264136116174711966L;
 
 	/**
 	 * 预约上门取件的时间点,时间格式为 yyyy-MM-dd HH:mm:ss
@@ -21,11 +21,24 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	@ApiField("door_time")
 	private Date doorTime;
 
+	/**
+	 * 完整的支付参数拼接成的字符串，从服务端获取
+	 */
+	@ApiField("order_str")
+	private String orderStr;
+
 	public Date getDoorTime() {
 		return this.doorTime;
 	}
 	public void setDoorTime(Date doorTime) {
 		this.doorTime = doorTime;
+	}
+
+	public String getOrderStr() {
+		return this.orderStr;
+	}
+	public void setOrderStr(String orderStr) {
+		this.orderStr = orderStr;
 	}
 
 }

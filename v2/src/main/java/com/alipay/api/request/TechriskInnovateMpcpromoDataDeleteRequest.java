@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: techrisk.innovate.mpcpromo.data.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-07-13 09:36:54
+ * @since 1.0, 2023-08-14 10:09:15
  */
 public class TechriskInnovateMpcpromoDataDeleteRequest implements AlipayRequest<TechriskInnovateMpcpromoDataDeleteResponse> {
 

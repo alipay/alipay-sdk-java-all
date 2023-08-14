@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: techrisk.innovate.mpcpromo.scene.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-13 10:06:54
+ * @since 1.0, 2023-08-14 10:08:27
  */
 public class TechriskInnovateMpcpromoSceneCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2816851251892131686L;
+	private static final long serialVersionUID = 5229293883887124483L;
 
 	/** 
 	 * 返回非法商品数据列表，该商品未导入到小程序云，创建场景时不能被选择。

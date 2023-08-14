@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户企业列表
  *
  * @author auto create
- * @since 1.0, 2023-06-07 19:32:51
+ * @since 1.0, 2023-08-11 11:20:36
  */
 public class AlipayCommerceEcUserEnterpriseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7656538683925528654L;
+	private static final long serialVersionUID = 7288868878285586698L;
 
 	/**
 	 * 用户open_id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约参数。用于sdk支付并签约中传入签约信息。
  *
  * @author auto create
- * @since 1.0, 2023-08-10 15:30:17
+ * @since 1.0, 2023-08-14 11:02:49
  */
 public class SignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2322183848757213541L;
+	private static final long serialVersionUID = 7121929439897241661L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -48,6 +48,12 @@ public class SignParams extends AlipayObject {
 	 */
 	@ApiField("personal_product_code")
 	private String personalProductCode;
+
+	/**
+	 * 商家和支付宝签约的产品码。 商家扣款产品传入固定值：GENERAL_WITHHOLDING
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 签约成功后商户用于接收异步通知的地址。如果不传入，签约与支付的异步通知都会发到外层notify_url参数传入的地址；如果外层也未传入，签约与支付的异步通知都会发到商户appid配置的网关地址。
@@ -107,6 +113,13 @@ public class SignParams extends AlipayObject {
 	}
 	public void setPersonalProductCode(String personalProductCode) {
 		this.personalProductCode = personalProductCode;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getSignNotifyUrl() {

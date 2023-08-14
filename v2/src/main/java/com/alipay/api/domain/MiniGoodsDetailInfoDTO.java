@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2023-07-31 14:40:33
+ * @since 1.0, 2023-08-11 15:27:55
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3676526468355145128L;
+	private static final long serialVersionUID = 5147452532556533898L;
 
 	/**
 	 * 商品描述信息
@@ -73,6 +73,12 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	 */
 	@ApiField("platform_item_version_id")
 	private String platformItemVersionId;
+
+	/**
+	 * 租金信息，租赁商品特有
+	 */
+	@ApiField("rent_info")
+	private RentInfoDTO rentInfo;
 
 	/**
 	 * 商品单价，单位：元
@@ -160,6 +166,13 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	}
 	public void setPlatformItemVersionId(String platformItemVersionId) {
 		this.platformItemVersionId = platformItemVersionId;
+	}
+
+	public RentInfoDTO getRentInfo() {
+		return this.rentInfo;
+	}
+	public void setRentInfo(RentInfoDTO rentInfo) {
+		this.rentInfo = rentInfo;
 	}
 
 	public String getSalePrice() {

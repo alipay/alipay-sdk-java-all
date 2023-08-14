@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaytoolRefundResultDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8219292571457538324L;
+	private static final long serialVersionUID = 6745889852145648952L;
 
 	/**
 	 * 支付工具退款完成时间。格式为：yyyy-MM-dd HH:mm:ss

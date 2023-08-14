@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceLogisticsWaybillIstdstatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5229867774355276611L;
+	private static final long serialVersionUID = 2111211457883295694L;
 
 	/**
 	 * 事件发生时间点

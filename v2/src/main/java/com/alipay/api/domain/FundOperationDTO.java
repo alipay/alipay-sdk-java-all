@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundOperationDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7759848186676758537L;
+	private static final long serialVersionUID = 8422685381266738412L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，调用签约接口成功时返回。

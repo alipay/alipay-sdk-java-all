@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 网关测试接口——openid升级测试
  *
  * @author auto create
- * @since 1.0, 2023-08-04 15:20:45
+ * @since 1.0, 2023-08-11 14:42:20
  */
 public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8732712347883974123L;
+	private static final long serialVersionUID = 1223411991491188273L;
 
 	/**
 	 * 详细地址
@@ -145,6 +148,20 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends Alipa
 	 */
 	@ApiField("two_uid")
 	private String twoUid;
+
+	/**
+	 * 1
+	 */
+	@ApiListField("uid_list")
+	@ApiField("string")
+	private List<String> uidList;
+
+	/**
+	 * 1
+	 */
+	@ApiListField("uid_list_open_id_list")
+	@ApiField("string")
+	private List<String> uidListOpenIdList;
 
 	/**
 	 * xxx
@@ -310,6 +327,20 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends Alipa
 	}
 	public void setTwoUid(String twoUid) {
 		this.twoUid = twoUid;
+	}
+
+	public List<String> getUidList() {
+		return this.uidList;
+	}
+	public void setUidList(List<String> uidList) {
+		this.uidList = uidList;
+	}
+
+	public List<String> getUidListOpenIdList() {
+		return this.uidListOpenIdList;
+	}
+	public void setUidListOpenIdList(List<String> uidListOpenIdList) {
+		this.uidListOpenIdList = uidListOpenIdList;
 	}
 
 	public UserDetail getUserDetail() {

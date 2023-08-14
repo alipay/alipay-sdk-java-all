@@ -18,7 +18,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCcmAgentGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5241284258896179237L;
+	private static final long serialVersionUID = 3176579892833736152L;
 
 	/** 
 	 * 热线接入方式： 0：话机 1：电脑耳机；2：webrtc

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业部门删除
  *
  * @author auto create
- * @since 1.0, 2023-06-07 19:32:15
+ * @since 1.0, 2023-08-11 11:19:20
  */
 public class AlipayCommerceEcDepartmentDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5152223439678737819L;
+	private static final long serialVersionUID = 8129964624847691821L;
 
 	/**
 	 * 部门id

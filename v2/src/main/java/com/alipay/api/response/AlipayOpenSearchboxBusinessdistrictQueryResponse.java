@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSearchboxBusinessdistrictQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1327499459928779382L;
+	private static final long serialVersionUID = 8664637747467992369L;
 
 	/** 
 	 * 商圈信息

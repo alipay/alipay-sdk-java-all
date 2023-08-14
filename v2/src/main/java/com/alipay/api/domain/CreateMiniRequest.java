@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreateMiniRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1822442828487629144L;
+	private static final long serialVersionUID = 6237131846695377125L;
 
 	/**
 	 * 商家登录支付宝的邮箱帐号或手机号，当前仅支持企业支付宝帐号

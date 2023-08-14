@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportAdStocktaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8681597542792629357L;
+	private static final long serialVersionUID = 1383719738633713863L;
 
 	/** 
 	 * 库存查询任务id +  库存查询任务的唯一标识，可使用该ID进行库存任务详情查询

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询企业签约企业码信息
  *
  * @author auto create
- * @since 1.0, 2023-06-07 19:31:53
+ * @since 1.0, 2023-08-11 11:20:27
  */
 public class AlipayCommerceEcEnterpriseAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8462895811398885614L;
+	private static final long serialVersionUID = 3789698838459618133L;
 
 	/**
 	 * 资金共同账号id；enterprise_id与account_id至少传一个，如果都传了优先使用enterprise_id

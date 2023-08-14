@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeTicketUsedRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7225727914123882275L;
+	private static final long serialVersionUID = 1847635743987127148L;
 
 	/** 
 	 * 外部请求号，支持英文字母和数字，由开发者自行定义（不允许重复）

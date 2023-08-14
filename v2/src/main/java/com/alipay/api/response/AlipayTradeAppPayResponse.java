@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.app.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-31 16:07:01
+ * @since 1.0, 2023-08-14 11:03:00
  */
 public class AlipayTradeAppPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2743777858163627652L;
+	private static final long serialVersionUID = 7283725714398226989L;
 
 	/** 
 	 * 授信协议号。信用支付场景才有值，先用后付产品里是用户的芝麻授信协议号

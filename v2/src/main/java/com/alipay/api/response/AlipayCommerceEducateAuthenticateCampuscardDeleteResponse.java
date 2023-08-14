@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateAuthenticateCampuscardDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5299129771883915919L;
+	private static final long serialVersionUID = 7734338351731292959L;
 
 	/** 
 	 * 如果学生学籍更新成功，则返回SUCCESS ， 失败返回FAIL。

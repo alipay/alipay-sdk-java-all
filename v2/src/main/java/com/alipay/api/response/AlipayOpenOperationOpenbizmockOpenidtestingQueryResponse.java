@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.openbizmock.openidtesting.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-04 15:20:45
+ * @since 1.0, 2023-08-11 14:46:39
  */
 public class AlipayOpenOperationOpenbizmockOpenidtestingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1397119446174899684L;
+	private static final long serialVersionUID = 7432674893941881153L;
 
 	/** 
 	 * appid_out_one
@@ -237,6 +237,18 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryResponse extends Al
 	 */
 	@ApiField("result_twouid_original_open_id")
 	private String resultTwouidOriginalOpenId;
+
+	/** 
+	 * 1
+	 */
+	@ApiField("result_uid_list")
+	private String resultUidList;
+
+	/** 
+	 * 1
+	 */
+	@ApiField("result_uid_list_open_id")
+	private String resultUidListOpenId;
 
 	/** 
 	 * 4
@@ -531,6 +543,20 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryResponse extends Al
 	}
 	public String getResultTwouidOriginalOpenId( ) {
 		return this.resultTwouidOriginalOpenId;
+	}
+
+	public void setResultUidList(String resultUidList) {
+		this.resultUidList = resultUidList;
+	}
+	public String getResultUidList( ) {
+		return this.resultUidList;
+	}
+
+	public void setResultUidListOpenId(String resultUidListOpenId) {
+		this.resultUidListOpenId = resultUidListOpenId;
+	}
+	public String getResultUidListOpenId( ) {
+		return this.resultUidListOpenId;
 	}
 
 	public void setResultUserDetail(UserDetail resultUserDetail) {

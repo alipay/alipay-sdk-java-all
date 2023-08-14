@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RebateGood extends AlipayObject {
 
-	private static final long serialVersionUID = 8374517343924544295L;
+	private static final long serialVersionUID = 2859232317125332998L;
 
 	/**
 	 * 商户侧商品id

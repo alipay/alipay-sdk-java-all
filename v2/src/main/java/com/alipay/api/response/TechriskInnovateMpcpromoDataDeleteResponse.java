@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: techrisk.innovate.mpcpromo.data.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-13 09:36:54
+ * @since 1.0, 2023-08-14 10:09:15
  */
 public class TechriskInnovateMpcpromoDataDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2411814611218643954L;
+	private static final long serialVersionUID = 8693984776911223359L;
 
 	
 

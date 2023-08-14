@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FaasDatabaseHistorie extends AlipayObject {
 
-	private static final long serialVersionUID = 2466311829478874454L;
+	private static final long serialVersionUID = 6563771848215786555L;
 
 	/**
 	 * 任务执行进度

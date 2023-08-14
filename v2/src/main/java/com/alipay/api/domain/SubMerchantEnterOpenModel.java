@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户门店信息模型
  *
  * @author auto create
- * @since 1.0, 2020-09-24 11:36:59
+ * @since 1.0, 2023-08-14 13:37:37
  */
 public class SubMerchantEnterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8237138327655631868L;
+	private static final long serialVersionUID = 3447743223821428333L;
 
 	/**
 	 * 扩展字段，为json字符串格式；入驻缴费后开票的产品如果需要传入自定义开票链接，由此字段传入。

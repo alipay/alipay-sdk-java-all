@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询apmobile检测结果
  *
  * @author auto create
- * @since 1.0, 2023-07-27 15:25:18
+ * @since 1.0, 2023-08-11 17:48:44
  */
 public class AlipayDigitalmgmtAppAppreportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5739437683958619752L;
+	private static final long serialVersionUID = 2489796773669385464L;
 
 	/**
 	 * 外部用户id
