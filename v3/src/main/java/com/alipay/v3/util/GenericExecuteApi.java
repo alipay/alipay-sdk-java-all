@@ -103,6 +103,20 @@ public class GenericExecuteApi {
     }
 
     /**
+     * @param path                  The sub-path of the HTTP URL
+     * @param method                The request method, one of "GET", "HEAD", "OPTIONS", "POST", "PUT", "PATCH" and "DELETE"
+     * @param openApiGenericRequest 通用入参
+     * @param type                  TypeToken, e.g. new TypeToken<Map<String, Object>>() {}
+     * @param <T>                   The return type corresponding to (same with) type
+     * @return
+     * @throws ApiException
+     */
+    public <T> ApiResponse<T> execute(String path, String method, OpenApiGenericRequest openApiGenericRequest, TypeToken<T> type) throws ApiException {
+        okhttp3.Call localVarCall = executeCall(path, method, openApiGenericRequest);
+        return localVarApiClient.execute(localVarCall, type.getType());
+    }
+
+    /**
      * @param method     方法名
      * @param httpMethod GET/POST
      * @param bizParams  bizContent

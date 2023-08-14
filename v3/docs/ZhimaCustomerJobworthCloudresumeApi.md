@@ -38,8 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     ZhimaCustomerJobworthCloudresumeApi apiInstance = new ZhimaCustomerJobworthCloudresumeApi(defaultClient);
-    String connKey = "uuid"; // String | 长效的认证令牌
-    String onceToken = "uuid"; // String | 交换云简历的单次token
+    String connKey = "uuid"; // String | 长效的认证令牌：zhima.credit.payafteruse.creditagreement.sign 的out_agreement_no
+    String onceToken = "uuid"; // String | 交换云简历的单次token：zhima.credit.payafteruse.creditagreement.sign 的  extra_param入参onceToken（授权后5分钟内，单次有效
     try {
       ZhimaCustomerJobworthCloudresumeQueryResponseModel result = apiInstance.query(connKey, onceToken);
       System.out.println(result);
@@ -58,8 +58,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **connKey** | **String**| 长效的认证令牌 | [optional] |
-| **onceToken** | **String**| 交换云简历的单次token | [optional] |
+| **connKey** | **String**| 长效的认证令牌：zhima.credit.payafteruse.creditagreement.sign 的out_agreement_no | [optional] |
+| **onceToken** | **String**| 交换云简历的单次token：zhima.credit.payafteruse.creditagreement.sign 的  extra_param入参onceToken（授权后5分钟内，单次有效 | [optional] |
 
 ### Return type
 

@@ -5,7 +5,7 @@ info:
     url: https://openhome.alipay.com/developmentDocument.htm
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2023-07-17
+  version: 2023-08-14
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -11295,7 +11295,7 @@ paths:
     post:
       description: "商户可以通过该接口修改支付券基本信息。 接口同步返回修改请求受理结果，后续通过alipay.marketing.activity.message.modified消\
         息接口异步发送修改活动成功事件消息。 \n\n特别注意：修改支付券接口返回结果并不代表活动修改成功，必须等待消息回调后才能确保成功。 如果成功消息长\
-        时间未送达，请联系相关技术人员。\n"
+        时间未送达，请联系相关技术人员。"
       operationId: alipay.marketing.activity.voucher.modify
       requestBody:
         content:
@@ -18974,7 +18974,7 @@ paths:
           example: "20220308000000934758"
           type: string
         style: form
-      - description: "查询类型，表示以当前维度进行数据聚合。\tapp：小程序维度；activity：活动维度；"
+      - description: 查询类型，表示以当前维度进行数据聚合。
         explode: true
         in: query
         name: query_type
@@ -27657,7 +27657,7 @@ paths:
       description: 用于查询工作证基本信息
       operationId: zhima.customer.jobworth.cloudresume.query
       parameters:
-      - description: 长效的认证令牌
+      - description: 长效的认证令牌：zhima.credit.payafteruse.creditagreement.sign 的out_agreement_no
         explode: true
         in: query
         name: conn_key
@@ -27666,7 +27666,8 @@ paths:
           example: uuid
           type: string
         style: form
-      - description: 交换云简历的单次token
+      - description: "交换云简历的单次token：zhima.credit.payafteruse.creditagreement.sign\
+          \ 的\t\textra_param入参onceToken（授权后5分钟内，单次有效"
         explode: true
         in: query
         name: once_token
@@ -32818,6 +32819,7 @@ components:
           - SYSTEM_ERROR
           - SYSTEM_BUSY
           - USER_AGREEMENT_CHECK_FAIL
+          - INVALID_PARAMETER
           type: string
         links:
           description: 解决方案链接
@@ -32836,11 +32838,11 @@ components:
           example: "9000.00"
           type: string
         freeze_amount:
-          description: 冻结金额
+          description: 冻结金额。单位（元）
           example: "1000.00"
           type: string
         settle_amount:
-          description: 待结算金额
+          description: 待结算金额，单位（元）
           example: "500.00"
           type: string
         total_amount:
@@ -35573,7 +35575,7 @@ components:
           example: "20215425001112341234"
           type: string
         amount:
-          description: 变更的金额/余额，以（分）为单位
+          description: 变更的金额/余额，以（分）为单位，当变更的资产类型为次卡时，当前的单位为次
           example: "10"
           type: string
         enterprise_id:
@@ -47100,6 +47102,11 @@ components:
           description: 活动id
           example: "2016042700826004508401111111"
           type: string
+        app_item_infos:
+          description: 小程序商品信息
+          items:
+            $ref: '#/components/schemas/AppItemInfo'
+          type: array
         goods_infos:
           description: 商品编码列表
           items:
@@ -49649,12 +49656,13 @@ components:
         template_style_info:
           $ref: '#/components/schemas/TemplateStyleInfoDTO'
         write_off_type:
-          description: "卡包详情页面中展现出的卡码（可用于扫码核销）\t\t(1) 静态码\tqrcode: 二维码，扫码得商户开卡传入的\
+          description: " 卡包详情页面中展现出的卡码（可用于扫码核销）\t\t(1) 静态码\tqrcode: 二维码，扫码得商户开卡传入的\
             external_card_no\tbarcode: 条形码，扫码得商户开卡传入的external_card_no\t\t(2) 动态码-支\
             付宝生成码值(动态码会在2分钟左右后过期)\tdqrcode: 动态二维码，扫码得到的码值可配合会员卡查询接口使用\tdbarcode: 动\
             态条形码，扫码得到的码值可配合会员卡查询接口使用\t\t(3) 动态码-商家自主生成码值（码值、时效性都由商户控制）\tmdqrcode:\
             \ 商户动态二维码，扫码得商户自主传入的码值\tmdbarcode: 商户动态条码，扫码得商户自主传入的码值\t如需使用商户动态码，对接详情\
-            参见 <a href=\"https://opendocs.alipay.com/open/02y7gt\">商户动态发码</a>。"
+            参见 <a href=\"https://opendocs.alipay.com/open/02y7gt\">商户动态发码</a>。\t\t\
+            (4)无码值-商家不需要核销码\t none:商家无需核销码"
           example: qrcode
           type: string
       type: object
@@ -49759,12 +49767,12 @@ components:
         template_style_info:
           $ref: '#/components/schemas/TemplateStyleInfoDTO'
         write_off_type:
-          description: "卡包详情页面中展现出的卡码（可用于扫码核销）\t\t(1) 静态码\tqrcode: 二维码，扫码得商户开卡传入的\
+          description: " 卡包详情页面中展现出的卡码（可用于扫码核销）\t\t(1) 静态码\tqrcode: 二维码，扫码得商户开卡传入的\
             external_card_no\tbarcode: 条形码，扫码得商户开卡传入的external_card_no\t\t(2) 动态码-支\
             付宝生成码值(动态码会在2分钟左右后过期)\tdqrcode: 动态二维码，扫码得到的码值可配合会员卡查询接口使用\tdbarcode: 动\
             态条形码，扫码得到的码值可配合会员卡查询接口使用\t\t(3) 动态码-商家自主生成码值（码值、时效性都由商户控制）\tmdqrcode:\
             \ 商户动态二维码，扫码得商户自主传入的码值\tmdbarcode: 商户动态条码，扫码得商户自主传入的码值。\t如需使用商户动态码，请联系\
-            支付宝技术支持获取相关文档。"
+            支付宝技术支持获取相关文档。\t\t(4)无码值-商家不需要核销码\t none:商家无需核销码"
           example: qrcode
           type: string
       type: object
@@ -60039,8 +60047,8 @@ components:
           example: XS1001_XS2001_XS3002;XS1011_XS2089;XS1002_XS2008_XS3024
           type: string
         region_type:
-          description: "小程序服务区域类型，支持：\tGLOBAL-全球\tCHINA-中国\t如果前期已经设置过该信息，本次可不填，平台将\
-            会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。\tLOCATION-指定区域"
+          description: "小程序服务区域类型\t如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则\
+            本次为必填。"
           example: CHINA
           type: string
         service_email:
@@ -60397,7 +60405,7 @@ components:
             $ref: '#/components/schemas/RegionInfo'
           type: array
         service_region_type:
-          description: 小程序服务区域类型，GLOBLE-全球，CHINA-中国，LOCATION-指定区域
+          description: 小程序服务区域类型
           example: LOCATION
           type: string
         status:
@@ -68215,6 +68223,7 @@ components:
           - SETTLE_ACCOUNT_INVALID
           - MERCHANT_RISK_LIMIT
           - OPENID_APPID_NOT_MATCH
+          - FREQUENCY_LIMITED
           type: string
         links:
           description: 解决方案链接
@@ -69433,6 +69442,7 @@ components:
           - ACQ.ZM_AUTH_RULE_LIMIT
           - ACQ.ROYALTY_ACCOUNT_NOT_EXIST
           - ACQ.RISK_MERCHANT_IP_NOT_EXIST
+          - ACQ.UN_SUPPORT_TRADE_SCENE
           type: string
         links:
           description: 解决方案链接
@@ -70082,7 +70092,7 @@ components:
           example: CREDIT_PREAUTH_PAY
           type: string
         biz_settle_mode:
-          description: CPS订单的业务结算标识
+          description: 账期结算标识，指已完成支付的订单会进行账期管控，不会实时结算。该参数目前会在使用小程序交易组件场景下返回
           example: PERIOD
           type: string
         bkagent_resp_info:
@@ -70843,6 +70853,7 @@ components:
           - ACQ.ILLEGAL_REQUEST
           - ACQ.CONFIRM_REFUSE_AFTER_REFUND
           - ACQ.SETTLE_SCENE_NOT_SUPPORT
+          - ACQ.INVALID_STORE_ID
           type: string
         links:
           description: 解决方案链接
@@ -74124,6 +74135,25 @@ components:
           example: mini-ob
           type: string
       type: object
+    AppItemInfo:
+      properties:
+        item_id:
+          description: 小程序商品-支付宝内部商品id
+          example: "2023041422000600076270"
+          type: string
+        item_use_type:
+          description: 商品可用类型
+          example: AVAILABLE
+          type: string
+        mini_app_id:
+          description: 小程序id
+          example: "123"
+          type: string
+        out_item_id:
+          description: 小程序商品外部id
+          example: "2021003131689002"
+          type: string
+      type: object
     AppMemberInfo:
       properties:
         gmt_invite:
@@ -75592,7 +75622,7 @@ components:
           example: "19023454"
           type: string
         settle_entity_type:
-          description: "结算主体类型。\tSecondMerchant：结算主体为二级商户"
+          description: "结算主体类型。\tSecondMerchant：结算主体为二级商户;\tStore：结算主体为门店；"
           example: SecondMerchant
           type: string
         status:
@@ -76310,9 +76340,29 @@ components:
           description: 教育状态
           example: FINISH_SCHOOL
           type: string
+        finish_school_month:
+          description: 毕业月份
+          example: "9"
+          type: string
+        finish_school_year:
+          description: 毕业年份
+          example: 2023
+          type: integer
+        in_school_month:
+          description: 入学月份
+          example: 12
+          type: integer
+        in_school_year:
+          description: 入学年份
+          example: 2023
+          type: integer
         location:
           description: 受教育地点
           example: 受教育地点
+          type: string
+        major:
+          description: 上学专业
+          example: 计算机科学与技术
           type: string
         month:
           description: 月
@@ -76322,6 +76372,10 @@ components:
           description: 学校名称
           example: 上海大学
           type: string
+        tong_zhao:
+          description: 是否统招
+          example: true
+          type: boolean
         year:
           description: 年
           example: 2022
@@ -76393,6 +76447,10 @@ components:
         job_name:
           description: 职业
           example: 职业
+          type: string
+        position_name:
+          description: 用户在求职意向页面自主录入
+          example: 开发工程师
           type: string
         profession_id:
           description: 行业id
@@ -77843,6 +77901,10 @@ components:
           description: 证件信息类型，大陆身份证：IDENTITY_CARD
           example: IDENTITY_CARD
           type: string
+        liveness_strategy:
+          description: "活体检测类型，当前枚举支持：\tOFF：关闭活体检测；\tCHECK：正常活体检测。\t不传默认CHECK。"
+          example: "OFF"
+          type: string
         outer_biz_no:
           description: 客户业务单据号
           example: xxxx
@@ -77855,6 +77917,10 @@ components:
           description: true：需要留底；false：无需留底。默认留底
           example: true
           type: boolean
+        security_strategy:
+          description: ON：开启安全拦截。OFF：关闭安全拦截。建议开启，能够有效防御攻击，默认取值为ON。
+          example: "ON"
+          type: string
       type: object
     DatadigitalFincloudGeneralsaasFaceSourceCertifyResponseModel:
       properties:
@@ -77919,7 +77985,8 @@ components:
           example: "131128199004234511"
           type: string
         cert_type:
-          description: 证件类型，目前只支持身份证:IDENTITY_CARD
+          description: "证件类型，当前枚举支持：\tIDENTITY_CARD：身份证\tRESIDENCE_HK_MC：港澳居民居住证\t\
+            RESIDENCE_TAIWAN：台湾居民居住证"
           example: IDENTITY_CARD
           type: string
         face_reserve_strategy:
@@ -78653,6 +78720,9 @@ components:
         consume_amount:
           description: 账单金额，单位：元，不包含营销资产
           type: string
+        consume_biz_type:
+          description: "账单业务类型\t-因公支付：EC_PAY\t-因公收款：EC_CLLCT"
+          type: string
         consume_category:
           description: 员工消费记账分类
           type: string
@@ -78715,6 +78785,15 @@ components:
           type: string
         pay_no:
           description: 交易流水号
+          type: string
+        payer_card_no:
+          description: 付款方卡号
+          type: string
+        payer_logon_id:
+          description: 付款方登录账号
+          type: string
+        payer_name:
+          description: 付款方名称
           type: string
         peer_pay_amount:
           description: 企业代付金额，单位：元
@@ -80186,22 +80265,25 @@ components:
           description: 商品类目
           type: string
         goods_id:
-          description: 商品的编号
+          description: "商品的编号，该参数传入支付券上绑定商品goods_id,\t倘若无支付券需要消费，该字段传入商品最小粒度的商品ID（\
+            如：若商品有sku粒度，则传商户sku粒度的ID）"
           type: string
         goods_name:
           description: 商品名称
           type: string
         out_item_id:
-          description: 商家侧小程序商品ID，具体使用方式请参考：https://opendocs.alipay.com/pre-open/06uila?pathHash=87297d0a
+          description: "商家侧小程序商品ID，指商家提报给小程序商品库的商品。\t如果您已为小程序商品配置了优惠券，则该out_item_id必\
+            须传入。了解小程序商品请参考：https://opendocs.alipay.com/pre-open/06uila?pathHash=87297d0a"
           type: string
         out_sku_id:
-          description: 商家侧小程序商品sku ID，具体使用方式请参考：https://opendocs.alipay.com/pre-open/06uila?pathHash=87297d0a
+          description: "商家侧小程序商品sku ID。\t如果您的商品无多个sku，则仅需要传入out_item_id，无需传入out_sku_id；\
+            \t如果您的商品有多个sku，则须传入out_item_id、out_sku_id。"
           type: string
         price:
           description: 商品单价，单位为元
           type: string
         quantity:
-          description: 商品数量，支持小数，精确到小数点后两位
+          description: 商品数量
           type: integer
         show_url:
           description: 商品的展示地址
@@ -85202,8 +85284,7 @@ components:
           example: APPLY
           type: string
         status:
-          description: "功能包签约状态，\"valid\", \"已生效\"；\"audit\", \"签约中\"；\"invalid\"\
-            , \"已失效\"；\"none\", \"未签约\""
+          description: 功能包签约状态
           example: valid
           type: string
       type: object
@@ -85343,7 +85424,7 @@ components:
           example: key=value
           type: string
         payment_amount:
-          description: 支付金额
+          description: 支付金额，单位为该币种基础计价单位，如人民币为：元
           example: "100.00"
           type: string
         payment_currency:
@@ -85351,7 +85432,7 @@ components:
           example: CNY
           type: string
         settlement_amount:
-          description: 清算金额
+          description: 清算金额，单位为该币种基础计价单位，如人民币为：元
           example: "10.00"
           type: string
         settlement_currency:
@@ -85359,7 +85440,7 @@ components:
           example: CNY
           type: string
         trans_amount:
-          description: 转账金额
+          description: 转账金额，单位为该币种基础计价单位，如人民币为：元
           example: "10.00"
           type: string
         trans_currency:
@@ -88395,7 +88476,7 @@ components:
           example: SecondMerchant
           type: string
         trans_in_entity_type:
-          description: "分账转入主体类型。 SecondMerchant：分账转入主体为二级商户\r\t\r\tStore: 结算门店"
+          description: "分账转入主体类型。 SecondMerchant：分账转入主体为二级商户\tStore: 分账转入主体为门店"
           example: Store
           type: string
         trans_in_sub_merchant:
@@ -88406,7 +88487,7 @@ components:
           example: "2088"
           type: string
         trans_out_entity_type:
-          description: "分账转出主体类型。 SecondMerchant：结算主体为二级商户\r\t\r\tStore: 结算门店"
+          description: "分账转出主体类型。 SecondMerchant：结算主体为二级商户\tStore: 结算主体为门店"
           example: SecondMerchant
           type: string
         trans_out_sub_merchant:
@@ -89645,10 +89726,10 @@ components:
           example: "15912345678"
           type: string
         settle_account_id_type:
-          description: "结算账户id类型。 \t当settle_account_type 为bankCard时，本参数为cardSerialNo，\
-            表示结算账户id是银行卡编号; 当settle_account_type 为alipayBalance时，本参数为userId或者loginName，\
-            其中userId表示结算账户id是支付宝唯一用户号，loginName表示结算账户id是支付宝登录号; 当 settle_account_type\
-            \ 为 defaultSettle 时，本参数必须为空"
+          description: "结算账户id类型。当 settle_account_type 为 defaultSettle 时，本参数必须为空。\
+            \ \t当settle_account_type 为bankCard时，本参数为cardSerialNo，表示结算账户id是银行卡编号; 当\
+            settle_account_type 为alipayBalance时，本参数为userId或者loginName，其中userId表示结算\
+            账户id是支付宝唯一用户号，loginName表示结算账户id是支付宝登录号。"
           example: loginName
           type: string
         settle_account_type:
@@ -89657,11 +89738,12 @@ components:
           example: alipayBalance
           type: string
         settle_entity_id:
-          description: "结算主体账号。\r\t当结算主体类型为SecondMerchant，本参数为二级商户的SecondMerchantID"
+          description: "结算主体账号。\t当结算主体类型为SecondMerchant，传二级商户ID(smid)；结算主体类型为Store时\
+            ，传门店ID"
           example: "19023454"
           type: string
         settle_entity_type:
-          description: "结算主体类型。\r\tSecondMerchant：结算主体为二级商户"
+          description: "结算主体类型。\tSecondMerchant：结算主体为二级商户\tStore：结算主体为门店"
           example: SecondMerchant
           type: string
         sub_merchant:
@@ -89707,7 +89789,7 @@ components:
           example: "19023454"
           type: string
         settle_entity_type:
-          description: "结算主体类型\tSecondMerchant：结算主体为二级商户；MerchantStore：结算主体为商户门店"
+          description: "结算主体类型\tSecondMerchant：结算主体为二级商户；Store：结算主体为商户门店"
           example: SecondMerchant
           type: string
       type: object
@@ -90808,7 +90890,7 @@ components:
     SubscribeRelation:
       properties:
         keep_state:
-          description: "订阅保持状态，即用户勾选“总是保持以上选择，不再询问”选项时勾选的订阅状态。枚举值：\t0：保持订阅。\t1：保持拒\
+          description: "订阅保持状态，即用户勾选“总是保持以上选择，不再询问”选项时勾选的订阅状态。枚举值：\t1：保持订阅。\t0：保持拒\
             绝订阅。\t说明：若用户“总是保持以上选择，不再询问”选项，且选择订阅消息。下次触发消息订阅组件时，支付宝将自动发起一次静默订阅（不再拉起订\
             阅组件，无需用户手动订阅）。"
           example: "0"
@@ -92651,6 +92733,26 @@ components:
           description: 商品原价
           type: string
       type: object
+    VoucherAvailableItemInfo:
+      properties:
+        item_id:
+          description: 内部商品ID
+          type: string
+        out_item_info:
+          description: 外部商品信息
+          items:
+            $ref: '#/components/schemas/VoucherAvailableOutItemInfo'
+          type: array
+      type: object
+    VoucherAvailableOutItemInfo:
+      properties:
+        item_app_id:
+          description: 小程序ID
+          type: string
+        out_item_id:
+          description: 外部商品ID
+          type: string
+      type: object
     VoucherAvailableScope:
       properties:
         order_voucher_available_city_code:
@@ -92671,6 +92773,8 @@ components:
           $ref: '#/components/schemas/VoucherAvailableGeographyScopeInfo'
         voucher_available_goods_info:
           $ref: '#/components/schemas/VoucherAvailableGoodsInfo'
+        voucher_available_item_info:
+          $ref: '#/components/schemas/VoucherAvailableItemInfo'
       type: object
     VoucherAvailableScopeModify:
       properties:
@@ -94172,7 +94276,7 @@ components:
           type: string
         product_code:
           description: 产品码
-          example: CREDIT_PAY_AFTER_USE
+          example: w1040100001000010020
           type: string
         total_amount:
           description: 信用服务订单金额
@@ -94984,6 +95088,8 @@ components:
           - USER_NOT_AUTHORIZE
           - QUERY_DATA_IS_NULL
           - SYSTEM_ERROR
+          - INVALID_PARAMETER
+          - ZM.SYSTEM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -95011,9 +95117,23 @@ components:
           items:
             $ref: '#/components/schemas/CloudResumeEducationExperience'
           type: array
+        email:
+          description: 用户在芝麻工作证填写的邮箱
+          example: 123@126.com
+          type: string
         gender:
           description: 性别
           example: 男 or 女
+          type: string
+        intention_status:
+          description: "ALWAYS_ON_JOB(\"ALWAYS_ON_JOB\", \"随时到岗\")\tMONTH_ON_JOB(\"\
+            MONTH_ON_JOB\", \"月内到岗\")\tSEEK_FOR_CHANCE(\"SEEK_FOR_CHANCE\", \"考虑机会\
+            \")\tNO_MIND(\"NO_MIND\", \"暂不考虑机会\")"
+          example: ALWAYS_ON_JOB
+          type: string
+        person_desc:
+          description: 用户在芝麻工作证填写的自我介绍
+          example: 我是张三，性格开朗
           type: string
         phone:
           description: 手机号码
@@ -95026,6 +95146,14 @@ components:
           items:
             $ref: '#/components/schemas/CloudResumePositionIntention'
           type: array
+        position_type:
+          description: "IN_SCHOOL:在校\tFINISH_SCHOOL:已毕业"
+          example: IN_SCHOOL
+          type: string
+        residential_area:
+          description: 常驻地址
+          example: 浙江省杭州市
+          type: string
         skills:
           description: 技能信息
           items:
