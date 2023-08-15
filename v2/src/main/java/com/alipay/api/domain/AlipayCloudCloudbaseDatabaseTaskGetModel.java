@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询单个任务执行历史列表
  *
  * @author auto create
- * @since 1.0, 2023-08-08 23:37:29
+ * @since 1.0, 2023-08-15 16:43:15
  */
 public class AlipayCloudCloudbaseDatabaseTaskGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1653269954199844759L;
+	private static final long serialVersionUID = 2841513457753536758L;
 
 	/**
 	 * 小程序id

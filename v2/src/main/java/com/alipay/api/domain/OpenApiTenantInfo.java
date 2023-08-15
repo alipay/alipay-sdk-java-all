@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiTenantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1499418928525155573L;
+	private static final long serialVersionUID = 5273632559512164175L;
 
 	/**
 	 * 租户状态

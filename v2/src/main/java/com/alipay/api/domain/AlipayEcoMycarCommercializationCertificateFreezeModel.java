@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 凭证锁定
  *
  * @author auto create
- * @since 1.0, 2023-08-02 15:02:15
+ * @since 1.0, 2023-08-15 10:58:52
  */
 public class AlipayEcoMycarCommercializationCertificateFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2738156217411335241L;
+	private static final long serialVersionUID = 5139147838757559679L;
 
 	/**
 	 * 蚂蚁门店的唯一标识,如果商品属于本地生活类，必传

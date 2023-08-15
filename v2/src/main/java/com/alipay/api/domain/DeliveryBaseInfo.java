@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放计划基础信息
  *
  * @author auto create
- * @since 1.0, 2023-05-19 10:59:37
+ * @since 1.0, 2023-08-15 16:19:47
  */
 public class DeliveryBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3811875374646878192L;
+	private static final long serialVersionUID = 4585151422993277813L;
 
 	/**
 	 * 投放计划开始时间。 格式为：yyyy-MM-dd HH:mm:ss。
@@ -35,7 +35,7 @@ public class DeliveryBaseInfo extends AlipayObject {
 
 	/**
 	 * 投放计划名称。
-投放计划名称不会对用户进行表达，只用于商户管理使用。长度需要大于等于3，小于20。
+投放计划名称不会对用户进行表达，只用于商户管理使用。长度需要大于等于3，小于64。
 	 */
 	@ApiField("delivery_name")
 	private String deliveryName;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电话类型
  *
  * @author auto create
- * @since 1.0, 2023-05-22 18:47:58
+ * @since 1.0, 2023-08-15 11:54:46
  */
 public class PhoneStructVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4868285852878358633L;
+	private static final long serialVersionUID = 5278385967721481592L;
 
 	/**
 	 * 电话号码，包含区号+电话号码的座机号码格式，以及手机号码格式

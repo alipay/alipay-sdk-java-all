@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SaleActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3842717587788653275L;
+	private static final long serialVersionUID = 7652824989469821271L;
 
 	/**
 	 * 商家券活动id。

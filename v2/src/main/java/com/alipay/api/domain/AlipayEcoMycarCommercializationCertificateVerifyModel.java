@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 凭证核销
  *
  * @author auto create
- * @since 1.0, 2023-08-02 15:02:38
+ * @since 1.0, 2023-08-15 10:58:54
  */
 public class AlipayEcoMycarCommercializationCertificateVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7173156844332693339L;
+	private static final long serialVersionUID = 4696295752558188183L;
 
 	/**
 	 * 核销凭证的门店ID，如果凭证所属商品类目是本地生活类必传

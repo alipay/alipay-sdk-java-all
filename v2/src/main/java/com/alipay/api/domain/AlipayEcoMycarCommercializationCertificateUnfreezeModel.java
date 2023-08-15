@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 凭证释放锁定
  *
  * @author auto create
- * @since 1.0, 2023-08-02 15:02:28
+ * @since 1.0, 2023-08-15 10:58:51
  */
 public class AlipayEcoMycarCommercializationCertificateUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3677877626331957837L;
+	private static final long serialVersionUID = 3652483137685855836L;
 
 	/**
 	 * 履约门店ID，和锁定的履约门店ID保持一致

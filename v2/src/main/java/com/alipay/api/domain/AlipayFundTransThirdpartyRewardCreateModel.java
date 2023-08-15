@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransThirdpartyRewardCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8342119736169528246L;
+	private static final long serialVersionUID = 8739635234714136733L;
 
 	/**
 	 * 打赏金额，单位：人民币分

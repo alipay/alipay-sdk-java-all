@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务执行历史
  *
  * @author auto create
- * @since 1.0, 2023-08-08 23:05:49
+ * @since 1.0, 2023-08-15 18:09:04
  */
 public class FaasDatabaseHistorie extends AlipayObject {
 
-	private static final long serialVersionUID = 6563771848215786555L;
+	private static final long serialVersionUID = 7216949947959113289L;
 
 	/**
 	 * 任务执行进度

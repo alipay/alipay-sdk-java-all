@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarbonTranDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3354381896436614435L;
+	private static final long serialVersionUID = 7875261155445659152L;
 
 	/**
 	 * 绿色场景类型

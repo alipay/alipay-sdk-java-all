@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialAntforestTreeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6763158185745811791L;
+	private static final long serialVersionUID = 8766456571999778431L;
 
 	/**
 	 * 待同步的证书的来源账户id

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道信息
  *
  * @author auto create
- * @since 1.0, 2023-07-19 17:38:22
+ * @since 1.0, 2023-08-15 10:23:23
  */
 public class PayChannelPromoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5194946273385563651L;
+	private static final long serialVersionUID = 5533617487242311685L;
 
 	/**
 	 * 渠道额度
 	 */
 	@ApiField("channel_balance")
 	private String channelBalance;
+
+	/**
+	 * 渠道扩展信息
+	 */
+	@ApiField("channel_detail_params")
+	private ChannelDetailParams channelDetailParams;
 
 	/**
 	 * 渠道可用性标识
@@ -60,6 +66,13 @@ public class PayChannelPromoInfo extends AlipayObject {
 	}
 	public void setChannelBalance(String channelBalance) {
 		this.channelBalance = channelBalance;
+	}
+
+	public ChannelDetailParams getChannelDetailParams() {
+		return this.channelDetailParams;
+	}
+	public void setChannelDetailParams(ChannelDetailParams channelDetailParams) {
+		this.channelDetailParams = channelDetailParams;
 	}
 
 	public Boolean getChannelEnable() {

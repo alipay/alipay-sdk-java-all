@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusinessParamsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8166239293213426441L;
+	private static final long serialVersionUID = 4359637338127259775L;
 
 	/**
 	 * 实际订单时间，在乘车码场景，传入的是用户刷码乘车时间

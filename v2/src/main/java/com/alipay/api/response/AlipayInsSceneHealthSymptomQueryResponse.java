@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneHealthSymptomQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5334889697441318989L;
+	private static final long serialVersionUID = 7554555542565277245L;
 
 	/** 
 	 * 症状列表

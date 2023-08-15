@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateTuitioncodeFundtransferQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5376397673197982963L;
+	private static final long serialVersionUID = 8424671248976243342L;
 
 	/** 
 	 * 资金划拨单的理论划拨金额

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.avatar.picture.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-02 19:41:49
+ * @since 1.0, 2023-08-15 15:54:42
  */
 public class AlipayUserAccountAvatarPictureCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4813585657126371248L;
+	private static final long serialVersionUID = 8372799893517461268L;
 
 	/** 
 	 * 云渲染生成图片url

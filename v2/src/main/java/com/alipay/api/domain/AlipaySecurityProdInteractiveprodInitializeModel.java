@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 初始化交互式风控产品
  *
  * @author auto create
- * @since 1.0, 2023-05-22 11:48:01
+ * @since 1.0, 2023-08-15 10:44:12
  */
 public class AlipaySecurityProdInteractiveprodInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3897288163176194863L;
+	private static final long serialVersionUID = 2532655532449493454L;
 
 	/**
 	 * 业务id，标识唯一一次调用，全局唯一，可以是uuid
@@ -24,6 +24,13 @@ public class AlipaySecurityProdInteractiveprodInitializeModel extends AlipayObje
 	 */
 	@ApiField("biz_request_params")
 	private String bizRequestParams;
+
+	/**
+	 * isv方的客户的appId
+当服务商自身是isv，代第三方客户调用风险咨询接口时，需要传入第三方客户的小程序appId
+	 */
+	@ApiField("customer_app_id")
+	private String customerAppId;
 
 	/**
 	 * 是否走策略推荐，若为true，则由策略动态决策，默认为false
@@ -67,6 +74,13 @@ public class AlipaySecurityProdInteractiveprodInitializeModel extends AlipayObje
 	}
 	public void setBizRequestParams(String bizRequestParams) {
 		this.bizRequestParams = bizRequestParams;
+	}
+
+	public String getCustomerAppId() {
+		return this.customerAppId;
+	}
+	public void setCustomerAppId(String customerAppId) {
+		this.customerAppId = customerAppId;
 	}
 
 	public Boolean getNeedConsult() {

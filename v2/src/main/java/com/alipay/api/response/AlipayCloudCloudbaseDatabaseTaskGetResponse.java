@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.database.task.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 23:41:39
+ * @since 1.0, 2023-08-15 16:43:15
  */
 public class AlipayCloudCloudbaseDatabaseTaskGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6319233423877361849L;
+	private static final long serialVersionUID = 3626537592546392879L;
 
 	/** 
 	 * 任务执行历史列表

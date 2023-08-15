@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AgentChatInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7631273368885637289L;
+	private static final long serialVersionUID = 5688676965825163213L;
 
 	/**
 	 * 数据权限id(租户实例id)

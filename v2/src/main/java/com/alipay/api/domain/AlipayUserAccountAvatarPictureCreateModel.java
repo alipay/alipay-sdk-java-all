@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人图片云渲染
  *
  * @author auto create
- * @since 1.0, 2023-06-02 19:37:54
+ * @since 1.0, 2023-08-15 15:54:42
  */
 public class AlipayUserAccountAvatarPictureCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1836984135945577587L;
+	private static final long serialVersionUID = 2687132937221751659L;
 
 	/**
 	 * 调用场景节点信息

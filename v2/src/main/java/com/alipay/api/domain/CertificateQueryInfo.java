@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证信息
  *
  * @author auto create
- * @since 1.0, 2023-07-13 21:12:19
+ * @since 1.0, 2023-08-14 15:24:39
  */
 public class CertificateQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8499833442112545592L;
+	private static final long serialVersionUID = 2897484538559281118L;
 
 	/**
 	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
@@ -38,6 +38,12 @@ public class CertificateQueryInfo extends AlipayObject {
 	 */
 	@ApiField("code")
 	private String code;
+
+	/**
+	 * 商家侧核销对应的交易订单id
+	 */
+	@ApiField("out_order_id")
+	private String outOrderId;
 
 	/**
 	 * 商品信息
@@ -89,6 +95,13 @@ public class CertificateQueryInfo extends AlipayObject {
 	}
 	public void setCode(String code) {
 		this.code = code;
+	}
+
+	public String getOutOrderId() {
+		return this.outOrderId;
+	}
+	public void setOutOrderId(String outOrderId) {
+		this.outOrderId = outOrderId;
 	}
 
 	public CertificateSkuInfo getSkuInfo() {

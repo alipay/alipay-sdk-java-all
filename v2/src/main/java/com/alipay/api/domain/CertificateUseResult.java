@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证核销结果
  *
  * @author auto create
- * @since 1.0, 2023-06-28 11:04:47
+ * @since 1.0, 2023-08-14 15:24:55
  */
 public class CertificateUseResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2295729669263159593L;
+	private static final long serialVersionUID = 6866752374746759254L;
 
 	/**
 	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
@@ -36,6 +36,12 @@ public class CertificateUseResult extends AlipayObject {
 	 */
 	@ApiField("msg")
 	private String msg;
+
+	/**
+	 * 商家侧核销对应的交易订单id
+	 */
+	@ApiField("out_order_id")
+	private String outOrderId;
 
 	/**
 	 * 核销结果枚举
@@ -75,6 +81,13 @@ public class CertificateUseResult extends AlipayObject {
 	}
 	public void setMsg(String msg) {
 		this.msg = msg;
+	}
+
+	public String getOutOrderId() {
+		return this.outOrderId;
+	}
+	public void setOutOrderId(String outOrderId) {
+		this.outOrderId = outOrderId;
 	}
 
 	public String getResult() {

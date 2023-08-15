@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区域上翻权益转化信息同步
  *
  * @author auto create
- * @since 1.0, 2023-03-10 18:43:57
+ * @since 1.0, 2023-08-14 15:14:16
  */
 public class AlipayUserMemberSupplyconversionSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4138859252598439635L;
+	private static final long serialVersionUID = 8155615538768772882L;
 
 	/**
 	 * 用户权益转化发生的时间。如用户问卷完成时间。

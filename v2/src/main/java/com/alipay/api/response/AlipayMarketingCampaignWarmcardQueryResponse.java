@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignWarmcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2122751551672927328L;
+	private static final long serialVersionUID = 2754178755913274718L;
 
 	/** 
 	 * 是否领过暖心卡
