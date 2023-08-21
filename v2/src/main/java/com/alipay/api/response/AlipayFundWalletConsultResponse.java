@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:06:48
+ * @since 1.0, 2023-08-17 21:00:16
  */
 public class AlipayFundWalletConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4162472643641367144L;
+	private static final long serialVersionUID = 4826728134973376513L;
 
 	/** 
 	 * 实际可以提现/销户后退的金额

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.hufu.auth.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:37:48
+ * @since 1.0, 2023-08-20 18:39:02
  */
 public class AlipaySecurityRiskHufuAuthCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3265125312746881243L;
+	private static final long serialVersionUID = 3672378852349585828L;
 
 	/** 
 	 * 额外信息

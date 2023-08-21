@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.tree.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:31:57
+ * @since 1.0, 2023-08-21 06:06:46
  */
 public class AlipaySocialAntforestTreeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7173884873748683452L;
+	private static final long serialVersionUID = 6116526956799551979L;
 
 	/** 
 	 * 同步是否成功

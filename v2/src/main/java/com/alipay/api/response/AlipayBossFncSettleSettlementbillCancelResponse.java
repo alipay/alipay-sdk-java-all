@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.settle.settlementbill.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:45:26
+ * @since 1.0, 2023-08-21 02:23:13
  */
 public class AlipayBossFncSettleSettlementbillCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6611891731553183816L;
+	private static final long serialVersionUID = 8144453265651838865L;
 
 	
 

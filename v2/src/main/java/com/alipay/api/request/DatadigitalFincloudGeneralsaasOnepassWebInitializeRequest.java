@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.onepass.web.initialize request
  * 
  * @author auto create
- * @since 1.0, 2023-07-26 09:42:02
+ * @since 1.0, 2023-08-21 04:56:43
  */
 public class DatadigitalFincloudGeneralsaasOnepassWebInitializeRequest implements AlipayRequest<DatadigitalFincloudGeneralsaasOnepassWebInitializeResponse> {
 

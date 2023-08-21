@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loanapply.bkruralindustry.massif.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-10 10:21:11
+ * @since 1.0, 2023-08-21 02:01:45
  */
 public class MybankCreditLoanapplyBkruralindustryMassifQueryRequest implements AlipayRequest<MybankCreditLoanapplyBkruralindustryMassifQueryResponse> {
 

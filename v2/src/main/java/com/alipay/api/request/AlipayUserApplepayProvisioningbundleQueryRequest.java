@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.applepay.provisioningbundle.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:31:59
+ * @since 1.0, 2023-08-21 03:52:01
  */
 public class AlipayUserApplepayProvisioningbundleQueryRequest implements AlipayRequest<AlipayUserApplepayProvisioningbundleQueryResponse> {
 

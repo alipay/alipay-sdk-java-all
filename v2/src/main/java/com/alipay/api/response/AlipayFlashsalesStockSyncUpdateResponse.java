@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.flashsales.stock.sync.update response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:39:28
+ * @since 1.0, 2023-08-20 16:48:26
  */
 public class AlipayFlashsalesStockSyncUpdateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7857564249245693858L;
+	private static final long serialVersionUID = 6328739621146953753L;
 
 	/** 
 	 * 成功时返回的业务参数信息。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.bill.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:48:46
+ * @since 1.0, 2023-08-21 01:38:03
  */
 public class AlipayEcoCplifeBillBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3169249639976399259L;
+	private static final long serialVersionUID = 1871965818143592549L;
 
 	/** 
 	 * 若查询到符合条件的账单条目，返回结果集

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.contract.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:09:40
+ * @since 1.0, 2023-08-21 02:04:41
  */
 public class ZhimaCustomerContractDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4415628584219546345L;
+	private static final long serialVersionUID = 7152988355227859791L;
 
 	/** 
 	 * 合约详情

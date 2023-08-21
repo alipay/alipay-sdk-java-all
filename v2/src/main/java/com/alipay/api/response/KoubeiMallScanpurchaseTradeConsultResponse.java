@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.mall.scanpurchase.trade.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 00:00:26
+ * @since 1.0, 2023-08-21 02:04:17
  */
 public class KoubeiMallScanpurchaseTradeConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2481689517629995719L;
+	private static final long serialVersionUID = 2536155769522794116L;
 
 	/** 
 	 * 用户实付金额

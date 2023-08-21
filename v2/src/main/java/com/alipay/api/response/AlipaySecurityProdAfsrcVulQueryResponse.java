@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.afsrc.vul.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 10:08:20
+ * @since 1.0, 2023-08-21 05:06:12
  */
 public class AlipaySecurityProdAfsrcVulQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3729882245794548634L;
+	private static final long serialVersionUID = 7168327525633256869L;
 
 	/** 
 	 * 漏洞信息

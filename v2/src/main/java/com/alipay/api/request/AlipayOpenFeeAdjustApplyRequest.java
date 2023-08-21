@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.fee.adjust.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:06:14
+ * @since 1.0, 2023-08-20 18:26:45
  */
 public class AlipayOpenFeeAdjustApplyRequest implements AlipayUploadRequest<AlipayOpenFeeAdjustApplyResponse> {
 
@@ -34,6 +35,11 @@ public class AlipayOpenFeeAdjustApplyRequest implements AlipayUploadRequest<Alip
 	* 其他支付方式费率证明或者业务补充说明，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem attachment;
+
+	/** 
+	* 证件有效期，格式：yyyy-MM-dd，长期有效传入：9999-12-31
+	 */
+	private Date certDateLimitation;
 
 	/** 
 	* 对应证件类型（certType）的证件号，如营业执照为营业执照号
@@ -111,6 +117,13 @@ public class AlipayOpenFeeAdjustApplyRequest implements AlipayUploadRequest<Alip
 	}
 	public FileItem getAttachment() {
 		return this.attachment;
+	}
+
+	public void setCertDateLimitation(Date certDateLimitation) {
+		this.certDateLimitation = certDateLimitation;
+	}
+	public Date getCertDateLimitation() {
+		return this.certDateLimitation;
 	}
 
 	public void setCertNo(String certNo) {
@@ -245,6 +258,7 @@ public class AlipayOpenFeeAdjustApplyRequest implements AlipayUploadRequest<Alip
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("account", this.account);
 		txtParams.put("application_fee", this.applicationFee);
+		txtParams.put("cert_date_limitation", this.certDateLimitation);
 		txtParams.put("cert_no", this.certNo);
 		txtParams.put("cert_type", this.certType);
 		txtParams.put("city_code", this.cityCode);

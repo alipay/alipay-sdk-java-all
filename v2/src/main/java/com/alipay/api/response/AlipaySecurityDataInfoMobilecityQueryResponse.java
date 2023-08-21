@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.data.info.mobilecity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:56:30
+ * @since 1.0, 2023-08-21 02:02:23
  */
 public class AlipaySecurityDataInfoMobilecityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5696396159173114289L;
+	private static final long serialVersionUID = 6322973952854464163L;
 
 	/** 
 	 * 手机归属地对象,三个field均为string类型,手机号前七,phoneNumber; ,省份province;,城市city;

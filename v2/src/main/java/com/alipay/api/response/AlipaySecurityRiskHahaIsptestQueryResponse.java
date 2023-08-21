@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.haha.isptest.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-18 21:46:08
+ * @since 1.0, 2023-08-21 03:36:55
  */
 public class AlipaySecurityRiskHahaIsptestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3623853453725719677L;
+	private static final long serialVersionUID = 3185542196431317177L;
 
 	/** 
 	 * 高级复杂类型

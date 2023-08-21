@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.profile.sn.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-05 14:51:21
+ * @since 1.0, 2023-08-21 03:55:56
  */
 public class AlipayCommerceIotProfileSnBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1583179465578385226L;
+	private static final long serialVersionUID = 2412154519474196576L;
 
 	/** 
 	 * sn列表

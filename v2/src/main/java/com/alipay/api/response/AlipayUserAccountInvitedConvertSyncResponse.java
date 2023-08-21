@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.invited.convert.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:21:56
+ * @since 1.0, 2023-08-21 03:46:43
  */
 public class AlipayUserAccountInvitedConvertSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1529567983732243393L;
+	private static final long serialVersionUID = 6353343984848421941L;
 
 	/** 
 	 * 结果码

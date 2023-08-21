@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.offlinepay.record.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:42:57
+ * @since 1.0, 2023-08-21 04:38:14
  */
 public class AlipayCommerceTransportOfflinepayRecordVerifyRequest implements AlipayRequest<AlipayCommerceTransportOfflinepayRecordVerifyResponse> {
 

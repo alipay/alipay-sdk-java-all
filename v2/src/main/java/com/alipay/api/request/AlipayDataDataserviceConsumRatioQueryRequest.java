@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.consum.ratio.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:42:24
+ * @since 1.0, 2023-08-20 17:07:19
  */
 public class AlipayDataDataserviceConsumRatioQueryRequest implements AlipayRequest<AlipayDataDataserviceConsumRatioQueryResponse> {
 

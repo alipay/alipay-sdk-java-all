@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消数据库任务执行
  *
  * @author auto create
- * @since 1.0, 2023-08-08 23:37:58
+ * @since 1.0, 2023-08-18 14:12:39
  */
 public class AlipayCloudCloudbaseDatabaseTaskCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7849695835117254622L;
+	private static final long serialVersionUID = 6392757714157142128L;
 
 	/**
 	 * 小程序id

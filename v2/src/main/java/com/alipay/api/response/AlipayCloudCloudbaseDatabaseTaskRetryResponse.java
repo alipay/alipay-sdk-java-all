@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.database.task.retry response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 23:41:39
+ * @since 1.0, 2023-08-18 14:13:00
  */
 public class AlipayCloudCloudbaseDatabaseTaskRetryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5882642459526739147L;
+	private static final long serialVersionUID = 8881215958841743443L;
 
 	/** 
 	 * 云数据库重试任务执行结果

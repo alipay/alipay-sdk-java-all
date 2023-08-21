@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.logicgroupid.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-08 15:42:55
+ * @since 1.0, 2023-08-21 03:14:51
  */
 public class AlipayOpenIotvspLogicgroupidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4594952638851998324L;
+	private static final long serialVersionUID = 4333883391237576692L;
 
 	/** 
 	 * 开发场景的机构用户库id

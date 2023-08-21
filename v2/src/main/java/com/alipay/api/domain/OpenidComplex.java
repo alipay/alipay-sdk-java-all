@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * openid复杂参数
  *
  * @author auto create
- * @since 1.0, 2022-09-23 21:18:39
+ * @since 1.0, 2023-08-17 11:05:24
  */
 public class OpenidComplex extends AlipayObject {
 
-	private static final long serialVersionUID = 2862437349629177925L;
+	private static final long serialVersionUID = 6661143143528321343L;
 
 	/**
 	 * 11

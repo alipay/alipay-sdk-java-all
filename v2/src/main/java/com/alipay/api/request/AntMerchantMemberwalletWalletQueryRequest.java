@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.memberwallet.wallet.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:08:36
+ * @since 1.0, 2023-08-20 18:02:56
  */
 public class AntMerchantMemberwalletWalletQueryRequest implements AlipayRequest<AntMerchantMemberwalletWalletQueryResponse> {
 

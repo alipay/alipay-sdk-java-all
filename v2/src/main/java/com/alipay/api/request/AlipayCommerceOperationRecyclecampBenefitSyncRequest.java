@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.recyclecamp.benefit.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 19:59:05
+ * @since 1.0, 2023-08-21 01:45:30
  */
 public class AlipayCommerceOperationRecyclecampBenefitSyncRequest implements AlipayRequest<AlipayCommerceOperationRecyclecampBenefitSyncResponse> {
 

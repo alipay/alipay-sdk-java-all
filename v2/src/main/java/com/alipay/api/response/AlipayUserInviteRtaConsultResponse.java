@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.invite.rta.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:09:54
+ * @since 1.0, 2023-08-21 02:14:20
  */
 public class AlipayUserInviteRtaConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8211714191472493384L;
+	private static final long serialVersionUID = 5764331285137353473L;
 
 	/** 
 	 * 一个或多个咨询策略标签，若返回多个标签，中间用“-”分隔

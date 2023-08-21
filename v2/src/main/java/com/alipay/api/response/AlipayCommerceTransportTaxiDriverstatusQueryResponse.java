@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.taxi.driverstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:16:03
+ * @since 1.0, 2023-08-21 02:54:27
  */
 public class AlipayCommerceTransportTaxiDriverstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3186828616464792598L;
+	private static final long serialVersionUID = 6379633417694325117L;
 
 	/** 
 	 * 客户端时间

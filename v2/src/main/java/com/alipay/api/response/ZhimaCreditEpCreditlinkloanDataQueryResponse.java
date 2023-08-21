@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlinkloan.data.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:06:49
+ * @since 1.0, 2023-08-20 17:16:45
  */
 public class ZhimaCreditEpCreditlinkloanDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2298582924536975867L;
+	private static final long serialVersionUID = 3435316813828514891L;
 
 	/** 
 	 * 查询到的的数据信息，是JSON结构，其key值和入参中的collect_data_type对应，例如 {"ELEME_RISK_ADMISSION":{"passStatus":1,"epList":[{"epName":"A","epCertNo":"001A","operatorName":"张三"},{"epName":"B","epCertNo":"001B","operatorName":"张三"}]}}

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.templatemsg.maketingstatus.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:33:10
+ * @since 1.0, 2023-08-20 18:45:22
  */
 public class AlipayOpenMiniTemplatemsgMaketingstatusModifyRequest implements AlipayRequest<AlipayOpenMiniTemplatemsgMaketingstatusModifyResponse> {
 

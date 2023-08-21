@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.pointprod.budgetlib.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:04:56
+ * @since 1.0, 2023-08-20 16:43:15
  */
 public class AlipayAssetPointPointprodBudgetlibQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4446741748515546951L;
+	private static final long serialVersionUID = 3636439727637839246L;
 
 	/** 
 	 * 集分宝预算库实体模型，包含预算库编码，余额等

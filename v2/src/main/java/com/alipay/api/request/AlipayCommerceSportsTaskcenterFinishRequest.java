@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sports.taskcenter.finish request
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 20:16:58
+ * @since 1.0, 2023-08-21 04:26:41
  */
 public class AlipayCommerceSportsTaskcenterFinishRequest implements AlipayRequest<AlipayCommerceSportsTaskcenterFinishResponse> {
 

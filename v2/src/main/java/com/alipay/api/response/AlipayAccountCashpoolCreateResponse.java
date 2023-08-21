@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.cashpool.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:11:45
+ * @since 1.0, 2023-08-21 01:37:29
  */
 public class AlipayAccountCashpoolCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7225626936515117892L;
+	private static final long serialVersionUID = 1495554822443224717L;
 
 	/** 
 	 * 资金池唯一标志

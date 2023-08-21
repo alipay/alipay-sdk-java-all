@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.dataservice.verify.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:25:38
+ * @since 1.0, 2023-08-21 03:40:44
  */
 public class AnttechBlockchainDefinDataserviceVerifySubmitRequest implements AlipayRequest<AnttechBlockchainDefinDataserviceVerifySubmitResponse> {
 

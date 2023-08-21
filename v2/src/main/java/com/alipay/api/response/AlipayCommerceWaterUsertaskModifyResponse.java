@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.water.usertask.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-03 10:57:08
+ * @since 1.0, 2023-08-21 04:56:43
  */
 public class AlipayCommerceWaterUsertaskModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8696824841634713193L;
+	private static final long serialVersionUID = 3621825158336459954L;
 
 	/** 
 	 * 修改状态是否成功

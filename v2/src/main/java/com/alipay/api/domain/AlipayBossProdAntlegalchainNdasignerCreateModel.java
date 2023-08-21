@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * MA上签添加新签约人
  *
  * @author auto create
- * @since 1.0, 2023-03-01 15:42:06
+ * @since 1.0, 2023-08-18 15:03:34
  */
 public class AlipayBossProdAntlegalchainNdasignerCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7362392771881772444L;
+	private static final long serialVersionUID = 5399342315998654621L;
 
 	/**
 	 * 来源系统

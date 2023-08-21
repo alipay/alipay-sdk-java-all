@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.auth.order.unfreeze request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:46:55
+ * @since 1.0, 2023-08-21 02:21:46
  */
 public class AlipayPcreditHuabeiAuthOrderUnfreezeRequest implements AlipayRequest<AlipayPcreditHuabeiAuthOrderUnfreezeResponse> {
 

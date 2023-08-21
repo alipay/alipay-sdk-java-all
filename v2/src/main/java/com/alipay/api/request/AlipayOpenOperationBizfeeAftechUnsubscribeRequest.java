@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.bizfee.aftech.unsubscribe request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 10:32:48
+ * @since 1.0, 2023-08-21 05:08:29
  */
 public class AlipayOpenOperationBizfeeAftechUnsubscribeRequest implements AlipayRequest<AlipayOpenOperationBizfeeAftechUnsubscribeResponse> {
 

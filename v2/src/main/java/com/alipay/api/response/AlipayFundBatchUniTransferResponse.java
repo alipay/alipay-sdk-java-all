@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.uni.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-05 11:16:24
+ * @since 1.0, 2023-08-21 04:35:26
  */
 public class AlipayFundBatchUniTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7653845887477552213L;
+	private static final long serialVersionUID = 4632178186958786473L;
 
 	/** 
 	 * 支付宝内部的批次ID

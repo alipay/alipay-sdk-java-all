@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antstarship.share.accept request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 23:01:50
+ * @since 1.0, 2023-08-21 05:11:44
  */
 public class AlipayUserAntstarshipShareAcceptRequest implements AlipayRequest<AlipayUserAntstarshipShareAcceptResponse> {
 

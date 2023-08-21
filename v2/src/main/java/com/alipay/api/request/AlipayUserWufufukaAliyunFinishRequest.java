@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.wufufuka.aliyun.finish request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:06:30
+ * @since 1.0, 2023-08-21 04:36:42
  */
 public class AlipayUserWufufukaAliyunFinishRequest implements AlipayRequest<AlipayUserWufufukaAliyunFinishResponse> {
 

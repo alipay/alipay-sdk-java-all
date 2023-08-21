@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.enterpriseexctrl.employertitle.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-08-11 11:13:41
+ * @since 1.0, 2023-08-21 02:01:41
  */
 public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleModifyRequest implements AlipayRequest<AlipayEbppInvoiceEnterpriseexctrlEmployertitleModifyResponse> {
 

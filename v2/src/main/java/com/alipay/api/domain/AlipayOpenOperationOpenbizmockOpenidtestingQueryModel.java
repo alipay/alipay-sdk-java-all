@@ -10,46 +10,52 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 网关测试接口——openid升级测试
  *
  * @author auto create
- * @since 1.0, 2023-08-11 14:42:20
+ * @since 1.0, 2023-08-17 15:57:41
  */
 public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6817211385566729518L;
+	private static final long serialVersionUID = 1648937115324824414L;
 
 	/**
-	 * 详细地址
+	 * 详细地址 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("appid_one")
+	@Deprecated
 	private String appidOne;
 
 	/**
-	 * appid_out_one
+	 * appid_out_one 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("appid_out_one")
+	@Deprecated
 	private String appidOutOne;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("appid_out_three")
+	@Deprecated
 	private String appidOutThree;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("appid_out_two")
+	@Deprecated
 	private String appidOutTwo;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("appid_three")
+	@Deprecated
 	private String appidThree;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("appid_two")
+	@Deprecated
 	private String appidTwo;
 
 	/**
@@ -83,15 +89,17 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends Alipa
 	private String lalalala;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("one_open_id")
+	@Deprecated
 	private String oneOpenId;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("one_uid")
+	@Deprecated
 	private String oneUid;
 
 	/**
@@ -126,41 +134,47 @@ public class AlipayOpenOperationOpenbizmockOpenidtestingQueryModel extends Alipa
 	private String testWrong;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("three_open_id")
+	@Deprecated
 	private String threeOpenId;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("three_uid")
+	@Deprecated
 	private String threeUid;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("two_open_id")
+	@Deprecated
 	private String twoOpenId;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiField("two_uid")
+	@Deprecated
 	private String twoUid;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此原来如此)
 	 */
 	@ApiListField("uid_list")
 	@ApiField("string")
+	@Deprecated
 	private List<String> uidList;
 
 	/**
-	 * 1
+	 * 1 当前字段已废弃(原来如此原来如此原来如此)
 	 */
 	@ApiListField("uid_list_open_id_list")
 	@ApiField("string")
+	@Deprecated
 	private List<String> uidListOpenIdList;
 
 	/**

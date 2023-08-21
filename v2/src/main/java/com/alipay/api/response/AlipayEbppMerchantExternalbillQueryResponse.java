@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.merchant.externalbill.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:52:01
+ * @since 1.0, 2023-08-21 02:21:47
  */
 public class AlipayEbppMerchantExternalbillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6769648871551726132L;
+	private static final long serialVersionUID = 3298227772728766822L;
 
 	/** 
 	 * 账单列表

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.card.return.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 00:01:57
+ * @since 1.0, 2023-08-21 04:11:46
  */
 public class AlipayAssetCardReturnRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6576964748272563615L;
+	private static final long serialVersionUID = 2828264788396345872L;
 
 	/** 
 	 * 账务操作时间

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isresource.userquerybybusvcid.query request
  * 
  * @author auto create
- * @since 1.0, 2023-07-10 10:01:53
+ * @since 1.0, 2023-08-21 05:06:42
  */
 public class AlipayIserviceIsresourceUserquerybybusvcidQueryRequest implements AlipayRequest<AlipayIserviceIsresourceUserquerybybusvcidQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.ecommerce.pre.order request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:56:51
+ * @since 1.0, 2023-08-21 03:06:46
  */
 public class AlipayInsSceneEcommercePreOrderRequest implements AlipayRequest<AlipayInsSceneEcommercePreOrderResponse> {
 

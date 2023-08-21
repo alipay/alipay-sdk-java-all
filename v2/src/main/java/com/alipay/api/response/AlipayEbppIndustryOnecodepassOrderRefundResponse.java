@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.onecodepass.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:31:50
+ * @since 1.0, 2023-08-21 03:06:44
  */
 public class AlipayEbppIndustryOnecodepassOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6559519524317736861L;
+	private static final long serialVersionUID = 8754496558731594945L;
 
 	/** 
 	 * 本次退款是否发生了资金变化，Y 为发生变化

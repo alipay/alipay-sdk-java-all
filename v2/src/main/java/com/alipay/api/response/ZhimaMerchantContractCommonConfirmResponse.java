@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.contract.common.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:24:03
+ * @since 1.0, 2023-08-20 16:54:35
  */
 public class ZhimaMerchantContractCommonConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1617413492956111732L;
+	private static final long serialVersionUID = 8877346457674629511L;
 
 	/** 
 	 * 合约号

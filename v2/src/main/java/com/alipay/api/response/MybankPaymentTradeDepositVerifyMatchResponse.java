@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.deposit.verify.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:58:10
+ * @since 1.0, 2023-08-21 02:21:06
  */
 public class MybankPaymentTradeDepositVerifyMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8742172255616115919L;
+	private static final long serialVersionUID = 4623944939398278183L;
 
 	/** 
 	 * 金额是否匹配

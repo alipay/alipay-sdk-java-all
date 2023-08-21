@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道运营展示数据
  *
  * @author auto create
- * @since 1.0, 2023-08-15 10:23:23
+ * @since 1.0, 2023-08-17 15:21:47
  */
 public class PrePayOperationInfoViewData extends AlipayObject {
 
-	private static final long serialVersionUID = 6478942241866171613L;
+	private static final long serialVersionUID = 6615269264821464656L;
+
+	/**
+	 * 渠道或者优惠的图像表达url
+	 */
+	@ApiField("logo")
+	private String logo;
 
 	/**
 	 * 运营主体
@@ -48,6 +54,13 @@ public class PrePayOperationInfoViewData extends AlipayObject {
 	 */
 	@ApiField("threshold_amount")
 	private String thresholdAmount;
+
+	public String getLogo() {
+		return this.logo;
+	}
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
 
 	public String getOperationDesc() {
 		return this.operationDesc;

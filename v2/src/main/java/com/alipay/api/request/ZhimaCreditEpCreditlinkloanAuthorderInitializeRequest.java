@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.creditlinkloan.authorder.initialize request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:16:57
+ * @since 1.0, 2023-08-21 04:56:47
  */
 public class ZhimaCreditEpCreditlinkloanAuthorderInitializeRequest implements AlipayRequest<ZhimaCreditEpCreditlinkloanAuthorderInitializeResponse> {
 

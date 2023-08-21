@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.taxi.drivermachine.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:51:58
+ * @since 1.0, 2023-08-21 03:04:45
  */
 public class AlipayCommerceTransportTaxiDrivermachineBindRequest implements AlipayRequest<AlipayCommerceTransportTaxiDrivermachineBindResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcapi.vehiclelicense.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:09:58
+ * @since 1.0, 2023-08-20 17:55:29
  */
 public class AlipayMsaasMediarecogMmtcapiVehiclelicenseIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8895867868435911139L;
+	private static final long serialVersionUID = 1375386325919869528L;
 
 	/** 
 	 * 识别结果

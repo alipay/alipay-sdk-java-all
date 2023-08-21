@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.voucher.result.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:18:54
+ * @since 1.0, 2023-08-21 03:55:23
  */
 public class AlipayCommerceVoucherResultConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8766517134581996541L;
+	private static final long serialVersionUID = 3289372961874337749L;
 
 	/** 
 	 * 最优券叠加总优惠金额，单位为元

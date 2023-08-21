@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.token.fast.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:37:17
+ * @since 1.0, 2023-08-21 01:33:08
  */
 public class AlipayEcoTokenFastGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1167459882769546179L;
+	private static final long serialVersionUID = 4499547366618742642L;
 
 	/** 
 	 * 访问易联云凭证

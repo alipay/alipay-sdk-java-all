@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lease.enroll.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 11:07:41
+ * @since 1.0, 2023-08-21 03:36:42
  */
 public class AlipayCommerceLeaseEnrollQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4278893229895392175L;
+	private static final long serialVersionUID = 4383741489168393547L;
 
 	/** 
 	 * 租赁商报名计划信息列表

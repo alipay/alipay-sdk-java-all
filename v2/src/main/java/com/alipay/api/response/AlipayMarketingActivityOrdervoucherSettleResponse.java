@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.settle response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:36:56
+ * @since 1.0, 2023-08-21 04:26:45
  */
 public class AlipayMarketingActivityOrdervoucherSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5461458416996483777L;
+	private static final long serialVersionUID = 6479478273458671758L;
 
 	/** 
 	 * 用于查询结算单号

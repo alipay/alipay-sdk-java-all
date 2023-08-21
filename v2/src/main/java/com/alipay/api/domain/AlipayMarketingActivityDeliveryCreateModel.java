@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放创建
  *
  * @author auto create
- * @since 1.0, 2023-08-15 19:06:30
+ * @since 1.0, 2023-08-18 14:50:34
  */
 public class AlipayMarketingActivityDeliveryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8126567879587184434L;
+	private static final long serialVersionUID = 5133727115785926451L;
 
 	/**
 	 * 服务商代商户创建投放必选。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.rule.rulelist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:38:07
+ * @since 1.0, 2023-08-21 03:59:40
  */
 public class AlipayMarketingCampaignRuleRulelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8744576682558636136L;
+	private static final long serialVersionUID = 5728693624979798748L;
 
 	/** 
 	 * [{"ruledesc":"圈人规则0","ruleid":"230291","status":"ENABLE"},

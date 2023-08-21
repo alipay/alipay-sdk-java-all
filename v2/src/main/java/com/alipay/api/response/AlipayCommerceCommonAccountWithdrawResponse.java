@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.account.withdraw response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-20 14:36:50
+ * @since 1.0, 2023-08-21 04:41:43
  */
 public class AlipayCommerceCommonAccountWithdrawResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7165823488123834327L;
+	private static final long serialVersionUID = 4633499478857933525L;
 
 	/** 
 	 * 提现成功金额，单位元

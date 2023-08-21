@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniPluginuseconfigUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3294923972892458825L;
+	private static final long serialVersionUID = 4416791589642616512L;
 
 	/**
 	 * 端参数，枚举列举：支付宝：com.alipay.alipaywallet，高德：com.amap.app

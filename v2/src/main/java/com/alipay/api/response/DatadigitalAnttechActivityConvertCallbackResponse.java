@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.anttech.activity.convert.callback response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-01 10:27:03
+ * @since 1.0, 2023-08-21 02:21:42
  */
 public class DatadigitalAnttechActivityConvertCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4637767493935248475L;
+	private static final long serialVersionUID = 1563658688346957793L;
 
 	
 

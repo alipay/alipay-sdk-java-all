@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FaasCors extends AlipayObject {
 
-	private static final long serialVersionUID = 1223678784577757495L;
+	private static final long serialVersionUID = 1679774331798773936L;
 
 	/**
 	 * 域名

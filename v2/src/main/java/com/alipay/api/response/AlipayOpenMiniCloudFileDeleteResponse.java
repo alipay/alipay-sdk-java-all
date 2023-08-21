@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.cloud.file.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:57:58
+ * @since 1.0, 2023-08-21 01:14:25
  */
 public class AlipayOpenMiniCloudFileDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3122283658393487681L;
+	private static final long serialVersionUID = 1466497764874278196L;
 
 	
 

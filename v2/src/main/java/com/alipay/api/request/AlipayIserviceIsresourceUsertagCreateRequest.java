@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isresource.usertag.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:41:53
+ * @since 1.0, 2023-08-21 01:21:44
  */
 public class AlipayIserviceIsresourceUsertagCreateRequest implements AlipayRequest<AlipayIserviceIsresourceUsertagCreateResponse> {
 

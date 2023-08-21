@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.userlevel.zrank.get request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:14:07
+ * @since 1.0, 2023-08-21 04:01:18
  */
 public class AlipayDataDataserviceUserlevelZrankGetRequest implements AlipayRequest<AlipayDataDataserviceUserlevelZrankGetResponse> {
 

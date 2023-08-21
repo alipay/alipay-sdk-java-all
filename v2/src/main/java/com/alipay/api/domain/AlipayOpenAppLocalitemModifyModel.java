@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1113342755475422844L;
+	private static final long serialVersionUID = 5289539165532253715L;
 
 	/**
 	 * 商品属性，通过alipay.open.app.localitem.template.query获取本地商品模板信息接口得到商品属性key
@@ -61,7 +61,7 @@ public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 商品模版类型： 1. 团购套餐 2. 代金券
+	 * 商品模版类型： 1. 团购 2. 代金
 	 */
 	@ApiField("item_type")
 	private String itemType;

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.benefit.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-13 00:56:58
+ * @since 1.0, 2023-08-20 16:36:41
  */
 public class AlipayOverseasTravelBenefitSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6684718986524414618L;
+	private static final long serialVersionUID = 1258663625393574822L;
 
 	/** 
 	 * 流量端生成的权益id

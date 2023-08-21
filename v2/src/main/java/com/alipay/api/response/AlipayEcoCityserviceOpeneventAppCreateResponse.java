@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.openevent.app.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:22:01
+ * @since 1.0, 2023-08-21 05:51:47
  */
 public class AlipayEcoCityserviceOpeneventAppCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2713266521157276846L;
+	private static final long serialVersionUID = 1312369379217662211L;
 
 	/** 
 	 * 服务入驻后在光华平台的唯一标识，可以通过该标识进行服务的信息变更和状态变更。报错的情况下该字段没有值

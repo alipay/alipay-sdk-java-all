@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企信AE提前收款服务合约签订
  *
  * @author auto create
- * @since 1.0, 2023-08-03 17:59:00
+ * @since 1.0, 2023-08-16 19:14:53
  */
 public class ZhimaCreditEpAeprepayContractSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3575184684552551347L;
+	private static final long serialVersionUID = 3599241336994624565L;
 
 	/**
 	 * 支付宝uid

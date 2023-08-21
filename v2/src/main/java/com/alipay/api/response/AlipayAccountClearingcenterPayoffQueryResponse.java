@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.clearingcenter.payoff.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:30:00
+ * @since 1.0, 2023-08-21 01:16:09
  */
 public class AlipayAccountClearingcenterPayoffQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2652237857225726521L;
+	private static final long serialVersionUID = 1751171725981713232L;
 
 	/** 
 	 * 待解付登记薄列表

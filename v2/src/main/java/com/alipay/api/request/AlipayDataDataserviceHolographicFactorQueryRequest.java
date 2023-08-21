@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.holographic.factor.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 00:01:34
+ * @since 1.0, 2023-08-20 17:27:50
  */
 public class AlipayDataDataserviceHolographicFactorQueryRequest implements AlipayRequest<AlipayDataDataserviceHolographicFactorQueryResponse> {
 

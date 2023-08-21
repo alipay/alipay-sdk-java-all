@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.gift.stock.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:15:59
+ * @since 1.0, 2023-08-21 01:10:38
  */
 public class AlipaySocialGiftStockQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8366716351326287957L;
+	private static final long serialVersionUID = 8187554923621295279L;
 
 	/** 
 	 * 可用库存总条数

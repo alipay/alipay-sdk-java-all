@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.text.detect request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:32:03
+ * @since 1.0, 2023-08-20 17:03:08
  */
 public class AlipayEcoTextDetectRequest implements AlipayRequest<AlipayEcoTextDetectResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certdoc.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:52:00
+ * @since 1.0, 2023-08-21 03:01:47
  */
 public class AlipayUserCertdocSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8753333281413723567L;
+	private static final long serialVersionUID = 6495819949183499682L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.guarantee.tradedrive.pay request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:05:50
+ * @since 1.0, 2023-08-20 18:19:56
  */
 public class MybankCreditGuaranteeTradedrivePayRequest implements AlipayRequest<MybankCreditGuaranteeTradedrivePayResponse> {
 

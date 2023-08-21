@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BankLogTransferFormNew extends AlipayObject {
 
-	private static final long serialVersionUID = 2132332715584413119L;
+	private static final long serialVersionUID = 7811627927121388696L;
 
 	/**
 	 * 充值金额

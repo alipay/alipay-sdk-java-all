@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneMarketingCrowdWshopMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8149448245245365958L;
+	private static final long serialVersionUID = 6446583235347417465L;
 
 	/**
 	 * 财富号机构自建人群id，应用于财富号机构人群匹配。财富号合作机构通过财富号后台创建人群后获得人群id

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.data.info.ipaddrinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:51:15
+ * @since 1.0, 2023-08-21 02:05:14
  */
 public class AlipaySecurityDataInfoIpaddrinfoQueryRequest implements AlipayRequest<AlipaySecurityDataInfoIpaddrinfoQueryResponse> {
 

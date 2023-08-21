@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.search.appkeyword.querystatus request
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 22:32:01
+ * @since 1.0, 2023-08-21 05:31:46
  */
 public class AlipayOpenSearchAppkeywordQuerystatusRequest implements AlipayRequest<AlipayOpenSearchAppkeywordQuerystatusResponse> {
 

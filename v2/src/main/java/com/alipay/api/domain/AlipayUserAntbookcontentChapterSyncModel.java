@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阅读听书频道章节信息同步接口
  *
  * @author auto create
- * @since 1.0, 2023-07-07 11:42:59
+ * @since 1.0, 2023-08-18 16:20:18
  */
 public class AlipayUserAntbookcontentChapterSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8566876195338799859L;
+	private static final long serialVersionUID = 4519624183544185389L;
 
 	/**
 	 * 书籍ID，可唯一标识一个书籍
@@ -105,7 +105,7 @@ public class AlipayUserAntbookcontentChapterSyncModel extends AlipayObject {
 	private String volumeId;
 
 	/**
-	 * 章节字数，有则必填
+	 * 章节字数
 	 */
 	@ApiField("word_number")
 	private Long wordNumber;

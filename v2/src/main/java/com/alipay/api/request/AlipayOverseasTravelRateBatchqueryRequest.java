@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.rate.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:01:43
+ * @since 1.0, 2023-08-21 04:59:04
  */
 public class AlipayOverseasTravelRateBatchqueryRequest implements AlipayRequest<AlipayOverseasTravelRateBatchqueryResponse> {
 

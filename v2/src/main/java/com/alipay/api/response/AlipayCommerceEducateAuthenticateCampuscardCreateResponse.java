@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.authenticate.campuscard.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-19 21:25:01
+ * @since 1.0, 2023-08-20 18:32:55
  */
 public class AlipayCommerceEducateAuthenticateCampuscardCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6853557737769911938L;
+	private static final long serialVersionUID = 5772147758633169724L;
 
 	/** 
 	 * 如果学生学籍插入成功，则返回SUCCESS ， 失败返回FAIL

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.invoice.returnorder.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:15:28
+ * @since 1.0, 2023-08-20 16:47:40
  */
 public class AlipayBossFncInvoiceReturnorderBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1212114699949647956L;
+	private static final long serialVersionUID = 1464232678775419626L;
 
 	/** 
 	 * 返回结果List

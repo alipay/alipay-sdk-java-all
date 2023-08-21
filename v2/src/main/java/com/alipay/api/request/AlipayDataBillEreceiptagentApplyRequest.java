@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.bill.ereceiptagent.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:02:25
+ * @since 1.0, 2023-08-21 01:34:16
  */
 public class AlipayDataBillEreceiptagentApplyRequest implements AlipayRequest<AlipayDataBillEreceiptagentApplyResponse> {
 

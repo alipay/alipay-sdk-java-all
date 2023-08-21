@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.complaint.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-19 16:12:20
+ * @since 1.0, 2023-08-20 18:11:42
  */
 public class AlipaySecurityRiskComplaintFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6685486926483364693L;
+	private static final long serialVersionUID = 6147297744288427311L;
 
 	/** 
 	 * 本次上传的文件生成的key

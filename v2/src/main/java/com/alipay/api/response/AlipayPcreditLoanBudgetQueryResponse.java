@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.budget.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:31:03
+ * @since 1.0, 2023-08-20 17:51:19
  */
 public class AlipayPcreditLoanBudgetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7498979618459324444L;
+	private static final long serialVersionUID = 1794516279516988991L;
 
 	/** 
 	 * 贷前还款分期计划列表

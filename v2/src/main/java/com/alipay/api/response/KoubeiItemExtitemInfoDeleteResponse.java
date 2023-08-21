@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.item.extitem.info.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:31:33
+ * @since 1.0, 2023-08-20 18:28:37
  */
 public class KoubeiItemExtitemInfoDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8333578789432564454L;
+	private static final long serialVersionUID = 3856874647241249839L;
 
 	/** 
 	 * 删除成功，返回主键id

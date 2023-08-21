@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.openbizmock.pidwhite.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:16:53
+ * @since 1.0, 2023-08-21 02:01:48
  */
 public class AlipayOpenOpenbizmockPidwhiteModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2671964635897193269L;
+	private static final long serialVersionUID = 5398182358377985614L;
 
 	
 

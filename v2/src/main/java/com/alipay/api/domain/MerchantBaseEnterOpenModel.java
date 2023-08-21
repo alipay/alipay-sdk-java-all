@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantBaseEnterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4895974674573243671L;
+	private static final long serialVersionUID = 5633683938233924387L;
 
 	/**
 	 * 商户logo文件流信息，该字段为文件流经base64编码后得到的字符串。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.wf.tokeninvalidstatus.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:10:38
+ * @since 1.0, 2023-08-21 04:58:42
  */
 public class MybankCreditSupplychainWfTokeninvalidstatusQueryRequest implements AlipayRequest<MybankCreditSupplychainWfTokeninvalidstatusQueryResponse> {
 

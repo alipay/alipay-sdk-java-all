@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineMarketShopDiscountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1121731196675933768L;
+	private static final long serialVersionUID = 4695819273917752621L;
 
 	/**
 	 * 活动业务类型列表。当 query_type 为MERCHANT 且 user_id 不为空时生效，将对返回结果进行过滤，返回列表中指定业务类型的活动。默认为空，代表不过滤，返回所有活动。

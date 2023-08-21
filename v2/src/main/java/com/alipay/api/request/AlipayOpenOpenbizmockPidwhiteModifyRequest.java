@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.openbizmock.pidwhite.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:16:53
+ * @since 1.0, 2023-08-21 02:01:48
  */
 public class AlipayOpenOpenbizmockPidwhiteModifyRequest implements AlipayRequest<AlipayOpenOpenbizmockPidwhiteModifyResponse> {
 

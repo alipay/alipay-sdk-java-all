@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cplife.roominfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:27:01
+ * @since 1.0, 2023-08-21 03:16:13
  */
 public class AlipayEcoCplifeRoominfoQueryRequest implements AlipayRequest<AlipayEcoCplifeRoominfoQueryResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单、转化查询结果数据
  *
  * @author auto create
- * @since 1.0, 2023-08-07 11:47:28
+ * @since 1.0, 2023-08-17 15:01:16
  */
 public class DataBillResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1173364218489645416L;
+	private static final long serialVersionUID = 6549483317623591361L;
 
 	/**
 	 * 活动名
@@ -22,7 +22,7 @@ public class DataBillResult extends AlipayObject {
 	private String activityName;
 
 	/**
-	 * 活动类型
+	 * 活动类型，枚举：GMV\促活\促绑
 	 */
 	@ApiField("activity_type")
 	private String activityType;
@@ -64,13 +64,13 @@ public class DataBillResult extends AlipayObject {
 	private Date payTime;
 
 	/**
-	 * 实际交易金额，提现金额，单位：元
+	 * 实际交易金额，提现金额
 	 */
 	@ApiField("real_pay_amt")
 	private String realPayAmt;
 
 	/**
-	 * 订单金额，单位：分
+	 * 订单金额
 	 */
 	@ApiField("trade_total_amt")
 	private String tradeTotalAmt;

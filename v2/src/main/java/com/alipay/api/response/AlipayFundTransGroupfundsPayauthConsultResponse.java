@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.groupfunds.payauth.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:47:45
+ * @since 1.0, 2023-08-21 02:23:35
  */
 public class AlipayFundTransGroupfundsPayauthConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5824985885176169244L;
+	private static final long serialVersionUID = 7119386333639365721L;
 
 	
 

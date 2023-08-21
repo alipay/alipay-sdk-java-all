@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.paysharingprod.sharepeerpay.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:41:50
+ * @since 1.0, 2023-08-21 05:01:46
  */
 public class AlipayPayPaysharingprodSharepeerpayApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6265154361359853881L;
+	private static final long serialVersionUID = 2618797119613365294L;
 
 	/** 
 	 * 支付宝好友分享代付链接

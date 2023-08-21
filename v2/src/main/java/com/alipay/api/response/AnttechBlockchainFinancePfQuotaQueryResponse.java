@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.pf.quota.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:03:32
+ * @since 1.0, 2023-08-21 05:54:57
  */
 public class AnttechBlockchainFinancePfQuotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6131763486225859544L;
+	private static final long serialVersionUID = 7751575683938714159L;
 
 	/** 
 	 * 额度协议书编号

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresource.organizationqueryall.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-10 10:04:36
+ * @since 1.0, 2023-08-21 03:26:42
  */
 public class AlipayIserviceIsresourceOrganizationqueryallQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4275477772117938764L;
+	private static final long serialVersionUID = 8689128215898639437L;
 
 	/** 
 	 * 查询返回的组织节点

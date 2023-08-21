@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.income.lease.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-28 19:31:55
+ * @since 1.0, 2023-08-21 01:06:43
  */
 public class AnttechBlockchainFinanceIncomeLeaseSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2876741753922961552L;
+	private static final long serialVersionUID = 6114139487557213489L;
 
 	/** 
 	 * 租赁交易登记流水号

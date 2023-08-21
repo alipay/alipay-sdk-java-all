@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.mrchsurplmorder.point.pay request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:10:29
+ * @since 1.0, 2023-08-21 03:47:02
  */
 public class AlipayMerchantMrchsurplmorderPointPayRequest implements AlipayRequest<AlipayMerchantMrchsurplmorderPointPayResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMallScanpurchaseTraderesultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6834272383311324797L;
+	private static final long serialVersionUID = 3754825331514492772L;
 
 	/**
 	 * 说明渠道，口碑app为 APP,  口碑tab 为TAB. 默认是TAB

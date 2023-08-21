@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.campaign.offline response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:42:59
+ * @since 1.0, 2023-08-21 04:44:28
  */
 public class AlipayCommerceTransportVehicleownerCampaignOfflineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6831931672596156844L;
+	private static final long serialVersionUID = 1596823494312748239L;
 
 	/** 
 	 * 状态。P(审核中)、S(审核通过)、F(审核驳回)、I(初始状态)

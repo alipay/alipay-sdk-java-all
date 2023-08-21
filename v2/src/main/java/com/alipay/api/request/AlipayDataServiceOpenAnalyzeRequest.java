@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.service.open.analyze request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:58:42
+ * @since 1.0, 2023-08-21 03:53:54
  */
 public class AlipayDataServiceOpenAnalyzeRequest implements AlipayRequest<AlipayDataServiceOpenAnalyzeResponse> {
 

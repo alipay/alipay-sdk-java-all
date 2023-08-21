@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.commercialization.certificate.freeze response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-15 11:01:41
+ * @since 1.0, 2023-08-16 11:21:40
  */
 public class AlipayEcoMycarCommercializationCertificateFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7123949347534624364L;
+	private static final long serialVersionUID = 1111125362977122356L;
 
 	
 

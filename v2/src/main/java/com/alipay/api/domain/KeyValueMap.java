@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KeyValueMap extends AlipayObject {
 
-	private static final long serialVersionUID = 2562527368859799588L;
+	private static final long serialVersionUID = 5899358785652778191L;
 
 	/**
 	 * key-value中的key

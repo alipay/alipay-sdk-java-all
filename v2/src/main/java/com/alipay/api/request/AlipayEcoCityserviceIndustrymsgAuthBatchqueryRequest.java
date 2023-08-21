@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cityservice.industrymsg.auth.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:33:51
+ * @since 1.0, 2023-08-21 02:03:19
  */
 public class AlipayEcoCityserviceIndustrymsgAuthBatchqueryRequest implements AlipayRequest<AlipayEcoCityserviceIndustrymsgAuthBatchqueryResponse> {
 

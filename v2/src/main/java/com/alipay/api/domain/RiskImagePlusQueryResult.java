@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云业务安全风险咨询结果列表
  *
  * @author auto create
- * @since 1.0, 2023-06-09 14:59:23
+ * @since 1.0, 2023-08-17 20:20:36
  */
 public class RiskImagePlusQueryResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7434493556185233974L;
+	private static final long serialVersionUID = 4684883128582194981L;
 
 	/**
 	 * 风险分析-风险标签
@@ -32,7 +32,7 @@ public class RiskImagePlusQueryResult extends AlipayObject {
 	private String riskType;
 
 	/**
-	 * 风险咨询结果，匹配风险咨询类型
+	 * 风险咨询结果，匹配风险咨询类型，rank等级数字由小到大风险依次增大。最高风险等级为rank5
 	 */
 	@ApiField("risk_value")
 	private String riskValue;

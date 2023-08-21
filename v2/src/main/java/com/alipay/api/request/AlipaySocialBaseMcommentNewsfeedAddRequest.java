@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.mcomment.newsfeed.add request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:36:02
+ * @since 1.0, 2023-08-21 05:01:53
  */
 public class AlipaySocialBaseMcommentNewsfeedAddRequest implements AlipayRequest<AlipaySocialBaseMcommentNewsfeedAddResponse> {
 

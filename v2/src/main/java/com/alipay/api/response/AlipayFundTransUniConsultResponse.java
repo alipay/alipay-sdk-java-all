@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.uni.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:21:56
+ * @since 1.0, 2023-08-21 05:16:43
  */
 public class AlipayFundTransUniConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6848659382416818522L;
+	private static final long serialVersionUID = 5461251754997288866L;
 
 	/** 
 	 * 咨询时间，格式为yyyy-MM-dd HH:mm:ss

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.mindv.snapshot.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:43:00
+ * @since 1.0, 2023-08-20 17:21:11
  */
 public class AlipayIserviceMindvSnapshotQueryRequest implements AlipayRequest<AlipayIserviceMindvSnapshotQueryResponse> {
 

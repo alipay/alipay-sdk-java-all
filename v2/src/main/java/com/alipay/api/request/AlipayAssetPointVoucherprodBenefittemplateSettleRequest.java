@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.asset.point.voucherprod.benefittemplate.settle request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:04:20
+ * @since 1.0, 2023-08-21 05:59:57
  */
 public class AlipayAssetPointVoucherprodBenefittemplateSettleRequest implements AlipayRequest<AlipayAssetPointVoucherprodBenefittemplateSettleResponse> {
 

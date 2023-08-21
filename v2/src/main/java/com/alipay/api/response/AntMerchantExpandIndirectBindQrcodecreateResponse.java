@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.bind.qrcodecreate response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:07:45
+ * @since 1.0, 2023-08-21 05:36:41
  */
 public class AntMerchantExpandIndirectBindQrcodecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4562678833754967971L;
+	private static final long serialVersionUID = 7713967968768159869L;
 
 	/** 
 	 * 失败原因

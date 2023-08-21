@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.rcservcenter.rcdisposal.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:41:50
+ * @since 1.0, 2023-08-20 17:51:46
  */
 public class AlipayFincoreComplianceRcservcenterRcdisposalQueryRequest implements AlipayRequest<AlipayFincoreComplianceRcservcenterRcdisposalQueryResponse> {
 

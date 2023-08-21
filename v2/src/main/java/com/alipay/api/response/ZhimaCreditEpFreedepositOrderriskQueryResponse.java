@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.freedeposit.orderrisk.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:21:28
+ * @since 1.0, 2023-08-21 01:31:27
  */
 public class ZhimaCreditEpFreedepositOrderriskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7223757341344654742L;
+	private static final long serialVersionUID = 1159941753686921933L;
 
 	/** 
 	 * 风控结果

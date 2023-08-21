@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.voucher.delay request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:11:54
+ * @since 1.0, 2023-08-21 01:31:45
  */
 public class AlipayMarketingVoucherDelayRequest implements AlipayRequest<AlipayMarketingVoucherDelayResponse> {
 

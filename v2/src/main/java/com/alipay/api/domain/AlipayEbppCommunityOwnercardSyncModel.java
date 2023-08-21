@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppCommunityOwnercardSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6151986753322613482L;
+	private static final long serialVersionUID = 2184618476371694717L;
 
 	/**
 	 * 支付宝uid

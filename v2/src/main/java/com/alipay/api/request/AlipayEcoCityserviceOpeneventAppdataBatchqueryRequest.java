@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cityservice.openevent.appdata.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:01:54
+ * @since 1.0, 2023-08-20 18:36:43
  */
 public class AlipayEcoCityserviceOpeneventAppdataBatchqueryRequest implements AlipayRequest<AlipayEcoCityserviceOpeneventAppdataBatchqueryResponse> {
 

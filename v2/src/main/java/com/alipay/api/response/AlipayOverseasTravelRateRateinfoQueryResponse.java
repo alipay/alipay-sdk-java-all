@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.rate.rateinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-14 10:48:01
+ * @since 1.0, 2023-08-21 02:11:44
  */
 public class AlipayOverseasTravelRateRateinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5818357393233495999L;
+	private static final long serialVersionUID = 5111394271269413541L;
 
 	/** 
 	 * 权益汇率列表：每个汇率权益级别对应的汇率；见ClassRateInfo.grade字段

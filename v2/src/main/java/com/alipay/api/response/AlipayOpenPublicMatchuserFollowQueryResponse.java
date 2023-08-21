@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.matchuser.follow.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:06:50
+ * @since 1.0, 2023-08-21 04:06:45
  */
 public class AlipayOpenPublicMatchuserFollowQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2634822426329759875L;
+	private static final long serialVersionUID = 8257573335448924375L;
 
 	/** 
 	 * 用户是否关注，T代表已关注，F代表未关注

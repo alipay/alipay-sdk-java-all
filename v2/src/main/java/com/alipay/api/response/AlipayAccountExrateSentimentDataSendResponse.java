@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.exrate.sentiment.data.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:54:03
+ * @since 1.0, 2023-08-20 16:53:46
  */
 public class AlipayAccountExrateSentimentDataSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2835224899219673663L;
+	private static final long serialVersionUID = 6833586387597971937L;
 
 	
 

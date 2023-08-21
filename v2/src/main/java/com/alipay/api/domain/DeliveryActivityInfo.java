@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 已投放活动信息
  *
  * @author auto create
- * @since 1.0, 2023-03-30 17:39:10
+ * @since 1.0, 2023-08-18 10:53:21
  */
 public class DeliveryActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8442246418789379338L;
+	private static final long serialVersionUID = 7365997645225529368L;
 
 	/**
 	 * 活动Id
@@ -69,7 +69,7 @@ public class DeliveryActivityInfo extends AlipayObject {
 	private String bankName;
 
 	/**
-	 * USER_VOUCHER   或者DISCOUNT
+	 * USER_VOUCHER
 	 */
 	@ApiField("delivery_prefer_type")
 	private String deliveryPreferType;

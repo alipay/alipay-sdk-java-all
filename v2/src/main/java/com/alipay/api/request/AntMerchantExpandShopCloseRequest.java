@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.shop.close request
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 22:36:53
+ * @since 1.0, 2023-08-20 17:36:41
  */
 public class AntMerchantExpandShopCloseRequest implements AlipayRequest<AntMerchantExpandShopCloseResponse> {
 

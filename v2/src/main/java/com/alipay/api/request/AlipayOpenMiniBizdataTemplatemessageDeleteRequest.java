@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.bizdata.templatemessage.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:16:58
+ * @since 1.0, 2023-08-21 03:51:44
  */
 public class AlipayOpenMiniBizdataTemplatemessageDeleteRequest implements AlipayRequest<AlipayOpenMiniBizdataTemplatemessageDeleteResponse> {
 

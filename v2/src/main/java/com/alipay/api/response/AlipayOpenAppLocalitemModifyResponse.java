@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-12 10:37:02
+ * @since 1.0, 2023-08-18 10:56:41
  */
 public class AlipayOpenAppLocalitemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2219984387555791964L;
+	private static final long serialVersionUID = 7297142128677126811L;
 
 	/** 
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。

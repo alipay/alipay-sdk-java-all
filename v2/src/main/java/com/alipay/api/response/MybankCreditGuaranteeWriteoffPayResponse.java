@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.guarantee.writeoff.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:31:42
+ * @since 1.0, 2023-08-21 05:36:16
  */
 public class MybankCreditGuaranteeWriteoffPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4433869819487441372L;
+	private static final long serialVersionUID = 1842584558758229788L;
 
 	/** 
 	 * 销账申请单号

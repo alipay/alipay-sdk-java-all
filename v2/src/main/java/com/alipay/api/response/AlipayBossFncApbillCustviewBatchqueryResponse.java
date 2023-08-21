@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.apbill.custview.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:47:56
+ * @since 1.0, 2023-08-21 03:48:12
  */
 public class AlipayBossFncApbillCustviewBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6456316163193184284L;
+	private static final long serialVersionUID = 6435779531862734785L;
 
 	/** 
 	 * 当前页码

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskHufuAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3341861991929785719L;
+	private static final long serialVersionUID = 5519712175828941224L;
 
 	/**
 	 * 获取虎符结果需要的code

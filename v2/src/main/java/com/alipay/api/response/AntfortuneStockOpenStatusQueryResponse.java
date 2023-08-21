@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.open.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:06:48
+ * @since 1.0, 2023-08-20 17:46:42
  */
 public class AntfortuneStockOpenStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1128565428713835794L;
+	private static final long serialVersionUID = 6663877728617973266L;
 
 	/** 
 	 * 用户在该机构的签约协议号，是支付宝用户在该机构的唯一标识

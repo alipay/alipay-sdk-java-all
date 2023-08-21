@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.business.paymenthub.close request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:41:05
+ * @since 1.0, 2023-08-21 05:28:49
  */
 public class AlipayBusinessPaymenthubCloseRequest implements AlipayRequest<AlipayBusinessPaymenthubCloseResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.authorization.redicturl.get request
  * 
  * @author auto create
- * @since 1.0, 2023-06-27 10:46:58
+ * @since 1.0, 2023-08-20 17:36:40
  */
 public class AlipayCommerceEcAuthorizationRedicturlGetRequest implements AlipayRequest<AlipayCommerceEcAuthorizationRedicturlGetResponse> {
 

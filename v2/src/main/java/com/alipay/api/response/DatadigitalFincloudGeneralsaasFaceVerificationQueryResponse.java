@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.verification.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:31:55
+ * @since 1.0, 2023-08-21 03:56:42
  */
 public class DatadigitalFincloudGeneralsaasFaceVerificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7597417299114141455L;
+	private static final long serialVersionUID = 6588885913647455781L;
 
 	/** 
 	 * base64过后的图片图片
@@ -27,7 +27,7 @@ public class DatadigitalFincloudGeneralsaasFaceVerificationQueryResponse extends
 	private String attackFlag;
 
 	/** 
-	 * 人脸检测单据状态。PROCESSING：初始化；SUCCESS：检测成功；FAIL：检测失败
+	 * 人脸认证状态。PROCESSING：初始化；SUCCESS：认证通过；FAIL：认证不通过。
 	 */
 	@ApiField("certify_state")
 	private String certifyState;

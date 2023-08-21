@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.deduct.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-18 22:36:56
+ * @since 1.0, 2023-08-21 04:41:44
  */
 public class AlipayMarketingActivityDeductConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4773129399237188631L;
+	private static final long serialVersionUID = 5156464773664881973L;
 
 	/** 
 	 * 最优券叠加总优惠金额，单位为元

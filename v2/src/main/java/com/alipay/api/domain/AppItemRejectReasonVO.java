@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 审核驳回原因
  *
  * @author auto create
- * @since 1.0, 2023-03-31 15:03:55
+ * @since 1.0, 2023-08-17 15:57:24
  */
 public class AppItemRejectReasonVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1694878597964731459L;
+	private static final long serialVersionUID = 1421814219353928426L;
 
 	/**
 	 * 示例图片url

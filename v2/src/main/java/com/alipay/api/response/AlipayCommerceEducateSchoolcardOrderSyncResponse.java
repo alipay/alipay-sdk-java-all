@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.schoolcard.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-01 23:17:57
+ * @since 1.0, 2023-08-21 02:36:47
  */
 public class AlipayCommerceEducateSchoolcardOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6862388366144342773L;
+	private static final long serialVersionUID = 3192812918272419898L;
 
 	/** 
 	 * 订单号

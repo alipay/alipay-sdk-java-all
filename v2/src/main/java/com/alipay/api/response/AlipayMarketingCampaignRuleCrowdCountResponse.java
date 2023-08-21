@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.rule.crowd.count response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 10:31:16
+ * @since 1.0, 2023-08-21 04:57:05
  */
 public class AlipayMarketingCampaignRuleCrowdCountResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1825364682265574912L;
+	private static final long serialVersionUID = 8546427475377231164L;
 
 	/** 
 	 * 统计规则或标签所圈定的人群数目

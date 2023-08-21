@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AgentScheduleLog extends AlipayObject {
 
-	private static final long serialVersionUID = 2297229572762859771L;
+	private static final long serialVersionUID = 8586154453358137415L;
 
 	/**
 	 * 客服id

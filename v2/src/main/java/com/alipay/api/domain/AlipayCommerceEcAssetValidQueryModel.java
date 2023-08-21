@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业有效授信资产查询
  *
  * @author auto create
- * @since 1.0, 2023-06-16 10:40:07
+ * @since 1.0, 2023-08-16 17:05:57
  */
 public class AlipayCommerceEcAssetValidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7796969165935121942L;
+	private static final long serialVersionUID = 1358752174822547833L;
 
 	/**
 	 * 共同账户ID

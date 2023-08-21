@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.data.page.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:40:47
+ * @since 1.0, 2023-08-21 01:25:11
  */
 public class AlipayOpenMiniDataPageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8753115397643894248L;
+	private static final long serialVersionUID = 2379985195724348154L;
 
 	/** 
 	 * 页面访问数据结果

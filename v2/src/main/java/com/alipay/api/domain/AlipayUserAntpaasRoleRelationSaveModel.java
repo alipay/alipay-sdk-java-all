@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAntpaasRoleRelationSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3518499816418491716L;
+	private static final long serialVersionUID = 7428384124858468833L;
 
 	/**
 	 * 需要绑定的支付宝用户id

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.miniapp.brand.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 22:36:37
+ * @since 1.0, 2023-08-21 02:42:15
  */
 public class AlipayOpenMiniMiniappBrandUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5379451469498158116L;
+	private static final long serialVersionUID = 3335838476162436847L;
 
 	/** 
 	 * 图片上传成功后的图片存储键(可用于填写调用alipay.open.mini.miniapp.brand.submit时需要的图片类型的字段)

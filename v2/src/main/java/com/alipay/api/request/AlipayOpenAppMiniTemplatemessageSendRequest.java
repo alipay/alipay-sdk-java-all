@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.mini.templatemessage.send request
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 23:01:55
+ * @since 1.0, 2023-08-21 05:16:43
  */
 public class AlipayOpenAppMiniTemplatemessageSendRequest implements AlipayRequest<AlipayOpenAppMiniTemplatemessageSendResponse> {
 

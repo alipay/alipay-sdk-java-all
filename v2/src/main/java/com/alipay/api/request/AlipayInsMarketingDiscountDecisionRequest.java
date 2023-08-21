@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.marketing.discount.decision request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:38:18
+ * @since 1.0, 2023-08-21 03:22:41
  */
 public class AlipayInsMarketingDiscountDecisionRequest implements AlipayRequest<AlipayInsMarketingDiscountDecisionResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企信AE提前收款服务追缴平账
  *
  * @author auto create
- * @since 1.0, 2023-08-03 19:45:34
+ * @since 1.0, 2023-08-16 19:14:53
  */
 public class ZhimaCreditEpAeprepayAcoountSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3239192566261298632L;
+	private static final long serialVersionUID = 3255321687516766593L;
 
 	/**
 	 * 实际平账金额。单位：元

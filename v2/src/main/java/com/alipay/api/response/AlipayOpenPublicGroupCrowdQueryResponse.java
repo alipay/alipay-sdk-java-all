@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.group.crowd.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:56:49
+ * @since 1.0, 2023-08-21 02:48:16
  */
 public class AlipayOpenPublicGroupCrowdQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6117234328435897125L;
+	private static final long serialVersionUID = 2184295476573596111L;
 
 	/** 
 	 * 分组圈出的人群数量

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.cashpool.status.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:37:33
+ * @since 1.0, 2023-08-21 01:26:35
  */
 public class AlipayAccountCashpoolStatusModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4453289868356358433L;
+	private static final long serialVersionUID = 6191681539958517134L;
 
 	
 

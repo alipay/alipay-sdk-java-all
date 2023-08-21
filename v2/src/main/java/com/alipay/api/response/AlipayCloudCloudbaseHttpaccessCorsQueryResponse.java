@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.cors.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 23:41:39
+ * @since 1.0, 2023-08-17 21:06:18
  */
 public class AlipayCloudCloudbaseHttpaccessCorsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6813171563558673889L;
+	private static final long serialVersionUID = 3224531489697678833L;
 
 	/** 
 	 * 跨域安全域名列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.fwh.sign.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-09 11:31:58
+ * @since 1.0, 2023-08-21 03:56:42
  */
 public class AnttechBlockchainDefinFwhSignApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3435271639414233681L;
+	private static final long serialVersionUID = 2633369513942849465L;
 
 	/** 
 	 * 受理号

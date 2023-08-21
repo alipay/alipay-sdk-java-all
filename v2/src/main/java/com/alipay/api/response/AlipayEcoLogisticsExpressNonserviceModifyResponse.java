@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.logistics.express.nonservice.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:44:30
+ * @since 1.0, 2023-08-21 04:07:32
  */
 public class AlipayEcoLogisticsExpressNonserviceModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4348372176676436587L;
+	private static final long serialVersionUID = 5238275997514919536L;
 
 	
 

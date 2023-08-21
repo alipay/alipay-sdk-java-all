@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.auth.binding.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:16:54
+ * @since 1.0, 2023-08-21 01:36:45
  */
 public class AlipayCommerceTransportAuthBindingGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1369135374214412792L;
+	private static final long serialVersionUID = 7534693795427246353L;
 
 	/** 
 	 * 授权状态数据。当接口调用成功时，需要返回该字段。

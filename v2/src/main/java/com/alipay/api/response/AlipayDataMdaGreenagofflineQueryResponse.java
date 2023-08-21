@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.greenagoffline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:41:54
+ * @since 1.0, 2023-08-21 03:46:43
  */
 public class AlipayDataMdaGreenagofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7469196499859727343L;
+	private static final long serialVersionUID = 8382979174182635498L;
 
 	/** 
 	 * 完成公益任务人数

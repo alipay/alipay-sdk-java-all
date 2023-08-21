@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.repayment.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 19:31:56
+ * @since 1.0, 2023-08-21 01:51:44
  */
 public class AlipayFundFlexiblestaffingRepaymentTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1819565322643138789L;
+	private static final long serialVersionUID = 8698741897862474897L;
 
 	/** 
 	 * 场景码

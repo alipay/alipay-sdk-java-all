@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.morpho.appgray.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:33:28
+ * @since 1.0, 2023-08-21 01:09:21
  */
 public class AlipayOpenMiniMorphoAppgrayCancelRequest implements AlipayRequest<AlipayOpenMiniMorphoAppgrayCancelResponse> {
 

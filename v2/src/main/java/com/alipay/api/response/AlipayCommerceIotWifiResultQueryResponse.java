@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.wifi.result.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-05 14:50:22
+ * @since 1.0, 2023-08-21 04:31:27
  */
 public class AlipayCommerceIotWifiResultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6287329156564356321L;
+	private static final long serialVersionUID = 1794356277549832382L;
 
 	/** 
 	 * 配网状态：  

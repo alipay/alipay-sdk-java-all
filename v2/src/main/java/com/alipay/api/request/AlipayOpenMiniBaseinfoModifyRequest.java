@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.baseinfo.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 22:11:59
+ * @since 1.0, 2023-08-18 12:56:40
  */
 public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<AlipayOpenMiniBaseinfoModifyResponse> {
 
@@ -28,7 +28,6 @@ public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<
 	/** 
 	* 小程序描述，长度限制 20~400 个字符。
 如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息
-
 	 */
 	private String appDesc;
 

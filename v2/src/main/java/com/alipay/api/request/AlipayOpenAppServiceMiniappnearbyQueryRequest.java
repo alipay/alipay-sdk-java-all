@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.service.miniappnearby.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:00:50
+ * @since 1.0, 2023-08-21 01:40:18
  */
 public class AlipayOpenAppServiceMiniappnearbyQueryRequest implements AlipayRequest<AlipayOpenAppServiceMiniappnearbyQueryResponse> {
 

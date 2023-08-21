@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.design.page.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:47:32
+ * @since 1.0, 2023-08-21 04:14:48
  */
 public class DatadigitalFincloudFinsaasDesignPageBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1578915618532727295L;
+	private static final long serialVersionUID = 1444828648194353315L;
 
 	/** 
 	 * 承载页列表

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.asset.devicelist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:20:50
+ * @since 1.0, 2023-08-21 01:43:23
  */
 public class AnttechBlockchainFinanceAssetDevicelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2867363434699141717L;
+	private static final long serialVersionUID = 7319268832793544798L;
 
 	/** 
 	 * 查询的设备信息列表，为空表示未查询到结果。

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOverseasTravelBenefitChangeNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2191389623667317921L;
+	private static final long serialVersionUID = 3567283531671667261L;
 
 	/**
 	 * 收单站在gn的id

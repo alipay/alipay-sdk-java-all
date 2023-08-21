@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.ecsign.userwhitelist.save request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:06:48
+ * @since 1.0, 2023-08-20 18:11:43
  */
 public class AlipayFinancialnetAuthEcsignUserwhitelistSaveRequest implements AlipayRequest<AlipayFinancialnetAuthEcsignUserwhitelistSaveResponse> {
 

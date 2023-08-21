@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.paymenthub.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:37:18
+ * @since 1.0, 2023-08-20 18:21:15
  */
 public class AlipayBusinessPaymenthubQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4583579259618763413L;
+	private static final long serialVersionUID = 4564317985493683677L;
 
 	/** 
 	 * 支付，打款或者退款的操作金额

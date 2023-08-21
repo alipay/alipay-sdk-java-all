@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: myxiaojin.finance.atsbudget.return request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:26:54
+ * @since 1.0, 2023-08-20 18:21:44
  */
 public class MyxiaojinFinanceAtsbudgetReturnRequest implements AlipayRequest<MyxiaojinFinanceAtsbudgetReturnResponse> {
 

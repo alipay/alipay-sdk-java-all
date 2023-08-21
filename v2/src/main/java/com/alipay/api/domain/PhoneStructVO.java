@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电话类型
  *
  * @author auto create
- * @since 1.0, 2023-08-15 11:54:46
+ * @since 1.0, 2023-08-18 10:15:10
  */
 public class PhoneStructVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5278385967721481592L;
+	private static final long serialVersionUID = 4459752492493286245L;
+
+	/**
+	 * 客服链接地址，必须以alipays开头。用户点击链接后可直接进入客服页面进行咨询
+	 */
+	@ApiField("customer_link")
+	private String customerLink;
 
 	/**
 	 * 电话号码，包含区号+电话号码的座机号码格式，以及手机号码格式
@@ -24,6 +30,13 @@ public class PhoneStructVO extends AlipayObject {
 	 */
 	@ApiField("phone_type")
 	private String phoneType;
+
+	public String getCustomerLink() {
+		return this.customerLink;
+	}
+	public void setCustomerLink(String customerLink) {
+		this.customerLink = customerLink;
+	}
 
 	public String getPhoneNumber() {
 		return this.phoneNumber;

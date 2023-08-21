@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.test.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 15:01:52
+ * @since 1.0, 2023-08-17 21:26:40
  */
 public class AlipayBossProdTestModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5344635496813651982L;
+	private static final long serialVersionUID = 4483142933938526435L;
 
 	/** 
 	 * test

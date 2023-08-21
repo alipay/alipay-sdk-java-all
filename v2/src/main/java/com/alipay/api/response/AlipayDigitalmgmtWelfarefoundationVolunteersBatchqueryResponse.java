@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.welfarefoundation.volunteers.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-16 11:22:35
+ * @since 1.0, 2023-08-21 01:56:42
  */
 public class AlipayDigitalmgmtWelfarefoundationVolunteersBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6474576498945752353L;
+	private static final long serialVersionUID = 1528384599494789264L;
 
 	/** 
 	 * 志愿者活动时

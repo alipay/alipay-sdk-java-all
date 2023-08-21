@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.rating.inner.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:24:39
+ * @since 1.0, 2023-08-21 03:32:56
  */
 public class ZhimaCreditEpRatingInnerInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4444591936936513385L;
+	private static final long serialVersionUID = 3593267846716964617L;
 
 	/** 
 	 * 芝麻企业信用客户评估单号，商户应该妥善关联持久化保存该订单号用于后续的对账。

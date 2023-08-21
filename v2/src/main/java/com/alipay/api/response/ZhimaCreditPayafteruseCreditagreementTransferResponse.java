@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditagreement.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:52:38
+ * @since 1.0, 2023-08-20 18:18:35
  */
 public class ZhimaCreditPayafteruseCreditagreementTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3644475133168733972L;
+	private static final long serialVersionUID = 8625779456491496745L;
 
 	/** 
 	 * 芝麻开通协议号

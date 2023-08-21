@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalop.ucdp.apecreative.failtask.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-26 20:11:51
+ * @since 1.0, 2023-08-21 04:46:41
  */
 public class AlipayDigitalopUcdpApecreativeFailtaskModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6225158738373463978L;
+	private static final long serialVersionUID = 7339376282167377194L;
 
 	
 

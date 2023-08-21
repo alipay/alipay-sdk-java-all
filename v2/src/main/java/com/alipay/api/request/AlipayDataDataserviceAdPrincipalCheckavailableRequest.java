@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.ad.principal.checkavailable request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:34:01
+ * @since 1.0, 2023-08-21 02:48:04
  */
 public class AlipayDataDataserviceAdPrincipalCheckavailableRequest implements AlipayRequest<AlipayDataDataserviceAdPrincipalCheckavailableResponse> {
 

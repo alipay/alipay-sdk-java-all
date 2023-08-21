@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.zavatar.ownedassets.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:36:51
+ * @since 1.0, 2023-08-21 03:36:45
  */
 public class AlipayUserAccountZavatarOwnedassetsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5249966465575997569L;
+	private static final long serialVersionUID = 6162738464184513182L;
 
 	/** 
 	 * 数字人服装vo

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.sales.leads.saleleads.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:08:22
+ * @since 1.0, 2023-08-20 17:07:04
  */
 public class KoubeiSalesLeadsSaleleadsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8344915528537968551L;
+	private static final long serialVersionUID = 7288989145661232495L;
 
 	/** 
 	 * 生成的销售LeadsId

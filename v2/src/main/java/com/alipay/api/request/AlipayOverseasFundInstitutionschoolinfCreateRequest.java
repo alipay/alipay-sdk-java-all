@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.fund.institutionschoolinf.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:43:48
+ * @since 1.0, 2023-08-21 02:34:50
  */
 public class AlipayOverseasFundInstitutionschoolinfCreateRequest implements AlipayRequest<AlipayOverseasFundInstitutionschoolinfCreateResponse> {
 

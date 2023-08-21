@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.settle.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:56:49
+ * @since 1.0, 2023-08-20 17:41:46
  */
 public class AlipayPcreditHuabeiAuthSettleApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4824924829739252741L;
+	private static final long serialVersionUID = 5688569371126751649L;
 
 	/** 
 	 * 根据商户传入的轻会员协议结算周期内累计消费数据与支付宝端轻会员协议结算周期内消费数据比对之后，若数据不一致，则会返回对应的异常数据比对结果。

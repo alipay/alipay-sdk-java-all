@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.gift.stock.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:15:59
+ * @since 1.0, 2023-08-21 01:10:38
  */
 public class AlipaySocialGiftStockQueryRequest implements AlipayRequest<AlipaySocialGiftStockQueryResponse> {
 

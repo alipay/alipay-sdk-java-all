@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.operation.qrcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 15:39:39
+ * @since 1.0, 2023-08-21 04:28:34
  */
 public class AlipayOpenSpOperationQrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8191982473728987212L;
+	private static final long serialVersionUID = 1499143796529383492L;
 
 	/** 
 	 * 支付宝操作批次号

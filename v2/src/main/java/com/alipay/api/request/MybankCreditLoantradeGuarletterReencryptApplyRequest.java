@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loantrade.guarletter.reencrypt.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:09:11
+ * @since 1.0, 2023-08-21 01:49:27
  */
 public class MybankCreditLoantradeGuarletterReencryptApplyRequest implements AlipayRequest<MybankCreditLoantradeGuarletterReencryptApplyResponse> {
 

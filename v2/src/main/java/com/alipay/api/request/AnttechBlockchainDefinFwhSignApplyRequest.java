@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.fwh.sign.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-06-09 11:31:58
+ * @since 1.0, 2023-08-21 03:56:42
  */
 public class AnttechBlockchainDefinFwhSignApplyRequest implements AlipayRequest<AnttechBlockchainDefinFwhSignApplyResponse> {
 

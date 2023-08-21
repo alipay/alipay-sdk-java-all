@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.service.bizabilitydata.set request
  * 
  * @author auto create
- * @since 1.0, 2023-06-30 17:21:52
+ * @since 1.0, 2023-08-21 05:46:41
  */
 public class AlipayOpenAppServiceBizabilitydataSetRequest implements AlipayRequest<AlipayOpenAppServiceBizabilitydataSetResponse> {
 

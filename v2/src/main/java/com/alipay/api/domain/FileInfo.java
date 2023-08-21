@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文件信息对象
  *
  * @author auto create
- * @since 1.0, 2022-08-10 16:18:13
+ * @since 1.0, 2023-08-17 19:57:18
  */
 public class FileInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7737771724663683569L;
+	private static final long serialVersionUID = 5453984267677385995L;
 
 	/**
-	 * 文件类型，唯一值，枚举。 
+	 * 用于多类目审核，支持多个传入，最长1024字符
+	 */
+	@ApiField("biz_label")
+	private String bizLabel;
+
+	/**
+	 * 文件类型，唯一值。 枚举值只做参考，实际情况做具体沟通
 VIDEO=视频;
 VOICE=语音;
 PICTURE/JPG/JPEG/PNG=图片;
@@ -41,6 +47,13 @@ DOC, DOCX, XLS, XLSX, PPT, PPTX=MS Office
 	 */
 	@ApiField("origin_file_id")
 	private String originFileId;
+
+	public String getBizLabel() {
+		return this.bizLabel;
+	}
+	public void setBizLabel(String bizLabel) {
+		this.bizLabel = bizLabel;
+	}
 
 	public String getDataType() {
 		return this.dataType;

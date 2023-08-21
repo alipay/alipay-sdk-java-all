@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * MA上签催签
  *
  * @author auto create
- * @since 1.0, 2023-03-01 15:42:24
+ * @since 1.0, 2023-08-18 15:03:02
  */
 public class AlipayBossProdAntlegalchainNdapressUrgeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6234646882817955856L;
+	private static final long serialVersionUID = 1185762355332171631L;
 
 	/**
 	 * 来源系统

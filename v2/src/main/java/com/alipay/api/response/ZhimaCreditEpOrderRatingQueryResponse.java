@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.order.rating.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:00:47
+ * @since 1.0, 2023-08-21 04:59:26
  */
 public class ZhimaCreditEpOrderRatingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1579919293232892994L;
+	private static final long serialVersionUID = 2573132589885365795L;
 
 	/** 
 	 * 评估额度;

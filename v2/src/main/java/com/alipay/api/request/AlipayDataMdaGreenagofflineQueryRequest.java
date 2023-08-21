@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.greenagoffline.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:41:54
+ * @since 1.0, 2023-08-21 03:46:43
  */
 public class AlipayDataMdaGreenagofflineQueryRequest implements AlipayRequest<AlipayDataMdaGreenagofflineQueryResponse> {
 

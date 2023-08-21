@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阅读听书频道书籍信息同步接口
  *
  * @author auto create
- * @since 1.0, 2023-07-07 11:42:32
+ * @since 1.0, 2023-08-18 16:20:17
  */
 public class AlipayUserAntbookcontentBookSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8121224762913613135L;
+	private static final long serialVersionUID = 7261263616662251989L;
 
 	/**
 	 * 作者

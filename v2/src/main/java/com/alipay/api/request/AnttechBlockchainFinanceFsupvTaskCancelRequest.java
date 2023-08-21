@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.fsupv.task.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-06-16 18:52:00
+ * @since 1.0, 2023-08-20 17:21:41
  */
 public class AnttechBlockchainFinanceFsupvTaskCancelRequest implements AlipayRequest<AnttechBlockchainFinanceFsupvTaskCancelResponse> {
 

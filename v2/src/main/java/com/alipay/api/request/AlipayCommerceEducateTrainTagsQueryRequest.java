@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.train.tags.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 22:39:10
+ * @since 1.0, 2023-08-21 05:16:04
  */
 public class AlipayCommerceEducateTrainTagsQueryRequest implements AlipayRequest<AlipayCommerceEducateTrainTagsQueryResponse> {
 

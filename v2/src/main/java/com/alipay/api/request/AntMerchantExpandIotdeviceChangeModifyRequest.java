@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.iotdevice.change.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:55:11
+ * @since 1.0, 2023-08-21 04:12:31
  */
 public class AntMerchantExpandIotdeviceChangeModifyRequest implements AlipayRequest<AntMerchantExpandIotdeviceChangeModifyResponse> {
 

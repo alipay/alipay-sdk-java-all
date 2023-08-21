@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.isvdevice.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-05 17:51:59
+ * @since 1.0, 2023-08-21 01:51:43
  */
 public class AlipayOpenIotmbsIsvdeviceBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7885335499564121681L;
+	private static final long serialVersionUID = 8852727528994658868L;
 
 	
 

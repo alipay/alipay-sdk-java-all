@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isresource.tenantquerybyurid.query request
  * 
  * @author auto create
- * @since 1.0, 2023-07-10 10:03:12
+ * @since 1.0, 2023-08-21 04:16:42
  */
 public class AlipayIserviceIsresourceTenantquerybyuridQueryRequest implements AlipayRequest<AlipayIserviceIsresourceTenantquerybyuridQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.repaybill.order.createandpay response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:21:56
+ * @since 1.0, 2023-08-20 16:41:45
  */
 public class AlipayTradeRepaybillOrderCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5415321875835126851L;
+	private static final long serialVersionUID = 7155943651586396276L;
 
 	/** 
 	 * 支付宝账单编号

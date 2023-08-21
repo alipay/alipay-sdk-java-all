@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.cash.trigger request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:56:58
+ * @since 1.0, 2023-08-20 17:46:48
  */
 public class AlipayMarketingCampaignCashTriggerRequest implements AlipayRequest<AlipayMarketingCampaignCashTriggerResponse> {
 

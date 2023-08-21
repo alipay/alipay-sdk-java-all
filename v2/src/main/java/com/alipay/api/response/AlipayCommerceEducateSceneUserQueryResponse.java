@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.scene.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:11:52
+ * @since 1.0, 2023-08-21 02:21:47
  */
 public class AlipayCommerceEducateSceneUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2255466382419557329L;
+	private static final long serialVersionUID = 1633694752429144644L;
 
 	/** 
 	 * 校园一脸通行开通状态。OPEN：开通，CLOSE：关闭

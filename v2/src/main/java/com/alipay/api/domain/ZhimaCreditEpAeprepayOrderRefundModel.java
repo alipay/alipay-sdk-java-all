@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企信AE提前收款服务订单退款通知
  *
  * @author auto create
- * @since 1.0, 2023-08-03 19:45:39
+ * @since 1.0, 2023-08-16 19:14:56
  */
 public class ZhimaCreditEpAeprepayOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7189485352921221676L;
+	private static final long serialVersionUID = 1468914265346197391L;
 
 	/**
 	 * 退款垫付金额。币种最小单位，如人民币：分

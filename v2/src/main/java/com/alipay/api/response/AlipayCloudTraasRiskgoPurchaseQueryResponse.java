@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.traas.riskgo.purchase.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-29 10:46:53
+ * @since 1.0, 2023-08-20 17:21:42
  */
 public class AlipayCloudTraasRiskgoPurchaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6214761138131265691L;
+	private static final long serialVersionUID = 8826256962548265195L;
 
 	/** 
 	 * risk_result:风险分析结果，类型为列表，包含风险分析结果和描述。分别是 risk_type:marketing_awarding_common; risk_value:(hasRisk,noRisk)/("rank1",...,"rank10"); risk_desc:是否有风险/风险等级; 每一次返回，根据配置的不同，可以返回同样的风险结果类型，也可以返回不同的风险结果类型。

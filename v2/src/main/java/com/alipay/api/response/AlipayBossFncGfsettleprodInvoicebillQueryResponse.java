@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.gfsettleprod.invoicebill.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:40:45
+ * @since 1.0, 2023-08-20 17:15:12
  */
 public class AlipayBossFncGfsettleprodInvoicebillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4592287479572185763L;
+	private static final long serialVersionUID = 8148137152942217483L;
 
 	/** 
 	 * 发票关联的账单

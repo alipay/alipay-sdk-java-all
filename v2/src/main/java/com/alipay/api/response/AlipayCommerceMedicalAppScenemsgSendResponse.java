@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.app.scenemsg.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-06 10:31:57
+ * @since 1.0, 2023-08-21 04:26:42
  */
 public class AlipayCommerceMedicalAppScenemsgSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3854156451158198814L;
+	private static final long serialVersionUID = 7581596619867747926L;
 
 	/** 
 	 * 业务错误描述

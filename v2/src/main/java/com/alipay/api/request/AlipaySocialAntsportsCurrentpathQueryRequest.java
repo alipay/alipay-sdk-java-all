@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antsports.currentpath.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-10 11:39:27
+ * @since 1.0, 2023-08-21 01:46:45
  */
 public class AlipaySocialAntsportsCurrentpathQueryRequest implements AlipayRequest<AlipaySocialAntsportsCurrentpathQueryResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.taskcenter.finish response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 20:16:58
+ * @since 1.0, 2023-08-21 04:26:41
  */
 public class AlipayCommerceSportsTaskcenterFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7421394268222239944L;
+	private static final long serialVersionUID = 4281324836787598765L;
 
 	/** 
 	 * 用户任务

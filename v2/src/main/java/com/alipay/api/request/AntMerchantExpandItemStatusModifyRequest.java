@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.item.status.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-07-05 10:59:14
+ * @since 1.0, 2023-08-21 05:09:59
  */
 public class AntMerchantExpandItemStatusModifyRequest implements AlipayRequest<AntMerchantExpandItemStatusModifyResponse> {
 

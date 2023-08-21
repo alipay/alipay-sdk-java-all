@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ad.userbalance.offline response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:42:42
+ * @since 1.0, 2023-08-20 17:31:30
  */
 public class AlipayDataDataserviceAdUserbalanceOfflineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4844938464328792682L;
+	private static final long serialVersionUID = 8126889965431364417L;
 
 	/** 
 	 * 操作成功投放账户id列表

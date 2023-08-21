@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ad.stocktask.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:11:32
+ * @since 1.0, 2023-08-21 01:57:19
  */
 public class AlipayCommerceTransportAdStocktaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3685884955849429468L;
+	private static final long serialVersionUID = 6466569229395352554L;
 
 	/** 
 	 * 库存查询任务id +  库存查询任务的唯一标识，可使用该ID进行库存任务详情查询

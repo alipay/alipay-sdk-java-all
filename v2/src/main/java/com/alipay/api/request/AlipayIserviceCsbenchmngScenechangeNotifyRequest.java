@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.csbenchmng.scenechange.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:46:53
+ * @since 1.0, 2023-08-21 01:21:43
  */
 public class AlipayIserviceCsbenchmngScenechangeNotifyRequest implements AlipayRequest<AlipayIserviceCsbenchmngScenechangeNotifyResponse> {
 

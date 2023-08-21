@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.offlinevars.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:29:30
+ * @since 1.0, 2023-08-20 16:39:39
  */
 public class AlipaySecurityRiskOfflinevarsQueryRequest implements AlipayRequest<AlipaySecurityRiskOfflinevarsQueryResponse> {
 

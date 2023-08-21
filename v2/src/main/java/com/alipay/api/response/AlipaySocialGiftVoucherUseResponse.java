@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.gift.voucher.use response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:09:06
+ * @since 1.0, 2023-08-21 03:01:29
  */
 public class AlipaySocialGiftVoucherUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5762486498962931635L;
+	private static final long serialVersionUID = 4869171578926762962L;
 
 	
 

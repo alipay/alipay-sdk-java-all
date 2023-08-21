@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.bail.order.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:36:56
+ * @since 1.0, 2023-08-21 03:41:45
  */
 public class AlipayFundBailOrderBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6433275687452133217L;
+	private static final long serialVersionUID = 3864779325376621212L;
 
 	/** 
 	 * 入参uid下查询到的保证金主单列表

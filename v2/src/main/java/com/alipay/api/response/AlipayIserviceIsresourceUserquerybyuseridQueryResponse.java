@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresource.userquerybyuserid.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-10 10:01:41
+ * @since 1.0, 2023-08-21 05:01:44
  */
 public class AlipayIserviceIsresourceUserquerybyuseridQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2317384364479845389L;
+	private static final long serialVersionUID = 2361667635568267334L;
 
 	/** 
 	 * 相关用户信息

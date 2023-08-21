@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.wufu.aipicture.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:11:59
+ * @since 1.0, 2023-08-21 04:06:44
  */
 public class AlipayFundCouponWufuAipictureQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4413231278453671362L;
+	private static final long serialVersionUID = 2279845754198537579L;
 
 	/** 
 	 * AI年画图片列表

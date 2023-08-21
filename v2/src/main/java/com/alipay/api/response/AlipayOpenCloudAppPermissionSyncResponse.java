@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.cloud.app.permission.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:21:49
+ * @since 1.0, 2023-08-20 16:41:44
  */
 public class AlipayOpenCloudAppPermissionSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3757623643291194339L;
+	private static final long serialVersionUID = 4741873497596125855L;
 
 	/** 
 	 * 接口权限列表

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StressRequestItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4577565435379154434L;
+	private static final long serialVersionUID = 6381976321862877639L;
 
 	/**
 	 * 资源名称

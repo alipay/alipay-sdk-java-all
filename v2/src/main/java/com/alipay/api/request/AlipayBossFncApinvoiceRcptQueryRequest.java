@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.apinvoice.rcpt.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:07:47
+ * @since 1.0, 2023-08-21 05:21:33
  */
 public class AlipayBossFncApinvoiceRcptQueryRequest implements AlipayRequest<AlipayBossFncApinvoiceRcptQueryResponse> {
 

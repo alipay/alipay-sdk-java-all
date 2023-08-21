@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.fundstransfer.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:31:55
+ * @since 1.0, 2023-08-20 18:31:44
  */
 public class AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1564656817745671627L;
+	private static final long serialVersionUID = 5336311512522824557L;
 
 	/** 
 	 * 资金划拨的金额（单位分）

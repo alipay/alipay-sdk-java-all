@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.openid.applyorder.checkavailable request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:31:55
+ * @since 1.0, 2023-08-20 17:41:44
  */
 public class AlipayOpenAppOpenidApplyorderCheckavailableRequest implements AlipayRequest<AlipayOpenAppOpenidApplyorderCheckavailableResponse> {
 

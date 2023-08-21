@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.asset.valid.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-16 10:41:58
+ * @since 1.0, 2023-08-16 17:05:57
  */
 public class AlipayCommerceEcAssetValidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7776397187517316123L;
+	private static final long serialVersionUID = 7375257848157415748L;
 
 	/** 
 	 * 签约类型

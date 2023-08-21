@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.iotdevice.onlinedata.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:05:58
+ * @since 1.0, 2023-08-21 01:33:53
  */
 public class AntMerchantExpandIotdeviceOnlinedataUploadRequest implements AlipayRequest<AntMerchantExpandIotdeviceOnlinedataUploadResponse> {
 

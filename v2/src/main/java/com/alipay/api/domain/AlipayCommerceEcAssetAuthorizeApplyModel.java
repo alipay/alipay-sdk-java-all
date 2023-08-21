@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码授信资产授权申请
  *
  * @author auto create
- * @since 1.0, 2023-06-19 15:57:53
+ * @since 1.0, 2023-08-16 17:05:41
  */
 public class AlipayCommerceEcAssetAuthorizeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8678779158234829911L;
+	private static final long serialVersionUID = 7266684194226177832L;
 
 	/**
 	 * 共同账户ID

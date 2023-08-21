@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询小程序订单对账列表信息
  *
  * @author auto create
- * @since 1.0, 2023-08-09 16:49:59
+ * @since 1.0, 2023-08-18 16:59:51
  */
 public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2846666781775622792L;
+	private static final long serialVersionUID = 7778498375978499275L;
 
 	/**
 	 * 小程序订单结算日期，格式为"yyyy-MM-dd"，如"2023-03-22"
@@ -28,6 +28,12 @@ public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * 订单状态，传入此参数可查询指定状态的订单
+	 */
+	@ApiField("order_status")
+	private String orderStatus;
 
 	/**
 	 * 分页页码，从1开始
@@ -47,6 +53,12 @@ public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 	@ApiListField("service_type_list")
 	@ApiField("string")
 	private List<String> serviceTypeList;
+
+	/**
+	 * 结算状态，传入此参数可查询指定结算状态的订单
+	 */
+	@ApiField("settle_status")
+	private String settleStatus;
 
 	/**
 	 * 小程序订单结算日期，格式为"yyyy-MM-dd"，如"2023-03-22"
@@ -74,6 +86,13 @@ public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 		this.miniAppId = miniAppId;
 	}
 
+	public String getOrderStatus() {
+		return this.orderStatus;
+	}
+	public void setOrderStatus(String orderStatus) {
+		this.orderStatus = orderStatus;
+	}
+
 	public Long getPageNum() {
 		return this.pageNum;
 	}
@@ -93,6 +112,13 @@ public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 	}
 	public void setServiceTypeList(List<String> serviceTypeList) {
 		this.serviceTypeList = serviceTypeList;
+	}
+
+	public String getSettleStatus() {
+		return this.settleStatus;
+	}
+	public void setSettleStatus(String settleStatus) {
+		this.settleStatus = settleStatus;
 	}
 
 	public Date getSettlementDate() {

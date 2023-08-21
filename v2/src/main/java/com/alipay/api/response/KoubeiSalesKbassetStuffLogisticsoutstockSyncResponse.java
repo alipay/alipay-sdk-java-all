@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.sales.kbasset.stuff.logisticsoutstock.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:52:46
+ * @since 1.0, 2023-08-21 05:03:00
  */
 public class KoubeiSalesKbassetStuffLogisticsoutstockSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6889439867451484945L;
+	private static final long serialVersionUID = 1775616246948876494L;
 
 	/** 
 	 * 报错编码

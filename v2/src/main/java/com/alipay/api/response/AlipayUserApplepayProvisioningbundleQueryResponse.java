@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.applepay.provisioningbundle.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:31:59
+ * @since 1.0, 2023-08-21 03:52:01
  */
 public class AlipayUserApplepayProvisioningbundleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6115121762252875115L;
+	private static final long serialVersionUID = 8648883385558755555L;
 
 	/** 
 	 * 卡状态

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.clive.system.send request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:48:26
+ * @since 1.0, 2023-08-21 02:33:53
  */
 public class AlipayIserviceCliveSystemSendRequest implements AlipayRequest<AlipayIserviceCliveSystemSendResponse> {
 

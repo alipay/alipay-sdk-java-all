@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.info.share request
  * 
  * @author auto create
- * @since 1.0, 2023-06-27 09:51:51
+ * @since 1.0, 2023-08-16 09:55:51
  */
 public class AlipayMerchantInfoShareRequest implements AlipayRequest<AlipayMerchantInfoShareResponse> {
 

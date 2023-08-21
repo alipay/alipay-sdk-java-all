@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.appcontent.item.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 23:05:54
+ * @since 1.0, 2023-08-21 05:53:18
  */
 public class AlipayOpenAppAppcontentItemCreateRequest implements AlipayRequest<AlipayOpenAppAppcontentItemCreateResponse> {
 

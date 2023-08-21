@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:32:02
+ * @since 1.0, 2023-08-21 06:01:47
  */
 public class AlipayMarketingVoucherDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5779885411987154163L;
+	private static final long serialVersionUID = 8815678699812613249L;
 
 	/** 
 	 * 本张券的原始面额，单位元

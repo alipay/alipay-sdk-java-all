@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.codec.acode.decode.use request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:22:08
+ * @since 1.0, 2023-08-21 03:13:44
  */
 public class AlipayPayCodecAcodeDecodeUseRequest implements AlipayRequest<AlipayPayCodecAcodeDecodeUseResponse> {
 

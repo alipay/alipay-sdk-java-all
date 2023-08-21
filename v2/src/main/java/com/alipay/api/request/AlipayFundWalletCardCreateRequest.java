@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.wallet.card.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:21:56
+ * @since 1.0, 2023-08-21 02:06:44
  */
 public class AlipayFundWalletCardCreateRequest implements AlipayRequest<AlipayFundWalletCardCreateResponse> {
 

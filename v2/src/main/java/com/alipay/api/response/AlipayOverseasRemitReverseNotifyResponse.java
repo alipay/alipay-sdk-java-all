@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.remit.reverse.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-23 13:16:57
+ * @since 1.0, 2023-08-20 17:56:43
  */
 public class AlipayOverseasRemitReverseNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7311299625573847462L;
+	private static final long serialVersionUID = 3299852354415443738L;
 
 	
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.water.usertask.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-27 09:51:52
+ * @since 1.0, 2023-08-21 04:51:42
  */
 public class AlipayCommerceWaterUsertaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2458269843725546332L;
+	private static final long serialVersionUID = 4158466755824386433L;
 
 	/** 
 	 * 用户任务详情

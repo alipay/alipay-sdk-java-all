@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.subaccount.account.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:39:44
+ * @since 1.0, 2023-08-21 02:32:19
  */
 public class AlipayBossFncSubaccountAccountQueryRequest implements AlipayRequest<AlipayBossFncSubaccountAccountQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.network.leafnode.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-15 11:46:41
+ * @since 1.0, 2023-08-21 04:56:43
  */
 public class AlipayMerchantNetworkLeafnodeDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8328836149859486171L;
+	private static final long serialVersionUID = 8282366448733838474L;
 
 	
 

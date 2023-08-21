@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.questionnare.gray.upgrade request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:56:06
+ * @since 1.0, 2023-08-21 01:38:25
  */
 public class AlipaySocialQuestionnareGrayUpgradeRequest implements AlipayRequest<AlipaySocialQuestionnareGrayUpgradeResponse> {
 

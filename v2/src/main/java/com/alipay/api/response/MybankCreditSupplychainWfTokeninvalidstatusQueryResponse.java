@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.tokeninvalidstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:10:38
+ * @since 1.0, 2023-08-21 04:58:42
  */
 public class MybankCreditSupplychainWfTokeninvalidstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5539489286385116419L;
+	private static final long serialVersionUID = 5342298659862182166L;
 
 	
 

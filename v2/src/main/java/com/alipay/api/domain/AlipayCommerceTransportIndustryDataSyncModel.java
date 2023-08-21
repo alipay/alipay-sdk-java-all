@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出行行业数据同步接口
  *
  * @author auto create
- * @since 1.0, 2023-07-17 15:04:16
+ * @since 1.0, 2023-08-17 19:40:18
  */
 public class AlipayCommerceTransportIndustryDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4546234217765221869L;
+	private static final long serialVersionUID = 6532781598582561227L;
 
 	/**
 	 * 数据请求体，不包含用户信息。

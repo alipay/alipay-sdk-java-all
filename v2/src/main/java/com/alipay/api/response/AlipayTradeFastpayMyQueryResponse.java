@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.my.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:46:52
+ * @since 1.0, 2023-08-21 04:27:34
  */
 public class AlipayTradeFastpayMyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8863517825943945255L;
+	private static final long serialVersionUID = 8146411475283466527L;
 
 	
 

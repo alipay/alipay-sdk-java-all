@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.linkfund.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:22:18
+ * @since 1.0, 2023-08-21 01:12:06
  */
 public class AntfortuneStockLinkfundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3669434355165457274L;
+	private static final long serialVersionUID = 5679657924718846621L;
 
 	/** 
 	 * 错误码

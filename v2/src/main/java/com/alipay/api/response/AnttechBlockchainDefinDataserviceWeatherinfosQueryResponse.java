@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.dataservice.weatherinfos.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:21:52
+ * @since 1.0, 2023-08-20 17:46:49
  */
 public class AnttechBlockchainDefinDataserviceWeatherinfosQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4565366248445379976L;
+	private static final long serialVersionUID = 8723275978734823423L;
 
 	/** 
 	 * 气象信息

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.printmodel.print.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-05 14:46:50
+ * @since 1.0, 2023-08-21 05:11:41
  */
 public class AlipayCommerceIotPrintmodelPrintSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7361516748786193234L;
+	private static final long serialVersionUID = 3621946894411278419L;
 
 	/** 
 	 * 调用任务id

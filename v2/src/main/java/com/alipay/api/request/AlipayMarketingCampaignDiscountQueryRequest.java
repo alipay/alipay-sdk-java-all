@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.discount.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:13:20
+ * @since 1.0, 2023-08-21 03:33:29
  */
 public class AlipayMarketingCampaignDiscountQueryRequest implements AlipayRequest<AlipayMarketingCampaignDiscountQueryResponse> {
 

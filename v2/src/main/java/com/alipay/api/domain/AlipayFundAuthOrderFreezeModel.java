@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 资金预授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2023-07-26 10:39:53
+ * @since 1.0, 2023-08-15 21:08:52
  */
 public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2864334472598878495L;
+	private static final long serialVersionUID = 1721354377284194773L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位。
@@ -44,6 +47,12 @@ public class AlipayFundAuthOrderFreezeModel extends AlipayObject {
 	 */
 	@ApiField("business_params")
 	private String businessParams;
+
+	/**
+	 * 免押受理台模式，使用免押产品必传该字段。根据免押不同业务模式将开通受理台区分三种模式，商家可根据调用预授权冻结接口传入的参数决定该笔免押订单选择哪种受理台模式。不同受理台模式需要传入不同参数，其中：POSTPAY 表示后付金额已知，POSTPAY_UNCERTAIN 表示后付金额未知，DEPOSIT_ONLY 表示纯免押。 具体规则参考文档：https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545
+	 */
+	@ApiField("deposit_product_mode")
+	private String depositProductMode;
 
 	/**
 	 * 无特殊需要请勿传入；商户可用该参数禁用支付渠道。
@@ -120,6 +129,14 @@ identity_hash和alipay_user_id都是可选的，如果两个都传，则会先�
 	private String payeeUserId;
 
 	/**
+	 * 后付费项目， 有付费项目时需要传入该字段。不同受理台模式需要传入不同参数，后付费项目名称和计费说明需要通过校验规则，同时计费说明将展示在开通受理台上。当受理台模式（deposit_product_mode）传入POSTPAY 时，后付费项目名称（name）、金额（amount）必传，计费说明（description）选传；当传入 POSTPAY_UNCERTAIN 时，后付费项目名称（name）、计费说明（description）必传，金额（amount）不传。
+具体规则参考文档：https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545
+	 */
+	@ApiListField("post_payments")
+	@ApiField("post_payment")
+	private List<PostPayment> postPayments;
+
+	/**
 	 * 销售产品码。
 当面资金预授权固定为 PRE_AUTH
 	 */
@@ -185,6 +202,13 @@ identity_hash和alipay_user_id都是可选的，如果两个都传，则会先�
 	}
 	public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
+	}
+
+	public String getDepositProductMode() {
+		return this.depositProductMode;
+	}
+	public void setDepositProductMode(String depositProductMode) {
+		this.depositProductMode = depositProductMode;
 	}
 
 	public String getDisablePayChannels() {
@@ -255,6 +279,13 @@ identity_hash和alipay_user_id都是可选的，如果两个都传，则会先�
 	}
 	public void setPayeeUserId(String payeeUserId) {
 		this.payeeUserId = payeeUserId;
+	}
+
+	public List<PostPayment> getPostPayments() {
+		return this.postPayments;
+	}
+	public void setPostPayments(List<PostPayment> postPayments) {
+		this.postPayments = postPayments;
 	}
 
 	public String getProductCode() {

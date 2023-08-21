@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 高校ISV认证信息同步
  *
  * @author auto create
- * @since 1.0, 2023-06-19 21:25:01
+ * @since 1.0, 2023-08-18 22:43:49
  */
 public class AlipayCommerceEducateAuthenticateCampuscardCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8124192616638696124L;
+	private static final long serialVersionUID = 1232745251897884989L;
 
 	/**
 	 * 校区

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsCertificateApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6649394354214793773L;
+	private static final long serialVersionUID = 5766227811261973596L;
 
 	/**
 	 * 扩展字段

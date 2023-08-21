@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TimeCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8641996429931343758L;
+	private static final long serialVersionUID = 8135294181744229521L;
 
 	/**
 	 * 卡实例ID

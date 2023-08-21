@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.inner.relationconfig.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:53:12
+ * @since 1.0, 2023-08-21 01:59:25
  */
 public class AlipayOpenMiniInnerRelationconfigModifyRequest implements AlipayRequest<AlipayOpenMiniInnerRelationconfigModifyResponse> {
 

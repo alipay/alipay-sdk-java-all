@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 接口支持参数校验
  *
  * @author auto create
- * @since 1.0, 2023-08-08 14:56:14
+ * @since 1.0, 2023-08-17 21:25:32
  */
 public class AlipayBossProdTestModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1522812137286393968L;
+	private static final long serialVersionUID = 8161323731699368891L;
 
 	/**
 	 * test

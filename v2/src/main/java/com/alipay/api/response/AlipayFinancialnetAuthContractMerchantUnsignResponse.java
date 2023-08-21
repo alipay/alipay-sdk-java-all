@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.contract.merchant.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:46:57
+ * @since 1.0, 2023-08-20 17:46:46
  */
 public class AlipayFinancialnetAuthContractMerchantUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1561149228253565255L;
+	private static final long serialVersionUID = 5268117989387789492L;
 
 	/** 
 	 * 合约批次号列表

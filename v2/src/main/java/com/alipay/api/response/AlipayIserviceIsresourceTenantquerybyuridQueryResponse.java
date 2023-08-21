@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresource.tenantquerybyurid.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-10 10:03:12
+ * @since 1.0, 2023-08-21 04:16:42
  */
 public class AlipayIserviceIsresourceTenantquerybyuridQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4558748988818699158L;
+	private static final long serialVersionUID = 6499485194672336521L;
 
 	/** 
 	 * 相关的租户信息

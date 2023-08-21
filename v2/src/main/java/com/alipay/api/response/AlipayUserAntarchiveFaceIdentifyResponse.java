@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antarchive.face.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:54:21
+ * @since 1.0, 2023-08-20 18:25:29
  */
 public class AlipayUserAntarchiveFaceIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3746382713629392771L;
+	private static final long serialVersionUID = 4756492292433686627L;
 
 	/** 
 	 * 比对分值

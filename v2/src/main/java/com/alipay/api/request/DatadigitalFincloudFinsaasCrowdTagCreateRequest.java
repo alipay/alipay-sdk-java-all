@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.crowd.tag.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:48:02
+ * @since 1.0, 2023-08-21 04:03:26
  */
 public class DatadigitalFincloudFinsaasCrowdTagCreateRequest implements AlipayRequest<DatadigitalFincloudFinsaasCrowdTagCreateResponse> {
 

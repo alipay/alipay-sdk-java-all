@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.data.upload.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:12:45
+ * @since 1.0, 2023-08-21 05:41:03
  */
 public class ZhimaMerchantDataUploadInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7674363341794125548L;
+	private static final long serialVersionUID = 4344673791363498917L;
 
 	/** 
 	 * 行业模板
