@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeMergeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2321349332488918451L;
+	private static final long serialVersionUID = 8471248246374292814L;
 
 	/**
 	 * 2088102146225135	买家支付宝用户ID。 2088开头的16位纯数字，小程序场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/mini/introduce/authcode" target="_blank">用户授权</a>。注：交易的买家与卖家不能相同。

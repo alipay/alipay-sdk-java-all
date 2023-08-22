@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.bind.get request
  * 
  * @author auto create
- * @since 1.0, 2023-08-17 10:09:43
+ * @since 1.0, 2023-08-21 20:51:41
  */
 public class AlipayCloudCloudbaseHttpaccessBindGetRequest implements AlipayRequest<AlipayCloudCloudbaseHttpaccessBindGetResponse> {
 

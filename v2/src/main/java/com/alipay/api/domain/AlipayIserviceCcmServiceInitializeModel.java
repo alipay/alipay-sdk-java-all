@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * isv服务初始化接口
  *
  * @author auto create
- * @since 1.0, 2022-11-09 11:18:31
+ * @since 1.0, 2023-08-21 15:10:37
  */
 public class AlipayIserviceCcmServiceInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8774224978859112575L;
+	private static final long serialVersionUID = 6215158571653595311L;
 
 	/**
 	 * 服务描述

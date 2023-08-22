@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询单个租户实例（数据权限）
  *
  * @author auto create
- * @since 1.0, 2022-11-09 11:19:38
+ * @since 1.0, 2023-08-21 14:51:28
  */
 public class AlipayIserviceCcmInstanceGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3763964212791633331L;
+	private static final long serialVersionUID = 6517954162126713934L;
 
 	/**
 	 * 外部id

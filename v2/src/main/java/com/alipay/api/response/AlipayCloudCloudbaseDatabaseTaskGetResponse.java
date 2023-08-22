@@ -1,9 +1,6 @@
 package com.alipay.api.response;
 
-import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
-import com.alipay.api.internal.mapping.ApiListField;
-import com.alipay.api.domain.FaasDatabaseHistorie;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,63 +8,68 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.database.task.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-15 16:43:15
+ * @since 1.0, 2023-08-21 20:51:41
  */
 public class AlipayCloudCloudbaseDatabaseTaskGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3543275254371357971L;
+	private static final long serialVersionUID = 4245524758387268733L;
 
 	/** 
-	 * 任务执行历史列表
+	 * 任务执行进度
 	 */
-	@ApiListField("histories")
-	@ApiField("faas_database_historie")
-	private List<FaasDatabaseHistorie> histories;
+	@ApiField("process")
+	private String process;
 
 	/** 
-	 * 页码
+	 * 任务开始时间
 	 */
-	@ApiField("page_index")
-	private Long pageIndex;
+	@ApiField("start_time")
+	private String startTime;
 
 	/** 
-	 * 每页数量
+	 * 任务执行状态
+ - SUBMIT
+ - SUCCESS
+ - FAILED
+ - CANCEL
 	 */
-	@ApiField("page_size")
-	private Long pageSize;
+	@ApiField("status")
+	private String status;
 
 	/** 
-	 * 总数
+	 * 任务类型
+ - IMPORT
+ - EXPORT
 	 */
-	@ApiField("total")
-	private Long total;
+	@ApiField("task_type")
+	private String taskType;
 
-	public void setHistories(List<FaasDatabaseHistorie> histories) {
-		this.histories = histories;
+	public void setProcess(String process) {
+		this.process = process;
 	}
-	public List<FaasDatabaseHistorie> getHistories( ) {
-		return this.histories;
-	}
-
-	public void setPageIndex(Long pageIndex) {
-		this.pageIndex = pageIndex;
-	}
-	public Long getPageIndex( ) {
-		return this.pageIndex;
+	public String getProcess( ) {
+		return this.process;
 	}
 
-	public void setPageSize(Long pageSize) {
-		this.pageSize = pageSize;
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
 	}
-	public Long getPageSize( ) {
-		return this.pageSize;
+	public String getStartTime( ) {
+		return this.startTime;
 	}
 
-	public void setTotal(Long total) {
-		this.total = total;
+	public void setStatus(String status) {
+		this.status = status;
 	}
-	public Long getTotal( ) {
-		return this.total;
+	public String getStatus( ) {
+		return this.status;
+	}
+
+	public void setTaskType(String taskType) {
+		this.taskType = taskType;
+	}
+	public String getTaskType( ) {
+		return this.taskType;
 	}
 
 }

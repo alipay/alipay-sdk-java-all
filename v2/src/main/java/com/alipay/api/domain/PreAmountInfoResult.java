@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PreAmountInfoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8175789768431146838L;
+	private static final long serialVersionUID = 6876665591791128894L;
 
 	/**
 	 * 前置费用明细列表

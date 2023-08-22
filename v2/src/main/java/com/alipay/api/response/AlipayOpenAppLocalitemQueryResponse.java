@@ -7,6 +7,7 @@ import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AppItemAttrVO;
 import com.alipay.api.domain.PhoneStructVO;
 import com.alipay.api.domain.ItemRiskInfo;
+import com.alipay.api.domain.ItemSceneRiskInfo;
 import com.alipay.api.domain.LocalItemSkuQueryVO;
 import com.alipay.api.domain.TimeRangeStructVO;
 
@@ -16,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-07 17:18:33
+ * @since 1.0, 2023-08-22 17:26:43
  */
 public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7899388345993785318L;
+	private static final long serialVersionUID = 5543795214244659275L;
 
 	/** 
 	 * 商品属性
@@ -111,6 +112,13 @@ public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 	@ApiListField("risk_info")
 	@ApiField("item_risk_info")
 	private List<ItemRiskInfo> riskInfo;
+
+	/** 
+	 * 商品在对应场景屏蔽，展示对应的具体问题
+	 */
+	@ApiListField("scene_risk_info")
+	@ApiField("item_scene_risk_info")
+	private List<ItemSceneRiskInfo> sceneRiskInfo;
 
 	/** 
 	 * sku数组
@@ -245,6 +253,13 @@ public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 	}
 	public List<ItemRiskInfo> getRiskInfo( ) {
 		return this.riskInfo;
+	}
+
+	public void setSceneRiskInfo(List<ItemSceneRiskInfo> sceneRiskInfo) {
+		this.sceneRiskInfo = sceneRiskInfo;
+	}
+	public List<ItemSceneRiskInfo> getSceneRiskInfo( ) {
+		return this.sceneRiskInfo;
 	}
 
 	public void setSkus(List<LocalItemSkuQueryVO> skus) {

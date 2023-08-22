@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.anticgovernance.riskevaluation.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-07 10:40:04
+ * @since 1.0, 2023-08-22 19:36:43
  */
 public class AlipayDigitalmgmtAnticgovernanceRiskevaluationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7167818549189533898L;
+	private static final long serialVersionUID = 5421694753166728519L;
 
 	/** 
 	 * 业务风险结果

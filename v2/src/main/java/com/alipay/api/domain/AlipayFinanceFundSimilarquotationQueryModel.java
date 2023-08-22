@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinanceFundSimilarquotationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5725136791381357264L;
+	private static final long serialVersionUID = 2858789961689543644L;
 
 	/**
 	 * 基金代码

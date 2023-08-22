@@ -3,7 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
-import com.alipay.api.domain.FaasCloudDomains;
+import com.alipay.api.domain.CloudDomain;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,18 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.domain.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-17 21:05:53
+ * @since 1.0, 2023-08-22 11:21:42
  */
 public class AlipayCloudCloudbaseHttpaccessDomainQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1533217345812857971L;
+	private static final long serialVersionUID = 4679874194941431418L;
 
 	/** 
 	 * 域信息列表
 	 */
 	@ApiListField("cloud_domains")
-	@ApiField("faas_cloud_domains")
-	private List<FaasCloudDomains> cloudDomains;
+	@ApiField("cloud_domain")
+	private List<CloudDomain> cloudDomains;
 
 	/** 
 	 * 页码
@@ -42,10 +42,10 @@ public class AlipayCloudCloudbaseHttpaccessDomainQueryResponse extends AlipayRes
 	@ApiField("total")
 	private Long total;
 
-	public void setCloudDomains(List<FaasCloudDomains> cloudDomains) {
+	public void setCloudDomains(List<CloudDomain> cloudDomains) {
 		this.cloudDomains = cloudDomains;
 	}
-	public List<FaasCloudDomains> getCloudDomains( ) {
+	public List<CloudDomain> getCloudDomains( ) {
 		return this.cloudDomains;
 	}
 

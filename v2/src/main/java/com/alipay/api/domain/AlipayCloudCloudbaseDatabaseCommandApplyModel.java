@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 执行数据库操作命令
  *
  * @author auto create
- * @since 1.0, 2023-08-17 14:39:18
+ * @since 1.0, 2023-08-22 15:41:18
  */
 public class AlipayCloudCloudbaseDatabaseCommandApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2859528142197948582L;
+	private static final long serialVersionUID = 3166865424769439954L;
 
 	/**
 	 * 数据库操作命令参数，JSON格式

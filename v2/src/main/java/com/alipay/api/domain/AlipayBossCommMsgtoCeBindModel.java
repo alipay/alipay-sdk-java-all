@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossCommMsgtoCeBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5797591314314183448L;
+	private static final long serialVersionUID = 8569359572642737328L;
 
 	/**
 	 * 特殊可选，Date类型

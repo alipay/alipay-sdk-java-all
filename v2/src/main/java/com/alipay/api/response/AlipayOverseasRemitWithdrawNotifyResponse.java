@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasRemitWithdrawNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7187235134432288379L;
+	private static final long serialVersionUID = 6519195447623317499L;
 
 	/** 
 	 * JSON map

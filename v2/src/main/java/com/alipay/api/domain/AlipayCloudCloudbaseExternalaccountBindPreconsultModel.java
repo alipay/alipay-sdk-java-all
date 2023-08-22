@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部账号绑定预咨询
  *
  * @author auto create
- * @since 1.0, 2023-08-01 15:51:50
+ * @since 1.0, 2023-08-22 15:40:53
  */
 public class AlipayCloudCloudbaseExternalaccountBindPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5533769691154877641L;
+	private static final long serialVersionUID = 4628658292784419787L;
 
 	/**
 	 * 服务商用户账号，如邮箱地址、手机号等
@@ -25,6 +25,18 @@ public class AlipayCloudCloudbaseExternalaccountBindPreconsultModel extends Alip
 	@ApiField("account_name")
 	private String accountName;
 
+	/**
+	 * 实体名称
+	 */
+	@ApiField("entity_name")
+	private String entityName;
+
+	/**
+	 * 实体类型
+	 */
+	@ApiField("entity_type")
+	private String entityType;
+
 	public String getAccountId() {
 		return this.accountId;
 	}
@@ -37,6 +49,20 @@ public class AlipayCloudCloudbaseExternalaccountBindPreconsultModel extends Alip
 	}
 	public void setAccountName(String accountName) {
 		this.accountName = accountName;
+	}
+
+	public String getEntityName() {
+		return this.entityName;
+	}
+	public void setEntityName(String entityName) {
+		this.entityName = entityName;
+	}
+
+	public String getEntityType() {
+		return this.entityType;
+	}
+	public void setEntityType(String entityType) {
+		this.entityType = entityType;
 	}
 
 }

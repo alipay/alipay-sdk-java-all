@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消数据库任务执行
  *
  * @author auto create
- * @since 1.0, 2023-08-18 14:12:39
+ * @since 1.0, 2023-08-21 20:52:51
  */
 public class AlipayCloudCloudbaseDatabaseTaskCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6392757714157142128L;
+	private static final long serialVersionUID = 6147889333189935355L;
 
 	/**
 	 * 小程序id
@@ -30,12 +30,6 @@ public class AlipayCloudCloudbaseDatabaseTaskCancelModel extends AlipayObject {
 	 */
 	@ApiField("task_id")
 	private String taskId;
-
-	/**
-	 * 任务类型
-	 */
-	@ApiField("task_type")
-	private String taskType;
 
 	public String getBizAppId() {
 		return this.bizAppId;
@@ -56,13 +50,6 @@ public class AlipayCloudCloudbaseDatabaseTaskCancelModel extends AlipayObject {
 	}
 	public void setTaskId(String taskId) {
 		this.taskId = taskId;
-	}
-
-	public String getTaskType() {
-		return this.taskType;
-	}
-	public void setTaskType(String taskType) {
-		this.taskType = taskType;
 	}
 
 }

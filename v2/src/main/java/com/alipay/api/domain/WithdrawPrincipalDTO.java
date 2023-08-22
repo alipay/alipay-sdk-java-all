@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WithdrawPrincipalDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4454546879126617459L;
+	private static final long serialVersionUID = 3836237565316878873L;
 
 	/**
 	 * 可变ID

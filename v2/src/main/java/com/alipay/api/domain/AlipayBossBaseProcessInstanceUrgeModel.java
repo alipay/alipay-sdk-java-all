@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossBaseProcessInstanceUrgeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5771798956689443291L;
+	private static final long serialVersionUID = 4397515534561989257L;
 
 	/**
 	 * 模板

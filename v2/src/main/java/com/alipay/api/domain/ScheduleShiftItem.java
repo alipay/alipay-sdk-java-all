@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScheduleShiftItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6811755664754489443L;
+	private static final long serialVersionUID = 5855921817192788976L;
 
 	/**
 	 * 班次序号（可关联排班表得到具体工作计划，0表示休息）

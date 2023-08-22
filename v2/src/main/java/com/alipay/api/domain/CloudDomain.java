@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 域信息列表
  *
  * @author auto create
- * @since 1.0, 2023-08-08 23:05:59
+ * @since 1.0, 2023-08-22 11:20:54
  */
-public class FaasCloudDomains extends AlipayObject {
+public class CloudDomain extends AlipayObject {
 
-	private static final long serialVersionUID = 4283262373499184383L;
+	private static final long serialVersionUID = 2814182773568722321L;
 
 	/**
 	 * 目标CNAME地址

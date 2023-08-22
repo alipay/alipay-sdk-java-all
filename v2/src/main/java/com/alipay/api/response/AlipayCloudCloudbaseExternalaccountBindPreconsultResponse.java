@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.externalaccount.bind.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-07 16:37:03
+ * @since 1.0, 2023-08-22 15:41:41
  */
 public class AlipayCloudCloudbaseExternalaccountBindPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8464591576569365847L;
+	private static final long serialVersionUID = 3376315388568991525L;
 
 	/** 
 	 * 二维码地址

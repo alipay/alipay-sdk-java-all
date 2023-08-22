@@ -7,17 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询路由绑定信息
  *
  * @author auto create
- * @since 1.0, 2023-08-17 10:09:43
+ * @since 1.0, 2023-08-21 20:50:16
  */
 public class AlipayCloudCloudbaseHttpaccessBindGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3553436731535652891L;
-
-	/**
-	 * 路由绑定ID
-	 */
-	@ApiField("bind_id")
-	private String bindId;
+	private static final long serialVersionUID = 1759421661986127817L;
 
 	/**
 	 * 小程序id
@@ -31,12 +25,17 @@ public class AlipayCloudCloudbaseHttpaccessBindGetModel extends AlipayObject {
 	@ApiField("biz_env_id")
 	private String bizEnvId;
 
-	public String getBindId() {
-		return this.bindId;
-	}
-	public void setBindId(String bindId) {
-		this.bindId = bindId;
-	}
+	/**
+	 * 域名
+	 */
+	@ApiField("domain_name")
+	private String domainName;
+
+	/**
+	 * 触发路径
+	 */
+	@ApiField("path")
+	private String path;
 
 	public String getBizAppId() {
 		return this.bizAppId;
@@ -50,6 +49,20 @@ public class AlipayCloudCloudbaseHttpaccessBindGetModel extends AlipayObject {
 	}
 	public void setBizEnvId(String bizEnvId) {
 		this.bizEnvId = bizEnvId;
+	}
+
+	public String getDomainName() {
+		return this.domainName;
+	}
+	public void setDomainName(String domainName) {
+		this.domainName = domainName;
+	}
+
+	public String getPath() {
+		return this.path;
+	}
+	public void setPath(String path) {
+		this.path = path;
 	}
 
 }

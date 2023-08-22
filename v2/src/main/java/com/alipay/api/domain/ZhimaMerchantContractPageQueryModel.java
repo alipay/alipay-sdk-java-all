@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合约信息分页查询
  *
  * @author auto create
- * @since 1.0, 2021-05-17 10:40:44
+ * @since 1.0, 2023-08-22 14:02:54
  */
 public class ZhimaMerchantContractPageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4732922662428143932L;
+	private static final long serialVersionUID = 4769268964626558262L;
 
 	/**
 	 * 查询开始时间

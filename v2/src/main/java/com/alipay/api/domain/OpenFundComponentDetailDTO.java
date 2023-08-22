@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenFundComponentDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2734351222546629847L;
+	private static final long serialVersionUID = 4272346182411192481L;
 
 	/**
 	 * 本次交易流水的金额

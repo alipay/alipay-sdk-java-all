@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询角色
  *
  * @author auto create
- * @since 1.0, 2022-11-09 11:19:04
+ * @since 1.0, 2023-08-21 15:10:16
  */
 public class AlipayIserviceCcmRolePageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8735933689161112334L;
+	private static final long serialVersionUID = 5668652683633676839L;
 
 	/**
 	 * 部门id（即租户实例ID、数据权限ID）

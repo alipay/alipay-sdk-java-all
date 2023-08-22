@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设置触发器
  *
  * @author auto create
- * @since 1.0, 2023-08-08 22:43:46
+ * @since 1.0, 2023-08-21 20:50:19
  */
 public class AlipayCloudCloudbaseFunctionTriggerSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3654157138517534983L;
+	private static final long serialVersionUID = 2543653359633243321L;
 
 	/**
 	 * 小程序id

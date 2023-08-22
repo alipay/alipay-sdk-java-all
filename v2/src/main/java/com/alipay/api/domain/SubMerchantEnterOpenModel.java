@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户门店信息模型
  *
  * @author auto create
- * @since 1.0, 2023-08-14 13:37:37
+ * @since 1.0, 2023-08-21 18:52:24
  */
 public class SubMerchantEnterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4244681188741643779L;
+	private static final long serialVersionUID = 8737732226812667767L;
 
 	/**
 	 * 扩展字段，为json字符串格式；入驻缴费后开票的产品如果需要传入自定义开票链接，由此字段传入。
@@ -26,7 +26,7 @@ public class SubMerchantEnterOpenModel extends AlipayObject {
 	private String industry;
 
 	/**
-	 * 开票商户pid，入驻支付即开票场景的时候，该字段必传
+	 * 开票商户pid，入驻支付即开票场景的时候，非登录账号入驻模式，则该字段必传
 	 */
 	@ApiField("pid")
 	private String pid;
@@ -44,7 +44,7 @@ public class SubMerchantEnterOpenModel extends AlipayObject {
 	private String subMName;
 
 	/**
-	 * 商户门店简称，只能由大写字母、下划线、数字组成，且必须以大写字母开头。
+	 * 商户门店简称
 	 */
 	@ApiField("sub_m_short_name")
 	private String subMShortName;

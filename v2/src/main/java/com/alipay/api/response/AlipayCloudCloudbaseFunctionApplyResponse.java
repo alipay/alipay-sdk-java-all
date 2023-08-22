@@ -8,17 +8,43 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.function.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-13 21:56:39
+ * @since 1.0, 2023-08-22 15:41:41
  */
 public class AlipayCloudCloudbaseFunctionApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1574689561652127362L;
+	private static final long serialVersionUID = 6159791587418699651L;
+
+	/** 
+	 * Trace ID
+	 */
+	@ApiField("biz_trace_id")
+	private String bizTraceId;
+
+	/** 
+	 * 执行耗时，单位为毫秒
+	 */
+	@ApiField("cost")
+	private Long cost;
 
 	/** 
 	 * 执行云函数后返回对应函数执行结果
 	 */
 	@ApiField("data")
 	private String data;
+
+	public void setBizTraceId(String bizTraceId) {
+		this.bizTraceId = bizTraceId;
+	}
+	public String getBizTraceId( ) {
+		return this.bizTraceId;
+	}
+
+	public void setCost(Long cost) {
+		this.cost = cost;
+	}
+	public Long getCost( ) {
+		return this.cost;
+	}
 
 	public void setData(String data) {
 		this.data = data;

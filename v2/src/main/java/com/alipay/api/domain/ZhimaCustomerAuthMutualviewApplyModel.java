@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCustomerAuthMutualviewApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2719615651731728348L;
+	private static final long serialVersionUID = 5852728976495398665L;
 
 	/**
 	 * 当前业务操作是查询自己还是查询别人的芝麻分，接口提供方分配的值：

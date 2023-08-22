@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户品牌配置模型
  *
  * @author auto create
- * @since 1.0, 2023-08-14 09:44:11
+ * @since 1.0, 2023-08-21 18:52:14
  */
 public class MerchantBaseEnterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5633683938233924387L;
+	private static final long serialVersionUID = 8268289135642976813L;
+
+	/**
+	 * 登陆账号
+	 */
+	@ApiField("login_id")
+	private String loginId;
 
 	/**
 	 * 商户logo文件流信息，该字段为文件流经base64编码后得到的字符串。
@@ -26,10 +32,17 @@ public class MerchantBaseEnterOpenModel extends AlipayObject {
 	private String mName;
 
 	/**
-	 * 商户品牌简称，只能由大写字母、下划线、数字组成，且必须以大写字母开头。
+	 * 商户品牌简称
 	 */
 	@ApiField("m_short_name")
 	private String mShortName;
+
+	public String getLoginId() {
+		return this.loginId;
+	}
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
+	}
 
 	public String getLogoInfo() {
 		return this.logoInfo;

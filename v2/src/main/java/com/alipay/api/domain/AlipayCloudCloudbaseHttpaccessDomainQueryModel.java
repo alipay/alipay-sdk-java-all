@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询HTTP访问服务域名列表
  *
  * @author auto create
- * @since 1.0, 2023-08-17 21:05:53
+ * @since 1.0, 2023-08-22 11:20:54
  */
 public class AlipayCloudCloudbaseHttpaccessDomainQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3857156289963555912L;
+	private static final long serialVersionUID = 2744466186392121555L;
 
 	/**
 	 * 小程序id

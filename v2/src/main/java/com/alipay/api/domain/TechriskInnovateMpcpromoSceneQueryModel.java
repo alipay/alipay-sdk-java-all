@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景信息查询接口
  *
  * @author auto create
- * @since 1.0, 2023-07-31 16:28:05
+ * @since 1.0, 2023-08-22 14:36:58
  */
 public class TechriskInnovateMpcpromoSceneQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1176758498583668373L;
+	private static final long serialVersionUID = 5824685611819971512L;
 
 	/**
 	 * 查询页数

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LoanScheme extends AlipayObject {
 
-	private static final long serialVersionUID = 4819848124426838599L;
+	private static final long serialVersionUID = 6891553185918989624L;
 
 	/**
 	 * 授信有效截止日期(日期精度为天,包含截止日)

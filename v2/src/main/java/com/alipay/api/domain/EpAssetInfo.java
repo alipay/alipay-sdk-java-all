@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpAssetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3617288472319938135L;
+	private static final long serialVersionUID = 7575387441284252336L;
 
 	/**
 	 * 企业资产类型：

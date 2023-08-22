@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字形象查询接口
  *
  * @author auto create
- * @since 1.0, 2023-08-08 15:15:25
+ * @since 1.0, 2023-08-22 21:14:20
  */
 public class AlipayUserAccountZavatarAvatarQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7782357823674884955L;
+	private static final long serialVersionUID = 8217887326283278939L;
 
 	/**
 	 * 数字人形象的版本参数
@@ -24,6 +24,12 @@ public class AlipayUserAccountZavatarAvatarQueryModel extends AlipayObject {
 	 */
 	@ApiField("device_level")
 	private String deviceLevel;
+
+	/**
+	 * json扩展信息
+	 */
+	@ApiField("ext_param")
+	private String extParam;
 
 	/**
 	 * 场景节点，联系数字人平台分配
@@ -49,6 +55,13 @@ public class AlipayUserAccountZavatarAvatarQueryModel extends AlipayObject {
 	}
 	public void setDeviceLevel(String deviceLevel) {
 		this.deviceLevel = deviceLevel;
+	}
+
+	public String getExtParam() {
+		return this.extParam;
+	}
+	public void setExtParam(String extParam) {
+		this.extParam = extParam;
 	}
 
 	public String getNodeCode() {

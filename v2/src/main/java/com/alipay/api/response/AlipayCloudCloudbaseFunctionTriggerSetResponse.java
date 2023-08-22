@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.function.trigger.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 22:46:42
+ * @since 1.0, 2023-08-21 20:51:41
  */
 public class AlipayCloudCloudbaseFunctionTriggerSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7116375634848471285L;
+	private static final long serialVersionUID = 7663143315975697459L;
 
 	/** 
 	 * 设置触发器结果

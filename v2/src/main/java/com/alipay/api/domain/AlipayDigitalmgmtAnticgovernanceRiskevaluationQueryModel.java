@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚁树风险咨询接口
  *
  * @author auto create
- * @since 1.0, 2023-08-07 10:40:04
+ * @since 1.0, 2023-08-22 19:35:17
  */
 public class AlipayDigitalmgmtAnticgovernanceRiskevaluationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8224441626886755761L;
+	private static final long serialVersionUID = 5857317111384999343L;
 
 	/**
 	 * 风险咨询入参对象

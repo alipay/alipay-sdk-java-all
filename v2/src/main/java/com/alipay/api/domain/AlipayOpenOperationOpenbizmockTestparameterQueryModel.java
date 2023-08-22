@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 测试参数校验接口
  *
  * @author auto create
- * @since 1.0, 2023-08-18 16:11:06
+ * @since 1.0, 2023-08-21 16:29:10
  */
 public class AlipayOpenOperationOpenbizmockTestparameterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1565776388223724979L;
+	private static final long serialVersionUID = 8396517423996998859L;
 
 	/**
 	 * 1

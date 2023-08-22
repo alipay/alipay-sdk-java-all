@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 跨域安全域名列表
  *
  * @author auto create
- * @since 1.0, 2023-08-08 23:05:37
+ * @since 1.0, 2023-08-21 20:50:52
  */
-public class FaasCors extends AlipayObject {
+public class CorsDomain extends AlipayObject {
 
-	private static final long serialVersionUID = 1679774331798773936L;
+	private static final long serialVersionUID = 3487571364644124567L;
 
 	/**
 	 * 域名

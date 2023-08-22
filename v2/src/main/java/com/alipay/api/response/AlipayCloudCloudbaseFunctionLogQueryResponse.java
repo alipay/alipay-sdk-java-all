@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.function.log.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 22:46:42
+ * @since 1.0, 2023-08-21 20:51:41
  */
 public class AlipayCloudCloudbaseFunctionLogQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5348677717441612574L;
+	private static final long serialVersionUID = 1351458395697796235L;
 
 	/** 
 	 * 云函数执行日志记录
@@ -35,6 +35,12 @@ public class AlipayCloudCloudbaseFunctionLogQueryResponse extends AlipayResponse
 	@ApiField("page_size")
 	private String pageSize;
 
+	/** 
+	 * 总数
+	 */
+	@ApiField("total")
+	private Long total;
+
 	public void setLogs(List<String> logs) {
 		this.logs = logs;
 	}
@@ -54,6 +60,13 @@ public class AlipayCloudCloudbaseFunctionLogQueryResponse extends AlipayResponse
 	}
 	public String getPageSize( ) {
 		return this.pageSize;
+	}
+
+	public void setTotal(Long total) {
+		this.total = total;
+	}
+	public Long getTotal( ) {
+		return this.total;
 	}
 
 }

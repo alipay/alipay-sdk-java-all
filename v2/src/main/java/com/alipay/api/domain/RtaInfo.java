@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * rta查询信息
  *
  * @author auto create
- * @since 1.0, 2020-01-03 11:14:59
+ * @since 1.0, 2023-08-22 14:29:11
  */
 public class RtaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8699723495429837185L;
+	private static final long serialVersionUID = 1352895824887878669L;
 
 	/**
 	 * 广告投放账户id

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class NiukeExamCallbackRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3457739993916665327L;
+	private static final long serialVersionUID = 1641369922748624494L;
 
 	/**
 	 * 考生具体每一类题型的得分情况。这个参数会有多个，每一个的参数格式是score|categoryId|categoryName 如1.5|100|选择题。

@@ -3,7 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
-import com.alipay.api.domain.FaasCors;
+import com.alipay.api.domain.CorsDomain;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,18 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.cors.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-17 21:06:18
+ * @since 1.0, 2023-08-21 20:51:41
  */
 public class AlipayCloudCloudbaseHttpaccessCorsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3224531489697678833L;
+	private static final long serialVersionUID = 3721254416491727869L;
 
 	/** 
 	 * 跨域安全域名列表
 	 */
 	@ApiListField("cors")
-	@ApiField("faas_cors")
-	private List<FaasCors> cors;
+	@ApiField("cors_domain")
+	private List<CorsDomain> cors;
 
 	/** 
 	 * 页码
@@ -42,10 +42,10 @@ public class AlipayCloudCloudbaseHttpaccessCorsQueryResponse extends AlipayRespo
 	@ApiField("total")
 	private Long total;
 
-	public void setCors(List<FaasCors> cors) {
+	public void setCors(List<CorsDomain> cors) {
 		this.cors = cors;
 	}
-	public List<FaasCors> getCors( ) {
+	public List<CorsDomain> getCors( ) {
 		return this.cors;
 	}
 

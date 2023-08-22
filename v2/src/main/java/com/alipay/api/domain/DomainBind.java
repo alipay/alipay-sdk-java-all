@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 路由绑定列表
  *
  * @author auto create
- * @since 1.0, 2023-08-08 23:06:08
+ * @since 1.0, 2023-08-21 20:59:16
  */
-public class FaasDomainBinds extends AlipayObject {
+public class DomainBind extends AlipayObject {
 
-	private static final long serialVersionUID = 4858535626555412778L;
+	private static final long serialVersionUID = 5191786689421154414L;
 
 	/**
 	 * 路由绑定ID
