@@ -43,7 +43,7 @@ public class Example {
     AlipayMarketingCardApi apiInstance = new AlipayMarketingCardApi(defaultClient);
     String outSerialNo = "2016062700001"; // String | 商户端删卡业务流水号，商户自定义且需确保流水号唯一性。
     String targetCardNo = "0000001"; // String | 支付宝业务卡号。即开卡接口返回结果中的card_info.biz_card_no。
-    String targetCardNoType = "BIZ_CARD"; // String | 卡号ID类型  BIZ_CARD：支付宝卡号
+    String targetCardNoType = "BIZ_CARD"; // String | 卡号ID类型
     String reasonCode = "USER_UNBUND"; // String | 删卡原因  USER_UNBUND：用户解绑（可以重新绑定）  CANCEL：销户（完成销户后，就不能再重新绑定）  PRESENT：转赠（可以重新绑定）
     String extInfo = "{\"new_card_no\":\"12345\",\" donee_user_id\":\"2088102130652460\"}"; // String | 删卡扩展参数，json格式。  用于商户的特定业务信息的传递，只有商户与支付宝约定了传递此参数且约定了参数含义，此参数才有效。  目前支持如下key：  new_card_no：新卡号  donee_user_id：受赠人userId
     try {
@@ -66,7 +66,7 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **outSerialNo** | **String**| 商户端删卡业务流水号，商户自定义且需确保流水号唯一性。 | [optional] |
 | **targetCardNo** | **String**| 支付宝业务卡号。即开卡接口返回结果中的card_info.biz_card_no。 | [optional] |
-| **targetCardNoType** | **String**| 卡号ID类型  BIZ_CARD：支付宝卡号 | [optional] |
+| **targetCardNoType** | **String**| 卡号ID类型 | [optional] |
 | **reasonCode** | **String**| 删卡原因  USER_UNBUND：用户解绑（可以重新绑定）  CANCEL：销户（完成销户后，就不能再重新绑定）  PRESENT：转赠（可以重新绑定） | [optional] |
 | **extInfo** | **String**| 删卡扩展参数，json格式。  用于商户的特定业务信息的传递，只有商户与支付宝约定了传递此参数且约定了参数含义，此参数才有效。  目前支持如下key：  new_card_no：新卡号  donee_user_id：受赠人userId | [optional] |
 
